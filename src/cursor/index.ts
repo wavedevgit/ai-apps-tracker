@@ -3,6 +3,7 @@ import * as cheerio from 'cheerio';
 import { execCmd } from '../utils/shell.js';
 import { rm, writeFile } from 'fs/promises';
 import { readFileJson } from '../utils/fs.js';
+import { diffCursor } from '../notifications/index.js';
 
 const BASE_URL = 'https://cursor.com';
 const DOWNLOAD_PAGE = BASE_URL + '/download';
@@ -40,9 +41,8 @@ export default async function scrapeCursorAI(): Promise<void> {
         'chmod +x ./data/cursor/temp.AppImage && ./data/cursor/temp.AppImage --appimage-extract && mv ./squashfs-root ./data/cursor/app/ && rm -rf squashfs-root',
         { skipStdout: true },
     );
-    await writeFile(
-        './data/cursor/version.json',
-        JSON.stringify({ version: downloadUrl.split('/').slice(-1)[0] }),
-    );
+    const version = { version: downloadUrl.split('/').slice(-1)[0] };
+    diffCursor(old, version);
+    await writeFile('./data/cursor/version.json', JSON.stringify(version));
     await rm('./data/cursor/temp.AppImage', { force: true });
 }

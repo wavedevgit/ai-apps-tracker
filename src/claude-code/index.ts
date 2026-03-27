@@ -3,6 +3,7 @@ import { downloadFile, get } from '../utils/http.js';
 import path from 'path';
 import { extractBunJs } from './bun-extractor.js';
 import { readFileJson } from '../utils/fs.js';
+import { diffClaudeCode } from '../notifications/index.js';
 
 const INSTALLER_URL = 'https://claude.ai/install.sh';
 
@@ -29,6 +30,7 @@ export default async function scrapeClaudeCode() {
 
     const old = await readFileJson('./data/codex/version.json');
 
+    diffClaudeCode(old, manifest);
     await writeFile(
         './data/claude-code/version.json',
         JSON.stringify(manifest, null, 4),

@@ -1,6 +1,7 @@
 import { writeFile } from 'fs/promises';
 import { get } from '../utils/http.js';
 import { readFileJson } from '../utils/fs.js';
+import { diffOpenCode } from '../notifications/index.js';
 
 export default async function scrapeOpenCode() {
     const latest = await get<any[]>(
@@ -16,7 +17,7 @@ export default async function scrapeOpenCode() {
     );
 
     const old = await readFileJson('./data/opencode/version.json');
-
+    diffOpenCode(old, latestVersion);
     await writeFile(
         './data/opencode/version.json',
         JSON.stringify(latestVersion),

@@ -1,6 +1,7 @@
 import { writeFile } from 'fs/promises';
 import { get } from '../utils/http.js';
 import { readFileJson } from '../utils/fs.js';
+import { diffCodex } from '../notifications/index.js';
 
 // codex is already open source, so we just track its version and diffs
 export default async function scrapeCodex() {
@@ -37,6 +38,6 @@ export default async function scrapeCodex() {
     };
 
     const old = await readFileJson('./data/codex/version.json');
-
+    diffCodex(old, version);
     await writeFile('./data/codex/version.json', JSON.stringify(version));
 }
