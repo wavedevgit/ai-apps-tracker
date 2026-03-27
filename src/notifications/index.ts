@@ -4,7 +4,7 @@ import {
     CursorVersion,
     OpenCodeVersion,
 } from '../types';
-import sendMessage, { Embed, Message } from './discord';
+import sendMessage, { Embed, Message } from './discord.js';
 
 let embeds: Embed[] = [];
 
