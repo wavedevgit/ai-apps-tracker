@@ -9,5 +9,9 @@ export async function mkdirSafe(path: string, opts?: { recursive: boolean }) {
 }
 
 export async function readFileJson(path: string) {
-    return JSON.parse(await readFile(path, 'utf-8'));
+    try {
+        return JSON.parse(await readFile(path, 'utf-8'));
+    } catch {
+        return;
+    }
 }
