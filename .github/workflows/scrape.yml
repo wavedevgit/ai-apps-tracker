@@ -1,0 +1,41 @@
+name: Scrape data
+
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: '*/15 * * * *'
+
+jobs:
+    scrape:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            packages: write
+            pull-requests: write
+            issues: write
+            statuses: write
+            deployments: write
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            - name: Setup Node.js v24
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 24
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Run Node script
+              run: npm run build && npm run start
+              env:
+                  DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS  }}
+                  DISCORD_ROLES: ${{ secrets.DISCORD_ROLES  }}
+            - name: Setup git info and commit
+              run: |
+                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
+                  git add --all
+                  git diff-index --quiet HEAD || git commit -am "✨New discord version"
+                  git push
