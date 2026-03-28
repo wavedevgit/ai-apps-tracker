@@ -27,7 +27,7 @@ export function diffCursor(old: CursorVersion, newer: CursorVersion) {
     embeds.push({
         color: 0x26251e,
         title: 'New Cursor release',
-        description: `**\`${old.version}\`** to **\`${newer.version}\`**\n[View changes/diff](https://github.com/wavedevgit/ai-apps-tracker/data/cursor)`,
+        description: `**\`${old.version}\`** to **\`${newer.version}\`**\n[View changes/diff](https://github.com/wavedevgit/ai-apps-tracker/tree/main/data/cursor)`,
         timestamp: new Date().toISOString(),
     });
 }
@@ -42,7 +42,7 @@ export function diffClaudeCode(
     embeds.push({
         color: 0xd97706,
         title: 'New Claude Code release',
-        description: `**\`${old.version}\`** to **\`${newer.version}\`**\n[View changes/diff](https://github.com/wavedevgit/ai-apps-tracker/data/claude-code)`,
+        description: `**\`${old.version}\`** to **\`${newer.version}\`**\n[View changes/diff](https://github.com/wavedevgit/ai-apps-tracker/tree/main/data/claude-code)`,
         timestamp: newer.buildDate,
     });
 }
