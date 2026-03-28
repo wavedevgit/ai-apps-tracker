@@ -1,0 +1,41 @@
+profile cursor_sandbox /usr/share/cursor/resources/app/resources/helpers/cursorsandbox {
+  file,
+  /** ix,
+
+  capability sys_admin,
+  capability net_admin,
+  capability chown,
+  capability setuid,
+  capability setgid,
+  capability setpcap,
+
+  ## Uncomment this on AppArmor 4.0
+  #userns,
+
+  mount,
+  remount,
+  umount,
+
+  /usr/share/cursor/resources/app/resources/helpers/cursorsandbox mr,
+}
+
+profile cursor_sandbox_remote /home/*/.cursor-server/bin/*/*/resources/helpers/cursorsandbox {
+  file,
+  /** ix,
+
+  capability sys_admin,
+  capability net_admin,
+  capability chown,
+  capability setuid,
+  capability setgid,
+  capability setpcap,
+
+  ## Uncomment this on AppArmor 4.0
+  #userns,
+
+  mount,
+  remount,
+  umount,
+
+  /home/*/.cursor-server/bin/*/*/resources/helpers/cursorsandbox mr,
+}
