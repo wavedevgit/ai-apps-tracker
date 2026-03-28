@@ -2,7 +2,9 @@
 squashfs-root
 temp.AppImage
 claude.exe
-
+# big files
+data/cursor/app/usr/share/cursor/cursor
+data/cursor/app/usr/share/cursor/resources/app/resources/helpers/node
 
 # Logs
 logs
