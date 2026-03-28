@@ -4,6 +4,7 @@ import { execCmd } from '../utils/shell.js';
 import { rm, writeFile } from 'fs/promises';
 import { readFileJson } from '../utils/fs.js';
 import { diffCursor } from '../notifications/index.js';
+import { resolve } from 'path';
 
 const BASE_URL = 'https://cursor.com';
 const DOWNLOAD_PAGE = BASE_URL + '/download';
@@ -34,13 +35,33 @@ export default async function scrapeCursorAI(): Promise<void> {
     // appimage is the easiest one to extract src from
     downloadUrl = downloadUrl.replace(/\${[\w_$]+}/, 'linux-x64');
 
-    const old = await readFileJson('./data/codex/version.json');
+    const old = await readFileJson('./data/cursor/version.json');
 
     await downloadFile(downloadUrl, './data/cursor/temp.AppImage');
-    await execCmd(
-        'chmod +x ./data/cursor/temp.AppImage && ./data/cursor/temp.AppImage --appimage-extract && mv ./squashfs-root ./data/cursor/app/ && rm -rf squashfs-root',
-        { skipStdout: true },
-    );
+    try {
+        await execCmd(`chmod +x ./data/cursor/temp.AppImage`, {
+            skipStdout: true,
+        });
+        console.log('AppImage is now executable.');
+
+        await execCmd(`./data/cursor/temp.AppImage --appimage-extract`, {
+            skipStdout: true,
+        });
+        console.log('AppImage extracted successfully.');
+
+        await execCmd(`mv ./squashfs-root/* ./data/cursor/app/`, {
+            skipStdout: true,
+        });
+        console.log('Extraction moved to ./data/cursor/app/.');
+
+        await execCmd(`rm -rf ./squashfs-root`, { skipStdout: true });
+        console.log('Cleanup complete.');
+
+        const version = { version: downloadUrl.split('/').slice(-1)[0] };
+        console.log('Version detected:', version.version);
+    } catch (error) {
+        console.error('Error during AppImage setup:', error);
+    }
     const version = { version: downloadUrl.split('/').slice(-1)[0] };
     diffCursor(old, version);
     await writeFile('./data/cursor/version.json', JSON.stringify(version));

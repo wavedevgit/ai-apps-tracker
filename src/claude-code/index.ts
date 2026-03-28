@@ -28,7 +28,7 @@ export default async function scrapeClaudeCode() {
     const binary = manifest.platforms['win32-x64'].binary;
     const binaryPath = path.join('./data/claude-code/', path.basename(binary));
 
-    const old = await readFileJson('./data/codex/version.json');
+    const old = await readFileJson('./data/claude-code/version.json');
 
     diffClaudeCode(old, manifest);
     await writeFile(
