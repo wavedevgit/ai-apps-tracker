@@ -34,13 +34,21 @@ export default async function sendMessage(message: Message) {
         let roleMention = roles[i];
         roleMention = roleMention ? roleMention + ' ' : '';
         message.content = message.content;
-        await fetch(webhook, {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json',
-            },
-            body: JSON.stringify(message),
-        });
+        try {
+            await fetch(webhook, {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json',
+                },
+                body: JSON.stringify(message),
+            });
+        } catch (err) {
+            console.log(
+                'failed to send message to webhook',
+                webhooks[i].slice(12, 20),
+                err,
+            );
+        }
     }
 }
 
