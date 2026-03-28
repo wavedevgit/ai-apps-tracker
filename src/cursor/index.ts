@@ -49,9 +49,15 @@ export default async function scrapeCursorAI(): Promise<void> {
         });
         console.log('AppImage extracted successfully.');
 
-        await execCmd(`mv ./squashfs-root/* ./data/cursor/app/`, {
+        await execCmd(`rm -rf ./data/cursor/app/`, {
             skipStdout: true,
         });
+        await execCmd(
+            `mkdir -p ./data/cursor/app && mv ./squashfs-root/* ./data/cursor/app/`,
+            {
+                skipStdout: true,
+            },
+        );
         console.log('Extraction moved to ./data/cursor/app/.');
 
         await execCmd(`rm -rf ./squashfs-root`, { skipStdout: true });
