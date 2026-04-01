@@ -34434,6 +34434,7 @@
                     switch (e) {
                         case "client_secret_basic":
                             return void
+
                             function(e, t, r) {
                                 if (!t) throw new Error("client_secret_basic authentication requires a client_secret");
                                 const n = btoa(`${e}:${t}`);
@@ -34441,11 +34442,13 @@
                             }(i, s, r);
                         case "client_secret_post":
                             return void
+
                             function(e, t, r) {
                                 r.set("client_id", e), t && r.set("client_secret", t)
                             }(i, s, n);
                         case "none":
                             return void
+
                             function(e, t) {
                                 t.set("client_id", e)
                             }(i, n);
@@ -50302,6 +50305,7 @@
                             }() : function() {
                                 const s = h.formats[a];
                                 if (!s) return void
+
                                 function() {
                                     if (!1 !== u.strictSchema) throw new Error(e());
 
@@ -56678,6 +56682,7 @@
                         switch (e) {
                             case "client_secret_basic":
                                 return void
+
                                 function(e, t, r) {
                                     if (!t) throw new Error("client_secret_basic authentication requires a client_secret");
                                     const n = btoa(`${e}:${t}`);
@@ -56685,11 +56690,13 @@
                                 }(i, s, r);
                             case "client_secret_post":
                                 return void
+
                                 function(e, t, r) {
                                     r.set("client_id", e), t && r.set("client_secret", t)
                                 }(i, s, n);
                             case "none":
                                 return void
+
                                 function(e, t) {
                                     t.set("client_id", e)
                                 }(i, n);
