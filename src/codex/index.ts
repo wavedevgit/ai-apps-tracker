@@ -36,8 +36,10 @@ export default async function scrapeCodex() {
             content_type: asset.content_type,
         })),
     };
+    console.log('got latest version for codex');
 
     const old = await readFileJson('./data/codex/version.json');
     diffCodex(old, version);
     await writeFile('./data/codex/version.json', JSON.stringify(version));
+    return;
 }

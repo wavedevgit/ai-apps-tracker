@@ -14,7 +14,18 @@ const tools = {
     codex: scrapeCodex,
 };
 
+// basic config if we ever need to disable some scraper
+const config: Record<string, boolean> = {
+    opencode: true,
+    'claude-code': true,
+    cursor: true,
+    codex: true,
+};
+
 async function main() {
+    process.on('unhandledRejection', (reason, promise) => {
+        console.error('[error logs] UNHANDLED PROMISE:', reason, promise);
+    });
     if (os.platform() !== 'linux') {
         console.log(
             'Error: The system you are using to run the scraper is not supported.',
@@ -31,12 +42,11 @@ async function main() {
     console.log('Running scraping job');
     for (const [tool, runner] of Object.entries(tools)) {
         console.log('running job for', tool);
-        try {
-            await runner();
-        } catch (error) {
-            console.log('job for', tool, 'has failed');
-            console.log(error);
-        }
+        if (config[tool])
+            runner().catch((error) => {
+                console.log('job for', tool, 'has failed');
+                console.log(error);
+            });
     }
     await beautifyAll();
     await sendNotifications();
