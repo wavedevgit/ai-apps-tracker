@@ -1,7 +1,10 @@
 import { execCmd } from './shell.js';
 
 export default async function beautifyAll() {
-    await execCmd("npx js-beautify -r './data/**/*.js'", {
-        skipStdout: true,
-    });
+    await execCmd(
+        `find ./data -type f -name "*.js" -exec npx js-beautify -r {} +`,
+        {
+            skipStdout: true,
+        },
+    );
 }
