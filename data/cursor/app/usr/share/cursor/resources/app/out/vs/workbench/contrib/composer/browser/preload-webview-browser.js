@@ -2,7 +2,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "29f59b7d-6e5f-5040-a43b-400a1cde453d")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "7e6ab40d-f243-5124-9ff5-c3d9e8915627")
     } catch (e) {}
 }();
 (function() {
@@ -228,7 +228,7 @@
     const l = process.platform === "darwin",
         p = {
             send: (e, ...o) => {
-                ["focus-url-bar", "element-selected", "element-updated", "area-screenshot-selected", "style-changes-confirmed", "css-inspector-style-change", "open-url-side-group", "open-url-new-tab", "focus-composer-input", "css-inspector-undo", "css-inspector-redo", "show-dialog", "show-dialog-dummy", "passkey-request-stalled", "browser-error-action"].includes(e) && s.sendToHost(e, ...o)
+                ["focus-url-bar", "element-selected", "element-updated", "element-picked", "area-screenshot-selected", "style-changes-confirmed", "css-inspector-style-change", "open-url-side-group", "open-url-new-tab", "focus-composer-input", "css-inspector-undo", "css-inspector-redo", "show-dialog", "show-dialog-dummy", "passkey-request-stalled", "browser-error-action"].includes(e) && s.sendToHost(e, ...o)
             }
         };
     try {
@@ -419,6 +419,6 @@
     }, !0)
 })();
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/c6285feaba0ad62603f7c22e72f0a170dc8415a0/core/vs/workbench/contrib/composer/browser/preload-webview-browser.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/63715ffc1807793ce209e935e5c3ab9b79fddc80/core/vs/workbench/contrib/composer/browser/preload-webview-browser.js.map
 
-//# debugId=29f59b7d-6e5f-5040-a43b-400a1cde453d
+//# debugId=7e6ab40d-f243-5124-9ff5-c3d9e8915627

@@ -9,75 +9,75 @@
     } catch (e) {}
 }();
 (function() {
-    const d = window.vscode,
-        p = d.process;
-    async function f(t, e) {
-        const n = await j();
-        e?.beforeImport?.(n);
+    const l = window.vscode,
+        p = l.process;
+    async function y(t, e) {
+        const r = await v();
+        e?.beforeImport?.(r);
         const {
             enableDeveloperKeybindings: a,
             removeDeveloperKeybindingsAfterLoad: i,
-            developerDeveloperKeybindingsDisposable: l,
-            forceDisableShowDevtoolsOnError: o
-        } = v(n, e);
-        w(n);
-        const s = new URL(`${S(n.appRoot,{isWindows:p.platform==="win32",scheme:"vscode-file",fallbackAuthority:"vscode-app"})}/out/`);
-        globalThis._VSCODE_FILE_ROOT = s.toString(), D(n, s);
+            developerDeveloperKeybindingsDisposable: d,
+            forceDisableShowDevtoolsOnError: n
+        } = x(r, e);
+        w(r);
+        const s = new URL(`${S(r.appRoot,{isWindows:p.platform==="win32",scheme:"vscode-file",fallbackAuthority:"vscode-app"})}/out/`);
+        globalThis._VSCODE_FILE_ROOT = s.toString(), D(r, s);
         try {
-            let r;
-            return r = await import(new URL(`${t}.js`, s).href), l && i && l(), {
-                result: r,
-                configuration: n
+            let o;
+            return o = await import(new URL(`${t}.js`, s).href), d && i && d(), {
+                result: o,
+                configuration: r
             }
-        } catch (r) {
-            throw k(r, a && !o), r
+        } catch (o) {
+            throw k(o, a && !n), o
         }
     }
-    async function j() {
+    async function v() {
         const t = setTimeout(() => {
             console.error("[resolve window config] Could not resolve window configuration within 10 seconds, but will continue to wait...")
         }, 1e4);
         performance.mark("code/willWaitForWindowConfig");
-        const e = await d.context.resolveConfiguration();
+        const e = await l.context.resolveConfiguration();
         return performance.mark("code/didWaitForWindowConfig"), clearTimeout(t), e
     }
 
-    function v(t, e) {
+    function x(t, e) {
         const {
-            forceEnableDeveloperKeybindings: n,
+            forceEnableDeveloperKeybindings: r,
             disallowReloadKeybinding: a,
             removeDeveloperKeybindingsAfterLoad: i,
-            forceDisableShowDevtoolsOnError: l
+            forceDisableShowDevtoolsOnError: d
         } = typeof e?.configureDeveloperSettings == "function" ? e.configureDeveloperSettings(t) : {
             forceEnableDeveloperKeybindings: !1,
             disallowReloadKeybinding: !1,
             removeDeveloperKeybindingsAfterLoad: !1,
             forceDisableShowDevtoolsOnError: !1
-        }, s = !!(!!p.env.VSCODE_DEV || n);
-        let r;
-        return s && (r = h(a)), {
+        }, s = !!(!!p.env.VSCODE_DEV || r);
+        let o;
+        return s && (o = h(a)), {
             enableDeveloperKeybindings: s,
             removeDeveloperKeybindingsAfterLoad: i,
-            developerDeveloperKeybindingsDisposable: r,
-            forceDisableShowDevtoolsOnError: l
+            developerDeveloperKeybindingsDisposable: o,
+            forceDisableShowDevtoolsOnError: d
         }
     }
 
     function h(t) {
-        const e = d.ipcRenderer,
-            n = function(s) {
+        const e = l.ipcRenderer,
+            r = function(s) {
                 return [s.ctrlKey ? "ctrl-" : "", s.metaKey ? "meta-" : "", s.altKey ? "alt-" : "", s.shiftKey ? "shift-" : "", s.keyCode].join("")
             },
             a = p.platform === "darwin" ? "meta-alt-73" : "ctrl-shift-73",
             i = "123",
-            l = p.platform === "darwin" ? "meta-82" : "ctrl-82";
-        let o = function(s) {
-            const r = n(s);
-            r === a || r === i ? e.send("vscode:toggleDevTools") : r === l && !t && e.send("vscode:reloadWindow")
+            d = p.platform === "darwin" ? "meta-82" : "ctrl-82";
+        let n = function(s) {
+            const o = r(s);
+            o === a || o === i ? e.send("vscode:toggleDevTools") : o === d && !t && e.send("vscode:reloadWindow")
         };
-        return window.addEventListener("keydown", o),
+        return window.addEventListener("keydown", n),
             function() {
-                o && (window.removeEventListener("keydown", o), o = void 0)
+                n && (window.removeEventListener("keydown", n), n = void 0)
             }
     }
 
@@ -88,20 +88,21 @@
     }
 
     function k(t, e) {
-        e && d.ipcRenderer.send("vscode:openDevTools"), console.error(`[uncaught exception]: ${t}`), t && typeof t != "string" && t.stack && console.error(t.stack)
+        e && l.ipcRenderer.send("vscode:openDevTools"), console.error(`[uncaught exception]: ${t}`), t && typeof t != "string" && t.stack && console.error(t.stack)
     }
 
     function S(t, e) {
-        let n = t.replace(/\\/g, "/");
-        n.length > 0 && n.charAt(0) !== "/" && (n = `/${n}`);
+        let r = t.replace(/\\/g, "/");
+        r.length > 0 && r.charAt(0) !== "/" && (r = `/${r}`);
         let a;
-        return e.isWindows && n.startsWith("//") ? a = encodeURI(`${e.scheme||"file"}:${n}`) : a = encodeURI(`${e.scheme||"file"}://${e.fallbackAuthority||""}${n}`), a.replace(/#/g, "%23")
+        return e.isWindows && r.startsWith("//") ? a = encodeURI(`${e.scheme||"file"}:${r}`) : a = encodeURI(`${e.scheme||"file"}://${e.fallbackAuthority||""}${r}`), a.replace(/#/g, "%23")
     }
 
     function D(t, e) {
-        const n = {
+        const r = {
                 react: "react/esm-index-development.js",
                 "react/jsx-runtime": "react/esm-jsx-runtime-development.js",
+                "react/compiler-runtime": "react/esm-compiler-runtime-development.js",
                 "react-dom": "react-dom/esm-index-development.js",
                 "react-dom/client": "react-dom/esm-client-development.js",
                 "react-vnc": "react-vnc/dist/react-vnc.js",
@@ -127,6 +128,11 @@
                 jimp: "jimp/dist/esm/index.js",
                 zod: "zod/index.js",
                 "gray-matter": "gray-matter/index.js",
+                "@dnd-kit/accessibility": "@dnd-kit/accessibility/dist/accessibility.esm.js",
+                "@dnd-kit/core": "@dnd-kit/core/dist/core.esm.js",
+                "@dnd-kit/sortable": "@dnd-kit/sortable/dist/sortable.esm.js",
+                "@dnd-kit/utilities": "@dnd-kit/utilities/dist/utilities.esm.js",
+                tslib: "tslib/tslib.es6.mjs",
                 "@sentry/browser": "@sentry/browser/build/npm/esm/dev/index.js",
                 "@sentry-internal/replay": "@sentry-internal/replay/build/npm/esm/index.js",
                 "@sentry-internal/replay-canvas": "@sentry-internal/replay-canvas/build/npm/esm/index.js",
@@ -147,6 +153,7 @@
                 "@anysphere/agent-core": "../../packages/agent-core/dist/index.js",
                 "@anysphere/agent-kv": "../../packages/agent-kv/dist/index.js",
                 "@anysphere/agent-transcript": "../../packages/agent-transcript/dist/index.js",
+                "@anysphere/agent-transcript/browser": "../../packages/agent-transcript/dist/browser.js",
                 "@anysphere/agent-client": "../../packages/agent-client/dist/index.js",
                 "@anysphere/context": "../../packages/context/dist/index.js",
                 "@anysphere/context-rpc": "../../packages/context-rpc/dist/index.js",
@@ -154,28 +161,34 @@
                 "@anysphere/ui": "../../packages/ui/dist/bundle.js",
                 "@anysphere/utils": "../../packages/utils/dist/browser.js",
                 "@anysphere/git-core": "../../packages/git-core/dist/index.js",
-                "@anysphere/hooks": "../../packages/hooks/dist/index.js"
+                "@anysphere/hooks": "../../packages/hooks/dist/index.js",
+                "@anysphere/proto/redaction-schema": "../../packages/proto/dist/redactionSchema.js",
+                "@anysphere/redaction": "../../packages/redaction/dist/index.js",
+                "@anysphere/redacted-protos": "../../packages/redacted-protos/dist/index.js",
+                "@anysphere/redacted-protos/agent-v1": "../../packages/redacted-protos/dist/agent-v1.js",
+                "@anysphere/redacted-protos/aiserver-v1": "../../packages/redacted-protos/dist/aiserver-v1.js",
+                "@anysphere/redacted-protos/type-guards": "../../packages/redacted-protos/dist/type-guards.js"
             },
             i = {
                 imports: {}
             };
-        for (const [s, r] of Object.entries(n)) i.imports[s] = new URL(`../node_modules/${r}`, e).href;
-        for (const [s, r] of Object.entries(a)) i.imports[s] = new URL(`./external/${r}`, e).href;
-        const l = ["api/context", "api/diag", "api/metrics", "api/propagation", "api/trace", "baggage/context-helpers", "baggage/internal/baggage-impl", "baggage/internal/symbol", "baggage/types", "baggage/utils", "common/Attributes", "common/Exception", "common/Time", "context/context", "context/NoopContextManager", "context/types", "diag/ComponentLogger", "diag/consoleLogger", "diag/internal/logLevelLogger", "diag/internal/noopLogger", "diag/types", "experimental/index", "experimental/trace/SugaredOptions", "experimental/trace/SugaredTracer", "internal/global-utils", "internal/semver", "metrics/Meter", "metrics/MeterProvider", "metrics/Metric", "metrics/NoopMeter", "metrics/NoopMeterProvider", "metrics/ObservableResult", "platform/browser/globalThis", "platform/browser/index", "platform/index", "platform/node/globalThis", "platform/node/index", "propagation/NoopTextMapPropagator", "propagation/TextMapPropagator", "trace/attributes", "trace/context-utils", "trace/internal/tracestate-impl", "trace/internal/tracestate-validators", "trace/internal/utils", "trace/invalid-span-constants", "trace/link", "trace/NonRecordingSpan", "trace/NoopTracer", "trace/NoopTracerProvider", "trace/ProxyTracer", "trace/ProxyTracerProvider", "trace/Sampler", "trace/SamplingResult", "trace/span", "trace/span_context", "trace/span_kind", "trace/spancontext-utils", "trace/SpanOptions", "trace/status", "trace/trace_flags", "trace/trace_state", "trace/tracer", "trace/tracer_options", "trace/tracer_provider", "context-api", "diag-api", "index", "metrics-api", "propagation-api", "trace-api", "version"],
-            o = new URL("../node_modules/@opentelemetry/api/build/esm/", e).href;
-        for (const s of l) i.imports[`${o}${s}`] = `${o}${s}.js`;
-        if (i.imports[`${o}platform`] = `${o}platform/index.js`, i.imports[`${o}experimental`] = `${o}experimental/index.js`, i.imports[`${o}platform/node`] = `${o}platform/node/index.js`, i.imports[`${o}platform/browser`] = `${o}platform/browser/index.js`, t.cssModules && t.cssModules.size > 0) {
-            performance.mark("code/willAddCssLoader"), globalThis._VSCODE_CSS_LOAD = function(c, g, y) {
-                const u = document.createElement("link");
-                u.rel = "stylesheet", u.href = c + "?hash=" + y, u.type = "text/css", u.media = "screen", u.id = g.replace(".css", ""), document.head.appendChild(u)
+        for (const [s, o] of Object.entries(r)) i.imports[s] = new URL(`../node_modules/${o}`, e).href;
+        for (const [s, o] of Object.entries(a)) i.imports[s] = new URL(`./external/${o}`, e).href;
+        const d = ["api/context", "api/diag", "api/metrics", "api/propagation", "api/trace", "baggage/context-helpers", "baggage/internal/baggage-impl", "baggage/internal/symbol", "baggage/types", "baggage/utils", "common/Attributes", "common/Exception", "common/Time", "context/context", "context/NoopContextManager", "context/types", "diag/ComponentLogger", "diag/consoleLogger", "diag/internal/logLevelLogger", "diag/internal/noopLogger", "diag/types", "experimental/index", "experimental/trace/SugaredOptions", "experimental/trace/SugaredTracer", "internal/global-utils", "internal/semver", "metrics/Meter", "metrics/MeterProvider", "metrics/Metric", "metrics/NoopMeter", "metrics/NoopMeterProvider", "metrics/ObservableResult", "platform/browser/globalThis", "platform/browser/index", "platform/index", "platform/node/globalThis", "platform/node/index", "propagation/NoopTextMapPropagator", "propagation/TextMapPropagator", "trace/attributes", "trace/context-utils", "trace/internal/tracestate-impl", "trace/internal/tracestate-validators", "trace/internal/utils", "trace/invalid-span-constants", "trace/link", "trace/NonRecordingSpan", "trace/NoopTracer", "trace/NoopTracerProvider", "trace/ProxyTracer", "trace/ProxyTracerProvider", "trace/Sampler", "trace/SamplingResult", "trace/span", "trace/span_context", "trace/span_kind", "trace/spancontext-utils", "trace/SpanOptions", "trace/status", "trace/trace_flags", "trace/trace_state", "trace/tracer", "trace/tracer_options", "trace/tracer_provider", "context-api", "diag-api", "index", "metrics-api", "propagation-api", "trace-api", "version"],
+            n = new URL("../node_modules/@opentelemetry/api/build/esm/", e).href;
+        for (const s of d) i.imports[`${n}${s}`] = `${n}${s}.js`;
+        if (i.imports[`${n}platform`] = `${n}platform/index.js`, i.imports[`${n}experimental`] = `${n}experimental/index.js`, i.imports[`${n}platform/node`] = `${n}platform/node/index.js`, i.imports[`${n}platform/browser`] = `${n}platform/browser/index.js`, t.cssModules && t.cssModules.size > 0) {
+            performance.mark("code/willAddCssLoader"), globalThis._VSCODE_CSS_LOAD = function(c, g, b) {
+                const m = document.createElement("link");
+                m.rel = "stylesheet", m.href = c + "?hash=" + b, m.type = "text/css", m.media = "screen", m.id = g.replace(".css", ""), document.head.appendChild(m)
             };
             const s = t.cssModules,
-                r = new Map(Array.from(s, ([c, g]) => [c, {
+                o = new Map(Array.from(s, ([c, g]) => [c, {
                     hash: g,
                     url: new URL(c, e).href
                 }])),
-                b = `
-				const cssMapping = ${JSON.stringify(Object.fromEntries(r))};
+                f = `
+				const cssMapping = ${JSON.stringify(Object.fromEntries(o))};
 				const url = new URL(import.meta.url);
 				const params = new URLSearchParams(url.hash.slice(1));
 				const currentModule = params.get('module');
@@ -187,42 +200,42 @@
 				}
 				export default {};
 		`,
-                L = new Blob([b], {
+                L = new Blob([f], {
                     type: "application/javascript"
                 }),
                 M = URL.createObjectURL(L);
             for (const [c, g] of t.cssModules) {
-                const y = new URL(c, e).href;
-                i.imports[y] = M + "#module=" + encodeURIComponent(c)
+                const b = new URL(c, e).href;
+                i.imports[b] = M + "#module=" + encodeURIComponent(c)
             }
             const _ = window.trustedTypes?.createPolicy("vscode-bootstrapImportMap", {
                     createScript(c) {
                         return c
                     }
                 }),
-                x = JSON.stringify(i, void 0, 2),
-                m = document.createElement("script");
-            m.type = "importmap", m.setAttribute("nonce", "0c6a828f1297"), m.textContent = _?.createScript(x) ?? x, document.head.appendChild(m), performance.mark("code/didAddCssLoader")
+                j = JSON.stringify(i, void 0, 2),
+                u = document.createElement("script");
+            u.type = "importmap", u.setAttribute("nonce", "0c6a828f1297"), u.textContent = _?.createScript(j) ?? j, document.head.appendChild(u), performance.mark("code/didAddCssLoader")
         }
     }
     globalThis.MonacoBootstrapWindow = {
-        load: f
+        load: y
     }
 })(), (async function() {
-    const d = window.MonacoBootstrapWindow,
+    const l = window.MonacoBootstrapWindow,
         {
             result: p,
-            configuration: f
-        } = await d.load("vs/code/electron-sandbox/processExplorer/processExplorerMain", {
+            configuration: y
+        } = await l.load("vs/code/electron-sandbox/processExplorer/processExplorerMain", {
             configureDeveloperSettings: function() {
                 return {
                     forceEnableDeveloperKeybindings: !0
                 }
             }
         });
-    p.startup(f)
+    p.startup(y)
 })();
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/c6285feaba0ad62603f7c22e72f0a170dc8415a0/core/vs/code/electron-sandbox/processExplorer/processExplorer.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/63715ffc1807793ce209e935e5c3ab9b79fddc80/core/vs/code/electron-sandbox/processExplorer/processExplorer.js.map
 
 //# debugId=eea322f7-cbee-57d1-93f2-e90fdade43bb

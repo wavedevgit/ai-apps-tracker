@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "a2f96e7e-c18b-5d1d-a9b3-0ea05de84d3e")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "49ea4522-8a92-50f1-b079-f537fa8909eb")
     } catch (e) {}
 }();
 (function() {
@@ -16,21 +16,21 @@
         r?.beforeImport?.(e);
         const {
             enableDeveloperKeybindings: o,
-            removeDeveloperKeybindingsAfterLoad: l,
+            removeDeveloperKeybindingsAfterLoad: d,
             developerDeveloperKeybindingsDisposable: s,
             forceDisableShowDevtoolsOnError: t
-        } = B(e, r);
+        } = k(e, r);
         y(e);
         const i = new URL(`${h(e.appRoot,{isWindows:p.platform==="win32",scheme:"vscode-file",fallbackAuthority:"vscode-app"})}/out/`);
         globalThis._VSCODE_FILE_ROOT = i.toString(), u(e, i);
         try {
             let c;
-            return c = await import(new URL(`${a}.js`, i).href), s && l && s(), {
+            return c = await import(new URL(`${a}.js`, i).href), s && d && s(), {
                 result: c,
                 configuration: e
             }
         } catch (c) {
-            throw d(c, o && !t), c
+            throw l(c, o && !t), c
         }
     }
     async function w() {
@@ -42,11 +42,11 @@
         return performance.mark("code/didWaitForWindowConfig"), clearTimeout(a), r
     }
 
-    function B(a, r) {
+    function k(a, r) {
         const {
             forceEnableDeveloperKeybindings: e,
             disallowReloadKeybinding: o,
-            removeDeveloperKeybindingsAfterLoad: l,
+            removeDeveloperKeybindingsAfterLoad: d,
             forceDisableShowDevtoolsOnError: s
         } = typeof r?.configureDeveloperSettings == "function" ? r.configureDeveloperSettings(a) : {
             forceEnableDeveloperKeybindings: !1,
@@ -57,7 +57,7 @@
         let c;
         return i && (c = n(o)), {
             enableDeveloperKeybindings: i,
-            removeDeveloperKeybindingsAfterLoad: l,
+            removeDeveloperKeybindingsAfterLoad: d,
             developerDeveloperKeybindingsDisposable: c,
             forceDisableShowDevtoolsOnError: s
         }
@@ -69,11 +69,11 @@
                 return [i.ctrlKey ? "ctrl-" : "", i.metaKey ? "meta-" : "", i.altKey ? "alt-" : "", i.shiftKey ? "shift-" : "", i.keyCode].join("")
             },
             o = p.platform === "darwin" ? "meta-alt-73" : "ctrl-shift-73",
-            l = "123",
+            d = "123",
             s = p.platform === "darwin" ? "meta-82" : "ctrl-82";
         let t = function(i) {
             const c = e(i);
-            c === o || c === l ? r.send("vscode:toggleDevTools") : c === s && !a && r.send("vscode:reloadWindow")
+            c === o || c === d ? r.send("vscode:toggleDevTools") : c === s && !a && r.send("vscode:reloadWindow")
         };
         return window.addEventListener("keydown", t),
             function() {
@@ -87,7 +87,7 @@
         r === "zh-tw" ? r = "zh-Hant" : r === "zh-cn" && (r = "zh-Hans"), window.document.documentElement.setAttribute("lang", r)
     }
 
-    function d(a, r) {
+    function l(a, r) {
         r && g.ipcRenderer.send("vscode:openDevTools"), console.error(`[uncaught exception]: ${a}`), a && typeof a != "string" && a.stack && console.error(a.stack)
     }
 
@@ -102,6 +102,7 @@
         const e = {
                 react: "react/esm-index-development.js",
                 "react/jsx-runtime": "react/esm-jsx-runtime-development.js",
+                "react/compiler-runtime": "react/esm-compiler-runtime-development.js",
                 "react-dom": "react-dom/esm-index-development.js",
                 "react-dom/client": "react-dom/esm-client-development.js",
                 "react-vnc": "react-vnc/dist/react-vnc.js",
@@ -127,6 +128,11 @@
                 jimp: "jimp/dist/esm/index.js",
                 zod: "zod/index.js",
                 "gray-matter": "gray-matter/index.js",
+                "@dnd-kit/accessibility": "@dnd-kit/accessibility/dist/accessibility.esm.js",
+                "@dnd-kit/core": "@dnd-kit/core/dist/core.esm.js",
+                "@dnd-kit/sortable": "@dnd-kit/sortable/dist/sortable.esm.js",
+                "@dnd-kit/utilities": "@dnd-kit/utilities/dist/utilities.esm.js",
+                tslib: "tslib/tslib.es6.mjs",
                 "@sentry/browser": "@sentry/browser/build/npm/esm/dev/index.js",
                 "@sentry-internal/replay": "@sentry-internal/replay/build/npm/esm/index.js",
                 "@sentry-internal/replay-canvas": "@sentry-internal/replay-canvas/build/npm/esm/index.js",
@@ -147,6 +153,7 @@
                 "@anysphere/agent-core": "../../packages/agent-core/dist/index.js",
                 "@anysphere/agent-kv": "../../packages/agent-kv/dist/index.js",
                 "@anysphere/agent-transcript": "../../packages/agent-transcript/dist/index.js",
+                "@anysphere/agent-transcript/browser": "../../packages/agent-transcript/dist/browser.js",
                 "@anysphere/agent-client": "../../packages/agent-client/dist/index.js",
                 "@anysphere/context": "../../packages/context/dist/index.js",
                 "@anysphere/context-rpc": "../../packages/context-rpc/dist/index.js",
@@ -154,27 +161,33 @@
                 "@anysphere/ui": "../../packages/ui/dist/bundle.js",
                 "@anysphere/utils": "../../packages/utils/dist/browser.js",
                 "@anysphere/git-core": "../../packages/git-core/dist/index.js",
-                "@anysphere/hooks": "../../packages/hooks/dist/index.js"
+                "@anysphere/hooks": "../../packages/hooks/dist/index.js",
+                "@anysphere/proto/redaction-schema": "../../packages/proto/dist/redactionSchema.js",
+                "@anysphere/redaction": "../../packages/redaction/dist/index.js",
+                "@anysphere/redacted-protos": "../../packages/redacted-protos/dist/index.js",
+                "@anysphere/redacted-protos/agent-v1": "../../packages/redacted-protos/dist/agent-v1.js",
+                "@anysphere/redacted-protos/aiserver-v1": "../../packages/redacted-protos/dist/aiserver-v1.js",
+                "@anysphere/redacted-protos/type-guards": "../../packages/redacted-protos/dist/type-guards.js"
             },
-            l = {
+            d = {
                 imports: {}
             };
-        for (const [i, c] of Object.entries(e)) l.imports[i] = new URL(`../node_modules/${c}`, r).href;
-        for (const [i, c] of Object.entries(o)) l.imports[i] = new URL(`./external/${c}`, r).href;
+        for (const [i, c] of Object.entries(e)) d.imports[i] = new URL(`../node_modules/${c}`, r).href;
+        for (const [i, c] of Object.entries(o)) d.imports[i] = new URL(`./external/${c}`, r).href;
         const s = ["api/context", "api/diag", "api/metrics", "api/propagation", "api/trace", "baggage/context-helpers", "baggage/internal/baggage-impl", "baggage/internal/symbol", "baggage/types", "baggage/utils", "common/Attributes", "common/Exception", "common/Time", "context/context", "context/NoopContextManager", "context/types", "diag/ComponentLogger", "diag/consoleLogger", "diag/internal/logLevelLogger", "diag/internal/noopLogger", "diag/types", "experimental/index", "experimental/trace/SugaredOptions", "experimental/trace/SugaredTracer", "internal/global-utils", "internal/semver", "metrics/Meter", "metrics/MeterProvider", "metrics/Metric", "metrics/NoopMeter", "metrics/NoopMeterProvider", "metrics/ObservableResult", "platform/browser/globalThis", "platform/browser/index", "platform/index", "platform/node/globalThis", "platform/node/index", "propagation/NoopTextMapPropagator", "propagation/TextMapPropagator", "trace/attributes", "trace/context-utils", "trace/internal/tracestate-impl", "trace/internal/tracestate-validators", "trace/internal/utils", "trace/invalid-span-constants", "trace/link", "trace/NonRecordingSpan", "trace/NoopTracer", "trace/NoopTracerProvider", "trace/ProxyTracer", "trace/ProxyTracerProvider", "trace/Sampler", "trace/SamplingResult", "trace/span", "trace/span_context", "trace/span_kind", "trace/spancontext-utils", "trace/SpanOptions", "trace/status", "trace/trace_flags", "trace/trace_state", "trace/tracer", "trace/tracer_options", "trace/tracer_provider", "context-api", "diag-api", "index", "metrics-api", "propagation-api", "trace-api", "version"],
             t = new URL("../node_modules/@opentelemetry/api/build/esm/", r).href;
-        for (const i of s) l.imports[`${t}${i}`] = `${t}${i}.js`;
-        if (l.imports[`${t}platform`] = `${t}platform/index.js`, l.imports[`${t}experimental`] = `${t}experimental/index.js`, l.imports[`${t}platform/node`] = `${t}platform/node/index.js`, l.imports[`${t}platform/browser`] = `${t}platform/browser/index.js`, a.cssModules && a.cssModules.size > 0) {
-            performance.mark("code/willAddCssLoader"), globalThis._VSCODE_CSS_LOAD = function(m, v, k) {
+        for (const i of s) d.imports[`${t}${i}`] = `${t}${i}.js`;
+        if (d.imports[`${t}platform`] = `${t}platform/index.js`, d.imports[`${t}experimental`] = `${t}experimental/index.js`, d.imports[`${t}platform/node`] = `${t}platform/node/index.js`, d.imports[`${t}platform/browser`] = `${t}platform/browser/index.js`, a.cssModules && a.cssModules.size > 0) {
+            performance.mark("code/willAddCssLoader"), globalThis._VSCODE_CSS_LOAD = function(m, v, j) {
                 const b = document.createElement("link");
-                b.rel = "stylesheet", b.href = m + "?hash=" + k, b.type = "text/css", b.media = "screen", b.id = v.replace(".css", ""), document.head.appendChild(b)
+                b.rel = "stylesheet", b.href = m + "?hash=" + j, b.type = "text/css", b.media = "screen", b.id = v.replace(".css", ""), document.head.appendChild(b)
             };
             const i = a.cssModules,
                 c = new Map(Array.from(i, ([m, v]) => [m, {
                     hash: v,
                     url: new URL(m, r).href
                 }])),
-                j = `
+                B = `
 				const cssMapping = ${JSON.stringify(Object.fromEntries(c))};
 				const url = new URL(import.meta.url);
 				const params = new URLSearchParams(url.hash.slice(1));
@@ -187,20 +200,20 @@
 				}
 				export default {};
 		`,
-                D = new Blob([j], {
+                D = new Blob([B], {
                     type: "application/javascript"
                 }),
                 C = URL.createObjectURL(D);
             for (const [m, v] of a.cssModules) {
-                const k = new URL(m, r).href;
-                l.imports[k] = C + "#module=" + encodeURIComponent(m)
+                const j = new URL(m, r).href;
+                d.imports[j] = C + "#module=" + encodeURIComponent(m)
             }
             const E = window.trustedTypes?.createPolicy("vscode-bootstrapImportMap", {
                     createScript(m) {
                         return m
                     }
                 }),
-                S = JSON.stringify(l, void 0, 2),
+                S = JSON.stringify(d, void 0, 2),
                 f = document.createElement("script");
             f.type = "importmap", f.setAttribute("nonce", "0c6a828f1297"), f.textContent = E?.createScript(S) ?? S, document.head.appendChild(f), performance.mark("code/didAddCssLoader")
         }
@@ -219,37 +232,37 @@
             e.className = "initialShellColors", window.document.head.appendChild(e), e.textContent = "html, body {	background-color: transparent; margin: 0; padding: 0; }", typeof n.zoomLevel == "number" && typeof p?.webFrame?.setZoomLevel == "function" && p.webFrame.setZoomLevel(n.zoomLevel), performance.mark("code/didShowPartsSplash");
             return
         }
-        let d = n.partsSplash;
-        d && (n.autoDetectHighContrast && n.colorScheme.highContrast ? (n.colorScheme.dark && d.baseTheme !== "hc-black" || !n.colorScheme.dark && d.baseTheme !== "hc-light") && (d = void 0) : n.autoDetectColorScheme && (n.colorScheme.dark && d.baseTheme !== "vs-dark" || !n.colorScheme.dark && d.baseTheme !== "vs") && (d = void 0)), d && n.extensionDevelopmentPath && (d.layoutInfo = void 0);
+        let l = n.partsSplash;
+        l && (n.autoDetectHighContrast && n.colorScheme.highContrast ? (n.colorScheme.dark && l.baseTheme !== "hc-black" || !n.colorScheme.dark && l.baseTheme !== "hc-light") && (l = void 0) : n.autoDetectColorScheme && (n.colorScheme.dark && l.baseTheme !== "vs-dark" || !n.colorScheme.dark && l.baseTheme !== "vs") && (l = void 0)), l && n.extensionDevelopmentPath && (l.layoutInfo = void 0);
         let h, u, a;
-        d ? (h = d.baseTheme, u = d.colorInfo.editorBackground, a = d.colorInfo.foreground) : n.autoDetectHighContrast && n.colorScheme.highContrast ? n.colorScheme.dark ? (h = "hc-black", u = "#000000", a = "#FFFFFF") : (h = "hc-light", u = "#FFFFFF", a = "#000000") : n.autoDetectColorScheme && (n.colorScheme.dark ? (h = "vs-dark", u = "#1E1E1E", a = "#CCCCCC") : (h = "vs", u = "#FFFFFF", a = "#000000"));
+        l ? (h = l.baseTheme, u = l.colorInfo.editorBackground, a = l.colorInfo.foreground) : n.autoDetectHighContrast && n.colorScheme.highContrast ? n.colorScheme.dark ? (h = "hc-black", u = "#000000", a = "#FFFFFF") : (h = "hc-light", u = "#FFFFFF", a = "#000000") : n.autoDetectColorScheme && (n.colorScheme.dark ? (h = "vs-dark", u = "#1E1E1E", a = "#CCCCCC") : (h = "vs", u = "#FFFFFF", a = "#000000"));
         const r = document.createElement("style");
-        if (r.className = "initialShellColors", window.document.head.appendChild(r), r.textContent = `body {	background-color: ${u}; color: ${a}; margin: 0; padding: 0; }`, typeof d?.zoomLevel == "number" && typeof p?.webFrame?.setZoomLevel == "function" && p.webFrame.setZoomLevel(d.zoomLevel), d?.layoutInfo) {
+        if (r.className = "initialShellColors", window.document.head.appendChild(r), r.textContent = `body {	background-color: ${u}; color: ${a}; margin: 0; padding: 0; }`, typeof l?.zoomLevel == "number" && typeof p?.webFrame?.setZoomLevel == "function" && p.webFrame.setZoomLevel(l.zoomLevel), l?.layoutInfo) {
             const {
                 layoutInfo: e,
                 colorInfo: o
-            } = d, l = document.createElement("div");
-            if (l.id = "monaco-parts-splash", l.className = h ?? "vs-dark", e.windowBorder && o.windowBorder) {
+            } = l, d = document.createElement("div");
+            if (d.id = "monaco-parts-splash", d.className = h ?? "vs-dark", e.windowBorder && o.windowBorder) {
                 const s = document.createElement("div");
-                s.style.position = "absolute", s.style.width = "calc(100vw - 2px)", s.style.height = "calc(100vh - 2px)", s.style.zIndex = "1", s.style.border = "1px solid var(--window-border-color)", s.style.setProperty("--window-border-color", o.windowBorder), e.windowBorderRadius && (s.style.borderRadius = e.windowBorderRadius), l.appendChild(s)
+                s.style.position = "absolute", s.style.width = "calc(100vw - 2px)", s.style.height = "calc(100vh - 2px)", s.style.zIndex = "1", s.style.border = "1px solid var(--window-border-color)", s.style.setProperty("--window-border-color", o.windowBorder), e.windowBorderRadius && (s.style.borderRadius = e.windowBorderRadius), d.appendChild(s)
             }
             if (e.auxiliarySideBarWidth = Math.min(e.auxiliarySideBarWidth, window.innerWidth - (e.activityBarWidth + e.editorPartMinWidth + e.sideBarWidth)), e.sideBarWidth = Math.min(e.sideBarWidth, window.innerWidth - (e.activityBarWidth + e.editorPartMinWidth + e.auxiliarySideBarWidth)), e.titleBarHeight > 0) {
                 const s = document.createElement("div");
-                if (s.style.position = "absolute", s.style.width = "100%", s.style.height = `${e.titleBarHeight}px`, s.style.left = "0", s.style.top = "0", s.style.backgroundColor = `${o.titleBarBackground}`, s.style["-webkit-app-region"] = "drag", l.appendChild(s), o.titleBarBorder) {
+                if (s.style.position = "absolute", s.style.width = "100%", s.style.height = `${e.titleBarHeight}px`, s.style.left = "0", s.style.top = "0", s.style.backgroundColor = `${o.titleBarBackground}`, s.style["-webkit-app-region"] = "drag", d.appendChild(s), o.titleBarBorder) {
                     const t = document.createElement("div");
                     t.style.position = "absolute", t.style.width = "100%", t.style.height = "1px", t.style.left = "0", t.style.bottom = "0", t.style.borderBottom = `1px solid ${o.titleBarBorder}`, s.appendChild(t)
                 }
             }
             if (e.activityBarWidth > 0) {
                 const s = document.createElement("div");
-                if (s.style.position = "absolute", s.style.width = `${e.activityBarWidth}px`, s.style.height = `calc(100% - ${e.titleBarHeight+e.statusBarHeight}px)`, s.style.top = `${e.titleBarHeight}px`, e.sideBarSide === "left" ? s.style.left = "0" : s.style.right = "0", s.style.backgroundColor = `${o.activityBarBackground}`, l.appendChild(s), o.activityBarBorder) {
+                if (s.style.position = "absolute", s.style.width = `${e.activityBarWidth}px`, s.style.height = `calc(100% - ${e.titleBarHeight+e.statusBarHeight}px)`, s.style.top = `${e.titleBarHeight}px`, e.sideBarSide === "left" ? s.style.left = "0" : s.style.right = "0", s.style.backgroundColor = `${o.activityBarBackground}`, d.appendChild(s), o.activityBarBorder) {
                     const t = document.createElement("div");
                     t.style.position = "absolute", t.style.width = "1px", t.style.height = "100%", t.style.top = "0", e.sideBarSide === "left" ? (t.style.right = "0", t.style.borderRight = `1px solid ${o.activityBarBorder}`) : (t.style.left = "0", t.style.borderLeft = `1px solid ${o.activityBarBorder}`), s.appendChild(t)
                 }
             }
             if (n.workspace && e.sideBarWidth > 0) {
                 const s = document.createElement("div");
-                if (s.style.position = "absolute", s.style.width = `${e.sideBarWidth}px`, s.style.height = `calc(100% - ${e.titleBarHeight+e.statusBarHeight}px)`, s.style.top = `${e.titleBarHeight}px`, e.sideBarSide === "left" ? s.style.left = `${e.activityBarWidth}px` : s.style.right = `${e.activityBarWidth}px`, s.style.backgroundColor = `${o.sideBarBackground}`, l.appendChild(s), o.sideBarBorder) {
+                if (s.style.position = "absolute", s.style.width = `${e.sideBarWidth}px`, s.style.height = `calc(100% - ${e.titleBarHeight+e.statusBarHeight}px)`, s.style.top = `${e.titleBarHeight}px`, e.sideBarSide === "left" ? s.style.left = `${e.activityBarWidth}px` : s.style.right = `${e.activityBarWidth}px`, s.style.backgroundColor = `${o.sideBarBackground}`, d.appendChild(s), o.sideBarBorder) {
                     const t = document.createElement("div");
                     t.style.position = "absolute", t.style.width = "1px", t.style.height = "100%", t.style.top = "0", t.style.right = "0", e.sideBarSide === "left" ? t.style.borderRight = `1px solid ${o.sideBarBorder}` : (t.style.left = "0", t.style.borderLeft = `1px solid ${o.sideBarBorder}`), s.appendChild(t)
                 }
@@ -257,25 +270,25 @@
             if (e.auxiliarySideBarWidth > 0 || (e.unifiedSideBarWidth ?? 0) > 0) {
                 const s = e.unifiedSideBarWidth ?? e.auxiliarySideBarWidth,
                     t = document.createElement("div");
-                if (t.style.position = "absolute", t.style.width = `${s}px`, t.style.height = `calc(100% - ${e.titleBarHeight+e.statusBarHeight}px)`, t.style.top = `${e.titleBarHeight}px`, e.sideBarSide === "left" ? t.style.right = "0" : t.style.left = "0", t.style.backgroundColor = `${o.sideBarBackground}`, l.appendChild(t), o.sideBarBorder) {
+                if (t.style.position = "absolute", t.style.width = `${s}px`, t.style.height = `calc(100% - ${e.titleBarHeight+e.statusBarHeight}px)`, t.style.top = `${e.titleBarHeight}px`, e.sideBarSide === "left" ? t.style.right = "0" : t.style.left = "0", t.style.backgroundColor = `${o.sideBarBackground}`, d.appendChild(t), o.sideBarBorder) {
                     const i = document.createElement("div");
                     i.style.position = "absolute", i.style.width = "1px", i.style.height = "100%", i.style.top = "0", e.sideBarSide === "left" ? (i.style.left = "0", i.style.borderLeft = `1px solid ${o.sideBarBorder}`) : (i.style.right = "0", i.style.borderRight = `1px solid ${o.sideBarBorder}`), t.appendChild(i)
                 }
             }
             if (e.statusBarHeight > 0) {
                 const s = document.createElement("div");
-                if (s.style.position = "absolute", s.style.width = "100%", s.style.height = `${e.statusBarHeight}px`, s.style.bottom = "0", s.style.left = "0", n.workspace && o.statusBarBackground ? s.style.backgroundColor = o.statusBarBackground : !n.workspace && o.statusBarNoFolderBackground && (s.style.backgroundColor = o.statusBarNoFolderBackground), l.appendChild(s), o.statusBarBorder) {
+                if (s.style.position = "absolute", s.style.width = "100%", s.style.height = `${e.statusBarHeight}px`, s.style.bottom = "0", s.style.left = "0", n.workspace && o.statusBarBackground ? s.style.backgroundColor = o.statusBarBackground : !n.workspace && o.statusBarNoFolderBackground && (s.style.backgroundColor = o.statusBarNoFolderBackground), d.appendChild(s), o.statusBarBorder) {
                     const t = document.createElement("div");
                     t.style.position = "absolute", t.style.width = "100%", t.style.height = "1px", t.style.top = "0", t.style.borderTop = `1px solid ${o.statusBarBorder}`, s.appendChild(t)
                 }
             }
-            window.document.body.appendChild(l), window.document.body.classList.add("agent-unification-enabled")
+            window.document.body.appendChild(d)
         }
         performance.mark("code/didShowPartsSplash")
     }
     const {
         result: w,
-        configuration: B
+        configuration: k
     } = await g.load("vs/workbench/workbench.desktop.main", {
         configureDeveloperSettings: function(n) {
             return {
@@ -295,9 +308,9 @@
             }), performance.mark("code/willLoadWorkbenchMain")
         }
     });
-    performance.mark("code/didLoadWorkbenchMain"), w.main(B)
+    performance.mark("code/didLoadWorkbenchMain"), w.main(k)
 })();
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/c6285feaba0ad62603f7c22e72f0a170dc8415a0/core/vs/code/electron-sandbox/workbench/workbench.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/63715ffc1807793ce209e935e5c3ab9b79fddc80/core/vs/code/electron-sandbox/workbench/workbench.js.map
 
-//# debugId=a2f96e7e-c18b-5d1d-a9b3-0ea05de84d3e
+//# debugId=49ea4522-8a92-50f1-b079-f537fa8909eb

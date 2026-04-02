@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "fb066b12-87c3-5f23-86b9-5bda4d2c0fb9")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "390d35da-3e71-5814-b881-3027bb210f54")
     } catch (e) {}
 }();
 var Vt = function(t, e) {
@@ -4109,7 +4109,7 @@ var Do = ie ? z.normalize : U.normalize,
     Tl = ie ? z.delimiter : U.delimiter,
     P;
 (function(t) {
-    t.inMemory = "inmemory", t.vscode = "vscode", t.internal = "private", t.walkThrough = "walkThrough", t.walkThroughSnippet = "walkThroughSnippet", t.http = "http", t.https = "https", t.file = "file", t.git = "git", t.mailto = "mailto", t.untitled = "untitled", t.data = "data", t.command = "command", t.vscodeRemote = "vscode-remote", t.vscodeRemoteResource = "vscode-remote-resource", t.vscodeManagedRemoteResource = "vscode-managed-remote-resource", t.vscodeUserData = "vscode-userdata", t.vscodeCustomEditor = "vscode-custom-editor", t.vscodeNotebook = "vscode-notebook", t.vscodeNotebookCell = "vscode-notebook-cell", t.vscodeNotebookCellMetadata = "vscode-notebook-cell-metadata", t.vscodeNotebookCellMetadataDiff = "vscode-notebook-cell-metadata-diff", t.vscodeNotebookCellOutput = "vscode-notebook-cell-output", t.vscodeNotebookCellOutputDiff = "vscode-notebook-cell-output-diff", t.vscodeNotebookMetadata = "vscode-notebook-metadata", t.vscodeInteractiveInput = "vscode-interactive-input", t.vscodeSettings = "vscode-settings", t.vscodeWorkspaceTrust = "vscode-workspace-trust", t.vscodeTerminal = "vscode-terminal", t.terminal = "terminal", t.vscodeChatCodeBlock = "vscode-chat-code-block", t.vscodeChatCodeCompareBlock = "vscode-chat-code-compare-block", t.vscodeChatSesssion = "vscode-chat-editor", t.webviewPanel = "webview-panel", t.vscodeWebview = "vscode-webview", t.extension = "extension", t.aiChat = "cursor.aichat", t.contextObject = "cursor.context-object", t.composer = "cursor.composer", t.aiSettings = "cursor.aisettings", t.tinderDiffEditor = "cursor.tinderdiffeditor", t.vscodeFileResource = "vscode-file", t.tmp = "tmp", t.vsls = "vsls", t.vscodeSourceControl = "vscode-scm", t.commentsInput = "comment", t.codeSetting = "code-setting", t.cursorDev = "cursor-dev-utils", t.outputChannel = "output", t.accessibleView = "accessible-view", t.backgroundComposer = "cursor.backgroundcomposer", t.personalEnvironmentJson = "cursor.personalenvironmentjson", t.bugbot = "cursor.bugbot", t.aiEditorBox = "aiEditorBox", t.backgroundComposerPeek = "background-composer-peek", t.cursorPlan = "cursor-plan", t.reviewChanges = "cursor.reviewchanges", t.reviewPr = "cursor.reviewpr", t.allPullRequests = "cursor.allpullrequests", t.cursorBlame = "cursor.blame", t.cursorFileBlame = "cursor.fileblame"
+    t.inMemory = "inmemory", t.vscode = "vscode", t.internal = "private", t.walkThrough = "walkThrough", t.walkThroughSnippet = "walkThroughSnippet", t.http = "http", t.https = "https", t.file = "file", t.git = "git", t.mailto = "mailto", t.untitled = "untitled", t.data = "data", t.command = "command", t.vscodeRemote = "vscode-remote", t.vscodeRemoteResource = "vscode-remote-resource", t.vscodeManagedRemoteResource = "vscode-managed-remote-resource", t.vscodeUserData = "vscode-userdata", t.vscodeCustomEditor = "vscode-custom-editor", t.vscodeNotebook = "vscode-notebook", t.vscodeNotebookCell = "vscode-notebook-cell", t.vscodeNotebookCellMetadata = "vscode-notebook-cell-metadata", t.vscodeNotebookCellMetadataDiff = "vscode-notebook-cell-metadata-diff", t.vscodeNotebookCellOutput = "vscode-notebook-cell-output", t.vscodeNotebookCellOutputDiff = "vscode-notebook-cell-output-diff", t.vscodeNotebookMetadata = "vscode-notebook-metadata", t.vscodeInteractiveInput = "vscode-interactive-input", t.vscodeSettings = "vscode-settings", t.vscodeWorkspaceTrust = "vscode-workspace-trust", t.vscodeTerminal = "vscode-terminal", t.terminal = "terminal", t.vscodeChatCodeBlock = "vscode-chat-code-block", t.vscodeChatCodeCompareBlock = "vscode-chat-code-compare-block", t.vscodeChatSesssion = "vscode-chat-editor", t.webviewPanel = "webview-panel", t.vscodeWebview = "vscode-webview", t.extension = "extension", t.aiChat = "cursor.aichat", t.contextObject = "cursor.context-object", t.composer = "cursor.composer", t.aiSettings = "cursor.aisettings", t.tinderDiffEditor = "cursor.tinderdiffeditor", t.vscodeFileResource = "vscode-file", t.tmp = "tmp", t.vsls = "vsls", t.vscodeSourceControl = "vscode-scm", t.commentsInput = "comment", t.codeSetting = "code-setting", t.cursorDev = "cursor-dev-utils", t.outputChannel = "output", t.accessibleView = "accessible-view", t.backgroundComposer = "cursor.backgroundcomposer", t.personalEnvironmentJson = "cursor.personalenvironmentjson", t.bugbot = "cursor.bugbot", t.aiEditorBox = "aiEditorBox", t.backgroundComposerPeek = "background-composer-peek", t.cursorPlan = "cursor-plan", t.reviewChanges = "cursor.reviewchanges", t.cursorBlame = "cursor.blame", t.cursorFileBlame = "cursor.fileblame"
 })(P || (P = {}));
 var qo = "tkn",
     Wo = class {
@@ -6920,17 +6920,17 @@ var ou = class le {
 function kn(...t) {
     switch (t.length) {
         case 1:
-            return ne(1840, null, t[0]);
+            return ne(1966, null, t[0]);
         case 2:
-            return ne(1841, null, t[0], t[1]);
+            return ne(1967, null, t[0], t[1]);
         case 3:
-            return ne(1842, null, t[0], t[1], t[2]);
+            return ne(1968, null, t[0], t[1], t[2]);
         default:
             return
     }
 }
-var Na = ne(1843, null),
-    Oa = ne(1844, null),
+var Na = ne(1969, null),
+    Oa = ne(1970, null),
     tt = class Kn {
         constructor() {
             this._input = "", this._start = 0, this._current = 0, this._tokens = [], this._errors = [], this.stringRe = /[a-zA-Z0-9_<>\-\./\\:\*\?\+\[\]\^,#@;"%\$\p{L}-]+/uy
@@ -7194,14 +7194,14 @@ var Ra = Object.prototype.hasOwnProperty,
 var Pa = {
         regexParsingWithErrorRecovery: !0
     },
-    Da = ne(1818, null),
-    Fa = ne(1819, null),
-    Ta = ne(1820, null),
-    Si = ne(1821, null),
-    Ba = ne(1822, null),
-    Ua = ne(1823, null),
-    qa = ne(1824, null),
-    Wa = ne(1825, null),
+    Da = ne(1944, null),
+    Fa = ne(1945, null),
+    Ta = ne(1946, null),
+    Si = ne(1947, null),
+    Ba = ne(1948, null),
+    Ua = ne(1949, null),
+    qa = ne(1950, null),
+    Wa = ne(1951, null),
     Va = class ct {
         static {
             this._parseError = new Error
@@ -7474,7 +7474,7 @@ var Pa = {
             throw this._errExpectedButGot(n, this._peek())
         }
         _errExpectedButGot(e, n, r) {
-            const i = ne(1826, null, e, tt.getLexeme(n)),
+            const i = ne(1952, null, e, tt.getLexeme(n)),
                 s = n.offset,
                 o = tt.getLexeme(n);
             return this._parsingErrors.push({
@@ -9414,6 +9414,6 @@ var is = class {
     };
 oo(dl);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/c6285feaba0ad62603f7c22e72f0a170dc8415a0/core/vs/workbench/contrib/notebook/common/services/notebookWebWorkerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/63715ffc1807793ce209e935e5c3ab9b79fddc80/core/vs/workbench/contrib/notebook/common/services/notebookWebWorkerMain.js.map
 
-//# debugId=fb066b12-87c3-5f23-86b9-5bda4d2c0fb9
+//# debugId=390d35da-3e71-5814-b881-3027bb210f54

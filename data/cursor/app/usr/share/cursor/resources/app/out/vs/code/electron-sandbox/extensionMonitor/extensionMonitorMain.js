@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "f97d5b99-b738-5057-9dfd-e63318d3fd0f")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "c180a542-a914-5a91-8946-6b522ebe7eaa")
     } catch (e) {}
 }();
 var Sr = function(e, t) {
@@ -368,7 +368,7 @@ export function __makeTemplateObject(e, t) {
         value: t
     }) : e.raw = t, e
 }
-var Ns = Object.create ? (function(e, t) {
+var Rs = Object.create ? (function(e, t) {
     Object.defineProperty(e, "default", {
         enumerable: !0,
         value: t
@@ -381,7 +381,7 @@ export function __importStar(e) {
     var t = {};
     if (e != null)
         for (var r in e) r !== "default" && Object.prototype.hasOwnProperty.call(e, r) && __createBinding(t, e, r);
-    return Ns(t, e), t
+    return Rs(t, e), t
 }
 export function __importDefault(e) {
     return e && e.__esModule ? e : {
@@ -496,7 +496,7 @@ function Ls(e, t, r = 0, i = e.length) {
     }
     return s - 1
 }
-var bl = class us {
+var Dl = class us {
         static {
             this.assertInvariants = !1
         }
@@ -519,7 +519,7 @@ var bl = class us {
         constructor() {
             this.listeners = [], this.unexpectedErrorHandler = function(e) {
                 setTimeout(() => {
-                    throw e.stack ? ei.isErrorNoTelemetry(e) ? new ei(e.message + `
+                    throw e.stack ? J1.isErrorNoTelemetry(e) ? new J1(e.message + `
 
 ` + e.stack) : new Error(e.message + `
 
@@ -553,29 +553,29 @@ var bl = class us {
             this.unexpectedErrorHandler(e)
         }
     },
-    J1 = new ks;
+    X1 = new ks;
 
-function Zt(e) {
-    J1.onUnexpectedError(e)
+function Yt(e) {
+    X1.onUnexpectedError(e)
 }
 
 function ke(e) {
-    Ss(e) || J1.onUnexpectedError(e)
+    Ss(e) || X1.onUnexpectedError(e)
 }
-var xr = "Canceled";
+var Mr = "Canceled";
 
 function Ss(e) {
-    return e instanceof xs ? !0 : e instanceof Error && e.name === xr && e.message === xr
+    return e instanceof Ms ? !0 : e instanceof Error && e.name === Mr && e.message === Mr
 }
-var xs = class extends Error {
+var Ms = class extends Error {
         constructor() {
-            if (super(xr), this.name = this.message, Ps && typeof console < "u") {
+            if (super(Mr), this.name = this.message, Ps && typeof console < "u") {
                 const e = new Error().stack ?? "";
-                Ms.some(t => e.includes(t)) && console.trace("[DebugCancellation] CancellationError created")
+                xs.some(t => e.includes(t)) && console.trace("[DebugCancellation] CancellationError created")
             }
         }
     },
-    ei = class N1 extends Error {
+    J1 = class N1 extends Error {
         constructor(t) {
             super(t), this.name = "CodeExpectedError"
         }
@@ -593,9 +593,9 @@ var xs = class extends Error {
             super(t || "An unexpected bug occurred."), Object.setPrototypeOf(this, ds.prototype)
         }
     },
-    Ms = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "QuickAgentConversation", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
+    xs = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "QuickAgentConversation", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
     Ps = !1,
-    Mr;
+    xr;
 (function(e) {
     function t(o) {
         return o < 0
@@ -616,13 +616,13 @@ var xs = class extends Error {
         return o === 0
     }
     e.isNeitherLessOrGreaterThan = s, e.greaterThan = 1, e.lessThan = -1, e.neitherLessOrGreaterThan = 0
-})(Mr || (Mr = {}));
+})(xr || (xr = {}));
 
 function Fs(e, t) {
     return (r, i) => t(e(r), e(i))
 }
 var Us = (e, t) => e - t,
-    wl = class br {
+    Nl = class br {
         static {
             this.empty = new br(t => {})
         }
@@ -656,10 +656,10 @@ var Us = (e, t) => e - t,
         }
         findLastMaxBy(t) {
             let r, i = !0;
-            return this.iterate(s => ((i || Mr.isGreaterThan(t(s, r))) && (i = !1, r = s), !0)), r
+            return this.iterate(s => ((i || xr.isGreaterThan(t(s, r))) && (i = !1, r = s), !0)), r
         }
     },
-    ti;
+    ei;
 
 function Cs(e, t) {
     const r = Object.create(null);
@@ -670,12 +670,12 @@ function Cs(e, t) {
     }
     return r
 }
-var Al = class {
+var Rl = class {
         static {
-            ti = Symbol.toStringTag
+            ei = Symbol.toStringTag
         }
         constructor(e, t) {
-            this.toKey = t, this._map = new Map, this[ti] = "SetWithKey";
+            this.toKey = t, this._map = new Map, this[ei] = "SetWithKey";
             for (const r of e) this.add(r)
         }
         get size() {
@@ -707,7 +707,7 @@ var Al = class {
             return this.values()
         }
     },
-    ri, ii, ni, Vs = class {
+    ti, ri, ii, Vs = class {
         constructor(e, t) {
             this.uri = e, this.value = t
         }
@@ -716,12 +716,12 @@ var Al = class {
 function Bs(e) {
     return Array.isArray(e)
 }
-var si = class Ct {
+var ni = class Ct {
         static {
             this.defaultToKey = t => t.toString()
         }
         constructor(t, r) {
-            if (this[ri] = "ResourceMap", t instanceof Ct) this.map = new Map(t.map), this.toKey = r ?? Ct.defaultToKey;
+            if (this[ti] = "ResourceMap", t instanceof Ct) this.map = new Map(t.map), this.toKey = r ?? Ct.defaultToKey;
             else if (Bs(t)) {
                 this.map = new Map, this.toKey = r ?? Ct.defaultToKey;
                 for (const [i, s] of t) this.set(i, s)
@@ -754,13 +754,13 @@ var si = class Ct {
             for (const t of this.map.values()) yield t.uri
         }* entries() {
             for (const t of this.map.values()) yield [t.uri, t.value]
-        }*[(ri = Symbol.toStringTag, Symbol.iterator)]() {
+        }*[(ti = Symbol.toStringTag, Symbol.iterator)]() {
             for (const [, t] of this.map) yield [t.uri, t.value]
         }
     },
-    El = class {
+    Il = class {
         constructor(e, t) {
-            this[ii] = "ResourceSet", !e || typeof e == "function" ? this._map = new si(e) : (this._map = new si(t), e.forEach(this.add, this))
+            this[ri] = "ResourceSet", !e || typeof e == "function" ? this._map = new ni(e) : (this._map = new ni(t), e.forEach(this.add, this))
         }
         get size() {
             return this._map.size
@@ -788,17 +788,17 @@ var si = class Ct {
         }
         values() {
             return this._map.keys()
-        } [(ii = Symbol.toStringTag, Symbol.iterator)]() {
+        } [(ri = Symbol.toStringTag, Symbol.iterator)]() {
             return this.keys()
         }
     },
-    oi;
+    si;
 (function(e) {
     e[e.None = 0] = "None", e[e.AsOld = 1] = "AsOld", e[e.AsNew = 2] = "AsNew"
-})(oi || (oi = {}));
-var Tl = class {
+})(si || (si = {}));
+var Ll = class {
         constructor() {
-            this[ni] = "LinkedMap", this._map = new Map, this._head = void 0, this._tail = void 0, this._size = 0, this._state = 0
+            this[ii] = "LinkedMap", this._map = new Map, this._head = void 0, this._tail = void 0, this._size = 0, this._state = 0
         }
         clear() {
             this._map.clear(), this._head = void 0, this._tail = void 0, this._size = 0, this._state++
@@ -941,7 +941,7 @@ var Tl = class {
                 }
             };
             return i
-        } [(ni = Symbol.toStringTag, Symbol.iterator)]() {
+        } [(ii = Symbol.toStringTag, Symbol.iterator)]() {
             return this.entries()
         }
         trimOld(e) {
@@ -1062,7 +1062,7 @@ function Pr(e, t) {
     if (!e) throw new Error(t ? `Assertion failed (${t})` : "Assertion Failed")
 }
 
-function ai(e) {
+function oi(e) {
     if (!e()) {
         debugger;
         e(), ke(new Ve("Assertion Failed"))
@@ -1085,7 +1085,7 @@ function js(e) {
     return typeof e > "u"
 }
 
-function Rt(e) {
+function Nt(e) {
     return !qs(e)
 }
 
@@ -1093,7 +1093,7 @@ function qs(e) {
     return js(e) || e === null
 }
 
-function Ks(e) {
+function Gs(e) {
     return typeof e == "function"
 }
 var Fr;
@@ -1125,7 +1125,7 @@ var Fr;
     e.from = a;
 
     function* l(E) {
-        for (let N = E.length - 1; N >= 0; N--) yield E[N]
+        for (let R = E.length - 1; R >= 0; R--) yield E[R]
     }
     e.reverse = l;
 
@@ -1139,87 +1139,87 @@ var Fr;
     }
     e.first = c;
 
-    function f(E, N) {
+    function f(E, R) {
         let P = 0;
-        for (const G of E)
-            if (N(G, P++)) return !0;
+        for (const K of E)
+            if (R(K, P++)) return !0;
         return !1
     }
     e.some = f;
 
-    function h(E, N) {
+    function h(E, R) {
         for (const P of E)
-            if (N(P)) return P
+            if (R(P)) return P
     }
     e.find = h;
 
-    function* p(E, N) {
-        for (const P of E) N(P) && (yield P)
+    function* p(E, R) {
+        for (const P of E) R(P) && (yield P)
     }
     e.filter = p;
 
-    function* m(E, N) {
+    function* m(E, R) {
         let P = 0;
-        for (const G of E) yield N(G, P++)
+        for (const K of E) yield R(K, P++)
     }
     e.map = m;
 
-    function* A(E, N) {
+    function* A(E, R) {
         let P = 0;
-        for (const G of E) yield* N(G, P++)
+        for (const K of E) yield* R(K, P++)
     }
     e.flatMap = A;
 
     function* I(...E) {
-        for (const N of E) zs(N) ? yield* N: yield N
+        for (const R of E) zs(R) ? yield* R: yield R
     }
     e.concat = I;
 
-    function k(E, N, P) {
-        let G = P;
-        for (const he of E) G = N(G, he);
-        return G
+    function k(E, R, P) {
+        let K = P;
+        for (const he of E) K = R(K, he);
+        return K
     }
     e.reduce = k;
 
     function W(E) {
-        let N = 0;
-        for (const P of E) N++;
-        return N
+        let R = 0;
+        for (const P of E) R++;
+        return R
     }
     e.length = W;
 
-    function* de(E, N, P = E.length) {
-        for (N < -E.length && (N = 0), N < 0 && (N += E.length), P < 0 ? P += E.length : P > E.length && (P = E.length); N < P; N++) yield E[N]
+    function* de(E, R, P = E.length) {
+        for (R < -E.length && (R = 0), R < 0 && (R += E.length), P < 0 ? P += E.length : P > E.length && (P = E.length); R < P; R++) yield E[R]
     }
     e.slice = de;
 
-    function V(E, N = Number.POSITIVE_INFINITY) {
+    function V(E, R = Number.POSITIVE_INFINITY) {
         const P = [];
-        if (N === 0) return [P, E];
-        const G = E[Symbol.iterator]();
-        for (let he = 0; he < N; he++) {
-            const et = G.next();
+        if (R === 0) return [P, E];
+        const K = E[Symbol.iterator]();
+        for (let he = 0; he < R; he++) {
+            const et = K.next();
             if (et.done) return [P, e.empty()];
             P.push(et.value)
         }
         return [P, {
             [Symbol.iterator]() {
-                return G
+                return K
             }
         }]
     }
     e.consume = V;
     async function z(E) {
-        const N = [];
-        for await (const P of E) N.push(P);
-        return Promise.resolve(N)
+        const R = [];
+        for await (const P of E) R.push(P);
+        return Promise.resolve(R)
     }
     e.asyncToArray = z
 })(Fr || (Fr = {}));
-var Gs = !1,
+var Ks = !1,
     lt = null,
-    Ol = class hs {
+    kl = class hs {
         constructor() {
             this.livingDisposables = new Map
         }
@@ -1326,12 +1326,12 @@ ${f.join(`
         }
     };
 
-function Ys(e) {
+function Zs(e) {
     lt = e
 }
-if (Gs) {
+if (Ks) {
     const e = "__is_disposable_tracked__";
-    Ys(new class {
+    Zs(new class {
         trackDisposable(t) {
             const r = new Error("Potentially leaked disposable").stack;
             setTimeout(() => {
@@ -1364,12 +1364,12 @@ function Ur(e, t) {
     lt?.setParent(e, t)
 }
 
-function Zs(e, t) {
+function Ys(e, t) {
     if (lt)
         for (const r of e) lt.setParent(r, t)
 }
 
-function li(e) {
+function ai(e) {
     if (Fr.is(e)) {
         const t = [];
         for (const r of e)
@@ -1385,8 +1385,8 @@ function li(e) {
 }
 
 function Qs(...e) {
-    const t = ye(() => li(e));
-    return Zs(e, t), t
+    const t = ye(() => ai(e));
+    return Ys(e, t), t
 }
 
 function ye(e) {
@@ -1412,7 +1412,7 @@ var be = class fs {
         }
         clear() {
             if (this._toDispose.size !== 0) try {
-                li(this._toDispose)
+                ai(this._toDispose)
             } finally {
                 this._toDispose.clear()
             }
@@ -1457,7 +1457,7 @@ function Xs(e, t) {
         get: () => t
     })
 }
-var Dl = class wr {
+var Sl = class wr {
         static {
             this.Undefined = new wr(void 0)
         }
@@ -1483,7 +1483,7 @@ var Dl = class wr {
             return this._stopTime !== -1 ? this._stopTime - this._startTime : this._now() - this._startTime
         }
     },
-    ci = !1,
+    li = !1,
     to = !1,
     Jt;
 (function(e) {
@@ -1509,10 +1509,10 @@ var Dl = class wr {
     function i(b) {
         return (g, y = null, _) => {
             let T = !1,
-                R;
-            return R = b(D => {
-                if (!T) return R ? R.dispose() : T = !0, g.call(y, D)
-            }, null, _), T && R.dispose(), R
+                N;
+            return N = b(D => {
+                if (!T) return N ? N.dispose() : T = !0, g.call(y, D)
+            }, null, _), T && N.dispose(), N
         }
     }
     e.once = i;
@@ -1523,19 +1523,19 @@ var Dl = class wr {
     e.onceIf = s;
 
     function o(b, g, y) {
-        return h((_, T = null, R) => b(D => _.call(T, g(D)), null, R), y)
+        return h((_, T = null, N) => b(D => _.call(T, g(D)), null, N), y)
     }
     e.map = o;
 
     function a(b, g, y) {
-        return h((_, T = null, R) => b(D => {
+        return h((_, T = null, N) => b(D => {
             g(D), _.call(T, D)
-        }, null, R), y)
+        }, null, N), y)
     }
     e.forEach = a;
 
     function l(b, g, y) {
-        return h((_, T = null, R) => b(D => g(D) && _.call(T, D), null, R), y)
+        return h((_, T = null, N) => b(D => g(D) && _.call(T, D), null, N), y)
     }
     e.filter = l;
 
@@ -1546,7 +1546,7 @@ var Dl = class wr {
 
     function c(...b) {
         return (g, y = null, _) => {
-            const T = Qs(...b.map(R => R(D => g.call(y, D))));
+            const T = Qs(...b.map(N => N(D => g.call(y, D))));
             return p(T, _)
         }
     }
@@ -1554,7 +1554,7 @@ var Dl = class wr {
 
     function f(b, g, y, _) {
         let T = y;
-        return o(b, R => (T = g(T, R), T), _)
+        return o(b, N => (T = g(T, N), T), _)
     }
     e.reduce = f;
 
@@ -1569,7 +1569,7 @@ var Dl = class wr {
             }
         };
         g || t(_);
-        const T = new Y(_);
+        const T = new Z(_);
         return g?.add(T), T.event
     }
 
@@ -1577,17 +1577,17 @@ var Dl = class wr {
         return g instanceof Array ? g.push(b) : g && g.add(b), b
     }
 
-    function m(b, g, y = 100, _ = !1, T = !1, R, D) {
-        let j, M, Ne, B = 0,
+    function m(b, g, y = 100, _ = !1, T = !1, N, D) {
+        let j, x, Re, B = 0,
             _e;
         const tt = {
-            leakWarningThreshold: R,
+            leakWarningThreshold: N,
             onWillAddFirstListener() {
                 j = b(At => {
-                    B++, M = g(M, At), _ && !Ne && (je.fire(M), M = void 0), _e = () => {
-                        const zt = M;
-                        M = void 0, Ne = void 0, (!_ || B > 1) && je.fire(zt), B = 0
-                    }, typeof y == "number" ? (clearTimeout(Ne), Ne = setTimeout(_e, y)) : Ne === void 0 && (Ne = 0, queueMicrotask(_e))
+                    B++, x = g(x, At), _ && !Re && (je.fire(x), x = void 0), _e = () => {
+                        const zt = x;
+                        x = void 0, Re = void 0, (!_ || B > 1) && je.fire(zt), B = 0
+                    }, typeof y == "number" ? (clearTimeout(Re), Re = setTimeout(_e, y)) : Re === void 0 && (Re = 0, queueMicrotask(_e))
                 })
             },
             onWillRemoveListener() {
@@ -1598,7 +1598,7 @@ var Dl = class wr {
             }
         };
         D || t(tt);
-        const je = new Y(tt);
+        const je = new Z(tt);
         return D?.add(je), je.event
     }
     e.debounce = m;
@@ -1611,9 +1611,9 @@ var Dl = class wr {
     function I(b, g = (_, T) => _ === T, y) {
         let _ = !0,
             T;
-        return l(b, R => {
-            const D = _ || !g(R, T);
-            return _ = !1, T = R, D
+        return l(b, N => {
+            const D = _ || !g(N, T);
+            return _ = !1, T = N, D
         }, y)
     }
     e.latch = I;
@@ -1625,22 +1625,22 @@ var Dl = class wr {
 
     function W(b, g = !1, y = [], _) {
         let T = y.slice(),
-            R = b(M => {
-                T ? T.push(M) : j.fire(M)
+            N = b(x => {
+                T ? T.push(x) : j.fire(x)
             });
-        _ && _.add(R);
+        _ && _.add(N);
         const D = () => {
-                T?.forEach(M => j.fire(M)), T = null
+                T?.forEach(x => j.fire(x)), T = null
             },
-            j = new Y({
+            j = new Z({
                 onWillAddFirstListener() {
-                    R || (R = b(M => j.fire(M)), _ && _.add(R))
+                    N || (N = b(x => j.fire(x)), _ && _.add(N))
                 },
                 onDidAddFirstListener() {
                     T && (g ? setTimeout(D) : D())
                 },
                 onDidRemoveLastListener() {
-                    R && R.dispose(), R = null
+                    N && N.dispose(), N = null
                 }
             });
         return _ && _.add(j), j.event
@@ -1648,12 +1648,12 @@ var Dl = class wr {
     e.buffer = W;
 
     function de(b, g) {
-        return (_, T, R) => {
+        return (_, T, N) => {
             const D = g(new z);
             return b(function(j) {
-                const M = D.evaluate(j);
-                M !== V && _.call(T, M)
-            }, void 0, R)
+                const x = D.evaluate(j);
+                x !== V && _.call(T, x)
+            }, void 0, N)
         }
     }
     e.chain = de;
@@ -1679,8 +1679,8 @@ var Dl = class wr {
             let y = !0,
                 _;
             return this.steps.push(T => {
-                const R = y || !g(T, _);
-                return y = !1, _ = T, R ? T : V
+                const N = y || !g(T, _);
+                return y = !1, _ = T, N ? T : V
             }), this
         }
         evaluate(g) {
@@ -1693,50 +1693,50 @@ var Dl = class wr {
     function E(b, g, y = _ => _) {
         const _ = (...j) => D.fire(y(...j)),
             T = () => b.on(g, _),
-            R = () => b.removeListener(g, _),
-            D = new Y({
+            N = () => b.removeListener(g, _),
+            D = new Z({
                 onWillAddFirstListener: T,
-                onDidRemoveLastListener: R
+                onDidRemoveLastListener: N
             });
         return D.event
     }
     e.fromNodeEventEmitter = E;
 
-    function N(b) {
+    function R(b) {
         let g;
         const y = () => {
-                g = b.subscribe(R => T.fire(R))
+                g = b.subscribe(N => T.fire(N))
             },
             _ = () => {
                 g?.unsubscribe(), g = void 0
             },
-            T = new Y({
+            T = new Z({
                 onWillAddFirstListener: y,
                 onDidRemoveLastListener: _
             });
         return T.event
     }
-    e.fromRxJS = N;
+    e.fromRxJS = R;
 
     function P(b, g, y = _ => _) {
         const _ = (...j) => D.fire(y(...j)),
             T = () => b.addEventListener(g, _),
-            R = () => b.removeEventListener(g, _),
-            D = new Y({
+            N = () => b.removeEventListener(g, _),
+            D = new Z({
                 onWillAddFirstListener: T,
-                onDidRemoveLastListener: R
+                onDidRemoveLastListener: N
             });
         return D.event
     }
     e.fromDOMEventEmitter = P;
 
-    function G(b, g) {
+    function K(b, g) {
         return new Promise(y => i(b)(y, null, g))
     }
-    e.toPromise = G;
+    e.toPromise = K;
 
     function he(b) {
-        const g = new Y;
+        const g = new Z;
         return b.then(y => {
             g.fire(y)
         }, () => {
@@ -1767,7 +1767,7 @@ var Dl = class wr {
                     g.removeObserver(this)
                 }
             };
-            y || t(_), this.emitter = new Y(_), y && y.add(this.emitter)
+            y || t(_), this.emitter = new Z(_), y && y.add(this.emitter)
         }
         beginUpdate(g) {
             this._counter++
@@ -1789,17 +1789,17 @@ var Dl = class wr {
     function wt(b) {
         return (g, y, _) => {
             let T = 0,
-                R = !1;
+                N = !1;
             const D = {
                 beginUpdate() {
                     T++
                 },
                 endUpdate() {
-                    T--, T === 0 && (b.reportChanges(), R && (R = !1, g.call(y)))
+                    T--, T === 0 && (b.reportChanges(), N && (N = !1, g.call(y)))
                 },
                 handlePossibleChange() {},
                 handleChange() {
-                    R = !0
+                    N = !0
                 }
             };
             b.addObserver(D), b.reportChanges();
@@ -1813,7 +1813,7 @@ var Dl = class wr {
     }
     e.fromObservableLight = wt
 })(Jt || (Jt = {}));
-var ro = class I1 {
+var ro = class R1 {
         static {
             this.all = new Set
         }
@@ -1821,7 +1821,7 @@ var ro = class I1 {
             this._idPool = 0
         }
         constructor(t) {
-            this.listenerCount = 0, this.invocationCount = 0, this.elapsedOverall = 0, this.durations = [], this.name = `${t}_${I1._idPool++}`, I1.all.add(this)
+            this.listenerCount = 0, this.invocationCount = 0, this.elapsedOverall = 0, this.durations = [], this.name = `${t}_${R1._idPool++}`, R1.all.add(this)
         }
         start(t) {
             this._stopWatch = new eo, this.listenerCount = t
@@ -1833,7 +1833,7 @@ var ro = class I1 {
             }
         }
     },
-    ui = -1,
+    ci = -1,
     io = class ms {
         static {
             this._idPool = 1
@@ -1907,14 +1907,14 @@ var ro = class I1 {
                 i && t(i)
             }
     },
-    Y = class {
+    Z = class {
         constructor(e) {
-            this._size = 0, this._options = e, this._leakageMon = ui > 0 || this._options?.leakWarningThreshold ? new io(e?.onListenerError ?? ke, this._options?.leakWarningThreshold ?? ui) : void 0, this._perfMon = this._options?._profName ? new ro(this._options._profName) : void 0, this._deliveryQueue = this._options?.deliveryQueue
+            this._size = 0, this._options = e, this._leakageMon = ci > 0 || this._options?.leakWarningThreshold ? new io(e?.onListenerError ?? ke, this._options?.leakWarningThreshold ?? ci) : void 0, this._perfMon = this._options?._profName ? new ro(this._options._profName) : void 0, this._deliveryQueue = this._options?.deliveryQueue
         }
         dispose() {
             if (!this._disposed) {
                 if (this._disposed = !0, this._deliveryQueue?.current === this && this._deliveryQueue.reset(), this._listeners) {
-                    if (ci) {
+                    if (li) {
                         const e = this._listeners;
                         queueMicrotask(() => {
                             lo(e, t => t.stack?.print())
@@ -1938,7 +1938,7 @@ var ro = class I1 {
                 t && (e = e.bind(t));
                 const i = new er(e);
                 let s, o;
-                this._leakageMon && this._size >= Math.ceil(this._leakageMon.threshold * .2) && (i.stack = Cr.create(), s = this._leakageMon.check(i.stack, this._size + 1)), ci && (i.stack = o ?? Cr.create()), this._listeners ? this._listeners instanceof er ? (this._deliveryQueue ??= new co, this._listeners = [this._listeners, i]) : this._listeners.push(i) : (this._options?.onWillAddFirstListener?.(this), this._listeners = i, this._options?.onDidAddFirstListener?.(this)), this._options?.onDidAddListener?.(this), this._size++;
+                this._leakageMon && this._size >= Math.ceil(this._leakageMon.threshold * .2) && (i.stack = Cr.create(), s = this._leakageMon.check(i.stack, this._size + 1)), li && (i.stack = o ?? Cr.create()), this._listeners ? this._listeners instanceof er ? (this._deliveryQueue ??= new co, this._listeners = [this._listeners, i]) : this._listeners.push(i) : (this._options?.onWillAddFirstListener?.(this), this._listeners = i, this._options?.onDidAddFirstListener?.(this)), this._options?.onDidAddListener?.(this), this._size++;
                 const a = ye(() => {
                     s?.(), this._removeListener(i)
                 });
@@ -2003,9 +2003,9 @@ var ro = class I1 {
             this.i = this.end, this.current = void 0, this.value = void 0
         }
     },
-    Nt = class vs {
+    Rt = class vs {
         constructor() {
-            this.mapWindowIdToZoomLevel = new Map, this._onDidChangeZoomLevel = new Y, this.onDidChangeZoomLevel = this._onDidChangeZoomLevel.event, this.mapWindowIdToZoomFactor = new Map, this._onDidChangeFullscreen = new Y, this.onDidChangeFullscreen = this._onDidChangeFullscreen.event, this.mapWindowIdToFullScreen = new Map
+            this.mapWindowIdToZoomLevel = new Map, this._onDidChangeZoomLevel = new Z, this.onDidChangeZoomLevel = this._onDidChangeZoomLevel.event, this.mapWindowIdToZoomFactor = new Map, this._onDidChangeFullscreen = new Z, this.onDidChangeFullscreen = this._onDidChangeFullscreen.event, this.mapWindowIdToFullScreen = new Map
         }
         static {
             this.INSTANCE = new vs
@@ -2042,25 +2042,25 @@ function uo(e, t, r) {
 }
 
 function ho(e, t) {
-    Nt.INSTANCE.setZoomLevel(e, t)
+    Rt.INSTANCE.setZoomLevel(e, t)
 }
 
-function di(e) {
-    return Nt.INSTANCE.getZoomLevel(e)
+function ui(e) {
+    return Rt.INSTANCE.getZoomLevel(e)
 }
-var Rl = Nt.INSTANCE.onDidChangeZoomLevel;
+var Ml = Rt.INSTANCE.onDidChangeZoomLevel;
 
 function fo(e, t) {
-    Nt.INSTANCE.setZoomFactor(e, t)
+    Rt.INSTANCE.setZoomFactor(e, t)
 }
-var Nl = Nt.INSTANCE.onDidChangeFullscreen,
+var xl = Rt.INSTANCE.onDidChangeFullscreen,
     ct = navigator.userAgent,
-    Il = ct.indexOf("Firefox") >= 0,
+    Pl = ct.indexOf("Firefox") >= 0,
     Vr = ct.indexOf("AppleWebKit") >= 0,
     po = ct.indexOf("Chrome") >= 0,
     mo = !po && ct.indexOf("Safari") >= 0,
-    Ll = ct.indexOf("Electron/") >= 0,
-    kl = ct.indexOf("Android") >= 0,
+    Fl = ct.indexOf("Electron/") >= 0,
+    Ul = ct.indexOf("Android") >= 0,
     tr = !1;
 if (typeof S.matchMedia == "function") {
     const e = S.matchMedia("(display-mode: standalone) or (display-mode: window-controls-overlay)"),
@@ -2080,12 +2080,12 @@ function vo() {
     return globalThis._VSCODE_NLS_MESSAGES
 }
 
-function hi() {
+function di() {
     return globalThis._VSCODE_NLS_LANGUAGE
 }
-var _o = hi() === "pseudo" || typeof document < "u" && document.location && typeof document.location.hash == "string" && document.location.hash.indexOf("pseudo=true") >= 0;
+var _o = di() === "pseudo" || typeof document < "u" && document.location && typeof document.location.hash == "string" && document.location.hash.indexOf("pseudo=true") >= 0;
 
-function fi(e, t) {
+function hi(e, t) {
     let r;
     return t.length === 0 ? r = e : r = e.replace(/\{(\d+)\}/g, (i, s) => {
         const o = parseInt(s, 10),
@@ -2096,7 +2096,7 @@ function fi(e, t) {
 }
 
 function ut(e, t, ...r) {
-    return fi(typeof e == "number" ? yo(e, t) : t, r)
+    return hi(typeof e == "number" ? yo(e, t) : t, r)
 }
 
 function yo(e, t) {
@@ -2112,7 +2112,7 @@ var dt = "en",
     ir = !1,
     It = !1,
     bo = !1,
-    pi = !1,
+    fi = !1,
     Br = !1,
     wo = !1,
     Ao = !1,
@@ -2120,39 +2120,39 @@ var dt = "en",
     To = !1,
     nr = void 0,
     sr = dt,
-    mi = dt,
+    pi = dt,
     Oo = void 0,
     Se = void 0,
-    xe = globalThis,
+    Me = globalThis,
     te = void 0;
-typeof xe.vscode < "u" && typeof xe.vscode.process < "u" ? te = xe.vscode.process : typeof process < "u" && typeof process?.versions?.node == "string" && (te = process);
-var gi = typeof te?.versions?.electron == "string",
-    Do = gi && te?.type === "renderer";
+typeof Me.vscode < "u" && typeof Me.vscode.process < "u" ? te = Me.vscode.process : typeof process < "u" && typeof process?.versions?.node == "string" && (te = process);
+var mi = typeof te?.versions?.electron == "string",
+    Do = mi && te?.type === "renderer";
 if (typeof te == "object") {
-    rr = te.platform === "win32", ir = te.platform === "darwin", It = te.platform === "linux", bo = It && !!te.env.SNAP && !!te.env.SNAP_REVISION, wo = gi, Eo = !!te.env.CI || !!te.env.BUILD_ARTIFACTSTAGINGDIRECTORY, nr = dt, sr = dt;
+    rr = te.platform === "win32", ir = te.platform === "darwin", It = te.platform === "linux", bo = It && !!te.env.SNAP && !!te.env.SNAP_REVISION, wo = mi, Eo = !!te.env.CI || !!te.env.BUILD_ARTIFACTSTAGINGDIRECTORY, nr = dt, sr = dt;
     const e = te.env.VSCODE_NLS_CONFIG;
     if (e) try {
         const t = JSON.parse(e);
-        nr = t.userLocale, mi = t.osLocale, sr = t.resolvedLanguage || dt, Oo = t.languagePack?.translationsConfigFile
+        nr = t.userLocale, pi = t.osLocale, sr = t.resolvedLanguage || dt, Oo = t.languagePack?.translationsConfigFile
     } catch {}
-    pi = !0
-} else typeof navigator == "object" && !Do ? (Se = navigator.userAgent, rr = Se.indexOf("Windows") >= 0, ir = Se.indexOf("Macintosh") >= 0, Ao = (Se.indexOf("Macintosh") >= 0 || Se.indexOf("iPad") >= 0 || Se.indexOf("iPhone") >= 0) && !!navigator.maxTouchPoints && navigator.maxTouchPoints > 0, It = Se.indexOf("Linux") >= 0, To = Se?.indexOf("Mobi") >= 0, Br = !0, sr = hi() || dt, nr = navigator.language.toLowerCase(), mi = nr) : console.error("Unable to resolve platform.");
-var vi;
+    fi = !0
+} else typeof navigator == "object" && !Do ? (Se = navigator.userAgent, rr = Se.indexOf("Windows") >= 0, ir = Se.indexOf("Macintosh") >= 0, Ao = (Se.indexOf("Macintosh") >= 0 || Se.indexOf("iPad") >= 0 || Se.indexOf("iPhone") >= 0) && !!navigator.maxTouchPoints && navigator.maxTouchPoints > 0, It = Se.indexOf("Linux") >= 0, To = Se?.indexOf("Mobi") >= 0, Br = !0, sr = di() || dt, nr = navigator.language.toLowerCase(), pi = nr) : console.error("Unable to resolve platform.");
+var gi;
 (function(e) {
     e[e.Web = 0] = "Web", e[e.Mac = 1] = "Mac", e[e.Linux = 2] = "Linux", e[e.Windows = 3] = "Windows"
-})(vi || (vi = {}));
+})(gi || (gi = {}));
 var $r = 0;
 ir ? $r = 1 : rr ? $r = 3 : It && ($r = 2);
 var ht = rr,
-    Ro = ir,
-    No = It,
-    or = pi,
+    No = ir,
+    Ro = It,
+    or = fi,
     Io = Br,
-    Lo = Br && typeof xe.importScripts == "function",
-    ko = Lo ? xe.origin : void 0,
+    Lo = Br && typeof Me.importScripts == "function",
+    ko = Lo ? Me.origin : void 0,
     De = Se,
     $e = sr,
-    _i;
+    vi;
 (function(e) {
     function t() {
         return $e
@@ -2168,12 +2168,12 @@ var ht = rr,
         return $e === "en"
     }
     e.isDefault = i
-})(_i || (_i = {}));
-var So = typeof xe.postMessage == "function" && !xe.importScripts,
-    xo = (() => {
+})(vi || (vi = {}));
+var So = typeof Me.postMessage == "function" && !Me.importScripts,
+    Mo = (() => {
         if (So) {
             const e = [];
-            xe.addEventListener("message", r => {
+            Me.addEventListener("message", r => {
                 if (r.data && r.data.vscodeScheduleAsyncWork)
                     for (let i = 0, s = e.length; i < s; i++) {
                         const o = e[i];
@@ -2189,30 +2189,30 @@ var So = typeof xe.postMessage == "function" && !xe.importScripts,
                 e.push({
                     id: i,
                     callback: r
-                }), xe.postMessage({
+                }), Me.postMessage({
                     vscodeScheduleAsyncWork: i
                 }, "*")
             }
         }
         return e => setTimeout(e)
     })(),
-    yi;
+    _i;
 (function(e) {
     e[e.Windows = 1] = "Windows", e[e.Macintosh = 2] = "Macintosh", e[e.Linux = 3] = "Linux"
-})(yi || (yi = {}));
-var Mo = !!(De && De.indexOf("Chrome") >= 0),
-    Sl = !!(De && De.indexOf("Firefox") >= 0),
-    xl = !!(!Mo && De && De.indexOf("Safari") >= 0),
-    Ml = !!(De && De.indexOf("Edg/") >= 0),
-    Pl = !!(De && De.indexOf("Android") >= 0),
-    Fl = te?.arch,
-    Ul = te?.platform,
-    Cl = te?.versions?.node,
-    bi;
+})(_i || (_i = {}));
+var xo = !!(De && De.indexOf("Chrome") >= 0),
+    Cl = !!(De && De.indexOf("Firefox") >= 0),
+    Vl = !!(!xo && De && De.indexOf("Safari") >= 0),
+    Bl = !!(De && De.indexOf("Edg/") >= 0),
+    $l = !!(De && De.indexOf("Android") >= 0),
+    Wl = te?.arch,
+    Hl = te?.platform,
+    zl = te?.versions?.node,
+    yi;
 (function(e) {
     e[e.Always = 0] = "Always", e[e.FullScreen = 1] = "FullScreen", e[e.None = 2] = "None"
-})(bi || (bi = {}));
-var Vl = {
+})(yi || (yi = {}));
+var jl = {
         clipboard: {
             writeText: or || document.queryCommandSupported && document.queryCommandSupported("copy") || !!(navigator && navigator.clipboard && navigator.clipboard.writeText),
             readText: or || !!(navigator && navigator.clipboard && navigator.clipboard.readText)
@@ -2221,14 +2221,14 @@ var Vl = {
         touch: "ontouchstart" in S || navigator.maxTouchPoints > 0,
         pointerEvents: S.PointerEvent && ("ontouchstart" in S || navigator.maxTouchPoints > 0)
     },
-    wi;
+    bi;
 (function(e) {
     e[e.DependsOnKbLayout = -1] = "DependsOnKbLayout", e[e.Unknown = 0] = "Unknown", e[e.Backspace = 1] = "Backspace", e[e.Tab = 2] = "Tab", e[e.Enter = 3] = "Enter", e[e.Shift = 4] = "Shift", e[e.Ctrl = 5] = "Ctrl", e[e.Alt = 6] = "Alt", e[e.PauseBreak = 7] = "PauseBreak", e[e.CapsLock = 8] = "CapsLock", e[e.Escape = 9] = "Escape", e[e.Space = 10] = "Space", e[e.PageUp = 11] = "PageUp", e[e.PageDown = 12] = "PageDown", e[e.End = 13] = "End", e[e.Home = 14] = "Home", e[e.LeftArrow = 15] = "LeftArrow", e[e.UpArrow = 16] = "UpArrow", e[e.RightArrow = 17] = "RightArrow", e[e.DownArrow = 18] = "DownArrow", e[e.Insert = 19] = "Insert", e[e.Delete = 20] = "Delete", e[e.Digit0 = 21] = "Digit0", e[e.Digit1 = 22] = "Digit1", e[e.Digit2 = 23] = "Digit2", e[e.Digit3 = 24] = "Digit3", e[e.Digit4 = 25] = "Digit4", e[e.Digit5 = 26] = "Digit5", e[e.Digit6 = 27] = "Digit6", e[e.Digit7 = 28] = "Digit7", e[e.Digit8 = 29] = "Digit8", e[e.Digit9 = 30] = "Digit9", e[e.KeyA = 31] = "KeyA", e[e.KeyB = 32] = "KeyB", e[e.KeyC = 33] = "KeyC", e[e.KeyD = 34] = "KeyD", e[e.KeyE = 35] = "KeyE", e[e.KeyF = 36] = "KeyF", e[e.KeyG = 37] = "KeyG", e[e.KeyH = 38] = "KeyH", e[e.KeyI = 39] = "KeyI", e[e.KeyJ = 40] = "KeyJ", e[e.KeyK = 41] = "KeyK", e[e.KeyL = 42] = "KeyL", e[e.KeyM = 43] = "KeyM", e[e.KeyN = 44] = "KeyN", e[e.KeyO = 45] = "KeyO", e[e.KeyP = 46] = "KeyP", e[e.KeyQ = 47] = "KeyQ", e[e.KeyR = 48] = "KeyR", e[e.KeyS = 49] = "KeyS", e[e.KeyT = 50] = "KeyT", e[e.KeyU = 51] = "KeyU", e[e.KeyV = 52] = "KeyV", e[e.KeyW = 53] = "KeyW", e[e.KeyX = 54] = "KeyX", e[e.KeyY = 55] = "KeyY", e[e.KeyZ = 56] = "KeyZ", e[e.Meta = 57] = "Meta", e[e.ContextMenu = 58] = "ContextMenu", e[e.F1 = 59] = "F1", e[e.F2 = 60] = "F2", e[e.F3 = 61] = "F3", e[e.F4 = 62] = "F4", e[e.F5 = 63] = "F5", e[e.F6 = 64] = "F6", e[e.F7 = 65] = "F7", e[e.F8 = 66] = "F8", e[e.F9 = 67] = "F9", e[e.F10 = 68] = "F10", e[e.F11 = 69] = "F11", e[e.F12 = 70] = "F12", e[e.F13 = 71] = "F13", e[e.F14 = 72] = "F14", e[e.F15 = 73] = "F15", e[e.F16 = 74] = "F16", e[e.F17 = 75] = "F17", e[e.F18 = 76] = "F18", e[e.F19 = 77] = "F19", e[e.F20 = 78] = "F20", e[e.F21 = 79] = "F21", e[e.F22 = 80] = "F22", e[e.F23 = 81] = "F23", e[e.F24 = 82] = "F24", e[e.NumLock = 83] = "NumLock", e[e.ScrollLock = 84] = "ScrollLock", e[e.Semicolon = 85] = "Semicolon", e[e.Equal = 86] = "Equal", e[e.Comma = 87] = "Comma", e[e.Minus = 88] = "Minus", e[e.Period = 89] = "Period", e[e.Slash = 90] = "Slash", e[e.Backquote = 91] = "Backquote", e[e.BracketLeft = 92] = "BracketLeft", e[e.Backslash = 93] = "Backslash", e[e.BracketRight = 94] = "BracketRight", e[e.Quote = 95] = "Quote", e[e.OEM_8 = 96] = "OEM_8", e[e.IntlBackslash = 97] = "IntlBackslash", e[e.Numpad0 = 98] = "Numpad0", e[e.Numpad1 = 99] = "Numpad1", e[e.Numpad2 = 100] = "Numpad2", e[e.Numpad3 = 101] = "Numpad3", e[e.Numpad4 = 102] = "Numpad4", e[e.Numpad5 = 103] = "Numpad5", e[e.Numpad6 = 104] = "Numpad6", e[e.Numpad7 = 105] = "Numpad7", e[e.Numpad8 = 106] = "Numpad8", e[e.Numpad9 = 107] = "Numpad9", e[e.NumpadMultiply = 108] = "NumpadMultiply", e[e.NumpadAdd = 109] = "NumpadAdd", e[e.NUMPAD_SEPARATOR = 110] = "NUMPAD_SEPARATOR", e[e.NumpadSubtract = 111] = "NumpadSubtract", e[e.NumpadDecimal = 112] = "NumpadDecimal", e[e.NumpadDivide = 113] = "NumpadDivide", e[e.KEY_IN_COMPOSITION = 114] = "KEY_IN_COMPOSITION", e[e.ABNT_C1 = 115] = "ABNT_C1", e[e.ABNT_C2 = 116] = "ABNT_C2", e[e.AudioVolumeMute = 117] = "AudioVolumeMute", e[e.AudioVolumeUp = 118] = "AudioVolumeUp", e[e.AudioVolumeDown = 119] = "AudioVolumeDown", e[e.BrowserSearch = 120] = "BrowserSearch", e[e.BrowserHome = 121] = "BrowserHome", e[e.BrowserBack = 122] = "BrowserBack", e[e.BrowserForward = 123] = "BrowserForward", e[e.MediaTrackNext = 124] = "MediaTrackNext", e[e.MediaTrackPrevious = 125] = "MediaTrackPrevious", e[e.MediaStop = 126] = "MediaStop", e[e.MediaPlayPause = 127] = "MediaPlayPause", e[e.LaunchMediaPlayer = 128] = "LaunchMediaPlayer", e[e.LaunchMail = 129] = "LaunchMail", e[e.LaunchApp2 = 130] = "LaunchApp2", e[e.Clear = 131] = "Clear", e[e.MAX_VALUE = 132] = "MAX_VALUE"
-})(wi || (wi = {}));
-var Ai;
+})(bi || (bi = {}));
+var wi;
 (function(e) {
     e[e.DependsOnKbLayout = -1] = "DependsOnKbLayout", e[e.None = 0] = "None", e[e.Hyper = 1] = "Hyper", e[e.Super = 2] = "Super", e[e.Fn = 3] = "Fn", e[e.FnLock = 4] = "FnLock", e[e.Suspend = 5] = "Suspend", e[e.Resume = 6] = "Resume", e[e.Turbo = 7] = "Turbo", e[e.Sleep = 8] = "Sleep", e[e.WakeUp = 9] = "WakeUp", e[e.KeyA = 10] = "KeyA", e[e.KeyB = 11] = "KeyB", e[e.KeyC = 12] = "KeyC", e[e.KeyD = 13] = "KeyD", e[e.KeyE = 14] = "KeyE", e[e.KeyF = 15] = "KeyF", e[e.KeyG = 16] = "KeyG", e[e.KeyH = 17] = "KeyH", e[e.KeyI = 18] = "KeyI", e[e.KeyJ = 19] = "KeyJ", e[e.KeyK = 20] = "KeyK", e[e.KeyL = 21] = "KeyL", e[e.KeyM = 22] = "KeyM", e[e.KeyN = 23] = "KeyN", e[e.KeyO = 24] = "KeyO", e[e.KeyP = 25] = "KeyP", e[e.KeyQ = 26] = "KeyQ", e[e.KeyR = 27] = "KeyR", e[e.KeyS = 28] = "KeyS", e[e.KeyT = 29] = "KeyT", e[e.KeyU = 30] = "KeyU", e[e.KeyV = 31] = "KeyV", e[e.KeyW = 32] = "KeyW", e[e.KeyX = 33] = "KeyX", e[e.KeyY = 34] = "KeyY", e[e.KeyZ = 35] = "KeyZ", e[e.Digit1 = 36] = "Digit1", e[e.Digit2 = 37] = "Digit2", e[e.Digit3 = 38] = "Digit3", e[e.Digit4 = 39] = "Digit4", e[e.Digit5 = 40] = "Digit5", e[e.Digit6 = 41] = "Digit6", e[e.Digit7 = 42] = "Digit7", e[e.Digit8 = 43] = "Digit8", e[e.Digit9 = 44] = "Digit9", e[e.Digit0 = 45] = "Digit0", e[e.Enter = 46] = "Enter", e[e.Escape = 47] = "Escape", e[e.Backspace = 48] = "Backspace", e[e.Tab = 49] = "Tab", e[e.Space = 50] = "Space", e[e.Minus = 51] = "Minus", e[e.Equal = 52] = "Equal", e[e.BracketLeft = 53] = "BracketLeft", e[e.BracketRight = 54] = "BracketRight", e[e.Backslash = 55] = "Backslash", e[e.IntlHash = 56] = "IntlHash", e[e.Semicolon = 57] = "Semicolon", e[e.Quote = 58] = "Quote", e[e.Backquote = 59] = "Backquote", e[e.Comma = 60] = "Comma", e[e.Period = 61] = "Period", e[e.Slash = 62] = "Slash", e[e.CapsLock = 63] = "CapsLock", e[e.F1 = 64] = "F1", e[e.F2 = 65] = "F2", e[e.F3 = 66] = "F3", e[e.F4 = 67] = "F4", e[e.F5 = 68] = "F5", e[e.F6 = 69] = "F6", e[e.F7 = 70] = "F7", e[e.F8 = 71] = "F8", e[e.F9 = 72] = "F9", e[e.F10 = 73] = "F10", e[e.F11 = 74] = "F11", e[e.F12 = 75] = "F12", e[e.PrintScreen = 76] = "PrintScreen", e[e.ScrollLock = 77] = "ScrollLock", e[e.Pause = 78] = "Pause", e[e.Insert = 79] = "Insert", e[e.Home = 80] = "Home", e[e.PageUp = 81] = "PageUp", e[e.Delete = 82] = "Delete", e[e.End = 83] = "End", e[e.PageDown = 84] = "PageDown", e[e.ArrowRight = 85] = "ArrowRight", e[e.ArrowLeft = 86] = "ArrowLeft", e[e.ArrowDown = 87] = "ArrowDown", e[e.ArrowUp = 88] = "ArrowUp", e[e.NumLock = 89] = "NumLock", e[e.NumpadDivide = 90] = "NumpadDivide", e[e.NumpadMultiply = 91] = "NumpadMultiply", e[e.NumpadSubtract = 92] = "NumpadSubtract", e[e.NumpadAdd = 93] = "NumpadAdd", e[e.NumpadEnter = 94] = "NumpadEnter", e[e.Numpad1 = 95] = "Numpad1", e[e.Numpad2 = 96] = "Numpad2", e[e.Numpad3 = 97] = "Numpad3", e[e.Numpad4 = 98] = "Numpad4", e[e.Numpad5 = 99] = "Numpad5", e[e.Numpad6 = 100] = "Numpad6", e[e.Numpad7 = 101] = "Numpad7", e[e.Numpad8 = 102] = "Numpad8", e[e.Numpad9 = 103] = "Numpad9", e[e.Numpad0 = 104] = "Numpad0", e[e.NumpadDecimal = 105] = "NumpadDecimal", e[e.IntlBackslash = 106] = "IntlBackslash", e[e.ContextMenu = 107] = "ContextMenu", e[e.Power = 108] = "Power", e[e.NumpadEqual = 109] = "NumpadEqual", e[e.F13 = 110] = "F13", e[e.F14 = 111] = "F14", e[e.F15 = 112] = "F15", e[e.F16 = 113] = "F16", e[e.F17 = 114] = "F17", e[e.F18 = 115] = "F18", e[e.F19 = 116] = "F19", e[e.F20 = 117] = "F20", e[e.F21 = 118] = "F21", e[e.F22 = 119] = "F22", e[e.F23 = 120] = "F23", e[e.F24 = 121] = "F24", e[e.Open = 122] = "Open", e[e.Help = 123] = "Help", e[e.Select = 124] = "Select", e[e.Again = 125] = "Again", e[e.Undo = 126] = "Undo", e[e.Cut = 127] = "Cut", e[e.Copy = 128] = "Copy", e[e.Paste = 129] = "Paste", e[e.Find = 130] = "Find", e[e.AudioVolumeMute = 131] = "AudioVolumeMute", e[e.AudioVolumeUp = 132] = "AudioVolumeUp", e[e.AudioVolumeDown = 133] = "AudioVolumeDown", e[e.NumpadComma = 134] = "NumpadComma", e[e.IntlRo = 135] = "IntlRo", e[e.KanaMode = 136] = "KanaMode", e[e.IntlYen = 137] = "IntlYen", e[e.Convert = 138] = "Convert", e[e.NonConvert = 139] = "NonConvert", e[e.Lang1 = 140] = "Lang1", e[e.Lang2 = 141] = "Lang2", e[e.Lang3 = 142] = "Lang3", e[e.Lang4 = 143] = "Lang4", e[e.Lang5 = 144] = "Lang5", e[e.Abort = 145] = "Abort", e[e.Props = 146] = "Props", e[e.NumpadParenLeft = 147] = "NumpadParenLeft", e[e.NumpadParenRight = 148] = "NumpadParenRight", e[e.NumpadBackspace = 149] = "NumpadBackspace", e[e.NumpadMemoryStore = 150] = "NumpadMemoryStore", e[e.NumpadMemoryRecall = 151] = "NumpadMemoryRecall", e[e.NumpadMemoryClear = 152] = "NumpadMemoryClear", e[e.NumpadMemoryAdd = 153] = "NumpadMemoryAdd", e[e.NumpadMemorySubtract = 154] = "NumpadMemorySubtract", e[e.NumpadClear = 155] = "NumpadClear", e[e.NumpadClearEntry = 156] = "NumpadClearEntry", e[e.ControlLeft = 157] = "ControlLeft", e[e.ShiftLeft = 158] = "ShiftLeft", e[e.AltLeft = 159] = "AltLeft", e[e.MetaLeft = 160] = "MetaLeft", e[e.ControlRight = 161] = "ControlRight", e[e.ShiftRight = 162] = "ShiftRight", e[e.AltRight = 163] = "AltRight", e[e.MetaRight = 164] = "MetaRight", e[e.BrightnessUp = 165] = "BrightnessUp", e[e.BrightnessDown = 166] = "BrightnessDown", e[e.MediaPlay = 167] = "MediaPlay", e[e.MediaRecord = 168] = "MediaRecord", e[e.MediaFastForward = 169] = "MediaFastForward", e[e.MediaRewind = 170] = "MediaRewind", e[e.MediaTrackNext = 171] = "MediaTrackNext", e[e.MediaTrackPrevious = 172] = "MediaTrackPrevious", e[e.MediaStop = 173] = "MediaStop", e[e.Eject = 174] = "Eject", e[e.MediaPlayPause = 175] = "MediaPlayPause", e[e.MediaSelect = 176] = "MediaSelect", e[e.LaunchMail = 177] = "LaunchMail", e[e.LaunchApp2 = 178] = "LaunchApp2", e[e.LaunchApp1 = 179] = "LaunchApp1", e[e.SelectTask = 180] = "SelectTask", e[e.LaunchScreenSaver = 181] = "LaunchScreenSaver", e[e.BrowserSearch = 182] = "BrowserSearch", e[e.BrowserHome = 183] = "BrowserHome", e[e.BrowserBack = 184] = "BrowserBack", e[e.BrowserForward = 185] = "BrowserForward", e[e.BrowserStop = 186] = "BrowserStop", e[e.BrowserRefresh = 187] = "BrowserRefresh", e[e.BrowserFavorites = 188] = "BrowserFavorites", e[e.ZoomToggle = 189] = "ZoomToggle", e[e.MailReply = 190] = "MailReply", e[e.MailForward = 191] = "MailForward", e[e.MailSend = 192] = "MailSend", e[e.MAX_VALUE = 193] = "MAX_VALUE"
-})(Ai || (Ai = {}));
+})(wi || (wi = {}));
 var Wr = class {
         constructor() {
             this._keyCodeToStr = [], this._strToKeyCode = Object.create(null)
@@ -2251,9 +2251,9 @@ var Wr = class {
     Uo = [],
     Co = Object.create(null),
     Vo = Object.create(null),
-    Ei = [],
+    Ai = [],
     jr = [];
-for (let e = 0; e <= 193; e++) Ei[e] = -1;
+for (let e = 0; e <= 193; e++) Ai[e] = -1;
 for (let e = 0; e <= 132; e++) jr[e] = -1;
 (function() {
     const t = [
@@ -2491,7 +2491,7 @@ for (let e = 0; e <= 132; e++) jr[e] = -1;
         i = [];
     for (const s of t) {
         const [o, a, l, u, c, f, h, p, m] = s;
-        if (i[a] || (i[a] = !0, Uo[a] = l, Co[l] = a, Vo[l.toLowerCase()] = a, o && (Ei[a] = u, u !== 0 && u !== 3 && u !== 5 && u !== 4 && u !== 6 && u !== 57 && (jr[u] = a))), !r[u]) {
+        if (i[a] || (i[a] = !0, Uo[a] = l, Co[l] = a, Vo[l.toLowerCase()] = a, o && (Ai[a] = u, u !== 0 && u !== 3 && u !== 5 && u !== 4 && u !== 6 && u !== 57 && (jr[u] = a))), !r[u]) {
             if (r[u] = !0, !c) throw new Error(`String representation missing for key code ${u} around scan code ${l}`);
             ar.define(u, c), Hr.define(u, p || c), zr.define(u, m || p || c)
         }
@@ -2499,7 +2499,7 @@ for (let e = 0; e <= 132; e++) jr[e] = -1;
     }
     jr[3] = 46
 })();
-var Ti;
+var Ei;
 (function(e) {
     function t(l) {
         return ar.keyCodeToStr(l)
@@ -2541,18 +2541,18 @@ var Ti;
         return ar.keyCodeToStr(l)
     }
     e.toElectronAccelerator = a
-})(Ti || (Ti = {}));
-var Oi;
+})(Ei || (Ei = {}));
+var Ti;
 (function(e) {
     e[e.CtrlCmd = 2048] = "CtrlCmd", e[e.Shift = 1024] = "Shift", e[e.Alt = 512] = "Alt", e[e.WinCtrl = 256] = "WinCtrl"
-})(Oi || (Oi = {}));
-var Bl = 2091,
-    $l = 2096,
-    Di;
+})(Ti || (Ti = {}));
+var ql = 2091,
+    Gl = 2096,
+    Oi;
 (function(e) {
     e[e.CtrlCmd = 2048] = "CtrlCmd", e[e.Shift = 1024] = "Shift", e[e.Alt = 512] = "Alt", e[e.WinCtrl = 256] = "WinCtrl", e[e.KeyCode = 255] = "KeyCode"
-})(Di || (Di = {}));
-var Ri = Object.freeze(function(e, t) {
+})(Oi || (Oi = {}));
+var Di = Object.freeze(function(e, t) {
         const r = setTimeout(e.bind(t), 0);
         return {
             dispose() {
@@ -2570,7 +2570,7 @@ var Ri = Object.freeze(function(e, t) {
         onCancellationRequested: Jt.None
     }), e.Cancelled = Object.freeze({
         isCancellationRequested: !0,
-        onCancellationRequested: Ri
+        onCancellationRequested: Di
     })
 })(Ni || (Ni = {}));
 var Bo = class {
@@ -2584,16 +2584,16 @@ var Bo = class {
             return this._isCancelled
         }
         get onCancellationRequested() {
-            return this._isCancelled ? Ri : (this._emitter || (this._emitter = new Y), this._emitter.event)
+            return this._isCancelled ? Di : (this._emitter || (this._emitter = new Z), this._emitter.event)
         }
         dispose() {
             this._emitter && (this._emitter.dispose(), this._emitter = null)
         }
     },
-    Ke, qr = globalThis.vscode;
+    Ge, qr = globalThis.vscode;
 if (typeof qr < "u" && typeof qr.process < "u") {
     const e = qr.process;
-    Ke = {
+    Ge = {
         get platform() {
             return e.platform
         },
@@ -2607,7 +2607,7 @@ if (typeof qr < "u" && typeof qr.process < "u") {
             return e.cwd()
         }
     }
-} else typeof process < "u" && typeof process?.versions?.node == "string" ? Ke = {
+} else typeof process < "u" && typeof process?.versions?.node == "string" ? Ge = {
     get platform() {
         return process.platform
     },
@@ -2620,9 +2620,9 @@ if (typeof qr < "u" && typeof qr.process < "u") {
     cwd() {
         return process.env.VSCODE_CWD || process.cwd()
     }
-} : Ke = {
+} : Ge = {
     get platform() {
-        return ht ? "win32" : Ro ? "darwin" : "linux"
+        return ht ? "win32" : No ? "darwin" : "linux"
     },
     get arch() {},
     get env() {
@@ -2632,20 +2632,20 @@ if (typeof qr < "u" && typeof qr.process < "u") {
         return "/"
     }
 };
-var lr = Ke.cwd,
-    Kr = Ke.env,
-    $o = Ke.platform,
-    Wl = Ke.arch,
+var lr = Ge.cwd,
+    Gr = Ge.env,
+    $o = Ge.platform,
+    Kl = Ge.arch,
     Wo = 65,
     Ho = 97,
     zo = 90,
     jo = 122,
-    Ge = 46,
+    Ke = 46,
     X = 47,
     ae = 92,
-    Me = 58,
+    xe = 58,
     qo = 63,
-    Ii = class extends Error {
+    Ri = class extends Error {
         constructor(e, t, r) {
             let i;
             typeof t == "string" && t.indexOf("not ") === 0 ? (i = "must not be", t = t.replace(/^not /, "")) : i = "must be";
@@ -2655,12 +2655,12 @@ var lr = Ke.cwd,
         }
     };
 
-function Ko(e, t) {
-    if (e === null || typeof e != "object") throw new Ii(t, "Object", e)
+function Go(e, t) {
+    if (e === null || typeof e != "object") throw new Ri(t, "Object", e)
 }
 
 function H(e, t) {
-    if (typeof e != "string") throw new Ii(t, "string", e)
+    if (typeof e != "string") throw new Ri(t, "string", e)
 }
 var le = $o === "win32";
 
@@ -2668,7 +2668,7 @@ function L(e) {
     return e === X || e === ae
 }
 
-function Gr(e) {
+function Kr(e) {
     return e === X
 }
 
@@ -2691,7 +2691,7 @@ function cr(e, t, r, i) {
         if (i(u)) {
             if (!(a === c - 1 || l === 1))
                 if (l === 2) {
-                    if (s.length < 2 || o !== 2 || s.charCodeAt(s.length - 1) !== Ge || s.charCodeAt(s.length - 2) !== Ge) {
+                    if (s.length < 2 || o !== 2 || s.charCodeAt(s.length - 1) !== Ke || s.charCodeAt(s.length - 2) !== Ke) {
                         if (s.length > 2) {
                             const f = s.lastIndexOf(r);
                             f === -1 ? (s = "", o = 0) : (s = s.slice(0, f), o = s.length - 1 - s.lastIndexOf(r)), a = c, l = 0;
@@ -2704,19 +2704,19 @@ function cr(e, t, r, i) {
                     t && (s += s.length > 0 ? `${r}..` : "..", o = 2)
                 } else s.length > 0 ? s += `${r}${e.slice(a+1,c)}` : s = e.slice(a + 1, c), o = c - a - 1;
             a = c, l = 0
-        } else u === Ge && l !== -1 ? ++l : l = -1
+        } else u === Ke && l !== -1 ? ++l : l = -1
     }
     return s
 }
 
-function Go(e) {
+function Ko(e) {
     return e ? `${e[0]==="."?"":"."}${e}` : ""
 }
 
-function Li(e, t) {
-    Ko(t, "pathObject");
+function Ii(e, t) {
+    Go(t, "pathObject");
     const r = t.dir || t.root,
-        i = t.base || `${t.name||""}${Go(t.ext)}`;
+        i = t.base || `${t.name||""}${Ko(t.ext)}`;
     return r ? r === t.root ? `${r}${i}` : `${r}${e}${i}` : i
 }
 var q = {
@@ -2728,7 +2728,7 @@ var q = {
                 let o;
                 if (s >= 0) {
                     if (o = e[s], H(o, `paths[${s}]`), o.length === 0) continue
-                } else t.length === 0 ? o = lr() : (o = Kr[`=${t}`] || lr(), (o === void 0 || o.slice(0, 2).toLowerCase() !== t.toLowerCase() && o.charCodeAt(2) === ae) && (o = `${t}\\`));
+                } else t.length === 0 ? o = lr() : (o = Gr[`=${t}`] || lr(), (o === void 0 || o.slice(0, 2).toLowerCase() !== t.toLowerCase() && o.charCodeAt(2) === ae) && (o = `${t}\\`));
                 const a = o.length;
                 let l = 0,
                     u = "",
@@ -2749,7 +2749,7 @@ var q = {
                             }
                         }
                     } else l = 1;
-                else Pe(f) && o.charCodeAt(1) === Me && (u = o.slice(0, 2), l = 2, a > 2 && L(o.charCodeAt(2)) && (c = !0, l = 3));
+                else Pe(f) && o.charCodeAt(1) === xe && (u = o.slice(0, 2), l = 2, a > 2 && L(o.charCodeAt(2)) && (c = !0, l = 3));
                 if (u.length > 0)
                     if (t.length > 0) {
                         if (u.toLowerCase() !== t.toLowerCase()) continue
@@ -2767,7 +2767,7 @@ var q = {
             let r = 0,
                 i, s = !1;
             const o = e.charCodeAt(0);
-            if (t === 1) return Gr(o) ? "\\" : e;
+            if (t === 1) return Kr(o) ? "\\" : e;
             if (L(o))
                 if (s = !0, L(e.charCodeAt(1))) {
                     let l = 2,
@@ -2783,10 +2783,10 @@ var q = {
                         }
                     }
                 } else r = 1;
-            else Pe(o) && e.charCodeAt(1) === Me && (i = e.slice(0, 2), r = 2, t > 2 && L(e.charCodeAt(2)) && (s = !0, r = 3));
+            else Pe(o) && e.charCodeAt(1) === xe && (i = e.slice(0, 2), r = 2, t > 2 && L(e.charCodeAt(2)) && (s = !0, r = 3));
             let a = r < t ? cr(e.slice(r), !s, "\\", L) : "";
             if (a.length === 0 && !s && (a = "."), a.length > 0 && L(e.charCodeAt(t - 1)) && (a += "\\"), !s && i === void 0 && e.includes(":")) {
-                if (a.length >= 2 && Pe(a.charCodeAt(0)) && a.charCodeAt(1) === Me) return `.\\${a}`;
+                if (a.length >= 2 && Pe(a.charCodeAt(0)) && a.charCodeAt(1) === xe) return `.\\${a}`;
                 let l = e.indexOf(":");
                 do
                     if (l === t - 1 || L(e.charCodeAt(l + 1))) return `.\\${a}`; while ((l = e.indexOf(":", l + 1)) !== -1)
@@ -2798,7 +2798,7 @@ var q = {
             const t = e.length;
             if (t === 0) return !1;
             const r = e.charCodeAt(0);
-            return L(r) || t > 2 && Pe(r) && e.charCodeAt(1) === Me && L(e.charCodeAt(2))
+            return L(r) || t > 2 && Pe(r) && e.charCodeAt(1) === xe && L(e.charCodeAt(2))
         },
         join(...e) {
             if (e.length === 0) return ".";
@@ -2875,9 +2875,9 @@ var q = {
             if (t.charCodeAt(0) === ae) {
                 if (t.charCodeAt(1) === ae) {
                     const r = t.charCodeAt(2);
-                    if (r !== qo && r !== Ge) return `\\\\?\\UNC\\${t.slice(2)}`
+                    if (r !== qo && r !== Ke) return `\\\\?\\UNC\\${t.slice(2)}`
                 }
-            } else if (Pe(t.charCodeAt(0)) && t.charCodeAt(1) === Me && t.charCodeAt(2) === ae) return `\\\\?\\${t}`;
+            } else if (Pe(t.charCodeAt(0)) && t.charCodeAt(1) === xe && t.charCodeAt(2) === ae) return `\\\\?\\${t}`;
             return t
         },
         dirname(e) {
@@ -2902,7 +2902,7 @@ var q = {
                         }
                     }
                 }
-            } else Pe(s) && e.charCodeAt(1) === Me && (r = t > 2 && L(e.charCodeAt(2)) ? 3 : 2, i = r);
+            } else Pe(s) && e.charCodeAt(1) === xe && (r = t > 2 && L(e.charCodeAt(2)) ? 3 : 2, i = r);
             let o = -1,
                 a = !0;
             for (let l = t - 1; l >= i; --l)
@@ -2924,7 +2924,7 @@ var q = {
                 i = -1,
                 s = !0,
                 o;
-            if (e.length >= 2 && Pe(e.charCodeAt(0)) && e.charCodeAt(1) === Me && (r = 2), t !== void 0 && t.length > 0 && t.length <= e.length) {
+            if (e.length >= 2 && Pe(e.charCodeAt(0)) && e.charCodeAt(1) === xe && (r = 2), t !== void 0 && t.length > 0 && t.length <= e.length) {
                 if (t === e) return "";
                 let a = t.length - 1,
                     l = -1;
@@ -2956,7 +2956,7 @@ var q = {
                 s = -1,
                 o = !0,
                 a = 0;
-            e.length >= 2 && e.charCodeAt(1) === Me && Pe(e.charCodeAt(0)) && (t = i = 2);
+            e.length >= 2 && e.charCodeAt(1) === xe && Pe(e.charCodeAt(0)) && (t = i = 2);
             for (let l = e.length - 1; l >= t; --l) {
                 const u = e.charCodeAt(l);
                 if (L(u)) {
@@ -2966,11 +2966,11 @@ var q = {
                     }
                     continue
                 }
-                s === -1 && (o = !1, s = l + 1), u === Ge ? r === -1 ? r = l : a !== 1 && (a = 1) : r !== -1 && (a = -1)
+                s === -1 && (o = !1, s = l + 1), u === Ke ? r === -1 ? r = l : a !== 1 && (a = 1) : r !== -1 && (a = -1)
             }
             return r === -1 || s === -1 || a === 0 || a === 1 && r === s - 1 && r === i + 1 ? "" : e.slice(r, s)
         },
-        format: Li.bind(null, "\\"),
+        format: Ii.bind(null, "\\"),
         parse(e) {
             H(e, "path");
             const t = {
@@ -2998,7 +2998,7 @@ var q = {
                         }
                     }
                 }
-            } else if (Pe(s) && e.charCodeAt(1) === Me) {
+            } else if (Pe(s) && e.charCodeAt(1) === xe) {
                 if (r <= 2) return t.root = t.dir = e, t;
                 if (i = 2, L(e.charCodeAt(2))) {
                     if (r === 3) return t.root = t.dir = e, t;
@@ -3020,7 +3020,7 @@ var q = {
                     }
                     continue
                 }
-                l === -1 && (u = !1, l = c + 1), s === Ge ? o === -1 ? o = c : f !== 1 && (f = 1) : o !== -1 && (f = -1)
+                l === -1 && (u = !1, l = c + 1), s === Ke ? o === -1 ? o = c : f !== 1 && (f = 1) : o !== -1 && (f = -1)
             }
             return l !== -1 && (o === -1 || f === 0 || f === 1 && o === l - 1 && o === a + 1 ? t.base = t.name = e.slice(a, l) : (t.name = e.slice(a, o), t.base = e.slice(a, l), t.ext = e.slice(o, l))), a > 0 && a !== i ? t.dir = e.slice(0, a - 1) : t.dir = t.root, t
         },
@@ -3029,7 +3029,7 @@ var q = {
         win32: null,
         posix: null
     },
-    Yo = (() => {
+    Zo = (() => {
         if (le) {
             const e = /\\/g;
             return () => {
@@ -3048,16 +3048,16 @@ var q = {
                 H(s, `paths[${i}]`), s.length !== 0 && (t = `${s}/${t}`, r = s.charCodeAt(0) === X)
             }
             if (!r) {
-                const i = Yo();
+                const i = Zo();
                 t = `${i}/${t}`, r = i.charCodeAt(0) === X
             }
-            return t = cr(t, !r, "/", Gr), r ? `/${t}` : t.length > 0 ? t : "."
+            return t = cr(t, !r, "/", Kr), r ? `/${t}` : t.length > 0 ? t : "."
         },
         normalize(e) {
             if (H(e, "path"), e.length === 0) return ".";
             const t = e.charCodeAt(0) === X,
                 r = e.charCodeAt(e.length - 1) === X;
-            return e = cr(e, !t, "/", Gr), e.length === 0 ? t ? "/" : r ? "./" : "." : (r && (e += "/"), t ? `/${e}` : e)
+            return e = cr(e, !t, "/", Kr), e.length === 0 ? t ? "/" : r ? "./" : "." : (r && (e += "/"), t ? `/${e}` : e)
         },
         isAbsolute(e) {
             return H(e, "path"), e.length > 0 && e.charCodeAt(0) === X
@@ -3162,7 +3162,7 @@ var q = {
             }
             return t === -1 || i === -1 || o === 0 || o === 1 && t === i - 1 && t === r + 1 ? "" : e.slice(t, i)
         },
-        format: Li.bind(null, "/"),
+        format: Ii.bind(null, "/"),
         parse(e) {
             H(e, "path");
             const t = {
@@ -3191,7 +3191,7 @@ var q = {
                     }
                     continue
                 }
-                a === -1 && (l = !1, a = u + 1), f === Ge ? s === -1 ? s = u : c !== 1 && (c = 1) : s !== -1 && (c = -1)
+                a === -1 && (l = !1, a = u + 1), f === Ke ? s === -1 ? s = u : c !== 1 && (c = 1) : s !== -1 && (c = -1)
             }
             if (a !== -1) {
                 const f = o === 0 && r ? 1 : o;
@@ -3205,19 +3205,19 @@ var q = {
         posix: null
     };
 U.win32 = q.win32 = q, U.posix = q.posix = U;
-var Zo = le ? q.normalize : U.normalize,
-    Hl = le ? q.isAbsolute : U.isAbsolute,
+var Yo = le ? q.normalize : U.normalize,
+    Zl = le ? q.isAbsolute : U.isAbsolute,
     Qo = le ? q.join : U.join,
     Xo = le ? q.resolve : U.resolve,
     Jo = le ? q.relative : U.relative,
     ea = le ? q.dirname : U.dirname,
-    zl = le ? q.basename : U.basename,
-    jl = le ? q.extname : U.extname,
-    ql = le ? q.format : U.format,
-    Kl = le ? q.parse : U.parse,
-    Gl = le ? q.toNamespacedPath : U.toNamespacedPath,
+    Yl = le ? q.basename : U.basename,
+    Ql = le ? q.extname : U.extname,
+    Xl = le ? q.format : U.format,
+    Jl = le ? q.parse : U.parse,
+    ec = le ? q.toNamespacedPath : U.toNamespacedPath,
     ur = le ? q.sep : U.sep,
-    Yl = le ? q.delimiter : U.delimiter;
+    tc = le ? q.delimiter : U.delimiter;
 
 function ta(e) {
     return e
@@ -3231,7 +3231,7 @@ var ra = class {
             return this.lastArgKey !== t && (this.lastArgKey = t, this.lastCache = this._fn(e)), this.lastCache
         }
     },
-    Yr = class {
+    Zr = class {
         constructor(e) {
             this.executor = e, this._didRun = !1
         }
@@ -3270,13 +3270,13 @@ function na(e, t, r = 0, i = e.length, s = 0, o = t.length) {
     return a < l ? -1 : a > l ? 1 : 0
 }
 
-function ki(e, t, r = 0, i = e.length, s = 0, o = t.length) {
+function Li(e, t, r = 0, i = e.length, s = 0, o = t.length) {
     for (; r < i && s < o; r++, s++) {
         let u = e.charCodeAt(r),
             c = t.charCodeAt(s);
         if (u === c) continue;
         if (u >= 128 || c >= 128) return na(e.toLowerCase(), t.toLowerCase(), r, i, s, o);
-        Si(u) && (u -= 32), Si(c) && (c -= 32);
+        ki(u) && (u -= 32), ki(c) && (c -= 32);
         const f = u - c;
         if (f !== 0) return f
     }
@@ -3285,24 +3285,24 @@ function ki(e, t, r = 0, i = e.length, s = 0, o = t.length) {
     return a < l ? -1 : a > l ? 1 : 0
 }
 
-function Si(e) {
+function ki(e) {
     return e >= 97 && e <= 122
 }
 
 function sa(e, t) {
-    return e.length === t.length && ki(e, t) === 0
+    return e.length === t.length && Li(e, t) === 0
 }
 
 function oa(e, t) {
     const r = t.length;
-    return t.length > e.length ? !1 : ki(e, t, 0, r) === 0
+    return t.length > e.length ? !1 : Li(e, t, 0, r) === 0
 }
 
 function aa(e) {
     return 55296 <= e && e <= 56319
 }
 
-function xi(e) {
+function Si(e) {
     return 56320 <= e && e <= 57343
 }
 
@@ -3312,13 +3312,13 @@ function la(e, t) {
 var ca = /(?:\x1b\[|\x9b)[=?>!]?[\d;:]*["$#'* ]?[a-zA-Z@^`{}|~]/,
     ua = /(?:\x1b\]|\x9d).*?(?:\x1b\\|\x07|\x9c)/,
     da = /\x1b(?:[ #%\(\)\*\+\-\.\/]?[a-zA-Z0-9\|}~@])/,
-    Zl = new RegExp("(?:" + [ca.source, ua.source, da.source].join("|") + ")", "g"),
-    Ql = "\uFEFF",
+    rc = new RegExp("(?:" + [ca.source, ua.source, da.source].join("|") + ")", "g"),
+    ic = "\uFEFF",
     Mi;
 (function(e) {
     e[e.Other = 0] = "Other", e[e.Prepend = 1] = "Prepend", e[e.CR = 2] = "CR", e[e.LF = 3] = "LF", e[e.Control = 4] = "Control", e[e.Extend = 5] = "Extend", e[e.Regional_Indicator = 6] = "Regional_Indicator", e[e.SpacingMark = 7] = "SpacingMark", e[e.L = 8] = "L", e[e.V = 9] = "V", e[e.T = 10] = "T", e[e.LV = 11] = "LV", e[e.LVT = 12] = "LVT", e[e.ZWJ = 13] = "ZWJ", e[e.Extended_Pictographic = 14] = "Extended_Pictographic"
 })(Mi || (Mi = {}));
-var Xl = class Vt {
+var nc = class Vt {
     static {
         this._INSTANCE = null
     }
@@ -3345,13 +3345,13 @@ var Xl = class Vt {
 function ha() {
     return JSON.parse("[0,0,0,51229,51255,12,44061,44087,12,127462,127487,6,7083,7085,5,47645,47671,12,54813,54839,12,128678,128678,14,3270,3270,5,9919,9923,14,45853,45879,12,49437,49463,12,53021,53047,12,71216,71218,7,128398,128399,14,129360,129374,14,2519,2519,5,4448,4519,9,9742,9742,14,12336,12336,14,44957,44983,12,46749,46775,12,48541,48567,12,50333,50359,12,52125,52151,12,53917,53943,12,69888,69890,5,73018,73018,5,127990,127990,14,128558,128559,14,128759,128760,14,129653,129655,14,2027,2035,5,2891,2892,7,3761,3761,5,6683,6683,5,8293,8293,4,9825,9826,14,9999,9999,14,43452,43453,5,44509,44535,12,45405,45431,12,46301,46327,12,47197,47223,12,48093,48119,12,48989,49015,12,49885,49911,12,50781,50807,12,51677,51703,12,52573,52599,12,53469,53495,12,54365,54391,12,65279,65279,4,70471,70472,7,72145,72147,7,119173,119179,5,127799,127818,14,128240,128244,14,128512,128512,14,128652,128652,14,128721,128722,14,129292,129292,14,129445,129450,14,129734,129743,14,1476,1477,5,2366,2368,7,2750,2752,7,3076,3076,5,3415,3415,5,4141,4144,5,6109,6109,5,6964,6964,5,7394,7400,5,9197,9198,14,9770,9770,14,9877,9877,14,9968,9969,14,10084,10084,14,43052,43052,5,43713,43713,5,44285,44311,12,44733,44759,12,45181,45207,12,45629,45655,12,46077,46103,12,46525,46551,12,46973,46999,12,47421,47447,12,47869,47895,12,48317,48343,12,48765,48791,12,49213,49239,12,49661,49687,12,50109,50135,12,50557,50583,12,51005,51031,12,51453,51479,12,51901,51927,12,52349,52375,12,52797,52823,12,53245,53271,12,53693,53719,12,54141,54167,12,54589,54615,12,55037,55063,12,69506,69509,5,70191,70193,5,70841,70841,7,71463,71467,5,72330,72342,5,94031,94031,5,123628,123631,5,127763,127765,14,127941,127941,14,128043,128062,14,128302,128317,14,128465,128467,14,128539,128539,14,128640,128640,14,128662,128662,14,128703,128703,14,128745,128745,14,129004,129007,14,129329,129330,14,129402,129402,14,129483,129483,14,129686,129704,14,130048,131069,14,173,173,4,1757,1757,1,2200,2207,5,2434,2435,7,2631,2632,5,2817,2817,5,3008,3008,5,3201,3201,5,3387,3388,5,3542,3542,5,3902,3903,7,4190,4192,5,6002,6003,5,6439,6440,5,6765,6770,7,7019,7027,5,7154,7155,7,8205,8205,13,8505,8505,14,9654,9654,14,9757,9757,14,9792,9792,14,9852,9853,14,9890,9894,14,9937,9937,14,9981,9981,14,10035,10036,14,11035,11036,14,42654,42655,5,43346,43347,7,43587,43587,5,44006,44007,7,44173,44199,12,44397,44423,12,44621,44647,12,44845,44871,12,45069,45095,12,45293,45319,12,45517,45543,12,45741,45767,12,45965,45991,12,46189,46215,12,46413,46439,12,46637,46663,12,46861,46887,12,47085,47111,12,47309,47335,12,47533,47559,12,47757,47783,12,47981,48007,12,48205,48231,12,48429,48455,12,48653,48679,12,48877,48903,12,49101,49127,12,49325,49351,12,49549,49575,12,49773,49799,12,49997,50023,12,50221,50247,12,50445,50471,12,50669,50695,12,50893,50919,12,51117,51143,12,51341,51367,12,51565,51591,12,51789,51815,12,52013,52039,12,52237,52263,12,52461,52487,12,52685,52711,12,52909,52935,12,53133,53159,12,53357,53383,12,53581,53607,12,53805,53831,12,54029,54055,12,54253,54279,12,54477,54503,12,54701,54727,12,54925,54951,12,55149,55175,12,68101,68102,5,69762,69762,7,70067,70069,7,70371,70378,5,70720,70721,7,71087,71087,5,71341,71341,5,71995,71996,5,72249,72249,7,72850,72871,5,73109,73109,5,118576,118598,5,121505,121519,5,127245,127247,14,127568,127569,14,127777,127777,14,127872,127891,14,127956,127967,14,128015,128016,14,128110,128172,14,128259,128259,14,128367,128368,14,128424,128424,14,128488,128488,14,128530,128532,14,128550,128551,14,128566,128566,14,128647,128647,14,128656,128656,14,128667,128673,14,128691,128693,14,128715,128715,14,128728,128732,14,128752,128752,14,128765,128767,14,129096,129103,14,129311,129311,14,129344,129349,14,129394,129394,14,129413,129425,14,129466,129471,14,129511,129535,14,129664,129666,14,129719,129722,14,129760,129767,14,917536,917631,5,13,13,2,1160,1161,5,1564,1564,4,1807,1807,1,2085,2087,5,2307,2307,7,2382,2383,7,2497,2500,5,2563,2563,7,2677,2677,5,2763,2764,7,2879,2879,5,2914,2915,5,3021,3021,5,3142,3144,5,3263,3263,5,3285,3286,5,3398,3400,7,3530,3530,5,3633,3633,5,3864,3865,5,3974,3975,5,4155,4156,7,4229,4230,5,5909,5909,7,6078,6085,7,6277,6278,5,6451,6456,7,6744,6750,5,6846,6846,5,6972,6972,5,7074,7077,5,7146,7148,7,7222,7223,5,7416,7417,5,8234,8238,4,8417,8417,5,9000,9000,14,9203,9203,14,9730,9731,14,9748,9749,14,9762,9763,14,9776,9783,14,9800,9811,14,9831,9831,14,9872,9873,14,9882,9882,14,9900,9903,14,9929,9933,14,9941,9960,14,9974,9974,14,9989,9989,14,10006,10006,14,10062,10062,14,10160,10160,14,11647,11647,5,12953,12953,14,43019,43019,5,43232,43249,5,43443,43443,5,43567,43568,7,43696,43696,5,43765,43765,7,44013,44013,5,44117,44143,12,44229,44255,12,44341,44367,12,44453,44479,12,44565,44591,12,44677,44703,12,44789,44815,12,44901,44927,12,45013,45039,12,45125,45151,12,45237,45263,12,45349,45375,12,45461,45487,12,45573,45599,12,45685,45711,12,45797,45823,12,45909,45935,12,46021,46047,12,46133,46159,12,46245,46271,12,46357,46383,12,46469,46495,12,46581,46607,12,46693,46719,12,46805,46831,12,46917,46943,12,47029,47055,12,47141,47167,12,47253,47279,12,47365,47391,12,47477,47503,12,47589,47615,12,47701,47727,12,47813,47839,12,47925,47951,12,48037,48063,12,48149,48175,12,48261,48287,12,48373,48399,12,48485,48511,12,48597,48623,12,48709,48735,12,48821,48847,12,48933,48959,12,49045,49071,12,49157,49183,12,49269,49295,12,49381,49407,12,49493,49519,12,49605,49631,12,49717,49743,12,49829,49855,12,49941,49967,12,50053,50079,12,50165,50191,12,50277,50303,12,50389,50415,12,50501,50527,12,50613,50639,12,50725,50751,12,50837,50863,12,50949,50975,12,51061,51087,12,51173,51199,12,51285,51311,12,51397,51423,12,51509,51535,12,51621,51647,12,51733,51759,12,51845,51871,12,51957,51983,12,52069,52095,12,52181,52207,12,52293,52319,12,52405,52431,12,52517,52543,12,52629,52655,12,52741,52767,12,52853,52879,12,52965,52991,12,53077,53103,12,53189,53215,12,53301,53327,12,53413,53439,12,53525,53551,12,53637,53663,12,53749,53775,12,53861,53887,12,53973,53999,12,54085,54111,12,54197,54223,12,54309,54335,12,54421,54447,12,54533,54559,12,54645,54671,12,54757,54783,12,54869,54895,12,54981,55007,12,55093,55119,12,55243,55291,10,66045,66045,5,68325,68326,5,69688,69702,5,69817,69818,5,69957,69958,7,70089,70092,5,70198,70199,5,70462,70462,5,70502,70508,5,70750,70750,5,70846,70846,7,71100,71101,5,71230,71230,7,71351,71351,5,71737,71738,5,72000,72000,7,72160,72160,5,72273,72278,5,72752,72758,5,72882,72883,5,73031,73031,5,73461,73462,7,94192,94193,7,119149,119149,7,121403,121452,5,122915,122916,5,126980,126980,14,127358,127359,14,127535,127535,14,127759,127759,14,127771,127771,14,127792,127793,14,127825,127867,14,127897,127899,14,127945,127945,14,127985,127986,14,128000,128007,14,128021,128021,14,128066,128100,14,128184,128235,14,128249,128252,14,128266,128276,14,128335,128335,14,128379,128390,14,128407,128419,14,128444,128444,14,128481,128481,14,128499,128499,14,128526,128526,14,128536,128536,14,128543,128543,14,128556,128556,14,128564,128564,14,128577,128580,14,128643,128645,14,128649,128649,14,128654,128654,14,128660,128660,14,128664,128664,14,128675,128675,14,128686,128689,14,128695,128696,14,128705,128709,14,128717,128719,14,128725,128725,14,128736,128741,14,128747,128748,14,128755,128755,14,128762,128762,14,128981,128991,14,129009,129023,14,129160,129167,14,129296,129304,14,129320,129327,14,129340,129342,14,129356,129356,14,129388,129392,14,129399,129400,14,129404,129407,14,129432,129442,14,129454,129455,14,129473,129474,14,129485,129487,14,129648,129651,14,129659,129660,14,129671,129679,14,129709,129711,14,129728,129730,14,129751,129753,14,129776,129782,14,917505,917505,4,917760,917999,5,10,10,3,127,159,4,768,879,5,1471,1471,5,1536,1541,1,1648,1648,5,1767,1768,5,1840,1866,5,2070,2073,5,2137,2139,5,2274,2274,1,2363,2363,7,2377,2380,7,2402,2403,5,2494,2494,5,2507,2508,7,2558,2558,5,2622,2624,7,2641,2641,5,2691,2691,7,2759,2760,5,2786,2787,5,2876,2876,5,2881,2884,5,2901,2902,5,3006,3006,5,3014,3016,7,3072,3072,5,3134,3136,5,3157,3158,5,3260,3260,5,3266,3266,5,3274,3275,7,3328,3329,5,3391,3392,7,3405,3405,5,3457,3457,5,3536,3537,7,3551,3551,5,3636,3642,5,3764,3772,5,3895,3895,5,3967,3967,7,3993,4028,5,4146,4151,5,4182,4183,7,4226,4226,5,4253,4253,5,4957,4959,5,5940,5940,7,6070,6070,7,6087,6088,7,6158,6158,4,6432,6434,5,6448,6449,7,6679,6680,5,6742,6742,5,6754,6754,5,6783,6783,5,6912,6915,5,6966,6970,5,6978,6978,5,7042,7042,7,7080,7081,5,7143,7143,7,7150,7150,7,7212,7219,5,7380,7392,5,7412,7412,5,8203,8203,4,8232,8232,4,8265,8265,14,8400,8412,5,8421,8432,5,8617,8618,14,9167,9167,14,9200,9200,14,9410,9410,14,9723,9726,14,9733,9733,14,9745,9745,14,9752,9752,14,9760,9760,14,9766,9766,14,9774,9774,14,9786,9786,14,9794,9794,14,9823,9823,14,9828,9828,14,9833,9850,14,9855,9855,14,9875,9875,14,9880,9880,14,9885,9887,14,9896,9897,14,9906,9916,14,9926,9927,14,9935,9935,14,9939,9939,14,9962,9962,14,9972,9972,14,9978,9978,14,9986,9986,14,9997,9997,14,10002,10002,14,10017,10017,14,10055,10055,14,10071,10071,14,10133,10135,14,10548,10549,14,11093,11093,14,12330,12333,5,12441,12442,5,42608,42610,5,43010,43010,5,43045,43046,5,43188,43203,7,43302,43309,5,43392,43394,5,43446,43449,5,43493,43493,5,43571,43572,7,43597,43597,7,43703,43704,5,43756,43757,5,44003,44004,7,44009,44010,7,44033,44059,12,44089,44115,12,44145,44171,12,44201,44227,12,44257,44283,12,44313,44339,12,44369,44395,12,44425,44451,12,44481,44507,12,44537,44563,12,44593,44619,12,44649,44675,12,44705,44731,12,44761,44787,12,44817,44843,12,44873,44899,12,44929,44955,12,44985,45011,12,45041,45067,12,45097,45123,12,45153,45179,12,45209,45235,12,45265,45291,12,45321,45347,12,45377,45403,12,45433,45459,12,45489,45515,12,45545,45571,12,45601,45627,12,45657,45683,12,45713,45739,12,45769,45795,12,45825,45851,12,45881,45907,12,45937,45963,12,45993,46019,12,46049,46075,12,46105,46131,12,46161,46187,12,46217,46243,12,46273,46299,12,46329,46355,12,46385,46411,12,46441,46467,12,46497,46523,12,46553,46579,12,46609,46635,12,46665,46691,12,46721,46747,12,46777,46803,12,46833,46859,12,46889,46915,12,46945,46971,12,47001,47027,12,47057,47083,12,47113,47139,12,47169,47195,12,47225,47251,12,47281,47307,12,47337,47363,12,47393,47419,12,47449,47475,12,47505,47531,12,47561,47587,12,47617,47643,12,47673,47699,12,47729,47755,12,47785,47811,12,47841,47867,12,47897,47923,12,47953,47979,12,48009,48035,12,48065,48091,12,48121,48147,12,48177,48203,12,48233,48259,12,48289,48315,12,48345,48371,12,48401,48427,12,48457,48483,12,48513,48539,12,48569,48595,12,48625,48651,12,48681,48707,12,48737,48763,12,48793,48819,12,48849,48875,12,48905,48931,12,48961,48987,12,49017,49043,12,49073,49099,12,49129,49155,12,49185,49211,12,49241,49267,12,49297,49323,12,49353,49379,12,49409,49435,12,49465,49491,12,49521,49547,12,49577,49603,12,49633,49659,12,49689,49715,12,49745,49771,12,49801,49827,12,49857,49883,12,49913,49939,12,49969,49995,12,50025,50051,12,50081,50107,12,50137,50163,12,50193,50219,12,50249,50275,12,50305,50331,12,50361,50387,12,50417,50443,12,50473,50499,12,50529,50555,12,50585,50611,12,50641,50667,12,50697,50723,12,50753,50779,12,50809,50835,12,50865,50891,12,50921,50947,12,50977,51003,12,51033,51059,12,51089,51115,12,51145,51171,12,51201,51227,12,51257,51283,12,51313,51339,12,51369,51395,12,51425,51451,12,51481,51507,12,51537,51563,12,51593,51619,12,51649,51675,12,51705,51731,12,51761,51787,12,51817,51843,12,51873,51899,12,51929,51955,12,51985,52011,12,52041,52067,12,52097,52123,12,52153,52179,12,52209,52235,12,52265,52291,12,52321,52347,12,52377,52403,12,52433,52459,12,52489,52515,12,52545,52571,12,52601,52627,12,52657,52683,12,52713,52739,12,52769,52795,12,52825,52851,12,52881,52907,12,52937,52963,12,52993,53019,12,53049,53075,12,53105,53131,12,53161,53187,12,53217,53243,12,53273,53299,12,53329,53355,12,53385,53411,12,53441,53467,12,53497,53523,12,53553,53579,12,53609,53635,12,53665,53691,12,53721,53747,12,53777,53803,12,53833,53859,12,53889,53915,12,53945,53971,12,54001,54027,12,54057,54083,12,54113,54139,12,54169,54195,12,54225,54251,12,54281,54307,12,54337,54363,12,54393,54419,12,54449,54475,12,54505,54531,12,54561,54587,12,54617,54643,12,54673,54699,12,54729,54755,12,54785,54811,12,54841,54867,12,54897,54923,12,54953,54979,12,55009,55035,12,55065,55091,12,55121,55147,12,55177,55203,12,65024,65039,5,65520,65528,4,66422,66426,5,68152,68154,5,69291,69292,5,69633,69633,5,69747,69748,5,69811,69814,5,69826,69826,5,69932,69932,7,70016,70017,5,70079,70080,7,70095,70095,5,70196,70196,5,70367,70367,5,70402,70403,7,70464,70464,5,70487,70487,5,70709,70711,7,70725,70725,7,70833,70834,7,70843,70844,7,70849,70849,7,71090,71093,5,71103,71104,5,71227,71228,7,71339,71339,5,71344,71349,5,71458,71461,5,71727,71735,5,71985,71989,7,71998,71998,5,72002,72002,7,72154,72155,5,72193,72202,5,72251,72254,5,72281,72283,5,72344,72345,5,72766,72766,7,72874,72880,5,72885,72886,5,73023,73029,5,73104,73105,5,73111,73111,5,92912,92916,5,94095,94098,5,113824,113827,4,119142,119142,7,119155,119162,4,119362,119364,5,121476,121476,5,122888,122904,5,123184,123190,5,125252,125258,5,127183,127183,14,127340,127343,14,127377,127386,14,127491,127503,14,127548,127551,14,127744,127756,14,127761,127761,14,127769,127769,14,127773,127774,14,127780,127788,14,127796,127797,14,127820,127823,14,127869,127869,14,127894,127895,14,127902,127903,14,127943,127943,14,127947,127950,14,127972,127972,14,127988,127988,14,127992,127994,14,128009,128011,14,128019,128019,14,128023,128041,14,128064,128064,14,128102,128107,14,128174,128181,14,128238,128238,14,128246,128247,14,128254,128254,14,128264,128264,14,128278,128299,14,128329,128330,14,128348,128359,14,128371,128377,14,128392,128393,14,128401,128404,14,128421,128421,14,128433,128434,14,128450,128452,14,128476,128478,14,128483,128483,14,128495,128495,14,128506,128506,14,128519,128520,14,128528,128528,14,128534,128534,14,128538,128538,14,128540,128542,14,128544,128549,14,128552,128555,14,128557,128557,14,128560,128563,14,128565,128565,14,128567,128576,14,128581,128591,14,128641,128642,14,128646,128646,14,128648,128648,14,128650,128651,14,128653,128653,14,128655,128655,14,128657,128659,14,128661,128661,14,128663,128663,14,128665,128666,14,128674,128674,14,128676,128677,14,128679,128685,14,128690,128690,14,128694,128694,14,128697,128702,14,128704,128704,14,128710,128714,14,128716,128716,14,128720,128720,14,128723,128724,14,128726,128727,14,128733,128735,14,128742,128744,14,128746,128746,14,128749,128751,14,128753,128754,14,128756,128758,14,128761,128761,14,128763,128764,14,128884,128895,14,128992,129003,14,129008,129008,14,129036,129039,14,129114,129119,14,129198,129279,14,129293,129295,14,129305,129310,14,129312,129319,14,129328,129328,14,129331,129338,14,129343,129343,14,129351,129355,14,129357,129359,14,129375,129387,14,129393,129393,14,129395,129398,14,129401,129401,14,129403,129403,14,129408,129412,14,129426,129431,14,129443,129444,14,129451,129453,14,129456,129465,14,129472,129472,14,129475,129482,14,129484,129484,14,129488,129510,14,129536,129647,14,129652,129652,14,129656,129658,14,129661,129663,14,129667,129670,14,129680,129685,14,129705,129708,14,129712,129718,14,129723,129727,14,129731,129733,14,129744,129750,14,129754,129759,14,129768,129775,14,129783,129791,14,917504,917504,4,917506,917535,4,917632,917759,4,918000,921599,4,0,9,4,11,12,4,14,31,4,169,169,14,174,174,14,1155,1159,5,1425,1469,5,1473,1474,5,1479,1479,5,1552,1562,5,1611,1631,5,1750,1756,5,1759,1764,5,1770,1773,5,1809,1809,5,1958,1968,5,2045,2045,5,2075,2083,5,2089,2093,5,2192,2193,1,2250,2273,5,2275,2306,5,2362,2362,5,2364,2364,5,2369,2376,5,2381,2381,5,2385,2391,5,2433,2433,5,2492,2492,5,2495,2496,7,2503,2504,7,2509,2509,5,2530,2531,5,2561,2562,5,2620,2620,5,2625,2626,5,2635,2637,5,2672,2673,5,2689,2690,5,2748,2748,5,2753,2757,5,2761,2761,7,2765,2765,5,2810,2815,5,2818,2819,7,2878,2878,5,2880,2880,7,2887,2888,7,2893,2893,5,2903,2903,5,2946,2946,5,3007,3007,7,3009,3010,7,3018,3020,7,3031,3031,5,3073,3075,7,3132,3132,5,3137,3140,7,3146,3149,5,3170,3171,5,3202,3203,7,3262,3262,7,3264,3265,7,3267,3268,7,3271,3272,7,3276,3277,5,3298,3299,5,3330,3331,7,3390,3390,5,3393,3396,5,3402,3404,7,3406,3406,1,3426,3427,5,3458,3459,7,3535,3535,5,3538,3540,5,3544,3550,7,3570,3571,7,3635,3635,7,3655,3662,5,3763,3763,7,3784,3789,5,3893,3893,5,3897,3897,5,3953,3966,5,3968,3972,5,3981,3991,5,4038,4038,5,4145,4145,7,4153,4154,5,4157,4158,5,4184,4185,5,4209,4212,5,4228,4228,7,4237,4237,5,4352,4447,8,4520,4607,10,5906,5908,5,5938,5939,5,5970,5971,5,6068,6069,5,6071,6077,5,6086,6086,5,6089,6099,5,6155,6157,5,6159,6159,5,6313,6313,5,6435,6438,7,6441,6443,7,6450,6450,5,6457,6459,5,6681,6682,7,6741,6741,7,6743,6743,7,6752,6752,5,6757,6764,5,6771,6780,5,6832,6845,5,6847,6862,5,6916,6916,7,6965,6965,5,6971,6971,7,6973,6977,7,6979,6980,7,7040,7041,5,7073,7073,7,7078,7079,7,7082,7082,7,7142,7142,5,7144,7145,5,7149,7149,5,7151,7153,5,7204,7211,7,7220,7221,7,7376,7378,5,7393,7393,7,7405,7405,5,7415,7415,7,7616,7679,5,8204,8204,5,8206,8207,4,8233,8233,4,8252,8252,14,8288,8292,4,8294,8303,4,8413,8416,5,8418,8420,5,8482,8482,14,8596,8601,14,8986,8987,14,9096,9096,14,9193,9196,14,9199,9199,14,9201,9202,14,9208,9210,14,9642,9643,14,9664,9664,14,9728,9729,14,9732,9732,14,9735,9741,14,9743,9744,14,9746,9746,14,9750,9751,14,9753,9756,14,9758,9759,14,9761,9761,14,9764,9765,14,9767,9769,14,9771,9773,14,9775,9775,14,9784,9785,14,9787,9791,14,9793,9793,14,9795,9799,14,9812,9822,14,9824,9824,14,9827,9827,14,9829,9830,14,9832,9832,14,9851,9851,14,9854,9854,14,9856,9861,14,9874,9874,14,9876,9876,14,9878,9879,14,9881,9881,14,9883,9884,14,9888,9889,14,9895,9895,14,9898,9899,14,9904,9905,14,9917,9918,14,9924,9925,14,9928,9928,14,9934,9934,14,9936,9936,14,9938,9938,14,9940,9940,14,9961,9961,14,9963,9967,14,9970,9971,14,9973,9973,14,9975,9977,14,9979,9980,14,9982,9985,14,9987,9988,14,9992,9996,14,9998,9998,14,10000,10001,14,10004,10004,14,10013,10013,14,10024,10024,14,10052,10052,14,10060,10060,14,10067,10069,14,10083,10083,14,10085,10087,14,10145,10145,14,10175,10175,14,11013,11015,14,11088,11088,14,11503,11505,5,11744,11775,5,12334,12335,5,12349,12349,14,12951,12951,14,42607,42607,5,42612,42621,5,42736,42737,5,43014,43014,5,43043,43044,7,43047,43047,7,43136,43137,7,43204,43205,5,43263,43263,5,43335,43345,5,43360,43388,8,43395,43395,7,43444,43445,7,43450,43451,7,43454,43456,7,43561,43566,5,43569,43570,5,43573,43574,5,43596,43596,5,43644,43644,5,43698,43700,5,43710,43711,5,43755,43755,7,43758,43759,7,43766,43766,5,44005,44005,5,44008,44008,5,44012,44012,7,44032,44032,11,44060,44060,11,44088,44088,11,44116,44116,11,44144,44144,11,44172,44172,11,44200,44200,11,44228,44228,11,44256,44256,11,44284,44284,11,44312,44312,11,44340,44340,11,44368,44368,11,44396,44396,11,44424,44424,11,44452,44452,11,44480,44480,11,44508,44508,11,44536,44536,11,44564,44564,11,44592,44592,11,44620,44620,11,44648,44648,11,44676,44676,11,44704,44704,11,44732,44732,11,44760,44760,11,44788,44788,11,44816,44816,11,44844,44844,11,44872,44872,11,44900,44900,11,44928,44928,11,44956,44956,11,44984,44984,11,45012,45012,11,45040,45040,11,45068,45068,11,45096,45096,11,45124,45124,11,45152,45152,11,45180,45180,11,45208,45208,11,45236,45236,11,45264,45264,11,45292,45292,11,45320,45320,11,45348,45348,11,45376,45376,11,45404,45404,11,45432,45432,11,45460,45460,11,45488,45488,11,45516,45516,11,45544,45544,11,45572,45572,11,45600,45600,11,45628,45628,11,45656,45656,11,45684,45684,11,45712,45712,11,45740,45740,11,45768,45768,11,45796,45796,11,45824,45824,11,45852,45852,11,45880,45880,11,45908,45908,11,45936,45936,11,45964,45964,11,45992,45992,11,46020,46020,11,46048,46048,11,46076,46076,11,46104,46104,11,46132,46132,11,46160,46160,11,46188,46188,11,46216,46216,11,46244,46244,11,46272,46272,11,46300,46300,11,46328,46328,11,46356,46356,11,46384,46384,11,46412,46412,11,46440,46440,11,46468,46468,11,46496,46496,11,46524,46524,11,46552,46552,11,46580,46580,11,46608,46608,11,46636,46636,11,46664,46664,11,46692,46692,11,46720,46720,11,46748,46748,11,46776,46776,11,46804,46804,11,46832,46832,11,46860,46860,11,46888,46888,11,46916,46916,11,46944,46944,11,46972,46972,11,47000,47000,11,47028,47028,11,47056,47056,11,47084,47084,11,47112,47112,11,47140,47140,11,47168,47168,11,47196,47196,11,47224,47224,11,47252,47252,11,47280,47280,11,47308,47308,11,47336,47336,11,47364,47364,11,47392,47392,11,47420,47420,11,47448,47448,11,47476,47476,11,47504,47504,11,47532,47532,11,47560,47560,11,47588,47588,11,47616,47616,11,47644,47644,11,47672,47672,11,47700,47700,11,47728,47728,11,47756,47756,11,47784,47784,11,47812,47812,11,47840,47840,11,47868,47868,11,47896,47896,11,47924,47924,11,47952,47952,11,47980,47980,11,48008,48008,11,48036,48036,11,48064,48064,11,48092,48092,11,48120,48120,11,48148,48148,11,48176,48176,11,48204,48204,11,48232,48232,11,48260,48260,11,48288,48288,11,48316,48316,11,48344,48344,11,48372,48372,11,48400,48400,11,48428,48428,11,48456,48456,11,48484,48484,11,48512,48512,11,48540,48540,11,48568,48568,11,48596,48596,11,48624,48624,11,48652,48652,11,48680,48680,11,48708,48708,11,48736,48736,11,48764,48764,11,48792,48792,11,48820,48820,11,48848,48848,11,48876,48876,11,48904,48904,11,48932,48932,11,48960,48960,11,48988,48988,11,49016,49016,11,49044,49044,11,49072,49072,11,49100,49100,11,49128,49128,11,49156,49156,11,49184,49184,11,49212,49212,11,49240,49240,11,49268,49268,11,49296,49296,11,49324,49324,11,49352,49352,11,49380,49380,11,49408,49408,11,49436,49436,11,49464,49464,11,49492,49492,11,49520,49520,11,49548,49548,11,49576,49576,11,49604,49604,11,49632,49632,11,49660,49660,11,49688,49688,11,49716,49716,11,49744,49744,11,49772,49772,11,49800,49800,11,49828,49828,11,49856,49856,11,49884,49884,11,49912,49912,11,49940,49940,11,49968,49968,11,49996,49996,11,50024,50024,11,50052,50052,11,50080,50080,11,50108,50108,11,50136,50136,11,50164,50164,11,50192,50192,11,50220,50220,11,50248,50248,11,50276,50276,11,50304,50304,11,50332,50332,11,50360,50360,11,50388,50388,11,50416,50416,11,50444,50444,11,50472,50472,11,50500,50500,11,50528,50528,11,50556,50556,11,50584,50584,11,50612,50612,11,50640,50640,11,50668,50668,11,50696,50696,11,50724,50724,11,50752,50752,11,50780,50780,11,50808,50808,11,50836,50836,11,50864,50864,11,50892,50892,11,50920,50920,11,50948,50948,11,50976,50976,11,51004,51004,11,51032,51032,11,51060,51060,11,51088,51088,11,51116,51116,11,51144,51144,11,51172,51172,11,51200,51200,11,51228,51228,11,51256,51256,11,51284,51284,11,51312,51312,11,51340,51340,11,51368,51368,11,51396,51396,11,51424,51424,11,51452,51452,11,51480,51480,11,51508,51508,11,51536,51536,11,51564,51564,11,51592,51592,11,51620,51620,11,51648,51648,11,51676,51676,11,51704,51704,11,51732,51732,11,51760,51760,11,51788,51788,11,51816,51816,11,51844,51844,11,51872,51872,11,51900,51900,11,51928,51928,11,51956,51956,11,51984,51984,11,52012,52012,11,52040,52040,11,52068,52068,11,52096,52096,11,52124,52124,11,52152,52152,11,52180,52180,11,52208,52208,11,52236,52236,11,52264,52264,11,52292,52292,11,52320,52320,11,52348,52348,11,52376,52376,11,52404,52404,11,52432,52432,11,52460,52460,11,52488,52488,11,52516,52516,11,52544,52544,11,52572,52572,11,52600,52600,11,52628,52628,11,52656,52656,11,52684,52684,11,52712,52712,11,52740,52740,11,52768,52768,11,52796,52796,11,52824,52824,11,52852,52852,11,52880,52880,11,52908,52908,11,52936,52936,11,52964,52964,11,52992,52992,11,53020,53020,11,53048,53048,11,53076,53076,11,53104,53104,11,53132,53132,11,53160,53160,11,53188,53188,11,53216,53216,11,53244,53244,11,53272,53272,11,53300,53300,11,53328,53328,11,53356,53356,11,53384,53384,11,53412,53412,11,53440,53440,11,53468,53468,11,53496,53496,11,53524,53524,11,53552,53552,11,53580,53580,11,53608,53608,11,53636,53636,11,53664,53664,11,53692,53692,11,53720,53720,11,53748,53748,11,53776,53776,11,53804,53804,11,53832,53832,11,53860,53860,11,53888,53888,11,53916,53916,11,53944,53944,11,53972,53972,11,54000,54000,11,54028,54028,11,54056,54056,11,54084,54084,11,54112,54112,11,54140,54140,11,54168,54168,11,54196,54196,11,54224,54224,11,54252,54252,11,54280,54280,11,54308,54308,11,54336,54336,11,54364,54364,11,54392,54392,11,54420,54420,11,54448,54448,11,54476,54476,11,54504,54504,11,54532,54532,11,54560,54560,11,54588,54588,11,54616,54616,11,54644,54644,11,54672,54672,11,54700,54700,11,54728,54728,11,54756,54756,11,54784,54784,11,54812,54812,11,54840,54840,11,54868,54868,11,54896,54896,11,54924,54924,11,54952,54952,11,54980,54980,11,55008,55008,11,55036,55036,11,55064,55064,11,55092,55092,11,55120,55120,11,55148,55148,11,55176,55176,11,55216,55238,9,64286,64286,5,65056,65071,5,65438,65439,5,65529,65531,4,66272,66272,5,68097,68099,5,68108,68111,5,68159,68159,5,68900,68903,5,69446,69456,5,69632,69632,7,69634,69634,7,69744,69744,5,69759,69761,5,69808,69810,7,69815,69816,7,69821,69821,1,69837,69837,1,69927,69931,5,69933,69940,5,70003,70003,5,70018,70018,7,70070,70078,5,70082,70083,1,70094,70094,7,70188,70190,7,70194,70195,7,70197,70197,7,70206,70206,5,70368,70370,7,70400,70401,5,70459,70460,5,70463,70463,7,70465,70468,7,70475,70477,7,70498,70499,7,70512,70516,5,70712,70719,5,70722,70724,5,70726,70726,5,70832,70832,5,70835,70840,5,70842,70842,5,70845,70845,5,70847,70848,5,70850,70851,5,71088,71089,7,71096,71099,7,71102,71102,7,71132,71133,5,71219,71226,5,71229,71229,5,71231,71232,5,71340,71340,7,71342,71343,7,71350,71350,7,71453,71455,5,71462,71462,7,71724,71726,7,71736,71736,7,71984,71984,5,71991,71992,7,71997,71997,7,71999,71999,1,72001,72001,1,72003,72003,5,72148,72151,5,72156,72159,7,72164,72164,7,72243,72248,5,72250,72250,1,72263,72263,5,72279,72280,7,72324,72329,1,72343,72343,7,72751,72751,7,72760,72765,5,72767,72767,5,72873,72873,7,72881,72881,7,72884,72884,7,73009,73014,5,73020,73021,5,73030,73030,1,73098,73102,7,73107,73108,7,73110,73110,7,73459,73460,5,78896,78904,4,92976,92982,5,94033,94087,7,94180,94180,5,113821,113822,5,118528,118573,5,119141,119141,5,119143,119145,5,119150,119154,5,119163,119170,5,119210,119213,5,121344,121398,5,121461,121461,5,121499,121503,5,122880,122886,5,122907,122913,5,122918,122922,5,123566,123566,5,125136,125142,5,126976,126979,14,126981,127182,14,127184,127231,14,127279,127279,14,127344,127345,14,127374,127374,14,127405,127461,14,127489,127490,14,127514,127514,14,127538,127546,14,127561,127567,14,127570,127743,14,127757,127758,14,127760,127760,14,127762,127762,14,127766,127768,14,127770,127770,14,127772,127772,14,127775,127776,14,127778,127779,14,127789,127791,14,127794,127795,14,127798,127798,14,127819,127819,14,127824,127824,14,127868,127868,14,127870,127871,14,127892,127893,14,127896,127896,14,127900,127901,14,127904,127940,14,127942,127942,14,127944,127944,14,127946,127946,14,127951,127955,14,127968,127971,14,127973,127984,14,127987,127987,14,127989,127989,14,127991,127991,14,127995,127999,5,128008,128008,14,128012,128014,14,128017,128018,14,128020,128020,14,128022,128022,14,128042,128042,14,128063,128063,14,128065,128065,14,128101,128101,14,128108,128109,14,128173,128173,14,128182,128183,14,128236,128237,14,128239,128239,14,128245,128245,14,128248,128248,14,128253,128253,14,128255,128258,14,128260,128263,14,128265,128265,14,128277,128277,14,128300,128301,14,128326,128328,14,128331,128334,14,128336,128347,14,128360,128366,14,128369,128370,14,128378,128378,14,128391,128391,14,128394,128397,14,128400,128400,14,128405,128406,14,128420,128420,14,128422,128423,14,128425,128432,14,128435,128443,14,128445,128449,14,128453,128464,14,128468,128475,14,128479,128480,14,128482,128482,14,128484,128487,14,128489,128494,14,128496,128498,14,128500,128505,14,128507,128511,14,128513,128518,14,128521,128525,14,128527,128527,14,128529,128529,14,128533,128533,14,128535,128535,14,128537,128537,14]")
 }
-var Pi;
+var xi;
 (function(e) {
     e[e.zwj = 8205] = "zwj", e[e.emojiVariantSelector = 65039] = "emojiVariantSelector", e[e.enclosingKeyCap = 8419] = "enclosingKeyCap", e[e.space = 32] = "space"
-})(Pi || (Pi = {}));
-var Jl = class Bt {
+})(xi || (xi = {}));
+var sc = class Bt {
         static {
-            this.ambiguousCharacterData = new Yr(() => JSON.parse('{"_common":[8232,32,8233,32,5760,32,8192,32,8193,32,8194,32,8195,32,8196,32,8197,32,8198,32,8200,32,8201,32,8202,32,8287,32,8199,32,8239,32,2042,95,65101,95,65102,95,65103,95,8208,45,8209,45,8210,45,65112,45,1748,45,8259,45,727,45,8722,45,10134,45,11450,45,1549,44,1643,44,184,44,42233,44,894,59,2307,58,2691,58,1417,58,1795,58,1796,58,5868,58,65072,58,6147,58,6153,58,8282,58,1475,58,760,58,42889,58,8758,58,720,58,42237,58,451,33,11601,33,660,63,577,63,2429,63,5038,63,42731,63,119149,46,8228,46,1793,46,1794,46,42510,46,68176,46,1632,46,1776,46,42232,46,1373,96,65287,96,8219,96,1523,96,8242,96,1370,96,8175,96,65344,96,900,96,8189,96,8125,96,8127,96,8190,96,697,96,884,96,712,96,714,96,715,96,756,96,699,96,701,96,700,96,702,96,42892,96,1497,96,2036,96,2037,96,5194,96,5836,96,94033,96,94034,96,65339,91,10088,40,10098,40,12308,40,64830,40,65341,93,10089,41,10099,41,12309,41,64831,41,10100,123,119060,123,10101,125,65342,94,8270,42,1645,42,8727,42,66335,42,5941,47,8257,47,8725,47,8260,47,9585,47,10187,47,10744,47,119354,47,12755,47,12339,47,11462,47,20031,47,12035,47,65340,92,65128,92,8726,92,10189,92,10741,92,10745,92,119311,92,119355,92,12756,92,20022,92,12034,92,42872,38,708,94,710,94,5869,43,10133,43,66203,43,8249,60,10094,60,706,60,119350,60,5176,60,5810,60,5120,61,11840,61,12448,61,42239,61,8250,62,10095,62,707,62,119351,62,5171,62,94015,62,8275,126,732,126,8128,126,8764,126,65372,124,65293,45,118002,50,120784,50,120794,50,120804,50,120814,50,120824,50,130034,50,42842,50,423,50,1000,50,42564,50,5311,50,42735,50,119302,51,118003,51,120785,51,120795,51,120805,51,120815,51,120825,51,130035,51,42923,51,540,51,439,51,42858,51,11468,51,1248,51,94011,51,71882,51,118004,52,120786,52,120796,52,120806,52,120816,52,120826,52,130036,52,5070,52,71855,52,118005,53,120787,53,120797,53,120807,53,120817,53,120827,53,130037,53,444,53,71867,53,118006,54,120788,54,120798,54,120808,54,120818,54,120828,54,130038,54,11474,54,5102,54,71893,54,119314,55,118007,55,120789,55,120799,55,120809,55,120819,55,120829,55,130039,55,66770,55,71878,55,2819,56,2538,56,2666,56,125131,56,118008,56,120790,56,120800,56,120810,56,120820,56,120830,56,130040,56,547,56,546,56,66330,56,2663,57,2920,57,2541,57,3437,57,118009,57,120791,57,120801,57,120811,57,120821,57,120831,57,130041,57,42862,57,11466,57,71884,57,71852,57,71894,57,9082,97,65345,97,119834,97,119886,97,119938,97,119990,97,120042,97,120094,97,120146,97,120198,97,120250,97,120302,97,120354,97,120406,97,120458,97,593,97,945,97,120514,97,120572,97,120630,97,120688,97,120746,97,65313,65,117974,65,119808,65,119860,65,119912,65,119964,65,120016,65,120068,65,120120,65,120172,65,120224,65,120276,65,120328,65,120380,65,120432,65,913,65,120488,65,120546,65,120604,65,120662,65,120720,65,5034,65,5573,65,42222,65,94016,65,66208,65,119835,98,119887,98,119939,98,119991,98,120043,98,120095,98,120147,98,120199,98,120251,98,120303,98,120355,98,120407,98,120459,98,388,98,5071,98,5234,98,5551,98,65314,66,8492,66,117975,66,119809,66,119861,66,119913,66,120017,66,120069,66,120121,66,120173,66,120225,66,120277,66,120329,66,120381,66,120433,66,42932,66,914,66,120489,66,120547,66,120605,66,120663,66,120721,66,5108,66,5623,66,42192,66,66178,66,66209,66,66305,66,65347,99,8573,99,119836,99,119888,99,119940,99,119992,99,120044,99,120096,99,120148,99,120200,99,120252,99,120304,99,120356,99,120408,99,120460,99,7428,99,1010,99,11429,99,43951,99,66621,99,128844,67,71913,67,71922,67,65315,67,8557,67,8450,67,8493,67,117976,67,119810,67,119862,67,119914,67,119966,67,120018,67,120174,67,120226,67,120278,67,120330,67,120382,67,120434,67,1017,67,11428,67,5087,67,42202,67,66210,67,66306,67,66581,67,66844,67,8574,100,8518,100,119837,100,119889,100,119941,100,119993,100,120045,100,120097,100,120149,100,120201,100,120253,100,120305,100,120357,100,120409,100,120461,100,1281,100,5095,100,5231,100,42194,100,8558,68,8517,68,117977,68,119811,68,119863,68,119915,68,119967,68,120019,68,120071,68,120123,68,120175,68,120227,68,120279,68,120331,68,120383,68,120435,68,5024,68,5598,68,5610,68,42195,68,8494,101,65349,101,8495,101,8519,101,119838,101,119890,101,119942,101,120046,101,120098,101,120150,101,120202,101,120254,101,120306,101,120358,101,120410,101,120462,101,43826,101,1213,101,8959,69,65317,69,8496,69,117978,69,119812,69,119864,69,119916,69,120020,69,120072,69,120124,69,120176,69,120228,69,120280,69,120332,69,120384,69,120436,69,917,69,120492,69,120550,69,120608,69,120666,69,120724,69,11577,69,5036,69,42224,69,71846,69,71854,69,66182,69,119839,102,119891,102,119943,102,119995,102,120047,102,120099,102,120151,102,120203,102,120255,102,120307,102,120359,102,120411,102,120463,102,43829,102,42905,102,383,102,7837,102,1412,102,119315,70,8497,70,117979,70,119813,70,119865,70,119917,70,120021,70,120073,70,120125,70,120177,70,120229,70,120281,70,120333,70,120385,70,120437,70,42904,70,988,70,120778,70,5556,70,42205,70,71874,70,71842,70,66183,70,66213,70,66853,70,65351,103,8458,103,119840,103,119892,103,119944,103,120048,103,120100,103,120152,103,120204,103,120256,103,120308,103,120360,103,120412,103,120464,103,609,103,7555,103,397,103,1409,103,117980,71,119814,71,119866,71,119918,71,119970,71,120022,71,120074,71,120126,71,120178,71,120230,71,120282,71,120334,71,120386,71,120438,71,1292,71,5056,71,5107,71,42198,71,65352,104,8462,104,119841,104,119945,104,119997,104,120049,104,120101,104,120153,104,120205,104,120257,104,120309,104,120361,104,120413,104,120465,104,1211,104,1392,104,5058,104,65320,72,8459,72,8460,72,8461,72,117981,72,119815,72,119867,72,119919,72,120023,72,120179,72,120231,72,120283,72,120335,72,120387,72,120439,72,919,72,120494,72,120552,72,120610,72,120668,72,120726,72,11406,72,5051,72,5500,72,42215,72,66255,72,731,105,9075,105,65353,105,8560,105,8505,105,8520,105,119842,105,119894,105,119946,105,119998,105,120050,105,120102,105,120154,105,120206,105,120258,105,120310,105,120362,105,120414,105,120466,105,120484,105,618,105,617,105,953,105,8126,105,890,105,120522,105,120580,105,120638,105,120696,105,120754,105,1110,105,42567,105,1231,105,43893,105,5029,105,71875,105,65354,106,8521,106,119843,106,119895,106,119947,106,119999,106,120051,106,120103,106,120155,106,120207,106,120259,106,120311,106,120363,106,120415,106,120467,106,1011,106,1112,106,65322,74,117983,74,119817,74,119869,74,119921,74,119973,74,120025,74,120077,74,120129,74,120181,74,120233,74,120285,74,120337,74,120389,74,120441,74,42930,74,895,74,1032,74,5035,74,5261,74,42201,74,119844,107,119896,107,119948,107,120000,107,120052,107,120104,107,120156,107,120208,107,120260,107,120312,107,120364,107,120416,107,120468,107,8490,75,65323,75,117984,75,119818,75,119870,75,119922,75,119974,75,120026,75,120078,75,120130,75,120182,75,120234,75,120286,75,120338,75,120390,75,120442,75,922,75,120497,75,120555,75,120613,75,120671,75,120729,75,11412,75,5094,75,5845,75,42199,75,66840,75,1472,108,8739,73,9213,73,65512,73,1633,108,1777,73,66336,108,125127,108,118001,108,120783,73,120793,73,120803,73,120813,73,120823,73,130033,73,65321,73,8544,73,8464,73,8465,73,117982,108,119816,73,119868,73,119920,73,120024,73,120128,73,120180,73,120232,73,120284,73,120336,73,120388,73,120440,73,65356,108,8572,73,8467,108,119845,108,119897,108,119949,108,120001,108,120053,108,120105,73,120157,73,120209,73,120261,73,120313,73,120365,73,120417,73,120469,73,448,73,120496,73,120554,73,120612,73,120670,73,120728,73,11410,73,1030,73,1216,73,1493,108,1503,108,1575,108,126464,108,126592,108,65166,108,65165,108,1994,108,11599,73,5825,73,42226,73,93992,73,66186,124,66313,124,119338,76,8556,76,8466,76,117985,76,119819,76,119871,76,119923,76,120027,76,120079,76,120131,76,120183,76,120235,76,120287,76,120339,76,120391,76,120443,76,11472,76,5086,76,5290,76,42209,76,93974,76,71843,76,71858,76,66587,76,66854,76,65325,77,8559,77,8499,77,117986,77,119820,77,119872,77,119924,77,120028,77,120080,77,120132,77,120184,77,120236,77,120288,77,120340,77,120392,77,120444,77,924,77,120499,77,120557,77,120615,77,120673,77,120731,77,1018,77,11416,77,5047,77,5616,77,5846,77,42207,77,66224,77,66321,77,119847,110,119899,110,119951,110,120003,110,120055,110,120107,110,120159,110,120211,110,120263,110,120315,110,120367,110,120419,110,120471,110,1400,110,1404,110,65326,78,8469,78,117987,78,119821,78,119873,78,119925,78,119977,78,120029,78,120081,78,120185,78,120237,78,120289,78,120341,78,120393,78,120445,78,925,78,120500,78,120558,78,120616,78,120674,78,120732,78,11418,78,42208,78,66835,78,3074,111,3202,111,3330,111,3458,111,2406,111,2662,111,2790,111,3046,111,3174,111,3302,111,3430,111,3664,111,3792,111,4160,111,1637,111,1781,111,65359,111,8500,111,119848,111,119900,111,119952,111,120056,111,120108,111,120160,111,120212,111,120264,111,120316,111,120368,111,120420,111,120472,111,7439,111,7441,111,43837,111,959,111,120528,111,120586,111,120644,111,120702,111,120760,111,963,111,120532,111,120590,111,120648,111,120706,111,120764,111,11423,111,4351,111,1413,111,1505,111,1607,111,126500,111,126564,111,126596,111,65259,111,65260,111,65258,111,65257,111,1726,111,64428,111,64429,111,64427,111,64426,111,1729,111,64424,111,64425,111,64423,111,64422,111,1749,111,3360,111,4125,111,66794,111,71880,111,71895,111,66604,111,1984,79,2534,79,2918,79,12295,79,70864,79,71904,79,118000,79,120782,79,120792,79,120802,79,120812,79,120822,79,130032,79,65327,79,117988,79,119822,79,119874,79,119926,79,119978,79,120030,79,120082,79,120134,79,120186,79,120238,79,120290,79,120342,79,120394,79,120446,79,927,79,120502,79,120560,79,120618,79,120676,79,120734,79,11422,79,1365,79,11604,79,4816,79,2848,79,66754,79,42227,79,71861,79,66194,79,66219,79,66564,79,66838,79,9076,112,65360,112,119849,112,119901,112,119953,112,120005,112,120057,112,120109,112,120161,112,120213,112,120265,112,120317,112,120369,112,120421,112,120473,112,961,112,120530,112,120544,112,120588,112,120602,112,120646,112,120660,112,120704,112,120718,112,120762,112,120776,112,11427,112,65328,80,8473,80,117989,80,119823,80,119875,80,119927,80,119979,80,120031,80,120083,80,120187,80,120239,80,120291,80,120343,80,120395,80,120447,80,929,80,120504,80,120562,80,120620,80,120678,80,120736,80,11426,80,5090,80,5229,80,42193,80,66197,80,119850,113,119902,113,119954,113,120006,113,120058,113,120110,113,120162,113,120214,113,120266,113,120318,113,120370,113,120422,113,120474,113,1307,113,1379,113,1382,113,8474,81,117990,81,119824,81,119876,81,119928,81,119980,81,120032,81,120084,81,120188,81,120240,81,120292,81,120344,81,120396,81,120448,81,11605,81,119851,114,119903,114,119955,114,120007,114,120059,114,120111,114,120163,114,120215,114,120267,114,120319,114,120371,114,120423,114,120475,114,43847,114,43848,114,7462,114,11397,114,43905,114,119318,82,8475,82,8476,82,8477,82,117991,82,119825,82,119877,82,119929,82,120033,82,120189,82,120241,82,120293,82,120345,82,120397,82,120449,82,422,82,5025,82,5074,82,66740,82,5511,82,42211,82,94005,82,65363,115,119852,115,119904,115,119956,115,120008,115,120060,115,120112,115,120164,115,120216,115,120268,115,120320,115,120372,115,120424,115,120476,115,42801,115,445,115,1109,115,43946,115,71873,115,66632,115,65331,83,117992,83,119826,83,119878,83,119930,83,119982,83,120034,83,120086,83,120138,83,120190,83,120242,83,120294,83,120346,83,120398,83,120450,83,1029,83,1359,83,5077,83,5082,83,42210,83,94010,83,66198,83,66592,83,119853,116,119905,116,119957,116,120009,116,120061,116,120113,116,120165,116,120217,116,120269,116,120321,116,120373,116,120425,116,120477,116,8868,84,10201,84,128872,84,65332,84,117993,84,119827,84,119879,84,119931,84,119983,84,120035,84,120087,84,120139,84,120191,84,120243,84,120295,84,120347,84,120399,84,120451,84,932,84,120507,84,120565,84,120623,84,120681,84,120739,84,11430,84,5026,84,42196,84,93962,84,71868,84,66199,84,66225,84,66325,84,119854,117,119906,117,119958,117,120010,117,120062,117,120114,117,120166,117,120218,117,120270,117,120322,117,120374,117,120426,117,120478,117,42911,117,7452,117,43854,117,43858,117,651,117,965,117,120534,117,120592,117,120650,117,120708,117,120766,117,1405,117,66806,117,71896,117,8746,85,8899,85,117994,85,119828,85,119880,85,119932,85,119984,85,120036,85,120088,85,120140,85,120192,85,120244,85,120296,85,120348,85,120400,85,120452,85,1357,85,4608,85,66766,85,5196,85,42228,85,94018,85,71864,85,8744,118,8897,118,65366,118,8564,118,119855,118,119907,118,119959,118,120011,118,120063,118,120115,118,120167,118,120219,118,120271,118,120323,118,120375,118,120427,118,120479,118,7456,118,957,118,120526,118,120584,118,120642,118,120700,118,120758,118,1141,118,1496,118,71430,118,43945,118,71872,118,119309,86,1639,86,1783,86,8548,86,117995,86,119829,86,119881,86,119933,86,119985,86,120037,86,120089,86,120141,86,120193,86,120245,86,120297,86,120349,86,120401,86,120453,86,1140,86,11576,86,5081,86,5167,86,42719,86,42214,86,93960,86,71840,86,66845,86,623,119,119856,119,119908,119,119960,119,120012,119,120064,119,120116,119,120168,119,120220,119,120272,119,120324,119,120376,119,120428,119,120480,119,7457,119,1121,119,1309,119,1377,119,71434,119,71438,119,71439,119,43907,119,71910,87,71919,87,117996,87,119830,87,119882,87,119934,87,119986,87,120038,87,120090,87,120142,87,120194,87,120246,87,120298,87,120350,87,120402,87,120454,87,1308,87,5043,87,5076,87,42218,87,5742,120,10539,120,10540,120,10799,120,65368,120,8569,120,119857,120,119909,120,119961,120,120013,120,120065,120,120117,120,120169,120,120221,120,120273,120,120325,120,120377,120,120429,120,120481,120,5441,120,5501,120,5741,88,9587,88,66338,88,71916,88,65336,88,8553,88,117997,88,119831,88,119883,88,119935,88,119987,88,120039,88,120091,88,120143,88,120195,88,120247,88,120299,88,120351,88,120403,88,120455,88,42931,88,935,88,120510,88,120568,88,120626,88,120684,88,120742,88,11436,88,11613,88,5815,88,42219,88,66192,88,66228,88,66327,88,66855,88,611,121,7564,121,65369,121,119858,121,119910,121,119962,121,120014,121,120066,121,120118,121,120170,121,120222,121,120274,121,120326,121,120378,121,120430,121,120482,121,655,121,7935,121,43866,121,947,121,8509,121,120516,121,120574,121,120632,121,120690,121,120748,121,1199,121,4327,121,71900,121,65337,89,117998,89,119832,89,119884,89,119936,89,119988,89,120040,89,120092,89,120144,89,120196,89,120248,89,120300,89,120352,89,120404,89,120456,89,933,89,978,89,120508,89,120566,89,120624,89,120682,89,120740,89,11432,89,1198,89,5033,89,5053,89,42220,89,94019,89,71844,89,66226,89,119859,122,119911,122,119963,122,120015,122,120067,122,120119,122,120171,122,120223,122,120275,122,120327,122,120379,122,120431,122,120483,122,7458,122,43923,122,71876,122,71909,90,66293,90,65338,90,8484,90,8488,90,117999,90,119833,90,119885,90,119937,90,119989,90,120041,90,120197,90,120249,90,120301,90,120353,90,120405,90,120457,90,918,90,120493,90,120551,90,120609,90,120667,90,120725,90,5059,90,42204,90,71849,90,65282,34,65283,35,65284,36,65285,37,65286,38,65290,42,65291,43,65294,46,65295,47,65296,48,65298,50,65299,51,65300,52,65301,53,65302,54,65303,55,65304,56,65305,57,65308,60,65309,61,65310,62,65312,64,65316,68,65318,70,65319,71,65324,76,65329,81,65330,82,65333,85,65334,86,65335,87,65343,95,65346,98,65348,100,65350,102,65355,107,65357,109,65358,110,65361,113,65362,114,65364,116,65365,117,65367,119,65370,122,65371,123,65373,125,119846,109],"_default":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8217,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"cs":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"de":[65374,126,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"es":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"fr":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"it":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ja":[8211,45,8218,44,65281,33,8216,96,8245,96,180,96,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65292,44,65297,49,65307,59],"ko":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pl":[65374,126,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pt-BR":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"qps-ploc":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ru":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,305,105,921,73,1009,112,215,120,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"tr":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"zh-hans":[160,32,65374,126,8218,44,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65297,49],"zh-hant":[8211,45,65374,126,8218,44,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89]}'))
+            this.ambiguousCharacterData = new Zr(() => JSON.parse('{"_common":[8232,32,8233,32,5760,32,8192,32,8193,32,8194,32,8195,32,8196,32,8197,32,8198,32,8200,32,8201,32,8202,32,8287,32,8199,32,8239,32,2042,95,65101,95,65102,95,65103,95,8208,45,8209,45,8210,45,65112,45,1748,45,8259,45,727,45,8722,45,10134,45,11450,45,1549,44,1643,44,184,44,42233,44,894,59,2307,58,2691,58,1417,58,1795,58,1796,58,5868,58,65072,58,6147,58,6153,58,8282,58,1475,58,760,58,42889,58,8758,58,720,58,42237,58,451,33,11601,33,660,63,577,63,2429,63,5038,63,42731,63,119149,46,8228,46,1793,46,1794,46,42510,46,68176,46,1632,46,1776,46,42232,46,1373,96,65287,96,8219,96,1523,96,8242,96,1370,96,8175,96,65344,96,900,96,8189,96,8125,96,8127,96,8190,96,697,96,884,96,712,96,714,96,715,96,756,96,699,96,701,96,700,96,702,96,42892,96,1497,96,2036,96,2037,96,5194,96,5836,96,94033,96,94034,96,65339,91,10088,40,10098,40,12308,40,64830,40,65341,93,10089,41,10099,41,12309,41,64831,41,10100,123,119060,123,10101,125,65342,94,8270,42,1645,42,8727,42,66335,42,5941,47,8257,47,8725,47,8260,47,9585,47,10187,47,10744,47,119354,47,12755,47,12339,47,11462,47,20031,47,12035,47,65340,92,65128,92,8726,92,10189,92,10741,92,10745,92,119311,92,119355,92,12756,92,20022,92,12034,92,42872,38,708,94,710,94,5869,43,10133,43,66203,43,8249,60,10094,60,706,60,119350,60,5176,60,5810,60,5120,61,11840,61,12448,61,42239,61,8250,62,10095,62,707,62,119351,62,5171,62,94015,62,8275,126,732,126,8128,126,8764,126,65372,124,65293,45,118002,50,120784,50,120794,50,120804,50,120814,50,120824,50,130034,50,42842,50,423,50,1000,50,42564,50,5311,50,42735,50,119302,51,118003,51,120785,51,120795,51,120805,51,120815,51,120825,51,130035,51,42923,51,540,51,439,51,42858,51,11468,51,1248,51,94011,51,71882,51,118004,52,120786,52,120796,52,120806,52,120816,52,120826,52,130036,52,5070,52,71855,52,118005,53,120787,53,120797,53,120807,53,120817,53,120827,53,130037,53,444,53,71867,53,118006,54,120788,54,120798,54,120808,54,120818,54,120828,54,130038,54,11474,54,5102,54,71893,54,119314,55,118007,55,120789,55,120799,55,120809,55,120819,55,120829,55,130039,55,66770,55,71878,55,2819,56,2538,56,2666,56,125131,56,118008,56,120790,56,120800,56,120810,56,120820,56,120830,56,130040,56,547,56,546,56,66330,56,2663,57,2920,57,2541,57,3437,57,118009,57,120791,57,120801,57,120811,57,120821,57,120831,57,130041,57,42862,57,11466,57,71884,57,71852,57,71894,57,9082,97,65345,97,119834,97,119886,97,119938,97,119990,97,120042,97,120094,97,120146,97,120198,97,120250,97,120302,97,120354,97,120406,97,120458,97,593,97,945,97,120514,97,120572,97,120630,97,120688,97,120746,97,65313,65,117974,65,119808,65,119860,65,119912,65,119964,65,120016,65,120068,65,120120,65,120172,65,120224,65,120276,65,120328,65,120380,65,120432,65,913,65,120488,65,120546,65,120604,65,120662,65,120720,65,5034,65,5573,65,42222,65,94016,65,66208,65,119835,98,119887,98,119939,98,119991,98,120043,98,120095,98,120147,98,120199,98,120251,98,120303,98,120355,98,120407,98,120459,98,388,98,5071,98,5234,98,5551,98,65314,66,8492,66,117975,66,119809,66,119861,66,119913,66,120017,66,120069,66,120121,66,120173,66,120225,66,120277,66,120329,66,120381,66,120433,66,42932,66,914,66,120489,66,120547,66,120605,66,120663,66,120721,66,5108,66,5623,66,42192,66,66178,66,66209,66,66305,66,65347,99,8573,99,119836,99,119888,99,119940,99,119992,99,120044,99,120096,99,120148,99,120200,99,120252,99,120304,99,120356,99,120408,99,120460,99,7428,99,1010,99,11429,99,43951,99,66621,99,128844,67,71913,67,71922,67,65315,67,8557,67,8450,67,8493,67,117976,67,119810,67,119862,67,119914,67,119966,67,120018,67,120174,67,120226,67,120278,67,120330,67,120382,67,120434,67,1017,67,11428,67,5087,67,42202,67,66210,67,66306,67,66581,67,66844,67,8574,100,8518,100,119837,100,119889,100,119941,100,119993,100,120045,100,120097,100,120149,100,120201,100,120253,100,120305,100,120357,100,120409,100,120461,100,1281,100,5095,100,5231,100,42194,100,8558,68,8517,68,117977,68,119811,68,119863,68,119915,68,119967,68,120019,68,120071,68,120123,68,120175,68,120227,68,120279,68,120331,68,120383,68,120435,68,5024,68,5598,68,5610,68,42195,68,8494,101,65349,101,8495,101,8519,101,119838,101,119890,101,119942,101,120046,101,120098,101,120150,101,120202,101,120254,101,120306,101,120358,101,120410,101,120462,101,43826,101,1213,101,8959,69,65317,69,8496,69,117978,69,119812,69,119864,69,119916,69,120020,69,120072,69,120124,69,120176,69,120228,69,120280,69,120332,69,120384,69,120436,69,917,69,120492,69,120550,69,120608,69,120666,69,120724,69,11577,69,5036,69,42224,69,71846,69,71854,69,66182,69,119839,102,119891,102,119943,102,119995,102,120047,102,120099,102,120151,102,120203,102,120255,102,120307,102,120359,102,120411,102,120463,102,43829,102,42905,102,383,102,7837,102,1412,102,119315,70,8497,70,117979,70,119813,70,119865,70,119917,70,120021,70,120073,70,120125,70,120177,70,120229,70,120281,70,120333,70,120385,70,120437,70,42904,70,988,70,120778,70,5556,70,42205,70,71874,70,71842,70,66183,70,66213,70,66853,70,65351,103,8458,103,119840,103,119892,103,119944,103,120048,103,120100,103,120152,103,120204,103,120256,103,120308,103,120360,103,120412,103,120464,103,609,103,7555,103,397,103,1409,103,117980,71,119814,71,119866,71,119918,71,119970,71,120022,71,120074,71,120126,71,120178,71,120230,71,120282,71,120334,71,120386,71,120438,71,1292,71,5056,71,5107,71,42198,71,65352,104,8462,104,119841,104,119945,104,119997,104,120049,104,120101,104,120153,104,120205,104,120257,104,120309,104,120361,104,120413,104,120465,104,1211,104,1392,104,5058,104,65320,72,8459,72,8460,72,8461,72,117981,72,119815,72,119867,72,119919,72,120023,72,120179,72,120231,72,120283,72,120335,72,120387,72,120439,72,919,72,120494,72,120552,72,120610,72,120668,72,120726,72,11406,72,5051,72,5500,72,42215,72,66255,72,731,105,9075,105,65353,105,8560,105,8505,105,8520,105,119842,105,119894,105,119946,105,119998,105,120050,105,120102,105,120154,105,120206,105,120258,105,120310,105,120362,105,120414,105,120466,105,120484,105,618,105,617,105,953,105,8126,105,890,105,120522,105,120580,105,120638,105,120696,105,120754,105,1110,105,42567,105,1231,105,43893,105,5029,105,71875,105,65354,106,8521,106,119843,106,119895,106,119947,106,119999,106,120051,106,120103,106,120155,106,120207,106,120259,106,120311,106,120363,106,120415,106,120467,106,1011,106,1112,106,65322,74,117983,74,119817,74,119869,74,119921,74,119973,74,120025,74,120077,74,120129,74,120181,74,120233,74,120285,74,120337,74,120389,74,120441,74,42930,74,895,74,1032,74,5035,74,5261,74,42201,74,119844,107,119896,107,119948,107,120000,107,120052,107,120104,107,120156,107,120208,107,120260,107,120312,107,120364,107,120416,107,120468,107,8490,75,65323,75,117984,75,119818,75,119870,75,119922,75,119974,75,120026,75,120078,75,120130,75,120182,75,120234,75,120286,75,120338,75,120390,75,120442,75,922,75,120497,75,120555,75,120613,75,120671,75,120729,75,11412,75,5094,75,5845,75,42199,75,66840,75,1472,108,8739,73,9213,73,65512,73,1633,108,1777,73,66336,108,125127,108,118001,108,120783,73,120793,73,120803,73,120813,73,120823,73,130033,73,65321,73,8544,73,8464,73,8465,73,117982,108,119816,73,119868,73,119920,73,120024,73,120128,73,120180,73,120232,73,120284,73,120336,73,120388,73,120440,73,65356,108,8572,73,8467,108,119845,108,119897,108,119949,108,120001,108,120053,108,120105,73,120157,73,120209,73,120261,73,120313,73,120365,73,120417,73,120469,73,448,73,120496,73,120554,73,120612,73,120670,73,120728,73,11410,73,1030,73,1216,73,1493,108,1503,108,1575,108,126464,108,126592,108,65166,108,65165,108,1994,108,11599,73,5825,73,42226,73,93992,73,66186,124,66313,124,119338,76,8556,76,8466,76,117985,76,119819,76,119871,76,119923,76,120027,76,120079,76,120131,76,120183,76,120235,76,120287,76,120339,76,120391,76,120443,76,11472,76,5086,76,5290,76,42209,76,93974,76,71843,76,71858,76,66587,76,66854,76,65325,77,8559,77,8499,77,117986,77,119820,77,119872,77,119924,77,120028,77,120080,77,120132,77,120184,77,120236,77,120288,77,120340,77,120392,77,120444,77,924,77,120499,77,120557,77,120615,77,120673,77,120731,77,1018,77,11416,77,5047,77,5616,77,5846,77,42207,77,66224,77,66321,77,119847,110,119899,110,119951,110,120003,110,120055,110,120107,110,120159,110,120211,110,120263,110,120315,110,120367,110,120419,110,120471,110,1400,110,1404,110,65326,78,8469,78,117987,78,119821,78,119873,78,119925,78,119977,78,120029,78,120081,78,120185,78,120237,78,120289,78,120341,78,120393,78,120445,78,925,78,120500,78,120558,78,120616,78,120674,78,120732,78,11418,78,42208,78,66835,78,3074,111,3202,111,3330,111,3458,111,2406,111,2662,111,2790,111,3046,111,3174,111,3302,111,3430,111,3664,111,3792,111,4160,111,1637,111,1781,111,65359,111,8500,111,119848,111,119900,111,119952,111,120056,111,120108,111,120160,111,120212,111,120264,111,120316,111,120368,111,120420,111,120472,111,7439,111,7441,111,43837,111,959,111,120528,111,120586,111,120644,111,120702,111,120760,111,963,111,120532,111,120590,111,120648,111,120706,111,120764,111,11423,111,4351,111,1413,111,1505,111,1607,111,126500,111,126564,111,126596,111,65259,111,65260,111,65258,111,65257,111,1726,111,64428,111,64429,111,64427,111,64426,111,1729,111,64424,111,64425,111,64423,111,64422,111,1749,111,3360,111,4125,111,66794,111,71880,111,71895,111,66604,111,1984,79,2534,79,2918,79,12295,79,70864,79,71904,79,118000,79,120782,79,120792,79,120802,79,120812,79,120822,79,130032,79,65327,79,117988,79,119822,79,119874,79,119926,79,119978,79,120030,79,120082,79,120134,79,120186,79,120238,79,120290,79,120342,79,120394,79,120446,79,927,79,120502,79,120560,79,120618,79,120676,79,120734,79,11422,79,1365,79,11604,79,4816,79,2848,79,66754,79,42227,79,71861,79,66194,79,66219,79,66564,79,66838,79,9076,112,65360,112,119849,112,119901,112,119953,112,120005,112,120057,112,120109,112,120161,112,120213,112,120265,112,120317,112,120369,112,120421,112,120473,112,961,112,120530,112,120544,112,120588,112,120602,112,120646,112,120660,112,120704,112,120718,112,120762,112,120776,112,11427,112,65328,80,8473,80,117989,80,119823,80,119875,80,119927,80,119979,80,120031,80,120083,80,120187,80,120239,80,120291,80,120343,80,120395,80,120447,80,929,80,120504,80,120562,80,120620,80,120678,80,120736,80,11426,80,5090,80,5229,80,42193,80,66197,80,119850,113,119902,113,119954,113,120006,113,120058,113,120110,113,120162,113,120214,113,120266,113,120318,113,120370,113,120422,113,120474,113,1307,113,1379,113,1382,113,8474,81,117990,81,119824,81,119876,81,119928,81,119980,81,120032,81,120084,81,120188,81,120240,81,120292,81,120344,81,120396,81,120448,81,11605,81,119851,114,119903,114,119955,114,120007,114,120059,114,120111,114,120163,114,120215,114,120267,114,120319,114,120371,114,120423,114,120475,114,43847,114,43848,114,7462,114,11397,114,43905,114,119318,82,8475,82,8476,82,8477,82,117991,82,119825,82,119877,82,119929,82,120033,82,120189,82,120241,82,120293,82,120345,82,120397,82,120449,82,422,82,5025,82,5074,82,66740,82,5511,82,42211,82,94005,82,65363,115,119852,115,119904,115,119956,115,120008,115,120060,115,120112,115,120164,115,120216,115,120268,115,120320,115,120372,115,120424,115,120476,115,42801,115,445,115,1109,115,43946,115,71873,115,66632,115,65331,83,117992,83,119826,83,119878,83,119930,83,119982,83,120034,83,120086,83,120138,83,120190,83,120242,83,120294,83,120346,83,120398,83,120450,83,1029,83,1359,83,5077,83,5082,83,42210,83,94010,83,66198,83,66592,83,119853,116,119905,116,119957,116,120009,116,120061,116,120113,116,120165,116,120217,116,120269,116,120321,116,120373,116,120425,116,120477,116,8868,84,10201,84,128872,84,65332,84,117993,84,119827,84,119879,84,119931,84,119983,84,120035,84,120087,84,120139,84,120191,84,120243,84,120295,84,120347,84,120399,84,120451,84,932,84,120507,84,120565,84,120623,84,120681,84,120739,84,11430,84,5026,84,42196,84,93962,84,71868,84,66199,84,66225,84,66325,84,119854,117,119906,117,119958,117,120010,117,120062,117,120114,117,120166,117,120218,117,120270,117,120322,117,120374,117,120426,117,120478,117,42911,117,7452,117,43854,117,43858,117,651,117,965,117,120534,117,120592,117,120650,117,120708,117,120766,117,1405,117,66806,117,71896,117,8746,85,8899,85,117994,85,119828,85,119880,85,119932,85,119984,85,120036,85,120088,85,120140,85,120192,85,120244,85,120296,85,120348,85,120400,85,120452,85,1357,85,4608,85,66766,85,5196,85,42228,85,94018,85,71864,85,8744,118,8897,118,65366,118,8564,118,119855,118,119907,118,119959,118,120011,118,120063,118,120115,118,120167,118,120219,118,120271,118,120323,118,120375,118,120427,118,120479,118,7456,118,957,118,120526,118,120584,118,120642,118,120700,118,120758,118,1141,118,1496,118,71430,118,43945,118,71872,118,119309,86,1639,86,1783,86,8548,86,117995,86,119829,86,119881,86,119933,86,119985,86,120037,86,120089,86,120141,86,120193,86,120245,86,120297,86,120349,86,120401,86,120453,86,1140,86,11576,86,5081,86,5167,86,42719,86,42214,86,93960,86,71840,86,66845,86,623,119,119856,119,119908,119,119960,119,120012,119,120064,119,120116,119,120168,119,120220,119,120272,119,120324,119,120376,119,120428,119,120480,119,7457,119,1121,119,1309,119,1377,119,71434,119,71438,119,71439,119,43907,119,71910,87,71919,87,117996,87,119830,87,119882,87,119934,87,119986,87,120038,87,120090,87,120142,87,120194,87,120246,87,120298,87,120350,87,120402,87,120454,87,1308,87,5043,87,5076,87,42218,87,5742,120,10539,120,10540,120,10799,120,65368,120,8569,120,119857,120,119909,120,119961,120,120013,120,120065,120,120117,120,120169,120,120221,120,120273,120,120325,120,120377,120,120429,120,120481,120,5441,120,5501,120,5741,88,9587,88,66338,88,71916,88,65336,88,8553,88,117997,88,119831,88,119883,88,119935,88,119987,88,120039,88,120091,88,120143,88,120195,88,120247,88,120299,88,120351,88,120403,88,120455,88,42931,88,935,88,120510,88,120568,88,120626,88,120684,88,120742,88,11436,88,11613,88,5815,88,42219,88,66192,88,66228,88,66327,88,66855,88,611,121,7564,121,65369,121,119858,121,119910,121,119962,121,120014,121,120066,121,120118,121,120170,121,120222,121,120274,121,120326,121,120378,121,120430,121,120482,121,655,121,7935,121,43866,121,947,121,8509,121,120516,121,120574,121,120632,121,120690,121,120748,121,1199,121,4327,121,71900,121,65337,89,117998,89,119832,89,119884,89,119936,89,119988,89,120040,89,120092,89,120144,89,120196,89,120248,89,120300,89,120352,89,120404,89,120456,89,933,89,978,89,120508,89,120566,89,120624,89,120682,89,120740,89,11432,89,1198,89,5033,89,5053,89,42220,89,94019,89,71844,89,66226,89,119859,122,119911,122,119963,122,120015,122,120067,122,120119,122,120171,122,120223,122,120275,122,120327,122,120379,122,120431,122,120483,122,7458,122,43923,122,71876,122,71909,90,66293,90,65338,90,8484,90,8488,90,117999,90,119833,90,119885,90,119937,90,119989,90,120041,90,120197,90,120249,90,120301,90,120353,90,120405,90,120457,90,918,90,120493,90,120551,90,120609,90,120667,90,120725,90,5059,90,42204,90,71849,90,65282,34,65283,35,65284,36,65285,37,65286,38,65290,42,65291,43,65294,46,65295,47,65296,48,65298,50,65299,51,65300,52,65301,53,65302,54,65303,55,65304,56,65305,57,65308,60,65309,61,65310,62,65312,64,65316,68,65318,70,65319,71,65324,76,65329,81,65330,82,65333,85,65334,86,65335,87,65343,95,65346,98,65348,100,65350,102,65355,107,65357,109,65358,110,65361,113,65362,114,65364,116,65365,117,65367,119,65370,122,65371,123,65373,125,119846,109],"_default":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8217,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"cs":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"de":[65374,126,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"es":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"fr":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"it":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ja":[8211,45,8218,44,65281,33,8216,96,8245,96,180,96,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65292,44,65297,49,65307,59],"ko":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pl":[65374,126,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pt-BR":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"qps-ploc":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ru":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,305,105,921,73,1009,112,215,120,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"tr":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"zh-hans":[160,32,65374,126,8218,44,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65297,49],"zh-hant":[8211,45,65374,126,8218,44,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89]}'))
         }
         static {
             this.cache = new ra({
@@ -3392,7 +3392,7 @@ var Jl = class Bt {
             return Bt.cache.get(Array.from(t))
         }
         static {
-            this._locales = new Yr(() => Object.keys(Bt.ambiguousCharacterData.value).filter(t => !t.startsWith("_")))
+            this._locales = new Zr(() => Object.keys(Bt.ambiguousCharacterData.value).filter(t => !t.startsWith("_")))
         }
         static getLocales() {
             return Bt._locales.value
@@ -3417,7 +3417,7 @@ var Jl = class Bt {
             return new Set(this.confusableDictionary.keys())
         }
     },
-    ec = class $t {
+    oc = class $t {
         static getRawData() {
             return JSON.parse('{"_common":[11,12,13,127,847,1564,4447,4448,6068,6069,6155,6156,6157,6158,7355,7356,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8204,8205,8206,8207,8234,8235,8236,8237,8238,8239,8287,8288,8289,8290,8291,8292,8293,8294,8295,8296,8297,8298,8299,8300,8301,8302,8303,10240,12644,65024,65025,65026,65027,65028,65029,65030,65031,65032,65033,65034,65035,65036,65037,65038,65039,65279,65440,65520,65521,65522,65523,65524,65525,65526,65527,65528,65532,78844,119155,119156,119157,119158,119159,119160,119161,119162,917504,917505,917506,917507,917508,917509,917510,917511,917512,917513,917514,917515,917516,917517,917518,917519,917520,917521,917522,917523,917524,917525,917526,917527,917528,917529,917530,917531,917532,917533,917534,917535,917536,917537,917538,917539,917540,917541,917542,917543,917544,917545,917546,917547,917548,917549,917550,917551,917552,917553,917554,917555,917556,917557,917558,917559,917560,917561,917562,917563,917564,917565,917566,917567,917568,917569,917570,917571,917572,917573,917574,917575,917576,917577,917578,917579,917580,917581,917582,917583,917584,917585,917586,917587,917588,917589,917590,917591,917592,917593,917594,917595,917596,917597,917598,917599,917600,917601,917602,917603,917604,917605,917606,917607,917608,917609,917610,917611,917612,917613,917614,917615,917616,917617,917618,917619,917620,917621,917622,917623,917624,917625,917626,917627,917628,917629,917630,917631,917760,917761,917762,917763,917764,917765,917766,917767,917768,917769,917770,917771,917772,917773,917774,917775,917776,917777,917778,917779,917780,917781,917782,917783,917784,917785,917786,917787,917788,917789,917790,917791,917792,917793,917794,917795,917796,917797,917798,917799,917800,917801,917802,917803,917804,917805,917806,917807,917808,917809,917810,917811,917812,917813,917814,917815,917816,917817,917818,917819,917820,917821,917822,917823,917824,917825,917826,917827,917828,917829,917830,917831,917832,917833,917834,917835,917836,917837,917838,917839,917840,917841,917842,917843,917844,917845,917846,917847,917848,917849,917850,917851,917852,917853,917854,917855,917856,917857,917858,917859,917860,917861,917862,917863,917864,917865,917866,917867,917868,917869,917870,917871,917872,917873,917874,917875,917876,917877,917878,917879,917880,917881,917882,917883,917884,917885,917886,917887,917888,917889,917890,917891,917892,917893,917894,917895,917896,917897,917898,917899,917900,917901,917902,917903,917904,917905,917906,917907,917908,917909,917910,917911,917912,917913,917914,917915,917916,917917,917918,917919,917920,917921,917922,917923,917924,917925,917926,917927,917928,917929,917930,917931,917932,917933,917934,917935,917936,917937,917938,917939,917940,917941,917942,917943,917944,917945,917946,917947,917948,917949,917950,917951,917952,917953,917954,917955,917956,917957,917958,917959,917960,917961,917962,917963,917964,917965,917966,917967,917968,917969,917970,917971,917972,917973,917974,917975,917976,917977,917978,917979,917980,917981,917982,917983,917984,917985,917986,917987,917988,917989,917990,917991,917992,917993,917994,917995,917996,917997,917998,917999],"cs":[173,8203,12288],"de":[173,8203,12288],"es":[8203,12288],"fr":[173,8203,12288],"it":[160,173,12288],"ja":[173],"ko":[173,12288],"pl":[173,8203,12288],"pt-BR":[173,8203,12288],"qps-ploc":[160,173,8203,12288],"ru":[173,12288],"tr":[160,173,8203,12288],"zh-hans":[160,173,8203,12288],"zh-hant":[173,12288]}')
         }
@@ -3446,15 +3446,15 @@ function We(e) {
     return e === 47 || e === 92
 }
 
-function Fi(e) {
+function Pi(e) {
     return e.replace(/[\\/]/g, U.sep)
 }
 
 function fa(e) {
-    return e.indexOf("/") === -1 && (e = Fi(e)), /^[a-zA-Z]:(\/|$)/.test(e) && (e = "/" + e), e
+    return e.indexOf("/") === -1 && (e = Pi(e)), /^[a-zA-Z]:(\/|$)/.test(e) && (e = "/" + e), e
 }
 
-function Ui(e, t = U.sep) {
+function Fi(e, t = U.sep) {
     if (!e) return "";
     const r = e.length,
         i = e.charCodeAt(0);
@@ -3478,7 +3478,7 @@ function Ui(e, t = U.sep) {
     return ""
 }
 
-function Ci(e, t, r, i = ur) {
+function Ui(e, t, r, i = ur) {
     if (e === t) return !0;
     if (!e || !t || t.length > e.length) return !1;
     if (r) {
@@ -3493,7 +3493,7 @@ function Ci(e, t, r, i = ur) {
 function pa(e) {
     return e >= 65 && e <= 90 || e >= 97 && e <= 122
 }
-var tc = new Yr(() => new Uint8Array(256)),
+var ac = new Zr(() => new Uint8Array(256)),
     ma = /^\w[\w\d+.-]*$/,
     ga = /^\//,
     va = /^\/\//;
@@ -3569,7 +3569,7 @@ var C = "",
             })
         }
         toString(t = !1) {
-            return Zr(this, t)
+            return Yr(this, t)
         }
         toJSON() {
             return this
@@ -3579,14 +3579,14 @@ var C = "",
                 if (t instanceof Ar) return t;
                 {
                     const r = new ft(t);
-                    return r._formatted = t.external ?? null, r._fsPath = t._sep === Vi ? t.fsPath ?? null : null, r
+                    return r._formatted = t.external ?? null, r._fsPath = t._sep === Ci ? t.fsPath ?? null : null, r
                 }
             } else return t
         } [Symbol.for("debug.description")]() {
             return `URI(${this.toString()})`
         }
     },
-    Vi = ht ? 1 : void 0,
+    Ci = ht ? 1 : void 0,
     ft = class extends pe {
         constructor() {
             super(...arguments), this._formatted = null, this._fsPath = null
@@ -3595,16 +3595,16 @@ var C = "",
             return this._fsPath || (this._fsPath = dr(this, !1)), this._fsPath
         }
         toString(e = !1) {
-            return e ? Zr(this, !0) : (this._formatted || (this._formatted = Zr(this, !1)), this._formatted)
+            return e ? Yr(this, !0) : (this._formatted || (this._formatted = Yr(this, !1)), this._formatted)
         }
         toJSON() {
             const e = {
                 $mid: 1
             };
-            return this._fsPath && (e.fsPath = this._fsPath, e._sep = Vi), this._formatted && (e.external = this._formatted), this.path && (e.path = this.path), this.scheme && (e.scheme = this.scheme), this.authority && (e.authority = this.authority), this.query && (e.query = this.query), this.fragment && (e.fragment = this.fragment), e
+            return this._fsPath && (e.fsPath = this._fsPath, e._sep = Ci), this._formatted && (e.external = this._formatted), this.path && (e.path = this.path), this.scheme && (e.scheme = this.scheme), this.authority && (e.authority = this.authority), this.query && (e.query = this.query), this.fragment && (e.fragment = this.fragment), e
         }
     },
-    Bi = {
+    Vi = {
         58: "%3A",
         47: "%2F",
         63: "%3F",
@@ -3626,14 +3626,14 @@ var C = "",
         32: "%20"
     };
 
-function $i(e, t, r) {
+function Bi(e, t, r) {
     let i, s = -1;
     for (let o = 0; o < e.length; o++) {
         const a = e.charCodeAt(o);
         if (a >= 97 && a <= 122 || a >= 65 && a <= 90 || a >= 48 && a <= 57 || a === 45 || a === 46 || a === 95 || a === 126 || t && a === 47 || r && a === 91 || r && a === 93 || r && a === 58) s !== -1 && (i += encodeURIComponent(e.substring(s, o)), s = -1), i !== void 0 && (i += e.charAt(o));
         else {
             i === void 0 && (i = e.substr(0, o));
-            const l = Bi[a];
+            const l = Vi[a];
             l !== void 0 ? (s !== -1 && (i += encodeURIComponent(e.substring(s, o)), s = -1), i += l) : s === -1 && (s = o)
         }
     }
@@ -3644,7 +3644,7 @@ function Aa(e) {
     let t;
     for (let r = 0; r < e.length; r++) {
         const i = e.charCodeAt(r);
-        i === 35 || i === 63 ? (t === void 0 && (t = e.substr(0, r)), t += Bi[i]) : t !== void 0 && (t += e[r])
+        i === 35 || i === 63 ? (t === void 0 && (t = e.substr(0, r)), t += Vi[i]) : t !== void 0 && (t += e[r])
     }
     return t !== void 0 ? t : e
 }
@@ -3654,8 +3654,8 @@ function dr(e, t) {
     return e.authority && e.path.length > 1 && e.scheme === "file" ? r = `//${e.authority}${e.path}` : e.path.charCodeAt(0) === 47 && (e.path.charCodeAt(1) >= 65 && e.path.charCodeAt(1) <= 90 || e.path.charCodeAt(1) >= 97 && e.path.charCodeAt(1) <= 122) && e.path.charCodeAt(2) === 58 ? t ? r = e.path.substr(1) : r = e.path[1].toLowerCase() + e.path.substr(2) : r = e.path, ht && (r = r.replace(/\//g, "\\")), r
 }
 
-function Zr(e, t) {
-    const r = t ? Aa : $i;
+function Yr(e, t) {
+    const r = t ? Aa : Bi;
     let i = "",
         {
             scheme: s,
@@ -3682,25 +3682,25 @@ function Zr(e, t) {
         }
         i += r(a, !0, !1)
     }
-    return l && (i += "?", i += r(l, !1, !1)), u && (i += "#", i += t ? u : $i(u, !1, !1)), i
+    return l && (i += "?", i += r(l, !1, !1)), u && (i += "#", i += t ? u : Bi(u, !1, !1)), i
 }
 
-function Wi(e) {
+function $i(e) {
     try {
         return decodeURIComponent(e)
     } catch {
-        return e.length > 3 ? e.substr(0, 3) + Wi(e.substr(3)) : e
+        return e.length > 3 ? e.substr(0, 3) + $i(e.substr(3)) : e
     }
 }
-var Hi = /(%[0-9A-Za-z][0-9A-Za-z])+/g;
+var Wi = /(%[0-9A-Za-z][0-9A-Za-z])+/g;
 
 function hr(e) {
-    return e.match(Hi) ? e.replace(Hi, t => Wi(t)) : e
+    return e.match(Wi) ? e.replace(Wi, t => $i(t)) : e
 }
-var K;
+var G;
 (function(e) {
-    e.inMemory = "inmemory", e.vscode = "vscode", e.internal = "private", e.walkThrough = "walkThrough", e.walkThroughSnippet = "walkThroughSnippet", e.http = "http", e.https = "https", e.file = "file", e.git = "git", e.mailto = "mailto", e.untitled = "untitled", e.data = "data", e.command = "command", e.vscodeRemote = "vscode-remote", e.vscodeRemoteResource = "vscode-remote-resource", e.vscodeManagedRemoteResource = "vscode-managed-remote-resource", e.vscodeUserData = "vscode-userdata", e.vscodeCustomEditor = "vscode-custom-editor", e.vscodeNotebook = "vscode-notebook", e.vscodeNotebookCell = "vscode-notebook-cell", e.vscodeNotebookCellMetadata = "vscode-notebook-cell-metadata", e.vscodeNotebookCellMetadataDiff = "vscode-notebook-cell-metadata-diff", e.vscodeNotebookCellOutput = "vscode-notebook-cell-output", e.vscodeNotebookCellOutputDiff = "vscode-notebook-cell-output-diff", e.vscodeNotebookMetadata = "vscode-notebook-metadata", e.vscodeInteractiveInput = "vscode-interactive-input", e.vscodeSettings = "vscode-settings", e.vscodeWorkspaceTrust = "vscode-workspace-trust", e.vscodeTerminal = "vscode-terminal", e.terminal = "terminal", e.vscodeChatCodeBlock = "vscode-chat-code-block", e.vscodeChatCodeCompareBlock = "vscode-chat-code-compare-block", e.vscodeChatSesssion = "vscode-chat-editor", e.webviewPanel = "webview-panel", e.vscodeWebview = "vscode-webview", e.extension = "extension", e.aiChat = "cursor.aichat", e.contextObject = "cursor.context-object", e.composer = "cursor.composer", e.aiSettings = "cursor.aisettings", e.tinderDiffEditor = "cursor.tinderdiffeditor", e.vscodeFileResource = "vscode-file", e.tmp = "tmp", e.vsls = "vsls", e.vscodeSourceControl = "vscode-scm", e.commentsInput = "comment", e.codeSetting = "code-setting", e.cursorDev = "cursor-dev-utils", e.outputChannel = "output", e.accessibleView = "accessible-view", e.backgroundComposer = "cursor.backgroundcomposer", e.personalEnvironmentJson = "cursor.personalenvironmentjson", e.bugbot = "cursor.bugbot", e.aiEditorBox = "aiEditorBox", e.backgroundComposerPeek = "background-composer-peek", e.cursorPlan = "cursor-plan", e.reviewChanges = "cursor.reviewchanges", e.reviewPr = "cursor.reviewpr", e.allPullRequests = "cursor.allpullrequests", e.cursorBlame = "cursor.blame", e.cursorFileBlame = "cursor.fileblame"
-})(K || (K = {}));
+    e.inMemory = "inmemory", e.vscode = "vscode", e.internal = "private", e.walkThrough = "walkThrough", e.walkThroughSnippet = "walkThroughSnippet", e.http = "http", e.https = "https", e.file = "file", e.git = "git", e.mailto = "mailto", e.untitled = "untitled", e.data = "data", e.command = "command", e.vscodeRemote = "vscode-remote", e.vscodeRemoteResource = "vscode-remote-resource", e.vscodeManagedRemoteResource = "vscode-managed-remote-resource", e.vscodeUserData = "vscode-userdata", e.vscodeCustomEditor = "vscode-custom-editor", e.vscodeNotebook = "vscode-notebook", e.vscodeNotebookCell = "vscode-notebook-cell", e.vscodeNotebookCellMetadata = "vscode-notebook-cell-metadata", e.vscodeNotebookCellMetadataDiff = "vscode-notebook-cell-metadata-diff", e.vscodeNotebookCellOutput = "vscode-notebook-cell-output", e.vscodeNotebookCellOutputDiff = "vscode-notebook-cell-output-diff", e.vscodeNotebookMetadata = "vscode-notebook-metadata", e.vscodeInteractiveInput = "vscode-interactive-input", e.vscodeSettings = "vscode-settings", e.vscodeWorkspaceTrust = "vscode-workspace-trust", e.vscodeTerminal = "vscode-terminal", e.terminal = "terminal", e.vscodeChatCodeBlock = "vscode-chat-code-block", e.vscodeChatCodeCompareBlock = "vscode-chat-code-compare-block", e.vscodeChatSesssion = "vscode-chat-editor", e.webviewPanel = "webview-panel", e.vscodeWebview = "vscode-webview", e.extension = "extension", e.aiChat = "cursor.aichat", e.contextObject = "cursor.context-object", e.composer = "cursor.composer", e.aiSettings = "cursor.aisettings", e.tinderDiffEditor = "cursor.tinderdiffeditor", e.vscodeFileResource = "vscode-file", e.tmp = "tmp", e.vsls = "vsls", e.vscodeSourceControl = "vscode-scm", e.commentsInput = "comment", e.codeSetting = "code-setting", e.cursorDev = "cursor-dev-utils", e.outputChannel = "output", e.accessibleView = "accessible-view", e.backgroundComposer = "cursor.backgroundcomposer", e.personalEnvironmentJson = "cursor.personalenvironmentjson", e.bugbot = "cursor.bugbot", e.aiEditorBox = "aiEditorBox", e.backgroundComposerPeek = "background-composer-peek", e.cursorPlan = "cursor-plan", e.reviewChanges = "cursor.reviewchanges", e.cursorBlame = "cursor.blame", e.cursorFileBlame = "cursor.fileblame"
+})(G || (G = {}));
 var Ea = "tkn",
     Ta = class {
         constructor() {
@@ -3719,7 +3719,7 @@ var Ea = "tkn",
             return this._serverRootPath
         }
         get _remoteResourcesPath() {
-            return U.join(this._serverRootPath, K.vscodeRemoteResource)
+            return U.join(this._serverRootPath, G.vscodeRemoteResource)
         }
         set(e, t, r) {
             this._hosts[e] = t, this._ports[e] = r
@@ -3743,20 +3743,20 @@ var Ea = "tkn",
                 s = this._connectionTokens[t];
             let o = `path=${encodeURIComponent(e.path)}`;
             return typeof s == "string" && (o += `&${Ea}=${encodeURIComponent(s)}`), pe.from({
-                scheme: Io ? this._preferredWebSchema : K.vscodeRemoteResource,
+                scheme: Io ? this._preferredWebSchema : G.vscodeRemoteResource,
                 authority: `${r}:${i}`,
                 path: this._remoteResourcesPath,
                 query: o
             })
         }
     },
-    zi = new Ta;
+    Hi = new Ta;
 
 function Oa(e) {
     return `${e.quality??"oss"}-${e.commit??"dev"}`
 }
 var Da = "vscode-app",
-    Ra = class Er {
+    Na = class Er {
         static {
             this.FALLBACK_AUTHORITY = Da
         }
@@ -3765,8 +3765,8 @@ var Da = "vscode-app",
             return this.uriToBrowserUri(r)
         }
         uriToBrowserUri(t) {
-            return t.scheme === K.vscodeRemote ? zi.rewrite(t) : t.scheme === K.file && (or || ko === `${K.vscodeFileResource}://${Er.FALLBACK_AUTHORITY}`) ? t.with({
-                scheme: K.vscodeFileResource,
+            return t.scheme === G.vscodeRemote ? Hi.rewrite(t) : t.scheme === G.file && (or || ko === `${G.vscodeFileResource}://${Er.FALLBACK_AUTHORITY}`) ? t.with({
+                scheme: G.vscodeFileResource,
                 authority: t.authority || Er.FALLBACK_AUTHORITY,
                 query: null,
                 fragment: null
@@ -3777,8 +3777,8 @@ var Da = "vscode-app",
             return this.uriToFileUri(r)
         }
         uriToFileUri(t) {
-            return t.scheme === K.vscodeFileResource ? t.with({
-                scheme: K.file,
+            return t.scheme === G.vscodeFileResource ? t.with({
+                scheme: G.file,
                 authority: t.authority !== Er.FALLBACK_AUTHORITY ? t.authority : null,
                 query: null,
                 fragment: null
@@ -3795,14 +3795,14 @@ var Da = "vscode-app",
             throw new Error("Cannot determine URI for module id!")
         }
     },
-    Na = new Ra,
-    rc = Object.freeze({
+    Ra = new Na,
+    lc = Object.freeze({
         "Cache-Control": "no-cache, no-store"
     }),
-    ic = Object.freeze({
+    cc = Object.freeze({
         "Document-Policy": "include-js-call-stacks-in-crash-reports, js-profiling"
     }),
-    ji;
+    zi;
 (function(e) {
     const t = new Map([
         ["1", {
@@ -3833,7 +3833,7 @@ var Da = "vscode-app",
         o instanceof URLSearchParams ? o.set(r, u) : o[r] = u
     }
     e.addSearchParam = s
-})(ji || (ji = {}));
+})(zi || (zi = {}));
 
 function Fe(e) {
     return dr(e, !0)
@@ -3859,8 +3859,8 @@ var Qr = class {
         }
         isEqualOrParent(e, t, r = !1) {
             if (e.scheme === t.scheme) {
-                if (e.scheme === K.file) return Ci(Fe(e), Fe(t), this._ignorePathCasing(e)) && e.query === t.query && (r || e.fragment === t.fragment);
-                if (qi(e.authority, t.authority)) return Ci(e.path, t.path, this._ignorePathCasing(e), "/") && e.query === t.query && (r || e.fragment === t.fragment)
+                if (e.scheme === G.file) return Ui(Fe(e), Fe(t), this._ignorePathCasing(e)) && e.query === t.query && (r || e.fragment === t.fragment);
+                if (ji(e.authority, t.authority)) return Ui(e.path, t.path, this._ignorePathCasing(e), "/") && e.query === t.query && (r || e.fragment === t.fragment)
             }
             return !1
         }
@@ -3879,22 +3879,22 @@ var Qr = class {
         dirname(e) {
             if (e.path.length === 0) return e;
             let t;
-            return e.scheme === K.file ? t = pe.file(ea(Fe(e))).path : (t = U.dirname(e.path), e.authority && t.length && t.charCodeAt(0) !== 47 && (console.error(`dirname("${e.toString})) resulted in a relative path`), t = "/")), e.with({
+            return e.scheme === G.file ? t = pe.file(ea(Fe(e))).path : (t = U.dirname(e.path), e.authority && t.length && t.charCodeAt(0) !== 47 && (console.error(`dirname("${e.toString})) resulted in a relative path`), t = "/")), e.with({
                 path: t
             })
         }
         normalizePath(e) {
             if (!e.path.length) return e;
             let t;
-            return e.scheme === K.file ? t = pe.file(Zo(Fe(e))).path : t = U.normalize(e.path), e.with({
+            return e.scheme === G.file ? t = pe.file(Yo(Fe(e))).path : t = U.normalize(e.path), e.with({
                 path: t
             })
         }
         relativePath(e, t) {
-            if (e.scheme !== t.scheme || !qi(e.authority, t.authority)) return;
-            if (e.scheme === K.file) {
+            if (e.scheme !== t.scheme || !ji(e.authority, t.authority)) return;
+            if (e.scheme === G.file) {
                 const s = Jo(Fe(e), Fe(t));
-                return ht ? Fi(s) : s
+                return ht ? Pi(s) : s
             }
             let r = e.path || "/";
             const i = t.path || "/";
@@ -3906,7 +3906,7 @@ var Qr = class {
             return U.relative(r, i)
         }
         resolvePath(e, t) {
-            if (e.scheme === K.file) {
+            if (e.scheme === G.file) {
                 const r = pe.file(Xo(Fe(e), t));
                 return e.with({
                     authority: r.authority,
@@ -3924,53 +3924,53 @@ var Qr = class {
             return e === t || e !== void 0 && t !== void 0 && sa(e, t)
         }
         hasTrailingPathSeparator(e, t = ur) {
-            if (e.scheme === K.file) {
+            if (e.scheme === G.file) {
                 const r = Fe(e);
-                return r.length > Ui(r).length && r[r.length - 1] === t
+                return r.length > Fi(r).length && r[r.length - 1] === t
             } else {
                 const r = e.path;
                 return r.length > 1 && r.charCodeAt(r.length - 1) === 47 && !/^[a-zA-Z]:(\/$|\\$)/.test(e.fsPath)
             }
         }
         removeTrailingPathSeparator(e, t = ur) {
-            return Ki(e, t) ? e.with({
+            return qi(e, t) ? e.with({
                 path: e.path.substr(0, e.path.length - 1)
             }) : e
         }
         addTrailingPathSeparator(e, t = ur) {
             let r = !1;
-            if (e.scheme === K.file) {
+            if (e.scheme === G.file) {
                 const i = Fe(e);
-                r = i !== void 0 && i.length === Ui(i).length && i[i.length - 1] === t
+                r = i !== void 0 && i.length === Fi(i).length && i[i.length - 1] === t
             } else {
                 t = "/";
                 const i = e.path;
                 r = i.length === 1 && i.charCodeAt(i.length - 1) === 47
             }
-            return !r && !Ki(e, t) ? e.with({
+            return !r && !qi(e, t) ? e.with({
                 path: e.path + "/"
             }) : e
         }
     },
     F = new Qr(() => !1),
-    nc = new Qr(e => e.scheme === K.file ? !No : !0),
-    sc = new Qr(e => !0),
-    oc = F.isEqual.bind(F),
-    ac = F.isEqualOrParent.bind(F),
-    lc = F.getComparisonKey.bind(F),
-    cc = F.basenameOrAuthority.bind(F),
+    uc = new Qr(e => e.scheme === G.file ? !Ro : !0),
+    dc = new Qr(e => !0),
+    hc = F.isEqual.bind(F),
+    fc = F.isEqualOrParent.bind(F),
+    pc = F.getComparisonKey.bind(F),
+    mc = F.basenameOrAuthority.bind(F),
     Ia = F.basename.bind(F),
-    uc = F.extname.bind(F),
-    dc = F.dirname.bind(F),
-    hc = F.joinPath.bind(F),
-    fc = F.normalizePath.bind(F),
-    pc = F.relativePath.bind(F),
-    mc = F.resolvePath.bind(F),
-    gc = F.isAbsolutePath.bind(F),
-    qi = F.isEqualAuthority.bind(F),
-    Ki = F.hasTrailingPathSeparator.bind(F),
-    vc = F.removeTrailingPathSeparator.bind(F),
-    _c = F.addTrailingPathSeparator.bind(F),
+    gc = F.extname.bind(F),
+    vc = F.dirname.bind(F),
+    _c = F.joinPath.bind(F),
+    yc = F.normalizePath.bind(F),
+    bc = F.relativePath.bind(F),
+    wc = F.resolvePath.bind(F),
+    Ac = F.isAbsolutePath.bind(F),
+    ji = F.isEqualAuthority.bind(F),
+    qi = F.hasTrailingPathSeparator.bind(F),
+    Ec = F.removeTrailingPathSeparator.bind(F),
+    Tc = F.addTrailingPathSeparator.bind(F),
     Gi;
 (function(e) {
     e.META_DATA_LABEL = "label", e.META_DATA_DESCRIPTION = "description", e.META_DATA_SIZE = "size", e.META_DATA_MIME = "mime";
@@ -3986,8 +3986,8 @@ var Qr = class {
     }
     e.parseMetaData = t
 })(Gi || (Gi = {}));
-var yc = Symbol("MicrotaskDelay"),
-    Yi = class {
+var Oc = Symbol("MicrotaskDelay"),
+    Ki = class {
         constructor(e, t) {
             this.timeoutToken = -1, this.runner = e, this.timeout = t, this.timeoutHandler = this.onTimeout.bind(this)
         }
@@ -4022,7 +4022,7 @@ var yc = Symbol("MicrotaskDelay"),
     La, Xr;
 (function() {
     typeof globalThis.requestIdleCallback != "function" || typeof globalThis.cancelIdleCallback != "function" ? Xr = (e, t, r) => {
-        xo(() => {
+        Mo(() => {
             if (i) return;
             const s = Date.now() + 15;
             t(Object.freeze({
@@ -4054,7 +4054,7 @@ var Zi;
 (function(e) {
     e[e.Resolved = 0] = "Resolved", e[e.Rejected = 1] = "Rejected"
 })(Zi || (Zi = {}));
-var Qi;
+var Yi;
 (function(e) {
     async function t(i) {
         let s;
@@ -4076,12 +4076,12 @@ var Qi;
         })
     }
     e.withAsyncBody = r
-})(Qi || (Qi = {}));
-var Xi;
+})(Yi || (Yi = {}));
+var Qi;
 (function(e) {
     e[e.Initial = 0] = "Initial", e[e.DoneOK = 1] = "DoneOK", e[e.DoneError = 2] = "DoneError"
-})(Xi || (Xi = {}));
-var bc = class ue {
+})(Qi || (Qi = {}));
+var Dc = class ue {
         static fromArray(t) {
             return new ue(r => {
                 r.emitMany(t)
@@ -4108,7 +4108,7 @@ var bc = class ue {
             this.EMPTY = ue.fromArray([])
         }
         constructor(t, r) {
-            this._state = 0, this._results = [], this._error = null, this._onReturn = r, this._onStateChanged = new Y, queueMicrotask(async () => {
+            this._state = 0, this._results = [], this._error = null, this._onReturn = r, this._onStateChanged = new Z, queueMicrotask(async () => {
                 const i = {
                     emitOne: s => this.emitOne(s),
                     emitMany: s => this.emitMany(s),
@@ -4189,16 +4189,16 @@ var bc = class ue {
         }
     },
     {
-        entries: Ji,
-        setPrototypeOf: en,
+        entries: Xi,
+        setPrototypeOf: Ji,
         isFrozen: ka,
         getPrototypeOf: Sa,
-        getOwnPropertyDescriptor: xa
+        getOwnPropertyDescriptor: Ma
     } = Object,
     {
         freeze: ie,
         seal: me,
-        create: tn
+        create: en
     } = Object,
     {
         apply: Jr,
@@ -4214,13 +4214,13 @@ ie || (ie = function(t) {
     return new t(...r)
 });
 var fr = ce(Array.prototype.forEach),
-    rn = ce(Array.prototype.pop),
+    tn = ce(Array.prototype.pop),
     Lt = ce(Array.prototype.push),
     pr = ce(String.prototype.toLowerCase),
     t1 = ce(String.prototype.toString),
-    nn = ce(String.prototype.match),
+    rn = ce(String.prototype.match),
     kt = ce(String.prototype.replace),
-    Ma = ce(String.prototype.indexOf),
+    xa = ce(String.prototype.indexOf),
     Pa = ce(String.prototype.trim),
     Ae = ce(Object.prototype.hasOwnProperty),
     ne = ce(RegExp.prototype.test),
@@ -4240,9 +4240,9 @@ function Fa(e) {
     }
 }
 
-function x(e, t) {
+function M(e, t) {
     let r = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : pr;
-    en && en(e, null);
+    Ji && Ji(e, null);
     let i = t.length;
     for (; i--;) {
         let s = t[i];
@@ -4260,15 +4260,15 @@ function Ua(e) {
     return e
 }
 
-function Ye(e) {
-    const t = tn(null);
-    for (const [r, i] of Ji(e)) Ae(e, r) && (Array.isArray(i) ? t[r] = Ua(i) : i && typeof i == "object" && i.constructor === Object ? t[r] = Ye(i) : t[r] = i);
+function Ze(e) {
+    const t = en(null);
+    for (const [r, i] of Xi(e)) Ae(e, r) && (Array.isArray(i) ? t[r] = Ua(i) : i && typeof i == "object" && i.constructor === Object ? t[r] = Ze(i) : t[r] = i);
     return t
 }
 
-function xt(e, t) {
+function Mt(e, t) {
     for (; e !== null;) {
-        const i = xa(e, t);
+        const i = Ma(e, t);
         if (i) {
             if (i.get) return ce(i.get);
             if (typeof i.value == "function") return ce(i.value)
@@ -4281,41 +4281,41 @@ function xt(e, t) {
     }
     return r
 }
-var sn = ie(["a", "abbr", "acronym", "address", "area", "article", "aside", "audio", "b", "bdi", "bdo", "big", "blink", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup", "content", "data", "datalist", "dd", "decorator", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "element", "em", "fieldset", "figcaption", "figure", "font", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup", "hr", "html", "i", "img", "input", "ins", "kbd", "label", "legend", "li", "main", "map", "mark", "marquee", "menu", "menuitem", "meter", "nav", "nobr", "ol", "optgroup", "option", "output", "p", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "section", "select", "shadow", "small", "source", "spacer", "span", "strike", "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "tr", "track", "tt", "u", "ul", "var", "video", "wbr"]),
+var nn = ie(["a", "abbr", "acronym", "address", "area", "article", "aside", "audio", "b", "bdi", "bdo", "big", "blink", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup", "content", "data", "datalist", "dd", "decorator", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "element", "em", "fieldset", "figcaption", "figure", "font", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup", "hr", "html", "i", "img", "input", "ins", "kbd", "label", "legend", "li", "main", "map", "mark", "marquee", "menu", "menuitem", "meter", "nav", "nobr", "ol", "optgroup", "option", "output", "p", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "section", "select", "shadow", "small", "source", "spacer", "span", "strike", "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "tr", "track", "tt", "u", "ul", "var", "video", "wbr"]),
     r1 = ie(["svg", "a", "altglyph", "altglyphdef", "altglyphitem", "animatecolor", "animatemotion", "animatetransform", "circle", "clippath", "defs", "desc", "ellipse", "filter", "font", "g", "glyph", "glyphref", "hkern", "image", "line", "lineargradient", "marker", "mask", "metadata", "mpath", "path", "pattern", "polygon", "polyline", "radialgradient", "rect", "stop", "style", "switch", "symbol", "text", "textpath", "title", "tref", "tspan", "view", "vkern"]),
     i1 = ie(["feBlend", "feColorMatrix", "feComponentTransfer", "feComposite", "feConvolveMatrix", "feDiffuseLighting", "feDisplacementMap", "feDistantLight", "feDropShadow", "feFlood", "feFuncA", "feFuncB", "feFuncG", "feFuncR", "feGaussianBlur", "feImage", "feMerge", "feMergeNode", "feMorphology", "feOffset", "fePointLight", "feSpecularLighting", "feSpotLight", "feTile", "feTurbulence"]),
     Ca = ie(["animate", "color-profile", "cursor", "discard", "font-face", "font-face-format", "font-face-name", "font-face-src", "font-face-uri", "foreignobject", "hatch", "hatchpath", "mesh", "meshgradient", "meshpatch", "meshrow", "missing-glyph", "script", "set", "solidcolor", "unknown", "use"]),
     n1 = ie(["math", "menclose", "merror", "mfenced", "mfrac", "mglyph", "mi", "mlabeledtr", "mmultiscripts", "mn", "mo", "mover", "mpadded", "mphantom", "mroot", "mrow", "ms", "mspace", "msqrt", "mstyle", "msub", "msup", "msubsup", "mtable", "mtd", "mtext", "mtr", "munder", "munderover", "mprescripts"]),
     Va = ie(["maction", "maligngroup", "malignmark", "mlongdiv", "mscarries", "mscarry", "msgroup", "mstack", "msline", "msrow", "semantics", "annotation", "annotation-xml", "mprescripts", "none"]),
-    on = ie(["#text"]),
-    an = ie(["accept", "action", "align", "alt", "autocapitalize", "autocomplete", "autopictureinpicture", "autoplay", "background", "bgcolor", "border", "capture", "cellpadding", "cellspacing", "checked", "cite", "class", "clear", "color", "cols", "colspan", "controls", "controlslist", "coords", "crossorigin", "datetime", "decoding", "default", "dir", "disabled", "disablepictureinpicture", "disableremoteplayback", "download", "draggable", "enctype", "enterkeyhint", "face", "for", "headers", "height", "hidden", "high", "href", "hreflang", "id", "inputmode", "integrity", "ismap", "kind", "label", "lang", "list", "loading", "loop", "low", "max", "maxlength", "media", "method", "min", "minlength", "multiple", "muted", "name", "nonce", "noshade", "novalidate", "nowrap", "open", "optimum", "pattern", "placeholder", "playsinline", "popover", "popovertarget", "popovertargetaction", "poster", "preload", "pubdate", "radiogroup", "readonly", "rel", "required", "rev", "reversed", "role", "rows", "rowspan", "spellcheck", "scope", "selected", "shape", "size", "sizes", "span", "srclang", "start", "src", "srcset", "step", "style", "summary", "tabindex", "title", "translate", "type", "usemap", "valign", "value", "width", "wrap", "xmlns", "slot"]),
+    sn = ie(["#text"]),
+    on = ie(["accept", "action", "align", "alt", "autocapitalize", "autocomplete", "autopictureinpicture", "autoplay", "background", "bgcolor", "border", "capture", "cellpadding", "cellspacing", "checked", "cite", "class", "clear", "color", "cols", "colspan", "controls", "controlslist", "coords", "crossorigin", "datetime", "decoding", "default", "dir", "disabled", "disablepictureinpicture", "disableremoteplayback", "download", "draggable", "enctype", "enterkeyhint", "face", "for", "headers", "height", "hidden", "high", "href", "hreflang", "id", "inputmode", "integrity", "ismap", "kind", "label", "lang", "list", "loading", "loop", "low", "max", "maxlength", "media", "method", "min", "minlength", "multiple", "muted", "name", "nonce", "noshade", "novalidate", "nowrap", "open", "optimum", "pattern", "placeholder", "playsinline", "popover", "popovertarget", "popovertargetaction", "poster", "preload", "pubdate", "radiogroup", "readonly", "rel", "required", "rev", "reversed", "role", "rows", "rowspan", "spellcheck", "scope", "selected", "shape", "size", "sizes", "span", "srclang", "start", "src", "srcset", "step", "style", "summary", "tabindex", "title", "translate", "type", "usemap", "valign", "value", "width", "wrap", "xmlns", "slot"]),
     s1 = ie(["accent-height", "accumulate", "additive", "alignment-baseline", "amplitude", "ascent", "attributename", "attributetype", "azimuth", "basefrequency", "baseline-shift", "begin", "bias", "by", "class", "clip", "clippathunits", "clip-path", "clip-rule", "color", "color-interpolation", "color-interpolation-filters", "color-profile", "color-rendering", "cx", "cy", "d", "dx", "dy", "diffuseconstant", "direction", "display", "divisor", "dur", "edgemode", "elevation", "end", "exponent", "fill", "fill-opacity", "fill-rule", "filter", "filterunits", "flood-color", "flood-opacity", "font-family", "font-size", "font-size-adjust", "font-stretch", "font-style", "font-variant", "font-weight", "fx", "fy", "g1", "g2", "glyph-name", "glyphref", "gradientunits", "gradienttransform", "height", "href", "id", "image-rendering", "in", "in2", "intercept", "k", "k1", "k2", "k3", "k4", "kerning", "keypoints", "keysplines", "keytimes", "lang", "lengthadjust", "letter-spacing", "kernelmatrix", "kernelunitlength", "lighting-color", "local", "marker-end", "marker-mid", "marker-start", "markerheight", "markerunits", "markerwidth", "maskcontentunits", "maskunits", "max", "mask", "media", "method", "mode", "min", "name", "numoctaves", "offset", "operator", "opacity", "order", "orient", "orientation", "origin", "overflow", "paint-order", "path", "pathlength", "patterncontentunits", "patterntransform", "patternunits", "points", "preservealpha", "preserveaspectratio", "primitiveunits", "r", "rx", "ry", "radius", "refx", "refy", "repeatcount", "repeatdur", "restart", "result", "rotate", "scale", "seed", "shape-rendering", "slope", "specularconstant", "specularexponent", "spreadmethod", "startoffset", "stddeviation", "stitchtiles", "stop-color", "stop-opacity", "stroke-dasharray", "stroke-dashoffset", "stroke-linecap", "stroke-linejoin", "stroke-miterlimit", "stroke-opacity", "stroke", "stroke-width", "style", "surfacescale", "systemlanguage", "tabindex", "tablevalues", "targetx", "targety", "transform", "transform-origin", "text-anchor", "text-decoration", "text-rendering", "textlength", "type", "u1", "u2", "unicode", "values", "viewbox", "visibility", "version", "vert-adv-y", "vert-origin-x", "vert-origin-y", "width", "word-spacing", "wrap", "writing-mode", "xchannelselector", "ychannelselector", "x", "x1", "x2", "xmlns", "y", "y1", "y2", "z", "zoomandpan"]),
-    ln = ie(["accent", "accentunder", "align", "bevelled", "close", "columnsalign", "columnlines", "columnspan", "denomalign", "depth", "dir", "display", "displaystyle", "encoding", "fence", "frame", "height", "href", "id", "largeop", "length", "linethickness", "lspace", "lquote", "mathbackground", "mathcolor", "mathsize", "mathvariant", "maxsize", "minsize", "movablelimits", "notation", "numalign", "open", "rowalign", "rowlines", "rowspacing", "rowspan", "rspace", "rquote", "scriptlevel", "scriptminsize", "scriptsizemultiplier", "selection", "separator", "separators", "stretchy", "subscriptshift", "supscriptshift", "symmetric", "voffset", "width", "xmlns"]),
+    an = ie(["accent", "accentunder", "align", "bevelled", "close", "columnsalign", "columnlines", "columnspan", "denomalign", "depth", "dir", "display", "displaystyle", "encoding", "fence", "frame", "height", "href", "id", "largeop", "length", "linethickness", "lspace", "lquote", "mathbackground", "mathcolor", "mathsize", "mathvariant", "maxsize", "minsize", "movablelimits", "notation", "numalign", "open", "rowalign", "rowlines", "rowspacing", "rowspan", "rspace", "rquote", "scriptlevel", "scriptminsize", "scriptsizemultiplier", "selection", "separator", "separators", "stretchy", "subscriptshift", "supscriptshift", "symmetric", "voffset", "width", "xmlns"]),
     mr = ie(["xlink:href", "xml:id", "xlink:title", "xml:space", "xmlns:xlink"]),
     Ba = me(/\{\{[\w\W]*|[\w\W]*\}\}/gm),
     $a = me(/<%[\w\W]*|[\w\W]*%>/gm),
     Wa = me(/\${[\w\W]*}/gm),
     Ha = me(/^data-[\-\w.\u00B7-\uFFFF]/),
     za = me(/^aria-[\-\w]+$/),
-    cn = me(/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i),
+    ln = me(/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i),
     ja = me(/^(?:\w+script|data):/i),
     qa = me(/[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g),
-    un = me(/^html$/i),
-    Ka = me(/^[a-z][.\w]*(-[.\w]+)+$/i),
-    dn = Object.freeze({
+    cn = me(/^html$/i),
+    Ga = me(/^[a-z][.\w]*(-[.\w]+)+$/i),
+    un = Object.freeze({
         __proto__: null,
         MUSTACHE_EXPR: Ba,
         ERB_EXPR: $a,
         TMPLIT_EXPR: Wa,
         DATA_ATTR: Ha,
         ARIA_ATTR: za,
-        IS_ALLOWED_URI: cn,
+        IS_ALLOWED_URI: ln,
         IS_SCRIPT_OR_DATA: ja,
         ATTR_WHITESPACE: qa,
-        DOCTYPE_NAME: un,
-        CUSTOM_ELEMENT: Ka
+        DOCTYPE_NAME: cn,
+        CUSTOM_ELEMENT: Ga
     }),
-    Mt = {
+    xt = {
         element: 1,
         attribute: 2,
         text: 3,
@@ -4329,10 +4329,10 @@ var sn = ie(["a", "abbr", "acronym", "address", "area", "article", "aside", "aud
         documentFragment: 11,
         notation: 12
     },
-    Ga = function() {
+    Ka = function() {
         return typeof window > "u" ? null : window
     },
-    Ya = function(t, r) {
+    Za = function(t, r) {
         if (typeof t != "object" || typeof t.createPolicy != "function") return null;
         let i = null;
         const s = "data-tt-policy-suffix";
@@ -4352,10 +4352,10 @@ var sn = ie(["a", "abbr", "acronym", "address", "area", "article", "aside", "aud
         }
     };
 
-function hn() {
-    let e = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : Ga();
-    const t = O => hn(O);
-    if (t.version = "3.1.7", t.removed = [], !e || !e.document || e.document.nodeType !== Mt.document) return t.isSupported = !1, t;
+function dn() {
+    let e = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : Ka();
+    const t = O => dn(O);
+    if (t.version = "3.1.7", t.removed = [], !e || !e.document || e.document.nodeType !== xt.document) return t.isSupported = !1, t;
     let {
         document: r
     } = e;
@@ -4373,26 +4373,26 @@ function hn() {
             trustedTypes: m
         } = e,
         A = u.prototype,
-        I = xt(A, "cloneNode"),
-        k = xt(A, "remove"),
-        W = xt(A, "nextSibling"),
-        de = xt(A, "childNodes"),
-        V = xt(A, "parentNode");
+        I = Mt(A, "cloneNode"),
+        k = Mt(A, "remove"),
+        W = Mt(A, "nextSibling"),
+        de = Mt(A, "childNodes"),
+        V = Mt(A, "parentNode");
     if (typeof a == "function") {
         const O = r.createElement("template");
         O.content && O.content.ownerDocument && (r = O.content.ownerDocument)
     }
     let z, E = "";
     const {
-        implementation: N,
+        implementation: R,
         createNodeIterator: P,
-        createDocumentFragment: G,
+        createDocumentFragment: K,
         getElementsByTagName: he
     } = r, {
         importNode: et
     } = i;
     let fe = {};
-    t.isSupported = typeof Ji == "function" && typeof V == "function" && N && N.createHTMLDocument !== void 0;
+    t.isSupported = typeof Xi == "function" && typeof V == "function" && R && R.createHTMLDocument !== void 0;
     const {
         MUSTACHE_EXPR: yt,
         ERB_EXPR: bt,
@@ -4402,14 +4402,14 @@ function hn() {
         IS_SCRIPT_OR_DATA: y,
         ATTR_WHITESPACE: _,
         CUSTOM_ELEMENT: T
-    } = dn;
+    } = un;
     let {
-        IS_ALLOWED_URI: R
-    } = dn, D = null;
-    const j = x({}, [...sn, ...r1, ...i1, ...n1, ...on]);
-    let M = null;
-    const Ne = x({}, [...an, ...s1, ...ln, ...mr]);
-    let B = Object.seal(tn(null, {
+        IS_ALLOWED_URI: N
+    } = un, D = null;
+    const j = M({}, [...nn, ...r1, ...i1, ...n1, ...sn]);
+    let x = null;
+    const Re = M({}, [...on, ...s1, ...an, ...mr]);
+    let B = Object.seal(en(null, {
             tagNameCheck: {
                 writable: !0,
                 configurable: !1,
@@ -4434,7 +4434,7 @@ function hn() {
         je = !0,
         At = !0,
         zt = !1,
-        k1 = !0,
+        L1 = !0,
         rt = !1,
         Tr = !0,
         qe = !1,
@@ -4443,50 +4443,50 @@ function hn() {
         it = !1,
         jt = !1,
         qt = !1,
-        S1 = !0,
-        x1 = !1;
+        k1 = !0,
+        S1 = !1;
     const bs = "user-content-";
-    let Rr = !0,
+    let Nr = !0,
         Et = !1,
         nt = {},
         st = null;
-    const M1 = x({}, ["annotation-xml", "audio", "colgroup", "desc", "foreignobject", "head", "iframe", "math", "mi", "mn", "mo", "ms", "mtext", "noembed", "noframes", "noscript", "plaintext", "script", "style", "svg", "template", "thead", "title", "video", "xmp"]);
-    let P1 = null;
-    const F1 = x({}, ["audio", "video", "img", "source", "image", "track"]);
-    let Nr = null;
-    const U1 = x({}, ["alt", "class", "for", "id", "label", "name", "pattern", "placeholder", "role", "summary", "title", "value", "style", "xmlns"]),
-        Kt = "http://www.w3.org/1998/Math/MathML",
-        Gt = "http://www.w3.org/2000/svg",
+    const M1 = M({}, ["annotation-xml", "audio", "colgroup", "desc", "foreignobject", "head", "iframe", "math", "mi", "mn", "mo", "ms", "mtext", "noembed", "noframes", "noscript", "plaintext", "script", "style", "svg", "template", "thead", "title", "video", "xmp"]);
+    let x1 = null;
+    const P1 = M({}, ["audio", "video", "img", "source", "image", "track"]);
+    let Rr = null;
+    const F1 = M({}, ["alt", "class", "for", "id", "label", "name", "pattern", "placeholder", "role", "summary", "title", "value", "style", "xmlns"]),
+        Gt = "http://www.w3.org/1998/Math/MathML",
+        Kt = "http://www.w3.org/2000/svg",
         Ie = "http://www.w3.org/1999/xhtml";
     let ot = Ie,
         Ir = !1,
         Lr = null;
-    const ws = x({}, [Kt, Gt, Ie], t1);
+    const ws = M({}, [Gt, Kt, Ie], t1);
     let Tt = null;
     const As = ["application/xhtml+xml", "text/html"],
         Es = "text/html";
     let Q = null,
         at = null;
     const Ts = r.createElement("form"),
-        C1 = function(d) {
+        U1 = function(d) {
             return d instanceof RegExp || d instanceof Function
         },
         kr = function() {
             let d = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
             if (!(at && at === d)) {
-                if ((!d || typeof d != "object") && (d = {}), d = Ye(d), Tt = As.indexOf(d.PARSER_MEDIA_TYPE) === -1 ? Es : d.PARSER_MEDIA_TYPE, Q = Tt === "application/xhtml+xml" ? t1 : pr, D = Ae(d, "ALLOWED_TAGS") ? x({}, d.ALLOWED_TAGS, Q) : j, M = Ae(d, "ALLOWED_ATTR") ? x({}, d.ALLOWED_ATTR, Q) : Ne, Lr = Ae(d, "ALLOWED_NAMESPACES") ? x({}, d.ALLOWED_NAMESPACES, t1) : ws, Nr = Ae(d, "ADD_URI_SAFE_ATTR") ? x(Ye(U1), d.ADD_URI_SAFE_ATTR, Q) : U1, P1 = Ae(d, "ADD_DATA_URI_TAGS") ? x(Ye(F1), d.ADD_DATA_URI_TAGS, Q) : F1, st = Ae(d, "FORBID_CONTENTS") ? x({}, d.FORBID_CONTENTS, Q) : M1, _e = Ae(d, "FORBID_TAGS") ? x({}, d.FORBID_TAGS, Q) : {}, tt = Ae(d, "FORBID_ATTR") ? x({}, d.FORBID_ATTR, Q) : {}, nt = Ae(d, "USE_PROFILES") ? d.USE_PROFILES : !1, je = d.ALLOW_ARIA_ATTR !== !1, At = d.ALLOW_DATA_ATTR !== !1, zt = d.ALLOW_UNKNOWN_PROTOCOLS || !1, k1 = d.ALLOW_SELF_CLOSE_IN_ATTR !== !1, rt = d.SAFE_FOR_TEMPLATES || !1, Tr = d.SAFE_FOR_XML !== !1, qe = d.WHOLE_DOCUMENT || !1, it = d.RETURN_DOM || !1, jt = d.RETURN_DOM_FRAGMENT || !1, qt = d.RETURN_TRUSTED_TYPE || !1, Dr = d.FORCE_BODY || !1, S1 = d.SANITIZE_DOM !== !1, x1 = d.SANITIZE_NAMED_PROPS || !1, Rr = d.KEEP_CONTENT !== !1, Et = d.IN_PLACE || !1, R = d.ALLOWED_URI_REGEXP || cn, ot = d.NAMESPACE || Ie, B = d.CUSTOM_ELEMENT_HANDLING || {}, d.CUSTOM_ELEMENT_HANDLING && C1(d.CUSTOM_ELEMENT_HANDLING.tagNameCheck) && (B.tagNameCheck = d.CUSTOM_ELEMENT_HANDLING.tagNameCheck), d.CUSTOM_ELEMENT_HANDLING && C1(d.CUSTOM_ELEMENT_HANDLING.attributeNameCheck) && (B.attributeNameCheck = d.CUSTOM_ELEMENT_HANDLING.attributeNameCheck), d.CUSTOM_ELEMENT_HANDLING && typeof d.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements == "boolean" && (B.allowCustomizedBuiltInElements = d.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements), rt && (At = !1), jt && (it = !0), nt && (D = x({}, on), M = [], nt.html === !0 && (x(D, sn), x(M, an)), nt.svg === !0 && (x(D, r1), x(M, s1), x(M, mr)), nt.svgFilters === !0 && (x(D, i1), x(M, s1), x(M, mr)), nt.mathMl === !0 && (x(D, n1), x(M, ln), x(M, mr))), d.ADD_TAGS && (D === j && (D = Ye(D)), x(D, d.ADD_TAGS, Q)), d.ADD_ATTR && (M === Ne && (M = Ye(M)), x(M, d.ADD_ATTR, Q)), d.ADD_URI_SAFE_ATTR && x(Nr, d.ADD_URI_SAFE_ATTR, Q), d.FORBID_CONTENTS && (st === M1 && (st = Ye(st)), x(st, d.FORBID_CONTENTS, Q)), Rr && (D["#text"] = !0), qe && x(D, ["html", "head", "body"]), D.table && (x(D, ["tbody"]), delete _e.tbody), d.TRUSTED_TYPES_POLICY) {
+                if ((!d || typeof d != "object") && (d = {}), d = Ze(d), Tt = As.indexOf(d.PARSER_MEDIA_TYPE) === -1 ? Es : d.PARSER_MEDIA_TYPE, Q = Tt === "application/xhtml+xml" ? t1 : pr, D = Ae(d, "ALLOWED_TAGS") ? M({}, d.ALLOWED_TAGS, Q) : j, x = Ae(d, "ALLOWED_ATTR") ? M({}, d.ALLOWED_ATTR, Q) : Re, Lr = Ae(d, "ALLOWED_NAMESPACES") ? M({}, d.ALLOWED_NAMESPACES, t1) : ws, Rr = Ae(d, "ADD_URI_SAFE_ATTR") ? M(Ze(F1), d.ADD_URI_SAFE_ATTR, Q) : F1, x1 = Ae(d, "ADD_DATA_URI_TAGS") ? M(Ze(P1), d.ADD_DATA_URI_TAGS, Q) : P1, st = Ae(d, "FORBID_CONTENTS") ? M({}, d.FORBID_CONTENTS, Q) : M1, _e = Ae(d, "FORBID_TAGS") ? M({}, d.FORBID_TAGS, Q) : {}, tt = Ae(d, "FORBID_ATTR") ? M({}, d.FORBID_ATTR, Q) : {}, nt = Ae(d, "USE_PROFILES") ? d.USE_PROFILES : !1, je = d.ALLOW_ARIA_ATTR !== !1, At = d.ALLOW_DATA_ATTR !== !1, zt = d.ALLOW_UNKNOWN_PROTOCOLS || !1, L1 = d.ALLOW_SELF_CLOSE_IN_ATTR !== !1, rt = d.SAFE_FOR_TEMPLATES || !1, Tr = d.SAFE_FOR_XML !== !1, qe = d.WHOLE_DOCUMENT || !1, it = d.RETURN_DOM || !1, jt = d.RETURN_DOM_FRAGMENT || !1, qt = d.RETURN_TRUSTED_TYPE || !1, Dr = d.FORCE_BODY || !1, k1 = d.SANITIZE_DOM !== !1, S1 = d.SANITIZE_NAMED_PROPS || !1, Nr = d.KEEP_CONTENT !== !1, Et = d.IN_PLACE || !1, N = d.ALLOWED_URI_REGEXP || ln, ot = d.NAMESPACE || Ie, B = d.CUSTOM_ELEMENT_HANDLING || {}, d.CUSTOM_ELEMENT_HANDLING && U1(d.CUSTOM_ELEMENT_HANDLING.tagNameCheck) && (B.tagNameCheck = d.CUSTOM_ELEMENT_HANDLING.tagNameCheck), d.CUSTOM_ELEMENT_HANDLING && U1(d.CUSTOM_ELEMENT_HANDLING.attributeNameCheck) && (B.attributeNameCheck = d.CUSTOM_ELEMENT_HANDLING.attributeNameCheck), d.CUSTOM_ELEMENT_HANDLING && typeof d.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements == "boolean" && (B.allowCustomizedBuiltInElements = d.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements), rt && (At = !1), jt && (it = !0), nt && (D = M({}, sn), x = [], nt.html === !0 && (M(D, nn), M(x, on)), nt.svg === !0 && (M(D, r1), M(x, s1), M(x, mr)), nt.svgFilters === !0 && (M(D, i1), M(x, s1), M(x, mr)), nt.mathMl === !0 && (M(D, n1), M(x, an), M(x, mr))), d.ADD_TAGS && (D === j && (D = Ze(D)), M(D, d.ADD_TAGS, Q)), d.ADD_ATTR && (x === Re && (x = Ze(x)), M(x, d.ADD_ATTR, Q)), d.ADD_URI_SAFE_ATTR && M(Rr, d.ADD_URI_SAFE_ATTR, Q), d.FORBID_CONTENTS && (st === M1 && (st = Ze(st)), M(st, d.FORBID_CONTENTS, Q)), Nr && (D["#text"] = !0), qe && M(D, ["html", "head", "body"]), D.table && (M(D, ["tbody"]), delete _e.tbody), d.TRUSTED_TYPES_POLICY) {
                     if (typeof d.TRUSTED_TYPES_POLICY.createHTML != "function") throw St('TRUSTED_TYPES_POLICY configuration option must provide a "createHTML" hook.');
                     if (typeof d.TRUSTED_TYPES_POLICY.createScriptURL != "function") throw St('TRUSTED_TYPES_POLICY configuration option must provide a "createScriptURL" hook.');
                     z = d.TRUSTED_TYPES_POLICY, E = z.createHTML("")
-                } else z === void 0 && (z = Ya(m, s)), z !== null && typeof E == "string" && (E = z.createHTML(""));
+                } else z === void 0 && (z = Za(m, s)), z !== null && typeof E == "string" && (E = z.createHTML(""));
                 ie && ie(d), at = d
             }
         },
-        V1 = x({}, ["mi", "mo", "mn", "ms", "mtext"]),
-        B1 = x({}, ["annotation-xml"]),
-        Os = x({}, ["title", "style", "font", "a", "script"]),
-        $1 = x({}, [...r1, ...i1, ...Ca]),
-        W1 = x({}, [...n1, ...Va]),
+        C1 = M({}, ["mi", "mo", "mn", "ms", "mtext"]),
+        V1 = M({}, ["annotation-xml"]),
+        Os = M({}, ["title", "style", "font", "a", "script"]),
+        B1 = M({}, [...r1, ...i1, ...Ca]),
+        $1 = M({}, [...n1, ...Va]),
         Ds = function(d) {
             let v = V(d);
             (!v || !v.tagName) && (v = {
@@ -4495,7 +4495,7 @@ function hn() {
             });
             const w = pr(d.tagName),
                 $ = pr(v.tagName);
-            return Lr[d.namespaceURI] ? d.namespaceURI === Gt ? v.namespaceURI === Ie ? w === "svg" : v.namespaceURI === Kt ? w === "svg" && ($ === "annotation-xml" || V1[$]) : !!$1[w] : d.namespaceURI === Kt ? v.namespaceURI === Ie ? w === "math" : v.namespaceURI === Gt ? w === "math" && B1[$] : !!W1[w] : d.namespaceURI === Ie ? v.namespaceURI === Gt && !B1[$] || v.namespaceURI === Kt && !V1[$] ? !1 : !W1[w] && (Os[w] || !$1[w]) : !!(Tt === "application/xhtml+xml" && Lr[d.namespaceURI]) : !1
+            return Lr[d.namespaceURI] ? d.namespaceURI === Kt ? v.namespaceURI === Ie ? w === "svg" : v.namespaceURI === Gt ? w === "svg" && ($ === "annotation-xml" || C1[$]) : !!B1[w] : d.namespaceURI === Gt ? v.namespaceURI === Ie ? w === "math" : v.namespaceURI === Kt ? w === "math" && V1[$] : !!$1[w] : d.namespaceURI === Ie ? v.namespaceURI === Kt && !V1[$] || v.namespaceURI === Gt && !C1[$] ? !1 : !$1[w] && (Os[w] || !B1[w]) : !!(Tt === "application/xhtml+xml" && Lr[d.namespaceURI]) : !1
         },
         Te = function(d) {
             Lt(t.removed, {
@@ -4507,7 +4507,7 @@ function hn() {
                 k(d)
             }
         },
-        Yt = function(d, v) {
+        Zt = function(d, v) {
             try {
                 Lt(t.removed, {
                     attribute: v.getAttributeNode(d),
@@ -4519,19 +4519,19 @@ function hn() {
                     from: v
                 })
             }
-            if (v.removeAttribute(d), d === "is" && !M[d])
+            if (v.removeAttribute(d), d === "is" && !x[d])
                 if (it || jt) try {
                     Te(v)
                 } catch {} else try {
                     v.setAttribute(d, "")
                 } catch {}
         },
-        H1 = function(d) {
+        W1 = function(d) {
             let v = null,
                 w = null;
             if (Dr) d = "<remove></remove>" + d;
             else {
-                const J = nn(d, /^[\r\n\t ]+/);
+                const J = rn(d, /^[\r\n\t ]+/);
                 w = J && J[0]
             }
             Tt === "application/xhtml+xml" && ot === Ie && (d = '<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>' + d + "</body></html>");
@@ -4540,7 +4540,7 @@ function hn() {
                 v = new p().parseFromString($, Tt)
             } catch {}
             if (!v || !v.documentElement) {
-                v = N.createDocument(ot, "template", null);
+                v = R.createDocument(ot, "template", null);
                 try {
                     v.documentElement.innerHTML = Ir ? E : $
                 } catch {}
@@ -4548,13 +4548,13 @@ function hn() {
             const ee = v.body || v.documentElement;
             return d && w && ee.insertBefore(r.createTextNode(w), ee.childNodes[0] || null), ot === Ie ? he.call(v, qe ? "html" : "body")[0] : qe ? v.documentElement : ee
         },
-        z1 = function(d) {
+        H1 = function(d) {
             return P.call(d.ownerDocument || d, d, c.SHOW_ELEMENT | c.SHOW_COMMENT | c.SHOW_TEXT | c.SHOW_PROCESSING_INSTRUCTION | c.SHOW_CDATA_SECTION, null)
         },
-        j1 = function(d) {
+        z1 = function(d) {
             return d instanceof h && (typeof d.nodeName != "string" || typeof d.textContent != "string" || typeof d.removeChild != "function" || !(d.attributes instanceof f) || typeof d.removeAttribute != "function" || typeof d.setAttribute != "function" || typeof d.namespaceURI != "string" || typeof d.insertBefore != "function" || typeof d.hasChildNodes != "function")
         },
-        q1 = function(d) {
+        j1 = function(d) {
             return typeof l == "function" && d instanceof l
         },
         Le = function(d, v, w) {
@@ -4562,17 +4562,17 @@ function hn() {
                 $.call(t, v, w, at)
             })
         },
-        K1 = function(d) {
+        q1 = function(d) {
             let v = null;
-            if (Le("beforeSanitizeElements", d, null), j1(d)) return Te(d), !0;
+            if (Le("beforeSanitizeElements", d, null), z1(d)) return Te(d), !0;
             const w = Q(d.nodeName);
             if (Le("uponSanitizeElement", d, {
                     tagName: w,
                     allowedTags: D
-                }), d.hasChildNodes() && !q1(d.firstElementChild) && ne(/<[/\w]/g, d.innerHTML) && ne(/<[/\w]/g, d.textContent) || d.nodeType === Mt.progressingInstruction || Tr && d.nodeType === Mt.comment && ne(/<[/\w]/g, d.data)) return Te(d), !0;
+                }), d.hasChildNodes() && !j1(d.firstElementChild) && ne(/<[/\w]/g, d.innerHTML) && ne(/<[/\w]/g, d.textContent) || d.nodeType === xt.progressingInstruction || Tr && d.nodeType === xt.comment && ne(/<[/\w]/g, d.data)) return Te(d), !0;
             if (!D[w] || _e[w]) {
-                if (!_e[w] && Y1(w) && (B.tagNameCheck instanceof RegExp && ne(B.tagNameCheck, w) || B.tagNameCheck instanceof Function && B.tagNameCheck(w))) return !1;
-                if (Rr && !st[w]) {
+                if (!_e[w] && K1(w) && (B.tagNameCheck instanceof RegExp && ne(B.tagNameCheck, w) || B.tagNameCheck instanceof Function && B.tagNameCheck(w))) return !1;
+                if (Nr && !st[w]) {
                     const $ = V(d) || d.parentNode,
                         ee = de(d) || d.childNodes;
                     if (ee && $) {
@@ -4585,21 +4585,21 @@ function hn() {
                 }
                 return Te(d), !0
             }
-            return d instanceof u && !Ds(d) || (w === "noscript" || w === "noembed" || w === "noframes") && ne(/<\/no(script|embed|frames)/i, d.innerHTML) ? (Te(d), !0) : (rt && d.nodeType === Mt.text && (v = d.textContent, fr([yt, bt, wt], $ => {
+            return d instanceof u && !Ds(d) || (w === "noscript" || w === "noembed" || w === "noframes") && ne(/<\/no(script|embed|frames)/i, d.innerHTML) ? (Te(d), !0) : (rt && d.nodeType === xt.text && (v = d.textContent, fr([yt, bt, wt], $ => {
                 v = kt(v, $, " ")
             }), d.textContent !== v && (Lt(t.removed, {
                 element: d.cloneNode()
             }), d.textContent = v)), Le("afterSanitizeElements", d, null), !1)
         },
         G1 = function(d, v, w) {
-            if (S1 && (v === "id" || v === "name") && (w in r || w in Ts)) return !1;
+            if (k1 && (v === "id" || v === "name") && (w in r || w in Ts)) return !1;
             if (!(At && !tt[v] && ne(b, v))) {
                 if (!(je && ne(g, v))) {
-                    if (!M[v] || tt[v]) {
-                        if (!(Y1(d) && (B.tagNameCheck instanceof RegExp && ne(B.tagNameCheck, d) || B.tagNameCheck instanceof Function && B.tagNameCheck(d)) && (B.attributeNameCheck instanceof RegExp && ne(B.attributeNameCheck, v) || B.attributeNameCheck instanceof Function && B.attributeNameCheck(v)) || v === "is" && B.allowCustomizedBuiltInElements && (B.tagNameCheck instanceof RegExp && ne(B.tagNameCheck, w) || B.tagNameCheck instanceof Function && B.tagNameCheck(w)))) return !1
-                    } else if (!Nr[v]) {
-                        if (!ne(R, kt(w, _, ""))) {
-                            if (!((v === "src" || v === "xlink:href" || v === "href") && d !== "script" && Ma(w, "data:") === 0 && P1[d])) {
+                    if (!x[v] || tt[v]) {
+                        if (!(K1(d) && (B.tagNameCheck instanceof RegExp && ne(B.tagNameCheck, d) || B.tagNameCheck instanceof Function && B.tagNameCheck(d)) && (B.attributeNameCheck instanceof RegExp && ne(B.attributeNameCheck, v) || B.attributeNameCheck instanceof Function && B.attributeNameCheck(v)) || v === "is" && B.allowCustomizedBuiltInElements && (B.tagNameCheck instanceof RegExp && ne(B.tagNameCheck, w) || B.tagNameCheck instanceof Function && B.tagNameCheck(w)))) return !1
+                    } else if (!Rr[v]) {
+                        if (!ne(N, kt(w, _, ""))) {
+                            if (!((v === "src" || v === "xlink:href" || v === "href") && d !== "script" && xa(w, "data:") === 0 && x1[d])) {
                                 if (!(zt && !ne(y, kt(w, _, "")))) {
                                     if (w) return !1
                                 }
@@ -4610,8 +4610,8 @@ function hn() {
             }
             return !0
         },
-        Y1 = function(d) {
-            return d !== "annotation-xml" && nn(d, T)
+        K1 = function(d) {
+            return d !== "annotation-xml" && rn(d, T)
         },
         Z1 = function(d) {
             Le("beforeSanitizeAttributes", d, null);
@@ -4623,7 +4623,7 @@ function hn() {
                 attrName: "",
                 attrValue: "",
                 keepAttr: !0,
-                allowedAttributes: M
+                allowedAttributes: x
             };
             let $ = v.length;
             for (; $--;) {
@@ -4635,21 +4635,21 @@ function hn() {
                     } = ee,
                     Ot = Q(J);
                 let re = J === "value" ? Oe : Pa(Oe);
-                if (w.attrName = Ot, w.attrValue = re, w.keepAttr = !0, w.forceKeepAttr = void 0, Le("uponSanitizeAttribute", d, w), re = w.attrValue, w.forceKeepAttr || (Yt(J, d), !w.keepAttr)) continue;
-                if (!k1 && ne(/\/>/i, re)) {
-                    Yt(J, d);
+                if (w.attrName = Ot, w.attrValue = re, w.keepAttr = !0, w.forceKeepAttr = void 0, Le("uponSanitizeAttribute", d, w), re = w.attrValue, w.forceKeepAttr || (Zt(J, d), !w.keepAttr)) continue;
+                if (!L1 && ne(/\/>/i, re)) {
+                    Zt(J, d);
                     continue
                 }
-                rt && fr([yt, bt, wt], X1 => {
-                    re = kt(re, X1, " ")
+                rt && fr([yt, bt, wt], Q1 => {
+                    re = kt(re, Q1, " ")
                 });
-                const Q1 = Q(d.nodeName);
-                if (G1(Q1, Ot, re)) {
-                    if (x1 && (Ot === "id" || Ot === "name") && (Yt(J, d), re = bs + re), Tr && ne(/((--!?|])>)|<\/(style|title)/i, re)) {
-                        Yt(J, d);
+                const Y1 = Q(d.nodeName);
+                if (G1(Y1, Ot, re)) {
+                    if (S1 && (Ot === "id" || Ot === "name") && (Zt(J, d), re = bs + re), Tr && ne(/((--!?|])>)|<\/(style|title)/i, re)) {
+                        Zt(J, d);
                         continue
                     }
-                    if (z && typeof m == "object" && typeof m.getAttributeType == "function" && !oe) switch (m.getAttributeType(Q1, Ot)) {
+                    if (z && typeof m == "object" && typeof m.getAttributeType == "function" && !oe) switch (m.getAttributeType(Y1, Ot)) {
                         case "TrustedHTML": {
                             re = z.createHTML(re);
                             break
@@ -4660,16 +4660,16 @@ function hn() {
                         }
                     }
                     try {
-                        oe ? d.setAttributeNS(oe, J, re) : d.setAttribute(J, re), j1(d) ? Te(d) : rn(t.removed)
+                        oe ? d.setAttributeNS(oe, J, re) : d.setAttribute(J, re), z1(d) ? Te(d) : tn(t.removed)
                     } catch {}
                 }
             }
             Le("afterSanitizeAttributes", d, null)
         },
-        Rs = function O(d) {
+        Ns = function O(d) {
             let v = null;
-            const w = z1(d);
-            for (Le("beforeSanitizeShadowDOM", d, null); v = w.nextNode();) Le("uponSanitizeShadowNode", v, null), !K1(v) && (v.content instanceof o && O(v.content), Z1(v));
+            const w = H1(d);
+            for (Le("beforeSanitizeShadowDOM", d, null); v = w.nextNode();) Le("uponSanitizeShadowNode", v, null), !q1(v) && (v.content instanceof o && O(v.content), Z1(v));
             Le("afterSanitizeShadowDOM", d, null)
         };
     return t.sanitize = function(O) {
@@ -4678,7 +4678,7 @@ function hn() {
             w = null,
             $ = null,
             ee = null;
-        if (Ir = !O, Ir && (O = "<!-->"), typeof O != "string" && !q1(O))
+        if (Ir = !O, Ir && (O = "<!-->"), typeof O != "string" && !j1(O))
             if (typeof O.toString == "function") {
                 if (O = O.toString(), typeof O != "string") throw St("dirty is not a string, aborting")
             } else throw St("toString is not a function");
@@ -4688,23 +4688,23 @@ function hn() {
                 const Oe = Q(O.nodeName);
                 if (!D[Oe] || _e[Oe]) throw St("root node is forbidden and cannot be sanitized in-place")
             }
-        } else if (O instanceof l) v = H1("<!---->"), w = v.ownerDocument.importNode(O, !0), w.nodeType === Mt.element && w.nodeName === "BODY" || w.nodeName === "HTML" ? v = w : v.appendChild(w);
+        } else if (O instanceof l) v = W1("<!---->"), w = v.ownerDocument.importNode(O, !0), w.nodeType === xt.element && w.nodeName === "BODY" || w.nodeName === "HTML" ? v = w : v.appendChild(w);
         else {
             if (!it && !rt && !qe && O.indexOf("<") === -1) return z && qt ? z.createHTML(O) : O;
-            if (v = H1(O), !v) return it ? null : qt ? E : ""
+            if (v = W1(O), !v) return it ? null : qt ? E : ""
         }
         v && Dr && Te(v.firstChild);
-        const J = z1(Et ? O : v);
-        for (; $ = J.nextNode();) K1($) || ($.content instanceof o && Rs($.content), Z1($));
+        const J = H1(Et ? O : v);
+        for (; $ = J.nextNode();) q1($) || ($.content instanceof o && Ns($.content), Z1($));
         if (Et) return O;
         if (it) {
             if (jt)
-                for (ee = G.call(v.ownerDocument); v.firstChild;) ee.appendChild(v.firstChild);
+                for (ee = K.call(v.ownerDocument); v.firstChild;) ee.appendChild(v.firstChild);
             else ee = v;
-            return (M.shadowroot || M.shadowrootmode) && (ee = et.call(i, ee, !0)), ee
+            return (x.shadowroot || x.shadowrootmode) && (ee = et.call(i, ee, !0)), ee
         }
         let oe = qe ? v.outerHTML : v.innerHTML;
-        return qe && D["!doctype"] && v.ownerDocument && v.ownerDocument.doctype && v.ownerDocument.doctype.name && ne(un, v.ownerDocument.doctype.name) && (oe = "<!DOCTYPE " + v.ownerDocument.doctype.name + `>
+        return qe && D["!doctype"] && v.ownerDocument && v.ownerDocument.doctype && v.ownerDocument.doctype.name && ne(cn, v.ownerDocument.doctype.name) && (oe = "<!DOCTYPE " + v.ownerDocument.doctype.name + `>
 ` + oe), rt && fr([yt, bt, wt], Oe => {
             oe = kt(oe, Oe, " ")
         }), z && qt ? z.createHTML(oe) : oe
@@ -4721,16 +4721,16 @@ function hn() {
     }, t.addHook = function(O, d) {
         typeof d == "function" && (fe[O] = fe[O] || [], Lt(fe[O], d))
     }, t.removeHook = function(O) {
-        if (fe[O]) return rn(fe[O])
+        if (fe[O]) return tn(fe[O])
     }, t.removeHooks = function(O) {
         fe[O] && (fe[O] = [])
     }, t.removeAllHooks = function() {
         fe = {}
     }, t
 }
-var wc = hn();
+var Nc = dn();
 
-function Za(e) {
+function Ya(e) {
     return o1(e, 0)
 }
 
@@ -4739,7 +4739,7 @@ function o1(e, t) {
         case "object":
             return e === null ? Ue(349, t) : Array.isArray(e) ? Xa(e, t) : Ja(e, t);
         case "string":
-            return fn(e, t);
+            return hn(e, t);
         case "boolean":
             return Qa(e, t);
         case "number":
@@ -4759,7 +4759,7 @@ function Qa(e, t) {
     return Ue(e ? 433 : 863, t)
 }
 
-function fn(e, t) {
+function hn(e, t) {
     t = Ue(149417, t);
     for (let r = 0, i = e.length; r < i; r++) t = Ue(e.charCodeAt(r), t);
     return t
@@ -4770,12 +4770,12 @@ function Xa(e, t) {
 }
 
 function Ja(e, t) {
-    return t = Ue(181387, t), Object.keys(e).sort().reduce((r, i) => (r = fn(i, r), o1(e[i], r)), t)
+    return t = Ue(181387, t), Object.keys(e).sort().reduce((r, i) => (r = hn(i, r), o1(e[i], r)), t)
 }
-var pn;
+var fn;
 (function(e) {
     e[e.BLOCK_SIZE = 64] = "BLOCK_SIZE", e[e.UNICODE_REPLACEMENT = 65533] = "UNICODE_REPLACEMENT"
-})(pn || (pn = {}));
+})(fn || (fn = {}));
 
 function a1(e, t, r = 32) {
     const i = r - t,
@@ -4786,7 +4786,7 @@ function a1(e, t, r = 32) {
 function Pt(e, t = 32) {
     return e instanceof ArrayBuffer ? Array.from(new Uint8Array(e)).map(r => r.toString(16).padStart(2, "0")).join("") : (e >>> 0).toString(16).padStart(t / 4, "0")
 }
-var Ac = class _s {
+var Rc = class _s {
         static {
             this._bigBlock32 = new DataView(new ArrayBuffer(320))
         }
@@ -4805,12 +4805,12 @@ var Ac = class _s {
                 if (aa(a))
                     if (l + 1 < r) {
                         const c = t.charCodeAt(l + 1);
-                        xi(c) ? (l++, u = la(a, c)) : u = 65533
+                        Si(c) ? (l++, u = la(a, c)) : u = 65533
                     } else {
                         o = a;
                         break
                     }
-                else xi(a) && (u = 65533);
+                else Si(a) && (u = 65533);
                 if (s = this._push(i, s, u), l++, l < r) a = t.charCodeAt(l);
                 else break
             }
@@ -4842,16 +4842,22 @@ var Ac = class _s {
             this._h0 = this._h0 + i & 4294967295, this._h1 = this._h1 + s & 4294967295, this._h2 = this._h2 + o & 4294967295, this._h3 = this._h3 + a & 4294967295, this._h4 = this._h4 + l & 4294967295
         }
     },
-    Ec = Date.now(),
-    l1 = ["anysphere.cursor-resolver", "anysphere.cursor-agent-exec", "anysphere.cursor-commits", "anysphere.cursor-mcp", "anysphere.cursor-ndjson-ingest", "anysphere.cursor-retrieval", "anysphere.remote-ssh", "cursor.cursor-browser-automation", "vscode.git", "vscode.git-base", "vscode.vscode-theme-seti", "undefined_publisher.cursor-themes", "vscode.typescript", "vscode.javascript", "vscode.python", "vscode.json", "vscode.html", "vscode.css", "vscode.markdown", "vscode.yaml", "vscode.xml", "vscode.go", "vscode.rust", "vscode.cpp", "vscode.java", "vscode.csharp", "vscode.ruby", "vscode.sql", "vscode.shellscript", "vscode.swift", "vscode.dart", "vscode.scss", "vscode.less", "vscode.lua", "vscode.perl", "vscode.r", "vscode.php", "vscode.docker", "vscode.ini", "vscode.diff", "vscode.make", "vscode.log"],
-    Tc = [...l1, "anysphere.cursor-always-local", "anysphere.cursor-socket", "vscode.github-authentication"],
-    Oc = [...l1],
-    Dc = [...l1, "anysphere.cursor-always-local", "anysphere.cursor-socket"],
+    Ic = Date.now(),
+    Lc = 1800 * 1e3,
+    pn = ["anysphere.cursor-resolver", "anysphere.cursor-agent-exec", "anysphere.cursor-checkout", "anysphere.cursor-explorer", "anysphere.cursor-commits", "anysphere.cursor-mcp", "anysphere.cursor-ndjson-ingest", "anysphere.cursor-retrieval", "cursor.cursor-browser-automation", "vscode.git", "vscode.git-base", "vscode.vscode-theme-seti", "undefined_publisher.cursor-themes", "vscode.typescript", "vscode.javascript", "vscode.python", "vscode.json", "vscode.html", "vscode.css", "vscode.markdown", "vscode.yaml", "vscode.xml", "vscode.go", "vscode.rust", "vscode.cpp", "vscode.java", "vscode.csharp", "vscode.ruby", "vscode.sql", "vscode.shellscript", "vscode.swift", "vscode.dart", "vscode.scss", "vscode.less", "vscode.lua", "vscode.perl", "vscode.r", "vscode.php", "vscode.docker", "vscode.ini", "vscode.diff", "vscode.make", "vscode.log", "vscodevim.vim", "tuttieee.emacs-mcx"],
+    e0 = ["vscode.css-language-features", "vscode.html-language-features", "vscode.json-language-features", "vscode.php-language-features", "vscode.typescript-language-features", "ms-python.python", "ms-python.vscode-pylance", "golang.go", "prisma.prisma", "dbaeumer.vscode-eslint", "charliermarsh.ruff", "rust-lang.rust-analyzer"],
+    t0 = [...pn, "anysphere.cursor-deeplink", "anysphere.cursor-resolver-helper", "anysphere.cursor-always-local", "anysphere.cursor-socket", "vscode.github-authentication"],
+    r0 = [...pn, "anysphere.remote-ssh"],
+    i0 = [...r0, ...e0],
+    kc = [...i0, ...t0],
     mn = "src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage",
-    Rc = `${mn}.applicationUser`,
-    Nc = `${mn}.applicationUser.subscription`,
-    e0 = "workbench.panel.aichat.view",
-    Ic = e0 + ".aichat.chatdata",
+    Sc = `${mn}.applicationUser`,
+    Mc = `${mn}.applicationUser.subscription`,
+    n0 = "workbench.panel.aichat.view",
+    xc = n0 + ".aichat.chatdata",
+    s0 = [.85, 1, 1.15, 1.3],
+    o0 = "default",
+    Pc = [o0, ...s0.map(e => `${e}`)],
     gn;
 (function(e) {
     e.Agent = "agent", e.Editor = "editor"
@@ -4864,36 +4870,36 @@ var _n;
 (function(e) {
     e.All = "all", e.Pending = "pending", e.DiffWithMain = "diffWithMain", e.PR = "pr"
 })(_n || (_n = {}));
-var t0 = ["aichat.newchataction", "composer.focusComposer", "aiSettings.action.open", "workbench.action.openSettings", "workbench.action.showCommands", "workbench.action.togglePanel", "workbench.action.toggleSidebarVisibility", "workbench.action.toggleUnifiedSidebar", "workbench.action.toggleAuxiliaryBar", "workbench.action.toggleFullScreen", "workbench.action.terminal.toggleTerminal", "workbench.action.terminal.new", "workbench.action.quickOpen", "workbench.action.closeActiveEditor", "workbench.action.newBrowserTab", "workbench.action.reloadBrowserTab", "workbench.action.focusBrowserLocationBar"],
-    r0 = ["glass.newBrowser", "glass.nextTab", "glass.previousTab", "glass.focusBrowserLocationBar", "glass.togglePanel", "glass.toggleSidebar", "glass.toggleTerminal"],
-    Lc = new Set([...t0, ...r0]),
+var a0 = ["aichat.newchataction", "composer.focusComposer", "aiSettings.action.open", "workbench.action.openSettings", "workbench.action.showCommands", "workbench.action.togglePanel", "workbench.action.toggleSidebarVisibility", "workbench.action.toggleUnifiedSidebar", "workbench.action.toggleAuxiliaryBar", "workbench.action.toggleFullScreen", "workbench.action.terminal.toggleTerminal", "workbench.action.terminal.new", "workbench.action.quickOpen", "workbench.action.closeActiveEditor", "workbench.action.newBrowserTab", "workbench.action.reloadBrowserTab", "workbench.action.focusBrowserLocationBar"],
+    l0 = ["glass.newBrowser", "glass.newTab", "glass.openEditorPanelNewTabMenu", "glass.nextTab", "glass.previousTab", "glass.goToTab1", "glass.goToTab2", "glass.goToTab3", "glass.goToTab4", "glass.goToTab5", "glass.goToTab6", "glass.goToTab7", "glass.goToTab8", "glass.goToTab9", "glass.focusBrowserLocationBar", "glass.showBrowserFind", "glass.hideBrowserFind", "glass.togglePanel", "glass.toggleSidebar", "glass.toggleTerminal"],
+    Fc = new Set([...a0, ...l0]),
     He = class {
         constructor(e, t, r) {
             this.owner = e, this.debugNameSource = t, this.referenceFn = r
         }
         getDebugName(e) {
-            return i0(e, this)
+            return c0(e, this)
         }
     },
     yn = new Map,
-    c1 = new WeakMap;
+    l1 = new WeakMap;
 
-function i0(e, t) {
-    const r = c1.get(e);
+function c0(e, t) {
+    const r = l1.get(e);
     if (r) return r;
-    const i = n0(e, t);
+    const i = u0(e, t);
     if (i) {
         let s = yn.get(i) ?? 0;
         s++, yn.set(i, s);
         const o = s === 1 ? i : `${i}#${s}`;
-        return c1.set(e, o), o
+        return l1.set(e, o), o
     }
 }
 
-function n0(e, t) {
-    const r = c1.get(e);
+function u0(e, t) {
+    const r = l1.get(e);
     if (r) return r;
-    const i = t.owner ? o0(t.owner) + "." : "";
+    const i = t.owner ? h0(t.owner) + "." : "";
     let s;
     const o = t.debugNameSource;
     if (o !== void 0)
@@ -4901,21 +4907,21 @@ function n0(e, t) {
             if (s = o(), s !== void 0) return i + s
         } else return i + o;
     const a = t.referenceFn;
-    if (a !== void 0 && (s = u1(a), s !== void 0)) return i + s;
+    if (a !== void 0 && (s = c1(a), s !== void 0)) return i + s;
     if (t.owner !== void 0) {
-        const l = s0(t.owner, e);
+        const l = d0(t.owner, e);
         if (l !== void 0) return i + l
     }
 }
 
-function s0(e, t) {
+function d0(e, t) {
     for (const r in e)
         if (e[r] === t) return r
 }
 var bn = new Map,
     wn = new WeakMap;
 
-function o0(e) {
+function h0(e) {
     const t = wn.get(e);
     if (t) return t;
     const r = An(e) ?? "Object";
@@ -4930,29 +4936,29 @@ function An(e) {
     if (t) return t.name === "Object" ? void 0 : t.name
 }
 
-function u1(e) {
+function c1(e) {
     const t = e.toString(),
         i = /\/\*\*\s*@description\s*([^*]*)\*\//.exec(t);
     return (i ? i[1] : void 0)?.trim()
 }
 var pt = (e, t) => e === t,
-    Ze;
+    Ye;
 
-function d1(e) {
-    Ze ? Ze instanceof En ? Ze.loggers.push(e) : Ze = new En([Ze, e]) : Ze = e
+function u1(e) {
+    Ye ? Ye instanceof En ? Ye.loggers.push(e) : Ye = new En([Ye, e]) : Ye = e
 }
 
-function Z() {
-    return Ze
+function Y() {
+    return Ye
 }
-var h1 = void 0;
+var d1 = void 0;
 
-function a0(e) {
-    h1 = e
+function f0(e) {
+    d1 = e
 }
 
-function l0(e) {
-    h1 && h1(e)
+function p0(e) {
+    d1 && d1(e)
 }
 var En = class {
         constructor(e) {
@@ -4997,20 +5003,20 @@ var En = class {
     },
     Tn;
 
-function c0(e) {
+function m0(e) {
     Tn = e
 }
 var On;
 
-function u0(e) {
+function g0(e) {
     On = e
 }
-var f1;
+var h1;
 
-function d0(e) {
-    f1 = e
+function v0(e) {
+    h1 = e
 }
-var h0 = class {
+var _0 = class {
         get TChange() {
             return null
         }
@@ -5023,10 +5029,10 @@ var h0 = class {
         map(e, t) {
             const r = t === void 0 ? void 0 : e,
                 i = t === void 0 ? e : t;
-            return f1({
+            return h1({
                 owner: r,
                 debugName: () => {
-                    const s = u1(i);
+                    const s = c1(i);
                     if (s !== void 0) return s;
                     const a = /^\s*\(?\s*([a-zA-Z_$][a-zA-Z_$0-9]*)\s*\)?\s*=>\s*\1(?:\??)\.([a-zA-Z_$][a-zA-Z_$0-9]*)\s*$/.exec(i.toString());
                     if (a) return `${this.debugName}.${a[2]}`;
@@ -5036,7 +5042,7 @@ var h0 = class {
             }, s => i(this.read(s), s))
         }
         flatten() {
-            return f1({
+            return h1({
                 owner: void 0,
                 debugName: () => `${this.debugName} (flattened)`
             }, e => this.read(e).read(e))
@@ -5051,23 +5057,23 @@ var h0 = class {
             return this.get()
         }
     },
-    p1 = class extends h0 {
+    f1 = class extends _0 {
         constructor() {
-            super(), this._observers = new Set, Z()?.handleObservableCreated(this)
+            super(), this._observers = new Set, Y()?.handleObservableCreated(this)
         }
         addObserver(e) {
             const t = this._observers.size;
-            this._observers.add(e), t === 0 && this.onFirstObserverAdded(), t !== this._observers.size && Z()?.handleOnListenerCountChanged(this, this._observers.size)
+            this._observers.add(e), t === 0 && this.onFirstObserverAdded(), t !== this._observers.size && Y()?.handleOnListenerCountChanged(this, this._observers.size)
         }
         removeObserver(e) {
             const t = this._observers.delete(e);
-            t && this._observers.size === 0 && this.onLastObserverRemoved(), t && Z()?.handleOnListenerCountChanged(this, this._observers.size)
+            t && this._observers.size === 0 && this.onLastObserverRemoved(), t && Y()?.handleOnListenerCountChanged(this, this._observers.size)
         }
         onFirstObserverAdded() {}
         onLastObserverRemoved() {}
         log() {
-            const e = !!Z();
-            return l0(this), e || Z()?.handleObservableCreated(this), this
+            const e = !!Y();
+            return p0(this), e || Y()?.handleObservableCreated(this), this
         }
         debugGetObservers() {
             return this._observers
@@ -5075,7 +5081,7 @@ var h0 = class {
     };
 
 function Dn(e, t) {
-    const r = new Rn(e, t);
+    const r = new Nn(e, t);
     try {
         e(r)
     } finally {
@@ -5083,19 +5089,19 @@ function Dn(e, t) {
     }
 }
 
-function f0(e, t, r) {
+function y0(e, t, r) {
     e ? t(e) : Dn(t, r)
 }
-var Rn = class {
+var Nn = class {
     constructor(e, t) {
-        this._fn = e, this._getDebugName = t, this._updatingObservers = [], Z()?.handleBeginTransaction(this)
+        this._fn = e, this._getDebugName = t, this._updatingObservers = [], Y()?.handleBeginTransaction(this)
     }
     getDebugName() {
-        return this._getDebugName ? this._getDebugName() : u1(this._fn)
+        return this._getDebugName ? this._getDebugName() : c1(this._fn)
     }
     updateObserver(e, t) {
         if (!this._updatingObservers) {
-            Nn("Transaction already finished!"), Dn(r => {
+            Rn("Transaction already finished!"), Dn(r => {
                 r.updateObserver(e, t)
             });
             return
@@ -5108,7 +5114,7 @@ var Rn = class {
     finish() {
         const e = this._updatingObservers;
         if (!e) {
-            Nn("transaction.finish() has already been called!");
+            Rn("transaction.finish() has already been called!");
             return
         }
         for (let t = 0; t < e.length; t++) {
@@ -5118,28 +5124,28 @@ var Rn = class {
             } = e[t];
             r.endUpdate(i)
         }
-        this._updatingObservers = null, Z()?.handleEndTransaction(this)
+        this._updatingObservers = null, Y()?.handleEndTransaction(this)
     }
     debugGetUpdatingObservers() {
         return this._updatingObservers
     }
 };
 
-function Nn(e) {
+function Rn(e) {
     const t = new Error("BugIndicatingErrorRecovery: " + e);
     ke(t), console.error("recovered from an error that indicates a bug", t)
 }
 
 function In(e, t) {
     let r;
-    return typeof e == "string" ? r = new He(void 0, e, void 0) : r = new He(e, void 0, void 0), new m1(r, t, pt)
+    return typeof e == "string" ? r = new He(void 0, e, void 0) : r = new He(e, void 0, void 0), new p1(r, t, pt)
 }
-var m1 = class extends p1 {
+var p1 = class extends f1 {
     get debugName() {
         return this._debugNameData.getDebugName(this) ?? "ObservableValue"
     }
     constructor(e, t, r) {
-        super(), this._debugNameData = e, this._equalityComparator = r, this._value = t, Z()?.handleObservableUpdated(this, {
+        super(), this._debugNameData = e, this._equalityComparator = r, this._value = t, Y()?.handleObservableUpdated(this, {
             hadValue: !1,
             newValue: t,
             change: void 0,
@@ -5153,10 +5159,10 @@ var m1 = class extends p1 {
     set(e, t, r) {
         if (r === void 0 && this._equalityComparator(this._value, e)) return;
         let i;
-        t || (t = i = new Rn(() => {}, () => `Setting ${this.debugName}`));
+        t || (t = i = new Nn(() => {}, () => `Setting ${this.debugName}`));
         try {
             const s = this._value;
-            this._setValue(e), Z()?.handleObservableUpdated(this, {
+            this._setValue(e), Y()?.handleObservableUpdated(this, {
                 oldValue: s,
                 newValue: e,
                 change: r,
@@ -5185,24 +5191,24 @@ var m1 = class extends p1 {
 };
 
 function Ln(e) {
-    return new g1(new He(void 0, void 0, e), e, void 0, void 0)
+    return new m1(new He(void 0, void 0, e), e, void 0, void 0)
 }
 var kn;
 (function(e) {
     e[e.dependenciesMightHaveChanged = 1] = "dependenciesMightHaveChanged", e[e.stale = 2] = "stale", e[e.upToDate = 3] = "upToDate"
 })(kn || (kn = {}));
-var g1 = class {
+var m1 = class {
     get debugName() {
         return this._debugNameData.getDebugName(this) ?? "(anonymous)"
     }
     constructor(e, t, r, i) {
-        this._debugNameData = e, this._runFn = t, this.createChangeSummary = r, this._handleChange = i, this._state = 2, this._updateCount = 0, this._disposed = !1, this._dependencies = new Set, this._dependenciesToBeRemoved = new Set, this._isRunning = !1, this._changeSummary = this.createChangeSummary?.(), Z()?.handleAutorunCreated(this), this._run(), Qt(this)
+        this._debugNameData = e, this._runFn = t, this.createChangeSummary = r, this._handleChange = i, this._state = 2, this._updateCount = 0, this._disposed = !1, this._dependencies = new Set, this._dependenciesToBeRemoved = new Set, this._isRunning = !1, this._changeSummary = this.createChangeSummary?.(), Y()?.handleAutorunCreated(this), this._run(), Qt(this)
     }
     dispose() {
         if (!this._disposed) {
             this._disposed = !0;
             for (const e of this._dependencies) e.removeObserver(this);
-            this._dependencies.clear(), Z()?.handleAutorunDisposed(this), Xt(this)
+            this._dependencies.clear(), Y()?.handleAutorunDisposed(this), Xt(this)
         }
     }
     _run() {
@@ -5210,18 +5216,18 @@ var g1 = class {
         this._dependenciesToBeRemoved = this._dependencies, this._dependencies = e, this._state = 3;
         try {
             if (!this._disposed) {
-                Z()?.handleAutorunStarted(this);
+                Y()?.handleAutorunStarted(this);
                 const t = this._changeSummary;
                 try {
                     this._changeSummary = this.createChangeSummary?.(), this._isRunning = !0, this._runFn(this, t)
                 } catch (r) {
-                    Zt(r)
+                    Yt(r)
                 } finally {
                     this._isRunning = !1
                 }
             }
         } finally {
-            this._disposed || Z()?.handleAutorunFinished(this);
+            this._disposed || Y()?.handleAutorunFinished(this);
             for (const t of this._dependenciesToBeRemoved) t.removeObserver(this);
             this._dependenciesToBeRemoved.clear()
         }
@@ -5246,14 +5252,14 @@ var g1 = class {
         } finally {
             this._updateCount--
         }
-        ai(() => this._updateCount >= 0)
+        oi(() => this._updateCount >= 0)
     }
     handlePossibleChange(e) {
         this._state === 3 && this._isDependency(e) && (this._state = 1)
     }
     handleChange(e, t) {
         if (this._isDependency(e)) {
-            Z()?.handleAutorunDependencyChanged(this, e, t);
+            Y()?.handleAutorunDependencyChanged(this, e, t);
             try {
                 (this._handleChange ? this._handleChange({
                     changedObservable: e,
@@ -5261,7 +5267,7 @@ var g1 = class {
                     didChange: i => i === e
                 }, this._changeSummary) : !0) && (this._state = 2)
             } catch (r) {
-                Zt(r)
+                Yt(r)
             }
         }
     }
@@ -5288,19 +5294,19 @@ var g1 = class {
     }
 };
 (function(e) {
-    e.Observer = g1
+    e.Observer = m1
 })(Ln || (Ln = {}));
 
 function gr(e, t) {
     return t !== void 0 ? new ge(new He(e, void 0, t), t, void 0, void 0, void 0, pt) : new ge(new He(void 0, void 0, e), e, void 0, void 0, void 0, pt)
 }
 
-function v1(e, t) {
+function g1(e, t) {
     return new ge(new He(e.owner, e.debugName, e.debugReferenceFn), t, void 0, void 0, e.onLastObserverRemoved, e.equalsFn ?? pt)
 }
-d0(v1);
+v0(g1);
 
-function p0(e, t) {
+function b0(e, t) {
     let r, i;
     t === void 0 ? (r = e, i = void 0) : (i = e, r = t);
     let s = new be;
@@ -5310,7 +5316,7 @@ var Sn;
 (function(e) {
     e[e.initial = 0] = "initial", e[e.dependenciesMightHaveChanged = 1] = "dependenciesMightHaveChanged", e[e.stale = 2] = "stale", e[e.upToDate = 3] = "upToDate"
 })(Sn || (Sn = {}));
-var ge = class extends p1 {
+var ge = class extends f1 {
     get debugName() {
         return this._debugNameData.getDebugName(this) ?? "(anonymous)"
     }
@@ -5318,7 +5324,7 @@ var ge = class extends p1 {
         super(), this._debugNameData = e, this._computeFn = t, this.createChangeSummary = r, this._handleChange = i, this._handleLastObserverRemoved = s, this._equalityComparator = o, this._state = 0, this._value = void 0, this._updateCount = 0, this._dependencies = new Set, this._dependenciesToBeRemoved = new Set, this._changeSummary = void 0, this._isUpdating = !1, this._isComputing = !1, this._removedObserverToCallEndUpdateOn = null, this._isReaderValid = !1, this._changeSummary = this.createChangeSummary?.()
     }
     onLastObserverRemoved() {
-        this._state = 0, this._value = void 0, Z()?.handleDerivedCleared(this);
+        this._state = 0, this._value = void 0, Y()?.handleDerivedCleared(this);
         for (const e of this._dependencies) e.removeObserver(this);
         this._dependencies.clear(), this._handleLastObserverRemoved?.()
     }
@@ -5360,7 +5366,7 @@ var ge = class extends p1 {
                 for (const o of this._dependenciesToBeRemoved) o.removeObserver(this);
                 this._dependenciesToBeRemoved.clear()
             }
-            i = t && !this._equalityComparator(r, this._value), Z()?.handleObservableUpdated(this, {
+            i = t && !this._equalityComparator(r, this._value), Y()?.handleObservableUpdated(this, {
                 oldValue: r,
                 newValue: this._value,
                 change: void 0,
@@ -5368,7 +5374,7 @@ var ge = class extends p1 {
                 hadValue: t
             })
         } catch (s) {
-            Zt(s)
+            Yt(s)
         }
         if (this._isComputing = !1, i)
             for (const s of this._observers) s.handleChange(this, void 0)
@@ -5399,7 +5405,7 @@ var ge = class extends p1 {
                 for (const i of r) i.endUpdate(this)
             }
         }
-        ai(() => this._updateCount >= 0)
+        oi(() => this._updateCount >= 0)
     }
     handlePossibleChange(e) {
         if (this._state === 3 && this._dependencies.has(e) && !this._dependenciesToBeRemoved.has(e)) {
@@ -5409,7 +5415,7 @@ var ge = class extends p1 {
     }
     handleChange(e, t) {
         if (this._dependencies.has(e) && !this._dependenciesToBeRemoved.has(e)) {
-            Z()?.handleDerivedDependencyChanged(this, e, t);
+            Y()?.handleDerivedDependencyChanged(this, e, t);
             let r = !1;
             try {
                 r = this._handleChange ? this._handleChange({
@@ -5418,7 +5424,7 @@ var ge = class extends p1 {
                     didChange: s => s === e
                 }, this._changeSummary) : !0
             } catch (s) {
-                Zt(s)
+                Yt(s)
             }
             const i = this._state === 3;
             if (r && (this._state === 1 || i) && (this._state = 2, i))
@@ -5452,19 +5458,19 @@ var ge = class extends p1 {
     }
 };
 
-function xn(...e) {
+function Mn(...e) {
     let t, r, i;
     return e.length === 3 ? [t, r, i] = e : [r, i] = e, new Qe(new He(t, void 0, i), r, i, () => Qe.globalTransaction, pt)
 }
-var Qe = class extends p1 {
+var Qe = class extends f1 {
     constructor(e, t, r, i, s) {
         super(), this._debugNameData = e, this.event = t, this._getValue = r, this._getTransaction = i, this._equalityComparator = s, this._hasValue = !1, this.handleEvent = o => {
             const a = this._getValue(o),
                 l = this._value,
                 u = !this._hasValue || !this._equalityComparator(l, a);
             let c = !1;
-            u && (this._value = a, this._hasValue && (c = !0, f0(this._getTransaction(), f => {
-                Z()?.handleObservableUpdated(this, {
+            u && (this._value = a, this._hasValue && (c = !0, y0(this._getTransaction(), f => {
+                Y()?.handleObservableUpdated(this, {
                     oldValue: l,
                     newValue: a,
                     change: void 0,
@@ -5475,7 +5481,7 @@ var Qe = class extends p1 {
             }, () => {
                 const f = this.getDebugName();
                 return "Event fired" + (f ? `: ${f}` : "")
-            })), this._hasValue = !0), c || Z()?.handleObservableUpdated(this, {
+            })), this._hasValue = !0), c || Y()?.handleObservableUpdated(this, {
                 oldValue: l,
                 newValue: a,
                 change: void 0,
@@ -5517,18 +5523,18 @@ var Qe = class extends p1 {
         }
     }
     e.batchEventsGlobally = t
-})(xn || (xn = {}));
+})(Mn || (Mn = {}));
 
-function m0(e) {
-    const t = new Mn(!1, void 0);
+function w0(e) {
+    const t = new xn(!1, void 0);
     return e.addObserver(t), ye(() => {
         e.removeObserver(t)
     })
 }
-u0(m0);
+g0(w0);
 
-function g0(e, t) {
-    const r = new Mn(!0, t);
+function A0(e, t) {
+    const r = new xn(!0, t);
     e.addObserver(r);
     try {
         r.beginUpdate(e)
@@ -5539,8 +5545,8 @@ function g0(e, t) {
         e.removeObserver(r)
     })
 }
-c0(g0);
-var Mn = class {
+m0(A0);
+var xn = class {
         constructor(e, t) {
             this._forceRecompute = e, this._handleValue = t, this._counter = 0
         }
@@ -5555,8 +5561,8 @@ var Mn = class {
     },
     vr;
 
-function v0(e) {
-    vr || (vr = new Pn, d1(vr)), vr.addFilteredObj(e)
+function E0(e) {
+    vr || (vr = new Pn, u1(vr)), vr.addFilteredObj(e)
 }
 var Pn = class {
     constructor() {
@@ -5569,7 +5575,7 @@ var Pn = class {
         return this._filteredObjects?.has(e) ?? !0
     }
     textToConsoleArgs(e) {
-        return _0([mt(w0("|  ", this.indentation)), e])
+        return T0([mt(N0("|  ", this.indentation)), e])
     }
     formatInfo(e) {
         return e.hadValue ? e.didChange ? [mt(" "), ve(Ce(e.oldValue, 70), {
@@ -5677,7 +5683,7 @@ var Pn = class {
     }
 };
 
-function _0(e) {
+function T0(e) {
     const t = new Array,
         r = [];
     let i = "";
@@ -5699,7 +5705,7 @@ function mt(e) {
 }
 
 function gt(e) {
-    return ve(A0(`${e}: `, 10), {
+    return ve(R0(`${e}: `, 10), {
         color: "black",
         bold: !0
     })
@@ -5731,7 +5737,7 @@ function Ce(e, t) {
         case "undefined":
             return "undefined";
         case "object":
-            return e === null ? "null" : Array.isArray(e) ? y0(e, t) : b0(e, t);
+            return e === null ? "null" : Array.isArray(e) ? O0(e, t) : D0(e, t);
         case "symbol":
             return e.toString();
         case "function":
@@ -5741,7 +5747,7 @@ function Ce(e, t) {
     }
 }
 
-function y0(e, t) {
+function O0(e, t) {
     let r = "[ ",
         i = !0;
     for (const s of e) {
@@ -5754,7 +5760,7 @@ function y0(e, t) {
     return r += " ]", r
 }
 
-function b0(e, t) {
+function D0(e, t) {
     if (typeof e.toString == "function" && e.toString !== Object.prototype.toString) {
         const o = e.toString();
         return o.length <= t ? o : o.substring(0, t - 3) + "..."
@@ -5772,22 +5778,22 @@ function b0(e, t) {
     return i += r ? ")" : " }", i
 }
 
-function w0(e, t) {
+function N0(e, t) {
     let r = "";
     for (let i = 1; i <= t; i++) r += e;
     return r
 }
 
-function A0(e, t) {
+function R0(e, t) {
     for (; e.length < t;) e += " ";
     return e
 }
-var E0 = class L1 {
+var I0 = class I1 {
     static createHost(t, r) {
-        return new L1(t, r)
+        return new I1(t, r)
     }
     static createClient(t, r) {
-        return new L1(t, r)
+        return new I1(t, r)
     }
     constructor(t, r) {
         this._channelFactory = t, this._getHandler = r, this._channel = this._channelFactory({
@@ -5831,14 +5837,14 @@ var E0 = class L1 {
     }
 };
 
-function T0(e, t) {
+function L0(e, t) {
     const r = globalThis;
     let i = [],
         s;
     const {
         channel: o,
         handler: a
-    } = O0({
+    } = k0({
         sendNotification: u => {
             s ? s.sendNotification(u) : i.push(u)
         }
@@ -5848,13 +5854,13 @@ function T0(e, t) {
         l = t(), s = u;
         for (const c of i) u.sendNotification(c);
         return i = [], a
-    }, E0.createClient(o, () => {
+    }, I0.createClient(o, () => {
         if (!l) throw new Error("Not supported");
         return l
     })
 }
 
-function O0(e) {
+function k0(e) {
     let t;
     return {
         channel: i => (t = i, {
@@ -5877,12 +5883,12 @@ function Fn(e, t) {
     let i = -1;
     for (const s of r.slice(1)) {
         if (i++, t && t.test(s)) continue;
-        const o = D0(s);
+        const o = S0(s);
         if (o) return o
     }
 }
 
-function D0(e) {
+function S0(e) {
     const t = e.match(/\((.*):(\d+):(\d+)\)/);
     if (t) return {
         fileName: t[1],
@@ -5898,7 +5904,7 @@ function D0(e) {
         id: e
     }
 }
-var R0 = class {
+var M0 = class {
     constructor() {
         this._timeout = void 0
     }
@@ -5919,7 +5925,7 @@ function Un(e, t) {
 function Cn(e, t) {
     for (const r in t) t[r] === null ? delete e[r] : e[r] && typeof e[r] == "object" && t[r] && typeof t[r] == "object" ? Cn(e[r], t[r]) : e[r] = t[r]
 }
-var N0 = class Wt {
+var x0 = class Wt {
     static {
         this._instance = void 0
     }
@@ -5974,7 +5980,7 @@ var N0 = class Wt {
                     instanceId: s.instanceId,
                     updateCount: o.updateCount
                 },
-                l = [...s.changedObservables].map(u => this._instanceInfos.get(u)?.instanceId).filter(Rt);
+                l = [...s.changedObservables].map(u => this._instanceInfos.get(u)?.instanceId).filter(Nt);
             if (o.isComputing) return {
                 ...a,
                 type: "observable/derived",
@@ -6000,7 +6006,7 @@ var N0 = class Wt {
                         ...a, type: "observable/derived", state: "possiblyStale"
                     }
             }
-        } else if (t instanceof g1) {
+        } else if (t instanceof m1) {
             const i = this._getAutorunInfo(t);
             if (!i) return;
             const s = {
@@ -6050,7 +6056,7 @@ var N0 = class Wt {
         }
     }
     constructor() {
-        this._declarationId = 0, this._instanceId = 0, this._declarations = new Map, this._instanceInfos = new WeakMap, this._aliveInstances = new Map, this._activeTransactions = new Set, this._channel = T0("observableDevTools", () => ({
+        this._declarationId = 0, this._instanceId = 0, this._declarations = new Map, this._instanceInfos = new WeakMap, this._aliveInstances = new Map, this._activeTransactions = new Set, this._channel = L0("observableDevTools", () => ({
             notifications: {
                 setDeclarationIdFilter: t => {},
                 logObservableValue: t => {
@@ -6073,23 +6079,23 @@ var N0 = class Wt {
                 },
                 getSummarizedInstances: () => null,
                 getObservableValueInfo: t => ({
-                    observers: [...this._aliveInstances.get(t).debugGetObservers()].map(i => this._formatObserver(i)).filter(Rt)
+                    observers: [...this._aliveInstances.get(t).debugGetObservers()].map(i => this._formatObserver(i)).filter(Nt)
                 }),
                 getDerivedInfo: t => {
                     const r = this._aliveInstances.get(t);
                     return {
-                        dependencies: [...r.debugGetState().dependencies].map(i => this._formatObservable(i)).filter(Rt),
-                        observers: [...r.debugGetObservers()].map(i => this._formatObserver(i)).filter(Rt)
+                        dependencies: [...r.debugGetState().dependencies].map(i => this._formatObservable(i)).filter(Nt),
+                        observers: [...r.debugGetObservers()].map(i => this._formatObserver(i)).filter(Nt)
                     }
                 },
                 getAutorunInfo: t => ({
-                    dependencies: [...this._aliveInstances.get(t).debugGetState().dependencies].map(i => this._formatObservable(i)).filter(Rt)
+                    dependencies: [...this._aliveInstances.get(t).debugGetState().dependencies].map(i => this._formatObservable(i)).filter(Nt)
                 }),
                 getTransactionState: () => this.getTransactionState(),
                 setValue: (t, r) => {
                     const i = this._aliveInstances.get(t);
                     if (i instanceof ge) i.debugSetValue(r);
-                    else if (i instanceof m1) i.debugSetValue(r);
+                    else if (i instanceof p1) i.debugSetValue(r);
                     else if (i instanceof Qe) i.debugSetValue(r);
                     else throw new Ve("Observable is not supported");
                     const s = [...i.debugGetObservers()];
@@ -6100,10 +6106,10 @@ var N0 = class Wt {
                 getValue: t => {
                     const r = this._aliveInstances.get(t);
                     if (r instanceof ge) return Ce(r.debugGetState().value, 200);
-                    if (r instanceof m1) return Ce(r.debugGetState().value, 200)
+                    if (r instanceof p1) return Ce(r.debugGetState().value, 200)
                 }
             }
-        })), this._pendingChanges = null, this._changeThrottler = new R0, this._fullState = {}, this._flushUpdates = () => {
+        })), this._pendingChanges = null, this._changeThrottler = new M0, this._fullState = {}, this._flushUpdates = () => {
             this._pendingChanges !== null && (this._channel.api.notifications.handleChange(this._pendingChanges, !1), this._pendingChanges = null)
         }
     }
@@ -6273,9 +6279,9 @@ var N0 = class Wt {
         this._activeTransactions.delete(t)
     }
 };
-a0(v0);
-var I0 = !1;
-I0 && d1(new Pn), Kr && Kr.VSCODE_DEV_DEBUG && d1(N0.getInstance());
+f0(E0);
+var P0 = !1;
+P0 && u1(new Pn), Gr && Gr.VSCODE_DEV_DEBUG && u1(x0.getInstance());
 var Vn;
 (function(e) {
     function t(s = void 0) {
@@ -6285,7 +6291,7 @@ var Vn;
             const c = a.ref;
             delete a.ref;
             const f = a.obsRef;
-            return delete a.obsRef, new S0(o, c, f, s, u, a, l)
+            return delete a.obsRef, new C0(o, c, f, s, u, a, l)
         }
     }
 
@@ -6309,9 +6315,9 @@ var Vn;
     }
     e.ref = i
 })(Vn || (Vn = {}));
-var L0 = class ys {
+var F0 = class ys {
     constructor(t, r, i, s, o, a, l) {
-        this._deriveds = [], this._element = s ? document.createElementNS(s, t) : document.createElement(t), r && r(this._element), i && this._deriveds.push(p0((c, f) => {
+        this._deriveds = [], this._element = s ? document.createElementNS(s, t) : document.createElement(t), r && r(this._element), i && this._deriveds.push(b0((c, f) => {
             i(this), f.add({
                 dispose: () => {
                     i(null)
@@ -6323,8 +6329,8 @@ var L0 = class ys {
         for (const [c, f] of Object.entries(a))
             if (c === "style")
                 for (const [h, p] of Object.entries(f)) {
-                    const m = _1(h);
-                    Xe(p) ? this._deriveds.push(v1({
+                    const m = v1(h);
+                    Xe(p) ? this._deriveds.push(g1({
                         owner: this,
                         debugName: () => `set.style.${m}`
                     }, A => {
@@ -6332,7 +6338,7 @@ var L0 = class ys {
                     })) : this._element.style.setProperty(m, zn(p))
                 } else c === "tabIndex" ? Xe(f) ? this._deriveds.push(gr(this, h => {
                     this._element.tabIndex = f.read(h)
-                })) : this._element.tabIndex = f : c.startsWith("on") ? this._element[c] = f : Xe(f) ? this._deriveds.push(v1({
+                })) : this._element.tabIndex = f : c.startsWith("on") ? this._element[c] = f : Xe(f) ? this._deriveds.push(g1({
                     owner: this,
                     debugName: () => `set.${c}`
                 }, h => {
@@ -6359,12 +6365,12 @@ var L0 = class ys {
     }
     toDisposableLiveElement() {
         const t = new be;
-        return this.keepUpdated(t), new k0(this._element, t)
+        return this.keepUpdated(t), new U0(this._element, t)
     }
 };
 
 function Bn(e, t) {
-    V0(e) ? e.setAttribute("class", t) : e.className = t
+    j0(e) ? e.setAttribute("class", t) : e.className = t
 }
 
 function $n(e, t, r) {
@@ -6397,7 +6403,7 @@ function zn(e) {
 function jn(e) {
     return Xe(e) ? !0 : Array.isArray(e) ? e.some(t => jn(t)) : !1
 }
-var k0 = class {
+var U0 = class {
         constructor(e, t) {
             this.element = e, this._disposable = t
         }
@@ -6405,7 +6411,7 @@ var k0 = class {
             this._disposable.dispose()
         }
     },
-    S0 = class extends L0 {
+    C0 = class extends F0 {
         constructor() {
             super(...arguments), this._isHovered = void 0, this._didMouseMoveDuringHover = void 0
         }
@@ -6436,10 +6442,10 @@ var k0 = class {
     };
 
 function qn(e, t, r) {
-    r == null ? e.removeAttribute(_1(t)) : e.setAttribute(_1(t), String(r))
+    r == null ? e.removeAttribute(v1(t)) : e.setAttribute(v1(t), String(r))
 }
 
-function _1(e) {
+function v1(e) {
     return e.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase()
 }
 
@@ -6447,17 +6453,17 @@ function Xe(e) {
     return e && typeof e == "object" && e.read !== void 0 && e.reportChanges !== void 0
 }
 var {
-    registerWindow: kc,
-    getWindow: Kn,
-    getDocument: Sc,
-    getWindows: y1,
-    getWindowsCount: x0,
-    getWindowId: Gn,
-    getWindowById: xc,
-    hasWindow: Mc,
-    onDidRegisterWindow: Pc,
-    onWillUnregisterWindow: Fc,
-    onDidUnregisterWindow: Uc
+    registerWindow: Uc,
+    getWindow: Gn,
+    getDocument: Cc,
+    getWindows: _1,
+    getWindowsCount: V0,
+    getWindowId: Kn,
+    getWindowById: Vc,
+    hasWindow: Bc,
+    onDidRegisterWindow: $c,
+    onWillUnregisterWindow: Wc,
+    onDidUnregisterWindow: Hc
 } = (function() {
     const e = new Map;
     Xs(S, 1);
@@ -6466,9 +6472,9 @@ var {
         disposables: new be
     };
     e.set(S.vscodeWindowId, t);
-    const r = new Y,
-        i = new Y,
-        s = new Y;
+    const r = new Z,
+        i = new Z,
+        s = new Z;
 
     function o(a, l) {
         return (typeof a == "number" ? e.get(a) : void 0) ?? (l ? t : void 0)
@@ -6486,7 +6492,7 @@ var {
                 };
             return e.set(a.vscodeWindowId, u), l.add(ye(() => {
                 e.delete(a.vscodeWindowId), i.fire(a)
-            })), l.add(P0(a, B0.BEFORE_UNLOAD, () => {
+            })), l.add($0(a, q0.BEFORE_UNLOAD, () => {
                 s.fire(a)
             })), r.fire(u), l
         },
@@ -6510,10 +6516,10 @@ var {
             return u?.view ? u.view.window : S
         },
         getDocument(a) {
-            return Kn(a).document
+            return Gn(a).document
         }
     }
-})(), M0 = class {
+})(), B0 = class {
     constructor(e, t, r, i) {
         this._node = e, this._type = t, this._handler = r, this._options = i || !1, this._node.addEventListener(this._type, this._handler, this._options)
     }
@@ -6522,10 +6528,10 @@ var {
     }
 };
 
-function P0(e, t, r, i) {
-    return new M0(e, t, r, i)
+function $0(e, t, r, i) {
+    return new B0(e, t, r, i)
 }
-var F0, Yn, b1 = class {
+var W0, Zn, y1 = class {
     constructor(e, t = 0) {
         this._runner = e, this.priority = t, this._canceled = !1
     }
@@ -6551,24 +6557,24 @@ var F0, Yn, b1 = class {
         s = o => {
             r.set(o, !1);
             const a = e.get(o) ?? [];
-            for (t.set(o, a), e.set(o, []), i.set(o, !0); a.length > 0;) a.sort(b1.sort), a.shift().execute();
+            for (t.set(o, a), e.set(o, []), i.set(o, !0); a.length > 0;) a.sort(y1.sort), a.shift().execute();
             i.set(o, !1)
         };
-    Yn = (o, a, l = 0) => {
-        const u = Gn(o),
-            c = new b1(a, l);
+    Zn = (o, a, l = 0) => {
+        const u = Kn(o),
+            c = new y1(a, l);
         let f = e.get(u);
         return f || (f = [], e.set(u, f)), f.push(c), r.get(u) || (r.set(u, !0), o.requestAnimationFrame(() => s(u))), c
-    }, F0 = (o, a, l) => {
-        const u = Gn(o);
+    }, W0 = (o, a, l) => {
+        const u = Kn(o);
         if (i.get(u)) {
-            const c = new b1(a, l);
+            const c = new y1(a, l);
             let f = t.get(u);
             return f || (f = [], t.set(u, f)), f.push(c), c
-        } else return Yn(o, a, l)
+        } else return Zn(o, a, l)
     }
 })();
-var Cc = class Ht {
+var zc = class Ht {
     static {
         this.None = new Ht(0, 0)
     }
@@ -6589,27 +6595,27 @@ var Cc = class Ht {
     }
 };
 
-function U0() {
-    return x0() <= 1 ? S.document : Array.from(y1()).map(({
+function H0() {
+    return V0() <= 1 ? S.document : Array.from(_1()).map(({
         window: t
     }) => t.document).find(t => t.hasFocus()) ?? S.document
 }
 
-function w1() {
-    return U0().defaultView?.window ?? S
+function b1() {
+    return H0().defaultView?.window ?? S
 }
-var C0 = new class {
+var z0 = new class {
     constructor() {
         this.mutationObservers = new Map
     }
     observe(e, t, r) {
         let i = this.mutationObservers.get(e);
         i || (i = new Map, this.mutationObservers.set(e, i));
-        const s = Za(r);
+        const s = Ya(r);
         let o = i.get(s);
         if (o) o.users += 1;
         else {
-            const a = new Y,
+            const a = new Z,
                 l = new MutationObserver(c => a.fire(c));
             l.observe(e, r);
             const u = o = {
@@ -6625,10 +6631,10 @@ var C0 = new class {
     }
 };
 
-function V0(e) {
-    return e instanceof SVGElement || e instanceof Kn(e).SVGElement
+function j0(e) {
+    return e instanceof SVGElement || e instanceof Gn(e).SVGElement
 }
-var B0 = {
+var q0 = {
         CLICK: "click",
         AUXCLICK: "auxclick",
         DBLCLICK: "dblclick",
@@ -6682,14 +6688,14 @@ var B0 = {
         ANIMATION_END: Vr ? "webkitAnimationEnd" : "animationend",
         ANIMATION_ITERATION: Vr ? "webkitAnimationIteration" : "animationiteration"
     },
-    $0 = /([\w\-]+)?(#([\w\-]+))?((\.([\w\-]+))*)/,
+    G0 = /([\w\-]+)?(#([\w\-]+))?((\.([\w\-]+))*)/,
     Ft;
 (function(e) {
     e.HTML = "http://www.w3.org/1999/xhtml", e.SVG = "http://www.w3.org/2000/svg"
 })(Ft || (Ft = {}));
 
-function Zn(e, t, r, ...i) {
-    const s = $0.exec(t);
+function Yn(e, t, r, ...i) {
+    const s = G0.exec(t);
     if (!s) throw new Error("Bad use of emmet");
     const o = s[1] || "div";
     let a;
@@ -6698,69 +6704,69 @@ function Zn(e, t, r, ...i) {
     }), a.append(...i), a
 }
 
-function W0(e, t, ...r) {
-    return Zn(Ft.HTML, e, t, ...r)
+function K0(e, t, ...r) {
+    return Yn(Ft.HTML, e, t, ...r)
 }
-W0.SVG = function(e, t, ...r) {
-    return Zn(Ft.SVG, e, t, ...r)
-}, zi.setPreferredWebSchema(/^https:/.test(S.location.href) ? "https" : "http");
+K0.SVG = function(e, t, ...r) {
+    return Yn(Ft.SVG, e, t, ...r)
+}, Hi.setPreferredWebSchema(/^https:/.test(S.location.href) ? "https" : "http");
 var Qn;
 (function(e) {
     e[e.DOCUMENT = 1] = "DOCUMENT", e[e.BROWSER = 2] = "BROWSER"
 })(Qn || (Qn = {}));
-var Vc = [K.http, K.https, K.command],
-    Bc = Object.freeze(["a", "abbr", "b", "bdo", "blockquote", "br", "caption", "cite", "code", "col", "colgroup", "dd", "del", "details", "dfn", "div", "dl", "dt", "em", "figcaption", "figure", "h1", "h2", "h3", "h4", "h5", "h6", "hr", "i", "img", "input", "ins", "kbd", "label", "li", "mark", "ol", "p", "pre", "q", "rp", "rt", "ruby", "samp", "small", "small", "source", "span", "strike", "strong", "sub", "summary", "sup", "table", "tbody", "td", "tfoot", "th", "thead", "time", "tr", "tt", "u", "ul", "var", "video", "wbr"]),
-    $c = Object.freeze({
+var jc = [G.http, G.https, G.command],
+    qc = Object.freeze(["a", "abbr", "b", "bdo", "blockquote", "br", "caption", "cite", "code", "col", "colgroup", "dd", "del", "details", "dfn", "div", "dl", "dt", "em", "figcaption", "figure", "h1", "h2", "h3", "h4", "h5", "h6", "hr", "i", "img", "input", "ins", "kbd", "label", "li", "mark", "ol", "p", "pre", "q", "rp", "rt", "ruby", "samp", "small", "small", "source", "span", "strike", "strong", "sub", "summary", "sup", "table", "tbody", "td", "tfoot", "th", "thead", "time", "tr", "tt", "u", "ul", "var", "video", "wbr"]),
+    Gc = Object.freeze({
         ALLOWED_TAGS: ["a", "button", "blockquote", "code", "div", "h1", "h2", "h3", "h4", "h5", "h6", "hr", "input", "label", "li", "p", "pre", "select", "small", "span", "strong", "textarea", "ul", "ol"],
         ALLOWED_ATTR: ["href", "data-href", "data-command", "target", "title", "name", "src", "alt", "class", "id", "role", "tabindex", "style", "data-code", "width", "height", "align", "x-dispatch", "required", "checked", "placeholder", "type", "start"],
         RETURN_DOM: !1,
         RETURN_DOM_FRAGMENT: !1,
         RETURN_TRUSTED_TYPE: !0
     }),
-    H0 = new Map;
+    Z0 = new Map;
 
-function z0(e = S.document.head, t, r) {
+function Y0(e = S.document.head, t, r) {
     const i = document.createElement("style");
     if (i.type = "text/css", i.media = "screen", t?.(i), e.appendChild(i), r && r.add(ye(() => i.remove())), e === S.document.head) {
         const s = new Set;
-        H0.set(i, s);
+        Z0.set(i, s);
         for (const {
                 window: o,
                 disposables: a
             }
-            of y1()) {
+            of _1()) {
             if (o === S) continue;
-            const l = a.add(j0(i, s, o));
+            const l = a.add(Q0(i, s, o));
             r?.add(l)
         }
     }
     return i
 }
 
-function j0(e, t, r) {
+function Q0(e, t, r) {
     const i = new be,
         s = e.cloneNode(!0);
     r.document.head.appendChild(s), i.add(ye(() => s.remove()));
-    for (const o of q0(e)) s.sheet?.insertRule(o.cssText, s.sheet?.cssRules.length);
-    return i.add(C0.observe(e, i, {
+    for (const o of X0(e)) s.sheet?.insertRule(o.cssText, s.sheet?.cssRules.length);
+    return i.add(z0.observe(e, i, {
         childList: !0
     })(() => {
         s.textContent = e.textContent
     })), t.add(s), i.add(ye(() => t.delete(s))), i
 }
 
-function q0(e) {
+function X0(e) {
     return e?.sheet?.rules ? e.sheet.rules : e?.sheet?.cssRules ? e.sheet.cssRules : []
 }
 var vt = globalThis.vscode,
     Ut = vt.ipcRenderer,
-    Wc = vt.ipcMessagePort,
-    K0 = vt.webFrame,
-    Hc = vt.process,
-    zc = vt.context,
-    jc = vt.webUtils;
+    Kc = vt.ipcMessagePort,
+    J0 = vt.webFrame,
+    Zc = vt.process,
+    Yc = vt.context,
+    Qc = vt.webUtils;
 
-function qc(e) {
+function Xc(e) {
     return e
 }
 
@@ -6773,8 +6779,8 @@ function ze(e) {
     return `'${e.replaceAll(/'/g,"\\000027")}'`
 }
 
-function G0(e) {
-    return e ? se`url('${CSS.escape(Na.uriToBrowserUri(e).toString(!0))}')` : "url('')"
+function el(e) {
+    return e ? se`url('${CSS.escape(Ra.uriToBrowserUri(e).toString(!0))}')` : "url('')"
 }
 
 function _r(e, t = !1) {
@@ -6788,7 +6794,7 @@ function se(e, ...t) {
         return r + i + o
     }, "")
 }
-var A1 = class {
+var w1 = class {
         constructor() {
             this._parts = []
         }
@@ -6800,23 +6806,23 @@ var A1 = class {
             return this._parts.join(e)
         }
     },
-    E1 = Object.create(null);
+    A1 = Object.create(null);
 
 function n(e, t) {
     if (Dt(t)) {
-        const r = E1[t];
+        const r = A1[t];
         if (r === void 0) throw new Error(`${e} references an unknown codicon: ${t}`);
         t = r
     }
-    return E1[e] = t, {
+    return A1[e] = t, {
         id: e
     }
 }
 
-function Y0() {
-    return E1
+function tl() {
+    return A1
 }
-var Z0 = {
+var rl = {
         semantic: n("semantic", 62e3),
         githubCopilot: n("github-copilot", 62001),
         plusCircle: n("plus-circle", 62002),
@@ -7513,6 +7519,7 @@ var Z0 = {
         laptop: n("laptop", 60882),
         grep: n("grep", 60883),
         chevronDblLeft: n("chevron-dbl-left", 60884),
+        chevronDblRight: n("chevron-dbl-right", 62237),
         squareAndPencil: n("square-and-pencil", 60885),
         doubleTerminal: n("double-terminal", 60886),
         sidebarLeft: n("sidebar-left", 60887),
@@ -7629,7 +7636,7 @@ var Z0 = {
         unlink: n("unlink", 62095),
         arrowFilled: n("arrow-filled", 62096)
     },
-    Q0 = {
+    il = {
         dialogError: n("dialog-error", "error"),
         dialogWarning: n("dialog-warning", "warning"),
         dialogInfo: n("dialog-info", "info"),
@@ -7658,17 +7665,17 @@ var Z0 = {
         debugBreakpointPending: n("debug-breakpoint-pending", 60377)
     },
     Ee = {
-        ...Z0,
-        ...Q0
+        ...rl,
+        ...il
     },
-    T1;
+    E1;
 (function(e) {
     function t(r) {
         return r && typeof r == "object" && typeof r.id == "string"
     }
     e.isThemeColor = t
-})(T1 || (T1 = {}));
-var Re;
+})(E1 || (E1 = {}));
+var Ne;
 (function(e) {
     e.iconNameSegment = "[A-Za-z0-9]+", e.iconNameExpression = "[A-Za-z0-9-]+", e.iconModifierExpression = "~[A-Za-z]+", e.iconNameCharacter = "[A-Za-z0-9~-]";
     const t = new RegExp(`^(${e.iconNameExpression})(${e.iconModifierExpression})?$`);
@@ -7703,7 +7710,7 @@ var Re;
     e.asCSSSelector = s;
 
     function o(p) {
-        return p && typeof p == "object" && typeof p.id == "string" && (typeof p.color > "u" || T1.isThemeColor(p.color))
+        return p && typeof p == "object" && typeof p.id == "string" && (typeof p.color > "u" || E1.isThemeColor(p.color))
     }
     e.isThemeIcon = o;
     const a = new RegExp(`^\\$\\((${e.iconNameExpression}(?:${e.iconModifierExpression})?)\\)$`);
@@ -7744,13 +7751,13 @@ var Re;
         return p.id === m.id && p.color?.id === m.color?.id
     }
     e.isEqual = h
-})(Re || (Re = {}));
+})(Ne || (Ne = {}));
 
-function X0(e) {
+function nl(e) {
     let t = !1;
     const r = new Map,
         i = new Map;
-    if (J0(e, f => {
+    if (sl(e, f => {
             if (e === f) return !0;
             const h = JSON.stringify(f);
             if (h.length < 30) return !0;
@@ -7788,7 +7795,7 @@ function _t(e) {
     return typeof e == "object" && e !== null
 }
 
-function J0(e, t) {
+function sl(e, t) {
     if (!e || typeof e != "object") return;
     const r = (...u) => {
             for (const c of u) _t(c) && a.push(c)
@@ -7815,7 +7822,7 @@ function J0(e, t) {
     let l = a.pop();
     for (; l;) t(l) && (r(l.additionalItems, l.additionalProperties, l.not, l.contains, l.propertyNames, l.if, l.then, l.else, l.unevaluatedItems, l.unevaluatedProperties), i(l.definitions, l.$defs, l.properties, l.patternProperties, l.dependencies, l.dependentSchemas), s(l.anyOf, l.allOf, l.oneOf, l.prefixItems), o(l.items)), l = a.pop()
 }
-var el = class {
+var ol = class {
         constructor() {
             this.data = new Map
         }
@@ -7830,11 +7837,11 @@ var el = class {
         }
         dispose() {
             this.data.forEach(e => {
-                Ks(e.dispose) && e.dispose()
+                Gs(e.dispose) && e.dispose()
             }), this.data.clear()
         }
     },
-    O1 = new el,
+    T1 = new ol,
     Jn = {
         JSONContribution: "base.contributions.json"
     };
@@ -7842,9 +7849,9 @@ var el = class {
 function es(e) {
     return e.length > 0 && e.charAt(e.length - 1) === "#" ? e.substring(0, e.length - 1) : e
 }
-var tl = class extends Be {
+var al = class extends Be {
         constructor() {
-            super(...arguments), this.schemasById = {}, this.schemaAssociations = {}, this._onDidChangeSchema = this._register(new Y), this.onDidChangeSchema = this._onDidChangeSchema.event, this._onDidChangeSchemaAssociations = this._register(new Y), this.onDidChangeSchemaAssociations = this._onDidChangeSchemaAssociations.event
+            super(...arguments), this.schemasById = {}, this.schemaAssociations = {}, this._onDidChangeSchema = this._register(new Z), this.onDidChangeSchema = this._onDidChangeSchema.event, this._onDidChangeSchemaAssociations = this._register(new Z), this.onDidChangeSchemaAssociations = this._onDidChangeSchemaAssociations.event
         }
         registerSchema(e, t, r) {
             const i = es(e);
@@ -7872,7 +7879,7 @@ var tl = class extends Be {
         }
         getSchemaContent(e) {
             const t = this.schemasById[e];
-            return t ? X0(t) : void 0
+            return t ? nl(t) : void 0
         }
         hasSchemaContent(e) {
             return !!this.schemasById[e]
@@ -7881,16 +7888,16 @@ var tl = class extends Be {
             return this.schemaAssociations
         }
     },
-    rl = new tl;
-O1.add(Jn.JSONContribution, rl);
-var il = {
+    ll = new al;
+T1.add(Jn.JSONContribution, ll);
+var cl = {
         IconContribution: "base.contributions.icons"
     },
     ts;
 (function(e) {
     function t(r, i) {
         let s = r.defaults;
-        for (; Re.isThemeIcon(s);) {
+        for (; Ne.isThemeIcon(s);) {
             const o = Je.getIcon(s.id);
             if (!o) return;
             s = o.defaults
@@ -7926,24 +7933,24 @@ var rs;
     }
     e.fromJSONObject = r
 })(rs || (rs = {}));
-var nl = /^([\w_-]+)$/,
-    sl = ut(2546, null),
-    ol = class extends Be {
+var ul = /^([\w_-]+)$/,
+    dl = ut(2672, null),
+    hl = class extends Be {
         constructor() {
-            super(), this._onDidChange = this._register(new Y), this.onDidChange = this._onDidChange.event, this.iconSchema = {
+            super(), this._onDidChange = this._register(new Z), this.onDidChange = this._onDidChange.event, this.iconSchema = {
                 definitions: {
                     icons: {
                         type: "object",
                         properties: {
                             fontId: {
                                 type: "string",
-                                description: ut(2547, null),
-                                pattern: nl.source,
-                                patternErrorMessage: sl
+                                description: ut(2673, null),
+                                pattern: ul.source,
+                                patternErrorMessage: dl
                             },
                             fontCharacter: {
                                 type: "string",
-                                description: ut(2548, null)
+                                description: ut(2674, null)
                             }
                         },
                         additionalProperties: !1,
@@ -7958,7 +7965,7 @@ var nl = /^([\w_-]+)$/,
                 properties: {}
             }, this.iconReferenceSchema = {
                 type: "string",
-                pattern: `^${Re.iconNameExpression}$`,
+                pattern: `^${Ne.iconNameExpression}$`,
                 enum: [],
                 enumDescriptions: []
             }, this.iconsById = {}, this.iconFontsById = {}
@@ -8017,23 +8024,23 @@ var nl = /^([\w_-]+)$/,
         toString() {
             const e = (s, o) => s.id.localeCompare(o.id),
                 t = s => {
-                    for (; Re.isThemeIcon(s.defaults);) s = this.iconsById[s.defaults.id];
+                    for (; Ne.isThemeIcon(s.defaults);) s = this.iconsById[s.defaults.id];
                     return `codicon codicon-${s?s.id:""}`
                 },
                 r = [];
             r.push("| preview     | identifier                        | default codicon ID                | description"), r.push("| ----------- | --------------------------------- | --------------------------------- | --------------------------------- |");
             const i = Object.keys(this.iconsById).map(s => this.iconsById[s]);
-            for (const s of i.filter(o => !!o.description).sort(e)) r.push(`|<i class="${t(s)}"></i>|${s.id}|${Re.isThemeIcon(s.defaults)?s.defaults.id:s.id}|${s.description||""}|`);
+            for (const s of i.filter(o => !!o.description).sort(e)) r.push(`|<i class="${t(s)}"></i>|${s.id}|${Ne.isThemeIcon(s.defaults)?s.defaults.id:s.id}|${s.description||""}|`);
             r.push("| preview     | identifier                        "), r.push("| ----------- | --------------------------------- |");
-            for (const s of i.filter(o => !Re.isThemeIcon(o.defaults)).sort(e)) r.push(`|<i class="${t(s)}"></i>|${s.id}|`);
+            for (const s of i.filter(o => !Ne.isThemeIcon(o.defaults)).sort(e)) r.push(`|<i class="${t(s)}"></i>|${s.id}|`);
             return r.join(`
 `)
         }
     },
-    Je = new ol;
-O1.add(il.IconContribution, Je);
+    Je = new hl;
+T1.add(cl.IconContribution, Je);
 
-function D1(e, t, r, i) {
+function O1(e, t, r, i) {
     return Je.registerIcon(e, t, r, i)
 }
 
@@ -8041,8 +8048,8 @@ function is() {
     return Je
 }
 
-function al() {
-    const e = Y0();
+function fl() {
+    const e = tl();
     for (const t in e) {
         const r = "\\" + e[t].toString(16);
         Je.registerIcon(t, {
@@ -8050,32 +8057,32 @@ function al() {
         })
     }
 }
-al();
+fl();
 var ns = "vscode://schemas/icons",
-    ss = O1.as(Jn.JSONContribution);
+    ss = T1.as(Jn.JSONContribution);
 ss.registerSchema(ns, Je.getIconSchema());
-var os = new Yi(() => ss.notifySchemaChanged(ns), 200);
+var os = new Ki(() => ss.notifySchemaChanged(ns), 200);
 Je.onDidChange(() => {
     os.isScheduled() || os.schedule()
 });
-var Kc = D1("widget-close", Ee.close, ut(2549, null)),
-    Gc = D1("goto-previous-location", Ee.arrowUp, ut(2550, null)),
-    Yc = D1("goto-next-location", Ee.arrowDown, ut(2551, null)),
-    Zc = Re.modify(Ee.sync, "spin"),
-    Qc = Re.modify(Ee.loading, "spin");
+var Jc = O1("widget-close", Ee.close, ut(2675, null)),
+    e4 = O1("goto-previous-location", Ee.arrowUp, ut(2676, null)),
+    t4 = O1("goto-next-location", Ee.arrowDown, ut(2677, null)),
+    r4 = Ne.modify(Ee.sync, "spin"),
+    i4 = Ne.modify(Ee.loading, "spin");
 
-function ll(e) {
+function pl(e) {
     const t = new be,
-        r = t.add(new Y),
+        r = t.add(new Z),
         i = is();
     return t.add(i.onDidChange(() => r.fire())), e && t.add(e.onDidProductIconThemeChange(() => r.fire())), {
         dispose: () => t.dispose(),
         onDidChange: r.event,
         getCSS() {
-            const s = e ? e.getProductIconTheme() : new cl,
+            const s = e ? e.getProductIconTheme() : new ml,
                 o = {},
-                a = new A1,
-                l = new A1;
+                a = new w1,
+                l = new w1;
             for (const u of i.getIcons()) {
                 const c = s.getIcon(u);
                 if (!c) continue;
@@ -8088,8 +8095,8 @@ function ll(e) {
                 const c = o[u],
                     f = c.weight ? se`font-weight: ${Xn(c.weight)};` : se``,
                     h = c.style ? se`font-style: ${Xn(c.style)};` : se``,
-                    p = new A1;
-                for (const m of c.src) p.push(se`${G0(m.location)} format(${ze(m.format)})`);
+                    p = new w1;
+                for (const m of c.src) p.push(se`${el(m.location)} format(${ze(m.format)})`);
                 a.push(se`@font-face { src: ${p.join(", ")}; font-family: ${ze(u)};${f}${h} font-display: block; }`)
             }
             return a.push(se`:root { ${l.join(" ")} }`), a.join(`
@@ -8097,11 +8104,11 @@ function ll(e) {
         }
     }
 }
-var cl = class {
+var ml = class {
         getIcon(e) {
             const t = is();
             let r = e.defaults;
-            for (; Re.isThemeIcon(r);) {
+            for (; Ne.isThemeIcon(r);) {
                 const i = t.getIcon(r.id);
                 if (!i) return;
                 r = i.defaults
@@ -8122,29 +8129,29 @@ var cs;
     e.NATIVE = "native", e.CUSTOM = "custom", e.HIDDEN = "hidden"
 })(cs || (cs = {}));
 
-function ul(e = 0) {
+function gl(e = 0) {
     return Math.pow(1.2, e)
 }
 var yr;
 (function(e) {
     e[e.ACTIVE_WINDOW = 1] = "ACTIVE_WINDOW", e[e.ALL_WINDOWS = 2] = "ALL_WINDOWS"
 })(yr || (yr = {}));
-var dl = 8,
-    hl = -8;
+var vl = 8,
+    _l = -8;
 
-function R1(e, t) {
-    e = Math.min(Math.max(e, hl), dl);
+function D1(e, t) {
+    e = Math.min(Math.max(e, _l), vl);
     const r = [];
-    t === yr.ACTIVE_WINDOW ? r.push(w1()) : t === yr.ALL_WINDOWS ? r.push(...Array.from(y1()).map(({
+    t === yr.ACTIVE_WINDOW ? r.push(b1()) : t === yr.ALL_WINDOWS ? r.push(...Array.from(_1()).map(({
         window: i
     }) => i)) : r.push(t);
-    for (const i of r) fl(i)?.webFrame?.setZoomLevel(e), fo(ul(e), i), ho(e, i)
+    for (const i of r) yl(i)?.webFrame?.setZoomLevel(e), fo(gl(e), i), ho(e, i)
 }
 
-function fl(e) {
+function yl(e) {
     if (e === S) return {
         ipcRenderer: Ut,
-        webFrame: K0
+        webFrame: J0
     };
     {
         const t = e;
@@ -8152,14 +8159,14 @@ function fl(e) {
     }
 }
 
-function pl(e) {
-    R1(di(typeof e == "number" ? w1() : e) + 1, e)
+function bl(e) {
+    D1(ui(typeof e == "number" ? b1() : e) + 1, e)
 }
 
-function ml(e) {
-    R1(di(typeof e == "number" ? w1() : e) - 1, e)
+function wl(e) {
+    D1(ui(typeof e == "number" ? b1() : e) - 1, e)
 }
-var gl = class {
+var Al = class {
     constructor(e, t) {
         this.data = t, this.expandedExtensions = new Set, this.isRendering = !1, this.eventListenersAttached = !1, this.persistedExtensions = new Map, this.persistedHosts = new Map, this.handleClick = r => {
             const i = r.target.closest(".process-toggle");
@@ -8354,8 +8361,8 @@ var gl = class {
             r = t.length > 0,
             i = e.staticInfo.id.replace(/[^a-zA-Z0-9]/g, "-"),
             s = this.expandedExtensions.has(i),
-            o = t.reduce((G, he) => G + (he.pctCPU ?? 0), 0),
-            a = t.reduce((G, he) => G + (he.memRssKB ?? 0), 0),
+            o = t.reduce((K, he) => K + (he.pctCPU ?? 0), 0),
+            a = t.reduce((K, he) => K + (he.memRssKB ?? 0), 0),
             l = e.metrics?.pctCPU ?? 0,
             u = e.metrics?.memKB ?? 0,
             c = l + o,
@@ -8371,7 +8378,7 @@ var gl = class {
             de = Math.floor((e.metrics?.maxBlockingTime ?? 0) / 1e3),
             V = !W && de >= 150,
             z = V ? "col-blocking high-usage" : "col-blocking",
-            N = W ? "" : `${V?'<span class="codicon codicon-warning usage-warning-icon"></span>':""}${this.formatTime(e.metrics?.maxBlockingTime??0)}`,
+            R = W ? "" : `${V?'<span class="codicon codicon-warning usage-warning-icon"></span>':""}${this.formatTime(e.metrics?.maxBlockingTime??0)}`,
             P = this.escapeHtml(e.staticInfo.id);
         return `
 			<div class="extension-row ${h?"inactive":""}" data-extension-id="${i}">
@@ -8381,7 +8388,7 @@ var gl = class {
 						${P}<span class="process-count">${p}</span>
 					</div>
 					<div class="${I}">${k}${m}%</div>
-					<div class="${z}">${N}</div>
+					<div class="${z}">${R}</div>
 					<div class="col-cpu">
 						<div class="col-cpu-value self">${l.toFixed(1)}%</div>
 						<div class="col-cpu-value total">${c.toFixed(1)}%</div>
@@ -8425,7 +8432,7 @@ var gl = class {
     setEventHandlers(e) {
         S.document.onkeydown = t => {
             const r = e.platform === "darwin" ? t.metaKey : t.ctrlKey;
-            r && t.keyCode === 87 && (t.stopPropagation(), t.preventDefault(), this.cleanUp(), Ut.send("vscode:closeExtensionMonitor")), r && t.keyCode === 187 && pl(S), r && t.keyCode === 189 && ml(S)
+            r && t.keyCode === 87 && (t.stopPropagation(), t.preventDefault(), this.cleanUp(), Ut.send("vscode:closeExtensionMonitor")), r && t.keyCode === 187 && bl(S), r && t.keyCode === 189 && wl(S)
         }, S.addEventListener("beforeunload", () => {
             this.cleanUp()
         })
@@ -8475,26 +8482,26 @@ var gl = class {
     }
 };
 
-function vl() {
-    const e = z0();
+function El() {
+    const e = Y0();
     e.id = "codiconStyles";
-    const t = ll(void 0);
+    const t = pl(void 0);
 
     function r() {
         e.textContent = t.getCSS()
     }
-    const i = new Yi(r, 0);
+    const i = new Ki(r, 0);
     t.onDidChange(() => i.schedule()), i.schedule()
 }
 
-function _l(e) {
+function Tl(e) {
     const t = e.data.platform === "win32" ? "windows" : e.data.platform === "linux" ? "linux" : "mac";
-    S.document.body.classList.add(t), vl(), R1(e.data.zoomLevel, S), new gl(e.windowId, e.data)
+    S.document.body.classList.add(t), El(), D1(e.data.zoomLevel, S), new Al(e.windowId, e.data)
 }
 export {
-    _l as startup
+    Tl as startup
 }; /*! @license DOMPurify 3.1.7 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.1.7/LICENSE */
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/c6285feaba0ad62603f7c22e72f0a170dc8415a0/core/vs/code/electron-sandbox/extensionMonitor/extensionMonitorMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/63715ffc1807793ce209e935e5c3ab9b79fddc80/core/vs/code/electron-sandbox/extensionMonitor/extensionMonitorMain.js.map
 
-//# debugId=f97d5b99-b738-5057-9dfd-e63318d3fd0f
+//# debugId=c180a542-a914-5a91-8946-6b522ebe7eaa

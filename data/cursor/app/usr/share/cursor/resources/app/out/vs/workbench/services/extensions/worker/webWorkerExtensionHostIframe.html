@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Security-Policy" content="
 			default-src 'none';
 			child-src 'self' data: blob:;
-			script-src 'self' 'unsafe-eval' 'sha256-cl8ijlOzEe+0GRCQNJQu2k6nUQ0fAYNYIuuKEm72JDs=' https: http://localhost:* blob:;
+			script-src 'self' 'unsafe-eval' 'sha256-busEBxbLjp9I3CwDq60aWmTRwWajvtb7zwY48vX1BJY=' https: http://localhost:* blob:;
 			connect-src 'self' https: wss: http://localhost:* http://127.0.0.1:* ws://localhost:* ws://127.0.0.1:*;"/>
 	</head>
 	<body>
@@ -27,7 +27,7 @@
 		}
 		if (!crypto.subtle) {
 			// cannot validate, not running in a secure context
-			return sendError(new Error(`Cannot validate in current context!`));
+			return sendError(new Error(`Cannot validate in current context!`), 'iframe.validation');
 		}
 
 		// Here the `parentOriginHash()` function from `src/vs/base/browser/iframe.ts` is inlined
@@ -44,7 +44,7 @@
 			// sha256 has 256 bits, so we need at most ceil(lg(2^256-1)/lg(32)) = 52 chars to represent it in base 32
 			parentOriginHash = BigInt(`0x${hashHex}`).toString(32).padStart(52, '0');
 		} catch (err) {
-			return sendError(err instanceof Error ? err : new Error(String(err)));
+			return sendError(err instanceof Error ? err : new Error(String(err)), 'iframe.validation');
 		}
 
 		const requiredSubdomain = `${hostnameValidationMarker}${parentOriginHash}.`;
@@ -53,16 +53,18 @@
 			return start();
 		}
 
-		return sendError(new Error(`Expected '${requiredSubdomain}' as subdomain!`));
+		return sendError(new Error(`Expected '${requiredSubdomain}' as subdomain!`), 'iframe.validation');
 	})();
 
-	function sendError(error) {
+	function sendError(error, source, detail) {
 		window.parent.postMessage({
 			vscodeWebWorkerExtHostId,
 			error: {
 				name: error ? error.name : '',
 				message: error ? error.message : '',
-				stack: error ? error.stack : []
+				stack: error ? error.stack : [],
+				source: source || '',
+				...(detail || {})
 			}
 		}, '*');
 	}
@@ -137,8 +139,19 @@
 			};
 
 			worker.onerror = (event) => {
-				console.error(event.message, event.error);
-				sendError(event.error);
+				const location = event.filename ? ` (${event.filename}:${event.lineno}:${event.colno})` : '';
+				const fallbackMessage = event.message ? `worker.onerror: ${event.message}${location}` : `worker.onerror${location}`;
+				const error = event.error instanceof Error ? event.error : new Error(fallbackMessage);
+				if (!error.message) {
+					error.message = fallbackMessage;
+				}
+				console.error(fallbackMessage, error);
+				sendError(error, 'worker.onerror', {
+					workerEventMessage: event.message || '',
+					filename: event.filename || '',
+					lineno: event.lineno || 0,
+					colno: event.colno || 0
+				});
 			};
 
 			self.onmessage = (event) => {
@@ -149,7 +162,7 @@
 			};
 		} catch (err) {
 			console.error(err);
-			sendError(err);
+			sendError(err instanceof Error ? err : new Error(String(err)), 'worker.create');
 		}
 	}
 })();

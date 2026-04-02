@@ -21035,4 +21035,4 @@ declare module 'vscode' {
  * enables reusing existing code without migrating to a specific promise implementation. Still,
  * we recommend the use of native promises which are available in this editor.
  */
-interface Thenable<T> extends PromiseLike<T> {}
+interface Thenable<T> extends PromiseLike<T> { }

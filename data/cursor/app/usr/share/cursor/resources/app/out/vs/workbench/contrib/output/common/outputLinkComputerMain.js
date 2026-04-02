@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "bab3d7bb-e327-593e-8a18-4dbbc39b5a2f")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "ee18b1f8-974d-5a47-8f8a-57fe9efca924")
     } catch (e) {}
 }();
 var V1 = function(e, t) {
@@ -508,13 +508,13 @@ var Mn = _e() === "pseudo" || typeof document < "u" && document.location && type
     Tt = void 0,
     G = void 0,
     Y = globalThis,
-    W = void 0;
-typeof Y.vscode < "u" && typeof Y.vscode.process < "u" ? W = Y.vscode.process : typeof process < "u" && typeof process?.versions?.node == "string" && (W = process);
-var ge = typeof W?.versions?.electron == "string",
-    Ot = ge && W?.type === "renderer";
-if (typeof W == "object") {
-    A1 = W.platform === "win32", E1 = W.platform === "darwin", _1 = W.platform === "linux", xt = _1 && !!W.env.SNAP && !!W.env.SNAP_REVISION, St = ge, kt = !!W.env.CI || !!W.env.BUILD_ARTIFACTSTAGINGDIRECTORY, x1 = c1, S1 = c1;
-    const e = W.env.VSCODE_NLS_CONFIG;
+    q = void 0;
+typeof Y.vscode < "u" && typeof Y.vscode.process < "u" ? q = Y.vscode.process : typeof process < "u" && typeof process?.versions?.node == "string" && (q = process);
+var ge = typeof q?.versions?.electron == "string",
+    Ot = ge && q?.type === "renderer";
+if (typeof q == "object") {
+    A1 = q.platform === "win32", E1 = q.platform === "darwin", _1 = q.platform === "linux", xt = _1 && !!q.env.SNAP && !!q.env.SNAP_REVISION, St = ge, kt = !!q.env.CI || !!q.env.BUILD_ARTIFACTSTAGINGDIRECTORY, x1 = c1, S1 = c1;
+    const e = q.env.VSCODE_NLS_CONFIG;
     if (e) try {
         const t = JSON.parse(e);
         x1 = t.userLocale, pe = t.osLocale, S1 = t.resolvedLanguage || c1, Tt = t.languagePack?.translationsConfigFile
@@ -553,9 +553,9 @@ var i1 = A1,
     }
     e.isDefault = n
 })(we || (we = {}));
-var qt = typeof Y.postMessage == "function" && !Y.importScripts,
-    Wt = (() => {
-        if (qt) {
+var Wt = typeof Y.postMessage == "function" && !Y.importScripts,
+    qt = (() => {
+        if (Wt) {
             const e = [];
             Y.addEventListener("message", r => {
                 if (r.data && r.data.vscodeScheduleAsyncWork)
@@ -589,9 +589,9 @@ var zt = !!(J && J.indexOf("Chrome") >= 0),
     Un = !!(!zt && J && J.indexOf("Safari") >= 0),
     $n = !!(J && J.indexOf("Edg/") >= 0),
     jn = !!(J && J.indexOf("Android") >= 0),
-    qn = W?.arch,
-    Wn = W?.platform,
-    zn = W?.versions?.node,
+    Wn = q?.arch,
+    qn = q?.platform,
+    zn = q?.versions?.node,
     s1, B1 = globalThis.vscode;
 if (typeof B1 < "u" && typeof B1.process < "u") {
     const e = B1.process;
@@ -2159,12 +2159,12 @@ var re = class _t {
             return this._store.add(e)
         }
     },
-    T = class q1 {
+    T = class W1 {
         static {
-            this.Undefined = new q1(void 0)
+            this.Undefined = new W1(void 0)
         }
         constructor(t) {
-            this.element = t, this.next = q1.Undefined, this.prev = q1.Undefined
+            this.element = t, this.next = W1.Undefined, this.prev = W1.Undefined
         }
     },
     Lr = class {
@@ -2349,15 +2349,15 @@ var re = class _t {
     }
 
     function b(v, f, m = 100, d = !1, p = !1, w, A) {
-        let U, q, u1, L1 = 0,
+        let U, W, u1, L1 = 0,
             m1;
         const me = {
             leakWarningThreshold: w,
             onWillAddFirstListener() {
                 U = v(Lt => {
-                    L1++, q = f(q, Lt), d && !u1 && (N1.fire(q), q = void 0), m1 = () => {
-                        const Nt = q;
-                        q = void 0, u1 = void 0, (!d || L1 > 1) && N1.fire(Nt), L1 = 0
+                    L1++, W = f(W, Lt), d && !u1 && (N1.fire(W), W = void 0), m1 = () => {
+                        const Nt = W;
+                        W = void 0, u1 = void 0, (!d || L1 > 1) && N1.fire(Nt), L1 = 0
                     }, typeof m == "number" ? (clearTimeout(u1), u1 = setTimeout(m1, m)) : u1 === void 0 && (u1 = 0, queueMicrotask(m1))
                 })
             },
@@ -2396,16 +2396,16 @@ var re = class _t {
 
     function j(v, f = !1, m = [], d) {
         let p = m.slice(),
-            w = v(q => {
-                p ? p.push(q) : U.fire(q)
+            w = v(W => {
+                p ? p.push(W) : U.fire(W)
             });
         d && d.add(w);
         const A = () => {
-                p?.forEach(q => U.fire(q)), p = null
+                p?.forEach(W => U.fire(W)), p = null
             },
             U = new B({
                 onWillAddFirstListener() {
-                    w || (w = v(q => U.fire(q)), d && d.add(w))
+                    w || (w = v(W => U.fire(W)), d && d.add(w))
                 },
                 onDidAddFirstListener() {
                     p && (f ? setTimeout(A) : A())
@@ -2422,8 +2422,8 @@ var re = class _t {
         return (d, p, w) => {
             const A = f(new F1);
             return v(function(U) {
-                const q = A.evaluate(U);
-                q !== D && d.call(p, q)
+                const W = A.evaluate(U);
+                W !== D && d.call(p, W)
             }, void 0, w)
         }
     }
@@ -2882,7 +2882,7 @@ function jr(e, t) {
     return e < t ? -1 : e > t ? 1 : 0
 }
 
-function qr(e, t, r = 0, n = e.length, i = 0, s = t.length) {
+function Wr(e, t, r = 0, n = e.length, i = 0, s = t.length) {
     for (; r < n && i < s; r++, i++) {
         const u = e.charCodeAt(r),
             l = t.charCodeAt(i);
@@ -2899,8 +2899,8 @@ function je(e, t, r = 0, n = e.length, i = 0, s = t.length) {
         let u = e.charCodeAt(r),
             l = t.charCodeAt(i);
         if (u === l) continue;
-        if (u >= 128 || l >= 128) return qr(e.toLowerCase(), t.toLowerCase(), r, n, i, s);
-        qe(u) && (u -= 32), qe(l) && (l -= 32);
+        if (u >= 128 || l >= 128) return Wr(e.toLowerCase(), t.toLowerCase(), r, n, i, s);
+        We(u) && (u -= 32), We(l) && (l -= 32);
         const h = u - l;
         if (h !== 0) return h
     }
@@ -2909,15 +2909,15 @@ function je(e, t, r = 0, n = e.length, i = 0, s = t.length) {
     return o < a ? -1 : o > a ? 1 : 0
 }
 
-function qe(e) {
+function We(e) {
     return e >= 97 && e <= 122
 }
 
-function We(e) {
+function qe(e) {
     return e >= 65 && e <= 90
 }
 
-function Wr(e, t) {
+function qr(e, t) {
     return e.length === t.length && je(e, t) === 0
 }
 
@@ -3059,7 +3059,7 @@ var oi = class w1 {
     },
     M;
 (function(e) {
-    e.inMemory = "inmemory", e.vscode = "vscode", e.internal = "private", e.walkThrough = "walkThrough", e.walkThroughSnippet = "walkThroughSnippet", e.http = "http", e.https = "https", e.file = "file", e.git = "git", e.mailto = "mailto", e.untitled = "untitled", e.data = "data", e.command = "command", e.vscodeRemote = "vscode-remote", e.vscodeRemoteResource = "vscode-remote-resource", e.vscodeManagedRemoteResource = "vscode-managed-remote-resource", e.vscodeUserData = "vscode-userdata", e.vscodeCustomEditor = "vscode-custom-editor", e.vscodeNotebook = "vscode-notebook", e.vscodeNotebookCell = "vscode-notebook-cell", e.vscodeNotebookCellMetadata = "vscode-notebook-cell-metadata", e.vscodeNotebookCellMetadataDiff = "vscode-notebook-cell-metadata-diff", e.vscodeNotebookCellOutput = "vscode-notebook-cell-output", e.vscodeNotebookCellOutputDiff = "vscode-notebook-cell-output-diff", e.vscodeNotebookMetadata = "vscode-notebook-metadata", e.vscodeInteractiveInput = "vscode-interactive-input", e.vscodeSettings = "vscode-settings", e.vscodeWorkspaceTrust = "vscode-workspace-trust", e.vscodeTerminal = "vscode-terminal", e.terminal = "terminal", e.vscodeChatCodeBlock = "vscode-chat-code-block", e.vscodeChatCodeCompareBlock = "vscode-chat-code-compare-block", e.vscodeChatSesssion = "vscode-chat-editor", e.webviewPanel = "webview-panel", e.vscodeWebview = "vscode-webview", e.extension = "extension", e.aiChat = "cursor.aichat", e.contextObject = "cursor.context-object", e.composer = "cursor.composer", e.aiSettings = "cursor.aisettings", e.tinderDiffEditor = "cursor.tinderdiffeditor", e.vscodeFileResource = "vscode-file", e.tmp = "tmp", e.vsls = "vsls", e.vscodeSourceControl = "vscode-scm", e.commentsInput = "comment", e.codeSetting = "code-setting", e.cursorDev = "cursor-dev-utils", e.outputChannel = "output", e.accessibleView = "accessible-view", e.backgroundComposer = "cursor.backgroundcomposer", e.personalEnvironmentJson = "cursor.personalenvironmentjson", e.bugbot = "cursor.bugbot", e.aiEditorBox = "aiEditorBox", e.backgroundComposerPeek = "background-composer-peek", e.cursorPlan = "cursor-plan", e.reviewChanges = "cursor.reviewchanges", e.reviewPr = "cursor.reviewpr", e.allPullRequests = "cursor.allpullrequests", e.cursorBlame = "cursor.blame", e.cursorFileBlame = "cursor.fileblame"
+    e.inMemory = "inmemory", e.vscode = "vscode", e.internal = "private", e.walkThrough = "walkThrough", e.walkThroughSnippet = "walkThroughSnippet", e.http = "http", e.https = "https", e.file = "file", e.git = "git", e.mailto = "mailto", e.untitled = "untitled", e.data = "data", e.command = "command", e.vscodeRemote = "vscode-remote", e.vscodeRemoteResource = "vscode-remote-resource", e.vscodeManagedRemoteResource = "vscode-managed-remote-resource", e.vscodeUserData = "vscode-userdata", e.vscodeCustomEditor = "vscode-custom-editor", e.vscodeNotebook = "vscode-notebook", e.vscodeNotebookCell = "vscode-notebook-cell", e.vscodeNotebookCellMetadata = "vscode-notebook-cell-metadata", e.vscodeNotebookCellMetadataDiff = "vscode-notebook-cell-metadata-diff", e.vscodeNotebookCellOutput = "vscode-notebook-cell-output", e.vscodeNotebookCellOutputDiff = "vscode-notebook-cell-output-diff", e.vscodeNotebookMetadata = "vscode-notebook-metadata", e.vscodeInteractiveInput = "vscode-interactive-input", e.vscodeSettings = "vscode-settings", e.vscodeWorkspaceTrust = "vscode-workspace-trust", e.vscodeTerminal = "vscode-terminal", e.terminal = "terminal", e.vscodeChatCodeBlock = "vscode-chat-code-block", e.vscodeChatCodeCompareBlock = "vscode-chat-code-compare-block", e.vscodeChatSesssion = "vscode-chat-editor", e.webviewPanel = "webview-panel", e.vscodeWebview = "vscode-webview", e.extension = "extension", e.aiChat = "cursor.aichat", e.contextObject = "cursor.context-object", e.composer = "cursor.composer", e.aiSettings = "cursor.aisettings", e.tinderDiffEditor = "cursor.tinderdiffeditor", e.vscodeFileResource = "vscode-file", e.tmp = "tmp", e.vsls = "vsls", e.vscodeSourceControl = "vscode-scm", e.commentsInput = "comment", e.codeSetting = "code-setting", e.cursorDev = "cursor-dev-utils", e.outputChannel = "output", e.accessibleView = "accessible-view", e.backgroundComposer = "cursor.backgroundcomposer", e.personalEnvironmentJson = "cursor.personalenvironmentjson", e.bugbot = "cursor.bugbot", e.aiEditorBox = "aiEditorBox", e.backgroundComposerPeek = "background-composer-peek", e.cursorPlan = "cursor-plan", e.reviewChanges = "cursor.reviewchanges", e.cursorBlame = "cursor.blame", e.cursorFileBlame = "cursor.fileblame"
 })(M || (M = {}));
 var Br = "tkn",
     Qr = class {
@@ -3116,7 +3116,7 @@ function Gr(e) {
     return `${e.quality??"oss"}-${e.commit??"dev"}`
 }
 var Yr = "vscode-app",
-    Zr = class W1 {
+    Zr = class q1 {
         static {
             this.FALLBACK_AUTHORITY = Yr
         }
@@ -3125,9 +3125,9 @@ var Yr = "vscode-app",
             return this.uriToBrowserUri(r)
         }
         uriToBrowserUri(t) {
-            return t.scheme === M.vscodeRemote ? Jr.rewrite(t) : t.scheme === M.file && (Dt || jt === `${M.vscodeFileResource}://${W1.FALLBACK_AUTHORITY}`) ? t.with({
+            return t.scheme === M.vscodeRemote ? Jr.rewrite(t) : t.scheme === M.file && (Dt || jt === `${M.vscodeFileResource}://${q1.FALLBACK_AUTHORITY}`) ? t.with({
                 scheme: M.vscodeFileResource,
-                authority: t.authority || W1.FALLBACK_AUTHORITY,
+                authority: t.authority || q1.FALLBACK_AUTHORITY,
                 query: null,
                 fragment: null
             }) : t
@@ -3139,7 +3139,7 @@ var Yr = "vscode-app",
         uriToFileUri(t) {
             return t.scheme === M.vscodeFileResource ? t.with({
                 scheme: M.file,
-                authority: t.authority !== W1.FALLBACK_AUTHORITY ? t.authority : null,
+                authority: t.authority !== q1.FALLBACK_AUTHORITY ? t.authority : null,
                 query: null,
                 fragment: null
             }) : t
@@ -3537,7 +3537,7 @@ var ae = class {
             return !!e.path && e.path[0] === "/"
         }
         isEqualAuthority(e, t) {
-            return e === t || e !== void 0 && t !== void 0 && Wr(e, t)
+            return e === t || e !== void 0 && t !== void 0 && qr(e, t)
         }
         hasTrailingPathSeparator(e, t = R1) {
             if (e.scheme === M.file) {
@@ -3885,7 +3885,7 @@ var p1 = class a1 {
     fn, le;
 (function() {
     typeof globalThis.requestIdleCallback != "function" || typeof globalThis.cancelIdleCallback != "function" ? le = (e, t, r) => {
-        Wt(() => {
+        qt(() => {
             if (n) return;
             const i = Date.now() + 15;
             t(Object.freeze({
@@ -4617,11 +4617,11 @@ var En = class {
     };
 
 function ht(e) {
-    return e[0] === "o" && e[1] === "n" && We(e.charCodeAt(2))
+    return e[0] === "o" && e[1] === "n" && qe(e.charCodeAt(2))
 }
 
 function ft(e) {
-    return /^onDynamic/.test(e) && We(e.charCodeAt(9))
+    return /^onDynamic/.test(e) && qe(e.charCodeAt(9))
 }
 var Rn = class {
         constructor(e, t) {
@@ -4694,6 +4694,6 @@ function On(e) {
 }
 On(Nn);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/c6285feaba0ad62603f7c22e72f0a170dc8415a0/core/vs/workbench/contrib/output/common/outputLinkComputerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/63715ffc1807793ce209e935e5c3ab9b79fddc80/core/vs/workbench/contrib/output/common/outputLinkComputerMain.js.map
 
-//# debugId=bab3d7bb-e327-593e-8a18-4dbbc39b5a2f
+//# debugId=ee18b1f8-974d-5a47-8f8a-57fe9efca924
