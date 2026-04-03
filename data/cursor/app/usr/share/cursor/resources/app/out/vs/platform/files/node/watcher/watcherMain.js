@@ -7566,6 +7566,6 @@ zs(process) ? x1 = new ko : x1 = new xo("watcher");
 var wa = new _a;
 x1.registerChannel("watcher", w1.fromService(wa, new re));
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/63715ffc1807793ce209e935e5c3ab9b79fddc80/core/vs/platform/files/node/watcher/watcherMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e696fa8ae574d6a40e0f1dbf74bd7d823f0b0d0/core/vs/platform/files/node/watcher/watcherMain.js.map
 
 //# debugId=02fbeb2b-f621-512c-a221-f5141051a918

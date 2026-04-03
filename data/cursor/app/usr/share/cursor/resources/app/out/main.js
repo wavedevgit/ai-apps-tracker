@@ -49501,7 +49501,7 @@ var M0 = mG(import.meta.url),
 Qa.BUILD_INSERT_PRODUCT_CONFIGURATION && (Qa = M0("../product.json"));
 var T0 = {
     "name": "Cursor",
-    "version": "3.0.4",
+    "version": "3.0.6",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -50109,6 +50109,6 @@ function az(t) {
     return e ? e.toLowerCase() : typeof t?.locale == "string" ? t.locale.toLowerCase() : void 0
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/63715ffc1807793ce209e935e5c3ab9b79fddc80/core/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e696fa8ae574d6a40e0f1dbf74bd7d823f0b0d0/core/main.js.map
 
 //# debugId=21a27cd2-2df8-5cbb-88f3-d6581648acf1
