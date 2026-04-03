@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "21a27cd2-2df8-5cbb-88f3-d6581648acf1")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "75b48edc-4610-58d6-bd9c-328677f88ffc")
     } catch (e) {}
 }();
 var Rg = function(t, e) {
@@ -9322,7 +9322,7 @@ function C3(t) {
 }
 
 function P3(t, e) {
-    return t.trim() ? Kr.test(t) ? S(1940, null, t) : il.getConfigurationProperties()[t] !== void 0 ? S(1941, null, t) : e.policy?.name && il.getPolicyConfigurations().get(e.policy?.name) !== void 0 ? S(1942, null, t, e.policy?.name, il.getPolicyConfigurations().get(e.policy?.name)) : null : S(1939, null)
+    return t.trim() ? Kr.test(t) ? S(1941, null, t) : il.getConfigurationProperties()[t] !== void 0 ? S(1942, null, t) : e.policy?.name && il.getPolicyConfigurations().get(e.policy?.name) !== void 0 ? S(1943, null, t, e.policy?.name, il.getPolicyConfigurations().get(e.policy?.name)) : null : S(1940, null)
 }
 var q2, dr, G2, Xc, Yc, Jc, Qc, Zc, el, Xo, Ys, tl, z2, xv, Dv, bs, Kr, Rv, il, Wn = g({
         "out-build/vs/platform/configuration/common/configurationRegistry.js"() {
@@ -9358,7 +9358,7 @@ var q2, dr, G2, Xc, Yc, Jc, Qc, Zc, el, Xo, Ys, tl, z2, xv, Dv, bs, Kr, Rv, il, 
                 constructor() {
                     super(), this.registeredConfigurationDefaults = [], this.overrideIdentifiers = new Set, this._onDidSchemaChange = this._register(new x), this.onDidSchemaChange = this._onDidSchemaChange.event, this._onDidUpdateConfiguration = this._register(new x), this.onDidUpdateConfiguration = this._onDidUpdateConfiguration.event, this.configurationDefaultsOverrides = new Map, this.defaultLanguageConfigurationOverridesNode = {
                         id: "defaultOverrides",
-                        title: S(1933, null),
+                        title: S(1934, null),
                         properties: {}
                     }, this.configurationContributors = [this.defaultLanguageConfigurationOverridesNode], this.resourceLanguageSettingsSchema = {
                         properties: {},
@@ -9472,7 +9472,7 @@ var q2, dr, G2, Xc, Yc, Jc, Qc, Zc, el, Xo, Ys, tl, z2, xv, Dv, bs, Kr, Rv, il, 
                     const r = {
                         type: "object",
                         default: e.value,
-                        description: S(1934, null, w3(t)),
+                        description: S(1935, null, w3(t)),
                         $ref: Ys,
                         defaultDefaultValue: e.value,
                         source: i,
@@ -9662,8 +9662,8 @@ var q2, dr, G2, Xc, Yc, Jc, Qc, Zc, el, Xo, Ys, tl, z2, xv, Dv, bs, Kr, Rv, il, 
                         const e = `[${t}]`,
                             i = {
                                 type: "object",
-                                description: S(1935, null),
-                                errorMessage: S(1936, null),
+                                description: S(1936, null),
+                                errorMessage: S(1937, null),
                                 $ref: Ys
                             };
                         this.updatePropertyDefaultValue(e, i), Xc.properties[e] = i, Yc.properties[e] = i, Jc.properties[e] = i, Qc.properties[e] = i, Zc.properties[e] = i, el.properties[e] = i, Xo.properties[e] = i
@@ -9672,8 +9672,8 @@ var q2, dr, G2, Xc, Yc, Jc, Qc, Zc, el, Xo, Ys, tl, z2, xv, Dv, bs, Kr, Rv, il, 
                 registerOverridePropertyPatternKey() {
                     const t = {
                         type: "object",
-                        description: S(1937, null),
-                        errorMessage: S(1938, null),
+                        description: S(1938, null),
+                        errorMessage: S(1939, null),
                         $ref: Ys
                     };
                     Xc.patternProperties[bs] = t, Yc.patternProperties[bs] = t, Jc.patternProperties[bs] = t, Qc.patternProperties[bs] = t, Zc.patternProperties[bs] = t, el.patternProperties[bs] = t, Xo.patternProperties[bs] = t, this._onDidSchemaChange.fire()
@@ -9692,7 +9692,7 @@ var q2, dr, G2, Xc, Yc, Jc, Qc, Zc, el, Xo, Ys, tl, z2, xv, Dv, bs, Kr, Rv, il, 
             X(), be(), Wn(), _s(), K2 = Ai.as(dr.Configuration), K2.registerConfiguration({
                 id: "update",
                 order: 15,
-                title: S(2740, null),
+                title: S(2741, null),
                 type: "object",
                 properties: {
                     "update.mode": {
@@ -9700,10 +9700,10 @@ var q2, dr, G2, Xc, Yc, Jc, Qc, Zc, el, Xo, Ys, tl, z2, xv, Dv, bs, Kr, Rv, il, 
                         enum: ["none", "manual", "start", "default", "silentlyApplyOnQuit"],
                         default: "default",
                         scope: 1,
-                        markdownDescription: S(2741, null),
+                        markdownDescription: S(2742, null),
                         tags: ["usesOnlineServices"],
-                        description: S(2742, null),
-                        enumDescriptions: [S(2743, null), S(2744, null), S(2745, null), S(2746, null), S(2747, null)],
+                        description: S(2743, null),
+                        enumDescriptions: [S(2744, null), S(2745, null), S(2746, null), S(2747, null), S(2748, null)],
                         policy: {
                             name: "UpdateMode",
                             minimumVersion: "1.67"
@@ -9713,29 +9713,29 @@ var q2, dr, G2, Xc, Yc, Jc, Qc, Zc, el, Xo, Ys, tl, z2, xv, Dv, bs, Kr, Rv, il, 
                         type: "string",
                         default: "default",
                         scope: 1,
-                        description: S(2748, null),
-                        deprecationMessage: S(2749, null, "update.mode")
+                        description: S(2749, null),
+                        deprecationMessage: S(2750, null, "update.mode")
                     },
                     "update.enableWindowsBackgroundUpdates": {
                         type: "boolean",
                         default: !0,
                         scope: 1,
-                        title: S(2750, null),
-                        description: S(2751, null),
+                        title: S(2751, null),
+                        description: S(2752, null),
                         included: V && !ms
                     },
                     "update.showReleaseNotes": {
                         type: "boolean",
                         default: !0,
                         scope: 1,
-                        description: S(2752, null),
+                        description: S(2753, null),
                         tags: ["usesOnlineServices"]
                     },
                     "update.releaseTrack": {
                         type: "string",
                         default: "stable",
                         scope: 1,
-                        description: S(2753, null)
+                        description: S(2754, null)
                     }
                 }
             })
@@ -13113,11 +13113,11 @@ var T4, lw = g({
 function uw(...t) {
     switch (t.length) {
         case 1:
-            return S(1966, null, t[0]);
+            return S(1967, null, t[0]);
         case 2:
-            return S(1967, null, t[0], t[1]);
+            return S(1968, null, t[0], t[1]);
         case 3:
-            return S(1968, null, t[0], t[1], t[2]);
+            return S(1969, null, t[0], t[1], t[2]);
         default:
             return
     }
@@ -13127,7 +13127,7 @@ var L4, W4, O4, oa, eW = g({
         "use strict";
         $e(), be(), (function(t) {
             t[t.LParen = 0] = "LParen", t[t.RParen = 1] = "RParen", t[t.Neg = 2] = "Neg", t[t.Eq = 3] = "Eq", t[t.NotEq = 4] = "NotEq", t[t.Lt = 5] = "Lt", t[t.LtEq = 6] = "LtEq", t[t.Gt = 7] = "Gt", t[t.GtEq = 8] = "GtEq", t[t.RegexOp = 9] = "RegexOp", t[t.RegexStr = 10] = "RegexStr", t[t.True = 11] = "True", t[t.False = 12] = "False", t[t.In = 13] = "In", t[t.Not = 14] = "Not", t[t.And = 15] = "And", t[t.Or = 16] = "Or", t[t.Str = 17] = "Str", t[t.QuotedStr = 18] = "QuotedStr", t[t.Error = 19] = "Error", t[t.EOF = 20] = "EOF"
-        })(L4 || (L4 = {})), W4 = S(1969, null), O4 = S(1970, null), oa = class j0 {
+        })(L4 || (L4 = {})), W4 = S(1970, null), O4 = S(1971, null), oa = class j0 {
             constructor() {
                 this._input = "", this._start = 0, this._current = 0, this._tokens = [], this._errors = [], this.stringRe = /[a-zA-Z0-9_<>\-\./\\:\*\?\+\[\]\^,#@;"%\$\p{L}-]+/uy
             }
@@ -13396,7 +13396,7 @@ var Ft, aa, $4, B4, V4, j4, H4, q4, hw, G4, z4, K4, X4, Y4, fi, lh, _i, Li, ca, 
             t[t.False = 0] = "False", t[t.True = 1] = "True", t[t.Defined = 2] = "Defined", t[t.Not = 3] = "Not", t[t.Equals = 4] = "Equals", t[t.NotEquals = 5] = "NotEquals", t[t.And = 6] = "And", t[t.Regex = 7] = "Regex", t[t.NotRegex = 8] = "NotRegex", t[t.Or = 9] = "Or", t[t.In = 10] = "In", t[t.NotIn = 11] = "NotIn", t[t.Greater = 12] = "Greater", t[t.GreaterEquals = 13] = "GreaterEquals", t[t.Smaller = 14] = "Smaller", t[t.SmallerEquals = 15] = "SmallerEquals", t[t.Function = 16] = "Function"
         })(B4 || (B4 = {})), V4 = {
             regexParsingWithErrorRecovery: !0
-        }, j4 = S(1944, null), H4 = S(1945, null), q4 = S(1946, null), hw = S(1947, null), G4 = S(1948, null), z4 = S(1949, null), K4 = S(1950, null), X4 = S(1951, null), Y4 = class Ou {
+        }, j4 = S(1945, null), H4 = S(1946, null), q4 = S(1947, null), hw = S(1948, null), G4 = S(1949, null), z4 = S(1950, null), K4 = S(1951, null), X4 = S(1952, null), Y4 = class Ou {
             static {
                 this._parseError = new Error
             }
@@ -13668,7 +13668,7 @@ var Ft, aa, $4, B4, V4, j4, H4, q4, hw, G4, z4, K4, X4, Y4, fi, lh, _i, Li, ca, 
                 throw this._errExpectedButGot(i, this._peek())
             }
             _errExpectedButGot(e, i, r) {
-                const s = S(1952, null, e, oa.getLexeme(i)),
+                const s = S(1953, null, e, oa.getLexeme(i)),
                     n = i.offset,
                     o = oa.getLexeme(i);
                 return this._parsingErrors.push({
@@ -15177,7 +15177,7 @@ function vr(t, e) {
 }
 
 function qn(t) {
-    return t || vr(S(2158, null), ue.Unknown)
+    return t || vr(S(2159, null), ue.Unknown)
 }
 
 function lW(t, e) {
@@ -15365,7 +15365,7 @@ var bt, qt, fa, f5, p5, ue, yh, g5, Gn, m5, v5, pi, Sh, _h, w5, bh, y5, Eh, zn, 
                     this.TB = Ui.GB * Ui.KB
                 }
                 static formatSize(e) {
-                    return Rd(e) || (e = 0), e < Ui.KB ? S(2159, null, e.toFixed(0)) : e < Ui.MB ? S(2160, null, (e / Ui.KB).toFixed(2)) : e < Ui.GB ? S(2161, null, (e / Ui.MB).toFixed(2)) : e < Ui.TB ? S(2162, null, (e / Ui.GB).toFixed(2)) : S(2163, null, (e / Ui.TB).toFixed(2))
+                    return Rd(e) || (e = 0), e < Ui.KB ? S(2160, null, e.toFixed(0)) : e < Ui.MB ? S(2161, null, (e / Ui.KB).toFixed(2)) : e < Ui.GB ? S(2162, null, (e / Ui.MB).toFixed(2)) : e < Ui.TB ? S(2163, null, (e / Ui.GB).toFixed(2)) : S(2164, null, (e / Ui.TB).toFixed(2))
                 }
             }
         }
@@ -17289,7 +17289,7 @@ var wW, V5, qw, j5, H5, kl, q5, G5, Gw, gi = g({
                     }
                 }
             }, kl = "code-workspace", q5 = `.${kl}`, G5 = [{
-                name: S(2801, null),
+                name: S(2802, null),
                 extensions: [kl]
             }], Gw = "workspace.json"
         }
@@ -17399,7 +17399,7 @@ var z5, is, Th, rs = g({
                 return this._profilesObject
             }
             createDefaultProfile() {
-                const e = Mh("__default__profile__", S(2754, null), this.environmentService.userRoamingDataHome, this.profilesCacheHome);
+                const e = Mh("__default__profile__", S(2755, null), this.environmentService.userRoamingDataHome, this.profilesCacheHome);
                 return {
                     ...e,
                     extensionsResource: this.getDefaultProfileExtensionsLocation() ?? e.extensionsResource,
@@ -18522,7 +18522,7 @@ var iC, IW, rC, sC, nC, oC, aC, cC, xW, lC, uC, er, DW, dC, RW, AW, MW, TW, LW, 
             t.NotFound = "NotFound", t.Unsupported = "Unsupported", t.Deprecated = "Deprecated", t.Malicious = "Malicious", t.Incompatible = "Incompatible", t.IncompatibleApi = "IncompatibleApi", t.IncompatibleTargetPlatform = "IncompatibleTargetPlatform", t.ReleaseVersionNotFound = "ReleaseVersionNotFound", t.Invalid = "Invalid", t.Download = "Download", t.DownloadSignature = "DownloadSignature", t.DownloadFailedWriting = "DownloadFailedWriting", t.UpdateMetadata = "UpdateMetadata", t.Extract = "Extract", t.Scanning = "Scanning", t.ScanningExtension = "ScanningExtension", t.ReadRemoved = "ReadRemoved", t.UnsetRemoved = "UnsetRemoved", t.Delete = "Delete", t.Rename = "Rename", t.IntializeDefaultProfile = "IntializeDefaultProfile", t.AddToProfile = "AddToProfile", t.InstalledExtensionNotFound = "InstalledExtensionNotFound", t.PostInstall = "PostInstall", t.CorruptZip = "CorruptZip", t.IncompleteZip = "IncompleteZip", t.PackageNotSigned = "PackageNotSigned", t.SignatureVerificationInternal = "SignatureVerificationInternal", t.SignatureVerificationFailed = "SignatureVerificationFailed", t.NotAllowed = "NotAllowed", t.Gallery = "Gallery", t.Cancelled = "Cancelled", t.Unknown = "Unknown", t.Internal = "Internal"
         })(uC || (uC = {})), (function(t) {
             t.NotSigned = "NotSigned", t.Success = "Success", t.RequiredArgumentMissing = "RequiredArgumentMissing", t.InvalidArgument = "InvalidArgument", t.PackageIsUnreadable = "PackageIsUnreadable", t.UnhandledException = "UnhandledException", t.SignatureManifestIsMissing = "SignatureManifestIsMissing", t.SignatureManifestIsUnreadable = "SignatureManifestIsUnreadable", t.SignatureIsMissing = "SignatureIsMissing", t.SignatureIsUnreadable = "SignatureIsUnreadable", t.CertificateIsUnreadable = "CertificateIsUnreadable", t.SignatureArchiveIsUnreadable = "SignatureArchiveIsUnreadable", t.FileAlreadyExists = "FileAlreadyExists", t.SignatureArchiveIsInvalidZip = "SignatureArchiveIsInvalidZip", t.SignatureArchiveHasSameSignatureFile = "SignatureArchiveHasSameSignatureFile", t.PackageIntegrityCheckFailed = "PackageIntegrityCheckFailed", t.SignatureIsInvalid = "SignatureIsInvalid", t.SignatureManifestIsInvalid = "SignatureManifestIsInvalid", t.SignatureIntegrityCheckFailed = "SignatureIntegrityCheckFailed", t.EntryIsMissing = "EntryIsMissing", t.EntryIsTampered = "EntryIsTampered", t.Untrusted = "Untrusted", t.CertificateRevoked = "CertificateRevoked", t.SignatureIsNotValid = "SignatureIsNotValid", t.UnknownError = "UnknownError", t.PackageIsInvalidZip = "PackageIsInvalidZip", t.SignatureArchiveHasTooManyEntries = "SignatureArchiveHasTooManyEntries"
-        })(er || (er = {})), DW = H("extensionManagementService"), dC = "extensionsIdentifiers/disabled", RW = H("IGlobalExtensionEnablementService"), AW = H("IExtensionTipsService"), MW = H("IAllowedExtensionsService"), TW = iE(2069, "Extensions"), LW = iE(2070, "Preferences")
+        })(er || (er = {})), DW = H("extensionManagementService"), dC = "extensionsIdentifiers/disabled", RW = H("IGlobalExtensionEnablementService"), AW = H("IExtensionTipsService"), MW = H("IAllowedExtensionsService"), TW = iE(2070, "Extensions"), LW = iE(2071, "Preferences")
     }
 });
 import * as WW from "fs";
@@ -19134,26 +19134,26 @@ var Lr, jh, As = g({
                         ...e,
                         pickFolders: !0,
                         pickFiles: !0,
-                        title: S(1980, null)
+                        title: S(1981, null)
                     }, i)
                 }
                 pickFolder(e, i) {
                     return this.doPick({
                         ...e,
                         pickFolders: !0,
-                        title: S(1981, null)
+                        title: S(1982, null)
                     }, i)
                 }
                 pickFile(e, i) {
                     return this.doPick({
                         ...e,
                         pickFiles: !0,
-                        title: S(1982, null)
+                        title: S(1983, null)
                     }, i)
                 }
                 pickWorkspace(e, i) {
-                    const r = S(1983, null),
-                        s = Sk(S(1984, null)).withMnemonic,
+                    const r = S(1984, null),
+                        s = Sk(S(1985, null)).withMnemonic,
                         n = G5;
                     return this.doPick({
                         ...e,
@@ -19301,10 +19301,10 @@ var Lr, jh, As = g({
                         response: n
                     } = await this.dialogMainService.showMessageBox({
                         type: "error",
-                        title: S(2372, null),
-                        message: S(2373, null),
-                        detail: S(2374, null, i.path ?? "unknown"),
-                        buttons: [S(2375, null), S(2376, null)],
+                        title: S(2373, null),
+                        message: S(2374, null),
+                        detail: S(2375, null, i.path ?? "unknown"),
+                        buttons: [S(2376, null), S(2377, null)],
                         noLink: !0
                     });
                     n === 0 ? await this.lifecycleMainService.relaunch() : await this.lifecycleMainService.quit()
@@ -19925,7 +19925,7 @@ function h1(t, e, i = IC) {
         p.alias && delete d[p.alias];
         let m = d[f];
         if (p.deprecates)
-            for (const v of p.deprecates) d.hasOwnProperty(v) && (m || (m = d[v], m && i.onDeprecatedOption(v, p.deprecationMessage || S(2033, null, f))), delete d[v]);
+            for (const v of p.deprecates) d.hasOwnProperty(v) && (m || (m = d[v], m && i.onDeprecatedOption(v, p.deprecationMessage || S(2034, null, f))), delete d[v]);
         if (typeof m < "u") {
             if (p.type === "string[]") {
                 if (Array.isArray(m) || (m = [m]), !p.allowEmptyValue) {
@@ -19944,9 +19944,9 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
     "out-build/vs/platform/environment/node/argv.js"() {
         "use strict";
         CC = Q0(Z0(), 1), X(), be(), eO = {
-            o: S(1986, null),
-            e: S(1987, null),
-            t: S(1988, null)
+            o: S(1987, null),
+            e: S(1988, null),
+            t: S(1989, null)
         }, f1 = ["tunnel", "serve-web"], Yh = {
             tunnel: {
                 type: "subcommand",
@@ -19955,7 +19955,7 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
                     "cli-data-dir": {
                         type: "string",
                         args: "dir",
-                        description: S(1989, null)
+                        description: S(1990, null)
                     },
                     "disable-telemetry": {
                         type: "boolean"
@@ -19988,7 +19988,7 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
                     "cli-data-dir": {
                         type: "string",
                         args: "dir",
-                        description: S(1990, null)
+                        description: S(1991, null)
                     },
                     "disable-telemetry": {
                         type: "boolean"
@@ -20003,72 +20003,72 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
                 cat: "o",
                 alias: "d",
                 args: ["file", "file"],
-                description: S(1991, null)
+                description: S(1992, null)
             },
             merge: {
                 type: "boolean",
                 cat: "o",
                 alias: "m",
                 args: ["path1", "path2", "base", "result"],
-                description: S(1992, null)
+                description: S(1993, null)
             },
             add: {
                 type: "boolean",
                 cat: "o",
                 alias: "a",
                 args: "folder",
-                description: S(1993, null)
+                description: S(1994, null)
             },
             remove: {
                 type: "boolean",
                 cat: "o",
                 args: "folder",
-                description: S(1994, null)
+                description: S(1995, null)
             },
             goto: {
                 type: "boolean",
                 cat: "o",
                 alias: "g",
                 args: "file:line[:character]",
-                description: S(1995, null)
+                description: S(1996, null)
             },
             "new-window": {
                 type: "boolean",
                 cat: "o",
                 alias: "n",
-                description: S(1996, null)
+                description: S(1997, null)
             },
             "reuse-window": {
                 type: "boolean",
                 cat: "o",
                 alias: "r",
-                description: S(1997, null)
+                description: S(1998, null)
             },
             "suppress-popups-on-startup": {
                 type: "boolean",
                 cat: "o",
-                description: S(1998, null)
+                description: S(1999, null)
             },
             "web-worker-exthost": {
                 type: "boolean",
                 cat: "o",
-                description: S(1999, null)
+                description: S(2e3, null)
             },
             glass: {
                 type: "boolean",
                 cat: "o",
-                description: S(2e3, null)
+                description: S(2001, null)
             },
             classic: {
                 type: "boolean",
                 cat: "o",
-                description: S(2001, null)
+                description: S(2002, null)
             },
             wait: {
                 type: "boolean",
                 cat: "o",
                 alias: "w",
-                description: S(2002, null)
+                description: S(2003, null)
             },
             waitMarkerFilePath: {
                 type: "string"
@@ -20077,32 +20077,32 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
                 type: "string",
                 cat: "o",
                 args: "locale",
-                description: S(2003, null)
+                description: S(2004, null)
             },
             "user-data-dir": {
                 type: "string",
                 cat: "o",
                 args: "dir",
-                description: S(2004, null)
+                description: S(2005, null)
             },
             profile: {
                 type: "string",
                 cat: "o",
                 args: "profileName",
-                description: S(2005, null)
+                description: S(2006, null)
             },
             help: {
                 type: "boolean",
                 cat: "o",
                 alias: "h",
-                description: S(2006, null)
+                description: S(2007, null)
             },
             "extensions-dir": {
                 type: "string",
                 deprecates: ["extensionHomePath"],
                 cat: "e",
                 args: "dir",
-                description: S(2007, null)
+                description: S(2008, null)
             },
             "extensions-download-dir": {
                 type: "string"
@@ -20113,84 +20113,84 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
             "list-extensions": {
                 type: "boolean",
                 cat: "e",
-                description: S(2008, null)
+                description: S(2009, null)
             },
             "show-versions": {
                 type: "boolean",
                 cat: "e",
-                description: S(2009, null)
+                description: S(2010, null)
             },
             category: {
                 type: "string",
                 allowEmptyValue: !0,
                 cat: "e",
-                description: S(2010, null),
+                description: S(2011, null),
                 args: "category"
             },
             "install-extension": {
                 type: "string[]",
                 cat: "e",
                 args: "ext-id | path",
-                description: S(2011, null)
+                description: S(2012, null)
             },
             "pre-release": {
                 type: "boolean",
                 cat: "e",
-                description: S(2012, null)
+                description: S(2013, null)
             },
             "uninstall-extension": {
                 type: "string[]",
                 cat: "e",
                 args: "ext-id",
-                description: S(2013, null)
+                description: S(2014, null)
             },
             "update-extensions": {
                 type: "boolean",
                 cat: "e",
-                description: S(2014, null)
+                description: S(2015, null)
             },
             "enable-proposed-api": {
                 type: "string[]",
                 allowEmptyValue: !0,
                 cat: "e",
                 args: "ext-id",
-                description: S(2015, null)
+                description: S(2016, null)
             },
             "add-mcp": {
                 type: "string[]",
                 cat: "o",
                 args: "json",
-                description: S(2016, null)
+                description: S(2017, null)
             },
             version: {
                 type: "boolean",
                 cat: "t",
                 alias: "v",
-                description: S(2017, null)
+                description: S(2018, null)
             },
             verbose: {
                 type: "boolean",
                 cat: "t",
                 global: !0,
-                description: S(2018, null)
+                description: S(2019, null)
             },
             log: {
                 type: "string[]",
                 cat: "t",
                 args: "level",
                 global: !0,
-                description: S(2019, null)
+                description: S(2020, null)
             },
             status: {
                 type: "boolean",
                 alias: "s",
                 cat: "t",
-                description: S(2020, null)
+                description: S(2021, null)
             },
             "prof-startup": {
                 type: "boolean",
                 cat: "t",
-                description: S(2021, null)
+                description: S(2022, null)
             },
             "prof-append-timers": {
                 type: "string"
@@ -20214,18 +20214,18 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
                 type: "boolean",
                 deprecates: ["disableExtensions"],
                 cat: "t",
-                description: S(2022, null)
+                description: S(2023, null)
             },
             "disable-extension": {
                 type: "string[]",
                 cat: "t",
                 args: "ext-id",
-                description: S(2023, null)
+                description: S(2024, null)
             },
             sync: {
                 type: "string",
                 cat: "t",
-                description: S(2024, null),
+                description: S(2025, null),
                 args: ["on | off"]
             },
             "inspect-extensions": {
@@ -20234,7 +20234,7 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
                 deprecates: ["debugPluginHost"],
                 args: "port",
                 cat: "t",
-                description: S(2025, null)
+                description: S(2026, null)
             },
             "inspect-brk-extensions": {
                 type: "string",
@@ -20242,22 +20242,22 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
                 deprecates: ["debugBrkPluginHost"],
                 args: "port",
                 cat: "t",
-                description: S(2026, null)
+                description: S(2027, null)
             },
             "disable-lcd-text": {
                 type: "boolean",
                 cat: "t",
-                description: S(2027, null)
+                description: S(2028, null)
             },
             "disable-gpu": {
                 type: "boolean",
                 cat: "t",
-                description: S(2028, null)
+                description: S(2029, null)
             },
             "disable-chromium-sandbox": {
                 type: "boolean",
                 cat: "t",
-                description: S(2029, null)
+                description: S(2030, null)
             },
             sandbox: {
                 type: "boolean"
@@ -20266,12 +20266,12 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
                 type: "string",
                 cat: "t",
                 args: ["shell"],
-                description: S(2030, null)
+                description: S(2031, null)
             },
             telemetry: {
                 type: "boolean",
                 cat: "t",
-                description: S(2031, null)
+                description: S(2032, null)
             },
             remote: {
                 type: "string",
@@ -20572,7 +20572,7 @@ var CC, eO, f1, Yh, PC, tO, IC, xC = g({
             chat: {
                 type: "boolean",
                 cat: "o",
-                description: S(2032, null)
+                description: S(2033, null)
             },
             _: {
                 type: "string[]"
@@ -21864,9 +21864,9 @@ var cn, rf, ro = g({
             async isValidTargetWorkspacePath(e, i, r) {
                 return r ? Gt(e.openedWorkspace) && pt.isEqual(e.openedWorkspace.configPath, r) ? !1 : Sa(i, r) ? (await this.dialogMainService.showMessageBox({
                     type: "info",
-                    buttons: [S(2812, null)],
-                    message: S(2813, null, Xr(r)),
-                    detail: S(2814, null)
+                    buttons: [S(2813, null)],
+                    message: S(2814, null, Xr(r)),
+                    detail: S(2815, null)
                 }, bO.BrowserWindow.getFocusedWindow() ?? void 0), !1) : !0 : !0
             }
             async doEnterWorkspace(e, i) {
@@ -22258,17 +22258,17 @@ import AO from "assert";
 
 function MO(t, e) {
     const i = (c, l) => {
-            console.warn(S(2042, null, c, l))
+            console.warn(S(2043, null, c, l))
         },
         r = c => {
-            console.warn(S(2043, null, c))
+            console.warn(S(2044, null, c))
         },
         s = (c, l) => {
-            console.warn(S(2044, null, c, l))
+            console.warn(S(2045, null, c, l))
         },
         n = c => ({
             onUnknownOption: l => {
-                f1.includes(c) || console.warn(S(2045, null, l, c))
+                f1.includes(c) || console.warn(S(2046, null, l, c))
             },
             onMultipleValues: i,
             onEmptyValue: r,
@@ -22277,14 +22277,14 @@ function MO(t, e) {
         }),
         a = h1(t, Yh, e ? {
             onUnknownOption: c => {
-                console.warn(S(2046, null, c))
+                console.warn(S(2047, null, c))
             },
             onMultipleValues: i,
             onEmptyValue: r,
             onDeprecatedOption: s,
             getSubcommandReporter: n
         } : void 0);
-    return a.goto && a._.forEach(c => AO(/^(\w:)?[^:]+(:\d*){0,2}:?$/.test(c), S(2047, null))), a
+    return a.goto && a._.forEach(c => AO(/^(\w:)?[^:]+(:\d*){0,2}:?$/.test(c), S(2048, null))), a
 }
 
 function TO(t) {
@@ -22556,12 +22556,12 @@ async function hf(t, e, i, r) {
         const c = t.getValue("application.shellEnvironmentResolutionTimeout");
         typeof c == "number" && (a = zO(c, 1, 120) * 1e3);
         const l = setTimeout(() => {
-            o.dispose(!0), n(new Error(S(2369, null)))
+            o.dispose(!0), n(new Error(S(2370, null)))
         }, a);
         try {
             s(await YO(e, o.token))
         } catch (u) {
-            !Cd(u) && !o.token.isCancellationRequested ? n(new Error(S(2370, null, hr(u)))) : s({})
+            !Cd(u) && !o.token.isCancellationRequested ? n(new Error(S(2371, null, hr(u)))) : s({})
         } finally {
             clearTimeout(l), o.dispose()
         }
@@ -22603,7 +22603,7 @@ async function YO(t, e) {
             const b = Buffer.concat(v).toString("utf8");
             t.trace("getUnixShellEnvironment#raw", b);
             const R = Buffer.concat(y).toString("utf8");
-            if (R.trim() && t.trace("getUnixShellEnvironment#stderr", R), w || E) return l(new Error(S(2371, null, w, E)));
+            if (R.trim() && t.trace("getUnixShellEnvironment#stderr", R), w || E) return l(new Error(S(2372, null, w, E)));
             const C = n.exec(b),
                 M = C ? C[1] : "{}";
             try {
@@ -23153,53 +23153,53 @@ function IF(t = !0, e = !0) {
     Sf = [{
         id: "http",
         order: 15,
-        title: S(2351, null),
+        title: S(2352, null),
         type: "object",
         scope: 2,
         properties: {
             "http.useLocalProxyConfiguration": {
                 type: "boolean",
                 default: e,
-                markdownDescription: S(2352, null),
+                markdownDescription: S(2353, null),
                 restricted: !0
             }
         }
     }, {
         id: "http",
         order: 15,
-        title: S(2353, null),
+        title: S(2354, null),
         type: "object",
         scope: 1,
         properties: {
             "http.electronFetch": {
                 type: "boolean",
                 default: !1,
-                description: S(2354, null),
+                description: S(2355, null),
                 restricted: !0
             }
         }
     }, {
         id: "http",
         order: 15,
-        title: S(2355, null),
+        title: S(2356, null),
         type: "object",
         scope: t ? 1 : 2,
         properties: {
             "http.proxy": {
                 type: "string",
                 pattern: "^(https?|socks|socks4a?|socks5h?)://([^:]*(:[^@]*)?@)?([^:]+|\\[[:0-9a-fA-F]+\\])(:\\d+)?/?$|^$",
-                markdownDescription: S(2356, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2357, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxyStrictSSL": {
                 type: "boolean",
                 default: !0,
-                markdownDescription: S(2357, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2358, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxyKerberosServicePrincipal": {
                 type: "string",
-                markdownDescription: S(2358, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2359, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.noProxy": {
@@ -23207,40 +23207,40 @@ function IF(t = !0, e = !0) {
                 items: {
                     type: "string"
                 },
-                markdownDescription: S(2359, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2360, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxyAuthorization": {
                 type: ["null", "string"],
                 default: null,
-                markdownDescription: S(2360, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2361, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxySupport": {
                 type: "string",
                 enum: ["off", "on", "fallback", "override"],
-                enumDescriptions: [S(2361, null), S(2362, null), S(2363, null), S(2364, null)],
+                enumDescriptions: [S(2362, null), S(2363, null), S(2364, null), S(2365, null)],
                 default: "override",
-                markdownDescription: S(2365, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2366, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.systemCertificates": {
                 type: "boolean",
                 default: !0,
-                markdownDescription: S(2366, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2367, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.experimental.systemCertificatesV2": {
                 type: "boolean",
                 tags: ["experimental"],
                 default: !1,
-                markdownDescription: S(2367, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2368, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.fetchAdditionalSupport": {
                 type: "boolean",
                 default: !0,
-                markdownDescription: S(2368, null, "`#http.useLocalProxyConfiguration#`", "`#http.proxySupport#`", "`#http.systemCertificates#`"),
+                markdownDescription: S(2369, null, "`#http.useLocalProxyConfiguration#`", "`#http.proxySupport#`", "`#http.systemCertificates#`"),
                 restricted: !0
             }
         }
@@ -23640,14 +23640,14 @@ var os, ql, co = g({
                                 }
                             })
                         } catch (a) {
-                            throw this.logService.error("Error replacing the `code` command on the path", a), new Error(S(2291, null))
+                            throw this.logService.error("Error replacing the `code` command on the path", a), new Error(S(2292, null))
                         }
                         return
                     }
                     const i = async () => {
                         const n = ei(this.environmentMainService.appRoot, "bin", "code"),
                             o = "/usr/local/bin/code";
-                        if (!await ie.exists(n)) throw new Error(S(2292, null, n));
+                        if (!await ie.exists(n)) throw new Error(S(2293, null, n));
                         return {
                             source: o,
                             target: n
@@ -23676,14 +23676,14 @@ var os, ql, co = g({
                             response: o
                         } = await this.showMessageBox(e, {
                             type: "info",
-                            message: S(2293, null, this.productService.nameShort),
-                            buttons: [S(2294, null), S(2295, null)]
+                            message: S(2294, null, this.productService.nameShort),
+                            buttons: [S(2295, null), S(2296, null)]
                         });
                         if (o === 0) try {
                             const a = `osascript -e "do shell script \\"mkdir -p /usr/local/bin && ln -sf '${s}' '${r}'\\" with administrator privileges"`;
                             await Ra(Bl)(a)
                         } catch {
-                            throw new Error(S(2296, null, r))
+                            throw new Error(S(2297, null, r))
                         }
                     }
                 }
@@ -23712,15 +23712,15 @@ var os, ql, co = g({
                             response: n
                         } = await this.showMessageBox(e, {
                             type: "info",
-                            message: S(2297, null, this.productService.nameShort),
-                            buttons: [S(2298, null), S(2299, null)]
+                            message: S(2298, null, this.productService.nameShort),
+                            buttons: [S(2299, null), S(2300, null)]
                         });
                         if (n === 1) throw new Ii;
                         try {
                             const o = `osascript -e "do shell script \\"mkdir -p /usr/local/bin && ln -sf '${r}' '${i}'\\" with administrator privileges"`;
                             await Ra(Bl)(o)
                         } catch {
-                            throw new Error(S(2300, null, i))
+                            throw new Error(S(2301, null, i))
                         }
                     }
                 }
@@ -23737,15 +23737,15 @@ var os, ql, co = g({
                                     response: s
                                 } = await this.showMessageBox(e, {
                                     type: "info",
-                                    message: S(2301, null, this.productService.nameShort),
-                                    buttons: [S(2302, null), S(2303, null)]
+                                    message: S(2302, null, this.productService.nameShort),
+                                    buttons: [S(2303, null), S(2304, null)]
                                 });
                                 if (s === 1) throw new Ii;
                                 try {
                                     const n = `osascript -e "do shell script \\"rm '${i}'\\" with administrator privileges"`;
                                     await Ra(Bl)(n)
                                 } catch {
-                                    throw new Error(S(2304, null, i))
+                                    throw new Error(S(2305, null, i))
                                 }
                                 break
                             }
@@ -23759,7 +23759,7 @@ var os, ql, co = g({
                 async getShellCommandLink() {
                     const e = ei(this.environmentMainService.appRoot, "bin", "code"),
                         i = `/usr/local/bin/${this.productService.applicationName}`;
-                    if (!await ie.exists(e)) throw new Error(S(2305, null, e));
+                    if (!await ie.exists(e)) throw new Error(S(2306, null, e));
                     return {
                         source: i,
                         target: e
@@ -24369,7 +24369,7 @@ function Ma(t) {
 }
 
 function L1(t) {
-    return "errno" in t && t.errno === "ENOENT" && "path" in t && typeof t.path == "string" ? new Error(S(2149, null, t.path)) : t
+    return "errno" in t && t.errno === "ENOENT" && "path" in t && typeof t.path == "string" ? new Error(S(2150, null, t.path)) : t
 }
 
 function JF(t) {
@@ -24380,7 +24380,7 @@ function JF(t) {
 var W1, bf, Ef, MP, O1, QF = g({
     "out-build/vs/platform/externalTerminal/node/externalTerminalService.js"() {
         "use strict";
-        Un(), Me(), ke(), X(), sf(), Ht(), Nl(), be(), YF(), W1 = S(2144, null), bf = class {
+        Un(), Me(), ke(), X(), sf(), Ht(), Nl(), be(), YF(), W1 = S(2145, null), bf = class {
             async getDefaultTerminalForPlatforms() {
                 return {
                     windows: Ef.getDefaultTerminalWindows(),
@@ -24477,9 +24477,9 @@ var W1, bf, Ef, MP, O1, QF = g({
                                 const v = f.split(`
 `, 1);
                                 c(new Error(v[0]))
-                            } else c(new Error(S(2145, null, l, m)))
+                            } else c(new Error(S(2146, null, l, m)))
                         })
-                    } else c(new Error(S(2146, null, o)))
+                    } else c(new Error(S(2147, null, o)))
                 })
             }
             spawnTerminal(e, i, r) {
@@ -24497,7 +24497,7 @@ var W1, bf, Ef, MP, O1, QF = g({
             }
         }, O1 = class vn extends bf {
             static {
-                this.WAIT_MESSAGE = S(2147, null)
+                this.WAIT_MESSAGE = S(2148, null)
             }
             openTerminal(e, i) {
                 return this.spawnTerminal(Aa, e, i)
@@ -24528,7 +24528,7 @@ var W1, bf, Ef, MP, O1, QF = g({
                                 const w = m.split(`
 `, 1);
                                 c(new Error(w[0]))
-                            } else c(new Error(S(2148, null, u, y)))
+                            } else c(new Error(S(2149, null, u, y)))
                         })
                     })
                 })
@@ -25064,7 +25064,7 @@ function q1(t) {
 }
 
 function pN(t, e) {
-    if (typeof e?.limits?.size == "number" && t > e.limits.size) throw vr(S(2192, null), ue.FileTooLarge);
+    if (typeof e?.limits?.size == "number" && t > e.limits.size) throw vr(S(2193, null), ue.FileTooLarge);
     return !0
 }
 var tI = g({
@@ -25903,8 +25903,8 @@ var kf, G1 = g({
                         const o = this.toFilePath(e);
                         if (!r.create || !r.overwrite) {
                             if (await ie.exists(o)) {
-                                if (!r.overwrite) throw vr(S(2195, null), ue.FileExists)
-                            } else if (!r.create) throw vr(S(2196, null), ue.FileNotFound)
+                                if (!r.overwrite) throw vr(S(2196, null), ue.FileExists)
+                            } else if (!r.create) throw vr(S(2197, null), ue.FileNotFound)
                         }
                         if (n = await this.open(e, {
                                 create: !0,
@@ -26050,7 +26050,7 @@ var kf, G1 = g({
                     if (s !== n) try {
                         await this.validateMoveCopy(e, i, "move", r.overwrite), await ie.rename(s, n)
                     } catch (o) {
-                        throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(S(2197, null, ct(s), ct(mt(n)), o.toString()))), this.toFileSystemProviderError(o)
+                        throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(S(2198, null, ct(s), ct(mt(n)), o.toString()))), this.toFileSystemProviderError(o)
                     }
                 }
                 async copy(e, i, r) {
@@ -26061,7 +26061,7 @@ var kf, G1 = g({
                             preserveSymlinks: !0
                         })
                     } catch (o) {
-                        throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(S(2198, null, ct(s), ct(mt(n)), o.toString()))), this.toFileSystemProviderError(o)
+                        throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(S(2199, null, ct(s), ct(mt(n)), o.toString()))), this.toFileSystemProviderError(o)
                     }
                 }
                 async validateMoveCopy(e, i, r, s) {
@@ -26069,14 +26069,14 @@ var kf, G1 = g({
                         o = this.toFilePath(i);
                     let a = !1;
                     if (!!(this.capabilities & 1024) || (a = rl(n, o, !0)), a) {
-                        if (r === "copy") throw vr(S(2199, null), ue.FileExists);
+                        if (r === "copy") throw vr(S(2200, null), ue.FileExists);
                         if (r === "move") return
                     }
                     const l = await this.statIgnoreError(e);
-                    if (!l) throw vr(S(2200, null), ue.FileNotFound);
+                    if (!l) throw vr(S(2201, null), ue.FileNotFound);
                     const u = await this.statIgnoreError(i);
                     if (u) {
-                        if (!s) throw vr(S(2201, null), ue.FileExists);
+                        if (!s) throw vr(S(2202, null), ue.FileExists);
                         (l.type & qt.File) !== 0 && (u.type & qt.File) !== 0 || await this.delete(i, {
                             recursive: !0,
                             useTrash: !1,
@@ -26388,7 +26388,7 @@ var hI, fI, WN = g({
                     try {
                         await LN.trashItem(s)
                     } catch (n) {
-                        throw vr(S(V ? 2193 : 2194, null, ct(s), hr(n)), ue.Unknown)
+                        throw vr(S(V ? 2194 : 2195, null, ct(s), hr(n)), ue.Unknown)
                     }
                 }
                 createSessionFileWatcher(t, e) {
@@ -26754,7 +26754,7 @@ var Q1, Z1, lo, _I, ey, Mf, UN = g({
                         const i = [];
                         try {
                             i.push({
-                                name: S(2306, null),
+                                name: S(2307, null),
                                 rootProcess: await If(process.pid)
                             });
                             const r = await this.diagnosticsMainService.getMainDiagnostics(),
@@ -26937,7 +26937,7 @@ var Q1, Z1, lo, _I, ey, Mf, UN = g({
                             n = NN(s) ? s : this.getWindowPosition(this.processExplorerParentWindow, 800, 500);
                         this.processExplorerWindow = this.createBrowserWindow(n, r, {
                             backgroundColor: e.styles.backgroundColor,
-                            title: e.mode === "glassWorkspace" ? S(2307, null) : S(2308, null),
+                            title: e.mode === "glassWorkspace" ? S(2308, null) : S(2309, null),
                             zoomLevel: e.zoomLevel,
                             alwaysOnTop: !0
                         }, "process-explorer"), r.update({
@@ -27053,9 +27053,9 @@ var Q1, Z1, lo, _I, ey, Mf, UN = g({
                     const e = await Zl.stopRecording(`${On(this.environmentMainService.userHome.fsPath,this.productService.applicationName)}.trace.txt`);
                     await this.dialogMainService.showMessageBox({
                         type: "info",
-                        message: S(2309, null),
-                        detail: S(2310, null, e),
-                        buttons: [S(2311, null)]
+                        message: S(2310, null),
+                        detail: S(2311, null, e),
+                        buttons: [S(2312, null)]
                     }, Rf.getFocusedWindow() ?? void 0), this.nativeHostMainService.showItemInFolder(void 0, e)
                 }
                 async getSystemStatus() {
@@ -27749,7 +27749,7 @@ var iu, oy, Wf, KN = g({
                     try {
                         u = this._createBrowserWindow(l, a, {
                             backgroundColor: i.styles.backgroundColor,
-                            title: S(2143, null),
+                            title: S(2144, null),
                             zoomLevel: i.zoomLevel,
                             alwaysOnTop: !0
                         }, "extension-monitor"), this._monitorWindowDisposables.set(u.id, o), u.on("close", () => {
@@ -28492,9 +28492,9 @@ var tr, su, Nf, Uf = g({
                         response: i
                     } = await this.dialogMainService.showMessageBox({
                         type: "warning",
-                        buttons: [S(2802, null), S(2803, null)],
-                        message: S(2804, null),
-                        detail: S(2805, null),
+                        buttons: [S(2803, null), S(2804, null)],
+                        message: S(2805, null),
+                        detail: S(2806, null),
                         cancelId: 1
                     });
                     if (i !== 0) return
@@ -28577,8 +28577,8 @@ var tr, su, Nf, Uf = g({
                         type: "tasks",
                         items: [{
                             type: "task",
-                            title: S(2806, null),
-                            description: S(2807, null),
+                            title: S(2807, null),
+                            description: S(2808, null),
                             program: process.execPath,
                             args: "-n",
                             iconPath: process.execPath,
@@ -28614,7 +28614,7 @@ var tr, su, Nf, Uf = g({
                     }));
                     s.length > 0 && e.push({
                         type: "custom",
-                        name: S(r ? 2808 : 2809, null),
+                        name: S(r ? 2809 : 2810, null),
                         items: s
                     })
                 }
@@ -28638,12 +28638,12 @@ var tr, su, Nf, Uf = g({
                     description: this.renderJumpListPathDescription(e)
                 };
                 if (this.workspacesManagementMainService.isUntitledWorkspace(e)) return {
-                    title: S(2810, null),
+                    title: S(2811, null),
                     description: ""
                 };
                 let r = Xr(e.configPath);
                 return r.endsWith(kl) && (r = r.substr(0, r.length - kl.length - 1)), {
-                    title: S(2811, null, r),
+                    title: S(2812, null, r),
                     description: this.renderJumpListPathDescription(e.configPath)
                 }
             }
@@ -28815,7 +28815,7 @@ var $f, ou, Bf, tU = g({
                         this.appMenuInstalled = !0;
                         const o = new Tt;
                         o.append(new He({
-                            label: this.mnemonicLabel(S(2255, null)),
+                            label: this.mnemonicLabel(S(2256, null)),
                             click: () => this.windowsMainService.openEmptyWindow({
                                 context: 1
                             })
@@ -28824,7 +28824,7 @@ var $f, ou, Bf, tU = g({
                     if (this.shouldDrawMenu("File")) {
                         const o = new Tt,
                             a = new He({
-                                label: this.mnemonicLabel(S(2256, null)),
+                                label: this.mnemonicLabel(S(2257, null)),
                                 submenu: o
                             });
                         this.setMenuById(o, "File"), r.append(a)
@@ -28832,7 +28832,7 @@ var $f, ou, Bf, tU = g({
                     if (this.shouldDrawMenu("Edit")) {
                         const o = new Tt,
                             a = new He({
-                                label: this.mnemonicLabel(S(2257, null)),
+                                label: this.mnemonicLabel(S(2258, null)),
                                 submenu: o
                             });
                         this.setMenuById(o, "Edit"), r.append(a)
@@ -28840,7 +28840,7 @@ var $f, ou, Bf, tU = g({
                     if (this.shouldDrawMenu("Selection")) {
                         const o = new Tt,
                             a = new He({
-                                label: this.mnemonicLabel(S(2258, null)),
+                                label: this.mnemonicLabel(S(2259, null)),
                                 submenu: o
                             });
                         this.setMenuById(o, "Selection"), r.append(a)
@@ -28848,7 +28848,7 @@ var $f, ou, Bf, tU = g({
                     if (this.shouldDrawMenu("View")) {
                         const o = new Tt,
                             a = new He({
-                                label: this.mnemonicLabel(S(2259, null)),
+                                label: this.mnemonicLabel(S(2260, null)),
                                 submenu: o
                             });
                         this.setMenuById(o, "View"), r.append(a)
@@ -28856,7 +28856,7 @@ var $f, ou, Bf, tU = g({
                     if (this.shouldDrawMenu("Go")) {
                         const o = new Tt,
                             a = new He({
-                                label: this.mnemonicLabel(S(2260, null)),
+                                label: this.mnemonicLabel(S(2261, null)),
                                 submenu: o
                             });
                         this.setMenuById(o, "Go"), r.append(a)
@@ -28864,7 +28864,7 @@ var $f, ou, Bf, tU = g({
                     if (this.shouldDrawMenu("Run")) {
                         const o = new Tt,
                             a = new He({
-                                label: this.mnemonicLabel(S(2261, null)),
+                                label: this.mnemonicLabel(S(2262, null)),
                                 submenu: o
                             });
                         this.setMenuById(o, "Run"), r.append(a)
@@ -28872,7 +28872,7 @@ var $f, ou, Bf, tU = g({
                     if (this.shouldDrawMenu("Terminal")) {
                         const o = new Tt,
                             a = new He({
-                                label: this.mnemonicLabel(S(2262, null)),
+                                label: this.mnemonicLabel(S(2263, null)),
                                 submenu: o
                             });
                         this.setMenuById(o, "Terminal"), r.append(a)
@@ -28881,7 +28881,7 @@ var $f, ou, Bf, tU = g({
                     if (this.shouldDrawMenu("Window")) {
                         const o = new Tt;
                         n = new He({
-                            label: this.mnemonicLabel(S(2263, null)),
+                            label: this.mnemonicLabel(S(2264, null)),
                             submenu: o,
                             role: "window"
                         }), this.setMacWindowMenu(o)
@@ -28890,7 +28890,7 @@ var $f, ou, Bf, tU = g({
                         const o = new Tt;
                         this.setMenuById(o, "Help");
                         const a = new He({
-                            label: this.mnemonicLabel(S(2264, null)),
+                            label: this.mnemonicLabel(S(2265, null)),
                             submenu: o,
                             role: "help"
                         });
@@ -28903,38 +28903,38 @@ var $f, ou, Bf, tU = g({
                         for (const i of this.auxiliaryWindowsMainService.getWindows()) i.win?.setMenu(null)
                 }
                 setMacApplicationMenu(e) {
-                    const i = this.createMenuItem(S(2265, null, this.productService.nameLong), "workbench.action.showAboutDialog"),
+                    const i = this.createMenuItem(S(2266, null, this.productService.nameLong), "workbench.action.showAboutDialog"),
                         r = this.getUpdateMenuItems();
                     let s;
                     if (this.shouldDrawMenu("Preferences")) {
                         const f = new Tt;
                         this.setMenuById(f, "Preferences"), s = new He({
-                            label: this.mnemonicLabel(S(2266, null)),
+                            label: this.mnemonicLabel(S(2267, null)),
                             submenu: f
                         })
                     }
                     const n = new Tt,
                         o = new He({
-                            label: S(2267, null),
+                            label: S(2268, null),
                             role: "services",
                             submenu: n
                         }),
                         a = new He({
-                            label: S(2268, null, this.productService.nameLong),
+                            label: S(2269, null, this.productService.nameLong),
                             role: "hide",
                             accelerator: "Command+H"
                         }),
                         c = new He({
-                            label: S(2269, null),
+                            label: S(2270, null),
                             role: "hideOthers",
                             accelerator: "Command+Alt+H"
                         }),
                         l = new He({
-                            label: S(2270, null),
+                            label: S(2271, null),
                             role: "unhide"
                         }),
                         u = new He(this.likeAction("workbench.action.quit", {
-                            label: S(2271, null, this.productService.nameLong),
+                            label: S(2272, null, this.productService.nameLong),
                             click: async (f, p, m) => {
                                 const v = this.windowsMainService.getLastActiveWindow();
                                 (this.windowsMainService.getWindowCount() === 0 || nu.getFocusedWindow() || v?.win?.isMinimized()) && await this.confirmBeforeQuit(m) && this.nativeHostMainService.quit(void 0)
@@ -28960,8 +28960,8 @@ var $f, ou, Bf, tU = g({
                             response: r
                         } = await this.nativeHostMainService.showMessageBox(this.windowsMainService.getFocusedWindow()?.id, {
                             type: "question",
-                            buttons: [S(2272, null), S(2273, null)],
-                            message: S(2274, null)
+                            buttons: [S(2273, null), S(2274, null)],
+                            message: S(2275, null)
                         });
                         return r === 0
                     }
@@ -29052,66 +29052,66 @@ var $f, ou, Bf, tU = g({
                 }
                 setMacWindowMenu(e) {
                     const i = new He({
-                            label: S(2275, null),
+                            label: S(2276, null),
                             role: "minimize",
                             accelerator: "Command+M",
                             enabled: this.windowsMainService.getWindowCount() > 0
                         }),
                         r = new He({
-                            label: S(2276, null),
+                            label: S(2277, null),
                             role: "zoom",
                             enabled: this.windowsMainService.getWindowCount() > 0
                         }),
                         s = new He({
-                            label: S(2277, null),
+                            label: S(2278, null),
                             role: "front",
                             enabled: this.windowsMainService.getWindowCount() > 0
                         }),
-                        n = this.createMenuItem(S(2278, null), "workbench.action.switchWindow"),
+                        n = this.createMenuItem(S(2279, null), "workbench.action.switchWindow"),
                         o = [];
-                    this.currentEnableNativeTabs && (o.push(cs()), o.push(this.createMenuItem(S(2279, null), "workbench.action.newWindowTab")), o.push(this.createRoleMenuItem(S(2280, null), "workbench.action.showPreviousWindowTab", "selectPreviousTab")), o.push(this.createRoleMenuItem(S(2281, null), "workbench.action.showNextWindowTab", "selectNextTab")), o.push(this.createRoleMenuItem(S(2282, null), "workbench.action.moveWindowTabToNewWindow", "moveTabToNewWindow")), o.push(this.createRoleMenuItem(S(2283, null), "workbench.action.mergeAllWindowTabs", "mergeAllWindows"))), [i, r, cs(), n, ...o, cs(), s].forEach(a => e.append(a))
+                    this.currentEnableNativeTabs && (o.push(cs()), o.push(this.createMenuItem(S(2280, null), "workbench.action.newWindowTab")), o.push(this.createRoleMenuItem(S(2281, null), "workbench.action.showPreviousWindowTab", "selectPreviousTab")), o.push(this.createRoleMenuItem(S(2282, null), "workbench.action.showNextWindowTab", "selectNextTab")), o.push(this.createRoleMenuItem(S(2283, null), "workbench.action.moveWindowTabToNewWindow", "moveTabToNewWindow")), o.push(this.createRoleMenuItem(S(2284, null), "workbench.action.mergeAllWindowTabs", "mergeAllWindows"))), [i, r, cs(), n, ...o, cs(), s].forEach(a => e.append(a))
                 }
                 getUpdateMenuItems() {
                     switch (this.updateService.state.type) {
                         case "idle":
                             return [new He({
-                                label: this.mnemonicLabel(S(2284, null)),
+                                label: this.mnemonicLabel(S(2285, null)),
                                 click: () => setTimeout(() => {
                                     this.reportMenuActionTelemetry("CheckForUpdate"), this.updateService.checkForUpdates(!0)
                                 }, 0)
                             })];
                         case "checking for updates":
                             return [new He({
-                                label: S(2285, null),
+                                label: S(2286, null),
                                 enabled: !1
                             })];
                         case "available for download":
                             return [new He({
-                                label: this.mnemonicLabel(S(2286, null)),
+                                label: this.mnemonicLabel(S(2287, null)),
                                 click: () => {
                                     this.updateService.downloadUpdate()
                                 }
                             })];
                         case "downloading":
                             return [new He({
-                                label: S(2287, null),
+                                label: S(2288, null),
                                 enabled: !1
                             })];
                         case "downloaded":
                             return T ? [] : [new He({
-                                label: this.mnemonicLabel(S(2288, null)),
+                                label: this.mnemonicLabel(S(2289, null)),
                                 click: () => {
                                     this.reportMenuActionTelemetry("InstallUpdate"), this.updateService.applyUpdate()
                                 }
                             })];
                         case "updating":
                             return [new He({
-                                label: S(2289, null),
+                                label: S(2290, null),
                                 enabled: !1
                             })];
                         case "ready":
                             return [new He({
-                                label: this.mnemonicLabel(S(2290, null)),
+                                label: this.mnemonicLabel(S(2291, null)),
                                 click: () => {
                                     this.reportMenuActionTelemetry("RestartToUpdate"), this.updateService.quitAndInstall()
                                 }
@@ -29595,7 +29595,7 @@ var zI, KI, au, XI, fU, go = g({
                 setExperimentProperty() {}
             }, au = new KI, XI = "telemetry", fU = {
                 id: XI,
-                name: S(2385, null)
+                name: S(2386, null)
             }
         }
     }),
@@ -29880,9 +29880,9 @@ var mU = g({
     });
 
 function yU() {
-    const t = S(2378, null, as.nameLong),
-        e = S(2379, null, "https://cursor.com/privacy", "https://cursor.com/security"),
-        i = ms ? "" : S(2380, null);
+    const t = S(2379, null, as.nameLong),
+        e = S(2380, null, "https://cursor.com/privacy", "https://cursor.com/security"),
+        i = ms ? "" : S(2381, null);
     return `
 ${t} ${e} ${i}
 `
@@ -29971,14 +29971,14 @@ var Gf, ZI, SU = g({
                     "telemetry.feedback.enabled": {
                         type: "boolean",
                         default: !1,
-                        description: S(2381, null)
+                        description: S(2382, null)
                     },
                     [Wh]: {
                         type: "boolean",
-                        markdownDescription: as.privacyStatementUrl ? S(2383, null, as.nameLong, as.privacyStatementUrl) : S(2382, null, as.nameLong),
+                        markdownDescription: as.privacyStatementUrl ? S(2384, null, as.nameLong, as.privacyStatementUrl) : S(2383, null, as.nameLong),
                         default: !0,
                         restricted: !0,
-                        markdownDeprecationMessage: S(2384, null, `\`#${Il}#\``),
+                        markdownDeprecationMessage: S(2385, null, `\`#${Il}#\``),
                         scope: 1,
                         tags: ["usesOnlineServices", "telemetry"]
                     }
@@ -32446,10 +32446,10 @@ var v6, _y, uu, w6, y6 = g({
                                 checkboxChecked: s
                             } = await this.dialogMainService.showMessageBox({
                                 type: "warning",
-                                buttons: [S(2775, null), S(2776, null), S(2777, null)],
-                                message: S(2778, null),
-                                detail: S(2779, null),
-                                checkboxLabel: this._config?.workspace ? S(2780, null) : void 0
+                                buttons: [S(2776, null), S(2777, null), S(2778, null)],
+                                message: S(2779, null),
+                                detail: S(2780, null),
+                                checkboxLabel: this._config?.workspace ? S(2781, null) : void 0
                             }, this._win ?? void 0);
                             if (r !== 2) {
                                 const n = r === 0;
@@ -32457,16 +32457,16 @@ var v6, _y, uu, w6, y6 = g({
                             }
                         } else if (e === 2) {
                             let r;
-                            i ? r = S(2782, null, i.reason, i.exitCode ?? "<unknown>") : r = S(2781, null);
+                            i ? r = S(2783, null, i.reason, i.exitCode ?? "<unknown>") : r = S(2782, null);
                             const {
                                 response: s,
                                 checkboxChecked: n
                             } = await this.dialogMainService.showMessageBox({
                                 type: "warning",
-                                buttons: [this._config?.workspace ? S(2783, null) : S(2784, null), S(2785, null)],
+                                buttons: [this._config?.workspace ? S(2784, null) : S(2785, null), S(2786, null)],
                                 message: r,
-                                detail: this._config?.workspace ? S(2786, null) : S(2787, null),
-                                checkboxLabel: this._config?.workspace ? S(2788, null) : void 0
+                                detail: this._config?.workspace ? S(2787, null) : S(2788, null),
+                                checkboxLabel: this._config?.workspace ? S(2789, null) : void 0
                             }, this._win ?? void 0), o = s === 0;
                             await this.destroyWindow(o, n)
                         }
@@ -32693,7 +32693,7 @@ ${r.stack}`)
                 return ["visible", "toggle", "hidden"].indexOf(e) < 0 && (e = "classic"), e
             }
             setMenuBarVisibility(e, i = !0) {
-                T || (e === "toggle" && i && this.send("vscode:showInfoMessage", S(2789, null)), e === "hidden" ? setTimeout(() => {
+                T || (e === "toggle" && i && this.send("vscode:showInfoMessage", S(2790, null)), e === "hidden" ? setTimeout(() => {
                     this.doSetMenuBarVisibility(e)
                 }) : this.doSetMenuBarVisibility(e))
             }
@@ -33371,12 +33371,12 @@ var hu, sp, c$ = g({
                             const o = this.resourceFromOpenable(s);
                             this.dialogMainService.showMessageBox({
                                 type: "info",
-                                buttons: [S(2790, null)],
-                                message: o.scheme === W.file ? S(2791, null) : S(2792, null),
-                                detail: o.scheme === W.file ? S(2793, null, Zo(o, {
+                                buttons: [S(2791, null)],
+                                message: o.scheme === W.file ? S(2792, null) : S(2793, null),
+                                detail: o.scheme === W.file ? S(2794, null, Zo(o, {
                                     os: Zi,
                                     tildify: this.environmentMainService
-                                })) : S(2794, null, o.toString(!0))
+                                })) : S(2795, null, o.toString(!0))
                             }, rp.getFocusedWindow() ?? void 0)
                         }));
                     return Lt(r)
@@ -33591,13 +33591,13 @@ var hu, sp, c$ = g({
                             checkboxChecked: n
                         } = await this.dialogMainService.showMessageBox({
                             type: "warning",
-                            buttons: [S(2795, null), S(2796, null), S(2797, null)],
-                            message: S(2798, null, r.authority),
-                            detail: S(2799, null, Zo(r, {
+                            buttons: [S(2796, null), S(2797, null), S(2798, null)],
+                            message: S(2799, null, r.authority),
+                            detail: S(2800, null, Zo(r, {
                                 os: Zi,
                                 tildify: this.environmentMainService
                             })),
-                            checkboxLabel: S(2800, null, r.authority),
+                            checkboxLabel: S(2801, null, r.authority),
                             cancelId: 1
                         });
                     if (s === 0) {
@@ -36872,31 +36872,31 @@ function fB(t, e, i) {
 
 function pB(t, e, i, r, s, n) {
     const o = [];
-    if (typeof r.publisher < "u" && typeof r.publisher != "string") return o.push([Fe.Error, S(2123, null)]), o;
-    if (typeof r.name != "string") return o.push([Fe.Error, S(2124, null, "name")]), o;
-    if (typeof r.version != "string") return o.push([Fe.Error, S(2125, null, "version")]), o;
-    if (!r.engines) return o.push([Fe.Error, S(2126, null, "engines")]), o;
-    if (typeof r.engines.vscode != "string") return o.push([Fe.Error, S(2127, null, "engines.vscode")]), o;
-    if (typeof r.extensionDependencies < "u" && !B6(r.extensionDependencies)) return o.push([Fe.Error, S(2128, null, "extensionDependencies")]), o;
+    if (typeof r.publisher < "u" && typeof r.publisher != "string") return o.push([Fe.Error, S(2124, null)]), o;
+    if (typeof r.name != "string") return o.push([Fe.Error, S(2125, null, "name")]), o;
+    if (typeof r.version != "string") return o.push([Fe.Error, S(2126, null, "version")]), o;
+    if (!r.engines) return o.push([Fe.Error, S(2127, null, "engines")]), o;
+    if (typeof r.engines.vscode != "string") return o.push([Fe.Error, S(2128, null, "engines.vscode")]), o;
+    if (typeof r.extensionDependencies < "u" && !B6(r.extensionDependencies)) return o.push([Fe.Error, S(2129, null, "extensionDependencies")]), o;
     if (typeof r.activationEvents < "u") {
-        if (!B6(r.activationEvents)) return o.push([Fe.Error, S(2129, null, "activationEvents")]), o;
-        if (typeof r.main > "u" && typeof r.browser > "u") return o.push([Fe.Error, S(2130, null, "activationEvents", "main", "browser")]), o
+        if (!B6(r.activationEvents)) return o.push([Fe.Error, S(2130, null, "activationEvents")]), o;
+        if (typeof r.main > "u" && typeof r.browser > "u") return o.push([Fe.Error, S(2131, null, "activationEvents", "main", "browser")]), o
     }
-    if (typeof r.extensionKind < "u" && typeof r.main > "u" && o.push([Fe.Warning, S(2131, null, "extensionKind")]), typeof r.main < "u") {
-        if (typeof r.main != "string") return o.push([Fe.Error, S(2132, null, "main")]), o;
+    if (typeof r.extensionKind < "u" && typeof r.main > "u" && o.push([Fe.Warning, S(2132, null, "extensionKind")]), typeof r.main < "u") {
+        if (typeof r.main != "string") return o.push([Fe.Error, S(2133, null, "main")]), o;
         {
             const l = ge(i, r.main);
-            Lv(l, i) || o.push([Fe.Warning, S(2133, null, l.path, i.path)])
+            Lv(l, i) || o.push([Fe.Warning, S(2134, null, l.path, i.path)])
         }
     }
     if (typeof r.browser < "u") {
-        if (typeof r.browser != "string") return o.push([Fe.Error, S(2134, null, "browser")]), o;
+        if (typeof r.browser != "string") return o.push([Fe.Error, S(2135, null, "browser")]), o;
         {
             const l = ge(i, r.browser);
-            Lv(l, i) || o.push([Fe.Warning, S(2135, null, l.path, i.path)])
+            Lv(l, i) || o.push([Fe.Warning, S(2136, null, l.path, i.path)])
         }
     }
-    if (!W6(r.version)) return o.push([Fe.Error, S(2136, null)]), o;
+    if (!W6(r.version)) return o.push([Fe.Error, S(2137, null)]), o;
     const a = [];
     if (!gB(t, e, r, s, a))
         for (const l of a) o.push([Fe.Error, l]);
@@ -36926,16 +36926,16 @@ function mB(t, e) {
         if (!a) continue;
         r[o]?.version !== a && s.push(o)
     }
-    return s.length ? (i && (s.length === 1 ? i.push(S(2137, null, s[0])) : i.push(S(2138, null, s.slice(0, s.length - 1).map(o => `'${o}'`).join(", "), s[s.length - 1]))), !1) : !0
+    return s.length ? (i && (s.length === 1 ? i.push(S(2138, null, s[0])) : i.push(S(2139, null, s.slice(0, s.length - 1).map(o => `'${o}'`).join(", "), s[s.length - 1]))), !1) : !0
 }
 
 function vB(t, e, i, r = []) {
     const s = Dy(xy(i));
-    if (!s) return r.push(S(2139, null, i)), !1;
+    if (!s) return r.push(S(2140, null, i)), !1;
     if (s.majorBase === 0) {
-        if (!s.majorMustEqual || !s.minorMustEqual) return r.push(S(2140, null, i)), !1
-    } else if (!s.majorMustEqual) return r.push(S(2141, null, i)), !1;
-    return fB(t, e, s) ? !0 : (r.push(S(2142, null, t, i)), !1)
+        if (!s.majorMustEqual || !s.minorMustEqual) return r.push(S(2141, null, i)), !1
+    } else if (!s.majorMustEqual) return r.push(S(2142, null, i)), !1;
+    return fB(t, e, s) ? !0 : (r.push(S(2143, null, t, i)), !1)
 }
 
 function B6(t) {
@@ -36974,7 +36974,7 @@ function SB(t, e, i, r) {
                     m = r?.[d],
                     v = typeof m == "string" ? m : m?.message;
                 if (!p) {
-                    v || t.warn(`[${e.name}]: ${S(2103,null,d)}`);
+                    v || t.warn(`[${e.name}]: ${S(2104,null,d)}`);
                     return
                 }
                 if (a && (o === "title" || o === "category") && v && v !== p) {
@@ -37366,7 +37366,7 @@ var _B = g({
                     try {
                         r = (await this.fileService.readFile(i)).value.toString()
                     } catch (n) {
-                        throw Zr(n) !== 1 && this.logService.error(this.formatMessage(e, S(2104, null, i.path, n.message))), n
+                        throw Zr(n) !== 1 && this.logService.error(this.formatMessage(e, S(2105, null, i.path, n.message))), n
                     }
                     let s;
                     try {
@@ -37374,11 +37374,11 @@ var _B = g({
                     } catch (n) {
                         const o = [];
                         io(r, o);
-                        for (const a of o) this.logService.error(this.formatMessage(e, S(2105, null, i.path, a.offset, a.length, Iy(a.error))));
+                        for (const a of o) this.logService.error(this.formatMessage(e, S(2106, null, i.path, a.offset, a.length, Iy(a.error))));
                         throw n
                     }
                     if (ya(s) !== "object") {
-                        const n = this.formatMessage(e, S(2106, null, i.path));
+                        const n = this.formatMessage(e, S(2107, null, i.path));
                         throw this.logService.error(n), new Error(n)
                     }
                     return s
@@ -37389,9 +37389,9 @@ var _B = g({
                         const n = [],
                             o = await this.resolveOriginalMessageBundle(s.default, n);
                         if (n.length > 0) return n.forEach(c => {
-                            this.logService.error(this.formatMessage(e, S(2107, null, s.default?.path, Iy(c.error))))
+                            this.logService.error(this.formatMessage(e, S(2108, null, s.default?.path, Iy(c.error))))
                         }), i;
-                        if (ya(s) !== "object") return this.logService.error(this.formatMessage(e, S(2108, null, s.default?.path))), i;
+                        if (ya(s) !== "object") return this.logService.error(this.formatMessage(e, S(2109, null, s.default?.path))), i;
                         const a = s.values || Object.create(null);
                         return yB(this.logService, i, a, o)
                     } catch {}
@@ -37401,11 +37401,11 @@ var _B = g({
                     const s = ge(e, "package.nls.json"),
                         n = (l, u) => {
                             u.forEach(d => {
-                                this.logService.error(this.formatMessage(e, S(2109, null, l?.path, Iy(d.error))))
+                                this.logService.error(this.formatMessage(e, S(2110, null, l?.path, Iy(d.error))))
                             })
                         },
                         o = l => {
-                            this.logService.error(this.formatMessage(e, S(2110, null, l?.path)))
+                            this.logService.error(this.formatMessage(e, S(2111, null, l?.path)))
                         },
                         a = `${i.publisher}.${i.name}`,
                         c = r.translations[a];
@@ -38063,7 +38063,7 @@ var LB = g({
 function qB(t, e) {
     const i = [{
         name: null,
-        description: S(2418, null)
+        description: S(2419, null)
     }];
     return i.push(...t.map(r => ({
         name: r.profileName,
@@ -38101,7 +38101,7 @@ var KB = g({
 
 function Ly(t) {
     const e = t === 2 ? "linux" : t === 1 ? "osx" : "windows";
-    return S(2394, null, sE(t), '```json\n"terminal.integrated.profile.' + e + '": {\n  "bash": null\n}\n```', "[", "](https://code.visualstudio.com/docs/terminal/profiles)")
+    return S(2395, null, sE(t), '```json\n"terminal.integrated.profile.' + e + '": {\n  "bash": null\n}\n```', "[", "](https://code.visualstudio.com/docs/terminal/profiles)")
 }
 
 function XB() {
@@ -38116,12 +38116,12 @@ function YB(t, e) {
     Wy = {
         id: "terminal",
         order: 100,
-        title: S(2414, null),
+        title: S(2415, null),
         type: "object",
         properties: {
             "terminal.integrated.defaultProfile.linux": {
                 restricted: !0,
-                markdownDescription: S(2415, null),
+                markdownDescription: S(2416, null),
                 type: ["string", "null"],
                 default: null,
                 enum: t?.os === 3 ? r?.values : void 0,
@@ -38129,7 +38129,7 @@ function YB(t, e) {
             },
             "terminal.integrated.defaultProfile.osx": {
                 restricted: !0,
-                markdownDescription: S(2416, null),
+                markdownDescription: S(2417, null),
                 type: ["string", "null"],
                 default: null,
                 enum: t?.os === 2 ? r?.values : void 0,
@@ -38137,7 +38137,7 @@ function YB(t, e) {
             },
             "terminal.integrated.defaultProfile.windows": {
                 restricted: !0,
-                markdownDescription: S(2417, null),
+                markdownDescription: S(2418, null),
                 type: ["string", "null"],
                 default: null,
                 enum: t?.os === 1 ? r?.values : void 0,
@@ -38162,26 +38162,26 @@ var g9, m9, vo, vp, wp, v9, Wy, JB = g({
                 markdownEnumDescriptions: Array.from(h6(), t => `$(${t.id})`)
             }, vo = {
                 args: {
-                    description: S(2387, null),
+                    description: S(2388, null),
                     type: "array",
                     items: {
                         type: "string"
                     }
                 },
                 overrideName: {
-                    description: S(2388, null),
+                    description: S(2389, null),
                     type: "boolean"
                 },
                 icon: {
-                    description: S(2389, null),
+                    description: S(2390, null),
                     ...m9
                 },
                 color: {
-                    description: S(2390, null),
+                    description: S(2391, null),
                     ...g9
                 },
                 env: {
-                    markdownDescription: S(2391, null),
+                    markdownDescription: S(2392, null),
                     type: "object",
                     additionalProperties: {
                         type: ["string", "null"]
@@ -38193,7 +38193,7 @@ var g9, m9, vo, vp, wp, v9, Wy, JB = g({
                 required: ["path"],
                 properties: {
                     path: {
-                        description: S(2392, null),
+                        description: S(2393, null),
                         type: ["string", "array"],
                         items: {
                             type: "string"
@@ -38206,7 +38206,7 @@ var g9, m9, vo, vp, wp, v9, Wy, JB = g({
                 required: ["path"],
                 properties: {
                     path: {
-                        description: S(2393, null),
+                        description: S(2394, null),
                         type: ["string"],
                         items: {
                             type: "string"
@@ -38217,25 +38217,10 @@ var g9, m9, vo, vp, wp, v9, Wy, JB = g({
             }, v9 = {
                 id: "terminal",
                 order: 100,
-                title: S(2395, null),
+                title: S(2396, null),
                 type: "object",
                 properties: {
                     "terminal.integrated.automationProfile.linux": {
-                        restricted: !0,
-                        markdownDescription: S(2396, null),
-                        type: ["object", "null"],
-                        default: null,
-                        anyOf: [{
-                            type: "null"
-                        }, wp],
-                        defaultSnippets: [{
-                            body: {
-                                path: "${1}",
-                                icon: "${2}"
-                            }
-                        }]
-                    },
-                    "terminal.integrated.automationProfile.osx": {
                         restricted: !0,
                         markdownDescription: S(2397, null),
                         type: ["object", "null"],
@@ -38250,9 +38235,24 @@ var g9, m9, vo, vp, wp, v9, Wy, JB = g({
                             }
                         }]
                     },
+                    "terminal.integrated.automationProfile.osx": {
+                        restricted: !0,
+                        markdownDescription: S(2398, null),
+                        type: ["object", "null"],
+                        default: null,
+                        anyOf: [{
+                            type: "null"
+                        }, wp],
+                        defaultSnippets: [{
+                            body: {
+                                path: "${1}",
+                                icon: "${2}"
+                            }
+                        }]
+                    },
                     "terminal.integrated.automationProfile.windows": {
                         restricted: !0,
-                        markdownDescription: S(2398, null, "`terminal.integrated.automationShell.windows`"),
+                        markdownDescription: S(2399, null, "`terminal.integrated.automationShell.windows`"),
                         type: ["object", "null"],
                         default: null,
                         anyOf: [{
@@ -38289,7 +38289,7 @@ var g9, m9, vo, vp, wp, v9, Wy, JB = g({
                                 required: ["source"],
                                 properties: {
                                     source: {
-                                        description: S(2399, null),
+                                        description: S(2400, null),
                                         enum: ["PowerShell", "Git Bash"]
                                     },
                                     ...vo
@@ -38299,15 +38299,15 @@ var g9, m9, vo, vp, wp, v9, Wy, JB = g({
                                 required: ["extensionIdentifier", "id", "title"],
                                 properties: {
                                     extensionIdentifier: {
-                                        description: S(2400, null),
-                                        type: "string"
-                                    },
-                                    id: {
                                         description: S(2401, null),
                                         type: "string"
                                     },
-                                    title: {
+                                    id: {
                                         description: S(2402, null),
+                                        type: "string"
+                                    },
+                                    title: {
+                                        description: S(2403, null),
                                         type: "string"
                                     },
                                     ...vo
@@ -38350,15 +38350,15 @@ var g9, m9, vo, vp, wp, v9, Wy, JB = g({
                                 required: ["extensionIdentifier", "id", "title"],
                                 properties: {
                                     extensionIdentifier: {
-                                        description: S(2403, null),
-                                        type: "string"
-                                    },
-                                    id: {
                                         description: S(2404, null),
                                         type: "string"
                                     },
-                                    title: {
+                                    id: {
                                         description: S(2405, null),
+                                        type: "string"
+                                    },
+                                    title: {
+                                        description: S(2406, null),
                                         type: "string"
                                     },
                                     ...vo
@@ -38398,15 +38398,15 @@ var g9, m9, vo, vp, wp, v9, Wy, JB = g({
                                 required: ["extensionIdentifier", "id", "title"],
                                 properties: {
                                     extensionIdentifier: {
-                                        description: S(2406, null),
-                                        type: "string"
-                                    },
-                                    id: {
                                         description: S(2407, null),
                                         type: "string"
                                     },
-                                    title: {
+                                    id: {
                                         description: S(2408, null),
+                                        type: "string"
+                                    },
+                                    title: {
+                                        description: S(2409, null),
                                         type: "string"
                                     },
                                     ...vo
@@ -38417,30 +38417,30 @@ var g9, m9, vo, vp, wp, v9, Wy, JB = g({
                         }
                     },
                     "terminal.integrated.useWslProfiles": {
-                        description: S(2409, null),
+                        description: S(2410, null),
                         type: "boolean",
                         default: !0
                     },
                     "terminal.integrated.inheritEnv": {
                         scope: 1,
-                        description: S(2410, null),
+                        description: S(2411, null),
                         type: "boolean",
                         default: !0
                     },
                     "terminal.integrated.persistentSessionScrollback": {
                         scope: 1,
-                        markdownDescription: S(2411, null),
+                        markdownDescription: S(2412, null),
                         type: "number",
                         default: 100
                     },
                     "terminal.integrated.showLinkHover": {
                         scope: 1,
-                        description: S(2412, null),
+                        description: S(2413, null),
                         type: "boolean",
                         default: !0
                     },
                     "terminal.integrated.ignoreProcessNames": {
-                        markdownDescription: S(2413, null, "`#terminal.integrated.confirmOnKill#`"),
+                        markdownDescription: S(2414, null, "`#terminal.integrated.confirmOnKill#`"),
                         type: "array",
                         items: {
                             type: "string",
@@ -46352,12 +46352,12 @@ alwaysApply: true
                     }))
                 }
                 async withProvider(e) {
-                    if (!ok(e)) throw new pi(S(2164, null, this.resourceForError(e)), 8);
+                    if (!ok(e)) throw new pi(S(2165, null, this.resourceForError(e)), 8);
                     await this.activateProvider(e.scheme);
                     const i = this.provider.get(e.scheme);
                     if (!i) {
                         const r = new jr;
-                        throw r.message = S(2165, null, e.toString()), r
+                        throw r.message = S(2166, null, e.toString()), r
                     }
                     return i
                 }
@@ -46375,7 +46375,7 @@ alwaysApply: true
                     try {
                         return await this.doResolveFile(e, i)
                     } catch (r) {
-                        throw wh(r) === ue.FileNotFound ? new pi(S(2166, null, this.resourceForError(e)), 1) : qn(r)
+                        throw wh(r) === ue.FileNotFound ? new pi(S(2167, null, this.resourceForError(e)), 1) : qn(r)
                     }
                 }
                 async doResolveFile(e, i) {
@@ -46392,7 +46392,7 @@ alwaysApply: true
                     })) ? !0 : u.isDirectory && o ? d === 1 : !1))
                 }
                 async toFileStat(e, i, r, s, n, o) {
-                    if (!r || typeof r.type != "number") throw vr(S(2167, null), ue.Unknown);
+                    if (!r || typeof r.type != "number") throw vr(S(2168, null), ue.Unknown);
                     const {
                         providerExtUri: a
                     } = this.getExtUri(e), c = {
@@ -46472,7 +46472,7 @@ alwaysApply: true
                     return !0
                 }
                 async doValidateCreateFile(e, i) {
-                    if (!i?.overwrite && await this.exists(e)) throw new pi(S(2168, null, this.resourceForError(e)), 3, i)
+                    if (!i?.overwrite && await this.exists(e)) throw new pi(S(2169, null, this.resourceForError(e)), 3, i)
                 }
                 async createFile(e, i = Y.fromString(""), r) {
                     XH(e) && i.toString().trim() === "" && (i = Y.fromString(q7)), await this.doValidateCreateFile(e, r);
@@ -46499,7 +46499,7 @@ alwaysApply: true
                         } = await this.validateWriteFile(s, e, i, o);
                         a || await this.mkdirp(s, n.dirname(e)), c || (c = await this.peekBufferForWriting(s, i)), !rn(s) || mr(s) && c instanceof Y || mr(s) && d5(s) && o?.atomic ? await this.doWriteUnbuffered(s, e, o, c) : await this.doWriteBuffered(s, e, o, c instanceof Y ? a3(c) : c), this._onDidRunOperation.fire(new Gn(e, 4))
                     } catch (a) {
-                        throw new pi(S(2169, null, this.resourceForError(e), qn(a).toString()), Zr(a), o)
+                        throw new pi(S(2170, null, this.resourceForError(e), qn(a).toString()), Zr(a), o)
                     }
                     return this.resolve(e, {
                         resolveMetadata: !0
@@ -46517,11 +46517,11 @@ alwaysApply: true
                 }
                 async validateWriteFile(e, i, r, s) {
                     const n = !!s?.unlock;
-                    if (n && !(e.capabilities & 8192)) throw new Error(S(2170, null, this.resourceForError(i)));
+                    if (n && !(e.capabilities & 8192)) throw new Error(S(2171, null, this.resourceForError(i)));
                     if (!!s?.atomic) {
-                        if (!(e.capabilities & 32768)) throw new Error(S(2171, null, this.resourceForError(i)));
-                        if (!(e.capabilities & 2)) throw new Error(S(2172, null, this.resourceForError(i)));
-                        if (n) throw new Error(S(2173, null, this.resourceForError(i)))
+                        if (!(e.capabilities & 32768)) throw new Error(S(2172, null, this.resourceForError(i)));
+                        if (!(e.capabilities & 2)) throw new Error(S(2173, null, this.resourceForError(i)));
+                        if (n) throw new Error(S(2174, null, this.resourceForError(i)))
                     }
                     let a;
                     try {
@@ -46530,7 +46530,7 @@ alwaysApply: true
                         return Object.create(null)
                     }
                     if (!a || typeof a.type != "number") return Object.create(null);
-                    if ((a.type & qt.Directory) !== 0) throw new pi(S(2174, null, this.resourceForError(i)), 0, s);
+                    if ((a.type & qt.Directory) !== 0) throw new pi(S(2175, null, this.resourceForError(i)), 0, s);
                     this.throwIfFileIsReadonly(i, a);
                     let c;
                     if (typeof s?.mtime == "number" && typeof s.etag == "string" && s.etag !== Eh && typeof a.mtime == "number" && typeof a.size == "number" && s.mtime < a.mtime && s.etag !== h5({
@@ -46550,7 +46550,7 @@ alwaysApply: true
                                 buffer: c
                             }
                         } catch {}
-                        throw new pi(S(2175, null), 3, s)
+                        throw new pi(S(2176, null), 3, s)
                     }
                     return {
                         stat: a,
@@ -46608,7 +46608,7 @@ alwaysApply: true
                     }
                 }
                 restoreReadError(e, i, r) {
-                    const s = S(2176, null, this.resourceForError(i), qn(e).toString());
+                    const s = S(2177, null, this.resourceForError(i), qn(e).toString());
                     return e instanceof _h ? new _h(s, e.stat, r) : e instanceof Sh ? new Sh(s, e.fileOperationResult, e.size, e.options) : new pi(s, Zr(e), r)
                 }
                 readFileStreamed(e, i, r, s = Object.create(null)) {
@@ -46643,12 +46643,12 @@ alwaysApply: true
                     const r = await this.resolve(e, {
                         resolveMetadata: !0
                     });
-                    if (r.isDirectory) throw new pi(S(2177, null, this.resourceForError(e)), 0, i);
-                    if (typeof i?.etag == "string" && i.etag !== Eh && i.etag === r.etag) throw new _h(S(2178, null), r, i);
+                    if (r.isDirectory) throw new pi(S(2178, null, this.resourceForError(e)), 0, i);
+                    if (typeof i?.etag == "string" && i.etag !== Eh && i.etag === r.etag) throw new _h(S(2179, null), r, i);
                     return this.validateReadFileLimits(e, r.size, i), r
                 }
                 validateReadFileLimits(e, i, r) {
-                    if (typeof r?.limits?.size == "number" && i > r.limits.size) throw new Sh(S(2179, null, this.resourceForError(e)), 7, i, r)
+                    if (typeof r?.limits?.size == "number" && i > r.limits.size) throw new Sh(S(2180, null, this.resourceForError(e)), 7, i, r)
                 }
                 async canMove(e, i, r) {
                     return this.doCanMoveCopy(e, i, "move", r)
@@ -46726,17 +46726,17 @@ alwaysApply: true
                             providerExtUri: l,
                             isPathCaseSensitive: u
                         } = this.getExtUri(e);
-                        if (u || (a = l.isEqual(i, s)), a && n === "copy") throw new Error(S(2180, null, this.resourceForError(i), this.resourceForError(s)));
-                        if (!a && l.isEqualOrParent(s, i)) throw new Error(S(2181, null, this.resourceForError(i), this.resourceForError(s)))
+                        if (u || (a = l.isEqual(i, s)), a && n === "copy") throw new Error(S(2181, null, this.resourceForError(i), this.resourceForError(s)));
+                        if (!a && l.isEqualOrParent(s, i)) throw new Error(S(2182, null, this.resourceForError(i), this.resourceForError(s)))
                     }
                     const c = await this.exists(s);
                     if (c && !a) {
-                        if (!o) throw new pi(S(2182, null, this.resourceForError(i), this.resourceForError(s)), 4);
+                        if (!o) throw new pi(S(2183, null, this.resourceForError(i), this.resourceForError(s)), 4);
                         if (e === r) {
                             const {
                                 providerExtUri: l
                             } = this.getExtUri(e);
-                            if (l.isEqualOrParent(i, s)) throw new Error(S(2183, null, this.resourceForError(i), this.resourceForError(s)))
+                            if (l.isEqualOrParent(i, s)) throw new Error(S(2184, null, this.resourceForError(i), this.resourceForError(s)))
                         }
                     }
                     return {
@@ -46773,7 +46773,7 @@ alwaysApply: true
                             r.push(s.basename(i)), i = s.dirname(i);
                             continue
                         }
-                        if ((n.type & qt.Directory) === 0) throw new Error(S(2184, null, this.resourceForError(i)));
+                        if ((n.type & qt.Directory) === 0) throw new Error(S(2185, null, this.resourceForError(i)));
                         break
                     } catch (n) {
                         if (wh(n) !== ue.FileNotFound) throw n;
@@ -46799,19 +46799,19 @@ alwaysApply: true
                 async doValidateDelete(e, i) {
                     const r = this.throwIfFileSystemIsReadonly(await this.withProvider(e), e),
                         s = !!i?.useTrash;
-                    if (s && !(r.capabilities & 4096)) throw new Error(S(2185, null, this.resourceForError(e)));
+                    if (s && !(r.capabilities & 4096)) throw new Error(S(2186, null, this.resourceForError(e)));
                     const n = i?.atomic;
-                    if (n && !(r.capabilities & 65536)) throw new Error(S(2186, null, this.resourceForError(e)));
-                    if (s && n) throw new Error(S(2187, null, this.resourceForError(e)));
+                    if (n && !(r.capabilities & 65536)) throw new Error(S(2187, null, this.resourceForError(e)));
+                    if (s && n) throw new Error(S(2188, null, this.resourceForError(e)));
                     let o;
                     try {
                         o = await r.stat(e)
                     } catch {}
                     if (o) this.throwIfFileIsReadonly(e, o);
-                    else throw new pi(S(2188, null, this.resourceForError(e)), 1);
+                    else throw new pi(S(2189, null, this.resourceForError(e)), 1);
                     if (!!!i?.recursive) {
                         const c = await this.resolve(e);
-                        if (c.isDirectory && Array.isArray(c.children) && c.children.length > 0) throw new Error(S(2189, null, this.resourceForError(e)))
+                        if (c.isDirectory && Array.isArray(c.children) && c.children.length > 0) throw new Error(S(2190, null, this.resourceForError(e)))
                     }
                     return r
                 }
@@ -47018,11 +47018,11 @@ alwaysApply: true
                     await this.doWriteUnbuffered(r, s, void 0, n)
                 }
                 throwIfFileSystemIsReadonly(e, i) {
-                    if (e.capabilities & 2048) throw new pi(S(2190, null, this.resourceForError(i)), 6);
+                    if (e.capabilities & 2048) throw new pi(S(2191, null, this.resourceForError(i)), 6);
                     return e
                 }
                 throwIfFileIsReadonly(e, i) {
-                    if ((i.permissions ?? 0) & fa.Readonly) throw new pi(S(2191, null, this.resourceForError(e)), 6)
+                    if ((i.permissions ?? 0) & fa.Readonly) throw new pi(S(2192, null, this.resourceForError(e)), 6)
                 }
                 resourceForError(e) {
                     return e.scheme === W.file ? e.fsPath : e.toString(!0)
@@ -49501,7 +49501,7 @@ var M0 = mG(import.meta.url),
 Qa.BUILD_INSERT_PRODUCT_CONFIGURATION && (Qa = M0("../product.json"));
 var T0 = {
     "name": "Cursor",
-    "version": "3.0.6",
+    "version": "3.0.9",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -50028,7 +50028,7 @@ function ez() {
 
 function tz(t) {
     const e = [];
-    return t["js-flags"] && e.push(t["js-flags"]), process.env.VSCODE_DEV || e.push("--trace-gc-nvp"), process.platform === "linux" && e.push("--nodecommit_pooled_pages"), e.length > 0 ? e.join(" ") : null
+    return t["js-flags"] && e.push(t["js-flags"]), process.platform === "linux" && e.push("--nodecommit_pooled_pages"), e.length > 0 ? e.join(" ") : null
 }
 
 function iz() {
@@ -50109,6 +50109,6 @@ function az(t) {
     return e ? e.toLowerCase() : typeof t?.locale == "string" ? t.locale.toLowerCase() : void 0
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e696fa8ae574d6a40e0f1dbf74bd7d823f0b0d0/core/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/main.js.map
 
-//# debugId=21a27cd2-2df8-5cbb-88f3-d6581648acf1
+//# debugId=75b48edc-4610-58d6-bd9c-328677f88ffc

@@ -6336,7 +6336,7 @@ var v2 = class K {
         this.TB = K.GB * K.KB
     }
     static formatSize(t) {
-        return fi(t) || (t = 0), t < K.KB ? ie(2159, null, t.toFixed(0)) : t < K.MB ? ie(2160, null, (t / K.KB).toFixed(2)) : t < K.GB ? ie(2161, null, (t / K.MB).toFixed(2)) : t < K.TB ? ie(2162, null, (t / K.GB).toFixed(2)) : ie(2163, null, (t / K.TB).toFixed(2))
+        return fi(t) || (t = 0), t < K.KB ? ie(2160, null, t.toFixed(0)) : t < K.MB ? ie(2161, null, (t / K.KB).toFixed(2)) : t < K.GB ? ie(2162, null, (t / K.MB).toFixed(2)) : t < K.TB ? ie(2163, null, (t / K.GB).toFixed(2)) : ie(2164, null, (t / K.TB).toFixed(2))
     }
 };
 
@@ -7566,6 +7566,6 @@ zs(process) ? x1 = new ko : x1 = new xo("watcher");
 var wa = new _a;
 x1.registerChannel("watcher", w1.fromService(wa, new re));
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e696fa8ae574d6a40e0f1dbf74bd7d823f0b0d0/core/vs/platform/files/node/watcher/watcherMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/platform/files/node/watcher/watcherMain.js.map
 
 //# debugId=02fbeb2b-f621-512c-a221-f5141051a918

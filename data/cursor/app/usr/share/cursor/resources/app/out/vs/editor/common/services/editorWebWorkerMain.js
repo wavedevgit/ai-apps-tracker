@@ -21223,6 +21223,6 @@ var Fd = class ve {
     };
 typeof importScripts == "function" && (globalThis.monaco = ph()), Nm(() => new S2(null));
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e696fa8ae574d6a40e0f1dbf74bd7d823f0b0d0/core/vs/editor/common/services/editorWebWorkerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/editor/common/services/editorWebWorkerMain.js.map
 
 //# debugId=e5e262a1-694b-529c-9acb-6c81fafee785

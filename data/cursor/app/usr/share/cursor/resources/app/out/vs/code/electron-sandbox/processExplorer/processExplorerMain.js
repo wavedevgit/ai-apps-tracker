@@ -20248,7 +20248,7 @@ var wl = class $e {
             this.TB = $e.GB * $e.KB
         }
         static formatSize(t) {
-            return Pr(t) || (t = 0), t < $e.KB ? V(2159, null, t.toFixed(0)) : t < $e.MB ? V(2160, null, (t / $e.KB).toFixed(2)) : t < $e.GB ? V(2161, null, (t / $e.MB).toFixed(2)) : t < $e.TB ? V(2162, null, (t / $e.GB).toFixed(2)) : V(2163, null, (t / $e.TB).toFixed(2))
+            return Pr(t) || (t = 0), t < $e.KB ? V(2160, null, t.toFixed(0)) : t < $e.MB ? V(2161, null, (t / $e.KB).toFixed(2)) : t < $e.GB ? V(2162, null, (t / $e.MB).toFixed(2)) : t < $e.TB ? V(2163, null, (t / $e.GB).toFixed(2)) : V(2164, null, (t / $e.TB).toFixed(2))
         }
     },
     fu;
@@ -21039,7 +21039,7 @@ var _u;
     e.fromJSONObject = i
 })(_u || (_u = {}));
 var e2 = /^([\w_-]+)$/,
-    t2 = V(2672, null),
+    t2 = V(2673, null),
     i2 = class extends Y {
         constructor() {
             super(), this._onDidChange = this._register(new L), this.onDidChange = this._onDidChange.event, this.iconSchema = {
@@ -21049,13 +21049,13 @@ var e2 = /^([\w_-]+)$/,
                         properties: {
                             fontId: {
                                 type: "string",
-                                description: V(2673, null),
+                                description: V(2674, null),
                                 pattern: e2.source,
                                 patternErrorMessage: t2
                             },
                             fontCharacter: {
                                 type: "string",
-                                description: V(2674, null)
+                                description: V(2675, null)
                             }
                         },
                         additionalProperties: !1,
@@ -21170,9 +21170,9 @@ var ku = new yc(() => Eu.notifySchemaChanged(Du), 200);
 Ti.onDidChange(() => {
     ku.isScheduled() || ku.schedule()
 });
-var v6 = kl("widget-close", ve.close, V(2675, null)),
-    b6 = kl("goto-previous-location", ve.arrowUp, V(2676, null)),
-    y6 = kl("goto-next-location", ve.arrowDown, V(2677, null)),
+var v6 = kl("widget-close", ve.close, V(2676, null)),
+    b6 = kl("goto-previous-location", ve.arrowUp, V(2677, null)),
+    y6 = kl("goto-next-location", ve.arrowDown, V(2678, null)),
     w6 = ye.modify(ve.sync, "spin"),
     _6 = ye.modify(ve.loading, "spin");
 
@@ -22739,6 +22739,6 @@ export {
     E2 as startup
 }; /*! @license DOMPurify 3.1.7 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.1.7/LICENSE */
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e696fa8ae574d6a40e0f1dbf74bd7d823f0b0d0/core/vs/code/electron-sandbox/processExplorer/processExplorerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/code/electron-sandbox/processExplorer/processExplorerMain.js.map
 
 //# debugId=365bdb63-dd6e-5c18-a78e-f9c8201d1102

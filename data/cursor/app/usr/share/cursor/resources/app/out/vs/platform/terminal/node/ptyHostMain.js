@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "e106d347-2bef-58e4-9a4e-ba83ef10e22c")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5d5b1ac4-7859-57e5-8115-720e5cb3be8e")
     } catch (e) {}
 }();
 var Hr = function(e, t) {
@@ -5683,9 +5683,9 @@ var _c = class {
     },
     yc = Da(La(), 1),
     cd = {
-        o: y(1986, null),
-        e: y(1987, null),
-        t: y(1988, null)
+        o: y(1987, null),
+        e: y(1988, null),
+        t: y(1989, null)
     },
     _n = {
         tunnel: {
@@ -5695,7 +5695,7 @@ var _c = class {
                 "cli-data-dir": {
                     type: "string",
                     args: "dir",
-                    description: y(1989, null)
+                    description: y(1990, null)
                 },
                 "disable-telemetry": {
                     type: "boolean"
@@ -5728,7 +5728,7 @@ var _c = class {
                 "cli-data-dir": {
                     type: "string",
                     args: "dir",
-                    description: y(1990, null)
+                    description: y(1991, null)
                 },
                 "disable-telemetry": {
                     type: "boolean"
@@ -5743,72 +5743,72 @@ var _c = class {
             cat: "o",
             alias: "d",
             args: ["file", "file"],
-            description: y(1991, null)
+            description: y(1992, null)
         },
         merge: {
             type: "boolean",
             cat: "o",
             alias: "m",
             args: ["path1", "path2", "base", "result"],
-            description: y(1992, null)
+            description: y(1993, null)
         },
         add: {
             type: "boolean",
             cat: "o",
             alias: "a",
             args: "folder",
-            description: y(1993, null)
+            description: y(1994, null)
         },
         remove: {
             type: "boolean",
             cat: "o",
             args: "folder",
-            description: y(1994, null)
+            description: y(1995, null)
         },
         goto: {
             type: "boolean",
             cat: "o",
             alias: "g",
             args: "file:line[:character]",
-            description: y(1995, null)
+            description: y(1996, null)
         },
         "new-window": {
             type: "boolean",
             cat: "o",
             alias: "n",
-            description: y(1996, null)
+            description: y(1997, null)
         },
         "reuse-window": {
             type: "boolean",
             cat: "o",
             alias: "r",
-            description: y(1997, null)
+            description: y(1998, null)
         },
         "suppress-popups-on-startup": {
             type: "boolean",
             cat: "o",
-            description: y(1998, null)
+            description: y(1999, null)
         },
         "web-worker-exthost": {
             type: "boolean",
             cat: "o",
-            description: y(1999, null)
+            description: y(2e3, null)
         },
         glass: {
             type: "boolean",
             cat: "o",
-            description: y(2e3, null)
+            description: y(2001, null)
         },
         classic: {
             type: "boolean",
             cat: "o",
-            description: y(2001, null)
+            description: y(2002, null)
         },
         wait: {
             type: "boolean",
             cat: "o",
             alias: "w",
-            description: y(2002, null)
+            description: y(2003, null)
         },
         waitMarkerFilePath: {
             type: "string"
@@ -5817,32 +5817,32 @@ var _c = class {
             type: "string",
             cat: "o",
             args: "locale",
-            description: y(2003, null)
+            description: y(2004, null)
         },
         "user-data-dir": {
             type: "string",
             cat: "o",
             args: "dir",
-            description: y(2004, null)
+            description: y(2005, null)
         },
         profile: {
             type: "string",
             cat: "o",
             args: "profileName",
-            description: y(2005, null)
+            description: y(2006, null)
         },
         help: {
             type: "boolean",
             cat: "o",
             alias: "h",
-            description: y(2006, null)
+            description: y(2007, null)
         },
         "extensions-dir": {
             type: "string",
             deprecates: ["extensionHomePath"],
             cat: "e",
             args: "dir",
-            description: y(2007, null)
+            description: y(2008, null)
         },
         "extensions-download-dir": {
             type: "string"
@@ -5853,84 +5853,84 @@ var _c = class {
         "list-extensions": {
             type: "boolean",
             cat: "e",
-            description: y(2008, null)
+            description: y(2009, null)
         },
         "show-versions": {
             type: "boolean",
             cat: "e",
-            description: y(2009, null)
+            description: y(2010, null)
         },
         category: {
             type: "string",
             allowEmptyValue: !0,
             cat: "e",
-            description: y(2010, null),
+            description: y(2011, null),
             args: "category"
         },
         "install-extension": {
             type: "string[]",
             cat: "e",
             args: "ext-id | path",
-            description: y(2011, null)
+            description: y(2012, null)
         },
         "pre-release": {
             type: "boolean",
             cat: "e",
-            description: y(2012, null)
+            description: y(2013, null)
         },
         "uninstall-extension": {
             type: "string[]",
             cat: "e",
             args: "ext-id",
-            description: y(2013, null)
+            description: y(2014, null)
         },
         "update-extensions": {
             type: "boolean",
             cat: "e",
-            description: y(2014, null)
+            description: y(2015, null)
         },
         "enable-proposed-api": {
             type: "string[]",
             allowEmptyValue: !0,
             cat: "e",
             args: "ext-id",
-            description: y(2015, null)
+            description: y(2016, null)
         },
         "add-mcp": {
             type: "string[]",
             cat: "o",
             args: "json",
-            description: y(2016, null)
+            description: y(2017, null)
         },
         version: {
             type: "boolean",
             cat: "t",
             alias: "v",
-            description: y(2017, null)
+            description: y(2018, null)
         },
         verbose: {
             type: "boolean",
             cat: "t",
             global: !0,
-            description: y(2018, null)
+            description: y(2019, null)
         },
         log: {
             type: "string[]",
             cat: "t",
             args: "level",
             global: !0,
-            description: y(2019, null)
+            description: y(2020, null)
         },
         status: {
             type: "boolean",
             alias: "s",
             cat: "t",
-            description: y(2020, null)
+            description: y(2021, null)
         },
         "prof-startup": {
             type: "boolean",
             cat: "t",
-            description: y(2021, null)
+            description: y(2022, null)
         },
         "prof-append-timers": {
             type: "string"
@@ -5954,18 +5954,18 @@ var _c = class {
             type: "boolean",
             deprecates: ["disableExtensions"],
             cat: "t",
-            description: y(2022, null)
+            description: y(2023, null)
         },
         "disable-extension": {
             type: "string[]",
             cat: "t",
             args: "ext-id",
-            description: y(2023, null)
+            description: y(2024, null)
         },
         sync: {
             type: "string",
             cat: "t",
-            description: y(2024, null),
+            description: y(2025, null),
             args: ["on | off"]
         },
         "inspect-extensions": {
@@ -5974,7 +5974,7 @@ var _c = class {
             deprecates: ["debugPluginHost"],
             args: "port",
             cat: "t",
-            description: y(2025, null)
+            description: y(2026, null)
         },
         "inspect-brk-extensions": {
             type: "string",
@@ -5982,22 +5982,22 @@ var _c = class {
             deprecates: ["debugBrkPluginHost"],
             args: "port",
             cat: "t",
-            description: y(2026, null)
+            description: y(2027, null)
         },
         "disable-lcd-text": {
             type: "boolean",
             cat: "t",
-            description: y(2027, null)
+            description: y(2028, null)
         },
         "disable-gpu": {
             type: "boolean",
             cat: "t",
-            description: y(2028, null)
+            description: y(2029, null)
         },
         "disable-chromium-sandbox": {
             type: "boolean",
             cat: "t",
-            description: y(2029, null)
+            description: y(2030, null)
         },
         sandbox: {
             type: "boolean"
@@ -6006,12 +6006,12 @@ var _c = class {
             type: "string",
             cat: "t",
             args: ["shell"],
-            description: y(2030, null)
+            description: y(2031, null)
         },
         telemetry: {
             type: "boolean",
             cat: "t",
-            description: y(2031, null)
+            description: y(2032, null)
         },
         remote: {
             type: "string",
@@ -6312,7 +6312,7 @@ var _c = class {
         chat: {
             type: "boolean",
             cat: "o",
-            description: y(2032, null)
+            description: y(2033, null)
         },
         _: {
             type: "string[]"
@@ -6372,7 +6372,7 @@ function vn(e, t, r = Cc) {
         d.alias && delete u[d.alias];
         let p = u[f];
         if (d.deprecates)
-            for (const _ of d.deprecates) u.hasOwnProperty(_) && (p || (p = u[_], p && r.onDeprecatedOption(_, d.deprecationMessage || y(2033, null, f))), delete u[_]);
+            for (const _ of d.deprecates) u.hasOwnProperty(_) && (p || (p = u[_], p && r.onDeprecatedOption(_, d.deprecationMessage || y(2034, null, f))), delete u[_]);
         if (typeof p < "u") {
             if (d.type === "string[]") {
                 if (Array.isArray(p) || (p = [p]), !d.allowEmptyValue) {
@@ -6779,17 +6779,17 @@ var md = class ia {
 function Ci(...e) {
     switch (e.length) {
         case 1:
-            return y(1966, null, e[0]);
+            return y(1967, null, e[0]);
         case 2:
-            return y(1967, null, e[0], e[1]);
+            return y(1968, null, e[0], e[1]);
         case 3:
-            return y(1968, null, e[0], e[1], e[2]);
+            return y(1969, null, e[0], e[1], e[2]);
         default:
             return
     }
 }
-var Fc = y(1969, null),
-    $c = y(1970, null),
+var Fc = y(1970, null),
+    $c = y(1971, null),
     $t = class Gi {
         constructor() {
             this._input = "", this._start = 0, this._current = 0, this._tokens = [], this._errors = [], this.stringRe = /[a-zA-Z0-9_<>\-\./\\:\*\?\+\[\]\^,#@;"%\$\p{L}-]+/uy
@@ -7053,14 +7053,14 @@ var qc = Object.prototype.hasOwnProperty,
 var Wc = {
         regexParsingWithErrorRecovery: !0
     },
-    Hc = y(1944, null),
-    zc = y(1945, null),
-    jc = y(1946, null),
-    Ln = y(1947, null),
-    Vc = y(1948, null),
-    Gc = y(1949, null),
-    Kc = y(1950, null),
-    Xc = y(1951, null),
+    Hc = y(1945, null),
+    zc = y(1946, null),
+    jc = y(1947, null),
+    Ln = y(1948, null),
+    Vc = y(1949, null),
+    Gc = y(1950, null),
+    Kc = y(1951, null),
+    Xc = y(1952, null),
     Yc = class rr {
         static {
             this._parseError = new Error
@@ -7333,7 +7333,7 @@ var Wc = {
             throw this._errExpectedButGot(r, this._peek())
         }
         _errExpectedButGot(t, r, i) {
-            const s = y(1952, null, t, $t.getLexeme(r)),
+            const s = y(1953, null, t, $t.getLexeme(r)),
                 n = r.offset,
                 o = $t.getLexeme(r);
             return this._parsingErrors.push({
@@ -8992,7 +8992,7 @@ var uh = class de {
             this.TB = de.GB * de.KB
         }
         static formatSize(t) {
-            return os(t) || (t = 0), t < de.KB ? y(2159, null, t.toFixed(0)) : t < de.MB ? y(2160, null, (t / de.KB).toFixed(2)) : t < de.GB ? y(2161, null, (t / de.MB).toFixed(2)) : t < de.TB ? y(2162, null, (t / de.GB).toFixed(2)) : y(2163, null, (t / de.TB).toFixed(2))
+            return os(t) || (t = 0), t < de.KB ? y(2160, null, t.toFixed(0)) : t < de.MB ? y(2161, null, (t / de.KB).toFixed(2)) : t < de.GB ? y(2162, null, (t / de.MB).toFixed(2)) : t < de.TB ? y(2163, null, (t / de.GB).toFixed(2)) : y(2164, null, (t / de.TB).toFixed(2))
         }
     },
     Fe;
@@ -10228,11 +10228,11 @@ var Io = new Map([
         async _validateCwd() {
             try {
                 if (!(await jt.promises.stat(this._initialCwd)).isDirectory()) return {
-                    message: y(2421, null, this._initialCwd.toString())
+                    message: y(2422, null, this._initialCwd.toString())
                 }
             } catch (t) {
                 if (t?.code === "ENOENT") return {
-                    message: y(2422, null, this._initialCwd.toString())
+                    message: y(2423, null, this._initialCwd.toString())
                 }
             }
             this._onDidChangeProperty.fire({
@@ -10247,12 +10247,12 @@ var Io = new Map([
                 i = t.env && t.env.PATH ? t.env.PATH.split(Ss) : void 0,
                 s = await mc(t.executable, r, i, this._executableEnv);
             if (!s) return {
-                message: y(2423, null, t.executable)
+                message: y(2424, null, t.executable)
             };
             try {
                 const n = await jt.promises.stat(s);
                 if (!n.isFile() && !n.isSymbolicLink()) return {
-                    message: y(2424, null, t.executable)
+                    message: y(2425, null, t.executable)
                 };
                 t.executable = s
             } catch (n) {
@@ -12027,7 +12027,7 @@ var Hi, zi, R = class extends V {
         await Promise.all(i)
     }
     async _reviveTerminalProcess(e, t) {
-        const r = y(2420, null);
+        const r = y(2421, null);
         let i = "";
         if (T) {
             const o = t.replayEvent.events.length > 0 ? t.replayEvent.events.at(-1) : void 0;
@@ -12528,7 +12528,7 @@ async function wu() {
         a = new ph(rh(o), o.logsHome);
     s.registerChannel(it.Logger, new nh(a, () => Il));
     const c = a.createLogger("ptyhost", {
-            name: y(2419, null)
+            name: y(2420, null)
         }),
         l = new oh(c);
     e && l.warn(`Pty Host startup is delayed ${e}ms`), t && l.warn(`Pty host is simulating ${t}ms latency`);
@@ -12542,6 +12542,6 @@ async function wu() {
     })
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e696fa8ae574d6a40e0f1dbf74bd7d823f0b0d0/core/vs/platform/terminal/node/ptyHostMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/platform/terminal/node/ptyHostMain.js.map
 
-//# debugId=e106d347-2bef-58e4-9a4e-ba83ef10e22c
+//# debugId=5d5b1ac4-7859-57e5-8115-720e5cb3be8e

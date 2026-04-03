@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "56fd39b9-789e-5df6-9367-a7f76d2ec66f")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "f7aa41a7-c91a-553a-9569-19ccb33793a8")
     } catch (e) {}
 }();
 var zc = function(t, e) {
@@ -9896,17 +9896,17 @@ var RI = class mw {
 function Xl(...t) {
     switch (t.length) {
         case 1:
-            return S(1966, null, t[0]);
+            return S(1967, null, t[0]);
         case 2:
-            return S(1967, null, t[0], t[1]);
+            return S(1968, null, t[0], t[1]);
         case 3:
-            return S(1968, null, t[0], t[1], t[2]);
+            return S(1969, null, t[0], t[1], t[2]);
         default:
             return
     }
 }
-var v6 = S(1969, null),
-    y6 = S(1970, null),
+var v6 = S(1970, null),
+    y6 = S(1971, null),
     mn = class Qf {
         constructor() {
             this._input = "", this._start = 0, this._current = 0, this._tokens = [], this._errors = [], this.stringRe = /[a-zA-Z0-9_<>\-\./\\:\*\?\+\[\]\^,#@;"%\$\p{L}-]+/uy
@@ -10174,14 +10174,14 @@ var _6 = Object.prototype.hasOwnProperty,
 var E6 = {
         regexParsingWithErrorRecovery: !0
     },
-    b6 = S(1944, null),
-    x6 = S(1945, null),
-    R6 = S(1946, null),
-    hm = S(1947, null),
-    C6 = S(1948, null),
-    P6 = S(1949, null),
-    I6 = S(1950, null),
-    D6 = S(1951, null),
+    b6 = S(1945, null),
+    x6 = S(1946, null),
+    R6 = S(1947, null),
+    hm = S(1948, null),
+    C6 = S(1949, null),
+    P6 = S(1950, null),
+    I6 = S(1951, null),
+    D6 = S(1952, null),
     k6 = class go {
         static {
             this._parseError = new Error
@@ -10454,7 +10454,7 @@ var E6 = {
             throw this._errExpectedButGot(i, this._peek())
         }
         _errExpectedButGot(e, i, s) {
-            const r = S(1952, null, e, mn.getLexeme(i)),
+            const r = S(1953, null, e, mn.getLexeme(i)),
                 n = i.offset,
                 o = mn.getLexeme(i);
             return this._parsingErrors.push({
@@ -11818,8 +11818,8 @@ async function fu(t, e) {
     }
     return i.children ? (await Promise.all(i.children.map(r => fu(r.resource, e)))).reduce((r, n) => r + n, 0) : i.size ?? 0
 }
-var TI = $g(2069, "Extensions"),
-    AI = $g(2070, "Preferences"),
+var TI = $g(2070, "Extensions"),
+    AI = $g(2071, "Preferences"),
     K6 = "extensions.gallery.useUnpkgResourceApi",
     pu = "extensions.allowed";
 
@@ -11857,7 +11857,7 @@ var gu = H("languagePackService"),
         createQuickPickItem(e, i, s) {
             const r = i ?? e;
             let n;
-            if (r !== e && (n = `(${e})`), e.toLowerCase() === bi.toLowerCase() && (n ??= "", n += S(2210, null)), s?.installCount) {
+            if (r !== e && (n = `(${e})`), e.toLowerCase() === bi.toLowerCase() && (n ??= "", n += S(2211, null)), s?.installCount) {
                 n ??= "";
                 const o = s.installCount;
                 let a;
@@ -12554,7 +12554,7 @@ var jm;
 var zm = "code-workspace",
     GI = `.${zm}`,
     HI = [{
-        name: S(2801, null),
+        name: S(2802, null),
         extensions: [zm]
     }];
 import "crypto";
@@ -12675,7 +12675,7 @@ function gi(t, e) {
 }
 
 function Os(t) {
-    return t || gi(S(2158, null), Q.Unknown)
+    return t || gi(S(2159, null), Q.Unknown)
 }
 
 function S7(t, e) {
@@ -12852,7 +12852,7 @@ var xn = class Ft {
             this.TB = Ft.GB * Ft.KB
         }
         static formatSize(e) {
-            return El(e) || (e = 0), e < Ft.KB ? S(2159, null, e.toFixed(0)) : e < Ft.MB ? S(2160, null, (e / Ft.KB).toFixed(2)) : e < Ft.GB ? S(2161, null, (e / Ft.MB).toFixed(2)) : e < Ft.TB ? S(2162, null, (e / Ft.GB).toFixed(2)) : S(2163, null, (e / Ft.TB).toFixed(2))
+            return El(e) || (e = 0), e < Ft.KB ? S(2160, null, e.toFixed(0)) : e < Ft.MB ? S(2161, null, (e / Ft.KB).toFixed(2)) : e < Ft.GB ? S(2162, null, (e / Ft.MB).toFixed(2)) : e < Ft.TB ? S(2163, null, (e / Ft.GB).toFixed(2)) : S(2164, null, (e / Ft.TB).toFixed(2))
         }
     },
     Iu = class {
@@ -14063,7 +14063,7 @@ var Dn = {
         constructor() {
             super(), this.registeredConfigurationDefaults = [], this.overrideIdentifiers = new Set, this._onDidSchemaChange = this._register(new I), this.onDidSchemaChange = this._onDidSchemaChange.event, this._onDidUpdateConfiguration = this._register(new I), this.onDidUpdateConfiguration = this._onDidUpdateConfiguration.event, this.configurationDefaultsOverrides = new Map, this.defaultLanguageConfigurationOverridesNode = {
                 id: "defaultOverrides",
-                title: S(1933, null),
+                title: S(1934, null),
                 properties: {}
             }, this.configurationContributors = [this.defaultLanguageConfigurationOverridesNode], this.resourceLanguageSettingsSchema = {
                 properties: {},
@@ -14177,7 +14177,7 @@ var Dn = {
             const s = {
                 type: "object",
                 default: e.value,
-                description: S(1934, null, x7(t)),
+                description: S(1935, null, x7(t)),
                 $ref: Fs,
                 defaultDefaultValue: e.value,
                 source: i,
@@ -14367,8 +14367,8 @@ var Dn = {
                 const e = `[${t}]`,
                     i = {
                         type: "object",
-                        description: S(1935, null),
-                        errorMessage: S(1936, null),
+                        description: S(1936, null),
+                        errorMessage: S(1937, null),
                         $ref: Fs
                     };
                 this.updatePropertyDefaultValue(e, i), Dn.properties[e] = i, Ea.properties[e] = i, ba.properties[e] = i, xa.properties[e] = i, Ra.properties[e] = i, Ca.properties[e] = i, kn.properties[e] = i
@@ -14377,8 +14377,8 @@ var Dn = {
         registerOverridePropertyPatternKey() {
             const t = {
                 type: "object",
-                description: S(1937, null),
-                errorMessage: S(1938, null),
+                description: S(1938, null),
+                errorMessage: S(1939, null),
                 $ref: Fs
             };
             Dn.patternProperties[is] = t, Ea.patternProperties[is] = t, ba.patternProperties[is] = t, xa.patternProperties[is] = t, Ra.patternProperties[is] = t, Ca.patternProperties[is] = t, kn.patternProperties[is] = t, this._onDidSchemaChange.fire()
@@ -14440,7 +14440,7 @@ var Ia = new O7;
 Gt.add(mi.Configuration, Ia);
 
 function M7(t, e) {
-    return t.trim() ? ji.test(t) ? S(1940, null, t) : Ia.getConfigurationProperties()[t] !== void 0 ? S(1941, null, t) : e.policy?.name && Ia.getPolicyConfigurations().get(e.policy?.name) !== void 0 ? S(1942, null, t, e.policy?.name, Ia.getPolicyConfigurations().get(e.policy?.name)) : null : S(1939, null)
+    return t.trim() ? ji.test(t) ? S(1941, null, t) : Ia.getConfigurationProperties()[t] !== void 0 ? S(1942, null, t) : e.policy?.name && Ia.getPolicyConfigurations().get(e.policy?.name) !== void 0 ? S(1943, null, t, e.policy?.name, Ia.getPolicyConfigurations().get(e.policy?.name)) : null : S(1940, null)
 }
 
 function bv(t) {
@@ -16616,53 +16616,53 @@ function E9(t = !0, e = !0) {
     Hu = [{
         id: "http",
         order: 15,
-        title: S(2351, null),
+        title: S(2352, null),
         type: "object",
         scope: 2,
         properties: {
             "http.useLocalProxyConfiguration": {
                 type: "boolean",
                 default: e,
-                markdownDescription: S(2352, null),
+                markdownDescription: S(2353, null),
                 restricted: !0
             }
         }
     }, {
         id: "http",
         order: 15,
-        title: S(2353, null),
+        title: S(2354, null),
         type: "object",
         scope: 1,
         properties: {
             "http.electronFetch": {
                 type: "boolean",
                 default: !1,
-                description: S(2354, null),
+                description: S(2355, null),
                 restricted: !0
             }
         }
     }, {
         id: "http",
         order: 15,
-        title: S(2355, null),
+        title: S(2356, null),
         type: "object",
         scope: t ? 1 : 2,
         properties: {
             "http.proxy": {
                 type: "string",
                 pattern: "^(https?|socks|socks4a?|socks5h?)://([^:]*(:[^@]*)?@)?([^:]+|\\[[:0-9a-fA-F]+\\])(:\\d+)?/?$|^$",
-                markdownDescription: S(2356, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2357, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxyStrictSSL": {
                 type: "boolean",
                 default: !0,
-                markdownDescription: S(2357, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2358, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxyKerberosServicePrincipal": {
                 type: "string",
-                markdownDescription: S(2358, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2359, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.noProxy": {
@@ -16670,40 +16670,40 @@ function E9(t = !0, e = !0) {
                 items: {
                     type: "string"
                 },
-                markdownDescription: S(2359, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2360, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxyAuthorization": {
                 type: ["null", "string"],
                 default: null,
-                markdownDescription: S(2360, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2361, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxySupport": {
                 type: "string",
                 enum: ["off", "on", "fallback", "override"],
-                enumDescriptions: [S(2361, null), S(2362, null), S(2363, null), S(2364, null)],
+                enumDescriptions: [S(2362, null), S(2363, null), S(2364, null), S(2365, null)],
                 default: "override",
-                markdownDescription: S(2365, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2366, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.systemCertificates": {
                 type: "boolean",
                 default: !0,
-                markdownDescription: S(2366, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2367, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.experimental.systemCertificatesV2": {
                 type: "boolean",
                 tags: ["experimental"],
                 default: !1,
-                markdownDescription: S(2367, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: S(2368, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.fetchAdditionalSupport": {
                 type: "boolean",
                 default: !0,
-                markdownDescription: S(2368, null, "`#http.useLocalProxyConfiguration#`", "`#http.proxySupport#`", "`#http.systemCertificates#`"),
+                markdownDescription: S(2369, null, "`#http.useLocalProxyConfiguration#`", "`#http.proxySupport#`", "`#http.systemCertificates#`"),
                 restricted: !0
             }
         }
@@ -16872,7 +16872,7 @@ var Xu = class {
     i0 = "telemetry",
     A9 = {
         id: i0,
-        name: S(2385, null)
+        name: S(2386, null)
     },
     O9 = {
         registerAuthId: () => null,
@@ -17452,7 +17452,7 @@ var f0 = class extends N {
         return this._profilesObject
     }
     createDefaultProfile() {
-        const e = Na("__default__profile__", S(2754, null), this.environmentService.userRoamingDataHome, this.profilesCacheHome);
+        const e = Na("__default__profile__", S(2755, null), this.environmentService.userRoamingDataHome, this.profilesCacheHome);
         return {
             ...e,
             extensionsResource: this.getDefaultProfileExtensionsLocation() ?? e.extensionsResource,
@@ -19252,31 +19252,31 @@ function a8(t, e, i) {
 
 function c8(t, e, i, s, r, n) {
     const o = [];
-    if (typeof s.publisher < "u" && typeof s.publisher != "string") return o.push([mt.Error, S(2123, null)]), o;
-    if (typeof s.name != "string") return o.push([mt.Error, S(2124, null, "name")]), o;
-    if (typeof s.version != "string") return o.push([mt.Error, S(2125, null, "version")]), o;
-    if (!s.engines) return o.push([mt.Error, S(2126, null, "engines")]), o;
-    if (typeof s.engines.vscode != "string") return o.push([mt.Error, S(2127, null, "engines.vscode")]), o;
-    if (typeof s.extensionDependencies < "u" && !b0(s.extensionDependencies)) return o.push([mt.Error, S(2128, null, "extensionDependencies")]), o;
+    if (typeof s.publisher < "u" && typeof s.publisher != "string") return o.push([mt.Error, S(2124, null)]), o;
+    if (typeof s.name != "string") return o.push([mt.Error, S(2125, null, "name")]), o;
+    if (typeof s.version != "string") return o.push([mt.Error, S(2126, null, "version")]), o;
+    if (!s.engines) return o.push([mt.Error, S(2127, null, "engines")]), o;
+    if (typeof s.engines.vscode != "string") return o.push([mt.Error, S(2128, null, "engines.vscode")]), o;
+    if (typeof s.extensionDependencies < "u" && !b0(s.extensionDependencies)) return o.push([mt.Error, S(2129, null, "extensionDependencies")]), o;
     if (typeof s.activationEvents < "u") {
-        if (!b0(s.activationEvents)) return o.push([mt.Error, S(2129, null, "activationEvents")]), o;
-        if (typeof s.main > "u" && typeof s.browser > "u") return o.push([mt.Error, S(2130, null, "activationEvents", "main", "browser")]), o
+        if (!b0(s.activationEvents)) return o.push([mt.Error, S(2130, null, "activationEvents")]), o;
+        if (typeof s.main > "u" && typeof s.browser > "u") return o.push([mt.Error, S(2131, null, "activationEvents", "main", "browser")]), o
     }
-    if (typeof s.extensionKind < "u" && typeof s.main > "u" && o.push([mt.Warning, S(2131, null, "extensionKind")]), typeof s.main < "u") {
-        if (typeof s.main != "string") return o.push([mt.Error, S(2132, null, "main")]), o;
+    if (typeof s.extensionKind < "u" && typeof s.main > "u" && o.push([mt.Warning, S(2132, null, "extensionKind")]), typeof s.main < "u") {
+        if (typeof s.main != "string") return o.push([mt.Error, S(2133, null, "main")]), o;
         {
             const l = z(i, s.main);
-            U1(l, i) || o.push([mt.Warning, S(2133, null, l.path, i.path)])
+            U1(l, i) || o.push([mt.Warning, S(2134, null, l.path, i.path)])
         }
     }
     if (typeof s.browser < "u") {
-        if (typeof s.browser != "string") return o.push([mt.Error, S(2134, null, "browser")]), o;
+        if (typeof s.browser != "string") return o.push([mt.Error, S(2135, null, "browser")]), o;
         {
             const l = z(i, s.browser);
-            U1(l, i) || o.push([mt.Warning, S(2135, null, l.path, i.path)])
+            U1(l, i) || o.push([mt.Warning, S(2136, null, l.path, i.path)])
         }
     }
-    if (!e8(s.version)) return o.push([mt.Error, S(2136, null)]), o;
+    if (!e8(s.version)) return o.push([mt.Error, S(2137, null)]), o;
     const a = [];
     if (!l8(t, e, s, r, a))
         for (const l of a) o.push([mt.Error, l]);
@@ -19310,16 +19310,16 @@ function ih(t, e) {
         if (!a) continue;
         s[o]?.version !== a && r.push(o)
     }
-    return r.length ? (i && (r.length === 1 ? i.push(S(2137, null, r[0])) : i.push(S(2138, null, r.slice(0, r.length - 1).map(o => `'${o}'`).join(", "), r[r.length - 1]))), !1) : !0
+    return r.length ? (i && (r.length === 1 ? i.push(S(2138, null, r[0])) : i.push(S(2139, null, r.slice(0, r.length - 1).map(o => `'${o}'`).join(", "), r[r.length - 1]))), !1) : !0
 }
 
 function E0(t, e, i, s = []) {
     const r = th(eh(i));
-    if (!r) return s.push(S(2139, null, i)), !1;
+    if (!r) return s.push(S(2140, null, i)), !1;
     if (r.majorBase === 0) {
-        if (!r.majorMustEqual || !r.minorMustEqual) return s.push(S(2140, null, i)), !1
-    } else if (!r.majorMustEqual) return s.push(S(2141, null, i)), !1;
-    return a8(t, e, r) ? !0 : (s.push(S(2142, null, t, i)), !1)
+        if (!r.majorMustEqual || !r.minorMustEqual) return s.push(S(2141, null, i)), !1
+    } else if (!r.majorMustEqual) return s.push(S(2142, null, i)), !1;
+    return a8(t, e, r) ? !0 : (s.push(S(2143, null, t, i)), !1)
 }
 
 function b0(t) {
@@ -21892,7 +21892,7 @@ function W8(t, e) {
     const i = t.match(/^`+/gm)?.reduce((r, n) => r.length > n.length ? r : n).length ?? 0,
         s = i >= 3 ? i + 1 : 3;
     return [`${"`".repeat(s)}${e}`,t,`${"`".repeat(s)}`].join(`
-`)}var _h=class extends N{constructor(e,i){super(),this.productService=e,this.allowedExtensionsService=i}async canInstall(e){const i=this.allowedExtensionsService.isAllowed({id:e.identifier.id,publisherDisplayName:e.publisherDisplayName});if(i!==!0)return new Vs(S(2048,null,i.value));if(!await this.isExtensionPlatformCompatible(e)){const s=Ct?"https://aka.ms/vscode-web-extensions-guide":"https://aka.ms/vscode-platform-specific-extensions";return new Vs(`${S(2049,null,e.displayName??e.identifier.id,this.productService.nameLong,_m(await this.getTargetPlatform()))} [${S(2050,null)}](${s})`)
+`)}var _h=class extends N{constructor(e,i){super(),this.productService=e,this.allowedExtensionsService=i}async canInstall(e){const i=this.allowedExtensionsService.isAllowed({id:e.identifier.id,publisherDisplayName:e.publisherDisplayName});if(i!==!0)return new Vs(S(2049,null,i.value));if(!await this.isExtensionPlatformCompatible(e)){const s=Ct?"https://aka.ms/vscode-web-extensions-guide":"https://aka.ms/vscode-platform-specific-extensions";return new Vs(`${S(2050,null,e.displayName??e.identifier.id,this.productService.nameLong,_m(await this.getTargetPlatform()))} [${S(2051,null)}](${s})`)
 }
 return !0
 }
@@ -21956,7 +21956,7 @@ var Eh = class extends _h {
         }
     }
     async installGalleryExtensions(e) {
-        if (!this.galleryService.isEnabled()) throw new Ve(S(2051, null), "NotAllowed");
+        if (!this.galleryService.isEnabled()) throw new Ve(S(2052, null), "NotAllowed");
         const i = [],
             s = [];
         return await Promise.allSettled(e.map(async ({
@@ -22321,7 +22321,7 @@ var Eh = class extends _h {
     async checkAndGetCompatibleVersion(e, i, s, r) {
         let n;
         const o = await this.getExtensionsControlManifest();
-        if (z9(e.identifier, o.malicious)) throw new Ve(S(2052, null, e.identifier.id), "Malicious");
+        if (z9(e.identifier, o.malicious)) throw new Ve(S(2053, null, e.identifier.id), "Malicious");
         const a = o.deprecated[e.identifier.id.toLowerCase()];
         if (a?.extension?.autoMigrate) {
             if (this.logService.info(`The '${e.identifier.id}' extension is deprecated, fetching the compatible '${a.extension.id}' extension instead.`), n = (await this.galleryService.getExtensions([{
@@ -22331,15 +22331,15 @@ var Eh = class extends _h {
                     targetPlatform: await this.getTargetPlatform(),
                     compatible: !0,
                     productVersion: r
-                }, se.None))[0], !n) throw new Ve(S(2053, null, e.identifier.id, a.extension.id), "Deprecated")
+                }, se.None))[0], !n) throw new Ve(S(2054, null, e.identifier.id, a.extension.id), "Deprecated")
         } else {
             if (await this.canInstall(e) !== !0) {
                 const l = await this.getTargetPlatform();
-                throw new Ve(S(2054, null, e.identifier.id, this.productService.nameLong, _m(l)), "IncompatibleTargetPlatform")
+                throw new Ve(S(2055, null, e.identifier.id, this.productService.nameLong, _m(l)), "IncompatibleTargetPlatform")
             }
             if (n = await this.getCompatibleVersion(e, i, s, r), !n) {
                 const l = [];
-                throw ih(e.properties.enabledApiProposals ?? [], l) ? !s && e.properties.isPreReleaseVersion && (await this.galleryService.getExtensions([e.identifier], {}, se.None, e.queryContext))[0] ? new Ve(S(2056, null, e.displayName ?? e.identifier.id), "ReleaseVersionNotFound") : new Ve(S(2057, null, e.identifier.id, this.productService.nameLong, this.productService.version, this.productService.vscodeVersion), "Incompatible") : new Ve(S(2055, null, e.displayName ?? e.identifier.id, l[0]), "IncompatibleApi")
+                throw ih(e.properties.enabledApiProposals ?? [], l) ? !s && e.properties.isPreReleaseVersion && (await this.galleryService.getExtensions([e.identifier], {}, se.None, e.queryContext))[0] ? new Ve(S(2057, null, e.displayName ?? e.identifier.id), "ReleaseVersionNotFound") : new Ve(S(2058, null, e.identifier.id, this.productService.nameLong, this.productService.version, this.productService.vscodeVersion), "Incompatible") : new Ve(S(2056, null, e.displayName ?? e.identifier.id, l[0]), "IncompatibleApi")
             }
         }
         this.logService.info("Getting Manifest...", n.identifier.id);
@@ -22473,7 +22473,7 @@ var Eh = class extends _h {
         }
     }
     getDependentsErrorMessage(e, i, s) {
-        return s === e ? i.length === 1 ? S(2058, null, s.manifest.displayName || s.manifest.name, i[0].manifest.displayName || i[0].manifest.name) : i.length === 2 ? S(2059, null, s.manifest.displayName || s.manifest.name, i[0].manifest.displayName || i[0].manifest.name, i[1].manifest.displayName || i[1].manifest.name) : S(2060, null, s.manifest.displayName || s.manifest.name, i[0].manifest.displayName || i[0].manifest.name, i[1].manifest.displayName || i[1].manifest.name) : i.length === 1 ? S(2061, null, s.manifest.displayName || s.manifest.name, e.manifest.displayName || e.manifest.name, i[0].manifest.displayName || i[0].manifest.name) : i.length === 2 ? S(2062, null, s.manifest.displayName || s.manifest.name, e.manifest.displayName || e.manifest.name, i[0].manifest.displayName || i[0].manifest.name, i[1].manifest.displayName || i[1].manifest.name) : S(2063, null, s.manifest.displayName || s.manifest.name, e.manifest.displayName || e.manifest.name, i[0].manifest.displayName || i[0].manifest.name, i[1].manifest.displayName || i[1].manifest.name)
+        return s === e ? i.length === 1 ? S(2059, null, s.manifest.displayName || s.manifest.name, i[0].manifest.displayName || i[0].manifest.name) : i.length === 2 ? S(2060, null, s.manifest.displayName || s.manifest.name, i[0].manifest.displayName || i[0].manifest.name, i[1].manifest.displayName || i[1].manifest.name) : S(2061, null, s.manifest.displayName || s.manifest.name, i[0].manifest.displayName || i[0].manifest.name, i[1].manifest.displayName || i[1].manifest.name) : i.length === 1 ? S(2062, null, s.manifest.displayName || s.manifest.name, e.manifest.displayName || e.manifest.name, i[0].manifest.displayName || i[0].manifest.name) : i.length === 2 ? S(2063, null, s.manifest.displayName || s.manifest.name, e.manifest.displayName || e.manifest.name, i[0].manifest.displayName || i[0].manifest.name, i[1].manifest.displayName || i[1].manifest.name) : S(2064, null, s.manifest.displayName || s.manifest.name, e.manifest.displayName || e.manifest.name, i[0].manifest.displayName || i[0].manifest.name, i[1].manifest.displayName || i[1].manifest.name)
     }
     getAllPackExtensionsToUninstall(e, i, s = []) {
         if (s.indexOf(e) !== -1) return [];
@@ -23108,7 +23108,7 @@ function ex(t, e, i, s) {
                     g = s?.[h],
                     m = typeof g == "string" ? g : g?.message;
                 if (!p) {
-                    m || t.warn(`[${e.name}]: ${S(2103,null,h)}`);
+                    m || t.warn(`[${e.name}]: ${S(2104,null,h)}`);
                     return
                 }
                 if (a && (o === "title" || o === "category") && m && m !== p) {
@@ -23497,7 +23497,7 @@ var Hn = class {
             try {
                 s = (await this.fileService.readFile(i)).value.toString()
             } catch (n) {
-                throw Ge(n) !== 1 && this.logService.error(this.formatMessage(e, S(2104, null, i.path, n.message))), n
+                throw Ge(n) !== 1 && this.logService.error(this.formatMessage(e, S(2105, null, i.path, n.message))), n
             }
             let r;
             try {
@@ -23505,11 +23505,11 @@ var Hn = class {
             } catch (n) {
                 const o = [];
                 st(s, o);
-                for (const a of o) this.logService.error(this.formatMessage(e, S(2105, null, i.path, a.offset, a.length, Rh(a.error))));
+                for (const a of o) this.logService.error(this.formatMessage(e, S(2106, null, i.path, a.offset, a.length, Rh(a.error))));
                 throw n
             }
             if (Rr(r) !== "object") {
-                const n = this.formatMessage(e, S(2106, null, i.path));
+                const n = this.formatMessage(e, S(2107, null, i.path));
                 throw this.logService.error(n), new Error(n)
             }
             return r
@@ -23520,9 +23520,9 @@ var Hn = class {
                 const n = [],
                     o = await this.resolveOriginalMessageBundle(r.default, n);
                 if (n.length > 0) return n.forEach(c => {
-                    this.logService.error(this.formatMessage(e, S(2107, null, r.default?.path, Rh(c.error))))
+                    this.logService.error(this.formatMessage(e, S(2108, null, r.default?.path, Rh(c.error))))
                 }), i;
-                if (Rr(r) !== "object") return this.logService.error(this.formatMessage(e, S(2108, null, r.default?.path))), i;
+                if (Rr(r) !== "object") return this.logService.error(this.formatMessage(e, S(2109, null, r.default?.path))), i;
                 const a = r.values || Object.create(null);
                 return Z8(this.logService, i, a, o)
             } catch {}
@@ -23532,11 +23532,11 @@ var Hn = class {
             const r = z(e, "package.nls.json"),
                 n = (l, u) => {
                     u.forEach(h => {
-                        this.logService.error(this.formatMessage(e, S(2109, null, l?.path, Rh(h.error))))
+                        this.logService.error(this.formatMessage(e, S(2110, null, l?.path, Rh(h.error))))
                     })
                 },
                 o = l => {
-                    this.logService.error(this.formatMessage(e, S(2110, null, l?.path)))
+                    this.logService.error(this.formatMessage(e, S(2111, null, l?.path)))
                 },
                 a = `${i.publisher}.${i.name}`,
                 c = s.translations[a];
@@ -23713,7 +23713,7 @@ async function Dh(t) {
     try {
         return JSON.parse(e.toString("utf8"))
     } catch {
-        throw new Ve(S(2122, null), "Invalid")
+        throw new Ve(S(2123, null), "Invalid")
     }
 }
 var Qa, kh = class extends N {
@@ -24205,14 +24205,14 @@ var sx = class extends N {
                 const n = await Dh(bs(s.fsPath)),
                     o = ni(n.publisher, n.name);
                 if (o !== "typescriptteam.native-preview") {
-                    if (n.engines && n.engines.vscode && !Mn(n.engines.vscode, this.productService.vscodeVersion, this.productService.date)) throw new Error(S(2111, null, o, this.productService.vscodeVersion))
+                    if (n.engines && n.engines.vscode && !Mn(n.engines.vscode, this.productService.vscodeVersion, this.productService.date)) throw new Error(S(2112, null, o, this.productService.vscodeVersion))
                 }
                 const a = this.allowedExtensionsService.isAllowed({
                     id: o,
                     version: n.version,
                     publisherDisplayName: void 0
                 });
-                if (a !== !0) throw new Error(S(2112, null, a.value));
+                if (a !== !0) throw new Error(S(2113, null, a.value));
                 const l = (await this.installExtensions([{
                     manifest: n,
                     extension: s,
@@ -24329,7 +24329,7 @@ var sx = class extends N {
                 const u = await Dh(c.fsPath);
                 if (!new Ht(i.identifier, i.version).equals(new Ht({
                         id: ni(u.publisher, u.name)
-                    }, u.version))) throw new Ve(S(2113, null, i.identifier.id), "Invalid");
+                    }, u.version))) throw new Ve(S(2114, null, i.identifier.id), "Invalid");
                 const h = await this.extensionsScanner.extractUserExtension(e, c.fsPath, !1, n);
                 if (l && a === Re.Success) try {
                     const f = z(h.location, ".signature.sigzip");
@@ -24386,10 +24386,10 @@ var sx = class extends N {
                 } catch (l) {
                     this.logService.warn("Error while deleting signature archive", a.toString(), Y(l))
                 }
-                if (!o) throw new Ve(S(2114, null), "SignatureVerificationInternal");
+                if (!o) throw new Ve(S(2115, null), "SignatureVerificationInternal");
                 switch (o) {
                     case Re.NotSigned:
-                        throw new Ve(S(2115, null), "PackageNotSigned");
+                        throw new Ve(S(2116, null), "PackageNotSigned");
                     case Re.PackageIntegrityCheckFailed:
                     case Re.SignatureIsInvalid:
                     case Re.SignatureManifestIsInvalid:
@@ -24400,9 +24400,9 @@ var sx = class extends N {
                     case Re.CertificateRevoked:
                     case Re.SignatureIsNotValid:
                     case Re.SignatureArchiveHasTooManyEntries:
-                        throw new Ve(S(2116, null, o), "SignatureVerificationFailed")
+                        throw new Ve(S(2117, null, o), "SignatureVerificationFailed")
                 }
-                throw new Ve(S(2117, null, o), "SignatureVerificationInternal")
+                throw new Ve(S(2118, null, o), "SignatureVerificationInternal")
             }
             return {
                 location: n,
@@ -24544,7 +24544,7 @@ var Nh = class extends N {
             try {
                 await this.deleteExtensionFromLocation(e.id, a, "removeExisting")
             } catch {
-                throw new Ve(S(2118, null, a.fsPath, e.id), "Delete")
+                throw new Ve(S(2119, null, a.fsPath, e.id), "Delete")
             }
         }
         try {
@@ -24720,7 +24720,7 @@ var Nh = class extends N {
                 });
                 if (r) return await this.toLocalExtension(r)
             }
-            throw new Ve(S(2119, null, e.path), "ScanningExtension")
+            throw new Ve(S(2120, null, e.path), "ScanningExtension")
         } catch (r) {
             throw Je(r, "ScanningExtension")
         }
@@ -24853,13 +24853,13 @@ var Fh = class extends Y0 {
             if (s && this.extensionKey.equals(new Ht(s.identifier, s.manifest.version))) try {
                 await this.extensionsScanner.deleteExtension(s, "existing")
             } catch {
-                throw new Error(S(2120, null, this.manifest.displayName || this.manifest.name))
+                throw new Error(S(2121, null, this.manifest.displayName || this.manifest.name))
             }
             const a = await this.unsetIfRemoved(this.extensionKey);
             if (a) try {
                 await this.extensionsScanner.deleteExtension(a, "existing")
             } catch {
-                throw new Error(S(2121, null, this.manifest.displayName || this.manifest.name))
+                throw new Error(S(2122, null, this.manifest.displayName || this.manifest.name))
             }
         } else {
             if (r.id = this.source.identifier.uuid, r.publisherId = this.source.publisherId, r.publisherDisplayName = this.source.publisherDisplayName, r.targetPlatform = this.source.properties.targetPlatform, r.updated = !!s, r.private = this.source.private, r.isPreReleaseVersion = this.source.properties.isPreReleaseVersion, r.hasPreReleaseVersion = s?.hasPreReleaseVersion || this.source.properties.isPreReleaseVersion, r.preRelease = si(this.options.preRelease) ? this.options.preRelease : this.options.installPreReleaseVersion || this.source.properties.isPreReleaseVersion || s?.preRelease, s && s.type !== 0 && s.manifest.version === this.source.version && !(!["undefined", "web"].includes(s.targetPlatform) && this.source.properties.targetPlatform !== "web" && s.targetPlatform !== this.source.properties.targetPlatform)) return this.extensionsScanner.updateMetadata(s, r, this.options.profileLocation);
@@ -24972,7 +24972,7 @@ function Uh(t) {
 }
 
 function ax(t, e) {
-    if (typeof e?.limits?.size == "number" && t > e.limits.size) throw gi(S(2192, null), Q.FileTooLarge);
+    if (typeof e?.limits?.size == "number" && t > e.limits.size) throw gi(S(2193, null), Q.FileTooLarge);
     return !0
 }
 
@@ -25046,12 +25046,12 @@ alwaysApply: true
             }))
         }
         async withProvider(e) {
-            if (!P5(e)) throw new et(S(2164, null, this.resourceForError(e)), 8);
+            if (!P5(e)) throw new et(S(2165, null, this.resourceForError(e)), 8);
             await this.activateProvider(e.scheme);
             const i = this.provider.get(e.scheme);
             if (!i) {
                 const s = new Ji;
-                throw s.message = S(2165, null, e.toString()), s
+                throw s.message = S(2166, null, e.toString()), s
             }
             return i
         }
@@ -25069,7 +25069,7 @@ alwaysApply: true
             try {
                 return await this.doResolveFile(e, i)
             } catch (s) {
-                throw ya(s) === Q.FileNotFound ? new et(S(2166, null, this.resourceForError(e)), 1) : Os(s)
+                throw ya(s) === Q.FileNotFound ? new et(S(2167, null, this.resourceForError(e)), 1) : Os(s)
             }
         }
         async doResolveFile(e, i) {
@@ -25086,7 +25086,7 @@ alwaysApply: true
             })) ? !0 : u.isDirectory && o ? h === 1 : !1))
         }
         async toFileStat(e, i, s, r, n, o) {
-            if (!s || typeof s.type != "number") throw gi(S(2167, null), Q.Unknown);
+            if (!s || typeof s.type != "number") throw gi(S(2168, null), Q.Unknown);
             const {
                 providerExtUri: a
             } = this.getExtUri(e), c = {
@@ -25166,7 +25166,7 @@ alwaysApply: true
             return !0
         }
         async doValidateCreateFile(e, i) {
-            if (!i?.overwrite && await this.exists(e)) throw new et(S(2168, null, this.resourceForError(e)), 3, i)
+            if (!i?.overwrite && await this.exists(e)) throw new et(S(2169, null, this.resourceForError(e)), 3, i)
         }
         async createFile(e, i = O.fromString(""), s) {
             cx(e) && i.toString().trim() === "" && (i = O.fromString(lx)), await this.doValidateCreateFile(e, s);
@@ -25193,7 +25193,7 @@ alwaysApply: true
                 } = await this.validateWriteFile(r, e, i, o);
                 a || await this.mkdirp(r, n.dirname(e)), c || (c = await this.peekBufferForWriting(r, i)), !ts(r) || ri(r) && c instanceof O || ri(r) && Xm(r) && o?.atomic ? await this.doWriteUnbuffered(r, e, o, c) : await this.doWriteBuffered(r, e, o, c instanceof O ? Yb(c) : c), this._onDidRunOperation.fire(new br(e, 4))
             } catch (a) {
-                throw new et(S(2169, null, this.resourceForError(e), Os(a).toString()), Ge(a), o)
+                throw new et(S(2170, null, this.resourceForError(e), Os(a).toString()), Ge(a), o)
             }
             return this.resolve(e, {
                 resolveMetadata: !0
@@ -25211,11 +25211,11 @@ alwaysApply: true
         }
         async validateWriteFile(e, i, s, r) {
             const n = !!r?.unlock;
-            if (n && !(e.capabilities & 8192)) throw new Error(S(2170, null, this.resourceForError(i)));
+            if (n && !(e.capabilities & 8192)) throw new Error(S(2171, null, this.resourceForError(i)));
             if (!!r?.atomic) {
-                if (!(e.capabilities & 32768)) throw new Error(S(2171, null, this.resourceForError(i)));
-                if (!(e.capabilities & 2)) throw new Error(S(2172, null, this.resourceForError(i)));
-                if (n) throw new Error(S(2173, null, this.resourceForError(i)))
+                if (!(e.capabilities & 32768)) throw new Error(S(2172, null, this.resourceForError(i)));
+                if (!(e.capabilities & 2)) throw new Error(S(2173, null, this.resourceForError(i)));
+                if (n) throw new Error(S(2174, null, this.resourceForError(i)))
             }
             let a;
             try {
@@ -25224,7 +25224,7 @@ alwaysApply: true
                 return Object.create(null)
             }
             if (!a || typeof a.type != "number") return Object.create(null);
-            if ((a.type & jt.Directory) !== 0) throw new et(S(2174, null, this.resourceForError(i)), 0, r);
+            if ((a.type & jt.Directory) !== 0) throw new et(S(2175, null, this.resourceForError(i)), 0, r);
             this.throwIfFileIsReadonly(i, a);
             let c;
             if (typeof r?.mtime == "number" && typeof r.etag == "string" && r.etag !== Pu && typeof a.mtime == "number" && typeof a.size == "number" && r.mtime < a.mtime && r.etag !== tv({
@@ -25244,7 +25244,7 @@ alwaysApply: true
                         buffer: c
                     }
                 } catch {}
-                throw new et(S(2175, null), 3, r)
+                throw new et(S(2176, null), 3, r)
             }
             return {
                 stat: a,
@@ -25302,7 +25302,7 @@ alwaysApply: true
             }
         }
         restoreReadError(e, i, s) {
-            const r = S(2176, null, this.resourceForError(i), Os(e).toString());
+            const r = S(2177, null, this.resourceForError(i), Os(e).toString());
             return e instanceof Cu ? new Cu(r, e.stat, s) : e instanceof Ru ? new Ru(r, e.fileOperationResult, e.size, e.options) : new et(r, Ge(e), s)
         }
         readFileStreamed(e, i, s, r = Object.create(null)) {
@@ -25337,12 +25337,12 @@ alwaysApply: true
             const s = await this.resolve(e, {
                 resolveMetadata: !0
             });
-            if (s.isDirectory) throw new et(S(2177, null, this.resourceForError(e)), 0, i);
-            if (typeof i?.etag == "string" && i.etag !== Pu && i.etag === s.etag) throw new Cu(S(2178, null), s, i);
+            if (s.isDirectory) throw new et(S(2178, null, this.resourceForError(e)), 0, i);
+            if (typeof i?.etag == "string" && i.etag !== Pu && i.etag === s.etag) throw new Cu(S(2179, null), s, i);
             return this.validateReadFileLimits(e, s.size, i), s
         }
         validateReadFileLimits(e, i, s) {
-            if (typeof s?.limits?.size == "number" && i > s.limits.size) throw new Ru(S(2179, null, this.resourceForError(e)), 7, i, s)
+            if (typeof s?.limits?.size == "number" && i > s.limits.size) throw new Ru(S(2180, null, this.resourceForError(e)), 7, i, s)
         }
         async canMove(e, i, s) {
             return this.doCanMoveCopy(e, i, "move", s)
@@ -25420,17 +25420,17 @@ alwaysApply: true
                     providerExtUri: l,
                     isPathCaseSensitive: u
                 } = this.getExtUri(e);
-                if (u || (a = l.isEqual(i, r)), a && n === "copy") throw new Error(S(2180, null, this.resourceForError(i), this.resourceForError(r)));
-                if (!a && l.isEqualOrParent(r, i)) throw new Error(S(2181, null, this.resourceForError(i), this.resourceForError(r)))
+                if (u || (a = l.isEqual(i, r)), a && n === "copy") throw new Error(S(2181, null, this.resourceForError(i), this.resourceForError(r)));
+                if (!a && l.isEqualOrParent(r, i)) throw new Error(S(2182, null, this.resourceForError(i), this.resourceForError(r)))
             }
             const c = await this.exists(r);
             if (c && !a) {
-                if (!o) throw new et(S(2182, null, this.resourceForError(i), this.resourceForError(r)), 4);
+                if (!o) throw new et(S(2183, null, this.resourceForError(i), this.resourceForError(r)), 4);
                 if (e === s) {
                     const {
                         providerExtUri: l
                     } = this.getExtUri(e);
-                    if (l.isEqualOrParent(i, r)) throw new Error(S(2183, null, this.resourceForError(i), this.resourceForError(r)))
+                    if (l.isEqualOrParent(i, r)) throw new Error(S(2184, null, this.resourceForError(i), this.resourceForError(r)))
                 }
             }
             return {
@@ -25467,7 +25467,7 @@ alwaysApply: true
                     s.push(r.basename(i)), i = r.dirname(i);
                     continue
                 }
-                if ((n.type & jt.Directory) === 0) throw new Error(S(2184, null, this.resourceForError(i)));
+                if ((n.type & jt.Directory) === 0) throw new Error(S(2185, null, this.resourceForError(i)));
                 break
             } catch (n) {
                 if (ya(n) !== Q.FileNotFound) throw n;
@@ -25493,19 +25493,19 @@ alwaysApply: true
         async doValidateDelete(e, i) {
             const s = this.throwIfFileSystemIsReadonly(await this.withProvider(e), e),
                 r = !!i?.useTrash;
-            if (r && !(s.capabilities & 4096)) throw new Error(S(2185, null, this.resourceForError(e)));
+            if (r && !(s.capabilities & 4096)) throw new Error(S(2186, null, this.resourceForError(e)));
             const n = i?.atomic;
-            if (n && !(s.capabilities & 65536)) throw new Error(S(2186, null, this.resourceForError(e)));
-            if (r && n) throw new Error(S(2187, null, this.resourceForError(e)));
+            if (n && !(s.capabilities & 65536)) throw new Error(S(2187, null, this.resourceForError(e)));
+            if (r && n) throw new Error(S(2188, null, this.resourceForError(e)));
             let o;
             try {
                 o = await s.stat(e)
             } catch {}
             if (o) this.throwIfFileIsReadonly(e, o);
-            else throw new et(S(2188, null, this.resourceForError(e)), 1);
+            else throw new et(S(2189, null, this.resourceForError(e)), 1);
             if (!!!i?.recursive) {
                 const c = await this.resolve(e);
-                if (c.isDirectory && Array.isArray(c.children) && c.children.length > 0) throw new Error(S(2189, null, this.resourceForError(e)))
+                if (c.isDirectory && Array.isArray(c.children) && c.children.length > 0) throw new Error(S(2190, null, this.resourceForError(e)))
             }
             return s
         }
@@ -25712,11 +25712,11 @@ alwaysApply: true
             await this.doWriteUnbuffered(s, r, void 0, n)
         }
         throwIfFileSystemIsReadonly(e, i) {
-            if (e.capabilities & 2048) throw new et(S(2190, null, this.resourceForError(i)), 6);
+            if (e.capabilities & 2048) throw new et(S(2191, null, this.resourceForError(i)), 6);
             return e
         }
         throwIfFileIsReadonly(e, i) {
-            if ((i.permissions ?? 0) & Er.Readonly) throw new et(S(2191, null, this.resourceForError(e)), 6)
+            if ((i.permissions ?? 0) & Er.Readonly) throw new et(S(2192, null, this.resourceForError(e)), 6)
         }
         resourceForError(e) {
             return e.scheme === ue.file ? e.fsPath : e.toString(!0)
@@ -26702,8 +26702,8 @@ var Ox = class jc extends N {
                 const o = this.toFilePath(e);
                 if (!s.create || !s.overwrite) {
                     if (await he.exists(o)) {
-                        if (!s.overwrite) throw gi(S(2195, null), Q.FileExists)
-                    } else if (!s.create) throw gi(S(2196, null), Q.FileNotFound)
+                        if (!s.overwrite) throw gi(S(2196, null), Q.FileExists)
+                    } else if (!s.create) throw gi(S(2197, null), Q.FileNotFound)
                 }
                 if (n = await this.open(e, {
                         create: !0,
@@ -26849,7 +26849,7 @@ var Ox = class jc extends N {
             if (r !== n) try {
                 await this.validateMoveCopy(e, i, "move", s.overwrite), await he.rename(r, n)
             } catch (o) {
-                throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(S(2197, null, Tt(r), Tt(hi(n)), o.toString()))), this.toFileSystemProviderError(o)
+                throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(S(2198, null, Tt(r), Tt(hi(n)), o.toString()))), this.toFileSystemProviderError(o)
             }
         }
         async copy(e, i, s) {
@@ -26860,7 +26860,7 @@ var Ox = class jc extends N {
                     preserveSymlinks: !0
                 })
             } catch (o) {
-                throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(S(2198, null, Tt(r), Tt(hi(n)), o.toString()))), this.toFileSystemProviderError(o)
+                throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(S(2199, null, Tt(r), Tt(hi(n)), o.toString()))), this.toFileSystemProviderError(o)
             }
         }
         async validateMoveCopy(e, i, s, r) {
@@ -26868,14 +26868,14 @@ var Ox = class jc extends N {
                 o = this.toFilePath(i);
             let a = !1;
             if (!!(this.capabilities & 1024) || (a = ra(n, o, !0)), a) {
-                if (s === "copy") throw gi(S(2199, null), Q.FileExists);
+                if (s === "copy") throw gi(S(2200, null), Q.FileExists);
                 if (s === "move") return
             }
             const l = await this.statIgnoreError(e);
-            if (!l) throw gi(S(2200, null), Q.FileNotFound);
+            if (!l) throw gi(S(2201, null), Q.FileNotFound);
             const u = await this.statIgnoreError(i);
             if (u) {
-                if (!r) throw gi(S(2201, null), Q.FileExists);
+                if (!r) throw gi(S(2202, null), Q.FileExists);
                 (l.type & jt.File) !== 0 && (u.type & jt.File) !== 0 || await this.delete(i, {
                     recursive: !0,
                     useTrash: !1,
@@ -27552,7 +27552,7 @@ var Ar = Kt,
             else {
                 const l = r0(n, r) ? " (Not Sent)" : "";
                 this.logger = this._register(s.createLogger(o, {
-                    name: S(2377, null, l),
+                    name: S(2378, null, l),
                     group: A9,
                     hidden: !0
                 }))
@@ -27635,9 +27635,9 @@ var ec = class {
 ec = __decorate([__param(1, be), __param(2, Se)], ec);
 
 function Jx() {
-    const t = S(2378, null, Ar.nameLong),
-        e = S(2379, null, "https://cursor.com/privacy", "https://cursor.com/security"),
-        i = Ct ? "" : S(2380, null);
+    const t = S(2379, null, Ar.nameLong),
+        e = S(2380, null, "https://cursor.com/privacy", "https://cursor.com/security"),
+        i = Ct ? "" : S(2381, null);
     return `
 ${t} ${e} ${i}
 `
@@ -27662,14 +27662,14 @@ Xx.registerConfiguration({
         "telemetry.feedback.enabled": {
             type: "boolean",
             default: !1,
-            description: S(2381, null)
+            description: S(2382, null)
         },
         [qu]: {
             type: "boolean",
-            markdownDescription: Ar.privacyStatementUrl ? S(2383, null, Ar.nameLong, Ar.privacyStatementUrl) : S(2382, null, Ar.nameLong),
+            markdownDescription: Ar.privacyStatementUrl ? S(2384, null, Ar.nameLong, Ar.privacyStatementUrl) : S(2383, null, Ar.nameLong),
             default: !0,
             restricted: !0,
-            markdownDeprecationMessage: S(2384, null, `\`#${Ta}#\``),
+            markdownDeprecationMessage: S(2385, null, `\`#${Ta}#\``),
             scope: 1,
             tags: ["usesOnlineServices", "telemetry"]
         }
@@ -27901,23 +27901,23 @@ function Zx() {
     e.registerConfiguration({
         id: "settingsSync",
         order: 30,
-        title: S(2767, null),
+        title: S(2768, null),
         type: "object",
         properties: {
             [Xh]: {
                 type: "boolean",
-                description: S(2768, null),
+                description: S(2769, null),
                 default: !0,
                 scope: 1,
                 tags: ["sync", "usesOnlineServices"]
             },
             "settingsSync.ignoredExtensions": {
                 type: "array",
-                markdownDescription: S(2769, null),
+                markdownDescription: S(2770, null),
                 items: [{
                     type: "string",
                     pattern: ym,
-                    errorMessage: S(2770, null)
+                    errorMessage: S(2771, null)
                 }],
                 default: [],
                 scope: 1,
@@ -27927,7 +27927,7 @@ function Zx() {
             },
             "settingsSync.ignoredSettings": {
                 type: "array",
-                description: S(2771, null),
+                description: S(2772, null),
                 default: [],
                 scope: 1,
                 $ref: t,
@@ -28586,7 +28586,7 @@ var ld = class extends En {
     constructor(e, i) {
         super(), this.logger = this._register(e.createLogger(z(i.logsHome, `${Ay}.log`), {
             id: Ay,
-            name: S(2772, null)
+            name: S(2773, null)
         }))
     }
     trace(e, ...i) {
@@ -28697,7 +28697,7 @@ var hd = class extends N {
     async readMachinesData(e) {
         this.userData = await this.readUserData(e);
         const i = this.parse(this.userData);
-        if (i.version !== Ws.VERSION) throw new Error(S(2773, null, this.productService.nameLong));
+        if (i.version !== Ws.VERSION) throw new Error(S(2774, null, this.productService.nameLong));
         return i
     }
     async writeMachinesData(e) {
@@ -28899,7 +28899,7 @@ var us = class extends N {
         return this.getRemoteUserData(i)
     }
     async performSync(e, i, s, r) {
-        if (e.syncData && e.syncData.version > this.version) throw new ke(S(2755, null, this.resource, this.version, e.syncData.version), "IncompatibleLocalContent", this.resource);
+        if (e.syncData && e.syncData.version > this.version) throw new ke(S(2756, null, this.resource, this.version, e.syncData.version), "IncompatibleLocalContent", this.resource);
         try {
             return await this.doSync(e, i, s, r)
         } catch (n) {
@@ -29127,7 +29127,7 @@ var us = class extends N {
         } catch (i) {
             this.logService.error(i)
         }
-        throw new ke(S(2756, null), "IncompatibleRemoteContent", this.resource)
+        throw new ke(S(2757, null), "IncompatibleRemoteContent", this.resource)
     }
     async getUserData(e) {
         const i = e ? {
@@ -30716,7 +30716,7 @@ var Cd = class extends hc {
             f = !1;
         if (n) {
             let m = a ? a.value.toString() : "[]";
-            if (m = m || "[]", this.hasErrors(m, !0)) throw new ke(S(2757, null), "LocalInvalidContent", this.resource);
+            if (m = m || "[]", this.hasErrors(m, !0)) throw new ke(S(2758, null), "LocalInvalidContent", this.resource);
             if (!o || o !== m || o !== n) {
                 this.logService.trace(`${this.syncResourceLogLabel}: Merging remote keybindings with local keybindings...`);
                 const v = await qy(m, n, o, c, this.userDataSyncUtilService);
@@ -30788,7 +30788,7 @@ var Cd = class extends hc {
             localChange: a,
             remoteChange: c
         } = s[0][1];
-        if (a === 0 && c === 0 && this.logService.info(`${this.syncResourceLogLabel}: No changes found during synchronizing keybindings.`), o !== null && (o = o.trim(), o = o || "[]", this.hasErrors(o, !0))) throw new ke(S(2758, null), "LocalInvalidContent", this.resource);
+        if (a === 0 && c === 0 && this.logService.info(`${this.syncResourceLogLabel}: No changes found during synchronizing keybindings.`), o !== null && (o = o.trim(), o = o || "[]", this.hasErrors(o, !0))) throw new ke(S(2759, null), "LocalInvalidContent", this.resource);
         if (a !== 0 && (this.logService.trace(`${this.syncResourceLogLabel}: Updating local keybindings...`), n && await this.backupLocal(this.toSyncContent(n.value.toString())), await this.updateLocalFileContent(o || "[]", n, r), this.logService.info(`${this.syncResourceLogLabel}: Updated local keybindings`)), c !== 0) {
             this.logService.trace(`${this.syncResourceLogLabel}: Updating remote keybindings...`);
             const l = this.toSyncContent(o || "[]", e.syncData?.content);
@@ -32012,7 +32012,7 @@ var xc = class extends hc {
         return Lt(e.map(i => by(i.manifest)).flat())
     }
     validateContent(e) {
-        if (this.hasErrors(e, !1)) throw new ke(S(2759, null), "LocalInvalidContent", this.resource)
+        if (this.hasErrors(e, !1)) throw new ke(S(2760, null), "LocalInvalidContent", this.resource)
     }
 };
 xc = __decorate([__param(2, re), __param(3, pe), __param(4, le), __param(5, vt), __param(6, Jt), __param(7, Te), __param(8, rc), __param(9, be), __param(10, It), __param(11, Le), __param(12, Bi), __param(13, xe)], xc);
@@ -36044,7 +36044,7 @@ var DS = "remote.tunnels.access",
     kS = DS + ".hostNameOverride",
     LS = DS + ".preventSleep",
     TS = "remoteTunnelService",
-    jC = S(2345, null),
+    jC = S(2346, null),
     ti, cf = class {
         static {
             ti = this
@@ -36471,7 +36471,7 @@ var DS = "remote.tunnels.access",
             } catch (s) {
                 this.logService.error(s)
             }
-            throw new ke(S(2774, null), "IncompatibleRemoteContent", i)
+            throw new ke(S(2775, null), "IncompatibleRemoteContent", i)
         }
         async getUserData(e, i, s) {
             const r = await this.userDataSyncStoreService.resolveResourceContent(e, i, s);
@@ -36693,7 +36693,7 @@ var FS = class extends KC {
             let e = "",
                 i = !1;
             const s = (l, u) => {
-                    u ? this._logger.error(l) : e += l, !this.environmentService.isBuilt && l.startsWith("   Compiling") && this.setTunnelStatus(Dt.connecting(S(2346, null)))
+                    u ? this._logger.error(l) : e += l, !this.environmentService.isBuilt && l.startsWith("   Compiling") && this.setTunnelStatus(Dt.connecting(S(2347, null)))
                 },
                 r = this.runCodeTunnelCommand("status", ["status"], s);
             this._tunnelProcess = r;
@@ -36720,7 +36720,7 @@ var FS = class extends KC {
             const n = this._mode.active ? this._mode.session : void 0;
             if (n && n.token) {
                 const l = n.token;
-                this.setTunnelStatus(Dt.connecting(S(2347, null, n.accountLabel, n.providerId)));
+                this.setTunnelStatus(Dt.connecting(S(2348, null, n.accountLabel, n.providerId)));
                 const u = (f, p) => {
                         f = f.replaceAll(l, "*".repeat(4)), s(f, p)
                     },
@@ -36736,7 +36736,7 @@ var FS = class extends KC {
                 }
             }
             const o = this._getTunnelName();
-            o ? this.setTunnelStatus(Dt.connecting(S(2348, null, o))) : this.setTunnelStatus(Dt.connecting(S(2349, null)));
+            o ? this.setTunnelStatus(Dt.connecting(S(2349, null, o))) : this.setTunnelStatus(Dt.connecting(S(2350, null)));
             const a = ["--accept-server-license-terms", "--log", fa(this._logger.getLevel())];
             o ? a.push("--name", o) : a.push("--random-name");
             let c = !1;
@@ -36750,7 +36750,7 @@ var FS = class extends KC {
                 this._logger.error(s), i = 1
             }
             if (i !== 0) {
-                const s = S(2350, null);
+                const s = S(2351, null);
                 return this._logger.warn(s), this.setTunnelStatus(Dt.connecting(s)), !1
             }
             return !0
@@ -37057,13 +37057,13 @@ var QC = class sp extends N {
         }
         async createAndRunSyncTask(e, i) {
             if (this.syncTask = await this.userDataSyncService.createSyncTask(this.manifest, e), i.isCancellationRequested) return;
-            if (this.manifest = this.syncTask.manifest, this.manifest === null && await this.userDataSyncService.hasPreviouslySynced()) throw this.hasSyncServiceChanged() ? await this.hasDefaultServiceChanged() ? new cs(S(2760, null), "DefaultServiceChanged") : new cs(S(2761, null), "ServiceChanged") : new cs(S(2762, null), "TurnedOff");
+            if (this.manifest = this.syncTask.manifest, this.manifest === null && await this.userDataSyncService.hasPreviouslySynced()) throw this.hasSyncServiceChanged() ? await this.hasDefaultServiceChanged() ? new cs(S(2761, null), "DefaultServiceChanged") : new cs(S(2762, null), "ServiceChanged") : new cs(S(2763, null), "TurnedOff");
             const s = this.storageService.get(vf, -1);
-            if (s && this.manifest && s !== this.manifest.session) throw this.hasSyncServiceChanged() ? await this.hasDefaultServiceChanged() ? new cs(S(2763, null), "DefaultServiceChanged") : new cs(S(2764, null), "ServiceChanged") : new cs(S(2765, null), "SessionExpired");
+            if (s && this.manifest && s !== this.manifest.session) throw this.hasSyncServiceChanged() ? await this.hasDefaultServiceChanged() ? new cs(S(2764, null), "DefaultServiceChanged") : new cs(S(2765, null), "ServiceChanged") : new cs(S(2766, null), "SessionExpired");
             const r = await this.userDataSyncMachinesService.getMachines(this.manifest || void 0);
             if (i.isCancellationRequested) return;
             const n = r.find(a => a.isCurrent);
-            if (n?.disabled) throw new cs(S(2766, null), "TurnedOff");
+            if (n?.disabled) throw new cs(S(2767, null), "TurnedOff");
             const o = new Date().getTime();
             if (await this.syncTask.run(), this.telemetryService.publicLog2("settingsSync:sync", {
                     duration: new Date().getTime() - o
@@ -38498,9 +38498,9 @@ async function o3() {
 import "assert";
 var ET = Gw(Hw(), 1),
     bT = {
-        o: S(1986, null),
-        e: S(1987, null),
-        t: S(1988, null)
+        o: S(1987, null),
+        e: S(1988, null),
+        t: S(1989, null)
     },
     a3 = {
         tunnel: {
@@ -38510,7 +38510,7 @@ var ET = Gw(Hw(), 1),
                 "cli-data-dir": {
                     type: "string",
                     args: "dir",
-                    description: S(1989, null)
+                    description: S(1990, null)
                 },
                 "disable-telemetry": {
                     type: "boolean"
@@ -38543,7 +38543,7 @@ var ET = Gw(Hw(), 1),
                 "cli-data-dir": {
                     type: "string",
                     args: "dir",
-                    description: S(1990, null)
+                    description: S(1991, null)
                 },
                 "disable-telemetry": {
                     type: "boolean"
@@ -38558,72 +38558,72 @@ var ET = Gw(Hw(), 1),
             cat: "o",
             alias: "d",
             args: ["file", "file"],
-            description: S(1991, null)
+            description: S(1992, null)
         },
         merge: {
             type: "boolean",
             cat: "o",
             alias: "m",
             args: ["path1", "path2", "base", "result"],
-            description: S(1992, null)
+            description: S(1993, null)
         },
         add: {
             type: "boolean",
             cat: "o",
             alias: "a",
             args: "folder",
-            description: S(1993, null)
+            description: S(1994, null)
         },
         remove: {
             type: "boolean",
             cat: "o",
             args: "folder",
-            description: S(1994, null)
+            description: S(1995, null)
         },
         goto: {
             type: "boolean",
             cat: "o",
             alias: "g",
             args: "file:line[:character]",
-            description: S(1995, null)
+            description: S(1996, null)
         },
         "new-window": {
             type: "boolean",
             cat: "o",
             alias: "n",
-            description: S(1996, null)
+            description: S(1997, null)
         },
         "reuse-window": {
             type: "boolean",
             cat: "o",
             alias: "r",
-            description: S(1997, null)
+            description: S(1998, null)
         },
         "suppress-popups-on-startup": {
             type: "boolean",
             cat: "o",
-            description: S(1998, null)
+            description: S(1999, null)
         },
         "web-worker-exthost": {
             type: "boolean",
             cat: "o",
-            description: S(1999, null)
+            description: S(2e3, null)
         },
         glass: {
             type: "boolean",
             cat: "o",
-            description: S(2e3, null)
+            description: S(2001, null)
         },
         classic: {
             type: "boolean",
             cat: "o",
-            description: S(2001, null)
+            description: S(2002, null)
         },
         wait: {
             type: "boolean",
             cat: "o",
             alias: "w",
-            description: S(2002, null)
+            description: S(2003, null)
         },
         waitMarkerFilePath: {
             type: "string"
@@ -38632,32 +38632,32 @@ var ET = Gw(Hw(), 1),
             type: "string",
             cat: "o",
             args: "locale",
-            description: S(2003, null)
+            description: S(2004, null)
         },
         "user-data-dir": {
             type: "string",
             cat: "o",
             args: "dir",
-            description: S(2004, null)
+            description: S(2005, null)
         },
         profile: {
             type: "string",
             cat: "o",
             args: "profileName",
-            description: S(2005, null)
+            description: S(2006, null)
         },
         help: {
             type: "boolean",
             cat: "o",
             alias: "h",
-            description: S(2006, null)
+            description: S(2007, null)
         },
         "extensions-dir": {
             type: "string",
             deprecates: ["extensionHomePath"],
             cat: "e",
             args: "dir",
-            description: S(2007, null)
+            description: S(2008, null)
         },
         "extensions-download-dir": {
             type: "string"
@@ -38668,84 +38668,84 @@ var ET = Gw(Hw(), 1),
         "list-extensions": {
             type: "boolean",
             cat: "e",
-            description: S(2008, null)
+            description: S(2009, null)
         },
         "show-versions": {
             type: "boolean",
             cat: "e",
-            description: S(2009, null)
+            description: S(2010, null)
         },
         category: {
             type: "string",
             allowEmptyValue: !0,
             cat: "e",
-            description: S(2010, null),
+            description: S(2011, null),
             args: "category"
         },
         "install-extension": {
             type: "string[]",
             cat: "e",
             args: "ext-id | path",
-            description: S(2011, null)
+            description: S(2012, null)
         },
         "pre-release": {
             type: "boolean",
             cat: "e",
-            description: S(2012, null)
+            description: S(2013, null)
         },
         "uninstall-extension": {
             type: "string[]",
             cat: "e",
             args: "ext-id",
-            description: S(2013, null)
+            description: S(2014, null)
         },
         "update-extensions": {
             type: "boolean",
             cat: "e",
-            description: S(2014, null)
+            description: S(2015, null)
         },
         "enable-proposed-api": {
             type: "string[]",
             allowEmptyValue: !0,
             cat: "e",
             args: "ext-id",
-            description: S(2015, null)
+            description: S(2016, null)
         },
         "add-mcp": {
             type: "string[]",
             cat: "o",
             args: "json",
-            description: S(2016, null)
+            description: S(2017, null)
         },
         version: {
             type: "boolean",
             cat: "t",
             alias: "v",
-            description: S(2017, null)
+            description: S(2018, null)
         },
         verbose: {
             type: "boolean",
             cat: "t",
             global: !0,
-            description: S(2018, null)
+            description: S(2019, null)
         },
         log: {
             type: "string[]",
             cat: "t",
             args: "level",
             global: !0,
-            description: S(2019, null)
+            description: S(2020, null)
         },
         status: {
             type: "boolean",
             alias: "s",
             cat: "t",
-            description: S(2020, null)
+            description: S(2021, null)
         },
         "prof-startup": {
             type: "boolean",
             cat: "t",
-            description: S(2021, null)
+            description: S(2022, null)
         },
         "prof-append-timers": {
             type: "string"
@@ -38769,18 +38769,18 @@ var ET = Gw(Hw(), 1),
             type: "boolean",
             deprecates: ["disableExtensions"],
             cat: "t",
-            description: S(2022, null)
+            description: S(2023, null)
         },
         "disable-extension": {
             type: "string[]",
             cat: "t",
             args: "ext-id",
-            description: S(2023, null)
+            description: S(2024, null)
         },
         sync: {
             type: "string",
             cat: "t",
-            description: S(2024, null),
+            description: S(2025, null),
             args: ["on | off"]
         },
         "inspect-extensions": {
@@ -38789,7 +38789,7 @@ var ET = Gw(Hw(), 1),
             deprecates: ["debugPluginHost"],
             args: "port",
             cat: "t",
-            description: S(2025, null)
+            description: S(2026, null)
         },
         "inspect-brk-extensions": {
             type: "string",
@@ -38797,22 +38797,22 @@ var ET = Gw(Hw(), 1),
             deprecates: ["debugBrkPluginHost"],
             args: "port",
             cat: "t",
-            description: S(2026, null)
+            description: S(2027, null)
         },
         "disable-lcd-text": {
             type: "boolean",
             cat: "t",
-            description: S(2027, null)
+            description: S(2028, null)
         },
         "disable-gpu": {
             type: "boolean",
             cat: "t",
-            description: S(2028, null)
+            description: S(2029, null)
         },
         "disable-chromium-sandbox": {
             type: "boolean",
             cat: "t",
-            description: S(2029, null)
+            description: S(2030, null)
         },
         sandbox: {
             type: "boolean"
@@ -38821,12 +38821,12 @@ var ET = Gw(Hw(), 1),
             type: "string",
             cat: "t",
             args: ["shell"],
-            description: S(2030, null)
+            description: S(2031, null)
         },
         telemetry: {
             type: "boolean",
             cat: "t",
-            description: S(2031, null)
+            description: S(2032, null)
         },
         remote: {
             type: "string",
@@ -39127,7 +39127,7 @@ var ET = Gw(Hw(), 1),
         chat: {
             type: "boolean",
             cat: "o",
-            description: S(2032, null)
+            description: S(2033, null)
         },
         _: {
             type: "string[]"
@@ -39160,12 +39160,12 @@ async function u3(t, e, i, s) {
         const c = t.getValue("application.shellEnvironmentResolutionTimeout");
         typeof c == "number" && (a = l3(c, 1, 120) * 1e3);
         const l = setTimeout(() => {
-            o.dispose(!0), n(new Error(S(2369, null)))
+            o.dispose(!0), n(new Error(S(2370, null)))
         }, a);
         try {
             r(await h3(e, o.token))
         } catch (u) {
-            !wi(u) && !o.token.isCancellationRequested ? n(new Error(S(2370, null, Qt(u)))) : r({})
+            !wi(u) && !o.token.isCancellationRequested ? n(new Error(S(2371, null, Qt(u)))) : r({})
         } finally {
             clearTimeout(l), o.dispose()
         }
@@ -39207,7 +39207,7 @@ async function h3(t, e) {
             const b = Buffer.concat(m).toString("utf8");
             t.trace("getUnixShellEnvironment#raw", b);
             const A = Buffer.concat(v).toString("utf8");
-            if (A.trim() && t.trace("getUnixShellEnvironment#stderr", A), w || x) return l(new Error(S(2371, null, w, x)));
+            if (A.trim() && t.trace("getUnixShellEnvironment#stderr", A), w || x) return l(new Error(S(2372, null, w, x)));
             const P = n.exec(b),
                 F = P ? P[1] : "{}";
             try {
@@ -39460,8 +39460,8 @@ var _3 = /^(?<version>\d+\.\d+\.\d+(-.*)?)(@(?<platform>.+))?$/,
             S3(e) ? (i = e.identifier.id.toLowerCase(), s = e.version, n = e.properties.isPreReleaseVersion, o = e.publisher.toLowerCase(), a = e.publisherDisplayName.toLowerCase(), r = e.properties.targetPlatform) : w3(e) ? (i = e.identifier.id.toLowerCase(), s = e.manifest.version, n = e.preRelease, o = e.manifest.publisher.toLowerCase(), a = e.publisherDisplayName?.toLowerCase(), r = e.targetPlatform) : (i = e.id.toLowerCase(), s = e.version ?? "*", r = e.targetPlatform ?? "universal", n = e.prerelease ?? !1, o = e.id.substring(0, e.id.indexOf(".")).toLowerCase(), a = e.publisherDisplayName?.toLowerCase());
             const c = C.parse(`command:workbench.action.openSettings?${encodeURIComponent(JSON.stringify({query:`@id:${pu}`}))}`).toString(),
                 l = this._allowedExtensionsConfigValue[i],
-                u = new Vs(S(2064, null, c));
-            if (!ot(l)) return si(l) ? l ? !0 : u : l === "stable" && n ? new Vs(S(2065, null, c)) : s !== "*" && Array.isArray(l) && !l.some(p => {
+                u = new Vs(S(2065, null, c));
+            if (!ot(l)) return si(l) ? l ? !0 : u : l === "stable" && n ? new Vs(S(2066, null, c)) : s !== "*" && Array.isArray(l) && !l.some(p => {
                 const g = _3.exec(p);
                 if (g && g.groups) {
                     const {
@@ -39471,10 +39471,10 @@ var _3 = /^(?<version>\d+\.\d+\.\d+(-.*)?)(@(?<platform>.+))?$/,
                     return !(v !== s || r !== "universal" && m && r !== m)
                 }
                 return !1
-            }) ? new Vs(S(2066, null, s, c)) : !0;
+            }) ? new Vs(S(2067, null, s, c)) : !0;
             const h = a && this.publisherOrgs.includes(a) ? a : o,
                 f = this._allowedExtensionsConfigValue[h];
-            return ot(f) ? this._allowedExtensionsConfigValue["*"] === !0 ? !0 : u : si(f) ? f ? !0 : new Vs(S(2067, null, h, c)) : f === "stable" && n ? new Vs(S(2068, null, h, c)) : !0
+            return ot(f) ? this._allowedExtensionsConfigValue["*"] === !0 ? !0 : u : si(f) ? f ? !0 : new Vs(S(2068, null, h, c)) : f === "stable" && n ? new Vs(S(2069, null, h, c)) : !0
         }
     };
 zf = __decorate([__param(0, Se), __param(1, be)], zf);
@@ -39858,6 +39858,6 @@ export {
     aw as main
 };
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e696fa8ae574d6a40e0f1dbf74bd7d823f0b0d0/core/vs/code/electron-utility/sharedProcess/sharedProcessMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/code/electron-utility/sharedProcess/sharedProcessMain.js.map
 
-//# debugId=56fd39b9-789e-5df6-9367-a7f76d2ec66f
+//# debugId=f7aa41a7-c91a-553a-9569-19ccb33793a8

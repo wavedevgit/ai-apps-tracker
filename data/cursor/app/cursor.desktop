@@ -12,7 +12,7 @@ MimeType=application/x-cursor-workspace;
 Actions=new-empty-window;
 Keywords=cursor;
 
-X-AppImage-Version=3.0.6
+X-AppImage-Version=3.0.9
 
 [Desktop Action new-empty-window]
 Name=New Empty Window

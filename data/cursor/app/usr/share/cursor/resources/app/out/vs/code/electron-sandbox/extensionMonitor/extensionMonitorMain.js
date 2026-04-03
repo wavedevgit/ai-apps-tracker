@@ -7934,7 +7934,7 @@ var rs;
     e.fromJSONObject = r
 })(rs || (rs = {}));
 var ul = /^([\w_-]+)$/,
-    dl = ut(2672, null),
+    dl = ut(2673, null),
     hl = class extends Be {
         constructor() {
             super(), this._onDidChange = this._register(new Z), this.onDidChange = this._onDidChange.event, this.iconSchema = {
@@ -7944,13 +7944,13 @@ var ul = /^([\w_-]+)$/,
                         properties: {
                             fontId: {
                                 type: "string",
-                                description: ut(2673, null),
+                                description: ut(2674, null),
                                 pattern: ul.source,
                                 patternErrorMessage: dl
                             },
                             fontCharacter: {
                                 type: "string",
-                                description: ut(2674, null)
+                                description: ut(2675, null)
                             }
                         },
                         additionalProperties: !1,
@@ -8065,9 +8065,9 @@ var os = new Ki(() => ss.notifySchemaChanged(ns), 200);
 Je.onDidChange(() => {
     os.isScheduled() || os.schedule()
 });
-var Jc = O1("widget-close", Ee.close, ut(2675, null)),
-    e4 = O1("goto-previous-location", Ee.arrowUp, ut(2676, null)),
-    t4 = O1("goto-next-location", Ee.arrowDown, ut(2677, null)),
+var Jc = O1("widget-close", Ee.close, ut(2676, null)),
+    e4 = O1("goto-previous-location", Ee.arrowUp, ut(2677, null)),
+    t4 = O1("goto-next-location", Ee.arrowDown, ut(2678, null)),
     r4 = Ne.modify(Ee.sync, "spin"),
     i4 = Ne.modify(Ee.loading, "spin");
 
@@ -8502,6 +8502,6 @@ export {
     Tl as startup
 }; /*! @license DOMPurify 3.1.7 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.1.7/LICENSE */
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e696fa8ae574d6a40e0f1dbf74bd7d823f0b0d0/core/vs/code/electron-sandbox/extensionMonitor/extensionMonitorMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/code/electron-sandbox/extensionMonitor/extensionMonitorMain.js.map
 
 //# debugId=c180a542-a914-5a91-8946-6b522ebe7eaa
