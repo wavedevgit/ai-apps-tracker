@@ -1,0 +1,180 @@
+#!/usr/bin/env sh
+#
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License. See License.txt in the project root for license information.
+
+find_cursor_cli() {
+	# Clear the output variables
+	CURSOR_CLI=""
+	CURSOR_CLI_MODE=""
+
+	# when run in remote terminal, use the remote cli
+	if [ -n "$VSCODE_IPC_HOOK_CLI" ]; then
+		REMOTE_CLI="$(which -a 'cursor' | grep /remote-cli/)"
+		if [ -n "$REMOTE_CLI" ]; then
+			CURSOR_CLI="$REMOTE_CLI"
+			CURSOR_CLI_MODE="remote"
+			return 0
+		fi
+	fi
+
+	# Otherwise, find the electron app
+	if [ ! -L "$0" ]; then
+		# if path is not a symlink, find relatively
+		VSCODE_PATH="$(dirname "$0")/.."
+	else
+		if command -v readlink >/dev/null; then
+			# if readlink exists, follow the symlink and find relatively
+			VSCODE_PATH="$(dirname "$(readlink -f "$0")")/.."
+		else
+			# else use the standard install location
+			VSCODE_PATH="/usr/share/cursor"
+		fi
+	fi
+
+	ELECTRON="$VSCODE_PATH/cursor"
+	CLI="$VSCODE_PATH/resources/app/out/cli.js"
+
+	# Check if the electron app and CLI script exist
+	if [ -x "$ELECTRON" ] && [ -f "$CLI" ]; then
+		CURSOR_CLI="ELECTRON_RUN_AS_NODE=1 \"$ELECTRON\" \"$CLI\""
+		CURSOR_CLI_MODE="local"
+		return 0
+	else
+		# Electron app not found
+		return 1
+	fi
+}
+
+use_cursor_cli() {
+	if [ -n "$CURSOR_CLI" ]; then
+		# Use the CLI found by find_cursor_cli.
+		# Avoid eval so arguments with spaces (e.g. "foo bar.sh") are preserved.
+		if [ "$CURSOR_CLI_MODE" = "remote" ]; then
+			exec "$CURSOR_CLI" "$@"
+		else
+			# Local mode: ELECTRON and CLI are set by find_cursor_cli
+			ELECTRON_RUN_AS_NODE=1 "$ELECTRON" "$CLI" "$@"
+		fi
+		exit $?
+	else
+		echo "Error: Cursor CLI not found. Please install Cursor properly." 1>&2
+		exit 1
+	fi
+}
+
+# test that VSCode wasn't installed inside WSL
+if grep -qi Microsoft /proc/version && [ -z "$DONT_PROMPT_WSL_INSTALL" ]; then
+	echo "To use Cursor with the Windows Subsystem for Linux, please install Cursor in Windows and uninstall the Linux version in WSL. You can then use the \`cursor\` command in a WSL terminal just as you would in a normal command prompt." 1>&2
+	printf "Do you want to continue anyway? [y/N] " 1>&2
+	read -r YN
+	YN=$(printf '%s' "$YN" | tr '[:upper:]' '[:lower:]')
+	case "$YN" in
+		y | yes )
+		;;
+		* )
+			exit 1
+		;;
+	esac
+	echo "To no longer see this prompt, start Cursor with the environment variable DONT_PROMPT_WSL_INSTALL defined." 1>&2
+fi
+
+# If root, ensure that --user-data-dir or --file-write is specified
+if [ "$(id -u)" = "0" ]; then
+	for i in "$@"
+	do
+		case "$i" in
+			--user-data-dir | --user-data-dir=* | --file-write | tunnel | serve-web )
+				CAN_LAUNCH_AS_ROOT=1
+			;;
+		esac
+	done
+	if [ -z "$CAN_LAUNCH_AS_ROOT" ]; then
+		echo "You are trying to start Cursor as a super user which isn't recommended. If this was intended, please add the argument \`--no-sandbox\` and specify an alternate user data directory using the \`--user-data-dir\` argument." 1>&2
+		exit 1
+	fi
+fi
+
+# Main execution
+export VSCODE_NODE_OPTIONS=$NODE_OPTIONS
+export VSCODE_NODE_REPL_EXTERNAL_MODULE=$NODE_REPL_EXTERNAL_MODULE
+unset NODE_OPTIONS
+unset NODE_REPL_EXTERNAL_MODULE
+
+# Check if cursor-agent is blocked but user is trying to use it
+if [ "$1" = "agent" ] && [ "$CURSOR_CLI_BLOCK_CURSOR_AGENT" = "true" ]; then
+	echo "cursor-agent is blocked in your environment due to the CURSOR_CLI_BLOCK_CURSOR_AGENT environment variable" 1>&2
+	echo "Please remove the block to use cursor-agent command." 1>&2
+	exit 1
+fi
+
+if ! find_cursor_cli && [ "$1" != "agent" ]; then
+	echo "Error: Cursor CLI not found. Please install Cursor properly." 1>&2
+	exit 1
+fi
+
+# Export variables for compatibility
+# These variables are needed even in cursor-agent, to know that we are routing from 'cursor' command
+if [ -n "$CURSOR_CLI" ]; then
+	export CURSOR_CLI
+	export CURSOR_CLI_MODE
+fi
+
+
+# Simplified routing logic
+if [ "$1" = "editor" ]; then
+	# Route to Cursor CLI, removing the 'editor' argument
+	# cursor editor is equivalent to cursor, just explicitly stating that
+	# editor is being used (instead of agent being used)
+	shift
+	use_cursor_cli "$@"
+elif [ "$1" = "agent" ] && [ "$CURSOR_CLI_BLOCK_CURSOR_AGENT" != "true" ]; then
+	# Route to cursor-agent
+	if ! command -v ~/.local/bin/cursor-agent >/dev/null 2>&1; then
+		# Check if bash is available for installation
+		if command -v bash >/dev/null 2>&1; then
+			echo "cursor-agent not found, installing via https://cursor.com/install ..."
+			curl -sS https://cursor.com/install | bash >/dev/null 2>&1
+			# Remove the previous log line from the terminal output
+			if command -v tput >/dev/null 2>&1; then
+				tput cuu1 && tput el
+			fi
+		fi
+		# Check if installation succeeded
+		if ! command -v ~/.local/bin/cursor-agent >/dev/null 2>&1; then
+			echo "Error: Could not install cursor-agent." 1>&2
+			echo "Please install manually by running 'curl -sS https://cursor.com/install | bash >/dev/null'" 1>&2
+			echo "" 1>&2
+			echo "To open IDE, use 'cursor' or 'cursor editor' command." 1>&2
+			exit 1
+		fi
+	fi
+
+	# Check current cursor-agent version meets minimum version requirement
+	OUTPUT=$({ ~/.local/bin/cursor-agent --min-version=2025.10.01 status; } 2>&1)
+	EXIT_CODE=$?
+
+	# Update and retry if version is too old or doesn't support --min-version
+	if { [ "$EXIT_CODE" -eq 2 ] || { [ "$EXIT_CODE" -eq 1 ] && echo "$OUTPUT" | grep -qi "unknown option"; }; }; then
+		echo "cursor-agent version is outdated, updating..."
+		~/.local/bin/cursor-agent update >/dev/null 2>&1
+		# Remove the previous log line from the terminal output
+		if command -v tput >/dev/null 2>&1; then
+			tput cuu1 && tput el
+		fi
+		# Check new version to see if minimum version requirement is met
+		OUTPUT2=$({ ~/.local/bin/cursor-agent --min-version=2025.10.01 status; } 2>&1)
+		EXIT_CODE2=$?
+		if { [ "$EXIT_CODE2" -eq 2 ] || { [ "$EXIT_CODE2" -eq 1 ] && echo "$OUTPUT2" | grep -qi "unknown option"; }; }; then
+			echo "Error: cursor-agent version is too old. Please update with 'cursor-agent update'" 1>&2
+			exit 1
+		fi
+	fi
+
+	# Version is sufficient, run cursor-agent
+	export CURSOR_CLI_COMPAT=1
+	exec ~/.local/bin/cursor-agent "$@"
+else
+	# Route to Cursor CLI
+	use_cursor_cli "$@"
+fi
