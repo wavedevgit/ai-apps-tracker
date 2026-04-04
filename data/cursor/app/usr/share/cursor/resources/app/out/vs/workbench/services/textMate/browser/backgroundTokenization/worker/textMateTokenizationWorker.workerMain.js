@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "47a91347-6020-5592-92f6-6898e8993e8b")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5c040658-c697-5b59-ad8d-d011c44617b6")
     } catch (e) {}
 }();
 var Et = function(e, t) {
@@ -8482,6 +8482,6 @@ function Mo(e) {
 }
 Mo(No);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.workerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/a80ff7dfcaa45d7750f6e30be457261379c29b00/core/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.workerMain.js.map
 
-//# debugId=47a91347-6020-5592-92f6-6898e8993e8b
+//# debugId=5c040658-c697-5b59-ad8d-d011c44617b6

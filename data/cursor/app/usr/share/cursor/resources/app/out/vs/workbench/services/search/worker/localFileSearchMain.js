@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "f01a1b5a-c61a-547b-8c9c-fcfb5ee908ae")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "605006ff-b7eb-5e54-b983-6c5b6ded1390")
     } catch (e) {}
 }();
 var te = function(e, t) {
@@ -5015,6 +5015,6 @@ function Li(e, t, r) {
 }
 fn(bi);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/workbench/services/search/worker/localFileSearchMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/a80ff7dfcaa45d7750f6e30be457261379c29b00/core/vs/workbench/services/search/worker/localFileSearchMain.js.map
 
-//# debugId=f01a1b5a-c61a-547b-8c9c-fcfb5ee908ae
+//# debugId=605006ff-b7eb-5e54-b983-6c5b6ded1390

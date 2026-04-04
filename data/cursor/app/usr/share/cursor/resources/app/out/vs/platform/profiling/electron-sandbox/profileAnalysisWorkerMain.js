@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "d48e91c2-2cba-5df0-a8ef-9d0329f44267")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "9afba6b6-d834-5a0a-8438-f07890f036a8")
     } catch (e) {}
 }();
 var O1 = function(e, t) {
@@ -4165,6 +4165,6 @@ function or(e) {
 }
 or(Q2);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/platform/profiling/electron-sandbox/profileAnalysisWorkerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/a80ff7dfcaa45d7750f6e30be457261379c29b00/core/vs/platform/profiling/electron-sandbox/profileAnalysisWorkerMain.js.map
 
-//# debugId=d48e91c2-2cba-5df0-a8ef-9d0329f44267
+//# debugId=9afba6b6-d834-5a0a-8438-f07890f036a8

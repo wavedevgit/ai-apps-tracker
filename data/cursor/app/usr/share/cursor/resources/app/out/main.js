@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "75b48edc-4610-58d6-bd9c-328677f88ffc")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4791cd4e-3c58-57b3-be23-6f71c8329810")
     } catch (e) {}
 }();
 var Rg = function(t, e) {
@@ -49501,7 +49501,7 @@ var M0 = mG(import.meta.url),
 Qa.BUILD_INSERT_PRODUCT_CONFIGURATION && (Qa = M0("../product.json"));
 var T0 = {
     "name": "Cursor",
-    "version": "3.0.9",
+    "version": "3.0.12",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -50109,6 +50109,6 @@ function az(t) {
     return e ? e.toLowerCase() : typeof t?.locale == "string" ? t.locale.toLowerCase() : void 0
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/a80ff7dfcaa45d7750f6e30be457261379c29b00/core/main.js.map
 
-//# debugId=75b48edc-4610-58d6-bd9c-328677f88ffc
+//# debugId=4791cd4e-3c58-57b3-be23-6f71c8329810

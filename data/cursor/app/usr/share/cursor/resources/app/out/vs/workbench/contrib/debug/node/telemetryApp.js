@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "6802c0cc-27fe-5c62-8ce7-5c0c36aeb5d9")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "42487138-c356-5511-a2a9-8ba609f7cbe3")
     } catch (e) {}
 }();
 var ue = function(e, t) {
@@ -5124,6 +5124,6 @@ var Is = new Es([jt]),
     Ts = new Ls("telemetry");
 Ts.registerChannel("telemetryAppender", Is);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/workbench/contrib/debug/node/telemetryApp.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/a80ff7dfcaa45d7750f6e30be457261379c29b00/core/vs/workbench/contrib/debug/node/telemetryApp.js.map
 
-//# debugId=6802c0cc-27fe-5c62-8ce7-5c0c36aeb5d9
+//# debugId=42487138-c356-5511-a2a9-8ba609f7cbe3

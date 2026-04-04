@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "02fbeb2b-f621-512c-a221-f5141051a918")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "328a1d98-84e2-5498-bee6-ba839889a9e6")
     } catch (e) {}
 }();
 var Vt = function(e, t) {
@@ -7566,6 +7566,6 @@ zs(process) ? x1 = new ko : x1 = new xo("watcher");
 var wa = new _a;
 x1.registerChannel("watcher", w1.fromService(wa, new re));
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/vs/platform/files/node/watcher/watcherMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/a80ff7dfcaa45d7750f6e30be457261379c29b00/core/vs/platform/files/node/watcher/watcherMain.js.map
 
-//# debugId=02fbeb2b-f621-512c-a221-f5141051a918
+//# debugId=328a1d98-84e2-5498-bee6-ba839889a9e6

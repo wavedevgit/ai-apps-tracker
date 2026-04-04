@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "cee35a11-fb8a-576b-913f-c9d9fa7c8759")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "51285372-589a-504f-bd3e-f4c012e7f440")
     } catch (e) {}
 }();
 var u1 = function(e, t) {
@@ -7215,7 +7215,7 @@ var hr = a0(import.meta.url),
 Ze.BUILD_INSERT_PRODUCT_CONFIGURATION && (Ze = hr("../product.json"));
 var dr = {
     "name": "Cursor",
-    "version": "3.0.9",
+    "version": "3.0.12",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -7477,6 +7477,6 @@ var w0 = Q2(Y2(import.meta.url)),
     });
 process.env.VSCODE_NLS_CONFIG = JSON.stringify(b0), r0(pr), process.env.VSCODE_CLI = "1", await g0(), await Promise.resolve().then(() => (J2(), yn));
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e276db8a03af947eafb2d10241e2de17806c20/core/cli.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/a80ff7dfcaa45d7750f6e30be457261379c29b00/core/cli.js.map
 
-//# debugId=cee35a11-fb8a-576b-913f-c9d9fa7c8759
+//# debugId=51285372-589a-504f-bd3e-f4c012e7f440
