@@ -1,0 +1,74 @@
+profile cursor_sandbox /usr/share/cursor/resources/app/resources/helpers/cursorsandbox {
+  file,
+  /** ix,
+
+  capability sys_admin,
+  capability net_admin,
+  capability chown,
+  capability setuid,
+  capability setgid,
+  capability setpcap,
+  network unix,
+  network inet stream,
+  network inet6 stream,
+  network netlink raw,
+
+  ## Uncomment this on AppArmor 4.0
+  #userns,
+
+  mount,
+  remount,
+  umount,
+
+  /usr/share/cursor/resources/app/resources/helpers/cursorsandbox mr,
+}
+
+profile cursor_sandbox_remote /home/*/.cursor-server/bin/*/*/resources/helpers/cursorsandbox {
+  file,
+  /** ix,
+
+  capability sys_admin,
+  capability net_admin,
+  capability chown,
+  capability setuid,
+  capability setgid,
+  capability setpcap,
+  network unix,
+  network inet stream,
+  network inet6 stream,
+  network netlink raw,
+
+  ## Uncomment this on AppArmor 4.0
+  #userns,
+
+  mount,
+  remount,
+  umount,
+
+  /home/*/.cursor-server/bin/*/*/resources/helpers/cursorsandbox mr,
+}
+
+profile cursor_sandbox_agent_cli /home/*/.local/share/cursor-agent/versions/*/cursorsandbox {
+  file,
+  /** ix,
+
+  capability sys_admin,
+  capability net_admin,
+  capability chown,
+  capability setuid,
+  capability setgid,
+  capability setpcap,
+  network unix,
+  network inet stream,
+  network inet6 stream,
+  network netlink raw,
+
+  ## Uncomment this on AppArmor 4.0
+  #userns,
+
+  mount,
+  remount,
+  umount,
+
+  /home/*/.local/share/cursor-agent/versions/*/cursorsandbox mr,
+}
