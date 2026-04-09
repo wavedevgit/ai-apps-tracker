@@ -49734,7 +49734,7 @@ var L0 = cz(import.meta.url),
 Za.BUILD_INSERT_PRODUCT_CONFIGURATION && (Za = L0("../product.json"));
 var O0 = {
     "name": "Cursor",
-    "version": "3.0.13",
+    "version": "3.0.16",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -50342,6 +50342,6 @@ function Zz(t) {
     return e ? e.toLowerCase() : typeof t?.locale == "string" ? t.locale.toLowerCase() : void 0
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/48a15759f53cd5fc9b5c20936ad7d79847d914b0/core/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/475871d112608994deb2e3065dfb7c6b0baa0c50/core/main.js.map
 
 //# debugId=38098516-e67c-557b-b7a3-12fd005c05be

@@ -7215,7 +7215,7 @@ var hr = a0(import.meta.url),
 Ze.BUILD_INSERT_PRODUCT_CONFIGURATION && (Ze = hr("../product.json"));
 var dr = {
     "name": "Cursor",
-    "version": "3.0.13",
+    "version": "3.0.16",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -7477,6 +7477,6 @@ var w0 = Q2(Y2(import.meta.url)),
     });
 process.env.VSCODE_NLS_CONFIG = JSON.stringify(b0), r0(pr), process.env.VSCODE_CLI = "1", await g0(), await Promise.resolve().then(() => (J2(), yn));
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/48a15759f53cd5fc9b5c20936ad7d79847d914b0/core/cli.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/475871d112608994deb2e3065dfb7c6b0baa0c50/core/cli.js.map
 
 //# debugId=bd3b0a6b-cb0e-52de-a29a-7c04fa222a30
