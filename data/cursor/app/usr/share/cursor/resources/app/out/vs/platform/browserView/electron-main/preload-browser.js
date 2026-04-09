@@ -1,6 +1,23 @@
+! function() {
+    try {
+        var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
+            n = (new e.Error).stack;
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "e6cff67d-afad-5139-a909-7be5de15dad2")
+    } catch (e) {}
+}();
+(function() {
+    "use strict";
+    const {
+        ipcRenderer: o,
+        contextBridge: a,
+        webFrame: i
+    } = require("electron"), s = [".okta.com", ".okta-emea.com", ".oktapreview.com", ".duosecurity.com", ".duo.com", ".login.microsoftonline.com", ".onelogin.com", ".auth0.com", ".pingidentity.com", ".pingone.com", ".rippling.com"];
 
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e6cff67d-afad-5139-a909-7be5de15dad2")}catch(e){}}();
-(function(){"use strict";const{ipcRenderer:o,contextBridge:a,webFrame:i}=require("electron"),s=[".okta.com",".okta-emea.com",".oktapreview.com",".duosecurity.com",".duo.com",".login.microsoftonline.com",".onelogin.com",".auth0.com",".pingidentity.com",".pingone.com",".rippling.com"];function l(){try{const e=window.location.hostname.toLowerCase();if(!s.some(n=>e===n.slice(1)||e.endsWith(n)))return;i.executeJavaScript(`
+    function l() {
+        try {
+            const e = window.location.hostname.toLowerCase();
+            if (!s.some(n => e === n.slice(1) || e.endsWith(n))) return;
+            i.executeJavaScript(`
 				(function() {
 					if (typeof navigator === 'undefined' || !navigator.permissions || !navigator.permissions.query) {
 						return;
@@ -26,7 +43,15 @@
 						return originalQuery(descriptor);
 					};
 				})();
-			`)}catch(e){console.error("[BrowserView Preload] Failed to inject local network access polyfill:",e)}}function c(){try{i.executeJavaScript(`
+			`)
+        } catch (e) {
+            console.error("[BrowserView Preload] Failed to inject local network access polyfill:", e)
+        }
+    }
+
+    function c() {
+        try {
+            i.executeJavaScript(`
 				(function() {
 					if (typeof navigator === 'undefined' || !navigator.credentials) {
 						return;
@@ -193,7 +218,34 @@
 						}
 					}
 				})();
-			`)}catch(e){console.error("[BrowserView Preload] Failed to inject WebAuthn polyfill:",e)}}l(),c();const u={send:(e,...r)=>{(e==="focus-url-bar"||e==="element-selected"||e==="element-updated"||e==="element-picked"||e==="keyboard-shortcut"||e==="area-screenshot-selected"||e==="style-changes-confirmed"||e==="css-inspector-style-change"||e==="passkey-request-stalled")&&o.send("vscode:browser-view-message",e,...r)}};try{a.exposeInMainWorld("cursorBrowser",u)}catch(e){console.error("[BrowserView Preload] Failed to expose bridge:",e)}window.addEventListener("DOMContentLoaded",()=>{document.addEventListener("click",e=>{if(!e.altKey)return;const r=e.target.closest("a[href]");if(!r)return;const t=r.href;!t||t.startsWith("javascript:")||(e.preventDefault(),e.stopPropagation(),o.send("vscode:browser-view-message","open-url-side-group",{url:t}))},!0)})})();
+			`)
+        } catch (e) {
+            console.error("[BrowserView Preload] Failed to inject WebAuthn polyfill:", e)
+        }
+    }
+    l(), c();
+    const u = {
+        send: (e, ...r) => {
+            (e === "focus-url-bar" || e === "element-selected" || e === "element-updated" || e === "element-picked" || e === "keyboard-shortcut" || e === "area-screenshot-selected" || e === "style-changes-confirmed" || e === "css-inspector-style-change" || e === "passkey-request-stalled") && o.send("vscode:browser-view-message", e, ...r)
+        }
+    };
+    try {
+        a.exposeInMainWorld("cursorBrowser", u)
+    } catch (e) {
+        console.error("[BrowserView Preload] Failed to expose bridge:", e)
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+        document.addEventListener("click", e => {
+            if (!e.altKey) return;
+            const r = e.target.closest("a[href]");
+            if (!r) return;
+            const t = r.href;
+            !t || t.startsWith("javascript:") || (e.preventDefault(), e.stopPropagation(), o.send("vscode:browser-view-message", "open-url-side-group", {
+                url: t
+            }))
+        }, !0)
+    })
+})();
 
 //# sourceMappingURL=http://go/sourcemap/sourcemaps/48a15759f53cd5fc9b5c20936ad7d79847d914b0/core/vs/platform/browserView/electron-main/preload-browser.js.map
 
