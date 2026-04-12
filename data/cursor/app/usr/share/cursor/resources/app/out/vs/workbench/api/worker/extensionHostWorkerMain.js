@@ -10714,7 +10714,6 @@ var Lgt = {
             return T9e.create(s, e)
         }
         static
-
         function(s, e) {
             return f9e.create(s, e)
         }
