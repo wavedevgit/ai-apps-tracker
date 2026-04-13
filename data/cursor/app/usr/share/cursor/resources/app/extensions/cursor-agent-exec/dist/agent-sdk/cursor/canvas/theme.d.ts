@@ -1,25 +1,30 @@
-export type { CanvasTokens } from "./canvas-tokens.js";
-export { canvasTokens } from "./canvas-tokens.js";
+export type { CanvasPalette, CanvasTokens } from "./canvas-tokens.js";
+export { canvasPaletteDark, canvasPaletteLight, canvasTokens, canvasTokensLight, } from "./canvas-tokens.js";
 /** Typography presets used by the built-in `cursor/canvas` components. */
 export declare const canvasTypography: {
     readonly h1: {
-        readonly fontSize: "22px";
-        readonly lineHeight: "26px";
-        readonly fontWeight: 600;
+        readonly fontSize: "24px";
+        readonly lineHeight: "30px";
+        readonly fontWeight: 590;
     };
     readonly h2: {
+        readonly fontSize: "18px";
+        readonly lineHeight: "24px";
+        readonly fontWeight: 590;
+    };
+    readonly h3: {
         readonly fontSize: "16px";
-        readonly lineHeight: "21px";
-        readonly fontWeight: 600;
+        readonly lineHeight: "22px";
+        readonly fontWeight: 590;
     };
     readonly body: {
-        readonly fontSize: "13px";
-        readonly lineHeight: "18px";
+        readonly fontSize: "14px";
+        readonly lineHeight: "20px";
         readonly fontWeight: 400;
     };
     readonly small: {
-        readonly fontSize: "11px";
-        readonly lineHeight: "14px";
+        readonly fontSize: "12px";
+        readonly lineHeight: "16px";
         readonly fontWeight: 400;
     };
 };

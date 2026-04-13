@@ -1763,15 +1763,38 @@
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.getBackendUrlAndToken = function() {
+                }), t.getBackendUrlAndToken = l, t.getBackendUrlAndTokenOrWait = function() {
+                    const e = l();
+                    return e ? Promise.resolve(e) : (c ?? (c = (Promise.resolve(i.cursor.triggerRefreshCursorAuthToken()).catch(() => {}), new Promise((e, t) => {
+                        const A = [],
+                            r = setTimeout(() => {
+                                n(), t(new Error("Timed out waiting for Cursor backend credentials"))
+                            }, a),
+                            n = () => {
+                                clearTimeout(r);
+                                for (const e of A) e.dispose()
+                            },
+                            o = () => {
+                                const t = l();
+                                t && (n(), e(t))
+                            };
+                        A.push(i.cursor.onDidChangeCursorAuthToken(o), i.cursor.onDidChangeCursorCreds(o)), o()
+                    })).finally(() => {
+                        c = void 0
+                    })), c)
+                };
+                const i = s(A(1398)),
+                    a = 3e4;
+                let c;
+
+                function l() {
                     const e = i.cursor.getCursorCreds()?.backendUrl,
                         t = i.cursor.getCursorAuthToken();
-                    return e && t ? {
+                    if (e && t) return {
                         backendUrl: e,
                         accessToken: t
-                    } : void 0
-                };
-                const i = s(A(1398))
+                    }
+                }
             },
             659: (e, t, A) => {
                 "use strict";
@@ -11484,6 +11507,12 @@
                             name: "CheckSessionToken",
                             I: r.CheckSessionTokenRequest,
                             O: r.CheckSessionTokenResponse,
+                            kind: n.MethodKind.Unary
+                        },
+                        createMobileSession: {
+                            name: "CreateMobileSession",
+                            I: r.CreateMobileSessionRequest,
+                            O: r.CreateMobileSessionResponse,
                             kind: n.MethodKind.Unary
                         },
                         listActiveSessions: {
@@ -24758,7 +24787,7 @@
                 "use strict";
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.ListJwtPublicKeysResponse = t.JwtPublicKey = t.ListJwtPublicKeysRequest = t.SetPrivacyModeResponse = t.SetPrivacyModeRequest = t.SwitchCmdKFractionResponse = t.SwitchCmdKFractionRequest = t.DownloadUpdateResponse = t.DownloadUpdateRequest = t.EmailValidResponse = t.EmailValidRequest = t.GetUserMetaResponse = t.GetUserMetaRequest = t.GetEmailResponse_SignUpType = t.GetEmailResponse = t.GetEmailRequest = t.MarkPrivacyResponse = t.MarkPrivacyRequest = t.CustomerIdResponse = t.CustomerIdRequest = t.CheckSessionTokenResponse = t.CheckSessionTokenRequest = t.GetSessionTokenResponse = t.GetSessionTokenRequest_Destination = t.GetSessionTokenRequest = t.RevokeSessionResponse = t.RevokeSessionRequest = t.ListActiveSessionsResponse = t.ListActiveSessionsRequest = t.Session_SessionType = t.Session = t.User = void 0;
+                }), t.ListJwtPublicKeysResponse = t.JwtPublicKey = t.ListJwtPublicKeysRequest = t.SetPrivacyModeResponse = t.SetPrivacyModeRequest = t.SwitchCmdKFractionResponse = t.SwitchCmdKFractionRequest = t.DownloadUpdateResponse = t.DownloadUpdateRequest = t.EmailValidResponse = t.EmailValidRequest = t.GetUserMetaResponse = t.GetUserMetaRequest = t.GetEmailResponse_SignUpType = t.GetEmailResponse = t.GetEmailRequest = t.MarkPrivacyResponse = t.MarkPrivacyRequest = t.CustomerIdResponse = t.CustomerIdRequest = t.CreateMobileSessionResponse = t.CreateMobileSessionRequest = t.CheckSessionTokenResponse = t.CheckSessionTokenRequest = t.GetSessionTokenResponse = t.GetSessionTokenRequest_Destination = t.GetSessionTokenRequest = t.RevokeSessionResponse = t.RevokeSessionRequest = t.ListActiveSessionsResponse = t.ListActiveSessionsRequest = t.Session_SessionType = t.Session = t.User = void 0;
                 const r = A(6095);
                 class n extends r.Message {
                     constructor(e) {
@@ -24859,7 +24888,7 @@
                         T: 9
                     }]),
                     function(e) {
-                        e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.WEB = 1] = "WEB", e[e.CLIENT = 2] = "CLIENT", e[e.BUGBOT = 3] = "BUGBOT", e[e.BACKGROUND_AGENT = 4] = "BACKGROUND_AGENT", e[e.SUPPORT_IMPERSONATION = 5] = "SUPPORT_IMPERSONATION", e[e.API_KEY_TOKEN = 6] = "API_KEY_TOKEN", e[e.TRAINING = 7] = "TRAINING", e[e.EXEC_DAEMON = 8] = "EXEC_DAEMON", e[e.GRAPHITE = 9] = "GRAPHITE"
+                        e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.WEB = 1] = "WEB", e[e.CLIENT = 2] = "CLIENT", e[e.BUGBOT = 3] = "BUGBOT", e[e.BACKGROUND_AGENT = 4] = "BACKGROUND_AGENT", e[e.SUPPORT_IMPERSONATION = 5] = "SUPPORT_IMPERSONATION", e[e.API_KEY_TOKEN = 6] = "API_KEY_TOKEN", e[e.TRAINING = 7] = "TRAINING", e[e.EXEC_DAEMON = 8] = "EXEC_DAEMON", e[e.GRAPHITE = 9] = "GRAPHITE", e[e.MOBILE = 10] = "MOBILE"
                     }(s || (t.Session_SessionType = s = {})), r.proto3.util.setEnumType(s, "aiserver.v1.Session.SessionType", [{
                         no: 0,
                         name: "SESSION_TYPE_UNSPECIFIED"
@@ -24890,6 +24919,9 @@
                     }, {
                         no: 9,
                         name: "SESSION_TYPE_GRAPHITE"
+                    }, {
+                        no: 10,
+                        name: "SESSION_TYPE_MOBILE"
                     }]);
                 class c extends r.Message {
                     constructor(e) {
@@ -25023,6 +25055,18 @@
                         kind: "scalar",
                         T: 9,
                         opt: !0
+                    }, {
+                        no: 5,
+                        name: "code_verifier",
+                        kind: "scalar",
+                        T: 9,
+                        opt: !0
+                    }, {
+                        no: 6,
+                        name: "redirect_uri",
+                        kind: "scalar",
+                        T: 9,
+                        opt: !0
                     }]),
                     function(e) {
                         e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PORTAL = 1] = "PORTAL", e[e.AISERVER = 2] = "AISERVER", e[e.AUTH_PROXY = 3] = "AUTH_PROXY"
@@ -25136,7 +25180,7 @@
                 }]);
                 class f extends r.Message {
                     constructor(e) {
-                        super(), this.email = "", r.proto3.util.initPartial(e, this)
+                        super(), r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
                         return (new f).fromBinary(e, t)
@@ -25151,15 +25195,10 @@
                         return r.proto3.util.equals(f, e, t)
                     }
                 }
-                t.CustomerIdRequest = f, f.runtime = r.proto3, f.typeName = "aiserver.v1.CustomerIdRequest", f.fields = r.proto3.util.newFieldList(() => [{
-                    no: 1,
-                    name: "email",
-                    kind: "scalar",
-                    T: 9
-                }]);
+                t.CreateMobileSessionRequest = f, f.runtime = r.proto3, f.typeName = "aiserver.v1.CreateMobileSessionRequest", f.fields = r.proto3.util.newFieldList(() => []);
                 class p extends r.Message {
                     constructor(e) {
-                        super(), r.proto3.util.initPartial(e, this)
+                        super(), this.sessionToken = "", this.authId = "", r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
                         return (new p).fromBinary(e, t)
@@ -25174,16 +25213,20 @@
                         return r.proto3.util.equals(p, e, t)
                     }
                 }
-                t.CustomerIdResponse = p, p.runtime = r.proto3, p.typeName = "aiserver.v1.CustomerIdResponse", p.fields = r.proto3.util.newFieldList(() => [{
+                t.CreateMobileSessionResponse = p, p.runtime = r.proto3, p.typeName = "aiserver.v1.CreateMobileSessionResponse", p.fields = r.proto3.util.newFieldList(() => [{
                     no: 1,
-                    name: "customer_id",
+                    name: "session_token",
                     kind: "scalar",
-                    T: 9,
-                    opt: !0
+                    T: 9
+                }, {
+                    no: 2,
+                    name: "auth_id",
+                    kind: "scalar",
+                    T: 9
                 }]);
                 class B extends r.Message {
                     constructor(e) {
-                        super(), this.isUsingCurrentAndOnboardingFormat = !1, this.privacy = !1, r.proto3.util.initPartial(e, this)
+                        super(), this.email = "", r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
                         return (new B).fromBinary(e, t)
@@ -25198,7 +25241,54 @@
                         return r.proto3.util.equals(B, e, t)
                     }
                 }
-                t.MarkPrivacyRequest = B, B.runtime = r.proto3, B.typeName = "aiserver.v1.MarkPrivacyRequest", B.fields = r.proto3.util.newFieldList(() => [{
+                t.CustomerIdRequest = B, B.runtime = r.proto3, B.typeName = "aiserver.v1.CustomerIdRequest", B.fields = r.proto3.util.newFieldList(() => [{
+                    no: 1,
+                    name: "email",
+                    kind: "scalar",
+                    T: 9
+                }]);
+                class C extends r.Message {
+                    constructor(e) {
+                        super(), r.proto3.util.initPartial(e, this)
+                    }
+                    static fromBinary(e, t) {
+                        return (new C).fromBinary(e, t)
+                    }
+                    static fromJson(e, t) {
+                        return (new C).fromJson(e, t)
+                    }
+                    static fromJsonString(e, t) {
+                        return (new C).fromJsonString(e, t)
+                    }
+                    static equals(e, t) {
+                        return r.proto3.util.equals(C, e, t)
+                    }
+                }
+                t.CustomerIdResponse = C, C.runtime = r.proto3, C.typeName = "aiserver.v1.CustomerIdResponse", C.fields = r.proto3.util.newFieldList(() => [{
+                    no: 1,
+                    name: "customer_id",
+                    kind: "scalar",
+                    T: 9,
+                    opt: !0
+                }]);
+                class Q extends r.Message {
+                    constructor(e) {
+                        super(), this.isUsingCurrentAndOnboardingFormat = !1, this.privacy = !1, r.proto3.util.initPartial(e, this)
+                    }
+                    static fromBinary(e, t) {
+                        return (new Q).fromBinary(e, t)
+                    }
+                    static fromJson(e, t) {
+                        return (new Q).fromJson(e, t)
+                    }
+                    static fromJsonString(e, t) {
+                        return (new Q).fromJsonString(e, t)
+                    }
+                    static equals(e, t) {
+                        return r.proto3.util.equals(Q, e, t)
+                    }
+                }
+                t.MarkPrivacyRequest = Q, Q.runtime = r.proto3, Q.typeName = "aiserver.v1.MarkPrivacyRequest", Q.fields = r.proto3.util.newFieldList(() => [{
                     no: 2,
                     name: "current_privacy_mode",
                     kind: "scalar",
@@ -25245,45 +25335,9 @@
                     kind: "scalar",
                     T: 8
                 }]);
-                class C extends r.Message {
-                    constructor(e) {
-                        super(), r.proto3.util.initPartial(e, this)
-                    }
-                    static fromBinary(e, t) {
-                        return (new C).fromBinary(e, t)
-                    }
-                    static fromJson(e, t) {
-                        return (new C).fromJson(e, t)
-                    }
-                    static fromJsonString(e, t) {
-                        return (new C).fromJsonString(e, t)
-                    }
-                    static equals(e, t) {
-                        return r.proto3.util.equals(C, e, t)
-                    }
-                }
-                t.MarkPrivacyResponse = C, C.runtime = r.proto3, C.typeName = "aiserver.v1.MarkPrivacyResponse", C.fields = r.proto3.util.newFieldList(() => []);
-                class Q extends r.Message {
-                    constructor(e) {
-                        super(), r.proto3.util.initPartial(e, this)
-                    }
-                    static fromBinary(e, t) {
-                        return (new Q).fromBinary(e, t)
-                    }
-                    static fromJson(e, t) {
-                        return (new Q).fromJson(e, t)
-                    }
-                    static fromJsonString(e, t) {
-                        return (new Q).fromJsonString(e, t)
-                    }
-                    static equals(e, t) {
-                        return r.proto3.util.equals(Q, e, t)
-                    }
-                }
-                t.GetEmailRequest = Q, Q.runtime = r.proto3, Q.typeName = "aiserver.v1.GetEmailRequest", Q.fields = r.proto3.util.newFieldList(() => []);
                 class m extends r.Message {
                     constructor(e) {
-                        super(), this.email = "", this.signUpType = a.UNSPECIFIED, r.proto3.util.initPartial(e, this)
+                        super(), r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
                         return (new m).fromBinary(e, t)
@@ -25298,7 +25352,43 @@
                         return r.proto3.util.equals(m, e, t)
                     }
                 }
-                t.GetEmailResponse = m, m.runtime = r.proto3, m.typeName = "aiserver.v1.GetEmailResponse", m.fields = r.proto3.util.newFieldList(() => [{
+                t.MarkPrivacyResponse = m, m.runtime = r.proto3, m.typeName = "aiserver.v1.MarkPrivacyResponse", m.fields = r.proto3.util.newFieldList(() => []);
+                class y extends r.Message {
+                    constructor(e) {
+                        super(), r.proto3.util.initPartial(e, this)
+                    }
+                    static fromBinary(e, t) {
+                        return (new y).fromBinary(e, t)
+                    }
+                    static fromJson(e, t) {
+                        return (new y).fromJson(e, t)
+                    }
+                    static fromJsonString(e, t) {
+                        return (new y).fromJsonString(e, t)
+                    }
+                    static equals(e, t) {
+                        return r.proto3.util.equals(y, e, t)
+                    }
+                }
+                t.GetEmailRequest = y, y.runtime = r.proto3, y.typeName = "aiserver.v1.GetEmailRequest", y.fields = r.proto3.util.newFieldList(() => []);
+                class w extends r.Message {
+                    constructor(e) {
+                        super(), this.email = "", this.signUpType = a.UNSPECIFIED, r.proto3.util.initPartial(e, this)
+                    }
+                    static fromBinary(e, t) {
+                        return (new w).fromBinary(e, t)
+                    }
+                    static fromJson(e, t) {
+                        return (new w).fromJson(e, t)
+                    }
+                    static fromJsonString(e, t) {
+                        return (new w).fromJsonString(e, t)
+                    }
+                    static equals(e, t) {
+                        return r.proto3.util.equals(w, e, t)
+                    }
+                }
+                t.GetEmailResponse = w, w.runtime = r.proto3, w.typeName = "aiserver.v1.GetEmailResponse", w.fields = r.proto3.util.newFieldList(() => [{
                         no: 1,
                         name: "email",
                         kind: "scalar",
@@ -25327,42 +25417,42 @@
                         no: 4,
                         name: "SIGN_UP_TYPE_WORKOS"
                     }]);
-                class y extends r.Message {
+                class b extends r.Message {
                     constructor(e) {
                         super(), r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
-                        return (new y).fromBinary(e, t)
+                        return (new b).fromBinary(e, t)
                     }
                     static fromJson(e, t) {
-                        return (new y).fromJson(e, t)
+                        return (new b).fromJson(e, t)
                     }
                     static fromJsonString(e, t) {
-                        return (new y).fromJsonString(e, t)
+                        return (new b).fromJsonString(e, t)
                     }
                     static equals(e, t) {
-                        return r.proto3.util.equals(y, e, t)
+                        return r.proto3.util.equals(b, e, t)
                     }
                 }
-                t.GetUserMetaRequest = y, y.runtime = r.proto3, y.typeName = "aiserver.v1.GetUserMetaRequest", y.fields = r.proto3.util.newFieldList(() => []);
-                class w extends r.Message {
+                t.GetUserMetaRequest = b, b.runtime = r.proto3, b.typeName = "aiserver.v1.GetUserMetaRequest", b.fields = r.proto3.util.newFieldList(() => []);
+                class S extends r.Message {
                     constructor(e) {
                         super(), this.email = "", this.signUpType = a.UNSPECIFIED, this.userId = r.protoInt64.zero, r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
-                        return (new w).fromBinary(e, t)
+                        return (new S).fromBinary(e, t)
                     }
                     static fromJson(e, t) {
-                        return (new w).fromJson(e, t)
+                        return (new S).fromJson(e, t)
                     }
                     static fromJsonString(e, t) {
-                        return (new w).fromJsonString(e, t)
+                        return (new S).fromJsonString(e, t)
                     }
                     static equals(e, t) {
-                        return r.proto3.util.equals(w, e, t)
+                        return r.proto3.util.equals(S, e, t)
                     }
                 }
-                t.GetUserMetaResponse = w, w.runtime = r.proto3, w.typeName = "aiserver.v1.GetUserMetaResponse", w.fields = r.proto3.util.newFieldList(() => [{
+                t.GetUserMetaResponse = S, S.runtime = r.proto3, S.typeName = "aiserver.v1.GetUserMetaResponse", S.fields = r.proto3.util.newFieldList(() => [{
                     no: 1,
                     name: "email",
                     kind: "scalar",
@@ -25384,55 +25474,9 @@
                     T: 9,
                     opt: !0
                 }]);
-                class b extends r.Message {
-                    constructor(e) {
-                        super(), this.email = "", r.proto3.util.initPartial(e, this)
-                    }
-                    static fromBinary(e, t) {
-                        return (new b).fromBinary(e, t)
-                    }
-                    static fromJson(e, t) {
-                        return (new b).fromJson(e, t)
-                    }
-                    static fromJsonString(e, t) {
-                        return (new b).fromJsonString(e, t)
-                    }
-                    static equals(e, t) {
-                        return r.proto3.util.equals(b, e, t)
-                    }
-                }
-                t.EmailValidRequest = b, b.runtime = r.proto3, b.typeName = "aiserver.v1.EmailValidRequest", b.fields = r.proto3.util.newFieldList(() => [{
-                    no: 1,
-                    name: "email",
-                    kind: "scalar",
-                    T: 9
-                }]);
-                class S extends r.Message {
-                    constructor(e) {
-                        super(), this.valid = !1, r.proto3.util.initPartial(e, this)
-                    }
-                    static fromBinary(e, t) {
-                        return (new S).fromBinary(e, t)
-                    }
-                    static fromJson(e, t) {
-                        return (new S).fromJson(e, t)
-                    }
-                    static fromJsonString(e, t) {
-                        return (new S).fromJsonString(e, t)
-                    }
-                    static equals(e, t) {
-                        return r.proto3.util.equals(S, e, t)
-                    }
-                }
-                t.EmailValidResponse = S, S.runtime = r.proto3, S.typeName = "aiserver.v1.EmailValidResponse", S.fields = r.proto3.util.newFieldList(() => [{
-                    no: 1,
-                    name: "valid",
-                    kind: "scalar",
-                    T: 8
-                }]);
                 class k extends r.Message {
                     constructor(e) {
-                        super(), this.machineId = "", this.applicationName = "", this.version = "", r.proto3.util.initPartial(e, this)
+                        super(), this.email = "", r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
                         return (new k).fromBinary(e, t)
@@ -25447,7 +25491,53 @@
                         return r.proto3.util.equals(k, e, t)
                     }
                 }
-                t.DownloadUpdateRequest = k, k.runtime = r.proto3, k.typeName = "aiserver.v1.DownloadUpdateRequest", k.fields = r.proto3.util.newFieldList(() => [{
+                t.EmailValidRequest = k, k.runtime = r.proto3, k.typeName = "aiserver.v1.EmailValidRequest", k.fields = r.proto3.util.newFieldList(() => [{
+                    no: 1,
+                    name: "email",
+                    kind: "scalar",
+                    T: 9
+                }]);
+                class D extends r.Message {
+                    constructor(e) {
+                        super(), this.valid = !1, r.proto3.util.initPartial(e, this)
+                    }
+                    static fromBinary(e, t) {
+                        return (new D).fromBinary(e, t)
+                    }
+                    static fromJson(e, t) {
+                        return (new D).fromJson(e, t)
+                    }
+                    static fromJsonString(e, t) {
+                        return (new D).fromJsonString(e, t)
+                    }
+                    static equals(e, t) {
+                        return r.proto3.util.equals(D, e, t)
+                    }
+                }
+                t.EmailValidResponse = D, D.runtime = r.proto3, D.typeName = "aiserver.v1.EmailValidResponse", D.fields = r.proto3.util.newFieldList(() => [{
+                    no: 1,
+                    name: "valid",
+                    kind: "scalar",
+                    T: 8
+                }]);
+                class R extends r.Message {
+                    constructor(e) {
+                        super(), this.machineId = "", this.applicationName = "", this.version = "", r.proto3.util.initPartial(e, this)
+                    }
+                    static fromBinary(e, t) {
+                        return (new R).fromBinary(e, t)
+                    }
+                    static fromJson(e, t) {
+                        return (new R).fromJson(e, t)
+                    }
+                    static fromJsonString(e, t) {
+                        return (new R).fromJsonString(e, t)
+                    }
+                    static equals(e, t) {
+                        return r.proto3.util.equals(R, e, t)
+                    }
+                }
+                t.DownloadUpdateRequest = R, R.runtime = r.proto3, R.typeName = "aiserver.v1.DownloadUpdateRequest", R.fields = r.proto3.util.newFieldList(() => [{
                     no: 1,
                     name: "machine_id",
                     kind: "scalar",
@@ -25469,55 +25559,9 @@
                     T: 9,
                     opt: !0
                 }]);
-                class D extends r.Message {
-                    constructor(e) {
-                        super(), this.canDownload = !1, r.proto3.util.initPartial(e, this)
-                    }
-                    static fromBinary(e, t) {
-                        return (new D).fromBinary(e, t)
-                    }
-                    static fromJson(e, t) {
-                        return (new D).fromJson(e, t)
-                    }
-                    static fromJsonString(e, t) {
-                        return (new D).fromJsonString(e, t)
-                    }
-                    static equals(e, t) {
-                        return r.proto3.util.equals(D, e, t)
-                    }
-                }
-                t.DownloadUpdateResponse = D, D.runtime = r.proto3, D.typeName = "aiserver.v1.DownloadUpdateResponse", D.fields = r.proto3.util.newFieldList(() => [{
-                    no: 1,
-                    name: "can_download",
-                    kind: "scalar",
-                    T: 8
-                }]);
-                class R extends r.Message {
-                    constructor(e) {
-                        super(), this.useTurbo = !1, r.proto3.util.initPartial(e, this)
-                    }
-                    static fromBinary(e, t) {
-                        return (new R).fromBinary(e, t)
-                    }
-                    static fromJson(e, t) {
-                        return (new R).fromJson(e, t)
-                    }
-                    static fromJsonString(e, t) {
-                        return (new R).fromJsonString(e, t)
-                    }
-                    static equals(e, t) {
-                        return r.proto3.util.equals(R, e, t)
-                    }
-                }
-                t.SwitchCmdKFractionRequest = R, R.runtime = r.proto3, R.typeName = "aiserver.v1.SwitchCmdKFractionRequest", R.fields = r.proto3.util.newFieldList(() => [{
-                    no: 1,
-                    name: "use_turbo",
-                    kind: "scalar",
-                    T: 8
-                }]);
                 class T extends r.Message {
                     constructor(e) {
-                        super(), r.proto3.util.initPartial(e, this)
+                        super(), this.canDownload = !1, r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
                         return (new T).fromBinary(e, t)
@@ -25532,10 +25576,15 @@
                         return r.proto3.util.equals(T, e, t)
                     }
                 }
-                t.SwitchCmdKFractionResponse = T, T.runtime = r.proto3, T.typeName = "aiserver.v1.SwitchCmdKFractionResponse", T.fields = r.proto3.util.newFieldList(() => []);
+                t.DownloadUpdateResponse = T, T.runtime = r.proto3, T.typeName = "aiserver.v1.DownloadUpdateResponse", T.fields = r.proto3.util.newFieldList(() => [{
+                    no: 1,
+                    name: "can_download",
+                    kind: "scalar",
+                    T: 8
+                }]);
                 class N extends r.Message {
                     constructor(e) {
-                        super(), this.privacyModeEnabled = !1, this.machineIdentifier = "", this.newOnboardingDone = !1, this.newChangeManagementDone = !1, this.eligibleForSnippetLearning = !1, r.proto3.util.initPartial(e, this)
+                        super(), this.useTurbo = !1, r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
                         return (new N).fromBinary(e, t)
@@ -25550,7 +25599,48 @@
                         return r.proto3.util.equals(N, e, t)
                     }
                 }
-                t.SetPrivacyModeRequest = N, N.runtime = r.proto3, N.typeName = "aiserver.v1.SetPrivacyModeRequest", N.fields = r.proto3.util.newFieldList(() => [{
+                t.SwitchCmdKFractionRequest = N, N.runtime = r.proto3, N.typeName = "aiserver.v1.SwitchCmdKFractionRequest", N.fields = r.proto3.util.newFieldList(() => [{
+                    no: 1,
+                    name: "use_turbo",
+                    kind: "scalar",
+                    T: 8
+                }]);
+                class F extends r.Message {
+                    constructor(e) {
+                        super(), r.proto3.util.initPartial(e, this)
+                    }
+                    static fromBinary(e, t) {
+                        return (new F).fromBinary(e, t)
+                    }
+                    static fromJson(e, t) {
+                        return (new F).fromJson(e, t)
+                    }
+                    static fromJsonString(e, t) {
+                        return (new F).fromJsonString(e, t)
+                    }
+                    static equals(e, t) {
+                        return r.proto3.util.equals(F, e, t)
+                    }
+                }
+                t.SwitchCmdKFractionResponse = F, F.runtime = r.proto3, F.typeName = "aiserver.v1.SwitchCmdKFractionResponse", F.fields = r.proto3.util.newFieldList(() => []);
+                class v extends r.Message {
+                    constructor(e) {
+                        super(), this.privacyModeEnabled = !1, this.machineIdentifier = "", this.newOnboardingDone = !1, this.newChangeManagementDone = !1, this.eligibleForSnippetLearning = !1, r.proto3.util.initPartial(e, this)
+                    }
+                    static fromBinary(e, t) {
+                        return (new v).fromBinary(e, t)
+                    }
+                    static fromJson(e, t) {
+                        return (new v).fromJson(e, t)
+                    }
+                    static fromJsonString(e, t) {
+                        return (new v).fromJsonString(e, t)
+                    }
+                    static equals(e, t) {
+                        return r.proto3.util.equals(v, e, t)
+                    }
+                }
+                t.SetPrivacyModeRequest = v, v.runtime = r.proto3, v.typeName = "aiserver.v1.SetPrivacyModeRequest", v.fields = r.proto3.util.newFieldList(() => [{
                     no: 1,
                     name: "privacy_mode_enabled",
                     kind: "scalar",
@@ -25588,45 +25678,9 @@
                     T: 3,
                     opt: !0
                 }]);
-                class F extends r.Message {
-                    constructor(e) {
-                        super(), r.proto3.util.initPartial(e, this)
-                    }
-                    static fromBinary(e, t) {
-                        return (new F).fromBinary(e, t)
-                    }
-                    static fromJson(e, t) {
-                        return (new F).fromJson(e, t)
-                    }
-                    static fromJsonString(e, t) {
-                        return (new F).fromJsonString(e, t)
-                    }
-                    static equals(e, t) {
-                        return r.proto3.util.equals(F, e, t)
-                    }
-                }
-                t.SetPrivacyModeResponse = F, F.runtime = r.proto3, F.typeName = "aiserver.v1.SetPrivacyModeResponse", F.fields = r.proto3.util.newFieldList(() => []);
-                class v extends r.Message {
-                    constructor(e) {
-                        super(), r.proto3.util.initPartial(e, this)
-                    }
-                    static fromBinary(e, t) {
-                        return (new v).fromBinary(e, t)
-                    }
-                    static fromJson(e, t) {
-                        return (new v).fromJson(e, t)
-                    }
-                    static fromJsonString(e, t) {
-                        return (new v).fromJsonString(e, t)
-                    }
-                    static equals(e, t) {
-                        return r.proto3.util.equals(v, e, t)
-                    }
-                }
-                t.ListJwtPublicKeysRequest = v, v.runtime = r.proto3, v.typeName = "aiserver.v1.ListJwtPublicKeysRequest", v.fields = r.proto3.util.newFieldList(() => []);
                 class M extends r.Message {
                     constructor(e) {
-                        super(), this.kid = "", this.publicKey = "", r.proto3.util.initPartial(e, this)
+                        super(), r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
                         return (new M).fromBinary(e, t)
@@ -25641,20 +25695,10 @@
                         return r.proto3.util.equals(M, e, t)
                     }
                 }
-                t.JwtPublicKey = M, M.runtime = r.proto3, M.typeName = "aiserver.v1.JwtPublicKey", M.fields = r.proto3.util.newFieldList(() => [{
-                    no: 1,
-                    name: "kid",
-                    kind: "scalar",
-                    T: 9
-                }, {
-                    no: 2,
-                    name: "public_key",
-                    kind: "scalar",
-                    T: 9
-                }]);
+                t.SetPrivacyModeResponse = M, M.runtime = r.proto3, M.typeName = "aiserver.v1.SetPrivacyModeResponse", M.fields = r.proto3.util.newFieldList(() => []);
                 class U extends r.Message {
                     constructor(e) {
-                        super(), this.keys = [], r.proto3.util.initPartial(e, this)
+                        super(), r.proto3.util.initPartial(e, this)
                     }
                     static fromBinary(e, t) {
                         return (new U).fromBinary(e, t)
@@ -25669,11 +25713,57 @@
                         return r.proto3.util.equals(U, e, t)
                     }
                 }
-                t.ListJwtPublicKeysResponse = U, U.runtime = r.proto3, U.typeName = "aiserver.v1.ListJwtPublicKeysResponse", U.fields = r.proto3.util.newFieldList(() => [{
+                t.ListJwtPublicKeysRequest = U, U.runtime = r.proto3, U.typeName = "aiserver.v1.ListJwtPublicKeysRequest", U.fields = r.proto3.util.newFieldList(() => []);
+                class _ extends r.Message {
+                    constructor(e) {
+                        super(), this.kid = "", this.publicKey = "", r.proto3.util.initPartial(e, this)
+                    }
+                    static fromBinary(e, t) {
+                        return (new _).fromBinary(e, t)
+                    }
+                    static fromJson(e, t) {
+                        return (new _).fromJson(e, t)
+                    }
+                    static fromJsonString(e, t) {
+                        return (new _).fromJsonString(e, t)
+                    }
+                    static equals(e, t) {
+                        return r.proto3.util.equals(_, e, t)
+                    }
+                }
+                t.JwtPublicKey = _, _.runtime = r.proto3, _.typeName = "aiserver.v1.JwtPublicKey", _.fields = r.proto3.util.newFieldList(() => [{
+                    no: 1,
+                    name: "kid",
+                    kind: "scalar",
+                    T: 9
+                }, {
+                    no: 2,
+                    name: "public_key",
+                    kind: "scalar",
+                    T: 9
+                }]);
+                class L extends r.Message {
+                    constructor(e) {
+                        super(), this.keys = [], r.proto3.util.initPartial(e, this)
+                    }
+                    static fromBinary(e, t) {
+                        return (new L).fromBinary(e, t)
+                    }
+                    static fromJson(e, t) {
+                        return (new L).fromJson(e, t)
+                    }
+                    static fromJsonString(e, t) {
+                        return (new L).fromJsonString(e, t)
+                    }
+                    static equals(e, t) {
+                        return r.proto3.util.equals(L, e, t)
+                    }
+                }
+                t.ListJwtPublicKeysResponse = L, L.runtime = r.proto3, L.typeName = "aiserver.v1.ListJwtPublicKeysResponse", L.fields = r.proto3.util.newFieldList(() => [{
                     no: 1,
                     name: "keys",
                     kind: "message",
-                    T: M,
+                    T: _,
                     repeated: !0
                 }])
             },
@@ -33153,7 +33243,7 @@
                         return console.error("[cursor deeplink] Invalid deeplink", e), void r.window.showErrorMessage("Invalid or expired deeplink.")
                     } else try {
                         const e = await async function() {
-                            const e = (0, n.getBackendUrlAndToken)();
+                            const e = await (0, n.getBackendUrlAndTokenOrWait)();
                             if (!e) throw new Error("Missing backend URL or access token");
                             const t = function(e, t) {
                                 const A = [];
@@ -33212,7 +33302,7 @@
                             if (!t || !A) return console.error("[cursor deeplink] Missing redisKey or encryptionKey in V1 JWT payload"), void r.window.showErrorMessage("Invalid deeplink format.");
                             try {
                                 I = await async function(e, t) {
-                                    const A = (0, n.getBackendUrlAndToken)();
+                                    const A = await (0, n.getBackendUrlAndTokenOrWait)();
                                     if (!A) throw new Error("Missing backend URL or access token");
                                     const r = E(A.backendUrl, A.accessToken),
                                         o = new u.GetEncryptedBugDataRequest({
@@ -33255,7 +33345,7 @@
                             if (void 0 === e || "" === e || void 0 === t || "" === t) return console.error("[cursor deeplink] Missing redisKey or encryptionKey in Fix All payload"), void r.window.showErrorMessage("Invalid deeplink format.");
                             try {
                                 const i = await async function(e, t) {
-                                    const A = (0, n.getBackendUrlAndToken)();
+                                    const A = await (0, n.getBackendUrlAndTokenOrWait)();
                                     if (!A) throw new Error("Missing backend URL or access token");
                                     const r = E(A.backendUrl, A.accessToken),
                                         o = new u.GetEncryptedBugDataMultipleRequest({
@@ -33401,4 +33491,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/475871d112608994deb2e3065dfb7c6b0baa0c50/extensions/cursor-deeplink/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/dacbe9b31599a253763e4910eb6ab38704653320/extensions/cursor-deeplink/dist/main.js.map

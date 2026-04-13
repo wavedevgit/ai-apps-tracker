@@ -54537,8 +54537,8 @@
                     AuthProviderType: () => l,
                     CLOUD_AGENT_ALL_SECRET_NAMES_ENV_VAR: () => g,
                     CLOUD_AGENT_INJECTED_SECRET_NAMES_ENV_VAR: () => _,
-                    CURSOR_WORKTREES_DIR: () => nt,
-                    CURSOR_WORKTREES_GLOB: () => rt,
+                    CURSOR_WORKTREES_DIR: () => rt,
+                    CURSOR_WORKTREES_GLOB: () => it,
                     DEFAULT_ENV_SETUP_MODEL_NAME: () => m,
                     DOCKER_BUILD_FAILED_USER_FACING_MESSAGE: () => x,
                     ERROR_CODES: () => I,
@@ -54549,35 +54549,36 @@
                     INPUT_FOCUSED_EDITOR_DENYLIST_ACTION_IDS: () => i,
                     MAX_GIT_DIFF_CHAR_LENGTH: () => O,
                     MAX_TEXT_SIZE: () => C,
+                    MCP_OAUTH_CLIENT_LOGO_URI: () => M,
                     MCP_REDACTED_VALUE: () => P,
                     SNAPSHOT_EXPIRED_USER_FACING_MESSAGE: () => y,
                     SNAPSHOT_INVALID_USER_FACING_MESSAGE: () => v,
                     SNAPSHOT_NOT_FOUND_OR_NO_ACCESS_USER_FACING_MESSAGE: () => b,
-                    STANDARD_STARTUP_CREDIT_GRANT_CENTS: () => L,
-                    STANDARD_STARTUP_CREDIT_GRANT_PRODUCT_ID: () => z,
-                    STANDARD_STARTUP_PROMO_DURATION_MONTHS: () => j,
-                    STARTUP_OFFER_TYPES: () => V,
-                    STARTUP_TEAM_REFERRAL_DISCOUNT_ID: () => Z,
-                    STARTUP_YC_TEAM_REFERRAL_DISCOUNT_ID: () => D,
-                    STRUCTURED_LOG_KEYS: () => et,
+                    STANDARD_STARTUP_CREDIT_GRANT_CENTS: () => F,
+                    STANDARD_STARTUP_CREDIT_GRANT_PRODUCT_ID: () => U,
+                    STANDARD_STARTUP_PROMO_DURATION_MONTHS: () => L,
+                    STARTUP_OFFER_TYPES: () => W,
+                    STARTUP_TEAM_REFERRAL_DISCOUNT_ID: () => D,
+                    STARTUP_YC_TEAM_REFERRAL_DISCOUNT_ID: () => j,
+                    STRUCTURED_LOG_KEYS: () => nt,
                     USER_INSTALL_COMMAND_FAILED_USER_FACING_MESSAGE: () => w,
-                    YC_STARTUP_CREDIT_GRANT_CENTS: () => F,
-                    YC_STARTUP_MONTHLY_CREDIT_GRANT_CENTS: () => $,
-                    YC_STARTUP_MONTHLY_CREDIT_GRANT_MONTHS: () => B,
-                    YC_STARTUP_MONTHLY_CREDIT_GRANT_PREFIX: () => U,
+                    YC_STARTUP_CREDIT_GRANT_CENTS: () => B,
+                    YC_STARTUP_MONTHLY_CREDIT_GRANT_CENTS: () => z,
+                    YC_STARTUP_MONTHLY_CREDIT_GRANT_MONTHS: () => $,
+                    YC_STARTUP_MONTHLY_CREDIT_GRANT_PREFIX: () => V,
                     anyrunClusterConfig: () => a,
                     anyrunClusterOrdering: () => s,
-                    buildStartupCreditGrantPlan: () => tt,
-                    buildYcStartupMonthlyCreditGrantSchedule: () => G,
-                    calculateBackoffDelay: () => M,
+                    buildStartupCreditGrantPlan: () => et,
+                    buildYcStartupMonthlyCreditGrantSchedule: () => Y,
+                    calculateBackoffDelay: () => Z,
                     getAnyrunClusterHttpProxyUrl: () => c,
                     getAnyrunClusterLabel: () => o,
                     getGithubOAuthClientIdForEnvironment: () => p,
                     getPublicArtifactContentDisposition: () => u,
-                    getStartupCreditGrantProductIdPrefix: () => Q,
-                    getStartupOfferConfig: () => Y,
-                    getStartupOfferCoupons: () => J,
-                    getStartupOfferTypeFromReferralDiscountId: () => X,
+                    getStartupCreditGrantProductIdPrefix: () => tt,
+                    getStartupOfferConfig: () => X,
+                    getStartupOfferCoupons: () => Q,
+                    getStartupOfferTypeFromReferralDiscountId: () => J,
                     isErrorWithUserFacingErrorMessage: () => k,
                     shouldShowBackgroundComposerFollowupRetryHint: () => E,
                     shouldShowEnvironmentSetupCta: () => S
@@ -55074,28 +55075,29 @@
                     A = "Relevant Diff: The following is the git diff from the current branch to the main/default branch:\n\n",
                     N = "Relevant Diff: The following is the git diff of uncommitted changes in the working tree:\n\n",
                     R = "\n\n[diff truncated due to size; run `git diff` locally for the full output]",
-                    P = "••••••••";
+                    P = "••••••••",
+                    M = "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/cursorlogomcpv3.svg";
 
-                function M(t, e, n, r = Math.random) {
+                function Z(t, e, n, r = Math.random) {
                     const i = e * Math.pow(2, t),
                         a = Math.min(i, n);
                     return r() * a
                 }
-                const Z = "cursor-for-startups",
-                    D = "cursor-for-startups-yc",
-                    j = 6,
-                    L = 5e5,
-                    F = 6e6,
-                    B = 12,
-                    $ = 5e5,
-                    z = "credit-grant-startup",
-                    U = "credit-grant-yc-startup",
-                    V = ["standard", "yc"],
-                    W = {
+                const D = "cursor-for-startups",
+                    j = "cursor-for-startups-yc",
+                    L = 6,
+                    F = 5e5,
+                    B = 6e6,
+                    $ = 12,
+                    z = 5e5,
+                    U = "credit-grant-startup",
+                    V = "credit-grant-yc-startup",
+                    W = ["standard", "yc"],
+                    H = {
                         standard: {
-                            referralDiscountId: Z,
+                            referralDiscountId: D,
                             creditLabel: "$5,000",
-                            durationMonths: j,
+                            durationMonths: L,
                             coupons: {
                                 production: {
                                     seats: "QmOizAV7",
@@ -55108,9 +55110,9 @@
                             }
                         },
                         yc: {
-                            referralDiscountId: D,
+                            referralDiscountId: j,
                             creditLabel: "$60,000",
-                            durationMonths: B,
+                            durationMonths: $,
                             coupons: {
                                 production: {
                                     seats: "pvrVSY2a",
@@ -55124,11 +55126,11 @@
                         }
                     };
 
-                function H(t) {
+                function K(t) {
                     return new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate()))
                 }
 
-                function K(t, e) {
+                function q(t, e) {
                     const n = t.getUTCFullYear(),
                         r = t.getUTCMonth(),
                         i = t.getUTCDate(),
@@ -55140,59 +55142,59 @@
                     return new Date(Date.UTC(s, o, d))
                 }
 
-                function q(t) {
+                function G(t) {
                     return new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate(), 23, 59, 59, 999))
                 }
 
-                function G(t) {
-                    const e = H(t);
+                function Y(t) {
+                    const e = K(t);
                     return Array.from({
-                        length: B
+                        length: $
                     }, (t, n) => {
                         const r = n + 1;
                         return {
                             monthNumber: r,
-                            startsAt: K(e, n),
-                            expiresAt: K(e, r)
+                            startsAt: q(e, n),
+                            expiresAt: q(e, r)
                         }
                     })
                 }
 
-                function Y(t) {
-                    return W[t]
-                }
-
                 function X(t) {
-                    return t === Z ? "standard" : t === D ? "yc" : void 0
+                    return H[t]
                 }
 
-                function J(t, e) {
-                    const n = Y(t);
+                function J(t) {
+                    return t === D ? "standard" : t === j ? "yc" : void 0
+                }
+
+                function Q(t, e) {
+                    const n = X(t);
                     return e ? n.coupons.production : n.coupons.test
                 }
 
-                function Q(t) {
-                    return "yc" === t ? U : z
+                function tt(t) {
+                    return "yc" === t ? V : U
                 }
 
-                function tt(t, e) {
-                    if ("yc" === t) return G(e).map(t => ({
+                function et(t, e) {
+                    if ("yc" === t) return Y(e).map(t => ({
                         startsAt: t.startsAt,
-                        expiresAt: q(t.expiresAt),
-                        subscriptionProductId: `${U}-month-${t.monthNumber}`,
-                        totalCents: $
+                        expiresAt: G(t.expiresAt),
+                        subscriptionProductId: `${V}-month-${t.monthNumber}`,
+                        totalCents: z
                     }));
-                    const n = H(e);
+                    const n = K(e);
                     return [{
                         startsAt: n,
-                        expiresAt: q(K(n, j)),
-                        subscriptionProductId: z,
-                        totalCents: L
+                        expiresAt: G(q(n, L)),
+                        subscriptionProductId: U,
+                        totalCents: F
                     }]
                 }
-                const et = ["composer", "canvas", "background_composer", "cloud_environment_template", "git", "auth", "github_auth", "transport", "ext_host_cursor", "layout", "code_review", "agent_exec", "agent_cli", "agent_acp", "extension_security", "mcp", "experiment_refresh_service"],
-                    nt = ".cursor/worktrees",
-                    rt = `${nt}/**`
+                const nt = ["composer", "canvas", "background_composer", "cloud_environment_template", "git", "auth", "github_auth", "transport", "ext_host_cursor", "layout", "code_review", "agent_exec", "agent_cli", "agent_acp", "extension_security", "mcp", "experiment_refresh_service"],
+                    rt = ".cursor/worktrees",
+                    it = `${rt}/**`
             },
             3498: (t, e) => {
                 "use strict";
@@ -57933,28 +57935,28 @@
                     });
                 Object.defineProperty(e, "__esModule", {
                     value: !0
-                }), e.BrowserSnapshotPushController = void 0, e.activate = async function(t) {
+                }), e.BrowserSnapshotPushController = void 0, e.doEmit = g, e.activate = async function(t) {
                     c.CursorIDEBrowserLogger.init(), c.CursorIDEBrowserLogger.info("Cursor Browser Automation extension activated"), (0, d.initCPUProfileWorker)(t), c.CursorIDEBrowserLogger.info("Using Browser MCP provider");
-                    const e = new v;
-                    await e.initialize(t.globalStorageUri.fsPath), b = e, w = new h.BrowserSnapshotPushController({
-                        getProvider: () => b
+                    const e = new b;
+                    await e.initialize(t.globalStorageUri.fsPath), w = e, x = new h.BrowserSnapshotPushController({
+                        getProvider: () => w
                     }), t.subscriptions.push(new o.Disposable(() => {
-                        w?.dispose(), w = void 0
+                        x?.dispose(), x = void 0
                     }));
-                    const n = o.cursor.registerMcpProvider(b);
-                    t.subscriptions.push(n), o.cursor.getMcpSnapshotPushEnabled() && w.requestPush("activation"), t.subscriptions.push(o.cursor.onDidChangeMcpSnapshotPushEnabled(t => {
-                        w?.setSnapshotPushEnabled(t), t && w?.requestPush("flag_enabled")
+                    const n = o.cursor.registerMcpProvider(w);
+                    t.subscriptions.push(n), o.cursor.getMcpSnapshotPushEnabled() && x.requestPush("activation"), t.subscriptions.push(o.cursor.onDidChangeMcpSnapshotPushEnabled(t => {
+                        x?.setSnapshotPushEnabled(t), t && x?.requestPush("flag_enabled")
                     })), t.subscriptions.push(o.window.onDidChangeActiveColorTheme(() => {
-                        w?.requestPush("theme_change")
+                        x?.requestPush("theme_change")
                     }));
-                    const r = o.commands.registerCommand(_, () => {
-                        w?.requestPush("watchdog_backfill")
+                    const r = o.commands.registerCommand(y, () => {
+                        x?.requestPush("watchdog_backfill")
                     });
                     t.subscriptions.push(r);
-                    const i = o.commands.registerCommand("cursor.browserAutomation.reinjectUIScript", x);
-                    t.subscriptions.push(i), x().catch(() => {})
+                    const i = o.commands.registerCommand("cursor.browserAutomation.reinjectUIScript", k);
+                    t.subscriptions.push(i), k().catch(() => {})
                 }, e.deactivate = async function() {
-                    w?.dispose(), w = void 0, b && (await b.dispose(), b = void 0)
+                    x?.dispose(), x = void 0, w && (await w.dispose(), w = void 0)
                 };
                 const o = s(n(1398)),
                     c = n(8377),
@@ -57970,11 +57972,28 @@
                     }
                 });
                 const f = n(5376),
-                    m = n(3643),
-                    g = "internal_browser_evaluate",
-                    _ = "cursor.browserAutomation.requestSnapshotBackfill",
-                    y = new Set(["browser_take_screenshot", "browser_mouse_click_xy"]);
-                class v {
+                    m = n(3643);
+                async function g(t, e, n, r) {
+                    const i = r?.viewId ?? await (0, f.resolveViewId)("string" == typeof e.viewId ? e.viewId : void 0) ?? "unknown",
+                        a = r?.postSnapshotYaml ?? (0, f.getSnapshotYaml)(i),
+                        s = void 0 === r ? (0, f.getPageInfo)(i) : void 0,
+                        c = {
+                            ...e
+                        };
+                    delete c.take_screenshot_afterwards, o.commands.executeCommand("cursor.internal.recordBrowserTelemEvent", {
+                        viewId: i,
+                        toolName: t,
+                        argsJson: JSON.stringify(c),
+                        success: n,
+                        snapshotYaml: a,
+                        url: r?.postUrl ?? s?.url,
+                        title: r?.postTitle ?? s?.title
+                    })
+                }
+                const _ = "internal_browser_evaluate",
+                    y = "cursor.browserAutomation.requestSnapshotBackfill",
+                    v = new Set(["browser_take_screenshot", "browser_mouse_click_xy"]);
+                class b {
                     constructor() {
                         this.id = "cursor-ide-browser", this.featureGateName = void 0, this.instructions = 'The cursor-ide-browser is an MCP server that allows you to navigate the web and interact with the page. Use this for frontend/webapp development and testing code changes.\n\nCORE WORKFLOW:\n1. Start by understanding the user\'s goal and what success looks like on the page.\n2. Use browser_tabs with action "list" to inspect open tabs and URLs before acting.\n3. Use browser_snapshot before any interaction to inspect the current page structure and obtain refs.\n4. Use browser_take_screenshot for standalone visual verification or screenshot-based coordinate clicks. For browser_mouse_click_xy, capture a fresh viewport screenshot for the same tab and then issue the click immediately using coordinates from that screenshot. Do not reuse older screenshot coordinates. If any other browser tool runs first, capture a new viewport screenshot before calling browser_mouse_click_xy.\n5. After any action that could change the page structure or URL (click, type, fill, fill_form, select, hover, press key, drag, browser_navigate, browser_navigate_back, wait, dialog response, or lazy-loaded scroll), take a fresh browser_snapshot before the next structural action unless you are certain the page did not change.\n\nAGENTIC PAGE NAVIGATION:\n1. When you know the destination, use browser_navigate directly to that URL.\n2. Use browser_navigate_back for browser history. Keep track of the current URL from tool output or snapshot metadata so you can navigate directly when needed.\n3. Work top-down: identify the relevant page region, dialog, form, or menu in the snapshot first, then target a specific ref inside it.\n4. Prefer one deliberate action followed by verification over exploratory thrashing.\n5. Use browser_search to locate text before blindly scrolling through large pages.\n6. Use browser_hover to reveal tooltips, dropdown menus, or hidden content before interacting with revealed elements.\n7. Use browser_scroll with scrollIntoView: true before clicking elements that may be offscreen or obscured.\n8. Use browser_fill to replace existing content (works on both input fields and contenteditable elements) and browser_type to append text or trigger typing-related handlers.\n9. If multiple elements share the same role and name, choose the exact ref from the snapshot instead of guessing. Use [nth=N] only as a hint to tell duplicate elements apart.\n\nAVOID RABBIT HOLES:\n1. Do not repeat the same failing action more than once without new evidence such as a fresh snapshot, a different ref, a changed page state, or a clear new hypothesis.\n2. IMPORTANT: If four attempts fail or progress stalls, stop acting and report what you observed, what blocked progress, and the most likely next step.\n3. Prefer gathering evidence over brute force. If the page is confusing, use browser_snapshot, browser_console_messages, browser_network_requests, or a screenshot to understand it before trying more actions.\n4. If you encounter a blocker such as login, passkey/manual user interaction, permissions, captchas, destructive confirmations, missing data, or an unexpected state, stop and report it instead of improvising repeated actions.\n5. Do not get stuck in wait-action-wait loops. Every retry should be justified by something newly observed.\n\nCRITICAL - Lock/unlock workflow:\n1. browser_lock requires an existing browser tab - you CANNOT call browser_lock with action: "lock" before browser_navigate\n2. Correct order: browser_navigate -> browser_lock({ action: "lock" }) -> (interactions) -> browser_lock({ action: "unlock" })\n3. If a browser tab already exists (check with browser_tabs list), call browser_lock with action: "lock" FIRST before any interactions\n4. Only call browser_lock with action: "unlock" when completely done with ALL browser operations for this turn\n\nIMPORTANT - Waiting strategy:\nWhen waiting for page changes (navigation, content loading, animations, etc.), prefer short incremental waits (1-3 seconds) with browser_snapshot checks in between rather than a single long wait. For example, instead of waiting 10 seconds, do: wait 2s -> snapshot -> check if ready -> if not, wait 2s more -> snapshot again. This allows you to proceed as soon as the page is ready rather than always waiting the maximum time.\n\nPERFORMANCE PROFILING:\n- browser_profile_start/stop: CPU profiling with call stacks and timing data. Use to identify slow JavaScript functions.\n- Profile data is written to ~/.cursor/browser-logs/. Files: cpu-profile-{timestamp}.json (raw profile in Chrome DevTools format) and cpu-profile-{timestamp}-summary.md (human-readable summary).\n- IMPORTANT: When investigating performance issues, read the raw cpu-profile-*.json file to verify summary data. Key fields: profile.samples.length (total samples), profile.nodes[].hitCount (per-node hits), profile.nodes[].callFrame.functionName (function names). Cross-reference with the summary to confirm findings before making optimization recommendations.\n\nVISION:\n- Snapshot and interaction tools can optionally attach a page screenshot by setting take_screenshot_afterwards: true. The screenshot provides visual context (layout, colors, state); the aria snapshot provides element refs required for targeting actions. Use both together: the screenshot shows what the page looks like, the snapshot tells you how to interact with it. Prefer refs from the snapshot for interactions; the one screenshot-based exception is browser_mouse_click_xy, which must use coordinates from a fresh viewport screenshot captured immediately before the click for that tab. Any other browser tool call invalidates that screenshot cache.\n\nNOTES:\n- browser_snapshot returns snapshot YAML and is the main source of truth for page structure.\n- Refs are opaque handles tied to the latest browser_snapshot for that tab. If a ref stops working, take a fresh snapshot instead of guessing.\n- Native dialogs (alert/confirm/prompt) never block automation. By default, confirm() returns true and prompt() returns the default value. To test different responses, call browser_handle_dialog BEFORE the triggering action: use accept: false for "Cancel", or promptText: "value" for custom prompt input.\n- Iframe content is not accessible - only elements outside iframes can be interacted with.\n- For nested scroll containers, use browser_scroll with scrollIntoView: true before clicking elements that may be obscured.\n- When you stop to report a blocker, include the current page, the target you were trying to reach, the blocker you observed, and the best next action. If the blocker requires manual user interaction, ask the user to take over at that point rather than assuming it in advance.\n', this.tools = [{
                             name: "browser_navigate",
@@ -58649,7 +58668,7 @@
                     async listOfferings() {
                         const t = [...this.tools];
                         try {
-                            await o.cursor.checkFeatureGate(g) && t.push({
+                            await o.cursor.checkFeatureGate(_) && t.push({
                                 name: "browser_evaluate",
                                 description: "Execute JavaScript in the page for debugging and inspection. RESTRICTIONS: Cannot access document.cookie, localStorage, sessionStorage, or credentials. Use for DOM inspection and debugging only.",
                                 parameters: JSON.stringify({
@@ -58678,86 +58697,127 @@
                     }
                     async callTool(t, e) {
                         c.CursorIDEBrowserLogger.info(`Executing tool: ${t} with args: ${JSON.stringify(e)}`);
+                        let n, r = !0;
                         try {
                             switch (await async function(t, e) {
-                                    if (y.has(t)) return;
+                                    if (v.has(t)) return;
                                     if ("browser_tabs" === t) return void(0, m.clearAllViewportScreenshots)();
                                     const n = "string" == typeof e.viewId ? e.viewId : void 0,
                                         r = await (0, f.resolveViewId)(n);
                                     r && (0, m.clearLastViewportScreenshot)(r)
                                 }(t, e), t) {
                                 case "browser_navigate":
-                                    return await u.BrowserTools.navigate(e);
+                                    n = await u.BrowserTools.navigate(e);
+                                    break;
                                 case "browser_snapshot":
-                                    return await u.BrowserTools.snapshot(e);
+                                    n = await u.BrowserTools.snapshot(e);
+                                    break;
                                 case "browser_click":
-                                    return await u.BrowserTools.click(e);
+                                    n = await u.BrowserTools.click(e);
+                                    break;
                                 case "browser_mouse_click_xy":
-                                    return await u.BrowserTools.mouseClickXY(e);
+                                    n = await u.BrowserTools.mouseClickXY(e);
+                                    break;
                                 case "browser_type":
-                                    return await u.BrowserTools.type(e);
+                                    n = await u.BrowserTools.type(e);
+                                    break;
                                 case "browser_fill":
-                                    return await u.BrowserTools.fill(e);
+                                    n = await u.BrowserTools.fill(e);
+                                    break;
                                 case "browser_fill_form":
-                                    return await u.BrowserTools.fillForm(e);
+                                    n = await u.BrowserTools.fillForm(e);
+                                    break;
                                 case "browser_hover":
-                                    return await u.BrowserTools.hover(e);
+                                    n = await u.BrowserTools.hover(e);
+                                    break;
                                 case "browser_select_option":
-                                    return await u.BrowserTools.selectOption(e);
+                                    n = await u.BrowserTools.selectOption(e);
+                                    break;
                                 case "browser_press_key":
-                                    return await u.BrowserTools.pressKey(e);
+                                    n = await u.BrowserTools.pressKey(e);
+                                    break;
                                 case "browser_evaluate":
-                                    return await o.cursor.checkFeatureGate(g) ? await u.BrowserTools.evaluate(e) : {
-                                        content: [{
-                                            type: "text",
-                                            text: "browser_evaluate is not available. This tool is currently disabled."
-                                        }]
-                                    };
+                                    if (!await o.cursor.checkFeatureGate(_)) {
+                                        n = {
+                                            content: [{
+                                                type: "text",
+                                                text: "browser_evaluate is not available. This tool is currently disabled."
+                                            }]
+                                        };
+                                        break
+                                    }
+                                    n = await u.BrowserTools.evaluate(e);
+                                    break;
                                 case "browser_wait_for":
-                                    return await u.BrowserTools.waitFor(e);
+                                    n = await u.BrowserTools.waitFor(e);
+                                    break;
                                 case "browser_navigate_back":
-                                    return await u.BrowserTools.goBack(e);
+                                    n = await u.BrowserTools.goBack(e);
+                                    break;
                                 case "browser_scroll":
-                                    return await u.BrowserTools.scroll(e);
+                                    n = await u.BrowserTools.scroll(e);
+                                    break;
                                 case "browser_drag":
-                                    return await u.BrowserTools.drag(e);
+                                    n = await u.BrowserTools.drag(e);
+                                    break;
                                 case "browser_handle_dialog":
-                                    return await u.BrowserTools.handleDialog(e);
+                                    n = await u.BrowserTools.handleDialog(e);
+                                    break;
                                 case "browser_resize":
-                                    return await u.BrowserTools.resize(e);
+                                    n = await u.BrowserTools.resize(e);
+                                    break;
                                 case "browser_console_messages":
-                                    return await u.BrowserTools.consoleMessages(e);
+                                    n = await u.BrowserTools.consoleMessages(e);
+                                    break;
                                 case "browser_network_requests":
-                                    return await u.BrowserTools.networkRequests(e);
+                                    n = await u.BrowserTools.networkRequests(e);
+                                    break;
                                 case "browser_take_screenshot":
-                                    return await u.BrowserTools.takeScreenshot(e);
+                                    n = await u.BrowserTools.takeScreenshot(e);
+                                    break;
                                 case "browser_tabs":
-                                    return await u.BrowserTools.tabs(e);
+                                    n = await u.BrowserTools.tabs(e);
+                                    break;
                                 case "browser_search":
-                                    return await u.BrowserTools.search(e);
+                                    n = await u.BrowserTools.search(e);
+                                    break;
                                 case "browser_get_bounding_box":
-                                    return await u.BrowserTools.getBoundingBox(e);
+                                    n = await u.BrowserTools.getBoundingBox(e);
+                                    break;
                                 case "browser_highlight":
-                                    return await u.BrowserTools.highlight(e);
+                                    n = await u.BrowserTools.highlight(e);
+                                    break;
                                 case "browser_lock":
-                                    return await u.BrowserTools.lock(e);
+                                    n = await u.BrowserTools.lock(e);
+                                    break;
                                 case "browser_profile_start":
-                                    return await u.BrowserTools.profileStart(e);
+                                    n = await u.BrowserTools.profileStart(e);
+                                    break;
                                 case "browser_profile_stop":
-                                    return await u.BrowserTools.profileStop(e);
+                                    n = await u.BrowserTools.profileStop(e);
+                                    break;
                                 default:
                                     throw new Error(`Unknown tool: ${t}`)
                             }
+                            return n
                         } catch (e) {
-                            throw c.CursorIDEBrowserLogger.error(`Error executing tool ${t}:`, e), e
+                            throw r = !1, c.CursorIDEBrowserLogger.error(`Error executing tool ${t}:`, e), e
+                        } finally {
+                            ! function(t, e, n, r) {
+                                try {
+                                    Promise.resolve(o.cursor.checkFeatureGate("browser_cpp_telemetry")).then(i => {
+                                        if (i) return g(t, e, n, r)
+                                    }).catch(() => {})
+                                } catch {}
+                            }(t, e, r, n?.browserTelemetry)
                         }
                     }
                     async dispose() {
                         c.CursorIDEBrowserLogger.info("Browser Automation MCP Provider disposed")
                     }
                 }
-                let b, w;
-                async function x() {
+                let w, x;
+                async function k() {
                     c.CursorIDEBrowserLogger.info("injectBrowserUIScript called");
                     try {
                         const t = (0, l.generateBrowserUIScript)("browser-tab-id");
@@ -58868,7 +58928,7 @@
                             recovery: "browser_snapshot to see available options, or select a different option"
                         }
                     }
-                    for (const t of _)
+                    for (const t of y)
                         if (t.allRequired ? t.patterns.every(t => r.includes(t)) : t.patterns.some(t => r.includes(t))) return {
                             message: t.getMessage(e, n),
                             suggestion: t.suggestion,
@@ -58892,7 +58952,7 @@
                         toolName: t,
                         url: r
                     })
-                }, e.accessibilityTreeToYaml = y, e.writeSnapshotToFile = v, e.executeInBrowser = b, e.validateBrowserResult = function(t, e) {
+                }, e.accessibilityTreeToYaml = v, e.writeSnapshotToFile = b, e.executeInBrowser = w, e.validateBrowserResult = function(t, e) {
                     if (null == t) throw new Error("Browser execution returned null or undefined");
                     if ("object" != typeof t) throw new Error("Browser execution returned non-object: " + typeof t);
                     const n = t;
@@ -58910,78 +58970,95 @@
                         includeSnapshotDiff: o
                     } = t;
                     if (i?.snapshot) {
-                        const t = s ?? y(i.snapshot),
+                        const t = s ?? v(i.snapshot),
                             c = i.url,
                             d = i.title,
-                            u = a ? m.get(a) : void 0,
-                            p = Boolean(o && u && u !== t),
-                            f = p && u ? (0, l.createPatch)("snapshot", u, t, "previous", "current", {
+                            u = a ? m.get(a) : void 0;
+                        a && (k(a, c, d), m.set(a, t));
+                        const p = function(t, e, n, r) {
+                                if (t) return {
+                                    viewId: t,
+                                    postUrl: e,
+                                    postTitle: n,
+                                    postSnapshotYaml: r
+                                }
+                            }(a, c, d, t),
+                            f = Boolean(o && u && u !== t),
+                            g = f && u ? (0, l.createPatch)("snapshot", u, t, "previous", "current", {
                                 context: 2
                             }) : void 0,
-                            g = f ? Buffer.byteLength(f, "utf8") : 0,
-                            _ = void 0 !== f && g > 0 && g <= e.SNAPSHOT_DIFF_SIZE_THRESHOLD,
-                            b = Buffer.byteLength(t, "utf8");
-                        if (b > e.SNAPSHOT_SIZE_THRESHOLD) try {
+                            _ = g ? Buffer.byteLength(g, "utf8") : 0,
+                            y = void 0 !== g && _ > 0 && _ <= e.SNAPSHOT_DIFF_SIZE_THRESHOLD,
+                            w = Buffer.byteLength(t, "utf8");
+                        if (w > e.SNAPSHOT_SIZE_THRESHOLD) try {
                             const {
                                 filePath: i,
                                 previewLines: s,
                                 totalLines: o
-                            } = await v(t), u = [];
-                            u.push(`### Action: ${n}`), r && r.length > 0 && u.push(...r), a && u.push(`- Browser View ID: ${a}`), u.push("\n### Page state", `- Page URL: ${c}`, `- Page Title: ${d}`, `- Page Snapshot: Large snapshot (${b} bytes, ${o} lines) written to file`, `- Snapshot File: [${i}](file://${i})`, `- Preview (first ${s.length} lines):`, "```yaml", s.join("\n"), "```", `\n... (${o-s.length} more lines in file)`), _ && f ? u.push("\n### Snapshot diff (previous vs current)", "```diff", f, "```") : p && g > e.SNAPSHOT_DIFF_SIZE_THRESHOLD && u.push("\n### Snapshot diff (previous vs current)", `- Diff too large to include inline (${g} bytes).`);
+                            } = await b(t), u = [];
+                            u.push(`### Action: ${n}`), r && r.length > 0 && u.push(...r), a && u.push(`- Browser View ID: ${a}`), u.push("\n### Page state", `- Page URL: ${c}`, `- Page Title: ${d}`, `- Page Snapshot: Large snapshot (${w} bytes, ${o} lines) written to file`, `- Snapshot File: [${i}](file://${i})`, `- Preview (first ${s.length} lines):`, "```yaml", s.join("\n"), "```", `\n... (${o-s.length} more lines in file)`), y && g ? u.push("\n### Snapshot diff (previous vs current)", "```diff", g, "```") : f && _ > e.SNAPSHOT_DIFF_SIZE_THRESHOLD && u.push("\n### Snapshot diff (previous vs current)", `- Diff too large to include inline (${_} bytes).`);
                             const l = [{
                                 type: "text",
                                 text: u.join("\n")
                             }];
-                            return a && l.push(await E(a, {
+                            return a && l.push(await C(a, {
                                 title: d,
                                 url: c
                             })), {
-                                content: l
+                                content: l,
+                                browserTelemetry: p
                             }
                         } catch (t) {
                             h.CursorIDEBrowserLogger.error("Failed to write snapshot to file, returning inline:", t)
                         }
-                        const w = [];
-                        w.push(`### Action: ${n}`), r && r.length > 0 && w.push(...r), a && w.push(`- Browser View ID: ${a}`), w.push("\n### Page state", `- Page URL: ${c}`, `- Page Title: ${d}`, "- Page Snapshot:", "```yaml", t, "```"), _ && f ? w.push("\n### Snapshot diff (previous vs current)", "```diff", f, "```") : p && g > e.SNAPSHOT_DIFF_SIZE_THRESHOLD && w.push("\n### Snapshot diff (previous vs current)", `- Diff too large to include inline (${g} bytes).`);
-                        const x = [{
+                        const x = [];
+                        x.push(`### Action: ${n}`), r && r.length > 0 && x.push(...r), a && x.push(`- Browser View ID: ${a}`), x.push("\n### Page state", `- Page URL: ${c}`, `- Page Title: ${d}`, "- Page Snapshot:", "```yaml", t, "```"), y && g ? x.push("\n### Snapshot diff (previous vs current)", "```diff", g, "```") : f && _ > e.SNAPSHOT_DIFF_SIZE_THRESHOLD && x.push("\n### Snapshot diff (previous vs current)", `- Diff too large to include inline (${_} bytes).`);
+                        const T = [{
                             type: "text",
-                            text: w.join("\n")
+                            text: x.join("\n")
                         }];
-                        return a && x.push(await E(a, {
+                        return a && T.push(await C(a, {
                             title: d,
                             url: c
                         })), {
-                            content: x
+                            content: T,
+                            browserTelemetry: p
                         }
                     }
                     const c = [{
                         type: "text",
                         text: JSON.stringify(t)
                     }];
-                    return a && c.push(await E(a)), {
+                    return a && c.push(await C(a)), {
                         content: c
                     }
                 }, e.resolveViewId = async function(t) {
                     if (t) return t;
                     const e = await o.commands.executeCommand("cursor.browserView.listTabs");
                     return e?.lastInteractedTab ?? e?.activeTab ?? e?.tabs?.[0]
-                }, e.shouldAutoSnapshot = w, e.ensureFreshSnapshot = async function(t, n, r) {
-                    if (w(t)) {
+                }, e.shouldAutoSnapshot = x, e.ensureFreshSnapshot = async function(t, n, r) {
+                    if (x(t)) {
                         if (h.CursorIDEBrowserLogger.info(`Auto-snapshotting view ${t} (stale or missing)`), !r) throw new Error("browserUtils must be provided for ensureFreshSnapshot");
                         const i = `${r} buildPageSnapshot();`;
-                        await b(i, t, n), e.viewSnapshotTimestamps.set(t, Date.now())
+                        await w(i, t, n), e.viewSnapshotTimestamps.set(t, Date.now())
                     }
                 }, e.setSnapshotYaml = function(t, e) {
                     m.set(t, e)
-                }, e.updateScreenshotPreview = k, e.processScreenshotDataUrl = T, e.createMetadata = E, e.getScreenshot = S, e.maybeAddScreenshotToResult = async function(t, e, n) {
+                }, e.getSnapshotYaml = function(t) {
+                    return m.get(t)
+                }, e.setPageInfo = k, e.getPageInfo = function(t) {
+                    return g.get(t)
+                }, e.clearBrowserTelemetryCaches = function() {
+                    e.viewSnapshotTimestamps.clear(), m.clear(), g.clear()
+                }, e.updateScreenshotPreview = E, e.processScreenshotDataUrl = S, e.createMetadata = C, e.getScreenshot = I, e.maybeAddScreenshotToResult = async function(t, e, n) {
                     if (!n) return t;
-                    const r = await S(e);
+                    const r = await I(e);
                     return r && t.content.push(r), t
                 }, e.processCPUProfile = async function(t) {
                     await c.mkdir(e.TEMP_LOG_DIR, {
                         recursive: !0
                     });
-                    const n = g(),
+                    const n = _(),
                         r = `cpu-profile-${n}.json`,
                         i = `cpu-profile-${n}-summary.md`,
                         a = d.join(e.TEMP_LOG_DIR, r),
@@ -59021,13 +59098,14 @@
                 const p = n(3643),
                     f = n(3728);
                 e.SNAPSHOT_SIZE_THRESHOLD = 25600, e.SNAPSHOT_PREVIEW_LINES = 50, e.SNAPSHOT_DIFF_SIZE_THRESHOLD = 20480, e.TEMP_LOG_DIR = d.join(u.homedir(), ".cursor", "browser-logs"), e.ORIGIN_NAVIGATION_COMMAND = "cursor.browserOriginAllowlist.ensureNavigationAllowed", e.ORIGIN_PAGE_COMMAND = "cursor.browserOriginAllowlist.ensurePageOriginAllowed", e.BROWSER_GET_URL_COMMAND = "cursor.browserView.getURL", e.SNAPSHOT_STALENESS_THRESHOLD_MS = 1e4, e.viewSnapshotTimestamps = new Map;
-                const m = new Map;
+                const m = new Map,
+                    g = new Map;
 
-                function g() {
+                function _() {
                     return `${(new Date).toISOString().replace(/[:.]/g,"-")}-${Math.random().toString(36).slice(2,8)}`
                 }
                 e.ELEMENT_FINDER = "\nfunction getParentElementAcrossShadow(element) {\n\tif (!element) return null;\n\tif (element.parentElement) return element.parentElement;\n\tconst root = element.getRootNode ? element.getRootNode() : null;\n\tif (root && root.host && root.host.nodeType === Node.ELEMENT_NODE) {\n\t\treturn root.host;\n\t}\n\treturn null;\n}\n\nfunction composedContains(ancestor, node) {\n\tlet current = node;\n\twhile (current) {\n\t\tif (current === ancestor) {\n\t\t\treturn true;\n\t\t}\n\t\tcurrent = getParentElementAcrossShadow(current);\n\t}\n\treturn false;\n}\n\nfunction getDeepElementFromPoint(root, x, y) {\n\tif (!root || typeof root.elementFromPoint !== 'function') {\n\t\treturn null;\n\t}\n\tlet element = root.elementFromPoint(x, y);\n\twhile (element && element.shadowRoot && element.shadowRoot.mode === 'open' && typeof element.shadowRoot.elementFromPoint === 'function') {\n\t\tconst nested = element.shadowRoot.elementFromPoint(x, y);\n\t\tif (!nested || nested === element) {\n\t\t\tbreak;\n\t\t}\n\t\telement = nested;\n\t}\n\treturn element;\n}\n\nfunction walkComposedElements(root, visitor) {\n\tfunction visitContainer(container) {\n\t\tconst children = container && container.children ? Array.from(container.children) : [];\n\t\tfor (const child of children) {\n\t\t\tif (visitElement(child)) {\n\t\t\t\treturn true;\n\t\t\t}\n\t\t}\n\t\treturn false;\n\t}\n\n\tfunction visitElement(element) {\n\t\tif (visitor(element)) {\n\t\t\treturn true;\n\t\t}\n\t\tif (element.shadowRoot && element.shadowRoot.mode === 'open') {\n\t\t\tif (visitContainer(element.shadowRoot)) {\n\t\t\t\treturn true;\n\t\t\t}\n\t\t}\n\t\treturn visitContainer(element);\n\t}\n\n\treturn visitContainer(root);\n}\n\nfunction querySelectorAllIncludingOpenShadowRoots(selector) {\n\tconst matches = [];\n\twalkComposedElements(document, (element) => {\n\t\ttry {\n\t\t\tif (element.matches && element.matches(selector)) {\n\t\t\t\tmatches.push(element);\n\t\t\t}\n\t\t} catch (_) { }\n\t\treturn false;\n\t});\n\treturn matches;\n}\n\nfunction findElementByRef(ref) {\n\tlet element = null;\n\twalkComposedElements(document, (candidate) => {\n\t\tif (candidate.getAttribute && candidate.getAttribute('data-cursor-ref') === ref) {\n\t\t\telement = candidate;\n\t\t\treturn true;\n\t\t}\n\t\treturn false;\n\t});\n\tif (element) {\n\t\treturn { element, method: 'ref-attribute' };\n\t}\n\treturn { element: null, method: 'not-found' };\n}\n\nfunction getElementDescription(element) {\n\tif (!element) return '';\n\tconst tag = element.tagName?.toLowerCase() || '';\n\tconst role = element.getAttribute('role') || '';\n\tconst ariaLabel = element.getAttribute('aria-label') || '';\n\tconst text = (element.textContent || '').trim().substring(0, 50);\n\tconst parts = [];\n\tif (tag) parts.push(tag);\n\tif (role) parts.push('role=' + role);\n\tif (ariaLabel) parts.push('aria-label=\"' + ariaLabel + '\"');\n\telse if (text) parts.push('text=\"' + text + '\"');\n\treturn parts.length > 0 ? ' (' + parts.join(', ') + ')' : '';\n}\n\nfunction assertDescriptionMatches(element, ref, expectedDescription) {\n\tconst actualDescription = getElementDescription(element);\n\tif (expectedDescription) {\n\t\tconst expectedLower = expectedDescription.toLowerCase();\n\t\tconst actualLower = actualDescription.toLowerCase();\n\n\t\tconst actualTextMatch = actualLower.match(/text=\"([^\"]+)\"/);\n\t\tconst actualText = actualTextMatch ? actualTextMatch[1] : '';\n\n\t\tconst actualTag = element.tagName?.toLowerCase() || '';\n\t\tconst actualRole = element.getAttribute?.('role')?.toLowerCase() || '';\n\n\t\tconst expectedMentionsButton = expectedLower.includes('button');\n\t\tconst actualIsButton = actualTag === 'button' || actualRole === 'button' || actualLower.includes('button');\n\n\t\tif (expectedMentionsButton && !actualIsButton) {\n\t\t\tthrow new Error('Stale element reference: ' + ref + ' expected a button but found ' + actualDescription + '. The page may have changed. Take a new snapshot.');\n\t\t}\n\n\t\tconst expectedWords = expectedLower.replace(/button|link|input|checkbox|radio/g, '').trim().split(/\\s+/).filter(w => w.length > 2);\n\t\tif (expectedWords.length > 0 && actualText) {\n\t\t\tconst hasMatchingWord = expectedWords.some(word => actualText.includes(word));\n\t\t\tif (!hasMatchingWord) {\n\t\t\t\tthrow new Error('Stale element reference: ' + ref + ' now points to' + actualDescription + ' but was expected to be \"' + expectedDescription + '\". The page may have changed. Take a new snapshot.');\n\t\t\t}\n\t\t}\n\t}\n}\n\nfunction validateElementForInteraction(element, ref, action, expectedDescription) {\n\tif (!element) {\n\t\tthrow new Error('Element not found: ' + ref + '. Take a snapshot to get updated refs.');\n\t}\n\n\tassertDescriptionMatches(element, ref, expectedDescription);\n\n\tconst actualDescription = getElementDescription(element);\n\n\tconst rect = element.getBoundingClientRect();\n\tif (rect.width === 0 && rect.height === 0) {\n\t\tthrow new Error('Element ' + ref + actualDescription + ' is not visible (zero dimensions). It may be hidden or collapsed.');\n\t}\n\n\tconst style = window.getComputedStyle(element);\n\tif (style.display === 'none') {\n\t\tthrow new Error('Element ' + ref + actualDescription + ' is hidden (display: none).');\n\t}\n\tif (style.visibility === 'hidden') {\n\t\tthrow new Error('Element ' + ref + actualDescription + ' is hidden (visibility: hidden).');\n\t}\n\tif (parseFloat(style.opacity) === 0) {\n\t\tthrow new Error('Element ' + ref + actualDescription + ' is not visible (opacity: 0). Wait for it to appear.');\n\t}\n\tif (style.pointerEvents === 'none' && action !== 'type' && action !== 'fill') {\n\t\tthrow new Error('Element ' + ref + actualDescription + ' has pointer-events: none and cannot receive ' + action + ' interactions. Try clicking a parent element or waiting for a loading state to complete.');\n\t}\n\n\tif (element.disabled) {\n\t\tthrow new Error('Element ' + ref + actualDescription + ' is disabled and cannot be interacted with. Enable the element first or interact with a different element.');\n\t}\n\tlet parent = getParentElementAcrossShadow(element);\n\twhile (parent) {\n\t\tif (parent.tagName === 'FIELDSET' && parent.disabled) {\n\t\t\tthrow new Error('Element ' + ref + actualDescription + ' is inside a disabled fieldset and cannot be interacted with. Enable the fieldset first or interact with elements outside it.');\n\t\t}\n\t\tparent = getParentElementAcrossShadow(parent);\n\t}\n\n\tif (action === 'type' || action === 'fill') {\n\t\tconst tag = element.tagName?.toLowerCase();\n\t\tconst isContentEditable = element.isContentEditable || element.getAttribute('contenteditable') === 'true';\n\t\tconst isReadonly = element.readOnly || element.getAttribute('readonly') !== null;\n\t\tconst isTextInput = (tag === 'input' && !['button', 'submit', 'reset', 'checkbox', 'radio', 'file', 'image', 'hidden'].includes(element.type?.toLowerCase())) ||\n\t\t\ttag === 'textarea' ||\n\t\t\tisContentEditable;\n\t\tif (!isTextInput) {\n\t\t\tthrow new Error('Element ' + ref + actualDescription + ' is not a text input, textarea, or contenteditable element. Use browser_click instead if you want to interact with this element.');\n\t\t}\n\t\tif (isReadonly && !isContentEditable) {\n\t\t\tthrow new Error('Element ' + ref + actualDescription + ' is readonly and cannot be modified. The value is set programmatically and cannot be changed by user input.');\n\t\t}\n\t}\n\n\treturn true;\n}\n\nfunction previewNode(element) {\n\tif (!element) return 'null';\n\tconst tag = element.tagName?.toLowerCase() || 'unknown';\n\tconst attrs = [];\n\tif (element.id) attrs.push('id=\"' + element.id + '\"');\n\tif (element.className && typeof element.className === 'string') {\n\t\tconst classes = element.className.trim().split(/\\s+/).slice(0, 2).join(' ');\n\t\tif (classes) attrs.push('class=\"' + classes + '\"');\n\t}\n\tif (element.getAttribute && element.getAttribute('role')) {\n\t\tattrs.push('role=\"' + element.getAttribute('role') + '\"');\n\t}\n\tif (element.getAttribute && element.getAttribute('data-cursor-ref')) {\n\t\tattrs.push('ref=\"' + element.getAttribute('data-cursor-ref') + '\"');\n\t}\n\tconst text = (element.textContent || '').trim().substring(0, 30);\n\tconst textPart = text ? '>' + text + '...' : '';\n\treturn '<' + tag + (attrs.length ? ' ' + attrs.join(' ') : '') + textPart + '>';\n}\n\nfunction expectHitTarget(hitPoint, targetElement, targetRef) {\n\tconst doc = hitPoint.ownerDocument || document;\n\tlet hitElement = getDeepElementFromPoint(doc, hitPoint.x, hitPoint.y);\n\n\tif (!hitElement) {\n\t\treturn {\n\t\t\thit: false,\n\t\t\tinterceptedBy: 'nothing (coordinates outside viewport)',\n\t\t\terror: 'Click coordinates (' + hitPoint.x + ', ' + hitPoint.y + ') are outside the visible viewport.',\n\t\t\tsuggestion: 'The element may be scrolled out of view. Try using browser_scroll with scrollIntoView: true first.'\n\t\t};\n\t}\n\n\tif (hitElement === targetElement || composedContains(targetElement, hitElement)) {\n\t\treturn { hit: true };\n\t}\n\n\tif (composedContains(targetElement, getParentElementAcrossShadow(hitElement))) {\n\t\treturn { hit: true };\n\t}\n\n\tfunction isScrollContainer(el) {\n\t\tconst style = window.getComputedStyle(el);\n\t\tconst overflowY = style.overflowY;\n\t\tconst overflowX = style.overflowX;\n\t\treturn (overflowY === 'auto' || overflowY === 'scroll' || overflowX === 'auto' || overflowX === 'scroll') &&\n\t\t\t(el.scrollHeight > el.clientHeight || el.scrollWidth > el.clientWidth);\n\t}\n\n\tfunction isElementClippedByContainer(el, container) {\n\t\tconst elRect = el.getBoundingClientRect();\n\t\tconst containerRect = container.getBoundingClientRect();\n\t\treturn elRect.top < containerRect.top || elRect.bottom > containerRect.bottom ||\n\t\t\telRect.left < containerRect.left || elRect.right > containerRect.right;\n\t}\n\n\tlet current = hitElement;\n\twhile (current && current !== targetElement && current !== document.body) {\n\t\tconst tagName = current.tagName?.toLowerCase() || '';\n\t\tconst role = current.getAttribute?.('role') || '';\n\t\tconst style = window.getComputedStyle(current);\n\t\tconst position = style.position;\n\t\tconst zIndex = parseInt(style.zIndex, 10);\n\t\tconst hasHighZIndex = !isNaN(zIndex) && zIndex > 100;\n\t\tconst isFixed = position === 'fixed' || position === 'absolute';\n\n\t\tconst isDialog = tagName === 'dialog' || role === 'dialog' || role === 'alertdialog';\n\t\tconst isModal = current.getAttribute?.('aria-modal') === 'true';\n\t\tconst isIframe = tagName === 'iframe';\n\t\tconst isNavOrHeader = tagName === 'nav' || tagName === 'header' || role === 'navigation' || role === 'banner';\n\n\t\tif (isIframe) {\n\t\t\tconst hitRef = current.getAttribute('data-cursor-ref');\n\t\t\tconst preview = previewNode(current);\n\t\t\treturn {\n\t\t\t\thit: false,\n\t\t\t\tinterceptedBy: preview,\n\t\t\t\tinterceptedRef: hitRef || undefined,\n\t\t\t\tblockingType: 'iframe',\n\t\t\t\terror: 'Click would hit an iframe instead of the target element.',\n\t\t\t\tsuggestion: 'The target is behind an iframe. Iframe content cannot be interacted with directly. ' + (hitRef ? 'The iframe has ref ' + hitRef + '.' : 'Navigate to the iframe URL directly if you need to interact with its content.')\n\t\t\t};\n\t\t}\n\n\t\tif (isDialog || isModal) {\n\t\t\tconst hitRef = current.getAttribute('data-cursor-ref');\n\t\t\tconst preview = previewNode(current);\n\t\t\treturn {\n\t\t\t\thit: false,\n\t\t\t\tinterceptedBy: preview,\n\t\t\t\tinterceptedRef: hitRef || undefined,\n\t\t\t\tblockingType: 'modal',\n\t\t\t\terror: 'Click would hit a modal/dialog instead of the target element.',\n\t\t\t\tsuggestion: 'A modal or dialog is blocking the target. Close it first by pressing Escape (browser_press_key with key \"Escape\") or clicking its close button.'\n\t\t\t};\n\t\t}\n\n\t\tif (isScrollContainer(current)) {\n\t\t\tif (targetElement.closest && composedContains(current, targetElement)) {\n\t\t\t\tif (isElementClippedByContainer(targetElement, current)) {\n\t\t\t\t\tconst hitRef = current.getAttribute('data-cursor-ref');\n\t\t\t\t\tconst preview = previewNode(current);\n\t\t\t\t\treturn {\n\t\t\t\t\t\thit: false,\n\t\t\t\t\t\tinterceptedBy: preview,\n\t\t\t\t\t\tinterceptedRef: hitRef || undefined,\n\t\t\t\t\t\tblockingType: 'scroll-container',\n\t\t\t\t\t\terror: 'The target element is clipped by a scroll container (' + preview + '). The element exists but is not visible within its scrollable parent.',\n\t\t\t\t\t\tsuggestion: 'Use browser_scroll with the target ref and scrollIntoView: true to scroll the element into view within its container.' + (hitRef ? ' The scroll container has ref ' + hitRef + '.' : '')\n\t\t\t\t\t};\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\tif (isNavOrHeader && isFixed) {\n\t\t\tconst hitRef = current.getAttribute('data-cursor-ref');\n\t\t\tconst preview = previewNode(current);\n\t\t\treturn {\n\t\t\t\thit: false,\n\t\t\t\tinterceptedBy: preview,\n\t\t\t\tinterceptedRef: hitRef || undefined,\n\t\t\t\tblockingType: 'fixed-header',\n\t\t\t\terror: 'Click would hit a fixed header/navigation bar instead of the target.',\n\t\t\t\tsuggestion: 'A fixed header/navigation bar is blocking the target. Try scrolling the page so the target is not behind the fixed element, or click directly on the header element if that is the intent.'\n\t\t\t};\n\t\t}\n\n\t\tif (hasHighZIndex && isFixed && !isScrollContainer(current)) {\n\t\t\tconst hitRef = current.getAttribute('data-cursor-ref');\n\t\t\tconst preview = previewNode(current);\n\t\t\treturn {\n\t\t\t\thit: false,\n\t\t\t\tinterceptedBy: preview,\n\t\t\t\tinterceptedRef: hitRef || undefined,\n\t\t\t\tblockingType: 'overlay',\n\t\t\t\terror: 'Click would hit an overlay element (' + preview + ') instead of the target.',\n\t\t\t\tsuggestion: hitRef\n\t\t\t\t\t? 'An overlay (ref: ' + hitRef + ') is blocking the target. Either click that element directly, or dismiss/close the overlay first.'\n\t\t\t\t\t: 'An overlay element is blocking the target. Close or dismiss this overlay before interacting with elements behind it. Try pressing Escape or looking for a close button.'\n\t\t\t};\n\t\t}\n\n\t\tcurrent = getParentElementAcrossShadow(current);\n\t}\n\n\tif (current !== targetElement && !composedContains(targetElement, hitElement)) {\n\t\tconst hitRef = hitElement.getAttribute('data-cursor-ref');\n\t\tconst preview = previewNode(hitElement);\n\t\tconst targetRect = targetElement.getBoundingClientRect();\n\t\tconst isTargetOffscreen = targetRect.bottom < 0 || targetRect.top > window.innerHeight ||\n\t\t\ttargetRect.right < 0 || targetRect.left > window.innerWidth;\n\n\t\tif (isTargetOffscreen) {\n\t\t\treturn {\n\t\t\t\thit: false,\n\t\t\t\tinterceptedBy: preview,\n\t\t\t\tinterceptedRef: hitRef || undefined,\n\t\t\t\tblockingType: 'offscreen',\n\t\t\t\terror: 'The target element is outside the visible viewport.',\n\t\t\t\tsuggestion: 'Use browser_scroll with scrollIntoView: true to bring the target into view first.'\n\t\t\t};\n\t\t}\n\n\t\tconst hitElementStyle = window.getComputedStyle(hitElement);\n\t\tconst hitTagName = hitElement.tagName?.toLowerCase() || '';\n\t\tconst isHitScrollContainer = isScrollContainer(hitElement);\n\n\t\tif (isHitScrollContainer && composedContains(hitElement, targetElement)) {\n\t\t\treturn {\n\t\t\t\thit: false,\n\t\t\t\tinterceptedBy: preview,\n\t\t\t\tinterceptedRef: hitRef || undefined,\n\t\t\t\tblockingType: 'scroll-container',\n\t\t\t\terror: 'The target is inside a scroll container but not in the visible scroll area. The click would hit the scroll container instead.',\n\t\t\t\tsuggestion: 'Use browser_scroll with the target ref and scrollIntoView: true to scroll the element into view within its container.'\n\t\t\t};\n\t\t}\n\n\t\treturn {\n\t\t\thit: false,\n\t\t\tinterceptedBy: preview,\n\t\t\tinterceptedRef: hitRef || undefined,\n\t\t\tblockingType: 'sibling',\n\t\t\terror: 'Click would hit a different element (' + preview + ') instead of the target.',\n\t\t\tsuggestion: hitRef\n\t\t\t\t? 'The element at the click position has ref ' + hitRef + '. Click that ref if it is the intended target, or take a snapshot to see updated element positions.'\n\t\t\t\t: 'Another element is at the click position. Take a snapshot to see the current page layout and find the correct element ref.'\n\t\t};\n\t}\n\n\treturn { hit: true };\n}\n";
-                const _ = [{
+                const y = [{
                     patterns: ["element not found", "cannot find"],
                     getMessage: t => "Element not found" + (t?.ref ? `: ${t.ref}` : ""),
                     suggestion: "Take a snapshot first to see the current page state and available element refs. The refs might have changed since the last snapshot.",
@@ -59111,7 +59189,7 @@
                     recovery: "browser_scroll with ref and scrollIntoView: true"
                 }];
 
-                function y(t, e = 0) {
+                function v(t, e = 0) {
                     const n = "  ".repeat(e),
                         r = [];
                     if (t.role && r.push(`${n}- role: ${t.role}`), t.name) {
@@ -59128,15 +59206,15 @@
                     }
                     if (void 0 !== t.level && r.push(`${n}  level: ${t.level}`), t.states && t.states.length > 0 && r.push(`${n}  states: [${t.states.join(", ")}]`), t.children && t.children.length > 0) {
                         r.push(`${n}  children:`);
-                        for (const n of t.children) r.push(y(n, e + 2))
+                        for (const n of t.children) r.push(v(n, e + 2))
                     }
                     return r.join("\n")
                 }
-                async function v(t) {
+                async function b(t) {
                     await c.mkdir(e.TEMP_LOG_DIR, {
                         recursive: !0
                     });
-                    const n = `snapshot-${g()}.log`,
+                    const n = `snapshot-${_()}.log`,
                         r = d.join(e.TEMP_LOG_DIR, n),
                         i = t.split("\n"),
                         a = i.length,
@@ -59147,7 +59225,7 @@
                         totalLines: a
                     }
                 }
-                async function b(t, e, n) {
+                async function w(t, e, n) {
                     try {
                         return await o.commands.executeCommand("cursor.browserView.executeJavaScript", t, e, n)
                     } catch (t) {
@@ -59155,12 +59233,19 @@
                     }
                 }
 
-                function w(t) {
+                function x(t) {
                     const n = e.viewSnapshotTimestamps.get(t);
                     return !n || Date.now() - n > e.SNAPSHOT_STALENESS_THRESHOLD_MS
                 }
-                const x = "\n\t(() => ({\n\t\tviewportCssWidth: window.innerWidth,\n\t\tviewportCssHeight: window.innerHeight,\n\t\turl: window.location.href,\n\t}))();\n";
-                async function k(t, n) {
+
+                function k(t, e, n) {
+                    g.set(t, {
+                        url: e,
+                        title: n
+                    })
+                }
+                const T = "\n\t(() => ({\n\t\tviewportCssWidth: window.innerWidth,\n\t\tviewportCssHeight: window.innerHeight,\n\t\turl: window.location.href,\n\t}))();\n";
+                async function E(t, n) {
                     try {
                         const r = await o.commands.executeCommand(e.BROWSER_GET_URL_COMMAND, t);
                         await o.commands.executeCommand("cursor.browserView.updateScreenshot", t, n, r)
@@ -59168,10 +59253,10 @@
                         h.CursorIDEBrowserLogger.warn(`Failed to update screenshot service: ${t}`)
                     }
                 }
-                async function T(t, e, n) {
+                async function S(t, e, n) {
                     if ((0, p.clearLastViewportScreenshot)(t), !n?.cacheViewportScreenshot) return (0, p.getImageContentFromDataUrl)(e);
                     try {
-                        const r = await b(x, t, n.headless),
+                        const r = await w(T, t, n.headless),
                             i = Number(r.viewportCssWidth),
                             a = Number(r.viewportCssHeight),
                             s = "string" == typeof r.url ? r.url : "";
@@ -59187,7 +59272,7 @@
                         return h.CursorIDEBrowserLogger.warn(`Failed to normalize viewport screenshot: ${t}`), (0, p.getImageContentFromDataUrl)(e)
                     }
                 }
-                async function E(t, e) {
+                async function C(t, e) {
                     const n = await o.commands.executeCommand("cursor.browserView.isLocked", t);
                     return {
                         type: "metadata",
@@ -59197,7 +59282,7 @@
                         locked: n ?? !1
                     }
                 }
-                async function S(t) {
+                async function I(t) {
                     try {
                         h.CursorIDEBrowserLogger.info(`[getScreenshot] viewId=${t}, taking screenshot`);
                         const e = await o.commands.executeCommand("cursor.browserView.takeScreenshot", {
@@ -59205,7 +59290,7 @@
                             type: "png",
                             fullPage: !1
                         });
-                        return e.success && e.dataUrl ? (await k(t, e.dataUrl), T(t, e.dataUrl, {
+                        return e.success && e.dataUrl ? (await E(t, e.dataUrl), S(t, e.dataUrl, {
                             cacheViewportScreenshot: !0
                         })) : void h.CursorIDEBrowserLogger.warn(`Failed to take screenshot: ${e.error}`)
                     } catch (t) {
@@ -59300,7 +59385,8 @@
                                 const n = await (0, i.formatPageStateResult)({
                                     action: `${a} (failed)`,
                                     detailLines: e,
-                                    pageState: _.pageState
+                                    pageState: _.pageState,
+                                    viewId: o
                                 });
                                 return (0, i.maybeAddScreenshotToResult)(n, o, t.take_screenshot_afterwards ?? !1)
                             }
@@ -59325,7 +59411,8 @@
                         const v = await (0, i.formatPageStateResult)({
                             action: a,
                             detailLines: y,
-                            pageState: _.pageState
+                            pageState: _.pageState,
+                            viewId: o
                         });
                         return (0, i.maybeAddScreenshotToResult)(v, o, t.take_screenshot_afterwards ?? !1)
                     } catch (e) {
@@ -59401,7 +59488,8 @@
                                 const r = await (0, i.formatPageStateResult)({
                                     action: `${n} (failed)`,
                                     detailLines: e,
-                                    pageState: m.pageState
+                                    pageState: m.pageState,
+                                    viewId: l
                                 });
                                 return (0, i.maybeAddScreenshotToResult)(r, l, t.take_screenshot_afterwards ?? !1)
                             }
@@ -59422,7 +59510,8 @@
                         const _ = await (0, i.formatPageStateResult)({
                             action: n,
                             detailLines: g,
-                            pageState: m.pageState
+                            pageState: m.pageState,
+                            viewId: l
                         });
                         return (0, i.maybeAddScreenshotToResult)(_, l, t.take_screenshot_afterwards ?? !1)
                     } catch (t) {
@@ -59501,7 +59590,8 @@
                         const b = await (0, i.formatPageStateResult)({
                             action: a,
                             detailLines: y,
-                            pageState: _.pageState
+                            pageState: _.pageState,
+                            viewId: s
                         });
                         return (0, i.maybeAddScreenshotToResult)(b, s, t.take_screenshot_afterwards ?? !1)
                     } catch (e) {
@@ -60357,7 +60447,8 @@
                                 const u = await (0, i.formatPageStateResult)({
                                     action: "type",
                                     detailLines: d,
-                                    pageState: c.pageState
+                                    pageState: c.pageState,
+                                    viewId: e
                                 });
                                 return (0, i.maybeAddScreenshotToResult)(u, e, t.take_screenshot_afterwards ?? !1)
                             } catch (e) {
@@ -60391,7 +60482,8 @@
                                 const d = await (0, i.formatPageStateResult)({
                                     action: "fill",
                                     detailLines: [`- Filled with value: "${c.value.substring(0,50)}${c.value.length>50?"...":""}"`],
-                                    pageState: c.pageState
+                                    pageState: c.pageState,
+                                    viewId: e
                                 });
                                 return (0, i.maybeAddScreenshotToResult)(d, e, t.take_screenshot_afterwards ?? !1)
                             } catch (e) {
@@ -60447,7 +60539,8 @@
                                 const d = await (0, i.formatPageStateResult)({
                                     action: "fill_form",
                                     detailLines: c,
-                                    pageState: o.pageState
+                                    pageState: o.pageState,
+                                    viewId: e
                                 });
                                 return (0, i.maybeAddScreenshotToResult)(d, e, t.take_screenshot_afterwards ?? !1)
                             } catch (t) {
@@ -60496,7 +60589,8 @@
                                 const c = await (0, i.formatPageStateResult)({
                                     action: "select_option",
                                     detailLines: o,
-                                    pageState: s.pageState
+                                    pageState: s.pageState,
+                                    viewId: e
                                 });
                                 return (0, i.maybeAddScreenshotToResult)(c, e, t.take_screenshot_afterwards ?? !1)
                             } catch (e) {
@@ -66224,4 +66318,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/475871d112608994deb2e3065dfb7c6b0baa0c50/extensions/cursor-browser-automation/dist/extension.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/dacbe9b31599a253763e4910eb6ab38704653320/extensions/cursor-browser-automation/dist/extension.js.map

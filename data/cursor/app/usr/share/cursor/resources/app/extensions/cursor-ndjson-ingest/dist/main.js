@@ -47,72 +47,79 @@
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.activate = async function(e) {
-                    l.NdjsonIngestLogger.init(), e.subscriptions.push(d.workspace.onDidChangeConfiguration(t => {
+                    l.NdjsonIngestLogger.init(), e.subscriptions.push(u.workspace.onDidChangeConfiguration(t => {
                         (t.affectsConfiguration("ndjson.port") || t.affectsConfiguration("ndjson.bindAddress")) && function(e) {
-                            A(), N = setTimeout(() => {
-                                N = void 0, b(async () => {
-                                    if (!f) return;
-                                    l.NdjsonIngestLogger.info("Server settings changed, restarting ingest server"), await D();
-                                    const t = await E(e, {});
-                                    void 0 !== t && "string" != typeof t && l.NdjsonIngestLogger.info("NDJSON ingest server restarted after settings change")
+                            $(), y = setTimeout(() => {
+                                y = void 0, S(async () => {
+                                    if (!f || !N) return;
+                                    const t = u.workspace.getConfiguration("ndjson"),
+                                        r = t.get("bindAddress", "127.0.0.1"),
+                                        o = t.get("port", 0);
+                                    if (r === N.bindAddress && o === N.configuredPort) return;
+                                    const n = p;
+                                    l.NdjsonIngestLogger.info("Server settings changed, restarting ingest server"), await A();
+                                    const s = await L(e, {
+                                        surface: n
+                                    });
+                                    void 0 !== s && "string" != typeof s && l.NdjsonIngestLogger.info("NDJSON ingest server restarted after settings change")
                                 })
                             }, 300)
                         }(e)
-                    })), e.subscriptions.push(d.commands.registerCommand("cursor.ndjsonIngest.start", t => function(e, t = {}) {
-                        return b(() => E(e, t))
+                    })), e.subscriptions.push(u.commands.registerCommand("cursor.ndjsonIngest.start", t => function(e, t = {}) {
+                        return S(() => L(e, t))
                     }(e, function(e) {
                         return "string" == typeof e ? {
                             sessionId: e
                         } : e ?? {}
-                    }(t)))), e.subscriptions.push(d.commands.registerCommand("cursor.ndjsonIngest.stop", () => L())), e.subscriptions.push(d.commands.registerCommand("cursor.ndjsonIngest.copyCurl", async () => {
-                        if (!h) return void d.window.showWarningMessage("Server is not running.");
+                    }(t)))), e.subscriptions.push(u.commands.registerCommand("cursor.ndjsonIngest.stop", () => E())), e.subscriptions.push(u.commands.registerCommand("cursor.ndjsonIngest.copyCurl", async () => {
+                        if (!h) return void u.window.showWarningMessage("Server is not running.");
                         const e = `curl -sS -H "Content-Type: application/x-ndjson" --data-binary '{"hello":"world"}' "${h.toString()}"`;
-                        await d.env.clipboard.writeText(e), d.window.showInformationMessage("NDJSON Ingest: curl command copied to clipboard.")
-                    })), e.subscriptions.push(d.commands.registerCommand("cursor.ndjsonIngest.reassignPort", t => function(e, t) {
-                        return b(async () => {
-                            const r = y(t ?? p),
-                                o = d.workspace.getConfiguration("ndjson").get("port", 0);
-                            if (0 !== o) return j(`NDJSON Ingest: Cannot reassign the port while ndjson.port is pinned to ${o}. Set ndjson.port to 0 to use automatic workspace port assignment.`), `Cannot reassign pinned port ${o}`;
-                            const n = _(h || f?.getLoopbackUrl()) ?? O(e, r);
-                            0 !== n ? l.NdjsonIngestLogger.info(`Reassigning NDJSON ingest server away from sticky port ${n}`) : l.NdjsonIngestLogger.info("Reassigning NDJSON ingest server to a fresh auto-allocated port"), await m(e, r, 0), await D();
-                            const s = await E(e, {
+                        await u.env.clipboard.writeText(e), u.window.showInformationMessage("NDJSON Ingest: curl command copied to clipboard.")
+                    })), e.subscriptions.push(u.commands.registerCommand("cursor.ndjsonIngest.reassignPort", t => function(e, t) {
+                        return S(async () => {
+                            const r = P(t ?? p),
+                                o = u.workspace.getConfiguration("ndjson").get("port", 0);
+                            if (0 !== o) return I(`NDJSON Ingest: Cannot reassign the port while ndjson.port is pinned to ${o}. Set ndjson.port to 0 to use automatic workspace port assignment.`), `Cannot reassign pinned port ${o}`;
+                            const n = _(h || f?.getLoopbackUrl()) ?? m(e, r);
+                            0 !== n ? l.NdjsonIngestLogger.info(`Reassigning NDJSON ingest server away from sticky port ${n}`) : l.NdjsonIngestLogger.info("Reassigning NDJSON ingest server to a fresh auto-allocated port"), await j(e, r, 0), await A();
+                            const s = await L(e, {
                                 ignoreStickyPort: !0,
                                 excludedPorts: 0 !== n ? [n] : [],
                                 surface: r
                             });
                             if ("string" != typeof s && s) {
                                 const e = _(s.externalUrl);
-                                0 !== n && void 0 !== e && e !== n ? d.window.showInformationMessage(`NDJSON Ingest: Reassigned workspace port from ${n} to ${e} and restarted the server.`) : void 0 !== e ? d.window.showInformationMessage(`NDJSON Ingest: Restarted the server on port ${e}.`) : d.window.showInformationMessage("NDJSON Ingest: Reassigned workspace port and restarted the server.")
+                                0 !== n && void 0 !== e && e !== n ? u.window.showInformationMessage(`NDJSON Ingest: Reassigned workspace port from ${n} to ${e} and restarted the server.`) : void 0 !== e ? u.window.showInformationMessage(`NDJSON Ingest: Restarted the server on port ${e}.`) : u.window.showInformationMessage("NDJSON Ingest: Reassigned workspace port and restarted the server.")
                             }
                             return s
                         })
-                    }(e, t))), e.subscriptions.push(d.commands.registerCommand("cursor.ndjsonIngest.showStatus", () => {
-                        h ? d.window.showInformationMessage(`URL: ${h.toString()}`) : d.window.showInformationMessage("NDJSON: server not running.")
+                    }(e, t))), e.subscriptions.push(u.commands.registerCommand("cursor.ndjsonIngest.showStatus", () => {
+                        h ? u.window.showInformationMessage(`URL: ${h.toString()}`) : u.window.showInformationMessage("NDJSON: server not running.")
                     }))
                 }, t.deactivate = async function() {
-                    A(), await L()
+                    $(), await E()
                 };
                 const a = i(r(982)),
                     c = r(857),
-                    u = r(928),
-                    d = i(r(398)),
+                    d = r(928),
+                    u = i(r(398)),
                     g = r(882),
                     l = r(377);
                 let f, p, h = "";
-                const v = 1,
-                    w = "classic";
-                let N, S = Promise.resolve();
+                const w = 1,
+                    v = "classic";
+                let N, y, b = Promise.resolve();
 
-                function b(e) {
-                    const t = S.then(e, e);
-                    return S = t.catch(() => {}), t
-                }
-
-                function y(e) {
-                    return "glass" === e ? "glass" : w
+                function S(e) {
+                    const t = b.then(e, e);
+                    return b = t.catch(() => {}), t
                 }
 
                 function P(e) {
+                    return "glass" === e ? "glass" : v
+                }
+
+                function O(e) {
                     return "classic" === e ? {
                         allocatedPortKey: "ndjson.allocatedPort",
                         ingestPathIdKey: "ndjson.targetId"
@@ -122,16 +129,16 @@
                     }
                 }
 
-                function O(e, t) {
-                    return e.workspaceState.get(P(t).allocatedPortKey, 0)
+                function m(e, t) {
+                    return e.workspaceState.get(O(t).allocatedPortKey, 0)
                 }
-                async function m(e, t, r) {
-                    await e.workspaceState.update(P(t).allocatedPortKey, 0 === r ? void 0 : r)
+                async function j(e, t, r) {
+                    await e.workspaceState.update(O(t).allocatedPortKey, 0 === r ? void 0 : r)
                 }
 
-                function j(e) {
-                    d.window.showErrorMessage(e, "Change Port").then(e => {
-                        "Change Port" === e && d.commands.executeCommand("workbench.action.openWorkspaceSettings", "ndjson.port")
+                function I(e) {
+                    u.window.showErrorMessage(e, "Change Port").then(e => {
+                        "Change Port" === e && u.commands.executeCommand("workbench.action.openWorkspaceSettings", "ndjson.port")
                     })
                 }
 
@@ -145,12 +152,12 @@
                         return void l.NdjsonIngestLogger.warn(`Failed to parse NDJSON server URL while resolving port: ${e}`, t)
                     }
                 }
-                async function I(e, t, r) {
+                async function D(e, t, r) {
                     const o = await e.start();
                     f = e, p = r;
-                    const n = d.Uri.parse(o.loopbackUrl);
+                    const n = u.Uri.parse(o.loopbackUrl);
                     try {
-                        const e = await d.env.asExternalUri(n);
+                        const e = await u.env.asExternalUri(n);
                         h = e.toString()
                     } catch (e) {
                         l.NdjsonIngestLogger.error("asExternalUri failed; using loopback URL", e), h = n.toString()
@@ -160,18 +167,18 @@
                         logPath: t ? e.getLogPathForSession(t) : ""
                     }
                 }
-                async function D() {
+                async function A() {
                     l.NdjsonIngestLogger.info("Stopping NDJSON ingest server"), f && (await f.stop().catch(e => {
                         l.NdjsonIngestLogger.error("Error stopping NDJSON ingest server:", e)
-                    }), f = void 0, h = "", p = void 0)
+                    }), f = void 0, h = "", p = void 0, N = void 0)
                 }
-                async function E(e, t = {}) {
-                    const r = y(t.surface ?? p);
-                    if (!d.workspace.isTrusted) return void d.window.showWarningMessage("debug mode disabled in untrusted workspace.");
-                    const o = d.workspace.workspaceFolders?.[0],
-                        n = o ? d.Uri.joinPath(o.uri, ".cursor").fsPath : (0, u.join)((0, c.homedir)(), ".cursor", "debug-logs");
+                async function L(e, t = {}) {
+                    const r = P(t.surface ?? p);
+                    if (!u.workspace.isTrusted) return void u.window.showWarningMessage("debug mode disabled in untrusted workspace.");
+                    const o = u.workspace.workspaceFolders?.[0],
+                        n = o ? u.Uri.joinPath(o.uri, ".cursor").fsPath : (0, d.join)((0, c.homedir)(), ".cursor", "debug-logs");
                     if (f) {
-                        const e = (0, u.resolve)(f.getLogDirectory()) === (0, u.resolve)(n),
+                        const e = (0, d.resolve)(f.getLogDirectory()) === (0, d.resolve)(n),
                             o = h || f.getLoopbackUrl();
                         if (e)
                             if (o) {
@@ -179,89 +186,107 @@
                                     externalUrl: o,
                                     logPath: t.sessionId ? f.getLogPathForSession(t.sessionId) : ""
                                 };
-                                l.NdjsonIngestLogger.info(`Restarting NDJSON ingest server to switch from ${p} to ${r} sticky identity`), await D()
-                            } else l.NdjsonIngestLogger.warn("Server was set but no URL was available; stopping stale server."), await D();
-                        else await D()
+                                l.NdjsonIngestLogger.info(`Restarting NDJSON ingest server to switch from ${p} to ${r} sticky identity`), await A()
+                            } else l.NdjsonIngestLogger.warn("Server was set but no URL was available; stopping stale server."), await A();
+                        else await A()
                     }
-                    const s = d.workspace.getConfiguration("ndjson"),
+                    const s = u.workspace.getConfiguration("ndjson"),
                         i = s.get("bindAddress", "127.0.0.1"),
-                        w = s.get("port", 0),
-                        N = 0 === w,
-                        S = O(e, r),
-                        b = t.ignoreStickyPort ? 0 : S,
+                        v = s.get("port", 0),
+                        y = 0 === v,
+                        b = m(e, r),
+                        S = t.ignoreStickyPort ? 0 : b,
                         _ = await async function(e, t) {
                             const {
                                 ingestPathIdKey: r
-                            } = P(t), o = e.workspaceState.get(r);
+                            } = O(t), o = e.workspaceState.get(r);
                             if (o && o.length > 0) return o;
                             const n = a.randomUUID();
                             return await e.workspaceState.update(r, n), n
                         }(e, r);
-                    let L;
+                    let E, $ = !1;
                     try {
-                        L = await (0, g.chooseNdjsonPort)({
+                        E = await (0, g.chooseNdjsonPort)({
                             bindAddress: i,
-                            configuredPort: w,
-                            previouslyAllocatedPort: b,
+                            configuredPort: v,
+                            previouslyAllocatedPort: S,
                             excludedPorts: t.excludedPorts,
-                            onAutoAllocatedPort: async t => {
-                                await m(e, r, t)
+                            onAutoAllocatedPort: async e => {
+                                $ = !0
                             },
                             logger: l.NdjsonIngestLogger
                         })
                     } catch (e) {
                         const t = e instanceof Error ? e.message : String(e);
-                        return l.NdjsonIngestLogger.error("Failed to choose port:", e), d.window.showErrorMessage(`NDJSON Ingest: ${t}`), t
+                        return l.NdjsonIngestLogger.error("Failed to choose port:", e), u.window.showErrorMessage(`NDJSON Ingest: ${t}`), t
                     }
-                    const A = new g.NdjsonIngestServer({
+                    const R = new g.NdjsonIngestServer({
                             bindAddress: i,
-                            port: L,
+                            port: E,
                             ingestPathId: _,
                             logDirectory: n,
                             logger: l.NdjsonIngestLogger
                         }),
-                        $ = N && !t.ignoreStickyPort && 0 !== S && L === S;
+                        J = y && !t.ignoreStickyPort && 0 !== b && E === b;
                     try {
-                        return await I(A, t.sessionId, r)
+                        const o = await D(R, t.sessionId, r);
+                        if (N = {
+                                bindAddress: i,
+                                configuredPort: v
+                            }, $) try {
+                            await j(e, r, E)
+                        } catch (e) {
+                            l.NdjsonIngestLogger.error("Failed to persist allocated port (server is running anyway):", e)
+                        }
+                        return o
                     } catch (o) {
                         let n = o;
-                        if (o instanceof g.NdjsonServerStartError && "EADDRINUSE" === o.code && $) {
-                            l.NdjsonIngestLogger.info(`Sticky port ${L} busy, retrying after brief delay...`), await new Promise(e => setTimeout(e, 300));
+                        if (o instanceof g.NdjsonServerStartError && "EADDRINUSE" === o.code && J) {
+                            l.NdjsonIngestLogger.info(`Sticky port ${E} busy, retrying after brief delay...`), await new Promise(e => setTimeout(e, 300));
                             try {
-                                return await I(A, t.sessionId, r)
+                                const o = await D(R, t.sessionId, r);
+                                if (N = {
+                                        bindAddress: i,
+                                        configuredPort: v
+                                    }, $) try {
+                                    await j(e, r, E)
+                                } catch (e) {
+                                    l.NdjsonIngestLogger.error("Failed to persist allocated port (server is running anyway):", e)
+                                }
+                                return o
                             } catch (e) {
                                 n = e
                             }
                         }
-                        const s = t.autoAllocatedPortRetryCount ?? v;
-                        if (n instanceof g.NdjsonServerStartError && "EADDRINUSE" === n.code && N && s > 0) return l.NdjsonIngestLogger.info(`Port ${L} was claimed by another process; retrying with a fresh auto-allocated port`), E(e, {
+                        const s = t.autoAllocatedPortRetryCount ?? w;
+                        if (n instanceof g.NdjsonServerStartError && "EADDRINUSE" === n.code && y && s > 0) return l.NdjsonIngestLogger.info(`Port ${E} was claimed by another process; retrying with a fresh auto-allocated port`), L(e, {
                             ...t,
                             surface: r,
                             ignoreStickyPort: !0,
-                            excludedPorts: [...t.excludedPorts ?? [], L],
+                            excludedPorts: [...t.excludedPorts ?? [], E],
                             autoAllocatedPortRetryCount: s - 1
                         });
                         if (n instanceof g.NdjsonServerStartError) return function(e, t) {
                             switch (e.code) {
                                 case "EADDRINUSE":
-                                    return l.NdjsonIngestLogger.error(`Port ${e.port} is already in use`), t ? d.window.showErrorMessage(`NDJSON Ingest: Cannot start server - port ${e.port} became unavailable. Please try again.`) : j(`NDJSON Ingest: Cannot start server - port ${e.port} is already in use. Try changing the port in settings or stopping the other service.`), "Port is already in use";
+                                    return l.NdjsonIngestLogger.error(`Port ${e.port} is already in use`), t ? u.window.showErrorMessage(`NDJSON Ingest: Cannot start server - port ${e.port} became unavailable. Please try again.`) : I(`NDJSON Ingest: Cannot start server - port ${e.port} is already in use. Try changing the port in settings or stopping the other service.`), "Port is already in use";
                                 case "EACCES":
-                                    return l.NdjsonIngestLogger.error(`Permission denied for port ${e.port}`), t ? d.window.showErrorMessage(`NDJSON Ingest: Permission denied for port ${e.port}. This is unexpected for auto-allocated ports.`) : j(`NDJSON Ingest: Permission denied for port ${e.port}. Try using a port number greater than 1024.`), `Permission denied for port ${e.port}`;
+                                    return l.NdjsonIngestLogger.error(`Permission denied for port ${e.port}`), t ? u.window.showErrorMessage(`NDJSON Ingest: Permission denied for port ${e.port}. This is unexpected for auto-allocated ports.`) : I(`NDJSON Ingest: Permission denied for port ${e.port}. Try using a port number greater than 1024.`), `Permission denied for port ${e.port}`;
                                 default:
-                                    return l.NdjsonIngestLogger.error("NDJSON ingest server listen error:", e), d.window.showErrorMessage(`NDJSON Ingest: Server error - ${e.message}`), `Server error - ${e.message}`
+                                    return l.NdjsonIngestLogger.error("NDJSON ingest server listen error:", e), u.window.showErrorMessage(`NDJSON Ingest: Server error - ${e.message}`), `Server error - ${e.message}`
                             }
-                        }(n, N);
-                        const i = n instanceof Error ? n.message : String(n);
-                        return l.NdjsonIngestLogger.error("NDJSON ingest server listen error:", n), d.window.showErrorMessage(`NDJSON Ingest: Server error - ${i}`), `Server error - ${i}`
+                        }(n, y);
+                        const a = n instanceof Error ? n.message : String(n);
+                        return l.NdjsonIngestLogger.error("NDJSON ingest server listen error:", n), u.window.showErrorMessage(`NDJSON Ingest: Server error - ${a}`), `Server error - ${a}`
                     }
                 }
 
-                function L() {
-                    return b(() => D())
+                function E() {
+                    return S(() => A())
                 }
 
-                function A() {
-                    void 0 !== N && (clearTimeout(N), N = void 0)
+                function $() {
+                    void 0 !== y && (clearTimeout(y), y = void 0)
                 }
             },
             377: function(e, t, r) {
@@ -379,22 +404,22 @@
                         }), o.listen(e, t)
                     })
                 }, t.sanitizeSessionId = function(e) {
-                    if (e && u.test(e)) return e
+                    if (e && d.test(e)) return e
                 }, t.ensureTrailingNewline = function() {
-                    let e = d;
+                    let e = u;
                     return new c.Transform({
                         transform(t, r, o) {
                             t.length > 0 && (e = t[t.length - 1]), o(null, t)
                         },
                         flush(t) {
-                            e !== d && this.push(Buffer.from("\n")), t()
+                            e !== u && this.push(Buffer.from("\n")), t()
                         }
                     })
                 };
                 const a = i(r(67)),
                     c = r(75),
-                    u = /^[a-zA-Z0-9-]+$/,
-                    d = 10
+                    d = /^[a-zA-Z0-9-]+$/,
+                    u = 10
             },
             760: e => {
                 e.exports = require("node:path")
@@ -460,8 +485,8 @@
                 };
                 const a = r(474),
                     c = i(r(24)),
-                    u = i(r(67)),
-                    d = r(760),
+                    d = i(r(67)),
+                    u = r(760),
                     g = r(466),
                     l = r(908),
                     f = r(751);
@@ -479,16 +504,16 @@
                         return h.isPortAvailable
                     }
                 }), t.DEFAULT_NDJSON_PORT_RANGE_START = 7242, t.DEFAULT_NDJSON_PORT_RANGE_END = 7942;
-                class v extends Error {
+                class w extends Error {
                     constructor(e) {
                         super(e.message), this.name = "NdjsonServerStartError", this.code = e.code, this.port = e.port, void 0 !== e.cause && (this.cause = e.cause)
                     }
                 }
 
-                function w(e) {
+                function v(e) {
                     if ("code" in e && "string" == typeof e.code) return e.code
                 }
-                t.NdjsonServerStartError = v, t.NdjsonIngestServer = class {
+                t.NdjsonServerStartError = w, t.NdjsonIngestServer = class {
                     constructor(e) {
                         this.options = e, this.currentPort = 0, this.writeQueue = Promise.resolve(), this.logger = (0, l.resolveLogger)(e.logger)
                     }
@@ -501,30 +526,30 @@
                     getLogPathForSession(e) {
                         const t = (0, f.sanitizeSessionId)(e);
                         if (!t) throw new Error("Expected a valid debug session id");
-                        return (0, d.join)(this.options.logDirectory, `debug-${t}.log`)
+                        return (0, u.join)(this.options.logDirectory, `debug-${t}.log`)
                     }
                     async start() {
                         if (this.server) return this.buildStartResult();
                         c.mkdirSync(this.options.logDirectory, {
                             recursive: !0
                         });
-                        const e = u.createServer((e, t) => this.handleRequest(e, t));
+                        const e = d.createServer((e, t) => this.handleRequest(e, t));
                         try {
                             await this.listen(e)
                         } catch (t) {
                             throw e.removeAllListeners(),
                                 function(e, t) {
-                                    if (e instanceof v) return e;
+                                    if (e instanceof w) return e;
                                     if (e instanceof Error) {
                                         const r = e.message || `Failed to start NDJSON server on port ${t}`;
-                                        return new v({
+                                        return new w({
                                             message: r,
                                             port: t,
-                                            code: w(e),
+                                            code: v(e),
                                             cause: e
                                         })
                                     }
-                                    return new v({
+                                    return new w({
                                         message: `Failed to start NDJSON server on port ${t}`,
                                         port: t,
                                         cause: e
@@ -612,4 +637,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/475871d112608994deb2e3065dfb7c6b0baa0c50/extensions/cursor-ndjson-ingest/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/dacbe9b31599a253763e4910eb6ab38704653320/extensions/cursor-ndjson-ingest/dist/main.js.map

@@ -42959,6 +42959,12 @@
                     kind: "scalar",
                     T: 9,
                     repeated: !0
+                }, {
+                    no: 3,
+                    name: "suggested_allowlist_entry",
+                    kind: "scalar",
+                    T: 9,
+                    opt: !0
                 }]);
                 class E extends n.Message {
                     constructor(e) {
@@ -50876,4 +50882,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/475871d112608994deb2e3065dfb7c6b0baa0c50/extensions/cursor-shadow-workspace/dist/extension.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/dacbe9b31599a253763e4910eb6ab38704653320/extensions/cursor-shadow-workspace/dist/extension.js.map
