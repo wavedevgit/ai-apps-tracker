@@ -44141,7 +44141,7 @@
                 function ml(e) {
                     return new dl(e)
                 }
-                var pl = n(89079),
+                var pl = n(90853),
                     fl = n(70890);
 
                 function hl(e) {
@@ -114497,7 +114497,7 @@
                     H = _(e => new w(e, B("grepArgs"), R("grepResult")), (e, t) => {
                         t.register(new f(e, P("grepArgs"), x("grepResult")))
                     });
-                var z = n(89079),
+                var z = n(90853),
                     $ = n(83350);
                 const Y = _(e => new w(e, B("executeHookArgs"), R("executeHookResult")), (e, t) => {
                     t.register(new f(e, P("executeHookArgs"), x("executeHookResult")))
@@ -130906,7 +130906,7 @@
                     roundDurationMs: () => U,
                     withFailClosed: () => C
                 });
-                var r, s = n(89079),
+                var r, s = n(90853),
                     i = n(51455),
                     a = n(48161),
                     o = n(76760),
@@ -131042,10 +131042,11 @@
                     promptHookClient;
                     teamHooksReadyPromise;
                     onHookExecution;
+                    options;
                     sessionEnv;
                     config;
-                    constructor(e, t, n, r, s, i, a) {
-                        this.workspacePath = t, this.globalContext = n, this.shellExecutor = r, this.promptHookClient = s, this.teamHooksReadyPromise = i, this.onHookExecution = a, this.config = e
+                    constructor(e, t, n, r, s, i, a, o) {
+                        this.workspacePath = t, this.globalContext = n, this.shellExecutor = r, this.promptHookClient = s, this.teamHooksReadyPromise = i, this.onHookExecution = a, this.options = o, this.config = e
                     }
                     emitHookExecution(e) {
                         var t;
@@ -131223,16 +131224,16 @@
                         return (0, s.wb)(e, a)
                     }
                     async executeCommandHook(e, t, n, r, i, a, o) {
-                        var c, l, u, d, m, p, f;
+                        var c, l, u, d, m, p, f, h;
                         if (this.shouldSkipHookDueToLoopLimit(e, t, r)) return {
                             success: !1,
                             source: i,
                             index: a
                         };
-                        const h = Date.now();
-                        let g;
+                        const g = Date.now();
+                        let A;
                         try {
-                            g = await this.executeCommandScript({
+                            A = await this.executeCommandScript({
                                 script: t,
                                 cwd: n,
                                 request: r
@@ -131240,7 +131241,7 @@
                         } catch (n) {
                             const r = n instanceof Error ? n.message : String(n),
                                 c = r.toLowerCase().includes("timed out"),
-                                l = Date.now() - h;
+                                l = Date.now() - g;
                             if (!0 === t.failClosed) {
                                 const n = k(`Hook "${t.command}" execution failed: ${r}`),
                                     u = (0, s.FS)(e, n);
@@ -131273,17 +131274,17 @@
                                 index: a
                             }
                         }
-                        if (g.exitCode === s.LQ) {
-                            const n = (0, s.Uv)(g.stdout, g.stderr, t.command),
+                        if (A.exitCode === s.LQ) {
+                            const n = (0, s.Uv)(A.stdout, A.stderr, t.command),
                                 r = (0, s.FS)(e, n);
                             return r ? (this.emitHookExecution(Object.assign({
                                 hookStep: e,
                                 hookSource: i,
                                 hookType: "command",
                                 status: "blocked",
-                                latencyMs: g.duration,
+                                latencyMs: A.duration,
                                 failClosed: !0 === t.failClosed,
-                                exitCode: g.exitCode
+                                exitCode: A.exitCode
                             }, o)), {
                                 success: !0,
                                 data: r,
@@ -131294,27 +131295,27 @@
                                 hookSource: i,
                                 hookType: "command",
                                 status: "blocked",
-                                latencyMs: g.duration,
+                                latencyMs: A.duration,
                                 failClosed: !0 === t.failClosed,
-                                exitCode: g.exitCode
+                                exitCode: A.exitCode
                             }, o)), {
                                 success: !1,
                                 source: i,
                                 index: a
                             })
                         }
-                        if (0 !== g.exitCode && null !== g.exitCode) {
+                        if (0 !== A.exitCode && null !== A.exitCode) {
                             if (!0 === t.failClosed) {
-                                const n = k(`Hook "${t.command}" failed with exit code ${g.exitCode}${g.stderr?`: ${g.stderr.trim()}`:""}`),
+                                const n = k(`Hook "${t.command}" failed with exit code ${A.exitCode}${A.stderr?`: ${A.stderr.trim()}`:""}`),
                                     r = (0, s.FS)(e, n);
                                 if (r) return this.emitHookExecution(Object.assign({
                                     hookStep: e,
                                     hookSource: i,
                                     hookType: "command",
                                     status: "blocked",
-                                    latencyMs: g.duration,
+                                    latencyMs: A.duration,
                                     failClosed: !0,
-                                    exitCode: g.exitCode
+                                    exitCode: A.exitCode
                                 }, o)), {
                                     success: !0,
                                     data: r,
@@ -131327,17 +131328,17 @@
                                 hookSource: i,
                                 hookType: "command",
                                 status: "failed",
-                                latencyMs: g.duration,
+                                latencyMs: A.duration,
                                 failClosed: !0 === t.failClosed,
-                                exitCode: g.exitCode
+                                exitCode: A.exitCode
                             }, o)), {
                                 success: !1,
                                 source: i,
                                 index: a
                             }
                         }
-                        const A = g.stdout.trim();
-                        if (!A) {
+                        const y = A.stdout.trim();
+                        if (!y) {
                             if (!0 === t.failClosed) {
                                 const n = k(`Hook "${t.command}" returned no output.`),
                                     r = (0, s.FS)(e, n);
@@ -131346,9 +131347,9 @@
                                     hookSource: i,
                                     hookType: "command",
                                     status: "blocked",
-                                    latencyMs: g.duration,
+                                    latencyMs: A.duration,
                                     failClosed: !0,
-                                    exitCode: null !== (c = g.exitCode) && void 0 !== c ? c : void 0
+                                    exitCode: null !== (l = A.exitCode) && void 0 !== l ? l : void 0
                                 }, o)), {
                                     success: !0,
                                     data: r,
@@ -131361,9 +131362,9 @@
                                 hookSource: i,
                                 hookType: "command",
                                 status: "failed",
-                                latencyMs: g.duration,
+                                latencyMs: A.duration,
                                 failClosed: !0 === t.failClosed,
-                                exitCode: null !== (l = g.exitCode) && void 0 !== l ? l : void 0
+                                exitCode: null !== (u = A.exitCode) && void 0 !== u ? u : void 0
                             }, o)), {
                                 success: !1,
                                 source: i,
@@ -131371,8 +131372,10 @@
                             }
                         }
                         try {
-                            const n = JSON.parse(A),
-                                r = (0, s.jO)(e, n);
+                            const n = JSON.parse(y),
+                                r = (0, s.jO)(e, n, {
+                                    enableClaudeNestedHookSpecificOutputCompatibility: null === (c = this.options) || void 0 === c ? void 0 : c.enableClaudeNestedHookSpecificOutputCompatibility
+                                });
                             if (r.success) {
                                 const n = r.data,
                                     s = "deny" === n.permission || "ask" === n.permission;
@@ -131381,9 +131384,9 @@
                                     hookSource: i,
                                     hookType: "command",
                                     status: s ? "blocked" : "success",
-                                    latencyMs: g.duration,
+                                    latencyMs: A.duration,
                                     failClosed: !0 === t.failClosed,
-                                    exitCode: null !== (u = g.exitCode) && void 0 !== u ? u : void 0
+                                    exitCode: null !== (d = A.exitCode) && void 0 !== d ? d : void 0
                                 }, o)), {
                                     success: !0,
                                     data: r.data,
@@ -131399,9 +131402,9 @@
                                     hookSource: i,
                                     hookType: "command",
                                     status: "blocked",
-                                    latencyMs: g.duration,
+                                    latencyMs: A.duration,
                                     failClosed: !0,
-                                    exitCode: null !== (d = g.exitCode) && void 0 !== d ? d : void 0
+                                    exitCode: null !== (m = A.exitCode) && void 0 !== m ? m : void 0
                                 }, o)), {
                                     success: !0,
                                     data: r,
@@ -131414,9 +131417,9 @@
                                 hookSource: i,
                                 hookType: "command",
                                 status: "failed",
-                                latencyMs: g.duration,
+                                latencyMs: A.duration,
                                 failClosed: !0 === t.failClosed,
-                                exitCode: null !== (m = g.exitCode) && void 0 !== m ? m : void 0
+                                exitCode: null !== (p = A.exitCode) && void 0 !== p ? p : void 0
                             }, o)), {
                                 success: !1,
                                 source: i,
@@ -131431,9 +131434,9 @@
                                     hookSource: i,
                                     hookType: "command",
                                     status: "blocked",
-                                    latencyMs: g.duration,
+                                    latencyMs: A.duration,
                                     failClosed: !0,
-                                    exitCode: null !== (p = g.exitCode) && void 0 !== p ? p : void 0
+                                    exitCode: null !== (f = A.exitCode) && void 0 !== f ? f : void 0
                                 }, o)), {
                                     success: !0,
                                     data: r,
@@ -131446,9 +131449,9 @@
                                 hookSource: i,
                                 hookType: "command",
                                 status: "failed",
-                                latencyMs: g.duration,
+                                latencyMs: A.duration,
                                 failClosed: !0 === t.failClosed,
-                                exitCode: null !== (f = g.exitCode) && void 0 !== f ? f : void 0
+                                exitCode: null !== (h = A.exitCode) && void 0 !== h ? h : void 0
                             }, o)), {
                                 success: !1,
                                 source: i,
@@ -191006,519 +191009,6 @@
                     }
                 })
             },
-            89079: (e, t, n) => {
-                "use strict";
-                n.d(t, {
-                    yB: () => E,
-                    aX: () => _,
-                    LQ: () => T,
-                    _E: () => S,
-                    D3: () => L,
-                    FS: () => Q,
-                    fp: () => p,
-                    eg: () => d,
-                    bi: () => f,
-                    Qk: () => h,
-                    Uv: () => F,
-                    DP: () => m,
-                    Xz: () => k,
-                    uu: () => v,
-                    wb: () => N,
-                    sl: () => u,
-                    jO: () => I,
-                    RV: () => M
-                });
-                const r = {
-                        PreToolUse: "preToolUse",
-                        PermissionRequest: null,
-                        PostToolUse: "postToolUse",
-                        UserPromptSubmit: "beforeSubmitPrompt",
-                        Stop: "stop",
-                        SubagentStop: "subagentStop",
-                        SessionStart: "sessionStart",
-                        SessionEnd: "sessionEnd",
-                        PreCompact: "preCompact",
-                        Notification: null
-                    },
-                    s = {
-                        Bash: "Shell",
-                        Read: "Read",
-                        Write: "Write",
-                        Edit: "Write",
-                        Glob: null,
-                        Grep: "Grep",
-                        WebFetch: "WebFetch",
-                        WebSearch: "WebSearch",
-                        Task: "Task"
-                    },
-                    i = ["Glob"],
-                    a = ["Notification", "PermissionRequest"],
-                    o = {
-                        warn: () => {},
-                        info: () => {}
-                    };
-
-                function c(e, t) {
-                    const n = {
-                        loop_limit: null,
-                        failClosed: !1
-                    };
-                    return t && "*" !== t && (n.matcher = t), void 0 !== e.timeout && (n.timeout = e.timeout), "prompt" === e.type ? e.prompt ? Object.assign({
-                        type: "prompt",
-                        prompt: e.prompt
-                    }, n) : null : e.command ? Object.assign({
-                        type: "command",
-                        command: e.command
-                    }, n) : null
-                }
-
-                function l(e, t, n = o) {
-                    const r = [];
-                    let a;
-                    if ("PreToolUse" === t || "PostToolUse" === t) {
-                        const t = function(e, t = o) {
-                            if ("" === e || "*" === e) return "*";
-                            const n = e.split("|"),
-                                r = [],
-                                a = [];
-                            for (const e of n) {
-                                const t = e.trim();
-                                if (t.startsWith("mcp__")) {
-                                    const e = t.split("__");
-                                    if (e.length >= 3) {
-                                        const t = e.slice(2).join("__");
-                                        r.push(`MCP:${t}`);
-                                        continue
-                                    }
-                                }
-                                const n = s[t];
-                                null !== n ? void 0 !== n ? r.includes(n) || r.push(n) : r.push(t) : i.includes(t) && a.push(`Tool "${t}" is not supported in Cursor and will be ignored`)
-                            }
-                            for (const e of a) t.warn(e);
-                            return 0 === r.length ? null : r.join("|")
-                        }(e.matcher, n);
-                        if (null === t) return n.warn(`All tools in matcher "${e.matcher}" are unsupported, skipping hooks`), [];
-                        a = "*" === t ? void 0 : t
-                    } else "SessionStart" === t || "PreCompact" === t ? (e.matcher && "*" !== e.matcher && "" !== e.matcher && ("SessionStart" === t ? ["startup", "resume", "clear", "compact"].includes(e.matcher) : ["manual", "auto"].includes(e.matcher)) && n.warn(`${t} trigger matcher "${e.matcher}" is not supported in Cursor, hooks will fire for all triggers`), a = void 0) : a = void 0;
-                    for (const t of e.hooks) {
-                        const e = c(t, a);
-                        e && r.push(e)
-                    }
-                    return r
-                }
-
-                function u(e, t = o) {
-                    const n = {};
-                    for (const [s, i] of Object.entries(e)) {
-                        const e = s;
-                        if (a.includes(e)) {
-                            t.warn(`Claude Code event "${e}" is not supported in Cursor and will be ignored`);
-                            continue
-                        }
-                        const o = r[e];
-                        if (!o) {
-                            t.warn(`Unknown Claude Code event "${e}", skipping`);
-                            continue
-                        }
-                        const c = [];
-                        if (Array.isArray(i))
-                            for (const n of i) {
-                                const r = l(n, e, t);
-                                c.push(...r)
-                            } else void 0 !== i && t.warn(`Claude Code event "${e}" has invalid value (expected array), skipping`);
-                        if (c.length > 0) {
-                            const e = n[o] || [];
-                            n[o] = [...e, ...c]
-                        }
-                    }
-                    return {
-                        version: 1,
-                        hooks: n
-                    }
-                }
-
-                function d(e) {
-                    return e.hooks
-                }
-
-                function m(e, t = {}) {
-                    if ("object" != typeof e || null === e) return !1;
-                    if (!("hooks" in e)) return !1;
-                    const n = e.hooks;
-                    if ("object" != typeof n || null === n) return !1;
-                    const s = n;
-                    for (const [e, n] of Object.entries(s))
-                        if (e in r && Array.isArray(n)) {
-                            const r = !0 === t.allowMatcherlessStop && "Stop" === e;
-                            for (const e of n)
-                                if ("object" == typeof e && null !== e && "hooks" in e && Array.isArray(e.hooks) && ("matcher" in e || r)) return !0
-                        } return !1
-                }
-
-                function p(e) {
-                    if ("object" != typeof e || null === e) return "unknown";
-                    const t = e,
-                        n = "object" == typeof t.hooks && null !== t.hooks ? t.hooks : null;
-                    if (!n) return "unknown";
-                    for (const e of Object.values(n)) {
-                        if (!Array.isArray(e) || 0 === e.length) continue;
-                        const t = e[0];
-                        if ("object" != typeof t || null === t) continue;
-                        const n = t;
-                        if ("hooks" in n && Array.isArray(n.hooks)) return "claude-code";
-                        if ("command" in n || "prompt" in n || "type" in n) return "cursor"
-                    }
-                    return "unknown"
-                }
-
-                function f(e, t) {
-                    switch (e) {
-                        case "beforeShellExecution":
-                        case "afterShellExecution":
-                            return t.command || void 0;
-                        case "beforeMCPExecution":
-                        case "afterMCPExecution": {
-                            const e = t;
-                            return e.tool_name ? `MCP:${e.tool_name}` : void 0
-                        }
-                        case "beforeReadFile":
-                            return "Read";
-                        case "afterFileEdit":
-                            return "Write";
-                        case "beforeTabFileRead":
-                            return "TabRead";
-                        case "afterTabFileEdit":
-                            return "TabWrite";
-                        case "beforeSubmitPrompt":
-                            return "UserPromptSubmit";
-                        case "stop":
-                            return "Stop";
-                        case "afterAgentResponse":
-                            return "AgentResponse";
-                        case "afterAgentThought":
-                            return "AgentThought";
-                        case "subagentStart":
-                        case "subagentStop":
-                            return t.subagent_type || void 0;
-                        case "preToolUse":
-                        case "postToolUse":
-                        case "postToolUseFailure":
-                            return t.tool_name || void 0;
-                        default:
-                            return
-                    }
-                }
-
-                function h(e, t) {
-                    return e.filter(e => function(e, t) {
-                        if (!e.matcher || "" === e.matcher || "*" === e.matcher) return !0;
-                        if (void 0 === t) return !0;
-                        try {
-                            return new RegExp(e.matcher).test(t)
-                        } catch (e) {
-                            return !0
-                        }
-                    }(e, t))
-                }
-                const g = e => "string" == typeof e,
-                    A = e => null !== e && "object" == typeof e && !Array.isArray(e),
-                    y = (e, t = []) => ({
-                        isValid: e,
-                        errors: t
-                    }),
-                    C = e => {
-                        const t = [];
-                        return A(e) ? y(!0) : (t.push("Expected an object"), y(!1, t))
-                    },
-                    w = e => {
-                        const t = [],
-                            n = C(e);
-                        if (!n.isValid) return n;
-                        if (void 0 !== e.permission) {
-                            const n = ["allow", "deny", "ask"];
-                            n.includes(e.permission) || t.push(`Invalid permission value. Expected one of: ${n.join(", ")}, or undefined`)
-                        }
-                        return void 0 !== e.user_message && "string" != typeof e.user_message && t.push("Invalid user_message value. Expected a string if provided"), void 0 !== e.agent_message && "string" != typeof e.agent_message && t.push("Invalid agent_message value. Expected a string if provided"), y(0 === t.length, t)
-                    },
-                    E = 60,
-                    _ = 5;
-
-                function v(e) {
-                    return "prompt" === e.type
-                }
-
-                function k(e) {
-                    return "command" === e.type || void 0 === e.type
-                }
-                const S = {
-                        beforeShellExecution: "beforeShellExecution",
-                        beforeMCPExecution: "beforeMCPExecution",
-                        afterShellExecution: "afterShellExecution",
-                        afterMCPExecution: "afterMCPExecution",
-                        beforeReadFile: "beforeReadFile",
-                        afterFileEdit: "afterFileEdit",
-                        beforeTabFileRead: "beforeTabFileRead",
-                        afterTabFileEdit: "afterTabFileEdit",
-                        stop: "stop",
-                        beforeSubmitPrompt: "beforeSubmitPrompt",
-                        afterAgentResponse: "afterAgentResponse",
-                        afterAgentThought: "afterAgentThought",
-                        sessionStart: "sessionStart",
-                        sessionEnd: "sessionEnd",
-                        preCompact: "preCompact",
-                        subagentStart: "subagentStart",
-                        subagentStop: "subagentStop",
-                        preToolUse: "preToolUse",
-                        postToolUse: "postToolUse",
-                        postToolUseFailure: "postToolUseFailure"
-                    },
-                    T = 2,
-                    b = {
-                        [S.beforeShellExecution]: w,
-                        [S.beforeMCPExecution]: w,
-                        [S.afterShellExecution]: e => {
-                            const t = C(e);
-                            return t.isValid, t
-                        },
-                        [S.afterMCPExecution]: e => {
-                            const t = C(e);
-                            return t.isValid, t
-                        },
-                        [S.beforeReadFile]: e => {
-                            const t = [],
-                                n = C(e);
-                            if (!n.isValid) return n;
-                            if (void 0 !== e.permission) {
-                                const n = ["allow", "deny"];
-                                n.includes(e.permission) || t.push(`Invalid permission value. Expected one of: ${n.join(", ")}, or undefined`)
-                            }
-                            return void 0 !== e.user_message && "string" != typeof e.user_message && t.push("user_message must be a string if provided"), y(0 === t.length, t)
-                        },
-                        [S.afterFileEdit]: e => {
-                            const t = C(e);
-                            return t.isValid, t
-                        },
-                        [S.beforeTabFileRead]: e => {
-                            const t = [],
-                                n = C(e);
-                            if (!n.isValid) return n;
-                            if (void 0 !== e.permission) {
-                                const n = ["allow", "deny"];
-                                n.includes(e.permission) || t.push(`Invalid permission value. Expected one of: ${n.join(", ")}, or undefined`)
-                            }
-                            return void 0 !== e.user_message && "string" != typeof e.user_message && t.push("user_message must be a string if provided"), y(0 === t.length, t)
-                        },
-                        [S.afterTabFileEdit]: e => C(e),
-                        [S.beforeSubmitPrompt]: e => {
-                            const t = C(e);
-                            if (!t.isValid) return t;
-                            const n = [];
-                            return void 0 !== e.continue && "boolean" != typeof e.continue && n.push("continue must be a boolean if provided"), void 0 !== e.user_message && "string" != typeof e.user_message && n.push("user_message must be a string if provided"), y(0 === n.length, n)
-                        },
-                        [S.stop]: e => {
-                            const t = C(e);
-                            if (!t.isValid) return t;
-                            const n = [];
-                            return void 0 !== e.followup_message && "string" != typeof e.followup_message && n.push("followup_message must be a string if provided"), y(0 === n.length, n)
-                        },
-                        [S.afterAgentResponse]: e => {
-                            const t = C(e);
-                            return t.isValid, t
-                        },
-                        [S.afterAgentThought]: e => {
-                            const t = C(e);
-                            return t.isValid, t
-                        },
-                        [S.sessionStart]: e => {
-                            const t = C(e);
-                            if (!t.isValid) return t;
-                            const n = [];
-                            if (void 0 !== e.env)
-                                if (A(e.env))
-                                    for (const [t, r] of Object.entries(e.env)) g(t) || n.push(`env key "${t}" must be a string`), g(r) || n.push(`env value for "${t}" must be a string`);
-                                else n.push("env must be an object if provided");
-                            return void 0 === e.additional_context || g(e.additional_context) || n.push("additional_context must be a string if provided"), void 0 !== e.continue && "boolean" != typeof e.continue && n.push("continue must be a boolean if provided"), void 0 === e.user_message || g(e.user_message) || n.push("user_message must be a string if provided"), y(0 === n.length, n)
-                        },
-                        [S.sessionEnd]: e => {
-                            const t = C(e);
-                            return t.isValid ? y(!0, []) : t
-                        },
-                        [S.preCompact]: e => {
-                            const t = C(e);
-                            if (!t.isValid) return t;
-                            if (null == e || 0 === Object.keys(e).length) return y(!0, []);
-                            const n = [];
-                            if (!A(e)) return n.push("PreCompact response must be an object"), y(!1, n);
-                            const r = e;
-                            return void 0 === r.user_message || (e => "string" == typeof e)(r.user_message) || n.push("user_message must be a string"), y(0 === n.length, n)
-                        },
-                        [S.subagentStart]: e => {
-                            const t = C(e);
-                            if (!t.isValid) return t;
-                            const n = [],
-                                r = e;
-                            if (void 0 !== r.permission) {
-                                const e = ["allow", "deny", "ask"];
-                                e.includes(r.permission) || n.push(`Invalid permission value. Expected one of: ${e.join(", ")}, or undefined`)
-                            }
-                            return void 0 === r.user_message || g(r.user_message) || n.push("user_message must be a string if provided"), y(0 === n.length, n)
-                        },
-                        [S.subagentStop]: e => {
-                            const t = C(e);
-                            if (!t.isValid) return t;
-                            const n = [];
-                            return void 0 !== e && "object" == typeof e && null !== e && void 0 !== e.followup_message && "string" != typeof e.followup_message && n.push("followup_message must be a string if provided"), y(0 === n.length, n)
-                        },
-                        [S.preToolUse]: e => {
-                            const t = [],
-                                n = C(e);
-                            if (!n.isValid) return n;
-                            if (void 0 !== e.permission) {
-                                const n = ["allow", "deny", "ask"];
-                                n.includes(e.permission) || t.push(`Invalid permission value. Expected one of: ${n.join(", ")}, or undefined`)
-                            }
-                            return void 0 !== e.user_message && "string" != typeof e.user_message && t.push("Invalid user_message value. Expected a string if provided"), void 0 !== e.agent_message && "string" != typeof e.agent_message && t.push("Invalid agent_message value. Expected a string if provided"), void 0 !== e.updated_input && ("object" != typeof e.updated_input || null === e.updated_input || Array.isArray(e.updated_input)) && t.push("Invalid updated_input value. Expected a plain object if provided"), y(0 === t.length, t)
-                        },
-                        [S.postToolUse]: e => {
-                            const t = [],
-                                n = C(e);
-                            return n.isValid ? (void 0 !== e.additional_context && "string" != typeof e.additional_context && t.push("Invalid additional_context value. Expected a string if provided"), y(0 === t.length, t)) : n
-                        },
-                        [S.postToolUseFailure]: e => C(e)
-                    },
-                    I = (e, t) => {
-                        const n = (0, b[e])(t);
-                        return n.isValid ? {
-                            success: !0,
-                            data: t
-                        } : {
-                            success: !1,
-                            errors: n.errors
-                        }
-                    },
-                    B = [S.beforeShellExecution, S.beforeMCPExecution, S.beforeReadFile, S.beforeTabFileRead, S.subagentStart, S.preToolUse];
-
-                function R(e, t) {
-                    return "deny" === e || "deny" === t ? "deny" : "ask" === e || "ask" === t ? "ask" : "allow" === e || "allow" === t ? "allow" : void 0
-                }
-
-                function x(e, t) {
-                    const n = [];
-                    return (null == e ? void 0 : e.trim()) && n.push(e.trim()), (null == t ? void 0 : t.trim()) && n.push(t.trim()), n.length > 0 ? n.join("\n\n---\n\n") : void 0
-                }
-
-                function P(e, t) {
-                    if (e || t) return Object.assign(Object.assign({}, e || {}), t || {})
-                }
-
-                function N(e, t) {
-                    if (0 === t.length) return;
-                    if (1 === t.length) return t[0];
-                    const n = B.includes(e),
-                        r = e === S.sessionStart,
-                        s = {};
-                    for (const e of t) {
-                        const t = e;
-                        for (const [e, i] of Object.entries(t))
-                            if (void 0 !== i)
-                                if ("permission" === e && n) s[e] = R(s[e], i);
-                                else if ("user_message" !== e && "agent_message" !== e)
-                            if ("continue" !== e || "boolean" != typeof i) {
-                                if (r) {
-                                    if ("env" === e && "object" == typeof i && null !== i) {
-                                        s[e] = P(s[e], i);
-                                        continue
-                                    }
-                                    if ("additional_context" === e && "string" == typeof i) {
-                                        s[e] = x(s[e], i);
-                                        continue
-                                    }
-                                }
-                                s[e] = i
-                            } else void 0 === s[e] ? s[e] = i : s[e] = s[e] && i;
-                        else s[e] = x(s[e], i)
-                    }
-                    return s
-                }
-
-                function D(e) {
-                    return B.includes(e)
-                }
-
-                function F(e, t, n) {
-                    const r = e.trim(),
-                        s = t.trim();
-                    return r || (s ? `Hook blocked with message: ${s}` : `Hook "${n}" blocked this action (exit code 2) but provided no reason.`)
-                }
-
-                function Q(e, t) {
-                    return D(e) ? {
-                        permission: "deny",
-                        user_message: t
-                    } : e === S.beforeSubmitPrompt || e === S.sessionStart ? {
-                        continue: !1,
-                        user_message: t
-                    } : e === S.stop ? {} : void 0
-                }
-
-                function L(e) {
-                    return D(e) ? {
-                        permission: "allow"
-                    } : e === S.beforeSubmitPrompt || e === S.sessionStart ? {
-                        continue: !0
-                    } : e === S.stop ? {} : void 0
-                }
-                const J = e => {
-                        const t = [];
-                        if (!A(e)) return t.push("Hook script must be an object with either a 'command' property (command hook) or 'type: \"prompt\"' with a 'prompt' property (prompt hook)"), y(!1, t);
-                        const n = e.type;
-                        return "prompt" === n ? ((e, t) => {
-                            g(e.prompt) ? "" === e.prompt.trim() && t.push("Prompt hook 'prompt' property cannot be empty") : t.push("Prompt hook must have a 'prompt' property (string)"), void 0 !== e.model && (g(e.model) ? "" === e.model.trim() && t.push("Prompt hook 'model' cannot be an empty string") : t.push("Prompt hook 'model' must be a string if provided"))
-                        })(e, t) : "command" === n || void 0 === n ? ((e, t) => {
-                            g(e.command) || t.push("Hook script command must be a string")
-                        })(e, t) : t.push(`Invalid hook type: "${n}". Must be "command", "prompt", or omitted (defaults to "command")`), ((e, t) => {
-                            var n;
-                            if (void 0 !== e.matcher)
-                                if (g(e.matcher)) {
-                                    if ("" !== e.matcher && "*" !== e.matcher) try {
-                                        new RegExp(e.matcher)
-                                    } catch (r) {
-                                        t.push(`Hook script matcher "${e.matcher}" is not a valid regex: ${null!==(n=null==r?void 0:r.message)&&void 0!==n?n:String(r)}`)
-                                    }
-                                } else t.push("Hook script matcher must be a string if provided");
-                            if (void 0 !== e.timeout && ("number" != typeof e.timeout ? t.push("Hook script timeout must be a number (seconds)") : e.timeout <= 0 ? t.push("Hook script timeout must be a positive number") : e.timeout > 3600 && console.warn(`[hooks] Hook timeout of ${e.timeout}s is very long (>1 hour)`)), void 0 !== e.loop_limit) {
-                                const n = e.loop_limit;
-                                null !== n && ("number" != typeof n ? t.push("Hook script loop_limit must be a positive integer or null") : Number.isInteger(n) ? n <= 0 && t.push("Hook script loop_limit must be a positive integer (use null for no limit)") : t.push("Hook script loop_limit must be an integer"))
-                            }
-                            void 0 !== e.failClosed && "boolean" != typeof e.failClosed && t.push("Hook script failClosed must be a boolean")
-                        })(e, t), y(0 === t.length, t)
-                    },
-                    O = (e, t) => {
-                        const n = [];
-                        if (!Array.isArray(e)) return n.push(`${t} must be an array of hook scripts`), y(!1, n);
-                        for (let r = 0; r < e.length; r++) {
-                            const s = J(e[r]);
-                            s.isValid || n.push(`${t}[${r}]: ${s.errors.join(", ")}`)
-                        }
-                        return y(0 === n.length, n)
-                    },
-                    M = e => {
-                        const t = [];
-                        if (!A(e)) return t.push("Hooks config must be an object"), y(!1, t);
-                        if ("number" != typeof e.version ? t.push("Config version must be a number") : (!Number.isInteger(e.version) || e.version < 1) && t.push("Config version must be a positive integer"), !A(e.hooks)) return t.push("Config hooks must be an object"), y(!1, t);
-                        void 0 !== e.stop_hook_loop_limit && console.warn("[hooks] DEPRECATION WARNING: 'stop_hook_loop_limit' is deprecated. Use 'loop_limit' on individual hook scripts instead. The configured value is being ignored.");
-                        const n = Object.values(S),
-                            r = e.hooks;
-                        for (const [e, s] of Object.entries(r))
-                            if (n.includes(e)) {
-                                if (void 0 !== s) {
-                                    const n = O(s, e);
-                                    n.isValid || t.push(...n.errors)
-                                }
-                            } else t.push(`Unknown hook type: ${e}. Valid types are: ${n.join(", ")}`);
-                        return y(0 === t.length, t)
-                    }
-            },
             89340: (e, t) => {
                 "use strict";
                 var n;
@@ -195327,6 +194817,569 @@
                 }, e.exports = t = c, Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.default = c
+            },
+            90853: (e, t, n) => {
+                "use strict";
+                n.d(t, {
+                    yB: () => b,
+                    aX: () => I,
+                    LQ: () => x,
+                    _E: () => g,
+                    D3: () => q,
+                    FS: () => U,
+                    fp: () => p,
+                    eg: () => d,
+                    bi: () => f,
+                    Qk: () => h,
+                    Uv: () => M,
+                    DP: () => m,
+                    Xz: () => R,
+                    uu: () => B,
+                    wb: () => J,
+                    sl: () => u,
+                    jO: () => N,
+                    RV: () => H
+                });
+                const r = {
+                        PreToolUse: "preToolUse",
+                        PermissionRequest: null,
+                        PostToolUse: "postToolUse",
+                        UserPromptSubmit: "beforeSubmitPrompt",
+                        Stop: "stop",
+                        SubagentStop: "subagentStop",
+                        SessionStart: "sessionStart",
+                        SessionEnd: "sessionEnd",
+                        PreCompact: "preCompact",
+                        Notification: null
+                    },
+                    s = {
+                        Bash: "Shell",
+                        Read: "Read",
+                        Write: "Write",
+                        Edit: "Write",
+                        Glob: null,
+                        Grep: "Grep",
+                        WebFetch: "WebFetch",
+                        WebSearch: "WebSearch",
+                        Task: "Task"
+                    },
+                    i = ["Glob"],
+                    a = ["Notification", "PermissionRequest"],
+                    o = {
+                        warn: () => {},
+                        info: () => {}
+                    };
+
+                function c(e, t) {
+                    const n = {
+                        loop_limit: null,
+                        failClosed: !1
+                    };
+                    return t && "*" !== t && (n.matcher = t), void 0 !== e.timeout && (n.timeout = e.timeout), "prompt" === e.type ? e.prompt ? Object.assign({
+                        type: "prompt",
+                        prompt: e.prompt
+                    }, n) : null : e.command ? Object.assign({
+                        type: "command",
+                        command: e.command
+                    }, n) : null
+                }
+
+                function l(e, t, n = o) {
+                    const r = [];
+                    let a;
+                    if ("PreToolUse" === t || "PostToolUse" === t) {
+                        const t = function(e, t = o) {
+                            if ("" === e || "*" === e) return "*";
+                            const n = e.split("|"),
+                                r = [],
+                                a = [];
+                            for (const e of n) {
+                                const t = e.trim();
+                                if (t.startsWith("mcp__")) {
+                                    const e = t.split("__");
+                                    if (e.length >= 3) {
+                                        const t = e.slice(2).join("__");
+                                        r.push(`MCP:${t}`);
+                                        continue
+                                    }
+                                }
+                                const n = s[t];
+                                null !== n ? void 0 !== n ? r.includes(n) || r.push(n) : r.push(t) : i.includes(t) && a.push(`Tool "${t}" is not supported in Cursor and will be ignored`)
+                            }
+                            for (const e of a) t.warn(e);
+                            return 0 === r.length ? null : r.join("|")
+                        }(e.matcher, n);
+                        if (null === t) return n.warn(`All tools in matcher "${e.matcher}" are unsupported, skipping hooks`), [];
+                        a = "*" === t ? void 0 : t
+                    } else "SessionStart" === t || "PreCompact" === t ? (e.matcher && "*" !== e.matcher && "" !== e.matcher && ("SessionStart" === t ? ["startup", "resume", "clear", "compact"].includes(e.matcher) : ["manual", "auto"].includes(e.matcher)) && n.warn(`${t} trigger matcher "${e.matcher}" is not supported in Cursor, hooks will fire for all triggers`), a = void 0) : a = void 0;
+                    for (const t of e.hooks) {
+                        const e = c(t, a);
+                        e && r.push(e)
+                    }
+                    return r
+                }
+
+                function u(e, t = o) {
+                    const n = {};
+                    for (const [s, i] of Object.entries(e)) {
+                        const e = s;
+                        if (a.includes(e)) {
+                            t.warn(`Claude Code event "${e}" is not supported in Cursor and will be ignored`);
+                            continue
+                        }
+                        const o = r[e];
+                        if (!o) {
+                            t.warn(`Unknown Claude Code event "${e}", skipping`);
+                            continue
+                        }
+                        const c = [];
+                        if (Array.isArray(i))
+                            for (const n of i) {
+                                const r = l(n, e, t);
+                                c.push(...r)
+                            } else void 0 !== i && t.warn(`Claude Code event "${e}" has invalid value (expected array), skipping`);
+                        if (c.length > 0) {
+                            const e = n[o] || [];
+                            n[o] = [...e, ...c]
+                        }
+                    }
+                    return {
+                        version: 1,
+                        hooks: n
+                    }
+                }
+
+                function d(e) {
+                    return e.hooks
+                }
+
+                function m(e, t = {}) {
+                    if ("object" != typeof e || null === e) return !1;
+                    if (!("hooks" in e)) return !1;
+                    const n = e.hooks;
+                    if ("object" != typeof n || null === n) return !1;
+                    const s = n;
+                    for (const [e, n] of Object.entries(s))
+                        if (e in r && Array.isArray(n)) {
+                            const r = !0 === t.allowMatcherlessStop && "Stop" === e;
+                            for (const e of n)
+                                if ("object" == typeof e && null !== e && "hooks" in e && Array.isArray(e.hooks) && ("matcher" in e || r)) return !0
+                        } return !1
+                }
+
+                function p(e) {
+                    if ("object" != typeof e || null === e) return "unknown";
+                    const t = e,
+                        n = "object" == typeof t.hooks && null !== t.hooks ? t.hooks : null;
+                    if (!n) return "unknown";
+                    for (const e of Object.values(n)) {
+                        if (!Array.isArray(e) || 0 === e.length) continue;
+                        const t = e[0];
+                        if ("object" != typeof t || null === t) continue;
+                        const n = t;
+                        if ("hooks" in n && Array.isArray(n.hooks)) return "claude-code";
+                        if ("command" in n || "prompt" in n || "type" in n) return "cursor"
+                    }
+                    return "unknown"
+                }
+
+                function f(e, t) {
+                    switch (e) {
+                        case "beforeShellExecution":
+                        case "afterShellExecution":
+                            return t.command || void 0;
+                        case "beforeMCPExecution":
+                        case "afterMCPExecution": {
+                            const e = t;
+                            return e.tool_name ? `MCP:${e.tool_name}` : void 0
+                        }
+                        case "beforeReadFile":
+                            return "Read";
+                        case "afterFileEdit":
+                            return "Write";
+                        case "beforeTabFileRead":
+                            return "TabRead";
+                        case "afterTabFileEdit":
+                            return "TabWrite";
+                        case "beforeSubmitPrompt":
+                            return "UserPromptSubmit";
+                        case "stop":
+                            return "Stop";
+                        case "afterAgentResponse":
+                            return "AgentResponse";
+                        case "afterAgentThought":
+                            return "AgentThought";
+                        case "subagentStart":
+                        case "subagentStop":
+                            return t.subagent_type || void 0;
+                        case "preToolUse":
+                        case "postToolUse":
+                        case "postToolUseFailure":
+                            return t.tool_name || void 0;
+                        default:
+                            return
+                    }
+                }
+
+                function h(e, t) {
+                    return e.filter(e => function(e, t) {
+                        if (!e.matcher || "" === e.matcher || "*" === e.matcher) return !0;
+                        if (void 0 === t) return !0;
+                        try {
+                            return new RegExp(e.matcher).test(t)
+                        } catch (e) {
+                            return !0
+                        }
+                    }(e, t))
+                }
+                const g = {
+                    beforeShellExecution: "beforeShellExecution",
+                    beforeMCPExecution: "beforeMCPExecution",
+                    afterShellExecution: "afterShellExecution",
+                    afterMCPExecution: "afterMCPExecution",
+                    beforeReadFile: "beforeReadFile",
+                    afterFileEdit: "afterFileEdit",
+                    beforeTabFileRead: "beforeTabFileRead",
+                    afterTabFileEdit: "afterTabFileEdit",
+                    stop: "stop",
+                    beforeSubmitPrompt: "beforeSubmitPrompt",
+                    afterAgentResponse: "afterAgentResponse",
+                    afterAgentThought: "afterAgentThought",
+                    sessionStart: "sessionStart",
+                    sessionEnd: "sessionEnd",
+                    preCompact: "preCompact",
+                    subagentStart: "subagentStart",
+                    subagentStop: "subagentStop",
+                    preToolUse: "preToolUse",
+                    postToolUse: "postToolUse",
+                    postToolUseFailure: "postToolUseFailure"
+                };
+
+                function A(e) {
+                    var t;
+                    return null !== (t = null == e ? void 0 : e.enableClaudeNestedHookSpecificOutputCompatibility) && void 0 !== t && t
+                }
+
+                function y(e) {
+                    return null !== e && "object" == typeof e && !Array.isArray(e)
+                }
+
+                function C(e) {
+                    if (!y(e)) return;
+                    const t = e.hookSpecificOutput;
+                    return y(t) ? t : void 0
+                }
+
+                function w(e, t) {
+                    if (!e) return !1;
+                    const n = e.hookEventName;
+                    return void 0 === n || "" === n || n === t
+                }
+
+                function E(e, t, n) {
+                    if (!y(e)) return e;
+                    const r = e;
+                    if (void 0 !== r.followup_message) return r;
+                    if ("block" === r.decision && "string" == typeof r.reason && r.reason.trim().length > 0) return Object.assign(Object.assign({}, r), {
+                        followup_message: r.reason.trim()
+                    });
+                    if (!A(t)) return r;
+                    const s = C(e),
+                        i = w(s, n) ? s : void 0,
+                        a = void 0 !== i ? Object.assign(Object.assign({}, r), i) : r;
+                    return "block" === a.decision && "string" == typeof a.reason && a.reason.trim().length > 0 ? Object.assign(Object.assign({}, a), {
+                        followup_message: a.reason.trim()
+                    }) : r
+                }
+                const _ = e => "string" == typeof e,
+                    v = e => null !== e && "object" == typeof e && !Array.isArray(e),
+                    k = (e, t = []) => ({
+                        isValid: e,
+                        errors: t
+                    }),
+                    S = e => {
+                        const t = [];
+                        return v(e) ? k(!0) : (t.push("Expected an object"), k(!1, t))
+                    },
+                    T = e => {
+                        const t = [],
+                            n = S(e);
+                        if (!n.isValid) return n;
+                        if (void 0 !== e.permission) {
+                            const n = ["allow", "deny", "ask"];
+                            n.includes(e.permission) || t.push(`Invalid permission value. Expected one of: ${n.join(", ")}, or undefined`)
+                        }
+                        return void 0 !== e.user_message && "string" != typeof e.user_message && t.push("Invalid user_message value. Expected a string if provided"), void 0 !== e.agent_message && "string" != typeof e.agent_message && t.push("Invalid agent_message value. Expected a string if provided"), k(0 === t.length, t)
+                    },
+                    b = 60,
+                    I = 5;
+
+                function B(e) {
+                    return "prompt" === e.type
+                }
+
+                function R(e) {
+                    return "command" === e.type || void 0 === e.type
+                }
+                const x = 2,
+                    P = {
+                        [g.beforeShellExecution]: T,
+                        [g.beforeMCPExecution]: T,
+                        [g.afterShellExecution]: e => {
+                            const t = S(e);
+                            return t.isValid, t
+                        },
+                        [g.afterMCPExecution]: e => {
+                            const t = S(e);
+                            return t.isValid, t
+                        },
+                        [g.beforeReadFile]: e => {
+                            const t = [],
+                                n = S(e);
+                            if (!n.isValid) return n;
+                            if (void 0 !== e.permission) {
+                                const n = ["allow", "deny"];
+                                n.includes(e.permission) || t.push(`Invalid permission value. Expected one of: ${n.join(", ")}, or undefined`)
+                            }
+                            return void 0 !== e.user_message && "string" != typeof e.user_message && t.push("user_message must be a string if provided"), k(0 === t.length, t)
+                        },
+                        [g.afterFileEdit]: e => {
+                            const t = S(e);
+                            return t.isValid, t
+                        },
+                        [g.beforeTabFileRead]: e => {
+                            const t = [],
+                                n = S(e);
+                            if (!n.isValid) return n;
+                            if (void 0 !== e.permission) {
+                                const n = ["allow", "deny"];
+                                n.includes(e.permission) || t.push(`Invalid permission value. Expected one of: ${n.join(", ")}, or undefined`)
+                            }
+                            return void 0 !== e.user_message && "string" != typeof e.user_message && t.push("user_message must be a string if provided"), k(0 === t.length, t)
+                        },
+                        [g.afterTabFileEdit]: e => S(e),
+                        [g.beforeSubmitPrompt]: e => {
+                            const t = S(e);
+                            if (!t.isValid) return t;
+                            const n = [];
+                            return void 0 !== e.continue && "boolean" != typeof e.continue && n.push("continue must be a boolean if provided"), void 0 !== e.user_message && "string" != typeof e.user_message && n.push("user_message must be a string if provided"), k(0 === n.length, n)
+                        },
+                        [g.stop]: e => {
+                            const t = S(e);
+                            if (!t.isValid) return t;
+                            const n = [];
+                            return void 0 !== e.followup_message && "string" != typeof e.followup_message && n.push("followup_message must be a string if provided"), k(0 === n.length, n)
+                        },
+                        [g.afterAgentResponse]: e => {
+                            const t = S(e);
+                            return t.isValid, t
+                        },
+                        [g.afterAgentThought]: e => {
+                            const t = S(e);
+                            return t.isValid, t
+                        },
+                        [g.sessionStart]: e => {
+                            const t = S(e);
+                            if (!t.isValid) return t;
+                            const n = [];
+                            if (void 0 !== e.env)
+                                if (v(e.env))
+                                    for (const [t, r] of Object.entries(e.env)) _(t) || n.push(`env key "${t}" must be a string`), _(r) || n.push(`env value for "${t}" must be a string`);
+                                else n.push("env must be an object if provided");
+                            return void 0 === e.additional_context || _(e.additional_context) || n.push("additional_context must be a string if provided"), void 0 !== e.continue && "boolean" != typeof e.continue && n.push("continue must be a boolean if provided"), void 0 === e.user_message || _(e.user_message) || n.push("user_message must be a string if provided"), k(0 === n.length, n)
+                        },
+                        [g.sessionEnd]: e => {
+                            const t = S(e);
+                            return t.isValid ? k(!0, []) : t
+                        },
+                        [g.preCompact]: e => {
+                            const t = S(e);
+                            if (!t.isValid) return t;
+                            if (null == e || 0 === Object.keys(e).length) return k(!0, []);
+                            const n = [];
+                            if (!v(e)) return n.push("PreCompact response must be an object"), k(!1, n);
+                            const r = e;
+                            return void 0 === r.user_message || (e => "string" == typeof e)(r.user_message) || n.push("user_message must be a string"), k(0 === n.length, n)
+                        },
+                        [g.subagentStart]: e => {
+                            const t = S(e);
+                            if (!t.isValid) return t;
+                            const n = [],
+                                r = e;
+                            if (void 0 !== r.permission) {
+                                const e = ["allow", "deny", "ask"];
+                                e.includes(r.permission) || n.push(`Invalid permission value. Expected one of: ${e.join(", ")}, or undefined`)
+                            }
+                            return void 0 === r.user_message || _(r.user_message) || n.push("user_message must be a string if provided"), k(0 === n.length, n)
+                        },
+                        [g.subagentStop]: e => {
+                            const t = S(e);
+                            if (!t.isValid) return t;
+                            const n = [];
+                            return void 0 !== e && "object" == typeof e && null !== e && void 0 !== e.followup_message && "string" != typeof e.followup_message && n.push("followup_message must be a string if provided"), k(0 === n.length, n)
+                        },
+                        [g.preToolUse]: e => {
+                            const t = [],
+                                n = S(e);
+                            if (!n.isValid) return n;
+                            if (void 0 !== e.permission) {
+                                const n = ["allow", "deny", "ask"];
+                                n.includes(e.permission) || t.push(`Invalid permission value. Expected one of: ${n.join(", ")}, or undefined`)
+                            }
+                            return void 0 !== e.user_message && "string" != typeof e.user_message && t.push("Invalid user_message value. Expected a string if provided"), void 0 !== e.agent_message && "string" != typeof e.agent_message && t.push("Invalid agent_message value. Expected a string if provided"), void 0 !== e.updated_input && ("object" != typeof e.updated_input || null === e.updated_input || Array.isArray(e.updated_input)) && t.push("Invalid updated_input value. Expected a plain object if provided"), k(0 === t.length, t)
+                        },
+                        [g.postToolUse]: e => {
+                            const t = [],
+                                n = S(e);
+                            return n.isValid ? (void 0 !== e.additional_context && "string" != typeof e.additional_context && t.push("Invalid additional_context value. Expected a string if provided"), k(0 === t.length, t)) : n
+                        },
+                        [g.postToolUseFailure]: e => S(e)
+                    },
+                    N = (e, t, n) => {
+                        const r = function(e, t, n) {
+                                return e === g.preToolUse ? function(e, t) {
+                                    if (!y(e)) return e;
+                                    const n = e;
+                                    if (void 0 !== n.permission || void 0 !== n.user_message || void 0 !== n.agent_message || void 0 !== n.updated_input) return n;
+                                    if (!A(t)) return n;
+                                    const r = C(e);
+                                    if (!w(r, "PreToolUse")) return n;
+                                    const s = Object.assign({}, n);
+                                    let i = !1;
+                                    return void 0 !== r.permissionDecision && (s.permission = r.permissionDecision, i = !0), "string" == typeof r.permissionDecisionReason && (s.user_message = r.permissionDecisionReason, i = !0), y(r.updatedInput) && (s.updated_input = r.updatedInput, i = !0), i ? s : n
+                                }(t, n) : e === g.stop ? E(t, n, "Stop") : e === g.subagentStop ? E(t, n, "SubagentStop") : t
+                            }(e, t, n),
+                            s = (0, P[e])(r);
+                        return s.isValid ? {
+                            success: !0,
+                            data: r
+                        } : {
+                            success: !1,
+                            errors: s.errors
+                        }
+                    },
+                    D = [g.beforeShellExecution, g.beforeMCPExecution, g.beforeReadFile, g.beforeTabFileRead, g.subagentStart, g.preToolUse];
+
+                function F(e, t) {
+                    return "deny" === e || "deny" === t ? "deny" : "ask" === e || "ask" === t ? "ask" : "allow" === e || "allow" === t ? "allow" : void 0
+                }
+
+                function Q(e, t) {
+                    const n = [];
+                    return (null == e ? void 0 : e.trim()) && n.push(e.trim()), (null == t ? void 0 : t.trim()) && n.push(t.trim()), n.length > 0 ? n.join("\n\n---\n\n") : void 0
+                }
+
+                function L(e, t) {
+                    if (e || t) return Object.assign(Object.assign({}, e || {}), t || {})
+                }
+
+                function J(e, t) {
+                    if (0 === t.length) return;
+                    if (1 === t.length) return t[0];
+                    const n = D.includes(e),
+                        r = e === g.sessionStart,
+                        s = {};
+                    for (const e of t) {
+                        const t = e;
+                        for (const [e, i] of Object.entries(t))
+                            if (void 0 !== i)
+                                if ("permission" === e && n) s[e] = F(s[e], i);
+                                else if ("user_message" !== e && "agent_message" !== e)
+                            if ("continue" !== e || "boolean" != typeof i) {
+                                if (r) {
+                                    if ("env" === e && "object" == typeof i && null !== i) {
+                                        s[e] = L(s[e], i);
+                                        continue
+                                    }
+                                    if ("additional_context" === e && "string" == typeof i) {
+                                        s[e] = Q(s[e], i);
+                                        continue
+                                    }
+                                }
+                                s[e] = i
+                            } else void 0 === s[e] ? s[e] = i : s[e] = s[e] && i;
+                        else s[e] = Q(s[e], i)
+                    }
+                    return s
+                }
+
+                function O(e) {
+                    return D.includes(e)
+                }
+
+                function M(e, t, n) {
+                    const r = e.trim(),
+                        s = t.trim();
+                    return r || (s ? `Hook blocked with message: ${s}` : `Hook "${n}" blocked this action (exit code 2) but provided no reason.`)
+                }
+
+                function U(e, t) {
+                    return O(e) ? {
+                        permission: "deny",
+                        user_message: t
+                    } : e === g.beforeSubmitPrompt || e === g.sessionStart ? {
+                        continue: !1,
+                        user_message: t
+                    } : e === g.stop ? {} : void 0
+                }
+
+                function q(e) {
+                    return O(e) ? {
+                        permission: "allow"
+                    } : e === g.beforeSubmitPrompt || e === g.sessionStart ? {
+                        continue: !0
+                    } : e === g.stop ? {} : void 0
+                }
+                const G = e => {
+                        const t = [];
+                        if (!v(e)) return t.push("Hook script must be an object with either a 'command' property (command hook) or 'type: \"prompt\"' with a 'prompt' property (prompt hook)"), k(!1, t);
+                        const n = e.type;
+                        return "prompt" === n ? ((e, t) => {
+                            _(e.prompt) ? "" === e.prompt.trim() && t.push("Prompt hook 'prompt' property cannot be empty") : t.push("Prompt hook must have a 'prompt' property (string)"), void 0 !== e.model && (_(e.model) ? "" === e.model.trim() && t.push("Prompt hook 'model' cannot be an empty string") : t.push("Prompt hook 'model' must be a string if provided"))
+                        })(e, t) : "command" === n || void 0 === n ? ((e, t) => {
+                            _(e.command) || t.push("Hook script command must be a string")
+                        })(e, t) : t.push(`Invalid hook type: "${n}". Must be "command", "prompt", or omitted (defaults to "command")`), ((e, t) => {
+                            var n;
+                            if (void 0 !== e.matcher)
+                                if (_(e.matcher)) {
+                                    if ("" !== e.matcher && "*" !== e.matcher) try {
+                                        new RegExp(e.matcher)
+                                    } catch (r) {
+                                        t.push(`Hook script matcher "${e.matcher}" is not a valid regex: ${null!==(n=null==r?void 0:r.message)&&void 0!==n?n:String(r)}`)
+                                    }
+                                } else t.push("Hook script matcher must be a string if provided");
+                            if (void 0 !== e.timeout && ("number" != typeof e.timeout ? t.push("Hook script timeout must be a number (seconds)") : e.timeout <= 0 ? t.push("Hook script timeout must be a positive number") : e.timeout > 3600 && console.warn(`[hooks] Hook timeout of ${e.timeout}s is very long (>1 hour)`)), void 0 !== e.loop_limit) {
+                                const n = e.loop_limit;
+                                null !== n && ("number" != typeof n ? t.push("Hook script loop_limit must be a positive integer or null") : Number.isInteger(n) ? n <= 0 && t.push("Hook script loop_limit must be a positive integer (use null for no limit)") : t.push("Hook script loop_limit must be an integer"))
+                            }
+                            void 0 !== e.failClosed && "boolean" != typeof e.failClosed && t.push("Hook script failClosed must be a boolean")
+                        })(e, t), k(0 === t.length, t)
+                    },
+                    j = (e, t) => {
+                        const n = [];
+                        if (!Array.isArray(e)) return n.push(`${t} must be an array of hook scripts`), k(!1, n);
+                        for (let r = 0; r < e.length; r++) {
+                            const s = G(e[r]);
+                            s.isValid || n.push(`${t}[${r}]: ${s.errors.join(", ")}`)
+                        }
+                        return k(0 === n.length, n)
+                    },
+                    H = e => {
+                        const t = [];
+                        if (!v(e)) return t.push("Hooks config must be an object"), k(!1, t);
+                        if ("number" != typeof e.version ? t.push("Config version must be a number") : (!Number.isInteger(e.version) || e.version < 1) && t.push("Config version must be a positive integer"), !v(e.hooks)) return t.push("Config hooks must be an object"), k(!1, t);
+                        void 0 !== e.stop_hook_loop_limit && console.warn("[hooks] DEPRECATION WARNING: 'stop_hook_loop_limit' is deprecated. Use 'loop_limit' on individual hook scripts instead. The configured value is being ignored.");
+                        const n = Object.values(g),
+                            r = e.hooks;
+                        for (const [e, s] of Object.entries(r))
+                            if (n.includes(e)) {
+                                if (void 0 !== s) {
+                                    const n = j(s, e);
+                                    n.isValid || t.push(...n.errors)
+                                }
+                            } else t.push(`Unknown hook type: ${e}. Valid types are: ${n.join(", ")}`);
+                        return k(0 === t.length, t)
+                    }
             },
             91018: (e, t, n) => {
                 "use strict";
@@ -210512,4 +210565,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/dacbe9b31599a253763e4910eb6ab38704653320/extensions/cursor-agent-exec/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/d8673fb56ba50fda33ad78382000b519bb8acb70/extensions/cursor-agent-exec/dist/main.js.map

@@ -69853,6 +69853,10 @@
                         client: !0,
                         default: !1
                     },
+                    composer_dirty_message_persist: {
+                        client: !0,
+                        default: !1
+                    },
                     dashoard_credit_grants_visible: {
                         client: !1,
                         default: !1
@@ -70088,6 +70092,10 @@
                     glass_avoid_secondary_scanline: {
                         client: !0,
                         default: !1
+                    },
+                    glass_background_work_platter: {
+                        client: !0,
+                        default: !0
                     },
                     glass_ssh_machine_name_auto: {
                         client: !0,
@@ -70605,6 +70613,10 @@
                         client: !0,
                         default: !1
                     },
+                    enable_cc_nested_hook_output_normalization: {
+                        client: !0,
+                        default: !1
+                    },
                     model_picker_nudge: {
                         client: !0,
                         default: !1
@@ -70930,10 +70942,6 @@
                         default: !1
                     },
                     only_clear_mcp_oauth_on_logout: {
-                        client: !0,
-                        default: !1
-                    },
-                    mcp_oauth_token_client_id_binding: {
                         client: !0,
                         default: !1
                     },
@@ -73056,7 +73064,9 @@
                         minProbeIntervalMs: s.z.number().min(0).max(36e5)
                     }),
                     mcp_oauth_sweep_config: s.z.object({
-                        oauthAttemptTtlMs: s.z.number().min(6e4).max(6048e5)
+                        oauthAttemptTtlMs: s.z.number().min(6e4).max(6048e5),
+                        refreshLockTtlMs: s.z.number().min(2e3).max(12e4).optional(),
+                        registrationLockTtlMs: s.z.number().min(2e3).max(12e4).optional()
                     }),
                     inline_diff_performance_config: s.z.object({
                         maxDecorations: s.z.number()
@@ -210302,4 +210312,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/dacbe9b31599a253763e4910eb6ab38704653320/extensions/cursor-always-local/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/d8673fb56ba50fda33ad78382000b519bb8acb70/extensions/cursor-always-local/dist/main.js.map

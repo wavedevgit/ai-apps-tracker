@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "3583bc5e-1750-568d-99d4-488dc3b78265")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "ecc80b11-beec-532b-988f-e742eb256e5c")
     } catch (e) {}
 }();
 var Wg = function(t, e) {
@@ -495,12 +495,12 @@ var kR = Object.create,
     g = (t, e) => function() {
         return t && (e = (0, t[Ng(t)[0]])(t = 0)), e
     },
-    xR = (t, e) => function() {
+    DR = (t, e) => function() {
         return e || (0, t[Ng(t)[0]])((e = {
             exports: {}
         }).exports, e), e.exports
     },
-    DR = (t, e) => {
+    xR = (t, e) => {
         for (var i in e) Fg(t, i, {
             get: e[i],
             enumerable: !0
@@ -575,7 +575,7 @@ var $g, Je, Bg, ws = g({
             $g = MR(globalThis), Je = $g.mark, Bg = $g.getMarks
         }
     }),
-    oS = xR({
+    oS = DR({
         "node_modules/minimist/index.js"(t, e) {
             e.exports = function(n, o) {
                 o || (o = {});
@@ -640,8 +640,8 @@ var $g, Je, Bg, ws = g({
                     if (/^--.+=/.test(v)) {
                         var b = v.match(/^--([^=]+)=([\s\S]*)$/),
                             E = b[1],
-                            x = b[2];
-                        a.bools[E] && (x = x !== "false"), p(E, x, v)
+                            D = b[2];
+                        a.bools[E] && (D = D !== "false"), p(E, D, v)
                     } else if (/^--no-.+/.test(v)) {
                         var E = v.match(/^--no-(.+)/)[1];
                         p(E, !1, v)
@@ -856,10 +856,10 @@ var oc = g({
             it = globalThis
         }
     }),
-    Do, Vg = g({
+    xo, Vg = g({
         "out-build/external/sentry/core/utils/version.js"() {
             "use strict";
-            Do = "10.25.0-cursor"
+            xo = "10.25.0-cursor"
         }
     });
 
@@ -869,12 +869,12 @@ function Ro() {
 
 function Hu(t) {
     const e = t.__SENTRY__ = t.__SENTRY__ || {};
-    return e.version = e.version || Do, e[Do] = e[Do] || {}
+    return e.version = e.version || xo, e[xo] = e[xo] || {}
 }
 
 function cc(t, e, i = it) {
     const r = i.__SENTRY__ = i.__SENTRY__ || {},
-        s = r[Do] = r[Do] || {};
+        s = r[xo] = r[xo] || {};
     return s[t] || (s[t] = e())
 }
 var cr = g({
@@ -1193,14 +1193,14 @@ function iA(t) {
         message: t.message,
         name: t.name,
         stack: t.stack,
-        ...xS(t)
+        ...DS(t)
     };
     if (KR(t)) {
         const e = {
             type: t.type,
             target: IS(t.target),
             currentTarget: IS(t.currentTarget),
-            ...xS(t)
+            ...DS(t)
         };
         return typeof CustomEvent < "u" && bn(t, CustomEvent) && (e.detail = t.detail), e
     } else return t
@@ -1214,7 +1214,7 @@ function IS(t) {
     }
 }
 
-function xS(t) {
+function DS(t) {
     if (typeof t == "object" && t !== null) {
         const e = {};
         for (const i in t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
@@ -1227,7 +1227,7 @@ var ai = g({
             Ve(), PS(), be(), Ct()
         }
     }),
-    DS = g({
+    xS = g({
         "out-build/external/sentry/core/vendor/escapeStringForRegex.js"() {
             "use strict"
         }
@@ -1261,7 +1261,7 @@ function Yu(t, e = [], i = !1) {
 var Br = g({
     "out-build/external/sentry/core/utils/string.js"() {
         "use strict";
-        Ct(), DS()
+        Ct(), xS()
     }
 });
 
@@ -1956,7 +1956,7 @@ function bA(t) {
     let r;
     return e.orgId ? r = String(e.orgId) : i && (r = _A(i)), r
 }
-var KS, xr = g({
+var KS, Dr = g({
     "out-build/external/sentry/core/utils/dsn.js"() {
         "use strict";
         Ve(), be(), KS = /^o(\d+)\./
@@ -1976,7 +1976,7 @@ var Sc = g({
     EA, od = g({
         "out-build/external/sentry/core/utils/tracing.js"() {
             "use strict";
-            be(), Fo(), xr(), Sc(), Ys(), EA = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$")
+            be(), Fo(), Dr(), Sc(), Ys(), EA = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$")
         }
     });
 
@@ -2105,7 +2105,7 @@ function ZS(t, e) {
     Xs(e, cd, i), t[Uo] ? t[Uo].add(e) : Xs(t, Uo, new Set([e]))
 }
 
-function xA(t) {
+function DA(t) {
     const e = new Set;
 
     function i(r) {
@@ -2128,7 +2128,7 @@ function e_() {
     return e.getActiveSpan ? e.getActiveSpan() : pc(Pr())
 }
 
-function DA() {
+function xA() {
     cm || (qu(() => {
         console.warn("[Sentry] Returning null from `beforeSendSpan` is disallowed. To drop certain spans, configure the respective integrations directly or use `ignoreSpans`.")
     }), cm = !0)
@@ -2242,7 +2242,7 @@ function bc(t) {
 var hm, Js = g({
         "out-build/external/sentry/core/tracing/dynamicSamplingContext.js"() {
             "use strict";
-            ld(), Ue(), At(), Fo(), xr(), $o(), ai(), Xt(), yc(), hm = "_frozenDsc"
+            ld(), Ue(), At(), Fo(), Dr(), $o(), ai(), Xt(), yc(), hm = "_frozenDsc"
         }
     }),
     ud, dd = g({
@@ -2436,7 +2436,7 @@ function $A(t) {
 var Zi = g({
     "out-build/external/sentry/core/utils/envelope.js"() {
         "use strict";
-        cr(), xr(), In(), _t()
+        cr(), Dr(), In(), _t()
     }
 });
 
@@ -2466,7 +2466,7 @@ function BA(t, e) {
     const d = a ? p => {
             const m = Qi(p),
                 w = a(m);
-            return w || (DA(), m)
+            return w || (xA(), m)
         } : Qi,
         f = [];
     for (const p of l) {
@@ -2478,7 +2478,7 @@ function BA(t, e) {
 var mm = g({
     "out-build/external/sentry/core/envelope.js"() {
         "use strict";
-        Js(), xr(), Zi(), Vi(), um(), Xt()
+        Js(), Dr(), Zi(), Vi(), um(), Xt()
     }
 });
 
@@ -2665,7 +2665,7 @@ var wm, hd, ym = g({
                     isolationScope: e
                 } = nd(this), i = t?.getScopeData().sdkProcessingMetadata?.normalizedRequest;
                 if (this._sampled !== !0) return;
-                const s = xA(this).filter(l => l !== this && !HA(l)).map(l => Qi(l)).filter(l_),
+                const s = DA(this).filter(l => l !== this && !HA(l)).map(l => Qi(l)).filter(l_),
                     n = this._attributes[wc];
                 delete this._attributes[sm], s.forEach(l => {
                     delete l.data[sm]
@@ -3088,7 +3088,7 @@ var v_, km = g({
     }
 });
 
-function xn(t, e) {
+function Dn(t, e) {
     return Pr().captureException(t, s8(e))
 }
 
@@ -3129,7 +3129,7 @@ function y_(t, e, i) {
 var S_, Cm = g({
     "out-build/external/sentry/core/api.js"() {
         "use strict";
-        xr(), S_ = "7"
+        Dr(), S_ = "7"
     }
 });
 
@@ -3199,7 +3199,7 @@ function f8(t, e, i, r) {
 var p8 = g({
     "out-build/external/sentry/core/logs/envelope.js"() {
         "use strict";
-        xr(), Zi()
+        Dr(), Zi()
     }
 });
 
@@ -3295,8 +3295,8 @@ function E_(t, e = Pr(), i = m8) {
         attributes: l
     };
     r.emit("beforeCaptureLog", E);
-    const x = a ? qu(() => a(E)) : E;
-    if (!x) {
+    const D = a ? qu(() => a(E)) : E;
+    if (!D) {
         r.recordDroppedEvent("before_send", "log_item", 1), Ae && Ne.warn("beforeSendLog returned null, log will not be captured.");
         return
     }
@@ -3305,7 +3305,7 @@ function E_(t, e = Pr(), i = m8) {
         message: M,
         attributes: T = {},
         severityNumber: X
-    } = x, B = {
+    } = D, B = {
         timestamp: fc(),
         level: k,
         body: M,
@@ -3313,7 +3313,7 @@ function E_(t, e = Pr(), i = m8) {
         severity_number: X ?? b_[k],
         attributes: Object.keys(T).reduce((se, Ye) => (se[Ye] = g8(T[Ye]), se), {})
     };
-    i(r, B), r.emit("afterCaptureLog", x)
+    i(r, B), r.emit("afterCaptureLog", D)
 }
 
 function v8(t, e) {
@@ -3345,10 +3345,10 @@ var C_, kc = g({
     y8 = g({
         "out-build/external/sentry/core/metrics/envelope.js"() {
             "use strict";
-            xr(), Zi()
+            Dr(), Zi()
         }
     }),
-    xm = g({
+    Dm = g({
         "out-build/external/sentry/core/metrics/internal.js"() {
             "use strict";
             cr(), Ue(), Ve(), md(), be(), En(), Ji(), Pm(), y8()
@@ -3381,16 +3381,16 @@ var I_ = g({
             At()
         }
     }),
-    b8, E8, x_ = g({
+    b8, E8, D_ = g({
         "out-build/external/sentry/core/client.js"() {
             "use strict";
-            Cm(), ld(), Ue(), Ve(), mm(), Jt(), kc(), xm(), Ju(), Js(), P_(), be(), xr(), Zi(), I_(), Ct(), im(), Vi(), Sc(), km(), um(), Xt(), Ec(), _8(), b8 = Symbol.for("SentryInternalError"), E8 = Symbol.for("SentryDoNotSendEventError")
+            Cm(), ld(), Ue(), Ve(), mm(), Jt(), kc(), Dm(), Ju(), Js(), P_(), be(), Dr(), Zi(), I_(), Ct(), im(), Vi(), Sc(), km(), um(), Xt(), Ec(), _8(), b8 = Symbol.for("SentryInternalError"), E8 = Symbol.for("SentryDoNotSendEventError")
         }
     }),
-    D_ = g({
+    x_ = g({
         "out-build/external/sentry/core/checkin.js"() {
             "use strict";
-            xr(), Zi()
+            Dr(), Zi()
         }
     }),
     k8 = g({
@@ -3413,7 +3413,7 @@ function P8(t, e) {
         frames: r
     }), i
 }
-var Dm = g({
+var xm = g({
         "out-build/external/sentry/core/utils/eventbuilder.js"() {
             "use strict";
             Ct(), Vi(), In(), ai()
@@ -3422,17 +3422,17 @@ var Dm = g({
     I8 = g({
         "out-build/external/sentry/core/server-runtime-client.js"() {
             "use strict";
-            D_(), x_(), Ue(), Ve(), Yt(), k8(), be(), Dm(), Vi(), Ec(), Pm()
+            x_(), D_(), Ue(), Ve(), Yt(), k8(), be(), xm(), Vi(), Ec(), Pm()
         }
     }),
-    x8 = g({
+    D8 = g({
         "out-build/external/sentry/core/sdk.js"() {
             "use strict";
             Ue(), Ve(), be()
         }
     });
 
-function D8(t = 100) {
+function x8(t = 100) {
     const e = new Set;
 
     function i() {
@@ -3491,7 +3491,7 @@ var R_, Rm = g({
     T8 = g({
         "out-build/external/sentry/core/transports/multiplexed.js"() {
             "use strict";
-            Cm(), xr(), Zi()
+            Cm(), Dr(), Zi()
         }
     }),
     vd = g({
@@ -3741,7 +3741,7 @@ var q_ = g({
     G_, z_, K_, X_, Y8, J8 = g({
         "out-build/external/sentry/core/integrations/linkederrors.js"() {
             "use strict";
-            Jt(), q_(), Dm(), G_ = "cause", z_ = 5, K_ = "LinkedErrors", X_ = ((t = {}) => {
+            Jt(), q_(), xm(), G_ = "cause", z_ = 5, K_ = "LinkedErrors", X_ = ((t = {}) => {
                 const e = t.limit || z_,
                     i = t.key || G_;
                 return {
@@ -4004,7 +4004,7 @@ function fM(t, e, i) {
         }
         const n = t.find(a => a instanceof Error);
         if (n) {
-            xn(n, r);
+            Dn(n, r);
             return
         }
         const o = Qg(t, " ");
@@ -4224,7 +4224,7 @@ var gb, mb = g({
     }
 });
 
-function xM({
+function DM({
     isBrowser: t,
     root: e,
     prefix: i
@@ -4246,14 +4246,14 @@ function xM({
         return r
     }
 }
-var vb, DM, RM = g({
+var vb, xM, RM = g({
     "out-build/external/sentry/core/integrations/rewriteframes.js"() {
         "use strict";
-        Jt(), mb(), _t(), vb = "RewriteFrames", DM = (t = {}) => {
+        Jt(), mb(), _t(), vb = "RewriteFrames", xM = (t = {}) => {
             const e = t.root,
                 i = t.prefix || "app:///",
                 r = "window" in it && !!it.window,
-                s = t.iteratee || xM({
+                s = t.iteratee || DM({
                     isBrowser: r,
                     root: e,
                     prefix: i
@@ -4346,7 +4346,7 @@ function wb(t, e = !1) {
                 }
             }, n => Reflect.apply(i, r, s).then(o => (o && typeof o == "object" && "error" in o && o.error ? (n.setStatus({
                 code: ci
-            }), xn(o.error, {
+            }), Dn(o.error, {
                 mechanism: {
                     handled: !1,
                     type: "auto.db.supabase.auth"
@@ -4356,7 +4356,7 @@ function wb(t, e = !1) {
             }), n.end(), o)).catch(o => {
                 throw n.setStatus({
                     code: ci
-                }), n.end(), xn(o, {
+                }), n.end(), Dn(o, {
                     mechanism: {
                         handled: !1,
                         type: "auto.db.supabase.auth"
@@ -4425,10 +4425,10 @@ function OM(t) {
                     const v = new Error(m.error.message);
                     m.error.code && (v.code = m.error.code), m.error.details && (v.details = m.error.details);
                     const b = {};
-                    l.length && (b.query = l), Object.keys(u).length && (b.body = u), xn(v, E => (E.addEventProcessor(x => (AS(x, {
+                    l.length && (b.query = l), Object.keys(u).length && (b.body = u), Dn(v, E => (E.addEventProcessor(D => (AS(D, {
                         handled: !1,
                         type: "auto.db.supabase.postgres"
-                    }), x)), E.setContext("supabase", b), E))
+                    }), D)), E.setContext("supabase", b), E))
                 }
                 const w = {
                         type: "supabase",
@@ -4636,12 +4636,12 @@ function XM(t, e) {
             logger: "console"
         },
         level: ib(t),
-        message: xb(e)
+        message: Db(e)
     };
     if (t === "assert")
         if (e[0] === !1) {
             const r = e.slice(1);
-            i.message = r.length > 0 ? `Assertion failed: ${xb(r)}` : "Assertion failed", i.data.arguments = r
+            i.message = r.length > 0 ? `Assertion failed: ${Db(r)}` : "Assertion failed", i.data.arguments = r
         } else return;
     T_(i, {
         input: e,
@@ -4649,16 +4649,16 @@ function XM(t, e) {
     })
 }
 
-function xb(t) {
+function Db(t) {
     return "util" in it && typeof it.util.format == "function" ? it.util.format(...t) : Qg(t, " ")
 }
-var Db, YM, JM = g({
+var xb, YM, JM = g({
     "out-build/external/sentry/core/integrations/console.js"() {
         "use strict";
-        Tm(), Ue(), Sd(), Jt(), be(), $m(), Br(), _t(), Db = "Console", YM = (t = {}) => {
+        Tm(), Ue(), Sd(), Jt(), be(), $m(), Br(), _t(), xb = "Console", YM = (t = {}) => {
             const e = new Set(t.levels || lc);
             return {
-                name: Db,
+                name: xb,
                 setup(i) {
                     Um(({
                         args: r,
@@ -4960,7 +4960,7 @@ var jb = g({
     ST = g({
         "out-build/external/sentry/core/metrics/public-api.js"() {
             "use strict";
-            xm()
+            Dm()
         }
     }),
     _T = g({
@@ -5031,7 +5031,7 @@ var jb = g({
             Ue(), Pi(), At(), Yt(), Bo(), lr(), Pc(), kd(), PT(), Xb()
         }
     }),
-    xT = g({
+    DT = g({
         "out-build/external/sentry/core/utils/anthropic-ai/streaming.js"() {
             "use strict";
             Pi(), Yt(), lr(), Pc()
@@ -5042,7 +5042,7 @@ var jb = g({
             "use strict"
         }
     }),
-    DT = g({
+    xT = g({
         "out-build/external/sentry/core/utils/anthropic-ai/utils.js"() {
             "use strict";
             Pi(), Yt(), Yb()
@@ -5051,7 +5051,7 @@ var jb = g({
     RT = g({
         "out-build/external/sentry/core/utils/anthropic-ai/index.js"() {
             "use strict";
-            Ue(), Pi(), At(), Yt(), Bo(), lr(), Pc(), fd(), xT(), DT()
+            Ue(), Pi(), At(), Yt(), Bo(), lr(), Pc(), fd(), DT(), xT()
         }
     }),
     qm = g({
@@ -5175,7 +5175,7 @@ var jb = g({
     Cd = g({
         "out-build/external/sentry/core/index.js"() {
             "use strict";
-            Yt(), At(), mm(), Pi(), Ue(), LS(), vc(), cr(), Ju(), gc(), p_(), Cm(), x_(), I8(), x8(), A8(), M8(), T8(), Jt(), md(), km(), D_(), $o(), L8(), fd(), A_(), M_(), M_(), Xt(), En(), Sc(), O8(), Mm(), W8(), F8(), N8(), ld(), Tm(), $8(), V_(), V_(), J8(), tM(), dM(), gM(), SM(), EM(), RM(), NM(), qM(), KM(), JM(), iT(), Wb(), rT(), sT(), nT(), hT(), fT(), kc(), pT(), yT(), xm(), ST(), _T(), kT(), zb(), IT(), kd(), RT(), Yb(), TT(), qm(), OT(), Gm(), jm(), q_(), WT(), PS(), xr(), Qb(), _t(), Sd(), FT(), SS(), _S(), hc(), Ct(), NT(), be(), Vi(), tE(), In(), ai(), mb(), Rm(), $m(), UT(), _n(), iE(), Br(), Zb(), Ec(), Ji(), od(), eE(), Zi(), P_(), Am(), Fo(), vd(), Dm(), $T(), BT(), Ys(), rE(), VT(), Vg(), m_(), DS()
+            Yt(), At(), mm(), Pi(), Ue(), LS(), vc(), cr(), Ju(), gc(), p_(), Cm(), D_(), I8(), D8(), A8(), M8(), T8(), Jt(), md(), km(), x_(), $o(), L8(), fd(), A_(), M_(), M_(), Xt(), En(), Sc(), O8(), Mm(), W8(), F8(), N8(), ld(), Tm(), $8(), V_(), V_(), J8(), tM(), dM(), gM(), SM(), EM(), RM(), NM(), qM(), KM(), JM(), iT(), Wb(), rT(), sT(), nT(), hT(), fT(), kc(), pT(), yT(), Dm(), ST(), _T(), kT(), zb(), IT(), kd(), RT(), Yb(), TT(), qm(), OT(), Gm(), jm(), q_(), WT(), PS(), Dr(), Qb(), _t(), Sd(), FT(), SS(), _S(), hc(), Ct(), NT(), be(), Vi(), tE(), In(), ai(), mb(), Rm(), $m(), UT(), _n(), iE(), Br(), Zb(), Ec(), Ji(), od(), eE(), Zi(), P_(), Am(), Fo(), vd(), xm(), $T(), BT(), Ys(), rE(), VT(), Vg(), m_(), xS()
         }
     });
 
@@ -5279,7 +5279,7 @@ function Pd() {
     return globalThis._VSCODE_NLS_MESSAGES
 }
 
-function xc() {
+function Dc() {
     return globalThis._VSCODE_NLS_LANGUAGE
 }
 var aE = g({
@@ -5323,7 +5323,7 @@ function lE(t, e, ...i) {
 var uE, Ee = g({
     "out-build/vs/nls.js"() {
         "use strict";
-        aE(), aE(), uE = xc() === "pseudo" || typeof document < "u" && document.location && typeof document.location.hash == "string" && document.location.hash.indexOf("pseudo=true") >= 0
+        aE(), aE(), uE = Dc() === "pseudo" || typeof document < "u" && document.location && typeof document.location.hash == "string" && document.location.hash.indexOf("pseudo=true") >= 0
     }
 });
 
@@ -5343,21 +5343,21 @@ function dE(t) {
 function hE(t) {
     return parseFloat(t) >= 25
 }
-var Dn, Ho, qo, Go, Km, Xm, xd, fE, Ym, Jm, pE, Dc, Rc, Qm, Zm, jr, Hr, li, ev, gE, mE, Ac, V, L, Pe, tv, iv, ys, vE, wE, yE, zo, Dr, ur, SE, rv, _E, bE, EE, er, sv, kE, CE, PE, GT, nv, ov, zT, z = g({
+var xn, Ho, qo, Go, Km, Xm, Dd, fE, Ym, Jm, pE, xc, Rc, Qm, Zm, jr, Hr, li, ev, gE, mE, Ac, V, L, Pe, tv, iv, ys, vE, wE, yE, zo, xr, ur, SE, rv, _E, bE, EE, er, sv, kE, CE, PE, GT, nv, ov, zT, z = g({
     "out-build/vs/base/common/platform.js"() {
         "use strict";
-        if (Ee(), Dn = "en", Ho = !1, qo = !1, Go = !1, Km = !1, Xm = !1, xd = !1, fE = !1, Ym = !1, Jm = !1, pE = !1, Dc = void 0, Rc = Dn, Qm = Dn, Zm = void 0, jr = void 0, Hr = globalThis, li = void 0, typeof Hr.vscode < "u" && typeof Hr.vscode.process < "u" ? li = Hr.vscode.process : typeof process < "u" && typeof process?.versions?.node == "string" && (li = process), ev = typeof li?.versions?.electron == "string", gE = ev && li?.type === "renderer", typeof li == "object") {
-            Ho = li.platform === "win32", qo = li.platform === "darwin", Go = li.platform === "linux", Km = Go && !!li.env.SNAP && !!li.env.SNAP_REVISION, fE = ev, Jm = !!li.env.CI || !!li.env.BUILD_ARTIFACTSTAGINGDIRECTORY, Dc = Dn, Rc = Dn;
+        if (Ee(), xn = "en", Ho = !1, qo = !1, Go = !1, Km = !1, Xm = !1, Dd = !1, fE = !1, Ym = !1, Jm = !1, pE = !1, xc = void 0, Rc = xn, Qm = xn, Zm = void 0, jr = void 0, Hr = globalThis, li = void 0, typeof Hr.vscode < "u" && typeof Hr.vscode.process < "u" ? li = Hr.vscode.process : typeof process < "u" && typeof process?.versions?.node == "string" && (li = process), ev = typeof li?.versions?.electron == "string", gE = ev && li?.type === "renderer", typeof li == "object") {
+            Ho = li.platform === "win32", qo = li.platform === "darwin", Go = li.platform === "linux", Km = Go && !!li.env.SNAP && !!li.env.SNAP_REVISION, fE = ev, Jm = !!li.env.CI || !!li.env.BUILD_ARTIFACTSTAGINGDIRECTORY, xc = xn, Rc = xn;
             const t = li.env.VSCODE_NLS_CONFIG;
             if (t) try {
                 const e = JSON.parse(t);
-                Dc = e.userLocale, Qm = e.osLocale, Rc = e.resolvedLanguage || Dn, Zm = e.languagePack?.translationsConfigFile
+                xc = e.userLocale, Qm = e.osLocale, Rc = e.resolvedLanguage || xn, Zm = e.languagePack?.translationsConfigFile
             } catch {}
             Xm = !0
-        } else typeof navigator == "object" && !gE ? (jr = navigator.userAgent, Ho = jr.indexOf("Windows") >= 0, qo = jr.indexOf("Macintosh") >= 0, Ym = (jr.indexOf("Macintosh") >= 0 || jr.indexOf("iPad") >= 0 || jr.indexOf("iPhone") >= 0) && !!navigator.maxTouchPoints && navigator.maxTouchPoints > 0, Go = jr.indexOf("Linux") >= 0, pE = jr?.indexOf("Mobi") >= 0, xd = !0, Rc = xc() || Dn, Dc = navigator.language.toLowerCase(), Qm = Dc) : console.error("Unable to resolve platform.");
+        } else typeof navigator == "object" && !gE ? (jr = navigator.userAgent, Ho = jr.indexOf("Windows") >= 0, qo = jr.indexOf("Macintosh") >= 0, Ym = (jr.indexOf("Macintosh") >= 0 || jr.indexOf("iPad") >= 0 || jr.indexOf("iPhone") >= 0) && !!navigator.maxTouchPoints && navigator.maxTouchPoints > 0, Go = jr.indexOf("Linux") >= 0, pE = jr?.indexOf("Mobi") >= 0, Dd = !0, Rc = Dc() || xn, xc = navigator.language.toLowerCase(), Qm = xc) : console.error("Unable to resolve platform.");
         (function(t) {
             t[t.Web = 0] = "Web", t[t.Mac = 1] = "Mac", t[t.Linux = 2] = "Linux", t[t.Windows = 3] = "Windows"
-        })(mE || (mE = {})), Ac = 0, qo ? Ac = 1 : Ho ? Ac = 3 : Go && (Ac = 2), V = Ho, L = qo, Pe = Go, tv = Km, iv = Xm, ys = xd, vE = xd && typeof Hr.importScripts == "function", wE = vE ? Hr.origin : void 0, yE = Jm, zo = Ac, Dr = jr, ur = Rc, (function(t) {
+        })(mE || (mE = {})), Ac = 0, qo ? Ac = 1 : Ho ? Ac = 3 : Go && (Ac = 2), V = Ho, L = qo, Pe = Go, tv = Km, iv = Xm, ys = Dd, vE = Dd && typeof Hr.importScripts == "function", wE = vE ? Hr.origin : void 0, yE = Jm, zo = Ac, xr = jr, ur = Rc, (function(t) {
             function e() {
                 return ur
             }
@@ -5399,7 +5399,7 @@ var Dn, Ho, qo, Go, Km, Xm, xd, fE, Ym, Jm, pE, Dc, Rc, Qm, Zm, jr, Hr, li, ev, 
             return t => setTimeout(t)
         })(), (function(t) {
             t[t.Windows = 1] = "Windows", t[t.Macintosh = 2] = "Macintosh", t[t.Linux = 3] = "Linux"
-        })(EE || (EE = {})), er = qo || Ym ? 2 : Ho ? 1 : 3, sv = !!(Dr && Dr.indexOf("Chrome") >= 0), kE = !!(Dr && Dr.indexOf("Firefox") >= 0), CE = !!(!sv && Dr && Dr.indexOf("Safari") >= 0), PE = !!(Dr && Dr.indexOf("Edg/") >= 0), GT = !!(Dr && Dr.indexOf("Android") >= 0), nv = li?.arch, ov = li?.platform, zT = li?.versions?.node
+        })(EE || (EE = {})), er = qo || Ym ? 2 : Ho ? 1 : 3, sv = !!(xr && xr.indexOf("Chrome") >= 0), kE = !!(xr && xr.indexOf("Firefox") >= 0), CE = !!(!sv && xr && xr.indexOf("Safari") >= 0), PE = !!(xr && xr.indexOf("Edg/") >= 0), GT = !!(xr && xr.indexOf("Android") >= 0), nv = li?.arch, ov = li?.platform, zT = li?.versions?.node
     }
 });
 
@@ -5425,7 +5425,7 @@ function XT(t, e, i = 0, r = t.length) {
 var YT, JT = g({
     "out-build/vs/base/common/arraysFind.js"() {
         "use strict";
-        YT = class ND {
+        YT = class Nx {
             static {
                 this.assertInvariants = !1
             }
@@ -5433,7 +5433,7 @@ var YT, JT = g({
                 this._array = e, this._findLastMonotonousLastIdx = 0
             }
             findLastMonotonous(e) {
-                if (ND.assertInvariants) {
+                if (Nx.assertInvariants) {
                     if (this._prevFindLastPredicate) {
                         for (const r of this._array)
                             if (this._prevFindLastPredicate(r) && !e(r)) throw new Error("MonotonousArray: current predicate must be weaker than (or equal to) the previous predicate.")
@@ -5458,11 +5458,11 @@ function QT(t) {
 }
 
 function Qt(t) {
-    Dd(t) || Mc.onUnexpectedError(t)
+    xd(t) || Mc.onUnexpectedError(t)
 }
 
-function Dd(t) {
-    return t instanceof xi ? !0 : t instanceof Error && t.name === Tc && t.message === Tc
+function xd(t) {
+    return t instanceof Di ? !0 : t instanceof Error && t.name === Tc && t.message === Tc
 }
 
 function Ko() {
@@ -5470,7 +5470,7 @@ function Ko() {
     return t.name = t.message, t
 }
 
-function xE(t) {
+function DE(t) {
     return t ? new Error(`Illegal state: ${t}`) : new Error("Illegal state")
 }
 
@@ -5478,10 +5478,10 @@ function Ii(t) {
     return t ? t.message ? t.message : t.stack ? t.stack.split(`
 `)[0] : String(t) : "Error"
 }
-var DE, Mc, Tc, xi, Rd, qr, av, RE, AE, $e = g({
+var xE, Mc, Tc, Di, Rd, qr, av, RE, AE, $e = g({
     "out-build/vs/base/common/errors.js"() {
         "use strict";
-        DE = class {
+        xE = class {
             constructor() {
                 this.listeners = [], this.unexpectedErrorHandler = function(t) {
                     setTimeout(() => {
@@ -5518,7 +5518,7 @@ var DE, Mc, Tc, xi, Rd, qr, av, RE, AE, $e = g({
             onUnexpectedExternalError(t) {
                 this.unexpectedErrorHandler(t)
             }
-        }, Mc = new DE, Tc = "Canceled", xi = class extends Error {
+        }, Mc = new xE, Tc = "Canceled", Di = class extends Error {
             constructor() {
                 if (super(Tc), this.name = this.message, AE && typeof console < "u") {
                     const t = new Error().stack ?? "";
@@ -5541,9 +5541,9 @@ var DE, Mc, Tc, xi, Rd, qr, av, RE, AE, $e = g({
             static isErrorNoTelemetry(e) {
                 return e.name === "CodeExpectedError"
             }
-        }, av = class UD extends Error {
+        }, av = class Ux extends Error {
             constructor(e) {
-                super(e || "An unexpected bug occurred."), Object.setPrototypeOf(this, UD.prototype)
+                super(e || "An unexpected bug occurred."), Object.setPrototypeOf(this, Ux.prototype)
             }
         }, RE = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "QuickAgentConversation", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"], AE = !1
     }
@@ -6383,12 +6383,12 @@ var KE, We = g({
                     }]
                 }
                 t.consume = E;
-                async function x(k) {
+                async function D(k) {
                     const M = [];
                     for await (const T of k) M.push(T);
                     return Promise.resolve(M)
                 }
-                t.asyncToArray = x
+                t.asyncToArray = D
             })(Rn || (Rn = {}))
         }
     });
@@ -6449,7 +6449,7 @@ function Se(t) {
 var YE, An, y3, Me, $, Qs, hv, N = g({
         "out-build/vs/base/common/lifecycle.js"() {
             "use strict";
-            if (Vt(), WE(), ui(), Md(), Wd(), YE = !1, An = null, y3 = class $D {
+            if (Vt(), WE(), ui(), Md(), Wd(), YE = !1, An = null, y3 = class $x {
                     constructor() {
                         this.livingDisposables = new Map
                     }
@@ -6463,7 +6463,7 @@ var YE, An, y3, Me, $, Qs, hv, N = g({
                             source: null,
                             isSingleton: !1,
                             value: e,
-                            idx: $D.idx++
+                            idx: $x.idx++
                         }, this.livingDisposables.set(e, i)), i
                     }
                     trackDisposable(e) {
@@ -6576,7 +6576,7 @@ ${u.join(`
                     markAsSingleton(e) {}
                 })
             }
-            Me = class BD {
+            Me = class Bx {
                 static {
                     this.DISABLE_DISPOSED_WARNING = !1
                 }
@@ -6599,7 +6599,7 @@ ${u.join(`
                 add(e) {
                     if (!e) return e;
                     if (e === this) throw new Error("Cannot register a disposable on itself!");
-                    return Nc(e, this), this._isDisposed ? BD.DISABLE_DISPOSED_WARNING || console.warn(new Error("Trying to add a disposable to a DisposableStore that has already been disposed of. The added object will be leaked!").stack) : this._toDispose.add(e), e
+                    return Nc(e, this), this._isDisposed ? Bx.DISABLE_DISPOSED_WARNING || console.warn(new Error("Trying to add a disposable to a DisposableStore that has already been disposed of. The added object will be leaked!").stack) : this._toDispose.add(e), e
                 }
                 delete(e) {
                     if (e) {
@@ -6774,9 +6774,9 @@ ${u.join(`
     QE, Mn, Yo = g({
         "out-build/vs/base/common/stopwatch.js"() {
             "use strict";
-            QE = globalThis.performance && typeof globalThis.performance.now == "function", Mn = class VD {
+            QE = globalThis.performance && typeof globalThis.performance.now == "function", Mn = class Vx {
                 static create(e) {
-                    return new VD(e)
+                    return new Vx(e)
                 }
                 constructor(e) {
                     this._now = QE && e === !1 ? Date.now : globalThis.performance.now.bind(globalThis.performance), this._startTime = this._now(), this._stopTime = -1
@@ -6793,7 +6793,7 @@ ${u.join(`
             }
         }
     }),
-    pv, ZE, R, e2, gv, t2, Fd, i2, r2, s2, Uc, n2, o2, D, a2, Nd, c2, mv, K = g({
+    pv, ZE, R, e2, gv, t2, Fd, i2, r2, s2, Uc, n2, o2, x, a2, Nd, c2, mv, K = g({
         "out-build/vs/base/common/event.js"() {
             "use strict";
             WE(), $e(), Md(), N(), JE(), Yo(), pv = !1, ZE = !1, (function(t) {
@@ -6879,7 +6879,7 @@ ${u.join(`
                         }
                     };
                     W || e(Y);
-                    const te = new D(Y);
+                    const te = new x(Y);
                     return W?.add(te), te.event
                 }
 
@@ -6889,26 +6889,26 @@ ${u.join(`
 
                 function p(Q, W, Z = 100, Y = !1, te = !1, de, _) {
                     let C, P, F, he = 0,
-                        De;
+                        xe;
                     const ve = {
                         leakWarningThreshold: de,
                         onWillAddFirstListener() {
                             C = Q(ft => {
-                                he++, P = W(P, ft), Y && !F && (kt.fire(P), P = void 0), De = () => {
+                                he++, P = W(P, ft), Y && !F && (kt.fire(P), P = void 0), xe = () => {
                                     const Tt = P;
                                     P = void 0, F = void 0, (!Y || he > 1) && kt.fire(Tt), he = 0
-                                }, typeof Z == "number" ? (clearTimeout(F), F = setTimeout(De, Z)) : F === void 0 && (F = 0, queueMicrotask(De))
+                                }, typeof Z == "number" ? (clearTimeout(F), F = setTimeout(xe, Z)) : F === void 0 && (F = 0, queueMicrotask(xe))
                             })
                         },
                         onWillRemoveListener() {
-                            te && he > 0 && De?.()
+                            te && he > 0 && xe?.()
                         },
                         onDidRemoveLastListener() {
-                            De = void 0, C.dispose()
+                            xe = void 0, C.dispose()
                         }
                     };
                     _ || e(ve);
-                    const kt = new D(ve);
+                    const kt = new x(ve);
                     return _?.add(kt), kt.event
                 }
                 t.debounce = p;
@@ -6942,7 +6942,7 @@ ${u.join(`
                     const _ = () => {
                             te?.forEach(P => C.fire(P)), te = null
                         },
-                        C = new D({
+                        C = new x({
                             onWillAddFirstListener() {
                                 de || (de = Q(P => C.fire(P)), Y && Y.add(de))
                             },
@@ -6959,7 +6959,7 @@ ${u.join(`
 
                 function b(Q, W) {
                     return (Y, te, de) => {
-                        const _ = W(new x);
+                        const _ = W(new D);
                         return Q(function(C) {
                             const P = _.evaluate(C);
                             P !== E && Y.call(te, P)
@@ -6968,7 +6968,7 @@ ${u.join(`
                 }
                 t.chain = b;
                 const E = Symbol("HaltChainable");
-                class x {
+                class D {
                     constructor() {
                         this.steps = []
                     }
@@ -7004,7 +7004,7 @@ ${u.join(`
                     const Y = (...C) => _.fire(Z(...C)),
                         te = () => Q.on(W, Y),
                         de = () => Q.removeListener(W, Y),
-                        _ = new D({
+                        _ = new x({
                             onWillAddFirstListener: te,
                             onDidRemoveLastListener: de
                         });
@@ -7020,7 +7020,7 @@ ${u.join(`
                         Y = () => {
                             W?.unsubscribe(), W = void 0
                         },
-                        te = new D({
+                        te = new x({
                             onWillAddFirstListener: Z,
                             onDidRemoveLastListener: Y
                         });
@@ -7032,7 +7032,7 @@ ${u.join(`
                     const Y = (...C) => _.fire(Z(...C)),
                         te = () => Q.addEventListener(W, Y),
                         de = () => Q.removeEventListener(W, Y),
-                        _ = new D({
+                        _ = new x({
                             onWillAddFirstListener: te,
                             onDidRemoveLastListener: de
                         });
@@ -7046,7 +7046,7 @@ ${u.join(`
                 t.toPromise = X;
 
                 function B(Q) {
-                    const W = new D;
+                    const W = new x;
                     return Q.then(Z => {
                         W.fire(Z)
                     }, () => {
@@ -7077,7 +7077,7 @@ ${u.join(`
                                 W.removeObserver(this)
                             }
                         };
-                        Z || e(Y), this.emitter = new D(Y), Z && Z.add(this.emitter)
+                        Z || e(Y), this.emitter = new x(Y), Z && Z.add(this.emitter)
                     }
                     beginUpdate(W) {
                         this._counter++
@@ -7141,11 +7141,11 @@ ${u.join(`
                         this.durations.push(e), this.elapsedOverall += e, this.invocationCount += 1, this._stopWatch = void 0
                     }
                 }
-            }, gv = -1, t2 = class jD {
+            }, gv = -1, t2 = class jx {
                 static {
                     this._idPool = 1
                 }
-                constructor(e, i, r = (jD._idPool++).toString(16).padStart(3, "0")) {
+                constructor(e, i, r = (jx._idPool++).toString(16).padStart(3, "0")) {
                     this._errorHandler = e, this.threshold = i, this.name = r, this._warnCountdown = 0
                 }
                 dispose() {
@@ -7174,10 +7174,10 @@ ${u.join(`
                     for (const [r, s] of this._stacks)(!e || i < s) && (e = [r, s], i = s);
                     return e
                 }
-            }, Fd = class HD {
+            }, Fd = class Hx {
                 static create() {
                     const e = new Error;
-                    return new HD(e.stack ?? "")
+                    return new Hx(e.stack ?? "")
                 }
                 constructor(e) {
                     this.value = e
@@ -7206,7 +7206,7 @@ ${u.join(`
                         const r = t[i];
                         r && e(r)
                     }
-            }, D = class {
+            }, x = class {
                 constructor(t) {
                     this._size = 0, this._options = t, this._leakageMon = gv > 0 || this._options?.leakWarningThreshold ? new t2(t?.onListenerError ?? Qt, this._options?.leakWarningThreshold ?? gv) : void 0, this._perfMon = this._options?._profName ? new e2(this._options._profName) : void 0, this._deliveryQueue = this._options?.deliveryQueue
                 }
@@ -7300,7 +7300,7 @@ ${u.join(`
                 reset() {
                     this.i = this.end, this.current = void 0, this.value = void 0
                 }
-            }, Nd = class extends D {
+            }, Nd = class extends x {
                 get isPaused() {
                     return this._isPaused !== 0
                 }
@@ -7325,7 +7325,7 @@ ${u.join(`
                 }
             }, c2 = class {
                 constructor() {
-                    this.hasListeners = !1, this.events = [], this.emitter = new D({
+                    this.hasListeners = !1, this.events = [], this.emitter = new x({
                         onWillAddFirstListener: () => this.onFirstListenerAdd(),
                         onDidRemoveLastListener: () => this.onLastListenerRemove()
                     })
@@ -7363,7 +7363,7 @@ ${u.join(`
                 }
             }, mv = class {
                 constructor() {
-                    this.listening = !1, this.inputEvent = R.None, this.inputEventListener = $.None, this.emitter = new D({
+                    this.listening = !1, this.inputEvent = R.None, this.inputEventListener = $.None, this.emitter = new x({
                         onDidAddFirstListener: () => {
                             this.listening = !0, this.inputEventListener = this.inputEvent(this.emitter.fire, this.emitter)
                         },
@@ -7438,7 +7438,7 @@ function It(t, e) {
 }
 
 function ke(t) {
-    return t === Ht || t === Di
+    return t === Ht || t === xi
 }
 
 function wv(t) {
@@ -7492,10 +7492,10 @@ function u2(t, e) {
         r = e.base || `${e.name||""}${_3(e.ext)}`;
     return i ? i === e.root ? `${i}${r}` : `${i}${t}${r}` : r
 }
-var d2, h2, f2, p2, Zs, Ht, Di, zr, g2, yv, Ri, dt, m2, fe, Ai, $c, U, ei, v2, mt, ct, Bd, b3, E3, k3, di, Sv, Ce = g({
+var d2, h2, f2, p2, Zs, Ht, xi, zr, g2, yv, Ri, dt, m2, fe, Ai, $c, U, ei, v2, mt, ct, Bd, b3, E3, k3, di, Sv, Ce = g({
         "out-build/vs/base/common/path.js"() {
             "use strict";
-            Gr(), d2 = 65, h2 = 97, f2 = 90, p2 = 122, Zs = 46, Ht = 47, Di = 92, zr = 58, g2 = 63, yv = class extends Error {
+            Gr(), d2 = 65, h2 = 97, f2 = 90, p2 = 122, Zs = 46, Ht = 47, xi = 92, zr = 58, g2 = 63, yv = class extends Error {
                 constructor(t, e, i) {
                     let r;
                     typeof e == "string" && e.indexOf("not ") === 0 ? (r = "must not be", e = e.replace(/^not /, "")) : r = "must be";
@@ -7512,7 +7512,7 @@ var d2, h2, f2, p2, Zs, Ht, Di, zr, g2, yv, Ri, dt, m2, fe, Ai, $c, U, ei, v2, m
                         let n;
                         if (s >= 0) {
                             if (n = t[s], It(n, `paths[${s}]`), n.length === 0) continue
-                        } else e.length === 0 ? n = _s() : (n = dr[`=${e}`] || _s(), (n === void 0 || n.slice(0, 2).toLowerCase() !== e.toLowerCase() && n.charCodeAt(2) === Di) && (n = `${e}\\`));
+                        } else e.length === 0 ? n = _s() : (n = dr[`=${e}`] || _s(), (n === void 0 || n.slice(0, 2).toLowerCase() !== e.toLowerCase() && n.charCodeAt(2) === xi) && (n = `${e}\\`));
                         const o = n.length;
                         let a = 0,
                             c = "",
@@ -7622,14 +7622,14 @@ var d2, h2, f2, p2, Zs, Ht, Di, zr, g2, yv, Ri, dt, m2, fe, Ai, $c, U, ei, v2, m
                         return E === 0 ? r : E === b ? v > b ? w.slice(E).join("\\") : y > b ? "..\\".repeat(y - 1 - E) + ".." : "" : "..\\".repeat(y - E) + w.slice(E).join("\\")
                     }
                     let s = 0;
-                    for (; s < t.length && t.charCodeAt(s) === Di;) s++;
+                    for (; s < t.length && t.charCodeAt(s) === xi;) s++;
                     let n = t.length;
-                    for (; n - 1 > s && t.charCodeAt(n - 1) === Di;) n--;
+                    for (; n - 1 > s && t.charCodeAt(n - 1) === xi;) n--;
                     const o = n - s;
                     let a = 0;
-                    for (; a < e.length && e.charCodeAt(a) === Di;) a++;
+                    for (; a < e.length && e.charCodeAt(a) === xi;) a++;
                     let c = e.length;
-                    for (; c - 1 > a && e.charCodeAt(c - 1) === Di;) c--;
+                    for (; c - 1 > a && e.charCodeAt(c - 1) === xi;) c--;
                     const l = c - a,
                         u = o < l ? o : l;
                     let d = -1,
@@ -7637,31 +7637,31 @@ var d2, h2, f2, p2, Zs, Ht, Di, zr, g2, yv, Ri, dt, m2, fe, Ai, $c, U, ei, v2, m
                     for (; f < u; f++) {
                         const m = t.charCodeAt(s + f);
                         if (m !== e.charCodeAt(a + f)) break;
-                        m === Di && (d = f)
+                        m === xi && (d = f)
                     }
                     if (f !== u) {
                         if (d === -1) return r
                     } else {
                         if (l > u) {
-                            if (e.charCodeAt(a + f) === Di) return r.slice(a + f + 1);
+                            if (e.charCodeAt(a + f) === xi) return r.slice(a + f + 1);
                             if (f === 2) return r.slice(a + f)
                         }
-                        o > u && (t.charCodeAt(s + f) === Di ? d = f : f === 2 && (d = 3)), d === -1 && (d = 0)
+                        o > u && (t.charCodeAt(s + f) === xi ? d = f : f === 2 && (d = 3)), d === -1 && (d = 0)
                     }
                     let p = "";
-                    for (f = s + d + 1; f <= n; ++f)(f === n || t.charCodeAt(f) === Di) && (p += p.length === 0 ? ".." : "\\..");
-                    return a += d, p.length > 0 ? `${p}${r.slice(a,c)}` : (r.charCodeAt(a) === Di && ++a, r.slice(a, c))
+                    for (f = s + d + 1; f <= n; ++f)(f === n || t.charCodeAt(f) === xi) && (p += p.length === 0 ? ".." : "\\..");
+                    return a += d, p.length > 0 ? `${p}${r.slice(a,c)}` : (r.charCodeAt(a) === xi && ++a, r.slice(a, c))
                 },
                 toNamespacedPath(t) {
                     if (typeof t != "string" || t.length === 0) return t;
                     const e = dt.resolve(t);
                     if (e.length <= 2) return t;
-                    if (e.charCodeAt(0) === Di) {
-                        if (e.charCodeAt(1) === Di) {
+                    if (e.charCodeAt(0) === xi) {
+                        if (e.charCodeAt(1) === xi) {
                             const i = e.charCodeAt(2);
                             if (i !== g2 && i !== Zs) return `\\\\?\\UNC\\${e.slice(2)}`
                         }
-                    } else if (bs(e.charCodeAt(0)) && e.charCodeAt(1) === zr && e.charCodeAt(2) === Di) return `\\\\?\\${e}`;
+                    } else if (bs(e.charCodeAt(0)) && e.charCodeAt(1) === zr && e.charCodeAt(2) === xi) return `\\\\?\\${e}`;
                     return e
                 },
                 dirname(t) {
@@ -8020,7 +8020,7 @@ var d2, h2, f2, p2, Zs, Ht, Di, zr, g2, yv, Ri, dt, m2, fe, Ai, $c, U, ei, v2, m
                     return this._isCancelled
                 }
                 get onCancellationRequested() {
-                    return this._isCancelled ? _v : (this._emitter || (this._emitter = new D), this._emitter.event)
+                    return this._isCancelled ? _v : (this._emitter || (this._emitter = new x), this._emitter.event)
                 }
                 dispose() {
                     this._emitter && (this._emitter.dispose(), this._emitter = null)
@@ -8175,7 +8175,7 @@ function Vd(t, e) {
     return e.length > t.length ? !1 : jc(t, e, 0, i) === 0
 }
 
-function x3(t) {
+function D3(t) {
     return 55296 <= t && t <= 56319
 }
 
@@ -8183,14 +8183,14 @@ function E2(t) {
     return 56320 <= t && t <= 57343
 }
 
-function D3(t, e) {
+function x3(t, e) {
     return (t - 55296 << 10) + (e - 56320) + 65536
 }
 
 function R3() {
     return JSON.parse("[0,0,0,51229,51255,12,44061,44087,12,127462,127487,6,7083,7085,5,47645,47671,12,54813,54839,12,128678,128678,14,3270,3270,5,9919,9923,14,45853,45879,12,49437,49463,12,53021,53047,12,71216,71218,7,128398,128399,14,129360,129374,14,2519,2519,5,4448,4519,9,9742,9742,14,12336,12336,14,44957,44983,12,46749,46775,12,48541,48567,12,50333,50359,12,52125,52151,12,53917,53943,12,69888,69890,5,73018,73018,5,127990,127990,14,128558,128559,14,128759,128760,14,129653,129655,14,2027,2035,5,2891,2892,7,3761,3761,5,6683,6683,5,8293,8293,4,9825,9826,14,9999,9999,14,43452,43453,5,44509,44535,12,45405,45431,12,46301,46327,12,47197,47223,12,48093,48119,12,48989,49015,12,49885,49911,12,50781,50807,12,51677,51703,12,52573,52599,12,53469,53495,12,54365,54391,12,65279,65279,4,70471,70472,7,72145,72147,7,119173,119179,5,127799,127818,14,128240,128244,14,128512,128512,14,128652,128652,14,128721,128722,14,129292,129292,14,129445,129450,14,129734,129743,14,1476,1477,5,2366,2368,7,2750,2752,7,3076,3076,5,3415,3415,5,4141,4144,5,6109,6109,5,6964,6964,5,7394,7400,5,9197,9198,14,9770,9770,14,9877,9877,14,9968,9969,14,10084,10084,14,43052,43052,5,43713,43713,5,44285,44311,12,44733,44759,12,45181,45207,12,45629,45655,12,46077,46103,12,46525,46551,12,46973,46999,12,47421,47447,12,47869,47895,12,48317,48343,12,48765,48791,12,49213,49239,12,49661,49687,12,50109,50135,12,50557,50583,12,51005,51031,12,51453,51479,12,51901,51927,12,52349,52375,12,52797,52823,12,53245,53271,12,53693,53719,12,54141,54167,12,54589,54615,12,55037,55063,12,69506,69509,5,70191,70193,5,70841,70841,7,71463,71467,5,72330,72342,5,94031,94031,5,123628,123631,5,127763,127765,14,127941,127941,14,128043,128062,14,128302,128317,14,128465,128467,14,128539,128539,14,128640,128640,14,128662,128662,14,128703,128703,14,128745,128745,14,129004,129007,14,129329,129330,14,129402,129402,14,129483,129483,14,129686,129704,14,130048,131069,14,173,173,4,1757,1757,1,2200,2207,5,2434,2435,7,2631,2632,5,2817,2817,5,3008,3008,5,3201,3201,5,3387,3388,5,3542,3542,5,3902,3903,7,4190,4192,5,6002,6003,5,6439,6440,5,6765,6770,7,7019,7027,5,7154,7155,7,8205,8205,13,8505,8505,14,9654,9654,14,9757,9757,14,9792,9792,14,9852,9853,14,9890,9894,14,9937,9937,14,9981,9981,14,10035,10036,14,11035,11036,14,42654,42655,5,43346,43347,7,43587,43587,5,44006,44007,7,44173,44199,12,44397,44423,12,44621,44647,12,44845,44871,12,45069,45095,12,45293,45319,12,45517,45543,12,45741,45767,12,45965,45991,12,46189,46215,12,46413,46439,12,46637,46663,12,46861,46887,12,47085,47111,12,47309,47335,12,47533,47559,12,47757,47783,12,47981,48007,12,48205,48231,12,48429,48455,12,48653,48679,12,48877,48903,12,49101,49127,12,49325,49351,12,49549,49575,12,49773,49799,12,49997,50023,12,50221,50247,12,50445,50471,12,50669,50695,12,50893,50919,12,51117,51143,12,51341,51367,12,51565,51591,12,51789,51815,12,52013,52039,12,52237,52263,12,52461,52487,12,52685,52711,12,52909,52935,12,53133,53159,12,53357,53383,12,53581,53607,12,53805,53831,12,54029,54055,12,54253,54279,12,54477,54503,12,54701,54727,12,54925,54951,12,55149,55175,12,68101,68102,5,69762,69762,7,70067,70069,7,70371,70378,5,70720,70721,7,71087,71087,5,71341,71341,5,71995,71996,5,72249,72249,7,72850,72871,5,73109,73109,5,118576,118598,5,121505,121519,5,127245,127247,14,127568,127569,14,127777,127777,14,127872,127891,14,127956,127967,14,128015,128016,14,128110,128172,14,128259,128259,14,128367,128368,14,128424,128424,14,128488,128488,14,128530,128532,14,128550,128551,14,128566,128566,14,128647,128647,14,128656,128656,14,128667,128673,14,128691,128693,14,128715,128715,14,128728,128732,14,128752,128752,14,128765,128767,14,129096,129103,14,129311,129311,14,129344,129349,14,129394,129394,14,129413,129425,14,129466,129471,14,129511,129535,14,129664,129666,14,129719,129722,14,129760,129767,14,917536,917631,5,13,13,2,1160,1161,5,1564,1564,4,1807,1807,1,2085,2087,5,2307,2307,7,2382,2383,7,2497,2500,5,2563,2563,7,2677,2677,5,2763,2764,7,2879,2879,5,2914,2915,5,3021,3021,5,3142,3144,5,3263,3263,5,3285,3286,5,3398,3400,7,3530,3530,5,3633,3633,5,3864,3865,5,3974,3975,5,4155,4156,7,4229,4230,5,5909,5909,7,6078,6085,7,6277,6278,5,6451,6456,7,6744,6750,5,6846,6846,5,6972,6972,5,7074,7077,5,7146,7148,7,7222,7223,5,7416,7417,5,8234,8238,4,8417,8417,5,9000,9000,14,9203,9203,14,9730,9731,14,9748,9749,14,9762,9763,14,9776,9783,14,9800,9811,14,9831,9831,14,9872,9873,14,9882,9882,14,9900,9903,14,9929,9933,14,9941,9960,14,9974,9974,14,9989,9989,14,10006,10006,14,10062,10062,14,10160,10160,14,11647,11647,5,12953,12953,14,43019,43019,5,43232,43249,5,43443,43443,5,43567,43568,7,43696,43696,5,43765,43765,7,44013,44013,5,44117,44143,12,44229,44255,12,44341,44367,12,44453,44479,12,44565,44591,12,44677,44703,12,44789,44815,12,44901,44927,12,45013,45039,12,45125,45151,12,45237,45263,12,45349,45375,12,45461,45487,12,45573,45599,12,45685,45711,12,45797,45823,12,45909,45935,12,46021,46047,12,46133,46159,12,46245,46271,12,46357,46383,12,46469,46495,12,46581,46607,12,46693,46719,12,46805,46831,12,46917,46943,12,47029,47055,12,47141,47167,12,47253,47279,12,47365,47391,12,47477,47503,12,47589,47615,12,47701,47727,12,47813,47839,12,47925,47951,12,48037,48063,12,48149,48175,12,48261,48287,12,48373,48399,12,48485,48511,12,48597,48623,12,48709,48735,12,48821,48847,12,48933,48959,12,49045,49071,12,49157,49183,12,49269,49295,12,49381,49407,12,49493,49519,12,49605,49631,12,49717,49743,12,49829,49855,12,49941,49967,12,50053,50079,12,50165,50191,12,50277,50303,12,50389,50415,12,50501,50527,12,50613,50639,12,50725,50751,12,50837,50863,12,50949,50975,12,51061,51087,12,51173,51199,12,51285,51311,12,51397,51423,12,51509,51535,12,51621,51647,12,51733,51759,12,51845,51871,12,51957,51983,12,52069,52095,12,52181,52207,12,52293,52319,12,52405,52431,12,52517,52543,12,52629,52655,12,52741,52767,12,52853,52879,12,52965,52991,12,53077,53103,12,53189,53215,12,53301,53327,12,53413,53439,12,53525,53551,12,53637,53663,12,53749,53775,12,53861,53887,12,53973,53999,12,54085,54111,12,54197,54223,12,54309,54335,12,54421,54447,12,54533,54559,12,54645,54671,12,54757,54783,12,54869,54895,12,54981,55007,12,55093,55119,12,55243,55291,10,66045,66045,5,68325,68326,5,69688,69702,5,69817,69818,5,69957,69958,7,70089,70092,5,70198,70199,5,70462,70462,5,70502,70508,5,70750,70750,5,70846,70846,7,71100,71101,5,71230,71230,7,71351,71351,5,71737,71738,5,72000,72000,7,72160,72160,5,72273,72278,5,72752,72758,5,72882,72883,5,73031,73031,5,73461,73462,7,94192,94193,7,119149,119149,7,121403,121452,5,122915,122916,5,126980,126980,14,127358,127359,14,127535,127535,14,127759,127759,14,127771,127771,14,127792,127793,14,127825,127867,14,127897,127899,14,127945,127945,14,127985,127986,14,128000,128007,14,128021,128021,14,128066,128100,14,128184,128235,14,128249,128252,14,128266,128276,14,128335,128335,14,128379,128390,14,128407,128419,14,128444,128444,14,128481,128481,14,128499,128499,14,128526,128526,14,128536,128536,14,128543,128543,14,128556,128556,14,128564,128564,14,128577,128580,14,128643,128645,14,128649,128649,14,128654,128654,14,128660,128660,14,128664,128664,14,128675,128675,14,128686,128689,14,128695,128696,14,128705,128709,14,128717,128719,14,128725,128725,14,128736,128741,14,128747,128748,14,128755,128755,14,128762,128762,14,128981,128991,14,129009,129023,14,129160,129167,14,129296,129304,14,129320,129327,14,129340,129342,14,129356,129356,14,129388,129392,14,129399,129400,14,129404,129407,14,129432,129442,14,129454,129455,14,129473,129474,14,129485,129487,14,129648,129651,14,129659,129660,14,129671,129679,14,129709,129711,14,129728,129730,14,129751,129753,14,129776,129782,14,917505,917505,4,917760,917999,5,10,10,3,127,159,4,768,879,5,1471,1471,5,1536,1541,1,1648,1648,5,1767,1768,5,1840,1866,5,2070,2073,5,2137,2139,5,2274,2274,1,2363,2363,7,2377,2380,7,2402,2403,5,2494,2494,5,2507,2508,7,2558,2558,5,2622,2624,7,2641,2641,5,2691,2691,7,2759,2760,5,2786,2787,5,2876,2876,5,2881,2884,5,2901,2902,5,3006,3006,5,3014,3016,7,3072,3072,5,3134,3136,5,3157,3158,5,3260,3260,5,3266,3266,5,3274,3275,7,3328,3329,5,3391,3392,7,3405,3405,5,3457,3457,5,3536,3537,7,3551,3551,5,3636,3642,5,3764,3772,5,3895,3895,5,3967,3967,7,3993,4028,5,4146,4151,5,4182,4183,7,4226,4226,5,4253,4253,5,4957,4959,5,5940,5940,7,6070,6070,7,6087,6088,7,6158,6158,4,6432,6434,5,6448,6449,7,6679,6680,5,6742,6742,5,6754,6754,5,6783,6783,5,6912,6915,5,6966,6970,5,6978,6978,5,7042,7042,7,7080,7081,5,7143,7143,7,7150,7150,7,7212,7219,5,7380,7392,5,7412,7412,5,8203,8203,4,8232,8232,4,8265,8265,14,8400,8412,5,8421,8432,5,8617,8618,14,9167,9167,14,9200,9200,14,9410,9410,14,9723,9726,14,9733,9733,14,9745,9745,14,9752,9752,14,9760,9760,14,9766,9766,14,9774,9774,14,9786,9786,14,9794,9794,14,9823,9823,14,9828,9828,14,9833,9850,14,9855,9855,14,9875,9875,14,9880,9880,14,9885,9887,14,9896,9897,14,9906,9916,14,9926,9927,14,9935,9935,14,9939,9939,14,9962,9962,14,9972,9972,14,9978,9978,14,9986,9986,14,9997,9997,14,10002,10002,14,10017,10017,14,10055,10055,14,10071,10071,14,10133,10135,14,10548,10549,14,11093,11093,14,12330,12333,5,12441,12442,5,42608,42610,5,43010,43010,5,43045,43046,5,43188,43203,7,43302,43309,5,43392,43394,5,43446,43449,5,43493,43493,5,43571,43572,7,43597,43597,7,43703,43704,5,43756,43757,5,44003,44004,7,44009,44010,7,44033,44059,12,44089,44115,12,44145,44171,12,44201,44227,12,44257,44283,12,44313,44339,12,44369,44395,12,44425,44451,12,44481,44507,12,44537,44563,12,44593,44619,12,44649,44675,12,44705,44731,12,44761,44787,12,44817,44843,12,44873,44899,12,44929,44955,12,44985,45011,12,45041,45067,12,45097,45123,12,45153,45179,12,45209,45235,12,45265,45291,12,45321,45347,12,45377,45403,12,45433,45459,12,45489,45515,12,45545,45571,12,45601,45627,12,45657,45683,12,45713,45739,12,45769,45795,12,45825,45851,12,45881,45907,12,45937,45963,12,45993,46019,12,46049,46075,12,46105,46131,12,46161,46187,12,46217,46243,12,46273,46299,12,46329,46355,12,46385,46411,12,46441,46467,12,46497,46523,12,46553,46579,12,46609,46635,12,46665,46691,12,46721,46747,12,46777,46803,12,46833,46859,12,46889,46915,12,46945,46971,12,47001,47027,12,47057,47083,12,47113,47139,12,47169,47195,12,47225,47251,12,47281,47307,12,47337,47363,12,47393,47419,12,47449,47475,12,47505,47531,12,47561,47587,12,47617,47643,12,47673,47699,12,47729,47755,12,47785,47811,12,47841,47867,12,47897,47923,12,47953,47979,12,48009,48035,12,48065,48091,12,48121,48147,12,48177,48203,12,48233,48259,12,48289,48315,12,48345,48371,12,48401,48427,12,48457,48483,12,48513,48539,12,48569,48595,12,48625,48651,12,48681,48707,12,48737,48763,12,48793,48819,12,48849,48875,12,48905,48931,12,48961,48987,12,49017,49043,12,49073,49099,12,49129,49155,12,49185,49211,12,49241,49267,12,49297,49323,12,49353,49379,12,49409,49435,12,49465,49491,12,49521,49547,12,49577,49603,12,49633,49659,12,49689,49715,12,49745,49771,12,49801,49827,12,49857,49883,12,49913,49939,12,49969,49995,12,50025,50051,12,50081,50107,12,50137,50163,12,50193,50219,12,50249,50275,12,50305,50331,12,50361,50387,12,50417,50443,12,50473,50499,12,50529,50555,12,50585,50611,12,50641,50667,12,50697,50723,12,50753,50779,12,50809,50835,12,50865,50891,12,50921,50947,12,50977,51003,12,51033,51059,12,51089,51115,12,51145,51171,12,51201,51227,12,51257,51283,12,51313,51339,12,51369,51395,12,51425,51451,12,51481,51507,12,51537,51563,12,51593,51619,12,51649,51675,12,51705,51731,12,51761,51787,12,51817,51843,12,51873,51899,12,51929,51955,12,51985,52011,12,52041,52067,12,52097,52123,12,52153,52179,12,52209,52235,12,52265,52291,12,52321,52347,12,52377,52403,12,52433,52459,12,52489,52515,12,52545,52571,12,52601,52627,12,52657,52683,12,52713,52739,12,52769,52795,12,52825,52851,12,52881,52907,12,52937,52963,12,52993,53019,12,53049,53075,12,53105,53131,12,53161,53187,12,53217,53243,12,53273,53299,12,53329,53355,12,53385,53411,12,53441,53467,12,53497,53523,12,53553,53579,12,53609,53635,12,53665,53691,12,53721,53747,12,53777,53803,12,53833,53859,12,53889,53915,12,53945,53971,12,54001,54027,12,54057,54083,12,54113,54139,12,54169,54195,12,54225,54251,12,54281,54307,12,54337,54363,12,54393,54419,12,54449,54475,12,54505,54531,12,54561,54587,12,54617,54643,12,54673,54699,12,54729,54755,12,54785,54811,12,54841,54867,12,54897,54923,12,54953,54979,12,55009,55035,12,55065,55091,12,55121,55147,12,55177,55203,12,65024,65039,5,65520,65528,4,66422,66426,5,68152,68154,5,69291,69292,5,69633,69633,5,69747,69748,5,69811,69814,5,69826,69826,5,69932,69932,7,70016,70017,5,70079,70080,7,70095,70095,5,70196,70196,5,70367,70367,5,70402,70403,7,70464,70464,5,70487,70487,5,70709,70711,7,70725,70725,7,70833,70834,7,70843,70844,7,70849,70849,7,71090,71093,5,71103,71104,5,71227,71228,7,71339,71339,5,71344,71349,5,71458,71461,5,71727,71735,5,71985,71989,7,71998,71998,5,72002,72002,7,72154,72155,5,72193,72202,5,72251,72254,5,72281,72283,5,72344,72345,5,72766,72766,7,72874,72880,5,72885,72886,5,73023,73029,5,73104,73105,5,73111,73111,5,92912,92916,5,94095,94098,5,113824,113827,4,119142,119142,7,119155,119162,4,119362,119364,5,121476,121476,5,122888,122904,5,123184,123190,5,125252,125258,5,127183,127183,14,127340,127343,14,127377,127386,14,127491,127503,14,127548,127551,14,127744,127756,14,127761,127761,14,127769,127769,14,127773,127774,14,127780,127788,14,127796,127797,14,127820,127823,14,127869,127869,14,127894,127895,14,127902,127903,14,127943,127943,14,127947,127950,14,127972,127972,14,127988,127988,14,127992,127994,14,128009,128011,14,128019,128019,14,128023,128041,14,128064,128064,14,128102,128107,14,128174,128181,14,128238,128238,14,128246,128247,14,128254,128254,14,128264,128264,14,128278,128299,14,128329,128330,14,128348,128359,14,128371,128377,14,128392,128393,14,128401,128404,14,128421,128421,14,128433,128434,14,128450,128452,14,128476,128478,14,128483,128483,14,128495,128495,14,128506,128506,14,128519,128520,14,128528,128528,14,128534,128534,14,128538,128538,14,128540,128542,14,128544,128549,14,128552,128555,14,128557,128557,14,128560,128563,14,128565,128565,14,128567,128576,14,128581,128591,14,128641,128642,14,128646,128646,14,128648,128648,14,128650,128651,14,128653,128653,14,128655,128655,14,128657,128659,14,128661,128661,14,128663,128663,14,128665,128666,14,128674,128674,14,128676,128677,14,128679,128685,14,128690,128690,14,128694,128694,14,128697,128702,14,128704,128704,14,128710,128714,14,128716,128716,14,128720,128720,14,128723,128724,14,128726,128727,14,128733,128735,14,128742,128744,14,128746,128746,14,128749,128751,14,128753,128754,14,128756,128758,14,128761,128761,14,128763,128764,14,128884,128895,14,128992,129003,14,129008,129008,14,129036,129039,14,129114,129119,14,129198,129279,14,129293,129295,14,129305,129310,14,129312,129319,14,129328,129328,14,129331,129338,14,129343,129343,14,129351,129355,14,129357,129359,14,129375,129387,14,129393,129393,14,129395,129398,14,129401,129401,14,129403,129403,14,129408,129412,14,129426,129431,14,129443,129444,14,129451,129453,14,129456,129465,14,129472,129472,14,129475,129482,14,129484,129484,14,129488,129510,14,129536,129647,14,129652,129652,14,129656,129658,14,129661,129663,14,129667,129670,14,129680,129685,14,129705,129708,14,129712,129718,14,129723,129727,14,129731,129733,14,129744,129750,14,129754,129759,14,129768,129775,14,129783,129791,14,917504,917504,4,917506,917535,4,917632,917759,4,918000,921599,4,0,9,4,11,12,4,14,31,4,169,169,14,174,174,14,1155,1159,5,1425,1469,5,1473,1474,5,1479,1479,5,1552,1562,5,1611,1631,5,1750,1756,5,1759,1764,5,1770,1773,5,1809,1809,5,1958,1968,5,2045,2045,5,2075,2083,5,2089,2093,5,2192,2193,1,2250,2273,5,2275,2306,5,2362,2362,5,2364,2364,5,2369,2376,5,2381,2381,5,2385,2391,5,2433,2433,5,2492,2492,5,2495,2496,7,2503,2504,7,2509,2509,5,2530,2531,5,2561,2562,5,2620,2620,5,2625,2626,5,2635,2637,5,2672,2673,5,2689,2690,5,2748,2748,5,2753,2757,5,2761,2761,7,2765,2765,5,2810,2815,5,2818,2819,7,2878,2878,5,2880,2880,7,2887,2888,7,2893,2893,5,2903,2903,5,2946,2946,5,3007,3007,7,3009,3010,7,3018,3020,7,3031,3031,5,3073,3075,7,3132,3132,5,3137,3140,7,3146,3149,5,3170,3171,5,3202,3203,7,3262,3262,7,3264,3265,7,3267,3268,7,3271,3272,7,3276,3277,5,3298,3299,5,3330,3331,7,3390,3390,5,3393,3396,5,3402,3404,7,3406,3406,1,3426,3427,5,3458,3459,7,3535,3535,5,3538,3540,5,3544,3550,7,3570,3571,7,3635,3635,7,3655,3662,5,3763,3763,7,3784,3789,5,3893,3893,5,3897,3897,5,3953,3966,5,3968,3972,5,3981,3991,5,4038,4038,5,4145,4145,7,4153,4154,5,4157,4158,5,4184,4185,5,4209,4212,5,4228,4228,7,4237,4237,5,4352,4447,8,4520,4607,10,5906,5908,5,5938,5939,5,5970,5971,5,6068,6069,5,6071,6077,5,6086,6086,5,6089,6099,5,6155,6157,5,6159,6159,5,6313,6313,5,6435,6438,7,6441,6443,7,6450,6450,5,6457,6459,5,6681,6682,7,6741,6741,7,6743,6743,7,6752,6752,5,6757,6764,5,6771,6780,5,6832,6845,5,6847,6862,5,6916,6916,7,6965,6965,5,6971,6971,7,6973,6977,7,6979,6980,7,7040,7041,5,7073,7073,7,7078,7079,7,7082,7082,7,7142,7142,5,7144,7145,5,7149,7149,5,7151,7153,5,7204,7211,7,7220,7221,7,7376,7378,5,7393,7393,7,7405,7405,5,7415,7415,7,7616,7679,5,8204,8204,5,8206,8207,4,8233,8233,4,8252,8252,14,8288,8292,4,8294,8303,4,8413,8416,5,8418,8420,5,8482,8482,14,8596,8601,14,8986,8987,14,9096,9096,14,9193,9196,14,9199,9199,14,9201,9202,14,9208,9210,14,9642,9643,14,9664,9664,14,9728,9729,14,9732,9732,14,9735,9741,14,9743,9744,14,9746,9746,14,9750,9751,14,9753,9756,14,9758,9759,14,9761,9761,14,9764,9765,14,9767,9769,14,9771,9773,14,9775,9775,14,9784,9785,14,9787,9791,14,9793,9793,14,9795,9799,14,9812,9822,14,9824,9824,14,9827,9827,14,9829,9830,14,9832,9832,14,9851,9851,14,9854,9854,14,9856,9861,14,9874,9874,14,9876,9876,14,9878,9879,14,9881,9881,14,9883,9884,14,9888,9889,14,9895,9895,14,9898,9899,14,9904,9905,14,9917,9918,14,9924,9925,14,9928,9928,14,9934,9934,14,9936,9936,14,9938,9938,14,9940,9940,14,9961,9961,14,9963,9967,14,9970,9971,14,9973,9973,14,9975,9977,14,9979,9980,14,9982,9985,14,9987,9988,14,9992,9996,14,9998,9998,14,10000,10001,14,10004,10004,14,10013,10013,14,10024,10024,14,10052,10052,14,10060,10060,14,10067,10069,14,10083,10083,14,10085,10087,14,10145,10145,14,10175,10175,14,11013,11015,14,11088,11088,14,11503,11505,5,11744,11775,5,12334,12335,5,12349,12349,14,12951,12951,14,42607,42607,5,42612,42621,5,42736,42737,5,43014,43014,5,43043,43044,7,43047,43047,7,43136,43137,7,43204,43205,5,43263,43263,5,43335,43345,5,43360,43388,8,43395,43395,7,43444,43445,7,43450,43451,7,43454,43456,7,43561,43566,5,43569,43570,5,43573,43574,5,43596,43596,5,43644,43644,5,43698,43700,5,43710,43711,5,43755,43755,7,43758,43759,7,43766,43766,5,44005,44005,5,44008,44008,5,44012,44012,7,44032,44032,11,44060,44060,11,44088,44088,11,44116,44116,11,44144,44144,11,44172,44172,11,44200,44200,11,44228,44228,11,44256,44256,11,44284,44284,11,44312,44312,11,44340,44340,11,44368,44368,11,44396,44396,11,44424,44424,11,44452,44452,11,44480,44480,11,44508,44508,11,44536,44536,11,44564,44564,11,44592,44592,11,44620,44620,11,44648,44648,11,44676,44676,11,44704,44704,11,44732,44732,11,44760,44760,11,44788,44788,11,44816,44816,11,44844,44844,11,44872,44872,11,44900,44900,11,44928,44928,11,44956,44956,11,44984,44984,11,45012,45012,11,45040,45040,11,45068,45068,11,45096,45096,11,45124,45124,11,45152,45152,11,45180,45180,11,45208,45208,11,45236,45236,11,45264,45264,11,45292,45292,11,45320,45320,11,45348,45348,11,45376,45376,11,45404,45404,11,45432,45432,11,45460,45460,11,45488,45488,11,45516,45516,11,45544,45544,11,45572,45572,11,45600,45600,11,45628,45628,11,45656,45656,11,45684,45684,11,45712,45712,11,45740,45740,11,45768,45768,11,45796,45796,11,45824,45824,11,45852,45852,11,45880,45880,11,45908,45908,11,45936,45936,11,45964,45964,11,45992,45992,11,46020,46020,11,46048,46048,11,46076,46076,11,46104,46104,11,46132,46132,11,46160,46160,11,46188,46188,11,46216,46216,11,46244,46244,11,46272,46272,11,46300,46300,11,46328,46328,11,46356,46356,11,46384,46384,11,46412,46412,11,46440,46440,11,46468,46468,11,46496,46496,11,46524,46524,11,46552,46552,11,46580,46580,11,46608,46608,11,46636,46636,11,46664,46664,11,46692,46692,11,46720,46720,11,46748,46748,11,46776,46776,11,46804,46804,11,46832,46832,11,46860,46860,11,46888,46888,11,46916,46916,11,46944,46944,11,46972,46972,11,47000,47000,11,47028,47028,11,47056,47056,11,47084,47084,11,47112,47112,11,47140,47140,11,47168,47168,11,47196,47196,11,47224,47224,11,47252,47252,11,47280,47280,11,47308,47308,11,47336,47336,11,47364,47364,11,47392,47392,11,47420,47420,11,47448,47448,11,47476,47476,11,47504,47504,11,47532,47532,11,47560,47560,11,47588,47588,11,47616,47616,11,47644,47644,11,47672,47672,11,47700,47700,11,47728,47728,11,47756,47756,11,47784,47784,11,47812,47812,11,47840,47840,11,47868,47868,11,47896,47896,11,47924,47924,11,47952,47952,11,47980,47980,11,48008,48008,11,48036,48036,11,48064,48064,11,48092,48092,11,48120,48120,11,48148,48148,11,48176,48176,11,48204,48204,11,48232,48232,11,48260,48260,11,48288,48288,11,48316,48316,11,48344,48344,11,48372,48372,11,48400,48400,11,48428,48428,11,48456,48456,11,48484,48484,11,48512,48512,11,48540,48540,11,48568,48568,11,48596,48596,11,48624,48624,11,48652,48652,11,48680,48680,11,48708,48708,11,48736,48736,11,48764,48764,11,48792,48792,11,48820,48820,11,48848,48848,11,48876,48876,11,48904,48904,11,48932,48932,11,48960,48960,11,48988,48988,11,49016,49016,11,49044,49044,11,49072,49072,11,49100,49100,11,49128,49128,11,49156,49156,11,49184,49184,11,49212,49212,11,49240,49240,11,49268,49268,11,49296,49296,11,49324,49324,11,49352,49352,11,49380,49380,11,49408,49408,11,49436,49436,11,49464,49464,11,49492,49492,11,49520,49520,11,49548,49548,11,49576,49576,11,49604,49604,11,49632,49632,11,49660,49660,11,49688,49688,11,49716,49716,11,49744,49744,11,49772,49772,11,49800,49800,11,49828,49828,11,49856,49856,11,49884,49884,11,49912,49912,11,49940,49940,11,49968,49968,11,49996,49996,11,50024,50024,11,50052,50052,11,50080,50080,11,50108,50108,11,50136,50136,11,50164,50164,11,50192,50192,11,50220,50220,11,50248,50248,11,50276,50276,11,50304,50304,11,50332,50332,11,50360,50360,11,50388,50388,11,50416,50416,11,50444,50444,11,50472,50472,11,50500,50500,11,50528,50528,11,50556,50556,11,50584,50584,11,50612,50612,11,50640,50640,11,50668,50668,11,50696,50696,11,50724,50724,11,50752,50752,11,50780,50780,11,50808,50808,11,50836,50836,11,50864,50864,11,50892,50892,11,50920,50920,11,50948,50948,11,50976,50976,11,51004,51004,11,51032,51032,11,51060,51060,11,51088,51088,11,51116,51116,11,51144,51144,11,51172,51172,11,51200,51200,11,51228,51228,11,51256,51256,11,51284,51284,11,51312,51312,11,51340,51340,11,51368,51368,11,51396,51396,11,51424,51424,11,51452,51452,11,51480,51480,11,51508,51508,11,51536,51536,11,51564,51564,11,51592,51592,11,51620,51620,11,51648,51648,11,51676,51676,11,51704,51704,11,51732,51732,11,51760,51760,11,51788,51788,11,51816,51816,11,51844,51844,11,51872,51872,11,51900,51900,11,51928,51928,11,51956,51956,11,51984,51984,11,52012,52012,11,52040,52040,11,52068,52068,11,52096,52096,11,52124,52124,11,52152,52152,11,52180,52180,11,52208,52208,11,52236,52236,11,52264,52264,11,52292,52292,11,52320,52320,11,52348,52348,11,52376,52376,11,52404,52404,11,52432,52432,11,52460,52460,11,52488,52488,11,52516,52516,11,52544,52544,11,52572,52572,11,52600,52600,11,52628,52628,11,52656,52656,11,52684,52684,11,52712,52712,11,52740,52740,11,52768,52768,11,52796,52796,11,52824,52824,11,52852,52852,11,52880,52880,11,52908,52908,11,52936,52936,11,52964,52964,11,52992,52992,11,53020,53020,11,53048,53048,11,53076,53076,11,53104,53104,11,53132,53132,11,53160,53160,11,53188,53188,11,53216,53216,11,53244,53244,11,53272,53272,11,53300,53300,11,53328,53328,11,53356,53356,11,53384,53384,11,53412,53412,11,53440,53440,11,53468,53468,11,53496,53496,11,53524,53524,11,53552,53552,11,53580,53580,11,53608,53608,11,53636,53636,11,53664,53664,11,53692,53692,11,53720,53720,11,53748,53748,11,53776,53776,11,53804,53804,11,53832,53832,11,53860,53860,11,53888,53888,11,53916,53916,11,53944,53944,11,53972,53972,11,54000,54000,11,54028,54028,11,54056,54056,11,54084,54084,11,54112,54112,11,54140,54140,11,54168,54168,11,54196,54196,11,54224,54224,11,54252,54252,11,54280,54280,11,54308,54308,11,54336,54336,11,54364,54364,11,54392,54392,11,54420,54420,11,54448,54448,11,54476,54476,11,54504,54504,11,54532,54532,11,54560,54560,11,54588,54588,11,54616,54616,11,54644,54644,11,54672,54672,11,54700,54700,11,54728,54728,11,54756,54756,11,54784,54784,11,54812,54812,11,54840,54840,11,54868,54868,11,54896,54896,11,54924,54924,11,54952,54952,11,54980,54980,11,55008,55008,11,55036,55036,11,55064,55064,11,55092,55092,11,55120,55120,11,55148,55148,11,55176,55176,11,55216,55238,9,64286,64286,5,65056,65071,5,65438,65439,5,65529,65531,4,66272,66272,5,68097,68099,5,68108,68111,5,68159,68159,5,68900,68903,5,69446,69456,5,69632,69632,7,69634,69634,7,69744,69744,5,69759,69761,5,69808,69810,7,69815,69816,7,69821,69821,1,69837,69837,1,69927,69931,5,69933,69940,5,70003,70003,5,70018,70018,7,70070,70078,5,70082,70083,1,70094,70094,7,70188,70190,7,70194,70195,7,70197,70197,7,70206,70206,5,70368,70370,7,70400,70401,5,70459,70460,5,70463,70463,7,70465,70468,7,70475,70477,7,70498,70499,7,70512,70516,5,70712,70719,5,70722,70724,5,70726,70726,5,70832,70832,5,70835,70840,5,70842,70842,5,70845,70845,5,70847,70848,5,70850,70851,5,71088,71089,7,71096,71099,7,71102,71102,7,71132,71133,5,71219,71226,5,71229,71229,5,71231,71232,5,71340,71340,7,71342,71343,7,71350,71350,7,71453,71455,5,71462,71462,7,71724,71726,7,71736,71736,7,71984,71984,5,71991,71992,7,71997,71997,7,71999,71999,1,72001,72001,1,72003,72003,5,72148,72151,5,72156,72159,7,72164,72164,7,72243,72248,5,72250,72250,1,72263,72263,5,72279,72280,7,72324,72329,1,72343,72343,7,72751,72751,7,72760,72765,5,72767,72767,5,72873,72873,7,72881,72881,7,72884,72884,7,73009,73014,5,73020,73021,5,73030,73030,1,73098,73102,7,73107,73108,7,73110,73110,7,73459,73460,5,78896,78904,4,92976,92982,5,94033,94087,7,94180,94180,5,113821,113822,5,118528,118573,5,119141,119141,5,119143,119145,5,119150,119154,5,119163,119170,5,119210,119213,5,121344,121398,5,121461,121461,5,121499,121503,5,122880,122886,5,122907,122913,5,122918,122922,5,123566,123566,5,125136,125142,5,126976,126979,14,126981,127182,14,127184,127231,14,127279,127279,14,127344,127345,14,127374,127374,14,127405,127461,14,127489,127490,14,127514,127514,14,127538,127546,14,127561,127567,14,127570,127743,14,127757,127758,14,127760,127760,14,127762,127762,14,127766,127768,14,127770,127770,14,127772,127772,14,127775,127776,14,127778,127779,14,127789,127791,14,127794,127795,14,127798,127798,14,127819,127819,14,127824,127824,14,127868,127868,14,127870,127871,14,127892,127893,14,127896,127896,14,127900,127901,14,127904,127940,14,127942,127942,14,127944,127944,14,127946,127946,14,127951,127955,14,127968,127971,14,127973,127984,14,127987,127987,14,127989,127989,14,127991,127991,14,127995,127999,5,128008,128008,14,128012,128014,14,128017,128018,14,128020,128020,14,128022,128022,14,128042,128042,14,128063,128063,14,128065,128065,14,128101,128101,14,128108,128109,14,128173,128173,14,128182,128183,14,128236,128237,14,128239,128239,14,128245,128245,14,128248,128248,14,128253,128253,14,128255,128258,14,128260,128263,14,128265,128265,14,128277,128277,14,128300,128301,14,128326,128328,14,128331,128334,14,128336,128347,14,128360,128366,14,128369,128370,14,128378,128378,14,128391,128391,14,128394,128397,14,128400,128400,14,128405,128406,14,128420,128420,14,128422,128423,14,128425,128432,14,128435,128443,14,128445,128449,14,128453,128464,14,128468,128475,14,128479,128480,14,128482,128482,14,128484,128487,14,128489,128494,14,128496,128498,14,128500,128505,14,128507,128511,14,128513,128518,14,128521,128525,14,128527,128527,14,128529,128529,14,128533,128533,14,128535,128535,14,128537,128537,14]")
 }
-var k2, C2, P2, A3, M3, I2, T3, x2, L3, O3, ti = g({
+var k2, C2, P2, A3, M3, I2, T3, D2, L3, O3, ti = g({
     "out-build/vs/base/common/strings.js"() {
         "use strict";
         P3(), Ln(), k2 = /(?:\x1b\[|\x9b)[=?>!]?[\d;:]*["$#'* ]?[a-zA-Z@^`{}|~]/, C2 = /(?:\x1b\]|\x9d).*?(?:\x1b\\|\x07|\x9c)/, P2 = /\x1b(?:[ #%\(\)\*\+\-\.\/]?[a-zA-Z0-9\|}~@])/, A3 = new RegExp("(?:" + [k2.source, C2.source, P2.source].join("|") + ")", "g"), M3 = "\uFEFF", (function(t) {
@@ -8219,7 +8219,7 @@ var k2, C2, P2, A3, M3, I2, T3, x2, L3, O3, ti = g({
             }
         }, (function(t) {
             t[t.zwj = 8205] = "zwj", t[t.emojiVariantSelector = 65039] = "emojiVariantSelector", t[t.enclosingKeyCap = 8419] = "enclosingKeyCap", t[t.space = 32] = "space"
-        })(x2 || (x2 = {})), L3 = class Nu {
+        })(D2 || (D2 = {})), L3 = class Nu {
             static {
                 this.ambiguousCharacterData = new Kr(() => JSON.parse('{"_common":[8232,32,8233,32,5760,32,8192,32,8193,32,8194,32,8195,32,8196,32,8197,32,8198,32,8200,32,8201,32,8202,32,8287,32,8199,32,8239,32,2042,95,65101,95,65102,95,65103,95,8208,45,8209,45,8210,45,65112,45,1748,45,8259,45,727,45,8722,45,10134,45,11450,45,1549,44,1643,44,184,44,42233,44,894,59,2307,58,2691,58,1417,58,1795,58,1796,58,5868,58,65072,58,6147,58,6153,58,8282,58,1475,58,760,58,42889,58,8758,58,720,58,42237,58,451,33,11601,33,660,63,577,63,2429,63,5038,63,42731,63,119149,46,8228,46,1793,46,1794,46,42510,46,68176,46,1632,46,1776,46,42232,46,1373,96,65287,96,8219,96,1523,96,8242,96,1370,96,8175,96,65344,96,900,96,8189,96,8125,96,8127,96,8190,96,697,96,884,96,712,96,714,96,715,96,756,96,699,96,701,96,700,96,702,96,42892,96,1497,96,2036,96,2037,96,5194,96,5836,96,94033,96,94034,96,65339,91,10088,40,10098,40,12308,40,64830,40,65341,93,10089,41,10099,41,12309,41,64831,41,10100,123,119060,123,10101,125,65342,94,8270,42,1645,42,8727,42,66335,42,5941,47,8257,47,8725,47,8260,47,9585,47,10187,47,10744,47,119354,47,12755,47,12339,47,11462,47,20031,47,12035,47,65340,92,65128,92,8726,92,10189,92,10741,92,10745,92,119311,92,119355,92,12756,92,20022,92,12034,92,42872,38,708,94,710,94,5869,43,10133,43,66203,43,8249,60,10094,60,706,60,119350,60,5176,60,5810,60,5120,61,11840,61,12448,61,42239,61,8250,62,10095,62,707,62,119351,62,5171,62,94015,62,8275,126,732,126,8128,126,8764,126,65372,124,65293,45,118002,50,120784,50,120794,50,120804,50,120814,50,120824,50,130034,50,42842,50,423,50,1000,50,42564,50,5311,50,42735,50,119302,51,118003,51,120785,51,120795,51,120805,51,120815,51,120825,51,130035,51,42923,51,540,51,439,51,42858,51,11468,51,1248,51,94011,51,71882,51,118004,52,120786,52,120796,52,120806,52,120816,52,120826,52,130036,52,5070,52,71855,52,118005,53,120787,53,120797,53,120807,53,120817,53,120827,53,130037,53,444,53,71867,53,118006,54,120788,54,120798,54,120808,54,120818,54,120828,54,130038,54,11474,54,5102,54,71893,54,119314,55,118007,55,120789,55,120799,55,120809,55,120819,55,120829,55,130039,55,66770,55,71878,55,2819,56,2538,56,2666,56,125131,56,118008,56,120790,56,120800,56,120810,56,120820,56,120830,56,130040,56,547,56,546,56,66330,56,2663,57,2920,57,2541,57,3437,57,118009,57,120791,57,120801,57,120811,57,120821,57,120831,57,130041,57,42862,57,11466,57,71884,57,71852,57,71894,57,9082,97,65345,97,119834,97,119886,97,119938,97,119990,97,120042,97,120094,97,120146,97,120198,97,120250,97,120302,97,120354,97,120406,97,120458,97,593,97,945,97,120514,97,120572,97,120630,97,120688,97,120746,97,65313,65,117974,65,119808,65,119860,65,119912,65,119964,65,120016,65,120068,65,120120,65,120172,65,120224,65,120276,65,120328,65,120380,65,120432,65,913,65,120488,65,120546,65,120604,65,120662,65,120720,65,5034,65,5573,65,42222,65,94016,65,66208,65,119835,98,119887,98,119939,98,119991,98,120043,98,120095,98,120147,98,120199,98,120251,98,120303,98,120355,98,120407,98,120459,98,388,98,5071,98,5234,98,5551,98,65314,66,8492,66,117975,66,119809,66,119861,66,119913,66,120017,66,120069,66,120121,66,120173,66,120225,66,120277,66,120329,66,120381,66,120433,66,42932,66,914,66,120489,66,120547,66,120605,66,120663,66,120721,66,5108,66,5623,66,42192,66,66178,66,66209,66,66305,66,65347,99,8573,99,119836,99,119888,99,119940,99,119992,99,120044,99,120096,99,120148,99,120200,99,120252,99,120304,99,120356,99,120408,99,120460,99,7428,99,1010,99,11429,99,43951,99,66621,99,128844,67,71913,67,71922,67,65315,67,8557,67,8450,67,8493,67,117976,67,119810,67,119862,67,119914,67,119966,67,120018,67,120174,67,120226,67,120278,67,120330,67,120382,67,120434,67,1017,67,11428,67,5087,67,42202,67,66210,67,66306,67,66581,67,66844,67,8574,100,8518,100,119837,100,119889,100,119941,100,119993,100,120045,100,120097,100,120149,100,120201,100,120253,100,120305,100,120357,100,120409,100,120461,100,1281,100,5095,100,5231,100,42194,100,8558,68,8517,68,117977,68,119811,68,119863,68,119915,68,119967,68,120019,68,120071,68,120123,68,120175,68,120227,68,120279,68,120331,68,120383,68,120435,68,5024,68,5598,68,5610,68,42195,68,8494,101,65349,101,8495,101,8519,101,119838,101,119890,101,119942,101,120046,101,120098,101,120150,101,120202,101,120254,101,120306,101,120358,101,120410,101,120462,101,43826,101,1213,101,8959,69,65317,69,8496,69,117978,69,119812,69,119864,69,119916,69,120020,69,120072,69,120124,69,120176,69,120228,69,120280,69,120332,69,120384,69,120436,69,917,69,120492,69,120550,69,120608,69,120666,69,120724,69,11577,69,5036,69,42224,69,71846,69,71854,69,66182,69,119839,102,119891,102,119943,102,119995,102,120047,102,120099,102,120151,102,120203,102,120255,102,120307,102,120359,102,120411,102,120463,102,43829,102,42905,102,383,102,7837,102,1412,102,119315,70,8497,70,117979,70,119813,70,119865,70,119917,70,120021,70,120073,70,120125,70,120177,70,120229,70,120281,70,120333,70,120385,70,120437,70,42904,70,988,70,120778,70,5556,70,42205,70,71874,70,71842,70,66183,70,66213,70,66853,70,65351,103,8458,103,119840,103,119892,103,119944,103,120048,103,120100,103,120152,103,120204,103,120256,103,120308,103,120360,103,120412,103,120464,103,609,103,7555,103,397,103,1409,103,117980,71,119814,71,119866,71,119918,71,119970,71,120022,71,120074,71,120126,71,120178,71,120230,71,120282,71,120334,71,120386,71,120438,71,1292,71,5056,71,5107,71,42198,71,65352,104,8462,104,119841,104,119945,104,119997,104,120049,104,120101,104,120153,104,120205,104,120257,104,120309,104,120361,104,120413,104,120465,104,1211,104,1392,104,5058,104,65320,72,8459,72,8460,72,8461,72,117981,72,119815,72,119867,72,119919,72,120023,72,120179,72,120231,72,120283,72,120335,72,120387,72,120439,72,919,72,120494,72,120552,72,120610,72,120668,72,120726,72,11406,72,5051,72,5500,72,42215,72,66255,72,731,105,9075,105,65353,105,8560,105,8505,105,8520,105,119842,105,119894,105,119946,105,119998,105,120050,105,120102,105,120154,105,120206,105,120258,105,120310,105,120362,105,120414,105,120466,105,120484,105,618,105,617,105,953,105,8126,105,890,105,120522,105,120580,105,120638,105,120696,105,120754,105,1110,105,42567,105,1231,105,43893,105,5029,105,71875,105,65354,106,8521,106,119843,106,119895,106,119947,106,119999,106,120051,106,120103,106,120155,106,120207,106,120259,106,120311,106,120363,106,120415,106,120467,106,1011,106,1112,106,65322,74,117983,74,119817,74,119869,74,119921,74,119973,74,120025,74,120077,74,120129,74,120181,74,120233,74,120285,74,120337,74,120389,74,120441,74,42930,74,895,74,1032,74,5035,74,5261,74,42201,74,119844,107,119896,107,119948,107,120000,107,120052,107,120104,107,120156,107,120208,107,120260,107,120312,107,120364,107,120416,107,120468,107,8490,75,65323,75,117984,75,119818,75,119870,75,119922,75,119974,75,120026,75,120078,75,120130,75,120182,75,120234,75,120286,75,120338,75,120390,75,120442,75,922,75,120497,75,120555,75,120613,75,120671,75,120729,75,11412,75,5094,75,5845,75,42199,75,66840,75,1472,108,8739,73,9213,73,65512,73,1633,108,1777,73,66336,108,125127,108,118001,108,120783,73,120793,73,120803,73,120813,73,120823,73,130033,73,65321,73,8544,73,8464,73,8465,73,117982,108,119816,73,119868,73,119920,73,120024,73,120128,73,120180,73,120232,73,120284,73,120336,73,120388,73,120440,73,65356,108,8572,73,8467,108,119845,108,119897,108,119949,108,120001,108,120053,108,120105,73,120157,73,120209,73,120261,73,120313,73,120365,73,120417,73,120469,73,448,73,120496,73,120554,73,120612,73,120670,73,120728,73,11410,73,1030,73,1216,73,1493,108,1503,108,1575,108,126464,108,126592,108,65166,108,65165,108,1994,108,11599,73,5825,73,42226,73,93992,73,66186,124,66313,124,119338,76,8556,76,8466,76,117985,76,119819,76,119871,76,119923,76,120027,76,120079,76,120131,76,120183,76,120235,76,120287,76,120339,76,120391,76,120443,76,11472,76,5086,76,5290,76,42209,76,93974,76,71843,76,71858,76,66587,76,66854,76,65325,77,8559,77,8499,77,117986,77,119820,77,119872,77,119924,77,120028,77,120080,77,120132,77,120184,77,120236,77,120288,77,120340,77,120392,77,120444,77,924,77,120499,77,120557,77,120615,77,120673,77,120731,77,1018,77,11416,77,5047,77,5616,77,5846,77,42207,77,66224,77,66321,77,119847,110,119899,110,119951,110,120003,110,120055,110,120107,110,120159,110,120211,110,120263,110,120315,110,120367,110,120419,110,120471,110,1400,110,1404,110,65326,78,8469,78,117987,78,119821,78,119873,78,119925,78,119977,78,120029,78,120081,78,120185,78,120237,78,120289,78,120341,78,120393,78,120445,78,925,78,120500,78,120558,78,120616,78,120674,78,120732,78,11418,78,42208,78,66835,78,3074,111,3202,111,3330,111,3458,111,2406,111,2662,111,2790,111,3046,111,3174,111,3302,111,3430,111,3664,111,3792,111,4160,111,1637,111,1781,111,65359,111,8500,111,119848,111,119900,111,119952,111,120056,111,120108,111,120160,111,120212,111,120264,111,120316,111,120368,111,120420,111,120472,111,7439,111,7441,111,43837,111,959,111,120528,111,120586,111,120644,111,120702,111,120760,111,963,111,120532,111,120590,111,120648,111,120706,111,120764,111,11423,111,4351,111,1413,111,1505,111,1607,111,126500,111,126564,111,126596,111,65259,111,65260,111,65258,111,65257,111,1726,111,64428,111,64429,111,64427,111,64426,111,1729,111,64424,111,64425,111,64423,111,64422,111,1749,111,3360,111,4125,111,66794,111,71880,111,71895,111,66604,111,1984,79,2534,79,2918,79,12295,79,70864,79,71904,79,118000,79,120782,79,120792,79,120802,79,120812,79,120822,79,130032,79,65327,79,117988,79,119822,79,119874,79,119926,79,119978,79,120030,79,120082,79,120134,79,120186,79,120238,79,120290,79,120342,79,120394,79,120446,79,927,79,120502,79,120560,79,120618,79,120676,79,120734,79,11422,79,1365,79,11604,79,4816,79,2848,79,66754,79,42227,79,71861,79,66194,79,66219,79,66564,79,66838,79,9076,112,65360,112,119849,112,119901,112,119953,112,120005,112,120057,112,120109,112,120161,112,120213,112,120265,112,120317,112,120369,112,120421,112,120473,112,961,112,120530,112,120544,112,120588,112,120602,112,120646,112,120660,112,120704,112,120718,112,120762,112,120776,112,11427,112,65328,80,8473,80,117989,80,119823,80,119875,80,119927,80,119979,80,120031,80,120083,80,120187,80,120239,80,120291,80,120343,80,120395,80,120447,80,929,80,120504,80,120562,80,120620,80,120678,80,120736,80,11426,80,5090,80,5229,80,42193,80,66197,80,119850,113,119902,113,119954,113,120006,113,120058,113,120110,113,120162,113,120214,113,120266,113,120318,113,120370,113,120422,113,120474,113,1307,113,1379,113,1382,113,8474,81,117990,81,119824,81,119876,81,119928,81,119980,81,120032,81,120084,81,120188,81,120240,81,120292,81,120344,81,120396,81,120448,81,11605,81,119851,114,119903,114,119955,114,120007,114,120059,114,120111,114,120163,114,120215,114,120267,114,120319,114,120371,114,120423,114,120475,114,43847,114,43848,114,7462,114,11397,114,43905,114,119318,82,8475,82,8476,82,8477,82,117991,82,119825,82,119877,82,119929,82,120033,82,120189,82,120241,82,120293,82,120345,82,120397,82,120449,82,422,82,5025,82,5074,82,66740,82,5511,82,42211,82,94005,82,65363,115,119852,115,119904,115,119956,115,120008,115,120060,115,120112,115,120164,115,120216,115,120268,115,120320,115,120372,115,120424,115,120476,115,42801,115,445,115,1109,115,43946,115,71873,115,66632,115,65331,83,117992,83,119826,83,119878,83,119930,83,119982,83,120034,83,120086,83,120138,83,120190,83,120242,83,120294,83,120346,83,120398,83,120450,83,1029,83,1359,83,5077,83,5082,83,42210,83,94010,83,66198,83,66592,83,119853,116,119905,116,119957,116,120009,116,120061,116,120113,116,120165,116,120217,116,120269,116,120321,116,120373,116,120425,116,120477,116,8868,84,10201,84,128872,84,65332,84,117993,84,119827,84,119879,84,119931,84,119983,84,120035,84,120087,84,120139,84,120191,84,120243,84,120295,84,120347,84,120399,84,120451,84,932,84,120507,84,120565,84,120623,84,120681,84,120739,84,11430,84,5026,84,42196,84,93962,84,71868,84,66199,84,66225,84,66325,84,119854,117,119906,117,119958,117,120010,117,120062,117,120114,117,120166,117,120218,117,120270,117,120322,117,120374,117,120426,117,120478,117,42911,117,7452,117,43854,117,43858,117,651,117,965,117,120534,117,120592,117,120650,117,120708,117,120766,117,1405,117,66806,117,71896,117,8746,85,8899,85,117994,85,119828,85,119880,85,119932,85,119984,85,120036,85,120088,85,120140,85,120192,85,120244,85,120296,85,120348,85,120400,85,120452,85,1357,85,4608,85,66766,85,5196,85,42228,85,94018,85,71864,85,8744,118,8897,118,65366,118,8564,118,119855,118,119907,118,119959,118,120011,118,120063,118,120115,118,120167,118,120219,118,120271,118,120323,118,120375,118,120427,118,120479,118,7456,118,957,118,120526,118,120584,118,120642,118,120700,118,120758,118,1141,118,1496,118,71430,118,43945,118,71872,118,119309,86,1639,86,1783,86,8548,86,117995,86,119829,86,119881,86,119933,86,119985,86,120037,86,120089,86,120141,86,120193,86,120245,86,120297,86,120349,86,120401,86,120453,86,1140,86,11576,86,5081,86,5167,86,42719,86,42214,86,93960,86,71840,86,66845,86,623,119,119856,119,119908,119,119960,119,120012,119,120064,119,120116,119,120168,119,120220,119,120272,119,120324,119,120376,119,120428,119,120480,119,7457,119,1121,119,1309,119,1377,119,71434,119,71438,119,71439,119,43907,119,71910,87,71919,87,117996,87,119830,87,119882,87,119934,87,119986,87,120038,87,120090,87,120142,87,120194,87,120246,87,120298,87,120350,87,120402,87,120454,87,1308,87,5043,87,5076,87,42218,87,5742,120,10539,120,10540,120,10799,120,65368,120,8569,120,119857,120,119909,120,119961,120,120013,120,120065,120,120117,120,120169,120,120221,120,120273,120,120325,120,120377,120,120429,120,120481,120,5441,120,5501,120,5741,88,9587,88,66338,88,71916,88,65336,88,8553,88,117997,88,119831,88,119883,88,119935,88,119987,88,120039,88,120091,88,120143,88,120195,88,120247,88,120299,88,120351,88,120403,88,120455,88,42931,88,935,88,120510,88,120568,88,120626,88,120684,88,120742,88,11436,88,11613,88,5815,88,42219,88,66192,88,66228,88,66327,88,66855,88,611,121,7564,121,65369,121,119858,121,119910,121,119962,121,120014,121,120066,121,120118,121,120170,121,120222,121,120274,121,120326,121,120378,121,120430,121,120482,121,655,121,7935,121,43866,121,947,121,8509,121,120516,121,120574,121,120632,121,120690,121,120748,121,1199,121,4327,121,71900,121,65337,89,117998,89,119832,89,119884,89,119936,89,119988,89,120040,89,120092,89,120144,89,120196,89,120248,89,120300,89,120352,89,120404,89,120456,89,933,89,978,89,120508,89,120566,89,120624,89,120682,89,120740,89,11432,89,1198,89,5033,89,5053,89,42220,89,94019,89,71844,89,66226,89,119859,122,119911,122,119963,122,120015,122,120067,122,120119,122,120171,122,120223,122,120275,122,120327,122,120379,122,120431,122,120483,122,7458,122,43923,122,71876,122,71909,90,66293,90,65338,90,8484,90,8488,90,117999,90,119833,90,119885,90,119937,90,119989,90,120041,90,120197,90,120249,90,120301,90,120353,90,120405,90,120457,90,918,90,120493,90,120551,90,120609,90,120667,90,120725,90,5059,90,42204,90,71849,90,65282,34,65283,35,65284,36,65285,37,65286,38,65290,42,65291,43,65294,46,65295,47,65296,48,65298,50,65299,51,65300,52,65301,53,65302,54,65303,55,65304,56,65305,57,65308,60,65309,61,65310,62,65312,64,65316,68,65318,70,65319,71,65324,76,65329,81,65330,82,65333,85,65334,86,65335,87,65343,95,65346,98,65348,100,65350,102,65355,107,65357,109,65358,110,65361,113,65362,114,65364,116,65365,117,65367,119,65370,122,65371,123,65373,125,119846,109],"_default":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8217,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"cs":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"de":[65374,126,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"es":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"fr":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"it":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ja":[8211,45,8218,44,65281,33,8216,96,8245,96,180,96,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65292,44,65297,49,65307,59],"ko":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pl":[65374,126,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pt-BR":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"qps-ploc":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ru":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,305,105,921,73,1009,112,215,120,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"tr":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"zh-hans":[160,32,65374,126,8218,44,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65297,49],"zh-hant":[8211,45,65374,126,8218,44,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89]}'))
             }
@@ -8324,12 +8324,12 @@ function F3(t, ...e) {
 function N3(t) {
     return `${t.quality??"oss"}-${t.commit??"dev"}`
 }
-var O, D2, R2, Cv, Hc, A2, xt, M2, T2, qc, Le = g({
+var O, x2, R2, Cv, Hc, A2, Dt, M2, T2, qc, Le = g({
     "out-build/vs/base/common/network.js"() {
         "use strict";
         $e(), z(), ti(), ne(), Ce(), (function(t) {
             t.inMemory = "inmemory", t.vscode = "vscode", t.internal = "private", t.walkThrough = "walkThrough", t.walkThroughSnippet = "walkThroughSnippet", t.http = "http", t.https = "https", t.file = "file", t.git = "git", t.mailto = "mailto", t.untitled = "untitled", t.data = "data", t.command = "command", t.vscodeRemote = "vscode-remote", t.vscodeRemoteResource = "vscode-remote-resource", t.vscodeManagedRemoteResource = "vscode-managed-remote-resource", t.vscodeUserData = "vscode-userdata", t.vscodeCustomEditor = "vscode-custom-editor", t.vscodeNotebook = "vscode-notebook", t.vscodeNotebookCell = "vscode-notebook-cell", t.vscodeNotebookCellMetadata = "vscode-notebook-cell-metadata", t.vscodeNotebookCellMetadataDiff = "vscode-notebook-cell-metadata-diff", t.vscodeNotebookCellOutput = "vscode-notebook-cell-output", t.vscodeNotebookCellOutputDiff = "vscode-notebook-cell-output-diff", t.vscodeNotebookMetadata = "vscode-notebook-metadata", t.vscodeInteractiveInput = "vscode-interactive-input", t.vscodeSettings = "vscode-settings", t.vscodeWorkspaceTrust = "vscode-workspace-trust", t.vscodeTerminal = "vscode-terminal", t.terminal = "terminal", t.vscodeChatCodeBlock = "vscode-chat-code-block", t.vscodeChatCodeCompareBlock = "vscode-chat-code-compare-block", t.vscodeChatSesssion = "vscode-chat-editor", t.webviewPanel = "webview-panel", t.vscodeWebview = "vscode-webview", t.extension = "extension", t.aiChat = "cursor.aichat", t.contextObject = "cursor.context-object", t.composer = "cursor.composer", t.aiSettings = "cursor.aisettings", t.tinderDiffEditor = "cursor.tinderdiffeditor", t.vscodeFileResource = "vscode-file", t.tmp = "tmp", t.vsls = "vsls", t.vscodeSourceControl = "vscode-scm", t.commentsInput = "comment", t.codeSetting = "code-setting", t.cursorDev = "cursor-dev-utils", t.outputChannel = "output", t.accessibleView = "accessible-view", t.backgroundComposer = "cursor.backgroundcomposer", t.personalEnvironmentJson = "cursor.personalenvironmentjson", t.bugbot = "cursor.bugbot", t.aiEditorBox = "aiEditorBox", t.backgroundComposerPeek = "background-composer-peek", t.cursorPlan = "cursor-plan", t.reviewChanges = "cursor.reviewchanges", t.cursorBlame = "cursor.blame", t.cursorFileBlame = "cursor.fileblame"
-        })(O || (O = {})), D2 = "tkn", R2 = class {
+        })(O || (O = {})), x2 = "tkn", R2 = class {
             constructor() {
                 this._hosts = Object.create(null), this._ports = Object.create(null), this._connectionTokens = Object.create(null), this._preferredWebSchema = "http", this._delegate = null, this._serverRootPath = "/"
             }
@@ -8369,14 +8369,14 @@ var O, D2, R2, Cv, Hc, A2, xt, M2, T2, qc, Le = g({
                 const r = this._ports[e],
                     s = this._connectionTokens[e];
                 let n = `path=${encodeURIComponent(t.path)}`;
-                return typeof s == "string" && (n += `&${D2}=${encodeURIComponent(s)}`), A.from({
+                return typeof s == "string" && (n += `&${x2}=${encodeURIComponent(s)}`), A.from({
                     scheme: ys ? this._preferredWebSchema : O.vscodeRemoteResource,
                     authority: `${i}:${r}`,
                     path: this._remoteResourcesPath,
                     query: n
                 })
             }
-        }, Cv = new R2, Hc = "vscode-app", A2 = class xg {
+        }, Cv = new R2, Hc = "vscode-app", A2 = class Dg {
             static {
                 this.FALLBACK_AUTHORITY = Hc
             }
@@ -8385,9 +8385,9 @@ var O, D2, R2, Cv, Hc, A2, xt, M2, T2, qc, Le = g({
                 return this.uriToBrowserUri(i)
             }
             uriToBrowserUri(e) {
-                return e.scheme === O.vscodeRemote ? Cv.rewrite(e) : e.scheme === O.file && (iv || wE === `${O.vscodeFileResource}://${xg.FALLBACK_AUTHORITY}`) ? e.with({
+                return e.scheme === O.vscodeRemote ? Cv.rewrite(e) : e.scheme === O.file && (iv || wE === `${O.vscodeFileResource}://${Dg.FALLBACK_AUTHORITY}`) ? e.with({
                     scheme: O.vscodeFileResource,
-                    authority: e.authority || xg.FALLBACK_AUTHORITY,
+                    authority: e.authority || Dg.FALLBACK_AUTHORITY,
                     query: null,
                     fragment: null
                 }) : e
@@ -8399,7 +8399,7 @@ var O, D2, R2, Cv, Hc, A2, xt, M2, T2, qc, Le = g({
             uriToFileUri(e) {
                 return e.scheme === O.vscodeFileResource ? e.with({
                     scheme: O.file,
-                    authority: e.authority !== xg.FALLBACK_AUTHORITY ? e.authority : null,
+                    authority: e.authority !== Dg.FALLBACK_AUTHORITY ? e.authority : null,
                     query: null,
                     fragment: null
                 }) : e
@@ -8414,7 +8414,7 @@ var O, D2, R2, Cv, Hc, A2, xt, M2, T2, qc, Le = g({
                 }
                 throw new Error("Cannot determine URI for module id!")
             }
-        }, xt = new A2, M2 = Object.freeze({
+        }, Dt = new A2, M2 = Object.freeze({
             "Cache-Control": "no-cache, no-store"
         }), T2 = Object.freeze({
             "Document-Policy": "include-js-call-stacks-in-crash-reports, js-profiling"
@@ -8729,7 +8729,7 @@ function Z3(t) {
 function eL(t) {
     return Hd(e => J.concat(e), t)
 }
-var Kc, F2, Iv, xv, J, rt = g({
+var Kc, F2, Iv, Dv, J, rt = g({
     "out-build/vs/base/common/buffer.js"() {
         "use strict";
         Ln(), Gc(), Kc = typeof Buffer < "u", F2 = new Kr(() => new Uint8Array(256)), J = class kr {
@@ -8768,7 +8768,7 @@ var Kc, F2, Iv, xv, J, rt = g({
                 return e.set(this), e
             }
             toString() {
-                return Kc ? this.buffer.toString() : (xv || (xv = new TextDecoder), xv.decode(this.buffer))
+                return Kc ? this.buffer.toString() : (Dv || (Dv = new TextDecoder), Dv.decode(this.buffer))
             }
             slice(e, i) {
                 return new kr(this.buffer.subarray(e, i))
@@ -8861,7 +8861,7 @@ function Gd(t, e) {
     return t.authority && t.path.length > 1 && t.scheme === "file" ? i = `//${t.authority}${t.path}` : t.path.charCodeAt(0) === 47 && (t.path.charCodeAt(1) >= 65 && t.path.charCodeAt(1) <= 90 || t.path.charCodeAt(1) >= 97 && t.path.charCodeAt(1) <= 122) && t.path.charCodeAt(2) === 58 ? e ? i = t.path.substr(1) : i = t.path[1].toLowerCase() + t.path.substr(2) : i = t.path, V && (i = i.replace(/\//g, "\\")), i
 }
 
-function Dv(t, e) {
+function xv(t, e) {
     const i = e ? sL : N2;
     let r = "",
         {
@@ -8906,9 +8906,9 @@ function zd(t) {
 var $2, B2, V2, nt, hr, j2, A, Rv, Wn, Av, Mv, ne = g({
     "out-build/vs/base/common/uri.js"() {
         "use strict";
-        Ce(), z(), Le(), rt(), $2 = /^\w[\w\d+.-]*$/, B2 = /^\//, V2 = /^\/\//, nt = "", hr = "/", j2 = /^(([^:/?#]+?):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/, A = class Dg {
+        Ce(), z(), Le(), rt(), $2 = /^\w[\w\d+.-]*$/, B2 = /^\//, V2 = /^\/\//, nt = "", hr = "/", j2 = /^(([^:/?#]+?):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/, A = class xg {
             static isUri(e) {
-                return e instanceof Dg ? !0 : e ? typeof e.authority == "string" && typeof e.fragment == "string" && typeof e.path == "string" && typeof e.query == "string" && typeof e.scheme == "string" && typeof e.fsPath == "string" && typeof e.with == "function" && typeof e.toString == "function" : !1
+                return e instanceof xg ? !0 : e ? typeof e.authority == "string" && typeof e.fragment == "string" && typeof e.path == "string" && typeof e.query == "string" && typeof e.scheme == "string" && typeof e.fsPath == "string" && typeof e.with == "function" && typeof e.toString == "function" : !1
             }
             constructor(e, i, r, s, n, o = !1) {
                 typeof e == "object" ? (this.scheme = e.scheme || nt, this.authority = e.authority || nt, this.path = e.path || nt, this.query = e.query || nt, this.fragment = e.fragment || nt) : (this.scheme = iL(e, o), this.authority = i || nt, this.path = rL(this.scheme, r || nt), this.query = s || nt, this.fragment = n || nt, tL(this, o))
@@ -8945,19 +8945,19 @@ var $2, B2, V2, nt, hr, j2, A, Rv, Wn, Av, Mv, ne = g({
             static joinPath(e, ...i) {
                 if (!e.path) throw new Error("[UriError]: cannot call joinPath on URI without path");
                 let r;
-                return V && e.scheme === "file" ? r = Dg.file(dt.join(Gd(e, !0), ...i)).path : r = fe.join(e.path, ...i), e.with({
+                return V && e.scheme === "file" ? r = xg.file(dt.join(Gd(e, !0), ...i)).path : r = fe.join(e.path, ...i), e.with({
                     path: r
                 })
             }
             toString(e = !1) {
-                return Dv(this, e)
+                return xv(this, e)
             }
             toJSON() {
                 return this
             }
             static revive(e) {
                 if (e) {
-                    if (e instanceof Dg) return e;
+                    if (e instanceof xg) return e;
                     {
                         const i = new Wn(e);
                         return i._formatted = e.external ?? null, i._fsPath = e._sep === Rv ? e.fsPath ?? null : null, i
@@ -8974,7 +8974,7 @@ var $2, B2, V2, nt, hr, j2, A, Rv, Wn, Av, Mv, ne = g({
                 return this._fsPath || (this._fsPath = Gd(this, !1)), this._fsPath
             }
             toString(t = !1) {
-                return t ? Dv(this, !0) : (this._formatted || (this._formatted = Dv(this, !1)), this._formatted)
+                return t ? xv(this, !0) : (this._formatted || (this._formatted = xv(this, !1)), this._formatted)
             }
             toJSON() {
                 const t = {
@@ -9239,7 +9239,7 @@ var Ov, X2, Y2, hL = g({
             JSONContribution: "base.contributions.json"
         }, X2 = class extends $ {
             constructor() {
-                super(...arguments), this.schemasById = {}, this.schemaAssociations = {}, this._onDidChangeSchema = this._register(new D), this.onDidChangeSchema = this._onDidChangeSchema.event, this._onDidChangeSchemaAssociations = this._register(new D), this.onDidChangeSchemaAssociations = this._onDidChangeSchemaAssociations.event
+                super(...arguments), this.schemasById = {}, this.schemaAssociations = {}, this._onDidChangeSchema = this._register(new x), this.onDidChangeSchema = this._onDidChangeSchema.event, this._onDidChangeSchemaAssociations = this._register(new x), this.onDidChangeSchemaAssociations = this._onDidChangeSchemaAssociations.event
             }
             registerSchema(t, e, i) {
                 const r = K2(t);
@@ -9356,7 +9356,7 @@ var Q2, fr, Z2, Yc, Jc, Qc, Zc, el, tl, Qo, en, il, ek, Wv, Fv, Cs, Yr, Nv, rl, 
                 patternProperties: {}
             }, en = "vscode://schemas/settings/resourceLanguage", il = Mi.as(Ov.JSONContribution), ek = class extends $ {
                 constructor() {
-                    super(), this.registeredConfigurationDefaults = [], this.overrideIdentifiers = new Set, this._onDidSchemaChange = this._register(new D), this.onDidSchemaChange = this._onDidSchemaChange.event, this._onDidUpdateConfiguration = this._register(new D), this.onDidUpdateConfiguration = this._onDidUpdateConfiguration.event, this.configurationDefaultsOverrides = new Map, this.defaultLanguageConfigurationOverridesNode = {
+                    super(), this.registeredConfigurationDefaults = [], this.overrideIdentifiers = new Set, this._onDidSchemaChange = this._register(new x), this.onDidSchemaChange = this._onDidSchemaChange.event, this._onDidUpdateConfiguration = this._register(new x), this.onDidUpdateConfiguration = this._onDidUpdateConfiguration.event, this.configurationDefaultsOverrides = new Map, this.defaultLanguageConfigurationOverridesNode = {
                         id: "defaultOverrides",
                         title: S(1807, null),
                         properties: {}
@@ -10014,7 +10014,7 @@ function ea(t) {
     let r = !1;
     const s = new Promise((n, o) => {
         const a = e.token.onCancellationRequested(() => {
-            r = !0, a.dispose(), o(new xi)
+            r = !0, a.dispose(), o(new Di)
         });
         Promise.resolve(i).then(c => {
             a.dispose(), e.dispose(), r ? XE(c) && c.dispose() : n(c)
@@ -10036,7 +10036,7 @@ function ea(t) {
     }
 }
 
-function xL() {
+function DL() {
     let t, e;
     return {
         promise: new Promise((r, s) => {
@@ -10053,12 +10053,12 @@ function Li(t, e) {
                 n.dispose(), i()
             }, t),
             n = e.onCancellationRequested(() => {
-                clearTimeout(s), n.dispose(), r(new xi)
+                clearTimeout(s), n.dispose(), r(new Di)
             })
     }) : ea(i => Li(t, i))
 }
 
-function DL(t, e = 0, i) {
+function xL(t, e = 0, i) {
     const r = setTimeout(() => {
             t(), i && s.dispose()
         }, e),
@@ -10165,7 +10165,7 @@ var Gv, vk, wk, Yd, Ps, al, zv, ta, Kv, yk, Tr, Sk, Xv, Yv, Jd, _k, bk, Ek, Is, 
                 return !!this.deferred?.isTriggered()
             }
             cancel() {
-                this.cancelTimeout(), this.completionPromise && (this.doReject?.(new xi), this.completionPromise = null)
+                this.cancelTimeout(), this.completionPromise && (this.doReject?.(new Di), this.completionPromise = null)
             }
             cancelTimeout() {
                 this.deferred?.dispose(), this.deferred = null
@@ -10206,7 +10206,7 @@ var Gv, vk, wk, Yd, Ps, al, zv, ta, Kv, yk, Tr, Sk, Xv, Yv, Jd, _k, bk, Ek, Is, 
             }
         }, zv = class {
             constructor(t) {
-                this._size = 0, this._isDisposed = !1, this.maxDegreeOfParalellism = t, this.outstandingPromises = [], this.runningPromises = 0, this._onDrained = new D
+                this._size = 0, this._isDisposed = !1, this.maxDegreeOfParalellism = t, this.outstandingPromises = [], this.runningPromises = 0, this._onDrained = new x
             }
             whenIdle() {
                 return this.size > 0 ? R.toPromise(this.onDrained) : Promise.resolve()
@@ -10477,7 +10477,7 @@ var Gv, vk, wk, Yd, Ps, al, zv, ta, Kv, yk, Tr, Sk, Xv, Yv, Jd, _k, bk, Ek, Is, 
                 })
             }
             cancel() {
-                return this.error(new xi)
+                return this.error(new Di)
             }
         }, (function(t) {
             async function e(r) {
@@ -10529,7 +10529,7 @@ var Gv, vk, wk, Yd, Ps, al, zv, ta, Kv, yk, Tr, Sk, Xv, Yv, Jd, _k, bk, Ek, Is, 
                 this.EMPTY = or.fromArray([])
             }
             constructor(e, i) {
-                this._state = 0, this._results = [], this._error = null, this._onReturn = i, this._onStateChanged = new D, queueMicrotask(async () => {
+                this._state = 0, this._results = [], this._error = null, this._onReturn = i, this._onStateChanged = new x, queueMicrotask(async () => {
                     const r = {
                         emitOne: s => this.emitOne(s),
                         emitMany: s => this.emitMany(s),
@@ -10724,7 +10724,7 @@ function WL(t) {
     if (t.endsWith("]")) {
         const e = t.lastIndexOf(" [", t.length - 2);
         if (e !== -1) {
-            const i = xk(t.substring(0, e)),
+            const i = Dk(t.substring(0, e)),
                 r = t.substring(e);
             return {
                 name: i.name + r,
@@ -10732,10 +10732,10 @@ function WL(t) {
             }
         }
     }
-    return xk(t)
+    return Dk(t)
 }
 
-function xk(t) {
+function Dk(t) {
     const e = t.indexOf("/") !== -1 ? fe : dt,
         i = e.basename(t),
         r = e.dirname(t);
@@ -10747,12 +10747,12 @@ function xk(t) {
         parentPath: ""
     }
 }
-var Qd, Dk, rn = g({
+var Qd, xk, rn = g({
     "out-build/vs/base/common/labels.js"() {
         "use strict";
         ji(), Ce(), z(), wt(), ti(), Qd = Object.create(null), (function(t) {
             t[t.TEXT = 0] = "TEXT", t[t.VARIABLE = 1] = "VARIABLE", t[t.SEPARATOR = 2] = "SEPARATOR"
-        })(Dk || (Dk = {}))
+        })(xk || (xk = {}))
     }
 });
 
@@ -11207,28 +11207,28 @@ function jn(t, e) {
     t.write(r)
 }
 
-function xs(t) {
+function Ds(t) {
     const e = J.alloc(1);
     return e.writeUInt8(t, 0), e
 }
 
 function na(t, e) {
-    if (typeof e > "u") t.write(Ds.Undefined);
+    if (typeof e > "u") t.write(xs.Undefined);
     else if (typeof e == "string") {
         const i = J.fromString(e);
-        t.write(Ds.String), jn(t, i.byteLength), t.write(i)
+        t.write(xs.String), jn(t, i.byteLength), t.write(i)
     } else if ($k && Buffer.isBuffer(e)) {
         const i = J.wrap(e);
-        t.write(Ds.Buffer), jn(t, i.byteLength), t.write(i)
-    } else if (e instanceof J) t.write(Ds.VSBuffer), jn(t, e.byteLength), t.write(e);
+        t.write(xs.Buffer), jn(t, i.byteLength), t.write(i)
+    } else if (e instanceof J) t.write(xs.VSBuffer), jn(t, e.byteLength), t.write(e);
     else if (Array.isArray(e)) {
-        t.write(Ds.Array), jn(t, e.length);
+        t.write(xs.Array), jn(t, e.length);
         for (const i of e) na(t, i)
-    } else if (typeof e == "number" && (e | 0) === e) t.write(Ds.Uint), jn(t, e);
-    else if (e instanceof Uint8Array) t.write(Ds.Uint8Array), jn(t, e.length), t.write(J.wrap(e));
+    } else if (typeof e == "number" && (e | 0) === e) t.write(xs.Uint), jn(t, e);
+    else if (e instanceof Uint8Array) t.write(xs.Uint8Array), jn(t, e.length), t.write(J.wrap(e));
     else {
         const i = J.fromString(JSON.stringify(e));
-        t.write(Ds.Object), jn(t, i.byteLength), t.write(i)
+        t.write(xs.Object), jn(t, i.byteLength), t.write(i)
     }
 }
 
@@ -11282,7 +11282,7 @@ function rO(t) {
         }
     }
 }
-var Fk, Nk, Hn, Uk, sh, nh, si, Ds, $k, iw, Bk, ll, rw, sw, Vk, Te, qi = g({
+var Fk, Nk, Hn, Uk, sh, nh, si, xs, $k, iw, Bk, ll, rw, sw, Vk, Te, qi = g({
     "out-build/vs/base/parts/ipc/common/ipc.js"() {
         "use strict";
         Vt(), ce(), rt(), vt(), Bn(), $e(), K(), Md(), N(), th(), ti(), We(), (function(t) {
@@ -11291,7 +11291,7 @@ var Fk, Nk, Hn, Uk, sh, nh, si, Ds, $k, iw, Bk, ll, rw, sw, Vk, Te, qi = g({
             t[t.Initialize = 200] = "Initialize", t[t.PromiseSuccess = 201] = "PromiseSuccess", t[t.PromiseError = 202] = "PromiseError", t[t.PromiseErrorObj = 203] = "PromiseErrorObj", t[t.EventFire = 204] = "EventFire"
         })(Nk || (Nk = {})), (function(t) {
             t[t.Uninitialized = 0] = "Uninitialized", t[t.Idle = 1] = "Idle"
-        })(Hn || (Hn = {})), Uk = xs(0), sh = class {
+        })(Hn || (Hn = {})), Uk = Ds(0), sh = class {
             constructor(t) {
                 this.buffer = t, this.pos = 0
             }
@@ -11311,15 +11311,15 @@ var Fk, Nk, Hn, Uk, sh, nh, si, Ds, $k, iw, Bk, ll, rw, sw, Vk, Te, qi = g({
             }
         }, (function(t) {
             t[t.Undefined = 0] = "Undefined", t[t.String = 1] = "String", t[t.Buffer = 2] = "Buffer", t[t.VSBuffer = 3] = "VSBuffer", t[t.Array = 4] = "Array", t[t.Object = 5] = "Object", t[t.Int = 6] = "Int", t[t.Uint8Array = 7] = "Uint8Array"
-        })(si || (si = {})), Ds = {
-            Undefined: xs(si.Undefined),
-            String: xs(si.String),
-            Buffer: xs(si.Buffer),
-            VSBuffer: xs(si.VSBuffer),
-            Array: xs(si.Array),
-            Object: xs(si.Object),
-            Uint: xs(si.Int),
-            Uint8Array: xs(si.Uint8Array)
+        })(si || (si = {})), xs = {
+            Undefined: Ds(si.Undefined),
+            String: Ds(si.String),
+            Buffer: Ds(si.Buffer),
+            VSBuffer: Ds(si.VSBuffer),
+            Array: Ds(si.Array),
+            Object: Ds(si.Object),
+            Uint: Ds(si.Int),
+            Uint8Array: Ds(si.Uint8Array)
         }, $k = typeof Buffer < "u", iw = class {
             constructor(t, e, i = null, r = 1e3) {
                 this.protocol = t, this.ctx = e, this.logger = i, this.timeoutDelay = r, this.channels = new Map, this.activeRequests = new Map, this.pendingRequests = new Map, this.protocolListener = this.protocol.onMessage(s => this.onRawMessage(s)), this.sendResponse({
@@ -11490,13 +11490,13 @@ var Fk, Nk, Hn, Uk, sh, nh, si, Ds, $k, iw, Bk, ll, rw, sw, Vk, Te, qi = g({
             t[t.LocalSide = 0] = "LocalSide", t[t.OtherSide = 1] = "OtherSide"
         })(Bk || (Bk = {})), ll = class {
             constructor(t, e = null) {
-                this.protocol = t, this.isDisposed = !1, this.state = Hn.Uninitialized, this.activeRequests = new Set, this.handlers = new Map, this.lastRequestId = 0, this._onDidInitialize = new D, this.onDidInitialize = this._onDidInitialize.event, this.protocolListener = this.protocol.onMessage(i => this.onBuffer(i)), this.logger = e
+                this.protocol = t, this.isDisposed = !1, this.state = Hn.Uninitialized, this.activeRequests = new Set, this.handlers = new Map, this.lastRequestId = 0, this._onDidInitialize = new x, this.onDidInitialize = this._onDidInitialize.event, this.protocolListener = this.protocol.onMessage(i => this.onBuffer(i)), this.logger = e
             }
             getChannel(t) {
                 const e = this;
                 return {
                     call(i, r, s) {
-                        return e.isDisposed ? Promise.reject(new xi) : e.requestPromise(t, i, r, s)
+                        return e.isDisposed ? Promise.reject(new Di) : e.requestPromise(t, i, r, s)
                     },
                     listen(i, r) {
                         return e.isDisposed ? R.None : e.requestEvent(t, i, r)
@@ -11512,10 +11512,10 @@ var Fk, Nk, Hn, Uk, sh, nh, si, Ds, $k, iw, Bk, ll, rw, sw, Vk, Te, qi = g({
                         name: e,
                         arg: i
                     };
-                if (r.isCancellationRequested) return Promise.reject(new xi);
+                if (r.isCancellationRequested) return Promise.reject(new Di);
                 let a, c;
                 return new Promise((u, d) => {
-                    if (r.isCancellationRequested) return d(new xi);
+                    if (r.isCancellationRequested) return d(new Di);
                     const f = () => {
                         const w = y => {
                             switch (y.type) {
@@ -11544,7 +11544,7 @@ var Fk, Nk, Hn, Uk, sh, nh, si, Ds, $k, iw, Bk, ll, rw, sw, Vk, Te, qi = g({
                         p ? (p.cancel(), p = null) : this.sendRequest({
                             id: s,
                             type: 101
-                        }), d(new xi)
+                        }), d(new Di)
                     };
                     a = r.onCancellationRequested(m), c = {
                         dispose: Ad(() => {
@@ -11565,7 +11565,7 @@ var Fk, Nk, Hn, Uk, sh, nh, si, Ds, $k, iw, Bk, ll, rw, sw, Vk, Te, qi = g({
                         arg: i
                     };
                 let o = null;
-                const a = new D({
+                const a = new x({
                         onWillAddFirstListener: () => {
                             const l = () => {
                                 this.activeRequests.add(a), this.sendRequest(n)
@@ -11654,7 +11654,7 @@ var Fk, Nk, Hn, Uk, sh, nh, si, Ds, $k, iw, Bk, ll, rw, sw, Vk, Te, qi = g({
                 return this._connections.forEach(e => t.push(e)), t
             }
             constructor(t, e, i) {
-                this.channels = new Map, this._connections = new Set, this._onDidAddConnection = new D, this.onDidAddConnection = this._onDidAddConnection.event, this._onDidRemoveConnection = new D, this.onDidRemoveConnection = this._onDidRemoveConnection.event, this.disposables = new Me, this.disposables.add(t(({
+                this.channels = new Map, this._connections = new Set, this._onDidAddConnection = new x, this.onDidAddConnection = this._onDidAddConnection.event, this._onDidRemoveConnection = new x, this.onDidRemoveConnection = this._onDidRemoveConnection.event, this.disposables = new Me, this.disposables.add(t(({
                     protocol: r,
                     onDidClientDisconnect: s
                 }) => {
@@ -11698,7 +11698,7 @@ var Fk, Nk, Hn, Uk, sh, nh, si, Ds, $k, iw, Bk, ll, rw, sw, Vk, Te, qi = g({
             getMulticastEvent(t, e, i, r) {
                 const s = this;
                 let n;
-                const o = new D({
+                const o = new x({
                     onWillAddFirstListener: () => {
                         n = new Me;
                         const a = new c2,
@@ -11960,7 +11960,7 @@ var qk, nw, Gk, oh, zk, Kk, Xk, gr, ah, ch, ow, Yk, aa, Jk, Qk, Zk, eC, tC = g({
             }
         }, ah = class extends $ {
             constructor(t) {
-                super(), this._onMessage = this._register(new D), this.onMessage = this._onMessage.event, this._state = {
+                super(), this._onMessage = this._register(new x), this.onMessage = this._onMessage.event, this._state = {
                     readHead: !0,
                     readLen: 13,
                     messageType: 0,
@@ -12050,7 +12050,7 @@ var qk, nw, Gk, oh, zk, Kk, Xk, gr, ah, ch, ow, Yk, aa, Jk, Qk, Zk, eC, tC = g({
             }
         }, ow = class extends $ {
             constructor(t) {
-                super(), this._onMessage = new D, this.onMessage = this._onMessage.event, this._onDidDispose = new D, this.onDidDispose = this._onDidDispose.event, this._socket = t, this._socketWriter = this._register(new ch(this._socket)), this._socketReader = this._register(new ah(this._socket)), this._register(this._socketReader.onMessage(e => {
+                super(), this._onMessage = new x, this.onMessage = this._onMessage.event, this._onDidDispose = new x, this.onDidDispose = this._onDidDispose.event, this._socket = t, this._socketWriter = this._register(new ch(this._socket)), this._socketReader = this._register(new ah(this._socket)), this._register(this._socketReader.onMessage(e => {
                     e.type === 1 && this._onMessage.fire(e.data)
                 })), this._register(this._socket.onClose(() => this._onDidDispose.fire()))
             }
@@ -12064,9 +12064,9 @@ var qk, nw, Gk, oh, zk, Kk, Xk, gr, ah, ch, ow, Yk, aa, Jk, Qk, Zk, eC, tC = g({
             send(t) {
                 this._socketWriter.write(new gr(1, 0, 0, t))
             }
-        }, Yk = class qD extends sw {
+        }, Yk = class qx extends sw {
             static fromSocket(e, i) {
-                return new qD(new ow(e), i)
+                return new qx(new ow(e), i)
             }
             get onDidDispose() {
                 return this.protocol.onDidDispose
@@ -12081,7 +12081,7 @@ var qk, nw, Gk, oh, zk, Kk, Xk, gr, ah, ch, ow, Yk, aa, Jk, Qk, Zk, eC, tC = g({
             }
         }, aa = class {
             constructor() {
-                this._hasListeners = !1, this._isDeliveringMessages = !1, this._bufferedMessages = [], this._emitter = new D({
+                this._hasListeners = !1, this._isDeliveringMessages = !1, this._bufferedMessages = [], this._emitter = new x({
                     onWillAddFirstListener: () => {
                         this._hasListeners = !0, queueMicrotask(() => this._deliverMessages())
                     },
@@ -12468,7 +12468,7 @@ var iC, ul, rC, sC, lh, nC, oC, aw = g({
         })(sC || (sC = {})), lh = process.env.XDG_RUNTIME_DIR, nC = {
             2: 107,
             1: 103
-        }, oC = class GD extends rw {
+        }, oC = class Gx extends rw {
             static toClientConnectionEvent(e) {
                 const i = R.fromNodeEventEmitter(e, "connection");
                 return R.map(i, r => ({
@@ -12477,7 +12477,7 @@ var iC, ul, rC, sC, lh, nC, oC, aw = g({
                 }))
             }
             constructor(e) {
-                super(GD.toClientConnectionEvent(e)), this.server = e
+                super(Gx.toClientConnectionEvent(e)), this.server = e
             }
             dispose() {
                 super.dispose(), this.server && (this.server.close(), this.server = null)
@@ -12626,7 +12626,7 @@ var kO = g({
         }
     });
 
-function xC(t, e) {
+function DC(t, e) {
     const i = R.fromNodeEventEmitter(le, e, (s, n) => ({
             event: s,
             message: n
@@ -12638,10 +12638,10 @@ function xC(t, e) {
         message: s
     }) => s && J.wrap(s))
 }
-var DC, PO = g({
+var xC, PO = g({
         "out-build/vs/base/parts/ipc/electron-main/ipc.electron.js"() {
             "use strict";
-            mr(), rt(), K(), N(), qi(), CO(), DC = class Rg extends rw {
+            mr(), rt(), K(), N(), qi(), CO(), xC = class Rg extends rw {
                 static {
                     this.Clients = new Map
                 }
@@ -12652,10 +12652,10 @@ var DC, PO = g({
                     return R.map(e, i => {
                         const r = i.id;
                         Rg.Clients.get(r)?.dispose();
-                        const n = new D;
+                        const n = new x;
                         Rg.Clients.set(r, Se(() => n.fire()));
-                        const o = xC(r, "vscode:message"),
-                            a = R.any(R.signal(xC(r, "vscode:disconnect")), n.event);
+                        const o = DC(r, "vscode:message"),
+                            a = R.any(R.signal(DC(r, "vscode:disconnect")), n.event);
                         return {
                             protocol: new IC(i, o),
                             onDidClientDisconnect: a
@@ -12716,11 +12716,11 @@ function Lr(t) {
 function fw(t, e) {
     switch (typeof t) {
         case "object":
-            return t === null ? Rs(349, e) : Array.isArray(t) ? DO(t, e) : RO(t, e);
+            return t === null ? Rs(349, e) : Array.isArray(t) ? xO(t, e) : RO(t, e);
         case "string":
             return TC(t, e);
         case "boolean":
-            return xO(t, e);
+            return DO(t, e);
         case "number":
             return Rs(t, e);
         case "undefined":
@@ -12734,7 +12734,7 @@ function Rs(t, e) {
     return (e << 5) - e + t | 0
 }
 
-function xO(t, e) {
+function DO(t, e) {
     return Rs(t ? 433 : 863, e)
 }
 
@@ -12744,7 +12744,7 @@ function TC(t, e) {
     return e
 }
 
-function DO(t, e) {
+function xO(t, e) {
     return e = Rs(104579, e), t.reduce((i, r) => fw(r, i), e)
 }
 
@@ -12766,7 +12766,7 @@ var LC, AO, Qr = g({
             "use strict";
             rt(), ti(), (function(t) {
                 t[t.BLOCK_SIZE = 64] = "BLOCK_SIZE", t[t.UNICODE_REPLACEMENT = 65533] = "UNICODE_REPLACEMENT"
-            })(LC || (LC = {})), AO = class zD {
+            })(LC || (LC = {})), AO = class zx {
                 static {
                     this._bigBlock32 = new DataView(new ArrayBuffer(320))
                 }
@@ -12782,10 +12782,10 @@ var LC, AO, Qr = g({
                         o, a;
                     for (n !== 0 ? (o = n, a = -1, n = 0) : (o = e.charCodeAt(0), a = 0);;) {
                         let c = o;
-                        if (x3(o))
+                        if (D3(o))
                             if (a + 1 < i) {
                                 const l = e.charCodeAt(a + 1);
-                                E2(l) ? (a++, c = D3(o, l)) : c = 65533
+                                E2(l) ? (a++, c = x3(o, l)) : c = 65533
                             } else {
                                 n = o;
                                 break
@@ -12808,7 +12808,7 @@ var LC, AO, Qr = g({
                     this._buffDV.setUint32(56, Math.floor(e / 4294967296), !1), this._buffDV.setUint32(60, e % 4294967296, !1), this._step()
                 }
                 _step() {
-                    const e = zD._bigBlock32,
+                    const e = zx._bigBlock32,
                         i = this._buffDV;
                     for (let d = 0; d < 64; d += 4) e.setUint32(d, i.getUint32(d, !1), !1);
                     for (let d = 64; d < 320; d += 4) e.setUint32(d, pw(e.getUint32(d - 12, !1) ^ e.getUint32(d - 32, !1) ^ e.getUint32(d - 56, !1) ^ e.getUint32(d - 64, !1), 1), !1);
@@ -12874,7 +12874,7 @@ var mw, Ge, UO = g({
         "use strict";
         FO(), Bn(), Le(), Ce(), Gr(), wt(), ne(), z(), mw = /^([^.]+\..+)[:=](.+)$/, Ge = class {
             get appRoot() {
-                return mt(xt.asFileUri("").fsPath)
+                return mt(Dt.asFileUri("").fsPath)
             }
             get userHome() {
                 return A.file(this.paths.homeDir)
@@ -12936,7 +12936,7 @@ var mw, Ge, UO = g({
             }
             get builtinExtensionsPath() {
                 const t = this.args["builtin-extensions-dir"];
-                return t ? ei(t) : Ai(U(xt.asFileUri("").fsPath, "..", "extensions"))
+                return t ? ei(t) : Ai(U(Dt.asFileUri("").fsPath, "..", "extensions"))
             }
             get extensionsDownloadLocation() {
                 const t = this.args["extensions-download-dir"];
@@ -13176,7 +13176,7 @@ var BC, VC, jC, la, HO = g({
                     case 20:
                         return "EOF";
                     default:
-                        throw xE(`unhandled token type: ${JSON.stringify(e)}; have you forgotten to add a case?`)
+                        throw DE(`unhandled token type: ${JSON.stringify(e)}; have you forgotten to add a case?`)
                 }
             }
             static {
@@ -13779,9 +13779,9 @@ var Nt, ua, zC, KC, XC, YC, JC, QC, Sw, ZC, e5, t5, i5, r5, hi, fh, bi, Oi, da, 
             negate() {
                 return Ag.createWithoutRegistration(`!${this.id}`, () => !this.fn())
             }
-        }, bi = class KD {
+        }, bi = class Kx {
             static {
-                this.INSTANCE = new KD
+                this.INSTANCE = new Kx
             }
             constructor() {
                 this.type = 0
@@ -13810,9 +13810,9 @@ var Nt, ua, zC, KC, XC, YC, JC, QC, Sw, ZC, e5, t5, i5, r5, hi, fh, bi, Oi, da, 
             negate() {
                 return Oi.INSTANCE
             }
-        }, Oi = class XD {
+        }, Oi = class Xx {
             static {
-                this.INSTANCE = new XD
+                this.INSTANCE = new Xx
             }
             constructor() {
                 this.type = 1
@@ -13841,10 +13841,10 @@ var Nt, ua, zC, KC, XC, YC, JC, QC, Sw, ZC, e5, t5, i5, r5, hi, fh, bi, Oi, da, 
             negate() {
                 return bi.INSTANCE
             }
-        }, da = class YD {
+        }, da = class Yx {
             static create(e, i = null) {
                 const r = Nt.get(e);
-                return typeof r == "boolean" ? r ? Oi.INSTANCE : bi.INSTANCE : new YD(e, i)
+                return typeof r == "boolean" ? r ? Oi.INSTANCE : bi.INSTANCE : new Yx(e, i)
             }
             constructor(e, i) {
                 this.key = e, this.negated = i, this.type = 2
@@ -13874,11 +13874,11 @@ var Nt, ua, zC, KC, XC, YC, JC, QC, Sw, ZC, e5, t5, i5, r5, hi, fh, bi, Oi, da, 
             negate() {
                 return this.negated || (this.negated = ha.create(this.key, this)), this.negated
             }
-        }, ph = class JD {
+        }, ph = class Jx {
             static create(e, i, r = null) {
                 if (typeof i == "boolean") return i ? da.create(e, r) : ha.create(e, r);
                 const s = Nt.get(e);
-                return typeof s == "boolean" ? i === (s ? "true" : "false") ? Oi.INSTANCE : bi.INSTANCE : new JD(e, i, r)
+                return typeof s == "boolean" ? i === (s ? "true" : "false") ? Oi.INSTANCE : bi.INSTANCE : new Jx(e, i, r)
             }
             constructor(e, i, r) {
                 this.key = e, this.value = i, this.negated = r, this.type = 4
@@ -13912,9 +13912,9 @@ var Nt, ua, zC, KC, XC, YC, JC, QC, Sw, ZC, e5, t5, i5, r5, hi, fh, bi, Oi, da, 
             negate() {
                 return this.negated || (this.negated = gh.create(this.key, this.value, this)), this.negated
             }
-        }, _w = class QD {
+        }, _w = class Qx {
             static create(e, i) {
-                return new QD(e, i)
+                return new Qx(e, i)
             }
             constructor(e, i) {
                 this.key = e, this.valueKey = i, this.type = 10, this.negated = null
@@ -13945,9 +13945,9 @@ var Nt, ua, zC, KC, XC, YC, JC, QC, Sw, ZC, e5, t5, i5, r5, hi, fh, bi, Oi, da, 
             negate() {
                 return this.negated || (this.negated = bw.create(this.key, this.valueKey)), this.negated
             }
-        }, bw = class ZD {
+        }, bw = class Zx {
             static create(e, i) {
-                return new ZD(e, i)
+                return new Zx(e, i)
             }
             constructor(e, i) {
                 this.key = e, this.valueKey = i, this.type = 11, this._negated = _w.create(e, i)
@@ -14574,7 +14574,7 @@ var j, pa, ee, gl, _h, Pw, a5, c5, l5, u5, d5, JO, q = g({
                 t[t.Off = 0] = "Off", t[t.Trace = 1] = "Trace", t[t.Debug = 2] = "Debug", t[t.Info = 3] = "Info", t[t.Warning = 4] = "Warning", t[t.Error = 5] = "Error"
             })(ee || (ee = {})), gl = ee.Info, _h = class extends $ {
                 constructor() {
-                    super(...arguments), this.level = gl, this._onDidChangeLogLevel = this._register(new D), this.onDidChangeLogLevel = this._onDidChangeLogLevel.event
+                    super(...arguments), this.level = gl, this._onDidChangeLogLevel = this._register(new x), this.onDidChangeLogLevel = this._onDidChangeLogLevel.event
                 }
                 setLevel(t) {
                     this.level !== t && (this.level = t, this._onDidChangeLogLevel.fire(this.level))
@@ -14667,7 +14667,7 @@ var j, pa, ee, gl, _h, Pw, a5, c5, l5, u5, d5, JO, q = g({
                 }
             }, l5 = class extends $ {
                 constructor(t, e, i) {
-                    if (super(), this.logLevel = t, this.logsHome = e, this._loggers = new Zt, this._onDidChangeLoggers = this._register(new D), this.onDidChangeLoggers = this._onDidChangeLoggers.event, this._onDidChangeLogLevel = this._register(new D), this.onDidChangeLogLevel = this._onDidChangeLogLevel.event, this._onDidChangeVisibility = this._register(new D), this.onDidChangeVisibility = this._onDidChangeVisibility.event, i)
+                    if (super(), this.logLevel = t, this.logsHome = e, this._loggers = new Zt, this._onDidChangeLoggers = this._register(new x), this.onDidChangeLoggers = this._onDidChangeLoggers.event, this._onDidChangeLogLevel = this._register(new x), this.onDidChangeLogLevel = this._onDidChangeLogLevel.event, this._onDidChangeVisibility = this._register(new x), this.onDidChangeVisibility = this._onDidChangeVisibility.event, i)
                         for (const r of i) this._loggers.set(r.resource, {
                             logger: void 0,
                             info: r
@@ -14755,7 +14755,7 @@ var j, pa, ee, gl, _h, Pw, a5, c5, l5, u5, d5, JO, q = g({
                 }
             }, u5 = class {
                 constructor() {
-                    this.onDidChangeLogLevel = new D().event
+                    this.onDidChangeLogLevel = new x().event
                 }
                 setLevel(t) {}
                 getLevel() {
@@ -15144,7 +15144,7 @@ function wr(t) {
     return !!(t.capabilities & 2)
 }
 
-function xw(t) {
+function Dw(t) {
     return !!(t.capabilities & 8)
 }
 
@@ -15156,7 +15156,7 @@ function an(t) {
     return !!(t.capabilities & 4)
 }
 
-function Dw(t) {
+function xw(t) {
     return !!(t.capabilities & 16)
 }
 
@@ -15381,7 +15381,7 @@ function cn(t, e) {
     const i = Math.pow(10, e);
     return Math.round(t * i) / i
 }
-var I, Yn, vl, xh, tW = g({
+var I, Yn, vl, Dh, tW = g({
     "out-build/vs/base/common/color.js"() {
         "use strict";
         I = class {
@@ -15472,7 +15472,7 @@ var I, Yn, vl, xh, tW = g({
                 let [l, u, d] = [0, 0, 0];
                 return i < 60 ? (l = o, u = a) : i < 120 ? (l = a, u = o) : i < 180 ? (u = o, d = a) : i < 240 ? (u = a, d = o) : i < 300 ? (l = a, d = o) : i <= 360 && (l = o, d = a), l = Math.round((l + c) * 255), u = Math.round((u + c) * 255), d = Math.round((d + c) * 255), new I(l, u, d, n)
             }
-        }, xh = class st {
+        }, Dh = class st {
             static fromHex(e) {
                 return st.Format.CSS.parseHex(e) || st.red
             }
@@ -15720,18 +15720,18 @@ var I, Yn, vl, xh, tW = g({
                             const b = v.match(/rgba\((?<r>(?:\+|-)?\d+), *(?<g>(?:\+|-)?\d+), *(?<b>(?:\+|-)?\d+), *(?<a>(?:\+|-)?\d+(\.\d+)?)\)/);
                             if (!b) throw new Error("Invalid color format " + v);
                             const E = parseInt(b.groups?.r ?? "0"),
-                                x = parseInt(b.groups?.g ?? "0"),
+                                D = parseInt(b.groups?.g ?? "0"),
                                 k = parseInt(b.groups?.b ?? "0"),
                                 M = parseFloat(b.groups?.a ?? "0");
-                            return new t(new I(E, x, k, M))
+                            return new t(new I(E, D, k, M))
                         }
                         if (v.startsWith("rgb(")) {
                             const b = v.match(/rgb\((?<r>(?:\+|-)?\d+), *(?<g>(?:\+|-)?\d+), *(?<b>(?:\+|-)?\d+)\)/);
                             if (!b) throw new Error("Invalid color format " + v);
                             const E = parseInt(b.groups?.r ?? "0"),
-                                x = parseInt(b.groups?.g ?? "0"),
+                                D = parseInt(b.groups?.g ?? "0"),
                                 k = parseInt(b.groups?.b ?? "0");
-                            return new t(new I(E, x, k))
+                            return new t(new I(E, D, k))
                         }
                         return m(v)
                     }
@@ -16045,29 +16045,29 @@ var I, Yn, vl, xh, tW = g({
                         if (b === 0 || v.charCodeAt(0) !== 35) return null;
                         if (b === 7) {
                             const E = 16 * y(v.charCodeAt(1)) + y(v.charCodeAt(2)),
-                                x = 16 * y(v.charCodeAt(3)) + y(v.charCodeAt(4)),
+                                D = 16 * y(v.charCodeAt(3)) + y(v.charCodeAt(4)),
                                 k = 16 * y(v.charCodeAt(5)) + y(v.charCodeAt(6));
-                            return new t(new I(E, x, k, 1))
+                            return new t(new I(E, D, k, 1))
                         }
                         if (b === 9) {
                             const E = 16 * y(v.charCodeAt(1)) + y(v.charCodeAt(2)),
-                                x = 16 * y(v.charCodeAt(3)) + y(v.charCodeAt(4)),
+                                D = 16 * y(v.charCodeAt(3)) + y(v.charCodeAt(4)),
                                 k = 16 * y(v.charCodeAt(5)) + y(v.charCodeAt(6)),
                                 M = 16 * y(v.charCodeAt(7)) + y(v.charCodeAt(8));
-                            return new t(new I(E, x, k, M / 255))
+                            return new t(new I(E, D, k, M / 255))
                         }
                         if (b === 4) {
                             const E = y(v.charCodeAt(1)),
-                                x = y(v.charCodeAt(2)),
+                                D = y(v.charCodeAt(2)),
                                 k = y(v.charCodeAt(3));
-                            return new t(new I(16 * E + E, 16 * x + x, 16 * k + k))
+                            return new t(new I(16 * E + E, 16 * D + D, 16 * k + k))
                         }
                         if (b === 5) {
                             const E = y(v.charCodeAt(1)),
-                                x = y(v.charCodeAt(2)),
+                                D = y(v.charCodeAt(2)),
                                 k = y(v.charCodeAt(3)),
                                 M = y(v.charCodeAt(4));
-                            return new t(new I(16 * E + E, 16 * x + x, 16 * k + k, (16 * M + M) / 255))
+                            return new t(new I(16 * E + E, 16 * D + D, 16 * k + k, (16 * M + M) / 255))
                         }
                         return null
                     }
@@ -16124,7 +16124,7 @@ var I, Yn, vl, xh, tW = g({
                     }
                 })(r = i.CSS || (i.CSS = {}))
             })(e = t.Format || (t.Format = {}))
-        })(xh || (xh = {}))
+        })(Dh || (Dh = {}))
     }
 });
 
@@ -16143,12 +16143,12 @@ var ze, lt = g({
             I5 = !0
         }
     }),
-    x5, et, sW = g({
+    D5, et, sW = g({
         "out-build/vs/platform/theme/common/theme.js"() {
             "use strict";
             (function(t) {
                 t.DARK = "dark", t.LIGHT = "light", t.HIGH_CONTRAST_DARK = "hcDark", t.HIGH_CONTRAST_LIGHT = "hcLight"
-            })(x5 || (x5 = {})), (function(t) {
+            })(D5 || (D5 = {})), (function(t) {
                 t.VS = "vs", t.VS_DARK = "vs-dark", t.HC_BLACK = "hc-black", t.HC_LIGHT = "hc-light"
             })(et || (et = {}))
         }
@@ -16205,14 +16205,14 @@ function _l(t) {
             return t
     }
 }
-var Mw, Tw, Lw, Ow, Ww, Fw, Nw, Uw, $w, Bw, Vw, jw, ln, Jn, Dh, va = g({
+var Mw, Tw, Lw, Ow, Ww, Fw, Nw, Uw, $w, Bw, Vw, jw, ln, Jn, xh, va = g({
     "out-build/vs/platform/theme/electron-main/themeMainService.js"() {
         "use strict";
         Vt(), K(), N(), z(), Ze(), Xe(), G(), Gi(), ht(), rW(), sW(), Mw = "#FFFFFF", Tw = "#1F1F1F", Lw = "#000000", Ow = "#FFFFFF", Ww = "theme", Fw = "themeBackground", Nw = "windowSplash", Uw = "windowSplashWorkspaceOverride", $w = "glassSplash", Bw = "glass.theme.settingsId", Vw = "glass.theme.detectColorScheme", jw = "Cursor Dark High Contrast", (function(t) {
             t.DETECT_COLOR_SCHEME = "window.autoDetectColorScheme", t.DETECT_HC = "window.autoDetectHighContrast", t.SYSTEM_COLOR_THEME = "window.systemColorTheme"
-        })(ln || (ln = {})), Jn = H("themeMainService"), Dh = class extends $ {
+        })(ln || (ln = {})), Jn = H("themeMainService"), xh = class extends $ {
             constructor(e, i, r) {
-                super(), this.stateService = e, this.configurationService = i, this.environmentMainService = r, this._onDidChangeColorScheme = this._register(new D), this.onDidChangeColorScheme = this._onDidChangeColorScheme.event, this.glassWindows = new WeakSet, this.windowVibrancyState = new WeakMap, this.windowGlassMaterialState = new WeakMap, Pe || this._register(this.configurationService.onDidChangeConfiguration(s => {
+                super(), this.stateService = e, this.configurationService = i, this.environmentMainService = r, this._onDidChangeColorScheme = this._register(new x), this.onDidChangeColorScheme = this._onDidChangeColorScheme.event, this.glassWindows = new WeakSet, this.windowVibrancyState = new WeakMap, this.windowGlassMaterialState = new WeakMap, Pe || this._register(this.configurationService.onDidChangeConfiguration(s => {
                     (s.affectsConfiguration(ln.SYSTEM_COLOR_THEME) || s.affectsConfiguration(ln.DETECT_COLOR_SCHEME)) && this.updateSystemColorTheme()
                 })), this.updateSystemColorTheme(), this._register(R.fromNodeEventEmitter(Et.nativeTheme, "updated")(() => this._onDidChangeColorScheme.fire(this.getColorScheme())))
             }
@@ -16551,7 +16551,7 @@ var Mw, Tw, Lw, Ow, Ww, Fw, Nw, Uw, $w, Bw, Vw, jw, ln, Jn, Dh, va = g({
                     }
                 })
             }
-        }, Dh = __decorate([__param(0, Wi), __param(1, Qe), __param(2, je)], Dh)
+        }, xh = __decorate([__param(0, Wi), __param(1, Qe), __param(2, je)], xh)
     }
 });
 
@@ -16559,7 +16559,7 @@ function Hw(t) {
     return !!t.workspaceUri
 }
 
-function D5(t) {
+function x5(t) {
     return !!t.folderUri
 }
 
@@ -16736,7 +16736,7 @@ function Mh(t, e, i, r) {
             const m = s.getWindowSplash(void 0)?.colorInfo.titleBarBackground ?? s.getBackgroundColor({
                     isGlass: i.isGlassWindow === !0
                 }),
-                w = xh.fromHex(m).isDarker() ? "#FFFFFF" : "#000000";
+                w = Dh.fromHex(m).isDarker() ? "#FFFFFF" : "#000000";
             u.titleBarOverlay = {
                 height: 29,
                 color: m,
@@ -16836,7 +16836,7 @@ var El, tt, q5, G5, Lh, yt = g({
                     return this._phase
                 }
                 constructor(e, i, r) {
-                    super(), this.logService = e, this.stateService = i, this.environmentMainService = r, this._onBeforeShutdown = this._register(new D), this.onBeforeShutdown = this._onBeforeShutdown.event, this._onWillShutdown = this._register(new D), this.onWillShutdown = this._onWillShutdown.event, this._onWillLoadWindow = this._register(new D), this.onWillLoadWindow = this._onWillLoadWindow.event, this._onBeforeCloseWindow = this._register(new D), this.onBeforeCloseWindow = this._onBeforeCloseWindow.event, this._quitRequested = !1, this._wasRestarted = !1, this._phase = 1, this.windowToCloseRequest = new Set, this.oneTimeListenerTokenGenerator = 0, this.windowCounter = 0, this.pendingQuitPromise = void 0, this.pendingQuitPromiseResolve = void 0, this.pendingWillShutdownPromise = void 0, this.mapWindowIdToPendingUnload = new Map, this.phaseWhen = new Map, this.relaunchHandler = void 0, this.resolveRestarted(), this.when(2).then(() => this.registerListeners())
+                    super(), this.logService = e, this.stateService = i, this.environmentMainService = r, this._onBeforeShutdown = this._register(new x), this.onBeforeShutdown = this._onBeforeShutdown.event, this._onWillShutdown = this._register(new x), this.onWillShutdown = this._onWillShutdown.event, this._onWillLoadWindow = this._register(new x), this.onWillLoadWindow = this._onWillLoadWindow.event, this._onBeforeCloseWindow = this._register(new x), this.onBeforeCloseWindow = this._onBeforeCloseWindow.event, this._quitRequested = !1, this._wasRestarted = !1, this._phase = 1, this.windowToCloseRequest = new Set, this.oneTimeListenerTokenGenerator = 0, this.windowCounter = 0, this.pendingQuitPromise = void 0, this.pendingQuitPromiseResolve = void 0, this.pendingWillShutdownPromise = void 0, this.mapWindowIdToPendingUnload = new Map, this.phaseWhen = new Map, this.relaunchHandler = void 0, this.resolveRestarted(), this.when(2).then(() => this.registerListeners())
                 }
                 resolveRestarted() {
                     this._wasRestarted = !!this.stateService.getItem(El.QUIT_AND_RESTART_KEY), this._wasRestarted && this.stateService.removeItem(El.QUIT_AND_RESTART_KEY)
@@ -17080,6 +17080,9 @@ var El, tt, q5, G5, Lh, yt = g({
                 cursorDiskKVSet(e, i) {
                     return this.database.cursorDiskKVSet(e, i)
                 }
+                cursorDiskKVSetIfAbsent(e, i) {
+                    return this.database.cursorDiskKVSetIfAbsent(e, i)
+                }
                 cursorDiskKVSetBinary(e, i) {
                     return this.database.cursorDiskKVSetBinary(e, i)
                 }
@@ -17088,6 +17091,9 @@ var El, tt, q5, G5, Lh, yt = g({
                 }
                 cursorDiskKVGetBinary(e) {
                     return this.database.cursorDiskKVGetBinary(e)
+                }
+                cursorDiskKVDelete(e, i) {
+                    return this.database.cursorDiskKVDelete(e, i)
                 }
                 cursorDiskKVClearPrefix(e) {
                     return this.database.cursorDiskKVClearPrefix(e)
@@ -17194,9 +17200,13 @@ var El, tt, q5, G5, Lh, yt = g({
                     return []
                 }
                 async cursorDiskKVSet(t, e) {}
+                async cursorDiskKVSetIfAbsent(t, e) {
+                    return !0
+                }
                 async cursorDiskKVSetBinary(t, e) {}
                 async cursorDiskKVSetBinaryBatch(t) {}
                 async cursorDiskKVGetBinary(t) {}
+                async cursorDiskKVDelete(t) {}
                 async cursorDiskKVClearPrefix(t) {}
                 async cursorDiskKVGetPrefix(t) {
                     return []
@@ -17345,7 +17355,7 @@ var e4, ss, Nh, ns = g({
                 return [...this.profilesObject.profiles, ...this.transientProfilesObject.profiles]
             }
             constructor(e, i, r, s) {
-                super(), this.environmentService = e, this.fileService = i, this.uriIdentityService = r, this.logService = s, this._onDidChangeProfiles = this._register(new D), this.onDidChangeProfiles = this._onDidChangeProfiles.event, this._onWillCreateProfile = this._register(new D), this.onWillCreateProfile = this._onWillCreateProfile.event, this._onWillRemoveProfile = this._register(new D), this.onWillRemoveProfile = this._onWillRemoveProfile.event, this._onDidResetWorkspaces = this._register(new D), this.onDidResetWorkspaces = this._onDidResetWorkspaces.event, this.profileCreationPromises = new Map, this.transientProfilesObject = {
+                super(), this.environmentService = e, this.fileService = i, this.uriIdentityService = r, this.logService = s, this._onDidChangeProfiles = this._register(new x), this.onDidChangeProfiles = this._onDidChangeProfiles.event, this._onWillCreateProfile = this._register(new x), this.onWillCreateProfile = this._onWillCreateProfile.event, this._onWillRemoveProfile = this._register(new x), this.onWillRemoveProfile = this._onWillRemoveProfile.event, this._onDidResetWorkspaces = this._register(new x), this.onDidResetWorkspaces = this._onDidResetWorkspaces.event, this.profileCreationPromises = new Map, this.transientProfilesObject = {
                     profiles: [],
                     emptyWindows: new Map
                 }, this.profilesHome = ge(this.environmentService.userRoamingDataHome, "profiles"), this.profilesCacheHome = ge(this.environmentService.cacheHome, "CachedProfilesData")
@@ -17692,7 +17702,7 @@ var Pl, Ts, dW, wa, t4, i4, r4, i1 = g({
             constructor(e = {
                 flushInterval: uR.DEFAULT_FLUSH_INTERVAL
             }) {
-                super(), this._onDidChangeValue = this._register(new Nd), this._onDidChangeTarget = this._register(new Nd), this.onDidChangeTarget = this._onDidChangeTarget.event, this._onWillSaveState = this._register(new D), this.onWillSaveState = this._onWillSaveState.event, this.runFlushWhenIdle = this._register(new Qs), this._workspaceKeyTargets = void 0, this._profileKeyTargets = void 0, this._applicationKeyTargets = void 0, this.onDiskShouldSaveCallbacks = [], this.flushWhenIdleScheduler = this._register(new Tr(() => this.doFlushWhenIdle(), e.flushInterval))
+                super(), this._onDidChangeValue = this._register(new Nd), this._onDidChangeTarget = this._register(new Nd), this.onDidChangeTarget = this._onDidChangeTarget.event, this._onWillSaveState = this._register(new x), this.onWillSaveState = this._onWillSaveState.event, this.runFlushWhenIdle = this._register(new Qs), this._workspaceKeyTargets = void 0, this._profileKeyTargets = void 0, this._applicationKeyTargets = void 0, this.onDiskShouldSaveCallbacks = [], this.flushWhenIdleScheduler = this._register(new Tr(() => this.doFlushWhenIdle(), e.flushInterval))
             }
             onDidChangeValue(e, i, r) {
                 return R.filter(this._onDidChangeValue.event, s => s.scope === e && (i === void 0 || s.key === i), r)
@@ -17841,6 +17851,9 @@ var Pl, Ts, dW, wa, t4, i4, r4, i1 = g({
             async cursorDiskKVSet(e, i) {
                 return this.getStorage(-1)?.cursorDiskKVSet(e, i)
             }
+            async cursorDiskKVSetIfAbsent(e, i) {
+                return this.getStorage(-1)?.cursorDiskKVSetIfAbsent(e, i) ?? !1
+            }
             async cursorDiskKVSetBinary(e, i) {
                 return this.getStorage(-1)?.cursorDiskKVSetBinary(e, i)
             }
@@ -17849,6 +17862,9 @@ var Pl, Ts, dW, wa, t4, i4, r4, i1 = g({
             }
             async cursorDiskKVGetBinary(e) {
                 return this.getStorage(-1)?.cursorDiskKVGetBinary(e)
+            }
+            async cursorDiskKVDelete(e, i) {
+                return this.getStorage(-1)?.cursorDiskKVDelete(e, i)
             }
             async cursorDiskKVClearPrefix(e) {
                 return this.getStorage(-1)?.cursorDiskKVClearPrefix(e)
@@ -18010,6 +18026,29 @@ var Il, n4, hW = g({
                         await this.runParams(r, "INSERT INTO cursorDiskKV (key, value) VALUES (?, ?) ON CONFLICT (key) DO UPDATE SET value = excluded.value WHERE value != excluded.value", [e, i])
                     } catch (s) {
                         throw this.logger.error(`[storage ${this.name}] cursorDiskKVSet(${e}): ${s}`), s
+                    }
+                }
+                async cursorDiskKVSetIfAbsent(e, i) {
+                    const r = await this.whenConnected;
+                    this.trackCursorKVKey(e);
+                    try {
+                        return await new Promise((s, n) => {
+                            r.db.run("INSERT INTO cursorDiskKV (key, value) SELECT ?, ? WHERE NOT EXISTS (SELECT 1 FROM cursorDiskKV WHERE key = ?)", [e, i, e], function(o) {
+                                if (o) return n(o);
+                                s(this.changes === 1)
+                            })
+                        })
+                    } catch (s) {
+                        throw this.logger.error(`[storage ${this.name}] cursorDiskKVSetIfAbsent(${e}): ${s}`), s
+                    }
+                }
+                async cursorDiskKVDelete(e, i) {
+                    const r = await this.whenConnected;
+                    this.trackCursorKVKey(e);
+                    try {
+                        i !== void 0 ? await this.runParams(r, "DELETE FROM cursorDiskKV WHERE key = ? AND value = ?", [e, i]) : await this.runParams(r, "DELETE FROM cursorDiskKV WHERE key = ?", [e])
+                    } catch (s) {
+                        throw this.logger.error(`[storage ${this.name}] cursorDiskKVDelete(${e}): ${s}`), s
                     }
                 }
                 async cursorDiskKVSetBinary(e, i) {
@@ -18453,10 +18492,10 @@ var Il, n4, hW = g({
             }
         }
     }),
-    mi, fW, r1, s1, o4, n1, o1, a1, Uh, a4, xl, c1, $h, c4, l4, pW, vi = g({
+    mi, fW, r1, s1, o4, n1, o1, a1, Uh, a4, Dl, c1, $h, c4, l4, pW, vi = g({
         "out-build/vs/platform/telemetry/common/telemetry.js"() {
             "use strict";
-            G(), mi = H("telemetryService"), fW = H("customEndpointTelemetryService"), r1 = "telemetry.currentSessionDate", s1 = "telemetry.firstSessionDate", o4 = "telemetry.lastSessionDate", n1 = "telemetry.machineId", o1 = "telemetry.macMachineId", a1 = "telemetry.sqmId", Uh = "telemetry.devDeviceId", a4 = "crashReporting", xl = "crashReporting.enabled", c1 = "telemetry.enableCrashReporter", $h = "telemetry.enableTelemetry", (function(t) {
+            G(), mi = H("telemetryService"), fW = H("customEndpointTelemetryService"), r1 = "telemetry.currentSessionDate", s1 = "telemetry.firstSessionDate", o4 = "telemetry.lastSessionDate", n1 = "telemetry.machineId", o1 = "telemetry.macMachineId", a1 = "telemetry.sqmId", Uh = "telemetry.devDeviceId", a4 = "crashReporting", Dl = "crashReporting.enabled", c1 = "telemetry.enableCrashReporter", $h = "telemetry.enableTelemetry", (function(t) {
                 t[t.NONE = 0] = "NONE", t[t.CRASH = 1] = "CRASH", t[t.ERROR = 2] = "ERROR", t[t.USAGE = 3] = "USAGE"
             })(c4 || (c4 = {})), (function(t) {
                 t.OFF = "off", t.ON = "all"
@@ -18518,7 +18557,7 @@ var Vh, l1, S4, _4, b4, u1, PW = g({
                     return this._storage
                 }
                 constructor(e, i) {
-                    super(), this.logService = e, this.fileService = i, this._onDidChangeStorage = this._register(new D), this.onDidChangeStorage = this._onDidChangeStorage.event, this._onDidCloseStorage = this._register(new D), this.onDidCloseStorage = this._onDidCloseStorage.event, this._storage = this._register(new kl(new Jw, {
+                    super(), this.logService = e, this.fileService = i, this._onDidChangeStorage = this._register(new x), this.onDidChangeStorage = this._onDidChangeStorage.event, this._onDidCloseStorage = this._register(new x), this.onDidCloseStorage = this._onDidCloseStorage.event, this._storage = this._register(new kl(new Jw, {
                         hint: is.STORAGE_IN_MEMORY
                     })), this.initializePromise = void 0, this.whenInitPromise = new Is, this.whenInit = this.whenInitPromise.p, this.state = Ei.None, this.initFailed = !1
                 }
@@ -18534,6 +18573,9 @@ var Vh, l1, S4, _4, b4, u1, PW = g({
                 cursorDiskKVSet(e, i) {
                     return this._storage.cursorDiskKVSet(e, i)
                 }
+                cursorDiskKVSetIfAbsent(e, i) {
+                    return this._storage.cursorDiskKVSetIfAbsent(e, i)
+                }
                 cursorDiskKVSetBinary(e, i) {
                     return this._storage.cursorDiskKVSetBinary(e, i)
                 }
@@ -18542,6 +18584,9 @@ var Vh, l1, S4, _4, b4, u1, PW = g({
                 }
                 cursorDiskKVGetBinary(e) {
                     return this._storage.cursorDiskKVGetBinary(e)
+                }
+                cursorDiskKVDelete(e, i) {
+                    return this._storage.cursorDiskKVDelete(e, i)
                 }
                 cursorDiskKVClearPrefix(e) {
                     return this._storage.cursorDiskKVClearPrefix(e)
@@ -18607,7 +18652,7 @@ var Vh, l1, S4, _4, b4, u1, PW = g({
                         logError: e => this.logService.error(e),
                         logSentryException: (e, i) => {
                             try {
-                                if (xn(e, {
+                                if (Dn(e, {
                                         captureContext: {
                                             tags: i.tags,
                                             extra: i.extra,
@@ -18872,7 +18917,7 @@ var Vh, l1, S4, _4, b4, u1, PW = g({
             }
         }
     }),
-    Hh, ya, qh, Dl, h1, IW = g({
+    Hh, ya, qh, xl, h1, IW = g({
         "out-build/vs/platform/userDataProfile/node/userDataProfile.js"() {
             "use strict";
             ne(), _i(), ot(), q(), Gi(), rs(), ns(), We(), C4(), qh = Hh = class extends Nh {
@@ -18893,7 +18938,7 @@ var Vh, l1, S4, _4, b4, u1, PW = g({
                         scheme: this.profilesHome.scheme
                     }), "extensions.json")
                 }
-            }, qh = Hh = __decorate([__param(0, Aw), __param(1, Fi), __param(2, Or), __param(3, bt), __param(4, j)], qh), Dl = ya = class extends qh {
+            }, qh = Hh = __decorate([__param(0, Aw), __param(1, Fi), __param(2, Or), __param(3, bt), __param(4, j)], qh), xl = ya = class extends qh {
                 constructor(e, i, r, s, n) {
                     super(e, i, r, s, n), this.stateService = e
                 }
@@ -18906,7 +18951,7 @@ var Vh, l1, S4, _4, b4, u1, PW = g({
                 saveStoredProfileAssociations(e) {
                     e.emptyWindows || e.workspaces ? this.stateService.setItem(ya.PROFILE_ASSOCIATIONS_KEY, e) : this.stateService.removeItem(ya.PROFILE_ASSOCIATIONS_KEY)
                 }
-            }, Dl = ya = __decorate([__param(0, Wi), __param(1, Fi), __param(2, Or), __param(3, bt), __param(4, j)], Dl), h1 = class extends Dl {
+            }, xl = ya = __decorate([__param(0, Wi), __param(1, Fi), __param(2, Or), __param(3, bt), __param(4, j)], xl), h1 = class extends xl {
                 constructor(e, i, r, s) {
                     super(new d1(0, i, s, r), e, i, r, s)
                 }
@@ -18919,7 +18964,7 @@ var Vh, l1, S4, _4, b4, u1, PW = g({
     os, Gh, eo = g({
         "out-build/vs/platform/userDataProfile/electron-main/userDataProfile.js"() {
             "use strict";
-            _i(), ot(), G(), q(), rs(), ns(), IW(), Gi(), os = ss, Gh = class extends Dl {
+            _i(), ot(), G(), q(), rs(), ns(), IW(), Gi(), os = ss, Gh = class extends xl {
                 constructor(e, i, r, s, n) {
                     super(e, i, r, s, n)
                 }
@@ -18978,7 +19023,7 @@ function _r(t) {
     }), e
 }
 
-function xW(t) {
+function DW(t) {
     if (!t || typeof t != "object") return t;
     const e = [t];
     for (; e.length > 0;) {
@@ -18993,7 +19038,7 @@ function xW(t) {
     return t
 }
 
-function DW(t, e) {
+function xW(t, e) {
     return f1(t, e, new Set)
 }
 
@@ -19092,14 +19137,14 @@ function I4(t, e) {
         buttonIndeces: s
     }
 }
-var AW, x4, MW, D4, R4 = g({
+var AW, D4, MW, x4, R4 = g({
     "out-build/vs/platform/dialogs/common/dialogs.js"() {
         "use strict";
         wt(), zh(), Ee(), G(), rn(), z(), br(), AW = H("dialogService"), (function(t) {
             t[t.Confirmation = 1] = "Confirmation", t[t.Prompt = 2] = "Prompt", t[t.Input = 3] = "Input"
-        })(x4 || (x4 = {})), MW = H("fileDialogService"), (function(t) {
+        })(D4 || (D4 = {})), MW = H("fileDialogService"), (function(t) {
             t[t.SAVE = 0] = "SAVE", t[t.DONT_SAVE = 1] = "DONT_SAVE", t[t.CANCEL = 2] = "CANCEL"
-        })(D4 || (D4 = {}))
+        })(x4 || (x4 = {}))
     }
 });
 import to from "electron";
@@ -19229,7 +19274,7 @@ var Wr, Kh, Ls = g({
             "use strict";
             ne(), K(), N(), _i(), ot(), G(), yt(), q(), i1(), PW(), ns(), eo(), rs(), Le(), Ls(), Ee(), io = H("storageMainService"), Xh = class extends $ {
                 constructor(e, i, r, s, n, o, a) {
-                    super(), this.logService = e, this.environmentService = i, this.userDataProfilesService = r, this.lifecycleMainService = s, this.fileService = n, this.uriIdentityService = o, this.dialogMainService = a, this.shutdownReason = void 0, this.storageErrorDialogShown = !1, this._onDidChangeProfileStorage = this._register(new D), this.onDidChangeProfileStorage = this._onDidChangeProfileStorage.event, this.mapProfileToStorage = new Map, this.mapWorkspaceToStorage = new Map, this.applicationStorage = this._register(this.createApplicationStorage()), this.registerListeners()
+                    super(), this.logService = e, this.environmentService = i, this.userDataProfilesService = r, this.lifecycleMainService = s, this.fileService = n, this.uriIdentityService = o, this.dialogMainService = a, this.shutdownReason = void 0, this.storageErrorDialogShown = !1, this._onDidChangeProfileStorage = this._register(new x), this.onDidChangeProfileStorage = this._onDidChangeProfileStorage.event, this.mapProfileToStorage = new Map, this.mapWorkspaceToStorage = new Map, this.applicationStorage = this._register(this.createApplicationStorage()), this.registerListeners()
                 }
                 getStorageOptions() {
                     return {
@@ -19825,7 +19870,7 @@ var Zh, ef, VW = g({
             "use strict";
             K(), N(), M4 = class {
                 constructor() {
-                    this._onCloseEmitter = new D, this._onReloadEmitter = new D, this._onTerminateEmitter = new D, this._onAttachEmitter = new D
+                    this._onCloseEmitter = new x, this._onReloadEmitter = new x, this._onTerminateEmitter = new x, this._onAttachEmitter = new x
                 }
                 static {
                     this.ChannelName = "extensionhostdebugservice"
@@ -21118,7 +21163,7 @@ function nf(t, e, i = Ll.DEFAULT) {
         return B ? d(se) : a(se), v(), !0
     }
 
-    function x() {
+    function D() {
         switch (r.getToken()) {
             case 11: {
                 let B = 0;
@@ -21182,7 +21227,7 @@ function nf(t, e, i = Ll.DEFAULT) {
             case 10:
                 return E(!0);
             default:
-                return x()
+                return D()
         }
     }
     return v(), r.getToken() === 17 ? i.allowEmptyContent ? !0 : (b(4, [], []), !1) : X() ? (r.getToken() !== 17 && b(9, [], []), !0) : (b(4, [], []), !1)
@@ -21282,29 +21327,29 @@ function JW(t, e, i) {
     }
     const y = [];
 
-    function v(E, x, k) {
-        !p && x < a && k > o && t.substring(x, k) !== E && y.push({
-            offset: x,
-            length: k - x,
+    function v(E, D, k) {
+        !p && D < a && k > o && t.substring(D, k) !== E && y.push({
+            offset: D,
+            length: k - D,
             content: E
         })
     }
     let b = w();
     if (b !== 17) {
         const E = f.getTokenOffset() + n,
-            x = E1(d, r);
-        v(x, n, E)
+            D = E1(d, r);
+        v(D, n, E)
     }
     for (; b !== 17;) {
         let E = f.getTokenOffset() + f.getTokenLength() + n,
-            x = w(),
+            D = w(),
             k = "";
-        for (; !l && (x === 12 || x === 13);) {
+        for (; !l && (D === 12 || D === 13);) {
             const T = f.getTokenOffset() + n;
-            v(" ", E, T), E = f.getTokenOffset() + f.getTokenLength() + n, k = x === 12 ? m() : "", x = w()
+            v(" ", E, T), E = f.getTokenOffset() + f.getTokenLength() + n, k = D === 12 ? m() : "", D = w()
         }
-        if (x === 2) b !== 1 && (u--, k = m());
-        else if (x === 4) b !== 3 && (u--, k = m());
+        if (D === 2) b !== 1 && (u--, k = m());
+        else if (D === 4) b !== 3 && (u--, k = m());
         else {
             switch (b) {
                 case 3:
@@ -21322,7 +21367,7 @@ function JW(t, e, i) {
                     k = " ";
                     break;
                 case 10:
-                    if (x === 6) {
+                    if (D === 6) {
                         k = "";
                         break
                     }
@@ -21332,16 +21377,16 @@ function JW(t, e, i) {
                 case 11:
                 case 2:
                 case 4:
-                    x === 12 || x === 13 ? k = " " : x !== 5 && x !== 17 && (p = !0);
+                    D === 12 || D === 13 ? k = " " : D !== 5 && D !== 17 && (p = !0);
                     break;
                 case 16:
                     p = !0;
                     break
             }
-            l && (x === 12 || x === 13) && (k = m())
+            l && (D === 12 || D === 13) && (k = m())
         }
         const M = f.getTokenOffset() + n;
-        v(k, E, M), b = x
+        v(k, E, M), b = D
     }
     return y
 }
@@ -21713,14 +21758,14 @@ var P1, I1 = g({
         ji(), Ws(), G4(), rn(), Le(), Ce(), z(), wt(), ne(), G(), Ol(), gi(), P1 = H("workspacesService")
     }
 });
-import * as x1 from "fs";
+import * as D1 from "fs";
 import hF from "electron";
 var hn, cf, no = g({
     "out-build/vs/platform/workspaces/electron-main/workspacesManagementMainService.js"() {
         "use strict";
         K(), Ws(), N(), Le(), Ce(), wt(), qt(), Ee(), Ml(), Ls(), Xe(), G(), q(), eo(), q4(), gi(), I1(), v1(), hn = H("workspacesManagementMainService"), cf = class extends $ {
             constructor(e, i, r, s, n) {
-                super(), this.environmentMainService = e, this.logService = i, this.userDataProfilesMainService = r, this.backupMainService = s, this.dialogMainService = n, this._onDidDeleteUntitledWorkspace = this._register(new D), this.onDidDeleteUntitledWorkspace = this._onDidDeleteUntitledWorkspace.event, this._onDidEnterWorkspace = this._register(new D), this.onDidEnterWorkspace = this._onDidEnterWorkspace.event, this.untitledWorkspaces = [], this.untitledWorkspacesHome = this.environmentMainService.untitledWorkspacesHome
+                super(), this.environmentMainService = e, this.logService = i, this.userDataProfilesMainService = r, this.backupMainService = s, this.dialogMainService = n, this._onDidDeleteUntitledWorkspace = this._register(new x), this.onDidDeleteUntitledWorkspace = this._onDidDeleteUntitledWorkspace.event, this._onDidEnterWorkspace = this._register(new x), this.onDidEnterWorkspace = this._onDidEnterWorkspace.event, this.untitledWorkspaces = [], this.untitledWorkspacesHome = this.environmentMainService.untitledWorkspacesHome
             }
             async initialize() {
                 this.untitledWorkspaces = [];
@@ -21741,7 +21786,7 @@ var hn, cf, no = g({
                 }
             }
             resolveLocalWorkspace(e) {
-                return this.doResolveLocalWorkspace(e, i => x1.promises.readFile(i, "utf8"))
+                return this.doResolveLocalWorkspace(e, i => D1.promises.readFile(i, "utf8"))
             }
             doResolveLocalWorkspace(e, i) {
                 if (this.isWorkspacePath(e) && e.scheme === O.file) try {
@@ -21780,7 +21825,7 @@ var hn, cf, no = g({
                     workspace: r,
                     storedWorkspace: s
                 } = this.newUntitledWorkspace(e, i), n = r.configPath.fsPath;
-                return await x1.promises.mkdir(mt(n), {
+                return await D1.promises.mkdir(mt(n), {
                     recursive: !0
                 }), await ie.writeFile(n, JSON.stringify(s, null, "	")), this.untitledWorkspaces.push({
                     workspace: r,
@@ -21807,7 +21852,7 @@ var hn, cf, no = g({
             async getSingleFolderWorkspaceIdentifier(e) {
                 if (e.scheme !== O.file) return Tl(e);
                 try {
-                    const i = await x1.promises.stat(e.fsPath);
+                    const i = await D1.promises.stat(e.fsPath);
                     return Tl(e, i)
                 } catch {
                     return
@@ -21923,7 +21968,7 @@ var Pa, fn, Wl, Ia = g({
                 return Array.from(Pa.all.values())
             }
             constructor(e, i, r) {
-                super(), this.logService = e, this.telemetryService = i, this.lifecycleMainService = r, this.id = String(++Pa.ID_COUNTER), this._onStdout = this._register(new D), this.onStdout = this._onStdout.event, this._onStderr = this._register(new D), this.onStderr = this._onStderr.event, this._onMessage = this._register(new D), this.onMessage = this._onMessage.event, this._onSpawn = this._register(new D), this.onSpawn = this._onSpawn.event, this._onExit = this._register(new D), this.onExit = this._onExit.event, this._onCrash = this._register(new D), this.onCrash = this._onCrash.event, this.process = void 0, this.processPid = void 0, this.configuration = void 0
+                super(), this.logService = e, this.telemetryService = i, this.lifecycleMainService = r, this.id = String(++Pa.ID_COUNTER), this._onStdout = this._register(new x), this.onStdout = this._onStdout.event, this._onStderr = this._register(new x), this.onStderr = this._onStderr.event, this._onMessage = this._register(new x), this.onMessage = this._onMessage.event, this._onSpawn = this._register(new x), this.onSpawn = this._onSpawn.event, this._onExit = this._register(new x), this.onExit = this._onExit.event, this._onCrash = this._register(new x), this.onCrash = this._onCrash.event, this.process = void 0, this.processPid = void 0, this.configuration = void 0
             }
             log(e, i) {
                 let r;
@@ -21950,7 +21995,7 @@ var Pa, fn, Wl, Ia = g({
                 if (!this.validateCanStart()) return !1;
                 this.configuration = e;
                 const i = `${this.configuration.type}-${this.id}`,
-                    r = xt.asFileUri("bootstrap-fork.js").fsPath,
+                    r = Dt.asFileUri("bootstrap-fork.js").fsPath,
                     s = this.configuration.args ?? [],
                     n = this.configuration.execArgv ?? [],
                     o = this.configuration.allowLoadingUnsignedLibraries,
@@ -22299,7 +22344,7 @@ import * as rP from "os";
 function PF({
     useAlternateBitness: t = !1
 } = {}) {
-    return t ? Nl === 0 ? process.env["ProgramFiles(x86)"] || null : xa === 0 && process.env.ProgramW6432 || null : process.env.ProgramFiles || null
+    return t ? Nl === 0 ? process.env["ProgramFiles(x86)"] || null : Da === 0 && process.env.ProgramW6432 || null : process.env.ProgramFiles || null
 }
 async function ff({
     useAlternateBitness: t = !1,
@@ -22319,10 +22364,10 @@ async function ff({
             const d = c.indexOf("-");
             if (d < 0) continue;
             const f = c.substring(0, d);
-            if (!D1.test(f) || c.substring(d + 1) !== "preview") continue;
+            if (!x1.test(f) || c.substring(d + 1) !== "preview") continue;
             l = parseInt(f, 10)
         } else {
-            if (!D1.test(c)) continue;
+            if (!x1.test(c)) continue;
             l = parseInt(c, 10)
         }
         if (l <= s) continue;
@@ -22332,7 +22377,7 @@ async function ff({
     if (!n) return null;
     const o = i.includes("x86") ? " (x86)" : "",
         a = e ? " Preview" : "";
-    return new Da(n, `PowerShell${a}${o}`, !0)
+    return new xa(n, `PowerShell${a}${o}`, !0)
 }
 async function sP({
     findPreview: t
@@ -22353,24 +22398,24 @@ async function sP({
     for (const s of await ie.readdir(e))
         if (i.test(s)) {
             const n = U(e, s, "pwsh.exe");
-            return new Da(n, r)
+            return new xa(n, r)
         } return null
 }
 
 function IF() {
     const t = U(rP.homedir(), ".dotnet", "tools", "pwsh.exe");
-    return new Da(t, ".NET Core PowerShell Global Tool")
-}
-
-function xF() {
-    const t = U(rP.homedir(), "scoop", "apps"),
-        e = U(t, "pwsh", "current", "pwsh.exe");
-    return new Da(e, "PowerShell (Scoop)")
+    return new xa(t, ".NET Core PowerShell Global Tool")
 }
 
 function DF() {
-    const t = U(process.env.windir, Nl === 1 && xa !== 1 ? "SysNative" : "System32", "WindowsPowerShell", "v1.0", "powershell.exe");
-    return new Da(t, "Windows PowerShell", !0)
+    const t = U(rP.homedir(), "scoop", "apps"),
+        e = U(t, "pwsh", "current", "pwsh.exe");
+    return new xa(e, "PowerShell (Scoop)")
+}
+
+function xF() {
+    const t = U(process.env.windir, Nl === 1 && Da !== 1 ? "SysNative" : "System32", "WindowsPowerShell", "v1.0", "powershell.exe");
+    return new xa(t, "Windows PowerShell", !0)
 }
 async function* RF() {
     let t = await ff();
@@ -22383,7 +22428,7 @@ async function* RF() {
     }), t && (yield t), t = await ff({
         useAlternateBitness: !0,
         findPreview: !0
-    }), t && (yield t), t = await xF(), t && (yield t), t = DF(), t && (yield t)
+    }), t && (yield t), t = await DF(), t && (yield t), t = xF(), t && (yield t)
 }
 async function* nP() {
     for await (const t of RF()) await t.exists() && (yield t)
@@ -22392,10 +22437,10 @@ async function AF() {
     for await (const t of nP()) return t;
     return null
 }
-var D1, oP, aP, cP, Nl, xa, Da, lP = g({
+var x1, oP, aP, cP, Nl, Da, xa, lP = g({
     "out-build/vs/base/node/powershell.js"() {
         "use strict";
-        switch (Ce(), qt(), D1 = /^\d+$/, oP = /^Microsoft.PowerShell_.*/, aP = /^Microsoft.PowerShellPreview_.*/, (function(t) {
+        switch (Ce(), qt(), x1 = /^\d+$/, oP = /^Microsoft.PowerShell_.*/, aP = /^Microsoft.PowerShellPreview_.*/, (function(t) {
                 t[t.x64 = 0] = "x64", t[t.x86 = 1] = "x86", t[t.ARM = 2] = "ARM"
             })(cP || (cP = {})), process.arch) {
             case "ia32":
@@ -22409,7 +22454,7 @@ var D1, oP, aP, cP, Nl, xa, Da, lP = g({
                 Nl = 0;
                 break
         }
-        process.env.PROCESSOR_ARCHITEW6432 ? xa = process.env.PROCESSOR_ARCHITEW6432 === "ARM64" ? 2 : 0 : process.env.PROCESSOR_ARCHITECTURE === "ARM64" ? xa = 2 : process.env.PROCESSOR_ARCHITECTURE === "X86" ? xa = 1 : xa = 0, Da = class {
+        process.env.PROCESSOR_ARCHITEW6432 ? Da = process.env.PROCESSOR_ARCHITEW6432 === "ARM64" ? 2 : 0 : process.env.PROCESSOR_ARCHITECTURE === "ARM64" ? Da = 2 : process.env.PROCESSOR_ARCHITECTURE === "X86" ? Da = 1 : Da = 0, xa = class {
             constructor(t, e, i) {
                 this.exePath = t, this.displayName = e, this.knownToExist = i
             }
@@ -22542,7 +22587,7 @@ async function vf(t, e, i, r) {
         try {
             s(await $F(e, o.token))
         } catch (u) {
-            !Dd(u) && !o.token.isCancellationRequested ? n(new Error(S(2244, null, pr(u)))) : s({})
+            !xd(u) && !o.token.isCancellationRequested ? n(new Error(S(2244, null, pr(u)))) : s({})
         } finally {
             clearTimeout(l), o.dispose()
         }
@@ -22564,7 +22609,7 @@ async function $F(t, e) {
     t.trace("getUnixShellEnvironment#env", o);
     const a = await hP(er, o);
     return t.trace("getUnixShellEnvironment#shell", a), new Promise((c, l) => {
-        if (e.isCancellationRequested) return l(new xi);
+        if (e.isCancellationRequested) return l(new Di);
         const u = ct(a);
         let d, f;
         const p = "";
@@ -22574,7 +22619,7 @@ async function $F(t, e) {
             stdio: ["ignore", "pipe", "pipe"],
             env: o
         });
-        e.onCancellationRequested(() => (m.kill(), l(new xi))), m.on("error", v => {
+        e.onCancellationRequested(() => (m.kill(), l(new Di))), m.on("error", v => {
             t.error("getUnixShellEnvironment#errorChildProcess", pr(v)), l(v)
         });
         const w = [];
@@ -22583,8 +22628,8 @@ async function $F(t, e) {
         m.stderr.on("data", v => y.push(v)), m.on("close", (v, b) => {
             const E = Buffer.concat(w).toString("utf8");
             t.trace("getUnixShellEnvironment#raw", E);
-            const x = Buffer.concat(y).toString("utf8");
-            if (x.trim() && t.trace("getUnixShellEnvironment#stderr", x), v || b) return l(new Error(S(2245, null, v, b)));
+            const D = Buffer.concat(y).toString("utf8");
+            if (D.trim() && t.trace("getUnixShellEnvironment#stderr", D), v || b) return l(new Error(S(2245, null, v, b)));
             const k = n.exec(E),
                 M = k ? k[1] : "{}";
             try {
@@ -22926,7 +22971,7 @@ var O1, CP = g({
         }
     }),
     PP = {};
-DR(PP, {
+xR(PP, {
     rgDiskPath: () => IP
 });
 import {
@@ -22942,8 +22987,8 @@ import {
     spawn as nN
 } from "child_process";
 import {
-    relative as xP,
-    join as DP
+    relative as DP,
+    join as xP
 } from "path";
 import {
     createHash as RP
@@ -22956,7 +23001,7 @@ var co, bf, Ra = g({
         "use strict";
         Le(), Yo(), _i(), G(), q(), K(), N(), ot(), ne(), co = H("ICSSDevelopmentService"), bf = class extends $ {
             constructor(e, i, r) {
-                super(), this.envService = e, this.logService = i, this.fileService = r, this._watchedFiles = new Set, this._onDidChangeCssModules = this._register(new D), this.onDidChangeCssModules = this._onDidChangeCssModules.event, this.isEnabled && (this._register(this.fileService.onDidFilesChange(this.onDidFilesChange.bind(this))), this.initializeWatcher())
+                super(), this.envService = e, this.logService = i, this.fileService = r, this._watchedFiles = new Set, this._onDidChangeCssModules = this._register(new x), this.onDidChangeCssModules = this._onDidChangeCssModules.event, this.isEnabled && (this._register(this.fileService.onDidFilesChange(this.onDidFilesChange.bind(this))), this.initializeWatcher())
             }
             get isEnabled() {
                 return !this.envService.isBuilt
@@ -22972,7 +23017,7 @@ var co, bf, Ra = g({
                 return await new Promise(i => {
                     const r = Mn.create(),
                         s = [],
-                        n = xt.asFileUri("").fsPath,
+                        n = Dt.asFileUri("").fsPath,
                         o = nN(e, ["-g", "**/*.css", "-g", "!**/fixtures/**", "--files", "--no-ignore", n], {});
                     o.stdout.on("data", a => {
                         s.push(a)
@@ -22981,11 +23026,11 @@ var co, bf, Ra = g({
                     }), o.on("close", async () => {
                         const a = Buffer.concat(s).toString("utf8"),
                             c = a.split(`
-`).filter(Boolean).map(u => xP(n, u).replace(/\\/g, "/")).filter(Boolean).sort(),
+`).filter(Boolean).map(u => DP(n, u).replace(/\\/g, "/")).filter(Boolean).sort(),
                             l = new Map;
                         c.some(u => u.indexOf("vs/") !== 0) && this.logService.error(`[CSS_DEV] Detected invalid paths in css modules, raw output: ${a}`);
                         for (const u of c) try {
-                            const d = DP(n, u),
+                            const d = xP(n, u),
                                 f = await AP.readFile(d),
                                 p = RP("sha256").update(f).digest("hex");
                             l.set(u, p)
@@ -22999,16 +23044,16 @@ var co, bf, Ra = g({
             async initializeWatcher() {
                 const e = await this.getCssModules();
                 for (const [i] of e) {
-                    const r = A.file(DP(xt.asFileUri("").fsPath, i));
+                    const r = A.file(xP(Dt.asFileUri("").fsPath, i));
                     this._watchedFiles.add(i), this._register(this.fileService.watch(r))
                 }
             }
             async onDidFilesChange(e) {
                 if (!this.isEnabled) return;
-                const i = xt.asFileUri("").fsPath,
+                const i = Dt.asFileUri("").fsPath,
                     r = [];
                 for (const s of e.rawUpdated) {
-                    const n = xP(i, s.fsPath).replace(/\\/g, "/");
+                    const n = DP(i, s.fsPath).replace(/\\/g, "/");
                     if (this._watchedFiles.has(n)) {
                         let o;
                         try {
@@ -23314,9 +23359,9 @@ import {
     promisify as Ta
 } from "util";
 import {
-    filter as xN,
+    filter as DN,
     fromEvent as $P,
-    map as DN,
+    map as xN,
     NEVER as RN,
     Observable as AN,
     share as MN,
@@ -23329,7 +23374,7 @@ var ls, zl, uo = g({
             "use strict";
             rt(), vt(), ca(), Bn(), $e(), K(), ji(), N(), Le(), Ce(), z(), ne(), A1(), $l(), qt(), CP(), Ee(), Bl(), Ze(), Ra(), Ls(), Xe(), G(), yt(), q(), lt(), MP(), gN(), Us(), va(), bl(), ht(), gi(), no(), A4(), ls = H("nativeHostMainService"), zl = class extends $ {
                 constructor(e, i, r, s, n, o, a, c, l, u, d, f, p, m) {
-                    super(), this.windowsMainService = e, this.auxiliaryWindowsMainService = i, this.dialogMainService = r, this.lifecycleMainService = s, this.environmentMainService = n, this.logService = o, this.productService = a, this.themeMainService = c, this.workspacesManagementMainService = l, this.configurationService = u, this.requestService = d, this.proxyAuthService = f, this.instantiationService = p, this.cssDevelopmentService = m, this._onDidChangeCssModules = this._register(new D), this.onDidChangeCssModules = this._onDidChangeCssModules.event, this._onDidChangePassword = this._register(new D), this.onDidChangePassword = this._onDidChangePassword.event, this.heicConversionFolderPath = U(UP(), "cursor-heic-conversion"), this.heicCleanupDone = !1, m.isEnabled && this._register(m.onDidChangeCssModules(w => {
+                    super(), this.windowsMainService = e, this.auxiliaryWindowsMainService = i, this.dialogMainService = r, this.lifecycleMainService = s, this.environmentMainService = n, this.logService = o, this.productService = a, this.themeMainService = c, this.workspacesManagementMainService = l, this.configurationService = u, this.requestService = d, this.proxyAuthService = f, this.instantiationService = p, this.cssDevelopmentService = m, this._onDidChangeCssModules = this._register(new x), this.onDidChangeCssModules = this._onDidChangeCssModules.event, this._onDidChangePassword = this._register(new x), this.onDidChangePassword = this._onDidChangePassword.event, this.heicConversionFolderPath = U(UP(), "cursor-heic-conversion"), this.heicCleanupDone = !1, m.isEnabled && this._register(m.onDidChangeCssModules(w => {
                         this._onDidChangeCssModules.fire(Object.fromEntries(w))
                     }));
                     {
@@ -23360,10 +23405,10 @@ var ls, zl, uo = g({
                             y = w.pipe(LN(() => {
                                 const v = Hl.getAllWindows().find(b => !b.isDestroyed());
                                 return v ? new AN(b => {
-                                    const x = $P(v, "query-session-end").pipe(xN(k => k.reasons.includes("shutdown") || k.reasons.includes("logoff"))).subscribe(b);
-                                    return x.add($P(v, "closed").subscribe(() => w.next())), x
+                                    const D = $P(v, "query-session-end").pipe(DN(k => k.reasons.includes("shutdown") || k.reasons.includes("logoff"))).subscribe(b);
+                                    return D.add($P(v, "closed").subscribe(() => w.next())), D
                                 }) : RN
-                            }), DN(() => {}), ON(1), MN());
+                            }), xN(() => {}), ON(1), MN());
                         this.onWillShutdownOS = R.any(R.fromNodeEventEmitter(NP, "shutdown"), R.fromRxJS(y)), Ma.on("browser-window-created", () => w.next()), w.next(), this.onDidChangeColorScheme = this.themeMainService.onDidChangeColorScheme, this.onDidChangeDisplay = R.debounce(R.any(R.filter(R.fromNodeEventEmitter(Gl, "display-metrics-changed", (v, b, E) => E), v => !(Array.isArray(v) && v.length === 1 && v[0] === "workArea")), R.fromNodeEventEmitter(Gl, "display-added"), R.fromNodeEventEmitter(Gl, "display-removed")), () => {}, 100)
                     }
                 }
@@ -23716,7 +23761,7 @@ var ls, zl, uo = g({
                             message: S(2171, null, this.productService.nameShort),
                             buttons: [S(2172, null), S(2173, null)]
                         });
-                        if (n === 1) throw new xi;
+                        if (n === 1) throw new Di;
                         try {
                             const o = `osascript -e "do shell script \\"mkdir -p /usr/local/bin && ln -sf '${r}' '${i}'\\" with administrator privileges"`;
                             await Ta(jl)(o)
@@ -23741,7 +23786,7 @@ var ls, zl, uo = g({
                                     message: S(2175, null, this.productService.nameShort),
                                     buttons: [S(2176, null), S(2177, null)]
                                 });
-                                if (s === 1) throw new xi;
+                                if (s === 1) throw new Di;
                                 try {
                                     const n = `osascript -e "do shell script \\"rm '${i}'\\" with administrator privileges"`;
                                     await Ta(jl)(n)
@@ -24231,10 +24276,10 @@ var ls, zl, uo = g({
             }, __decorate([me], zl.prototype, "cliPath", null), zl = __decorate([__param(0, ut), __param(1, ao), __param(2, Wr), __param(3, tt), __param(4, je), __param(5, j), __param(6, ze), __param(7, Jn), __param(8, hn), __param(9, Qe), __param(10, Ns), __param(11, Jh), __param(12, Xr), __param(13, co)], zl)
         }
     }),
-    U1, xf, WN = g({
+    U1, Df, WN = g({
         "out-build/vs/platform/extensions/electron-main/extensionHostStarter.js"() {
             "use strict";
-            ce(), $e(), K(), N(), yt(), q(), vi(), Ia(), ht(), Ze(), jF(), uo(), xf = class extends $ {
+            ce(), $e(), K(), N(), yt(), q(), vi(), Ia(), ht(), Ze(), jF(), uo(), Df = class extends $ {
                 static {
                     U1 = this
                 }
@@ -24345,7 +24390,7 @@ var ls, zl, uo = g({
                 async _findDebugPort() {
                     return await this._nativeHostMainService.findFreePort(VF(), 10, 5e3, 2048)
                 }
-            }, xf = U1 = __decorate([__param(0, j), __param(1, tt), __param(2, ut), __param(3, mi), __param(4, Qe), __param(5, ls)], xf)
+            }, Df = U1 = __decorate([__param(0, j), __param(1, tt), __param(2, ut), __param(3, mi), __param(4, Qe), __param(5, ls)], Df)
         }
     }),
     Kl, FN = g({
@@ -24378,10 +24423,10 @@ function $N(t) {
     for (const i of t) i.indexOf(" ") >= 0 ? e += '"' + i + '"' : e += i, e += " ";
     return e
 }
-var B1, Df, Rf, BP, V1, BN = g({
+var B1, xf, Rf, BP, V1, BN = g({
     "out-build/vs/platform/externalTerminal/node/externalTerminalService.js"() {
         "use strict";
-        Bn(), Le(), Ce(), z(), lf(), qt(), Ul(), Ee(), UN(), B1 = S(2018, null), Df = class {
+        Bn(), Le(), Ce(), z(), lf(), qt(), Ul(), Ee(), UN(), B1 = S(2018, null), xf = class {
             async getDefaultTerminalForPlatforms() {
                 return {
                     windows: Rf.getDefaultTerminalWindows(),
@@ -24389,7 +24434,7 @@ var B1, Df, Rf, BP, V1, BN = g({
                     osx: "xterm"
                 }
             }
-        }, Rf = class Gs extends Df {
+        }, Rf = class Gs extends xf {
             static {
                 this.CMD = "cmd.exe"
             }
@@ -24445,7 +24490,7 @@ var B1, Df, Rf, BP, V1, BN = g({
                     return
                 }
             }
-        }, __decorate([me], Rf, "getWtExePath", null), BP = class fR extends Df {
+        }, __decorate([me], Rf, "getWtExePath", null), BP = class fR extends xf {
             static {
                 this.OSASCRIPT = "/usr/bin/osascript"
             }
@@ -24457,7 +24502,7 @@ var B1, Df, Rf, BP, V1, BN = g({
                 return new Promise((a, c) => {
                     if (o === Xl || o === "iTerm.app") {
                         const l = o === Xl ? "TerminalHelper" : "iTermHelper",
-                            d = [xt.asFileUri(`vs/workbench/contrib/externalTerminal/node/${l}.scpt`).fsPath, "-t", e || B1, "-w", i];
+                            d = [Dt.asFileUri(`vs/workbench/contrib/externalTerminal/node/${l}.scpt`).fsPath, "-t", e || B1, "-w", i];
                         for (const m of r) d.push("-a"), d.push(m);
                         if (s) {
                             const m = Object.assign({}, Oa(process), s);
@@ -24496,7 +24541,7 @@ var B1, Df, Rf, BP, V1, BN = g({
                     l.on("error", o), l.on("exit", () => n())
                 })
             }
-        }, V1 = class Sn extends Df {
+        }, V1 = class Sn extends xf {
             static {
                 this.WAIT_MESSAGE = S(2021, null)
             }
@@ -25079,7 +25124,7 @@ var uI = g({
             "use strict";
             Vt(), ce(), $e(), K(), ji(), N(), Ce(), Fa(), q(), dI = class extends $ {
                 constructor(t, e) {
-                    super(), this.logService = t, this.options = e, this._onDidChangeFile = this._register(new D), this.onDidChangeFile = this._onDidChangeFile.event, this._onDidWatchError = this._register(new D), this.onDidWatchError = this._onDidWatchError.event, this.universalWatchRequests = [], this.universalWatchRequestDelayer = this._register(new Ps(this.getRefreshWatchersDelay(this.universalWatchRequests.length))), this.nonRecursiveWatchRequests = [], this.nonRecursiveWatchRequestDelayer = this._register(new Ps(this.getRefreshWatchersDelay(this.nonRecursiveWatchRequests.length)))
+                    super(), this.logService = t, this.options = e, this._onDidChangeFile = this._register(new x), this.onDidChangeFile = this._onDidChangeFile.event, this._onDidWatchError = this._register(new x), this.onDidWatchError = this._onDidWatchError.event, this.universalWatchRequests = [], this.universalWatchRequestDelayer = this._register(new Ps(this.getRefreshWatchersDelay(this.universalWatchRequests.length))), this.nonRecursiveWatchRequests = [], this.nonRecursiveWatchRequestDelayer = this._register(new Ps(this.getRefreshWatchersDelay(this.nonRecursiveWatchRequests.length)))
                 }
                 watch(t, e) {
                     return e.recursive || this.options?.watcher?.forceUniversal ? this.watchUniversal(t, e) : this.watchNonRecursive(t, e)
@@ -25213,7 +25258,7 @@ var hI, dU = g({
             "use strict";
             ce(), rt(), vt(), lU(), $e(), K(), N(), br(), Ul(), lf(), qi(), hI = class {
                 constructor(t, e) {
-                    this.modulePath = t, this.options = e, this.activeRequests = new Set, this.channels = new Map, this._onDidProcessExit = new D, this.onDidProcessExit = this._onDidProcessExit.event;
+                    this.modulePath = t, this.options = e, this.activeRequests = new Set, this.channels = new Map, this._onDidProcessExit = new x, this.onDidProcessExit = this._onDidProcessExit.event;
                     const i = e && e.timeout ? e.timeout : 6e4;
                     this.disposeDelayer = new Yd(i), this.child = null, this._client = null
                 }
@@ -25244,7 +25289,7 @@ var hI, dU = g({
                     if (!this.disposeDelayer) return R.None;
                     this.disposeDelayer.cancel();
                     let r;
-                    const s = new D({
+                    const s = new x({
                         onWillAddFirstListener: () => {
                             r = this.getCachedChannel(t).listen(e, i)(s.fire, s), this.activeRequests.add(r)
                         },
@@ -25265,7 +25310,7 @@ var hI, dU = g({
                             ...e.env,
                             ...this.options.env
                         }), this.options && this.options.freshExecArgv && (e.execArgv = []), this.options && typeof this.options.debug == "number" && (e.execArgv = ["--nolazy", "--inspect=" + this.options.debug]), this.options && typeof this.options.debugBrk == "number" && (e.execArgv = ["--nolazy", "--inspect-brk=" + this.options.debugBrk]), e.execArgv === void 0 && (e.execArgv = process.execArgv.filter(u => !/^--inspect(-brk)?=/.test(u)).filter(u => !u.startsWith("--vscode-"))), Y4(e.env), this.child = uU(this.modulePath, t, e);
-                        const i = new D,
+                        const i = new x,
                             s = R.fromNodeEventEmitter(this.child, "message", u => u)(u => {
                                 if (nU(u)) {
                                     cU(u, `IPC Library: ${this.options.serverName}`);
@@ -25312,7 +25357,7 @@ var hI, dU = g({
                     super(t, e, i), this.init()
                 }
                 createWatcher(t) {
-                    const e = t.add(new hI(xt.asFileUri("bootstrap-fork").fsPath, {
+                    const e = t.add(new hI(Dt.asFileUri("bootstrap-fork").fsPath, {
                         serverName: "File Watcher",
                         args: ["--type=fileWatcher"],
                         env: {
@@ -25338,7 +25383,7 @@ var pI, gU = g({
         "use strict";
         N(), Fa(), K(), ne(), ce(), Qr(), $e(), pI = class extends $ {
             constructor() {
-                super(), this._onDidChangeFile = this._register(new D), this.onDidChangeFile = this._onDidChangeFile.event, this._onDidLogMessage = this._register(new D), this.onDidLogMessage = this._onDidLogMessage.event, this._onDidWatchFail = this._register(new D), this.onDidWatchFail = this._onDidWatchFail.event, this.correlatedWatchRequests = new Map, this.nonCorrelatedWatchRequests = new Map, this.suspendedWatchRequests = this._register(new hv), this.suspendedWatchRequestsWithPolling = new Set, this.updateWatchersDelayer = this._register(new Ps(this.getUpdateWatchersDelay())), this.suspendedWatchRequestPollingInterval = 5007, this.joinWatch = new Is, this.verboseLogging = !1, this._register(this.onDidWatchFail(t => this.suspendWatchRequest({
+                super(), this._onDidChangeFile = this._register(new x), this.onDidChangeFile = this._onDidChangeFile.event, this._onDidLogMessage = this._register(new x), this.onDidLogMessage = this._onDidLogMessage.event, this._onDidWatchFail = this._register(new x), this.onDidWatchFail = this._onDidWatchFail.event, this.correlatedWatchRequests = new Map, this.nonCorrelatedWatchRequests = new Map, this.suspendedWatchRequests = this._register(new hv), this.suspendedWatchRequestsWithPolling = new Set, this.updateWatchersDelayer = this._register(new Ps(this.getUpdateWatchersDelay())), this.suspendedWatchRequestPollingInterval = 5007, this.joinWatch = new Is, this.verboseLogging = !1, this._register(this.onDidWatchFail(t => this.suspendWatchRequest({
                     id: this.computeId(t),
                     correlationId: this.isCorrelated(t) ? t.correlationId : void 0,
                     path: t.path
@@ -26231,7 +26276,7 @@ var Af, Q1 = g({
                 onReadFileStream(t, e, i) {
                     const r = this.transformIncoming(t, e, !0),
                         s = new Ar,
-                        n = new D({
+                        n = new x({
                             onDidRemoveLastListener: () => {
                                 s.cancel()
                             }
@@ -26288,7 +26333,7 @@ var Af, Q1 = g({
                     return this.provider.cloneFile(r, s)
                 }
                 onFileChange(t, e) {
-                    const i = new D({
+                    const i = new x({
                         onWillAddFirstListener: () => {
                             this.sessionToWatcher.set(e, this.createSessionFileWatcher(t, i))
                         },
@@ -26323,7 +26368,7 @@ var Af, Q1 = g({
                     super(), this.uriTransformer = t, this.environmentService = r, this.watcherRequests = new Map, this.fileWatcher = this._register(new Af(i)), this.registerListeners(e)
                 }
                 registerListeners(t) {
-                    const e = this._register(new D);
+                    const e = this._register(new x);
                     this._register(e.event(i => {
                         t.fire(i.map(r => ({
                             resource: this.uriTransformer.transformOutgoingURI(r.resource),
@@ -26519,7 +26564,7 @@ function Lf(t) {
                     const f = l.shift();
                     f && (u.push(f.pid), f.children && (l = l.concat(f.children)))
                 }
-                let d = JSON.stringify(xt.asFileUri("vs/base/node/cpuUsage.sh").fsPath);
+                let d = JSON.stringify(Dt.asFileUri("vs/base/node/cpuUsage.sh").fsPath);
                 d += " " + u.join(" "), Tf(d, {}, (f, p, m) => {
                     if (f || m) i(f || new Error(m.toString()));
                     else {
@@ -26542,7 +26587,7 @@ function Lf(t) {
                 if (l || d)
                     if (process.platform !== "linux") i(l || new Error(d.toString()));
                     else {
-                        const f = JSON.stringify(xt.asFileUri("vs/base/node/ps.sh").fsPath);
+                        const f = JSON.stringify(Dt.asFileUri("vs/base/node/ps.sh").fsPath);
                         Tf(f, {}, (p, m, w) => {
                             p || w ? i(p || new Error(w.toString())) : (kI(m, n), c())
                         })
@@ -26706,17 +26751,17 @@ function II(t, e = new Set) {
     return i
 }
 
-function xI(t, e = new Set) {
+function DI(t, e = new Set) {
     if (e.has(t)) return 0;
     e.add(t);
     let i = t.mem;
-    for (const r of t.children ?? []) i += xI(r, e);
+    for (const r of t.children ?? []) i += DI(r, e);
     return i
 }
 
-function DI(t, e, i, r, s) {
+function xI(t, e, i, r, s) {
     const n = r.reduce((c, l) => c + II(l), 0),
-        o = r.reduce((c, l) => c + xI(l), 0),
+        o = r.reduce((c, l) => c + DI(l), 0),
         a = {
             name: `${e} processes`,
             cmd: "",
@@ -26737,7 +26782,7 @@ function DI(t, e, i, r, s) {
 function IU(t) {
     return typeof t != "object" || t === null ? !1 : "x" in t && "y" in t && "width" in t && "height" in t
 }
-var sy, ny, ho, RI, oy, Uf, xU = g({
+var sy, ny, ho, RI, oy, Uf, DU = g({
         "out-build/vs/platform/process/electron-main/processMainService.js"() {
             "use strict";
             ji(), N(), Le(), z(), CI(), mr(), Ee(), _1(), iP(), Ls(), Xe(), Ra(), q(), uo(), Zl(), lt(), eu(), Gi(), Ia(), Ms(), Wf(), ht(), ny = "issue.processExplorerWindowState", ho = "__shared__", RI = "Shared", oy = /bc-[a-f0-9\-]{8,}/i, Uf = class {
@@ -26821,7 +26866,7 @@ var sy, ny, ho, RI, oy, Uf, xU = g({
                             for (const [v, b] of f) {
                                 const E = p.get(v);
                                 if (E)
-                                    for (const x of b) m.set(x, E)
+                                    for (const D of b) m.set(D, E)
                             }
                             const w = s.get(ho);
                             w && w.children.push(iy(l));
@@ -26832,17 +26877,17 @@ var sy, ny, ho, RI, oy, Uf, xU = g({
                                     continue
                                 }
                                 const E = (v.hostName ? oy.exec(v.hostName) : null)?.[0],
-                                    x = E ? p.get(E) : void 0;
+                                    D = E ? p.get(E) : void 0;
                                 if (v.processes && E) {
                                     const k = f.get(E);
                                     (k?.length ? ty(l, new Set(k), v.processes) : !1) || (Nf(v.processes), y.push({
-                                        workspaceId: x,
+                                        workspaceId: D,
                                         process: v.processes
                                     }));
                                     continue
                                 }
                                 v.processes && (Nf(v.processes), y.push({
-                                    workspaceId: x,
+                                    workspaceId: D,
                                     process: v.processes
                                 }))
                             }
@@ -26858,10 +26903,10 @@ var sy, ny, ho, RI, oy, Uf, xU = g({
                         const o = [];
                         for (const l of r) {
                             const u = s.get(l.workspaceId);
-                            u && o.push(DI(u.workspaceId, u.displayName, u.isShared, u.children, n--))
+                            u && o.push(xI(u.workspaceId, u.displayName, u.isShared, u.children, n--))
                         }
                         const a = s.get(ho);
-                        a && o.push(DI(a.workspaceId, a.displayName, a.isShared, a.children, n--));
+                        a && o.push(xI(a.workspaceId, a.displayName, a.isShared, a.children, n--));
                         const c = {
                             groups: o
                         };
@@ -26949,10 +26994,10 @@ var sy, ny, ho, RI, oy, Uf, xU = g({
                             product: us,
                             nls: {
                                 messages: Pd(),
-                                language: xc()
+                                language: Dc()
                             },
                             cssModules: this.cssDevelopmentService.isEnabled ? await this.cssDevelopmentService.getCssModules() : void 0
-                        }), this.processExplorerWindow.loadURL(xt.asBrowserUri(`vs/code/electron-sandbox/processExplorer/processExplorer${this.environmentMainService.isBuilt?"":"-dev"}.html`).toString(!0)), this.processExplorerWindow.on("close", () => {
+                        }), this.processExplorerWindow.loadURL(Dt.asBrowserUri(`vs/code/electron-sandbox/processExplorer/processExplorer${this.environmentMainService.isBuilt?"":"-dev"}.html`).toString(!0)), this.processExplorerWindow.on("close", () => {
                             this.processExplorerWindow = null, i.dispose()
                         }), this.processExplorerParentWindow.on("close", () => {
                             this.processExplorerWindow && (this.processExplorerWindow.close(), this.processExplorerWindow = null, i.dispose())
@@ -27098,7 +27143,7 @@ var sy, ny, ho, RI, oy, Uf, xU = g({
                             title: r.title,
                             backgroundColor: r.backgroundColor || sy.DEFAULT_BACKGROUND_COLOR,
                             webPreferences: {
-                                preload: xt.asFileUri("vs/base/parts/sandbox/electron-sandbox/preload.js").fsPath,
+                                preload: Dt.asFileUri("vs/base/parts/sandbox/electron-sandbox/preload.js").fsPath,
                                 additionalArguments: [`--vscode-window-config=${i.resource.toString()}`],
                                 v8CacheOptions: this.environmentMainService.useCodeCache ? "bypassHeatCheck" : "none",
                                 enableWebSQL: !1,
@@ -27137,7 +27182,7 @@ var sy, ny, ho, RI, oy, Uf, xU = g({
             }, Uf = sy = __decorate([__param(1, je), __param(2, j), __param(3, S1), __param(4, uf), __param(5, Wr), __param(6, ls), __param(7, Ua), __param(8, ze), __param(9, Wi), __param(10, co), __param(11, ut)], Uf)
         }
     }),
-    ay, DU = g({
+    ay, xU = g({
         "out-build/vs/platform/power/common/power.js"() {
             "use strict";
             G(), ay = H("powerMainService")
@@ -27781,10 +27826,10 @@ var su, hy, Vf, FU = g({
                             product: us,
                             nls: {
                                 messages: Pd(),
-                                language: xc()
+                                language: Dc()
                             },
                             cssModules: this._cssDevelopmentService.isEnabled ? await this._cssDevelopmentService.getCssModules() : void 0
-                        }), u.loadURL(xt.asBrowserUri(`vs/code/electron-sandbox/extensionMonitor/extensionMonitor${this._environmentMainService.isBuilt?"":"-dev"}.html`).toString(!0)), this._monitorWindowByWorkbenchId.set(r, u), this._workbenchIdByMonitorWindowId.set(u.webContents.id, r), this._focusWindow(u)
+                        }), u.loadURL(Dt.asBrowserUri(`vs/code/electron-sandbox/extensionMonitor/extensionMonitor${this._environmentMainService.isBuilt?"":"-dev"}.html`).toString(!0)), this._monitorWindowByWorkbenchId.set(r, u), this._workbenchIdByMonitorWindowId.set(u.webContents.id, r), this._focusWindow(u)
                     } catch (d) {
                         throw o.dispose(), d
                     }
@@ -27851,7 +27896,7 @@ var su, hy, Vf, FU = g({
                             title: r.title,
                             backgroundColor: r.backgroundColor || su.DEFAULT_BACKGROUND_COLOR,
                             webPreferences: {
-                                preload: xt.asFileUri("vs/base/parts/sandbox/electron-sandbox/preload.js").fsPath,
+                                preload: Dt.asFileUri("vs/base/parts/sandbox/electron-sandbox/preload.js").fsPath,
                                 additionalArguments: [`--vscode-window-config=${i.resource.toString()}`],
                                 v8CacheOptions: this._environmentMainService.useCodeCache ? "bypassHeatCheck" : "none",
                                 enableWebSQL: !1,
@@ -28172,9 +28217,9 @@ var su, hy, Vf, FU = g({
                                         const v = w.slice(f.length - 1).join(" "),
                                             b = Number(y[1]),
                                             E = Number(y[2]),
-                                            x = Number(w[0]);
-                                        isNaN(b) || isNaN(E) || isNaN(x) || p.push({
-                                            pid: x,
+                                            D = Number(w[0]);
+                                        isNaN(b) || isNaN(E) || isNaN(D) || p.push({
+                                            pid: D,
                                             command: v,
                                             pctCPU: b,
                                             memRssKB: E
@@ -28227,7 +28272,7 @@ var fy, jf, UU = g({
         "use strict";
         z(), K(), N(), G(), yt(), fy = H("keyboardLayoutMainService"), jf = class extends $ {
             constructor(e) {
-                super(), this._onDidChangeKeyboardLayout = this._register(new D), this.onDidChangeKeyboardLayout = this._onDidChangeKeyboardLayout.event, this._initPromise = null, this._keyboardLayoutData = null, e.when(3).then(() => this._initialize())
+                super(), this._onDidChangeKeyboardLayout = this._register(new x), this.onDidChangeKeyboardLayout = this._onDidChangeKeyboardLayout.event, this._initPromise = null, this._keyboardLayoutData = null, e.when(3).then(() => this._initialize())
             }
             _initialize() {
                 return this._initPromise || (this._initPromise = this._doInitialize()), this._initPromise
@@ -28452,7 +28497,7 @@ var ir, ou, qf, Gf = g({
                 this.RECENTLY_OPENED_STORAGE_KEY = "history.recentlyOpenedPathsList"
             }
             constructor(e, i, r, s, n) {
-                super(), this.logService = e, this.workspacesManagementMainService = i, this.lifecycleMainService = r, this.applicationStorageMainService = s, this.dialogMainService = n, this._onDidChangeRecentlyOpened = this._register(new D), this.onDidChangeRecentlyOpened = this._onDidChangeRecentlyOpened.event, this.macOSRecentDocumentsUpdater = this._register(new Ps(800)), this.registerListeners()
+                super(), this.logService = e, this.workspacesManagementMainService = i, this.lifecycleMainService = r, this.applicationStorageMainService = s, this.dialogMainService = n, this._onDidChangeRecentlyOpened = this._register(new x), this.onDidChangeRecentlyOpened = this._onDidChangeRecentlyOpened.event, this.macOSRecentDocumentsUpdater = this._register(new Ps(800)), this.registerListeners()
             }
             registerListeners() {
                 this.lifecycleMainService.when(4).then(() => this.handleWindowsJumpList()), this._register(this.workspacesManagementMainService.onDidEnterWorkspace(e => this.addRecentlyOpened([{
@@ -29253,7 +29298,7 @@ var zf, cu, Kf, GU = g({
             "use strict";
             K(), Wd(), N(), G(), go = H("policy"), vy = class extends $ {
                 constructor() {
-                    super(...arguments), this.policyDefinitions = {}, this.policies = new Map, this._onDidChange = this._register(new D), this.onDidChange = this._onDidChange.event
+                    super(...arguments), this.policyDefinitions = {}, this.policies = new Map, this._onDidChange = this._register(new x), this.onDidChange = this._onDidChange.event
                 }
                 async updatePolicyDefinitions(t) {
                     const e = Object.keys(this.policyDefinitions).length;
@@ -29502,7 +29547,7 @@ function e6(t, e) {
 }
 
 function yy(t) {
-    const e = t.getValue(xl),
+    const e = t.getValue(Dl),
         i = t.getValue(c1);
     if (t.getValue($h) === !1 || i === !1) return 0;
     switch (e ?? "all") {
@@ -29575,7 +29620,7 @@ function r$(t) {
 }
 
 function t6(t, e) {
-    return DW(t, i => {
+    return xW(t, i => {
         if (i instanceof i6 || Object.hasOwnProperty.call(i, "isTrustedTelemetryValue")) return i.value;
         if (typeof i == "string") {
             let r = i.replaceAll("%20", " ");
@@ -29630,7 +29675,7 @@ var i6, r6, lu, s6, s$, vo = g({
             "use strict";
             mr(), ce(), N(), Xe(), yt(), q(), ns(), hs(), Ba(), Ia(), vo(), vw(), We(), n$(), K(), Jf = class extends $ {
                 constructor(e, i, r, s, n, o, a, c, l, u) {
-                    super(), this.machineId = e, this.macMachineId = i, this.sqmId = r, this.devDeviceId = s, this.environmentMainService = n, this.userDataProfilesService = o, this.lifecycleMainService = a, this.logService = c, this.loggerMainService = l, this.policyService = u, this.firstWindowConnectionBarrier = new al, this.utilityProcess = void 0, this.utilityProcessLogListener = void 0, this._onDidCrash = this._register(new D), this.onDidCrash = this._onDidCrash.event, this._whenReady = void 0, this._whenIpcReady = void 0, this.registerListeners()
+                    super(), this.machineId = e, this.macMachineId = i, this.sqmId = r, this.devDeviceId = s, this.environmentMainService = n, this.userDataProfilesService = o, this.lifecycleMainService = a, this.logService = c, this.loggerMainService = l, this.policyService = u, this.firstWindowConnectionBarrier = new al, this.utilityProcess = void 0, this.utilityProcessLogListener = void 0, this._onDidCrash = this._register(new x), this.onDidCrash = this._onDidCrash.event, this._whenReady = void 0, this._whenIpcReady = void 0, this.registerListeners()
                 }
                 registerListeners() {
                     le.on(Sy.request, (e, i) => this.onWindowConnection(e, i, Sy.response)), le.on(_y.request, (e, i) => this.onWindowConnection(e, i, _y.response)), this._register(this.lifecycleMainService.onWillShutdown(() => this.onWillShutdown()))
@@ -29720,7 +29765,7 @@ var a$ = g({
                     this.STORAGE_CHANGE_DEBOUNCE_TIME = 100
                 }
                 constructor(e, i) {
-                    super(), this.logService = e, this.storageMainService = i, this.onDidChangeApplicationStorageEmitter = this._register(new D), this.mapProfileToOnDidChangeProfileStorageEmitter = new Map, this.mapWorkspaceToOnDidChangeWorkspaceStorageEmitter = new Map, this.registerStorageChangeListeners(i.applicationStorage, this.onDidChangeApplicationStorageEmitter)
+                    super(), this.logService = e, this.storageMainService = i, this.onDidChangeApplicationStorageEmitter = this._register(new x), this.mapProfileToOnDidChangeProfileStorageEmitter = new Map, this.mapWorkspaceToOnDidChangeWorkspaceStorageEmitter = new Map, this.registerStorageChangeListeners(i.applicationStorage, this.onDidChangeApplicationStorageEmitter)
                 }
                 registerStorageChangeListeners(e, i) {
                     this._register(R.debounce(e.onDidChangeStorage, (r, s) => (r ? r.push(s) : r = [s], r), gR.STORAGE_CHANGE_DEBOUNCE_TIME)(r => {
@@ -29745,11 +29790,11 @@ var a$ = g({
                                 n = Wh(r.workspace);
                             if (n) {
                                 let a = this.mapWorkspaceToOnDidChangeWorkspaceStorageEmitter.get(n.id);
-                                return a || (a = this._register(new D), this.registerStorageChangeListeners(this.storageMainService.workspaceStorage(n), a), this.mapWorkspaceToOnDidChangeWorkspaceStorageEmitter.set(n.id, a)), a.event
+                                return a || (a = this._register(new x), this.registerStorageChangeListeners(this.storageMainService.workspaceStorage(n), a), this.mapWorkspaceToOnDidChangeWorkspaceStorageEmitter.set(n.id, a)), a.event
                             }
                             if (!s) return this.onDidChangeApplicationStorageEmitter.event;
                             let o = this.mapProfileToOnDidChangeProfileStorageEmitter.get(s.id);
-                            return o || (o = this._register(new D), this.registerStorageChangeListeners(this.storageMainService.profileStorage(s), o), this.mapProfileToOnDidChangeProfileStorageEmitter.set(s.id, o)), o.event
+                            return o || (o = this._register(new x), this.registerStorageChangeListeners(this.storageMainService.profileStorage(s), o), this.mapProfileToOnDidChangeProfileStorageEmitter.set(s.id, o)), o.event
                         }
                     }
                     throw new Error(`Event not found: ${i}`)
@@ -29760,7 +29805,7 @@ var a$ = g({
                         workspace: void 0
                     };
                     if (Array.isArray(r)) {
-                        if (i !== "cursorDiskKVGet" && i !== "cursorDiskKVGetBatch" && i !== "cursorDiskKVSet" && i !== "cursorDiskKVGetWithLogs" && i !== "cursorDiskKVSetBinary" && i !== "cursorDiskKVSetBinaryBatch" && i !== "cursorDiskKVGetBinary") throw new Error(`Unexpected array argument for command: ${i}`);
+                        if (i !== "cursorDiskKVGet" && i !== "cursorDiskKVGetBatch" && i !== "cursorDiskKVSet" && i !== "cursorDiskKVSetIfAbsent" && i !== "cursorDiskKVGetWithLogs" && i !== "cursorDiskKVSetBinary" && i !== "cursorDiskKVSetBinaryBatch" && i !== "cursorDiskKVGetBinary" && i !== "cursorDiskKVDelete") throw new Error(`Unexpected array argument for command: ${i}`);
                         const [c, l] = r;
                         s = {
                             profile: c,
@@ -29787,6 +29832,10 @@ var a$ = g({
                             const [, , c, l] = r;
                             return a.cursorDiskKVSet(c, l)
                         }
+                        case "cursorDiskKVSetIfAbsent": {
+                            const [, , c, l] = r;
+                            return a.cursorDiskKVSetIfAbsent(c, l)
+                        }
                         case "cursorDiskKVSetBinary": {
                             const [, , c, l] = r;
                             return a.cursorDiskKVSetBinary(c, l)
@@ -29798,6 +29847,10 @@ var a$ = g({
                         case "cursorDiskKVGetBinary": {
                             const [, , c] = r;
                             return a.cursorDiskKVGetBinary(c)
+                        }
+                        case "cursorDiskKVDelete": {
+                            const [, , c, l] = r;
+                            return a.cursorDiskKVDelete(c, l)
                         }
                         default:
                             throw new Error(`Call not found: ${i}`)
@@ -29921,7 +29974,7 @@ var Zf, u6, f$ = g({
                     this._configurationService = i, this._productService = r, this._experimentProperties = {}, this._disposables = new Me, this._cleanupPatterns = [], this._appenders = e.appenders, this._commonProperties = e.commonProperties ?? Object.create(null), this.sessionId = this._commonProperties.sessionID, this.machineId = this._commonProperties["common.machineId"], this.macMachineId = this._commonProperties["common.macMachineId"], this.sqmId = this._commonProperties["common.sqmId"], this.devDeviceId = this._commonProperties["common.devDeviceId"], this.firstSessionDate = this._commonProperties["common.firstSessionDate"], this.msftInternal = this._commonProperties["common.msftInternal"], this._piiPaths = e.piiPaths || [], this._telemetryLevel = 3, this._sendErrorTelemetry = !!e.sendErrorTelemetry, this._cleanupPatterns = [/(vscode-)?file:\/\/\/.*?\/resources\/app\//gi];
                     for (const s of this._piiPaths) this._cleanupPatterns.push(new RegExp(Vc(s), "gi")), s.indexOf("\\") >= 0 && this._cleanupPatterns.push(new RegExp(Vc(s.replace(/\\/g, "/")), "gi"));
                     this._updateTelemetryLevel(), this._disposables.add(this._configurationService.onDidChangeConfiguration(s => {
-                        (s.affectsConfiguration(xl) || s.affectsConfiguration($h) || s.affectsConfiguration(c1)) && this._updateTelemetryLevel()
+                        (s.affectsConfiguration(Dl) || s.affectsConfiguration($h) || s.affectsConfiguration(c1)) && this._updateTelemetryLevel()
                     }))
                 }
                 setExperimentProperty(e, i) {
@@ -29978,7 +30031,7 @@ var Zf, u6, f$ = g({
                 type: "object",
                 title: "Crash Reporting",
                 properties: {
-                    [xl]: {
+                    [Dl]: {
                         type: "string",
                         enum: ["all", "off"],
                         enumDescriptions: ["Send OS-level crash reports.", "Disable crash reporting."],
@@ -29998,7 +30051,7 @@ var Zf, u6, f$ = g({
                         markdownDescription: us.privacyStatementUrl ? S(2257, null, us.nameLong, us.privacyStatementUrl) : S(2256, null, us.nameLong),
                         default: !0,
                         restricted: !0,
-                        markdownDeprecationMessage: S(2258, null, `\`#${xl}#\``),
+                        markdownDeprecationMessage: S(2258, null, `\`#${Dl}#\``),
                         scope: 1,
                         tags: ["usesOnlineServices", "telemetry"]
                     }
@@ -30097,7 +30150,7 @@ var $t, f6, ja, ky = g({
                 }
             }
             constructor(e, i, r, s, n, o, a) {
-                super(), this.lifecycleMainService = e, this.configurationService = i, this.environmentMainService = r, this.requestService = s, this.logService = n, this.productService = o, this.applicationStorageMainService = a, this._state = we.Uninitialized, this._onStateChange = new D, this.onStateChange = this._onStateChange.event, e.when(3).finally(() => this.initialize())
+                super(), this.lifecycleMainService = e, this.configurationService = i, this.environmentMainService = r, this.requestService = s, this.logService = n, this.productService = o, this.applicationStorageMainService = a, this._state = we.Uninitialized, this._onStateChange = new x, this.onStateChange = this._onStateChange.event, e.when(3).finally(() => this.initialize())
             }
             async initialize() {
                 if (this.removeUpdateFileIfExists(), !this.environmentMainService.isBuilt) {
@@ -30597,7 +30650,7 @@ var tp, ip, C$ = g({
                 this.logService.info("update#setState", e.type), this._state = e, this._onStateChange.fire(e)
             }
             constructor(e, i, r) {
-                if (this.lifecycleMainService = e, this.logService = r, this._state = we.Uninitialized, this._onStateChange = new D, this.onStateChange = this._onStateChange.event, i.disableUpdates) {
+                if (this.lifecycleMainService = e, this.logService = r, this._state = we.Uninitialized, this._onStateChange = new x, this.onStateChange = this._onStateChange.event, i.disableUpdates) {
                     this.logService.info("update#ctor - updates are disabled");
                     return
                 }
@@ -30674,7 +30727,7 @@ var tp, ip, C$ = g({
 });
 import * as P$ from "crypto";
 import * as I$ from "fs";
-async function x$(t, e) {
+async function D$(t, e) {
     if (await new Promise((s, n) => {
             const o = I$.createReadStream(t),
                 a = P$.createHash("sha256");
@@ -30685,7 +30738,7 @@ async function x$(t, e) {
             o.once("error", c), o.once("end", c), a.once("error", c), a.once("data", l => c(void 0, l.toString("hex")))
         }) !== e) throw new Error("Hash mismatch")
 }
-var D$ = g({
+var x$ = g({
     "out-build/vs/base/node/crypto.js"() {
         "use strict";
         Md()
@@ -30714,7 +30767,7 @@ function wo() {
 var sp, uu, M$ = g({
         "out-build/vs/platform/update/electron-main/updateService.win32.js"() {
             "use strict";
-            ce(), vt(), Bn(), Qr(), Ce(), ne(), D$(), qt(), Ze(), Xe(), ot(), yt(), q(), uo(), lt(), Us(), vi(), gn(), ky(), Os(), sp = void 0, uu = class extends ja {
+            ce(), vt(), Bn(), Qr(), Ce(), ne(), x$(), qt(), Ze(), Xe(), ot(), yt(), q(), uo(), lt(), Us(), vi(), gn(), ky(), Os(), sp = void 0, uu = class extends ja {
                 get cachePath() {
                     const e = Math.random().toString(36).substring(2, 15),
                         i = U(R$(), `vscode-${this.productService.quality}-${this.productService.target}-${process.arch}-${e}`);
@@ -30775,7 +30828,7 @@ var sp, uu, M$ = g({
                                 if (!Pf(c)) throw new Error("Server returned " + c.res.statusCode);
                                 if (LP(c)) throw new Error("Server returned no content");
                                 return c
-                            }).then(c => this.fileService.writeFile(A.file(a), c.stream)).then(r.sha256hash ? () => x$(a, r.sha256hash) : () => {}).then(() => ie.rename(a, n, !1)).then(() => n)
+                            }).then(c => this.fileService.writeFile(A.file(a), c.stream)).then(r.sha256hash ? () => D$(a, r.sha256hash) : () => {}).then(() => ie.rename(a, n, !1)).then(() => n)
                         })).then(n => {
                             this.availableUpdate = {
                                 packagePath: n
@@ -30974,7 +31027,7 @@ var y6, O$ = g({
                     for (const e of this.uris) await this.urlService.open(e.uri, {
                         originalUrl: e.originalUrl
                     }) ? this.logService.trace("ElectronURLListener#flush(): URL was handled", e.originalUrl) : (this.logService.trace("ElectronURLListener#flush(): URL was not yet handled", e.originalUrl), t.push(e));
-                    t.length !== 0 && (this.uris = t, DL(() => this.flush(), 500, this._store))
+                    t.length !== 0 && (this.uris = t, xL(() => this.flush(), 500, this._store))
                 }
             }
         }
@@ -31010,7 +31063,7 @@ var S6, N$ = g({
                         s = mR.validWebviewFilePaths.get(r.path);
                     if (typeof s == "string") {
                         const n = `vs/workbench/contrib/webview/browser/pre/${s}`,
-                            o = xt.asFileUri(n);
+                            o = Dt.asFileUri(n);
                         return i({
                             path: o.fsPath,
                             headers: {
@@ -31037,7 +31090,7 @@ var op, $$ = g({
         "use strict";
         K(), N(), N$(), ht(), op = class extends $ {
             constructor(e) {
-                super(), this.windowsMainService = e, this._onFoundInFrame = this._register(new D), this.onFoundInFrame = this._onFoundInFrame.event, this._register(new S6)
+                super(), this.windowsMainService = e, this._onFoundInFrame = this._register(new x), this.onFoundInFrame = this._onFoundInFrame.event, this._register(new S6)
             }
             async setIgnoreMenuShortcuts(e, i) {
                 let r;
@@ -32098,12 +32151,12 @@ import Xi from "electron";
 import {
     release as I6
 } from "os";
-var x6, xy, hu, D6, R6 = g({
+var D6, Dy, hu, x6, R6 = g({
     "out-build/vs/platform/windows/electron-main/windowImpl.js"() {
         "use strict";
         ce(), rt(), vt(), ca(), Un(), $e(), K(), N(), Le(), ws(), z(), C6(), ne(), Ee(), Ml(), Ze(), Ra(), Ls(), Xe(), Fl(), q$(), ot(), G(), yt(), q(), Ba(), hs(), lt(), eu(), Gi(), Os(), vi(), va(), eo(), Ms(), bl(), gi(), no(), ht(), (function(t) {
             t[t.NONE = 0] = "NONE", t[t.NAVIGATING = 1] = "NAVIGATING", t[t.READY = 2] = "READY"
-        })(x6 || (x6 = {})), xy = class vR extends $ {
+        })(D6 || (D6 = {})), Dy = class vR extends $ {
             get lastFocusTime() {
                 return this._lastFocusTime
             }
@@ -32144,7 +32197,7 @@ var x6, xy, hu, D6, R6 = g({
                 })))
             }
             constructor(e, i, r, s) {
-                super(), this.configurationService = e, this.stateService = i, this.environmentMainService = r, this.logService = s, this._onDidClose = this._register(new D), this.onDidClose = this._onDidClose.event, this._onDidMaximize = this._register(new D), this.onDidMaximize = this._onDidMaximize.event, this._onDidUnmaximize = this._register(new D), this.onDidUnmaximize = this._onDidUnmaximize.event, this._onDidTriggerSystemContextMenu = this._register(new D), this.onDidTriggerSystemContextMenu = this._onDidTriggerSystemContextMenu.event, this._onDidEnterFullScreen = this._register(new D), this.onDidEnterFullScreen = this._onDidEnterFullScreen.event, this._onDidLeaveFullScreen = this._register(new D), this.onDidLeaveFullScreen = this._onDidLeaveFullScreen.event, this._lastFocusTime = Date.now(), this._win = null, this._webContents = void 0, this.transientIsNativeFullScreen = void 0, this.joinNativeFullScreenTransition = void 0
+                super(), this.configurationService = e, this.stateService = i, this.environmentMainService = r, this.logService = s, this._onDidClose = this._register(new x), this.onDidClose = this._onDidClose.event, this._onDidMaximize = this._register(new x), this.onDidMaximize = this._onDidMaximize.event, this._onDidUnmaximize = this._register(new x), this.onDidUnmaximize = this._onDidUnmaximize.event, this._onDidTriggerSystemContextMenu = this._register(new x), this.onDidTriggerSystemContextMenu = this._onDidTriggerSystemContextMenu.event, this._onDidEnterFullScreen = this._register(new x), this.onDidEnterFullScreen = this._onDidEnterFullScreen.event, this._onDidLeaveFullScreen = this._register(new x), this.onDidLeaveFullScreen = this._onDidLeaveFullScreen.event, this._lastFocusTime = Date.now(), this._win = null, this._webContents = void 0, this.transientIsNativeFullScreen = void 0, this.joinNativeFullScreenTransition = void 0
             }
             applyState(e, i, r = Xi.screen.getAllDisplays().length > 0) {
                 const s = this.environmentMainService.args["enable-smoke-test-driver"],
@@ -32255,7 +32308,7 @@ var x6, xy, hu, D6, R6 = g({
             dispose() {
                 super.dispose(), this._win = null
             }
-        }, hu = class extends xy {
+        }, hu = class extends Dy {
             get id() {
                 return this._id
             }
@@ -32291,8 +32344,8 @@ var x6, xy, hu, D6, R6 = g({
             get isExtensionDevelopmentTestFromCli() {
                 return this.isExtensionDevelopmentHost && this.isExtensionTestHost && !this._config?.debugId
             }
-            constructor(e, i, r, s, n, o, a, c, l, u, d, f, p, m, w, y, v, b, E, x, k, M) {
-                super(u, x, s, i), this.loggerMainService = r, this.policyService = n, this.userDataProfilesService = o, this.fileService = a, this.applicationStorageMainService = c, this.storageMainService = l, this.themeMainService = d, this.workspacesManagementMainService = f, this.backupMainService = p, this.telemetryService = m, this.dialogMainService = w, this.lifecycleMainService = y, this.productService = v, this.windowsMainService = E, this.cssDevelopmentService = M, this._onWillLoad = this._register(new D), this.onWillLoad = this._onWillLoad.event, this._onDidSignalReady = this._register(new D), this.onDidSignalReady = this._onDidSignalReady.event, this._onDidDestroy = this._register(new D), this.onDidDestroy = this._onDidDestroy.event, this._win = null, this.isBrowserViewVisible = !1, this.lastShownAtUnixMs = void 0, this.whenReadyCallbacks = [], this.touchBarGroups = [], this.currentHttpProxy = void 0, this.currentNoProxy = void 0, this.customZoomLevel = void 0, this.wasLoaded = !1, this.readyState = 0, this.parentWindowDisposableStore = new Me;
+            constructor(e, i, r, s, n, o, a, c, l, u, d, f, p, m, w, y, v, b, E, D, k, M) {
+                super(u, D, s, i), this.loggerMainService = r, this.policyService = n, this.userDataProfilesService = o, this.fileService = a, this.applicationStorageMainService = c, this.storageMainService = l, this.themeMainService = d, this.workspacesManagementMainService = f, this.backupMainService = p, this.telemetryService = m, this.dialogMainService = w, this.lifecycleMainService = y, this.productService = v, this.windowsMainService = E, this.cssDevelopmentService = M, this._onWillLoad = this._register(new x), this.onWillLoad = this._onWillLoad.event, this._onDidSignalReady = this._register(new x), this.onDidSignalReady = this._onDidSignalReady.event, this._onDidDestroy = this._register(new x), this.onDidDestroy = this._onDidDestroy.event, this._win = null, this.isBrowserViewVisible = !1, this.lastShownAtUnixMs = void 0, this.whenReadyCallbacks = [], this.touchBarGroups = [], this.currentHttpProxy = void 0, this.currentNoProxy = void 0, this.customZoomLevel = void 0, this.wasLoaded = !1, this.readyState = 0, this.parentWindowDisposableStore = new Me;
                 {
                     this.configObjectUrl = this._register(b.createIPCObjectUrl());
                     const [B, se] = this.restoreWindowState(e.state);
@@ -32302,7 +32355,7 @@ var x6, xy, hu, D6, R6 = g({
                             hideBecauseShadowWindow: Ye,
                             isGlassWindow: e.isGlassWindow
                         }, {
-                            preload: xt.asFileUri("vs/base/parts/sandbox/electron-sandbox/preload.js").fsPath,
+                            preload: Dt.asFileUri("vs/base/parts/sandbox/electron-sandbox/preload.js").fsPath,
                             additionalArguments: [`--vscode-window-config=${this.configObjectUrl.resource.toString()}`],
                             v8CacheOptions: this.environmentMainService.useCodeCache ? "bypassHeatCheck" : "none"
                         });
@@ -32596,7 +32649,7 @@ var x6, xy, hu, D6, R6 = g({
                         this.themeMainService.setWindowGlassMode(this._win, !1), this._win.setVibrancy(null), V && this._win.setBackgroundMaterial("none"), this._win.setBackgroundColor(o)
                     }
                 }
-                e.glass === !0 && this._win && (this.readyState === 0 || !this._win.isVisible()) && !e.shadowWindowForWorkspaceId && e.windowInWindow === void 0 && this._win.show(), this.readyState === 0 ? this._config = e : this.pendingLoadConfig = e, this.readyState = 1, this.webContents?.loadURL(xt.asBrowserUri(`vs/code/electron-sandbox/workbench/workbench${this.environmentMainService.isBuilt?"":"-dev"}.html`).toString(!0));
+                e.glass === !0 && this._win && (this.readyState === 0 || !this._win.isVisible()) && !e.shadowWindowForWorkspaceId && e.windowInWindow === void 0 && this._win.show(), this.readyState === 0 ? this._config = e : this.pendingLoadConfig = e, this.readyState = 1, this.webContents?.loadURL(Dt.asBrowserUri(`vs/code/electron-sandbox/workbench/workbench${this.environmentMainService.isBuilt?"":"-dev"}.html`).toString(!0));
                 const r = this.wasLoaded;
                 this.wasLoaded = !0, !this.environmentMainService.isBuilt && !this.environmentMainService.extensionTestsLocationURI && !this.environmentMainService.args["enable-smoke-test-driver"] && this._register(new Tr(() => {
                     this._win && !this._win.isVisible() && !this._win.isMinimized() && !e.shadowWindowForWorkspaceId && e.windowInWindow === void 0 && (this._win.show(), this.focus({
@@ -32833,7 +32886,7 @@ ${r.stack}`)
                     const r = Array.from(this.jsCallStackMap.entries()).sort((s, n) => n[1] - s[1]);
                     for (const [s, n] of r) {
                         if (i += n, Math.round(n * 100 / this.jsCallStackEffectiveSampleCount) > 20) {
-                            const o = new D6(s, this.id, this.win?.webContents.getOSProcessId());
+                            const o = new x6(s, this.id, this.win?.webContents.getOSProcessId());
                             Mc.onUnexpectedError(o)
                         }
                         e += `<${n}> ${s}
@@ -32858,7 +32911,7 @@ ${r.stack}`)
                 }
                 this.loggerMainService.deregisterLoggers(this.id)
             }
-        }, hu = __decorate([__param(1, j), __param(2, mo), __param(3, je), __param(4, go), __param(5, os), __param(6, bt), __param(7, cs), __param(8, io), __param(9, Qe), __param(10, Jn), __param(11, hn), __param(12, Sa), __param(13, mi), __param(14, Wr), __param(15, tt), __param(16, ze), __param(17, Ua), __param(18, ut), __param(19, Wi), __param(20, Xr), __param(21, co)], hu), D6 = class extends Error {
+        }, hu = __decorate([__param(1, j), __param(2, mo), __param(3, je), __param(4, go), __param(5, os), __param(6, bt), __param(7, cs), __param(8, io), __param(9, Qe), __param(10, Jn), __param(11, hn), __param(12, Sa), __param(13, mi), __param(14, Wr), __param(15, tt), __param(16, ze), __param(17, Ua), __param(18, ut), __param(19, Wi), __param(20, Xr), __param(21, co)], hu), x6 = class extends Error {
             constructor(t, e, i = 0) {
                 const r = Error.stackTraceLimit;
                 Error.stackTraceLimit = 0, super(`UnresponsiveSampleError: from window with ID ${e} belonging to process with pid ${i}`), Error.stackTraceLimit = r, this.name = "UnresponsiveSampleError", this.stack = t
@@ -32875,10 +32928,10 @@ function G$(t) {
         i = t || {
             openedWindows: []
         };
-    return i.lastActiveWindow && (e.lastActiveWindow = Dy(i.lastActiveWindow)), i.lastPluginDevelopmentHostWindow && (e.lastPluginDevelopmentHostWindow = Dy(i.lastPluginDevelopmentHostWindow)), Array.isArray(i.openedWindows) && (e.openedWindows = i.openedWindows.map(r => Dy(r))), e
+    return i.lastActiveWindow && (e.lastActiveWindow = xy(i.lastActiveWindow)), i.lastPluginDevelopmentHostWindow && (e.lastPluginDevelopmentHostWindow = xy(i.lastPluginDevelopmentHostWindow)), Array.isArray(i.openedWindows) && (e.openedWindows = i.openedWindows.map(r => xy(r))), e
 }
 
-function Dy(t) {
+function xy(t) {
     const e = {
         uiState: t.uiState
     };
@@ -33060,8 +33113,8 @@ var pu, dp, tB = g({
         "out-build/vs/platform/windows/electron-main/windowsMainService.js"() {
             "use strict";
             oc(), Vt(), vt(), K(), ji(), rn(), N(), Le(), Ce(), ws(), z(), Gr(), wt(), We(), ne(), Ee(), Ml(), Ze(), Ls(), Xe(), ot(), G(), yt(), q(), Zl(), eu(), Ol(), Gi(), Ms(), R6(), ht(), q4(), K$(), gi(), v1(), Gf(), no(), va(), hs(), eo(), Ba(), Bl(), Ra(), ui(), pu = Object.create(null), dp = class extends $ {
-                constructor(e, i, r, s, n, o, a, c, l, u, d, f, p, m, w, y, v, b, E, x, k, M, T) {
-                    super(), this.machineId = e, this.macMachineId = i, this.sqmId = r, this.devDeviceId = s, this.initialUserEnv = n, this.logService = o, this.loggerService = a, this.policyService = l, this.environmentMainService = u, this.userDataProfilesMainService = d, this.lifecycleMainService = f, this.backupMainService = p, this.configurationService = m, this.workspacesHistoryMainService = w, this.workspacesManagementMainService = y, this.instantiationService = v, this.dialogMainService = b, this.fileService = E, this.protocolMainService = x, this.themeMainService = k, this.auxiliaryWindowsMainService = M, this.cssDevelopmentService = T, this._onDidOpenWindow = this._register(new D), this.onDidOpenWindow = this._onDidOpenWindow.event, this._onDidSignalReadyWindow = this._register(new D), this.onDidSignalReadyWindow = this._onDidSignalReadyWindow.event, this._onDidDestroyWindow = this._register(new D), this.onDidDestroyWindow = this._onDidDestroyWindow.event, this._onDidChangeWindowsCount = this._register(new D), this.onDidChangeWindowsCount = this._onDidChangeWindowsCount.event, this._onDidMaximizeWindow = this._register(new D), this.onDidMaximizeWindow = this._onDidMaximizeWindow.event, this._onDidUnmaximizeWindow = this._register(new D), this.onDidUnmaximizeWindow = this._onDidUnmaximizeWindow.event, this._onDidChangeFullScreen = this._register(new D), this.onDidChangeFullScreen = this._onDidChangeFullScreen.event, this._onDidTriggerSystemContextMenu = this._register(new D), this.onDidTriggerSystemContextMenu = this._onDidTriggerSystemContextMenu.event, this.windows = new Map, this.windowsStateHandler = this._register(new lp(this, c, this.lifecycleMainService, this.logService, this.configurationService)), this.registerListeners()
+                constructor(e, i, r, s, n, o, a, c, l, u, d, f, p, m, w, y, v, b, E, D, k, M, T) {
+                    super(), this.machineId = e, this.macMachineId = i, this.sqmId = r, this.devDeviceId = s, this.initialUserEnv = n, this.logService = o, this.loggerService = a, this.policyService = l, this.environmentMainService = u, this.userDataProfilesMainService = d, this.lifecycleMainService = f, this.backupMainService = p, this.configurationService = m, this.workspacesHistoryMainService = w, this.workspacesManagementMainService = y, this.instantiationService = v, this.dialogMainService = b, this.fileService = E, this.protocolMainService = D, this.themeMainService = k, this.auxiliaryWindowsMainService = M, this.cssDevelopmentService = T, this._onDidOpenWindow = this._register(new x), this.onDidOpenWindow = this._onDidOpenWindow.event, this._onDidSignalReadyWindow = this._register(new x), this.onDidSignalReadyWindow = this._onDidSignalReadyWindow.event, this._onDidDestroyWindow = this._register(new x), this.onDidDestroyWindow = this._onDidDestroyWindow.event, this._onDidChangeWindowsCount = this._register(new x), this.onDidChangeWindowsCount = this._onDidChangeWindowsCount.event, this._onDidMaximizeWindow = this._register(new x), this.onDidMaximizeWindow = this._onDidMaximizeWindow.event, this._onDidUnmaximizeWindow = this._register(new x), this.onDidUnmaximizeWindow = this._onDidUnmaximizeWindow.event, this._onDidChangeFullScreen = this._register(new x), this.onDidChangeFullScreen = this._onDidChangeFullScreen.event, this._onDidTriggerSystemContextMenu = this._register(new x), this.onDidTriggerSystemContextMenu = this._onDidTriggerSystemContextMenu.event, this.windows = new Map, this.windowsStateHandler = this._register(new lp(this, c, this.lifecycleMainService, this.logService, this.configurationService)), this.registerListeners()
                 }
                 registerListeners() {
                     this._register(this.workspacesManagementMainService.onDidEnterWorkspace(e => this._onDidSignalReadyWindow.fire(e.window))), this._register(this.onDidSignalReadyWindow(e => {
@@ -33157,14 +33210,14 @@ var pu, dp, tB = g({
                             let v = !0,
                                 b = !0;
                             if (y) {
-                                const E = f.filter(x => this.windowsStateHandler.state.lastActiveWindow && x.backupPath === this.windowsStateHandler.state.lastActiveWindow.backupPath);
+                                const E = f.filter(D => this.windowsStateHandler.state.lastActiveWindow && D.backupPath === this.windowsStateHandler.state.lastActiveWindow.backupPath);
                                 E.length && (E[0].focus(), v = !1, b = !1)
                             }
                             if (v)
                                 for (let E = f.length - 1; E >= 0; E--) {
-                                    const x = f[E];
-                                    if (!(x.openedWorkspace && a.some(k => x.openedWorkspace && k.workspace.id === x.openedWorkspace.id) || x.backupPath && c.some(k => x.backupPath && k.backupFolder === ct(x.backupPath)))) {
-                                        x.focus(), b = !1;
+                                    const D = f[E];
+                                    if (!(D.openedWorkspace && a.some(k => D.openedWorkspace && k.workspace.id === D.openedWorkspace.id) || D.backupPath && c.some(k => D.backupPath && k.backupFolder === ct(D.backupPath)))) {
+                                        D.focus(), b = !1;
                                         break
                                     }
                                 }
@@ -33203,26 +33256,26 @@ var pu, dp, tB = g({
                     const u = [];
                     let d;
 
-                    function f(x, k) {
-                        u.push(x), k && (d = x, o = void 0)
+                    function f(D, k) {
+                        u.push(D), k && (d = D, o = void 0)
                     }
                     let {
                         openFolderInNewWindow: p,
                         openFilesInNewWindow: m
                     } = this.shouldOpenNewWindow(e);
                     l && (p = !0, m = !0);
-                    const w = l ? this.getWindows().filter(x => x.config?.glass !== !0) : this.getWindows();
+                    const w = l ? this.getWindows().filter(D => D.config?.glass !== !0) : this.getWindows();
                     if (!e.initialStartup && (a.length > 0 || c.length > 0)) {
-                        const x = a.at(0)?.remoteAuthority ?? c.at(0)?.remoteAuthority,
-                            k = this.getLastActiveWindowForAuthority(x);
+                        const D = a.at(0)?.remoteAuthority ?? c.at(0)?.remoteAuthority,
+                            k = this.getLastActiveWindowForAuthority(D);
                         k && f(this.doAddRemoveFoldersInExistingWindow(k, a.map(M => M.workspace.uri), c.map(M => M.workspace.uri)))
                     }
                     const y = r.length + i.length + s.length;
                     if (o && y === 0) {
-                        const x = o.filesToOpenOrCreate[0] || o.filesToDiff[0] || o.filesToMerge[3],
+                        const D = o.filesToOpenOrCreate[0] || o.filesToDiff[0] || o.filesToMerge[3],
                             k = w.filter(T => o && Ti(T.remoteAuthority, o.remoteAuthority));
                         let M;
-                        x?.fileUri && !m && ((e.context === 4 || e.context === 0 || e.context === 1 || e.context === 6) && (M = await XW(k, x.fileUri, async T => T.configPath.scheme === O.file ? this.workspacesManagementMainService.resolveLocalWorkspace(T.configPath) : void 0)), M || (M = this.doGetLastActiveWindow(k))), M ? pi(M.openedWorkspace) ? i.push({
+                        D?.fileUri && !m && ((e.context === 4 || e.context === 0 || e.context === 1 || e.context === 6) && (M = await XW(k, D.fileUri, async T => T.configPath.scheme === O.file ? this.workspacesManagementMainService.resolveLocalWorkspace(T.configPath) : void 0)), M || (M = this.doGetLastActiveWindow(k))), M ? pi(M.openedWorkspace) ? i.push({
                             workspace: M.openedWorkspace,
                             remoteAuthority: M.remoteAuthority
                         }) : zi(M.openedWorkspace) ? r.push({
@@ -33243,46 +33296,46 @@ var pu, dp, tB = g({
                             forceTempProfile: e.forceTempProfile
                         }), !0)
                     }
-                    const v = Rr(i, x => x.workspace.id);
+                    const v = Rr(i, D => D.workspace.id);
                     if (v.length > 0) {
-                        const x = Ot(v.map(k => Ea(w, k.workspace.configPath)));
-                        if (x.length > 0) {
-                            const k = x[0],
+                        const D = Ot(v.map(k => Ea(w, k.workspace.configPath)));
+                        if (D.length > 0) {
+                            const k = D[0],
                                 M = Ti(o?.remoteAuthority, k.remoteAuthority) ? o : void 0;
                             f(this.doOpenFilesInExistingWindow(e, k, M), !!M), p = !0
                         }
                         for (const k of v) {
-                            if (x.some(X => X.openedWorkspace && X.openedWorkspace.id === k.workspace.id)) continue;
+                            if (D.some(X => X.openedWorkspace && X.openedWorkspace.id === k.workspace.id)) continue;
                             const M = k.remoteAuthority,
                                 T = Ti(o?.remoteAuthority, M) ? o : void 0;
                             f(await this.doOpenFolderOrWorkspace(e, k, p, T), !!T), p = !0
                         }
                     }
-                    const b = Rr(r, x => pt.getComparisonKey(x.workspace.uri));
+                    const b = Rr(r, D => pt.getComparisonKey(D.workspace.uri));
                     if (b.length > 0) {
-                        const x = Ot(b.map(k => Ea(w, k.workspace.uri)));
-                        if (x.length > 0) {
-                            const k = x[0],
+                        const D = Ot(b.map(k => Ea(w, k.workspace.uri)));
+                        if (D.length > 0) {
+                            const k = D[0],
                                 M = Ti(o?.remoteAuthority, k.remoteAuthority) ? o : void 0;
                             f(this.doOpenFilesInExistingWindow(e, k, M), !!M), p = !0
                         }
                         for (const k of b) {
-                            if (x.some(X => zi(X.openedWorkspace) && pt.isEqual(X.openedWorkspace.uri, k.workspace.uri))) continue;
+                            if (D.some(X => zi(X.openedWorkspace) && pt.isEqual(X.openedWorkspace.uri, k.workspace.uri))) continue;
                             const M = k.remoteAuthority,
                                 T = Ti(o?.remoteAuthority, M) ? o : void 0;
                             f(await this.doOpenFolderOrWorkspace(e, k, p, T), !!T), p = !0
                         }
                     }
-                    const E = Rr(s, x => x.backupFolder);
+                    const E = Rr(s, D => D.backupFolder);
                     if (E.length > 0)
-                        for (const x of E) {
-                            const k = x.remoteAuthority,
+                        for (const D of E) {
+                            const k = D.remoteAuthority,
                                 M = Ti(o?.remoteAuthority, k) ? o : void 0;
-                            f(await this.doOpenEmpty(e, !0, k, M, x), !!M), p = !0
+                            f(await this.doOpenEmpty(e, !0, k, M, D), !!M), p = !0
                         }
                     if (o || n && (e.forceEmpty || u.length === 0)) {
-                        const x = o ? o.remoteAuthority : e.remoteAuthority;
-                        f(await this.doOpenEmpty(e, p, x, o), !!o)
+                        const D = o ? o.remoteAuthority : e.remoteAuthority;
+                        f(await this.doOpenEmpty(e, p, D, o), !!o)
                     }
                     return {
                         windows: Rr(u),
@@ -33559,7 +33612,7 @@ var pu, dp, tB = g({
                     }
                 }
                 resourceFromOpenable(e) {
-                    return Hw(e) ? e.workspaceUri : D5(e) ? e.folderUri : e.fileUri
+                    return Hw(e) ? e.workspaceUri : x5(e) ? e.folderUri : e.fileUri
                 }
                 async doResolveFilePath(e, i, r) {
                     let s, n;
@@ -33804,7 +33857,7 @@ var pu, dp, tB = g({
                             },
                             nls: {
                                 messages: Pd(),
-                                language: xc()
+                                language: Dc()
                             },
                             filesToOpenOrCreate: e.filesToOpen?.filesToOpenOrCreate,
                             filesToDiff: e.filesToOpen?.filesToDiff,
@@ -34173,7 +34226,7 @@ var Ay, L6, fp, O6 = g({
             "use strict";
             K(), ca(), N(), Le(), G(), q(), va(), ht(), Bl(), Os(), Ls(), nB(), oB(), Ay = H("browserViewMainService"), L6 = class extends $ {
                 constructor(t, e, i, r) {
-                    super(), this.consoleLogs = [], this.networkRequests = [], this.onDidStartLoading = this._register(new D), this.onDidStopLoading = this._register(new D), this.onDidFinishLoad = this._register(new D), this.onDidFailLoad = this._register(new D), this.onDidNavigate = this._register(new D), this.onDidNavigateInPage = this._register(new D), this.onWillNavigate = this._register(new D), this.onPageTitleUpdated = this._register(new D), this.onBrowserMessage = this._register(new D), this.onDidFocus = this._register(new D), this.onDidBlur = this._register(new D), this.onCertificateError = this._register(new D), this.browserView = t, this.viewId = e, this.partition = i, this.isVisible = !1, this.parentWindow = r, this.injectedColorSchemeCSSKey = void 0;
+                    super(), this.consoleLogs = [], this.networkRequests = [], this.onDidStartLoading = this._register(new x), this.onDidStopLoading = this._register(new x), this.onDidFinishLoad = this._register(new x), this.onDidFailLoad = this._register(new x), this.onDidNavigate = this._register(new x), this.onDidNavigateInPage = this._register(new x), this.onWillNavigate = this._register(new x), this.onPageTitleUpdated = this._register(new x), this.onBrowserMessage = this._register(new x), this.onDidFocus = this._register(new x), this.onDidBlur = this._register(new x), this.onCertificateError = this._register(new x), this.browserView = t, this.viewId = e, this.partition = i, this.isVisible = !1, this.parentWindow = r, this.injectedColorSchemeCSSKey = void 0;
                     const s = t.webContents.session;
                     this._register({
                         dispose: () => {
@@ -34230,7 +34283,7 @@ var Ay, L6, fp, O6 = g({
                 }
             }, fp = class extends $ {
                 constructor(e, i, r, s, n, o) {
-                    super(), this.logService = e, this.windowsMainService = i, this.auxiliaryWindowsMainService = r, this.themeMainService = s, this.storageMainService = n, this.dialogMainService = o, this.browserViews = new Map, this.viewToWindow = new Map, this.sessionAcceptedCertificates = new Set, this.pendingCertVerifications = new Map, this.sessionNetworkTrackers = new Map, this.webviewTracker = new M6, this.webviewDestroyListeners = new Set, this._onDidCreateBrowserView = this._register(new D), this.onDidCreateBrowserView = this._onDidCreateBrowserView.event, this._register(this.themeMainService.onDidChangeColorScheme(() => {
+                    super(), this.logService = e, this.windowsMainService = i, this.auxiliaryWindowsMainService = r, this.themeMainService = s, this.storageMainService = n, this.dialogMainService = o, this.browserViews = new Map, this.viewToWindow = new Map, this.sessionAcceptedCertificates = new Set, this.pendingCertVerifications = new Map, this.sessionNetworkTrackers = new Map, this.webviewTracker = new M6, this.webviewDestroyListeners = new Set, this._onDidCreateBrowserView = this._register(new x), this.onDidCreateBrowserView = this._onDidCreateBrowserView.event, this._register(this.themeMainService.onDidChangeColorScheme(() => {
                         for (const a of this.browserViews.values())
                             for (const c of a.values()) this.injectColorSchemePreferenceForState(c)
                     })), this.setupWindowCloseCleanup()
@@ -34433,7 +34486,7 @@ This will open in an external application.`,
                             javascript: !0,
                             navigateOnDragDrop: !1,
                             enableBlinkFeatures: "StandardizedBrowserZoom",
-                            preload: xt.asFileUri("vs/platform/browserView/electron-main/preload-browser.js").fsPath
+                            preload: Dt.asFileUri("vs/platform/browserView/electron-main/preload-browser.js").fsPath
                         }
                     });
                     o.setBackgroundColor("#00000000");
@@ -34444,11 +34497,11 @@ This will open in an external application.`,
                     const u = new L6(o, s, i, n);
                     a.on("console-message", (p, m, w, y, v) => {
                         const E = ["log", "warning", "error", "debug", "info"][m] || "log",
-                            x = Date.now();
+                            D = Date.now();
                         u.consoleLogs.push({
                             type: E,
                             message: `${w}${v?` (${v}:${y})`:""}`,
-                            timestamp: x
+                            timestamp: D
                         });
                         const M = {
                             method: {
@@ -34459,7 +34512,7 @@ This will open in an external application.`,
                                 info: "info"
                             } [E] || "log",
                             args: [w],
-                            timestamp: x,
+                            timestamp: D,
                             url: a.getURL(),
                             source: v ? {
                                 fileName: v.split("/").pop() || v,
@@ -34594,8 +34647,8 @@ This will open in an external application.`,
                             this.logService.info(`[BrowserViewMainService] Using session-accepted certificate for ${w} (fingerprint: ${E})`), m(0);
                             return
                         }
-                        const x = d();
-                        if ((x ? JSON.parse(x.get("browserView.acceptedCertificates", "{}")) : {})[E]) {
+                        const D = d();
+                        if ((D ? JSON.parse(D.get("browserView.acceptedCertificates", "{}")) : {})[E]) {
                             this.logService.info(`[BrowserViewMainService] Using workspace-stored certificate for ${w} (fingerprint: ${E})`), m(0);
                             return
                         }
@@ -35603,7 +35656,7 @@ var q6, mu, za, pp, gp = g({
             }
         }, za = H("IExtensionsProfileScannerService"), pp = class extends $ {
             constructor(e, i, r, s, n) {
-                super(), this.extensionsLocation = e, this.fileService = i, this.userDataProfilesService = r, this.uriIdentityService = s, this.logService = n, this._onAddExtensions = this._register(new D), this.onAddExtensions = this._onAddExtensions.event, this._onDidAddExtensions = this._register(new D), this.onDidAddExtensions = this._onDidAddExtensions.event, this._onRemoveExtensions = this._register(new D), this.onRemoveExtensions = this._onRemoveExtensions.event, this._onDidRemoveExtensions = this._register(new D), this.onDidRemoveExtensions = this._onDidRemoveExtensions.event, this.resourcesAccessQueueMap = new Zt
+                super(), this.extensionsLocation = e, this.fileService = i, this.userDataProfilesService = r, this.uriIdentityService = s, this.logService = n, this._onAddExtensions = this._register(new x), this.onAddExtensions = this._onAddExtensions.event, this._onDidAddExtensions = this._register(new x), this.onDidAddExtensions = this._onDidAddExtensions.event, this._onRemoveExtensions = this._register(new x), this.onRemoveExtensions = this._onRemoveExtensions.event, this._onDidRemoveExtensions = this._register(new x), this.onDidRemoveExtensions = this._onDidRemoveExtensions.event, this.resourcesAccessQueueMap = new Zt
             }
             scanProfileExtensions(e, i) {
                 return this.withProfileExtensions(e, void 0, i)
@@ -35832,13 +35885,13 @@ var EB = g({
             Ee()
         }
     }),
-    vu, xe, kB, CB, G6, PB, IB, xB, DB, RB, AB, MB, z6, TB, LB, OB, K6, WB, FB, NB, UB, $B, BB, VB, jB, HB, qB, GB, zB, KB, XB, YB, JB, QB, ZB, eV, tV, iV, rV, X6 = g({
+    vu, De, kB, CB, G6, PB, IB, DB, xB, RB, AB, MB, z6, TB, LB, OB, K6, WB, FB, NB, UB, $B, BB, VB, jB, HB, qB, GB, zB, KB, XB, YB, JB, QB, ZB, eV, tV, iV, rV, X6 = g({
         "out-build/vs/base/common/semver/semver.js"() {
             "use strict";
-            vu = {}, xe = {
+            vu = {}, De = {
                 exports: vu
             }, (function(t, e) {
-                if (typeof vu == "object" && typeof xe == "object") xe.exports = e();
+                if (typeof vu == "object" && typeof De == "object") De.exports = e();
                 else if (typeof define == "function" && define.amd) define([], e);
                 else {
                     var i = e();
@@ -36007,11 +36060,11 @@ var EB = g({
                                 he = "";
                             if (P.prerelease.length || F.prerelease.length) {
                                 he = "pre";
-                                var De = "prerelease"
+                                var xe = "prerelease"
                             }
                             for (var ve in P)
                                 if ((ve === "major" || ve === "minor" || ve === "patch") && P[ve] !== F[ve]) return he + ve;
-                            return De
+                            return xe
                         }, r.compareIdentifiers = E;
                         var b = /^[0-9]+$/;
 
@@ -36021,32 +36074,32 @@ var EB = g({
                             return P && F && (_ = +_, C = +C), _ === C ? 0 : P && !F ? -1 : F && !P ? 1 : _ < C ? -1 : 1
                         }
 
-                        function x(_, C, P) {
+                        function D(_, C, P) {
                             return new v(_, P).compare(new v(C, P))
                         }
 
                         function k(_, C, P) {
-                            return x(_, C, P) > 0
+                            return D(_, C, P) > 0
                         }
 
                         function M(_, C, P) {
-                            return x(_, C, P) < 0
+                            return D(_, C, P) < 0
                         }
 
                         function T(_, C, P) {
-                            return x(_, C, P) === 0
+                            return D(_, C, P) === 0
                         }
 
                         function X(_, C, P) {
-                            return x(_, C, P) !== 0
+                            return D(_, C, P) !== 0
                         }
 
                         function B(_, C, P) {
-                            return x(_, C, P) >= 0
+                            return D(_, C, P) >= 0
                         }
 
                         function se(_, C, P) {
-                            return x(_, C, P) <= 0
+                            return D(_, C, P) <= 0
                         }
 
                         function Ye(_, C, P, F) {
@@ -36093,14 +36146,14 @@ var EB = g({
                             return new v(_, C).minor
                         }, r.patch = function(_, C) {
                             return new v(_, C).patch
-                        }, r.compare = x, r.compareLoose = function(_, C) {
-                            return x(_, C, !0)
+                        }, r.compare = D, r.compareLoose = function(_, C) {
+                            return D(_, C, !0)
                         }, r.compareBuild = function(_, C, P) {
                             var F = new v(_, P),
                                 he = new v(C, P);
                             return F.compare(he) || F.compareBuild(he)
                         }, r.rcompare = function(_, C, P) {
-                            return x(C, _, P)
+                            return D(C, _, P)
                         }, r.sort = function(_, C) {
                             return _.sort(function(P, F) {
                                 return r.compareBuild(P, F, C)
@@ -36128,8 +36181,8 @@ var EB = g({
                         }
 
                         function Q(_, C) {
-                            for (var P = !0, F = _.slice(), he = F.pop(); P && F.length;) P = F.every(function(De) {
-                                return he.intersects(De, C)
+                            for (var P = !0, F = _.slice(), he = F.pop(); P && F.length;) P = F.every(function(xe) {
+                                return he.intersects(xe, C)
                             }), he = F.pop();
                             return P
                         }
@@ -36138,7 +36191,7 @@ var EB = g({
                             return !_ || _.toLowerCase() === "x" || _ === "*"
                         }
 
-                        function Z(_, C, P, F, he, De, ve, kt, ft, Tt, ar, _e, Lt) {
+                        function Z(_, C, P, F, he, xe, ve, kt, ft, Tt, ar, _e, Lt) {
                             return ((C = W(P) ? "" : W(F) ? ">=" + P + ".0.0" : W(he) ? ">=" + P + "." + F + ".0" : ">=" + C) + " " + (kt = W(ft) ? "" : W(Tt) ? "<" + (+ft + 1) + ".0.0" : W(ar) ? "<" + ft + "." + (+Tt + 1) + ".0" : _e ? "<=" + ft + "." + Tt + "." + ar + "-" + _e : "<=" + kt)).trim()
                         }
 
@@ -36165,13 +36218,13 @@ var EB = g({
                         }
 
                         function de(_, C, P, F) {
-                            var he, De, ve, kt, ft;
+                            var he, xe, ve, kt, ft;
                             switch (_ = new v(_, F), C = new ae(C, F), P) {
                                 case ">":
-                                    he = k, De = se, ve = M, kt = ">", ft = ">=";
+                                    he = k, xe = se, ve = M, kt = ">", ft = ">=";
                                     break;
                                 case "<":
-                                    he = M, De = B, ve = k, kt = "<", ft = "<=";
+                                    he = M, xe = B, ve = k, kt = "<", ft = "<=";
                                     break;
                                 default:
                                     throw new TypeError('Must provide a hilo val of "<" or ">"')
@@ -36183,7 +36236,7 @@ var EB = g({
                                     Lt = null;
                                 if (ar.forEach(function(Bi) {
                                         Bi.semver === Rt && (Bi = new oe(">=0.0.0")), _e = _e || Bi, Lt = Lt || Bi, he(Bi.semver, _e.semver, F) ? _e = Bi : ve(Bi.semver, Lt.semver, F) && (Lt = Bi)
-                                    }), _e.operator === kt || _e.operator === ft || (!Lt.operator || Lt.operator === kt) && De(_, Lt.semver) || Lt.operator === ft && ve(_, Lt.semver)) return !1
+                                    }), _e.operator === kt || _e.operator === ft || (!Lt.operator || Lt.operator === kt) && xe(_, Lt.semver) || Lt.operator === ft && ve(_, Lt.semver)) return !1
                             }
                             return !0
                         }
@@ -36212,11 +36265,11 @@ var EB = g({
                             if (_.operator === "") return _.value === "" || (P = new ae(this.value, C), te(_.semver, P, C));
                             var F = !(this.operator !== ">=" && this.operator !== ">" || _.operator !== ">=" && _.operator !== ">"),
                                 he = !(this.operator !== "<=" && this.operator !== "<" || _.operator !== "<=" && _.operator !== "<"),
-                                De = this.semver.version === _.semver.version,
+                                xe = this.semver.version === _.semver.version,
                                 ve = !(this.operator !== ">=" && this.operator !== "<=" || _.operator !== ">=" && _.operator !== "<="),
                                 kt = Ye(this.semver, "<", _.semver, C) && (this.operator === ">=" || this.operator === ">") && (_.operator === "<=" || _.operator === "<"),
                                 ft = Ye(this.semver, ">", _.semver, C) && (this.operator === "<=" || this.operator === "<") && (_.operator === ">=" || _.operator === ">");
-                            return F || he || De && ve || kt || ft
+                            return F || he || xe && ve || kt || ft
                         }, r.Range = ae, ae.prototype.format = function() {
                             return this.range = this.set.map(function(_) {
                                 return _.join(" ").trim()
@@ -36228,7 +36281,7 @@ var EB = g({
                                 P = C ? a[l.HYPHENRANGELOOSE] : a[l.HYPHENRANGE];
                             _ = _.replace(P, Z), s("hyphen replace", _), _ = _.replace(a[l.COMPARATORTRIM], "$1$2$3"), s("comparator trim", _, a[l.COMPARATORTRIM]), _ = (_ = (_ = _.replace(a[l.TILDETRIM], "$1~")).replace(a[l.CARETTRIM], "$1^")).split(/\s+/).join(" ");
                             var F = C ? a[l.COMPARATORLOOSE] : a[l.COMPARATOR],
-                                he = _.split(" ").map(function(De) {
+                                he = _.split(" ").map(function(xe) {
                                     return (function(ve, kt) {
                                         return s("comp", ve, kt), ve = (function(ft, Tt) {
                                             return ft.trim().split(/\s+/).map(function(ar) {
@@ -36269,20 +36322,20 @@ var EB = g({
                                         })(ve, kt), s("xrange", ve), ve = (function(ft, Tt) {
                                             return s("replaceStars", ft, Tt), ft.trim().replace(a[l.STAR], "")
                                         })(ve, kt), s("stars", ve), ve
-                                    })(De, this.options)
+                                    })(xe, this.options)
                                 }, this).join(" ").split(/\s+/);
-                            return this.options.loose && (he = he.filter(function(De) {
-                                return !!De.match(F)
-                            })), he.map(function(De) {
-                                return new oe(De, this.options)
+                            return this.options.loose && (he = he.filter(function(xe) {
+                                return !!xe.match(F)
+                            })), he.map(function(xe) {
+                                return new oe(xe, this.options)
                             }, this)
                         }, ae.prototype.intersects = function(_, C) {
                             if (!(_ instanceof ae)) throw new TypeError("a Range is required");
                             return this.set.some(function(P) {
                                 return Q(P, C) && _.set.some(function(F) {
                                     return Q(F, C) && P.every(function(he) {
-                                        return F.every(function(De) {
-                                            return he.intersects(De, C)
+                                        return F.every(function(xe) {
+                                            return he.intersects(xe, C)
                                         })
                                     })
                                 })
@@ -36307,23 +36360,23 @@ var EB = g({
                             var F = null,
                                 he = null;
                             try {
-                                var De = new ae(C, P)
+                                var xe = new ae(C, P)
                             } catch {
                                 return null
                             }
                             return _.forEach(function(ve) {
-                                De.test(ve) && (F && he.compare(ve) !== -1 || (he = new v(F = ve, P)))
+                                xe.test(ve) && (F && he.compare(ve) !== -1 || (he = new v(F = ve, P)))
                             }), F
                         }, r.minSatisfying = function(_, C, P) {
                             var F = null,
                                 he = null;
                             try {
-                                var De = new ae(C, P)
+                                var xe = new ae(C, P)
                             } catch {
                                 return null
                             }
                             return _.forEach(function(ve) {
-                                De.test(ve) && (F && he.compare(ve) !== 1 || (he = new v(F = ve, P)))
+                                xe.test(ve) && (F && he.compare(ve) !== 1 || (he = new v(F = ve, P)))
                             }), F
                         }, r.minVersion = function(_, C) {
                             _ = new ae(_, C);
@@ -36331,13 +36384,13 @@ var EB = g({
                             if (_.test(P) || (P = new v("0.0.0-0"), _.test(P))) return P;
                             P = null;
                             for (var F = 0; F < _.set.length; ++F) _.set[F].forEach(function(he) {
-                                var De = new v(he.semver.version);
+                                var xe = new v(he.semver.version);
                                 switch (he.operator) {
                                     case ">":
-                                        De.prerelease.length === 0 ? De.patch++ : De.prerelease.push(0), De.raw = De.format();
+                                        xe.prerelease.length === 0 ? xe.patch++ : xe.prerelease.push(0), xe.raw = xe.format();
                                     case "":
                                     case ">=":
-                                        P && !k(P, De) || (P = De);
+                                        P && !k(P, xe) || (P = xe);
                                         break;
                                     case "<":
                                     case "<=":
@@ -36383,7 +36436,7 @@ var EB = g({
                     return t[r](n, n.exports, i), n.exports
                 })(97);
                 var t, e
-            }), kB = xe.exports.SEMVER_SPEC_VERSION, CB = xe.exports.parse, G6 = xe.exports.valid, PB = xe.exports.coerce, IB = xe.exports.clean, xB = xe.exports.inc, DB = xe.exports.major, RB = xe.exports.minor, AB = xe.exports.patch, MB = xe.exports.prerelease, z6 = xe.exports.gt, TB = xe.exports.gte, LB = xe.exports.lt, OB = xe.exports.lte, K6 = xe.exports.eq, WB = xe.exports.neq, FB = xe.exports.cmp, NB = xe.exports.compare, UB = xe.exports.rcompare, $B = xe.exports.compareIdentifiers, BB = xe.exports.rcompareIdentifiers, VB = xe.exports.compareBuild, jB = xe.exports.sort, HB = xe.exports.rsort, qB = xe.exports.diff, GB = xe.exports.validRange, zB = xe.exports.satisfies, KB = xe.exports.maxSatisfying, XB = xe.exports.minSatisfying, YB = xe.exports.minVersion, JB = xe.exports.gtr, QB = xe.exports.ltr, ZB = xe.exports.outside, eV = xe.exports.intersects, tV = xe.exports.SemVer, iV = xe.exports.Comparator, rV = xe.exports.Range
+            }), kB = De.exports.SEMVER_SPEC_VERSION, CB = De.exports.parse, G6 = De.exports.valid, PB = De.exports.coerce, IB = De.exports.clean, DB = De.exports.inc, xB = De.exports.major, RB = De.exports.minor, AB = De.exports.patch, MB = De.exports.prerelease, z6 = De.exports.gt, TB = De.exports.gte, LB = De.exports.lt, OB = De.exports.lte, K6 = De.exports.eq, WB = De.exports.neq, FB = De.exports.cmp, NB = De.exports.compare, UB = De.exports.rcompare, $B = De.exports.compareIdentifiers, BB = De.exports.rcompareIdentifiers, VB = De.exports.compareBuild, jB = De.exports.sort, HB = De.exports.rsort, qB = De.exports.diff, GB = De.exports.validRange, zB = De.exports.satisfies, KB = De.exports.maxSatisfying, XB = De.exports.minSatisfying, YB = De.exports.minVersion, JB = De.exports.gtr, QB = De.exports.ltr, ZB = De.exports.outside, eV = De.exports.intersects, tV = De.exports.SemVer, iV = De.exports.Comparator, rV = De.exports.Range
         }
     }),
     Y6, J6, sV = g({
@@ -37051,7 +37104,7 @@ var pV = g({
                 t.equals = e
             })(Ny || (Ny = {})), e9 = H("IExtensionsScannerService"), mp = class extends $ {
                 constructor(e, i, r, s, n, o, a, c, l, u, d, f) {
-                    super(), this.systemExtensionsLocation = e, this.userExtensionsLocation = i, this.extensionsControlLocation = r, this.currentProfile = s, this.userDataProfilesService = n, this.extensionsProfileScannerService = o, this.fileService = a, this.logService = c, this.environmentService = l, this.productService = u, this.uriIdentityService = d, this.instantiationService = f, this._onDidChangeCache = this._register(new D), this.onDidChangeCache = this._onDidChangeCache.event, this.initializeDefaultProfileExtensionsPromise = void 0, this.systemExtensionsCachedScanner = this._register(this.instantiationService.createInstance(yu, this.currentProfile)), this.userExtensionsCachedScanner = this._register(this.instantiationService.createInstance(yu, this.currentProfile)), this.extensionsScanner = this._register(this.instantiationService.createInstance(wu)), this._register(this.systemExtensionsCachedScanner.onDidChangeCache(() => this._onDidChangeCache.fire(0))), this._register(this.userExtensionsCachedScanner.onDidChangeCache(() => this._onDidChangeCache.fire(1)))
+                    super(), this.systemExtensionsLocation = e, this.userExtensionsLocation = i, this.extensionsControlLocation = r, this.currentProfile = s, this.userDataProfilesService = n, this.extensionsProfileScannerService = o, this.fileService = a, this.logService = c, this.environmentService = l, this.productService = u, this.uriIdentityService = d, this.instantiationService = f, this._onDidChangeCache = this._register(new x), this.onDidChangeCache = this._onDidChangeCache.event, this.initializeDefaultProfileExtensionsPromise = void 0, this.systemExtensionsCachedScanner = this._register(this.instantiationService.createInstance(yu, this.currentProfile)), this.userExtensionsCachedScanner = this._register(this.instantiationService.createInstance(yu, this.currentProfile)), this.extensionsScanner = this._register(this.instantiationService.createInstance(wu)), this._register(this.systemExtensionsCachedScanner.onDidChangeCache(() => this._onDidChangeCache.fire(0))), this._register(this.userExtensionsCachedScanner.onDidChangeCache(() => this._onDidChangeCache.fire(1)))
                 }
                 getTargetPlatform() {
                     return this._targetPlatformPromise || (this._targetPlatformPromise = SB(this.fileService, this.logService)), this._targetPlatformPromise
@@ -37220,7 +37273,7 @@ var pV = g({
                     this.logService.trace("Started scanning dev system extensions");
                     const s = i ? await this.getBuiltInExtensionControl() : {},
                         n = [],
-                        o = A.file(Ai(U(xt.asFileUri("").fsPath, "..", ".build", "builtInExtensions")));
+                        o = A.file(Ai(U(Dt.asFileUri("").fsPath, "..", ".build", "builtInExtensions")));
                     for (const c of r) {
                         const l = s[c.name] || "marketplace";
                         switch (l) {
@@ -37531,7 +37584,7 @@ var pV = g({
                 }
             }, wu = __decorate([__param(0, za), __param(1, Fi), __param(2, bt), __param(3, ze), __param(4, vr), __param(5, j)], wu), yu = class extends wu {
                 constructor(e, i, r, s, n, o, a, c) {
-                    super(r, s, n, o, a, c), this.currentProfile = e, this.userDataProfilesService = i, this.cacheValidatorThrottler = this._register(new Ps(3e3)), this._onDidChangeCache = this._register(new D), this.onDidChangeCache = this._onDidChangeCache.event
+                    super(r, s, n, o, a, c), this.currentProfile = e, this.userDataProfilesService = i, this.cacheValidatorThrottler = this._register(new Ps(3e3)), this._onDidChangeCache = this._register(new x), this.onDidChangeCache = this._onDidChangeCache.event
                 }
                 async scanExtensions(e) {
                     const i = this.getCacheFile(e),
@@ -37642,7 +37695,7 @@ var pV = g({
                 constructor(t, e, i) {
                     super(), this.storageMainService = t, this.userDataProfilesService = e, this.logService = i;
                     const r = this._register(new Qs);
-                    this._onDidChange = this._register(new D({
+                    this._onDidChange = this._register(new x({
                         onWillAddFirstListener: () => r.value = this.registerStorageChangeListeners(),
                         onDidRemoveLastListener: () => r.value = void 0
                     }))
@@ -37764,7 +37817,7 @@ var IV = g({
             vi(), _V(), $l()
         }
     }),
-    yp, xV = g({
+    yp, DV = g({
         "out-build/vs/platform/extensionManagement/node/extensionsProfileScannerService.js"() {
             "use strict";
             q(), ns(), rs(), gp(), ot(), _i(), ne(), yp = class extends pp {
@@ -37774,7 +37827,7 @@ var IV = g({
             }, yp = __decorate([__param(0, Or), __param(1, bt), __param(2, ss), __param(3, Fi), __param(4, j)], yp)
         }
     }),
-    n9, DV = g({
+    n9, xV = g({
         "out-build/vs/platform/log/electron-main/logIpc.js"() {
             "use strict";
             ui(), ne(), q(), n9 = class {
@@ -37882,7 +37935,7 @@ var IV = g({
                 }
             }, Sp = __decorate([__param(0, j), __param(1, ut), __param(2, mi), __param(3, tt)], Sp), _p = class extends $ {
                 constructor(e, i, r, s, n) {
-                    super(), this.windowsMainService = i, this.configuration = n, this._onDidTerminate = this._register(new D), this.onDidTerminate = this._onDidTerminate.event, this.utilityProcess = this._register(new Wl(e, i, r, s)), this.registerListeners()
+                    super(), this.windowsMainService = i, this.configuration = n, this._onDidTerminate = this._register(new x), this.onDidTerminate = this._onDidTerminate.event, this.utilityProcess = this._register(new Wl(e, i, r, s)), this.registerListeners()
                 }
                 registerListeners() {
                     this._register(this.utilityProcess.onExit(e => this._onDidTerminate.fire({
@@ -37985,7 +38038,7 @@ var IV = g({
             "use strict";
             Xe(), vw(), yt(), q(), vo(), Ia(), MC(), mr(), N(), K(), br(), Ze(), Le(), bp = class extends $ {
                 constructor(e, i, r, s, n) {
-                    super(), this._reconnectConstants = e, this._configurationService = i, this._environmentMainService = r, this._lifecycleMainService = s, this._logService = n, this.utilityProcess = void 0, this._onRequestConnection = new D, this.onRequestConnection = this._onRequestConnection.event, this._onWillShutdown = new D, this.onWillShutdown = this._onWillShutdown.event, this._register(this._lifecycleMainService.onWillShutdown(() => this._onWillShutdown.fire())), le.on("vscode:createPtyHostMessageChannel", (o, a) => this._onWindowConnection(o, a)), this._register(Se(() => {
+                    super(), this._reconnectConstants = e, this._configurationService = i, this._environmentMainService = r, this._lifecycleMainService = s, this._logService = n, this.utilityProcess = void 0, this._onRequestConnection = new x, this.onRequestConnection = this._onRequestConnection.event, this._onWillShutdown = new x, this.onWillShutdown = this._onWillShutdown.event, this._register(this._lifecycleMainService.onWillShutdown(() => this._onWillShutdown.fire())), le.on("vscode:createPtyHostMessageChannel", (o, a) => this._onWindowConnection(o, a)), this._register(Se(() => {
                         le.removeHandler("vscode:createPtyHostMessageChannel")
                     }))
                 }
@@ -38071,7 +38124,7 @@ var IV = g({
             "use strict";
             ce(), vt(), K(), N(), q(), Ep = class extends $ {
                 constructor(e, i) {
-                    super(), this._logService = i, this._lastRequestId = 0, this._pendingRequests = new Map, this._pendingRequestDisposables = new Map, this._onCreateRequest = this._register(new D), this.onCreateRequest = this._onCreateRequest.event, this._timeout = e === void 0 ? 15e3 : e, this._register(Se(() => {
+                    super(), this._logService = i, this._lastRequestId = 0, this._pendingRequests = new Map, this._pendingRequestDisposables = new Map, this._onCreateRequest = this._register(new x), this.onCreateRequest = this._onCreateRequest.event, this._timeout = e === void 0 ? 15e3 : e, this._register(Se(() => {
                         for (const r of this._pendingRequestDisposables.values()) Ft(r)
                     }))
                 }
@@ -38139,7 +38192,7 @@ function By(t) {
 }
 
 function VV() {
-    Mi.as(fr.Configuration).registerConfiguration(x9), jV()
+    Mi.as(fr.Configuration).registerConfiguration(D9), jV()
 }
 
 function jV(t, e) {
@@ -38183,7 +38236,7 @@ function jV(t, e) {
         remove: s ? [s] : []
     })
 }
-var P9, I9, yo, kp, Cp, x9, Vy, HV = g({
+var P9, I9, yo, kp, Cp, D9, Vy, HV = g({
         "out-build/vs/platform/terminal/common/terminalPlatformConfiguration.js"() {
             "use strict";
             ap(), z(), Ee(), Fn(), ks(), BV(), P9 = {
@@ -38248,7 +38301,7 @@ var P9, I9, yo, kp, Cp, x9, Vy, HV = g({
                     },
                     ...yo
                 }
-            }, x9 = {
+            }, D9 = {
                 id: "terminal",
                 order: 100,
                 title: S(2269, null),
@@ -38486,7 +38539,7 @@ var P9, I9, yo, kp, Cp, x9, Vy, HV = g({
             }
         }
     }),
-    Su, D9 = g({
+    Su, x9 = g({
         "out-build/vs/platform/terminal/common/environmentVariable.js"() {
             "use strict";
             (function(t) {
@@ -38502,7 +38555,7 @@ var P9, I9, yo, kp, Cp, x9, Vy, HV = g({
     GV, zV = g({
         "out-build/vs/platform/terminal/common/environmentVariableCollection.js"() {
             "use strict";
-            z(), D9(), GV = new Map([
+            z(), x9(), GV = new Map([
                 [Su.Append, "APPEND"],
                 [Su.Prepend, "PREPEND"],
                 [Su.Replace, "REPLACE"]
@@ -38521,7 +38574,7 @@ function XV() {
 var Nr, fs, YV = g({
     "out-build/vs/platform/terminal/node/terminalEnvironment.js"() {
         "use strict";
-        Le(), Ce(), z(), Gr(), ti(), D9(), qV(), zV(), (function(t) {
+        Le(), Ce(), z(), Gr(), ti(), x9(), qV(), zV(), (function(t) {
             t.WindowsPwsh = "windows-pwsh", t.WindowsPwshLogin = "windows-pwsh-login", t.Pwsh = "pwsh", t.PwshLogin = "pwsh-login", t.Zsh = "zsh", t.ZshLogin = "zsh-login", t.Bash = "bash", t.Fish = "fish", t.FishLogin = "fish-login"
         })(Nr || (Nr = {})), fs = new Map, fs.set(Nr.WindowsPwsh, ["-noexit", "-command", 'try { . "{0}\\out\\vs\\workbench\\contrib\\terminal\\common\\scripts\\shellIntegration.ps1" } catch {}{1}']), fs.set(Nr.WindowsPwshLogin, ["-l", "-noexit", "-command", 'try { . "{0}\\out\\vs\\workbench\\contrib\\terminal\\common\\scripts\\shellIntegration.ps1" } catch {}{1}']), fs.set(Nr.Pwsh, ["-noexit", "-command", '. "{0}/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration.ps1"{1}']), fs.set(Nr.PwshLogin, ["-l", "-noexit", "-command", '. "{0}/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration.ps1"']), fs.set(Nr.Zsh, ["-i"]), fs.set(Nr.ZshLogin, ["-il"]), fs.set(Nr.Bash, ["--init-file", "{0}/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"]), fs.set(Nr.Fish, ["--init-command", 'source "{0}/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration.fish"']), fs.set(Nr.FishLogin, ["-l", "--init-command", 'source "{0}/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration.fish"'])
     }
@@ -38793,7 +38846,7 @@ var T9, _u, jy, uj = g({
                     this.__connection || this._startPtyHost()
                 }
                 constructor(e, i, r, s) {
-                    super(), this._ptyHostStarter = e, this._configurationService = i, this._logService = r, this._loggerService = s, this._wasQuitRequested = !1, this._restartCount = 0, this._isResponsive = !0, this._onPtyHostExit = this._register(new D), this.onPtyHostExit = this._onPtyHostExit.event, this._onPtyHostStart = this._register(new D), this.onPtyHostStart = this._onPtyHostStart.event, this._onPtyHostUnresponsive = this._register(new D), this.onPtyHostUnresponsive = this._onPtyHostUnresponsive.event, this._onPtyHostResponsive = this._register(new D), this.onPtyHostResponsive = this._onPtyHostResponsive.event, this._onPtyHostRequestResolveVariables = this._register(new D), this.onPtyHostRequestResolveVariables = this._onPtyHostRequestResolveVariables.event, this._onProcessData = this._register(new D), this.onProcessData = this._onProcessData.event, this._onProcessReady = this._register(new D), this.onProcessReady = this._onProcessReady.event, this._onProcessReplay = this._register(new D), this.onProcessReplay = this._onProcessReplay.event, this._onProcessOrphanQuestion = this._register(new D), this.onProcessOrphanQuestion = this._onProcessOrphanQuestion.event, this._onDidRequestDetach = this._register(new D), this.onDidRequestDetach = this._onDidRequestDetach.event, this._onDidChangeProperty = this._register(new D), this.onDidChangeProperty = this._onDidChangeProperty.event, this._onProcessExit = this._register(new D), this.onProcessExit = this._onProcessExit.event, VV(), this._register(this._ptyHostStarter), this._register(Se(() => this._disposePtyHost())), this._resolveVariablesRequestStore = this._register(new Ep(void 0, this._logService)), this._register(this._resolveVariablesRequestStore.onCreateRequest(this._onPtyHostRequestResolveVariables.fire, this._onPtyHostRequestResolveVariables)), this._ptyHostStarter.onRequestConnection && this._register(R.once(this._ptyHostStarter.onRequestConnection)(() => this._ensurePtyHost())), this._ptyHostStarter.onWillShutdown && this._register(this._ptyHostStarter.onWillShutdown(() => this._wasQuitRequested = !0))
+                    super(), this._ptyHostStarter = e, this._configurationService = i, this._logService = r, this._loggerService = s, this._wasQuitRequested = !1, this._restartCount = 0, this._isResponsive = !0, this._onPtyHostExit = this._register(new x), this.onPtyHostExit = this._onPtyHostExit.event, this._onPtyHostStart = this._register(new x), this.onPtyHostStart = this._onPtyHostStart.event, this._onPtyHostUnresponsive = this._register(new x), this.onPtyHostUnresponsive = this._onPtyHostUnresponsive.event, this._onPtyHostResponsive = this._register(new x), this.onPtyHostResponsive = this._onPtyHostResponsive.event, this._onPtyHostRequestResolveVariables = this._register(new x), this.onPtyHostRequestResolveVariables = this._onPtyHostRequestResolveVariables.event, this._onProcessData = this._register(new x), this.onProcessData = this._onProcessData.event, this._onProcessReady = this._register(new x), this.onProcessReady = this._onProcessReady.event, this._onProcessReplay = this._register(new x), this.onProcessReplay = this._onProcessReplay.event, this._onProcessOrphanQuestion = this._register(new x), this.onProcessOrphanQuestion = this._onProcessOrphanQuestion.event, this._onDidRequestDetach = this._register(new x), this.onDidRequestDetach = this._onDidRequestDetach.event, this._onDidChangeProperty = this._register(new x), this.onDidChangeProperty = this._onDidChangeProperty.event, this._onProcessExit = this._register(new x), this.onProcessExit = this._onProcessExit.event, VV(), this._register(this._ptyHostStarter), this._register(Se(() => this._disposePtyHost())), this._resolveVariablesRequestStore = this._register(new Ep(void 0, this._logService)), this._register(this._resolveVariablesRequestStore.onCreateRequest(this._onPtyHostRequestResolveVariables.fire, this._onPtyHostRequestResolveVariables)), this._ptyHostStarter.onRequestConnection && this._register(R.once(this._ptyHostStarter.onRequestConnection)(() => this._ensurePtyHost())), this._ptyHostStarter.onWillShutdown && this._register(this._ptyHostStarter.onWillShutdown(() => this._wasQuitRequested = !0))
                 }
                 get _ignoreProcessNames() {
                     return this._configurationService.getValue("terminal.integrated.ignoreProcessNames")
@@ -39002,10 +39055,10 @@ var T9, _u, jy, uj = g({
 import {
     BrowserWindow as fj
 } from "electron";
-var xp, pj = g({
+var Dp, pj = g({
     "out-build/vs/platform/auxiliaryWindow/electron-main/auxiliaryWindow.js"() {
         "use strict";
-        z(), Ze(), Xe(), yt(), q(), Gi(), Ms(), R6(), xp = class extends xy {
+        z(), Ze(), Xe(), yt(), q(), Gi(), Ms(), R6(), Dp = class extends Dy {
             get win() {
                 return super.win || this.tryClaimWindow(), super.win
             }
@@ -39034,19 +39087,19 @@ var xp, pj = g({
             matches(e) {
                 return this.webContents.id === e.id
             }
-        }, xp = __decorate([__param(1, je), __param(2, j), __param(3, Qe), __param(4, Wi), __param(5, tt)], xp)
+        }, Dp = __decorate([__param(1, je), __param(2, j), __param(3, Qe), __param(4, Wi), __param(5, tt)], Dp)
     }
 });
 import {
     BrowserWindow as gj,
     app as mj
 } from "electron";
-var Dp, vj = g({
+var xp, vj = g({
         "out-build/vs/platform/auxiliaryWindow/electron-main/auxiliaryWindowsMainService.js"() {
             "use strict";
-            K(), N(), Le(), mr(), pj(), G(), q(), bl(), ht(), Dp = class extends $ {
+            K(), N(), Le(), mr(), pj(), G(), q(), bl(), ht(), xp = class extends $ {
                 constructor(e, i) {
-                    super(), this.instantiationService = e, this.logService = i, this._onDidMaximizeWindow = this._register(new D), this.onDidMaximizeWindow = this._onDidMaximizeWindow.event, this._onDidUnmaximizeWindow = this._register(new D), this.onDidUnmaximizeWindow = this._onDidUnmaximizeWindow.event, this._onDidChangeFullScreen = this._register(new D), this.onDidChangeFullScreen = this._onDidChangeFullScreen.event, this._onDidTriggerSystemContextMenu = this._register(new D), this.onDidTriggerSystemContextMenu = this._onDidTriggerSystemContextMenu.event, this.windows = new Map, this.registerListeners()
+                    super(), this.instantiationService = e, this.logService = i, this._onDidMaximizeWindow = this._register(new x), this.onDidMaximizeWindow = this._onDidMaximizeWindow.event, this._onDidUnmaximizeWindow = this._register(new x), this.onDidUnmaximizeWindow = this._onDidUnmaximizeWindow.event, this._onDidChangeFullScreen = this._register(new x), this.onDidChangeFullScreen = this._onDidChangeFullScreen.event, this._onDidTriggerSystemContextMenu = this._register(new x), this.onDidTriggerSystemContextMenu = this._onDidTriggerSystemContextMenu.event, this.windows = new Map, this.registerListeners()
                 }
                 registerListeners() {
                     mj.on("browser-window-created", (e, i) => {
@@ -39076,7 +39129,7 @@ var Dp, vj = g({
                         overrides: r
                     } = this.computeWindowStateAndOverrides(e);
                     return this.instantiationService.invokeFunction(Mh, i, r, {
-                        preload: xt.asFileUri("vs/base/parts/sandbox/electron-sandbox/preload-aux.js").fsPath
+                        preload: Dt.asFileUri("vs/base/parts/sandbox/electron-sandbox/preload-aux.js").fsPath
                     })
                 }
                 computeWindowStateAndOverrides(e) {
@@ -39122,7 +39175,7 @@ var Dp, vj = g({
                 }
                 registerWindow(e) {
                     const i = new Me,
-                        r = this.instantiationService.createInstance(xp, e);
+                        r = this.instantiationService.createInstance(Dp, e);
                     this.windows.set(r.id, r), i.add(Se(() => this.windows.delete(r.id))), i.add(r.onDidMaximize(() => this._onDidMaximizeWindow.fire(r))), i.add(r.onDidUnmaximize(() => this._onDidUnmaximizeWindow.fire(r))), i.add(r.onDidEnterFullScreen(() => this._onDidChangeFullScreen.fire({
                         window: r,
                         fullscreen: !0
@@ -39152,7 +39205,7 @@ var Dp, vj = g({
                 getWindows() {
                     return Array.from(this.windows.values())
                 }
-            }, Dp = __decorate([__param(0, Xr), __param(1, j)], Dp)
+            }, xp = __decorate([__param(0, Xr), __param(1, j)], xp)
         }
     }),
     W9, wj = g({
@@ -39334,7 +39387,7 @@ function Pj(t, e) {
     })
 }
 
-function Ij(t, e, i = D8(64)) {
+function Ij(t, e, i = x8(64)) {
     const r = {
             flush: n => i.drain(n),
             send: n => i.add(() => e.sendEnvelope(t, n)).then(() => ({
@@ -39349,7 +39402,7 @@ function Ij(t, e, i = D8(64)) {
     return Pt().buffer = [], Pt().transport = r, $.None
 }
 
-function xj(t, e) {
+function Dj(t, e) {
     if (t === "main") return $.None;
     const i = r => {
         const s = {};
@@ -39360,9 +39413,9 @@ function xj(t, e) {
     }), i(Ir().getScopeData()), Ir().clearBreadcrumbs(), $.None
 }
 
-function Dj(t, e) {
+function xj(t, e) {
     const i = new Me;
-    return i.add(Pj(t, e)), i.add(Ij(t, e)), i.add(xj(t, e)), i
+    return i.add(Pj(t, e)), i.add(Ij(t, e)), i.add(Dj(t, e)), i
 }
 var U9, $9, Rp, Ap, Ky, Rj = g({
         "out-build/vs/platform/tracing/common/register.js"() {
@@ -39613,7 +39666,7 @@ var Ur, Lp, Gj = g({
                         ...Ur.DEFAULT_CLIENT_TRACING_CONFIG
                     }, this._replayConfig = {
                         ...Ur.DEFAULT_REPLAY_CONFIG
-                    }, this._debuggingDataUploadUrl = null, this._isPrivacyMode = null, this._isInternalUser = !1, this._transport = null, this._userEmail = null, this._userId = null, this._watchedRenderers = new Map, this._watcherDisposables = [], this._failedStatusCodes = [], this._eventIdToProfile = new Xo(100), this._rateLimiter = new B9(60 * 1e3), this._processConfigUpdateEvent = new D, this._rendererCrashTagStore = new W9, this._crashMetricDedupeKeys = new Xo(Ur.CRASH_METRIC_DEDUPE_MAX_ENTRIES), this._crashMetricUploadBuffer = [], this.onProcessConfigUpdate = this._processConfigUpdateEvent.event, this._crashMetricsUploader = new _7(this.logService, this.productService, this.configurationService, () => this._isPrivacyMode), this._initializeTransport().then(() => this._register(Dj("main", this))).catch(a => this.logService.error("TracingService: failed to initialize transport", a)), bu.on("before-quit", () => this.shutdownHasBegun()), this._register(this.windowsMainService.onDidDestroyWindow(a => {
+                    }, this._debuggingDataUploadUrl = null, this._isPrivacyMode = null, this._isInternalUser = !1, this._transport = null, this._userEmail = null, this._userId = null, this._watchedRenderers = new Map, this._watcherDisposables = [], this._failedStatusCodes = [], this._eventIdToProfile = new Xo(100), this._rateLimiter = new B9(60 * 1e3), this._processConfigUpdateEvent = new x, this._rendererCrashTagStore = new W9, this._crashMetricDedupeKeys = new Xo(Ur.CRASH_METRIC_DEDUPE_MAX_ENTRIES), this._crashMetricUploadBuffer = [], this.onProcessConfigUpdate = this._processConfigUpdateEvent.event, this._crashMetricsUploader = new _7(this.logService, this.productService, this.configurationService, () => this._isPrivacyMode), this._initializeTransport().then(() => this._register(xj("main", this))).catch(a => this.logService.error("TracingService: failed to initialize transport", a)), bu.on("before-quit", () => this.shutdownHasBegun()), this._register(this.windowsMainService.onDidDestroyWindow(a => {
                         this._rendererCrashTagStore.removeWindow(a.id)
                     })), this._register(this.windowsMainService.onDidChangeWindowsCount(() => {
                         const a = new Set(this.windowsMainService.getWindows().map(c => c.id));
@@ -39819,7 +39872,7 @@ var Ur, Lp, Gj = g({
                     } catch (k) {
                         this.logService.warn("TracingService: failed to create debugging data zip", k)
                     }
-                    let x = !1;
+                    let D = !1;
                     if (!s) try {
                         this.logService.info("TracingService: uploading debugging data");
                         const k = ye.createReadStream(E),
@@ -39830,11 +39883,11 @@ var Ur, Lp, Gj = g({
                                     "Content-Length": ye.statSync(E).size.toString()
                                 }
                             });
-                        M.ok ? (this.logService.info("TracingService: successfully uploaded debugging data"), x = !0) : this.logService.warn(`TracingService: upload failed with status ${M.status}`)
+                        M.ok ? (this.logService.info("TracingService: successfully uploaded debugging data"), D = !0) : this.logService.warn(`TracingService: upload failed with status ${M.status}`)
                     } catch (k) {
                         this.logService.warn("TracingService: failed to upload debugging data", k)
                     }
-                    if (ye.existsSync(a) && await ye.promises.unlink(a), ye.existsSync(m) && await ye.promises.unlink(m), ye.existsSync(v) && await ye.promises.unlink(v), ye.existsSync(b) && await ye.promises.unlink(b), x) {
+                    if (ye.existsSync(a) && await ye.promises.unlink(a), ye.existsSync(m) && await ye.promises.unlink(m), ye.existsSync(v) && await ye.promises.unlink(v), ye.existsSync(b) && await ye.promises.unlink(b), D) {
                         ye.existsSync(E) && await ye.promises.unlink(E);
                         return
                     } else return this.logService.info(`TracingService: debugging data saved locally at ${E}`), E
@@ -40119,8 +40172,8 @@ var Ur, Lp, Gj = g({
                         for (let v = a.length - 1; v >= 0; v--) {
                             const b = a[v],
                                 E = b.location?.scriptId ? c.get(b.location.scriptId) : void 0,
-                                x = b.url || E || "<unknown>",
-                                k = l(x);
+                                D = b.url || E || "<unknown>",
+                                k = l(D);
                             u.add(k), d.push({
                                 filename: k,
                                 function: b.functionName || "(anonymous)",
@@ -40579,7 +40632,7 @@ var E7, Fp, eH = g({
             }
         }, Fp = class extends $ {
             constructor(e, i, r, s) {
-                super(), this.environmentService = e, this.logService = i, this.productService = r, this.windowsMainService = s, this._isEnabled = !1, this._isPrivacyMode = !1, this._activeSessions = new Map, this._profileCaptureStatusChangeEvent = new D, this.onProfileCaptureStatusChange = this._profileCaptureStatusChangeEvent.event, this.logService.debug("ContinuousProfilingMainService: initialized in main process")
+                super(), this.environmentService = e, this.logService = i, this.productService = r, this.windowsMainService = s, this._isEnabled = !1, this._isPrivacyMode = !1, this._activeSessions = new Map, this._profileCaptureStatusChangeEvent = new x, this.onProfileCaptureStatusChange = this._profileCaptureStatusChangeEvent.event, this.logService.debug("ContinuousProfilingMainService: initialized in main process")
             }
             async captureProfile(e) {
                 if (!this._isEnabled) return "";
@@ -41083,14 +41136,14 @@ var uH = g({
 });
 
 function P7(t, e, i, r) {
-    e instanceof re || (e = new re(e, [], !!i, i === 2)), I7.push([t, e]), r === 1 && x7.add(t)
+    e instanceof re || (e = new re(e, [], !!i, i === 2)), I7.push([t, e]), r === 1 && D7.add(t)
 }
-var I7, x7, D7, R7, A7 = g({
+var I7, D7, x7, R7, A7 = g({
         "out-build/vs/platform/instantiation/common/extensions.js"() {
             "use strict";
-            Ql(), I7 = [], x7 = new Set, (function(t) {
+            Ql(), I7 = [], D7 = new Set, (function(t) {
                 t[t.Eager = 0] = "Eager", t[t.Delayed = 1] = "Delayed", t[t.Lazy = 2] = "Lazy"
-            })(D7 || (D7 = {})), (function(t) {
+            })(x7 || (x7 = {})), (function(t) {
                 t[t.Workspace = 0] = "Workspace", t[t.Window = 1] = "Window"
             })(R7 || (R7 = {}))
         }
@@ -41377,7 +41430,7 @@ function W7(t) {
     return e === -1 || e < i ? "" : t.slice(e + 1)
 }
 
-function xH(t) {
+function DH(t) {
     try {
         let e = t;
         return t.includes("@") && !t.startsWith("http") && (t.startsWith("ssh://") || (e = t.replace(/^([^@]+)@([^:]+):(.*)/, "ssh://$1@$2/$3"))), new URL(e)
@@ -41386,14 +41439,14 @@ function xH(t) {
     }
 }
 
-function DH(t) {
+function xH(t) {
     if (!t) return;
     const e = t.replace("https///", "https://").replace("http///", "http://");
     if (e.startsWith("gitlab-remote://")) try {
         const l = new URL(e).searchParams.get("project");
         if (l) return l.includes("/") ? l : void 0
     } catch {}
-    const i = xH(e);
+    const i = DH(e);
     if (!i) return;
     const r = i.hostname.toLowerCase(),
         s = i.pathname.split("/").filter(c => c.length > 0);
@@ -41467,7 +41520,7 @@ async function TH(t, e) {
     try {
         [i, s] = await Promise.all([t.getCurrentBranch(e).catch(() => {}), t.getDefaultBranch(e).catch(() => {})]);
         const o = await t.getUpstreamUrl(e);
-        r = DH(o)
+        r = xH(o)
     } catch {}
     return {
         branchName: i,
@@ -41728,14 +41781,14 @@ var LH = g({
                             for (const E of y) {
                                 if (b.has(E.hash) && b.get(E.hash) !== E.source && console.warn(`[AiCodeTracking] Hash collision detected for hash ${E.hash}: found both ${b.get(E.hash)} and ${E.source} sources. Preferring AI sources over HUMAN, then COMPOSER over TAB.`), v.has(E.hash)) continue;
                                 b.set(E.hash, E.source);
-                                let x = E.conversationId ?? void 0;
-                                E.source === "tab" && x && (console.warn(`[AiCodeTracking] Found TAB source with conversationId for hash ${E.hash}. This may indicate a hash collision or data corruption. Clearing conversationId.`), x = void 0);
+                                let D = E.conversationId ?? void 0;
+                                E.source === "tab" && D && (console.warn(`[AiCodeTracking] Found TAB source with conversationId for hash ${E.hash}. This may indicate a hash collision or data corruption. Clearing conversationId.`), D = void 0);
                                 const k = {
                                     source: E.source,
                                     fileExtension: E.fileExtension ?? void 0,
                                     fileName: E.fileName ?? void 0,
                                     requestId: E.requestId ?? void 0,
-                                    conversationId: x,
+                                    conversationId: D,
                                     timestamp: E.timestamp ?? void 0,
                                     model: E.model ?? void 0
                                 };
@@ -42784,10 +42837,10 @@ import {
 import {
     promises as Z7
 } from "fs";
-var ex, tx, ix, Vp, pq = g({
+var eD, tD, iD, Vp, pq = g({
         "out-build/vs/platform/cursorProclist/node/cursorProclistService.js"() {
             "use strict";
-            Si(), q(), _i(), ne(), wt(), qt(), ex = fq(import.meta.url), tx = 1, ix = 300, Vp = class {
+            Si(), q(), _i(), ne(), wt(), qt(), eD = fq(import.meta.url), tD = 1, iD = 300, Vp = class {
                 constructor(e, i, r) {
                     this.logService = e, this.loggerService = i, this.environmentService = r, this.processTrackers = new Map, this.sampleSeq = 0, this.samplePeakTotalMemMb = -1, this.samplePeakTotalCpuUtilPct = -1, this.BUCKET_MS = 14400 * 1e3, this.MAX_BUCKETS = 6, this.sessionId = Gt(), this.loadNativeModule(), this.monitorDir = ge(A.file(this.environmentService.userDataPath), "process-monitor")
                 }
@@ -42916,7 +42969,7 @@ var ex, tx, ix, Vp, pq = g({
                         return
                     }
                     try {
-                        this.nativeModule = ex("cursor-proclist"), this.logService.debug("[CursorProclistService] Native module loaded successfully")
+                        this.nativeModule = eD("cursor-proclist"), this.logService.debug("[CursorProclistService] Native module loaded successfully")
                     } catch (e) {
                         this.logService.warn("[CursorProclistService] Native module unavailable; disabling proclist metrics:", e), this.nativeModule = void 0
                     }
@@ -42944,7 +42997,7 @@ var ex, tx, ix, Vp, pq = g({
                         this.logService.info("[CursorProclistService] Config disabled local collection"), this.stopTimer();
                         return
                     }
-                    const i = Math.max(tx, Math.min(ix, e.subsamplePollingRateSec));
+                    const i = Math.max(tD, Math.min(iD, e.subsamplePollingRateSec));
                     this.logService.info(`[CursorProclistService] Config enabled feature (subsample every ${i}s)`), this.stopTimer();
                     let r = 0;
                     const s = 5,
@@ -43065,10 +43118,10 @@ var ex, tx, ix, Vp, pq = g({
             }, Vp = __decorate([__param(0, j), __param(1, pa), __param(2, Or)], Vp)
         }
     }),
-    rx, gq = g({
+    rD, gq = g({
         "out-build/vs/platform/cursorProclist/node/cursorProclistIpc.js"() {
             "use strict";
-            K(), rx = class {
+            K(), rD = class {
                 constructor(t) {
                     this.service = t
                 }
@@ -43141,13 +43194,13 @@ import {
     app as _q,
     Notification as o0
 } from "electron";
-var a0, c0, l0, u0, Cu, qp, sx, Pu, nx, Gp, bq = g({
+var a0, c0, l0, u0, Cu, qp, sD, Pu, nD, Gp, bq = g({
         "out-build/vs/platform/notification/electron-main/systemNotificationService.js"() {
             "use strict";
             N(), q(), z(), uo(), lt(), Si(), a0 = "system-notification", c0 = "token", l0 = "actionIndex", u0 = 3600 * 1e3, Cu = new Map, qp = t => {
                 const e = Cu.get(t);
                 e && (clearTimeout(e.timeoutId), Cu.delete(t))
-            }, sx = t => {
+            }, sD = t => {
                 const e = Gt(),
                     i = Date.now() + u0,
                     r = setTimeout(() => {
@@ -43179,7 +43232,7 @@ var a0, c0, l0, u0, Cu, qp, sx, Pu, nx, Gp, bq = g({
                 } catch (a) {
                     e.warn(`Failed to focus window ${n} from notification ${r}:`, a)
                 }
-            }, nx = async (t, e, i, r) => {
+            }, nD = async (t, e, i, r) => {
                 if (t.scheme !== e.urlProtocol || t.authority !== a0) return !1;
                 const s = new URLSearchParams(t.query),
                     n = s.get(c0),
@@ -43244,7 +43297,7 @@ var a0, c0, l0, u0, Cu, qp, sx, Pu, nx, Gp, bq = g({
                         L && e.replyPlaceholder && (i.replyPlaceholder = e.replyPlaceholder);
                         const r = this.convertActions(e.actions);
                         if (r && r.length > 0 && (i.actions = r, e.closeButtonText && (i.closeButtonText = e.closeButtonText)), V && !e.toastXml && e.actions && e.actions.length > 0) {
-                            const n = sx(e),
+                            const n = sD(e),
                                 o = this.buildWindowsToastXml(e, n);
                             i.toastXml = o
                         }
@@ -43293,10 +43346,10 @@ var a0, c0, l0, u0, Cu, qp, sx, Pu, nx, Gp, bq = g({
             }, Gp = __decorate([__param(0, j), __param(1, ls), __param(2, ze)], Gp)
         }
     }),
-    ox, Eq = g({
+    oD, Eq = g({
         "out-build/vs/platform/notification/common/systemNotificationIpc.js"() {
             "use strict";
-            ox = class {
+            oD = class {
                 constructor(t) {
                     this.service = t
                 }
@@ -43323,8 +43376,8 @@ var a0, c0, l0, u0, Cu, qp, sx, Pu, nx, Gp, bq = g({
     });
 import {
     app as zp,
-    Menu as ax,
-    nativeImage as cx,
+    Menu as aD,
+    nativeImage as cD,
     Tray as kq,
     nativeTheme as Kp,
     screen as Cq
@@ -43373,7 +43426,7 @@ var ki, Xp, Pq = g({
                             this.logService.error(`TrayMainService: Icon file does not exist at path: ${e}`);
                             return
                         }
-                        const i = cx.createFromPath(e);
+                        const i = cD.createFromPath(e);
                         if (L && i.setTemplateImage(!0), this.tray = new kq(i), this.tray.setToolTip(this.productService.nameShort || "Cursor"), L) {
                             this.tray.setIgnoreDoubleClickEvents(!0);
                             const r = this.createContextMenu();
@@ -43562,7 +43615,7 @@ var ki, Xp, Pq = g({
                                 });
                                 e.push({
                                     label: `View More (${s.length})`,
-                                    submenu: ax.buildFromTemplate(n)
+                                    submenu: aD.buildFromTemplate(n)
                                 })
                             }
                         } else e.push({
@@ -43600,7 +43653,7 @@ var ki, Xp, Pq = g({
                         click: () => {
                             zp.quit()
                         }
-                    }), ax.buildFromTemplate(e)
+                    }), aD.buildFromTemplate(e)
                 }
                 toggleWindowVisibility() {
                     const e = this.windowsMainService.getFocusedWindow() ?? this.windowsMainService.getLastActiveWindow();
@@ -43623,7 +43676,7 @@ var ki, Xp, Pq = g({
                                 return
                             }
                         }
-                        const i = cx.createFromPath(e);
+                        const i = cD.createFromPath(e);
                         L && i.setTemplateImage(!0), this.tray.setImage(i)
                     } catch (e) {
                         this.logService.error("TrayMainService: Error updating icon", e)
@@ -43691,7 +43744,7 @@ import {
     z as qe
 } from "zod";
 
-function lx(t) {
+function lD(t) {
     if (!t || typeof t != "object") return;
     const e = t,
         i = Wh(e.environment);
@@ -43736,14 +43789,14 @@ function lx(t) {
     }
 }
 
-function xq(t) {
+function Dq(t) {
     if (!Array.isArray(t)) return;
     const e = [];
     for (const i of t) {
         if (!i || typeof i != "object") continue;
         const r = i;
         if (typeof r.id != "string" || typeof r.timestamp != "number") continue;
-        const s = lx(r.location);
+        const s = lD(r.location);
         !s || !r.destination || !r.reason || e.push({
             ...r,
             id: r.id,
@@ -43756,8 +43809,8 @@ function xq(t) {
     return e
 }
 
-function Dq(t) {
-    const e = fx.safeParse(t);
+function xq(t) {
+    const e = fD.safeParse(t);
     return e.success ? e.data.activeBranch?.branchName ?? void 0 : void 0
 }
 
@@ -43790,15 +43843,15 @@ function Mq(t) {
     for (let r = 0; r < e.length; r += 2) i[r / 2] = parseInt(e.slice(r, r + 2), 16);
     return i
 }
-var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
+var uD, dD, hD, fD, d0, pD, gD, mD, vD, wD, Qp, Tq = g({
         "out-build/vs/platform/localAgentRepository/electron-main/localAgentStorageMainService.js"() {
             "use strict";
-            N(), ca(), q(), Xe(), gi(), Ce(), ne(), ux = qe.object({
+            N(), ca(), q(), Xe(), gi(), Ce(), ne(), uD = qe.object({
                 folder: qe.string().optional(),
                 workspace: qe.string().optional()
-            }), dx = qe.object({
+            }), dD = qe.object({
                 allComposers: qe.array(qe.unknown()).optional()
-            }), hx = qe.object({
+            }), hD = qe.object({
                 composerId: qe.string(),
                 name: qe.string(),
                 createdAt: qe.number().optional(),
@@ -43821,11 +43874,11 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
                 glassMetaParentAgent: qe.boolean().optional()
             }).refine(t => !t.isDraft && !t.isEphemeral && t.createdFromBackgroundAgent === void 0, {
                 message: "excluded by local agent scan rules"
-            }), fx = qe.object({
+            }), fD = qe.object({
                 activeBranch: qe.object({
                     branchName: qe.union([qe.string(), qe.null(), qe.undefined()]).optional()
                 }).passthrough().nullish()
-            }).passthrough(), d0 = 50, px = 2, gx = "composer.composerData", mx = "composerData:", vx = "agentKv:blob:", wx = 3e3, Qp = class extends $ {
+            }).passthrough(), d0 = 50, pD = 2, gD = "composer.composerData", mD = "composerData:", vD = "agentKv:blob:", wD = 3e3, Qp = class extends $ {
                 constructor(e, i) {
                     super(), this.logService = e, this.environmentMainService = i, this.globalDbPromise = this.openGlobalDatabase()
                 }
@@ -43841,7 +43894,7 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
                     const i = await this.globalDbPromise;
                     if (i) try {
                         const r = await new Promise(s => {
-                            i.get("SELECT value FROM cursorDiskKV WHERE key = ?", [`${mx}${e}`], (n, o) => {
+                            i.get("SELECT value FROM cursorDiskKV WHERE key = ?", [`${mD}${e}`], (n, o) => {
                                 s(n ? void 0 : o)
                             })
                         });
@@ -43856,7 +43909,7 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
                     if (i) try {
                         const r = Aq(e),
                             s = await new Promise(o => {
-                                i.get("SELECT value FROM cursorDiskKV WHERE key = ?", [`${vx}${r}`], (a, c) => {
+                                i.get("SELECT value FROM cursorDiskKV WHERE key = ?", [`${vD}${r}`], (a, c) => {
                                     o(a ? void 0 : c)
                                 })
                             });
@@ -43880,7 +43933,7 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
                     }
                     const r = i.filter(w => w.isDirectory()).map(w => w.name),
                         n = (await import("@vscode/sqlite3")).default.Database,
-                        o = Date.now() - px * 24 * 60 * 60 * 1e3,
+                        o = Date.now() - pD * 24 * 60 * 60 * 1e3,
                         a = [];
                     let c = 0,
                         l = 0;
@@ -43898,9 +43951,9 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
                             continue
                         }
                         const E = U(y, "workspace.json"),
-                            x = await this.readWorkspaceIdentifier(E, w);
+                            D = await this.readWorkspaceIdentifier(E, w);
                         c++;
-                        const k = await this.readComposerDataFromDb(n, v, x);
+                        const k = await this.readComposerDataFromDb(n, v, D);
                         a.push(...k)
                     } catch (y) {
                         this.logService.warn(`[LocalAgentStorage] Error scanning workspace ${w}`, y)
@@ -43931,7 +43984,7 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
                                 id: i
                             }
                         }
-                        const n = ux.safeParse(s);
+                        const n = uD.safeParse(s);
                         if (!n.success) return {
                             id: i
                         };
@@ -43966,7 +44019,7 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
                     try {
                         await this.setBusyTimeout(s);
                         const n = await new Promise(a => {
-                            s.get("SELECT value FROM ItemTable WHERE key = ?", [gx], (c, l) => {
+                            s.get("SELECT value FROM ItemTable WHERE key = ?", [gD], (c, l) => {
                                 a(c ? void 0 : l)
                             })
                         });
@@ -44000,17 +44053,17 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
                     } catch {
                         return []
                     }
-                    const s = dx.safeParse(r);
+                    const s = dD.safeParse(r);
                     if (!s.success) return [];
                     const n = s.data.allComposers ?? [],
                         o = [];
                     for (const a of n) {
-                        const c = hx.safeParse(a);
+                        const c = hD.safeParse(a);
                         if (!c.success) continue;
                         const l = c.data,
                             u = Wh(l.workspaceIdentifier) ?? i,
-                            d = lx(l.agentLocation),
-                            f = xq(l.agentLocationHistory);
+                            d = lD(l.agentLocation),
+                            f = Dq(l.agentLocationHistory);
                         o.push({
                             composerId: l.composerId,
                             name: l.name,
@@ -44019,7 +44072,7 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
                             conversationCheckpointLastUpdatedAt: l.conversationCheckpointLastUpdatedAt,
                             workspaceIdentifier: u,
                             subtitle: l.subtitle,
-                            branchName: Dq(a),
+                            branchName: xq(a),
                             hasUnreadMessages: l.hasUnreadMessages,
                             isArchived: l.isArchived,
                             subagentParentComposerId: l.subagentInfo?.parentComposerId,
@@ -44050,7 +44103,7 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
                 }
                 async setBusyTimeout(e) {
                     await new Promise(i => {
-                        e.run(`PRAGMA busy_timeout = ${wx}`, () => i())
+                        e.run(`PRAGMA busy_timeout = ${wD}`, () => i())
                     })
                 }
                 decodeBlobValue(e) {
@@ -44121,7 +44174,7 @@ var ux, dx, hx, fx, d0, px, gx, mx, vx, wx, Qp, Tq = g({
         }
     });
 import * as wn from "fs";
-import * as yx from "path";
+import * as yD from "path";
 import {
     spawn as Fq
 } from "child_process";
@@ -44154,12 +44207,12 @@ var p0, eg, Nq = g({
                     this.logService.info("[processSampler] '/usr/bin/sample' not found or not executable.");
                     return
                 }
-                const n = yx.join(this._logsHomeFsPath(), "exthost-samples");
+                const n = yD.join(this._logsHomeFsPath(), "exthost-samples");
                 await wn.promises.mkdir(n, {
                     recursive: !0
                 });
                 const o = new Date().toISOString().replace(/[:.]/g, "-"),
-                    a = yx.join(n, `sample-${i??"exthost"}-${e}-${o}.txt`);
+                    a = yD.join(n, `sample-${i??"exthost"}-${e}-${o}.txt`);
                 return this.logService.info(`[processSampler] Sampling pid ${e} for ${r} seconds -> ${a}`), new Promise(c => {
                     const l = Fq("/usr/bin/sample", [String(e), String(r), "-mayDie", "-file", a]);
                     let u = !1,
@@ -44187,7 +44240,7 @@ var p0, eg, Nq = g({
                 }).then(async c => {
                     if (c && s) try {
                         const l = await wn.promises.readFile(c, "utf8");
-                        xn(new Error(s), {
+                        Dn(new Error(s), {
                             attachments: [{
                                 filename: `${i}.txt`,
                                 data: l,
@@ -44218,10 +44271,10 @@ import {
 import {
     createInterface as Bq
 } from "readline";
-var Sx, _x, m0, bx, Vq = g({
+var SD, _D, m0, bD, Vq = g({
         "out-build/vs/platform/profiling/electron-main/gcTraceService.js"() {
             "use strict";
-            ce(), N(), Sx = 10, _x = 300, m0 = 60, bx = class extends $ {
+            ce(), N(), SD = 10, _D = 300, m0 = 60, bD = class extends $ {
                 constructor() {
                     super(), this._drainTimer = this._register(new yk), this._recording = !1, this._draining = !1, this._enabled = !1, this._measurements = new Map, this._lastLiveHeapMB = new Map
                 }
@@ -44229,7 +44282,7 @@ var Sx, _x, m0, bx, Vq = g({
                     if (t.enabled !== this._enabled)
                         if (this._enabled = t.enabled, !t.enabled) console.log("[gc-trace] Disabled by config"), this._stopRecording();
                         else {
-                            const e = Math.max(Sx, Math.min(_x, t.drainIntervalSec));
+                            const e = Math.max(SD, Math.min(_D, t.drainIntervalSec));
                             console.log(`[gc-trace] Enabled (drain every ${e}s)`), this._startRecording(e * 1e3)
                         }
                 }
@@ -44318,18 +44371,18 @@ var Sx, _x, m0, bx, Vq = g({
             }
         }
     }),
-    v0, Ex, kx, jq = g({
+    v0, ED, kD, jq = g({
         "out-build/vs/platform/profiling/common/gcTrace.js"() {
             "use strict";
-            G(), v0 = H("gcTraceService"), Ex = "gcTrace", (function(t) {
+            G(), v0 = H("gcTraceService"), ED = "gcTrace", (function(t) {
                 t.ApplyConfig = "applyConfig", t.GetMeasurements = "getMeasurements"
-            })(kx || (kx = {}))
+            })(kD || (kD = {}))
         }
     }),
-    Cx, Hq = g({
+    CD, Hq = g({
         "out-build/vs/platform/profiling/node/gcTraceIpc.js"() {
             "use strict";
-            K(), Cx = class {
+            K(), CD = class {
                 constructor(t) {
                     this.service = t
                 }
@@ -44350,9 +44403,9 @@ var Sx, _x, m0, bx, Vq = g({
     });
 import {
     app as Eo,
-    protocol as Px,
+    protocol as PD,
     session as Ja,
-    systemPreferences as Ix
+    systemPreferences as ID
 } from "electron";
 import {
     hostname as qq,
@@ -44361,7 +44414,7 @@ import {
 var w0, tg, zq = g({
     "out-build/vs/code/electron-main/app.js"() {
         "use strict";
-        oc(), mr(), rt(), Un(), K(), lS(), rn(), N(), Le(), Ce(), z(), We(), ca(), ne(), Si(), kO(), qi(), PO(), MC(), A4(), Ee(), Ml(), VW(), Ze(), zW(), _1(), iP(), Ls(), FC(), SF(), Xe(), Fl(), yf(), BF(), WN(), FN(), BN(), tU(), ot(), kU(), Q1(), Ql(), G(), Z1(), CU(), xU(), DU(), RU(), AU(), MU(), FU(), NU(), OI(), UU(), BU(), jU(), yt(), q(), zU(), uo(), lt(), Ol(), o$(), by(), Gi(), c$(), Os(), u$(), ZI(), vi(), d$(), f$(), vo(), gn(), p$(), w$(), _$(), C$(), M$(), UI(), T$(), L$(), O$(), W$(), $$(), Ms(), ht(), tB(), iB(), gi(), I1(), Gf(), rB(), no(), O6(), O6(), dB(), hs(), hB(), eo(), gp(), i9(), gV(), mV(), vV(), ce(), vt(), IV(), xV(), DV(), Ba(), RV(), AV(), k9(), OV(), dj(), hj(), Ln(), Bl(), vj(), Zd(), Ra(), Gj(), zj(), Kj(), Xj(), Yj(), iH(), oH(), uH(), eq(), tq(), rq(), nq(), lq(), dq(), hq(), pq(), gq(), yq(), Sq(), bq(), Eq(), Pq(), Iq(), Tq(), Lq(), Oq(), Wq(), Nq(), Vq(), jq(), Hq(), tg = class extends $ {
+        oc(), mr(), rt(), Un(), K(), lS(), rn(), N(), Le(), Ce(), z(), We(), ca(), ne(), Si(), kO(), qi(), PO(), MC(), A4(), Ee(), Ml(), VW(), Ze(), zW(), _1(), iP(), Ls(), FC(), SF(), Xe(), Fl(), yf(), BF(), WN(), FN(), BN(), tU(), ot(), kU(), Q1(), Ql(), G(), Z1(), CU(), DU(), xU(), RU(), AU(), MU(), FU(), NU(), OI(), UU(), BU(), jU(), yt(), q(), zU(), uo(), lt(), Ol(), o$(), by(), Gi(), c$(), Os(), u$(), ZI(), vi(), d$(), f$(), vo(), gn(), p$(), w$(), _$(), C$(), M$(), UI(), T$(), L$(), O$(), W$(), $$(), Ms(), ht(), tB(), iB(), gi(), I1(), Gf(), rB(), no(), O6(), O6(), dB(), hs(), hB(), eo(), gp(), i9(), gV(), mV(), vV(), ce(), vt(), IV(), DV(), xV(), Ba(), RV(), AV(), k9(), OV(), dj(), hj(), Ln(), Bl(), vj(), Zd(), Ra(), Gj(), zj(), Kj(), Xj(), Yj(), iH(), oH(), uH(), eq(), tq(), rq(), nq(), lq(), dq(), hq(), pq(), gq(), yq(), Sq(), bq(), Eq(), Pq(), Iq(), Tq(), Lq(), Oq(), Wq(), Nq(), Vq(), jq(), Hq(), tg = class extends $ {
             static {
                 w0 = this
             }
@@ -44399,8 +44452,8 @@ var w0, tg, zq = g({
                             if (y.processId === E.webContents.mainFrame.processId) return !0;
                         const b = this.windowsMainService.getWindows();
                         for (const E of b) {
-                            const x = E.webContents;
-                            if (x !== void 0 && y.processId === x.mainFrame.processId) return !0
+                            const D = E.webContents;
+                            if (D !== void 0 && y.processId === D.mainFrame.processId) return !0
                         }
                         return !1
                     },
@@ -44434,7 +44487,7 @@ var w0, tg, zq = g({
                             cancel: !1,
                             responseHeaders: v
                         });
-                        if (!E.path.endsWith(O.vscodeRemoteResource) && b.some(x => x.toLowerCase().includes("image/svg"))) return y({
+                        if (!E.path.endsWith(O.vscodeRemoteResource) && b.some(D => D.toLowerCase().includes("image/svg"))) return y({
                             cancel: !d(w)
                         })
                     }
@@ -44583,18 +44636,18 @@ var w0, tg, zq = g({
                             E = (await y.sendCommand("DOM.getDocument", {
                                 depth: 0
                             })).root.nodeId,
-                            x = await y.sendCommand("DOM.querySelector", {
+                            D = await y.sendCommand("DOM.querySelector", {
                                 nodeId: E,
                                 selector: `[data-element-path="${v}"]`
                             });
-                        if (!x.nodeId || x.nodeId === 0) return {
+                        if (!D.nodeId || D.nodeId === 0) return {
                             matched: {
                                 __error: "Element not found via CDP"
                             },
                             inline: {}
                         };
                         const k = await y.sendCommand("CSS.getMatchedStylesForNode", {
-                                nodeId: x.nodeId
+                                nodeId: D.nodeId
                             }),
                             M = {},
                             T = {};
@@ -44642,9 +44695,9 @@ var w0, tg, zq = g({
                             hostname: v,
                             certificate: b,
                             verificationResult: E,
-                            errorCode: x
+                            errorCode: D
                         } = w, k = b.fingerprint, M = s.has(k);
-                        if (x === 0 || E === "net::OK") {
+                        if (D === 0 || E === "net::OK") {
                             y(0);
                             return
                         }
@@ -44655,7 +44708,7 @@ var w0, tg, zq = g({
                         const T = `https://${v}/`;
                         a.set(v, {
                             url: T,
-                            error: E || `Certificate error (code: ${x})`,
+                            error: E || `Certificate error (code: ${D})`,
                             certificate: {
                                 issuerName: b.issuerName,
                                 subjectName: b.subjectName,
@@ -44760,10 +44813,10 @@ var w0, tg, zq = g({
                         webContents: f
                     } = await import("electron"), p = d.sender, m = p.id, w = [];
                     let y = l.get(m);
-                    const v = (x, k, M) => {
+                    const v = (D, k, M) => {
                             w.push(M.src)
                         },
-                        b = (x, k) => {
+                        b = (D, k) => {
                             const M = w.shift();
                             if (M && M !== "about:blank") y = k.id;
                             else if (M === "about:blank")
@@ -44787,11 +44840,11 @@ var w0, tg, zq = g({
                 const e = this.productService.win32AppUserModelId;
                 V && e && Eo.setAppUserModelId(e);
                 try {
-                    L && this.configurationService.getValue("window.nativeTabs") === !0 && !Ix.getUserDefault("NSUseImprovedLayoutPass", "boolean") && Ix.setUserDefault("NSUseImprovedLayoutPass", "boolean", !0)
+                    L && this.configurationService.getValue("window.nativeTabs") === !0 && !ID.getUserDefault("NSUseImprovedLayoutPass", "boolean") && ID.setUserDefault("NSUseImprovedLayoutPass", "boolean", !0)
                 } catch (f) {
                     this.logService.error(f)
                 }
-                const i = new DC;
+                const i = new xC;
                 R.once(this.lifecycleMainService.onWillShutdown)(f => {
                     f.reason === 2 && i.dispose()
                 }), this.logService.trace("Resolving machine identifier...");
@@ -44838,7 +44891,7 @@ var w0, tg, zq = g({
                         data: "Not found"
                     }),
                     r = new Kr(() => e.getChannel(L9, new O9));
-                Px.registerBufferProtocol(O.vscodeManagedRemoteResource, (s, n) => {
+                PD.registerBufferProtocol(O.vscodeManagedRemoteResource, (s, n) => {
                     const o = A.parse(s.url);
                     if (!o.authority.startsWith("window:")) return n(i());
                     r.value.call(qy, [o]).then(a => n({
@@ -44890,7 +44943,7 @@ var w0, tg, zq = g({
                 if (Hw(e) ? (s = e.workspaceUri, n = S(148, null, s.scheme === O.file ? ia(s, {
                         os: er,
                         tildify: this.environmentMainService
-                    }) : s.toString(!0), this.productService.nameShort)) : D5(e) ? (s = e.folderUri, n = S(149, null, s.scheme === O.file ? ia(s, {
+                    }) : s.toString(!0), this.productService.nameShort)) : x5(e) ? (s = e.folderUri, n = S(149, null, s.scheme === O.file ? ia(s, {
                         os: er,
                         tildify: this.environmentMainService
                     }) : s.toString(!0), this.productService.nameShort)) : (s = e.fileUri, n = S(150, null, s.scheme === O.file ? ia(s, {
@@ -44952,7 +45005,7 @@ var w0, tg, zq = g({
                 }
             }
             async handleProtocolUrl(e, i, r, s, n) {
-                if (this.logService.trace("app#handleProtocolUrl():", s.toString(!0), n), this.nativeHostMainService && await nx(s, this.productService, this.nativeHostMainService, this.logService)) return !0;
+                if (this.logService.trace("app#handleProtocolUrl():", s.toString(!0), n), this.nativeHostMainService && await nD(s, this.productService, this.nativeHostMainService, this.logService)) return !0;
                 s.scheme === this.productService.urlProtocol && s.path === "workspace" && (s = s.with({
                     authority: "file",
                     path: A.parse(s.query).path,
@@ -45013,9 +45066,9 @@ var w0, tg, zq = g({
                         o.set(fo, new re(mn, [e]));
                         break
                 }
-                o.set(ut, new re(dp, [e, i, r, s, this.userEnv], !1)), o.set(ao, new re(Dp, void 0, !1)), o.set(Ay, new re(fp, void 0, !0));
+                o.set(ut, new re(dp, [e, i, r, s, this.userEnv], !1)), o.set(ao, new re(xp, void 0, !1)), o.set(Ay, new re(fp, void 0, !0));
                 const a = new Kh(this.logService, this.productService);
-                o.set(Wr, a), o.set(py, new re(Hf, void 0, !1)), o.set(uf, new re(df, void 0, !1)), o.set(S1, Te.toService(rh(n.then(f => f.getChannel("diagnostics"))))), o.set(p0, new re(eg)), o.set(ey, new re(Uf, [this.userEnv])), o.set(ay, new re(Bf)), o.set(cy, new re(Vf, [this.userEnv])), o.set(FI, new re($a)), o.set(uh, new re(hf)), o.set(fy, new re(jf)), o.set(ls, new re(zl, void 0, !1)), o.set(Hp, new re(Gp)), o.set(Yp, new re(Xp)), o.set(h0, new re(Qp)), o.set(f0, new re(Zp)), o.set(r0, new re(K7, void 0, !1)), o.set(n0, new re(Vp)), o.set(v0, new re(bx)), o.set(Cy, new re(op)), o.set(my, new re(Xf)), o.set(R1, new re(xf)), o.set(io, new re(Xh)), o.set(cs, new re(Yh));
+                o.set(Wr, a), o.set(py, new re(Hf, void 0, !1)), o.set(uf, new re(df, void 0, !1)), o.set(S1, Te.toService(rh(n.then(f => f.getChannel("diagnostics"))))), o.set(p0, new re(eg)), o.set(ey, new re(Uf, [this.userEnv])), o.set(ay, new re(Bf)), o.set(cy, new re(Vf, [this.userEnv])), o.set(FI, new re($a)), o.set(uh, new re(hf)), o.set(fy, new re(jf)), o.set(ls, new re(zl, void 0, !1)), o.set(Hp, new re(Gp)), o.set(Yp, new re(Xp)), o.set(h0, new re(Qp)), o.set(f0, new re(Zp)), o.set(r0, new re(K7, void 0, !1)), o.set(n0, new re(Vp)), o.set(v0, new re(bD)), o.set(Cy, new re(op)), o.set(my, new re(Xf)), o.set(R1, new re(Df)), o.set(io, new re(Xh)), o.set(cs, new re(Yh));
                 const c = new bp({
                         graceTime: 6e4,
                         shortGraceTime: 6e3,
@@ -45056,11 +45109,11 @@ var w0, tg, zq = g({
                     c = new W6(a);
                 i.registerChannel("browserView", c);
                 const l = e.get(n0),
-                    u = new rx(l);
+                    u = new rD(l);
                 i.registerChannel(J7, u);
                 const d = e.get(v0),
-                    f = new Cx(d);
-                i.registerChannel(Ex, f);
+                    f = new CD(d);
+                i.registerChannel(ED, f);
                 const p = Te.fromService(e.get(Xy), s);
                 i.registerChannel("tracing", p), r.then(_e => _e.registerChannel("tracing", p)), tH(e, i, r, s), nH(e, i, s), lH(e, i, s), ZH(e, i, s), wq(e, i, r, s);
                 const m = Te.fromService(e.get(Yy), s);
@@ -45075,8 +45128,8 @@ var w0, tg, zq = g({
                 i.registerChannel("userDataProfiles", b), r.then(_e => _e.registerChannel("userDataProfiles", b));
                 const E = new d6(e.get(fo));
                 i.registerChannel("update", E);
-                const x = new ox(e.get(Hp));
-                i.registerChannel("systemNotification", x);
+                const D = new oD(e.get(Hp));
+                i.registerChannel("systemNotification", D);
                 const k = Te.fromService(e.get(Yp), s);
                 i.registerChannel("tray", k);
                 const M = Te.fromService(e.get(h0), s);
@@ -45121,8 +45174,8 @@ var w0, tg, zq = g({
                 i.registerChannel(Xa.LocalPty, F);
                 const he = Te.fromService(e.get(Kl), s);
                 i.registerChannel("externalTerminal", he);
-                const De = Te.fromService(e.get(i0), s);
-                i.registerChannel(G7, De);
+                const xe = Te.fromService(e.get(i0), s);
+                i.registerChannel(G7, xe);
                 const ve = new n9(e.get(mo));
                 i.registerChannel("logger", ve), r.then(_e => _e.registerChannel("logger", ve));
                 const kt = new F4(e.get(ut));
@@ -45246,7 +45299,7 @@ var w0, tg, zq = g({
                 })).some(w => !c.has(w.id)) && (e.store(Ey, Date.now(), -1, 1), await e.flush())
             }
             afterWindowOpen() {
-                this.installMutex(), Px.registerHttpProtocol(O.vscodeRemoteResource, (e, i) => {
+                this.installMutex(), PD.registerHttpProtocol(O.vscodeRemoteResource, (e, i) => {
                     i({
                         url: e.url.replace(/^vscode-remote-resource:/, "http:"),
                         method: e.method
@@ -45319,7 +45372,7 @@ var w0, tg, zq = g({
 });
 
 function Iu(t) {
-    return Object.isFrozen(t) ? t : xW(t)
+    return Object.isFrozen(t) ? t : DW(t)
 }
 
 function yn(t, e) {
@@ -45327,7 +45380,7 @@ function yn(t, e) {
         added: i,
         removed: r,
         updated: s
-    } = xx(e?.rawConfiguration, t?.rawConfiguration), n = [], o = t?.getAllOverrideIdentifiers() || [], a = e?.getAllOverrideIdentifiers() || [];
+    } = DD(e?.rawConfiguration, t?.rawConfiguration), n = [], o = t?.getAllOverrideIdentifiers() || [], a = e?.getAllOverrideIdentifiers() || [];
     if (e) {
         const c = a.filter(l => !o.includes(l));
         for (const l of c) n.push([l, e.getKeysForOverrideIdentifier(l)])
@@ -45339,7 +45392,7 @@ function yn(t, e) {
     if (e && t) {
         for (const c of o)
             if (a.includes(c)) {
-                const l = xx({
+                const l = DD({
                     contents: t.getOverrideValue(void 0, c) || {},
                     keys: t.getKeysForOverrideIdentifier(c)
                 }, {
@@ -45357,7 +45410,7 @@ function yn(t, e) {
     }
 }
 
-function xx(t, e) {
+function DD(t, e) {
     const i = t ? e ? t.keys.filter(n => e.keys.indexOf(n) === -1) : [...t.keys] : [],
         r = e ? t ? e.keys.filter(n => t.keys.indexOf(n) === -1) : [...e.keys] : [],
         s = [];
@@ -45375,10 +45428,10 @@ function xx(t, e) {
         updated: s
     }
 }
-var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
+var xt, y0, xD, RD, ig, AD, MD = g({
         "out-build/vs/platform/configuration/common/configurationModels.js"() {
             "use strict";
-            Vt(), K(), Ws(), N(), ui(), br(), We(), ne(), Ze(), Fn(), ks(), K1(), Dt = class Io {
+            Vt(), K(), Ws(), N(), ui(), br(), We(), ne(), Ze(), Fn(), ks(), K1(), xt = class Io {
                 static createEmptyModel(e) {
                     return new Io({}, [], [], void 0, e)
                 }
@@ -45556,7 +45609,7 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                     this._name = t, this.logService = e, this._raw = null, this._configurationModel = null, this._restrictedConfigurations = [], this._parseErrors = []
                 }
                 get configurationModel() {
-                    return this._configurationModel || Dt.createEmptyModel(this.logService)
+                    return this._configurationModel || xt.createEmptyModel(this.logService)
                 }
                 get restrictedConfigurations() {
                     return this._restrictedConfigurations
@@ -45582,7 +45635,7 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                         restricted: n,
                         hasExcludedProperties: o
                     } = this.doParseRaw(t, e);
-                    this._configurationModel = new Dt(i, r, s, o ? [t] : void 0, this.logService), this._restrictedConfigurations = n || []
+                    this._configurationModel = new xt(i, r, s, o ? [t] : void 0, this.logService), this._restrictedConfigurations = n || []
                 }
                 doParseContent(t) {
                     let e = {},
@@ -45685,16 +45738,16 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                             })
                         } return i
                 }
-            }, Dx = class extends $ {
+            }, xD = class extends $ {
                 constructor(t, e, i, r, s) {
-                    super(), this.userSettingsResource = t, this.parseOptions = e, this.fileService = r, this.logService = s, this._onDidChange = this._register(new D), this.onDidChange = this._onDidChange.event, this.parser = new y0(this.userSettingsResource.toString(), s), this._register(this.fileService.watch(i.dirname(this.userSettingsResource))), this._register(this.fileService.watch(this.userSettingsResource)), this._register(R.any(R.filter(this.fileService.onDidFilesChange, n => n.contains(this.userSettingsResource)), R.filter(this.fileService.onDidRunOperation, n => (n.isOperation(0) || n.isOperation(3) || n.isOperation(1) || n.isOperation(4)) && i.isEqual(n.resource, t)))(() => this._onDidChange.fire()))
+                    super(), this.userSettingsResource = t, this.parseOptions = e, this.fileService = r, this.logService = s, this._onDidChange = this._register(new x), this.onDidChange = this._onDidChange.event, this.parser = new y0(this.userSettingsResource.toString(), s), this._register(this.fileService.watch(i.dirname(this.userSettingsResource))), this._register(this.fileService.watch(this.userSettingsResource)), this._register(R.any(R.filter(this.fileService.onDidFilesChange, n => n.contains(this.userSettingsResource)), R.filter(this.fileService.onDidRunOperation, n => (n.isOperation(0) || n.isOperation(3) || n.isOperation(1) || n.isOperation(4)) && i.isEqual(n.resource, t)))(() => this._onDidChange.fire()))
                 }
                 async loadConfiguration() {
                     try {
                         const t = await this.fileService.readFile(this.userSettingsResource);
                         return this.parser.parse(t.value.toString() || "{}", this.parseOptions), this.parser.configurationModel
                     } catch {
-                        return Dt.createEmptyModel(this.logService)
+                        return xt.createEmptyModel(this.logService)
                     }
                 }
                 reparse(t) {
@@ -45703,7 +45756,7 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                 getRestrictedSettings() {
                     return this.parser.restrictedConfigurations
                 }
-            }, Rx = class {
+            }, RD = class {
                 constructor(t, e, i, r, s, n, o, a, c, l, u, d, f) {
                     this.key = t, this.overrides = e, this._value = i, this.overrideIdentifiers = r, this.defaultConfiguration = s, this.policyConfiguration = n, this.applicationConfiguration = o, this.userConfiguration = a, this.localUserConfiguration = c, this.remoteUserConfiguration = l, this.workspaceConfiguration = u, this.folderConfigurationModel = d, this.memoryConfigurationModel = f
                 }
@@ -45805,7 +45858,7 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                 }
                 updateValue(e, i, r = {}) {
                     let s;
-                    r.resource ? (s = this._memoryConfigurationByResource.get(r.resource), s || (s = Dt.createEmptyModel(this.logService), this._memoryConfigurationByResource.set(r.resource, s))) : s = this._memoryConfiguration, i === void 0 ? s.removeValue(e) : s.setValue(e, i), r.resource || (this._workspaceConsolidatedConfiguration = null)
+                    r.resource ? (s = this._memoryConfigurationByResource.get(r.resource), s || (s = xt.createEmptyModel(this.logService), this._memoryConfigurationByResource.set(r.resource, s))) : s = this._memoryConfiguration, i === void 0 ? s.removeValue(e) : s.setValue(e, i), r.resource || (this._workspaceConsolidatedConfiguration = null)
                 }
                 inspect(e, i, r) {
                     const s = this.getConsolidatedConfigurationModel(e, i, r),
@@ -45814,7 +45867,7 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                         a = new Set;
                     for (const c of s.overrides)
                         for (const l of c.identifiers) s.getOverrideValue(e, l) !== void 0 && a.add(l);
-                    return new Rx(e, i, s.getValue(e), a.size ? [...a] : void 0, this._defaultConfiguration, this._policyConfiguration.isEmpty() ? void 0 : this._policyConfiguration, this.applicationConfiguration.isEmpty() ? void 0 : this.applicationConfiguration, this.userConfiguration, this.localUserConfiguration, this.remoteUserConfiguration, r ? this._workspaceConfiguration : void 0, n || void 0, o)
+                    return new RD(e, i, s.getValue(e), a.size ? [...a] : void 0, this._defaultConfiguration, this._policyConfiguration.isEmpty() ? void 0 : this._policyConfiguration, this.applicationConfiguration.isEmpty() ? void 0 : this.applicationConfiguration, this.userConfiguration, this.localUserConfiguration, this.remoteUserConfiguration, r ? this._workspaceConfiguration : void 0, n || void 0, o)
                 }
                 keys(e) {
                     const i = this.getFolderConfigurationModelForResource(void 0, e);
@@ -45970,7 +46023,7 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                         if (this._remoteUserConfiguration.isEmpty()) this._userConfiguration = this._localUserConfiguration;
                         else {
                             const e = this._localUserConfiguration.merge(this._remoteUserConfiguration);
-                            this._userConfiguration = new Dt(e.contents, e.keys, e.overrides, void 0, this.logService)
+                            this._userConfiguration = new xt(e.contents, e.keys, e.overrides, void 0, this.logService)
                         } return this._userConfiguration
                 }
                 get localUserConfiguration() {
@@ -46092,12 +46145,12 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                         a = this.parseConfigurationModel(e.userRemote, i),
                         c = this.parseConfigurationModel(e.workspace, i),
                         l = e.folders.reduce((u, d) => (u.set(A.revive(d[0]), this.parseConfigurationModel(d[1], i)), u), new Zt);
-                    return new yR(r, s, n, o, a, c, l, Dt.createEmptyModel(i), new Zt, i)
+                    return new yR(r, s, n, o, a, c, l, xt.createEmptyModel(i), new Zt, i)
                 }
                 static parseConfigurationModel(e, i) {
-                    return new Dt(e.contents, e.keys, e.overrides, e.raw, i)
+                    return new xt(e.contents, e.keys, e.overrides, e.raw, i)
                 }
-            }, Ax = class {
+            }, AD = class {
                 constructor(t, e, i, r, s) {
                     this.change = t, this.previous = e, this.currentConfiguraiton = i, this.currentWorkspace = r, this.logService = s, this._marker = `
 `, this._markerCode1 = this._marker.charCodeAt(0), this._markerCode2 = 46, this.affectedKeys = new Set, this._previousConfiguration = void 0;
@@ -46128,15 +46181,15 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
             }
         }
     }),
-    Tx, Lx, rg, Kq = g({
+    TD, LD, rg, Kq = g({
         "out-build/vs/platform/configuration/common/configurations.js"() {
             "use strict";
-            Vt(), K(), N(), br(), We(), Mx(), Fn(), q(), hs(), ks(), $e(), Ws(), Tx = class extends $ {
+            Vt(), K(), N(), br(), We(), MD(), Fn(), q(), hs(), ks(), $e(), Ws(), TD = class extends $ {
                 get configurationModel() {
                     return this._configurationModel
                 }
                 constructor(t) {
-                    super(), this.logService = t, this._onDidChangeConfiguration = this._register(new D), this.onDidChangeConfiguration = this._onDidChangeConfiguration.event, this._configurationModel = Dt.createEmptyModel(this.logService)
+                    super(), this.logService = t, this._onDidChangeConfiguration = this._register(new x), this.onDidChangeConfiguration = this._onDidChangeConfiguration.event, this._configurationModel = xt.createEmptyModel(this.logService)
                 }
                 async initialize() {
                     return this.resetConfigurationModel(), this._register(Mi.as(fr.Configuration).onDidUpdateConfiguration(({
@@ -46157,7 +46210,7 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                     return {}
                 }
                 resetConfigurationModel() {
-                    this._configurationModel = Dt.createEmptyModel(this.logService);
+                    this._configurationModel = xt.createEmptyModel(this.logService);
                     const t = Mi.as(fr.Configuration).getConfigurationProperties();
                     this.updateConfigurationModel(Object.keys(t), t)
                 }
@@ -46169,9 +46222,9 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                         s !== void 0 ? this._configurationModel.setValue(r, s) : n ? this._configurationModel.setValue(r, _r(n.default)) : this._configurationModel.removeValue(r)
                     }
                 }
-            }, Lx = class {
+            }, LD = class {
                 constructor() {
-                    this.onDidChangeConfiguration = R.None, this.configurationModel = Dt.createEmptyModel(new d5)
+                    this.onDidChangeConfiguration = R.None, this.configurationModel = xt.createEmptyModel(new d5)
                 }
                 async initialize() {
                     return this.configurationModel
@@ -46181,7 +46234,7 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                     return this._configurationModel
                 }
                 constructor(e, i, r) {
-                    super(), this.defaultConfiguration = e, this.policyService = i, this.logService = r, this._onDidChangeConfiguration = this._register(new D), this.onDidChangeConfiguration = this._onDidChangeConfiguration.event, this._configurationModel = Dt.createEmptyModel(this.logService), this.configurationRegistry = Mi.as(fr.Configuration)
+                    super(), this.defaultConfiguration = e, this.policyService = i, this.logService = r, this._onDidChangeConfiguration = this._register(new x), this.onDidChangeConfiguration = this._onDidChangeConfiguration.event, this._configurationModel = xt.createEmptyModel(this.logService), this.configurationRegistry = Mi.as(fr.Configuration)
                 }
                 async initialize() {
                     return this.logService.trace("PolicyConfiguration#initialize"), this.update(await this.updatePolicyDefinitions(this.defaultConfiguration.configurationModel.keys), !1), this.update(await this.updatePolicyDefinitions(Object.keys(this.configurationRegistry.getExcludedConfigurationProperties())), !1), this._register(this.policyService.onDidChange(e => this.onDidChangePolicies(e))), this._register(this.defaultConfiguration.onDidChangeConfiguration(async ({
@@ -46246,7 +46299,7 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                     if (n.length) {
                         this.logService.trace("PolicyConfiguration#changed", n);
                         const a = this._configurationModel;
-                        this._configurationModel = Dt.createEmptyModel(this.logService);
+                        this._configurationModel = xt.createEmptyModel(this.logService);
                         for (const c of a.keys) this._configurationModel.setValue(c, a.getValue(c));
                         for (const [c, l] of n) l === void 0 ? this._configurationModel.removeValue(c) : this._configurationModel.setValue(c, l);
                         i && this._onDidChangeConfiguration.fire(this._configurationModel)
@@ -46299,19 +46352,19 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
             }, rg = __decorate([__param(1, go), __param(2, j)], rg)
         }
     }),
-    Ox, Wx, Xq = g({
+    OD, WD, Xq = g({
         "out-build/vs/platform/configuration/common/configurationService.js"() {
             "use strict";
-            Vt(), ce(), rt(), K(), Ws(), G4(), N(), ui(), br(), z(), wt(), Ze(), Mx(), Fn(), Kq(), hs(), Ox = class extends $ {
+            Vt(), ce(), rt(), K(), Ws(), G4(), N(), ui(), br(), z(), wt(), Ze(), MD(), Fn(), Kq(), hs(), OD = class extends $ {
                 constructor(t, e, i, r) {
-                    super(), this.settingsResource = t, this.logService = r, this._onDidChangeConfiguration = this._register(new D), this.onDidChangeConfiguration = this._onDidChangeConfiguration.event, this.defaultConfiguration = this._register(new Tx(r)), this.policyConfiguration = i instanceof wy ? new Lx : this._register(new rg(this.defaultConfiguration, i, r)), this.userConfiguration = this._register(new Dx(this.settingsResource, {}, pt, e, r)), this.configuration = new ig(this.defaultConfiguration.configurationModel, this.policyConfiguration.configurationModel, Dt.createEmptyModel(r), Dt.createEmptyModel(r), Dt.createEmptyModel(r), Dt.createEmptyModel(r), new Zt, Dt.createEmptyModel(r), new Zt, r), this.configurationEditing = new Wx(t, e, this), this.reloadConfigurationScheduler = this._register(new Tr(() => this.reloadConfiguration(), 50)), this._register(this.defaultConfiguration.onDidChangeConfiguration(({
+                    super(), this.settingsResource = t, this.logService = r, this._onDidChangeConfiguration = this._register(new x), this.onDidChangeConfiguration = this._onDidChangeConfiguration.event, this.defaultConfiguration = this._register(new TD(r)), this.policyConfiguration = i instanceof wy ? new LD : this._register(new rg(this.defaultConfiguration, i, r)), this.userConfiguration = this._register(new xD(this.settingsResource, {}, pt, e, r)), this.configuration = new ig(this.defaultConfiguration.configurationModel, this.policyConfiguration.configurationModel, xt.createEmptyModel(r), xt.createEmptyModel(r), xt.createEmptyModel(r), xt.createEmptyModel(r), new Zt, xt.createEmptyModel(r), new Zt, r), this.configurationEditing = new WD(t, e, this), this.reloadConfigurationScheduler = this._register(new Tr(() => this.reloadConfiguration(), 50)), this._register(this.defaultConfiguration.onDidChangeConfiguration(({
                         defaults: s,
                         properties: n
                     }) => this.onDidDefaultConfigurationChange(s, n))), this._register(this.policyConfiguration.onDidChangeConfiguration(s => this.onDidPolicyConfigurationChange(s))), this._register(this.userConfiguration.onDidChange(() => this.reloadConfigurationScheduler.schedule()))
                 }
                 async initialize() {
                     const [t, e, i] = await Promise.all([this.defaultConfiguration.initialize(), this.policyConfiguration.initialize(), this.userConfiguration.loadConfiguration()]);
-                    this.configuration = new ig(t, e, Dt.createEmptyModel(this.logService), i, Dt.createEmptyModel(this.logService), Dt.createEmptyModel(this.logService), new Zt, Dt.createEmptyModel(this.logService), new Zt, this.logService)
+                    this.configuration = new ig(t, e, xt.createEmptyModel(this.logService), i, xt.createEmptyModel(this.logService), xt.createEmptyModel(this.logService), new Zt, xt.createEmptyModel(this.logService), new Zt, this.logService)
                 }
                 getConfigurationData() {
                     return this.configuration.toData()
@@ -46368,12 +46421,12 @@ var Dt, y0, Dx, Rx, ig, Ax, Mx = g({
                     this.trigger(i, e, 7)
                 }
                 trigger(t, e, i) {
-                    const r = new Ax(t, {
+                    const r = new AD(t, {
                         data: e
                     }, this.configuration, void 0, this.logService);
                     r.source = i, this._onDidChangeConfiguration.fire(r)
                 }
-            }, Wx = class {
+            }, WD = class {
                 constructor(t, e, i) {
                     this.settingsResource = t, this.fileService = e, this.configurationService = i, this.queue = new ta
                 }
@@ -46545,9 +46598,9 @@ async function S0(t, e) {
                         return
                     }
                 } else {
-                    const x = E.name.lastIndexOf(".");
-                    if (x >= 0) {
-                        const k = E.name.substring(x + 1);
+                    const D = E.name.lastIndexOf(".");
+                    if (D >= 0) {
+                        const k = E.name.substring(D + 1);
                         k && n.set(k, (n.get(k) ?? 0) + 1)
                     }
                     for (const k of s) k.relativePathPattern?.test(m) !== !1 && k.filePattern.test(E.name) && o.set(k.tag, (o.get(k.tag) ?? 0) + 1);
@@ -46850,10 +46903,10 @@ var rG = g({
 function sG(t) {
     return (t.scheme === "file" || t.scheme === "vscode-remote") && t.path.endsWith(".mdc")
 }
-var Fx, nG = g({
+var FD, nG = g({
         "out-build/vs/base/common/mdc.js"() {
             "use strict";
-            Le(), Fx = `---
+            Le(), FD = `---
 alwaysApply: true
 ---
 `
@@ -46867,7 +46920,7 @@ alwaysApply: true
                     E0 = this
                 }
                 constructor(e) {
-                    super(), this.logService = e, this.BUFFER_SIZE = 256 * 1024, this._onDidChangeFileSystemProviderRegistrations = this._register(new D), this.onDidChangeFileSystemProviderRegistrations = this._onDidChangeFileSystemProviderRegistrations.event, this._onWillActivateFileSystemProvider = this._register(new D), this.onWillActivateFileSystemProvider = this._onWillActivateFileSystemProvider.event, this._onDidChangeFileSystemProviderCapabilities = this._register(new D), this.onDidChangeFileSystemProviderCapabilities = this._onDidChangeFileSystemProviderCapabilities.event, this.provider = new Map, this._onDidRunOperation = this._register(new D), this.onDidRunOperation = this._onDidRunOperation.event, this.internalOnDidFilesChange = this._register(new D), this._onDidUncorrelatedFilesChange = this._register(new D), this.onDidFilesChange = this._onDidUncorrelatedFilesChange.event, this._onDidWatchError = this._register(new D), this.onDidWatchError = this._onDidWatchError.event, this.activeWatchers = new Map, this.writeQueue = this._register(new Kv)
+                    super(), this.logService = e, this.BUFFER_SIZE = 256 * 1024, this._onDidChangeFileSystemProviderRegistrations = this._register(new x), this.onDidChangeFileSystemProviderRegistrations = this._onDidChangeFileSystemProviderRegistrations.event, this._onWillActivateFileSystemProvider = this._register(new x), this.onWillActivateFileSystemProvider = this._onWillActivateFileSystemProvider.event, this._onDidChangeFileSystemProviderCapabilities = this._register(new x), this.onDidChangeFileSystemProviderCapabilities = this._onDidChangeFileSystemProviderCapabilities.event, this.provider = new Map, this._onDidRunOperation = this._register(new x), this.onDidRunOperation = this._onDidRunOperation.event, this.internalOnDidFilesChange = this._register(new x), this._onDidUncorrelatedFilesChange = this._register(new x), this.onDidFilesChange = this._onDidUncorrelatedFilesChange.event, this._onDidWatchError = this._register(new x), this.onDidWatchError = this._onDidWatchError.event, this.activeWatchers = new Map, this.writeQueue = this._register(new Kv)
                 }
                 registerNotebookCellChecker(e) {
                     return this.notebookCellExistsChecker = e, Se(() => {
@@ -46936,7 +46989,7 @@ alwaysApply: true
                 }
                 async withReadProvider(e) {
                     const i = await this.withProvider(e);
-                    if (an(i) || wr(i) || Dw(i)) return i;
+                    if (an(i) || wr(i) || xw(i)) return i;
                     throw new Error(`Filesystem provider for scheme '${e.scheme}' neither has FileReadWrite, FileReadStream nor FileOpenReadWriteClose capability which is needed for the read operation.`)
                 }
                 async withWriteProvider(e) {
@@ -47048,7 +47101,7 @@ alwaysApply: true
                     if (!i?.overwrite && await this.exists(e)) throw new fi(S(2042, null, this.resourceForError(e)), 3, i)
                 }
                 async createFile(e, i = J.fromString(""), r) {
-                    sG(e) && i.toString().trim() === "" && (i = J.fromString(Fx)), await this.doValidateCreateFile(e, r);
+                    sG(e) && i.toString().trim() === "" && (i = J.fromString(FD)), await this.doValidateCreateFile(e, r);
                     const s = await this.writeFile(e, i);
                     return this._onDidRunOperation.fire(new Kn(e, 0, s)), s
                 }
@@ -47172,7 +47225,7 @@ alwaysApply: true
                     });
                     let c;
                     try {
-                        return typeof o?.etag == "string" && o.etag !== Ih && await a, o?.atomic && Rw(e) || !(an(e) || Dw(e)) || wr(e) && o?.preferUnbuffered ? c = this.readFileUnbuffered(e, i, o) : Dw(e) ? c = this.readFileStreamed(e, i, n.token, o) : c = this.readFileBuffered(e, i, n.token, o), c.on("end", () => n.dispose()), c.on("error", () => n.dispose()), {
+                        return typeof o?.etag == "string" && o.etag !== Ih && await a, o?.atomic && Rw(e) || !(an(e) || xw(e)) || wr(e) && o?.preferUnbuffered ? c = this.readFileUnbuffered(e, i, o) : xw(e) ? c = this.readFileStreamed(e, i, n.token, o) : c = this.readFileBuffered(e, i, n.token, o), c.on("end", () => n.dispose()), c.on("error", () => n.dispose()), {
                             ...await a,
                             value: c
                         }
@@ -47266,7 +47319,7 @@ alwaysApply: true
                     if (a && !c && o && await this.del(s, {
                             recursive: !0
                         }), await this.mkdirp(r, this.getExtUri(r).providerExtUri.dirname(s)), n === "copy") {
-                        if (e === r && xw(e)) await e.copy(i, s, {
+                        if (e === r && Dw(e)) await e.copy(i, s, {
                             overwrite: o
                         });
                         else {
@@ -47410,7 +47463,7 @@ alwaysApply: true
                 async cloneFile(e, i) {
                     const r = await this.withProvider(e),
                         s = this.throwIfFileSystemIsReadonly(await this.withWriteProvider(i), i);
-                    if (!(r === s && this.getExtUri(r).providerExtUri.isEqual(e, i))) return r === s && v5(r) ? r.cloneFile(e, i) : (await this.mkdirp(s, this.getExtUri(s).providerExtUri.dirname(i)), r === s && xw(r) ? this.writeQueue.queueFor(e, () => r.copy(e, i, {
+                    if (!(r === s && this.getExtUri(r).providerExtUri.isEqual(e, i))) return r === s && v5(r) ? r.cloneFile(e, i) : (await this.mkdirp(s, this.getExtUri(s).providerExtUri.dirname(i)), r === s && Dw(r) ? this.writeQueue.queueFor(e, () => r.copy(e, i, {
                         overwrite: !0
                     }), this.getExtUri(r).providerExtUri) : this.writeQueue.queueFor(e, () => this.doCopyFile(r, e, s, i), this.getExtUri(r).providerExtUri))
                 }
@@ -47442,7 +47495,7 @@ alwaysApply: true
                     })();
                     const o = i.correlationId;
                     if (typeof o == "number") {
-                        const a = r.add(new D);
+                        const a = r.add(new x);
                         return r.add(this.internalOnDidFilesChange.event(l => {
                             l.correlates(o) && a.fire(l)
                         })), {
@@ -47611,10 +47664,10 @@ alwaysApply: true
             }, ng = E0 = __decorate([__param(0, j)], ng)
         }
     }),
-    Nx, k0, aG = g({
+    ND, k0, aG = g({
         "out-build/vs/platform/instantiation/common/graph.js"() {
             "use strict";
-            Nx = class {
+            ND = class {
                 constructor(t, e) {
                     this.key = t, this.data = e, this.incoming = new Map, this.outgoing = new Map
                 }
@@ -47640,7 +47693,7 @@ alwaysApply: true
                 lookupOrInsertNode(t) {
                     const e = this._hashFn(t);
                     let i = this._nodes.get(e);
-                    return i || (i = new Nx(e, t), this._nodes.set(e, i)), i
+                    return i || (i = new ND(e, t), this._nodes.set(e, i)), i
                 }
                 lookup(t) {
                     return this._nodes.get(this._hashFn(t))
@@ -47676,10 +47729,10 @@ alwaysApply: true
             }
         }
     }),
-    Ux, $x, C0, Bx, Vx, og, cG = g({
+    UD, $D, C0, BD, VD, og, cG = g({
         "out-build/vs/platform/instantiation/common/instantiationService.js"() {
             "use strict";
-            ce(), $e(), Ln(), N(), Ql(), aG(), G(), Z1(), JE(), Ux = class {
+            ce(), $e(), Ln(), N(), Ql(), aG(), G(), Z1(), JE(), UD = class {
                 constructor(t) {
                     this._lazy = new Kr(t)
                 }
@@ -47690,14 +47743,14 @@ alwaysApply: true
                     return this._lazy.hasValue
                 }
                 dispose() {}
-            }, $x = !1, C0 = class extends Error {
+            }, $D = !1, C0 = class extends Error {
                 constructor(t, e) {
                     super("cyclic dependency between services"), this.message = `REASON: ${e}
 ` + (t.findCycleSlow() ?? `UNABLE to detect cycle, dumping graph: 
 ${t.toString()}`)
                 }
-            }, Bx = class eS {
-                constructor(e = new Mf, i = !1, r, s = $x, n = !1) {
+            }, BD = class eS {
+                constructor(e = new Mf, i = !1, r, s = $D, n = !1) {
                     this._services = e, this._strict = i, this._parent = r, this._enableTracing = s, this._enableLazyInstantiation = n, this._isDisposed = !1, this._servicesToMaybeDispose = new Set, this._children = new Set, this._activeInstantiations = new Set, this._services.set(Xr, this), this._globalGraph = s ? r?._globalGraph ?? new k0(o => o) : void 0
                 }
                 dispose() {
@@ -47727,7 +47780,7 @@ ${t.toString()}`)
                     try {
                         return e({
                             get: o => {
-                                if (s) throw xE("service accessor is only valid during the invocation of its target method");
+                                if (s) throw DE("service accessor is only valid during the invocation of its target method");
                                 const a = this._getOrCreateServiceInstance(o, r);
                                 if (!a) throw new Error(`[invokeFunction] unknown service '${o}'`);
                                 return a
@@ -47846,16 +47899,16 @@ ${t.toString()}`)
                                 }
                                 return l.clear(), a.add(p), p
                             },
-                            f = u ? new Ux(d) : new bk(d);
+                            f = u ? new UD(d) : new bk(d);
                         return new Proxy(Object.create(null), {
                             get(p, m) {
                                 if (!f.isInitialized && typeof m == "string" && (m.startsWith("onDid") || m.startsWith("onWill"))) {
                                     let v = l.get(m);
-                                    return v || (v = new fv, l.set(m, v)), (E, x, k) => {
-                                        if (f.isInitialized) return f.value[m](E, x, k);
+                                    return v || (v = new fv, l.set(m, v)), (E, D, k) => {
+                                        if (f.isInitialized) return f.value[m](E, D, k);
                                         {
                                             const M = {
-                                                    listener: [E, x, k],
+                                                    listener: [E, D, k],
                                                     disposable: void 0
                                                 },
                                                 T = v.push(M);
@@ -47887,7 +47940,7 @@ ${t.toString()}`)
                 }
             }, (function(t) {
                 t[t.None = 0] = "None", t[t.Creation = 1] = "Creation", t[t.Invocation = 2] = "Invocation", t[t.Branch = 3] = "Branch"
-            })(Vx || (Vx = {})), og = class vs {
+            })(VD || (VD = {})), og = class vs {
                 static {
                     this.all = new Set
                 }
@@ -47944,10 +47997,10 @@ ${t.toString()}`)
             }
         }
     }),
-    jx, lG = g({
+    jD, lG = g({
         "out-build/vs/platform/log/common/bufferLog.js"() {
             "use strict";
-            N(), q(), jx = class extends Pw {
+            N(), q(), jD = class extends Pw {
                 constructor(t = gl) {
                     super(), this.buffer = [], this._logger = void 0, this._logLevelDisposable = this._register(new Qs), this.setLevel(t)
                 }
@@ -48029,7 +48082,7 @@ var ag, dG = g({
             }
             requestToNormalizedFilePath(e) {
                 const i = A.parse(e.url),
-                    r = xt.uriToFileUri(i);
+                    r = Dt.uriToFileUri(i);
                 return Ai(r.fsPath)
             }
             createIPCObjectUrl() {
@@ -48069,30 +48122,30 @@ function P0(t) {
     return lg.indexOf(t) >= 0
 }
 
-function xu(t) {
+function Du(t) {
     return ug.indexOf(t) >= 0
 }
 
 function pG(t, e, i, r) {
     if (i === 1) return !1;
-    if (i === 2 && xu(e)) {
+    if (i === 2 && Du(e)) {
         const s = /(\d+)\.(\d+)\.(\d+)/g.exec(r);
         if (s?.length === 4 && parseInt(s[1]) >= 18) return !1
     }
     return t < 1024
 }
-var Hx, gG, qx, cg, Gx, lg, ug, dg, zx = g({
+var HD, gG, qD, cg, GD, lg, ug, dg, zD = g({
         "out-build/vs/platform/tunnel/common/tunnel.js"() {
             "use strict";
-            K(), N(), ne(), Ze(), G(), q(), Hx = H("tunnelService"), gG = H("sharedTunnelsService"), (function(t) {
+            K(), N(), ne(), Ze(), G(), q(), HD = H("tunnelService"), gG = H("sharedTunnelsService"), (function(t) {
                 t.Http = "http", t.Https = "https"
-            })(qx || (qx = {})), (function(t) {
+            })(qD || (qD = {})), (function(t) {
                 t.ConstantPrivate = "constantPrivate", t.Private = "private", t.Public = "public"
             })(cg || (cg = {})), (function(t) {
                 t[t.Notify = 1] = "Notify", t[t.OpenBrowser = 2] = "OpenBrowser", t[t.OpenPreview = 3] = "OpenPreview", t[t.Silent = 4] = "Silent", t[t.Ignore = 5] = "Ignore", t[t.OpenBrowserOnce = 6] = "OpenBrowserOnce"
-            })(Gx || (Gx = {})), lg = ["localhost", "127.0.0.1", "0:0:0:0:0:0:0:1", "::1"], ug = ["0.0.0.0", "0:0:0:0:0:0:0:0", "::"], dg = class extends $ {
+            })(GD || (GD = {})), lg = ["localhost", "127.0.0.1", "0:0:0:0:0:0:0:1", "::1"], ug = ["0.0.0.0", "0:0:0:0:0:0:0:0", "::"], dg = class extends $ {
                 constructor(e, i) {
-                    super(), this.logService = e, this.configurationService = i, this._onTunnelOpened = new D, this.onTunnelOpened = this._onTunnelOpened.event, this._onTunnelClosed = new D, this.onTunnelClosed = this._onTunnelClosed.event, this._onAddedTunnelProvider = new D, this.onAddedTunnelProvider = this._onAddedTunnelProvider.event, this._tunnels = new Map, this._canElevate = !1, this._canChangeProtocol = !0, this._privacyOptions = [], this._factoryInProgress = new Set
+                    super(), this.logService = e, this.configurationService = i, this._onTunnelOpened = new x, this.onTunnelOpened = this._onTunnelOpened.event, this._onTunnelClosed = new x, this.onTunnelClosed = this._onTunnelClosed.event, this._onAddedTunnelProvider = new x, this.onAddedTunnelProvider = this._onAddedTunnelProvider.event, this._tunnels = new Map, this._canElevate = !1, this._canChangeProtocol = !0, this._privacyOptions = [], this._factoryInProgress = new Set
                 }
                 get hasTunnelProvider() {
                     return !!this._tunnelProvider
@@ -48162,7 +48215,7 @@ var Hx, gG, qx, cg, Gx, lg, ug, dg, zx = g({
                     }))
                 }
                 async getExistingTunnel(e, i) {
-                    (xu(e) || P0(e)) && (e = lg[0]);
+                    (Du(e) || P0(e)) && (e = lg[0]);
                     const r = this.getTunnelFromMap(e, i);
                     if (r) return ++r.refcount, r.value
                 }
@@ -48241,7 +48294,7 @@ var Hx, gG, qx, cg, Gx, lg, ug, dg, zx = g({
                 }
                 getTunnelFromMap(e, i) {
                     const r = [e];
-                    P0(e) ? (r.push(...lg), r.push(...ug)) : xu(e) && r.push(...ug);
+                    P0(e) ? (r.push(...lg), r.push(...ug)) : Du(e) && r.push(...ug);
                     const s = r.map(n => this._tunnels.get(n));
                     for (const n of s) {
                         const o = n?.get(i);
@@ -48277,39 +48330,39 @@ var Hx, gG, qx, cg, Gx, lg, ug, dg, zx = g({
             }, dg = __decorate([__param(0, j), __param(1, Qe)], dg)
         }
     }),
-    mG, Kx, Hs, Du, vG = g({
+    mG, KD, Hs, xu, vG = g({
         "out-build/vs/platform/remote/common/remoteAuthorityResolver.js"() {
             "use strict";
             $e(), G(), mG = H("remoteAuthorityResolverService"), (function(t) {
                 t[t.WebSocket = 0] = "WebSocket", t[t.Managed = 1] = "Managed"
-            })(Kx || (Kx = {})), (function(t) {
+            })(KD || (KD = {})), (function(t) {
                 t.Unknown = "Unknown", t.NotAvailable = "NotAvailable", t.TemporarilyNotAvailable = "TemporarilyNotAvailable", t.NoResolverFound = "NoResolverFound", t.InvalidAuthority = "InvalidAuthority"
-            })(Hs || (Hs = {})), Du = class xo extends qr {
+            })(Hs || (Hs = {})), xu = class Do extends qr {
                 static isNotAvailable(e) {
-                    return e instanceof xo && e._code === Hs.NotAvailable
+                    return e instanceof Do && e._code === Hs.NotAvailable
                 }
                 static isTemporarilyNotAvailable(e) {
-                    return e instanceof xo && e._code === Hs.TemporarilyNotAvailable
+                    return e instanceof Do && e._code === Hs.TemporarilyNotAvailable
                 }
                 static isNoResolverFound(e) {
-                    return e instanceof xo && e._code === Hs.NoResolverFound
+                    return e instanceof Do && e._code === Hs.NoResolverFound
                 }
                 static isInvalidAuthority(e) {
-                    return e instanceof xo && e._code === Hs.InvalidAuthority
+                    return e instanceof Do && e._code === Hs.InvalidAuthority
                 }
                 static isHandled(e) {
-                    return e instanceof xo && e.isHandled
+                    return e instanceof Do && e.isHandled
                 }
                 constructor(e, i = Hs.Unknown, r) {
-                    super(e), this._message = e, this._code = i, this._detail = r, this.isHandled = i === Hs.NotAvailable && r === !0, Object.setPrototypeOf(this, xo.prototype)
+                    super(e), this._message = e, this._code = i, this._detail = r, this.isHandled = i === Hs.NotAvailable && r === !0, Object.setPrototypeOf(this, Do.prototype)
                 }
             }
         }
     }),
-    Xx, wG = g({
+    XD, wG = g({
         "out-build/vs/base/common/cursorSocketCloseError.js"() {
             "use strict";
-            Xx = "CursorSocketTransient"
+            XD = "CursorSocketTransient"
         }
     });
 
@@ -48334,7 +48387,7 @@ function I0(t) {
     }
 }
 
-function Yx(t) {
+function YD(t) {
     const e = new Ar;
     return setTimeout(() => e.cancel(), t), e.token
 }
@@ -48364,7 +48417,7 @@ function _G(t, e, i, r, s, n, o, a) {
     }), c.promise
 }
 
-function x0(t, e) {
+function D0(t, e) {
     const i = new fg(e);
     return t.then(r => {
         i.didTimeout || i.resolve(r)
@@ -48373,7 +48426,7 @@ function x0(t, e) {
     }), i.promise
 }
 async function bG(t, e, i, r) {
-    const s = Zx(t, e);
+    const s = ZD(t, e);
     t.logService.trace(`${s} 1/6. invoking socketFactory.connect().`);
     let n;
     try {
@@ -48386,7 +48439,7 @@ async function bG(t, e, i, r) {
     t.reconnectionProtocol ? (t.reconnectionProtocol.beginAcceptReconnection(n, null), o = t.reconnectionProtocol, a = !1) : (o = new eC({
         socket: n
     }), a = !0), t.logService.trace(`${s} 3/6. sending AuthRequest control message.`);
-    const c = await x0(t.signService.createNewMessage(Gt()), r),
+    const c = await D0(t.signService.createNewMessage(Gt()), r),
         l = {
             type: "auth",
             auth: t.connectionToken || "00000000000000000000",
@@ -48394,16 +48447,16 @@ async function bG(t, e, i, r) {
         };
     o.sendControl(J.fromString(JSON.stringify(l)));
     try {
-        const u = await SG(o, yG(r, Yx(1e4)));
+        const u = await SG(o, yG(r, YD(1e4)));
         if (u.type !== "sign" || typeof u.data != "string") {
             const m = new Error("Unexpected handshake message");
             throw m.code = "VSCODE_CONNECTION_ERROR", m
         }
-        if (t.logService.trace(`${s} 4/6. received SignRequest control message.`), !await x0(t.signService.validate(c, u.signedData), r)) {
+        if (t.logService.trace(`${s} 4/6. received SignRequest control message.`), !await D0(t.signService.validate(c, u.signedData), r)) {
             const m = new Error("Refused to connect to unsupported server");
             throw m.code = "VSCODE_CONNECTION_ERROR", m
         }
-        const f = await x0(t.signService.sign(u.data), r),
+        const f = await D0(t.signService.sign(u.data), r),
             p = {
                 type: "connectionType",
                 commit: t.commit,
@@ -48415,18 +48468,18 @@ async function bG(t, e, i, r) {
             ownsProtocol: a
         }
     } catch (u) {
-        throw u && u.code === "ETIMEDOUT" && (t.logService.error(`${s} the handshake timed out. Error:`), t.logService.error(u)), u && u.code === "VSCODE_CONNECTION_ERROR" && (t.logService.error(`${s} received error control message when negotiating connection. Error:`), t.logService.error(u)), a && Qx(o), u
+        throw u && u.code === "ETIMEDOUT" && (t.logService.error(`${s} the handshake timed out. Error:`), t.logService.error(u)), u && u.code === "VSCODE_CONNECTION_ERROR" && (t.logService.error(`${s} received error control message when negotiating connection. Error:`), t.logService.error(u)), a && QD(o), u
     }
 }
 async function EG(t, e, i) {
     const r = Date.now(),
-        s = Zx(t, 3),
+        s = ZD(t, 3),
         {
             protocol: n
         } = await bG(t, 3, e, i);
-    return t.logService.trace(`${s} 6/6. handshake finished, connection is up and running after ${DG(r)}!`), n
+    return t.logService.trace(`${s} 6/6. handshake finished, connection is up and running after ${xG(r)}!`), n
 }
-async function Jx(t, e, i) {
+async function JD(t, e, i) {
     const {
         connectTo: r,
         connectionToken: s
@@ -48444,7 +48497,7 @@ async function Jx(t, e, i) {
     }
 }
 async function kG(t, e, i) {
-    const r = await Jx(t, Gt(), null);
+    const r = await JD(t, Gt(), null);
     return await EG(r, {
         host: e,
         port: i
@@ -48460,7 +48513,7 @@ function CG(t) {
     }))
 }
 
-function Qx(t) {
+function QD(t) {
     try {
         t.acceptDisconnect();
         const e = t.getSocket();
@@ -48483,27 +48536,27 @@ function IG(t, e) {
     return t
 }
 
-function xG(t, e) {
+function DG(t, e) {
     return `[remote-connection][${IG(I0(t),13)}][${e.substr(0,5)}\u2026]`
 }
 
 function hg(t, e, i) {
-    return `${xG(t,e)}[${i?"reconnect":"initial"}]`
+    return `${DG(t,e)}[${i?"reconnect":"initial"}]`
 }
 
-function Zx(t, e) {
+function ZD(t, e) {
     return `${hg(e,t.reconnectionToken,!!t.reconnectionProtocol)}[${t.connectTo}]`
 }
 
-function DG(t) {
+function xG(t) {
     return `${Date.now()-t} ms`
 }
-var eD, tD, fg, iD, rD, sD, nD, D0, oD, RG, AG = g({
+var ex, tx, fg, ix, rx, sx, nx, x0, ox, RG, AG = g({
         "out-build/vs/platform/remote/common/remoteAgentConnection.js"() {
             "use strict";
-            ce(), rt(), vt(), $e(), K(), N(), Le(), ws(), Yo(), Si(), tC(), vG(), Wf(), wG(), eD = 30 * 1e3, (function(t) {
+            ce(), rt(), vt(), $e(), K(), N(), Le(), ws(), Yo(), Si(), tC(), vG(), Wf(), wG(), ex = 30 * 1e3, (function(t) {
                 t[t.Management = 1] = "Management", t[t.ExtensionHost = 2] = "ExtensionHost", t[t.Tunnel = 3] = "Tunnel"
-            })(tD || (tD = {})), fg = class {
+            })(tx || (tx = {})), fg = class {
                 get didTimeout() {
                     return this._state === "timedout"
                 }
@@ -48512,7 +48565,7 @@ var eD, tD, fg, iD, rD, sD, nD, D0, oD, RG, AG = g({
                         promise: this.promise,
                         resolve: this._resolvePromise,
                         reject: this._rejectPromise
-                    } = xL(), t.isCancellationRequested ? this._timeout() : this._disposables.add(t.onCancellationRequested(() => this._timeout()))
+                    } = DL(), t.isCancellationRequested ? this._timeout() : this._disposables.add(t.onCancellationRequested(() => this._timeout()))
                 }
                 registerDisposable(t) {
                     this._state === "pending" ? this._disposables.add(t) : t.dispose()
@@ -48532,26 +48585,26 @@ var eD, tD, fg, iD, rD, sD, nD, D0, oD, RG, AG = g({
                 }
             }, (function(t) {
                 t[t.ConnectionLost = 0] = "ConnectionLost", t[t.ReconnectionWait = 1] = "ReconnectionWait", t[t.ReconnectionRunning = 2] = "ReconnectionRunning", t[t.ReconnectionPermanentFailure = 3] = "ReconnectionPermanentFailure", t[t.ConnectionGain = 4] = "ConnectionGain"
-            })(iD || (iD = {})), rD = class {
+            })(ix || (ix = {})), rx = class {
                 constructor(t, e) {
                     this.reconnectionToken = t, this.millisSinceLastIncomingData = e, this.type = 0
                 }
-            }, sD = class {
+            }, sx = class {
                 constructor(t, e, i, r) {
                     this.reconnectionToken = t, this.millisSinceLastIncomingData = e, this.durationSeconds = i, this.cancellableTimer = r, this.type = 1
                 }
                 skipWait() {
                     this.cancellableTimer.cancel()
                 }
-            }, nD = class {
+            }, nx = class {
                 constructor(t, e, i) {
                     this.reconnectionToken = t, this.millisSinceLastIncomingData = e, this.attempt = i, this.type = 2
                 }
-            }, D0 = class {
+            }, x0 = class {
                 constructor(t, e, i) {
                     this.reconnectionToken = t, this.millisSinceLastIncomingData = e, this.attempt = i, this.type = 4
                 }
-            }, oD = class {
+            }, ox = class {
                 constructor(t, e, i, r) {
                     this.reconnectionToken = t, this.millisSinceLastIncomingData = e, this.attempt = i, this.handled = r, this.type = 3
                 }
@@ -48600,7 +48653,7 @@ var eD, tD, fg, iD, rD, sD, nD, D0, oD, RG, AG = g({
                     return this._permanentFailure || zs._getPermanentFailureState(this.getRemoteAuthority()) !== void 0
                 }
                 constructor(e, i, r, s, n) {
-                    super(), this._connectionType = e, this._options = i, this.reconnectionToken = r, this.protocol = s, this._reconnectionFailureIsFatal = n, this._onDidStateChange = this._register(new D), this.onDidStateChange = this._onDidStateChange.event, this._permanentFailure = !1, this._isReconnecting = !1, this._isDisposed = !1, this._onDidStateChange.fire(new D0(this.reconnectionToken, 0, 0)), this._register(s.onSocketClose(a => {
+                    super(), this._connectionType = e, this._options = i, this.reconnectionToken = r, this.protocol = s, this._reconnectionFailureIsFatal = n, this._onDidStateChange = this._register(new x), this.onDidStateChange = this._onDidStateChange.event, this._permanentFailure = !1, this._isReconnecting = !1, this._isDisposed = !1, this._onDidStateChange.fire(new x0(this.reconnectionToken, 0, 0)), this._register(s.onSocketClose(a => {
                         const c = hg(this._connectionType, this.reconnectionToken, !0);
                         a ? a.type === 0 ? (this._lastSocketCloseError = a.error, this._options.logService.info(`${c} received socket close event (hadError: ${a.hadError}).`), a.error && this._options.logService.error(a.error)) : (this._lastSocketCloseError = void 0, this._options.logService.info(`${c} received socket close event (wasClean: ${a.wasClean}, code: ${a.code}, reason: ${a.reason}).`), a.event && this._options.logService.error(a.event)) : (this._lastSocketCloseError = void 0, this._options.logService.info(`${c} received socket close event.`)), this._beginReconnecting()
                     })), this._register(s.onSocketTimeout(a => {
@@ -48633,7 +48686,7 @@ var eD, tD, fg, iD, rD, sD, nD, D0, oD, RG, AG = g({
                 async _runReconnectingLoop() {
                     if (this._isPermanentFailure || this._isDisposed) return;
                     const e = hg(this._connectionType, this.reconnectionToken, !0);
-                    this._options.logService.info(`${e} starting reconnecting loop. You can get more information with the trace log level.`), this._onDidStateChange.fire(new rD(this.reconnectionToken, this.protocol.getMillisSinceLastIncomingData()));
+                    this._options.logService.info(`${e} starting reconnecting loop. You can get more information with the trace log level.`), this._onDidStateChange.fire(new rx(this.reconnectionToken, this.protocol.getMillisSinceLastIncomingData()));
                     const i = [0, 5, 5, 10, 10, 10, 10, 10, 30];
                     let r = -1;
                     do {
@@ -48642,7 +48695,7 @@ var eD, tD, fg, iD, rD, sD, nD, D0, oD, RG, AG = g({
                         try {
                             if (s > 0) {
                                 const o = CG(s);
-                                this._onDidStateChange.fire(new sD(this.reconnectionToken, this.protocol.getMillisSinceLastIncomingData(), s, o)), this._options.logService.info(`${e} waiting for ${s} seconds before reconnecting...`);
+                                this._onDidStateChange.fire(new sx(this.reconnectionToken, this.protocol.getMillisSinceLastIncomingData(), s, o)), this._options.logService.info(`${e} waiting for ${s} seconds before reconnecting...`);
                                 try {
                                     await o
                                 } catch {}
@@ -48651,10 +48704,10 @@ var eD, tD, fg, iD, rD, sD, nD, D0, oD, RG, AG = g({
                                 this._options.logService.error(`${e} permanent failure occurred while running the reconnecting loop.`);
                                 break
                             }
-                            this._onDidStateChange.fire(new nD(this.reconnectionToken, this.protocol.getMillisSinceLastIncomingData(), r + 1)), this._options.logService.info(`${e} resolving connection...`);
-                            const n = await Jx(this._options, this.reconnectionToken, this.protocol);
-                            if (this._options.logService.info(`${e} connecting to ${n.connectTo}...`), this._connectionType === 1 && zs._debugReconnectPermanentFailureAuthorities.delete(this.getRemoteAuthority())) throw new Du("Simulated permanent reconnect failure (developer)", Hs.NotAvailable);
-                            await this._reconnect(n, Yx(this._options.reconnectTimeoutMs ?? eD)), this._options.logService.info(`${e} reconnected!`), this._onDidStateChange.fire(new D0(this.reconnectionToken, this.protocol.getMillisSinceLastIncomingData(), r + 1));
+                            this._onDidStateChange.fire(new nx(this.reconnectionToken, this.protocol.getMillisSinceLastIncomingData(), r + 1)), this._options.logService.info(`${e} resolving connection...`);
+                            const n = await JD(this._options, this.reconnectionToken, this.protocol);
+                            if (this._options.logService.info(`${e} connecting to ${n.connectTo}...`), this._connectionType === 1 && zs._debugReconnectPermanentFailureAuthorities.delete(this.getRemoteAuthority())) throw new xu("Simulated permanent reconnect failure (developer)", Hs.NotAvailable);
+                            await this._reconnect(n, YD(this._options.reconnectTimeoutMs ?? ex)), this._options.logService.info(`${e} reconnected!`), this._onDidStateChange.fire(new x0(this.reconnectionToken, this.protocol.getMillisSinceLastIncomingData(), r + 1));
                             break
                         } catch (n) {
                             const o = this._isBackgroundComposerConnection();
@@ -48666,7 +48719,7 @@ var eD, tD, fg, iD, rD, sD, nD, D0, oD, RG, AG = g({
                                 this._options.logService.error(`${e} An error occurred while reconnecting, but it will be treated as a permanent error because the reconnection grace time has expired! Will give up now! Error: ${ko(n)}`), this._onReconnectionPermanentFailure(this.protocol.getMillisSinceLastIncomingData(), r + 1, !1);
                                 break
                             }
-                            if (Du.isTemporarilyNotAvailable(n)) {
+                            if (xu.isTemporarilyNotAvailable(n)) {
                                 this._options.logService.info(`${e} A temporarily not available error occurred while trying to reconnect, will try again...`), this._options.logService.trace(n);
                                 continue
                             }
@@ -48674,16 +48727,16 @@ var eD, tD, fg, iD, rD, sD, nD, D0, oD, RG, AG = g({
                                 this._options.logService.info(`${e} A network error occurred while trying to reconnect, will try again...`), this._options.logService.trace(n);
                                 continue
                             }
-                            if (Dd(n)) {
+                            if (xd(n)) {
                                 this._options.logService.info(`${e} A promise cancelation error occurred while trying to reconnect, will try again...`), this._options.logService.trace(n);
                                 continue
                             }
-                            if (n instanceof Du) {
-                                this._options.logService.error(`${e} A RemoteAuthorityResolverError occurred while trying to reconnect. Will give up now! Error: ${ko(n)}`), o && this._options.logService.info(`${e} A RemoteAuthorityResolverError occurred while trying to reconnect. For background composer, we should ideally try to reconnect, but we're not doing that for now...`), this._onReconnectionPermanentFailure(this.protocol.getMillisSinceLastIncomingData(), r + 1, Du.isHandled(n));
+                            if (n instanceof xu) {
+                                this._options.logService.error(`${e} A RemoteAuthorityResolverError occurred while trying to reconnect. Will give up now! Error: ${ko(n)}`), o && this._options.logService.info(`${e} A RemoteAuthorityResolverError occurred while trying to reconnect. For background composer, we should ideally try to reconnect, but we're not doing that for now...`), this._onReconnectionPermanentFailure(this.protocol.getMillisSinceLastIncomingData(), r + 1, xu.isHandled(n));
                                 break
                             }
                             if (this._options.logService.error(`${e} An unknown error occurred while trying to reconnect, since this is an unknown case, it will be treated as a permanent error! Will give up now! Error: ${ko(n)}`), o) {
-                                if (this._lastSocketCloseError && this._lastSocketCloseError.code === Xx) {
+                                if (this._lastSocketCloseError && this._lastSocketCloseError.code === XD) {
                                     this._options.logService.info(`${e} A transient cursor-socket close error occurred before reconnect, will try again...`), this._options.logService.trace(ko(this._lastSocketCloseError));
                                     continue
                                 }
@@ -48702,7 +48755,7 @@ var eD, tD, fg, iD, rD, sD, nD, D0, oD, RG, AG = g({
                     this._reconnectionFailureIsFatal ? zs.triggerPermanentFailure(this.getRemoteAuthority(), e, i, r) : this._gotoPermanentFailure(e, i, r)
                 }
                 _gotoPermanentFailure(e, i, r) {
-                    this._permanentFailure = !0, this._onDidStateChange.fire(new oD(this.reconnectionToken, e, i, r)), this._options.isGlass !== !0 && Qx(this.protocol)
+                    this._permanentFailure = !0, this._onDidStateChange.fire(new ox(this.reconnectionToken, e, i, r)), this._options.isGlass !== !0 && QD(this.protocol)
                 }
                 static _getPermanentFailureState(e) {
                     return this._permanentFailureByKey.get(e)
@@ -48726,13 +48779,13 @@ import * as TG from "net";
 import * as LG from "os";
 async function OG(t, e, i, r, s) {
     let n;
-    for (let o = 3; o && (n?.dispose(), n = await new aD(t, e, i, r, s).waitForReady(), !(s && O1[s] || !O1[n.tunnelLocalPort])); o--);
+    for (let o = 3; o && (n?.dispose(), n = await new ax(t, e, i, r, s).waitForReady(), !(s && O1[s] || !O1[n.tunnelLocalPort])); o--);
     return n
 }
-var aD, gg, Ru, R0, WG = g({
+var ax, gg, Ru, R0, WG = g({
     "out-build/vs/platform/tunnel/node/tunnelService.js"() {
         "use strict";
-        CP(), aw(), ce(), N(), z(), Ze(), q(), lt(), AG(), MG(), by(), zx(), rt(), aD = class extends $ {
+        CP(), aw(), ce(), N(), z(), Ze(), q(), lt(), AG(), MG(), by(), zD(), rt(), ax = class extends $ {
             constructor(t, e, i, r, s) {
                 super(), this.defaultTunnelHost = e, this.suggestedLocalPort = s, this.privacy = cg.Private, this._socketsDispose = new Map, this._options = t, this._server = TG.createServer(), this._barrier = new al, this._listeningListener = () => this._barrier.open(), this._server.on("listening", this._listeningListener), this._connectionListener = n => this._onConnection(n), this._server.on("connection", this._connectionListener), this._errorListener = () => {}, this._server.on("error", this._errorListener), this.tunnelRemotePort = r, this.tunnelRemoteHost = i
             }
@@ -48743,14 +48796,14 @@ var aD, gg, Ru, R0, WG = g({
             }
             async waitForReady() {
                 const t = this.suggestedLocalPort ?? this.tunnelRemotePort,
-                    e = xu(this.defaultTunnelHost) ? "0.0.0.0" : "127.0.0.1";
+                    e = Du(this.defaultTunnelHost) ? "0.0.0.0" : "127.0.0.1";
                 let i = await iN(t, 2, 1e3, e),
                     r = null;
                 return this._server.listen(i, this.defaultTunnelHost), await this._barrier.wait(), r = this._server.address(), r || (i = 0, this._server.listen(i, this.defaultTunnelHost), await this._barrier.wait(), r = this._server.address()), this.tunnelLocalPort = r.port, this.localAddress = `${this.tunnelRemoteHost==="127.0.0.1"?"127.0.0.1":"localhost"}:${r.port}`, this
             }
             async _onConnection(t) {
                 t.pause();
-                const e = P0(this.tunnelRemoteHost) || xu(this.tunnelRemoteHost) ? "localhost" : this.tunnelRemoteHost;
+                const e = P0(this.tunnelRemoteHost) || Du(this.tunnelRemoteHost) ? "localhost" : this.tunnelRemoteHost;
                 let i;
                 try {
                     i = await kG(this._options, e, this.tunnelRemotePort)
@@ -48832,17 +48885,17 @@ var aD, gg, Ru, R0, WG = g({
     }
 });
 import {
-    parse as cD
+    parse as cx
 } from "url";
 
 function FG(t, e) {
     return t.protocol === "http:" ? e.HTTP_PROXY || e.http_proxy || null : t.protocol === "https:" && (e.HTTPS_PROXY || e.https_proxy || e.HTTP_PROXY || e.http_proxy) || null
 }
 async function NG(t, e, i = {}) {
-    const r = cD(t),
+    const r = cx(t),
         s = i.proxyUrl || FG(r, e);
     if (!s) return null;
-    const n = cD(s);
+    const n = cx(s);
     if (!/^https?:$/.test(n.protocol || "")) return null;
     const o = {
         host: n.hostname || "",
@@ -48869,7 +48922,7 @@ var UG = g({
     }
 });
 import {
-    parse as lD
+    parse as lx
 } from "url";
 import {
     createGunzip as $G
@@ -48882,11 +48935,11 @@ async function BG(t, e, i, r) {
     return i.debug(`${r} Kerberos authentication lookup`, `proxyURL:${o}`, `spn:${a}`), (await n.initializeClient(a)).step("")
 }
 async function VG(t) {
-    return (lD(t.url).protocol === "https:" ? await import("https") : await import("http")).request
+    return (lx(t.url).protocol === "https:" ? await import("https") : await import("http")).request
 }
 async function A0(t, e) {
     return ii.withAsyncBody(async (i, r) => {
-        const s = lD(t.url),
+        const s = lx(t.url),
             n = t.getRawRequest ? t.getRawRequest(t) : await VG(t),
             o = {
                 hostname: s.hostname,
@@ -48927,7 +48980,7 @@ async function A0(t, e) {
                 a.on("response", () => clearTimeout(c)), a.on("error", () => clearTimeout(c)), a.on("abort", () => clearTimeout(c))
             } else a.setTimeout(t.timeout);
         t.isChromiumNetwork && a.removeHeader("Content-Length"), t.data && typeof t.data == "string" && a.write(t.data), a.end(), e.onCancellationRequested(() => {
-            a.abort(), r(new xi)
+            a.abort(), r(new Di)
         })
     })
 }
@@ -49015,10 +49068,10 @@ var vg, GG = g({
             }, vg = __decorate([__param(0, Qe), __param(1, Or), __param(2, j)], vg)
         }
     }),
-    uD, zG = g({
+    ux, zG = g({
         "out-build/vs/platform/sign/common/abstractSignService.js"() {
             "use strict";
-            uD = class SR {
+            ux = class SR {
                 constructor() {
                     this.validators = new Map
                 }
@@ -49063,10 +49116,10 @@ var vg, GG = g({
             }
         }
     }),
-    dD, KG = g({
+    dx, KG = g({
         "out-build/vs/platform/sign/node/signService.js"() {
             "use strict";
-            zG(), dD = class extends uD {
+            zG(), dx = class extends ux {
                 getValidator() {
                     return this.vsda().then(t => new t.validator)
                 }
@@ -49154,16 +49207,16 @@ var wg, JG = g({
             }, wg = __decorate([__param(1, bt), __param(2, j)], wg)
         }
     }),
-    hD, yg, Qa, fD, QG = g({
+    hx, yg, Qa, fx, QG = g({
         "out-build/vs/base/common/skipList.js"() {
             "use strict";
             yg = class {
                 constructor(t, e, i) {
                     this.level = t, this.key = e, this.value = i, this.forward = []
                 }
-            }, Qa = void 0, fD = class rc {
+            }, Qa = void 0, fx = class rc {
                 constructor(e, i = 2 ** 16) {
-                    this.comparator = e, this[hD] = "SkipList", this._level = 0, this._size = 0, this._maxLevel = Math.max(1, Math.log2(i) | 0), this._header = new yg(this._maxLevel, Qa, Qa)
+                    this.comparator = e, this[hx] = "SkipList", this._level = 0, this._size = 0, this._maxLevel = Math.max(1, Math.log2(i) | 0), this._header = new yg(this._maxLevel, Qa, Qa)
                 }
                 get size() {
                     return this._size
@@ -49187,7 +49240,7 @@ var wg, JG = g({
                 forEach(e, i) {
                     let r = this._header.forward[0];
                     for (; r;) e.call(i, r.value, r.key, this), r = r.forward[0]
-                } [(hD = Symbol.toStringTag, Symbol.iterator)]() {
+                } [(hx = Symbol.toStringTag, Symbol.iterator)]() {
                     return this.entries()
                 }* entries() {
                     let e = this._header.forward[0];
@@ -49273,7 +49326,7 @@ var wg, JG = g({
                         };
                     this._dispooables.add(R.any(e.onDidChangeFileSystemProviderRegistrations, e.onDidChangeFileSystemProviderCapabilities)(s => {
                         i.delete(s.scheme)
-                    })), this.extUri = new ol(r), this._canonicalUris = new fD((s, n) => this.extUri.compare(s, n, !0), this._limit)
+                    })), this.extUri = new ol(r), this._canonicalUris = new fx((s, n) => this.extUri.compare(s, n, !0), this._limit)
                 }
                 dispose() {
                     this._dispooables.dispose(), this._canonicalUris.clear()
@@ -49295,10 +49348,10 @@ var wg, JG = g({
             }, Mu = __decorate([__param(0, bt)], Mu), P7(Fi, Mu, 1)
         }
     }),
-    pD, ez = g({
+    px, ez = g({
         "out-build/vs/platform/log/common/logService.js"() {
             "use strict";
-            N(), q(), pD = class extends $ {
+            N(), q(), px = class extends $ {
                 constructor(t, e = []) {
                     super(), this.logger = new c5([t, ...e]), this._register(t.onDidChangeLogLevel(i => this.setLevel(i)))
                 }
@@ -49332,12 +49385,12 @@ var wg, JG = g({
             }
         }
     }),
-    gD, tz = g({
+    gx, tz = g({
         "out-build/vs/platform/userData/common/fileUserDataProvider.js"() {
             "use strict";
-            K(), N(), ot(), Gn(), ui(), gD = class extends $ {
+            K(), N(), ot(), Gn(), ui(), gx = class extends $ {
                 constructor(t, e, i, r, s, n) {
-                    super(), this.fileSystemScheme = t, this.fileSystemProvider = e, this.userDataScheme = i, this.userDataProfilesService = r, this.uriIdentityService = s, this.logService = n, this.capabilities = this.fileSystemProvider.capabilities, this.onDidChangeCapabilities = this.fileSystemProvider.onDidChangeCapabilities, this._onDidChangeFile = this._register(new D), this.onDidChangeFile = this._onDidChangeFile.event, this.watchResources = As.forUris(() => !(this.capabilities & 1024)), this.atomicReadWriteResources = new lv(o => this.uriIdentityService.extUri.getComparisonKey(this.toFileSystemResource(o))), this.updateAtomicReadWritesResources(), this._register(r.onDidChangeProfiles(() => this.updateAtomicReadWritesResources())), this._register(this.fileSystemProvider.onDidChangeFile(o => this.handleFileChanges(o)))
+                    super(), this.fileSystemScheme = t, this.fileSystemProvider = e, this.userDataScheme = i, this.userDataProfilesService = r, this.uriIdentityService = s, this.logService = n, this.capabilities = this.fileSystemProvider.capabilities, this.onDidChangeCapabilities = this.fileSystemProvider.onDidChangeCapabilities, this._onDidChangeFile = this._register(new x), this.onDidChangeFile = this._onDidChangeFile.event, this.watchResources = As.forUris(() => !(this.capabilities & 1024)), this.atomicReadWriteResources = new lv(o => this.uriIdentityService.extUri.getComparisonKey(this.toFileSystemResource(o))), this.updateAtomicReadWritesResources(), this._register(r.onDidChangeProfiles(() => this.updateAtomicReadWritesResources())), this._register(this.fileSystemProvider.onDidChangeFile(o => this.handleFileChanges(o)))
                 }
                 updateAtomicReadWritesResources() {
                     this.atomicReadWriteResources.clear();
@@ -49395,7 +49448,7 @@ var wg, JG = g({
                     return this.fileSystemProvider.delete(this.toFileSystemResource(t), e)
                 }
                 copy(t, e, i) {
-                    if (xw(this.fileSystemProvider)) return this.fileSystemProvider.copy(this.toFileSystemResource(t), this.toFileSystemResource(e), i);
+                    if (Dw(this.fileSystemProvider)) return this.fileSystemProvider.copy(this.toFileSystemResource(t), this.toFileSystemResource(e), i);
                     throw new Error("copy not supported")
                 }
                 cloneFile(t, e) {
@@ -49433,12 +49486,12 @@ var wg, JG = g({
             "use strict"
         }
     }),
-    mD, vD, Sg, rz = g({
+    mx, vx, Sg, rz = g({
         "out-build/vs/platform/tracing/common/spanCollector.js"() {
             "use strict";
-            mD = 1e3, vD = class {
+            mx = 1e3, vx = class {
                 constructor() {
-                    this._buffer = [], this._dropped = 0, this._maxBuffer = mD
+                    this._buffer = [], this._dropped = 0, this._maxBuffer = mx
                 }
                 configure(t) {
                     t.maxBuffer !== void 0 && (this._maxBuffer = t.maxBuffer)
@@ -49485,7 +49538,7 @@ var wg, JG = g({
                     for (const [i, r] of Object.entries(t)) e[i] = String(r);
                     return e
                 }
-            }, Sg = new vD
+            }, Sg = new vx
         }
     });
 
@@ -49497,7 +49550,7 @@ function sz() {
     O0 = e, Za = 0
 }
 
-function wD(t) {
+function wx(t) {
     if (t > kg) {
         const i = new Uint8Array(t / 2);
         crypto.getRandomValues(i);
@@ -49511,7 +49564,7 @@ function wD(t) {
 }
 
 function T0(t, e) {
-    return new yD({
+    return new yx({
         name: t,
         kind: e
     })
@@ -49520,7 +49573,7 @@ function T0(t, e) {
 function L0(t, e, i) {
     return t.createChild(e, i)
 }
-var Tu, _g, bg, Eg, kg, O0, Za, yD, nz = g({
+var Tu, _g, bg, Eg, kg, O0, Za, yx, nz = g({
     "out-build/vs/platform/tracing/common/span.js"() {
         "use strict";
         (function(t) {
@@ -49529,7 +49582,7 @@ var Tu, _g, bg, Eg, kg, O0, Za, yD, nz = g({
             t[t.UNSPECIFIED = 0] = "UNSPECIFIED", t[t.OK = 1] = "OK", t[t.ERROR = 2] = "ERROR"
         })(_g || (_g = {})), bg = new Array(256);
         for (let t = 0; t < 256; t++) bg[t] = (t < 16 ? "0" : "") + t.toString(16);
-        Eg = 4096, kg = Eg * 2, O0 = "", Za = kg, yD = class _R {
+        Eg = 4096, kg = Eg * 2, O0 = "", Za = kg, yx = class _R {
             constructor(e) {
                 if (this._attributes = {}, this._inheritableAttributes = {}, this._kind = Tu.INTERNAL, this._links = [], this._traceFlags = 1, this._ended = !1, this._name = e.name, this._traceId = e.traceId || this._generateTraceId(), this._spanId = e.spanId || this._generateSpanId(), this._parentSpanId = e.parentSpanId, this._kind = e.kind || Tu.INTERNAL, this._startTime = e.startTime || Date.now(), this._traceFlags = e.traceFlags || 1, e.inheritableAttributes) {
                     this._inheritableAttributes = {
@@ -49624,10 +49677,10 @@ var Tu, _g, bg, Eg, kg, O0, Za, yD, nz = g({
                 return this._ended
             }
             _generateTraceId() {
-                return wD(32)
+                return wx(32)
             }
             _generateSpanId() {
-                return wD(16)
+                return wx(16)
             }
             addEvent(e) {
                 return this
@@ -49644,29 +49697,29 @@ function W0() {
     return !Pt().enabled
 }
 
-function SD(t, e, i) {
+function Sx(t, e, i) {
     if (t.setAttribute("cursor.eventType", e), !!i)
         for (const [r, s] of Object.entries(i)) t.setAttribute(r, s === void 0 ? "undefined" : s)
 }
 
 function oz(t, e) {
     let i;
-    return e ? i = L0(e, t) : i = T0(t), new PD(i)
+    return e ? i = L0(e, t) : i = T0(t), new Px(i)
 }
 
-function _D(t, e) {
-    W0() || Dd(t) || qr.isErrorNoTelemetry(t) || xn(t, e)
+function _x(t, e) {
+    W0() || xd(t) || qr.isErrorNoTelemetry(t) || Dn(t, e)
 }
-var bD, ED, F0, kD, CD, PD, az = g({
+var bx, Ex, F0, kx, Cx, Px, az = g({
         "out-build/vs/platform/tracing/common/tracing.js"() {
             "use strict";
             ce(), $e(), Ic(), iz(), jo(), rz(), nz(), typeof Symbol.dispose != "symbol" && Object.defineProperty(Symbol, "dispose", {
                 value: Symbol("Symbol.dispose")
             }), typeof Symbol.asyncDispose != "symbol" && Object.defineProperty(Symbol, "asyncDispose", {
                 value: Symbol("Symbol.asyncDispose")
-            }), F0 = "__tracingCtx", kD = class {
+            }), F0 = "__tracingCtx", kx = class {
                 constructor() {
-                    this[bD] = !0
+                    this[bx] = !0
                 }
                 spanContext() {}
                 setAttribute(t, e) {}
@@ -49674,13 +49727,13 @@ var bD, ED, F0, kD, CD, PD, az = g({
                 setError(t) {}
                 end() {}
                 startSpan(t) {
-                    return CD
+                    return Cx
                 }
                 reportEvent(t, e) {}
-                reportException(t, e) {} [(bD = F0, Symbol.dispose)]() {}
-            }, CD = new kD, PD = class {
+                reportException(t, e) {} [(bx = F0, Symbol.dispose)]() {}
+            }, Cx = new kx, Px = class {
                 constructor(t, e = !1) {
-                    this[ED] = !0, this._ended = !1, this._doNotReport = !1, this._span = t, this._doNotReport = e
+                    this[Ex] = !0, this._ended = !1, this._doNotReport = !1, this._span = t, this._doNotReport = e
                 }
                 end() {
                     this._ended || (this._span?.end(), this._doNotReport || Sg.collect(this._span), this._ended = !0)
@@ -49713,7 +49766,7 @@ var bD, ED, F0, kD, CD, PD, az = g({
                 reportEvent(t, e) {
                     if (W0()) return;
                     const i = this._span ? L0(this._span, t) : T0(t);
-                    SD(i, "event", e), i.end(), Sg.collect(i)
+                    Sx(i, "event", e), i.end(), Sg.collect(i)
                 }
                 reportException(t, e) {
                     if (W0()) return;
@@ -49721,20 +49774,20 @@ var bD, ED, F0, kD, CD, PD, az = g({
                     let r = "internal_error",
                         s = "",
                         n = "Error";
-                    t instanceof Error ? (r = t.message || r, s = t.stack ?? "", n = t.name ?? t.constructor?.name ?? n) : (r = String(t), n = "StringError"), SD(i, "error", e), i.setAttribute("error.message", r), i.setAttribute("error.stack", s), i.setAttribute("error.type", n), i.setStatus({
+                    t instanceof Error ? (r = t.message || r, s = t.stack ?? "", n = t.name ?? t.constructor?.name ?? n) : (r = String(t), n = "StringError"), Sx(i, "error", e), i.setAttribute("error.message", r), i.setAttribute("error.stack", s), i.setAttribute("error.type", n), i.setStatus({
                         code: _g.ERROR,
                         message: r
                     }), i.end(), Sg.collect(i)
-                } [(ED = F0, Symbol.dispose)]() {
+                } [(Ex = F0, Symbol.dispose)]() {
                     this.end()
                 }
             }
         }
     }),
-    ID, cz = g({
+    Ix, cz = g({
         "out-build/vs/platform/tracing/common/logger.js"() {
             "use strict";
-            Ic(), az(), ID = class {
+            Ic(), az(), Ix = class {
                 constructor(t) {
                     this.baseLogger = t, this.onDidChangeLogLevel = this.baseLogger.onDidChangeLogLevel
                 }
@@ -49759,12 +49812,12 @@ var bD, ED, F0, kD, CD, PD, az = g({
                 error(t, ...e) {
                     if (this.baseLogger.error(t, ...e), !(!Pt().enabled || Math.random() >= Pt().loggerSampleRate)) {
                         if (t instanceof Error) {
-                            _D(t);
+                            _x(t);
                             return
                         }
                         for (const i of e)
                             if (i instanceof Error) {
-                                _D(i);
+                                _x(i);
                                 return
                             }
                     }
@@ -49785,12 +49838,12 @@ import {
 } from "electron";
 import {
     unlinkSync as hz,
-    promises as xD
+    promises as Dx
 } from "fs";
-var DD, RD, fz = g({
+var xx, Rx, fz = g({
     "out-build/vs/code/electron-main/main.js"() {
         "use strict";
-        vL(), ne(), Vt(), ce(), Un(), $e(), ji(), K(), rn(), Le(), Ce(), ws(), z(), Gr(), ti(), qt(), qi(), aw(), zq(), Ee(), Ze(), Xq(), Zq(), Xe(), Fl(), rG(), ot(), oG(), Q1(), Ql(), cG(), Z1(), yt(), lG(), q(), Zl(), lt(), eu(), dG(), zx(), WG(), Us(), GG(), by(), KG(), Gi(), vo(), va(), eo(), hs(), XG(), JG(), N(), rs(), ZG(), Ba(), ez(), R4(), C4(), tz(), oc(), cz(), DD = class {
+        vL(), ne(), Vt(), ce(), Un(), $e(), ji(), K(), rn(), Le(), Ce(), ws(), z(), Gr(), ti(), qt(), qi(), aw(), zq(), Ee(), Ze(), Xq(), Zq(), Xe(), Fl(), rG(), ot(), oG(), Q1(), Ql(), cG(), Z1(), yt(), lG(), q(), Zl(), lt(), eu(), dG(), zD(), WG(), Us(), GG(), by(), KG(), Gi(), vo(), va(), eo(), hs(), XG(), JG(), N(), rs(), ZG(), Ba(), ez(), R4(), C4(), tz(), oc(), cz(), xx = class {
             main() {
                 try {
                     this.startup()
@@ -49819,8 +49872,8 @@ var DD, RD, fz = g({
                         const m = f.createLogger("main", {
                             name: S(156, null)
                         });
-                        return n.logger = new ID(m), R.once(u.onWillShutdown)(w => {
-                            d.dispose(), r.dispose(), w.join("instanceLockfile", xD.unlink(i.mainLockfile).catch(() => {}))
+                        return n.logger = new Ix(m), R.once(u.onWillShutdown)(w => {
+                            d.dispose(), r.dispose(), w.join("instanceLockfile", Dx.unlink(i.mainLockfile).catch(() => {}))
                         }), t.createInstance(tg, p, e).startup()
                     })
                 } catch (c) {
@@ -49841,8 +49894,8 @@ var DD, RD, fz = g({
                 t.set(je, r);
                 const n = new QI(KO(r), r.logsHome);
                 t.set(mo, n);
-                const o = new jx(n.getLogLevel()),
-                    a = e.add(new pD(o, [new a5(n.getLogLevel())]));
+                const o = new jD(n.getLogLevel()),
+                    a = e.add(new px(o, [new a5(n.getLogLevel())]));
                 t.set(j, a);
                 const c = new ng(a);
                 t.set(bt, c);
@@ -49853,11 +49906,11 @@ var DD, RD, fz = g({
                 const d = new d1(1, r, a, c);
                 t.set(Aw, d), t.set(Wi, d);
                 const f = new Gh(d, u, r, c, a);
-                t.set(os, f), c.registerProvider(O.vscodeUserData, new gD(O.file, l, O.vscodeUserData, f, u, a));
+                t.set(os, f), c.registerProvider(O.vscodeUserData, new gx(O.file, l, O.vscodeUserData, f, u, a));
                 let p;
                 V && i.win32RegValueName ? p = e.add(new Au(a, i.win32RegValueName)) : L && i.darwinBundleIdentifier ? p = e.add(new Au(a, i.darwinBundleIdentifier)) : r.policyFile ? p = e.add(new wg(r.policyFile, c, a)) : p = new wy, t.set(go, p);
-                const m = new Ox(f.defaultProfile.settingsResource, c, p, a);
-                return t.set(Qe, m), t.set(tt, new re(Lh, void 0, !1)), t.set(Ns, new re(vg, void 0, !0)), t.set(Jn, new re(Dh)), t.set(Va, new re(dD, void 0, !1)), t.set(Hx, new re(Ru)), t.set(Ua, new ag(r, f, a)), [new Bx(t, !0), s, r, m, d, o, i, f]
+                const m = new OD(f.defaultProfile.settingsResource, c, p, a);
+                return t.set(Qe, m), t.set(tt, new re(Lh, void 0, !1)), t.set(Ns, new re(vg, void 0, !0)), t.set(Jn, new re(xh)), t.set(Va, new re(dx, void 0, !1)), t.set(HD, new re(Ru)), t.set(Ua, new ag(r, f, a)), [new BD(t, !0), s, r, m, d, o, i, f]
             }
             patchEnvironment(t) {
                 const e = {
@@ -49877,7 +49930,7 @@ var DD, RD, fz = g({
                     scheme: O.file
                 }).fsPath, t.localHistoryHome.with({
                     scheme: O.file
-                }).fsPath, t.backupHome].map(n => n ? xD.mkdir(n, {
+                }).fsPath, t.backupHome].map(n => n ? Dx.mkdir(n, {
                     recursive: !0
                 }) : void 0)), r.init(), i.initialize()]), e.init()
             }
@@ -50006,7 +50059,7 @@ var DD, RD, fz = g({
                 const e = [t.path];
                 return typeof t.line == "number" && e.push(String(t.line)), typeof t.column == "number" && e.push(String(t.column)), e.join(":")
             }
-        }, RD = new DD, RD.main()
+        }, Rx = new xx, Rx.main()
     }
 });
 import * as qs from "path";
@@ -50016,7 +50069,7 @@ import {
     performance as gz
 } from "perf_hooks";
 import * as Er from "path";
-import * as AD from "fs";
+import * as Ax from "fs";
 import {
     fileURLToPath as mz
 } from "url";
@@ -50056,9 +50109,9 @@ function Sz(t) {
         return Er.join(Er.dirname(i()), c)
     }
     const s = r(),
-        n = !("target" in t) && AD.existsSync(s),
+        n = !("target" in t) && Ax.existsSync(s),
         o = Er.join(s, "tmp"),
-        a = n && AD.existsSync(o);
+        a = n && Ax.existsSync(o);
     return n ? process.env.VSCODE_PORTABLE = s : delete process.env.VSCODE_PORTABLE, a && (process.platform === "win32" ? (process.env.TMP = o, process.env.TEMP = o) : process.env.TMPDIR = o), {
         portableDataPath: s,
         isPortable: n
@@ -50083,7 +50136,7 @@ var U0 = Cz(import.meta.url),
 ec.BUILD_INSERT_PRODUCT_CONFIGURATION && (ec = U0("../product.json"));
 var $0 = {
     "name": "Cursor",
-    "version": "3.1.10",
+    "version": "3.1.14",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -50116,7 +50169,7 @@ if (!("commit" in ec) || ec.commit === void 0) try {
 } catch {}
 ws();
 var Iz = Ez(import.meta.url),
-    xz = _z.dirname(bz(import.meta.url));
+    Dz = _z.dirname(bz(import.meta.url));
 if ((process.env.ELECTRON_RUN_AS_NODE || process.versions.electron) && kz(`data:text/javascript;base64,${Buffer.from(`
 	export async function resolve(specifier, context, nextResolve) {
 		if (specifier === 'fs') {
@@ -50138,10 +50191,10 @@ if ((process.env.ELECTRON_RUN_AS_NODE || process.versions.electron) && kz(`data:
 } catch {}
 globalThis._VSCODE_PACKAGE_JSON = {
     ...Pz
-}, globalThis._VSCODE_FILE_ROOT = xz;
+}, globalThis._VSCODE_FILE_ROOT = Dz;
 var B0 = void 0;
 
-function Dz() {
+function xz() {
     return B0 || (B0 = Rz()), B0
 }
 async function Rz() {
@@ -50171,7 +50224,7 @@ async function Rz() {
     }
 }
 async function Az() {
-    await Dz()
+    await xz()
 }
 var Mz = nS(oS(), 1);
 import {
@@ -50225,7 +50278,7 @@ function Hz(t) {
 lS(), fS(), ws(), ws();
 import * as ps from "path";
 import * as gs from "fs";
-async function MD({
+async function Mx({
     userLocale: t,
     osLocale: e,
     userDataPath: i,
@@ -50277,10 +50330,10 @@ async function MD({
         const [, y, v, b] = await Promise.all([gs.promises.mkdir(d, {
             recursive: !0
         }), JSON.parse(await gs.promises.readFile(ps.join(s, "nls.keys.json"), "utf-8")), JSON.parse(await gs.promises.readFile(ps.join(s, "nls.messages.json"), "utf-8")), JSON.parse(await gs.promises.readFile(c, "utf-8"))]), E = [];
-        let x = 0;
+        let D = 0;
         for (const [k, M] of y) {
             const T = b.contents[k];
-            for (const X of M) E.push(T?.[X] || v[x]), x++
+            for (const X of M) E.push(T?.[X] || v[D]), D++
         }
         return await Promise.all([gs.promises.writeFile(f, JSON.stringify(E), "utf-8"), gs.promises.writeFile(p, JSON.stringify(a.translations), "utf-8")]), Je("code/didGenerateNls"), w
     } catch (n) {
@@ -50338,7 +50391,7 @@ import {
 } from "module";
 Ic();
 import * as sr from "@sentry/electron/main";
-import TD from "electron";
+import Tx from "electron";
 var Xz = /[/\\]\.cursor(?:-dev|-lab|-nightly)?[/\\]extensions[/\\]([a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+)-[\d.]+[/\\]/,
     Yz = /[/\\]\.cursor-server(?:-dev|-lab|-nightly)?[/\\]extensions[/\\]([a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+)-[\d.]+(?:-universal)?[/\\]/,
     Jz = /[/\\]vscode[/\\]extensions[/\\]([a-zA-Z0-9_-]+)[/\\]/,
@@ -50369,14 +50422,14 @@ function tK(t) {
 
 function iK() {
     const t = process.arch;
-    return TD.app.runningUnderARM64Translation ? `${t}-rosetta` : t
+    return Tx.app.runningUnderARM64Translation ? `${t}-rosetta` : t
 }
 
 function rK() {
     try {
         sr.init({
             ...qT(),
-            environment: TD.app.isPackaged ? globalThis._VSCODE_PRODUCT_JSON.applicationName : "development",
+            environment: Tx.app.isPackaged ? globalThis._VSCODE_PRODUCT_JSON.applicationName : "development",
             integrations: [sr.sentryMinidumpIntegration(), sr.electronContextIntegration(), sr.normalizePathsIntegration(), sr.additionalContextIntegration(), sr.eventFiltersIntegration(), sr.functionToStringIntegration(), sr.linkedErrorsIntegration(), sr.dedupeIntegration(), sr.nodeContextIntegration({
                 cloudResource: !1
             }), sr.mainProcessSessionIntegration({
@@ -50394,7 +50447,7 @@ var NQ = Kz(import.meta.url),
 Je("code/didStartMain"), Je("code/willLoadMainBundle", {
     startTime: Math.floor(gz.timeOrigin)
 }), Je("code/didLoadMainBundle");
-var LD = Sz(Ci),
+var Lx = Sz(Ci),
     UQ = Hz(console.error),
     $Q = Ci.dataFolderName ?? ".cursor",
     nr = dK(),
@@ -50406,8 +50459,8 @@ if (process.platform === "win32") {
     t && nc(t)
 }
 Be.setPath("userData", tc);
-var OD = fK();
-Wz.setApplicationMenu(null), Je("code/willStartCrashReporter"), (nr["crash-reporter-directory"] || Cg["enable-crash-reporter"] && !nr["disable-crash-reporter"]) && lK(), Je("code/didStartCrashReporter"), LD && LD.isPortable && Be.setAppLogsPath(qs.join(tc, "logs")), Lz.registerSchemesAsPrivileged([{
+var Ox = fK();
+Wz.setApplicationMenu(null), Je("code/willStartCrashReporter"), (nr["crash-reporter-directory"] || Cg["enable-crash-reporter"] && !nr["disable-crash-reporter"]) && lK(), Je("code/didStartCrashReporter"), Lx && Lx.isPortable && Be.setAppLogsPath(qs.join(tc, "logs")), Lz.registerSchemesAsPrivileged([{
     scheme: "vscode-webview",
     privileges: {
         standard: !0,
@@ -50428,9 +50481,9 @@ Wz.setApplicationMenu(null), Je("code/willStartCrashReporter"), (nr["crash-repor
     }
 }]), hK();
 var H0 = void 0,
-    q0 = FD((Be.getPreferredSystemLanguages()?.[0] ?? "en").toLowerCase()),
+    q0 = Fx((Be.getPreferredSystemLanguages()?.[0] ?? "en").toLowerCase()),
     Ou = mK(Cg);
-if (Ou && (H0 = MD({
+if (Ou && (H0 = Mx({
         userLocale: Ou,
         osLocale: q0,
         commit: Ci.commit,
@@ -50465,14 +50518,14 @@ Be.once("ready", function() {
             categoryFilter: nr["trace-category-filter"] || "*",
             traceOptions: nr["trace-options"] || "record-until-full,enable-sampling"
         };
-        Fz.startRecording(t).finally(() => WD())
-    } else WD()
+        Fz.startRecording(t).finally(() => Wx())
+    } else Wx()
 });
-async function WD() {
+async function Wx() {
     Je("code/mainAppReady");
     try {
-        const [, t] = await Promise.all([pK(OD), gK()]);
-        await sK(OD, t)
+        const [, t] = await Promise.all([pK(Ox), gK()]);
+        await sK(Ox, t)
     } catch (t) {
         console.error(t)
     }
@@ -50659,7 +50712,7 @@ async function pK(t) {
     } catch {}
 }
 
-function FD(t) {
+function Fx(t) {
     if (t.startsWith("zh")) {
         const e = t.split("-")[1];
         return ["hans", "cn", "sg", "my"].includes(e) ? "zh-cn" : "zh-tw"
@@ -50670,7 +50723,7 @@ async function gK() {
     const t = H0 ? await H0 : void 0;
     if (t) return t;
     let e = Be.getLocale();
-    return e ? (e = FD(e.toLowerCase()), MD({
+    return e ? (e = Fx(e.toLowerCase()), Mx({
         userLocale: e,
         osLocale: q0,
         commit: Ci.commit,
@@ -50691,6 +50744,6 @@ function mK(t) {
     return e ? e.toLowerCase() : typeof t?.locale == "string" ? t.locale.toLowerCase() : void 0
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/dacbe9b31599a253763e4910eb6ab38704653320/core/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/d8673fb56ba50fda33ad78382000b519bb8acb70/core/main.js.map
 
-//# debugId=3583bc5e-1750-568d-99d4-488dc3b78265
+//# debugId=ecc80b11-beec-532b-988f-e742eb256e5c

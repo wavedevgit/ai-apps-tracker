@@ -16,6 +16,6 @@
 				export default {};
 		`,M=new Blob([f],{type:"application/javascript"}),L=URL.createObjectURL(M);for(const[c,g]of t.cssModules){const b=new URL(c,e).href;i.imports[b]=L+"#module="+encodeURIComponent(c)}const _=window.trustedTypes?.createPolicy("vscode-bootstrapImportMap",{createScript(c){return c}}),j=JSON.stringify(i,void 0,2),u=document.createElement("script");u.type="importmap",u.setAttribute("nonce","0c6a828f1297"),u.textContent=_?.createScript(j)??j,document.head.appendChild(u),performance.mark("code/didAddCssLoader")}}globalThis.MonacoBootstrapWindow={load:y}})(),(async function(){const l=window.MonacoBootstrapWindow,{result:p,configuration:y}=await l.load("vs/code/electron-sandbox/extensionMonitor/extensionMonitorMain",{configureDeveloperSettings:function(){return{forceEnableDeveloperKeybindings:!0}}});p.startup(y)})();
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/dacbe9b31599a253763e4910eb6ab38704653320/core/vs/code/electron-sandbox/extensionMonitor/extensionMonitor.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/d8673fb56ba50fda33ad78382000b519bb8acb70/core/vs/code/electron-sandbox/extensionMonitor/extensionMonitor.js.map
 
 //# debugId=4e84fb84-efba-5bda-8907-6bb9586c5f2f
