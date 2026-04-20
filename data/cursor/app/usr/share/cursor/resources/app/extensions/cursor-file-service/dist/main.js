@@ -1,16 +1,2 @@
-(() => {
-    "use strict";
-    var e = {};
-    (() => {
-        var r = e;
-        Object.defineProperty(r, "__esModule", {
-            value: !0
-        }), r.DUMMY = void 0, r.DUMMY = 1
-    })();
-    var r = exports;
-    for (var o in e) r[o] = e[o];
-    e.__esModule && Object.defineProperty(r, "__esModule", {
-        value: !0
-    })
-})();
+(()=>{"use strict";var e={};(()=>{var r=e;Object.defineProperty(r,"__esModule",{value:!0}),r.DUMMY=void 0,r.DUMMY=1})();var r=exports;for(var o in e)r[o]=e[o];e.__esModule&&Object.defineProperty(r,"__esModule",{value:!0})})();
 //# sourceMappingURL=http://go/sourcemap/sourcemaps/fce1e9ab7844f9ea35793da01e634aa7e50bce90/extensions/cursor-file-service/dist/main.js.map
