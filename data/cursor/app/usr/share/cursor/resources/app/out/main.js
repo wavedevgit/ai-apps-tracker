@@ -50428,7 +50428,7 @@ var H0 = Kz(import.meta.url),
 tc.BUILD_INSERT_PRODUCT_CONFIGURATION && (tc = H0("../product.json"));
 var q0 = {
     "name": "Cursor",
-    "version": "3.2.10",
+    "version": "3.2.11",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -51036,6 +51036,6 @@ function UK(t) {
     return e ? e.toLowerCase() : typeof t?.locale == "string" ? t.locale.toLowerCase() : void 0
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/87903b25fe9074e35b9ba372ed5bf14de5835960/core/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e9ee1339915a927dfb2df4a836dd9c8337e17cc0/core/main.js.map
 
 //# debugId=d9baf0a7-53ef-50bd-8fc6-68650afd6e5f

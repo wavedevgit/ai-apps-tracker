@@ -13384,4 +13384,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/87903b25fe9074e35b9ba372ed5bf14de5835960/extensions/github/dist/extension.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e9ee1339915a927dfb2df4a836dd9c8337e17cc0/extensions/github/dist/extension.js.map

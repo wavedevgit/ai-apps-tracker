@@ -1442,7 +1442,7 @@
   },
   "keymapExtensionTips": ["vscodevim.vim", "ms-vscode.sublime-keybindings", "ms-vscode.atom-keybindings", "ms-vscode.brackets-keybindings", "ms-vscode.vs-keybindings", "ms-vscode.notepadplusplus-keybindings", "k--kato.intellij-idea-keybindings", "alphabotsec.vscode-eclipse-keybindings", "alefragnani.delphi-keybindings"],
   "languageExtensionTips": ["ms-python.python", "ms-vscode.cpptools-extension-pack", "ms-dotnettools.csdevkit", "ms-toolsai.jupyter", "vscjava.vscode-java-pack", "ecmel.vscode-html-css", "vue.volar", "bmewburn.vscode-intelephense-client", "dsznajder.es7-react-js-snippets", "golang.go", "ms-vscode.powershell", "dart-code.dart-code", "rust-lang.rust-analyzer", "Shopify.ruby-lsp"],
-  "version": "3.2.10",
+  "version": "3.2.11",
   "removeTelemetryMachineId": true,
   "enabledTelemetryLevels": {
     "error": true,
@@ -1452,15 +1452,15 @@
   "simulateProdOnDev": false,
   "openToWelcomeMainPage": true,
   "removeLinesBeforeCompilingIfTheyContainTheseWords": ["__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____EXTENSION_IS_DEV__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_development_tooling__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_separate_product_json_for_remote_ssh__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_composer_handle_debugging__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_backend_selection_keyboard_shortcuts__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____remove_to_default_use_prod_backend__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_console_log__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_cpp_control_token__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_cursoreval__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_ai_assert__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____dont_print_all_stack_traces_when_listener_leak__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_cpp_this_is_set_in_prod_and_nightly__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_ai_debugger__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_shadow_workspace_debugging__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_context_ast_typescript_fork__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_cpp_eval__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_dev_flush_logs__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_multi_file_applies__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_embedding_model_switch__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_cursor_prediction_options__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_ttft_logging__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_always_on_fast_apply_chunk_speculation__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_runnable_code_blocks__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_auto_import_experiments__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_warning_on_too_many_update_locks__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_dev_only_prompt_quality_link__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_menubar_debugging__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_multiple_embeddings__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_hmr__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_resume__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_console_error__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_composer_migration_warning__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_rcp_server__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_agent_cli_formatter__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_performance_events__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____allow_skip_privacy_mode_grace_period__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_kill_all_modes_and_surface_bg__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_statsig__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_dev_backend_and_login_argv_args__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_fill_screen__", "__GULPFILE_REMOVE_LINE_BEFORE_COMPILING____disable_user_intent_agents__"],
-  "commit": "87903b25fe9074e35b9ba372ed5bf14de5835960",
-  "realCommit": "87903b25fe9074e35b9ba372ed5bf14de5835962",
-  "date": "2026-04-24T00:45:10.396Z",
+  "commit": "e9ee1339915a927dfb2df4a836dd9c8337e17cc0",
+  "realCommit": "e9ee1339915a927dfb2df4a836dd9c8337e17cc2",
+  "date": "2026-04-24T14:36:47.933Z",
   "checksums": {
-    "vs/base/parts/sandbox/electron-sandbox/preload.js": "B4bJiHibXFtfsZ3OBOrCiPRHNeiBAJv+MRcdJv2wcLU",
-    "vs/workbench/workbench.desktop.main.js": "m+nX27U7MRQEsOiQxeWkQSVIhgTqXzGnbUEfes/sme0",
-    "vs/workbench/workbench.desktop.main.css": "EG+8E6CnqlYXEXOlluMLmqxH0OVTYE43ms6uJb402vQ",
-    "vs/workbench/api/node/extensionHostProcess.js": "2ZAY6e35HzQBRvDYVPnsN5sS8U4j03/Z8OU2Xln81a4",
+    "vs/base/parts/sandbox/electron-sandbox/preload.js": "sdrTZiJMZi2yCXLd1vBxdhgcYTz4cuna7+IIjbtPDAQ",
+    "vs/workbench/workbench.desktop.main.js": "YAHMtrWHtnYn4E1kkn7W1Q9ztVrbBYiTGnnTWk5a/u8",
+    "vs/workbench/workbench.desktop.main.css": "1kbCMaE171TpzWumLojicHW/6vI6cdD0lSou9gS5dqA",
+    "vs/workbench/api/node/extensionHostProcess.js": "wbXtvxgrbnzYXnomZkZ9duJIz9WQXRCcNtO2rJ9AGY0",
     "vs/code/electron-sandbox/workbench/workbench.html": "E6RG2gbwOjtPjaYkC1efQqCWiKpnCZMWMfP5HSPG4/A",
-    "vs/code/electron-sandbox/workbench/workbench.js": "dzM1VxPDDFBuJj0STyhvynFRxidOecvf0pcoNg3203U"
+    "vs/code/electron-sandbox/workbench/workbench.js": "QemSkY/zbqB3Mm0xpb5OQvjQPv+Qw9fjCNQasAcmROo"
   }
 }
