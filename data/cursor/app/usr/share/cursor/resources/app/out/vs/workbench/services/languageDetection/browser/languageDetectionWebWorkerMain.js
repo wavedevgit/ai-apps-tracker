@@ -4874,6 +4874,6 @@ function qn(e) {
 }
 qn(Rn);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/fce1e9ab7844f9ea35793da01e634aa7e50bce90/core/vs/workbench/services/languageDetection/browser/languageDetectionWebWorkerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/87903b25fe9074e35b9ba372ed5bf14de5835960/core/vs/workbench/services/languageDetection/browser/languageDetectionWebWorkerMain.js.map
 
 //# debugId=6e225690-5d31-50c9-8f8d-d26b43ba1139

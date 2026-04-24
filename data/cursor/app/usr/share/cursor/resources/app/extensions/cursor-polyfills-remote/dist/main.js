@@ -578,9 +578,6 @@
                     if (!i(t)) return o(t, s) || o(t, "@@iterator") || a[n(t)]
                 }
             },
-            857: t => {
-                t.exports = require("os")
-            },
             916: (t, r, e) => {
                 var n = e(4576),
                     o = e(550),
@@ -793,68 +790,6 @@
                             return e
                         }
                     }
-                }
-            },
-            1184: function(t, r, e) {
-                var n, o = this && this.__createBinding || (Object.create ? function(t, r, e, n) {
-                        void 0 === n && (n = e);
-                        var o = Object.getOwnPropertyDescriptor(r, e);
-                        o && !("get" in o ? !r.__esModule : o.writable || o.configurable) || (o = {
-                            enumerable: !0,
-                            get: function() {
-                                return r[e]
-                            }
-                        }), Object.defineProperty(t, n, o)
-                    } : function(t, r, e, n) {
-                        void 0 === n && (n = e), t[n] = r[e]
-                    }),
-                    i = this && this.__setModuleDefault || (Object.create ? function(t, r) {
-                        Object.defineProperty(t, "default", {
-                            enumerable: !0,
-                            value: r
-                        })
-                    } : function(t, r) {
-                        t.default = r
-                    }),
-                    a = this && this.__importStar || (n = function(t) {
-                        return n = Object.getOwnPropertyNames || function(t) {
-                            var r = [];
-                            for (var e in t) Object.prototype.hasOwnProperty.call(t, e) && (r[r.length] = e);
-                            return r
-                        }, n(t)
-                    }, function(t) {
-                        if (t && t.__esModule) return t;
-                        var r = {};
-                        if (null != t)
-                            for (var e = n(t), a = 0; a < e.length; a++) "default" !== e[a] && o(r, t, e[a]);
-                        return i(r, t), r
-                    });
-                Object.defineProperty(r, "__esModule", {
-                    value: !0
-                }), r.activate = function(t) {}, r.deactivate = function() {}, e(5651), e(8458), e(3182), e(6737), e(7058), e(470), e(6188), e(4744), e(3613), e(9682), e(9829), e(4024), e(544), e(3191), e(6862), e(7976), e(4179), e(504), e(4945), e(3924), e(8598), e(9995);
-                const s = a(e(857));
-                if (void 0 === globalThis.navigator) {
-                    const t = process.version.match(/^v(\d+)/)?.[1] || "0",
-                        r = "function" == typeof s.availableParallelism ? s.availableParallelism() : s.cpus().length;
-                    let e = "en-US";
-                    try {
-                        const t = Intl.DateTimeFormat().resolvedOptions().locale;
-                        t && (e = t)
-                    } catch {}
-                    const n = process.platform,
-                        o = `Node.js/${t}`;
-                    Object.defineProperty(globalThis, "navigator", {
-                        value: {
-                            hardwareConcurrency: r,
-                            language: e,
-                            languages: [e],
-                            platform: n,
-                            userAgent: o
-                        },
-                        writable: !1,
-                        configurable: !1,
-                        enumerable: !0
-                    })
                 }
             },
             1291: (t, r, e) => {
@@ -6526,19 +6461,65 @@
                 t.exports = n
             }
         },
-        r = {},
-        e = function e(n) {
-            var o = r[n];
-            if (void 0 !== o) return o.exports;
-            var i = r[n] = {
-                exports: {}
-            };
-            return t[n].call(i.exports, i, i.exports, e), i.exports
-        }(1184),
-        n = exports;
-    for (var o in e) n[o] = e[o];
-    e.__esModule && Object.defineProperty(n, "__esModule", {
+        r = {};
+
+    function e(n) {
+        var o = r[n];
+        if (void 0 !== o) return o.exports;
+        var i = r[n] = {
+            exports: {}
+        };
+        return t[n].call(i.exports, i, i.exports, e), i.exports
+    }
+    e.d = (t, r) => {
+        for (var n in r) e.o(r, n) && !e.o(t, n) && Object.defineProperty(t, n, {
+            enumerable: !0,
+            get: r[n]
+        })
+    }, e.o = (t, r) => Object.prototype.hasOwnProperty.call(t, r), e.r = t => {
+        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, {
+            value: "Module"
+        }), Object.defineProperty(t, "__esModule", {
+            value: !0
+        })
+    };
+    var n = {};
+    e.r(n), e.d(n, {
+        activate: () => i,
+        deactivate: () => a
+    }), e(5651), e(8458), e(3182), e(6737), e(7058), e(470), e(6188), e(4744), e(3613), e(9682), e(9829), e(4024), e(544), e(3191), e(6862), e(7976), e(4179), e(504), e(4945), e(3924), e(8598), e(9995);
+    const o = require("os");
+    if (void 0 === globalThis.navigator) {
+        const t = process.version.match(/^v(\d+)/)?.[1] || "0",
+            r = "function" == typeof o.availableParallelism ? o.availableParallelism() : o.cpus().length;
+        let e = "en-US";
+        try {
+            const t = Intl.DateTimeFormat().resolvedOptions().locale;
+            t && (e = t)
+        } catch {}
+        const n = process.platform,
+            i = `Node.js/${t}`;
+        Object.defineProperty(globalThis, "navigator", {
+            value: {
+                hardwareConcurrency: r,
+                language: e,
+                languages: [e],
+                platform: n,
+                userAgent: i
+            },
+            writable: !1,
+            configurable: !1,
+            enumerable: !0
+        })
+    }
+
+    function i(t) {}
+
+    function a() {}
+    var s = exports;
+    for (var u in n) s[u] = n[u];
+    n.__esModule && Object.defineProperty(s, "__esModule", {
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/fce1e9ab7844f9ea35793da01e634aa7e50bce90/extensions/cursor-polyfills-remote/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/87903b25fe9074e35b9ba372ed5bf14de5835960/extensions/cursor-polyfills-remote/dist/main.js.map
