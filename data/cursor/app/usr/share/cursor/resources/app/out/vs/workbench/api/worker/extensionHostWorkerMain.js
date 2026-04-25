@@ -10714,6 +10714,7 @@ var vSt = {
             return PMe.create(s, e)
         }
         static
+
         function(s, e) {
             return SMe.create(s, e)
         }
