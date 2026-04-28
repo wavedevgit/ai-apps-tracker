@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "005db9cf-f61d-5dd4-a292-8cc689986a19")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4850da0f-6fe5-5d50-8dda-8022c6455872")
     } catch (e) {}
 }();
 var Et = function(e, t) {
@@ -6967,7 +6967,8 @@ var io = {
         newLine: s("newline", 60394),
         gitFetch: s("git-fetch", 60445),
         lightbulbSparkleAutofix: s("lightbulb-sparkle-autofix", 60447),
-        debugBreakpointPending: s("debug-breakpoint-pending", 60377)
+        debugBreakpointPending: s("debug-breakpoint-pending", 60377),
+        circles: s("circles", 62352)
     },
     v = {
         ...io,
@@ -8482,6 +8483,6 @@ function Mo(e) {
 }
 Mo(No);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e9ee1339915a927dfb2df4a836dd9c8337e17cc0/core/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.workerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e821a7fc68d5ce5b4ab821f73fe4137e0851e60/core/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.workerMain.js.map
 
-//# debugId=005db9cf-f61d-5dd4-a292-8cc689986a19
+//# debugId=4850da0f-6fe5-5d50-8dda-8022c6455872

@@ -49442,6 +49442,12 @@
             name: "has_command_substitution",
             kind: "scalar",
             T: 8
+        }, {
+            no: 5,
+            name: "all_redirects_are_dev_null",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         let ek = $w;
         const tk = class e extends T {
@@ -60416,6 +60422,12 @@
             name: "has_command_substitution",
             kind: "scalar",
             T: 8
+        }, {
+            no: 5,
+            name: "all_redirects_are_dev_null",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         let IR = BR;
         const JR = class e extends T {
@@ -78675,7 +78687,7 @@
             no: 3,
             name: "BACKGROUND_TASK_STATUS_ABORTED"
         }]);
-        var kK = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLAN_EXECUTION = 1] = "PLAN_EXECUTION", e[e.COMMIT_REMINDER = 2] = "COMMIT_REMINDER", e[e.BACKGROUND_TASK_COMPLETION = 3] = "BACKGROUND_TASK_COMPLETION", e[e.DIFF_TAB_COMMIT = 4] = "DIFF_TAB_COMMIT", e[e.DIFF_TAB_COMMIT_AND_PUSH = 5] = "DIFF_TAB_COMMIT_AND_PUSH", e[e.DIFF_TAB_PUSH = 6] = "DIFF_TAB_PUSH", e[e.DIFF_TAB_CREATE_PR = 7] = "DIFF_TAB_CREATE_PR", e[e.DIFF_TAB_FIX_MERGE_CONFLICTS = 8] = "DIFF_TAB_FIX_MERGE_CONFLICTS", e[e.USER_SENT_TO_SUBAGENT = 9] = "USER_SENT_TO_SUBAGENT", e[e.USER_INTERRUPTED_SUBAGENT = 10] = "USER_INTERRUPTED_SUBAGENT", e[e.USER_QUEUED_TO_SUBAGENT = 11] = "USER_QUEUED_TO_SUBAGENT", e[e.BABYSIT_PR_IN_CLOUD = 12] = "BABYSIT_PR_IN_CLOUD", e[e.CI_PANEL_INVESTIGATE_FAILURE = 13] = "CI_PANEL_INVESTIGATE_FAILURE", e[e.MULTITASK = 14] = "MULTITASK", e[e.BUILD_IN_PARALLEL = 15] = "BUILD_IN_PARALLEL", e))(kK || {});
+        var kK = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLAN_EXECUTION = 1] = "PLAN_EXECUTION", e[e.COMMIT_REMINDER = 2] = "COMMIT_REMINDER", e[e.BACKGROUND_TASK_COMPLETION = 3] = "BACKGROUND_TASK_COMPLETION", e[e.DIFF_TAB_COMMIT = 4] = "DIFF_TAB_COMMIT", e[e.DIFF_TAB_COMMIT_AND_PUSH = 5] = "DIFF_TAB_COMMIT_AND_PUSH", e[e.DIFF_TAB_PUSH = 6] = "DIFF_TAB_PUSH", e[e.DIFF_TAB_CREATE_PR = 7] = "DIFF_TAB_CREATE_PR", e[e.DIFF_TAB_FIX_MERGE_CONFLICTS = 8] = "DIFF_TAB_FIX_MERGE_CONFLICTS", e[e.USER_SENT_TO_SUBAGENT = 9] = "USER_SENT_TO_SUBAGENT", e[e.USER_INTERRUPTED_SUBAGENT = 10] = "USER_INTERRUPTED_SUBAGENT", e[e.USER_QUEUED_TO_SUBAGENT = 11] = "USER_QUEUED_TO_SUBAGENT", e[e.BABYSIT_PR_IN_CLOUD = 12] = "BABYSIT_PR_IN_CLOUD", e[e.CI_PANEL_INVESTIGATE_FAILURE = 13] = "CI_PANEL_INVESTIGATE_FAILURE", e[e.MULTITASK = 14] = "MULTITASK", e[e.BUILD_IN_PARALLEL = 15] = "BUILD_IN_PARALLEL", e[e.MULTITASK_SPLIT_PRS = 16] = "MULTITASK_SPLIT_PRS", e))(kK || {});
         Ue.util.setEnumType(kK, "agent.v1.SimulatedMsgReason", [{
             no: 0,
             name: "SIMULATED_MSG_REASON_UNSPECIFIED"
@@ -78724,6 +78736,9 @@
         }, {
             no: 15,
             name: "SIMULATED_MSG_REASON_BUILD_IN_PARALLEL"
+        }, {
+            no: 16,
+            name: "SIMULATED_MSG_REASON_MULTITASK_SPLIT_PRS"
         }]);
         var EK = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DEFAULT = 1] = "DEFAULT", e[e.CODEX = 2] = "CODEX", e[e.GPT5 = 3] = "GPT5", e))(EK || {});
         Ue.util.setEnumType(EK, "agent.v1.ThinkingStyle", [{
@@ -82418,6 +82433,12 @@
             name: "request_id",
             kind: "scalar",
             T: 9
+        }, {
+            no: 2,
+            name: "canonical_model_name",
+            kind: "scalar",
+            T: 9,
+            opt: !0
         }]);
         let O$ = U$;
         const M$ = class e extends T {
@@ -102976,6 +102997,12 @@
         }, {
             no: 4,
             name: "comment",
+            kind: "scalar",
+            T: 9,
+            opt: !0
+        }, {
+            no: 5,
+            name: "canonical_model_name",
             kind: "scalar",
             T: 9,
             opt: !0
@@ -125901,10 +125928,6 @@
                 client: !0,
                 default: !1
             },
-            glass_tiling_enabled: {
-                client: !0,
-                default: !1
-            },
             glass_configure_multi_root_option: {
                 client: !0,
                 default: !1
@@ -125945,6 +125968,10 @@
                 client: !0,
                 default: !1
             },
+            "web.show_local_source_filter": {
+                client: !0,
+                default: !1
+            },
             glass_sidebar_instance_grouping_menu: {
                 client: !0,
                 default: !0
@@ -125982,6 +126009,22 @@
                 default: !0
             },
             glass_avoid_secondary_scanline: {
+                client: !0,
+                default: !1
+            },
+            glass_auto_suggested_quick_actions: {
+                client: !0,
+                default: !1
+            },
+            glass_auto_suggested_quick_actions_skills: {
+                client: !0,
+                default: !1
+            },
+            glass_auto_suggested_quick_actions_text: {
+                client: !0,
+                default: !1
+            },
+            glass_pinned_skills: {
                 client: !0,
                 default: !1
             },
@@ -126418,6 +126461,10 @@
                 default: !1
             },
             only_clear_mcp_oauth_on_logout: {
+                client: !0,
+                default: !1
+            },
+            skip_refresh_fanout_for_needs_auth: {
                 client: !0,
                 default: !1
             },
@@ -127005,6 +127052,10 @@
                 client: !0,
                 default: !0
             },
+            disable_push_request_context: {
+                client: !0,
+                default: !1
+            },
             enable_cursor_big_task_notifications: {
                 client: !0,
                 default: !1
@@ -127103,15 +127154,6 @@
                 },
                 parseValue: {
                     group: Mve(["control", "enabled"])
-                }
-            },
-            push_request_context_exp: {
-                client: !0,
-                fallbackValues: {
-                    enabled: !1
-                },
-                parseValue: {
-                    enabled: Gve
                 }
             },
             cursor_extensions_isolation_v2: {
@@ -127429,6 +127471,24 @@
                 parseValue: {
                     enabled: Gve
                 }
+            },
+            glass_post_login_redirect: {
+                client: !0,
+                fallbackValues: {
+                    enabled: !1
+                },
+                parseValue: {
+                    enabled: Gve
+                }
+            },
+            glass_post_login_redirect_pm_design: {
+                client: !0,
+                fallbackValues: {
+                    enabled: !1
+                },
+                parseValue: {
+                    enabled: Gve
+                }
             }
         };
         Object.keys(Pve);
@@ -127657,6 +127717,8 @@
             }), gve({
                 sentry_threshold_bytes: sve(),
                 attach_content: lve()
+            }), gve({
+                sentry_threshold_bytes: sve()
             }), gve({
                 sentry_threshold_bytes: sve()
             }), gve({
@@ -128103,6 +128165,12 @@
                     client: !0,
                     fallbackValues: {
                         sentry_threshold_bytes: 1e6
+                    }
+                },
+                giant_vsbuffer_decode_config: {
+                    client: !0,
+                    fallbackValues: {
+                        sentry_threshold_bytes: 1e7
                     }
                 },
                 mcp_ipc_timeouts: {
@@ -171474,7 +171542,7 @@
             no: 6,
             name: "CLOUD_AGENT_WORKFLOW_STATUS_NOT_YET_STARTED"
         }]);
-        var glt = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EDITOR = 1] = "EDITOR", e[e.SLACK = 2] = "SLACK", e[e.WEBSITE = 3] = "WEBSITE", e[e.LINEAR = 4] = "LINEAR", e[e.IOS_APP = 5] = "IOS_APP", e[e.API = 6] = "API", e[e.GITHUB = 7] = "GITHUB", e[e.CLI = 8] = "CLI", e[e.GITHUB_CI_AUTOFIX = 9] = "GITHUB_CI_AUTOFIX", e[e.GITLAB = 10] = "GITLAB", e[e.ENVIRONMENT_SETUP_WEB = 11] = "ENVIRONMENT_SETUP_WEB", e[e.GRIND_WEB = 12] = "GRIND_WEB", e[e.BUGBOT_AUTOFIX = 13] = "BUGBOT_AUTOFIX", e[e.AUTOMATIONS = 14] = "AUTOMATIONS", e[e.GRAPHITE_CHAT_WEB = 15] = "GRAPHITE_CHAT_WEB", e[e.GLASS = 16] = "GLASS", e[e.GRAPHITE_FULL_SELF_DRIVING = 17] = "GRAPHITE_FULL_SELF_DRIVING", e[e.TEAMS = 18] = "TEAMS", e[e.LOCAL = 19] = "LOCAL", e))(glt || {});
+        var glt = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EDITOR = 1] = "EDITOR", e[e.SLACK = 2] = "SLACK", e[e.WEBSITE = 3] = "WEBSITE", e[e.LINEAR = 4] = "LINEAR", e[e.IOS_APP = 5] = "IOS_APP", e[e.API = 6] = "API", e[e.GITHUB = 7] = "GITHUB", e[e.CLI = 8] = "CLI", e[e.GITHUB_CI_AUTOFIX = 9] = "GITHUB_CI_AUTOFIX", e[e.GITLAB = 10] = "GITLAB", e[e.ENVIRONMENT_SETUP_WEB = 11] = "ENVIRONMENT_SETUP_WEB", e[e.GRIND_WEB = 12] = "GRIND_WEB", e[e.BUGBOT_AUTOFIX = 13] = "BUGBOT_AUTOFIX", e[e.AUTOMATIONS = 14] = "AUTOMATIONS", e[e.GRAPHITE_CHAT_WEB = 15] = "GRAPHITE_CHAT_WEB", e[e.GLASS = 16] = "GLASS", e[e.GRAPHITE_FULL_SELF_DRIVING = 17] = "GRAPHITE_FULL_SELF_DRIVING", e[e.TEAMS = 18] = "TEAMS", e[e.LOCAL = 19] = "LOCAL", e[e.JIRA = 20] = "JIRA", e[e.SDK = 21] = "SDK", e[e.FULL_SELF_DRIVING = 22] = "FULL_SELF_DRIVING", e))(glt || {});
         Ue.util.setEnumType(glt, "aiserver.v1.BackgroundComposerSource", [{
             no: 0,
             name: "BACKGROUND_COMPOSER_SOURCE_UNSPECIFIED"
@@ -171535,6 +171603,15 @@
         }, {
             no: 19,
             name: "BACKGROUND_COMPOSER_SOURCE_LOCAL"
+        }, {
+            no: 20,
+            name: "BACKGROUND_COMPOSER_SOURCE_JIRA"
+        }, {
+            no: 21,
+            name: "BACKGROUND_COMPOSER_SOURCE_SDK"
+        }, {
+            no: 22,
+            name: "BACKGROUND_COMPOSER_SOURCE_FULL_SELF_DRIVING"
         }]);
         var plt = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER = 1] = "USER", e[e.SERVICE_ACCOUNT = 2] = "SERVICE_ACCOUNT", e))(plt || {});
         Ue.util.setEnumType(plt, "aiserver.v1.OwnerType", [{
@@ -188963,4 +189040,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e9ee1339915a927dfb2df4a836dd9c8337e17cc0/extensions/cursor-always-local/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e821a7fc68d5ce5b4ab821f73fe4137e0851e60/extensions/cursor-always-local/dist/main.js.map

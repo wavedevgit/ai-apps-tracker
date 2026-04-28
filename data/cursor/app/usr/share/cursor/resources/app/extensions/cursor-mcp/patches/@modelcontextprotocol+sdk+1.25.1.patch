@@ -48,7 +48,7 @@ diff --git a/node_modules/@modelcontextprotocol/sdk/dist/cjs/client/auth.js b/no
              // Attempt to refresh the token
              const newTokens = await refreshAuthorization(authorizationServerUrl, {
                  metadata,
-@@ -267,6 +293,41 @@
+@@ -267,6 +293,43 @@
              return 'AUTHORIZED';
          }
          catch (error) {
@@ -74,6 +74,8 @@ diff --git a/node_modules/@modelcontextprotocol/sdk/dist/cjs/client/auth.js b/no
 +            // [CURSOR PATCH] Release the refresh lease acquired in prepareForRefresh
 +            // so sibling providers are not blocked until TTL expiry.
 +            await provider.releaseRefreshLeaseOnError?.(error);
++            // [CURSOR PATCH] Log the refresh error so we can diagnose failures in telemetry.
++            provider.onRefreshError?.(error);
 +            // Definite OAuth protocol failures (except server_error / temporarily_unavailable below) should surface to callers.
 +            if (error instanceof errors_js_1.OAuthError && !(error instanceof errors_js_1.ServerError) && !(error instanceof errors_js_1.TemporarilyUnavailableError)) {
 +                throw error;

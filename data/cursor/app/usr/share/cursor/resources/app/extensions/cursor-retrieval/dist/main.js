@@ -49626,6 +49626,12 @@
             name: "has_command_substitution",
             kind: "scalar",
             T: 8
+        }, {
+            no: 5,
+            name: "all_redirects_are_dev_null",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         let Ph = xh;
         const qh = class e extends ml {
@@ -66475,6 +66481,12 @@
             name: "has_command_substitution",
             kind: "scalar",
             T: 8
+        }, {
+            no: 5,
+            name: "all_redirects_are_dev_null",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         let uN = cN;
         const mN = class e extends ml {
@@ -84921,7 +84933,7 @@
             no: 3,
             name: "BACKGROUND_TASK_STATUS_ABORTED"
         }]);
-        var hK = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLAN_EXECUTION = 1] = "PLAN_EXECUTION", e[e.COMMIT_REMINDER = 2] = "COMMIT_REMINDER", e[e.BACKGROUND_TASK_COMPLETION = 3] = "BACKGROUND_TASK_COMPLETION", e[e.DIFF_TAB_COMMIT = 4] = "DIFF_TAB_COMMIT", e[e.DIFF_TAB_COMMIT_AND_PUSH = 5] = "DIFF_TAB_COMMIT_AND_PUSH", e[e.DIFF_TAB_PUSH = 6] = "DIFF_TAB_PUSH", e[e.DIFF_TAB_CREATE_PR = 7] = "DIFF_TAB_CREATE_PR", e[e.DIFF_TAB_FIX_MERGE_CONFLICTS = 8] = "DIFF_TAB_FIX_MERGE_CONFLICTS", e[e.USER_SENT_TO_SUBAGENT = 9] = "USER_SENT_TO_SUBAGENT", e[e.USER_INTERRUPTED_SUBAGENT = 10] = "USER_INTERRUPTED_SUBAGENT", e[e.USER_QUEUED_TO_SUBAGENT = 11] = "USER_QUEUED_TO_SUBAGENT", e[e.BABYSIT_PR_IN_CLOUD = 12] = "BABYSIT_PR_IN_CLOUD", e[e.CI_PANEL_INVESTIGATE_FAILURE = 13] = "CI_PANEL_INVESTIGATE_FAILURE", e[e.MULTITASK = 14] = "MULTITASK", e[e.BUILD_IN_PARALLEL = 15] = "BUILD_IN_PARALLEL", e))(hK || {});
+        var hK = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLAN_EXECUTION = 1] = "PLAN_EXECUTION", e[e.COMMIT_REMINDER = 2] = "COMMIT_REMINDER", e[e.BACKGROUND_TASK_COMPLETION = 3] = "BACKGROUND_TASK_COMPLETION", e[e.DIFF_TAB_COMMIT = 4] = "DIFF_TAB_COMMIT", e[e.DIFF_TAB_COMMIT_AND_PUSH = 5] = "DIFF_TAB_COMMIT_AND_PUSH", e[e.DIFF_TAB_PUSH = 6] = "DIFF_TAB_PUSH", e[e.DIFF_TAB_CREATE_PR = 7] = "DIFF_TAB_CREATE_PR", e[e.DIFF_TAB_FIX_MERGE_CONFLICTS = 8] = "DIFF_TAB_FIX_MERGE_CONFLICTS", e[e.USER_SENT_TO_SUBAGENT = 9] = "USER_SENT_TO_SUBAGENT", e[e.USER_INTERRUPTED_SUBAGENT = 10] = "USER_INTERRUPTED_SUBAGENT", e[e.USER_QUEUED_TO_SUBAGENT = 11] = "USER_QUEUED_TO_SUBAGENT", e[e.BABYSIT_PR_IN_CLOUD = 12] = "BABYSIT_PR_IN_CLOUD", e[e.CI_PANEL_INVESTIGATE_FAILURE = 13] = "CI_PANEL_INVESTIGATE_FAILURE", e[e.MULTITASK = 14] = "MULTITASK", e[e.BUILD_IN_PARALLEL = 15] = "BUILD_IN_PARALLEL", e[e.MULTITASK_SPLIT_PRS = 16] = "MULTITASK_SPLIT_PRS", e))(hK || {});
         Rc.util.setEnumType(hK, "agent.v1.SimulatedMsgReason", [{
             no: 0,
             name: "SIMULATED_MSG_REASON_UNSPECIFIED"
@@ -84970,6 +84982,9 @@
         }, {
             no: 15,
             name: "SIMULATED_MSG_REASON_BUILD_IN_PARALLEL"
+        }, {
+            no: 16,
+            name: "SIMULATED_MSG_REASON_MULTITASK_SPLIT_PRS"
         }]);
         var AK = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DEFAULT = 1] = "DEFAULT", e[e.CODEX = 2] = "CODEX", e[e.GPT5 = 3] = "GPT5", e))(AK || {});
         Rc.util.setEnumType(AK, "agent.v1.ThinkingStyle", [{
@@ -88663,6 +88678,12 @@
             name: "request_id",
             kind: "scalar",
             T: 9
+        }, {
+            no: 2,
+            name: "canonical_model_name",
+            kind: "scalar",
+            T: 9,
+            opt: !0
         }]);
         let QZ = RZ;
         const FZ = class e extends ml {
@@ -117164,6 +117185,12 @@
             kind: "scalar",
             T: 9,
             opt: !0
+        }, {
+            no: 5,
+            name: "canonical_model_name",
+            kind: "scalar",
+            T: 9,
+            opt: !0
         }]);
         let Xpe = $pe;
         var Zpe = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.UP = 1] = "UP", e[e.DOWN = 2] = "DOWN", e))(Zpe || {});
@@ -139746,7 +139773,7 @@
                 }, this.repoInfo = {
                     isInitialized: !1,
                     payload: void 0
-                }, this.cachedUpstreamURL = new Map, this.cachedDefaultBranch = new Map, this.disposables = [], this.watchers = new Map, this.gitRootStates = new Map, this._onDidCommit = new ca.EventEmitter, this.onDidCommit = this._onDidCommit.event, this._vscodeGitApiResolveFailCount = 0, this._vscodeGitApiLastFailedResolveAtMs = 0, this.gitApi = t ?? void 0, this.getRepoInfo().catch(Go.error), this.disposables.push(this._onDidCommit);
+                }, this.cachedUpstreamURL = new Map, this.cachedDefaultBranch = new Map, this.cachedRepositoryShallowInfo = new Map, this.disposables = [], this.watchers = new Map, this.gitRootStates = new Map, this._onDidCommit = new ca.EventEmitter, this.onDidCommit = this._onDidCommit.event, this._vscodeGitApiResolveFailCount = 0, this._vscodeGitApiLastFailedResolveAtMs = 0, this.gitApi = t ?? void 0, this.getRepoInfo().catch(Go.error), this.disposables.push(this._onDidCommit);
                 try {
                     const e = sRe.homedir();
                     r = e && e.length > 0 ? gi.join(e, ...".cursor/worktrees".split("/")) : gi.join(sRe.tmpdir(), "cursor-worktrees")
@@ -140056,12 +140083,49 @@
                         repoRelativePath: r
                     } = await this.resolveGitPathTarget(e), s = ["blame", "--root", "--incremental"];
                     !0 === ca.workspace.getConfiguration("git").get("blame.ignoreWhitespace") && s.push("-w"), t && s.push(t), s.push("--"), s.push(r);
-                    const i = await this.executeGitCommandStable(n, s);
+                    const i = await this.executeGitCommandStable(n, s),
+                        a = this.parseGitBlame(i),
+                        o = await this.getRepositoryShallowInfo(n),
+                        l = new Set(o.commitHashes);
+                    if (l.size > 0)
+                        for (const e of a) l.has(e.hash) && (e.isShallowBoundary = !0);
                     return {
-                        blameInformation: this.parseGitBlame(i)
+                        blameInformation: a,
+                        isRepositoryShallow: o.isShallow
                     }
                 } catch (t) {
                     return void Go.warn(`getGitFileLineBlame failed for ${e}`, t)
+                }
+            }
+            async getRepositoryShallowInfo(e) {
+                const t = this.cachedRepositoryShallowInfo.get(e),
+                    n = Date.now();
+                if (t && t.expiresAtMs > n) return t.promise;
+                const r = this.readRepositoryShallowInfo(e);
+                return this.cachedRepositoryShallowInfo.set(e, {
+                    expiresAtMs: n + 3e4,
+                    promise: r
+                }), r
+            }
+            async readRepositoryShallowInfo(e) {
+                try {
+                    const t = await this.executeGitCommandStable(e, ["rev-parse", "--is-shallow-repository", "--git-path", "shallow"]),
+                        [n, r] = t.trim().split(/\r?\n/),
+                        s = "true" === n;
+                    if (!s || !r) return {
+                        isShallow: s,
+                        commitHashes: []
+                    };
+                    const i = gi.isAbsolute(r) ? r : gi.join(e, r);
+                    return {
+                        isShallow: s,
+                        commitHashes: (await Kbe.readFile(i, "utf8")).split(/\r?\n/).filter(e => /^[0-9a-f]{40}$/.test(e))
+                    }
+                } catch {
+                    return {
+                        isShallow: !1,
+                        commitHashes: []
+                    }
                 }
             }
             parseGitBlame(e) {
@@ -141911,7 +141975,7 @@
             }
             dispose() {
                 for (const e of this.disposables) e.dispose();
-                this.watchers.clear(), this.gitRootStates.clear()
+                this.watchers.clear(), this.gitRootStates.clear(), this.cachedRepositoryShallowInfo.clear()
             }
             async getUserCommits(e = 25, t) {
                 const n = t ?? ca.workspace.workspaceFolders?.[0].uri.fsPath ?? "",
@@ -153540,4 +153604,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e9ee1339915a927dfb2df4a836dd9c8337e17cc0/extensions/cursor-retrieval/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e821a7fc68d5ce5b4ab821f73fe4137e0851e60/extensions/cursor-retrieval/dist/main.js.map

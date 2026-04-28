@@ -4722,35 +4722,39 @@
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.VSBuffer = void 0, t.binaryIndexOf = g, t.readUInt16LE = function(e, t) {
+                }), t.VSBuffer = void 0, t.setOversizeVSBufferDecodeThreshold = function(e) {
+                    g = e
+                }, t.setOversizeVSBufferDecodeHandler = function(e) {
+                    d = e
+                }, t.binaryIndexOf = p, t.readUInt16LE = function(e, t) {
                     return (0 | e[t + 0]) >>> 0 | e[t + 1] << 8 >>> 0
                 }, t.writeUInt16LE = function(e, t, n) {
                     e[n + 0] = 255 & t, t >>>= 8, e[n + 1] = 255 & t
-                }, t.readUInt32BE = m, t.writeUInt32BE = p, t.readUInt32LE = b, t.writeUInt32LE = L, t.readUInt8 = _, t.writeUInt8 = v, t.readableToBuffer = function(e) {
-                    return u.consumeReadable(e, e => d.concat(e))
+                }, t.readUInt32BE = b, t.writeUInt32BE = L, t.readUInt32LE = _, t.writeUInt32LE = v, t.readUInt8 = E, t.writeUInt8 = w, t.readableToBuffer = function(e) {
+                    return u.consumeReadable(e, e => m.concat(e))
                 }, t.bufferToReadable = function(e) {
                     return u.toReadable(e)
-                }, t.streamToBuffer = E, t.bufferedStreamToBuffer = async function(e) {
-                    return e.ended ? d.concat(e.buffer) : d.concat([...e.buffer, await E(e.stream)])
+                }, t.streamToBuffer = N, t.bufferedStreamToBuffer = async function(e) {
+                    return e.ended ? m.concat(e.buffer) : m.concat([...e.buffer, await N(e.stream)])
                 }, t.bufferToStream = function(e) {
-                    return u.toStream(e, e => d.concat(e))
+                    return u.toStream(e, e => m.concat(e))
                 }, t.streamToBufferReadableStream = function(e) {
                     return u.transform(e, {
-                        data: e => "string" == typeof e ? d.fromString(e) : d.wrap(e)
-                    }, e => d.concat(e))
+                        data: e => "string" == typeof e ? m.fromString(e) : m.wrap(e)
+                    }, e => m.concat(e))
                 }, t.newWriteableBufferStream = function(e) {
-                    return u.newWriteableStream(e => d.concat(e), e)
+                    return u.newWriteableStream(e => m.concat(e), e)
                 }, t.prefixedBufferReadable = function(e, t) {
-                    return u.prefixedReadable(e, t, e => d.concat(e))
+                    return u.prefixedReadable(e, t, e => m.concat(e))
                 }, t.prefixedBufferStream = function(e, t) {
-                    return u.prefixedStream(e, t, e => d.concat(e))
-                }, t.decodeBase64 = w, t.decodeJwt = function(e) {
-                    const t = w(e.split(".")[1]);
+                    return u.prefixedStream(e, t, e => m.concat(e))
+                }, t.decodeBase64 = y, t.decodeJwt = function(e) {
+                    const t = y(e.split(".")[1]);
                     return JSON.parse(t.toString())
                 }, t.encodeBase64 = function({
                     buffer: e
                 }, t = !0, n = !1) {
-                    const i = n ? y : N;
+                    const i = n ? R : C;
                     let r = "";
                     const s = e.byteLength % 3;
                     let o = 0;
@@ -4774,19 +4778,19 @@
                     u = o(n(247)),
                     l = "undefined" != typeof Buffer,
                     h = new a.Lazy(() => new Uint8Array(256));
-                let c, f;
-                class d {
+                let c, f, d, g = 1 / 0;
+                class m {
                     static alloc(e) {
-                        return new d(l ? Buffer.allocUnsafe(e) : new Uint8Array(e))
+                        return new m(l ? Buffer.allocUnsafe(e) : new Uint8Array(e))
                     }
                     static wrap(e) {
-                        return l && !Buffer.isBuffer(e) && (e = Buffer.from(e.buffer, e.byteOffset, e.byteLength)), new d(e)
+                        return l && !Buffer.isBuffer(e) && (e = Buffer.from(e.buffer, e.byteOffset, e.byteLength)), new m(e)
                     }
                     static fromString(e, t) {
-                        return !t?.dontUseNodeBuffer && l ? new d(Buffer.from(e)) : (c || (c = new TextEncoder), new d(c.encode(e)))
+                        return !t?.dontUseNodeBuffer && l ? new m(Buffer.from(e)) : (c || (c = new TextEncoder), new m(c.encode(e)))
                     }
                     static fromByteArray(e) {
-                        const t = d.alloc(e.length);
+                        const t = m.alloc(e.length);
                         for (let n = 0, i = e.length; n < i; n++) t.buffer[n] = e[n];
                         return t
                     }
@@ -4795,7 +4799,7 @@
                             t = 0;
                             for (let n = 0, i = e.length; n < i; n++) t += e[n].byteLength
                         }
-                        const n = d.alloc(t);
+                        const n = m.alloc(t);
                         let i = 0;
                         for (let t = 0, r = e.length; t < r; t++) {
                             const r = e[t];
@@ -4807,17 +4811,21 @@
                         this.buffer = e, this.byteLength = this.buffer.byteLength
                     }
                     clone() {
-                        const e = d.alloc(this.byteLength);
+                        const e = m.alloc(this.byteLength);
                         return e.set(this), e
                     }
                     toString() {
-                        return l ? this.buffer.toString() : (f || (f = new TextDecoder), f.decode(this.buffer))
+                        if (l) return this.buffer.toString();
+                        if (d && this.buffer.byteLength > g) try {
+                            d(this.buffer.byteLength)
+                        } catch {}
+                        return f || (f = new TextDecoder), f.decode(this.buffer)
                     }
                     slice(e, t) {
-                        return new d(this.buffer.subarray(e, t))
+                        return new m(this.buffer.subarray(e, t))
                     }
                     set(e, t) {
-                        if (e instanceof d) this.buffer.set(e.buffer, t);
+                        if (e instanceof m) this.buffer.set(e.buffer, t);
                         else if (e instanceof Uint8Array) this.buffer.set(e, t);
                         else if (e instanceof ArrayBuffer) this.buffer.set(new Uint8Array(e), t);
                         else {
@@ -4826,32 +4834,32 @@
                         }
                     }
                     readUInt32BE(e) {
-                        return m(this.buffer, e)
-                    }
-                    writeUInt32BE(e, t) {
-                        p(this.buffer, e, t)
-                    }
-                    readUInt32LE(e) {
                         return b(this.buffer, e)
                     }
-                    writeUInt32LE(e, t) {
+                    writeUInt32BE(e, t) {
                         L(this.buffer, e, t)
                     }
-                    readUInt8(e) {
+                    readUInt32LE(e) {
                         return _(this.buffer, e)
                     }
-                    writeUInt8(e, t) {
+                    writeUInt32LE(e, t) {
                         v(this.buffer, e, t)
                     }
+                    readUInt8(e) {
+                        return E(this.buffer, e)
+                    }
+                    writeUInt8(e, t) {
+                        w(this.buffer, e, t)
+                    }
                     indexOf(e, t = 0) {
-                        return g(this.buffer, e instanceof d ? e.buffer : e, t)
+                        return p(this.buffer, e instanceof m ? e.buffer : e, t)
                     }
                     equals(e) {
                         return this === e || this.byteLength === e.byteLength && this.buffer.every((t, n) => t === e.buffer[n])
                     }
                 }
 
-                function g(e, t, n = 0) {
+                function p(e, t, n = 0) {
                     const i = t.byteLength,
                         r = e.byteLength;
                     if (0 === i) return 0;
@@ -4874,35 +4882,35 @@
                     return u
                 }
 
-                function m(e, t) {
+                function b(e, t) {
                     return e[t] * 2 ** 24 + 65536 * e[t + 1] + 256 * e[t + 2] + e[t + 3]
                 }
 
-                function p(e, t, n) {
+                function L(e, t, n) {
                     e[n + 3] = t, t >>>= 8, e[n + 2] = t, t >>>= 8, e[n + 1] = t, t >>>= 8, e[n] = t
                 }
 
-                function b(e, t) {
+                function _(e, t) {
                     return (0 | e[t + 0]) >>> 0 | e[t + 1] << 8 >>> 0 | e[t + 2] << 16 >>> 0 | e[t + 3] << 24 >>> 0
                 }
 
-                function L(e, t, n) {
+                function v(e, t, n) {
                     e[n + 0] = 255 & t, t >>>= 8, e[n + 1] = 255 & t, t >>>= 8, e[n + 2] = 255 & t, t >>>= 8, e[n + 3] = 255 & t
                 }
 
-                function _(e, t) {
+                function E(e, t) {
                     return e[t]
                 }
 
-                function v(e, t, n) {
+                function w(e, t, n) {
                     e[n] = t
                 }
 
-                function E(e) {
-                    return u.consumeStream(e, e => d.concat(e))
+                function N(e) {
+                    return u.consumeStream(e, e => m.concat(e))
                 }
 
-                function w(e) {
+                function y(e) {
                     let t = 0,
                         n = 0,
                         i = 0;
@@ -4938,11 +4946,11 @@
                     }
                     const o = i;
                     for (; n > 0;) s(0);
-                    return d.wrap(r).slice(0, o)
+                    return m.wrap(r).slice(0, o)
                 }
-                t.VSBuffer = d;
-                const N = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
-                    y = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+                t.VSBuffer = m;
+                const C = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
+                    R = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
             },
             751: function(e, t, n) {
                 var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
@@ -6827,4 +6835,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e9ee1339915a927dfb2df4a836dd9c8337e17cc0/extensions/cursor-commits/worker/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e821a7fc68d5ce5b4ab821f73fe4137e0851e60/extensions/cursor-commits/worker/dist/main.js.map

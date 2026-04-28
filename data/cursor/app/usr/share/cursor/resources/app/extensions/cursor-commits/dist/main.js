@@ -22236,6 +22236,12 @@
             name: "has_command_substitution",
             kind: "scalar",
             T: 8
+        }, {
+            no: 5,
+            name: "all_redirects_are_dev_null",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         let Cl = kl;
         const Sl = class e extends tt {
@@ -39051,6 +39057,12 @@
             name: "has_command_substitution",
             kind: "scalar",
             T: 8
+        }, {
+            no: 5,
+            name: "all_redirects_are_dev_null",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         let T_ = E_;
         const B_ = class e extends tt {
@@ -57497,7 +57509,7 @@
             no: 3,
             name: "BACKGROUND_TASK_STATUS_ABORTED"
         }]);
-        var yM = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLAN_EXECUTION = 1] = "PLAN_EXECUTION", e[e.COMMIT_REMINDER = 2] = "COMMIT_REMINDER", e[e.BACKGROUND_TASK_COMPLETION = 3] = "BACKGROUND_TASK_COMPLETION", e[e.DIFF_TAB_COMMIT = 4] = "DIFF_TAB_COMMIT", e[e.DIFF_TAB_COMMIT_AND_PUSH = 5] = "DIFF_TAB_COMMIT_AND_PUSH", e[e.DIFF_TAB_PUSH = 6] = "DIFF_TAB_PUSH", e[e.DIFF_TAB_CREATE_PR = 7] = "DIFF_TAB_CREATE_PR", e[e.DIFF_TAB_FIX_MERGE_CONFLICTS = 8] = "DIFF_TAB_FIX_MERGE_CONFLICTS", e[e.USER_SENT_TO_SUBAGENT = 9] = "USER_SENT_TO_SUBAGENT", e[e.USER_INTERRUPTED_SUBAGENT = 10] = "USER_INTERRUPTED_SUBAGENT", e[e.USER_QUEUED_TO_SUBAGENT = 11] = "USER_QUEUED_TO_SUBAGENT", e[e.BABYSIT_PR_IN_CLOUD = 12] = "BABYSIT_PR_IN_CLOUD", e[e.CI_PANEL_INVESTIGATE_FAILURE = 13] = "CI_PANEL_INVESTIGATE_FAILURE", e[e.MULTITASK = 14] = "MULTITASK", e[e.BUILD_IN_PARALLEL = 15] = "BUILD_IN_PARALLEL", e))(yM || {});
+        var yM = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLAN_EXECUTION = 1] = "PLAN_EXECUTION", e[e.COMMIT_REMINDER = 2] = "COMMIT_REMINDER", e[e.BACKGROUND_TASK_COMPLETION = 3] = "BACKGROUND_TASK_COMPLETION", e[e.DIFF_TAB_COMMIT = 4] = "DIFF_TAB_COMMIT", e[e.DIFF_TAB_COMMIT_AND_PUSH = 5] = "DIFF_TAB_COMMIT_AND_PUSH", e[e.DIFF_TAB_PUSH = 6] = "DIFF_TAB_PUSH", e[e.DIFF_TAB_CREATE_PR = 7] = "DIFF_TAB_CREATE_PR", e[e.DIFF_TAB_FIX_MERGE_CONFLICTS = 8] = "DIFF_TAB_FIX_MERGE_CONFLICTS", e[e.USER_SENT_TO_SUBAGENT = 9] = "USER_SENT_TO_SUBAGENT", e[e.USER_INTERRUPTED_SUBAGENT = 10] = "USER_INTERRUPTED_SUBAGENT", e[e.USER_QUEUED_TO_SUBAGENT = 11] = "USER_QUEUED_TO_SUBAGENT", e[e.BABYSIT_PR_IN_CLOUD = 12] = "BABYSIT_PR_IN_CLOUD", e[e.CI_PANEL_INVESTIGATE_FAILURE = 13] = "CI_PANEL_INVESTIGATE_FAILURE", e[e.MULTITASK = 14] = "MULTITASK", e[e.BUILD_IN_PARALLEL = 15] = "BUILD_IN_PARALLEL", e[e.MULTITASK_SPLIT_PRS = 16] = "MULTITASK_SPLIT_PRS", e))(yM || {});
         _n.util.setEnumType(yM, "agent.v1.SimulatedMsgReason", [{
             no: 0,
             name: "SIMULATED_MSG_REASON_UNSPECIFIED"
@@ -57546,6 +57558,9 @@
         }, {
             no: 15,
             name: "SIMULATED_MSG_REASON_BUILD_IN_PARALLEL"
+        }, {
+            no: 16,
+            name: "SIMULATED_MSG_REASON_MULTITASK_SPLIT_PRS"
         }]);
         var kM = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DEFAULT = 1] = "DEFAULT", e[e.CODEX = 2] = "CODEX", e[e.GPT5 = 3] = "GPT5", e))(kM || {});
         _n.util.setEnumType(kM, "agent.v1.ThinkingStyle", [{
@@ -61239,6 +61254,12 @@
             name: "request_id",
             kind: "scalar",
             T: 9
+        }, {
+            no: 2,
+            name: "canonical_model_name",
+            kind: "scalar",
+            T: 9,
+            opt: !0
         }]);
         let MH = OH;
         const GH = class e extends tt {
@@ -89740,6 +89761,12 @@
             kind: "scalar",
             T: 9,
             opt: !0
+        }, {
+            no: 5,
+            name: "canonical_model_name",
+            kind: "scalar",
+            T: 9,
+            opt: !0
         }]);
         let oae = aae;
         var lae = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.UP = 1] = "UP", e[e.DOWN = 2] = "DOWN", e))(lae || {});
@@ -108661,4 +108688,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e9ee1339915a927dfb2df4a836dd9c8337e17cc0/extensions/cursor-commits/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e821a7fc68d5ce5b4ab821f73fe4137e0851e60/extensions/cursor-commits/dist/main.js.map

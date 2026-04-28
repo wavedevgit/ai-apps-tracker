@@ -44512,7 +44512,7 @@
                 }
                 class ne {
                     constructor(e) {
-                        this.oauthContext = e.oauthContext, this.appRoot = e.appRoot, this.executeCommand = e.executeCommand, this.mcpSharedOAuth = e.mcpSharedOAuth, this.serverUrl = e.serverUrl, this.transportServerUrl = e.transportServerUrl ?? e.serverUrl, this.identifier = e.identifier, this.callbackOwner = e.callbackOwner ?? J(), this.oauthAttemptId = e.oauthAttemptId, this.needsAuthCallback = e.needsAuthCallback, this.onTokensSaved = e.onTokensSaved, this.staticClientInformation = e.staticClientInformation, this.attemptClientInformation = e.attemptClientInformation, this.scopes = e.scopes, this.rawAuthConfig = e.rawAuthConfig, this.skipRetentionStateReconciliation = e.skipRetentionStateReconciliation ?? !1, g(this.identifier).info("MCP OAuth provider initialized", (0, m.UZ)({
+                        this._refreshInProgress = !1, this.oauthContext = e.oauthContext, this.appRoot = e.appRoot, this.executeCommand = e.executeCommand, this.mcpSharedOAuth = e.mcpSharedOAuth, this.serverUrl = e.serverUrl, this.transportServerUrl = e.transportServerUrl ?? e.serverUrl, this.identifier = e.identifier, this.callbackOwner = e.callbackOwner ?? J(), this.oauthAttemptId = e.oauthAttemptId, this.needsAuthCallback = e.needsAuthCallback, this.onTokensSaved = e.onTokensSaved, this.staticClientInformation = e.staticClientInformation, this.attemptClientInformation = e.attemptClientInformation, this.scopes = e.scopes, this.rawAuthConfig = e.rawAuthConfig, this.skipRetentionStateReconciliation = e.skipRetentionStateReconciliation ?? !1, g(this.identifier).info("MCP OAuth provider initialized", (0, m.UZ)({
                             event: "mcp_oauth_provider_initialized",
                             ...N(this.serverUrl)
                         }))
@@ -45064,7 +45064,8 @@
                         }
                     }
                     async prepareForRefresh() {
-                        if (this.lastRefreshError = void 0, this._backendRedisLeaseHandle = void 0, !await this._acquireRefreshLockWithBackendCoordination()) throw new h.Nj(this.identifier)
+                        if (this.lastRefreshError = void 0, this._backendRedisLeaseHandle = void 0, !await this._acquireRefreshLockWithBackendCoordination()) throw new h.Nj(this.identifier);
+                        this._refreshInProgress = !0
                     }
                     async _acquireRefreshLockWithBackendCoordination() {
                         const e = await this._acquireRefreshLockOrWait();
@@ -45159,15 +45160,18 @@
                             ...e,
                             refresh_token: t.refresh_token
                         });
-                        const i = n && Boolean(r.refresh_token),
-                            s = O(r, {
+                        const i = this._refreshInProgress;
+                        this._refreshInProgress = !1;
+                        const s = O(r, {
                                 expiresInIsFresh: !0
                             }),
-                            o = v(r, this.staticClientInformation?.client_id);
+                            o = v(r, this.staticClientInformation?.client_id),
+                            c = this.latestAuthorizationClientInformation?.client_id ?? this.attemptClientInformation?.client_id;
                         g(this.identifier).info("MCP OAuth tokens persisted", (0, m.UZ)({
                             event: "mcp_oauth_token_save",
                             hadExistingTokens: n,
                             isRefresh: i,
+                            tokenOwnerClientId: c,
                             mergedPriorRefreshToken: Boolean(n && t?.refresh_token && !e.refresh_token),
                             ...s,
                             ...N(this.serverUrl),
@@ -45175,12 +45179,13 @@
                         })), i && g(this.identifier).info("MCP OAuth refresh succeeded", (0, m.UZ)({
                             event: "mcp_oauth_refresh_result",
                             outcome: "success",
+                            tokenOwnerClientId: c,
                             ...s,
                             ...N(this.serverUrl),
                             ...o
                         }));
-                        const c = JSON.stringify(r);
-                        await this.storeSecretWithLegacyFallback(this.sharedTokensKey, this.legacyTokensKey, c), this.lastReturnedRefreshToken = r.refresh_token;
+                        const u = JSON.stringify(r);
+                        await this.storeSecretWithLegacyFallback(this.sharedTokensKey, this.legacyTokensKey, u), this.lastReturnedRefreshToken = r.refresh_token;
                         try {
                             const e = await this.getSecretWithLegacyFallback(this.sharedClientInformationKey, this.legacyClientInformationKey);
                             if (e) {
@@ -45189,19 +45194,20 @@
                             }
                         } catch {}
                         await this.setLocalUpdatedAtMs(Date.now());
-                        let u = !1;
+                        let l = !1;
                         if (e?.access_token || e?.refresh_token) try {
                             const e = await this.syncLocalStateToBackend();
-                            u = void 0 !== e && !e.skippedBecauseBackendNewer
+                            l = void 0 !== e && !e.skippedBecauseBackendNewer
                         } catch (e) {
-                            g(this.identifier).warn(`Failed to sync tokens to backend: ${e instanceof Error?e.message:String(e)}`), u = !0
+                            g(this.identifier).warn(`Failed to sync tokens to backend: ${e instanceof Error?e.message:String(e)}`), l = !0
                         }
-                        if (u) try {
+                        if (l) try {
                             await this.mcpSharedOAuth.notifyStateChanged({
                                 serverUrl: this.serverUrl,
                                 identifier: this.identifier,
                                 sourceWorkspaceId: J().workspaceId,
-                                change: "tokens_saved"
+                                change: "tokens_saved",
+                                saveKind: i ? "refresh" : "first"
                             })
                         } catch (e) {
                             g(this.identifier).warn(`Failed to notify shared OAuth save state change: ${e instanceof Error?e.message:String(e)}`)
@@ -45254,7 +45260,7 @@
                         const t = e?.deleteSharedOAuthState ?? !0,
                             n = e?.notifySharedStateChange ?? !0,
                             r = e?.cause;
-                        if (g(this.identifier).info("Clearing stored OAuth data"), this.pendingBackendRefreshHydration = void 0, await this.oauthContext.secrets.get(this.sharedClientInformationKey) && await this.oauthContext.secrets.delete(this.sharedClientInformationKey), await this.oauthContext.secrets.get(this.sharedTokensKey) && await this.oauthContext.secrets.delete(this.sharedTokensKey), await this._releaseRegistrationLeaseIfHeld("clear"), await this._releaseRefreshLeaseIfHeld("clear"), await this._releaseBackendRedisLeaseIfHeld("abandoned"), await this.setLocalUpdatedAtMs(void 0), await this.clearAllLocalStateForCurrentServerUrl(), await this.clearIdentifierScopedOAuthState(), t) try {
+                        if (g(this.identifier).info("Clearing stored OAuth data"), this.pendingBackendRefreshHydration = void 0, this._refreshInProgress = !1, await this.oauthContext.secrets.get(this.sharedClientInformationKey) && await this.oauthContext.secrets.delete(this.sharedClientInformationKey), await this.oauthContext.secrets.get(this.sharedTokensKey) && await this.oauthContext.secrets.delete(this.sharedTokensKey), await this._releaseRegistrationLeaseIfHeld("clear"), await this._releaseRefreshLeaseIfHeld("clear"), await this._releaseBackendRedisLeaseIfHeld("abandoned"), await this.setLocalUpdatedAtMs(void 0), await this.clearAllLocalStateForCurrentServerUrl(), await this.clearIdentifierScopedOAuthState(), t) try {
                             await this.mcpSharedOAuth.delete(this.serverUrl)
                         } catch (e) {
                             g(this.identifier).warn(`Failed to delete backend OAuth data: ${e instanceof Error?e.message:String(e)}`)
@@ -45314,6 +45320,7 @@
                                 const s = parseInt(i.split(":").pop() ?? "0", 10);
                                 if (Date.now() - s > r && (await a(t, i), await e(t, n))) return this._refreshLeaseValue = n, g(this.identifier).info("Refresh lock acquired after stale cleanup — this provider will refresh", (0, m.UZ)({
                                     event: "mcp_oauth_refresh_lease_acquired",
+                                    refreshingClientId: this.latestAuthorizationClientInformation?.client_id ?? this.attemptClientInformation?.client_id,
                                     ...N(this.serverUrl),
                                     ...o,
                                     staleLockAgeMs: Date.now() - s
@@ -45322,6 +45329,7 @@
                         }
                         if (c) return this._refreshLeaseValue = n, g(this.identifier).info("Refresh lock acquired — this provider will refresh", (0, m.UZ)({
                             event: "mcp_oauth_refresh_lease_acquired",
+                            refreshingClientId: this.latestAuthorizationClientInformation?.client_id ?? this.attemptClientInformation?.client_id,
                             ...N(this.serverUrl),
                             ...o
                         })), !0;
@@ -45350,7 +45358,16 @@
                         })), !1
                     }
                     async releaseRefreshLeaseOnError(e) {
-                        this.lastRefreshError = e, await this._releaseBackendRedisLeaseIfHeld("error"), await this._releaseRefreshLeaseIfHeld("refresh_error_uncaught", e)
+                        this.lastRefreshError = e, this._refreshInProgress = !1, await this._releaseBackendRedisLeaseIfHeld("error"), await this._releaseRefreshLeaseIfHeld("refresh_error_uncaught", e)
+                    }
+                    onRefreshError(e) {
+                        const t = this.latestAuthorizationClientInformation?.client_id ?? this.attemptClientInformation?.client_id;
+                        g(this.identifier).warn("MCP OAuth refresh error caught by SDK", (0, m.UZ)({
+                            event: "mcp_oauth_refresh_error",
+                            refreshingClientId: t,
+                            ...(0, s.X5)(e),
+                            ...N(this.serverUrl)
+                        }))
                     }
                     logRefreshCatchBranch(e) {
                         const t = e.errorMessage ? (0, s.X5)(new Error(e.errorMessage)).errorMessage : e.errorMessage;
@@ -45487,7 +45504,7 @@
                         }))
                     }
                     async invalidateCredentials(e) {
-                        "tokens" === e && await this._releaseRefreshLeaseIfHeld("refresh_failed"), "client" !== e && "all" !== e || await this._releaseRegistrationLeaseIfHeld("invalidation_" + e);
+                        this._refreshInProgress = !1, "tokens" === e && await this._releaseRefreshLeaseIfHeld("refresh_failed"), "client" !== e && "all" !== e || await this._releaseRegistrationLeaseIfHeld("invalidation_" + e);
                         let t, n = !1;
                         if ("tokens" === e) try {
                             const e = await this.getSecretWithLegacyFallback(this.sharedTokensKey, this.legacyTokensKey);
@@ -45506,12 +45523,14 @@
                         } catch (e) {
                             g(this.identifier).warn(`Failed to check sibling refresh rotation: ${e instanceof Error?e.message:String(e)}`)
                         }
+                        const i = this.latestAuthorizationClientInformation?.client_id ?? this.attemptClientInformation?.client_id;
                         switch (g(this.identifier).warn(`Invalidating credentials: ${e}`, (0, m.UZ)({
                                 event: "mcp_oauth_invalidate_credentials",
                                 scope: e,
                                 hadRefreshToken: n,
                                 likelyConcurrentRefreshRace: "tokens" === e && n,
                                 siblingAlreadyRefreshed: r,
+                                invalidatingClientId: i,
                                 ...N(this.serverUrl),
                                 ...v(t, this.staticClientInformation?.client_id),
                                 ..._ ? {
@@ -45530,6 +45549,7 @@
                                     event: "mcp_oauth_refresh_result",
                                     outcome: "failure_tokens_wiped",
                                     hadRefreshToken: n,
+                                    invalidatingClientId: i,
                                     ...(0, s.X5)(this.lastRefreshError),
                                     ...N(this.serverUrl)
                                 })), await b(this.identifier, "tokens_wiped", this.lastRefreshError, this.executeCommand), await this.deleteSecretWithLegacyFallback(this.sharedTokensKey, this.legacyTokensKey), await this.setLocalUpdatedAtMs(-1), this.lastRefreshError = void 0;
@@ -70544,6 +70564,7 @@
             executableCommands = [];
             hasRedirects = !1;
             hasCommandSubstitution = !1;
+            allRedirectsAreDevNull;
             constructor(e) {
                 super(), _.C.util.initPartial(e, this)
             }
@@ -70570,6 +70591,12 @@
                 name: "has_command_substitution",
                 kind: "scalar",
                 T: 8
+            }, {
+                no: 5,
+                name: "all_redirects_are_dev_null",
+                kind: "scalar",
+                T: 8,
+                opt: !0
             }]);
             static fromBinary(e, t) {
                 return (new R).fromBinary(e, t)
@@ -96501,7 +96528,7 @@
                 name: "BACKGROUND_TASK_STATUS_ABORTED"
             }]),
             function(e) {
-                e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLAN_EXECUTION = 1] = "PLAN_EXECUTION", e[e.COMMIT_REMINDER = 2] = "COMMIT_REMINDER", e[e.BACKGROUND_TASK_COMPLETION = 3] = "BACKGROUND_TASK_COMPLETION", e[e.DIFF_TAB_COMMIT = 4] = "DIFF_TAB_COMMIT", e[e.DIFF_TAB_COMMIT_AND_PUSH = 5] = "DIFF_TAB_COMMIT_AND_PUSH", e[e.DIFF_TAB_PUSH = 6] = "DIFF_TAB_PUSH", e[e.DIFF_TAB_CREATE_PR = 7] = "DIFF_TAB_CREATE_PR", e[e.DIFF_TAB_FIX_MERGE_CONFLICTS = 8] = "DIFF_TAB_FIX_MERGE_CONFLICTS", e[e.USER_SENT_TO_SUBAGENT = 9] = "USER_SENT_TO_SUBAGENT", e[e.USER_INTERRUPTED_SUBAGENT = 10] = "USER_INTERRUPTED_SUBAGENT", e[e.USER_QUEUED_TO_SUBAGENT = 11] = "USER_QUEUED_TO_SUBAGENT", e[e.BABYSIT_PR_IN_CLOUD = 12] = "BABYSIT_PR_IN_CLOUD", e[e.CI_PANEL_INVESTIGATE_FAILURE = 13] = "CI_PANEL_INVESTIGATE_FAILURE", e[e.MULTITASK = 14] = "MULTITASK", e[e.BUILD_IN_PARALLEL = 15] = "BUILD_IN_PARALLEL"
+                e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLAN_EXECUTION = 1] = "PLAN_EXECUTION", e[e.COMMIT_REMINDER = 2] = "COMMIT_REMINDER", e[e.BACKGROUND_TASK_COMPLETION = 3] = "BACKGROUND_TASK_COMPLETION", e[e.DIFF_TAB_COMMIT = 4] = "DIFF_TAB_COMMIT", e[e.DIFF_TAB_COMMIT_AND_PUSH = 5] = "DIFF_TAB_COMMIT_AND_PUSH", e[e.DIFF_TAB_PUSH = 6] = "DIFF_TAB_PUSH", e[e.DIFF_TAB_CREATE_PR = 7] = "DIFF_TAB_CREATE_PR", e[e.DIFF_TAB_FIX_MERGE_CONFLICTS = 8] = "DIFF_TAB_FIX_MERGE_CONFLICTS", e[e.USER_SENT_TO_SUBAGENT = 9] = "USER_SENT_TO_SUBAGENT", e[e.USER_INTERRUPTED_SUBAGENT = 10] = "USER_INTERRUPTED_SUBAGENT", e[e.USER_QUEUED_TO_SUBAGENT = 11] = "USER_QUEUED_TO_SUBAGENT", e[e.BABYSIT_PR_IN_CLOUD = 12] = "BABYSIT_PR_IN_CLOUD", e[e.CI_PANEL_INVESTIGATE_FAILURE = 13] = "CI_PANEL_INVESTIGATE_FAILURE", e[e.MULTITASK = 14] = "MULTITASK", e[e.BUILD_IN_PARALLEL = 15] = "BUILD_IN_PARALLEL", e[e.MULTITASK_SPLIT_PRS = 16] = "MULTITASK_SPLIT_PRS"
             }(Vn || (Vn = {})), _.C.util.setEnumType(Vn, "agent.v1.SimulatedMsgReason", [{
                 no: 0,
                 name: "SIMULATED_MSG_REASON_UNSPECIFIED"
@@ -96550,6 +96577,9 @@
             }, {
                 no: 15,
                 name: "SIMULATED_MSG_REASON_BUILD_IN_PARALLEL"
+            }, {
+                no: 16,
+                name: "SIMULATED_MSG_REASON_MULTITASK_SPLIT_PRS"
             }]),
             function(e) {
                 e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DEFAULT = 1] = "DEFAULT", e[e.CODEX = 2] = "CODEX", e[e.GPT5 = 3] = "GPT5"
@@ -100467,6 +100497,7 @@
         }
         class af extends g.Q {
             requestId = "";
+            canonicalModelName;
             constructor(e) {
                 super(), _.C.util.initPartial(e, this)
             }
@@ -100477,6 +100508,12 @@
                 name: "request_id",
                 kind: "scalar",
                 T: 9
+            }, {
+                no: 2,
+                name: "canonical_model_name",
+                kind: "scalar",
+                T: 9,
+                opt: !0
             }]);
             static fromBinary(e, t) {
                 return (new af).fromBinary(e, t)
@@ -103890,4 +103927,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e9ee1339915a927dfb2df4a836dd9c8337e17cc0/extensions/cursor-mcp/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e821a7fc68d5ce5b4ab821f73fe4137e0851e60/extensions/cursor-mcp/dist/main.js.map

@@ -25082,6 +25082,12 @@
             name: "has_command_substitution",
             kind: "scalar",
             T: 8
+        }, {
+            no: 5,
+            name: "all_redirects_are_dev_null",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         let $c = zc;
         const eu = class e extends Nr {
@@ -41858,6 +41864,12 @@
             name: "has_command_substitution",
             kind: "scalar",
             T: 8
+        }, {
+            no: 5,
+            name: "all_redirects_are_dev_null",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         let oT = AT;
         const aT = class e extends Nr {
@@ -47965,4 +47977,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e9ee1339915a927dfb2df4a836dd9c8337e17cc0/extensions/cursor-shadow-workspace/dist/extension.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e821a7fc68d5ce5b4ab821f73fe4137e0851e60/extensions/cursor-shadow-workspace/dist/extension.js.map
