@@ -128436,7 +128436,7 @@
         }
         class eNe {
             constructor(e, t, n, r, s) {
-                this.context = e, this.cookieJar = t, this.getAccessToken = n, this.clientKey = r, this.createAbortAndErrorInterceptor = s, this.dnsOrderCache = new Map, this.activeAgents = new Set, this.activeSessionManagers = new Set, this.storedRandomness = (0, Yy.randomUUID)(), this.loadCertificates()
+                this.context = e, this.cookieJar = t, this.getAccessToken = n, this.clientKey = r, this.createAbortAndErrorInterceptor = s, this.dnsOrderCache = new Map, this.activeAgents = new Set, this.activeSessionManagers = new Set, this.retiredSessionManagers = new Set, this.storedRandomness = (0, Yy.randomUUID)(), this.loadCertificates()
             }
             async loadCertificates() {
                 try {
@@ -128980,11 +128980,20 @@
             }
             destroyAllAgents() {
                 for (const e of this.activeAgents) e.destroy();
-                this.activeAgents.clear(), this.activeSessionManagers.clear(), this.dnsOrderCache.clear()
+                this.activeAgents.clear();
+                for (const e of this.activeSessionManagers) this.retiredSessionManagers.add(e);
+                this.activeSessionManagers.clear();
+                for (const e of this.retiredSessionManagers) {
+                    const t = e.state();
+                    "closed" !== t && "error" !== t || this.retiredSessionManagers.delete(e)
+                }
+                this.dnsOrderCache.clear()
             }
             abortAllSessionManagers() {
                 for (const e of this.activeSessionManagers) e.abort();
-                this.activeSessionManagers.clear()
+                this.activeSessionManagers.clear();
+                for (const e of this.retiredSessionManagers) e.abort();
+                this.retiredSessionManagers.clear()
             }
         }
         const tNe = {
@@ -189040,4 +189049,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e821a7fc68d5ce5b4ab821f73fe4137e0851e60/extensions/cursor-always-local/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/3e548838cf824b70851dd3ef27d0c6aae371b3f0/extensions/cursor-always-local/dist/main.js.map

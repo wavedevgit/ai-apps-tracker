@@ -50392,7 +50392,7 @@ var j0 = Hz(import.meta.url),
 tc.BUILD_INSERT_PRODUCT_CONFIGURATION && (tc = j0("../product.json"));
 var H0 = {
     "name": "Cursor",
-    "version": "3.2.14",
+    "version": "3.2.16",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -51000,6 +51000,6 @@ function OK(t) {
     return e ? e.toLowerCase() : typeof t?.locale == "string" ? t.locale.toLowerCase() : void 0
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/6e821a7fc68d5ce5b4ab821f73fe4137e0851e60/core/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/3e548838cf824b70851dd3ef27d0c6aae371b3f0/core/main.js.map
 
 //# debugId=29db9c24-cf83-54a0-bd7a-80a702271fa9
