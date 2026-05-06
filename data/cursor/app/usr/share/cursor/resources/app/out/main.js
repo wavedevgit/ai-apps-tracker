@@ -59515,7 +59515,7 @@ var dk = nse(import.meta.url),
 zc.BUILD_INSERT_PRODUCT_CONFIGURATION && (zc = dk("../product.json"));
 var hk = {
     "name": "Cursor",
-    "version": "3.3.12",
+    "version": "3.3.16",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -60123,6 +60123,6 @@ function Yse(t) {
     return e ? e.toLowerCase() : typeof t?.locale == "string" ? t.locale.toLowerCase() : void 0
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/75c0dfd29aecf2cc208dbaf761d5cc459c601aa0/core/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/7f0f522221d0ba220e4edb766bb3c47c08c14ab0/core/main.js.map
 
 //# debugId=31ada4b1-8734-5af4-92dc-2c7d5a3f5d72
