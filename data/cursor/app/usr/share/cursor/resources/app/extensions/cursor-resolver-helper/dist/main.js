@@ -126841,6 +126841,12 @@
         kind: "scalar",
         T: 9,
         opt: !0
+    }, {
+        no: 15,
+        name: "parse_error",
+        kind: "scalar",
+        T: 9,
+        opt: !0
     }]);
     let BOe = vOe;
     const qOe = class e extends P {
@@ -147753,4 +147759,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/38a27120cfc7419a5efa38420665eaeeed1e7b30/extensions/cursor-resolver-helper/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/80b138a7a0a948e1a798e9ed7867d76a1ba9a310/extensions/cursor-resolver-helper/dist/main.js.map

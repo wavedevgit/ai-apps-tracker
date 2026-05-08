@@ -127540,6 +127540,10 @@
                 client: !0,
                 default: !0
             },
+            ide_update_ux: {
+                client: !0,
+                default: !1
+            },
             glass_open_resource_tool_enabled: {
                 client: !0,
                 default: !1
@@ -128716,6 +128720,10 @@
                 client: !0,
                 default: !1
             },
+            glass_rainbow_csv_extension: {
+                client: !0,
+                default: !1
+            },
             agent_cli_telem_v2_metrics_enabled: {
                 client: !0,
                 default: !1
@@ -129067,6 +129075,24 @@
                 }
             },
             glass_post_login_redirect_pm_design: {
+                client: !0,
+                fallbackValues: {
+                    enabled: !1
+                },
+                parseValue: {
+                    enabled: XNe
+                }
+            },
+            switch_glass_window: {
+                client: !0,
+                fallbackValues: {
+                    enabled: !1
+                },
+                parseValue: {
+                    enabled: XNe
+                }
+            },
+            glass_new_chat_header: {
                 client: !0,
                 fallbackValues: {
                     enabled: !1
@@ -171060,6 +171086,12 @@
             kind: "scalar",
             T: 9,
             opt: !0
+        }, {
+            no: 15,
+            name: "parse_error",
+            kind: "scalar",
+            T: 9,
+            opt: !0
         }]);
         let kot = wot;
         const Eot = class e extends T {
@@ -195568,4 +195600,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/38a27120cfc7419a5efa38420665eaeeed1e7b30/extensions/cursor-always-local/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/80b138a7a0a948e1a798e9ed7867d76a1ba9a310/extensions/cursor-always-local/dist/main.js.map

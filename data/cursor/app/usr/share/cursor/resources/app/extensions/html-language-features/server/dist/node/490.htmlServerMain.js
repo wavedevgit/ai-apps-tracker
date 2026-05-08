@@ -25,4 +25,4 @@ exports.id = 490, exports.ids = [490], exports.modules = {
             s = (0, t.join)(d, "lib/jquery.d.ts")
     }
 };
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/38a27120cfc7419a5efa38420665eaeeed1e7b30/extensions/html-language-features/server/dist/node/490.htmlServerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/80b138a7a0a948e1a798e9ed7867d76a1ba9a310/extensions/html-language-features/server/dist/node/490.htmlServerMain.js.map

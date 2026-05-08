@@ -151626,6 +151626,7 @@
             variables;
             sourceGitUrl;
             sourceGitRef;
+            parseError;
             constructor(e) {
                 super(), nt.util.initPartial(e, this)
             }
@@ -151707,6 +151708,12 @@
             }, {
                 no: 14,
                 name: "source_git_ref",
+                kind: "scalar",
+                T: 9,
+                opt: !0
+            }, {
+                no: 15,
+                name: "parse_error",
                 kind: "scalar",
                 T: 9,
                 opt: !0
@@ -162127,7 +162134,7 @@
             }
         }
         var cH = __webpack_require__(97712);
-        const lH = 1048576,
+        const lH = 10485760,
             uH = /^[a-z0-9]([a-z0-9.-]*[a-z0-9])?$/,
             dH = [".cursor-plugin/plugin.json", ".claude-plugin/plugin.json"],
             AH = [".cursor-plugin", ".claude-plugin"],
@@ -162278,7 +162285,7 @@
                 name: Tw().min(1).regex(uH, "Name must be kebab-case (lowercase alphanumeric with hyphens and periods)"),
                 owner: yH,
                 description: Tw().optional(),
-                plugins: Pw(kH),
+                plugins: Pw(Lw()),
                 metadata: TH.optional()
             }),
             bH = Ow({
@@ -162322,21 +162329,36 @@
                 error: `Invalid marketplace manifest: ${n.error.errors.map(e=>`${e.path.join(".")}: ${e.message}`).join(", ")}`,
                 details: n.error
             };
-            if (n.data.plugins.length > 500) return {
-                success: !1,
-                error: "Marketplace exceeds maximum of 500 plugins"
-            };
-            const r = new Set;
-            for (const e of n.data.plugins) {
-                if (r.has(e.name)) return {
-                    success: !1,
-                    error: `Duplicate plugin name "${e.name}" found in marketplace`
-                };
-                r.add(e.name)
-            }
-            return {
+            const r = [],
+                i = [],
+                s = new Set;
+            return n.data.plugins.forEach((e, t) => {
+                const n = kH.safeParse(e);
+                if (!n.success) {
+                    const r = "object" == typeof e && null !== e ? e.name : void 0;
+                    return void i.push(Object.assign(Object.assign({
+                        index: t
+                    }, "string" == typeof r && r.length > 0 ? {
+                        name: r
+                    } : {}), {
+                        error: `Invalid plugin entry at index ${t}: ${n.error.errors.map(e=>`${e.path.join(".")}: ${e.message}`).join(", ")}`
+                    }))
+                }
+                s.has(n.data.name) ? i.push({
+                    index: t,
+                    name: n.data.name,
+                    error: `Duplicate plugin name "${n.data.name}" at index ${t}`
+                }) : (s.add(n.data.name), r.push(n.data))
+            }), {
                 success: !0,
-                data: n.data
+                data: {
+                    name: n.data.name,
+                    owner: n.data.owner,
+                    description: n.data.description,
+                    plugins: r,
+                    metadata: n.data.metadata,
+                    skippedPluginEntries: i
+                }
             }
         }
 
@@ -170743,20 +170765,20 @@
 
         function x0(e) {
             return Q0(this, void 0, void 0, function*() {
-                var t, n, r, i, s, a, o, c, l, u, d, A, h, m, p, f;
+                var t, n, r, i, s, a, o, c, l, u, d, A, h, m, p, f, g;
                 const {
-                    pluginMetricsLogger: g = ZG,
-                    onParsedMarketplace: E
-                } = e, y = rK(e.gitUrl);
-                if ("error" in y) throw new Error(y.error);
-                if (!e.allowNonGitHubHosts && !sK(y.host)) throw new Error(`Only github.com repositories are supported for local preview. Host "${y.host}" is not allowed.`);
-                const w = `${y.url}.git`,
-                    I = e.gitUrl.trim(),
-                    C = I.startsWith("git@") || I.startsWith("ssh://"),
-                    _ = y.url.startsWith(`https://${y.host}/`),
-                    B = C ? I : _ ? y.url : void 0,
-                    k = e.allowNonGitHubHosts && !sK(y.host) && void 0 !== B && null !== (t = iK(B)) && void 0 !== t ? t : void 0,
-                    T = yield function(e, t, n) {
+                    pluginMetricsLogger: E = ZG,
+                    onParsedMarketplace: y
+                } = e, w = rK(e.gitUrl);
+                if ("error" in w) throw new Error(w.error);
+                if (!e.allowNonGitHubHosts && !sK(w.host)) throw new Error(`Only github.com repositories are supported for local preview. Host "${w.host}" is not allowed.`);
+                const I = `${w.url}.git`,
+                    C = e.gitUrl.trim(),
+                    _ = C.startsWith("git@") || C.startsWith("ssh://"),
+                    B = w.url.startsWith(`https://${w.host}/`),
+                    k = _ ? C : B ? w.url : void 0,
+                    T = e.allowNonGitHubHosts && !sK(w.host) && void 0 !== k && null !== (t = iK(k)) && void 0 !== t ? t : void 0,
+                    S = yield function(e, t, n) {
                         return Q0(this, void 0, void 0, function*() {
                             var r, i;
                             const s = (null == t ? void 0 : t.trim()) || "HEAD",
@@ -170793,58 +170815,58 @@
                                 defaultBranch: s
                             }
                         })
-                    }(w, e.gitRef, k), S = `${y.owner}-${y.repo}-local`.toLowerCase();
-                g.log("info", "parseGitHubRepoForPluginsLocally: Resolved remote ref", {
-                    marketplaceRepo: y.repo,
-                    marketplaceId: S,
-                    resolvedRef: T,
+                    }(I, e.gitRef, T), b = `${w.owner}-${w.repo}-local`.toLowerCase();
+                E.log("info", "parseGitHubRepoForPluginsLocally: Resolved remote ref", {
+                    marketplaceRepo: w.repo,
+                    marketplaceId: b,
+                    resolvedRef: S,
                     gitRef: e.gitRef,
                     gitUrl: e.gitUrl
                 });
-                const b = new gK(e.marketplaceCacheRoot),
-                    v = yield b.ensureCloned(S, w, T.cloneRef, g);
-                let Q = null !== (n = T.commitSha) && void 0 !== n ? n : "";
+                const v = new gK(e.marketplaceCacheRoot),
+                    Q = yield v.ensureCloned(b, I, S.cloneRef, E);
+                let D = null !== (n = S.commitSha) && void 0 !== n ? n : "";
                 try {
-                    if ("" === Q) {
+                    if ("" === D) {
                         const {
                             stdout: e
                         } = yield W$(["rev-parse", "HEAD"], {
-                            cwd: v
+                            cwd: Q
                         });
-                        Q = e.trim()
+                        D = e.trim()
                     }
                 } catch (e) {
-                    Q = null !== (r = T.commitSha) && void 0 !== r ? r : ""
+                    D = null !== (r = S.commitSha) && void 0 !== r ? r : ""
                 }
-                let D = T.defaultBranch;
-                if ("HEAD" === D) try {
+                let N = S.defaultBranch;
+                if ("HEAD" === N) try {
                     const {
                         stdout: e
                     } = yield W$(["rev-parse", "--abbrev-ref", "HEAD"], {
-                        cwd: v
+                        cwd: Q
                     }), t = e.trim();
-                    t && "HEAD" !== t && (D = t)
+                    t && "HEAD" !== t && (N = t)
                 } catch (e) {}
-                const N = y.url,
+                const R = w.url,
                     {
-                        owner: R,
-                        repo: F
-                    } = y,
-                    x = yield b.readManifest(v);
-                if (null !== x) {
-                    const t = yield b.discoverPlugins(v), n = t.filter(e => "local" === e.sourceType), r = t.filter(N0), f = [];
+                        owner: F,
+                        repo: x
+                    } = w,
+                    L = yield v.readManifest(Q);
+                if (null !== L) {
+                    const t = yield v.discoverPlugins(Q), n = t.filter(e => "local" === e.sourceType), r = t.filter(N0), g = [];
                     for (const e of n) {
-                        const t = x.plugins.find(t => t.name === e.name);
+                        const t = L.plugins.find(t => t.name === e.name);
                         if (!t) continue;
                         let n, r;
                         try {
-                            n = b.getPluginDir(v, e.gitPath)
+                            n = v.getPluginDir(Q, e.gitPath)
                         } catch (e) {
                             continue
                         }
                         try {
                             r = yield i0(n, {
-                                symlinkTargetRoot: v
+                                symlinkTargetRoot: Q
                             })
                         } catch (e) {
                             continue
@@ -170854,12 +170876,12 @@
                             l = D0({
                                 pluginLogo: r.manifest.logo,
                                 entryLogo: t.logo,
-                                owner: R,
-                                repo: F,
-                                ref: Q || D,
+                                owner: F,
+                                repo: x,
+                                ref: D || N,
                                 basePath: e.gitPath
                             });
-                        f.push({
+                        g.push({
                             name: t.name,
                             displayName: o || t.name,
                             description: c,
@@ -170974,12 +170996,12 @@
                                 }
                                 return a
                             })
-                        }(r, b, g, e.allowNonGitHubHosts ? y.host : void 0);
+                        }(r, v, E, e.allowNonGitHubHosts ? w.host : void 0);
                         for (const [e, n] of r.entries()) {
-                            const r = x.plugins.find(e => e.name === n.name),
+                            const r = L.plugins.find(e => e.name === n.name),
                                 i = null !== (o = t.get(e)) && void 0 !== o ? o : R0,
                                 s = "git-subdir" === n.sourceType ? n.subdirPath : void 0;
-                            f.push({
+                            g.push({
                                 name: n.name,
                                 displayName: FH({
                                     displayName: n.displayName
@@ -171002,63 +171024,86 @@
                             })
                         }
                     }
-                    const w = {
-                        marketplaceName: x.name,
-                        marketplaceDescription: null !== (p = null !== (m = null === (h = x.metadata) || void 0 === h ? void 0 : h.description) && void 0 !== m ? m : x.description) && void 0 !== p ? p : "",
-                        defaultBranch: D,
-                        repositoryUrl: N,
-                        commitSha: Q,
-                        plugins: f
+                    const I = new Set(g.map(e => e.name));
+                    for (const e of L.skippedPluginEntries) {
+                        let t = e.name;
+                        if (!t || I.has(t)) {
+                            let n = e.index;
+                            do {
+                                t = `errored-plugin-${n}`, n++
+                            } while (I.has(t))
+                        }
+                        I.add(t), g.push({
+                            name: t,
+                            displayName: null !== (h = e.name) && void 0 !== h ? h : t,
+                            description: "",
+                            gitPath: "",
+                            skills: [],
+                            subagents: [],
+                            hooks: [],
+                            rules: [],
+                            mcpServers: [],
+                            commands: [],
+                            parseError: e.error
+                        })
+                    }
+                    const C = {
+                        marketplaceName: L.name,
+                        marketplaceDescription: null !== (f = null !== (p = null === (m = L.metadata) || void 0 === m ? void 0 : m.description) && void 0 !== p ? p : L.description) && void 0 !== f ? f : "",
+                        defaultBranch: N,
+                        repositoryUrl: R,
+                        commitSha: D,
+                        plugins: g
                     };
-                    return E && E({
+                    return y && y({
                         gitUrl: e.gitUrl,
                         gitRef: e.gitRef,
-                        result: w
+                        result: C
                     }).catch(e => {
-                        g.log("warn", "parseGitHubRepoForPluginsLocally: onParsedMarketplace callback failed", {
+                        E.log("warn", "parseGitHubRepoForPluginsLocally: onParsedMarketplace callback failed", {
                             error: e instanceof Error ? e.message : String(e)
                         })
-                    }), w
+                    }), C
                 }
-                const L = yield i0(v, {
-                    symlinkTargetRoot: v
-                }), M = L.manifest.name ? OX(L.manifest.name) : OX(F), U = FH(L.manifest, {
-                    name: F
-                }), P = null !== (f = L.manifest.description) && void 0 !== f ? f : "", O = {
-                    marketplaceName: M,
-                    marketplaceDescription: P,
-                    defaultBranch: D,
-                    repositoryUrl: N,
-                    commitSha: Q,
+                const M = yield i0(Q, {
+                    symlinkTargetRoot: Q
+                }), U = M.manifest.name ? OX(M.manifest.name) : OX(x), P = FH(M.manifest, {
+                    name: x
+                }), O = null !== (g = M.manifest.description) && void 0 !== g ? g : "", J = {
+                    marketplaceName: U,
+                    marketplaceDescription: O,
+                    defaultBranch: N,
+                    repositoryUrl: R,
+                    commitSha: D,
                     plugins: [{
-                        name: M,
-                        displayName: U || M,
-                        description: P,
+                        name: U,
+                        displayName: P || U,
+                        description: O,
                         gitPath: "",
                         logoUrl: D0({
-                            pluginLogo: L.manifest.logo,
-                            owner: R,
-                            repo: F,
-                            ref: Q || D
+                            pluginLogo: M.manifest.logo,
+                            owner: F,
+                            repo: x,
+                            ref: D || N
                         }),
-                        variables: L.manifest.variables,
-                        skills: L.skills,
-                        subagents: L.subagents,
-                        hooks: L.hooks,
-                        rules: L.rules,
-                        mcpServers: L.mcpServers,
-                        commands: L.commands
+                        variables: M.manifest.variables,
+                        skills: M.skills,
+                        subagents: M.subagents,
+                        hooks: M.hooks,
+                        rules: M.rules,
+                        mcpServers: M.mcpServers,
+                        commands: M.commands
                     }]
                 };
-                return E && E({
+                return y && y({
                     gitUrl: e.gitUrl,
                     gitRef: e.gitRef,
-                    result: O
+                    result: J
                 }).catch(e => {
-                    g.log("warn", "parseGitHubRepoForPluginsLocally: onParsedMarketplace callback failed", {
+                    E.log("warn", "parseGitHubRepoForPluginsLocally: onParsedMarketplace callback failed", {
                         error: e instanceof Error ? e.message : String(e)
                     })
-                }), O
+                }), J
             })
         }
 
@@ -171818,27 +171863,26 @@
             }
             async findGitRootsForFile(e) {
                 const t = R_(e),
-                    n = (0, _f.dirname)(t),
-                    r = this.gitRootCache.get(n);
-                if (void 0 !== r) return r;
-                const i = [],
-                    s = [],
-                    a = [];
-                let o = n;
-                const c = (0, _f.parse)(o).root;
-                for (; o !== c;) {
-                    s.push(o), void 0 === this.hasGitDirCache.get(o) && a.push(o);
-                    const e = (0, _f.dirname)(o);
-                    if (e === o) break;
-                    o = e
+                    n = this.gitRootCache.get(t);
+                if (void 0 !== n) return n;
+                const r = [],
+                    i = [],
+                    s = [];
+                let a = t;
+                const o = (0, _f.parse)(a).root;
+                for (; a !== o;) {
+                    i.push(a), void 0 === this.hasGitDirCache.get(a) && s.push(a);
+                    const e = (0, _f.dirname)(a);
+                    if (e === a) break;
+                    a = e
                 }
-                if (a.length > 0) {
-                    const e = a.map(e => (0, Cf.access)((0, _f.join)(e, ".git"), Cf.constants.F_OK).then(() => [e, !0]).catch(() => [e, !1])),
+                if (s.length > 0) {
+                    const e = s.map(e => (0, Cf.access)((0, _f.join)(e, ".git"), Cf.constants.F_OK).then(() => [e, !0]).catch(() => [e, !1])),
                         t = await Promise.all(e);
                     for (const [e, n] of t) this.hasGitDirCache.set(e, n)
                 }
-                for (const e of s) !0 === this.hasGitDirCache.get(e) && i.push(e);
-                return this.gitRootCache.set(n, i), i
+                for (const e of i) !0 === this.hasGitDirCache.get(e) && r.push(e);
+                return this.gitRootCache.set(t, r), r
             }
             async isRepoBlocked(e) {
                 return this.checkRepoBlocked(e)
@@ -171850,10 +171894,10 @@
                 if (!n || !n.repos) return !1;
                 for (const r of t) {
                     let t;
-                    if (this.gitRemoteUrlCache.has(r) ? t = this.gitRemoteUrlCache.get(r) : (t = await n1(s(), this.gitExecutor, r), void 0 !== t && this.gitRemoteUrlCache.set(r, t)), void 0 === t) continue;
-                    const i = n.repos.filter(e => this.doesRepoUrlMatch(e.url, t));
+                    this.gitRemoteUrlCache.has(r) ? t = this.gitRemoteUrlCache.get(r) : (t = await n1(s(), this.gitExecutor, r), void 0 !== t && this.gitRemoteUrlCache.set(r, t));
+                    const i = n.repos.filter(e => void 0 !== t && this.doesRepoUrlMatch(e.url, t));
                     if (0 === i.length) continue;
-                    const a = (0, _f.relative)(r, e);
+                    const a = (0, _f.relative)(r, e) || ".";
                     for (const e of i)
                         for (const t of e.patterns || [])
                             if (this.matchGlob(t.pattern, a)) return !0
@@ -171861,20 +171905,26 @@
                 return !1
             }
             doesRepoUrlMatch(e, t) {
-                if (e.includes("*")) {
+                if (e.trim().toLowerCase().replace(/\.git$/i, ""), e.includes("*")) {
                     if ("*" === e.trim()) return !0;
                     const n = i1(e).toLowerCase(),
                         r = i1(t).toLowerCase();
-                    return this.matchGlob(n, r)
+                    return this.matchRepoUrlGlob(n, r)
                 }
                 return i1(e).toLowerCase() === i1(t).toLowerCase()
             }
             matchGlob(e, t) {
+                const n = e.trim();
+                if (!("." !== t && "" !== t || "**" !== n && "**/*" !== n)) return !0;
                 try {
-                    return a1(e.trim())(t)
+                    return a1(n)(t)
                 } catch {
-                    return e.trim() === t
+                    return n === t
                 }
+            }
+            matchRepoUrlGlob(e, t) {
+                const n = e.trim();
+                return !!this.matchGlob(n, t) || !!n.startsWith("*/") && this.matchGlob(`**/${n.slice(2)}`, t)
             }
             async getRepoBlockExcludeGlobs(e) {
                 const t = await (this.teamSettingsService?.getTeamRepos());
@@ -192402,7 +192452,8 @@
                                         hooks: e.hooks.map(a),
                                         rules: e.rules.map(c),
                                         mcpServers: e.mcpServers.map(l),
-                                        commands: e.commands.map(u)
+                                        commands: e.commands.map(u),
+                                        parseError: e.parseError
                                     }))
                                 }))
                             } catch (e) {
@@ -197459,4 +197510,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/38a27120cfc7419a5efa38420665eaeeed1e7b30/extensions/cursor-agent-exec/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/80b138a7a0a948e1a798e9ed7867d76a1ba9a310/extensions/cursor-agent-exec/dist/main.js.map

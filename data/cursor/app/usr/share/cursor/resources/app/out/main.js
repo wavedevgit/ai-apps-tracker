@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "b0f63049-edb5-5a73-bbb3-a801e7ed3d56")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5e0b1be3-0f00-563f-9233-2e5b07c022d5")
     } catch (e) {}
 }();
 var l1 = function(t, e) {
@@ -3156,7 +3156,7 @@ function K2(t) {
     e.addIntegration(t)
 }
 
-function Qse(t) {
+function Zse(t) {
     return t
 }
 var ui = g({
@@ -6272,7 +6272,7 @@ function Fy(t) {
     return typeof t == "function"
 }
 
-function Zse(t) {
+function ene(t) {
     return t
 }
 var bT, Ue = g({
@@ -9048,7 +9048,7 @@ function J(t) {
     return e.toString = () => t, Yr.serviceIds.set(t, e), e
 }
 
-function ene(t) {
+function tne(t) {
     return t
 }
 var Yr, Ss, X = g({
@@ -12596,7 +12596,7 @@ var W4, fe, mr = g({
     QV, F4, ZV, F0, U4, B4, $4, V4, ej, j4, H4, U0, tj, ij, q4, rj, G4, z4, K4, sj, J4, Y4, X4, Q4, Z4, nj, B0, Qa = g({
         "out-build/vs/base/common/constants.js"() {
             "use strict";
-            QV = Date.now(), F4 = !1, ZV = 1800 * 1e3, F0 = ["anysphere.cursor-resolver", "anysphere.cursor-always-local", "anysphere.cursor-agent-exec", "anysphere.cursor-checkout", "anysphere.cursor-explorer", "anysphere.cursor-commits", "anysphere.cursor-mcp", "anysphere.cursor-ndjson-ingest", "anysphere.cursor-retrieval", "cursor.cursor-browser-automation", "vscode.git", "vscode.git-base", "vscode.vscode-theme-seti", "undefined_publisher.cursor-themes", "vscode.typescript", "vscode.javascript", "vscode.python", "vscode.json", "vscode.html", "vscode.css", "vscode.markdown", "vscode.yaml", "vscode.xml", "vscode.go", "vscode.rust", "vscode.cpp", "vscode.java", "vscode.csharp", "vscode.ruby", "vscode.sql", "vscode.shellscript", "vscode.swift", "vscode.dart", "vscode.scss", "vscode.less", "vscode.lua", "vscode.perl", "vscode.r", "vscode.php", "vscode.docker", "vscode.ini", "vscode.diff", "vscode.make", "vscode.log", "vscodevim.vim", "asvetliakov.vscode-neovim", "tuttieee.emacs-mcx"], U4 = ["vscode.css-language-features", "vscode.html-language-features", "vscode.json-language-features", "vscode.php-language-features", "vscode.typescript-language-features", "typescriptteam.native-preview", "ms-python.python", "ms-python.vscode-pylance", "golang.go", "prisma.prisma", "dbaeumer.vscode-eslint", "charliermarsh.ruff", "rust-lang.rust-analyzer"], B4 = [...F0, "anysphere.cursor-deeplink", "anysphere.cursor-resolver-helper", "anysphere.cursor-socket", "vscode.github-authentication"], $4 = [...F0, "anysphere.remote-ssh", "anysphere.remote-wsl"], V4 = [...$4, ...U4], ej = [...V4, ...B4], j4 = "cursorai.action.windowInWindowDidShow", H4 = "cursorai.action.windowInWindowDidHide", U0 = "src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage", tj = `${U0}.applicationUser`, ij = `${U0}.applicationUser.subscription`, q4 = "workbench.panel.aichat.view", rj = q4 + ".aichat.chatdata", G4 = "composer.composerHeaders", z4 = [.85, 1, 1.15, 1.3], K4 = "default", sj = [K4, ...z4.map(t => `${t}`)], (function(t) {
+            QV = Date.now(), F4 = !1, ZV = 1800 * 1e3, F0 = ["anysphere.cursor-resolver", "anysphere.cursor-always-local", "anysphere.cursor-agent-exec", "anysphere.cursor-checkout", "anysphere.cursor-explorer", "anysphere.cursor-commits", "anysphere.cursor-mcp", "anysphere.cursor-ndjson-ingest", "anysphere.cursor-retrieval", "cursor.cursor-browser-automation", "vscode.git", "vscode.git-base", "vscode.vscode-theme-seti", "undefined_publisher.cursor-themes", "vscode.typescript", "vscode.javascript", "vscode.python", "vscode.json", "vscode.html", "vscode.css", "vscode.markdown", "vscode.yaml", "vscode.xml", "vscode.go", "vscode.rust", "vscode.cpp", "vscode.java", "vscode.csharp", "vscode.ruby", "vscode.sql", "vscode.shellscript", "vscode.swift", "vscode.dart", "vscode.scss", "vscode.less", "vscode.lua", "vscode.perl", "vscode.r", "vscode.php", "vscode.docker", "vscode.ini", "vscode.diff", "vscode.make", "vscode.log", "mechatroner.rainbow-csv", "vscodevim.vim", "asvetliakov.vscode-neovim", "tuttieee.emacs-mcx"], U4 = ["vscode.css-language-features", "vscode.html-language-features", "vscode.json-language-features", "vscode.php-language-features", "vscode.typescript-language-features", "typescriptteam.native-preview", "ms-python.python", "ms-python.vscode-pylance", "golang.go", "prisma.prisma", "dbaeumer.vscode-eslint", "charliermarsh.ruff", "rust-lang.rust-analyzer"], B4 = [...F0, "anysphere.cursor-deeplink", "anysphere.cursor-resolver-helper", "anysphere.cursor-socket", "vscode.github-authentication"], $4 = [...F0, "anysphere.remote-ssh", "anysphere.remote-wsl"], V4 = [...$4, ...U4], ej = [...V4, ...B4], j4 = "cursorai.action.windowInWindowDidShow", H4 = "cursorai.action.windowInWindowDidHide", U0 = "src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage", tj = `${U0}.applicationUser`, ij = `${U0}.applicationUser.subscription`, q4 = "workbench.panel.aichat.view", rj = q4 + ".aichat.chatdata", G4 = "composer.composerHeaders", z4 = [.85, 1, 1.15, 1.3], K4 = "default", sj = [K4, ...z4.map(t => `${t}`)], (function(t) {
                 t.Agent = "agent", t.Editor = "editor"
             })(J4 || (J4 = {})), (function(t) {
                 t.Default = "default", t.Unified = "unified", t.Split = "split"
@@ -23551,16 +23551,20 @@ import {
     switchMap as EG,
     take as kG
 } from "rxjs";
+
+function IG(t) {
+    return typeof t == "object" && t !== null && "hasDirtyWorkingCopy" in t && "hasForegroundTerminalWithChildProcesses" in t && typeof t.hasDirtyWorkingCopy == "boolean" && typeof t.hasForegroundTerminalWithChildProcesses == "boolean"
+}
 var Ms, ed, Ko = g({
         "out-build/vs/platform/native/electron-main/nativeHostMainService.js"() {
             "use strict";
             ct(), Et(), Qa(), Eo(), je(), Q(), sr(), $(), Be(), xe(), Z(), le(), cb(), zu(), si(), tx(), Pe(), Ku(), et(), yc(), ln(), Ze(), X(), It(), Y(), gt(), cx(), sG(), pn(), ac(), Du(), yt(), xi(), Vo(), aD(), Ms = J("nativeHostMainService"), ed = class extends H {
                 constructor(e, i, r, s, n, o, a, c, l, u, d, f, p, m) {
-                    super(), this.windowsMainService = e, this.auxiliaryWindowsMainService = i, this.dialogMainService = r, this.lifecycleMainService = s, this.environmentMainService = n, this.logService = o, this.productService = a, this.themeMainService = c, this.workspacesManagementMainService = l, this.configurationService = u, this.requestService = d, this.proxyAuthService = f, this.instantiationService = p, this.cssDevelopmentService = m, this._onDidChangeCssModules = this._register(new x), this.onDidChangeCssModules = this._onDidChangeCssModules.event, this._onDidChangePassword = this._register(new x), this.onDidChangePassword = this._onDidChangePassword.event, this.heicConversionFolderPath = q(vx(), "cursor-heic-conversion"), this.heicCleanupDone = !1, m.isEnabled && this._register(m.onDidChangeCssModules(v => {
+                    super(), this.windowsMainService = e, this.auxiliaryWindowsMainService = i, this.dialogMainService = r, this.lifecycleMainService = s, this.environmentMainService = n, this.logService = o, this.productService = a, this.themeMainService = c, this.workspacesManagementMainService = l, this.configurationService = u, this.requestService = d, this.proxyAuthService = f, this.instantiationService = p, this.cssDevelopmentService = m, this._onDidChangeCssModules = this._register(new x), this.onDidChangeCssModules = this._onDidChangeCssModules.event, this.switchGlassWindowSafetyByWindowId = new Map, this._onDidChangePassword = this._register(new x), this.onDidChangePassword = this._onDidChangePassword.event, this.heicConversionFolderPath = q(vx(), "cursor-heic-conversion"), this.heicCleanupDone = !1, m.isEnabled && this._register(m.onDidChangeCssModules(v => {
                         this._onDidChangeCssModules.fire(Object.fromEntries(v))
                     }));
                     {
-                        this.onDidOpenMainWindow = R.map(this.windowsMainService.onDidOpenWindow, w => w.id), this.onDidTriggerWindowSystemContextMenu = R.any(R.map(this.windowsMainService.onDidTriggerSystemContextMenu, ({
+                        this._register(this.windowsMainService.onDidDestroyWindow(w => this.switchGlassWindowSafetyByWindowId.delete(w.id))), this.onDidOpenMainWindow = R.map(this.windowsMainService.onDidOpenWindow, w => w.id), this.onDidTriggerWindowSystemContextMenu = R.any(R.map(this.windowsMainService.onDidTriggerSystemContextMenu, ({
                             window: w,
                             x: _,
                             y: k
@@ -23606,7 +23610,8 @@ var Ms, ed, Ko = g({
                             dirty: n.isDocumentEdited(),
                             parentWindowId: n.parentWindowId,
                             remoteAuthority: n.remoteAuthority,
-                            isGlass: n.config?.glass === !0
+                            isGlass: n.config?.glass === !0,
+                            switchGlassWindowSafety: this.switchGlassWindowSafetyByWindowId.get(n.id)
                         })),
                         s = [];
                     return i.includeAuxiliaryWindows && s.push(...this.auxiliaryWindowsMainService.getWindows().map(n => ({
@@ -23615,6 +23620,9 @@ var Ms, ed, Ko = g({
                         title: n.win?.getTitle() ?? "",
                         filename: n.getRepresentedFilename()
                     }))), [...r, ...s]
+                }
+                async setSwitchGlassWindowSafety(e, i) {
+                    typeof e != "number" || !this.windowsMainService.getWindowById(e) || !IG(i) || this.switchGlassWindowSafetyByWindowId.set(e, i)
                 }
                 async getWindowCount(e) {
                     return this.windowsMainService.getWindowCount()
@@ -24466,7 +24474,7 @@ var Ms, ed, Ko = g({
             }, __decorate([be], ed.prototype, "cliPath", null), ed = __decorate([__param(0, mt), __param(1, qo), __param(2, is), __param(3, it), __param(4, Ke), __param(5, z), __param(6, Ye), __param(7, Oo), __param(8, $n), __param(9, nt), __param(10, fn), __param(11, Bg), __param(12, Ss), __param(13, Go)], ed)
         }
     }),
-    mb, mm, IG = g({
+    mb, mm, CG = g({
         "out-build/vs/platform/extensions/electron-main/extensionHostStarter.js"() {
             "use strict";
             he(), je(), Q(), $(), It(), Y(), Si(), jo(), yt(), et(), Aq(), Ko(), mm = class extends H {
@@ -24583,16 +24591,16 @@ var Ms, ed, Ko = g({
             }, mm = mb = __decorate([__param(0, z), __param(1, it), __param(2, mt), __param(3, yi), __param(4, nt), __param(5, Ms)], mm)
         }
     }),
-    td, CG = g({
+    td, TG = g({
         "out-build/vs/platform/externalTerminal/electron-main/externalTerminal.js"() {
             "use strict";
             X(), td = J("externalTerminal")
         }
     }),
-    TG, id, PG = g({
+    PG, id, DG = g({
         "out-build/vs/platform/externalTerminal/common/externalTerminal.js"() {
             "use strict";
-            X(), TG = J("externalTerminal"), id = "Terminal.app"
+            X(), PG = J("externalTerminal"), id = "Terminal.app"
         }
     });
 import * as Ec from "child_process";
@@ -24608,15 +24616,15 @@ function wb(t) {
     return "errno" in t && t.errno === "ENOENT" && "path" in t && typeof t.path == "string" ? new Error(S(2024, null, t.path)) : t
 }
 
-function DG(t) {
+function xG(t) {
     let e = "";
     for (const i of t) i.indexOf(" ") >= 0 ? e += '"' + i + '"' : e += i, e += " ";
     return e
 }
-var vb, wm, vm, Sx, yb, xG = g({
+var vb, wm, vm, Sx, yb, RG = g({
     "out-build/vs/platform/externalTerminal/node/externalTerminalService.js"() {
         "use strict";
-        Eo(), Be(), xe(), Z(), Xg(), si(), Gu(), Pe(), PG(), vb = S(2019, null), wm = class {
+        Eo(), Be(), xe(), Z(), Xg(), si(), Gu(), Pe(), DG(), vb = S(2019, null), wm = class {
             async getDefaultTerminalForPlatforms() {
                 return {
                     windows: vm.getDefaultTerminalWindows(),
@@ -24744,7 +24752,7 @@ var vb, wm, vm, Sx, yb, xG = g({
                     const l = [];
                     o.then(u => {
                         u.indexOf("gnome-terminal") >= 0 ? l.push("-x") : l.push("-e"), l.push("bash"), l.push("-c");
-                        const d = `${DG(r)}; echo; read -p "${io.WAIT_MESSAGE}" -n1;`;
+                        const d = `${xG(r)}; echo; read -p "${io.WAIT_MESSAGE}" -n1;`;
                         l.push(`''${d}''`);
                         const f = Object.assign({}, kc(process), s);
                         Object.keys(f).filter(y => f[y] === null).forEach(y => delete f[y]);
@@ -24907,7 +24915,7 @@ function Sb(t, e) {
     let s = Eb.get(r);
     if (s) return kx(s, t);
     let n;
-    return xx.test(i) ? s = RG(i.substr(4), i) : (n = Rx.exec(bb(i, e))) ? s = AG(n[1], i) : (e.trimForExclusions ? Mx : Ax).test(i) ? s = MG(i, e) : (n = Ox.exec(bb(i, e))) ? s = Ix(n[1].substr(1), i, !0) : (n = Lx.exec(bb(i, e))) ? s = Ix(n[1], i, !1) : s = OG(i), Eb.set(r, s), kx(s, t)
+    return xx.test(i) ? s = AG(i.substr(4), i) : (n = Rx.exec(bb(i, e))) ? s = MG(n[1], i) : (e.trimForExclusions ? Mx : Ax).test(i) ? s = OG(i, e) : (n = Ox.exec(bb(i, e))) ? s = Ix(n[1].substr(1), i, !0) : (n = Lx.exec(bb(i, e))) ? s = Ix(n[1], i, !1) : s = LG(i), Eb.set(r, s), kx(s, t)
 }
 
 function kx(t, e) {
@@ -24922,13 +24930,13 @@ function bb(t, e) {
     return e.trimForExclusions && t.endsWith("/**") ? t.substr(0, t.length - 2) : t
 }
 
-function RG(t, e) {
+function AG(t, e) {
     return function(i, r) {
         return typeof i == "string" && i.endsWith(t) ? e : null
     }
 }
 
-function AG(t, e) {
+function MG(t, e) {
     const i = `/${t}`,
         r = `\\${t}`,
         s = function(o, a) {
@@ -24938,7 +24946,7 @@ function AG(t, e) {
     return s.basenames = n, s.patterns = [e], s.allBasenames = n, s
 }
 
-function MG(t, e) {
+function OG(t, e) {
     const i = Tx(t.slice(1, -1).split(",").map(a => Sb(a, e)).filter(a => a !== rs), t),
         r = i.length;
     if (!r) return rs;
@@ -24967,7 +24975,7 @@ function Ix(t, e, i) {
     }, a.allPaths = [(i ? "*/" : "./") + t], a
 }
 
-function OG(t) {
+function LG(t) {
     try {
         const e = new RegExp(`^${Ex(t)}$`);
         return function(i) {
@@ -24978,13 +24986,13 @@ function OG(t) {
     }
 }
 
-function LG(t, e, i) {
+function NG(t, e, i) {
     return !t || typeof e != "string" ? !1 : Cx(t)(e, void 0, i)
 }
 
 function Cx(t, e = {}) {
     if (!t) return kb;
-    if (typeof t == "string" || NG(t)) {
+    if (typeof t == "string" || WG(t)) {
         const i = Sb(t, e);
         if (i === rs) return kb;
         const r = function(s, n) {
@@ -24992,16 +25000,16 @@ function Cx(t, e = {}) {
         };
         return i.allBasenames && (r.allBasenames = i.allBasenames), i.allPaths && (r.allPaths = i.allPaths), r
     }
-    return WG(t, e)
+    return FG(t, e)
 }
 
-function NG(t) {
+function WG(t) {
     const e = t;
     return e ? typeof e.base == "string" && typeof e.pattern == "string" : !1
 }
 
-function WG(t, e) {
-    const i = Tx(Object.getOwnPropertyNames(t).map(a => FG(a, t[a], e)).filter(a => a !== rs)),
+function FG(t, e) {
+    const i = Tx(Object.getOwnPropertyNames(t).map(a => UG(a, t[a], e)).filter(a => a !== rs)),
         r = i.length;
     if (!r) return rs;
     if (!i.some(a => !!a.requiresSiblings)) {
@@ -25049,7 +25057,7 @@ function WG(t, e) {
     return o.length && (s.allPaths = o), s
 }
 
-function FG(t, e, i) {
+function UG(t, e, i) {
     if (e === !1) return rs;
     const r = Sb(t, i);
     if (r === rs) return rs;
@@ -25120,7 +25128,7 @@ function Nx(t) {
     return typeof t.correlationId == "number"
 }
 
-function UG(t) {
+function BG(t) {
     return t.recursive === !0
 }
 
@@ -25132,13 +25140,13 @@ function Wx(t) {
     }))
 }
 
-function BG(t) {
+function $G(t) {
     const e = new $x;
     for (const i of t) e.processEvent(i);
     return e.coalesce()
 }
 
-function $G(t, e) {
+function VG(t, e) {
     return typeof e == "string" && !e.startsWith(Ic) && !zl(e) ? {
         base: t,
         pattern: e
@@ -25147,11 +25155,11 @@ function $G(t, e) {
 
 function Fx(t, e) {
     const i = [];
-    for (const r of e) i.push(Cx($G(t, r)));
+    for (const r of e) i.push(Cx(VG(t, r)));
     return i
 }
 
-function VG(t, e) {
+function jG(t, e) {
     if (typeof e == "number") switch (t.type) {
         case 1:
             return (e & 4) === 0;
@@ -25163,7 +25171,7 @@ function VG(t, e) {
     return !1
 }
 
-function jG(t) {
+function HG(t) {
     if (typeof t == "number") {
         const e = [];
         return t & 4 && e.push("Added"), t & 8 && e.push("Deleted"), t & 2 && e.push("Updated"), e.length === 0 ? "<all>" : `[${e.join(", ")}]`
@@ -25253,7 +25261,7 @@ var Cb, Ux, Bx, $x, Cc = g({
             }
         }
     }),
-    Tb, HG = g({
+    Tb, qG = g({
         "out-build/vs/platform/files/common/diskFileSystemProviderClient.js"() {
             "use strict";
             ct(), bo(), je(), Q(), $(), Zl(), le(), Li(), pt(), Cc(), Tb = "localFilesystem"
@@ -25262,14 +25270,14 @@ var Cb, Ux, Bx, $x, Cc = g({
 async function Vx(t, e, i, r, s, n) {
     let o;
     try {
-        await qG(t, e, i, r, s, n)
+        await GG(t, e, i, r, s, n)
     } catch (a) {
         o = a
     } finally {
         o && s.errorTransformer && (o = s.errorTransformer(o)), typeof o < "u" && i.error(o), i.end()
     }
 }
-async function qG(t, e, i, r, s, n) {
+async function GG(t, e, i, r, s, n) {
     Pb(n);
     const o = await t.open(e, {
         create: !1
@@ -25282,7 +25290,7 @@ async function qG(t, e, i, r, s, n) {
             u = te.alloc(Math.min(s.bufferSize, typeof l == "number" ? l : s.bufferSize)),
             d = s && typeof s.position == "number" ? s.position : 0,
             f = 0;
-        do c = await t.read(o, d, u.buffer, f, u.byteLength - f), d += c, f += c, a += c, typeof l == "number" && (l -= c), f === u.byteLength && (await i.write(r(u)), u = te.alloc(Math.min(s.bufferSize, typeof l == "number" ? l : s.bufferSize)), f = 0); while (c > 0 && (typeof l != "number" || l > 0) && Pb(n) && GG(a, s));
+        do c = await t.read(o, d, u.buffer, f, u.byteLength - f), d += c, f += c, a += c, typeof l == "number" && (l -= c), f === u.byteLength && (await i.write(r(u)), u = te.alloc(Math.min(s.bufferSize, typeof l == "number" ? l : s.bufferSize)), f = 0); while (c > 0 && (typeof l != "number" || l > 0) && Pb(n) && zG(a, s));
         if (f > 0) {
             let p = f;
             typeof l == "number" && (p = Math.min(f, l)), i.write(r(u.slice(0, p)))
@@ -25299,7 +25307,7 @@ function Pb(t) {
     return !0
 }
 
-function GG(t, e) {
+function zG(t, e) {
     if (typeof e?.limits?.size == "number" && t > e.limits.size) throw Wr(S(2067, null), pe.FileTooLarge);
     return !0
 }
@@ -25309,7 +25317,7 @@ var jx = g({
             ct(), je(), Pe(), pt()
         }
     }),
-    Hx, zG = g({
+    Hx, KG = g({
         "out-build/vs/platform/files/common/diskFileSystemProvider.js"() {
             "use strict";
             ti(), he(), je(), Q(), sr(), $(), xe(), Cc(), Y(), Hx = class extends H {
@@ -25338,7 +25346,7 @@ var jx = g({
                         filter: e.filter,
                         correlationId: e.correlationId
                     };
-                    if (UG(i)) {
+                    if (BG(i)) {
                         const r = this.options?.watcher?.recursive?.usePolling;
                         r === !0 ? i.pollingInterval = this.options?.watcher?.recursive?.pollingInterval ?? 5e3 : Array.isArray(r) && r.includes(i.path) && (i.pollingInterval = this.options?.watcher?.recursive?.pollingInterval ?? 5e3)
                     }
@@ -25391,12 +25399,12 @@ var jx = g({
         }
     });
 
-function KG(t) {
+function JG(t) {
     const e = t;
     return e && typeof e.type == "string" && typeof e.severity == "string"
 }
 
-function JG(t) {
+function YG(t) {
     const e = [];
     let i;
     try {
@@ -25412,19 +25420,19 @@ function JG(t) {
     }
 }
 
-function YG(t) {
+function XG(t) {
     if (!t) return t;
     const e = t.indexOf(`
 `);
     return e === -1 ? t : t.substring(0, e)
 }
 
-function XG(t, e) {
+function QG(t, e) {
     const {
         args: i,
         stack: r
-    } = JG(t), s = typeof i[0] == "string" && i.length === 1;
-    let n = YG(r);
+    } = YG(t), s = typeof i[0] == "string" && i.length === 1;
+    let n = XG(r);
     n && (n = `(${n.trim()})`);
     let o = [];
     if (typeof i[0] == "string" ? n && s ? o = [`%c[${e}] %c${i[0]} %c${n}`, Tc("blue"), Tc(""), Tc("grey")] : o = [`%c[${e}] %c${i[0]}`, Tc("blue"), Tc(""), ...i.slice(1)] : o = [`%c[${e}]%`, Tc("blue"), ...i], n && !s && o.push(n), typeof console[t.severity] != "function") throw new Error("Unknown console method");
@@ -25434,19 +25442,19 @@ function XG(t, e) {
 function Tc(t) {
     return `color: ${t}`
 }
-var QG = g({
+var ZG = g({
     "out-build/vs/base/common/console.js"() {
         "use strict";
         le()
     }
 });
 import {
-    fork as ZG
+    fork as ez
 } from "child_process";
-var qx, ez = g({
+var qx, tz = g({
         "out-build/vs/base/parts/ipc/node/ipc.cp.js"() {
             "use strict";
-            he(), ct(), Et(), QG(), je(), Q(), $(), Br(), Gu(), Xg(), or(), qx = class {
+            he(), ct(), Et(), ZG(), je(), Q(), $(), Br(), Gu(), Xg(), or(), qx = class {
                 constructor(t, e) {
                     this.modulePath = t, this.options = e, this.activeRequests = new Set, this.channels = new Map, this._onDidProcessExit = new x, this.onDidProcessExit = this._onDidProcessExit.event;
                     const i = e && e.timeout ? e.timeout : 6e4;
@@ -25499,11 +25507,11 @@ var qx, ez = g({
                         }, this.options && this.options.env && (e.env = {
                             ...e.env,
                             ...this.options.env
-                        }), this.options && this.options.freshExecArgv && (e.execArgv = []), this.options && typeof this.options.debug == "number" && (e.execArgv = ["--nolazy", "--inspect=" + this.options.debug]), this.options && typeof this.options.debugBrk == "number" && (e.execArgv = ["--nolazy", "--inspect-brk=" + this.options.debugBrk]), e.execArgv === void 0 && (e.execArgv = process.execArgv.filter(u => !/^--inspect(-brk)?=/.test(u)).filter(u => !u.startsWith("--vscode-"))), CD(e.env), this.child = ZG(this.modulePath, t, e);
+                        }), this.options && this.options.freshExecArgv && (e.execArgv = []), this.options && typeof this.options.debug == "number" && (e.execArgv = ["--nolazy", "--inspect=" + this.options.debug]), this.options && typeof this.options.debugBrk == "number" && (e.execArgv = ["--nolazy", "--inspect-brk=" + this.options.debugBrk]), e.execArgv === void 0 && (e.execArgv = process.execArgv.filter(u => !/^--inspect(-brk)?=/.test(u)).filter(u => !u.startsWith("--vscode-"))), CD(e.env), this.child = ez(this.modulePath, t, e);
                         const i = new x,
                             s = R.fromNodeEventEmitter(this.child, "message", u => u)(u => {
-                                if (KG(u)) {
-                                    XG(u, `IPC Library: ${this.options.serverName}`);
+                                if (JG(u)) {
+                                    QG(u, `IPC Library: ${this.options.serverName}`);
                                     return
                                 }
                                 i.fire(te.wrap(Buffer.from(u, "base64")))
@@ -25539,10 +25547,10 @@ var qx, ez = g({
             }
         }
     }),
-    Gx, tz = g({
+    Gx, iz = g({
         "out-build/vs/platform/files/node/watcher/watcherClient.js"() {
             "use strict";
-            Be(), or(), ez(), Cc(), Gx = class extends Bx {
+            Be(), or(), tz(), Cc(), Gx = class extends Bx {
                 constructor(t, e, i) {
                     super(t, e, i), this.init()
                 }
@@ -25565,10 +25573,10 @@ var qx, ez = g({
         }
     });
 import {
-    watchFile as iz,
-    unwatchFile as rz
+    watchFile as rz,
+    unwatchFile as sz
 } from "fs";
-var zx, sz = g({
+var zx, nz = g({
     "out-build/vs/platform/files/node/watcher/baseWatcher.js"() {
         "use strict";
         $(), Cc(), Q(), le(), he(), Es(), je(), zx = class extends H {
@@ -25636,7 +25644,7 @@ var zx, sz = g({
                 };
                 this.trace(`starting fs.watchFile() on ${t.path} (correlationId: ${t.correlationId})`);
                 try {
-                    iz(t.path, {
+                    rz(t.path, {
                         persistent: !1,
                         interval: this.suspendedWatchRequestPollingInterval
                     }, r)
@@ -25646,7 +25654,7 @@ var zx, sz = g({
                 e.add(ve(() => {
                     this.trace(`stopping fs.watchFile() on ${t.path} (correlationId: ${t.correlationId})`);
                     try {
-                        rz(t.path, r)
+                        sz(t.path, r)
                     } catch (s) {
                         this.warn(`fs.unwatchFile() failed with error ${s} on path ${t.path} (correlationId: ${t.correlationId})`)
                     }
@@ -25677,7 +25685,7 @@ var zx, sz = g({
                 this.verboseLogging && this.trace(`${t}${typeof e.correlationId=="number"?` <${e.correlationId}> `:""}`)
             }
             requestToString(t) {
-                return `${t.path} (excludes: ${t.excludes.length>0?t.excludes:"<none>"}, includes: ${t.includes&&t.includes.length>0?JSON.stringify(t.includes):"<all>"}, filter: ${jG(t.filter)}, correlationId: ${typeof t.correlationId=="number"?t.correlationId:"<none>"})`
+                return `${t.path} (excludes: ${t.excludes.length>0?t.excludes:"<none>"}, includes: ${t.includes&&t.includes.length>0?JSON.stringify(t.includes):"<all>"}, filter: ${HG(t.filter)}, correlationId: ${typeof t.correlationId=="number"?t.correlationId:"<none>"})`
             }
             async setVerboseLogging(t) {
                 this.verboseLogging = t
@@ -25686,10 +25694,10 @@ var zx, sz = g({
     }
 });
 import {
-    watch as nz,
-    promises as oz
+    watch as oz,
+    promises as az
 } from "fs";
-var Kx, az = g({
+var Kx, cz = g({
         "out-build/vs/platform/files/node/watcher/nodejs/nodejsWatcherLib.js"() {
             "use strict";
             he(), Et(), sr(), $(), Hp(), xe(), Z(), Pt(), le(), cb(), si(), Cc(), mo(), Kx = class c1 extends H {
@@ -25720,7 +25728,7 @@ var Kx, az = g({
                 }
                 async watch() {
                     try {
-                        const e = await oz.stat(this.request.path);
+                        const e = await az.stat(this.request.path);
                         if (this.cts.token.isCancellationRequested) return;
                         this._register(await this.doWatch(e.isDirectory()))
                     } catch (e) {
@@ -25764,7 +25772,7 @@ var Kx, az = g({
                     try {
                         const o = A.file(this.request.path),
                             a = ht(r),
-                            c = nz(r);
+                            c = oz(r);
                         n.add(ve(() => {
                             c.removeAllListeners(), c.close()
                         })), this.trace(`Started watching: '${r}'`);
@@ -25845,10 +25853,10 @@ var Kx, az = g({
                     this.cts.token.isCancellationRequested || (this.verboseLogging && this.traceWithCorrelation(`${e.type===1?"[ADDED]":e.type===2?"[DELETED]":"[CHANGED]"} ${e.resource.fsPath}`), !i && this.excludes.some(r => r(e.resource.fsPath)) ? this.verboseLogging && this.traceWithCorrelation(` >> ignored (excluded) ${e.resource.fsPath}`) : !i && this.includes && this.includes.length > 0 && !this.includes.some(r => r(e.resource.fsPath)) ? this.verboseLogging && this.traceWithCorrelation(` >> ignored (not included) ${e.resource.fsPath}`) : this.fileChangesAggregator.work(e))
                 }
                 handleFileChanges(e) {
-                    const i = BG(e),
+                    const i = $G(e),
                         r = [];
                     for (const n of i) {
-                        if (VG(n, this.filter)) {
+                        if (jG(n, this.filter)) {
                             this.verboseLogging && this.traceWithCorrelation(` >> ignored (filtered) ${n.resource.fsPath}`);
                             continue
                         }
@@ -25898,10 +25906,10 @@ var Kx, az = g({
             }
         }
     }),
-    Jx, cz = g({
+    Jx, lz = g({
         "out-build/vs/platform/files/node/watcher/nodejs/nodejsWatcher.js"() {
             "use strict";
-            Q(), Ib(), sz(), Z(), az(), he(), $(), Jx = class extends zx {
+            Q(), Ib(), nz(), Z(), cz(), he(), $(), Jx = class extends zx {
                 get watchers() {
                     return this._watchers.values()
                 }
@@ -25982,10 +25990,10 @@ var Kx, az = g({
             }
         }
     }),
-    Yx, lz = g({
+    Yx, uz = g({
         "out-build/vs/platform/files/node/watcher/nodejs/nodejsClient.js"() {
             "use strict";
-            Cc(), cz(), Yx = class extends Ux {
+            Cc(), lz(), Yx = class extends Ux {
                 constructor(t, e, i) {
                     super(t, e, i), this.init()
                 }
@@ -26001,7 +26009,7 @@ import {
 var ym, Db = g({
         "out-build/vs/platform/files/node/diskFileSystemProvider.js"() {
             "use strict";
-            he(), Ii(), ct(), Q(), sr(), cb(), $(), xe(), Z(), Pt(), Zl(), le(), si(), Pe(), pt(), jx(), zG(), tz(), lz(), ym = class gh extends Hx {
+            he(), Ii(), ct(), Q(), sr(), cb(), $(), xe(), Z(), Pt(), Zl(), le(), si(), Pe(), pt(), jx(), KG(), iz(), uz(), ym = class gh extends Hx {
                 static {
                     this.TRACE_LOG_RESOURCE_LOCKS = !1
                 }
@@ -26390,7 +26398,7 @@ var ym, Db = g({
             }
         }
     }),
-    Xx, Qx, uz = g({
+    Xx, Qx, dz = g({
         "out-build/vs/platform/files/node/diskFileSystemProviderServer.js"() {
             "use strict";
             Q(), Db(), $(), ct(), Zl(), Et(), Xx = class extends H {
@@ -26582,7 +26590,7 @@ var ym, Db = g({
             }
         }
     }),
-    Zx, dz = g({
+    Zx, hz = g({
         "out-build/vs/base/common/uriIpc.js"() {
             "use strict";
             ct(), le(), Zx = new class {
@@ -26602,12 +26610,12 @@ var ym, Db = g({
         }
     });
 import {
-    shell as hz
+    shell as fz
 } from "electron";
-var eR, tR, fz = g({
+var eR, tR, pz = g({
         "out-build/vs/platform/files/electron-main/diskFileSystemProviderServer.js"() {
             "use strict";
-            Pe(), Z(), le(), pt(), xe(), uz(), dz(), bo(), eR = class extends Xx {
+            Pe(), Z(), le(), pt(), xe(), dz(), hz(), bo(), eR = class extends Xx {
                 constructor(t, e, i) {
                     super(t, e), this.environmentService = i
                 }
@@ -26622,7 +26630,7 @@ var eR, tR, fz = g({
                     const r = this.transformIncoming(t, e),
                         s = Oi(r.fsPath);
                     try {
-                        await hz.trashItem(s)
+                        await fz.trashItem(s)
                     } catch (n) {
                         throw Wr(S(G ? 2068 : 2069, null, ht(s), Mr(n)), pe.Unknown)
                     }
@@ -26669,7 +26677,7 @@ var eR, tR, fz = g({
             }
         }
     }),
-    iR, Rb, pz = g({
+    iR, Rb, gz = g({
         "out-build/vs/platform/process/common/process.js"() {
             "use strict";
             X(), (function(t) {
@@ -26889,7 +26897,7 @@ function Cm(t) {
         for (const e of t.children) Cm(e)
 }
 
-function gz(t) {
+function mz(t) {
     if (!t?.workspaceEntries?.length) return [];
     const e = new Set,
         i = [];
@@ -26969,10 +26977,10 @@ function cR(t, e, i, r, s) {
     }
 }
 
-function mz(t) {
+function wz(t) {
     return typeof t != "object" || t === null ? !1 : "x" in t && "y" in t && "width" in t && "height" in t
 }
-var Lb, Nb, Jo, lR, Wb, Tm, wz = g({
+var Lb, Nb, Jo, lR, Wb, Tm, vz = g({
         "out-build/vs/platform/process/electron-main/processMainService.js"() {
             "use strict";
             sr(), $(), Be(), Z(), sR(), mr(), Pe(), QS(), AD(), ln(), Ze(), yc(), Y(), Ko(), od(), gt(), ad(), ar(), jo(), an(), km(), yt(), Nb = "issue.processExplorerWindowState", Jo = "__shared__", lR = "Shared", Wb = /bc-[a-f0-9\-]{8,}/i, Tm = class {
@@ -27026,7 +27034,7 @@ var Lb, Nb, Jo, lR, Wb, Tm, wz = g({
                         }
                         this.safeSend(e, "vscode:listProcessesResponse", i)
                     }), fe.on("vscode:listProcessesForGlass", async (e, i) => {
-                        const r = gz(i),
+                        const r = mz(i),
                             s = new Map;
                         for (const l of r) s.set(l.workspaceId, {
                             workspaceId: l.workspaceId,
@@ -27170,7 +27178,7 @@ var Lb, Nb, Jo, lR, Wb, Tm, wz = g({
                         const i = new Le,
                             r = i.add(this.protocolMainService.createIPCObjectUrl()),
                             s = this.stateService.getItem(Nb, void 0),
-                            n = mz(s) ? s : this.getWindowPosition(this.processExplorerParentWindow, 800, 500);
+                            n = wz(s) ? s : this.getWindowPosition(this.processExplorerParentWindow, 800, 500);
                         this.processExplorerWindow = this.createBrowserWindow(n, r, {
                             backgroundColor: e.styles.backgroundColor,
                             title: e.mode === "glassWorkspace" ? S(2182, null) : S(2183, null),
@@ -27372,13 +27380,13 @@ var Lb, Nb, Jo, lR, Wb, Tm, wz = g({
             }, Tm = Lb = __decorate([__param(1, Ke), __param(2, z), __param(3, XS), __param(4, Qg), __param(5, is), __param(6, Ms), __param(7, Pc), __param(8, Ye), __param(9, Ji), __param(10, Go), __param(11, mt)], Tm)
         }
     }),
-    Fb, vz = g({
+    Fb, yz = g({
         "out-build/vs/platform/power/common/power.js"() {
             "use strict";
             X(), Fb = J("powerMainService")
         }
     }),
-    uR, yz = g({
+    uR, Sz = g({
         "out-build/vs/platform/power/electron-main/powerChannel.js"() {
             "use strict";
             uR = class {
@@ -27413,7 +27421,7 @@ var Lb, Nb, Jo, lR, Wb, Tm, wz = g({
 import {
     powerSaveBlocker as Pm
 } from "electron";
-var Dm, Sz = g({
+var Dm, bz = g({
         "out-build/vs/platform/power/electron-main/powerMainService.js"() {
             "use strict";
             Y(), Dm = class {
@@ -27459,7 +27467,7 @@ var Dm, Sz = g({
             }, Dm = __decorate([__param(0, z)], Dm)
         }
     }),
-    dR, Ub, bz = g({
+    dR, Ub, _z = g({
         "out-build/vs/platform/extensions/common/extensionMonitor.js"() {
             "use strict";
             X(), (function(t) {
@@ -27467,7 +27475,7 @@ var Dm, Sz = g({
             })(dR || (dR = {})), Ub = J("extensionMonitorMainService")
         }
     }),
-    Bb, hR, fR, _z = g({
+    Bb, hR, fR, Ez = g({
         "out-build/vs/platform/profiling/common/profilingModel.js"() {
             "use strict";
             Bb = (t, e) => {
@@ -27572,15 +27580,15 @@ var Dm, Sz = g({
         }
     });
 import {
-    WebSocket as Ez
+    WebSocket as kz
 } from "ws";
 import {
-    cpus as kz
+    cpus as Iz
 } from "os";
 var $b, Dc, pR = g({
     "out-build/vs/platform/continuousProfiling/electron-main/extHostContinuousProfilingService.js"() {
         "use strict";
-        Et(), Ue(), Y(), _z(), pn(), Dc = class {
+        Et(), Ue(), Y(), Ez(), pn(), Dc = class {
             static {
                 $b = this
             }
@@ -27588,7 +27596,7 @@ var $b, Dc, pR = g({
                 this.WEBSOCKET_TIMEOUT_MS = 5e3
             }
             constructor(e, i, r, s) {
-                this.logService = e, this.requestService = i, this._targets = r, this._getExtensionIdFromPath = s, this._cpuCoreCount = kz().length, this._extHostConnections = new Map, this._nextRequestId = 1, this._pendingRequestsByExtHost = new Map, this._isProfiling = !1
+                this.logService = e, this.requestService = i, this._targets = r, this._getExtensionIdFromPath = s, this._cpuCoreCount = Iz().length, this._extHostConnections = new Map, this._nextRequestId = 1, this._pendingRequestsByExtHost = new Map, this._isProfiling = !1
             }
             async start() {
                 this._isProfiling || (this._extHostConnections.clear(), await Promise.all(this._targets.map(async ({
@@ -27597,7 +27605,7 @@ var $b, Dc, pR = g({
                 }) => {
                     const r = await this._discoverDebugUrl(i);
                     if ($l(r)) {
-                        const s = new Ez(r);
+                        const s = new kz(r);
                         this._extHostConnections.set(e, {
                             webSocket: s,
                             profilerState: {
@@ -27893,10 +27901,10 @@ import {
     exec as gR
 } from "child_process";
 
-function Iz(t) {
+function Cz(t) {
     return typeof t != "object" || t === null ? !1 : "x" in t && "y" in t && "width" in t && "height" in t
 }
-var dd, jb, xm, Cz = g({
+var dd, jb, xm, Tz = g({
         "out-build/vs/platform/extensions/electron-main/extensionMonitorMainService.js"() {
             "use strict";
             $(), Be(), Z(), mr(), Pe(), Ze(), yc(), Y(), od(), ad(), ar(), an(), pR(), le(), Ue(), Do(), pn(), $(), jb = "issue.extensionMonitorWindowState", xm = class extends H {
@@ -27980,7 +27988,7 @@ var dd, jb, xm, Cz = g({
                     const o = new Le,
                         a = o.add(this.protocolMainService.createIPCObjectUrl()),
                         c = this._stateService.getItem(`${jb}.${r}`, void 0),
-                        l = Iz(c) ? c : this._getWindowPosition(e, 800, 500);
+                        l = Cz(c) ? c : this._getWindowPosition(e, 800, 500);
                     let u;
                     try {
                         u = this._createBrowserWindow(l, a, {
@@ -28442,7 +28450,7 @@ var dd, jb, xm, Cz = g({
             }, xm = dd = __decorate([__param(1, Ke), __param(2, z), __param(3, Pc), __param(4, Ji), __param(5, Go), __param(6, fn)], xm)
         }
     }),
-    mR, Tz = g({
+    mR, Pz = g({
         "out-build/vs/platform/continuousProfiling/common/extHostContinuousProfilingService.js"() {
             "use strict";
             X(), mR = J("extHostContinuousProfilingService")
@@ -28457,7 +28465,7 @@ function wR(t) {
         keyboardLayoutInfo: i
     }
 }
-var Hb, Rm, Pz = g({
+var Hb, Rm, Dz = g({
     "out-build/vs/platform/keyboardLayout/electron-main/keyboardLayoutMainService.js"() {
         "use strict";
         Z(), Q(), $(), X(), It(), Hb = J("keyboardLayoutMainService"), Rm = class extends H {
@@ -28480,10 +28488,10 @@ var Hb, Rm, Pz = g({
     }
 });
 
-function Dz(t) {
+function xz(t) {
     return `window:${t}`
 }
-var xz = g({
+var Rz = g({
         "out-build/vs/platform/ipc/common/electronMainProcessRendererConnection.js"() {
             "use strict"
         }
@@ -28495,9 +28503,9 @@ var xz = g({
         }
     });
 import {
-    app as Rz
+    app as Az
 } from "electron";
-var yR, qb, Am, Az = g({
+var yR, qb, Am, Mz = g({
     "out-build/vs/platform/launch/electron-main/launchMainService.js"() {
         "use strict";
         ti(), Z(), le(), si(), et(), Hu(), X(), Y(), vR(), yt(), yR = "launchMainService", qb = J(yR), Am = class {
@@ -28505,7 +28513,7 @@ var yR, qb, Am, Az = g({
                 this.logService = e, this.windowsMainService = i, this.urlService = r, this.configurationService = s
             }
             async start(e, i) {
-                this.logService.trace("Received data from other instance: ", e, i), W && Rz.focus({
+                this.logService.trace("Received data from other instance: ", e, i), W && Az.focus({
                     steal: !0
                 });
                 const r = this.parseOpenUrl(e);
@@ -28617,7 +28625,7 @@ function _R(t) {
 function ER(t) {
     return !SR(t) && !bR(t) && !_R(t)
 }
-var Mz = g({
+var Oz = g({
         "out-build/vs/platform/menubar/common/menubar.js"() {
             "use strict"
         }
@@ -28923,7 +28931,7 @@ var vr, pd, Mm, Om = g({
     }
 });
 import {
-    app as Oz,
+    app as Lz,
     BrowserWindow as Lm,
     Menu as Ht,
     MenuItem as Xe
@@ -28934,10 +28942,10 @@ function Ls() {
         type: "separator"
     })
 }
-var Nm, gd, Wm, Lz = g({
+var Nm, gd, Wm, Nz = g({
         "out-build/vs/platform/menubar/electron-main/menubar.js"() {
             "use strict";
-            he(), Et(), Rn(), Z(), le(), Pe(), Ku(), et(), Ze(), It(), Y(), Mz(), Ko(), gt(), ar(), Si(), jn(), an(), yt(), Om(), $(), gd = "menu", Wm = class extends H {
+            he(), Et(), Rn(), Z(), le(), Pe(), Ku(), et(), Ze(), It(), Y(), Oz(), Ko(), gt(), ar(), Si(), jn(), an(), yt(), Om(), $(), gd = "menu", Wm = class extends H {
                 static {
                     Nm = this
                 }
@@ -29059,7 +29067,7 @@ var Nm, gd, Wm, Lz = g({
                             click: () => this.windowsMainService.openEmptyWindow({
                                 context: 1
                             })
-                        })), Oz.dock.setMenu(n)
+                        })), Lz.dock.setMenu(n)
                     }
                     if (this.shouldDrawMenu("File")) {
                         const n = new Ht,
@@ -29462,10 +29470,10 @@ var Nm, gd, Wm, Lz = g({
             }, Wm = Nm = __decorate([__param(0, Yo), __param(1, nt), __param(2, mt), __param(3, Ke), __param(4, yi), __param(5, pd), __param(6, Ji), __param(7, it), __param(8, z), __param(9, Ms), __param(10, Ye), __param(11, qo)], Wm)
         }
     }),
-    Gb, Fm, Nz = g({
+    Gb, Fm, Wz = g({
         "out-build/vs/platform/menubar/electron-main/menubarMainService.js"() {
             "use strict";
-            X(), It(), Y(), Lz(), $(), Gb = J("menubarMainService"), Fm = class extends H {
+            X(), It(), Y(), Nz(), $(), Gb = J("menubarMainService"), Fm = class extends H {
                 constructor(e, i, r) {
                     super(), this.instantiationService = e, this.lifecycleMainService = i, this.logService = r, this.menubar = this.installMenuBarAfterWindowOpen()
                 }
@@ -29519,7 +29527,7 @@ var Nm, gd, Wm, Lz = g({
             }
         }
     });
-async function Wz(t, e, i, r, s) {
+async function Fz(t, e, i, r, s) {
     try {
         const n = await import("@vscode/spdlog");
         n.setFlushOn(wn.Trace);
@@ -29579,7 +29587,7 @@ function DR(t, e) {
             throw new Error(`Invalid log level ${e}`)
     }
 }
-var wn, xR, Fz = g({
+var wn, xR, Uz = g({
         "out-build/vs/platform/log/node/spdlogLog.js"() {
             "use strict";
             pt(), Y(), (function(t) {
@@ -29593,7 +29601,7 @@ var wn, xR, Fz = g({
                 async _createSpdLogLogger(t, e, i, r) {
                     const s = i ? 6 : 1,
                         n = 30 / s * Ao.MB,
-                        o = await Wz(t, e, n, s, r);
+                        o = await Fz(t, e, n, s, r);
                     if (o) {
                         this._logger = o, DR(this._logger, this.getLevel());
                         for (const {
@@ -29625,10 +29633,10 @@ var wn, xR, Fz = g({
             }
         }
     }),
-    RR, Uz = g({
+    RR, Bz = g({
         "out-build/vs/platform/log/node/loggerService.js"() {
             "use strict";
-            Li(), Y(), Fz(), RR = class extends U5 {
+            Li(), Y(), Uz(), RR = class extends U5 {
                 doCreateLogger(t, e, i) {
                     return new xR(ni(), t.fsPath, !i?.donotRotate, !!i?.donotUseFormatters, e)
                 }
@@ -29638,7 +29646,7 @@ var wn, xR, Fz = g({
     qn, AR, Qo = g({
         "out-build/vs/platform/log/electron-main/loggerService.js"() {
             "use strict";
-            Ii(), Q(), X(), Y(), Uz(), qn = sc, AR = class extends RR {
+            Ii(), Q(), X(), Y(), Bz(), qn = sc, AR = class extends RR {
                 constructor() {
                     super(...arguments), this.loggerResourcesByWindow = new hi
                 }
@@ -29687,11 +29695,11 @@ var wn, xR, Fz = g({
         }
     });
 
-function Bz(t) {
+function $z(t) {
     if (Wa === 2 && /^penguin(\.|$)/i.test(t)) return "chromebook"
 }
 
-function $z(t, e, i, r, s, n, o, a, c, l, u) {
+function Vz(t, e, i, r, s, n, o, a, c, l, u) {
     const d = Object.create(null);
     d["common.machineId"] = n, d["common.macMachineId"] = o, d["common.sqmId"] = a, d["common.devDeviceId"] = c, d.sessionID = ni() + Date.now(), d.commitHash = r, d.version = s, d["common.platformVersion"] = (t || "").replace(/^(\d+)(\.\d+)?(\.\d+)?(.*)/, "$1$2$3"), d["common.platform"] = FC(Wa), d["common.nodePlatform"] = Hy, d["common.nodeArch"] = i, d["common.product"] = u || "desktop", l && (d["common.msftInternal"] = l);
     let f = 0;
@@ -29710,11 +29718,11 @@ function $z(t, e, i, r, s, n, o, a, c, l, u) {
             enumerable: !0
         }
     }), Py && (d["common.snap"] = "true");
-    const m = Bz(e);
+    const m = $z(e);
     return m && (d["common.platformDetail"] = m), d
 }
 
-function Vz(t) {
+function jz(t) {
     const e = Dr.USERDNSDOMAIN;
     if (!e) return !1;
     const i = e.toLowerCase();
@@ -29743,17 +29751,17 @@ function Jb(t) {
     }
 }
 
-function jz(t, e) {
+function Hz(t, e) {
     const i = t.msftInternalDomains || [],
         r = e.getValue("telemetry.internalTesting");
-    return Vz(i) || r
+    return jz(i) || r
 }
 
-function Hz(t) {
+function qz(t) {
     return [t.appRoot, t.extensionsPath, t.userHome.fsPath, t.tmpDir.fsPath, t.userDataPath]
 }
 
-function qz(t, e) {
+function Gz(t, e) {
     if (!t || !t.includes("/") && !t.includes("\\")) return t;
     let i = t;
     const r = [];
@@ -29775,7 +29783,7 @@ function qz(t, e) {
     return o < t.length && (i += t.substr(o)), i
 }
 
-function Gz(t) {
+function zz(t) {
     if (!t) return t;
     const e = [{
         label: "Google API Key",
@@ -29809,13 +29817,13 @@ function LR(t, e) {
         if (i instanceof NR || Object.hasOwnProperty.call(i, "isTrustedTelemetryValue")) return i.value;
         if (typeof i == "string") {
             let r = i.replaceAll("%20", " ");
-            r = qz(r, e);
+            r = Gz(r, e);
             for (const s of e) r = r.replace(s, "");
-            return r = Gz(r), r
+            return r = zz(r), r
         }
     })
 }
-var NR, WR, xc, FR, zz, Gn = g({
+var NR, WR, xc, FR, Kz, Gn = g({
         "out-build/vs/platform/telemetry/common/telemetryUtils.js"() {
             "use strict";
             Br(), Ue(), Pe(), Vu(), MR(), Si(), NR = class {
@@ -29833,13 +29841,13 @@ var NR, WR, xc, FR, zz, Gn = g({
                 publicLogError2() {}
                 publicLogCapture() {}
                 setExperimentProperty() {}
-            }, xc = new WR, FR = "telemetry", zz = {
+            }, xc = new WR, FR = "telemetry", Kz = {
                 id: FR,
                 name: S(2260, null)
             }
         }
     }),
-    Um, Yb, Xb, Kz = g({
+    Um, Yb, Xb, Jz = g({
         "out-build/vs/platform/sharedProcess/common/sharedProcess.js"() {
             "use strict";
             Um = {
@@ -29855,10 +29863,10 @@ var NR, WR, xc, FR, zz, Gn = g({
             }
         }
     }),
-    Bm, Jz = g({
+    Bm, Yz = g({
         "out-build/vs/platform/sharedProcess/electron-main/sharedProcess.js"() {
             "use strict";
-            mr(), he(), $(), Ze(), It(), Y(), ts(), ss(), Qo(), jo(), Gn(), z0(), Ue(), Kz(), Q(), Bm = class extends H {
+            mr(), he(), $(), Ze(), It(), Y(), ts(), ss(), Qo(), jo(), Gn(), z0(), Ue(), Jz(), Q(), Bm = class extends H {
                 constructor(e, i, r, s, n, o, a, c, l, u) {
                     super(), this.machineId = e, this.macMachineId = i, this.sqmId = r, this.devDeviceId = s, this.environmentMainService = n, this.userDataProfilesService = o, this.lifecycleMainService = a, this.logService = c, this.loggerMainService = l, this.policyService = u, this.firstWindowConnectionBarrier = new qa, this.utilityProcess = void 0, this.utilityProcessLogListener = void 0, this._onDidCrash = this._register(new x), this.onDidCrash = this._onDidCrash.event, this._whenReady = void 0, this._whenIpcReady = void 0, this.registerListeners()
                 }
@@ -29927,13 +29935,13 @@ var NR, WR, xc, FR, zz, Gn = g({
         }
     });
 
-function Yz(t) {
+function Xz(t) {
     if (typeof t != "object" || t === null) return !1;
     const e = t;
     return e.type === md.initFailed && typeof e.error == "string"
 }
 
-function Xz(t, e, i) {
+function Qz(t, e, i) {
     const s = [...t.filter(c => e - c <= e_), e];
     if (s.length > i.restartMaxPer10Min) return {
         restartAfterMs: null,
@@ -29947,7 +29955,7 @@ function Xz(t, e, i) {
     }
 }
 
-function Qz(t, e, i, r) {
+function Zz(t, e, i, r) {
     return new Promise((s, n) => {
         let o = !1;
         const a = setTimeout(() => {
@@ -29960,7 +29968,7 @@ function Qz(t, e, i, r) {
         })
     })
 }
-var md, Qb, Zb, $m, e_, Zz = g({
+var md, Qb, Zb, $m, e_, eK = g({
         "out-build/vs/platform/mcpProcess/common/mcpProcess.js"() {
             "use strict";
             md = {
@@ -29981,10 +29989,10 @@ var md, Qb, Zb, $m, e_, Zz = g({
             }, e_ = 600 * 1e3
         }
     }),
-    Vm, eK = g({
+    Vm, tK = g({
         "out-build/vs/platform/mcpProcess/electron-main/mcpProcess.js"() {
             "use strict";
-            mr(), he(), je(), $(), Q(), Ze(), It(), Y(), ts(), ss(), Qo(), jo(), Gn(), Ue(), Zz(), Vm = class extends H {
+            mr(), he(), je(), $(), Q(), Ze(), It(), Y(), ts(), ss(), Qo(), jo(), Gn(), Ue(), eK(), Vm = class extends H {
                 get utilityProcess() {
                     return this.utilityProcessRef.value
                 }
@@ -30048,7 +30056,7 @@ var md, Qb, Zb, $m, e_, Zz = g({
                 async waitForColdStartSignal(e, i) {
                     const r = this.options.runtimeConfig ?? $m;
                     let s = !1;
-                    const n = Qz(e.p, r.coldStartTimeoutMs, `[McpProcess] timed out waiting for ${i} after ${r.coldStartTimeoutMs}ms`, () => s = !0);
+                    const n = Zz(e.p, r.coldStartTimeoutMs, `[McpProcess] timed out waiting for ${i} after ${r.coldStartTimeoutMs}ms`, () => s = !0);
                     try {
                         await n
                     } catch (o) {
@@ -30067,7 +30075,7 @@ var md, Qb, Zb, $m, e_, Zz = g({
                     this._crashHandled = !1, this.spawnStartedAtMs = Date.now();
                     const e = new dn(this.logService, xc, this.lifecycleMainService);
                     this.utilityProcessRef.value = e, this.utilityProcessLogListener?.dispose(), this.utilityProcessLogListener = e.onMessage(i => {
-                        Yz(i) ? (this.logService.error(i.error), this.pendingInitDone?.error(new Error(i.error))) : typeof i == "object" && i !== null && "warning" in i && typeof i.warning == "string" && this.logService.warn(i.warning)
+                        Xz(i) ? (this.logService.error(i.error), this.pendingInitDone?.error(new Error(i.error))) : typeof i == "object" && i !== null && "warning" in i && typeof i.warning == "string" && this.logService.warn(i.warning)
                     }), e.start({
                         processTitle: "mcp-process",
                         type: "mcp-process",
@@ -30083,7 +30091,7 @@ var md, Qb, Zb, $m, e_, Zz = g({
                     this._crashHandled = !0, this.restartCount++, this.clearRestartBackoff(), this.pendingIpcReady?.cancel(), this.pendingIpcReady = void 0, this.pendingInitDone?.cancel(), this.pendingInitDone = void 0, this.utilityProcessLogListener?.dispose(), this.utilityProcessLogListener = void 0, this.utilityProcessCrashListener?.dispose(), this.utilityProcessCrashListener = void 0;
                     const i = this.utilityProcess,
                         r = this.options.runtimeConfig ?? $m,
-                        s = Xz(this.recentRestartTimestampsMs, Date.now(), r);
+                        s = Qz(this.recentRestartTimestampsMs, Date.now(), r);
                     if (this.recentRestartTimestampsMs = s.recentTimestampsMs, this._whenIpcReady = void 0, this._whenReady = void 0, i?.kill(), this.utilityProcessRef.clear(), s.restartAfterMs === null) {
                         this.gaveUp = !0, this.logService.error(`[McpProcess] giving up after ${s.recentTimestampsMs.length} crashes within ${e_}ms; falling back to legacy in-window MCP`), this._onDidGiveUp.fire();
                         return
@@ -30135,16 +30143,16 @@ var md, Qb, Zb, $m, e_, Zz = g({
 function jm(t) {
     return typeof t == "object" && t !== null && "prefix" in t && typeof t.prefix == "string"
 }
-var tK = g({
+var iK = g({
         "out-build/vs/platform/storage/common/storageIpc.js"() {
             "use strict";
             Qa(), Q(), $(), ct()
         }
     }),
-    BR, iK = g({
+    BR, rK = g({
         "out-build/vs/platform/storage/electron-main/storageIpc.js"() {
             "use strict";
-            Q(), $(), ct(), Gp(), tK(), xi(), BR = class QL extends H {
+            Q(), $(), ct(), Gp(), iK(), xi(), BR = class QL extends H {
                 static {
                     this.STORAGE_CHANGE_DEBOUNCE_TIME = 100
                 }
@@ -30308,8 +30316,8 @@ var tK = g({
             }, i_ = J("shutdownHangWatchdogService")
         }
     });
-import rK from "electron";
-var HR, Hm, sK = g({
+import sK from "electron";
+var HR, Hm, nK = g({
         "out-build/vs/platform/shutdown/electron-main/shutdownHangWatchdogService.js"() {
             "use strict";
             Al(), $(), Y(), As(), jR(), HR = 2e3, Hm = class extends H {
@@ -30369,7 +30377,7 @@ var HR, Hm, sK = g({
                                     this.logService.warn("[ShutdownHangWatchdog] Sentry flush threw before force-exit", l)
                                 }
                                 try {
-                                    rK.app.exit(99)
+                                    sK.app.exit(99)
                                 } catch (l) {
                                     this.logService.error("[ShutdownHangWatchdog] electron.app.exit threw", l)
                                 }
@@ -30468,7 +30476,7 @@ var HR, Hm, sK = g({
             }, Hm = __decorate([__param(0, Rs), __param(1, z)], Hm)
         }
     }),
-    qR, nK = g({
+    qR, oK = g({
         "out-build/vs/platform/telemetry/common/telemetryIpc.js"() {
             "use strict";
             qR = class {
@@ -30500,7 +30508,7 @@ var HR, Hm, sK = g({
         }
     });
 
-function oK() {
+function aK() {
     const t = S(2253, null, Os.nameLong),
         e = S(2254, null, "https://cursor.com/privacy", "https://cursor.com/security"),
         i = Ks ? "" : S(2255, null);
@@ -30508,7 +30516,7 @@ function oK() {
 ${t} ${e} ${i}
 `
 }
-var qm, GR, aK = g({
+var qm, GR, cK = g({
         "out-build/vs/platform/telemetry/common/telemetryService.js"() {
             "use strict";
             $(), Br(), Z(), pi(), Pe(), et(), yo(), od(), gt(), Zs(), Si(), Gn(), qm = class {
@@ -30583,7 +30591,7 @@ var qm, GR, aK = g({
                         type: "string",
                         enum: ["all", "off"],
                         enumDescriptions: ["Send OS-level crash reports.", "Disable crash reporting."],
-                        markdownDescription: oK(),
+                        markdownDescription: aK(),
                         default: "all",
                         restricted: !0,
                         scope: 1,
@@ -30607,7 +30615,7 @@ var qm, GR, aK = g({
             })
         }
     }),
-    zR, cK = g({
+    zR, lK = g({
         "out-build/vs/platform/update/common/updateIpc.js"() {
             "use strict";
             Q(), $(), jn(), zR = class {
@@ -30653,23 +30661,23 @@ function r_(t) {
     const i = t.getValue("update.releaseTrack");
     return i === "dev" || i === "dogfood" ? "silentlyApplyOnQuit" : "default"
 }
-var lK = g({
+var uK = g({
     "out-build/vs/platform/update/common/updateMode.js"() {
         "use strict";
         et()
     }
 });
 import * as KR from "original-fs";
-import uK from "path";
-import dK from "os";
+import dK from "path";
+import hK from "os";
 
-function hK(t) {
+function fK(t) {
     return JR.includes(t)
 }
 var Dt, JR, Ac, s_ = g({
         "out-build/vs/platform/update/electron-main/abstractUpdateService.js"() {
             "use strict";
-            he(), Et(), Q(), et(), Ze(), It(), Y(), gt(), pn(), jn(), lK(), As(), $(), JR = ["stable", "prerelease", "dev", "dogfood"], Ac = class extends H {
+            he(), Et(), Q(), et(), Ze(), It(), Y(), gt(), pn(), jn(), uK(), As(), $(), JR = ["stable", "prerelease", "dev", "dogfood"], Ac = class extends H {
                 static {
                     Dt = this
                 }
@@ -31010,7 +31018,7 @@ var Dt, JR, Ac, s_ = g({
                 getReleaseTrack() {
                     try {
                         const e = this.configurationService.getValue("update.releaseTrack");
-                        if (hK(e)) return e;
+                        if (fK(e)) return e;
                         this.logService.warn("unknown release track", e)
                     } catch (e) {
                         this.logService.warn("could not fetch release track - using default", e)
@@ -31026,7 +31034,7 @@ var Dt, JR, Ac, s_ = g({
                 }
                 updateFileLocation() {
                     const e = this.productService.dataFolderName ?? ".cursor";
-                    return uK.join(dK.homedir(), e, "shouldUpdate")
+                    return dK.join(hK.homedir(), e, "shouldUpdate")
                 }
                 storeEvent(e) {
                     const i = this.applicationStorageMainService.get(fd, -1, "[]"),
@@ -31044,7 +31052,7 @@ var Dt, JR, Ac, s_ = g({
         }
     });
 import * as Ns from "electron";
-var zn, fK = g({
+var zn, pK = g({
     "out-build/vs/platform/update/electron-main/updateService.darwin.js"() {
         "use strict";
         Eo(), Q(), Es(), $(), et(), Ze(), It(), Y(), gt(), pn(), Si(), jn(), s_(), As(), o_(), zn = class extends Ac {
@@ -31161,11 +31169,11 @@ var zn, fK = g({
         }, __decorate([be], zn.prototype, "onRawError", null), __decorate([be], zn.prototype, "onRawUpdateNotAvailable", null), __decorate([be], zn.prototype, "onRawUpdateAvailable", null), __decorate([be], zn.prototype, "onRawUpdateDownloaded", null), zn = __decorate([__param(1, it), __param(2, nt), __param(3, yi), __param(4, Ke), __param(5, fn), __param(6, z), __param(7, Ye), __param(8, Rs)], zn)
     }
 });
-import pK from "node:path";
+import gK from "node:path";
 import {
-    spawn as gK
+    spawn as mK
 } from "node:child_process";
-var Gm, mK = g({
+var Gm, wK = g({
     "out-build/vs/platform/update/electron-main/updateService.linux.js"() {
         "use strict";
         Et(), et(), Ze(), It(), Y(), Ko(), gt(), pn(), jn(), s_(), As(), o_(), Gm = class extends Ac {
@@ -31238,8 +31246,8 @@ var Gm, mK = g({
                 }
                 const e = process.env.APPIMAGE;
                 this.logService.debug("update#quitAndInstall(): updating appImage at " + e);
-                const r = `${pK.join(process.resourcesPath,"appimageupdatetool.AppImage")} -u "zsync|${this.state.update.url}" -O "${e}"; ${e} &`;
-                this.logService.info("update#quitAndInstall(): starting updater with command " + r), gK(r, {
+                const r = `${gK.join(process.resourcesPath,"appimageupdatetool.AppImage")} -u "zsync|${this.state.update.url}" -O "${e}"; ${e} &`;
+                this.logService.info("update#quitAndInstall(): starting updater with command " + r), mK(r, {
                     detached: !0,
                     stdio: "inherit",
                     shell: !0
@@ -31249,13 +31257,13 @@ var Gm, mK = g({
     }
 });
 import {
-    spawn as wK
+    spawn as vK
 } from "child_process";
 import {
-    realpath as vK,
-    watch as yK
+    realpath as yK,
+    watch as SK
 } from "fs";
-var zm, Km, SK = g({
+var zm, Km, bK = g({
     "out-build/vs/platform/update/electron-main/updateService.snap.js"() {
         "use strict";
         he(), Q(), xe(), Ze(), It(), Y(), jn(), zm = class {
@@ -31304,7 +31312,7 @@ var zm, Km, SK = g({
         }, zm = __decorate([__param(0, it), __param(1, Ke), __param(2, z)], zm), Km = class extends zm {
             constructor(e, i, r, s, n) {
                 super(r, s, n), this.snap = e, this.snapRevision = i;
-                const o = yK(Tt(this.snap)),
+                const o = SK(Tt(this.snap)),
                     a = R.fromNodeEventEmitter(o, "change", (d, f) => f),
                     c = R.filter(a, d => d === "current"),
                     u = R.debounce(c, (d, f) => f, 2e3)(() => this.checkForUpdates(!1));
@@ -31322,14 +31330,14 @@ var zm, Km, SK = g({
                 })
             }
             doQuitAndInstall() {
-                this.logService.trace("update#quitAndInstall(): running raw#quitAndInstall()"), wK("sleep 3 && " + ht(process.argv[0]), {
+                this.logService.trace("update#quitAndInstall(): running raw#quitAndInstall()"), vK("sleep 3 && " + ht(process.argv[0]), {
                     shell: !0,
                     detached: !0,
                     stdio: "ignore"
                 })
             }
             async isUpdateAvailable() {
-                const e = await new Promise((r, s) => vK(`${Tt(this.snap)}/current`, (n, o) => n ? s(n) : r(o))),
+                const e = await new Promise((r, s) => yK(`${Tt(this.snap)}/current`, (n, o) => n ? s(n) : r(o))),
                     i = ht(e);
                 return this.snapRevision !== i
             }
@@ -31341,12 +31349,12 @@ var zm, Km, SK = g({
         }, Km = __decorate([__param(2, it), __param(3, Ke), __param(4, z)], Km)
     }
 });
-import * as bK from "crypto";
-import * as _K from "fs";
-async function EK(t, e) {
+import * as _K from "crypto";
+import * as EK from "fs";
+async function kK(t, e) {
     if (await new Promise((s, n) => {
-            const o = _K.createReadStream(t),
-                a = bK.createHash("sha256");
+            const o = EK.createReadStream(t),
+                a = _K.createHash("sha256");
             o.pipe(a);
             const c = Ep((l, u) => {
                 o.removeAllListeners(), a.removeAllListeners(), l ? n(l) : s(u)
@@ -31354,7 +31362,7 @@ async function EK(t, e) {
             o.once("error", c), o.once("end", c), a.once("error", c), a.once("data", l => c(void 0, l.toString("hex")))
         }) !== e) throw new Error("Hash mismatch")
 }
-var kK = g({
+var IK = g({
     "out-build/vs/base/node/crypto.js"() {
         "use strict";
         kp()
@@ -31365,9 +31373,9 @@ import {
 } from "child_process";
 import * as Jm from "fs";
 import {
-    tmpdir as IK
+    tmpdir as CK
 } from "os";
-async function CK(t, e = 1e3) {
+async function TK(t, e = 1e3) {
     for (; !t();) await zi(e)
 }
 
@@ -31380,13 +31388,13 @@ function ea() {
         }
     }) ? 0 : 1), Ym
 }
-var Ym, wd, TK = g({
+var Ym, wd, PK = g({
         "out-build/vs/platform/update/electron-main/updateService.win32.js"() {
             "use strict";
-            he(), Et(), Eo(), Es(), xe(), le(), kK(), si(), et(), Ze(), pt(), It(), Y(), Ko(), gt(), pn(), Si(), jn(), s_(), As(), o_(), Ym = void 0, wd = class extends Ac {
+            he(), Et(), Eo(), Es(), xe(), le(), IK(), si(), et(), Ze(), pt(), It(), Y(), Ko(), gt(), pn(), Si(), jn(), s_(), As(), o_(), Ym = void 0, wd = class extends Ac {
                 get cachePath() {
                     const e = Math.random().toString(36).substring(2, 15),
-                        i = q(IK(), `vscode-${this.productService.quality}-${this.productService.target}-${process.arch}-${e}`);
+                        i = q(CK(), `vscode-${this.productService.quality}-${this.productService.target}-${process.arch}-${e}`);
                     return Jm.promises.mkdir(i, {
                         recursive: !0
                     }).then(() => i)
@@ -31444,7 +31452,7 @@ var Ym, wd, TK = g({
                                 if (!pm(c)) throw new Error("Server returned " + c.res.statusCode);
                                 if (fx(c)) throw new Error("Server returned no content");
                                 return c
-                            }).then(c => this.fileService.writeFile(A.file(a), c.stream)).then(r.sha256hash ? () => EK(a, r.sha256hash) : () => {}).then(() => ce.rename(a, n, !1)).then(() => n)
+                            }).then(c => this.fileService.writeFile(A.file(a), c.stream)).then(r.sha256hash ? () => kK(a, r.sha256hash) : () => {}).then(() => ce.rename(a, n, !1)).then(() => n)
                         })).then(n => {
                             this.availableUpdate = {
                                 packagePath: n
@@ -31490,7 +31498,7 @@ var Ym, wd, TK = g({
                     });
                     const s = `${this.productService.win32MutexName}-ready`,
                         n = await import("@vscode/windows-mutex");
-                    CK(() => n.isActive(s)).then(() => {
+                    TK(() => n.isActive(s)).then(() => {
                         this.setState(Ee.Ready(e)), this.productService.target !== "user" && this.quitAndInstall()
                     })
                 }
@@ -31521,7 +31529,7 @@ var Ym, wd, TK = g({
             }, __decorate([be], wd.prototype, "cachePath", null), wd = __decorate([__param(1, it), __param(2, nt), __param(3, yi), __param(4, Ke), __param(5, fn), __param(6, z), __param(7, At), __param(8, Ms), __param(9, Ye), __param(10, Rs)], wd)
         }
     }),
-    QR, ZR, PK = g({
+    QR, ZR, DK = g({
         "out-build/vs/platform/url/common/urlIpc.js"() {
             "use strict";
             le(), QR = class {
@@ -31559,7 +31567,7 @@ var Ym, wd, TK = g({
             }
         }
     }),
-    e9, Xm, DK = g({
+    e9, Xm, xK = g({
         "out-build/vs/platform/url/common/urlService.js"() {
             "use strict";
             he(), $(), le(), gt(), e9 = class extends H {
@@ -31603,7 +31611,7 @@ var Ym, wd, TK = g({
 import {
     app as t9
 } from "electron";
-var i9, xK = g({
+var i9, RK = g({
         "out-build/vs/platform/url/electron-main/electronUrlListener.js"() {
             "use strict";
             he(), Q(), $(), Z(), le(), i9 = class extends H {
@@ -31648,16 +31656,16 @@ var i9, xK = g({
             }
         }
     }),
-    a_, RK = g({
+    a_, AK = g({
         "out-build/vs/platform/webview/common/webviewManagerService.js"() {
             "use strict";
             X(), a_ = J("webviewManagerService")
         }
     });
 import {
-    protocol as AK
+    protocol as MK
 } from "electron";
-var r9, MK = g({
+var r9, OK = g({
     "out-build/vs/platform/webview/electron-main/webviewProtocolProvider.js"() {
         "use strict";
         $(), Be(), le(), r9 = class ZL extends H {
@@ -31671,7 +31679,7 @@ var r9, MK = g({
             constructor() {
                 super();
                 const e = this.handleWebviewRequest.bind(this);
-                AK.registerFileProtocol(F.vscodeWebview, e)
+                MK.registerFileProtocol(F.vscodeWebview, e)
             }
             handleWebviewRequest(e, i) {
                 try {
@@ -31699,12 +31707,12 @@ var r9, MK = g({
     }
 });
 import {
-    webContents as OK
+    webContents as LK
 } from "electron";
-var Qm, LK = g({
+var Qm, NK = g({
         "out-build/vs/platform/webview/electron-main/webviewMainService.js"() {
             "use strict";
-            Q(), $(), MK(), yt(), Qm = class extends H {
+            Q(), $(), OK(), yt(), Qm = class extends H {
                 constructor(e) {
                     super(), this.windowsMainService = e, this._onFoundInFrame = this._register(new x), this.onFoundInFrame = this._onFoundInFrame.event, this._register(new r9)
                 }
@@ -31722,7 +31730,7 @@ var Qm, LK = g({
                         const {
                             webContentsId: s
                         } = e;
-                        if (r = OK.fromId(s), !r) throw new Error(`Invalid webContentsId: ${s}`)
+                        if (r = LK.fromId(s), !r) throw new Error(`Invalid webContentsId: ${s}`)
                     }
                     r.isDestroyed() || r.setIgnoreMenuShortcuts(i)
                 }
@@ -31771,7 +31779,7 @@ function Zm(t) {
     return typeof e != "string" ? t.toString() : e[0].toLowerCase() + e.substring(1).replace(/[A-Z]/g, i => "_" + i.toLowerCase())
 }
 
-function NK(t) {
+function WK(t) {
     if (!ew) {
         ew = {};
         for (const e of Object.values(Ae)) typeof e != "string" && (ew[Zm(e)] = e)
@@ -31785,7 +31793,7 @@ var ew, s9 = g({
     }
 });
 
-function WK(t, e) {
+function FK(t, e) {
     return t.length ? `[${Zm(e)}] ${t}` : `[${Zm(e)}]`
 }
 var ut, St = g({
@@ -31793,7 +31801,7 @@ var ut, St = g({
         "use strict";
         lt(), s9(), ut = class Yc extends Error {
             constructor(e, i = Ae.Unknown, r, s, n) {
-                super(WK(e, i)), this.name = "ConnectError", Object.setPrototypeOf(this, new.target.prototype), this.rawMessage = e, this.code = i, this.metadata = new Headers(r ?? {}), this.details = s ?? [], this.cause = n
+                super(FK(e, i)), this.name = "ConnectError", Object.setPrototypeOf(this, new.target.prototype), this.rawMessage = e, this.code = i, this.metadata = new Headers(r ?? {}), this.details = s ?? [], this.cause = n
             }
             static from(e, i = Ae.Unknown) {
                 return e instanceof Yc ? e : e instanceof Error ? e.name == "AbortError" ? new Yc(e.message, Ae.Canceled) : new Yc(e.message, i, void 0, void 0, e) : new Yc(String(e), i, void 0, void 0, e)
@@ -31880,7 +31888,7 @@ function f9(t, e, i) {
     }
 }
 
-function FK(t, e, i) {
+function UK(t, e, i) {
     const r = {};
     for (const s of e) {
         const n = p9(s);
@@ -31961,7 +31969,7 @@ var l_, u_ = g({
         }
     });
 
-function UK(t, e, i, r) {
+function BK(t, e, i, r) {
     const s = r?.localName ?? e.substring(e.lastIndexOf(".") + 1),
         n = {
             [s]: function(o) {
@@ -31986,14 +31994,14 @@ function UK(t, e, i, r) {
         }
     }), n
 }
-var BK = g({
+var $K = g({
     "out-build/external/bufbuild/protobuf/private/message-type.js"() {
         "use strict";
         Xi()
     }
 });
 
-function $K() {
+function VK() {
     let t = 0,
         e = 0;
     for (let r = 0; r < 28; r += 7) {
@@ -32043,7 +32051,7 @@ function g9(t) {
     return n(-24, -18), n(-18, -12), n(-12, -6), n(-6), e ? w9(r, s) : h_(r, s)
 }
 
-function VK(t, e) {
+function jK(t, e) {
     let i = h_(t, e);
     const r = i.hi & 2147483648;
     r && (i = w9(i.lo, i.hi));
@@ -32055,7 +32063,7 @@ function m9(t, e) {
     if ({
             lo: t,
             hi: e
-        } = jK(t, e), e <= 2097151) return String(vd * e + t);
+        } = HK(t, e), e <= 2097151) return String(vd * e + t);
     const i = t & 16777215,
         r = (t >>> 24 | e << 8) & 16777215,
         s = e >> 16 & 65535;
@@ -32066,7 +32074,7 @@ function m9(t, e) {
     return n >= c && (o += Math.floor(n / c), n %= c), o >= c && (a += Math.floor(o / c), o %= c), a.toString() + f_(o) + f_(n)
 }
 
-function jK(t, e) {
+function HK(t, e) {
     return {
         lo: t >>> 0,
         hi: e >>> 0
@@ -32094,7 +32102,7 @@ function v9(t, e) {
     }
 }
 
-function HK() {
+function qK() {
     let t = this.buf[this.pos++],
         e = t & 127;
     if ((t & 128) == 0) return this.assertBounds(), e;
@@ -32117,7 +32125,7 @@ var vd, f_, y9 = g({
     }
 });
 
-function qK() {
+function GK() {
     const t = new DataView(new ArrayBuffer(8));
     if (typeof BigInt == "function" && typeof t.getBigInt64 == "function" && typeof t.getBigUint64 == "function" && typeof t.setBigInt64 == "function" && typeof t.setBigUint64 == "function" && (typeof process != "object" || typeof process.env != "object" || process.env.BUF_BIGINT_DISABLE !== "1")) {
         const s = BigInt("-9223372036854775808"),
@@ -32175,7 +32183,7 @@ function qK() {
             return typeof s != "string" && (s = s.toString()), r(s), g9(s)
         },
         dec(s, n) {
-            return VK(s, n)
+            return jK(s, n)
         },
         uDec(s, n) {
             return m9(s, n)
@@ -32185,7 +32193,7 @@ function qK() {
 var wt, Kn = g({
         "out-build/external/bufbuild/protobuf/proto-int64.js"() {
             "use strict";
-            Ws(), y9(), wt = qK()
+            Ws(), y9(), wt = GK()
         }
     }),
     M, Jn, ns = g({
@@ -32259,7 +32267,7 @@ var Xn = g({
     }
 });
 
-function GK(t, e, i, r) {
+function zK(t, e, i, r) {
     let s;
     return {
         typeName: e,
@@ -32278,10 +32286,10 @@ function GK(t, e, i, r) {
 function b9(t) {
     const e = t.field.localName,
         i = Object.create(null);
-    return i[e] = zK(t), [i, () => i[e]]
+    return i[e] = KK(t), [i, () => i[e]]
 }
 
-function zK(t) {
+function KK(t) {
     const e = t.field;
     if (e.repeated) return [];
     if (e.default !== void 0) return e.default;
@@ -32299,7 +32307,7 @@ function zK(t) {
     }
 }
 
-function KK(t, e) {
+function JK(t, e) {
     if (!e.repeated && (e.kind == "enum" || e.kind == "scalar")) {
         for (let i = t.length - 1; i >= 0; --i)
             if (t[i].no == e.no) return [t[i]];
@@ -32378,16 +32386,16 @@ var p_ = g({
         }
     });
 
-function JK(t, e, i) {
+function YK(t, e, i) {
     E9(e, t);
     const r = e.runtime.bin.makeReadOptions(i),
-        s = KK(t.getType().runtime.bin.listUnknownFields(t), e.field),
+        s = JK(t.getType().runtime.bin.listUnknownFields(t), e.field),
         [n, o] = b9(e);
     for (const a of s) e.runtime.bin.readField(n, r.readerFactory(a.data), e.field, a.wireType, r);
     return o()
 }
 
-function YK(t, e, i, r) {
+function XK(t, e, i, r) {
     E9(e, t);
     const s = e.runtime.bin.makeReadOptions(r),
         n = e.runtime.bin.makeWriteOptions(r);
@@ -32484,10 +32492,10 @@ function P9(t, e) {
     const i = ta(e);
     return !i && !t.fieldWrapper ? new t(e) : i || !t.fieldWrapper ? e : t.fieldWrapper.wrapField(e)
 }
-var XK, m_ = g({
+var QK, m_ = g({
     "out-build/external/bufbuild/protobuf/private/field-wrapper.js"() {
         "use strict";
-        ns(), Qn(), XK = {
+        ns(), Qn(), QK = {
             "google.protobuf.DoubleValue": M.DOUBLE,
             "google.protobuf.FloatValue": M.FLOAT,
             "google.protobuf.Int64Value": M.INT64,
@@ -32501,24 +32509,24 @@ var XK, m_ = g({
     }
 });
 
-function QK(t) {
+function ZK(t) {
     return t ? {
         ...y_,
         ...t
     } : y_
 }
 
-function ZK(t) {
+function eJ(t) {
     return t ? {
         ...S_,
         ...t
     } : S_
 }
 
-function eJ() {
+function tJ() {
     return {
-        makeReadOptions: QK,
-        makeWriteOptions: ZK,
+        makeReadOptions: ZK,
+        makeWriteOptions: eJ,
         readMessage(t, e, i, r) {
             if (e == null || Array.isArray(e) || typeof e != "object") throw new Error(`cannot decode message ${t.typeName} from JSON: ${Us(e)}`);
             r = r ?? new t;
@@ -32541,7 +32549,7 @@ function eJ() {
                         if (u && u.extendee.typeName == t.typeName) {
                             l = !0;
                             const [d, f] = b9(u);
-                            D9(d, a, u.field, i, u), YK(r, u, f(), i)
+                            D9(d, a, u.field, i, u), XK(r, u, f(), i)
                         }
                     }
                     if (!l && !i.ignoreUnknownFields) throw new Error(`cannot decode message ${t.typeName} from JSON: key "${o}" is unknown`)
@@ -32557,7 +32565,7 @@ function eJ() {
                 for (s of i.fields.byNumber()) {
                     if (!I9(s, t)) {
                         if (s.req) throw "required field not set";
-                        if (!e.emitDefaultValues || !iJ(s)) continue
+                        if (!e.emitDefaultValues || !rJ(s)) continue
                     }
                     const o = s.oneof ? t[s.oneof.localName].value : t[s.localName],
                         a = x9(s, o, e);
@@ -32568,7 +32576,7 @@ function eJ() {
                     for (const o of i.runtime.bin.listUnknownFields(t)) {
                         const a = n.findExtensionFor(i.typeName, o.no);
                         if (a && _9(t, a)) {
-                            const c = JK(t, a, e),
+                            const c = YK(t, a, e),
                                 l = x9(a.field, c, e);
                             l !== void 0 && (r[a.field.jsonName] = l)
                         }
@@ -32636,7 +32644,7 @@ function D9(t, e, i, r, s) {
             if (c === null) throw new Error(`cannot decode field ${s.typeName}.${i.name} from JSON: map value null`);
             let l;
             try {
-                l = tJ(i.K, a)
+                l = iJ(i.K, a)
             } catch (u) {
                 let d = `cannot decode map key for field ${s.typeName}.${i.name} from JSON: ${Us(e)}`;
                 throw u instanceof Error && u.message.length > 0 && (d += `: ${u.message}`), new Error(d)
@@ -32700,7 +32708,7 @@ function D9(t, e, i, r, s) {
     }
 }
 
-function tJ(t, e) {
+function iJ(t, e) {
     if (t === M.BOOL) switch (e) {
         case "true":
             e = !0;
@@ -32777,7 +32785,7 @@ function w_(t, e, i, r) {
     throw new Error(`cannot decode enum ${t.typeName} from JSON: ${Us(e)}`)
 }
 
-function iJ(t) {
+function rJ(t) {
     return t.repeated || t.kind == "map" ? !0 : !(t.oneof || t.kind == "message" || t.opt || t.req)
 }
 
@@ -32855,7 +32863,7 @@ function iw(t, e) {
             return Ut(e instanceof Uint8Array), Oc.enc(e)
     }
 }
-var y_, S_, bd, _d, rJ = g({
+var y_, S_, bd, _d, sJ = g({
         "out-build/external/bufbuild/protobuf/private/json-format.js"() {
             "use strict";
             Ws(), Kn(), g_(), p_(), k9(), T9(), m_(), Xn(), Xn(), ns(), Qn(), y_ = {
@@ -32972,7 +32980,7 @@ var y_, S_, bd, _d, rJ = g({
                 }
             }, A9 = class {
                 constructor(t, e) {
-                    this.varint64 = $K, this.uint32 = HK, this.buf = t, this.len = t.length, this.pos = 0, this.view = new DataView(t.buffer, t.byteOffset, t.byteLength), this.textDecoder = e ?? new TextDecoder
+                    this.varint64 = VK, this.uint32 = qK, this.buf = t, this.len = t.length, this.pos = 0, this.view = new DataView(t.buffer, t.byteOffset, t.byteLength), this.textDecoder = e ?? new TextDecoder
                 }
                 tag() {
                     let t = this.uint32(),
@@ -33065,24 +33073,24 @@ var y_, S_, bd, _d, rJ = g({
         }
     });
 
-function sJ(t) {
+function nJ(t) {
     return t ? {
         ...__,
         ...t
     } : __
 }
 
-function nJ(t) {
+function oJ(t) {
     return t ? {
         ...E_,
         ...t
     } : E_
 }
 
-function oJ() {
+function aJ() {
     return {
-        makeReadOptions: sJ,
-        makeWriteOptions: nJ,
+        makeReadOptions: nJ,
+        makeWriteOptions: oJ,
         listUnknownFields(t) {
             return t[ia] ?? []
         },
@@ -33146,7 +33154,7 @@ function M9(t, e, i, r, s) {
         case "enum":
             const a = i.kind == "enum" ? M.INT32 : i.T;
             let c = sw;
-            if (i.kind == "scalar" && i.L > 0 && (c = cJ), n) {
+            if (i.kind == "scalar" && i.L > 0 && (c = lJ), n) {
                 let f = t[o];
                 if (r == qt.LengthDelimited && a != M.STRING && a != M.BYTES) {
                     let m = e.uint32() + e.pos;
@@ -33159,7 +33167,7 @@ function M9(t, e, i, r, s) {
             n ? t[o].push(rw(e, new l, s, i)) : ta(t[o]) ? rw(e, t[o], s, i) : (t[o] = rw(e, new l, s, i), l.fieldWrapper && !i.oneof && !i.repeated && (t[o] = l.fieldWrapper.unwrapField(t[o])));
             break;
         case "map":
-            let [u, d] = aJ(i, e, s);
+            let [u, d] = cJ(i, e, s);
             t[o][u] = d;
             break
     }
@@ -33171,7 +33179,7 @@ function rw(t, e, i, r) {
     return s.readMessage(e, t, n ? r.no : t.uint32(), i, n), e
 }
 
-function aJ(t, e, i) {
+function cJ(t, e, i) {
     const r = e.uint32(),
         s = e.pos + r;
     let n, o;
@@ -33210,7 +33218,7 @@ function aJ(t, e, i) {
     return [n, o]
 }
 
-function cJ(t, e) {
+function lJ(t, e) {
     const i = sw(t, e);
     return typeof i == "bigint" ? i.toString() : i
 }
@@ -33258,7 +33266,7 @@ function O9(t, e, i, r) {
         case "enum":
             let n = t.kind == "enum" ? M.INT32 : t.T;
             if (s)
-                if (Ut(Array.isArray(e)), t.packed) uJ(i, n, t.no, e);
+                if (Ut(Array.isArray(e)), t.packed) dJ(i, n, t.no, e);
                 else
                     for (const o of e) Ed(i, n, t.no, o);
             else Ed(i, n, t.no, e);
@@ -33271,12 +33279,12 @@ function O9(t, e, i, r) {
             break;
         case "map":
             Ut(typeof e == "object" && e != null);
-            for (const [o, a] of Object.entries(e)) lJ(i, r, t, o, a);
+            for (const [o, a] of Object.entries(e)) uJ(i, r, t, o, a);
             break
     }
 }
 
-function lJ(t, e, i, r, s) {
+function uJ(t, e, i, r, s) {
     t.tag(i.no, qt.LengthDelimited), t.fork();
     let n = r;
     switch (i.K) {
@@ -33316,7 +33324,7 @@ function Ed(t, e, i, r) {
     t.tag(i, s)[n](r)
 }
 
-function uJ(t, e, i, r) {
+function dJ(t, e, i, r) {
     if (!r.length) return;
     t.tag(i, qt.LengthDelimited).fork();
     let [, s] = N9(e);
@@ -33345,7 +33353,7 @@ function N9(t) {
     const i = M[t].toLowerCase();
     return [e, i]
 }
-var ia, __, E_, dJ = g({
+var ia, __, E_, hJ = g({
     "out-build/external/bufbuild/protobuf/private/binary-format.js"() {
         "use strict";
         b_(), m_(), Xn(), Ws(), T9(), ns(), Qn(), ia = Symbol("@bufbuild/protobuf/unknown-fields"), __ = {
@@ -33358,7 +33366,7 @@ var ia, __, E_, dJ = g({
     }
 });
 
-function hJ() {
+function fJ() {
     return {
         setEnumType: h9,
         initPartial(t, e) {
@@ -33502,7 +33510,7 @@ function nw(t) {
 function kd(t) {
     return t instanceof Uint8Array ? t : new Uint8Array(t)
 }
-var fJ = g({
+var pJ = g({
     "out-build/external/bufbuild/protobuf/private/util-common.js"() {
         "use strict";
         u_(), Xn(), ns(), Qn()
@@ -33512,28 +33520,28 @@ var fJ = g({
 function W9(t, e, i) {
     return {
         syntax: t,
-        json: eJ(),
-        bin: oJ(),
+        json: tJ(),
+        bin: aJ(),
         util: {
-            ...hJ(),
+            ...fJ(),
             newFieldList: e,
             initFields: i
         },
         makeMessageType(r, s, n) {
-            return UK(this, r, s, n)
+            return BK(this, r, s, n)
         },
-        makeEnum: FK,
+        makeEnum: UK,
         makeEnumType: f9,
         getEnumType: d9,
         makeExtension(r, s, n) {
-            return GK(this, r, s, n)
+            return zK(this, r, s, n)
         }
     }
 }
 var F9 = g({
         "out-build/external/bufbuild/protobuf/private/proto-runtime.js"() {
             "use strict";
-            u_(), BK(), p_(), rJ(), dJ(), fJ()
+            u_(), $K(), p_(), sJ(), hJ(), pJ()
         }
     }),
     k_, U9 = g({
@@ -33583,7 +33591,7 @@ function B9(t, e) {
     return e ? i : G9(q9(i))
 }
 
-function pJ(t) {
+function gJ(t) {
     return B9(t, !1)
 }
 
@@ -33621,12 +33629,12 @@ var V9, j9, H9, I_, q9, G9, Id = g({
             V9 = $9, j9 = new Set(["constructor", "toString", "toJSON", "valueOf"]), H9 = new Set(["getType", "clone", "equals", "fromBinary", "fromJson", "fromJsonString", "toBinary", "toJson", "toJsonString", "toObject"]), I_ = t => `${t}$`, q9 = t => H9.has(t) ? I_(t) : t, G9 = t => j9.has(t) ? I_(t) : t
         }
     }),
-    z9, gJ = g({
+    z9, mJ = g({
         "out-build/external/bufbuild/protobuf/private/field.js"() {
             "use strict";
             Id(), Ws(), z9 = class {
                 constructor(t) {
-                    this.kind = "oneof", this.repeated = !1, this.packed = !1, this.opt = !1, this.req = !1, this.default = void 0, this.fields = [], this.name = t, this.localName = pJ(t)
+                    this.kind = "oneof", this.repeated = !1, this.packed = !1, this.opt = !1, this.req = !1, this.default = void 0, this.fields = [], this.name = t, this.localName = gJ(t)
                 }
                 addField(t) {
                     Ut(t.oneof === this, `field ${t.name} not one of ${this.name}`), this.fields.push(t)
@@ -33658,7 +33666,7 @@ function K9(t, e) {
 var J9 = g({
         "out-build/external/bufbuild/protobuf/private/field-normalize.js"() {
             "use strict";
-            gJ(), Id(), ns()
+            mJ(), Id(), ns()
         }
     }),
     E, $r = g({
@@ -33724,32 +33732,32 @@ var J9 = g({
             })
         }
     }),
-    mJ, wJ = g({
+    wJ, vJ = g({
         "out-build/external/bufbuild/protobuf/proto-double.js"() {
             "use strict";
-            mJ = {
+            wJ = {
                 NaN: Number.NaN,
                 POSITIVE_INFINITY: Number.POSITIVE_INFINITY,
                 NEGATIVE_INFINITY: Number.NEGATIVE_INFINITY
             }
         }
     }),
-    vJ = g({
+    yJ = g({
         "out-build/external/bufbuild/protobuf/proto-delimited.js"() {
             "use strict";
             b_()
         }
     }),
-    yJ = g({
+    SJ = g({
         "out-build/external/bufbuild/protobuf/private/reify-wkt.js"() {
             "use strict";
             ns()
         }
     }),
-    SJ = g({
+    bJ = g({
         "out-build/external/bufbuild/protobuf/codegen-info.js"() {
             "use strict";
-            Id(), m_(), Xn(), yJ()
+            Id(), m_(), Xn(), SJ()
         }
     }),
     ei, C_, Y9 = g({
@@ -33762,7 +33770,7 @@ var J9 = g({
             })(C_ || (C_ = {}))
         }
     }),
-    os, bJ, aw, X9, Q9, Z9, eA, Cd, tA, cw, Bt, lw, iA, T_, rA, sA, nA, oA, aA, Td, cA, lA, Pd, Dd, uw, dw, uA, P_, dA, hA, fA, pA, gA, xd, Bs, mA, Vr, hw, fw, pw, gw, mw, ww, _J, wA, vA, yA, SA, bA, vw, Rd = g({
+    os, _J, aw, X9, Q9, Z9, eA, Cd, tA, cw, Bt, lw, iA, T_, rA, sA, nA, oA, aA, Td, cA, lA, Pd, Dd, uw, dw, uA, P_, dA, hA, fA, pA, gA, xd, Bs, mA, Vr, hw, fw, pw, gw, mw, ww, EJ, wA, vA, yA, SA, bA, vw, Rd = g({
         "out-build/external/bufbuild/protobuf/google/protobuf/descriptor_pb.js"() {
             "use strict";
             ow(), Xi(), (function(t) {
@@ -33803,7 +33811,7 @@ var J9 = g({
             }, {
                 no: 2147483647,
                 name: "EDITION_MAX"
-            }]), bJ = class mh extends K {
+            }]), _J = class mh extends K {
                 constructor(e) {
                     super(), this.file = [], T.util.initPartial(e, this)
                 }
@@ -35648,7 +35656,7 @@ var J9 = g({
             }, {
                 no: 2,
                 name: "LEGACY_BEST_EFFORT"
-            }]), _J = class Vh extends K {
+            }]), EJ = class Vh extends K {
                 constructor(e) {
                     super(), this.defaults = [], T.util.initPartial(e, this)
                 }
@@ -35923,22 +35931,22 @@ var J9 = g({
             }])
         }
     }),
-    EJ = g({
+    kJ = g({
         "out-build/external/bufbuild/protobuf/private/text-format.js"() {
             "use strict";
             Ws(), Kn(), ns()
         }
     }),
-    kJ = g({
+    IJ = g({
         "out-build/external/bufbuild/protobuf/private/feature-set.js"() {
             "use strict";
             Rd(), g_()
         }
     }),
-    IJ, _A, EA = g({
+    CJ, _A, EA = g({
         "out-build/external/bufbuild/protobuf/create-descriptor-set.js"() {
             "use strict";
-            Rd(), Ws(), Y9(), Id(), EJ(), kJ(), ns(), Qn(), IJ = {
+            Rd(), Ws(), Y9(), Id(), kJ(), IJ(), ns(), Qn(), CJ = {
                 [Bt.DOUBLE]: M.DOUBLE,
                 [Bt.FLOAT]: M.FLOAT,
                 [Bt.INT64]: M.INT64,
@@ -35962,15 +35970,15 @@ var J9 = g({
             })(_A || (_A = {}))
         }
     }),
-    CJ = g({
+    TJ = g({
         "out-build/external/bufbuild/protobuf/create-registry.js"() {
             "use strict"
         }
     }),
-    TJ, kA = g({
+    PJ, kA = g({
         "out-build/external/bufbuild/protobuf/google/protobuf/timestamp_pb.js"() {
             "use strict";
-            Xi(), Kn(), $r(), TJ = class ma extends K {
+            Xi(), Kn(), $r(), PJ = class ma extends K {
                 constructor(e) {
                     super(), this.seconds = wt.zero, this.nanos = 0, E.util.initPartial(e, this)
                 }
@@ -36041,10 +36049,10 @@ var J9 = g({
             }
         }
     }),
-    PJ, IA = g({
+    DJ, IA = g({
         "out-build/external/bufbuild/protobuf/google/protobuf/duration_pb.js"() {
             "use strict";
-            Xi(), Kn(), $r(), PJ = class Kh extends K {
+            Xi(), Kn(), $r(), DJ = class Kh extends K {
                 constructor(e) {
                     super(), this.seconds = wt.zero, this.nanos = 0, E.util.initPartial(e, this)
                 }
@@ -36201,10 +36209,10 @@ var J9 = g({
             }
         }
     }),
-    DJ, CA = g({
+    xJ, CA = g({
         "out-build/external/bufbuild/protobuf/google/protobuf/empty_pb.js"() {
             "use strict";
-            Xi(), $r(), DJ = class Jh extends K {
+            Xi(), $r(), xJ = class Jh extends K {
                 constructor(e) {
                     super(), E.util.initPartial(e, this)
                 }
@@ -36232,10 +36240,10 @@ var J9 = g({
             }
         }
     }),
-    xJ, TA = g({
+    RJ, TA = g({
         "out-build/external/bufbuild/protobuf/google/protobuf/field_mask_pb.js"() {
             "use strict";
-            Xi(), $r(), xJ = class Yh extends K {
+            Xi(), $r(), RJ = class Yh extends K {
                 constructor(e) {
                     super(), this.paths = [], E.util.initPartial(e, this)
                 }
@@ -36528,10 +36536,10 @@ var J9 = g({
             }
         }
     }),
-    RJ, AJ, MJ, OJ, LJ, NJ, WJ, FJ, UJ, DA = g({
+    AJ, MJ, OJ, LJ, NJ, WJ, FJ, UJ, BJ, DA = g({
         "out-build/external/bufbuild/protobuf/google/protobuf/wrappers_pb.js"() {
             "use strict";
-            Xi(), $r(), ns(), Kn(), RJ = class Zc extends K {
+            Xi(), $r(), ns(), Kn(), AJ = class Zc extends K {
                 constructor(e) {
                     super(), this.value = 0, E.util.initPartial(e, this)
                 }
@@ -36585,7 +36593,7 @@ var J9 = g({
                 static equals(e, i) {
                     return E.util.equals(Zc, e, i)
                 }
-            }, AJ = class el extends K {
+            }, MJ = class el extends K {
                 constructor(e) {
                     super(), this.value = 0, E.util.initPartial(e, this)
                 }
@@ -36639,7 +36647,7 @@ var J9 = g({
                 static equals(e, i) {
                     return E.util.equals(el, e, i)
                 }
-            }, MJ = class tl extends K {
+            }, OJ = class tl extends K {
                 constructor(e) {
                     super(), this.value = wt.zero, E.util.initPartial(e, this)
                 }
@@ -36693,7 +36701,7 @@ var J9 = g({
                 static equals(e, i) {
                     return E.util.equals(tl, e, i)
                 }
-            }, OJ = class il extends K {
+            }, LJ = class il extends K {
                 constructor(e) {
                     super(), this.value = wt.zero, E.util.initPartial(e, this)
                 }
@@ -36747,7 +36755,7 @@ var J9 = g({
                 static equals(e, i) {
                     return E.util.equals(il, e, i)
                 }
-            }, LJ = class rl extends K {
+            }, NJ = class rl extends K {
                 constructor(e) {
                     super(), this.value = 0, E.util.initPartial(e, this)
                 }
@@ -36801,7 +36809,7 @@ var J9 = g({
                 static equals(e, i) {
                     return E.util.equals(rl, e, i)
                 }
-            }, NJ = class sl extends K {
+            }, WJ = class sl extends K {
                 constructor(e) {
                     super(), this.value = 0, E.util.initPartial(e, this)
                 }
@@ -36855,7 +36863,7 @@ var J9 = g({
                 static equals(e, i) {
                     return E.util.equals(sl, e, i)
                 }
-            }, WJ = class nl extends K {
+            }, FJ = class nl extends K {
                 constructor(e) {
                     super(), this.value = !1, E.util.initPartial(e, this)
                 }
@@ -36909,7 +36917,7 @@ var J9 = g({
                 static equals(e, i) {
                     return E.util.equals(nl, e, i)
                 }
-            }, FJ = class ol extends K {
+            }, UJ = class ol extends K {
                 constructor(e) {
                     super(), this.value = "", E.util.initPartial(e, this)
                 }
@@ -36963,7 +36971,7 @@ var J9 = g({
                 static equals(e, i) {
                     return E.util.equals(ol, e, i)
                 }
-            }, UJ = class al extends K {
+            }, BJ = class al extends K {
                 constructor(e) {
                     super(), this.value = new Uint8Array(0), E.util.initPartial(e, this)
                 }
@@ -37020,19 +37028,19 @@ var J9 = g({
             }
         }
     }),
-    BJ, $J = g({
+    $J, VJ = g({
         "out-build/external/bufbuild/protobuf/create-registry-from-desc.js"() {
             "use strict";
-            Ws(), $r(), ow(), Id(), kA(), IA(), x_(), CA(), TA(), PA(), u_(), DA(), Rd(), EA(), Qn(), BJ = [d9(Lc)]
+            Ws(), $r(), ow(), Id(), kA(), IA(), x_(), CA(), TA(), PA(), u_(), DA(), Rd(), EA(), Qn(), $J = [d9(Lc)]
         }
     }),
-    VJ = g({
+    jJ = g({
         "out-build/external/bufbuild/protobuf/to-plain-message.js"() {
             "use strict";
             Qn()
         }
     }),
-    xA, jJ, HJ, A_, RA, qJ = g({
+    xA, HJ, qJ, A_, RA, GJ = g({
         "out-build/external/bufbuild/protobuf/google/protobuf/compiler/plugin_pb.js"() {
             "use strict";
             Xi(), ow(), Rd(), xA = class ef extends K {
@@ -37084,7 +37092,7 @@ var J9 = g({
                 static equals(e, i) {
                     return T.util.equals(ef, e, i)
                 }
-            }, jJ = class tf extends K {
+            }, HJ = class tf extends K {
                 constructor(e) {
                     super(), this.fileToGenerate = [], this.protoFile = [], this.sourceFileDescriptors = [], T.util.initPartial(e, this)
                 }
@@ -37139,7 +37147,7 @@ var J9 = g({
                 static equals(e, i) {
                     return T.util.equals(tf, e, i)
                 }
-            }, HJ = class rf extends K {
+            }, qJ = class rf extends K {
                 constructor(e) {
                     super(), this.file = [], T.util.initPartial(e, this)
                 }
@@ -37293,7 +37301,7 @@ var J9 = g({
             }
         }
     }),
-    as, GJ, AA, Md, Od, zJ, MA, ra, OA = g({
+    as, zJ, AA, Md, Od, KJ, MA, ra, OA = g({
         "out-build/external/bufbuild/protobuf/google/protobuf/type_pb.js"() {
             "use strict";
             $r(), Xi(), M_(), x_(), (function(t) {
@@ -37307,7 +37315,7 @@ var J9 = g({
             }, {
                 no: 2,
                 name: "SYNTAX_EDITIONS"
-            }]), GJ = class of extends K {
+            }]), zJ = class of extends K {
                 constructor(e) {
                     super(), this.name = "", this.fields = [], this.oneofs = [], this.options = [], this.syntax = as.PROTO2, this.edition = "", E.util.initPartial(e, this)
                 }
@@ -37519,7 +37527,7 @@ var J9 = g({
             }, {
                 no: 3,
                 name: "CARDINALITY_REPEATED"
-            }]), zJ = class cf extends K {
+            }]), KJ = class cf extends K {
                 constructor(e) {
                     super(), this.name = "", this.enumvalue = [], this.options = [], this.syntax = as.PROTO2, this.edition = "", E.util.initPartial(e, this)
                 }
@@ -37655,10 +37663,10 @@ var J9 = g({
             }
         }
     }),
-    KJ, LA, NA, JJ = g({
+    JJ, LA, NA, YJ = g({
         "out-build/external/bufbuild/protobuf/google/protobuf/api_pb.js"() {
             "use strict";
-            Xi(), OA(), M_(), $r(), KJ = class df extends K {
+            Xi(), OA(), M_(), $r(), JJ = class df extends K {
                 constructor(e) {
                     super(), this.name = "", this.methods = [], this.options = [], this.version = "", this.mixins = [], this.syntax = as.PROTO2, E.util.initPartial(e, this)
                 }
@@ -37820,16 +37828,16 @@ var J9 = g({
             }
         }
     }),
-    YJ = g({
+    XJ = g({
         "out-build/external/bufbuild/protobuf/index.js"() {
             "use strict";
-            $r(), ow(), wJ(), Kn(), g_(), vJ(), SJ(), Xi(), Qn(), ns(), k9(), Y9(), b_(), EA(), CJ(), $J(), VJ(), qJ(), JJ(), x_(), Rd(), IA(), CA(), TA(), M_(), PA(), kA(), OA(), DA()
+            $r(), ow(), vJ(), Kn(), g_(), yJ(), bJ(), Xi(), Qn(), ns(), k9(), Y9(), b_(), EA(), TJ(), VJ(), jJ(), GJ(), YJ(), x_(), Rd(), IA(), CA(), TA(), M_(), PA(), kA(), OA(), DA()
         }
     }),
     Qi = g({
         "out-build/external/bufbuild/protobuf.js"() {
             "use strict";
-            YJ()
+            XJ()
         }
     });
 
@@ -37847,7 +37855,7 @@ var bw = g({
     }
 });
 
-function XJ(t, e) {
+function QJ(t, e) {
     const i = {};
     for (const [r, s] of Object.entries(t.methods)) {
         const n = e({
@@ -37871,7 +37879,7 @@ var O_ = g({
         }
     });
 
-function QJ(t, e) {
+function ZJ(t, e) {
     if (e > t) throw new ut(`message size ${e} is larger than configured writeMaxBytes ${t}`, Ae.ResourceExhausted)
 }
 
@@ -37888,10 +37896,10 @@ var kw = g({
     }
 });
 
-function ZJ(t) {
+function eY(t) {
     return new FA(t)
 }
-async function eY(t, e, i) {
+async function tY(t, e, i) {
     let {
         flags: r,
         data: s
@@ -37902,7 +37910,7 @@ async function eY(t, e, i) {
         flags: r
     }
 }
-async function tY(t, e, i) {
+async function iY(t, e, i) {
     let {
         flags: r,
         data: s
@@ -37917,13 +37925,13 @@ async function tY(t, e, i) {
     }
 }
 
-function iY(t, e) {
+function rY(t, e) {
     const i = new Uint8Array(e.length + 5);
     i.set(e, 5);
     const r = new DataView(i.buffer, i.byteOffset, i.byteLength);
     return r.setUint8(0, t), r.setUint32(1, e.length), i
 }
-var FA, rY = g({
+var FA, sY = g({
     "out-build/external/bufbuild/connect/protocol/envelope.js"() {
         "use strict";
         St(), lt(), _w(), kw(), FA = class {
@@ -37972,8 +37980,8 @@ var FA, rY = g({
     }
 });
 
-function sY(t, ...e) {
-    const [i, r, s] = nY(e);
+function nY(t, ...e) {
+    const [i, r, s] = oY(e);
     let n = t,
         o;
     return s?.propagateDownStreamError === !0 && (n = o = UA(n)), n = L_(n, ...i, {
@@ -37981,20 +37989,20 @@ function sY(t, ...e) {
     }), r(n).catch(a => o ? o.abort(a).then(() => Promise.reject(a)) : Promise.reject(a))
 }
 
-function nY(t) {
+function oY(t) {
     let e;
     typeof t[t.length - 1] != "function" && (e = t.pop());
     const i = t.pop();
     return [t, i, e]
 }
 
-function oY(t, e) {
+function aY(t, e) {
     return async function(i) {
-        return await pY(i, t, e)
+        return await gY(i, t, e)
     }
 }
 async function* L_(t, ...e) {
-    const [i, r] = aY(e);
+    const [i, r] = cY(e);
     let s;
     const n = t[Symbol.asyncIterator]();
     let a = {
@@ -38024,12 +38032,12 @@ async function* L_(t, ...e) {
     }
 }
 
-function aY(t) {
+function cY(t) {
     let e;
     return typeof t[t.length - 1] != "function" && (e = t.pop()), [t, e]
 }
 
-function cY(t, e, i) {
+function lY(t, e, i) {
     return e === void 0 || i === void 0 ? async function*(r) {
         for await (const s of r) yield {
             flags: 0,
@@ -38046,7 +38054,7 @@ function cY(t, e, i) {
     }
 }
 
-function lY(t, e, i) {
+function uY(t, e, i) {
     return i && e !== void 0 ? async function*(r) {
         for await (const {
                 flags: s,
@@ -38074,37 +38082,37 @@ function lY(t, e, i) {
     }
 }
 
-function uY(t, e) {
-    return async function*(i) {
-        for await (const r of i) yield await eY(r, t, e)
-    }
-}
-
 function dY(t, e) {
     return async function*(i) {
         for await (const r of i) yield await tY(r, t, e)
     }
 }
 
-function hY() {
+function hY(t, e) {
+    return async function*(i) {
+        for await (const r of i) yield await iY(r, t, e)
+    }
+}
+
+function fY() {
     return async function*(t) {
         for await (const {
                 flags: e,
                 data: i
             }
-            of t) yield iY(e, i)
+            of t) yield rY(e, i)
     }
 }
 
-function fY(t) {
+function pY(t) {
     return async function*(e) {
-        const i = ZJ(t);
+        const i = eY(t);
         for await (const r of e) for (const s of i.decode(r)) yield s;
         if (i.byteLength > 0) throw new ut("protocol error: incomplete envelope", Ae.InvalidArgument)
     }
 }
-async function pY(t, e, i) {
-    const [r, s] = gY(i);
+async function gY(t, e, i) {
+    const [r, s] = mY(i);
     if (r) {
         s > e && Ew(e, s, !0);
         const l = new Uint8Array(s);
@@ -38125,7 +38133,7 @@ async function pY(t, e, i) {
     return a
 }
 
-function gY(t) {
+function mY(t) {
     if (t == null) return [!1, 0];
     const e = typeof t == "string" ? parseInt(t, 10) : t;
     return !Number.isSafeInteger(e) || e < 0 ? [!1, e] : [!0, e]
@@ -38176,51 +38184,51 @@ async function* BA(t) {
 var na = g({
         "out-build/external/bufbuild/connect/protocol/async-iterable.js"() {
             "use strict";
-            lt(), St(), rY(), kw()
+            lt(), St(), sY(), kw()
         }
     }),
-    mY = g({
+    wY = g({
         "out-build/external/bufbuild/connect/callback-client.js"() {
             "use strict";
             Qi(), St(), lt(), O_(), na()
         }
     });
 
-function wY(t, e) {
-    return XJ(t, i => {
+function vY(t, e) {
+    return QJ(t, i => {
         switch (i.kind) {
             case ei.Unary:
-                return yY(e, t, i);
-            case ei.ServerStreaming:
                 return SY(e, t, i);
-            case ei.ClientStreaming:
+            case ei.ServerStreaming:
                 return bY(e, t, i);
-            case ei.BiDiStreaming:
+            case ei.ClientStreaming:
                 return _Y(e, t, i);
+            case ei.BiDiStreaming:
+                return EY(e, t, i);
             default:
                 return null
         }
     })
 }
 
-function vY(t, e) {
-    return wY(t, e)
+function yY(t, e) {
+    return vY(t, e)
 }
 
-function yY(t, e, i) {
+function SY(t, e, i) {
     return async function(r, s) {
         const n = await t.unary(e, i, s?.signal, s?.timeoutMs, s?.headers, r, s?.contextValues);
         return s?.onHeader?.(n.header), s?.onTrailer?.(n.trailer), n.message
     }
 }
 
-function SY(t, e, i) {
+function bY(t, e, i) {
     return function(r, s) {
         return $A(t.stream(e, i, s?.signal, s?.timeoutMs, s?.headers, BA([r]), s?.contextValues), s)
     }
 }
 
-function bY(t, e, i) {
+function _Y(t, e, i) {
     return async function(r, s) {
         const n = await t.stream(e, i, s?.signal, s?.timeoutMs, s?.headers, r, s?.contextValues);
         s?.onHeader?.(n.header);
@@ -38232,7 +38240,7 @@ function bY(t, e, i) {
     }
 }
 
-function _Y(t, e, i) {
+function EY(t, e, i) {
     return function(r, s) {
         return $A(t.stream(e, i, s?.signal, s?.timeoutMs, s?.headers, r, s?.contextValues), s)
     }
@@ -38249,14 +38257,14 @@ function $A(t, e) {
         })
     }
 }
-var EY = g({
+var kY = g({
     "out-build/external/bufbuild/connect/promise-client.js"() {
         "use strict";
         Qi(), O_(), St(), lt(), na()
     }
 });
 
-function kY(...t) {
+function IY(...t) {
     const e = new AbortController,
         i = t.filter(s => s !== void 0).concat(e.signal);
     for (const s of i) {
@@ -38274,7 +38282,7 @@ function kY(...t) {
     return e
 }
 
-function IY(t) {
+function CY(t) {
     const e = new AbortController,
         i = () => {
             e.abort(new ut("the operation timed out", Ae.DeadlineExceeded))
@@ -38323,7 +38331,7 @@ var W_ = g({
             St(), lt(), N_(), W_()
         }
     }),
-    CY = g({
+    TY = g({
         "out-build/external/bufbuild/connect/protocol-grpc-web/trailer.js"() {
             "use strict"
         }
@@ -38339,7 +38347,7 @@ var W_ = g({
             Iw()
         }
     }),
-    TY = g({
+    PY = g({
         "out-build/external/bufbuild/connect/protocol-grpc-web/content-type.js"() {
             "use strict"
         }
@@ -38350,10 +38358,10 @@ var W_ = g({
             lt(), St()
         }
     }),
-    PY, DY = g({
+    DY, xY = g({
         "out-build/external/bufbuild/connect/protocol-grpc/gen/status_pb.js"() {
             "use strict";
-            Qi(), PY = class pf extends K {
+            Qi(), DY = class pf extends K {
                 constructor(e) {
                     super(), this.code = 0, this.message = "", this.details = [], E.util.initPartial(e, this)
                 }
@@ -38400,7 +38408,7 @@ var W_ = g({
     GA = g({
         "out-build/external/bufbuild/connect/protocol-grpc/trailer-status.js"() {
             "use strict";
-            Qi(), DY(), St(), bw(), lt(), Iw()
+            Qi(), xY(), St(), bw(), lt(), Iw()
         }
     }),
     Cw = g({
@@ -38424,7 +38432,7 @@ function KA(t, e) {
     return e instanceof t ? e : new t(e)
 }
 
-function xY(t, e) {
+function RY(t, e) {
     function i(r) {
         return r.done === !0 ? r : {
             done: r.done,
@@ -38462,7 +38470,7 @@ var XA = g({
         }
     });
 
-function RY(t) {
+function AY(t) {
     const e = {
         ...t
     };
@@ -38488,7 +38496,7 @@ function Pw(t, e) {
     return {
         serialize(i) {
             const r = t.serialize(i);
-            return QJ(e.writeMaxBytes, r.byteLength), r
+            return ZJ(e.writeMaxBytes, r.byteLength), r
         },
         parse(i) {
             return Ew(e.readMaxBytes, i.byteLength, !0), t.parse(i)
@@ -38520,7 +38528,7 @@ function ZA(t, e) {
 function eM(t, e) {
     const i = e?.textEncoder ?? new TextEncoder,
         r = e?.textDecoder ?? new TextDecoder,
-        s = RY(e);
+        s = AY(e);
     return {
         parse(n) {
             try {
@@ -38557,25 +38565,25 @@ var Dw = g({
             Qi(), xw(), Cw(), kw(), St(), lt()
         }
     }),
-    AY = g({
+    MY = g({
         "out-build/external/bufbuild/connect/protocol-grpc-web/handler-factory.js"() {
             "use strict";
-            St(), lt(), Nc(), CY(), HA(), TY(), qA(), GA(), na(), _w(), Cw(), Tw(), F_(), Dw(), Rw(), xw()
+            St(), lt(), Nc(), TY(), HA(), PY(), qA(), GA(), na(), _w(), Cw(), Tw(), F_(), Dw(), Rw(), xw()
         }
     }),
-    MY = g({
+    OY = g({
         "out-build/external/bufbuild/connect/protocol-grpc/content-type.js"() {
             "use strict"
         }
     }),
-    OY = g({
+    LY = g({
         "out-build/external/bufbuild/connect/protocol-grpc/handler-factory.js"() {
             "use strict";
-            Nc(), St(), lt(), MY(), Iw(), GA(), qA(), na(), _w(), Cw(), Tw(), F_(), Dw(), Rw(), xw()
+            Nc(), St(), lt(), OY(), Iw(), GA(), qA(), na(), _w(), Cw(), Tw(), F_(), Dw(), Rw(), xw()
         }
     });
 
-function LY(t) {
+function NY(t) {
     const e = t?.match(tM);
     if (!e) return;
     const i = !!e[1],
@@ -38595,7 +38603,7 @@ var tM, iM, rM, sM, nM, U_ = g({
 function oM(t, e, i) {
     if (e && new Headers(e).forEach((o, a) => i.metadata.append(a, o)), typeof t != "object" || t == null || Array.isArray(t)) throw i;
     let r = i.code;
-    "code" in t && typeof t.code == "string" && (r = NK(t.code) ?? r);
+    "code" in t && typeof t.code == "string" && (r = WK(t.code) ?? r);
     const s = t.message;
     if (s != null && typeof s != "string") throw i;
     const n = new ut(s ?? "", r, e);
@@ -38615,7 +38623,7 @@ function oM(t, e, i) {
     return n
 }
 
-function NY(t, e, i) {
+function WY(t, e, i) {
     let r;
     try {
         r = JSON.parse(new TextDecoder().decode(t))
@@ -38625,7 +38633,7 @@ function NY(t, e, i) {
     return oM(r, e, i)
 }
 
-function WY(t, e) {
+function FY(t, e) {
     const i = {
         code: Zm(t.code)
     };
@@ -38656,7 +38664,7 @@ var B_ = g({
     }
 });
 
-function FY(t) {
+function UY(t) {
     const e = new ut("invalid end stream", Ae.Unknown);
     let i;
     try {
@@ -38680,9 +38688,9 @@ function FY(t) {
     }
 }
 
-function UY(t, e, i) {
+function BY(t, e, i) {
     const r = {};
-    e !== void 0 && (r.error = WY(e, i), t = WA(t, e.metadata));
+    e !== void 0 && (r.error = FY(e, i), t = WA(t, e.metadata));
     let s = !1;
     const n = {};
     return t.forEach((o, a) => {
@@ -38690,12 +38698,12 @@ function UY(t, e, i) {
     }), s && (r.metadata = n), r
 }
 
-function BY(t) {
+function $Y(t) {
     const e = new TextEncoder;
     return {
         serialize(i) {
             try {
-                const r = UY(i.metadata, i.error, t),
+                const r = BY(i.metadata, i.error, t),
                     s = JSON.stringify(r);
                 return e.encode(s)
             } catch (r) {
@@ -38705,7 +38713,7 @@ function BY(t) {
         },
         parse(i) {
             try {
-                return FY(i)
+                return UY(i)
             } catch (r) {
                 const s = r instanceof Error ? r.message : String(r);
                 throw new ut(`failed to parse EndStreamResponse: ${s}`, Ae.InvalidArgument)
@@ -38726,7 +38734,7 @@ var aM, cM = g({
         }
     });
 
-function $Y(t) {
+function VY(t) {
     switch (t) {
         case 400:
             return Ae.Internal;
@@ -38754,7 +38762,7 @@ var hM = g({
             lt()
         }
     }),
-    VY = g({
+    jY = g({
         "out-build/external/bufbuild/connect/protocol-connect/parse-timeout.js"() {
             "use strict";
             lt(), St()
@@ -38766,7 +38774,7 @@ var hM = g({
         }
     });
 
-function jY(t) {
+function HY(t) {
     const e = new Headers,
         i = new Headers;
     return t.forEach((r, s) => {
@@ -38784,32 +38792,32 @@ var pM = g({
             aa(), fM(), St(), lt(), q_ = "1"
         }
     }),
-    HY = g({
+    qY = g({
         "out-build/external/bufbuild/connect/protocol-connect/handler-factory.js"() {
             "use strict";
-            Qi(), lt(), St(), Nc(), U_(), cM(), B_(), aa(), hM(), VY(), fM(), pM(), G_(), _w(), Dw(), Rw(), xw(), na(), Cw(), Tw(), F_()
+            Qi(), lt(), St(), Nc(), U_(), cM(), B_(), aa(), hM(), jY(), fM(), pM(), G_(), _w(), Dw(), Rw(), xw(), na(), Cw(), Tw(), F_()
         }
     }),
     gM = g({
         "out-build/external/bufbuild/connect/router.js"() {
             "use strict";
-            St(), lt(), Nc(), AY(), OY(), HY(), Rw()
+            St(), lt(), Nc(), MY(), LY(), qY(), Rw()
         }
     }),
-    qY = g({
+    GY = g({
         "out-build/external/bufbuild/connect/cors.js"() {
             "use strict";
             aa(), Iw(), HA()
         }
     });
 
-function GY(t, e, i, r, s) {
+function zY(t, e, i, r, s) {
     const n = new Headers(r ?? {});
     return i !== void 0 && n.set(uM, `${i}`), n.set(Ld, t == ei.Unary ? e ? iM : rM : e ? sM : nM), n.set(H_, q_), s && n.set(dM, "CONNECT_ES_USER_AGENT"), n
 }
 
 function mM(t, e, i, r, s, n, o) {
-    const a = GY(t, e, i, r, o);
+    const a = zY(t, e, i, r, o);
     if (n != null) {
         const c = t == ei.Unary ? oa : V_;
         a.set(c, n.name)
@@ -38820,18 +38828,18 @@ function mM(t, e, i, r, s, n, o) {
     }
     return a
 }
-var zY = g({
+var KY = g({
     "out-build/external/bufbuild/connect/protocol-connect/request-header.js"() {
         "use strict";
         Qi(), aa(), G_(), U_()
     }
 });
 
-function KY(t, e, i, r) {
+function JY(t, e, i, r) {
     const s = r.get(Ld),
-        n = LY(s);
+        n = NY(s);
     if (i !== 200) {
-        const a = new ut(`HTTP ${i}`, $Y(i), r);
+        const a = new ut(`HTTP ${i}`, VY(i), r);
         if (t == ei.Unary && n && !n.binary) return {
             isUnaryError: !0,
             unaryError: a
@@ -38854,26 +38862,26 @@ function wM(t, e, i, r, s) {
     if (o != null && o.toLowerCase() !== "identity" && (n = e.find(a => a.name === o), !n)) throw new ut(`unsupported response encoding "${o}"`, Ae.Internal, s);
     return {
         compression: n,
-        ...KY(t, i, r, s)
+        ...JY(t, i, r, s)
     }
 }
-var JY = g({
+var YY = g({
     "out-build/external/bufbuild/connect/protocol-connect/validate-response.js"() {
         "use strict";
         Qi(), lt(), hM(), St(), U_(), aa()
     }
 });
 
-function YY(t, e) {
+function XY(t, e) {
     return e ? Oc.enc(t).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "") : encodeURIComponent(new TextDecoder().decode(t))
 }
 
-function XY(t, e, i) {
+function QY(t, e, i) {
     let r = `?connect=v${q_}`;
     const s = t.header.get(Ld);
     s?.indexOf(z_) === 0 && (r += "&encoding=" + encodeURIComponent(s.slice(z_.length)));
     const n = t.header.get(oa);
-    n !== null && n !== "identity" && (r += "&compression=" + encodeURIComponent(n), i = !0), i && (r += "&base64=1"), r += "&message=" + YY(e, i);
+    n !== null && n !== "identity" && (r += "&compression=" + encodeURIComponent(n), i = !0), i && (r += "&base64=1"), r += "&message=" + XY(e, i);
     const o = t.url + r,
         a = new Headers(t.header);
     return [H_, Ld, $_, oa, j_].forEach(c => a.delete(c)), {
@@ -38886,14 +38894,14 @@ function XY(t, e, i) {
         header: a
     }
 }
-var z_, QY = g({
+var z_, ZY = g({
     "out-build/external/bufbuild/connect/protocol-connect/get-request.js"() {
         "use strict";
         Qi(), aa(), G_(), z_ = "application/"
     }
 });
 
-function ZY(t) {
+function eX(t) {
     const e = YA(t.next, t.interceptors),
         [i, r, s] = vM(t),
         n = {
@@ -38904,12 +38912,12 @@ function ZY(t) {
     return e(n).then(o => (s(), o), r)
 }
 
-function eX(t) {
+function tX(t) {
     const e = YA(t.next, t.interceptors),
         [i, r, s] = vM(t),
         n = {
             ...t.req,
-            message: xY(t.req.method.I, t.req.message),
+            message: RY(t.req.method.I, t.req.message),
             signal: i
         };
     let o = !1;
@@ -38935,7 +38943,7 @@ function vM(t) {
     const {
         signal: e,
         cleanup: i
-    } = IY(t.timeoutMs), r = kY(t.signal, e);
+    } = CY(t.timeoutMs), r = IY(t.signal, e);
     return [r.signal, function(n) {
         const o = ut.from(e.aborted ? VA(e) : n);
         return r.abort(o), i(), Promise.reject(o)
@@ -38943,18 +38951,18 @@ function vM(t) {
         i(), r.abort()
     }]
 }
-var tX = g({
+var iX = g({
     "out-build/external/bufbuild/connect/protocol/run-call.js"() {
         "use strict";
         XA(), St(), N_(), JA()
     }
 });
 
-function iX(t) {
+function rX(t) {
     return {
         async unary(e, i, r, s, n, o, a) {
             const c = QA(i, t.binaryOptions, t.jsonOptions, t);
-            return s = s === void 0 ? t.defaultTimeoutMs : s <= 0 ? void 0 : s, await ZY({
+            return s = s === void 0 ? t.defaultTimeoutMs : s <= 0 ? void 0 : s, await eX({
                 interceptors: t.interceptors,
                 signal: r,
                 timeoutMs: s,
@@ -38973,7 +38981,7 @@ function iX(t) {
                     t.sendCompression && u.byteLength > t.compressMinBytes ? (u = await t.sendCompression.compress(u), l.header.set(oa, t.sendCompression.name)) : l.header.delete(oa);
                     const d = t.useHttpGet === !0 && i.idempotency === C_.NoSideEffects;
                     let f;
-                    d ? l = XY(l, u, t.useBinaryFormat) : f = BA([u]);
+                    d ? l = QY(l, u, t.useBinaryFormat) : f = BA([u]);
                     const p = await t.httpClient({
                             url: l.url,
                             method: l.init.method ?? "POST",
@@ -38986,11 +38994,11 @@ function iX(t) {
                             isUnaryError: v,
                             unaryError: y
                         } = wM(i.kind, t.acceptCompression, t.useBinaryFormat, p.status, p.header),
-                        [w, _] = jY(p.header);
-                    let k = await sY(p.body, oY(t.readMaxBytes, p.header.get($_)), {
+                        [w, _] = HY(p.header);
+                    let k = await nY(p.body, aY(t.readMaxBytes, p.header.get($_)), {
                         propagateDownStreamError: !1
                     });
-                    if (m && (k = await m.decompress(k, t.readMaxBytes)), v) throw NY(k, WA(w, _), y);
+                    if (m && (k = await m.decompress(k, t.readMaxBytes)), v) throw WY(k, WA(w, _), y);
                     return {
                         stream: !1,
                         service: e,
@@ -39004,8 +39012,8 @@ function iX(t) {
         },
         async stream(e, i, r, s, n, o, a) {
             const c = QA(i, t.binaryOptions, t.jsonOptions, t),
-                l = BY(t.jsonOptions);
-            return s = s === void 0 ? t.defaultTimeoutMs : s <= 0 ? void 0 : s, eX({
+                l = $Y(t.jsonOptions);
+            return s = s === void 0 ? t.defaultTimeoutMs : s <= 0 ? void 0 : s, tX({
                 interceptors: t.interceptors,
                 signal: r,
                 timeoutMs: s,
@@ -39029,7 +39037,7 @@ function iX(t) {
                             method: "POST",
                             header: u.header,
                             signal: u.signal,
-                            body: L_(u.message, cY(c.getI(t.useBinaryFormat)), uY(t.sendCompression, t.compressMinBytes), hY(), {
+                            body: L_(u.message, lY(c.getI(t.useBinaryFormat)), dY(t.sendCompression, t.compressMinBytes), fY(), {
                                 propagateDownStreamError: !0
                             })
                         }),
@@ -39040,7 +39048,7 @@ function iX(t) {
                             ...u,
                             header: d.header,
                             trailer: new Headers,
-                            message: L_(d.body, fY(t.readMaxBytes), dY(f ?? null, t.readMaxBytes), lY(c.getO(t.useBinaryFormat), aM, l), async function*(m) {
+                            message: L_(d.body, pY(t.readMaxBytes), hY(f ?? null, t.readMaxBytes), uY(c.getO(t.useBinaryFormat), aM, l), async function*(m) {
                                 let v = !1;
                                 for await (const y of m) {
                                     if (y.end) {
@@ -39071,31 +39079,31 @@ function iX(t) {
 var yM = g({
         "out-build/external/bufbuild/connect/protocol-connect/transport.js"() {
             "use strict";
-            Qi(), zY(), aa(), JY(), pM(), B_(), cM(), QY(), lt(), St(), bw(), na(), Tw(), tX(), Dw(), W_()
+            Qi(), KY(), aa(), YY(), pM(), B_(), cM(), ZY(), lt(), St(), bw(), na(), Tw(), iX(), Dw(), W_()
         }
     }),
-    rX = g({
+    sX = g({
         "out-build/external/bufbuild/connect/protocol/universal-handler-client.js"() {
             "use strict";
             lt(), St(), na(), N_()
         }
     }),
-    sX = g({
+    nX = g({
         "out-build/external/bufbuild/connect/router-transport.js"() {
             "use strict";
-            yM(), rX(), gM()
-        }
-    }),
-    nX = g({
-        "out-build/external/bufbuild/connect/index.js"() {
-            "use strict";
-            St(), lt(), bw(), mY(), EY(), gM(), Nc(), qY(), W_(), O_(), Nc(), sX()
+            yM(), sX(), gM()
         }
     }),
     oX = g({
+        "out-build/external/bufbuild/connect/index.js"() {
+            "use strict";
+            St(), lt(), bw(), wY(), kY(), gM(), Nc(), GY(), W_(), O_(), Nc(), nX()
+        }
+    }),
+    aX = g({
         "out-build/external/bufbuild/connect.js"() {
             "use strict";
-            nX(), yM()
+            oX(), yM()
         }
     }),
     vn, Nd, SM, bM, K_, _M, EM, kM, IM, CM, TM, PM, DM, xM, RM, AM, MM, OM, LM, NM, WM, FM, UM, BM, $M = g({
@@ -40029,7 +40037,7 @@ var yM = g({
             }
         }
     }),
-    VM, aX = g({
+    VM, cX = g({
         "out-build/proto/aiserver/v1/analytics_connectweb.js"() {
             "use strict";
             $M(), Qi(), VM = {
@@ -40088,17 +40096,17 @@ var yM = g({
         }
     });
 
-function cX(t) {
+function lX(t) {
     return t.lastNormalWindowWasOpenOnShutdown !== void 0 ? !t.lastNormalWindowWasOpenOnShutdown : !t.hasStoredNormalWindowState
 }
 
-function lX(t, e, i) {
+function uX(t, e, i) {
     if (!e) return t;
     switch (e.decision.variant) {
         case $s.ForceOpenGlass:
             return !0;
         case $s.OpenGlassWhenNoWindowsRestored:
-            return cX(i) ? !0 : t;
+            return lX(i) ? !0 : t;
         case $s.Control:
             return t;
         default:
@@ -40106,23 +40114,23 @@ function lX(t, e, i) {
     }
 }
 
-function uX(t) {
+function dX(t) {
     return async e => {
         const i = await t(e.url, {
             method: e.method,
             headers: e.header,
             signal: e.signal,
-            body: e.body ? await dX(e.body) : void 0
+            body: e.body ? await hX(e.body) : void 0
         });
         return {
             status: i.status,
             header: i.headers,
-            body: hX(i),
+            body: fX(i),
             trailer: new Headers
         }
     }
 }
-async function dX(t) {
+async function hX(t) {
     const e = [];
     let i = 0;
     for await (const n of t) e.push(n), i += n.byteLength;
@@ -40132,14 +40140,14 @@ async function dX(t) {
     for (const n of e) r.set(n, s), s += n.byteLength;
     return r.buffer
 }
-async function* hX(t) {
+async function* fX(t) {
     const e = new Uint8Array(await t.arrayBuffer());
     e.byteLength > 0 && (yield e)
 }
 var J_, jM, HM, Y_, $s, Aw, qM = g({
     "out-build/vs/platform/experiments/electron-main/firstWindowExperimentMainService.js"() {
         "use strict";
-        X(), Y(), gt(), Si(), oX(), aX(), $M(), J_ = J("firstWindowExperimentMainService"), jM = 500, HM = "https://api2.cursor.sh", Y_ = "00000000", $s = {
+        X(), Y(), gt(), Si(), aX(), cX(), $M(), J_ = J("firstWindowExperimentMainService"), jM = 500, HM = "https://api2.cursor.sh", Y_ = "00000000", $s = {
             Control: "control",
             OpenGlassWhenNoWindowsRestored: "open_glass_when_no_windows_restored",
             ForceOpenGlass: "force_open_glass"
@@ -40184,8 +40192,8 @@ var J_, jM, HM, Y_, $s, Aw, qM = g({
             async fetchBackendDecision() {
                 try {
                     const e = this.options.fetchFn ?? globalThis.fetch.bind(globalThis),
-                        r = await vY(VM, iX({
-                            httpClient: uX(e),
+                        r = await yY(VM, rX({
+                            httpClient: dX(e),
                             baseUrl: this.getBackendEndpoint(),
                             useBinaryFormat: !1,
                             interceptors: [],
@@ -40308,7 +40316,7 @@ var X_, GM = g({
             Ue(), X_ = Object.create(null)
         }
     }),
-    zM, fX = g({
+    zM, pX = g({
         "out-build/vs/base/common/codiconsLibrary.js"() {
             "use strict";
             GM(), zM = {
@@ -41134,7 +41142,7 @@ function KM() {
 var JM, bi, Mw = g({
         "out-build/vs/base/common/codicons.js"() {
             "use strict";
-            GM(), fX(), JM = {
+            GM(), pX(), JM = {
                 dialogError: h("dialog-error", "error"),
                 dialogWarning: h("dialog-warning", "warning"),
                 dialogInfo: h("dialog-info", "info"),
@@ -41254,7 +41262,7 @@ var JM, bi, Mw = g({
             })(Wd || (Wd = {}))
         }
     });
-async function pX(t, e, i) {
+async function gX(t, e, i) {
     let r = i && i.get("storage.serviceMachineId", -1) || null;
     if (r) return r;
     try {
@@ -41271,19 +41279,19 @@ async function pX(t, e, i) {
     }
     return i?.store("storage.serviceMachineId", r, -1, 1), r
 }
-var gX = g({
+var mX = g({
     "out-build/vs/platform/externalServices/common/serviceMachineId.js"() {
         "use strict";
         ct(), Li()
     }
 });
-async function mX(t, e, i, r, s, n) {
+async function wX(t, e, i, r, s, n) {
     const o = {
         "X-Market-Client-Id": `VSCode ${XM(t)}`,
         "User-Agent": `VSCode ${XM(t)} (Code)`
     };
     if (OR(t, e) && Jb(i) === 3) {
-        const a = await pX(e, r, s);
+        const a = await gX(e, r, s);
         o["X-Market-User-Id"] = a, o["VSCode-SessionId"] = n.machineId || a
     }
     return o
@@ -41292,10 +41300,10 @@ async function mX(t, e, i, r, s, n) {
 function XM(t) {
     return t.vscodeVersion
 }
-var wX = g({
+var vX = g({
     "out-build/vs/platform/externalServices/common/marketplace.js"() {
         "use strict";
-        gX(), Gn()
+        mX(), Gn()
     }
 });
 import ur from "electron";
@@ -41305,7 +41313,7 @@ import {
 var ZM, Z_, Fd, e7, t7 = g({
     "out-build/vs/platform/windows/electron-main/windowImpl.js"() {
         "use strict";
-        he(), ct(), Et(), Qa(), bo(), je(), Q(), $(), Be(), zs(), Z(), YM(), le(), Pe(), Uu(), et(), yc(), ln(), Ze(), Hu(), wX(), pt(), X(), It(), Y(), Qo(), ss(), gt(), ad(), ar(), As(), Si(), ac(), Wo(), an(), Du(), xi(), Vo(), yt(), (function(t) {
+        he(), ct(), Et(), Qa(), bo(), je(), Q(), $(), Be(), zs(), Z(), YM(), le(), Pe(), Uu(), et(), yc(), ln(), Ze(), Hu(), vX(), pt(), X(), It(), Y(), Qo(), ss(), gt(), ad(), ar(), As(), Si(), ac(), Wo(), an(), Du(), xi(), Vo(), yt(), (function(t) {
             t[t.NONE = 0] = "NONE", t[t.NAVIGATING = 1] = "NAVIGATING", t[t.READY = 2] = "READY"
         })(ZM || (ZM = {})), Z_ = class eN extends H {
             get lastFocusTime() {
@@ -41630,7 +41638,7 @@ var ZM, Z_, Fd, e7, t7 = g({
                 })
             }
             getMarketplaceHeaders() {
-                return this.marketplaceHeadersPromise || (this.marketplaceHeadersPromise = mX(this.productService, this.environmentMainService, this.configurationService, this.fileService, this.applicationStorageMainService, this.telemetryService)), this.marketplaceHeadersPromise
+                return this.marketplaceHeadersPromise || (this.marketplaceHeadersPromise = wX(this.productService, this.environmentMainService, this.configurationService, this.fileService, this.applicationStorageMainService, this.telemetryService)), this.marketplaceHeadersPromise
             }
             async onWindowError(e, i) {
                 switch (e) {
@@ -42072,7 +42080,7 @@ ${r.stack}`)
 });
 import Wc from "electron";
 
-function vX(t) {
+function yX(t) {
     const e = {
             openedWindows: []
         },
@@ -42092,7 +42100,7 @@ function eE(t) {
     }), e
 }
 
-function yX(t) {
+function SX(t) {
     return {
         lastActiveWindow: t.lastActiveWindow && tE(t.lastActiveWindow),
         lastPluginDevelopmentHostWindow: t.lastPluginDevelopmentHostWindow && tE(t.lastPluginDevelopmentHostWindow),
@@ -42113,7 +42121,7 @@ function tE(t) {
         uiState: t.uiState
     }
 }
-var Ow, Lw, SX = g({
+var Ow, Lw, bX = g({
     "out-build/vs/platform/windows/electron-main/windowsStateHandler.js"() {
         "use strict";
         $(), Z(), Pt(), le(), et(), It(), Y(), ar(), yt(), Du(), xi(), Lw = class extends H {
@@ -42127,7 +42135,7 @@ var Ow, Lw, SX = g({
                 return this._state
             }
             constructor(e, i, r, s, n) {
-                super(), this.windowsMainService = e, this.stateService = i, this.lifecycleMainService = r, this.logService = s, this.configurationService = n, this.lastClosedState = void 0, this.shuttingDown = !1, this._state = vX(this.stateService.getItem(Ow.windowsStateStorageKey)), this.registerListeners()
+                super(), this.windowsMainService = e, this.stateService = i, this.lifecycleMainService = r, this.logService = s, this.configurationService = n, this.lastClosedState = void 0, this.shuttingDown = !1, this._state = yX(this.stateService.getItem(Ow.windowsStateStorageKey)), this.registerListeners()
             }
             hasStoredNormalWindowState() {
                 return this.state.openedWindows.length > 0 || this.state.lastActiveWindow !== void 0
@@ -42160,7 +42168,7 @@ var Ow, Lw, SX = g({
                     const a = this.toWindowState(o);
                     return a.uiState.mode === 3 && (e.has(a.uiState.display) ? W && a.windowId !== r.lastActiveWindow?.windowId && !o.win?.isSimpleFullScreen() && (a.uiState.mode = 1) : e.add(a.uiState.display)), a
                 }));
-                const n = yX(r);
+                const n = SX(r);
                 this.stateService.setItem(Ow.windowsStateStorageKey, n), this.shuttingDown && this.logService.trace("[WindowsStateHandler] onBeforeShutdown", n)
             }
             onBeforeCloseWindow(e) {
@@ -42249,17 +42257,17 @@ var Ow, Lw, SX = g({
 });
 import * as i7 from "fs";
 import {
-    app as bX,
+    app as _X,
     BrowserWindow as Nw,
-    shell as _X
+    shell as EX
 } from "electron";
 import {
-    hostname as EX,
-    release as kX,
-    arch as IX
+    hostname as kX,
+    release as IX,
+    arch as CX
 } from "os";
 
-function CX(t) {
+function TX(t) {
     return Array.isArray(t) ? t.length > 0 : !!t
 }
 
@@ -42270,10 +42278,10 @@ function Ud(t) {
 function Fc(t) {
     return cr(t?.workspace)
 }
-var r7, Bd, Ww, TX = g({
+var r7, Bd, Ww, PX = g({
         "out-build/vs/platform/windows/electron-main/windowsMainService.js"() {
             "use strict";
-            dl(), ti(), he(), Et(), Q(), sr(), Rn(), $(), Be(), xe(), zs(), Z(), ws(), Pt(), Ue(), le(), Pe(), Uu(), et(), ln(), Ze(), qM(), pt(), X(), It(), Y(), od(), ad(), Vu(), ar(), an(), t7(), yt(), bD(), SX(), xi(), KS(), Om(), Vo(), ac(), ss(), Wo(), Qo(), Ku(), yc(), Ii(), r7 = ["new-window", "reuse-window", "classic", "add", "remove", "diff", "merge", "wait", "goto", "remote", "folder-uri", "file-uri", "extensionDevelopmentPath", "extensionTestsPath", "extensionDevelopmentKind", "extensionEnvironment", "debugId", "debugRenderer", "enable-smoke-test-driver", "smoke-test-use-real-agent-http", "smoke-test-nal-stream-timeout-ms", "smoke-test-nal-endless-retries", "smoke-test-nal-retry-delay-ms", "debug-slow-window-unload-ms", "headless", "test-backend-url", "test-feature-flags", "test-experiments", "test-dynamic-configs", "test-composer-chat-script"], Bd = Object.create(null), Ww = class extends H {
+            dl(), ti(), he(), Et(), Q(), sr(), Rn(), $(), Be(), xe(), zs(), Z(), ws(), Pt(), Ue(), le(), Pe(), Uu(), et(), ln(), Ze(), qM(), pt(), X(), It(), Y(), od(), ad(), Vu(), ar(), an(), t7(), yt(), bD(), bX(), xi(), KS(), Om(), Vo(), ac(), ss(), Wo(), Qo(), Ku(), yc(), Ii(), r7 = ["new-window", "reuse-window", "classic", "add", "remove", "diff", "merge", "wait", "goto", "remote", "folder-uri", "file-uri", "extensionDevelopmentPath", "extensionTestsPath", "extensionDevelopmentKind", "extensionEnvironment", "debugId", "debugRenderer", "enable-smoke-test-driver", "smoke-test-use-real-agent-http", "smoke-test-nal-stream-timeout-ms", "smoke-test-nal-endless-retries", "smoke-test-nal-retry-delay-ms", "debug-slow-window-unload-ms", "headless", "test-backend-url", "test-feature-flags", "test-experiments", "test-dynamic-configs", "test-composer-chat-script"], Bd = Object.create(null), Ww = class extends H {
                 constructor(e, i, r, s, n, o, a, c, l, u, d, f, p, m, v, y, w, _, k, L, C, O, N, j) {
                     super(), this.machineId = e, this.macMachineId = i, this.sqmId = r, this.devDeviceId = s, this.initialUserEnv = n, this.logService = o, this.loggerService = a, this.policyService = l, this.environmentMainService = u, this.userDataProfilesMainService = d, this.lifecycleMainService = f, this.backupMainService = p, this.configurationService = m, this.workspacesHistoryMainService = v, this.workspacesManagementMainService = y, this.instantiationService = w, this.dialogMainService = _, this.fileService = k, this.protocolMainService = L, this.themeMainService = C, this.auxiliaryWindowsMainService = O, this.firstWindowExperimentMainService = N, this.cssDevelopmentService = j, this._onDidOpenWindow = this._register(new x), this.onDidOpenWindow = this._onDidOpenWindow.event, this._onDidSignalReadyWindow = this._register(new x), this.onDidSignalReadyWindow = this._onDidSignalReadyWindow.event, this._onDidDestroyWindow = this._register(new x), this.onDidDestroyWindow = this._onDidDestroyWindow.event, this._onDidChangeWindowsCount = this._register(new x), this.onDidChangeWindowsCount = this._onDidChangeWindowsCount.event, this._onDidMaximizeWindow = this._register(new x), this.onDidMaximizeWindow = this._onDidMaximizeWindow.event, this._onDidUnmaximizeWindow = this._register(new x), this.onDidUnmaximizeWindow = this._onDidUnmaximizeWindow.event, this._onDidChangeFullScreen = this._register(new x), this.onDidChangeFullScreen = this._onDidChangeFullScreen.event, this._onDidTriggerSystemContextMenu = this._register(new x), this.onDidTriggerSystemContextMenu = this._onDidTriggerSystemContextMenu.event, this.windows = new Map, this.windowsStateHandler = this._register(new Lw(this, c, this.lifecycleMainService, this.logService, this.configurationService)), this.registerListeners()
                 }
@@ -42343,7 +42351,7 @@ var r7, Bd, Ww, TX = g({
                 }
                 async resolveGlassCliFolderTarget(e) {
                     const i = e.cli;
-                    if (e.context !== 0 || !i || i._?.length !== 1 || r7.some(n => CX(i[n])) || !(e.initialStartup ? this.windowsStateHandler.state.lastActiveWindow?.uiState?.glassMode === !0 : this.getLastActiveWindow()?.config?.glass === !0)) return;
+                    if (e.context !== 0 || !i || i._?.length !== 1 || r7.some(n => TX(i[n])) || !(e.initialStartup ? this.windowsStateHandler.state.lastActiveWindow?.uiState?.glassMode === !0 : this.getLastActiveWindow()?.config?.glass === !0)) return;
                     const s = f0(Oi(i._[0]), ms());
                     try {
                         if (!(await i7.promises.stat(s)).isDirectory()) return
@@ -42894,7 +42902,7 @@ var r7, Bd, Ww, TX = g({
                         }
                         return this.doResolveFilePath(e, i, !0)
                     }
-                    if (s === 2) return _X.openExternal("https://aka.ms/vscode-windows-unc"), this.onUNCHostNotAllowed(e, i)
+                    if (s === 2) return EX.openExternal("https://aka.ms/vscode-windows-unc"), this.onUNCHostNotAllowed(e, i)
                 }
                 doResolveRemotePath(e, i) {
                     const r = e.charCodeAt(0),
@@ -43069,13 +43077,13 @@ var r7, Bd, Ww, TX = g({
                             isInitialStartup: e.initialStartup,
                             perfMarks: p1(),
                             os: {
-                                release: kX(),
-                                hostname: EX(),
-                                arch: IX()
+                                release: IX(),
+                                hostname: kX(),
+                                arch: CX()
                             },
                             autoDetectHighContrast: i?.autoDetectHighContrast ?? !0,
                             autoDetectColorScheme: i?.autoDetectColorScheme ?? !1,
-                            accessibilitySupport: bX.accessibilitySupportEnabled,
+                            accessibilitySupport: _X.accessibilitySupportEnabled,
                             colorScheme: u,
                             policiesData: this.policyService.serialize(),
                             continueOn: this.environmentMainService.continueOn,
@@ -43096,7 +43104,7 @@ var r7, Bd, Ww, TX = g({
                                 openWindowCount: this.getWindowCount(),
                                 hasExplicitWindowMode: this.hasExplicitInitialWindowModeArg(a, c)
                             });
-                        d.glass = lX(d.glass, m, p), d.colorScheme = this.themeMainService.getColorScheme({
+                        d.glass = uX(d.glass, m, p), d.colorScheme = this.themeMainService.getColorScheme({
                             isGlass: d.glass ?? !1
                         }), st("code/willCreateCodeWindow");
                         const v = o = this.instantiationService.createInstance(Fd, {
@@ -43221,7 +43229,7 @@ var r7, Bd, Ww, TX = g({
             }, Ww = __decorate([__param(5, z), __param(6, qn), __param(7, Ji), __param(8, Hn), __param(9, Ke), __param(10, Ds), __param(11, it), __param(12, uc), __param(13, nt), __param(14, pd), __param(15, $n), __param(16, Ss), __param(17, is), __param(18, At), __param(19, Pc), __param(20, Oo), __param(21, qo), __param(22, J_), __param(23, Go)], Ww)
         }
     }),
-    s7, PX = g({
+    s7, DX = g({
         "out-build/vs/platform/windows/node/windowTracker.js"() {
             "use strict";
             he(), Q(), $(), s7 = class extends H {
@@ -43248,7 +43256,7 @@ var r7, Bd, Ww, TX = g({
             }
         }
     }),
-    Fw, DX = g({
+    Fw, xX = g({
         "out-build/vs/platform/workspaces/electron-main/workspacesMainService.js"() {
             "use strict";
             Uu(), yt(), Om(), Vo(), Fw = class {
@@ -43290,7 +43298,7 @@ var r7, Bd, Ww, TX = g({
         }
     });
 
-function xX(t, e = W) {
+function RX(t, e = W) {
     const i = e ? !!t.meta : !!t.control,
         r = !!t.shift,
         s = !!t.alt,
@@ -43368,13 +43376,13 @@ function xX(t, e = W) {
     }
     return o
 }
-var RX = g({
+var AX = g({
         "out-build/vs/platform/browserView/common/browserViewKeyboardShortcuts.js"() {
             "use strict";
             Z()
         }
     }),
-    n7, AX = g({
+    n7, MX = g({
         "out-build/vs/platform/browserView/common/webviewNetworkTracker.js"() {
             "use strict";
             n7 = class {
@@ -43436,16 +43444,16 @@ var RX = g({
         }
     });
 import {
-    WebContentsView as MX,
+    WebContentsView as OX,
     shell as o7,
-    dialog as OX,
-    session as LX,
+    dialog as LX,
+    session as NX,
     webContents as a7
 } from "electron";
 var iE, c7, Uw, l7 = g({
         "out-build/vs/platform/browserView/electron-main/browserViewMainService.js"() {
             "use strict";
-            Q(), Qa(), $(), Be(), X(), Y(), ac(), yt(), Ku(), As(), ln(), RX(), AX(), iE = J("browserViewMainService"), c7 = class extends H {
+            Q(), Qa(), $(), Be(), X(), Y(), ac(), yt(), Ku(), As(), ln(), AX(), MX(), iE = J("browserViewMainService"), c7 = class extends H {
                 constructor(t, e, i, r) {
                     super(), this.consoleLogs = [], this.networkRequests = [], this.onDidStartLoading = this._register(new x), this.onDidStopLoading = this._register(new x), this.onDidFinishLoad = this._register(new x), this.onDidFailLoad = this._register(new x), this.onDidNavigate = this._register(new x), this.onDidNavigateInPage = this._register(new x), this.onWillNavigate = this._register(new x), this.onPageTitleUpdated = this._register(new x), this.onBrowserMessage = this._register(new x), this.onDidFocus = this._register(new x), this.onDidBlur = this._register(new x), this.onCertificateError = this._register(new x), this.browserView = t, this.viewId = e, this.partition = i, this.isVisible = !1, this.parentWindow = r, this.injectedColorSchemeCSSKey = void 0;
                     const s = t.webContents.session;
@@ -43470,7 +43478,7 @@ var iE, c7, Uw, l7 = g({
                 setupKeyboardShortcuts() {
                     this.inputEventHandler = (t, e) => {
                         if (e.type !== "keyDown") return;
-                        const i = xX(e);
+                        const i = RX(e);
                         i && (t.preventDefault(), this.handleShortcut(i))
                     }, this.browserView.webContents.on("before-input-event", this.inputEventHandler)
                 }
@@ -43606,7 +43614,7 @@ var iE, c7, Uw, l7 = g({
                     return ["http", "https", "data", "blob", "about"].includes(e.toLowerCase())
                 }
                 async confirmExternalSchemeNavigation(e, i, r) {
-                    return this.logService.info(`[BrowserViewMainService] Requesting user confirmation for ${i}: URL`), (await OX.showMessageBox(r, {
+                    return this.logService.info(`[BrowserViewMainService] Requesting user confirmation for ${i}: URL`), (await LX.showMessageBox(r, {
                         type: "question",
                         buttons: ["Open", "Cancel"],
                         defaultId: 1,
@@ -43696,7 +43704,7 @@ This will open in an external application.`,
                         this.logService.error(`[BrowserViewMainService] Cannot create browser view: window ${e} not found`);
                         return
                     }
-                    const o = new MX({
+                    const o = new OX({
                         webPreferences: {
                             partition: i,
                             contextIsolation: !0,
@@ -44121,7 +44129,7 @@ This will open in an external application.`,
                     const i = a7.fromId(e);
                     if (!i || i.getType() !== "webview") return;
                     const r = i.session;
-                    if (r === LX.defaultSession) return;
+                    if (r === NX.defaultSession) return;
                     const s = r.storagePath ?? "__default__";
                     this.webviewTracker.setup(s, e) && (r.webRequest.onBeforeRequest((o, a) => {
                         this.webviewTracker.onBeforeRequest(s, o.id, o.url, o.method, o.resourceType), a({})
@@ -44435,7 +44443,7 @@ This will open in an external application.`,
             }, Uw = __decorate([__param(0, z), __param(1, mt), __param(2, qo), __param(3, Oo), __param(4, Uo), __param(5, is)], Uw)
         }
     }),
-    u7, NX = g({
+    u7, WX = g({
         "out-build/vs/platform/browserView/electron-main/browserViewChannel.js"() {
             "use strict";
             u7 = class {
@@ -44732,7 +44740,7 @@ This will open in an external application.`,
             }
         }
     }),
-    d7, WX = g({
+    d7, FX = g({
         "out-build/vs/platform/policy/common/policyIpc.js"() {
             "use strict";
             Q(), $(), ss(), d7 = class {
@@ -44763,7 +44771,7 @@ This will open in an external application.`,
         }
     });
 
-function FX(t) {
+function UX(t) {
     return t.map(e => {
         const [i, r] = e.split("@");
         return {
@@ -44773,10 +44781,10 @@ function FX(t) {
     })
 }
 
-function UX(t) {
+function BX(t) {
     return t.map(e => e.split("@")[0])
 }
-var h7, f7, rE, p7, g7, Uc, m7, BX, sE = g({
+var h7, f7, rE, p7, g7, Uc, m7, $X, sE = g({
     "out-build/vs/platform/extensions/common/extensions.js"() {
         "use strict";
         pi(), X(), Vu(), h7 = "extensions.user.cache", f7 = "extensions.builtin.cache", rE = "undefined_publisher", (function(t) {
@@ -44827,7 +44835,7 @@ var h7, f7, rE, p7, g7, Uc, m7, BX, sE = g({
             } [Symbol.iterator]() {
                 return this._map[Symbol.iterator]()
             }
-        }, BX = J("IBuiltinExtensionsScannerService")
+        }, $X = J("IBuiltinExtensionsScannerService")
     }
 });
 
@@ -44835,18 +44843,18 @@ function $d(t, e) {
     return t.uuid && e.uuid ? t.uuid === e.uuid : t.id === e.id ? !0 : Xy(t.id, e.id) === 0
 }
 
-function $X(t, e) {
+function VX(t, e) {
     return `${t}.${e}`
 }
 
-function VX(t) {
+function jX(t) {
     return t.toLowerCase()
 }
 
-function jX(t, e) {
-    return VX($X(t ?? rE, e))
+function HX(t, e) {
+    return jX(VX(t ?? rE, e))
 }
-async function HX(t, e) {
+async function qX(t, e) {
     if (!Re) return !1;
     let i;
     try {
@@ -44860,23 +44868,23 @@ async function HX(t, e) {
     }
     return !!i && (i.match(/^ID=([^\u001b\r\n]*)/m) || [])[1] === "alpine"
 }
-async function qX(t, e) {
-    const i = await HX(t, e),
+async function GX(t, e) {
+    const i = await qX(t, e),
         r = tH(i ? "alpine" : Wa, NT);
     return e.debug("ComputeTargetPlatform:", r), r
 }
-var GX, w7 = g({
+var zX, w7 = g({
     "out-build/vs/platform/extensionManagement/common/extensionManagementUtil.js"() {
         "use strict";
-        pi(), xg(), sE(), Z(), le(), je(), ws(), Gn(), Ue(), GX = new Uc("pprice.better-merge")
+        pi(), xg(), sE(), Z(), le(), je(), ws(), Gn(), Ue(), zX = new Uc("pprice.better-merge")
     }
 });
 
 function v7(t) {
-    return ii(t) && iH(t.identifier) && (zX(t.location) || Yt(t.location) && t.location) && (Js(t.relativeLocation) || Yt(t.relativeLocation)) && t.version && Yt(t.version)
+    return ii(t) && iH(t.identifier) && (KX(t.location) || Yt(t.location) && t.location) && (Js(t.relativeLocation) || Yt(t.relativeLocation)) && t.version && Yt(t.version)
 }
 
-function zX(t) {
+function KX(t) {
     return t ? Yt(t.path) && Yt(t.scheme) : !1
 }
 var y7, Vd, Bc, Bw, $w = g({
@@ -45113,13 +45121,13 @@ function nE(t) {
             return ""
     }
 }
-var KX = g({
+var JX = g({
         "out-build/vs/base/common/jsonErrorMessages.js"() {
             "use strict";
             Pe()
         }
     }),
-    jd, Me, JX, YX, S7, XX, QX, ZX, eQ, tQ, iQ, rQ, b7, sQ, nQ, oQ, _7, aQ, cQ, lQ, uQ, dQ, hQ, fQ, pQ, gQ, mQ, wQ, vQ, yQ, SQ, bQ, _Q, EQ, kQ, IQ, CQ, TQ, PQ, E7 = g({
+    jd, Me, YX, XX, S7, QX, ZX, eQ, tQ, iQ, rQ, sQ, b7, nQ, oQ, aQ, _7, cQ, lQ, uQ, dQ, hQ, fQ, pQ, gQ, mQ, wQ, vQ, yQ, SQ, bQ, _Q, EQ, kQ, IQ, CQ, TQ, PQ, DQ, E7 = g({
         "out-build/vs/base/common/semver/semver.js"() {
             "use strict";
             jd = {}, Me = {
@@ -45670,10 +45678,10 @@ var KX = g({
                     return t[r](n, n.exports, i), n.exports
                 })(97);
                 var t, e
-            }), JX = Me.exports.SEMVER_SPEC_VERSION, YX = Me.exports.parse, S7 = Me.exports.valid, XX = Me.exports.coerce, QX = Me.exports.clean, ZX = Me.exports.inc, eQ = Me.exports.major, tQ = Me.exports.minor, iQ = Me.exports.patch, rQ = Me.exports.prerelease, b7 = Me.exports.gt, sQ = Me.exports.gte, nQ = Me.exports.lt, oQ = Me.exports.lte, _7 = Me.exports.eq, aQ = Me.exports.neq, cQ = Me.exports.cmp, lQ = Me.exports.compare, uQ = Me.exports.rcompare, dQ = Me.exports.compareIdentifiers, hQ = Me.exports.rcompareIdentifiers, fQ = Me.exports.compareBuild, pQ = Me.exports.sort, gQ = Me.exports.rsort, mQ = Me.exports.diff, wQ = Me.exports.validRange, vQ = Me.exports.satisfies, yQ = Me.exports.maxSatisfying, SQ = Me.exports.minSatisfying, bQ = Me.exports.minVersion, _Q = Me.exports.gtr, EQ = Me.exports.ltr, kQ = Me.exports.outside, IQ = Me.exports.intersects, CQ = Me.exports.SemVer, TQ = Me.exports.Comparator, PQ = Me.exports.Range
+            }), YX = Me.exports.SEMVER_SPEC_VERSION, XX = Me.exports.parse, S7 = Me.exports.valid, QX = Me.exports.coerce, ZX = Me.exports.clean, eQ = Me.exports.inc, tQ = Me.exports.major, iQ = Me.exports.minor, rQ = Me.exports.patch, sQ = Me.exports.prerelease, b7 = Me.exports.gt, nQ = Me.exports.gte, oQ = Me.exports.lt, aQ = Me.exports.lte, _7 = Me.exports.eq, cQ = Me.exports.neq, lQ = Me.exports.cmp, uQ = Me.exports.compare, dQ = Me.exports.rcompare, hQ = Me.exports.compareIdentifiers, fQ = Me.exports.rcompareIdentifiers, pQ = Me.exports.compareBuild, gQ = Me.exports.sort, mQ = Me.exports.rsort, wQ = Me.exports.diff, vQ = Me.exports.validRange, yQ = Me.exports.satisfies, SQ = Me.exports.maxSatisfying, bQ = Me.exports.minSatisfying, _Q = Me.exports.minVersion, EQ = Me.exports.gtr, kQ = Me.exports.ltr, IQ = Me.exports.outside, CQ = Me.exports.intersects, TQ = Me.exports.SemVer, PQ = Me.exports.Comparator, DQ = Me.exports.Range
         }
     }),
-    k7, I7, DQ = g({
+    k7, I7, xQ = g({
         "out-build/vs/platform/extensions/common/extensionsApiProposals.js"() {
             "use strict";
             k7 = {
@@ -46111,12 +46119,12 @@ var KX = g({
         }
     });
 
-function xQ(t) {
+function RQ(t) {
     return t = t.trim(), t === "*" || cE.test(t)
 }
 
 function oE(t) {
-    if (!xQ(t)) return null;
+    if (!RQ(t)) return null;
     if (t = t.trim(), t === "*") return {
         hasCaret: !1,
         hasGreaterEquals: !1,
@@ -46171,7 +46179,7 @@ function aE(t) {
     }
 }
 
-function RQ(t, e, i) {
+function AQ(t, e, i) {
     let r;
     typeof t == "string" ? r = aE(oE(t)) : r = t;
     let s;
@@ -46191,7 +46199,7 @@ function RQ(t, e, i) {
     return n.isMinimum ? o > l ? !0 : o < l ? !1 : a > u ? !0 : a < u || s && s < f ? !1 : c >= d : (o === 1 && l === 0 && (!p || !m || !v) && (l = 1, u = 0, d = 0, p = !0, m = !1, v = !1), o < l ? !1 : o > l ? !p : a < u ? !1 : a > u ? !m : c < d ? !1 : c > d ? !v : !(s && s < f))
 }
 
-function AQ(t, e, i, r, s, n) {
+function MQ(t, e, i, r, s, n) {
     const o = [];
     if (typeof r.publisher < "u" && typeof r.publisher != "string") return o.push([He.Error, S(1998, null)]), o;
     if (typeof r.name != "string") return o.push([He.Error, S(1999, null, "name")]), o;
@@ -46219,26 +46227,26 @@ function AQ(t, e, i, r, s, n) {
     }
     if (!S7(r.version)) return o.push([He.Error, S(2011, null)]), o;
     const a = [];
-    if (!MQ(t, e, r, s, a))
+    if (!OQ(t, e, r, s, a))
         for (const l of a) o.push([He.Error, l]);
     if (n && r.enabledApiProposals?.length) {
         const l = [];
-        if (!OQ([...r.enabledApiProposals], l))
+        if (!LQ([...r.enabledApiProposals], l))
             for (const u of l) o.push([He.Error, u])
     }
     return o
 }
 
-function MQ(t, e, i, r, s) {
-    return r || typeof i.main > "u" && typeof i.browser > "u" || i.publisher === "TypeScriptTeam" && i.name === "native-preview" ? !0 : LQ(t, e, i.engines.vscode, s)
+function OQ(t, e, i, r, s) {
+    return r || typeof i.main > "u" && typeof i.browser > "u" || i.publisher === "TypeScriptTeam" && i.name === "native-preview" ? !0 : NQ(t, e, i.engines.vscode, s)
 }
 
-function OQ(t, e) {
+function LQ(t, e) {
     if (t.length === 0) return !0;
     const i = Array.isArray(e) ? e : void 0,
         r = (i ? void 0 : e) ?? I7,
         s = [],
-        n = FX(t);
+        n = UX(t);
     for (const {
             proposalName: o,
             version: a
@@ -46250,13 +46258,13 @@ function OQ(t, e) {
     return s.length ? (i && (s.length === 1 ? i.push(S(2012, null, s[0])) : i.push(S(2013, null, s.slice(0, s.length - 1).map(o => `'${o}'`).join(", "), s[s.length - 1]))), !1) : !0
 }
 
-function LQ(t, e, i, r = []) {
+function NQ(t, e, i, r = []) {
     const s = aE(oE(i));
     if (!s) return r.push(S(2014, null, i)), !1;
     if (s.majorBase === 0) {
         if (!s.majorMustEqual || !s.minorMustEqual) return r.push(S(2015, null, i)), !1
     } else if (!s.majorMustEqual) return r.push(S(2016, null, i)), !1;
-    return RQ(t, e, s) ? !0 : (r.push(S(2017, null, t, i)), !1)
+    return AQ(t, e, s) ? !0 : (r.push(S(2017, null, t, i)), !1)
 }
 
 function C7(t) {
@@ -46265,23 +46273,23 @@ function C7(t) {
         if (typeof t[e] != "string") return !1;
     return !0
 }
-var cE, T7, NQ = g({
+var cE, T7, WQ = g({
     "out-build/vs/platform/extensions/common/extensionValidator.js"() {
         "use strict";
-        Pt(), Ng(), Pe(), E7(), sE(), DQ(), cE = /^(\^|>=)?((\d+)|x)\.((\d+)|x)\.((\d+)|x)(\-.*)?$/, T7 = /^-(\d{4})(\d{2})(\d{2})$/
+        Pt(), Ng(), Pe(), E7(), sE(), xQ(), cE = /^(\^|>=)?((\d+)|x)\.((\d+)|x)\.((\d+)|x)(\-.*)?$/, T7 = /^-(\d{4})(\d{2})(\d{2})$/
     }
 });
 
-function WQ(t, e, i, r) {
+function FQ(t, e, i, r) {
     try {
-        FQ(t, e, i, r)
+        UQ(t, e, i, r)
     } catch (s) {
         t.error(s?.message ?? s)
     }
     return e
 }
 
-function FQ(t, e, i, r) {
+function UQ(t, e, i, r) {
     const s = (n, o, a) => {
         const c = n[o];
         if (Yt(c)) {
@@ -46313,7 +46321,7 @@ function FQ(t, e, i, r) {
     };
     for (const n in e) e.hasOwnProperty(n) && s(e, n)
 }
-var UQ = g({
+var BQ = g({
         "out-build/vs/platform/extensionManagement/common/extensionNls.js"() {
             "use strict";
             Ue(), Pe()
@@ -46322,7 +46330,7 @@ var UQ = g({
     lE, P7, Vw, $c, Hd, qd, D7, x7 = g({
         "out-build/vs/platform/extensionManagement/common/extensionsScannerService.js"() {
             "use strict";
-            ti(), he(), Br(), ct(), je(), un(), KX(), $(), Be(), xe(), Z(), Pt(), E7(), Ng(), le(), Pe(), Ni(), w7(), sE(), NQ(), pt(), X(), Y(), gt(), Q(), Gp(), $w(), ts(), Ps(), UQ(), (function(t) {
+            ti(), he(), Br(), ct(), je(), un(), JX(), $(), Be(), xe(), Z(), Pt(), E7(), Ng(), le(), Pe(), Ni(), w7(), sE(), WQ(), pt(), X(), Y(), gt(), Q(), Gp(), $w(), ts(), Ps(), BQ(), (function(t) {
                 function e(i, r) {
                     if (i === r) return !0;
                     const s = Object.keys(i),
@@ -46341,7 +46349,7 @@ var UQ = g({
                     super(), this.systemExtensionsLocation = e, this.userExtensionsLocation = i, this.extensionsControlLocation = r, this.currentProfile = s, this.userDataProfilesService = n, this.extensionsProfileScannerService = o, this.fileService = a, this.logService = c, this.environmentService = l, this.productService = u, this.uriIdentityService = d, this.instantiationService = f, this._onDidChangeCache = this._register(new x), this.onDidChangeCache = this._onDidChangeCache.event, this.initializeDefaultProfileExtensionsPromise = void 0, this.systemExtensionsCachedScanner = this._register(this.instantiationService.createInstance(qd, this.currentProfile)), this.userExtensionsCachedScanner = this._register(this.instantiationService.createInstance(qd, this.currentProfile)), this.extensionsScanner = this._register(this.instantiationService.createInstance(Hd)), this._register(this.systemExtensionsCachedScanner.onDidChangeCache(() => this._onDidChangeCache.fire(0))), this._register(this.userExtensionsCachedScanner.onDidChangeCache(() => this._onDidChangeCache.fire(1)))
                 }
                 getTargetPlatform() {
-                    return this._targetPlatformPromise || (this._targetPlatformPromise = qX(this.fileService, this.logService)), this._targetPlatformPromise
+                    return this._targetPlatformPromise || (this._targetPlatformPromise = GX(this.fileService, this.logService)), this._targetPlatformPromise
                 }
                 async scanAllExtensions(e, i) {
                     const [r, s] = await Promise.all([this.scanSystemExtensions(e), this.scanUserExtensions(i)]);
@@ -46645,7 +46653,7 @@ var UQ = g({
                         size: n.__metadata.size,
                         targetPlatform: n.__metadata.targetPlatform
                     }), delete n.__metadata;
-                    const a = jX(n.publisher, n.name),
+                    const a = HX(n.publisher, n.name),
                         c = o?.id ? {
                             id: a,
                             uuid: o.id
@@ -46672,12 +46680,12 @@ var UQ = g({
                         validations: r,
                         preRelease: !!o?.preRelease
                     };
-                    return e.validate && (d = this.validate(d, e)), n.enabledApiProposals && (!this.environmentService.isBuilt || this.extensionsEnabledWithApiProposalVersion.includes(a.toLowerCase())) && (n.originalEnabledApiProposals = n.enabledApiProposals, n.enabledApiProposals = UX([...n.enabledApiProposals])), d
+                    return e.validate && (d = this.validate(d, e)), n.enabledApiProposals && (!this.environmentService.isBuilt || this.extensionsEnabledWithApiProposalVersion.includes(a.toLowerCase())) && (n.originalEnabledApiProposals = n.enabledApiProposals, n.enabledApiProposals = BX([...n.enabledApiProposals])), d
                 }
                 validate(e, i) {
                     let r = e.isValid;
                     const s = this.environmentService.isBuilt && this.extensionsEnabledWithApiProposalVersion.includes(e.identifier.id.toLowerCase()),
-                        n = AQ(i.productVersion, i.productDate, i.location, e.manifest, e.isBuiltin, s);
+                        n = MQ(i.productVersion, i.productDate, i.location, e.manifest, e.isBuiltin, s);
                     for (const [o, a] of n) o === He.Error && (r = !1, this.logService.error(this.formatMessage(i.location, a)));
                     return e.isValid = r, e.validations = [...e.validations, ...n], e
                 }
@@ -46714,7 +46722,7 @@ var UQ = g({
                         }), i;
                         if (hc(s) !== "object") return this.logService.error(this.formatMessage(e, S(1983, null, s.default?.path))), i;
                         const a = s.values || Object.create(null);
-                        return WQ(this.logService, i, a, o)
+                        return FQ(this.logService, i, a, o)
                     } catch {}
                     return i
                 }
@@ -46886,7 +46894,7 @@ var UQ = g({
             }
         }
     }),
-    jw, BQ = g({
+    jw, $Q = g({
         "out-build/vs/platform/extensionManagement/node/extensionsScannerService.js"() {
             "use strict";
             le(), Ni(), $w(), x7(), pt(), X(), Y(), gt(), Ps(), ts(), jw = class extends D7 {
@@ -46896,7 +46904,7 @@ var UQ = g({
             }, jw = __decorate([__param(0, es), __param(1, Bc), __param(2, At), __param(3, z), __param(4, Zr), __param(5, Ye), __param(6, Yi), __param(7, Ss)], jw)
         }
     }),
-    Hw, $Q = g({
+    Hw, VQ = g({
         "out-build/vs/platform/userDataProfile/electron-main/userDataProfilesHandler.js"() {
             "use strict";
             $(), It(), Wo(), xi(), he(), yt(), Hw = class extends H {
@@ -46922,7 +46930,7 @@ var UQ = g({
             }, Hw = __decorate([__param(0, it), __param(1, Ds), __param(2, mt)], Hw)
         }
     }),
-    R7, VQ = g({
+    R7, jQ = g({
         "out-build/vs/platform/userDataProfile/electron-main/userDataProfileStorageIpc.js"() {
             "use strict";
             Q(), $(), AS(), R7 = class extends H {
@@ -47002,15 +47010,15 @@ var UQ = g({
             }
         }
     });
-async function jQ(t, e) {
+async function HQ(t, e) {
     let i = t.getItem(LS);
     return (typeof i != "string" || W && i === "6c9d2bc8f91b89624add29c0abeae7fb42bf539fa1cdb2e3e57cd668fa9bcead") && (i = await Bq(e.error.bind(e))), i
 }
-async function HQ(t, e) {
+async function qQ(t, e) {
     let i = t.getItem(NS);
     return typeof i != "string" && (i = await zD(e.error.bind(e))), i
 }
-async function qQ(t, e) {
+async function GQ(t, e) {
     let i = t.getItem(WS);
     return typeof i != "string" && (i = await jq(e.error.bind(e))), i
 }
@@ -47018,40 +47026,40 @@ async function A7(t, e) {
     let i = t.getItem(Pg);
     return typeof i != "string" && (i = await JD(e.error.bind(e))), i
 }
-var GQ = g({
+var zQ = g({
     "out-build/vs/platform/telemetry/node/telemetryUtils.js"() {
         "use strict";
         Z(), zu(), Si()
     }
 });
-async function zQ(t, e) {
-    const i = await jQ(t, e);
-    return t.setItem(LS, i), i
-}
 async function KQ(t, e) {
     const i = await HQ(t, e);
-    return t.setItem(NS, i), i
+    return t.setItem(LS, i), i
 }
 async function JQ(t, e) {
     const i = await qQ(t, e);
-    return t.setItem(WS, i), i
+    return t.setItem(NS, i), i
 }
 async function YQ(t, e) {
+    const i = await GQ(t, e);
+    return t.setItem(WS, i), i
+}
+async function XQ(t, e) {
     const i = await A7(t, e);
     return t.setItem(Pg, i), i
 }
-async function XQ(t, e) {
+async function QQ(t, e) {
     const i = await JD(e.error.bind(e)),
         r = await A7(t, e);
     i !== r && t.setItem(Pg, i)
 }
-var QQ = g({
+var ZQ = g({
         "out-build/vs/platform/telemetry/electron-main/telemetryUtils.js"() {
             "use strict";
-            Si(), GQ(), zu()
+            Si(), zQ(), zu()
         }
     }),
-    qw, ZQ = g({
+    qw, eZ = g({
         "out-build/vs/platform/extensionManagement/node/extensionsProfileScannerService.js"() {
             "use strict";
             Y(), ts(), Ps(), $w(), pt(), Ni(), le(), qw = class extends Bw {
@@ -47061,7 +47069,7 @@ var QQ = g({
             }, qw = __decorate([__param(0, Zr), __param(1, At), __param(2, es), __param(3, Yi), __param(4, z)], qw)
         }
     }),
-    M7, eZ = g({
+    M7, tZ = g({
         "out-build/vs/platform/log/electron-main/logIpc.js"() {
             "use strict";
             Ii(), le(), Y(), M7 = class {
@@ -47128,7 +47136,7 @@ var QQ = g({
             }
         }
     }),
-    uE, Gw, zw, tZ = g({
+    uE, Gw, zw, iZ = g({
         "out-build/vs/platform/utilityProcess/electron-main/utilityProcessWorkerMainService.js"() {
             "use strict";
             $(), X(), Y(), yt(), jo(), Si(), Es(), Q(), he(), It(), uE = J("utilityProcessWorker"), Gw = class extends H {
@@ -47201,16 +47209,16 @@ var QQ = g({
             }, zw = __decorate([__param(0, z), __param(1, mt), __param(2, yi), __param(3, it)], zw)
         }
     }),
-    O7, iZ = g({
+    O7, rZ = g({
         "out-build/vs/platform/utilityProcess/common/utilityProcessWorkerService.js"() {
             "use strict";
             O7 = "utilityProcessWorker"
         }
     }),
-    rZ, L7, N7, W7, F7, U7, B7, Vc, $7, sZ, Zi, V7, j7, H7, q7, G7, z7, K7, J7, Y7, X7, dE, nZ, Q7 = g({
+    sZ, L7, N7, W7, F7, U7, B7, Vc, $7, nZ, Zi, V7, j7, H7, q7, G7, z7, K7, J7, Y7, X7, dE, oZ, Q7 = g({
         "out-build/vs/platform/terminal/common/terminal.js"() {
             "use strict";
-            X(), L5(), Zs(), rZ = new eS("terminalTabFocusMode", !1, !0), (function(t) {
+            X(), L5(), Zs(), sZ = new eS("terminalTabFocusMode", !1, !0), (function(t) {
                 t.AutomationProfile = "terminal.integrated.automationProfile.", t.DefaultProfile = "terminal.integrated.defaultProfile.", t.Profiles = "terminal.integrated.profiles."
             })(L7 || (L7 = {})), (function(t) {
                 t.SendKeybindingsToShell = "terminal.integrated.sendKeybindingsToShell", t.AutomationProfileLinux = "terminal.integrated.automationProfile.linux", t.AutomationProfileMacOs = "terminal.integrated.automationProfile.osx", t.AutomationProfileWindows = "terminal.integrated.automationProfile.windows", t.ProfilesWindows = "terminal.integrated.profiles.windows", t.ProfilesMacOs = "terminal.integrated.profiles.osx", t.ProfilesLinux = "terminal.integrated.profiles.linux", t.DefaultProfileLinux = "terminal.integrated.defaultProfile.linux", t.DefaultProfileMacOs = "terminal.integrated.defaultProfile.osx", t.DefaultProfileWindows = "terminal.integrated.defaultProfile.windows", t.UseWslProfiles = "terminal.integrated.useWslProfiles", t.TabsDefaultColor = "terminal.integrated.tabs.defaultColor", t.TabsDefaultIcon = "terminal.integrated.tabs.defaultIcon", t.TabsEnabled = "terminal.integrated.tabs.enabled", t.TabsEnableAnimation = "terminal.integrated.tabs.enableAnimation", t.TabsHideCondition = "terminal.integrated.tabs.hideCondition", t.TabsShowActiveTerminal = "terminal.integrated.tabs.showActiveTerminal", t.TabsShowActions = "terminal.integrated.tabs.showActions", t.TabsLocation = "terminal.integrated.tabs.location", t.TabsFocusMode = "terminal.integrated.tabs.focusMode", t.MacOptionIsMeta = "terminal.integrated.macOptionIsMeta", t.MacOptionClickForcesSelection = "terminal.integrated.macOptionClickForcesSelection", t.AltClickMovesCursor = "terminal.integrated.altClickMovesCursor", t.CopyOnSelection = "terminal.integrated.copyOnSelection", t.EnableMultiLinePasteWarning = "terminal.integrated.enableMultiLinePasteWarning", t.DrawBoldTextInBrightColors = "terminal.integrated.drawBoldTextInBrightColors", t.FontFamily = "terminal.integrated.fontFamily", t.FontSize = "terminal.integrated.fontSize", t.LetterSpacing = "terminal.integrated.letterSpacing", t.LineHeight = "terminal.integrated.lineHeight", t.MinimumContrastRatio = "terminal.integrated.minimumContrastRatio", t.TabStopWidth = "terminal.integrated.tabStopWidth", t.FastScrollSensitivity = "terminal.integrated.fastScrollSensitivity", t.MouseWheelScrollSensitivity = "terminal.integrated.mouseWheelScrollSensitivity", t.BellDuration = "terminal.integrated.bellDuration", t.FontWeight = "terminal.integrated.fontWeight", t.FontWeightBold = "terminal.integrated.fontWeightBold", t.CursorBlinking = "terminal.integrated.cursorBlinking", t.TextBlinking = "terminal.integrated.textBlinking", t.CursorStyle = "terminal.integrated.cursorStyle", t.CursorStyleInactive = "terminal.integrated.cursorStyleInactive", t.CursorWidth = "terminal.integrated.cursorWidth", t.Scrollback = "terminal.integrated.scrollback", t.DetectLocale = "terminal.integrated.detectLocale", t.DefaultLocation = "terminal.integrated.defaultLocation", t.GpuAcceleration = "terminal.integrated.gpuAcceleration", t.TerminalTitleSeparator = "terminal.integrated.tabs.separator", t.TerminalTitle = "terminal.integrated.tabs.title", t.TerminalDescription = "terminal.integrated.tabs.description", t.RightClickBehavior = "terminal.integrated.rightClickBehavior", t.MiddleClickBehavior = "terminal.integrated.middleClickBehavior", t.Cwd = "terminal.integrated.cwd", t.ConfirmOnExit = "terminal.integrated.confirmOnExit", t.ConfirmOnKill = "terminal.integrated.confirmOnKill", t.EnableBell = "terminal.integrated.enableBell", t.EnableVisualBell = "terminal.integrated.enableVisualBell", t.CommandsToSkipShell = "terminal.integrated.commandsToSkipShell", t.AllowChords = "terminal.integrated.allowChords", t.AllowMnemonics = "terminal.integrated.allowMnemonics", t.TabFocusMode = "terminal.integrated.tabFocusMode", t.EnvMacOs = "terminal.integrated.env.osx", t.EnvLinux = "terminal.integrated.env.linux", t.EnvWindows = "terminal.integrated.env.windows", t.EnvironmentChangesIndicator = "terminal.integrated.environmentChangesIndicator", t.EnvironmentChangesRelaunch = "terminal.integrated.environmentChangesRelaunch", t.ShowExitAlert = "terminal.integrated.showExitAlert", t.SplitCwd = "terminal.integrated.splitCwd", t.WindowsEnableConpty = "terminal.integrated.windowsEnableConpty", t.WindowsUseConptyDll = "terminal.integrated.windowsUseConptyDll", t.WordSeparators = "terminal.integrated.wordSeparators", t.EnableFileLinks = "terminal.integrated.enableFileLinks", t.AllowedLinkSchemes = "terminal.integrated.allowedLinkSchemes", t.UnicodeVersion = "terminal.integrated.unicodeVersion", t.EnablePersistentSessions = "terminal.integrated.enablePersistentSessions", t.PersistentSessionReviveProcess = "terminal.integrated.persistentSessionReviveProcess", t.HideOnStartup = "terminal.integrated.hideOnStartup", t.HideOnLastClosed = "terminal.integrated.hideOnLastClosed", t.CustomGlyphs = "terminal.integrated.customGlyphs", t.RescaleOverlappingGlyphs = "terminal.integrated.rescaleOverlappingGlyphs", t.PersistentSessionScrollback = "terminal.integrated.persistentSessionScrollback", t.InheritEnv = "terminal.integrated.inheritEnv", t.ShowLinkHover = "terminal.integrated.showLinkHover", t.IgnoreProcessNames = "terminal.integrated.ignoreProcessNames", t.ShellIntegrationEnabled = "terminal.integrated.shellIntegration.enabled", t.ShellIntegrationShowWelcome = "terminal.integrated.shellIntegration.showWelcome", t.ShellIntegrationDecorationsEnabled = "terminal.integrated.shellIntegration.decorationsEnabled", t.ShellIntegrationEnvironmentReporting = "terminal.integrated.shellIntegration.environmentReporting", t.EnableImages = "terminal.integrated.enableImages", t.SmoothScrolling = "terminal.integrated.smoothScrolling", t.IgnoreBracketedPasteMode = "terminal.integrated.ignoreBracketedPasteMode", t.FocusAfterRun = "terminal.integrated.focusAfterRun", t.FontLigaturesEnabled = "terminal.integrated.fontLigatures.enabled", t.FontLigaturesFeatureSettings = "terminal.integrated.fontLigatures.featureSettings", t.FontLigaturesFallbackLigatures = "terminal.integrated.fontLigatures.fallbackLigatures", t.EnableKittyKeyboardProtocol = "terminal.integrated.enableKittyKeyboardProtocol", t.EnableWin32InputMode = "terminal.integrated.enableWin32InputMode", t.DeveloperPtyHostLatency = "terminal.integrated.developer.ptyHost.latency", t.DeveloperPtyHostStartupDelay = "terminal.integrated.developer.ptyHost.startupDelay", t.DevMode = "terminal.integrated.developer.devMode"
@@ -47226,7 +47234,7 @@ var QQ = g({
                 t.LocalPty = "localPty", t.PtyHost = "ptyHost", t.PtyHostWindow = "ptyHostWindow", t.Logger = "logger", t.Heartbeat = "heartbeat"
             })(Vc || (Vc = {})), (function(t) {
                 t.Cwd = "cwd", t.InitialCwd = "initialCwd", t.FixedDimensions = "fixedDimensions", t.Title = "title", t.ShellType = "shellType", t.HasChildProcesses = "hasChildProcesses", t.ResolvedShellLaunchConfig = "resolvedShellLaunchConfig", t.OverrideDimensions = "overrideDimensions", t.FailedShellIntegrationActivation = "failedShellIntegrationActivation", t.UsedShellIntegrationInjection = "usedShellIntegrationInjection", t.ShellIntegrationInjectionFailureReason = "shellIntegrationInjectionFailureReason"
-            })($7 || ($7 = {})), sZ = J("ptyService"), (function(t) {
+            })($7 || ($7 = {})), nZ = J("ptyService"), (function(t) {
                 t[t.BeatInterval = 5e3] = "BeatInterval", t[t.ConnectingBeatInterval = 2e4] = "ConnectingBeatInterval", t[t.FirstWaitMultiplier = 1.2] = "FirstWaitMultiplier", t[t.SecondWaitMultiplier = 1] = "SecondWaitMultiplier", t[t.CreateProcessTimeout = 5e3] = "CreateProcessTimeout"
             })(Zi || (Zi = {})), (function(t) {
                 t[t.Panel = 1] = "Panel", t[t.Editor = 2] = "Editor"
@@ -47264,10 +47272,10 @@ var QQ = g({
                 _sanitizeRemoteAuthority(t) {
                     return t?.toLowerCase() ?? ""
                 }
-            }, qi.add(Y7.Backend, new X7), dE = J("localPtyService"), nZ = J("terminalLogService")
+            }, qi.add(Y7.Backend, new X7), dE = J("localPtyService"), oZ = J("terminalLogService")
         }
     }),
-    Kw, oZ = g({
+    Kw, aZ = g({
         "out-build/vs/platform/terminal/electron-main/electronPtyHostStarter.js"() {
             "use strict";
             Ze(), z0(), It(), Y(), Gn(), jo(), c5(), mr(), $(), Q(), Br(), et(), Be(), Kw = class extends H {
@@ -47329,7 +47337,7 @@ var QQ = g({
             }, Kw = __decorate([__param(1, nt), __param(2, Ke), __param(3, it), __param(4, z)], Kw)
         }
     }),
-    Z7, aZ = g({
+    Z7, cZ = g({
         "out-build/vs/platform/log/common/logIpc.js"() {
             "use strict";
             le(), Q(), Y(), $(), Z7 = class extends H {
@@ -47353,7 +47361,7 @@ var QQ = g({
             }
         }
     }),
-    Jw, cZ = g({
+    Jw, lZ = g({
         "out-build/vs/platform/terminal/common/requestStore.js"() {
             "use strict";
             he(), Et(), Q(), $(), Y(), Jw = class extends H {
@@ -47381,24 +47389,24 @@ var QQ = g({
         }
     });
 
-function lZ(t, e) {
+function uZ(t, e) {
     const i = [{
         name: null,
         description: S(2293, null)
     }];
     return i.push(...t.map(r => ({
         name: r.profileName,
-        description: uZ(r)
+        description: dZ(r)
     }))), e && i.push(...e.map(r => ({
         name: r.title,
-        description: dZ(r)
+        description: hZ(r)
     }))), {
         values: i.map(r => r.name),
         markdownDescriptions: i.map(r => r.description)
     }
 }
 
-function uZ(t) {
+function dZ(t) {
     let e = `$(${Wd.isThemeIcon(t.icon)?t.icon.id:t.icon?t.icon:bi.terminal.id}) ${t.profileName}
 - path: ${t.path}`;
     return t.args && (typeof t.args == "string" ? e += `
@@ -47409,11 +47417,11 @@ function uZ(t) {
 - env: ${JSON.stringify(t.env)}`), e
 }
 
-function dZ(t) {
+function hZ(t) {
     return `$(${Wd.isThemeIcon(t.icon)?t.icon.id:t.icon?t.icon:bi.terminal.id}) ${t.title}
 - extensionIdentifier: ${t.extensionIdentifier}`
 }
-var hZ = g({
+var fZ = g({
     "out-build/vs/platform/terminal/common/terminalProfiles.js"() {
         "use strict";
         Mw(), le(), Pe(), YM()
@@ -47425,14 +47433,14 @@ function hE(t) {
     return S(2269, null, FC(t), '```json\n"terminal.integrated.profile.' + e + '": {\n  "bash": null\n}\n```', "[", "](https://code.visualstudio.com/docs/terminal/profiles)")
 }
 
-function fZ() {
-    qi.as(Rr.Configuration).registerConfiguration(i8), pZ()
+function pZ() {
+    qi.as(Rr.Configuration).registerConfiguration(i8), gZ()
 }
 
-function pZ(t, e) {
+function gZ(t, e) {
     const i = qi.as(Rr.Configuration);
     let r;
-    t && (r = lZ(t?.profiles, e));
+    t && (r = uZ(t?.profiles, e));
     const s = fE;
     fE = {
         id: "terminal",
@@ -47470,10 +47478,10 @@ function pZ(t, e) {
         remove: s ? [s] : []
     })
 }
-var e8, t8, ca, Yw, Xw, i8, fE, gZ = g({
+var e8, t8, ca, Yw, Xw, i8, fE, mZ = g({
         "out-build/vs/platform/terminal/common/terminalPlatformConfiguration.js"() {
             "use strict";
-            Mw(), Z(), Pe(), yo(), Zs(), hZ(), e8 = {
+            Mw(), Z(), Pe(), yo(), Zs(), fZ(), e8 = {
                 type: ["string", "null"],
                 enum: ["terminal.ansiBlack", "terminal.ansiRed", "terminal.ansiGreen", "terminal.ansiYellow", "terminal.ansiBlue", "terminal.ansiMagenta", "terminal.ansiCyan", "terminal.ansiWhite"],
                 default: null
@@ -47781,60 +47789,60 @@ var e8, t8, ca, Yw, Xw, i8, fE, gZ = g({
             })(Gd || (Gd = {}))
         }
     }),
-    mZ = g({
+    wZ = g({
         "out-build/vs/platform/terminal/common/environmentVariableShared.js"() {
             "use strict"
         }
     }),
-    wZ, vZ = g({
+    vZ, yZ = g({
         "out-build/vs/platform/terminal/common/environmentVariableCollection.js"() {
             "use strict";
-            Z(), r8(), wZ = new Map([
+            Z(), r8(), vZ = new Map([
                 [Gd.Append, "APPEND"],
                 [Gd.Prepend, "PREPEND"],
                 [Gd.Replace, "REPLACE"]
             ])
         }
     });
-import * as yZ from "os";
+import * as SZ from "os";
 import "fs";
 import "util";
 
-function SZ() {
-    const t = /(\d+)\.(\d+)\.(\d+)/g.exec(yZ.release());
+function bZ() {
+    const t = /(\d+)\.(\d+)\.(\d+)/g.exec(SZ.release());
     let e = 0;
     return t && t.length === 4 && (e = parseInt(t[3])), e
 }
-var cs, Vs, bZ = g({
+var cs, Vs, _Z = g({
     "out-build/vs/platform/terminal/node/terminalEnvironment.js"() {
         "use strict";
-        Be(), xe(), Z(), ws(), pi(), r8(), mZ(), vZ(), (function(t) {
+        Be(), xe(), Z(), ws(), pi(), r8(), wZ(), yZ(), (function(t) {
             t.WindowsPwsh = "windows-pwsh", t.WindowsPwshLogin = "windows-pwsh-login", t.Pwsh = "pwsh", t.PwshLogin = "pwsh-login", t.Zsh = "zsh", t.ZshLogin = "zsh-login", t.Bash = "bash", t.Fish = "fish", t.FishLogin = "fish-login"
         })(cs || (cs = {})), Vs = new Map, Vs.set(cs.WindowsPwsh, ["-noexit", "-command", 'try { . "{0}\\out\\vs\\workbench\\contrib\\terminal\\common\\scripts\\shellIntegration.ps1" } catch {}{1}']), Vs.set(cs.WindowsPwshLogin, ["-l", "-noexit", "-command", 'try { . "{0}\\out\\vs\\workbench\\contrib\\terminal\\common\\scripts\\shellIntegration.ps1" } catch {}{1}']), Vs.set(cs.Pwsh, ["-noexit", "-command", '. "{0}/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration.ps1"{1}']), Vs.set(cs.PwshLogin, ["-l", "-noexit", "-command", '. "{0}/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration.ps1"']), Vs.set(cs.Zsh, ["-i"]), Vs.set(cs.ZshLogin, ["-il"]), Vs.set(cs.Bash, ["--init-file", "{0}/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"]), Vs.set(cs.Fish, ["--init-command", 'source "{0}/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration.fish"']), Vs.set(cs.FishLogin, ["-l", "--init-command", 'source "{0}/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration.fish"'])
     }
 });
-import * as _Z from "fs";
-import * as EZ from "child_process";
+import * as EZ from "fs";
+import * as kZ from "child_process";
 import {
-    dirname as kZ,
-    resolve as IZ
+    dirname as IZ,
+    resolve as CZ
 } from "path";
 
-function CZ(t, e, i, r, s = process.env, n, o, a, c) {
+function TZ(t, e, i, r, s = process.env, n, o, a, c) {
     return n = n || {
         existsFile: mi.existsFile,
-        readFile: _Z.promises.readFile
-    }, G ? TZ(i, n, s, o, r.getValue("terminal.integrated.useWslProfiles") !== !1, t && typeof t == "object" ? {
+        readFile: EZ.promises.readFile
+    }, G ? PZ(i, n, s, o, r.getValue("terminal.integrated.useWslProfiles") !== !1, t && typeof t == "object" ? {
         ...t
-    } : r.getValue("terminal.integrated.profiles.windows"), typeof e == "string" ? e : r.getValue("terminal.integrated.defaultProfile.windows"), c, a) : OZ(n, o, i, t && typeof t == "object" ? {
+    } : r.getValue("terminal.integrated.profiles.windows"), typeof e == "string" ? e : r.getValue("terminal.integrated.defaultProfile.windows"), c, a) : LZ(n, o, i, t && typeof t == "object" ? {
         ...t
     } : r.getValue(Re ? "terminal.integrated.profiles.linux" : "terminal.integrated.profiles.osx"), typeof e == "string" ? e : r.getValue(Re ? "terminal.integrated.defaultProfile.linux" : "terminal.integrated.defaultProfile.osx"), c, a, s)
 }
-async function TZ(t, e, i, r, s, n, o, a, c) {
+async function PZ(t, e, i, r, s, n, o, a, c) {
     const l = process.env.hasOwnProperty("PROCESSOR_ARCHITEW6432"),
         u = `${process.env.windir}\\${l?"Sysnative":"System32"}`;
     let d = !1;
-    SZ() >= 16299 && (d = !0), await DZ(a);
+    bZ() >= 16299 && (d = !0), await xZ(a);
     const f = new Map;
     if (t) {
         f.set("PowerShell", {
@@ -47888,7 +47896,7 @@ async function TZ(t, e, i, r, s, n, o, a, c) {
     o8(n, f);
     const p = await s8(f.entries(), o, e, i, r, c);
     if (t && s) try {
-        const m = await AZ(`${u}\\${d?"wsl":"bash"}.exe`, o);
+        const m = await MZ(`${u}\\${d?"wsl":"bash"}.exe`, o);
         for (const v of m)(!n || !(v.profileName in n)) && p.push(v)
     } catch {
         pE && (r?.trace("WSL is not installed, so could not detect WSL profiles"), pE = !1)
@@ -47897,10 +47905,10 @@ async function TZ(t, e, i, r, s, n, o, a, c) {
 }
 async function s8(t, e, i, r = process.env, s, n) {
     const o = [];
-    for (const [a, c] of t) o.push(PZ(a, c, e, i, r, s, n));
+    for (const [a, c] of t) o.push(DZ(a, c, e, i, r, s, n));
     return (await Promise.all(o)).filter(a => !!a)
 }
-async function PZ(t, e, i, r, s = process.env, n, o) {
+async function DZ(t, e, i, r, s = process.env, n, o) {
     if (e === null) return;
     let a, c, l;
     if ("source" in e && !("path" in e)) {
@@ -47936,9 +47944,9 @@ function n8(t) {
         id: t
     } : t
 }
-async function DZ(t) {
+async function xZ(t) {
     if (zd && !t) return;
-    const [e, i] = await Promise.all([xZ(), t || RZ()]);
+    const [e, i] = await Promise.all([RZ(), t || AZ()]);
     zd = new Map, zd.set("Git Bash", {
         profileName: "Git Bash",
         paths: e,
@@ -47949,12 +47957,12 @@ async function DZ(t) {
         icon: bi.terminalPowershell
     })
 }
-async function xZ() {
+async function RZ() {
     const t = new Set,
         e = await im("git.exe");
     if (e) {
-        const s = kZ(e);
-        t.add(IZ(s, "../.."))
+        const s = IZ(e);
+        t.add(CZ(s, "../.."))
     }
 
     function i(s, n) {
@@ -47965,15 +47973,15 @@ async function xZ() {
     for (const s of t) r.push(`${s}\\Git\\bin\\bash.exe`, `${s}\\Git\\usr\\bin\\bash.exe`, `${s}\\usr\\bin\\bash.exe`);
     return r.push(`${process.env.UserProfile}\\scoop\\apps\\git\\current\\bin\\bash.exe`), r.push(`${process.env.UserProfile}\\scoop\\apps\\git-with-openssh\\current\\bin\\bash.exe`), r
 }
-async function RZ() {
+async function AZ() {
     const t = [];
     for await (const e of LD()) t.push(e.exePath);
     return t
 }
-async function AZ(t, e) {
+async function MZ(t, e) {
     const i = [],
         r = await new Promise((o, a) => {
-            EZ.exec("wsl.exe -l -q", {
+            kZ.exec("wsl.exe -l -q", {
                 encoding: "utf16le",
                 timeout: 1e3
             }, (c, l) => {
@@ -47992,7 +48000,7 @@ async function AZ(t, e) {
                 path: t,
                 args: ["-d", `${o}`],
                 isDefault: a === e,
-                icon: MZ(o),
+                icon: OZ(o),
                 isAutoDetected: !1
             };
         i.push(c)
@@ -48000,10 +48008,10 @@ async function AZ(t, e) {
     return i
 }
 
-function MZ(t) {
+function OZ(t) {
     return t.includes("Ubuntu") ? bi.terminalUbuntu : t.includes("Debian") ? bi.terminalDebian : bi.terminalLinux
 }
-async function OZ(t, e, i, r, s, n, o, a) {
+async function LZ(t, e, i, r, s, n, o, a) {
     const c = new Map;
     if (i && await t.existsFile("/etc/shells")) {
         const l = (await t.readFile("/etc/shells")).toString(),
@@ -48053,18 +48061,18 @@ async function Qw(t, e, i, r, s, n, o, a, c, l) {
     }
     return await r.existsFile(Oi(f)) ? p : Qw(t, e, i, r, s, n, o, a, c)
 }
-var a8, zd, pE, LZ = g({
+var a8, zd, pE, NZ = g({
         "out-build/vs/platform/terminal/node/terminalProfiles.js"() {
             "use strict";
-            Mw(), xe(), Z(), Gu(), Ue(), si(), UD(), bZ(), (function(t) {
+            Mw(), xe(), Z(), Gu(), Ue(), si(), UD(), _Z(), (function(t) {
                 t.UnixShellsPath = "/etc/shells"
             })(a8 || (a8 = {})), pE = !0
         }
     }),
-    gE, Zw, NZ = g({
+    gE, Zw, WZ = g({
         "out-build/vs/platform/terminal/node/ptyHostService.js"() {
             "use strict";
-            Q(), $(), Z(), or(), et(), Y(), aZ(), am(), cZ(), Q7(), gZ(), LZ(), jD(), Ba(), (function(t) {
+            Q(), $(), Z(), or(), et(), Y(), cZ(), am(), lZ(), Q7(), mZ(), NZ(), jD(), Ba(), (function(t) {
                 t[t.MaxRestarts = 5] = "MaxRestarts"
             })(gE || (gE = {})), Zw = class extends H {
                 get _connection() {
@@ -48080,7 +48088,7 @@ var a8, zd, pE, LZ = g({
                     this.__connection || this._startPtyHost()
                 }
                 constructor(e, i, r, s) {
-                    super(), this._ptyHostStarter = e, this._configurationService = i, this._logService = r, this._loggerService = s, this._wasQuitRequested = !1, this._restartCount = 0, this._isResponsive = !0, this._onPtyHostExit = this._register(new x), this.onPtyHostExit = this._onPtyHostExit.event, this._onPtyHostStart = this._register(new x), this.onPtyHostStart = this._onPtyHostStart.event, this._onPtyHostUnresponsive = this._register(new x), this.onPtyHostUnresponsive = this._onPtyHostUnresponsive.event, this._onPtyHostResponsive = this._register(new x), this.onPtyHostResponsive = this._onPtyHostResponsive.event, this._onPtyHostRequestResolveVariables = this._register(new x), this.onPtyHostRequestResolveVariables = this._onPtyHostRequestResolveVariables.event, this._onProcessData = this._register(new x), this.onProcessData = this._onProcessData.event, this._onProcessReady = this._register(new x), this.onProcessReady = this._onProcessReady.event, this._onProcessReplay = this._register(new x), this.onProcessReplay = this._onProcessReplay.event, this._onProcessOrphanQuestion = this._register(new x), this.onProcessOrphanQuestion = this._onProcessOrphanQuestion.event, this._onDidRequestDetach = this._register(new x), this.onDidRequestDetach = this._onDidRequestDetach.event, this._onDidChangeProperty = this._register(new x), this.onDidChangeProperty = this._onDidChangeProperty.event, this._onProcessExit = this._register(new x), this.onProcessExit = this._onProcessExit.event, fZ(), this._register(this._ptyHostStarter), this._register(ve(() => this._disposePtyHost())), this._resolveVariablesRequestStore = this._register(new Jw(void 0, this._logService)), this._register(this._resolveVariablesRequestStore.onCreateRequest(this._onPtyHostRequestResolveVariables.fire, this._onPtyHostRequestResolveVariables)), this._ptyHostStarter.onRequestConnection && this._register(R.once(this._ptyHostStarter.onRequestConnection)(() => this._ensurePtyHost())), this._ptyHostStarter.onWillShutdown && this._register(this._ptyHostStarter.onWillShutdown(() => this._wasQuitRequested = !0))
+                    super(), this._ptyHostStarter = e, this._configurationService = i, this._logService = r, this._loggerService = s, this._wasQuitRequested = !1, this._restartCount = 0, this._isResponsive = !0, this._onPtyHostExit = this._register(new x), this.onPtyHostExit = this._onPtyHostExit.event, this._onPtyHostStart = this._register(new x), this.onPtyHostStart = this._onPtyHostStart.event, this._onPtyHostUnresponsive = this._register(new x), this.onPtyHostUnresponsive = this._onPtyHostUnresponsive.event, this._onPtyHostResponsive = this._register(new x), this.onPtyHostResponsive = this._onPtyHostResponsive.event, this._onPtyHostRequestResolveVariables = this._register(new x), this.onPtyHostRequestResolveVariables = this._onPtyHostRequestResolveVariables.event, this._onProcessData = this._register(new x), this.onProcessData = this._onProcessData.event, this._onProcessReady = this._register(new x), this.onProcessReady = this._onProcessReady.event, this._onProcessReplay = this._register(new x), this.onProcessReplay = this._onProcessReplay.event, this._onProcessOrphanQuestion = this._register(new x), this.onProcessOrphanQuestion = this._onProcessOrphanQuestion.event, this._onDidRequestDetach = this._register(new x), this.onDidRequestDetach = this._onDidRequestDetach.event, this._onDidChangeProperty = this._register(new x), this.onDidChangeProperty = this._onDidChangeProperty.event, this._onProcessExit = this._register(new x), this.onProcessExit = this._onProcessExit.event, pZ(), this._register(this._ptyHostStarter), this._register(ve(() => this._disposePtyHost())), this._resolveVariablesRequestStore = this._register(new Jw(void 0, this._logService)), this._register(this._resolveVariablesRequestStore.onCreateRequest(this._onPtyHostRequestResolveVariables.fire, this._onPtyHostRequestResolveVariables)), this._ptyHostStarter.onRequestConnection && this._register(R.once(this._ptyHostStarter.onRequestConnection)(() => this._ensurePtyHost())), this._ptyHostStarter.onWillShutdown && this._register(this._ptyHostStarter.onWillShutdown(() => this._wasQuitRequested = !0))
                 }
                 get _ignoreProcessNames() {
                     return this._configurationService.getValue("terminal.integrated.ignoreProcessNames")
@@ -48193,7 +48201,7 @@ var a8, zd, pE, LZ = g({
                 }
                 async getProfiles(e, i, r, s = !1) {
                     const n = await this._resolveShellEnv();
-                    return CZ(i, r, s, this._configurationService, n, void 0, this._logService, this._resolveVariables.bind(this, e))
+                    return TZ(i, r, s, this._configurationService, n, void 0, this._logService, this._resolveVariables.bind(this, e))
                 }
                 async getEnvironment() {
                     return this.__proxy ? this._proxy.getEnvironment() : {
@@ -48267,7 +48275,7 @@ var a8, zd, pE, LZ = g({
             }, Zw = __decorate([__param(1, nt), __param(2, z), __param(3, sc)], Zw)
         }
     }),
-    mE, c8, l8, WZ = g({
+    mE, c8, l8, FZ = g({
         "out-build/vs/platform/remote/common/electronRemoteResources.js"() {
             "use strict";
             mE = "request", c8 = "remoteResourceHandler", l8 = class {
@@ -48287,9 +48295,9 @@ var a8, zd, pE, LZ = g({
         }
     });
 import {
-    BrowserWindow as FZ
+    BrowserWindow as UZ
 } from "electron";
-var ev, UZ = g({
+var ev, BZ = g({
     "out-build/vs/platform/auxiliaryWindow/electron-main/auxiliaryWindow.js"() {
         "use strict";
         Z(), et(), Ze(), It(), Y(), ar(), an(), t7(), ev = class extends Z_ {
@@ -48315,7 +48323,7 @@ var ev, UZ = g({
             }
             doTryClaimWindow(e) {
                 if (this._win) return;
-                const i = FZ.fromWebContents(this.webContents);
+                const i = UZ.fromWebContents(this.webContents);
                 i && (this.logService.trace("[aux window] Claimed browser window instance"), this.setWin(i, e), i.setMenu(null), (G || Re) && Lo(this.configurationService, e?.titleBarStyle === "hidden" ? "custom" : void 0) && i.setAutoHideMenuBar(!0), this.lifecycleMainService.registerAuxWindow(this))
             }
             matches(e) {
@@ -48325,18 +48333,18 @@ var ev, UZ = g({
     }
 });
 import {
-    BrowserWindow as BZ,
-    app as $Z
+    BrowserWindow as $Z,
+    app as VZ
 } from "electron";
-var tv, VZ = g({
+var tv, jZ = g({
         "out-build/vs/platform/auxiliaryWindow/electron-main/auxiliaryWindowsMainService.js"() {
             "use strict";
-            Q(), $(), Be(), mr(), UZ(), X(), Y(), Du(), yt(), tv = class extends H {
+            Q(), $(), Be(), mr(), BZ(), X(), Y(), Du(), yt(), tv = class extends H {
                 constructor(e, i) {
                     super(), this.instantiationService = e, this.logService = i, this._onDidMaximizeWindow = this._register(new x), this.onDidMaximizeWindow = this._onDidMaximizeWindow.event, this._onDidUnmaximizeWindow = this._register(new x), this.onDidUnmaximizeWindow = this._onDidUnmaximizeWindow.event, this._onDidChangeFullScreen = this._register(new x), this.onDidChangeFullScreen = this._onDidChangeFullScreen.event, this._onDidTriggerSystemContextMenu = this._register(new x), this.onDidTriggerSystemContextMenu = this._onDidTriggerSystemContextMenu.event, this.windows = new Map, this.registerListeners()
                 }
                 registerListeners() {
-                    $Z.on("browser-window-created", (e, i) => {
+                    VZ.on("browser-window-created", (e, i) => {
                         const r = this.getWindowByWebContents(i.webContents);
                         if (r) this.logService.trace('[aux window] app.on("browser-window-created"): Trying to claim auxiliary window'), r.tryClaimWindow();
                         else {
@@ -48430,7 +48438,7 @@ var tv, VZ = g({
                     return i?.matches(e) ? i : void 0
                 }
                 getFocusedWindow() {
-                    const e = BZ.getFocusedWindow();
+                    const e = $Z.getFocusedWindow();
                     if (e) return this.getWindowByWebContents(e.webContents)
                 }
                 getLastActiveWindow() {
@@ -48442,7 +48450,7 @@ var tv, VZ = g({
             }, tv = __decorate([__param(0, Ss), __param(1, z)], tv)
         }
     }),
-    u8, jZ = g({
+    u8, HZ = g({
         "out-build/vs/platform/tracing/common/crashReportingRendererTagStore.js"() {
             "use strict";
             Ii(), u8 = class {
@@ -48485,7 +48493,7 @@ var tv, VZ = g({
         }
     });
 
-function HZ(t) {
+function qZ(t) {
     if (t == null || typeof t != "object") return;
     const e = t;
     for (const i of d8) {
@@ -48494,13 +48502,13 @@ function HZ(t) {
         if (Number.isFinite(s) && s > 0) return Math.trunc(s)
     }
 }
-var d8, qZ = g({
+var d8, GZ = g({
     "out-build/vs/platform/tracing/common/rendererCrashContext.js"() {
         "use strict";
         d8 = ["crashpad.process_id", "crashpad.pid", "process_id", "pid", "renderer_pid", "renderer-main.pid"]
     }
 });
-async function GZ(t) {
+async function zZ(t) {
     const e = t.getIntegrationByName("Replay");
     if (e) return e;
     try {
@@ -48520,7 +48528,7 @@ async function GZ(t) {
     }
 }
 
-function zZ(t) {
+function KZ(t) {
     const {
         fromProcess: e,
         enabled: i,
@@ -48532,14 +48540,14 @@ function zZ(t) {
     const o = Kt();
     if (!o) return;
     const a = o.getOptions();
-    a.replaysSessionSampleRate = s, KZ({
+    a.replaysSessionSampleRate = s, JZ({
         client: o,
         previousSampleRate: n,
         newSampleRate: s,
         replayAllowed: i && r
     })
 }
-async function KZ(t) {
+async function JZ(t) {
     const {
         client: e,
         previousSampleRate: i,
@@ -48550,10 +48558,10 @@ async function KZ(t) {
         e.getIntegrationByName("Replay")?.stop?.();
         return
     }
-    const c = await GZ(e);
+    const c = await zZ(e);
     c && a && (n || await c.stop?.(), Math.random() < r && (globalThis._CURSOR_INJECT_REPLAY_FONTS?.(), c.start?.()))
 }
-var h8, JZ = g({
+var h8, YZ = g({
     "out-build/vs/platform/tracing/common/sessionReplay.js"() {
         "use strict";
         Ma(), h8 = {
@@ -48595,7 +48603,7 @@ function vE(t, e, i) {
     return s.length > rv && (r.__truncatedKeys = s.length - rv), r
 }
 
-function YZ(t) {
+function XZ(t) {
     return t.slice(-f8).map(i => {
         const r = new WeakSet;
         return {
@@ -48606,12 +48614,12 @@ function YZ(t) {
     })
 }
 
-function XZ(t, e) {
+function QZ(t, e) {
     return e.onProcessConfigUpdate(i => {
         const r = Nt().replaysSessionSampleRate,
             s = i.isInternalUser === !0,
             o = i.enabled && s ? i.replaysSessionSampleRate : 0;
-        Nt().enabled = i.enabled, Nt().allowCrashReportsWhenDisabled = i.allowCrashReportsWhenDisabled, Nt().loggerSampleRate = i.loggerSampleRate, Nt().tracesSampleRate = i.tracesSampleRate, Nt().profilesSampleRate = i.profilesSampleRate, Nt().jsonStringifySampleRate = i.jsonStringifySampleRate, Nt().replaysSessionSampleRate = o, Nt().isInternalUser = s, zZ({
+        Nt().enabled = i.enabled, Nt().allowCrashReportsWhenDisabled = i.allowCrashReportsWhenDisabled, Nt().loggerSampleRate = i.loggerSampleRate, Nt().tracesSampleRate = i.tracesSampleRate, Nt().profilesSampleRate = i.profilesSampleRate, Nt().jsonStringifySampleRate = i.jsonStringifySampleRate, Nt().replaysSessionSampleRate = o, Nt().isInternalUser = s, KZ({
             fromProcess: t,
             enabled: i.enabled,
             isInternalUser: s,
@@ -48621,7 +48629,7 @@ function XZ(t, e) {
     })
 }
 
-function QZ(t, e, i = pF(64)) {
+function ZZ(t, e, i = pF(64)) {
     const r = {
             flush: n => i.drain(n),
             send: n => i.add(() => e.sendEnvelope(t, n)).then(() => ({
@@ -48636,38 +48644,38 @@ function QZ(t, e, i = pF(64)) {
     return Nt().buffer = [], Nt().transport = r, H.None
 }
 
-function ZZ(t, e) {
+function eee(t, e) {
     if (t === "main") return H.None;
     const i = r => {
         const s = {};
-        r.breadcrumbs.length > 0 && (s.breadcrumbs = YZ(r.breadcrumbs)), Object.keys(s).length > 0 && e.sendScopeUpdate(t, s)
+        r.breadcrumbs.length > 0 && (s.breadcrumbs = XZ(r.breadcrumbs)), Object.keys(s).length > 0 && e.sendScopeUpdate(t, s)
     };
     return Cr().addScopeListener(r => {
         i(r.getScopeData()), Cr().clearBreadcrumbs()
     }), i(Cr().getScopeData()), Cr().clearBreadcrumbs(), H.None
 }
 
-function eee(t, e) {
+function tee(t, e) {
     const i = new Le;
-    return i.add(XZ(t, e)), i.add(QZ(t, e)), i.add(ZZ(t, e)), i
+    return i.add(QZ(t, e)), i.add(ZZ(t, e)), i.add(eee(t, e)), i
 }
-var f8, p8, iv, rv, yE, tee = g({
+var f8, p8, iv, rv, yE, iee = g({
     "out-build/vs/platform/tracing/common/register.js"() {
         "use strict";
-        $(), Ml(), Ma(), JZ(), f8 = 50, p8 = 4, iv = 20, rv = 20, yE = 2e3
+        $(), Ml(), Ma(), YZ(), f8 = 50, p8 = 4, iv = 20, rv = 20, yE = 2e3
     }
 });
 
-function iee(t) {
+function ree(t) {
     return t == null ? !1 : g8.test(t)
 }
-var g8, ree = g({
+var g8, see = g({
         "out-build/vs/platform/tracing/common/syntheticSession.js"() {
             "use strict";
             g8 = /^synthetic\+/i
         }
     }),
-    m8, see = g({
+    m8, nee = g({
         "out-build/vs/platform/tracing/node/rateLimiter.js"() {
             "use strict";
             m8 = class {
@@ -48687,7 +48695,7 @@ var g8, ree = g({
         }
     });
 
-function nee(t) {
+function oee(t) {
     if (t === !0) return "true";
     if (t === !1) return "false";
     if (t === void 0) return "implicit-false";
@@ -48696,7 +48704,7 @@ function nee(t) {
         return e = e, "true"
     }
 }
-var w8, v8, y8, S8, b8, _8, E8, k8, oee, I8, C8, T8, P8, D8, x8, R8, A8, M8, O8, L8, N8, W8, F8, U8, B8, $8, V8, j8, H8, aee, cee = g({
+var w8, v8, y8, S8, b8, _8, E8, k8, aee, I8, C8, T8, P8, D8, x8, R8, A8, M8, O8, L8, N8, W8, F8, U8, B8, $8, V8, j8, H8, cee, lee = g({
     "out-build/vs/platform/reactivestorage/common/reactiveStorageTypes.js"() {
         "use strict";
         (function(t) {
@@ -48715,7 +48723,7 @@ var w8, v8, y8, S8, b8, _8, E8, k8, oee, I8, C8, T8, P8, D8, x8, R8, A8, M8, O8,
             t.Upload = "upload", t.Syncing = "syncing"
         })(E8 || (E8 = {})), (function(t) {
             t.Jpeg = "image/jpeg", t.Png = "image/png", t.Gif = "image/gif", t.Webp = "image/webp"
-        })(k8 || (k8 = {})), oee = {
+        })(k8 || (k8 = {})), aee = {
             symbol: Symbol.for("cursor.agentStreamMetadata"),
             defaultValue: void 0
         }, (function(t) {
@@ -48754,26 +48762,26 @@ var w8, v8, y8, S8, b8, _8, E8, k8, oee, I8, C8, T8, P8, D8, x8, R8, A8, M8, O8,
             t.Unknown = "unknown", t.LineChange = "line_change", t.Typing = "typing", t.OptionHold = "option_hold", t.LinterErrors = "lint_errors", t.ParameterHints = "parameter_hints", t.CursorPrediction = "cursor_prediction", t.ManualTrigger = "manual_trigger", t.EditorChange = "editor_change", t.LspSuggestions = "lsp_suggestions"
         })(V8 || (V8 = {})), (function(t) {
             t.FREE = "free", t.PRO = "pro", t.PRO_PLUS = "pro_plus", t.ENTERPRISE = "enterprise", t.FREE_TRIAL = "free_trial", t.ULTRA = "ultra"
-        })(j8 || (j8 = {})), H8 = ".cursor/worktrees", aee = `${H8}/**`
+        })(j8 || (j8 = {})), H8 = ".cursor/worktrees", cee = `${H8}/**`
     }
 });
 
-function lee(t) {
+function uee(t) {
     return t.urlProtocol === "cursor-dev" ? "debug" : t.version.includes("nightly") || t.version.includes("-pre") ? "nightly" : "stable"
 }
-var uee = g({
+var dee = g({
     "out-build/vs/platform/tracing/common/clientTraceCommonAttributes.js"() {
         "use strict"
     }
 });
 
-function dee(t) {
+function hee(t) {
     return t && q8.includes(t) ? t : "unknown"
 }
 
-function hee(t, e, i) {
-    const r = lee(e),
-        s = dee(i.getValue("update.releaseTrack")),
+function fee(t, e, i) {
+    const r = uee(e),
+        s = hee(i.getValue("update.releaseTrack")),
         n = {
             ...t,
             channel: r,
@@ -48787,23 +48795,23 @@ function hee(t, e, i) {
 var q8, G8 = g({
     "out-build/vs/platform/tracing/common/mainCrashMetricTags.js"() {
         "use strict";
-        Z(), uee(), q8 = ["stable", "prerelease", "dev", "dogfood"]
+        Z(), dee(), q8 = ["stable", "prerelease", "dev", "dogfood"]
     }
 });
 import {
-    randomUUID as fee
+    randomUUID as pee
 } from "crypto";
-import pee from "fs";
-import gee from "node-fetch";
-var z8, K8, J8, Y8, mee = g({
+import gee from "fs";
+import mee from "node-fetch";
+var z8, K8, J8, Y8, wee = g({
     "out-build/vs/platform/tracing/electron-main/mainCrashMetricsUploader.js"() {
         "use strict";
-        cee(), G8(), G8(), z8 = "https://api3.cursor.sh", K8 = "/aiserver.v1.MetricsService/ReportIncrement", J8 = ["g", "g", "H", "r"].slice().reverse().join("") + "iuZiWjUfGNs8z4HHTLHuMD8CccAumgjzjpLmDsDX6c3Eaj7nvzCJMNoVAv3P", Y8 = class {
+        lee(), G8(), G8(), z8 = "https://api3.cursor.sh", K8 = "/aiserver.v1.MetricsService/ReportIncrement", J8 = ["g", "g", "H", "r"].slice().reverse().join("") + "iuZiWjUfGNs8z4HHTLHuMD8CccAumgjzjpLmDsDX6c3Eaj7nvzCJMNoVAv3P", Y8 = class {
             constructor(t, e, i, r) {
                 this.logService = t, this.productService = e, this.configurationService = i, this.getPrivacyMode = r
             }
             uploadFatalIncrement(t, e, i = 1) {
-                const r = hee(e, this.productService, this.configurationService);
+                const r = fee(e, this.productService, this.configurationService);
                 this._writeSentinel(t, r);
                 const s = this.getPrivacyMode(),
                     o = JSON.stringify({
@@ -48813,16 +48821,16 @@ var z8, K8, J8, Y8, mee = g({
                             tags: r
                         }]
                     });
-                gee(`${z8}${K8}`, {
+                mee(`${z8}${K8}`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `Bearer ${J8}`,
                         "Connect-Protocol-Version": "1",
-                        "x-request-id": fee(),
+                        "x-request-id": pee(),
                         "x-cursor-client-version": this.productService.version,
                         "x-cursor-client-type": "ide",
-                        [T8]: nee(s ?? void 0)
+                        [T8]: oee(s ?? void 0)
                     },
                     body: o
                 }).then(async a => {
@@ -48841,7 +48849,7 @@ var z8, K8, J8, Y8, mee = g({
             _writeSentinel(t, e) {
                 const i = process.env.CURSOR_CRASH_METRICS_SENTINEL;
                 if (i) try {
-                    pee.appendFileSync(i, JSON.stringify({
+                    gee.appendFileSync(i, JSON.stringify({
                         stat: t,
                         tags: e,
                         ts: Date.now()
@@ -48855,18 +48863,18 @@ var z8, K8, J8, Y8, mee = g({
 import {
     app as Kd,
     webContents as sv,
-    crashReporter as wee
+    crashReporter as vee
 } from "electron";
 import ke from "fs";
 import nv from "node-fetch";
 import {
-    tmpdir as vee
+    tmpdir as yee
 } from "os";
 import Ri from "path";
-var ls, ov, yee = g({
+var ls, ov, See = g({
         "out-build/vs/platform/tracing/electron-main/tracingService.js"() {
             "use strict";
-            Et(), Q(), $(), Ii(), jZ(), qZ(), et(), Ni(), Y(), Qo(), gt(), yt(), Ml(), tee(), Al(), RC(), ree(), see(), Vk(), mee(), ov = class extends H {
+            Et(), Q(), $(), Ii(), HZ(), GZ(), et(), Ni(), Y(), Qo(), gt(), yt(), Ml(), iee(), Al(), RC(), see(), nee(), Vk(), wee(), ov = class extends H {
                 static {
                     ls = this
                 }
@@ -48910,7 +48918,7 @@ var ls, ov, yee = g({
                         ...ls.DEFAULT_CLIENT_TRACING_CONFIG
                     }, this._replayConfig = {
                         ...ls.DEFAULT_REPLAY_CONFIG
-                    }, this._debuggingDataUploadUrl = null, this._isPrivacyMode = null, this._isInternalUser = !1, this._transport = null, this._userEmail = null, this._userId = null, this._watchedRenderers = new Map, this._watcherDisposables = [], this._failedStatusCodes = [], this._eventIdToProfile = new Ua(100), this._rateLimiter = new m8(60 * 1e3), this._processConfigUpdateEvent = new x, this._rendererCrashTagStore = new u8, this._crashMetricDedupeKeys = new Ua(ls.CRASH_METRIC_DEDUPE_MAX_ENTRIES), this._crashMetricUploadBuffer = [], this.onProcessConfigUpdate = this._processConfigUpdateEvent.event, this._crashMetricsUploader = new Y8(this.logService, this.productService, this.configurationService, () => this._isPrivacyMode), this._initializeTransport().then(() => this._register(eee("main", this))).catch(a => this.logService.error("TracingService: failed to initialize transport", a)), Kd.on("before-quit", () => this.shutdownHasBegun()), this._register(this.windowsMainService.onDidDestroyWindow(a => {
+                    }, this._debuggingDataUploadUrl = null, this._isPrivacyMode = null, this._isInternalUser = !1, this._transport = null, this._userEmail = null, this._userId = null, this._watchedRenderers = new Map, this._watcherDisposables = [], this._failedStatusCodes = [], this._eventIdToProfile = new Ua(100), this._rateLimiter = new m8(60 * 1e3), this._processConfigUpdateEvent = new x, this._rendererCrashTagStore = new u8, this._crashMetricDedupeKeys = new Ua(ls.CRASH_METRIC_DEDUPE_MAX_ENTRIES), this._crashMetricUploadBuffer = [], this.onProcessConfigUpdate = this._processConfigUpdateEvent.event, this._crashMetricsUploader = new Y8(this.logService, this.productService, this.configurationService, () => this._isPrivacyMode), this._initializeTransport().then(() => this._register(tee("main", this))).catch(a => this.logService.error("TracingService: failed to initialize transport", a)), Kd.on("before-quit", () => this.shutdownHasBegun()), this._register(this.windowsMainService.onDidDestroyWindow(a => {
                         this._rendererCrashTagStore.removeWindow(a.id)
                     })), this._register(this.windowsMainService.onDidChangeWindowsCount(() => {
                         const a = new Set(this.windowsMainService.getWindows().map(c => c.id));
@@ -49212,7 +49220,7 @@ var ls, ov, yee = g({
                     this._userEmail = e, this._userId = i, this._userEmail !== null || this._userId !== null ? Cr().setUser({
                         email: this._userEmail ?? void 0,
                         id: this._userId ?? void 0
-                    }) : Cr().setUser(null), Cr().setTag("synthetic_session", iee(this._userEmail) ? "true" : "false"), (r !== this._userEmail || s !== this._userId) && this.logService.debug(`TracingService: set user to ${JSON.stringify(Cr()?.getUser())}`)
+                    }) : Cr().setUser(null), Cr().setTag("synthetic_session", ree(this._userEmail) ? "true" : "false"), (r !== this._userEmail || s !== this._userId) && this.logService.debug(`TracingService: set user to ${JSON.stringify(Cr()?.getUser())}`)
                 }
                 async toggleWatchForCrashes() {
                     return this._watchedRenderers.size > 0 ? (this._unwatchRendererProcesses(), !1) : (this._watchRendererProcesses(), !0)
@@ -49498,7 +49506,7 @@ var ls, ov, yee = g({
                     const s = [];
                     this._watchedRenderers.set(i.id, s), this.logService.debug(`TracingService: watching renderer process ${e}`);
                     const n = i.getOSProcessId(),
-                        o = Ri.join(vee(), `renderer-${n}-${Date.now()}.heapsnapshot`),
+                        o = Ri.join(yee(), `renderer-${n}-${Date.now()}.heapsnapshot`),
                         a = [],
                         c = f => {
                             if (f.reason !== "OOM") {
@@ -49671,7 +49679,7 @@ var ls, ov, yee = g({
                     if (i !== void 0) return this._getCrashReportingTagsByRendererOsPid(i)
                 }
                 _extractRendererCrashPid(e) {
-                    return HZ(e.contexts?.electron)
+                    return qZ(e.contexts?.electron)
                 }
                 _parseOomRendererPidTag(e) {
                     const i = e.tags?.["oom.renderer_pid"];
@@ -49697,24 +49705,24 @@ var ls, ov, yee = g({
                     }
                 }
                 shutdownHasBegun() {
-                    wee.addExtraParameter("exiting", "true")
+                    vee.addExtraParameter("exiting", "true")
                 }
             }, ov = ls = __decorate([__param(0, Lr), __param(1, qn), __param(2, z), __param(3, Ye), __param(4, mt), __param(5, nt)], ov)
         }
     }),
-    SE, See = g({
+    SE, bee = g({
         "out-build/vs/platform/tracing/common/tracingService.js"() {
             "use strict";
             X(), SE = J("tracingService")
         }
     }),
-    bE, bee = g({
+    bE, _ee = g({
         "out-build/vs/platform/abuse/common/abuseService.js"() {
             "use strict";
             X(), bE = J("abuseService")
         }
     }),
-    av, _ee = g({
+    av, Eee = g({
         "out-build/vs/platform/abuse/node/abuseService.js"() {
             "use strict";
             zu(), Si(), av = class {
@@ -49746,7 +49754,7 @@ var ls, ov, yee = g({
             }, av = __decorate([__param(0, yi)], av)
         }
     }),
-    _E, X8, cv, Eee = g({
+    _E, X8, cv, kee = g({
         "out-build/vs/platform/extensionManagement/node/extensionSignatureVerificationService.js"() {
             "use strict";
             je(), X(), Y(), gt(), Si(), xg(), X8 = J("IExtensionSignatureVerificationService"), cv = class {
@@ -49847,16 +49855,16 @@ ${c.output}`), this.telemetryService.publicLog2("extensionsignature:verification
     });
 import dr from "fs";
 import {
-    tmpdir as kee
+    tmpdir as Iee
 } from "os";
 import Zn from "path";
 import {
-    createGzip as Iee
+    createGzip as Cee
 } from "zlib";
 import {
-    app as Cee
+    app as Tee
 } from "electron";
-var Q8, lv, Tee = g({
+var Q8, lv, Pee = g({
     "out-build/vs/platform/continuousProfiling/electron-main/continuousProfilingService.js"() {
         "use strict";
         Q(), $(), Li(), Ni(), Y(), gt(), yt(), km(), cx(), Q8 = class {
@@ -49984,7 +49992,7 @@ var Q8, lv, Tee = g({
                     captureId: r,
                     targetWebContents: s,
                     targetId: n
-                } = e, o = Zn.join(kee(), `vscode-profile-${r}`), a = [];
+                } = e, o = Zn.join(Iee(), `vscode-profile-${r}`), a = [];
                 try {
                     await dr.promises.mkdir(o, {
                         recursive: !0
@@ -50111,7 +50119,7 @@ var Q8, lv, Tee = g({
                 }
             }
             _getEmergencyProfileDir() {
-                return Zn.join(Cee.getPath("userData"), "emergency-profiles")
+                return Zn.join(Tee.getPath("userData"), "emergency-profiles")
             }
             async captureEmergencyProfile(e) {
                 if (this._isPrivacyMode) return this.logService.debug("ContinuousProfilingMainService: skipping emergency profile due to privacy mode"), null;
@@ -50197,7 +50205,7 @@ var Q8, lv, Tee = g({
             }
             async _compressFile(e, i) {
                 return new Promise((r, s) => {
-                    const n = Iee(),
+                    const n = Cee(),
                         o = dr.createReadStream(e),
                         a = dr.createWriteStream(i);
                     o.pipe(n).pipe(a), a.on("finish", () => {
@@ -50222,7 +50230,7 @@ var Q8, lv, Tee = g({
     }
 });
 
-function Pee(t, e, i, r) {
+function Dee(t, e, i, r) {
     try {
         const s = t.get(Ke),
             n = t.get(z),
@@ -50237,15 +50245,15 @@ function Pee(t, e, i, r) {
         console.error("Failed to initialize continuous profiling service:", s)
     }
 }
-var Dee = g({
+var xee = g({
     "out-build/vs/platform/continuousProfiling/electron-main/initializeMain.js"() {
         "use strict";
-        or(), Tee(), Ze(), Y(), gt(), yt()
+        or(), Pee(), Ze(), Y(), gt(), yt()
     }
 });
 import * as uv from "path";
-import * as xee from "fs";
-var Z8, Ree = g({
+import * as Ree from "fs";
+var Z8, Aee = g({
     "out-build/vs/platform/pathInspection/electron-main/pathInspectionService.js"() {
         "use strict";
         am(), Gu(), Z(), Z8 = class {
@@ -50292,7 +50300,7 @@ var Z8, Ree = g({
                 try {
                     const e = this.getApplicationPaths(t);
                     for (const i of e)
-                        if (xee.existsSync(i)) return !0;
+                        if (Ree.existsSync(i)) return !0;
                     return !1
                 } catch (e) {
                     return this.logService.error("PathInspectionMainService: Failed to check application existence", e), !1
@@ -50312,7 +50320,7 @@ var Z8, Ree = g({
     }
 });
 
-function Aee(t, e, i) {
+function Mee(t, e, i) {
     const r = t.get(z);
     try {
         const s = t.get(nt),
@@ -50324,15 +50332,15 @@ function Aee(t, e, i) {
         r.error("Failed to initialize path inspection service:", s)
     }
 }
-var Mee = g({
+var Oee = g({
     "out-build/vs/platform/pathInspection/electron-main/initializeMain.js"() {
         "use strict";
-        or(), Ree(), Y(), et(), Ze()
+        or(), Aee(), Y(), et(), Ze()
     }
 });
 import * as e3 from "fs";
-import * as Oee from "path";
-var dv, Lee = g({
+import * as Lee from "path";
+var dv, Nee = g({
     "out-build/vs/platform/fileAppend/electron-main/fileAppendService.js"() {
         "use strict";
         Y(), dv = class {
@@ -50349,7 +50357,7 @@ var dv, Lee = g({
                 }
             }
             async ensureDir(e) {
-                const i = Oee.dirname(e);
+                const i = Lee.dirname(e);
                 try {
                     await e3.promises.mkdir(i, {
                         recursive: !0
@@ -50362,7 +50370,7 @@ var dv, Lee = g({
     }
 });
 
-function Nee(t, e, i) {
+function Wee(t, e, i) {
     const r = t.get(z);
     try {
         const s = new dv(r),
@@ -50372,10 +50380,10 @@ function Nee(t, e, i) {
         r.error("Failed to initialize file append service:", s)
     }
 }
-var Wee = g({
+var Fee = g({
     "out-build/vs/platform/fileAppend/electron-main/initializeMain.js"() {
         "use strict";
-        or(), Lee(), Y()
+        or(), Nee(), Y()
     }
 });
 
@@ -50392,27 +50400,27 @@ var i3, r3, s3, n3, o3 = g({
             })(n3 || (n3 = {}))
         }
     }),
-    a3, Fee = g({
+    a3, Uee = g({
         "out-build/vs/platform/agentAnalyticsOperations/common/agentAnalyticsOperationsService.js"() {
             "use strict";
             X(), a3 = J("agentAnalyticsOperationsService")
         }
     });
 import {
-    execFile as Uee,
-    spawn as Bee
+    execFile as Bee,
+    spawn as $ee
 } from "node:child_process";
 import {
-    readFile as $ee
+    readFile as Vee
 } from "node:fs/promises";
 import {
-    join as Vee
+    join as jee
 } from "node:path";
 import {
-    promisify as jee
+    promisify as Hee
 } from "node:util";
 
-function Hee(t) {
+function qee(t) {
     const e = t.split("\0"),
         i = [];
     for (let r = 0; r + 1 < e.length; r += 2) {
@@ -50426,7 +50434,7 @@ function Hee(t) {
     return i
 }
 
-function qee(t) {
+function Gee(t) {
     const e = [];
     let i = !1;
     for (const r of t.split(/\r?\n/)) {
@@ -50450,10 +50458,10 @@ function qee(t) {
     }
     return e
 }
-var c3, l3, u3, Gee = g({
+var c3, l3, u3, zee = g({
         "../packages/agent-analytics/src/cursor-blame/git-operations-node.ts"() {
             "use strict";
-            c3 = jee(Uee), l3 = async (t, e, i) => {
+            c3 = Hee(Bee), l3 = async (t, e, i) => {
                 const {
                     stdout: r,
                     stderr: s
@@ -50528,7 +50536,7 @@ ${n.stderr||String(s)}`)
                         const s = await this.executeGitCommand(t, r, {
                             trimStdout: !1
                         });
-                        return Hee(s)
+                        return qee(s)
                     } catch {
                         return []
                     }
@@ -50572,8 +50580,8 @@ ${n.stderr||String(s)}`)
                 }
                 async getSubmodules(t) {
                     try {
-                        const e = await $ee(Vee(t, ".gitmodules"), "utf-8"),
-                            i = qee(e);
+                        const e = await Vee(jee(t, ".gitmodules"), "utf-8"),
+                            i = Gee(e);
                         return i.length === 0 ? void 0 : i
                     } catch {
                         return
@@ -50588,7 +50596,7 @@ ${n.stderr||String(s)}`)
                 }
                 async hashObject(t, e) {
                     return new Promise((i, r) => {
-                        const s = (this.dependencies.spawn ?? Bee)("git", ["-c", "gc.auto=0", "hash-object", "-w", "--stdin"], {
+                        const s = (this.dependencies.spawn ?? $ee)("git", ["-c", "gc.auto=0", "hash-object", "-w", "--stdin"], {
                             cwd: e,
                             shell: !1
                         });
@@ -50613,13 +50621,13 @@ ${n.stderr||String(s)}`)
             }
         }
     }),
-    zee = g({
+    Kee = g({
         "../packages/agent-analytics/src/node.ts"() {
             "use strict";
-            Gee()
+            zee()
         }
     });
-async function Kee(t, e, i = {}) {
+async function Jee(t, e, i = {}) {
     const {
         limit: r = 500,
         sinceMs: s
@@ -50636,33 +50644,33 @@ async function Kee(t, e, i = {}) {
         commits: o
     }
 }
-var Jee = g({
+var Yee = g({
     "../packages/agent-analytics/src/cursor-blame/get-user-commits.ts"() {
         "use strict"
     }
 });
 import {
-    dirname as Yee,
-    relative as Xee
+    dirname as Xee,
+    relative as Qee
 } from "node:path";
-async function Qee(t, e, i) {
+async function Zee(t, e, i) {
     const r = e.replace(/\\/g, "/"),
         s = i?.replace(/\\/g, "/") ?? r;
     try {
-        const n = await t.getGitRoot(Yee(e));
+        const n = await t.getGitRoot(Xee(e));
         if (n) {
-            const o = Xee(n, e);
+            const o = Qee(n, e);
             if (o && !o.startsWith("..")) return o.replace(/\\/g, "/")
         }
     } catch {}
     return s
 }
-var Zee = g({
+var ete = g({
         "../packages/agent-analytics/src/cursor-blame/git-relative-path.ts"() {
             "use strict"
         }
     }),
-    ete = g({
+    tte = g({
         "../packages/agent-analytics/src/cursor-blame/poll-commit-merge.ts"() {
             "use strict"
         }
@@ -50674,7 +50682,7 @@ function d3(t) {
     return e === -1 || e < i ? "" : t.slice(e + 1)
 }
 
-function tte(t) {
+function ite(t) {
     try {
         let e = t;
         return t.includes("@") && !t.startsWith("http") && (t.startsWith("ssh://") || (e = t.replace(/^([^@]+)@([^:]+):(.*)/, "ssh://$1@$2/$3"))), new URL(e)
@@ -50683,14 +50691,14 @@ function tte(t) {
     }
 }
 
-function ite(t) {
+function rte(t) {
     if (!t) return;
     const e = t.replace("https///", "https://").replace("http///", "http://");
     if (e.startsWith("gitlab-remote://")) try {
         const l = new URL(e).searchParams.get("project");
         if (l) return l.includes("/") ? l : void 0
     } catch {}
-    const i = tte(e);
+    const i = ite(e);
     if (!i) return;
     const r = i.hostname.toLowerCase(),
         s = i.pathname.split("/").filter(c => c.length > 0);
@@ -50717,14 +50725,14 @@ var Jd = g({
     }
 });
 import {
-    access as rte,
-    readdir as ste
+    access as ste,
+    readdir as nte
 } from "node:fs/promises";
 import {
     join as EE,
     normalize as h3
 } from "node:path";
-async function nte(t, e) {
+async function ote(t, e) {
     const i = new Set,
         r = [],
         s = a => {
@@ -50732,7 +50740,7 @@ async function nte(t, e) {
         };
     async function n(a) {
         try {
-            return await rte(EE(a, ".git")), !0
+            return await ste(EE(a, ".git")), !0
         } catch {
             return !1
         }
@@ -50748,7 +50756,7 @@ async function nte(t, e) {
     }
     for (const a of e) try {
         if (!await o(a, !0)) {
-            const u = (await ste(a, {
+            const u = (await nte(a, {
                 withFileTypes: !0
             })).filter(d => d.isDirectory()).map(d => d.name).sort((d, f) => d.localeCompare(f));
             for (const d of u) {
@@ -50759,12 +50767,12 @@ async function nte(t, e) {
     } catch {}
     return r
 }
-async function ote(t, e) {
+async function ate(t, e) {
     let i, r, s;
     try {
         [i, s] = await Promise.all([t.getCurrentBranch(e).catch(() => {}), t.getDefaultBranch(e).catch(() => {})]);
         const o = await t.getUpstreamUrl(e);
-        r = ite(o)
+        r = rte(o)
     } catch {}
     return {
         branchName: i,
@@ -50773,7 +50781,7 @@ async function ote(t, e) {
         isPrimaryBranch: typeof i == "string" && typeof s == "string" && i && s ? i === s : void 0
     }
 }
-var ate = g({
+var cte = g({
         "../packages/agent-analytics/src/cursor-blame/repo-utils.ts"() {
             "use strict";
             Jd()
@@ -50784,7 +50792,7 @@ var ate = g({
             "use strict"
         }
     }),
-    kE, cte = g({
+    kE, lte = g({
         "../packages/agent-analytics/src/storage/lru-cache.ts"() {
             "use strict";
             kE = class {
@@ -50823,10 +50831,10 @@ var ate = g({
             }
         }
     }),
-    IE, f3, p3, g3, yr, m3, w3, lte = g({
+    IE, f3, p3, g3, yr, m3, w3, ute = g({
         "../packages/agent-analytics/src/storage/ai-code-tracking.ts"() {
             "use strict";
-            la(), cte(), IE = 1024 * 1024, f3 = 10080 * 60 * 1e3, p3 = 1e4, g3 = 500, yr = 900, m3 = 5e3, w3 = class {
+            la(), lte(), IE = 1024 * 1024, f3 = 10080 * 60 * 1e3, p3 = 1e4, g3 = 500, yr = 900, m3 = 5e3, w3 = class {
                 constructor(t, e, i) {
                     if (this.transactionQueue = Promise.resolve(), this.isClosing = !1, !t) throw new Error("SqliteAdapter is required. This package has no SQLite dependencies - you must provide an adapter.");
                     this.adapter = t, this.dbPath = e, this.hashCache = new kE(i?.hashCacheSize ?? p3), this.scoredCommitsCache = new kE(i?.scoredCommitsCacheSize ?? g3)
@@ -51326,15 +51334,15 @@ var ate = g({
             }
         }
     }),
-    ute = g({
+    dte = g({
         "../packages/agent-analytics/src/storage/sqlite-storage.ts"() {
             "use strict"
         }
     }),
-    dte = g({
+    hte = g({
         "../packages/agent-analytics/src/index.ts"() {
             "use strict";
-            Jee(), Zee(), ete(), ate(), lte(), ute()
+            Yee(), ete(), tte(), cte(), ute(), dte()
         }
     });
 
@@ -51362,7 +51370,7 @@ var jc = g({
             }
         }
     }),
-    hte = g({
+    fte = g({
         "../packages/agent-analytics/src/commit-scoring/agent-commit-hashes.ts"() {
             "use strict";
             Jd(), jc(), ua(), la()
@@ -51374,24 +51382,24 @@ var jc = g({
             ua()
         }
     }),
-    fte = g({
+    pte = g({
         "../packages/agent-analytics/src/commit-scoring/command-filter.ts"() {
             "use strict"
         }
     }),
-    pte = g({
+    gte = g({
         "../packages/agent-analytics/src/commit-scoring/diff-utils.ts"() {
             "use strict"
         }
     }),
-    gte = g({
+    mte = g({
         "../packages/agent-analytics/src/commit-scoring/format-detection.ts"() {
             "use strict";
             jc(), ua(), la()
         }
     });
 
-function mte(t, e, i, r, s, n = {}) {
+function wte(t, e, i, r, s, n = {}) {
     const {
         normalizeLines: o = !0
     } = n, a = s.fileExtension || d3(t), c = [], l = Date.now();
@@ -51435,19 +51443,19 @@ function mte(t, e, i, r, s, n = {}) {
     }
     return c
 }
-var wte = g({
+var vte = g({
         "../packages/agent-analytics/src/commit-scoring/generate-hashes.ts"() {
             "use strict";
             Jd(), jc(), ua(), la()
         }
     }),
-    vte = g({
+    yte = g({
         "../packages/agent-analytics/src/commit-scoring/hash-line.ts"() {
             "use strict";
             jc(), ua()
         }
     }),
-    yte = g({
+    Ste = g({
         "../packages/agent-analytics/src/commit-scoring/normalize-ai-line-ranges.ts"() {
             "use strict";
             la()
@@ -51459,7 +51467,7 @@ function y3(t, e) {
     return hv.hash(i, 0)
 }
 
-function Ste(t, e, i, r) {
+function bte(t, e, i, r) {
     const s = [];
     if (s.push(y3(t, e)), r) {
         const n = e.charAt(0),
@@ -51473,7 +51481,7 @@ function Ste(t, e, i, r) {
     return s
 }
 
-function bte(t, e = {}) {
+function _te(t, e = {}) {
     const {
         normalizeLines: i = !0
     } = e, r = [];
@@ -51485,29 +51493,29 @@ function bte(t, e = {}) {
             for (const c of a.changes || []) {
                 if (c.type !== "add" && c.type !== "del" || !c.content) continue;
                 const l = c.content,
-                    u = Ste(n, l, o, i);
+                    u = bte(n, l, o, i);
                 r.push(...u)
             }
     }
     return r
 }
-var _te = g({
+var Ete = g({
         "../packages/agent-analytics/src/commit-scoring/score-commit.ts"() {
             "use strict";
             v3(), Jd(), jc(), ua(), la()
         }
     }),
-    Ete = g({
+    kte = g({
         "../packages/agent-analytics/src/commit-scoring/index.ts"() {
             "use strict";
-            hte(), v3(), fte(), pte(), gte(), wte(), Jd(), vte(), jc(), ua(), yte(), _te(), la()
+            fte(), v3(), pte(), gte(), mte(), vte(), Jd(), yte(), jc(), ua(), Ste(), Ete(), la()
         }
     });
-import * as kte from "fs";
-var S3, Yd, Ite = g({
+import * as Ite from "fs";
+var S3, Yd, Cte = g({
     "out-build/vs/platform/agentAnalyticsOperations/electron-main/agentAnalyticsOperationsService.js"() {
         "use strict";
-        $(), xe(), Ze(), Y(), zee(), dte(), Ete(), S3 = class {
+        $(), xe(), Ze(), Y(), Kee(), hte(), kte(), S3 = class {
             async openDatabase(t) {
                 const e = await import("@vscode/sqlite3");
                 return new Promise((i, r) => {
@@ -51573,7 +51581,7 @@ var S3, Yd, Ite = g({
                     try {
                         const e = await this.getAiCodeTrackingDbPath(),
                             i = Tt(e);
-                        await kte.promises.mkdir(i, {
+                        await Ite.promises.mkdir(i, {
                             recursive: !0
                         });
                         const r = new S3,
@@ -51693,14 +51701,14 @@ var S3, Yd, Ite = g({
             }
             async discoverRepos(e) {
                 try {
-                    return await nte(this.gitOperations, e)
+                    return await ote(this.gitOperations, e)
                 } catch (i) {
                     return this.logService.debug("[AgentAnalyticsOperationsMainService] Error discovering repos:", i), []
                 }
             }
             async getRepoInfo(e) {
                 try {
-                    return await ote(this.gitOperations, e)
+                    return await ate(this.gitOperations, e)
                 } catch (i) {
                     return this.logService.debug("[AgentAnalyticsOperationsMainService] Error getting repo info:", i), {
                         branchName: void 0,
@@ -51712,7 +51720,7 @@ var S3, Yd, Ite = g({
             }
             async getUserCommits(e, i) {
                 try {
-                    return await Kee(this.gitOperations, e, i)
+                    return await Jee(this.gitOperations, e, i)
                 } catch (r) {
                     this.logService.debug("[AgentAnalyticsOperationsMainService] Error getting user commits:", r);
                     return
@@ -51720,7 +51728,7 @@ var S3, Yd, Ite = g({
             }
             async gitRelativePath(e, i) {
                 try {
-                    return await Qee(this.gitOperations, e, i)
+                    return await Zee(this.gitOperations, e, i)
                 } catch (r) {
                     return this.logService.debug("[AgentAnalyticsOperationsMainService] Error getting git relative path:", r), i ?? e
                 }
@@ -51731,7 +51739,7 @@ var S3, Yd, Ite = g({
             }
             async storeAiCodeHashes(e, i, r, s, n) {
                 try {
-                    const o = mte(e, i, r, s, n, {
+                    const o = wte(e, i, r, s, n, {
                         normalizeLines: !0
                     });
                     return o.length > 0 && await (await this.getStorage()).storeHashes(o.map(({
@@ -51752,7 +51760,7 @@ var S3, Yd, Ite = g({
             async getAiCodeHashes(e, i, r, s) {
                 try {
                     let n, o, a;
-                    i !== void 0 && typeof i == "object" && i !== null ? (n = bte(e, i), o = r, a = s) : (n = e, o = i, a = r);
+                    i !== void 0 && typeof i == "object" && i !== null ? (n = _te(e, i), o = r, a = s) : (n = e, o = i, a = r);
                     const l = await this.getStorage(),
                         u = o !== void 0 || a !== void 0;
                     return await l.getHashes(n, u ? {
@@ -51831,7 +51839,7 @@ var S3, Yd, Ite = g({
     }
 });
 
-function Cte(t, e, i) {
+function Tte(t, e, i) {
     const r = t.get(z),
         s = t.get(Ke);
     t3(a3, new oe(Yd));
@@ -51840,22 +51848,22 @@ function Cte(t, e, i) {
     const o = Fe.fromService(n, i);
     e.registerChannel("agentAnalyticsOperations", o)
 }
-var Tte = g({
+var Pte = g({
         "out-build/vs/platform/agentAnalyticsOperations/electron-main/initializeMain.js"() {
             "use strict";
-            or(), nd(), o3(), Ze(), Y(), Fee(), Ite()
+            or(), nd(), o3(), Ze(), Y(), Uee(), Cte()
         }
     }),
-    TE, b3, Pte = g({
+    TE, b3, Dte = g({
         "out-build/vs/platform/mcp/common/nativeMcpDiscoveryHelper.js"() {
             "use strict";
             X(), TE = J("INativeMcpDiscoveryHelperService"), b3 = "NativeMcpDiscoveryHelper"
         }
     });
 import {
-    homedir as Dte
+    homedir as xte
 } from "os";
-var _3, xte = g({
+var _3, Rte = g({
         "out-build/vs/platform/mcp/node/nativeMcpDiscoveryHelperService.js"() {
             "use strict";
             Z(), le(), _3 = class {
@@ -51863,7 +51871,7 @@ var _3, xte = g({
                 load() {
                     return Promise.resolve({
                         platform: Wa,
-                        homedir: A.file(Dte()),
+                        homedir: A.file(xte()),
                         winAppData: this.uriFromEnvVariable("APPDATA"),
                         xdgHome: this.uriFromEnvVariable("XDG_CONFIG_HOME")
                     })
@@ -51875,14 +51883,14 @@ var _3, xte = g({
             }
         }
     }),
-    PE, Rte, Ate = g({
+    PE, Ate, Mte = g({
         "out-build/vs/platform/webContentExtractor/common/webContentExtractor.js"() {
             "use strict";
-            X(), PE = J("IWebContentExtractorService"), Rte = J("ISharedWebContentExtractorService")
+            X(), PE = J("IWebContentExtractorService"), Ate = J("ISharedWebContentExtractorService")
         }
     });
 
-function Mte(t) {
+function Ote(t) {
     if (!t.length) return "";
     const e = new Map,
         i = new Set,
@@ -51950,18 +51958,18 @@ function Mte(t) {
         } return c.filter((l, u, d) => l.trim() || u > 0 && d[u - 1].trim()).join(`
 `).trim()
 }
-var Ote = g({
+var Lte = g({
     "out-build/vs/platform/webContentExtractor/electron-main/cdpAccessibilityDomain.js"() {
         "use strict"
     }
 });
 import {
-    BrowserWindow as Lte
+    BrowserWindow as Nte
 } from "electron";
-var E3, Nte = g({
+var E3, Wte = g({
         "out-build/vs/platform/webContentExtractor/electron-main/webContentExtractorService.js"() {
             "use strict";
-            Ote(), he(), Ii(), E3 = class {
+            Lte(), he(), Ii(), E3 = class {
                 constructor() {
                     this._limiter = new b0(3), this._webContentsCache = new hi, this._cacheDuration = 1440 * 60 * 1e3
                 }
@@ -51976,7 +51984,7 @@ var E3, Nte = g({
                     if (e)
                         if (this.isExpired(e)) this._webContentsCache.delete(t);
                         else return e.content;
-                    const i = new Lte({
+                    const i = new Nte({
                         width: 800,
                         height: 600,
                         show: !1,
@@ -51990,7 +51998,7 @@ var E3, Nte = g({
                     try {
                         await i.loadURL(t.toString(!0)), i.webContents.debugger.attach("1.1");
                         const r = await i.webContents.debugger.sendCommand("Accessibility.getFullAXTree"),
-                            s = Mte(r.nodes);
+                            s = Ote(r.nodes);
                         return this._webContentsCache.set(t, {
                             content: s,
                             timestamp: Date.now()
@@ -52005,7 +52013,7 @@ var E3, Nte = g({
             }
         }
     }),
-    DE, k3, Wte = g({
+    DE, k3, Fte = g({
         "out-build/vs/platform/telemetry/common/errorTelemetry.js"() {
             "use strict";
             ti(), je(), $(), Br(), pt(), (function(t) {
@@ -52049,10 +52057,10 @@ var E3, Nte = g({
             }
         }
     }),
-    fv, I3, Fte = g({
+    fv, I3, Ute = g({
         "out-build/vs/platform/telemetry/electron-main/errorTelemetry.js"() {
             "use strict";
-            je(), Wte(), Si(), fv = class extends k3 {
+            je(), Fte(), Si(), fv = class extends k3 {
                 constructor(e, i) {
                     super(i), this.logService = e
                 }
@@ -52067,7 +52075,7 @@ var E3, Nte = g({
             }, fv = __decorate([__param(1, yi)], fv), I3 = fv
         }
     }),
-    xE, C3, T3, Ute = g({
+    xE, C3, T3, Bte = g({
         "out-build/vs/platform/cursorProclist/common/cursorProclist.js"() {
             "use strict";
             X(), xE = J("cursorProclistService"), C3 = "cursorProclist", (function(t) {
@@ -52076,15 +52084,15 @@ var E3, Nte = g({
         }
     });
 import {
-    createRequire as Bte
+    createRequire as $te
 } from "node:module";
 import {
     promises as P3
 } from "fs";
-var D3, x3, R3, pv, $te = g({
+var D3, x3, R3, pv, Vte = g({
         "out-build/vs/platform/cursorProclist/node/cursorProclistService.js"() {
             "use strict";
-            Li(), Y(), Ni(), le(), Pt(), si(), D3 = Bte(import.meta.url), x3 = 1, R3 = 300, pv = class {
+            Li(), Y(), Ni(), le(), Pt(), si(), D3 = $te(import.meta.url), x3 = 1, R3 = 300, pv = class {
                 constructor(e, i, r) {
                     this.logService = e, this.loggerService = i, this.environmentService = r, this.processTrackers = new Map, this.sampleSeq = 0, this.samplePeakTotalMemMb = -1, this.samplePeakTotalCpuUtilPct = -1, this.BUCKET_MS = 14400 * 1e3, this.MAX_BUCKETS = 6, this.sessionId = ni(), this.loadNativeModule(), this.monitorDir = Se(A.file(this.environmentService.userDataPath), "process-monitor")
                 }
@@ -52362,7 +52370,7 @@ var D3, x3, R3, pv, $te = g({
             }, pv = __decorate([__param(0, z), __param(1, sc), __param(2, Zr)], pv)
         }
     }),
-    A3, Vte = g({
+    A3, jte = g({
         "out-build/vs/platform/cursorProclist/node/cursorProclistIpc.js"() {
             "use strict";
             Q(), A3 = class {
@@ -52388,8 +52396,8 @@ var D3, x3, R3, pv, $te = g({
             }
         }
     });
-import jte from "v8";
-var gv, Hte = g({
+import Hte from "v8";
+var gv, qte = g({
     "out-build/vs/platform/telemetry/electron-main/performanceTelemetryService.js"() {
         "use strict";
         $(), Ze(), Y(), gt(), yt(), gv = class extends H {
@@ -52397,7 +52405,7 @@ var gv, Hte = g({
                 super(), this.environmentService = e, this.logService = i, this.productService = r, this.windowsService = s
             }
             async getHeapSpaceStatistics() {
-                return jte.getHeapSpaceStatistics().map(r => ({
+                return Hte.getHeapSpaceStatistics().map(r => ({
                     space_name: r.space_name,
                     space_size: r.space_size,
                     space_used_size: r.space_used_size,
@@ -52409,7 +52417,7 @@ var gv, Hte = g({
     }
 });
 
-function qte(t, e, i, r) {
+function Gte(t, e, i, r) {
     try {
         const s = t.get(Ke),
             n = t.get(z),
@@ -52422,23 +52430,23 @@ function qte(t, e, i, r) {
         console.error("Failed to initialize performance telemetry service:", s)
     }
 }
-var Gte = g({
+var zte = g({
         "out-build/vs/platform/telemetry/electron-main/initializeMain.js"() {
             "use strict";
-            or(), Ze(), Y(), gt(), yt(), Hte()
+            or(), Ze(), Y(), gt(), yt(), qte()
         }
     }),
-    mv, zte = g({
+    mv, Kte = g({
         "out-build/vs/platform/notification/common/systemNotification.js"() {
             "use strict";
             X(), mv = J("systemNotificationService")
         }
     });
 import {
-    app as Kte,
+    app as Jte,
     Notification as RE
 } from "electron";
-var AE, ME, OE, LE, Xd, wv, M3, Qd, O3, vv, Jte = g({
+var AE, ME, OE, LE, Xd, wv, M3, Qd, O3, vv, Yte = g({
         "out-build/vs/platform/notification/electron-main/systemNotificationService.js"() {
             "use strict";
             $(), Y(), Z(), Ko(), gt(), Li(), AE = "system-notification", ME = "token", OE = "actionIndex", LE = 3600 * 1e3, Xd = new Map, wv = t => {
@@ -52582,7 +52590,7 @@ var AE, ME, OE, LE, Xd, wv, M3, Qd, O3, vv, Jte = g({
                 }
                 async setBadgeCount(e) {
                     try {
-                        Kte.setBadgeCount(Math.max(0, Math.floor(e)))
+                        Jte.setBadgeCount(Math.max(0, Math.floor(e)))
                     } catch (i) {
                         this.logService.error("Failed to set badge count:", i)
                     }
@@ -52590,7 +52598,7 @@ var AE, ME, OE, LE, Xd, wv, M3, Qd, O3, vv, Jte = g({
             }, vv = __decorate([__param(0, z), __param(1, Ms), __param(2, Ye)], vv)
         }
     }),
-    L3, Yte = g({
+    L3, Xte = g({
         "out-build/vs/platform/notification/common/systemNotificationIpc.js"() {
             "use strict";
             L3 = class {
@@ -52622,14 +52630,14 @@ import {
     app as yv,
     Menu as N3,
     nativeImage as W3,
-    Tray as Xte,
+    Tray as Qte,
     nativeTheme as Sv,
-    screen as Qte
+    screen as Zte
 } from "electron";
 import {
     existsSync as da
 } from "fs";
-var Ui, bv, Zte = g({
+var Ui, bv, eie = g({
         "out-build/vs/platform/tray/electron-main/trayMainService.js"() {
             "use strict";
             $(), Z(), xe(), It(), Y(), yt(), Ze(), gt(), Et(), Ui = {
@@ -52671,7 +52679,7 @@ var Ui, bv, Zte = g({
                             return
                         }
                         const i = W3.createFromPath(e);
-                        if (W && i.setTemplateImage(!0), this.tray = new Xte(i), this.tray.setToolTip(this.productService.nameShort || "Cursor"), W) {
+                        if (W && i.setTemplateImage(!0), this.tray = new Qte(i), this.tray.setToolTip(this.productService.nameShort || "Cursor"), W) {
                             this.tray.setIgnoreDoubleClickEvents(!0);
                             const r = this.createContextMenu();
                             this.tray.setContextMenu(r), this.tray.on("click", () => {
@@ -52706,7 +52714,7 @@ var Ui, bv, Zte = g({
                         if (da(i)) return this.logService.trace(`[Tray] Using icon: ${i}`), i
                 }
                 orderLinuxIconNamesByScale(e) {
-                    const i = Qte.getPrimaryDisplay().scaleFactor,
+                    const i = Zte.getPrimaryDisplay().scaleFactor,
                         r = i >= 1.75 ? [48, 32, 24, 22, 16] : i >= 1.25 ? [32, 24, 22, 16] : [24, 22, 16],
                         s = [],
                         n = o => {
@@ -52977,14 +52985,14 @@ var Ui, bv, Zte = g({
             }, bv = __decorate([__param(0, it), __param(1, z), __param(2, mt), __param(3, Ke), __param(4, Ye)], bv)
         }
     }),
-    _v, eie = g({
+    _v, tie = g({
         "out-build/vs/platform/tray/common/tray.js"() {
             "use strict";
             X(), _v = J("trayMainService")
         }
     });
 
-function tie(t) {
+function iie(t) {
     let e = 0,
         i = 0;
     for (const r of t) r.config?.glass === !0 ? i++ : e++;
@@ -52995,7 +53003,7 @@ function tie(t) {
     }
 }
 
-function iie(t, e) {
+function rie(t, e) {
     if (t.length === 0) return e;
     let i = t[0].id;
     for (let r = 1; r < t.length; r++) {
@@ -53004,7 +53012,7 @@ function iie(t, e) {
     }
     return i
 }
-var rie = g({
+var sie = g({
         "out-build/vs/platform/analytics/common/openWindowCounts.js"() {
             "use strict"
         }
@@ -53015,10 +53023,10 @@ var rie = g({
             X(), NE = J("openWindowCountsMainService"), F3 = "vscode:openWindowCountsAnalytics"
         }
     }),
-    Ev, sie = g({
+    Ev, nie = g({
         "out-build/vs/platform/analytics/electron-main/openWindowCountsMainService.js"() {
             "use strict";
-            Et(), $(), yt(), rie(), U3(), Ev = class extends H {
+            Et(), $(), yt(), sie(), U3(), Ev = class extends H {
                 constructor(e) {
                     super(), this.windowsMainService = e;
                     const i = r => {
@@ -53046,8 +53054,8 @@ var rie = g({
                 recordIfChanged() {
                     const e = this.windowsMainService.getWindows();
                     if (e.length === 0) return;
-                    const i = tie(e),
-                        r = iie(e, e[0].id);
+                    const i = iie(e),
+                        r = rie(e, e[0].id);
                     this.emitSnapshot(i, r)
                 }
                 emitSnapshot(e, i) {
@@ -53086,7 +53094,7 @@ function V3(t) {
     return t.isArchived === !1
 }
 
-function nie(t, e) {
+function oie(t, e) {
     const i = $3(t),
         r = $3(e);
     if (r && !i && !V3(t)) return !1;
@@ -53095,7 +53103,7 @@ function nie(t, e) {
         n = B3(e);
     return s !== n ? s > n : i !== r ? i : !0
 }
-var oie = g({
+var aie = g({
     "out-build/vs/base/common/stickyArchiveRowMerge.js"() {
         "use strict"
     }
@@ -53115,7 +53123,7 @@ function j3(t, e, i) {
     }
     return t.filter(s => r.has(s.composerId))
 }
-var aie = g({
+var cie = g({
     "out-build/vs/platform/localAgentRepository/common/localAgentStorageLimits.js"() {
         "use strict"
     }
@@ -53176,7 +53184,7 @@ function H3(t) {
     }
 }
 
-function cie(t) {
+function lie(t) {
     if (!Array.isArray(t)) return;
     const e = [];
     for (const i of t) {
@@ -53196,7 +53204,7 @@ function cie(t) {
     return e
 }
 
-function lie(t) {
+function uie(t) {
     if (!t || typeof t != "object") return;
     const e = Je.array(J3).safeParse(t.trackedGitRepos);
     if (!(!e.success || e.data.length === 0)) return e.data.map(i => ({
@@ -53208,16 +53216,16 @@ function lie(t) {
     }))
 }
 
-function uie(t) {
+function die(t) {
     const e = new Map;
     for (const i of t) {
         const r = e.get(i.composerId);
-        (!r || nie(i, r)) && e.set(i.composerId, i)
+        (!r || oie(i, r)) && e.set(i.composerId, i)
     }
     return Array.from(e.values())
 }
 
-function die(t) {
+function hie(t) {
     try {
         return Buffer.from(t).toString("hex")
     } catch {
@@ -53225,17 +53233,17 @@ function die(t) {
     }
 }
 
-function hie(t) {
+function fie(t) {
     const e = t.trim().toLowerCase();
     if (e.length % 2 !== 0) throw new Error("Invalid hex string length");
     const i = new Uint8Array(e.length / 2);
     for (let r = 0; r < e.length; r += 2) i[r / 2] = parseInt(e.slice(r, r + 2), 16);
     return i
 }
-var q3, G3, z3, K3, J3, WE, Y3, X3, Q3, Z3, eO, Iv, fie = g({
+var q3, G3, z3, K3, J3, WE, Y3, X3, Q3, Z3, eO, Iv, pie = g({
         "out-build/vs/platform/localAgentRepository/electron-main/localAgentStorageMainService.js"() {
             "use strict";
-            $(), oie(), Qa(), Y(), Ze(), aie(), xi(), xe(), le(), q3 = Je.object({
+            $(), aie(), Qa(), Y(), Ze(), cie(), xi(), xe(), le(), q3 = Je.object({
                 folder: Je.string().optional(),
                 workspace: Je.string().optional()
             }), G3 = Je.object({
@@ -53298,7 +53306,7 @@ var q3, G3, z3, K3, J3, WE, Y3, X3, Q3, Z3, eO, Iv, fie = g({
                 async getBlob(e) {
                     const i = await this.globalDbPromise;
                     if (i) try {
-                        const r = die(e),
+                        const r = hie(e),
                             s = await new Promise(o => {
                                 i.get("SELECT value FROM cursorDiskKV WHERE key = ?", [`${Z3}${r}`], (a, c) => {
                                     o(a ? void 0 : c)
@@ -53351,7 +53359,7 @@ var q3, G3, z3, K3, J3, WE, Y3, X3, Q3, Z3, eO, Iv, fie = g({
                     }
                     const d = await this.scanGlobalComposerHeaders();
                     c.push(...d);
-                    const f = uie(c);
+                    const f = die(c);
                     this.logService.info(`[LocalAgentStorage] Scanned ${l} recent databases (skipped ${u} old), found ${c.length} agent headers, deduped to ${f.length}`);
                     const p = (w, _) => (_.lastUpdatedAt ?? _.createdAt ?? 0) - (w.lastUpdatedAt ?? w.createdAt ?? 0),
                         m = new Set(e?.prioritizeAgentIds ?? []),
@@ -53455,7 +53463,7 @@ var q3, G3, z3, K3, J3, WE, Y3, X3, Q3, Z3, eO, Iv, fie = g({
                         const l = c.data,
                             u = Ru(l.workspaceIdentifier) ?? i,
                             d = H3(l.agentLocation),
-                            f = cie(l.agentLocationHistory);
+                            f = lie(l.agentLocationHistory);
                         o.push({
                             composerId: l.composerId,
                             name: l.name,
@@ -53464,7 +53472,7 @@ var q3, G3, z3, K3, J3, WE, Y3, X3, Q3, Z3, eO, Iv, fie = g({
                             conversationCheckpointLastUpdatedAt: l.conversationCheckpointLastUpdatedAt,
                             workspaceIdentifier: u,
                             subtitle: l.subtitle,
-                            trackedGitRepos: lie(a),
+                            trackedGitRepos: uie(a),
                             hasUnreadMessages: l.hasUnreadMessages,
                             isArchived: l.isArchived,
                             subagentParentComposerId: l.subagentInfo?.parentComposerId,
@@ -53502,7 +53510,7 @@ var q3, G3, z3, K3, J3, WE, Y3, X3, Q3, Z3, eO, Iv, fie = g({
                     if (e.length === 1 && e[0] === 0) return new Uint8Array(0);
                     const i = e.toString("utf-8");
                     if (/^[0-9a-fA-F]+$/.test(i)) try {
-                        const r = hie(i);
+                        const r = fie(i);
                         return r.length === 1 && r[0] === 0 ? new Uint8Array(0) : r
                     } catch {
                         return
@@ -53512,13 +53520,13 @@ var q3, G3, z3, K3, J3, WE, Y3, X3, Q3, Z3, eO, Iv, fie = g({
             }, Iv = __decorate([__param(0, z), __param(1, Ke)], Iv)
         }
     }),
-    FE, pie = g({
+    FE, gie = g({
         "out-build/vs/platform/localAgentRepository/common/localAgentStorage.js"() {
             "use strict";
             X(), FE = J("localAgentStorageService")
         }
     }),
-    Cv, gie = g({
+    Cv, mie = g({
         "out-build/vs/platform/worktreeCleanup/electron-main/worktreeCleanupMainService.js"() {
             "use strict";
             Y(), Cv = class {
@@ -53559,7 +53567,7 @@ var q3, G3, z3, K3, J3, WE, Y3, X3, Q3, Z3, eO, Iv, fie = g({
             }, Cv = __decorate([__param(0, z)], Cv)
         }
     }),
-    UE, mie = g({
+    UE, wie = g({
         "out-build/vs/platform/worktreeCleanup/common/worktreeCleanupMainService.js"() {
             "use strict";
             X(), UE = J("worktreeCleanupMainService")
@@ -53568,9 +53576,9 @@ var q3, G3, z3, K3, J3, WE, Y3, X3, Q3, Z3, eO, Iv, fie = g({
 import * as eo from "fs";
 import * as tO from "path";
 import {
-    spawn as wie
+    spawn as vie
 } from "child_process";
-var BE, Tv, vie = g({
+var BE, Tv, yie = g({
     "out-build/vs/platform/diagnostics/electron-main/processSamplerMainService.js"() {
         "use strict";
         X(), Y(), Ze(), Ma(), BE = J("processSamplerMainService"), Tv = class {
@@ -53606,7 +53614,7 @@ var BE, Tv, vie = g({
                 const o = new Date().toISOString().replace(/[:.]/g, "-"),
                     a = tO.join(n, `sample-${i??"exthost"}-${e}-${o}.txt`);
                 return this.logService.info(`[processSampler] Sampling pid ${e} for ${r} seconds -> ${a}`), new Promise(c => {
-                    const l = wie("/usr/bin/sample", [String(e), String(r), "-mayDie", "-file", a]);
+                    const l = vie("/usr/bin/sample", [String(e), String(r), "-mayDie", "-file", a]);
                     let u = !1,
                         d = "";
                     l.stderr?.on("data", p => {
@@ -53657,13 +53665,13 @@ import {
     contentTracing as $E
 } from "electron";
 import {
-    createReadStream as yie,
-    promises as Sie
+    createReadStream as Sie,
+    promises as bie
 } from "fs";
 import {
-    createInterface as bie
+    createInterface as _ie
 } from "readline";
-var iO, rO, VE, sO, _ie = g({
+var iO, rO, VE, sO, Eie = g({
         "out-build/vs/platform/profiling/electron-main/gcTraceService.js"() {
             "use strict";
             he(), $(), iO = 10, rO = 300, VE = 60, sO = class extends H {
@@ -53689,8 +53697,8 @@ var iO, rO, VE, sO, _ie = g({
                         try {
                             const t = await $E.stopRecording();
                             this._recording = !1, this._enabled && await this._startRecording();
-                            const e = bie({
-                                    input: yie(t, "utf-8"),
+                            const e = _ie({
+                                    input: Sie(t, "utf-8"),
                                     crlfDelay: 1 / 0
                                 }),
                                 i = new Map,
@@ -53735,7 +53743,7 @@ var iO, rO, VE, sO, _ie = g({
                                 let u = this._measurements.get(o.pid);
                                 u || (u = [], this._measurements.set(o.pid, u)), u.push(l), u.length > VE && u.splice(0, u.length - VE), console.log(`[gc-trace] pid=${o.pid} events=${o.gcCount} alloc_rate=${a!==void 0?a.toFixed(1):"N/A"}MB/s live_heap=${c!==void 0?c.toFixed(1):"N/A"}MB`)
                             }
-                            await Sie.unlink(t).catch(() => {})
+                            await bie.unlink(t).catch(() => {})
                         } catch (t) {
                             console.warn("[gc-trace] drain failed:", t), this._enabled && await this._startRecording()
                         } finally {
@@ -53763,7 +53771,7 @@ var iO, rO, VE, sO, _ie = g({
             }
         }
     }),
-    jE, nO, oO, Eie = g({
+    jE, nO, oO, kie = g({
         "out-build/vs/platform/profiling/common/gcTrace.js"() {
             "use strict";
             X(), jE = J("gcTraceService"), nO = "gcTrace", (function(t) {
@@ -53771,7 +53779,7 @@ var iO, rO, VE, sO, _ie = g({
             })(oO || (oO = {}))
         }
     }),
-    aO, kie = g({
+    aO, Iie = g({
         "out-build/vs/platform/profiling/node/gcTraceIpc.js"() {
             "use strict";
             Q(), aO = class {
@@ -53800,13 +53808,13 @@ import {
     systemPreferences as lO
 } from "electron";
 import {
-    hostname as Iie,
-    release as Cie
+    hostname as Cie,
+    release as Tie
 } from "os";
-var HE, Pv, Tie = g({
+var HE, Pv, Pie = g({
     "out-build/vs/code/electron-main/app.js"() {
         "use strict";
-        dl(), mr(), ct(), bo(), Q(), Lk(), Rn(), $(), Be(), xe(), Z(), Ue(), Qa(), le(), Li(), uj(), or(), hj(), c5(), aD(), Pe(), Uu(), RH(), et(), NH(), QS(), AD(), ln(), f5(), lq(), Ze(), Hu(), am(), xq(), IG(), CG(), xG(), HG(), pt(), fz(), Db(), nd(), X(), xb(), pz(), wz(), vz(), yz(), Sz(), bz(), Cz(), Tz(), pR(), Pz(), xz(), Az(), It(), Y(), Nz(), Ko(), gt(), Vu(), Jz(), eK(), t_(), ar(), iK(), As(), jR(), sK(), MR(), Si(), nK(), aK(), Gn(), jn(), cK(), fK(), mK(), SK(), TK(), vR(), PK(), DK(), xK(), RK(), LK(), an(), yt(), TX(), PX(), xi(), sb(), Om(), DX(), Vo(), l7(), l7(), NX(), ss(), WX(), Wo(), $w(), x7(), BQ(), $Q(), VQ(), he(), Et(), QQ(), ZQ(), eZ(), Qo(), tZ(), iZ(), Q7(), oZ(), NZ(), WZ(), mo(), Ku(), VZ(), Hp(), yc(), yee(), See(), bee(), _ee(), Eee(), Dee(), Mee(), Wee(), Tte(), Pte(), xte(), Ate(), Nte(), Fte(), Ute(), $te(), Vte(), Gte(), zte(), Jte(), Yte(), Zte(), eie(), sie(), U3(), fie(), pie(), gie(), mie(), vie(), _ie(), Eie(), kie(), qM(), Pv = class extends H {
+        dl(), mr(), ct(), bo(), Q(), Lk(), Rn(), $(), Be(), xe(), Z(), Ue(), Qa(), le(), Li(), uj(), or(), hj(), c5(), aD(), Pe(), Uu(), RH(), et(), NH(), QS(), AD(), ln(), f5(), lq(), Ze(), Hu(), am(), xq(), CG(), TG(), RG(), qG(), pt(), pz(), Db(), nd(), X(), xb(), gz(), vz(), yz(), Sz(), bz(), _z(), Tz(), Pz(), pR(), Dz(), Rz(), Mz(), It(), Y(), Wz(), Ko(), gt(), Vu(), Yz(), tK(), t_(), ar(), rK(), As(), jR(), nK(), MR(), Si(), oK(), cK(), Gn(), jn(), lK(), pK(), wK(), bK(), PK(), vR(), DK(), xK(), RK(), AK(), NK(), an(), yt(), PX(), DX(), xi(), sb(), Om(), xX(), Vo(), l7(), l7(), WX(), ss(), FX(), Wo(), $w(), x7(), $Q(), VQ(), jQ(), he(), Et(), ZQ(), eZ(), tZ(), Qo(), iZ(), rZ(), Q7(), aZ(), WZ(), FZ(), mo(), Ku(), jZ(), Hp(), yc(), See(), bee(), _ee(), Eee(), kee(), xee(), Oee(), Fee(), Pte(), Dte(), Rte(), Mte(), Wte(), Ute(), Bte(), Vte(), jte(), zte(), Kte(), Yte(), Xte(), eie(), tie(), nie(), U3(), pie(), gie(), mie(), wie(), yie(), Eie(), kie(), Iie(), qM(), Pv = class extends H {
             static {
                 HE = this
             }
@@ -54240,7 +54248,7 @@ var HE, Pv, Tie = g({
                 R.once(this.lifecycleMainService.onWillShutdown)(f => {
                     f.reason === 2 && i.dispose()
                 }), this.logService.trace("Resolving machine identifier...");
-                const [r, s, n, o] = await Promise.all([zQ(this.stateService, this.logService), KQ(this.stateService, this.logService), JQ(this.stateService, this.logService), YQ(this.stateService, this.logService)]);
+                const [r, s, n, o] = await Promise.all([KQ(this.stateService, this.logService), JQ(this.stateService, this.logService), YQ(this.stateService, this.logService), XQ(this.stateService, this.logService)]);
                 this.logService.trace(`Resolved machine identifier: ${r}`);
                 const {
                     sharedProcessReady: a,
@@ -54481,11 +54489,11 @@ var HE, Pv, Tie = g({
                 o.set(uc, u);
                 const d = new Yg(this.environmentMainService, this.logService, this.userDataProfilesMainService, u, a);
                 if (o.set($n, d), o.set(rb, new oe(Fw, void 0, !1)), o.set(pd, new oe(Mm, void 0, !1)), o.set(hd, new oe(Xm, void 0, !1)), OR(this.productService, this.environmentMainService)) {
-                    const p = jz(this.productService, this.configurationService),
+                    const p = Hz(this.productService, this.configurationService),
                         m = zp(n.then(k => k.getChannel("telemetryAppender"))),
                         v = new qR(m),
-                        y = $z(Cie(), Iie(), process.arch, this.productService.commit, this.productService.version, e, i, r, s, p),
-                        w = Hz(this.environmentMainService),
+                        y = Vz(Tie(), Cie(), process.arch, this.productService.commit, this.productService.version, e, i, r, s, p),
+                        w = qz(this.environmentMainService),
                         _ = {
                             appenders: [v],
                             commonProperties: y,
@@ -54524,7 +54532,7 @@ var HE, Pv, Tie = g({
                     f = new aO(d);
                 i.registerChannel(nO, f);
                 const p = Fe.fromService(e.get(SE), s);
-                i.registerChannel("tracing", p), r.then(Ce => Ce.registerChannel("tracing", p)), Pee(e, i, r, s), Aee(e, i, s), Nee(e, i, s), Cte(e, i, s), qte(e, i, r, s);
+                i.registerChannel("tracing", p), r.then(Ce => Ce.registerChannel("tracing", p)), Dee(e, i, r, s), Mee(e, i, s), Wee(e, i, s), Tte(e, i, s), Gte(e, i, r, s);
                 const m = Fe.fromService(e.get(bE), s);
                 i.registerChannel("abuse", m);
                 const v = s.add(new d7(e.get(Hn)));
@@ -54552,7 +54560,7 @@ var HE, Pv, Tie = g({
                     rt = new uR(se);
                 i.registerChannel("power", rt), s.add(i.onDidRemoveConnection(Ce => {
                     se.releaseWakelocksForOwner(Ce.ctx, "ipc-client-disconnect");
-                    const zt = typeof Ce.ctx == "number" ? Dz(Ce.ctx) : Ce.ctx;
+                    const zt = typeof Ce.ctx == "number" ? xz(Ce.ctx) : Ce.ctx;
                     N.releaseCleanupLeasesForOwner(zt, "ipc-client-disconnect")
                 }));
                 const ue = Fe.fromService(e.get(Ub), s);
@@ -54738,7 +54746,7 @@ var HE, Pv, Tie = g({
                 }
             }
             eventuallyAfterWindowOpen() {
-                XQ(this.stateService, this.logService)
+                QQ(this.stateService, this.logService)
             }
             async requestNotificationPermissions() {
                 this.systemNotificationService && this.systemNotificationService.isSupported() && !this.systemNotificationService.hasPermission() && setTimeout(async () => {
@@ -54903,7 +54911,7 @@ var $t, qE, dO, hO, Dv, fO, pO = g({
                     const n = [];
                     for (const a of r) {
                         const c = eV(a);
-                        c && LG(c, s) && n.push(a)
+                        c && NG(c, s) && n.push(a)
                     }
                     if (n.length === 0) return this;
                     let o = this;
@@ -55560,7 +55568,7 @@ var $t, qE, dO, hO, Dv, fO, pO = g({
             }
         }
     }),
-    gO, mO, xv, Pie = g({
+    gO, mO, xv, Die = g({
         "out-build/vs/platform/configuration/common/configurations.js"() {
             "use strict";
             ti(), Q(), $(), Br(), Ue(), pO(), yo(), Y(), ss(), Zs(), je(), un(), gO = class extends H {
@@ -55731,10 +55739,10 @@ var $t, qE, dO, hO, Dv, fO, pO = g({
             }, xv = __decorate([__param(1, Hn), __param(2, z)], xv)
         }
     }),
-    wO, vO, Die = g({
+    wO, vO, xie = g({
         "out-build/vs/platform/configuration/common/configurationService.js"() {
             "use strict";
-            ti(), he(), ct(), Q(), un(), _D(), $(), Ii(), Br(), Z(), Pt(), et(), pO(), yo(), Pie(), ss(), wO = class extends H {
+            ti(), he(), ct(), Q(), un(), _D(), $(), Ii(), Br(), Z(), Pt(), et(), pO(), yo(), Die(), ss(), wO = class extends H {
                 constructor(t, e, i, r) {
                     super(), this.settingsResource = t, this.logService = r, this._onDidChangeConfiguration = this._register(new x), this.onDidChangeConfiguration = this._onDidChangeConfiguration.event, this.defaultConfiguration = this._register(new gO(r)), this.policyConfiguration = i instanceof Kb ? new mO : this._register(new xv(this.defaultConfiguration, i, r)), this.userConfiguration = this._register(new dO(this.settingsResource, {}, kt, e, r)), this.configuration = new Dv(this.defaultConfiguration.configurationModel, this.policyConfiguration.configurationModel, $t.createEmptyModel(r), $t.createEmptyModel(r), $t.createEmptyModel(r), $t.createEmptyModel(r), new hi, $t.createEmptyModel(r), new hi, r), this.configurationEditing = new vO(t, e, this), this.reloadConfigurationScheduler = this._register(new Xr(() => this.reloadConfiguration(), 50)), this._register(this.defaultConfiguration.onDidChangeConfiguration(({
                         defaults: s,
@@ -55871,7 +55879,7 @@ var $t, qE, dO, hO, Dv, fO, pO = g({
             }
         }
     });
-import * as xie from "fs";
+import * as Rie from "fs";
 import * as er from "os";
 async function GE(t, e) {
     const i = `${t}::${e.join(":")}`,
@@ -55998,7 +56006,7 @@ async function GE(t, e) {
             },
             f = new po(!0);
         await c(t, t, e, d);
-        const p = await Aie(t);
+        const p = await Mie(t);
         u({
             configFiles: zE(o),
             fileTypes: zE(n),
@@ -56019,7 +56027,7 @@ function zE(t) {
     })).sort((e, i) => i.count - e.count)
 }
 
-function Rie() {
+function Aie() {
     const t = {
             os: `${er.type()} ${er.arch()} ${er.release()}`,
             memory: `${(er.totalmem()/Ao.GB).toFixed(2)}GB (${(er.freemem()/Ao.GB).toFixed(2)}GB free)`,
@@ -56028,11 +56036,11 @@ function Rie() {
         e = er.cpus();
     return e && e.length > 0 && (t.cpus = `${e[0].model} (${e.length} x ${e[0].speed})`), t
 }
-async function Aie(t) {
+async function Mie(t) {
     try {
         const e = new Map,
             i = q(t, ".vscode", "launch.json"),
-            r = await xie.promises.readFile(i),
+            r = await Rie.promises.readFile(i),
             s = [],
             n = $o(r.toString(), s);
         if (s.length) return console.log(`Unable to parse ${i}`), [];
@@ -56046,7 +56054,7 @@ async function Aie(t) {
         return []
     }
 }
-var KE, Rv, Mie = g({
+var KE, Rv, Oie = g({
     "out-build/vs/platform/diagnostics/node/diagnosticsService.js"() {
         "use strict";
         he(), un(), Be(), xe(), Z(), Ba(), le(), zu(), si(), sR(), QS(), pt(), gt(), Si(), KE = new Map, Rv = class {
@@ -56096,7 +56104,7 @@ ${this.formatProcessList(e,a.processes)}`), a.workspaceMetadata) {
                     vmHint: s,
                     os: n,
                     cpus: o
-                } = Rie(), a = {
+                } = Aie(), a = {
                     os: n,
                     memory: r,
                     cpus: o,
@@ -56257,32 +56265,32 @@ ${n.errorMessage}`);
     }
 });
 import {
-    writeFileSync as Oie
+    writeFileSync as Lie
 } from "fs";
 import {
-    tmpdir as Lie
+    tmpdir as Nie
 } from "os";
 
-function Nie(t) {
-    const e = So(Lie());
+function Wie(t) {
+    const e = So(Nie());
     try {
-        return Oie(e, ""), t && console.log(`Marker file for --wait created: ${e}`), e
+        return Lie(e, ""), t && console.log(`Marker file for --wait created: ${e}`), e
     } catch (i) {
         t && console.error(`Failed to create marker file for --wait: ${i}`);
         return
     }
 }
-var Wie = g({
+var Fie = g({
     "out-build/vs/platform/environment/node/wait.js"() {
         "use strict";
         sr()
     }
 });
 
-function Fie(t) {
+function Uie(t) {
     return (t.scheme === "file" || t.scheme === "vscode-remote") && t.path.endsWith(".mdc")
 }
-var yO, Uie = g({
+var yO, Bie = g({
         "out-build/vs/base/common/mdc.js"() {
             "use strict";
             Be(), yO = `---
@@ -56291,10 +56299,10 @@ alwaysApply: true
 `
         }
     }),
-    JE, Av, Bie = g({
+    JE, Av, $ie = g({
         "out-build/vs/platform/files/common/fileService.js"() {
             "use strict";
-            ti(), he(), ct(), Et(), Q(), Es(), Tp(), $(), Do(), Be(), zs(), Pt(), Zl(), Pe(), pt(), jx(), Y(), je(), Uie(), Av = class extends H {
+            ti(), he(), ct(), Et(), Q(), Es(), Tp(), $(), Do(), Be(), zs(), Pt(), Zl(), Pe(), pt(), jx(), Y(), je(), Bie(), Av = class extends H {
                 static {
                     JE = this
                 }
@@ -56480,7 +56488,7 @@ alwaysApply: true
                     if (!i?.overwrite && await this.exists(e)) throw new Pi(S(2043, null, this.resourceForError(e)), 3, i)
                 }
                 async createFile(e, i = te.fromString(""), r) {
-                    Fie(e) && i.toString().trim() === "" && (i = te.fromString(yO)), await this.doValidateCreateFile(e, r);
+                    Uie(e) && i.toString().trim() === "" && (i = te.fromString(yO)), await this.doValidateCreateFile(e, r);
                     const s = await this.writeFile(e, i);
                     return this._onDidRunOperation.fire(new Ro(e, 0, s)), s
                 }
@@ -57043,7 +57051,7 @@ alwaysApply: true
             }, Av = JE = __decorate([__param(0, z)], Av)
         }
     }),
-    SO, YE, $ie = g({
+    SO, YE, Vie = g({
         "out-build/vs/platform/instantiation/common/graph.js"() {
             "use strict";
             SO = class {
@@ -57108,10 +57116,10 @@ alwaysApply: true
             }
         }
     }),
-    bO, _O, XE, EO, kO, Mv, Vie = g({
+    bO, _O, XE, EO, kO, Mv, jie = g({
         "out-build/vs/platform/instantiation/common/instantiationService.js"() {
             "use strict";
-            he(), je(), mo(), $(), nd(), $ie(), X(), xb(), kT(), bO = class {
+            he(), je(), mo(), $(), nd(), Vie(), X(), xb(), kT(), bO = class {
                 constructor(t) {
                     this._lazy = new ys(t)
                 }
@@ -57376,7 +57384,7 @@ ${t.toString()}`)
             }
         }
     }),
-    IO, jie = g({
+    IO, Hie = g({
         "out-build/vs/platform/log/common/bufferLog.js"() {
             "use strict";
             $(), Y(), IO = class extends iS {
@@ -57408,9 +57416,9 @@ ${t.toString()}`)
         }
     });
 import {
-    session as Hie
+    session as qie
 } from "electron";
-var Ov, qie = g({
+var Ov, Gie = g({
     "out-build/vs/platform/protocol/electron-main/protocolMainService.js"() {
         "use strict";
         $(), Be(), xe(), Z(), Do(), le(), Li(), mr(), Ni(), Y(), ts(), Ov = class extends H {
@@ -57424,7 +57432,7 @@ var Ov, qie = g({
             handleProtocols() {
                 const {
                     defaultSession: e
-                } = Hie;
+                } = qie;
                 e.protocol.registerFileProtocol(F.vscodeFileResource, (i, r) => this.handleResourceRequest(i, r)), e.protocol.interceptFileProtocol(F.file, (i, r) => this.handleFileRequest(i, r)), this._register(ve(() => {
                     e.protocol.unregisterProtocol(F.vscodeFileResource), e.protocol.uninterceptProtocol(F.file)
                 }))
@@ -57484,11 +57492,11 @@ var Ov, qie = g({
     }
 });
 
-function Gie(t) {
+function zie(t) {
     return !!t.forwardPort
 }
 
-function zie(t) {
+function Kie(t) {
     if (t.scheme !== "http" && t.scheme !== "https") return;
     const e = /^(localhost|127\.0\.0\.1|0\.0\.0\.0):(\d+)$/.exec(t.authority);
     if (e) return {
@@ -57505,7 +57513,7 @@ function eh(t) {
     return Wv.indexOf(t) >= 0
 }
 
-function Kie(t, e, i, r) {
+function Jie(t, e, i, r) {
     if (i === 1) return !1;
     if (i === 2 && eh(e)) {
         const s = /(\d+)\.(\d+)\.(\d+)/g.exec(r);
@@ -57513,10 +57521,10 @@ function Kie(t, e, i, r) {
     }
     return t < 1024
 }
-var CO, Jie, TO, Lv, PO, Nv, Wv, Fv, DO = g({
+var CO, Yie, TO, Lv, PO, Nv, Wv, Fv, DO = g({
         "out-build/vs/platform/tunnel/common/tunnel.js"() {
             "use strict";
-            Q(), $(), le(), et(), X(), Y(), CO = J("tunnelService"), Jie = J("sharedTunnelsService"), (function(t) {
+            Q(), $(), le(), et(), X(), Y(), CO = J("tunnelService"), Yie = J("sharedTunnelsService"), (function(t) {
                 t.Http = "http", t.Https = "https"
             })(TO || (TO = {})), (function(t) {
                 t.ConstantPrivate = "constantPrivate", t.Private = "private", t.Public = "public"
@@ -57681,7 +57689,7 @@ var CO, Jie, TO, Lv, PO, Nv, Wv, Fv, DO = g({
                     }
                 }
                 canTunnel(e) {
-                    return !!zie(e)
+                    return !!Kie(e)
                 }
                 createWithProvider(e, i, r, s, n, o, a) {
                     this.logService.trace(`ForwardedPorts: (TunnelService) Creating tunnel with provider ${i}:${r} on local port ${s}.`);
@@ -57709,10 +57717,10 @@ var CO, Jie, TO, Lv, PO, Nv, Wv, Fv, DO = g({
             }, Fv = __decorate([__param(0, z), __param(1, nt)], Fv)
         }
     }),
-    Yie, xO, yn, th, Xie = g({
+    Xie, xO, yn, th, Qie = g({
         "out-build/vs/platform/remote/common/remoteAuthorityResolver.js"() {
             "use strict";
-            je(), X(), Yie = J("remoteAuthorityResolverService"), (function(t) {
+            je(), X(), Xie = J("remoteAuthorityResolverService"), (function(t) {
                 t[t.WebSocket = 0] = "WebSocket", t[t.Managed = 1] = "Managed"
             })(xO || (xO = {})), (function(t) {
                 t.Unknown = "Unknown", t.NotAvailable = "NotAvailable", t.TemporarilyNotAvailable = "TemporarilyNotAvailable", t.NoResolverFound = "NoResolverFound", t.InvalidAuthority = "InvalidAuthority"
@@ -57738,7 +57746,7 @@ var CO, Jie, TO, Lv, PO, Nv, Wv, Fv, DO = g({
             }
         }
     }),
-    RO, Qie = g({
+    RO, Zie = g({
         "out-build/vs/base/common/cursorSocketCloseError.js"() {
             "use strict";
             RO = "CursorSocketTransient"
@@ -57771,22 +57779,22 @@ function AO(t) {
     return setTimeout(() => e.cancel(), t), e.token
 }
 
-function Zie(t, e) {
+function ere(t, e) {
     if (t.isCancellationRequested || e.isCancellationRequested) return Ie.Cancelled;
     const i = new Jr;
     return t.onCancellationRequested(() => i.cancel()), e.onCancellationRequested(() => i.cancel()), i.token
 }
 
-function ere(t, e) {
+function tre(t, e) {
     const i = new Bv(e);
     return i.registerDisposable(t.onControlMessage(r => {
         const s = JSON.parse(r.toString()),
-            n = ore(s);
+            n = are(s);
         n ? i.reject(n) : i.resolve(s)
     })), i.promise
 }
 
-function tre(t, e, i, r, s, n, o, a) {
+function ire(t, e, i, r, s, n, o, a) {
     const c = new Bv(a),
         l = po.create(!1);
     return t.info(`Creating a socket (${o})...`), st(`code/willCreateSocket/${n}`), e.connect(i, r, s, o).then(u => {
@@ -57804,12 +57812,12 @@ function ek(t, e) {
         i.didTimeout || i.reject(r)
     }), i.promise
 }
-async function ire(t, e, i, r) {
+async function rre(t, e, i, r) {
     const s = LO(t, e);
     t.logService.trace(`${s} 1/6. invoking socketFactory.connect().`);
     let n;
     try {
-        n = await tre(t.logService, t.remoteSocketFactoryService, t.connectTo, Qy.getServerRootPath(), `reconnectionToken=${t.reconnectionToken}&reconnection=${t.reconnectionProtocol?"true":"false"}`, ZE(e), `renderer-${ZE(e)}-${t.reconnectionToken}`, r)
+        n = await ire(t.logService, t.remoteSocketFactoryService, t.connectTo, Qy.getServerRootPath(), `reconnectionToken=${t.reconnectionToken}&reconnection=${t.reconnectionProtocol?"true":"false"}`, ZE(e), `renderer-${ZE(e)}-${t.reconnectionToken}`, r)
     } catch (u) {
         throw t.logService.error(`${s} socketFactory.connect() failed or timed out. Error: ${fa(u)}`), u
     }
@@ -57826,7 +57834,7 @@ async function ire(t, e, i, r) {
         };
     o.sendControl(te.fromString(JSON.stringify(l)));
     try {
-        const u = await ere(o, Zie(r, AO(1e4)));
+        const u = await tre(o, ere(r, AO(1e4)));
         if (u.type !== "sign" || typeof u.data != "string") {
             const m = new Error("Unexpected handshake message");
             throw m.code = "VSCODE_CONNECTION_ERROR", m
@@ -57850,13 +57858,13 @@ async function ire(t, e, i, r) {
         throw u && u.code === "ETIMEDOUT" && (t.logService.error(`${s} the handshake timed out. Error:`), t.logService.error(u)), u && u.code === "VSCODE_CONNECTION_ERROR" && (t.logService.error(`${s} received error control message when negotiating connection. Error:`), t.logService.error(u)), a && OO(o), u
     }
 }
-async function rre(t, e, i) {
+async function sre(t, e, i) {
     const r = Date.now(),
         s = LO(t, 3),
         {
             protocol: n
-        } = await ire(t, 3, e, i);
-    return t.logService.trace(`${s} 6/6. handshake finished, connection is up and running after ${lre(r)}!`), n
+        } = await rre(t, 3, e, i);
+    return t.logService.trace(`${s} 6/6. handshake finished, connection is up and running after ${ure(r)}!`), n
 }
 async function MO(t, e, i) {
     const {
@@ -57875,15 +57883,15 @@ async function MO(t, e, i) {
         logService: t.logService
     }
 }
-async function sre(t, e, i) {
+async function nre(t, e, i) {
     const r = await MO(t, ni(), null);
-    return await rre(r, {
+    return await sre(r, {
         host: e,
         port: i
     }, Ie.None)
 }
 
-function nre(t) {
+function ore(t) {
     return Ha(e => new Promise((i, r) => {
         const s = setTimeout(i, t * 1e3);
         e.onCancellationRequested(() => {
@@ -57902,7 +57910,7 @@ function OO(t) {
     }
 }
 
-function ore(t) {
+function are(t) {
     if (t && t.type === "error") {
         const e = new Error(`Connection error: ${t.reason}`);
         return e.code = "VSCODE_CONNECTION_ERROR", e
@@ -57910,30 +57918,30 @@ function ore(t) {
     return null
 }
 
-function are(t, e) {
+function cre(t, e) {
     for (; t.length < e;) t += " ";
     return t
 }
 
-function cre(t, e) {
-    return `[remote-connection][${are(ZE(t),13)}][${e.substr(0,5)}\u2026]`
+function lre(t, e) {
+    return `[remote-connection][${cre(ZE(t),13)}][${e.substr(0,5)}\u2026]`
 }
 
 function Uv(t, e, i) {
-    return `${cre(t,e)}[${i?"reconnect":"initial"}]`
+    return `${lre(t,e)}[${i?"reconnect":"initial"}]`
 }
 
 function LO(t, e) {
     return `${Uv(e,t.reconnectionToken,!!t.reconnectionProtocol)}[${t.connectTo}]`
 }
 
-function lre(t) {
+function ure(t) {
     return `${Date.now()-t} ms`
 }
-var NO, WO, Bv, FO, UO, BO, $O, tk, VO, ure, dre = g({
+var NO, WO, Bv, FO, UO, BO, $O, tk, VO, dre, hre = g({
         "out-build/vs/platform/remote/common/remoteAgentConnection.js"() {
             "use strict";
-            he(), ct(), Et(), je(), Q(), $(), Be(), zs(), Ba(), Li(), R4(), Xie(), km(), Qie(), NO = 30 * 1e3, (function(t) {
+            he(), ct(), Et(), je(), Q(), $(), Be(), zs(), Ba(), Li(), R4(), Qie(), km(), Zie(), NO = 30 * 1e3, (function(t) {
                 t[t.Management = 1] = "Management", t[t.ExtensionHost = 2] = "ExtensionHost", t[t.Tunnel = 3] = "Tunnel"
             })(WO || (WO = {})), Bv = class {
                 get didTimeout() {
@@ -57987,7 +57995,7 @@ var NO, WO, Bv, FO, UO, BO, $O, tk, VO, ure, dre = g({
                 constructor(t, e, i, r) {
                     this.reconnectionToken = t, this.millisSinceLastIncomingData = e, this.attempt = i, this.handled = r, this.type = 3
                 }
-            }, ure = class _n extends H {
+            }, dre = class _n extends H {
                 static {
                     this._debugReconnectPermanentFailureAuthorities = new Set
                 }
@@ -58073,7 +58081,7 @@ var NO, WO, Bv, FO, UO, BO, $O, tk, VO, ure, dre = g({
                         const s = r < i.length ? i[r] : i[i.length - 1];
                         try {
                             if (s > 0) {
-                                const o = nre(s);
+                                const o = ore(s);
                                 this._onDidStateChange.fire(new BO(this.reconnectionToken, this.protocol.getMillisSinceLastIncomingData(), s, o)), this._options.logService.info(`${e} waiting for ${s} seconds before reconnecting...`);
                                 try {
                                     await o
@@ -58148,25 +58156,25 @@ var NO, WO, Bv, FO, UO, BO, $O, tk, VO, ure, dre = g({
             }
         }
     }),
-    $v, hre = g({
+    $v, fre = g({
         "out-build/vs/platform/remote/common/remoteSocketFactoryService.js"() {
             "use strict";
             $(), X(), $v = J("remoteSocketFactoryService")
         }
     });
-import * as fre from "net";
-import * as pre from "os";
-async function gre(t, e, i, r, s) {
+import * as pre from "net";
+import * as gre from "os";
+async function mre(t, e, i, r, s) {
     let n;
     for (let o = 3; o && (n?.dispose(), n = await new jO(t, e, i, r, s).waitForReady(), !(s && hb[s] || !hb[n.tunnelLocalPort])); o--);
     return n
 }
-var jO, Vv, ih, ik, mre = g({
+var jO, Vv, ih, ik, wre = g({
     "out-build/vs/platform/tunnel/node/tunnelService.js"() {
         "use strict";
-        tx(), W0(), he(), $(), Z(), et(), Y(), gt(), dre(), hre(), t_(), DO(), ct(), jO = class extends H {
+        tx(), W0(), he(), $(), Z(), et(), Y(), gt(), hre(), fre(), t_(), DO(), ct(), jO = class extends H {
             constructor(t, e, i, r, s) {
-                super(), this.defaultTunnelHost = e, this.suggestedLocalPort = s, this.privacy = Lv.Private, this._socketsDispose = new Map, this._options = t, this._server = fre.createServer(), this._barrier = new qa, this._listeningListener = () => this._barrier.open(), this._server.on("listening", this._listeningListener), this._connectionListener = n => this._onConnection(n), this._server.on("connection", this._connectionListener), this._errorListener = () => {}, this._server.on("error", this._errorListener), this.tunnelRemotePort = r, this.tunnelRemoteHost = i
+                super(), this.defaultTunnelHost = e, this.suggestedLocalPort = s, this.privacy = Lv.Private, this._socketsDispose = new Map, this._options = t, this._server = pre.createServer(), this._barrier = new qa, this._listeningListener = () => this._barrier.open(), this._server.on("listening", this._listeningListener), this._connectionListener = n => this._onConnection(n), this._server.on("connection", this._connectionListener), this._errorListener = () => {}, this._server.on("error", this._errorListener), this.tunnelRemotePort = r, this.tunnelRemoteHost = i
             }
             async dispose() {
                 super.dispose(), this._server.removeListener("listening", this._listeningListener), this._server.removeListener("connection", this._connectionListener), this._server.removeListener("error", this._errorListener), this._server.close(), Array.from(this._socketsDispose.values()).forEach(e => {
@@ -58185,7 +58193,7 @@ var jO, Vv, ih, ik, mre = g({
                 const e = QE(this.tunnelRemoteHost) || eh(this.tunnelRemoteHost) ? "localhost" : this.tunnelRemoteHost;
                 let i;
                 try {
-                    i = await sre(this._options, e, this.tunnelRemotePort)
+                    i = await nre(this._options, e, this.tunnelRemotePort)
                 } catch {
                     t.destroy();
                     return
@@ -58222,12 +58230,12 @@ var jO, Vv, ih, ik, mre = g({
                 super(i, n), this.remoteSocketFactoryService = e, this.signService = r, this.productService = s
             }
             isPortPrivileged(e) {
-                return Kie(e, this.defaultTunnelHost, gr, pre.release())
+                return Jie(e, this.defaultTunnelHost, gr, gre.release())
             }
             retainOrCreateTunnel(e, i, r, s, n, o, a, c) {
                 const l = this.getTunnelFromMap(i, r);
                 if (l) return ++l.refcount, l.value;
-                if (Gie(e)) return this.createWithProvider(e, i, r, n, o, a, c);
+                if (zie(e)) return this.createWithProvider(e, i, r, n, o, a, c);
                 {
                     this.logService.trace(`ForwardedPorts: (TunnelService) Creating tunnel without provider ${i}:${r} on local port ${n}.`);
                     const u = {
@@ -58239,7 +58247,7 @@ var jO, Vv, ih, ik, mre = g({
                             logService: this.logService,
                             ipcLogger: null
                         },
-                        d = gre(u, s, i, r, n);
+                        d = mre(u, s, i, r, n);
                     return this.logService.trace("ForwardedPorts: (TunnelService) Tunnel created without provider."), this.addTunnelToMap(i, r, d), d
                 }
             }
@@ -58267,12 +58275,12 @@ import {
     parse as HO
 } from "url";
 
-function wre(t, e) {
+function vre(t, e) {
     return t.protocol === "http:" ? e.HTTP_PROXY || e.http_proxy || null : t.protocol === "https:" && (e.HTTPS_PROXY || e.https_proxy || e.HTTP_PROXY || e.http_proxy) || null
 }
-async function vre(t, e, i = {}) {
+async function yre(t, e, i = {}) {
     const r = HO(t),
-        s = i.proxyUrl || wre(r, e);
+        s = i.proxyUrl || vre(r, e);
     if (!s) return null;
     const n = HO(s);
     if (!/^https?:$/.test(n.protocol || "")) return null;
@@ -58294,7 +58302,7 @@ async function vre(t, e, i = {}) {
         return new a.HttpsProxyAgent(s, o)
     }
 }
-var yre = g({
+var Sre = g({
     "out-build/vs/platform/request/node/proxy.js"() {
         "use strict";
         Ue()
@@ -58304,22 +58312,22 @@ import {
     parse as qO
 } from "url";
 import {
-    createGunzip as Sre
+    createGunzip as bre
 } from "zlib";
-async function bre(t, e, i, r) {
+async function _re(t, e, i, r) {
     const s = await import("kerberos"),
         n = s.default || s,
         o = new URL(t),
         a = e || (process.platform === "win32" ? `HTTP/${o.hostname}` : `HTTP@${o.hostname}`);
     return i.debug(`${r} Kerberos authentication lookup`, `proxyURL:${o}`, `spn:${a}`), (await n.initializeClient(a)).step("")
 }
-async function _re(t) {
+async function Ere(t) {
     return (qO(t.url).protocol === "https:" ? await import("https") : await import("http")).request
 }
 async function rk(t, e) {
     return gi.withAsyncBody(async (i, r) => {
         const s = qO(t.url),
-            n = t.getRawRequest ? t.getRawRequest(t) : await _re(t),
+            n = t.getRawRequest ? t.getRawRequest(t) : await Ere(t),
             o = {
                 hostname: s.hostname,
                 port: s.port ? parseInt(s.port) : s.protocol === "https:" ? 443 : 80,
@@ -58345,7 +58353,7 @@ async function rk(t, e) {
             }, e).then(i, r);
             else {
                 let u = c;
-                !t.isChromiumNetwork && c.headers["content-encoding"] === "gzip" && (u = c.pipe(Sre())), i({
+                !t.isChromiumNetwork && c.headers["content-encoding"] === "gzip" && (u = c.pipe(bre())), i({
                     res: c,
                     stream: U$(u)
                 })
@@ -58363,10 +58371,10 @@ async function rk(t, e) {
         })
     })
 }
-var jv, Ere = g({
+var jv, kre = g({
     "out-build/vs/platform/request/node/requestService.js"() {
         "use strict";
-        he(), ct(), je(), Ue(), et(), Ni(), am(), Y(), pn(), yre(), jv = class extends gx {
+        he(), ct(), je(), Ue(), et(), Ni(), am(), Y(), pn(), Sre(), jv = class extends gx {
             constructor(e, i, r, s) {
                 super(s), this.machine = e, this.configurationService = i, this.environmentService = r, this.configure(), this._register(i.onDidChangeConfiguration(n => {
                     n.affectsConfiguration("http") && this.configure()
@@ -58390,7 +58398,7 @@ var jv, Ere = g({
                         ...process.env,
                         ...n
                     },
-                    a = e.agent ? e.agent : await vre(e.url || "", o, {
+                    a = e.agent ? e.agent : await yre(e.url || "", o, {
                         proxyUrl: r,
                         strictSSL: s
                     });
@@ -58404,7 +58412,7 @@ var jv, Ere = g({
             async lookupKerberosAuthorization(e) {
                 try {
                     const i = this.getConfigValue("http.proxyKerberosServicePrincipal");
-                    return "Negotiate " + await bre(e, i, this.logService, "RequestService#lookupKerberosAuthorization")
+                    return "Negotiate " + await _re(e, i, this.logService, "RequestService#lookupKerberosAuthorization")
                 } catch (i) {
                     this.logService.debug("RequestService#lookupKerberosAuthorization Kerberos authentication failed", i);
                     return
@@ -58425,30 +58433,30 @@ var jv, Ere = g({
     }
 });
 import {
-    net as kre
+    net as Ire
 } from "electron";
 
-function Ire(t) {
-    return kre.request
+function Cre(t) {
+    return Ire.request
 }
-var Hv, Cre = g({
+var Hv, Tre = g({
         "out-build/vs/platform/request/electron-utility/requestService.js"() {
             "use strict";
-            Ere(), et(), Ni(), Y(), Hv = class extends jv {
+            kre(), et(), Ni(), Y(), Hv = class extends jv {
                 constructor(e, i, r) {
                     super("local", e, i, r)
                 }
                 request(e, i) {
                     return super.request({
                         ...e || {},
-                        getRawRequest: Ire,
+                        getRawRequest: Cre,
                         isChromiumNetwork: !0
                     }, i)
                 }
             }, Hv = __decorate([__param(0, nt), __param(1, Zr), __param(2, z)], Hv)
         }
     }),
-    GO, Tre = g({
+    GO, Pre = g({
         "out-build/vs/platform/sign/common/abstractSignService.js"() {
             "use strict";
             GO = class rN {
@@ -58496,10 +58504,10 @@ var Hv, Cre = g({
             }
         }
     }),
-    zO, Pre = g({
+    zO, Dre = g({
         "out-build/vs/platform/sign/node/signService.js"() {
             "use strict";
-            Tre(), zO = class extends GO {
+            Pre(), zO = class extends GO {
                 getValidator() {
                     return this.vsda().then(t => new t.validator)
                 }
@@ -58516,7 +58524,7 @@ var Hv, Cre = g({
             }
         }
     }),
-    rh, Dre = g({
+    rh, xre = g({
         "out-build/vs/platform/policy/node/nativePolicyService.js"() {
             "use strict";
             ss(), he(), $(), Y(), rh = class extends zb {
@@ -58550,12 +58558,12 @@ var Hv, Cre = g({
         }
     });
 
-function xre(t, e) {
+function Rre(t, e) {
     const i = [];
     for (const r of new Set(ho.concat(t.keys(), e.keys()))) t.get(r) !== e.get(r) && i.push(r);
     return i
 }
-var qv, Rre = g({
+var qv, Are = g({
         "out-build/vs/platform/policy/common/filePolicyService.js"() {
             "use strict";
             he(), Q(), Tp(), Ue(), pt(), Y(), ss(), qv = class extends zb {
@@ -58581,13 +58589,13 @@ var qv, Rre = g({
                 }
                 async refresh() {
                     const e = await this.read(),
-                        i = xre(this.policies, e);
+                        i = Rre(this.policies, e);
                     this.policies = e, i.length > 0 && this._onDidChange.fire(i)
                 }
             }, qv = __decorate([__param(1, At), __param(2, z)], qv)
         }
     }),
-    KO, Gv, qc, JO, Are = g({
+    KO, Gv, qc, JO, Mre = g({
         "out-build/vs/base/common/skipList.js"() {
             "use strict";
             Gv = class {
@@ -58683,10 +58691,10 @@ var qv, Rre = g({
             }
         }
     }),
-    sk, sh, Mre = g({
+    sk, sh, Ore = g({
         "out-build/vs/platform/uriIdentity/common/uriIdentityService.js"() {
             "use strict";
-            Ps(), o3(), pt(), Pt(), Are(), Q(), $(), sk = class Tk {
+            Ps(), o3(), pt(), Pt(), Mre(), Q(), $(), sk = class Tk {
                 static {
                     this._clock = 0
                 }
@@ -58728,7 +58736,7 @@ var qv, Rre = g({
             }, sh = __decorate([__param(0, At)], sh), t3(Yi, sh, 1)
         }
     }),
-    YO, Ore = g({
+    YO, Lre = g({
         "out-build/vs/platform/log/common/logService.js"() {
             "use strict";
             $(), Y(), YO = class extends H {
@@ -58765,7 +58773,7 @@ var qv, Rre = g({
             }
         }
     }),
-    XO, Lre = g({
+    XO, Nre = g({
         "out-build/vs/platform/userData/common/fileUserDataProvider.js"() {
             "use strict";
             Q(), $(), pt(), Do(), Ii(), XO = class extends H {
@@ -58861,12 +58869,12 @@ var qv, Rre = g({
             }
         }
     }),
-    Nre = g({
+    Wre = g({
         "out-build/vs/platform/tracing/common/traceIdUtils.js"() {
             "use strict"
         }
     }),
-    QO, ZO, eL, zv, Wre = g({
+    QO, ZO, eL, zv, Fre = g({
         "out-build/vs/platform/tracing/common/spanCollector.js"() {
             "use strict";
             QO = 1e3, ZO = 20, eL = class {
@@ -58931,7 +58939,7 @@ var qv, Rre = g({
         }
     });
 
-function Fre() {
+function Ure() {
     const t = new Uint8Array(Yv);
     crypto.getRandomValues(t);
     let e = "";
@@ -58947,7 +58955,7 @@ function tL(t) {
         for (let s = 0; s < i.length; s++) r += Jv[i[s]];
         return r
     }
-    Gc + t > Xv && Fre();
+    Gc + t > Xv && Ure();
     const e = ak.slice(Gc, Gc + t);
     return Gc += t, e
 }
@@ -58962,7 +58970,7 @@ function nk(t, e) {
 function ok(t, e, i) {
     return t.createChild(e, i)
 }
-var nh, Kv, Jv, Yv, Xv, ak, Gc, iL, Ure = g({
+var nh, Kv, Jv, Yv, Xv, ak, Gc, iL, Bre = g({
     "out-build/vs/platform/tracing/common/span.js"() {
         "use strict";
         (function(t) {
@@ -59091,7 +59099,7 @@ function rL(t, e, i) {
         for (const [r, s] of Object.entries(i)) t.setAttribute(r, s === void 0 ? "undefined" : s)
 }
 
-function Bre(t, e) {
+function $re(t, e) {
     let i;
     return e ? i = ok(e, t) : i = nk(t), new lL(i)
 }
@@ -59099,10 +59107,10 @@ function Bre(t, e) {
 function sL(t, e) {
     ck() || bp(t) || gs.isErrorNoTelemetry(t) || Tn(t, e)
 }
-var nL, oL, lk, aL, cL, lL, $re = g({
+var nL, oL, lk, aL, cL, lL, Vre = g({
         "out-build/vs/platform/tracing/common/tracing.js"() {
             "use strict";
-            he(), je(), Ml(), Nre(), Ma(), Wre(), Ure(), typeof Symbol.dispose != "symbol" && Object.defineProperty(Symbol, "dispose", {
+            he(), je(), Ml(), Wre(), Ma(), Fre(), Bre(), typeof Symbol.dispose != "symbol" && Object.defineProperty(Symbol, "dispose", {
                 value: Symbol("Symbol.dispose")
             }), typeof Symbol.asyncDispose != "symbol" && Object.defineProperty(Symbol, "asyncDispose", {
                 value: Symbol("Symbol.asyncDispose")
@@ -59150,7 +59158,7 @@ var nL, oL, lk, aL, cL, lL, $re = g({
                     })
                 }
                 startSpan(t) {
-                    return Bre(t, this._span)
+                    return $re(t, this._span)
                 }
                 reportEvent(t, e) {
                     if (ck()) return;
@@ -59173,10 +59181,10 @@ var nL, oL, lk, aL, cL, lL, $re = g({
             }
         }
     }),
-    uL, Vre = g({
+    uL, jre = g({
         "out-build/vs/platform/tracing/common/logger.js"() {
             "use strict";
-            Ml(), $re(), uL = class {
+            Ml(), Vre(), uL = class {
                 constructor(t) {
                     this.baseLogger = t, this.onDidChangeLogLevel = this.baseLogger.onDidChangeLogLevel
                 }
@@ -59220,24 +59228,24 @@ var nL, oL, lk, aL, cL, lL, $re = g({
             }
         }
     }),
-    jre = {};
+    Hre = {};
 import {
-    app as Hre,
-    dialog as qre
+    app as qre,
+    dialog as Gre
 } from "electron";
 import {
-    unlinkSync as Gre,
+    unlinkSync as zre,
     promises as dL
 } from "fs";
-var hL, fL, zre = g({
+var hL, fL, Kre = g({
     "out-build/vs/code/electron-main/main.js"() {
         "use strict";
-        sV(), le(), ti(), he(), bo(), je(), sr(), Q(), Rn(), Be(), xe(), zs(), Z(), ws(), pi(), si(), or(), W0(), Tie(), Pe(), et(), Die(), Mie(), Ze(), Hu(), Wie(), pt(), Bie(), Db(), nd(), Vie(), xb(), It(), jie(), Y(), od(), gt(), ad(), qie(), DO(), mre(), pn(), Cre(), t_(), Pre(), ar(), Gn(), ac(), Wo(), ss(), Dre(), Rre(), $(), Ps(), Mre(), Qo(), Ore(), oD(), tD(), Lre(), dl(), Vre(), hL = class {
+        sV(), le(), ti(), he(), bo(), je(), sr(), Q(), Rn(), Be(), xe(), zs(), Z(), ws(), pi(), si(), or(), W0(), Pie(), Pe(), et(), xie(), Oie(), Ze(), Hu(), Fie(), pt(), $ie(), Db(), nd(), jie(), xb(), It(), Hie(), Y(), od(), gt(), ad(), Gie(), DO(), wre(), pn(), Tre(), t_(), Dre(), ar(), Gn(), ac(), Wo(), ss(), xre(), Are(), $(), Ps(), Ore(), Qo(), Lre(), oD(), tD(), Nre(), dl(), jre(), hL = class {
             main() {
                 try {
                     this.startup()
                 } catch (t) {
-                    console.error(t.message), Hre.exit(1)
+                    console.error(t.message), qre.exit(1)
                 }
             }
             async startup() {
@@ -59342,7 +59350,7 @@ var hL, fL, zre = g({
                     } catch (f) {
                         if (!n || G || f.code !== "ECONNREFUSED") throw f.code === "EPERM" && this.showStartupWarningDialog(S(157, null, s.nameShort), S(158, null), s), f;
                         try {
-                            Gre(e.mainIPCHandle)
+                            zre(e.mainIPCHandle)
                         } catch (p) {
                             throw t.warn("Could not delete obsolete instance handle", p), p
                         }
@@ -59388,7 +59396,7 @@ var hL, fL, zre = g({
                 }
             }
             showStartupWarningDialog(t, e, i) {
-                qre.showMessageBoxSync(rD({
+                Gre.showMessageBoxSync(rD({
                     type: "warning",
                     buttons: [S(164, null)],
                     message: t,
@@ -59415,7 +59423,7 @@ var hL, fL, zre = g({
             resolveArgs() {
                 const t = this.validatePaths(fq(process.argv));
                 if (t.wait && !t.waitMarkerFilePath) {
-                    const e = Nie(t.verbose);
+                    const e = Wie(t.verbose);
                     e && (pq(process.argv, "--waitMarkerFilePath", e), t.waitMarkerFilePath = e)
                 }
                 return t
@@ -59453,21 +59461,21 @@ var hL, fL, zre = g({
 });
 import * as Sn from "path";
 import * as pa from "original-fs";
-import * as Kre from "os";
+import * as Jre from "os";
 import {
-    performance as Jre
+    performance as Yre
 } from "perf_hooks";
 import * as jr from "path";
 import * as pL from "fs";
 import {
-    fileURLToPath as Yre
+    fileURLToPath as Xre
 } from "url";
 import {
-    createRequire as Xre
+    createRequire as Qre
 } from "node:module";
-var ule = Xre(import.meta.url),
-    Qre = jr.dirname(Yre(import.meta.url)),
-    dle = process.platform === "win32";
+var dle = Qre(import.meta.url),
+    Zre = jr.dirname(Xre(import.meta.url)),
+    hle = process.platform === "win32";
 if (Error.stackTraceLimit = 100, !process.env.VSCODE_HANDLES_SIGPIPE) {
     let t = !1;
     process.on("SIGPIPE", () => {
@@ -59475,17 +59483,17 @@ if (Error.stackTraceLimit = 100, !process.env.VSCODE_HANDLES_SIGPIPE) {
     })
 }
 
-function Zre() {
+function ese() {
     try {
         typeof process.env.VSCODE_CWD != "string" && (process.env.VSCODE_CWD = process.cwd()), process.platform === "win32" && process.chdir(jr.dirname(process.execPath))
     } catch (t) {
         console.error(t)
     }
 }
-Zre();
+ese();
 
-function ese(t) {
-    const e = jr.dirname(Qre);
+function tse(t) {
+    const e = jr.dirname(Zre);
 
     function i() {
         return process.env.VSCODE_DEV ? e : process.platform === "darwin" ? jr.dirname(jr.dirname(jr.dirname(e))) : jr.dirname(jr.dirname(e))
@@ -59506,26 +59514,26 @@ function ese(t) {
         isPortable: n
     }
 }
-import * as tse from "path";
+import * as ise from "path";
 import * as uk from "fs";
 import {
-    fileURLToPath as ise
+    fileURLToPath as rse
 } from "url";
 import {
-    createRequire as rse,
-    register as sse
+    createRequire as sse,
+    register as nse
 } from "node:module";
 import {
-    createRequire as nse
+    createRequire as ose
 } from "node:module";
-var dk = nse(import.meta.url),
+var dk = ose(import.meta.url),
     zc = {
         BUILD_INSERT_PRODUCT_CONFIGURATION: "BUILD_INSERT_PRODUCT_CONFIGURATION"
     };
 zc.BUILD_INSERT_PRODUCT_CONFIGURATION && (zc = dk("../product.json"));
 var hk = {
     "name": "Cursor",
-    "version": "3.3.22",
+    "version": "3.3.27",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -59545,7 +59553,7 @@ var hk = {
 };
 hk.BUILD_INSERT_PACKAGE_CONFIGURATION && (hk = dk("../package.json"));
 var Bi = zc,
-    ose = hk;
+    ase = hk;
 if (!("commit" in zc) || zc.commit === void 0) try {
     const {
         execSync: t
@@ -59557,9 +59565,9 @@ if (!("commit" in zc) || zc.commit === void 0) try {
     i && (zc.devCommit = i)
 } catch {}
 zs();
-var ase = rse(import.meta.url),
-    cse = tse.dirname(ise(import.meta.url));
-if ((process.env.ELECTRON_RUN_AS_NODE || process.versions.electron) && sse(`data:text/javascript;base64,${Buffer.from(`
+var cse = sse(import.meta.url),
+    lse = ise.dirname(rse(import.meta.url));
+if ((process.env.ELECTRON_RUN_AS_NODE || process.versions.electron) && nse(`data:text/javascript;base64,${Buffer.from(`
 	export async function resolve(specifier, context, nextResolve) {
 		if (specifier === 'fs') {
 			return {
@@ -59575,18 +59583,18 @@ if ((process.env.ELECTRON_RUN_AS_NODE || process.versions.electron) && sse(`data
 	}`).toString("base64")}`, import.meta.url), globalThis._VSCODE_PRODUCT_JSON = {
         ...Bi
     }, process.env.VSCODE_DEV) try {
-    const t = ase("../product.overrides.json");
+    const t = cse("../product.overrides.json");
     globalThis._VSCODE_PRODUCT_JSON = Object.assign(globalThis._VSCODE_PRODUCT_JSON, t)
 } catch {}
 globalThis._VSCODE_PACKAGE_JSON = {
-    ...ose
-}, globalThis._VSCODE_FILE_ROOT = cse;
+    ...ase
+}, globalThis._VSCODE_FILE_ROOT = lse;
 var fk = void 0;
 
-function lse() {
-    return fk || (fk = use()), fk
+function use() {
+    return fk || (fk = dse()), fk
 }
-async function use() {
+async function dse() {
     st("code/willLoadNls");
     let t, e;
     if (process.env.VSCODE_NLS_CONFIG) try {
@@ -59612,37 +59620,37 @@ async function use() {
         return st("code/didLoadNls"), t
     }
 }
-async function dse() {
-    await lse()
+async function hse() {
+    await use()
 }
-var hse = Rk(Ak(), 1);
+var fse = Rk(Ak(), 1);
 import {
-    fileURLToPath as fse
+    fileURLToPath as pse
 } from "url";
 import {
     app as Ge,
-    protocol as pse,
-    crashReporter as gse,
-    Menu as mse,
-    contentTracing as wse
+    protocol as gse,
+    crashReporter as mse,
+    Menu as wse,
+    contentTracing as vse
 } from "electron";
 import {
-    networkInterfaces as vse
+    networkInterfaces as yse
 } from "os";
 import {
-    createHash as yse,
-    randomUUID as Sse
+    createHash as Sse,
+    randomUUID as bse
 } from "crypto";
 import "node-fetch";
-var bse = new Set(["00:00:00:00:00:00", "ff:ff:ff:ff:ff:ff", "ac:de:48:00:11:22"]);
+var _se = new Set(["00:00:00:00:00:00", "ff:ff:ff:ff:ff:ff", "ac:de:48:00:11:22"]);
 
-function _se(t) {
+function Ese(t) {
     const e = t.replace(/\-/g, ":").toLowerCase();
-    return !bse.has(e)
+    return !_se.has(e)
 }
 
-function Ese() {
-    const t = vse();
+function kse() {
+    const t = yse();
     for (const e in t) {
         const i = t[e];
         if (i) {
@@ -59650,18 +59658,18 @@ function Ese() {
                     mac: r
                 }
                 of i)
-                if (_se(r)) return r
+                if (Ese(r)) return r
         }
     }
     throw new Error("Unable to retrieve mac address (unexpected format)")
 }
 
-function kse(t) {
+function Ise(t) {
     try {
-        const e = Ese();
-        return yse("sha256").update(e, "utf8").digest("hex")
+        const e = kse();
+        return Sse("sha256").update(e, "utf8").digest("hex")
     } catch (e) {
-        return t(e), Sse()
+        return t(e), bse()
     }
 }
 Lk(), Uk(), zs(), zs();
@@ -59676,9 +59684,9 @@ async function gL({
 }) {
     if (st("code/willGenerateNls"), process.env.VSCODE_DEV || t === "pseudo" || t.startsWith("en") || !r || !i) return oh(t, e, s);
     try {
-        const n = await Ise(i);
+        const n = await Cse(i);
         if (!n) return oh(t, e, s);
-        const o = Cse(n, t);
+        const o = Tse(n, t);
         if (!o) return oh(t, e, s);
         const a = n[o],
             c = a?.translations?.vscode;
@@ -59715,7 +59723,7 @@ async function gL({
             _resolvedLanguagePackCoreLocation: d,
             _corruptedFile: m
         };
-        if (await pk(d)) return Tse(d).catch(() => {}), st("code/didGenerateNls"), v;
+        if (await pk(d)) return Pse(d).catch(() => {}), st("code/didGenerateNls"), v;
         const [, y, w, _] = await Promise.all([Hs.promises.mkdir(d, {
             recursive: !0
         }), JSON.parse(await Hs.promises.readFile(js.join(s, "nls.keys.json"), "utf-8")), JSON.parse(await Hs.promises.readFile(js.join(s, "nls.messages.json"), "utf-8")), JSON.parse(await Hs.promises.readFile(c, "utf-8"))]), k = [];
@@ -59730,7 +59738,7 @@ async function gL({
     }
     return oh(t, e, s)
 }
-async function Ise(t) {
+async function Cse(t) {
     const e = js.join(t, "languagepacks.json");
     try {
         return JSON.parse(await Hs.promises.readFile(e, "utf-8"))
@@ -59739,7 +59747,7 @@ async function Ise(t) {
     }
 }
 
-function Cse(t, e) {
+function Tse(t, e) {
     try {
         for (; e;) {
             if (t[e]) return e;
@@ -59770,51 +59778,51 @@ async function pk(t) {
     }
 }
 
-function Tse(t) {
+function Pse(t) {
     const e = new Date;
     return Hs.promises.utimes(t, e, e)
 }
 dl();
 import {
-    createRequire as Pse
+    createRequire as Dse
 } from "module";
 Ml();
 import * as Sr from "@sentry/electron/main";
 import mL from "electron";
-var Dse = /[/\\]\.cursor(?:-dev|-lab|-nightly)?[/\\]extensions[/\\]([a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+)-[\d.]+[/\\]/,
-    xse = /[/\\]\.cursor-server(?:-dev|-lab|-nightly)?[/\\]extensions[/\\]([a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+)-[\d.]+(?:-universal)?[/\\]/,
-    Rse = /[/\\]vscode[/\\]extensions[/\\]([a-zA-Z0-9_-]+)[/\\]/,
-    Ase = /[/\\]\.cursor-server(?:-dev|-lab|-nightly)?[/\\]bin[/\\][a-zA-Z0-9_-]+[/\\][a-f0-9]+[/\\]extensions[/\\]([a-zA-Z0-9_-]+)[/\\]/;
+var xse = /[/\\]\.cursor(?:-dev|-lab|-nightly)?[/\\]extensions[/\\]([a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+)-[\d.]+[/\\]/,
+    Rse = /[/\\]\.cursor-server(?:-dev|-lab|-nightly)?[/\\]extensions[/\\]([a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+)-[\d.]+(?:-universal)?[/\\]/,
+    Ase = /[/\\]vscode[/\\]extensions[/\\]([a-zA-Z0-9_-]+)[/\\]/,
+    Mse = /[/\\]\.cursor-server(?:-dev|-lab|-nightly)?[/\\]bin[/\\][a-zA-Z0-9_-]+[/\\][a-f0-9]+[/\\]extensions[/\\]([a-zA-Z0-9_-]+)[/\\]/;
 
-function Mse(t) {
+function Ose(t) {
     if (!t) return null;
-    const e = t.match(Dse);
+    const e = t.match(xse);
     if (e) return e[1];
-    const i = t.match(xse);
+    const i = t.match(Rse);
     if (i) return i[1];
-    const r = t.match(Rse);
+    const r = t.match(Ase);
     if (r) return `vscode.${r[1]}`;
-    const s = t.match(Ase);
+    const s = t.match(Mse);
     return s ? `vscode.${s[1]}` : null
 }
 
-function Ose(t) {
+function Lse(t) {
     return t.startsWith("anysphere.") || t.startsWith("vscode.")
 }
 
-function Lse(t) {
+function Nse(t) {
     return !(t.exception?.values?.some(i => i.stacktrace?.frames?.some(r => {
-        const s = Mse(r.filename);
-        return s && !Ose(s)
+        const s = Ose(r.filename);
+        return s && !Lse(s)
     })) ?? !1)
 }
 
-function Nse() {
+function Wse() {
     const t = process.arch;
     return mL.app.runningUnderARM64Translation ? `${t}-rosetta` : t
 }
 
-function Wse() {
+function Fse() {
     try {
         Sr.init({
             ...xB(),
@@ -59824,23 +59832,23 @@ function Wse() {
             }), Sr.mainProcessSessionIntegration({
                 sendOnCreate: !0
             })],
-            beforeSend: t => Lse(t) ? t : null
-        }), Sr.setTag("app_flavor", Nse()), Nt().sentry = Sr
+            beforeSend: t => Nse(t) ? t : null
+        }), Sr.setTag("app_flavor", Wse()), Nt().sentry = Sr
     } catch (t) {
         console.error("Failed to initialize tracing in main process", t)
     }
 }
-Wse();
-var Ele = Pse(import.meta.url),
-    gk = Sn.dirname(fse(import.meta.url));
+Fse();
+var kle = Dse(import.meta.url),
+    gk = Sn.dirname(pse(import.meta.url));
 st("code/didStartMain"), st("code/willLoadMainBundle", {
-    startTime: Math.floor(Jre.timeOrigin)
+    startTime: Math.floor(Yre.timeOrigin)
 }), st("code/didLoadMainBundle");
-var wL = ese(Bi),
-    kle = kse(console.error),
-    Ile = Bi.dataFolderName ?? ".cursor",
-    br = qse(),
-    Qv = Use(br);
+var wL = tse(Bi),
+    Ile = Ise(console.error),
+    Cle = Bi.dataFolderName ?? ".cursor",
+    br = Gse(),
+    Qv = Bse(br);
 br.sandbox && !br["disable-chromium-sandbox"] && !Qv["disable-chromium-sandbox"] ? Ge.enableSandbox() : Ge.commandLine.hasSwitch("no-sandbox") && !Ge.commandLine.hasSwitch("disable-gpu-sandbox") ? Ge.commandLine.appendSwitch("disable-gpu-sandbox") : (Ge.commandLine.appendSwitch("no-sandbox"), Ge.commandLine.appendSwitch("disable-gpu-sandbox")), Ge.commandLine.appendSwitch("force-gpu-mem-available-mb", "1024"), process.platform === "darwin" && Ge.commandLine.appendSwitch("disable-skia-graphite");
 var Kc = Wk(br, Bi.nameShort ?? "code-oss-dev");
 if (process.platform === "win32") {
@@ -59848,8 +59856,8 @@ if (process.platform === "win32") {
     t && ul(t)
 }
 Ge.setPath("userData", Kc);
-var vL = zse();
-mse.setApplicationMenu(null), st("code/willStartCrashReporter"), (br["crash-reporter-directory"] || Qv["enable-crash-reporter"] && !br["disable-crash-reporter"]) && jse(), st("code/didStartCrashReporter"), wL && wL.isPortable && Ge.setAppLogsPath(Sn.join(Kc, "logs")), pse.registerSchemesAsPrivileged([{
+var vL = Kse();
+wse.setApplicationMenu(null), st("code/willStartCrashReporter"), (br["crash-reporter-directory"] || Qv["enable-crash-reporter"] && !br["disable-crash-reporter"]) && Hse(), st("code/didStartCrashReporter"), wL && wL.isPortable && Ge.setAppLogsPath(Sn.join(Kc, "logs")), gse.registerSchemesAsPrivileged([{
     scheme: "vscode-webview",
     privileges: {
         standard: !0,
@@ -59868,10 +59876,10 @@ mse.setApplicationMenu(null), st("code/willStartCrashReporter"), (br["crash-repo
         corsEnabled: !0,
         codeCache: !0
     }
-}]), Gse();
+}]), zse();
 var mk = void 0,
     wk = SL((Ge.getPreferredSystemLanguages()?.[0] ?? "en").toLowerCase()),
-    ah = Yse(Qv);
+    ah = Xse(Qv);
 if (ah && (mk = gL({
         userLocale: ah,
         osLocale: wk,
@@ -59907,27 +59915,27 @@ Ge.once("ready", function() {
             categoryFilter: br["trace-category-filter"] || "*",
             traceOptions: br["trace-options"] || "record-until-full,enable-sampling"
         };
-        wse.startRecording(t).finally(() => yL())
+        vse.startRecording(t).finally(() => yL())
     } else yL()
 });
 async function yL() {
     st("code/mainAppReady");
     try {
-        const [, t] = await Promise.all([Kse(vL), Jse()]);
-        await Fse(vL, t)
+        const [, t] = await Promise.all([Jse(vL), Yse()]);
+        await Use(vL, t)
     } catch (t) {
         console.error(t)
     }
 }
-async function Fse(t, e) {
-    process.env.VSCODE_NLS_CONFIG = JSON.stringify(e), process.env.VSCODE_CODE_CACHE_PATH = t || "", await dse(), await Promise.resolve().then(() => (zre(), jre)), st("code/didRunMainBundle")
+async function Use(t, e) {
+    process.env.VSCODE_NLS_CONFIG = JSON.stringify(e), process.env.VSCODE_CODE_CACHE_PATH = t || "", await hse(), await Promise.resolve().then(() => (Kre(), Hre)), st("code/didRunMainBundle")
 }
 
-function Use(t) {
+function Bse(t) {
     const e = ["disable-hardware-acceleration", "force-color-profile", "disable-lcd-text", "proxy-bypass-list"];
     process.platform === "linux" && (e.push("force-renderer-accessibility"), e.push("password-store"));
     const i = ["enable-proposed-api", "log-level", "use-inmemory-secretstorage"],
-        r = Bse();
+        r = $se();
     Object.keys(r).forEach(c => {
         const l = r[c];
         if (e.indexOf(c) !== -1) {
@@ -59957,22 +59965,22 @@ function Use(t) {
     Ge.commandLine.appendSwitch("disable-features", n);
     const o = `FontMatchingCTMigration,StandardizedBrowserZoom,${Ge.commandLine.getSwitchValue("disable-blink-features")}`;
     Ge.commandLine.appendSwitch("disable-blink-features", o);
-    const a = Hse(t);
+    const a = qse(t);
     return a && Ge.commandLine.appendSwitch("js-flags", a), Ge.commandLine.appendSwitch("xdg-portal-required-version", "4"), r
 }
 
-function Bse() {
-    const t = Vse();
+function $se() {
+    const t = jse();
     let e;
     try {
         e = Mk(pa.readFileSync(t).toString())
     } catch (i) {
-        i && i.code === "ENOENT" ? $se(t) : console.warn(`Unable to read argv.json configuration file in ${t}, falling back to defaults (${i})`)
+        i && i.code === "ENOENT" ? Vse(t) : console.warn(`Unable to read argv.json configuration file in ${t}, falling back to defaults (${i})`)
     }
     return e || (e = {}), e
 }
 
-function $se(t) {
+function Vse(t) {
     try {
         const e = Sn.dirname(t);
         pa.existsSync(e) || pa.mkdirSync(e);
@@ -59984,14 +59992,14 @@ function $se(t) {
     }
 }
 
-function Vse() {
+function jse() {
     const t = process.env.VSCODE_PORTABLE;
     if (t) return Sn.join(t, "argv.json");
     let e = Bi.dataFolderName;
-    return process.env.VSCODE_DEV && (e = `${e}-dev`), Sn.join(Kre.homedir(), e, "argv.json")
+    return process.env.VSCODE_DEV && (e = `${e}-dev`), Sn.join(Jre.homedir(), e, "argv.json")
 }
 
-function jse() {
+function Hse() {
     let t = br["crash-reporter-directory"],
         e = "";
     if (t) {
@@ -60037,7 +60045,7 @@ function jse() {
     }
     const i = (Bi.crashReporter ? Bi.crashReporter.productName : void 0) || Bi.nameShort,
         r = (Bi.crashReporter ? Bi.crashReporter.companyName : void 0) || "Anysphere";
-    gse.start({
+    mse.start({
         companyName: r,
         productName: process.env.VSCODE_DEV ? `${i} Dev` : i,
         submitURL: e,
@@ -60050,13 +60058,13 @@ function jse() {
     })
 }
 
-function Hse(t) {
+function qse(t) {
     const e = [];
     return t["js-flags"] && e.push(t["js-flags"]), process.platform === "linux" && e.push("--nodecommit_pooled_pages"), e.length > 0 ? e.join(" ") : null
 }
 
-function qse() {
-    return (0, hse.default)(process.argv, {
+function Gse() {
+    return (0, fse.default)(process.argv, {
         string: ["user-data-dir", "locale", "js-flags", "crash-reporter-directory"],
         boolean: ["disable-chromium-sandbox"],
         default: {
@@ -60068,7 +60076,7 @@ function qse() {
     })
 }
 
-function Gse() {
+function zse() {
     const t = [];
     globalThis.macOpenFiles = t, Ge.on("open-file", function(r, s) {
         t.push(s)
@@ -60088,12 +60096,12 @@ function Gse() {
     }
 }
 
-function zse() {
+function Kse() {
     if (process.argv.indexOf("--no-cached-data") > 0 || process.env.VSCODE_DEV) return;
     const t = Bi.commit;
     if (t) return Sn.join(Kc, "CachedData", t)
 }
-async function Kse(t) {
+async function Jse(t) {
     if (typeof t == "string") try {
         return await pa.promises.mkdir(t, {
             recursive: !0
@@ -60108,7 +60116,7 @@ function SL(t) {
     }
     return t
 }
-async function Jse() {
+async function Yse() {
     const t = mk ? await mk : void 0;
     if (t) return t;
     let e = Ge.getLocale();
@@ -60128,11 +60136,11 @@ async function Jse() {
     }
 }
 
-function Yse(t) {
+function Xse(t) {
     const e = br.locale;
     return e ? e.toLowerCase() : typeof t?.locale == "string" ? t.locale.toLowerCase() : void 0
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/38a27120cfc7419a5efa38420665eaeeed1e7b30/core/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/80b138a7a0a948e1a798e9ed7867d76a1ba9a310/core/main.js.map
 
-//# debugId=b0f63049-edb5-5a73-bbb3-a801e7ed3d56
+//# debugId=5e0b1be3-0f00-563f-9233-2e5b07c022d5
