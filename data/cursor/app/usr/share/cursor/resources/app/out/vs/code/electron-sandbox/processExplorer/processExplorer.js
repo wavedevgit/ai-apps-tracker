@@ -16,6 +16,6 @@
 				export default {};
 		`,L=new Blob([f],{type:"application/javascript"}),M=URL.createObjectURL(L);for(const[c,g]of t.cssModules){const b=new URL(c,e).href;i.imports[b]=M+"#module="+encodeURIComponent(c)}const _=window.trustedTypes?.createPolicy("vscode-bootstrapImportMap",{createScript(c){return c}}),j=JSON.stringify(i,void 0,2),u=document.createElement("script");u.type="importmap",u.setAttribute("nonce","0c6a828f1297"),u.textContent=_?.createScript(j)??j,document.head.appendChild(u),performance.mark("code/didAddCssLoader")}}globalThis.MonacoBootstrapWindow={load:y}})(),(async function(){const l=window.MonacoBootstrapWindow,{result:p,configuration:y}=await l.load("vs/code/electron-sandbox/processExplorer/processExplorerMain",{configureDeveloperSettings:function(){return{forceEnableDeveloperKeybindings:!0}}});p.startup(y)})();
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/80b138a7a0a948e1a798e9ed7867d76a1ba9a310/core/vs/code/electron-sandbox/processExplorer/processExplorer.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/3dc559280adc5f931ade8e25c7b85393842acf30/core/vs/code/electron-sandbox/processExplorer/processExplorer.js.map
 
 //# debugId=eea322f7-cbee-57d1-93f2-e90fdade43bb
