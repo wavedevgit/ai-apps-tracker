@@ -17884,7 +17884,6 @@ var Uqt = {
             return nHe.create(s, e)
         }
         static
-
         function(s, e) {
             return X2e.create(s, e)
         }
