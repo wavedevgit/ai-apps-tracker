@@ -11087,7 +11087,6 @@ var vEt = {
             return oGe.create(s, e)
         }
         static
-
         function(s, e) {
             return sGe.create(s, e)
         }
