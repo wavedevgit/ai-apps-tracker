@@ -435,7 +435,6 @@
                             }() : function() {
                                 const s = A.formats[a];
                                 if (!s) return void
-
                                 function() {
                                     if (!1 !== l.strictSchema) throw new Error(e());
 
@@ -31167,7 +31166,6 @@
                                     headersList: u,
                                     socket: A
                                 } = await
-
                                 function({
                                     body: n
                                 }) {
@@ -42648,7 +42646,6 @@
                                     headersList: u,
                                     socket: d
                                 } = await
-
                                 function({
                                     body: n
                                 }) {
@@ -187185,7 +187182,6 @@
                         };
                     try {
                         const e = await
-
                         function(e) {
                             return s0(this, arguments, void 0, function*(e, t = {}) {
                                 var n, r, i, s, a;
@@ -192598,7 +192594,6 @@
                         },
                         removeLocalPlugin: async e => {
                             await
-
                             function(e) {
                                 return s0(this, arguments, void 0, function*(e, t = {}) {
                                     var n, r;
@@ -192690,7 +192685,6 @@
                             const t = l[0];
                             if (!t) throw new Error("No workspace path available for project plugin installation");
                             "third-party" === e.type ? await
-
                             function(e, t, n) {
                                 return j0(this, void 0, void 0, function*() {
                                     if (!z0(n.gitUrl)) throw new Error(`Invalid project plugin git URL. Only https:// and git@ URLs are allowed: ${JSON.stringify(n.gitUrl)}`);
@@ -192705,7 +192699,6 @@
                                     yield r1(e, a)
                                 })
                             }(t, e.key, e.gitInfo): await
-
                             function(e, t) {
                                 return j0(this, void 0, void 0, function*() {
                                     const n = yield t1(e), r = null != n ? n : "{}";
@@ -192721,7 +192714,6 @@
                             const t = l[0];
                             if (!t) throw new Error("No workspace path available for project plugin removal");
                             await
-
                             function(e, t) {
                                 return j0(this, void 0, void 0, function*() {
                                     const n = yield t1(e);
@@ -197278,7 +197270,6 @@
                         const e = (async () => {
                             try {
                                 const e = await
-
                                 function() {
                                     return Lre(this, void 0, void 0, function*() {
                                         return Pre([], () => !0)
