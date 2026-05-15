@@ -610,7 +610,6 @@
                         switch (process.platform) {
                             case "darwin":
                                 return await
-
                                 function(e) {
                                     return new Promise((t, i) => {
                                         d.exec("which git", (r, o) => {
@@ -636,7 +635,6 @@
                                 }(t);
                             case "win32":
                                 return await
-
                                 function(e) {
                                     return A(process.env.ProgramW6432, e).then(void 0, () => A(process.env["ProgramFiles(x86)"], e)).then(void 0, () => A(process.env.ProgramFiles, e)).then(void 0, () => A(c.join(process.env.LocalAppData, "Programs"), e)).then(void 0, () => async function(e) {
                                         return D(await (0, m.default)("git.exe"), e)
