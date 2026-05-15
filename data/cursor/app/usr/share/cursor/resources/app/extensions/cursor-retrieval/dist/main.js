@@ -118983,6 +118983,12 @@
             kind: "scalar",
             T: 9,
             opt: !0
+        }, {
+            no: 10,
+            name: "sentiment",
+            kind: "scalar",
+            T: 9,
+            opt: !0
         }]);
         let She = Che;
         const Bhe = class e extends ml {
@@ -131095,7 +131101,7 @@
         let fIe = pIe;
         const hIe = class e extends ml {
             constructor(e) {
-                super(), this.id = "", this.icon = "", this.ctaLabel = "", this.title = "", this.description = "", this.checklistTitle = "", this.checklistDescription = "", Rc.util.initPartial(e, this)
+                super(), this.id = "", this.icon = "", this.ctaLabel = "", this.checklistTitle = "", this.checklistDescription = "", Rc.util.initPartial(e, this)
             }
             static fromBinary(t, n) {
                 return (new e).fromBinary(t, n)
@@ -131128,16 +131134,6 @@
         }, {
             no: 4,
             name: "cta_label",
-            kind: "scalar",
-            T: 9
-        }, {
-            no: 5,
-            name: "title",
-            kind: "scalar",
-            T: 9
-        }, {
-            no: 6,
-            name: "description",
             kind: "scalar",
             T: 9
         }, {
@@ -155662,4 +155658,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e603f703cd553a6bb3644711a3379bbbb31180/extensions/cursor-retrieval/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/0cf8b06883f54e26bb4f0fb8647c9500ccb43310/extensions/cursor-retrieval/dist/main.js.map

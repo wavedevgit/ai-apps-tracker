@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "969dbf52-7202-5f00-b71a-49b79bce74bc")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "279e23eb-e4f1-5fb5-acd3-689a031fe225")
     } catch (e) {}
 }();
 var u1 = function(e, t) {
@@ -492,7 +492,7 @@ var jn = Object.create,
     h1 = Object.getOwnPropertyNames,
     Un = Object.getPrototypeOf,
     qn = Object.prototype.hasOwnProperty,
-    x = (e, t) => function() {
+    P = (e, t) => function() {
         return e && (t = (0, e[h1(e)[0]])(e = 0)), t
     },
     Vn = (e, t) => function() {
@@ -528,15 +528,15 @@ function Kn(e, t) {
     }
     return r
 }
-var Er, Gn, Cr = x({
+var Cr, Gn, Ar = P({
     "out-build/vs/base/common/collections.js"() {
         "use strict";
         Gn = class {
             static {
-                Er = Symbol.toStringTag
+                Cr = Symbol.toStringTag
             }
             constructor(e, t) {
-                this.toKey = t, this._map = new Map, this[Er] = "SetWithKey";
+                this.toKey = t, this._map = new Map, this[Cr] = "SetWithKey";
                 for (const r of e) this.add(r)
             }
             get size() {
@@ -572,16 +572,16 @@ var Er, Gn, Cr = x({
 });
 
 function It(e) {
-    Jn(e) || Dr.onUnexpectedError(e)
+    Jn(e) || Lr.onUnexpectedError(e)
 }
 
 function Jn(e) {
-    return e instanceof rt ? !0 : e instanceof Error && e.name === Tt && e.message === Tt
+    return e instanceof st ? !0 : e instanceof Error && e.name === Tt && e.message === Tt
 }
-var Ar, Dr, Tt, rt, d1, Lr, Sr, He = x({
+var Dr, Lr, Tt, st, d1, Sr, Pr, He = P({
     "out-build/vs/base/common/errors.js"() {
         "use strict";
-        Ar = class {
+        Dr = class {
             constructor() {
                 this.listeners = [], this.unexpectedErrorHandler = function(e) {
                     setTimeout(() => {
@@ -618,26 +618,26 @@ var Ar, Dr, Tt, rt, d1, Lr, Sr, He = x({
             onUnexpectedExternalError(e) {
                 this.unexpectedErrorHandler(e)
             }
-        }, Dr = new Ar, Tt = "Canceled", rt = class extends Error {
+        }, Lr = new Dr, Tt = "Canceled", st = class extends Error {
             constructor() {
-                if (super(Tt), this.name = this.message, Sr && typeof console < "u") {
+                if (super(Tt), this.name = this.message, Pr && typeof console < "u") {
                     const e = new Error().stack ?? "";
-                    Lr.some(t => e.includes(t)) && console.trace("[DebugCancellation] CancellationError created")
+                    Sr.some(t => e.includes(t)) && console.trace("[DebugCancellation] CancellationError created")
                 }
             }
-        }, d1 = class vr extends Error {
+        }, d1 = class yr extends Error {
             constructor(t) {
                 super(t), this.name = "CodeExpectedError"
             }
             static fromError(t) {
-                if (t instanceof vr) return t;
-                const r = new vr;
+                if (t instanceof yr) return t;
+                const r = new yr;
                 return r.message = t.message, r.stack = t.stack, r
             }
             static isErrorNoTelemetry(t) {
                 return t.name === "CodeExpectedError"
             }
-        }, Lr = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "QuickAgentConversation", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"], Sr = !1
+        }, Sr = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "QuickAgentConversation", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"], Pr = !1
     }
 });
 
@@ -655,7 +655,7 @@ function Qn(e, t) {
         return i
     }
 }
-var xr = x({
+var xr = P({
     "out-build/vs/base/common/functional.js"() {
         "use strict"
     }
@@ -670,10 +670,10 @@ function Yn(e, t, r = 0, s = e.length) {
     }
     return i - 1
 }
-var Zn, Xn = x({
+var Zn, Xn = P({
     "out-build/vs/base/common/arraysFind.js"() {
         "use strict";
-        Zn = class xn {
+        Zn = class Pn {
             static {
                 this.assertInvariants = !1
             }
@@ -681,7 +681,7 @@ var Zn, Xn = x({
                 this._array = t, this._findLastMonotonousLastIdx = 0
             }
             findLastMonotonous(t) {
-                if (xn.assertInvariants) {
+                if (Pn.assertInvariants) {
                     if (this._prevFindLastPredicate) {
                         for (const s of this._array)
                             if (this._prevFindLastPredicate(s) && !t(s)) throw new Error("MonotonousArray: current predicate must be weaker than (or equal to) the previous predicate.")
@@ -695,7 +695,7 @@ var Zn, Xn = x({
     }
 });
 
-function Pr(e, t) {
+function Or(e, t) {
     let r;
     if (typeof t == "number") {
         let s = t;
@@ -714,7 +714,7 @@ function Pr(e, t) {
 function eo(e, t) {
     return (r, s) => t(e(r), e(s))
 }
-var p1, Or, to, g1 = x({
+var p1, kr, to, g1 = P({
     "out-build/vs/base/common/arrays.js"() {
         "use strict";
         Xn(), He(), (function(e) {
@@ -737,7 +737,7 @@ var p1, Or, to, g1 = x({
                 return n === 0
             }
             e.isNeitherLessOrGreaterThan = i, e.greaterThan = 1, e.lessThan = -1, e.neitherLessOrGreaterThan = 0
-        })(p1 || (p1 = {})), Or = (e, t) => e - t, to = class i1 {
+        })(p1 || (p1 = {})), kr = (e, t) => e - t, to = class i1 {
             static {
                 this.empty = new i1(t => {})
             }
@@ -780,10 +780,10 @@ var p1, Or, to, g1 = x({
 function ro(e) {
     return Array.isArray(e)
 }
-var kr, Ir, Tr, Rr, m1, so, Nr, Fr, $r, Rt, Mr, _1 = x({
+var Ir, Tr, Rr, Nr, m1, so, Fr, $r, Mr, Rt, jr, _1 = P({
         "out-build/vs/base/common/map.js"() {
             "use strict";
-            Rr = class {
+            Nr = class {
                 constructor(e, t) {
                     this.uri = e, this.value = t
                 }
@@ -792,14 +792,14 @@ var kr, Ir, Tr, Rr, m1, so, Nr, Fr, $r, Rt, Mr, _1 = x({
                     this.defaultToKey = t => t.toString()
                 }
                 constructor(t, r) {
-                    if (this[kr] = "ResourceMap", t instanceof Dt) this.map = new Map(t.map), this.toKey = r ?? Dt.defaultToKey;
+                    if (this[Ir] = "ResourceMap", t instanceof Dt) this.map = new Map(t.map), this.toKey = r ?? Dt.defaultToKey;
                     else if (ro(t)) {
                         this.map = new Map, this.toKey = r ?? Dt.defaultToKey;
                         for (const [s, i] of t) this.set(s, i)
                     } else this.map = new Map, this.toKey = t ?? Dt.defaultToKey
                 }
                 set(t, r) {
-                    return this.map.set(this.toKey(t), new Rr(t, r)), this
+                    return this.map.set(this.toKey(t), new Nr(t, r)), this
                 }
                 get(t) {
                     return this.map.get(this.toKey(t))?.value
@@ -825,12 +825,12 @@ var kr, Ir, Tr, Rr, m1, so, Nr, Fr, $r, Rt, Mr, _1 = x({
                     for (const t of this.map.values()) yield t.uri
                 }* entries() {
                     for (const t of this.map.values()) yield [t.uri, t.value]
-                }*[(kr = Symbol.toStringTag, Symbol.iterator)]() {
+                }*[(Ir = Symbol.toStringTag, Symbol.iterator)]() {
                     for (const [, t] of this.map) yield [t.uri, t.value]
                 }
             }, so = class {
                 constructor(e, t) {
-                    this[Ir] = "ResourceSet", !e || typeof e == "function" ? this._map = new m1(e) : (this._map = new m1(t), e.forEach(this.add, this))
+                    this[Tr] = "ResourceSet", !e || typeof e == "function" ? this._map = new m1(e) : (this._map = new m1(t), e.forEach(this.add, this))
                 }
                 get size() {
                     return this._map.size
@@ -858,14 +858,14 @@ var kr, Ir, Tr, Rr, m1, so, Nr, Fr, $r, Rt, Mr, _1 = x({
                 }
                 values() {
                     return this._map.keys()
-                } [(Ir = Symbol.toStringTag, Symbol.iterator)]() {
+                } [(Tr = Symbol.toStringTag, Symbol.iterator)]() {
                     return this.keys()
                 }
             }, (function(e) {
                 e[e.None = 0] = "None", e[e.AsOld = 1] = "AsOld", e[e.AsNew = 2] = "AsNew"
-            })(Nr || (Nr = {})), Fr = class {
+            })(Fr || (Fr = {})), $r = class {
                 constructor() {
-                    this[Tr] = "LinkedMap", this._map = new Map, this._head = void 0, this._tail = void 0, this._size = 0, this._state = 0
+                    this[Rr] = "LinkedMap", this._map = new Map, this._head = void 0, this._tail = void 0, this._size = 0, this._state = 0
                 }
                 clear() {
                     this._map.clear(), this._head = void 0, this._tail = void 0, this._size = 0, this._state++
@@ -1008,7 +1008,7 @@ var kr, Ir, Tr, Rr, m1, so, Nr, Fr, $r, Rt, Mr, _1 = x({
                         }
                     };
                     return s
-                } [(Tr = Symbol.toStringTag, Symbol.iterator)]() {
+                } [(Rr = Symbol.toStringTag, Symbol.iterator)]() {
                     return this.entries()
                 }
                 trimOld(e) {
@@ -1087,7 +1087,7 @@ var kr, Ir, Tr, Rr, m1, so, Nr, Fr, $r, Rt, Mr, _1 = x({
                     this.clear();
                     for (const [t, r] of e) this.set(t, r)
                 }
-            }, $r = class extends Fr {
+            }, Mr = class extends $r {
                 constructor(e, t = 1) {
                     super(), this._limit = e, this._ratio = Math.min(Math.max(0, t), 1)
                 }
@@ -1115,7 +1115,7 @@ var kr, Ir, Tr, Rr, m1, so, Nr, Fr, $r, Rt, Mr, _1 = x({
                 checkTrim() {
                     this.size > this._limit && this.trim(Math.round(this._limit * this._ratio))
                 }
-            }, Rt = class extends $r {
+            }, Rt = class extends Mr {
                 constructor(e, t = 1) {
                     super(e, t)
                 }
@@ -1125,7 +1125,7 @@ var kr, Ir, Tr, Rr, m1, so, Nr, Fr, $r, Rt, Mr, _1 = x({
                 set(e, t) {
                     return super.set(e, t), this.checkTrim(), this
                 }
-            }, Mr = class {
+            }, jr = class {
                 constructor() {
                     this.map = new Map
                 }
@@ -1148,7 +1148,7 @@ var kr, Ir, Tr, Rr, m1, so, Nr, Fr, $r, Rt, Mr, _1 = x({
             }
         }
     }),
-    io = x({
+    io = P({
         "out-build/vs/base/common/assert.js"() {
             "use strict";
             He()
@@ -1162,13 +1162,13 @@ function no(e) {
 function oo(e) {
     return !!e && typeof e[Symbol.iterator] == "function"
 }
-var v1 = x({
+var v1 = P({
         "out-build/vs/base/common/types.js"() {
             "use strict";
             io()
         }
     }),
-    y1, ao = x({
+    y1, ao = P({
         "out-build/vs/base/common/iterator.js"() {
             "use strict";
             v1(), (function(e) {
@@ -1214,33 +1214,33 @@ var v1 = x({
                 e.first = l;
 
                 function f(m, _) {
-                    let P = 0;
+                    let x = 0;
                     for (const I of m)
-                        if (_(I, P++)) return !0;
+                        if (_(I, x++)) return !0;
                     return !1
                 }
                 e.some = f;
 
                 function u(m, _) {
-                    for (const P of m)
-                        if (_(P)) return P
+                    for (const x of m)
+                        if (_(x)) return x
                 }
                 e.find = u;
 
                 function* d(m, _) {
-                    for (const P of m) _(P) && (yield P)
+                    for (const x of m) _(x) && (yield x)
                 }
                 e.filter = d;
 
                 function* h(m, _) {
-                    let P = 0;
-                    for (const I of m) yield _(I, P++)
+                    let x = 0;
+                    for (const I of m) yield _(I, x++)
                 }
                 e.map = h;
 
                 function* p(m, _) {
-                    let P = 0;
-                    for (const I of m) yield* _(I, P++)
+                    let x = 0;
+                    for (const I of m) yield* _(I, x++)
                 }
                 e.flatMap = p;
 
@@ -1249,8 +1249,8 @@ var v1 = x({
                 }
                 e.concat = E;
 
-                function C(m, _, P) {
-                    let I = P;
+                function C(m, _, x) {
+                    let I = x;
                     for (const A of m) I = _(I, A);
                     return I
                 }
@@ -1258,26 +1258,26 @@ var v1 = x({
 
                 function S(m) {
                     let _ = 0;
-                    for (const P of m) _++;
+                    for (const x of m) _++;
                     return _
                 }
                 e.length = S;
 
-                function* V(m, _, P = m.length) {
-                    for (_ < -m.length && (_ = 0), _ < 0 && (_ += m.length), P < 0 ? P += m.length : P > m.length && (P = m.length); _ < P; _++) yield m[_]
+                function* V(m, _, x = m.length) {
+                    for (_ < -m.length && (_ = 0), _ < 0 && (_ += m.length), x < 0 ? x += m.length : x > m.length && (x = m.length); _ < x; _++) yield m[_]
                 }
                 e.slice = V;
 
                 function L(m, _ = Number.POSITIVE_INFINITY) {
-                    const P = [];
-                    if (_ === 0) return [P, m];
+                    const x = [];
+                    if (_ === 0) return [x, m];
                     const I = m[Symbol.iterator]();
                     for (let A = 0; A < _; A++) {
                         const j = I.next();
-                        if (j.done) return [P, e.empty()];
-                        P.push(j.value)
+                        if (j.done) return [x, e.empty()];
+                        x.push(j.value)
                     }
-                    return [P, {
+                    return [x, {
                         [Symbol.iterator]() {
                             return I
                         }
@@ -1286,7 +1286,7 @@ var v1 = x({
                 e.consume = L;
                 async function J(m) {
                     const _ = [];
-                    for await (const P of m) _.push(P);
+                    for await (const x of m) _.push(x);
                     return Promise.resolve(_)
                 }
                 e.asyncToArray = J
@@ -1298,15 +1298,15 @@ function lo(e) {
     Fe = e
 }
 
-function st(e) {
+function it(e) {
     return Fe?.trackDisposable(e), e
 }
 
-function it(e) {
+function nt(e) {
     Fe?.markAsDisposed(e)
 }
 
-function nt(e, t) {
+function ot(e, t) {
     Fe?.setParent(e, t)
 }
 
@@ -1340,17 +1340,17 @@ function fo(...e) {
 }
 
 function Ne(e) {
-    const t = st({
+    const t = it({
         dispose: Qn(() => {
-            it(t), e()
+            nt(t), e()
         })
     });
     return t
 }
-var jr, Fe, ho, $e, be, b1, Wr, ot = x({
+var Wr, Fe, ho, $e, be, b1, Ur, at = P({
         "out-build/vs/base/common/lifecycle.js"() {
             "use strict";
-            if (g1(), Cr(), _1(), xr(), ao(), jr = !1, Fe = null, ho = class Pn {
+            if (g1(), Ar(), _1(), xr(), ao(), Wr = !1, Fe = null, ho = class xn {
                     constructor() {
                         this.livingDisposables = new Map
                     }
@@ -1364,7 +1364,7 @@ var jr, Fe, ho, $e, be, b1, Wr, ot = x({
                             source: null,
                             isSingleton: !1,
                             value: t,
-                            idx: Pn.idx++
+                            idx: xn.idx++
                         }, this.livingDisposables.set(t, r)), r
                     }
                     trackDisposable(t) {
@@ -1411,13 +1411,13 @@ var jr, Fe, ho, $e, be, b1, Wr, ot = x({
 `).map(u => u.trim().replace("at ", "")).filter(u => u !== "");
                             return l(f, ["Error", /^trackDisposable \(.*\)$/, /^DisposableTracker.trackDisposable \(.*\)$/]), f.reverse()
                         }
-                        const n = new Mr;
+                        const n = new jr;
                         for (const c of s) {
                             const l = i(c);
                             for (let f = 0; f <= l.length; f++) n.add(l.slice(0, f).join(`
 `), c)
                         }
-                        s.sort(eo(c => c.idx, Or));
+                        s.sort(eo(c => c.idx, kr));
                         let a = "",
                             o = 0;
                         for (const c of s.slice(0, t)) {
@@ -1455,7 +1455,7 @@ ${f.join(`
                             details: a
                         }
                     }
-                }, jr) {
+                }, Wr) {
                 const e = "__is_disposable_tracked__";
                 lo(new class {
                     trackDisposable(t) {
@@ -1482,10 +1482,10 @@ ${f.join(`
                     this.DISABLE_DISPOSED_WARNING = !1
                 }
                 constructor() {
-                    this._toDispose = new Set, this._isDisposed = !1, st(this)
+                    this._toDispose = new Set, this._isDisposed = !1, it(this)
                 }
                 dispose() {
-                    this._isDisposed || (it(this), this._isDisposed = !0, this.clear())
+                    this._isDisposed || (nt(this), this._isDisposed = !0, this.clear())
                 }
                 get isDisposed() {
                     return this._isDisposed
@@ -1500,7 +1500,7 @@ ${f.join(`
                 add(t) {
                     if (!t) return t;
                     if (t === this) throw new Error("Cannot register a disposable on itself!");
-                    return nt(t, this), this._isDisposed ? On.DISABLE_DISPOSED_WARNING || console.warn(new Error("Trying to add a disposable to a DisposableStore that has already been disposed of. The added object will be leaked!").stack) : this._toDispose.add(t), t
+                    return ot(t, this), this._isDisposed ? On.DISABLE_DISPOSED_WARNING || console.warn(new Error("Trying to add a disposable to a DisposableStore that has already been disposed of. The added object will be leaked!").stack) : this._toDispose.add(t), t
                 }
                 delete(t) {
                     if (t) {
@@ -1509,7 +1509,7 @@ ${f.join(`
                     }
                 }
                 deleteAndLeak(t) {
-                    t && this._toDispose.has(t) && (this._toDispose.delete(t), nt(t, null))
+                    t && this._toDispose.has(t) && (this._toDispose.delete(t), ot(t, null))
                 }
             }, be = class {
                 static {
@@ -1518,10 +1518,10 @@ ${f.join(`
                     })
                 }
                 constructor() {
-                    this._store = new $e, st(this), nt(this._store, this)
+                    this._store = new $e, it(this), ot(this._store, this)
                 }
                 dispose() {
-                    it(this), this._store.dispose()
+                    nt(this), this._store.dispose()
                 }
                 _register(e) {
                     if (e === this) throw new Error("Cannot register a disposable on itself!");
@@ -1529,30 +1529,30 @@ ${f.join(`
                 }
             }, b1 = class {
                 constructor() {
-                    this._isDisposed = !1, st(this)
+                    this._isDisposed = !1, it(this)
                 }
                 get value() {
                     return this._isDisposed ? void 0 : this._value
                 }
                 set value(e) {
-                    this._isDisposed || e === this._value || (this._value?.dispose(), e && nt(e, this), this._value = e)
+                    this._isDisposed || e === this._value || (this._value?.dispose(), e && ot(e, this), this._value = e)
                 }
                 clear() {
                     this.value = void 0
                 }
                 dispose() {
-                    this._isDisposed = !0, it(this), this._value?.dispose(), this._value = void 0
+                    this._isDisposed = !0, nt(this), this._value?.dispose(), this._value = void 0
                 }
                 clearAndLeak() {
                     const e = this._value;
-                    return this._value = void 0, e && nt(e, null), e
+                    return this._value = void 0, e && ot(e, null), e
                 }
-            }, Wr = class {
+            }, Ur = class {
                 constructor() {
-                    this._store = new Map, this._isDisposed = !1, st(this)
+                    this._store = new Map, this._isDisposed = !1, it(this)
                 }
                 dispose() {
-                    it(this), this._isDisposed = !0, this.clearAndDisposeAll()
+                    nt(this), this._isDisposed = !0, this.clearAndDisposeAll()
                 }
                 clearAndDisposeAll() {
                     if (this._store.size) try {
@@ -1591,7 +1591,7 @@ ${f.join(`
             }
         }
     }),
-    po, go = x({
+    po, go = P({
         "out-build/vs/base/common/linkedList.js"() {
             "use strict";
             po = class n1 {
@@ -1604,15 +1604,15 @@ ${f.join(`
             }
         }
     }),
-    Ur, qr, mo = x({
+    qr, Vr, mo = P({
         "out-build/vs/base/common/stopwatch.js"() {
             "use strict";
-            Ur = globalThis.performance && typeof globalThis.performance.now == "function", qr = class kn {
+            qr = globalThis.performance && typeof globalThis.performance.now == "function", Vr = class kn {
                 static create(t) {
                     return new kn(t)
                 }
                 constructor(t) {
-                    this._now = Ur && t === !1 ? Date.now : globalThis.performance.now.bind(globalThis.performance), this._startTime = this._now(), this._stopTime = -1
+                    this._now = qr && t === !1 ? Date.now : globalThis.performance.now.bind(globalThis.performance), this._startTime = this._now(), this._stopTime = -1
                 }
                 stop() {
                     this._stopTime = this._now()
@@ -1626,14 +1626,14 @@ ${f.join(`
             }
         }
     }),
-    E1, Vr, oe, zr, C1, Br, Nt, Hr, Kr, Gr, at, Jr, Qr, ae, Yr, A1 = x({
+    E1, zr, oe, Br, C1, Hr, Nt, Kr, Gr, Jr, lt, Qr, Yr, ae, Zr, A1 = P({
         "out-build/vs/base/common/event.js"() {
             "use strict";
-            Cr(), He(), xr(), ot(), go(), mo(), E1 = !1, Vr = !1, (function(e) {
+            Ar(), He(), xr(), at(), go(), mo(), E1 = !1, zr = !1, (function(e) {
                 e.None = () => be.None;
 
                 function t(b) {
-                    if (Vr) {
+                    if (zr) {
                         const {
                             onDidAddListener: g
                         } = b, y = Nt.create();
@@ -1722,26 +1722,26 @@ ${f.join(`
 
                 function h(b, g, y = 100, v = !1, D = !1, O, $) {
                     let H, Q, Be, Ot = 0,
-                        tt;
-                    const br = {
+                        rt;
+                    const Er = {
                         leakWarningThreshold: O,
                         onWillAddFirstListener() {
                             H = b(Nn => {
-                                Ot++, Q = g(Q, Nn), v && !Be && (kt.fire(Q), Q = void 0), tt = () => {
+                                Ot++, Q = g(Q, Nn), v && !Be && (kt.fire(Q), Q = void 0), rt = () => {
                                     const Fn = Q;
                                     Q = void 0, Be = void 0, (!v || Ot > 1) && kt.fire(Fn), Ot = 0
-                                }, typeof y == "number" ? (clearTimeout(Be), Be = setTimeout(tt, y)) : Be === void 0 && (Be = 0, queueMicrotask(tt))
+                                }, typeof y == "number" ? (clearTimeout(Be), Be = setTimeout(rt, y)) : Be === void 0 && (Be = 0, queueMicrotask(rt))
                             })
                         },
                         onWillRemoveListener() {
-                            D && Ot > 0 && tt?.()
+                            D && Ot > 0 && rt?.()
                         },
                         onDidRemoveLastListener() {
-                            tt = void 0, H.dispose()
+                            rt = void 0, H.dispose()
                         }
                     };
-                    $ || t(br);
-                    const kt = new ae(br);
+                    $ || t(Er);
+                    const kt = new ae(Er);
                     return $?.add(kt), kt.event
                 }
                 e.debounce = h;
@@ -1861,7 +1861,7 @@ ${f.join(`
                 }
                 e.fromRxJS = _;
 
-                function P(b, g, y = v => v) {
+                function x(b, g, y = v => v) {
                     const v = (...H) => $.fire(y(...H)),
                         D = () => b.addEventListener(g, v),
                         O = () => b.removeEventListener(g, v),
@@ -1871,7 +1871,7 @@ ${f.join(`
                         });
                     return $.event
                 }
-                e.fromDOMEventEmitter = P;
+                e.fromDOMEventEmitter = x;
 
                 function I(b, g) {
                     return new Promise(y => s(b)(y, null, g))
@@ -1955,7 +1955,7 @@ ${f.join(`
                     }
                 }
                 e.fromObservableLight = W
-            })(oe || (oe = {})), zr = class yr {
+            })(oe || (oe = {})), Br = class wr {
                 static {
                     this.all = new Set
                 }
@@ -1963,10 +1963,10 @@ ${f.join(`
                     this._idPool = 0
                 }
                 constructor(t) {
-                    this.listenerCount = 0, this.invocationCount = 0, this.elapsedOverall = 0, this.durations = [], this.name = `${t}_${yr._idPool++}`, yr.all.add(this)
+                    this.listenerCount = 0, this.invocationCount = 0, this.elapsedOverall = 0, this.durations = [], this.name = `${t}_${wr._idPool++}`, wr.all.add(this)
                 }
                 start(t) {
-                    this._stopWatch = new qr, this.listenerCount = t
+                    this._stopWatch = new Vr, this.listenerCount = t
                 }
                 stop() {
                     if (this._stopWatch) {
@@ -1974,7 +1974,7 @@ ${f.join(`
                         this.durations.push(t), this.elapsedOverall += t, this.invocationCount += 1, this._stopWatch = void 0
                     }
                 }
-            }, C1 = -1, Br = class In {
+            }, C1 = -1, Hr = class In {
                 static {
                     this._idPool = 1
                 }
@@ -1993,7 +1993,7 @@ ${f.join(`
                         this._warnCountdown = s * .5;
                         const [n, a] = this.getMostFrequentStack(), o = `[${this.name}] potential listener LEAK detected, having ${r} listeners already. MOST frequent listener (${a}):`;
                         console.warn(o), console.warn(n);
-                        const c = new Hr(o, n);
+                        const c = new Kr(o, n);
                         this._errorHandler(c)
                     }
                     return () => {
@@ -2020,20 +2020,20 @@ ${f.join(`
 `).slice(2).join(`
 `))
                 }
-            }, Hr = class extends Error {
+            }, Kr = class extends Error {
                 constructor(e, t) {
                     super(e), this.name = "ListenerLeakError", this.stack = t
                 }
-            }, Kr = class extends Error {
+            }, Gr = class extends Error {
                 constructor(e, t) {
                     super(e), this.name = "ListenerRefusalError", this.stack = t
                 }
-            }, Gr = 0, at = class {
+            }, Jr = 0, lt = class {
                 constructor(e) {
-                    this.value = e, this.id = Gr++
+                    this.value = e, this.id = Jr++
                 }
-            }, Jr = 2, Qr = (e, t) => {
-                if (e instanceof at) t(e);
+            }, Qr = 2, Yr = (e, t) => {
+                if (e instanceof lt) t(e);
                 else
                     for (let r = 0; r < e.length; r++) {
                         const s = e[r];
@@ -2041,7 +2041,7 @@ ${f.join(`
                     }
             }, ae = class {
                 constructor(e) {
-                    this._size = 0, this._options = e, this._leakageMon = C1 > 0 || this._options?.leakWarningThreshold ? new Br(e?.onListenerError ?? It, this._options?.leakWarningThreshold ?? C1) : void 0, this._perfMon = this._options?._profName ? new zr(this._options._profName) : void 0, this._deliveryQueue = this._options?.deliveryQueue
+                    this._size = 0, this._options = e, this._leakageMon = C1 > 0 || this._options?.leakWarningThreshold ? new Hr(e?.onListenerError ?? It, this._options?.leakWarningThreshold ?? C1) : void 0, this._perfMon = this._options?._profName ? new Br(this._options._profName) : void 0, this._deliveryQueue = this._options?.deliveryQueue
                 }
                 dispose() {
                     if (!this._disposed) {
@@ -2049,7 +2049,7 @@ ${f.join(`
                             if (E1) {
                                 const e = this._listeners;
                                 queueMicrotask(() => {
-                                    Qr(e, t => t.stack?.print())
+                                    Yr(e, t => t.stack?.print())
                                 })
                             }
                             this._listeners = void 0, this._size = 0
@@ -2063,14 +2063,14 @@ ${f.join(`
                             const o = `[${this._leakageMon.name}] REFUSES to accept new listeners because it exceeded its threshold by far (${this._size} vs ${this._leakageMon.threshold})`;
                             console.warn(o);
                             const c = this._leakageMon.getMostFrequentStack() ?? ["UNKNOWN stack", -1],
-                                l = new Kr(`${o}. HINT: Stack shows most frequent listener (${c[1]}-times)`, c[0]);
+                                l = new Gr(`${o}. HINT: Stack shows most frequent listener (${c[1]}-times)`, c[0]);
                             return (this._options?.onListenerError || It)(l), be.None
                         }
                         if (this._disposed) return be.None;
                         t && (e = e.bind(t));
-                        const s = new at(e);
+                        const s = new lt(e);
                         let i, n;
-                        this._leakageMon && this._size >= Math.ceil(this._leakageMon.threshold * .2) && (s.stack = Nt.create(), i = this._leakageMon.check(s.stack, this._size + 1)), E1 && (s.stack = n ?? Nt.create()), this._listeners ? this._listeners instanceof at ? (this._deliveryQueue ??= new Yr, this._listeners = [this._listeners, s]) : this._listeners.push(s) : (this._options?.onWillAddFirstListener?.(this), this._listeners = s, this._options?.onDidAddFirstListener?.(this)), this._options?.onDidAddListener?.(this), this._size++;
+                        this._leakageMon && this._size >= Math.ceil(this._leakageMon.threshold * .2) && (s.stack = Nt.create(), i = this._leakageMon.check(s.stack, this._size + 1)), E1 && (s.stack = n ?? Nt.create()), this._listeners ? this._listeners instanceof lt ? (this._deliveryQueue ??= new Zr, this._listeners = [this._listeners, s]) : this._listeners.push(s) : (this._options?.onWillAddFirstListener?.(this), this._listeners = s, this._options?.onDidAddFirstListener?.(this)), this._options?.onDidAddListener?.(this), this._size++;
                         const a = Ne(() => {
                             i?.(), this._removeListener(s)
                         });
@@ -2088,7 +2088,7 @@ ${f.join(`
                     if (r === -1) throw console.log("disposed?", this._disposed), console.log("size?", this._size), console.log("arr?", JSON.stringify(this._listeners)), new Error("Attempted to dispose unknown listener");
                     this._size--, t[r] = void 0;
                     const s = this._deliveryQueue.current === this;
-                    if (this._size * Jr <= t.length) {
+                    if (this._size * Qr <= t.length) {
                         let i = 0;
                         for (let n = 0; n < t.length; n++) t[n] ? t[i++] = t[n] : s && i < this._deliveryQueue.end && (this._deliveryQueue.end--, i < this._deliveryQueue.i && this._deliveryQueue.i--);
                         t.length = i
@@ -2114,7 +2114,7 @@ ${f.join(`
                 }
                 fire(e) {
                     if (this._deliveryQueue?.current && (this._deliverQueue(this._deliveryQueue), this._perfMon?.stop()), this._perfMon?.start(this._size), this._listeners)
-                        if (this._listeners instanceof at) this._deliver(this._listeners, e);
+                        if (this._listeners instanceof lt) this._deliver(this._listeners, e);
                         else {
                             const t = this._deliveryQueue;
                             t.enqueue(this, e, this._listeners.length), this._deliverQueue(t)
@@ -2123,7 +2123,7 @@ ${f.join(`
                 hasListeners() {
                     return this._size > 0
                 }
-            }, Yr = class {
+            }, Zr = class {
                 constructor() {
                     this.i = -1, this.end = 0
                 }
@@ -2141,27 +2141,27 @@ function _o() {
     return globalThis._VSCODE_NLS_MESSAGES
 }
 
-function Zr() {
+function Xr() {
     return globalThis._VSCODE_NLS_LANGUAGE
 }
-var Xr = x({
+var es = P({
     "out-build/vs/nls.messages.js"() {
         "use strict"
     }
 });
 
-function es(e, t) {
+function ts(e, t) {
     let r;
     return t.length === 0 ? r = e : r = e.replace(/\{(\d+)\}/g, (s, i) => {
         const n = parseInt(i, 10),
             a = t[n];
         let o = s;
         return typeof a == "string" ? o = a : (typeof a == "number" || typeof a == "boolean" || a === void 0 || a === null) && (o = String(a)), o
-    }), ts && (r = "\uFF3B" + r.replace(/[aouei]/g, "$&$&") + "\uFF3D"), r
+    }), rs && (r = "\uFF3B" + r.replace(/[aouei]/g, "$&$&") + "\uFF3D"), r
 }
 
 function w(e, t, ...r) {
-    return es(typeof e == "number" ? vo(e, t) : t, r)
+    return ts(typeof e == "number" ? vo(e, t) : t, r)
 }
 
 function vo(e, t) {
@@ -2172,27 +2172,27 @@ function vo(e, t) {
     }
     return r
 }
-var ts, Ft = x({
+var rs, Ft = P({
         "out-build/vs/nls.js"() {
             "use strict";
-            Xr(), Xr(), ts = Zr() === "pseudo" || typeof document < "u" && document.location && typeof document.location.hash == "string" && document.location.hash.indexOf("pseudo=true") >= 0
+            es(), es(), rs = Xr() === "pseudo" || typeof document < "u" && document.location && typeof document.location.hash == "string" && document.location.hash.indexOf("pseudo=true") >= 0
         }
     }),
-    Me, lt, ct, Ke, rs, D1, $t, ss, is, ns, os, ut, ft, L1, as, ge, me, G, S1, ls, cs, Mt, z, Se, Ee, us, fs, hs, ds, de, Ce, ps, gs, ms, _s, vs, yo, wo, bo, Eo, Co, Ao, Do, X = x({
+    Me, ct, ut, Ke, ss, D1, $t, is, ns, os, as, ft, ht, L1, ls, ge, me, G, S1, cs, us, Mt, z, Se, Ee, fs, hs, ds, ps, de, Ce, gs, ms, _s, vs, ys, yo, wo, bo, Eo, Co, Ao, Do, X = P({
         "out-build/vs/base/common/platform.js"() {
             "use strict";
-            if (Ft(), Me = "en", lt = !1, ct = !1, Ke = !1, rs = !1, D1 = !1, $t = !1, ss = !1, is = !1, ns = !1, os = !1, ut = void 0, ft = Me, L1 = Me, as = void 0, ge = void 0, me = globalThis, G = void 0, typeof me.vscode < "u" && typeof me.vscode.process < "u" ? G = me.vscode.process : typeof process < "u" && typeof process?.versions?.node == "string" && (G = process), S1 = typeof G?.versions?.electron == "string", ls = S1 && G?.type === "renderer", typeof G == "object") {
-                lt = G.platform === "win32", ct = G.platform === "darwin", Ke = G.platform === "linux", rs = Ke && !!G.env.SNAP && !!G.env.SNAP_REVISION, ss = S1, ns = !!G.env.CI || !!G.env.BUILD_ARTIFACTSTAGINGDIRECTORY, ut = Me, ft = Me;
+            if (Ft(), Me = "en", ct = !1, ut = !1, Ke = !1, ss = !1, D1 = !1, $t = !1, is = !1, ns = !1, os = !1, as = !1, ft = void 0, ht = Me, L1 = Me, ls = void 0, ge = void 0, me = globalThis, G = void 0, typeof me.vscode < "u" && typeof me.vscode.process < "u" ? G = me.vscode.process : typeof process < "u" && typeof process?.versions?.node == "string" && (G = process), S1 = typeof G?.versions?.electron == "string", cs = S1 && G?.type === "renderer", typeof G == "object") {
+                ct = G.platform === "win32", ut = G.platform === "darwin", Ke = G.platform === "linux", ss = Ke && !!G.env.SNAP && !!G.env.SNAP_REVISION, is = S1, os = !!G.env.CI || !!G.env.BUILD_ARTIFACTSTAGINGDIRECTORY, ft = Me, ht = Me;
                 const e = G.env.VSCODE_NLS_CONFIG;
                 if (e) try {
                     const t = JSON.parse(e);
-                    ut = t.userLocale, L1 = t.osLocale, ft = t.resolvedLanguage || Me, as = t.languagePack?.translationsConfigFile
+                    ft = t.userLocale, L1 = t.osLocale, ht = t.resolvedLanguage || Me, ls = t.languagePack?.translationsConfigFile
                 } catch {}
                 D1 = !0
-            } else typeof navigator == "object" && !ls ? (ge = navigator.userAgent, lt = ge.indexOf("Windows") >= 0, ct = ge.indexOf("Macintosh") >= 0, is = (ge.indexOf("Macintosh") >= 0 || ge.indexOf("iPad") >= 0 || ge.indexOf("iPhone") >= 0) && !!navigator.maxTouchPoints && navigator.maxTouchPoints > 0, Ke = ge.indexOf("Linux") >= 0, os = ge?.indexOf("Mobi") >= 0, $t = !0, ft = Zr() || Me, ut = navigator.language.toLowerCase(), L1 = ut) : console.error("Unable to resolve platform.");
+            } else typeof navigator == "object" && !cs ? (ge = navigator.userAgent, ct = ge.indexOf("Windows") >= 0, ut = ge.indexOf("Macintosh") >= 0, ns = (ge.indexOf("Macintosh") >= 0 || ge.indexOf("iPad") >= 0 || ge.indexOf("iPhone") >= 0) && !!navigator.maxTouchPoints && navigator.maxTouchPoints > 0, Ke = ge.indexOf("Linux") >= 0, as = ge?.indexOf("Mobi") >= 0, $t = !0, ht = Xr() || Me, ft = navigator.language.toLowerCase(), L1 = ft) : console.error("Unable to resolve platform.");
             (function(e) {
                 e[e.Web = 0] = "Web", e[e.Mac = 1] = "Mac", e[e.Linux = 2] = "Linux", e[e.Windows = 3] = "Windows"
-            })(cs || (cs = {})), Mt = 0, ct ? Mt = 1 : lt ? Mt = 3 : Ke && (Mt = 2), z = lt, Se = ct, Ee = Ke, us = D1, fs = $t, hs = $t && typeof me.importScripts == "function", ds = hs ? me.origin : void 0, de = ge, Ce = ft, (function(e) {
+            })(us || (us = {})), Mt = 0, ut ? Mt = 1 : ct ? Mt = 3 : Ke && (Mt = 2), z = ct, Se = ut, Ee = Ke, fs = D1, hs = $t, ds = $t && typeof me.importScripts == "function", ps = ds ? me.origin : void 0, de = ge, Ce = ht, (function(e) {
                 function t() {
                     return Ce
                 }
@@ -2207,8 +2207,8 @@ var ts, Ft = x({
                     return Ce === "en"
                 }
                 e.isDefault = s
-            })(ps || (ps = {})), gs = typeof me.postMessage == "function" && !me.importScripts, ms = (() => {
-                if (gs) {
+            })(gs || (gs = {})), ms = typeof me.postMessage == "function" && !me.importScripts, _s = (() => {
+                if (ms) {
                     const e = [];
                     me.addEventListener("message", r => {
                         if (r.data && r.data.vscodeScheduleAsyncWork)
@@ -2234,10 +2234,10 @@ var ts, Ft = x({
                 return e => setTimeout(e)
             })(), (function(e) {
                 e[e.Windows = 1] = "Windows", e[e.Macintosh = 2] = "Macintosh", e[e.Linux = 3] = "Linux"
-            })(_s || (_s = {})), vs = !!(de && de.indexOf("Chrome") >= 0), yo = !!(de && de.indexOf("Firefox") >= 0), wo = !!(!vs && de && de.indexOf("Safari") >= 0), bo = !!(de && de.indexOf("Edg/") >= 0), Eo = !!(de && de.indexOf("Android") >= 0), Co = G?.arch, Ao = G?.platform, Do = G?.versions?.node
+            })(vs || (vs = {})), ys = !!(de && de.indexOf("Chrome") >= 0), yo = !!(de && de.indexOf("Firefox") >= 0), wo = !!(!ys && de && de.indexOf("Safari") >= 0), bo = !!(de && de.indexOf("Edg/") >= 0), Eo = !!(de && de.indexOf("Android") >= 0), Co = G?.arch, Ao = G?.platform, Do = G?.versions?.node
         }
     }),
-    je, jt, Ge, Wt, ys, Lo, x1 = x({
+    je, jt, Ge, Wt, ws, Lo, P1 = P({
         "out-build/vs/base/common/process.js"() {
             "use strict";
             if (X(), jt = globalThis.vscode, typeof jt < "u" && typeof jt.process < "u") {
@@ -2281,7 +2281,7 @@ var ts, Ft = x({
                     return "/"
                 }
             };
-            Ge = je.cwd, Wt = je.env, ys = je.platform, Lo = je.arch
+            Ge = je.cwd, Wt = je.env, ws = je.platform, Lo = je.arch
         }
     });
 
@@ -2297,12 +2297,12 @@ function k(e) {
     return e === B || e === ee
 }
 
-function P1(e) {
+function x1(e) {
     return e === B
 }
 
 function Ae(e) {
-    return e >= bs && e <= Cs || e >= Es && e <= As
+    return e >= Es && e <= As || e >= Cs && e <= Ds
 }
 
 function Ut(e, t, r, s) {
@@ -2320,7 +2320,7 @@ function Ut(e, t, r, s) {
         if (s(c)) {
             if (!(a === l - 1 || o === 1))
                 if (o === 2) {
-                    if (i.length < 2 || n !== 2 || i.charCodeAt(i.length - 1) !== xe || i.charCodeAt(i.length - 2) !== xe) {
+                    if (i.length < 2 || n !== 2 || i.charCodeAt(i.length - 1) !== Pe || i.charCodeAt(i.length - 2) !== Pe) {
                         if (i.length > 2) {
                             const f = i.lastIndexOf(r);
                             f === -1 ? (i = "", n = 0) : (i = i.slice(0, f), n = i.length - 1 - i.lastIndexOf(r)), a = l, o = 0;
@@ -2333,25 +2333,25 @@ function Ut(e, t, r, s) {
                     t && (i += i.length > 0 ? `${r}..` : "..", n = 2)
                 } else i.length > 0 ? i += `${r}${e.slice(a+1,l)}` : i = e.slice(a + 1, l), n = l - a - 1;
             a = l, o = 0
-        } else c === xe && o !== -1 ? ++o : o = -1
+        } else c === Pe && o !== -1 ? ++o : o = -1
     }
     return i
 }
 
-function xo(e) {
+function Po(e) {
     return e ? `${e[0]==="."?"":"."}${e}` : ""
 }
 
-function ws(e, t) {
+function bs(e, t) {
     So(t, "pathObject");
     const r = t.dir || t.root,
-        s = t.base || `${t.name||""}${xo(t.ext)}`;
+        s = t.base || `${t.name||""}${Po(t.ext)}`;
     return r ? r === t.root ? `${r}${s}` : `${r}${e}${s}` : s
 }
-var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, Je, xs, Po, Oo, ko, le, Io, ce = x({
+var Es, Cs, As, Ds, Pe, B, ee, _e, Ls, O1, te, q, Ss, N, qt, We, Y, k1, Ps, xe, Je, xs, xo, Oo, ko, le, Io, ce = P({
     "out-build/vs/base/common/path.js"() {
         "use strict";
-        x1(), bs = 65, Es = 97, Cs = 90, As = 122, xe = 46, B = 47, ee = 92, _e = 58, Ds = 63, O1 = class extends Error {
+        P1(), Es = 65, Cs = 97, As = 90, Ds = 122, Pe = 46, B = 47, ee = 92, _e = 58, Ls = 63, O1 = class extends Error {
             constructor(e, t, r) {
                 let s;
                 typeof t == "string" && t.indexOf("not ") === 0 ? (s = "must not be", t = t.replace(/^not /, "")) : s = "must be";
@@ -2359,7 +2359,7 @@ var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, 
                 let n = `The "${e}" ${i} ${s} of type ${t}`;
                 n += `. Received type ${typeof r}`, super(n), this.code = "ERR_INVALID_ARG_TYPE"
             }
-        }, te = ys === "win32", q = {
+        }, te = ws === "win32", q = {
             resolve(...e) {
                 let t = "",
                     r = "",
@@ -2407,7 +2407,7 @@ var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, 
                 let r = 0,
                     s, i = !1;
                 const n = e.charCodeAt(0);
-                if (t === 1) return P1(n) ? "\\" : e;
+                if (t === 1) return x1(n) ? "\\" : e;
                 if (k(n))
                     if (i = !0, k(e.charCodeAt(1))) {
                         let o = 2,
@@ -2515,7 +2515,7 @@ var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, 
                 if (t.charCodeAt(0) === ee) {
                     if (t.charCodeAt(1) === ee) {
                         const r = t.charCodeAt(2);
-                        if (r !== Ds && r !== xe) return `\\\\?\\UNC\\${t.slice(2)}`
+                        if (r !== Ls && r !== Pe) return `\\\\?\\UNC\\${t.slice(2)}`
                     }
                 } else if (Ae(t.charCodeAt(0)) && t.charCodeAt(1) === _e && t.charCodeAt(2) === ee) return `\\\\?\\${t}`;
                 return t
@@ -2606,11 +2606,11 @@ var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, 
                         }
                         continue
                     }
-                    i === -1 && (n = !1, i = o + 1), c === xe ? r === -1 ? r = o : a !== 1 && (a = 1) : r !== -1 && (a = -1)
+                    i === -1 && (n = !1, i = o + 1), c === Pe ? r === -1 ? r = o : a !== 1 && (a = 1) : r !== -1 && (a = -1)
                 }
                 return r === -1 || i === -1 || a === 0 || a === 1 && r === i - 1 && r === s + 1 ? "" : e.slice(r, i)
             },
-            format: ws.bind(null, "\\"),
+            format: bs.bind(null, "\\"),
             parse(e) {
                 U(e, "path");
                 const t = {
@@ -2660,7 +2660,7 @@ var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, 
                         }
                         continue
                     }
-                    o === -1 && (c = !1, o = l + 1), i === xe ? n === -1 ? n = l : f !== 1 && (f = 1) : n !== -1 && (f = -1)
+                    o === -1 && (c = !1, o = l + 1), i === Pe ? n === -1 ? n = l : f !== 1 && (f = 1) : n !== -1 && (f = -1)
                 }
                 return o !== -1 && (n === -1 || f === 0 || f === 1 && n === o - 1 && n === a + 1 ? t.base = t.name = e.slice(a, o) : (t.name = e.slice(a, n), t.base = e.slice(a, o), t.ext = e.slice(n, o))), a > 0 && a !== s ? t.dir = e.slice(0, a - 1) : t.dir = t.root, t
             },
@@ -2668,7 +2668,7 @@ var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, 
             delimiter: ";",
             win32: null,
             posix: null
-        }, Ls = (() => {
+        }, Ss = (() => {
             if (te) {
                 const e = /\\/g;
                 return () => {
@@ -2686,16 +2686,16 @@ var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, 
                     U(i, `paths[${s}]`), i.length !== 0 && (t = `${i}/${t}`, r = i.charCodeAt(0) === B)
                 }
                 if (!r) {
-                    const s = Ls();
+                    const s = Ss();
                     t = `${s}/${t}`, r = s.charCodeAt(0) === B
                 }
-                return t = Ut(t, !r, "/", P1), r ? `/${t}` : t.length > 0 ? t : "."
+                return t = Ut(t, !r, "/", x1), r ? `/${t}` : t.length > 0 ? t : "."
             },
             normalize(e) {
                 if (U(e, "path"), e.length === 0) return ".";
                 const t = e.charCodeAt(0) === B,
                     r = e.charCodeAt(e.length - 1) === B;
-                return e = Ut(e, !t, "/", P1), e.length === 0 ? t ? "/" : r ? "./" : "." : (r && (e += "/"), t ? `/${e}` : e)
+                return e = Ut(e, !t, "/", x1), e.length === 0 ? t ? "/" : r ? "./" : "." : (r && (e += "/"), t ? `/${e}` : e)
             },
             isAbsolute(e) {
                 return U(e, "path"), e.length > 0 && e.charCodeAt(0) === B
@@ -2800,7 +2800,7 @@ var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, 
                 }
                 return t === -1 || s === -1 || n === 0 || n === 1 && t === s - 1 && t === r + 1 ? "" : e.slice(t, s)
             },
-            format: ws.bind(null, "/"),
+            format: bs.bind(null, "/"),
             parse(e) {
                 U(e, "path");
                 const t = {
@@ -2829,7 +2829,7 @@ var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, 
                         }
                         continue
                     }
-                    a === -1 && (o = !1, a = c + 1), f === xe ? i === -1 ? i = c : l !== 1 && (l = 1) : i !== -1 && (l = -1)
+                    a === -1 && (o = !1, a = c + 1), f === Pe ? i === -1 ? i = c : l !== 1 && (l = 1) : i !== -1 && (l = -1)
                 }
                 if (a !== -1) {
                     const f = n === 0 && r ? 1 : n;
@@ -2841,19 +2841,19 @@ var bs, Es, Cs, As, xe, B, ee, _e, Ds, O1, te, q, Ls, N, qt, We, Y, k1, Ss, Pe, 
             delimiter: ":",
             win32: null,
             posix: null
-        }, N.win32 = q.win32 = q, N.posix = q.posix = N, qt = te ? q.normalize : N.normalize, We = te ? q.isAbsolute : N.isAbsolute, Y = te ? q.join : N.join, k1 = te ? q.resolve : N.resolve, Ss = te ? q.relative : N.relative, Pe = te ? q.dirname : N.dirname, Je = te ? q.basename : N.basename, xs = te ? q.extname : N.extname, Po = te ? q.format : N.format, Oo = te ? q.parse : N.parse, ko = te ? q.toNamespacedPath : N.toNamespacedPath, le = te ? q.sep : N.sep, Io = te ? q.delimiter : N.delimiter
+        }, N.win32 = q.win32 = q, N.posix = q.posix = N, qt = te ? q.normalize : N.normalize, We = te ? q.isAbsolute : N.isAbsolute, Y = te ? q.join : N.join, k1 = te ? q.resolve : N.resolve, Ps = te ? q.relative : N.relative, xe = te ? q.dirname : N.dirname, Je = te ? q.basename : N.basename, xs = te ? q.extname : N.extname, xo = te ? q.format : N.format, Oo = te ? q.parse : N.parse, ko = te ? q.toNamespacedPath : N.toNamespacedPath, le = te ? q.sep : N.sep, Io = te ? q.delimiter : N.delimiter
     }
 });
 
 function To() {
     return 1025 + Math.floor(64510 * Math.random())
 }
-var Ro = x({
+var Ro = P({
         "out-build/vs/base/common/ports.js"() {
             "use strict"
         }
     }),
-    I1, Vt, ht, Qe, zt = x({
+    I1, Vt, dt, Qe, zt = P({
         "out-build/vs/base/common/cancellation.js"() {
             "use strict";
             A1(), I1 = Object.freeze(function(e, t) {
@@ -2865,7 +2865,7 @@ var Ro = x({
                 }
             }), (function(e) {
                 function t(r) {
-                    return r === e.None || r === e.Cancelled || r instanceof ht ? !0 : !r || typeof r != "object" ? !1 : typeof r.isCancellationRequested == "boolean" && typeof r.onCancellationRequested == "function"
+                    return r === e.None || r === e.Cancelled || r instanceof dt ? !0 : !r || typeof r != "object" ? !1 : typeof r.isCancellationRequested == "boolean" && typeof r.onCancellationRequested == "function"
                 }
                 e.isCancellationToken = t, e.None = Object.freeze({
                     isCancellationRequested: !1,
@@ -2874,7 +2874,7 @@ var Ro = x({
                     isCancellationRequested: !0,
                     onCancellationRequested: I1
                 })
-            })(Vt || (Vt = {})), ht = class {
+            })(Vt || (Vt = {})), dt = class {
                 constructor() {
                     this._isCancelled = !1, this._emitter = null
                 }
@@ -2895,13 +2895,13 @@ var Ro = x({
                     this._token = void 0, this._parentListener = void 0, this._parentListener = e && e.onCancellationRequested(this.cancel, this)
                 }
                 get token() {
-                    return this._token || (this._token = new ht), this._token
+                    return this._token || (this._token = new dt), this._token
                 }
                 cancel() {
-                    this._token ? this._token instanceof ht && this._token.cancel() : this._token = Vt.Cancelled
+                    this._token ? this._token instanceof dt && this._token.cancel() : this._token = Vt.Cancelled
                 }
                 dispose(e = !1) {
-                    e && this.cancel(), this._parentListener?.dispose(), this._token ? this._token instanceof ht && this._token.dispose() : this._token = Vt.None
+                    e && this.cancel(), this._parentListener?.dispose(), this._token ? this._token instanceof dt && this._token.dispose() : this._token = Vt.None
                 }
             }
         }
@@ -2910,10 +2910,10 @@ var Ro = x({
 function No(e) {
     return e
 }
-var Ps, Fo = x({
+var Os, Fo = P({
         "out-build/vs/base/common/cache.js"() {
             "use strict";
-            zt(), Ps = class {
+            zt(), Os = class {
                 constructor(e, t) {
                     this.lastCache = void 0, this.lastArgKey = void 0, typeof e == "function" ? (this._fn = e, this._computeKey = No) : (this._fn = t, this._computeKey = e.getCacheKey)
                 }
@@ -2924,7 +2924,7 @@ var Ps, Fo = x({
             }
         }
     }),
-    Oe, dt = x({
+    Oe, pt = P({
         "out-build/vs/base/common/lazy.js"() {
             "use strict";
             Oe = class {
@@ -2951,13 +2951,13 @@ var Ps, Fo = x({
             }
         }
     }),
-    $o = x({
+    $o = P({
         "out-build/vs/base/common/strings.cursor.js"() {
             "use strict"
         }
     });
 
-function Os(e) {
+function ks(e) {
     return e.replace(/[\\\{\}\*\+\?\|\^\$\.\[\]\(\)]/g, "\\$&")
 }
 
@@ -3000,17 +3000,17 @@ function R1(e, t, r = 0, s = e.length, i = 0, n = t.length) {
     return a < o ? -1 : a > o ? 1 : 0
 }
 
-function ks(e, t) {
-    return pt(e, t, 0, e.length, 0, t.length)
+function Is(e, t) {
+    return Ye(e, t, 0, e.length, 0, t.length)
 }
 
-function pt(e, t, r = 0, s = e.length, i = 0, n = t.length) {
+function Ye(e, t, r = 0, s = e.length, i = 0, n = t.length) {
     for (; r < s && i < n; r++, i++) {
         let c = e.charCodeAt(r),
             l = t.charCodeAt(i);
         if (c === l) continue;
         if (c >= 128 || l >= 128) return R1(e.toLowerCase(), t.toLowerCase(), r, s, i, n);
-        Is(c) && (c -= 32), Is(l) && (l -= 32);
+        Ts(c) && (c -= 32), Ts(l) && (l -= 32);
         const f = c - l;
         if (f !== 0) return f
     }
@@ -3019,28 +3019,34 @@ function pt(e, t, r = 0, s = e.length, i = 0, n = t.length) {
     return a < o ? -1 : a > o ? 1 : 0
 }
 
-function Is(e) {
+function Ts(e) {
     return e >= 97 && e <= 122
 }
 
-function Ts(e, t) {
-    return e.length === t.length && pt(e, t) === 0
+function N1(e, t) {
+    return e.length === t.length && Ye(e, t) === 0
 }
 
 function Rs(e, t) {
     const r = t.length;
-    return t.length > e.length ? !1 : pt(e, t, 0, r) === 0
+    return t.length > e.length ? !1 : Ye(e, t, 0, r) === 0
 }
 
-function Wo() {
+function Wo(e, t) {
+    const r = e.length,
+        s = r - t.length;
+    return s >= 0 && Ye(e, t, s, r) === 0
+}
+
+function Uo() {
     return JSON.parse("[0,0,0,51229,51255,12,44061,44087,12,127462,127487,6,7083,7085,5,47645,47671,12,54813,54839,12,128678,128678,14,3270,3270,5,9919,9923,14,45853,45879,12,49437,49463,12,53021,53047,12,71216,71218,7,128398,128399,14,129360,129374,14,2519,2519,5,4448,4519,9,9742,9742,14,12336,12336,14,44957,44983,12,46749,46775,12,48541,48567,12,50333,50359,12,52125,52151,12,53917,53943,12,69888,69890,5,73018,73018,5,127990,127990,14,128558,128559,14,128759,128760,14,129653,129655,14,2027,2035,5,2891,2892,7,3761,3761,5,6683,6683,5,8293,8293,4,9825,9826,14,9999,9999,14,43452,43453,5,44509,44535,12,45405,45431,12,46301,46327,12,47197,47223,12,48093,48119,12,48989,49015,12,49885,49911,12,50781,50807,12,51677,51703,12,52573,52599,12,53469,53495,12,54365,54391,12,65279,65279,4,70471,70472,7,72145,72147,7,119173,119179,5,127799,127818,14,128240,128244,14,128512,128512,14,128652,128652,14,128721,128722,14,129292,129292,14,129445,129450,14,129734,129743,14,1476,1477,5,2366,2368,7,2750,2752,7,3076,3076,5,3415,3415,5,4141,4144,5,6109,6109,5,6964,6964,5,7394,7400,5,9197,9198,14,9770,9770,14,9877,9877,14,9968,9969,14,10084,10084,14,43052,43052,5,43713,43713,5,44285,44311,12,44733,44759,12,45181,45207,12,45629,45655,12,46077,46103,12,46525,46551,12,46973,46999,12,47421,47447,12,47869,47895,12,48317,48343,12,48765,48791,12,49213,49239,12,49661,49687,12,50109,50135,12,50557,50583,12,51005,51031,12,51453,51479,12,51901,51927,12,52349,52375,12,52797,52823,12,53245,53271,12,53693,53719,12,54141,54167,12,54589,54615,12,55037,55063,12,69506,69509,5,70191,70193,5,70841,70841,7,71463,71467,5,72330,72342,5,94031,94031,5,123628,123631,5,127763,127765,14,127941,127941,14,128043,128062,14,128302,128317,14,128465,128467,14,128539,128539,14,128640,128640,14,128662,128662,14,128703,128703,14,128745,128745,14,129004,129007,14,129329,129330,14,129402,129402,14,129483,129483,14,129686,129704,14,130048,131069,14,173,173,4,1757,1757,1,2200,2207,5,2434,2435,7,2631,2632,5,2817,2817,5,3008,3008,5,3201,3201,5,3387,3388,5,3542,3542,5,3902,3903,7,4190,4192,5,6002,6003,5,6439,6440,5,6765,6770,7,7019,7027,5,7154,7155,7,8205,8205,13,8505,8505,14,9654,9654,14,9757,9757,14,9792,9792,14,9852,9853,14,9890,9894,14,9937,9937,14,9981,9981,14,10035,10036,14,11035,11036,14,42654,42655,5,43346,43347,7,43587,43587,5,44006,44007,7,44173,44199,12,44397,44423,12,44621,44647,12,44845,44871,12,45069,45095,12,45293,45319,12,45517,45543,12,45741,45767,12,45965,45991,12,46189,46215,12,46413,46439,12,46637,46663,12,46861,46887,12,47085,47111,12,47309,47335,12,47533,47559,12,47757,47783,12,47981,48007,12,48205,48231,12,48429,48455,12,48653,48679,12,48877,48903,12,49101,49127,12,49325,49351,12,49549,49575,12,49773,49799,12,49997,50023,12,50221,50247,12,50445,50471,12,50669,50695,12,50893,50919,12,51117,51143,12,51341,51367,12,51565,51591,12,51789,51815,12,52013,52039,12,52237,52263,12,52461,52487,12,52685,52711,12,52909,52935,12,53133,53159,12,53357,53383,12,53581,53607,12,53805,53831,12,54029,54055,12,54253,54279,12,54477,54503,12,54701,54727,12,54925,54951,12,55149,55175,12,68101,68102,5,69762,69762,7,70067,70069,7,70371,70378,5,70720,70721,7,71087,71087,5,71341,71341,5,71995,71996,5,72249,72249,7,72850,72871,5,73109,73109,5,118576,118598,5,121505,121519,5,127245,127247,14,127568,127569,14,127777,127777,14,127872,127891,14,127956,127967,14,128015,128016,14,128110,128172,14,128259,128259,14,128367,128368,14,128424,128424,14,128488,128488,14,128530,128532,14,128550,128551,14,128566,128566,14,128647,128647,14,128656,128656,14,128667,128673,14,128691,128693,14,128715,128715,14,128728,128732,14,128752,128752,14,128765,128767,14,129096,129103,14,129311,129311,14,129344,129349,14,129394,129394,14,129413,129425,14,129466,129471,14,129511,129535,14,129664,129666,14,129719,129722,14,129760,129767,14,917536,917631,5,13,13,2,1160,1161,5,1564,1564,4,1807,1807,1,2085,2087,5,2307,2307,7,2382,2383,7,2497,2500,5,2563,2563,7,2677,2677,5,2763,2764,7,2879,2879,5,2914,2915,5,3021,3021,5,3142,3144,5,3263,3263,5,3285,3286,5,3398,3400,7,3530,3530,5,3633,3633,5,3864,3865,5,3974,3975,5,4155,4156,7,4229,4230,5,5909,5909,7,6078,6085,7,6277,6278,5,6451,6456,7,6744,6750,5,6846,6846,5,6972,6972,5,7074,7077,5,7146,7148,7,7222,7223,5,7416,7417,5,8234,8238,4,8417,8417,5,9000,9000,14,9203,9203,14,9730,9731,14,9748,9749,14,9762,9763,14,9776,9783,14,9800,9811,14,9831,9831,14,9872,9873,14,9882,9882,14,9900,9903,14,9929,9933,14,9941,9960,14,9974,9974,14,9989,9989,14,10006,10006,14,10062,10062,14,10160,10160,14,11647,11647,5,12953,12953,14,43019,43019,5,43232,43249,5,43443,43443,5,43567,43568,7,43696,43696,5,43765,43765,7,44013,44013,5,44117,44143,12,44229,44255,12,44341,44367,12,44453,44479,12,44565,44591,12,44677,44703,12,44789,44815,12,44901,44927,12,45013,45039,12,45125,45151,12,45237,45263,12,45349,45375,12,45461,45487,12,45573,45599,12,45685,45711,12,45797,45823,12,45909,45935,12,46021,46047,12,46133,46159,12,46245,46271,12,46357,46383,12,46469,46495,12,46581,46607,12,46693,46719,12,46805,46831,12,46917,46943,12,47029,47055,12,47141,47167,12,47253,47279,12,47365,47391,12,47477,47503,12,47589,47615,12,47701,47727,12,47813,47839,12,47925,47951,12,48037,48063,12,48149,48175,12,48261,48287,12,48373,48399,12,48485,48511,12,48597,48623,12,48709,48735,12,48821,48847,12,48933,48959,12,49045,49071,12,49157,49183,12,49269,49295,12,49381,49407,12,49493,49519,12,49605,49631,12,49717,49743,12,49829,49855,12,49941,49967,12,50053,50079,12,50165,50191,12,50277,50303,12,50389,50415,12,50501,50527,12,50613,50639,12,50725,50751,12,50837,50863,12,50949,50975,12,51061,51087,12,51173,51199,12,51285,51311,12,51397,51423,12,51509,51535,12,51621,51647,12,51733,51759,12,51845,51871,12,51957,51983,12,52069,52095,12,52181,52207,12,52293,52319,12,52405,52431,12,52517,52543,12,52629,52655,12,52741,52767,12,52853,52879,12,52965,52991,12,53077,53103,12,53189,53215,12,53301,53327,12,53413,53439,12,53525,53551,12,53637,53663,12,53749,53775,12,53861,53887,12,53973,53999,12,54085,54111,12,54197,54223,12,54309,54335,12,54421,54447,12,54533,54559,12,54645,54671,12,54757,54783,12,54869,54895,12,54981,55007,12,55093,55119,12,55243,55291,10,66045,66045,5,68325,68326,5,69688,69702,5,69817,69818,5,69957,69958,7,70089,70092,5,70198,70199,5,70462,70462,5,70502,70508,5,70750,70750,5,70846,70846,7,71100,71101,5,71230,71230,7,71351,71351,5,71737,71738,5,72000,72000,7,72160,72160,5,72273,72278,5,72752,72758,5,72882,72883,5,73031,73031,5,73461,73462,7,94192,94193,7,119149,119149,7,121403,121452,5,122915,122916,5,126980,126980,14,127358,127359,14,127535,127535,14,127759,127759,14,127771,127771,14,127792,127793,14,127825,127867,14,127897,127899,14,127945,127945,14,127985,127986,14,128000,128007,14,128021,128021,14,128066,128100,14,128184,128235,14,128249,128252,14,128266,128276,14,128335,128335,14,128379,128390,14,128407,128419,14,128444,128444,14,128481,128481,14,128499,128499,14,128526,128526,14,128536,128536,14,128543,128543,14,128556,128556,14,128564,128564,14,128577,128580,14,128643,128645,14,128649,128649,14,128654,128654,14,128660,128660,14,128664,128664,14,128675,128675,14,128686,128689,14,128695,128696,14,128705,128709,14,128717,128719,14,128725,128725,14,128736,128741,14,128747,128748,14,128755,128755,14,128762,128762,14,128981,128991,14,129009,129023,14,129160,129167,14,129296,129304,14,129320,129327,14,129340,129342,14,129356,129356,14,129388,129392,14,129399,129400,14,129404,129407,14,129432,129442,14,129454,129455,14,129473,129474,14,129485,129487,14,129648,129651,14,129659,129660,14,129671,129679,14,129709,129711,14,129728,129730,14,129751,129753,14,129776,129782,14,917505,917505,4,917760,917999,5,10,10,3,127,159,4,768,879,5,1471,1471,5,1536,1541,1,1648,1648,5,1767,1768,5,1840,1866,5,2070,2073,5,2137,2139,5,2274,2274,1,2363,2363,7,2377,2380,7,2402,2403,5,2494,2494,5,2507,2508,7,2558,2558,5,2622,2624,7,2641,2641,5,2691,2691,7,2759,2760,5,2786,2787,5,2876,2876,5,2881,2884,5,2901,2902,5,3006,3006,5,3014,3016,7,3072,3072,5,3134,3136,5,3157,3158,5,3260,3260,5,3266,3266,5,3274,3275,7,3328,3329,5,3391,3392,7,3405,3405,5,3457,3457,5,3536,3537,7,3551,3551,5,3636,3642,5,3764,3772,5,3895,3895,5,3967,3967,7,3993,4028,5,4146,4151,5,4182,4183,7,4226,4226,5,4253,4253,5,4957,4959,5,5940,5940,7,6070,6070,7,6087,6088,7,6158,6158,4,6432,6434,5,6448,6449,7,6679,6680,5,6742,6742,5,6754,6754,5,6783,6783,5,6912,6915,5,6966,6970,5,6978,6978,5,7042,7042,7,7080,7081,5,7143,7143,7,7150,7150,7,7212,7219,5,7380,7392,5,7412,7412,5,8203,8203,4,8232,8232,4,8265,8265,14,8400,8412,5,8421,8432,5,8617,8618,14,9167,9167,14,9200,9200,14,9410,9410,14,9723,9726,14,9733,9733,14,9745,9745,14,9752,9752,14,9760,9760,14,9766,9766,14,9774,9774,14,9786,9786,14,9794,9794,14,9823,9823,14,9828,9828,14,9833,9850,14,9855,9855,14,9875,9875,14,9880,9880,14,9885,9887,14,9896,9897,14,9906,9916,14,9926,9927,14,9935,9935,14,9939,9939,14,9962,9962,14,9972,9972,14,9978,9978,14,9986,9986,14,9997,9997,14,10002,10002,14,10017,10017,14,10055,10055,14,10071,10071,14,10133,10135,14,10548,10549,14,11093,11093,14,12330,12333,5,12441,12442,5,42608,42610,5,43010,43010,5,43045,43046,5,43188,43203,7,43302,43309,5,43392,43394,5,43446,43449,5,43493,43493,5,43571,43572,7,43597,43597,7,43703,43704,5,43756,43757,5,44003,44004,7,44009,44010,7,44033,44059,12,44089,44115,12,44145,44171,12,44201,44227,12,44257,44283,12,44313,44339,12,44369,44395,12,44425,44451,12,44481,44507,12,44537,44563,12,44593,44619,12,44649,44675,12,44705,44731,12,44761,44787,12,44817,44843,12,44873,44899,12,44929,44955,12,44985,45011,12,45041,45067,12,45097,45123,12,45153,45179,12,45209,45235,12,45265,45291,12,45321,45347,12,45377,45403,12,45433,45459,12,45489,45515,12,45545,45571,12,45601,45627,12,45657,45683,12,45713,45739,12,45769,45795,12,45825,45851,12,45881,45907,12,45937,45963,12,45993,46019,12,46049,46075,12,46105,46131,12,46161,46187,12,46217,46243,12,46273,46299,12,46329,46355,12,46385,46411,12,46441,46467,12,46497,46523,12,46553,46579,12,46609,46635,12,46665,46691,12,46721,46747,12,46777,46803,12,46833,46859,12,46889,46915,12,46945,46971,12,47001,47027,12,47057,47083,12,47113,47139,12,47169,47195,12,47225,47251,12,47281,47307,12,47337,47363,12,47393,47419,12,47449,47475,12,47505,47531,12,47561,47587,12,47617,47643,12,47673,47699,12,47729,47755,12,47785,47811,12,47841,47867,12,47897,47923,12,47953,47979,12,48009,48035,12,48065,48091,12,48121,48147,12,48177,48203,12,48233,48259,12,48289,48315,12,48345,48371,12,48401,48427,12,48457,48483,12,48513,48539,12,48569,48595,12,48625,48651,12,48681,48707,12,48737,48763,12,48793,48819,12,48849,48875,12,48905,48931,12,48961,48987,12,49017,49043,12,49073,49099,12,49129,49155,12,49185,49211,12,49241,49267,12,49297,49323,12,49353,49379,12,49409,49435,12,49465,49491,12,49521,49547,12,49577,49603,12,49633,49659,12,49689,49715,12,49745,49771,12,49801,49827,12,49857,49883,12,49913,49939,12,49969,49995,12,50025,50051,12,50081,50107,12,50137,50163,12,50193,50219,12,50249,50275,12,50305,50331,12,50361,50387,12,50417,50443,12,50473,50499,12,50529,50555,12,50585,50611,12,50641,50667,12,50697,50723,12,50753,50779,12,50809,50835,12,50865,50891,12,50921,50947,12,50977,51003,12,51033,51059,12,51089,51115,12,51145,51171,12,51201,51227,12,51257,51283,12,51313,51339,12,51369,51395,12,51425,51451,12,51481,51507,12,51537,51563,12,51593,51619,12,51649,51675,12,51705,51731,12,51761,51787,12,51817,51843,12,51873,51899,12,51929,51955,12,51985,52011,12,52041,52067,12,52097,52123,12,52153,52179,12,52209,52235,12,52265,52291,12,52321,52347,12,52377,52403,12,52433,52459,12,52489,52515,12,52545,52571,12,52601,52627,12,52657,52683,12,52713,52739,12,52769,52795,12,52825,52851,12,52881,52907,12,52937,52963,12,52993,53019,12,53049,53075,12,53105,53131,12,53161,53187,12,53217,53243,12,53273,53299,12,53329,53355,12,53385,53411,12,53441,53467,12,53497,53523,12,53553,53579,12,53609,53635,12,53665,53691,12,53721,53747,12,53777,53803,12,53833,53859,12,53889,53915,12,53945,53971,12,54001,54027,12,54057,54083,12,54113,54139,12,54169,54195,12,54225,54251,12,54281,54307,12,54337,54363,12,54393,54419,12,54449,54475,12,54505,54531,12,54561,54587,12,54617,54643,12,54673,54699,12,54729,54755,12,54785,54811,12,54841,54867,12,54897,54923,12,54953,54979,12,55009,55035,12,55065,55091,12,55121,55147,12,55177,55203,12,65024,65039,5,65520,65528,4,66422,66426,5,68152,68154,5,69291,69292,5,69633,69633,5,69747,69748,5,69811,69814,5,69826,69826,5,69932,69932,7,70016,70017,5,70079,70080,7,70095,70095,5,70196,70196,5,70367,70367,5,70402,70403,7,70464,70464,5,70487,70487,5,70709,70711,7,70725,70725,7,70833,70834,7,70843,70844,7,70849,70849,7,71090,71093,5,71103,71104,5,71227,71228,7,71339,71339,5,71344,71349,5,71458,71461,5,71727,71735,5,71985,71989,7,71998,71998,5,72002,72002,7,72154,72155,5,72193,72202,5,72251,72254,5,72281,72283,5,72344,72345,5,72766,72766,7,72874,72880,5,72885,72886,5,73023,73029,5,73104,73105,5,73111,73111,5,92912,92916,5,94095,94098,5,113824,113827,4,119142,119142,7,119155,119162,4,119362,119364,5,121476,121476,5,122888,122904,5,123184,123190,5,125252,125258,5,127183,127183,14,127340,127343,14,127377,127386,14,127491,127503,14,127548,127551,14,127744,127756,14,127761,127761,14,127769,127769,14,127773,127774,14,127780,127788,14,127796,127797,14,127820,127823,14,127869,127869,14,127894,127895,14,127902,127903,14,127943,127943,14,127947,127950,14,127972,127972,14,127988,127988,14,127992,127994,14,128009,128011,14,128019,128019,14,128023,128041,14,128064,128064,14,128102,128107,14,128174,128181,14,128238,128238,14,128246,128247,14,128254,128254,14,128264,128264,14,128278,128299,14,128329,128330,14,128348,128359,14,128371,128377,14,128392,128393,14,128401,128404,14,128421,128421,14,128433,128434,14,128450,128452,14,128476,128478,14,128483,128483,14,128495,128495,14,128506,128506,14,128519,128520,14,128528,128528,14,128534,128534,14,128538,128538,14,128540,128542,14,128544,128549,14,128552,128555,14,128557,128557,14,128560,128563,14,128565,128565,14,128567,128576,14,128581,128591,14,128641,128642,14,128646,128646,14,128648,128648,14,128650,128651,14,128653,128653,14,128655,128655,14,128657,128659,14,128661,128661,14,128663,128663,14,128665,128666,14,128674,128674,14,128676,128677,14,128679,128685,14,128690,128690,14,128694,128694,14,128697,128702,14,128704,128704,14,128710,128714,14,128716,128716,14,128720,128720,14,128723,128724,14,128726,128727,14,128733,128735,14,128742,128744,14,128746,128746,14,128749,128751,14,128753,128754,14,128756,128758,14,128761,128761,14,128763,128764,14,128884,128895,14,128992,129003,14,129008,129008,14,129036,129039,14,129114,129119,14,129198,129279,14,129293,129295,14,129305,129310,14,129312,129319,14,129328,129328,14,129331,129338,14,129343,129343,14,129351,129355,14,129357,129359,14,129375,129387,14,129393,129393,14,129395,129398,14,129401,129401,14,129403,129403,14,129408,129412,14,129426,129431,14,129443,129444,14,129451,129453,14,129456,129465,14,129472,129472,14,129475,129482,14,129484,129484,14,129488,129510,14,129536,129647,14,129652,129652,14,129656,129658,14,129661,129663,14,129667,129670,14,129680,129685,14,129705,129708,14,129712,129718,14,129723,129727,14,129731,129733,14,129744,129750,14,129754,129759,14,129768,129775,14,129783,129791,14,917504,917504,4,917506,917535,4,917632,917759,4,918000,921599,4,0,9,4,11,12,4,14,31,4,169,169,14,174,174,14,1155,1159,5,1425,1469,5,1473,1474,5,1479,1479,5,1552,1562,5,1611,1631,5,1750,1756,5,1759,1764,5,1770,1773,5,1809,1809,5,1958,1968,5,2045,2045,5,2075,2083,5,2089,2093,5,2192,2193,1,2250,2273,5,2275,2306,5,2362,2362,5,2364,2364,5,2369,2376,5,2381,2381,5,2385,2391,5,2433,2433,5,2492,2492,5,2495,2496,7,2503,2504,7,2509,2509,5,2530,2531,5,2561,2562,5,2620,2620,5,2625,2626,5,2635,2637,5,2672,2673,5,2689,2690,5,2748,2748,5,2753,2757,5,2761,2761,7,2765,2765,5,2810,2815,5,2818,2819,7,2878,2878,5,2880,2880,7,2887,2888,7,2893,2893,5,2903,2903,5,2946,2946,5,3007,3007,7,3009,3010,7,3018,3020,7,3031,3031,5,3073,3075,7,3132,3132,5,3137,3140,7,3146,3149,5,3170,3171,5,3202,3203,7,3262,3262,7,3264,3265,7,3267,3268,7,3271,3272,7,3276,3277,5,3298,3299,5,3330,3331,7,3390,3390,5,3393,3396,5,3402,3404,7,3406,3406,1,3426,3427,5,3458,3459,7,3535,3535,5,3538,3540,5,3544,3550,7,3570,3571,7,3635,3635,7,3655,3662,5,3763,3763,7,3784,3789,5,3893,3893,5,3897,3897,5,3953,3966,5,3968,3972,5,3981,3991,5,4038,4038,5,4145,4145,7,4153,4154,5,4157,4158,5,4184,4185,5,4209,4212,5,4228,4228,7,4237,4237,5,4352,4447,8,4520,4607,10,5906,5908,5,5938,5939,5,5970,5971,5,6068,6069,5,6071,6077,5,6086,6086,5,6089,6099,5,6155,6157,5,6159,6159,5,6313,6313,5,6435,6438,7,6441,6443,7,6450,6450,5,6457,6459,5,6681,6682,7,6741,6741,7,6743,6743,7,6752,6752,5,6757,6764,5,6771,6780,5,6832,6845,5,6847,6862,5,6916,6916,7,6965,6965,5,6971,6971,7,6973,6977,7,6979,6980,7,7040,7041,5,7073,7073,7,7078,7079,7,7082,7082,7,7142,7142,5,7144,7145,5,7149,7149,5,7151,7153,5,7204,7211,7,7220,7221,7,7376,7378,5,7393,7393,7,7405,7405,5,7415,7415,7,7616,7679,5,8204,8204,5,8206,8207,4,8233,8233,4,8252,8252,14,8288,8292,4,8294,8303,4,8413,8416,5,8418,8420,5,8482,8482,14,8596,8601,14,8986,8987,14,9096,9096,14,9193,9196,14,9199,9199,14,9201,9202,14,9208,9210,14,9642,9643,14,9664,9664,14,9728,9729,14,9732,9732,14,9735,9741,14,9743,9744,14,9746,9746,14,9750,9751,14,9753,9756,14,9758,9759,14,9761,9761,14,9764,9765,14,9767,9769,14,9771,9773,14,9775,9775,14,9784,9785,14,9787,9791,14,9793,9793,14,9795,9799,14,9812,9822,14,9824,9824,14,9827,9827,14,9829,9830,14,9832,9832,14,9851,9851,14,9854,9854,14,9856,9861,14,9874,9874,14,9876,9876,14,9878,9879,14,9881,9881,14,9883,9884,14,9888,9889,14,9895,9895,14,9898,9899,14,9904,9905,14,9917,9918,14,9924,9925,14,9928,9928,14,9934,9934,14,9936,9936,14,9938,9938,14,9940,9940,14,9961,9961,14,9963,9967,14,9970,9971,14,9973,9973,14,9975,9977,14,9979,9980,14,9982,9985,14,9987,9988,14,9992,9996,14,9998,9998,14,10000,10001,14,10004,10004,14,10013,10013,14,10024,10024,14,10052,10052,14,10060,10060,14,10067,10069,14,10083,10083,14,10085,10087,14,10145,10145,14,10175,10175,14,11013,11015,14,11088,11088,14,11503,11505,5,11744,11775,5,12334,12335,5,12349,12349,14,12951,12951,14,42607,42607,5,42612,42621,5,42736,42737,5,43014,43014,5,43043,43044,7,43047,43047,7,43136,43137,7,43204,43205,5,43263,43263,5,43335,43345,5,43360,43388,8,43395,43395,7,43444,43445,7,43450,43451,7,43454,43456,7,43561,43566,5,43569,43570,5,43573,43574,5,43596,43596,5,43644,43644,5,43698,43700,5,43710,43711,5,43755,43755,7,43758,43759,7,43766,43766,5,44005,44005,5,44008,44008,5,44012,44012,7,44032,44032,11,44060,44060,11,44088,44088,11,44116,44116,11,44144,44144,11,44172,44172,11,44200,44200,11,44228,44228,11,44256,44256,11,44284,44284,11,44312,44312,11,44340,44340,11,44368,44368,11,44396,44396,11,44424,44424,11,44452,44452,11,44480,44480,11,44508,44508,11,44536,44536,11,44564,44564,11,44592,44592,11,44620,44620,11,44648,44648,11,44676,44676,11,44704,44704,11,44732,44732,11,44760,44760,11,44788,44788,11,44816,44816,11,44844,44844,11,44872,44872,11,44900,44900,11,44928,44928,11,44956,44956,11,44984,44984,11,45012,45012,11,45040,45040,11,45068,45068,11,45096,45096,11,45124,45124,11,45152,45152,11,45180,45180,11,45208,45208,11,45236,45236,11,45264,45264,11,45292,45292,11,45320,45320,11,45348,45348,11,45376,45376,11,45404,45404,11,45432,45432,11,45460,45460,11,45488,45488,11,45516,45516,11,45544,45544,11,45572,45572,11,45600,45600,11,45628,45628,11,45656,45656,11,45684,45684,11,45712,45712,11,45740,45740,11,45768,45768,11,45796,45796,11,45824,45824,11,45852,45852,11,45880,45880,11,45908,45908,11,45936,45936,11,45964,45964,11,45992,45992,11,46020,46020,11,46048,46048,11,46076,46076,11,46104,46104,11,46132,46132,11,46160,46160,11,46188,46188,11,46216,46216,11,46244,46244,11,46272,46272,11,46300,46300,11,46328,46328,11,46356,46356,11,46384,46384,11,46412,46412,11,46440,46440,11,46468,46468,11,46496,46496,11,46524,46524,11,46552,46552,11,46580,46580,11,46608,46608,11,46636,46636,11,46664,46664,11,46692,46692,11,46720,46720,11,46748,46748,11,46776,46776,11,46804,46804,11,46832,46832,11,46860,46860,11,46888,46888,11,46916,46916,11,46944,46944,11,46972,46972,11,47000,47000,11,47028,47028,11,47056,47056,11,47084,47084,11,47112,47112,11,47140,47140,11,47168,47168,11,47196,47196,11,47224,47224,11,47252,47252,11,47280,47280,11,47308,47308,11,47336,47336,11,47364,47364,11,47392,47392,11,47420,47420,11,47448,47448,11,47476,47476,11,47504,47504,11,47532,47532,11,47560,47560,11,47588,47588,11,47616,47616,11,47644,47644,11,47672,47672,11,47700,47700,11,47728,47728,11,47756,47756,11,47784,47784,11,47812,47812,11,47840,47840,11,47868,47868,11,47896,47896,11,47924,47924,11,47952,47952,11,47980,47980,11,48008,48008,11,48036,48036,11,48064,48064,11,48092,48092,11,48120,48120,11,48148,48148,11,48176,48176,11,48204,48204,11,48232,48232,11,48260,48260,11,48288,48288,11,48316,48316,11,48344,48344,11,48372,48372,11,48400,48400,11,48428,48428,11,48456,48456,11,48484,48484,11,48512,48512,11,48540,48540,11,48568,48568,11,48596,48596,11,48624,48624,11,48652,48652,11,48680,48680,11,48708,48708,11,48736,48736,11,48764,48764,11,48792,48792,11,48820,48820,11,48848,48848,11,48876,48876,11,48904,48904,11,48932,48932,11,48960,48960,11,48988,48988,11,49016,49016,11,49044,49044,11,49072,49072,11,49100,49100,11,49128,49128,11,49156,49156,11,49184,49184,11,49212,49212,11,49240,49240,11,49268,49268,11,49296,49296,11,49324,49324,11,49352,49352,11,49380,49380,11,49408,49408,11,49436,49436,11,49464,49464,11,49492,49492,11,49520,49520,11,49548,49548,11,49576,49576,11,49604,49604,11,49632,49632,11,49660,49660,11,49688,49688,11,49716,49716,11,49744,49744,11,49772,49772,11,49800,49800,11,49828,49828,11,49856,49856,11,49884,49884,11,49912,49912,11,49940,49940,11,49968,49968,11,49996,49996,11,50024,50024,11,50052,50052,11,50080,50080,11,50108,50108,11,50136,50136,11,50164,50164,11,50192,50192,11,50220,50220,11,50248,50248,11,50276,50276,11,50304,50304,11,50332,50332,11,50360,50360,11,50388,50388,11,50416,50416,11,50444,50444,11,50472,50472,11,50500,50500,11,50528,50528,11,50556,50556,11,50584,50584,11,50612,50612,11,50640,50640,11,50668,50668,11,50696,50696,11,50724,50724,11,50752,50752,11,50780,50780,11,50808,50808,11,50836,50836,11,50864,50864,11,50892,50892,11,50920,50920,11,50948,50948,11,50976,50976,11,51004,51004,11,51032,51032,11,51060,51060,11,51088,51088,11,51116,51116,11,51144,51144,11,51172,51172,11,51200,51200,11,51228,51228,11,51256,51256,11,51284,51284,11,51312,51312,11,51340,51340,11,51368,51368,11,51396,51396,11,51424,51424,11,51452,51452,11,51480,51480,11,51508,51508,11,51536,51536,11,51564,51564,11,51592,51592,11,51620,51620,11,51648,51648,11,51676,51676,11,51704,51704,11,51732,51732,11,51760,51760,11,51788,51788,11,51816,51816,11,51844,51844,11,51872,51872,11,51900,51900,11,51928,51928,11,51956,51956,11,51984,51984,11,52012,52012,11,52040,52040,11,52068,52068,11,52096,52096,11,52124,52124,11,52152,52152,11,52180,52180,11,52208,52208,11,52236,52236,11,52264,52264,11,52292,52292,11,52320,52320,11,52348,52348,11,52376,52376,11,52404,52404,11,52432,52432,11,52460,52460,11,52488,52488,11,52516,52516,11,52544,52544,11,52572,52572,11,52600,52600,11,52628,52628,11,52656,52656,11,52684,52684,11,52712,52712,11,52740,52740,11,52768,52768,11,52796,52796,11,52824,52824,11,52852,52852,11,52880,52880,11,52908,52908,11,52936,52936,11,52964,52964,11,52992,52992,11,53020,53020,11,53048,53048,11,53076,53076,11,53104,53104,11,53132,53132,11,53160,53160,11,53188,53188,11,53216,53216,11,53244,53244,11,53272,53272,11,53300,53300,11,53328,53328,11,53356,53356,11,53384,53384,11,53412,53412,11,53440,53440,11,53468,53468,11,53496,53496,11,53524,53524,11,53552,53552,11,53580,53580,11,53608,53608,11,53636,53636,11,53664,53664,11,53692,53692,11,53720,53720,11,53748,53748,11,53776,53776,11,53804,53804,11,53832,53832,11,53860,53860,11,53888,53888,11,53916,53916,11,53944,53944,11,53972,53972,11,54000,54000,11,54028,54028,11,54056,54056,11,54084,54084,11,54112,54112,11,54140,54140,11,54168,54168,11,54196,54196,11,54224,54224,11,54252,54252,11,54280,54280,11,54308,54308,11,54336,54336,11,54364,54364,11,54392,54392,11,54420,54420,11,54448,54448,11,54476,54476,11,54504,54504,11,54532,54532,11,54560,54560,11,54588,54588,11,54616,54616,11,54644,54644,11,54672,54672,11,54700,54700,11,54728,54728,11,54756,54756,11,54784,54784,11,54812,54812,11,54840,54840,11,54868,54868,11,54896,54896,11,54924,54924,11,54952,54952,11,54980,54980,11,55008,55008,11,55036,55036,11,55064,55064,11,55092,55092,11,55120,55120,11,55148,55148,11,55176,55176,11,55216,55238,9,64286,64286,5,65056,65071,5,65438,65439,5,65529,65531,4,66272,66272,5,68097,68099,5,68108,68111,5,68159,68159,5,68900,68903,5,69446,69456,5,69632,69632,7,69634,69634,7,69744,69744,5,69759,69761,5,69808,69810,7,69815,69816,7,69821,69821,1,69837,69837,1,69927,69931,5,69933,69940,5,70003,70003,5,70018,70018,7,70070,70078,5,70082,70083,1,70094,70094,7,70188,70190,7,70194,70195,7,70197,70197,7,70206,70206,5,70368,70370,7,70400,70401,5,70459,70460,5,70463,70463,7,70465,70468,7,70475,70477,7,70498,70499,7,70512,70516,5,70712,70719,5,70722,70724,5,70726,70726,5,70832,70832,5,70835,70840,5,70842,70842,5,70845,70845,5,70847,70848,5,70850,70851,5,71088,71089,7,71096,71099,7,71102,71102,7,71132,71133,5,71219,71226,5,71229,71229,5,71231,71232,5,71340,71340,7,71342,71343,7,71350,71350,7,71453,71455,5,71462,71462,7,71724,71726,7,71736,71736,7,71984,71984,5,71991,71992,7,71997,71997,7,71999,71999,1,72001,72001,1,72003,72003,5,72148,72151,5,72156,72159,7,72164,72164,7,72243,72248,5,72250,72250,1,72263,72263,5,72279,72280,7,72324,72329,1,72343,72343,7,72751,72751,7,72760,72765,5,72767,72767,5,72873,72873,7,72881,72881,7,72884,72884,7,73009,73014,5,73020,73021,5,73030,73030,1,73098,73102,7,73107,73108,7,73110,73110,7,73459,73460,5,78896,78904,4,92976,92982,5,94033,94087,7,94180,94180,5,113821,113822,5,118528,118573,5,119141,119141,5,119143,119145,5,119150,119154,5,119163,119170,5,119210,119213,5,121344,121398,5,121461,121461,5,121499,121503,5,122880,122886,5,122907,122913,5,122918,122922,5,123566,123566,5,125136,125142,5,126976,126979,14,126981,127182,14,127184,127231,14,127279,127279,14,127344,127345,14,127374,127374,14,127405,127461,14,127489,127490,14,127514,127514,14,127538,127546,14,127561,127567,14,127570,127743,14,127757,127758,14,127760,127760,14,127762,127762,14,127766,127768,14,127770,127770,14,127772,127772,14,127775,127776,14,127778,127779,14,127789,127791,14,127794,127795,14,127798,127798,14,127819,127819,14,127824,127824,14,127868,127868,14,127870,127871,14,127892,127893,14,127896,127896,14,127900,127901,14,127904,127940,14,127942,127942,14,127944,127944,14,127946,127946,14,127951,127955,14,127968,127971,14,127973,127984,14,127987,127987,14,127989,127989,14,127991,127991,14,127995,127999,5,128008,128008,14,128012,128014,14,128017,128018,14,128020,128020,14,128022,128022,14,128042,128042,14,128063,128063,14,128065,128065,14,128101,128101,14,128108,128109,14,128173,128173,14,128182,128183,14,128236,128237,14,128239,128239,14,128245,128245,14,128248,128248,14,128253,128253,14,128255,128258,14,128260,128263,14,128265,128265,14,128277,128277,14,128300,128301,14,128326,128328,14,128331,128334,14,128336,128347,14,128360,128366,14,128369,128370,14,128378,128378,14,128391,128391,14,128394,128397,14,128400,128400,14,128405,128406,14,128420,128420,14,128422,128423,14,128425,128432,14,128435,128443,14,128445,128449,14,128453,128464,14,128468,128475,14,128479,128480,14,128482,128482,14,128484,128487,14,128489,128494,14,128496,128498,14,128500,128505,14,128507,128511,14,128513,128518,14,128521,128525,14,128527,128527,14,128529,128529,14,128533,128533,14,128535,128535,14,128537,128537,14]")
 }
-var Ns, Fs, $s, Uo, qo, Ms, Vo, js, zo, Bo, Ue = x({
+var Ns, Fs, $s, qo, Vo, Ms, zo, js, Bo, Ho, Ue = P({
     "out-build/vs/base/common/strings.js"() {
         "use strict";
-        Fo(), dt(), $o(), Ns = /(?:\x1b\[|\x9b)[=?>!]?[\d;:]*["$#'* ]?[a-zA-Z@^`{}|~]/, Fs = /(?:\x1b\]|\x9d).*?(?:\x1b\\|\x07|\x9c)/, $s = /\x1b(?:[ #%\(\)\*\+\-\.\/]?[a-zA-Z0-9\|}~@])/, Uo = new RegExp("(?:" + [Ns.source, Fs.source, $s.source].join("|") + ")", "g"), qo = "\uFEFF", (function(e) {
+        Fo(), pt(), $o(), Ns = /(?:\x1b\[|\x9b)[=?>!]?[\d;:]*["$#'* ]?[a-zA-Z@^`{}|~]/, Fs = /(?:\x1b\]|\x9d).*?(?:\x1b\\|\x07|\x9c)/, $s = /\x1b(?:[ #%\(\)\*\+\-\.\/]?[a-zA-Z0-9\|}~@])/, qo = new RegExp("(?:" + [Ns.source, Fs.source, $s.source].join("|") + ")", "g"), Vo = "\uFEFF", (function(e) {
             e[e.Other = 0] = "Other", e[e.Prepend = 1] = "Prepend", e[e.CR = 2] = "CR", e[e.LF = 3] = "LF", e[e.Control = 4] = "Control", e[e.Extend = 5] = "Extend", e[e.Regional_Indicator = 6] = "Regional_Indicator", e[e.SpacingMark = 7] = "SpacingMark", e[e.L = 8] = "L", e[e.V = 9] = "V", e[e.T = 10] = "T", e[e.LV = 11] = "LV", e[e.LVT = 12] = "LVT", e[e.ZWJ = 13] = "ZWJ", e[e.Extended_Pictographic = 14] = "Extended_Pictographic"
-        })(Ms || (Ms = {})), Vo = class Lt {
+        })(Ms || (Ms = {})), zo = class Lt {
             static {
                 this._INSTANCE = null
             }
@@ -3048,7 +3054,7 @@ var Ns, Fs, $s, Uo, qo, Ms, Vo, js, zo, Bo, Ue = x({
                 return Lt._INSTANCE || (Lt._INSTANCE = new Lt), Lt._INSTANCE
             }
             constructor() {
-                this._data = Wo()
+                this._data = Uo()
             }
             getGraphemeBreakType(t) {
                 if (t < 32) return t === 10 ? 3 : t === 13 ? 2 : 4;
@@ -3064,12 +3070,12 @@ var Ns, Fs, $s, Uo, qo, Ms, Vo, js, zo, Bo, Ue = x({
             }
         }, (function(e) {
             e[e.zwj = 8205] = "zwj", e[e.emojiVariantSelector = 65039] = "emojiVariantSelector", e[e.enclosingKeyCap = 8419] = "enclosingKeyCap", e[e.space = 32] = "space"
-        })(js || (js = {})), zo = class St {
+        })(js || (js = {})), Bo = class St {
             static {
                 this.ambiguousCharacterData = new Oe(() => JSON.parse('{"_common":[8232,32,8233,32,5760,32,8192,32,8193,32,8194,32,8195,32,8196,32,8197,32,8198,32,8200,32,8201,32,8202,32,8287,32,8199,32,8239,32,2042,95,65101,95,65102,95,65103,95,8208,45,8209,45,8210,45,65112,45,1748,45,8259,45,727,45,8722,45,10134,45,11450,45,1549,44,1643,44,184,44,42233,44,894,59,2307,58,2691,58,1417,58,1795,58,1796,58,5868,58,65072,58,6147,58,6153,58,8282,58,1475,58,760,58,42889,58,8758,58,720,58,42237,58,451,33,11601,33,660,63,577,63,2429,63,5038,63,42731,63,119149,46,8228,46,1793,46,1794,46,42510,46,68176,46,1632,46,1776,46,42232,46,1373,96,65287,96,8219,96,1523,96,8242,96,1370,96,8175,96,65344,96,900,96,8189,96,8125,96,8127,96,8190,96,697,96,884,96,712,96,714,96,715,96,756,96,699,96,701,96,700,96,702,96,42892,96,1497,96,2036,96,2037,96,5194,96,5836,96,94033,96,94034,96,65339,91,10088,40,10098,40,12308,40,64830,40,65341,93,10089,41,10099,41,12309,41,64831,41,10100,123,119060,123,10101,125,65342,94,8270,42,1645,42,8727,42,66335,42,5941,47,8257,47,8725,47,8260,47,9585,47,10187,47,10744,47,119354,47,12755,47,12339,47,11462,47,20031,47,12035,47,65340,92,65128,92,8726,92,10189,92,10741,92,10745,92,119311,92,119355,92,12756,92,20022,92,12034,92,42872,38,708,94,710,94,5869,43,10133,43,66203,43,8249,60,10094,60,706,60,119350,60,5176,60,5810,60,5120,61,11840,61,12448,61,42239,61,8250,62,10095,62,707,62,119351,62,5171,62,94015,62,8275,126,732,126,8128,126,8764,126,65372,124,65293,45,118002,50,120784,50,120794,50,120804,50,120814,50,120824,50,130034,50,42842,50,423,50,1000,50,42564,50,5311,50,42735,50,119302,51,118003,51,120785,51,120795,51,120805,51,120815,51,120825,51,130035,51,42923,51,540,51,439,51,42858,51,11468,51,1248,51,94011,51,71882,51,118004,52,120786,52,120796,52,120806,52,120816,52,120826,52,130036,52,5070,52,71855,52,118005,53,120787,53,120797,53,120807,53,120817,53,120827,53,130037,53,444,53,71867,53,118006,54,120788,54,120798,54,120808,54,120818,54,120828,54,130038,54,11474,54,5102,54,71893,54,119314,55,118007,55,120789,55,120799,55,120809,55,120819,55,120829,55,130039,55,66770,55,71878,55,2819,56,2538,56,2666,56,125131,56,118008,56,120790,56,120800,56,120810,56,120820,56,120830,56,130040,56,547,56,546,56,66330,56,2663,57,2920,57,2541,57,3437,57,118009,57,120791,57,120801,57,120811,57,120821,57,120831,57,130041,57,42862,57,11466,57,71884,57,71852,57,71894,57,9082,97,65345,97,119834,97,119886,97,119938,97,119990,97,120042,97,120094,97,120146,97,120198,97,120250,97,120302,97,120354,97,120406,97,120458,97,593,97,945,97,120514,97,120572,97,120630,97,120688,97,120746,97,65313,65,117974,65,119808,65,119860,65,119912,65,119964,65,120016,65,120068,65,120120,65,120172,65,120224,65,120276,65,120328,65,120380,65,120432,65,913,65,120488,65,120546,65,120604,65,120662,65,120720,65,5034,65,5573,65,42222,65,94016,65,66208,65,119835,98,119887,98,119939,98,119991,98,120043,98,120095,98,120147,98,120199,98,120251,98,120303,98,120355,98,120407,98,120459,98,388,98,5071,98,5234,98,5551,98,65314,66,8492,66,117975,66,119809,66,119861,66,119913,66,120017,66,120069,66,120121,66,120173,66,120225,66,120277,66,120329,66,120381,66,120433,66,42932,66,914,66,120489,66,120547,66,120605,66,120663,66,120721,66,5108,66,5623,66,42192,66,66178,66,66209,66,66305,66,65347,99,8573,99,119836,99,119888,99,119940,99,119992,99,120044,99,120096,99,120148,99,120200,99,120252,99,120304,99,120356,99,120408,99,120460,99,7428,99,1010,99,11429,99,43951,99,66621,99,128844,67,71913,67,71922,67,65315,67,8557,67,8450,67,8493,67,117976,67,119810,67,119862,67,119914,67,119966,67,120018,67,120174,67,120226,67,120278,67,120330,67,120382,67,120434,67,1017,67,11428,67,5087,67,42202,67,66210,67,66306,67,66581,67,66844,67,8574,100,8518,100,119837,100,119889,100,119941,100,119993,100,120045,100,120097,100,120149,100,120201,100,120253,100,120305,100,120357,100,120409,100,120461,100,1281,100,5095,100,5231,100,42194,100,8558,68,8517,68,117977,68,119811,68,119863,68,119915,68,119967,68,120019,68,120071,68,120123,68,120175,68,120227,68,120279,68,120331,68,120383,68,120435,68,5024,68,5598,68,5610,68,42195,68,8494,101,65349,101,8495,101,8519,101,119838,101,119890,101,119942,101,120046,101,120098,101,120150,101,120202,101,120254,101,120306,101,120358,101,120410,101,120462,101,43826,101,1213,101,8959,69,65317,69,8496,69,117978,69,119812,69,119864,69,119916,69,120020,69,120072,69,120124,69,120176,69,120228,69,120280,69,120332,69,120384,69,120436,69,917,69,120492,69,120550,69,120608,69,120666,69,120724,69,11577,69,5036,69,42224,69,71846,69,71854,69,66182,69,119839,102,119891,102,119943,102,119995,102,120047,102,120099,102,120151,102,120203,102,120255,102,120307,102,120359,102,120411,102,120463,102,43829,102,42905,102,383,102,7837,102,1412,102,119315,70,8497,70,117979,70,119813,70,119865,70,119917,70,120021,70,120073,70,120125,70,120177,70,120229,70,120281,70,120333,70,120385,70,120437,70,42904,70,988,70,120778,70,5556,70,42205,70,71874,70,71842,70,66183,70,66213,70,66853,70,65351,103,8458,103,119840,103,119892,103,119944,103,120048,103,120100,103,120152,103,120204,103,120256,103,120308,103,120360,103,120412,103,120464,103,609,103,7555,103,397,103,1409,103,117980,71,119814,71,119866,71,119918,71,119970,71,120022,71,120074,71,120126,71,120178,71,120230,71,120282,71,120334,71,120386,71,120438,71,1292,71,5056,71,5107,71,42198,71,65352,104,8462,104,119841,104,119945,104,119997,104,120049,104,120101,104,120153,104,120205,104,120257,104,120309,104,120361,104,120413,104,120465,104,1211,104,1392,104,5058,104,65320,72,8459,72,8460,72,8461,72,117981,72,119815,72,119867,72,119919,72,120023,72,120179,72,120231,72,120283,72,120335,72,120387,72,120439,72,919,72,120494,72,120552,72,120610,72,120668,72,120726,72,11406,72,5051,72,5500,72,42215,72,66255,72,731,105,9075,105,65353,105,8560,105,8505,105,8520,105,119842,105,119894,105,119946,105,119998,105,120050,105,120102,105,120154,105,120206,105,120258,105,120310,105,120362,105,120414,105,120466,105,120484,105,618,105,617,105,953,105,8126,105,890,105,120522,105,120580,105,120638,105,120696,105,120754,105,1110,105,42567,105,1231,105,43893,105,5029,105,71875,105,65354,106,8521,106,119843,106,119895,106,119947,106,119999,106,120051,106,120103,106,120155,106,120207,106,120259,106,120311,106,120363,106,120415,106,120467,106,1011,106,1112,106,65322,74,117983,74,119817,74,119869,74,119921,74,119973,74,120025,74,120077,74,120129,74,120181,74,120233,74,120285,74,120337,74,120389,74,120441,74,42930,74,895,74,1032,74,5035,74,5261,74,42201,74,119844,107,119896,107,119948,107,120000,107,120052,107,120104,107,120156,107,120208,107,120260,107,120312,107,120364,107,120416,107,120468,107,8490,75,65323,75,117984,75,119818,75,119870,75,119922,75,119974,75,120026,75,120078,75,120130,75,120182,75,120234,75,120286,75,120338,75,120390,75,120442,75,922,75,120497,75,120555,75,120613,75,120671,75,120729,75,11412,75,5094,75,5845,75,42199,75,66840,75,1472,108,8739,73,9213,73,65512,73,1633,108,1777,73,66336,108,125127,108,118001,108,120783,73,120793,73,120803,73,120813,73,120823,73,130033,73,65321,73,8544,73,8464,73,8465,73,117982,108,119816,73,119868,73,119920,73,120024,73,120128,73,120180,73,120232,73,120284,73,120336,73,120388,73,120440,73,65356,108,8572,73,8467,108,119845,108,119897,108,119949,108,120001,108,120053,108,120105,73,120157,73,120209,73,120261,73,120313,73,120365,73,120417,73,120469,73,448,73,120496,73,120554,73,120612,73,120670,73,120728,73,11410,73,1030,73,1216,73,1493,108,1503,108,1575,108,126464,108,126592,108,65166,108,65165,108,1994,108,11599,73,5825,73,42226,73,93992,73,66186,124,66313,124,119338,76,8556,76,8466,76,117985,76,119819,76,119871,76,119923,76,120027,76,120079,76,120131,76,120183,76,120235,76,120287,76,120339,76,120391,76,120443,76,11472,76,5086,76,5290,76,42209,76,93974,76,71843,76,71858,76,66587,76,66854,76,65325,77,8559,77,8499,77,117986,77,119820,77,119872,77,119924,77,120028,77,120080,77,120132,77,120184,77,120236,77,120288,77,120340,77,120392,77,120444,77,924,77,120499,77,120557,77,120615,77,120673,77,120731,77,1018,77,11416,77,5047,77,5616,77,5846,77,42207,77,66224,77,66321,77,119847,110,119899,110,119951,110,120003,110,120055,110,120107,110,120159,110,120211,110,120263,110,120315,110,120367,110,120419,110,120471,110,1400,110,1404,110,65326,78,8469,78,117987,78,119821,78,119873,78,119925,78,119977,78,120029,78,120081,78,120185,78,120237,78,120289,78,120341,78,120393,78,120445,78,925,78,120500,78,120558,78,120616,78,120674,78,120732,78,11418,78,42208,78,66835,78,3074,111,3202,111,3330,111,3458,111,2406,111,2662,111,2790,111,3046,111,3174,111,3302,111,3430,111,3664,111,3792,111,4160,111,1637,111,1781,111,65359,111,8500,111,119848,111,119900,111,119952,111,120056,111,120108,111,120160,111,120212,111,120264,111,120316,111,120368,111,120420,111,120472,111,7439,111,7441,111,43837,111,959,111,120528,111,120586,111,120644,111,120702,111,120760,111,963,111,120532,111,120590,111,120648,111,120706,111,120764,111,11423,111,4351,111,1413,111,1505,111,1607,111,126500,111,126564,111,126596,111,65259,111,65260,111,65258,111,65257,111,1726,111,64428,111,64429,111,64427,111,64426,111,1729,111,64424,111,64425,111,64423,111,64422,111,1749,111,3360,111,4125,111,66794,111,71880,111,71895,111,66604,111,1984,79,2534,79,2918,79,12295,79,70864,79,71904,79,118000,79,120782,79,120792,79,120802,79,120812,79,120822,79,130032,79,65327,79,117988,79,119822,79,119874,79,119926,79,119978,79,120030,79,120082,79,120134,79,120186,79,120238,79,120290,79,120342,79,120394,79,120446,79,927,79,120502,79,120560,79,120618,79,120676,79,120734,79,11422,79,1365,79,11604,79,4816,79,2848,79,66754,79,42227,79,71861,79,66194,79,66219,79,66564,79,66838,79,9076,112,65360,112,119849,112,119901,112,119953,112,120005,112,120057,112,120109,112,120161,112,120213,112,120265,112,120317,112,120369,112,120421,112,120473,112,961,112,120530,112,120544,112,120588,112,120602,112,120646,112,120660,112,120704,112,120718,112,120762,112,120776,112,11427,112,65328,80,8473,80,117989,80,119823,80,119875,80,119927,80,119979,80,120031,80,120083,80,120187,80,120239,80,120291,80,120343,80,120395,80,120447,80,929,80,120504,80,120562,80,120620,80,120678,80,120736,80,11426,80,5090,80,5229,80,42193,80,66197,80,119850,113,119902,113,119954,113,120006,113,120058,113,120110,113,120162,113,120214,113,120266,113,120318,113,120370,113,120422,113,120474,113,1307,113,1379,113,1382,113,8474,81,117990,81,119824,81,119876,81,119928,81,119980,81,120032,81,120084,81,120188,81,120240,81,120292,81,120344,81,120396,81,120448,81,11605,81,119851,114,119903,114,119955,114,120007,114,120059,114,120111,114,120163,114,120215,114,120267,114,120319,114,120371,114,120423,114,120475,114,43847,114,43848,114,7462,114,11397,114,43905,114,119318,82,8475,82,8476,82,8477,82,117991,82,119825,82,119877,82,119929,82,120033,82,120189,82,120241,82,120293,82,120345,82,120397,82,120449,82,422,82,5025,82,5074,82,66740,82,5511,82,42211,82,94005,82,65363,115,119852,115,119904,115,119956,115,120008,115,120060,115,120112,115,120164,115,120216,115,120268,115,120320,115,120372,115,120424,115,120476,115,42801,115,445,115,1109,115,43946,115,71873,115,66632,115,65331,83,117992,83,119826,83,119878,83,119930,83,119982,83,120034,83,120086,83,120138,83,120190,83,120242,83,120294,83,120346,83,120398,83,120450,83,1029,83,1359,83,5077,83,5082,83,42210,83,94010,83,66198,83,66592,83,119853,116,119905,116,119957,116,120009,116,120061,116,120113,116,120165,116,120217,116,120269,116,120321,116,120373,116,120425,116,120477,116,8868,84,10201,84,128872,84,65332,84,117993,84,119827,84,119879,84,119931,84,119983,84,120035,84,120087,84,120139,84,120191,84,120243,84,120295,84,120347,84,120399,84,120451,84,932,84,120507,84,120565,84,120623,84,120681,84,120739,84,11430,84,5026,84,42196,84,93962,84,71868,84,66199,84,66225,84,66325,84,119854,117,119906,117,119958,117,120010,117,120062,117,120114,117,120166,117,120218,117,120270,117,120322,117,120374,117,120426,117,120478,117,42911,117,7452,117,43854,117,43858,117,651,117,965,117,120534,117,120592,117,120650,117,120708,117,120766,117,1405,117,66806,117,71896,117,8746,85,8899,85,117994,85,119828,85,119880,85,119932,85,119984,85,120036,85,120088,85,120140,85,120192,85,120244,85,120296,85,120348,85,120400,85,120452,85,1357,85,4608,85,66766,85,5196,85,42228,85,94018,85,71864,85,8744,118,8897,118,65366,118,8564,118,119855,118,119907,118,119959,118,120011,118,120063,118,120115,118,120167,118,120219,118,120271,118,120323,118,120375,118,120427,118,120479,118,7456,118,957,118,120526,118,120584,118,120642,118,120700,118,120758,118,1141,118,1496,118,71430,118,43945,118,71872,118,119309,86,1639,86,1783,86,8548,86,117995,86,119829,86,119881,86,119933,86,119985,86,120037,86,120089,86,120141,86,120193,86,120245,86,120297,86,120349,86,120401,86,120453,86,1140,86,11576,86,5081,86,5167,86,42719,86,42214,86,93960,86,71840,86,66845,86,623,119,119856,119,119908,119,119960,119,120012,119,120064,119,120116,119,120168,119,120220,119,120272,119,120324,119,120376,119,120428,119,120480,119,7457,119,1121,119,1309,119,1377,119,71434,119,71438,119,71439,119,43907,119,71910,87,71919,87,117996,87,119830,87,119882,87,119934,87,119986,87,120038,87,120090,87,120142,87,120194,87,120246,87,120298,87,120350,87,120402,87,120454,87,1308,87,5043,87,5076,87,42218,87,5742,120,10539,120,10540,120,10799,120,65368,120,8569,120,119857,120,119909,120,119961,120,120013,120,120065,120,120117,120,120169,120,120221,120,120273,120,120325,120,120377,120,120429,120,120481,120,5441,120,5501,120,5741,88,9587,88,66338,88,71916,88,65336,88,8553,88,117997,88,119831,88,119883,88,119935,88,119987,88,120039,88,120091,88,120143,88,120195,88,120247,88,120299,88,120351,88,120403,88,120455,88,42931,88,935,88,120510,88,120568,88,120626,88,120684,88,120742,88,11436,88,11613,88,5815,88,42219,88,66192,88,66228,88,66327,88,66855,88,611,121,7564,121,65369,121,119858,121,119910,121,119962,121,120014,121,120066,121,120118,121,120170,121,120222,121,120274,121,120326,121,120378,121,120430,121,120482,121,655,121,7935,121,43866,121,947,121,8509,121,120516,121,120574,121,120632,121,120690,121,120748,121,1199,121,4327,121,71900,121,65337,89,117998,89,119832,89,119884,89,119936,89,119988,89,120040,89,120092,89,120144,89,120196,89,120248,89,120300,89,120352,89,120404,89,120456,89,933,89,978,89,120508,89,120566,89,120624,89,120682,89,120740,89,11432,89,1198,89,5033,89,5053,89,42220,89,94019,89,71844,89,66226,89,119859,122,119911,122,119963,122,120015,122,120067,122,120119,122,120171,122,120223,122,120275,122,120327,122,120379,122,120431,122,120483,122,7458,122,43923,122,71876,122,71909,90,66293,90,65338,90,8484,90,8488,90,117999,90,119833,90,119885,90,119937,90,119989,90,120041,90,120197,90,120249,90,120301,90,120353,90,120405,90,120457,90,918,90,120493,90,120551,90,120609,90,120667,90,120725,90,5059,90,42204,90,71849,90,65282,34,65283,35,65284,36,65285,37,65286,38,65290,42,65291,43,65294,46,65295,47,65296,48,65298,50,65299,51,65300,52,65301,53,65302,54,65303,55,65304,56,65305,57,65308,60,65309,61,65310,62,65312,64,65316,68,65318,70,65319,71,65324,76,65329,81,65330,82,65333,85,65334,86,65335,87,65343,95,65346,98,65348,100,65350,102,65355,107,65357,109,65358,110,65361,113,65362,114,65364,116,65365,117,65367,119,65370,122,65371,123,65373,125,119846,109],"_default":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8217,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"cs":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"de":[65374,126,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"es":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"fr":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"it":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ja":[8211,45,8218,44,65281,33,8216,96,8245,96,180,96,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65292,44,65297,49,65307,59],"ko":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pl":[65374,126,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pt-BR":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"qps-ploc":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ru":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,305,105,921,73,1009,112,215,120,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"tr":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"zh-hans":[160,32,65374,126,8218,44,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65297,49],"zh-hant":[8211,45,65374,126,8218,44,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89]}'))
             }
             static {
-                this.cache = new Ps({
+                this.cache = new Os({
                     getCacheKey: JSON.stringify
                 }, t => {
                     function r(f) {
@@ -3131,7 +3137,7 @@ var Ns, Fs, $s, Uo, qo, Ms, Vo, js, zo, Bo, Ue = x({
             getConfusableCodePoints() {
                 return new Set(this.confusableDictionary.keys())
             }
-        }, Bo = class xt {
+        }, Ho = class Pt {
             static getRawData() {
                 return JSON.parse('{"_common":[11,12,13,127,847,1564,4447,4448,6068,6069,6155,6156,6157,6158,7355,7356,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8204,8205,8206,8207,8234,8235,8236,8237,8238,8239,8287,8288,8289,8290,8291,8292,8293,8294,8295,8296,8297,8298,8299,8300,8301,8302,8303,10240,12644,65024,65025,65026,65027,65028,65029,65030,65031,65032,65033,65034,65035,65036,65037,65038,65039,65279,65440,65520,65521,65522,65523,65524,65525,65526,65527,65528,65532,78844,119155,119156,119157,119158,119159,119160,119161,119162,917504,917505,917506,917507,917508,917509,917510,917511,917512,917513,917514,917515,917516,917517,917518,917519,917520,917521,917522,917523,917524,917525,917526,917527,917528,917529,917530,917531,917532,917533,917534,917535,917536,917537,917538,917539,917540,917541,917542,917543,917544,917545,917546,917547,917548,917549,917550,917551,917552,917553,917554,917555,917556,917557,917558,917559,917560,917561,917562,917563,917564,917565,917566,917567,917568,917569,917570,917571,917572,917573,917574,917575,917576,917577,917578,917579,917580,917581,917582,917583,917584,917585,917586,917587,917588,917589,917590,917591,917592,917593,917594,917595,917596,917597,917598,917599,917600,917601,917602,917603,917604,917605,917606,917607,917608,917609,917610,917611,917612,917613,917614,917615,917616,917617,917618,917619,917620,917621,917622,917623,917624,917625,917626,917627,917628,917629,917630,917631,917760,917761,917762,917763,917764,917765,917766,917767,917768,917769,917770,917771,917772,917773,917774,917775,917776,917777,917778,917779,917780,917781,917782,917783,917784,917785,917786,917787,917788,917789,917790,917791,917792,917793,917794,917795,917796,917797,917798,917799,917800,917801,917802,917803,917804,917805,917806,917807,917808,917809,917810,917811,917812,917813,917814,917815,917816,917817,917818,917819,917820,917821,917822,917823,917824,917825,917826,917827,917828,917829,917830,917831,917832,917833,917834,917835,917836,917837,917838,917839,917840,917841,917842,917843,917844,917845,917846,917847,917848,917849,917850,917851,917852,917853,917854,917855,917856,917857,917858,917859,917860,917861,917862,917863,917864,917865,917866,917867,917868,917869,917870,917871,917872,917873,917874,917875,917876,917877,917878,917879,917880,917881,917882,917883,917884,917885,917886,917887,917888,917889,917890,917891,917892,917893,917894,917895,917896,917897,917898,917899,917900,917901,917902,917903,917904,917905,917906,917907,917908,917909,917910,917911,917912,917913,917914,917915,917916,917917,917918,917919,917920,917921,917922,917923,917924,917925,917926,917927,917928,917929,917930,917931,917932,917933,917934,917935,917936,917937,917938,917939,917940,917941,917942,917943,917944,917945,917946,917947,917948,917949,917950,917951,917952,917953,917954,917955,917956,917957,917958,917959,917960,917961,917962,917963,917964,917965,917966,917967,917968,917969,917970,917971,917972,917973,917974,917975,917976,917977,917978,917979,917980,917981,917982,917983,917984,917985,917986,917987,917988,917989,917990,917991,917992,917993,917994,917995,917996,917997,917998,917999],"cs":[173,8203,12288],"de":[173,8203,12288],"es":[8203,12288],"fr":[173,8203,12288],"it":[160,173,12288],"ja":[173],"ko":[173,12288],"pl":[173,8203,12288],"pt-BR":[173,8203,12288],"qps-ploc":[160,173,8203,12288],"ru":[173,12288],"tr":[160,173,8203,12288],"zh-hans":[160,173,8203,12288],"zh-hant":[173,12288]}')
             }
@@ -3139,20 +3145,20 @@ var Ns, Fs, $s, Uo, qo, Ms, Vo, js, zo, Bo, Ue = x({
                 this._data = void 0
             }
             static getData() {
-                return this._data || (this._data = new Set([...Object.values(xt.getRawData())].flat())), this._data
+                return this._data || (this._data = new Set([...Object.values(Pt.getRawData())].flat())), this._data
             }
             static isInvisibleCharacter(t) {
-                return xt.getData().has(t)
+                return Pt.getData().has(t)
             }
             static containsInvisibleCharacter(t) {
                 for (let r = 0; r < t.length; r++) {
                     const s = t.codePointAt(r);
-                    if (typeof s == "number" && (xt.isInvisibleCharacter(s) || s === 32)) return !0
+                    if (typeof s == "number" && (Pt.isInvisibleCharacter(s) || s === 32)) return !0
                 }
                 return !1
             }
             static get codePoints() {
-                return xt.getData()
+                return Pt.getData()
             }
         }
     }
@@ -3166,7 +3172,7 @@ function Ws(e) {
     return e.replace(/[\\/]/g, N.sep)
 }
 
-function Ho(e) {
+function Ko(e) {
     return e.indexOf("/") === -1 && (e = Ws(e)), /^[a-zA-Z]:(\/|$)/.test(e) && (e = "/" + e), e
 }
 
@@ -3194,7 +3200,7 @@ function Us(e, t = N.sep) {
     return ""
 }
 
-function Ko(e) {
+function Go(e) {
     if (!z || !e || e.length < 5) return !1;
     let t = e.charCodeAt(0);
     if (t !== 92 || (t = e.charCodeAt(1), t !== 92)) return !1;
@@ -3206,7 +3212,7 @@ function Ko(e) {
 
 function qs(e, t, r) {
     const s = e === t;
-    return !r || s ? s : !e || !t ? !1 : Ts(e, t)
+    return !r || s ? s : !e || !t ? !1 : N1(e, t)
 }
 
 function gt(e, t, r, s = le) {
@@ -3225,12 +3231,12 @@ function Vs(e) {
     return e >= 65 && e <= 90 || e >= 97 && e <= 122
 }
 
-function Go(e) {
+function Jo(e) {
     const t = qt(e);
-    return z ? e.length > 3 ? !1 : Jo(t) && (e.length === 2 || t.charCodeAt(2) === 92) : t === N.sep
+    return z ? e.length > 3 ? !1 : Qo(t) && (e.length === 2 || t.charCodeAt(2) === 92) : t === N.sep
 }
 
-function Jo(e, t = z) {
+function Qo(e, t = z) {
     return t ? Vs(e.charCodeAt(0)) && e.charCodeAt(1) === 58 : !1
 }
 
@@ -3243,26 +3249,26 @@ function mt(e, t, r = 8) {
     let i;
     return t ? i = `${t}-${s}` : i = s, e ? Y(e, i) : i
 }
-var zs, Bs, qe = x({
+var zs, Bs, qe = P({
         "out-build/vs/base/common/extpath.js"() {
             "use strict";
             ce(), X(), Ue(), v1(), zs = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789", Bs = "BDEFGHIJKMOQRSTUVWXYZbdefghijkmoqrstuvwxyz0123456789"
         }
     }),
-    Qo = x({
+    Yo = P({
         "out-build/vs/base/common/stream.js"() {
             "use strict";
-            He(), ot()
+            He(), at()
         }
     }),
-    Yo, Zo = x({
+    Zo, Xo = P({
         "out-build/vs/base/common/buffer.js"() {
             "use strict";
-            dt(), Qo(), Yo = new Oe(() => new Uint8Array(256))
+            pt(), Yo(), Zo = new Oe(() => new Uint8Array(256))
         }
     });
 
-function Xo(e, t) {
+function ea(e, t) {
     if (!e.scheme && t) throw new Error(`[UriError]: Scheme is missing: {scheme: "", authority: "${e.authority}", path: "${e.path}", query: "${e.query}", fragment: "${e.fragment}"}`);
     if (e.scheme && !Gs.test(e.scheme)) throw new Error("[UriError]: Scheme contains illegal characters.");
     if (e.path) {
@@ -3272,11 +3278,11 @@ function Xo(e, t) {
     }
 }
 
-function ea(e, t) {
+function ta(e, t) {
     return !e && !t ? "file" : e
 }
 
-function ta(e, t) {
+function ra(e, t) {
     switch (e) {
         case "https":
         case "http":
@@ -3294,18 +3300,18 @@ function Hs(e, t, r) {
         if (a >= 97 && a <= 122 || a >= 65 && a <= 90 || a >= 48 && a <= 57 || a === 45 || a === 46 || a === 95 || a === 126 || t && a === 47 || r && a === 91 || r && a === 93 || r && a === 58) i !== -1 && (s += encodeURIComponent(e.substring(i, n)), i = -1), s !== void 0 && (s += e.charAt(n));
         else {
             s === void 0 && (s = e.substr(0, n));
-            const o = $1[a];
+            const o = M1[a];
             o !== void 0 ? (i !== -1 && (s += encodeURIComponent(e.substring(i, n)), i = -1), s += o) : i === -1 && (i = n)
         }
     }
     return i !== -1 && (s += encodeURIComponent(e.substring(i))), s !== void 0 ? s : e
 }
 
-function ra(e) {
+function sa(e) {
     let t;
     for (let r = 0; r < e.length; r++) {
         const s = e.charCodeAt(r);
-        s === 35 || s === 63 ? (t === void 0 && (t = e.substr(0, r)), t += $1[s]) : t !== void 0 && (t += e[r])
+        s === 35 || s === 63 ? (t === void 0 && (t = e.substr(0, r)), t += M1[s]) : t !== void 0 && (t += e[r])
     }
     return t !== void 0 ? t : e
 }
@@ -3315,8 +3321,8 @@ function Bt(e, t) {
     return e.authority && e.path.length > 1 && e.scheme === "file" ? r = `//${e.authority}${e.path}` : e.path.charCodeAt(0) === 47 && (e.path.charCodeAt(1) >= 65 && e.path.charCodeAt(1) <= 90 || e.path.charCodeAt(1) >= 97 && e.path.charCodeAt(1) <= 122) && e.path.charCodeAt(2) === 58 ? t ? r = e.path.substr(1) : r = e.path[1].toLowerCase() + e.path.substr(2) : r = e.path, z && (r = r.replace(/\//g, "\\")), r
 }
 
-function N1(e, t) {
-    const r = t ? ra : Hs;
+function F1(e, t) {
+    const r = t ? sa : Hs;
     let s = "",
         {
             scheme: i,
@@ -3355,17 +3361,17 @@ function Ks(e) {
 }
 
 function Ht(e) {
-    return e.match(M1) ? e.replace(M1, t => Ks(t)) : e
+    return e.match(j1) ? e.replace(j1, t => Ks(t)) : e
 }
-var Gs, Js, Qs, M, ue, Ys, Z, F1, Ve, $1, M1, ze = x({
+var Gs, Js, Qs, M, ue, Ys, Z, $1, Ve, M1, j1, ze = P({
     "out-build/vs/base/common/uri.js"() {
         "use strict";
-        ce(), X(), Kt(), Zo(), Gs = /^\w[\w\d+.-]*$/, Js = /^\//, Qs = /^\/\//, M = "", ue = "/", Ys = /^(([^:/?#]+?):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/, Z = class o1 {
+        ce(), X(), Kt(), Xo(), Gs = /^\w[\w\d+.-]*$/, Js = /^\//, Qs = /^\/\//, M = "", ue = "/", Ys = /^(([^:/?#]+?):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/, Z = class o1 {
             static isUri(t) {
                 return t instanceof o1 ? !0 : t ? typeof t.authority == "string" && typeof t.fragment == "string" && typeof t.path == "string" && typeof t.query == "string" && typeof t.scheme == "string" && typeof t.fsPath == "string" && typeof t.with == "function" && typeof t.toString == "function" : !1
             }
             constructor(t, r, s, i, n, a = !1) {
-                typeof t == "object" ? (this.scheme = t.scheme || M, this.authority = t.authority || M, this.path = t.path || M, this.query = t.query || M, this.fragment = t.fragment || M) : (this.scheme = ea(t, a), this.authority = r || M, this.path = ta(this.scheme, s || M), this.query = i || M, this.fragment = n || M, Xo(this, a))
+                typeof t == "object" ? (this.scheme = t.scheme || M, this.authority = t.authority || M, this.path = t.path || M, this.query = t.query || M, this.fragment = t.fragment || M) : (this.scheme = ta(t, a), this.authority = r || M, this.path = ra(this.scheme, s || M), this.query = i || M, this.fragment = n || M, ea(this, a))
             }
             get fsPath() {
                 return Bt(this, !1)
@@ -3404,7 +3410,7 @@ var Gs, Js, Qs, M, ue, Ys, Z, F1, Ve, $1, M1, ze = x({
                 })
             }
             toString(t = !1) {
-                return N1(this, t)
+                return F1(this, t)
             }
             toJSON() {
                 return this
@@ -3414,13 +3420,13 @@ var Gs, Js, Qs, M, ue, Ys, Z, F1, Ve, $1, M1, ze = x({
                     if (t instanceof o1) return t;
                     {
                         const r = new Ve(t);
-                        return r._formatted = t.external ?? null, r._fsPath = t._sep === F1 ? t.fsPath ?? null : null, r
+                        return r._formatted = t.external ?? null, r._fsPath = t._sep === $1 ? t.fsPath ?? null : null, r
                     }
                 } else return t
             } [Symbol.for("debug.description")]() {
                 return `URI(${this.toString()})`
             }
-        }, F1 = z ? 1 : void 0, Ve = class extends Z {
+        }, $1 = z ? 1 : void 0, Ve = class extends Z {
             constructor() {
                 super(...arguments), this._formatted = null, this._fsPath = null
             }
@@ -3428,15 +3434,15 @@ var Gs, Js, Qs, M, ue, Ys, Z, F1, Ve, $1, M1, ze = x({
                 return this._fsPath || (this._fsPath = Bt(this, !1)), this._fsPath
             }
             toString(e = !1) {
-                return e ? N1(this, !0) : (this._formatted || (this._formatted = N1(this, !1)), this._formatted)
+                return e ? F1(this, !0) : (this._formatted || (this._formatted = F1(this, !1)), this._formatted)
             }
             toJSON() {
                 const e = {
                     $mid: 1
                 };
-                return this._fsPath && (e.fsPath = this._fsPath, e._sep = F1), this._formatted && (e.external = this._formatted), this.path && (e.path = this.path), this.scheme && (e.scheme = this.scheme), this.authority && (e.authority = this.authority), this.query && (e.query = this.query), this.fragment && (e.fragment = this.fragment), e
+                return this._fsPath && (e.fsPath = this._fsPath, e._sep = $1), this._formatted && (e.external = this._formatted), this.path && (e.path = this.path), this.scheme && (e.scheme = this.scheme), this.authority && (e.authority = this.authority), this.query && (e.query = this.query), this.fragment && (e.fragment = this.fragment), e
             }
-        }, $1 = {
+        }, M1 = {
             58: "%3A",
             47: "%2F",
             63: "%3F",
@@ -3456,14 +3462,14 @@ var Gs, Js, Qs, M, ue, Ys, Z, F1, Ve, $1, M1, ze = x({
             59: "%3B",
             61: "%3D",
             32: "%20"
-        }, M1 = /(%[0-9A-Za-z][0-9A-Za-z])+/g
+        }, j1 = /(%[0-9A-Za-z][0-9A-Za-z])+/g
     }
 });
 
-function sa(e) {
+function ia(e) {
     return `${e.quality??"oss"}-${e.commit??"dev"}`
 }
-var K, Zs, Xs, ei, ti, ri, si, ia, na, ii, Kt = x({
+var K, Zs, Xs, ei, ti, ri, si, na, oa, ii, Kt = P({
     "out-build/vs/base/common/network.js"() {
         "use strict";
         He(), X(), Ue(), ze(), ce(), (function(e) {
@@ -3479,7 +3485,7 @@ var K, Zs, Xs, ei, ti, ri, si, ia, na, ii, Kt = x({
                 this._delegate = e
             }
             setServerRootPath(e, t) {
-                this._serverRootPath = N.join(t ?? "/", sa(e))
+                this._serverRootPath = N.join(t ?? "/", ia(e))
             }
             getServerRootPath() {
                 return this._serverRootPath
@@ -3509,7 +3515,7 @@ var K, Zs, Xs, ei, ti, ri, si, ia, na, ii, Kt = x({
                     i = this._connectionTokens[t];
                 let n = `path=${encodeURIComponent(e.path)}`;
                 return typeof i == "string" && (n += `&${Zs}=${encodeURIComponent(i)}`), Z.from({
-                    scheme: fs ? this._preferredWebSchema : K.vscodeRemoteResource,
+                    scheme: hs ? this._preferredWebSchema : K.vscodeRemoteResource,
                     authority: `${r}:${s}`,
                     path: this._remoteResourcesPath,
                     query: n
@@ -3524,7 +3530,7 @@ var K, Zs, Xs, ei, ti, ri, si, ia, na, ii, Kt = x({
                 return this.uriToBrowserUri(r)
             }
             uriToBrowserUri(t) {
-                return t.scheme === K.vscodeRemote ? ei.rewrite(t) : t.scheme === K.file && (us || ds === `${K.vscodeFileResource}://${a1.FALLBACK_AUTHORITY}`) ? t.with({
+                return t.scheme === K.vscodeRemote ? ei.rewrite(t) : t.scheme === K.file && (fs || ps === `${K.vscodeFileResource}://${a1.FALLBACK_AUTHORITY}`) ? t.with({
                     scheme: K.vscodeFileResource,
                     authority: t.authority || a1.FALLBACK_AUTHORITY,
                     query: null,
@@ -3553,9 +3559,9 @@ var K, Zs, Xs, ei, ti, ri, si, ia, na, ii, Kt = x({
                 }
                 throw new Error("Cannot determine URI for module id!")
             }
-        }, si = new ri, ia = Object.freeze({
+        }, si = new ri, na = Object.freeze({
             "Cache-Control": "no-cache, no-store"
-        }), na = Object.freeze({
+        }), oa = Object.freeze({
             "Document-Policy": "include-js-call-stacks-in-crash-reports, js-profiling"
         }), (function(e) {
             const t = new Map([
@@ -3594,7 +3600,7 @@ var K, Zs, Xs, ei, ti, ri, si, ia, na, ii, Kt = x({
 function De(e) {
     return Bt(e, !0)
 }
-var Gt, R, ni, oa, aa, la, ca, ua, oi, fa, ha, j1, da, pa, ga, ma, W1, U1, _a, va, ai, q1 = x({
+var Gt, R, ni, aa, la, ca, ua, fa, oi, ha, da, W1, pa, ga, ma, _a, U1, q1, va, ya, ai, V1 = P({
         "out-build/vs/base/common/resources.js"() {
             "use strict";
             qe(), Kt(), ce(), X(), Ue(), ze(), Gt = class {
@@ -3619,7 +3625,7 @@ var Gt, R, ni, oa, aa, la, ca, ua, oi, fa, ha, j1, da, pa, ga, ma, W1, U1, _a, v
                 isEqualOrParent(e, t, r = !1) {
                     if (e.scheme === t.scheme) {
                         if (e.scheme === K.file) return gt(De(e), De(t), this._ignorePathCasing(e)) && e.query === t.query && (r || e.fragment === t.fragment);
-                        if (W1(e.authority, t.authority)) return gt(e.path, t.path, this._ignorePathCasing(e), "/") && e.query === t.query && (r || e.fragment === t.fragment)
+                        if (U1(e.authority, t.authority)) return gt(e.path, t.path, this._ignorePathCasing(e), "/") && e.query === t.query && (r || e.fragment === t.fragment)
                     }
                     return !1
                 }
@@ -3638,7 +3644,7 @@ var Gt, R, ni, oa, aa, la, ca, ua, oi, fa, ha, j1, da, pa, ga, ma, W1, U1, _a, v
                 dirname(e) {
                     if (e.path.length === 0) return e;
                     let t;
-                    return e.scheme === K.file ? t = Z.file(Pe(De(e))).path : (t = N.dirname(e.path), e.authority && t.length && t.charCodeAt(0) !== 47 && (console.error(`dirname("${e.toString})) resulted in a relative path`), t = "/")), e.with({
+                    return e.scheme === K.file ? t = Z.file(xe(De(e))).path : (t = N.dirname(e.path), e.authority && t.length && t.charCodeAt(0) !== 47 && (console.error(`dirname("${e.toString})) resulted in a relative path`), t = "/")), e.with({
                         path: t
                     })
                 }
@@ -3650,9 +3656,9 @@ var Gt, R, ni, oa, aa, la, ca, ua, oi, fa, ha, j1, da, pa, ga, ma, W1, U1, _a, v
                     })
                 }
                 relativePath(e, t) {
-                    if (e.scheme !== t.scheme || !W1(e.authority, t.authority)) return;
+                    if (e.scheme !== t.scheme || !U1(e.authority, t.authority)) return;
                     if (e.scheme === K.file) {
-                        const i = Ss(De(e), De(t));
+                        const i = Ps(De(e), De(t));
                         return z ? Ws(i) : i
                     }
                     let r = e.path || "/";
@@ -3672,7 +3678,7 @@ var Gt, R, ni, oa, aa, la, ca, ua, oi, fa, ha, j1, da, pa, ga, ma, W1, U1, _a, v
                             path: r.path
                         })
                     }
-                    return t = Ho(t), e.with({
+                    return t = Ko(t), e.with({
                         path: N.resolve(e.path, t)
                     })
                 }
@@ -3680,7 +3686,7 @@ var Gt, R, ni, oa, aa, la, ca, ua, oi, fa, ha, j1, da, pa, ga, ma, W1, U1, _a, v
                     return !!e.path && e.path[0] === "/"
                 }
                 isEqualAuthority(e, t) {
-                    return e === t || e !== void 0 && t !== void 0 && Ts(e, t)
+                    return e === t || e !== void 0 && t !== void 0 && N1(e, t)
                 }
                 hasTrailingPathSeparator(e, t = le) {
                     if (e.scheme === K.file) {
@@ -3692,7 +3698,7 @@ var Gt, R, ni, oa, aa, la, ca, ua, oi, fa, ha, j1, da, pa, ga, ma, W1, U1, _a, v
                     }
                 }
                 removeTrailingPathSeparator(e, t = le) {
-                    return U1(e, t) ? e.with({
+                    return q1(e, t) ? e.with({
                         path: e.path.substr(0, e.path.length - 1)
                     }) : e
                 }
@@ -3706,11 +3712,11 @@ var Gt, R, ni, oa, aa, la, ca, ua, oi, fa, ha, j1, da, pa, ga, ma, W1, U1, _a, v
                         const s = e.path;
                         r = s.length === 1 && s.charCodeAt(s.length - 1) === 47
                     }
-                    return !r && !U1(e, t) ? e.with({
+                    return !r && !q1(e, t) ? e.with({
                         path: e.path + "/"
                     }) : e
                 }
-            }, R = new Gt(() => !1), ni = new Gt(e => e.scheme === K.file ? !Ee : !0), oa = new Gt(e => !0), aa = R.isEqual.bind(R), la = R.isEqualOrParent.bind(R), ca = R.getComparisonKey.bind(R), ua = R.basenameOrAuthority.bind(R), oi = R.basename.bind(R), fa = R.extname.bind(R), ha = R.dirname.bind(R), j1 = R.joinPath.bind(R), da = R.normalizePath.bind(R), pa = R.relativePath.bind(R), ga = R.resolvePath.bind(R), ma = R.isAbsolutePath.bind(R), W1 = R.isEqualAuthority.bind(R), U1 = R.hasTrailingPathSeparator.bind(R), _a = R.removeTrailingPathSeparator.bind(R), va = R.addTrailingPathSeparator.bind(R), (function(e) {
+            }, R = new Gt(() => !1), ni = new Gt(e => e.scheme === K.file ? !Ee : !0), aa = new Gt(e => !0), la = R.isEqual.bind(R), ca = R.isEqualOrParent.bind(R), ua = R.getComparisonKey.bind(R), fa = R.basenameOrAuthority.bind(R), oi = R.basename.bind(R), ha = R.extname.bind(R), da = R.dirname.bind(R), W1 = R.joinPath.bind(R), pa = R.normalizePath.bind(R), ga = R.relativePath.bind(R), ma = R.resolvePath.bind(R), _a = R.isAbsolutePath.bind(R), U1 = R.isEqualAuthority.bind(R), q1 = R.hasTrailingPathSeparator.bind(R), va = R.removeTrailingPathSeparator.bind(R), ya = R.addTrailingPathSeparator.bind(R), (function(e) {
                 e.META_DATA_LABEL = "label", e.META_DATA_DESCRIPTION = "description", e.META_DATA_SIZE = "size", e.META_DATA_MIME = "mime";
 
                 function t(r) {
@@ -3726,24 +3732,24 @@ var Gt, R, ni, oa, aa, la, ca, ua, oi, fa, ha, j1, da, pa, ga, ma, W1, U1, _a, v
             })(ai || (ai = {}))
         }
     }),
-    ya, wa = x({
+    wa, ba = P({
         "out-build/vs/base/common/symbols.js"() {
             "use strict";
-            ya = Symbol("MicrotaskDelay")
+            wa = Symbol("MicrotaskDelay")
         }
     });
 
-function V1(e) {
+function z1(e) {
     return !!e && typeof e.then == "function"
 }
 
-function ba(e) {
+function Ea(e) {
     const t = new Qe,
         r = e(t.token);
     let s = !1;
     const i = new Promise((n, a) => {
         const o = t.token.onCancellationRequested(() => {
-            s = !0, o.dispose(), a(new rt)
+            s = !0, o.dispose(), a(new st)
         });
         Promise.resolve(r).then(c => {
             o.dispose(), t.dispose(), s ? uo(c) && c.dispose() : n(c)
@@ -3771,14 +3777,14 @@ function li(e, t) {
                 n.dispose(), r()
             }, e),
             n = t.onCancellationRequested(() => {
-                clearTimeout(i), n.dispose(), s(new rt)
+                clearTimeout(i), n.dispose(), s(new st)
             })
-    }) : ba(r => li(e, r))
+    }) : Ea(r => li(e, r))
 }
-var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
+var ci, B1, ui, H1, fi, hi, Ca, K1, di, G1, pi, gi, Aa, _t = P({
     "out-build/vs/base/common/async.js"() {
         "use strict";
-        zt(), He(), A1(), ot(), q1(), X(), wa(), dt(), ci = class {
+        zt(), He(), A1(), at(), V1(), X(), ba(), pt(), ci = class {
             constructor(e) {
                 this._size = 0, this._isDisposed = !1, this.maxDegreeOfParalellism = e, this.outstandingPromises = [], this.runningPromises = 0, this._onDrained = new ae
             }
@@ -3819,7 +3825,7 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
             dispose() {
                 this._isDisposed = !0, this.outstandingPromises.length = 0, this._size = 0, this._onDrained.dispose()
             }
-        }, z1 = class extends ci {
+        }, B1 = class extends ci {
             constructor() {
                 super(1)
             }
@@ -3829,7 +3835,7 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
             }
             async whenDrained() {
                 if (this.isDrained()) return;
-                const e = new K1;
+                const e = new G1;
                 return this.drainers.add(e), e.p
             }
             isDrained() {
@@ -3845,12 +3851,12 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
                 const s = r.getComparisonKey(e);
                 let i = this.queues.get(s);
                 if (!i) {
-                    i = new z1;
+                    i = new B1;
                     const n = this.drainListenerCount++,
                         a = oe.once(i.onDrained)(() => {
                             i?.dispose(), this.queues.delete(s), this.onDidQueueDrain(), this.drainListeners?.deleteAndDispose(n), this.drainListeners?.size === 0 && (this.drainListeners.dispose(), this.drainListeners = void 0)
                         });
-                    this.drainListeners || (this.drainListeners = new Wr), this.drainListeners.set(n, a), this.queues.set(s, i)
+                    this.drainListeners || (this.drainListeners = new Ur), this.drainListeners.set(n, a), this.queues.set(s, i)
                 }
                 return i.queue(t)
             }
@@ -3865,7 +3871,7 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
                 for (const [, e] of this.queues) e.dispose();
                 this.queues.clear(), this.releaseDrainers(), this.drainListeners?.dispose()
             }
-        }, B1 = class {
+        }, H1 = class {
             constructor(e, t) {
                 this.timeoutToken = -1, this.runner = e, this.timeout = t, this.timeoutHandler = this.onTimeout.bind(this)
             }
@@ -3896,7 +3902,7 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
             doRun() {
                 this.runner?.()
             }
-        }, fi = class extends B1 {
+        }, fi = class extends H1 {
             constructor(e, t) {
                 super(e, t), this.units = []
             }
@@ -3932,7 +3938,7 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
                 this.lastExecutionTime = Date.now(), this.handler(this.pendingWork.splice(0, this.options.maxWorkChunkSize)), this.pendingWork.length > 0 && this.scheduleThrottler()
             }
             scheduleThrottler(e = this.options.throttleDelay) {
-                this.throttler.value = new B1(() => {
+                this.throttler.value = new H1(() => {
                     this.throttler.clear(), this.doWork()
                 }, e), this.throttler.value.schedule()
             }
@@ -3940,8 +3946,8 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
                 super.dispose(), this.pendingWork.length = 0, this.disposed = !0
             }
         }, (function() {
-            typeof globalThis.requestIdleCallback != "function" || typeof globalThis.cancelIdleCallback != "function" ? H1 = (e, t, r) => {
-                ms(() => {
+            typeof globalThis.requestIdleCallback != "function" || typeof globalThis.cancelIdleCallback != "function" ? K1 = (e, t, r) => {
+                _s(() => {
                     if (s) return;
                     const i = Date.now() + 15;
                     t(Object.freeze({
@@ -3957,7 +3963,7 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
                         s || (s = !0)
                     }
                 }
-            } : H1 = (e, t, r) => {
+            } : K1 = (e, t, r) => {
                 const s = e.requestIdleCallback(t, typeof r == "number" ? {
                     timeout: r
                 } : void 0);
@@ -3967,10 +3973,10 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
                         i || (i = !0, e.cancelIdleCallback(s))
                     }
                 }
-            }, Ea = (e, t) => H1(globalThis, e, t)
+            }, Ca = (e, t) => K1(globalThis, e, t)
         })(), (function(e) {
             e[e.Resolved = 0] = "Resolved", e[e.Rejected = 1] = "Rejected"
-        })(di || (di = {})), K1 = class {
+        })(di || (di = {})), G1 = class {
             get isRejected() {
                 return this.outcome?.outcome === 1
             }
@@ -4005,7 +4011,7 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
                 })
             }
             cancel() {
-                return this.error(new rt)
+                return this.error(new st)
             }
         }, (function(e) {
             async function t(s) {
@@ -4030,7 +4036,7 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
             e.withAsyncBody = r
         })(pi || (pi = {})), (function(e) {
             e[e.Initial = 0] = "Initial", e[e.DoneOK = 1] = "DoneOK", e[e.DoneError = 2] = "DoneError"
-        })(gi || (gi = {})), Ca = class ne {
+        })(gi || (gi = {})), Aa = class ne {
             static fromArray(t) {
                 return new ne(r => {
                     r.emitMany(t)
@@ -4140,47 +4146,47 @@ var ci, z1, ui, B1, fi, hi, Ea, H1, di, K1, pi, gi, Ca, _t = x({
     }
 });
 
-function G1(e) {
-    return Aa(e, "NFC", mi)
+function J1(e) {
+    return Da(e, "NFC", mi)
 }
 
-function Aa(e, t, r) {
+function Da(e, t, r) {
     if (!e) return e;
     const s = r.get(e);
     if (s) return s;
     let i;
     return _i.test(e) ? i = e.normalize(t) : i = e, r.set(e, i), i
 }
-var mi, Da, _i, vi = x({
+var mi, La, _i, vi = P({
     "out-build/vs/base/common/normalization.js"() {
         "use strict";
-        _1(), mi = new Rt(1e4), Da = new Rt(1e4), _i = /[^\u0000-\u0080]/
+        _1(), mi = new Rt(1e4), La = new Rt(1e4), _i = /[^\u0000-\u0080]/
     }
 });
 import * as T from "fs";
 import {
-    tmpdir as La
+    tmpdir as Sa
 } from "os";
 import {
     promisify as vt
 } from "util";
 async function yi(e, t = yt.UNLINK, r) {
-    if (Go(e)) throw new Error("rimraf - will refuse to recursively delete root");
-    return t === yt.UNLINK ? J1(e) : Sa(e, r)
+    if (Jo(e)) throw new Error("rimraf - will refuse to recursively delete root");
+    return t === yt.UNLINK ? Q1(e) : Pa(e, r)
 }
-async function Sa(e, t = mt(La())) {
+async function Pa(e, t = mt(Sa())) {
     try {
         try {
             await T.promises.rename(e, t)
         } catch (r) {
-            return r.code === "ENOENT" ? void 0 : J1(e)
+            return r.code === "ENOENT" ? void 0 : Q1(e)
         }
-        J1(t).catch(r => {})
+        Q1(t).catch(r => {})
     } catch (r) {
         if (r.code !== "ENOENT") throw r
     }
 }
-async function J1(e) {
+async function Q1(e) {
     return T.promises.rm(e, {
         recursive: !0,
         force: !0,
@@ -4188,7 +4194,7 @@ async function J1(e) {
     })
 }
 async function Jt(e, t) {
-    return Pa(await (t ? xa(e) : T.promises.readdir(e)))
+    return Oa(await (t ? xa(e) : T.promises.readdir(e)))
 }
 async function xa(e) {
     try {
@@ -4220,10 +4226,10 @@ async function xa(e) {
     return t
 }
 
-function Pa(e) {
-    return e.map(t => typeof t == "string" ? Se ? G1(t) : t : (t.name = Se ? G1(t.name) : t.name, t))
+function Oa(e) {
+    return e.map(t => typeof t == "string" ? Se ? J1(t) : t : (t.name = Se ? J1(t.name) : t.name, t))
 }
-async function Oa(e) {
+async function ka(e) {
     const t = await Jt(e),
         r = [];
     for (const s of t) await wt.existsDirectory(Y(e, s)) && r.push(s);
@@ -4241,10 +4247,10 @@ function wi(e, t = 1e3) {
     })
 }
 
-function ka(e, t, r) {
+function Ia(e, t, r) {
     return Li.queueFor(Z.file(e), () => {
         const s = Ei(r);
-        return new Promise((i, n) => Ia(e, t, s, a => a ? n(a) : i()))
+        return new Promise((i, n) => Ta(e, t, s, a => a ? n(a) : i()))
     }, ni)
 }
 
@@ -4252,7 +4258,7 @@ function bi(e) {
     Qt = e
 }
 
-function Ia(e, t, r, s) {
+function Ta(e, t, r, s) {
     if (!Qt) return T.writeFile(e, t, {
         mode: r.mode,
         flag: r.flag
@@ -4266,7 +4272,7 @@ function Ia(e, t, r, s) {
     })
 }
 
-function Ye(e, t, r) {
+function Ze(e, t, r) {
     const s = Ei(r);
     if (!Qt) return T.writeFileSync(e, t, {
         mode: s.mode,
@@ -4294,7 +4300,7 @@ function Ei(e) {
         flag: "w"
     }
 }
-async function Ta(e, t, r = 6e4) {
+async function Ra(e, t, r = 6e4) {
     if (e !== t) try {
         z && typeof r == "number" ? await Ci(e, t, Date.now(), r) : await T.promises.rename(e, t)
     } catch (s) {
@@ -4342,13 +4348,13 @@ async function Di(e, t, r) {
     } = await wt.stat(e);
     if (i) {
         if (r.options.preserveSymlinks) try {
-            return await Fa(e, t, r)
+            return await $a(e, t, r)
         } catch {}
         if (i.dangling) return
     }
-    return s.isDirectory() ? Ra(e, t, s.mode & Q1, r) : Na(e, t, s.mode & Q1)
+    return s.isDirectory() ? Na(e, t, s.mode & Y1, r) : Fa(e, t, s.mode & Y1)
 }
-async function Ra(e, t, r, s) {
+async function Na(e, t, r, s) {
     await T.promises.mkdir(t, {
         recursive: !0,
         mode: r
@@ -4356,17 +4362,17 @@ async function Ra(e, t, r, s) {
     const i = await Jt(e);
     for (const n of i) await Di(Y(e, n), Y(t, n), s)
 }
-async function Na(e, t, r) {
+async function Fa(e, t, r) {
     await T.promises.copyFile(e, t), await T.promises.chmod(t, r)
 }
-async function Fa(e, t, r) {
+async function $a(e, t, r) {
     let s = await T.promises.readlink(e);
     gt(s, r.root.source, !Ee) && (s = Y(r.root.target, s.substr(r.root.source.length + 1))), await T.promises.symlink(s, t)
 }
-var yt, wt, Li, Qt, Q1, ve, Y1 = x({
+var yt, wt, Li, Qt, Y1, ve, Z1 = P({
     "out-build/vs/base/node/pfs.js"() {
         "use strict";
-        _t(), qe(), vi(), ce(), X(), q1(), ze(), (function(e) {
+        _t(), qe(), vi(), ce(), X(), V1(), ze(), (function(e) {
             e[e.UNLINK = 0] = "UNLINK", e[e.MOVE = 1] = "MOVE"
         })(yt || (yt = {})), (function(e) {
             async function t(i) {
@@ -4432,7 +4438,7 @@ var yt, wt, Li, Qt, Q1, ve, Y1 = x({
                 return !1
             }
             e.existsDirectory = s
-        })(wt || (wt = {})), Li = new ui, Qt = !0, Q1 = 511, ve = new class {
+        })(wt || (wt = {})), Li = new ui, Qt = !0, Y1 = 511, ve = new class {
             get read() {
                 return (e, t, r, s, i) => new Promise((n, a) => {
                     T.read(e, t, r, s, i, (o, c, l) => o ? a(o) : n({
@@ -4475,16 +4481,16 @@ var yt, wt, Li, Qt, Q1, ve, Y1 = x({
                 return Jt
             }
             get readDirsInDir() {
-                return Oa
+                return ka
             }
             get writeFile() {
-                return ka
+                return Ia
             }
             get rm() {
                 return yi
             }
             get rename() {
-                return Ta
+                return Ra
             }
             get copy() {
                 return Ai
@@ -4492,24 +4498,24 @@ var yt, wt, Li, Qt, Q1, ve, Y1 = x({
         }
     }
 });
-import * as $a from "net";
+import * as Ma from "net";
 
-function Z1(e, t, r, s = 1) {
+function X1(e, t, r, s = 1) {
     let i = !1;
     return new Promise(n => {
         const a = setTimeout(() => {
             if (!i) return i = !0, n(0)
         }, r);
-        X1(e, t, s, o => {
+        er(e, t, s, o => {
             if (!i) return i = !0, clearTimeout(a), n(o)
         })
     })
 }
 
-function X1(e, t, r, s) {
+function er(e, t, r, s) {
     if (t === 0) return s(0);
-    const i = new $a.Socket;
-    i.once("connect", () => (Si(i), X1(e + r, t - 1, r, s))), i.once("data", () => {}), i.once("error", n => (Si(i), n.code !== "ECONNREFUSED" ? X1(e + r, t - 1, r, s) : s(e))), i.connect(e, "127.0.0.1")
+    const i = new Ma.Socket;
+    i.once("connect", () => (Si(i), er(e + r, t - 1, r, s))), i.once("data", () => {}), i.once("error", n => (Si(i), n.code !== "ECONNREFUSED" ? er(e + r, t - 1, r, s) : s(e))), i.connect(e, "127.0.0.1")
 }
 
 function Si(e) {
@@ -4519,32 +4525,32 @@ function Si(e) {
         console.error(t)
     }
 }
-var Ma = x({
+var ja = P({
     "out-build/vs/base/node/ports.js"() {
         "use strict"
     }
 });
-import * as xi from "fs";
-async function ja(e) {
+import * as Pi from "fs";
+async function Wa(e) {
     try {
         return await ve.realpath(e)
     } catch {
-        const r = Wa(e);
-        return await xi.promises.access(r, xi.constants.R_OK), r
+        const r = Ua(e);
+        return await Pi.promises.access(r, Pi.constants.R_OK), r
     }
 }
 
-function Wa(e) {
+function Ua(e) {
     return jo(qt(e), le)
 }
-var Ua = x({
+var qa = P({
     "out-build/vs/base/node/extpath.js"() {
         "use strict";
-        ce(), X(), Ue(), Y1()
+        ce(), X(), Ue(), Z1()
     }
 });
 
-function Pi(e, t) {
+function xi(e, t) {
     switch (e) {
         case 0:
             return "";
@@ -4590,14 +4596,14 @@ function Oi(e, t) {
 function ki(e) {
     if (!e) return "";
     let t = "";
-    const r = Oi(e, rr);
-    if (r.every(s => s === Ze)) t = ".*";
+    const r = Oi(e, sr);
+    if (r.every(s => s === Xe)) t = ".*";
     else {
         let s = !1;
         r.forEach((i, n) => {
-            if (i === Ze) {
+            if (i === Xe) {
                 if (s) return;
-                t += Pi(2, n === r.length - 1)
+                t += xi(2, n === r.length - 1)
             } else {
                 let a = !1,
                     o = "",
@@ -4610,7 +4616,7 @@ function ki(e) {
                     }
                     if (c && (f !== "]" || !l)) {
                         let u;
-                        f === "-" ? u = f : (f === "^" || f === "!") && !l ? u = "^" : f === rr ? u = "" : u = Os(f), l += u;
+                        f === "-" ? u = f : (f === "^" || f === "!") && !l ? u = "^" : f === sr ? u = "" : u = ks(f), l += u;
                         continue
                     }
                     switch (f) {
@@ -4633,61 +4639,68 @@ function ki(e) {
                             t += Et;
                             continue;
                         case "*":
-                            t += Pi(1);
+                            t += xi(1);
                             continue;
                         default:
-                            t += Os(f)
+                            t += ks(f)
                     }
                 }
-                n < r.length - 1 && (r[n + 1] !== Ze || n + 2 < r.length) && (t += bt)
+                n < r.length - 1 && (r[n + 1] !== Xe || n + 2 < r.length) && (t += bt)
             }
-            s = i === Ze
+            s = i === Xe
         })
     }
     return t
 }
 
-function er(e, t) {
+function tr(e, t) {
     if (!e) return pe;
     let r;
     typeof e != "string" ? r = e.pattern : r = e, r = r.trim();
-    const s = `${r}_${!!t.trimForExclusions}`;
-    let i = sr.get(s);
-    if (i) return Ii(i, e);
-    let n;
-    return Fi.test(r) ? i = qa(r.substr(4), r) : (n = $i.exec(tr(r, t))) ? i = Va(n[1], r) : (t.trimForExclusions ? ji : Mi).test(r) ? i = za(r, t) : (n = Wi.exec(tr(r, t))) ? i = Ti(n[1].substr(1), r, !0) : (n = Ui.exec(tr(r, t))) ? i = Ti(n[1], r, !1) : i = Ba(r), sr.set(s, i), Ii(i, e)
+    const s = t.ignoreCase ?? !1,
+        i = {
+            ...t,
+            equals: s ? N1 : (c, l) => c === l,
+            endsWith: s ? Wo : (c, l) => c.endsWith(l),
+            isEqualOrParent: (c, l) => gt(c, l, t.ignoreCase ?? !Ee)
+        },
+        n = `${s?r.toLowerCase():r}_${!!t.trimForExclusions}_${s}`;
+    let a = ir.get(n);
+    if (a) return Ii(a, e, i);
+    let o;
+    return Fi.test(r) ? a = Va(r.substring(4), r, i) : (o = $i.exec(rr(r, i))) ? a = za(o[1], r, i) : (t.trimForExclusions ? ji : Mi).test(r) ? a = Ba(r, i) : (o = Wi.exec(rr(r, i))) ? a = Ti(o[1].substring(1), r, !0, i) : (o = Ui.exec(rr(r, i))) ? a = Ti(o[1], r, !1, i) : a = Ha(r, i), ir.set(n, a), Ii(a, e, i)
 }
 
-function Ii(e, t) {
+function Ii(e, t, r) {
     if (typeof t == "string") return e;
-    const r = function(s, i) {
-        return gt(s, t.base, !Ee) ? e(Mo(s.substr(t.base.length), le), i) : null
+    const s = function(i, n) {
+        return r.isEqualOrParent(i, t.base) ? e(Mo(i.substring(t.base.length), le), n) : null
     };
-    return r.allBasenames = e.allBasenames, r.allPaths = e.allPaths, r.basenames = e.basenames, r.patterns = e.patterns, r
+    return s.allBasenames = e.allBasenames, s.allPaths = e.allPaths, s.basenames = e.basenames, s.patterns = e.patterns, s
 }
 
-function tr(e, t) {
-    return t.trimForExclusions && e.endsWith("/**") ? e.substr(0, e.length - 2) : e
+function rr(e, t) {
+    return t.trimForExclusions && e.endsWith("/**") ? e.substring(0, e.length - 2) : e
 }
 
-function qa(e, t) {
-    return function(r, s) {
-        return typeof r == "string" && r.endsWith(e) ? t : null
+function Va(e, t, r) {
+    return function(s, i) {
+        return typeof s == "string" && r.endsWith(s, e) ? t : null
     }
 }
 
-function Va(e, t) {
-    const r = `/${e}`,
-        s = `\\${e}`,
-        i = function(a, o) {
-            return typeof a != "string" ? null : o ? o === e ? t : null : a === e || a.endsWith(r) || a.endsWith(s) ? t : null
+function za(e, t, r) {
+    const s = `/${e}`,
+        i = `\\${e}`,
+        n = function(o, c) {
+            return typeof o != "string" ? null : c ? r.equals(c, e) ? t : null : r.equals(o, e) || r.endsWith(o, s) || r.endsWith(o, i) ? t : null
         },
-        n = [e];
-    return i.basenames = n, i.patterns = [t], i.allBasenames = n, i
+        a = [e];
+    return n.basenames = a, n.patterns = [t], n.allBasenames = a, n
 }
 
-function za(e, t) {
-    const r = Ri(e.slice(1, -1).split(",").map(o => er(o, t)).filter(o => o !== pe), e),
+function Ba(e, t) {
+    const r = Ri(e.slice(1, -1).split(",").map(o => tr(o, t)).filter(o => o !== pe), e),
         s = r.length;
     if (!s) return pe;
     if (s === 1) return r[0];
@@ -4702,50 +4715,50 @@ function za(e, t) {
     return a.length && (i.allPaths = a), i
 }
 
-function Ti(e, t, r) {
-    const s = le === N.sep,
-        i = s ? e : e.replace(Ni, le),
-        n = le + i,
-        a = N.sep + e;
-    let o;
-    return r ? o = function(c, l) {
-        return typeof c == "string" && (c === i || c.endsWith(n) || !s && (c === e || c.endsWith(a))) ? t : null
-    } : o = function(c, l) {
-        return typeof c == "string" && (c === i || !s && c === e) ? t : null
-    }, o.allPaths = [(r ? "*/" : "./") + e], o
+function Ti(e, t, r, s) {
+    const i = le === N.sep,
+        n = i ? e : e.replace(Ni, le),
+        a = le + n,
+        o = N.sep + e;
+    let c;
+    return r ? c = function(l, f) {
+        return typeof l == "string" && (s.equals(l, n) || s.endsWith(l, a) || !i && (s.equals(l, e) || s.endsWith(l, o))) ? t : null
+    } : c = function(l, f) {
+        return typeof l == "string" && (s.equals(l, n) || !i && s.equals(l, e)) ? t : null
+    }, c.allPaths = [(r ? "*/" : "./") + e], c
 }
 
-function Ba(e) {
+function Ha(e, t) {
     try {
-        const t = new RegExp(`^${ki(e)}$`);
-        return function(r) {
-            return t.lastIndex = 0, typeof r == "string" && t.test(r) ? e : null
+        const r = new RegExp(`^${ki(e)}$`, t.ignoreCase ? "i" : void 0);
+        return function(s) {
+            return r.lastIndex = 0, typeof s == "string" && r.test(s) ? e : null
         }
     } catch {
         return pe
     }
 }
 
-function Ha(e, t = {}) {
-    if (!e) return ir;
-    if (typeof e == "string" || Ka(e)) {
-        const r = er(e, t);
-        if (r === pe) return ir;
+function Ka(e, t = {}) {
+    if (!e) return nr;
+    if (typeof e == "string" || Ga(e)) {
+        const r = tr(e, t);
+        if (r === pe) return nr;
         const s = function(i, n) {
             return !!r(i, n)
         };
         return r.allBasenames && (s.allBasenames = r.allBasenames), r.allPaths && (s.allPaths = r.allPaths), s
     }
-    return Ga(e, t)
+    return Ja(e, t)
 }
 
-function Ka(e) {
+function Ga(e) {
     const t = e;
     return t ? typeof t.base == "string" && typeof t.pattern == "string" : !1
 }
 
-function Ga(e, t) {
-    const r = Ri(Object.getOwnPropertyNames(e).map(o => Ja(o, e[o], t)).filter(o => o !== pe)),
+function Ja(e, t) {
+    const r = Ri(Object.getOwnPropertyNames(e).map(o => Qa(o, e[o], t)).filter(o => o !== pe)),
         s = r.length;
     if (!s) return pe;
     if (!r.some(o => !!o.requiresSiblings)) {
@@ -4755,7 +4768,7 @@ function Ga(e, t) {
                 for (let h = 0, p = r.length; h < p; h++) {
                     const E = r[h](f, u);
                     if (typeof E == "string") return E;
-                    V1(E) && (d || (d = []), d.push(E))
+                    z1(E) && (d || (d = []), d.push(E))
                 }
                 return d ? (async () => {
                     for (const h of d) {
@@ -4777,7 +4790,7 @@ function Ga(e, t) {
                 p.requiresSiblings && l && (c || (c = Je(o)), f || (f = c.substr(0, c.length - xs(o).length)));
                 const E = p(o, c, f, l);
                 if (typeof E == "string") return E;
-                V1(E) && (u || (u = []), u.push(E))
+                z1(E) && (u || (u = []), u.push(E))
             }
             return u ? (async () => {
                 for (const d of u) {
@@ -4793,9 +4806,9 @@ function Ga(e, t) {
     return a.length && (i.allPaths = a), i
 }
 
-function Ja(e, t, r) {
+function Qa(e, t, r) {
     if (t === !1) return pe;
-    const s = er(e, r);
+    const s = tr(e, r);
     if (s === pe) return pe;
     if (typeof t == "boolean") return s;
     if (t) {
@@ -4805,7 +4818,7 @@ function Ja(e, t, r) {
                 if (!l || !s(a, o)) return null;
                 const f = i.replace("$(basename)", () => c),
                     u = l(f);
-                return V1(u) ? u.then(d => d ? e : null) : u ? e : null
+                return z1(u) ? u.then(d => d ? e : null) : u ? e : null
             };
             return n.requiresSiblings = !0, n
         }
@@ -4845,17 +4858,17 @@ function Ri(e, t) {
     const a = e.filter(o => !o.basenames);
     return a.push(n), a
 }
-var Ze, rr, bt, Et, Ni, Fi, $i, Mi, ji, Wi, Ui, sr, ir, pe, Qa = x({
+var Xe, sr, bt, Et, Ni, Fi, $i, Mi, ji, Wi, Ui, ir, nr, pe, Ya = P({
         "out-build/vs/base/common/glob.js"() {
             "use strict";
-            g1(), _t(), qe(), _1(), ce(), X(), Ue(), Ze = "**", rr = "/", bt = "[/\\\\]", Et = "[^/\\\\]", Ni = /\//g, Fi = /^\*\*\/\*\.[\w\.-]+$/, $i = /^\*\*\/([\w\.-]+)\/?$/, Mi = /^{\*\*\/\*?[\w\.-]+\/?(,\*\*\/\*?[\w\.-]+\/?)*}$/, ji = /^{\*\*\/\*?[\w\.-]+(\/(\*\*)?)?(,\*\*\/\*?[\w\.-]+(\/(\*\*)?)?)*}$/, Wi = /^\*\*((\/[\w\.-]+)+)\/?$/, Ui = /^([\w\.-]+(\/[\w\.-]+)*)\/?$/, sr = new Rt(1e4), ir = function() {
+            g1(), _t(), qe(), _1(), ce(), X(), Ue(), Xe = "**", sr = "/", bt = "[/\\\\]", Et = "[^/\\\\]", Ni = /\//g, Fi = /^\*\*\/\*\.[\w\.-]+$/, $i = /^\*\*\/([\w\.-]+)\/?$/, Mi = /^{\*\*\/\*?[\w\.-]+\/?(,\*\*\/\*?[\w\.-]+\/?)*}$/, ji = /^{\*\*\/\*?[\w\.-]+(\/(\*\*)?)?(,\*\*\/\*?[\w\.-]+(\/(\*\*)?)?)*}$/, Wi = /^\*\*((\/[\w\.-]+)+)\/?$/, Ui = /^([\w\.-]+(\/[\w\.-]+)*)\/?$/, ir = new Rt(1e4), nr = function() {
                 return !1
             }, pe = function() {
                 return null
             }
         }
     }),
-    qi, Vi, nr, zi, Bi, Ie, Ct, Hi, Yt, Ya = x({
+    qi, Vi, or, zi, Bi, Ie, Ct, Hi, Yt, Za = P({
         "out-build/vs/base/common/ternarySearchTree.js"() {
             "use strict";
             g1(), Ue(), qi = class {
@@ -4900,12 +4913,12 @@ var Ze, rr, bt, Et, Ni, Fi, $i, Mi, ji, Wi, Ui, sr, ir, pe, Qa = x({
                     return this
                 }
                 cmp(e) {
-                    return this._caseSensitive ? R1(e, this._value, 0, e.length, this._from, this._to) : pt(e, this._value, 0, e.length, this._from, this._to)
+                    return this._caseSensitive ? R1(e, this._value, 0, e.length, this._from, this._to) : Ye(e, this._value, 0, e.length, this._from, this._to)
                 }
                 value() {
                     return this._value.substring(this._from, this._to)
                 }
-            }, nr = class {
+            }, or = class {
                 constructor(e = !0, t = !0) {
                     this._splitOnBackslash = e, this._caseSensitive = t
                 }
@@ -4933,7 +4946,7 @@ var Ze, rr, bt, Et, Ni, Fi, $i, Mi, ji, Wi, Ui, sr, ir, pe, Qa = x({
                     return this
                 }
                 cmp(e) {
-                    return this._caseSensitive ? R1(e, this._value, 0, e.length, this._from, this._to) : pt(e, this._value, 0, e.length, this._from, this._to)
+                    return this._caseSensitive ? R1(e, this._value, 0, e.length, this._from, this._to) : Ye(e, this._value, 0, e.length, this._from, this._to)
                 }
                 value() {
                     return this._value.substring(this._from, this._to)
@@ -4945,7 +4958,7 @@ var Ze, rr, bt, Et, Ni, Fi, $i, Mi, ji, Wi, Ui, sr, ir, pe, Qa = x({
                     this._ignorePathCasing = e, this._ignoreQueryAndFragment = t, this._states = [], this._stateIdx = 0
                 }
                 reset(e) {
-                    return this._value = e, this._states = [], this._value.scheme && this._states.push(1), this._value.authority && this._states.push(2), this._value.path && (this._pathIterator = new nr(!1, !this._ignorePathCasing(e)), this._pathIterator.reset(e.path), this._pathIterator.value() && this._states.push(3)), this._ignoreQueryAndFragment(e) || (this._value.query && this._states.push(4), this._value.fragment && this._states.push(5)), this._stateIdx = 0, this
+                    return this._value = e, this._states = [], this._value.scheme && this._states.push(1), this._value.authority && this._states.push(2), this._value.path && (this._pathIterator = new or(!1, !this._ignorePathCasing(e)), this._pathIterator.reset(e.path), this._pathIterator.value() && this._states.push(3)), this._ignoreQueryAndFragment(e) || (this._value.query && this._states.push(4), this._value.fragment && this._states.push(5)), this._stateIdx = 0, this
                 }
                 next() {
                     return this._states[this._stateIdx] === 3 && this._pathIterator.hasNext() ? this._pathIterator.next() : this._stateIdx += 1, this
@@ -4954,8 +4967,8 @@ var Ze, rr, bt, Et, Ni, Fi, $i, Mi, ji, Wi, Ui, sr, ir, pe, Qa = x({
                     return this._states[this._stateIdx] === 3 && this._pathIterator.hasNext() || this._stateIdx < this._states.length - 1
                 }
                 cmp(e) {
-                    if (this._states[this._stateIdx] === 1) return ks(e, this._value.scheme);
-                    if (this._states[this._stateIdx] === 2) return ks(e, this._value.authority);
+                    if (this._states[this._stateIdx] === 1) return Is(e, this._value.scheme);
+                    if (this._states[this._stateIdx] === 2) return Is(e, this._value.authority);
                     if (this._states[this._stateIdx] === 3) return this._pathIterator.cmp(e);
                     if (this._states[this._stateIdx] === 4) return T1(e, this._value.query);
                     if (this._states[this._stateIdx] === 5) return T1(e, this._value.fragment);
@@ -4969,15 +4982,15 @@ var Ze, rr, bt, Et, Ni, Fi, $i, Mi, ji, Wi, Ui, sr, ir, pe, Qa = x({
                     if (this._states[this._stateIdx] === 5) return this._value.fragment;
                     throw new Error
                 }
-            }, Ie = class wr {
+            }, Ie = class br {
                 static {
                     this.Val = Symbol("undefined_placeholder")
                 }
                 static wrap(t) {
-                    return t === void 0 ? wr.Val : t
+                    return t === void 0 ? br.Val : t
                 }
                 static unwrap(t) {
-                    return t === wr.Val ? void 0 : t
+                    return t === br.Val ? void 0 : t
                 }
             }, Ct = class {
                 constructor() {
@@ -5008,18 +5021,18 @@ var Ze, rr, bt, Et, Ni, Fi, $i, Mi, ji, Wi, Ui, sr, ir, pe, Qa = x({
                 }
             }, (function(e) {
                 e[e.Left = -1] = "Left", e[e.Mid = 0] = "Mid", e[e.Right = 1] = "Right"
-            })(Hi || (Hi = {})), Yt = class Pt {
+            })(Hi || (Hi = {})), Yt = class xt {
                 static forUris(t = () => !1, r = () => !1) {
-                    return new Pt(new Bi(t, r))
+                    return new xt(new Bi(t, r))
                 }
                 static forPaths(t = !1) {
-                    return new Pt(new nr(void 0, !t))
+                    return new xt(new or(void 0, !t))
                 }
                 static forStrings() {
-                    return new Pt(new qi)
+                    return new xt(new qi)
                 }
                 static forConfigKeys() {
-                    return new Pt(new Vi)
+                    return new xt(new Vi)
                 }
                 constructor(t) {
                     this._iter = t
@@ -5030,11 +5043,11 @@ var Ze, rr, bt, Et, Ni, Fi, $i, Mi, ji, Wi, Ui, sr, ir, pe, Qa = x({
                 fill(t, r) {
                     if (r) {
                         const s = r.slice(0);
-                        Pr(s);
+                        Or(s);
                         for (const i of s) this.set(i, t)
                     } else {
                         const s = t.slice(0);
-                        Pr(s);
+                        Or(s);
                         for (const i of s) this.set(i[0], i[1])
                     }
                 }
@@ -5219,7 +5232,7 @@ var Ze, rr, bt, Et, Ni, Fi, $i, Mi, ji, Wi, Ui, sr, ir, pe, Qa = x({
         }
     });
 
-function Za(e, t, r) {
+function Xa(e, t, r) {
     t[Le.DI_TARGET] === t ? t[Le.DI_DEPENDENCIES].push({
         id: e,
         index: r
@@ -5229,15 +5242,15 @@ function Za(e, t, r) {
     }], t[Le.DI_TARGET] = t)
 }
 
-function or(e) {
+function ar(e) {
     if (Le.serviceIds.has(e)) return Le.serviceIds.get(e);
     const t = function(r, s, i) {
         if (arguments.length !== 3) throw new Error("@IServiceName-decorator can only be used to decorate a parameter");
-        Za(t, r, i)
+        Xa(t, r, i)
     };
     return t.toString = () => e, Le.serviceIds.set(e, t), t
 }
-var Le, Xa, Ki = x({
+var Le, e2, Ki = P({
     "out-build/vs/platform/instantiation/common/instantiation.js"() {
         "use strict";
         (function(e) {
@@ -5247,17 +5260,17 @@ var Le, Xa, Ki = x({
                 return r[e.DI_DEPENDENCIES] || []
             }
             e.getServiceDependencies = t
-        })(Le || (Le = {})), Xa = or("instantiationService")
+        })(Le || (Le = {})), e2 = ar("instantiationService")
     }
 });
 
-function e2(e, t, r) {
+function t2(e, t, r) {
     return !e || !t || e === t || t.length > e.length ? !1 : (t.charAt(t.length - 1) !== le && (t += le), r ? Rs(e, t) : e.indexOf(t) === 0)
 }
-var t2, Gi, Ji, Qi, Yi, Zi, Xi, en, r2, tn, rn, s2, i2 = x({
+var r2, Gi, Ji, Qi, Yi, Zi, Xi, en, s2, tn, rn, i2, n2 = P({
     "out-build/vs/platform/files/common/files.js"() {
         "use strict";
-        Ya(), ce(), Ue(), v1(), ze(), Ft(), Ki(), X(), Kt(), dt(), t2 = or("fileService"), (function(e) {
+        Za(), ce(), Ue(), v1(), ze(), Ft(), Ki(), X(), Kt(), pt(), r2 = ar("fileService"), (function(e) {
             e[e.Unknown = 0] = "Unknown", e[e.File = 1] = "File", e[e.Directory = 2] = "Directory", e[e.SymbolicLink = 64] = "SymbolicLink"
         })(Gi || (Gi = {})), (function(e) {
             e[e.Readonly = 1] = "Readonly", e[e.Locked = 2] = "Locked"
@@ -5271,7 +5284,7 @@ var t2, Gi, Ji, Qi, Yi, Zi, Xi, en, r2, tn, rn, s2, i2 = x({
             e[e.CREATE = 0] = "CREATE", e[e.DELETE = 1] = "DELETE", e[e.MOVE = 2] = "MOVE", e[e.COPY = 3] = "COPY", e[e.WRITE = 4] = "WRITE"
         })(Xi || (Xi = {})), (function(e) {
             e[e.UPDATED = 0] = "UPDATED", e[e.ADDED = 1] = "ADDED", e[e.DELETED = 2] = "DELETED"
-        })(en || (en = {})), r2 = class l1 {
+        })(en || (en = {})), s2 = class l1 {
             static {
                 this.MIXED_CORRELATION = null
             }
@@ -5335,7 +5348,7 @@ var t2, Gi, Ji, Qi, Yi, Zi, Xi, en, r2, tn, rn, s2, i2 = x({
             e[e.FILE_IS_DIRECTORY = 0] = "FILE_IS_DIRECTORY", e[e.FILE_NOT_FOUND = 1] = "FILE_NOT_FOUND", e[e.FILE_NOT_MODIFIED_SINCE = 2] = "FILE_NOT_MODIFIED_SINCE", e[e.FILE_MODIFIED_SINCE = 3] = "FILE_MODIFIED_SINCE", e[e.FILE_MOVE_CONFLICT = 4] = "FILE_MOVE_CONFLICT", e[e.FILE_WRITE_LOCKED = 5] = "FILE_WRITE_LOCKED", e[e.FILE_PERMISSION_DENIED = 6] = "FILE_PERMISSION_DENIED", e[e.FILE_TOO_LARGE = 7] = "FILE_TOO_LARGE", e[e.FILE_INVALID_PATH = 8] = "FILE_INVALID_PATH", e[e.FILE_NOT_DIRECTORY = 9] = "FILE_NOT_DIRECTORY", e[e.FILE_OTHER_ERROR = 10] = "FILE_OTHER_ERROR"
         })(tn || (tn = {})), (function(e) {
             e[e.FILE = 0] = "FILE", e[e.FOLDER = 1] = "FOLDER", e[e.ROOT_FOLDER = 2] = "ROOT_FOLDER", e[e.PULL_REQUEST = 3] = "PULL_REQUEST"
-        })(rn || (rn = {})), s2 = class re {
+        })(rn || (rn = {})), i2 = class re {
             static {
                 this.KB = 1024
             }
@@ -5355,18 +5368,18 @@ var t2, Gi, Ji, Qi, Yi, Zi, Xi, en, r2, tn, rn, s2, i2 = x({
     }
 });
 
-function n2(e) {
+function o2(e) {
     return typeof e.correlationId == "number"
 }
 
-function o2(e) {
+function a2(e) {
     const t = new nn;
     for (const r of e) t.processEvent(r);
     return t.coalesce()
 }
 
-function a2(e, t) {
-    return typeof t == "string" && !t.startsWith(Ze) && !We(t) ? {
+function l2(e, t) {
+    return typeof t == "string" && !t.startsWith(Xe) && !We(t) ? {
         base: e,
         pattern: t
     } : t
@@ -5374,11 +5387,11 @@ function a2(e, t) {
 
 function sn(e, t) {
     const r = [];
-    for (const s of t) r.push(Ha(a2(e, s)));
+    for (const s of t) r.push(Ka(l2(e, s)));
     return r
 }
 
-function l2(e, t) {
+function c2(e, t) {
     if (typeof t == "number") switch (e.type) {
         case 1:
             return (t & 4) === 0;
@@ -5389,10 +5402,10 @@ function l2(e, t) {
     }
     return !1
 }
-var c2, nn, u2 = x({
+var u2, nn, f2 = P({
     "out-build/vs/platform/files/common/watcher.js"() {
         "use strict";
-        Qa(), ot(), ce(), X(), ze(), i2(), c2 = class Rn extends be {
+        Ya(), at(), ce(), X(), ze(), n2(), u2 = class Rn extends be {
             static {
                 this.MAX_RESTARTS = 5
             }
@@ -5453,16 +5466,16 @@ var c2, nn, u2 = x({
             coalesce() {
                 const e = [],
                     t = [];
-                return Array.from(this.coalesced).filter(r => r.type !== 2 ? (e.push(r), !1) : !0).sort((r, s) => r.resource.fsPath.length - s.resource.fsPath.length).filter(r => t.some(s => e2(r.resource.fsPath, s, !Ee)) ? !1 : (t.push(r.resource.fsPath), !0)).concat(e)
+                return Array.from(this.coalesced).filter(r => r.type !== 2 ? (e.push(r), !1) : !0).sort((r, s) => r.resource.fsPath.length - s.resource.fsPath.length).filter(r => t.some(s => t2(r.resource.fsPath, s, !Ee)) ? !1 : (t.push(r.resource.fsPath), !0)).concat(e)
             }
         }
     }
 });
 import {
-    watch as f2,
-    promises as h2
+    watch as h2,
+    promises as d2
 } from "fs";
-async function d2(e, t, r, s, i = 512) {
+async function p2(e, t, r, s, i = 512) {
     const n = await ve.open(e, "r"),
         a = Buffer.allocUnsafe(i),
         o = new Qe(s);
@@ -5509,10 +5522,10 @@ async function d2(e, t, r, s, i = 512) {
         })
     })
 }
-var on, p2 = x({
+var on, g2 = P({
         "out-build/vs/platform/files/node/watcher/nodejs/nodejsWatcherLib.js"() {
             "use strict";
-            _t(), zt(), qe(), ot(), vi(), ce(), X(), q1(), ze(), Ua(), Y1(), u2(), dt(), on = class c1 extends be {
+            _t(), zt(), qe(), at(), vi(), ce(), X(), V1(), ze(), qa(), Z1(), f2(), pt(), on = class c1 extends be {
                 static {
                     this.FILE_DELETE_HANDLER_DELAY = 100
                 }
@@ -5533,14 +5546,14 @@ var on, p2 = x({
                     }, o => this.onDidFilesChange(o))), this.fileChangesAggregator = this._register(new fi(o => this.handleFileChanges(o), c1.FILE_CHANGES_HANDLER_DELAY)), this.cts = new Qe, this.realPath = new Oe(async () => {
                         let o = this.request.path;
                         try {
-                            o = await ja(this.request.path), this.request.path !== o && this.trace(`correcting a path to watch that seems to be a symbolic link (original: ${this.request.path}, real: ${o})`)
+                            o = await Wa(this.request.path), this.request.path !== o && this.trace(`correcting a path to watch that seems to be a symbolic link (original: ${this.request.path}, real: ${o})`)
                         } catch {}
                         return o
-                    }), this._isReusingRecursiveWatcher = !1, this.didFail = !1, this.excludes = sn(this.request.path, this.request.excludes), this.includes = this.request.includes ? sn(this.request.path, this.request.includes) : void 0, this.filter = n2(this.request) ? this.request.filter : void 0, this.ready = this.watch()
+                    }), this._isReusingRecursiveWatcher = !1, this.didFail = !1, this.excludes = sn(this.request.path, this.request.excludes), this.includes = this.request.includes ? sn(this.request.path, this.request.includes) : void 0, this.filter = o2(this.request) ? this.request.filter : void 0, this.ready = this.watch()
                 }
                 async watch() {
                     try {
-                        const t = await h2.stat(this.request.path);
+                        const t = await d2.stat(this.request.path);
                         if (this.cts.token.isCancellationRequested) return;
                         this._register(await this.doWatch(t.isDirectory()))
                     } catch (t) {
@@ -5584,7 +5597,7 @@ var on, p2 = x({
                     try {
                         const a = Z.file(this.request.path),
                             o = Je(s),
-                            c = f2(s);
+                            c = h2(s);
                         n.add(Ne(() => {
                             c.removeAllListeners(), c.close()
                         })), this.trace(`Started watching: '${s}'`);
@@ -5605,7 +5618,7 @@ var on, p2 = x({
                             if (i.token.isCancellationRequested) return;
                             this.verboseLogging && this.traceWithCorrelation(`[raw] ["${u}"] ${d}`);
                             let h = "";
-                            if (d && (h = d.toString(), Se && (h = G1(h))), !(!h || u !== "change" && u !== "rename"))
+                            if (d && (h = d.toString(), Se && (h = J1(h))), !(!h || u !== "change" && u !== "rename"))
                                 if (t)
                                     if (u === "rename") {
                                         f.get(h)?.dispose();
@@ -5619,7 +5632,7 @@ var on, p2 = x({
                                             if (i.token.isCancellationRequested) return;
                                             let C;
                                             E ? l.has(h) ? C = 0 : (C = 1, l.add(h)) : (l.delete(h), C = 2), this.onFileChange({
-                                                resource: j1(a, h),
+                                                resource: W1(a, h),
                                                 type: C,
                                                 cId: this.request.correlationId
                                             })
@@ -5628,7 +5641,7 @@ var on, p2 = x({
                                     } else {
                                         let p;
                                         l.has(h) ? p = 0 : (p = 1, l.add(h)), this.onFileChange({
-                                            resource: j1(a, h),
+                                            resource: W1(a, h),
                                             type: p,
                                             cId: this.request.correlationId
                                         })
@@ -5665,10 +5678,10 @@ var on, p2 = x({
                     this.cts.token.isCancellationRequested || (this.verboseLogging && this.traceWithCorrelation(`${t.type===1?"[ADDED]":t.type===2?"[DELETED]":"[CHANGED]"} ${t.resource.fsPath}`), !r && this.excludes.some(s => s(t.resource.fsPath)) ? this.verboseLogging && this.traceWithCorrelation(` >> ignored (excluded) ${t.resource.fsPath}`) : !r && this.includes && this.includes.length > 0 && !this.includes.some(s => s(t.resource.fsPath)) ? this.verboseLogging && this.traceWithCorrelation(` >> ignored (not included) ${t.resource.fsPath}`) : this.fileChangesAggregator.work(t))
                 }
                 handleFileChanges(t) {
-                    const r = o2(t),
+                    const r = a2(t),
                         s = [];
                     for (const n of r) {
-                        if (l2(n, this.filter)) {
+                        if (c2(n, this.filter)) {
                             this.verboseLogging && this.traceWithCorrelation(` >> ignored (filtered) ${n.resource.fsPath}`);
                             continue
                         }
@@ -5683,7 +5696,7 @@ var on, p2 = x({
                     if (Ee) return ve.exists(t);
                     try {
                         const r = Je(t);
-                        return (await ve.readdir(Pe(t))).some(i => i === r)
+                        return (await ve.readdir(xe(t))).some(i => i === r)
                     } catch (r) {
                         return this.trace(r), !1
                     }
@@ -5718,7 +5731,7 @@ var on, p2 = x({
             }
         }
     }),
-    g2 = Vn({
+    m2 = Vn({
         "node_modules/minimist/index.js"(e, t) {
             t.exports = function(n, a) {
                 a || (a = {});
@@ -5793,27 +5806,27 @@ var on, p2 = x({
                             m = n[C + 1];
                         m !== void 0 && !/^-/.test(m) && !o.bools[L] && !o.allBools && (!c[L] || !E(L)) ? (h(L, m, S), C++) : /^(true|false)$/.test(m) ? (h(L, m === "true", S), C++) : h(L, o.strings[L] ? "" : !0, S)
                     } else if (/^-[^-]+/.test(S)) {
-                        for (var _ = S.slice(1, -1).split(""), P = !1, I = 0; I < _.length; I++) {
+                        for (var _ = S.slice(1, -1).split(""), x = !1, I = 0; I < _.length; I++) {
                             var m = S.slice(I + 2);
                             if (m === "-") {
                                 h(_[I], m, S);
                                 continue
                             }
                             if (/[A-Za-z]/.test(_[I]) && /=/.test(m)) {
-                                h(_[I], m.split("=")[1], S), P = !0;
+                                h(_[I], m.split("=")[1], S), x = !0;
                                 break
                             }
                             if (/[A-Za-z]/.test(_[I]) && /-?\d+(\.\d*)?(e-?\d+)?$/.test(m)) {
-                                h(_[I], m, S), P = !0;
+                                h(_[I], m, S), x = !0;
                                 break
                             }
                             if (_[I + 1] && _[I + 1].match(/\W/)) {
-                                h(_[I], S.slice(I + 2), S), P = !0;
+                                h(_[I], S.slice(I + 2), S), x = !0;
                                 break
                             } else h(_[I], o.strings[_[I]] ? "" : !0, S)
                         }
                         var L = S.slice(-1)[0];
-                        !P && L !== "-" && (n[C + 1] && !/^(-|--)[^-]/.test(n[C + 1]) && !o.bools[L] && (!c[L] || !E(L)) ? (h(L, n[C + 1], S), C++) : n[C + 1] && /^(true|false)$/.test(n[C + 1]) ? (h(L, n[C + 1] === "true", S), C++) : h(L, o.strings[L] ? "" : !0, S))
+                        !x && L !== "-" && (n[C + 1] && !/^(-|--)[^-]/.test(n[C + 1]) && !o.bools[L] && (!c[L] || !E(L)) ? (h(L, n[C + 1], S), C++) : n[C + 1] && /^(true|false)$/.test(n[C + 1]) ? (h(L, n[C + 1] === "true", S), C++) : h(L, o.strings[L] ? "" : !0, S))
                     } else if ((!o.unknownFn || o.unknownFn(S) !== !1) && f._.push(o.strings._ || !s(S) ? S : Number(S)), a.stopEarly) {
                         f._.push.apply(f._, n.slice(C + 1));
                         break
@@ -5901,16 +5914,16 @@ function an(e, t, r = pn) {
     return f
 }
 
-function m2(e, t) {
+function _2(e, t) {
     let r = "";
     return t.args && (Array.isArray(t.args) ? r = ` <${t.args.join("> <")}>` : r = ` <${t.args}>`), t.alias ? `-${t.alias} --${e}${r}` : `--${e}${r}`
 }
 
-function _2(e, t) {
+function v2(e, t) {
     const r = [];
     for (const s in e) {
         const i = e[s],
-            n = m2(s, i);
+            n = _2(s, i);
         r.push([n, i.description])
     }
     return ln(r, t)
@@ -5923,7 +5936,7 @@ function ln(e, t) {
         n = [];
     for (const a of e) {
         const o = a[0],
-            c = v2(a[1], i),
+            c = y2(a[1], i),
             l = cn(s - o.length - 2);
         n.push("  " + o + l + c[0]);
         for (let f = 1; f < c.length; f++) n.push(cn(s) + c[f])
@@ -5935,7 +5948,7 @@ function cn(e) {
     return " ".repeat(e)
 }
 
-function v2(e, t) {
+function y2(e, t) {
     const r = [];
     for (; e.length;) {
         let s = e.length < t ? e.length : e.lastIndexOf(" ", t);
@@ -5946,7 +5959,7 @@ function v2(e, t) {
     return r
 }
 
-function y2(e, t, r, s, i) {
+function w2(e, t, r, s, i) {
     const n = process.stdout.isTTY && process.stdout.columns || 80,
         a = i?.noInputFiles !== !0 ? `[${w(1909,null)}...]` : "",
         o = [`${e} ${r}`];
@@ -5967,21 +5980,21 @@ function y2(e, t, r, s, i) {
     for (const f in c) {
         const u = f,
             d = c[u];
-        d && (o.push(fn[u]), o.push(..._2(d, n)), o.push(""))
+        d && (o.push(fn[u]), o.push(...v2(d, n)), o.push(""))
     }
     return l.length && (o.push(w(1914, null)), o.push(...ln(l.map(f => [f.command, f.description]), n)), o.push("")), o.join(`
 `)
 }
 
-function w2(e, t) {
+function b2(e, t) {
     return `${e||w(1915,null)}
 ${t||w(1916,null)}
 ${process.arch}`
 }
-var un, fn, Zt, Xt, hn, dn, pn, gn = x({
+var un, fn, Zt, Xt, hn, dn, pn, gn = P({
     "out-build/vs/platform/environment/node/argv.js"() {
         "use strict";
-        un = Hn(g2(), 1), X(), Ft(), fn = {
+        un = Hn(m2(), 1), X(), Ft(), fn = {
             o: w(1862, null),
             e: w(1863, null),
             t: w(1864, null)
@@ -6618,9 +6631,9 @@ var un, fn, Zt, Xt, hn, dn, pn, gn = x({
         }
     }
 });
-import b2 from "assert";
+import E2 from "assert";
 
-function E2(e, t) {
+function C2(e, t) {
     const r = (c, l) => {
             console.warn(w(1917, null, c, l))
         },
@@ -6648,24 +6661,24 @@ function E2(e, t) {
             onDeprecatedOption: i,
             getSubcommandReporter: n
         } : void 0);
-    return o.goto && o._.forEach(c => b2(/^(\w:)?[^:]+(:\d*){0,2}:?$/.test(c), w(1922, null))), o
+    return o.goto && o._.forEach(c => E2(/^(\w:)?[^:]+(:\d*){0,2}:?$/.test(c), w(1922, null))), o
 }
 
-function C2(e) {
+function A2(e) {
     const t = e.findIndex(r => !/^-/.test(r));
     if (t > -1) return [...e.slice(0, t), ...e.slice(t + 1)]
 }
 
-function A2(e) {
+function D2(e) {
     let [, , ...t] = e;
-    return process.env.VSCODE_DEV && (t = C2(t) || []), E2(t, !0)
+    return process.env.VSCODE_DEV && (t = A2(t) || []), C2(t, !0)
 }
 
 function Te(e, ...t) {
     const r = e.indexOf("--");
     return r === -1 ? e.push(...t) : e.splice(r, 0, ...t), e
 }
-var D2 = x({
+var L2 = P({
     "out-build/vs/platform/environment/node/argvHelper.js"() {
         "use strict";
         Ft(), gn()
@@ -6675,20 +6688,20 @@ import {
     exec as mn
 } from "child_process";
 
-function L2(e) {
+function S2(e) {
     const t = e.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
     return _n[t] || t
 }
-async function S2(e) {
+async function P2(e) {
     let t;
     const r = process.env.VSCODE_CLI_ENCODING;
     r ? (e && console.log(`Found VSCODE_CLI_ENCODING variable: ${r}`), t = Promise.resolve(r)) : z ? t = new Promise(i => {
         e && console.log('Running "chcp" to detect terminal encoding...'), mn("chcp", (n, a, o) => {
             if (a) {
                 e && console.log(`Output from "chcp" command is: ${a}`);
-                const c = Object.keys(ar);
+                const c = Object.keys(lr);
                 for (const l of c)
-                    if (a.indexOf(l) >= 0) return i(ar[l])
+                    if (a.indexOf(l) >= 0) return i(lr[l])
             }
             return i(void 0)
         })
@@ -6696,12 +6709,12 @@ async function S2(e) {
         e && console.log('Running "locale charmap" to detect terminal encoding...'), mn("locale charmap", (n, a, o) => i(a))
     });
     const s = await t;
-    return e && console.log(`Detected raw terminal encoding: ${s}`), !s || s.toLowerCase() === "utf-8" || s.toLowerCase() === lr ? lr : L2(s)
+    return e && console.log(`Detected raw terminal encoding: ${s}`), !s || s.toLowerCase() === "utf-8" || s.toLowerCase() === cr ? cr : S2(s)
 }
-var ar, _n, lr, x2 = x({
+var lr, _n, cr, x2 = P({
     "out-build/vs/base/node/terminalEncoding.js"() {
         "use strict";
-        X(), ar = {
+        X(), lr = {
             437: "cp437",
             850: "cp850",
             852: "cp852",
@@ -6718,22 +6731,22 @@ var ar, _n, lr, x2 = x({
         }, _n = {
             ibm866: "cp866",
             big5: "cp950"
-        }, lr = "utf8"
+        }, cr = "utf8"
     }
 });
 import * as e1 from "fs";
 import {
-    tmpdir as P2
+    tmpdir as O2
 } from "os";
 
-function O2() {
+function k2() {
     try {
         return !process.stdin.isTTY
     } catch {}
     return !1
 }
 
-function k2(e) {
+function I2(e) {
     return new Promise(t => {
         const r = () => t(!0);
         setTimeout(() => {
@@ -6742,16 +6755,16 @@ function k2(e) {
     })
 }
 
-function I2() {
-    return mt(P2(), "code-stdin", 3)
+function T2() {
+    return mt(O2(), "code-stdin", 3)
 }
-async function T2(e) {
+async function R2(e) {
     await e1.promises.appendFile(e, ""), await e1.promises.chmod(e, 384)
 }
-async function R2(e, t, r) {
-    let [s, i] = await Promise.all([S2(t), import("@vscode/iconv-lite-umd"), T2(e)]);
+async function N2(e, t, r) {
+    let [s, i] = await Promise.all([P2(t), import("@vscode/iconv-lite-umd"), R2(e)]);
     i.default.encodingExists(s) || (console.log(`Unsupported terminal encoding: ${s}, falling back to UTF-8.`), s = "utf8");
-    const n = new z1,
+    const n = new B1,
         a = i.default.getDecoder(s);
     process.stdin.on("data", o => {
         const c = a.write(o);
@@ -6767,38 +6780,38 @@ async function R2(e, t, r) {
         })
     })
 }
-var N2 = x({
+var F2 = P({
     "out-build/vs/platform/environment/node/stdin.js"() {
         "use strict";
         _t(), qe(), x2()
     }
 });
 import {
-    writeFileSync as F2
+    writeFileSync as $2
 } from "fs";
 import {
-    tmpdir as $2
+    tmpdir as M2
 } from "os";
 
-function M2(e) {
-    const t = mt($2());
+function j2(e) {
+    const t = mt(M2());
     try {
-        return F2(t, ""), e && console.log(`Marker file for --wait created: ${t}`), t
+        return $2(t, ""), e && console.log(`Marker file for --wait created: ${t}`), t
     } catch (r) {
         e && console.error(`Failed to create marker file for --wait: ${r}`);
         return
     }
 }
-var j2 = x({
+var W2 = P({
         "out-build/vs/platform/environment/node/wait.js"() {
             "use strict";
             qe()
         }
     }),
-    se, t1, ie, W2 = x({
+    se, t1, ie, U2 = P({
         "out-build/vs/platform/product/common/product.js"() {
             "use strict";
-            if (x1(), t1 = globalThis.vscode, typeof t1 < "u" && typeof t1.context < "u") {
+            if (P1(), t1 = globalThis.vscode, typeof t1 < "u" && typeof t1.context < "u") {
                 const e = t1.context.configuration();
                 if (e) se = e.product;
                 else throw new Error("Sandbox: unable to resolve product configuration from preload script.")
@@ -6829,10 +6842,10 @@ var j2 = x({
             ie = se
         }
     }),
-    U2, cr, q2 = x({
+    q2, ur, V2 = P({
         "out-build/vs/platform/profiling/common/profiling.js"() {
             "use strict";
-            ce(), Ki(), U2 = or("IV8InspectProfilingService"), (function(e) {
+            ce(), Ki(), q2 = ar("IV8InspectProfilingService"), (function(e) {
                 function t(i) {
                     return !!(i.samples && i.timeDeltas)
                 }
@@ -6852,30 +6865,30 @@ var j2 = x({
                     return a(i.head), i
                 }
                 e.rewriteAbsolutePathsInHeapProfile = s
-            })(cr || (cr = {}))
+            })(ur || (ur = {}))
         }
     });
 
-function V2() {
+function z2() {
     return process.uncHostAllowlist
 }
 
 function vn(e) {
     if (process.platform !== "win32") return;
-    const t = V2();
+    const t = z2();
     if (t)
         if (typeof e == "string") t.add(e.toLowerCase());
         else
-            for (const r of z2(e)) vn(r)
+            for (const r of B2(e)) vn(r)
 }
 
-function z2(e) {
+function B2(e) {
     const t = new Set;
     if (Array.isArray(e))
         for (const r of e) typeof r == "string" && t.add(r);
     return Array.from(t)
 }
-var B2 = x({
+var H2 = P({
         "out-build/vs/base/node/unc.js"() {
             "use strict"
         }
@@ -6889,24 +6902,24 @@ import {
 } from "child_process";
 import {
     chmodSync as wn,
-    existsSync as ur,
+    existsSync as fr,
     readFileSync as bn,
     statSync as s1,
-    truncateSync as H2,
+    truncateSync as K2,
     unlinkSync as En
 } from "fs";
 import {
-    homedir as K2,
-    tmpdir as G2
+    homedir as G2,
+    tmpdir as J2
 } from "os";
 
-function J2(e) {
+function Q2(e) {
     return !!e["install-source"] || !!e["list-extensions"] || !!e["install-extension"] || !!e["uninstall-extension"] || !!e["update-extensions"] || !!e["locate-extension"] || !!e["add-mcp"] || !!e.telemetry
 }
 async function Cn(e) {
     let t;
     try {
-        t = A2(e)
+        t = D2(e)
     } catch (r) {
         console.error(r.message);
         return
@@ -6931,7 +6944,7 @@ async function Cn(e) {
                     env: s
                 });
                 else {
-                    const l = process.platform === "darwin" ? Y(Pe(Pe(process.execPath)), "Resources", "app") : z ? Y(Pe(process.execPath), "resources", "app") : Pe(process.execPath),
+                    const l = process.platform === "darwin" ? Y(xe(xe(process.execPath)), "Resources", "app") : z ? Y(xe(process.execPath), "resources", "app") : xe(process.execPath),
                         f = Y(l, "bin", `${ie.tunnelApplicationName}${z?".exe":""}`);
                     o = r1(f, [r, ...i], {
                         cwd: Ge(),
@@ -6944,8 +6957,8 @@ async function Cn(e) {
         } if (t.help) {
         const r = `${ie.applicationName}${z?".exe":""}`,
             s = ie.nameLong.startsWith("Cursor") ? dn : Xt;
-        console.log(y2(ie.nameLong, r, ie.version, s))
-    } else if (t.version) console.log(w2(ie.version, ie.commit));
+        console.log(w2(ie.nameLong, r, ie.version, s))
+    } else if (t.version) console.log(b2(ie.version, ie.commit));
     else if (t["locate-shell-integration-path"]) {
         let r;
         switch (t["locate-shell-integration-path"]) {
@@ -6965,13 +6978,13 @@ async function Cn(e) {
                 throw new Error("Error using --locate-shell-integration-path: Invalid shell type")
         }
         console.log(Y(An(), "out", "vs", "workbench", "contrib", "terminal", "common", "scripts", r))
-    } else if (J2(t)) {
+    } else if (Q2(t)) {
         let r;
         process.env.VSCODE_DEV ? r = "./cliProcessMain.js" : r = "./vs/code/node/cliProcessMain.js", await (await import(r)).main(t);
         return
     } else if (t["file-write"]) {
         const r = t._[0];
-        if (!r || !We(r) || !ur(r) || !s1(r).isFile()) throw new Error("Using --file-write with invalid arguments.");
+        if (!r || !We(r) || !fr(r) || !s1(r).isFile()) throw new Error("Using --file-write with invalid arguments.");
         let s, i;
         try {
             const n = JSON.parse(bn(r, "utf8"));
@@ -6980,16 +6993,16 @@ async function Cn(e) {
             throw new Error("Using --file-write with invalid arguments.")
         }
         if (z)
-            for (const n of [s, i]) typeof n == "string" && Ko(n) && vn(Z.file(n).authority);
-        if (!s || !i || s === i || !We(s) || !We(i) || !ur(s) || !s1(s).isFile() || !ur(i) || !s1(i).isFile()) throw new Error("Using --file-write with invalid arguments.");
+            for (const n of [s, i]) typeof n == "string" && Go(n) && vn(Z.file(n).authority);
+        if (!s || !i || s === i || !We(s) || !We(i) || !fr(s) || !s1(s).isFile() || !fr(i) || !s1(i).isFile()) throw new Error("Using --file-write with invalid arguments.");
         try {
             let n = 0,
                 a = !1;
             t["file-chmod"] && (n = s1(i).mode, n & 128 || (wn(i, n | 128), a = !0));
             const o = bn(s);
-            z ? (H2(i, 0), Ye(i, o, {
+            z ? (K2(i, 0), Ze(i, o, {
                 flag: "r+"
-            })) : Ye(i, o), a && wn(i, n)
+            })) : Ze(i, o), a && wn(i, n)
         } catch (n) {
             throw n.message = `Error using --file-write: ${n.message}`, n
         }
@@ -7006,20 +7019,20 @@ async function Cn(e) {
         const i = t._.some(l => l === "-");
         i && (t._ = t._.filter(l => l !== "-"), e = e.filter(l => l !== "-"));
         let n;
-        if (O2())
+        if (k2())
             if (i) {
-                n = I2();
+                n = T2();
                 try {
-                    const l = new K1;
-                    await R2(n, !!t.verbose, () => l.complete()), t.wait || s.push(() => l.p), Te(e, n), Te(e, "--skip-add-to-recently-opened"), console.log(`Reading from stdin via: ${n}`)
+                    const l = new G1;
+                    await N2(n, !!t.verbose, () => l.complete()), t.wait || s.push(() => l.p), Te(e, n), Te(e, "--skip-add-to-recently-opened"), console.log(`Reading from stdin via: ${n}`)
                 } catch (l) {
                     console.log(`Failed to create file to read via stdin: ${l.toString()}`), n = void 0
                 }
-            } else s.push(l => k2(1e3).then(f => {
+            } else s.push(l => I2(1e3).then(f => {
                 f && console.log(z ? `Run with '${ie.applicationName} -' to read output from another program (e.g. 'echo Hello World | ${ie.applicationName} -').` : `Run with '${ie.applicationName} -' to read from stdin (e.g. 'ps aux | grep code | ${ie.applicationName} -').`)
             }));
         let a;
-        if (t.wait && (a = M2(t.verbose), a && Te(e, "--waitMarkerFilePath", a), s.push(async l => {
+        if (t.wait && (a = j2(t.verbose), a && Te(e, "--waitMarkerFilePath", a), s.push(async l => {
                 let f;
                 Se ? f = new Promise(u => {
                     l.on("exit", (d, h) => {
@@ -7033,17 +7046,17 @@ async function Cn(e) {
                 }
             })), t["prof-startup"]) {
             const l = "127.0.0.1",
-                f = await Z1(To(), 10, 3e3),
-                u = await Z1(f + 1, 10, 3e3),
-                d = await Z1(u + 1, 10, 3e3);
+                f = await X1(To(), 10, 3e3),
+                u = await X1(f + 1, 10, 3e3),
+                d = await X1(u + 1, 10, 3e3);
             if (f * u * d === 0) throw new Error("Failed to find free ports for profiler. Make sure to shutdown all instances of the editor first.");
-            const h = mt(K2(), "prof");
-            Te(e, `--inspect-brk=${l}:${f}`), Te(e, `--remote-debugging-port=${l}:${u}`), Te(e, `--inspect-brk-extensions=${l}:${d}`), Te(e, "--prof-startup-prefix", h), Te(e, "--no-cached-data"), Ye(h, e.slice(-6).join("|")), s.push(async p => {
+            const h = mt(G2(), "prof");
+            Te(e, `--inspect-brk=${l}:${f}`), Te(e, `--remote-debugging-port=${l}:${u}`), Te(e, `--inspect-brk-extensions=${l}:${d}`), Te(e, "--prof-startup-prefix", h), Te(e, "--no-cached-data"), Ze(h, e.slice(-6).join("|")), s.push(async p => {
                 const E = V => V.find(L => L.webSocketDebuggerUrl ? L.type === "page" ? L.url.indexOf("bootstrap/index.html") > 0 : !0 : !1),
                     C = async (V, L, J) => {
                         const m = (await import("chrome-remote-interface")).default;
                         let _;
-                        for (let P = 0; P < L; P++) try {
+                        for (let x = 0; x < L; x++) try {
                             return await m({
                                 host: l,
                                 port: V,
@@ -7074,14 +7087,14 @@ async function Cn(e) {
                         return {
                             async stop() {
                                 if (!_) return;
-                                let P;
+                                let x;
                                 try {
-                                    P = (await _.Profiler.stop()).profile
+                                    x = (await _.Profiler.stop()).profile
                                 } finally {
                                     await _.close().catch(() => {})
                                 }
                                 let I = "";
-                                process.env.VSCODE_DEV || (P = cr.rewriteAbsolutePaths(P, "piiRemoved"), I = ".txt"), Ye(`${J}.${L}.cpuprofile${I}`, JSON.stringify(P, void 0, 4))
+                                process.env.VSCODE_DEV || (x = ur.rewriteAbsolutePaths(x, "piiRemoved"), I = ".txt"), Ze(`${J}.${L}.cpuprofile${I}`, JSON.stringify(x, void 0, 4))
                             }
                         }
                     }
@@ -7103,8 +7116,8 @@ async function Cn(e) {
                         }),
                         m = await V,
                         _ = await L,
-                        P = await J;
-                    await wi(h), await m.stop(), await P.stop(), await _.stop(), Ye(h, "")
+                        x = await J;
+                    await wi(h), await m.stop(), await x.stop(), await _.stop(), Ze(h, "")
                 } catch {
                     console.error("Failed to profile startup. Make sure to quit Code first.")
                 }
@@ -7122,14 +7135,14 @@ async function Cn(e) {
             if (l.push("-a", process.execPath), t.verbose || t.status) {
                 l.push("--wait-apps");
                 for (const f of t.verbose ? ["stdout", "stderr"] : ["stdout"]) {
-                    const u = mt(G2(), `code-${f}`);
-                    Ye(u, ""), l.push(`--${f}`, u), s.push(async d => {
+                    const u = mt(J2(), `code-${f}`);
+                    Ze(u, ""), l.push(`--${f}`, u), s.push(async d => {
                         try {
                             const h = f === "stdout" ? process.stdout : process.stderr,
                                 p = new Qe;
                             d.on("close", () => {
                                 setTimeout(() => p.dispose(!0), 200)
-                            }), await d2(u, E => h.write(E), () => {}, p.token)
+                            }), await p2(u, E => h.write(E), () => {}, p.token)
                         } finally {
                             En(u)
                         }
@@ -7151,38 +7164,38 @@ async function Cn(e) {
 }
 
 function An() {
-    return Pe(si.asFileUri("").fsPath)
+    return xe(si.asFileUri("").fsPath)
 }
 
 function Dn(e) {
     setTimeout(() => process.exit(e), 0)
 }
-var Q2 = x({
+var Y2 = P({
     "out-build/vs/code/node/cli.js"() {
         "use strict";
-        A1(), ce(), X(), Ro(), Y1(), Ma(), p2(), gn(), D2(), N2(), j2(), W2(), zt(), qe(), q2(), Kt(), x1(), B2(), ze(), _t(), Cn(process.argv).then(() => Dn(0)).then(null, e => {
+        A1(), ce(), X(), Ro(), Z1(), ja(), g2(), gn(), L2(), F2(), W2(), U2(), zt(), qe(), V2(), Kt(), P1(), H2(), ze(), _t(), Cn(process.argv).then(() => Dn(0)).then(null, e => {
             console.error(e.message || e.stack || e), Dn(1)
         })
     }
 });
 delete process.env.VSCODE_CWD;
 import {
-    dirname as Y2
+    dirname as Z2
 } from "path";
 import {
-    fileURLToPath as Z2
+    fileURLToPath as X2
 } from "url";
 import * as fe from "path";
 import * as Ln from "fs";
 import {
-    fileURLToPath as X2
+    fileURLToPath as e0
 } from "url";
 import {
-    createRequire as e0
+    createRequire as t0
 } from "node:module";
-var j0 = e0(import.meta.url),
-    t0 = fe.dirname(X2(import.meta.url)),
-    W0 = process.platform === "win32";
+var W0 = t0(import.meta.url),
+    r0 = fe.dirname(e0(import.meta.url)),
+    U0 = process.platform === "win32";
 if (Error.stackTraceLimit = 100, !process.env.VSCODE_HANDLES_SIGPIPE) {
     let e = !1;
     process.on("SIGPIPE", () => {
@@ -7190,17 +7203,17 @@ if (Error.stackTraceLimit = 100, !process.env.VSCODE_HANDLES_SIGPIPE) {
     })
 }
 
-function r0() {
+function s0() {
     try {
         typeof process.env.VSCODE_CWD != "string" && (process.env.VSCODE_CWD = process.cwd()), process.platform === "win32" && process.chdir(fe.dirname(process.execPath))
     } catch (e) {
         console.error(e)
     }
 }
-r0();
+s0();
 
-function s0(e) {
-    const t = fe.dirname(t0);
+function i0(e) {
+    const t = fe.dirname(r0);
 
     function r() {
         return process.env.VSCODE_DEV ? t : process.platform === "darwin" ? fe.dirname(fe.dirname(fe.dirname(t))) : fe.dirname(fe.dirname(t))
@@ -7221,26 +7234,26 @@ function s0(e) {
         isPortable: n
     }
 }
-import * as i0 from "path";
-import * as fr from "fs";
+import * as n0 from "path";
+import * as hr from "fs";
 import {
-    fileURLToPath as n0
+    fileURLToPath as o0
 } from "url";
 import {
-    createRequire as o0,
-    register as a0
+    createRequire as a0,
+    register as l0
 } from "node:module";
 import {
-    createRequire as l0
+    createRequire as c0
 } from "node:module";
-var hr = l0(import.meta.url),
-    Xe = {
+var dr = c0(import.meta.url),
+    et = {
         BUILD_INSERT_PRODUCT_CONFIGURATION: "BUILD_INSERT_PRODUCT_CONFIGURATION"
     };
-Xe.BUILD_INSERT_PRODUCT_CONFIGURATION && (Xe = hr("../product.json"));
-var dr = {
+et.BUILD_INSERT_PRODUCT_CONFIGURATION && (et = dr("../product.json"));
+var pr = {
     "name": "Cursor",
-    "version": "3.4.17",
+    "version": "3.4.20",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -7258,21 +7271,21 @@ var dr = {
     },
     "desktopName": "cursor.desktop"
 };
-dr.BUILD_INSERT_PACKAGE_CONFIGURATION && (dr = hr("../package.json"));
-var pr = Xe,
-    c0 = dr;
-if (!("commit" in Xe) || Xe.commit === void 0) try {
+pr.BUILD_INSERT_PACKAGE_CONFIGURATION && (pr = dr("../package.json"));
+var gr = et,
+    u0 = pr;
+if (!("commit" in et) || et.commit === void 0) try {
     const {
         execSync: e
-    } = hr("child_process"), t = process.cwd(), r = e("git rev-parse HEAD", {
+    } = dr("child_process"), t = process.cwd(), r = e("git rev-parse HEAD", {
         cwd: t,
         encoding: "utf8",
         stdio: ["ignore", "pipe", "ignore"]
     }).trim();
-    r && (Xe.devCommit = r)
+    r && (et.devCommit = r)
 } catch {}
 
-function gr(e) {
+function mr(e) {
     const t = [];
     typeof e == "number" && t.push("code/timeOrigin", e);
 
@@ -7294,8 +7307,8 @@ function gr(e) {
     }
 }
 
-function u0() {
-    if (typeof performance == "object" && typeof performance.mark == "function" && !performance.nodeTiming) return typeof performance.timeOrigin != "number" && !performance.timing ? gr() : {
+function f0() {
+    if (typeof performance == "object" && typeof performance.mark == "function" && !performance.nodeTiming) return typeof performance.timeOrigin != "number" && !performance.timing ? mr() : {
         mark(e, t) {
             performance.mark(e, t)
         },
@@ -7315,19 +7328,19 @@ function u0() {
     };
     if (typeof process == "object") {
         const e = performance?.timeOrigin;
-        return gr(e)
-    } else return console.trace("perf-util loaded in UNKNOWN environment"), gr()
+        return mr(e)
+    } else return console.trace("perf-util loaded in UNKNOWN environment"), mr()
 }
 
-function f0(e) {
-    return e.MonacoPerformanceMarks || (e.MonacoPerformanceMarks = u0()), e.MonacoPerformanceMarks
+function h0(e) {
+    return e.MonacoPerformanceMarks || (e.MonacoPerformanceMarks = f0()), e.MonacoPerformanceMarks
 }
-var Sn = f0(globalThis),
-    et = Sn.mark,
-    z0 = Sn.getMarks,
-    h0 = o0(import.meta.url),
-    d0 = i0.dirname(n0(import.meta.url));
-if ((process.env.ELECTRON_RUN_AS_NODE || process.versions.electron) && a0(`data:text/javascript;base64,${Buffer.from(`
+var Sn = h0(globalThis),
+    tt = Sn.mark,
+    B0 = Sn.getMarks,
+    d0 = a0(import.meta.url),
+    p0 = n0.dirname(o0(import.meta.url));
+if ((process.env.ELECTRON_RUN_AS_NODE || process.versions.electron) && l0(`data:text/javascript;base64,${Buffer.from(`
 	export async function resolve(specifier, context, nextResolve) {
 		if (specifier === 'fs') {
 			return {
@@ -7341,21 +7354,21 @@ if ((process.env.ELECTRON_RUN_AS_NODE || process.versions.electron) && a0(`data:
 		// Node.js default resolve if this is the last user-specified loader.
 		return nextResolve(specifier, context);
 	}`).toString("base64")}`, import.meta.url), globalThis._VSCODE_PRODUCT_JSON = {
-        ...pr
+        ...gr
     }, process.env.VSCODE_DEV) try {
-    const e = h0("../product.overrides.json");
+    const e = d0("../product.overrides.json");
     globalThis._VSCODE_PRODUCT_JSON = Object.assign(globalThis._VSCODE_PRODUCT_JSON, e)
 } catch {}
 globalThis._VSCODE_PACKAGE_JSON = {
-    ...c0
-}, globalThis._VSCODE_FILE_ROOT = d0;
-var mr = void 0;
+    ...u0
+}, globalThis._VSCODE_FILE_ROOT = p0;
+var _r = void 0;
 
-function p0() {
-    return mr || (mr = g0()), mr
+function g0() {
+    return _r || (_r = m0()), _r
 }
-async function g0() {
-    et("code/willLoadNls");
+async function m0() {
+    tt("code/willLoadNls");
     let e, t;
     if (process.env.VSCODE_NLS_CONFIG) try {
         e = JSON.parse(process.env.VSCODE_NLS_CONFIG), e?.languagePack?.messagesFile ? t = e.languagePack.messagesFile : e?.defaultMessagesFile && (t = e.defaultMessagesFile), globalThis._VSCODE_NLS_LANGUAGE = e?.resolvedLanguage
@@ -7364,50 +7377,50 @@ async function g0() {
     }
     if (!(process.env.VSCODE_DEV || !t)) {
         try {
-            globalThis._VSCODE_NLS_MESSAGES = JSON.parse((await fr.promises.readFile(t)).toString())
+            globalThis._VSCODE_NLS_MESSAGES = JSON.parse((await hr.promises.readFile(t)).toString())
         } catch (r) {
             if (console.error(`Error reading NLS messages file ${t}: ${r}`), e?.languagePack?.corruptMarkerFile) try {
-                await fr.promises.writeFile(e.languagePack.corruptMarkerFile, "corrupted")
+                await hr.promises.writeFile(e.languagePack.corruptMarkerFile, "corrupted")
             } catch (s) {
                 console.error(`Error writing corrupted NLS marker file: ${s}`)
             }
             if (e?.defaultMessagesFile && e.defaultMessagesFile !== t) try {
-                globalThis._VSCODE_NLS_MESSAGES = JSON.parse((await fr.promises.readFile(e.defaultMessagesFile)).toString())
+                globalThis._VSCODE_NLS_MESSAGES = JSON.parse((await hr.promises.readFile(e.defaultMessagesFile)).toString())
             } catch (s) {
                 console.error(`Error reading default NLS messages file ${e.defaultMessagesFile}: ${s}`)
             }
         }
-        return et("code/didLoadNls"), e
+        return tt("code/didLoadNls"), e
     }
 }
-async function m0() {
-    await p0()
+async function _0() {
+    await g0()
 }
 import * as ye from "path";
 import * as we from "fs";
-async function _0({
+async function v0({
     userLocale: e,
     osLocale: t,
     userDataPath: r,
     commit: s,
     nlsMetadataPath: i
 }) {
-    if (et("code/willGenerateNls"), process.env.VSCODE_DEV || e === "pseudo" || e.startsWith("en") || !s || !r) return At(e, t, i);
+    if (tt("code/willGenerateNls"), process.env.VSCODE_DEV || e === "pseudo" || e.startsWith("en") || !s || !r) return At(e, t, i);
     try {
-        const n = await v0(r);
+        const n = await y0(r);
         if (!n) return At(e, t, i);
-        const a = y0(n, e);
+        const a = w0(n, e);
         if (!a) return At(e, t, i);
         const o = n[a],
             c = o?.translations?.vscode;
-        if (!o || typeof o.hash != "string" || !o.translations || typeof c != "string" || !await _r(c)) return At(e, t, i);
+        if (!o || typeof o.hash != "string" || !o.translations || typeof c != "string" || !await vr(c)) return At(e, t, i);
         const l = `${o.hash}.${a}`,
             f = ye.join(r, "clp", l),
             u = ye.join(f, s),
             d = ye.join(u, "nls.messages.json"),
             h = ye.join(f, "tcf.json"),
             p = ye.join(f, "corrupted.info");
-        await _r(p) && await we.promises.rm(f, {
+        await vr(p) && await we.promises.rm(f, {
             recursive: !0,
             force: !0,
             maxRetries: 3
@@ -7433,22 +7446,22 @@ async function _0({
             _resolvedLanguagePackCoreLocation: u,
             _corruptedFile: p
         };
-        if (await _r(u)) return w0(u).catch(() => {}), et("code/didGenerateNls"), E;
+        if (await vr(u)) return b0(u).catch(() => {}), tt("code/didGenerateNls"), E;
         const [, C, S, V] = await Promise.all([we.promises.mkdir(u, {
             recursive: !0
         }), JSON.parse(await we.promises.readFile(ye.join(i, "nls.keys.json"), "utf-8")), JSON.parse(await we.promises.readFile(ye.join(i, "nls.messages.json"), "utf-8")), JSON.parse(await we.promises.readFile(c, "utf-8"))]), L = [];
         let J = 0;
         for (const [m, _] of C) {
-            const P = V.contents[m];
-            for (const I of _) L.push(P?.[I] || S[J]), J++
+            const x = V.contents[m];
+            for (const I of _) L.push(x?.[I] || S[J]), J++
         }
-        return await Promise.all([we.promises.writeFile(d, JSON.stringify(L), "utf-8"), we.promises.writeFile(h, JSON.stringify(o.translations), "utf-8")]), et("code/didGenerateNls"), E
+        return await Promise.all([we.promises.writeFile(d, JSON.stringify(L), "utf-8"), we.promises.writeFile(h, JSON.stringify(o.translations), "utf-8")]), tt("code/didGenerateNls"), E
     } catch (n) {
         console.error("Generating translation files failed.", n)
     }
     return At(e, t, i)
 }
-async function v0(e) {
+async function y0(e) {
     const t = ye.join(e, "languagepacks.json");
     try {
         return JSON.parse(await we.promises.readFile(t, "utf-8"))
@@ -7457,7 +7470,7 @@ async function v0(e) {
     }
 }
 
-function y0(e, t) {
+function w0(e, t) {
     try {
         for (; t;) {
             if (e[t]) return t;
@@ -7471,7 +7484,7 @@ function y0(e, t) {
 }
 
 function At(e, t, r) {
-    return et("code/didGenerateNls"), {
+    return tt("code/didGenerateNls"), {
         userLocale: e,
         osLocale: t,
         resolvedLanguage: "en",
@@ -7480,7 +7493,7 @@ function At(e, t, r) {
         availableLanguages: {}
     }
 }
-async function _r(e) {
+async function vr(e) {
     try {
         return await we.promises.access(e), !0
     } catch {
@@ -7488,20 +7501,20 @@ async function _r(e) {
     }
 }
 
-function w0(e) {
+function b0(e) {
     const t = new Date;
     return we.promises.utimes(e, t, t)
 }
-var b0 = Y2(Z2(import.meta.url)),
-    E0 = await _0({
+var E0 = Z2(X2(import.meta.url)),
+    C0 = await v0({
         userLocale: "en",
         osLocale: "en",
-        commit: pr.commit,
+        commit: gr.commit,
         userDataPath: "",
-        nlsMetadataPath: b0
+        nlsMetadataPath: E0
     });
-process.env.VSCODE_NLS_CONFIG = JSON.stringify(E0), s0(pr), process.env.VSCODE_CLI = "1", await m0(), await Promise.resolve().then(() => (Q2(), yn));
+process.env.VSCODE_NLS_CONFIG = JSON.stringify(C0), i0(gr), process.env.VSCODE_CLI = "1", await _0(), await Promise.resolve().then(() => (Y2(), yn));
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e603f703cd553a6bb3644711a3379bbbb31180/core/cli.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/0cf8b06883f54e26bb4f0fb8647c9500ccb43310/core/cli.js.map
 
-//# debugId=969dbf52-7202-5f00-b71a-49b79bce74bc
+//# debugId=279e23eb-e4f1-5fb5-acd3-689a031fe225

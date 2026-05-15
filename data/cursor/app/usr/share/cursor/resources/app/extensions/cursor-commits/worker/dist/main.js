@@ -3931,6 +3931,10 @@
                 }, t.startsWithIgnoreCase = function(e, t) {
                     const n = t.length;
                     return !(t.length > e.length) && 0 === d(e, t, 0, n)
+                }, t.endsWithIgnoreCase = function(e, t) {
+                    const n = e.length,
+                        i = n - t.length;
+                    return i >= 0 && 0 === d(e, t, i, n)
                 }, t.commonPrefixLength = function(e, t) {
                     const n = Math.min(e.length, t.length);
                     let i;
@@ -6833,4 +6837,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e603f703cd553a6bb3644711a3379bbbb31180/extensions/cursor-commits/worker/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/0cf8b06883f54e26bb4f0fb8647c9500ccb43310/extensions/cursor-commits/worker/dist/main.js.map
