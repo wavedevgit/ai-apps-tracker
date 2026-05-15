@@ -27491,7 +27491,9 @@
                                     openInstallModal: !0,
                                     skipTracking: !0
                                 }) : e.window.showErrorMessage('Missing "id" parameter in deep link.')
-                            }(A): "/glass" === A.path ? await e.commands.executeCommand("cursor.openOrFocusGlassWindow") : "/" === A.path || "" === A.path || (console.warn("Unrecognized deeplink", A), e.window.showWarningMessage("Unrecognized deep link. Try updating Cursor"))
+                            }(A): "/glass" === A.path ? await e.commands.executeCommand("cursor.openOrFocusGlassWindow", {
+                                agentsWindowOpenSource: "deeplink"
+                            }) : "/" === A.path || "" === A.path || (console.warn("Unrecognized deeplink", A), e.window.showWarningMessage("Unrecognized deep link. Try updating Cursor"))
                         } catch (A) {
                             console.error("[cursor deeplink] Error handling deep link", A), e.window.showErrorMessage(`Error handling deep link: ${A instanceof Error?A.message:String(A)}`)
                         }
@@ -27528,4 +27530,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/3dc559280adc5f931ade8e25c7b85393842acf30/extensions/cursor-deeplink/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e603f703cd553a6bb3644711a3379bbbb31180/extensions/cursor-deeplink/dist/main.js.map

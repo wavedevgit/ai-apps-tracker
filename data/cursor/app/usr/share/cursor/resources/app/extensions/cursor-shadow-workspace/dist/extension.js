@@ -10759,7 +10759,7 @@
     (() => {
         "use strict";
         n.r(r), n.d(r, {
-            activate: () => YD
+            activate: () => WD
         });
         const e = require("vscode");
         class t {
@@ -25384,6 +25384,12 @@
             name: "status",
             kind: "enum",
             T: Ks.getEnumType(Kc)
+        }, {
+            no: 2,
+            name: "shell_result",
+            kind: "message",
+            T: hu,
+            opt: !0
         }]);
         const Eu = class e extends Nr {
             constructor(e) {
@@ -25523,37 +25529,37 @@
             no: 1,
             name: "success",
             kind: "message",
-            T: Nu,
+            T: _u,
             oneof: "result"
         }, {
             no: 2,
             name: "failure",
             kind: "message",
-            T: Du,
+            T: Ju,
             oneof: "result"
         }, {
             no: 3,
             name: "timeout",
             kind: "message",
-            T: Fu,
+            T: bu,
             oneof: "result"
         }, {
             no: 4,
             name: "rejected",
             kind: "message",
-            T: Lu,
+            T: vu,
             oneof: "result"
         }, {
             no: 5,
             name: "spawn_error",
             kind: "message",
-            T: Mu,
+            T: Pu,
             oneof: "result"
         }, {
             no: 7,
             name: "permission_denied",
             kind: "message",
-            T: Uu,
+            T: Ou,
             oneof: "result"
         }, {
             no: 101,
@@ -25580,7 +25586,8 @@
             T: 13,
             opt: !0
         }]);
-        const hu = class e extends Nr {
+        let hu = fu;
+        const Iu = class e extends Nr {
             constructor(e) {
                 super(), this.data = "", Ks.util.initPartial(e, this)
             }
@@ -25597,14 +25604,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        hu.runtime = Ks, hu.typeName = "agent.v1.ShellStreamStdout", hu.fields = Ks.util.newFieldList(() => [{
+        Iu.runtime = Ks, Iu.typeName = "agent.v1.ShellStreamStdout", Iu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "data",
             kind: "scalar",
             T: 9
         }]);
-        let Iu = hu;
-        const Bu = class e extends Nr {
+        let Bu = Iu;
+        const Cu = class e extends Nr {
             constructor(e) {
                 super(), this.data = "", Ks.util.initPartial(e, this)
             }
@@ -25621,14 +25628,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Bu.runtime = Ks, Bu.typeName = "agent.v1.ShellStreamStderr", Bu.fields = Ks.util.newFieldList(() => [{
+        Cu.runtime = Ks, Cu.typeName = "agent.v1.ShellStreamStderr", Cu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "data",
             kind: "scalar",
             T: 9
         }]);
-        let Cu = Bu;
-        const Qu = class e extends Nr {
+        let Qu = Cu;
+        const pu = class e extends Nr {
             constructor(e) {
                 super(), this.code = 0, this.cwd = "", this.aborted = !1, Ks.util.initPartial(e, this)
             }
@@ -25645,7 +25652,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Qu.runtime = Ks, Qu.typeName = "agent.v1.ShellStreamExit", Qu.fields = Ks.util.newFieldList(() => [{
+        pu.runtime = Ks, pu.typeName = "agent.v1.ShellStreamExit", pu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "code",
             kind: "scalar",
@@ -25679,8 +25686,8 @@
             T: 5,
             opt: !0
         }]);
-        let pu = Qu;
-        const yu = class e extends Nr {
+        let yu = pu;
+        const wu = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -25697,15 +25704,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yu.runtime = Ks, yu.typeName = "agent.v1.ShellStreamStart", yu.fields = Ks.util.newFieldList(() => [{
+        wu.runtime = Ks, wu.typeName = "agent.v1.ShellStreamStart", wu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "sandbox_policy",
             kind: "message",
             T: Hc,
             opt: !0
         }]);
-        let wu = yu;
-        const Tu = class e extends Nr {
+        let Tu = wu;
+        const Su = class e extends Nr {
             constructor(e) {
                 super(), this.shellId = 0, this.command = "", this.workingDirectory = "", Ks.util.initPartial(e, this)
             }
@@ -25722,7 +25729,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Tu.runtime = Ks, Tu.typeName = "agent.v1.ShellStreamBackgrounded", Tu.fields = Ks.util.newFieldList(() => [{
+        Su.runtime = Ks, Su.typeName = "agent.v1.ShellStreamBackgrounded", Su.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "shell_id",
             kind: "scalar",
@@ -25756,8 +25763,8 @@
             T: Ks.getEnumType(jc),
             opt: !0
         }]);
-        let Su = Tu;
-        const ku = class e extends Nr {
+        let ku = Su;
+        const Ru = class e extends Nr {
             constructor(e) {
                 super(), this.event = {
                     case: void 0
@@ -25776,50 +25783,50 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ku.runtime = Ks, ku.typeName = "agent.v1.ShellStream", ku.fields = Ks.util.newFieldList(() => [{
+        Ru.runtime = Ks, Ru.typeName = "agent.v1.ShellStream", Ru.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "stdout",
             kind: "message",
-            T: Iu,
+            T: Bu,
             oneof: "event"
         }, {
             no: 2,
             name: "stderr",
             kind: "message",
-            T: Cu,
+            T: Qu,
             oneof: "event"
         }, {
             no: 3,
             name: "exit",
             kind: "message",
-            T: pu,
+            T: yu,
             oneof: "event"
         }, {
             no: 4,
             name: "start",
             kind: "message",
-            T: wu,
+            T: Tu,
             oneof: "event"
         }, {
             no: 5,
             name: "rejected",
             kind: "message",
-            T: Lu,
+            T: vu,
             oneof: "event"
         }, {
             no: 6,
             name: "permission_denied",
             kind: "message",
-            T: Uu,
+            T: Ou,
             oneof: "event"
         }, {
             no: 7,
             name: "backgrounded",
             kind: "message",
-            T: Su,
+            T: ku,
             oneof: "event"
         }]);
-        const Ru = class e extends Nr {
+        const Nu = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", this.workingDirectory = "", this.exitCode = 0, this.signal = "", this.stdout = "", this.stderr = "", this.executionTime = 0, Ks.util.initPartial(e, this)
             }
@@ -25836,7 +25843,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ru.runtime = Ks, Ru.typeName = "agent.v1.ShellSuccess", Ru.fields = Ks.util.newFieldList(() => [{
+        Nu.runtime = Ks, Nu.typeName = "agent.v1.ShellSuccess", Nu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -25914,8 +25921,8 @@
             T: Ks.getEnumType(jc),
             opt: !0
         }]);
-        let Nu = Ru;
-        const _u = class e extends Nr {
+        let _u = Nu;
+        const Du = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", this.workingDirectory = "", this.exitCode = 0, this.signal = "", this.stdout = "", this.stderr = "", this.executionTime = 0, this.aborted = !1, Ks.util.initPartial(e, this)
             }
@@ -25932,7 +25939,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        _u.runtime = Ks, _u.typeName = "agent.v1.ShellFailure", _u.fields = Ks.util.newFieldList(() => [{
+        Du.runtime = Ks, Du.typeName = "agent.v1.ShellFailure", Du.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -25997,8 +26004,8 @@
             T: 5,
             opt: !0
         }]);
-        let Du = _u;
-        const Ju = class e extends Nr {
+        let Ju = Du;
+        const Fu = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", this.workingDirectory = "", this.timeoutMs = 0, Ks.util.initPartial(e, this)
             }
@@ -26015,7 +26022,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ju.runtime = Ks, Ju.typeName = "agent.v1.ShellTimeout", Ju.fields = Ks.util.newFieldList(() => [{
+        Fu.runtime = Ks, Fu.typeName = "agent.v1.ShellTimeout", Fu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -26031,8 +26038,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let Fu = Ju;
-        const bu = class e extends Nr {
+        let bu = Fu;
+        const Lu = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", this.workingDirectory = "", this.reason = "", this.isReadonly = !1, Ks.util.initPartial(e, this)
             }
@@ -26049,7 +26056,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bu.runtime = Ks, bu.typeName = "agent.v1.ShellRejected", bu.fields = Ks.util.newFieldList(() => [{
+        Lu.runtime = Ks, Lu.typeName = "agent.v1.ShellRejected", Lu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -26070,8 +26077,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Lu = bu;
-        const vu = class e extends Nr {
+        let vu = Lu;
+        const Uu = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", this.workingDirectory = "", this.error = "", this.isReadonly = !1, Ks.util.initPartial(e, this)
             }
@@ -26088,7 +26095,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vu.runtime = Ks, vu.typeName = "agent.v1.ShellPermissionDenied", vu.fields = Ks.util.newFieldList(() => [{
+        Uu.runtime = Ks, Uu.typeName = "agent.v1.ShellPermissionDenied", Uu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -26109,8 +26116,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Uu = vu;
-        const Ou = class e extends Nr {
+        let Ou = Uu;
+        const Mu = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", this.workingDirectory = "", this.error = "", Ks.util.initPartial(e, this)
             }
@@ -26127,7 +26134,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ou.runtime = Ks, Ou.typeName = "agent.v1.ShellSpawnError", Ou.fields = Ks.util.newFieldList(() => [{
+        Mu.runtime = Ks, Mu.typeName = "agent.v1.ShellSpawnError", Mu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -26143,8 +26150,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Mu = Ou;
-        const Pu = class e extends Nr {
+        let Pu = Mu;
+        const qu = class e extends Nr {
             constructor(e) {
                 super(), this.stdoutDelta = "", this.stderrDelta = "", Ks.util.initPartial(e, this)
             }
@@ -26161,7 +26168,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Pu.runtime = Ks, Pu.typeName = "agent.v1.ShellPartialResult", Pu.fields = Ks.util.newFieldList(() => [{
+        qu.runtime = Ks, qu.typeName = "agent.v1.ShellPartialResult", qu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "stdout_delta",
             kind: "scalar",
@@ -26172,7 +26179,7 @@
             kind: "scalar",
             T: 9
         }]);
-        const qu = class e extends Nr {
+        const xu = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", this.workingDirectory = "", this.toolCallId = "", this.enableWriteShellStdinTool = !1, Ks.util.initPartial(e, this)
             }
@@ -26189,7 +26196,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qu.runtime = Ks, qu.typeName = "agent.v1.BackgroundShellSpawnArgs", qu.fields = Ks.util.newFieldList(() => [{
+        xu.runtime = Ks, xu.typeName = "agent.v1.BackgroundShellSpawnArgs", xu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -26239,7 +26246,7 @@
             T: mu,
             opt: !0
         }]);
-        const xu = class e extends Nr {
+        const Gu = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -26258,32 +26265,32 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        xu.runtime = Ks, xu.typeName = "agent.v1.BackgroundShellSpawnResult", xu.fields = Ks.util.newFieldList(() => [{
+        Gu.runtime = Ks, Gu.typeName = "agent.v1.BackgroundShellSpawnResult", Gu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: Yu,
+            T: Hu,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: Vu,
+            T: Wu,
             oneof: "result"
         }, {
             no: 3,
             name: "rejected",
             kind: "message",
-            T: Lu,
+            T: vu,
             oneof: "result"
         }, {
             no: 4,
             name: "permission_denied",
             kind: "message",
-            T: Uu,
+            T: Ou,
             oneof: "result"
         }]);
-        const Gu = class e extends Nr {
+        const Yu = class e extends Nr {
             constructor(e) {
                 super(), this.shellId = 0, this.command = "", this.workingDirectory = "", Ks.util.initPartial(e, this)
             }
@@ -26300,7 +26307,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Gu.runtime = Ks, Gu.typeName = "agent.v1.BackgroundShellSpawnSuccess", Gu.fields = Ks.util.newFieldList(() => [{
+        Yu.runtime = Ks, Yu.typeName = "agent.v1.BackgroundShellSpawnSuccess", Yu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "shell_id",
             kind: "scalar",
@@ -26322,8 +26329,8 @@
             T: 13,
             opt: !0
         }]);
-        let Yu = Gu;
-        const Hu = class e extends Nr {
+        let Hu = Yu;
+        const Vu = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", this.workingDirectory = "", this.error = "", Ks.util.initPartial(e, this)
             }
@@ -26340,7 +26347,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Hu.runtime = Ks, Hu.typeName = "agent.v1.BackgroundShellSpawnError", Hu.fields = Ks.util.newFieldList(() => [{
+        Vu.runtime = Ks, Vu.typeName = "agent.v1.BackgroundShellSpawnError", Vu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -26356,8 +26363,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Vu = Hu;
-        const Wu = class e extends Nr {
+        let Wu = Vu;
+        const Xu = class e extends Nr {
             constructor(e) {
                 super(), this.shellId = 0, this.chars = "", Ks.util.initPartial(e, this)
             }
@@ -26374,7 +26381,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Wu.runtime = Ks, Wu.typeName = "agent.v1.WriteShellStdinArgs", Wu.fields = Ks.util.newFieldList(() => [{
+        Xu.runtime = Ks, Xu.typeName = "agent.v1.WriteShellStdinArgs", Xu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "shell_id",
             kind: "scalar",
@@ -26385,8 +26392,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Xu = Wu;
-        const ju = class e extends Nr {
+        let ju = Xu;
+        const Ku = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -26405,21 +26412,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ju.runtime = Ks, ju.typeName = "agent.v1.WriteShellStdinResult", ju.fields = Ks.util.newFieldList(() => [{
+        Ku.runtime = Ks, Ku.typeName = "agent.v1.WriteShellStdinResult", Ku.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: zu,
+            T: $u,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: em,
+            T: tm,
             oneof: "result"
         }]);
-        let Ku = ju;
-        const Zu = class e extends Nr {
+        let Zu = Ku;
+        const zu = class e extends Nr {
             constructor(e) {
                 super(), this.shellId = 0, this.terminalFileLengthBeforeInputWritten = 0, Ks.util.initPartial(e, this)
             }
@@ -26436,7 +26443,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Zu.runtime = Ks, Zu.typeName = "agent.v1.WriteShellStdinSuccess", Zu.fields = Ks.util.newFieldList(() => [{
+        zu.runtime = Ks, zu.typeName = "agent.v1.WriteShellStdinSuccess", zu.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "shell_id",
             kind: "scalar",
@@ -26447,8 +26454,8 @@
             kind: "scalar",
             T: 13
         }]);
-        let zu = Zu;
-        const $u = class e extends Nr {
+        let $u = zu;
+        const em = class e extends Nr {
             constructor(e) {
                 super(), this.error = "", Ks.util.initPartial(e, this)
             }
@@ -26465,15 +26472,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $u.runtime = Ks, $u.typeName = "agent.v1.WriteShellStdinError", $u.fields = Ks.util.newFieldList(() => [{
+        em.runtime = Ks, em.typeName = "agent.v1.WriteShellStdinError", em.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error",
             kind: "scalar",
             T: 9
         }]);
-        let em = $u;
-        var tm = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.START_RECORDING = 1] = "START_RECORDING", e[e.SAVE_RECORDING = 2] = "SAVE_RECORDING", e[e.DISCARD_RECORDING = 3] = "DISCARD_RECORDING", e))(tm || {});
-        Ks.util.setEnumType(tm, "agent.v1.RecordingMode", [{
+        let tm = em;
+        var nm = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.START_RECORDING = 1] = "START_RECORDING", e[e.SAVE_RECORDING = 2] = "SAVE_RECORDING", e[e.DISCARD_RECORDING = 3] = "DISCARD_RECORDING", e))(nm || {});
+        Ks.util.setEnumType(nm, "agent.v1.RecordingMode", [{
             no: 0,
             name: "RECORDING_MODE_UNSPECIFIED"
         }, {
@@ -26486,15 +26493,15 @@
             no: 3,
             name: "RECORDING_MODE_DISCARD_RECORDING"
         }]);
-        var nm = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SLASHES_NOT_ALLOWED = 1] = "SLASHES_NOT_ALLOWED", e))(nm || {});
-        Ks.util.setEnumType(nm, "agent.v1.RequestedFilePathRejectedReason", [{
+        var rm = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SLASHES_NOT_ALLOWED = 1] = "SLASHES_NOT_ALLOWED", e))(rm || {});
+        Ks.util.setEnumType(rm, "agent.v1.RequestedFilePathRejectedReason", [{
             no: 0,
             name: "REQUESTED_FILE_PATH_REJECTED_REASON_UNSPECIFIED"
         }, {
             no: 1,
             name: "REQUESTED_FILE_PATH_REJECTED_REASON_SLASHES_NOT_ALLOWED"
         }]);
-        const rm = class e extends Nr {
+        const sm = class e extends Nr {
             constructor(e) {
                 super(), this.mode = 0, this.toolCallId = "", Ks.util.initPartial(e, this)
             }
@@ -26511,11 +26518,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        rm.runtime = Ks, rm.typeName = "agent.v1.RecordScreenArgs", rm.fields = Ks.util.newFieldList(() => [{
+        sm.runtime = Ks, sm.typeName = "agent.v1.RecordScreenArgs", sm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "mode",
             kind: "enum",
-            T: Ks.getEnumType(tm)
+            T: Ks.getEnumType(nm)
         }, {
             no: 2,
             name: "tool_call_id",
@@ -26528,8 +26535,8 @@
             T: 9,
             opt: !0
         }]);
-        let sm = rm;
-        const im = class e extends Nr {
+        let im = sm;
+        const Am = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -26548,33 +26555,33 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        im.runtime = Ks, im.typeName = "agent.v1.RecordScreenResult", im.fields = Ks.util.newFieldList(() => [{
+        Am.runtime = Ks, Am.typeName = "agent.v1.RecordScreenResult", Am.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "start_success",
             kind: "message",
-            T: am,
+            T: lm,
             oneof: "result"
         }, {
             no: 2,
             name: "save_success",
             kind: "message",
-            T: cm,
+            T: um,
             oneof: "result"
         }, {
             no: 3,
             name: "discard_success",
             kind: "message",
-            T: mm,
+            T: dm,
             oneof: "result"
         }, {
             no: 4,
             name: "failure",
             kind: "message",
-            T: gm,
+            T: Em,
             oneof: "result"
         }]);
-        let Am = im;
-        const om = class e extends Nr {
+        let om = Am;
+        const am = class e extends Nr {
             constructor(e) {
                 super(), this.wasPriorRecordingCancelled = !1, this.wasSaveAsFilenameIgnored = !1, Ks.util.initPartial(e, this)
             }
@@ -26591,7 +26598,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        om.runtime = Ks, om.typeName = "agent.v1.RecordScreenStartSuccess", om.fields = Ks.util.newFieldList(() => [{
+        am.runtime = Ks, am.typeName = "agent.v1.RecordScreenStartSuccess", am.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "was_prior_recording_cancelled",
             kind: "scalar",
@@ -26602,8 +26609,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let am = om;
-        const lm = class e extends Nr {
+        let lm = am;
+        const cm = class e extends Nr {
             constructor(e) {
                 super(), this.path = "", this.recordingDurationMs = Pr.zero, Ks.util.initPartial(e, this)
             }
@@ -26620,7 +26627,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        lm.runtime = Ks, lm.typeName = "agent.v1.RecordScreenSaveSuccess", lm.fields = Ks.util.newFieldList(() => [{
+        cm.runtime = Ks, cm.typeName = "agent.v1.RecordScreenSaveSuccess", cm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "path",
             kind: "scalar",
@@ -26634,11 +26641,11 @@
             no: 3,
             name: "requested_file_path_rejected_reason",
             kind: "enum",
-            T: Ks.getEnumType(nm),
+            T: Ks.getEnumType(rm),
             opt: !0
         }]);
-        let cm = lm;
-        const um = class e extends Nr {
+        let um = cm;
+        const mm = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -26655,9 +26662,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        um.runtime = Ks, um.typeName = "agent.v1.RecordScreenDiscardSuccess", um.fields = Ks.util.newFieldList(() => []);
-        let mm = um;
-        const dm = class e extends Nr {
+        mm.runtime = Ks, mm.typeName = "agent.v1.RecordScreenDiscardSuccess", mm.fields = Ks.util.newFieldList(() => []);
+        let dm = mm;
+        const gm = class e extends Nr {
             constructor(e) {
                 super(), this.error = "", Ks.util.initPartial(e, this)
             }
@@ -26674,14 +26681,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        dm.runtime = Ks, dm.typeName = "agent.v1.RecordScreenFailure", dm.fields = Ks.util.newFieldList(() => [{
+        gm.runtime = Ks, gm.typeName = "agent.v1.RecordScreenFailure", gm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error",
             kind: "scalar",
             T: 9
         }]);
-        let gm = dm;
-        const Em = class e extends Nr {
+        let Em = gm;
+        const fm = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -26698,18 +26705,18 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Em.runtime = Ks, Em.typeName = "agent.v1.ApplyAgentDiffToolCall", Em.fields = Ks.util.newFieldList(() => [{
+        fm.runtime = Ks, fm.typeName = "agent.v1.ApplyAgentDiffToolCall", fm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "args",
             kind: "message",
-            T: hm
+            T: Im
         }, {
             no: 2,
             name: "result",
             kind: "message",
-            T: Bm
+            T: Cm
         }]);
-        const fm = class e extends Nr {
+        const hm = class e extends Nr {
             constructor(e) {
                 super(), this.agentId = "", Ks.util.initPartial(e, this)
             }
@@ -26726,14 +26733,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fm.runtime = Ks, fm.typeName = "agent.v1.ApplyAgentDiffArgs", fm.fields = Ks.util.newFieldList(() => [{
+        hm.runtime = Ks, hm.typeName = "agent.v1.ApplyAgentDiffArgs", hm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "agent_id",
             kind: "scalar",
             T: 9
         }]);
-        let hm = fm;
-        const Im = class e extends Nr {
+        let Im = hm;
+        const Bm = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -26752,21 +26759,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Im.runtime = Ks, Im.typeName = "agent.v1.ApplyAgentDiffResult", Im.fields = Ks.util.newFieldList(() => [{
+        Bm.runtime = Ks, Bm.typeName = "agent.v1.ApplyAgentDiffResult", Bm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: Qm,
+            T: pm,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: Sm,
+            T: km,
             oneof: "result"
         }]);
-        let Bm = Im;
-        const Cm = class e extends Nr {
+        let Cm = Bm;
+        const Qm = class e extends Nr {
             constructor(e) {
                 super(), this.appliedChanges = [], Ks.util.initPartial(e, this)
             }
@@ -26783,15 +26790,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Cm.runtime = Ks, Cm.typeName = "agent.v1.ApplyAgentDiffSuccess", Cm.fields = Ks.util.newFieldList(() => [{
+        Qm.runtime = Ks, Qm.typeName = "agent.v1.ApplyAgentDiffSuccess", Qm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "applied_changes",
             kind: "message",
-            T: ym,
+            T: wm,
             repeated: !0
         }]);
-        let Qm = Cm;
-        const pm = class e extends Nr {
+        let pm = Qm;
+        const ym = class e extends Nr {
             constructor(e) {
                 super(), this.path = "", this.changeType = 0, Ks.util.initPartial(e, this)
             }
@@ -26808,7 +26815,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        pm.runtime = Ks, pm.typeName = "agent.v1.AppliedAgentChange", pm.fields = Ks.util.newFieldList(() => [{
+        ym.runtime = Ks, ym.typeName = "agent.v1.AppliedAgentChange", ym.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "path",
             kind: "scalar",
@@ -26817,7 +26824,7 @@
             no: 2,
             name: "change_type",
             kind: "enum",
-            T: Ks.getEnumType(wm)
+            T: Ks.getEnumType(Tm)
         }, {
             no: 3,
             name: "before_content",
@@ -26843,9 +26850,9 @@
             T: 9,
             opt: !0
         }]);
-        let ym = pm;
-        var wm = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CREATED = 1] = "CREATED", e[e.MODIFIED = 2] = "MODIFIED", e[e.DELETED = 3] = "DELETED", e))(wm || {});
-        Ks.util.setEnumType(wm, "agent.v1.AppliedAgentChange.ChangeType", [{
+        let wm = ym;
+        var Tm = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CREATED = 1] = "CREATED", e[e.MODIFIED = 2] = "MODIFIED", e[e.DELETED = 3] = "DELETED", e))(Tm || {});
+        Ks.util.setEnumType(Tm, "agent.v1.AppliedAgentChange.ChangeType", [{
             no: 0,
             name: "CHANGE_TYPE_UNSPECIFIED"
         }, {
@@ -26858,7 +26865,7 @@
             no: 3,
             name: "CHANGE_TYPE_DELETED"
         }]);
-        const Tm = class e extends Nr {
+        const Sm = class e extends Nr {
             constructor(e) {
                 super(), this.error = "", this.appliedChanges = [], Ks.util.initPartial(e, this)
             }
@@ -26875,7 +26882,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Tm.runtime = Ks, Tm.typeName = "agent.v1.ApplyAgentDiffError", Tm.fields = Ks.util.newFieldList(() => [{
+        Sm.runtime = Ks, Sm.typeName = "agent.v1.ApplyAgentDiffError", Sm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error",
             kind: "scalar",
@@ -26884,11 +26891,11 @@
             no: 2,
             name: "applied_changes",
             kind: "message",
-            T: ym,
+            T: wm,
             repeated: !0
         }]);
-        let Sm = Tm;
-        const km = class e extends Nr {
+        let km = Sm;
+        const Rm = class e extends Nr {
             constructor(e) {
                 super(), this.description = "", this.referenceImagePaths = [], Ks.util.initPartial(e, this)
             }
@@ -26905,7 +26912,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        km.runtime = Ks, km.typeName = "agent.v1.GenerateImageArgs", km.fields = Ks.util.newFieldList(() => [{
+        Rm.runtime = Ks, Rm.typeName = "agent.v1.GenerateImageArgs", Rm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "description",
             kind: "scalar",
@@ -26923,8 +26930,8 @@
             T: 9,
             repeated: !0
         }]);
-        let Rm = km;
-        const Nm = class e extends Nr {
+        let Nm = Rm;
+        const _m = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -26943,21 +26950,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Nm.runtime = Ks, Nm.typeName = "agent.v1.GenerateImageResult", Nm.fields = Ks.util.newFieldList(() => [{
+        _m.runtime = Ks, _m.typeName = "agent.v1.GenerateImageResult", _m.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: Jm,
+            T: Fm,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: bm,
+            T: Lm,
             oneof: "result"
         }]);
-        let _m = Nm;
-        const Dm = class e extends Nr {
+        let Dm = _m;
+        const Jm = class e extends Nr {
             constructor(e) {
                 super(), this.filePath = "", this.imageData = "", Ks.util.initPartial(e, this)
             }
@@ -26974,7 +26981,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Dm.runtime = Ks, Dm.typeName = "agent.v1.GenerateImageSuccess", Dm.fields = Ks.util.newFieldList(() => [{
+        Jm.runtime = Ks, Jm.typeName = "agent.v1.GenerateImageSuccess", Jm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_path",
             kind: "scalar",
@@ -26985,8 +26992,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Jm = Dm;
-        const Fm = class e extends Nr {
+        let Fm = Jm;
+        const bm = class e extends Nr {
             constructor(e) {
                 super(), this.error = "", Ks.util.initPartial(e, this)
             }
@@ -27003,14 +27010,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Fm.runtime = Ks, Fm.typeName = "agent.v1.GenerateImageError", Fm.fields = Ks.util.newFieldList(() => [{
+        bm.runtime = Ks, bm.typeName = "agent.v1.GenerateImageError", bm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error",
             kind: "scalar",
             T: 9
         }]);
-        let bm = Fm;
-        const Lm = class e extends Nr {
+        let Lm = bm;
+        const vm = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -27027,18 +27034,18 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Lm.runtime = Ks, Lm.typeName = "agent.v1.GenerateImageToolCall", Lm.fields = Ks.util.newFieldList(() => [{
+        vm.runtime = Ks, vm.typeName = "agent.v1.GenerateImageToolCall", vm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "args",
             kind: "message",
-            T: Rm
+            T: Nm
         }, {
             no: 2,
             name: "result",
             kind: "message",
-            T: _m
+            T: Dm
         }]);
-        const vm = class e extends Nr {
+        const Um = class e extends Nr {
             constructor(e) {
                 super(), this.toolCallId = "", Ks.util.initPartial(e, this)
             }
@@ -27055,18 +27062,18 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vm.runtime = Ks, vm.typeName = "agent.v1.GenerateImageRequestQuery", vm.fields = Ks.util.newFieldList(() => [{
+        Um.runtime = Ks, Um.typeName = "agent.v1.GenerateImageRequestQuery", Um.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "args",
             kind: "message",
-            T: Rm
+            T: Nm
         }, {
             no: 2,
             name: "tool_call_id",
             kind: "scalar",
             T: 9
         }]);
-        const Um = class e extends Nr {
+        const Om = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -27085,20 +27092,20 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Um.runtime = Ks, Um.typeName = "agent.v1.GenerateImageRequestResponse", Um.fields = Ks.util.newFieldList(() => [{
+        Om.runtime = Ks, Om.typeName = "agent.v1.GenerateImageRequestResponse", Om.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "approved",
             kind: "message",
-            T: Mm,
+            T: Pm,
             oneof: "result"
         }, {
             no: 2,
             name: "rejected",
             kind: "message",
-            T: qm,
+            T: xm,
             oneof: "result"
         }]);
-        const Om = class e extends Nr {
+        const Mm = class e extends Nr {
             constructor(e) {
                 super(), this.description = "", Ks.util.initPartial(e, this)
             }
@@ -27115,14 +27122,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Om.runtime = Ks, Om.typeName = "agent.v1.GenerateImageRequestResponse.Approved", Om.fields = Ks.util.newFieldList(() => [{
+        Mm.runtime = Ks, Mm.typeName = "agent.v1.GenerateImageRequestResponse.Approved", Mm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "description",
             kind: "scalar",
             T: 9
         }]);
-        let Mm = Om;
-        const Pm = class e extends Nr {
+        let Pm = Mm;
+        const qm = class e extends Nr {
             constructor(e) {
                 super(), this.reason = "", Ks.util.initPartial(e, this)
             }
@@ -27139,14 +27146,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Pm.runtime = Ks, Pm.typeName = "agent.v1.GenerateImageRequestResponse.Rejected", Pm.fields = Ks.util.newFieldList(() => [{
+        qm.runtime = Ks, qm.typeName = "agent.v1.GenerateImageRequestResponse.Rejected", qm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "reason",
             kind: "scalar",
             T: 9
         }]);
-        let qm = Pm;
-        const xm = class e extends Nr {
+        let xm = qm;
+        const Gm = class e extends Nr {
             constructor(e) {
                 super(), this.filePaths = [], this.commitHashes = [], Ks.util.initPartial(e, this)
             }
@@ -27163,7 +27170,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        xm.runtime = Ks, xm.typeName = "agent.v1.AiAttributionArgs", xm.fields = Ks.util.newFieldList(() => [{
+        Gm.runtime = Ks, Gm.typeName = "agent.v1.AiAttributionArgs", Gm.fields = Ks.util.newFieldList(() => [{
             no: 5,
             name: "file_paths",
             kind: "scalar",
@@ -27206,8 +27213,8 @@
             T: 8,
             opt: !0
         }]);
-        let Gm = xm;
-        const Ym = class e extends Nr {
+        let Ym = Gm;
+        const Hm = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -27226,21 +27233,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ym.runtime = Ks, Ym.typeName = "agent.v1.AiAttributionResult", Ym.fields = Ks.util.newFieldList(() => [{
+        Hm.runtime = Ks, Hm.typeName = "agent.v1.AiAttributionResult", Hm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: Wm,
+            T: Xm,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: jm,
+            T: Km,
             oneof: "result"
         }]);
-        let Hm = Ym;
-        const Vm = class e extends Nr {
+        let Vm = Hm;
+        const Wm = class e extends Nr {
             constructor(e) {
                 super(), this.attributionText = "", Ks.util.initPartial(e, this)
             }
@@ -27257,7 +27264,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Vm.runtime = Ks, Vm.typeName = "agent.v1.AiAttributionSuccess", Vm.fields = Ks.util.newFieldList(() => [{
+        Wm.runtime = Ks, Wm.typeName = "agent.v1.AiAttributionSuccess", Wm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "attribution_text",
             kind: "scalar",
@@ -27269,8 +27276,8 @@
             T: So,
             opt: !0
         }]);
-        let Wm = Vm;
-        const Xm = class e extends Nr {
+        let Xm = Wm;
+        const jm = class e extends Nr {
             constructor(e) {
                 super(), this.error = "", Ks.util.initPartial(e, this)
             }
@@ -27287,14 +27294,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Xm.runtime = Ks, Xm.typeName = "agent.v1.AiAttributionError", Xm.fields = Ks.util.newFieldList(() => [{
+        jm.runtime = Ks, jm.typeName = "agent.v1.AiAttributionError", jm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error",
             kind: "scalar",
             T: 9
         }]);
-        let jm = Xm;
-        const Km = class e extends Nr {
+        let Km = jm;
+        const Zm = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -27311,18 +27318,18 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Km.runtime = Ks, Km.typeName = "agent.v1.AiAttributionToolCall", Km.fields = Ks.util.newFieldList(() => [{
+        Zm.runtime = Ks, Zm.typeName = "agent.v1.AiAttributionToolCall", Zm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "args",
             kind: "message",
-            T: Gm
+            T: Ym
         }, {
             no: 2,
             name: "result",
             kind: "message",
-            T: Hm
+            T: Vm
         }]);
-        const Zm = class e extends Nr {
+        const zm = class e extends Nr {
             constructor(e) {
                 super(), this.files = [], this.targetDir = "", this.repo = "", Ks.util.initPartial(e, this)
             }
@@ -27339,7 +27346,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Zm.runtime = Ks, Zm.typeName = "aiserver.v1.CreateExperimentalIndexRequest", Zm.fields = Ks.util.newFieldList(() => [{
+        zm.runtime = Ks, zm.typeName = "aiserver.v1.CreateExperimentalIndexRequest", zm.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "files",
             kind: "scalar",
@@ -27353,29 +27360,6 @@
         }, {
             no: 3,
             name: "repo",
-            kind: "scalar",
-            T: 9
-        }]);
-        const zm = class e extends Nr {
-            constructor(e) {
-                super(), this.indexId = "", Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        zm.runtime = Ks, zm.typeName = "aiserver.v1.CreateExperimentalIndexResponse", zm.fields = Ks.util.newFieldList(() => [{
-            no: 1,
-            name: "index_id",
             kind: "scalar",
             T: 9
         }]);
@@ -27396,42 +27380,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $m.runtime = Ks, $m.typeName = "aiserver.v1.ListExperimentalIndexFilesRequest", $m.fields = Ks.util.newFieldList(() => [{
+        $m.runtime = Ks, $m.typeName = "aiserver.v1.CreateExperimentalIndexResponse", $m.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
             T: 9
         }]);
         const ed = class e extends Nr {
-            constructor(e) {
-                super(), this.indexId = "", this.files = [], Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        ed.runtime = Ks, ed.typeName = "aiserver.v1.ListExperimentalIndexFilesResponse", ed.fields = Ks.util.newFieldList(() => [{
-            no: 1,
-            name: "index_id",
-            kind: "scalar",
-            T: 9
-        }, {
-            no: 2,
-            name: "files",
-            kind: "message",
-            T: Xd,
-            repeated: !0
-        }]);
-        const td = class e extends Nr {
             constructor(e) {
                 super(), this.indexId = "", Ks.util.initPartial(e, this)
             }
@@ -27448,14 +27403,66 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        td.runtime = Ks, td.typeName = "aiserver.v1.ListenExperimentalIndexRequest", td.fields = Ks.util.newFieldList(() => [{
+        ed.runtime = Ks, ed.typeName = "aiserver.v1.ListExperimentalIndexFilesRequest", ed.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
             T: 9
         }]);
-        let nd = td;
-        const rd = class e extends Nr {
+        const td = class e extends Nr {
+            constructor(e) {
+                super(), this.indexId = "", this.files = [], Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        td.runtime = Ks, td.typeName = "aiserver.v1.ListExperimentalIndexFilesResponse", td.fields = Ks.util.newFieldList(() => [{
+            no: 1,
+            name: "index_id",
+            kind: "scalar",
+            T: 9
+        }, {
+            no: 2,
+            name: "files",
+            kind: "message",
+            T: jd,
+            repeated: !0
+        }]);
+        const nd = class e extends Nr {
+            constructor(e) {
+                super(), this.indexId = "", Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        nd.runtime = Ks, nd.typeName = "aiserver.v1.ListenExperimentalIndexRequest", nd.fields = Ks.util.newFieldList(() => [{
+            no: 1,
+            name: "index_id",
+            kind: "scalar",
+            T: 9
+        }]);
+        let rd = nd;
+        const sd = class e extends Nr {
             constructor(e) {
                 super(), this.indexId = "", this.item = {
                     case: void 0
@@ -27474,7 +27481,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        rd.runtime = Ks, rd.typeName = "aiserver.v1.ListenExperimentalIndexResponse", rd.fields = Ks.util.newFieldList(() => [{
+        sd.runtime = Ks, sd.typeName = "aiserver.v1.ListenExperimentalIndexResponse", sd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
@@ -27483,34 +27490,34 @@
             no: 2,
             name: "ready",
             kind: "message",
-            T: id,
+            T: Ad,
             oneof: "item"
         }, {
             no: 3,
             name: "register",
             kind: "message",
-            T: od,
+            T: ad,
             oneof: "item"
         }, {
             no: 4,
             name: "choose",
             kind: "message",
-            T: ld,
+            T: cd,
             oneof: "item"
         }, {
             no: 5,
             name: "summarize",
             kind: "message",
-            T: ud,
+            T: md,
             oneof: "item"
         }, {
             no: 6,
             name: "error",
             kind: "message",
-            T: dd,
+            T: gd,
             oneof: "item"
         }]);
-        const sd = class e extends Nr {
+        const id = class e extends Nr {
             constructor(e) {
                 super(), this.indexId = "", Ks.util.initPartial(e, this)
             }
@@ -27527,7 +27534,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sd.runtime = Ks, sd.typeName = "aiserver.v1.ListenExperimentalIndexResponse.ReadyItem", sd.fields = Ks.util.newFieldList(() => [{
+        id.runtime = Ks, id.typeName = "aiserver.v1.ListenExperimentalIndexResponse.ReadyItem", id.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
@@ -27536,10 +27543,10 @@
             no: 2,
             name: "request",
             kind: "message",
-            T: nd
+            T: rd
         }]);
-        let id = sd;
-        const Ad = class e extends Nr {
+        let Ad = id;
+        const od = class e extends Nr {
             constructor(e) {
                 super(), this.reqUuid = "", Ks.util.initPartial(e, this)
             }
@@ -27556,24 +27563,24 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ad.runtime = Ks, Ad.typeName = "aiserver.v1.ListenExperimentalIndexResponse.RegisterItem", Ad.fields = Ks.util.newFieldList(() => [{
+        od.runtime = Ks, od.typeName = "aiserver.v1.ListenExperimentalIndexResponse.RegisterItem", od.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "response",
             kind: "message",
-            T: hd
+            T: Id
         }, {
             no: 2,
             name: "request",
             kind: "message",
-            T: Ed
+            T: fd
         }, {
             no: 3,
             name: "req_uuid",
             kind: "scalar",
             T: 9
         }]);
-        let od = Ad;
-        const ad = class e extends Nr {
+        let ad = od;
+        const ld = class e extends Nr {
             constructor(e) {
                 super(), this.reqUuid = "", Ks.util.initPartial(e, this)
             }
@@ -27590,24 +27597,24 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ad.runtime = Ks, ad.typeName = "aiserver.v1.ListenExperimentalIndexResponse.ChooseItem", ad.fields = Ks.util.newFieldList(() => [{
+        ld.runtime = Ks, ld.typeName = "aiserver.v1.ListenExperimentalIndexResponse.ChooseItem", ld.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "response",
             kind: "message",
-            T: Nd
+            T: _d
         }, {
             no: 2,
             name: "request",
             kind: "message",
-            T: yd
+            T: wd
         }, {
             no: 3,
             name: "req_uuid",
             kind: "scalar",
             T: 9
         }]);
-        let ld = ad;
-        const cd = class e extends Nr {
+        let cd = ld;
+        const ud = class e extends Nr {
             constructor(e) {
                 super(), this.reqUuid = "", Ks.util.initPartial(e, this)
             }
@@ -27624,24 +27631,24 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        cd.runtime = Ks, cd.typeName = "aiserver.v1.ListenExperimentalIndexResponse.SummarizeItem", cd.fields = Ks.util.newFieldList(() => [{
+        ud.runtime = Ks, ud.typeName = "aiserver.v1.ListenExperimentalIndexResponse.SummarizeItem", ud.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "response",
             kind: "message",
-            T: Md
+            T: Pd
         }, {
             no: 2,
             name: "request",
             kind: "message",
-            T: Ud
+            T: Od
         }, {
             no: 3,
             name: "req_uuid",
             kind: "scalar",
             T: 9
         }]);
-        let ud = cd;
-        const md = class e extends Nr {
+        let md = ud;
+        const dd = class e extends Nr {
             constructor(e) {
                 super(), this.message = "", this.statusCode = 0, this.request = {
                     case: void 0
@@ -27660,7 +27667,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        md.runtime = Ks, md.typeName = "aiserver.v1.ListenExperimentalIndexResponse.ErrorItem", md.fields = Ks.util.newFieldList(() => [{
+        dd.runtime = Ks, dd.typeName = "aiserver.v1.ListenExperimentalIndexResponse.ErrorItem", dd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "message",
             kind: "scalar",
@@ -27674,19 +27681,19 @@
             no: 3,
             name: "register",
             kind: "message",
-            T: Ed,
+            T: fd,
             oneof: "request"
         }, {
             no: 4,
             name: "choose",
             kind: "message",
-            T: yd,
+            T: wd,
             oneof: "request"
         }, {
             no: 5,
             name: "summarize",
             kind: "message",
-            T: Ud,
+            T: Od,
             oneof: "request"
         }, {
             no: 6,
@@ -27694,8 +27701,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let dd = md;
-        const gd = class e extends Nr {
+        let gd = dd;
+        const Ed = class e extends Nr {
             constructor(e) {
                 super(), this.indexId = "", this.workspaceRelativePath = "", this.content = [], Ks.util.initPartial(e, this)
             }
@@ -27712,7 +27719,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        gd.runtime = Ks, gd.typeName = "aiserver.v1.RegisterFileToIndexRequest", gd.fields = Ks.util.newFieldList(() => [{
+        Ed.runtime = Ks, Ed.typeName = "aiserver.v1.RegisterFileToIndexRequest", Ed.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
@@ -27726,7 +27733,7 @@
             no: 3,
             name: "root_context_node",
             kind: "message",
-            T: zd
+            T: $d
         }, {
             no: 4,
             name: "content",
@@ -27734,8 +27741,8 @@
             T: 9,
             repeated: !0
         }]);
-        let Ed = gd;
-        const fd = class e extends Nr {
+        let fd = Ed;
+        const hd = class e extends Nr {
             constructor(e) {
                 super(), this.fileId = "", this.rootContextNodeId = "", this.dependencyResolutionAttempts = [], Ks.util.initPartial(e, this)
             }
@@ -27752,7 +27759,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fd.runtime = Ks, fd.typeName = "aiserver.v1.RegisterFileToIndexResponse", fd.fields = Ks.util.newFieldList(() => [{
+        hd.runtime = Ks, hd.typeName = "aiserver.v1.RegisterFileToIndexResponse", hd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_id",
             kind: "scalar",
@@ -27766,16 +27773,16 @@
             no: 3,
             name: "dependency_resolution_attempts",
             kind: "message",
-            T: eg,
+            T: tg,
             repeated: !0
         }, {
             no: 4,
             name: "file_data",
             kind: "message",
-            T: Xd
+            T: jd
         }]);
-        let hd = fd;
-        const Id = class e extends Nr {
+        let Id = hd;
+        const Bd = class e extends Nr {
             constructor(e) {
                 super(), this.indexId = "", this.fileId = "", this.dependencyResolutionResults = [], Ks.util.initPartial(e, this)
             }
@@ -27792,7 +27799,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Id.runtime = Ks, Id.typeName = "aiserver.v1.SetupIndexDependenciesRequest", Id.fields = Ks.util.newFieldList(() => [{
+        Bd.runtime = Ks, Bd.typeName = "aiserver.v1.SetupIndexDependenciesRequest", Bd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
@@ -27806,10 +27813,10 @@
             no: 2,
             name: "dependency_resolution_results",
             kind: "message",
-            T: ng,
+            T: rg,
             repeated: !0
         }]);
-        const Bd = class e extends Nr {
+        const Cd = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -27826,8 +27833,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Bd.runtime = Ks, Bd.typeName = "aiserver.v1.SetupIndexDependenciesResponse", Bd.fields = Ks.util.newFieldList(() => []);
-        const Cd = class e extends Nr {
+        Cd.runtime = Ks, Cd.typeName = "aiserver.v1.SetupIndexDependenciesResponse", Cd.fields = Ks.util.newFieldList(() => []);
+        const Qd = class e extends Nr {
             constructor(e) {
                 super(), this.indexId = "", Ks.util.initPartial(e, this)
             }
@@ -27844,13 +27851,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Cd.runtime = Ks, Cd.typeName = "aiserver.v1.ComputeIndexTopoSortRequest", Cd.fields = Ks.util.newFieldList(() => [{
+        Qd.runtime = Ks, Qd.typeName = "aiserver.v1.ComputeIndexTopoSortRequest", Qd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
             T: 9
         }]);
-        const Qd = class e extends Nr {
+        const pd = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -27867,8 +27874,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Qd.runtime = Ks, Qd.typeName = "aiserver.v1.ComputeIndexTopoSortResponse", Qd.fields = Ks.util.newFieldList(() => []);
-        const pd = class e extends Nr {
+        pd.runtime = Ks, pd.typeName = "aiserver.v1.ComputeIndexTopoSortResponse", pd.fields = Ks.util.newFieldList(() => []);
+        const yd = class e extends Nr {
             constructor(e) {
                 super(), this.indexId = "", this.request = {
                     case: void 0
@@ -27887,7 +27894,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        pd.runtime = Ks, pd.typeName = "aiserver.v1.ChooseCodeReferencesRequest", pd.fields = Ks.util.newFieldList(() => [{
+        yd.runtime = Ks, yd.typeName = "aiserver.v1.ChooseCodeReferencesRequest", yd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
@@ -27896,13 +27903,13 @@
             no: 2,
             name: "file",
             kind: "message",
-            T: Td,
+            T: Sd,
             oneof: "request"
         }, {
             no: 3,
             name: "node",
             kind: "message",
-            T: kd,
+            T: Rd,
             oneof: "request"
         }, {
             no: 4,
@@ -27910,8 +27917,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let yd = pd;
-        const wd = class e extends Nr {
+        let wd = yd;
+        const Td = class e extends Nr {
             constructor(e) {
                 super(), this.fileId = "", Ks.util.initPartial(e, this)
             }
@@ -27928,14 +27935,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        wd.runtime = Ks, wd.typeName = "aiserver.v1.ChooseCodeReferencesRequest.FileRequest", wd.fields = Ks.util.newFieldList(() => [{
+        Td.runtime = Ks, Td.typeName = "aiserver.v1.ChooseCodeReferencesRequest.FileRequest", Td.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_id",
             kind: "scalar",
             T: 9
         }]);
-        let Td = wd;
-        const Sd = class e extends Nr {
+        let Sd = Td;
+        const kd = class e extends Nr {
             constructor(e) {
                 super(), this.nodeId = "", Ks.util.initPartial(e, this)
             }
@@ -27952,14 +27959,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Sd.runtime = Ks, Sd.typeName = "aiserver.v1.ChooseCodeReferencesRequest.NodeRequest", Sd.fields = Ks.util.newFieldList(() => [{
+        kd.runtime = Ks, kd.typeName = "aiserver.v1.ChooseCodeReferencesRequest.NodeRequest", kd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "node_id",
             kind: "scalar",
             T: 9
         }]);
-        let kd = Sd;
-        const Rd = class e extends Nr {
+        let Rd = kd;
+        const Nd = class e extends Nr {
             constructor(e) {
                 super(), this.response = {
                     case: void 0
@@ -27978,21 +27985,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Rd.runtime = Ks, Rd.typeName = "aiserver.v1.ChooseCodeReferencesResponse", Rd.fields = Ks.util.newFieldList(() => [{
+        Nd.runtime = Ks, Nd.typeName = "aiserver.v1.ChooseCodeReferencesResponse", Nd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file",
             kind: "message",
-            T: Fd,
+            T: bd,
             oneof: "response"
         }, {
             no: 2,
             name: "node",
             kind: "message",
-            T: Dd,
+            T: Jd,
             oneof: "response"
         }]);
-        let Nd = Rd;
-        const _d = class e extends Nr {
+        let _d = Nd;
+        const Dd = class e extends Nr {
             constructor(e) {
                 super(), this.nodeId = "", this.actions = [], this.skipped = !1, this.dependencies = [], Ks.util.initPartial(e, this)
             }
@@ -28009,7 +28016,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        _d.runtime = Ks, _d.typeName = "aiserver.v1.ChooseCodeReferencesResponse.NodeResponse", _d.fields = Ks.util.newFieldList(() => [{
+        Dd.runtime = Ks, Dd.typeName = "aiserver.v1.ChooseCodeReferencesResponse.NodeResponse", Dd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "node_id",
             kind: "scalar",
@@ -28018,7 +28025,7 @@
             no: 2,
             name: "actions",
             kind: "message",
-            T: gg,
+            T: Eg,
             repeated: !0
         }, {
             no: 3,
@@ -28032,8 +28039,8 @@
             T: 9,
             repeated: !0
         }]);
-        let Dd = _d;
-        const Jd = class e extends Nr {
+        let Jd = Dd;
+        const Fd = class e extends Nr {
             constructor(e) {
                 super(), this.fileId = "", this.nodeResponses = [], Ks.util.initPartial(e, this)
             }
@@ -28050,7 +28057,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Jd.runtime = Ks, Jd.typeName = "aiserver.v1.ChooseCodeReferencesResponse.FileResponse", Jd.fields = Ks.util.newFieldList(() => [{
+        Fd.runtime = Ks, Fd.typeName = "aiserver.v1.ChooseCodeReferencesResponse.FileResponse", Fd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_id",
             kind: "scalar",
@@ -28059,11 +28066,11 @@
             no: 2,
             name: "node_responses",
             kind: "message",
-            T: Dd,
+            T: Jd,
             repeated: !0
         }]);
-        let Fd = Jd;
-        const bd = class e extends Nr {
+        let bd = Fd;
+        const Ld = class e extends Nr {
             constructor(e) {
                 super(), this.nodeId = "", this.references = [], Ks.util.initPartial(e, this)
             }
@@ -28080,7 +28087,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bd.runtime = Ks, bd.typeName = "aiserver.v1.RegisterCodeReferencesRequest", bd.fields = Ks.util.newFieldList(() => [{
+        Ld.runtime = Ks, Ld.typeName = "aiserver.v1.RegisterCodeReferencesRequest", Ld.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "node_id",
             kind: "scalar",
@@ -28089,10 +28096,10 @@
             no: 2,
             name: "references",
             kind: "message",
-            T: Ag,
+            T: og,
             repeated: !0
         }]);
-        const Ld = class e extends Nr {
+        const vd = class e extends Nr {
             constructor(e) {
                 super(), this.dependencies = [], Ks.util.initPartial(e, this)
             }
@@ -28109,14 +28116,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ld.runtime = Ks, Ld.typeName = "aiserver.v1.RegisterCodeReferencesResponse", Ld.fields = Ks.util.newFieldList(() => [{
+        vd.runtime = Ks, vd.typeName = "aiserver.v1.RegisterCodeReferencesResponse", vd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "dependencies",
             kind: "scalar",
             T: 9,
             repeated: !0
         }]);
-        const vd = class e extends Nr {
+        const Ud = class e extends Nr {
             constructor(e) {
                 super(), this.indexId = "", this.nodeId = "", this.recompute = !1, Ks.util.initPartial(e, this)
             }
@@ -28133,7 +28140,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vd.runtime = Ks, vd.typeName = "aiserver.v1.SummarizeWithReferencesRequest", vd.fields = Ks.util.newFieldList(() => [{
+        Ud.runtime = Ks, Ud.typeName = "aiserver.v1.SummarizeWithReferencesRequest", Ud.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
@@ -28149,8 +28156,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Ud = vd;
-        const Od = class e extends Nr {
+        let Od = Ud;
+        const Md = class e extends Nr {
             constructor(e) {
                 super(), this.response = {
                     case: void 0
@@ -28169,17 +28176,17 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Od.runtime = Ks, Od.typeName = "aiserver.v1.SummarizeWithReferencesResponse", Od.fields = Ks.util.newFieldList(() => [{
+        Md.runtime = Ks, Md.typeName = "aiserver.v1.SummarizeWithReferencesResponse", Md.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: qd,
+            T: xd,
             oneof: "response"
         }, {
             no: 2,
             name: "dependency",
             kind: "message",
-            T: Gd,
+            T: Yd,
             oneof: "response"
         }, {
             no: 3,
@@ -28187,8 +28194,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Md = Od;
-        const Pd = class e extends Nr {
+        let Pd = Md;
+        const qd = class e extends Nr {
             constructor(e) {
                 super(), this.summary = "", Ks.util.initPartial(e, this)
             }
@@ -28205,14 +28212,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Pd.runtime = Ks, Pd.typeName = "aiserver.v1.SummarizeWithReferencesResponse.Success", Pd.fields = Ks.util.newFieldList(() => [{
+        qd.runtime = Ks, qd.typeName = "aiserver.v1.SummarizeWithReferencesResponse.Success", qd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "summary",
             kind: "scalar",
             T: 9
         }]);
-        let qd = Pd;
-        const xd = class e extends Nr {
+        let xd = qd;
+        const Gd = class e extends Nr {
             constructor(e) {
                 super(), this.nodes = [], Ks.util.initPartial(e, this)
             }
@@ -28229,15 +28236,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        xd.runtime = Ks, xd.typeName = "aiserver.v1.SummarizeWithReferencesResponse.Dependency", xd.fields = Ks.util.newFieldList(() => [{
+        Gd.runtime = Ks, Gd.typeName = "aiserver.v1.SummarizeWithReferencesResponse.Dependency", Gd.fields = Ks.util.newFieldList(() => [{
             no: 2,
             name: "nodes",
             kind: "scalar",
             T: 9,
             repeated: !0
         }]);
-        let Gd = xd;
-        const Yd = class e extends Nr {
+        let Yd = Gd;
+        const Hd = class e extends Nr {
             constructor(e) {
                 super(), this.reqUuid = "", Ks.util.initPartial(e, this)
             }
@@ -28254,13 +28261,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Yd.runtime = Ks, Yd.typeName = "aiserver.v1.RequestReceivedResponse", Yd.fields = Ks.util.newFieldList(() => [{
+        Hd.runtime = Ks, Hd.typeName = "aiserver.v1.RequestReceivedResponse", Hd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "req_uuid",
             kind: "scalar",
             T: 9
         }]);
-        const Hd = class e extends Nr {
+        const Vd = class e extends Nr {
             constructor(e) {
                 super(), this.indexId = "", this.id = "", this.summary = "", Ks.util.initPartial(e, this)
             }
@@ -28277,7 +28284,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Hd.runtime = Ks, Hd.typeName = "aiserver.v1.ReflectionData", Hd.fields = Ks.util.newFieldList(() => [{
+        Vd.runtime = Ks, Vd.typeName = "aiserver.v1.ReflectionData", Vd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
@@ -28293,8 +28300,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Vd = Hd;
-        const Wd = class e extends Nr {
+        let Wd = Vd;
+        const Xd = class e extends Nr {
             constructor(e) {
                 super(), this.indexId = "", this.workspaceRelativePath = "", this.stage = "", this.order = 0, this.nodes = [], Ks.util.initPartial(e, this)
             }
@@ -28311,7 +28318,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Wd.runtime = Ks, Wd.typeName = "aiserver.v1.IndexFileData", Wd.fields = Ks.util.newFieldList(() => [{
+        Xd.runtime = Ks, Xd.typeName = "aiserver.v1.IndexFileData", Xd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "index_id",
             kind: "scalar",
@@ -28335,11 +28342,11 @@
             no: 5,
             name: "nodes",
             kind: "message",
-            T: Kd,
+            T: Zd,
             repeated: !0
         }]);
-        let Xd = Wd;
-        const jd = class e extends Nr {
+        let jd = Xd;
+        const Kd = class e extends Nr {
             constructor(e) {
                 super(), this.nodeId = "", this.stage = "", this.content = "", this.summary = "", Ks.util.initPartial(e, this)
             }
@@ -28356,7 +28363,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        jd.runtime = Ks, jd.typeName = "aiserver.v1.IndexFileData.NodeData", jd.fields = Ks.util.newFieldList(() => [{
+        Kd.runtime = Ks, Kd.typeName = "aiserver.v1.IndexFileData.NodeData", Kd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "node_id",
             kind: "scalar",
@@ -28377,8 +28384,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Kd = jd;
-        const Zd = class e extends Nr {
+        let Zd = Kd;
+        const zd = class e extends Nr {
             constructor(e) {
                 super(), this.workspaceRelativePath = "", this.startLineNumber = 0, this.endLineNumber = 0, this.children = [], Ks.util.initPartial(e, this)
             }
@@ -28395,7 +28402,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Zd.runtime = Ks, Zd.typeName = "aiserver.v1.SerializedContextNode", Zd.fields = Ks.util.newFieldList(() => [{
+        zd.runtime = Ks, zd.typeName = "aiserver.v1.SerializedContextNode", zd.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "workspace_relative_path",
             kind: "scalar",
@@ -28414,16 +28421,16 @@
             no: 4,
             name: "children",
             kind: "message",
-            T: Zd,
+            T: zd,
             repeated: !0
         }, {
             no: 5,
             name: "node_snippets",
             kind: "message",
-            T: cg
+            T: ug
         }]);
-        let zd = Zd;
-        const $d = class e extends Nr {
+        let $d = zd;
+        const eg = class e extends Nr {
             constructor(e) {
                 super(), this.workspaceRelativePath = "", this.nodeId = "", Ks.util.initPartial(e, this)
             }
@@ -28440,7 +28447,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $d.runtime = Ks, $d.typeName = "aiserver.v1.URIResolutionAttempt", $d.fields = Ks.util.newFieldList(() => [{
+        eg.runtime = Ks, eg.typeName = "aiserver.v1.URIResolutionAttempt", eg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "workspace_relative_path",
             kind: "scalar",
@@ -28454,10 +28461,10 @@
             no: 3,
             name: "symbol",
             kind: "message",
-            T: gg
+            T: Eg
         }]);
-        let eg = $d;
-        const tg = class e extends Nr {
+        let tg = eg;
+        const ng = class e extends Nr {
             constructor(e) {
                 super(), this.resolvedPaths = [], Ks.util.initPartial(e, this)
             }
@@ -28474,11 +28481,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        tg.runtime = Ks, tg.typeName = "aiserver.v1.URIResolutionResult", tg.fields = Ks.util.newFieldList(() => [{
+        ng.runtime = Ks, ng.typeName = "aiserver.v1.URIResolutionResult", ng.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "request",
             kind: "message",
-            T: eg
+            T: tg
         }, {
             no: 2,
             name: "resolved_paths",
@@ -28486,8 +28493,8 @@
             T: 9,
             repeated: !0
         }]);
-        let ng = tg;
-        const rg = class e extends Nr {
+        let rg = ng;
+        const sg = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -28504,13 +28511,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        rg.runtime = Ks, rg.typeName = "aiserver.v1.ExtractPathsRequest", rg.fields = Ks.util.newFieldList(() => [{
+        sg.runtime = Ks, sg.typeName = "aiserver.v1.ExtractPathsRequest", sg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_code_snippets",
             kind: "message",
-            T: cg
+            T: ug
         }]);
-        const sg = class e extends Nr {
+        const ig = class e extends Nr {
             constructor(e) {
                 super(), this.paths = [], Ks.util.initPartial(e, this)
             }
@@ -28527,14 +28534,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sg.runtime = Ks, sg.typeName = "aiserver.v1.ExtractPathsResponse", sg.fields = Ks.util.newFieldList(() => [{
+        ig.runtime = Ks, ig.typeName = "aiserver.v1.ExtractPathsResponse", ig.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "paths",
             kind: "message",
-            T: gg,
+            T: Eg,
             repeated: !0
         }]);
-        const ig = class e extends Nr {
+        const Ag = class e extends Nr {
             constructor(e) {
                 super(), this.references = [], Ks.util.initPartial(e, this)
             }
@@ -28551,20 +28558,20 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ig.runtime = Ks, ig.typeName = "aiserver.v1.SymbolActionResults", ig.fields = Ks.util.newFieldList(() => [{
+        Ag.runtime = Ks, Ag.typeName = "aiserver.v1.SymbolActionResults", Ag.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "action",
             kind: "message",
-            T: gg
+            T: Eg
         }, {
             no: 2,
             name: "references",
             kind: "message",
-            T: ag,
+            T: lg,
             repeated: !0
         }]);
-        let Ag = ig;
-        const og = class e extends Nr {
+        let og = Ag;
+        const ag = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -28581,7 +28588,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        og.runtime = Ks, og.typeName = "aiserver.v1.SymbolActionResultReference", og.fields = Ks.util.newFieldList(() => [{
+        ag.runtime = Ks, ag.typeName = "aiserver.v1.SymbolActionResultReference", ag.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "range",
             kind: "message",
@@ -28590,10 +28597,10 @@
             no: 2,
             name: "reference",
             kind: "message",
-            T: cg
+            T: ug
         }]);
-        let ag = og;
-        const lg = class e extends Nr {
+        let lg = ag;
+        const cg = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.totalLines = 0, this.snippets = [], Ks.util.initPartial(e, this)
             }
@@ -28610,7 +28617,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        lg.runtime = Ks, lg.typeName = "aiserver.v1.FileCodeSnippets", lg.fields = Ks.util.newFieldList(() => [{
+        cg.runtime = Ks, cg.typeName = "aiserver.v1.FileCodeSnippets", cg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -28624,11 +28631,11 @@
             no: 3,
             name: "snippets",
             kind: "message",
-            T: mg,
+            T: dg,
             repeated: !0
         }]);
-        let cg = lg;
-        const ug = class e extends Nr {
+        let ug = cg;
+        const mg = class e extends Nr {
             constructor(e) {
                 super(), this.startLineNumber = 0, this.endLineNumber = 0, this.lines = [], Ks.util.initPartial(e, this)
             }
@@ -28645,7 +28652,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ug.runtime = Ks, ug.typeName = "aiserver.v1.CodeSnippet", ug.fields = Ks.util.newFieldList(() => [{
+        mg.runtime = Ks, mg.typeName = "aiserver.v1.CodeSnippet", mg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "start_line_number",
             kind: "scalar",
@@ -28662,8 +28669,8 @@
             T: 9,
             repeated: !0
         }]);
-        let mg = ug;
-        const dg = class e extends Nr {
+        let dg = mg;
+        const gg = class e extends Nr {
             constructor(e) {
                 super(), this.workspaceRelativePath = "", this.lineNumber = 0, this.symbolStartColumn = 0, this.symbolEndColumn = 0, this.action = 0, this.symbol = "", Ks.util.initPartial(e, this)
             }
@@ -28680,7 +28687,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        dg.runtime = Ks, dg.typeName = "aiserver.v1.CodeSymbolWithAction", dg.fields = Ks.util.newFieldList(() => [{
+        gg.runtime = Ks, gg.typeName = "aiserver.v1.CodeSymbolWithAction", gg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "workspace_relative_path",
             kind: "scalar",
@@ -28704,16 +28711,16 @@
             no: 5,
             name: "action",
             kind: "enum",
-            T: Ks.getEnumType(Eg)
+            T: Ks.getEnumType(fg)
         }, {
             no: 6,
             name: "symbol",
             kind: "scalar",
             T: 9
         }]);
-        let gg = dg;
-        var Eg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.GO_TO_DEFINITION = 1] = "GO_TO_DEFINITION", e[e.GO_TO_IMPLEMENTATION = 2] = "GO_TO_IMPLEMENTATION", e[e.REFERENCES = 3] = "REFERENCES", e))(Eg || {});
-        Ks.util.setEnumType(Eg, "aiserver.v1.CodeSymbolWithAction.CodeSymbolAction", [{
+        let Eg = gg;
+        var fg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.GO_TO_DEFINITION = 1] = "GO_TO_DEFINITION", e[e.GO_TO_IMPLEMENTATION = 2] = "GO_TO_IMPLEMENTATION", e[e.REFERENCES = 3] = "REFERENCES", e))(fg || {});
+        Ks.util.setEnumType(fg, "aiserver.v1.CodeSymbolWithAction.CodeSymbolAction", [{
             no: 0,
             name: "CODE_SYMBOL_ACTION_UNSPECIFIED"
         }, {
@@ -28726,32 +28733,32 @@
             no: 3,
             name: "CODE_SYMBOL_ACTION_REFERENCES"
         }]);
-        var fg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DEFAULT = 1] = "DEFAULT", e))(fg || {});
-        Ks.util.setEnumType(fg, "aiserver.v1.ChunkingStrategy", [{
+        var hg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DEFAULT = 1] = "DEFAULT", e))(hg || {});
+        Ks.util.setEnumType(hg, "aiserver.v1.ChunkingStrategy", [{
             no: 0,
             name: "CHUNKING_STRATEGY_UNSPECIFIED"
         }, {
             no: 1,
             name: "CHUNKING_STRATEGY_DEFAULT"
         }]);
-        var hg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SIMHASH = 1] = "SIMHASH", e))(hg || {});
-        Ks.util.setEnumType(hg, "aiserver.v1.SimilarityMetricType", [{
+        var Ig = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SIMHASH = 1] = "SIMHASH", e))(Ig || {});
+        Ks.util.setEnumType(Ig, "aiserver.v1.SimilarityMetricType", [{
             no: 0,
             name: "SIMILARITY_METRIC_TYPE_UNSPECIFIED"
         }, {
             no: 1,
             name: "SIMILARITY_METRIC_TYPE_SIMHASH"
         }]);
-        var Ig = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SHA256 = 1] = "SHA256", e))(Ig || {});
-        Ks.util.setEnumType(Ig, "aiserver.v1.PathKeyHashType", [{
+        var Bg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SHA256 = 1] = "SHA256", e))(Bg || {});
+        Ks.util.setEnumType(Bg, "aiserver.v1.PathKeyHashType", [{
             no: 0,
             name: "PATH_KEY_HASH_TYPE_UNSPECIFIED"
         }, {
             no: 1,
             name: "PATH_KEY_HASH_TYPE_SHA256"
         }]);
-        var Bg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LULEA = 1] = "LULEA", e[e.UMEA = 2] = "UMEA", e[e.NONE = 3] = "NONE", e[e.LLAMA = 4] = "LLAMA", e[e.STARCODER_V1 = 5] = "STARCODER_V1", e[e.GPT_3_5_LOGPROBS = 6] = "GPT_3_5_LOGPROBS", e[e.LULEA_HAIKU = 7] = "LULEA_HAIKU", e[e.COHERE = 8] = "COHERE", e[e.VOYAGE = 9] = "VOYAGE", e[e.VOYAGE_EMBEDS = 10] = "VOYAGE_EMBEDS", e[e.IDENTITY = 11] = "IDENTITY", e[e.ADA_EMBEDS = 12] = "ADA_EMBEDS", e))(Bg || {});
-        Ks.util.setEnumType(Bg, "aiserver.v1.RerankerAlgorithm", [{
+        var Cg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LULEA = 1] = "LULEA", e[e.UMEA = 2] = "UMEA", e[e.NONE = 3] = "NONE", e[e.LLAMA = 4] = "LLAMA", e[e.STARCODER_V1 = 5] = "STARCODER_V1", e[e.GPT_3_5_LOGPROBS = 6] = "GPT_3_5_LOGPROBS", e[e.LULEA_HAIKU = 7] = "LULEA_HAIKU", e[e.COHERE = 8] = "COHERE", e[e.VOYAGE = 9] = "VOYAGE", e[e.VOYAGE_EMBEDS = 10] = "VOYAGE_EMBEDS", e[e.IDENTITY = 11] = "IDENTITY", e[e.ADA_EMBEDS = 12] = "ADA_EMBEDS", e))(Cg || {});
+        Ks.util.setEnumType(Cg, "aiserver.v1.RerankerAlgorithm", [{
             no: 0,
             name: "RERANKER_ALGORITHM_UNSPECIFIED"
         }, {
@@ -28791,8 +28798,8 @@
             no: 12,
             name: "RERANKER_ALGORITHM_ADA_EMBEDS"
         }]);
-        var Cg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.AURORA = 1] = "AURORA", e[e.PLANETSCALE = 2] = "PLANETSCALE", e))(Cg || {});
-        Ks.util.setEnumType(Cg, "aiserver.v1.DatabaseProvider", [{
+        var Qg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.AURORA = 1] = "AURORA", e[e.PLANETSCALE = 2] = "PLANETSCALE", e))(Qg || {});
+        Ks.util.setEnumType(Qg, "aiserver.v1.DatabaseProvider", [{
             no: 0,
             name: "DATABASE_PROVIDER_UNSPECIFIED"
         }, {
@@ -28802,8 +28809,8 @@
             no: 2,
             name: "DATABASE_PROVIDER_PLANETSCALE"
         }]);
-        var Qg = (e => (e[e.RECHUNKER_CHOICE_UNSPECIFIED = 0] = "RECHUNKER_CHOICE_UNSPECIFIED", e[e.RECHUNKER_CHOICE_IDENTITY = 1] = "RECHUNKER_CHOICE_IDENTITY", e[e.RECHUNKER_CHOICE_600_TOKS = 2] = "RECHUNKER_CHOICE_600_TOKS", e[e.RECHUNKER_CHOICE_2400_TOKS = 3] = "RECHUNKER_CHOICE_2400_TOKS", e[e.RECHUNKER_CHOICE_4000_TOKS = 4] = "RECHUNKER_CHOICE_4000_TOKS", e))(Qg || {});
-        Ks.util.setEnumType(Qg, "aiserver.v1.RechunkerChoice", [{
+        var pg = (e => (e[e.RECHUNKER_CHOICE_UNSPECIFIED = 0] = "RECHUNKER_CHOICE_UNSPECIFIED", e[e.RECHUNKER_CHOICE_IDENTITY = 1] = "RECHUNKER_CHOICE_IDENTITY", e[e.RECHUNKER_CHOICE_600_TOKS = 2] = "RECHUNKER_CHOICE_600_TOKS", e[e.RECHUNKER_CHOICE_2400_TOKS = 3] = "RECHUNKER_CHOICE_2400_TOKS", e[e.RECHUNKER_CHOICE_4000_TOKS = 4] = "RECHUNKER_CHOICE_4000_TOKS", e))(pg || {});
+        Ks.util.setEnumType(pg, "aiserver.v1.RechunkerChoice", [{
             no: 0,
             name: "RECHUNKER_CHOICE_UNSPECIFIED"
         }, {
@@ -28819,7 +28826,7 @@
             no: 4,
             name: "RECHUNKER_CHOICE_4000_TOKS"
         }]);
-        const pg = class e extends Nr {
+        const yg = class e extends Nr {
             constructor(e) {
                 super(), this.readmes = [], this.topLevelRelativeWorkspacePaths = [], this.workspaceRootPath = "", Ks.util.initPartial(e, this)
             }
@@ -28836,11 +28843,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        pg.runtime = Ks, pg.typeName = "aiserver.v1.GetHighLevelFolderDescriptionRequest", pg.fields = Ks.util.newFieldList(() => [{
+        yg.runtime = Ks, yg.typeName = "aiserver.v1.GetHighLevelFolderDescriptionRequest", yg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "readmes",
             kind: "message",
-            T: wg,
+            T: Tg,
             repeated: !0
         }, {
             no: 2,
@@ -28854,7 +28861,7 @@
             kind: "scalar",
             T: 9
         }]);
-        const yg = class e extends Nr {
+        const wg = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.contents = "", Ks.util.initPartial(e, this)
             }
@@ -28871,7 +28878,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yg.runtime = Ks, yg.typeName = "aiserver.v1.GetHighLevelFolderDescriptionRequest.Readme", yg.fields = Ks.util.newFieldList(() => [{
+        wg.runtime = Ks, wg.typeName = "aiserver.v1.GetHighLevelFolderDescriptionRequest.Readme", wg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -28882,8 +28889,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let wg = yg;
-        const Tg = class e extends Nr {
+        let Tg = wg;
+        const Sg = class e extends Nr {
             constructor(e) {
                 super(), this.description = "", Ks.util.initPartial(e, this)
             }
@@ -28900,34 +28907,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Tg.runtime = Ks, Tg.typeName = "aiserver.v1.GetHighLevelFolderDescriptionResponse", Tg.fields = Ks.util.newFieldList(() => [{
+        Sg.runtime = Ks, Sg.typeName = "aiserver.v1.GetHighLevelFolderDescriptionResponse", Sg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "description",
             kind: "scalar",
             T: 9
-        }]);
-        const Sg = class e extends Nr {
-            constructor(e) {
-                super(), Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        Sg.runtime = Ks, Sg.typeName = "aiserver.v1.EnsureIndexCreatedRequest", Sg.fields = Ks.util.newFieldList(() => [{
-            no: 1,
-            name: "repository",
-            kind: "message",
-            T: gh
         }]);
         const kg = class e extends Nr {
             constructor(e) {
@@ -28946,225 +28930,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kg.runtime = Ks, kg.typeName = "aiserver.v1.EnsureIndexCreatedResponse", kg.fields = Ks.util.newFieldList(() => []);
+        kg.runtime = Ks, kg.typeName = "aiserver.v1.EnsureIndexCreatedRequest", kg.fields = Ks.util.newFieldList(() => [{
+            no: 1,
+            name: "repository",
+            kind: "message",
+            T: Eh
+        }]);
         const Rg = class e extends Nr {
-            constructor(e) {
-                super(), this.relativeWorkspacePath = "", this.hashOfNode = "", Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        Rg.runtime = Ks, Rg.typeName = "aiserver.v1.PartialPathItem", Rg.fields = Ks.util.newFieldList(() => [{
-            no: 1,
-            name: "relative_workspace_path",
-            kind: "scalar",
-            T: 9
-        }, {
-            no: 2,
-            name: "hash_of_node",
-            kind: "scalar",
-            T: 9
-        }]);
-        let Ng = Rg;
-        const _g = class e extends Nr {
-            constructor(e) {
-                super(), this.rootHash = "", this.potentialLegacyRepoName = "", Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        _g.runtime = Ks, _g.typeName = "aiserver.v1.FastRepoInitHandshakeRequest", _g.fields = Ks.util.newFieldList(() => [{
-            no: 1,
-            name: "repository",
-            kind: "message",
-            T: gh
-        }, {
-            no: 2,
-            name: "root_hash",
-            kind: "scalar",
-            T: 9
-        }, {
-            no: 3,
-            name: "potential_legacy_repo_name",
-            kind: "scalar",
-            T: 9
-        }]);
-        const Dg = class e extends Nr {
-            constructor(e) {
-                super(), this.status = 0, this.repoName = "", Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        Dg.runtime = Ks, Dg.typeName = "aiserver.v1.FastRepoInitHandshakeResponse", Dg.fields = Ks.util.newFieldList(() => [{
-            no: 1,
-            name: "status",
-            kind: "enum",
-            T: Ks.getEnumType(Jg)
-        }, {
-            no: 2,
-            name: "repo_name",
-            kind: "scalar",
-            T: 9
-        }]);
-        var Jg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.UP_TO_DATE = 1] = "UP_TO_DATE", e[e.OUT_OF_SYNC = 2] = "OUT_OF_SYNC", e[e.FAILURE = 3] = "FAILURE", e[e.EMPTY = 4] = "EMPTY", e))(Jg || {});
-        Ks.util.setEnumType(Jg, "aiserver.v1.FastRepoInitHandshakeResponse.Status", [{
-            no: 0,
-            name: "STATUS_UNSPECIFIED"
-        }, {
-            no: 1,
-            name: "STATUS_UP_TO_DATE"
-        }, {
-            no: 2,
-            name: "STATUS_OUT_OF_SYNC"
-        }, {
-            no: 3,
-            name: "STATUS_FAILURE"
-        }, {
-            no: 4,
-            name: "STATUS_EMPTY"
-        }]);
-        const Fg = class e extends Nr {
-            constructor(e) {
-                super(), this.encryptedRelativePath = "", this.hash = "", this.children = [], Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        Fg.runtime = Ks, Fg.typeName = "aiserver.v1.LocalCodebaseFileInfo", Fg.fields = Ks.util.newFieldList(() => [{
-            no: 1,
-            name: "encrypted_relative_path",
-            kind: "scalar",
-            T: 9
-        }, {
-            no: 2,
-            name: "hash",
-            kind: "scalar",
-            T: 9
-        }, {
-            no: 3,
-            name: "children",
-            kind: "message",
-            T: Fg,
-            repeated: !0
-        }, {
-            no: 4,
-            name: "separator",
-            kind: "scalar",
-            T: 9,
-            opt: !0
-        }]);
-        let bg = Fg;
-        const Lg = class e extends Nr {
-            constructor(e) {
-                super(), this.rootHash = "", this.similarityMetricType = 0, this.similarityMetric = [], this.pathKeyHash = "", this.pathKeyHashType = 0, this.doCopy = !1, this.pathKey = "", this.returnAfterBackgroundCopyStarted = !1, Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        Lg.runtime = Ks, Lg.typeName = "aiserver.v1.FastRepoInitHandshakeV2Request", Lg.fields = Ks.util.newFieldList(() => [{
-            no: 1,
-            name: "repository",
-            kind: "message",
-            T: gh
-        }, {
-            no: 2,
-            name: "root_hash",
-            kind: "scalar",
-            T: 9
-        }, {
-            no: 3,
-            name: "similarity_metric_type",
-            kind: "enum",
-            T: Ks.getEnumType(hg)
-        }, {
-            no: 4,
-            name: "similarity_metric",
-            kind: "scalar",
-            T: 2,
-            repeated: !0
-        }, {
-            no: 5,
-            name: "path_key_hash",
-            kind: "scalar",
-            T: 9
-        }, {
-            no: 6,
-            name: "path_key_hash_type",
-            kind: "enum",
-            T: Ks.getEnumType(Ig)
-        }, {
-            no: 7,
-            name: "do_copy",
-            kind: "scalar",
-            T: 8
-        }, {
-            no: 8,
-            name: "path_key",
-            kind: "scalar",
-            T: 9
-        }, {
-            no: 9,
-            name: "local_codebase_root_info",
-            kind: "message",
-            T: bg
-        }, {
-            no: 10,
-            name: "return_after_background_copy_started",
-            kind: "scalar",
-            T: 8
-        }]);
-        const vg = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -29181,19 +28953,254 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vg.runtime = Ks, vg.typeName = "aiserver.v1.QueryOnlyRepositoryInfo", vg.fields = Ks.util.newFieldList(() => [{
+        Rg.runtime = Ks, Rg.typeName = "aiserver.v1.EnsureIndexCreatedResponse", Rg.fields = Ks.util.newFieldList(() => []);
+        const Ng = class e extends Nr {
+            constructor(e) {
+                super(), this.relativeWorkspacePath = "", this.hashOfNode = "", Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        Ng.runtime = Ks, Ng.typeName = "aiserver.v1.PartialPathItem", Ng.fields = Ks.util.newFieldList(() => [{
+            no: 1,
+            name: "relative_workspace_path",
+            kind: "scalar",
+            T: 9
+        }, {
+            no: 2,
+            name: "hash_of_node",
+            kind: "scalar",
+            T: 9
+        }]);
+        let _g = Ng;
+        const Dg = class e extends Nr {
+            constructor(e) {
+                super(), this.rootHash = "", this.potentialLegacyRepoName = "", Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        Dg.runtime = Ks, Dg.typeName = "aiserver.v1.FastRepoInitHandshakeRequest", Dg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
+        }, {
+            no: 2,
+            name: "root_hash",
+            kind: "scalar",
+            T: 9
+        }, {
+            no: 3,
+            name: "potential_legacy_repo_name",
+            kind: "scalar",
+            T: 9
+        }]);
+        const Jg = class e extends Nr {
+            constructor(e) {
+                super(), this.status = 0, this.repoName = "", Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        Jg.runtime = Ks, Jg.typeName = "aiserver.v1.FastRepoInitHandshakeResponse", Jg.fields = Ks.util.newFieldList(() => [{
+            no: 1,
+            name: "status",
+            kind: "enum",
+            T: Ks.getEnumType(Fg)
+        }, {
+            no: 2,
+            name: "repo_name",
+            kind: "scalar",
+            T: 9
+        }]);
+        var Fg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.UP_TO_DATE = 1] = "UP_TO_DATE", e[e.OUT_OF_SYNC = 2] = "OUT_OF_SYNC", e[e.FAILURE = 3] = "FAILURE", e[e.EMPTY = 4] = "EMPTY", e))(Fg || {});
+        Ks.util.setEnumType(Fg, "aiserver.v1.FastRepoInitHandshakeResponse.Status", [{
+            no: 0,
+            name: "STATUS_UNSPECIFIED"
+        }, {
+            no: 1,
+            name: "STATUS_UP_TO_DATE"
+        }, {
+            no: 2,
+            name: "STATUS_OUT_OF_SYNC"
+        }, {
+            no: 3,
+            name: "STATUS_FAILURE"
+        }, {
+            no: 4,
+            name: "STATUS_EMPTY"
+        }]);
+        const bg = class e extends Nr {
+            constructor(e) {
+                super(), this.encryptedRelativePath = "", this.hash = "", this.children = [], Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        bg.runtime = Ks, bg.typeName = "aiserver.v1.LocalCodebaseFileInfo", bg.fields = Ks.util.newFieldList(() => [{
+            no: 1,
+            name: "encrypted_relative_path",
+            kind: "scalar",
+            T: 9
+        }, {
+            no: 2,
+            name: "hash",
+            kind: "scalar",
+            T: 9
+        }, {
+            no: 3,
+            name: "children",
+            kind: "message",
+            T: bg,
+            repeated: !0
+        }, {
+            no: 4,
+            name: "separator",
+            kind: "scalar",
+            T: 9,
+            opt: !0
+        }]);
+        let Lg = bg;
+        const vg = class e extends Nr {
+            constructor(e) {
+                super(), this.rootHash = "", this.similarityMetricType = 0, this.similarityMetric = [], this.pathKeyHash = "", this.pathKeyHashType = 0, this.doCopy = !1, this.pathKey = "", this.returnAfterBackgroundCopyStarted = !1, Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        vg.runtime = Ks, vg.typeName = "aiserver.v1.FastRepoInitHandshakeV2Request", vg.fields = Ks.util.newFieldList(() => [{
+            no: 1,
+            name: "repository",
+            kind: "message",
+            T: Eh
+        }, {
+            no: 2,
+            name: "root_hash",
+            kind: "scalar",
+            T: 9
+        }, {
+            no: 3,
+            name: "similarity_metric_type",
+            kind: "enum",
+            T: Ks.getEnumType(Ig)
+        }, {
+            no: 4,
+            name: "similarity_metric",
+            kind: "scalar",
+            T: 2,
+            repeated: !0
+        }, {
+            no: 5,
+            name: "path_key_hash",
+            kind: "scalar",
+            T: 9
+        }, {
+            no: 6,
+            name: "path_key_hash_type",
+            kind: "enum",
+            T: Ks.getEnumType(Bg)
+        }, {
+            no: 7,
+            name: "do_copy",
+            kind: "scalar",
+            T: 8
+        }, {
+            no: 8,
+            name: "path_key",
+            kind: "scalar",
+            T: 9
+        }, {
+            no: 9,
+            name: "local_codebase_root_info",
+            kind: "message",
+            T: Lg
+        }, {
+            no: 10,
+            name: "return_after_background_copy_started",
+            kind: "scalar",
+            T: 8
+        }]);
+        const Ug = class e extends Nr {
+            constructor(e) {
+                super(), Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        Ug.runtime = Ks, Ug.typeName = "aiserver.v1.QueryOnlyRepositoryInfo", Ug.fields = Ks.util.newFieldList(() => [{
+            no: 1,
+            name: "repository",
+            kind: "message",
+            T: Eh
         }, {
             no: 2,
             name: "query_only_repo_access",
             kind: "message",
-            T: ff
+            T: hf
         }]);
-        let Ug = vg;
-        const Og = class e extends Nr {
+        let Og = Ug;
+        const Mg = class e extends Nr {
             constructor(e) {
                 super(), this.codebaseId = "", this.status = 0, this.copyTaskHandle = "", Ks.util.initPartial(e, this)
             }
@@ -29210,7 +29217,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Og.runtime = Ks, Og.typeName = "aiserver.v1.RepositoryCodebaseInfo", Og.fields = Ks.util.newFieldList(() => [{
+        Mg.runtime = Ks, Mg.typeName = "aiserver.v1.RepositoryCodebaseInfo", Mg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "codebase_id",
             kind: "scalar",
@@ -29219,21 +29226,21 @@
             no: 2,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(Pg)
+            T: Ks.getEnumType(qg)
         }, {
             no: 3,
             name: "query_only_similar_repo",
             kind: "message",
-            T: Ug
+            T: Og
         }, {
             no: 4,
             name: "copy_task_handle",
             kind: "scalar",
             T: 9
         }]);
-        let Mg = Og;
-        var Pg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.UP_TO_DATE = 1] = "UP_TO_DATE", e[e.OUT_OF_SYNC = 2] = "OUT_OF_SYNC", e[e.EMPTY = 3] = "EMPTY", e[e.EMPTY_WITH_COPY_AVAILABLE = 4] = "EMPTY_WITH_COPY_AVAILABLE", e[e.COPY_IN_PROGRESS = 5] = "COPY_IN_PROGRESS", e))(Pg || {});
-        Ks.util.setEnumType(Pg, "aiserver.v1.RepositoryCodebaseInfo.Status", [{
+        let Pg = Mg;
+        var qg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.UP_TO_DATE = 1] = "UP_TO_DATE", e[e.OUT_OF_SYNC = 2] = "OUT_OF_SYNC", e[e.EMPTY = 3] = "EMPTY", e[e.EMPTY_WITH_COPY_AVAILABLE = 4] = "EMPTY_WITH_COPY_AVAILABLE", e[e.COPY_IN_PROGRESS = 5] = "COPY_IN_PROGRESS", e))(qg || {});
+        Ks.util.setEnumType(qg, "aiserver.v1.RepositoryCodebaseInfo.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -29252,7 +29259,7 @@
             no: 5,
             name: "STATUS_COPY_IN_PROGRESS"
         }]);
-        const qg = class e extends Nr {
+        const xg = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, this.codebases = [], Ks.util.initPartial(e, this)
             }
@@ -29269,20 +29276,20 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qg.runtime = Ks, qg.typeName = "aiserver.v1.FastRepoInitHandshakeV2Response", qg.fields = Ks.util.newFieldList(() => [{
+        xg.runtime = Ks, xg.typeName = "aiserver.v1.FastRepoInitHandshakeV2Response", xg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(xg)
+            T: Ks.getEnumType(Gg)
         }, {
             no: 2,
             name: "codebases",
             kind: "message",
-            T: Mg,
+            T: Pg,
             repeated: !0
         }]);
-        var xg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.FAILURE = 1] = "FAILURE", e[e.SUCCESS = 2] = "SUCCESS", e))(xg || {});
-        Ks.util.setEnumType(xg, "aiserver.v1.FastRepoInitHandshakeV2Response.Status", [{
+        var Gg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.FAILURE = 1] = "FAILURE", e[e.SUCCESS = 2] = "SUCCESS", e))(Gg || {});
+        Ks.util.setEnumType(Gg, "aiserver.v1.FastRepoInitHandshakeV2Response.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -29292,7 +29299,7 @@
             no: 2,
             name: "STATUS_SUCCESS"
         }]);
-        const Gg = class e extends Nr {
+        const Yg = class e extends Nr {
             constructor(e) {
                 super(), this.codebaseId = "", this.status = 0, this.similarityMetricType = 0, this.similarityMetric = [], this.pathKeyHash = "", this.pathKeyHashType = 0, this.failedUploadCount = 0, this.failedDeleteCount = 0, this.totalUploadCount = 0, this.totalDeleteCount = 0, this.failedSubtreeCount = 0, this.totalSubtreeCount = 0, this.hitIterationLimit = !1, Ks.util.initPartial(e, this)
             }
@@ -29309,7 +29316,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Gg.runtime = Ks, Gg.typeName = "aiserver.v1.RepositoryCodebaseSyncStatus", Gg.fields = Ks.util.newFieldList(() => [{
+        Yg.runtime = Ks, Yg.typeName = "aiserver.v1.RepositoryCodebaseSyncStatus", Yg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "codebase_id",
             kind: "scalar",
@@ -29318,12 +29325,12 @@
             no: 2,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(Hg)
+            T: Ks.getEnumType(Vg)
         }, {
             no: 3,
             name: "similarity_metric_type",
             kind: "enum",
-            T: Ks.getEnumType(hg)
+            T: Ks.getEnumType(Ig)
         }, {
             no: 4,
             name: "similarity_metric",
@@ -29339,7 +29346,7 @@
             no: 6,
             name: "path_key_hash_type",
             kind: "enum",
-            T: Ks.getEnumType(Ig)
+            T: Ks.getEnumType(Bg)
         }, {
             no: 7,
             name: "failed_upload_count",
@@ -29376,9 +29383,9 @@
             kind: "scalar",
             T: 8
         }]);
-        let Yg = Gg;
-        var Hg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e))(Hg || {});
-        Ks.util.setEnumType(Hg, "aiserver.v1.RepositoryCodebaseSyncStatus.Status", [{
+        let Hg = Yg;
+        var Vg = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e))(Vg || {});
+        Ks.util.setEnumType(Vg, "aiserver.v1.RepositoryCodebaseSyncStatus.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -29388,7 +29395,7 @@
             no: 2,
             name: "STATUS_FAILURE"
         }]);
-        const Vg = class e extends Nr {
+        const Wg = class e extends Nr {
             constructor(e) {
                 super(), this.codebases = [], Ks.util.initPartial(e, this)
             }
@@ -29405,31 +29412,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Vg.runtime = Ks, Vg.typeName = "aiserver.v1.FastRepoSyncCompleteRequest", Vg.fields = Ks.util.newFieldList(() => [{
+        Wg.runtime = Ks, Wg.typeName = "aiserver.v1.FastRepoSyncCompleteRequest", Wg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "codebases",
             kind: "message",
-            T: Yg,
+            T: Hg,
             repeated: !0
         }]);
-        const Wg = class e extends Nr {
-            constructor(e) {
-                super(), Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        Wg.runtime = Ks, Wg.typeName = "aiserver.v1.FastRepoSyncCompleteResponse", Wg.fields = Ks.util.newFieldList(() => []);
         const Xg = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
@@ -29447,18 +29436,36 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Xg.runtime = Ks, Xg.typeName = "aiserver.v1.SyncMerkleSubtreeRequest", Xg.fields = Ks.util.newFieldList(() => [{
+        Xg.runtime = Ks, Xg.typeName = "aiserver.v1.FastRepoSyncCompleteResponse", Xg.fields = Ks.util.newFieldList(() => []);
+        const jg = class e extends Nr {
+            constructor(e) {
+                super(), Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        jg.runtime = Ks, jg.typeName = "aiserver.v1.SyncMerkleSubtreeRequest", jg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }, {
             no: 2,
             name: "local_partial_path",
             kind: "message",
-            T: Ng
+            T: _g
         }]);
-        const jg = class e extends Nr {
+        const Kg = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -29477,7 +29484,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        jg.runtime = Ks, jg.typeName = "aiserver.v1.SyncMerkleSubtreeResponse", jg.fields = Ks.util.newFieldList(() => [{
+        Kg.runtime = Ks, Kg.typeName = "aiserver.v1.SyncMerkleSubtreeResponse", Kg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "match",
             kind: "scalar",
@@ -29487,10 +29494,10 @@
             no: 2,
             name: "mismatch",
             kind: "message",
-            T: Zg,
+            T: zg,
             oneof: "result"
         }]);
-        const Kg = class e extends Nr {
+        const Zg = class e extends Nr {
             constructor(e) {
                 super(), this.children = [], Ks.util.initPartial(e, this)
             }
@@ -29507,15 +29514,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Kg.runtime = Ks, Kg.typeName = "aiserver.v1.SyncMerkleSubtreeResponse.Mismatch", Kg.fields = Ks.util.newFieldList(() => [{
+        Zg.runtime = Ks, Zg.typeName = "aiserver.v1.SyncMerkleSubtreeResponse.Mismatch", Zg.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "children",
             kind: "message",
-            T: Ng,
+            T: _g,
             repeated: !0
         }]);
-        let Zg = Kg;
-        const zg = class e extends Nr {
+        let zg = Zg;
+        const $g = class e extends Nr {
             constructor(e) {
                 super(), this.orthogonalTransformSeed = 0, Ks.util.initPartial(e, this)
             }
@@ -29532,14 +29539,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        zg.runtime = Ks, zg.typeName = "aiserver.v1.ClientRepositoryInfo", zg.fields = Ks.util.newFieldList(() => [{
+        $g.runtime = Ks, $g.typeName = "aiserver.v1.ClientRepositoryInfo", $g.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "orthogonal_transform_seed",
             kind: "scalar",
             T: 1
         }]);
-        let $g = zg;
-        const eE = class e extends Nr {
+        let eE = $g;
+        const tE = class e extends Nr {
             constructor(e) {
                 super(), this.codebaseId = "", this.localPartialPaths = [], Ks.util.initPartial(e, this)
             }
@@ -29556,11 +29563,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        eE.runtime = Ks, eE.typeName = "aiserver.v1.SyncMerkleSubtreeV2Request", eE.fields = Ks.util.newFieldList(() => [{
+        tE.runtime = Ks, tE.typeName = "aiserver.v1.SyncMerkleSubtreeV2Request", tE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "client_repository_info",
             kind: "message",
-            T: $g
+            T: eE
         }, {
             no: 2,
             name: "codebase_id",
@@ -29570,15 +29577,15 @@
             no: 3,
             name: "local_partial_path",
             kind: "message",
-            T: Ng
+            T: _g
         }, {
             no: 4,
             name: "local_partial_paths",
             kind: "message",
-            T: Ng,
+            T: _g,
             repeated: !0
         }]);
-        const tE = class e extends Nr {
+        const nE = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -29597,7 +29604,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        tE.runtime = Ks, tE.typeName = "aiserver.v1.SyncMerkleSubtreeV2Response", tE.fields = Ks.util.newFieldList(() => [{
+        nE.runtime = Ks, nE.typeName = "aiserver.v1.SyncMerkleSubtreeV2Response", nE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "match",
             kind: "scalar",
@@ -29607,16 +29614,16 @@
             no: 2,
             name: "mismatch",
             kind: "message",
-            T: rE,
+            T: sE,
             oneof: "result"
         }, {
             no: 3,
             name: "results",
             kind: "message",
-            T: iE,
+            T: AE,
             repeated: !0
         }]);
-        const nE = class e extends Nr {
+        const rE = class e extends Nr {
             constructor(e) {
                 super(), this.children = [], Ks.util.initPartial(e, this)
             }
@@ -29633,15 +29640,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        nE.runtime = Ks, nE.typeName = "aiserver.v1.SyncMerkleSubtreeV2Response.Mismatch", nE.fields = Ks.util.newFieldList(() => [{
+        rE.runtime = Ks, rE.typeName = "aiserver.v1.SyncMerkleSubtreeV2Response.Mismatch", rE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "children",
             kind: "message",
-            T: Ng,
+            T: _g,
             repeated: !0
         }]);
-        let rE = nE;
-        const sE = class e extends Nr {
+        let sE = rE;
+        const iE = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -29660,7 +29667,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sE.runtime = Ks, sE.typeName = "aiserver.v1.SyncMerkleSubtreeV2Response.PartialPathResult", sE.fields = Ks.util.newFieldList(() => [{
+        iE.runtime = Ks, iE.typeName = "aiserver.v1.SyncMerkleSubtreeV2Response.PartialPathResult", iE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "match",
             kind: "scalar",
@@ -29670,7 +29677,7 @@
             no: 2,
             name: "mismatch",
             kind: "message",
-            T: rE,
+            T: sE,
             oneof: "result"
         }, {
             no: 3,
@@ -29679,8 +29686,8 @@
             T: 8,
             oneof: "result"
         }]);
-        let iE = sE;
-        const AE = class e extends Nr {
+        let AE = iE;
+        const oE = class e extends Nr {
             constructor(e) {
                 super(), this.partialPath = {
                     case: void 0
@@ -29699,37 +29706,37 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        AE.runtime = Ks, AE.typeName = "aiserver.v1.FastUpdateFileRequest", AE.fields = Ks.util.newFieldList(() => [{
+        oE.runtime = Ks, oE.typeName = "aiserver.v1.FastUpdateFileRequest", oE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }, {
             no: 2,
             name: "directory",
             kind: "message",
-            T: Ng,
+            T: _g,
             oneof: "partial_path"
         }, {
             no: 3,
             name: "local_file",
             kind: "message",
-            T: lE,
+            T: cE,
             oneof: "partial_path"
         }, {
             no: 4,
             name: "ancestor_spline",
             kind: "message",
-            T: Ng,
+            T: _g,
             repeated: !0
         }, {
             no: 5,
             name: "update_type",
             kind: "enum",
-            T: Ks.getEnumType(oE)
+            T: Ks.getEnumType(aE)
         }]);
-        var oE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ADD = 1] = "ADD", e[e.DELETE = 2] = "DELETE", e[e.MODIFY = 3] = "MODIFY", e))(oE || {});
-        Ks.util.setEnumType(oE, "aiserver.v1.FastUpdateFileRequest.UpdateType", [{
+        var aE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ADD = 1] = "ADD", e[e.DELETE = 2] = "DELETE", e[e.MODIFY = 3] = "MODIFY", e))(aE || {});
+        Ks.util.setEnumType(aE, "aiserver.v1.FastUpdateFileRequest.UpdateType", [{
             no: 0,
             name: "UPDATE_TYPE_UNSPECIFIED"
         }, {
@@ -29742,7 +29749,7 @@
             no: 3,
             name: "UPDATE_TYPE_MODIFY"
         }]);
-        const aE = class e extends Nr {
+        const lE = class e extends Nr {
             constructor(e) {
                 super(), this.hash = "", this.unencryptedRelativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -29759,7 +29766,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        aE.runtime = Ks, aE.typeName = "aiserver.v1.FastUpdateFileRequest.LocalFile", aE.fields = Ks.util.newFieldList(() => [{
+        lE.runtime = Ks, lE.typeName = "aiserver.v1.FastUpdateFileRequest.LocalFile", lE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file",
             kind: "message",
@@ -29775,8 +29782,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let lE = aE;
-        const cE = class e extends Nr {
+        let cE = lE;
+        const uE = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -29793,14 +29800,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        cE.runtime = Ks, cE.typeName = "aiserver.v1.FastUpdateFileResponse", cE.fields = Ks.util.newFieldList(() => [{
+        uE.runtime = Ks, uE.typeName = "aiserver.v1.FastUpdateFileResponse", uE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(uE)
+            T: Ks.getEnumType(mE)
         }]);
-        var uE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.EXPECTED_FAILURE = 3] = "EXPECTED_FAILURE", e))(uE || {});
-        Ks.util.setEnumType(uE, "aiserver.v1.FastUpdateFileResponse.Status", [{
+        var mE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.EXPECTED_FAILURE = 3] = "EXPECTED_FAILURE", e))(mE || {});
+        Ks.util.setEnumType(mE, "aiserver.v1.FastUpdateFileResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -29813,7 +29820,7 @@
             no: 3,
             name: "STATUS_EXPECTED_FAILURE"
         }]);
-        const mE = class e extends Nr {
+        const dE = class e extends Nr {
             constructor(e) {
                 super(), this.codebaseId = "", this.partialPath = {
                     case: void 0
@@ -29832,11 +29839,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        mE.runtime = Ks, mE.typeName = "aiserver.v1.FastUpdateFileV2Request", mE.fields = Ks.util.newFieldList(() => [{
+        dE.runtime = Ks, dE.typeName = "aiserver.v1.FastUpdateFileV2Request", dE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "client_repository_info",
             kind: "message",
-            T: $g
+            T: eE
         }, {
             no: 2,
             name: "codebase_id",
@@ -29846,34 +29853,34 @@
             no: 3,
             name: "directory",
             kind: "message",
-            T: Ng,
+            T: _g,
             oneof: "partial_path"
         }, {
             no: 4,
             name: "local_file",
             kind: "message",
-            T: EE,
+            T: fE,
             oneof: "partial_path"
         }, {
             no: 5,
             name: "ancestor_spline",
             kind: "message",
-            T: Ng,
+            T: _g,
             repeated: !0
         }, {
             no: 6,
             name: "update_type",
             kind: "enum",
-            T: Ks.getEnumType(dE)
+            T: Ks.getEnumType(gE)
         }, {
             no: 7,
             name: "file_updates",
             kind: "message",
-            T: hE,
+            T: IE,
             repeated: !0
         }]);
-        var dE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ADD = 1] = "ADD", e[e.DELETE = 2] = "DELETE", e[e.MODIFY = 3] = "MODIFY", e[e.BATCH = 4] = "BATCH", e))(dE || {});
-        Ks.util.setEnumType(dE, "aiserver.v1.FastUpdateFileV2Request.UpdateType", [{
+        var gE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ADD = 1] = "ADD", e[e.DELETE = 2] = "DELETE", e[e.MODIFY = 3] = "MODIFY", e[e.BATCH = 4] = "BATCH", e))(gE || {});
+        Ks.util.setEnumType(gE, "aiserver.v1.FastUpdateFileV2Request.UpdateType", [{
             no: 0,
             name: "UPDATE_TYPE_UNSPECIFIED"
         }, {
@@ -29889,7 +29896,7 @@
             no: 4,
             name: "UPDATE_TYPE_BATCH"
         }]);
-        const gE = class e extends Nr {
+        const EE = class e extends Nr {
             constructor(e) {
                 super(), this.hash = "", this.unencryptedRelativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -29906,7 +29913,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        gE.runtime = Ks, gE.typeName = "aiserver.v1.FastUpdateFileV2Request.LocalFile", gE.fields = Ks.util.newFieldList(() => [{
+        EE.runtime = Ks, EE.typeName = "aiserver.v1.FastUpdateFileV2Request.LocalFile", EE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file",
             kind: "message",
@@ -29922,8 +29929,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let EE = gE;
-        const fE = class e extends Nr {
+        let fE = EE;
+        const hE = class e extends Nr {
             constructor(e) {
                 super(), this.partialPath = {
                     case: void 0
@@ -29942,32 +29949,32 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fE.runtime = Ks, fE.typeName = "aiserver.v1.FastUpdateFileV2Request.FileUpdate", fE.fields = Ks.util.newFieldList(() => [{
+        hE.runtime = Ks, hE.typeName = "aiserver.v1.FastUpdateFileV2Request.FileUpdate", hE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "directory",
             kind: "message",
-            T: Ng,
+            T: _g,
             oneof: "partial_path"
         }, {
             no: 2,
             name: "local_file",
             kind: "message",
-            T: EE,
+            T: fE,
             oneof: "partial_path"
         }, {
             no: 3,
             name: "ancestor_spline",
             kind: "message",
-            T: Ng,
+            T: _g,
             repeated: !0
         }, {
             no: 4,
             name: "update_type",
             kind: "enum",
-            T: Ks.getEnumType(dE)
+            T: Ks.getEnumType(gE)
         }]);
-        let hE = fE;
-        const IE = class e extends Nr {
+        let IE = hE;
+        const BE = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -29984,14 +29991,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        IE.runtime = Ks, IE.typeName = "aiserver.v1.FastUpdateFileV2Response", IE.fields = Ks.util.newFieldList(() => [{
+        BE.runtime = Ks, BE.typeName = "aiserver.v1.FastUpdateFileV2Response", BE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(BE)
+            T: Ks.getEnumType(CE)
         }]);
-        var BE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.EXPECTED_FAILURE = 3] = "EXPECTED_FAILURE", e))(BE || {});
-        Ks.util.setEnumType(BE, "aiserver.v1.FastUpdateFileV2Response.Status", [{
+        var CE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.EXPECTED_FAILURE = 3] = "EXPECTED_FAILURE", e))(CE || {});
+        Ks.util.setEnumType(CE, "aiserver.v1.FastUpdateFileV2Response.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30004,7 +30011,7 @@
             no: 3,
             name: "STATUS_EXPECTED_FAILURE"
         }]);
-        const CE = class e extends Nr {
+        const QE = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -30021,14 +30028,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        CE.runtime = Ks, CE.typeName = "aiserver.v1.GetUploadLimitsRequest", CE.fields = Ks.util.newFieldList(() => [{
+        QE.runtime = Ks, QE.typeName = "aiserver.v1.GetUploadLimitsRequest", QE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh,
+            T: Eh,
             opt: !0
         }]);
-        const QE = class e extends Nr {
+        const pE = class e extends Nr {
             constructor(e) {
                 super(), this.softLimit = 0, this.hardLimit = 0, Ks.util.initPartial(e, this)
             }
@@ -30045,7 +30052,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        QE.runtime = Ks, QE.typeName = "aiserver.v1.GetUploadLimitsResponse", QE.fields = Ks.util.newFieldList(() => [{
+        pE.runtime = Ks, pE.typeName = "aiserver.v1.GetUploadLimitsResponse", pE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "soft_limit",
             kind: "scalar",
@@ -30056,7 +30063,7 @@
             kind: "scalar",
             T: 5
         }]);
-        const pE = class e extends Nr {
+        const yE = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -30073,13 +30080,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        pE.runtime = Ks, pE.typeName = "aiserver.v1.GetNumFilesToSendRequest", pE.fields = Ks.util.newFieldList(() => [{
+        yE.runtime = Ks, yE.typeName = "aiserver.v1.GetNumFilesToSendRequest", yE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const yE = class e extends Nr {
+        const wE = class e extends Nr {
             constructor(e) {
                 super(), this.numFiles = 0, Ks.util.initPartial(e, this)
             }
@@ -30096,13 +30103,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yE.runtime = Ks, yE.typeName = "aiserver.v1.GetNumFilesToSendResponse", yE.fields = Ks.util.newFieldList(() => [{
+        wE.runtime = Ks, wE.typeName = "aiserver.v1.GetNumFilesToSendResponse", wE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "num_files",
             kind: "scalar",
             T: 5
         }]);
-        const wE = class e extends Nr {
+        const TE = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -30119,13 +30126,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        wE.runtime = Ks, wE.typeName = "aiserver.v1.GetAvailableChunkingStrategiesRequest", wE.fields = Ks.util.newFieldList(() => [{
+        TE.runtime = Ks, TE.typeName = "aiserver.v1.GetAvailableChunkingStrategiesRequest", TE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const TE = class e extends Nr {
+        const SE = class e extends Nr {
             constructor(e) {
                 super(), this.chunkingStrategies = [], Ks.util.initPartial(e, this)
             }
@@ -30142,14 +30149,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        TE.runtime = Ks, TE.typeName = "aiserver.v1.GetAvailableChunkingStrategiesResponse", TE.fields = Ks.util.newFieldList(() => [{
+        SE.runtime = Ks, SE.typeName = "aiserver.v1.GetAvailableChunkingStrategiesResponse", SE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "chunking_strategies",
             kind: "enum",
-            T: Ks.getEnumType(fg),
+            T: Ks.getEnumType(hg),
             repeated: !0
         }]);
-        const SE = class e extends Nr {
+        const kE = class e extends Nr {
             constructor(e) {
                 super(), this.texts = [], Ks.util.initPartial(e, this)
             }
@@ -30166,14 +30173,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        SE.runtime = Ks, SE.typeName = "aiserver.v1.GetEmbeddingsRequest", SE.fields = Ks.util.newFieldList(() => [{
+        kE.runtime = Ks, kE.typeName = "aiserver.v1.GetEmbeddingsRequest", kE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "texts",
             kind: "scalar",
             T: 9,
             repeated: !0
         }]);
-        const kE = class e extends Nr {
+        const RE = class e extends Nr {
             constructor(e) {
                 super(), this.embeddings = [], Ks.util.initPartial(e, this)
             }
@@ -30190,14 +30197,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kE.runtime = Ks, kE.typeName = "aiserver.v1.GetEmbeddingsResponse", kE.fields = Ks.util.newFieldList(() => [{
+        RE.runtime = Ks, RE.typeName = "aiserver.v1.GetEmbeddingsResponse", RE.fields = Ks.util.newFieldList(() => [{
             no: 2,
             name: "embeddings",
             kind: "message",
-            T: NE,
+            T: _E,
             repeated: !0
         }]);
-        const RE = class e extends Nr {
+        const NE = class e extends Nr {
             constructor(e) {
                 super(), this.embedding = [], Ks.util.initPartial(e, this)
             }
@@ -30214,39 +30221,39 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        RE.runtime = Ks, RE.typeName = "aiserver.v1.GetEmbeddingsResponse.Embedding", RE.fields = Ks.util.newFieldList(() => [{
+        NE.runtime = Ks, NE.typeName = "aiserver.v1.GetEmbeddingsResponse.Embedding", NE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "embedding",
             kind: "scalar",
             T: 2,
             repeated: !0
         }]);
-        let NE = RE;
-        const _E = class e extends Nr {
-            constructor(e) {
-                super(), this.codebaseId = 0, Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        _E.runtime = Ks, _E.typeName = "aiserver.v1.AdminRemoveRepositoryRequest", _E.fields = Ks.util.newFieldList(() => [{
-            no: 1,
-            name: "codebase_id",
-            kind: "scalar",
-            T: 5
-        }]);
+        let _E = NE;
         const DE = class e extends Nr {
             constructor(e) {
+                super(), this.codebaseId = 0, Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        DE.runtime = Ks, DE.typeName = "aiserver.v1.AdminRemoveRepositoryRequest", DE.fields = Ks.util.newFieldList(() => [{
+            no: 1,
+            name: "codebase_id",
+            kind: "scalar",
+            T: 5
+        }]);
+        const JE = class e extends Nr {
+            constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
             static fromBinary(t, n) {
@@ -30262,8 +30269,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        DE.runtime = Ks, DE.typeName = "aiserver.v1.AdminRemoveRepositoryResponse", DE.fields = Ks.util.newFieldList(() => []);
-        const JE = class e extends Nr {
+        JE.runtime = Ks, JE.typeName = "aiserver.v1.AdminRemoveRepositoryResponse", JE.fields = Ks.util.newFieldList(() => []);
+        const FE = class e extends Nr {
             constructor(e) {
                 super(), this.codebaseId = 0, Ks.util.initPartial(e, this)
             }
@@ -30280,30 +30287,12 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        JE.runtime = Ks, JE.typeName = "aiserver.v1.SyncRepositoryRequest", JE.fields = Ks.util.newFieldList(() => [{
+        FE.runtime = Ks, FE.typeName = "aiserver.v1.SyncRepositoryRequest", FE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "codebase_id",
             kind: "scalar",
             T: 5
         }]);
-        const FE = class e extends Nr {
-            constructor(e) {
-                super(), Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        FE.runtime = Ks, FE.typeName = "aiserver.v1.SyncRepositoryResponse", FE.fields = Ks.util.newFieldList(() => []);
         const bE = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
@@ -30321,13 +30310,31 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bE.runtime = Ks, bE.typeName = "aiserver.v1.StartUploadRepoRequest", bE.fields = Ks.util.newFieldList(() => [{
+        bE.runtime = Ks, bE.typeName = "aiserver.v1.SyncRepositoryResponse", bE.fields = Ks.util.newFieldList(() => []);
+        const LE = class e extends Nr {
+            constructor(e) {
+                super(), Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        LE.runtime = Ks, LE.typeName = "aiserver.v1.StartUploadRepoRequest", LE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const LE = class e extends Nr {
+        const vE = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, this.seenFiles = [], Ks.util.initPartial(e, this)
             }
@@ -30344,11 +30351,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        LE.runtime = Ks, LE.typeName = "aiserver.v1.StartUploadRepoResponse", LE.fields = Ks.util.newFieldList(() => [{
+        vE.runtime = Ks, vE.typeName = "aiserver.v1.StartUploadRepoResponse", vE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(vE)
+            T: Ks.getEnumType(UE)
         }, {
             no: 2,
             name: "seen_files",
@@ -30356,8 +30363,8 @@
             T: 9,
             repeated: !0
         }]);
-        var vE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.ALREADY_EXISTS = 3] = "ALREADY_EXISTS", e))(vE || {});
-        Ks.util.setEnumType(vE, "aiserver.v1.StartUploadRepoResponse.Status", [{
+        var UE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.ALREADY_EXISTS = 3] = "ALREADY_EXISTS", e))(UE || {});
+        Ks.util.setEnumType(UE, "aiserver.v1.StartUploadRepoResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30370,7 +30377,7 @@
             no: 3,
             name: "STATUS_ALREADY_EXISTS"
         }]);
-        const UE = class e extends Nr {
+        const OE = class e extends Nr {
             constructor(e) {
                 super(), this.commitSha = "", this.queueId = "", Ks.util.initPartial(e, this)
             }
@@ -30387,11 +30394,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        UE.runtime = Ks, UE.typeName = "aiserver.v1.UploadFileRequest", UE.fields = Ks.util.newFieldList(() => [{
+        OE.runtime = Ks, OE.typeName = "aiserver.v1.UploadFileRequest", OE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }, {
             no: 2,
             name: "file",
@@ -30408,7 +30415,7 @@
             kind: "scalar",
             T: 9
         }]);
-        const OE = class e extends Nr {
+        const ME = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -30425,14 +30432,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        OE.runtime = Ks, OE.typeName = "aiserver.v1.UploadFileResponse", OE.fields = Ks.util.newFieldList(() => [{
+        ME.runtime = Ks, ME.typeName = "aiserver.v1.UploadFileResponse", ME.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(ME)
+            T: Ks.getEnumType(PE)
         }]);
-        var ME = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.EXPECTED_FAILURE = 3] = "EXPECTED_FAILURE", e[e.QUEUE_BACKED_UP = 4] = "QUEUE_BACKED_UP", e))(ME || {});
-        Ks.util.setEnumType(ME, "aiserver.v1.UploadFileResponse.Status", [{
+        var PE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.EXPECTED_FAILURE = 3] = "EXPECTED_FAILURE", e[e.QUEUE_BACKED_UP = 4] = "QUEUE_BACKED_UP", e))(PE || {});
+        Ks.util.setEnumType(PE, "aiserver.v1.UploadFileResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30448,7 +30455,7 @@
             no: 4,
             name: "STATUS_QUEUE_BACKED_UP"
         }]);
-        const PE = class e extends Nr {
+        const qE = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -30465,13 +30472,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        PE.runtime = Ks, PE.typeName = "aiserver.v1.FinishUploadRepoRequest", PE.fields = Ks.util.newFieldList(() => [{
+        qE.runtime = Ks, qE.typeName = "aiserver.v1.FinishUploadRepoRequest", qE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const qE = class e extends Nr {
+        const xE = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -30488,14 +30495,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qE.runtime = Ks, qE.typeName = "aiserver.v1.FinishUploadRepoResponse", qE.fields = Ks.util.newFieldList(() => [{
+        xE.runtime = Ks, xE.typeName = "aiserver.v1.FinishUploadRepoResponse", xE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(xE)
+            T: Ks.getEnumType(GE)
         }]);
-        var xE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e))(xE || {});
-        Ks.util.setEnumType(xE, "aiserver.v1.FinishUploadRepoResponse.Status", [{
+        var GE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e))(GE || {});
+        Ks.util.setEnumType(GE, "aiserver.v1.FinishUploadRepoResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30505,7 +30512,7 @@
             no: 2,
             name: "STATUS_FAILURE"
         }]);
-        const GE = class e extends Nr {
+        const YE = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -30522,13 +30529,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        GE.runtime = Ks, GE.typeName = "aiserver.v1.StartUpdateRepoRequest", GE.fields = Ks.util.newFieldList(() => [{
+        YE.runtime = Ks, YE.typeName = "aiserver.v1.StartUpdateRepoRequest", YE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const YE = class e extends Nr {
+        const HE = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -30545,14 +30552,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        YE.runtime = Ks, YE.typeName = "aiserver.v1.StartUpdateRepoResponse", YE.fields = Ks.util.newFieldList(() => [{
+        HE.runtime = Ks, HE.typeName = "aiserver.v1.StartUpdateRepoResponse", HE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(HE)
+            T: Ks.getEnumType(VE)
         }]);
-        var HE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.NOT_FOUND = 3] = "NOT_FOUND", e[e.ALREADY_SYNCING = 4] = "ALREADY_SYNCING", e))(HE || {});
-        Ks.util.setEnumType(HE, "aiserver.v1.StartUpdateRepoResponse.Status", [{
+        var VE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.NOT_FOUND = 3] = "NOT_FOUND", e[e.ALREADY_SYNCING = 4] = "ALREADY_SYNCING", e))(VE || {});
+        Ks.util.setEnumType(VE, "aiserver.v1.StartUpdateRepoResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30568,7 +30575,7 @@
             no: 4,
             name: "STATUS_ALREADY_SYNCING"
         }]);
-        const VE = class e extends Nr {
+        const WE = class e extends Nr {
             constructor(e) {
                 super(), this.commitSha = "", this.queueId = "", Ks.util.initPartial(e, this)
             }
@@ -30585,11 +30592,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        VE.runtime = Ks, VE.typeName = "aiserver.v1.UpdateFileRequest", VE.fields = Ks.util.newFieldList(() => [{
+        WE.runtime = Ks, WE.typeName = "aiserver.v1.UpdateFileRequest", WE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }, {
             no: 2,
             name: "added_file",
@@ -30612,7 +30619,7 @@
             kind: "scalar",
             T: 9
         }]);
-        const WE = class e extends Nr {
+        const XE = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -30629,14 +30636,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        WE.runtime = Ks, WE.typeName = "aiserver.v1.UpdateFileResponse", WE.fields = Ks.util.newFieldList(() => [{
+        XE.runtime = Ks, XE.typeName = "aiserver.v1.UpdateFileResponse", XE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(XE)
+            T: Ks.getEnumType(jE)
         }]);
-        var XE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.EXPECTED_FAILURE = 3] = "EXPECTED_FAILURE", e[e.QUEUE_BACKED_UP = 4] = "QUEUE_BACKED_UP", e))(XE || {});
-        Ks.util.setEnumType(XE, "aiserver.v1.UpdateFileResponse.Status", [{
+        var jE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.EXPECTED_FAILURE = 3] = "EXPECTED_FAILURE", e[e.QUEUE_BACKED_UP = 4] = "QUEUE_BACKED_UP", e))(jE || {});
+        Ks.util.setEnumType(jE, "aiserver.v1.UpdateFileResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30652,7 +30659,7 @@
             no: 4,
             name: "STATUS_QUEUE_BACKED_UP"
         }]);
-        const jE = class e extends Nr {
+        const KE = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -30669,13 +30676,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        jE.runtime = Ks, jE.typeName = "aiserver.v1.FinishUpdateRepoRequest", jE.fields = Ks.util.newFieldList(() => [{
+        KE.runtime = Ks, KE.typeName = "aiserver.v1.FinishUpdateRepoRequest", KE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const KE = class e extends Nr {
+        const ZE = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -30692,14 +30699,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        KE.runtime = Ks, KE.typeName = "aiserver.v1.FinishUpdateRepoResponse", KE.fields = Ks.util.newFieldList(() => [{
+        ZE.runtime = Ks, ZE.typeName = "aiserver.v1.FinishUpdateRepoResponse", ZE.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(ZE)
+            T: Ks.getEnumType(zE)
         }]);
-        var ZE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e))(ZE || {});
-        Ks.util.setEnumType(ZE, "aiserver.v1.FinishUpdateRepoResponse.Status", [{
+        var zE = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e))(zE || {});
+        Ks.util.setEnumType(zE, "aiserver.v1.FinishUpdateRepoResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30709,7 +30716,7 @@
             no: 2,
             name: "STATUS_FAILURE"
         }]);
-        const zE = class e extends Nr {
+        const $E = class e extends Nr {
             constructor(e) {
                 super(), this.requests = [], Ks.util.initPartial(e, this)
             }
@@ -30726,14 +30733,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        zE.runtime = Ks, zE.typeName = "aiserver.v1.BatchRepositoryStatusRequest", zE.fields = Ks.util.newFieldList(() => [{
+        $E.runtime = Ks, $E.typeName = "aiserver.v1.BatchRepositoryStatusRequest", $E.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "requests",
             kind: "message",
-            T: Vf,
+            T: Wf,
             repeated: !0
         }]);
-        const $E = class e extends Nr {
+        const ef = class e extends Nr {
             constructor(e) {
                 super(), this.responses = [], Ks.util.initPartial(e, this)
             }
@@ -30750,14 +30757,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $E.runtime = Ks, $E.typeName = "aiserver.v1.BatchRepositoryStatusResponse", $E.fields = Ks.util.newFieldList(() => [{
+        ef.runtime = Ks, ef.typeName = "aiserver.v1.BatchRepositoryStatusResponse", ef.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "responses",
             kind: "message",
-            T: Xf,
+            T: jf,
             repeated: !0
         }]);
-        const ef = class e extends Nr {
+        const tf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -30774,13 +30781,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ef.runtime = Ks, ef.typeName = "aiserver.v1.UnsubscribeRepositoryRequest", ef.fields = Ks.util.newFieldList(() => [{
+        tf.runtime = Ks, tf.typeName = "aiserver.v1.UnsubscribeRepositoryRequest", tf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const tf = class e extends Nr {
+        const nf = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -30797,14 +30804,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        tf.runtime = Ks, tf.typeName = "aiserver.v1.UnsubscribeRepositoryResponse", tf.fields = Ks.util.newFieldList(() => [{
+        nf.runtime = Ks, nf.typeName = "aiserver.v1.UnsubscribeRepositoryResponse", nf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(nf)
+            T: Ks.getEnumType(rf)
         }]);
-        var nf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NOT_FOUND = 1] = "NOT_FOUND", e[e.NOT_SUBSCRIBED = 2] = "NOT_SUBSCRIBED", e[e.SUCCESS = 3] = "SUCCESS", e))(nf || {});
-        Ks.util.setEnumType(nf, "aiserver.v1.UnsubscribeRepositoryResponse.Status", [{
+        var rf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NOT_FOUND = 1] = "NOT_FOUND", e[e.NOT_SUBSCRIBED = 2] = "NOT_SUBSCRIBED", e[e.SUCCESS = 3] = "SUCCESS", e))(rf || {});
+        Ks.util.setEnumType(rf, "aiserver.v1.UnsubscribeRepositoryResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30817,7 +30824,7 @@
             no: 3,
             name: "STATUS_SUCCESS"
         }]);
-        const rf = class e extends Nr {
+        const sf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -30834,8 +30841,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        rf.runtime = Ks, rf.typeName = "aiserver.v1.LogoutRequest", rf.fields = Ks.util.newFieldList(() => []);
-        const sf = class e extends Nr {
+        sf.runtime = Ks, sf.typeName = "aiserver.v1.LogoutRequest", sf.fields = Ks.util.newFieldList(() => []);
+        const Af = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -30852,14 +30859,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sf.runtime = Ks, sf.typeName = "aiserver.v1.LogoutResponse", sf.fields = Ks.util.newFieldList(() => [{
+        Af.runtime = Ks, Af.typeName = "aiserver.v1.LogoutResponse", Af.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(Af)
+            T: Ks.getEnumType(of)
         }]);
-        var Af = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.NOT_LOGGED_IN = 3] = "NOT_LOGGED_IN", e))(Af || {});
-        Ks.util.setEnumType(Af, "aiserver.v1.LogoutResponse.Status", [{
+        var of = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.NOT_LOGGED_IN = 3] = "NOT_LOGGED_IN", e))(of || {});
+        Ks.util.setEnumType(of, "aiserver.v1.LogoutResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30872,7 +30879,7 @@
             no: 3,
             name: "STATUS_NOT_LOGGED_IN"
         }]);
-        const of = class e extends Nr {
+        const af = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -30889,13 +30896,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        of.runtime = Ks, of.typeName = "aiserver.v1.RemoveRepositoryRequest", of.fields = Ks.util.newFieldList(() => [{
+        af.runtime = Ks, af.typeName = "aiserver.v1.RemoveRepositoryRequest", af.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const af = class e extends Nr {
+        const lf = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -30912,14 +30919,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        af.runtime = Ks, af.typeName = "aiserver.v1.RemoveRepositoryResponse", af.fields = Ks.util.newFieldList(() => [{
+        lf.runtime = Ks, lf.typeName = "aiserver.v1.RemoveRepositoryResponse", lf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(lf)
+            T: Ks.getEnumType(cf)
         }]);
-        var lf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NOT_FOUND = 1] = "NOT_FOUND", e[e.NOT_AUTHORIZED = 2] = "NOT_AUTHORIZED", e[e.STARTED = 3] = "STARTED", e[e.SUCCESS = 4] = "SUCCESS", e))(lf || {});
-        Ks.util.setEnumType(lf, "aiserver.v1.RemoveRepositoryResponse.Status", [{
+        var cf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NOT_FOUND = 1] = "NOT_FOUND", e[e.NOT_AUTHORIZED = 2] = "NOT_AUTHORIZED", e[e.STARTED = 3] = "STARTED", e[e.SUCCESS = 4] = "SUCCESS", e))(cf || {});
+        Ks.util.setEnumType(cf, "aiserver.v1.RemoveRepositoryResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30935,7 +30942,7 @@
             no: 4,
             name: "STATUS_SUCCESS"
         }]);
-        const cf = class e extends Nr {
+        const uf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -30952,13 +30959,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        cf.runtime = Ks, cf.typeName = "aiserver.v1.SubscribeRepositoryRequest", cf.fields = Ks.util.newFieldList(() => [{
+        uf.runtime = Ks, uf.typeName = "aiserver.v1.SubscribeRepositoryRequest", uf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const uf = class e extends Nr {
+        const mf = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -30975,14 +30982,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        uf.runtime = Ks, uf.typeName = "aiserver.v1.SubscribeRepositoryResponse", uf.fields = Ks.util.newFieldList(() => [{
+        mf.runtime = Ks, mf.typeName = "aiserver.v1.SubscribeRepositoryResponse", mf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(mf)
+            T: Ks.getEnumType(df)
         }]);
-        var mf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NOT_FOUND = 1] = "NOT_FOUND", e[e.NOT_AUTHORIZED = 2] = "NOT_AUTHORIZED", e[e.ALREADY_SUBSCRIBED = 3] = "ALREADY_SUBSCRIBED", e[e.SUCCESS = 4] = "SUCCESS", e))(mf || {});
-        Ks.util.setEnumType(mf, "aiserver.v1.SubscribeRepositoryResponse.Status", [{
+        var df = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NOT_FOUND = 1] = "NOT_FOUND", e[e.NOT_AUTHORIZED = 2] = "NOT_AUTHORIZED", e[e.ALREADY_SUBSCRIBED = 3] = "ALREADY_SUBSCRIBED", e[e.SUCCESS = 4] = "SUCCESS", e))(df || {});
+        Ks.util.setEnumType(df, "aiserver.v1.SubscribeRepositoryResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -30998,7 +31005,7 @@
             no: 4,
             name: "STATUS_SUCCESS"
         }]);
-        const df = class e extends Nr {
+        const gf = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", this.topK = 0, this.rerank = !1, Ks.util.initPartial(e, this)
             }
@@ -31015,7 +31022,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        df.runtime = Ks, df.typeName = "aiserver.v1.SearchRepositoryRequest", df.fields = Ks.util.newFieldList(() => [{
+        gf.runtime = Ks, gf.typeName = "aiserver.v1.SearchRepositoryRequest", gf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
@@ -31024,7 +31031,7 @@
             no: 2,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }, {
             no: 3,
             name: "top_k",
@@ -31068,10 +31075,10 @@
             no: 10,
             name: "query_only_repo_access",
             kind: "message",
-            T: ff
+            T: hf
         }]);
-        let gf = df;
-        const Ef = class e extends Nr {
+        let Ef = gf;
+        const ff = class e extends Nr {
             constructor(e) {
                 super(), this.ownerAuthId = "", this.accessToken = "", this.userRepoOwner = "", this.userRepoName = "", Ks.util.initPartial(e, this)
             }
@@ -31088,7 +31095,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ef.runtime = Ks, Ef.typeName = "aiserver.v1.QueryOnlyRepoAccess", Ef.fields = Ks.util.newFieldList(() => [{
+        ff.runtime = Ks, ff.typeName = "aiserver.v1.QueryOnlyRepoAccess", ff.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "owner_auth_id",
             kind: "scalar",
@@ -31109,8 +31116,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let ff = Ef;
-        const hf = class e extends Nr {
+        let hf = ff;
+        const If = class e extends Nr {
             constructor(e) {
                 super(), this.score = 0, Ks.util.initPartial(e, this)
             }
@@ -31127,7 +31134,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        hf.runtime = Ks, hf.typeName = "aiserver.v1.CodeResult", hf.fields = Ks.util.newFieldList(() => [{
+        If.runtime = Ks, If.typeName = "aiserver.v1.CodeResult", If.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "code_block",
             kind: "message",
@@ -31138,8 +31145,8 @@
             kind: "scalar",
             T: 2
         }]);
-        let If = hf;
-        const Bf = class e extends Nr {
+        let Bf = If;
+        const Cf = class e extends Nr {
             constructor(e) {
                 super(), this.score = 0, Ks.util.initPartial(e, this)
             }
@@ -31156,7 +31163,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Bf.runtime = Ks, Bf.typeName = "aiserver.v1.FileResult", Bf.fields = Ks.util.newFieldList(() => [{
+        Cf.runtime = Ks, Cf.typeName = "aiserver.v1.FileResult", Cf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file",
             kind: "message",
@@ -31167,7 +31174,7 @@
             kind: "scalar",
             T: 2
         }]);
-        const Cf = class e extends Nr {
+        const Qf = class e extends Nr {
             constructor(e) {
                 super(), this.codeResults = [], Ks.util.initPartial(e, this)
             }
@@ -31184,37 +31191,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Cf.runtime = Ks, Cf.typeName = "aiserver.v1.SearchRepositoryResponse", Cf.fields = Ks.util.newFieldList(() => [{
+        Qf.runtime = Ks, Qf.typeName = "aiserver.v1.SearchRepositoryResponse", Qf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "code_results",
             kind: "message",
-            T: If,
+            T: Bf,
             repeated: !0
         }]);
-        let Qf = Cf;
-        const pf = class e extends Nr {
-            constructor(e) {
-                super(), Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        pf.runtime = Ks, pf.typeName = "aiserver.v1.SemSearchRequest", pf.fields = Ks.util.newFieldList(() => [{
-            no: 1,
-            name: "request",
-            kind: "message",
-            T: gf
-        }]);
+        let pf = Qf;
         const yf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
@@ -31232,20 +31216,43 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yf.runtime = Ks, yf.typeName = "aiserver.v1.CodeResultWithClassificationInfo", yf.fields = Ks.util.newFieldList(() => [{
+        yf.runtime = Ks, yf.typeName = "aiserver.v1.SemSearchRequest", yf.fields = Ks.util.newFieldList(() => [{
+            no: 1,
+            name: "request",
+            kind: "message",
+            T: Ef
+        }]);
+        const wf = class e extends Nr {
+            constructor(e) {
+                super(), Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        wf.runtime = Ks, wf.typeName = "aiserver.v1.CodeResultWithClassificationInfo", wf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "code_result",
             kind: "message",
-            T: If
+            T: Bf
         }, {
             no: 2,
             name: "line_number_classification",
             kind: "message",
-            T: Sf,
+            T: kf,
             opt: !0
         }]);
-        let wf = yf;
-        const Tf = class e extends Nr {
+        let Tf = wf;
+        const Sf = class e extends Nr {
             constructor(e) {
                 super(), this.queryComputedFor = "", this.matchedStrings = [], Ks.util.initPartial(e, this)
             }
@@ -31262,7 +31269,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Tf.runtime = Ks, Tf.typeName = "aiserver.v1.CodeResultWithClassificationInfo.LineNumberClassification", Tf.fields = Ks.util.newFieldList(() => [{
+        Sf.runtime = Ks, Sf.typeName = "aiserver.v1.CodeResultWithClassificationInfo.LineNumberClassification", Sf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "detailed_line",
             kind: "message",
@@ -31284,8 +31291,8 @@
             kind: "message",
             T: Ia
         }]);
-        let Sf = Tf;
-        const kf = class e extends Nr {
+        let kf = Sf;
+        const Rf = class e extends Nr {
             constructor(e) {
                 super(), this.codeResults = [], Ks.util.initPartial(e, this)
             }
@@ -31302,25 +31309,25 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kf.runtime = Ks, kf.typeName = "aiserver.v1.SemSearchResponse", kf.fields = Ks.util.newFieldList(() => [{
+        Rf.runtime = Ks, Rf.typeName = "aiserver.v1.SemSearchResponse", Rf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "response",
             kind: "message",
-            T: Qf
+            T: pf
         }, {
             no: 2,
             name: "metadata",
             kind: "message",
-            T: Nf,
+            T: _f,
             opt: !0
         }, {
             no: 3,
             name: "code_results",
             kind: "message",
-            T: wf,
+            T: Tf,
             repeated: !0
         }]);
-        const Rf = class e extends Nr {
+        const Nf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31337,7 +31344,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Rf.runtime = Ks, Rf.typeName = "aiserver.v1.SemSearchResponse.SemSearchMetadata", Rf.fields = Ks.util.newFieldList(() => [{
+        Nf.runtime = Ks, Nf.typeName = "aiserver.v1.SemSearchResponse.SemSearchMetadata", Nf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query_embedding_model",
             kind: "scalar",
@@ -31362,8 +31369,8 @@
             T: 5,
             opt: !0
         }]);
-        let Nf = Rf;
-        const _f = class e extends Nr {
+        let _f = Nf;
+        const Df = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31380,8 +31387,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        _f.runtime = Ks, _f.typeName = "aiserver.v1.LoginRequest", _f.fields = Ks.util.newFieldList(() => []);
-        const Df = class e extends Nr {
+        Df.runtime = Ks, Df.typeName = "aiserver.v1.LoginRequest", Df.fields = Ks.util.newFieldList(() => []);
+        const Jf = class e extends Nr {
             constructor(e) {
                 super(), this.loginUrl = "", Ks.util.initPartial(e, this)
             }
@@ -31398,13 +31405,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Df.runtime = Ks, Df.typeName = "aiserver.v1.LoginResponse", Df.fields = Ks.util.newFieldList(() => [{
+        Jf.runtime = Ks, Jf.typeName = "aiserver.v1.LoginResponse", Jf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "login_url",
             kind: "scalar",
             T: 9
         }]);
-        const Jf = class e extends Nr {
+        const Ff = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31421,8 +31428,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Jf.runtime = Ks, Jf.typeName = "aiserver.v1.IsLoggedInRequest", Jf.fields = Ks.util.newFieldList(() => []);
-        const Ff = class e extends Nr {
+        Ff.runtime = Ks, Ff.typeName = "aiserver.v1.IsLoggedInRequest", Ff.fields = Ks.util.newFieldList(() => []);
+        const bf = class e extends Nr {
             constructor(e) {
                 super(), this.loggedIn = !1, Ks.util.initPartial(e, this)
             }
@@ -31439,13 +31446,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ff.runtime = Ks, Ff.typeName = "aiserver.v1.IsLoggedInResponse", Ff.fields = Ks.util.newFieldList(() => [{
+        bf.runtime = Ks, bf.typeName = "aiserver.v1.IsLoggedInResponse", bf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "logged_in",
             kind: "scalar",
             T: 8
         }]);
-        const bf = class e extends Nr {
+        const Lf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31462,8 +31469,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bf.runtime = Ks, bf.typeName = "aiserver.v1.PollLoginRequest", bf.fields = Ks.util.newFieldList(() => []);
-        const Lf = class e extends Nr {
+        Lf.runtime = Ks, Lf.typeName = "aiserver.v1.PollLoginRequest", Lf.fields = Ks.util.newFieldList(() => []);
+        const vf = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -31480,14 +31487,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Lf.runtime = Ks, Lf.typeName = "aiserver.v1.PollLoginResponse", Lf.fields = Ks.util.newFieldList(() => [{
+        vf.runtime = Ks, vf.typeName = "aiserver.v1.PollLoginResponse", vf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(vf)
+            T: Ks.getEnumType(Uf)
         }]);
-        var vf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LOGGED_IN = 1] = "LOGGED_IN", e[e.FAILURE = 2] = "FAILURE", e[e.CHECKING = 3] = "CHECKING", e))(vf || {});
-        Ks.util.setEnumType(vf, "aiserver.v1.PollLoginResponse.Status", [{
+        var Uf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LOGGED_IN = 1] = "LOGGED_IN", e[e.FAILURE = 2] = "FAILURE", e[e.CHECKING = 3] = "CHECKING", e))(Uf || {});
+        Ks.util.setEnumType(Uf, "aiserver.v1.PollLoginResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -31500,7 +31507,7 @@
             no: 3,
             name: "STATUS_CHECKING"
         }]);
-        const Uf = class e extends Nr {
+        const Of = class e extends Nr {
             constructor(e) {
                 super(), this.scopes = [], Ks.util.initPartial(e, this)
             }
@@ -31517,14 +31524,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Uf.runtime = Ks, Uf.typeName = "aiserver.v1.UpgradeScopeRequest", Uf.fields = Ks.util.newFieldList(() => [{
+        Of.runtime = Ks, Of.typeName = "aiserver.v1.UpgradeScopeRequest", Of.fields = Ks.util.newFieldList(() => [{
             no: 2,
             name: "scopes",
             kind: "scalar",
             T: 9,
             repeated: !0
         }]);
-        const Of = class e extends Nr {
+        const Mf = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -31541,14 +31548,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Of.runtime = Ks, Of.typeName = "aiserver.v1.UpgradeScopeResponse", Of.fields = Ks.util.newFieldList(() => [{
+        Mf.runtime = Ks, Mf.typeName = "aiserver.v1.UpgradeScopeResponse", Mf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(Mf)
+            T: Ks.getEnumType(Pf)
         }]);
-        var Mf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e))(Mf || {});
-        Ks.util.setEnumType(Mf, "aiserver.v1.UpgradeScopeResponse.Status", [{
+        var Pf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e))(Pf || {});
+        Ks.util.setEnumType(Pf, "aiserver.v1.UpgradeScopeResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -31558,7 +31565,7 @@
             no: 2,
             name: "STATUS_FAILURE"
         }]);
-        const Pf = class e extends Nr {
+        const qf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31575,8 +31582,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Pf.runtime = Ks, Pf.typeName = "aiserver.v1.RepositoriesRequest", Pf.fields = Ks.util.newFieldList(() => []);
-        const qf = class e extends Nr {
+        qf.runtime = Ks, qf.typeName = "aiserver.v1.RepositoriesRequest", qf.fields = Ks.util.newFieldList(() => []);
+        const xf = class e extends Nr {
             constructor(e) {
                 super(), this.repositories = [], Ks.util.initPartial(e, this)
             }
@@ -31593,14 +31600,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qf.runtime = Ks, qf.typeName = "aiserver.v1.RepositoriesResponse", qf.fields = Ks.util.newFieldList(() => [{
+        xf.runtime = Ks, xf.typeName = "aiserver.v1.RepositoriesResponse", xf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repositories",
             kind: "message",
-            T: gh,
+            T: Eh,
             repeated: !0
         }]);
-        const xf = class e extends Nr {
+        const Gf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31617,13 +31624,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        xf.runtime = Ks, xf.typeName = "aiserver.v1.UploadRepositoryRequest", xf.fields = Ks.util.newFieldList(() => [{
+        Gf.runtime = Ks, Gf.typeName = "aiserver.v1.UploadRepositoryRequest", Gf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const Gf = class e extends Nr {
+        const Yf = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -31640,14 +31647,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Gf.runtime = Ks, Gf.typeName = "aiserver.v1.UploadRepositoryResponse", Gf.fields = Ks.util.newFieldList(() => [{
+        Yf.runtime = Ks, Yf.typeName = "aiserver.v1.UploadRepositoryResponse", Yf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(Yf)
+            T: Ks.getEnumType(Hf)
         }]);
-        var Yf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.AUTH_TOKEN_BAD_PERMISSIONS = 3] = "AUTH_TOKEN_BAD_PERMISSIONS", e[e.ALREADY_EXISTS = 4] = "ALREADY_EXISTS", e))(Yf || {});
-        Ks.util.setEnumType(Yf, "aiserver.v1.UploadRepositoryResponse.Status", [{
+        var Hf = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.AUTH_TOKEN_BAD_PERMISSIONS = 3] = "AUTH_TOKEN_BAD_PERMISSIONS", e[e.ALREADY_EXISTS = 4] = "ALREADY_EXISTS", e))(Hf || {});
+        Ks.util.setEnumType(Hf, "aiserver.v1.UploadRepositoryResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -31663,7 +31670,7 @@
             no: 4,
             name: "STATUS_ALREADY_EXISTS"
         }]);
-        const Hf = class e extends Nr {
+        const Vf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31680,14 +31687,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Hf.runtime = Ks, Hf.typeName = "aiserver.v1.RepositoryStatusRequest", Hf.fields = Ks.util.newFieldList(() => [{
+        Vf.runtime = Ks, Vf.typeName = "aiserver.v1.RepositoryStatusRequest", Vf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        let Vf = Hf;
-        const Wf = class e extends Nr {
+        let Wf = Vf;
+        const Xf = class e extends Nr {
             constructor(e) {
                 super(), this.status = {
                     case: void 0
@@ -31706,65 +31713,65 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Wf.runtime = Ks, Wf.typeName = "aiserver.v1.RepositoryStatusResponse", Wf.fields = Ks.util.newFieldList(() => [{
+        Xf.runtime = Ks, Xf.typeName = "aiserver.v1.RepositoryStatusResponse", Xf.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "not_found",
             kind: "message",
-            T: Kf,
+            T: Zf,
             oneof: "status"
         }, {
             no: 2,
             name: "uploading",
             kind: "message",
-            T: eh,
+            T: th,
             oneof: "status"
         }, {
             no: 3,
             name: "syncing",
             kind: "message",
-            T: nh,
+            T: rh,
             oneof: "status"
         }, {
             no: 4,
             name: "synced",
             kind: "message",
-            T: sh,
+            T: ih,
             oneof: "status"
         }, {
             no: 5,
             name: "not_subscribed",
             kind: "message",
-            T: zf,
+            T: $f,
             oneof: "status"
         }, {
             no: 6,
             name: "too_big",
             kind: "message",
-            T: Ah,
+            T: oh,
             oneof: "status"
         }, {
             no: 7,
             name: "auth_token_not_found",
             kind: "message",
-            T: ah,
+            T: lh,
             oneof: "status"
         }, {
             no: 8,
             name: "auth_token_not_authorized",
             kind: "message",
-            T: ch,
+            T: uh,
             oneof: "status"
         }, {
             no: 10,
             name: "error_uploading",
             kind: "message",
-            T: mh,
+            T: dh,
             oneof: "status"
         }, {
             no: 11,
             name: "error_syncing",
             kind: "message",
-            T: mh,
+            T: dh,
             oneof: "status"
         }, {
             no: 9,
@@ -31773,8 +31780,8 @@
             T: 8,
             opt: !0
         }]);
-        let Xf = Wf;
-        const jf = class e extends Nr {
+        let jf = Xf;
+        const Kf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31791,9 +31798,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        jf.runtime = Ks, jf.typeName = "aiserver.v1.RepositoryStatusResponse.NotFound", jf.fields = Ks.util.newFieldList(() => []);
-        let Kf = jf;
-        const Zf = class e extends Nr {
+        Kf.runtime = Ks, Kf.typeName = "aiserver.v1.RepositoryStatusResponse.NotFound", Kf.fields = Ks.util.newFieldList(() => []);
+        let Zf = Kf;
+        const zf = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31810,9 +31817,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Zf.runtime = Ks, Zf.typeName = "aiserver.v1.RepositoryStatusResponse.NotSubscribed", Zf.fields = Ks.util.newFieldList(() => []);
-        let zf = Zf;
-        const $f = class e extends Nr {
+        zf.runtime = Ks, zf.typeName = "aiserver.v1.RepositoryStatusResponse.NotSubscribed", zf.fields = Ks.util.newFieldList(() => []);
+        let $f = zf;
+        const eh = class e extends Nr {
             constructor(e) {
                 super(), this.progress = 0, Ks.util.initPartial(e, this)
             }
@@ -31829,14 +31836,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $f.runtime = Ks, $f.typeName = "aiserver.v1.RepositoryStatusResponse.Uploading", $f.fields = Ks.util.newFieldList(() => [{
+        eh.runtime = Ks, eh.typeName = "aiserver.v1.RepositoryStatusResponse.Uploading", eh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "progress",
             kind: "scalar",
             T: 2
         }]);
-        let eh = $f;
-        const th = class e extends Nr {
+        let th = eh;
+        const nh = class e extends Nr {
             constructor(e) {
                 super(), this.branch = "", this.oldCommit = "", this.newCommit = "", this.progress = 0, Ks.util.initPartial(e, this)
             }
@@ -31853,7 +31860,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        th.runtime = Ks, th.typeName = "aiserver.v1.RepositoryStatusResponse.Syncing", th.fields = Ks.util.newFieldList(() => [{
+        nh.runtime = Ks, nh.typeName = "aiserver.v1.RepositoryStatusResponse.Syncing", nh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "branch",
             kind: "scalar",
@@ -31874,8 +31881,8 @@
             kind: "scalar",
             T: 2
         }]);
-        let nh = th;
-        const rh = class e extends Nr {
+        let rh = nh;
+        const sh = class e extends Nr {
             constructor(e) {
                 super(), this.branch = "", this.commit = "", Ks.util.initPartial(e, this)
             }
@@ -31892,7 +31899,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        rh.runtime = Ks, rh.typeName = "aiserver.v1.RepositoryStatusResponse.Synced", rh.fields = Ks.util.newFieldList(() => [{
+        sh.runtime = Ks, sh.typeName = "aiserver.v1.RepositoryStatusResponse.Synced", sh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "branch",
             kind: "scalar",
@@ -31903,8 +31910,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let sh = rh;
-        const ih = class e extends Nr {
+        let ih = sh;
+        const Ah = class e extends Nr {
             constructor(e) {
                 super(), this.maxSize = 0, Ks.util.initPartial(e, this)
             }
@@ -31921,14 +31928,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ih.runtime = Ks, ih.typeName = "aiserver.v1.RepositoryStatusResponse.TooBig", ih.fields = Ks.util.newFieldList(() => [{
+        Ah.runtime = Ks, Ah.typeName = "aiserver.v1.RepositoryStatusResponse.TooBig", Ah.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "max_size",
             kind: "scalar",
             T: 5
         }]);
-        let Ah = ih;
-        const oh = class e extends Nr {
+        let oh = Ah;
+        const ah = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31945,9 +31952,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        oh.runtime = Ks, oh.typeName = "aiserver.v1.RepositoryStatusResponse.AuthTokenNotFound", oh.fields = Ks.util.newFieldList(() => []);
-        let ah = oh;
-        const lh = class e extends Nr {
+        ah.runtime = Ks, ah.typeName = "aiserver.v1.RepositoryStatusResponse.AuthTokenNotFound", ah.fields = Ks.util.newFieldList(() => []);
+        let lh = ah;
+        const ch = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31964,9 +31971,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        lh.runtime = Ks, lh.typeName = "aiserver.v1.RepositoryStatusResponse.AuthTokenNotAuthorized", lh.fields = Ks.util.newFieldList(() => []);
-        let ch = lh;
-        const uh = class e extends Nr {
+        ch.runtime = Ks, ch.typeName = "aiserver.v1.RepositoryStatusResponse.AuthTokenNotAuthorized", ch.fields = Ks.util.newFieldList(() => []);
+        let uh = ch;
+        const mh = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -31983,9 +31990,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        uh.runtime = Ks, uh.typeName = "aiserver.v1.RepositoryStatusResponse.EmptyMessage", uh.fields = Ks.util.newFieldList(() => []);
-        let mh = uh;
-        const dh = class e extends Nr {
+        mh.runtime = Ks, mh.typeName = "aiserver.v1.RepositoryStatusResponse.EmptyMessage", mh.fields = Ks.util.newFieldList(() => []);
+        let dh = mh;
+        const gh = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.remoteUrls = [], this.remoteNames = [], this.repoName = "", this.repoOwner = "", this.isTracked = !1, this.isLocal = !1, this.workspaceUri = "", Ks.util.initPartial(e, this)
             }
@@ -32002,7 +32009,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        dh.runtime = Ks, dh.typeName = "aiserver.v1.RepositoryInfo", dh.fields = Ks.util.newFieldList(() => [{
+        gh.runtime = Ks, gh.typeName = "aiserver.v1.RepositoryInfo", gh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -32066,11 +32073,11 @@
             no: 12,
             name: "preferred_db_provider",
             kind: "enum",
-            T: Ks.getEnumType(Cg),
+            T: Ks.getEnumType(Qg),
             opt: !0
         }]);
-        let gh = dh;
-        const Eh = class e extends Nr {
+        let Eh = gh;
+        const fh = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", this.topK = 0, this.topReflectionsK = 0, this.indexIds = [], this.useModelOnFiles = !1, this.useReflections = !1, Ks.util.initPartial(e, this)
             }
@@ -32087,7 +32094,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Eh.runtime = Ks, Eh.typeName = "aiserver.v1.SearchRepositoryDeepContextRequest", Eh.fields = Ks.util.newFieldList(() => [{
+        fh.runtime = Ks, fh.typeName = "aiserver.v1.SearchRepositoryDeepContextRequest", fh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
@@ -32119,7 +32126,7 @@
             kind: "scalar",
             T: 8
         }]);
-        const fh = class e extends Nr {
+        const hh = class e extends Nr {
             constructor(e) {
                 super(), this.score = 0, Ks.util.initPartial(e, this)
             }
@@ -32136,11 +32143,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fh.runtime = Ks, fh.typeName = "aiserver.v1.NodeResult", fh.fields = Ks.util.newFieldList(() => [{
+        hh.runtime = Ks, hh.typeName = "aiserver.v1.NodeResult", hh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "node",
             kind: "message",
-            T: Kd
+            T: Zd
         }, {
             no: 2,
             name: "file",
@@ -32152,8 +32159,8 @@
             kind: "scalar",
             T: 2
         }]);
-        let hh = fh;
-        const Ih = class e extends Nr {
+        let Ih = hh;
+        const Bh = class e extends Nr {
             constructor(e) {
                 super(), this.score = 0, Ks.util.initPartial(e, this)
             }
@@ -32170,19 +32177,19 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ih.runtime = Ks, Ih.typeName = "aiserver.v1.ReflectionResult", Ih.fields = Ks.util.newFieldList(() => [{
+        Bh.runtime = Ks, Bh.typeName = "aiserver.v1.ReflectionResult", Bh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "reflection",
             kind: "message",
-            T: Vd
+            T: Wd
         }, {
             no: 2,
             name: "score",
             kind: "scalar",
             T: 2
         }]);
-        let Bh = Ih;
-        const Ch = class e extends Nr {
+        let Ch = Bh;
+        const Qh = class e extends Nr {
             constructor(e) {
                 super(), this.topNodes = [], this.reflections = [], this.indexId = "", Ks.util.initPartial(e, this)
             }
@@ -32199,17 +32206,17 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ch.runtime = Ks, Ch.typeName = "aiserver.v1.SearchRepositoryDeepContextResponse", Ch.fields = Ks.util.newFieldList(() => [{
+        Qh.runtime = Ks, Qh.typeName = "aiserver.v1.SearchRepositoryDeepContextResponse", Qh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "top_nodes",
             kind: "message",
-            T: hh,
+            T: Ih,
             repeated: !0
         }, {
             no: 2,
             name: "reflections",
             kind: "message",
-            T: Bh,
+            T: Ch,
             repeated: !0
         }, {
             no: 3,
@@ -32217,7 +32224,7 @@
             kind: "scalar",
             T: 9
         }]);
-        const Qh = class e extends Nr {
+        const ph = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", this.codeResults = [], Ks.util.initPartial(e, this)
             }
@@ -32234,7 +32241,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Qh.runtime = Ks, Qh.typeName = "aiserver.v1.GetLineNumberClassificationsRequest", Qh.fields = Ks.util.newFieldList(() => [{
+        ph.runtime = Ks, ph.typeName = "aiserver.v1.GetLineNumberClassificationsRequest", ph.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
@@ -32243,10 +32250,10 @@
             no: 2,
             name: "code_results",
             kind: "message",
-            T: If,
+            T: Bf,
             repeated: !0
         }]);
-        const ph = class e extends Nr {
+        const yh = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -32263,13 +32270,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ph.runtime = Ks, ph.typeName = "aiserver.v1.GetLineNumberClassificationsResponse", ph.fields = Ks.util.newFieldList(() => [{
+        yh.runtime = Ks, yh.typeName = "aiserver.v1.GetLineNumberClassificationsResponse", yh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "classified_result",
             kind: "message",
-            T: wf
+            T: Tf
         }]);
-        const yh = class e extends Nr {
+        const wh = class e extends Nr {
             constructor(e) {
                 super(), this.codebaseId = "", this.copyTaskHandle = "", Ks.util.initPartial(e, this)
             }
@@ -32286,7 +32293,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yh.runtime = Ks, yh.typeName = "aiserver.v1.GetCopyStatusRequest", yh.fields = Ks.util.newFieldList(() => [{
+        wh.runtime = Ks, wh.typeName = "aiserver.v1.GetCopyStatusRequest", wh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "codebase_id",
             kind: "scalar",
@@ -32297,7 +32304,7 @@
             kind: "scalar",
             T: 9
         }]);
-        const wh = class e extends Nr {
+        const Th = class e extends Nr {
             constructor(e) {
                 super(), this.phase = 0, this.percentDone = 0, this.errorMessage = "", Ks.util.initPartial(e, this)
             }
@@ -32314,11 +32321,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        wh.runtime = Ks, wh.typeName = "aiserver.v1.GetCopyStatusResponse", wh.fields = Ks.util.newFieldList(() => [{
+        Th.runtime = Ks, Th.typeName = "aiserver.v1.GetCopyStatusResponse", Th.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "phase",
             kind: "enum",
-            T: Ks.getEnumType(Th)
+            T: Ks.getEnumType(Sh)
         }, {
             no: 2,
             name: "percent_done",
@@ -32333,11 +32340,11 @@
             no: 4,
             name: "completed_status",
             kind: "enum",
-            T: Ks.getEnumType(Sh),
+            T: Ks.getEnumType(kh),
             opt: !0
         }]);
-        var Th = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INITIALIZING = 1] = "INITIALIZING", e[e.COPYING = 2] = "COPYING", e[e.COMPLETED = 3] = "COMPLETED", e[e.CREATING_SEARCH_FILTERS = 4] = "CREATING_SEARCH_FILTERS", e[e.COPYING_SEARCH_STATE = 5] = "COPYING_SEARCH_STATE", e[e.COPYING_TREE_STATE = 6] = "COPYING_TREE_STATE", e[e.SYNCING_COPY = 7] = "SYNCING_COPY", e))(Th || {});
-        Ks.util.setEnumType(Th, "aiserver.v1.GetCopyStatusResponse.Phase", [{
+        var Sh = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INITIALIZING = 1] = "INITIALIZING", e[e.COPYING = 2] = "COPYING", e[e.COMPLETED = 3] = "COMPLETED", e[e.CREATING_SEARCH_FILTERS = 4] = "CREATING_SEARCH_FILTERS", e[e.COPYING_SEARCH_STATE = 5] = "COPYING_SEARCH_STATE", e[e.COPYING_TREE_STATE = 6] = "COPYING_TREE_STATE", e[e.SYNCING_COPY = 7] = "SYNCING_COPY", e))(Sh || {});
+        Ks.util.setEnumType(Sh, "aiserver.v1.GetCopyStatusResponse.Phase", [{
             no: 0,
             name: "PHASE_UNSPECIFIED"
         }, {
@@ -32362,8 +32369,8 @@
             no: 7,
             name: "PHASE_SYNCING_COPY"
         }]);
-        var Sh = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.UP_TO_DATE = 1] = "UP_TO_DATE", e[e.OUT_OF_SYNC = 2] = "OUT_OF_SYNC", e[e.FAILURE = 3] = "FAILURE", e))(Sh || {});
-        Ks.util.setEnumType(Sh, "aiserver.v1.GetCopyStatusResponse.CompletedStatus", [{
+        var kh = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.UP_TO_DATE = 1] = "UP_TO_DATE", e[e.OUT_OF_SYNC = 2] = "OUT_OF_SYNC", e[e.FAILURE = 3] = "FAILURE", e))(kh || {});
+        Ks.util.setEnumType(kh, "aiserver.v1.GetCopyStatusResponse.CompletedStatus", [{
             no: 0,
             name: "COMPLETED_STATUS_UNSPECIFIED"
         }, {
@@ -32376,7 +32383,7 @@
             no: 3,
             name: "COMPLETED_STATUS_FAILURE"
         }]);
-        const kh = class e extends Nr {
+        const Rh = class e extends Nr {
             constructor(e) {
                 super(), this.path = "", this.diff = [], Ks.util.initPartial(e, this)
             }
@@ -32393,7 +32400,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kh.runtime = Ks, kh.typeName = "aiserver.v1.IndexedFile", kh.fields = Ks.util.newFieldList(() => [{
+        Rh.runtime = Ks, Rh.typeName = "aiserver.v1.IndexedFile", Rh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "path",
             kind: "scalar",
@@ -32405,8 +32412,8 @@
             T: 9,
             repeated: !0
         }]);
-        let Rh = kh;
-        const Nh = class e extends Nr {
+        let Nh = Rh;
+        const _h = class e extends Nr {
             constructor(e) {
                 super(), this.prNumber = 0, this.sha = "", this.message = "", this.changedFiles = [], this.generation = 0, this.commitSecret = "", this.unixTimestamp = Pr.zero, Ks.util.initPartial(e, this)
             }
@@ -32423,7 +32430,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Nh.runtime = Ks, Nh.typeName = "aiserver.v1.IndexedPullRequest", Nh.fields = Ks.util.newFieldList(() => [{
+        _h.runtime = Ks, _h.typeName = "aiserver.v1.IndexedPullRequest", _h.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "pr_number",
             kind: "scalar",
@@ -32442,7 +32449,7 @@
             no: 4,
             name: "changed_files",
             kind: "message",
-            T: Rh,
+            T: Nh,
             repeated: !0
         }, {
             no: 5,
@@ -32472,8 +32479,8 @@
             T: 9,
             opt: !0
         }]);
-        let _h = Nh;
-        const Dh = class e extends Nr {
+        let Dh = _h;
+        const Jh = class e extends Nr {
             constructor(e) {
                 super(), this.origin = "", Ks.util.initPartial(e, this)
             }
@@ -32490,11 +32497,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Dh.runtime = Ks, Dh.typeName = "aiserver.v1.RepoHistoryInitHandshakeRequest", Dh.fields = Ks.util.newFieldList(() => [{
+        Jh.runtime = Ks, Jh.typeName = "aiserver.v1.RepoHistoryInitHandshakeRequest", Jh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }, {
             no: 2,
             name: "origin",
@@ -32519,7 +32526,7 @@
             T: 8,
             opt: !0
         }]);
-        const Jh = class e extends Nr {
+        const Fh = class e extends Nr {
             constructor(e) {
                 super(), this.historyId = "", Ks.util.initPartial(e, this)
             }
@@ -32536,7 +32543,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Jh.runtime = Ks, Jh.typeName = "aiserver.v1.RepoHistoryInfo", Jh.fields = Ks.util.newFieldList(() => [{
+        Fh.runtime = Ks, Fh.typeName = "aiserver.v1.RepoHistoryInfo", Fh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "history_id",
             kind: "scalar",
@@ -32566,8 +32573,8 @@
             T: 12,
             opt: !0
         }]);
-        let Fh = Jh;
-        const bh = class e extends Nr {
+        let bh = Fh;
+        const Lh = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, this.histories = [], this.copyCandidates = [], Ks.util.initPartial(e, this)
             }
@@ -32584,16 +32591,16 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bh.runtime = Ks, bh.typeName = "aiserver.v1.RepoHistoryInitHandshakeResponse", bh.fields = Ks.util.newFieldList(() => [{
+        Lh.runtime = Ks, Lh.typeName = "aiserver.v1.RepoHistoryInitHandshakeResponse", Lh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(Lh)
+            T: Ks.getEnumType(vh)
         }, {
             no: 2,
             name: "histories",
             kind: "message",
-            T: Fh,
+            T: bh,
             repeated: !0
         }, {
             no: 3,
@@ -32614,8 +32621,8 @@
             T: 9,
             opt: !0
         }]);
-        var Lh = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.FAILURE = 1] = "FAILURE", e[e.SUCCESS = 2] = "SUCCESS", e[e.TEST_CANDIDATES = 3] = "TEST_CANDIDATES", e[e.NO_INDEXING = 4] = "NO_INDEXING", e))(Lh || {});
-        Ks.util.setEnumType(Lh, "aiserver.v1.RepoHistoryInitHandshakeResponse.Status", [{
+        var vh = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.FAILURE = 1] = "FAILURE", e[e.SUCCESS = 2] = "SUCCESS", e[e.TEST_CANDIDATES = 3] = "TEST_CANDIDATES", e[e.NO_INDEXING = 4] = "NO_INDEXING", e))(vh || {});
+        Ks.util.setEnumType(vh, "aiserver.v1.RepoHistoryInitHandshakeResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -32631,7 +32638,7 @@
             no: 4,
             name: "STATUS_NO_INDEXING"
         }]);
-        const vh = class e extends Nr {
+        const Uh = class e extends Nr {
             constructor(e) {
                 super(), this.historyId = "", this.pullRequests = [], this.ignoreCommits = [], Ks.util.initPartial(e, this)
             }
@@ -32648,7 +32655,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vh.runtime = Ks, vh.typeName = "aiserver.v1.RepoHistorySyncOneRequest", vh.fields = Ks.util.newFieldList(() => [{
+        Uh.runtime = Ks, Uh.typeName = "aiserver.v1.RepoHistorySyncOneRequest", Uh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "history_id",
             kind: "scalar",
@@ -32657,7 +32664,7 @@
             no: 2,
             name: "pull_requests",
             kind: "message",
-            T: _h,
+            T: Dh,
             repeated: !0
         }, {
             no: 3,
@@ -32666,7 +32673,7 @@
             T: 13,
             repeated: !0
         }]);
-        const Uh = class e extends Nr {
+        const Oh = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -32683,14 +32690,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Uh.runtime = Ks, Uh.typeName = "aiserver.v1.RepoHistorySyncOneResponse", Uh.fields = Ks.util.newFieldList(() => [{
+        Oh.runtime = Ks, Oh.typeName = "aiserver.v1.RepoHistorySyncOneResponse", Oh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(Oh)
+            T: Ks.getEnumType(Mh)
         }]);
-        var Oh = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.PARTIAL_SUCCESS = 3] = "PARTIAL_SUCCESS", e[e.NOT_INDEXING = 4] = "NOT_INDEXING", e))(Oh || {});
-        Ks.util.setEnumType(Oh, "aiserver.v1.RepoHistorySyncOneResponse.Status", [{
+        var Mh = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.PARTIAL_SUCCESS = 3] = "PARTIAL_SUCCESS", e[e.NOT_INDEXING = 4] = "NOT_INDEXING", e))(Mh || {});
+        Ks.util.setEnumType(Mh, "aiserver.v1.RepoHistorySyncOneResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -32706,7 +32713,7 @@
             no: 4,
             name: "STATUS_NOT_INDEXING"
         }]);
-        const Mh = class e extends Nr {
+        const Ph = class e extends Nr {
             constructor(e) {
                 super(), this.syncedHistories = [], Ks.util.initPartial(e, this)
             }
@@ -32723,15 +32730,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Mh.runtime = Ks, Mh.typeName = "aiserver.v1.RepoHistorySyncCompleteRequest", Mh.fields = Ks.util.newFieldList(() => [{
+        Ph.runtime = Ks, Ph.typeName = "aiserver.v1.RepoHistorySyncCompleteRequest", Ph.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "synced_histories",
             kind: "message",
-            T: xh,
+            T: Gh,
             repeated: !0
         }]);
-        var Ph = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.TOTAL_FAILURE = 3] = "TOTAL_FAILURE", e[e.INTERRUPTED = 4] = "INTERRUPTED", e))(Ph || {});
-        Ks.util.setEnumType(Ph, "aiserver.v1.RepoHistorySyncCompleteRequest.Status", [{
+        var qh = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUCCESS = 1] = "SUCCESS", e[e.FAILURE = 2] = "FAILURE", e[e.TOTAL_FAILURE = 3] = "TOTAL_FAILURE", e[e.INTERRUPTED = 4] = "INTERRUPTED", e))(qh || {});
+        Ks.util.setEnumType(qh, "aiserver.v1.RepoHistorySyncCompleteRequest.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -32747,7 +32754,7 @@
             no: 4,
             name: "STATUS_INTERRUPTED"
         }]);
-        const qh = class e extends Nr {
+        const xh = class e extends Nr {
             constructor(e) {
                 super(), this.historyId = "", this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -32764,7 +32771,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qh.runtime = Ks, qh.typeName = "aiserver.v1.RepoHistorySyncCompleteRequest.SyncedHistory", qh.fields = Ks.util.newFieldList(() => [{
+        xh.runtime = Ks, xh.typeName = "aiserver.v1.RepoHistorySyncCompleteRequest.SyncedHistory", xh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "history_id",
             kind: "scalar",
@@ -32773,7 +32780,7 @@
             no: 2,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(Ph)
+            T: Ks.getEnumType(qh)
         }, {
             no: 3,
             name: "last_indexed_commit",
@@ -32793,8 +32800,8 @@
             T: 13,
             opt: !0
         }]);
-        let xh = qh;
-        const Gh = class e extends Nr {
+        let Gh = xh;
+        const Yh = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -32811,8 +32818,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Gh.runtime = Ks, Gh.typeName = "aiserver.v1.RepoHistorySyncCompleteResponse", Gh.fields = Ks.util.newFieldList(() => []);
-        const Yh = class e extends Nr {
+        Yh.runtime = Ks, Yh.typeName = "aiserver.v1.RepoHistorySyncCompleteResponse", Yh.fields = Ks.util.newFieldList(() => []);
+        const Hh = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", this.topK = 0, Ks.util.initPartial(e, this)
             }
@@ -32829,11 +32836,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Yh.runtime = Ks, Yh.typeName = "aiserver.v1.SearchPRHistoryRequest", Yh.fields = Ks.util.newFieldList(() => [{
+        Hh.runtime = Ks, Hh.typeName = "aiserver.v1.SearchPRHistoryRequest", Hh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }, {
             no: 2,
             name: "query",
@@ -32845,7 +32852,7 @@
             kind: "scalar",
             T: 5
         }]);
-        const Hh = class e extends Nr {
+        const Vh = class e extends Nr {
             constructor(e) {
                 super(), this.filePath = "", this.startLineNumberZeroIndexed = 0, this.endLineNumberZeroIndexedExclusive = 0, Ks.util.initPartial(e, this)
             }
@@ -32862,7 +32869,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Hh.runtime = Ks, Hh.typeName = "aiserver.v1.PRDiffChunkPointer", Hh.fields = Ks.util.newFieldList(() => [{
+        Vh.runtime = Ks, Vh.typeName = "aiserver.v1.PRDiffChunkPointer", Vh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_path",
             kind: "scalar",
@@ -32878,8 +32885,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let Vh = Hh;
-        const Wh = class e extends Nr {
+        let Wh = Vh;
+        const Xh = class e extends Nr {
             constructor(e) {
                 super(), this.results = [], Ks.util.initPartial(e, this)
             }
@@ -32896,11 +32903,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Wh.runtime = Ks, Wh.typeName = "aiserver.v1.SearchPRHistoryResponse", Wh.fields = Ks.util.newFieldList(() => [{
+        Xh.runtime = Ks, Xh.typeName = "aiserver.v1.SearchPRHistoryResponse", Xh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "results",
             kind: "message",
-            T: jh,
+            T: Kh,
             repeated: !0
         }, {
             no: 2,
@@ -32909,7 +32916,7 @@
             T: 13,
             opt: !0
         }]);
-        const Xh = class e extends Nr {
+        const jh = class e extends Nr {
             constructor(e) {
                 super(), this.commitHash = "", this.score = 0, this.diffChunks = [], this.changedFiles = [], Ks.util.initPartial(e, this)
             }
@@ -32926,7 +32933,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Xh.runtime = Ks, Xh.typeName = "aiserver.v1.SearchPRHistoryResponse.PRSearchResult", Xh.fields = Ks.util.newFieldList(() => [{
+        jh.runtime = Ks, jh.typeName = "aiserver.v1.SearchPRHistoryResponse.PRSearchResult", jh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "commit_hash",
             kind: "scalar",
@@ -32940,7 +32947,7 @@
             no: 3,
             name: "diff_chunks",
             kind: "message",
-            T: Vh,
+            T: Wh,
             repeated: !0
         }, {
             no: 4,
@@ -32979,8 +32986,8 @@
             T: 9,
             repeated: !0
         }]);
-        let jh = Xh;
-        const Kh = class e extends Nr {
+        let Kh = jh;
+        const Zh = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -32997,13 +33004,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Kh.runtime = Ks, Kh.typeName = "aiserver.v1.RemoveRepoHistoryRequest", Kh.fields = Ks.util.newFieldList(() => [{
+        Zh.runtime = Ks, Zh.typeName = "aiserver.v1.RemoveRepoHistoryRequest", Zh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const Zh = class e extends Nr {
+        const zh = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, Ks.util.initPartial(e, this)
             }
@@ -33020,14 +33027,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Zh.runtime = Ks, Zh.typeName = "aiserver.v1.RemoveRepoHistoryResponse", Zh.fields = Ks.util.newFieldList(() => [{
+        zh.runtime = Ks, zh.typeName = "aiserver.v1.RemoveRepoHistoryResponse", zh.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(zh)
+            T: Ks.getEnumType($h)
         }]);
-        var zh = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NOT_FOUND = 1] = "NOT_FOUND", e[e.NOT_AUTHORIZED = 2] = "NOT_AUTHORIZED", e[e.PARTIAL_SUCCESS = 3] = "PARTIAL_SUCCESS", e[e.SUCCESS = 4] = "SUCCESS", e))(zh || {});
-        Ks.util.setEnumType(zh, "aiserver.v1.RemoveRepoHistoryResponse.Status", [{
+        var $h = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NOT_FOUND = 1] = "NOT_FOUND", e[e.NOT_AUTHORIZED = 2] = "NOT_AUTHORIZED", e[e.PARTIAL_SUCCESS = 3] = "PARTIAL_SUCCESS", e[e.SUCCESS = 4] = "SUCCESS", e))($h || {});
+        Ks.util.setEnumType($h, "aiserver.v1.RemoveRepoHistoryResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -33043,7 +33050,7 @@
             no: 4,
             name: "STATUS_SUCCESS"
         }]);
-        const $h = class e extends Nr {
+        const eI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33060,13 +33067,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $h.runtime = Ks, $h.typeName = "aiserver.v1.GetPRIndexingStatusRequest", $h.fields = Ks.util.newFieldList(() => [{
+        eI.runtime = Ks, eI.typeName = "aiserver.v1.GetPRIndexingStatusRequest", eI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        const eI = class e extends Nr {
+        const tI = class e extends Nr {
             constructor(e) {
                 super(), this.status = 0, this.syncPercentage = 0, Ks.util.initPartial(e, this)
             }
@@ -33083,11 +33090,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        eI.runtime = Ks, eI.typeName = "aiserver.v1.GetPRIndexingStatusResponse", eI.fields = Ks.util.newFieldList(() => [{
+        tI.runtime = Ks, tI.typeName = "aiserver.v1.GetPRIndexingStatusResponse", tI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Ks.getEnumType(tI)
+            T: Ks.getEnumType(nI)
         }, {
             no: 2,
             name: "sync_percentage",
@@ -33130,8 +33137,8 @@
             T: 13,
             opt: !0
         }]);
-        var tI = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EMPTY = 1] = "EMPTY", e[e.SYNCING = 2] = "SYNCING", e[e.SYNCED = 3] = "SYNCED", e[e.PARTIAL = 4] = "PARTIAL", e))(tI || {});
-        Ks.util.setEnumType(tI, "aiserver.v1.GetPRIndexingStatusResponse.Status", [{
+        var nI = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EMPTY = 1] = "EMPTY", e[e.SYNCING = 2] = "SYNCING", e[e.SYNCED = 3] = "SYNCED", e[e.PARTIAL = 4] = "PARTIAL", e))(nI || {});
+        Ks.util.setEnumType(nI, "aiserver.v1.GetPRIndexingStatusResponse.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -33147,8 +33154,8 @@
             no: 4,
             name: "STATUS_PARTIAL"
         }]);
-        var nI = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DEFAULT = 1] = "DEFAULT", e[e.READONLY = 2] = "READONLY", e[e.AGENT_ONLY = 3] = "AGENT_ONLY", e))(nI || {});
-        Ks.util.setEnumType(nI, "agent.v1.CustomSubagentPermissionMode", [{
+        var rI = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DEFAULT = 1] = "DEFAULT", e[e.READONLY = 2] = "READONLY", e[e.AGENT_ONLY = 3] = "AGENT_ONLY", e))(rI || {});
+        Ks.util.setEnumType(rI, "agent.v1.CustomSubagentPermissionMode", [{
             no: 0,
             name: "CUSTOM_SUBAGENT_PERMISSION_MODE_UNSPECIFIED"
         }, {
@@ -33161,8 +33168,8 @@
             no: 3,
             name: "CUSTOM_SUBAGENT_PERMISSION_MODE_AGENT_ONLY"
         }]);
-        var rI = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.AGENT = 1] = "AGENT", e[e.PLAN = 2] = "PLAN", e))(rI || {});
-        Ks.util.setEnumType(rI, "agent.v1.TaskMode", [{
+        var sI = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.AGENT = 1] = "AGENT", e[e.PLAN = 2] = "PLAN", e))(sI || {});
+        Ks.util.setEnumType(sI, "agent.v1.TaskMode", [{
             no: 0,
             name: "TASK_MODE_UNSPECIFIED"
         }, {
@@ -33172,7 +33179,7 @@
             no: 2,
             name: "TASK_MODE_PLAN"
         }]);
-        const sI = class e extends Nr {
+        const iI = class e extends Nr {
             constructor(e) {
                 super(), this.type = {
                     case: void 0
@@ -33191,74 +33198,80 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sI.runtime = Ks, sI.typeName = "agent.v1.SubagentType", sI.fields = Ks.util.newFieldList(() => [{
+        iI.runtime = Ks, iI.typeName = "agent.v1.SubagentType", iI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "unspecified",
             kind: "message",
-            T: AI,
+            T: oI,
             oneof: "type"
         }, {
             no: 2,
             name: "computer_use",
             kind: "message",
-            T: aI,
+            T: lI,
             oneof: "type"
         }, {
             no: 3,
             name: "custom",
             kind: "message",
-            T: SI,
+            T: NI,
             oneof: "type"
         }, {
             no: 4,
             name: "explore",
             kind: "message",
-            T: cI,
+            T: uI,
             oneof: "type"
         }, {
             no: 5,
             name: "media_review",
             kind: "message",
-            T: mI,
+            T: dI,
             oneof: "type"
         }, {
             no: 6,
             name: "bash",
             kind: "message",
-            T: gI,
+            T: EI,
             oneof: "type"
         }, {
             no: 7,
             name: "browser_use",
             kind: "message",
-            T: II,
+            T: BI,
             oneof: "type"
         }, {
             no: 8,
             name: "shell",
             kind: "message",
-            T: fI,
+            T: hI,
             oneof: "type"
         }, {
             no: 9,
             name: "vm_setup_helper",
             kind: "message",
-            T: CI,
+            T: QI,
             oneof: "type"
         }, {
             no: 10,
             name: "debug",
             kind: "message",
-            T: pI,
+            T: yI,
             oneof: "type"
         }, {
             no: 11,
             name: "cursor_guide",
             kind: "message",
-            T: wI,
+            T: TI,
+            oneof: "type"
+        }, {
+            no: 12,
+            name: "watch_video",
+            kind: "message",
+            T: kI,
             oneof: "type"
         }]);
-        const iI = class e extends Nr {
+        const AI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33275,9 +33288,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        iI.runtime = Ks, iI.typeName = "agent.v1.SubagentTypeUnspecified", iI.fields = Ks.util.newFieldList(() => []);
-        let AI = iI;
-        const oI = class e extends Nr {
+        AI.runtime = Ks, AI.typeName = "agent.v1.SubagentTypeUnspecified", AI.fields = Ks.util.newFieldList(() => []);
+        let oI = AI;
+        const aI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33294,9 +33307,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        oI.runtime = Ks, oI.typeName = "agent.v1.SubagentTypeComputerUse", oI.fields = Ks.util.newFieldList(() => []);
-        let aI = oI;
-        const lI = class e extends Nr {
+        aI.runtime = Ks, aI.typeName = "agent.v1.SubagentTypeComputerUse", aI.fields = Ks.util.newFieldList(() => []);
+        let lI = aI;
+        const cI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33313,9 +33326,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        lI.runtime = Ks, lI.typeName = "agent.v1.SubagentTypeExplore", lI.fields = Ks.util.newFieldList(() => []);
-        let cI = lI;
-        const uI = class e extends Nr {
+        cI.runtime = Ks, cI.typeName = "agent.v1.SubagentTypeExplore", cI.fields = Ks.util.newFieldList(() => []);
+        let uI = cI;
+        const mI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33332,9 +33345,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        uI.runtime = Ks, uI.typeName = "agent.v1.SubagentTypeMediaReview", uI.fields = Ks.util.newFieldList(() => []);
-        let mI = uI;
-        const dI = class e extends Nr {
+        mI.runtime = Ks, mI.typeName = "agent.v1.SubagentTypeMediaReview", mI.fields = Ks.util.newFieldList(() => []);
+        let dI = mI;
+        const gI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33351,9 +33364,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        dI.runtime = Ks, dI.typeName = "agent.v1.SubagentTypeBash", dI.fields = Ks.util.newFieldList(() => []);
-        let gI = dI;
-        const EI = class e extends Nr {
+        gI.runtime = Ks, gI.typeName = "agent.v1.SubagentTypeBash", gI.fields = Ks.util.newFieldList(() => []);
+        let EI = gI;
+        const fI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33370,9 +33383,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        EI.runtime = Ks, EI.typeName = "agent.v1.SubagentTypeShell", EI.fields = Ks.util.newFieldList(() => []);
-        let fI = EI;
-        const hI = class e extends Nr {
+        fI.runtime = Ks, fI.typeName = "agent.v1.SubagentTypeShell", fI.fields = Ks.util.newFieldList(() => []);
+        let hI = fI;
+        const II = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33389,9 +33402,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        hI.runtime = Ks, hI.typeName = "agent.v1.SubagentTypeBrowserUse", hI.fields = Ks.util.newFieldList(() => []);
-        let II = hI;
-        const BI = class e extends Nr {
+        II.runtime = Ks, II.typeName = "agent.v1.SubagentTypeBrowserUse", II.fields = Ks.util.newFieldList(() => []);
+        let BI = II;
+        const CI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33408,9 +33421,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        BI.runtime = Ks, BI.typeName = "agent.v1.SubagentTypeVmSetupHelper", BI.fields = Ks.util.newFieldList(() => []);
-        let CI = BI;
-        const QI = class e extends Nr {
+        CI.runtime = Ks, CI.typeName = "agent.v1.SubagentTypeVmSetupHelper", CI.fields = Ks.util.newFieldList(() => []);
+        let QI = CI;
+        const pI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33427,9 +33440,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        QI.runtime = Ks, QI.typeName = "agent.v1.SubagentTypeDebug", QI.fields = Ks.util.newFieldList(() => []);
-        let pI = QI;
-        const yI = class e extends Nr {
+        pI.runtime = Ks, pI.typeName = "agent.v1.SubagentTypeDebug", pI.fields = Ks.util.newFieldList(() => []);
+        let yI = pI;
+        const wI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33446,9 +33459,28 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yI.runtime = Ks, yI.typeName = "agent.v1.SubagentTypeCursorGuide", yI.fields = Ks.util.newFieldList(() => []);
-        let wI = yI;
-        const TI = class e extends Nr {
+        wI.runtime = Ks, wI.typeName = "agent.v1.SubagentTypeCursorGuide", wI.fields = Ks.util.newFieldList(() => []);
+        let TI = wI;
+        const SI = class e extends Nr {
+            constructor(e) {
+                super(), Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        SI.runtime = Ks, SI.typeName = "agent.v1.SubagentTypeWatchVideo", SI.fields = Ks.util.newFieldList(() => []);
+        let kI = SI;
+        const RI = class e extends Nr {
             constructor(e) {
                 super(), this.name = "", Ks.util.initPartial(e, this)
             }
@@ -33465,14 +33497,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        TI.runtime = Ks, TI.typeName = "agent.v1.SubagentTypeCustom", TI.fields = Ks.util.newFieldList(() => [{
+        RI.runtime = Ks, RI.typeName = "agent.v1.SubagentTypeCustom", RI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "name",
             kind: "scalar",
             T: 9
         }]);
-        let SI = TI;
-        const kI = class e extends Nr {
+        let NI = RI;
+        const _I = class e extends Nr {
             constructor(e) {
                 super(), this.fullPath = "", this.name = "", this.description = "", this.tools = [], this.model = "", this.prompt = "", this.permissionMode = 0, this.isBackground = !1, this.forceDefaultModel = !1, Ks.util.initPartial(e, this)
             }
@@ -33489,7 +33521,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kI.runtime = Ks, kI.typeName = "agent.v1.CustomSubagent", kI.fields = Ks.util.newFieldList(() => [{
+        _I.runtime = Ks, _I.typeName = "agent.v1.CustomSubagent", _I.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "full_path",
             kind: "scalar",
@@ -33524,7 +33556,7 @@
             no: 7,
             name: "permission_mode",
             kind: "enum",
-            T: Ks.getEnumType(nI)
+            T: Ks.getEnumType(rI)
         }, {
             no: 8,
             name: "is_background",
@@ -33560,7 +33592,7 @@
             kind: "scalar",
             T: 8
         }]);
-        const RI = class e extends Nr {
+        const DI = class e extends Nr {
             constructor(e) {
                 super(), this.path = "", this.ignore = [], this.toolCallId = "", Ks.util.initPartial(e, this)
             }
@@ -33577,7 +33609,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        RI.runtime = Ks, RI.typeName = "agent.v1.LsArgs", RI.fields = Ks.util.newFieldList(() => [{
+        DI.runtime = Ks, DI.typeName = "agent.v1.LsArgs", DI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "path",
             kind: "scalar",
@@ -33606,7 +33638,7 @@
             T: 13,
             opt: !0
         }]);
-        const NI = class e extends Nr {
+        const JI = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -33625,32 +33657,32 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        NI.runtime = Ks, NI.typeName = "agent.v1.LsResult", NI.fields = Ks.util.newFieldList(() => [{
+        JI.runtime = Ks, JI.typeName = "agent.v1.LsResult", JI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: DI,
+            T: bI,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: UI,
+            T: PI,
             oneof: "result"
         }, {
             no: 3,
             name: "rejected",
             kind: "message",
-            T: MI,
+            T: xI,
             oneof: "result"
         }, {
             no: 4,
             name: "timeout",
             kind: "message",
-            T: qI,
+            T: YI,
             oneof: "result"
         }]);
-        const _I = class e extends Nr {
+        const FI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33667,14 +33699,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        _I.runtime = Ks, _I.typeName = "agent.v1.LsSuccess", _I.fields = Ks.util.newFieldList(() => [{
+        FI.runtime = Ks, FI.typeName = "agent.v1.LsSuccess", FI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "directory_tree_root",
             kind: "message",
-            T: FI
+            T: vI
         }]);
-        let DI = _I;
-        const JI = class e extends Nr {
+        let bI = FI;
+        const LI = class e extends Nr {
             constructor(e) {
                 super(), this.absPath = "", this.childrenDirs = [], this.childrenFiles = [], this.childrenWereProcessed = !1, this.fullSubtreeExtensionCounts = {}, this.numFiles = 0, Ks.util.initPartial(e, this)
             }
@@ -33691,7 +33723,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        JI.runtime = Ks, JI.typeName = "agent.v1.LsDirectoryTreeNode", JI.fields = Ks.util.newFieldList(() => [{
+        LI.runtime = Ks, LI.typeName = "agent.v1.LsDirectoryTreeNode", LI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "abs_path",
             kind: "scalar",
@@ -33700,13 +33732,13 @@
             no: 2,
             name: "children_dirs",
             kind: "message",
-            T: JI,
+            T: LI,
             repeated: !0
         }, {
             no: 3,
             name: "children_files",
             kind: "message",
-            T: LI,
+            T: OI,
             repeated: !0
         }, {
             no: 4,
@@ -33728,8 +33760,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let FI = JI;
-        const bI = class e extends Nr {
+        let vI = LI;
+        const UI = class e extends Nr {
             constructor(e) {
                 super(), this.name = "", Ks.util.initPartial(e, this)
             }
@@ -33746,7 +33778,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bI.runtime = Ks, bI.typeName = "agent.v1.LsDirectoryTreeNode.File", bI.fields = Ks.util.newFieldList(() => [{
+        UI.runtime = Ks, UI.typeName = "agent.v1.LsDirectoryTreeNode.File", UI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "name",
             kind: "scalar",
@@ -33755,11 +33787,11 @@
             no: 2,
             name: "terminal_metadata",
             kind: "message",
-            T: GI,
+            T: VI,
             opt: !0
         }]);
-        let LI = bI;
-        const vI = class e extends Nr {
+        let OI = UI;
+        const MI = class e extends Nr {
             constructor(e) {
                 super(), this.path = "", this.error = "", Ks.util.initPartial(e, this)
             }
@@ -33776,7 +33808,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vI.runtime = Ks, vI.typeName = "agent.v1.LsError", vI.fields = Ks.util.newFieldList(() => [{
+        MI.runtime = Ks, MI.typeName = "agent.v1.LsError", MI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "path",
             kind: "scalar",
@@ -33787,8 +33819,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let UI = vI;
-        const OI = class e extends Nr {
+        let PI = MI;
+        const qI = class e extends Nr {
             constructor(e) {
                 super(), this.path = "", this.reason = "", Ks.util.initPartial(e, this)
             }
@@ -33805,7 +33837,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        OI.runtime = Ks, OI.typeName = "agent.v1.LsRejected", OI.fields = Ks.util.newFieldList(() => [{
+        qI.runtime = Ks, qI.typeName = "agent.v1.LsRejected", qI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "path",
             kind: "scalar",
@@ -33816,8 +33848,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let MI = OI;
-        const PI = class e extends Nr {
+        let xI = qI;
+        const GI = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -33834,14 +33866,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        PI.runtime = Ks, PI.typeName = "agent.v1.LsTimeout", PI.fields = Ks.util.newFieldList(() => [{
+        GI.runtime = Ks, GI.typeName = "agent.v1.LsTimeout", GI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "directory_tree_root",
             kind: "message",
-            T: FI
+            T: vI
         }]);
-        let qI = PI;
-        const xI = class e extends Nr {
+        let YI = GI;
+        const HI = class e extends Nr {
             constructor(e) {
                 super(), this.lastCommands = [], Ks.util.initPartial(e, this)
             }
@@ -33858,7 +33890,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        xI.runtime = Ks, xI.typeName = "agent.v1.TerminalMetadata", xI.fields = Ks.util.newFieldList(() => [{
+        HI.runtime = Ks, HI.typeName = "agent.v1.TerminalMetadata", HI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "cwd",
             kind: "scalar",
@@ -33868,7 +33900,7 @@
             no: 2,
             name: "last_commands",
             kind: "message",
-            T: HI,
+            T: XI,
             repeated: !0
         }, {
             no: 3,
@@ -33880,11 +33912,11 @@
             no: 4,
             name: "current_command",
             kind: "message",
-            T: HI,
+            T: XI,
             opt: !0
         }]);
-        let GI = xI;
-        const YI = class e extends Nr {
+        let VI = HI;
+        const WI = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", Ks.util.initPartial(e, this)
             }
@@ -33901,7 +33933,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        YI.runtime = Ks, YI.typeName = "agent.v1.TerminalMetadata.Command", YI.fields = Ks.util.newFieldList(() => [{
+        WI.runtime = Ks, WI.typeName = "agent.v1.TerminalMetadata.Command", WI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -33925,9 +33957,9 @@
             T: 3,
             opt: !0
         }]);
-        let HI = YI;
-        var VI = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LEFT = 1] = "LEFT", e[e.RIGHT = 2] = "RIGHT", e[e.MIDDLE = 3] = "MIDDLE", e[e.BACK = 4] = "BACK", e[e.FORWARD = 5] = "FORWARD", e))(VI || {});
-        Ks.util.setEnumType(VI, "agent.v1.MouseButton", [{
+        let XI = WI;
+        var jI = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LEFT = 1] = "LEFT", e[e.RIGHT = 2] = "RIGHT", e[e.MIDDLE = 3] = "MIDDLE", e[e.BACK = 4] = "BACK", e[e.FORWARD = 5] = "FORWARD", e))(jI || {});
+        Ks.util.setEnumType(jI, "agent.v1.MouseButton", [{
             no: 0,
             name: "MOUSE_BUTTON_UNSPECIFIED"
         }, {
@@ -33946,8 +33978,8 @@
             no: 5,
             name: "MOUSE_BUTTON_FORWARD"
         }]);
-        var WI = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.UP = 1] = "UP", e[e.DOWN = 2] = "DOWN", e[e.LEFT = 3] = "LEFT", e[e.RIGHT = 4] = "RIGHT", e))(WI || {});
-        Ks.util.setEnumType(WI, "agent.v1.ScrollDirection", [{
+        var KI = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.UP = 1] = "UP", e[e.DOWN = 2] = "DOWN", e[e.LEFT = 3] = "LEFT", e[e.RIGHT = 4] = "RIGHT", e))(KI || {});
+        Ks.util.setEnumType(KI, "agent.v1.ScrollDirection", [{
             no: 0,
             name: "SCROLL_DIRECTION_UNSPECIFIED"
         }, {
@@ -33963,7 +33995,7 @@
             no: 4,
             name: "SCROLL_DIRECTION_RIGHT"
         }]);
-        const XI = class e extends Nr {
+        const ZI = class e extends Nr {
             constructor(e) {
                 super(), this.x = 0, this.y = 0, Ks.util.initPartial(e, this)
             }
@@ -33980,7 +34012,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        XI.runtime = Ks, XI.typeName = "agent.v1.Coordinate", XI.fields = Ks.util.newFieldList(() => [{
+        ZI.runtime = Ks, ZI.typeName = "agent.v1.Coordinate", ZI.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "x",
             kind: "scalar",
@@ -33991,8 +34023,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let jI = XI;
-        const KI = class e extends Nr {
+        let zI = ZI;
+        const $I = class e extends Nr {
             constructor(e) {
                 super(), this.toolCallId = "", this.actions = [], Ks.util.initPartial(e, this)
             }
@@ -34009,7 +34041,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        KI.runtime = Ks, KI.typeName = "agent.v1.ComputerUseArgs", KI.fields = Ks.util.newFieldList(() => [{
+        $I.runtime = Ks, $I.typeName = "agent.v1.ComputerUseArgs", $I.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool_call_id",
             kind: "scalar",
@@ -34018,11 +34050,11 @@
             no: 2,
             name: "actions",
             kind: "message",
-            T: $I,
+            T: nB,
             repeated: !0
         }]);
-        let ZI = KI;
-        const zI = class e extends Nr {
+        let eB = $I;
+        const tB = class e extends Nr {
             constructor(e) {
                 super(), this.action = {
                     case: void 0
@@ -34041,75 +34073,75 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        zI.runtime = Ks, zI.typeName = "agent.v1.ComputerUseAction", zI.fields = Ks.util.newFieldList(() => [{
+        tB.runtime = Ks, tB.typeName = "agent.v1.ComputerUseAction", tB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "mouse_move",
             kind: "message",
-            T: tB,
+            T: sB,
             oneof: "action"
         }, {
             no: 2,
             name: "click",
             kind: "message",
-            T: rB,
+            T: AB,
             oneof: "action"
         }, {
             no: 3,
             name: "mouse_down",
             kind: "message",
-            T: iB,
+            T: aB,
             oneof: "action"
         }, {
             no: 4,
             name: "mouse_up",
             kind: "message",
-            T: oB,
+            T: cB,
             oneof: "action"
         }, {
             no: 5,
             name: "drag",
             kind: "message",
-            T: lB,
+            T: mB,
             oneof: "action"
         }, {
             no: 6,
             name: "scroll",
             kind: "message",
-            T: uB,
+            T: gB,
             oneof: "action"
         }, {
             no: 7,
             name: "type",
             kind: "message",
-            T: dB,
+            T: fB,
             oneof: "action"
         }, {
             no: 8,
             name: "key",
             kind: "message",
-            T: EB,
+            T: IB,
             oneof: "action"
         }, {
             no: 9,
             name: "wait",
             kind: "message",
-            T: hB,
+            T: CB,
             oneof: "action"
         }, {
             no: 10,
             name: "screenshot",
             kind: "message",
-            T: BB,
+            T: pB,
             oneof: "action"
         }, {
             no: 11,
             name: "cursor_position",
             kind: "message",
-            T: QB,
+            T: wB,
             oneof: "action"
         }]);
-        let $I = zI;
-        const eB = class e extends Nr {
+        let nB = tB;
+        const rB = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -34126,14 +34158,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        eB.runtime = Ks, eB.typeName = "agent.v1.MouseMoveAction", eB.fields = Ks.util.newFieldList(() => [{
+        rB.runtime = Ks, rB.typeName = "agent.v1.MouseMoveAction", rB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "coordinate",
             kind: "message",
-            T: jI
+            T: zI
         }]);
-        let tB = eB;
-        const nB = class e extends Nr {
+        let sB = rB;
+        const iB = class e extends Nr {
             constructor(e) {
                 super(), this.button = 0, this.count = 0, Ks.util.initPartial(e, this)
             }
@@ -34150,17 +34182,17 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        nB.runtime = Ks, nB.typeName = "agent.v1.ClickAction", nB.fields = Ks.util.newFieldList(() => [{
+        iB.runtime = Ks, iB.typeName = "agent.v1.ClickAction", iB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "coordinate",
             kind: "message",
-            T: jI,
+            T: zI,
             opt: !0
         }, {
             no: 2,
             name: "button",
             kind: "enum",
-            T: Ks.getEnumType(VI)
+            T: Ks.getEnumType(jI)
         }, {
             no: 3,
             name: "count",
@@ -34173,8 +34205,8 @@
             T: 9,
             opt: !0
         }]);
-        let rB = nB;
-        const sB = class e extends Nr {
+        let AB = iB;
+        const oB = class e extends Nr {
             constructor(e) {
                 super(), this.button = 0, Ks.util.initPartial(e, this)
             }
@@ -34191,14 +34223,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sB.runtime = Ks, sB.typeName = "agent.v1.MouseDownAction", sB.fields = Ks.util.newFieldList(() => [{
+        oB.runtime = Ks, oB.typeName = "agent.v1.MouseDownAction", oB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "button",
             kind: "enum",
-            T: Ks.getEnumType(VI)
+            T: Ks.getEnumType(jI)
         }]);
-        let iB = sB;
-        const AB = class e extends Nr {
+        let aB = oB;
+        const lB = class e extends Nr {
             constructor(e) {
                 super(), this.button = 0, Ks.util.initPartial(e, this)
             }
@@ -34215,14 +34247,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        AB.runtime = Ks, AB.typeName = "agent.v1.MouseUpAction", AB.fields = Ks.util.newFieldList(() => [{
+        lB.runtime = Ks, lB.typeName = "agent.v1.MouseUpAction", lB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "button",
             kind: "enum",
-            T: Ks.getEnumType(VI)
+            T: Ks.getEnumType(jI)
         }]);
-        let oB = AB;
-        const aB = class e extends Nr {
+        let cB = lB;
+        const uB = class e extends Nr {
             constructor(e) {
                 super(), this.path = [], this.button = 0, Ks.util.initPartial(e, this)
             }
@@ -34239,20 +34271,20 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        aB.runtime = Ks, aB.typeName = "agent.v1.DragAction", aB.fields = Ks.util.newFieldList(() => [{
+        uB.runtime = Ks, uB.typeName = "agent.v1.DragAction", uB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "path",
             kind: "message",
-            T: jI,
+            T: zI,
             repeated: !0
         }, {
             no: 2,
             name: "button",
             kind: "enum",
-            T: Ks.getEnumType(VI)
+            T: Ks.getEnumType(jI)
         }]);
-        let lB = aB;
-        const cB = class e extends Nr {
+        let mB = uB;
+        const dB = class e extends Nr {
             constructor(e) {
                 super(), this.direction = 0, this.amount = 0, Ks.util.initPartial(e, this)
             }
@@ -34269,17 +34301,17 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        cB.runtime = Ks, cB.typeName = "agent.v1.ScrollAction", cB.fields = Ks.util.newFieldList(() => [{
+        dB.runtime = Ks, dB.typeName = "agent.v1.ScrollAction", dB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "coordinate",
             kind: "message",
-            T: jI,
+            T: zI,
             opt: !0
         }, {
             no: 2,
             name: "direction",
             kind: "enum",
-            T: Ks.getEnumType(WI)
+            T: Ks.getEnumType(KI)
         }, {
             no: 3,
             name: "amount",
@@ -34292,8 +34324,8 @@
             T: 9,
             opt: !0
         }]);
-        let uB = cB;
-        const mB = class e extends Nr {
+        let gB = dB;
+        const EB = class e extends Nr {
             constructor(e) {
                 super(), this.text = "", Ks.util.initPartial(e, this)
             }
@@ -34310,14 +34342,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        mB.runtime = Ks, mB.typeName = "agent.v1.TypeAction", mB.fields = Ks.util.newFieldList(() => [{
+        EB.runtime = Ks, EB.typeName = "agent.v1.TypeAction", EB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "text",
             kind: "scalar",
             T: 9
         }]);
-        let dB = mB;
-        const gB = class e extends Nr {
+        let fB = EB;
+        const hB = class e extends Nr {
             constructor(e) {
                 super(), this.key = "", Ks.util.initPartial(e, this)
             }
@@ -34334,7 +34366,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        gB.runtime = Ks, gB.typeName = "agent.v1.KeyAction", gB.fields = Ks.util.newFieldList(() => [{
+        hB.runtime = Ks, hB.typeName = "agent.v1.KeyAction", hB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "key",
             kind: "scalar",
@@ -34346,8 +34378,8 @@
             T: 5,
             opt: !0
         }]);
-        let EB = gB;
-        const fB = class e extends Nr {
+        let IB = hB;
+        const BB = class e extends Nr {
             constructor(e) {
                 super(), this.durationMs = 0, Ks.util.initPartial(e, this)
             }
@@ -34364,14 +34396,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fB.runtime = Ks, fB.typeName = "agent.v1.WaitAction", fB.fields = Ks.util.newFieldList(() => [{
+        BB.runtime = Ks, BB.typeName = "agent.v1.WaitAction", BB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "duration_ms",
             kind: "scalar",
             T: 5
         }]);
-        let hB = fB;
-        const IB = class e extends Nr {
+        let CB = BB;
+        const QB = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -34388,9 +34420,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        IB.runtime = Ks, IB.typeName = "agent.v1.ScreenshotAction", IB.fields = Ks.util.newFieldList(() => []);
-        let BB = IB;
-        const CB = class e extends Nr {
+        QB.runtime = Ks, QB.typeName = "agent.v1.ScreenshotAction", QB.fields = Ks.util.newFieldList(() => []);
+        let pB = QB;
+        const yB = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -34407,9 +34439,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        CB.runtime = Ks, CB.typeName = "agent.v1.CursorPositionAction", CB.fields = Ks.util.newFieldList(() => []);
-        let QB = CB;
-        const pB = class e extends Nr {
+        yB.runtime = Ks, yB.typeName = "agent.v1.CursorPositionAction", yB.fields = Ks.util.newFieldList(() => []);
+        let wB = yB;
+        const TB = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -34428,21 +34460,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        pB.runtime = Ks, pB.typeName = "agent.v1.ComputerUseResult", pB.fields = Ks.util.newFieldList(() => [{
+        TB.runtime = Ks, TB.typeName = "agent.v1.ComputerUseResult", TB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: TB,
+            T: RB,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: kB,
+            T: _B,
             oneof: "result"
         }]);
-        let yB = pB;
-        const wB = class e extends Nr {
+        let SB = TB;
+        const kB = class e extends Nr {
             constructor(e) {
                 super(), this.actionCount = 0, this.durationMs = 0, Ks.util.initPartial(e, this)
             }
@@ -34459,7 +34491,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        wB.runtime = Ks, wB.typeName = "agent.v1.ComputerUseSuccess", wB.fields = Ks.util.newFieldList(() => [{
+        kB.runtime = Ks, kB.typeName = "agent.v1.ComputerUseSuccess", kB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "action_count",
             kind: "scalar",
@@ -34491,11 +34523,11 @@
             no: 6,
             name: "cursor_position",
             kind: "message",
-            T: jI,
+            T: zI,
             opt: !0
         }]);
-        let TB = wB;
-        const SB = class e extends Nr {
+        let RB = kB;
+        const NB = class e extends Nr {
             constructor(e) {
                 super(), this.error = "", this.actionCount = 0, this.durationMs = 0, Ks.util.initPartial(e, this)
             }
@@ -34512,7 +34544,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        SB.runtime = Ks, SB.typeName = "agent.v1.ComputerUseError", SB.fields = Ks.util.newFieldList(() => [{
+        NB.runtime = Ks, NB.typeName = "agent.v1.ComputerUseError", NB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error",
             kind: "scalar",
@@ -34546,8 +34578,8 @@
             T: 9,
             opt: !0
         }]);
-        let kB = SB;
-        const RB = class e extends Nr {
+        let _B = NB;
+        const DB = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -34564,19 +34596,19 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        RB.runtime = Ks, RB.typeName = "agent.v1.ComputerUseToolCall", RB.fields = Ks.util.newFieldList(() => [{
+        DB.runtime = Ks, DB.typeName = "agent.v1.ComputerUseToolCall", DB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "args",
             kind: "message",
-            T: ZI
+            T: eB
         }, {
             no: 2,
             name: "result",
             kind: "message",
-            T: yB
+            T: SB
         }]);
-        var NB = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.FIXED = 1] = "FIXED", e[e.FALSE_POSITIVE = 2] = "FALSE_POSITIVE", e[e.COULD_NOT_FIX = 3] = "COULD_NOT_FIX", e[e.RESOLVED_BY_OTHER_FIX = 4] = "RESOLVED_BY_OTHER_FIX", e))(NB || {});
-        Ks.util.setEnumType(NB, "agent.v1.BugfixVerdict", [{
+        var JB = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.FIXED = 1] = "FIXED", e[e.FALSE_POSITIVE = 2] = "FALSE_POSITIVE", e[e.COULD_NOT_FIX = 3] = "COULD_NOT_FIX", e[e.RESOLVED_BY_OTHER_FIX = 4] = "RESOLVED_BY_OTHER_FIX", e))(JB || {});
+        Ks.util.setEnumType(JB, "agent.v1.BugfixVerdict", [{
             no: 0,
             name: "BUGFIX_VERDICT_UNSPECIFIED"
         }, {
@@ -34592,7 +34624,7 @@
             no: 4,
             name: "BUGFIX_VERDICT_RESOLVED_BY_OTHER_FIX"
         }]);
-        const _B = class e extends Nr {
+        const FB = class e extends Nr {
             constructor(e) {
                 super(), this.bugId = "", this.bugTitle = "", this.verdict = 0, this.explanation = "", Ks.util.initPartial(e, this)
             }
@@ -34609,7 +34641,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        _B.runtime = Ks, _B.typeName = "agent.v1.BugfixResultItem", _B.fields = Ks.util.newFieldList(() => [{
+        FB.runtime = Ks, FB.typeName = "agent.v1.BugfixResultItem", FB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "bug_id",
             kind: "scalar",
@@ -34623,7 +34655,7 @@
             no: 3,
             name: "verdict",
             kind: "enum",
-            T: Ks.getEnumType(NB)
+            T: Ks.getEnumType(JB)
         }, {
             no: 4,
             name: "explanation",
@@ -34636,8 +34668,8 @@
             T: 9,
             opt: !0
         }]);
-        let DB = _B;
-        const JB = class e extends Nr {
+        let bB = FB;
+        const LB = class e extends Nr {
             constructor(e) {
                 super(), this.summary = "", this.results = [], Ks.util.initPartial(e, this)
             }
@@ -34654,7 +34686,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        JB.runtime = Ks, JB.typeName = "agent.v1.ReportBugfixResultsArgs", JB.fields = Ks.util.newFieldList(() => [{
+        LB.runtime = Ks, LB.typeName = "agent.v1.ReportBugfixResultsArgs", LB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "summary",
             kind: "scalar",
@@ -34663,11 +34695,11 @@
             no: 2,
             name: "results",
             kind: "message",
-            T: DB,
+            T: bB,
             repeated: !0
         }]);
-        let FB = JB;
-        const bB = class e extends Nr {
+        let vB = LB;
+        const UB = class e extends Nr {
             constructor(e) {
                 super(), this.results = [], Ks.util.initPartial(e, this)
             }
@@ -34684,15 +34716,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bB.runtime = Ks, bB.typeName = "agent.v1.ReportBugfixResultsSuccess", bB.fields = Ks.util.newFieldList(() => [{
+        UB.runtime = Ks, UB.typeName = "agent.v1.ReportBugfixResultsSuccess", UB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "results",
             kind: "message",
-            T: DB,
+            T: bB,
             repeated: !0
         }]);
-        let LB = bB;
-        const vB = class e extends Nr {
+        let OB = UB;
+        const MB = class e extends Nr {
             constructor(e) {
                 super(), this.error = "", Ks.util.initPartial(e, this)
             }
@@ -34709,14 +34741,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vB.runtime = Ks, vB.typeName = "agent.v1.ReportBugfixResultsError", vB.fields = Ks.util.newFieldList(() => [{
+        MB.runtime = Ks, MB.typeName = "agent.v1.ReportBugfixResultsError", MB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error",
             kind: "scalar",
             T: 9
         }]);
-        let UB = vB;
-        const OB = class e extends Nr {
+        let PB = MB;
+        const qB = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -34735,21 +34767,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        OB.runtime = Ks, OB.typeName = "agent.v1.ReportBugfixResultsResult", OB.fields = Ks.util.newFieldList(() => [{
+        qB.runtime = Ks, qB.typeName = "agent.v1.ReportBugfixResultsResult", qB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: LB,
+            T: OB,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: UB,
+            T: PB,
             oneof: "result"
         }]);
-        let MB = OB;
-        const PB = class e extends Nr {
+        let xB = qB;
+        const GB = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -34766,19 +34798,19 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        PB.runtime = Ks, PB.typeName = "agent.v1.ReportBugfixResultsToolCall", PB.fields = Ks.util.newFieldList(() => [{
+        GB.runtime = Ks, GB.typeName = "agent.v1.ReportBugfixResultsToolCall", GB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "args",
             kind: "message",
-            T: FB
+            T: vB
         }, {
             no: 2,
             name: "result",
             kind: "message",
-            T: MB
+            T: xB
         }]);
-        var qB = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.READ_SEMSEARCH_FILES = 1] = "READ_SEMSEARCH_FILES", e[e.RIPGREP_SEARCH = 3] = "RIPGREP_SEARCH", e[e.READ_FILE = 5] = "READ_FILE", e[e.LIST_DIR = 6] = "LIST_DIR", e[e.EDIT_FILE = 7] = "EDIT_FILE", e[e.FILE_SEARCH = 8] = "FILE_SEARCH", e[e.SEMANTIC_SEARCH_FULL = 9] = "SEMANTIC_SEARCH_FULL", e[e.DELETE_FILE = 11] = "DELETE_FILE", e[e.REAPPLY = 12] = "REAPPLY", e[e.RUN_TERMINAL_COMMAND_V2 = 15] = "RUN_TERMINAL_COMMAND_V2", e[e.FETCH_RULES = 16] = "FETCH_RULES", e[e.WEB_SEARCH = 18] = "WEB_SEARCH", e[e.MCP = 19] = "MCP", e[e.SEARCH_SYMBOLS = 23] = "SEARCH_SYMBOLS", e[e.BACKGROUND_COMPOSER_FOLLOWUP = 24] = "BACKGROUND_COMPOSER_FOLLOWUP", e[e.KNOWLEDGE_BASE = 25] = "KNOWLEDGE_BASE", e[e.FETCH_PULL_REQUEST = 26] = "FETCH_PULL_REQUEST", e[e.DEEP_SEARCH = 27] = "DEEP_SEARCH", e[e.CREATE_DIAGRAM = 28] = "CREATE_DIAGRAM", e[e.FIX_LINTS = 29] = "FIX_LINTS", e[e.READ_LINTS = 30] = "READ_LINTS", e[e.GO_TO_DEFINITION = 31] = "GO_TO_DEFINITION", e[e.TASK = 32] = "TASK", e[e.AWAIT_TASK = 33] = "AWAIT_TASK", e[e.TODO_READ = 34] = "TODO_READ", e[e.TODO_WRITE = 35] = "TODO_WRITE", e[e.EDIT_FILE_V2 = 38] = "EDIT_FILE_V2", e[e.LIST_DIR_V2 = 39] = "LIST_DIR_V2", e[e.READ_FILE_V2 = 40] = "READ_FILE_V2", e[e.RIPGREP_RAW_SEARCH = 41] = "RIPGREP_RAW_SEARCH", e[e.GLOB_FILE_SEARCH = 42] = "GLOB_FILE_SEARCH", e[e.CREATE_PLAN = 43] = "CREATE_PLAN", e[e.LIST_MCP_RESOURCES = 44] = "LIST_MCP_RESOURCES", e[e.READ_MCP_RESOURCE = 45] = "READ_MCP_RESOURCE", e[e.READ_PROJECT = 46] = "READ_PROJECT", e[e.UPDATE_PROJECT = 47] = "UPDATE_PROJECT", e[e.TASK_V2 = 48] = "TASK_V2", e[e.CALL_MCP_TOOL = 49] = "CALL_MCP_TOOL", e[e.APPLY_AGENT_DIFF = 50] = "APPLY_AGENT_DIFF", e[e.ASK_QUESTION = 51] = "ASK_QUESTION", e[e.SWITCH_MODE = 52] = "SWITCH_MODE", e[e.GENERATE_IMAGE = 53] = "GENERATE_IMAGE", e[e.COMPUTER_USE = 54] = "COMPUTER_USE", e[e.WRITE_SHELL_STDIN = 55] = "WRITE_SHELL_STDIN", e[e.RECORD_SCREEN = 56] = "RECORD_SCREEN", e[e.WEB_FETCH = 57] = "WEB_FETCH", e[e.REPORT_BUGFIX_RESULTS = 58] = "REPORT_BUGFIX_RESULTS", e[e.AI_ATTRIBUTION = 59] = "AI_ATTRIBUTION", e[e.MCP_AUTH = 60] = "MCP_AUTH", e[e.REFLECT = 61] = "REFLECT", e[e.AWAIT = 62] = "AWAIT", e[e.GET_MCP_TOOLS = 63] = "GET_MCP_TOOLS", e))(qB || {});
-        Ks.util.setEnumType(qB, "aiserver.v1.ClientSideToolV2", [{
+        var YB = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.READ_SEMSEARCH_FILES = 1] = "READ_SEMSEARCH_FILES", e[e.RIPGREP_SEARCH = 3] = "RIPGREP_SEARCH", e[e.READ_FILE = 5] = "READ_FILE", e[e.LIST_DIR = 6] = "LIST_DIR", e[e.EDIT_FILE = 7] = "EDIT_FILE", e[e.FILE_SEARCH = 8] = "FILE_SEARCH", e[e.SEMANTIC_SEARCH_FULL = 9] = "SEMANTIC_SEARCH_FULL", e[e.DELETE_FILE = 11] = "DELETE_FILE", e[e.REAPPLY = 12] = "REAPPLY", e[e.RUN_TERMINAL_COMMAND_V2 = 15] = "RUN_TERMINAL_COMMAND_V2", e[e.FETCH_RULES = 16] = "FETCH_RULES", e[e.WEB_SEARCH = 18] = "WEB_SEARCH", e[e.MCP = 19] = "MCP", e[e.SEARCH_SYMBOLS = 23] = "SEARCH_SYMBOLS", e[e.BACKGROUND_COMPOSER_FOLLOWUP = 24] = "BACKGROUND_COMPOSER_FOLLOWUP", e[e.KNOWLEDGE_BASE = 25] = "KNOWLEDGE_BASE", e[e.FETCH_PULL_REQUEST = 26] = "FETCH_PULL_REQUEST", e[e.DEEP_SEARCH = 27] = "DEEP_SEARCH", e[e.CREATE_DIAGRAM = 28] = "CREATE_DIAGRAM", e[e.FIX_LINTS = 29] = "FIX_LINTS", e[e.READ_LINTS = 30] = "READ_LINTS", e[e.GO_TO_DEFINITION = 31] = "GO_TO_DEFINITION", e[e.TASK = 32] = "TASK", e[e.AWAIT_TASK = 33] = "AWAIT_TASK", e[e.TODO_READ = 34] = "TODO_READ", e[e.TODO_WRITE = 35] = "TODO_WRITE", e[e.EDIT_FILE_V2 = 38] = "EDIT_FILE_V2", e[e.LIST_DIR_V2 = 39] = "LIST_DIR_V2", e[e.READ_FILE_V2 = 40] = "READ_FILE_V2", e[e.RIPGREP_RAW_SEARCH = 41] = "RIPGREP_RAW_SEARCH", e[e.GLOB_FILE_SEARCH = 42] = "GLOB_FILE_SEARCH", e[e.CREATE_PLAN = 43] = "CREATE_PLAN", e[e.LIST_MCP_RESOURCES = 44] = "LIST_MCP_RESOURCES", e[e.READ_MCP_RESOURCE = 45] = "READ_MCP_RESOURCE", e[e.READ_PROJECT = 46] = "READ_PROJECT", e[e.UPDATE_PROJECT = 47] = "UPDATE_PROJECT", e[e.TASK_V2 = 48] = "TASK_V2", e[e.CALL_MCP_TOOL = 49] = "CALL_MCP_TOOL", e[e.APPLY_AGENT_DIFF = 50] = "APPLY_AGENT_DIFF", e[e.ASK_QUESTION = 51] = "ASK_QUESTION", e[e.SWITCH_MODE = 52] = "SWITCH_MODE", e[e.GENERATE_IMAGE = 53] = "GENERATE_IMAGE", e[e.COMPUTER_USE = 54] = "COMPUTER_USE", e[e.WRITE_SHELL_STDIN = 55] = "WRITE_SHELL_STDIN", e[e.RECORD_SCREEN = 56] = "RECORD_SCREEN", e[e.WEB_FETCH = 57] = "WEB_FETCH", e[e.REPORT_BUGFIX_RESULTS = 58] = "REPORT_BUGFIX_RESULTS", e[e.AI_ATTRIBUTION = 59] = "AI_ATTRIBUTION", e[e.MCP_AUTH = 60] = "MCP_AUTH", e[e.REFLECT = 61] = "REFLECT", e[e.AWAIT = 62] = "AWAIT", e[e.GET_MCP_TOOLS = 63] = "GET_MCP_TOOLS", e))(YB || {});
+        Ks.util.setEnumType(YB, "aiserver.v1.ClientSideToolV2", [{
             no: 0,
             name: "CLIENT_SIDE_TOOL_V2_UNSPECIFIED"
         }, {
@@ -34938,8 +34970,8 @@
             no: 63,
             name: "CLIENT_SIDE_TOOL_V2_GET_MCP_TOOLS"
         }]);
-        var xB = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.BASH = 1] = "BASH", e[e.POWERSHELL = 2] = "POWERSHELL", e))(xB || {});
-        Ks.util.setEnumType(xB, "aiserver.v1.ShellType", [{
+        var HB = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.BASH = 1] = "BASH", e[e.POWERSHELL = 2] = "POWERSHELL", e))(HB || {});
+        Ks.util.setEnumType(HB, "aiserver.v1.ShellType", [{
             no: 0,
             name: "SHELL_TYPE_UNSPECIFIED"
         }, {
@@ -34949,8 +34981,8 @@
             no: 2,
             name: "SHELL_TYPE_POWERSHELL"
         }]);
-        var GB = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SEARCH = 1] = "SEARCH", e[e.READ_CHUNK = 2] = "READ_CHUNK", e[e.GOTODEF = 3] = "GOTODEF", e[e.EDIT = 4] = "EDIT", e[e.UNDO_EDIT = 5] = "UNDO_EDIT", e[e.END = 6] = "END", e[e.NEW_FILE = 7] = "NEW_FILE", e[e.ADD_TEST = 8] = "ADD_TEST", e[e.RUN_TEST = 9] = "RUN_TEST", e[e.DELETE_TEST = 10] = "DELETE_TEST", e[e.SAVE_FILE = 11] = "SAVE_FILE", e[e.GET_TESTS = 12] = "GET_TESTS", e[e.GET_SYMBOLS = 13] = "GET_SYMBOLS", e[e.SEMANTIC_SEARCH = 14] = "SEMANTIC_SEARCH", e[e.GET_PROJECT_STRUCTURE = 15] = "GET_PROJECT_STRUCTURE", e[e.CREATE_RM_FILES = 16] = "CREATE_RM_FILES", e[e.RUN_TERMINAL_COMMANDS = 17] = "RUN_TERMINAL_COMMANDS", e[e.NEW_EDIT = 18] = "NEW_EDIT", e[e.READ_WITH_LINTER = 19] = "READ_WITH_LINTER", e))(GB || {});
-        Ks.util.setEnumType(GB, "aiserver.v1.BuiltinTool", [{
+        var VB = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SEARCH = 1] = "SEARCH", e[e.READ_CHUNK = 2] = "READ_CHUNK", e[e.GOTODEF = 3] = "GOTODEF", e[e.EDIT = 4] = "EDIT", e[e.UNDO_EDIT = 5] = "UNDO_EDIT", e[e.END = 6] = "END", e[e.NEW_FILE = 7] = "NEW_FILE", e[e.ADD_TEST = 8] = "ADD_TEST", e[e.RUN_TEST = 9] = "RUN_TEST", e[e.DELETE_TEST = 10] = "DELETE_TEST", e[e.SAVE_FILE = 11] = "SAVE_FILE", e[e.GET_TESTS = 12] = "GET_TESTS", e[e.GET_SYMBOLS = 13] = "GET_SYMBOLS", e[e.SEMANTIC_SEARCH = 14] = "SEMANTIC_SEARCH", e[e.GET_PROJECT_STRUCTURE = 15] = "GET_PROJECT_STRUCTURE", e[e.CREATE_RM_FILES = 16] = "CREATE_RM_FILES", e[e.RUN_TERMINAL_COMMANDS = 17] = "RUN_TERMINAL_COMMANDS", e[e.NEW_EDIT = 18] = "NEW_EDIT", e[e.READ_WITH_LINTER = 19] = "READ_WITH_LINTER", e))(VB || {});
+        Ks.util.setEnumType(VB, "aiserver.v1.BuiltinTool", [{
             no: 0,
             name: "BUILTIN_TOOL_UNSPECIFIED"
         }, {
@@ -35011,8 +35043,8 @@
             no: 19,
             name: "BUILTIN_TOOL_READ_WITH_LINTER"
         }]);
-        var YB = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EXECUTION_COMPLETED = 1] = "EXECUTION_COMPLETED", e[e.EXECUTION_ABORTED = 2] = "EXECUTION_ABORTED", e[e.EXECUTION_FAILED = 3] = "EXECUTION_FAILED", e[e.ERROR_OCCURRED_CHECKING_REASON = 4] = "ERROR_OCCURRED_CHECKING_REASON", e[e.IDLE_TIMEOUT = 5] = "IDLE_TIMEOUT", e))(YB || {});
-        Ks.util.setEnumType(YB, "aiserver.v1.RunTerminalCommandEndedReason", [{
+        var WB = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EXECUTION_COMPLETED = 1] = "EXECUTION_COMPLETED", e[e.EXECUTION_ABORTED = 2] = "EXECUTION_ABORTED", e[e.EXECUTION_FAILED = 3] = "EXECUTION_FAILED", e[e.ERROR_OCCURRED_CHECKING_REASON = 4] = "ERROR_OCCURRED_CHECKING_REASON", e[e.IDLE_TIMEOUT = 5] = "IDLE_TIMEOUT", e))(WB || {});
+        Ks.util.setEnumType(WB, "aiserver.v1.RunTerminalCommandEndedReason", [{
             no: 0,
             name: "RUN_TERMINAL_COMMAND_ENDED_REASON_UNSPECIFIED"
         }, {
@@ -35031,7 +35063,7 @@
             no: 5,
             name: "RUN_TERMINAL_COMMAND_ENDED_REASON_IDLE_TIMEOUT"
         }]);
-        const HB = class e extends Nr {
+        const XB = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -35048,14 +35080,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        HB.runtime = Ks, HB.typeName = "aiserver.v1.ReapplyParams", HB.fields = Ks.util.newFieldList(() => [{
+        XB.runtime = Ks, XB.typeName = "aiserver.v1.ReapplyParams", XB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
             T: 9
         }]);
-        let VB = HB;
-        const WB = class e extends Nr {
+        let jB = XB;
+        const KB = class e extends Nr {
             constructor(e) {
                 super(), this.agentId = "", Ks.util.initPartial(e, this)
             }
@@ -35072,14 +35104,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        WB.runtime = Ks, WB.typeName = "aiserver.v1.ApplyAgentDiffParams", WB.fields = Ks.util.newFieldList(() => [{
+        KB.runtime = Ks, KB.typeName = "aiserver.v1.ApplyAgentDiffParams", KB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "agent_id",
             kind: "scalar",
             T: 9
         }]);
-        let XB = WB;
-        const jB = class e extends Nr {
+        let ZB = KB;
+        const zB = class e extends Nr {
             constructor(e) {
                 super(), this.isApplied = !1, this.applyFailed = !1, this.linterErrors = [], Ks.util.initPartial(e, this)
             }
@@ -35096,11 +35128,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        jB.runtime = Ks, jB.typeName = "aiserver.v1.ReapplyResult", jB.fields = Ks.util.newFieldList(() => [{
+        zB.runtime = Ks, zB.typeName = "aiserver.v1.ReapplyResult", zB.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "diff",
             kind: "message",
-            T: MC
+            T: xC
         }, {
             no: 2,
             name: "is_applied",
@@ -35124,8 +35156,8 @@
             T: 8,
             opt: !0
         }]);
-        let KB = jB;
-        const ZB = class e extends Nr {
+        let $B = zB;
+        const eC = class e extends Nr {
             constructor(e) {
                 super(), this.ruleNames = [], Ks.util.initPartial(e, this)
             }
@@ -35142,15 +35174,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ZB.runtime = Ks, ZB.typeName = "aiserver.v1.FetchRulesParams", ZB.fields = Ks.util.newFieldList(() => [{
+        eC.runtime = Ks, eC.typeName = "aiserver.v1.FetchRulesParams", eC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "rule_names",
             kind: "scalar",
             T: 9,
             repeated: !0
         }]);
-        let zB = ZB;
-        const $B = class e extends Nr {
+        let tC = eC;
+        const nC = class e extends Nr {
             constructor(e) {
                 super(), this.rules = [], Ks.util.initPartial(e, this)
             }
@@ -35167,15 +35199,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $B.runtime = Ks, $B.typeName = "aiserver.v1.FetchRulesResult", $B.fields = Ks.util.newFieldList(() => [{
+        nC.runtime = Ks, nC.typeName = "aiserver.v1.FetchRulesResult", nC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "rules",
             kind: "message",
             T: Bl,
             repeated: !0
         }]);
-        let eC = $B;
-        const tC = class e extends Nr {
+        let rC = nC;
+        const sC = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -35192,9 +35224,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        tC.runtime = Ks, tC.typeName = "aiserver.v1.ReapplyStream", tC.fields = Ks.util.newFieldList(() => []);
-        let nC = tC;
-        const rC = class e extends Nr {
+        sC.runtime = Ks, sC.typeName = "aiserver.v1.ReapplyStream", sC.fields = Ks.util.newFieldList(() => []);
+        let iC = sC;
+        const AC = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", this.targetDirectories = [], this.explanation = "", Ks.util.initPartial(e, this)
             }
@@ -35211,7 +35243,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        rC.runtime = Ks, rC.typeName = "aiserver.v1.SemanticSearchArguments", rC.fields = Ks.util.newFieldList(() => [{
+        AC.runtime = Ks, AC.typeName = "aiserver.v1.SemanticSearchArguments", AC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
@@ -35228,7 +35260,7 @@
             kind: "scalar",
             T: 9
         }]);
-        const sC = class e extends Nr {
+        const oC = class e extends Nr {
             constructor(e) {
                 super(), this.clientVisibleErrorMessage = "", this.modelVisibleErrorMessage = "", this.errorDetails = {
                     case: void 0
@@ -35247,7 +35279,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sC.runtime = Ks, sC.typeName = "aiserver.v1.ToolResultError", sC.fields = Ks.util.newFieldList(() => [{
+        oC.runtime = Ks, oC.typeName = "aiserver.v1.ToolResultError", oC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "client_visible_error_message",
             kind: "scalar",
@@ -35267,17 +35299,17 @@
             no: 5,
             name: "edit_file_error_details",
             kind: "message",
-            T: oC,
+            T: cC,
             oneof: "error_details"
         }, {
             no: 6,
             name: "search_replace_error_details",
             kind: "message",
-            T: lC,
+            T: mC,
             oneof: "error_details"
         }]);
-        let iC = sC;
-        const AC = class e extends Nr {
+        let aC = oC;
+        const lC = class e extends Nr {
             constructor(e) {
                 super(), this.numLinesInFileBeforeEdit = 0, Ks.util.initPartial(e, this)
             }
@@ -35294,14 +35326,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        AC.runtime = Ks, AC.typeName = "aiserver.v1.ToolResultError.EditFileError", AC.fields = Ks.util.newFieldList(() => [{
+        lC.runtime = Ks, lC.typeName = "aiserver.v1.ToolResultError.EditFileError", lC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "num_lines_in_file_before_edit",
             kind: "scalar",
             T: 5
         }]);
-        let oC = AC;
-        const aC = class e extends Nr {
+        let cC = lC;
+        const uC = class e extends Nr {
             constructor(e) {
                 super(), this.numLinesInFileBeforeEdit = 0, Ks.util.initPartial(e, this)
             }
@@ -35318,14 +35350,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        aC.runtime = Ks, aC.typeName = "aiserver.v1.ToolResultError.SearchReplaceError", aC.fields = Ks.util.newFieldList(() => [{
+        uC.runtime = Ks, uC.typeName = "aiserver.v1.ToolResultError.SearchReplaceError", uC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "num_lines_in_file_before_edit",
             kind: "scalar",
             T: 5
         }]);
-        let lC = aC;
-        const cC = class e extends Nr {
+        let mC = uC;
+        const dC = class e extends Nr {
             constructor(e) {
                 super(), this.tool = 0, this.params = {
                     case: void 0
@@ -35344,298 +35376,298 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        cC.runtime = Ks, cC.typeName = "aiserver.v1.ClientSideToolV2Call", cC.fields = Ks.util.newFieldList(() => [{
+        dC.runtime = Ks, dC.typeName = "aiserver.v1.ClientSideToolV2Call", dC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool",
             kind: "enum",
-            T: Ks.getEnumType(qB)
+            T: Ks.getEnumType(YB)
         }, {
             no: 2,
             name: "read_semsearch_files_params",
             kind: "message",
-            T: yp,
+            T: Sp,
             oneof: "params"
         }, {
             no: 5,
             name: "ripgrep_search_params",
             kind: "message",
-            T: yQ,
+            T: SQ,
             oneof: "params"
         }, {
             no: 8,
             name: "read_file_params",
             kind: "message",
-            T: hQ,
+            T: CQ,
             oneof: "params"
         }, {
             no: 12,
             name: "list_dir_params",
             kind: "message",
-            T: lQ,
+            T: mQ,
             oneof: "params"
         }, {
             no: 13,
             name: "edit_file_params",
             kind: "message",
-            T: LC,
+            T: OC,
             oneof: "params"
         }, {
             no: 16,
             name: "file_search_params",
             kind: "message",
-            T: tQ,
+            T: sQ,
             oneof: "params"
         }, {
             no: 17,
             name: "semantic_search_full_params",
             kind: "message",
-            T: vp,
+            T: Mp,
             oneof: "params"
         }, {
             no: 19,
             name: "delete_file_params",
             kind: "message",
-            T: xp,
+            T: Hp,
             oneof: "params"
         }, {
             no: 20,
             name: "reapply_params",
             kind: "message",
-            T: VB,
+            T: jB,
             oneof: "params"
         }, {
             no: 23,
             name: "run_terminal_command_v2_params",
             kind: "message",
-            T: BT,
+            T: pT,
             oneof: "params"
         }, {
             no: 24,
             name: "fetch_rules_params",
             kind: "message",
-            T: zB,
+            T: tC,
             oneof: "params"
         }, {
             no: 26,
             name: "web_search_params",
             kind: "message",
-            T: DT,
+            T: bT,
             oneof: "params"
         }, {
             no: 27,
             name: "mcp_params",
             kind: "message",
-            T: MT,
+            T: xT,
             oneof: "params"
         }, {
             no: 31,
             name: "search_symbols_params",
             kind: "message",
-            T: uS,
+            T: gS,
             oneof: "params"
         }, {
             no: 41,
             name: "gotodef_params",
             kind: "message",
-            T: mw,
+            T: Ew,
             oneof: "params"
         }, {
             no: 32,
             name: "background_composer_followup_params",
             kind: "message",
-            T: BS,
+            T: pS,
             oneof: "params"
         }, {
             no: 33,
             name: "knowledge_base_params",
             kind: "message",
-            T: RS,
+            T: DS,
             oneof: "params"
         }, {
             no: 34,
             name: "fetch_pull_request_params",
             kind: "message",
-            T: bS,
+            T: US,
             oneof: "params"
         }, {
             no: 35,
             name: "deep_search_params",
             kind: "message",
-            T: YS,
+            T: WS,
             oneof: "params"
         }, {
             no: 36,
             name: "create_diagram_params",
             kind: "message",
-            T: KS,
+            T: $S,
             oneof: "params"
         }, {
             no: 37,
             name: "fix_lints_params",
             kind: "message",
-            T: nk,
+            T: ik,
             oneof: "params"
         }, {
             no: 38,
             name: "read_lints_params",
             kind: "message",
-            T: ck,
+            T: dk,
             oneof: "params"
         }, {
             no: 42,
             name: "task_params",
             kind: "message",
-            T: Ik,
+            T: Qk,
             oneof: "params"
         }, {
             no: 43,
             name: "await_task_params",
             kind: "message",
-            T: AR,
+            T: lR,
             oneof: "params"
         }, {
             no: 44,
             name: "todo_read_params",
             kind: "message",
-            T: gR,
+            T: hR,
             oneof: "params"
         }, {
             no: 45,
             name: "todo_write_params",
             kind: "message",
-            T: pR,
+            T: TR,
             oneof: "params"
         }, {
             no: 50,
             name: "edit_file_v2_params",
             kind: "message",
-            T: TC,
+            T: RC,
             oneof: "params"
         }, {
             no: 52,
             name: "list_dir_v2_params",
             kind: "message",
-            T: RR,
+            T: DR,
             oneof: "params"
         }, {
             no: 53,
             name: "read_file_v2_params",
             kind: "message",
-            T: OR,
+            T: qR,
             oneof: "params"
         }, {
             no: 54,
             name: "ripgrep_raw_search_params",
             kind: "message",
-            T: bk,
+            T: Uk,
             oneof: "params"
         }, {
             no: 55,
             name: "glob_file_search_params",
             kind: "message",
-            T: YR,
+            T: WR,
             oneof: "params"
         }, {
             no: 56,
             name: "create_plan_params",
             kind: "message",
-            T: cN,
+            T: dN,
             oneof: "params"
         }, {
             no: 57,
             name: "list_mcp_resources_params",
             kind: "message",
-            T: WT,
+            T: KT,
             oneof: "params"
         }, {
             no: 58,
             name: "read_mcp_resource_params",
             kind: "message",
-            T: $T,
+            T: nS,
             oneof: "params"
         }, {
             no: 59,
             name: "read_project_params",
             kind: "message",
-            T: pN,
+            T: TN,
             oneof: "params"
         }, {
             no: 60,
             name: "update_project_params",
             kind: "message",
-            T: _N,
+            T: FN,
             oneof: "params"
         }, {
             no: 61,
             name: "task_v2_params",
             kind: "message",
-            T: Rk,
+            T: Dk,
             oneof: "params"
         }, {
             no: 62,
             name: "call_mcp_tool_params",
             kind: "message",
-            T: rS,
+            T: AS,
             oneof: "params"
         }, {
             no: 63,
             name: "apply_agent_diff_params",
             kind: "message",
-            T: XB,
+            T: ZB,
             oneof: "params"
         }, {
             no: 64,
             name: "ask_question_params",
             kind: "message",
-            T: vN,
+            T: MN,
             oneof: "params"
         }, {
             no: 65,
             name: "switch_mode_params",
             kind: "message",
-            T: XN,
+            T: ZN,
             oneof: "params"
         }, {
             no: 66,
             name: "computer_use_params",
             kind: "message",
-            T: e_,
+            T: r_,
             oneof: "params"
         }, {
             no: 67,
             name: "write_shell_stdin_params",
             kind: "message",
-            T: Xu,
+            T: ju,
             oneof: "params"
         }, {
             no: 68,
             name: "record_screen_params",
             kind: "message",
-            T: sm,
+            T: im,
             oneof: "params"
         }, {
             no: 69,
             name: "web_fetch_params",
             kind: "message",
-            T: a_,
+            T: u_,
             oneof: "params"
         }, {
             no: 70,
             name: "report_bugfix_results_params",
             kind: "message",
-            T: g_,
+            T: h_,
             oneof: "params"
         }, {
             no: 71,
             name: "mcp_auth_params",
             kind: "message",
-            T: C_,
+            T: y_,
             oneof: "params"
         }, {
             no: 72,
             name: "get_mcp_tools_params",
             kind: "message",
-            T: oS,
+            T: cS,
             oneof: "params"
         }, {
             no: 3,
@@ -35686,8 +35718,8 @@
             T: 9,
             opt: !0
         }]);
-        let uC = cC;
-        const mC = class e extends Nr {
+        let gC = dC;
+        const EC = class e extends Nr {
             constructor(e) {
                 super(), this.tool = 0, this.result = {
                     case: void 0
@@ -35706,310 +35738,310 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        mC.runtime = Ks, mC.typeName = "aiserver.v1.ClientSideToolV2Result", mC.fields = Ks.util.newFieldList(() => [{
+        EC.runtime = Ks, EC.typeName = "aiserver.v1.ClientSideToolV2Result", EC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool",
             kind: "enum",
-            T: Ks.getEnumType(qB)
+            T: Ks.getEnumType(YB)
         }, {
             no: 2,
             name: "read_semsearch_files_result",
             kind: "message",
-            T: Jp,
+            T: Lp,
             oneof: "result"
         }, {
             no: 4,
             name: "ripgrep_search_result",
             kind: "message",
-            T: GQ,
+            T: VQ,
             oneof: "result"
         }, {
             no: 6,
             name: "read_file_result",
             kind: "message",
-            T: BQ,
+            T: pQ,
             oneof: "result"
         }, {
             no: 9,
             name: "list_dir_result",
             kind: "message",
-            T: uQ,
+            T: gQ,
             oneof: "result"
         }, {
             no: 10,
             name: "edit_file_result",
             kind: "message",
-            T: UC,
+            T: PC,
             oneof: "result"
         }, {
             no: 11,
             name: "file_search_result",
             kind: "message",
-            T: iQ,
+            T: aQ,
             oneof: "result"
         }, {
             no: 18,
             name: "semantic_search_full_result",
             kind: "message",
-            T: Op,
+            T: qp,
             oneof: "result"
         }, {
             no: 20,
             name: "delete_file_result",
             kind: "message",
-            T: Yp,
+            T: Wp,
             oneof: "result"
         }, {
             no: 21,
             name: "reapply_result",
             kind: "message",
-            T: KB,
+            T: $B,
             oneof: "result"
         }, {
             no: 24,
             name: "run_terminal_command_v2_result",
             kind: "message",
-            T: TT,
+            T: RT,
             oneof: "result"
         }, {
             no: 25,
             name: "fetch_rules_result",
             kind: "message",
-            T: eC,
+            T: rC,
             oneof: "result"
         }, {
             no: 27,
             name: "web_search_result",
             kind: "message",
-            T: FT,
+            T: vT,
             oneof: "result"
         }, {
             no: 28,
             name: "mcp_result",
             kind: "message",
-            T: GT,
+            T: VT,
             oneof: "result"
         }, {
             no: 32,
             name: "search_symbols_result",
             kind: "message",
-            T: dS,
+            T: fS,
             oneof: "result"
         }, {
             no: 33,
             name: "background_composer_followup_result",
             kind: "message",
-            T: QS,
+            T: wS,
             oneof: "result"
         }, {
             no: 34,
             name: "knowledge_base_result",
             kind: "message",
-            T: _S,
+            T: FS,
             oneof: "result"
         }, {
             no: 36,
             name: "fetch_pull_request_result",
             kind: "message",
-            T: vS,
+            T: MS,
             oneof: "result"
         }, {
             no: 37,
             name: "deep_search_result",
             kind: "message",
-            T: VS,
+            T: jS,
             oneof: "result"
         }, {
             no: 38,
             name: "create_diagram_result",
             kind: "message",
-            T: zS,
+            T: tk,
             oneof: "result"
         }, {
             no: 39,
             name: "fix_lints_result",
             kind: "message",
-            T: sk,
+            T: ok,
             oneof: "result"
         }, {
             no: 40,
             name: "read_lints_result",
             kind: "message",
-            T: mk,
+            T: Ek,
             oneof: "result"
         }, {
             no: 41,
             name: "gotodef_result",
             kind: "message",
-            T: fw,
+            T: Bw,
             oneof: "result"
         }, {
             no: 42,
             name: "task_result",
             kind: "message",
-            T: Ck,
+            T: yk,
             oneof: "result"
         }, {
             no: 43,
             name: "await_task_result",
             kind: "message",
-            T: aR,
+            T: uR,
             oneof: "result"
         }, {
             no: 44,
             name: "todo_read_result",
             kind: "message",
-            T: IR,
+            T: QR,
             oneof: "result"
         }, {
             no: 45,
             name: "todo_write_result",
             kind: "message",
-            T: wR,
+            T: kR,
             oneof: "result"
         }, {
             no: 51,
             name: "edit_file_v2_result",
             kind: "message",
-            T: DC,
+            T: bC,
             oneof: "result"
         }, {
             no: 52,
             name: "list_dir_v2_result",
             kind: "message",
-            T: _R,
+            T: FR,
             oneof: "result"
         }, {
             no: 53,
             name: "read_file_v2_result",
             kind: "message",
-            T: PR,
+            T: GR,
             oneof: "result"
         }, {
             no: 54,
             name: "ripgrep_raw_search_result",
             kind: "message",
-            T: vk,
+            T: Mk,
             oneof: "result"
         }, {
             no: 55,
             name: "glob_file_search_result",
             kind: "message",
-            T: VR,
+            T: jR,
             oneof: "result"
         }, {
             no: 56,
             name: "create_plan_result",
             kind: "message",
-            T: mN,
+            T: EN,
             oneof: "result"
         }, {
             no: 57,
             name: "list_mcp_resources_result",
             kind: "message",
-            T: jT,
+            T: zT,
             oneof: "result"
         }, {
             no: 58,
             name: "read_mcp_resource_result",
             kind: "message",
-            T: tS,
+            T: sS,
             oneof: "result"
         }, {
             no: 59,
             name: "read_project_result",
             kind: "message",
-            T: wN,
+            T: kN,
             oneof: "result"
         }, {
             no: 60,
             name: "update_project_result",
             kind: "message",
-            T: JN,
+            T: LN,
             oneof: "result"
         }, {
             no: 61,
             name: "task_v2_result",
             kind: "message",
-            T: _k,
+            T: Fk,
             oneof: "result"
         }, {
             no: 62,
             name: "call_mcp_tool_result",
             kind: "message",
-            T: iS,
+            T: aS,
             oneof: "result"
         }, {
             no: 63,
             name: "apply_agent_diff_result",
             kind: "message",
-            T: Bm,
+            T: Cm,
             oneof: "result"
         }, {
             no: 64,
             name: "ask_question_result",
             kind: "message",
-            T: xN,
+            T: HN,
             oneof: "result"
         }, {
             no: 65,
             name: "switch_mode_result",
             kind: "message",
-            T: KN,
+            T: $N,
             oneof: "result"
         }, {
             no: 66,
             name: "computer_use_result",
             kind: "message",
-            T: n_,
+            T: i_,
             oneof: "result"
         }, {
             no: 67,
             name: "generate_image_result",
             kind: "message",
-            T: _m,
+            T: Dm,
             oneof: "result"
         }, {
             no: 68,
             name: "write_shell_stdin_result",
             kind: "message",
-            T: Ku,
+            T: Zu,
             oneof: "result"
         }, {
             no: 69,
             name: "record_screen_result",
             kind: "message",
-            T: Am,
+            T: om,
             oneof: "result"
         }, {
             no: 70,
             name: "web_fetch_result",
             kind: "message",
-            T: c_,
+            T: d_,
             oneof: "result"
         }, {
             no: 71,
             name: "report_bugfix_results_result",
             kind: "message",
-            T: f_,
+            T: B_,
             oneof: "result"
         }, {
             no: 72,
             name: "ai_attribution_result",
             kind: "message",
-            T: Hm,
+            T: Vm,
             oneof: "result"
         }, {
             no: 73,
             name: "mcp_auth_result",
             kind: "message",
-            T: p_,
+            T: T_,
             oneof: "result"
         }, {
             no: 74,
             name: "get_mcp_tools_result",
             kind: "message",
-            T: lS,
+            T: mS,
             oneof: "result"
         }, {
             no: 35,
@@ -36020,7 +36052,7 @@
             no: 8,
             name: "error",
             kind: "message",
-            T: iC,
+            T: aC,
             opt: !0
         }, {
             no: 48,
@@ -36038,11 +36070,11 @@
             no: 50,
             name: "attachments",
             kind: "message",
-            T: hC,
+            T: CC,
             opt: !0
         }]);
-        let dC = mC;
-        const gC = class e extends Nr {
+        let fC = EC;
+        const hC = class e extends Nr {
             constructor(e) {
                 super(), this.rawMessage = "", Ks.util.initPartial(e, this)
             }
@@ -36059,14 +36091,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        gC.runtime = Ks, gC.typeName = "aiserver.v1.NudgeMessage", gC.fields = Ks.util.newFieldList(() => [{
+        hC.runtime = Ks, hC.typeName = "aiserver.v1.NudgeMessage", hC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "raw_message",
             kind: "scalar",
             T: 9
         }]);
-        let EC = gC;
-        const fC = class e extends Nr {
+        let IC = hC;
+        const BC = class e extends Nr {
             constructor(e) {
                 super(), this.originalTodos = [], this.updatedTodos = [], this.nudgeMessages = [], this.shouldShowTodoWriteReminder = !1, this.todoReminderType = 0, Ks.util.initPartial(e, this)
             }
@@ -36083,23 +36115,23 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fC.runtime = Ks, fC.typeName = "aiserver.v1.ToolResultAttachments", fC.fields = Ks.util.newFieldList(() => [{
+        BC.runtime = Ks, BC.typeName = "aiserver.v1.ToolResultAttachments", BC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "original_todos",
             kind: "message",
-            T: fR,
+            T: BR,
             repeated: !0
         }, {
             no: 2,
             name: "updated_todos",
             kind: "message",
-            T: fR,
+            T: BR,
             repeated: !0
         }, {
             no: 3,
             name: "nudge_messages",
             kind: "message",
-            T: EC,
+            T: IC,
             repeated: !0
         }, {
             no: 4,
@@ -36110,17 +36142,17 @@
             no: 5,
             name: "todo_reminder_type",
             kind: "enum",
-            T: Ks.getEnumType(IC)
+            T: Ks.getEnumType(QC)
         }, {
             no: 6,
             name: "discovery_budget_reminder",
             kind: "message",
-            T: CC,
+            T: yC,
             opt: !0
         }]);
-        let hC = fC;
-        var IC = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EVERY_10_TURNS = 1] = "EVERY_10_TURNS", e[e.AFTER_EDIT = 2] = "AFTER_EDIT", e))(IC || {});
-        Ks.util.setEnumType(IC, "aiserver.v1.ToolResultAttachments.TodoReminderType", [{
+        let CC = BC;
+        var QC = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EVERY_10_TURNS = 1] = "EVERY_10_TURNS", e[e.AFTER_EDIT = 2] = "AFTER_EDIT", e))(QC || {});
+        Ks.util.setEnumType(QC, "aiserver.v1.ToolResultAttachments.TodoReminderType", [{
             no: 0,
             name: "TODO_REMINDER_TYPE_UNSPECIFIED"
         }, {
@@ -36130,7 +36162,7 @@
             no: 2,
             name: "TODO_REMINDER_TYPE_AFTER_EDIT"
         }]);
-        const BC = class e extends Nr {
+        const pC = class e extends Nr {
             constructor(e) {
                 super(), this.discoveryRoundsRemaining = 0, Ks.util.initPartial(e, this)
             }
@@ -36147,7 +36179,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        BC.runtime = Ks, BC.typeName = "aiserver.v1.ToolResultAttachments.DiscoveryBudgetReminder", BC.fields = Ks.util.newFieldList(() => [{
+        pC.runtime = Ks, pC.typeName = "aiserver.v1.ToolResultAttachments.DiscoveryBudgetReminder", pC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "discovery_rounds_remaining",
             kind: "scalar",
@@ -36159,8 +36191,8 @@
             T: 9,
             opt: !0
         }]);
-        let CC = BC;
-        const QC = class e extends Nr {
+        let yC = pC;
+        const wC = class e extends Nr {
             constructor(e) {
                 super(), this.tool = 0, this.toolCallId = "", this.name = "", Ks.util.initPartial(e, this)
             }
@@ -36177,11 +36209,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        QC.runtime = Ks, QC.typeName = "aiserver.v1.StreamedBackPartialToolCall", QC.fields = Ks.util.newFieldList(() => [{
+        wC.runtime = Ks, wC.typeName = "aiserver.v1.StreamedBackPartialToolCall", wC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool",
             kind: "enum",
-            T: Ks.getEnumType(qB)
+            T: Ks.getEnumType(YB)
         }, {
             no: 2,
             name: "tool_call_id",
@@ -36205,7 +36237,7 @@
             T: 9,
             opt: !0
         }]);
-        const pC = class e extends Nr {
+        const TC = class e extends Nr {
             constructor(e) {
                 super(), this.tool = 0, this.toolCallId = "", this.params = {
                     case: void 0
@@ -36224,11 +36256,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        pC.runtime = Ks, pC.typeName = "aiserver.v1.StreamedBackToolCall", pC.fields = Ks.util.newFieldList(() => [{
+        TC.runtime = Ks, TC.typeName = "aiserver.v1.StreamedBackToolCall", TC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool",
             kind: "enum",
-            T: Ks.getEnumType(qB)
+            T: Ks.getEnumType(YB)
         }, {
             no: 2,
             name: "tool_call_id",
@@ -36238,271 +36270,271 @@
             no: 3,
             name: "read_semsearch_files_stream",
             kind: "message",
-            T: bp,
+            T: Up,
             oneof: "params"
         }, {
             no: 5,
             name: "ripgrep_search_stream",
             kind: "message",
-            T: Qp,
+            T: wp,
             oneof: "params"
         }, {
             no: 7,
             name: "read_file_stream",
             kind: "message",
-            T: QQ,
+            T: wQ,
             oneof: "params"
         }, {
             no: 12,
             name: "list_dir_stream",
             kind: "message",
-            T: EQ,
+            T: IQ,
             oneof: "params"
         }, {
             no: 13,
             name: "edit_file_stream",
             kind: "message",
-            T: $C,
+            T: nQ,
             oneof: "params"
         }, {
             no: 14,
             name: "file_search_stream",
             kind: "message",
-            T: rQ,
+            T: AQ,
             oneof: "params"
         }, {
             no: 19,
             name: "semantic_search_full_stream",
             kind: "message",
-            T: Pp,
+            T: Gp,
             oneof: "params"
         }, {
             no: 21,
             name: "delete_file_stream",
             kind: "message",
-            T: Vp,
+            T: jp,
             oneof: "params"
         }, {
             no: 22,
             name: "reapply_stream",
             kind: "message",
-            T: nC,
+            T: iC,
             oneof: "params"
         }, {
             no: 25,
             name: "run_terminal_command_v2_stream",
             kind: "message",
-            T: kT,
+            T: _T,
             oneof: "params"
         }, {
             no: 26,
             name: "fetch_rules_stream",
             kind: "message",
-            T: NT,
+            T: JT,
             oneof: "params"
         }, {
             no: 28,
             name: "web_search_stream",
             kind: "message",
-            T: UT,
+            T: PT,
             oneof: "params"
         }, {
             no: 29,
             name: "mcp_stream",
             kind: "message",
-            T: HT,
+            T: XT,
             oneof: "params"
         }, {
             no: 33,
             name: "search_symbols_stream",
             kind: "message",
-            T: hS,
+            T: CS,
             oneof: "params"
         }, {
             no: 41,
             name: "gotodef_stream",
             kind: "message",
-            T: fk,
+            T: Bk,
             oneof: "params"
         }, {
             no: 34,
             name: "background_composer_followup_stream",
             kind: "message",
-            T: yS,
+            T: SS,
             oneof: "params"
         }, {
             no: 35,
             name: "knowledge_base_stream",
             kind: "message",
-            T: JS,
+            T: LS,
             oneof: "params"
         }, {
             no: 36,
             name: "fetch_pull_request_stream",
             kind: "message",
-            T: PS,
+            T: GS,
             oneof: "params"
         }, {
             no: 37,
             name: "deep_search_stream",
             kind: "message",
-            T: XS,
+            T: ZS,
             oneof: "params"
         }, {
             no: 38,
             name: "create_diagram_stream",
             kind: "message",
-            T: ek,
+            T: rk,
             oneof: "params"
         }, {
             no: 39,
             name: "fix_lints_stream",
             kind: "message",
-            T: ak,
+            T: uk,
             oneof: "params"
         }, {
             no: 40,
             name: "read_lints_stream",
             kind: "message",
-            T: gk,
+            T: hk,
             oneof: "params"
         }, {
             no: 42,
             name: "task_stream",
             kind: "message",
-            T: Sk,
+            T: Nk,
             oneof: "params"
         }, {
             no: 43,
             name: "await_task_stream",
             kind: "message",
-            T: mR,
+            T: ER,
             oneof: "params"
         }, {
             no: 44,
             name: "todo_read_stream",
             kind: "message",
-            T: CR,
+            T: yR,
             oneof: "params"
         }, {
             no: 45,
             name: "todo_write_stream",
             kind: "message",
-            T: SR,
+            T: NR,
             oneof: "params"
         }, {
             no: 52,
             name: "edit_file_v2_stream",
             kind: "message",
-            T: FC,
+            T: vC,
             oneof: "params"
         }, {
             no: 53,
             name: "list_dir_v2_stream",
             kind: "message",
-            T: vR,
+            T: MR,
             oneof: "params"
         }, {
             no: 54,
             name: "read_file_v2_stream",
             kind: "message",
-            T: xR,
+            T: HR,
             oneof: "params"
         }, {
             no: 55,
             name: "ripgrep_raw_search_stream",
             kind: "message",
-            T: sR,
+            T: oR,
             oneof: "params"
         }, {
             no: 56,
             name: "glob_file_search_stream",
             kind: "message",
-            T: zR,
+            T: tN,
             oneof: "params"
         }, {
             no: 57,
             name: "create_plan_stream",
             kind: "message",
-            T: CN,
+            T: yN,
             oneof: "params"
         }, {
             no: 58,
             name: "list_mcp_resources_stream",
             kind: "message",
-            T: eN,
+            T: rN,
             oneof: "params"
         }, {
             no: 59,
             name: "read_mcp_resource_stream",
             kind: "message",
-            T: sN,
+            T: oN,
             oneof: "params"
         }, {
             no: 60,
             name: "read_project_stream",
             kind: "message",
-            T: SN,
+            T: NN,
             oneof: "params"
         }, {
             no: 61,
             name: "update_project_stream",
             kind: "message",
-            T: bN,
+            T: UN,
             oneof: "params"
         }, {
             no: 62,
             name: "task_v2_stream",
             kind: "message",
-            T: Jk,
+            T: Lk,
             oneof: "params"
         }, {
             no: 63,
             name: "call_mcp_tool_stream",
             kind: "message",
-            T: nN,
+            T: iN,
             oneof: "params"
         }, {
             no: 64,
             name: "ask_question_stream",
             kind: "message",
-            T: VN,
+            T: jN,
             oneof: "params"
         }, {
             no: 65,
             name: "switch_mode_stream",
             kind: "message",
-            T: zN,
+            T: t_,
             oneof: "params"
         }, {
             no: 66,
             name: "computer_use_stream",
             kind: "message",
-            T: s_,
+            T: o_,
             oneof: "params"
         }, {
             no: 67,
             name: "write_shell_stdin_stream",
             kind: "message",
-            T: A_,
+            T: l_,
             oneof: "params"
         }, {
             no: 68,
             name: "web_fetch_stream",
             kind: "message",
-            T: m_,
+            T: E_,
             oneof: "params"
         }, {
             no: 69,
             name: "report_bugfix_results_stream",
             kind: "message",
-            T: I_,
+            T: Q_,
             oneof: "params"
         }, {
             no: 70,
             name: "mcp_auth_stream",
             kind: "message",
-            T: w_,
+            T: k_,
             oneof: "params"
         }, {
             no: 8,
@@ -36518,7 +36550,7 @@
             no: 10,
             name: "error",
             kind: "message",
-            T: iC,
+            T: aC,
             opt: !0
         }, {
             no: 50,
@@ -36533,7 +36565,7 @@
             T: 9,
             opt: !0
         }]);
-        const yC = class e extends Nr {
+        const SC = class e extends Nr {
             constructor(e) {
                 super(), this.tool = 0, this.toolCallId = "", this.params = {
                     case: void 0
@@ -36552,11 +36584,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yC.runtime = Ks, yC.typeName = "aiserver.v1.StreamedBackToolCallV2", yC.fields = Ks.util.newFieldList(() => [{
+        SC.runtime = Ks, SC.typeName = "aiserver.v1.StreamedBackToolCallV2", SC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool",
             kind: "enum",
-            T: Ks.getEnumType(qB)
+            T: Ks.getEnumType(YB)
         }, {
             no: 2,
             name: "tool_call_id",
@@ -36566,289 +36598,289 @@
             no: 3,
             name: "read_semsearch_files_params",
             kind: "message",
-            T: yp,
+            T: Sp,
             oneof: "params"
         }, {
             no: 5,
             name: "ripgrep_search_params",
             kind: "message",
-            T: yQ,
+            T: SQ,
             oneof: "params"
         }, {
             no: 9,
             name: "read_file_params",
             kind: "message",
-            T: hQ,
+            T: CQ,
             oneof: "params"
         }, {
             no: 12,
             name: "list_dir_params",
             kind: "message",
-            T: lQ,
+            T: mQ,
             oneof: "params"
         }, {
             no: 13,
             name: "edit_file_params",
             kind: "message",
-            T: LC,
+            T: OC,
             oneof: "params"
         }, {
             no: 16,
             name: "file_search_params",
             kind: "message",
-            T: tQ,
+            T: sQ,
             oneof: "params"
         }, {
             no: 17,
             name: "semantic_search_full_params",
             kind: "message",
-            T: vp,
+            T: Mp,
             oneof: "params"
         }, {
             no: 19,
             name: "delete_file_params",
             kind: "message",
-            T: xp,
+            T: Hp,
             oneof: "params"
         }, {
             no: 20,
             name: "reapply_params",
             kind: "message",
-            T: VB,
+            T: jB,
             oneof: "params"
         }, {
             no: 23,
             name: "run_terminal_command_v2_params",
             kind: "message",
-            T: BT,
+            T: pT,
             oneof: "params"
         }, {
             no: 24,
             name: "fetch_rules_params",
             kind: "message",
-            T: zB,
+            T: tC,
             oneof: "params"
         }, {
             no: 26,
             name: "web_search_params",
             kind: "message",
-            T: DT,
+            T: bT,
             oneof: "params"
         }, {
             no: 27,
             name: "mcp_params",
             kind: "message",
-            T: MT,
+            T: xT,
             oneof: "params"
         }, {
             no: 31,
             name: "search_symbols_params",
             kind: "message",
-            T: uS,
+            T: gS,
             oneof: "params"
         }, {
             no: 41,
             name: "gotodef_params",
             kind: "message",
-            T: mw,
+            T: Ew,
             oneof: "params"
         }, {
             no: 32,
             name: "background_composer_followup_params",
             kind: "message",
-            T: BS,
+            T: pS,
             oneof: "params"
         }, {
             no: 33,
             name: "knowledge_base_params",
             kind: "message",
-            T: RS,
+            T: DS,
             oneof: "params"
         }, {
             no: 34,
             name: "fetch_pull_request_params",
             kind: "message",
-            T: bS,
+            T: US,
             oneof: "params"
         }, {
             no: 35,
             name: "deep_search_params",
             kind: "message",
-            T: YS,
+            T: WS,
             oneof: "params"
         }, {
             no: 36,
             name: "create_diagram_params",
             kind: "message",
-            T: KS,
+            T: $S,
             oneof: "params"
         }, {
             no: 37,
             name: "fix_lints_params",
             kind: "message",
-            T: nk,
+            T: ik,
             oneof: "params"
         }, {
             no: 38,
             name: "read_lints_params",
             kind: "message",
-            T: ck,
+            T: dk,
             oneof: "params"
         }, {
             no: 42,
             name: "task_params",
             kind: "message",
-            T: Ik,
+            T: Qk,
             oneof: "params"
         }, {
             no: 43,
             name: "await_task_params",
             kind: "message",
-            T: AR,
+            T: lR,
             oneof: "params"
         }, {
             no: 44,
             name: "todo_read_params",
             kind: "message",
-            T: gR,
+            T: hR,
             oneof: "params"
         }, {
             no: 45,
             name: "todo_write_params",
             kind: "message",
-            T: pR,
+            T: TR,
             oneof: "params"
         }, {
             no: 48,
             name: "edit_file_v2_params",
             kind: "message",
-            T: TC,
+            T: RC,
             oneof: "params"
         }, {
             no: 49,
             name: "list_dir_v2_params",
             kind: "message",
-            T: RR,
+            T: DR,
             oneof: "params"
         }, {
             no: 61,
             name: "read_file_v2_params",
             kind: "message",
-            T: OR,
+            T: qR,
             oneof: "params"
         }, {
             no: 62,
             name: "ripgrep_raw_search_params",
             kind: "message",
-            T: bk,
+            T: Uk,
             oneof: "params"
         }, {
             no: 63,
             name: "glob_file_search_params",
             kind: "message",
-            T: YR,
+            T: WR,
             oneof: "params"
         }, {
             no: 64,
             name: "create_plan_params",
             kind: "message",
-            T: cN,
+            T: dN,
             oneof: "params"
         }, {
             no: 65,
             name: "list_mcp_resources_params",
             kind: "message",
-            T: WT,
+            T: KT,
             oneof: "params"
         }, {
             no: 66,
             name: "read_mcp_resource_params",
             kind: "message",
-            T: $T,
+            T: nS,
             oneof: "params"
         }, {
             no: 67,
             name: "read_project_params",
             kind: "message",
-            T: pN,
+            T: TN,
             oneof: "params"
         }, {
             no: 68,
             name: "update_project_params",
             kind: "message",
-            T: _N,
+            T: FN,
             oneof: "params"
         }, {
             no: 69,
             name: "task_v2_params",
             kind: "message",
-            T: Rk,
+            T: Dk,
             oneof: "params"
         }, {
             no: 70,
             name: "call_mcp_tool_params",
             kind: "message",
-            T: rS,
+            T: AS,
             oneof: "params"
         }, {
             no: 71,
             name: "apply_agent_diff_params",
             kind: "message",
-            T: XB,
+            T: ZB,
             oneof: "params"
         }, {
             no: 72,
             name: "ask_question_params",
             kind: "message",
-            T: vN,
+            T: MN,
             oneof: "params"
         }, {
             no: 73,
             name: "switch_mode_params",
             kind: "message",
-            T: XN,
+            T: ZN,
             oneof: "params"
         }, {
             no: 74,
             name: "computer_use_params",
             kind: "message",
-            T: e_,
+            T: r_,
             oneof: "params"
         }, {
             no: 75,
             name: "write_shell_stdin_params",
             kind: "message",
-            T: Xu,
+            T: ju,
             oneof: "params"
         }, {
             no: 76,
             name: "record_screen_params",
             kind: "message",
-            T: sm,
+            T: im,
             oneof: "params"
         }, {
             no: 77,
             name: "web_fetch_params",
             kind: "message",
-            T: a_,
+            T: u_,
             oneof: "params"
         }, {
             no: 78,
             name: "report_bugfix_results_params",
             kind: "message",
-            T: g_,
+            T: h_,
             oneof: "params"
         }, {
             no: 79,
             name: "mcp_auth_params",
             kind: "message",
-            T: C_,
+            T: y_,
             oneof: "params"
         }, {
             no: 80,
             name: "get_mcp_tools_params",
             kind: "message",
-            T: oS,
+            T: cS,
             oneof: "params"
         }, {
             no: 8,
@@ -36864,7 +36896,7 @@
             no: 11,
             name: "error",
             kind: "message",
-            T: iC,
+            T: aC,
             opt: !0
         }, {
             no: 50,
@@ -36879,7 +36911,7 @@
             T: 9,
             opt: !0
         }]);
-        const wC = class e extends Nr {
+        const kC = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.streamingEdit = {
                     case: void 0
@@ -36898,7 +36930,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        wC.runtime = Ks, wC.typeName = "aiserver.v1.EditFileV2Params", wC.fields = Ks.util.newFieldList(() => [{
+        kC.runtime = Ks, kC.typeName = "aiserver.v1.EditFileV2Params", kC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -36919,13 +36951,13 @@
             no: 4,
             name: "text",
             kind: "message",
-            T: kC,
+            T: _C,
             oneof: "streaming_edit"
         }, {
             no: 5,
             name: "code",
             kind: "message",
-            T: NC,
+            T: JC,
             oneof: "streaming_edit"
         }, {
             no: 6,
@@ -36936,7 +36968,7 @@
             no: 7,
             name: "diff",
             kind: "message",
-            T: MC,
+            T: xC,
             opt: !0
         }, {
             no: 8,
@@ -36962,8 +36994,8 @@
             T: 8,
             opt: !0
         }]);
-        let TC = wC;
-        const SC = class e extends Nr {
+        let RC = kC;
+        const NC = class e extends Nr {
             constructor(e) {
                 super(), this.text = "", Ks.util.initPartial(e, this)
             }
@@ -36980,14 +37012,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        SC.runtime = Ks, SC.typeName = "aiserver.v1.EditFileV2Params.StreamingEditText", SC.fields = Ks.util.newFieldList(() => [{
+        NC.runtime = Ks, NC.typeName = "aiserver.v1.EditFileV2Params.StreamingEditText", NC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "text",
             kind: "scalar",
             T: 9
         }]);
-        let kC = SC;
-        const RC = class e extends Nr {
+        let _C = NC;
+        const DC = class e extends Nr {
             constructor(e) {
                 super(), this.code = "", Ks.util.initPartial(e, this)
             }
@@ -37004,14 +37036,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        RC.runtime = Ks, RC.typeName = "aiserver.v1.EditFileV2Params.StreamingEditCode", RC.fields = Ks.util.newFieldList(() => [{
+        DC.runtime = Ks, DC.typeName = "aiserver.v1.EditFileV2Params.StreamingEditCode", DC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "code",
             kind: "scalar",
             T: 9
         }]);
-        let NC = RC;
-        const _C = class e extends Nr {
+        let JC = DC;
+        const FC = class e extends Nr {
             constructor(e) {
                 super(), this.fileWasCreated = !1, this.linterErrors = [], this.sentBackLinterErrors = !1, this.shouldAutoFixLints = !1, this.resultForModel = "", this.afterContentId = "", Ks.util.initPartial(e, this)
             }
@@ -37028,7 +37060,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        _C.runtime = Ks, _C.typeName = "aiserver.v1.EditFileV2Result", _C.fields = Ks.util.newFieldList(() => [{
+        FC.runtime = Ks, FC.typeName = "aiserver.v1.EditFileV2Result", FC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "contents_before_edit",
             kind: "scalar",
@@ -37055,7 +37087,7 @@
             no: 3,
             name: "diff",
             kind: "message",
-            T: MC,
+            T: xC,
             opt: !0
         }, {
             no: 4,
@@ -37083,7 +37115,7 @@
             no: 7,
             name: "human_review_v2",
             kind: "message",
-            T: ZC,
+            T: eQ,
             opt: !0
         }, {
             no: 10,
@@ -37108,8 +37140,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let DC = _C;
-        const JC = class e extends Nr {
+        let bC = FC;
+        const LC = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -37126,9 +37158,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        JC.runtime = Ks, JC.typeName = "aiserver.v1.EditFileV2Stream", JC.fields = Ks.util.newFieldList(() => []);
-        let FC = JC;
-        const bC = class e extends Nr {
+        LC.runtime = Ks, LC.typeName = "aiserver.v1.EditFileV2Stream", LC.fields = Ks.util.newFieldList(() => []);
+        let vC = LC;
+        const UC = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.language = "", this.blocking = !1, this.contents = "", this.lineRanges = [], Ks.util.initPartial(e, this)
             }
@@ -37145,7 +37177,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bC.runtime = Ks, bC.typeName = "aiserver.v1.EditFileParams", bC.fields = Ks.util.newFieldList(() => [{
+        UC.runtime = Ks, UC.typeName = "aiserver.v1.EditFileParams", UC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -37250,8 +37282,8 @@
             T: 8,
             opt: !0
         }]);
-        let LC = bC;
-        const vC = class e extends Nr {
+        let OC = UC;
+        const MC = class e extends Nr {
             constructor(e) {
                 super(), this.isApplied = !1, this.applyFailed = !1, this.linterErrors = [], Ks.util.initPartial(e, this)
             }
@@ -37268,11 +37300,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vC.runtime = Ks, vC.typeName = "aiserver.v1.EditFileResult", vC.fields = Ks.util.newFieldList(() => [{
+        MC.runtime = Ks, MC.typeName = "aiserver.v1.EditFileResult", MC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "diff",
             kind: "message",
-            T: MC
+            T: xC
         }, {
             no: 2,
             name: "is_applied",
@@ -37317,7 +37349,7 @@
             no: 11,
             name: "recoverable_error",
             kind: "message",
-            T: YC,
+            T: WC,
             opt: !0
         }, {
             no: 9,
@@ -37341,13 +37373,13 @@
             no: 13,
             name: "human_review",
             kind: "message",
-            T: WC,
+            T: KC,
             opt: !0
         }, {
             no: 14,
             name: "human_feedback",
             kind: "message",
-            T: jC,
+            T: zC,
             opt: !0
         }, {
             no: 15,
@@ -37359,7 +37391,7 @@
             no: 16,
             name: "human_review_v2",
             kind: "message",
-            T: ZC,
+            T: eQ,
             opt: !0
         }, {
             no: 17,
@@ -37368,8 +37400,8 @@
             T: 8,
             opt: !0
         }]);
-        let UC = vC;
-        const OC = class e extends Nr {
+        let PC = MC;
+        const qC = class e extends Nr {
             constructor(e) {
                 super(), this.chunks = [], this.editor = 0, this.hitTimeout = !1, Ks.util.initPartial(e, this)
             }
@@ -37386,26 +37418,26 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        OC.runtime = Ks, OC.typeName = "aiserver.v1.EditFileResult.FileDiff", OC.fields = Ks.util.newFieldList(() => [{
+        qC.runtime = Ks, qC.typeName = "aiserver.v1.EditFileResult.FileDiff", qC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "chunks",
             kind: "message",
-            T: xC,
+            T: HC,
             repeated: !0
         }, {
             no: 2,
             name: "editor",
             kind: "enum",
-            T: Ks.getEnumType(PC)
+            T: Ks.getEnumType(GC)
         }, {
             no: 3,
             name: "hit_timeout",
             kind: "scalar",
             T: 8
         }]);
-        let MC = OC;
-        var PC = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.AI = 1] = "AI", e[e.HUMAN = 2] = "HUMAN", e))(PC || {});
-        Ks.util.setEnumType(PC, "aiserver.v1.EditFileResult.FileDiff.Editor", [{
+        let xC = qC;
+        var GC = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.AI = 1] = "AI", e[e.HUMAN = 2] = "HUMAN", e))(GC || {});
+        Ks.util.setEnumType(GC, "aiserver.v1.EditFileResult.FileDiff.Editor", [{
             no: 0,
             name: "EDITOR_UNSPECIFIED"
         }, {
@@ -37415,7 +37447,7 @@
             no: 2,
             name: "EDITOR_HUMAN"
         }]);
-        const qC = class e extends Nr {
+        const YC = class e extends Nr {
             constructor(e) {
                 super(), this.diffString = "", this.oldStart = 0, this.newStart = 0, this.oldLines = 0, this.newLines = 0, this.linesRemoved = 0, this.linesAdded = 0, Ks.util.initPartial(e, this)
             }
@@ -37432,7 +37464,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qC.runtime = Ks, qC.typeName = "aiserver.v1.EditFileResult.FileDiff.ChunkDiff", qC.fields = Ks.util.newFieldList(() => [{
+        YC.runtime = Ks, YC.typeName = "aiserver.v1.EditFileResult.FileDiff.ChunkDiff", YC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "diff_string",
             kind: "scalar",
@@ -37468,8 +37500,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let xC = qC;
-        const GC = class e extends Nr {
+        let HC = YC;
+        const VC = class e extends Nr {
             constructor(e) {
                 super(), this.errorType = 0, this.modelMessage = "", Ks.util.initPartial(e, this)
             }
@@ -37486,20 +37518,20 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        GC.runtime = Ks, GC.typeName = "aiserver.v1.EditFileResult.RecoverableError", GC.fields = Ks.util.newFieldList(() => [{
+        VC.runtime = Ks, VC.typeName = "aiserver.v1.EditFileResult.RecoverableError", VC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error_type",
             kind: "enum",
-            T: Ks.getEnumType(HC)
+            T: Ks.getEnumType(XC)
         }, {
             no: 2,
             name: "model_message",
             kind: "scalar",
             T: 9
         }]);
-        let YC = GC;
-        var HC = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SEARCH_STRING_NOT_FOUND = 1] = "SEARCH_STRING_NOT_FOUND", e[e.AMBIGUOUS_SEARCH_STRING = 2] = "AMBIGUOUS_SEARCH_STRING", e))(HC || {});
-        Ks.util.setEnumType(HC, "aiserver.v1.EditFileResult.RecoverableError.RecoverableErrorType", [{
+        let WC = VC;
+        var XC = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SEARCH_STRING_NOT_FOUND = 1] = "SEARCH_STRING_NOT_FOUND", e[e.AMBIGUOUS_SEARCH_STRING = 2] = "AMBIGUOUS_SEARCH_STRING", e))(XC || {});
+        Ks.util.setEnumType(XC, "aiserver.v1.EditFileResult.RecoverableError.RecoverableErrorType", [{
             no: 0,
             name: "RECOVERABLE_ERROR_TYPE_UNSPECIFIED"
         }, {
@@ -37509,7 +37541,7 @@
             no: 2,
             name: "RECOVERABLE_ERROR_TYPE_AMBIGUOUS_SEARCH_STRING"
         }]);
-        const VC = class e extends Nr {
+        const jC = class e extends Nr {
             constructor(e) {
                 super(), this.isEditAccepted = !1, this.textResult = "", this.stopAndGetNewUserInput = !1, Ks.util.initPartial(e, this)
             }
@@ -37526,7 +37558,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        VC.runtime = Ks, VC.typeName = "aiserver.v1.EditFileResult.EditFileHumanReview", VC.fields = Ks.util.newFieldList(() => [{
+        jC.runtime = Ks, jC.typeName = "aiserver.v1.EditFileResult.EditFileHumanReview", jC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "is_edit_accepted",
             kind: "scalar",
@@ -37542,8 +37574,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let WC = VC;
-        const XC = class e extends Nr {
+        let KC = jC;
+        const ZC = class e extends Nr {
             constructor(e) {
                 super(), this.selectedOption = "", this.feedbackText = "", this.submitFeedbackAsNewMessage = !1, this.bubbleId = "", Ks.util.initPartial(e, this)
             }
@@ -37560,7 +37592,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        XC.runtime = Ks, XC.typeName = "aiserver.v1.EditFileResult.HumanFeedback", XC.fields = Ks.util.newFieldList(() => [{
+        ZC.runtime = Ks, ZC.typeName = "aiserver.v1.EditFileResult.HumanFeedback", ZC.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "selected_option",
             kind: "scalar",
@@ -37581,8 +37613,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let jC = XC;
-        const KC = class e extends Nr {
+        let zC = ZC;
+        const $C = class e extends Nr {
             constructor(e) {
                 super(), this.selectedOption = "", this.feedbackText = "", this.submitFeedbackAsNewMessage = !1, this.bubbleId = "", Ks.util.initPartial(e, this)
             }
@@ -37599,7 +37631,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        KC.runtime = Ks, KC.typeName = "aiserver.v1.HumanReview", KC.fields = Ks.util.newFieldList(() => [{
+        $C.runtime = Ks, $C.typeName = "aiserver.v1.HumanReview", $C.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "selected_option",
             kind: "scalar",
@@ -37620,8 +37652,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let ZC = KC;
-        const zC = class e extends Nr {
+        let eQ = $C;
+        const tQ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -37638,9 +37670,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        zC.runtime = Ks, zC.typeName = "aiserver.v1.EditFileStream", zC.fields = Ks.util.newFieldList(() => []);
-        let $C = zC;
-        const eQ = class e extends Nr {
+        tQ.runtime = Ks, tQ.typeName = "aiserver.v1.EditFileStream", tQ.fields = Ks.util.newFieldList(() => []);
+        let nQ = tQ;
+        const rQ = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", Ks.util.initPartial(e, this)
             }
@@ -37657,14 +37689,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        eQ.runtime = Ks, eQ.typeName = "aiserver.v1.ToolCallFileSearchParams", eQ.fields = Ks.util.newFieldList(() => [{
+        rQ.runtime = Ks, rQ.typeName = "aiserver.v1.ToolCallFileSearchParams", rQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
             T: 9
         }]);
-        let tQ = eQ;
-        const nQ = class e extends Nr {
+        let sQ = rQ;
+        const iQ = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", Ks.util.initPartial(e, this)
             }
@@ -37681,14 +37713,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        nQ.runtime = Ks, nQ.typeName = "aiserver.v1.ToolCallFileSearchStream", nQ.fields = Ks.util.newFieldList(() => [{
+        iQ.runtime = Ks, iQ.typeName = "aiserver.v1.ToolCallFileSearchStream", iQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
             T: 9
         }]);
-        let rQ = nQ;
-        const sQ = class e extends Nr {
+        let AQ = iQ;
+        const oQ = class e extends Nr {
             constructor(e) {
                 super(), this.files = [], this.numResults = 0, Ks.util.initPartial(e, this)
             }
@@ -37705,11 +37737,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sQ.runtime = Ks, sQ.typeName = "aiserver.v1.ToolCallFileSearchResult", sQ.fields = Ks.util.newFieldList(() => [{
+        oQ.runtime = Ks, oQ.typeName = "aiserver.v1.ToolCallFileSearchResult", oQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "files",
             kind: "message",
-            T: oQ,
+            T: cQ,
             repeated: !0
         }, {
             no: 2,
@@ -37723,8 +37755,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let iQ = sQ;
-        const AQ = class e extends Nr {
+        let aQ = oQ;
+        const lQ = class e extends Nr {
             constructor(e) {
                 super(), this.uri = "", Ks.util.initPartial(e, this)
             }
@@ -37741,14 +37773,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        AQ.runtime = Ks, AQ.typeName = "aiserver.v1.ToolCallFileSearchResult.File", AQ.fields = Ks.util.newFieldList(() => [{
+        lQ.runtime = Ks, lQ.typeName = "aiserver.v1.ToolCallFileSearchResult.File", lQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "uri",
             kind: "scalar",
             T: 9
         }]);
-        let oQ = AQ;
-        const aQ = class e extends Nr {
+        let cQ = lQ;
+        const uQ = class e extends Nr {
             constructor(e) {
                 super(), this.directoryPath = "", Ks.util.initPartial(e, this)
             }
@@ -37765,14 +37797,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        aQ.runtime = Ks, aQ.typeName = "aiserver.v1.ListDirParams", aQ.fields = Ks.util.newFieldList(() => [{
+        uQ.runtime = Ks, uQ.typeName = "aiserver.v1.ListDirParams", uQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "directory_path",
             kind: "scalar",
             T: 9
         }]);
-        let lQ = aQ;
-        const cQ = class e extends Nr {
+        let mQ = uQ;
+        const dQ = class e extends Nr {
             constructor(e) {
                 super(), this.files = [], this.directoryRelativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -37789,11 +37821,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        cQ.runtime = Ks, cQ.typeName = "aiserver.v1.ListDirResult", cQ.fields = Ks.util.newFieldList(() => [{
+        dQ.runtime = Ks, dQ.typeName = "aiserver.v1.ListDirResult", dQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "files",
             kind: "message",
-            T: dQ,
+            T: fQ,
             repeated: !0
         }, {
             no: 2,
@@ -37801,8 +37833,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let uQ = cQ;
-        const mQ = class e extends Nr {
+        let gQ = dQ;
+        const EQ = class e extends Nr {
             constructor(e) {
                 super(), this.name = "", this.isDirectory = !1, Ks.util.initPartial(e, this)
             }
@@ -37819,7 +37851,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        mQ.runtime = Ks, mQ.typeName = "aiserver.v1.ListDirResult.File", mQ.fields = Ks.util.newFieldList(() => [{
+        EQ.runtime = Ks, EQ.typeName = "aiserver.v1.ListDirResult.File", EQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "name",
             kind: "scalar",
@@ -37854,8 +37886,8 @@
             T: 5,
             opt: !0
         }]);
-        let dQ = mQ;
-        const gQ = class e extends Nr {
+        let fQ = EQ;
+        const hQ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -37872,9 +37904,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        gQ.runtime = Ks, gQ.typeName = "aiserver.v1.ListDirStream", gQ.fields = Ks.util.newFieldList(() => []);
-        let EQ = gQ;
-        const fQ = class e extends Nr {
+        hQ.runtime = Ks, hQ.typeName = "aiserver.v1.ListDirStream", hQ.fields = Ks.util.newFieldList(() => []);
+        let IQ = hQ;
+        const BQ = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.readEntireFile = !1, this.fileIsAllowedToBeReadEntirely = !1, Ks.util.initPartial(e, this)
             }
@@ -37891,7 +37923,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fQ.runtime = Ks, fQ.typeName = "aiserver.v1.ReadFileParams", fQ.fields = Ks.util.newFieldList(() => [{
+        BQ.runtime = Ks, BQ.typeName = "aiserver.v1.ReadFileParams", BQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -37937,8 +37969,8 @@
             T: 5,
             opt: !0
         }]);
-        let hQ = fQ;
-        const IQ = class e extends Nr {
+        let CQ = BQ;
+        const QQ = class e extends Nr {
             constructor(e) {
                 super(), this.contents = "", this.didDowngradeToLineRange = !1, this.didShortenLineRange = !1, this.didSetDefaultLineRange = !1, this.relativeWorkspacePath = "", this.didShortenCharRange = !1, this.matchingCursorRules = [], Ks.util.initPartial(e, this)
             }
@@ -37955,7 +37987,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        IQ.runtime = Ks, IQ.typeName = "aiserver.v1.ReadFileResult", IQ.fields = Ks.util.newFieldList(() => [{
+        QQ.runtime = Ks, QQ.typeName = "aiserver.v1.ReadFileResult", QQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "contents",
             kind: "scalar",
@@ -38033,8 +38065,8 @@
             kind: "message",
             T: xa
         }]);
-        let BQ = IQ;
-        const CQ = class e extends Nr {
+        let pQ = QQ;
+        const yQ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -38051,9 +38083,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        CQ.runtime = Ks, CQ.typeName = "aiserver.v1.ReadFileStream", CQ.fields = Ks.util.newFieldList(() => []);
-        let QQ = CQ;
-        const pQ = class e extends Nr {
+        yQ.runtime = Ks, yQ.typeName = "aiserver.v1.ReadFileStream", yQ.fields = Ks.util.newFieldList(() => []);
+        let wQ = yQ;
+        const TQ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -38070,19 +38102,19 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        pQ.runtime = Ks, pQ.typeName = "aiserver.v1.RipgrepSearchParams", pQ.fields = Ks.util.newFieldList(() => [{
+        TQ.runtime = Ks, TQ.typeName = "aiserver.v1.RipgrepSearchParams", TQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "options",
             kind: "message",
-            T: NQ
+            T: JQ
         }, {
             no: 2,
             name: "pattern_info",
             kind: "message",
-            T: TQ
+            T: RQ
         }]);
-        let yQ = pQ;
-        const wQ = class e extends Nr {
+        let SQ = TQ;
+        const kQ = class e extends Nr {
             constructor(e) {
                 super(), this.pattern = "", Ks.util.initPartial(e, this)
             }
@@ -38099,7 +38131,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        wQ.runtime = Ks, wQ.typeName = "aiserver.v1.RipgrepSearchParams.IPatternInfoProto", wQ.fields = Ks.util.newFieldList(() => [{
+        kQ.runtime = Ks, kQ.typeName = "aiserver.v1.RipgrepSearchParams.IPatternInfoProto", kQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "pattern",
             kind: "scalar",
@@ -38144,7 +38176,7 @@
             no: 8,
             name: "notebook_info",
             kind: "message",
-            T: kQ
+            T: _Q
         }, {
             no: 9,
             name: "pattern_was_escaped",
@@ -38152,8 +38184,8 @@
             T: 8,
             opt: !0
         }]);
-        let TQ = wQ;
-        const SQ = class e extends Nr {
+        let RQ = kQ;
+        const NQ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -38170,7 +38202,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        SQ.runtime = Ks, SQ.typeName = "aiserver.v1.RipgrepSearchParams.IPatternInfoProto.INotebookPatternInfoProto", SQ.fields = Ks.util.newFieldList(() => [{
+        NQ.runtime = Ks, NQ.typeName = "aiserver.v1.RipgrepSearchParams.IPatternInfoProto.INotebookPatternInfoProto", NQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "is_in_notebook_markdown_input",
             kind: "scalar",
@@ -38195,8 +38227,8 @@
             T: 8,
             opt: !0
         }]);
-        let kQ = SQ;
-        const RQ = class e extends Nr {
+        let _Q = NQ;
+        const DQ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -38213,11 +38245,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        RQ.runtime = Ks, RQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto", RQ.fields = Ks.util.newFieldList(() => [{
+        DQ.runtime = Ks, DQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto", DQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "preview_options",
             kind: "message",
-            T: MQ
+            T: xQ
         }, {
             no: 2,
             name: "file_encoding",
@@ -38240,17 +38272,17 @@
             no: 5,
             name: "notebook_search_config",
             kind: "message",
-            T: qQ
+            T: YQ
         }, {
             no: 6,
             name: "exclude_pattern",
             kind: "message",
-            T: FQ
+            T: vQ
         }, {
             no: 7,
             name: "include_pattern",
             kind: "message",
-            T: UQ
+            T: PQ
         }, {
             no: 8,
             name: "expand_patterns",
@@ -38327,10 +38359,10 @@
             no: 20,
             name: "extra_file_resources",
             kind: "message",
-            T: DQ
+            T: bQ
         }]);
-        let NQ = RQ;
-        const _Q = class e extends Nr {
+        let JQ = DQ;
+        const FQ = class e extends Nr {
             constructor(e) {
                 super(), this.extraFileResources = [], Ks.util.initPartial(e, this)
             }
@@ -38347,15 +38379,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        _Q.runtime = Ks, _Q.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.ExtraFileResourcesProto", _Q.fields = Ks.util.newFieldList(() => [{
+        FQ.runtime = Ks, FQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.ExtraFileResourcesProto", FQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "extra_file_resources",
             kind: "scalar",
             T: 9,
             repeated: !0
         }]);
-        let DQ = _Q;
-        const JQ = class e extends Nr {
+        let bQ = FQ;
+        const LQ = class e extends Nr {
             constructor(e) {
                 super(), this.excludePattern = [], Ks.util.initPartial(e, this)
             }
@@ -38372,15 +38404,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        JQ.runtime = Ks, JQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.ExcludePatternProto", JQ.fields = Ks.util.newFieldList(() => [{
+        LQ.runtime = Ks, LQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.ExcludePatternProto", LQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "exclude_pattern",
             kind: "message",
-            T: LQ,
+            T: OQ,
             repeated: !0
         }]);
-        let FQ = JQ;
-        const bQ = class e extends Nr {
+        let vQ = LQ;
+        const UQ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -38397,7 +38429,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bQ.runtime = Ks, bQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.ISearchPatternBuilderProto", bQ.fields = Ks.util.newFieldList(() => [{
+        UQ.runtime = Ks, UQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.ISearchPatternBuilderProto", UQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "uri",
             kind: "scalar",
@@ -38407,10 +38439,10 @@
             no: 2,
             name: "pattern",
             kind: "message",
-            T: UQ
+            T: PQ
         }]);
-        let LQ = bQ;
-        const vQ = class e extends Nr {
+        let OQ = UQ;
+        const MQ = class e extends Nr {
             constructor(e) {
                 super(), this.patterns = [], Ks.util.initPartial(e, this)
             }
@@ -38427,7 +38459,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vQ.runtime = Ks, vQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.ISearchPathPatternBuilderProto", vQ.fields = Ks.util.newFieldList(() => [{
+        MQ.runtime = Ks, MQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.ISearchPathPatternBuilderProto", MQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "pattern",
             kind: "scalar",
@@ -38440,8 +38472,8 @@
             T: 9,
             repeated: !0
         }]);
-        let UQ = vQ;
-        const OQ = class e extends Nr {
+        let PQ = MQ;
+        const qQ = class e extends Nr {
             constructor(e) {
                 super(), this.matchLines = 0, this.charsPerLine = 0, Ks.util.initPartial(e, this)
             }
@@ -38458,7 +38490,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        OQ.runtime = Ks, OQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.ITextSearchPreviewOptionsProto", OQ.fields = Ks.util.newFieldList(() => [{
+        qQ.runtime = Ks, qQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.ITextSearchPreviewOptionsProto", qQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "match_lines",
             kind: "scalar",
@@ -38469,8 +38501,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let MQ = OQ;
-        const PQ = class e extends Nr {
+        let xQ = qQ;
+        const GQ = class e extends Nr {
             constructor(e) {
                 super(), this.includeMarkupInput = !1, this.includeMarkupPreview = !1, this.includeCodeInput = !1, this.includeOutput = !1, Ks.util.initPartial(e, this)
             }
@@ -38487,7 +38519,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        PQ.runtime = Ks, PQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.INotebookSearchConfigProto", PQ.fields = Ks.util.newFieldList(() => [{
+        GQ.runtime = Ks, GQ.typeName = "aiserver.v1.RipgrepSearchParams.ITextQueryBuilderOptionsProto.INotebookSearchConfigProto", GQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "include_markup_input",
             kind: "scalar",
@@ -38508,8 +38540,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let qQ = PQ;
-        const xQ = class e extends Nr {
+        let YQ = GQ;
+        const HQ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -38526,14 +38558,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        xQ.runtime = Ks, xQ.typeName = "aiserver.v1.RipgrepSearchResult", xQ.fields = Ks.util.newFieldList(() => [{
+        HQ.runtime = Ks, HQ.typeName = "aiserver.v1.RipgrepSearchResult", HQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "internal",
             kind: "message",
-            T: HQ
+            T: XQ
         }]);
-        let GQ = xQ;
-        const YQ = class e extends Nr {
+        let VQ = HQ;
+        const WQ = class e extends Nr {
             constructor(e) {
                 super(), this.results = [], this.messages = [], this.stats = {
                     case: void 0
@@ -38552,17 +38584,17 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        YQ.runtime = Ks, YQ.typeName = "aiserver.v1.RipgrepSearchResultInternal", YQ.fields = Ks.util.newFieldList(() => [{
+        WQ.runtime = Ks, WQ.typeName = "aiserver.v1.RipgrepSearchResultInternal", WQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "results",
             kind: "message",
-            T: jQ,
+            T: zQ,
             repeated: !0
         }, {
             no: 2,
             name: "exit",
             kind: "enum",
-            T: Ks.getEnumType(WQ),
+            T: Ks.getEnumType(KQ),
             opt: !0
         }, {
             no: 3,
@@ -38574,24 +38606,24 @@
             no: 4,
             name: "messages",
             kind: "message",
-            T: op,
+            T: cp,
             repeated: !0
         }, {
             no: 5,
             name: "file_search_stats",
             kind: "message",
-            T: lp,
+            T: mp,
             oneof: "stats"
         }, {
             no: 6,
             name: "text_search_stats",
             kind: "message",
-            T: mp,
+            T: Ep,
             oneof: "stats"
         }]);
-        let HQ = YQ;
-        var VQ = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INFORMATION = 1] = "INFORMATION", e[e.WARNING = 2] = "WARNING", e))(VQ || {});
-        Ks.util.setEnumType(VQ, "aiserver.v1.RipgrepSearchResultInternal.TextSearchCompleteMessageType", [{
+        let XQ = WQ;
+        var jQ = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INFORMATION = 1] = "INFORMATION", e[e.WARNING = 2] = "WARNING", e))(jQ || {});
+        Ks.util.setEnumType(jQ, "aiserver.v1.RipgrepSearchResultInternal.TextSearchCompleteMessageType", [{
             no: 0,
             name: "TEXT_SEARCH_COMPLETE_MESSAGE_TYPE_UNSPECIFIED"
         }, {
@@ -38601,8 +38633,8 @@
             no: 2,
             name: "TEXT_SEARCH_COMPLETE_MESSAGE_TYPE_WARNING"
         }]);
-        var WQ = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NORMAL = 1] = "NORMAL", e[e.NEW_SEARCH_STARTED = 2] = "NEW_SEARCH_STARTED", e))(WQ || {});
-        Ks.util.setEnumType(WQ, "aiserver.v1.RipgrepSearchResultInternal.SearchCompletionExitCode", [{
+        var KQ = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NORMAL = 1] = "NORMAL", e[e.NEW_SEARCH_STARTED = 2] = "NEW_SEARCH_STARTED", e))(KQ || {});
+        Ks.util.setEnumType(KQ, "aiserver.v1.RipgrepSearchResultInternal.SearchCompletionExitCode", [{
             no: 0,
             name: "SEARCH_COMPLETION_EXIT_CODE_UNSPECIFIED"
         }, {
@@ -38612,7 +38644,7 @@
             no: 2,
             name: "SEARCH_COMPLETION_EXIT_CODE_NEW_SEARCH_STARTED"
         }]);
-        const XQ = class e extends Nr {
+        const ZQ = class e extends Nr {
             constructor(e) {
                 super(), this.resource = "", this.results = [], Ks.util.initPartial(e, this)
             }
@@ -38629,7 +38661,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        XQ.runtime = Ks, XQ.typeName = "aiserver.v1.RipgrepSearchResultInternal.IFileMatch", XQ.fields = Ks.util.newFieldList(() => [{
+        ZQ.runtime = Ks, ZQ.typeName = "aiserver.v1.RipgrepSearchResultInternal.IFileMatch", ZQ.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "resource",
             kind: "scalar",
@@ -38638,11 +38670,11 @@
             no: 2,
             name: "results",
             kind: "message",
-            T: ZQ,
+            T: ep,
             repeated: !0
         }]);
-        let jQ = XQ;
-        const KQ = class e extends Nr {
+        let zQ = ZQ;
+        const $Q = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -38661,21 +38693,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        KQ.runtime = Ks, KQ.typeName = "aiserver.v1.RipgrepSearchResultInternal.ITextSearchResult", KQ.fields = Ks.util.newFieldList(() => [{
+        $Q.runtime = Ks, $Q.typeName = "aiserver.v1.RipgrepSearchResultInternal.ITextSearchResult", $Q.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "match",
             kind: "message",
-            T: $Q,
+            T: np,
             oneof: "result"
         }, {
             no: 2,
             name: "context",
             kind: "message",
-            T: tp,
+            T: sp,
             oneof: "result"
         }]);
-        let ZQ = KQ;
-        const zQ = class e extends Nr {
+        let ep = $Q;
+        const tp = class e extends Nr {
             constructor(e) {
                 super(), this.rangeLocations = [], this.previewText = "", Ks.util.initPartial(e, this)
             }
@@ -38692,7 +38724,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        zQ.runtime = Ks, zQ.typeName = "aiserver.v1.RipgrepSearchResultInternal.ITextSearchMatch", zQ.fields = Ks.util.newFieldList(() => [{
+        tp.runtime = Ks, tp.typeName = "aiserver.v1.RipgrepSearchResultInternal.ITextSearchMatch", tp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "uri",
             kind: "scalar",
@@ -38702,7 +38734,7 @@
             no: 2,
             name: "range_locations",
             kind: "message",
-            T: rp,
+            T: Ap,
             repeated: !0
         }, {
             no: 3,
@@ -38722,8 +38754,8 @@
             T: 9,
             opt: !0
         }]);
-        let $Q = zQ;
-        const ep = class e extends Nr {
+        let np = tp;
+        const rp = class e extends Nr {
             constructor(e) {
                 super(), this.text = "", this.lineNumber = 0, Ks.util.initPartial(e, this)
             }
@@ -38740,7 +38772,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ep.runtime = Ks, ep.typeName = "aiserver.v1.RipgrepSearchResultInternal.ITextSearchContext", ep.fields = Ks.util.newFieldList(() => [{
+        rp.runtime = Ks, rp.typeName = "aiserver.v1.RipgrepSearchResultInternal.ITextSearchContext", rp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "uri",
             kind: "scalar",
@@ -38757,8 +38789,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let tp = ep;
-        const np = class e extends Nr {
+        let sp = rp;
+        const ip = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -38775,19 +38807,19 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        np.runtime = Ks, np.typeName = "aiserver.v1.RipgrepSearchResultInternal.ISearchRangeSetPairing", np.fields = Ks.util.newFieldList(() => [{
+        ip.runtime = Ks, ip.typeName = "aiserver.v1.RipgrepSearchResultInternal.ISearchRangeSetPairing", ip.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "source",
             kind: "message",
-            T: ip
+            T: ap
         }, {
             no: 2,
             name: "preview",
             kind: "message",
-            T: ip
+            T: ap
         }]);
-        let rp = np;
-        const sp = class e extends Nr {
+        let Ap = ip;
+        const op = class e extends Nr {
             constructor(e) {
                 super(), this.startLineNumber = 0, this.startColumn = 0, this.endLineNumber = 0, this.endColumn = 0, Ks.util.initPartial(e, this)
             }
@@ -38804,7 +38836,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sp.runtime = Ks, sp.typeName = "aiserver.v1.RipgrepSearchResultInternal.ISearchRange", sp.fields = Ks.util.newFieldList(() => [{
+        op.runtime = Ks, op.typeName = "aiserver.v1.RipgrepSearchResultInternal.ISearchRange", op.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "start_line_number",
             kind: "scalar",
@@ -38825,8 +38857,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let ip = sp;
-        const Ap = class e extends Nr {
+        let ap = op;
+        const lp = class e extends Nr {
             constructor(e) {
                 super(), this.text = "", this.type = 0, Ks.util.initPartial(e, this)
             }
@@ -38843,7 +38875,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ap.runtime = Ks, Ap.typeName = "aiserver.v1.RipgrepSearchResultInternal.ITextSearchCompleteMessage", Ap.fields = Ks.util.newFieldList(() => [{
+        lp.runtime = Ks, lp.typeName = "aiserver.v1.RipgrepSearchResultInternal.ITextSearchCompleteMessage", lp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "text",
             kind: "scalar",
@@ -38852,7 +38884,7 @@
             no: 2,
             name: "type",
             kind: "enum",
-            T: Ks.getEnumType(VQ)
+            T: Ks.getEnumType(jQ)
         }, {
             no: 3,
             name: "trusted",
@@ -38860,8 +38892,8 @@
             T: 8,
             opt: !0
         }]);
-        let op = Ap;
-        const ap = class e extends Nr {
+        let cp = lp;
+        const up = class e extends Nr {
             constructor(e) {
                 super(), this.fromCache = !1, this.detailStats = {
                     case: void 0
@@ -38880,7 +38912,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ap.runtime = Ks, ap.typeName = "aiserver.v1.RipgrepSearchResultInternal.IFileSearchStats", ap.fields = Ks.util.newFieldList(() => [{
+        up.runtime = Ks, up.typeName = "aiserver.v1.RipgrepSearchResultInternal.IFileSearchStats", up.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "from_cache",
             kind: "scalar",
@@ -38889,19 +38921,19 @@
             no: 2,
             name: "search_engine_stats",
             kind: "message",
-            T: Ep,
+            T: Ip,
             oneof: "detail_stats"
         }, {
             no: 3,
             name: "cached_search_stats",
             kind: "message",
-            T: hp,
+            T: Cp,
             oneof: "detail_stats"
         }, {
             no: 4,
             name: "file_search_provider_stats",
             kind: "message",
-            T: Bp,
+            T: pp,
             oneof: "detail_stats"
         }, {
             no: 5,
@@ -38912,7 +38944,7 @@
             no: 6,
             name: "type",
             kind: "enum",
-            T: Ks.getEnumType(cp)
+            T: Ks.getEnumType(dp)
         }, {
             no: 7,
             name: "sorting_time",
@@ -38920,9 +38952,9 @@
             T: 5,
             opt: !0
         }]);
-        let lp = ap;
-        var cp = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.FILE_SEARCH_PROVIDER = 1] = "FILE_SEARCH_PROVIDER", e[e.SEARCH_PROCESS = 2] = "SEARCH_PROCESS", e))(cp || {});
-        Ks.util.setEnumType(cp, "aiserver.v1.RipgrepSearchResultInternal.IFileSearchStats.FileSearchProviderType", [{
+        let mp = up;
+        var dp = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.FILE_SEARCH_PROVIDER = 1] = "FILE_SEARCH_PROVIDER", e[e.SEARCH_PROCESS = 2] = "SEARCH_PROCESS", e))(dp || {});
+        Ks.util.setEnumType(dp, "aiserver.v1.RipgrepSearchResultInternal.IFileSearchStats.FileSearchProviderType", [{
             no: 0,
             name: "FILE_SEARCH_PROVIDER_TYPE_UNSPECIFIED"
         }, {
@@ -38932,7 +38964,7 @@
             no: 2,
             name: "FILE_SEARCH_PROVIDER_TYPE_SEARCH_PROCESS"
         }]);
-        const up = class e extends Nr {
+        const gp = class e extends Nr {
             constructor(e) {
                 super(), this.type = 0, Ks.util.initPartial(e, this)
             }
@@ -38949,15 +38981,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        up.runtime = Ks, up.typeName = "aiserver.v1.RipgrepSearchResultInternal.ITextSearchStats", up.fields = Ks.util.newFieldList(() => [{
+        gp.runtime = Ks, gp.typeName = "aiserver.v1.RipgrepSearchResultInternal.ITextSearchStats", gp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "type",
             kind: "enum",
-            T: Ks.getEnumType(dp)
+            T: Ks.getEnumType(fp)
         }]);
-        let mp = up;
-        var dp = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.TEXT_SEARCH_PROVIDER = 1] = "TEXT_SEARCH_PROVIDER", e[e.SEARCH_PROCESS = 2] = "SEARCH_PROCESS", e[e.AI_TEXT_SEARCH_PROVIDER = 3] = "AI_TEXT_SEARCH_PROVIDER", e))(dp || {});
-        Ks.util.setEnumType(dp, "aiserver.v1.RipgrepSearchResultInternal.ITextSearchStats.TextSearchProviderType", [{
+        let Ep = gp;
+        var fp = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.TEXT_SEARCH_PROVIDER = 1] = "TEXT_SEARCH_PROVIDER", e[e.SEARCH_PROCESS = 2] = "SEARCH_PROCESS", e[e.AI_TEXT_SEARCH_PROVIDER = 3] = "AI_TEXT_SEARCH_PROVIDER", e))(fp || {});
+        Ks.util.setEnumType(fp, "aiserver.v1.RipgrepSearchResultInternal.ITextSearchStats.TextSearchProviderType", [{
             no: 0,
             name: "TEXT_SEARCH_PROVIDER_TYPE_UNSPECIFIED"
         }, {
@@ -38970,7 +39002,7 @@
             no: 3,
             name: "TEXT_SEARCH_PROVIDER_TYPE_AI_TEXT_SEARCH_PROVIDER"
         }]);
-        const gp = class e extends Nr {
+        const hp = class e extends Nr {
             constructor(e) {
                 super(), this.fileWalkTime = 0, this.directoriesWalked = 0, this.filesWalked = 0, this.cmdTime = 0, Ks.util.initPartial(e, this)
             }
@@ -38987,7 +39019,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        gp.runtime = Ks, gp.typeName = "aiserver.v1.RipgrepSearchResultInternal.ISearchEngineStats", gp.fields = Ks.util.newFieldList(() => [{
+        hp.runtime = Ks, hp.typeName = "aiserver.v1.RipgrepSearchResultInternal.ISearchEngineStats", hp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_walk_time",
             kind: "scalar",
@@ -39014,8 +39046,8 @@
             T: 5,
             opt: !0
         }]);
-        let Ep = gp;
-        const fp = class e extends Nr {
+        let Ip = hp;
+        const Bp = class e extends Nr {
             constructor(e) {
                 super(), this.cacheWasResolved = !1, this.cacheLookupTime = 0, this.cacheFilterTime = 0, this.cacheEntryCount = 0, Ks.util.initPartial(e, this)
             }
@@ -39032,7 +39064,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fp.runtime = Ks, fp.typeName = "aiserver.v1.RipgrepSearchResultInternal.ICachedSearchStats", fp.fields = Ks.util.newFieldList(() => [{
+        Bp.runtime = Ks, Bp.typeName = "aiserver.v1.RipgrepSearchResultInternal.ICachedSearchStats", Bp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "cache_was_resolved",
             kind: "scalar",
@@ -39053,8 +39085,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let hp = fp;
-        const Ip = class e extends Nr {
+        let Cp = Bp;
+        const Qp = class e extends Nr {
             constructor(e) {
                 super(), this.providerTime = 0, this.postProcessTime = 0, Ks.util.initPartial(e, this)
             }
@@ -39071,7 +39103,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ip.runtime = Ks, Ip.typeName = "aiserver.v1.RipgrepSearchResultInternal.IFileSearchProviderStats", Ip.fields = Ks.util.newFieldList(() => [{
+        Qp.runtime = Ks, Qp.typeName = "aiserver.v1.RipgrepSearchResultInternal.IFileSearchProviderStats", Qp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "provider_time",
             kind: "scalar",
@@ -39082,8 +39114,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let Bp = Ip;
-        const Cp = class e extends Nr {
+        let pp = Qp;
+        const yp = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", Ks.util.initPartial(e, this)
             }
@@ -39100,14 +39132,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Cp.runtime = Ks, Cp.typeName = "aiserver.v1.RipgrepSearchStream", Cp.fields = Ks.util.newFieldList(() => [{
+        yp.runtime = Ks, yp.typeName = "aiserver.v1.RipgrepSearchStream", yp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
             T: 9
         }]);
-        let Qp = Cp;
-        const pp = class e extends Nr {
+        let wp = yp;
+        const Tp = class e extends Nr {
             constructor(e) {
                 super(), this.codeResults = [], this.query = "", this.prReferences = [], Ks.util.initPartial(e, this)
             }
@@ -39124,16 +39156,16 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        pp.runtime = Ks, pp.typeName = "aiserver.v1.ReadSemsearchFilesParams", pp.fields = Ks.util.newFieldList(() => [{
+        Tp.runtime = Ks, Tp.typeName = "aiserver.v1.ReadSemsearchFilesParams", Tp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository_info",
             kind: "message",
-            T: gh
+            T: Eh
         }, {
             no: 2,
             name: "code_results",
             kind: "message",
-            T: If,
+            T: Bf,
             repeated: !0
         }, {
             no: 3,
@@ -39144,7 +39176,7 @@
             no: 4,
             name: "pr_references",
             kind: "message",
-            T: xS,
+            T: HS,
             repeated: !0
         }, {
             no: 5,
@@ -39153,8 +39185,8 @@
             T: 8,
             opt: !0
         }]);
-        let yp = pp;
-        const wp = class e extends Nr {
+        let Sp = Tp;
+        const kp = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.missingReason = 0, Ks.util.initPartial(e, this)
             }
@@ -39171,7 +39203,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        wp.runtime = Ks, wp.typeName = "aiserver.v1.MissingFile", wp.fields = Ks.util.newFieldList(() => [{
+        kp.runtime = Ks, kp.typeName = "aiserver.v1.MissingFile", kp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -39180,7 +39212,7 @@
             no: 2,
             name: "missing_reason",
             kind: "enum",
-            T: Ks.getEnumType(Sp)
+            T: Ks.getEnumType(Np)
         }, {
             no: 3,
             name: "num_lines",
@@ -39188,9 +39220,9 @@
             T: 5,
             opt: !0
         }]);
-        let Tp = wp;
-        var Sp = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.TOO_LARGE = 1] = "TOO_LARGE", e[e.NOT_FOUND = 2] = "NOT_FOUND", e))(Sp || {});
-        Ks.util.setEnumType(Sp, "aiserver.v1.MissingFile.MissingReason", [{
+        let Rp = kp;
+        var Np = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.TOO_LARGE = 1] = "TOO_LARGE", e[e.NOT_FOUND = 2] = "NOT_FOUND", e))(Np || {});
+        Ks.util.setEnumType(Np, "aiserver.v1.MissingFile.MissingReason", [{
             no: 0,
             name: "MISSING_REASON_UNSPECIFIED"
         }, {
@@ -39200,7 +39232,7 @@
             no: 2,
             name: "MISSING_REASON_NOT_FOUND"
         }]);
-        const kp = class e extends Nr {
+        const _p = class e extends Nr {
             constructor(e) {
                 super(), this.knowledge = "", this.title = "", Ks.util.initPartial(e, this)
             }
@@ -39217,7 +39249,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kp.runtime = Ks, kp.typeName = "aiserver.v1.Knowledge", kp.fields = Ks.util.newFieldList(() => [{
+        _p.runtime = Ks, _p.typeName = "aiserver.v1.Knowledge", _p.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "knowledge",
             kind: "scalar",
@@ -39228,8 +39260,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Rp = kp;
-        const Np = class e extends Nr {
+        let Dp = _p;
+        const Jp = class e extends Nr {
             constructor(e) {
                 super(), this.sha = "", this.fullPrContents = "", this.score = 0, this.changedFiles = [], Ks.util.initPartial(e, this)
             }
@@ -39246,7 +39278,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Np.runtime = Ks, Np.typeName = "aiserver.v1.ToolPullRequestResult", Np.fields = Ks.util.newFieldList(() => [{
+        Jp.runtime = Ks, Jp.typeName = "aiserver.v1.ToolPullRequestResult", Jp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "sha",
             kind: "scalar",
@@ -39298,8 +39330,8 @@
             T: 9,
             opt: !0
         }]);
-        let _p = Np;
-        const Dp = class e extends Nr {
+        let Fp = Jp;
+        const bp = class e extends Nr {
             constructor(e) {
                 super(), this.codeResults = [], this.allFiles = [], this.missingFiles = [], this.knowledgeResults = [], this.prResults = [], Ks.util.initPartial(e, this)
             }
@@ -39316,11 +39348,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Dp.runtime = Ks, Dp.typeName = "aiserver.v1.ReadSemsearchFilesResult", Dp.fields = Ks.util.newFieldList(() => [{
+        bp.runtime = Ks, bp.typeName = "aiserver.v1.ReadSemsearchFilesResult", bp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "code_results",
             kind: "message",
-            T: If,
+            T: Bf,
             repeated: !0
         }, {
             no: 2,
@@ -39332,19 +39364,19 @@
             no: 3,
             name: "missing_files",
             kind: "message",
-            T: Tp,
+            T: Rp,
             repeated: !0
         }, {
             no: 4,
             name: "knowledge_results",
             kind: "message",
-            T: Rp,
+            T: Dp,
             repeated: !0
         }, {
             no: 5,
             name: "pr_results",
             kind: "message",
-            T: _p,
+            T: Fp,
             repeated: !0
         }, {
             no: 6,
@@ -39359,8 +39391,8 @@
             T: 8,
             opt: !0
         }]);
-        let Jp = Dp;
-        const Fp = class e extends Nr {
+        let Lp = bp;
+        const vp = class e extends Nr {
             constructor(e) {
                 super(), this.numFiles = 0, Ks.util.initPartial(e, this)
             }
@@ -39377,14 +39409,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Fp.runtime = Ks, Fp.typeName = "aiserver.v1.ReadSemsearchFilesStream", Fp.fields = Ks.util.newFieldList(() => [{
+        vp.runtime = Ks, vp.typeName = "aiserver.v1.ReadSemsearchFilesStream", vp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "num_files",
             kind: "scalar",
             T: 5
         }]);
-        let bp = Fp;
-        const Lp = class e extends Nr {
+        let Up = vp;
+        const Op = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", this.topK = 0, this.prReferences = [], this.codeResults = [], Ks.util.initPartial(e, this)
             }
@@ -39401,11 +39433,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Lp.runtime = Ks, Lp.typeName = "aiserver.v1.SemanticSearchFullParams", Lp.fields = Ks.util.newFieldList(() => [{
+        Op.runtime = Ks, Op.typeName = "aiserver.v1.SemanticSearchFullParams", Op.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository_info",
             kind: "message",
-            T: gh
+            T: Eh
         }, {
             no: 2,
             name: "query",
@@ -39432,7 +39464,7 @@
             no: 6,
             name: "pr_references",
             kind: "message",
-            T: xS,
+            T: HS,
             repeated: !0
         }, {
             no: 7,
@@ -39450,11 +39482,11 @@
             no: 9,
             name: "code_results",
             kind: "message",
-            T: If,
+            T: Bf,
             repeated: !0
         }]);
-        let vp = Lp;
-        const Up = class e extends Nr {
+        let Mp = Op;
+        const Pp = class e extends Nr {
             constructor(e) {
                 super(), this.codeResults = [], this.allFiles = [], this.missingFiles = [], this.knowledgeResults = [], this.prResults = [], Ks.util.initPartial(e, this)
             }
@@ -39471,11 +39503,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Up.runtime = Ks, Up.typeName = "aiserver.v1.SemanticSearchFullResult", Up.fields = Ks.util.newFieldList(() => [{
+        Pp.runtime = Ks, Pp.typeName = "aiserver.v1.SemanticSearchFullResult", Pp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "code_results",
             kind: "message",
-            T: If,
+            T: Bf,
             repeated: !0
         }, {
             no: 2,
@@ -39487,19 +39519,19 @@
             no: 3,
             name: "missing_files",
             kind: "message",
-            T: Tp,
+            T: Rp,
             repeated: !0
         }, {
             no: 4,
             name: "knowledge_results",
             kind: "message",
-            T: Rp,
+            T: Dp,
             repeated: !0
         }, {
             no: 5,
             name: "pr_results",
             kind: "message",
-            T: _p,
+            T: Fp,
             repeated: !0
         }, {
             no: 6,
@@ -39514,8 +39546,8 @@
             T: 8,
             opt: !0
         }]);
-        let Op = Up;
-        const Mp = class e extends Nr {
+        let qp = Pp;
+        const xp = class e extends Nr {
             constructor(e) {
                 super(), this.numFiles = 0, Ks.util.initPartial(e, this)
             }
@@ -39532,14 +39564,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Mp.runtime = Ks, Mp.typeName = "aiserver.v1.SemanticSearchFullStream", Mp.fields = Ks.util.newFieldList(() => [{
+        xp.runtime = Ks, xp.typeName = "aiserver.v1.SemanticSearchFullStream", xp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "num_files",
             kind: "scalar",
             T: 5
         }]);
-        let Pp = Mp;
-        const qp = class e extends Nr {
+        let Gp = xp;
+        const Yp = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -39556,14 +39588,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qp.runtime = Ks, qp.typeName = "aiserver.v1.DeleteFileParams", qp.fields = Ks.util.newFieldList(() => [{
+        Yp.runtime = Ks, Yp.typeName = "aiserver.v1.DeleteFileParams", Yp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
             T: 9
         }]);
-        let xp = qp;
-        const Gp = class e extends Nr {
+        let Hp = Yp;
+        const Vp = class e extends Nr {
             constructor(e) {
                 super(), this.rejected = !1, this.fileNonExistent = !1, this.fileDeletedSuccessfully = !1, Ks.util.initPartial(e, this)
             }
@@ -39580,7 +39612,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Gp.runtime = Ks, Gp.typeName = "aiserver.v1.DeleteFileResult", Gp.fields = Ks.util.newFieldList(() => [{
+        Vp.runtime = Ks, Vp.typeName = "aiserver.v1.DeleteFileResult", Vp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "rejected",
             kind: "scalar",
@@ -39596,8 +39628,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Yp = Gp;
-        const Hp = class e extends Nr {
+        let Wp = Vp;
+        const Xp = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -39614,14 +39646,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Hp.runtime = Ks, Hp.typeName = "aiserver.v1.DeleteFileStream", Hp.fields = Ks.util.newFieldList(() => [{
+        Xp.runtime = Ks, Xp.typeName = "aiserver.v1.DeleteFileStream", Xp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
             T: 9
         }]);
-        let Vp = Hp;
-        const Wp = class e extends Nr {
+        let jp = Xp;
+        const Kp = class e extends Nr {
             constructor(e) {
                 super(), this.tool = 0, this.params = {
                     case: void 0
@@ -39640,142 +39672,142 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Wp.runtime = Ks, Wp.typeName = "aiserver.v1.BuiltinToolCall", Wp.fields = Ks.util.newFieldList(() => [{
+        Kp.runtime = Ks, Kp.typeName = "aiserver.v1.BuiltinToolCall", Kp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool",
             kind: "enum",
-            T: Ks.getEnumType(GB)
+            T: Ks.getEnumType(VB)
         }, {
             no: 2,
             name: "search_params",
             kind: "message",
-            T: My,
+            T: xy,
             oneof: "params"
         }, {
             no: 3,
             name: "read_chunk_params",
             kind: "message",
-            T: Wy,
+            T: Ky,
             oneof: "params"
         }, {
             no: 4,
             name: "gotodef_params",
             kind: "message",
-            T: mw,
+            T: Ew,
             oneof: "params"
         }, {
             no: 5,
             name: "edit_params",
             kind: "message",
-            T: ww,
+            T: kw,
             oneof: "params"
         }, {
             no: 6,
             name: "undo_edit_params",
             kind: "message",
-            T: Zy,
+            T: ew,
             oneof: "params"
         }, {
             no: 7,
             name: "end_params",
             kind: "message",
-            T: $y,
+            T: nw,
             oneof: "params"
         }, {
             no: 8,
             name: "new_file_params",
             kind: "message",
-            T: ky,
+            T: _y,
             oneof: "params"
         }, {
             no: 9,
             name: "add_test_params",
             kind: "message",
-            T: Fw,
+            T: vw,
             oneof: "params"
         }, {
             no: 10,
             name: "run_test_params",
             kind: "message",
-            T: qw,
+            T: Yw,
             oneof: "params"
         }, {
             no: 11,
             name: "delete_test_params",
             kind: "message",
-            T: Zw,
+            T: eT,
             oneof: "params"
         }, {
             no: 12,
             name: "save_file_params",
             kind: "message",
-            T: tT,
+            T: sT,
             oneof: "params"
         }, {
             no: 13,
             name: "get_tests_params",
             kind: "message",
-            T: Hw,
+            T: Xw,
             oneof: "params"
         }, {
             no: 14,
             name: "get_symbols_params",
             kind: "message",
-            T: iT,
+            T: aT,
             oneof: "params"
         }, {
             no: 15,
             name: "semantic_search_params",
             kind: "message",
-            T: Ny,
+            T: Jy,
             oneof: "params"
         }, {
             no: 16,
             name: "get_project_structure_params",
             kind: "message",
-            T: Qy,
+            T: wy,
             oneof: "params"
         }, {
             no: 17,
             name: "create_rm_files_params",
             kind: "message",
-            T: hy,
+            T: Cy,
             oneof: "params"
         }, {
             no: 18,
             name: "run_terminal_commands_params",
             kind: "message",
-            T: dy,
+            T: fy,
             oneof: "params"
         }, {
             no: 19,
             name: "new_edit_params",
             kind: "message",
-            T: Cw,
+            T: yw,
             oneof: "params"
         }, {
             no: 20,
             name: "read_with_linter_params",
             kind: "message",
-            T: ly,
+            T: my,
             oneof: "params"
         }, {
             no: 21,
             name: "add_ui_step_params",
             kind: "message",
-            T: zp,
+            T: ty,
             oneof: "params"
         }, {
             no: 23,
             name: "read_semsearch_files_params",
             kind: "message",
-            T: yp,
+            T: Sp,
             oneof: "params"
         }, {
             no: 26,
             name: "delete_file_params",
             kind: "message",
-            T: xp,
+            T: Hp,
             oneof: "params"
         }, {
             no: 22,
@@ -39784,8 +39816,8 @@
             T: 9,
             opt: !0
         }]);
-        let Xp = Wp;
-        const jp = class e extends Nr {
+        let Zp = Kp;
+        const zp = class e extends Nr {
             constructor(e) {
                 super(), this.tool = 0, this.result = {
                     case: void 0
@@ -39804,146 +39836,146 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        jp.runtime = Ks, jp.typeName = "aiserver.v1.BuiltinToolResult", jp.fields = Ks.util.newFieldList(() => [{
+        zp.runtime = Ks, zp.typeName = "aiserver.v1.BuiltinToolResult", zp.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool",
             kind: "enum",
-            T: Ks.getEnumType(GB)
+            T: Ks.getEnumType(VB)
         }, {
             no: 2,
             name: "search_result",
             kind: "message",
-            T: Hy,
+            T: Xy,
             oneof: "result"
         }, {
             no: 3,
             name: "read_chunk_result",
             kind: "message",
-            T: jy,
+            T: zy,
             oneof: "result"
         }, {
             no: 4,
             name: "gotodef_result",
             kind: "message",
-            T: fw,
+            T: Bw,
             oneof: "result"
         }, {
             no: 5,
             name: "edit_result",
             kind: "message",
-            T: kw,
+            T: _w,
             oneof: "result"
         }, {
             no: 6,
             name: "undo_edit_result",
             kind: "message",
-            T: rw,
+            T: Aw,
             oneof: "result"
         }, {
             no: 7,
             name: "end_result",
             kind: "message",
-            T: iw,
+            T: aw,
             oneof: "result"
         }, {
             no: 8,
             name: "new_file_result",
             kind: "message",
-            T: tw,
+            T: sw,
             oneof: "result"
         }, {
             no: 9,
             name: "add_test_result",
             kind: "message",
-            T: Lw,
+            T: Ow,
             oneof: "result"
         }, {
             no: 10,
             name: "run_test_result",
             kind: "message",
-            T: Gw,
+            T: Vw,
             oneof: "result"
         }, {
             no: 11,
             name: "delete_test_result",
             kind: "message",
-            T: $w,
+            T: nT,
             oneof: "result"
         }, {
             no: 12,
             name: "save_file_result",
             kind: "message",
-            T: rT,
+            T: AT,
             oneof: "result"
         }, {
             no: 13,
             name: "get_tests_result",
             kind: "message",
-            T: Ww,
+            T: Kw,
             oneof: "result"
         }, {
             no: 14,
             name: "get_symbols_result",
             kind: "message",
-            T: lT,
+            T: mT,
             oneof: "result"
         }, {
             no: 15,
             name: "semantic_search_result",
             kind: "message",
-            T: Ly,
+            T: Oy,
             oneof: "result"
         }, {
             no: 16,
             name: "get_project_structure_result",
             kind: "message",
-            T: yy,
+            T: Sy,
             oneof: "result"
         }, {
             no: 17,
             name: "create_rm_files_result",
             kind: "message",
-            T: By,
+            T: py,
             oneof: "result"
         }, {
             no: 18,
             name: "run_terminal_commands_result",
             kind: "message",
-            T: Ey,
+            T: Iy,
             oneof: "result"
         }, {
             no: 19,
             name: "new_edit_result",
             kind: "message",
-            T: pw,
+            T: Tw,
             oneof: "result"
         }, {
             no: 20,
             name: "read_with_linter_result",
             kind: "message",
-            T: uy,
+            T: gy,
             oneof: "result"
         }, {
             no: 21,
             name: "add_ui_step_result",
             kind: "message",
-            T: sy,
+            T: oy,
             oneof: "result"
         }, {
             no: 22,
             name: "read_semsearch_files_result",
             kind: "message",
-            T: Jp,
+            T: Lp,
             oneof: "result"
         }, {
             no: 24,
             name: "delete_file_result",
             kind: "message",
-            T: Yp,
+            T: Wp,
             oneof: "result"
         }]);
-        let Kp = jp;
-        const Zp = class e extends Nr {
+        let $p = zp;
+        const ey = class e extends Nr {
             constructor(e) {
                 super(), this.conversationId = "", this.step = {
                     case: void 0
@@ -39962,7 +39994,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Zp.runtime = Ks, Zp.typeName = "aiserver.v1.AddUiStepParams", Zp.fields = Ks.util.newFieldList(() => [{
+        ey.runtime = Ks, ey.typeName = "aiserver.v1.AddUiStepParams", ey.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "conversation_id",
             kind: "scalar",
@@ -39971,11 +40003,11 @@
             no: 2,
             name: "search_results",
             kind: "message",
-            T: ny,
+            T: iy,
             oneof: "step"
         }]);
-        let zp = Zp;
-        const $p = class e extends Nr {
+        let ty = ey;
+        const ny = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -39992,14 +40024,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $p.runtime = Ks, $p.typeName = "aiserver.v1.AddUiStepParams.SearchResult", $p.fields = Ks.util.newFieldList(() => [{
+        ny.runtime = Ks, ny.typeName = "aiserver.v1.AddUiStepParams.SearchResult", ny.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
             T: 9
         }]);
-        let ey = $p;
-        const ty = class e extends Nr {
+        let ry = ny;
+        const sy = class e extends Nr {
             constructor(e) {
                 super(), this.searchResults = [], Ks.util.initPartial(e, this)
             }
@@ -40016,52 +40048,52 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ty.runtime = Ks, ty.typeName = "aiserver.v1.AddUiStepParams.SearchResults", ty.fields = Ks.util.newFieldList(() => [{
+        sy.runtime = Ks, sy.typeName = "aiserver.v1.AddUiStepParams.SearchResults", sy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "search_results",
             kind: "message",
-            T: ey,
+            T: ry,
             repeated: !0
         }]);
-        let ny = ty;
-        const ry = class e extends Nr {
-            constructor(e) {
-                super(), Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        ry.runtime = Ks, ry.typeName = "aiserver.v1.AddUiStepResult", ry.fields = Ks.util.newFieldList(() => []);
-        let sy = ry;
-        const iy = class e extends Nr {
-            constructor(e) {
-                super(), Ks.util.initPartial(e, this)
-            }
-            static fromBinary(t, n) {
-                return (new e).fromBinary(t, n)
-            }
-            static fromJson(t, n) {
-                return (new e).fromJson(t, n)
-            }
-            static fromJsonString(t, n) {
-                return (new e).fromJsonString(t, n)
-            }
-            static equals(t, n) {
-                return Ks.util.equals(e, t, n)
-            }
-        };
-        iy.runtime = Ks, iy.typeName = "aiserver.v1.ServerSideToolResult", iy.fields = Ks.util.newFieldList(() => []);
+        let iy = sy;
         const Ay = class e extends Nr {
+            constructor(e) {
+                super(), Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        Ay.runtime = Ks, Ay.typeName = "aiserver.v1.AddUiStepResult", Ay.fields = Ks.util.newFieldList(() => []);
+        let oy = Ay;
+        const ay = class e extends Nr {
+            constructor(e) {
+                super(), Ks.util.initPartial(e, this)
+            }
+            static fromBinary(t, n) {
+                return (new e).fromBinary(t, n)
+            }
+            static fromJson(t, n) {
+                return (new e).fromJson(t, n)
+            }
+            static fromJsonString(t, n) {
+                return (new e).fromJsonString(t, n)
+            }
+            static equals(t, n) {
+                return Ks.util.equals(e, t, n)
+            }
+        };
+        ay.runtime = Ks, ay.typeName = "aiserver.v1.ServerSideToolResult", ay.fields = Ks.util.newFieldList(() => []);
+        const ly = class e extends Nr {
             constructor(e) {
                 super(), this.toolCall = {
                     case: void 0
@@ -40080,20 +40112,20 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ay.runtime = Ks, Ay.typeName = "aiserver.v1.ToolCall", Ay.fields = Ks.util.newFieldList(() => [{
+        ly.runtime = Ks, ly.typeName = "aiserver.v1.ToolCall", ly.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "builtin_tool_call",
             kind: "message",
-            T: Xp,
+            T: Zp,
             oneof: "tool_call"
         }, {
             no: 2,
             name: "custom_tool_call",
             kind: "message",
-            T: ow,
+            T: cw,
             oneof: "tool_call"
         }]);
-        const oy = class e extends Nr {
+        const cy = class e extends Nr {
             constructor(e) {
                 super(), this.toolResult = {
                     case: void 0
@@ -40112,26 +40144,26 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        oy.runtime = Ks, oy.typeName = "aiserver.v1.ToolResult", oy.fields = Ks.util.newFieldList(() => [{
+        cy.runtime = Ks, cy.typeName = "aiserver.v1.ToolResult", cy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "builtin_tool_result",
             kind: "message",
-            T: Kp,
+            T: $p,
             oneof: "tool_result"
         }, {
             no: 2,
             name: "custom_tool_result",
             kind: "message",
-            T: cw,
+            T: dw,
             oneof: "tool_result"
         }, {
             no: 3,
             name: "error_tool_result",
             kind: "message",
-            T: Iw,
+            T: Qw,
             oneof: "tool_result"
         }]);
-        const ay = class e extends Nr {
+        const uy = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -40148,14 +40180,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ay.runtime = Ks, ay.typeName = "aiserver.v1.ReadWithLinterParams", ay.fields = Ks.util.newFieldList(() => [{
+        uy.runtime = Ks, uy.typeName = "aiserver.v1.ReadWithLinterParams", uy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
             T: 9
         }]);
-        let ly = ay;
-        const cy = class e extends Nr {
+        let my = uy;
+        const dy = class e extends Nr {
             constructor(e) {
                 super(), this.contents = "", this.diagnostics = [], Ks.util.initPartial(e, this)
             }
@@ -40172,7 +40204,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        cy.runtime = Ks, cy.typeName = "aiserver.v1.ReadWithLinterResult", cy.fields = Ks.util.newFieldList(() => [{
+        dy.runtime = Ks, dy.typeName = "aiserver.v1.ReadWithLinterResult", dy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "contents",
             kind: "scalar",
@@ -40184,8 +40216,8 @@
             T: Va,
             repeated: !0
         }]);
-        let uy = cy;
-        const my = class e extends Nr {
+        let gy = dy;
+        const Ey = class e extends Nr {
             constructor(e) {
                 super(), this.commands = [], this.commandsUuid = "", Ks.util.initPartial(e, this)
             }
@@ -40202,7 +40234,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        my.runtime = Ks, my.typeName = "aiserver.v1.RunTerminalCommandsParams", my.fields = Ks.util.newFieldList(() => [{
+        Ey.runtime = Ks, Ey.typeName = "aiserver.v1.RunTerminalCommandsParams", Ey.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "commands",
             kind: "scalar",
@@ -40214,8 +40246,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let dy = my;
-        const gy = class e extends Nr {
+        let fy = Ey;
+        const hy = class e extends Nr {
             constructor(e) {
                 super(), this.outputs = [], Ks.util.initPartial(e, this)
             }
@@ -40232,15 +40264,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        gy.runtime = Ks, gy.typeName = "aiserver.v1.RunTerminalCommandsResult", gy.fields = Ks.util.newFieldList(() => [{
+        hy.runtime = Ks, hy.typeName = "aiserver.v1.RunTerminalCommandsResult", hy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "outputs",
             kind: "scalar",
             T: 9,
             repeated: !0
         }]);
-        let Ey = gy;
-        const fy = class e extends Nr {
+        let Iy = hy;
+        const By = class e extends Nr {
             constructor(e) {
                 super(), this.removedFilePaths = [], this.createdFilePaths = [], this.createdDirectoryPaths = [], Ks.util.initPartial(e, this)
             }
@@ -40257,7 +40289,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fy.runtime = Ks, fy.typeName = "aiserver.v1.CreateRmFilesParams", fy.fields = Ks.util.newFieldList(() => [{
+        By.runtime = Ks, By.typeName = "aiserver.v1.CreateRmFilesParams", By.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "removed_file_paths",
             kind: "scalar",
@@ -40276,8 +40308,8 @@
             T: 9,
             repeated: !0
         }]);
-        let hy = fy;
-        const Iy = class e extends Nr {
+        let Cy = By;
+        const Qy = class e extends Nr {
             constructor(e) {
                 super(), this.createdFilePaths = [], this.removedFilePaths = [], Ks.util.initPartial(e, this)
             }
@@ -40294,7 +40326,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Iy.runtime = Ks, Iy.typeName = "aiserver.v1.CreateRmFilesResult", Iy.fields = Ks.util.newFieldList(() => [{
+        Qy.runtime = Ks, Qy.typeName = "aiserver.v1.CreateRmFilesResult", Qy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "created_file_paths",
             kind: "scalar",
@@ -40307,8 +40339,8 @@
             T: 9,
             repeated: !0
         }]);
-        let By = Iy;
-        const Cy = class e extends Nr {
+        let py = Qy;
+        const yy = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -40325,9 +40357,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Cy.runtime = Ks, Cy.typeName = "aiserver.v1.GetProjectStructureParams", Cy.fields = Ks.util.newFieldList(() => []);
-        let Qy = Cy;
-        const py = class e extends Nr {
+        yy.runtime = Ks, yy.typeName = "aiserver.v1.GetProjectStructureParams", yy.fields = Ks.util.newFieldList(() => []);
+        let wy = yy;
+        const Ty = class e extends Nr {
             constructor(e) {
                 super(), this.files = [], this.rootWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -40344,11 +40376,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        py.runtime = Ks, py.typeName = "aiserver.v1.GetProjectStructureResult", py.fields = Ks.util.newFieldList(() => [{
+        Ty.runtime = Ks, Ty.typeName = "aiserver.v1.GetProjectStructureResult", Ty.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "files",
             kind: "message",
-            T: Ty,
+            T: Ry,
             repeated: !0
         }, {
             no: 2,
@@ -40356,8 +40388,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let yy = py;
-        const wy = class e extends Nr {
+        let Sy = Ty;
+        const ky = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.outline = "", Ks.util.initPartial(e, this)
             }
@@ -40374,7 +40406,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        wy.runtime = Ks, wy.typeName = "aiserver.v1.GetProjectStructureResult.File", wy.fields = Ks.util.newFieldList(() => [{
+        ky.runtime = Ks, ky.typeName = "aiserver.v1.GetProjectStructureResult.File", ky.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -40385,8 +40417,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Ty = wy;
-        const Sy = class e extends Nr {
+        let Ry = ky;
+        const Ny = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -40403,14 +40435,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Sy.runtime = Ks, Sy.typeName = "aiserver.v1.NewFileParams", Sy.fields = Ks.util.newFieldList(() => [{
+        Ny.runtime = Ks, Ny.typeName = "aiserver.v1.NewFileParams", Ny.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
             T: 9
         }]);
-        let ky = Sy;
-        const Ry = class e extends Nr {
+        let _y = Ny;
+        const Dy = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", this.topK = 0, this.grabWholeFile = !1, Ks.util.initPartial(e, this)
             }
@@ -40427,7 +40459,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ry.runtime = Ks, Ry.typeName = "aiserver.v1.SemanticSearchParams", Ry.fields = Ks.util.newFieldList(() => [{
+        Dy.runtime = Ks, Dy.typeName = "aiserver.v1.SemanticSearchParams", Dy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
@@ -40461,8 +40493,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Ny = Ry;
-        const _y = class e extends Nr {
+        let Jy = Dy;
+        const Fy = class e extends Nr {
             constructor(e) {
                 super(), this.startLine = 0, this.startCharacter = 0, this.endLine = 0, this.endCharacter = 0, Ks.util.initPartial(e, this)
             }
@@ -40479,7 +40511,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        _y.runtime = Ks, _y.typeName = "aiserver.v1.Range", _y.fields = Ks.util.newFieldList(() => [{
+        Fy.runtime = Ks, Fy.typeName = "aiserver.v1.Range", Fy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "start_line",
             kind: "scalar",
@@ -40500,8 +40532,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let Dy = _y;
-        const Jy = class e extends Nr {
+        let by = Fy;
+        const Ly = class e extends Nr {
             constructor(e) {
                 super(), this.start = 0, this.end = 0, Ks.util.initPartial(e, this)
             }
@@ -40518,7 +40550,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Jy.runtime = Ks, Jy.typeName = "aiserver.v1.MatchRange", Jy.fields = Ks.util.newFieldList(() => [{
+        Ly.runtime = Ks, Ly.typeName = "aiserver.v1.MatchRange", Ly.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "start",
             kind: "scalar",
@@ -40529,8 +40561,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let Fy = Jy;
-        const by = class e extends Nr {
+        let vy = Ly;
+        const Uy = class e extends Nr {
             constructor(e) {
                 super(), this.results = [], this.files = {}, Ks.util.initPartial(e, this)
             }
@@ -40547,11 +40579,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        by.runtime = Ks, by.typeName = "aiserver.v1.SemanticSearchResult", by.fields = Ks.util.newFieldList(() => [{
+        Uy.runtime = Ks, Uy.typeName = "aiserver.v1.SemanticSearchResult", Uy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "results",
             kind: "message",
-            T: Uy,
+            T: Py,
             repeated: !0
         }, {
             no: 2,
@@ -40563,8 +40595,8 @@
                 T: 9
             }
         }]);
-        let Ly = by;
-        const vy = class e extends Nr {
+        let Oy = Uy;
+        const My = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.score = 0, this.content = "", this.detailedLines = [], Ks.util.initPartial(e, this)
             }
@@ -40581,7 +40613,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vy.runtime = Ks, vy.typeName = "aiserver.v1.SemanticSearchResult.Item", vy.fields = Ks.util.newFieldList(() => [{
+        My.runtime = Ks, My.typeName = "aiserver.v1.SemanticSearchResult.Item", My.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -40614,8 +40646,8 @@
             T: ba,
             repeated: !0
         }]);
-        let Uy = vy;
-        const Oy = class e extends Nr {
+        let Py = My;
+        const qy = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", this.regex = !1, this.includePattern = "", this.excludePattern = "", this.filenameSearch = !1, Ks.util.initPartial(e, this)
             }
@@ -40632,7 +40664,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Oy.runtime = Ks, Oy.typeName = "aiserver.v1.SearchParams", Oy.fields = Ks.util.newFieldList(() => [{
+        qy.runtime = Ks, qy.typeName = "aiserver.v1.SearchParams", qy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
@@ -40658,8 +40690,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let My = Oy;
-        const Py = class e extends Nr {
+        let xy = qy;
+        const Gy = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.numMatches = 0, this.potentiallyRelevantLines = [], this.cropped = !1, Ks.util.initPartial(e, this)
             }
@@ -40676,7 +40708,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Py.runtime = Ks, Py.typeName = "aiserver.v1.SearchToolFileSearchResult", Py.fields = Ks.util.newFieldList(() => [{
+        Gy.runtime = Ks, Gy.typeName = "aiserver.v1.SearchToolFileSearchResult", Gy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -40690,7 +40722,7 @@
             no: 3,
             name: "potentially_relevant_lines",
             kind: "message",
-            T: Gy,
+            T: Vy,
             repeated: !0
         }, {
             no: 4,
@@ -40698,8 +40730,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let qy = Py;
-        const xy = class e extends Nr {
+        let Yy = Gy;
+        const Hy = class e extends Nr {
             constructor(e) {
                 super(), this.lineNumber = 0, this.text = "", Ks.util.initPartial(e, this)
             }
@@ -40716,7 +40748,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        xy.runtime = Ks, xy.typeName = "aiserver.v1.SearchToolFileSearchResult.Line", xy.fields = Ks.util.newFieldList(() => [{
+        Hy.runtime = Ks, Hy.typeName = "aiserver.v1.SearchToolFileSearchResult.Line", Hy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "line_number",
             kind: "scalar",
@@ -40727,8 +40759,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Gy = xy;
-        const Yy = class e extends Nr {
+        let Vy = Hy;
+        const Wy = class e extends Nr {
             constructor(e) {
                 super(), this.fileResults = [], this.numTotalMatches = 0, this.numTotalMatchedFiles = 0, this.numTotalMayBeIncomplete = !1, this.filesOnly = !1, Ks.util.initPartial(e, this)
             }
@@ -40745,11 +40777,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Yy.runtime = Ks, Yy.typeName = "aiserver.v1.SearchResult", Yy.fields = Ks.util.newFieldList(() => [{
+        Wy.runtime = Ks, Wy.typeName = "aiserver.v1.SearchResult", Wy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_results",
             kind: "message",
-            T: qy,
+            T: Yy,
             repeated: !0
         }, {
             no: 2,
@@ -40772,8 +40804,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Hy = Yy;
-        const Vy = class e extends Nr {
+        let Xy = Wy;
+        const jy = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.startLineNumber = 0, Ks.util.initPartial(e, this)
             }
@@ -40790,7 +40822,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Vy.runtime = Ks, Vy.typeName = "aiserver.v1.ReadChunkParams", Vy.fields = Ks.util.newFieldList(() => [{
+        jy.runtime = Ks, jy.typeName = "aiserver.v1.ReadChunkParams", jy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -40807,8 +40839,8 @@
             T: 5,
             opt: !0
         }]);
-        let Wy = Vy;
-        const Xy = class e extends Nr {
+        let Ky = jy;
+        const Zy = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.startLineNumber = 0, this.lines = [], this.totalNumLines = 0, this.cropped = !1, Ks.util.initPartial(e, this)
             }
@@ -40825,7 +40857,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Xy.runtime = Ks, Xy.typeName = "aiserver.v1.ReadChunkResult", Xy.fields = Ks.util.newFieldList(() => [{
+        Zy.runtime = Ks, Zy.typeName = "aiserver.v1.ReadChunkResult", Zy.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -40852,8 +40884,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let jy = Xy;
-        const Ky = class e extends Nr {
+        let zy = Zy;
+        const $y = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -40870,9 +40902,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ky.runtime = Ks, Ky.typeName = "aiserver.v1.UndoEditParams", Ky.fields = Ks.util.newFieldList(() => []);
-        let Zy = Ky;
-        const zy = class e extends Nr {
+        $y.runtime = Ks, $y.typeName = "aiserver.v1.UndoEditParams", $y.fields = Ks.util.newFieldList(() => []);
+        let ew = $y;
+        const tw = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -40889,9 +40921,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        zy.runtime = Ks, zy.typeName = "aiserver.v1.EndParams", zy.fields = Ks.util.newFieldList(() => []);
-        let $y = zy;
-        const ew = class e extends Nr {
+        tw.runtime = Ks, tw.typeName = "aiserver.v1.EndParams", tw.fields = Ks.util.newFieldList(() => []);
+        let nw = tw;
+        const rw = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.fileTotalLines = 0, Ks.util.initPartial(e, this)
             }
@@ -40908,7 +40940,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ew.runtime = Ks, ew.typeName = "aiserver.v1.NewFileResult", ew.fields = Ks.util.newFieldList(() => [{
+        rw.runtime = Ks, rw.typeName = "aiserver.v1.NewFileResult", rw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -40919,8 +40951,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let tw = ew;
-        const nw = class e extends Nr {
+        let sw = rw;
+        const iw = class e extends Nr {
             constructor(e) {
                 super(), this.feedback = [], this.relativeWorkspacePath = "", this.contextStartLineNumber = 0, this.contextLines = [], this.contextTotalNumLines = 0, this.fileTotalLines = 0, Ks.util.initPartial(e, this)
             }
@@ -40937,7 +40969,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        nw.runtime = Ks, nw.typeName = "aiserver.v1.UndoEditResult", nw.fields = Ks.util.newFieldList(() => [{
+        iw.runtime = Ks, iw.typeName = "aiserver.v1.UndoEditResult", iw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "feedback",
             kind: "scalar",
@@ -40970,8 +41002,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let rw = nw;
-        const sw = class e extends Nr {
+        let Aw = iw;
+        const ow = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -40988,9 +41020,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sw.runtime = Ks, sw.typeName = "aiserver.v1.EndResult", sw.fields = Ks.util.newFieldList(() => []);
-        let iw = sw;
-        const Aw = class e extends Nr {
+        ow.runtime = Ks, ow.typeName = "aiserver.v1.EndResult", ow.fields = Ks.util.newFieldList(() => []);
+        let aw = ow;
+        const lw = class e extends Nr {
             constructor(e) {
                 super(), this.toolId = "", this.params = "", Ks.util.initPartial(e, this)
             }
@@ -41007,7 +41039,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Aw.runtime = Ks, Aw.typeName = "aiserver.v1.CustomToolCall", Aw.fields = Ks.util.newFieldList(() => [{
+        lw.runtime = Ks, lw.typeName = "aiserver.v1.CustomToolCall", lw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool_id",
             kind: "scalar",
@@ -41018,8 +41050,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let ow = Aw;
-        const aw = class e extends Nr {
+        let cw = lw;
+        const uw = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -41036,8 +41068,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        aw.runtime = Ks, aw.typeName = "aiserver.v1.ScratchpadResult", aw.fields = Ks.util.newFieldList(() => []);
-        const lw = class e extends Nr {
+        uw.runtime = Ks, uw.typeName = "aiserver.v1.ScratchpadResult", uw.fields = Ks.util.newFieldList(() => []);
+        const mw = class e extends Nr {
             constructor(e) {
                 super(), this.toolId = "", this.result = "", Ks.util.initPartial(e, this)
             }
@@ -41054,7 +41086,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        lw.runtime = Ks, lw.typeName = "aiserver.v1.CustomToolResult", lw.fields = Ks.util.newFieldList(() => [{
+        mw.runtime = Ks, mw.typeName = "aiserver.v1.CustomToolResult", mw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool_id",
             kind: "scalar",
@@ -41065,8 +41097,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let cw = lw;
-        const uw = class e extends Nr {
+        let dw = mw;
+        const gw = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.symbol = "", this.startLine = 0, this.endLine = 0, Ks.util.initPartial(e, this)
             }
@@ -41083,7 +41115,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        uw.runtime = Ks, uw.typeName = "aiserver.v1.GotodefParams", uw.fields = Ks.util.newFieldList(() => [{
+        gw.runtime = Ks, gw.typeName = "aiserver.v1.GotodefParams", gw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -41104,8 +41136,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let mw = uw;
-        const dw = class e extends Nr {
+        let Ew = gw;
+        const fw = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.startLine = 0, this.endLine = 0, this.codeContextLines = [], Ks.util.initPartial(e, this)
             }
@@ -41122,7 +41154,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        dw.runtime = Ks, dw.typeName = "aiserver.v1.GotodefDefinition", dw.fields = Ks.util.newFieldList(() => [{
+        fw.runtime = Ks, fw.typeName = "aiserver.v1.GotodefDefinition", fw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -41156,8 +41188,8 @@
             T: 9,
             repeated: !0
         }]);
-        let gw = dw;
-        const Ew = class e extends Nr {
+        let hw = fw;
+        const Iw = class e extends Nr {
             constructor(e) {
                 super(), this.definitions = [], Ks.util.initPartial(e, this)
             }
@@ -41174,15 +41206,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ew.runtime = Ks, Ew.typeName = "aiserver.v1.GotodefResult", Ew.fields = Ks.util.newFieldList(() => [{
+        Iw.runtime = Ks, Iw.typeName = "aiserver.v1.GotodefResult", Iw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "definitions",
             kind: "message",
-            T: gw,
+            T: hw,
             repeated: !0
         }]);
-        let fw = Ew;
-        const hw = class e extends Nr {
+        let Bw = Iw;
+        const Cw = class e extends Nr {
             constructor(e) {
                 super(), this.errorMessage = "", Ks.util.initPartial(e, this)
             }
@@ -41199,14 +41231,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        hw.runtime = Ks, hw.typeName = "aiserver.v1.ErrorToolResult", hw.fields = Ks.util.newFieldList(() => [{
+        Cw.runtime = Ks, Cw.typeName = "aiserver.v1.ErrorToolResult", Cw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error_message",
             kind: "scalar",
             T: 9
         }]);
-        let Iw = hw;
-        const Bw = class e extends Nr {
+        let Qw = Cw;
+        const pw = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.text = "", this.editId = "", this.firstEdit = !1, Ks.util.initPartial(e, this)
             }
@@ -41223,7 +41255,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Bw.runtime = Ks, Bw.typeName = "aiserver.v1.NewEditParams", Bw.fields = Ks.util.newFieldList(() => [{
+        pw.runtime = Ks, pw.typeName = "aiserver.v1.NewEditParams", pw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -41256,8 +41288,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Cw = Bw;
-        const Qw = class e extends Nr {
+        let yw = pw;
+        const ww = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -41274,9 +41306,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Qw.runtime = Ks, Qw.typeName = "aiserver.v1.NewEditResult", Qw.fields = Ks.util.newFieldList(() => []);
-        let pw = Qw;
-        const yw = class e extends Nr {
+        ww.runtime = Ks, ww.typeName = "aiserver.v1.NewEditResult", ww.fields = Ks.util.newFieldList(() => []);
+        let Tw = ww;
+        const Sw = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.replaceNumLines = 0, this.newLines = [], this.editId = "", this.frontendEditType = 0, Ks.util.initPartial(e, this)
             }
@@ -41293,7 +41325,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yw.runtime = Ks, yw.typeName = "aiserver.v1.EditParams", yw.fields = Ks.util.newFieldList(() => [{
+        Sw.runtime = Ks, Sw.typeName = "aiserver.v1.EditParams", Sw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -41330,7 +41362,7 @@
             no: 6,
             name: "frontend_edit_type",
             kind: "enum",
-            T: Ks.getEnumType(Tw)
+            T: Ks.getEnumType(Rw)
         }, {
             no: 8,
             name: "auto_fix_all_linter_errors_in_file",
@@ -41338,9 +41370,9 @@
             T: 8,
             opt: !0
         }]);
-        let ww = yw;
-        var Tw = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INLINE_DIFFS = 1] = "INLINE_DIFFS", e[e.SIMPLE = 2] = "SIMPLE", e))(Tw || {});
-        Ks.util.setEnumType(Tw, "aiserver.v1.EditParams.FrontendEditType", [{
+        let kw = Sw;
+        var Rw = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INLINE_DIFFS = 1] = "INLINE_DIFFS", e[e.SIMPLE = 2] = "SIMPLE", e))(Rw || {});
+        Ks.util.setEnumType(Rw, "aiserver.v1.EditParams.FrontendEditType", [{
             no: 0,
             name: "FRONTEND_EDIT_TYPE_UNSPECIFIED"
         }, {
@@ -41350,7 +41382,7 @@
             no: 2,
             name: "FRONTEND_EDIT_TYPE_SIMPLE"
         }]);
-        const Sw = class e extends Nr {
+        const Nw = class e extends Nr {
             constructor(e) {
                 super(), this.feedback = [], this.contextStartLineNumber = 0, this.contextLines = [], this.file = "", this.fileTotalLines = 0, this.structuredFeedback = [], Ks.util.initPartial(e, this)
             }
@@ -41367,7 +41399,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Sw.runtime = Ks, Sw.typeName = "aiserver.v1.EditResult", Sw.fields = Ks.util.newFieldList(() => [{
+        Nw.runtime = Ks, Nw.typeName = "aiserver.v1.EditResult", Nw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "feedback",
             kind: "scalar",
@@ -41398,11 +41430,11 @@
             no: 6,
             name: "structured_feedback",
             kind: "message",
-            T: Dw,
+            T: bw,
             repeated: !0
         }]);
-        let kw = Sw;
-        const Rw = class e extends Nr {
+        let _w = Nw;
+        const Dw = class e extends Nr {
             constructor(e) {
                 super(), this.message = "", this.startLineNumber = 0, this.endLineNumber = 0, this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -41419,7 +41451,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Rw.runtime = Ks, Rw.typeName = "aiserver.v1.EditResult.RelatedInformation", Rw.fields = Ks.util.newFieldList(() => [{
+        Dw.runtime = Ks, Dw.typeName = "aiserver.v1.EditResult.RelatedInformation", Dw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "message",
             kind: "scalar",
@@ -41440,8 +41472,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Nw = Rw;
-        const _w = class e extends Nr {
+        let Jw = Dw;
+        const Fw = class e extends Nr {
             constructor(e) {
                 super(), this.message = "", this.severity = "", this.startLineNumber = 0, this.endLineNumber = 0, this.relatedInformation = [], Ks.util.initPartial(e, this)
             }
@@ -41458,7 +41490,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        _w.runtime = Ks, _w.typeName = "aiserver.v1.EditResult.Feedback", _w.fields = Ks.util.newFieldList(() => [{
+        Fw.runtime = Ks, Fw.typeName = "aiserver.v1.EditResult.Feedback", Fw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "message",
             kind: "scalar",
@@ -41482,11 +41514,11 @@
             no: 5,
             name: "related_information",
             kind: "message",
-            T: Nw,
+            T: Jw,
             repeated: !0
         }]);
-        let Dw = _w;
-        const Jw = class e extends Nr {
+        let bw = Fw;
+        const Lw = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.testName = "", this.testCode = "", Ks.util.initPartial(e, this)
             }
@@ -41503,7 +41535,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Jw.runtime = Ks, Jw.typeName = "aiserver.v1.AddTestParams", Jw.fields = Ks.util.newFieldList(() => [{
+        Lw.runtime = Ks, Lw.typeName = "aiserver.v1.AddTestParams", Lw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -41519,8 +41551,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Fw = Jw;
-        const bw = class e extends Nr {
+        let vw = Lw;
+        const Uw = class e extends Nr {
             constructor(e) {
                 super(), this.feedback = [], Ks.util.initPartial(e, this)
             }
@@ -41537,15 +41569,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bw.runtime = Ks, bw.typeName = "aiserver.v1.AddTestResult", bw.fields = Ks.util.newFieldList(() => [{
+        Uw.runtime = Ks, Uw.typeName = "aiserver.v1.AddTestResult", Uw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "feedback",
             kind: "message",
-            T: Mw,
+            T: xw,
             repeated: !0
         }]);
-        let Lw = bw;
-        const vw = class e extends Nr {
+        let Ow = Uw;
+        const Mw = class e extends Nr {
             constructor(e) {
                 super(), this.message = "", this.startLineNumber = 0, this.endLineNumber = 0, this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -41562,7 +41594,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vw.runtime = Ks, vw.typeName = "aiserver.v1.AddTestResult.RelatedInformation", vw.fields = Ks.util.newFieldList(() => [{
+        Mw.runtime = Ks, Mw.typeName = "aiserver.v1.AddTestResult.RelatedInformation", Mw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "message",
             kind: "scalar",
@@ -41583,8 +41615,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Uw = vw;
-        const Ow = class e extends Nr {
+        let Pw = Mw;
+        const qw = class e extends Nr {
             constructor(e) {
                 super(), this.message = "", this.severity = "", this.startLineNumber = 0, this.endLineNumber = 0, this.relatedInformation = [], Ks.util.initPartial(e, this)
             }
@@ -41601,7 +41633,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ow.runtime = Ks, Ow.typeName = "aiserver.v1.AddTestResult.Feedback", Ow.fields = Ks.util.newFieldList(() => [{
+        qw.runtime = Ks, qw.typeName = "aiserver.v1.AddTestResult.Feedback", qw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "message",
             kind: "scalar",
@@ -41625,11 +41657,11 @@
             no: 5,
             name: "related_information",
             kind: "message",
-            T: Uw,
+            T: Pw,
             repeated: !0
         }]);
-        let Mw = Ow;
-        const Pw = class e extends Nr {
+        let xw = qw;
+        const Gw = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -41646,7 +41678,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Pw.runtime = Ks, Pw.typeName = "aiserver.v1.RunTestParams", Pw.fields = Ks.util.newFieldList(() => [{
+        Gw.runtime = Ks, Gw.typeName = "aiserver.v1.RunTestParams", Gw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -41658,8 +41690,8 @@
             T: 9,
             opt: !0
         }]);
-        let qw = Pw;
-        const xw = class e extends Nr {
+        let Yw = Gw;
+        const Hw = class e extends Nr {
             constructor(e) {
                 super(), this.result = "", Ks.util.initPartial(e, this)
             }
@@ -41676,14 +41708,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        xw.runtime = Ks, xw.typeName = "aiserver.v1.RunTestResult", xw.fields = Ks.util.newFieldList(() => [{
+        Hw.runtime = Ks, Hw.typeName = "aiserver.v1.RunTestResult", Hw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "result",
             kind: "scalar",
             T: 9
         }]);
-        let Gw = xw;
-        const Yw = class e extends Nr {
+        let Vw = Hw;
+        const Ww = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -41700,14 +41732,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Yw.runtime = Ks, Yw.typeName = "aiserver.v1.GetTestsParams", Yw.fields = Ks.util.newFieldList(() => [{
+        Ww.runtime = Ks, Ww.typeName = "aiserver.v1.GetTestsParams", Ww.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
             T: 9
         }]);
-        let Hw = Yw;
-        const Vw = class e extends Nr {
+        let Xw = Ww;
+        const jw = class e extends Nr {
             constructor(e) {
                 super(), this.tests = [], Ks.util.initPartial(e, this)
             }
@@ -41724,15 +41756,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Vw.runtime = Ks, Vw.typeName = "aiserver.v1.GetTestsResult", Vw.fields = Ks.util.newFieldList(() => [{
+        jw.runtime = Ks, jw.typeName = "aiserver.v1.GetTestsResult", jw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tests",
             kind: "message",
-            T: jw,
+            T: zw,
             repeated: !0
         }]);
-        let Ww = Vw;
-        const Xw = class e extends Nr {
+        let Kw = jw;
+        const Zw = class e extends Nr {
             constructor(e) {
                 super(), this.name = "", this.lines = [], Ks.util.initPartial(e, this)
             }
@@ -41749,7 +41781,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Xw.runtime = Ks, Xw.typeName = "aiserver.v1.GetTestsResult.Test", Xw.fields = Ks.util.newFieldList(() => [{
+        Zw.runtime = Ks, Zw.typeName = "aiserver.v1.GetTestsResult.Test", Zw.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "name",
             kind: "scalar",
@@ -41761,8 +41793,8 @@
             T: 9,
             repeated: !0
         }]);
-        let jw = Xw;
-        const Kw = class e extends Nr {
+        let zw = Zw;
+        const $w = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -41779,7 +41811,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Kw.runtime = Ks, Kw.typeName = "aiserver.v1.DeleteTestParams", Kw.fields = Ks.util.newFieldList(() => [{
+        $w.runtime = Ks, $w.typeName = "aiserver.v1.DeleteTestParams", $w.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -41791,8 +41823,8 @@
             T: 9,
             opt: !0
         }]);
-        let Zw = Kw;
-        const zw = class e extends Nr {
+        let eT = $w;
+        const tT = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -41809,9 +41841,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        zw.runtime = Ks, zw.typeName = "aiserver.v1.DeleteTestResult", zw.fields = Ks.util.newFieldList(() => []);
-        let $w = zw;
-        const eT = class e extends Nr {
+        tT.runtime = Ks, tT.typeName = "aiserver.v1.DeleteTestResult", tT.fields = Ks.util.newFieldList(() => []);
+        let nT = tT;
+        const rT = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", Ks.util.initPartial(e, this)
             }
@@ -41828,14 +41860,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        eT.runtime = Ks, eT.typeName = "aiserver.v1.SaveFileParams", eT.fields = Ks.util.newFieldList(() => [{
+        rT.runtime = Ks, rT.typeName = "aiserver.v1.SaveFileParams", rT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
             T: 9
         }]);
-        let tT = eT;
-        const nT = class e extends Nr {
+        let sT = rT;
+        const iT = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -41852,9 +41884,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        nT.runtime = Ks, nT.typeName = "aiserver.v1.SaveFileResult", nT.fields = Ks.util.newFieldList(() => []);
-        let rT = nT;
-        const sT = class e extends Nr {
+        iT.runtime = Ks, iT.typeName = "aiserver.v1.SaveFileResult", iT.fields = Ks.util.newFieldList(() => []);
+        let AT = iT;
+        const oT = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.includeChildren = !1, Ks.util.initPartial(e, this)
             }
@@ -41871,7 +41903,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sT.runtime = Ks, sT.typeName = "aiserver.v1.GetSymbolsParams", sT.fields = Ks.util.newFieldList(() => [{
+        oT.runtime = Ks, oT.typeName = "aiserver.v1.GetSymbolsParams", oT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -41880,7 +41912,7 @@
             no: 2,
             name: "line_range",
             kind: "message",
-            T: oT,
+            T: cT,
             opt: !0
         }, {
             no: 3,
@@ -41888,8 +41920,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let iT = sT;
-        const AT = class e extends Nr {
+        let aT = oT;
+        const lT = class e extends Nr {
             constructor(e) {
                 super(), this.startLineNumber = 0, this.endLineNumberInclusive = 0, Ks.util.initPartial(e, this)
             }
@@ -41906,7 +41938,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        AT.runtime = Ks, AT.typeName = "aiserver.v1.GetSymbolsParams.LineRange", AT.fields = Ks.util.newFieldList(() => [{
+        lT.runtime = Ks, lT.typeName = "aiserver.v1.GetSymbolsParams.LineRange", lT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "start_line_number",
             kind: "scalar",
@@ -41917,8 +41949,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let oT = AT;
-        const aT = class e extends Nr {
+        let cT = lT;
+        const uT = class e extends Nr {
             constructor(e) {
                 super(), this.symbols = [], Ks.util.initPartial(e, this)
             }
@@ -41935,15 +41967,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        aT.runtime = Ks, aT.typeName = "aiserver.v1.GetSymbolsResult", aT.fields = Ks.util.newFieldList(() => [{
+        uT.runtime = Ks, uT.typeName = "aiserver.v1.GetSymbolsResult", uT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "symbols",
             kind: "message",
             T: kl,
             repeated: !0
         }]);
-        let lT = aT;
-        const cT = class e extends Nr {
+        let mT = uT;
+        const dT = class e extends Nr {
             constructor(e) {
                 super(), this.parsingFailed = !1, this.executableCommands = [], this.hasRedirects = !1, this.hasCommandSubstitution = !1, this.redirects = [], Ks.util.initPartial(e, this)
             }
@@ -41960,7 +41992,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        cT.runtime = Ks, cT.typeName = "aiserver.v1.ShellCommandParsingResult", cT.fields = Ks.util.newFieldList(() => [{
+        dT.runtime = Ks, dT.typeName = "aiserver.v1.ShellCommandParsingResult", dT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "parsing_failed",
             kind: "scalar",
@@ -41969,7 +42001,7 @@
             no: 2,
             name: "executable_commands",
             kind: "message",
-            T: ET,
+            T: IT,
             repeated: !0
         }, {
             no: 3,
@@ -41991,11 +42023,11 @@
             no: 6,
             name: "redirects",
             kind: "message",
-            T: hT,
+            T: CT,
             repeated: !0
         }]);
-        let uT = cT;
-        const mT = class e extends Nr {
+        let gT = dT;
+        const ET = class e extends Nr {
             constructor(e) {
                 super(), this.type = "", this.value = "", Ks.util.initPartial(e, this)
             }
@@ -42012,7 +42044,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        mT.runtime = Ks, mT.typeName = "aiserver.v1.ShellCommandParsingResult.ExecutableCommandArg", mT.fields = Ks.util.newFieldList(() => [{
+        ET.runtime = Ks, ET.typeName = "aiserver.v1.ShellCommandParsingResult.ExecutableCommandArg", ET.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "type",
             kind: "scalar",
@@ -42023,8 +42055,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let dT = mT;
-        const gT = class e extends Nr {
+        let fT = ET;
+        const hT = class e extends Nr {
             constructor(e) {
                 super(), this.name = "", this.args = [], this.fullText = "", Ks.util.initPartial(e, this)
             }
@@ -42041,7 +42073,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        gT.runtime = Ks, gT.typeName = "aiserver.v1.ShellCommandParsingResult.ExecutableCommand", gT.fields = Ks.util.newFieldList(() => [{
+        hT.runtime = Ks, hT.typeName = "aiserver.v1.ShellCommandParsingResult.ExecutableCommand", hT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "name",
             kind: "scalar",
@@ -42050,7 +42082,7 @@
             no: 2,
             name: "args",
             kind: "message",
-            T: dT,
+            T: fT,
             repeated: !0
         }, {
             no: 3,
@@ -42058,8 +42090,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let ET = gT;
-        const fT = class e extends Nr {
+        let IT = hT;
+        const BT = class e extends Nr {
             constructor(e) {
                 super(), this.operator = "", this.destinationFds = [], this.targetNodeType = "", Ks.util.initPartial(e, this)
             }
@@ -42076,7 +42108,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fT.runtime = Ks, fT.typeName = "aiserver.v1.ShellCommandParsingResult.Redirect", fT.fields = Ks.util.newFieldList(() => [{
+        BT.runtime = Ks, BT.typeName = "aiserver.v1.ShellCommandParsingResult.Redirect", BT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "operator",
             kind: "scalar",
@@ -42099,8 +42131,8 @@
             T: 9,
             opt: !0
         }]);
-        let hT = fT;
-        const IT = class e extends Nr {
+        let CT = BT;
+        const QT = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", this.isBackground = !1, this.requireUserApproval = !1, Ks.util.initPartial(e, this)
             }
@@ -42117,7 +42149,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        IT.runtime = Ks, IT.typeName = "aiserver.v1.RunTerminalCommandV2Params", IT.fields = Ks.util.newFieldList(() => [{
+        QT.runtime = Ks, QT.typeName = "aiserver.v1.RunTerminalCommandV2Params", QT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -42138,7 +42170,7 @@
             no: 4,
             name: "options",
             kind: "message",
-            T: QT,
+            T: wT,
             opt: !0
         }, {
             no: 5,
@@ -42154,7 +42186,7 @@
             no: 7,
             name: "parsing_result",
             kind: "message",
-            T: uT,
+            T: gT,
             opt: !0
         }, {
             no: 8,
@@ -42187,8 +42219,8 @@
             T: ou,
             opt: !0
         }]);
-        let BT = IT;
-        const CT = class e extends Nr {
+        let pT = QT;
+        const yT = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -42205,7 +42237,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        CT.runtime = Ks, CT.typeName = "aiserver.v1.RunTerminalCommandV2Params.ExecutionOptions", CT.fields = Ks.util.newFieldList(() => [{
+        yT.runtime = Ks, yT.typeName = "aiserver.v1.RunTerminalCommandV2Params.ExecutionOptions", yT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "timeout",
             kind: "scalar",
@@ -42254,8 +42286,8 @@
             T: 8,
             opt: !0
         }]);
-        let QT = CT;
-        const pT = class e extends Nr {
+        let wT = yT;
+        const TT = class e extends Nr {
             constructor(e) {
                 super(), this.filePath = "", this.sizeBytes = Pr.zero, this.lineCount = Pr.zero, Ks.util.initPartial(e, this)
             }
@@ -42272,7 +42304,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        pT.runtime = Ks, pT.typeName = "aiserver.v1.OutputLocation", pT.fields = Ks.util.newFieldList(() => [{
+        TT.runtime = Ks, TT.typeName = "aiserver.v1.OutputLocation", TT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_path",
             kind: "scalar",
@@ -42288,8 +42320,8 @@
             kind: "scalar",
             T: 3
         }]);
-        let yT = pT;
-        const wT = class e extends Nr {
+        let ST = TT;
+        const kT = class e extends Nr {
             constructor(e) {
                 super(), this.output = "", this.exitCode = 0, this.poppedOutIntoBackground = !1, this.isRunningInBackground = !1, this.notInterrupted = !1, this.resultingWorkingDirectory = "", this.didUserChange = !1, this.endedReason = 0, this.outputRaw = "", Ks.util.initPartial(e, this)
             }
@@ -42306,7 +42338,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        wT.runtime = Ks, wT.typeName = "aiserver.v1.RunTerminalCommandV2Result", wT.fields = Ks.util.newFieldList(() => [{
+        kT.runtime = Ks, kT.typeName = "aiserver.v1.RunTerminalCommandV2Result", kT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "output",
             kind: "scalar",
@@ -42351,7 +42383,7 @@
             no: 9,
             name: "ended_reason",
             kind: "enum",
-            T: Ks.getEnumType(YB)
+            T: Ks.getEnumType(WB)
         }, {
             no: 10,
             name: "exit_code_v2",
@@ -42373,7 +42405,7 @@
             no: 13,
             name: "human_review_v2",
             kind: "message",
-            T: ZC,
+            T: eQ,
             opt: !0
         }, {
             no: 14,
@@ -42391,7 +42423,7 @@
             no: 16,
             name: "output_location",
             kind: "message",
-            T: yT,
+            T: ST,
             opt: !0
         }, {
             no: 17,
@@ -42406,8 +42438,8 @@
             T: 13,
             opt: !0
         }]);
-        let TT = wT;
-        const ST = class e extends Nr {
+        let RT = kT;
+        const NT = class e extends Nr {
             constructor(e) {
                 super(), this.command = "", this.isBackground = !1, Ks.util.initPartial(e, this)
             }
@@ -42424,7 +42456,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ST.runtime = Ks, ST.typeName = "aiserver.v1.RunTerminalCommandV2Stream", ST.fields = Ks.util.newFieldList(() => [{
+        NT.runtime = Ks, NT.typeName = "aiserver.v1.RunTerminalCommandV2Stream", NT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "command",
             kind: "scalar",
@@ -42438,7 +42470,7 @@
             no: 7,
             name: "parsing_result",
             kind: "message",
-            T: uT,
+            T: gT,
             opt: !0
         }, {
             no: 8,
@@ -42453,8 +42485,8 @@
             T: Hc,
             opt: !0
         }]);
-        let kT = ST;
-        const RT = class e extends Nr {
+        let _T = NT;
+        const DT = class e extends Nr {
             constructor(e) {
                 super(), this.ruleNames = [], Ks.util.initPartial(e, this)
             }
@@ -42471,15 +42503,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        RT.runtime = Ks, RT.typeName = "aiserver.v1.FetchRulesStream", RT.fields = Ks.util.newFieldList(() => [{
+        DT.runtime = Ks, DT.typeName = "aiserver.v1.FetchRulesStream", DT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "rule_names",
             kind: "scalar",
             T: 9,
             repeated: !0
         }]);
-        let NT = RT;
-        const _T = class e extends Nr {
+        let JT = DT;
+        const FT = class e extends Nr {
             constructor(e) {
                 super(), this.searchTerm = "", Ks.util.initPartial(e, this)
             }
@@ -42496,14 +42528,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        _T.runtime = Ks, _T.typeName = "aiserver.v1.WebSearchParams", _T.fields = Ks.util.newFieldList(() => [{
+        FT.runtime = Ks, FT.typeName = "aiserver.v1.WebSearchParams", FT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "search_term",
             kind: "scalar",
             T: 9
         }]);
-        let DT = _T;
-        const JT = class e extends Nr {
+        let bT = FT;
+        const LT = class e extends Nr {
             constructor(e) {
                 super(), this.references = [], Ks.util.initPartial(e, this)
             }
@@ -42520,11 +42552,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        JT.runtime = Ks, JT.typeName = "aiserver.v1.WebSearchResult", JT.fields = Ks.util.newFieldList(() => [{
+        LT.runtime = Ks, LT.typeName = "aiserver.v1.WebSearchResult", LT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "references",
             kind: "message",
-            T: LT,
+            T: OT,
             repeated: !0
         }, {
             no: 2,
@@ -42539,8 +42571,8 @@
             T: 8,
             opt: !0
         }]);
-        let FT = JT;
-        const bT = class e extends Nr {
+        let vT = LT;
+        const UT = class e extends Nr {
             constructor(e) {
                 super(), this.title = "", this.url = "", this.chunk = "", Ks.util.initPartial(e, this)
             }
@@ -42557,7 +42589,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        bT.runtime = Ks, bT.typeName = "aiserver.v1.WebSearchResult.WebReference", bT.fields = Ks.util.newFieldList(() => [{
+        UT.runtime = Ks, UT.typeName = "aiserver.v1.WebSearchResult.WebReference", UT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "title",
             kind: "scalar",
@@ -42573,8 +42605,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let LT = bT;
-        const vT = class e extends Nr {
+        let OT = UT;
+        const MT = class e extends Nr {
             constructor(e) {
                 super(), this.searchTerm = "", Ks.util.initPartial(e, this)
             }
@@ -42591,14 +42623,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        vT.runtime = Ks, vT.typeName = "aiserver.v1.WebSearchStream", vT.fields = Ks.util.newFieldList(() => [{
+        MT.runtime = Ks, MT.typeName = "aiserver.v1.WebSearchStream", MT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "search_term",
             kind: "scalar",
             T: 9
         }]);
-        let UT = vT;
-        const OT = class e extends Nr {
+        let PT = MT;
+        const qT = class e extends Nr {
             constructor(e) {
                 super(), this.tools = [], Ks.util.initPartial(e, this)
             }
@@ -42615,11 +42647,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        OT.runtime = Ks, OT.typeName = "aiserver.v1.MCPParams", OT.fields = Ks.util.newFieldList(() => [{
+        qT.runtime = Ks, qT.typeName = "aiserver.v1.MCPParams", qT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tools",
             kind: "message",
-            T: qT,
+            T: YT,
             repeated: !0
         }, {
             no: 2,
@@ -42628,8 +42660,8 @@
             T: 3,
             opt: !0
         }]);
-        let MT = OT;
-        const PT = class e extends Nr {
+        let xT = qT;
+        const GT = class e extends Nr {
             constructor(e) {
                 super(), this.name = "", this.description = "", this.parameters = "", this.serverName = "", Ks.util.initPartial(e, this)
             }
@@ -42646,7 +42678,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        PT.runtime = Ks, PT.typeName = "aiserver.v1.MCPParams.Tool", PT.fields = Ks.util.newFieldList(() => [{
+        GT.runtime = Ks, GT.typeName = "aiserver.v1.MCPParams.Tool", GT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "name",
             kind: "scalar",
@@ -42667,8 +42699,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let qT = PT;
-        const xT = class e extends Nr {
+        let YT = GT;
+        const HT = class e extends Nr {
             constructor(e) {
                 super(), this.selectedTool = "", this.result = "", Ks.util.initPartial(e, this)
             }
@@ -42685,7 +42717,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        xT.runtime = Ks, xT.typeName = "aiserver.v1.MCPResult", xT.fields = Ks.util.newFieldList(() => [{
+        HT.runtime = Ks, HT.typeName = "aiserver.v1.MCPResult", HT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "selected_tool",
             kind: "scalar",
@@ -42696,8 +42728,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let GT = xT;
-        const YT = class e extends Nr {
+        let VT = HT;
+        const WT = class e extends Nr {
             constructor(e) {
                 super(), this.tools = [], Ks.util.initPartial(e, this)
             }
@@ -42714,15 +42746,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        YT.runtime = Ks, YT.typeName = "aiserver.v1.MCPStream", YT.fields = Ks.util.newFieldList(() => [{
+        WT.runtime = Ks, WT.typeName = "aiserver.v1.MCPStream", WT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tools",
             kind: "message",
-            T: qT,
+            T: YT,
             repeated: !0
         }]);
-        let HT = YT;
-        const VT = class e extends Nr {
+        let XT = WT;
+        const jT = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -42739,15 +42771,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        VT.runtime = Ks, VT.typeName = "aiserver.v1.ListMcpResourcesParams", VT.fields = Ks.util.newFieldList(() => [{
+        jT.runtime = Ks, jT.typeName = "aiserver.v1.ListMcpResourcesParams", jT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "server",
             kind: "scalar",
             T: 9,
             opt: !0
         }]);
-        let WT = VT;
-        const XT = class e extends Nr {
+        let KT = jT;
+        const ZT = class e extends Nr {
             constructor(e) {
                 super(), this.resources = [], Ks.util.initPartial(e, this)
             }
@@ -42764,15 +42796,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        XT.runtime = Ks, XT.typeName = "aiserver.v1.ListMcpResourcesResult", XT.fields = Ks.util.newFieldList(() => [{
+        ZT.runtime = Ks, ZT.typeName = "aiserver.v1.ListMcpResourcesResult", ZT.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "resources",
             kind: "message",
-            T: ZT,
+            T: eS,
             repeated: !0
         }]);
-        let jT = XT;
-        const KT = class e extends Nr {
+        let zT = ZT;
+        const $T = class e extends Nr {
             constructor(e) {
                 super(), this.uri = "", this.server = "", this.annotations = {}, Ks.util.initPartial(e, this)
             }
@@ -42789,7 +42821,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        KT.runtime = Ks, KT.typeName = "aiserver.v1.ListMcpResourcesResult.MCPResource", KT.fields = Ks.util.newFieldList(() => [{
+        $T.runtime = Ks, $T.typeName = "aiserver.v1.ListMcpResourcesResult.MCPResource", $T.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "uri",
             kind: "scalar",
@@ -42827,8 +42859,8 @@
                 T: 9
             }
         }]);
-        let ZT = KT;
-        const zT = class e extends Nr {
+        let eS = $T;
+        const tS = class e extends Nr {
             constructor(e) {
                 super(), this.server = "", this.uri = "", Ks.util.initPartial(e, this)
             }
@@ -42845,7 +42877,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        zT.runtime = Ks, zT.typeName = "aiserver.v1.ReadMcpResourceParams", zT.fields = Ks.util.newFieldList(() => [{
+        tS.runtime = Ks, tS.typeName = "aiserver.v1.ReadMcpResourceParams", tS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "server",
             kind: "scalar",
@@ -42862,8 +42894,8 @@
             T: 9,
             opt: !0
         }]);
-        let $T = zT;
-        const eS = class e extends Nr {
+        let nS = tS;
+        const rS = class e extends Nr {
             constructor(e) {
                 super(), this.uri = "", this.content = {
                     case: void 0
@@ -42882,7 +42914,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        eS.runtime = Ks, eS.typeName = "aiserver.v1.ReadMcpResourceResult", eS.fields = Ks.util.newFieldList(() => [{
+        rS.runtime = Ks, rS.typeName = "aiserver.v1.ReadMcpResourceResult", rS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "uri",
             kind: "scalar",
@@ -42927,8 +42959,8 @@
                 T: 9
             }
         }]);
-        let tS = eS;
-        const nS = class e extends Nr {
+        let sS = rS;
+        const iS = class e extends Nr {
             constructor(e) {
                 super(), this.server = "", this.toolName = "", Ks.util.initPartial(e, this)
             }
@@ -42945,7 +42977,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        nS.runtime = Ks, nS.typeName = "aiserver.v1.CallMcpToolParams", nS.fields = Ks.util.newFieldList(() => [{
+        iS.runtime = Ks, iS.typeName = "aiserver.v1.CallMcpToolParams", iS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "server",
             kind: "scalar",
@@ -42961,8 +42993,8 @@
             kind: "message",
             T: LA
         }]);
-        let rS = nS;
-        const sS = class e extends Nr {
+        let AS = iS;
+        const oS = class e extends Nr {
             constructor(e) {
                 super(), this.server = "", this.toolName = "", Ks.util.initPartial(e, this)
             }
@@ -42979,7 +43011,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        sS.runtime = Ks, sS.typeName = "aiserver.v1.CallMcpToolResult", sS.fields = Ks.util.newFieldList(() => [{
+        oS.runtime = Ks, oS.typeName = "aiserver.v1.CallMcpToolResult", oS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "server",
             kind: "scalar",
@@ -42995,8 +43027,8 @@
             kind: "message",
             T: LA
         }]);
-        let iS = sS;
-        const AS = class e extends Nr {
+        let aS = oS;
+        const lS = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -43013,7 +43045,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        AS.runtime = Ks, AS.typeName = "aiserver.v1.GetMcpToolsParams", AS.fields = Ks.util.newFieldList(() => [{
+        lS.runtime = Ks, lS.typeName = "aiserver.v1.GetMcpToolsParams", lS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "server",
             kind: "scalar",
@@ -43032,8 +43064,8 @@
             T: 9,
             opt: !0
         }]);
-        let oS = AS;
-        const aS = class e extends Nr {
+        let cS = lS;
+        const uS = class e extends Nr {
             constructor(e) {
                 super(), this.content = "", Ks.util.initPartial(e, this)
             }
@@ -43050,7 +43082,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        aS.runtime = Ks, aS.typeName = "aiserver.v1.GetMcpToolsResult", aS.fields = Ks.util.newFieldList(() => [{
+        uS.runtime = Ks, uS.typeName = "aiserver.v1.GetMcpToolsResult", uS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "content",
             kind: "scalar",
@@ -43062,8 +43094,8 @@
             T: 9,
             opt: !0
         }]);
-        let lS = aS;
-        const cS = class e extends Nr {
+        let mS = uS;
+        const dS = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", Ks.util.initPartial(e, this)
             }
@@ -43080,14 +43112,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        cS.runtime = Ks, cS.typeName = "aiserver.v1.SearchSymbolsParams", cS.fields = Ks.util.newFieldList(() => [{
+        dS.runtime = Ks, dS.typeName = "aiserver.v1.SearchSymbolsParams", dS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
             T: 9
         }]);
-        let uS = cS;
-        const mS = class e extends Nr {
+        let gS = dS;
+        const ES = class e extends Nr {
             constructor(e) {
                 super(), this.matches = [], Ks.util.initPartial(e, this)
             }
@@ -43104,11 +43136,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        mS.runtime = Ks, mS.typeName = "aiserver.v1.SearchSymbolsResult", mS.fields = Ks.util.newFieldList(() => [{
+        ES.runtime = Ks, ES.typeName = "aiserver.v1.SearchSymbolsResult", ES.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "matches",
             kind: "message",
-            T: ES,
+            T: IS,
             repeated: !0
         }, {
             no: 2,
@@ -43117,8 +43149,8 @@
             T: 8,
             opt: !0
         }]);
-        let dS = mS;
-        const gS = class e extends Nr {
+        let fS = ES;
+        const hS = class e extends Nr {
             constructor(e) {
                 super(), this.name = "", this.uri = "", this.secondaryText = "", this.labelMatches = [], this.descriptionMatches = [], this.score = 0, Ks.util.initPartial(e, this)
             }
@@ -43135,7 +43167,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        gS.runtime = Ks, gS.typeName = "aiserver.v1.SearchSymbolsResult.SymbolMatch", gS.fields = Ks.util.newFieldList(() => [{
+        hS.runtime = Ks, hS.typeName = "aiserver.v1.SearchSymbolsResult.SymbolMatch", hS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "name",
             kind: "scalar",
@@ -43149,7 +43181,7 @@
             no: 3,
             name: "range",
             kind: "message",
-            T: Dy
+            T: by
         }, {
             no: 4,
             name: "secondary_text",
@@ -43159,13 +43191,13 @@
             no: 5,
             name: "label_matches",
             kind: "message",
-            T: Fy,
+            T: vy,
             repeated: !0
         }, {
             no: 6,
             name: "description_matches",
             kind: "message",
-            T: Fy,
+            T: vy,
             repeated: !0
         }, {
             no: 7,
@@ -43173,8 +43205,8 @@
             kind: "scalar",
             T: 1
         }]);
-        let ES = gS;
-        const fS = class e extends Nr {
+        let IS = hS;
+        const BS = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", Ks.util.initPartial(e, this)
             }
@@ -43191,14 +43223,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        fS.runtime = Ks, fS.typeName = "aiserver.v1.SearchSymbolsStream", fS.fields = Ks.util.newFieldList(() => [{
+        BS.runtime = Ks, BS.typeName = "aiserver.v1.SearchSymbolsStream", BS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
             T: 9
         }]);
-        let hS = fS;
-        const IS = class e extends Nr {
+        let CS = BS;
+        const QS = class e extends Nr {
             constructor(e) {
                 super(), this.proposedFollowup = "", this.bcId = "", Ks.util.initPartial(e, this)
             }
@@ -43215,7 +43247,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        IS.runtime = Ks, IS.typeName = "aiserver.v1.BackgroundComposerFollowupParams", IS.fields = Ks.util.newFieldList(() => [{
+        QS.runtime = Ks, QS.typeName = "aiserver.v1.BackgroundComposerFollowupParams", QS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "proposed_followup",
             kind: "scalar",
@@ -43226,8 +43258,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let BS = IS;
-        const CS = class e extends Nr {
+        let pS = QS;
+        const yS = class e extends Nr {
             constructor(e) {
                 super(), this.proposedFollowup = "", this.isSent = !1, Ks.util.initPartial(e, this)
             }
@@ -43244,7 +43276,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        CS.runtime = Ks, CS.typeName = "aiserver.v1.BackgroundComposerFollowupResult", CS.fields = Ks.util.newFieldList(() => [{
+        yS.runtime = Ks, yS.typeName = "aiserver.v1.BackgroundComposerFollowupResult", yS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "proposed_followup",
             kind: "scalar",
@@ -43255,8 +43287,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let QS = CS;
-        const pS = class e extends Nr {
+        let wS = yS;
+        const TS = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -43273,9 +43305,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        pS.runtime = Ks, pS.typeName = "aiserver.v1.BackgroundComposerFollowupStream", pS.fields = Ks.util.newFieldList(() => []);
-        let yS = pS;
-        const wS = class e extends Nr {
+        TS.runtime = Ks, TS.typeName = "aiserver.v1.BackgroundComposerFollowupStream", TS.fields = Ks.util.newFieldList(() => []);
+        let SS = TS;
+        const kS = class e extends Nr {
             constructor(e) {
                 super(), this.targetFiles = [], this.focusQuery = "", Ks.util.initPartial(e, this)
             }
@@ -43292,7 +43324,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        wS.runtime = Ks, wS.typeName = "aiserver.v1.SummarizeCodeParams", wS.fields = Ks.util.newFieldList(() => [{
+        kS.runtime = Ks, kS.typeName = "aiserver.v1.SummarizeCodeParams", kS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "target_files",
             kind: "scalar",
@@ -43304,7 +43336,7 @@
             kind: "scalar",
             T: 9
         }]);
-        const TS = class e extends Nr {
+        const RS = class e extends Nr {
             constructor(e) {
                 super(), this.summary = "", Ks.util.initPartial(e, this)
             }
@@ -43321,13 +43353,13 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        TS.runtime = Ks, TS.typeName = "aiserver.v1.SummarizeCodeResult", TS.fields = Ks.util.newFieldList(() => [{
+        RS.runtime = Ks, RS.typeName = "aiserver.v1.SummarizeCodeResult", RS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "summary",
             kind: "scalar",
             T: 9
         }]);
-        const SS = class e extends Nr {
+        const NS = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -43344,8 +43376,8 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        SS.runtime = Ks, SS.typeName = "aiserver.v1.SummarizeCodeStream", SS.fields = Ks.util.newFieldList(() => []);
-        const kS = class e extends Nr {
+        NS.runtime = Ks, NS.typeName = "aiserver.v1.SummarizeCodeStream", NS.fields = Ks.util.newFieldList(() => []);
+        const _S = class e extends Nr {
             constructor(e) {
                 super(), this.knowledgeToStore = "", this.title = "", Ks.util.initPartial(e, this)
             }
@@ -43362,7 +43394,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kS.runtime = Ks, kS.typeName = "aiserver.v1.KnowledgeBaseParams", kS.fields = Ks.util.newFieldList(() => [{
+        _S.runtime = Ks, _S.typeName = "aiserver.v1.KnowledgeBaseParams", _S.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "knowledge_to_store",
             kind: "scalar",
@@ -43385,8 +43417,8 @@
             T: 9,
             opt: !0
         }]);
-        let RS = kS;
-        const NS = class e extends Nr {
+        let DS = _S;
+        const JS = class e extends Nr {
             constructor(e) {
                 super(), this.success = !1, this.confirmationMessage = "", this.id = "", Ks.util.initPartial(e, this)
             }
@@ -43403,7 +43435,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        NS.runtime = Ks, NS.typeName = "aiserver.v1.KnowledgeBaseResult", NS.fields = Ks.util.newFieldList(() => [{
+        JS.runtime = Ks, JS.typeName = "aiserver.v1.KnowledgeBaseResult", JS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "scalar",
@@ -43419,8 +43451,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let _S = NS;
-        const DS = class e extends Nr {
+        let FS = JS;
+        const bS = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -43437,9 +43469,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        DS.runtime = Ks, DS.typeName = "aiserver.v1.KnowledgeBaseStream", DS.fields = Ks.util.newFieldList(() => []);
-        let JS = DS;
-        const FS = class e extends Nr {
+        bS.runtime = Ks, bS.typeName = "aiserver.v1.KnowledgeBaseStream", bS.fields = Ks.util.newFieldList(() => []);
+        let LS = bS;
+        const vS = class e extends Nr {
             constructor(e) {
                 super(), this.pullNumberOrCommitHash = "", Ks.util.initPartial(e, this)
             }
@@ -43456,7 +43488,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        FS.runtime = Ks, FS.typeName = "aiserver.v1.FetchPullRequestParams", FS.fields = Ks.util.newFieldList(() => [{
+        vS.runtime = Ks, vS.typeName = "aiserver.v1.FetchPullRequestParams", vS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "pull_number_or_commit_hash",
             kind: "scalar",
@@ -43474,8 +43506,8 @@
             T: 8,
             opt: !0
         }]);
-        let bS = FS;
-        const LS = class e extends Nr {
+        let US = vS;
+        const OS = class e extends Nr {
             constructor(e) {
                 super(), this.content = "", this.prNumber = 0, this.title = "", this.body = "", this.author = "", this.date = "", this.diff = "", this.comments = [], this.labels = [], this.assignees = [], Ks.util.initPartial(e, this)
             }
@@ -43492,7 +43524,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        LS.runtime = Ks, LS.typeName = "aiserver.v1.FetchPullRequestResult", LS.fields = Ks.util.newFieldList(() => [{
+        OS.runtime = Ks, OS.typeName = "aiserver.v1.FetchPullRequestResult", OS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "content",
             kind: "scalar",
@@ -43549,7 +43581,7 @@
             no: 11,
             name: "comments",
             kind: "message",
-            T: OS,
+            T: qS,
             repeated: !0
         }, {
             no: 12,
@@ -43582,8 +43614,8 @@
             T: 8,
             opt: !0
         }]);
-        let vS = LS;
-        const US = class e extends Nr {
+        let MS = OS;
+        const PS = class e extends Nr {
             constructor(e) {
                 super(), this.id = 0, this.body = "", this.createdAt = "", this.updatedAt = "", Ks.util.initPartial(e, this)
             }
@@ -43600,7 +43632,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        US.runtime = Ks, US.typeName = "aiserver.v1.IssueComment", US.fields = Ks.util.newFieldList(() => [{
+        PS.runtime = Ks, PS.typeName = "aiserver.v1.IssueComment", PS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "id",
             kind: "scalar",
@@ -43633,8 +43665,8 @@
             T: 9,
             opt: !0
         }]);
-        let OS = US;
-        const MS = class e extends Nr {
+        let qS = PS;
+        const xS = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -43651,9 +43683,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        MS.runtime = Ks, MS.typeName = "aiserver.v1.FetchPullRequestStream", MS.fields = Ks.util.newFieldList(() => []);
-        let PS = MS;
-        const qS = class e extends Nr {
+        xS.runtime = Ks, xS.typeName = "aiserver.v1.FetchPullRequestStream", xS.fields = Ks.util.newFieldList(() => []);
+        let GS = xS;
+        const YS = class e extends Nr {
             constructor(e) {
                 super(), this.sha = "", this.score = 0, this.changedFiles = [], Ks.util.initPartial(e, this)
             }
@@ -43670,7 +43702,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qS.runtime = Ks, qS.typeName = "aiserver.v1.PullRequestReference", qS.fields = Ks.util.newFieldList(() => [{
+        YS.runtime = Ks, YS.typeName = "aiserver.v1.PullRequestReference", YS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "sha",
             kind: "scalar",
@@ -43717,8 +43749,8 @@
             T: 9,
             repeated: !0
         }]);
-        let xS = qS;
-        const GS = class e extends Nr {
+        let HS = YS;
+        const VS = class e extends Nr {
             constructor(e) {
                 super(), this.query = "", Ks.util.initPartial(e, this)
             }
@@ -43735,14 +43767,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        GS.runtime = Ks, GS.typeName = "aiserver.v1.DeepSearchParams", GS.fields = Ks.util.newFieldList(() => [{
+        VS.runtime = Ks, VS.typeName = "aiserver.v1.DeepSearchParams", VS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "query",
             kind: "scalar",
             T: 9
         }]);
-        let YS = GS;
-        const HS = class e extends Nr {
+        let WS = VS;
+        const XS = class e extends Nr {
             constructor(e) {
                 super(), this.success = !1, this.result = "", Ks.util.initPartial(e, this)
             }
@@ -43759,7 +43791,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        HS.runtime = Ks, HS.typeName = "aiserver.v1.DeepSearchResult", HS.fields = Ks.util.newFieldList(() => [{
+        XS.runtime = Ks, XS.typeName = "aiserver.v1.DeepSearchResult", XS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "scalar",
@@ -43770,8 +43802,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let VS = HS;
-        const WS = class e extends Nr {
+        let jS = XS;
+        const KS = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -43788,9 +43820,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        WS.runtime = Ks, WS.typeName = "aiserver.v1.DeepSearchStream", WS.fields = Ks.util.newFieldList(() => []);
-        let XS = WS;
-        const jS = class e extends Nr {
+        KS.runtime = Ks, KS.typeName = "aiserver.v1.DeepSearchStream", KS.fields = Ks.util.newFieldList(() => []);
+        let ZS = KS;
+        const zS = class e extends Nr {
             constructor(e) {
                 super(), this.content = "", Ks.util.initPartial(e, this)
             }
@@ -43807,14 +43839,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        jS.runtime = Ks, jS.typeName = "aiserver.v1.CreateDiagramParams", jS.fields = Ks.util.newFieldList(() => [{
+        zS.runtime = Ks, zS.typeName = "aiserver.v1.CreateDiagramParams", zS.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "content",
             kind: "scalar",
             T: 9
         }]);
-        let KS = jS;
-        const ZS = class e extends Nr {
+        let $S = zS;
+        const ek = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -43831,15 +43863,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ZS.runtime = Ks, ZS.typeName = "aiserver.v1.CreateDiagramResult", ZS.fields = Ks.util.newFieldList(() => [{
+        ek.runtime = Ks, ek.typeName = "aiserver.v1.CreateDiagramResult", ek.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error",
             kind: "scalar",
             T: 9,
             opt: !0
         }]);
-        let zS = ZS;
-        const $S = class e extends Nr {
+        let tk = ek;
+        const nk = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -43856,9 +43888,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $S.runtime = Ks, $S.typeName = "aiserver.v1.CreateDiagramStream", $S.fields = Ks.util.newFieldList(() => []);
-        let ek = $S;
-        const tk = class e extends Nr {
+        nk.runtime = Ks, nk.typeName = "aiserver.v1.CreateDiagramStream", nk.fields = Ks.util.newFieldList(() => []);
+        let rk = nk;
+        const sk = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -43875,9 +43907,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        tk.runtime = Ks, tk.typeName = "aiserver.v1.FixLintsParams", tk.fields = Ks.util.newFieldList(() => []);
-        let nk = tk;
-        const rk = class e extends Nr {
+        sk.runtime = Ks, sk.typeName = "aiserver.v1.FixLintsParams", sk.fields = Ks.util.newFieldList(() => []);
+        let ik = sk;
+        const Ak = class e extends Nr {
             constructor(e) {
                 super(), this.fileResults = [], Ks.util.initPartial(e, this)
             }
@@ -43894,15 +43926,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        rk.runtime = Ks, rk.typeName = "aiserver.v1.FixLintsResult", rk.fields = Ks.util.newFieldList(() => [{
+        Ak.runtime = Ks, Ak.typeName = "aiserver.v1.FixLintsResult", Ak.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_results",
             kind: "message",
-            T: Ak,
+            T: lk,
             repeated: !0
         }]);
-        let sk = rk;
-        const ik = class e extends Nr {
+        let ok = Ak;
+        const ak = class e extends Nr {
             constructor(e) {
                 super(), this.filePath = "", this.isApplied = !1, this.applyFailed = !1, this.linterErrors = [], Ks.util.initPartial(e, this)
             }
@@ -43919,7 +43951,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ik.runtime = Ks, ik.typeName = "aiserver.v1.FixLintsResult.FileResult", ik.fields = Ks.util.newFieldList(() => [{
+        ak.runtime = Ks, ak.typeName = "aiserver.v1.FixLintsResult.FileResult", ak.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file_path",
             kind: "scalar",
@@ -43928,7 +43960,7 @@
             no: 2,
             name: "diff",
             kind: "message",
-            T: MC
+            T: xC
         }, {
             no: 3,
             name: "is_applied",
@@ -43952,8 +43984,8 @@
             T: gl,
             repeated: !0
         }]);
-        let Ak = ik;
-        const ok = class e extends Nr {
+        let lk = ak;
+        const ck = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -43970,9 +44002,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ok.runtime = Ks, ok.typeName = "aiserver.v1.FixLintsStream", ok.fields = Ks.util.newFieldList(() => []);
-        let ak = ok;
-        const lk = class e extends Nr {
+        ck.runtime = Ks, ck.typeName = "aiserver.v1.FixLintsStream", ck.fields = Ks.util.newFieldList(() => []);
+        let uk = ck;
+        const mk = class e extends Nr {
             constructor(e) {
                 super(), this.path = "", this.paths = [], Ks.util.initPartial(e, this)
             }
@@ -43989,7 +44021,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        lk.runtime = Ks, lk.typeName = "aiserver.v1.ReadLintsParams", lk.fields = Ks.util.newFieldList(() => [{
+        mk.runtime = Ks, mk.typeName = "aiserver.v1.ReadLintsParams", mk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "path",
             kind: "scalar",
@@ -44001,8 +44033,8 @@
             T: 9,
             repeated: !0
         }]);
-        let ck = lk;
-        const uk = class e extends Nr {
+        let dk = mk;
+        const gk = class e extends Nr {
             constructor(e) {
                 super(), this.path = "", this.linterErrors = [], this.linterErrorsByFile = [], Ks.util.initPartial(e, this)
             }
@@ -44019,7 +44051,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        uk.runtime = Ks, uk.typeName = "aiserver.v1.ReadLintsResult", uk.fields = Ks.util.newFieldList(() => [{
+        gk.runtime = Ks, gk.typeName = "aiserver.v1.ReadLintsResult", gk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "path",
             kind: "scalar",
@@ -44037,8 +44069,8 @@
             T: fl,
             repeated: !0
         }]);
-        let mk = uk;
-        const dk = class e extends Nr {
+        let Ek = gk;
+        const fk = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -44055,9 +44087,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        dk.runtime = Ks, dk.typeName = "aiserver.v1.ReadLintsStream", dk.fields = Ks.util.newFieldList(() => []);
-        let gk = dk;
-        const Ek = class e extends Nr {
+        fk.runtime = Ks, fk.typeName = "aiserver.v1.ReadLintsStream", fk.fields = Ks.util.newFieldList(() => []);
+        let hk = fk;
+        const Ik = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -44074,9 +44106,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Ek.runtime = Ks, Ek.typeName = "aiserver.v1.GotodefStream", Ek.fields = Ks.util.newFieldList(() => []);
-        let fk = Ek;
-        const hk = class e extends Nr {
+        Ik.runtime = Ks, Ik.typeName = "aiserver.v1.GotodefStream", Ik.fields = Ks.util.newFieldList(() => []);
+        let Bk = Ik;
+        const Ck = class e extends Nr {
             constructor(e) {
                 super(), this.taskDescription = "", this.taskTitle = "", this.allowedWriteDirectories = [], Ks.util.initPartial(e, this)
             }
@@ -44093,7 +44125,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        hk.runtime = Ks, hk.typeName = "aiserver.v1.TaskParams", hk.fields = Ks.util.newFieldList(() => [{
+        Ck.runtime = Ks, Ck.typeName = "aiserver.v1.TaskParams", Ck.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "task_description",
             kind: "scalar",
@@ -44134,8 +44166,8 @@
             T: 8,
             opt: !0
         }]);
-        let Ik = hk;
-        const Bk = class e extends Nr {
+        let Qk = Ck;
+        const pk = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -44154,21 +44186,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Bk.runtime = Ks, Bk.typeName = "aiserver.v1.TaskResult", Bk.fields = Ks.util.newFieldList(() => [{
+        pk.runtime = Ks, pk.typeName = "aiserver.v1.TaskResult", pk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "completed_task_result",
             kind: "message",
-            T: pk,
+            T: Tk,
             oneof: "result"
         }, {
             no: 2,
             name: "async_task_result",
             kind: "message",
-            T: wk,
+            T: kk,
             oneof: "result"
         }]);
-        let Ck = Bk;
-        const Qk = class e extends Nr {
+        let yk = pk;
+        const wk = class e extends Nr {
             constructor(e) {
                 super(), this.summary = "", this.fileResults = [], this.userAborted = !1, this.subagentErrored = !1, Ks.util.initPartial(e, this)
             }
@@ -44185,7 +44217,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Qk.runtime = Ks, Qk.typeName = "aiserver.v1.TaskResult.CompletedTaskResult", Qk.fields = Ks.util.newFieldList(() => [{
+        wk.runtime = Ks, wk.typeName = "aiserver.v1.TaskResult.CompletedTaskResult", wk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "summary",
             kind: "scalar",
@@ -44194,7 +44226,7 @@
             no: 2,
             name: "file_results",
             kind: "message",
-            T: Ak,
+            T: lk,
             repeated: !0
         }, {
             no: 3,
@@ -44207,8 +44239,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let pk = Qk;
-        const yk = class e extends Nr {
+        let Tk = wk;
+        const Sk = class e extends Nr {
             constructor(e) {
                 super(), this.taskId = "", this.userAborted = !1, this.subagentErrored = !1, Ks.util.initPartial(e, this)
             }
@@ -44225,7 +44257,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yk.runtime = Ks, yk.typeName = "aiserver.v1.TaskResult.AsyncTaskResult", yk.fields = Ks.util.newFieldList(() => [{
+        Sk.runtime = Ks, Sk.typeName = "aiserver.v1.TaskResult.AsyncTaskResult", Sk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "task_id",
             kind: "scalar",
@@ -44241,8 +44273,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let wk = yk;
-        const Tk = class e extends Nr {
+        let kk = Sk;
+        const Rk = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -44259,11 +44291,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Tk.runtime = Ks, Tk.typeName = "aiserver.v1.TaskStream", Tk.fields = Ks.util.newFieldList(() => []);
-        let Sk = Tk;
-        const kk = class e extends Nr {
+        Rk.runtime = Ks, Rk.typeName = "aiserver.v1.TaskStream", Rk.fields = Ks.util.newFieldList(() => []);
+        let Nk = Rk;
+        const _k = class e extends Nr {
             constructor(e) {
-                super(), this.description = "", this.prompt = "", this.subagentType = "", this.name = "", this.mode = rI.UNSPECIFIED, Ks.util.initPartial(e, this)
+                super(), this.description = "", this.prompt = "", this.subagentType = "", this.name = "", this.mode = sI.UNSPECIFIED, Ks.util.initPartial(e, this)
             }
             static fromBinary(t, n) {
                 return (new e).fromBinary(t, n)
@@ -44278,7 +44310,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kk.runtime = Ks, kk.typeName = "aiserver.v1.TaskV2Params", kk.fields = Ks.util.newFieldList(() => [{
+        _k.runtime = Ks, _k.typeName = "aiserver.v1.TaskV2Params", _k.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "description",
             kind: "scalar",
@@ -44308,10 +44340,10 @@
             no: 6,
             name: "mode",
             kind: "enum",
-            T: Ks.getEnumType(rI)
+            T: Ks.getEnumType(sI)
         }]);
-        let Rk = kk;
-        const Nk = class e extends Nr {
+        let Dk = _k;
+        const Jk = class e extends Nr {
             constructor(e) {
                 super(), this.isBackground = !1, Ks.util.initPartial(e, this)
             }
@@ -44328,7 +44360,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Nk.runtime = Ks, Nk.typeName = "aiserver.v1.TaskV2Result", Nk.fields = Ks.util.newFieldList(() => [{
+        Jk.runtime = Ks, Jk.typeName = "aiserver.v1.TaskV2Result", Jk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "agent_id",
             kind: "scalar",
@@ -44340,8 +44372,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let _k = Nk;
-        const Dk = class e extends Nr {
+        let Fk = Jk;
+        const bk = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -44358,9 +44390,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Dk.runtime = Ks, Dk.typeName = "aiserver.v1.TaskV2Stream", Dk.fields = Ks.util.newFieldList(() => []);
-        let Jk = Dk;
-        const Fk = class e extends Nr {
+        bk.runtime = Ks, bk.typeName = "aiserver.v1.TaskV2Stream", bk.fields = Ks.util.newFieldList(() => []);
+        let Lk = bk;
+        const vk = class e extends Nr {
             constructor(e) {
                 super(), this.pattern = "", this.ignoreGlobs = [], Ks.util.initPartial(e, this)
             }
@@ -44377,7 +44409,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Fk.runtime = Ks, Fk.typeName = "aiserver.v1.RipgrepRawSearchParams", Fk.fields = Ks.util.newFieldList(() => [{
+        vk.runtime = Ks, vk.typeName = "aiserver.v1.RipgrepRawSearchParams", vk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "pattern",
             kind: "scalar",
@@ -44467,8 +44499,8 @@
             T: 5,
             opt: !0
         }]);
-        let bk = Fk;
-        const Lk = class e extends Nr {
+        let Uk = vk;
+        const Ok = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -44487,21 +44519,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Lk.runtime = Ks, Lk.typeName = "aiserver.v1.RipgrepRawSearchResult", Lk.fields = Ks.util.newFieldList(() => [{
+        Ok.runtime = Ks, Ok.typeName = "aiserver.v1.RipgrepRawSearchResult", Ok.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: Pk,
+            T: Gk,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: Ok,
+            T: qk,
             oneof: "result"
         }]);
-        let vk = Lk;
-        const Uk = class e extends Nr {
+        let Mk = Ok;
+        const Pk = class e extends Nr {
             constructor(e) {
                 super(), this.error = "", Ks.util.initPartial(e, this)
             }
@@ -44518,14 +44550,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Uk.runtime = Ks, Uk.typeName = "aiserver.v1.RipgrepRawSearchError", Uk.fields = Ks.util.newFieldList(() => [{
+        Pk.runtime = Ks, Pk.typeName = "aiserver.v1.RipgrepRawSearchError", Pk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "error",
             kind: "scalar",
             T: 9
         }]);
-        let Ok = Uk;
-        const Mk = class e extends Nr {
+        let qk = Pk;
+        const xk = class e extends Nr {
             constructor(e) {
                 super(), this.pattern = "", this.path = "", this.outputMode = "", this.workspaceResults = {}, Ks.util.initPartial(e, this)
             }
@@ -44542,7 +44574,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Mk.runtime = Ks, Mk.typeName = "aiserver.v1.RipgrepRawSearchSuccess", Mk.fields = Ks.util.newFieldList(() => [{
+        xk.runtime = Ks, xk.typeName = "aiserver.v1.RipgrepRawSearchSuccess", xk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "pattern",
             kind: "scalar",
@@ -44564,17 +44596,17 @@
             K: 9,
             V: {
                 kind: "message",
-                T: xk
+                T: Hk
             }
         }, {
             no: 5,
             name: "active_editor_result",
             kind: "message",
-            T: xk,
+            T: Hk,
             opt: !0
         }]);
-        let Pk = Mk;
-        const qk = class e extends Nr {
+        let Gk = xk;
+        const Yk = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -44593,27 +44625,27 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qk.runtime = Ks, qk.typeName = "aiserver.v1.RipgrepRawSearchUnionResult", qk.fields = Ks.util.newFieldList(() => [{
+        Yk.runtime = Ks, Yk.typeName = "aiserver.v1.RipgrepRawSearchUnionResult", Yk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "count",
             kind: "message",
-            T: Yk,
+            T: Wk,
             oneof: "result"
         }, {
             no: 2,
             name: "files",
             kind: "message",
-            T: Xk,
+            T: Zk,
             oneof: "result"
         }, {
             no: 3,
             name: "content",
             kind: "message",
-            T: zk,
+            T: tR,
             oneof: "result"
         }]);
-        let xk = qk;
-        const Gk = class e extends Nr {
+        let Hk = Yk;
+        const Vk = class e extends Nr {
             constructor(e) {
                 super(), this.counts = [], this.totalFiles = 0, this.totalMatches = 0, this.clientTruncated = !1, this.ripgrepTruncated = !1, Ks.util.initPartial(e, this)
             }
@@ -44630,11 +44662,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Gk.runtime = Ks, Gk.typeName = "aiserver.v1.RipgrepRawSearchCountResult", Gk.fields = Ks.util.newFieldList(() => [{
+        Vk.runtime = Ks, Vk.typeName = "aiserver.v1.RipgrepRawSearchCountResult", Vk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "counts",
             kind: "message",
-            T: Vk,
+            T: jk,
             repeated: !0
         }, {
             no: 2,
@@ -44669,8 +44701,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Yk = Gk;
-        const Hk = class e extends Nr {
+        let Wk = Vk;
+        const Xk = class e extends Nr {
             constructor(e) {
                 super(), this.file = "", this.count = 0, Ks.util.initPartial(e, this)
             }
@@ -44687,7 +44719,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Hk.runtime = Ks, Hk.typeName = "aiserver.v1.RipgrepRawSearchFileCount", Hk.fields = Ks.util.newFieldList(() => [{
+        Xk.runtime = Ks, Xk.typeName = "aiserver.v1.RipgrepRawSearchFileCount", Xk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file",
             kind: "scalar",
@@ -44716,8 +44748,8 @@
             T: 9,
             opt: !0
         }]);
-        let Vk = Hk;
-        const Wk = class e extends Nr {
+        let jk = Xk;
+        const Kk = class e extends Nr {
             constructor(e) {
                 super(), this.files = [], this.totalFiles = 0, this.clientTruncated = !1, this.ripgrepTruncated = !1, this.filesWithMeta = [], Ks.util.initPartial(e, this)
             }
@@ -44734,7 +44766,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Wk.runtime = Ks, Wk.typeName = "aiserver.v1.RipgrepRawSearchFilesResult", Wk.fields = Ks.util.newFieldList(() => [{
+        Kk.runtime = Ks, Kk.typeName = "aiserver.v1.RipgrepRawSearchFilesResult", Kk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "files",
             kind: "scalar",
@@ -44759,7 +44791,7 @@
             no: 5,
             name: "files_with_meta",
             kind: "message",
-            T: Kk,
+            T: $k,
             repeated: !0
         }, {
             no: 6,
@@ -44774,8 +44806,8 @@
             T: 5,
             opt: !0
         }]);
-        let Xk = Wk;
-        const jk = class e extends Nr {
+        let Zk = Kk;
+        const zk = class e extends Nr {
             constructor(e) {
                 super(), this.file = "", this.isDirty = !1, this.isOutOfWorkspace = !1, Ks.util.initPartial(e, this)
             }
@@ -44792,7 +44824,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        jk.runtime = Ks, jk.typeName = "aiserver.v1.RipgrepRawSearchFilesResult.FileEntry", jk.fields = Ks.util.newFieldList(() => [{
+        zk.runtime = Ks, zk.typeName = "aiserver.v1.RipgrepRawSearchFilesResult.FileEntry", zk.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file",
             kind: "scalar",
@@ -44814,8 +44846,8 @@
             T: 9,
             opt: !0
         }]);
-        let Kk = jk;
-        const Zk = class e extends Nr {
+        let $k = zk;
+        const eR = class e extends Nr {
             constructor(e) {
                 super(), this.matches = [], this.totalLines = 0, this.totalMatchedLines = 0, this.clientTruncated = !1, this.ripgrepTruncated = !1, Ks.util.initPartial(e, this)
             }
@@ -44832,11 +44864,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Zk.runtime = Ks, Zk.typeName = "aiserver.v1.RipgrepRawSearchContentResult", Zk.fields = Ks.util.newFieldList(() => [{
+        eR.runtime = Ks, eR.typeName = "aiserver.v1.RipgrepRawSearchContentResult", eR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "matches",
             kind: "message",
-            T: eR,
+            T: rR,
             repeated: !0
         }, {
             no: 2,
@@ -44871,8 +44903,8 @@
             T: 5,
             opt: !0
         }]);
-        let zk = Zk;
-        const $k = class e extends Nr {
+        let tR = eR;
+        const nR = class e extends Nr {
             constructor(e) {
                 super(), this.file = "", this.matches = [], Ks.util.initPartial(e, this)
             }
@@ -44889,7 +44921,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $k.runtime = Ks, $k.typeName = "aiserver.v1.RipgrepRawSearchFileMatch", $k.fields = Ks.util.newFieldList(() => [{
+        nR.runtime = Ks, nR.typeName = "aiserver.v1.RipgrepRawSearchFileMatch", nR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "file",
             kind: "scalar",
@@ -44898,7 +44930,7 @@
             no: 2,
             name: "matches",
             kind: "message",
-            T: nR,
+            T: iR,
             repeated: !0
         }, {
             no: 3,
@@ -44919,8 +44951,8 @@
             T: 9,
             opt: !0
         }]);
-        let eR = $k;
-        const tR = class e extends Nr {
+        let rR = nR;
+        const sR = class e extends Nr {
             constructor(e) {
                 super(), this.lineNumber = 0, this.content = "", this.contentTruncated = !1, this.isContextLine = !1, Ks.util.initPartial(e, this)
             }
@@ -44937,7 +44969,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        tR.runtime = Ks, tR.typeName = "aiserver.v1.RipgrepRawSearchContentMatch", tR.fields = Ks.util.newFieldList(() => [{
+        sR.runtime = Ks, sR.typeName = "aiserver.v1.RipgrepRawSearchContentMatch", sR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "line_number",
             kind: "scalar",
@@ -44958,8 +44990,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let nR = tR;
-        const rR = class e extends Nr {
+        let iR = sR;
+        const AR = class e extends Nr {
             constructor(e) {
                 super(), this.pattern = "", Ks.util.initPartial(e, this)
             }
@@ -44976,14 +45008,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        rR.runtime = Ks, rR.typeName = "aiserver.v1.RipgrepRawSearchStream", rR.fields = Ks.util.newFieldList(() => [{
+        AR.runtime = Ks, AR.typeName = "aiserver.v1.RipgrepRawSearchStream", AR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "pattern",
             kind: "scalar",
             T: 9
         }]);
-        let sR = rR;
-        const iR = class e extends Nr {
+        let oR = AR;
+        const aR = class e extends Nr {
             constructor(e) {
                 super(), this.ids = [], Ks.util.initPartial(e, this)
             }
@@ -45000,15 +45032,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        iR.runtime = Ks, iR.typeName = "aiserver.v1.AwaitTaskParams", iR.fields = Ks.util.newFieldList(() => [{
+        aR.runtime = Ks, aR.typeName = "aiserver.v1.AwaitTaskParams", aR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "ids",
             kind: "scalar",
             T: 9,
             repeated: !0
         }]);
-        let AR = iR;
-        const oR = class e extends Nr {
+        let lR = aR;
+        const cR = class e extends Nr {
             constructor(e) {
                 super(), this.taskResults = [], this.missingTaskIds = [], Ks.util.initPartial(e, this)
             }
@@ -45025,11 +45057,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        oR.runtime = Ks, oR.typeName = "aiserver.v1.AwaitTaskResult", oR.fields = Ks.util.newFieldList(() => [{
+        cR.runtime = Ks, cR.typeName = "aiserver.v1.AwaitTaskResult", cR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "task_results",
             kind: "message",
-            T: cR,
+            T: dR,
             repeated: !0
         }, {
             no: 2,
@@ -45038,8 +45070,8 @@
             T: 9,
             repeated: !0
         }]);
-        let aR = oR;
-        const lR = class e extends Nr {
+        let uR = cR;
+        const mR = class e extends Nr {
             constructor(e) {
                 super(), this.taskId = "", Ks.util.initPartial(e, this)
             }
@@ -45056,7 +45088,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        lR.runtime = Ks, lR.typeName = "aiserver.v1.AwaitTaskResult.TaskResultItem", lR.fields = Ks.util.newFieldList(() => [{
+        mR.runtime = Ks, mR.typeName = "aiserver.v1.AwaitTaskResult.TaskResultItem", mR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "task_id",
             kind: "scalar",
@@ -45065,10 +45097,10 @@
             no: 2,
             name: "result",
             kind: "message",
-            T: pk
+            T: Tk
         }]);
-        let cR = lR;
-        const uR = class e extends Nr {
+        let dR = mR;
+        const gR = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -45085,9 +45117,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        uR.runtime = Ks, uR.typeName = "aiserver.v1.AwaitTaskStream", uR.fields = Ks.util.newFieldList(() => []);
-        let mR = uR;
-        const dR = class e extends Nr {
+        gR.runtime = Ks, gR.typeName = "aiserver.v1.AwaitTaskStream", gR.fields = Ks.util.newFieldList(() => []);
+        let ER = gR;
+        const fR = class e extends Nr {
             constructor(e) {
                 super(), this.read = !1, Ks.util.initPartial(e, this)
             }
@@ -45104,14 +45136,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        dR.runtime = Ks, dR.typeName = "aiserver.v1.TodoReadParams", dR.fields = Ks.util.newFieldList(() => [{
+        fR.runtime = Ks, fR.typeName = "aiserver.v1.TodoReadParams", fR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "read",
             kind: "scalar",
             T: 8
         }]);
-        let gR = dR;
-        const ER = class e extends Nr {
+        let hR = fR;
+        const IR = class e extends Nr {
             constructor(e) {
                 super(), this.content = "", this.status = "", this.id = "", this.dependencies = [], Ks.util.initPartial(e, this)
             }
@@ -45128,7 +45160,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ER.runtime = Ks, ER.typeName = "aiserver.v1.TodoItem", ER.fields = Ks.util.newFieldList(() => [{
+        IR.runtime = Ks, IR.typeName = "aiserver.v1.TodoItem", IR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "content",
             kind: "scalar",
@@ -45150,8 +45182,8 @@
             T: 9,
             repeated: !0
         }]);
-        let fR = ER;
-        const hR = class e extends Nr {
+        let BR = IR;
+        const CR = class e extends Nr {
             constructor(e) {
                 super(), this.todos = [], Ks.util.initPartial(e, this)
             }
@@ -45168,15 +45200,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        hR.runtime = Ks, hR.typeName = "aiserver.v1.TodoReadResult", hR.fields = Ks.util.newFieldList(() => [{
+        CR.runtime = Ks, CR.typeName = "aiserver.v1.TodoReadResult", CR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "todos",
             kind: "message",
-            T: fR,
+            T: BR,
             repeated: !0
         }]);
-        let IR = hR;
-        const BR = class e extends Nr {
+        let QR = CR;
+        const pR = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -45193,9 +45225,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        BR.runtime = Ks, BR.typeName = "aiserver.v1.TodoReadStream", BR.fields = Ks.util.newFieldList(() => []);
-        let CR = BR;
-        const QR = class e extends Nr {
+        pR.runtime = Ks, pR.typeName = "aiserver.v1.TodoReadStream", pR.fields = Ks.util.newFieldList(() => []);
+        let yR = pR;
+        const wR = class e extends Nr {
             constructor(e) {
                 super(), this.todos = [], this.merge = !1, Ks.util.initPartial(e, this)
             }
@@ -45212,11 +45244,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        QR.runtime = Ks, QR.typeName = "aiserver.v1.TodoWriteParams", QR.fields = Ks.util.newFieldList(() => [{
+        wR.runtime = Ks, wR.typeName = "aiserver.v1.TodoWriteParams", wR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "todos",
             kind: "message",
-            T: fR,
+            T: BR,
             repeated: !0
         }, {
             no: 2,
@@ -45224,8 +45256,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let pR = QR;
-        const yR = class e extends Nr {
+        let TR = wR;
+        const SR = class e extends Nr {
             constructor(e) {
                 super(), this.success = !1, this.readyTaskIds = [], this.needsInProgressTodos = !1, this.finalTodos = [], this.initialTodos = [], this.wasMerge = !1, Ks.util.initPartial(e, this)
             }
@@ -45242,7 +45274,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yR.runtime = Ks, yR.typeName = "aiserver.v1.TodoWriteResult", yR.fields = Ks.util.newFieldList(() => [{
+        SR.runtime = Ks, SR.typeName = "aiserver.v1.TodoWriteResult", SR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "scalar",
@@ -45262,13 +45294,13 @@
             no: 4,
             name: "final_todos",
             kind: "message",
-            T: fR,
+            T: BR,
             repeated: !0
         }, {
             no: 5,
             name: "initial_todos",
             kind: "message",
-            T: fR,
+            T: BR,
             repeated: !0
         }, {
             no: 6,
@@ -45276,8 +45308,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let wR = yR;
-        const TR = class e extends Nr {
+        let kR = SR;
+        const RR = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -45294,9 +45326,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        TR.runtime = Ks, TR.typeName = "aiserver.v1.TodoWriteStream", TR.fields = Ks.util.newFieldList(() => []);
-        let SR = TR;
-        const kR = class e extends Nr {
+        RR.runtime = Ks, RR.typeName = "aiserver.v1.TodoWriteStream", RR.fields = Ks.util.newFieldList(() => []);
+        let NR = RR;
+        const _R = class e extends Nr {
             constructor(e) {
                 super(), this.targetDirectory = "", this.ignoreGlobs = [], Ks.util.initPartial(e, this)
             }
@@ -45313,7 +45345,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kR.runtime = Ks, kR.typeName = "aiserver.v1.ListDirV2Params", kR.fields = Ks.util.newFieldList(() => [{
+        _R.runtime = Ks, _R.typeName = "aiserver.v1.ListDirV2Params", _R.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "target_directory",
             kind: "scalar",
@@ -45331,8 +45363,8 @@
             T: 8,
             opt: !0
         }]);
-        let RR = kR;
-        const NR = class e extends Nr {
+        let DR = _R;
+        const JR = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -45349,14 +45381,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        NR.runtime = Ks, NR.typeName = "aiserver.v1.ListDirV2Result", NR.fields = Ks.util.newFieldList(() => [{
+        JR.runtime = Ks, JR.typeName = "aiserver.v1.ListDirV2Result", JR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "directory_tree_root",
             kind: "message",
-            T: JR
+            T: LR
         }]);
-        let _R = NR;
-        const DR = class e extends Nr {
+        let FR = JR;
+        const bR = class e extends Nr {
             constructor(e) {
                 super(), this.absPath = "", this.childrenDirs = [], this.childrenFiles = [], this.childrenWereProcessed = !1, this.fullSubtreeExtensionCounts = {}, this.numFiles = 0, Ks.util.initPartial(e, this)
             }
@@ -45373,7 +45405,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        DR.runtime = Ks, DR.typeName = "aiserver.v1.ListDirV2Result.DirectoryTreeNode", DR.fields = Ks.util.newFieldList(() => [{
+        bR.runtime = Ks, bR.typeName = "aiserver.v1.ListDirV2Result.DirectoryTreeNode", bR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "abs_path",
             kind: "scalar",
@@ -45382,13 +45414,13 @@
             no: 2,
             name: "children_dirs",
             kind: "message",
-            T: DR,
+            T: bR,
             repeated: !0
         }, {
             no: 3,
             name: "children_files",
             kind: "message",
-            T: bR,
+            T: UR,
             repeated: !0
         }, {
             no: 4,
@@ -45410,8 +45442,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let JR = DR;
-        const FR = class e extends Nr {
+        let LR = bR;
+        const vR = class e extends Nr {
             constructor(e) {
                 super(), this.name = "", Ks.util.initPartial(e, this)
             }
@@ -45428,7 +45460,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        FR.runtime = Ks, FR.typeName = "aiserver.v1.ListDirV2Result.DirectoryTreeNode.File", FR.fields = Ks.util.newFieldList(() => [{
+        vR.runtime = Ks, vR.typeName = "aiserver.v1.ListDirV2Result.DirectoryTreeNode.File", vR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "name",
             kind: "scalar",
@@ -45437,11 +45469,11 @@
             no: 2,
             name: "terminal_metadata",
             kind: "message",
-            T: GI,
+            T: VI,
             opt: !0
         }]);
-        let bR = FR;
-        const LR = class e extends Nr {
+        let UR = vR;
+        const OR = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -45458,9 +45490,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        LR.runtime = Ks, LR.typeName = "aiserver.v1.ListDirV2Stream", LR.fields = Ks.util.newFieldList(() => []);
-        let vR = LR;
-        const UR = class e extends Nr {
+        OR.runtime = Ks, OR.typeName = "aiserver.v1.ListDirV2Stream", OR.fields = Ks.util.newFieldList(() => []);
+        let MR = OR;
+        const PR = class e extends Nr {
             constructor(e) {
                 super(), this.targetFile = "", this.charsLimit = 0, this.effectiveUri = "", Ks.util.initPartial(e, this)
             }
@@ -45477,7 +45509,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        UR.runtime = Ks, UR.typeName = "aiserver.v1.ReadFileV2Params", UR.fields = Ks.util.newFieldList(() => [{
+        PR.runtime = Ks, PR.typeName = "aiserver.v1.ReadFileV2Params", PR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "target_file",
             kind: "scalar",
@@ -45511,8 +45543,8 @@
             T: 8,
             opt: !0
         }]);
-        let OR = UR;
-        const MR = class e extends Nr {
+        let qR = PR;
+        const xR = class e extends Nr {
             constructor(e) {
                 super(), this.numCharactersInRequestedRange = 0, this.matchingCursorRules = [], this.images = [], Ks.util.initPartial(e, this)
             }
@@ -45529,7 +45561,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        MR.runtime = Ks, MR.typeName = "aiserver.v1.ReadFileV2Result", MR.fields = Ks.util.newFieldList(() => [{
+        xR.runtime = Ks, xR.typeName = "aiserver.v1.ReadFileV2Result", xR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "contents",
             kind: "scalar",
@@ -45565,8 +45597,8 @@
             T: ac,
             repeated: !0
         }]);
-        let PR = MR;
-        const qR = class e extends Nr {
+        let GR = xR;
+        const YR = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -45583,15 +45615,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qR.runtime = Ks, qR.typeName = "aiserver.v1.ReadFileV2Stream", qR.fields = Ks.util.newFieldList(() => [{
+        YR.runtime = Ks, YR.typeName = "aiserver.v1.ReadFileV2Stream", YR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "params",
             kind: "message",
-            T: OR,
+            T: qR,
             opt: !0
         }]);
-        let xR = qR;
-        const GR = class e extends Nr {
+        let HR = YR;
+        const VR = class e extends Nr {
             constructor(e) {
                 super(), this.targetDirectory = "", this.globPattern = "", Ks.util.initPartial(e, this)
             }
@@ -45608,7 +45640,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        GR.runtime = Ks, GR.typeName = "aiserver.v1.GlobFileSearchParams", GR.fields = Ks.util.newFieldList(() => [{
+        VR.runtime = Ks, VR.typeName = "aiserver.v1.GlobFileSearchParams", VR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "target_directory",
             kind: "scalar",
@@ -45619,8 +45651,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let YR = GR;
-        const HR = class e extends Nr {
+        let WR = VR;
+        const XR = class e extends Nr {
             constructor(e) {
                 super(), this.directories = [], Ks.util.initPartial(e, this)
             }
@@ -45637,15 +45669,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        HR.runtime = Ks, HR.typeName = "aiserver.v1.GlobFileSearchResult", HR.fields = Ks.util.newFieldList(() => [{
+        XR.runtime = Ks, XR.typeName = "aiserver.v1.GlobFileSearchResult", XR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "directories",
             kind: "message",
-            T: KR,
+            T: $R,
             repeated: !0
         }]);
-        let VR = HR;
-        const WR = class e extends Nr {
+        let jR = XR;
+        const KR = class e extends Nr {
             constructor(e) {
                 super(), this.relPath = "", Ks.util.initPartial(e, this)
             }
@@ -45662,14 +45694,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        WR.runtime = Ks, WR.typeName = "aiserver.v1.GlobFileSearchResult.File", WR.fields = Ks.util.newFieldList(() => [{
+        KR.runtime = Ks, KR.typeName = "aiserver.v1.GlobFileSearchResult.File", KR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "rel_path",
             kind: "scalar",
             T: 9
         }]);
-        let XR = WR;
-        const jR = class e extends Nr {
+        let ZR = KR;
+        const zR = class e extends Nr {
             constructor(e) {
                 super(), this.absPath = "", this.files = [], this.totalFiles = 0, this.ripgrepTruncated = !1, Ks.util.initPartial(e, this)
             }
@@ -45686,7 +45718,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        jR.runtime = Ks, jR.typeName = "aiserver.v1.GlobFileSearchResult.Directory", jR.fields = Ks.util.newFieldList(() => [{
+        zR.runtime = Ks, zR.typeName = "aiserver.v1.GlobFileSearchResult.Directory", zR.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "abs_path",
             kind: "scalar",
@@ -45695,7 +45727,7 @@
             no: 2,
             name: "files",
             kind: "message",
-            T: XR,
+            T: ZR,
             repeated: !0
         }, {
             no: 3,
@@ -45708,8 +45740,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let KR = jR;
-        const ZR = class e extends Nr {
+        let $R = zR;
+        const eN = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -45726,9 +45758,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ZR.runtime = Ks, ZR.typeName = "aiserver.v1.GlobFileSearchStream", ZR.fields = Ks.util.newFieldList(() => []);
-        let zR = ZR;
-        const $R = class e extends Nr {
+        eN.runtime = Ks, eN.typeName = "aiserver.v1.GlobFileSearchStream", eN.fields = Ks.util.newFieldList(() => []);
+        let tN = eN;
+        const nN = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -45745,9 +45777,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $R.runtime = Ks, $R.typeName = "aiserver.v1.ListMcpResourcesStream", $R.fields = Ks.util.newFieldList(() => []);
-        let eN = $R;
-        const tN = class e extends Nr {
+        nN.runtime = Ks, nN.typeName = "aiserver.v1.ListMcpResourcesStream", nN.fields = Ks.util.newFieldList(() => []);
+        let rN = nN;
+        const sN = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -45764,9 +45796,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        tN.runtime = Ks, tN.typeName = "aiserver.v1.CallMcpToolStream", tN.fields = Ks.util.newFieldList(() => []);
-        let nN = tN;
-        const rN = class e extends Nr {
+        sN.runtime = Ks, sN.typeName = "aiserver.v1.CallMcpToolStream", sN.fields = Ks.util.newFieldList(() => []);
+        let iN = sN;
+        const AN = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -45783,9 +45815,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        rN.runtime = Ks, rN.typeName = "aiserver.v1.ReadMcpResourceStream", rN.fields = Ks.util.newFieldList(() => []);
-        let sN = rN;
-        const iN = class e extends Nr {
+        AN.runtime = Ks, AN.typeName = "aiserver.v1.ReadMcpResourceStream", AN.fields = Ks.util.newFieldList(() => []);
+        let oN = AN;
+        const aN = class e extends Nr {
             constructor(e) {
                 super(), this.id = "", this.title = "", this.description = "", this.instructions = "", this.prerequisites = [], this.subComposerId = "", Ks.util.initPartial(e, this)
             }
@@ -45802,7 +45834,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        iN.runtime = Ks, iN.typeName = "aiserver.v1.Step", iN.fields = Ks.util.newFieldList(() => [{
+        aN.runtime = Ks, aN.typeName = "aiserver.v1.Step", aN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "id",
             kind: "scalar",
@@ -45834,8 +45866,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let AN = iN;
-        const oN = class e extends Nr {
+        let lN = aN;
+        const cN = class e extends Nr {
             constructor(e) {
                 super(), this.name = "", this.todos = [], Ks.util.initPartial(e, this)
             }
@@ -45852,7 +45884,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        oN.runtime = Ks, oN.typeName = "aiserver.v1.PlanPhase", oN.fields = Ks.util.newFieldList(() => [{
+        cN.runtime = Ks, cN.typeName = "aiserver.v1.PlanPhase", cN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "name",
             kind: "scalar",
@@ -45861,11 +45893,11 @@
             no: 2,
             name: "todos",
             kind: "message",
-            T: fR,
+            T: BR,
             repeated: !0
         }]);
-        let aN = oN;
-        const lN = class e extends Nr {
+        let uN = cN;
+        const mN = class e extends Nr {
             constructor(e) {
                 super(), this.plan = "", this.title = "", this.summary = "", this.steps = [], this.oldStr = "", this.newStr = "", this.name = "", this.todos = [], this.overview = "", this.isSpec = !1, this.isProject = !1, this.phases = [], Ks.util.initPartial(e, this)
             }
@@ -45882,7 +45914,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        lN.runtime = Ks, lN.typeName = "aiserver.v1.CreatePlanParams", lN.fields = Ks.util.newFieldList(() => [{
+        mN.runtime = Ks, mN.typeName = "aiserver.v1.CreatePlanParams", mN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "plan",
             kind: "scalar",
@@ -45901,7 +45933,7 @@
             no: 4,
             name: "steps",
             kind: "message",
-            T: AN,
+            T: lN,
             repeated: !0
         }, {
             no: 5,
@@ -45922,7 +45954,7 @@
             no: 8,
             name: "todos",
             kind: "message",
-            T: fR,
+            T: BR,
             repeated: !0
         }, {
             no: 9,
@@ -45943,11 +45975,11 @@
             no: 12,
             name: "phases",
             kind: "message",
-            T: aN,
+            T: uN,
             repeated: !0
         }]);
-        let cN = lN;
-        const uN = class e extends Nr {
+        let dN = mN;
+        const gN = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -45966,23 +45998,23 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        uN.runtime = Ks, uN.typeName = "aiserver.v1.CreatePlanResult", uN.fields = Ks.util.newFieldList(() => [{
+        gN.runtime = Ks, gN.typeName = "aiserver.v1.CreatePlanResult", gN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "accepted",
             kind: "message",
-            T: gN,
+            T: hN,
             oneof: "result"
         }, {
             no: 2,
             name: "rejected",
             kind: "message",
-            T: fN,
+            T: BN,
             oneof: "result"
         }, {
             no: 3,
             name: "modified",
             kind: "message",
-            T: IN,
+            T: QN,
             oneof: "result"
         }, {
             no: 4,
@@ -45990,8 +46022,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let mN = uN;
-        const dN = class e extends Nr {
+        let EN = gN;
+        const fN = class e extends Nr {
             constructor(e) {
                 super(), this.finalTodos = [], Ks.util.initPartial(e, this)
             }
@@ -46008,15 +46040,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        dN.runtime = Ks, dN.typeName = "aiserver.v1.CreatePlanResult.Accepted", dN.fields = Ks.util.newFieldList(() => [{
+        fN.runtime = Ks, fN.typeName = "aiserver.v1.CreatePlanResult.Accepted", fN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "final_todos",
             kind: "message",
-            T: fR,
+            T: BR,
             repeated: !0
         }]);
-        let gN = dN;
-        const EN = class e extends Nr {
+        let hN = fN;
+        const IN = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46033,9 +46065,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        EN.runtime = Ks, EN.typeName = "aiserver.v1.CreatePlanResult.Rejected", EN.fields = Ks.util.newFieldList(() => []);
-        let fN = EN;
-        const hN = class e extends Nr {
+        IN.runtime = Ks, IN.typeName = "aiserver.v1.CreatePlanResult.Rejected", IN.fields = Ks.util.newFieldList(() => []);
+        let BN = IN;
+        const CN = class e extends Nr {
             constructor(e) {
                 super(), this.newPlan = "", this.finalTodos = [], Ks.util.initPartial(e, this)
             }
@@ -46052,7 +46084,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        hN.runtime = Ks, hN.typeName = "aiserver.v1.CreatePlanResult.Modified", hN.fields = Ks.util.newFieldList(() => [{
+        CN.runtime = Ks, CN.typeName = "aiserver.v1.CreatePlanResult.Modified", CN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "new_plan",
             kind: "scalar",
@@ -46061,11 +46093,11 @@
             no: 2,
             name: "final_todos",
             kind: "message",
-            T: fR,
+            T: BR,
             repeated: !0
         }]);
-        let IN = hN;
-        const BN = class e extends Nr {
+        let QN = CN;
+        const pN = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46082,9 +46114,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        BN.runtime = Ks, BN.typeName = "aiserver.v1.CreatePlanStream", BN.fields = Ks.util.newFieldList(() => []);
-        let CN = BN;
-        const QN = class e extends Nr {
+        pN.runtime = Ks, pN.typeName = "aiserver.v1.CreatePlanStream", pN.fields = Ks.util.newFieldList(() => []);
+        let yN = pN;
+        const wN = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46101,9 +46133,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        QN.runtime = Ks, QN.typeName = "aiserver.v1.ReadProjectParams", QN.fields = Ks.util.newFieldList(() => []);
-        let pN = QN;
-        const yN = class e extends Nr {
+        wN.runtime = Ks, wN.typeName = "aiserver.v1.ReadProjectParams", wN.fields = Ks.util.newFieldList(() => []);
+        let TN = wN;
+        const SN = class e extends Nr {
             constructor(e) {
                 super(), this.plan = "", Ks.util.initPartial(e, this)
             }
@@ -46120,14 +46152,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yN.runtime = Ks, yN.typeName = "aiserver.v1.ReadProjectResult", yN.fields = Ks.util.newFieldList(() => [{
+        SN.runtime = Ks, SN.typeName = "aiserver.v1.ReadProjectResult", SN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "plan",
             kind: "scalar",
             T: 9
         }]);
-        let wN = yN;
-        const TN = class e extends Nr {
+        let kN = SN;
+        const RN = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46144,9 +46176,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        TN.runtime = Ks, TN.typeName = "aiserver.v1.ReadProjectStream", TN.fields = Ks.util.newFieldList(() => []);
-        let SN = TN;
-        const kN = class e extends Nr {
+        RN.runtime = Ks, RN.typeName = "aiserver.v1.ReadProjectStream", RN.fields = Ks.util.newFieldList(() => []);
+        let NN = RN;
+        const _N = class e extends Nr {
             constructor(e) {
                 super(), this.oldString = "", this.newString = "", Ks.util.initPartial(e, this)
             }
@@ -46163,7 +46195,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kN.runtime = Ks, kN.typeName = "aiserver.v1.UpdateProjectStringReplacement", kN.fields = Ks.util.newFieldList(() => [{
+        _N.runtime = Ks, _N.typeName = "aiserver.v1.UpdateProjectStringReplacement", _N.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "old_string",
             kind: "scalar",
@@ -46174,8 +46206,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let RN = kN;
-        const NN = class e extends Nr {
+        let DN = _N;
+        const JN = class e extends Nr {
             constructor(e) {
                 super(), this.stringReplacements = [], this.summary = "", Ks.util.initPartial(e, this)
             }
@@ -46192,11 +46224,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        NN.runtime = Ks, NN.typeName = "aiserver.v1.UpdateProjectParams", NN.fields = Ks.util.newFieldList(() => [{
+        JN.runtime = Ks, JN.typeName = "aiserver.v1.UpdateProjectParams", JN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "string_replacements",
             kind: "message",
-            T: RN,
+            T: DN,
             repeated: !0
         }, {
             no: 2,
@@ -46204,8 +46236,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let _N = NN;
-        const DN = class e extends Nr {
+        let FN = JN;
+        const bN = class e extends Nr {
             constructor(e) {
                 super(), this.success = !1, this.updatedPlan = "", Ks.util.initPartial(e, this)
             }
@@ -46222,7 +46254,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        DN.runtime = Ks, DN.typeName = "aiserver.v1.UpdateProjectResult", DN.fields = Ks.util.newFieldList(() => [{
+        bN.runtime = Ks, bN.typeName = "aiserver.v1.UpdateProjectResult", bN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "scalar",
@@ -46233,8 +46265,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let JN = DN;
-        const FN = class e extends Nr {
+        let LN = bN;
+        const vN = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46251,9 +46283,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        FN.runtime = Ks, FN.typeName = "aiserver.v1.UpdateProjectStream", FN.fields = Ks.util.newFieldList(() => []);
-        let bN = FN;
-        const LN = class e extends Nr {
+        vN.runtime = Ks, vN.typeName = "aiserver.v1.UpdateProjectStream", vN.fields = Ks.util.newFieldList(() => []);
+        let UN = vN;
+        const ON = class e extends Nr {
             constructor(e) {
                 super(), this.title = "", this.questions = [], this.runAsync = !1, Ks.util.initPartial(e, this)
             }
@@ -46270,7 +46302,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        LN.runtime = Ks, LN.typeName = "aiserver.v1.AskQuestionParams", LN.fields = Ks.util.newFieldList(() => [{
+        ON.runtime = Ks, ON.typeName = "aiserver.v1.AskQuestionParams", ON.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "title",
             kind: "scalar",
@@ -46279,7 +46311,7 @@
             no: 2,
             name: "questions",
             kind: "message",
-            T: ON,
+            T: qN,
             repeated: !0
         }, {
             no: 3,
@@ -46287,8 +46319,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let vN = LN;
-        const UN = class e extends Nr {
+        let MN = ON;
+        const PN = class e extends Nr {
             constructor(e) {
                 super(), this.id = "", this.prompt = "", this.options = [], this.allowMultiple = !1, Ks.util.initPartial(e, this)
             }
@@ -46305,7 +46337,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        UN.runtime = Ks, UN.typeName = "aiserver.v1.AskQuestionParams.Question", UN.fields = Ks.util.newFieldList(() => [{
+        PN.runtime = Ks, PN.typeName = "aiserver.v1.AskQuestionParams.Question", PN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "id",
             kind: "scalar",
@@ -46319,7 +46351,7 @@
             no: 3,
             name: "options",
             kind: "message",
-            T: PN,
+            T: GN,
             repeated: !0
         }, {
             no: 4,
@@ -46327,8 +46359,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let ON = UN;
-        const MN = class e extends Nr {
+        let qN = PN;
+        const xN = class e extends Nr {
             constructor(e) {
                 super(), this.id = "", this.label = "", Ks.util.initPartial(e, this)
             }
@@ -46345,7 +46377,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        MN.runtime = Ks, MN.typeName = "aiserver.v1.AskQuestionParams.Option", MN.fields = Ks.util.newFieldList(() => [{
+        xN.runtime = Ks, xN.typeName = "aiserver.v1.AskQuestionParams.Option", xN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "id",
             kind: "scalar",
@@ -46356,8 +46388,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let PN = MN;
-        const qN = class e extends Nr {
+        let GN = xN;
+        const YN = class e extends Nr {
             constructor(e) {
                 super(), this.answers = [], this.isAsync = !1, Ks.util.initPartial(e, this)
             }
@@ -46374,11 +46406,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        qN.runtime = Ks, qN.typeName = "aiserver.v1.AskQuestionResult", qN.fields = Ks.util.newFieldList(() => [{
+        YN.runtime = Ks, YN.typeName = "aiserver.v1.AskQuestionResult", YN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "answers",
             kind: "message",
-            T: YN,
+            T: WN,
             repeated: !0
         }, {
             no: 2,
@@ -46386,8 +46418,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let xN = qN;
-        const GN = class e extends Nr {
+        let HN = YN;
+        const VN = class e extends Nr {
             constructor(e) {
                 super(), this.questionId = "", this.selectedOptionIds = [], Ks.util.initPartial(e, this)
             }
@@ -46404,7 +46436,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        GN.runtime = Ks, GN.typeName = "aiserver.v1.AskQuestionResult.Answer", GN.fields = Ks.util.newFieldList(() => [{
+        VN.runtime = Ks, VN.typeName = "aiserver.v1.AskQuestionResult.Answer", VN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "question_id",
             kind: "scalar",
@@ -46422,8 +46454,8 @@
             T: 9,
             opt: !0
         }]);
-        let YN = GN;
-        const HN = class e extends Nr {
+        let WN = VN;
+        const XN = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46440,14 +46472,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        HN.runtime = Ks, HN.typeName = "aiserver.v1.AskQuestionStream", HN.fields = Ks.util.newFieldList(() => [{
+        XN.runtime = Ks, XN.typeName = "aiserver.v1.AskQuestionStream", XN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "params",
             kind: "message",
-            T: vN
+            T: MN
         }]);
-        let VN = HN;
-        const WN = class e extends Nr {
+        let jN = XN;
+        const KN = class e extends Nr {
             constructor(e) {
                 super(), this.fromModeId = "", this.toModeId = "", Ks.util.initPartial(e, this)
             }
@@ -46464,7 +46496,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        WN.runtime = Ks, WN.typeName = "aiserver.v1.SwitchModeParams", WN.fields = Ks.util.newFieldList(() => [{
+        KN.runtime = Ks, KN.typeName = "aiserver.v1.SwitchModeParams", KN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "from_mode_id",
             kind: "scalar",
@@ -46481,8 +46513,8 @@
             T: 9,
             opt: !0
         }]);
-        let XN = WN;
-        const jN = class e extends Nr {
+        let ZN = KN;
+        const zN = class e extends Nr {
             constructor(e) {
                 super(), this.fromModeId = "", this.toModeId = "", this.autoApproved = !1, this.userApproved = !1, Ks.util.initPartial(e, this)
             }
@@ -46499,7 +46531,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        jN.runtime = Ks, jN.typeName = "aiserver.v1.SwitchModeResult", jN.fields = Ks.util.newFieldList(() => [{
+        zN.runtime = Ks, zN.typeName = "aiserver.v1.SwitchModeResult", zN.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "from_mode_id",
             kind: "scalar",
@@ -46520,8 +46552,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let KN = jN;
-        const ZN = class e extends Nr {
+        let $N = zN;
+        const e_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46538,14 +46570,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ZN.runtime = Ks, ZN.typeName = "aiserver.v1.SwitchModeStream", ZN.fields = Ks.util.newFieldList(() => [{
+        e_.runtime = Ks, e_.typeName = "aiserver.v1.SwitchModeStream", e_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "params",
             kind: "message",
-            T: XN
+            T: ZN
         }]);
-        let zN = ZN;
-        const $N = class e extends Nr {
+        let t_ = e_;
+        const n_ = class e extends Nr {
             constructor(e) {
                 super(), this.actions = [], Ks.util.initPartial(e, this)
             }
@@ -46562,15 +46594,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $N.runtime = Ks, $N.typeName = "aiserver.v1.ComputerUseParams", $N.fields = Ks.util.newFieldList(() => [{
+        n_.runtime = Ks, n_.typeName = "aiserver.v1.ComputerUseParams", n_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "actions",
             kind: "message",
-            T: $I,
+            T: nB,
             repeated: !0
         }]);
-        let e_ = $N;
-        const t_ = class e extends Nr {
+        let r_ = n_;
+        const s_ = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -46589,21 +46621,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        t_.runtime = Ks, t_.typeName = "aiserver.v1.ComputerUseResult", t_.fields = Ks.util.newFieldList(() => [{
+        s_.runtime = Ks, s_.typeName = "aiserver.v1.ComputerUseResult", s_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: TB,
+            T: RB,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: kB,
+            T: _B,
             oneof: "result"
         }]);
-        let n_ = t_;
-        const r_ = class e extends Nr {
+        let i_ = s_;
+        const A_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46620,14 +46652,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        r_.runtime = Ks, r_.typeName = "aiserver.v1.ComputerUseStream", r_.fields = Ks.util.newFieldList(() => [{
+        A_.runtime = Ks, A_.typeName = "aiserver.v1.ComputerUseStream", A_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "params",
             kind: "message",
-            T: e_
+            T: r_
         }]);
-        let s_ = r_;
-        const i_ = class e extends Nr {
+        let o_ = A_;
+        const a_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46644,14 +46676,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        i_.runtime = Ks, i_.typeName = "aiserver.v1.WriteShellStdinStream", i_.fields = Ks.util.newFieldList(() => [{
+        a_.runtime = Ks, a_.typeName = "aiserver.v1.WriteShellStdinStream", a_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "params",
             kind: "message",
-            T: Xu
+            T: ju
         }]);
-        let A_ = i_;
-        const o_ = class e extends Nr {
+        let l_ = a_;
+        const c_ = class e extends Nr {
             constructor(e) {
                 super(), this.url = "", Ks.util.initPartial(e, this)
             }
@@ -46668,14 +46700,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        o_.runtime = Ks, o_.typeName = "aiserver.v1.WebFetchParams", o_.fields = Ks.util.newFieldList(() => [{
+        c_.runtime = Ks, c_.typeName = "aiserver.v1.WebFetchParams", c_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "url",
             kind: "scalar",
             T: 9
         }]);
-        let a_ = o_;
-        const l_ = class e extends Nr {
+        let u_ = c_;
+        const m_ = class e extends Nr {
             constructor(e) {
                 super(), this.url = "", Ks.util.initPartial(e, this)
             }
@@ -46692,7 +46724,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        l_.runtime = Ks, l_.typeName = "aiserver.v1.WebFetchResult", l_.fields = Ks.util.newFieldList(() => [{
+        m_.runtime = Ks, m_.typeName = "aiserver.v1.WebFetchResult", m_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "url",
             kind: "scalar",
@@ -46710,8 +46742,8 @@
             T: 9,
             opt: !0
         }]);
-        let c_ = l_;
-        const u_ = class e extends Nr {
+        let d_ = m_;
+        const g_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46728,14 +46760,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        u_.runtime = Ks, u_.typeName = "aiserver.v1.WebFetchStream", u_.fields = Ks.util.newFieldList(() => [{
+        g_.runtime = Ks, g_.typeName = "aiserver.v1.WebFetchStream", g_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "params",
             kind: "message",
-            T: a_
+            T: u_
         }]);
-        let m_ = u_;
-        const d_ = class e extends Nr {
+        let E_ = g_;
+        const f_ = class e extends Nr {
             constructor(e) {
                 super(), this.summary = "", this.results = [], Ks.util.initPartial(e, this)
             }
@@ -46752,7 +46784,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        d_.runtime = Ks, d_.typeName = "aiserver.v1.ReportBugfixResultsParams", d_.fields = Ks.util.newFieldList(() => [{
+        f_.runtime = Ks, f_.typeName = "aiserver.v1.ReportBugfixResultsParams", f_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "summary",
             kind: "scalar",
@@ -46761,11 +46793,11 @@
             no: 2,
             name: "results",
             kind: "message",
-            T: DB,
+            T: bB,
             repeated: !0
         }]);
-        let g_ = d_;
-        const E_ = class e extends Nr {
+        let h_ = f_;
+        const I_ = class e extends Nr {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -46784,21 +46816,21 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        E_.runtime = Ks, E_.typeName = "aiserver.v1.ReportBugfixResultsResult", E_.fields = Ks.util.newFieldList(() => [{
+        I_.runtime = Ks, I_.typeName = "aiserver.v1.ReportBugfixResultsResult", I_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "message",
-            T: LB,
+            T: OB,
             oneof: "result"
         }, {
             no: 2,
             name: "error",
             kind: "message",
-            T: UB,
+            T: PB,
             oneof: "result"
         }]);
-        let f_ = E_;
-        const h_ = class e extends Nr {
+        let B_ = I_;
+        const C_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46815,14 +46847,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        h_.runtime = Ks, h_.typeName = "aiserver.v1.ReportBugfixResultsStream", h_.fields = Ks.util.newFieldList(() => [{
+        C_.runtime = Ks, C_.typeName = "aiserver.v1.ReportBugfixResultsStream", C_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "params",
             kind: "message",
-            T: g_
+            T: h_
         }]);
-        let I_ = h_;
-        const B_ = class e extends Nr {
+        let Q_ = C_;
+        const p_ = class e extends Nr {
             constructor(e) {
                 super(), this.serverIdentifier = "", Ks.util.initPartial(e, this)
             }
@@ -46839,14 +46871,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        B_.runtime = Ks, B_.typeName = "aiserver.v1.McpAuthParams", B_.fields = Ks.util.newFieldList(() => [{
+        p_.runtime = Ks, p_.typeName = "aiserver.v1.McpAuthParams", p_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "server_identifier",
             kind: "scalar",
             T: 9
         }]);
-        let C_ = B_;
-        const Q_ = class e extends Nr {
+        let y_ = p_;
+        const w_ = class e extends Nr {
             constructor(e) {
                 super(), this.success = !1, this.message = "", Ks.util.initPartial(e, this)
             }
@@ -46863,7 +46895,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Q_.runtime = Ks, Q_.typeName = "aiserver.v1.McpAuthResult", Q_.fields = Ks.util.newFieldList(() => [{
+        w_.runtime = Ks, w_.typeName = "aiserver.v1.McpAuthResult", w_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "success",
             kind: "scalar",
@@ -46874,8 +46906,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let p_ = Q_;
-        const y_ = class e extends Nr {
+        let T_ = w_;
+        const S_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46892,9 +46924,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        y_.runtime = Ks, y_.typeName = "aiserver.v1.McpAuthStream", y_.fields = Ks.util.newFieldList(() => []);
-        let w_ = y_;
-        const T_ = class e extends Nr {
+        S_.runtime = Ks, S_.typeName = "aiserver.v1.McpAuthStream", S_.fields = Ks.util.newFieldList(() => []);
+        let k_ = S_;
+        const R_ = class e extends Nr {
             constructor(e) {
                 super(), this.absolutePath = "", Ks.util.initPartial(e, this)
             }
@@ -46911,14 +46943,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        T_.runtime = Ks, T_.typeName = "aiserver.v1.SwTrackModelRequest", T_.fields = Ks.util.newFieldList(() => [{
+        R_.runtime = Ks, R_.typeName = "aiserver.v1.SwTrackModelRequest", R_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "absolute_path",
             kind: "scalar",
             T: 9
         }]);
-        let S_ = T_;
-        const k_ = class e extends Nr {
+        let N_ = R_;
+        const __ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46935,9 +46967,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        k_.runtime = Ks, k_.typeName = "aiserver.v1.SwTrackModelResponse", k_.fields = Ks.util.newFieldList(() => []);
-        let R_ = k_;
-        const N_ = class e extends Nr {
+        __.runtime = Ks, __.typeName = "aiserver.v1.SwTrackModelResponse", __.fields = Ks.util.newFieldList(() => []);
+        let D_ = __;
+        const J_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46954,14 +46986,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        N_.runtime = Ks, N_.typeName = "aiserver.v1.SwCallDiagnosticsExecutorRequest", N_.fields = Ks.util.newFieldList(() => [{
+        J_.runtime = Ks, J_.typeName = "aiserver.v1.SwCallDiagnosticsExecutorRequest", J_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "diagnostics_args",
             kind: "message",
             T: No
         }]);
-        let __ = N_;
-        const D_ = class e extends Nr {
+        let F_ = J_;
+        const b_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -46978,14 +47010,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        D_.runtime = Ks, D_.typeName = "aiserver.v1.SwCallDiagnosticsExecutorResponse", D_.fields = Ks.util.newFieldList(() => [{
+        b_.runtime = Ks, b_.typeName = "aiserver.v1.SwCallDiagnosticsExecutorResponse", b_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "diagnostics_result",
             kind: "message",
             T: Do
         }]);
-        let J_ = D_;
-        const F_ = class e extends Nr {
+        let L_ = b_;
+        const v_ = class e extends Nr {
             constructor(e) {
                 super(), this.absolutePath = "", this.newContents = "", Ks.util.initPartial(e, this)
             }
@@ -47002,7 +47034,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        F_.runtime = Ks, F_.typeName = "aiserver.v1.SwWriteTextFileWithLintsRequest", F_.fields = Ks.util.newFieldList(() => [{
+        v_.runtime = Ks, v_.typeName = "aiserver.v1.SwWriteTextFileWithLintsRequest", v_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "absolute_path",
             kind: "scalar",
@@ -47013,8 +47045,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let b_ = F_;
-        const L_ = class e extends Nr {
+        let U_ = v_;
+        const O_ = class e extends Nr {
             constructor(e) {
                 super(), this.newLinterErrors = [], Ks.util.initPartial(e, this)
             }
@@ -47031,15 +47063,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        L_.runtime = Ks, L_.typeName = "aiserver.v1.SwWriteTextFileWithLintsResponse", L_.fields = Ks.util.newFieldList(() => [{
+        O_.runtime = Ks, O_.typeName = "aiserver.v1.SwWriteTextFileWithLintsResponse", O_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "new_linter_errors",
             kind: "message",
             T: gl,
             repeated: !0
         }]);
-        let v_ = L_;
-        const U_ = class e extends Nr {
+        let M_ = O_;
+        const P_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47056,9 +47088,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        U_.runtime = Ks, U_.typeName = "aiserver.v1.SwGetExplicitContextRequest", U_.fields = Ks.util.newFieldList(() => []);
-        let O_ = U_;
-        const M_ = class e extends Nr {
+        P_.runtime = Ks, P_.typeName = "aiserver.v1.SwGetExplicitContextRequest", P_.fields = Ks.util.newFieldList(() => []);
+        let q_ = P_;
+        const x_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47075,14 +47107,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        M_.runtime = Ks, M_.typeName = "aiserver.v1.SwGetExplicitContextResponse", M_.fields = Ks.util.newFieldList(() => [{
+        x_.runtime = Ks, x_.typeName = "aiserver.v1.SwGetExplicitContextResponse", x_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "explicit_context",
             kind: "message",
             T: Ql
         }]);
-        let P_ = M_;
-        const q_ = class e extends Nr {
+        let G_ = x_;
+        const Y_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47099,9 +47131,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        q_.runtime = Ks, q_.typeName = "aiserver.v1.SwGetEnvironmentInfoRequest", q_.fields = Ks.util.newFieldList(() => []);
-        let x_ = q_;
-        const G_ = class e extends Nr {
+        Y_.runtime = Ks, Y_.typeName = "aiserver.v1.SwGetEnvironmentInfoRequest", Y_.fields = Ks.util.newFieldList(() => []);
+        let H_ = Y_;
+        const V_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47118,14 +47150,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        G_.runtime = Ks, G_.typeName = "aiserver.v1.SwGetEnvironmentInfoResponse", G_.fields = Ks.util.newFieldList(() => [{
+        V_.runtime = Ks, V_.typeName = "aiserver.v1.SwGetEnvironmentInfoResponse", V_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "environment_info",
             kind: "message",
             T: ea
         }]);
-        let Y_ = G_;
-        const H_ = class e extends Nr {
+        let W_ = V_;
+        const X_ = class e extends Nr {
             constructor(e) {
                 super(), this.absolutePaths = [], Ks.util.initPartial(e, this)
             }
@@ -47142,15 +47174,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        H_.runtime = Ks, H_.typeName = "aiserver.v1.SwGetLinterErrorsRequest", H_.fields = Ks.util.newFieldList(() => [{
+        X_.runtime = Ks, X_.typeName = "aiserver.v1.SwGetLinterErrorsRequest", X_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "absolute_paths",
             kind: "scalar",
             T: 9,
             repeated: !0
         }]);
-        let V_ = H_;
-        const W_ = class e extends Nr {
+        let j_ = X_;
+        const K_ = class e extends Nr {
             constructor(e) {
                 super(), this.linterErrors = [], Ks.util.initPartial(e, this)
             }
@@ -47167,15 +47199,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        W_.runtime = Ks, W_.typeName = "aiserver.v1.SwGetLinterErrorsResponse", W_.fields = Ks.util.newFieldList(() => [{
+        K_.runtime = Ks, K_.typeName = "aiserver.v1.SwGetLinterErrorsResponse", K_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "linter_errors",
             kind: "message",
             T: fl,
             repeated: !0
         }]);
-        let X_ = W_;
-        const j_ = class e extends Nr {
+        let Z_ = K_;
+        const z_ = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47192,15 +47224,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        j_.runtime = Ks, j_.typeName = "aiserver.v1.SwGetMcpToolsRequest", j_.fields = Ks.util.newFieldList(() => [{
+        z_.runtime = Ks, z_.typeName = "aiserver.v1.SwGetMcpToolsRequest", z_.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "browser_integration_preference",
             kind: "scalar",
             T: 9,
             opt: !0
         }]);
-        let K_ = j_;
-        const Z_ = class e extends Nr {
+        let $_ = z_;
+        const eD = class e extends Nr {
             constructor(e) {
                 super(), this.tools = [], Ks.util.initPartial(e, this)
             }
@@ -47217,15 +47249,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        Z_.runtime = Ks, Z_.typeName = "aiserver.v1.SwGetMcpToolsResponse", Z_.fields = Ks.util.newFieldList(() => [{
+        eD.runtime = Ks, eD.typeName = "aiserver.v1.SwGetMcpToolsResponse", eD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tools",
             kind: "message",
-            T: qT,
+            T: YT,
             repeated: !0
         }]);
-        let z_ = Z_;
-        const $_ = class e extends Nr {
+        let tD = eD;
+        const nD = class e extends Nr {
             constructor(e) {
                 super(), this.composerId = "", Ks.util.initPartial(e, this)
             }
@@ -47242,19 +47274,19 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        $_.runtime = Ks, $_.typeName = "aiserver.v1.SwCallClientSideV2ToolRequest", $_.fields = Ks.util.newFieldList(() => [{
+        nD.runtime = Ks, nD.typeName = "aiserver.v1.SwCallClientSideV2ToolRequest", nD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool_call",
             kind: "message",
-            T: uC
+            T: gC
         }, {
             no: 2,
             name: "composer_id",
             kind: "scalar",
             T: 9
         }]);
-        let eD = $_;
-        const tD = class e extends Nr {
+        let rD = nD;
+        const sD = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47271,14 +47303,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        tD.runtime = Ks, tD.typeName = "aiserver.v1.SwCallClientSideV2ToolResponse", tD.fields = Ks.util.newFieldList(() => [{
+        sD.runtime = Ks, sD.typeName = "aiserver.v1.SwCallClientSideV2ToolResponse", sD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "tool_result",
             kind: "message",
-            T: dC
+            T: fC
         }]);
-        let nD = tD;
-        const rD = class e extends Nr {
+        let iD = sD;
+        const AD = class e extends Nr {
             constructor(e) {
                 super(), this.pathEncryptionKey = "", Ks.util.initPartial(e, this)
             }
@@ -47295,7 +47327,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        rD.runtime = Ks, rD.typeName = "aiserver.v1.SwCompileRepoIncludeExcludePatternsRequest", rD.fields = Ks.util.newFieldList(() => [{
+        AD.runtime = Ks, AD.typeName = "aiserver.v1.SwCompileRepoIncludeExcludePatternsRequest", AD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "include_pattern",
             kind: "scalar",
@@ -47316,10 +47348,10 @@
             no: 4,
             name: "repository_info",
             kind: "message",
-            T: gh
+            T: Eh
         }]);
-        let sD = rD;
-        const iD = class e extends Nr {
+        let oD = AD;
+        const aD = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47336,7 +47368,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        iD.runtime = Ks, iD.typeName = "aiserver.v1.SwCompileRepoIncludeExcludePatternsResponse", iD.fields = Ks.util.newFieldList(() => [{
+        aD.runtime = Ks, aD.typeName = "aiserver.v1.SwCompileRepoIncludeExcludePatternsResponse", aD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "glob_filter",
             kind: "scalar",
@@ -47349,8 +47381,8 @@
             T: 9,
             opt: !0
         }]);
-        let AD = iD;
-        const oD = class e extends Nr {
+        let lD = aD;
+        const cD = class e extends Nr {
             constructor(e) {
                 super(), this.accessToken = "", Ks.util.initPartial(e, this)
             }
@@ -47367,14 +47399,14 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        oD.runtime = Ks, oD.typeName = "aiserver.v1.SwProvideTemporaryAccessTokenRequest", oD.fields = Ks.util.newFieldList(() => [{
+        cD.runtime = Ks, cD.typeName = "aiserver.v1.SwProvideTemporaryAccessTokenRequest", cD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "access_token",
             kind: "scalar",
             T: 9
         }]);
-        let aD = oD;
-        const lD = class e extends Nr {
+        let uD = cD;
+        const mD = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47391,9 +47423,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        lD.runtime = Ks, lD.typeName = "aiserver.v1.SwProvideTemporaryAccessTokenResponse", lD.fields = Ks.util.newFieldList(() => []);
-        let cD = lD;
-        const uD = class e extends Nr {
+        mD.runtime = Ks, mD.typeName = "aiserver.v1.SwProvideTemporaryAccessTokenResponse", mD.fields = Ks.util.newFieldList(() => []);
+        let dD = mD;
+        const gD = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47410,9 +47442,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        uD.runtime = Ks, uD.typeName = "aiserver.v1.ShadowHealthCheckRequest", uD.fields = Ks.util.newFieldList(() => []);
-        let mD = uD;
-        const dD = class e extends Nr {
+        gD.runtime = Ks, gD.typeName = "aiserver.v1.ShadowHealthCheckRequest", gD.fields = Ks.util.newFieldList(() => []);
+        let ED = gD;
+        const fD = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47429,9 +47461,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        dD.runtime = Ks, dD.typeName = "aiserver.v1.ShadowHealthCheckResponse", dD.fields = Ks.util.newFieldList(() => []);
-        let gD = dD;
-        const ED = class e extends Nr {
+        fD.runtime = Ks, fD.typeName = "aiserver.v1.ShadowHealthCheckResponse", fD.fields = Ks.util.newFieldList(() => []);
+        let hD = fD;
+        const ID = class e extends Nr {
             constructor(e) {
                 super(), this.pathEncryptionKey = "", Ks.util.initPartial(e, this)
             }
@@ -47448,11 +47480,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ED.runtime = Ks, ED.typeName = "aiserver.v1.SwSyncIndexRequest", ED.fields = Ks.util.newFieldList(() => [{
+        ID.runtime = Ks, ID.typeName = "aiserver.v1.SwSyncIndexRequest", ID.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "repository_info",
             kind: "message",
-            T: gh
+            T: Eh
         }, {
             no: 2,
             name: "path_encryption_key",
@@ -47465,8 +47497,8 @@
             T: 1,
             opt: !0
         }]);
-        let fD = ED;
-        const hD = class e extends Nr {
+        let BD = ID;
+        const CD = class e extends Nr {
             constructor(e) {
                 super(), Ks.util.initPartial(e, this)
             }
@@ -47483,9 +47515,9 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        hD.runtime = Ks, hD.typeName = "aiserver.v1.SwSyncIndexResponse", hD.fields = Ks.util.newFieldList(() => []);
-        let ID = hD;
-        const BD = class e extends Nr {
+        CD.runtime = Ks, CD.typeName = "aiserver.v1.SwSyncIndexResponse", CD.fields = Ks.util.newFieldList(() => []);
+        let QD = CD;
+        const pD = class e extends Nr {
             constructor(e) {
                 super(), this.files = [], this.includeQuickFixes = !1, this.doNotUseInProdNewFilesShouldBeTemporarilyCreatedForIncreasedAccuracy = !1, Ks.util.initPartial(e, this)
             }
@@ -47502,11 +47534,11 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        BD.runtime = Ks, BD.typeName = "aiserver.v1.GetLintsForChangeRequest", BD.fields = Ks.util.newFieldList(() => [{
+        pD.runtime = Ks, pD.typeName = "aiserver.v1.GetLintsForChangeRequest", pD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "files",
             kind: "message",
-            T: pD,
+            T: TD,
             repeated: !0
         }, {
             no: 2,
@@ -47519,8 +47551,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let CD = BD;
-        const QD = class e extends Nr {
+        let yD = pD;
+        const wD = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.initialContent = "", this.finalContent = "", Ks.util.initPartial(e, this)
             }
@@ -47537,7 +47569,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        QD.runtime = Ks, QD.typeName = "aiserver.v1.GetLintsForChangeRequest.File", QD.fields = Ks.util.newFieldList(() => [{
+        wD.runtime = Ks, wD.typeName = "aiserver.v1.GetLintsForChangeRequest.File", wD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -47556,11 +47588,11 @@
             no: 4,
             name: "get_all_lints_not_just_delta_lints_for_ranges_in_final_model",
             kind: "message",
-            T: wD,
+            T: kD,
             opt: !0
         }]);
-        let pD = QD;
-        const yD = class e extends Nr {
+        let TD = wD;
+        const SD = class e extends Nr {
             constructor(e) {
                 super(), this.ranges = [], Ks.util.initPartial(e, this)
             }
@@ -47577,15 +47609,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        yD.runtime = Ks, yD.typeName = "aiserver.v1.GetLintsForChangeRequest.File.RangeCollection", yD.fields = Ks.util.newFieldList(() => [{
+        SD.runtime = Ks, SD.typeName = "aiserver.v1.GetLintsForChangeRequest.File.RangeCollection", SD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "ranges",
             kind: "message",
-            T: SD,
+            T: ND,
             repeated: !0
         }]);
-        let wD = yD;
-        const TD = class e extends Nr {
+        let kD = SD;
+        const RD = class e extends Nr {
             constructor(e) {
                 super(), this.startLineNumber = 0, this.startColumn = 0, this.endLineNumber = 0, this.endColumn = 0, Ks.util.initPartial(e, this)
             }
@@ -47602,7 +47634,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        TD.runtime = Ks, TD.typeName = "aiserver.v1.GetLintsForChangeRequest.File.IRange", TD.fields = Ks.util.newFieldList(() => [{
+        RD.runtime = Ks, RD.typeName = "aiserver.v1.GetLintsForChangeRequest.File.IRange", RD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "start_line_number",
             kind: "scalar",
@@ -47623,8 +47655,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let SD = TD;
-        const kD = class e extends Nr {
+        let ND = RD;
+        const _D = class e extends Nr {
             constructor(e) {
                 super(), this.lints = [], Ks.util.initPartial(e, this)
             }
@@ -47641,15 +47673,15 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        kD.runtime = Ks, kD.typeName = "aiserver.v1.GetLintsForChangeResponse", kD.fields = Ks.util.newFieldList(() => [{
+        _D.runtime = Ks, _D.typeName = "aiserver.v1.GetLintsForChangeResponse", _D.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "lints",
             kind: "message",
-            T: _D,
+            T: FD,
             repeated: !0
         }]);
-        let RD = kD;
-        const ND = class e extends Nr {
+        let DD = _D;
+        const JD = class e extends Nr {
             constructor(e) {
                 super(), this.message = "", this.severity = "", this.relativeWorkspacePath = "", this.startLineNumberOneIndexed = 0, this.startColumnOneIndexed = 0, this.endLineNumberInclusiveOneIndexed = 0, this.endColumnOneIndexed = 0, this.quickFixes = [], Ks.util.initPartial(e, this)
             }
@@ -47666,7 +47698,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        ND.runtime = Ks, ND.typeName = "aiserver.v1.GetLintsForChangeResponse.Lint", ND.fields = Ks.util.newFieldList(() => [{
+        JD.runtime = Ks, JD.typeName = "aiserver.v1.GetLintsForChangeResponse.Lint", JD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "message",
             kind: "scalar",
@@ -47705,11 +47737,11 @@
             no: 9,
             name: "quick_fixes",
             kind: "message",
-            T: JD,
+            T: LD,
             repeated: !0
         }]);
-        let _D = ND;
-        const DD = class e extends Nr {
+        let FD = JD;
+        const bD = class e extends Nr {
             constructor(e) {
                 super(), this.message = "", this.kind = "", this.isPreferred = !1, this.edits = [], Ks.util.initPartial(e, this)
             }
@@ -47726,7 +47758,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        DD.runtime = Ks, DD.typeName = "aiserver.v1.GetLintsForChangeResponse.Lint.QuickFix", DD.fields = Ks.util.newFieldList(() => [{
+        bD.runtime = Ks, bD.typeName = "aiserver.v1.GetLintsForChangeResponse.Lint.QuickFix", bD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "message",
             kind: "scalar",
@@ -47745,11 +47777,11 @@
             no: 4,
             name: "edits",
             kind: "message",
-            T: bD,
+            T: UD,
             repeated: !0
         }]);
-        let JD = DD;
-        const FD = class e extends Nr {
+        let LD = bD;
+        const vD = class e extends Nr {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.text = "", this.startLineNumberOneIndexed = 0, this.startColumnOneIndexed = 0, this.endLineNumberInclusiveOneIndexed = 0, this.endColumnOneIndexed = 0, Ks.util.initPartial(e, this)
             }
@@ -47766,7 +47798,7 @@
                 return Ks.util.equals(e, t, n)
             }
         };
-        FD.runtime = Ks, FD.typeName = "aiserver.v1.GetLintsForChangeResponse.Lint.QuickFix.Edit", FD.fields = Ks.util.newFieldList(() => [{
+        vD.runtime = Ks, vD.typeName = "aiserver.v1.GetLintsForChangeResponse.Lint.QuickFix.Edit", vD.fields = Ks.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -47797,93 +47829,93 @@
             kind: "scalar",
             T: 5
         }]);
-        let bD = FD;
-        const LD = {
+        let UD = vD;
+        const OD = {
                 typeName: "aiserver.v1.ShadowWorkspaceService",
                 methods: {
                     getLintsForChange: {
                         name: "GetLintsForChange",
-                        I: CD,
-                        O: RD,
+                        I: yD,
+                        O: DD,
                         kind: zs.Unary
                     },
                     shadowHealthCheck: {
                         name: "ShadowHealthCheck",
-                        I: mD,
-                        O: gD,
+                        I: ED,
+                        O: hD,
                         kind: zs.Unary
                     },
                     swSyncIndex: {
                         name: "SwSyncIndex",
-                        I: fD,
-                        O: ID,
+                        I: BD,
+                        O: QD,
                         kind: zs.Unary
                     },
                     swProvideTemporaryAccessToken: {
                         name: "SwProvideTemporaryAccessToken",
-                        I: aD,
-                        O: cD,
+                        I: uD,
+                        O: dD,
                         kind: zs.Unary
                     },
                     swCompileRepoIncludeExcludePatterns: {
                         name: "SwCompileRepoIncludeExcludePatterns",
-                        I: sD,
-                        O: AD,
+                        I: oD,
+                        O: lD,
                         kind: zs.Unary
                     },
                     swCallClientSideV2Tool: {
                         name: "SwCallClientSideV2Tool",
-                        I: eD,
-                        O: nD,
+                        I: rD,
+                        O: iD,
                         kind: zs.Unary
                     },
                     swGetExplicitContext: {
                         name: "SwGetExplicitContext",
-                        I: O_,
-                        O: P_,
+                        I: q_,
+                        O: G_,
                         kind: zs.Unary
                     },
                     swWriteTextFileWithLints: {
                         name: "SwWriteTextFileWithLints",
-                        I: b_,
-                        O: v_,
+                        I: U_,
+                        O: M_,
                         kind: zs.Unary
                     },
                     swGetEnvironmentInfo: {
                         name: "SwGetEnvironmentInfo",
-                        I: x_,
-                        O: Y_,
+                        I: H_,
+                        O: W_,
                         kind: zs.Unary
                     },
                     swGetLinterErrors: {
                         name: "SwGetLinterErrors",
-                        I: V_,
-                        O: X_,
+                        I: j_,
+                        O: Z_,
                         kind: zs.Unary
                     },
                     swGetMcpTools: {
                         name: "SwGetMcpTools",
-                        I: K_,
-                        O: z_,
+                        I: $_,
+                        O: tD,
                         kind: zs.Unary
                     },
                     swTrackModel: {
                         name: "SwTrackModel",
-                        I: S_,
-                        O: R_,
+                        I: N_,
+                        O: D_,
                         kind: zs.Unary
                     },
                     swCallDiagnosticsExecutor: {
                         name: "SwCallDiagnosticsExecutor",
-                        I: __,
-                        O: J_,
+                        I: F_,
+                        O: L_,
                         kind: zs.Unary
                     }
                 }
             },
-            vD = require("fs"),
-            UD = require("path");
-        class OD {
+            MD = require("fs"),
+            PD = require("path");
+        class qD {
             constructor(e, t) {
                 this.socketPath = e, this.shadowServer = t
             }
@@ -47891,17 +47923,17 @@
                 if (t.info("Starting shadow server", {
                         socketPath: this.socketPath
                     }), "win32" !== process.platform) {
-                    const e = UD.dirname(this.socketPath);
-                    vD.existsSync(e) || (vD.mkdirSync(e, {
+                    const e = PD.dirname(this.socketPath);
+                    MD.existsSync(e) || (MD.mkdirSync(e, {
                         recursive: !0
                     }), t.info("Created directory for socket path", {
                         directory: e
-                    })), vD.existsSync(this.socketPath) && (vD.unlinkSync(this.socketPath), t.info("Deleted existing socket file", {
+                    })), MD.existsSync(this.socketPath) && (MD.unlinkSync(this.socketPath), t.info("Deleted existing socket file", {
                         socketPath: this.socketPath
                     }))
                 }
                 const e = fr({
-                    routes: e => e.service(LD, this.shadowServer)
+                    routes: e => e.service(OD, this.shadowServer)
                 });
                 this.server = Ir.createServer(e), this.server.listen(this.socketPath), t.info("Listening on socket path", {
                     socketPath: this.socketPath
@@ -47911,15 +47943,15 @@
                 this.server?.close()
             }
         }
-        class MD {
+        class xD {
             async start(e, n) {
-                void 0 === this.server ? (this.server = new OD(e, n), await this.server.start()) : t.warn("Shadow server already started; not starting again.")
+                void 0 === this.server ? (this.server = new qD(e, n), await this.server.start()) : t.warn("Shadow server already started; not starting again.")
             }
             dispose() {
                 void 0 !== this.server && this.server.dispose()
             }
         }
-        var PD = function(e) {
+        var GD = function(e) {
                 if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
                 var t, n = e[Symbol.asyncIterator];
                 return n ? n.call(e) : (e = "function" == typeof __values ? __values(e) : e[Symbol.iterator](), t = {}, r("next"), r("throw"), r("return"), t[Symbol.asyncIterator] = function() {
@@ -47941,11 +47973,11 @@
                     }
                 }
             },
-            qD = function(e) {
-                return this instanceof qD ? (this.v = e, this) : new qD(e)
+            YD = function(e) {
+                return this instanceof YD ? (this.v = e, this) : new YD(e)
             };
 
-        function xD(e, t) {
+        function HD(e, t) {
             const n = function() {
                 return function(e, t, n) {
                     if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
@@ -47969,7 +48001,7 @@
 
                     function o(e, t) {
                         try {
-                            (n = s[e](t)).value instanceof qD ? Promise.resolve(n.value.v).then(a, l) : c(i[0][2], n)
+                            (n = s[e](t)).value instanceof YD ? Promise.resolve(n.value.v).then(a, l) : c(i[0][2], n)
                         } catch (e) {
                             c(i[0][3], e)
                         }
@@ -47989,8 +48021,8 @@
                     }
                 }(this, arguments, function*() {
                     var n, r;
-                    const s = yield qD(e);
-                    null === (n = null == t ? void 0 : t.onHeader) || void 0 === n || n.call(t, s.header), yield qD(yield* function(e) {
+                    const s = yield YD(e);
+                    null === (n = null == t ? void 0 : t.onHeader) || void 0 === n || n.call(t, s.header), yield YD(yield* function(e) {
                         var t, n;
                         return t = {}, r("next"), r("throw", function(e) {
                             throw e
@@ -48001,12 +48033,12 @@
                         function r(r, s) {
                             t[r] = e[r] ? function(t) {
                                 return (n = !n) ? {
-                                    value: qD(e[r](t)),
+                                    value: YD(e[r](t)),
                                     done: !1
                                 } : s ? s(t) : t
                             } : s
                         }
-                    }(PD(s.message))), null === (r = null == t ? void 0 : t.onTrailer) || void 0 === r || r.call(t, s.trailer)
+                    }(GD(s.message))), null === (r = null == t ? void 0 : t.onTrailer) || void 0 === r || r.call(t, s.trailer)
                 })
             }()[Symbol.asyncIterator]();
             return {
@@ -48015,7 +48047,7 @@
                 })
             }
         }
-        class GD {
+        class VD {
             async get(e) {
                 t.info("Getting shadow client", {
                     socketPath: e
@@ -48082,7 +48114,7 @@
                                     case X.ServerStreaming:
                                         return function(e, t, n) {
                                             return function(r, s) {
-                                                return xD(e.stream(t, n, null == s ? void 0 : s.signal, null == s ? void 0 : s.timeoutMs, null == s ? void 0 : s.headers, He([r]), null == s ? void 0 : s.contextValues), s)
+                                                return HD(e.stream(t, n, null == s ? void 0 : s.signal, null == s ? void 0 : s.timeoutMs, null == s ? void 0 : s.headers, He([r]), null == s ? void 0 : s.contextValues), s)
                                             }
                                         }(t, e, n);
                                     case X.ClientStreaming:
@@ -48094,7 +48126,7 @@
                                                 null === (u = null == s ? void 0 : s.onHeader) || void 0 === u || u.call(s, d.header);
                                                 let E = 0;
                                                 try {
-                                                    for (var f, h = !0, I = PD(d.message); !(i = (f = await I.next()).done); h = !0) l = f.value, h = !1, g = l, E++
+                                                    for (var f, h = !0, I = GD(d.message); !(i = (f = await I.next()).done); h = !0) l = f.value, h = !1, g = l, E++
                                                 } catch (e) {
                                                     o = {
                                                         error: e
@@ -48114,7 +48146,7 @@
                                     case X.BiDiStreaming:
                                         return function(e, t, n) {
                                             return function(r, s) {
-                                                return xD(e.stream(t, n, null == s ? void 0 : s.signal, null == s ? void 0 : s.timeoutMs, null == s ? void 0 : s.headers, r, null == s ? void 0 : s.contextValues), s)
+                                                return HD(e.stream(t, n, null == s ? void 0 : s.signal, null == s ? void 0 : s.timeoutMs, null == s ? void 0 : s.headers, r, null == s ? void 0 : s.contextValues), s)
                                             }
                                         }(t, e, n);
                                     default:
@@ -48122,16 +48154,16 @@
                                 }
                             })
                         }(e, t)
-                    }(LD, n);
+                    }(OD, n);
                 return r
             }
             dispose() {}
         }
 
-        function YD(t) {
-            const n = new MD;
+        function WD(t) {
+            const n = new xD;
             t.subscriptions.push(n);
-            const r = new GD;
+            const r = new VD;
             t.subscriptions.push(r), t.subscriptions.push(e.cursor.registerShadowClientProvider(r)), t.subscriptions.push(e.cursor.registerShadowServerProvider(n))
         }
     })();
@@ -48141,4 +48173,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/3dc559280adc5f931ade8e25c7b85393842acf30/extensions/cursor-shadow-workspace/dist/extension.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e603f703cd553a6bb3644711a3379bbbb31180/extensions/cursor-shadow-workspace/dist/extension.js.map

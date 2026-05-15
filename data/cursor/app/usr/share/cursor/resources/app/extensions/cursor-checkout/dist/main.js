@@ -175,11 +175,13 @@
             t?.isCancellationRequested && c.abort();
             try {
                 this.throwIfCancelled(t);
-                const e = await this.executeGitCommandStable(r, ["rev-parse", "--abbrev-ref", "HEAD"], c.signal),
-                    l = this.resolveCurrentBranchName(this.normalizeCurrentBranchRef(e)),
-                    h = `cursor/cloud-agent-${Date.now()}-${Math.random().toString(36).substring(2,7)}`,
-                    m = n.join(i.tmpdir(), `cursor-worktree-${h.replace(/\//g,"-")}`);
-                await this.executeGitCommandStable(r, ["worktree", "add", "-b", h, m, l], c.signal);
+                const l = await this.executeGitCommandStable(r, ["rev-parse", "--abbrev-ref", "HEAD"], c.signal),
+                    h = this.resolveCurrentBranchName(this.normalizeCurrentBranchRef(l)),
+                    m = Date.now(),
+                    u = Math.random().toString(36).substring(2, 7),
+                    d = `${e?.branchPrefix?.trim()||"cursor/"}cloud-agent-${m}-${u}`,
+                    w = n.join(i.tmpdir(), `cursor-worktree-${d.replace(/\//g,"-")}`);
+                await this.executeGitCommandStable(r, ["worktree", "add", "-b", d, w, h], c.signal);
                 try {
                     const e = await this.executeGitCommandStable(r, ["status", "--porcelain", "-uall"], c.signal);
                     for (const t of e.split("\n")) {
@@ -190,7 +192,7 @@
                         const s = i.indexOf(" -> ");
                         let o; - 1 !== s && (o = i.substring(0, s), i = i.substring(s + 4));
                         const c = n.join(r, i),
-                            l = n.join(m, i);
+                            l = n.join(w, i);
                         if ("D" === e) try {
                             await a.workspace.fs.delete(a.Uri.file(l))
                         } catch {} else try {
@@ -200,17 +202,21 @@
                             })
                         } catch {}
                         if (o) try {
-                            await a.workspace.fs.delete(a.Uri.file(n.join(m, o)))
+                            await a.workspace.fs.delete(a.Uri.file(n.join(w, o)))
                         } catch {}
                     }
-                    if (await this.executeGitCommandStable(m, ["add", "-A"], c.signal), !(await this.executeGitCommandStable(m, ["status", "--porcelain"], c.signal)).trim()) throw new Error("No changes were captured in the snapshot worktree");
-                    await this.executeGitCommandStable(m, ["commit", "-m", o], c.signal), await this.executeGitCommandStable(m, ["push", "--set-upstream", s, h], c.signal)
+                    if (await this.executeGitCommandStable(w, ["add", "-A"], c.signal), !(await this.executeGitCommandStable(w, ["status", "--porcelain"], c.signal)).trim()) throw new Error("No changes were captured in the snapshot worktree");
+                    await this.executeGitCommandStable(w, ["commit", "-m", o], c.signal), await this.executeGitCommandStable(w, ["push", "--set-upstream", s, d], c.signal)
                 } finally {
                     try {
-                        await this.executeGitCommandStable(r, ["worktree", "remove", "--force", m])
+                        await this.executeGitCommandStable(r, ["worktree", "remove", "--force", w])
                     } catch {}
                 }
-                return h
+                if (e?.stashLocalChangesAfterPush) try {
+                    const t = e.stashMessage ?? "Cursor: moved local changes to cloud agent";
+                    await this.executeGitCommandStable(r, ["stash", "push", "--include-untracked", "-m", t], c.signal)
+                } catch {}
+                return d
             } finally {
                 l?.dispose()
             }
@@ -235,4 +241,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/3dc559280adc5f931ade8e25c7b85393842acf30/extensions/cursor-checkout/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/93e603f703cd553a6bb3644711a3379bbbb31180/extensions/cursor-checkout/dist/main.js.map

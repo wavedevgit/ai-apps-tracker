@@ -9168,6 +9168,7 @@ __export(dist_exports, {
     Checkbox: () => Checkbox,
     Chip: () => Chip,
     Code: () => Code,
+    CollapsibleSection: () => CollapsibleSection,
     DiffStats: () => DiffStats,
     DiffView: () => DiffView,
     Divider: () => Divider,
@@ -9185,6 +9186,7 @@ __export(dist_exports, {
     Spacer: () => Spacer,
     Stack: () => Stack,
     Stat: () => Stat,
+    Swatch: () => Swatch,
     Table: () => Table,
     Tag: () => Tag,
     Text: () => Text,
@@ -9193,19 +9195,20 @@ __export(dist_exports, {
     TodoList: () => TodoList,
     TodoListCard: () => TodoListCard,
     Toggle: () => Toggle,
+    UsageBar: () => UsageBar,
     canvasPaletteDark: () => canvasPaletteDark,
     canvasPaletteLight: () => canvasPaletteLight,
     canvasTokens: () => canvasTokens,
     canvasTokensLight: () => canvasTokensLight,
+    colorPalette: () => colorPalette,
     computeDAGLayout: () => computeDAGLayout,
     mergeStyle: () => mergeStyle,
+    usageColorSequence: () => usageColorSequence,
     useCanvasAction: () => useCanvasAction,
     useCanvasState: () => useCanvasState,
     useHostTheme: () => useHostTheme
 });
-var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1),
-    import_react4 = __toESM(require_react(), 1),
-    canvasPaletteDark = {
+var canvasPaletteDark = {
         foreground: "#E4E4E4EB",
         foregroundSecondary: "#E4E4E48D",
         foregroundTertiary: "#E4E4E45E",
@@ -9279,6 +9282,16 @@ var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1),
         muted: "#8888A8E0",
         neutralLine: "#888899D0"
     },
+    colorPalette = {
+        gray: chartPalette.muted,
+        purple: chartPalette.purple,
+        green: chartPalette.green,
+        yellow: chartPalette.goldenYellow,
+        pink: chartPalette.warmPink,
+        blue: chartPalette.blue,
+        orange: chartPalette.brightOrange
+    },
+    usageColorSequence = ["gray", "purple", "green", "yellow", "pink", "blue", "orange"],
     chartColorSequence = [chartPalette.green, chartPalette.lightBlue, chartPalette.indigo, chartPalette.brightOrange, chartPalette.deepOrange, chartPalette.goldenYellow, chartPalette.warmPink, chartPalette.warmPeach, chartPalette.purple, chartPalette.mintGreen, chartPalette.muted, chartPalette.vibrantTeal];
 
 function buildTokens(e) {
@@ -9322,6 +9335,8 @@ function buildTokens(e) {
 }
 var canvasTokens = buildTokens(canvasPaletteDark),
     canvasTokensLight = buildTokens(canvasPaletteLight),
+    import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1),
+    import_react4 = __toESM(require_react(), 1),
     import_react2 = __toESM(require_react(), 1);
 
 function dispatchCanvasAction(e) {
@@ -9643,7 +9658,10 @@ function Table({
     const u = e.length,
         p = {
             minWidth: "100%",
-            borderCollapse: "collapse",
+            borderCollapse: i ? "separate" : "collapse",
+            ...i ? {
+                borderSpacing: 0
+            } : void 0,
             tableLayout: "auto",
             fontSize: canvasTypography.body.fontSize,
             lineHeight: canvasTypography.body.lineHeight,
@@ -9655,15 +9673,17 @@ function Table({
             textAlign: m(e),
             fontWeight: 600,
             color: c.text.primary,
-            borderBottom: `1px solid ${c.stroke.secondary}`
-        }),
-        g = {
-            background: c.fill.quaternary,
+            borderBottom: `1px solid ${c.stroke.secondary}`,
             ...i ? {
                 position: "sticky",
                 top: 0,
-                zIndex: 2
-            } : {}
+                zIndex: 2,
+                backgroundColor: c.bg.editor,
+                backgroundImage: `linear-gradient(${c.fill.quaternary}, ${c.fill.quaternary})`
+            } : void 0
+        }),
+        g = {
+            background: i ? void 0 : c.fill.quaternary
         },
         b = e => ({
             ...tableCellPadding,
@@ -9721,6 +9741,12 @@ function Table({
         style: {
             width: "100%",
             minWidth: 0,
+            boxSizing: "border-box",
+            ...i ? {
+                height: "100%",
+                maxHeight: "100%",
+                minHeight: 0
+            } : void 0,
             border: `1px solid ${c.stroke.tertiary}`,
             borderRadius: `${canvasRadius.lg}px`,
             background: c.bg.editor,
@@ -11293,6 +11319,112 @@ function PieChart({
         })]
     })
 }
+var import_jsx_runtime3 = __toESM(require_jsx_runtime(), 1),
+    import_react5 = __toESM(require_react(), 1);
+
+function CollapsibleSection({
+    title: e,
+    leading: n,
+    count: t,
+    trailing: a,
+    children: r,
+    style: s
+}) {
+    const {
+        tokens: i
+    } = useHostTheme(), [o, l] = (0, import_react5.useState)(!1), c = (0, import_react5.useId)(), u = (0, import_react5.useCallback)(() => {
+        l(e => !e)
+    }, []), p = {
+        boxSizing: "border-box",
+        appearance: "none",
+        border: "none",
+        background: "transparent",
+        margin: 0,
+        padding: `${canvasSpacing[2]}px 0`,
+        width: "100%",
+        minWidth: 0,
+        display: "flex",
+        alignItems: "center",
+        gap: `${canvasSpacing[2]}px`,
+        cursor: "pointer",
+        textAlign: "left",
+        color: i.text.primary,
+        font: "inherit",
+        transition: "color 100ms ease"
+    }, m = {
+        color: i.text.quaternary,
+        display: "inline-flex",
+        flexShrink: 0
+    }, d = {
+        flex: 1,
+        minWidth: 0,
+        overflow: "hidden",
+        textOverflow: "ellipsis",
+        whiteSpace: "nowrap",
+        color: i.text.primary,
+        fontSize: canvasTypography.body.fontSize,
+        lineHeight: canvasTypography.body.lineHeight,
+        fontWeight: canvasTypography.body.fontWeight
+    }, g = {
+        flexShrink: 0,
+        color: i.text.secondary,
+        fontVariantNumeric: "tabular-nums",
+        fontSize: canvasTypography.body.fontSize,
+        lineHeight: canvasTypography.body.lineHeight
+    }, b = {
+        flexShrink: 0,
+        display: "inline-flex",
+        alignItems: "center",
+        color: i.text.tertiary,
+        fontVariantNumeric: "tabular-nums",
+        fontSize: canvasTypography.body.fontSize,
+        lineHeight: canvasTypography.body.lineHeight
+    }, h = {
+        paddingLeft: `${canvasSpacing[5]}px`,
+        paddingBottom: `${canvasSpacing[2]}px`,
+        minWidth: 0
+    };
+    return (0, import_jsx_runtime3.jsxs)("div", {
+        style: mergeStyle({
+            boxSizing: "border-box",
+            display: "flex",
+            flexDirection: "column",
+            minWidth: 0,
+            width: "100%"
+        }, s),
+        children: [(0, import_jsx_runtime3.jsxs)("button", {
+            type: "button",
+            onClick: u,
+            "aria-expanded": o,
+            "aria-controls": c,
+            style: p,
+            children: [(0, import_jsx_runtime3.jsx)("span", {
+                style: m,
+                children: (0, import_jsx_runtime3.jsx)(CanvasChevron, {
+                    expanded: o
+                })
+            }), null != n ? (0, import_jsx_runtime3.jsx)("span", {
+                style: {
+                    flexShrink: 0
+                },
+                children: n
+            }) : null, (0, import_jsx_runtime3.jsx)("span", {
+                style: d,
+                children: e
+            }), null != t ? (0, import_jsx_runtime3.jsx)("span", {
+                style: g,
+                children: t
+            }) : null, null != a ? (0, import_jsx_runtime3.jsx)("span", {
+                style: b,
+                children: a
+            }) : null]
+        }), o ? (0, import_jsx_runtime3.jsx)("div", {
+            id: c,
+            style: h,
+            children: r
+        }) : null]
+    })
+}
 
 function findBackEdges(e, n, t) {
     const a = new Map;
@@ -11479,7 +11611,7 @@ function computeAnchors(e, n, t, a, r, s) {
         targetY: n.y + a / 2
     }
 }
-var import_jsx_runtime3 = __toESM(require_jsx_runtime(), 1),
+var import_jsx_runtime4 = __toESM(require_jsx_runtime(), 1),
     lang = Object.freeze(JSON.parse('{"displayName":"Shell","name":"shellscript","patterns":[{"include":"#initial_context"}],"repository":{"alias_statement":{"begin":"[\\\\t ]*+(alias)[\\\\t ]*+((?:((?<!\\\\w)-\\\\w+)\\\\b[\\\\t ]*+)*)[\\\\t ]*+((?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w))(?:(\\\\[)((?:(?:\\\\$?(?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w)|@)|\\\\*)|(-?\\\\d+))(]))?(?:(?:(=)|(\\\\+=))|(-=))","beginCaptures":{"1":{"name":"storage.type.alias.shell"},"2":{"patterns":[{"match":"(?<!\\\\w)-\\\\w+\\\\b","name":"string.unquoted.argument.shell constant.other.option.shell"}]},"3":{"name":"string.unquoted.argument.shell constant.other.option.shell"},"4":{"name":"variable.other.assignment.shell"},"5":{"name":"punctuation.definition.array.access.shell"},"6":{"name":"variable.other.assignment.shell"},"7":{"name":"constant.numeric.shell constant.numeric.integer.shell"},"8":{"name":"punctuation.definition.array.access.shell"},"9":{"name":"keyword.operator.assignment.shell"},"10":{"name":"keyword.operator.assignment.compound.shell"},"11":{"name":"keyword.operator.assignment.compound.shell"}},"end":"(?=[\\\\t ]|$)|(?:(?:(?:(;)|(&&))|(\\\\|\\\\|))|(&))","endCaptures":{"1":{"name":"punctuation.terminator.statement.semicolon.shell"},"2":{"name":"punctuation.separator.statement.and.shell"},"3":{"name":"punctuation.separator.statement.or.shell"},"4":{"name":"punctuation.separator.statement.background.shell"}},"name":"meta.expression.assignment.alias.shell","patterns":[{"include":"#normal_context"}]},"argument":{"begin":"[\\\\t ]++(?![\\\\n#\\\\&(\\\\[|]|$|;)","beginCaptures":{},"end":"(?=[\\\\t \\\\&;|]|$|[\\\\n)`])","endCaptures":{},"name":"meta.argument.shell","patterns":[{"include":"#argument_context"},{"include":"#line_continuation"}]},"argument_context":{"patterns":[{"captures":{"1":{"name":"string.unquoted.argument.shell","patterns":[{"match":"\\\\*","name":"variable.language.special.wildcard.shell"},{"include":"#variable"},{"include":"#numeric_literal"},{"captures":{"1":{"name":"constant.language.$1.shell"}},"match":"(?<!\\\\w)\\\\b(true|false)\\\\b(?!\\\\w)"}]}},"match":"[\\\\t ]*+([^\\\\t\\\\n \\"$\\\\&-);<>\\\\\\\\`|]+(?!>))"},{"include":"#normal_context"}]},"arithmetic_double":{"patterns":[{"begin":"\\\\(\\\\(","beginCaptures":{"0":{"name":"punctuation.section.arithmetic.double.shell"}},"end":"\\\\)\\\\s*\\\\)","endCaptures":{"0":{"name":"punctuation.section.arithmetic.double.shell"}},"name":"meta.arithmetic.shell","patterns":[{"include":"#math"},{"include":"#string"}]}]},"arithmetic_no_dollar":{"patterns":[{"begin":"\\\\(","beginCaptures":{"0":{"name":"punctuation.section.arithmetic.single.shell"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.arithmetic.single.shell"}},"name":"meta.arithmetic.shell","patterns":[{"include":"#math"},{"include":"#string"}]}]},"array_access_inline":{"captures":{"1":{"name":"punctuation.section.array.shell"},"2":{"patterns":[{"include":"#special_expansion"},{"include":"#string"},{"include":"#variable"}]},"3":{"name":"punctuation.section.array.shell"}},"match":"(\\\\[)([^]\\\\[]+)(])"},"array_value":{"begin":"[\\\\t ]*+((?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w))(?:(\\\\[)((?:(?:\\\\$?(?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w)|@)|\\\\*)|(-?\\\\d+))(]))?(?:(?:(=)|(\\\\+=))|(-=))[\\\\t ]*+(\\\\()","beginCaptures":{"1":{"name":"variable.other.assignment.shell"},"2":{"name":"punctuation.definition.array.access.shell"},"3":{"name":"variable.other.assignment.shell"},"4":{"name":"constant.numeric.shell constant.numeric.integer.shell"},"5":{"name":"punctuation.definition.array.access.shell"},"6":{"name":"keyword.operator.assignment.shell"},"7":{"name":"keyword.operator.assignment.compound.shell"},"8":{"name":"keyword.operator.assignment.compound.shell"},"9":{"name":"punctuation.definition.array.shell"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.definition.array.shell"}},"patterns":[{"include":"#comment"},{"captures":{"1":{"name":"variable.other.assignment.array.shell entity.other.attribute-name.shell"},"2":{"name":"keyword.operator.assignment.shell punctuation.definition.assignment.shell"}},"match":"((?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w))(=)"},{"captures":{"1":{"name":"punctuation.definition.bracket.named-array.shell"},"2":{"name":"string.unquoted.shell entity.other.attribute-name.bracket.shell"},"3":{"name":"punctuation.definition.bracket.named-array.shell"},"4":{"name":"punctuation.definition.assignment.shell"}},"match":"(\\\\[)(.+?)(])(=)"},{"include":"#normal_context"},{"include":"#simple_unquoted"}]},"assignment_statement":{"patterns":[{"include":"#array_value"},{"include":"#modified_assignment_statement"},{"include":"#normal_assignment_statement"}]},"basic_command_name":{"captures":{"1":{"name":"storage.modifier.$1.shell"},"2":{"name":"entity.name.function.call.shell entity.name.command.shell","patterns":[{"match":"(?<!\\\\w)(?:continue|return|break)(?!\\\\w)","name":"keyword.control.$0.shell"},{"match":"(?<!\\\\w)(?:unfunction|continue|autoload|unsetopt|bindkey|builtin|getopts|command|declare|unalias|history|unlimit|typeset|suspend|source|printf|unhash|disown|ulimit|return|which|alias|break|false|print|shift|times|umask|unset|read|type|exec|eval|wait|echo|dirs|jobs|kill|hash|stat|exit|test|trap|true|let|set|pwd|cd|fg|bg|fc|[.:])(?!/)(?!\\\\w)(?!-)","name":"support.function.builtin.shell"},{"include":"#variable"}]}},"match":"(?![\\\\n!#\\\\&()<>\\\\[{|]|$|[\\\\t ;])(?!nocorrect |nocorrect\\\\t|nocorrect$|readonly |readonly\\\\t|readonly$|function |function\\\\t|function$|foreach |foreach\\\\t|foreach$|coproc |coproc\\\\t|coproc$|logout |logout\\\\t|logout$|export |export\\\\t|export$|select |select\\\\t|select$|repeat |repeat\\\\t|repeat$|pushd |pushd\\\\t|pushd$|until |until\\\\t|until$|while |while\\\\t|while$|local |local\\\\t|local$|case |case\\\\t|case$|done |done\\\\t|done$|elif |elif\\\\t|elif$|else |else\\\\t|else$|esac |esac\\\\t|esac$|popd |popd\\\\t|popd$|then |then\\\\t|then$|time |time\\\\t|time$|for |for\\\\t|for$|end |end\\\\t|end$|fi |fi\\\\t|fi$|do |do\\\\t|do$|in |in\\\\t|in$|if |if\\\\t|if$)(?:((?<=^|[\\\\t \\\\&;])(?:readonly|declare|typeset|export|local)(?=[\\\\t \\\\&;]|$))|((?![\\"\']|\\\\\\\\\\\\n?$)[^\\\\t\\\\n\\\\r !\\"\'<>]+?))(?:(?=[\\\\t ])|(?=[\\\\n\\\\&);`{|}]|[\\\\t ]*#|])(?<!\\\\\\\\))","name":"meta.statement.command.name.basic.shell"},"block_comment":{"begin":"\\\\s*+(/\\\\*)","beginCaptures":{"1":{"name":"punctuation.definition.comment.begin.shell"}},"end":"\\\\*/","endCaptures":{"0":{"name":"punctuation.definition.comment.end.shell"}},"name":"comment.block.shell"},"boolean":{"match":"\\\\b(?:true|false)\\\\b","name":"constant.language.$0.shell"},"case_statement":{"begin":"\\\\b(case)\\\\b[\\\\t ]*+(.+?)[\\\\t ]*+\\\\b(in)\\\\b","beginCaptures":{"1":{"name":"keyword.control.case.shell"},"2":{"patterns":[{"include":"#initial_context"}]},"3":{"name":"keyword.control.in.shell"}},"end":"\\\\besac\\\\b","endCaptures":{"0":{"name":"keyword.control.esac.shell"}},"name":"meta.case.shell","patterns":[{"include":"#comment"},{"captures":{"1":{"name":"keyword.operator.pattern.case.default.shell"}},"match":"[\\\\t ]*+(\\\\* *\\\\))"},{"begin":"(?<!\\\\))(?![\\\\t ]*+(?:esac\\\\b|$))","beginCaptures":{},"end":"(?=\\\\besac\\\\b)|(\\\\))","endCaptures":{"1":{"name":"keyword.operator.pattern.case.shell"}},"name":"meta.case.entry.pattern.shell","patterns":[{"include":"#case_statement_context"}]},{"begin":"(?<=\\\\))","beginCaptures":{},"end":"(;;)|(?=\\\\besac\\\\b)","endCaptures":{"1":{"name":"punctuation.terminator.statement.case.shell"}},"name":"meta.case.entry.body.shell","patterns":[{"include":"#typical_statements"},{"include":"#initial_context"}]}]},"case_statement_context":{"patterns":[{"match":"\\\\*","name":"variable.language.special.quantifier.star.shell keyword.operator.quantifier.star.shell punctuation.definition.arbitrary-repetition.shell punctuation.definition.regex.arbitrary-repetition.shell"},{"match":"\\\\+","name":"variable.language.special.quantifier.plus.shell keyword.operator.quantifier.plus.shell punctuation.definition.arbitrary-repetition.shell punctuation.definition.regex.arbitrary-repetition.shell"},{"match":"\\\\?","name":"variable.language.special.quantifier.question.shell keyword.operator.quantifier.question.shell punctuation.definition.arbitrary-repetition.shell punctuation.definition.regex.arbitrary-repetition.shell"},{"match":"@","name":"variable.language.special.at.shell keyword.operator.at.shell punctuation.definition.regex.at.shell"},{"match":"\\\\|","name":"keyword.operator.orvariable.language.special.or.shell keyword.operator.alternation.ruby.shell punctuation.definition.regex.alternation.shell punctuation.separator.regex.alternation.shell"},{"match":"\\\\\\\\.","name":"constant.character.escape.shell"},{"match":"(?<=\\\\tin| in|[\\\\t ]|;;)\\\\(","name":"keyword.operator.pattern.case.shell"},{"begin":"(?<=\\\\S)(\\\\()","beginCaptures":{"1":{"name":"punctuation.definition.group.shell punctuation.definition.regex.group.shell"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.definition.group.shell punctuation.definition.regex.group.shell"}},"name":"meta.parenthese.shell","patterns":[{"include":"#case_statement_context"}]},{"begin":"\\\\[","beginCaptures":{"0":{"name":"punctuation.definition.character-class.shell"}},"end":"]","endCaptures":{"0":{"name":"punctuation.definition.character-class.shell"}},"name":"string.regexp.character-class.shell","patterns":[{"match":"\\\\\\\\.","name":"constant.character.escape.shell"}]},{"include":"#string"},{"match":"[^\\\\t\\\\n )*?@\\\\[|]","name":"string.unquoted.pattern.shell string.regexp.unquoted.shell"}]},"command_name_range":{"begin":"\\\\G","beginCaptures":{},"end":"(?=[\\\\t \\\\&;|]|$|[\\\\n)`])|(?=<)","endCaptures":{},"name":"meta.statement.command.name.shell","patterns":[{"match":"(?<!\\\\w)(?:continue|return|break)(?!\\\\w)","name":"entity.name.function.call.shell entity.name.command.shell keyword.control.$0.shell"},{"match":"(?<!\\\\w)(?:unfunction|continue|autoload|unsetopt|bindkey|builtin|getopts|command|declare|unalias|history|unlimit|typeset|suspend|source|printf|unhash|disown|ulimit|return|which|alias|break|false|print|shift|times|umask|unset|read|type|exec|eval|wait|echo|dirs|jobs|kill|hash|stat|exit|test|trap|true|let|set|pwd|cd|fg|bg|fc|[.:])(?!/)(?!\\\\w)(?!-)","name":"entity.name.function.call.shell entity.name.command.shell support.function.builtin.shell"},{"include":"#variable"},{"captures":{"1":{"name":"entity.name.function.call.shell entity.name.command.shell"}},"match":"(?<!\\\\w)(?<=\\\\G|[\\"\')}])([^\\\\t\\\\n\\\\r \\"\\\\&\');->`{|]+)"},{"begin":"(?:\\\\G|(?<![\\\\t\\\\n #\\\\&;{|]))(\\\\$?)((\\")|(\'))","beginCaptures":{"1":{"name":"meta.statement.command.name.quoted.shell punctuation.definition.string.shell entity.name.function.call.shell entity.name.command.shell"},"2":{},"3":{"name":"meta.statement.command.name.quoted.shell string.quoted.double.shell punctuation.definition.string.begin.shell entity.name.function.call.shell entity.name.command.shell"},"4":{"name":"meta.statement.command.name.quoted.shell string.quoted.single.shell punctuation.definition.string.begin.shell entity.name.function.call.shell entity.name.command.shell"}},"end":"(?<!\\\\G)(?<=\\\\2)","endCaptures":{},"patterns":[{"include":"#continuation_of_single_quoted_command_name"},{"include":"#continuation_of_double_quoted_command_name"}]},{"include":"#line_continuation"},{"include":"#simple_unquoted"}]},"command_statement":{"begin":"[\\\\t ]*+(?![\\\\n!#\\\\&()<>\\\\[{|]|$|[\\\\t ;])(?!nocorrect |nocorrect\\\\t|nocorrect$|readonly |readonly\\\\t|readonly$|function |function\\\\t|function$|foreach |foreach\\\\t|foreach$|coproc |coproc\\\\t|coproc$|logout |logout\\\\t|logout$|export |export\\\\t|export$|select |select\\\\t|select$|repeat |repeat\\\\t|repeat$|pushd |pushd\\\\t|pushd$|until |until\\\\t|until$|while |while\\\\t|while$|local |local\\\\t|local$|case |case\\\\t|case$|done |done\\\\t|done$|elif |elif\\\\t|elif$|else |else\\\\t|else$|esac |esac\\\\t|esac$|popd |popd\\\\t|popd$|then |then\\\\t|then$|time |time\\\\t|time$|for |for\\\\t|for$|end |end\\\\t|end$|fi |fi\\\\t|fi$|do |do\\\\t|do$|in |in\\\\t|in$|if |if\\\\t|if$)(?!\\\\\\\\\\\\n?$)","beginCaptures":{},"end":"(?=[\\\\n\\\\&);`{|}]|[\\\\t ]*#|])(?<!\\\\\\\\)","endCaptures":{},"name":"meta.statement.command.shell","patterns":[{"include":"#command_name_range"},{"include":"#line_continuation"},{"include":"#option"},{"include":"#argument"},{"include":"#string"},{"include":"#heredoc"}]},"comment":{"captures":{"1":{"name":"comment.line.number-sign.shell meta.shebang.shell"},"2":{"name":"punctuation.definition.comment.shebang.shell"},"3":{"name":"comment.line.number-sign.shell"},"4":{"name":"punctuation.definition.comment.shell"}},"match":"(?:^|[\\\\t ]++)(?:((#!).*)|((#).*))"},"comments":{"patterns":[{"include":"#block_comment"},{"include":"#line_comment"}]},"compound-command":{"patterns":[{"begin":"\\\\[","beginCaptures":{"0":{"name":"punctuation.definition.logical-expression.shell"}},"end":"]","endCaptures":{"0":{"name":"punctuation.definition.logical-expression.shell"}},"name":"meta.scope.logical-expression.shell","patterns":[{"include":"#logical-expression"},{"include":"#initial_context"}]},{"begin":"(?<=\\\\s|^)\\\\{(?=\\\\s|$)","beginCaptures":{"0":{"name":"punctuation.definition.group.shell"}},"end":"(?<=^|;)\\\\s*(})","endCaptures":{"1":{"name":"punctuation.definition.group.shell"}},"name":"meta.scope.group.shell","patterns":[{"include":"#initial_context"}]}]},"continuation_of_double_quoted_command_name":{"begin":"\\\\G(?<=\\")","beginCaptures":{},"contentName":"meta.statement.command.name.continuation string.quoted.double entity.name.function.call entity.name.command","end":"\\"","endCaptures":{"0":{"name":"string.quoted.double.shell punctuation.definition.string.end.shell entity.name.function.call.shell entity.name.command.shell"}},"patterns":[{"match":"\\\\\\\\[\\\\n\\"$\\\\\\\\`]","name":"constant.character.escape.shell"},{"include":"#variable"},{"include":"#interpolation"}]},"continuation_of_single_quoted_command_name":{"begin":"\\\\G(?<=\')","beginCaptures":{},"contentName":"meta.statement.command.name.continuation string.quoted.single entity.name.function.call entity.name.command","end":"\'","endCaptures":{"0":{"name":"string.quoted.single.shell punctuation.definition.string.end.shell entity.name.function.call.shell entity.name.command.shell"}}},"custom_command_names":{"patterns":[]},"custom_commands":{"patterns":[]},"double_quote_context":{"patterns":[{"match":"\\\\\\\\[\\\\n\\"$\\\\\\\\`]","name":"constant.character.escape.shell"},{"include":"#variable"},{"include":"#interpolation"}]},"double_quote_escape_char":{"match":"\\\\\\\\[\\\\n\\"$\\\\\\\\`]","name":"constant.character.escape.shell"},"floating_keyword":{"patterns":[{"match":"(?<=^|[\\\\t \\\\&;])(?:then|elif|else|done|end|do|if|fi)(?=[\\\\t \\\\&;]|$)","name":"keyword.control.$0.shell"}]},"for_statement":{"patterns":[{"begin":"\\\\b(for)\\\\b[\\\\t ]*+((?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w))[\\\\t ]*+\\\\b(in)\\\\b","beginCaptures":{"1":{"name":"keyword.control.for.shell"},"2":{"name":"variable.other.for.shell"},"3":{"name":"keyword.control.in.shell"}},"end":"(?=[\\\\n\\\\&);`{|}]|[\\\\t ]*#|])(?<!\\\\\\\\)","endCaptures":{},"name":"meta.for.in.shell","patterns":[{"include":"#string"},{"include":"#simple_unquoted"},{"include":"#normal_context"}]},{"begin":"\\\\b(for)\\\\b","beginCaptures":{"1":{"name":"keyword.control.for.shell"}},"end":"(?=[\\\\n\\\\&);`{|}]|[\\\\t ]*#|])(?<!\\\\\\\\)","endCaptures":{},"name":"meta.for.shell","patterns":[{"include":"#arithmetic_double"},{"include":"#normal_context"}]}]},"function_definition":{"applyEndPatternLast":1,"begin":"[\\\\t ]*+(?:\\\\b(function)\\\\b[\\\\t ]*+([^\\\\t\\\\n\\\\r \\"\'()=]+)(?:(\\\\()[\\\\t ]*+(\\\\)))?|([^\\\\t\\\\n\\\\r \\"\'()=]+)[\\\\t ]*+(\\\\()[\\\\t ]*+(\\\\)))","beginCaptures":{"1":{"name":"storage.type.function.shell"},"2":{"name":"entity.name.function.shell"},"3":{"name":"punctuation.definition.arguments.shell"},"4":{"name":"punctuation.definition.arguments.shell"},"5":{"name":"entity.name.function.shell"},"6":{"name":"punctuation.definition.arguments.shell"},"7":{"name":"punctuation.definition.arguments.shell"}},"end":"(?<=[)}])","endCaptures":{},"name":"meta.function.shell","patterns":[{"match":"\\\\G[\\\\t\\\\n ]"},{"begin":"\\\\{","beginCaptures":{"0":{"name":"punctuation.definition.group.shell punctuation.section.function.definition.shell"}},"end":"}","endCaptures":{"0":{"name":"punctuation.definition.group.shell punctuation.section.function.definition.shell"}},"name":"meta.function.body.shell","patterns":[{"include":"#initial_context"}]},{"begin":"\\\\(","beginCaptures":{"0":{"name":"punctuation.definition.group.shell punctuation.section.function.definition.shell"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.definition.group.shell punctuation.section.function.definition.shell"}},"name":"meta.function.body.shell","patterns":[{"include":"#initial_context"}]},{"include":"#initial_context"}]},"heredoc":{"patterns":[{"begin":"((?<!<)<<-)[\\\\t ]*+([\\"\'])[\\\\t ]*+([^\\"\']+?)(?=[\\"\\\\&\';<\\\\s])(\\\\2)(.*)","beginCaptures":{"1":{"name":"keyword.operator.heredoc.shell"},"2":{"name":"punctuation.definition.string.heredoc.quote.shell"},"3":{"name":"punctuation.definition.string.heredoc.delimiter.shell"},"4":{"name":"punctuation.definition.string.heredoc.quote.shell"},"5":{"patterns":[{"include":"#redirect_fix"},{"include":"#typical_statements"}]}},"contentName":"string.quoted.heredoc.indent.$3","end":"^\\\\t*\\\\3(?=[\\\\&;\\\\s]|$)","endCaptures":{"0":{"name":"punctuation.definition.string.heredoc.$0.shell"}},"patterns":[]},{"begin":"((?<!<)<<(?!<))[\\\\t ]*+([\\"\'])[\\\\t ]*+([^\\"\']+?)(?=[\\"\\\\&\';<\\\\s])(\\\\2)(.*)","beginCaptures":{"1":{"name":"keyword.operator.heredoc.shell"},"2":{"name":"punctuation.definition.string.heredoc.quote.shell"},"3":{"name":"punctuation.definition.string.heredoc.delimiter.shell"},"4":{"name":"punctuation.definition.string.heredoc.quote.shell"},"5":{"patterns":[{"include":"#redirect_fix"},{"include":"#typical_statements"}]}},"contentName":"string.quoted.heredoc.no-indent.$3","end":"^\\\\3(?=[\\\\&;\\\\s]|$)","endCaptures":{"0":{"name":"punctuation.definition.string.heredoc.delimiter.shell"}},"patterns":[]},{"begin":"((?<!<)<<-)[\\\\t ]*+([^\\\\t \\"\']+)(?=[\\"\\\\&\';<\\\\s])(.*)","beginCaptures":{"1":{"name":"keyword.operator.heredoc.shell"},"2":{"name":"punctuation.definition.string.heredoc.delimiter.shell"},"3":{"patterns":[{"include":"#redirect_fix"},{"include":"#typical_statements"}]}},"contentName":"string.unquoted.heredoc.indent.$2","end":"^\\\\t*\\\\2(?=[\\\\&;\\\\s]|$)","endCaptures":{"0":{"name":"punctuation.definition.string.heredoc.delimiter.shell"}},"patterns":[{"include":"#double_quote_escape_char"},{"include":"#variable"},{"include":"#interpolation"}]},{"begin":"((?<!<)<<(?!<))[\\\\t ]*+([^\\\\t \\"\']+)(?=[\\"\\\\&\';<\\\\s])(.*)","beginCaptures":{"1":{"name":"keyword.operator.heredoc.shell"},"2":{"name":"punctuation.definition.string.heredoc.delimiter.shell"},"3":{"patterns":[{"include":"#redirect_fix"},{"include":"#typical_statements"}]}},"contentName":"string.unquoted.heredoc.no-indent.$2","end":"^\\\\2(?=[\\\\&;\\\\s]|$)","endCaptures":{"0":{"name":"punctuation.definition.string.heredoc.delimiter.shell"}},"patterns":[{"include":"#double_quote_escape_char"},{"include":"#variable"},{"include":"#interpolation"}]}]},"herestring":{"patterns":[{"begin":"(<<<)\\\\s*((\'))","beginCaptures":{"1":{"name":"keyword.operator.herestring.shell"},"2":{"name":"string.quoted.single.shell"},"3":{"name":"punctuation.definition.string.begin.shell"}},"contentName":"string.quoted.single.shell","end":"(\')","endCaptures":{"0":{"name":"string.quoted.single.shell"},"1":{"name":"punctuation.definition.string.end.shell"}},"name":"meta.herestring.shell"},{"begin":"(<<<)\\\\s*((\\"))","beginCaptures":{"1":{"name":"keyword.operator.herestring.shell"},"2":{"name":"string.quoted.double.shell"},"3":{"name":"punctuation.definition.string.begin.shell"}},"contentName":"string.quoted.double.shell","end":"(\\")","endCaptures":{"0":{"name":"string.quoted.double.shell"},"1":{"name":"punctuation.definition.string.end.shell"}},"name":"meta.herestring.shell","patterns":[{"include":"#double_quote_context"}]},{"captures":{"1":{"name":"keyword.operator.herestring.shell"},"2":{"name":"string.unquoted.herestring.shell","patterns":[{"include":"#initial_context"}]}},"match":"(<<<)\\\\s*(([^)\\\\\\\\\\\\s]|\\\\\\\\.)+)","name":"meta.herestring.shell"}]},"initial_context":{"patterns":[{"include":"#comment"},{"include":"#pipeline"},{"include":"#normal_statement_seperator"},{"include":"#logical_expression_double"},{"include":"#logical_expression_single"},{"include":"#assignment_statement"},{"include":"#case_statement"},{"include":"#for_statement"},{"include":"#loop"},{"include":"#function_definition"},{"include":"#line_continuation"},{"include":"#arithmetic_double"},{"include":"#misc_ranges"},{"include":"#variable"},{"include":"#interpolation"},{"include":"#heredoc"},{"include":"#herestring"},{"include":"#redirection"},{"include":"#pathname"},{"include":"#floating_keyword"},{"include":"#alias_statement"},{"include":"#normal_statement"},{"include":"#string"},{"include":"#support"}]},"inline_comment":{"captures":{"1":{"name":"comment.block.shell punctuation.definition.comment.begin.shell"},"2":{"name":"comment.block.shell"},"3":{"patterns":[{"match":"\\\\*/","name":"comment.block.shell punctuation.definition.comment.end.shell"},{"match":"\\\\*","name":"comment.block.shell"}]}},"match":"(/\\\\*)((?:[^*]|\\\\*++[^/])*+(\\\\*++/))"},"interpolation":{"patterns":[{"include":"#arithmetic_dollar"},{"include":"#subshell_dollar"},{"begin":"`","beginCaptures":{"0":{"name":"punctuation.definition.evaluation.backticks.shell"}},"end":"`","endCaptures":{"0":{"name":"punctuation.definition.evaluation.backticks.shell"}},"name":"string.interpolated.backtick.shell","patterns":[{"match":"\\\\\\\\[$\\\\\\\\`]","name":"constant.character.escape.shell"},{"begin":"(?<=\\\\W)(?=#)(?!#\\\\{)","beginCaptures":{"1":{"name":"punctuation.whitespace.comment.leading.shell"}},"end":"(?!\\\\G)","patterns":[{"begin":"#","beginCaptures":{"0":{"name":"punctuation.definition.comment.shell"}},"end":"(?=`)","name":"comment.line.number-sign.shell"}]},{"include":"#initial_context"}]}]},"keyword":{"patterns":[{"match":"(?<=^|[\\\\&;\\\\s])(then|else|elif|fi|for|in|do|done|select|continue|esac|while|until|return)(?=[\\\\&;\\\\s]|$)","name":"keyword.control.shell"},{"match":"(?<=^|[\\\\&;\\\\s])(?:export|declare|typeset|local|readonly)(?=[\\\\&;\\\\s]|$)","name":"storage.modifier.shell"}]},"line_comment":{"begin":"\\\\s*+(//)","beginCaptures":{"1":{"name":"punctuation.definition.comment.shell"}},"end":"(?<=\\\\n)(?<!\\\\\\\\\\\\n)","endCaptures":{},"name":"comment.line.double-slash.shell","patterns":[{"include":"#line_continuation_character"}]},"line_continuation":{"match":"\\\\\\\\(?=\\\\n)","name":"constant.character.escape.line-continuation.shell"},"logical-expression":{"patterns":[{"include":"#arithmetic_no_dollar"},{"match":"=[=~]?|!=?|[<>]|&&|\\\\|\\\\|","name":"keyword.operator.logical.shell"},{"match":"(?<!\\\\S)-(nt|ot|ef|eq|ne|l[et]|g[et]|[GLNOSa-hknopr-uwxz])\\\\b","name":"keyword.operator.logical.shell"}]},"logical_expression_context":{"patterns":[{"include":"#regex_comparison"},{"include":"#arithmetic_no_dollar"},{"include":"#logical-expression"},{"include":"#logical_expression_single"},{"include":"#logical_expression_double"},{"include":"#comment"},{"include":"#boolean"},{"include":"#redirect_number"},{"include":"#numeric_literal"},{"include":"#pipeline"},{"include":"#normal_statement_seperator"},{"include":"#string"},{"include":"#variable"},{"include":"#interpolation"},{"include":"#heredoc"},{"include":"#herestring"},{"include":"#pathname"},{"include":"#floating_keyword"},{"include":"#support"}]},"logical_expression_double":{"begin":"\\\\[\\\\[","beginCaptures":{"0":{"name":"punctuation.definition.logical-expression.shell"}},"end":"]]","endCaptures":{"0":{"name":"punctuation.definition.logical-expression.shell"}},"name":"meta.scope.logical-expression.shell","patterns":[{"include":"#logical_expression_context"}]},"logical_expression_single":{"begin":"\\\\[","beginCaptures":{"0":{"name":"punctuation.definition.logical-expression.shell"}},"end":"]","endCaptures":{"0":{"name":"punctuation.definition.logical-expression.shell"}},"name":"meta.scope.logical-expression.shell","patterns":[{"include":"#logical_expression_context"}]},"loop":{"patterns":[{"begin":"(?<=^|[\\\\&;\\\\s])(for)\\\\s+(.+?)\\\\s+(in)(?=[\\\\&;\\\\s]|$)","beginCaptures":{"1":{"name":"keyword.control.shell"},"2":{"name":"variable.other.loop.shell","patterns":[{"include":"#string"}]},"3":{"name":"keyword.control.shell"}},"end":"(?<=^|[\\\\&;\\\\s])done(?=[\\\\&;\\\\s]|$|\\\\))","endCaptures":{"0":{"name":"keyword.control.shell"}},"name":"meta.scope.for-in-loop.shell","patterns":[{"include":"#initial_context"}]},{"begin":"(?<=^|[\\\\&;\\\\s])(while|until)(?=[\\\\&;\\\\s]|$)","beginCaptures":{"1":{"name":"keyword.control.shell"}},"end":"(?<=^|[\\\\&;\\\\s])done(?=[\\\\&;\\\\s]|$|\\\\))","endCaptures":{"0":{"name":"keyword.control.shell"}},"name":"meta.scope.while-loop.shell","patterns":[{"include":"#initial_context"}]},{"begin":"(?<=^|[\\\\&;\\\\s])(select)\\\\s+((?:[^\\\\\\\\\\\\s]|\\\\\\\\.)+)(?=[\\\\&;\\\\s]|$)","beginCaptures":{"1":{"name":"keyword.control.shell"},"2":{"name":"variable.other.loop.shell"}},"end":"(?<=^|[\\\\&;\\\\s])(done)(?=[\\\\&;\\\\s]|$|\\\\))","endCaptures":{"1":{"name":"keyword.control.shell"}},"name":"meta.scope.select-block.shell","patterns":[{"include":"#initial_context"}]},{"begin":"(?<=^|[\\\\&;\\\\s])if(?=[\\\\&;\\\\s]|$)","beginCaptures":{"0":{"name":"keyword.control.if.shell"}},"end":"(?<=^|[\\\\&;\\\\s])fi(?=[\\\\&;\\\\s]|$)","endCaptures":{"0":{"name":"keyword.control.fi.shell"}},"name":"meta.scope.if-block.shell","patterns":[{"include":"#initial_context"}]}]},"math":{"patterns":[{"include":"#variable"},{"match":"\\\\+{1,2}|-{1,2}|[!~]|\\\\*{1,2}|[%/]|<[<=]?|>[=>]?|==|!=|^|\\\\|{1,2}|&{1,2}|[,:=?]|[-%\\\\&*+/^|]=|<<=|>>=","name":"keyword.operator.arithmetic.shell"},{"match":"0[Xx]\\\\h+","name":"constant.numeric.hex.shell"},{"match":";","name":"punctuation.separator.semicolon.range"},{"match":"0\\\\d+","name":"constant.numeric.octal.shell"},{"match":"\\\\d{1,2}#[0-9@-Z_a-z]+","name":"constant.numeric.other.shell"},{"match":"\\\\d+","name":"constant.numeric.integer.shell"},{"match":"(?<!\\\\w)[0-9A-Z_a-z]+(?!\\\\w)","name":"variable.other.normal.shell"}]},"math_operators":{"patterns":[{"match":"\\\\+{1,2}|-{1,2}|[!~]|\\\\*{1,2}|[%/]|<[<=]?|>[=>]?|==|!=|^|\\\\|{1,2}|&{1,2}|[,:=?]|[-%\\\\&*+/^|]=|<<=|>>=","name":"keyword.operator.arithmetic.shell"},{"match":"0[Xx]\\\\h+","name":"constant.numeric.hex.shell"},{"match":"0\\\\d+","name":"constant.numeric.octal.shell"},{"match":"\\\\d{1,2}#[0-9@-Z_a-z]+","name":"constant.numeric.other.shell"},{"match":"\\\\d+","name":"constant.numeric.integer.shell"}]},"misc_ranges":{"patterns":[{"include":"#logical_expression_single"},{"include":"#logical_expression_double"},{"include":"#subshell_dollar"},{"begin":"(?<![^\\\\t ])(\\\\{)(?![$\\\\w])","beginCaptures":{"1":{"name":"punctuation.definition.group.shell"}},"end":"}","endCaptures":{"0":{"name":"punctuation.definition.group.shell"}},"name":"meta.scope.group.shell","patterns":[{"include":"#initial_context"}]}]},"modified_assignment_statement":{"begin":"(?<=^|[\\\\t \\\\&;])(?:readonly|declare|typeset|export|local)(?=[\\\\t \\\\&;]|$)","beginCaptures":{"0":{"name":"storage.modifier.$0.shell"}},"end":"(?=[\\\\n\\\\&);`{|}]|[\\\\t ]*#|])(?<!\\\\\\\\)","endCaptures":{},"name":"meta.statement.shell meta.expression.assignment.modified.shell","patterns":[{"match":"(?<!\\\\w)-\\\\w+\\\\b","name":"string.unquoted.argument.shell constant.other.option.shell"},{"include":"#array_value"},{"captures":{"1":{"name":"variable.other.assignment.shell"},"2":{"name":"punctuation.definition.array.access.shell"},"3":{"name":"variable.other.assignment.shell"},"4":{"name":"constant.numeric.shell constant.numeric.integer.shell"},"5":{"name":"punctuation.definition.array.access.shell"},"6":{"name":"keyword.operator.assignment.shell"},"7":{"name":"keyword.operator.assignment.compound.shell"},"8":{"name":"keyword.operator.assignment.compound.shell"},"9":{"name":"constant.numeric.shell constant.numeric.hex.shell"},"10":{"name":"constant.numeric.shell constant.numeric.octal.shell"},"11":{"name":"constant.numeric.shell constant.numeric.other.shell"},"12":{"name":"constant.numeric.shell constant.numeric.decimal.shell"},"13":{"name":"constant.numeric.shell constant.numeric.version.shell"},"14":{"name":"constant.numeric.shell constant.numeric.integer.shell"}},"match":"((?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w))(?:(\\\\[)((?:(?:\\\\$?(?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w)|@)|\\\\*)|(-?\\\\d+))(]))?(?:(?:(=)|(\\\\+=))|(-=))?(?:(?<=[\\\\t =]|^|[(\\\\[{])(?:(?:(?:(?:(?:(0[Xx]\\\\h+)|(0\\\\d+))|(\\\\d{1,2}#[0-9@-Z_a-z]+))|(-?\\\\d+\\\\.\\\\d+))|(-?\\\\d+(?:\\\\.\\\\d+)+))|(-?\\\\d+))(?=[\\\\t ]|$|[);}]))?"},{"include":"#normal_context"}]},"modifiers":{"match":"(?<=^|[\\\\t \\\\&;])(?:readonly|declare|typeset|export|local)(?=[\\\\t \\\\&;]|$)","name":"storage.modifier.$0.shell"},"normal_assignment_statement":{"begin":"[\\\\t ]*+((?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w))(?:(\\\\[)((?:(?:\\\\$?(?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w)|@)|\\\\*)|(-?\\\\d+))(]))?(?:(?:(=)|(\\\\+=))|(-=))","beginCaptures":{"1":{"name":"variable.other.assignment.shell"},"2":{"name":"punctuation.definition.array.access.shell"},"3":{"name":"variable.other.assignment.shell"},"4":{"name":"constant.numeric.shell constant.numeric.integer.shell"},"5":{"name":"punctuation.definition.array.access.shell"},"6":{"name":"keyword.operator.assignment.shell"},"7":{"name":"keyword.operator.assignment.compound.shell"},"8":{"name":"keyword.operator.assignment.compound.shell"}},"end":"(?=[\\\\n\\\\&);`{|}]|[\\\\t ]*#|])(?<!\\\\\\\\)","endCaptures":{},"name":"meta.expression.assignment.shell","patterns":[{"include":"#comment"},{"include":"#string"},{"include":"#normal_assignment_statement"},{"begin":"(?<=[\\\\t ])(?![\\\\t ]|\\\\w+=)","beginCaptures":{},"end":"(?=[\\\\n\\\\&);`{|}]|[\\\\t ]*#|])(?<!\\\\\\\\)","endCaptures":{},"name":"meta.statement.command.env.shell","patterns":[{"include":"#command_name_range"},{"include":"#line_continuation"},{"include":"#option"},{"include":"#argument"},{"include":"#string"}]},{"include":"#simple_unquoted"},{"include":"#normal_context"}]},"normal_context":{"patterns":[{"include":"#comment"},{"include":"#pipeline"},{"include":"#normal_statement_seperator"},{"include":"#misc_ranges"},{"include":"#boolean"},{"include":"#redirect_number"},{"include":"#numeric_literal"},{"include":"#string"},{"include":"#variable"},{"include":"#interpolation"},{"include":"#heredoc"},{"include":"#herestring"},{"include":"#redirection"},{"include":"#pathname"},{"include":"#floating_keyword"},{"include":"#support"},{"include":"#parenthese"}]},"normal_statement":{"begin":"(?!^[\\\\t ]*+$)(?:(?<=(?:^until| until|\\\\tuntil|^while| while|\\\\twhile|^elif| elif|\\\\telif|^else| else|\\\\telse|^then| then|\\\\tthen|^do| do|\\\\tdo|^if| if|\\\\tif) )|(?<=^|[!\\\\&(;`{|]))[\\\\t ]*+(?!nocorrect\\\\W|nocorrect\\\\$|function\\\\W|function\\\\$|foreach\\\\W|foreach\\\\$|repeat\\\\W|repeat\\\\$|logout\\\\W|logout\\\\$|coproc\\\\W|coproc\\\\$|select\\\\W|select\\\\$|while\\\\W|while\\\\$|pushd\\\\W|pushd\\\\$|until\\\\W|until\\\\$|case\\\\W|case\\\\$|done\\\\W|done\\\\$|elif\\\\W|elif\\\\$|else\\\\W|else\\\\$|esac\\\\W|esac\\\\$|popd\\\\W|popd\\\\$|then\\\\W|then\\\\$|time\\\\W|time\\\\$|for\\\\W|for\\\\$|end\\\\W|end\\\\$|fi\\\\W|fi\\\\$|do\\\\W|do\\\\$|in\\\\W|in\\\\$|if\\\\W|if\\\\$)","beginCaptures":{},"end":"(?=[\\\\n\\\\&);`{|}]|[\\\\t ]*#|])(?<!\\\\\\\\)","endCaptures":{},"name":"meta.statement.shell","patterns":[{"include":"#typical_statements"}]},"normal_statement_seperator":{"captures":{"1":{"name":"punctuation.terminator.statement.semicolon.shell"},"2":{"name":"punctuation.separator.statement.and.shell"},"3":{"name":"punctuation.separator.statement.or.shell"},"4":{"name":"punctuation.separator.statement.background.shell"}},"match":"(?:(?:(;)|(&&))|(\\\\|\\\\|))|(&)"},"numeric_literal":{"captures":{"1":{"name":"constant.numeric.shell constant.numeric.hex.shell"},"2":{"name":"constant.numeric.shell constant.numeric.octal.shell"},"3":{"name":"constant.numeric.shell constant.numeric.other.shell"},"4":{"name":"constant.numeric.shell constant.numeric.decimal.shell"},"5":{"name":"constant.numeric.shell constant.numeric.version.shell"},"6":{"name":"constant.numeric.shell constant.numeric.integer.shell"}},"match":"(?<=[\\\\t =]|^|[(\\\\[{])(?:(?:(?:(?:(?:(0[Xx]\\\\h+)|(0\\\\d+))|(\\\\d{1,2}#[0-9@-Z_a-z]+))|(-?\\\\d+\\\\.\\\\d+))|(-?\\\\d+(?:\\\\.\\\\d+)+))|(-?\\\\d+))(?=[\\\\t ]|$|[);}])"},"option":{"begin":"[\\\\t ]++(-)((?![\\\\n!#\\\\&()<>\\\\[{|]|$|[\\\\t ;]))","beginCaptures":{"1":{"name":"string.unquoted.argument.shell constant.other.option.dash.shell"},"2":{"name":"string.unquoted.argument.shell constant.other.option.shell"}},"contentName":"string.unquoted.argument constant.other.option","end":"(?=[\\\\t ])|(?=[\\\\n\\\\&);`{|}]|[\\\\t ]*#|])(?<!\\\\\\\\)","endCaptures":{},"patterns":[{"include":"#option_context"}]},"option_context":{"patterns":[{"include":"#misc_ranges"},{"include":"#string"},{"include":"#variable"},{"include":"#interpolation"},{"include":"#heredoc"},{"include":"#herestring"},{"include":"#redirection"},{"include":"#pathname"},{"include":"#floating_keyword"},{"include":"#support"}]},"parenthese":{"patterns":[{"begin":"\\\\(","beginCaptures":{"0":{"name":"punctuation.section.parenthese.shell"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.parenthese.shell"}},"name":"meta.parenthese.group.shell","patterns":[{"include":"#initial_context"}]}]},"pathname":{"patterns":[{"match":"(?<=[:=\\\\s]|^)~","name":"keyword.operator.tilde.shell"},{"match":"[*?]","name":"keyword.operator.glob.shell"},{"begin":"([!*+?@])(\\\\()","beginCaptures":{"1":{"name":"keyword.operator.extglob.shell"},"2":{"name":"punctuation.definition.extglob.shell"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.definition.extglob.shell"}},"name":"meta.structure.extglob.shell","patterns":[{"include":"#initial_context"}]}]},"pipeline":{"patterns":[{"match":"(?<=^|[\\\\&;\\\\s])(time)(?=[\\\\&;\\\\s]|$)","name":"keyword.other.shell"},{"match":"[!|]","name":"keyword.operator.pipe.shell"}]},"redirect_fix":{"captures":{"1":{"name":"keyword.operator.redirect.shell"},"2":{"name":"string.unquoted.argument.shell"}},"match":"(>>?)[\\\\t ]*+([^\\\\t\\\\n \\"$\\\\&-);<>\\\\\\\\`|]+)"},"redirect_number":{"captures":{"1":{"name":"keyword.operator.redirect.stdout.shell"},"2":{"name":"keyword.operator.redirect.stderr.shell"},"3":{"name":"keyword.operator.redirect.$3.shell"}},"match":"(?<=[\\\\t ])(?:(1)|(2)|(\\\\d+))(?=>)"},"redirection":{"patterns":[{"begin":"[<>]\\\\(","beginCaptures":{"0":{"name":"punctuation.definition.string.begin.shell"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.definition.string.end.shell"}},"name":"string.interpolated.process-substitution.shell","patterns":[{"include":"#initial_context"}]},{"match":"(?<![<>])(&>|\\\\d*>&\\\\d*|\\\\d*(>>|[<>])|\\\\d*<&|\\\\d*<>)(?![<>])","name":"keyword.operator.redirect.shell"}]},"regex_comparison":{"match":"=~","name":"keyword.operator.logical.regex.shell"},"regexp":{"patterns":[{"match":".+"}]},"simple_options":{"captures":{"0":{"patterns":[{"captures":{"1":{"name":"string.unquoted.argument.shell constant.other.option.dash.shell"},"2":{"name":"string.unquoted.argument.shell constant.other.option.shell"}},"match":"[\\\\t ]++(-)(\\\\w+)"}]}},"match":"(?:[\\\\t ]++-\\\\w+)*"},"simple_unquoted":{"match":"[^\\\\t\\\\n \\"$\\\\&-);<>\\\\\\\\`|]","name":"string.unquoted.shell"},"special_expansion":{"match":"!|:[-=?]?|[*@]|##?|%%|[%/]","name":"keyword.operator.expansion.shell"},"start_of_command":{"match":"[\\\\t ]*+(?![\\\\n!#\\\\&()<>\\\\[{|]|$|[\\\\t ;])(?!nocorrect |nocorrect\\\\t|nocorrect$|readonly |readonly\\\\t|readonly$|function |function\\\\t|function$|foreach |foreach\\\\t|foreach$|coproc |coproc\\\\t|coproc$|logout |logout\\\\t|logout$|export |export\\\\t|export$|select |select\\\\t|select$|repeat |repeat\\\\t|repeat$|pushd |pushd\\\\t|pushd$|until |until\\\\t|until$|while |while\\\\t|while$|local |local\\\\t|local$|case |case\\\\t|case$|done |done\\\\t|done$|elif |elif\\\\t|elif$|else |else\\\\t|else$|esac |esac\\\\t|esac$|popd |popd\\\\t|popd$|then |then\\\\t|then$|time |time\\\\t|time$|for |for\\\\t|for$|end |end\\\\t|end$|fi |fi\\\\t|fi$|do |do\\\\t|do$|in |in\\\\t|in$|if |if\\\\t|if$)(?!\\\\\\\\\\\\n?$)"},"string":{"patterns":[{"match":"\\\\\\\\.","name":"constant.character.escape.shell"},{"begin":"\'","beginCaptures":{"0":{"name":"punctuation.definition.string.begin.shell"}},"end":"\'","endCaptures":{"0":{"name":"punctuation.definition.string.end.shell"}},"name":"string.quoted.single.shell"},{"begin":"\\\\$?\\"","beginCaptures":{"0":{"name":"punctuation.definition.string.begin.shell"}},"end":"\\"","endCaptures":{"0":{"name":"punctuation.definition.string.end.shell"}},"name":"string.quoted.double.shell","patterns":[{"match":"\\\\\\\\[\\\\n\\"$\\\\\\\\`]","name":"constant.character.escape.shell"},{"include":"#variable"},{"include":"#interpolation"}]},{"begin":"\\\\$\'","beginCaptures":{"0":{"name":"punctuation.definition.string.begin.shell"}},"end":"\'","endCaptures":{"0":{"name":"punctuation.definition.string.end.shell"}},"name":"string.quoted.single.dollar.shell","patterns":[{"match":"\\\\\\\\[\'\\\\\\\\abefnrtv]","name":"constant.character.escape.ansi-c.shell"},{"match":"\\\\\\\\[0-9]{3}\\"","name":"constant.character.escape.octal.shell"},{"match":"\\\\\\\\x\\\\h{2}\\"","name":"constant.character.escape.hex.shell"},{"match":"\\\\\\\\c.\\"","name":"constant.character.escape.control-char.shell"}]}]},"subshell_dollar":{"patterns":[{"begin":"\\\\$\\\\(","beginCaptures":{"0":{"name":"punctuation.definition.subshell.single.shell"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.definition.subshell.single.shell"}},"name":"meta.scope.subshell","patterns":[{"include":"#parenthese"},{"include":"#initial_context"}]}]},"support":{"patterns":[{"match":"(?<=^|[\\\\&;\\\\s])[.:](?=[\\\\&;\\\\s]|$)","name":"support.function.builtin.shell"}]},"typical_statements":{"patterns":[{"include":"#assignment_statement"},{"include":"#case_statement"},{"include":"#for_statement"},{"include":"#while_statement"},{"include":"#function_definition"},{"include":"#command_statement"},{"include":"#line_continuation"},{"include":"#arithmetic_double"},{"include":"#normal_context"}]},"variable":{"patterns":[{"captures":{"1":{"name":"punctuation.definition.variable.shell variable.parameter.positional.all.shell"},"2":{"name":"variable.parameter.positional.all.shell"}},"match":"(\\\\$)(@(?!\\\\w))"},{"captures":{"1":{"name":"punctuation.definition.variable.shell variable.parameter.positional.shell"},"2":{"name":"variable.parameter.positional.shell"}},"match":"(\\\\$)([0-9](?!\\\\w))"},{"captures":{"1":{"name":"punctuation.definition.variable.shell variable.language.special.shell"},"2":{"name":"variable.language.special.shell"}},"match":"(\\\\$)([-!#$*0?_](?!\\\\w))"},{"begin":"(\\\\$)(\\\\{)[\\\\t ]*+(?=\\\\d)","beginCaptures":{"1":{"name":"punctuation.definition.variable.shell variable.parameter.positional.shell"},"2":{"name":"punctuation.section.bracket.curly.variable.begin.shell punctuation.definition.variable.shell variable.parameter.positional.shell"}},"contentName":"meta.parameter-expansion","end":"}","endCaptures":{"0":{"name":"punctuation.section.bracket.curly.variable.end.shell punctuation.definition.variable.shell variable.parameter.positional.shell"}},"patterns":[{"include":"#special_expansion"},{"include":"#array_access_inline"},{"match":"[0-9]+","name":"variable.parameter.positional.shell"},{"match":"(?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w)","name":"variable.other.normal.shell"},{"include":"#variable"},{"include":"#string"}]},{"begin":"(\\\\$)(\\\\{)","beginCaptures":{"1":{"name":"punctuation.definition.variable.shell"},"2":{"name":"punctuation.section.bracket.curly.variable.begin.shell punctuation.definition.variable.shell"}},"contentName":"meta.parameter-expansion","end":"}","endCaptures":{"0":{"name":"punctuation.section.bracket.curly.variable.end.shell punctuation.definition.variable.shell"}},"patterns":[{"include":"#special_expansion"},{"include":"#array_access_inline"},{"match":"(?<!\\\\w)[-0-9A-Z_a-z]+(?!\\\\w)","name":"variable.other.normal.shell"},{"include":"#variable"},{"include":"#string"}]},{"captures":{"1":{"name":"punctuation.definition.variable.shell variable.other.normal.shell"},"2":{"name":"variable.other.normal.shell"}},"match":"(\\\\$)(\\\\w+(?!\\\\w))"}]},"while_statement":{"patterns":[{"begin":"\\\\b(while)\\\\b","beginCaptures":{"1":{"name":"keyword.control.while.shell"}},"end":"(?=[\\\\n\\\\&);`{|}]|[\\\\t ]*#|])(?<!\\\\\\\\)","endCaptures":{},"name":"meta.while.shell","patterns":[{"include":"#line_continuation"},{"include":"#math_operators"},{"include":"#option"},{"include":"#simple_unquoted"},{"include":"#normal_context"},{"include":"#string"}]}]}},"scopeName":"source.shell","aliases":["bash","sh","shell","zsh"]}')),
     shellscript_default = [lang],
     lang2 = Object.freeze(JSON.parse('{"displayName":"CSS","name":"css","patterns":[{"include":"#comment-block"},{"include":"#escapes"},{"include":"#combinators"},{"include":"#selector"},{"include":"#at-rules"},{"include":"#rule-list"}],"repository":{"at-rules":{"patterns":[{"begin":"\\\\A\\\\uFEFF?(?i:(?=\\\\s*@charset\\\\b))","end":";|(?=$)","endCaptures":{"0":{"name":"punctuation.terminator.rule.css"}},"name":"meta.at-rule.charset.css","patterns":[{"captures":{"1":{"name":"invalid.illegal.not-lowercase.charset.css"},"2":{"name":"invalid.illegal.leading-whitespace.charset.css"},"3":{"name":"invalid.illegal.no-whitespace.charset.css"},"4":{"name":"invalid.illegal.whitespace.charset.css"},"5":{"name":"invalid.illegal.not-double-quoted.charset.css"},"6":{"name":"invalid.illegal.unclosed-string.charset.css"},"7":{"name":"invalid.illegal.unexpected-characters.charset.css"}},"match":"\\\\G((?!@charset)@\\\\w+)|\\\\G(\\\\s+)|(@charset\\\\S[^;]*)|(?<=@charset)( {2,}|\\\\t+)|(?<=@charset )([^\\";]+)|(\\"[^\\"]+)$|(?<=\\")([^;]+)"},{"captures":{"1":{"name":"keyword.control.at-rule.charset.css"},"2":{"name":"punctuation.definition.keyword.css"}},"match":"((@)charset)(?=\\\\s)"},{"begin":"\\"","beginCaptures":{"0":{"name":"punctuation.definition.string.begin.css"}},"end":"\\"|$","endCaptures":{"0":{"name":"punctuation.definition.string.end.css"}},"name":"string.quoted.double.css","patterns":[{"begin":"(?:\\\\G|^)(?=[^\\"]+$)","end":"$","name":"invalid.illegal.unclosed.string.css"}]}]},{"begin":"(?i)((@)import)(?:\\\\s+|$|(?=[\\"\']|/\\\\*))","beginCaptures":{"1":{"name":"keyword.control.at-rule.import.css"},"2":{"name":"punctuation.definition.keyword.css"}},"end":";","endCaptures":{"0":{"name":"punctuation.terminator.rule.css"}},"name":"meta.at-rule.import.css","patterns":[{"begin":"\\\\G\\\\s*(?=/\\\\*)","end":"(?<=\\\\*/)\\\\s*","patterns":[{"include":"#comment-block"}]},{"include":"#string"},{"include":"#url"},{"include":"#media-query-list"}]},{"begin":"(?i)((@)font-face)(?=\\\\s*|\\\\{|/\\\\*|$)","beginCaptures":{"1":{"name":"keyword.control.at-rule.font-face.css"},"2":{"name":"punctuation.definition.keyword.css"}},"end":"(?!\\\\G)","name":"meta.at-rule.font-face.css","patterns":[{"include":"#comment-block"},{"include":"#escapes"},{"include":"#rule-list"}]},{"begin":"(?i)(@)page(?=[:{\\\\s]|/\\\\*|$)","captures":{"0":{"name":"keyword.control.at-rule.page.css"},"1":{"name":"punctuation.definition.keyword.css"}},"end":"(?=\\\\s*($|[:;{]))","name":"meta.at-rule.page.css","patterns":[{"include":"#rule-list"}]},{"begin":"(?i)(?=@media([(\\\\s]|/\\\\*|$))","end":"(?<=})(?!\\\\G)","patterns":[{"begin":"(?i)\\\\G(@)media","beginCaptures":{"0":{"name":"keyword.control.at-rule.media.css"},"1":{"name":"punctuation.definition.keyword.css"}},"end":"(?=\\\\s*[;{])","name":"meta.at-rule.media.header.css","patterns":[{"include":"#media-query-list"}]},{"begin":"\\\\{","beginCaptures":{"0":{"name":"punctuation.section.media.begin.bracket.curly.css"}},"end":"}","endCaptures":{"0":{"name":"punctuation.section.media.end.bracket.curly.css"}},"name":"meta.at-rule.media.body.css","patterns":[{"include":"$self"}]}]},{"begin":"(?i)(?=@counter-style([\\"\';{\\\\s]|/\\\\*|$))","end":"(?<=})(?!\\\\G)","patterns":[{"begin":"(?i)\\\\G(@)counter-style","beginCaptures":{"0":{"name":"keyword.control.at-rule.counter-style.css"},"1":{"name":"punctuation.definition.keyword.css"}},"end":"(?=\\\\s*\\\\{)","name":"meta.at-rule.counter-style.header.css","patterns":[{"include":"#comment-block"},{"include":"#escapes"},{"captures":{"0":{"patterns":[{"include":"#escapes"}]}},"match":"[-A-Z_a-z[^\\\\x00-\\\\x7F]](?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))*","name":"variable.parameter.style-name.css"}]},{"begin":"\\\\{","beginCaptures":{"0":{"name":"punctuation.section.property-list.begin.bracket.curly.css"}},"end":"}","endCaptures":{"0":{"name":"punctuation.section.property-list.end.bracket.curly.css"}},"name":"meta.at-rule.counter-style.body.css","patterns":[{"include":"#comment-block"},{"include":"#escapes"},{"include":"#rule-list-innards"}]}]},{"begin":"(?i)(?=@document([\\"\';{\\\\s]|/\\\\*|$))","end":"(?<=})(?!\\\\G)","patterns":[{"begin":"(?i)\\\\G(@)document","beginCaptures":{"0":{"name":"keyword.control.at-rule.document.css"},"1":{"name":"punctuation.definition.keyword.css"}},"end":"(?=\\\\s*[;{])","name":"meta.at-rule.document.header.css","patterns":[{"begin":"(?i)(?<![-\\\\w])(url-prefix|domain|regexp)(\\\\()","beginCaptures":{"1":{"name":"support.function.document-rule.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"name":"meta.function.document-rule.css","patterns":[{"include":"#string"},{"include":"#comment-block"},{"include":"#escapes"},{"match":"[^\\"\')\\\\s]+","name":"variable.parameter.document-rule.css"}]},{"include":"#url"},{"include":"#commas"},{"include":"#comment-block"},{"include":"#escapes"}]},{"begin":"\\\\{","beginCaptures":{"0":{"name":"punctuation.section.document.begin.bracket.curly.css"}},"end":"}","endCaptures":{"0":{"name":"punctuation.section.document.end.bracket.curly.css"}},"name":"meta.at-rule.document.body.css","patterns":[{"include":"$self"}]}]},{"begin":"(?i)(?=@(?:-(?:webkit|moz|o|ms)-)?keyframes([\\"\';{\\\\s]|/\\\\*|$))","end":"(?<=})(?!\\\\G)","patterns":[{"begin":"(?i)\\\\G(@)(?:-(?:webkit|moz|o|ms)-)?keyframes","beginCaptures":{"0":{"name":"keyword.control.at-rule.keyframes.css"},"1":{"name":"punctuation.definition.keyword.css"}},"end":"(?=\\\\s*\\\\{)","name":"meta.at-rule.keyframes.header.css","patterns":[{"include":"#comment-block"},{"include":"#escapes"},{"captures":{"0":{"patterns":[{"include":"#escapes"}]}},"match":"[-A-Z_a-z[^\\\\x00-\\\\x7F]](?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))*","name":"variable.parameter.keyframe-list.css"}]},{"begin":"\\\\{","beginCaptures":{"0":{"name":"punctuation.section.keyframes.begin.bracket.curly.css"}},"end":"}","endCaptures":{"0":{"name":"punctuation.section.keyframes.end.bracket.curly.css"}},"name":"meta.at-rule.keyframes.body.css","patterns":[{"include":"#comment-block"},{"include":"#escapes"},{"captures":{"1":{"name":"entity.other.keyframe-offset.css"},"2":{"name":"entity.other.keyframe-offset.percentage.css"}},"match":"(?i)(?<![-\\\\w])(from|to)(?![-\\\\w])|([-+]?(?:\\\\d+(?:\\\\.\\\\d+)?|\\\\.\\\\d+)%)"},{"include":"#rule-list"}]}]},{"begin":"(?i)(?=@supports([(\\\\s]|/\\\\*|$))","end":"(?<=})(?!\\\\G)|(?=;)","patterns":[{"begin":"(?i)\\\\G(@)supports","beginCaptures":{"0":{"name":"keyword.control.at-rule.supports.css"},"1":{"name":"punctuation.definition.keyword.css"}},"end":"(?=\\\\s*[;{])","name":"meta.at-rule.supports.header.css","patterns":[{"include":"#feature-query-operators"},{"include":"#feature-query"},{"include":"#comment-block"},{"include":"#escapes"}]},{"begin":"\\\\{","beginCaptures":{"0":{"name":"punctuation.section.supports.begin.bracket.curly.css"}},"end":"}","endCaptures":{"0":{"name":"punctuation.section.supports.end.bracket.curly.css"}},"name":"meta.at-rule.supports.body.css","patterns":[{"include":"$self"}]}]},{"begin":"(?i)((@)(-(ms|o)-)?viewport)(?=[\\"\';{\\\\s]|/\\\\*|$)","beginCaptures":{"1":{"name":"keyword.control.at-rule.viewport.css"},"2":{"name":"punctuation.definition.keyword.css"}},"end":"(?=\\\\s*[;@{])","name":"meta.at-rule.viewport.css","patterns":[{"include":"#comment-block"},{"include":"#escapes"}]},{"begin":"(?i)((@)font-feature-values)(?=[\\"\';{\\\\s]|/\\\\*|$)\\\\s*","beginCaptures":{"1":{"name":"keyword.control.at-rule.font-feature-values.css"},"2":{"name":"punctuation.definition.keyword.css"}},"contentName":"variable.parameter.font-name.css","end":"(?=\\\\s*[;@{])","name":"meta.at-rule.font-features.css","patterns":[{"include":"#comment-block"},{"include":"#escapes"}]},{"include":"#font-features"},{"begin":"(?i)((@)namespace)(?=[\\"\';\\\\s]|/\\\\*|$)","beginCaptures":{"1":{"name":"keyword.control.at-rule.namespace.css"},"2":{"name":"punctuation.definition.keyword.css"}},"end":";|(?=[@{])","endCaptures":{"0":{"name":"punctuation.terminator.rule.css"}},"name":"meta.at-rule.namespace.css","patterns":[{"include":"#url"},{"captures":{"1":{"patterns":[{"include":"#comment-block"}]},"2":{"name":"entity.name.function.namespace-prefix.css","patterns":[{"include":"#escapes"}]}},"match":"(?i)(?:\\\\G|^|(?<=\\\\s))(?=(?<=\\\\s|^)[-A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\s*/\\\\*(?:[^*]|\\\\*[^/])*\\\\*/)(.*?)([-A-Z_a-z[^\\\\x00-\\\\x7F]](?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))*)"},{"include":"#comment-block"},{"include":"#escapes"},{"include":"#string"}]},{"begin":"(?i)(?=@[-\\\\w]+[^;]+;s*$)","end":"(?<=;)(?!\\\\G)","patterns":[{"begin":"(?i)\\\\G(@)[-\\\\w]+","beginCaptures":{"0":{"name":"keyword.control.at-rule.css"},"1":{"name":"punctuation.definition.keyword.css"}},"end":";","endCaptures":{"0":{"name":"punctuation.terminator.rule.css"}},"name":"meta.at-rule.header.css"}]},{"begin":"(?i)(?=@[-\\\\w]+([({\\\\s]|/\\\\*|$))","end":"(?<=})(?!\\\\G)","patterns":[{"begin":"(?i)\\\\G(@)[-\\\\w]+","beginCaptures":{"0":{"name":"keyword.control.at-rule.css"},"1":{"name":"punctuation.definition.keyword.css"}},"end":"(?=\\\\s*[;{])","name":"meta.at-rule.header.css"},{"begin":"\\\\{","beginCaptures":{"0":{"name":"punctuation.section.begin.bracket.curly.css"}},"end":"}","endCaptures":{"0":{"name":"punctuation.section.end.bracket.curly.css"}},"name":"meta.at-rule.body.css","patterns":[{"include":"$self"}]}]}]},"color-keywords":{"patterns":[{"match":"(?i)(?<![-\\\\w])(aqua|black|blue|fuchsia|gray|green|lime|maroon|navy|olive|orange|purple|red|silver|teal|white|yellow)(?![-\\\\w])","name":"support.constant.color.w3c-standard-color-name.css"},{"match":"(?i)(?<![-\\\\w])(aliceblue|antiquewhite|aquamarine|azure|beige|bisque|blanchedalmond|blueviolet|brown|burlywood|cadetblue|chartreuse|chocolate|coral|cornflowerblue|cornsilk|crimson|cyan|darkblue|darkcyan|darkgoldenrod|darkgray|darkgreen|darkgrey|darkkhaki|darkmagenta|darkolivegreen|darkorange|darkorchid|darkred|darksalmon|darkseagreen|darkslateblue|darkslategray|darkslategrey|darkturquoise|darkviolet|deeppink|deepskyblue|dimgray|dimgrey|dodgerblue|firebrick|floralwhite|forestgreen|gainsboro|ghostwhite|gold|goldenrod|greenyellow|grey|honeydew|hotpink|indianred|indigo|ivory|khaki|lavender|lavenderblush|lawngreen|lemonchiffon|lightblue|lightcoral|lightcyan|lightgoldenrodyellow|lightgray|lightgreen|lightgrey|lightpink|lightsalmon|lightseagreen|lightskyblue|lightslategray|lightslategrey|lightsteelblue|lightyellow|limegreen|linen|magenta|mediumaquamarine|mediumblue|mediumorchid|mediumpurple|mediumseagreen|mediumslateblue|mediumspringgreen|mediumturquoise|mediumvioletred|midnightblue|mintcream|mistyrose|moccasin|navajowhite|oldlace|olivedrab|orangered|orchid|palegoldenrod|palegreen|paleturquoise|palevioletred|papayawhip|peachpuff|peru|pink|plum|powderblue|rebeccapurple|rosybrown|royalblue|saddlebrown|salmon|sandybrown|seagreen|seashell|sienna|skyblue|slateblue|slategray|slategrey|snow|springgreen|steelblue|tan|thistle|tomato|transparent|turquoise|violet|wheat|whitesmoke|yellowgreen)(?![-\\\\w])","name":"support.constant.color.w3c-extended-color-name.css"},{"match":"(?i)(?<![-\\\\w])currentColor(?![-\\\\w])","name":"support.constant.color.current.css"},{"match":"(?i)(?<![-\\\\w])(ActiveBorder|ActiveCaption|AppWorkspace|Background|ButtonFace|ButtonHighlight|ButtonShadow|ButtonText|CaptionText|GrayText|Highlight|HighlightText|InactiveBorder|InactiveCaption|InactiveCaptionText|InfoBackground|InfoText|Menu|MenuText|Scrollbar|ThreeDDarkShadow|ThreeDFace|ThreeDHighlight|ThreeDLightShadow|ThreeDShadow|Window|WindowFrame|WindowText)(?![-\\\\w])","name":"invalid.deprecated.color.system.css"}]},"combinators":{"patterns":[{"match":"/deep/|>>>","name":"invalid.deprecated.combinator.css"},{"match":">>|[+>~]","name":"keyword.operator.combinator.css"}]},"commas":{"match":",","name":"punctuation.separator.list.comma.css"},"comment-block":{"begin":"/\\\\*","beginCaptures":{"0":{"name":"punctuation.definition.comment.begin.css"}},"end":"\\\\*/","endCaptures":{"0":{"name":"punctuation.definition.comment.end.css"}},"name":"comment.block.css"},"escapes":{"patterns":[{"match":"\\\\\\\\\\\\h{1,6}","name":"constant.character.escape.codepoint.css"},{"begin":"\\\\\\\\$\\\\s*","end":"^(?<!\\\\G)","name":"constant.character.escape.newline.css"},{"match":"\\\\\\\\.","name":"constant.character.escape.css"}]},"feature-query":{"begin":"\\\\(","beginCaptures":{"0":{"name":"punctuation.definition.condition.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.definition.condition.end.bracket.round.css"}},"name":"meta.feature-query.css","patterns":[{"include":"#feature-query-operators"},{"include":"#feature-query"}]},"feature-query-operators":{"patterns":[{"match":"(?i)(?<=[()\\\\s]|^|\\\\*/)(and|not|or)(?=[()\\\\s]|/\\\\*|$)","name":"keyword.operator.logical.feature.$1.css"},{"include":"#rule-list-innards"}]},"font-features":{"begin":"(?i)((@)(annotation|character-variant|ornaments|styleset|stylistic|swash))(?=[\\"\';@{\\\\s]|/\\\\*|$)","beginCaptures":{"1":{"name":"keyword.control.at-rule.${3:/downcase}.css"},"2":{"name":"punctuation.definition.keyword.css"}},"end":"(?<=})","name":"meta.at-rule.${3:/downcase}.css","patterns":[{"begin":"\\\\{","beginCaptures":{"0":{"name":"punctuation.section.property-list.begin.bracket.curly.css"}},"end":"}","endCaptures":{"0":{"name":"punctuation.section.property-list.end.bracket.curly.css"}},"name":"meta.property-list.font-feature.css","patterns":[{"captures":{"0":{"patterns":[{"include":"#escapes"}]}},"match":"[-A-Z_a-z[^\\\\x00-\\\\x7F]](?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))*","name":"variable.font-feature.css"},{"include":"#rule-list-innards"}]}]},"functional-pseudo-classes":{"patterns":[{"begin":"(?i)((:)dir)(\\\\()","beginCaptures":{"1":{"name":"entity.other.attribute-name.pseudo-class.css"},"2":{"name":"punctuation.definition.entity.css"},"3":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"patterns":[{"include":"#comment-block"},{"include":"#escapes"},{"match":"(?i)(?<![-\\\\w])(ltr|rtl)(?![-\\\\w])","name":"support.constant.text-direction.css"},{"include":"#property-values"}]},{"begin":"(?i)((:)lang)(\\\\()","beginCaptures":{"1":{"name":"entity.other.attribute-name.pseudo-class.css"},"2":{"name":"punctuation.definition.entity.css"},"3":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"patterns":[{"match":"(?<=[(,\\\\s])[A-Za-z]+(-[0-9A-Za-z]*|\\\\\\\\(?:\\\\h{1,6}|.))*(?=[),\\\\s])","name":"support.constant.language-range.css"},{"begin":"\\"","beginCaptures":{"0":{"name":"punctuation.definition.string.begin.css"}},"end":"\\"","endCaptures":{"0":{"name":"punctuation.definition.string.end.css"}},"name":"string.quoted.double.css","patterns":[{"include":"#escapes"},{"match":"(?<=[\\"\\\\s])[*A-Za-z]+(-[*0-9A-Za-z]*)*(?=[\\"\\\\s])","name":"support.constant.language-range.css"}]},{"begin":"\'","beginCaptures":{"0":{"name":"punctuation.definition.string.begin.css"}},"end":"\'","endCaptures":{"0":{"name":"punctuation.definition.string.end.css"}},"name":"string.quoted.single.css","patterns":[{"include":"#escapes"},{"match":"(?<=[\'\\\\s])[*A-Za-z]+(-[*0-9A-Za-z]*)*(?=[\'\\\\s])","name":"support.constant.language-range.css"}]},{"include":"#commas"}]},{"begin":"(?i)((:)(?:not|has|matches|where|is))(\\\\()","beginCaptures":{"1":{"name":"entity.other.attribute-name.pseudo-class.css"},"2":{"name":"punctuation.definition.entity.css"},"3":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"patterns":[{"include":"#selector-innards"}]},{"begin":"(?i)((:)nth-(?:last-)?(?:child|of-type))(\\\\()","beginCaptures":{"1":{"name":"entity.other.attribute-name.pseudo-class.css"},"2":{"name":"punctuation.definition.entity.css"},"3":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"patterns":[{"match":"(?i)[-+]?(\\\\d+n?|n)(\\\\s*[-+]\\\\s*\\\\d+)?","name":"constant.numeric.css"},{"match":"(?i)even|odd","name":"support.constant.parity.css"}]}]},"functions":{"patterns":[{"begin":"(?i)(?<![-\\\\w])(calc)(\\\\()","beginCaptures":{"1":{"name":"support.function.calc.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"name":"meta.function.calc.css","patterns":[{"match":"[*/]|(?<=\\\\s|^)[-+](?=\\\\s|$)","name":"keyword.operator.arithmetic.css"},{"include":"#property-values"}]},{"begin":"(?i)(?<![-\\\\w])(rgba?|hsla?|hwb|lab|oklab|lch|oklch|color)(\\\\()","beginCaptures":{"1":{"name":"support.function.misc.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"name":"meta.function.color.css","patterns":[{"include":"#property-values"}]},{"begin":"(?i)(?<![-\\\\w])((?:-(?:webkit-|moz-|o-))?(?:repeating-)?(?:linear|radial|conic)-gradient)(\\\\()","beginCaptures":{"1":{"name":"support.function.gradient.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"name":"meta.function.gradient.css","patterns":[{"match":"(?i)(?<![-\\\\w])(from|to|at|in|hue)(?![-\\\\w])","name":"keyword.operator.gradient.css"},{"include":"#property-values"}]},{"begin":"(?i)(?<![-\\\\w])(-webkit-gradient)(\\\\()","beginCaptures":{"1":{"name":"invalid.deprecated.gradient.function.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"name":"meta.function.gradient.invalid.deprecated.gradient.css","patterns":[{"begin":"(?i)(?<![-\\\\w])(from|to|color-stop)(\\\\()","beginCaptures":{"1":{"name":"invalid.deprecated.function.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"patterns":[{"include":"#property-values"}]},{"include":"#property-values"}]},{"begin":"(?i)(?<![-\\\\w])(annotation|attr|blur|brightness|character-variant|clamp|contrast|counters?|cross-fade|drop-shadow|element|fit-content|format|grayscale|hue-rotate|color-mix|image-set|invert|local|max|min|minmax|opacity|ornaments|repeat|saturate|sepia|styleset|stylistic|swash|symbols|cos|sin|tan|acos|asin|atan2??|hypot|sqrt|pow|log|exp|abs|sign)(\\\\()","beginCaptures":{"1":{"name":"support.function.misc.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"name":"meta.function.misc.css","patterns":[{"match":"(?i)(?<=[\\",\\\\s]|\\\\*/|^)\\\\d+x(?=[\\"\'),\\\\s]|/\\\\*|$)","name":"constant.numeric.other.density.css"},{"include":"#property-values"},{"match":"[^\\"\'),\\\\s]+","name":"variable.parameter.misc.css"}]},{"begin":"(?i)(?<![-\\\\w])(circle|ellipse|inset|polygon|rect)(\\\\()","beginCaptures":{"1":{"name":"support.function.shape.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"name":"meta.function.shape.css","patterns":[{"match":"(?i)(?<=\\\\s|^|\\\\*/)(at|round)(?=\\\\s|/\\\\*|$)","name":"keyword.operator.shape.css"},{"include":"#property-values"}]},{"begin":"(?i)(?<![-\\\\w])(cubic-bezier|steps)(\\\\()","beginCaptures":{"1":{"name":"support.function.timing-function.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"name":"meta.function.timing-function.css","patterns":[{"match":"(?i)(?<![-\\\\w])(start|end)(?=\\\\s*\\\\)|$)","name":"support.constant.step-direction.css"},{"include":"#property-values"}]},{"begin":"(?i)(?<![-\\\\w])((?:translate|scale|rotate)(?:[XYZ]|3D)?|matrix(?:3D)?|skew[XY]?|perspective)(\\\\()","beginCaptures":{"1":{"name":"support.function.transform.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"patterns":[{"include":"#property-values"}]},{"include":"#url"},{"begin":"(?i)(?<![-\\\\w])(var)(\\\\()","beginCaptures":{"1":{"name":"support.function.misc.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"name":"meta.function.variable.css","patterns":[{"match":"--[-A-Z_a-z[^\\\\x00-\\\\x7F]](?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))*","name":"variable.argument.css"},{"include":"#property-values"}]}]},"media-feature-keywords":{"match":"(?i)(?<=^|[:\\\\s]|\\\\*/)(?:portrait|landscape|progressive|interlace|fullscreen|standalone|minimal-ui|browser|hover)(?=[)\\\\s]|$)","name":"support.constant.property-value.css"},"media-features":{"captures":{"1":{"name":"support.type.property-name.media.css"},"2":{"name":"support.type.property-name.media.css"},"3":{"name":"support.type.vendored.property-name.media.css"}},"match":"(?i)(?<=^|[(\\\\s]|\\\\*/)(?:((?:m(?:in-|ax-))?(?:height|width|aspect-ratio|color|color-index|monochrome|resolution)|grid|scan|orientation|display-mode|hover)|((?:m(?:in-|ax-))?device-(?:height|width|aspect-ratio))|((?:[-_](?:webkit|apple|khtml|epub|moz|ms|o|xv|ah|rim|atsc|hp|tc|wap|ro)|(?:mso|prince))-[-\\\\w]+(?=\\\\s*(?:/\\\\*(?:[^*]|\\\\*[^/])*\\\\*/)?\\\\s*[):])))(?=\\\\s|$|[):<=>]|/\\\\*)"},"media-query":{"begin":"\\\\G","end":"(?=\\\\s*[;{])","patterns":[{"include":"#comment-block"},{"include":"#escapes"},{"include":"#media-types"},{"match":"(?i)(?<=\\\\s|^|,|\\\\*/)(only|not)(?=[{\\\\s]|/\\\\*|$)","name":"keyword.operator.logical.$1.media.css"},{"match":"(?i)(?<=\\\\s|^|\\\\*/|\\\\))and(?=\\\\s|/\\\\*|$)","name":"keyword.operator.logical.and.media.css"},{"match":",(?:(?:\\\\s*,)+|(?=\\\\s*[);{]))","name":"invalid.illegal.comma.css"},{"include":"#commas"},{"begin":"\\\\(","beginCaptures":{"0":{"name":"punctuation.definition.parameters.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.definition.parameters.end.bracket.round.css"}},"patterns":[{"include":"#media-features"},{"include":"#media-feature-keywords"},{"match":":","name":"punctuation.separator.key-value.css"},{"match":">=|<=|[<=>]","name":"keyword.operator.comparison.css"},{"captures":{"1":{"name":"constant.numeric.css"},"2":{"name":"keyword.operator.arithmetic.css"},"3":{"name":"constant.numeric.css"}},"match":"(\\\\d+)\\\\s*(/)\\\\s*(\\\\d+)","name":"meta.ratio.css"},{"include":"#numeric-values"},{"include":"#comment-block"}]}]},"media-query-list":{"begin":"(?=\\\\s*[^;{])","end":"(?=\\\\s*[;{])","patterns":[{"include":"#media-query"}]},"media-types":{"captures":{"1":{"name":"support.constant.media.css"},"2":{"name":"invalid.deprecated.constant.media.css"}},"match":"(?i)(?<=^|[,\\\\s]|\\\\*/)(?:(all|print|screen|speech)|(aural|braille|embossed|handheld|projection|tty|tv))(?=$|[,;{\\\\s]|/\\\\*)"},"numeric-values":{"patterns":[{"captures":{"1":{"name":"punctuation.definition.constant.css"}},"match":"(#)(?:\\\\h{3,4}|\\\\h{6}|\\\\h{8})\\\\b","name":"constant.other.color.rgb-value.hex.css"},{"captures":{"1":{"name":"keyword.other.unit.percentage.css"},"2":{"name":"keyword.other.unit.${2:/downcase}.css"}},"match":"(?i)(?<![-\\\\w])[-+]?(?:[0-9]+(?:\\\\.[0-9]+)?|\\\\.[0-9]+)(?:(?<=[0-9])E[-+]?[0-9]+)?(?:(%)|(deg|grad|rad|turn|Hz|kHz|ch|cm|em|ex|fr|in|mm|mozmm|pc|pt|px|q|rem|rch|rex|rlh|ic|ric|rcap|vh|vw|vb|vi|svh|svw|svb|svi|dvh|dvw|dvb|dvi|lvh|lvw|lvb|lvi|vmax|vmin|cqw|cqi|cqh|cqb|cqmin|cqmax|dpi|dpcm|dppx|s|ms)\\\\b)?","name":"constant.numeric.css"}]},"property-keywords":{"patterns":[{"match":"(?i)(?<![-\\\\w])(above|absolute|active|add|additive|after-edge|alias|all|all-petite-caps|all-scroll|all-small-caps|alpha|alphabetic|alternate|alternate-reverse|always|antialiased|auto|auto-fill|auto-fit|auto-pos|available|avoid|avoid-column|avoid-page|avoid-region|backwards|balance|baseline|before-edge|below|bevel|bidi-override|blink|block|block-axis|block-start|block-end|bold|bolder|border|border-box|both|bottom|bottom-outside|break-all|break-word|bullets|butt|capitalize|caption|cell|center|central|char|circle|clip|clone|close-quote|closest-corner|closest-side|col-resize|collapse|color|color-burn|color-dodge|column|column-reverse|common-ligatures|compact|condensed|contain|content|content-box|contents|context-menu|contextual|copy|cover|crisp-edges|crispEdges|crosshair|cyclic|dark|darken|dashed|decimal|default|dense|diagonal-fractions|difference|digits|disabled|disc|discretionary-ligatures|distribute|distribute-all-lines|distribute-letter|distribute-space|dot|dotted|double|double-circle|downleft|downright|e-resize|each-line|ease|ease-in|ease-in-out|ease-out|economy|ellipse|ellipsis|embed|end|evenodd|ew-resize|exact|exclude|exclusion|expanded|extends|extra-condensed|extra-expanded|fallback|farthest-corner|farthest-side|fill|fill-available|fill-box|filled|fit-content|fixed|flat|flex|flex-end|flex-start|flip|flow|flow-root|forwards|freeze|from-image|full-width|geometricPrecision|georgian|grab|grabbing|grayscale|grid|groove|hand|hanging|hard-light|help|hidden|hide|historical-forms|historical-ligatures|horizontal|horizontal-tb|hue|icon|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|ideographic|inactive|infinite|inherit|initial|inline|inline-axis|inline-block|inline-end|inline-flex|inline-grid|inline-list-item|inline-start|inline-table|inset|inside|inter-character|inter-ideograph|inter-word|intersect|invert|isolate|isolate-override|italic|jis04|jis78|jis83|jis90|justify|justify-all|kannada|keep-all|landscape|larger??|left|light|lighten|lighter|line|line-edge|line-through|linear|linearRGB|lining-nums|list-item|local|loose|lowercase|lr|lr-tb|ltr|luminance|luminosity|main-size|mandatory|manipulation|manual|margin-box|match-parent|match-source|mathematical|max-content|medium|menu|message-box|middle|min-content|miter|mixed|move|multiply|n-resize|narrower|ne-resize|nearest-neighbor|nesw-resize|newspaper|no-change|no-clip|no-close-quote|no-common-ligatures|no-contextual|no-discretionary-ligatures|no-drop|no-historical-ligatures|no-open-quote|no-repeat|none|nonzero|normal|not-allowed|nowrap|ns-resize|numbers|numeric|nw-resize|nwse-resize|oblique|oldstyle-nums|open|open-quote|optimizeLegibility|optimizeQuality|optimizeSpeed|optional|ordinal|outset|outside|over|overlay|overline|padding|padding-box|page|painted|pan-down|pan-left|pan-right|pan-up|pan-x|pan-y|paused|petite-caps|pixelated|plaintext|pointer|portrait|pre|pre-line|pre-wrap|preserve-3d|progress|progressive|proportional-nums|proportional-width|proximity|radial|recto|region|relative|remove|repeat|repeat-[xy]|reset-size|reverse|revert|revert-layer|ridge|right|rl|rl-tb|round|row|row-resize|row-reverse|row-severse|rtl|ruby|ruby-base|ruby-base-container|ruby-text|ruby-text-container|run-in|running|s-resize|saturation|scale-down|screen|scroll|scroll-position|se-resize|semi-condensed|semi-expanded|separate|sesame|show|sideways|sideways-left|sideways-lr|sideways-right|sideways-rl|simplified|slashed-zero|slice|small|small-caps|small-caption|smaller|smooth|soft-light|solid|space|space-around|space-between|space-evenly|spell-out|square|sRGB|stacked-fractions|start|static|status-bar|swap|step-end|step-start|sticky|stretch|strict|stroke|stroke-box|style|sub|subgrid|subpixel-antialiased|subtract|super|sw-resize|symbolic|table|table-caption|table-cell|table-column|table-column-group|table-footer-group|table-header-group|table-row|table-row-group|tabular-nums|tb|tb-rl|text|text-after-edge|text-before-edge|text-bottom|text-top|thick|thin|titling-caps|top|top-outside|touch|traditional|transparent|triangle|ultra-condensed|ultra-expanded|under|underline|unicase|unset|upleft|uppercase|upright|use-glyph-orientation|use-script|verso|vertical|vertical-ideographic|vertical-lr|vertical-rl|vertical-text|view-box|visible|visibleFill|visiblePainted|visibleStroke|w-resize|wait|wavy|weight|whitespace|wider|words|wrap|wrap-reverse|x|x-large|x-small|xx-large|xx-small|y|zero|zoom-in|zoom-out)(?![-\\\\w])","name":"support.constant.property-value.css"},{"match":"(?i)(?<![-\\\\w])(arabic-indic|armenian|bengali|cambodian|circle|cjk-decimal|cjk-earthly-branch|cjk-heavenly-stem|cjk-ideographic|decimal|decimal-leading-zero|devanagari|disc|disclosure-closed|disclosure-open|ethiopic-halehame-am|ethiopic-halehame-ti-e[rt]|ethiopic-numeric|georgian|gujarati|gurmukhi|hangul|hangul-consonant|hebrew|hiragana|hiragana-iroha|japanese-formal|japanese-informal|kannada|katakana|katakana-iroha|khmer|korean-hangul-formal|korean-hanja-formal|korean-hanja-informal|lao|lower-alpha|lower-armenian|lower-greek|lower-latin|lower-roman|malayalam|mongolian|myanmar|oriya|persian|simp-chinese-formal|simp-chinese-informal|square|tamil|telugu|thai|tibetan|trad-chinese-formal|trad-chinese-informal|upper-alpha|upper-armenian|upper-latin|upper-roman|urdu)(?![-\\\\w])","name":"support.constant.property-value.list-style-type.css"},{"match":"(?<![-\\\\w])(?i:-(?:ah|apple|atsc|epub|hp|khtml|moz|ms|o|rim|ro|tc|wap|webkit|xv)|(?:mso|prince))-[-A-Za-z]+","name":"support.constant.vendored.property-value.css"},{"match":"(?<![-\\\\w])(?i:arial|century|comic|courier|garamond|georgia|helvetica|impact|lucida|symbol|system-ui|system|tahoma|times|trebuchet|ui-monospace|ui-rounded|ui-sans-serif|ui-serif|utopia|verdana|webdings|sans-serif|serif|monospace)(?![-\\\\w])","name":"support.constant.font-name.css"}]},"property-names":{"patterns":[{"match":"(?i)(?<![-\\\\w])(?:accent-color|additive-symbols|align-content|align-items|align-self|all|animation|animation-delay|animation-direction|animation-duration|animation-fill-mode|animation-iteration-count|animation-name|animation-play-state|animation-timing-function|aspect-ratio|backdrop-filter|backface-visibility|background|background-attachment|background-blend-mode|background-clip|background-color|background-image|background-origin|background-position|background-position-[xy]|background-repeat|background-size|bleed|block-size|border|border-block-end|border-block-end-color|border-block-end-style|border-block-end-width|border-block-start|border-block-start-color|border-block-start-style|border-block-start-width|border-bottom|border-bottom-color|border-bottom-left-radius|border-bottom-right-radius|border-bottom-style|border-bottom-width|border-collapse|border-color|border-end-end-radius|border-end-start-radius|border-image|border-image-outset|border-image-repeat|border-image-slice|border-image-source|border-image-width|border-inline-end|border-inline-end-color|border-inline-end-style|border-inline-end-width|border-inline-start|border-inline-start-color|border-inline-start-style|border-inline-start-width|border-left|border-left-color|border-left-style|border-left-width|border-radius|border-right|border-right-color|border-right-style|border-right-width|border-spacing|border-start-end-radius|border-start-start-radius|border-style|border-top|border-top-color|border-top-left-radius|border-top-right-radius|border-top-style|border-top-width|border-width|bottom|box-decoration-break|box-shadow|box-sizing|break-after|break-before|break-inside|caption-side|caret-color|clear|clip|clip-path|clip-rule|color|color-adjust|color-interpolation-filters|color-scheme|column-count|column-fill|column-gap|column-rule|column-rule-color|column-rule-style|column-rule-width|column-span|column-width|columns|contain|container|container-name|container-type|content|counter-increment|counter-reset|cursor|direction|display|empty-cells|enable-background|fallback|fill|fill-opacity|fill-rule|filter|flex|flex-basis|flex-direction|flex-flow|flex-grow|flex-shrink|flex-wrap|float|flood-color|flood-opacity|font|font-display|font-family|font-feature-settings|font-kerning|font-language-override|font-optical-sizing|font-size|font-size-adjust|font-stretch|font-style|font-synthesis|font-variant|font-variant-alternates|font-variant-caps|font-variant-east-asian|font-variant-ligatures|font-variant-numeric|font-variant-position|font-variation-settings|font-weight|gap|glyph-orientation-horizontal|glyph-orientation-vertical|grid|grid-area|grid-auto-columns|grid-auto-flow|grid-auto-rows|grid-column|grid-column-end|grid-column-gap|grid-column-start|grid-gap|grid-row|grid-row-end|grid-row-gap|grid-row-start|grid-template|grid-template-areas|grid-template-columns|grid-template-rows|hanging-punctuation|height|hyphens|image-orientation|image-rendering|image-resolution|ime-mode|initial-letter|initial-letter-align|inline-size|inset|inset-block|inset-block-end|inset-block-start|inset-inline|inset-inline-end|inset-inline-start|isolation|justify-content|justify-items|justify-self|kerning|left|letter-spacing|lighting-color|line-break|line-clamp|line-height|list-style|list-style-image|list-style-position|list-style-type|margin|margin-block|margin-block-end|margin-block-start|margin-bottom|margin-inline|margin-inline-end|margin-inline-start|margin-left|margin-right|margin-top|marker-end|marker-mid|marker-start|marks|mask|mask-border|mask-border-mode|mask-border-outset|mask-border-repeat|mask-border-slice|mask-border-source|mask-border-width|mask-clip|mask-composite|mask-image|mask-mode|mask-origin|mask-position|mask-repeat|mask-size|mask-type|max-block-size|max-height|max-inline-size|max-lines|max-width|max-zoom|min-block-size|min-height|min-inline-size|min-width|min-zoom|mix-blend-mode|negative|object-fit|object-position|offset|offset-anchor|offset-distance|offset-path|offset-position|offset-rotation|opacity|order|orientation|orphans|outline|outline-color|outline-offset|outline-style|outline-width|overflow|overflow-anchor|overflow-block|overflow-inline|overflow-wrap|overflow-[xy]|overscroll-behavior|overscroll-behavior-block|overscroll-behavior-inline|overscroll-behavior-[xy]|pad|padding|padding-block|padding-block-end|padding-block-start|padding-bottom|padding-inline|padding-inline-end|padding-inline-start|padding-left|padding-right|padding-top|page-break-after|page-break-before|page-break-inside|paint-order|perspective|perspective-origin|place-content|place-items|place-self|pointer-events|position|prefix|quotes|range|resize|right|rotate|row-gap|ruby-align|ruby-merge|ruby-position|scale|scroll-behavior|scroll-margin|scroll-margin-block|scroll-margin-block-end|scroll-margin-block-start|scroll-margin-bottom|scroll-margin-inline|scroll-margin-inline-end|scroll-margin-inline-start|scroll-margin-left|scroll-margin-right|scroll-margin-top|scroll-padding|scroll-padding-block|scroll-padding-block-end|scroll-padding-block-start|scroll-padding-bottom|scroll-padding-inline|scroll-padding-inline-end|scroll-padding-inline-start|scroll-padding-left|scroll-padding-right|scroll-padding-top|scroll-snap-align|scroll-snap-coordinate|scroll-snap-destination|scroll-snap-stop|scroll-snap-type|scrollbar-color|scrollbar-gutter|scrollbar-width|shape-image-threshold|shape-margin|shape-outside|shape-rendering|size|speak-as|src|stop-color|stop-opacity|stroke|stroke-dasharray|stroke-dashoffset|stroke-linecap|stroke-linejoin|stroke-miterlimit|stroke-opacity|stroke-width|suffix|symbols|system|tab-size|table-layout|text-align|text-align-last|text-anchor|text-combine-upright|text-decoration|text-decoration-color|text-decoration-line|text-decoration-skip|text-decoration-skip-ink|text-decoration-style|text-decoration-thickness|text-emphasis|text-emphasis-color|text-emphasis-position|text-emphasis-style|text-indent|text-justify|text-orientation|text-overflow|text-rendering|text-shadow|text-size-adjust|text-transform|text-underline-offset|text-underline-position|top|touch-action|transform|transform-box|transform-origin|transform-style|transition|transition-delay|transition-duration|transition-property|transition-timing-function|translate|unicode-bidi|unicode-range|user-select|user-zoom|vertical-align|visibility|white-space|widows|width|will-change|word-break|word-spacing|word-wrap|writing-mode|z-index|zoom|alignment-baseline|baseline-shift|clip-rule|color-interpolation|color-interpolation-filters|color-profile|color-rendering|cx|cy|dominant-baseline|enable-background|fill|fill-opacity|fill-rule|flood-color|flood-opacity|glyph-orientation-horizontal|glyph-orientation-vertical|height|kerning|lighting-color|marker-end|marker-mid|marker-start|rx??|ry|shape-rendering|stop-color|stop-opacity|stroke|stroke-dasharray|stroke-dashoffset|stroke-linecap|stroke-linejoin|stroke-miterlimit|stroke-opacity|stroke-width|text-anchor|width|[xy]|adjust|after|align|align-last|alignment|alignment-adjust|appearance|attachment|azimuth|background-break|balance|baseline|before|bidi|binding|bookmark|bookmark-label|bookmark-level|bookmark-target|border-length|bottom-color|bottom-left-radius|bottom-right-radius|bottom-style|bottom-width|box|box-align|box-direction|box-flex|box-flex-group|box-lines|box-ordinal-group|box-orient|box-pack|break|character|collapse|column|column-break-after|column-break-before|count|counter|crop|cue|cue-after|cue-before|decoration|decoration-break|delay|display-model|display-role|down|drop|drop-initial-after-adjust|drop-initial-after-align|drop-initial-before-adjust|drop-initial-before-align|drop-initial-size|drop-initial-value|duration|elevation|emphasis|family|fit|fit-position|flex-group|float-offset|gap|grid-columns|grid-rows|hanging-punctuation|header|hyphenate|hyphenate-after|hyphenate-before|hyphenate-character|hyphenate-lines|hyphenate-resource|icon|image|increment|indent|index|initial-after-adjust|initial-after-align|initial-before-adjust|initial-before-align|initial-size|initial-value|inline-box-align|iteration-count|justify|label|left-color|left-style|left-width|length|level|line|line-stacking|line-stacking-ruby|line-stacking-shift|line-stacking-strategy|lines|list|mark|mark-after|mark-before|marks|marquee|marquee-direction|marquee-play-count|marquee-speed|marquee-style|max|min|model|move-to|name|nav|nav-down|nav-index|nav-left|nav-right|nav-up|new|numeral|offset|ordinal-group|orient|origin|overflow-style|overhang|pack|page|page-policy|pause|pause-after|pause-before|phonemes|pitch|pitch-range|play-count|play-during|play-state|point|presentation|presentation-level|profile|property|punctuation|punctuation-trim|radius|rate|rendering-intent|repeat|replace|reset|resolution|resource|respond-to|rest|rest-after|rest-before|richness|right-color|right-style|right-width|role|rotation|rotation-point|rows|ruby|ruby-overhang|ruby-span|rule|rule-color|rule-style|rule-width|shadow|size|size-adjust|sizing|space|space-collapse|spacing|span|speak|speak-header|speak-numeral|speak-punctuation|speech|speech-rate|speed|stacking|stacking-ruby|stacking-shift|stacking-strategy|stress|stretch|string-set|style|style-image|style-position|style-type|target|target-name|target-new|target-position|text|text-height|text-justify|text-outline|text-replace|text-wrap|timing-function|top-color|top-left-radius|top-right-radius|top-style|top-width|trim|unicode|up|user-select|variant|voice|voice-balance|voice-duration|voice-family|voice-pitch|voice-pitch-range|voice-rate|voice-stress|voice-volume|volume|weight|white|white-space-collapse|word|wrap)(?![-\\\\w])","name":"support.type.property-name.css"},{"match":"(?<![-\\\\w])(?i:-(?:ah|apple|atsc|epub|hp|khtml|moz|ms|o|rim|ro|tc|wap|webkit|xv)|(?:mso|prince))-[-A-Za-z]+","name":"support.type.vendored.property-name.css"}]},"property-values":{"patterns":[{"include":"#commas"},{"include":"#comment-block"},{"include":"#escapes"},{"include":"#functions"},{"include":"#property-keywords"},{"include":"#unicode-range"},{"include":"#numeric-values"},{"include":"#color-keywords"},{"include":"#string"},{"match":"!\\\\s*important(?![-\\\\w])","name":"keyword.other.important.css"}]},"pseudo-classes":{"captures":{"1":{"name":"punctuation.definition.entity.css"},"2":{"name":"invalid.illegal.colon.css"}},"match":"(?i)(:)(:*)(?:active|any-link|checked|default|disabled|empty|enabled|first|(?:first|last|only)-(?:child|of-type)|focus|focus-visible|focus-within|fullscreen|host|hover|in-range|indeterminate|invalid|left|link|optional|out-of-range|read-only|read-write|required|right|root|scope|target|unresolved|valid|visited)(?![-\\\\w]|\\\\s*[;}])","name":"entity.other.attribute-name.pseudo-class.css"},"pseudo-elements":{"captures":{"1":{"name":"punctuation.definition.entity.css"},"2":{"name":"punctuation.definition.entity.css"}},"match":"(?i)(?:(::?)(?:after|before|first-letter|first-line|(?:-(?:ah|apple|atsc|epub|hp|khtml|moz|ms|o|rim|ro|tc|wap|webkit|xv)|(?:mso|prince))-[-a-z]+)|(::)(?:backdrop|content|grammar-error|marker|placeholder|selection|shadow|spelling-error))(?![-\\\\w]|\\\\s*[;}])","name":"entity.other.attribute-name.pseudo-element.css"},"rule-list":{"begin":"\\\\{","beginCaptures":{"0":{"name":"punctuation.section.property-list.begin.bracket.curly.css"}},"end":"}","endCaptures":{"0":{"name":"punctuation.section.property-list.end.bracket.curly.css"}},"name":"meta.property-list.css","patterns":[{"include":"#rule-list-innards"}]},"rule-list-innards":{"patterns":[{"include":"#comment-block"},{"include":"#escapes"},{"include":"#font-features"},{"match":"(?<![-\\\\w])--[-A-Z_a-z[^\\\\x00-\\\\x7F]](?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))*","name":"variable.css"},{"begin":"(?<![-A-Za-z])(?=[-A-Za-z])","end":"$|(?![-A-Za-z])","name":"meta.property-name.css","patterns":[{"include":"#property-names"}]},{"begin":"(:)\\\\s*","beginCaptures":{"1":{"name":"punctuation.separator.key-value.css"}},"contentName":"meta.property-value.css","end":"\\\\s*(;)|\\\\s*(?=[)}])","endCaptures":{"1":{"name":"punctuation.terminator.rule.css"}},"patterns":[{"include":"#comment-block"},{"include":"#property-values"}]},{"match":";","name":"punctuation.terminator.rule.css"}]},"selector":{"begin":"(?=\\\\|?(?:[-#*.:A-\\\\[_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.)))","end":"(?=\\\\s*[)/@{])","name":"meta.selector.css","patterns":[{"include":"#selector-innards"}]},"selector-innards":{"patterns":[{"include":"#comment-block"},{"include":"#commas"},{"include":"#escapes"},{"include":"#combinators"},{"captures":{"1":{"name":"entity.other.namespace-prefix.css"},"2":{"name":"punctuation.separator.css"}},"match":"(?:^|(?<=[(,;}\\\\s]))(?![-*\\\\w]+\\\\|(?![-#*.:A-\\\\[_a-z[^\\\\x00-\\\\x7F]]))([-A-Z_a-z[^\\\\x00-\\\\x7F]](?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))*|\\\\*)?(\\\\|)"},{"include":"#tag-names"},{"match":"\\\\*","name":"entity.name.tag.wildcard.css"},{"captures":{"1":{"name":"punctuation.definition.entity.css"},"2":{"patterns":[{"include":"#escapes"}]}},"match":"(?<![-@\\\\w])([#.])((?:-?[0-9]|-(?=$|[#)+,.:>\\\\[{|~\\\\s]|/\\\\*)|(?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))*(?:[]!\\"%-(*;<?@^`|}]|/(?!\\\\*))+)(?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))*)","name":"invalid.illegal.bad-identifier.css"},{"captures":{"1":{"name":"punctuation.definition.entity.css"},"2":{"patterns":[{"include":"#escapes"}]}},"match":"(\\\\.)((?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))+)(?=$|[#)+,.:>\\\\[{|~\\\\s]|/\\\\*)","name":"entity.other.attribute-name.class.css"},{"captures":{"1":{"name":"punctuation.definition.entity.css"},"2":{"patterns":[{"include":"#escapes"}]}},"match":"(#)(-?(?![0-9])(?:[-0-9A-Z_a-z[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))+)(?=$|[#)+,.:>\\\\[{|~\\\\s]|/\\\\*)","name":"entity.other.attribute-name.id.css"},{"begin":"\\\\[","beginCaptures":{"0":{"name":"punctuation.definition.entity.begin.bracket.square.css"}},"end":"]","endCaptures":{"0":{"name":"punctuation.definition.entity.end.bracket.square.css"}},"name":"meta.attribute-selector.css","patterns":[{"include":"#comment-block"},{"include":"#string"},{"captures":{"1":{"name":"storage.modifier.ignore-case.css"}},"match":"(?<=[\\"\'\\\\s]|^|\\\\*/)\\\\s*([Ii])\\\\s*(?=[]\\\\s]|/\\\\*|$)"},{"captures":{"1":{"name":"string.unquoted.attribute-value.css","patterns":[{"include":"#escapes"}]}},"match":"(?<==)\\\\s*((?!/\\\\*)(?:[^]\\"\'\\\\\\\\\\\\s]|\\\\\\\\.)+)"},{"include":"#escapes"},{"match":"[$*^|~]?=","name":"keyword.operator.pattern.css"},{"match":"\\\\|","name":"punctuation.separator.css"},{"captures":{"1":{"name":"entity.other.namespace-prefix.css","patterns":[{"include":"#escapes"}]}},"match":"(-?(?!\\\\d)(?:[-\\\\w[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))+|\\\\*)(?=\\\\|(?![=\\\\s]|$|])(?:-?(?!\\\\d)|[-\\\\\\\\\\\\w[^\\\\x00-\\\\x7F]]))"},{"captures":{"1":{"name":"entity.other.attribute-name.css","patterns":[{"include":"#escapes"}]}},"match":"(-?(?!\\\\d)(?>[-\\\\w[^\\\\x00-\\\\x7F]]|\\\\\\\\(?:\\\\h{1,6}|.))+)\\\\s*(?=[]$*=^|~]|/\\\\*)"}]},{"include":"#pseudo-classes"},{"include":"#pseudo-elements"},{"include":"#functional-pseudo-classes"},{"match":"(?<![-@\\\\w])(?=[a-z]\\\\w*-)(?:(?![A-Z])[-\\\\w])+(?![-(\\\\w])","name":"entity.name.tag.custom.css"}]},"string":{"patterns":[{"begin":"\\"","beginCaptures":{"0":{"name":"punctuation.definition.string.begin.css"}},"end":"\\"|(?<!\\\\\\\\)(?=$|\\\\n)","endCaptures":{"0":{"name":"punctuation.definition.string.end.css"}},"name":"string.quoted.double.css","patterns":[{"begin":"(?:\\\\G|^)(?=(?:[^\\"\\\\\\\\]|\\\\\\\\.)+$)","end":"$","name":"invalid.illegal.unclosed.string.css","patterns":[{"include":"#escapes"}]},{"include":"#escapes"}]},{"begin":"\'","beginCaptures":{"0":{"name":"punctuation.definition.string.begin.css"}},"end":"\'|(?<!\\\\\\\\)(?=$|\\\\n)","endCaptures":{"0":{"name":"punctuation.definition.string.end.css"}},"name":"string.quoted.single.css","patterns":[{"begin":"(?:\\\\G|^)(?=(?:[^\'\\\\\\\\]|\\\\\\\\.)+$)","end":"$","name":"invalid.illegal.unclosed.string.css","patterns":[{"include":"#escapes"}]},{"include":"#escapes"}]}]},"tag-names":{"match":"(?i)(?<![-:\\\\w])(?:a|abbr|acronym|address|applet|area|article|aside|audio|b|base|basefont|bdi|bdo|bgsound|big|blink|blockquote|body|br|button|canvas|caption|center|cite|code|col|colgroup|command|content|data|datalist|dd|del|details|dfn|dialog|dir|div|dl|dt|element|em|embed|fieldset|figcaption|figure|font|footer|form|frame|frameset|h[1-6]|head|header|hgroup|hr|html|i|iframe|image|img|input|ins|isindex|kbd|keygen|label|legend|li|link|listing|main|map|mark|marquee|math|menu|menuitem|meta|meter|multicol|nav|nextid|nobr|noembed|noframes|noscript|object|ol|optgroup|option|output|p|param|picture|plaintext|pre|progress|q|rb|rp|rtc??|ruby|s|samp|script|section|select|shadow|slot|small|source|spacer|span|strike|strong|style|sub|summary|sup|table|tbody|td|template|textarea|tfoot|th|thead|time|title|tr|track|tt|ul??|var|video|wbr|xmp|altGlyph|altGlyphDef|altGlyphItem|animate|animateColor|animateMotion|animateTransform|circle|clipPath|color-profile|cursor|defs|desc|discard|ellipse|feBlend|feColorMatrix|feComponentTransfer|feComposite|feConvolveMatrix|feDiffuseLighting|feDisplacementMap|feDistantLight|feDropShadow|feFlood|feFuncA|feFuncB|feFuncG|feFuncR|feGaussianBlur|feImage|feMerge|feMergeNode|feMorphology|feOffset|fePointLight|feSpecularLighting|feSpotLight|feTile|feTurbulence|filter|font-face|font-face-format|font-face-name|font-face-src|font-face-uri|foreignObject|g|glyph|glyphRef|hatch|hatchpath|hkern|line|linearGradient|marker|mask|mesh|meshgradient|meshpatch|meshrow|metadata|missing-glyph|mpath|path|pattern|polygon|polyline|radialGradient|rect|set|solidcolor|stop|svg|switch|symbol|text|textPath|tref|tspan|use|view|vkern|annotation|annotation-xml|maction|maligngroup|malignmark|math|menclose|merror|mfenced|mfrac|mglyph|mi|mlabeledtr|mlongdiv|mmultiscripts|mn|mo|mover|mpadded|mphantom|mroot|mrow|ms|mscarries|mscarry|msgroup|msline|mspace|msqrt|msrow|mstack|mstyle|msub|msubsup|msup|mtable|mtd|mtext|mtr|munder|munderover|semantics)(?=[#)+,.:>\\\\[{|~\\\\s]|/\\\\*|$)","name":"entity.name.tag.css"},"unicode-range":{"captures":{"0":{"name":"constant.other.unicode-range.css"},"1":{"name":"punctuation.separator.dash.unicode-range.css"}},"match":"(?<![-\\\\w])[Uu]\\\\+[?\\\\h]{1,6}(?:(-)\\\\h{1,6})?(?![-\\\\w])"},"url":{"begin":"(?i)(?<![-@\\\\w])(url)(\\\\()","beginCaptures":{"1":{"name":"support.function.url.css"},"2":{"name":"punctuation.section.function.begin.bracket.round.css"}},"end":"\\\\)","endCaptures":{"0":{"name":"punctuation.section.function.end.bracket.round.css"}},"name":"meta.function.url.css","patterns":[{"match":"[^\\"\')\\\\s]+","name":"variable.parameter.url.css"},{"include":"#string"},{"include":"#comment-block"},{"include":"#escapes"}]}},"scopeName":"source.css"}')),
@@ -20011,14 +20143,14 @@ function DiffStats({
         fontSize: canvasTypography.small.fontSize,
         lineHeight: canvasTypography.small.lineHeight
     };
-    return (0, import_jsx_runtime3.jsxs)("span", {
+    return (0, import_jsx_runtime4.jsxs)("span", {
         style: mergeStyle(a, t),
-        children: [e > 0 ? (0, import_jsx_runtime3.jsxs)("span", {
+        children: [e > 0 ? (0, import_jsx_runtime4.jsxs)("span", {
             style: {
                 color: DIFF_GREEN
             },
             children: ["+", e]
-        }) : null, n > 0 ? (0, import_jsx_runtime3.jsxs)("span", {
+        }) : null, n > 0 ? (0, import_jsx_runtime4.jsxs)("span", {
             style: {
                 color: DIFF_RED
             },
@@ -20047,15 +20179,15 @@ function DiffView({
         overflow: "auto",
         tabSize: 4
     };
-    return (0, import_jsx_runtime3.jsx)("div", {
+    return (0, import_jsx_runtime4.jsx)("div", {
         style: mergeStyle(c, i),
-        children: (0, import_jsx_runtime3.jsx)("div", {
+        children: (0, import_jsx_runtime4.jsx)("div", {
             style: {
                 minWidth: "100%",
                 width: "max-content",
                 paddingBlock: "2px"
             },
-            children: e.map((e, n) => (0, import_jsx_runtime3.jsx)(DiffViewLine, {
+            children: e.map((e, n) => (0, import_jsx_runtime4.jsx)(DiffViewLine, {
                 line: e,
                 language: l,
                 showLineNumbers: a,
@@ -20119,24 +20251,24 @@ function DiffViewLine({
         overflow: "visible",
         color: s.text.primary
     }, d = void 0 !== n && e.content.length > 0 ? tokenizeDiffLine(e.content, n) : null;
-    return (0, import_jsx_runtime3.jsxs)("div", {
+    return (0, import_jsx_runtime4.jsxs)("div", {
         style: c,
-        children: [r ? (0, import_jsx_runtime3.jsx)("div", {
+        children: [r ? (0, import_jsx_runtime4.jsx)("div", {
             style: u
-        }) : null, t ? (0, import_jsx_runtime3.jsx)("div", {
+        }) : null, t ? (0, import_jsx_runtime4.jsx)("div", {
             style: {
                 display: "flex",
                 flexShrink: 0,
                 userSelect: "none",
                 paddingRight: "4px"
             },
-            children: (0, import_jsx_runtime3.jsx)("span", {
+            children: (0, import_jsx_runtime4.jsx)("span", {
                 style: p,
                 children: null != e.lineNumber ? e.lineNumber : ""
             })
-        }) : null, (0, import_jsx_runtime3.jsx)("div", {
+        }) : null, (0, import_jsx_runtime4.jsx)("div", {
             style: m,
-            children: null != d ? d.map(e => (0, import_jsx_runtime3.jsx)("span", {
+            children: null != d ? d.map(e => (0, import_jsx_runtime4.jsx)("span", {
                 style: {
                     color: e.color,
                     ...getFontStyle(e.fontStyle)
@@ -20146,8 +20278,8 @@ function DiffViewLine({
         })]
     })
 }
-var import_jsx_runtime4 = __toESM(require_jsx_runtime(), 1),
-    import_react5 = __toESM(require_react(), 1);
+var import_jsx_runtime5 = __toESM(require_jsx_runtime(), 1),
+    import_react6 = __toESM(require_react(), 1);
 
 function TextInput({
     value: e,
@@ -20176,7 +20308,7 @@ function TextInput({
         opacity: a ? .5 : 1,
         cursor: a ? "not-allowed" : "text"
     };
-    return (0, import_jsx_runtime4.jsx)("input", {
+    return (0, import_jsx_runtime5.jsx)("input", {
         type: r,
         value: e,
         onChange: n ? e => n(e.target.value) : void 0,
@@ -20196,11 +20328,11 @@ function TextArea({
 }) {
     const {
         tokens: i
-    } = useHostTheme(), o = (0, import_react5.useRef)(null), l = (0, import_react5.useCallback)(() => {
+    } = useHostTheme(), o = (0, import_react6.useRef)(null), l = (0, import_react6.useCallback)(() => {
         const e = o.current;
         e && (e.style.height = "auto", e.style.height = `${e.scrollHeight}px`)
     }, []);
-    (0, import_react5.useLayoutEffect)(() => {
+    (0, import_react6.useLayoutEffect)(() => {
         l()
     }, [l]);
     const c = {
@@ -20222,7 +20354,7 @@ function TextArea({
         opacity: a ? .5 : 1,
         cursor: a ? "not-allowed" : "text"
     };
-    return (0, import_jsx_runtime4.jsx)("textarea", {
+    return (0, import_jsx_runtime5.jsx)("textarea", {
         ref: o,
         value: e,
         onChange: n ? e => n(e.target.value) : void 0,
@@ -20267,7 +20399,7 @@ function Checkbox({
         fontSize: "13px",
         lineHeight: "18px",
         color: s.text.primary
-    }, l = e ? (0, import_jsx_runtime4.jsx)("svg", {
+    }, l = e ? (0, import_jsx_runtime5.jsx)("svg", {
         width: 10,
         height: 10,
         viewBox: "0 0 10 10",
@@ -20277,24 +20409,24 @@ function Checkbox({
         style: {
             display: "block"
         },
-        children: (0, import_jsx_runtime4.jsx)("path", {
+        children: (0, import_jsx_runtime5.jsx)("path", {
             d: "M2 5.2 4.2 7.5 8 3",
             stroke: s.text.onAccent,
             strokeWidth: 1.5,
             strokeLinecap: "round",
             strokeLinejoin: "round"
         })
-    }) : null, c = (0, import_jsx_runtime4.jsxs)(import_jsx_runtime4.Fragment, {
-        children: [(0, import_jsx_runtime4.jsx)("span", {
+    }) : null, c = (0, import_jsx_runtime5.jsxs)(import_jsx_runtime5.Fragment, {
+        children: [(0, import_jsx_runtime5.jsx)("span", {
             style: i,
             children: l
-        }), null != a ? (0, import_jsx_runtime4.jsx)("span", {
+        }), null != a ? (0, import_jsx_runtime5.jsx)("span", {
             children: a
         }) : null]
     });
-    return (0, import_jsx_runtime4.jsxs)("label", {
+    return (0, import_jsx_runtime5.jsxs)("label", {
         style: mergeStyle(o, r),
-        children: [(0, import_jsx_runtime4.jsx)("input", {
+        children: [(0, import_jsx_runtime5.jsx)("input", {
             type: "checkbox",
             checked: e,
             disabled: t,
@@ -20358,14 +20490,14 @@ function Toggle({
         transform: e ? `translateX(${l}px)` : "translateX(0)",
         transition: "transform 150ms ease"
     };
-    return (0, import_jsx_runtime4.jsx)("button", {
+    return (0, import_jsx_runtime5.jsx)("button", {
         type: "button",
         role: "switch",
         "aria-checked": e,
         disabled: t,
         onClick: t ? void 0 : () => n?.(!e),
         style: mergeStyle(c, r),
-        children: (0, import_jsx_runtime4.jsx)("span", {
+        children: (0, import_jsx_runtime5.jsx)("span", {
             style: u,
             "aria-hidden": "true"
         })
@@ -20408,37 +20540,37 @@ function Select({
         display: "flex",
         alignItems: "center"
     };
-    return (0, import_jsx_runtime4.jsxs)("span", {
+    return (0, import_jsx_runtime5.jsxs)("span", {
         style: mergeStyle({
             position: "relative",
             display: "inline-flex",
             alignItems: "center"
         }, s),
-        children: [(0, import_jsx_runtime4.jsxs)("select", {
+        children: [(0, import_jsx_runtime5.jsxs)("select", {
             value: e ?? "",
             onChange: n ? e => n(e.target.value) : void 0,
             disabled: r,
             style: l,
-            children: [null != a && (0, import_jsx_runtime4.jsx)("option", {
+            children: [null != a && (0, import_jsx_runtime5.jsx)("option", {
                 value: "",
                 disabled: !0,
                 children: a
-            }), t.map(e => (0, import_jsx_runtime4.jsx)("option", {
+            }), t.map(e => (0, import_jsx_runtime5.jsx)("option", {
                 value: e.value,
                 disabled: e.disabled,
                 children: e.label
             }, e.value))]
-        }), (0, import_jsx_runtime4.jsx)("span", {
+        }), (0, import_jsx_runtime5.jsx)("span", {
             style: c,
             "aria-hidden": "true",
-            children: (0, import_jsx_runtime4.jsx)("svg", {
+            children: (0, import_jsx_runtime5.jsx)("svg", {
                 width: 10,
                 height: 10,
                 viewBox: "0 0 12 12",
                 fill: "none",
                 xmlns: "http://www.w3.org/2000/svg",
                 "aria-hidden": "true",
-                children: (0, import_jsx_runtime4.jsx)("path", {
+                children: (0, import_jsx_runtime5.jsx)("path", {
                     d: "M3 4.5 6 7.5 9 4.5",
                     stroke: "currentColor",
                     strokeWidth: 1.2,
@@ -20480,7 +20612,7 @@ function IconButton({
         lineHeight: 1,
         transition: "background 120ms ease, color 120ms ease"
     };
-    return (0, import_jsx_runtime4.jsx)("button", {
+    return (0, import_jsx_runtime5.jsx)("button", {
         type: "button",
         title: a,
         disabled: t,
@@ -20489,8 +20621,29 @@ function IconButton({
         children: e
     })
 }
-var import_jsx_runtime5 = __toESM(require_jsx_runtime(), 1),
-    import_react6 = __toESM(require_react(), 1);
+var import_jsx_runtime6 = __toESM(require_jsx_runtime(), 1),
+    SWATCH_SIZE_PX = 24;
+
+function Swatch({
+    color: e,
+    style: n
+}) {
+    const t = {
+        boxSizing: "border-box",
+        flexShrink: 0,
+        display: "inline-block",
+        width: `${SWATCH_SIZE_PX}px`,
+        height: `${SWATCH_SIZE_PX}px`,
+        borderRadius: `${canvasRadius.sm}px`,
+        background: colorPalette[e]
+    };
+    return (0, import_jsx_runtime6.jsx)("span", {
+        style: mergeStyle(t, n),
+        "aria-hidden": !0
+    })
+}
+var import_jsx_runtime7 = __toESM(require_jsx_runtime(), 1),
+    import_react7 = __toESM(require_react(), 1);
 
 function asTodoStatus(e) {
     switch (e) {
@@ -20531,7 +20684,7 @@ function TodoStatusGlyph({
         };
     switch (e) {
         case "pending":
-            return (0, import_jsx_runtime5.jsxs)("svg", {
+            return (0, import_jsx_runtime7.jsxs)("svg", {
                 width: 14,
                 height: 14,
                 viewBox: "0 0 24 24",
@@ -20540,34 +20693,34 @@ function TodoStatusGlyph({
                 role: "img",
                 "aria-label": a,
                 style: t,
-                children: [(0, import_jsx_runtime5.jsx)("path", {
+                children: [(0, import_jsx_runtime7.jsx)("path", {
                     d: "M10.1 2.182a10 10 0 0 1 3.8 0",
                     ...r
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "M13.9 21.818a10 10 0 0 1-3.8 0",
                     ...r
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "M17.609 3.721a10 10 0 0 1 2.69 2.7",
                     ...r
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "M2.182 13.9a10 10 0 0 1 0-3.8",
                     ...r
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "M20.279 17.609a10 10 0 0 1-2.7 2.69",
                     ...r
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "M21.818 10.1a10 10 0 0 1 0 3.8",
                     ...r
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "M3.721 6.391a10 10 0 0 1 2.7-2.69",
                     ...r
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "M6.391 20.279a10 10 0 0 1-2.69-2.7",
                     ...r
                 })]
             });
         case "in_progress":
-            return (0, import_jsx_runtime5.jsxs)("svg", {
+            return (0, import_jsx_runtime7.jsxs)("svg", {
                 width: 14,
                 height: 14,
                 viewBox: "0 0 24 24",
@@ -20576,21 +20729,21 @@ function TodoStatusGlyph({
                 role: "img",
                 "aria-label": a,
                 style: t,
-                children: [(0, import_jsx_runtime5.jsx)("circle", {
+                children: [(0, import_jsx_runtime7.jsx)("circle", {
                     cx: 12,
                     cy: 12,
                     r: 10,
                     ...r
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "M8 12h8",
                     ...r
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "m12 16 4-4-4-4",
                     ...r
                 })]
             });
         case "completed":
-            return (0, import_jsx_runtime5.jsxs)("svg", {
+            return (0, import_jsx_runtime7.jsxs)("svg", {
                 width: 14,
                 height: 14,
                 viewBox: "0 0 14 14",
@@ -20599,13 +20752,13 @@ function TodoStatusGlyph({
                 role: "img",
                 "aria-label": a,
                 style: t,
-                children: [(0, import_jsx_runtime5.jsx)("circle", {
+                children: [(0, import_jsx_runtime7.jsx)("circle", {
                     cx: 7,
                     cy: 7,
                     r: 5.25,
                     stroke: "currentColor",
                     strokeWidth: 1.2
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "M4.5 7 6.5 9 9.5 5",
                     stroke: "currentColor",
                     strokeWidth: 1.2,
@@ -20614,7 +20767,7 @@ function TodoStatusGlyph({
                 })]
             });
         case "cancelled":
-            return (0, import_jsx_runtime5.jsxs)("svg", {
+            return (0, import_jsx_runtime7.jsxs)("svg", {
                 width: 14,
                 height: 14,
                 viewBox: "0 0 14 14",
@@ -20623,13 +20776,13 @@ function TodoStatusGlyph({
                 role: "img",
                 "aria-label": a,
                 style: t,
-                children: [(0, import_jsx_runtime5.jsx)("circle", {
+                children: [(0, import_jsx_runtime7.jsx)("circle", {
                     cx: 7,
                     cy: 7,
                     r: 5.25,
                     stroke: "currentColor",
                     strokeWidth: 1.2
-                }), (0, import_jsx_runtime5.jsx)("path", {
+                }), (0, import_jsx_runtime7.jsx)("path", {
                     d: "m5 5 4 4M9 5l-4 4",
                     stroke: "currentColor",
                     strokeWidth: 1.2,
@@ -20688,7 +20841,7 @@ function CanvasTodoListItem({
         color: o,
         textDecoration: i ? "line-through" : void 0
     };
-    return (0, import_jsx_runtime5.jsx)("li", {
+    return (0, import_jsx_runtime7.jsx)("li", {
         id: `todo-${e.id}`,
         style: {
             position: "relative",
@@ -20697,17 +20850,17 @@ function CanvasTodoListItem({
             padding: 0,
             margin: 0
         },
-        children: (0, import_jsx_runtime5.jsxs)("button", {
+        children: (0, import_jsx_runtime7.jsxs)("button", {
             type: "button",
             onClick: () => t?.(e),
             style: l,
-            children: [(0, import_jsx_runtime5.jsx)("span", {
+            children: [(0, import_jsx_runtime7.jsx)("span", {
                 style: c,
-                children: (0, import_jsx_runtime5.jsx)(TodoStatusGlyph, {
+                children: (0, import_jsx_runtime7.jsx)(TodoStatusGlyph, {
                     status: r,
                     color: s
                 })
-            }), (0, import_jsx_runtime5.jsx)("span", {
+            }), (0, import_jsx_runtime7.jsx)("span", {
                 style: u,
                 children: e.content
             })]
@@ -20731,9 +20884,9 @@ function TodoList({
         gap: `${canvasSpacing[2.5]}px`,
         width: "100%"
     };
-    return (0, import_jsx_runtime5.jsx)("ul", {
+    return (0, import_jsx_runtime7.jsx)("ul", {
         style: mergeStyle(r, a),
-        children: e.map(e => (0, import_jsx_runtime5.jsx)(CanvasTodoListItem, {
+        children: e.map(e => (0, import_jsx_runtime7.jsx)(CanvasTodoListItem, {
             todo: e,
             isDimmed: n?.has(e.id),
             onTodoClick: t
@@ -20750,10 +20903,10 @@ function TodoListCard({
 }) {
     const {
         tokens: s
-    } = useHostTheme(), [i, o] = (0, import_react6.useState)(t), l = (0, import_react6.useMemo)(() => e.filter(e => {
+    } = useHostTheme(), [i, o] = (0, import_react7.useState)(t), l = (0, import_react7.useMemo)(() => e.filter(e => {
         const n = asTodoStatus(e.status);
         return "completed" === n || "cancelled" === n
-    }).length, [e]), c = (0, import_react6.useCallback)(() => {
+    }).length, [e]), c = (0, import_react7.useCallback)(() => {
         o(e => !e)
     }, []);
     if (0 === e.length) return null;
@@ -20803,32 +20956,32 @@ function TodoListCard({
         b = {
             padding: `${canvasSpacing[2]}px ${canvasSpacing[4]}px`
         };
-    return (0, import_jsx_runtime5.jsxs)("div", {
+    return (0, import_jsx_runtime7.jsxs)("div", {
         style: mergeStyle(u, r),
-        children: [(0, import_jsx_runtime5.jsx)("button", {
+        children: [(0, import_jsx_runtime7.jsx)("button", {
             type: "button",
             onClick: c,
             style: p,
             "aria-expanded": i,
-            children: (0, import_jsx_runtime5.jsx)("div", {
+            children: (0, import_jsx_runtime7.jsx)("div", {
                 style: m,
-                children: (0, import_jsx_runtime5.jsxs)("div", {
+                children: (0, import_jsx_runtime7.jsxs)("div", {
                     style: d,
-                    children: [(0, import_jsx_runtime5.jsx)(CanvasChevron, {
+                    children: [(0, import_jsx_runtime7.jsx)(CanvasChevron, {
                         expanded: i
-                    }), l > 0 ? (0, import_jsx_runtime5.jsxs)("span", {
+                    }), l > 0 ? (0, import_jsx_runtime7.jsxs)("span", {
                         children: [l, " of ", e.length, " Done"]
-                    }) : (0, import_jsx_runtime5.jsxs)(import_jsx_runtime5.Fragment, {
-                        children: ["To-dos ", (0, import_jsx_runtime5.jsx)("span", {
+                    }) : (0, import_jsx_runtime7.jsxs)(import_jsx_runtime7.Fragment, {
+                        children: ["To-dos ", (0, import_jsx_runtime7.jsx)("span", {
                             style: g,
                             children: e.length
                         })]
                     })]
                 })
             })
-        }), i ? (0, import_jsx_runtime5.jsx)("div", {
+        }), i ? (0, import_jsx_runtime7.jsx)("div", {
             style: b,
-            children: (0, import_jsx_runtime5.jsx)(TodoList, {
+            children: (0, import_jsx_runtime7.jsx)(TodoList, {
                 todos: e,
                 dimmedTodoIds: n,
                 onTodoClick: a
@@ -20836,20 +20989,124 @@ function TodoListCard({
         }) : null]
     })
 }
+var import_jsx_runtime8 = __toESM(require_jsx_runtime(), 1);
+
+function safeValue(e) {
+    return Number.isFinite(e) && e > 0 ? e : 0
+}
+
+function UsageBar({
+    segments: e,
+    total: n,
+    topLeftLabel: t,
+    topRightLabel: a,
+    style: r
+}) {
+    const {
+        tokens: s
+    } = useHostTheme(), i = safeValue(n), o = e.reduce((e, n) => e + safeValue(n.value), 0), l = Math.max(0, i - o), c = null != t || null != a, u = {
+        display: "flex",
+        flexDirection: "column",
+        gap: `${canvasSpacing[2]}px`,
+        width: "100%",
+        minWidth: 0
+    }, p = {
+        display: "flex",
+        alignItems: "baseline",
+        justifyContent: "space-between",
+        gap: `${canvasSpacing[3]}px`,
+        minWidth: 0,
+        fontSize: canvasTypography.small.fontSize,
+        lineHeight: canvasTypography.small.lineHeight,
+        fontWeight: canvasTypography.small.fontWeight,
+        color: s.text.secondary,
+        fontVariantNumeric: "tabular-nums"
+    }, m = {
+        height: 5,
+        flexBasis: 0,
+        flexShrink: 0,
+        minWidth: canvasSpacing[1],
+        borderRadius: 1
+    };
+    return (0, import_jsx_runtime8.jsxs)("div", {
+        style: mergeStyle(u, r),
+        children: [c ? (0, import_jsx_runtime8.jsxs)("div", {
+            style: p,
+            children: [(0, import_jsx_runtime8.jsx)("span", {
+                style: {
+                    minWidth: 0
+                },
+                children: t
+            }), (0, import_jsx_runtime8.jsx)("span", {
+                style: {
+                    minWidth: 0,
+                    textAlign: "right"
+                },
+                children: a
+            })]
+        }) : null, (0, import_jsx_runtime8.jsx)("div", {
+            role: "img",
+            "aria-label": `Usage bar: ${o} of ${i} used`,
+            style: {
+                width: "100%",
+                minWidth: 0,
+                overflow: "hidden",
+                borderRadius: 1,
+                background: "transparent"
+            },
+            children: (0, import_jsx_runtime8.jsxs)("div", {
+                style: {
+                    display: "flex",
+                    minWidth: 0,
+                    gap: 1
+                },
+                children: [e.map((e, n) => {
+                    const t = e.color ?? usageColorSequence[n % usageColorSequence.length];
+                    return (0, import_jsx_runtime8.jsx)("span", {
+                        "aria-hidden": "true",
+                        style: {
+                            ...m,
+                            flexGrow: safeValue(e.value),
+                            background: colorPalette[t]
+                        }
+                    }, e.id)
+                }), (0, import_jsx_runtime8.jsx)("span", {
+                    "aria-hidden": "true",
+                    style: {
+                        ...m,
+                        flexGrow: l,
+                        background: s.fill.tertiary
+                    }
+                })]
+            })
+        })]
+    })
+}
 var Badge = Pill,
     Tag = Pill,
     Chip = Pill,
-    import_react7 = __toESM(require_react(), 1),
+    import_react8 = __toESM(require_react(), 1),
     import_client = __toESM(require_client(), 1),
     CANVAS_SANS_FONT_STACK = '-apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", system-ui, "Ubuntu", "Droid Sans", sans-serif',
     CANVAS_BODY_PADDING_VERTICAL_PX = 24,
     CANVAS_BODY_PADDING_HORIZONTAL_PX = 32;
 
+function getCanvasRuntimeGlobal() {
+    return globalThis
+}
+
+function getCursorCanvas() {
+    return getCanvasRuntimeGlobal().__cursorCanvas
+}
+
 function reportErrorToHost(e) {
     try {
-        const n = globalThis.__cursorCanvas;
-        n?.reportError?.(e)
-    } catch {}
+        getCursorCanvas()?.reportError?.(e)
+    } catch (e) {
+        console.warn("[CursorCanvas] Failed to report error to host", {
+            errorType: e instanceof Error ? e.name : typeof e
+        })
+    }
 }
 
 function isLightKind2(e) {
@@ -20867,7 +21124,7 @@ function CanvasShell({
     children: e
 }) {
     const n = useHostTheme();
-    return import_react7.default.useLayoutEffect(() => {
+    return import_react8.default.useLayoutEffect(() => {
         applyBodyTheme(n)
     }, [n]), e
 }
@@ -20877,7 +21134,7 @@ function renderBootstrapError(e) {
     const n = document.getElementById("root") ?? document.body;
     n && n.replaceChildren()
 }
-var HostRuntimeErrorBoundary = class extends import_react7.default.Component {
+var HostRuntimeErrorBoundary = class extends import_react8.default.Component {
     constructor() {
         super(...arguments), this.state = {
             hasError: !1
@@ -20896,16 +21153,19 @@ var HostRuntimeErrorBoundary = class extends import_react7.default.Component {
     }
 };
 async function mountCanvas(e) {
-    globalThis.React = import_react7.default, Object.assign(globalThis, import_react7.default), Object.assign(globalThis, dist_exports);
-    const n = document.getElementById("root");
-    if (n instanceof HTMLElement) try {
-        const t = (await import(e)).default;
-        if ("function" != typeof t && "object" != typeof t) throw new Error("Canvas modules must default export a React component.");
-        (0, import_client.createRoot)(n).render(import_react7.default.createElement(HostRuntimeErrorBoundary, null, import_react7.default.createElement(CanvasShell, null, import_react7.default.createElement(t))))
+    const n = getCanvasRuntimeGlobal();
+    n.React = import_react8.default, Object.assign(n, import_react8.default), Object.assign(n, dist_exports);
+    const t = document.getElementById("root");
+    if (t instanceof HTMLElement) try {
+        const n = (await import(e)).default;
+        if ("function" != typeof n && "object" != typeof n) throw new Error("Canvas modules must default export a React component.");
+        (0, import_client.createRoot)(t).render(import_react8.default.createElement(HostRuntimeErrorBoundary, null, import_react8.default.createElement(CanvasShell, null, import_react8.default.createElement(n))))
     } catch (e) {
         renderBootstrapError(e instanceof Error ? e.message : String(e))
     } else renderBootstrapError("Canvas root element was not found.")
 }
 export {
-    mountCanvas
+    HostRuntimeErrorBoundary,
+    mountCanvas,
+    renderBootstrapError
 };
