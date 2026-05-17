@@ -25271,6 +25271,7 @@
                             h = _[n][1];
                             break
                         }
+
                     function C() {
                         0 === L && x && !e._done && (x = !1, s.end())
                     }
@@ -26882,6 +26883,7 @@
 
                 function rt(e, t) {
                     if ("h2" === e[de]) return void
+
                     function(e, t, n) {
                         const {
                             body: s,
@@ -39475,6 +39477,7 @@
                 async unary(t, n, r, s, i, a, o) {
                     const l = Do(n, e.binaryOptions, e.jsonOptions, e);
                     return s = void 0 === s ? e.defaultTimeoutMs : s <= 0 ? void 0 : s, await
+
                     function(e) {
                         const t = No(e.next, e.interceptors),
                             [n, r, s] = Fo(e);
@@ -39537,6 +39540,7 @@
                                     }), [t, n]
                                 }(o.header);
                             let f = await
+
                             function(e, ...t) {
                                 const [n, r, s] = function(e) {
                                     let t;
@@ -141960,6 +141964,7 @@
             }
             async initializeGitSpawner() {
                 const e = await
+
                 function() {
                     return yFe(this, void 0, void 0, function*() {
                         return CFe([], () => !0)
