@@ -4573,7 +4573,6 @@
                             }() : function() {
                                 const i = m.formats[a];
                                 if (!i) return void
-
                                 function() {
                                     if (!1 !== c.strictSchema) throw new Error(e());
 
@@ -116278,7 +116277,7 @@
                             n\ n # # General\ n\ n - Each time the user sends a message, we may automatically attach some information about their current state, such as what files they have open, where their cursor is, recently viewed files, edit history in their session so far, linter errors, and more.This information may or may not be relevant to the coding task, it is up
                             for you to decide.\n - When using the run_terminal_cmd tool, your terminal session is persisted across tool calls.On the first call, you should cd to the appropriate directory and do necessary setup.On subsequent calls, you will have the same environment.\n - If a tool exists
                                 for
-                            an action, prefer to use the tool instead of shell commands(e.g read_file over cat).\n - Code chunks that you receive(via tool calls or from user) may include inline line numbers in the form "Lxxx:LINE_CONTENT", e.g.
+                                an action, prefer to use the tool instead of shell commands(e.g read_file over cat).\n - Code chunks that you receive(via tool calls or from user) may include inline line numbers in the form "Lxxx:LINE_CONTENT", e.g.
                             "L123:LINE_CONTENT".Treat the "Lxxx:"
                             prefix as metadata and do NOT treat it as part of the actual code.\n - IMPORTANT: Do not stop until all tasks are completed, but be mindful of the token usage.\n - $ {
                                 AW
@@ -142728,7 +142727,6 @@
                         headersList: u,
                         socket: d
                     } = await
-
                     function({
                         body: n
                     }) {
