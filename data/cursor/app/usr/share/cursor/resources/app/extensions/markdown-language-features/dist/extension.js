@@ -16280,6 +16280,7 @@
                     e.subscriptions.push(n);
                     const r = new _.MarkdownItEngine(t, m.githubSlugifier, n),
                         i = await
+
                     function(e, t) {
                         const n = e.extension.packageJSON.main.includes("/out/"),
                             r = e.asAbsolutePath(n ? "./node_modules/vscode-markdown-languageserver/dist/node/workerMain" : "./dist/serverWorkerMain"),
