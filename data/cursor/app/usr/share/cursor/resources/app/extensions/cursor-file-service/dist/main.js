@@ -1,0 +1,2 @@
+(()=>{"use strict";var e={};(()=>{var r=e;Object.defineProperty(r,"__esModule",{value:!0}),r.DUMMY=void 0,r.DUMMY=1})();var r=exports;for(var o in e)r[o]=e[o];e.__esModule&&Object.defineProperty(r,"__esModule",{value:!0})})();
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/0cf8b06883f54e26bb4f0fb8647c9500ccb43310/extensions/cursor-file-service/dist/main.js.map
