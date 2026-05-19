@@ -6879,7 +6879,6 @@
                             I = f[t][1];
                             break
                         }
-
                     function w() {
                         0 === M && _ && !e._done && (_ = !1, r.end())
                     }
@@ -10745,7 +10744,6 @@
 
                 function nA(e, A) {
                     if ("h2" === e[ge]) return void
-
                     function(e, A, t) {
                         const {
                             body: r,
@@ -15576,7 +15574,6 @@
                 async unary(A, t, n, r, s, i, o) {
                     const l = ze(t, e.binaryOptions, e.jsonOptions, e);
                     return r = void 0 === r ? e.defaultTimeoutMs : r <= 0 ? void 0 : r, await
-
                     function(e) {
                         const A = Ke(e.next, e.interceptors),
                             [t, n, r] = Ze(e);
@@ -15639,7 +15636,6 @@
                                     }), [A, t]
                                 }(o.header);
                             let B = await
-
                             function(e, ...A) {
                                 const [t, n, r] = function(e) {
                                     let A;
