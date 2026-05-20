@@ -22,7 +22,7 @@ index f89657f..45a3398 100644
 +    if (/fetch failed|network error|socket hang up|client network socket disconnected|connection (?:timed out|timeout|closed|terminated)/i.test(msg)) {
 +        return true;
 +    }
-+    if (error instanceof errors_js_1.OAuthError && (error instanceof errors_js_1.ServerError || error instanceof errors_js_1.TemporarilyUnavailableError)) {
++    if (error instanceof errors_js_1.TemporarilyUnavailableError) {
 +        return true;
 +    }
 +    return false;
@@ -187,7 +187,7 @@ index de86ff9..ff85a7a 100644
 +    if (/fetch failed|network error|socket hang up|client network socket disconnected|connection (?:timed out|timeout|closed|terminated)/i.test(msg)) {
 +        return true;
 +    }
-+    if (error instanceof OAuthError && (error instanceof ServerError || error instanceof TemporarilyUnavailableError)) {
++    if (error instanceof TemporarilyUnavailableError) {
 +        return true;
 +    }
 +    return false;

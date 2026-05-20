@@ -18,36 +18,41 @@
         },
         t = {};
     e.r(t), e.d(t, {
-        activate: () => l,
-        deactivate: () => h
+        activate: () => h,
+        deactivate: () => m
     });
     const a = require("vscode"),
         r = require("node:child_process"),
-        i = require("node:os"),
-        s = require("node:util"),
-        n = require("node:path"),
-        o = (0, s.promisify)(r.execFile);
-    class c {
+        i = require("node:fs/promises"),
+        s = require("node:os"),
+        n = require("node:util"),
+        o = require("node:path"),
+        c = (0, n.promisify)(r.execFile);
+    class l {
         constructor(e) {
             this.workspacePaths = e, this.recentlyWarmedBranches = new Map
         }
         getCwd() {
-            return this.workspacePaths[0] ?? a.workspace.workspaceFolders?.[0]?.uri.fsPath ?? i.homedir()
+            return this.workspacePaths[0] ?? a.workspace.workspaceFolders?.[0]?.uri.fsPath ?? s.homedir()
         }
         normalizeRemoteName(e) {
             const t = e?.trim() || "origin";
             if (t.startsWith("-")) throw new Error(`Invalid remote name: ${t}`);
             return t
         }
-        async executeGitCommandStable(e, t, a) {
+        async executeGitCommandStable(e, t, a, r) {
             const {
-                stdout: r
-            } = await o("git", t, {
+                stdout: i
+            } = await c("git", t, {
                 cwd: e,
+                env: r ? {
+                    ...process.env,
+                    ...r
+                } : void 0,
                 maxBuffer: 10485760,
                 signal: a
             });
-            return r ?? ""
+            return i ?? ""
         }
         normalizeBranchName(e) {
             let t = e.trim();
@@ -165,9 +170,9 @@
             }
         }
         async snapshotAndPushCurrentBranch(e, t) {
-            const r = e?.cwd?.trim() || this.getCwd(),
-                s = this.normalizeRemoteName(e?.remoteName),
-                o = e?.commitMessage ?? "Cursor: Apply local changes for cloud agent",
+            const a = e?.cwd?.trim() || this.getCwd(),
+                r = this.normalizeRemoteName(e?.remoteName),
+                n = e?.commitMessage ?? "Cursor: Apply local changes for cloud agent",
                 c = new AbortController,
                 l = t?.onCancellationRequested(() => {
                     c.abort()
@@ -175,46 +180,28 @@
             t?.isCancellationRequested && c.abort();
             try {
                 this.throwIfCancelled(t);
-                const l = await this.executeGitCommandStable(r, ["rev-parse", "--abbrev-ref", "HEAD"], c.signal),
-                    h = this.resolveCurrentBranchName(this.normalizeCurrentBranchRef(l)),
-                    m = Date.now(),
-                    u = Math.random().toString(36).substring(2, 7),
-                    d = `${e?.branchPrefix?.trim()||"cursor/"}cloud-agent-${m}-${u}`,
-                    w = n.join(i.tmpdir(), `cursor-worktree-${d.replace(/\//g,"-")}`);
-                await this.executeGitCommandStable(r, ["worktree", "add", "-b", d, w, h], c.signal);
+                const l = await this.executeGitCommandStable(a, ["rev-parse", "--abbrev-ref", "HEAD"], c.signal),
+                    h = (this.resolveCurrentBranchName(this.normalizeCurrentBranchRef(l)), Date.now()),
+                    m = Math.random().toString(36).substring(2, 7),
+                    d = `${e?.branchPrefix?.trim()||"cursor/"}cloud-agent-${h}-${m}`,
+                    u = o.join(s.tmpdir(), `cursor-index-${d.replace(/\//g,"-")}-${process.pid}-${m}`),
+                    w = {
+                        GIT_INDEX_FILE: u
+                    };
                 try {
-                    const e = await this.executeGitCommandStable(r, ["status", "--porcelain", "-uall"], c.signal);
-                    for (const t of e.split("\n")) {
-                        if (!t.trim()) continue;
-                        const e = t.substring(0, 2).trim();
-                        let i = t.substring(3).trim();
-                        if (!i) continue;
-                        const s = i.indexOf(" -> ");
-                        let o; - 1 !== s && (o = i.substring(0, s), i = i.substring(s + 4));
-                        const c = n.join(r, i),
-                            l = n.join(w, i);
-                        if ("D" === e) try {
-                            await a.workspace.fs.delete(a.Uri.file(l))
-                        } catch {} else try {
-                            const e = n.dirname(l);
-                            await a.workspace.fs.createDirectory(a.Uri.file(e)), await a.workspace.fs.copy(a.Uri.file(c), a.Uri.file(l), {
-                                overwrite: !0
-                            })
-                        } catch {}
-                        if (o) try {
-                            await a.workspace.fs.delete(a.Uri.file(n.join(w, o)))
-                        } catch {}
-                    }
-                    if (await this.executeGitCommandStable(w, ["add", "-A"], c.signal), !(await this.executeGitCommandStable(w, ["status", "--porcelain"], c.signal)).trim()) throw new Error("No changes were captured in the snapshot worktree");
-                    await this.executeGitCommandStable(w, ["commit", "-m", o], c.signal), await this.executeGitCommandStable(w, ["push", "--set-upstream", s, d], c.signal)
+                    await this.executeGitCommandStable(a, ["read-tree", "HEAD"], c.signal, w), await this.executeGitCommandStable(a, ["add", "-A", "--", "."], c.signal, w);
+                    const e = (await this.executeGitCommandStable(a, ["write-tree"], c.signal, w)).trim();
+                    if (e === (await this.executeGitCommandStable(a, ["rev-parse", "HEAD^{tree}"], c.signal)).trim()) throw new Error("No changes were captured in the snapshot worktree");
+                    const t = (await this.executeGitCommandStable(a, ["commit-tree", e, "-p", "HEAD", "-m", n], c.signal)).trim();
+                    await this.executeGitCommandStable(a, ["update-ref", `refs/heads/${d}`, t], c.signal), await this.executeGitCommandStable(a, ["push", "--set-upstream", r, d], c.signal)
                 } finally {
                     try {
-                        await this.executeGitCommandStable(r, ["worktree", "remove", "--force", w])
+                        await (0, i.unlink)(u)
                     } catch {}
                 }
                 if (e?.stashLocalChangesAfterPush) try {
                     const t = e.stashMessage ?? "Cursor: moved local changes to cloud agent";
-                    await this.executeGitCommandStable(r, ["stash", "push", "--include-untracked", "-m", t], c.signal)
+                    await this.executeGitCommandStable(a, ["stash", "push", "--include-untracked", "-m", t], c.signal)
                 } catch {}
                 return d
             } finally {
@@ -227,18 +214,18 @@
         }
     }
 
-    function l(e) {
+    function h(e) {
         const t = (a.workspace.workspaceFolders ?? []).map(e => e.uri.fsPath),
-            r = new c(t),
+            r = new l(t),
             i = a.cursor.registerCheckoutProvider(r);
         e.subscriptions.push(i)
     }
 
-    function h() {}
-    var m = exports;
-    for (var u in t) m[u] = t[u];
-    t.__esModule && Object.defineProperty(m, "__esModule", {
+    function m() {}
+    var d = exports;
+    for (var u in t) d[u] = t[u];
+    t.__esModule && Object.defineProperty(d, "__esModule", {
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/0cf8b06883f54e26bb4f0fb8647c9500ccb43310/extensions/cursor-checkout/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/d5b2fc092e16007956c9e5047f76097b9e626ca0/extensions/cursor-checkout/dist/main.js.map
