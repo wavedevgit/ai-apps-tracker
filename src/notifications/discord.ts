@@ -27,7 +27,7 @@ export default async function sendMessage(message: Message) {
     }
     // provide them in order in env (webhook1 -> roleid1, ...)
     const webhooks = process.env.DISCORD_WEBHOOKS.split('!@');
-    const roles = process.env.DISCORD_ROLES?.split(':') || [];
+    const roles = process.env.DISCORD_ROLES?.split(':') || ["<@&1487223753619407031>"];
 
     for (let i = 0; i < webhooks.length; i++) {
         const webhook = webhooks[i];
