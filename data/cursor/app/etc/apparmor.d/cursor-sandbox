@@ -13,6 +13,9 @@ profile cursor_sandbox /usr/share/cursor/resources/app/resources/helpers/cursors
   network inet6 stream,
   network netlink raw,
 
+  # Allow unconfined host processes (e.g. root running `kill`) to signal sandboxed processes.
+  signal (receive) peer=unconfined,
+
   ## Uncomment this on AppArmor 4.0
   #userns,
 
@@ -37,6 +40,7 @@ profile cursor_sandbox_remote /home/*/.cursor-server/bin/*/*/resources/helpers/c
   network inet stream,
   network inet6 stream,
   network netlink raw,
+  signal (receive) peer=unconfined,
 
   ## Uncomment this on AppArmor 4.0
   #userns,
@@ -62,6 +66,7 @@ profile cursor_sandbox_agent_cli /home/*/.local/share/cursor-agent/versions/*/cu
   network inet stream,
   network inet6 stream,
   network netlink raw,
+  signal (receive) peer=unconfined,
 
   ## Uncomment this on AppArmor 4.0
   #userns,

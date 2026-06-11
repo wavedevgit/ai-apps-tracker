@@ -1,16 +1,1311 @@
 /*!--------------------------------------------------------
  * Copyright (C) Microsoft Corporation. All rights reserved.
  *--------------------------------------------------------*/
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="0be2a8e1-a2ca-5f7a-a112-f040817831d5")}catch(e){}}();
-var re=function(e,t){return re=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(r,n){r.__proto__=n}||function(r,n){for(var i in n)Object.prototype.hasOwnProperty.call(n,i)&&(r[i]=n[i])},re(e,t)};export function __extends(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Class extends value "+String(t)+" is not a constructor or null");re(e,t);function r(){this.constructor=e}e.prototype=t===null?Object.create(t):(r.prototype=t.prototype,new r)}export var __assign=function(){return __assign=Object.assign||function(t){for(var r,n=1,i=arguments.length;n<i;n++){r=arguments[n];for(var s in r)Object.prototype.hasOwnProperty.call(r,s)&&(t[s]=r[s])}return t},__assign.apply(this,arguments)};export function __rest(e,t){var r={};for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&t.indexOf(n)<0&&(r[n]=e[n]);if(e!=null&&typeof Object.getOwnPropertySymbols=="function")for(var i=0,n=Object.getOwnPropertySymbols(e);i<n.length;i++)t.indexOf(n[i])<0&&Object.prototype.propertyIsEnumerable.call(e,n[i])&&(r[n[i]]=e[n[i]]);return r}export function __decorate(e,t,r,n){var i=arguments.length,s=i<3?t:n===null?n=Object.getOwnPropertyDescriptor(t,r):n,a;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")s=Reflect.decorate(e,t,r,n);else for(var o=e.length-1;o>=0;o--)(a=e[o])&&(s=(i<3?a(s):i>3?a(t,r,s):a(t,r))||s);return i>3&&s&&Object.defineProperty(t,r,s),s}export function __param(e,t){return function(r,n){t(r,n,e)}}export function __esDecorate(e,t,r,n,i,s){function a(C){if(C!==void 0&&typeof C!="function")throw new TypeError("Function expected");return C}for(var o=n.kind,u=o==="getter"?"get":o==="setter"?"set":"value",l=!t&&e?n.static?e:e.prototype:null,c=t||(l?Object.getOwnPropertyDescriptor(l,n.name):{}),f,h=!1,m=r.length-1;m>=0;m--){var v={};for(var b in n)v[b]=b==="access"?{}:n[b];for(var b in n.access)v.access[b]=n.access[b];v.addInitializer=function(C){if(h)throw new TypeError("Cannot add initializers after decoration has completed");s.push(a(C||null))};var L=(0,r[m])(o==="accessor"?{get:c.get,set:c.set}:c[u],v);if(o==="accessor"){if(L===void 0)continue;if(L===null||typeof L!="object")throw new TypeError("Object expected");(f=a(L.get))&&(c.get=f),(f=a(L.set))&&(c.set=f),(f=a(L.init))&&i.unshift(f)}else(f=a(L))&&(o==="field"?i.unshift(f):c[u]=f)}l&&Object.defineProperty(l,n.name,c),h=!0}export function __runInitializers(e,t,r){for(var n=arguments.length>2,i=0;i<t.length;i++)r=n?t[i].call(e,r):t[i].call(e);return n?r:void 0}export function __propKey(e){return typeof e=="symbol"?e:"".concat(e)}export function __setFunctionName(e,t,r){return typeof t=="symbol"&&(t=t.description?"[".concat(t.description,"]"):""),Object.defineProperty(e,"name",{configurable:!0,value:r?"".concat(r," ",t):t})}export function __metadata(e,t){if(typeof Reflect=="object"&&typeof Reflect.metadata=="function")return Reflect.metadata(e,t)}export function __awaiter(e,t,r,n){function i(s){return s instanceof r?s:new r(function(a){a(s)})}return new(r||(r=Promise))(function(s,a){function o(c){try{l(n.next(c))}catch(f){a(f)}}function u(c){try{l(n.throw(c))}catch(f){a(f)}}function l(c){c.done?s(c.value):i(c.value).then(o,u)}l((n=n.apply(e,t||[])).next())})}export function __generator(e,t){var r={label:0,sent:function(){if(s[0]&1)throw s[1];return s[1]},trys:[],ops:[]},n,i,s,a;return a={next:o(0),throw:o(1),return:o(2)},typeof Symbol=="function"&&(a[Symbol.iterator]=function(){return this}),a;function o(l){return function(c){return u([l,c])}}function u(l){if(n)throw new TypeError("Generator is already executing.");for(;a&&(a=0,l[0]&&(r=0)),r;)try{if(n=1,i&&(s=l[0]&2?i.return:l[0]?i.throw||((s=i.return)&&s.call(i),0):i.next)&&!(s=s.call(i,l[1])).done)return s;switch(i=0,s&&(l=[l[0]&2,s.value]),l[0]){case 0:case 1:s=l;break;case 4:return r.label++,{value:l[1],done:!1};case 5:r.label++,i=l[1],l=[0];continue;case 7:l=r.ops.pop(),r.trys.pop();continue;default:if(s=r.trys,!(s=s.length>0&&s[s.length-1])&&(l[0]===6||l[0]===2)){r=0;continue}if(l[0]===3&&(!s||l[1]>s[0]&&l[1]<s[3])){r.label=l[1];break}if(l[0]===6&&r.label<s[1]){r.label=s[1],s=l;break}if(s&&r.label<s[2]){r.label=s[2],r.ops.push(l);break}s[2]&&r.ops.pop(),r.trys.pop();continue}l=t.call(e,r)}catch(c){l=[6,c],i=0}finally{n=s=0}if(l[0]&5)throw l[1];return{value:l[0]?l[1]:void 0,done:!0}}}export var __createBinding=Object.create?(function(e,t,r,n){n===void 0&&(n=r);var i=Object.getOwnPropertyDescriptor(t,r);(!i||("get"in i?!t.__esModule:i.writable||i.configurable))&&(i={enumerable:!0,get:function(){return t[r]}}),Object.defineProperty(e,n,i)}):(function(e,t,r,n){n===void 0&&(n=r),e[n]=t[r]});export function __exportStar(e,t){for(var r in e)r!=="default"&&!Object.prototype.hasOwnProperty.call(t,r)&&__createBinding(t,e,r)}export function __values(e){var t=typeof Symbol=="function"&&Symbol.iterator,r=t&&e[t],n=0;if(r)return r.call(e);if(e&&typeof e.length=="number")return{next:function(){return e&&n>=e.length&&(e=void 0),{value:e&&e[n++],done:!e}}};throw new TypeError(t?"Object is not iterable.":"Symbol.iterator is not defined.")}export function __read(e,t){var r=typeof Symbol=="function"&&e[Symbol.iterator];if(!r)return e;var n=r.call(e),i,s=[],a;try{for(;(t===void 0||t-- >0)&&!(i=n.next()).done;)s.push(i.value)}catch(o){a={error:o}}finally{try{i&&!i.done&&(r=n.return)&&r.call(n)}finally{if(a)throw a.error}}return s}export function __spread(){for(var e=[],t=0;t<arguments.length;t++)e=e.concat(__read(arguments[t]));return e}export function __spreadArrays(){for(var e=0,t=0,r=arguments.length;t<r;t++)e+=arguments[t].length;for(var n=Array(e),i=0,t=0;t<r;t++)for(var s=arguments[t],a=0,o=s.length;a<o;a++,i++)n[i]=s[a];return n}export function __spreadArray(e,t,r){if(r||arguments.length===2)for(var n=0,i=t.length,s;n<i;n++)(s||!(n in t))&&(s||(s=Array.prototype.slice.call(t,0,n)),s[n]=t[n]);return e.concat(s||Array.prototype.slice.call(t))}export function __await(e){return this instanceof __await?(this.v=e,this):new __await(e)}export function __asyncGenerator(e,t,r){if(!Symbol.asyncIterator)throw new TypeError("Symbol.asyncIterator is not defined.");var n=r.apply(e,t||[]),i,s=[];return i={},o("next"),o("throw"),o("return",a),i[Symbol.asyncIterator]=function(){return this},i;function a(m){return function(v){return Promise.resolve(v).then(m,f)}}function o(m,v){n[m]&&(i[m]=function(b){return new Promise(function(L,C){s.push([m,b,L,C])>1||u(m,b)})},v&&(i[m]=v(i[m])))}function u(m,v){try{l(n[m](v))}catch(b){h(s[0][3],b)}}function l(m){m.value instanceof __await?Promise.resolve(m.value.v).then(c,f):h(s[0][2],m)}function c(m){u("next",m)}function f(m){u("throw",m)}function h(m,v){m(v),s.shift(),s.length&&u(s[0][0],s[0][1])}}export function __asyncDelegator(e){var t,r;return t={},n("next"),n("throw",function(i){throw i}),n("return"),t[Symbol.iterator]=function(){return this},t;function n(i,s){t[i]=e[i]?function(a){return(r=!r)?{value:__await(e[i](a)),done:!1}:s?s(a):a}:s}}export function __asyncValues(e){if(!Symbol.asyncIterator)throw new TypeError("Symbol.asyncIterator is not defined.");var t=e[Symbol.asyncIterator],r;return t?t.call(e):(e=typeof __values=="function"?__values(e):e[Symbol.iterator](),r={},n("next"),n("throw"),n("return"),r[Symbol.asyncIterator]=function(){return this},r);function n(s){r[s]=e[s]&&function(a){return new Promise(function(o,u){a=e[s](a),i(o,u,a.done,a.value)})}}function i(s,a,o,u){Promise.resolve(u).then(function(l){s({value:l,done:o})},a)}}export function __makeTemplateObject(e,t){return Object.defineProperty?Object.defineProperty(e,"raw",{value:t}):e.raw=t,e}var Jt=Object.create?(function(e,t){Object.defineProperty(e,"default",{enumerable:!0,value:t})}):function(e,t){e.default=t};export function __importStar(e){if(e&&e.__esModule)return e;var t={};if(e!=null)for(var r in e)r!=="default"&&Object.prototype.hasOwnProperty.call(e,r)&&__createBinding(t,e,r);return Jt(t,e),t}export function __importDefault(e){return e&&e.__esModule?e:{default:e}}export function __classPrivateFieldGet(e,t,r,n){if(r==="a"&&!n)throw new TypeError("Private accessor was defined without a getter");if(typeof t=="function"?e!==t||!n:!t.has(e))throw new TypeError("Cannot read private member from an object whose class did not declare it");return r==="m"?n:r==="a"?n.call(e):n?n.value:t.get(e)}export function __classPrivateFieldSet(e,t,r,n,i){if(n==="m")throw new TypeError("Private method is not writable");if(n==="a"&&!i)throw new TypeError("Private accessor was defined without a setter");if(typeof t=="function"?e!==t||!i:!t.has(e))throw new TypeError("Cannot write private member to an object whose class did not declare it");return n==="a"?i.call(e,r):i?i.value=r:t.set(e,r),r}export function __classPrivateFieldIn(e,t){if(t===null||typeof t!="object"&&typeof t!="function")throw new TypeError("Cannot use 'in' operator on non-object");return typeof e=="function"?t===e:e.has(t)}export function __addDisposableResource(e,t,r){if(t!=null){if(typeof t!="object"&&typeof t!="function")throw new TypeError("Object expected.");var n,i;if(r){if(!Symbol.asyncDispose)throw new TypeError("Symbol.asyncDispose is not defined.");n=t[Symbol.asyncDispose]}if(n===void 0){if(!Symbol.dispose)throw new TypeError("Symbol.dispose is not defined.");n=t[Symbol.dispose],r&&(i=n)}if(typeof n!="function")throw new TypeError("Object not disposable.");i&&(n=function(){try{i.call(this)}catch(s){return Promise.reject(s)}}),e.stack.push({value:t,dispose:n,async:r})}else r&&e.stack.push({async:!0});return t}var Gt=typeof SuppressedError=="function"?SuppressedError:function(e,t,r){var n=new Error(r);return n.name="SuppressedError",n.error=e,n.suppressed=t,n};export function __disposeResources(e){function t(n){e.error=e.hasError?new Gt(n,e.error,"An error was suppressed during disposal."):n,e.hasError=!0}function r(){for(;e.stack.length;){var n=e.stack.pop();try{var i=n.dispose&&n.dispose.call(n.value);if(n.async)return Promise.resolve(i).then(r,function(s){return t(s),r()})}catch(s){t(s)}}if(e.hasError)throw e.error}return r()}export default{__extends,__assign,__rest,__decorate,__param,__metadata,__awaiter,__generator,__createBinding,__exportStar,__values,__read,__spread,__spreadArrays,__spreadArray,__await,__asyncGenerator,__asyncDelegator,__asyncValues,__makeTemplateObject,__importStar,__importDefault,__classPrivateFieldGet,__classPrivateFieldSet,__classPrivateFieldIn,__addDisposableResource,__disposeResources};var Zt=class{constructor(){this.listeners=[],this.unexpectedErrorHandler=function(e){setTimeout(()=>{throw e.stack?se.isErrorNoTelemetry(e)?new se(e.message+`
+! function() {
+    try {
+        var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
+            n = (new e.Error).stack;
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "c75eef73-5d27-5cb1-beb9-ce7ccd59bed1")
+    } catch (e) {}
+}();
+var te = function(t, e) {
+    return te = Object.setPrototypeOf || {
+        __proto__: []
+    }
+    instanceof Array && function(r, n) {
+        r.__proto__ = n
+    } || function(r, n) {
+        for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (r[s] = n[s])
+    }, te(t, e)
+};
+export function __extends(t, e) {
+    if (typeof e != "function" && e !== null) throw new TypeError("Class extends value " + String(e) + " is not a constructor or null");
+    te(t, e);
 
-`+e.stack):new Error(e.message+`
+    function r() {
+        this.constructor = t
+    }
+    t.prototype = e === null ? Object.create(e) : (r.prototype = e.prototype, new r)
+}
+export var __assign = function() {
+    return __assign = Object.assign || function(e) {
+        for (var r, n = 1, s = arguments.length; n < s; n++) {
+            r = arguments[n];
+            for (var i in r) Object.prototype.hasOwnProperty.call(r, i) && (e[i] = r[i])
+        }
+        return e
+    }, __assign.apply(this, arguments)
+};
+export function __rest(t, e) {
+    var r = {};
+    for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && e.indexOf(n) < 0 && (r[n] = t[n]);
+    if (t != null && typeof Object.getOwnPropertySymbols == "function")
+        for (var s = 0, n = Object.getOwnPropertySymbols(t); s < n.length; s++) e.indexOf(n[s]) < 0 && Object.prototype.propertyIsEnumerable.call(t, n[s]) && (r[n[s]] = t[n[s]]);
+    return r
+}
+export function __decorate(t, e, r, n) {
+    var s = arguments.length,
+        i = s < 3 ? e : n === null ? n = Object.getOwnPropertyDescriptor(e, r) : n,
+        a;
+    if (typeof Reflect == "object" && typeof Reflect.decorate == "function") i = Reflect.decorate(t, e, r, n);
+    else
+        for (var o = t.length - 1; o >= 0; o--)(a = t[o]) && (i = (s < 3 ? a(i) : s > 3 ? a(e, r, i) : a(e, r)) || i);
+    return s > 3 && i && Object.defineProperty(e, r, i), i
+}
+export function __param(t, e) {
+    return function(r, n) {
+        e(r, n, t)
+    }
+}
+export function __esDecorate(t, e, r, n, s, i) {
+    function a(C) {
+        if (C !== void 0 && typeof C != "function") throw new TypeError("Function expected");
+        return C
+    }
+    for (var o = n.kind, u = o === "getter" ? "get" : o === "setter" ? "set" : "value", l = !e && t ? n.static ? t : t.prototype : null, c = e || (l ? Object.getOwnPropertyDescriptor(l, n.name) : {}), f, h = !1, m = r.length - 1; m >= 0; m--) {
+        var p = {};
+        for (var b in n) p[b] = b === "access" ? {} : n[b];
+        for (var b in n.access) p.access[b] = n.access[b];
+        p.addInitializer = function(C) {
+            if (h) throw new TypeError("Cannot add initializers after decoration has completed");
+            i.push(a(C || null))
+        };
+        var L = (0, r[m])(o === "accessor" ? {
+            get: c.get,
+            set: c.set
+        } : c[u], p);
+        if (o === "accessor") {
+            if (L === void 0) continue;
+            if (L === null || typeof L != "object") throw new TypeError("Object expected");
+            (f = a(L.get)) && (c.get = f), (f = a(L.set)) && (c.set = f), (f = a(L.init)) && s.unshift(f)
+        } else(f = a(L)) && (o === "field" ? s.unshift(f) : c[u] = f)
+    }
+    l && Object.defineProperty(l, n.name, c), h = !0
+}
+export function __runInitializers(t, e, r) {
+    for (var n = arguments.length > 2, s = 0; s < e.length; s++) r = n ? e[s].call(t, r) : e[s].call(t);
+    return n ? r : void 0
+}
+export function __propKey(t) {
+    return typeof t == "symbol" ? t : "".concat(t)
+}
+export function __setFunctionName(t, e, r) {
+    return typeof e == "symbol" && (e = e.description ? "[".concat(e.description, "]") : ""), Object.defineProperty(t, "name", {
+        configurable: !0,
+        value: r ? "".concat(r, " ", e) : e
+    })
+}
+export function __metadata(t, e) {
+    if (typeof Reflect == "object" && typeof Reflect.metadata == "function") return Reflect.metadata(t, e)
+}
+export function __awaiter(t, e, r, n) {
+    function s(i) {
+        return i instanceof r ? i : new r(function(a) {
+            a(i)
+        })
+    }
+    return new(r || (r = Promise))(function(i, a) {
+        function o(c) {
+            try {
+                l(n.next(c))
+            } catch (f) {
+                a(f)
+            }
+        }
 
-`+e.stack):e},0)}}addListener(e){return this.listeners.push(e),()=>{this._removeListener(e)}}emit(e){this.listeners.forEach(t=>{t(e)})}_removeListener(e){this.listeners.splice(this.listeners.indexOf(e),1)}setUnexpectedErrorHandler(e){this.unexpectedErrorHandler=e}getUnexpectedErrorHandler(){return this.unexpectedErrorHandler}onUnexpectedError(e){this.unexpectedErrorHandler(e),this.emit(e)}onUnexpectedExternalError(e){this.unexpectedErrorHandler(e)}},Yt=new Zt;function O1(e){Xt(e)||Yt.onUnexpectedError(e)}function ne(e){if(e instanceof Error){const{name:t,message:r,cause:n}=e,i=e.stacktrace||e.stack;return{$isError:!0,name:t,message:r,stack:i,noTelemetry:se.isErrorNoTelemetry(e),cause:n?ne(n):void 0,code:e.code}}return e}var ie="Canceled";function Xt(e){return e instanceof er?!0:e instanceof Error&&e.name===ie&&e.message===ie}var er=class extends Error{constructor(){if(super(ie),this.name=this.message,rr&&typeof console<"u"){const e=new Error().stack??"";tr.some(t=>e.includes(t))&&console.trace("[DebugCancellation] CancellationError created")}}},se=class Oe extends Error{constructor(t){super(t),this.name="CodeExpectedError"}static fromError(t){if(t instanceof Oe)return t;const r=new Oe;return r.message=t.message,r.stack=t.stack,r}static isErrorNoTelemetry(t){return t.name==="CodeExpectedError"}},tr=["composerChatService","composerService","composerUtilsService","composerAgentService","composerCapabilities","composerDecisionsService","aiServiceImpl","toolsV2Service","toolsV2HandlerRegistryService","agentCompatService","mockAgentStreamController","mockComposerStreamController","toolFormer","ToolFormer","tool","agent","Agent","stream","Stream","ComposerFullInputBox","ComposerToolFormerMessage","QuickAgentConversation","composerActions","cancelAll","abortChatAndWaitForFinish","abortGenerationUUID"],rr=!1,Me;function nr(e,t){const r=Object.create(null);for(const n of e){const i=t(n);let s=r[i];s||(s=r[i]=[]),s.push(n)}return r}var Pi=class{static{Me=Symbol.toStringTag}constructor(e,t){this.toKey=t,this._map=new Map,this[Me]="SetWithKey";for(const r of e)this.add(r)}get size(){return this._map.size}add(e){const t=this.toKey(e);return this._map.set(t,e),this}delete(e){return this._map.delete(this.toKey(e))}has(e){return this._map.has(this.toKey(e))}*entries(){for(const e of this._map.values())yield[e,e]}keys(){return this.values()}*values(){for(const e of this._map.values())yield e}clear(){this._map.clear()}forEach(e,t){this._map.forEach(r=>e.call(t,r,r,this))}[Symbol.iterator](){return this.values()}};function ir(e,t){const r=this;let n=!1,i;return function(){if(n)return i;if(n=!0,t)try{i=e.apply(r,arguments)}finally{t()}else i=e.apply(r,arguments);return i}}function sr(e,t,r=0,n=e.length){let i=r,s=n;for(;i<s;){const a=Math.floor((i+s)/2);t(e[a])?i=a+1:s=a}return i-1}var ki=class jt{static{this.assertInvariants=!1}constructor(t){this._array=t,this._findLastMonotonousLastIdx=0}findLastMonotonous(t){if(jt.assertInvariants){if(this._prevFindLastPredicate){for(const n of this._array)if(this._prevFindLastPredicate(n)&&!t(n))throw new Error("MonotonousArray: current predicate must be weaker than (or equal to) the previous predicate.")}this._prevFindLastPredicate=t}const r=sr(this._array,t,this._findLastMonotonousLastIdx);return this._findLastMonotonousLastIdx=r+1,r===-1?void 0:this._array[r]}},oe;(function(e){function t(s){return s<0}e.isLessThan=t;function r(s){return s<=0}e.isLessThanOrEqual=r;function n(s){return s>0}e.isGreaterThan=n;function i(s){return s===0}e.isNeitherLessOrGreaterThan=i,e.greaterThan=1,e.lessThan=-1,e.neitherLessOrGreaterThan=0})(oe||(oe={}));function or(e,t){return(r,n)=>t(e(r),e(n))}var ar=(e,t)=>e-t,Si=class Y1{static{this.empty=new Y1(t=>{})}constructor(t){this.iterate=t}forEach(t){this.iterate(r=>(t(r),!0))}toArray(){const t=[];return this.iterate(r=>(t.push(r),!0)),t}filter(t){return new Y1(r=>this.iterate(n=>t(n)?r(n):!0))}map(t){return new Y1(r=>this.iterate(n=>r(t(n))))}some(t){let r=!1;return this.iterate(n=>(r=t(n),!r)),r}findFirst(t){let r;return this.iterate(n=>t(n)?(r=n,!1):!0),r}findLast(t){let r;return this.iterate(n=>(t(n)&&(r=n),!0)),r}findLastMaxBy(t){let r,n=!0;return this.iterate(i=>((n||oe.isGreaterThan(t(i,r)))&&(n=!1,r=i),!0)),r}},$e,Fe,Ue,lr=class{constructor(e,t){this.uri=e,this.value=t}};function ur(e){return Array.isArray(e)}var We=class A1{static{this.defaultToKey=t=>t.toString()}constructor(t,r){if(this[$e]="ResourceMap",t instanceof A1)this.map=new Map(t.map),this.toKey=r??A1.defaultToKey;else if(ur(t)){this.map=new Map,this.toKey=r??A1.defaultToKey;for(const[n,i]of t)this.set(n,i)}else this.map=new Map,this.toKey=t??A1.defaultToKey}set(t,r){return this.map.set(this.toKey(t),new lr(t,r)),this}get(t){return this.map.get(this.toKey(t))?.value}has(t){return this.map.has(this.toKey(t))}get size(){return this.map.size}clear(){this.map.clear()}delete(t){return this.map.delete(this.toKey(t))}forEach(t,r){typeof r<"u"&&(t=t.bind(r));for(const[n,i]of this.map)t(i.value,i.uri,this)}*values(){for(const t of this.map.values())yield t.value}*keys(){for(const t of this.map.values())yield t.uri}*entries(){for(const t of this.map.values())yield[t.uri,t.value]}*[($e=Symbol.toStringTag,Symbol.iterator)](){for(const[,t]of this.map)yield[t.uri,t.value]}},Ri=class{constructor(e,t){this[Fe]="ResourceSet",!e||typeof e=="function"?this._map=new We(e):(this._map=new We(t),e.forEach(this.add,this))}get size(){return this._map.size}add(e){return this._map.set(e,e),this}clear(){this._map.clear()}delete(e){return this._map.delete(e)}forEach(e,t){this._map.forEach((r,n)=>e.call(t,n,n,this))}has(e){return this._map.has(e)}entries(){return this._map.entries()}keys(){return this._map.keys()}values(){return this._map.keys()}[(Fe=Symbol.toStringTag,Symbol.iterator)](){return this.keys()}},je;(function(e){e[e.None=0]="None",e[e.AsOld=1]="AsOld",e[e.AsNew=2]="AsNew"})(je||(je={}));var cr=class{constructor(){this[Ue]="LinkedMap",this._map=new Map,this._head=void 0,this._tail=void 0,this._size=0,this._state=0}clear(){this._map.clear(),this._head=void 0,this._tail=void 0,this._size=0,this._state++}isEmpty(){return!this._head&&!this._tail}get size(){return this._size}get first(){return this._head?.value}get last(){return this._tail?.value}has(e){return this._map.has(e)}get(e,t=0){const r=this._map.get(e);if(r)return t!==0&&this.touch(r,t),r.value}set(e,t,r=0){let n=this._map.get(e);if(n)n.value=t,r!==0&&this.touch(n,r);else{switch(n={key:e,value:t,next:void 0,previous:void 0},r){case 0:this.addItemLast(n);break;case 1:this.addItemFirst(n);break;case 2:this.addItemLast(n);break;default:this.addItemLast(n);break}this._map.set(e,n),this._size++}return this}delete(e){return!!this.remove(e)}remove(e){const t=this._map.get(e);if(t)return this._map.delete(e),this.removeItem(t),this._size--,t.value}shift(){if(!this._head&&!this._tail)return;if(!this._head||!this._tail)throw new Error("Invalid list");const e=this._head;return this._map.delete(e.key),this.removeItem(e),this._size--,e.value}forEach(e,t){const r=this._state;let n=this._head;for(;n;){if(t?e.bind(t)(n.value,n.key,this):e(n.value,n.key,this),this._state!==r)throw new Error("LinkedMap got modified during iteration.");n=n.next}}keys(){const e=this,t=this._state;let r=this._head;const n={[Symbol.iterator](){return n},next(){if(e._state!==t)throw new Error("LinkedMap got modified during iteration.");if(r){const i={value:r.key,done:!1};return r=r.next,i}else return{value:void 0,done:!0}}};return n}values(){const e=this,t=this._state;let r=this._head;const n={[Symbol.iterator](){return n},next(){if(e._state!==t)throw new Error("LinkedMap got modified during iteration.");if(r){const i={value:r.value,done:!1};return r=r.next,i}else return{value:void 0,done:!0}}};return n}entries(){const e=this,t=this._state;let r=this._head;const n={[Symbol.iterator](){return n},next(){if(e._state!==t)throw new Error("LinkedMap got modified during iteration.");if(r){const i={value:[r.key,r.value],done:!1};return r=r.next,i}else return{value:void 0,done:!0}}};return n}[(Ue=Symbol.toStringTag,Symbol.iterator)](){return this.entries()}trimOld(e){if(e>=this.size)return;if(e===0){this.clear();return}let t=this._head,r=this.size;for(;t&&r>e;)this._map.delete(t.key),t=t.next,r--;this._head=t,this._size=r,t&&(t.previous=void 0),this._state++}trimNew(e){if(e>=this.size)return;if(e===0){this.clear();return}let t=this._tail,r=this.size;for(;t&&r>e;)this._map.delete(t.key),t=t.previous,r--;this._tail=t,this._size=r,t&&(t.next=void 0),this._state++}addItemFirst(e){if(!this._head&&!this._tail)this._tail=e;else if(this._head)e.next=this._head,this._head.previous=e;else throw new Error("Invalid list");this._head=e,this._state++}addItemLast(e){if(!this._head&&!this._tail)this._head=e;else if(this._tail)e.previous=this._tail,this._tail.next=e;else throw new Error("Invalid list");this._tail=e,this._state++}removeItem(e){if(e===this._head&&e===this._tail)this._head=void 0,this._tail=void 0;else if(e===this._head){if(!e.next)throw new Error("Invalid list");e.next.previous=void 0,this._head=e.next}else if(e===this._tail){if(!e.previous)throw new Error("Invalid list");e.previous.next=void 0,this._tail=e.previous}else{const t=e.next,r=e.previous;if(!t||!r)throw new Error("Invalid list");t.previous=r,r.next=t}e.next=void 0,e.previous=void 0,this._state++}touch(e,t){if(!this._head||!this._tail)throw new Error("Invalid list");if(!(t!==1&&t!==2)){if(t===1){if(e===this._head)return;const r=e.next,n=e.previous;e===this._tail?(n.next=void 0,this._tail=n):(r.previous=n,n.next=r),e.previous=void 0,e.next=this._head,this._head.previous=e,this._head=e,this._state++}else if(t===2){if(e===this._tail)return;const r=e.next,n=e.previous;e===this._head?(r.previous=void 0,this._head=r):(r.previous=n,n.next=r),e.next=void 0,e.previous=this._tail,this._tail.next=e,this._tail=e,this._state++}}}toJSON(){const e=[];return this.forEach((t,r)=>{e.push([r,t])}),e}fromJSON(e){this.clear();for(const[t,r]of e)this.set(t,r)}},fr=class extends cr{constructor(e,t=1){super(),this._limit=e,this._ratio=Math.min(Math.max(0,t),1)}get limit(){return this._limit}set limit(e){this._limit=e,this.checkTrim()}get ratio(){return this._ratio}set ratio(e){this._ratio=Math.min(Math.max(0,e),1),this.checkTrim()}get(e,t=2){return super.get(e,t)}peek(e){return super.get(e,0)}set(e,t){return super.set(e,t,2),this}checkTrim(){this.size>this._limit&&this.trim(Math.round(this._limit*this._ratio))}},hr=class extends fr{constructor(e,t=1){super(e,t)}trim(e){this.trimOld(e)}set(e,t){return super.set(e,t),this.checkTrim(),this}},dr=class{constructor(){this.map=new Map}add(e,t){let r=this.map.get(e);r||(r=new Set,this.map.set(e,r)),r.add(t)}delete(e,t){const r=this.map.get(e);r&&(r.delete(t),r.size===0&&this.map.delete(e))}forEach(e,t){const r=this.map.get(e);r&&r.forEach(t)}get(e){const t=this.map.get(e);return t||new Set}};function mr(e){return!!e&&typeof e[Symbol.iterator]=="function"}var ae;(function(e){function t(y){return y&&typeof y=="object"&&typeof y[Symbol.iterator]=="function"}e.is=t;const r=Object.freeze([]);function n(){return r}e.empty=n;function*i(y){yield y}e.single=i;function s(y){return t(y)?y:i(y)}e.wrap=s;function a(y){return y||r}e.from=a;function*o(y){for(let E=y.length-1;E>=0;E--)yield y[E]}e.reverse=o;function u(y){return!y||y[Symbol.iterator]().next().done===!0}e.isEmpty=u;function l(y){return y[Symbol.iterator]().next().value}e.first=l;function c(y,E){let P=0;for(const S of y)if(E(S,P++))return!0;return!1}e.some=c;function f(y,E){for(const P of y)if(E(P))return P}e.find=f;function*h(y,E){for(const P of y)E(P)&&(yield P)}e.filter=h;function*m(y,E){let P=0;for(const S of y)yield E(S,P++)}e.map=m;function*v(y,E){let P=0;for(const S of y)yield*E(S,P++)}e.flatMap=v;function*b(...y){for(const E of y)mr(E)?yield*E:yield E}e.concat=b;function L(y,E,P){let S=P;for(const H of y)S=E(S,H);return S}e.reduce=L;function C(y){let E=0;for(const P of y)E++;return E}e.length=C;function*k(y,E,P=y.length){for(E<-y.length&&(E=0),E<0&&(E+=y.length),P<0?P+=y.length:P>y.length&&(P=y.length);E<P;E++)yield y[E]}e.slice=k;function A(y,E=Number.POSITIVE_INFINITY){const P=[];if(E===0)return[P,y];const S=y[Symbol.iterator]();for(let H=0;H<E;H++){const u1=S.next();if(u1.done)return[P,e.empty()];P.push(u1.value)}return[P,{[Symbol.iterator](){return S}}]}e.consume=A;async function j(y){const E=[];for await(const P of y)E.push(P);return Promise.resolve(E)}e.asyncToArray=j})(ae||(ae={}));var vr=!1,p1=null,Oi=class qt{constructor(){this.livingDisposables=new Map}static{this.idx=0}getDisposableData(t){let r=this.livingDisposables.get(t);return r||(r={parent:null,source:null,isSingleton:!1,value:t,idx:qt.idx++},this.livingDisposables.set(t,r)),r}trackDisposable(t){const r=this.getDisposableData(t);r.source||(r.source=new Error().stack)}setParent(t,r){const n=this.getDisposableData(t);n.parent=r}markAsDisposed(t){this.livingDisposables.delete(t)}markAsSingleton(t){this.getDisposableData(t).isSingleton=!0}getRootParent(t,r){const n=r.get(t);if(n)return n;const i=t.parent?this.getRootParent(this.getDisposableData(t.parent),r):t;return r.set(t,i),i}getTrackedDisposables(){const t=new Map;return[...this.livingDisposables.entries()].filter(([,n])=>n.source!==null&&!this.getRootParent(n,t).isSingleton).flatMap(([n])=>n)}computeLeakingDisposables(t=10,r){let n;if(r)n=r;else{const u=new Map,l=[...this.livingDisposables.values()].filter(f=>f.source!==null&&!this.getRootParent(f,u).isSingleton);if(l.length===0)return;const c=new Set(l.map(f=>f.value));if(n=l.filter(f=>!(f.parent&&c.has(f.parent))),n.length===0)throw new Error("There are cyclic diposable chains!")}if(!n)return;function i(u){function l(f,h){for(;f.length>0&&h.some(m=>typeof m=="string"?m===f[0]:f[0].match(m));)f.shift()}const c=u.source.split(`
-`).map(f=>f.trim().replace("at ","")).filter(f=>f!=="");return l(c,["Error",/^trackDisposable \(.*\)$/,/^DisposableTracker.trackDisposable \(.*\)$/]),c.reverse()}const s=new dr;for(const u of n){const l=i(u);for(let c=0;c<=l.length;c++)s.add(l.slice(0,c).join(`
-`),u)}n.sort(or(u=>u.idx,ar));let a="",o=0;for(const u of n.slice(0,t)){o++;const l=i(u),c=[];for(let f=0;f<l.length;f++){let h=l[f];h=`(shared with ${s.get(l.slice(0,f+1).join(`
-`)).size}/${n.length} leaks) at ${h}`;const v=s.get(l.slice(0,f).join(`
-`)),b=nr([...v].map(L=>i(L)[f]),L=>L);delete b[l[f]];for(const[L,C]of Object.entries(b))c.unshift(`    - stacktraces of ${C.length} other leaks continue with ${L}`);c.unshift(h)}a+=`
+        function u(c) {
+            try {
+                l(n.throw(c))
+            } catch (f) {
+                a(f)
+            }
+        }
+
+        function l(c) {
+            c.done ? i(c.value) : s(c.value).then(o, u)
+        }
+        l((n = n.apply(t, e || [])).next())
+    })
+}
+export function __generator(t, e) {
+    var r = {
+            label: 0,
+            sent: function() {
+                if (i[0] & 1) throw i[1];
+                return i[1]
+            },
+            trys: [],
+            ops: []
+        },
+        n, s, i, a;
+    return a = {
+        next: o(0),
+        throw: o(1),
+        return: o(2)
+    }, typeof Symbol == "function" && (a[Symbol.iterator] = function() {
+        return this
+    }), a;
+
+    function o(l) {
+        return function(c) {
+            return u([l, c])
+        }
+    }
+
+    function u(l) {
+        if (n) throw new TypeError("Generator is already executing.");
+        for (; a && (a = 0, l[0] && (r = 0)), r;) try {
+            if (n = 1, s && (i = l[0] & 2 ? s.return : l[0] ? s.throw || ((i = s.return) && i.call(s), 0) : s.next) && !(i = i.call(s, l[1])).done) return i;
+            switch (s = 0, i && (l = [l[0] & 2, i.value]), l[0]) {
+                case 0:
+                case 1:
+                    i = l;
+                    break;
+                case 4:
+                    return r.label++, {
+                        value: l[1],
+                        done: !1
+                    };
+                case 5:
+                    r.label++, s = l[1], l = [0];
+                    continue;
+                case 7:
+                    l = r.ops.pop(), r.trys.pop();
+                    continue;
+                default:
+                    if (i = r.trys, !(i = i.length > 0 && i[i.length - 1]) && (l[0] === 6 || l[0] === 2)) {
+                        r = 0;
+                        continue
+                    }
+                    if (l[0] === 3 && (!i || l[1] > i[0] && l[1] < i[3])) {
+                        r.label = l[1];
+                        break
+                    }
+                    if (l[0] === 6 && r.label < i[1]) {
+                        r.label = i[1], i = l;
+                        break
+                    }
+                    if (i && r.label < i[2]) {
+                        r.label = i[2], r.ops.push(l);
+                        break
+                    }
+                    i[2] && r.ops.pop(), r.trys.pop();
+                    continue
+            }
+            l = e.call(t, r)
+        } catch (c) {
+            l = [6, c], s = 0
+        } finally {
+            n = i = 0
+        }
+        if (l[0] & 5) throw l[1];
+        return {
+            value: l[0] ? l[1] : void 0,
+            done: !0
+        }
+    }
+}
+export var __createBinding = Object.create ? (function(t, e, r, n) {
+    n === void 0 && (n = r);
+    var s = Object.getOwnPropertyDescriptor(e, r);
+    (!s || ("get" in s ? !e.__esModule : s.writable || s.configurable)) && (s = {
+        enumerable: !0,
+        get: function() {
+            return e[r]
+        }
+    }), Object.defineProperty(t, n, s)
+}) : (function(t, e, r, n) {
+    n === void 0 && (n = r), t[n] = e[r]
+});
+export function __exportStar(t, e) {
+    for (var r in t) r !== "default" && !Object.prototype.hasOwnProperty.call(e, r) && __createBinding(e, t, r)
+}
+export function __values(t) {
+    var e = typeof Symbol == "function" && Symbol.iterator,
+        r = e && t[e],
+        n = 0;
+    if (r) return r.call(t);
+    if (t && typeof t.length == "number") return {
+        next: function() {
+            return t && n >= t.length && (t = void 0), {
+                value: t && t[n++],
+                done: !t
+            }
+        }
+    };
+    throw new TypeError(e ? "Object is not iterable." : "Symbol.iterator is not defined.")
+}
+export function __read(t, e) {
+    var r = typeof Symbol == "function" && t[Symbol.iterator];
+    if (!r) return t;
+    var n = r.call(t),
+        s, i = [],
+        a;
+    try {
+        for (;
+            (e === void 0 || e-- > 0) && !(s = n.next()).done;) i.push(s.value)
+    } catch (o) {
+        a = {
+            error: o
+        }
+    } finally {
+        try {
+            s && !s.done && (r = n.return) && r.call(n)
+        } finally {
+            if (a) throw a.error
+        }
+    }
+    return i
+}
+export function __spread() {
+    for (var t = [], e = 0; e < arguments.length; e++) t = t.concat(__read(arguments[e]));
+    return t
+}
+export function __spreadArrays() {
+    for (var t = 0, e = 0, r = arguments.length; e < r; e++) t += arguments[e].length;
+    for (var n = Array(t), s = 0, e = 0; e < r; e++)
+        for (var i = arguments[e], a = 0, o = i.length; a < o; a++, s++) n[s] = i[a];
+    return n
+}
+export function __spreadArray(t, e, r) {
+    if (r || arguments.length === 2)
+        for (var n = 0, s = e.length, i; n < s; n++)(i || !(n in e)) && (i || (i = Array.prototype.slice.call(e, 0, n)), i[n] = e[n]);
+    return t.concat(i || Array.prototype.slice.call(e))
+}
+export function __await(t) {
+    return this instanceof __await ? (this.v = t, this) : new __await(t)
+}
+export function __asyncGenerator(t, e, r) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var n = r.apply(t, e || []),
+        s, i = [];
+    return s = {}, o("next"), o("throw"), o("return", a), s[Symbol.asyncIterator] = function() {
+        return this
+    }, s;
+
+    function a(m) {
+        return function(p) {
+            return Promise.resolve(p).then(m, f)
+        }
+    }
+
+    function o(m, p) {
+        n[m] && (s[m] = function(b) {
+            return new Promise(function(L, C) {
+                i.push([m, b, L, C]) > 1 || u(m, b)
+            })
+        }, p && (s[m] = p(s[m])))
+    }
+
+    function u(m, p) {
+        try {
+            l(n[m](p))
+        } catch (b) {
+            h(i[0][3], b)
+        }
+    }
+
+    function l(m) {
+        m.value instanceof __await ? Promise.resolve(m.value.v).then(c, f) : h(i[0][2], m)
+    }
+
+    function c(m) {
+        u("next", m)
+    }
+
+    function f(m) {
+        u("throw", m)
+    }
+
+    function h(m, p) {
+        m(p), i.shift(), i.length && u(i[0][0], i[0][1])
+    }
+}
+export function __asyncDelegator(t) {
+    var e, r;
+    return e = {}, n("next"), n("throw", function(s) {
+        throw s
+    }), n("return"), e[Symbol.iterator] = function() {
+        return this
+    }, e;
+
+    function n(s, i) {
+        e[s] = t[s] ? function(a) {
+            return (r = !r) ? {
+                value: __await(t[s](a)),
+                done: !1
+            } : i ? i(a) : a
+        } : i
+    }
+}
+export function __asyncValues(t) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var e = t[Symbol.asyncIterator],
+        r;
+    return e ? e.call(t) : (t = typeof __values == "function" ? __values(t) : t[Symbol.iterator](), r = {}, n("next"), n("throw"), n("return"), r[Symbol.asyncIterator] = function() {
+        return this
+    }, r);
+
+    function n(i) {
+        r[i] = t[i] && function(a) {
+            return new Promise(function(o, u) {
+                a = t[i](a), s(o, u, a.done, a.value)
+            })
+        }
+    }
+
+    function s(i, a, o, u) {
+        Promise.resolve(u).then(function(l) {
+            i({
+                value: l,
+                done: o
+            })
+        }, a)
+    }
+}
+export function __makeTemplateObject(t, e) {
+    return Object.defineProperty ? Object.defineProperty(t, "raw", {
+        value: e
+    }) : t.raw = e, t
+}
+var Zt = Object.create ? (function(t, e) {
+    Object.defineProperty(t, "default", {
+        enumerable: !0,
+        value: e
+    })
+}) : function(t, e) {
+    t.default = e
+};
+export function __importStar(t) {
+    if (t && t.__esModule) return t;
+    var e = {};
+    if (t != null)
+        for (var r in t) r !== "default" && Object.prototype.hasOwnProperty.call(t, r) && __createBinding(e, t, r);
+    return Zt(e, t), e
+}
+export function __importDefault(t) {
+    return t && t.__esModule ? t : {
+        default: t
+    }
+}
+export function __classPrivateFieldGet(t, e, r, n) {
+    if (r === "a" && !n) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof e == "function" ? t !== e || !n : !e.has(t)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return r === "m" ? n : r === "a" ? n.call(t) : n ? n.value : e.get(t)
+}
+export function __classPrivateFieldSet(t, e, r, n, s) {
+    if (n === "m") throw new TypeError("Private method is not writable");
+    if (n === "a" && !s) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof e == "function" ? t !== e || !s : !e.has(t)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return n === "a" ? s.call(t, r) : s ? s.value = r : e.set(t, r), r
+}
+export function __classPrivateFieldIn(t, e) {
+    if (e === null || typeof e != "object" && typeof e != "function") throw new TypeError("Cannot use 'in' operator on non-object");
+    return typeof t == "function" ? e === t : t.has(e)
+}
+export function __addDisposableResource(t, e, r) {
+    if (e != null) {
+        if (typeof e != "object" && typeof e != "function") throw new TypeError("Object expected.");
+        var n, s;
+        if (r) {
+            if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
+            n = e[Symbol.asyncDispose]
+        }
+        if (n === void 0) {
+            if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
+            n = e[Symbol.dispose], r && (s = n)
+        }
+        if (typeof n != "function") throw new TypeError("Object not disposable.");
+        s && (n = function() {
+            try {
+                s.call(this)
+            } catch (i) {
+                return Promise.reject(i)
+            }
+        }), t.stack.push({
+            value: e,
+            dispose: n,
+            async: r
+        })
+    } else r && t.stack.push({
+        async: !0
+    });
+    return e
+}
+var Xt = typeof SuppressedError == "function" ? SuppressedError : function(t, e, r) {
+    var n = new Error(r);
+    return n.name = "SuppressedError", n.error = t, n.suppressed = e, n
+};
+export function __disposeResources(t) {
+    function e(n) {
+        t.error = t.hasError ? new Xt(n, t.error, "An error was suppressed during disposal.") : n, t.hasError = !0
+    }
+
+    function r() {
+        for (; t.stack.length;) {
+            var n = t.stack.pop();
+            try {
+                var s = n.dispose && n.dispose.call(n.value);
+                if (n.async) return Promise.resolve(s).then(r, function(i) {
+                    return e(i), r()
+                })
+            } catch (i) {
+                e(i)
+            }
+        }
+        if (t.hasError) throw t.error
+    }
+    return r()
+}
+export default {
+    __extends,
+    __assign,
+    __rest,
+    __decorate,
+    __param,
+    __metadata,
+    __awaiter,
+    __generator,
+    __createBinding,
+    __exportStar,
+    __values,
+    __read,
+    __spread,
+    __spreadArrays,
+    __spreadArray,
+    __await,
+    __asyncGenerator,
+    __asyncDelegator,
+    __asyncValues,
+    __makeTemplateObject,
+    __importStar,
+    __importDefault,
+    __classPrivateFieldGet,
+    __classPrivateFieldSet,
+    __classPrivateFieldIn,
+    __addDisposableResource,
+    __disposeResources
+};
+var er = class {
+        constructor() {
+            this.listeners = [], this.unexpectedErrorHandler = function(t) {
+                setTimeout(() => {
+                    throw t.stack ? se.isErrorNoTelemetry(t) ? new se(t.message + `
+
+` + t.stack) : new Error(t.message + `
+
+` + t.stack) : t
+                }, 0)
+            }
+        }
+        addListener(t) {
+            return this.listeners.push(t), () => {
+                this._removeListener(t)
+            }
+        }
+        emit(t) {
+            this.listeners.forEach(e => {
+                e(t)
+            })
+        }
+        _removeListener(t) {
+            this.listeners.splice(this.listeners.indexOf(t), 1)
+        }
+        setUnexpectedErrorHandler(t) {
+            this.unexpectedErrorHandler = t
+        }
+        getUnexpectedErrorHandler() {
+            return this.unexpectedErrorHandler
+        }
+        onUnexpectedError(t) {
+            this.unexpectedErrorHandler(t), this.emit(t)
+        }
+        onUnexpectedExternalError(t) {
+            this.unexpectedErrorHandler(t)
+        }
+    },
+    tr = new er;
+
+function O1(t) {
+    rr(t) || tr.onUnexpectedError(t)
+}
+
+function re(t) {
+    if (t instanceof Error) {
+        const {
+            name: e,
+            message: r,
+            cause: n
+        } = t, s = t.stacktrace || t.stack;
+        return {
+            $isError: !0,
+            name: e,
+            message: r,
+            stack: s,
+            noTelemetry: se.isErrorNoTelemetry(t),
+            cause: n ? re(n) : void 0,
+            code: t.code
+        }
+    }
+    return t
+}
+var ne = "Canceled";
+
+function rr(t) {
+    return t instanceof nr ? !0 : t instanceof Error && t.name === ne && t.message === ne
+}
+var nr = class extends Error {
+        constructor() {
+            if (super(ne), this.name = this.message, ir && typeof console < "u") {
+                const t = new Error().stack ?? "";
+                sr.some(e => t.includes(e)) && console.trace("[DebugCancellation] CancellationError created")
+            }
+        }
+    },
+    se = class Te extends Error {
+        constructor(e) {
+            super(e), this.name = "CodeExpectedError"
+        }
+        static fromError(e) {
+            if (e instanceof Te) return e;
+            const r = new Te;
+            return r.message = e.message, r.stack = e.stack, r
+        }
+        static isErrorNoTelemetry(e) {
+            return e.name === "CodeExpectedError"
+        }
+    },
+    sr = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "QuickAgentConversation", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
+    ir = !1,
+    Fe, Ue;
+
+function or(t, e) {
+    const r = Object.create(null);
+    for (const n of t) {
+        const s = e(n);
+        let i = r[s];
+        i || (i = r[s] = []), i.push(n)
+    }
+    return r
+}
+var Ms = class {
+    constructor(t, e) {
+        this.toKey = e, this._map = new Map, this[Fe] = "SetWithKey";
+        for (const r of t) this.add(r)
+    }
+    get size() {
+        return this._map.size
+    }
+    add(t) {
+        const e = this.toKey(t);
+        return this._map.set(e, t), this
+    }
+    delete(t) {
+        return this._map.delete(this.toKey(t))
+    }
+    has(t) {
+        return this._map.has(this.toKey(t))
+    }* entries() {
+        for (const t of this._map.values()) yield [t, t]
+    }
+    keys() {
+        return this.values()
+    }* values() {
+        for (const t of this._map.values()) yield t
+    }
+    clear() {
+        this._map.clear()
+    }
+    forEach(t, e) {
+        this._map.forEach(r => t.call(e, r, r, this))
+    } [(Ue = Symbol.iterator, Fe = Symbol.toStringTag, Ue)]() {
+        return this.values()
+    }
+};
+
+function ar(t, e) {
+    const r = this;
+    let n = !1,
+        s;
+    return function() {
+        if (n) return s;
+        if (n = !0, e) try {
+            s = t.apply(r, arguments)
+        } finally {
+            e()
+        } else s = t.apply(r, arguments);
+        return s
+    }
+}
+
+function lr(t, e, r = 0, n = t.length) {
+    let s = r,
+        i = n;
+    for (; s < i;) {
+        const a = Math.floor((s + i) / 2);
+        e(t[a]) ? s = a + 1 : i = a
+    }
+    return s - 1
+}
+var ur = class zt {
+    constructor(e) {
+        this._array = e, this._findLastMonotonousLastIdx = 0
+    }
+    findLastMonotonous(e) {
+        if (zt.assertInvariants) {
+            if (this._prevFindLastPredicate) {
+                for (const n of this._array)
+                    if (this._prevFindLastPredicate(n) && !e(n)) throw new Error("MonotonousArray: current predicate must be weaker than (or equal to) the previous predicate.")
+            }
+            this._prevFindLastPredicate = e
+        }
+        const r = lr(this._array, e, this._findLastMonotonousLastIdx);
+        return this._findLastMonotonousLastIdx = r + 1, r === -1 ? void 0 : this._array[r]
+    }
+};
+ur.assertInvariants = !1;
+var ie;
+(t => {
+    function e(i) {
+        return i < 0
+    }
+    t.isLessThan = e;
+
+    function r(i) {
+        return i <= 0
+    }
+    t.isLessThanOrEqual = r;
+
+    function n(i) {
+        return i > 0
+    }
+    t.isGreaterThan = n;
+
+    function s(i) {
+        return i === 0
+    }
+    t.isNeitherLessOrGreaterThan = s, t.greaterThan = 1, t.lessThan = -1, t.neitherLessOrGreaterThan = 0
+})(ie || (ie = {}));
+
+function cr(t, e) {
+    return (r, n) => e(t(r), t(n))
+}
+var fr = (t, e) => t - e,
+    Be = class Re {
+        constructor(e) {
+            this.iterate = e
+        }
+        forEach(e) {
+            this.iterate(r => (e(r), !0))
+        }
+        toArray() {
+            const e = [];
+            return this.iterate(r => (e.push(r), !0)), e
+        }
+        filter(e) {
+            return new Re(r => this.iterate(n => e(n) ? r(n) : !0))
+        }
+        map(e) {
+            return new Re(r => this.iterate(n => r(e(n))))
+        }
+        some(e) {
+            let r = !1;
+            return this.iterate(n => (r = e(n), !r)), r
+        }
+        findFirst(e) {
+            let r;
+            return this.iterate(n => e(n) ? (r = n, !1) : !0), r
+        }
+        findLast(e) {
+            let r;
+            return this.iterate(n => (e(n) && (r = n), !0)), r
+        }
+        findLastMaxBy(e) {
+            let r, n = !0;
+            return this.iterate(s => ((n || ie.isGreaterThan(e(s, r))) && (n = !1, r = s), !0)), r
+        }
+    };
+Be.empty = new Be(t => {});
+var We, qe, je, hr = class {
+    constructor(t, e) {
+        this.uri = t, this.value = e
+    }
+};
+
+function dr(t) {
+    return Array.isArray(t)
+}
+var ze = class N1 {
+    constructor(e, r) {
+        if (this[We] = "ResourceMap", e instanceof N1) this.map = new Map(e.map), this.toKey = r ?? N1.defaultToKey;
+        else if (dr(e)) {
+            this.map = new Map, this.toKey = r ?? N1.defaultToKey;
+            for (const [n, s] of e) this.set(n, s)
+        } else this.map = new Map, this.toKey = e ?? N1.defaultToKey
+    }
+    set(e, r) {
+        return this.map.set(this.toKey(e), new hr(e, r)), this
+    }
+    get(e) {
+        return this.map.get(this.toKey(e))?.value
+    }
+    has(e) {
+        return this.map.has(this.toKey(e))
+    }
+    get size() {
+        return this.map.size
+    }
+    clear() {
+        this.map.clear()
+    }
+    delete(e) {
+        return this.map.delete(this.toKey(e))
+    }
+    forEach(e, r) {
+        typeof r < "u" && (e = e.bind(r));
+        for (const [n, s] of this.map) e(s.value, s.uri, this)
+    }* values() {
+        for (const e of this.map.values()) yield e.value
+    }* keys() {
+        for (const e of this.map.values()) yield e.uri
+    }* entries() {
+        for (const e of this.map.values()) yield [e.uri, e.value]
+    }*[(We = Symbol.toStringTag, Symbol.iterator)]() {
+        for (const [, e] of this.map) yield [e.uri, e.value]
+    }
+};
+ze.defaultToKey = t => t.toString();
+var He = ze,
+    $s = class {
+        constructor(t, e) {
+            this[qe] = "ResourceSet", !t || typeof t == "function" ? this._map = new He(t) : (this._map = new He(e), t.forEach(this.add, this))
+        }
+        get size() {
+            return this._map.size
+        }
+        add(t) {
+            return this._map.set(t, t), this
+        }
+        clear() {
+            this._map.clear()
+        }
+        delete(t) {
+            return this._map.delete(t)
+        }
+        forEach(t, e) {
+            this._map.forEach((r, n) => t.call(e, n, n, this))
+        }
+        has(t) {
+            return this._map.has(t)
+        }
+        entries() {
+            return this._map.entries()
+        }
+        keys() {
+            return this._map.keys()
+        }
+        values() {
+            return this._map.keys()
+        } [(qe = Symbol.toStringTag, Symbol.iterator)]() {
+            return this.keys()
+        }
+    },
+    mr = class {
+        constructor() {
+            this[je] = "LinkedMap", this._map = new Map, this._head = void 0, this._tail = void 0, this._size = 0, this._state = 0
+        }
+        clear() {
+            this._map.clear(), this._head = void 0, this._tail = void 0, this._size = 0, this._state++
+        }
+        isEmpty() {
+            return !this._head && !this._tail
+        }
+        get size() {
+            return this._size
+        }
+        get first() {
+            return this._head?.value
+        }
+        get last() {
+            return this._tail?.value
+        }
+        has(t) {
+            return this._map.has(t)
+        }
+        get(t, e = 0) {
+            const r = this._map.get(t);
+            if (r) return e !== 0 && this.touch(r, e), r.value
+        }
+        set(t, e, r = 0) {
+            let n = this._map.get(t);
+            if (n) n.value = e, r !== 0 && this.touch(n, r);
+            else {
+                switch (n = {
+                        key: t,
+                        value: e,
+                        next: void 0,
+                        previous: void 0
+                    }, r) {
+                    case 0:
+                        this.addItemLast(n);
+                        break;
+                    case 1:
+                        this.addItemFirst(n);
+                        break;
+                    case 2:
+                        this.addItemLast(n);
+                        break;
+                    default:
+                        this.addItemLast(n);
+                        break
+                }
+                this._map.set(t, n), this._size++
+            }
+            return this
+        }
+        delete(t) {
+            return !!this.remove(t)
+        }
+        remove(t) {
+            const e = this._map.get(t);
+            if (e) return this._map.delete(t), this.removeItem(e), this._size--, e.value
+        }
+        shift() {
+            if (!this._head && !this._tail) return;
+            if (!this._head || !this._tail) throw new Error("Invalid list");
+            const t = this._head;
+            return this._map.delete(t.key), this.removeItem(t), this._size--, t.value
+        }
+        forEach(t, e) {
+            const r = this._state;
+            let n = this._head;
+            for (; n;) {
+                if (e ? t.bind(e)(n.value, n.key, this) : t(n.value, n.key, this), this._state !== r) throw new Error("LinkedMap got modified during iteration.");
+                n = n.next
+            }
+        }
+        keys() {
+            const t = this,
+                e = this._state;
+            let r = this._head;
+            const n = {
+                [Symbol.iterator]() {
+                    return n
+                },
+                next() {
+                    if (t._state !== e) throw new Error("LinkedMap got modified during iteration.");
+                    if (r) {
+                        const s = {
+                            value: r.key,
+                            done: !1
+                        };
+                        return r = r.next, s
+                    } else return {
+                        value: void 0,
+                        done: !0
+                    }
+                }
+            };
+            return n
+        }
+        values() {
+            const t = this,
+                e = this._state;
+            let r = this._head;
+            const n = {
+                [Symbol.iterator]() {
+                    return n
+                },
+                next() {
+                    if (t._state !== e) throw new Error("LinkedMap got modified during iteration.");
+                    if (r) {
+                        const s = {
+                            value: r.value,
+                            done: !1
+                        };
+                        return r = r.next, s
+                    } else return {
+                        value: void 0,
+                        done: !0
+                    }
+                }
+            };
+            return n
+        }
+        entries() {
+            const t = this,
+                e = this._state;
+            let r = this._head;
+            const n = {
+                [Symbol.iterator]() {
+                    return n
+                },
+                next() {
+                    if (t._state !== e) throw new Error("LinkedMap got modified during iteration.");
+                    if (r) {
+                        const s = {
+                            value: [r.key, r.value],
+                            done: !1
+                        };
+                        return r = r.next, s
+                    } else return {
+                        value: void 0,
+                        done: !0
+                    }
+                }
+            };
+            return n
+        } [(je = Symbol.toStringTag, Symbol.iterator)]() {
+            return this.entries()
+        }
+        trimOld(t) {
+            if (t >= this.size) return;
+            if (t === 0) {
+                this.clear();
+                return
+            }
+            let e = this._head,
+                r = this.size;
+            for (; e && r > t;) this._map.delete(e.key), e = e.next, r--;
+            this._head = e, this._size = r, e && (e.previous = void 0), this._state++
+        }
+        trimNew(t) {
+            if (t >= this.size) return;
+            if (t === 0) {
+                this.clear();
+                return
+            }
+            let e = this._tail,
+                r = this.size;
+            for (; e && r > t;) this._map.delete(e.key), e = e.previous, r--;
+            this._tail = e, this._size = r, e && (e.next = void 0), this._state++
+        }
+        addItemFirst(t) {
+            if (!this._head && !this._tail) this._tail = t;
+            else if (this._head) t.next = this._head, this._head.previous = t;
+            else throw new Error("Invalid list");
+            this._head = t, this._state++
+        }
+        addItemLast(t) {
+            if (!this._head && !this._tail) this._head = t;
+            else if (this._tail) t.previous = this._tail, this._tail.next = t;
+            else throw new Error("Invalid list");
+            this._tail = t, this._state++
+        }
+        removeItem(t) {
+            if (t === this._head && t === this._tail) this._head = void 0, this._tail = void 0;
+            else if (t === this._head) {
+                if (!t.next) throw new Error("Invalid list");
+                t.next.previous = void 0, this._head = t.next
+            } else if (t === this._tail) {
+                if (!t.previous) throw new Error("Invalid list");
+                t.previous.next = void 0, this._tail = t.previous
+            } else {
+                const e = t.next,
+                    r = t.previous;
+                if (!e || !r) throw new Error("Invalid list");
+                e.previous = r, r.next = e
+            }
+            t.next = void 0, t.previous = void 0, this._state++
+        }
+        touch(t, e) {
+            if (!this._head || !this._tail) throw new Error("Invalid list");
+            if (!(e !== 1 && e !== 2)) {
+                if (e === 1) {
+                    if (t === this._head) return;
+                    const r = t.next,
+                        n = t.previous;
+                    t === this._tail ? (n.next = void 0, this._tail = n) : (r.previous = n, n.next = r), t.previous = void 0, t.next = this._head, this._head.previous = t, this._head = t, this._state++
+                } else if (e === 2) {
+                    if (t === this._tail) return;
+                    const r = t.next,
+                        n = t.previous;
+                    t === this._head ? (r.previous = void 0, this._head = r) : (r.previous = n, n.next = r), t.next = void 0, t.previous = this._tail, this._tail.next = t, this._tail = t, this._state++
+                }
+            }
+        }
+        toJSON() {
+            const t = [];
+            return this.forEach((e, r) => {
+                t.push([r, e])
+            }), t
+        }
+        fromJSON(t) {
+            this.clear();
+            for (const [e, r] of t) this.set(e, r)
+        }
+    },
+    pr = class extends mr {
+        constructor(t, e = 1) {
+            super(), this._limit = t, this._ratio = Math.min(Math.max(0, e), 1)
+        }
+        get limit() {
+            return this._limit
+        }
+        set limit(t) {
+            this._limit = t, this.checkTrim()
+        }
+        get ratio() {
+            return this._ratio
+        }
+        set ratio(t) {
+            this._ratio = Math.min(Math.max(0, t), 1), this.checkTrim()
+        }
+        get(t, e = 2) {
+            return super.get(t, e)
+        }
+        peek(t) {
+            return super.get(t, 0)
+        }
+        set(t, e) {
+            return super.set(t, e, 2), this
+        }
+        checkTrim() {
+            this.size > this._limit && this.trim(Math.round(this._limit * this._ratio))
+        }
+    },
+    vr = class extends pr {
+        constructor(t, e = 1) {
+            super(t, e)
+        }
+        trim(t) {
+            this.trimOld(t)
+        }
+        set(t, e) {
+            return super.set(t, e), this.checkTrim(), this
+        }
+    },
+    gr = class {
+        constructor() {
+            this.map = new Map
+        }
+        add(t, e) {
+            let r = this.map.get(t);
+            r || (r = new Set, this.map.set(t, r)), r.add(e)
+        }
+        delete(t, e) {
+            const r = this.map.get(t);
+            r && (r.delete(e), r.size === 0 && this.map.delete(t))
+        }
+        forEach(t, e) {
+            const r = this.map.get(t);
+            r && r.forEach(e)
+        }
+        get(t) {
+            const e = this.map.get(t);
+            return e || new Set
+        }
+    };
+
+function _r(t) {
+    return !!t && typeof t[Symbol.iterator] == "function"
+}
+var oe;
+(t => {
+    function e(y) {
+        return y && typeof y == "object" && typeof y[Symbol.iterator] == "function"
+    }
+    t.is = e;
+    const r = Object.freeze([]);
+
+    function n() {
+        return r
+    }
+    t.empty = n;
+
+    function* s(y) {
+        yield y
+    }
+    t.single = s;
+
+    function i(y) {
+        return e(y) ? y : s(y)
+    }
+    t.wrap = i;
+
+    function a(y) {
+        return y || r
+    }
+    t.from = a;
+
+    function* o(y) {
+        for (let A = y.length - 1; A >= 0; A--) yield y[A]
+    }
+    t.reverse = o;
+
+    function u(y) {
+        return !y || y[Symbol.iterator]().next().done === !0
+    }
+    t.isEmpty = u;
+
+    function l(y) {
+        return y[Symbol.iterator]().next().value
+    }
+    t.first = l;
+
+    function c(y, A) {
+        let P = 0;
+        for (const S of y)
+            if (A(S, P++)) return !0;
+        return !1
+    }
+    t.some = c;
+
+    function f(y, A) {
+        for (const P of y)
+            if (A(P)) return P
+    }
+    t.find = f;
+
+    function* h(y, A) {
+        for (const P of y) A(P) && (yield P)
+    }
+    t.filter = h;
+
+    function* m(y, A) {
+        let P = 0;
+        for (const S of y) yield A(S, P++)
+    }
+    t.map = m;
+
+    function* p(y, A) {
+        let P = 0;
+        for (const S of y) yield* A(S, P++)
+    }
+    t.flatMap = p;
+
+    function* b(...y) {
+        for (const A of y) _r(A) ? yield* A: yield A
+    }
+    t.concat = b;
+
+    function L(y, A, P) {
+        let S = P;
+        for (const H of y) S = A(S, H);
+        return S
+    }
+    t.reduce = L;
+
+    function C(y) {
+        let A = 0;
+        for (const P of y) A++;
+        return A
+    }
+    t.length = C;
+
+    function* k(y, A, P = y.length) {
+        for (A < -y.length && (A = 0), A < 0 && (A += y.length), P < 0 ? P += y.length : P > y.length && (P = y.length); A < P; A++) yield y[A]
+    }
+    t.slice = k;
+
+    function E(y, A = Number.POSITIVE_INFINITY) {
+        const P = [];
+        if (A === 0) return [P, y];
+        const S = y[Symbol.iterator]();
+        for (let H = 0; H < A; H++) {
+            const u1 = S.next();
+            if (u1.done) return [P, t.empty()];
+            P.push(u1.value)
+        }
+        return [P, {
+            [Symbol.iterator]() {
+                return S
+            }
+        }]
+    }
+    t.consume = E;
+    async function W(y) {
+        const A = [];
+        for await (const P of y) A.push(P);
+        return Promise.resolve(A)
+    }
+    t.asyncToArray = W
+})(oe || (oe = {}));
+var br = !1,
+    g1 = null,
+    wr = class Ht {
+        constructor() {
+            this.livingDisposables = new Map
+        }
+        getDisposableData(e) {
+            let r = this.livingDisposables.get(e);
+            return r || (r = {
+                parent: null,
+                source: null,
+                isSingleton: !1,
+                value: e,
+                idx: Ht.idx++
+            }, this.livingDisposables.set(e, r)), r
+        }
+        trackDisposable(e) {
+            const r = this.getDisposableData(e);
+            r.source || (r.source = new Error().stack)
+        }
+        setParent(e, r) {
+            const n = this.getDisposableData(e);
+            n.parent = r
+        }
+        markAsDisposed(e) {
+            this.livingDisposables.delete(e)
+        }
+        markAsSingleton(e) {
+            this.getDisposableData(e).isSingleton = !0
+        }
+        getRootParent(e, r) {
+            const n = r.get(e);
+            if (n) return n;
+            const s = e.parent ? this.getRootParent(this.getDisposableData(e.parent), r) : e;
+            return r.set(e, s), s
+        }
+        getTrackedDisposables() {
+            const e = new Map;
+            return [...this.livingDisposables.entries()].filter(([, n]) => n.source !== null && !this.getRootParent(n, e).isSingleton).flatMap(([n]) => n)
+        }
+        computeLeakingDisposables(e = 10, r) {
+            let n;
+            if (r) n = r;
+            else {
+                const u = new Map,
+                    l = [...this.livingDisposables.values()].filter(f => f.source !== null && !this.getRootParent(f, u).isSingleton);
+                if (l.length === 0) return;
+                const c = new Set(l.map(f => f.value));
+                if (n = l.filter(f => !(f.parent && c.has(f.parent))), n.length === 0) throw new Error("There are cyclic diposable chains!")
+            }
+            if (!n) return;
+
+            function s(u) {
+                function l(f, h) {
+                    for (; f.length > 0 && h.some(m => typeof m == "string" ? m === f[0] : f[0].match(m));) f.shift()
+                }
+                const c = u.source.split(`
+`).map(f => f.trim().replace("at ", "")).filter(f => f !== "");
+                return l(c, ["Error", /^trackDisposable \(.*\)$/, /^DisposableTracker.trackDisposable \(.*\)$/]), c.reverse()
+            }
+            const i = new gr;
+            for (const u of n) {
+                const l = s(u);
+                for (let c = 0; c <= l.length; c++) i.add(l.slice(0, c).join(`
+`), u)
+            }
+            n.sort(cr(u => u.idx, fr));
+            let a = "",
+                o = 0;
+            for (const u of n.slice(0, e)) {
+                o++;
+                const l = s(u),
+                    c = [];
+                for (let f = 0; f < l.length; f++) {
+                    let h = l[f];
+                    h = `(shared with ${i.get(l.slice(0,f+1).join(`
+`)).size}/${n.length} leaks) at ${h}`;
+                    const p = i.get(l.slice(0, f).join(`
+`)),
+                        b = or([...p].map(L => s(L)[f]), L => L);
+                    delete b[l[f]];
+                    for (const [L, C] of Object.entries(b)) c.unshift(`    - stacktraces of ${C.length} other leaks continue with ${L}`);
+                    c.unshift(h)
+                }
+                a += `
 
 
 ==================== Leaking disposable ${o}/${n.length}: ${u.value.constructor.name} ====================
@@ -18,23 +1313,3721 @@ ${c.join(`
 `)}
 ============================================================
 
-`}return n.length>t&&(a+=`
+`
+            }
+            return n.length > e && (a += `
 
 
-... and ${n.length-t} more leaking disposables
+... and ${n.length-e} more leaking disposables
 
-`),{leaks:n,details:a}}};function pr(e){p1=e}if(vr){const e="__is_disposable_tracked__";pr(new class{trackDisposable(t){const r=new Error("Potentially leaked disposable").stack;setTimeout(()=>{t[e]||console.log(r)},3e3)}setParent(t,r){if(t&&t!==C1.None)try{t[e]=!0}catch{}}markAsDisposed(t){if(t&&t!==C1.None)try{t[e]=!0}catch{}}markAsSingleton(t){}})}function le(e){return p1?.trackDisposable(e),e}function ue(e){p1?.markAsDisposed(e)}function ce(e,t){p1?.setParent(e,t)}function gr(e,t){if(p1)for(const r of e)p1.setParent(r,t)}function qe(e){if(ae.is(e)){const t=[];for(const r of e)if(r)try{r.dispose()}catch(n){t.push(n)}if(t.length===1)throw t[0];if(t.length>1)throw new AggregateError(t,"Encountered errors while disposing of store");return Array.isArray(e)?[]:e}else if(e)return e.dispose(),e}function _r(...e){const t=ze(()=>qe(e));return gr(e,t),t}function ze(e){const t=le({dispose:ir(()=>{ue(t),e()})});return t}var fe=class zt{static{this.DISABLE_DISPOSED_WARNING=!1}constructor(){this._toDispose=new Set,this._isDisposed=!1,le(this)}dispose(){this._isDisposed||(ue(this),this._isDisposed=!0,this.clear())}get isDisposed(){return this._isDisposed}clear(){if(this._toDispose.size!==0)try{qe(this._toDispose)}finally{this._toDispose.clear()}}add(t){if(!t)return t;if(t===this)throw new Error("Cannot register a disposable on itself!");return ce(t,this),this._isDisposed?zt.DISABLE_DISPOSED_WARNING||console.warn(new Error("Trying to add a disposable to a DisposableStore that has already been disposed of. The added object will be leaked!").stack):this._toDispose.add(t),t}delete(t){if(t){if(t===this)throw new Error("Cannot dispose a disposable on itself!");this._toDispose.delete(t),t.dispose()}}deleteAndLeak(t){t&&this._toDispose.has(t)&&(this._toDispose.delete(t),ce(t,null))}},C1=class{static{this.None=Object.freeze({dispose(){}})}constructor(){this._store=new fe,le(this),ce(this._store,this)}dispose(){ue(this),this._store.dispose()}_register(e){if(e===this)throw new Error("Cannot register a disposable on itself!");return this._store.add(e)}},Ti=class X1{static{this.Undefined=new X1(void 0)}constructor(t){this.element=t,this.next=X1.Undefined,this.prev=X1.Undefined}},br=globalThis.performance&&typeof globalThis.performance.now=="function",wr=class Bt{static create(t){return new Bt(t)}constructor(t){this._now=br&&t===!1?Date.now:globalThis.performance.now.bind(globalThis.performance),this._startTime=this._now(),this._stopTime=-1}stop(){this._stopTime=this._now()}reset(){this._startTime=this._now(),this._stopTime=-1}elapsed(){return this._stopTime!==-1?this._stopTime-this._startTime:this._now()-this._startTime}},Be=!1,yr=!1,T1;(function(e){e.None=()=>C1.None;function t(g){if(yr){const{onDidAddListener:d}=g,_=he.create();let p=0;g.onDidAddListener=()=>{++p===2&&(console.warn("snapshotted emitter LIKELY used public and SHOULD HAVE BEEN created with DisposableStore. snapshotted here"),_.print()),d?.()}}}function r(g,d){return m(g,()=>{},0,void 0,!0,void 0,d)}e.defer=r;function n(g){return(d,_=null,p)=>{let w=!1,x;return x=g(T=>{if(!w)return x?x.dispose():w=!0,d.call(_,T)},null,p),w&&x.dispose(),x}}e.once=n;function i(g,d){return e.once(e.filter(g,d))}e.onceIf=i;function s(g,d,_){return f((p,w=null,x)=>g(T=>p.call(w,d(T)),null,x),_)}e.map=s;function a(g,d,_){return f((p,w=null,x)=>g(T=>{d(T),p.call(w,T)},null,x),_)}e.forEach=a;function o(g,d,_){return f((p,w=null,x)=>g(T=>d(T)&&p.call(w,T),null,x),_)}e.filter=o;function u(g){return g}e.signal=u;function l(...g){return(d,_=null,p)=>{const w=_r(...g.map(x=>x(T=>d.call(_,T))));return h(w,p)}}e.any=l;function c(g,d,_,p){let w=_;return s(g,x=>(w=d(w,x),w),p)}e.reduce=c;function f(g,d){let _;const p={onWillAddFirstListener(){_=g(w.fire,w)},onDidRemoveLastListener(){_?.dispose()}};d||t(p);const w=new G(p);return d?.add(w),w.event}function h(g,d){return d instanceof Array?d.push(g):d&&d.add(g),g}function m(g,d,_=100,p=!1,w=!1,x,T){let F,z,v1,S1=0,y1;const De={leakWarningThreshold:x,onWillAddFirstListener(){F=g(Qt=>{S1++,z=d(z,Qt),p&&!v1&&(R1.fire(z),z=void 0),y1=()=>{const Vt=z;z=void 0,v1=void 0,(!p||S1>1)&&R1.fire(Vt),S1=0},typeof _=="number"?(clearTimeout(v1),v1=setTimeout(y1,_)):v1===void 0&&(v1=0,queueMicrotask(y1))})},onWillRemoveListener(){w&&S1>0&&y1?.()},onDidRemoveLastListener(){y1=void 0,F.dispose()}};T||t(De);const R1=new G(De);return T?.add(R1),R1.event}e.debounce=m;function v(g,d=0,_){return e.debounce(g,(p,w)=>p?(p.push(w),p):[w],d,void 0,!0,void 0,_)}e.accumulate=v;function b(g,d=(p,w)=>p===w,_){let p=!0,w;return o(g,x=>{const T=p||!d(x,w);return p=!1,w=x,T},_)}e.latch=b;function L(g,d,_){return[e.filter(g,d,_),e.filter(g,p=>!d(p),_)]}e.split=L;function C(g,d=!1,_=[],p){let w=_.slice(),x=g(z=>{w?w.push(z):F.fire(z)});p&&p.add(x);const T=()=>{w?.forEach(z=>F.fire(z)),w=null},F=new G({onWillAddFirstListener(){x||(x=g(z=>F.fire(z)),p&&p.add(x))},onDidAddFirstListener(){w&&(d?setTimeout(T):T())},onDidRemoveLastListener(){x&&x.dispose(),x=null}});return p&&p.add(F),F.event}e.buffer=C;function k(g,d){return(p,w,x)=>{const T=d(new j);return g(function(F){const z=T.evaluate(F);z!==A&&p.call(w,z)},void 0,x)}}e.chain=k;const A=Symbol("HaltChainable");class j{constructor(){this.steps=[]}map(d){return this.steps.push(d),this}forEach(d){return this.steps.push(_=>(d(_),_)),this}filter(d){return this.steps.push(_=>d(_)?_:A),this}reduce(d,_){let p=_;return this.steps.push(w=>(p=d(p,w),p)),this}latch(d=(_,p)=>_===p){let _=!0,p;return this.steps.push(w=>{const x=_||!d(w,p);return _=!1,p=w,x?w:A}),this}evaluate(d){for(const _ of this.steps)if(d=_(d),d===A)break;return d}}function y(g,d,_=p=>p){const p=(...F)=>T.fire(_(...F)),w=()=>g.on(d,p),x=()=>g.removeListener(d,p),T=new G({onWillAddFirstListener:w,onDidRemoveLastListener:x});return T.event}e.fromNodeEventEmitter=y;function E(g){let d;const _=()=>{d=g.subscribe(x=>w.fire(x))},p=()=>{d?.unsubscribe(),d=void 0},w=new G({onWillAddFirstListener:_,onDidRemoveLastListener:p});return w.event}e.fromRxJS=E;function P(g,d,_=p=>p){const p=(...F)=>T.fire(_(...F)),w=()=>g.addEventListener(d,p),x=()=>g.removeEventListener(d,p),T=new G({onWillAddFirstListener:w,onDidRemoveLastListener:x});return T.event}e.fromDOMEventEmitter=P;function S(g,d){return new Promise(_=>n(g)(_,null,d))}e.toPromise=S;function H(g){const d=new G;return g.then(_=>{d.fire(_)},()=>{d.fire(void 0)}).finally(()=>{d.dispose()}),d.event}e.fromPromise=H;function u1(g,d){return g(_=>d.fire(_))}e.forward=u1;function s1(g,d,_){return d(_),g(p=>d(p))}e.runAndSubscribe=s1;class c1{constructor(d,_){this._observable=d,this._counter=0,this._hasChanged=!1;const p={onWillAddFirstListener:()=>{d.addObserver(this),this._observable.reportChanges()},onDidRemoveLastListener:()=>{d.removeObserver(this)}};_||t(p),this.emitter=new G(p),_&&_.add(this.emitter)}beginUpdate(d){this._counter++}handlePossibleChange(d){}handleChange(d,_){this._hasChanged=!0}endUpdate(d){this._counter--,this._counter===0&&(this._observable.reportChanges(),this._hasChanged&&(this._hasChanged=!1,this.emitter.fire(this._observable.get())))}}function f1(g,d){return new c1(g,d).emitter.event}e.fromObservable=f1;function k1(g){return(d,_,p)=>{let w=0,x=!1;const T={beginUpdate(){w++},endUpdate(){w--,w===0&&(g.reportChanges(),x&&(x=!1,d.call(_)))},handlePossibleChange(){},handleChange(){x=!0}};g.addObserver(T),g.reportChanges();const F={dispose(){g.removeObserver(T)}};return p instanceof fe?p.add(F):Array.isArray(p)&&p.push(F),F}}e.fromObservableLight=k1})(T1||(T1={}));var Cr=class Te{static{this.all=new Set}static{this._idPool=0}constructor(t){this.listenerCount=0,this.invocationCount=0,this.elapsedOverall=0,this.durations=[],this.name=`${t}_${Te._idPool++}`,Te.all.add(this)}start(t){this._stopWatch=new wr,this.listenerCount=t}stop(){if(this._stopWatch){const t=this._stopWatch.elapsed();this.durations.push(t),this.elapsedOverall+=t,this.invocationCount+=1,this._stopWatch=void 0}}},He=-1,Lr=class Ht{static{this._idPool=1}constructor(t,r,n=(Ht._idPool++).toString(16).padStart(3,"0")){this._errorHandler=t,this.threshold=r,this.name=n,this._warnCountdown=0}dispose(){this._stacks?.clear()}check(t,r){const n=this.threshold;if(n<=0||r<n)return;this._stacks||(this._stacks=new Map);const i=this._stacks.get(t.value)||0;if(this._stacks.set(t.value,i+1),this._warnCountdown-=1,this._warnCountdown<=0){this._warnCountdown=n*.5;const[s,a]=this.getMostFrequentStack(),o=`[${this.name}] potential listener LEAK detected, having ${r} listeners already. MOST frequent listener (${a}):`;console.warn(o),console.warn(s);const u=new Er(o,s);this._errorHandler(u)}return()=>{const s=this._stacks.get(t.value)||0;this._stacks.set(t.value,s-1)}}getMostFrequentStack(){if(!this._stacks)return;let t,r=0;for(const[n,i]of this._stacks)(!t||r<i)&&(t=[n,i],r=i);return t}},he=class Kt{static create(){const t=new Error;return new Kt(t.stack??"")}constructor(t){this.value=t}print(){console.warn(this.value.split(`
+`), {
+                leaks: n,
+                details: a
+            }
+        }
+    };
+wr.idx = 0;
+
+function yr(t) {
+    g1 = t
+}
+if (br) {
+    const t = "__is_disposable_tracked__";
+    yr(new class {
+        trackDisposable(e) {
+            const r = new Error("Potentially leaked disposable").stack;
+            setTimeout(() => {
+                e[t] || console.log(r)
+            }, 3e3)
+        }
+        setParent(e, r) {
+            if (e && e !== _1.None) try {
+                e[t] = !0
+            } catch {}
+        }
+        markAsDisposed(e) {
+            if (e && e !== _1.None) try {
+                e[t] = !0
+            } catch {}
+        }
+        markAsSingleton(e) {}
+    })
+}
+
+function ae(t) {
+    return g1?.trackDisposable(t), t
+}
+
+function le(t) {
+    g1?.markAsDisposed(t)
+}
+
+function ue(t, e) {
+    g1?.setParent(t, e)
+}
+
+function Cr(t, e) {
+    if (g1)
+        for (const r of t) g1.setParent(r, e)
+}
+
+function Ge(t) {
+    if (oe.is(t)) {
+        const e = [];
+        for (const r of t)
+            if (r) try {
+                r.dispose()
+            } catch (n) {
+                e.push(n)
+            }
+        if (e.length === 1) throw e[0];
+        if (e.length > 1) throw new AggregateError(e, "Encountered errors while disposing of store");
+        return Array.isArray(t) ? [] : t
+    } else if (t) return t.dispose(), t
+}
+
+function Lr(...t) {
+    const e = Qe(() => Ge(t));
+    return Cr(t, e), e
+}
+
+function Qe(t) {
+    const e = ae({
+        dispose: ar(() => {
+            le(e), t()
+        })
+    });
+    return e
+}
+var Ke = class Gt {
+    constructor() {
+        this._toDispose = new Set, this._isDisposed = !1, ae(this)
+    }
+    dispose() {
+        this._isDisposed || (le(this), this._isDisposed = !0, this.clear())
+    }
+    get isDisposed() {
+        return this._isDisposed
+    }
+    clear() {
+        if (this._toDispose.size !== 0) try {
+            Ge(this._toDispose)
+        } finally {
+            this._toDispose.clear()
+        }
+    }
+    add(e) {
+        if (!e) return e;
+        if (e === this) throw new Error("Cannot register a disposable on itself!");
+        return ue(e, this), this._isDisposed ? Gt.DISABLE_DISPOSED_WARNING || console.warn(new Error("Trying to add a disposable to a DisposableStore that has already been disposed of. The added object will be leaked!").stack) : this._toDispose.add(e), e
+    }
+    delete(e) {
+        if (e) {
+            if (e === this) throw new Error("Cannot dispose a disposable on itself!");
+            this._toDispose.delete(e), e.dispose()
+        }
+    }
+    deleteAndLeak(e) {
+        e && this._toDispose.has(e) && (this._toDispose.delete(e), ue(e, null))
+    }
+};
+Ke.DISABLE_DISPOSED_WARNING = !1;
+var ce = Ke,
+    _1 = class {
+        constructor() {
+            this._store = new ce, ae(this), ue(this._store, this)
+        }
+        dispose() {
+            le(this), this._store.dispose()
+        }
+        _register(t) {
+            if (t === this) throw new Error("Cannot register a disposable on itself!");
+            return this._store.add(t)
+        }
+    };
+_1.None = Object.freeze({
+    dispose() {}
+});
+var Ve = class Oe {
+    constructor(e) {
+        this.element = e, this.next = Oe.Undefined, this.prev = Oe.Undefined
+    }
+};
+Ve.Undefined = new Ve(void 0);
+var Ar = globalThis.performance && typeof globalThis.performance.now == "function",
+    Er = class Qt {
+        static create(e) {
+            return new Qt(e)
+        }
+        constructor(e) {
+            this._now = Ar && e === !1 ? Date.now : globalThis.performance.now.bind(globalThis.performance), this._startTime = this._now(), this._stopTime = -1
+        }
+        stop() {
+            this._stopTime = this._now()
+        }
+        reset() {
+            this._startTime = this._now(), this._stopTime = -1
+        }
+        elapsed() {
+            return this._stopTime !== -1 ? this._stopTime - this._startTime : this._now() - this._startTime
+        }
+    },
+    Je = !1,
+    xr = !1,
+    I1;
+(t => {
+    t.None = () => _1.None;
+
+    function e(g) {
+        if (xr) {
+            const {
+                onDidAddListener: d
+            } = g, _ = he.create();
+            let v = 0;
+            g.onDidAddListener = () => {
+                ++v === 2 && (console.warn("snapshotted emitter LIKELY used public and SHOULD HAVE BEEN created with DisposableStore. snapshotted here"), _.print()), d?.()
+            }
+        }
+    }
+
+    function r(g, d) {
+        return m(g, () => {}, 0, void 0, !0, void 0, d)
+    }
+    t.defer = r;
+
+    function n(g) {
+        return (d, _ = null, v) => {
+            let w = !1,
+                x;
+            return x = g(O => {
+                if (!w) return x ? x.dispose() : w = !0, d.call(_, O)
+            }, null, v), w && x.dispose(), x
+        }
+    }
+    t.once = n;
+
+    function s(g, d) {
+        return t.once(t.filter(g, d))
+    }
+    t.onceIf = s;
+
+    function i(g, d, _) {
+        return f((v, w = null, x) => g(O => v.call(w, d(O)), null, x), _)
+    }
+    t.map = i;
+
+    function a(g, d, _) {
+        return f((v, w = null, x) => g(O => {
+            d(O), v.call(w, O)
+        }, null, x), _)
+    }
+    t.forEach = a;
+
+    function o(g, d, _) {
+        return f((v, w = null, x) => g(O => d(O) && v.call(w, O), null, x), _)
+    }
+    t.filter = o;
+
+    function u(g) {
+        return g
+    }
+    t.signal = u;
+
+    function l(...g) {
+        return (d, _ = null, v) => {
+            const w = Lr(...g.map(x => x(O => d.call(_, O))));
+            return h(w, v)
+        }
+    }
+    t.any = l;
+
+    function c(g, d, _, v) {
+        let w = _;
+        return i(g, x => (w = d(w, x), w), v)
+    }
+    t.reduce = c;
+
+    function f(g, d) {
+        let _;
+        const v = {
+            onWillAddFirstListener() {
+                _ = g(w.fire, w)
+            },
+            onDidRemoveLastListener() {
+                _?.dispose()
+            }
+        };
+        d || e(v);
+        const w = new J(v);
+        return d?.add(w), w.event
+    }
+
+    function h(g, d) {
+        return d instanceof Array ? d.push(g) : d && d.add(g), g
+    }
+
+    function m(g, d, _ = 100, v = !1, w = !1, x, O) {
+        let F, j, v1, T1 = 0,
+            A1;
+        const $e = {
+            leakWarningThreshold: x,
+            onWillAddFirstListener() {
+                F = g(Jt => {
+                    T1++, j = d(j, Jt), v && !v1 && (R1.fire(j), j = void 0), A1 = () => {
+                        const Yt = j;
+                        j = void 0, v1 = void 0, (!v || T1 > 1) && R1.fire(Yt), T1 = 0
+                    }, typeof _ == "number" ? (clearTimeout(v1), v1 = setTimeout(A1, _)) : v1 === void 0 && (v1 = 0, queueMicrotask(A1))
+                })
+            },
+            onWillRemoveListener() {
+                w && T1 > 0 && A1?.()
+            },
+            onDidRemoveLastListener() {
+                A1 = void 0, F.dispose()
+            }
+        };
+        O || e($e);
+        const R1 = new J($e);
+        return O?.add(R1), R1.event
+    }
+    t.debounce = m;
+
+    function p(g, d = 0, _) {
+        return t.debounce(g, (v, w) => v ? (v.push(w), v) : [w], d, void 0, !0, void 0, _)
+    }
+    t.accumulate = p;
+
+    function b(g, d = (v, w) => v === w, _) {
+        let v = !0,
+            w;
+        return o(g, x => {
+            const O = v || !d(x, w);
+            return v = !1, w = x, O
+        }, _)
+    }
+    t.latch = b;
+
+    function L(g, d, _) {
+        return [t.filter(g, d, _), t.filter(g, v => !d(v), _)]
+    }
+    t.split = L;
+
+    function C(g, d = !1, _ = [], v) {
+        let w = _.slice(),
+            x = g(j => {
+                w ? w.push(j) : F.fire(j)
+            });
+        v && v.add(x);
+        const O = () => {
+                w?.forEach(j => F.fire(j)), w = null
+            },
+            F = new J({
+                onWillAddFirstListener() {
+                    x || (x = g(j => F.fire(j)), v && v.add(x))
+                },
+                onDidAddFirstListener() {
+                    w && (d ? setTimeout(O) : O())
+                },
+                onDidRemoveLastListener() {
+                    x && x.dispose(), x = null
+                }
+            });
+        return v && v.add(F), F.event
+    }
+    t.buffer = C;
+
+    function k(g, d) {
+        return (v, w, x) => {
+            const O = d(new W);
+            return g(function(F) {
+                const j = O.evaluate(F);
+                j !== E && v.call(w, j)
+            }, void 0, x)
+        }
+    }
+    t.chain = k;
+    const E = Symbol("HaltChainable");
+    class W {
+        constructor() {
+            this.steps = []
+        }
+        map(d) {
+            return this.steps.push(d), this
+        }
+        forEach(d) {
+            return this.steps.push(_ => (d(_), _)), this
+        }
+        filter(d) {
+            return this.steps.push(_ => d(_) ? _ : E), this
+        }
+        reduce(d, _) {
+            let v = _;
+            return this.steps.push(w => (v = d(v, w), v)), this
+        }
+        latch(d = (_, v) => _ === v) {
+            let _ = !0,
+                v;
+            return this.steps.push(w => {
+                const x = _ || !d(w, v);
+                return _ = !1, v = w, x ? w : E
+            }), this
+        }
+        evaluate(d) {
+            for (const _ of this.steps)
+                if (d = _(d), d === E) break;
+            return d
+        }
+    }
+
+    function y(g, d, _ = v => v) {
+        const v = (...F) => O.fire(_(...F)),
+            w = () => g.on(d, v),
+            x = () => g.removeListener(d, v),
+            O = new J({
+                onWillAddFirstListener: w,
+                onDidRemoveLastListener: x
+            });
+        return O.event
+    }
+    t.fromNodeEventEmitter = y;
+
+    function A(g) {
+        let d;
+        const _ = () => {
+                d = g.subscribe(x => w.fire(x))
+            },
+            v = () => {
+                d?.unsubscribe(), d = void 0
+            },
+            w = new J({
+                onWillAddFirstListener: _,
+                onDidRemoveLastListener: v
+            });
+        return w.event
+    }
+    t.fromRxJS = A;
+
+    function P(g, d, _ = v => v) {
+        const v = (...F) => O.fire(_(...F)),
+            w = () => g.addEventListener(d, v),
+            x = () => g.removeEventListener(d, v),
+            O = new J({
+                onWillAddFirstListener: w,
+                onDidRemoveLastListener: x
+            });
+        return O.event
+    }
+    t.fromDOMEventEmitter = P;
+
+    function S(g, d) {
+        return new Promise(_ => n(g)(_, null, d))
+    }
+    t.toPromise = S;
+
+    function H(g) {
+        const d = new J;
+        return g.then(_ => {
+            d.fire(_)
+        }, () => {
+            d.fire(void 0)
+        }).finally(() => {
+            d.dispose()
+        }), d.event
+    }
+    t.fromPromise = H;
+
+    function u1(g, d) {
+        return g(_ => d.fire(_))
+    }
+    t.forward = u1;
+
+    function o1(g, d, _) {
+        return d(_), g(v => d(v))
+    }
+    t.runAndSubscribe = o1;
+    class c1 {
+        constructor(d, _) {
+            this._observable = d, this._counter = 0, this._hasChanged = !1;
+            const v = {
+                onWillAddFirstListener: () => {
+                    d.addObserver(this), this._observable.reportChanges()
+                },
+                onDidRemoveLastListener: () => {
+                    d.removeObserver(this)
+                }
+            };
+            _ || e(v), this.emitter = new J(v), _ && _.add(this.emitter)
+        }
+        beginUpdate(d) {
+            this._counter++
+        }
+        handlePossibleChange(d) {}
+        handleChange(d, _) {
+            this._hasChanged = !0
+        }
+        endUpdate(d) {
+            this._counter--, this._counter === 0 && (this._observable.reportChanges(), this._hasChanged && (this._hasChanged = !1, this.emitter.fire(this._observable.get())))
+        }
+    }
+
+    function f1(g, d) {
+        return new c1(g, d).emitter.event
+    }
+    t.fromObservable = f1;
+
+    function S1(g) {
+        return (d, _, v) => {
+            let w = 0,
+                x = !1;
+            const O = {
+                beginUpdate() {
+                    w++
+                },
+                endUpdate() {
+                    w--, w === 0 && (g.reportChanges(), x && (x = !1, d.call(_)))
+                },
+                handlePossibleChange() {},
+                handleChange() {
+                    x = !0
+                }
+            };
+            g.addObserver(O), g.reportChanges();
+            const F = {
+                dispose() {
+                    g.removeObserver(O)
+                }
+            };
+            return v instanceof ce ? v.add(F) : Array.isArray(v) && v.push(F), F
+        }
+    }
+    t.fromObservableLight = S1
+})(I1 || (I1 = {}));
+var fe = class Ie {
+    constructor(e) {
+        this.listenerCount = 0, this.invocationCount = 0, this.elapsedOverall = 0, this.durations = [], this.name = `${e}_${Ie._idPool++}`, Ie.all.add(this)
+    }
+    start(e) {
+        this._stopWatch = new Er, this.listenerCount = e
+    }
+    stop() {
+        if (this._stopWatch) {
+            const e = this._stopWatch.elapsed();
+            this.durations.push(e), this.elapsedOverall += e, this.invocationCount += 1, this._stopWatch = void 0
+        }
+    }
+};
+fe.all = new Set, fe._idPool = 0;
+var Nr = fe,
+    Ye = -1,
+    Ze = class Kt {
+        constructor(e, r, n = (Kt._idPool++).toString(16).padStart(3, "0")) {
+            this._errorHandler = e, this.threshold = r, this.name = n, this._warnCountdown = 0
+        }
+        dispose() {
+            this._stacks?.clear()
+        }
+        check(e, r) {
+            const n = this.threshold;
+            if (n <= 0 || r < n) return;
+            this._stacks || (this._stacks = new Map);
+            const s = this._stacks.get(e.value) || 0;
+            if (this._stacks.set(e.value, s + 1), this._warnCountdown -= 1, this._warnCountdown <= 0) {
+                this._warnCountdown = n * .5;
+                const [i, a] = this.getMostFrequentStack(), o = `[${this.name}] potential listener LEAK detected, having ${r} listeners already. MOST frequent listener (${a}):`;
+                console.warn(o), console.warn(i);
+                const u = new kr(o, i);
+                this._errorHandler(u)
+            }
+            return () => {
+                const i = this._stacks.get(e.value) || 0;
+                this._stacks.set(e.value, i - 1)
+            }
+        }
+        getMostFrequentStack() {
+            if (!this._stacks) return;
+            let e, r = 0;
+            for (const [n, s] of this._stacks)(!e || r < s) && (e = [n, s], r = s);
+            return e
+        }
+    };
+Ze._idPool = 1;
+var Pr = Ze,
+    he = class Vt {
+        constructor(e) {
+            this.value = e
+        }
+        static create() {
+            const e = new Error;
+            return new Vt(e.stack ?? "")
+        }
+        print() {
+            console.warn(this.value.split(`
 `).slice(2).join(`
-`))}},Er=class extends Error{constructor(e,t){super(e),this.name="ListenerLeakError",this.stack=t}},Ar=class extends Error{constructor(e,t){super(e),this.name="ListenerRefusalError",this.stack=t}},xr=0,I1=class{constructor(e){this.value=e,this.id=xr++}},Nr=2,Pr=(e,t)=>{if(e instanceof I1)t(e);else for(let r=0;r<e.length;r++){const n=e[r];n&&t(n)}},G=class{constructor(e){this._size=0,this._options=e,this._leakageMon=He>0||this._options?.leakWarningThreshold?new Lr(e?.onListenerError??O1,this._options?.leakWarningThreshold??He):void 0,this._perfMon=this._options?._profName?new Cr(this._options._profName):void 0,this._deliveryQueue=this._options?.deliveryQueue}dispose(){if(!this._disposed){if(this._disposed=!0,this._deliveryQueue?.current===this&&this._deliveryQueue.reset(),this._listeners){if(Be){const e=this._listeners;queueMicrotask(()=>{Pr(e,t=>t.stack?.print())})}this._listeners=void 0,this._size=0}this._options?.onDidRemoveLastListener?.(),this._leakageMon?.dispose()}}get event(){return this._event??=(e,t,r)=>{if(this._leakageMon&&this._size>this._leakageMon.threshold**2){const o=`[${this._leakageMon.name}] REFUSES to accept new listeners because it exceeded its threshold by far (${this._size} vs ${this._leakageMon.threshold})`;console.warn(o);const u=this._leakageMon.getMostFrequentStack()??["UNKNOWN stack",-1],l=new Ar(`${o}. HINT: Stack shows most frequent listener (${u[1]}-times)`,u[0]);return(this._options?.onListenerError||O1)(l),C1.None}if(this._disposed)return C1.None;t&&(e=e.bind(t));const n=new I1(e);let i,s;this._leakageMon&&this._size>=Math.ceil(this._leakageMon.threshold*.2)&&(n.stack=he.create(),i=this._leakageMon.check(n.stack,this._size+1)),Be&&(n.stack=s??he.create()),this._listeners?this._listeners instanceof I1?(this._deliveryQueue??=new kr,this._listeners=[this._listeners,n]):this._listeners.push(n):(this._options?.onWillAddFirstListener?.(this),this._listeners=n,this._options?.onDidAddFirstListener?.(this)),this._options?.onDidAddListener?.(this),this._size++;const a=ze(()=>{i?.(),this._removeListener(n)});return r instanceof fe?r.add(a):Array.isArray(r)&&r.push(a),a},this._event}_removeListener(e){if(this._options?.onWillRemoveListener?.(this),!this._listeners)return;if(this._size===1){this._listeners=void 0,this._options?.onDidRemoveLastListener?.(this),this._size=0;return}const t=this._listeners,r=t.indexOf(e);if(r===-1)throw console.log("disposed?",this._disposed),console.log("size?",this._size),console.log("arr?",JSON.stringify(this._listeners)),new Error("Attempted to dispose unknown listener");this._size--,t[r]=void 0;const n=this._deliveryQueue.current===this;if(this._size*Nr<=t.length){let i=0;for(let s=0;s<t.length;s++)t[s]?t[i++]=t[s]:n&&i<this._deliveryQueue.end&&(this._deliveryQueue.end--,i<this._deliveryQueue.i&&this._deliveryQueue.i--);t.length=i}}_deliver(e,t){if(!e)return;const r=this._options?.onListenerError||O1;if(!r){e.value(t);return}try{e.value(t)}catch(n){r(n)}}_deliverQueue(e){const t=e.current._listeners;for(;e.i<e.end;)this._deliver(t[e.i++],e.value);e.reset()}fire(e){if(this._deliveryQueue?.current&&(this._deliverQueue(this._deliveryQueue),this._perfMon?.stop()),this._perfMon?.start(this._size),this._listeners)if(this._listeners instanceof I1)this._deliver(this._listeners,e);else{const t=this._deliveryQueue;t.enqueue(this,e,this._listeners.length),this._deliverQueue(t)}this._perfMon?.stop()}hasListeners(){return this._size>0}},kr=class{constructor(){this.i=-1,this.end=0}enqueue(e,t,r){this.i=0,this.end=r,this.current=e,this.value=t}reset(){this.i=this.end,this.current=void 0,this.value=void 0}};function Ke(){return globalThis._VSCODE_NLS_LANGUAGE}var Ii=Ke()==="pseudo"||typeof document<"u"&&document.location&&typeof document.location.hash=="string"&&document.location.hash.indexOf("pseudo=true")>=0,g1="en",D1=!1,M1=!1,L1=!1,Sr=!1,Qe=!1,de=!1,Rr=!1,Or=!1,Tr=!1,Ir=!1,$1=void 0,F1=g1,Ve=g1,Dr=void 0,e1=void 0,t1=globalThis,B=void 0;typeof t1.vscode<"u"&&typeof t1.vscode.process<"u"?B=t1.vscode.process:typeof process<"u"&&typeof process?.versions?.node=="string"&&(B=process);var Je=typeof B?.versions?.electron=="string",Mr=Je&&B?.type==="renderer";if(typeof B=="object"){D1=B.platform==="win32",M1=B.platform==="darwin",L1=B.platform==="linux",Sr=L1&&!!B.env.SNAP&&!!B.env.SNAP_REVISION,Rr=Je,Tr=!!B.env.CI||!!B.env.BUILD_ARTIFACTSTAGINGDIRECTORY,$1=g1,F1=g1;const e=B.env.VSCODE_NLS_CONFIG;if(e)try{const t=JSON.parse(e);$1=t.userLocale,Ve=t.osLocale,F1=t.resolvedLanguage||g1,Dr=t.languagePack?.translationsConfigFile}catch{}Qe=!0}else typeof navigator=="object"&&!Mr?(e1=navigator.userAgent,D1=e1.indexOf("Windows")>=0,M1=e1.indexOf("Macintosh")>=0,Or=(e1.indexOf("Macintosh")>=0||e1.indexOf("iPad")>=0||e1.indexOf("iPhone")>=0)&&!!navigator.maxTouchPoints&&navigator.maxTouchPoints>0,L1=e1.indexOf("Linux")>=0,Ir=e1?.indexOf("Mobi")>=0,de=!0,F1=Ke()||g1,$1=navigator.language.toLowerCase(),Ve=$1):console.error("Unable to resolve platform.");var Ge;(function(e){e[e.Web=0]="Web",e[e.Mac=1]="Mac",e[e.Linux=2]="Linux",e[e.Windows=3]="Windows"})(Ge||(Ge={}));var me=0;M1?me=1:D1?me=3:L1&&(me=2);var _1=D1,$r=M1,Ze=L1,Fr=Qe,Ur=de,Wr=de&&typeof t1.importScripts=="function",jr=Wr?t1.origin:void 0,Y=e1,o1=F1,Ye;(function(e){function t(){return o1}e.value=t;function r(){return o1.length===2?o1==="en":o1.length>=3?o1[0]==="e"&&o1[1]==="n"&&o1[2]==="-":!1}e.isDefaultVariant=r;function n(){return o1==="en"}e.isDefault=n})(Ye||(Ye={}));var qr=typeof t1.postMessage=="function"&&!t1.importScripts,zr=(()=>{if(qr){const e=[];t1.addEventListener("message",r=>{if(r.data&&r.data.vscodeScheduleAsyncWork)for(let n=0,i=e.length;n<i;n++){const s=e[n];if(s.id===r.data.vscodeScheduleAsyncWork){e.splice(n,1),s.callback();return}}});let t=0;return r=>{const n=++t;e.push({id:n,callback:r}),t1.postMessage({vscodeScheduleAsyncWork:n},"*")}}return e=>setTimeout(e)})(),Xe;(function(e){e[e.Windows=1]="Windows",e[e.Macintosh=2]="Macintosh",e[e.Linux=3]="Linux"})(Xe||(Xe={}));var Br=!!(Y&&Y.indexOf("Chrome")>=0),Di=!!(Y&&Y.indexOf("Firefox")>=0),Mi=!!(!Br&&Y&&Y.indexOf("Safari")>=0),$i=!!(Y&&Y.indexOf("Edg/")>=0),Fi=!!(Y&&Y.indexOf("Android")>=0),Ui=B?.arch,Wi=B?.platform,ji=B?.versions?.node,et=Object.freeze(function(e,t){const r=setTimeout(e.bind(t),0);return{dispose(){clearTimeout(r)}}}),U1;(function(e){function t(r){return r===e.None||r===e.Cancelled||r instanceof W1?!0:!r||typeof r!="object"?!1:typeof r.isCancellationRequested=="boolean"&&typeof r.onCancellationRequested=="function"}e.isCancellationToken=t,e.None=Object.freeze({isCancellationRequested:!1,onCancellationRequested:T1.None}),e.Cancelled=Object.freeze({isCancellationRequested:!0,onCancellationRequested:et})})(U1||(U1={}));var W1=class{constructor(){this._isCancelled=!1,this._emitter=null}cancel(){this._isCancelled||(this._isCancelled=!0,this._emitter&&(this._emitter.fire(void 0),this.dispose()))}get isCancellationRequested(){return this._isCancelled}get onCancellationRequested(){return this._isCancelled?et:(this._emitter||(this._emitter=new G),this._emitter.event)}dispose(){this._emitter&&(this._emitter.dispose(),this._emitter=null)}},Hr=class{constructor(e){this._token=void 0,this._parentListener=void 0,this._parentListener=e&&e.onCancellationRequested(this.cancel,this)}get token(){return this._token||(this._token=new W1),this._token}cancel(){this._token?this._token instanceof W1&&this._token.cancel():this._token=U1.Cancelled}dispose(e=!1){e&&this.cancel(),this._parentListener?.dispose(),this._token?this._token instanceof W1&&this._token.dispose():this._token=U1.None}};function Kr(e){return e}var Qr=class{constructor(e,t){this.lastCache=void 0,this.lastArgKey=void 0,typeof e=="function"?(this._fn=e,this._computeKey=Kr):(this._fn=t,this._computeKey=e.getCacheKey)}get(e){const t=this._computeKey(e);return this.lastArgKey!==t&&(this.lastArgKey=t,this.lastCache=this._fn(e)),this.lastCache}},ve=class{constructor(e){this.executor=e,this._didRun=!1}get hasValue(){return this._didRun}get value(){if(!this._didRun)try{this._value=this.executor()}catch(e){this._error=e}finally{this._didRun=!0}if(this._error)throw this._error;return this._value}get rawValue(){return this._value}};function pe(e){return e.replace(/[\\\{\}\*\+\?\|\^\$\.\[\]\(\)]/g,"\\$&")}function Vr(e,t){if(!e||!t)return e;const r=t.length;if(r===0||e.length===0)return e;let n=0;for(;e.indexOf(t,n)===n;)n=n+r;return e.substring(n)}function Jr(e,t,r={}){if(!e)throw new Error("Cannot create regex from empty string");t||(e=pe(e)),r.wholeWord&&(/\B/.test(e.charAt(0))||(e="\\b"+e),/\B/.test(e.charAt(e.length-1))||(e=e+"\\b"));let n="";return r.global&&(n+="g"),r.matchCase||(n+="i"),r.multiline&&(n+="m"),r.unicode&&(n+="u"),new RegExp(e,n)}function Gr(e,t){return e<t?-1:e>t?1:0}function Zr(e,t,r=0,n=e.length,i=0,s=t.length){for(;r<n&&i<s;r++,i++){const u=e.charCodeAt(r),l=t.charCodeAt(i);if(u<l)return-1;if(u>l)return 1}const a=n-r,o=s-i;return a<o?-1:a>o?1:0}function ge(e,t,r=0,n=e.length,i=0,s=t.length){for(;r<n&&i<s;r++,i++){let u=e.charCodeAt(r),l=t.charCodeAt(i);if(u===l)continue;if(u>=128||l>=128)return Zr(e.toLowerCase(),t.toLowerCase(),r,n,i,s);tt(u)&&(u-=32),tt(l)&&(l-=32);const c=u-l;if(c!==0)return c}const a=n-r,o=s-i;return a<o?-1:a>o?1:0}function tt(e){return e>=97&&e<=122}function rt(e){return e>=65&&e<=90}function nt(e,t){return e.length===t.length&&ge(e,t)===0}function Yr(e,t){const r=t.length;return t.length>e.length?!1:ge(e,t,0,r)===0}function Xr(e,t){const r=e.length,n=r-t.length;return n>=0&&ge(e,t,n,r)===0}var en=/(?:\x1b\[|\x9b)[=?>!]?[\d;:]*["$#'* ]?[a-zA-Z@^`{}|~]/,tn=/(?:\x1b\]|\x9d).*?(?:\x1b\\|\x07|\x9c)/,rn=/\x1b(?:[ #%\(\)\*\+\-\.\/]?[a-zA-Z0-9\|}~@])/,qi=new RegExp("(?:"+[en.source,tn.source,rn.source].join("|")+")","g"),zi="\uFEFF",it;(function(e){e[e.Other=0]="Other",e[e.Prepend=1]="Prepend",e[e.CR=2]="CR",e[e.LF=3]="LF",e[e.Control=4]="Control",e[e.Extend=5]="Extend",e[e.Regional_Indicator=6]="Regional_Indicator",e[e.SpacingMark=7]="SpacingMark",e[e.L=8]="L",e[e.V=9]="V",e[e.T=10]="T",e[e.LV=11]="LV",e[e.LVT=12]="LVT",e[e.ZWJ=13]="ZWJ",e[e.Extended_Pictographic=14]="Extended_Pictographic"})(it||(it={}));var Bi=class x1{static{this._INSTANCE=null}static getInstance(){return x1._INSTANCE||(x1._INSTANCE=new x1),x1._INSTANCE}constructor(){this._data=nn()}getGraphemeBreakType(t){if(t<32)return t===10?3:t===13?2:4;if(t<127)return 0;const r=this._data,n=r.length/3;let i=1;for(;i<=n;)if(t<r[3*i])i=2*i;else if(t>r[3*i+1])i=2*i+1;else return r[3*i+2];return 0}};function nn(){return JSON.parse("[0,0,0,51229,51255,12,44061,44087,12,127462,127487,6,7083,7085,5,47645,47671,12,54813,54839,12,128678,128678,14,3270,3270,5,9919,9923,14,45853,45879,12,49437,49463,12,53021,53047,12,71216,71218,7,128398,128399,14,129360,129374,14,2519,2519,5,4448,4519,9,9742,9742,14,12336,12336,14,44957,44983,12,46749,46775,12,48541,48567,12,50333,50359,12,52125,52151,12,53917,53943,12,69888,69890,5,73018,73018,5,127990,127990,14,128558,128559,14,128759,128760,14,129653,129655,14,2027,2035,5,2891,2892,7,3761,3761,5,6683,6683,5,8293,8293,4,9825,9826,14,9999,9999,14,43452,43453,5,44509,44535,12,45405,45431,12,46301,46327,12,47197,47223,12,48093,48119,12,48989,49015,12,49885,49911,12,50781,50807,12,51677,51703,12,52573,52599,12,53469,53495,12,54365,54391,12,65279,65279,4,70471,70472,7,72145,72147,7,119173,119179,5,127799,127818,14,128240,128244,14,128512,128512,14,128652,128652,14,128721,128722,14,129292,129292,14,129445,129450,14,129734,129743,14,1476,1477,5,2366,2368,7,2750,2752,7,3076,3076,5,3415,3415,5,4141,4144,5,6109,6109,5,6964,6964,5,7394,7400,5,9197,9198,14,9770,9770,14,9877,9877,14,9968,9969,14,10084,10084,14,43052,43052,5,43713,43713,5,44285,44311,12,44733,44759,12,45181,45207,12,45629,45655,12,46077,46103,12,46525,46551,12,46973,46999,12,47421,47447,12,47869,47895,12,48317,48343,12,48765,48791,12,49213,49239,12,49661,49687,12,50109,50135,12,50557,50583,12,51005,51031,12,51453,51479,12,51901,51927,12,52349,52375,12,52797,52823,12,53245,53271,12,53693,53719,12,54141,54167,12,54589,54615,12,55037,55063,12,69506,69509,5,70191,70193,5,70841,70841,7,71463,71467,5,72330,72342,5,94031,94031,5,123628,123631,5,127763,127765,14,127941,127941,14,128043,128062,14,128302,128317,14,128465,128467,14,128539,128539,14,128640,128640,14,128662,128662,14,128703,128703,14,128745,128745,14,129004,129007,14,129329,129330,14,129402,129402,14,129483,129483,14,129686,129704,14,130048,131069,14,173,173,4,1757,1757,1,2200,2207,5,2434,2435,7,2631,2632,5,2817,2817,5,3008,3008,5,3201,3201,5,3387,3388,5,3542,3542,5,3902,3903,7,4190,4192,5,6002,6003,5,6439,6440,5,6765,6770,7,7019,7027,5,7154,7155,7,8205,8205,13,8505,8505,14,9654,9654,14,9757,9757,14,9792,9792,14,9852,9853,14,9890,9894,14,9937,9937,14,9981,9981,14,10035,10036,14,11035,11036,14,42654,42655,5,43346,43347,7,43587,43587,5,44006,44007,7,44173,44199,12,44397,44423,12,44621,44647,12,44845,44871,12,45069,45095,12,45293,45319,12,45517,45543,12,45741,45767,12,45965,45991,12,46189,46215,12,46413,46439,12,46637,46663,12,46861,46887,12,47085,47111,12,47309,47335,12,47533,47559,12,47757,47783,12,47981,48007,12,48205,48231,12,48429,48455,12,48653,48679,12,48877,48903,12,49101,49127,12,49325,49351,12,49549,49575,12,49773,49799,12,49997,50023,12,50221,50247,12,50445,50471,12,50669,50695,12,50893,50919,12,51117,51143,12,51341,51367,12,51565,51591,12,51789,51815,12,52013,52039,12,52237,52263,12,52461,52487,12,52685,52711,12,52909,52935,12,53133,53159,12,53357,53383,12,53581,53607,12,53805,53831,12,54029,54055,12,54253,54279,12,54477,54503,12,54701,54727,12,54925,54951,12,55149,55175,12,68101,68102,5,69762,69762,7,70067,70069,7,70371,70378,5,70720,70721,7,71087,71087,5,71341,71341,5,71995,71996,5,72249,72249,7,72850,72871,5,73109,73109,5,118576,118598,5,121505,121519,5,127245,127247,14,127568,127569,14,127777,127777,14,127872,127891,14,127956,127967,14,128015,128016,14,128110,128172,14,128259,128259,14,128367,128368,14,128424,128424,14,128488,128488,14,128530,128532,14,128550,128551,14,128566,128566,14,128647,128647,14,128656,128656,14,128667,128673,14,128691,128693,14,128715,128715,14,128728,128732,14,128752,128752,14,128765,128767,14,129096,129103,14,129311,129311,14,129344,129349,14,129394,129394,14,129413,129425,14,129466,129471,14,129511,129535,14,129664,129666,14,129719,129722,14,129760,129767,14,917536,917631,5,13,13,2,1160,1161,5,1564,1564,4,1807,1807,1,2085,2087,5,2307,2307,7,2382,2383,7,2497,2500,5,2563,2563,7,2677,2677,5,2763,2764,7,2879,2879,5,2914,2915,5,3021,3021,5,3142,3144,5,3263,3263,5,3285,3286,5,3398,3400,7,3530,3530,5,3633,3633,5,3864,3865,5,3974,3975,5,4155,4156,7,4229,4230,5,5909,5909,7,6078,6085,7,6277,6278,5,6451,6456,7,6744,6750,5,6846,6846,5,6972,6972,5,7074,7077,5,7146,7148,7,7222,7223,5,7416,7417,5,8234,8238,4,8417,8417,5,9000,9000,14,9203,9203,14,9730,9731,14,9748,9749,14,9762,9763,14,9776,9783,14,9800,9811,14,9831,9831,14,9872,9873,14,9882,9882,14,9900,9903,14,9929,9933,14,9941,9960,14,9974,9974,14,9989,9989,14,10006,10006,14,10062,10062,14,10160,10160,14,11647,11647,5,12953,12953,14,43019,43019,5,43232,43249,5,43443,43443,5,43567,43568,7,43696,43696,5,43765,43765,7,44013,44013,5,44117,44143,12,44229,44255,12,44341,44367,12,44453,44479,12,44565,44591,12,44677,44703,12,44789,44815,12,44901,44927,12,45013,45039,12,45125,45151,12,45237,45263,12,45349,45375,12,45461,45487,12,45573,45599,12,45685,45711,12,45797,45823,12,45909,45935,12,46021,46047,12,46133,46159,12,46245,46271,12,46357,46383,12,46469,46495,12,46581,46607,12,46693,46719,12,46805,46831,12,46917,46943,12,47029,47055,12,47141,47167,12,47253,47279,12,47365,47391,12,47477,47503,12,47589,47615,12,47701,47727,12,47813,47839,12,47925,47951,12,48037,48063,12,48149,48175,12,48261,48287,12,48373,48399,12,48485,48511,12,48597,48623,12,48709,48735,12,48821,48847,12,48933,48959,12,49045,49071,12,49157,49183,12,49269,49295,12,49381,49407,12,49493,49519,12,49605,49631,12,49717,49743,12,49829,49855,12,49941,49967,12,50053,50079,12,50165,50191,12,50277,50303,12,50389,50415,12,50501,50527,12,50613,50639,12,50725,50751,12,50837,50863,12,50949,50975,12,51061,51087,12,51173,51199,12,51285,51311,12,51397,51423,12,51509,51535,12,51621,51647,12,51733,51759,12,51845,51871,12,51957,51983,12,52069,52095,12,52181,52207,12,52293,52319,12,52405,52431,12,52517,52543,12,52629,52655,12,52741,52767,12,52853,52879,12,52965,52991,12,53077,53103,12,53189,53215,12,53301,53327,12,53413,53439,12,53525,53551,12,53637,53663,12,53749,53775,12,53861,53887,12,53973,53999,12,54085,54111,12,54197,54223,12,54309,54335,12,54421,54447,12,54533,54559,12,54645,54671,12,54757,54783,12,54869,54895,12,54981,55007,12,55093,55119,12,55243,55291,10,66045,66045,5,68325,68326,5,69688,69702,5,69817,69818,5,69957,69958,7,70089,70092,5,70198,70199,5,70462,70462,5,70502,70508,5,70750,70750,5,70846,70846,7,71100,71101,5,71230,71230,7,71351,71351,5,71737,71738,5,72000,72000,7,72160,72160,5,72273,72278,5,72752,72758,5,72882,72883,5,73031,73031,5,73461,73462,7,94192,94193,7,119149,119149,7,121403,121452,5,122915,122916,5,126980,126980,14,127358,127359,14,127535,127535,14,127759,127759,14,127771,127771,14,127792,127793,14,127825,127867,14,127897,127899,14,127945,127945,14,127985,127986,14,128000,128007,14,128021,128021,14,128066,128100,14,128184,128235,14,128249,128252,14,128266,128276,14,128335,128335,14,128379,128390,14,128407,128419,14,128444,128444,14,128481,128481,14,128499,128499,14,128526,128526,14,128536,128536,14,128543,128543,14,128556,128556,14,128564,128564,14,128577,128580,14,128643,128645,14,128649,128649,14,128654,128654,14,128660,128660,14,128664,128664,14,128675,128675,14,128686,128689,14,128695,128696,14,128705,128709,14,128717,128719,14,128725,128725,14,128736,128741,14,128747,128748,14,128755,128755,14,128762,128762,14,128981,128991,14,129009,129023,14,129160,129167,14,129296,129304,14,129320,129327,14,129340,129342,14,129356,129356,14,129388,129392,14,129399,129400,14,129404,129407,14,129432,129442,14,129454,129455,14,129473,129474,14,129485,129487,14,129648,129651,14,129659,129660,14,129671,129679,14,129709,129711,14,129728,129730,14,129751,129753,14,129776,129782,14,917505,917505,4,917760,917999,5,10,10,3,127,159,4,768,879,5,1471,1471,5,1536,1541,1,1648,1648,5,1767,1768,5,1840,1866,5,2070,2073,5,2137,2139,5,2274,2274,1,2363,2363,7,2377,2380,7,2402,2403,5,2494,2494,5,2507,2508,7,2558,2558,5,2622,2624,7,2641,2641,5,2691,2691,7,2759,2760,5,2786,2787,5,2876,2876,5,2881,2884,5,2901,2902,5,3006,3006,5,3014,3016,7,3072,3072,5,3134,3136,5,3157,3158,5,3260,3260,5,3266,3266,5,3274,3275,7,3328,3329,5,3391,3392,7,3405,3405,5,3457,3457,5,3536,3537,7,3551,3551,5,3636,3642,5,3764,3772,5,3895,3895,5,3967,3967,7,3993,4028,5,4146,4151,5,4182,4183,7,4226,4226,5,4253,4253,5,4957,4959,5,5940,5940,7,6070,6070,7,6087,6088,7,6158,6158,4,6432,6434,5,6448,6449,7,6679,6680,5,6742,6742,5,6754,6754,5,6783,6783,5,6912,6915,5,6966,6970,5,6978,6978,5,7042,7042,7,7080,7081,5,7143,7143,7,7150,7150,7,7212,7219,5,7380,7392,5,7412,7412,5,8203,8203,4,8232,8232,4,8265,8265,14,8400,8412,5,8421,8432,5,8617,8618,14,9167,9167,14,9200,9200,14,9410,9410,14,9723,9726,14,9733,9733,14,9745,9745,14,9752,9752,14,9760,9760,14,9766,9766,14,9774,9774,14,9786,9786,14,9794,9794,14,9823,9823,14,9828,9828,14,9833,9850,14,9855,9855,14,9875,9875,14,9880,9880,14,9885,9887,14,9896,9897,14,9906,9916,14,9926,9927,14,9935,9935,14,9939,9939,14,9962,9962,14,9972,9972,14,9978,9978,14,9986,9986,14,9997,9997,14,10002,10002,14,10017,10017,14,10055,10055,14,10071,10071,14,10133,10135,14,10548,10549,14,11093,11093,14,12330,12333,5,12441,12442,5,42608,42610,5,43010,43010,5,43045,43046,5,43188,43203,7,43302,43309,5,43392,43394,5,43446,43449,5,43493,43493,5,43571,43572,7,43597,43597,7,43703,43704,5,43756,43757,5,44003,44004,7,44009,44010,7,44033,44059,12,44089,44115,12,44145,44171,12,44201,44227,12,44257,44283,12,44313,44339,12,44369,44395,12,44425,44451,12,44481,44507,12,44537,44563,12,44593,44619,12,44649,44675,12,44705,44731,12,44761,44787,12,44817,44843,12,44873,44899,12,44929,44955,12,44985,45011,12,45041,45067,12,45097,45123,12,45153,45179,12,45209,45235,12,45265,45291,12,45321,45347,12,45377,45403,12,45433,45459,12,45489,45515,12,45545,45571,12,45601,45627,12,45657,45683,12,45713,45739,12,45769,45795,12,45825,45851,12,45881,45907,12,45937,45963,12,45993,46019,12,46049,46075,12,46105,46131,12,46161,46187,12,46217,46243,12,46273,46299,12,46329,46355,12,46385,46411,12,46441,46467,12,46497,46523,12,46553,46579,12,46609,46635,12,46665,46691,12,46721,46747,12,46777,46803,12,46833,46859,12,46889,46915,12,46945,46971,12,47001,47027,12,47057,47083,12,47113,47139,12,47169,47195,12,47225,47251,12,47281,47307,12,47337,47363,12,47393,47419,12,47449,47475,12,47505,47531,12,47561,47587,12,47617,47643,12,47673,47699,12,47729,47755,12,47785,47811,12,47841,47867,12,47897,47923,12,47953,47979,12,48009,48035,12,48065,48091,12,48121,48147,12,48177,48203,12,48233,48259,12,48289,48315,12,48345,48371,12,48401,48427,12,48457,48483,12,48513,48539,12,48569,48595,12,48625,48651,12,48681,48707,12,48737,48763,12,48793,48819,12,48849,48875,12,48905,48931,12,48961,48987,12,49017,49043,12,49073,49099,12,49129,49155,12,49185,49211,12,49241,49267,12,49297,49323,12,49353,49379,12,49409,49435,12,49465,49491,12,49521,49547,12,49577,49603,12,49633,49659,12,49689,49715,12,49745,49771,12,49801,49827,12,49857,49883,12,49913,49939,12,49969,49995,12,50025,50051,12,50081,50107,12,50137,50163,12,50193,50219,12,50249,50275,12,50305,50331,12,50361,50387,12,50417,50443,12,50473,50499,12,50529,50555,12,50585,50611,12,50641,50667,12,50697,50723,12,50753,50779,12,50809,50835,12,50865,50891,12,50921,50947,12,50977,51003,12,51033,51059,12,51089,51115,12,51145,51171,12,51201,51227,12,51257,51283,12,51313,51339,12,51369,51395,12,51425,51451,12,51481,51507,12,51537,51563,12,51593,51619,12,51649,51675,12,51705,51731,12,51761,51787,12,51817,51843,12,51873,51899,12,51929,51955,12,51985,52011,12,52041,52067,12,52097,52123,12,52153,52179,12,52209,52235,12,52265,52291,12,52321,52347,12,52377,52403,12,52433,52459,12,52489,52515,12,52545,52571,12,52601,52627,12,52657,52683,12,52713,52739,12,52769,52795,12,52825,52851,12,52881,52907,12,52937,52963,12,52993,53019,12,53049,53075,12,53105,53131,12,53161,53187,12,53217,53243,12,53273,53299,12,53329,53355,12,53385,53411,12,53441,53467,12,53497,53523,12,53553,53579,12,53609,53635,12,53665,53691,12,53721,53747,12,53777,53803,12,53833,53859,12,53889,53915,12,53945,53971,12,54001,54027,12,54057,54083,12,54113,54139,12,54169,54195,12,54225,54251,12,54281,54307,12,54337,54363,12,54393,54419,12,54449,54475,12,54505,54531,12,54561,54587,12,54617,54643,12,54673,54699,12,54729,54755,12,54785,54811,12,54841,54867,12,54897,54923,12,54953,54979,12,55009,55035,12,55065,55091,12,55121,55147,12,55177,55203,12,65024,65039,5,65520,65528,4,66422,66426,5,68152,68154,5,69291,69292,5,69633,69633,5,69747,69748,5,69811,69814,5,69826,69826,5,69932,69932,7,70016,70017,5,70079,70080,7,70095,70095,5,70196,70196,5,70367,70367,5,70402,70403,7,70464,70464,5,70487,70487,5,70709,70711,7,70725,70725,7,70833,70834,7,70843,70844,7,70849,70849,7,71090,71093,5,71103,71104,5,71227,71228,7,71339,71339,5,71344,71349,5,71458,71461,5,71727,71735,5,71985,71989,7,71998,71998,5,72002,72002,7,72154,72155,5,72193,72202,5,72251,72254,5,72281,72283,5,72344,72345,5,72766,72766,7,72874,72880,5,72885,72886,5,73023,73029,5,73104,73105,5,73111,73111,5,92912,92916,5,94095,94098,5,113824,113827,4,119142,119142,7,119155,119162,4,119362,119364,5,121476,121476,5,122888,122904,5,123184,123190,5,125252,125258,5,127183,127183,14,127340,127343,14,127377,127386,14,127491,127503,14,127548,127551,14,127744,127756,14,127761,127761,14,127769,127769,14,127773,127774,14,127780,127788,14,127796,127797,14,127820,127823,14,127869,127869,14,127894,127895,14,127902,127903,14,127943,127943,14,127947,127950,14,127972,127972,14,127988,127988,14,127992,127994,14,128009,128011,14,128019,128019,14,128023,128041,14,128064,128064,14,128102,128107,14,128174,128181,14,128238,128238,14,128246,128247,14,128254,128254,14,128264,128264,14,128278,128299,14,128329,128330,14,128348,128359,14,128371,128377,14,128392,128393,14,128401,128404,14,128421,128421,14,128433,128434,14,128450,128452,14,128476,128478,14,128483,128483,14,128495,128495,14,128506,128506,14,128519,128520,14,128528,128528,14,128534,128534,14,128538,128538,14,128540,128542,14,128544,128549,14,128552,128555,14,128557,128557,14,128560,128563,14,128565,128565,14,128567,128576,14,128581,128591,14,128641,128642,14,128646,128646,14,128648,128648,14,128650,128651,14,128653,128653,14,128655,128655,14,128657,128659,14,128661,128661,14,128663,128663,14,128665,128666,14,128674,128674,14,128676,128677,14,128679,128685,14,128690,128690,14,128694,128694,14,128697,128702,14,128704,128704,14,128710,128714,14,128716,128716,14,128720,128720,14,128723,128724,14,128726,128727,14,128733,128735,14,128742,128744,14,128746,128746,14,128749,128751,14,128753,128754,14,128756,128758,14,128761,128761,14,128763,128764,14,128884,128895,14,128992,129003,14,129008,129008,14,129036,129039,14,129114,129119,14,129198,129279,14,129293,129295,14,129305,129310,14,129312,129319,14,129328,129328,14,129331,129338,14,129343,129343,14,129351,129355,14,129357,129359,14,129375,129387,14,129393,129393,14,129395,129398,14,129401,129401,14,129403,129403,14,129408,129412,14,129426,129431,14,129443,129444,14,129451,129453,14,129456,129465,14,129472,129472,14,129475,129482,14,129484,129484,14,129488,129510,14,129536,129647,14,129652,129652,14,129656,129658,14,129661,129663,14,129667,129670,14,129680,129685,14,129705,129708,14,129712,129718,14,129723,129727,14,129731,129733,14,129744,129750,14,129754,129759,14,129768,129775,14,129783,129791,14,917504,917504,4,917506,917535,4,917632,917759,4,918000,921599,4,0,9,4,11,12,4,14,31,4,169,169,14,174,174,14,1155,1159,5,1425,1469,5,1473,1474,5,1479,1479,5,1552,1562,5,1611,1631,5,1750,1756,5,1759,1764,5,1770,1773,5,1809,1809,5,1958,1968,5,2045,2045,5,2075,2083,5,2089,2093,5,2192,2193,1,2250,2273,5,2275,2306,5,2362,2362,5,2364,2364,5,2369,2376,5,2381,2381,5,2385,2391,5,2433,2433,5,2492,2492,5,2495,2496,7,2503,2504,7,2509,2509,5,2530,2531,5,2561,2562,5,2620,2620,5,2625,2626,5,2635,2637,5,2672,2673,5,2689,2690,5,2748,2748,5,2753,2757,5,2761,2761,7,2765,2765,5,2810,2815,5,2818,2819,7,2878,2878,5,2880,2880,7,2887,2888,7,2893,2893,5,2903,2903,5,2946,2946,5,3007,3007,7,3009,3010,7,3018,3020,7,3031,3031,5,3073,3075,7,3132,3132,5,3137,3140,7,3146,3149,5,3170,3171,5,3202,3203,7,3262,3262,7,3264,3265,7,3267,3268,7,3271,3272,7,3276,3277,5,3298,3299,5,3330,3331,7,3390,3390,5,3393,3396,5,3402,3404,7,3406,3406,1,3426,3427,5,3458,3459,7,3535,3535,5,3538,3540,5,3544,3550,7,3570,3571,7,3635,3635,7,3655,3662,5,3763,3763,7,3784,3789,5,3893,3893,5,3897,3897,5,3953,3966,5,3968,3972,5,3981,3991,5,4038,4038,5,4145,4145,7,4153,4154,5,4157,4158,5,4184,4185,5,4209,4212,5,4228,4228,7,4237,4237,5,4352,4447,8,4520,4607,10,5906,5908,5,5938,5939,5,5970,5971,5,6068,6069,5,6071,6077,5,6086,6086,5,6089,6099,5,6155,6157,5,6159,6159,5,6313,6313,5,6435,6438,7,6441,6443,7,6450,6450,5,6457,6459,5,6681,6682,7,6741,6741,7,6743,6743,7,6752,6752,5,6757,6764,5,6771,6780,5,6832,6845,5,6847,6862,5,6916,6916,7,6965,6965,5,6971,6971,7,6973,6977,7,6979,6980,7,7040,7041,5,7073,7073,7,7078,7079,7,7082,7082,7,7142,7142,5,7144,7145,5,7149,7149,5,7151,7153,5,7204,7211,7,7220,7221,7,7376,7378,5,7393,7393,7,7405,7405,5,7415,7415,7,7616,7679,5,8204,8204,5,8206,8207,4,8233,8233,4,8252,8252,14,8288,8292,4,8294,8303,4,8413,8416,5,8418,8420,5,8482,8482,14,8596,8601,14,8986,8987,14,9096,9096,14,9193,9196,14,9199,9199,14,9201,9202,14,9208,9210,14,9642,9643,14,9664,9664,14,9728,9729,14,9732,9732,14,9735,9741,14,9743,9744,14,9746,9746,14,9750,9751,14,9753,9756,14,9758,9759,14,9761,9761,14,9764,9765,14,9767,9769,14,9771,9773,14,9775,9775,14,9784,9785,14,9787,9791,14,9793,9793,14,9795,9799,14,9812,9822,14,9824,9824,14,9827,9827,14,9829,9830,14,9832,9832,14,9851,9851,14,9854,9854,14,9856,9861,14,9874,9874,14,9876,9876,14,9878,9879,14,9881,9881,14,9883,9884,14,9888,9889,14,9895,9895,14,9898,9899,14,9904,9905,14,9917,9918,14,9924,9925,14,9928,9928,14,9934,9934,14,9936,9936,14,9938,9938,14,9940,9940,14,9961,9961,14,9963,9967,14,9970,9971,14,9973,9973,14,9975,9977,14,9979,9980,14,9982,9985,14,9987,9988,14,9992,9996,14,9998,9998,14,10000,10001,14,10004,10004,14,10013,10013,14,10024,10024,14,10052,10052,14,10060,10060,14,10067,10069,14,10083,10083,14,10085,10087,14,10145,10145,14,10175,10175,14,11013,11015,14,11088,11088,14,11503,11505,5,11744,11775,5,12334,12335,5,12349,12349,14,12951,12951,14,42607,42607,5,42612,42621,5,42736,42737,5,43014,43014,5,43043,43044,7,43047,43047,7,43136,43137,7,43204,43205,5,43263,43263,5,43335,43345,5,43360,43388,8,43395,43395,7,43444,43445,7,43450,43451,7,43454,43456,7,43561,43566,5,43569,43570,5,43573,43574,5,43596,43596,5,43644,43644,5,43698,43700,5,43710,43711,5,43755,43755,7,43758,43759,7,43766,43766,5,44005,44005,5,44008,44008,5,44012,44012,7,44032,44032,11,44060,44060,11,44088,44088,11,44116,44116,11,44144,44144,11,44172,44172,11,44200,44200,11,44228,44228,11,44256,44256,11,44284,44284,11,44312,44312,11,44340,44340,11,44368,44368,11,44396,44396,11,44424,44424,11,44452,44452,11,44480,44480,11,44508,44508,11,44536,44536,11,44564,44564,11,44592,44592,11,44620,44620,11,44648,44648,11,44676,44676,11,44704,44704,11,44732,44732,11,44760,44760,11,44788,44788,11,44816,44816,11,44844,44844,11,44872,44872,11,44900,44900,11,44928,44928,11,44956,44956,11,44984,44984,11,45012,45012,11,45040,45040,11,45068,45068,11,45096,45096,11,45124,45124,11,45152,45152,11,45180,45180,11,45208,45208,11,45236,45236,11,45264,45264,11,45292,45292,11,45320,45320,11,45348,45348,11,45376,45376,11,45404,45404,11,45432,45432,11,45460,45460,11,45488,45488,11,45516,45516,11,45544,45544,11,45572,45572,11,45600,45600,11,45628,45628,11,45656,45656,11,45684,45684,11,45712,45712,11,45740,45740,11,45768,45768,11,45796,45796,11,45824,45824,11,45852,45852,11,45880,45880,11,45908,45908,11,45936,45936,11,45964,45964,11,45992,45992,11,46020,46020,11,46048,46048,11,46076,46076,11,46104,46104,11,46132,46132,11,46160,46160,11,46188,46188,11,46216,46216,11,46244,46244,11,46272,46272,11,46300,46300,11,46328,46328,11,46356,46356,11,46384,46384,11,46412,46412,11,46440,46440,11,46468,46468,11,46496,46496,11,46524,46524,11,46552,46552,11,46580,46580,11,46608,46608,11,46636,46636,11,46664,46664,11,46692,46692,11,46720,46720,11,46748,46748,11,46776,46776,11,46804,46804,11,46832,46832,11,46860,46860,11,46888,46888,11,46916,46916,11,46944,46944,11,46972,46972,11,47000,47000,11,47028,47028,11,47056,47056,11,47084,47084,11,47112,47112,11,47140,47140,11,47168,47168,11,47196,47196,11,47224,47224,11,47252,47252,11,47280,47280,11,47308,47308,11,47336,47336,11,47364,47364,11,47392,47392,11,47420,47420,11,47448,47448,11,47476,47476,11,47504,47504,11,47532,47532,11,47560,47560,11,47588,47588,11,47616,47616,11,47644,47644,11,47672,47672,11,47700,47700,11,47728,47728,11,47756,47756,11,47784,47784,11,47812,47812,11,47840,47840,11,47868,47868,11,47896,47896,11,47924,47924,11,47952,47952,11,47980,47980,11,48008,48008,11,48036,48036,11,48064,48064,11,48092,48092,11,48120,48120,11,48148,48148,11,48176,48176,11,48204,48204,11,48232,48232,11,48260,48260,11,48288,48288,11,48316,48316,11,48344,48344,11,48372,48372,11,48400,48400,11,48428,48428,11,48456,48456,11,48484,48484,11,48512,48512,11,48540,48540,11,48568,48568,11,48596,48596,11,48624,48624,11,48652,48652,11,48680,48680,11,48708,48708,11,48736,48736,11,48764,48764,11,48792,48792,11,48820,48820,11,48848,48848,11,48876,48876,11,48904,48904,11,48932,48932,11,48960,48960,11,48988,48988,11,49016,49016,11,49044,49044,11,49072,49072,11,49100,49100,11,49128,49128,11,49156,49156,11,49184,49184,11,49212,49212,11,49240,49240,11,49268,49268,11,49296,49296,11,49324,49324,11,49352,49352,11,49380,49380,11,49408,49408,11,49436,49436,11,49464,49464,11,49492,49492,11,49520,49520,11,49548,49548,11,49576,49576,11,49604,49604,11,49632,49632,11,49660,49660,11,49688,49688,11,49716,49716,11,49744,49744,11,49772,49772,11,49800,49800,11,49828,49828,11,49856,49856,11,49884,49884,11,49912,49912,11,49940,49940,11,49968,49968,11,49996,49996,11,50024,50024,11,50052,50052,11,50080,50080,11,50108,50108,11,50136,50136,11,50164,50164,11,50192,50192,11,50220,50220,11,50248,50248,11,50276,50276,11,50304,50304,11,50332,50332,11,50360,50360,11,50388,50388,11,50416,50416,11,50444,50444,11,50472,50472,11,50500,50500,11,50528,50528,11,50556,50556,11,50584,50584,11,50612,50612,11,50640,50640,11,50668,50668,11,50696,50696,11,50724,50724,11,50752,50752,11,50780,50780,11,50808,50808,11,50836,50836,11,50864,50864,11,50892,50892,11,50920,50920,11,50948,50948,11,50976,50976,11,51004,51004,11,51032,51032,11,51060,51060,11,51088,51088,11,51116,51116,11,51144,51144,11,51172,51172,11,51200,51200,11,51228,51228,11,51256,51256,11,51284,51284,11,51312,51312,11,51340,51340,11,51368,51368,11,51396,51396,11,51424,51424,11,51452,51452,11,51480,51480,11,51508,51508,11,51536,51536,11,51564,51564,11,51592,51592,11,51620,51620,11,51648,51648,11,51676,51676,11,51704,51704,11,51732,51732,11,51760,51760,11,51788,51788,11,51816,51816,11,51844,51844,11,51872,51872,11,51900,51900,11,51928,51928,11,51956,51956,11,51984,51984,11,52012,52012,11,52040,52040,11,52068,52068,11,52096,52096,11,52124,52124,11,52152,52152,11,52180,52180,11,52208,52208,11,52236,52236,11,52264,52264,11,52292,52292,11,52320,52320,11,52348,52348,11,52376,52376,11,52404,52404,11,52432,52432,11,52460,52460,11,52488,52488,11,52516,52516,11,52544,52544,11,52572,52572,11,52600,52600,11,52628,52628,11,52656,52656,11,52684,52684,11,52712,52712,11,52740,52740,11,52768,52768,11,52796,52796,11,52824,52824,11,52852,52852,11,52880,52880,11,52908,52908,11,52936,52936,11,52964,52964,11,52992,52992,11,53020,53020,11,53048,53048,11,53076,53076,11,53104,53104,11,53132,53132,11,53160,53160,11,53188,53188,11,53216,53216,11,53244,53244,11,53272,53272,11,53300,53300,11,53328,53328,11,53356,53356,11,53384,53384,11,53412,53412,11,53440,53440,11,53468,53468,11,53496,53496,11,53524,53524,11,53552,53552,11,53580,53580,11,53608,53608,11,53636,53636,11,53664,53664,11,53692,53692,11,53720,53720,11,53748,53748,11,53776,53776,11,53804,53804,11,53832,53832,11,53860,53860,11,53888,53888,11,53916,53916,11,53944,53944,11,53972,53972,11,54000,54000,11,54028,54028,11,54056,54056,11,54084,54084,11,54112,54112,11,54140,54140,11,54168,54168,11,54196,54196,11,54224,54224,11,54252,54252,11,54280,54280,11,54308,54308,11,54336,54336,11,54364,54364,11,54392,54392,11,54420,54420,11,54448,54448,11,54476,54476,11,54504,54504,11,54532,54532,11,54560,54560,11,54588,54588,11,54616,54616,11,54644,54644,11,54672,54672,11,54700,54700,11,54728,54728,11,54756,54756,11,54784,54784,11,54812,54812,11,54840,54840,11,54868,54868,11,54896,54896,11,54924,54924,11,54952,54952,11,54980,54980,11,55008,55008,11,55036,55036,11,55064,55064,11,55092,55092,11,55120,55120,11,55148,55148,11,55176,55176,11,55216,55238,9,64286,64286,5,65056,65071,5,65438,65439,5,65529,65531,4,66272,66272,5,68097,68099,5,68108,68111,5,68159,68159,5,68900,68903,5,69446,69456,5,69632,69632,7,69634,69634,7,69744,69744,5,69759,69761,5,69808,69810,7,69815,69816,7,69821,69821,1,69837,69837,1,69927,69931,5,69933,69940,5,70003,70003,5,70018,70018,7,70070,70078,5,70082,70083,1,70094,70094,7,70188,70190,7,70194,70195,7,70197,70197,7,70206,70206,5,70368,70370,7,70400,70401,5,70459,70460,5,70463,70463,7,70465,70468,7,70475,70477,7,70498,70499,7,70512,70516,5,70712,70719,5,70722,70724,5,70726,70726,5,70832,70832,5,70835,70840,5,70842,70842,5,70845,70845,5,70847,70848,5,70850,70851,5,71088,71089,7,71096,71099,7,71102,71102,7,71132,71133,5,71219,71226,5,71229,71229,5,71231,71232,5,71340,71340,7,71342,71343,7,71350,71350,7,71453,71455,5,71462,71462,7,71724,71726,7,71736,71736,7,71984,71984,5,71991,71992,7,71997,71997,7,71999,71999,1,72001,72001,1,72003,72003,5,72148,72151,5,72156,72159,7,72164,72164,7,72243,72248,5,72250,72250,1,72263,72263,5,72279,72280,7,72324,72329,1,72343,72343,7,72751,72751,7,72760,72765,5,72767,72767,5,72873,72873,7,72881,72881,7,72884,72884,7,73009,73014,5,73020,73021,5,73030,73030,1,73098,73102,7,73107,73108,7,73110,73110,7,73459,73460,5,78896,78904,4,92976,92982,5,94033,94087,7,94180,94180,5,113821,113822,5,118528,118573,5,119141,119141,5,119143,119145,5,119150,119154,5,119163,119170,5,119210,119213,5,121344,121398,5,121461,121461,5,121499,121503,5,122880,122886,5,122907,122913,5,122918,122922,5,123566,123566,5,125136,125142,5,126976,126979,14,126981,127182,14,127184,127231,14,127279,127279,14,127344,127345,14,127374,127374,14,127405,127461,14,127489,127490,14,127514,127514,14,127538,127546,14,127561,127567,14,127570,127743,14,127757,127758,14,127760,127760,14,127762,127762,14,127766,127768,14,127770,127770,14,127772,127772,14,127775,127776,14,127778,127779,14,127789,127791,14,127794,127795,14,127798,127798,14,127819,127819,14,127824,127824,14,127868,127868,14,127870,127871,14,127892,127893,14,127896,127896,14,127900,127901,14,127904,127940,14,127942,127942,14,127944,127944,14,127946,127946,14,127951,127955,14,127968,127971,14,127973,127984,14,127987,127987,14,127989,127989,14,127991,127991,14,127995,127999,5,128008,128008,14,128012,128014,14,128017,128018,14,128020,128020,14,128022,128022,14,128042,128042,14,128063,128063,14,128065,128065,14,128101,128101,14,128108,128109,14,128173,128173,14,128182,128183,14,128236,128237,14,128239,128239,14,128245,128245,14,128248,128248,14,128253,128253,14,128255,128258,14,128260,128263,14,128265,128265,14,128277,128277,14,128300,128301,14,128326,128328,14,128331,128334,14,128336,128347,14,128360,128366,14,128369,128370,14,128378,128378,14,128391,128391,14,128394,128397,14,128400,128400,14,128405,128406,14,128420,128420,14,128422,128423,14,128425,128432,14,128435,128443,14,128445,128449,14,128453,128464,14,128468,128475,14,128479,128480,14,128482,128482,14,128484,128487,14,128489,128494,14,128496,128498,14,128500,128505,14,128507,128511,14,128513,128518,14,128521,128525,14,128527,128527,14,128529,128529,14,128533,128533,14,128535,128535,14,128537,128537,14]")}var st;(function(e){e[e.zwj=8205]="zwj",e[e.emojiVariantSelector=65039]="emojiVariantSelector",e[e.enclosingKeyCap=8419]="enclosingKeyCap",e[e.space=32]="space"})(st||(st={}));var Hi=class N1{static{this.ambiguousCharacterData=new ve(()=>JSON.parse('{"_common":[8232,32,8233,32,5760,32,8192,32,8193,32,8194,32,8195,32,8196,32,8197,32,8198,32,8200,32,8201,32,8202,32,8287,32,8199,32,8239,32,2042,95,65101,95,65102,95,65103,95,8208,45,8209,45,8210,45,65112,45,1748,45,8259,45,727,45,8722,45,10134,45,11450,45,1549,44,1643,44,184,44,42233,44,894,59,2307,58,2691,58,1417,58,1795,58,1796,58,5868,58,65072,58,6147,58,6153,58,8282,58,1475,58,760,58,42889,58,8758,58,720,58,42237,58,451,33,11601,33,660,63,577,63,2429,63,5038,63,42731,63,119149,46,8228,46,1793,46,1794,46,42510,46,68176,46,1632,46,1776,46,42232,46,1373,96,65287,96,8219,96,1523,96,8242,96,1370,96,8175,96,65344,96,900,96,8189,96,8125,96,8127,96,8190,96,697,96,884,96,712,96,714,96,715,96,756,96,699,96,701,96,700,96,702,96,42892,96,1497,96,2036,96,2037,96,5194,96,5836,96,94033,96,94034,96,65339,91,10088,40,10098,40,12308,40,64830,40,65341,93,10089,41,10099,41,12309,41,64831,41,10100,123,119060,123,10101,125,65342,94,8270,42,1645,42,8727,42,66335,42,5941,47,8257,47,8725,47,8260,47,9585,47,10187,47,10744,47,119354,47,12755,47,12339,47,11462,47,20031,47,12035,47,65340,92,65128,92,8726,92,10189,92,10741,92,10745,92,119311,92,119355,92,12756,92,20022,92,12034,92,42872,38,708,94,710,94,5869,43,10133,43,66203,43,8249,60,10094,60,706,60,119350,60,5176,60,5810,60,5120,61,11840,61,12448,61,42239,61,8250,62,10095,62,707,62,119351,62,5171,62,94015,62,8275,126,732,126,8128,126,8764,126,65372,124,65293,45,118002,50,120784,50,120794,50,120804,50,120814,50,120824,50,130034,50,42842,50,423,50,1000,50,42564,50,5311,50,42735,50,119302,51,118003,51,120785,51,120795,51,120805,51,120815,51,120825,51,130035,51,42923,51,540,51,439,51,42858,51,11468,51,1248,51,94011,51,71882,51,118004,52,120786,52,120796,52,120806,52,120816,52,120826,52,130036,52,5070,52,71855,52,118005,53,120787,53,120797,53,120807,53,120817,53,120827,53,130037,53,444,53,71867,53,118006,54,120788,54,120798,54,120808,54,120818,54,120828,54,130038,54,11474,54,5102,54,71893,54,119314,55,118007,55,120789,55,120799,55,120809,55,120819,55,120829,55,130039,55,66770,55,71878,55,2819,56,2538,56,2666,56,125131,56,118008,56,120790,56,120800,56,120810,56,120820,56,120830,56,130040,56,547,56,546,56,66330,56,2663,57,2920,57,2541,57,3437,57,118009,57,120791,57,120801,57,120811,57,120821,57,120831,57,130041,57,42862,57,11466,57,71884,57,71852,57,71894,57,9082,97,65345,97,119834,97,119886,97,119938,97,119990,97,120042,97,120094,97,120146,97,120198,97,120250,97,120302,97,120354,97,120406,97,120458,97,593,97,945,97,120514,97,120572,97,120630,97,120688,97,120746,97,65313,65,117974,65,119808,65,119860,65,119912,65,119964,65,120016,65,120068,65,120120,65,120172,65,120224,65,120276,65,120328,65,120380,65,120432,65,913,65,120488,65,120546,65,120604,65,120662,65,120720,65,5034,65,5573,65,42222,65,94016,65,66208,65,119835,98,119887,98,119939,98,119991,98,120043,98,120095,98,120147,98,120199,98,120251,98,120303,98,120355,98,120407,98,120459,98,388,98,5071,98,5234,98,5551,98,65314,66,8492,66,117975,66,119809,66,119861,66,119913,66,120017,66,120069,66,120121,66,120173,66,120225,66,120277,66,120329,66,120381,66,120433,66,42932,66,914,66,120489,66,120547,66,120605,66,120663,66,120721,66,5108,66,5623,66,42192,66,66178,66,66209,66,66305,66,65347,99,8573,99,119836,99,119888,99,119940,99,119992,99,120044,99,120096,99,120148,99,120200,99,120252,99,120304,99,120356,99,120408,99,120460,99,7428,99,1010,99,11429,99,43951,99,66621,99,128844,67,71913,67,71922,67,65315,67,8557,67,8450,67,8493,67,117976,67,119810,67,119862,67,119914,67,119966,67,120018,67,120174,67,120226,67,120278,67,120330,67,120382,67,120434,67,1017,67,11428,67,5087,67,42202,67,66210,67,66306,67,66581,67,66844,67,8574,100,8518,100,119837,100,119889,100,119941,100,119993,100,120045,100,120097,100,120149,100,120201,100,120253,100,120305,100,120357,100,120409,100,120461,100,1281,100,5095,100,5231,100,42194,100,8558,68,8517,68,117977,68,119811,68,119863,68,119915,68,119967,68,120019,68,120071,68,120123,68,120175,68,120227,68,120279,68,120331,68,120383,68,120435,68,5024,68,5598,68,5610,68,42195,68,8494,101,65349,101,8495,101,8519,101,119838,101,119890,101,119942,101,120046,101,120098,101,120150,101,120202,101,120254,101,120306,101,120358,101,120410,101,120462,101,43826,101,1213,101,8959,69,65317,69,8496,69,117978,69,119812,69,119864,69,119916,69,120020,69,120072,69,120124,69,120176,69,120228,69,120280,69,120332,69,120384,69,120436,69,917,69,120492,69,120550,69,120608,69,120666,69,120724,69,11577,69,5036,69,42224,69,71846,69,71854,69,66182,69,119839,102,119891,102,119943,102,119995,102,120047,102,120099,102,120151,102,120203,102,120255,102,120307,102,120359,102,120411,102,120463,102,43829,102,42905,102,383,102,7837,102,1412,102,119315,70,8497,70,117979,70,119813,70,119865,70,119917,70,120021,70,120073,70,120125,70,120177,70,120229,70,120281,70,120333,70,120385,70,120437,70,42904,70,988,70,120778,70,5556,70,42205,70,71874,70,71842,70,66183,70,66213,70,66853,70,65351,103,8458,103,119840,103,119892,103,119944,103,120048,103,120100,103,120152,103,120204,103,120256,103,120308,103,120360,103,120412,103,120464,103,609,103,7555,103,397,103,1409,103,117980,71,119814,71,119866,71,119918,71,119970,71,120022,71,120074,71,120126,71,120178,71,120230,71,120282,71,120334,71,120386,71,120438,71,1292,71,5056,71,5107,71,42198,71,65352,104,8462,104,119841,104,119945,104,119997,104,120049,104,120101,104,120153,104,120205,104,120257,104,120309,104,120361,104,120413,104,120465,104,1211,104,1392,104,5058,104,65320,72,8459,72,8460,72,8461,72,117981,72,119815,72,119867,72,119919,72,120023,72,120179,72,120231,72,120283,72,120335,72,120387,72,120439,72,919,72,120494,72,120552,72,120610,72,120668,72,120726,72,11406,72,5051,72,5500,72,42215,72,66255,72,731,105,9075,105,65353,105,8560,105,8505,105,8520,105,119842,105,119894,105,119946,105,119998,105,120050,105,120102,105,120154,105,120206,105,120258,105,120310,105,120362,105,120414,105,120466,105,120484,105,618,105,617,105,953,105,8126,105,890,105,120522,105,120580,105,120638,105,120696,105,120754,105,1110,105,42567,105,1231,105,43893,105,5029,105,71875,105,65354,106,8521,106,119843,106,119895,106,119947,106,119999,106,120051,106,120103,106,120155,106,120207,106,120259,106,120311,106,120363,106,120415,106,120467,106,1011,106,1112,106,65322,74,117983,74,119817,74,119869,74,119921,74,119973,74,120025,74,120077,74,120129,74,120181,74,120233,74,120285,74,120337,74,120389,74,120441,74,42930,74,895,74,1032,74,5035,74,5261,74,42201,74,119844,107,119896,107,119948,107,120000,107,120052,107,120104,107,120156,107,120208,107,120260,107,120312,107,120364,107,120416,107,120468,107,8490,75,65323,75,117984,75,119818,75,119870,75,119922,75,119974,75,120026,75,120078,75,120130,75,120182,75,120234,75,120286,75,120338,75,120390,75,120442,75,922,75,120497,75,120555,75,120613,75,120671,75,120729,75,11412,75,5094,75,5845,75,42199,75,66840,75,1472,108,8739,73,9213,73,65512,73,1633,108,1777,73,66336,108,125127,108,118001,108,120783,73,120793,73,120803,73,120813,73,120823,73,130033,73,65321,73,8544,73,8464,73,8465,73,117982,108,119816,73,119868,73,119920,73,120024,73,120128,73,120180,73,120232,73,120284,73,120336,73,120388,73,120440,73,65356,108,8572,73,8467,108,119845,108,119897,108,119949,108,120001,108,120053,108,120105,73,120157,73,120209,73,120261,73,120313,73,120365,73,120417,73,120469,73,448,73,120496,73,120554,73,120612,73,120670,73,120728,73,11410,73,1030,73,1216,73,1493,108,1503,108,1575,108,126464,108,126592,108,65166,108,65165,108,1994,108,11599,73,5825,73,42226,73,93992,73,66186,124,66313,124,119338,76,8556,76,8466,76,117985,76,119819,76,119871,76,119923,76,120027,76,120079,76,120131,76,120183,76,120235,76,120287,76,120339,76,120391,76,120443,76,11472,76,5086,76,5290,76,42209,76,93974,76,71843,76,71858,76,66587,76,66854,76,65325,77,8559,77,8499,77,117986,77,119820,77,119872,77,119924,77,120028,77,120080,77,120132,77,120184,77,120236,77,120288,77,120340,77,120392,77,120444,77,924,77,120499,77,120557,77,120615,77,120673,77,120731,77,1018,77,11416,77,5047,77,5616,77,5846,77,42207,77,66224,77,66321,77,119847,110,119899,110,119951,110,120003,110,120055,110,120107,110,120159,110,120211,110,120263,110,120315,110,120367,110,120419,110,120471,110,1400,110,1404,110,65326,78,8469,78,117987,78,119821,78,119873,78,119925,78,119977,78,120029,78,120081,78,120185,78,120237,78,120289,78,120341,78,120393,78,120445,78,925,78,120500,78,120558,78,120616,78,120674,78,120732,78,11418,78,42208,78,66835,78,3074,111,3202,111,3330,111,3458,111,2406,111,2662,111,2790,111,3046,111,3174,111,3302,111,3430,111,3664,111,3792,111,4160,111,1637,111,1781,111,65359,111,8500,111,119848,111,119900,111,119952,111,120056,111,120108,111,120160,111,120212,111,120264,111,120316,111,120368,111,120420,111,120472,111,7439,111,7441,111,43837,111,959,111,120528,111,120586,111,120644,111,120702,111,120760,111,963,111,120532,111,120590,111,120648,111,120706,111,120764,111,11423,111,4351,111,1413,111,1505,111,1607,111,126500,111,126564,111,126596,111,65259,111,65260,111,65258,111,65257,111,1726,111,64428,111,64429,111,64427,111,64426,111,1729,111,64424,111,64425,111,64423,111,64422,111,1749,111,3360,111,4125,111,66794,111,71880,111,71895,111,66604,111,1984,79,2534,79,2918,79,12295,79,70864,79,71904,79,118000,79,120782,79,120792,79,120802,79,120812,79,120822,79,130032,79,65327,79,117988,79,119822,79,119874,79,119926,79,119978,79,120030,79,120082,79,120134,79,120186,79,120238,79,120290,79,120342,79,120394,79,120446,79,927,79,120502,79,120560,79,120618,79,120676,79,120734,79,11422,79,1365,79,11604,79,4816,79,2848,79,66754,79,42227,79,71861,79,66194,79,66219,79,66564,79,66838,79,9076,112,65360,112,119849,112,119901,112,119953,112,120005,112,120057,112,120109,112,120161,112,120213,112,120265,112,120317,112,120369,112,120421,112,120473,112,961,112,120530,112,120544,112,120588,112,120602,112,120646,112,120660,112,120704,112,120718,112,120762,112,120776,112,11427,112,65328,80,8473,80,117989,80,119823,80,119875,80,119927,80,119979,80,120031,80,120083,80,120187,80,120239,80,120291,80,120343,80,120395,80,120447,80,929,80,120504,80,120562,80,120620,80,120678,80,120736,80,11426,80,5090,80,5229,80,42193,80,66197,80,119850,113,119902,113,119954,113,120006,113,120058,113,120110,113,120162,113,120214,113,120266,113,120318,113,120370,113,120422,113,120474,113,1307,113,1379,113,1382,113,8474,81,117990,81,119824,81,119876,81,119928,81,119980,81,120032,81,120084,81,120188,81,120240,81,120292,81,120344,81,120396,81,120448,81,11605,81,119851,114,119903,114,119955,114,120007,114,120059,114,120111,114,120163,114,120215,114,120267,114,120319,114,120371,114,120423,114,120475,114,43847,114,43848,114,7462,114,11397,114,43905,114,119318,82,8475,82,8476,82,8477,82,117991,82,119825,82,119877,82,119929,82,120033,82,120189,82,120241,82,120293,82,120345,82,120397,82,120449,82,422,82,5025,82,5074,82,66740,82,5511,82,42211,82,94005,82,65363,115,119852,115,119904,115,119956,115,120008,115,120060,115,120112,115,120164,115,120216,115,120268,115,120320,115,120372,115,120424,115,120476,115,42801,115,445,115,1109,115,43946,115,71873,115,66632,115,65331,83,117992,83,119826,83,119878,83,119930,83,119982,83,120034,83,120086,83,120138,83,120190,83,120242,83,120294,83,120346,83,120398,83,120450,83,1029,83,1359,83,5077,83,5082,83,42210,83,94010,83,66198,83,66592,83,119853,116,119905,116,119957,116,120009,116,120061,116,120113,116,120165,116,120217,116,120269,116,120321,116,120373,116,120425,116,120477,116,8868,84,10201,84,128872,84,65332,84,117993,84,119827,84,119879,84,119931,84,119983,84,120035,84,120087,84,120139,84,120191,84,120243,84,120295,84,120347,84,120399,84,120451,84,932,84,120507,84,120565,84,120623,84,120681,84,120739,84,11430,84,5026,84,42196,84,93962,84,71868,84,66199,84,66225,84,66325,84,119854,117,119906,117,119958,117,120010,117,120062,117,120114,117,120166,117,120218,117,120270,117,120322,117,120374,117,120426,117,120478,117,42911,117,7452,117,43854,117,43858,117,651,117,965,117,120534,117,120592,117,120650,117,120708,117,120766,117,1405,117,66806,117,71896,117,8746,85,8899,85,117994,85,119828,85,119880,85,119932,85,119984,85,120036,85,120088,85,120140,85,120192,85,120244,85,120296,85,120348,85,120400,85,120452,85,1357,85,4608,85,66766,85,5196,85,42228,85,94018,85,71864,85,8744,118,8897,118,65366,118,8564,118,119855,118,119907,118,119959,118,120011,118,120063,118,120115,118,120167,118,120219,118,120271,118,120323,118,120375,118,120427,118,120479,118,7456,118,957,118,120526,118,120584,118,120642,118,120700,118,120758,118,1141,118,1496,118,71430,118,43945,118,71872,118,119309,86,1639,86,1783,86,8548,86,117995,86,119829,86,119881,86,119933,86,119985,86,120037,86,120089,86,120141,86,120193,86,120245,86,120297,86,120349,86,120401,86,120453,86,1140,86,11576,86,5081,86,5167,86,42719,86,42214,86,93960,86,71840,86,66845,86,623,119,119856,119,119908,119,119960,119,120012,119,120064,119,120116,119,120168,119,120220,119,120272,119,120324,119,120376,119,120428,119,120480,119,7457,119,1121,119,1309,119,1377,119,71434,119,71438,119,71439,119,43907,119,71910,87,71919,87,117996,87,119830,87,119882,87,119934,87,119986,87,120038,87,120090,87,120142,87,120194,87,120246,87,120298,87,120350,87,120402,87,120454,87,1308,87,5043,87,5076,87,42218,87,5742,120,10539,120,10540,120,10799,120,65368,120,8569,120,119857,120,119909,120,119961,120,120013,120,120065,120,120117,120,120169,120,120221,120,120273,120,120325,120,120377,120,120429,120,120481,120,5441,120,5501,120,5741,88,9587,88,66338,88,71916,88,65336,88,8553,88,117997,88,119831,88,119883,88,119935,88,119987,88,120039,88,120091,88,120143,88,120195,88,120247,88,120299,88,120351,88,120403,88,120455,88,42931,88,935,88,120510,88,120568,88,120626,88,120684,88,120742,88,11436,88,11613,88,5815,88,42219,88,66192,88,66228,88,66327,88,66855,88,611,121,7564,121,65369,121,119858,121,119910,121,119962,121,120014,121,120066,121,120118,121,120170,121,120222,121,120274,121,120326,121,120378,121,120430,121,120482,121,655,121,7935,121,43866,121,947,121,8509,121,120516,121,120574,121,120632,121,120690,121,120748,121,1199,121,4327,121,71900,121,65337,89,117998,89,119832,89,119884,89,119936,89,119988,89,120040,89,120092,89,120144,89,120196,89,120248,89,120300,89,120352,89,120404,89,120456,89,933,89,978,89,120508,89,120566,89,120624,89,120682,89,120740,89,11432,89,1198,89,5033,89,5053,89,42220,89,94019,89,71844,89,66226,89,119859,122,119911,122,119963,122,120015,122,120067,122,120119,122,120171,122,120223,122,120275,122,120327,122,120379,122,120431,122,120483,122,7458,122,43923,122,71876,122,71909,90,66293,90,65338,90,8484,90,8488,90,117999,90,119833,90,119885,90,119937,90,119989,90,120041,90,120197,90,120249,90,120301,90,120353,90,120405,90,120457,90,918,90,120493,90,120551,90,120609,90,120667,90,120725,90,5059,90,42204,90,71849,90,65282,34,65283,35,65284,36,65285,37,65286,38,65290,42,65291,43,65294,46,65295,47,65296,48,65298,50,65299,51,65300,52,65301,53,65302,54,65303,55,65304,56,65305,57,65308,60,65309,61,65310,62,65312,64,65316,68,65318,70,65319,71,65324,76,65329,81,65330,82,65333,85,65334,86,65335,87,65343,95,65346,98,65348,100,65350,102,65355,107,65357,109,65358,110,65361,113,65362,114,65364,116,65365,117,65367,119,65370,122,65371,123,65373,125,119846,109],"_default":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8217,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"cs":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"de":[65374,126,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"es":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"fr":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"it":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ja":[8211,45,8218,44,65281,33,8216,96,8245,96,180,96,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65292,44,65297,49,65307,59],"ko":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pl":[65374,126,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pt-BR":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"qps-ploc":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ru":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,305,105,921,73,1009,112,215,120,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"tr":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"zh-hans":[160,32,65374,126,8218,44,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65297,49],"zh-hant":[8211,45,65374,126,8218,44,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89]}'))}static{this.cache=new Qr({getCacheKey:JSON.stringify},t=>{function r(c){const f=new Map;for(let h=0;h<c.length;h+=2)f.set(c[h],c[h+1]);return f}function n(c,f){const h=new Map(c);for(const[m,v]of f)h.set(m,v);return h}function i(c,f){if(!c)return f;const h=new Map;for(const[m,v]of c)f.has(m)&&h.set(m,v);return h}const s=this.ambiguousCharacterData.value;let a=t.filter(c=>!c.startsWith("_")&&c in s);a.length===0&&(a=["_default"]);let o;for(const c of a){const f=r(s[c]);o=i(o,f)}const u=r(s._common),l=n(u,o);return new N1(l)})}static getInstance(t){return N1.cache.get(Array.from(t))}static{this._locales=new ve(()=>Object.keys(N1.ambiguousCharacterData.value).filter(t=>!t.startsWith("_")))}static getLocales(){return N1._locales.value}constructor(t){this.confusableDictionary=t}isAmbiguous(t){return this.confusableDictionary.has(t)}containsAmbiguousCharacter(t){for(let r=0;r<t.length;r++){const n=t.codePointAt(r);if(typeof n=="number"&&this.isAmbiguous(n))return!0}return!1}getPrimaryConfusable(t){return this.confusableDictionary.get(t)}getConfusableCodePoints(){return new Set(this.confusableDictionary.keys())}},Ki=class P1{static getRawData(){return JSON.parse('{"_common":[11,12,13,127,847,1564,4447,4448,6068,6069,6155,6156,6157,6158,7355,7356,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8204,8205,8206,8207,8234,8235,8236,8237,8238,8239,8287,8288,8289,8290,8291,8292,8293,8294,8295,8296,8297,8298,8299,8300,8301,8302,8303,10240,12644,65024,65025,65026,65027,65028,65029,65030,65031,65032,65033,65034,65035,65036,65037,65038,65039,65279,65440,65520,65521,65522,65523,65524,65525,65526,65527,65528,65532,78844,119155,119156,119157,119158,119159,119160,119161,119162,917504,917505,917506,917507,917508,917509,917510,917511,917512,917513,917514,917515,917516,917517,917518,917519,917520,917521,917522,917523,917524,917525,917526,917527,917528,917529,917530,917531,917532,917533,917534,917535,917536,917537,917538,917539,917540,917541,917542,917543,917544,917545,917546,917547,917548,917549,917550,917551,917552,917553,917554,917555,917556,917557,917558,917559,917560,917561,917562,917563,917564,917565,917566,917567,917568,917569,917570,917571,917572,917573,917574,917575,917576,917577,917578,917579,917580,917581,917582,917583,917584,917585,917586,917587,917588,917589,917590,917591,917592,917593,917594,917595,917596,917597,917598,917599,917600,917601,917602,917603,917604,917605,917606,917607,917608,917609,917610,917611,917612,917613,917614,917615,917616,917617,917618,917619,917620,917621,917622,917623,917624,917625,917626,917627,917628,917629,917630,917631,917760,917761,917762,917763,917764,917765,917766,917767,917768,917769,917770,917771,917772,917773,917774,917775,917776,917777,917778,917779,917780,917781,917782,917783,917784,917785,917786,917787,917788,917789,917790,917791,917792,917793,917794,917795,917796,917797,917798,917799,917800,917801,917802,917803,917804,917805,917806,917807,917808,917809,917810,917811,917812,917813,917814,917815,917816,917817,917818,917819,917820,917821,917822,917823,917824,917825,917826,917827,917828,917829,917830,917831,917832,917833,917834,917835,917836,917837,917838,917839,917840,917841,917842,917843,917844,917845,917846,917847,917848,917849,917850,917851,917852,917853,917854,917855,917856,917857,917858,917859,917860,917861,917862,917863,917864,917865,917866,917867,917868,917869,917870,917871,917872,917873,917874,917875,917876,917877,917878,917879,917880,917881,917882,917883,917884,917885,917886,917887,917888,917889,917890,917891,917892,917893,917894,917895,917896,917897,917898,917899,917900,917901,917902,917903,917904,917905,917906,917907,917908,917909,917910,917911,917912,917913,917914,917915,917916,917917,917918,917919,917920,917921,917922,917923,917924,917925,917926,917927,917928,917929,917930,917931,917932,917933,917934,917935,917936,917937,917938,917939,917940,917941,917942,917943,917944,917945,917946,917947,917948,917949,917950,917951,917952,917953,917954,917955,917956,917957,917958,917959,917960,917961,917962,917963,917964,917965,917966,917967,917968,917969,917970,917971,917972,917973,917974,917975,917976,917977,917978,917979,917980,917981,917982,917983,917984,917985,917986,917987,917988,917989,917990,917991,917992,917993,917994,917995,917996,917997,917998,917999],"cs":[173,8203,12288],"de":[173,8203,12288],"es":[8203,12288],"fr":[173,8203,12288],"it":[160,173,12288],"ja":[173],"ko":[173,12288],"pl":[173,8203,12288],"pt-BR":[173,8203,12288],"qps-ploc":[160,173,8203,12288],"ru":[173,12288],"tr":[160,173,8203,12288],"zh-hans":[160,173,8203,12288],"zh-hant":[173,12288]}')}static{this._data=void 0}static getData(){return this._data||(this._data=new Set([...Object.values(P1.getRawData())].flat())),this._data}static isInvisibleCharacter(t){return P1.getData().has(t)}static containsInvisibleCharacter(t){for(let r=0;r<t.length;r++){const n=t.codePointAt(r);if(typeof n=="number"&&(P1.isInvisibleCharacter(n)||n===32))return!0}return!1}static get codePoints(){return P1.getData()}},_e="default",sn="$initialize",ot;(function(e){e[e.Request=0]="Request",e[e.Reply=1]="Reply",e[e.SubscribeEvent=2]="SubscribeEvent",e[e.Event=3]="Event",e[e.UnsubscribeEvent=4]="UnsubscribeEvent"})(ot||(ot={}));var on=class{constructor(e,t,r,n,i){this.vsWorker=e,this.req=t,this.channel=r,this.method=n,this.args=i,this.type=0}},at=class{constructor(e,t,r,n){this.vsWorker=e,this.seq=t,this.res=r,this.err=n,this.type=1}},an=class{constructor(e,t,r,n,i){this.vsWorker=e,this.req=t,this.channel=r,this.eventName=n,this.arg=i,this.type=2}},ln=class{constructor(e,t,r){this.vsWorker=e,this.req=t,this.event=r,this.type=3}},un=class{constructor(e,t){this.vsWorker=e,this.req=t,this.type=4}},cn=class{constructor(e){this._workerId=-1,this._handler=e,this._lastSentReq=0,this._pendingReplies=Object.create(null),this._pendingEmitters=new Map,this._pendingEvents=new Map}setWorkerId(e){this._workerId=e}sendMessage(e,t,r){const n=String(++this._lastSentReq);return new Promise((i,s)=>{this._pendingReplies[n]={resolve:i,reject:s},this._send(new on(this._workerId,n,e,t,r))})}listen(e,t,r){let n=null;const i=new G({onWillAddFirstListener:()=>{n=String(++this._lastSentReq),this._pendingEmitters.set(n,i),this._send(new an(this._workerId,n,e,t,r))},onDidRemoveLastListener:()=>{this._pendingEmitters.delete(n),this._send(new un(this._workerId,n)),n=null}});return i.event}handleMessage(e){!e||!e.vsWorker||this._workerId!==-1&&e.vsWorker!==this._workerId||this._handleMessage(e)}createProxyToRemoteChannel(e,t){const r={get:(n,i)=>(typeof i=="string"&&!n[i]&&(ut(i)?n[i]=s=>this.listen(e,i,s):lt(i)?n[i]=this.listen(e,i,void 0):i.charCodeAt(0)===36&&(n[i]=async(...s)=>(await t?.(),this.sendMessage(e,i,s)))),n[i])};return new Proxy(Object.create(null),r)}_handleMessage(e){switch(e.type){case 1:return this._handleReplyMessage(e);case 0:return this._handleRequestMessage(e);case 2:return this._handleSubscribeEventMessage(e);case 3:return this._handleEventMessage(e);case 4:return this._handleUnsubscribeEventMessage(e)}}_handleReplyMessage(e){if(!this._pendingReplies[e.seq]){console.warn("Got reply to unknown seq");return}const t=this._pendingReplies[e.seq];if(delete this._pendingReplies[e.seq],e.err){let r=e.err;e.err.$isError&&(r=new Error,r.name=e.err.name,r.message=e.err.message,r.stack=e.err.stack),t.reject(r);return}t.resolve(e.res)}_handleRequestMessage(e){const t=e.req;this._handler.handleMessage(e.channel,e.method,e.args).then(n=>{this._send(new at(this._workerId,t,n,void 0))},n=>{n.detail instanceof Error&&(n.detail=ne(n.detail)),this._send(new at(this._workerId,t,void 0,ne(n)))})}_handleSubscribeEventMessage(e){const t=e.req,r=this._handler.handleEvent(e.channel,e.eventName,e.arg)(n=>{this._send(new ln(this._workerId,t,n))});this._pendingEvents.set(t,r)}_handleEventMessage(e){if(!this._pendingEmitters.has(e.req)){console.warn("Got event for unknown req");return}this._pendingEmitters.get(e.req).fire(e.event)}_handleUnsubscribeEventMessage(e){if(!this._pendingEvents.has(e.req)){console.warn("Got unsubscribe for unknown req");return}this._pendingEvents.get(e.req).dispose(),this._pendingEvents.delete(e.req)}_send(e){const t=[];if(e.type===0)for(let r=0;r<e.args.length;r++)e.args[r]instanceof ArrayBuffer&&t.push(e.args[r]);else e.type===1&&e.res instanceof ArrayBuffer&&t.push(e.res);this._handler.sendMessage(e,t)}};function lt(e){return e[0]==="o"&&e[1]==="n"&&rt(e.charCodeAt(2))}function ut(e){return/^onDynamic/.test(e)&&rt(e.charCodeAt(9))}var fn=class{constructor(e,t){this._localChannels=new Map,this._remoteChannels=new Map,this._protocol=new cn({sendMessage:(r,n)=>{e(r,n)},handleMessage:(r,n,i)=>this._handleMessage(r,n,i),handleEvent:(r,n,i)=>this._handleEvent(r,n,i)}),this.requestHandler=t(this)}onmessage(e){this._protocol.handleMessage(e)}_handleMessage(e,t,r){if(e===_e&&t===sn)return this.initialize(r[0]);const n=e===_e?this.requestHandler:this._localChannels.get(e);if(!n)return Promise.reject(new Error(`Missing channel ${e} on worker thread`));if(typeof n[t]!="function")return Promise.reject(new Error(`Missing method ${t} on worker thread channel ${e}`));try{return Promise.resolve(n[t].apply(n,r))}catch(i){return Promise.reject(i)}}_handleEvent(e,t,r){const n=e===_e?this.requestHandler:this._localChannels.get(e);if(!n)throw new Error(`Missing channel ${e} on worker thread`);if(ut(t)){const i=n[t].call(n,r);if(typeof i!="function")throw new Error(`Missing dynamic event ${t} on request handler.`);return i}if(lt(t)){const i=n[t];if(typeof i!="function")throw new Error(`Missing event ${t} on request handler.`);return i}throw new Error(`Malformed event name ${t}`)}setChannel(e,t){this._localChannels.set(e,t)}getChannel(e){if(!this._remoteChannels.has(e)){const t=this._protocol.createProxyToRemoteChannel(e);this._remoteChannels.set(e,t)}return this._remoteChannels.get(e)}async initialize(e){this._protocol.setWorkerId(e)}},be=!1;function hn(e){if(be)throw new Error("WebWorker already initialized!");be=!0;const t=new fn(r=>globalThis.postMessage(r),r=>e(r));return globalThis.onmessage=r=>{t.onmessage(r.data)},t}function dn(e){globalThis.onmessage=t=>{be||hn(e)}}var h1,we=globalThis.vscode;if(typeof we<"u"&&typeof we.process<"u"){const e=we.process;h1={get platform(){return e.platform},get arch(){return e.arch},get env(){return e.env},cwd(){return e.cwd()}}}else typeof process<"u"&&typeof process?.versions?.node=="string"?h1={get platform(){return process.platform},get arch(){return process.arch},get env(){return process.env},cwd(){return process.env.VSCODE_CWD||process.cwd()}}:h1={get platform(){return _1?"win32":$r?"darwin":"linux"},get arch(){},get env(){return{}},cwd(){return"/"}};var j1=h1.cwd,mn=h1.env,vn=h1.platform,Qi=h1.arch,pn=65,gn=97,_n=90,bn=122,d1=46,U=47,K=92,r1=58,wn=63,ct=class extends Error{constructor(e,t,r){let n;typeof t=="string"&&t.indexOf("not ")===0?(n="must not be",t=t.replace(/^not /,"")):n="must be";const i=e.indexOf(".")!==-1?"property":"argument";let s=`The "${e}" ${i} ${n} of type ${t}`;s+=`. Received type ${typeof r}`,super(s),this.code="ERR_INVALID_ARG_TYPE"}};function yn(e,t){if(e===null||typeof e!="object")throw new ct(t,"Object",e)}function M(e,t){if(typeof e!="string")throw new ct(t,"string",e)}var Q=vn==="win32";function N(e){return e===U||e===K}function ye(e){return e===U}function n1(e){return e>=pn&&e<=_n||e>=gn&&e<=bn}function q1(e,t,r,n){let i="",s=0,a=-1,o=0,u=0;for(let l=0;l<=e.length;++l){if(l<e.length)u=e.charCodeAt(l);else{if(n(u))break;u=U}if(n(u)){if(!(a===l-1||o===1))if(o===2){if(i.length<2||s!==2||i.charCodeAt(i.length-1)!==d1||i.charCodeAt(i.length-2)!==d1){if(i.length>2){const c=i.lastIndexOf(r);c===-1?(i="",s=0):(i=i.slice(0,c),s=i.length-1-i.lastIndexOf(r)),a=l,o=0;continue}else if(i.length!==0){i="",s=0,a=l,o=0;continue}}t&&(i+=i.length>0?`${r}..`:"..",s=2)}else i.length>0?i+=`${r}${e.slice(a+1,l)}`:i=e.slice(a+1,l),s=l-a-1;a=l,o=0}else u===d1&&o!==-1?++o:o=-1}return i}function Cn(e){return e?`${e[0]==="."?"":"."}${e}`:""}function ft(e,t){yn(t,"pathObject");const r=t.dir||t.root,n=t.base||`${t.name||""}${Cn(t.ext)}`;return r?r===t.root?`${r}${n}`:`${r}${e}${n}`:n}var $={resolve(...e){let t="",r="",n=!1;for(let i=e.length-1;i>=-1;i--){let s;if(i>=0){if(s=e[i],M(s,`paths[${i}]`),s.length===0)continue}else t.length===0?s=j1():(s=mn[`=${t}`]||j1(),(s===void 0||s.slice(0,2).toLowerCase()!==t.toLowerCase()&&s.charCodeAt(2)===K)&&(s=`${t}\\`));const a=s.length;let o=0,u="",l=!1;const c=s.charCodeAt(0);if(a===1)N(c)&&(o=1,l=!0);else if(N(c))if(l=!0,N(s.charCodeAt(1))){let f=2,h=f;for(;f<a&&!N(s.charCodeAt(f));)f++;if(f<a&&f!==h){const m=s.slice(h,f);for(h=f;f<a&&N(s.charCodeAt(f));)f++;if(f<a&&f!==h){for(h=f;f<a&&!N(s.charCodeAt(f));)f++;(f===a||f!==h)&&(u=`\\\\${m}\\${s.slice(h,f)}`,o=f)}}}else o=1;else n1(c)&&s.charCodeAt(1)===r1&&(u=s.slice(0,2),o=2,a>2&&N(s.charCodeAt(2))&&(l=!0,o=3));if(u.length>0)if(t.length>0){if(u.toLowerCase()!==t.toLowerCase())continue}else t=u;if(n){if(t.length>0)break}else if(r=`${s.slice(o)}\\${r}`,n=l,l&&t.length>0)break}return r=q1(r,!n,"\\",N),n?`${t}\\${r}`:`${t}${r}`||"."},normalize(e){M(e,"path");const t=e.length;if(t===0)return".";let r=0,n,i=!1;const s=e.charCodeAt(0);if(t===1)return ye(s)?"\\":e;if(N(s))if(i=!0,N(e.charCodeAt(1))){let o=2,u=o;for(;o<t&&!N(e.charCodeAt(o));)o++;if(o<t&&o!==u){const l=e.slice(u,o);for(u=o;o<t&&N(e.charCodeAt(o));)o++;if(o<t&&o!==u){for(u=o;o<t&&!N(e.charCodeAt(o));)o++;if(o===t)return`\\\\${l}\\${e.slice(u)}\\`;o!==u&&(n=`\\\\${l}\\${e.slice(u,o)}`,r=o)}}}else r=1;else n1(s)&&e.charCodeAt(1)===r1&&(n=e.slice(0,2),r=2,t>2&&N(e.charCodeAt(2))&&(i=!0,r=3));let a=r<t?q1(e.slice(r),!i,"\\",N):"";if(a.length===0&&!i&&(a="."),a.length>0&&N(e.charCodeAt(t-1))&&(a+="\\"),!i&&n===void 0&&e.includes(":")){if(a.length>=2&&n1(a.charCodeAt(0))&&a.charCodeAt(1)===r1)return`.\\${a}`;let o=e.indexOf(":");do if(o===t-1||N(e.charCodeAt(o+1)))return`.\\${a}`;while((o=e.indexOf(":",o+1))!==-1)}return n===void 0?i?`\\${a}`:a:i?`${n}\\${a}`:`${n}${a}`},isAbsolute(e){M(e,"path");const t=e.length;if(t===0)return!1;const r=e.charCodeAt(0);return N(r)||t>2&&n1(r)&&e.charCodeAt(1)===r1&&N(e.charCodeAt(2))},join(...e){if(e.length===0)return".";let t,r;for(let s=0;s<e.length;++s){const a=e[s];M(a,"path"),a.length>0&&(t===void 0?t=r=a:t+=`\\${a}`)}if(t===void 0)return".";let n=!0,i=0;if(typeof r=="string"&&N(r.charCodeAt(0))){++i;const s=r.length;s>1&&N(r.charCodeAt(1))&&(++i,s>2&&(N(r.charCodeAt(2))?++i:n=!1))}if(n){for(;i<t.length&&N(t.charCodeAt(i));)i++;i>=2&&(t=`\\${t.slice(i)}`)}return $.normalize(t)},relative(e,t){if(M(e,"from"),M(t,"to"),e===t)return"";const r=$.resolve(e),n=$.resolve(t);if(r===n||(e=r.toLowerCase(),t=n.toLowerCase(),e===t))return"";if(r.length!==e.length||n.length!==t.length){const v=r.split("\\"),b=n.split("\\");v[v.length-1]===""&&v.pop(),b[b.length-1]===""&&b.pop();const L=v.length,C=b.length,k=L<C?L:C;let A;for(A=0;A<k&&v[A].toLowerCase()===b[A].toLowerCase();A++);return A===0?n:A===k?C>k?b.slice(A).join("\\"):L>k?"..\\".repeat(L-1-A)+"..":"":"..\\".repeat(L-A)+b.slice(A).join("\\")}let i=0;for(;i<e.length&&e.charCodeAt(i)===K;)i++;let s=e.length;for(;s-1>i&&e.charCodeAt(s-1)===K;)s--;const a=s-i;let o=0;for(;o<t.length&&t.charCodeAt(o)===K;)o++;let u=t.length;for(;u-1>o&&t.charCodeAt(u-1)===K;)u--;const l=u-o,c=a<l?a:l;let f=-1,h=0;for(;h<c;h++){const v=e.charCodeAt(i+h);if(v!==t.charCodeAt(o+h))break;v===K&&(f=h)}if(h!==c){if(f===-1)return n}else{if(l>c){if(t.charCodeAt(o+h)===K)return n.slice(o+h+1);if(h===2)return n.slice(o+h)}a>c&&(e.charCodeAt(i+h)===K?f=h:h===2&&(f=3)),f===-1&&(f=0)}let m="";for(h=i+f+1;h<=s;++h)(h===s||e.charCodeAt(h)===K)&&(m+=m.length===0?"..":"\\..");return o+=f,m.length>0?`${m}${n.slice(o,u)}`:(n.charCodeAt(o)===K&&++o,n.slice(o,u))},toNamespacedPath(e){if(typeof e!="string"||e.length===0)return e;const t=$.resolve(e);if(t.length<=2)return e;if(t.charCodeAt(0)===K){if(t.charCodeAt(1)===K){const r=t.charCodeAt(2);if(r!==wn&&r!==d1)return`\\\\?\\UNC\\${t.slice(2)}`}}else if(n1(t.charCodeAt(0))&&t.charCodeAt(1)===r1&&t.charCodeAt(2)===K)return`\\\\?\\${t}`;return t},dirname(e){M(e,"path");const t=e.length;if(t===0)return".";let r=-1,n=0;const i=e.charCodeAt(0);if(t===1)return N(i)?e:".";if(N(i)){if(r=n=1,N(e.charCodeAt(1))){let o=2,u=o;for(;o<t&&!N(e.charCodeAt(o));)o++;if(o<t&&o!==u){for(u=o;o<t&&N(e.charCodeAt(o));)o++;if(o<t&&o!==u){for(u=o;o<t&&!N(e.charCodeAt(o));)o++;if(o===t)return e;o!==u&&(r=n=o+1)}}}}else n1(i)&&e.charCodeAt(1)===r1&&(r=t>2&&N(e.charCodeAt(2))?3:2,n=r);let s=-1,a=!0;for(let o=t-1;o>=n;--o)if(N(e.charCodeAt(o))){if(!a){s=o;break}}else a=!1;if(s===-1){if(r===-1)return".";s=r}return e.slice(0,s)},basename(e,t){t!==void 0&&M(t,"suffix"),M(e,"path");let r=0,n=-1,i=!0,s;if(e.length>=2&&n1(e.charCodeAt(0))&&e.charCodeAt(1)===r1&&(r=2),t!==void 0&&t.length>0&&t.length<=e.length){if(t===e)return"";let a=t.length-1,o=-1;for(s=e.length-1;s>=r;--s){const u=e.charCodeAt(s);if(N(u)){if(!i){r=s+1;break}}else o===-1&&(i=!1,o=s+1),a>=0&&(u===t.charCodeAt(a)?--a===-1&&(n=s):(a=-1,n=o))}return r===n?n=o:n===-1&&(n=e.length),e.slice(r,n)}for(s=e.length-1;s>=r;--s)if(N(e.charCodeAt(s))){if(!i){r=s+1;break}}else n===-1&&(i=!1,n=s+1);return n===-1?"":e.slice(r,n)},extname(e){M(e,"path");let t=0,r=-1,n=0,i=-1,s=!0,a=0;e.length>=2&&e.charCodeAt(1)===r1&&n1(e.charCodeAt(0))&&(t=n=2);for(let o=e.length-1;o>=t;--o){const u=e.charCodeAt(o);if(N(u)){if(!s){n=o+1;break}continue}i===-1&&(s=!1,i=o+1),u===d1?r===-1?r=o:a!==1&&(a=1):r!==-1&&(a=-1)}return r===-1||i===-1||a===0||a===1&&r===i-1&&r===n+1?"":e.slice(r,i)},format:ft.bind(null,"\\"),parse(e){M(e,"path");const t={root:"",dir:"",base:"",ext:"",name:""};if(e.length===0)return t;const r=e.length;let n=0,i=e.charCodeAt(0);if(r===1)return N(i)?(t.root=t.dir=e,t):(t.base=t.name=e,t);if(N(i)){if(n=1,N(e.charCodeAt(1))){let f=2,h=f;for(;f<r&&!N(e.charCodeAt(f));)f++;if(f<r&&f!==h){for(h=f;f<r&&N(e.charCodeAt(f));)f++;if(f<r&&f!==h){for(h=f;f<r&&!N(e.charCodeAt(f));)f++;f===r?n=f:f!==h&&(n=f+1)}}}}else if(n1(i)&&e.charCodeAt(1)===r1){if(r<=2)return t.root=t.dir=e,t;if(n=2,N(e.charCodeAt(2))){if(r===3)return t.root=t.dir=e,t;n=3}}n>0&&(t.root=e.slice(0,n));let s=-1,a=n,o=-1,u=!0,l=e.length-1,c=0;for(;l>=n;--l){if(i=e.charCodeAt(l),N(i)){if(!u){a=l+1;break}continue}o===-1&&(u=!1,o=l+1),i===d1?s===-1?s=l:c!==1&&(c=1):s!==-1&&(c=-1)}return o!==-1&&(s===-1||c===0||c===1&&s===o-1&&s===a+1?t.base=t.name=e.slice(a,o):(t.name=e.slice(a,s),t.base=e.slice(a,o),t.ext=e.slice(s,o))),a>0&&a!==n?t.dir=e.slice(0,a-1):t.dir=t.root,t},sep:"\\",delimiter:";",win32:null,posix:null},Ln=(()=>{if(Q){const e=/\\/g;return()=>{const t=j1().replace(e,"/");return t.slice(t.indexOf("/"))}}return()=>j1()})(),R={resolve(...e){let t="",r=!1;for(let n=e.length-1;n>=0&&!r;n--){const i=e[n];M(i,`paths[${n}]`),i.length!==0&&(t=`${i}/${t}`,r=i.charCodeAt(0)===U)}if(!r){const n=Ln();t=`${n}/${t}`,r=n.charCodeAt(0)===U}return t=q1(t,!r,"/",ye),r?`/${t}`:t.length>0?t:"."},normalize(e){if(M(e,"path"),e.length===0)return".";const t=e.charCodeAt(0)===U,r=e.charCodeAt(e.length-1)===U;return e=q1(e,!t,"/",ye),e.length===0?t?"/":r?"./":".":(r&&(e+="/"),t?`/${e}`:e)},isAbsolute(e){return M(e,"path"),e.length>0&&e.charCodeAt(0)===U},join(...e){if(e.length===0)return".";const t=[];for(let r=0;r<e.length;++r){const n=e[r];M(n,"path"),n.length>0&&t.push(n)}return t.length===0?".":R.normalize(t.join("/"))},relative(e,t){if(M(e,"from"),M(t,"to"),e===t||(e=R.resolve(e),t=R.resolve(t),e===t))return"";const r=1,n=e.length,i=n-r,s=1,a=t.length-s,o=i<a?i:a;let u=-1,l=0;for(;l<o;l++){const f=e.charCodeAt(r+l);if(f!==t.charCodeAt(s+l))break;f===U&&(u=l)}if(l===o)if(a>o){if(t.charCodeAt(s+l)===U)return t.slice(s+l+1);if(l===0)return t.slice(s+l)}else i>o&&(e.charCodeAt(r+l)===U?u=l:l===0&&(u=0));let c="";for(l=r+u+1;l<=n;++l)(l===n||e.charCodeAt(l)===U)&&(c+=c.length===0?"..":"/..");return`${c}${t.slice(s+u)}`},toNamespacedPath(e){return e},dirname(e){if(M(e,"path"),e.length===0)return".";const t=e.charCodeAt(0)===U;let r=-1,n=!0;for(let i=e.length-1;i>=1;--i)if(e.charCodeAt(i)===U){if(!n){r=i;break}}else n=!1;return r===-1?t?"/":".":t&&r===1?"//":e.slice(0,r)},basename(e,t){t!==void 0&&M(t,"suffix"),M(e,"path");let r=0,n=-1,i=!0,s;if(t!==void 0&&t.length>0&&t.length<=e.length){if(t===e)return"";let a=t.length-1,o=-1;for(s=e.length-1;s>=0;--s){const u=e.charCodeAt(s);if(u===U){if(!i){r=s+1;break}}else o===-1&&(i=!1,o=s+1),a>=0&&(u===t.charCodeAt(a)?--a===-1&&(n=s):(a=-1,n=o))}return r===n?n=o:n===-1&&(n=e.length),e.slice(r,n)}for(s=e.length-1;s>=0;--s)if(e.charCodeAt(s)===U){if(!i){r=s+1;break}}else n===-1&&(i=!1,n=s+1);return n===-1?"":e.slice(r,n)},extname(e){M(e,"path");let t=-1,r=0,n=-1,i=!0,s=0;for(let a=e.length-1;a>=0;--a){const o=e[a];if(o==="/"){if(!i){r=a+1;break}continue}n===-1&&(i=!1,n=a+1),o==="."?t===-1?t=a:s!==1&&(s=1):t!==-1&&(s=-1)}return t===-1||n===-1||s===0||s===1&&t===n-1&&t===r+1?"":e.slice(t,n)},format:ft.bind(null,"/"),parse(e){M(e,"path");const t={root:"",dir:"",base:"",ext:"",name:""};if(e.length===0)return t;const r=e.charCodeAt(0)===U;let n;r?(t.root="/",n=1):n=0;let i=-1,s=0,a=-1,o=!0,u=e.length-1,l=0;for(;u>=n;--u){const c=e.charCodeAt(u);if(c===U){if(!o){s=u+1;break}continue}a===-1&&(o=!1,a=u+1),c===d1?i===-1?i=u:l!==1&&(l=1):i!==-1&&(l=-1)}if(a!==-1){const c=s===0&&r?1:s;i===-1||l===0||l===1&&i===a-1&&i===s+1?t.base=t.name=e.slice(c,a):(t.name=e.slice(c,i),t.base=e.slice(c,a),t.ext=e.slice(i,a))}return s>0?t.dir=e.slice(0,s-1):r&&(t.dir="/"),t},sep:"/",delimiter:":",win32:null,posix:null};R.win32=$.win32=$,R.posix=$.posix=R;var En=Q?$.normalize:R.normalize,Vi=Q?$.isAbsolute:R.isAbsolute,An=Q?$.join:R.join,xn=Q?$.resolve:R.resolve,ht=Q?$.relative:R.relative,Nn=Q?$.dirname:R.dirname,Pn=Q?$.basename:R.basename,kn=Q?$.extname:R.extname,Ji=Q?$.format:R.format,Gi=Q?$.parse:R.parse,Zi=Q?$.toNamespacedPath:R.toNamespacedPath,a1=Q?$.sep:R.sep,Yi=Q?$.delimiter:R.delimiter;function l1(e){return e===47||e===92}function dt(e){return e.replace(/[\\/]/g,R.sep)}function Sn(e){return e.indexOf("/")===-1&&(e=dt(e)),/^[a-zA-Z]:(\/|$)/.test(e)&&(e="/"+e),e}function mt(e,t=R.sep){if(!e)return"";const r=e.length,n=e.charCodeAt(0);if(l1(n)){if(l1(e.charCodeAt(1))&&!l1(e.charCodeAt(2))){let s=3;const a=s;for(;s<r&&!l1(e.charCodeAt(s));s++);if(a!==s&&!l1(e.charCodeAt(s+1))){for(s+=1;s<r;s++)if(l1(e.charCodeAt(s)))return e.slice(0,s+1).replace(/[\\/]/g,t)}}return t}else if(Rn(n)&&e.charCodeAt(1)===58)return l1(e.charCodeAt(2))?e.slice(0,2)+t:e.slice(0,2);let i=e.indexOf("://");if(i!==-1){for(i+=3;i<r;i++)if(l1(e.charCodeAt(i)))return e.slice(0,i+1)}return""}function Ce(e,t,r,n=a1){if(e===t)return!0;if(!e||!t||t.length>e.length)return!1;if(r){if(!Yr(e,t))return!1;if(t.length===e.length)return!0;let s=t.length;return t.charAt(t.length-1)===n&&s--,e.charAt(s)===n}return t.charAt(t.length-1)!==n&&(t+=n),e.indexOf(t)===0}function Rn(e){return e>=65&&e<=90||e>=97&&e<=122}var z1=typeof Buffer<"u",On=new ve(()=>new Uint8Array(256)),Le,Ee,Tn=1/0,vt,In=class J{static alloc(t){return z1?new J(Buffer.allocUnsafe(t)):new J(new Uint8Array(t))}static wrap(t){return z1&&!Buffer.isBuffer(t)&&(t=Buffer.from(t.buffer,t.byteOffset,t.byteLength)),new J(t)}static fromString(t,r){return!(r?.dontUseNodeBuffer||!1)&&z1?new J(Buffer.from(t)):(Le||(Le=new TextEncoder),new J(Le.encode(t)))}static fromByteArray(t){const r=J.alloc(t.length);for(let n=0,i=t.length;n<i;n++)r.buffer[n]=t[n];return r}static concat(t,r){if(typeof r>"u"){r=0;for(let s=0,a=t.length;s<a;s++)r+=t[s].byteLength}const n=J.alloc(r);let i=0;for(let s=0,a=t.length;s<a;s++){const o=t[s];n.set(o,i),i+=o.byteLength}return n}constructor(t){this.buffer=t,this.byteLength=this.buffer.byteLength}clone(){const t=J.alloc(this.byteLength);return t.set(this),t}toString(){if(z1)return this.buffer.toString();if(vt&&this.buffer.byteLength>Tn)try{vt(this.buffer.byteLength)}catch{}return Ee||(Ee=new TextDecoder),Ee.decode(this.buffer)}slice(t,r){return new J(this.buffer.subarray(t,r))}set(t,r){if(t instanceof J)this.buffer.set(t.buffer,r);else if(t instanceof Uint8Array)this.buffer.set(t,r);else if(t instanceof ArrayBuffer)this.buffer.set(new Uint8Array(t),r);else if(ArrayBuffer.isView(t))this.buffer.set(new Uint8Array(t.buffer,t.byteOffset,t.byteLength),r);else throw new Error("Unknown argument 'array'")}readUInt32BE(t){return Mn(this.buffer,t)}writeUInt32BE(t,r){$n(this.buffer,t,r)}readUInt32LE(t){return Fn(this.buffer,t)}writeUInt32LE(t,r){Un(this.buffer,t,r)}readUInt8(t){return Wn(this.buffer,t)}writeUInt8(t,r){jn(this.buffer,t,r)}indexOf(t,r=0){return Dn(this.buffer,t instanceof J?t.buffer:t,r)}equals(t){return this===t?!0:this.byteLength!==t.byteLength?!1:this.buffer.every((r,n)=>r===t.buffer[n])}};function Dn(e,t,r=0){const n=t.byteLength,i=e.byteLength;if(n===0)return 0;if(n===1)return e.indexOf(t[0]);if(n>i-r)return-1;const s=On.value;s.fill(t.length);for(let l=0;l<t.length;l++)s[t[l]]=t.length-l-1;let a=r+t.length-1,o=a,u=-1;for(;a<i;)if(e[a]===t[o]){if(o===0){u=a;break}a--,o--}else a+=Math.max(t.length-o,s[e[a]]),o=t.length-1;return u}function Mn(e,t){return e[t]*2**24+e[t+1]*2**16+e[t+2]*2**8+e[t+3]}function $n(e,t,r){e[r+3]=t,t=t>>>8,e[r+2]=t,t=t>>>8,e[r+1]=t,t=t>>>8,e[r]=t}function Fn(e,t){return e[t+0]<<0>>>0|e[t+1]<<8>>>0|e[t+2]<<16>>>0|e[t+3]<<24>>>0}function Un(e,t,r){e[r+0]=t&255,t=t>>>8,e[r+1]=t&255,t=t>>>8,e[r+2]=t&255,t=t>>>8,e[r+3]=t&255}function Wn(e,t){return e[t]}function jn(e,t,r){e[r]=t}var qn=/^\w[\w\d+.-]*$/,zn=/^\//,Bn=/^\/\//;function Hn(e,t){if(!e.scheme&&t)throw new Error(`[UriError]: Scheme is missing: {scheme: "", authority: "${e.authority}", path: "${e.path}", query: "${e.query}", fragment: "${e.fragment}"}`);if(e.scheme&&!qn.test(e.scheme))throw new Error("[UriError]: Scheme contains illegal characters.");if(e.path){if(e.authority){if(!zn.test(e.path))throw new Error('[UriError]: If a URI contains an authority component, then the path component must either be empty or begin with a slash ("/") character')}else if(Bn.test(e.path))throw new Error('[UriError]: If a URI does not contain an authority component, then the path cannot begin with two slash characters ("//")')}}function Kn(e,t){return!e&&!t?"file":e}function Qn(e,t){switch(e){case"https":case"http":case"file":t?t[0]!==Z&&(t=Z+t):t=Z;break}return t}var I="",Z="/",Vn=/^(([^:/?#]+?):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/,q=class ee{static isUri(t){return t instanceof ee?!0:t?typeof t.authority=="string"&&typeof t.fragment=="string"&&typeof t.path=="string"&&typeof t.query=="string"&&typeof t.scheme=="string"&&typeof t.fsPath=="string"&&typeof t.with=="function"&&typeof t.toString=="function":!1}constructor(t,r,n,i,s,a=!1){typeof t=="object"?(this.scheme=t.scheme||I,this.authority=t.authority||I,this.path=t.path||I,this.query=t.query||I,this.fragment=t.fragment||I):(this.scheme=Kn(t,a),this.authority=r||I,this.path=Qn(this.scheme,n||I),this.query=i||I,this.fragment=s||I,Hn(this,a))}get fsPath(){return B1(this,!1)}with(t){if(!t)return this;let{scheme:r,authority:n,path:i,query:s,fragment:a}=t;return r===void 0?r=this.scheme:r===null&&(r=I),n===void 0?n=this.authority:n===null&&(n=I),i===void 0?i=this.path:i===null&&(i=I),s===void 0?s=this.query:s===null&&(s=I),a===void 0?a=this.fragment:a===null&&(a=I),r===this.scheme&&n===this.authority&&i===this.path&&s===this.query&&a===this.fragment?this:new b1(r,n,i,s,a)}static parse(t,r=!1){const n=Vn.exec(t);return n?new b1(n[2]||I,H1(n[4]||I),H1(n[5]||I),H1(n[7]||I),H1(n[9]||I),r):new b1(I,I,I,I,I)}static file(t){let r=I;if(_1&&(t=t.replace(/\\/g,Z)),t[0]===Z&&t[1]===Z){const n=t.indexOf(Z,2);n===-1?(r=t.substring(2),t=Z):(r=t.substring(2,n),t=t.substring(n)||Z)}return new b1("file",r,t,I,I)}static from(t,r){return new b1(t.scheme,t.authority,t.path,t.query,t.fragment,r)}static joinPath(t,...r){if(!t.path)throw new Error("[UriError]: cannot call joinPath on URI without path");let n;return _1&&t.scheme==="file"?n=ee.file($.join(B1(t,!0),...r)).path:n=R.join(t.path,...r),t.with({path:n})}toString(t=!1){return Ae(this,t)}toJSON(){return this}static revive(t){if(t){if(t instanceof ee)return t;{const r=new b1(t);return r._formatted=t.external??null,r._fsPath=t._sep===pt?t.fsPath??null:null,r}}else return t}[Symbol.for("debug.description")](){return`URI(${this.toString()})`}},pt=_1?1:void 0,b1=class extends q{constructor(){super(...arguments),this._formatted=null,this._fsPath=null}get fsPath(){return this._fsPath||(this._fsPath=B1(this,!1)),this._fsPath}toString(e=!1){return e?Ae(this,!0):(this._formatted||(this._formatted=Ae(this,!1)),this._formatted)}toJSON(){const e={$mid:1};return this._fsPath&&(e.fsPath=this._fsPath,e._sep=pt),this._formatted&&(e.external=this._formatted),this.path&&(e.path=this.path),this.scheme&&(e.scheme=this.scheme),this.authority&&(e.authority=this.authority),this.query&&(e.query=this.query),this.fragment&&(e.fragment=this.fragment),e}},gt={58:"%3A",47:"%2F",63:"%3F",35:"%23",91:"%5B",93:"%5D",64:"%40",33:"%21",36:"%24",38:"%26",39:"%27",40:"%28",41:"%29",42:"%2A",43:"%2B",44:"%2C",59:"%3B",61:"%3D",32:"%20"};function _t(e,t,r){let n,i=-1;for(let s=0;s<e.length;s++){const a=e.charCodeAt(s);if(a>=97&&a<=122||a>=65&&a<=90||a>=48&&a<=57||a===45||a===46||a===95||a===126||t&&a===47||r&&a===91||r&&a===93||r&&a===58)i!==-1&&(n+=encodeURIComponent(e.substring(i,s)),i=-1),n!==void 0&&(n+=e.charAt(s));else{n===void 0&&(n=e.substr(0,s));const o=gt[a];o!==void 0?(i!==-1&&(n+=encodeURIComponent(e.substring(i,s)),i=-1),n+=o):i===-1&&(i=s)}}return i!==-1&&(n+=encodeURIComponent(e.substring(i))),n!==void 0?n:e}function Jn(e){let t;for(let r=0;r<e.length;r++){const n=e.charCodeAt(r);n===35||n===63?(t===void 0&&(t=e.substr(0,r)),t+=gt[n]):t!==void 0&&(t+=e[r])}return t!==void 0?t:e}function B1(e,t){let r;return e.authority&&e.path.length>1&&e.scheme==="file"?r=`//${e.authority}${e.path}`:e.path.charCodeAt(0)===47&&(e.path.charCodeAt(1)>=65&&e.path.charCodeAt(1)<=90||e.path.charCodeAt(1)>=97&&e.path.charCodeAt(1)<=122)&&e.path.charCodeAt(2)===58?t?r=e.path.substr(1):r=e.path[1].toLowerCase()+e.path.substr(2):r=e.path,_1&&(r=r.replace(/\//g,"\\")),r}function Ae(e,t){const r=t?Jn:_t;let n="",{scheme:i,authority:s,path:a,query:o,fragment:u}=e;if(i&&(n+=i,n+=":"),(s||i==="file")&&(n+=Z,n+=Z),s){let l=s.indexOf("@");if(l!==-1){const c=s.substr(0,l);s=s.substr(l+1),l=c.lastIndexOf(":"),l===-1?n+=r(c,!1,!1):(n+=r(c.substr(0,l),!1,!1),n+=":",n+=r(c.substr(l+1),!1,!0)),n+="@"}s=s.toLowerCase(),l=s.lastIndexOf(":"),l===-1?n+=r(s,!1,!0):(n+=r(s.substr(0,l),!1,!0),n+=s.substr(l))}if(a){if(a.length>=3&&a.charCodeAt(0)===47&&a.charCodeAt(2)===58){const l=a.charCodeAt(1);l>=65&&l<=90&&(a=`/${String.fromCharCode(l+32)}:${a.substr(3)}`)}else if(a.length>=2&&a.charCodeAt(1)===58){const l=a.charCodeAt(0);l>=65&&l<=90&&(a=`${String.fromCharCode(l+32)}:${a.substr(2)}`)}n+=r(a,!0,!1)}return o&&(n+="?",n+=r(o,!1,!1)),u&&(n+="#",n+=t?u:_t(u,!1,!1)),n}function bt(e){try{return decodeURIComponent(e)}catch{return e.length>3?e.substr(0,3)+bt(e.substr(3)):e}}var wt=/(%[0-9A-Za-z][0-9A-Za-z])+/g;function H1(e){return e.match(wt)?e.replace(wt,t=>bt(t)):e}var W;(function(e){e.inMemory="inmemory",e.vscode="vscode",e.internal="private",e.walkThrough="walkThrough",e.walkThroughSnippet="walkThroughSnippet",e.http="http",e.https="https",e.file="file",e.git="git",e.mailto="mailto",e.untitled="untitled",e.data="data",e.command="command",e.vscodeRemote="vscode-remote",e.vscodeRemoteResource="vscode-remote-resource",e.vscodeManagedRemoteResource="vscode-managed-remote-resource",e.vscodeUserData="vscode-userdata",e.vscodeCustomEditor="vscode-custom-editor",e.vscodeNotebook="vscode-notebook",e.vscodeNotebookCell="vscode-notebook-cell",e.vscodeNotebookCellMetadata="vscode-notebook-cell-metadata",e.vscodeNotebookCellMetadataDiff="vscode-notebook-cell-metadata-diff",e.vscodeNotebookCellOutput="vscode-notebook-cell-output",e.vscodeNotebookCellOutputDiff="vscode-notebook-cell-output-diff",e.vscodeNotebookMetadata="vscode-notebook-metadata",e.vscodeInteractiveInput="vscode-interactive-input",e.vscodeSettings="vscode-settings",e.vscodeWorkspaceTrust="vscode-workspace-trust",e.vscodeTerminal="vscode-terminal",e.terminal="terminal",e.vscodeChatCodeBlock="vscode-chat-code-block",e.vscodeChatCodeCompareBlock="vscode-chat-code-compare-block",e.vscodeChatSesssion="vscode-chat-editor",e.webviewPanel="webview-panel",e.vscodeWebview="vscode-webview",e.extension="extension",e.aiChat="cursor.aichat",e.contextObject="cursor.context-object",e.composer="cursor.composer",e.aiSettings="cursor.aisettings",e.tinderDiffEditor="cursor.tinderdiffeditor",e.vscodeFileResource="vscode-file",e.tmp="tmp",e.vsls="vsls",e.vscodeSourceControl="vscode-scm",e.commentsInput="comment",e.codeSetting="code-setting",e.cursorDev="cursor-dev-utils",e.outputChannel="output",e.accessibleView="accessible-view",e.backgroundComposer="cursor.backgroundcomposer",e.personalEnvironmentJson="cursor.personalenvironmentjson",e.bugbot="cursor.bugbot",e.aiEditorBox="aiEditorBox",e.backgroundComposerPeek="background-composer-peek",e.cursorPlan="cursor-plan",e.reviewChanges="cursor.reviewchanges",e.cursorBlame="cursor.blame",e.cursorFileBlame="cursor.fileblame"})(W||(W={}));var Gn="tkn",Zn=class{constructor(){this._hosts=Object.create(null),this._ports=Object.create(null),this._connectionTokens=Object.create(null),this._preferredWebSchema="http",this._delegate=null,this._serverRootPath="/"}setPreferredWebSchema(e){this._preferredWebSchema=e}setDelegate(e){this._delegate=e}setServerRootPath(e,t){this._serverRootPath=R.join(t??"/",Xn(e))}getServerRootPath(){return this._serverRootPath}get _remoteResourcesPath(){return R.join(this._serverRootPath,W.vscodeRemoteResource)}set(e,t,r){this._hosts[e]=t,this._ports[e]=r}setConnectionToken(e,t){this._connectionTokens[e]=t}getPreferredWebSchema(){return this._preferredWebSchema}rewrite(e){if(this._delegate)try{return this._delegate(e)}catch(a){return O1(a),e}const t=e.authority;let r=this._hosts[t];r&&r.indexOf(":")!==-1&&r.indexOf("[")===-1&&(r=`[${r}]`);const n=this._ports[t],i=this._connectionTokens[t];let s=`path=${encodeURIComponent(e.path)}`;return typeof i=="string"&&(s+=`&${Gn}=${encodeURIComponent(i)}`),q.from({scheme:Ur?this._preferredWebSchema:W.vscodeRemoteResource,authority:`${r}:${n}`,path:this._remoteResourcesPath,query:s})}},Yn=new Zn;function Xn(e){return`${e.quality??"oss"}-${e.commit??"dev"}`}var ei="vscode-app",ti=class te{static{this.FALLBACK_AUTHORITY=ei}asBrowserUri(t){const r=this.toUri(t);return this.uriToBrowserUri(r)}uriToBrowserUri(t){return t.scheme===W.vscodeRemote?Yn.rewrite(t):t.scheme===W.file&&(Fr||jr===`${W.vscodeFileResource}://${te.FALLBACK_AUTHORITY}`)?t.with({scheme:W.vscodeFileResource,authority:t.authority||te.FALLBACK_AUTHORITY,query:null,fragment:null}):t}asFileUri(t){const r=this.toUri(t);return this.uriToFileUri(r)}uriToFileUri(t){return t.scheme===W.vscodeFileResource?t.with({scheme:W.file,authority:t.authority!==te.FALLBACK_AUTHORITY?t.authority:null,query:null,fragment:null}):t}toUri(t){if(q.isUri(t))return t;if(globalThis._VSCODE_FILE_ROOT){const r=globalThis._VSCODE_FILE_ROOT;if(/^\w[\w\d+.-]*:\/\//.test(r))return q.joinPath(q.parse(r,!0),t);const n=An(r,t);return q.file(n)}throw new Error("Cannot determine URI for module id!")}},Xi=new ti,es=Object.freeze({"Cache-Control":"no-cache, no-store"}),ts=Object.freeze({"Document-Policy":"include-js-call-stacks-in-crash-reports, js-profiling"}),yt;(function(e){const t=new Map([["1",{"Cross-Origin-Opener-Policy":"same-origin"}],["2",{"Cross-Origin-Embedder-Policy":"require-corp"}],["3",{"Cross-Origin-Opener-Policy":"same-origin","Cross-Origin-Embedder-Policy":"require-corp"}]]);e.CoopAndCoep=Object.freeze(t.get("3"));const r="vscode-coi";function n(s){let a;typeof s=="string"?a=new URL(s).searchParams:s instanceof URL?a=s.searchParams:q.isUri(s)&&(a=new URL(s.toString(!0)).searchParams);const o=a?.get(r);if(o)return t.get(o)}e.getHeadersFromQuery=n;function i(s,a,o){if(!globalThis.crossOriginIsolated)return;const u=a&&o?"3":o?"2":"1";s instanceof URLSearchParams?s.set(r,u):s[r]=u}e.addSearchParam=i})(yt||(yt={}));function i1(e){return B1(e,!0)}var E1=class{constructor(e){this._ignorePathCasing=e}compare(e,t,r=!1){return e===t?0:Gr(this.getComparisonKey(e,r),this.getComparisonKey(t,r))}isEqual(e,t,r=!1){return e===t?!0:!e||!t?!1:this.getComparisonKey(e,r)===this.getComparisonKey(t,r)}getComparisonKey(e,t=!1){return e.with({path:this._ignorePathCasing(e)?e.path.toLowerCase():void 0,fragment:t?null:void 0}).toString()}ignorePathCasing(e){return this._ignorePathCasing(e)}isEqualOrParent(e,t,r=!1){if(e.scheme===t.scheme){if(e.scheme===W.file)return Ce(i1(e),i1(t),this._ignorePathCasing(e))&&e.query===t.query&&(r||e.fragment===t.fragment);if(Ct(e.authority,t.authority))return Ce(e.path,t.path,this._ignorePathCasing(e),"/")&&e.query===t.query&&(r||e.fragment===t.fragment)}return!1}joinPath(e,...t){return q.joinPath(e,...t)}basenameOrAuthority(e){return ri(e)||e.authority}basename(e){return R.basename(e.path)}extname(e){return R.extname(e.path)}dirname(e){if(e.path.length===0)return e;let t;return e.scheme===W.file?t=q.file(Nn(i1(e))).path:(t=R.dirname(e.path),e.authority&&t.length&&t.charCodeAt(0)!==47&&(console.error(`dirname("${e.toString})) resulted in a relative path`),t="/")),e.with({path:t})}normalizePath(e){if(!e.path.length)return e;let t;return e.scheme===W.file?t=q.file(En(i1(e))).path:t=R.normalize(e.path),e.with({path:t})}relativePath(e,t){if(e.scheme!==t.scheme||!Ct(e.authority,t.authority))return;if(e.scheme===W.file){const i=ht(i1(e),i1(t));return _1?dt(i):i}let r=e.path||"/";const n=t.path||"/";if(this._ignorePathCasing(e)){let i=0;for(const s=Math.min(r.length,n.length);i<s&&!(r.charCodeAt(i)!==n.charCodeAt(i)&&r.charAt(i).toLowerCase()!==n.charAt(i).toLowerCase());i++);r=n.substr(0,i)+r.substr(i)}return R.relative(r,n)}resolvePath(e,t){if(e.scheme===W.file){const r=q.file(xn(i1(e),t));return e.with({authority:r.authority,path:r.path})}return t=Sn(t),e.with({path:R.resolve(e.path,t)})}isAbsolutePath(e){return!!e.path&&e.path[0]==="/"}isEqualAuthority(e,t){return e===t||e!==void 0&&t!==void 0&&nt(e,t)}hasTrailingPathSeparator(e,t=a1){if(e.scheme===W.file){const r=i1(e);return r.length>mt(r).length&&r[r.length-1]===t}else{const r=e.path;return r.length>1&&r.charCodeAt(r.length-1)===47&&!/^[a-zA-Z]:(\/$|\\$)/.test(e.fsPath)}}removeTrailingPathSeparator(e,t=a1){return Lt(e,t)?e.with({path:e.path.substr(0,e.path.length-1)}):e}addTrailingPathSeparator(e,t=a1){let r=!1;if(e.scheme===W.file){const n=i1(e);r=n!==void 0&&n.length===mt(n).length&&n[n.length-1]===t}else{t="/";const n=e.path;r=n.length===1&&n.charCodeAt(n.length-1)===47}return!r&&!Lt(e,t)?e.with({path:e.path+"/"}):e}},O=new E1(()=>!1),rs=new E1(e=>e.scheme===W.file?!Ze:!0),ns=new E1(e=>!0),is=O.isEqual.bind(O),ss=O.isEqualOrParent.bind(O),os=O.getComparisonKey.bind(O),as=O.basenameOrAuthority.bind(O),ri=O.basename.bind(O),ls=O.extname.bind(O),us=O.dirname.bind(O),cs=O.joinPath.bind(O),fs=O.normalizePath.bind(O),hs=O.relativePath.bind(O),ds=O.resolvePath.bind(O),ms=O.isAbsolutePath.bind(O),Ct=O.isEqualAuthority.bind(O),Lt=O.hasTrailingPathSeparator.bind(O),vs=O.removeTrailingPathSeparator.bind(O),ps=O.addTrailingPathSeparator.bind(O),Et;(function(e){e.META_DATA_LABEL="label",e.META_DATA_DESCRIPTION="description",e.META_DATA_SIZE="size",e.META_DATA_MIME="mime";function t(r){const n=new Map;r.path.substring(r.path.indexOf(";")+1,r.path.lastIndexOf(";")).split(";").forEach(a=>{const[o,u]=a.split(":");o&&u&&n.set(o,u)});const s=r.path.substring(0,r.path.indexOf(";"));return s&&n.set(e.META_DATA_MIME,s),n}e.parseMetaData=t})(Et||(Et={}));var gs=Symbol("MicrotaskDelay");function xe(e){return!!e&&typeof e.then=="function"}var ni,Ne;(function(){typeof globalThis.requestIdleCallback!="function"||typeof globalThis.cancelIdleCallback!="function"?Ne=(e,t,r)=>{zr(()=>{if(n)return;const i=Date.now()+15;t(Object.freeze({didTimeout:!0,timeRemaining(){return Math.max(0,i-Date.now())}}))});let n=!1;return{dispose(){n||(n=!0)}}}:Ne=(e,t,r)=>{const n=e.requestIdleCallback(t,typeof r=="number"?{timeout:r}:void 0);let i=!1;return{dispose(){i||(i=!0,e.cancelIdleCallback(n))}}},ni=(e,t)=>Ne(globalThis,e,t)})();var At;(function(e){e[e.Resolved=0]="Resolved",e[e.Rejected=1]="Rejected"})(At||(At={}));var Pe;(function(e){async function t(n){let i;const s=await Promise.all(n.map(a=>a.then(o=>o,o=>{i||(i=o)})));if(typeof i<"u")throw i;return s}e.settled=t;function r(n){return new Promise(async(i,s)=>{try{await n(i,s)}catch(a){s(a)}})}e.withAsyncBody=r})(Pe||(Pe={}));var xt;(function(e){e[e.Initial=0]="Initial",e[e.DoneOK=1]="DoneOK",e[e.DoneError=2]="DoneError"})(xt||(xt={}));var _s=class V{static fromArray(t){return new V(r=>{r.emitMany(t)})}static fromPromise(t){return new V(async r=>{r.emitMany(await t)})}static fromPromisesResolveOrder(t){return new V(async r=>{await Promise.all(t.map(async n=>r.emitOne(await n)))})}static merge(t){return new V(async r=>{await Promise.all(t.map(async n=>{for await(const i of n)r.emitOne(i)}))})}static{this.EMPTY=V.fromArray([])}constructor(t,r){this._state=0,this._results=[],this._error=null,this._onReturn=r,this._onStateChanged=new G,queueMicrotask(async()=>{const n={emitOne:i=>this.emitOne(i),emitMany:i=>this.emitMany(i),reject:i=>this.reject(i)};try{await Promise.resolve(t(n)),this.resolve()}catch(i){this.reject(i)}finally{n.emitOne=void 0,n.emitMany=void 0,n.reject=void 0}})}[Symbol.asyncIterator](){let t=0;return{next:async()=>{do{if(this._state===2)throw this._error;if(t<this._results.length)return{done:!1,value:this._results[t++]};if(this._state===1)return{done:!0,value:void 0};await T1.toPromise(this._onStateChanged.event)}while(!0)},return:async()=>(this._onReturn?.(),{done:!0,value:void 0})}}static map(t,r){return new V(async n=>{for await(const i of t)n.emitOne(r(i))})}map(t){return V.map(this,t)}static filter(t,r){return new V(async n=>{for await(const i of t)r(i)&&n.emitOne(i)})}filter(t){return V.filter(this,t)}static coalesce(t){return V.filter(t,r=>!!r)}coalesce(){return V.coalesce(this)}static async toPromise(t){const r=[];for await(const n of t)r.push(n);return r}toPromise(){return V.toPromise(this)}emitOne(t){this._state===0&&(this._results.push(t),this._onStateChanged.fire())}emitMany(t){this._state===0&&(this._results=this._results.concat(t),this._onStateChanged.fire())}resolve(){this._state===0&&(this._state=1,this._onStateChanged.fire())}reject(t){this._state===0&&(this._state=2,this._error=t,this._onStateChanged.fire())}},K1="**",Nt="/",Q1="[/\\\\]",V1="[^/\\\\]",ii=/\//g;function Pt(e,t){switch(e){case 0:return"";case 1:return`${V1}*?`;default:return`(?:${Q1}|${V1}+${Q1}${t?`|${Q1}${V1}+`:""})*?`}}function kt(e,t){if(!e)return[];const r=[];let n=!1,i=!1,s="";for(const a of e){switch(a){case t:if(!n&&!i){r.push(s),s="";continue}break;case"{":n=!0;break;case"}":n=!1;break;case"[":i=!0;break;case"]":i=!1;break}s+=a}return s&&r.push(s),r}function St(e){if(!e)return"";let t="";const r=kt(e,Nt);if(r.every(n=>n===K1))t=".*";else{let n=!1;r.forEach((i,s)=>{if(i===K1){if(n)return;t+=Pt(2,s===r.length-1)}else{let a=!1,o="",u=!1,l="";for(const c of i){if(c!=="}"&&a){o+=c;continue}if(u&&(c!=="]"||!l)){let f;c==="-"?f=c:(c==="^"||c==="!")&&!l?f="^":c===Nt?f="":f=pe(c),l+=f;continue}switch(c){case"{":a=!0;continue;case"[":u=!0;continue;case"}":{const h=`(?:${kt(o,",").map(m=>St(m)).join("|")})`;t+=h,a=!1,o="";break}case"]":{t+="["+l+"]",u=!1,l="";break}case"?":t+=V1;continue;case"*":t+=Pt(1);continue;default:t+=pe(c)}}s<r.length-1&&(r[s+1]!==K1||s+2<r.length)&&(t+=Q1)}n=i===K1})}return t}var si=/^\*\*\/\*\.[\w\.-]+$/,oi=/^\*\*\/([\w\.-]+)\/?$/,ai=/^{\*\*\/\*?[\w\.-]+\/?(,\*\*\/\*?[\w\.-]+\/?)*}$/,li=/^{\*\*\/\*?[\w\.-]+(\/(\*\*)?)?(,\*\*\/\*?[\w\.-]+(\/(\*\*)?)?)*}$/,ui=/^\*\*((\/[\w\.-]+)+)\/?$/,ci=/^([\w\.-]+(\/[\w\.-]+)*)\/?$/,Rt=new hr(1e4),Ot=function(){return!1},X=function(){return null};function ke(e,t){if(!e)return X;let r;typeof e!="string"?r=e.pattern:r=e,r=r.trim();const n=t.ignoreCase??!1,i={...t,equals:n?nt:(u,l)=>u===l,endsWith:n?Xr:(u,l)=>u.endsWith(l),isEqualOrParent:(u,l)=>Ce(u,l,t.ignoreCase??!Ze)},s=`${n?r.toLowerCase():r}_${!!t.trimForExclusions}_${n}`;let a=Rt.get(s);if(a)return Tt(a,e,i);let o;return si.test(r)?a=fi(r.substring(4),r,i):(o=oi.exec(Se(r,i)))?a=hi(o[1],r,i):(t.trimForExclusions?li:ai).test(r)?a=di(r,i):(o=ui.exec(Se(r,i)))?a=It(o[1].substring(1),r,!0,i):(o=ci.exec(Se(r,i)))?a=It(o[1],r,!1,i):a=mi(r,i),Rt.set(s,a),Tt(a,e,i)}function Tt(e,t,r){if(typeof t=="string")return e;const n=function(i,s){return r.isEqualOrParent(i,t.base)?e(Vr(i.substring(t.base.length),a1),s):null};return n.allBasenames=e.allBasenames,n.allPaths=e.allPaths,n.basenames=e.basenames,n.patterns=e.patterns,n}function Se(e,t){return t.trimForExclusions&&e.endsWith("/**")?e.substring(0,e.length-2):e}function fi(e,t,r){return function(n,i){return typeof n=="string"&&r.endsWith(n,e)?t:null}}function hi(e,t,r){const n=`/${e}`,i=`\\${e}`,s=function(o,u){return typeof o!="string"?null:u?r.equals(u,e)?t:null:r.equals(o,e)||r.endsWith(o,n)||r.endsWith(o,i)?t:null},a=[e];return s.basenames=a,s.patterns=[t],s.allBasenames=a,s}function di(e,t){const r=Dt(e.slice(1,-1).split(",").map(o=>ke(o,t)).filter(o=>o!==X),e),n=r.length;if(!n)return X;if(n===1)return r[0];const i=function(o,u){for(let l=0,c=r.length;l<c;l++)if(r[l](o,u))return e;return null},s=r.find(o=>!!o.allBasenames);s&&(i.allBasenames=s.allBasenames);const a=r.reduce((o,u)=>u.allPaths?o.concat(u.allPaths):o,[]);return a.length&&(i.allPaths=a),i}function It(e,t,r,n){const i=a1===R.sep,s=i?e:e.replace(ii,a1),a=a1+s,o=R.sep+e;let u;return r?u=function(l,c){return typeof l=="string"&&(n.equals(l,s)||n.endsWith(l,a)||!i&&(n.equals(l,e)||n.endsWith(l,o)))?t:null}:u=function(l,c){return typeof l=="string"&&(n.equals(l,s)||!i&&n.equals(l,e))?t:null},u.allPaths=[(r?"*/":"./")+e],u}function mi(e,t){try{const r=new RegExp(`^${St(e)}$`,t.ignoreCase?"i":void 0);return function(n){return r.lastIndex=0,typeof n=="string"&&r.test(n)?e:null}}catch{return X}}function J1(e,t,r){return!e||typeof t!="string"?!1:typeof r=="function"?G1(e)(t,void 0,r):G1(e,r)(t)}function G1(e,t={}){if(!e)return Ot;if(typeof e=="string"||vi(e)){const r=ke(e,t);if(r===X)return Ot;const n=function(i,s){return!!r(i,s)};return r.allBasenames&&(n.allBasenames=r.allBasenames),r.allPaths&&(n.allPaths=r.allPaths),n}return pi(e,t)}function vi(e){const t=e;return t?typeof t.base=="string"&&typeof t.pattern=="string":!1}function pi(e,t){const r=Dt(Object.getOwnPropertyNames(e).map(o=>gi(o,e[o],t)).filter(o=>o!==X)),n=r.length;if(!n)return X;if(!r.some(o=>!!o.requiresSiblings)){if(n===1)return r[0];const o=function(c,f){let h;for(let m=0,v=r.length;m<v;m++){const b=r[m](c,f);if(typeof b=="string")return b;xe(b)&&(h||(h=[]),h.push(b))}return h?(async()=>{for(const m of h){const v=await m;if(typeof v=="string")return v}return null})():null},u=r.find(c=>!!c.allBasenames);u&&(o.allBasenames=u.allBasenames);const l=r.reduce((c,f)=>f.allPaths?c.concat(f.allPaths):c,[]);return l.length&&(o.allPaths=l),o}const i=function(o,u,l){let c,f;for(let h=0,m=r.length;h<m;h++){const v=r[h];v.requiresSiblings&&l&&(u||(u=Pn(o)),c||(c=u.substr(0,u.length-kn(o).length)));const b=v(o,u,c,l);if(typeof b=="string")return b;xe(b)&&(f||(f=[]),f.push(b))}return f?(async()=>{for(const h of f){const m=await h;if(typeof m=="string")return m}return null})():null},s=r.find(o=>!!o.allBasenames);s&&(i.allBasenames=s.allBasenames);const a=r.reduce((o,u)=>u.allPaths?o.concat(u.allPaths):o,[]);return a.length&&(i.allPaths=a),i}function gi(e,t,r){if(t===!1)return X;const n=ke(e,r);if(n===X)return X;if(typeof t=="boolean")return n;if(t){const i=t.when;if(typeof i=="string"){const s=(a,o,u,l)=>{if(!l||!n(a,o))return null;const c=i.replace("$(basename)",()=>u),f=l(c);return xe(f)?f.then(h=>h?e:null):f?e:null};return s.requiresSiblings=!0,s}}return n}function Dt(e,t){const r=e.filter(o=>!!o.basenames);if(r.length<2)return e;const n=r.reduce((o,u)=>{const l=u.basenames;return l?o.concat(l):o},[]);let i;if(t){i=[];for(let o=0,u=n.length;o<u;o++)i.push(t)}else i=r.reduce((o,u)=>{const l=u.patterns;return l?o.concat(l):o},[]);const s=function(o,u){if(typeof o!="string")return null;if(!u){let c;for(c=o.length;c>0;c--){const f=o.charCodeAt(c-1);if(f===47||f===92)break}u=o.substr(c)}const l=n.indexOf(u);return l!==-1?i[l]:null};s.basenames=n,s.patterns=i,s.allBasenames=n;const a=e.filter(o=>!o.basenames);return a.push(s),a}var _i=class Ie{static{this.CHANNEL_NAME="localFileSearchWorkerHost"}static getChannel(t){return t.getChannel(Ie.CHANNEL_NAME)}static setChannel(t,r){t.setChannel(Ie.CHANNEL_NAME,r)}},Mt=class m1{constructor(t,r){this.lineNumber=t,this.column=r}with(t=this.lineNumber,r=this.column){return t===this.lineNumber&&r===this.column?this:new m1(t,r)}delta(t=0,r=0){return this.with(Math.max(1,this.lineNumber+t),Math.max(1,this.column+r))}equals(t){return m1.equals(this,t)}static equals(t,r){return!t&&!r?!0:!!t&&!!r&&t.lineNumber===r.lineNumber&&t.column===r.column}isBefore(t){return m1.isBefore(this,t)}static isBefore(t,r){return t.lineNumber<r.lineNumber?!0:r.lineNumber<t.lineNumber?!1:t.column<r.column}isBeforeOrEqual(t){return m1.isBeforeOrEqual(this,t)}static isBeforeOrEqual(t,r){return t.lineNumber<r.lineNumber?!0:r.lineNumber<t.lineNumber?!1:t.column<=r.column}static compare(t,r){const n=t.lineNumber|0,i=r.lineNumber|0;if(n===i){const s=t.column|0,a=r.column|0;return s-a}return n-i}clone(){return new m1(this.lineNumber,this.column)}toString(){return"("+this.lineNumber+","+this.column+")"}static lift(t){return new m1(t.lineNumber,t.column)}static isIPosition(t){return t&&typeof t.lineNumber=="number"&&typeof t.column=="number"}toJSON(){return{lineNumber:this.lineNumber,column:this.column}}},$t=class D{constructor(t,r,n,i){let s,a,o,u;t==null||typeof t=="number"||Number.isNaN(t)?(s=t,a=r,o=n,u=i):"startLineNumber"in t&&"startColumn"in t?(s=t.startLineNumber,a=t.startColumn,o=t.endLineNumber,u=t.endColumn):(s=t.startLineNumber,a=1,o=t.endLineNumberExclusive,u=1),s>o||s===o&&a>u?(this.startLineNumber=o,this.startColumn=u,this.endLineNumber=s,this.endColumn=a):(this.startLineNumber=s,this.startColumn=a,this.endLineNumber=o,this.endColumn=u)}asIRange(){return{startLineNumber:this.startLineNumber,startColumn:this.startColumn,endLineNumber:this.endLineNumber,endColumn:this.endColumn}}isEmpty(){return D.isEmpty(this)}static isEmpty(t){return t.startLineNumber===t.endLineNumber&&t.startColumn===t.endColumn}containsPosition(t){return D.containsPosition(this,t)}static containsPosition(t,r){return!(r.lineNumber<t.startLineNumber||r.lineNumber>t.endLineNumber||r.lineNumber===t.startLineNumber&&r.column<t.startColumn||r.lineNumber===t.endLineNumber&&r.column>t.endColumn)}static strictContainsPosition(t,r){return!(r.lineNumber<t.startLineNumber||r.lineNumber>t.endLineNumber||r.lineNumber===t.startLineNumber&&r.column<=t.startColumn||r.lineNumber===t.endLineNumber&&r.column>=t.endColumn)}containsRange(t){return D.containsRange(this,t)}static containsRange(t,r){return!(r.startLineNumber<t.startLineNumber||r.endLineNumber<t.startLineNumber||r.startLineNumber>t.endLineNumber||r.endLineNumber>t.endLineNumber||r.startLineNumber===t.startLineNumber&&r.startColumn<t.startColumn||r.endLineNumber===t.endLineNumber&&r.endColumn>t.endColumn)}strictContainsRange(t){return D.strictContainsRange(this,t)}static strictContainsRange(t,r){return!(r.startLineNumber<t.startLineNumber||r.endLineNumber<t.startLineNumber||r.startLineNumber>t.endLineNumber||r.endLineNumber>t.endLineNumber||r.startLineNumber===t.startLineNumber&&r.startColumn<=t.startColumn||r.endLineNumber===t.endLineNumber&&r.endColumn>=t.endColumn)}plusRange(t){return D.plusRange(this,t)}static getRangeAbove(t,r){const n=Math.max(t.startLineNumber-r,1),i=t.startLineNumber;return new D(n,t.startColumn,i,t.startColumn)}static getRangeOnBelow(t,r,n){const i=t.endLineNumber,s=Math.min(t.endLineNumber+r,n);return new D(i,t.endColumn,s,t.endColumn)}static getExtendedRange(t,r,n){const i=Math.max(t.startLineNumber-r,0),s=Math.min(t.endLineNumber+r,n);return new D(i,t.startColumn,s,t.endColumn)}static plusRange(t,r){let n,i,s,a;return r.startLineNumber<t.startLineNumber?(n=r.startLineNumber,i=r.startColumn):r.startLineNumber===t.startLineNumber?(n=r.startLineNumber,i=Math.min(r.startColumn,t.startColumn)):(n=t.startLineNumber,i=t.startColumn),r.endLineNumber>t.endLineNumber?(s=r.endLineNumber,a=r.endColumn):r.endLineNumber===t.endLineNumber?(s=r.endLineNumber,a=Math.max(r.endColumn,t.endColumn)):(s=t.endLineNumber,a=t.endColumn),new D(n,i,s,a)}intersectRanges(t){return D.intersectRanges(this,t)}static intersectRanges(t,r){let n=t.startLineNumber,i=t.startColumn,s=t.endLineNumber,a=t.endColumn;const o=r.startLineNumber,u=r.startColumn,l=r.endLineNumber,c=r.endColumn;return n<o?(n=o,i=u):n===o&&(i=Math.max(i,u)),s>l?(s=l,a=c):s===l&&(a=Math.min(a,c)),n>s||n===s&&i>a?null:new D(n,i,s,a)}static inverseEditRange(t,r){return{startLineNumber:t.startLineNumber,startColumn:t.startColumn,endLineNumber:t.startLineNumber+r.split(`
-`).length-1,endColumn:r.lastIndexOf(`
-`)===-1?t.startColumn+r.length:r.length-r.lastIndexOf(`
-`)}}whereIs(t){return t.endLineNumber<this.startLineNumber||t.endLineNumber===this.startLineNumber&&t.endColumn<=this.startColumn?"before":t.startLineNumber>this.endLineNumber||t.startLineNumber===this.endLineNumber&&t.startColumn>=this.endColumn?"after":"overlapping"}static rangeAfterEdit(t,r){const n=D.lift(t).whereIs(r.range);switch(n){case"overlapping":throw new Error("Range is overlapping. The range after edit is ambiguous.");case"after":return t;case"before":{const i=r.text.split(`
-`).length-1-(r.range.endLineNumber-r.range.startLineNumber);if(r.range.endLineNumber<t.startLineNumber)return{startLineNumber:t.startLineNumber+i,startColumn:t.startColumn,endLineNumber:t.endLineNumber+i,endColumn:t.endColumn};{const s=r.text.lastIndexOf(`
-`)===-1?r.text.length:r.text.length-r.text.lastIndexOf(`
-`)-1,a=r.range.startLineNumber===r.range.endLineNumber?r.range.endColumn-r.range.startColumn:r.range.endColumn-1,o=s-a;return{startLineNumber:t.startLineNumber+i,startColumn:t.startColumn+o,endLineNumber:t.endLineNumber+i,endColumn:t.startLineNumber===t.endLineNumber?t.endColumn+o:t.endColumn}}}default:{const i=n;return t}}}equalsRange(t){return D.equalsRange(this,t)}static equalsRange(t,r){return!t&&!r?!0:!!t&&!!r&&t.startLineNumber===r.startLineNumber&&t.startColumn===r.startColumn&&t.endLineNumber===r.endLineNumber&&t.endColumn===r.endColumn}getEndPosition(){return D.getEndPosition(this)}static getEndPosition(t){return new Mt(t.endLineNumber,t.endColumn)}getStartPosition(){return D.getStartPosition(this)}static getStartPosition(t){return new Mt(t.startLineNumber,t.startColumn)}toString(){return"["+this.startLineNumber+","+this.startColumn+" -> "+this.endLineNumber+","+this.endColumn+"]"}setEndPosition(t,r){return new D(this.startLineNumber,this.startColumn,t,r)}setStartPosition(t,r){return new D(t,r,this.endLineNumber,this.endColumn)}collapseToStart(){return D.collapseToStart(this)}static collapseToStart(t){return new D(t.startLineNumber,t.startColumn,t.startLineNumber,t.startColumn)}collapseToEnd(){return D.collapseToEnd(this)}static collapseToEnd(t){return new D(t.endLineNumber,t.endColumn,t.endLineNumber,t.endColumn)}delta(t){return new D(this.startLineNumber+t,this.startColumn,this.endLineNumber+t,this.endColumn)}isSingleLine(){return this.startLineNumber===this.endLineNumber}static fromPositions(t,r=t){return new D(t.lineNumber,t.column,r.lineNumber,r.column)}static lift(t){return t?new D(t.startLineNumber,t.startColumn,t.endLineNumber,t.endColumn):null}static isIRange(t){return t&&typeof t.startLineNumber=="number"&&typeof t.startColumn=="number"&&typeof t.endLineNumber=="number"&&typeof t.endColumn=="number"}static areIntersectingOrTouching(t,r){return!(t.endLineNumber<r.startLineNumber||t.endLineNumber===r.startLineNumber&&t.endColumn<r.startColumn||r.endLineNumber<t.startLineNumber||r.endLineNumber===t.startLineNumber&&r.endColumn<t.startColumn)}static areIntersecting(t,r){return!(t.endLineNumber<r.startLineNumber||t.endLineNumber===r.startLineNumber&&t.endColumn<=r.startColumn||r.endLineNumber<t.startLineNumber||r.endLineNumber===t.startLineNumber&&r.endColumn<=t.startColumn)}static areOnlyIntersecting(t,r){return!(t.endLineNumber<r.startLineNumber-1||t.endLineNumber===r.startLineNumber&&t.endColumn<r.startColumn-1||r.endLineNumber<t.startLineNumber-1||r.endLineNumber===t.startLineNumber&&r.endColumn<t.startColumn-1)}static compareRangesUsingStarts(t,r){if(t&&r){const s=t.startLineNumber|0,a=r.startLineNumber|0;if(s===a){const o=t.startColumn|0,u=r.startColumn|0;if(o===u){const l=t.endLineNumber|0,c=r.endLineNumber|0;if(l===c){const f=t.endColumn|0,h=r.endColumn|0;return f-h}return l-c}return o-u}return s-a}return(t?1:0)-(r?1:0)}static compareRangesUsingEnds(t,r){return t.endLineNumber===r.endLineNumber?t.endColumn===r.endColumn?t.startLineNumber===r.startLineNumber?t.startColumn-r.startColumn:t.startLineNumber-r.startLineNumber:t.endColumn-r.endColumn:t.endLineNumber-r.endLineNumber}static spansMultipleLines(t){return t.endLineNumber>t.startLineNumber}toJSON(){return this}},bi=(e,t,r)=>{let n;if(e[0]===255&&e[1]===254)n=new TextDecoder("utf-16le").decode(e);else if(e[0]===254&&e[1]===255)n=new TextDecoder("utf-16be").decode(e);else if(n=new TextDecoder("utf8").decode(e),n.slice(0,1e3).includes("\uFFFD")&&e.includes(0))return[];const i=[],s=[];let a=null,o=r.remainingResultQuota;for(;o>=0&&(a=t.exec(n));)s.push({matchStartIndex:a.index,matchedText:a[0]}),o--;if(s.length){const u=new Set,l=new Set,c=[],f=L=>n.slice(c[L].start,c[L].end);let h=0,m=null;const v=/\r?\n/g;for(;m=v.exec(n);)c.push({start:h,end:m.index}),h=m.index+m[0].length;h<n.length&&c.push({start:h,end:n.length});let b=0;for(const{matchStartIndex:L,matchedText:C}of s){if(o<0)break;for(;c[b+1]&&L>c[b].end;)b++;let k=b;for(;c[k+1]&&L+C.length>c[k].end;)k++;if(r.surroundingContext)for(let S=Math.max(0,b-r.surroundingContext);S<b;S++)u.add(S);let A="",j=0;for(let S=b;S<=k;S++){let H=f(S);r.previewOptions?.charsPerLine&&H.length>r.previewOptions.charsPerLine&&(j=Math.max(L-c[b].start-20,0),H=H.substr(j,r.previewOptions.charsPerLine)),A+=`${H}
-`,l.add(S)}const y=new $t(b,L-c[b].start,k,L+C.length-c[k].start),E=new $t(0,L-c[b].start-j,k-b,L+C.length-c[k].start-(k===b?j:0)),P={rangeLocations:[{source:y,preview:E}],previewText:A};if(i.push(P),r.surroundingContext)for(let S=k+1;S<=Math.min(k+r.surroundingContext,c.length-1);S++)u.add(S)}for(const L of u)l.has(L)||i.push({text:f(L),lineNumber:L+1})}return i},wi=class{constructor(e,t,r){if(this.location=t,this.parent=r,t[t.length-1]==="\\")throw Error("Unexpected path format, do not use trailing backslashes");t[t.length-1]!=="/"&&(t+="/"),this.isPathIgnored=this.parseIgnoreFile(e,this.location,this.parent)}updateContents(e){this.isPathIgnored=this.parseIgnoreFile(e,this.location,this.parent)}isPathIncludedInTraversal(e,t){if(e[0]!=="/"||e[e.length-1]==="/")throw Error("Unexpected path format, expectred to begin with slash and end without. got:"+e);return!this.isPathIgnored(e,t)}isArbitraryPathIgnored(e,t){if(e[0]!=="/"||e[e.length-1]==="/")throw Error("Unexpected path format, expectred to begin with slash and end without. got:"+e);const r=e.split("/").filter(s=>s);let n=!1,i="";for(let s=0;s<r.length;s++){const a=s===r.length-1,o=r[s];if(i=i+"/"+o,!this.isPathIncludedInTraversal(i,a?t:!0)){n=!0;break}}return n}gitignoreLinesToExpression(e,t,r){const n=e.map(s=>this.gitignoreLineToGlob(s,t)),i=Object.create(null);for(const s of n)i[s]=!0;return G1(i,{trimForExclusions:r})}parseIgnoreFile(e,t,r){const n=e.split(`
-`).map(v=>v.trim()).filter(v=>v&&v[0]!=="#"),i=n.filter(v=>!v.endsWith("/")),s=i.filter(v=>!v.includes("!")),a=this.gitignoreLinesToExpression(s,t,!0),o=i.filter(v=>v.includes("!")).map(v=>v.replace(/!/g,"")),u=this.gitignoreLinesToExpression(o,t,!1),l=n.filter(v=>!v.includes("!")),c=this.gitignoreLinesToExpression(l,t,!0),f=n.filter(v=>v.includes("!")).map(v=>v.replace(/!/g,"")),h=this.gitignoreLinesToExpression(f,t,!1);return(v,b)=>v.startsWith(t)?b&&c(v)&&!h(v)||a(v)&&!u(v)?!0:r?r.isPathIgnored(v,b):!1:!1}gitignoreLineToGlob(e,t){const r=e.indexOf("/");return r===-1||r===e.length-1?e="**/"+e:(r===0?t.slice(-1)==="/"&&(e=e.slice(1)):t.slice(-1)!=="/"&&(e="/"+e),e=t+e),e}};function Z1(e,t=0){if(!e||t>200)return e;if(typeof e=="object"){switch(e.$mid){case 1:return q.revive(e);case 2:return new RegExp(e.source,e.flags);case 17:return new Date(e.source)}if(e instanceof In||e instanceof Uint8Array)return e;if(Array.isArray(e))for(let r=0;r<e.length;++r)e[r]=Z1(e[r],t+1);else for(const r in e)Object.hasOwnProperty.call(e,r)&&(e[r]=Z1(e[r],t+1))}return e}var Ft=!1,yi=+new Date,Ut={},w1=async(e,t)=>{if(!Ft)return t();const r=Date.now(),n=(Ut[e]??0)+1;console.info(e,n,"starting",Math.round((r-yi)*10)/1e4),Ut[e]=n;const i=await t(),s=Date.now();return console.info(e,n,"took",s-r),i};function Ci(e){return new Li(e)}var Li=class{constructor(e){this.cancellationTokens=new Map,this.host=_i.getChannel(e)}$cancelQuery(e){this.cancellationTokens.get(e)?.cancel()}registerCancellationToken(e){const t=new Hr;return this.cancellationTokens.set(e,t),t}async $listDirectory(e,t,r,n,i){const s=Re(r),a=new E1(()=>n),o=this.registerCancellationToken(i),u=[];let l=!1,c=0;const f=t.maxResults||512,h=t.filePattern?m=>t.filePattern.split("").every(v=>m.includes(v)):m=>!0;return await w1("listDirectory",()=>this.walkFolderQuery(e,Wt(t),s,a,m=>{if(h(m.name))return c++,f&&c>f&&(l=!0,o.cancel()),u.push(m.path)},o.token,t.maxDepth)),{results:u,limitHit:l}}async $searchDirectory(e,t,r,n,i){const s=Re(r),a=new E1(()=>n);return w1("searchInFiles",async()=>{const o=this.registerCancellationToken(i),u=[],l=Ei(t.contentPattern),c=[];let f=0,h=0;const m=!1,v=async b=>{if(o.token.isCancellationRequested)return;f++;const L=await b.resolve();if(o.token.isCancellationRequested)return;const C=new Uint8Array(L),k=bi(C,l,{surroundingContext:t.surroundingContext??0,previewOptions:t.previewOptions,remainingResultQuota:t.maxResults?t.maxResults-h:1e4});if(k.length){h+=k.length,t.maxResults&&h>t.maxResults&&o.cancel();const A={resource:q.joinPath(s.folder,b.path),results:k};this.host.$sendTextSearchMatch(A,i),u.push(A)}};return await w1("walkFolderToResolve",()=>this.walkFolderQuery(e,Wt(t),s,a,async b=>c.push(v(b)),o.token)),await w1("resolveOngoingProcesses",()=>Promise.all(c)),Ft&&console.log("Searched in",f,"files"),{results:u,limitHit:m}})}async walkFolderQuery(e,t,r,n,i,s,a){const o=r.excludePattern?.map(C=>G1(C.pattern??{},{trimForExclusions:!0})),u=(C,k,A)=>o?.some(j=>j(C,k,A)),l=(C,k,A)=>(C=C.slice(1),!!(u(C,k,A)||Ai(t,C))),c=(C,k,A)=>(C=C.slice(1),!(u(C,k,A)||!xi(t,C,n))),f=(C,k)=>({type:"file",name:C.name,path:k,resolve:()=>C.getFile().then(j=>j.arrayBuffer())}),h=C=>C.kind==="directory",m=C=>C.kind==="file",v=async(C,k,A,j)=>{if(!r.disregardIgnoreFiles){const E=await Promise.all([C.getFileHandle(".gitignore").catch(P=>{}),C.getFileHandle(".ignore").catch(P=>{})]);await Promise.all(E.map(async P=>{if(!P)return;const S=new TextDecoder("utf8").decode(new Uint8Array(await(await P.getFile()).arrayBuffer()));A=new wi(S,k,A)}))}const y=Pe.withAsyncBody(async E=>{const P=[],S=[],H=[],u1=new Set;for await(const s1 of C.entries())H.push(s1),u1.add(s1[0]);for(const[s1,c1]of H){if(s.isCancellationRequested)break;const f1=k+s1;if(A&&!A.isPathIncludedInTraversal(f1,c1.kind==="directory"))continue;const k1=g=>u1.has(g);if(h(c1)&&!l(f1,s1,k1)){if(a!==void 0&&j+1>a)continue;S.push(v(c1,f1+"/",A,j+1))}else m(c1)&&c(f1,s1,k1)&&P.push(f(c1,f1))}E([...await Promise.all(S),...P])});return{type:"dir",name:C.name,entries:y}},b=async(C,k)=>{s.isCancellationRequested||await Promise.all((await C.entries).sort((A,j)=>-(A.type==="dir"?0:1)+(j.type==="dir"?0:1)).map(async A=>A.type==="dir"?b(A,k):k(A)))},L=await w1("process",()=>v(e,"/",void 0,0));await w1("resolve",()=>b(L,i))}};function Ei(e){return Jr(e.pattern,!!e.isRegExp,{wholeWord:e.isWordMatch,global:!0,matchCase:e.isCaseSensitive,multiline:!0,unicode:!0})}function Re(e){return Z1({...Z1(e),excludePattern:e.excludePattern?.map(t=>({folder:q.revive(t.folder),pattern:t.pattern})),folder:q.revive(e.folder)})}function Wt(e){return{...e,extraFileResources:e.extraFileResources?.map(t=>q.revive(t)),folderQueries:e.folderQueries.map(t=>Re(t))}}function Ai(e,t){return!!(e.excludePattern&&J1(e.excludePattern,t))}function xi(e,t,r){return e.excludePattern&&J1(e.excludePattern,t)?!1:e.includePattern||e.usingSearchPaths?e.includePattern&&J1(e.includePattern,t)?!0:e.usingSearchPaths?!!e.folderQueries&&e.folderQueries.some(n=>{const i=n.folder,s=q.file(t);if(r.isEqualOrParent(s,i)){const a=ht(i.path,s.path);return!n.includePattern||!!J1(n.includePattern,a)}else return!1}):!1:!0}dn(Ci);
+`))
+        }
+    },
+    kr = class extends Error {
+        constructor(t, e) {
+            super(t), this.name = "ListenerLeakError", this.stack = e
+        }
+    },
+    Sr = class extends Error {
+        constructor(t, e) {
+            super(t), this.name = "ListenerRefusalError", this.stack = e
+        }
+    },
+    Tr = 0,
+    D1 = class {
+        constructor(t) {
+            this.value = t, this.id = Tr++
+        }
+    },
+    Rr = 2,
+    Or = (t, e) => {
+        if (t instanceof D1) e(t);
+        else
+            for (let r = 0; r < t.length; r++) {
+                const n = t[r];
+                n && e(n)
+            }
+    },
+    J = class {
+        constructor(t) {
+            this._size = 0, this._options = t, this._leakageMon = Ye > 0 || this._options?.leakWarningThreshold ? new Pr(t?.onListenerError ?? O1, this._options?.leakWarningThreshold ?? Ye) : void 0, this._perfMon = this._options?._profName ? new Nr(this._options._profName) : void 0, this._deliveryQueue = this._options?.deliveryQueue
+        }
+        dispose() {
+            if (!this._disposed) {
+                if (this._disposed = !0, this._deliveryQueue?.current === this && this._deliveryQueue.reset(), this._listeners) {
+                    if (Je) {
+                        const t = this._listeners;
+                        queueMicrotask(() => {
+                            Or(t, e => e.stack?.print())
+                        })
+                    }
+                    this._listeners = void 0, this._size = 0
+                }
+                this._options?.onDidRemoveLastListener?.(), this._leakageMon?.dispose()
+            }
+        }
+        get event() {
+            return this._event ??= (t, e, r) => {
+                if (this._leakageMon && this._size > this._leakageMon.threshold ** 2) {
+                    const o = `[${this._leakageMon.name}] REFUSES to accept new listeners because it exceeded its threshold by far (${this._size} vs ${this._leakageMon.threshold})`;
+                    console.warn(o);
+                    const u = this._leakageMon.getMostFrequentStack() ?? ["UNKNOWN stack", -1],
+                        l = new Sr(`${o}. HINT: Stack shows most frequent listener (${u[1]}-times)`, u[0]);
+                    return (this._options?.onListenerError || O1)(l), _1.None
+                }
+                if (this._disposed) return _1.None;
+                e && (t = t.bind(e));
+                const n = new D1(t);
+                let s, i;
+                this._leakageMon && this._size >= Math.ceil(this._leakageMon.threshold * .2) && (n.stack = he.create(), s = this._leakageMon.check(n.stack, this._size + 1)), Je && (n.stack = i ?? he.create()), this._listeners ? this._listeners instanceof D1 ? (this._deliveryQueue ??= new Ir, this._listeners = [this._listeners, n]) : this._listeners.push(n) : (this._options?.onWillAddFirstListener?.(this), this._listeners = n, this._options?.onDidAddFirstListener?.(this)), this._options?.onDidAddListener?.(this), this._size++;
+                const a = Qe(() => {
+                    s?.(), this._removeListener(n)
+                });
+                return r instanceof ce ? r.add(a) : Array.isArray(r) && r.push(a), a
+            }, this._event
+        }
+        _removeListener(t) {
+            if (this._options?.onWillRemoveListener?.(this), !this._listeners) return;
+            if (this._size === 1) {
+                this._listeners = void 0, this._options?.onDidRemoveLastListener?.(this), this._size = 0;
+                return
+            }
+            const e = this._listeners,
+                r = e.indexOf(t);
+            if (r === -1) throw console.log("disposed?", this._disposed), console.log("size?", this._size), console.log("arr?", JSON.stringify(this._listeners)), new Error("Attempted to dispose unknown listener");
+            this._size--, e[r] = void 0;
+            const n = this._deliveryQueue.current === this;
+            if (this._size * Rr <= e.length) {
+                let s = 0;
+                for (let i = 0; i < e.length; i++) e[i] ? e[s++] = e[i] : n && s < this._deliveryQueue.end && (this._deliveryQueue.end--, s < this._deliveryQueue.i && this._deliveryQueue.i--);
+                e.length = s
+            }
+        }
+        _deliver(t, e) {
+            if (!t) return;
+            const r = this._options?.onListenerError || O1;
+            if (!r) {
+                t.value(e);
+                return
+            }
+            try {
+                t.value(e)
+            } catch (n) {
+                r(n)
+            }
+        }
+        _deliverQueue(t) {
+            const e = t.current._listeners;
+            for (; t.i < t.end;) this._deliver(e[t.i++], t.value);
+            t.reset()
+        }
+        fire(t) {
+            if (this._deliveryQueue?.current && (this._deliverQueue(this._deliveryQueue), this._perfMon?.stop()), this._perfMon?.start(this._size), this._listeners)
+                if (this._listeners instanceof D1) this._deliver(this._listeners, t);
+                else {
+                    const e = this._deliveryQueue;
+                    e.enqueue(this, t, this._listeners.length), this._deliverQueue(e)
+                } this._perfMon?.stop()
+        }
+        hasListeners() {
+            return this._size > 0
+        }
+    },
+    Ir = class {
+        constructor() {
+            this.i = -1, this.end = 0
+        }
+        enqueue(t, e, r) {
+            this.i = 0, this.end = r, this.current = t, this.value = e
+        }
+        reset() {
+            this.i = this.end, this.current = void 0, this.value = void 0
+        }
+    };
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/009bb5a3600dd98fe1c1f25798f767f686e14750/core/vs/workbench/services/search/worker/localFileSearchMain.js.map
+function Xe() {
+    return globalThis._VSCODE_NLS_LANGUAGE
+}
+var Fs = Xe() === "pseudo" || typeof document < "u" && document.location && typeof document.location.hash == "string" && document.location.hash.indexOf("pseudo=true") >= 0,
+    b1 = "en",
+    M1 = !1,
+    $1 = !1,
+    E1 = !1,
+    Dr = !1,
+    et = !1,
+    de = !1,
+    Mr = !1,
+    $r = !1,
+    Fr = !1,
+    Ur = !1,
+    F1 = void 0,
+    U1 = b1,
+    tt = b1,
+    Br = void 0,
+    e1 = void 0,
+    t1 = globalThis,
+    z = void 0;
+typeof t1.vscode < "u" && typeof t1.vscode.process < "u" ? z = t1.vscode.process : typeof process < "u" && typeof process?.versions?.node == "string" && (z = process);
+var rt = typeof z?.versions?.electron == "string",
+    Wr = rt && z?.type === "renderer";
+if (typeof z == "object") {
+    M1 = z.platform === "win32", $1 = z.platform === "darwin", E1 = z.platform === "linux", Dr = E1 && !!z.env.SNAP && !!z.env.SNAP_REVISION, Mr = rt, Fr = !!z.env.CI || !!z.env.BUILD_ARTIFACTSTAGINGDIRECTORY, F1 = b1, U1 = b1;
+    const t = z.env.VSCODE_NLS_CONFIG;
+    if (t) try {
+        const e = JSON.parse(t);
+        F1 = e.userLocale, tt = e.osLocale, U1 = e.resolvedLanguage || b1, Br = e.languagePack?.translationsConfigFile
+    } catch {}
+    et = !0
+} else typeof navigator == "object" && !Wr ? (e1 = navigator.userAgent, M1 = e1.indexOf("Windows") >= 0, $1 = e1.indexOf("Macintosh") >= 0, $r = (e1.indexOf("Macintosh") >= 0 || e1.indexOf("iPad") >= 0 || e1.indexOf("iPhone") >= 0) && !!navigator.maxTouchPoints && navigator.maxTouchPoints > 0, E1 = e1.indexOf("Linux") >= 0, Ur = e1?.indexOf("Mobi") >= 0, de = !0, U1 = Xe() || b1, F1 = navigator.language.toLowerCase(), tt = F1) : console.error("Unable to resolve platform.");
+var me = 0;
+$1 ? me = 1 : M1 ? me = 3 : E1 && (me = 2);
+var w1 = M1,
+    qr = $1,
+    pe = E1,
+    jr = et,
+    zr = de,
+    Hr = de && typeof t1.importScripts == "function",
+    Gr = Hr ? t1.origin : void 0,
+    Z = e1,
+    a1 = U1,
+    nt;
+(t => {
+    function e() {
+        return a1
+    }
+    t.value = e;
 
-//# debugId=0be2a8e1-a2ca-5f7a-a112-f040817831d5
+    function r() {
+        return a1.length === 2 ? a1 === "en" : a1.length >= 3 ? a1[0] === "e" && a1[1] === "n" && a1[2] === "-" : !1
+    }
+    t.isDefaultVariant = r;
+
+    function n() {
+        return a1 === "en"
+    }
+    t.isDefault = n
+})(nt || (nt = {}));
+var Qr = typeof t1.postMessage == "function" && !t1.importScripts,
+    Kr = (() => {
+        if (Qr) {
+            const t = [];
+            t1.addEventListener("message", r => {
+                if (r.data && r.data.vscodeScheduleAsyncWork)
+                    for (let n = 0, s = t.length; n < s; n++) {
+                        const i = t[n];
+                        if (i.id === r.data.vscodeScheduleAsyncWork) {
+                            t.splice(n, 1), i.callback();
+                            return
+                        }
+                    }
+            });
+            let e = 0;
+            return r => {
+                const n = ++e;
+                t.push({
+                    id: n,
+                    callback: r
+                }), t1.postMessage({
+                    vscodeScheduleAsyncWork: n
+                }, "*")
+            }
+        }
+        return t => setTimeout(t)
+    })(),
+    Vr = !!(Z && Z.indexOf("Chrome") >= 0),
+    Us = !!(Z && Z.indexOf("Firefox") >= 0),
+    Bs = !!(!Vr && Z && Z.indexOf("Safari") >= 0),
+    Ws = !!(Z && Z.indexOf("Edg/") >= 0),
+    qs = !!(Z && Z.indexOf("Android") >= 0),
+    js = z?.arch,
+    zs = z?.platform,
+    Hs = z?.versions?.node,
+    st = Object.freeze(function(t, e) {
+        const r = setTimeout(t.bind(e), 0);
+        return {
+            dispose() {
+                clearTimeout(r)
+            }
+        }
+    }),
+    B1;
+(t => {
+    function e(r) {
+        return r === t.None || r === t.Cancelled || r instanceof W1 ? !0 : !r || typeof r != "object" ? !1 : typeof r.isCancellationRequested == "boolean" && typeof r.onCancellationRequested == "function"
+    }
+    t.isCancellationToken = e, t.None = Object.freeze({
+        isCancellationRequested: !1,
+        onCancellationRequested: I1.None
+    }), t.Cancelled = Object.freeze({
+        isCancellationRequested: !0,
+        onCancellationRequested: st
+    })
+})(B1 || (B1 = {}));
+var W1 = class {
+        constructor() {
+            this._isCancelled = !1, this._emitter = null
+        }
+        cancel() {
+            this._isCancelled || (this._isCancelled = !0, this._emitter && (this._emitter.fire(void 0), this.dispose()))
+        }
+        get isCancellationRequested() {
+            return this._isCancelled
+        }
+        get onCancellationRequested() {
+            return this._isCancelled ? st : (this._emitter || (this._emitter = new J), this._emitter.event)
+        }
+        dispose() {
+            this._emitter && (this._emitter.dispose(), this._emitter = null)
+        }
+    },
+    Jr = class {
+        constructor(t) {
+            this._token = void 0, this._parentListener = void 0, this._parentListener = t && t.onCancellationRequested(this.cancel, this)
+        }
+        get token() {
+            return this._token || (this._token = new W1), this._token
+        }
+        cancel() {
+            this._token ? this._token instanceof W1 && this._token.cancel() : this._token = B1.Cancelled
+        }
+        dispose(t = !1) {
+            t && this.cancel(), this._parentListener?.dispose(), this._token ? this._token instanceof W1 && this._token.dispose() : this._token = B1.None
+        }
+    };
+
+function Yr(t) {
+    return t
+}
+var Zr = class {
+        constructor(t, e) {
+            this.lastCache = void 0, this.lastArgKey = void 0, typeof t == "function" ? (this._fn = t, this._computeKey = Yr) : (this._fn = e, this._computeKey = t.getCacheKey)
+        }
+        get(t) {
+            const e = this._computeKey(t);
+            return this.lastArgKey !== e && (this.lastArgKey = e, this.lastCache = this._fn(t)), this.lastCache
+        }
+    },
+    ve = class {
+        constructor(t) {
+            this.executor = t, this._didRun = !1
+        }
+        get hasValue() {
+            return this._didRun
+        }
+        get value() {
+            if (!this._didRun) try {
+                this._value = this.executor()
+            } catch (t) {
+                this._error = t
+            } finally {
+                this._didRun = !0
+            }
+            if (this._error) throw this._error;
+            return this._value
+        }
+        get rawValue() {
+            return this._value
+        }
+    };
+
+function ge(t) {
+    return t.replace(/[\\\{\}\*\+\?\|\^\$\.\[\]\(\)]/g, "\\$&")
+}
+
+function Xr(t, e, r = {}) {
+    if (!t) throw new Error("Cannot create regex from empty string");
+    e || (t = ge(t)), r.wholeWord && (/\B/.test(t.charAt(0)) || (t = "\\b" + t), /\B/.test(t.charAt(t.length - 1)) || (t = t + "\\b"));
+    let n = "";
+    return r.global && (n += "g"), r.matchCase || (n += "i"), r.multiline && (n += "m"), r.unicode && (n += "u"), new RegExp(t, n)
+}
+
+function en(t, e) {
+    return t < e ? -1 : t > e ? 1 : 0
+}
+
+function tn(t, e, r = 0, n = t.length, s = 0, i = e.length) {
+    for (; r < n && s < i; r++, s++) {
+        const u = t.charCodeAt(r),
+            l = e.charCodeAt(s);
+        if (u < l) return -1;
+        if (u > l) return 1
+    }
+    const a = n - r,
+        o = i - s;
+    return a < o ? -1 : a > o ? 1 : 0
+}
+
+function _e(t, e, r = 0, n = t.length, s = 0, i = e.length) {
+    for (; r < n && s < i; r++, s++) {
+        let u = t.charCodeAt(r),
+            l = e.charCodeAt(s);
+        if (u === l) continue;
+        if (u >= 128 || l >= 128) return tn(t.toLowerCase(), e.toLowerCase(), r, n, s, i);
+        it(u) && (u -= 32), it(l) && (l -= 32);
+        const c = u - l;
+        if (c !== 0) return c
+    }
+    const a = n - r,
+        o = i - s;
+    return a < o ? -1 : a > o ? 1 : 0
+}
+
+function it(t) {
+    return t >= 97 && t <= 122
+}
+
+function ot(t) {
+    return t >= 65 && t <= 90
+}
+
+function at(t, e) {
+    return t.length === e.length && _e(t, e) === 0
+}
+
+function rn(t, e) {
+    const r = t.length,
+        n = r - e.length;
+    return n >= 0 && _e(t, e, n, r) === 0
+}
+var nn = /(?:\x1b\[|\x9b)[=?>!]?[\d;:]*["$#'* ]?[a-zA-Z@^`{}|~]/,
+    sn = /(?:\x1b\]|\x9d).*?(?:\x1b\\|\x07|\x9c)/,
+    on = /\x1b(?:[ #%\(\)\*\+\-\.\/]?[a-zA-Z0-9\|}~@])/,
+    Gs = new RegExp("(?:" + [nn.source, sn.source, on.source].join("|") + ")", "g"),
+    Qs = "\uFEFF",
+    an = class P1 {
+        static getInstance() {
+            return P1._INSTANCE || (P1._INSTANCE = new P1), P1._INSTANCE
+        }
+        constructor() {
+            this._data = ln()
+        }
+        getGraphemeBreakType(e) {
+            if (e < 32) return e === 10 ? 3 : e === 13 ? 2 : 4;
+            if (e < 127) return 0;
+            const r = this._data,
+                n = r.length / 3;
+            let s = 1;
+            for (; s <= n;)
+                if (e < r[3 * s]) s = 2 * s;
+                else if (e > r[3 * s + 1]) s = 2 * s + 1;
+            else return r[3 * s + 2];
+            return 0
+        }
+    };
+an._INSTANCE = null;
+
+function ln() {
+    return JSON.parse("[0,0,0,51229,51255,12,44061,44087,12,127462,127487,6,7083,7085,5,47645,47671,12,54813,54839,12,128678,128678,14,3270,3270,5,9919,9923,14,45853,45879,12,49437,49463,12,53021,53047,12,71216,71218,7,128398,128399,14,129360,129374,14,2519,2519,5,4448,4519,9,9742,9742,14,12336,12336,14,44957,44983,12,46749,46775,12,48541,48567,12,50333,50359,12,52125,52151,12,53917,53943,12,69888,69890,5,73018,73018,5,127990,127990,14,128558,128559,14,128759,128760,14,129653,129655,14,2027,2035,5,2891,2892,7,3761,3761,5,6683,6683,5,8293,8293,4,9825,9826,14,9999,9999,14,43452,43453,5,44509,44535,12,45405,45431,12,46301,46327,12,47197,47223,12,48093,48119,12,48989,49015,12,49885,49911,12,50781,50807,12,51677,51703,12,52573,52599,12,53469,53495,12,54365,54391,12,65279,65279,4,70471,70472,7,72145,72147,7,119173,119179,5,127799,127818,14,128240,128244,14,128512,128512,14,128652,128652,14,128721,128722,14,129292,129292,14,129445,129450,14,129734,129743,14,1476,1477,5,2366,2368,7,2750,2752,7,3076,3076,5,3415,3415,5,4141,4144,5,6109,6109,5,6964,6964,5,7394,7400,5,9197,9198,14,9770,9770,14,9877,9877,14,9968,9969,14,10084,10084,14,43052,43052,5,43713,43713,5,44285,44311,12,44733,44759,12,45181,45207,12,45629,45655,12,46077,46103,12,46525,46551,12,46973,46999,12,47421,47447,12,47869,47895,12,48317,48343,12,48765,48791,12,49213,49239,12,49661,49687,12,50109,50135,12,50557,50583,12,51005,51031,12,51453,51479,12,51901,51927,12,52349,52375,12,52797,52823,12,53245,53271,12,53693,53719,12,54141,54167,12,54589,54615,12,55037,55063,12,69506,69509,5,70191,70193,5,70841,70841,7,71463,71467,5,72330,72342,5,94031,94031,5,123628,123631,5,127763,127765,14,127941,127941,14,128043,128062,14,128302,128317,14,128465,128467,14,128539,128539,14,128640,128640,14,128662,128662,14,128703,128703,14,128745,128745,14,129004,129007,14,129329,129330,14,129402,129402,14,129483,129483,14,129686,129704,14,130048,131069,14,173,173,4,1757,1757,1,2200,2207,5,2434,2435,7,2631,2632,5,2817,2817,5,3008,3008,5,3201,3201,5,3387,3388,5,3542,3542,5,3902,3903,7,4190,4192,5,6002,6003,5,6439,6440,5,6765,6770,7,7019,7027,5,7154,7155,7,8205,8205,13,8505,8505,14,9654,9654,14,9757,9757,14,9792,9792,14,9852,9853,14,9890,9894,14,9937,9937,14,9981,9981,14,10035,10036,14,11035,11036,14,42654,42655,5,43346,43347,7,43587,43587,5,44006,44007,7,44173,44199,12,44397,44423,12,44621,44647,12,44845,44871,12,45069,45095,12,45293,45319,12,45517,45543,12,45741,45767,12,45965,45991,12,46189,46215,12,46413,46439,12,46637,46663,12,46861,46887,12,47085,47111,12,47309,47335,12,47533,47559,12,47757,47783,12,47981,48007,12,48205,48231,12,48429,48455,12,48653,48679,12,48877,48903,12,49101,49127,12,49325,49351,12,49549,49575,12,49773,49799,12,49997,50023,12,50221,50247,12,50445,50471,12,50669,50695,12,50893,50919,12,51117,51143,12,51341,51367,12,51565,51591,12,51789,51815,12,52013,52039,12,52237,52263,12,52461,52487,12,52685,52711,12,52909,52935,12,53133,53159,12,53357,53383,12,53581,53607,12,53805,53831,12,54029,54055,12,54253,54279,12,54477,54503,12,54701,54727,12,54925,54951,12,55149,55175,12,68101,68102,5,69762,69762,7,70067,70069,7,70371,70378,5,70720,70721,7,71087,71087,5,71341,71341,5,71995,71996,5,72249,72249,7,72850,72871,5,73109,73109,5,118576,118598,5,121505,121519,5,127245,127247,14,127568,127569,14,127777,127777,14,127872,127891,14,127956,127967,14,128015,128016,14,128110,128172,14,128259,128259,14,128367,128368,14,128424,128424,14,128488,128488,14,128530,128532,14,128550,128551,14,128566,128566,14,128647,128647,14,128656,128656,14,128667,128673,14,128691,128693,14,128715,128715,14,128728,128732,14,128752,128752,14,128765,128767,14,129096,129103,14,129311,129311,14,129344,129349,14,129394,129394,14,129413,129425,14,129466,129471,14,129511,129535,14,129664,129666,14,129719,129722,14,129760,129767,14,917536,917631,5,13,13,2,1160,1161,5,1564,1564,4,1807,1807,1,2085,2087,5,2307,2307,7,2382,2383,7,2497,2500,5,2563,2563,7,2677,2677,5,2763,2764,7,2879,2879,5,2914,2915,5,3021,3021,5,3142,3144,5,3263,3263,5,3285,3286,5,3398,3400,7,3530,3530,5,3633,3633,5,3864,3865,5,3974,3975,5,4155,4156,7,4229,4230,5,5909,5909,7,6078,6085,7,6277,6278,5,6451,6456,7,6744,6750,5,6846,6846,5,6972,6972,5,7074,7077,5,7146,7148,7,7222,7223,5,7416,7417,5,8234,8238,4,8417,8417,5,9000,9000,14,9203,9203,14,9730,9731,14,9748,9749,14,9762,9763,14,9776,9783,14,9800,9811,14,9831,9831,14,9872,9873,14,9882,9882,14,9900,9903,14,9929,9933,14,9941,9960,14,9974,9974,14,9989,9989,14,10006,10006,14,10062,10062,14,10160,10160,14,11647,11647,5,12953,12953,14,43019,43019,5,43232,43249,5,43443,43443,5,43567,43568,7,43696,43696,5,43765,43765,7,44013,44013,5,44117,44143,12,44229,44255,12,44341,44367,12,44453,44479,12,44565,44591,12,44677,44703,12,44789,44815,12,44901,44927,12,45013,45039,12,45125,45151,12,45237,45263,12,45349,45375,12,45461,45487,12,45573,45599,12,45685,45711,12,45797,45823,12,45909,45935,12,46021,46047,12,46133,46159,12,46245,46271,12,46357,46383,12,46469,46495,12,46581,46607,12,46693,46719,12,46805,46831,12,46917,46943,12,47029,47055,12,47141,47167,12,47253,47279,12,47365,47391,12,47477,47503,12,47589,47615,12,47701,47727,12,47813,47839,12,47925,47951,12,48037,48063,12,48149,48175,12,48261,48287,12,48373,48399,12,48485,48511,12,48597,48623,12,48709,48735,12,48821,48847,12,48933,48959,12,49045,49071,12,49157,49183,12,49269,49295,12,49381,49407,12,49493,49519,12,49605,49631,12,49717,49743,12,49829,49855,12,49941,49967,12,50053,50079,12,50165,50191,12,50277,50303,12,50389,50415,12,50501,50527,12,50613,50639,12,50725,50751,12,50837,50863,12,50949,50975,12,51061,51087,12,51173,51199,12,51285,51311,12,51397,51423,12,51509,51535,12,51621,51647,12,51733,51759,12,51845,51871,12,51957,51983,12,52069,52095,12,52181,52207,12,52293,52319,12,52405,52431,12,52517,52543,12,52629,52655,12,52741,52767,12,52853,52879,12,52965,52991,12,53077,53103,12,53189,53215,12,53301,53327,12,53413,53439,12,53525,53551,12,53637,53663,12,53749,53775,12,53861,53887,12,53973,53999,12,54085,54111,12,54197,54223,12,54309,54335,12,54421,54447,12,54533,54559,12,54645,54671,12,54757,54783,12,54869,54895,12,54981,55007,12,55093,55119,12,55243,55291,10,66045,66045,5,68325,68326,5,69688,69702,5,69817,69818,5,69957,69958,7,70089,70092,5,70198,70199,5,70462,70462,5,70502,70508,5,70750,70750,5,70846,70846,7,71100,71101,5,71230,71230,7,71351,71351,5,71737,71738,5,72000,72000,7,72160,72160,5,72273,72278,5,72752,72758,5,72882,72883,5,73031,73031,5,73461,73462,7,94192,94193,7,119149,119149,7,121403,121452,5,122915,122916,5,126980,126980,14,127358,127359,14,127535,127535,14,127759,127759,14,127771,127771,14,127792,127793,14,127825,127867,14,127897,127899,14,127945,127945,14,127985,127986,14,128000,128007,14,128021,128021,14,128066,128100,14,128184,128235,14,128249,128252,14,128266,128276,14,128335,128335,14,128379,128390,14,128407,128419,14,128444,128444,14,128481,128481,14,128499,128499,14,128526,128526,14,128536,128536,14,128543,128543,14,128556,128556,14,128564,128564,14,128577,128580,14,128643,128645,14,128649,128649,14,128654,128654,14,128660,128660,14,128664,128664,14,128675,128675,14,128686,128689,14,128695,128696,14,128705,128709,14,128717,128719,14,128725,128725,14,128736,128741,14,128747,128748,14,128755,128755,14,128762,128762,14,128981,128991,14,129009,129023,14,129160,129167,14,129296,129304,14,129320,129327,14,129340,129342,14,129356,129356,14,129388,129392,14,129399,129400,14,129404,129407,14,129432,129442,14,129454,129455,14,129473,129474,14,129485,129487,14,129648,129651,14,129659,129660,14,129671,129679,14,129709,129711,14,129728,129730,14,129751,129753,14,129776,129782,14,917505,917505,4,917760,917999,5,10,10,3,127,159,4,768,879,5,1471,1471,5,1536,1541,1,1648,1648,5,1767,1768,5,1840,1866,5,2070,2073,5,2137,2139,5,2274,2274,1,2363,2363,7,2377,2380,7,2402,2403,5,2494,2494,5,2507,2508,7,2558,2558,5,2622,2624,7,2641,2641,5,2691,2691,7,2759,2760,5,2786,2787,5,2876,2876,5,2881,2884,5,2901,2902,5,3006,3006,5,3014,3016,7,3072,3072,5,3134,3136,5,3157,3158,5,3260,3260,5,3266,3266,5,3274,3275,7,3328,3329,5,3391,3392,7,3405,3405,5,3457,3457,5,3536,3537,7,3551,3551,5,3636,3642,5,3764,3772,5,3895,3895,5,3967,3967,7,3993,4028,5,4146,4151,5,4182,4183,7,4226,4226,5,4253,4253,5,4957,4959,5,5940,5940,7,6070,6070,7,6087,6088,7,6158,6158,4,6432,6434,5,6448,6449,7,6679,6680,5,6742,6742,5,6754,6754,5,6783,6783,5,6912,6915,5,6966,6970,5,6978,6978,5,7042,7042,7,7080,7081,5,7143,7143,7,7150,7150,7,7212,7219,5,7380,7392,5,7412,7412,5,8203,8203,4,8232,8232,4,8265,8265,14,8400,8412,5,8421,8432,5,8617,8618,14,9167,9167,14,9200,9200,14,9410,9410,14,9723,9726,14,9733,9733,14,9745,9745,14,9752,9752,14,9760,9760,14,9766,9766,14,9774,9774,14,9786,9786,14,9794,9794,14,9823,9823,14,9828,9828,14,9833,9850,14,9855,9855,14,9875,9875,14,9880,9880,14,9885,9887,14,9896,9897,14,9906,9916,14,9926,9927,14,9935,9935,14,9939,9939,14,9962,9962,14,9972,9972,14,9978,9978,14,9986,9986,14,9997,9997,14,10002,10002,14,10017,10017,14,10055,10055,14,10071,10071,14,10133,10135,14,10548,10549,14,11093,11093,14,12330,12333,5,12441,12442,5,42608,42610,5,43010,43010,5,43045,43046,5,43188,43203,7,43302,43309,5,43392,43394,5,43446,43449,5,43493,43493,5,43571,43572,7,43597,43597,7,43703,43704,5,43756,43757,5,44003,44004,7,44009,44010,7,44033,44059,12,44089,44115,12,44145,44171,12,44201,44227,12,44257,44283,12,44313,44339,12,44369,44395,12,44425,44451,12,44481,44507,12,44537,44563,12,44593,44619,12,44649,44675,12,44705,44731,12,44761,44787,12,44817,44843,12,44873,44899,12,44929,44955,12,44985,45011,12,45041,45067,12,45097,45123,12,45153,45179,12,45209,45235,12,45265,45291,12,45321,45347,12,45377,45403,12,45433,45459,12,45489,45515,12,45545,45571,12,45601,45627,12,45657,45683,12,45713,45739,12,45769,45795,12,45825,45851,12,45881,45907,12,45937,45963,12,45993,46019,12,46049,46075,12,46105,46131,12,46161,46187,12,46217,46243,12,46273,46299,12,46329,46355,12,46385,46411,12,46441,46467,12,46497,46523,12,46553,46579,12,46609,46635,12,46665,46691,12,46721,46747,12,46777,46803,12,46833,46859,12,46889,46915,12,46945,46971,12,47001,47027,12,47057,47083,12,47113,47139,12,47169,47195,12,47225,47251,12,47281,47307,12,47337,47363,12,47393,47419,12,47449,47475,12,47505,47531,12,47561,47587,12,47617,47643,12,47673,47699,12,47729,47755,12,47785,47811,12,47841,47867,12,47897,47923,12,47953,47979,12,48009,48035,12,48065,48091,12,48121,48147,12,48177,48203,12,48233,48259,12,48289,48315,12,48345,48371,12,48401,48427,12,48457,48483,12,48513,48539,12,48569,48595,12,48625,48651,12,48681,48707,12,48737,48763,12,48793,48819,12,48849,48875,12,48905,48931,12,48961,48987,12,49017,49043,12,49073,49099,12,49129,49155,12,49185,49211,12,49241,49267,12,49297,49323,12,49353,49379,12,49409,49435,12,49465,49491,12,49521,49547,12,49577,49603,12,49633,49659,12,49689,49715,12,49745,49771,12,49801,49827,12,49857,49883,12,49913,49939,12,49969,49995,12,50025,50051,12,50081,50107,12,50137,50163,12,50193,50219,12,50249,50275,12,50305,50331,12,50361,50387,12,50417,50443,12,50473,50499,12,50529,50555,12,50585,50611,12,50641,50667,12,50697,50723,12,50753,50779,12,50809,50835,12,50865,50891,12,50921,50947,12,50977,51003,12,51033,51059,12,51089,51115,12,51145,51171,12,51201,51227,12,51257,51283,12,51313,51339,12,51369,51395,12,51425,51451,12,51481,51507,12,51537,51563,12,51593,51619,12,51649,51675,12,51705,51731,12,51761,51787,12,51817,51843,12,51873,51899,12,51929,51955,12,51985,52011,12,52041,52067,12,52097,52123,12,52153,52179,12,52209,52235,12,52265,52291,12,52321,52347,12,52377,52403,12,52433,52459,12,52489,52515,12,52545,52571,12,52601,52627,12,52657,52683,12,52713,52739,12,52769,52795,12,52825,52851,12,52881,52907,12,52937,52963,12,52993,53019,12,53049,53075,12,53105,53131,12,53161,53187,12,53217,53243,12,53273,53299,12,53329,53355,12,53385,53411,12,53441,53467,12,53497,53523,12,53553,53579,12,53609,53635,12,53665,53691,12,53721,53747,12,53777,53803,12,53833,53859,12,53889,53915,12,53945,53971,12,54001,54027,12,54057,54083,12,54113,54139,12,54169,54195,12,54225,54251,12,54281,54307,12,54337,54363,12,54393,54419,12,54449,54475,12,54505,54531,12,54561,54587,12,54617,54643,12,54673,54699,12,54729,54755,12,54785,54811,12,54841,54867,12,54897,54923,12,54953,54979,12,55009,55035,12,55065,55091,12,55121,55147,12,55177,55203,12,65024,65039,5,65520,65528,4,66422,66426,5,68152,68154,5,69291,69292,5,69633,69633,5,69747,69748,5,69811,69814,5,69826,69826,5,69932,69932,7,70016,70017,5,70079,70080,7,70095,70095,5,70196,70196,5,70367,70367,5,70402,70403,7,70464,70464,5,70487,70487,5,70709,70711,7,70725,70725,7,70833,70834,7,70843,70844,7,70849,70849,7,71090,71093,5,71103,71104,5,71227,71228,7,71339,71339,5,71344,71349,5,71458,71461,5,71727,71735,5,71985,71989,7,71998,71998,5,72002,72002,7,72154,72155,5,72193,72202,5,72251,72254,5,72281,72283,5,72344,72345,5,72766,72766,7,72874,72880,5,72885,72886,5,73023,73029,5,73104,73105,5,73111,73111,5,92912,92916,5,94095,94098,5,113824,113827,4,119142,119142,7,119155,119162,4,119362,119364,5,121476,121476,5,122888,122904,5,123184,123190,5,125252,125258,5,127183,127183,14,127340,127343,14,127377,127386,14,127491,127503,14,127548,127551,14,127744,127756,14,127761,127761,14,127769,127769,14,127773,127774,14,127780,127788,14,127796,127797,14,127820,127823,14,127869,127869,14,127894,127895,14,127902,127903,14,127943,127943,14,127947,127950,14,127972,127972,14,127988,127988,14,127992,127994,14,128009,128011,14,128019,128019,14,128023,128041,14,128064,128064,14,128102,128107,14,128174,128181,14,128238,128238,14,128246,128247,14,128254,128254,14,128264,128264,14,128278,128299,14,128329,128330,14,128348,128359,14,128371,128377,14,128392,128393,14,128401,128404,14,128421,128421,14,128433,128434,14,128450,128452,14,128476,128478,14,128483,128483,14,128495,128495,14,128506,128506,14,128519,128520,14,128528,128528,14,128534,128534,14,128538,128538,14,128540,128542,14,128544,128549,14,128552,128555,14,128557,128557,14,128560,128563,14,128565,128565,14,128567,128576,14,128581,128591,14,128641,128642,14,128646,128646,14,128648,128648,14,128650,128651,14,128653,128653,14,128655,128655,14,128657,128659,14,128661,128661,14,128663,128663,14,128665,128666,14,128674,128674,14,128676,128677,14,128679,128685,14,128690,128690,14,128694,128694,14,128697,128702,14,128704,128704,14,128710,128714,14,128716,128716,14,128720,128720,14,128723,128724,14,128726,128727,14,128733,128735,14,128742,128744,14,128746,128746,14,128749,128751,14,128753,128754,14,128756,128758,14,128761,128761,14,128763,128764,14,128884,128895,14,128992,129003,14,129008,129008,14,129036,129039,14,129114,129119,14,129198,129279,14,129293,129295,14,129305,129310,14,129312,129319,14,129328,129328,14,129331,129338,14,129343,129343,14,129351,129355,14,129357,129359,14,129375,129387,14,129393,129393,14,129395,129398,14,129401,129401,14,129403,129403,14,129408,129412,14,129426,129431,14,129443,129444,14,129451,129453,14,129456,129465,14,129472,129472,14,129475,129482,14,129484,129484,14,129488,129510,14,129536,129647,14,129652,129652,14,129656,129658,14,129661,129663,14,129667,129670,14,129680,129685,14,129705,129708,14,129712,129718,14,129723,129727,14,129731,129733,14,129744,129750,14,129754,129759,14,129768,129775,14,129783,129791,14,917504,917504,4,917506,917535,4,917632,917759,4,918000,921599,4,0,9,4,11,12,4,14,31,4,169,169,14,174,174,14,1155,1159,5,1425,1469,5,1473,1474,5,1479,1479,5,1552,1562,5,1611,1631,5,1750,1756,5,1759,1764,5,1770,1773,5,1809,1809,5,1958,1968,5,2045,2045,5,2075,2083,5,2089,2093,5,2192,2193,1,2250,2273,5,2275,2306,5,2362,2362,5,2364,2364,5,2369,2376,5,2381,2381,5,2385,2391,5,2433,2433,5,2492,2492,5,2495,2496,7,2503,2504,7,2509,2509,5,2530,2531,5,2561,2562,5,2620,2620,5,2625,2626,5,2635,2637,5,2672,2673,5,2689,2690,5,2748,2748,5,2753,2757,5,2761,2761,7,2765,2765,5,2810,2815,5,2818,2819,7,2878,2878,5,2880,2880,7,2887,2888,7,2893,2893,5,2903,2903,5,2946,2946,5,3007,3007,7,3009,3010,7,3018,3020,7,3031,3031,5,3073,3075,7,3132,3132,5,3137,3140,7,3146,3149,5,3170,3171,5,3202,3203,7,3262,3262,7,3264,3265,7,3267,3268,7,3271,3272,7,3276,3277,5,3298,3299,5,3330,3331,7,3390,3390,5,3393,3396,5,3402,3404,7,3406,3406,1,3426,3427,5,3458,3459,7,3535,3535,5,3538,3540,5,3544,3550,7,3570,3571,7,3635,3635,7,3655,3662,5,3763,3763,7,3784,3789,5,3893,3893,5,3897,3897,5,3953,3966,5,3968,3972,5,3981,3991,5,4038,4038,5,4145,4145,7,4153,4154,5,4157,4158,5,4184,4185,5,4209,4212,5,4228,4228,7,4237,4237,5,4352,4447,8,4520,4607,10,5906,5908,5,5938,5939,5,5970,5971,5,6068,6069,5,6071,6077,5,6086,6086,5,6089,6099,5,6155,6157,5,6159,6159,5,6313,6313,5,6435,6438,7,6441,6443,7,6450,6450,5,6457,6459,5,6681,6682,7,6741,6741,7,6743,6743,7,6752,6752,5,6757,6764,5,6771,6780,5,6832,6845,5,6847,6862,5,6916,6916,7,6965,6965,5,6971,6971,7,6973,6977,7,6979,6980,7,7040,7041,5,7073,7073,7,7078,7079,7,7082,7082,7,7142,7142,5,7144,7145,5,7149,7149,5,7151,7153,5,7204,7211,7,7220,7221,7,7376,7378,5,7393,7393,7,7405,7405,5,7415,7415,7,7616,7679,5,8204,8204,5,8206,8207,4,8233,8233,4,8252,8252,14,8288,8292,4,8294,8303,4,8413,8416,5,8418,8420,5,8482,8482,14,8596,8601,14,8986,8987,14,9096,9096,14,9193,9196,14,9199,9199,14,9201,9202,14,9208,9210,14,9642,9643,14,9664,9664,14,9728,9729,14,9732,9732,14,9735,9741,14,9743,9744,14,9746,9746,14,9750,9751,14,9753,9756,14,9758,9759,14,9761,9761,14,9764,9765,14,9767,9769,14,9771,9773,14,9775,9775,14,9784,9785,14,9787,9791,14,9793,9793,14,9795,9799,14,9812,9822,14,9824,9824,14,9827,9827,14,9829,9830,14,9832,9832,14,9851,9851,14,9854,9854,14,9856,9861,14,9874,9874,14,9876,9876,14,9878,9879,14,9881,9881,14,9883,9884,14,9888,9889,14,9895,9895,14,9898,9899,14,9904,9905,14,9917,9918,14,9924,9925,14,9928,9928,14,9934,9934,14,9936,9936,14,9938,9938,14,9940,9940,14,9961,9961,14,9963,9967,14,9970,9971,14,9973,9973,14,9975,9977,14,9979,9980,14,9982,9985,14,9987,9988,14,9992,9996,14,9998,9998,14,10000,10001,14,10004,10004,14,10013,10013,14,10024,10024,14,10052,10052,14,10060,10060,14,10067,10069,14,10083,10083,14,10085,10087,14,10145,10145,14,10175,10175,14,11013,11015,14,11088,11088,14,11503,11505,5,11744,11775,5,12334,12335,5,12349,12349,14,12951,12951,14,42607,42607,5,42612,42621,5,42736,42737,5,43014,43014,5,43043,43044,7,43047,43047,7,43136,43137,7,43204,43205,5,43263,43263,5,43335,43345,5,43360,43388,8,43395,43395,7,43444,43445,7,43450,43451,7,43454,43456,7,43561,43566,5,43569,43570,5,43573,43574,5,43596,43596,5,43644,43644,5,43698,43700,5,43710,43711,5,43755,43755,7,43758,43759,7,43766,43766,5,44005,44005,5,44008,44008,5,44012,44012,7,44032,44032,11,44060,44060,11,44088,44088,11,44116,44116,11,44144,44144,11,44172,44172,11,44200,44200,11,44228,44228,11,44256,44256,11,44284,44284,11,44312,44312,11,44340,44340,11,44368,44368,11,44396,44396,11,44424,44424,11,44452,44452,11,44480,44480,11,44508,44508,11,44536,44536,11,44564,44564,11,44592,44592,11,44620,44620,11,44648,44648,11,44676,44676,11,44704,44704,11,44732,44732,11,44760,44760,11,44788,44788,11,44816,44816,11,44844,44844,11,44872,44872,11,44900,44900,11,44928,44928,11,44956,44956,11,44984,44984,11,45012,45012,11,45040,45040,11,45068,45068,11,45096,45096,11,45124,45124,11,45152,45152,11,45180,45180,11,45208,45208,11,45236,45236,11,45264,45264,11,45292,45292,11,45320,45320,11,45348,45348,11,45376,45376,11,45404,45404,11,45432,45432,11,45460,45460,11,45488,45488,11,45516,45516,11,45544,45544,11,45572,45572,11,45600,45600,11,45628,45628,11,45656,45656,11,45684,45684,11,45712,45712,11,45740,45740,11,45768,45768,11,45796,45796,11,45824,45824,11,45852,45852,11,45880,45880,11,45908,45908,11,45936,45936,11,45964,45964,11,45992,45992,11,46020,46020,11,46048,46048,11,46076,46076,11,46104,46104,11,46132,46132,11,46160,46160,11,46188,46188,11,46216,46216,11,46244,46244,11,46272,46272,11,46300,46300,11,46328,46328,11,46356,46356,11,46384,46384,11,46412,46412,11,46440,46440,11,46468,46468,11,46496,46496,11,46524,46524,11,46552,46552,11,46580,46580,11,46608,46608,11,46636,46636,11,46664,46664,11,46692,46692,11,46720,46720,11,46748,46748,11,46776,46776,11,46804,46804,11,46832,46832,11,46860,46860,11,46888,46888,11,46916,46916,11,46944,46944,11,46972,46972,11,47000,47000,11,47028,47028,11,47056,47056,11,47084,47084,11,47112,47112,11,47140,47140,11,47168,47168,11,47196,47196,11,47224,47224,11,47252,47252,11,47280,47280,11,47308,47308,11,47336,47336,11,47364,47364,11,47392,47392,11,47420,47420,11,47448,47448,11,47476,47476,11,47504,47504,11,47532,47532,11,47560,47560,11,47588,47588,11,47616,47616,11,47644,47644,11,47672,47672,11,47700,47700,11,47728,47728,11,47756,47756,11,47784,47784,11,47812,47812,11,47840,47840,11,47868,47868,11,47896,47896,11,47924,47924,11,47952,47952,11,47980,47980,11,48008,48008,11,48036,48036,11,48064,48064,11,48092,48092,11,48120,48120,11,48148,48148,11,48176,48176,11,48204,48204,11,48232,48232,11,48260,48260,11,48288,48288,11,48316,48316,11,48344,48344,11,48372,48372,11,48400,48400,11,48428,48428,11,48456,48456,11,48484,48484,11,48512,48512,11,48540,48540,11,48568,48568,11,48596,48596,11,48624,48624,11,48652,48652,11,48680,48680,11,48708,48708,11,48736,48736,11,48764,48764,11,48792,48792,11,48820,48820,11,48848,48848,11,48876,48876,11,48904,48904,11,48932,48932,11,48960,48960,11,48988,48988,11,49016,49016,11,49044,49044,11,49072,49072,11,49100,49100,11,49128,49128,11,49156,49156,11,49184,49184,11,49212,49212,11,49240,49240,11,49268,49268,11,49296,49296,11,49324,49324,11,49352,49352,11,49380,49380,11,49408,49408,11,49436,49436,11,49464,49464,11,49492,49492,11,49520,49520,11,49548,49548,11,49576,49576,11,49604,49604,11,49632,49632,11,49660,49660,11,49688,49688,11,49716,49716,11,49744,49744,11,49772,49772,11,49800,49800,11,49828,49828,11,49856,49856,11,49884,49884,11,49912,49912,11,49940,49940,11,49968,49968,11,49996,49996,11,50024,50024,11,50052,50052,11,50080,50080,11,50108,50108,11,50136,50136,11,50164,50164,11,50192,50192,11,50220,50220,11,50248,50248,11,50276,50276,11,50304,50304,11,50332,50332,11,50360,50360,11,50388,50388,11,50416,50416,11,50444,50444,11,50472,50472,11,50500,50500,11,50528,50528,11,50556,50556,11,50584,50584,11,50612,50612,11,50640,50640,11,50668,50668,11,50696,50696,11,50724,50724,11,50752,50752,11,50780,50780,11,50808,50808,11,50836,50836,11,50864,50864,11,50892,50892,11,50920,50920,11,50948,50948,11,50976,50976,11,51004,51004,11,51032,51032,11,51060,51060,11,51088,51088,11,51116,51116,11,51144,51144,11,51172,51172,11,51200,51200,11,51228,51228,11,51256,51256,11,51284,51284,11,51312,51312,11,51340,51340,11,51368,51368,11,51396,51396,11,51424,51424,11,51452,51452,11,51480,51480,11,51508,51508,11,51536,51536,11,51564,51564,11,51592,51592,11,51620,51620,11,51648,51648,11,51676,51676,11,51704,51704,11,51732,51732,11,51760,51760,11,51788,51788,11,51816,51816,11,51844,51844,11,51872,51872,11,51900,51900,11,51928,51928,11,51956,51956,11,51984,51984,11,52012,52012,11,52040,52040,11,52068,52068,11,52096,52096,11,52124,52124,11,52152,52152,11,52180,52180,11,52208,52208,11,52236,52236,11,52264,52264,11,52292,52292,11,52320,52320,11,52348,52348,11,52376,52376,11,52404,52404,11,52432,52432,11,52460,52460,11,52488,52488,11,52516,52516,11,52544,52544,11,52572,52572,11,52600,52600,11,52628,52628,11,52656,52656,11,52684,52684,11,52712,52712,11,52740,52740,11,52768,52768,11,52796,52796,11,52824,52824,11,52852,52852,11,52880,52880,11,52908,52908,11,52936,52936,11,52964,52964,11,52992,52992,11,53020,53020,11,53048,53048,11,53076,53076,11,53104,53104,11,53132,53132,11,53160,53160,11,53188,53188,11,53216,53216,11,53244,53244,11,53272,53272,11,53300,53300,11,53328,53328,11,53356,53356,11,53384,53384,11,53412,53412,11,53440,53440,11,53468,53468,11,53496,53496,11,53524,53524,11,53552,53552,11,53580,53580,11,53608,53608,11,53636,53636,11,53664,53664,11,53692,53692,11,53720,53720,11,53748,53748,11,53776,53776,11,53804,53804,11,53832,53832,11,53860,53860,11,53888,53888,11,53916,53916,11,53944,53944,11,53972,53972,11,54000,54000,11,54028,54028,11,54056,54056,11,54084,54084,11,54112,54112,11,54140,54140,11,54168,54168,11,54196,54196,11,54224,54224,11,54252,54252,11,54280,54280,11,54308,54308,11,54336,54336,11,54364,54364,11,54392,54392,11,54420,54420,11,54448,54448,11,54476,54476,11,54504,54504,11,54532,54532,11,54560,54560,11,54588,54588,11,54616,54616,11,54644,54644,11,54672,54672,11,54700,54700,11,54728,54728,11,54756,54756,11,54784,54784,11,54812,54812,11,54840,54840,11,54868,54868,11,54896,54896,11,54924,54924,11,54952,54952,11,54980,54980,11,55008,55008,11,55036,55036,11,55064,55064,11,55092,55092,11,55120,55120,11,55148,55148,11,55176,55176,11,55216,55238,9,64286,64286,5,65056,65071,5,65438,65439,5,65529,65531,4,66272,66272,5,68097,68099,5,68108,68111,5,68159,68159,5,68900,68903,5,69446,69456,5,69632,69632,7,69634,69634,7,69744,69744,5,69759,69761,5,69808,69810,7,69815,69816,7,69821,69821,1,69837,69837,1,69927,69931,5,69933,69940,5,70003,70003,5,70018,70018,7,70070,70078,5,70082,70083,1,70094,70094,7,70188,70190,7,70194,70195,7,70197,70197,7,70206,70206,5,70368,70370,7,70400,70401,5,70459,70460,5,70463,70463,7,70465,70468,7,70475,70477,7,70498,70499,7,70512,70516,5,70712,70719,5,70722,70724,5,70726,70726,5,70832,70832,5,70835,70840,5,70842,70842,5,70845,70845,5,70847,70848,5,70850,70851,5,71088,71089,7,71096,71099,7,71102,71102,7,71132,71133,5,71219,71226,5,71229,71229,5,71231,71232,5,71340,71340,7,71342,71343,7,71350,71350,7,71453,71455,5,71462,71462,7,71724,71726,7,71736,71736,7,71984,71984,5,71991,71992,7,71997,71997,7,71999,71999,1,72001,72001,1,72003,72003,5,72148,72151,5,72156,72159,7,72164,72164,7,72243,72248,5,72250,72250,1,72263,72263,5,72279,72280,7,72324,72329,1,72343,72343,7,72751,72751,7,72760,72765,5,72767,72767,5,72873,72873,7,72881,72881,7,72884,72884,7,73009,73014,5,73020,73021,5,73030,73030,1,73098,73102,7,73107,73108,7,73110,73110,7,73459,73460,5,78896,78904,4,92976,92982,5,94033,94087,7,94180,94180,5,113821,113822,5,118528,118573,5,119141,119141,5,119143,119145,5,119150,119154,5,119163,119170,5,119210,119213,5,121344,121398,5,121461,121461,5,121499,121503,5,122880,122886,5,122907,122913,5,122918,122922,5,123566,123566,5,125136,125142,5,126976,126979,14,126981,127182,14,127184,127231,14,127279,127279,14,127344,127345,14,127374,127374,14,127405,127461,14,127489,127490,14,127514,127514,14,127538,127546,14,127561,127567,14,127570,127743,14,127757,127758,14,127760,127760,14,127762,127762,14,127766,127768,14,127770,127770,14,127772,127772,14,127775,127776,14,127778,127779,14,127789,127791,14,127794,127795,14,127798,127798,14,127819,127819,14,127824,127824,14,127868,127868,14,127870,127871,14,127892,127893,14,127896,127896,14,127900,127901,14,127904,127940,14,127942,127942,14,127944,127944,14,127946,127946,14,127951,127955,14,127968,127971,14,127973,127984,14,127987,127987,14,127989,127989,14,127991,127991,14,127995,127999,5,128008,128008,14,128012,128014,14,128017,128018,14,128020,128020,14,128022,128022,14,128042,128042,14,128063,128063,14,128065,128065,14,128101,128101,14,128108,128109,14,128173,128173,14,128182,128183,14,128236,128237,14,128239,128239,14,128245,128245,14,128248,128248,14,128253,128253,14,128255,128258,14,128260,128263,14,128265,128265,14,128277,128277,14,128300,128301,14,128326,128328,14,128331,128334,14,128336,128347,14,128360,128366,14,128369,128370,14,128378,128378,14,128391,128391,14,128394,128397,14,128400,128400,14,128405,128406,14,128420,128420,14,128422,128423,14,128425,128432,14,128435,128443,14,128445,128449,14,128453,128464,14,128468,128475,14,128479,128480,14,128482,128482,14,128484,128487,14,128489,128494,14,128496,128498,14,128500,128505,14,128507,128511,14,128513,128518,14,128521,128525,14,128527,128527,14,128529,128529,14,128533,128533,14,128535,128535,14,128537,128537,14]")
+}
+var y1 = class De {
+    constructor(e) {
+        this.confusableDictionary = e
+    }
+    static getInstance(e) {
+        return De.cache.get(Array.from(e))
+    }
+    static getLocales() {
+        return De._locales.value
+    }
+    isAmbiguous(e) {
+        return this.confusableDictionary.has(e)
+    }
+    containsAmbiguousCharacter(e) {
+        for (let r = 0; r < e.length; r++) {
+            const n = e.codePointAt(r);
+            if (typeof n == "number" && this.isAmbiguous(n)) return !0
+        }
+        return !1
+    }
+    getPrimaryConfusable(e) {
+        return this.confusableDictionary.get(e)
+    }
+    getConfusableCodePoints() {
+        return new Set(this.confusableDictionary.keys())
+    }
+};
+y1.ambiguousCharacterData = new ve(() => JSON.parse('{"_common":[8232,32,8233,32,5760,32,8192,32,8193,32,8194,32,8195,32,8196,32,8197,32,8198,32,8200,32,8201,32,8202,32,8287,32,8199,32,8239,32,2042,95,65101,95,65102,95,65103,95,8208,45,8209,45,8210,45,65112,45,1748,45,8259,45,727,45,8722,45,10134,45,11450,45,1549,44,1643,44,184,44,42233,44,894,59,2307,58,2691,58,1417,58,1795,58,1796,58,5868,58,65072,58,6147,58,6153,58,8282,58,1475,58,760,58,42889,58,8758,58,720,58,42237,58,451,33,11601,33,660,63,577,63,2429,63,5038,63,42731,63,119149,46,8228,46,1793,46,1794,46,42510,46,68176,46,1632,46,1776,46,42232,46,1373,96,65287,96,8219,96,1523,96,8242,96,1370,96,8175,96,65344,96,900,96,8189,96,8125,96,8127,96,8190,96,697,96,884,96,712,96,714,96,715,96,756,96,699,96,701,96,700,96,702,96,42892,96,1497,96,2036,96,2037,96,5194,96,5836,96,94033,96,94034,96,65339,91,10088,40,10098,40,12308,40,64830,40,65341,93,10089,41,10099,41,12309,41,64831,41,10100,123,119060,123,10101,125,65342,94,8270,42,1645,42,8727,42,66335,42,5941,47,8257,47,8725,47,8260,47,9585,47,10187,47,10744,47,119354,47,12755,47,12339,47,11462,47,20031,47,12035,47,65340,92,65128,92,8726,92,10189,92,10741,92,10745,92,119311,92,119355,92,12756,92,20022,92,12034,92,42872,38,708,94,710,94,5869,43,10133,43,66203,43,8249,60,10094,60,706,60,119350,60,5176,60,5810,60,5120,61,11840,61,12448,61,42239,61,8250,62,10095,62,707,62,119351,62,5171,62,94015,62,8275,126,732,126,8128,126,8764,126,65372,124,65293,45,118002,50,120784,50,120794,50,120804,50,120814,50,120824,50,130034,50,42842,50,423,50,1000,50,42564,50,5311,50,42735,50,119302,51,118003,51,120785,51,120795,51,120805,51,120815,51,120825,51,130035,51,42923,51,540,51,439,51,42858,51,11468,51,1248,51,94011,51,71882,51,118004,52,120786,52,120796,52,120806,52,120816,52,120826,52,130036,52,5070,52,71855,52,118005,53,120787,53,120797,53,120807,53,120817,53,120827,53,130037,53,444,53,71867,53,118006,54,120788,54,120798,54,120808,54,120818,54,120828,54,130038,54,11474,54,5102,54,71893,54,119314,55,118007,55,120789,55,120799,55,120809,55,120819,55,120829,55,130039,55,66770,55,71878,55,2819,56,2538,56,2666,56,125131,56,118008,56,120790,56,120800,56,120810,56,120820,56,120830,56,130040,56,547,56,546,56,66330,56,2663,57,2920,57,2541,57,3437,57,118009,57,120791,57,120801,57,120811,57,120821,57,120831,57,130041,57,42862,57,11466,57,71884,57,71852,57,71894,57,9082,97,65345,97,119834,97,119886,97,119938,97,119990,97,120042,97,120094,97,120146,97,120198,97,120250,97,120302,97,120354,97,120406,97,120458,97,593,97,945,97,120514,97,120572,97,120630,97,120688,97,120746,97,65313,65,117974,65,119808,65,119860,65,119912,65,119964,65,120016,65,120068,65,120120,65,120172,65,120224,65,120276,65,120328,65,120380,65,120432,65,913,65,120488,65,120546,65,120604,65,120662,65,120720,65,5034,65,5573,65,42222,65,94016,65,66208,65,119835,98,119887,98,119939,98,119991,98,120043,98,120095,98,120147,98,120199,98,120251,98,120303,98,120355,98,120407,98,120459,98,388,98,5071,98,5234,98,5551,98,65314,66,8492,66,117975,66,119809,66,119861,66,119913,66,120017,66,120069,66,120121,66,120173,66,120225,66,120277,66,120329,66,120381,66,120433,66,42932,66,914,66,120489,66,120547,66,120605,66,120663,66,120721,66,5108,66,5623,66,42192,66,66178,66,66209,66,66305,66,65347,99,8573,99,119836,99,119888,99,119940,99,119992,99,120044,99,120096,99,120148,99,120200,99,120252,99,120304,99,120356,99,120408,99,120460,99,7428,99,1010,99,11429,99,43951,99,66621,99,128844,67,71913,67,71922,67,65315,67,8557,67,8450,67,8493,67,117976,67,119810,67,119862,67,119914,67,119966,67,120018,67,120174,67,120226,67,120278,67,120330,67,120382,67,120434,67,1017,67,11428,67,5087,67,42202,67,66210,67,66306,67,66581,67,66844,67,8574,100,8518,100,119837,100,119889,100,119941,100,119993,100,120045,100,120097,100,120149,100,120201,100,120253,100,120305,100,120357,100,120409,100,120461,100,1281,100,5095,100,5231,100,42194,100,8558,68,8517,68,117977,68,119811,68,119863,68,119915,68,119967,68,120019,68,120071,68,120123,68,120175,68,120227,68,120279,68,120331,68,120383,68,120435,68,5024,68,5598,68,5610,68,42195,68,8494,101,65349,101,8495,101,8519,101,119838,101,119890,101,119942,101,120046,101,120098,101,120150,101,120202,101,120254,101,120306,101,120358,101,120410,101,120462,101,43826,101,1213,101,8959,69,65317,69,8496,69,117978,69,119812,69,119864,69,119916,69,120020,69,120072,69,120124,69,120176,69,120228,69,120280,69,120332,69,120384,69,120436,69,917,69,120492,69,120550,69,120608,69,120666,69,120724,69,11577,69,5036,69,42224,69,71846,69,71854,69,66182,69,119839,102,119891,102,119943,102,119995,102,120047,102,120099,102,120151,102,120203,102,120255,102,120307,102,120359,102,120411,102,120463,102,43829,102,42905,102,383,102,7837,102,1412,102,119315,70,8497,70,117979,70,119813,70,119865,70,119917,70,120021,70,120073,70,120125,70,120177,70,120229,70,120281,70,120333,70,120385,70,120437,70,42904,70,988,70,120778,70,5556,70,42205,70,71874,70,71842,70,66183,70,66213,70,66853,70,65351,103,8458,103,119840,103,119892,103,119944,103,120048,103,120100,103,120152,103,120204,103,120256,103,120308,103,120360,103,120412,103,120464,103,609,103,7555,103,397,103,1409,103,117980,71,119814,71,119866,71,119918,71,119970,71,120022,71,120074,71,120126,71,120178,71,120230,71,120282,71,120334,71,120386,71,120438,71,1292,71,5056,71,5107,71,42198,71,65352,104,8462,104,119841,104,119945,104,119997,104,120049,104,120101,104,120153,104,120205,104,120257,104,120309,104,120361,104,120413,104,120465,104,1211,104,1392,104,5058,104,65320,72,8459,72,8460,72,8461,72,117981,72,119815,72,119867,72,119919,72,120023,72,120179,72,120231,72,120283,72,120335,72,120387,72,120439,72,919,72,120494,72,120552,72,120610,72,120668,72,120726,72,11406,72,5051,72,5500,72,42215,72,66255,72,731,105,9075,105,65353,105,8560,105,8505,105,8520,105,119842,105,119894,105,119946,105,119998,105,120050,105,120102,105,120154,105,120206,105,120258,105,120310,105,120362,105,120414,105,120466,105,120484,105,618,105,617,105,953,105,8126,105,890,105,120522,105,120580,105,120638,105,120696,105,120754,105,1110,105,42567,105,1231,105,43893,105,5029,105,71875,105,65354,106,8521,106,119843,106,119895,106,119947,106,119999,106,120051,106,120103,106,120155,106,120207,106,120259,106,120311,106,120363,106,120415,106,120467,106,1011,106,1112,106,65322,74,117983,74,119817,74,119869,74,119921,74,119973,74,120025,74,120077,74,120129,74,120181,74,120233,74,120285,74,120337,74,120389,74,120441,74,42930,74,895,74,1032,74,5035,74,5261,74,42201,74,119844,107,119896,107,119948,107,120000,107,120052,107,120104,107,120156,107,120208,107,120260,107,120312,107,120364,107,120416,107,120468,107,8490,75,65323,75,117984,75,119818,75,119870,75,119922,75,119974,75,120026,75,120078,75,120130,75,120182,75,120234,75,120286,75,120338,75,120390,75,120442,75,922,75,120497,75,120555,75,120613,75,120671,75,120729,75,11412,75,5094,75,5845,75,42199,75,66840,75,1472,108,8739,73,9213,73,65512,73,1633,108,1777,73,66336,108,125127,108,118001,108,120783,73,120793,73,120803,73,120813,73,120823,73,130033,73,65321,73,8544,73,8464,73,8465,73,117982,108,119816,73,119868,73,119920,73,120024,73,120128,73,120180,73,120232,73,120284,73,120336,73,120388,73,120440,73,65356,108,8572,73,8467,108,119845,108,119897,108,119949,108,120001,108,120053,108,120105,73,120157,73,120209,73,120261,73,120313,73,120365,73,120417,73,120469,73,448,73,120496,73,120554,73,120612,73,120670,73,120728,73,11410,73,1030,73,1216,73,1493,108,1503,108,1575,108,126464,108,126592,108,65166,108,65165,108,1994,108,11599,73,5825,73,42226,73,93992,73,66186,124,66313,124,119338,76,8556,76,8466,76,117985,76,119819,76,119871,76,119923,76,120027,76,120079,76,120131,76,120183,76,120235,76,120287,76,120339,76,120391,76,120443,76,11472,76,5086,76,5290,76,42209,76,93974,76,71843,76,71858,76,66587,76,66854,76,65325,77,8559,77,8499,77,117986,77,119820,77,119872,77,119924,77,120028,77,120080,77,120132,77,120184,77,120236,77,120288,77,120340,77,120392,77,120444,77,924,77,120499,77,120557,77,120615,77,120673,77,120731,77,1018,77,11416,77,5047,77,5616,77,5846,77,42207,77,66224,77,66321,77,119847,110,119899,110,119951,110,120003,110,120055,110,120107,110,120159,110,120211,110,120263,110,120315,110,120367,110,120419,110,120471,110,1400,110,1404,110,65326,78,8469,78,117987,78,119821,78,119873,78,119925,78,119977,78,120029,78,120081,78,120185,78,120237,78,120289,78,120341,78,120393,78,120445,78,925,78,120500,78,120558,78,120616,78,120674,78,120732,78,11418,78,42208,78,66835,78,3074,111,3202,111,3330,111,3458,111,2406,111,2662,111,2790,111,3046,111,3174,111,3302,111,3430,111,3664,111,3792,111,4160,111,1637,111,1781,111,65359,111,8500,111,119848,111,119900,111,119952,111,120056,111,120108,111,120160,111,120212,111,120264,111,120316,111,120368,111,120420,111,120472,111,7439,111,7441,111,43837,111,959,111,120528,111,120586,111,120644,111,120702,111,120760,111,963,111,120532,111,120590,111,120648,111,120706,111,120764,111,11423,111,4351,111,1413,111,1505,111,1607,111,126500,111,126564,111,126596,111,65259,111,65260,111,65258,111,65257,111,1726,111,64428,111,64429,111,64427,111,64426,111,1729,111,64424,111,64425,111,64423,111,64422,111,1749,111,3360,111,4125,111,66794,111,71880,111,71895,111,66604,111,1984,79,2534,79,2918,79,12295,79,70864,79,71904,79,118000,79,120782,79,120792,79,120802,79,120812,79,120822,79,130032,79,65327,79,117988,79,119822,79,119874,79,119926,79,119978,79,120030,79,120082,79,120134,79,120186,79,120238,79,120290,79,120342,79,120394,79,120446,79,927,79,120502,79,120560,79,120618,79,120676,79,120734,79,11422,79,1365,79,11604,79,4816,79,2848,79,66754,79,42227,79,71861,79,66194,79,66219,79,66564,79,66838,79,9076,112,65360,112,119849,112,119901,112,119953,112,120005,112,120057,112,120109,112,120161,112,120213,112,120265,112,120317,112,120369,112,120421,112,120473,112,961,112,120530,112,120544,112,120588,112,120602,112,120646,112,120660,112,120704,112,120718,112,120762,112,120776,112,11427,112,65328,80,8473,80,117989,80,119823,80,119875,80,119927,80,119979,80,120031,80,120083,80,120187,80,120239,80,120291,80,120343,80,120395,80,120447,80,929,80,120504,80,120562,80,120620,80,120678,80,120736,80,11426,80,5090,80,5229,80,42193,80,66197,80,119850,113,119902,113,119954,113,120006,113,120058,113,120110,113,120162,113,120214,113,120266,113,120318,113,120370,113,120422,113,120474,113,1307,113,1379,113,1382,113,8474,81,117990,81,119824,81,119876,81,119928,81,119980,81,120032,81,120084,81,120188,81,120240,81,120292,81,120344,81,120396,81,120448,81,11605,81,119851,114,119903,114,119955,114,120007,114,120059,114,120111,114,120163,114,120215,114,120267,114,120319,114,120371,114,120423,114,120475,114,43847,114,43848,114,7462,114,11397,114,43905,114,119318,82,8475,82,8476,82,8477,82,117991,82,119825,82,119877,82,119929,82,120033,82,120189,82,120241,82,120293,82,120345,82,120397,82,120449,82,422,82,5025,82,5074,82,66740,82,5511,82,42211,82,94005,82,65363,115,119852,115,119904,115,119956,115,120008,115,120060,115,120112,115,120164,115,120216,115,120268,115,120320,115,120372,115,120424,115,120476,115,42801,115,445,115,1109,115,43946,115,71873,115,66632,115,65331,83,117992,83,119826,83,119878,83,119930,83,119982,83,120034,83,120086,83,120138,83,120190,83,120242,83,120294,83,120346,83,120398,83,120450,83,1029,83,1359,83,5077,83,5082,83,42210,83,94010,83,66198,83,66592,83,119853,116,119905,116,119957,116,120009,116,120061,116,120113,116,120165,116,120217,116,120269,116,120321,116,120373,116,120425,116,120477,116,8868,84,10201,84,128872,84,65332,84,117993,84,119827,84,119879,84,119931,84,119983,84,120035,84,120087,84,120139,84,120191,84,120243,84,120295,84,120347,84,120399,84,120451,84,932,84,120507,84,120565,84,120623,84,120681,84,120739,84,11430,84,5026,84,42196,84,93962,84,71868,84,66199,84,66225,84,66325,84,119854,117,119906,117,119958,117,120010,117,120062,117,120114,117,120166,117,120218,117,120270,117,120322,117,120374,117,120426,117,120478,117,42911,117,7452,117,43854,117,43858,117,651,117,965,117,120534,117,120592,117,120650,117,120708,117,120766,117,1405,117,66806,117,71896,117,8746,85,8899,85,117994,85,119828,85,119880,85,119932,85,119984,85,120036,85,120088,85,120140,85,120192,85,120244,85,120296,85,120348,85,120400,85,120452,85,1357,85,4608,85,66766,85,5196,85,42228,85,94018,85,71864,85,8744,118,8897,118,65366,118,8564,118,119855,118,119907,118,119959,118,120011,118,120063,118,120115,118,120167,118,120219,118,120271,118,120323,118,120375,118,120427,118,120479,118,7456,118,957,118,120526,118,120584,118,120642,118,120700,118,120758,118,1141,118,1496,118,71430,118,43945,118,71872,118,119309,86,1639,86,1783,86,8548,86,117995,86,119829,86,119881,86,119933,86,119985,86,120037,86,120089,86,120141,86,120193,86,120245,86,120297,86,120349,86,120401,86,120453,86,1140,86,11576,86,5081,86,5167,86,42719,86,42214,86,93960,86,71840,86,66845,86,623,119,119856,119,119908,119,119960,119,120012,119,120064,119,120116,119,120168,119,120220,119,120272,119,120324,119,120376,119,120428,119,120480,119,7457,119,1121,119,1309,119,1377,119,71434,119,71438,119,71439,119,43907,119,71910,87,71919,87,117996,87,119830,87,119882,87,119934,87,119986,87,120038,87,120090,87,120142,87,120194,87,120246,87,120298,87,120350,87,120402,87,120454,87,1308,87,5043,87,5076,87,42218,87,5742,120,10539,120,10540,120,10799,120,65368,120,8569,120,119857,120,119909,120,119961,120,120013,120,120065,120,120117,120,120169,120,120221,120,120273,120,120325,120,120377,120,120429,120,120481,120,5441,120,5501,120,5741,88,9587,88,66338,88,71916,88,65336,88,8553,88,117997,88,119831,88,119883,88,119935,88,119987,88,120039,88,120091,88,120143,88,120195,88,120247,88,120299,88,120351,88,120403,88,120455,88,42931,88,935,88,120510,88,120568,88,120626,88,120684,88,120742,88,11436,88,11613,88,5815,88,42219,88,66192,88,66228,88,66327,88,66855,88,611,121,7564,121,65369,121,119858,121,119910,121,119962,121,120014,121,120066,121,120118,121,120170,121,120222,121,120274,121,120326,121,120378,121,120430,121,120482,121,655,121,7935,121,43866,121,947,121,8509,121,120516,121,120574,121,120632,121,120690,121,120748,121,1199,121,4327,121,71900,121,65337,89,117998,89,119832,89,119884,89,119936,89,119988,89,120040,89,120092,89,120144,89,120196,89,120248,89,120300,89,120352,89,120404,89,120456,89,933,89,978,89,120508,89,120566,89,120624,89,120682,89,120740,89,11432,89,1198,89,5033,89,5053,89,42220,89,94019,89,71844,89,66226,89,119859,122,119911,122,119963,122,120015,122,120067,122,120119,122,120171,122,120223,122,120275,122,120327,122,120379,122,120431,122,120483,122,7458,122,43923,122,71876,122,71909,90,66293,90,65338,90,8484,90,8488,90,117999,90,119833,90,119885,90,119937,90,119989,90,120041,90,120197,90,120249,90,120301,90,120353,90,120405,90,120457,90,918,90,120493,90,120551,90,120609,90,120667,90,120725,90,5059,90,42204,90,71849,90,65282,34,65283,35,65284,36,65285,37,65286,38,65290,42,65291,43,65294,46,65295,47,65296,48,65298,50,65299,51,65300,52,65301,53,65302,54,65303,55,65304,56,65305,57,65308,60,65309,61,65310,62,65312,64,65316,68,65318,70,65319,71,65324,76,65329,81,65330,82,65333,85,65334,86,65335,87,65343,95,65346,98,65348,100,65350,102,65355,107,65357,109,65358,110,65361,113,65362,114,65364,116,65365,117,65367,119,65370,122,65371,123,65373,125,119846,109],"_default":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8217,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"cs":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"de":[65374,126,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"es":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"fr":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"it":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ja":[8211,45,8218,44,65281,33,8216,96,8245,96,180,96,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65292,44,65297,49,65307,59],"ko":[8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pl":[65374,126,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"pt-BR":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"qps-ploc":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"ru":[65374,126,8218,44,65306,58,65281,33,8216,96,8245,96,180,96,12494,47,305,105,921,73,1009,112,215,120,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"tr":[160,32,8211,45,65374,126,8218,44,65306,58,65281,33,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65288,40,65289,41,65292,44,65297,49,65307,59,65311,63],"zh-hans":[160,32,65374,126,8218,44,8245,96,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89,65297,49],"zh-hant":[8211,45,65374,126,8218,44,180,96,12494,47,1047,51,1073,54,1072,97,1040,65,1068,98,1042,66,1089,99,1057,67,1077,101,1045,69,1053,72,305,105,1050,75,921,73,1052,77,1086,111,1054,79,1009,112,1088,112,1056,80,1075,114,1058,84,215,120,1093,120,1061,88,1091,121,1059,89]}')), y1.cache = new Zr({
+    getCacheKey: JSON.stringify
+}, t => {
+    function e(l) {
+        const c = new Map;
+        for (let f = 0; f < l.length; f += 2) c.set(l[f], l[f + 1]);
+        return c
+    }
+
+    function r(l, c) {
+        const f = new Map(l);
+        for (const [h, m] of c) f.set(h, m);
+        return f
+    }
+
+    function n(l, c) {
+        if (!l) return c;
+        const f = new Map;
+        for (const [h, m] of l) c.has(h) && f.set(h, m);
+        return f
+    }
+    const s = y1.ambiguousCharacterData.value;
+    let i = t.filter(l => !l.startsWith("_") && l in s);
+    i.length === 0 && (i = ["_default"]);
+    let a;
+    for (const l of i) {
+        const c = e(s[l]);
+        a = n(a, c)
+    }
+    const o = e(s._common),
+        u = r(o, a);
+    return new y1(u)
+}), y1._locales = new ve(() => Object.keys(y1.ambiguousCharacterData.value).filter(t => !t.startsWith("_")));
+var un = class k1 {
+    static getRawData() {
+        return JSON.parse('{"_common":[11,12,13,127,847,1564,4447,4448,6068,6069,6155,6156,6157,6158,7355,7356,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8204,8205,8206,8207,8234,8235,8236,8237,8238,8239,8287,8288,8289,8290,8291,8292,8293,8294,8295,8296,8297,8298,8299,8300,8301,8302,8303,10240,12644,65024,65025,65026,65027,65028,65029,65030,65031,65032,65033,65034,65035,65036,65037,65038,65039,65279,65440,65520,65521,65522,65523,65524,65525,65526,65527,65528,65532,78844,119155,119156,119157,119158,119159,119160,119161,119162,917504,917505,917506,917507,917508,917509,917510,917511,917512,917513,917514,917515,917516,917517,917518,917519,917520,917521,917522,917523,917524,917525,917526,917527,917528,917529,917530,917531,917532,917533,917534,917535,917536,917537,917538,917539,917540,917541,917542,917543,917544,917545,917546,917547,917548,917549,917550,917551,917552,917553,917554,917555,917556,917557,917558,917559,917560,917561,917562,917563,917564,917565,917566,917567,917568,917569,917570,917571,917572,917573,917574,917575,917576,917577,917578,917579,917580,917581,917582,917583,917584,917585,917586,917587,917588,917589,917590,917591,917592,917593,917594,917595,917596,917597,917598,917599,917600,917601,917602,917603,917604,917605,917606,917607,917608,917609,917610,917611,917612,917613,917614,917615,917616,917617,917618,917619,917620,917621,917622,917623,917624,917625,917626,917627,917628,917629,917630,917631,917760,917761,917762,917763,917764,917765,917766,917767,917768,917769,917770,917771,917772,917773,917774,917775,917776,917777,917778,917779,917780,917781,917782,917783,917784,917785,917786,917787,917788,917789,917790,917791,917792,917793,917794,917795,917796,917797,917798,917799,917800,917801,917802,917803,917804,917805,917806,917807,917808,917809,917810,917811,917812,917813,917814,917815,917816,917817,917818,917819,917820,917821,917822,917823,917824,917825,917826,917827,917828,917829,917830,917831,917832,917833,917834,917835,917836,917837,917838,917839,917840,917841,917842,917843,917844,917845,917846,917847,917848,917849,917850,917851,917852,917853,917854,917855,917856,917857,917858,917859,917860,917861,917862,917863,917864,917865,917866,917867,917868,917869,917870,917871,917872,917873,917874,917875,917876,917877,917878,917879,917880,917881,917882,917883,917884,917885,917886,917887,917888,917889,917890,917891,917892,917893,917894,917895,917896,917897,917898,917899,917900,917901,917902,917903,917904,917905,917906,917907,917908,917909,917910,917911,917912,917913,917914,917915,917916,917917,917918,917919,917920,917921,917922,917923,917924,917925,917926,917927,917928,917929,917930,917931,917932,917933,917934,917935,917936,917937,917938,917939,917940,917941,917942,917943,917944,917945,917946,917947,917948,917949,917950,917951,917952,917953,917954,917955,917956,917957,917958,917959,917960,917961,917962,917963,917964,917965,917966,917967,917968,917969,917970,917971,917972,917973,917974,917975,917976,917977,917978,917979,917980,917981,917982,917983,917984,917985,917986,917987,917988,917989,917990,917991,917992,917993,917994,917995,917996,917997,917998,917999],"cs":[173,8203,12288],"de":[173,8203,12288],"es":[8203,12288],"fr":[173,8203,12288],"it":[160,173,12288],"ja":[173],"ko":[173,12288],"pl":[173,8203,12288],"pt-BR":[173,8203,12288],"qps-ploc":[160,173,8203,12288],"ru":[173,12288],"tr":[160,173,8203,12288],"zh-hans":[160,173,8203,12288],"zh-hant":[173,12288]}')
+    }
+    static getData() {
+        return this._data || (this._data = new Set([...Object.values(k1.getRawData())].flat())), this._data
+    }
+    static isInvisibleCharacter(e) {
+        return k1.getData().has(e)
+    }
+    static containsInvisibleCharacter(e) {
+        for (let r = 0; r < e.length; r++) {
+            const n = e.codePointAt(r);
+            if (typeof n == "number" && (k1.isInvisibleCharacter(n) || n === 32)) return !0
+        }
+        return !1
+    }
+    static get codePoints() {
+        return k1.getData()
+    }
+};
+un._data = void 0;
+var be = "default",
+    cn = "$initialize",
+    fn = class {
+        constructor(t, e, r, n, s) {
+            this.vsWorker = t, this.req = e, this.channel = r, this.method = n, this.args = s, this.type = 0
+        }
+    },
+    lt = class {
+        constructor(t, e, r, n) {
+            this.vsWorker = t, this.seq = e, this.res = r, this.err = n, this.type = 1
+        }
+    },
+    hn = class {
+        constructor(t, e, r, n, s) {
+            this.vsWorker = t, this.req = e, this.channel = r, this.eventName = n, this.arg = s, this.type = 2
+        }
+    },
+    dn = class {
+        constructor(t, e, r) {
+            this.vsWorker = t, this.req = e, this.event = r, this.type = 3
+        }
+    },
+    mn = class {
+        constructor(t, e) {
+            this.vsWorker = t, this.req = e, this.type = 4
+        }
+    },
+    pn = class {
+        constructor(t) {
+            this._workerId = -1, this._handler = t, this._lastSentReq = 0, this._pendingReplies = Object.create(null), this._pendingEmitters = new Map, this._pendingEvents = new Map
+        }
+        setWorkerId(t) {
+            this._workerId = t
+        }
+        sendMessage(t, e, r) {
+            const n = String(++this._lastSentReq);
+            return new Promise((s, i) => {
+                this._pendingReplies[n] = {
+                    resolve: s,
+                    reject: i
+                }, this._send(new fn(this._workerId, n, t, e, r))
+            })
+        }
+        listen(t, e, r) {
+            let n = null;
+            const s = new J({
+                onWillAddFirstListener: () => {
+                    n = String(++this._lastSentReq), this._pendingEmitters.set(n, s), this._send(new hn(this._workerId, n, t, e, r))
+                },
+                onDidRemoveLastListener: () => {
+                    this._pendingEmitters.delete(n), this._send(new mn(this._workerId, n)), n = null
+                }
+            });
+            return s.event
+        }
+        handleMessage(t) {
+            !t || !t.vsWorker || this._workerId !== -1 && t.vsWorker !== this._workerId || this._handleMessage(t)
+        }
+        createProxyToRemoteChannel(t, e) {
+            const r = {
+                get: (n, s) => (typeof s == "string" && !n[s] && (ct(s) ? n[s] = i => this.listen(t, s, i) : ut(s) ? n[s] = this.listen(t, s, void 0) : s.charCodeAt(0) === 36 && (n[s] = async (...i) => (await e?.(), this.sendMessage(t, s, i)))), n[s])
+            };
+            return new Proxy(Object.create(null), r)
+        }
+        _handleMessage(t) {
+            switch (t.type) {
+                case 1:
+                    return this._handleReplyMessage(t);
+                case 0:
+                    return this._handleRequestMessage(t);
+                case 2:
+                    return this._handleSubscribeEventMessage(t);
+                case 3:
+                    return this._handleEventMessage(t);
+                case 4:
+                    return this._handleUnsubscribeEventMessage(t)
+            }
+        }
+        _handleReplyMessage(t) {
+            if (!this._pendingReplies[t.seq]) {
+                console.warn("Got reply to unknown seq");
+                return
+            }
+            const e = this._pendingReplies[t.seq];
+            if (delete this._pendingReplies[t.seq], t.err) {
+                let r = t.err;
+                t.err.$isError && (r = new Error, r.name = t.err.name, r.message = t.err.message, r.stack = t.err.stack), e.reject(r);
+                return
+            }
+            e.resolve(t.res)
+        }
+        _handleRequestMessage(t) {
+            const e = t.req;
+            this._handler.handleMessage(t.channel, t.method, t.args).then(n => {
+                this._send(new lt(this._workerId, e, n, void 0))
+            }, n => {
+                n.detail instanceof Error && (n.detail = re(n.detail)), this._send(new lt(this._workerId, e, void 0, re(n)))
+            })
+        }
+        _handleSubscribeEventMessage(t) {
+            const e = t.req,
+                r = this._handler.handleEvent(t.channel, t.eventName, t.arg)(n => {
+                    this._send(new dn(this._workerId, e, n))
+                });
+            this._pendingEvents.set(e, r)
+        }
+        _handleEventMessage(t) {
+            if (!this._pendingEmitters.has(t.req)) {
+                console.warn("Got event for unknown req");
+                return
+            }
+            this._pendingEmitters.get(t.req).fire(t.event)
+        }
+        _handleUnsubscribeEventMessage(t) {
+            if (!this._pendingEvents.has(t.req)) {
+                console.warn("Got unsubscribe for unknown req");
+                return
+            }
+            this._pendingEvents.get(t.req).dispose(), this._pendingEvents.delete(t.req)
+        }
+        _send(t) {
+            const e = [];
+            if (t.type === 0)
+                for (let r = 0; r < t.args.length; r++) t.args[r] instanceof ArrayBuffer && e.push(t.args[r]);
+            else t.type === 1 && t.res instanceof ArrayBuffer && e.push(t.res);
+            this._handler.sendMessage(t, e)
+        }
+    };
+
+function ut(t) {
+    return t[0] === "o" && t[1] === "n" && ot(t.charCodeAt(2))
+}
+
+function ct(t) {
+    return /^onDynamic/.test(t) && ot(t.charCodeAt(9))
+}
+var vn = class {
+        constructor(t, e) {
+            this._localChannels = new Map, this._remoteChannels = new Map, this._protocol = new pn({
+                sendMessage: (r, n) => {
+                    t(r, n)
+                },
+                handleMessage: (r, n, s) => this._handleMessage(r, n, s),
+                handleEvent: (r, n, s) => this._handleEvent(r, n, s)
+            }), this.requestHandler = e(this)
+        }
+        onmessage(t) {
+            this._protocol.handleMessage(t)
+        }
+        _handleMessage(t, e, r) {
+            if (t === be && e === cn) return this.initialize(r[0]);
+            const n = t === be ? this.requestHandler : this._localChannels.get(t);
+            if (!n) return Promise.reject(new Error(`Missing channel ${t} on worker thread`));
+            if (typeof n[e] != "function") return Promise.reject(new Error(`Missing method ${e} on worker thread channel ${t}`));
+            try {
+                return Promise.resolve(n[e].apply(n, r))
+            } catch (s) {
+                return Promise.reject(s)
+            }
+        }
+        _handleEvent(t, e, r) {
+            const n = t === be ? this.requestHandler : this._localChannels.get(t);
+            if (!n) throw new Error(`Missing channel ${t} on worker thread`);
+            if (ct(e)) {
+                const s = n[e].call(n, r);
+                if (typeof s != "function") throw new Error(`Missing dynamic event ${e} on request handler.`);
+                return s
+            }
+            if (ut(e)) {
+                const s = n[e];
+                if (typeof s != "function") throw new Error(`Missing event ${e} on request handler.`);
+                return s
+            }
+            throw new Error(`Malformed event name ${e}`)
+        }
+        setChannel(t, e) {
+            this._localChannels.set(t, e)
+        }
+        getChannel(t) {
+            if (!this._remoteChannels.has(t)) {
+                const e = this._protocol.createProxyToRemoteChannel(t);
+                this._remoteChannels.set(t, e)
+            }
+            return this._remoteChannels.get(t)
+        }
+        async initialize(t) {
+            this._protocol.setWorkerId(t)
+        }
+    },
+    we = !1;
+
+function gn(t) {
+    if (we) throw new Error("WebWorker already initialized!");
+    we = !0;
+    const e = new vn(r => globalThis.postMessage(r), r => t(r));
+    return globalThis.onmessage = r => {
+        e.onmessage(r.data)
+    }, e
+}
+
+function _n(t) {
+    globalThis.onmessage = e => {
+        we || gn(t)
+    }
+}
+var h1, ye = globalThis.vscode;
+if (typeof ye < "u" && typeof ye.process < "u") {
+    const t = ye.process;
+    h1 = {
+        get platform() {
+            return t.platform
+        },
+        get arch() {
+            return t.arch
+        },
+        get env() {
+            return t.env
+        },
+        cwd() {
+            return t.cwd()
+        }
+    }
+} else typeof process < "u" && typeof process?.versions?.node == "string" ? h1 = {
+    get platform() {
+        return process.platform
+    },
+    get arch() {
+        return process.arch
+    },
+    get env() {
+        return process.env
+    },
+    cwd() {
+        return process.env.VSCODE_CWD || process.cwd()
+    }
+} : h1 = {
+    get platform() {
+        return w1 ? "win32" : qr ? "darwin" : "linux"
+    },
+    get arch() {},
+    get env() {
+        return {}
+    },
+    cwd() {
+        return "/"
+    }
+};
+var q1 = h1.cwd,
+    bn = h1.env,
+    wn = h1.platform,
+    Ks = h1.arch,
+    yn = 65,
+    Cn = 97,
+    Ln = 90,
+    An = 122,
+    d1 = 46,
+    U = 47,
+    G = 92,
+    r1 = 58,
+    En = 63,
+    ft = class extends Error {
+        constructor(t, e, r) {
+            let n;
+            typeof e == "string" && e.indexOf("not ") === 0 ? (n = "must not be", e = e.replace(/^not /, "")) : n = "must be";
+            const s = t.indexOf(".") !== -1 ? "property" : "argument";
+            let i = `The "${t}" ${s} ${n} of type ${e}`;
+            i += `. Received type ${typeof r}`, super(i), this.code = "ERR_INVALID_ARG_TYPE"
+        }
+    };
+
+function xn(t, e) {
+    if (t === null || typeof t != "object") throw new ft(e, "Object", t)
+}
+
+function M(t, e) {
+    if (typeof t != "string") throw new ft(e, "string", t)
+}
+var Q = wn === "win32";
+
+function N(t) {
+    return t === U || t === G
+}
+
+function Ce(t) {
+    return t === U
+}
+
+function n1(t) {
+    return t >= yn && t <= Ln || t >= Cn && t <= An
+}
+
+function j1(t, e, r, n) {
+    let s = "",
+        i = 0,
+        a = -1,
+        o = 0,
+        u = 0;
+    for (let l = 0; l <= t.length; ++l) {
+        if (l < t.length) u = t.charCodeAt(l);
+        else {
+            if (n(u)) break;
+            u = U
+        }
+        if (n(u)) {
+            if (!(a === l - 1 || o === 1))
+                if (o === 2) {
+                    if (s.length < 2 || i !== 2 || s.charCodeAt(s.length - 1) !== d1 || s.charCodeAt(s.length - 2) !== d1) {
+                        if (s.length > 2) {
+                            const c = s.lastIndexOf(r);
+                            c === -1 ? (s = "", i = 0) : (s = s.slice(0, c), i = s.length - 1 - s.lastIndexOf(r)), a = l, o = 0;
+                            continue
+                        } else if (s.length !== 0) {
+                            s = "", i = 0, a = l, o = 0;
+                            continue
+                        }
+                    }
+                    e && (s += s.length > 0 ? `${r}..` : "..", i = 2)
+                } else s.length > 0 ? s += `${r}${t.slice(a+1,l)}` : s = t.slice(a + 1, l), i = l - a - 1;
+            a = l, o = 0
+        } else u === d1 && o !== -1 ? ++o : o = -1
+    }
+    return s
+}
+
+function Nn(t) {
+    return t ? `${t[0]==="."?"":"."}${t}` : ""
+}
+
+function ht(t, e) {
+    xn(e, "pathObject");
+    const r = e.dir || e.root,
+        n = e.base || `${e.name||""}${Nn(e.ext)}`;
+    return r ? r === e.root ? `${r}${n}` : `${r}${t}${n}` : n
+}
+var $ = {
+        resolve(...t) {
+            let e = "",
+                r = "",
+                n = !1;
+            for (let s = t.length - 1; s >= -1; s--) {
+                let i;
+                if (s >= 0) {
+                    if (i = t[s], M(i, `paths[${s}]`), i.length === 0) continue
+                } else e.length === 0 ? i = q1() : (i = bn[`=${e}`] || q1(), (i === void 0 || i.slice(0, 2).toLowerCase() !== e.toLowerCase() && i.charCodeAt(2) === G) && (i = `${e}\\`));
+                const a = i.length;
+                let o = 0,
+                    u = "",
+                    l = !1;
+                const c = i.charCodeAt(0);
+                if (a === 1) N(c) && (o = 1, l = !0);
+                else if (N(c))
+                    if (l = !0, N(i.charCodeAt(1))) {
+                        let f = 2,
+                            h = f;
+                        for (; f < a && !N(i.charCodeAt(f));) f++;
+                        if (f < a && f !== h) {
+                            const m = i.slice(h, f);
+                            for (h = f; f < a && N(i.charCodeAt(f));) f++;
+                            if (f < a && f !== h) {
+                                for (h = f; f < a && !N(i.charCodeAt(f));) f++;
+                                (f === a || f !== h) && (u = `\\\\${m}\\${i.slice(h,f)}`, o = f)
+                            }
+                        }
+                    } else o = 1;
+                else n1(c) && i.charCodeAt(1) === r1 && (u = i.slice(0, 2), o = 2, a > 2 && N(i.charCodeAt(2)) && (l = !0, o = 3));
+                if (u.length > 0)
+                    if (e.length > 0) {
+                        if (u.toLowerCase() !== e.toLowerCase()) continue
+                    } else e = u;
+                if (n) {
+                    if (e.length > 0) break
+                } else if (r = `${i.slice(o)}\\${r}`, n = l, l && e.length > 0) break
+            }
+            return r = j1(r, !n, "\\", N), n ? `${e}\\${r}` : `${e}${r}` || "."
+        },
+        normalize(t) {
+            M(t, "path");
+            const e = t.length;
+            if (e === 0) return ".";
+            let r = 0,
+                n, s = !1;
+            const i = t.charCodeAt(0);
+            if (e === 1) return Ce(i) ? "\\" : t;
+            if (N(i))
+                if (s = !0, N(t.charCodeAt(1))) {
+                    let o = 2,
+                        u = o;
+                    for (; o < e && !N(t.charCodeAt(o));) o++;
+                    if (o < e && o !== u) {
+                        const l = t.slice(u, o);
+                        for (u = o; o < e && N(t.charCodeAt(o));) o++;
+                        if (o < e && o !== u) {
+                            for (u = o; o < e && !N(t.charCodeAt(o));) o++;
+                            if (o === e) return `\\\\${l}\\${t.slice(u)}\\`;
+                            o !== u && (n = `\\\\${l}\\${t.slice(u,o)}`, r = o)
+                        }
+                    }
+                } else r = 1;
+            else n1(i) && t.charCodeAt(1) === r1 && (n = t.slice(0, 2), r = 2, e > 2 && N(t.charCodeAt(2)) && (s = !0, r = 3));
+            let a = r < e ? j1(t.slice(r), !s, "\\", N) : "";
+            if (a.length === 0 && !s && (a = "."), a.length > 0 && N(t.charCodeAt(e - 1)) && (a += "\\"), !s && n === void 0 && t.includes(":")) {
+                if (a.length >= 2 && n1(a.charCodeAt(0)) && a.charCodeAt(1) === r1) return `.\\${a}`;
+                let o = t.indexOf(":");
+                do
+                    if (o === e - 1 || N(t.charCodeAt(o + 1))) return `.\\${a}`; while ((o = t.indexOf(":", o + 1)) !== -1)
+            }
+            return n === void 0 ? s ? `\\${a}` : a : s ? `${n}\\${a}` : `${n}${a}`
+        },
+        isAbsolute(t) {
+            M(t, "path");
+            const e = t.length;
+            if (e === 0) return !1;
+            const r = t.charCodeAt(0);
+            return N(r) || e > 2 && n1(r) && t.charCodeAt(1) === r1 && N(t.charCodeAt(2))
+        },
+        join(...t) {
+            if (t.length === 0) return ".";
+            let e, r;
+            for (let i = 0; i < t.length; ++i) {
+                const a = t[i];
+                M(a, "path"), a.length > 0 && (e === void 0 ? e = r = a : e += `\\${a}`)
+            }
+            if (e === void 0) return ".";
+            let n = !0,
+                s = 0;
+            if (typeof r == "string" && N(r.charCodeAt(0))) {
+                ++s;
+                const i = r.length;
+                i > 1 && N(r.charCodeAt(1)) && (++s, i > 2 && (N(r.charCodeAt(2)) ? ++s : n = !1))
+            }
+            if (n) {
+                for (; s < e.length && N(e.charCodeAt(s));) s++;
+                s >= 2 && (e = `\\${e.slice(s)}`)
+            }
+            return $.normalize(e)
+        },
+        relative(t, e) {
+            if (M(t, "from"), M(e, "to"), t === e) return "";
+            const r = $.resolve(t),
+                n = $.resolve(e);
+            if (r === n || (t = r.toLowerCase(), e = n.toLowerCase(), t === e)) return "";
+            if (r.length !== t.length || n.length !== e.length) {
+                const p = r.split("\\"),
+                    b = n.split("\\");
+                p[p.length - 1] === "" && p.pop(), b[b.length - 1] === "" && b.pop();
+                const L = p.length,
+                    C = b.length,
+                    k = L < C ? L : C;
+                let E;
+                for (E = 0; E < k && p[E].toLowerCase() === b[E].toLowerCase(); E++);
+                return E === 0 ? n : E === k ? C > k ? b.slice(E).join("\\") : L > k ? "..\\".repeat(L - 1 - E) + ".." : "" : "..\\".repeat(L - E) + b.slice(E).join("\\")
+            }
+            let s = 0;
+            for (; s < t.length && t.charCodeAt(s) === G;) s++;
+            let i = t.length;
+            for (; i - 1 > s && t.charCodeAt(i - 1) === G;) i--;
+            const a = i - s;
+            let o = 0;
+            for (; o < e.length && e.charCodeAt(o) === G;) o++;
+            let u = e.length;
+            for (; u - 1 > o && e.charCodeAt(u - 1) === G;) u--;
+            const l = u - o,
+                c = a < l ? a : l;
+            let f = -1,
+                h = 0;
+            for (; h < c; h++) {
+                const p = t.charCodeAt(s + h);
+                if (p !== e.charCodeAt(o + h)) break;
+                p === G && (f = h)
+            }
+            if (h !== c) {
+                if (f === -1) return n
+            } else {
+                if (l > c) {
+                    if (e.charCodeAt(o + h) === G) return n.slice(o + h + 1);
+                    if (h === 2) return n.slice(o + h)
+                }
+                a > c && (t.charCodeAt(s + h) === G ? f = h : h === 2 && (f = 3)), f === -1 && (f = 0)
+            }
+            let m = "";
+            for (h = s + f + 1; h <= i; ++h)(h === i || t.charCodeAt(h) === G) && (m += m.length === 0 ? ".." : "\\..");
+            return o += f, m.length > 0 ? `${m}${n.slice(o,u)}` : (n.charCodeAt(o) === G && ++o, n.slice(o, u))
+        },
+        toNamespacedPath(t) {
+            if (typeof t != "string" || t.length === 0) return t;
+            const e = $.resolve(t);
+            if (e.length <= 2) return t;
+            if (e.charCodeAt(0) === G) {
+                if (e.charCodeAt(1) === G) {
+                    const r = e.charCodeAt(2);
+                    if (r !== En && r !== d1) return `\\\\?\\UNC\\${e.slice(2)}`
+                }
+            } else if (n1(e.charCodeAt(0)) && e.charCodeAt(1) === r1 && e.charCodeAt(2) === G) return `\\\\?\\${e}`;
+            return e
+        },
+        dirname(t) {
+            M(t, "path");
+            const e = t.length;
+            if (e === 0) return ".";
+            let r = -1,
+                n = 0;
+            const s = t.charCodeAt(0);
+            if (e === 1) return N(s) ? t : ".";
+            if (N(s)) {
+                if (r = n = 1, N(t.charCodeAt(1))) {
+                    let o = 2,
+                        u = o;
+                    for (; o < e && !N(t.charCodeAt(o));) o++;
+                    if (o < e && o !== u) {
+                        for (u = o; o < e && N(t.charCodeAt(o));) o++;
+                        if (o < e && o !== u) {
+                            for (u = o; o < e && !N(t.charCodeAt(o));) o++;
+                            if (o === e) return t;
+                            o !== u && (r = n = o + 1)
+                        }
+                    }
+                }
+            } else n1(s) && t.charCodeAt(1) === r1 && (r = e > 2 && N(t.charCodeAt(2)) ? 3 : 2, n = r);
+            let i = -1,
+                a = !0;
+            for (let o = e - 1; o >= n; --o)
+                if (N(t.charCodeAt(o))) {
+                    if (!a) {
+                        i = o;
+                        break
+                    }
+                } else a = !1;
+            if (i === -1) {
+                if (r === -1) return ".";
+                i = r
+            }
+            return t.slice(0, i)
+        },
+        basename(t, e) {
+            e !== void 0 && M(e, "suffix"), M(t, "path");
+            let r = 0,
+                n = -1,
+                s = !0,
+                i;
+            if (t.length >= 2 && n1(t.charCodeAt(0)) && t.charCodeAt(1) === r1 && (r = 2), e !== void 0 && e.length > 0 && e.length <= t.length) {
+                if (e === t) return "";
+                let a = e.length - 1,
+                    o = -1;
+                for (i = t.length - 1; i >= r; --i) {
+                    const u = t.charCodeAt(i);
+                    if (N(u)) {
+                        if (!s) {
+                            r = i + 1;
+                            break
+                        }
+                    } else o === -1 && (s = !1, o = i + 1), a >= 0 && (u === e.charCodeAt(a) ? --a === -1 && (n = i) : (a = -1, n = o))
+                }
+                return r === n ? n = o : n === -1 && (n = t.length), t.slice(r, n)
+            }
+            for (i = t.length - 1; i >= r; --i)
+                if (N(t.charCodeAt(i))) {
+                    if (!s) {
+                        r = i + 1;
+                        break
+                    }
+                } else n === -1 && (s = !1, n = i + 1);
+            return n === -1 ? "" : t.slice(r, n)
+        },
+        extname(t) {
+            M(t, "path");
+            let e = 0,
+                r = -1,
+                n = 0,
+                s = -1,
+                i = !0,
+                a = 0;
+            t.length >= 2 && t.charCodeAt(1) === r1 && n1(t.charCodeAt(0)) && (e = n = 2);
+            for (let o = t.length - 1; o >= e; --o) {
+                const u = t.charCodeAt(o);
+                if (N(u)) {
+                    if (!i) {
+                        n = o + 1;
+                        break
+                    }
+                    continue
+                }
+                s === -1 && (i = !1, s = o + 1), u === d1 ? r === -1 ? r = o : a !== 1 && (a = 1) : r !== -1 && (a = -1)
+            }
+            return r === -1 || s === -1 || a === 0 || a === 1 && r === s - 1 && r === n + 1 ? "" : t.slice(r, s)
+        },
+        format: ht.bind(null, "\\"),
+        parse(t) {
+            M(t, "path");
+            const e = {
+                root: "",
+                dir: "",
+                base: "",
+                ext: "",
+                name: ""
+            };
+            if (t.length === 0) return e;
+            const r = t.length;
+            let n = 0,
+                s = t.charCodeAt(0);
+            if (r === 1) return N(s) ? (e.root = e.dir = t, e) : (e.base = e.name = t, e);
+            if (N(s)) {
+                if (n = 1, N(t.charCodeAt(1))) {
+                    let f = 2,
+                        h = f;
+                    for (; f < r && !N(t.charCodeAt(f));) f++;
+                    if (f < r && f !== h) {
+                        for (h = f; f < r && N(t.charCodeAt(f));) f++;
+                        if (f < r && f !== h) {
+                            for (h = f; f < r && !N(t.charCodeAt(f));) f++;
+                            f === r ? n = f : f !== h && (n = f + 1)
+                        }
+                    }
+                }
+            } else if (n1(s) && t.charCodeAt(1) === r1) {
+                if (r <= 2) return e.root = e.dir = t, e;
+                if (n = 2, N(t.charCodeAt(2))) {
+                    if (r === 3) return e.root = e.dir = t, e;
+                    n = 3
+                }
+            }
+            n > 0 && (e.root = t.slice(0, n));
+            let i = -1,
+                a = n,
+                o = -1,
+                u = !0,
+                l = t.length - 1,
+                c = 0;
+            for (; l >= n; --l) {
+                if (s = t.charCodeAt(l), N(s)) {
+                    if (!u) {
+                        a = l + 1;
+                        break
+                    }
+                    continue
+                }
+                o === -1 && (u = !1, o = l + 1), s === d1 ? i === -1 ? i = l : c !== 1 && (c = 1) : i !== -1 && (c = -1)
+            }
+            return o !== -1 && (i === -1 || c === 0 || c === 1 && i === o - 1 && i === a + 1 ? e.base = e.name = t.slice(a, o) : (e.name = t.slice(a, i), e.base = t.slice(a, o), e.ext = t.slice(i, o))), a > 0 && a !== n ? e.dir = t.slice(0, a - 1) : e.dir = e.root, e
+        },
+        sep: "\\",
+        delimiter: ";",
+        win32: null,
+        posix: null
+    },
+    Pn = (() => {
+        if (Q) {
+            const t = /\\/g;
+            return () => {
+                const e = q1().replace(t, "/");
+                return e.slice(e.indexOf("/"))
+            }
+        }
+        return () => q1()
+    })(),
+    T = {
+        resolve(...t) {
+            let e = "",
+                r = !1;
+            for (let n = t.length - 1; n >= 0 && !r; n--) {
+                const s = t[n];
+                M(s, `paths[${n}]`), s.length !== 0 && (e = `${s}/${e}`, r = s.charCodeAt(0) === U)
+            }
+            if (!r) {
+                const n = Pn();
+                e = `${n}/${e}`, r = n.charCodeAt(0) === U
+            }
+            return e = j1(e, !r, "/", Ce), r ? `/${e}` : e.length > 0 ? e : "."
+        },
+        normalize(t) {
+            if (M(t, "path"), t.length === 0) return ".";
+            const e = t.charCodeAt(0) === U,
+                r = t.charCodeAt(t.length - 1) === U;
+            return t = j1(t, !e, "/", Ce), t.length === 0 ? e ? "/" : r ? "./" : "." : (r && (t += "/"), e ? `/${t}` : t)
+        },
+        isAbsolute(t) {
+            return M(t, "path"), t.length > 0 && t.charCodeAt(0) === U
+        },
+        join(...t) {
+            if (t.length === 0) return ".";
+            const e = [];
+            for (let r = 0; r < t.length; ++r) {
+                const n = t[r];
+                M(n, "path"), n.length > 0 && e.push(n)
+            }
+            return e.length === 0 ? "." : T.normalize(e.join("/"))
+        },
+        relative(t, e) {
+            if (M(t, "from"), M(e, "to"), t === e || (t = T.resolve(t), e = T.resolve(e), t === e)) return "";
+            const r = 1,
+                n = t.length,
+                s = n - r,
+                i = 1,
+                a = e.length - i,
+                o = s < a ? s : a;
+            let u = -1,
+                l = 0;
+            for (; l < o; l++) {
+                const f = t.charCodeAt(r + l);
+                if (f !== e.charCodeAt(i + l)) break;
+                f === U && (u = l)
+            }
+            if (l === o)
+                if (a > o) {
+                    if (e.charCodeAt(i + l) === U) return e.slice(i + l + 1);
+                    if (l === 0) return e.slice(i + l)
+                } else s > o && (t.charCodeAt(r + l) === U ? u = l : l === 0 && (u = 0));
+            let c = "";
+            for (l = r + u + 1; l <= n; ++l)(l === n || t.charCodeAt(l) === U) && (c += c.length === 0 ? ".." : "/..");
+            return `${c}${e.slice(i+u)}`
+        },
+        toNamespacedPath(t) {
+            return t
+        },
+        dirname(t) {
+            if (M(t, "path"), t.length === 0) return ".";
+            const e = t.charCodeAt(0) === U;
+            let r = -1,
+                n = !0;
+            for (let s = t.length - 1; s >= 1; --s)
+                if (t.charCodeAt(s) === U) {
+                    if (!n) {
+                        r = s;
+                        break
+                    }
+                } else n = !1;
+            return r === -1 ? e ? "/" : "." : e && r === 1 ? "//" : t.slice(0, r)
+        },
+        basename(t, e) {
+            e !== void 0 && M(e, "suffix"), M(t, "path");
+            let r = 0,
+                n = -1,
+                s = !0,
+                i;
+            if (e !== void 0 && e.length > 0 && e.length <= t.length) {
+                if (e === t) return "";
+                let a = e.length - 1,
+                    o = -1;
+                for (i = t.length - 1; i >= 0; --i) {
+                    const u = t.charCodeAt(i);
+                    if (u === U) {
+                        if (!s) {
+                            r = i + 1;
+                            break
+                        }
+                    } else o === -1 && (s = !1, o = i + 1), a >= 0 && (u === e.charCodeAt(a) ? --a === -1 && (n = i) : (a = -1, n = o))
+                }
+                return r === n ? n = o : n === -1 && (n = t.length), t.slice(r, n)
+            }
+            for (i = t.length - 1; i >= 0; --i)
+                if (t.charCodeAt(i) === U) {
+                    if (!s) {
+                        r = i + 1;
+                        break
+                    }
+                } else n === -1 && (s = !1, n = i + 1);
+            return n === -1 ? "" : t.slice(r, n)
+        },
+        extname(t) {
+            M(t, "path");
+            let e = -1,
+                r = 0,
+                n = -1,
+                s = !0,
+                i = 0;
+            for (let a = t.length - 1; a >= 0; --a) {
+                const o = t[a];
+                if (o === "/") {
+                    if (!s) {
+                        r = a + 1;
+                        break
+                    }
+                    continue
+                }
+                n === -1 && (s = !1, n = a + 1), o === "." ? e === -1 ? e = a : i !== 1 && (i = 1) : e !== -1 && (i = -1)
+            }
+            return e === -1 || n === -1 || i === 0 || i === 1 && e === n - 1 && e === r + 1 ? "" : t.slice(e, n)
+        },
+        format: ht.bind(null, "/"),
+        parse(t) {
+            M(t, "path");
+            const e = {
+                root: "",
+                dir: "",
+                base: "",
+                ext: "",
+                name: ""
+            };
+            if (t.length === 0) return e;
+            const r = t.charCodeAt(0) === U;
+            let n;
+            r ? (e.root = "/", n = 1) : n = 0;
+            let s = -1,
+                i = 0,
+                a = -1,
+                o = !0,
+                u = t.length - 1,
+                l = 0;
+            for (; u >= n; --u) {
+                const c = t.charCodeAt(u);
+                if (c === U) {
+                    if (!o) {
+                        i = u + 1;
+                        break
+                    }
+                    continue
+                }
+                a === -1 && (o = !1, a = u + 1), c === d1 ? s === -1 ? s = u : l !== 1 && (l = 1) : s !== -1 && (l = -1)
+            }
+            if (a !== -1) {
+                const c = i === 0 && r ? 1 : i;
+                s === -1 || l === 0 || l === 1 && s === a - 1 && s === i + 1 ? e.base = e.name = t.slice(c, a) : (e.name = t.slice(c, s), e.base = t.slice(c, a), e.ext = t.slice(s, a))
+            }
+            return i > 0 ? e.dir = t.slice(0, i - 1) : r && (e.dir = "/"), e
+        },
+        sep: "/",
+        delimiter: ":",
+        win32: null,
+        posix: null
+    };
+T.win32 = $.win32 = $, T.posix = $.posix = T;
+var kn = Q ? $.normalize : T.normalize,
+    Vs = Q ? $.isAbsolute : T.isAbsolute,
+    Sn = Q ? $.join : T.join,
+    Tn = Q ? $.resolve : T.resolve,
+    dt = Q ? $.relative : T.relative,
+    Rn = Q ? $.dirname : T.dirname,
+    On = Q ? $.basename : T.basename,
+    In = Q ? $.extname : T.extname,
+    Js = Q ? $.format : T.format,
+    Ys = Q ? $.parse : T.parse,
+    Zs = Q ? $.toNamespacedPath : T.toNamespacedPath,
+    s1 = Q ? $.sep : T.sep,
+    Xs = Q ? $.delimiter : T.delimiter;
+
+function l1(t) {
+    return t === 47 || t === 92
+}
+
+function mt(t) {
+    return t.replace(/[\\/]/g, T.sep)
+}
+
+function Dn(t) {
+    return t.indexOf("/") === -1 && (t = mt(t)), /^[a-zA-Z]:(\/|$)/.test(t) && (t = "/" + t), t
+}
+
+function pt(t, e = T.sep) {
+    if (!t) return "";
+    const r = t.length,
+        n = t.charCodeAt(0);
+    if (l1(n)) {
+        if (l1(t.charCodeAt(1)) && !l1(t.charCodeAt(2))) {
+            let i = 3;
+            const a = i;
+            for (; i < r && !l1(t.charCodeAt(i)); i++);
+            if (a !== i && !l1(t.charCodeAt(i + 1))) {
+                for (i += 1; i < r; i++)
+                    if (l1(t.charCodeAt(i))) return t.slice(0, i + 1).replace(/[\\/]/g, e)
+            }
+        }
+        return e
+    } else if (Fn(n) && t.charCodeAt(1) === 58) return l1(t.charCodeAt(2)) ? t.slice(0, 2) + e : t.slice(0, 2);
+    let s = t.indexOf("://");
+    if (s !== -1) {
+        for (s += 3; s < r; s++)
+            if (l1(t.charCodeAt(s))) return t.slice(0, s + 1)
+    }
+    return ""
+}
+
+function Mn(t, e, r) {
+    return r === 0 ? !0 : t.charCodeAt(0) !== e.charCodeAt(0) ? !1 : r === 1 ? !0 : t.charCodeAt(r - 1) !== e.charCodeAt(r - 1) ? !1 : t.startsWith(e)
+}
+
+function $n(t, e, r) {
+    for (let n = 0; n < r; n++) {
+        let s = t.charCodeAt(n),
+            i = e.charCodeAt(n);
+        if (s !== i) {
+            if (s >= 128 || i >= 128) return _e(t, e, n, r, n, r) === 0;
+            if (s >= 97 && s <= 122 && (s -= 32), i >= 97 && i <= 122 && (i -= 32), s !== i) return !1
+        }
+    }
+    return !0
+}
+
+function m1(t, e, r, n = s1) {
+    if (t === e) return !0;
+    if (!t || !e) return !1;
+    const s = t.length,
+        i = e.length;
+    if (i > s) return !1;
+    const a = n.charCodeAt(0),
+        o = e.charCodeAt(i - 1) === a;
+    if (i < s && !o && t.charCodeAt(i) !== a) return !1;
+    if (r) {
+        if (!$n(t, e, i)) return !1
+    } else if (!Mn(t, e, i)) return !1;
+    return i === s || o ? !0 : t.charCodeAt(i) === a
+}
+
+function Fn(t) {
+    return t >= 65 && t <= 90 || t >= 97 && t <= 122
+}
+var z1 = typeof Buffer < "u",
+    Un = new ve(() => new Uint8Array(256)),
+    Le, Ae, Bn = 1 / 0,
+    vt, Wn = class K {
+        static alloc(e) {
+            return z1 ? new K(Buffer.allocUnsafe(e)) : new K(new Uint8Array(e))
+        }
+        static wrap(e) {
+            return z1 && !Buffer.isBuffer(e) && (e = Buffer.from(e.buffer, e.byteOffset, e.byteLength)), new K(e)
+        }
+        static fromString(e, r) {
+            return !(r?.dontUseNodeBuffer || !1) && z1 ? new K(Buffer.from(e)) : (Le || (Le = new TextEncoder), new K(Le.encode(e)))
+        }
+        static fromByteArray(e) {
+            const r = K.alloc(e.length);
+            for (let n = 0, s = e.length; n < s; n++) r.buffer[n] = e[n];
+            return r
+        }
+        static concat(e, r) {
+            if (typeof r > "u") {
+                r = 0;
+                for (let i = 0, a = e.length; i < a; i++) r += e[i].byteLength
+            }
+            const n = K.alloc(r);
+            let s = 0;
+            for (let i = 0, a = e.length; i < a; i++) {
+                const o = e[i];
+                n.set(o, s), s += o.byteLength
+            }
+            return n
+        }
+        constructor(e) {
+            this.buffer = e, this.byteLength = this.buffer.byteLength
+        }
+        clone() {
+            const e = K.alloc(this.byteLength);
+            return e.set(this), e
+        }
+        toString() {
+            if (z1) return this.buffer.toString();
+            if (vt && this.buffer.byteLength > Bn) try {
+                vt(this.buffer.byteLength)
+            } catch {}
+            return Ae || (Ae = new TextDecoder), Ae.decode(this.buffer)
+        }
+        slice(e, r) {
+            return new K(this.buffer.subarray(e, r))
+        }
+        set(e, r) {
+            if (e instanceof K) this.buffer.set(e.buffer, r);
+            else if (e instanceof Uint8Array) this.buffer.set(e, r);
+            else if (e instanceof ArrayBuffer) this.buffer.set(new Uint8Array(e), r);
+            else if (ArrayBuffer.isView(e)) this.buffer.set(new Uint8Array(e.buffer, e.byteOffset, e.byteLength), r);
+            else throw new Error("Unknown argument 'array'")
+        }
+        readUInt32BE(e) {
+            return jn(this.buffer, e)
+        }
+        writeUInt32BE(e, r) {
+            zn(this.buffer, e, r)
+        }
+        readUInt32LE(e) {
+            return Hn(this.buffer, e)
+        }
+        writeUInt32LE(e, r) {
+            Gn(this.buffer, e, r)
+        }
+        readUInt8(e) {
+            return Qn(this.buffer, e)
+        }
+        writeUInt8(e, r) {
+            Kn(this.buffer, e, r)
+        }
+        indexOf(e, r = 0) {
+            return qn(this.buffer, e instanceof K ? e.buffer : e, r)
+        }
+        equals(e) {
+            return this === e ? !0 : this.byteLength !== e.byteLength ? !1 : this.buffer.every((r, n) => r === e.buffer[n])
+        }
+    };
+
+function qn(t, e, r = 0) {
+    const n = e.byteLength,
+        s = t.byteLength;
+    if (n === 0) return 0;
+    if (n === 1) return t.indexOf(e[0]);
+    if (n > s - r) return -1;
+    const i = Un.value;
+    i.fill(e.length);
+    for (let l = 0; l < e.length; l++) i[e[l]] = e.length - l - 1;
+    let a = r + e.length - 1,
+        o = a,
+        u = -1;
+    for (; a < s;)
+        if (t[a] === e[o]) {
+            if (o === 0) {
+                u = a;
+                break
+            }
+            a--, o--
+        } else a += Math.max(e.length - o, i[t[a]]), o = e.length - 1;
+    return u
+}
+
+function jn(t, e) {
+    return t[e] * 2 ** 24 + t[e + 1] * 2 ** 16 + t[e + 2] * 2 ** 8 + t[e + 3]
+}
+
+function zn(t, e, r) {
+    t[r + 3] = e, e = e >>> 8, t[r + 2] = e, e = e >>> 8, t[r + 1] = e, e = e >>> 8, t[r] = e
+}
+
+function Hn(t, e) {
+    return t[e + 0] << 0 >>> 0 | t[e + 1] << 8 >>> 0 | t[e + 2] << 16 >>> 0 | t[e + 3] << 24 >>> 0
+}
+
+function Gn(t, e, r) {
+    t[r + 0] = e & 255, e = e >>> 8, t[r + 1] = e & 255, e = e >>> 8, t[r + 2] = e & 255, e = e >>> 8, t[r + 3] = e & 255
+}
+
+function Qn(t, e) {
+    return t[e]
+}
+
+function Kn(t, e, r) {
+    t[r] = e
+}
+var Vn = /^\w[\w\d+.-]*$/,
+    Jn = /^\//,
+    Yn = /^\/\//;
+
+function Zn(t, e) {
+    if (!t.scheme && e) throw new Error(`[UriError]: Scheme is missing: {scheme: "", authority: "${t.authority}", path: "${t.path}", query: "${t.query}", fragment: "${t.fragment}"}`);
+    if (t.scheme && !Vn.test(t.scheme)) throw new Error("[UriError]: Scheme contains illegal characters.");
+    if (t.path) {
+        if (t.authority) {
+            if (!Jn.test(t.path)) throw new Error('[UriError]: If a URI contains an authority component, then the path component must either be empty or begin with a slash ("/") character')
+        } else if (Yn.test(t.path)) throw new Error('[UriError]: If a URI does not contain an authority component, then the path cannot begin with two slash characters ("//")')
+    }
+}
+
+function Xn(t, e) {
+    return !t && !e ? "file" : t
+}
+
+function es(t, e) {
+    switch (t) {
+        case "https":
+        case "http":
+        case "file":
+            e ? e[0] !== Y && (e = Y + e) : e = Y;
+            break
+    }
+    return e
+}
+var I = "",
+    Y = "/",
+    ts = /^(([^:/?#]+?):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/,
+    q = class X1 {
+        static isUri(e) {
+            return e instanceof X1 ? !0 : e ? typeof e.authority == "string" && typeof e.fragment == "string" && typeof e.path == "string" && typeof e.query == "string" && typeof e.scheme == "string" && typeof e.fsPath == "string" && typeof e.with == "function" && typeof e.toString == "function" : !1
+        }
+        constructor(e, r, n, s, i, a = !1) {
+            typeof e == "object" ? (this.scheme = e.scheme || I, this.authority = e.authority || I, this.path = e.path || I, this.query = e.query || I, this.fragment = e.fragment || I) : (this.scheme = Xn(e, a), this.authority = r || I, this.path = es(this.scheme, n || I), this.query = s || I, this.fragment = i || I, Zn(this, a))
+        }
+        get fsPath() {
+            return H1(this, !1)
+        }
+        with(e) {
+            if (!e) return this;
+            let {
+                scheme: r,
+                authority: n,
+                path: s,
+                query: i,
+                fragment: a
+            } = e;
+            return r === void 0 ? r = this.scheme : r === null && (r = I), n === void 0 ? n = this.authority : n === null && (n = I), s === void 0 ? s = this.path : s === null && (s = I), i === void 0 ? i = this.query : i === null && (i = I), a === void 0 ? a = this.fragment : a === null && (a = I), r === this.scheme && n === this.authority && s === this.path && i === this.query && a === this.fragment ? this : new C1(r, n, s, i, a)
+        }
+        static parse(e, r = !1) {
+            const n = ts.exec(e);
+            return n ? new C1(n[2] || I, G1(n[4] || I), G1(n[5] || I), G1(n[7] || I), G1(n[9] || I), r) : new C1(I, I, I, I, I)
+        }
+        static file(e) {
+            let r = I;
+            if (w1 && (e = e.replace(/\\/g, Y)), e[0] === Y && e[1] === Y) {
+                const n = e.indexOf(Y, 2);
+                n === -1 ? (r = e.substring(2), e = Y) : (r = e.substring(2, n), e = e.substring(n) || Y)
+            }
+            return new C1("file", r, e, I, I)
+        }
+        static from(e, r) {
+            return new C1(e.scheme, e.authority, e.path, e.query, e.fragment, r)
+        }
+        static joinPath(e, ...r) {
+            if (!e.path) throw new Error("[UriError]: cannot call joinPath on URI without path");
+            let n;
+            return w1 && e.scheme === "file" ? n = X1.file($.join(H1(e, !0), ...r)).path : n = T.join(e.path, ...r), e.with({
+                path: n
+            })
+        }
+        toString(e = !1) {
+            return Ee(this, e)
+        }
+        toJSON() {
+            return this
+        }
+        static revive(e) {
+            if (e) {
+                if (e instanceof X1) return e;
+                {
+                    const r = new C1(e);
+                    return r._formatted = e.external ?? null, r._fsPath = e._sep === gt ? e.fsPath ?? null : null, r
+                }
+            } else return e
+        } [Symbol.for("debug.description")]() {
+            return `URI(${this.toString()})`
+        }
+    },
+    gt = w1 ? 1 : void 0,
+    C1 = class extends q {
+        constructor() {
+            super(...arguments), this._formatted = null, this._fsPath = null
+        }
+        get fsPath() {
+            return this._fsPath || (this._fsPath = H1(this, !1)), this._fsPath
+        }
+        toString(t = !1) {
+            return t ? Ee(this, !0) : (this._formatted || (this._formatted = Ee(this, !1)), this._formatted)
+        }
+        toJSON() {
+            const t = {
+                $mid: 1
+            };
+            return this._fsPath && (t.fsPath = this._fsPath, t._sep = gt), this._formatted && (t.external = this._formatted), this.path && (t.path = this.path), this.scheme && (t.scheme = this.scheme), this.authority && (t.authority = this.authority), this.query && (t.query = this.query), this.fragment && (t.fragment = this.fragment), t
+        }
+    },
+    _t = {
+        58: "%3A",
+        47: "%2F",
+        63: "%3F",
+        35: "%23",
+        91: "%5B",
+        93: "%5D",
+        64: "%40",
+        33: "%21",
+        36: "%24",
+        38: "%26",
+        39: "%27",
+        40: "%28",
+        41: "%29",
+        42: "%2A",
+        43: "%2B",
+        44: "%2C",
+        59: "%3B",
+        61: "%3D",
+        32: "%20"
+    };
+
+function bt(t, e, r) {
+    let n, s = -1;
+    for (let i = 0; i < t.length; i++) {
+        const a = t.charCodeAt(i);
+        if (a >= 97 && a <= 122 || a >= 65 && a <= 90 || a >= 48 && a <= 57 || a === 45 || a === 46 || a === 95 || a === 126 || e && a === 47 || r && a === 91 || r && a === 93 || r && a === 58) s !== -1 && (n += encodeURIComponent(t.substring(s, i)), s = -1), n !== void 0 && (n += t.charAt(i));
+        else {
+            n === void 0 && (n = t.substr(0, i));
+            const o = _t[a];
+            o !== void 0 ? (s !== -1 && (n += encodeURIComponent(t.substring(s, i)), s = -1), n += o) : s === -1 && (s = i)
+        }
+    }
+    return s !== -1 && (n += encodeURIComponent(t.substring(s))), n !== void 0 ? n : t
+}
+
+function rs(t) {
+    let e;
+    for (let r = 0; r < t.length; r++) {
+        const n = t.charCodeAt(r);
+        n === 35 || n === 63 ? (e === void 0 && (e = t.substr(0, r)), e += _t[n]) : e !== void 0 && (e += t[r])
+    }
+    return e !== void 0 ? e : t
+}
+
+function H1(t, e) {
+    let r;
+    return t.authority && t.path.length > 1 && t.scheme === "file" ? r = `//${t.authority}${t.path}` : t.path.charCodeAt(0) === 47 && (t.path.charCodeAt(1) >= 65 && t.path.charCodeAt(1) <= 90 || t.path.charCodeAt(1) >= 97 && t.path.charCodeAt(1) <= 122) && t.path.charCodeAt(2) === 58 ? e ? r = t.path.substr(1) : r = t.path[1].toLowerCase() + t.path.substr(2) : r = t.path, w1 && (r = r.replace(/\//g, "\\")), r
+}
+
+function Ee(t, e) {
+    const r = e ? rs : bt;
+    let n = "",
+        {
+            scheme: s,
+            authority: i,
+            path: a,
+            query: o,
+            fragment: u
+        } = t;
+    if (s && (n += s, n += ":"), (i || s === "file") && (n += Y, n += Y), i) {
+        let l = i.indexOf("@");
+        if (l !== -1) {
+            const c = i.substr(0, l);
+            i = i.substr(l + 1), l = c.lastIndexOf(":"), l === -1 ? n += r(c, !1, !1) : (n += r(c.substr(0, l), !1, !1), n += ":", n += r(c.substr(l + 1), !1, !0)), n += "@"
+        }
+        i = i.toLowerCase(), l = i.lastIndexOf(":"), l === -1 ? n += r(i, !1, !0) : (n += r(i.substr(0, l), !1, !0), n += i.substr(l))
+    }
+    if (a) {
+        if (a.length >= 3 && a.charCodeAt(0) === 47 && a.charCodeAt(2) === 58) {
+            const l = a.charCodeAt(1);
+            l >= 65 && l <= 90 && (a = `/${String.fromCharCode(l+32)}:${a.substr(3)}`)
+        } else if (a.length >= 2 && a.charCodeAt(1) === 58) {
+            const l = a.charCodeAt(0);
+            l >= 65 && l <= 90 && (a = `${String.fromCharCode(l+32)}:${a.substr(2)}`)
+        }
+        n += r(a, !0, !1)
+    }
+    return o && (n += "?", n += r(o, !1, !1)), u && (n += "#", n += e ? u : bt(u, !1, !1)), n
+}
+
+function wt(t) {
+    try {
+        return decodeURIComponent(t)
+    } catch {
+        return t.length > 3 ? t.substr(0, 3) + wt(t.substr(3)) : t
+    }
+}
+var yt = /(%[0-9A-Za-z][0-9A-Za-z])+/g;
+
+function G1(t) {
+    return t.match(yt) ? t.replace(yt, e => wt(e)) : t
+}
+var B;
+(t => {
+    t.inMemory = "inmemory", t.vscode = "vscode", t.internal = "private", t.walkThrough = "walkThrough", t.walkThroughSnippet = "walkThroughSnippet", t.http = "http", t.https = "https", t.file = "file", t.git = "git", t.mailto = "mailto", t.untitled = "untitled", t.data = "data", t.command = "command", t.vscodeRemote = "vscode-remote", t.vscodeRemoteResource = "vscode-remote-resource", t.vscodeManagedRemoteResource = "vscode-managed-remote-resource", t.vscodeUserData = "vscode-userdata", t.vscodeCustomEditor = "vscode-custom-editor", t.vscodeNotebook = "vscode-notebook", t.vscodeNotebookCell = "vscode-notebook-cell", t.vscodeNotebookCellMetadata = "vscode-notebook-cell-metadata", t.vscodeNotebookCellMetadataDiff = "vscode-notebook-cell-metadata-diff", t.vscodeNotebookCellOutput = "vscode-notebook-cell-output", t.vscodeNotebookCellOutputDiff = "vscode-notebook-cell-output-diff", t.vscodeNotebookMetadata = "vscode-notebook-metadata", t.vscodeInteractiveInput = "vscode-interactive-input", t.vscodeSettings = "vscode-settings", t.vscodeWorkspaceTrust = "vscode-workspace-trust", t.vscodeTerminal = "vscode-terminal", t.terminal = "terminal", t.vscodeChatCodeBlock = "vscode-chat-code-block", t.vscodeChatCodeCompareBlock = "vscode-chat-code-compare-block", t.vscodeChatSesssion = "vscode-chat-editor", t.webviewPanel = "webview-panel", t.vscodeWebview = "vscode-webview", t.extension = "extension", t.aiChat = "cursor.aichat", t.contextObject = "cursor.context-object", t.composer = "cursor.composer", t.aiSettings = "cursor.aisettings", t.tinderDiffEditor = "cursor.tinderdiffeditor", t.vscodeFileResource = "vscode-file", t.cursorRpcDevtools = "cursor-rpc-devtools", t.tmp = "tmp", t.vsls = "vsls", t.vscodeSourceControl = "vscode-scm", t.commentsInput = "comment", t.codeSetting = "code-setting", t.cursorDev = "cursor-dev-utils", t.outputChannel = "output", t.accessibleView = "accessible-view", t.backgroundComposer = "cursor.backgroundcomposer", t.personalEnvironmentJson = "cursor.personalenvironmentjson", t.bugbot = "cursor.bugbot", t.aiEditorBox = "aiEditorBox", t.backgroundComposerPeek = "background-composer-peek", t.cursorPlan = "cursor-plan", t.reviewChanges = "cursor.reviewchanges", t.cursorBlame = "cursor.blame", t.cursorFileBlame = "cursor.fileblame"
+})(B || (B = {}));
+var ns = "tkn",
+    ss = class {
+        constructor() {
+            this._hosts = Object.create(null), this._ports = Object.create(null), this._connectionTokens = Object.create(null), this._preferredWebSchema = "http", this._delegate = null, this._serverRootPath = "/"
+        }
+        setPreferredWebSchema(t) {
+            this._preferredWebSchema = t
+        }
+        setDelegate(t) {
+            this._delegate = t
+        }
+        setServerRootPath(t, e) {
+            this._serverRootPath = T.join(e ?? "/", os(t))
+        }
+        getServerRootPath() {
+            return this._serverRootPath
+        }
+        get _remoteResourcesPath() {
+            return T.join(this._serverRootPath, B.vscodeRemoteResource)
+        }
+        set(t, e, r) {
+            this._hosts[t] = e, this._ports[t] = r
+        }
+        setConnectionToken(t, e) {
+            this._connectionTokens[t] = e
+        }
+        getPreferredWebSchema() {
+            return this._preferredWebSchema
+        }
+        rewrite(t) {
+            if (this._delegate) try {
+                return this._delegate(t)
+            } catch (a) {
+                return O1(a), t
+            }
+            const e = t.authority;
+            let r = this._hosts[e];
+            r && r.indexOf(":") !== -1 && r.indexOf("[") === -1 && (r = `[${r}]`);
+            const n = this._ports[e],
+                s = this._connectionTokens[e];
+            let i = `path=${encodeURIComponent(t.path)}`;
+            return typeof s == "string" && (i += `&${ns}=${encodeURIComponent(s)}`), q.from({
+                scheme: zr ? this._preferredWebSchema : B.vscodeRemoteResource,
+                authority: `${r}:${n}`,
+                path: this._remoteResourcesPath,
+                query: i
+            })
+        }
+    },
+    is = new ss;
+
+function os(t) {
+    return `${t.quality??"oss"}-${t.commit??"dev"}`
+}
+var as = "vscode-app",
+    Ct = class ee {
+        asBrowserUri(e) {
+            const r = this.toUri(e);
+            return this.uriToBrowserUri(r)
+        }
+        uriToBrowserUri(e) {
+            return e.scheme === B.vscodeRemote ? is.rewrite(e) : e.scheme === B.file && (jr || Gr === `${B.vscodeFileResource}://${ee.FALLBACK_AUTHORITY}`) ? e.with({
+                scheme: B.vscodeFileResource,
+                authority: e.authority || ee.FALLBACK_AUTHORITY,
+                query: null,
+                fragment: null
+            }) : e
+        }
+        asFileUri(e) {
+            const r = this.toUri(e);
+            return this.uriToFileUri(r)
+        }
+        uriToFileUri(e) {
+            return e.scheme === B.vscodeFileResource ? e.with({
+                scheme: B.file,
+                authority: e.authority !== ee.FALLBACK_AUTHORITY ? e.authority : null,
+                query: null,
+                fragment: null
+            }) : e
+        }
+        toUri(e) {
+            if (q.isUri(e)) return e;
+            if (globalThis._VSCODE_FILE_ROOT) {
+                const r = globalThis._VSCODE_FILE_ROOT;
+                if (/^\w[\w\d+.-]*:\/\//.test(r)) return q.joinPath(q.parse(r, !0), e);
+                const n = Sn(r, e);
+                return q.file(n)
+            }
+            throw new Error("Cannot determine URI for module id!")
+        }
+    };
+Ct.FALLBACK_AUTHORITY = as;
+var ls = Ct,
+    ei = new ls,
+    ti = Object.freeze({
+        "Cache-Control": "no-cache, no-store"
+    }),
+    ri = Object.freeze({
+        "Document-Policy": "include-js-call-stacks-in-crash-reports, js-profiling"
+    }),
+    Lt;
+(t => {
+    const e = new Map([
+        ["1", {
+            "Cross-Origin-Opener-Policy": "same-origin"
+        }],
+        ["2", {
+            "Cross-Origin-Embedder-Policy": "require-corp"
+        }],
+        ["3", {
+            "Cross-Origin-Opener-Policy": "same-origin",
+            "Cross-Origin-Embedder-Policy": "require-corp"
+        }]
+    ]);
+    t.CoopAndCoep = Object.freeze(e.get("3"));
+    const r = "vscode-coi";
+
+    function n(i) {
+        let a;
+        typeof i == "string" ? a = new URL(i).searchParams : i instanceof URL ? a = i.searchParams : q.isUri(i) && (a = new URL(i.toString(!0)).searchParams);
+        const o = a?.get(r);
+        if (o) return e.get(o)
+    }
+    t.getHeadersFromQuery = n;
+
+    function s(i, a, o) {
+        if (!globalThis.crossOriginIsolated) return;
+        const u = a && o ? "3" : o ? "2" : "1";
+        i instanceof URLSearchParams ? i.set(r, u) : i[r] = u
+    }
+    t.addSearchParam = s
+})(Lt || (Lt = {}));
+
+function i1(t) {
+    return H1(t, !0)
+}
+var x1 = class {
+        constructor(t) {
+            this._ignorePathCasing = t
+        }
+        compare(t, e, r = !1) {
+            return t === e ? 0 : en(this.getComparisonKey(t, r), this.getComparisonKey(e, r))
+        }
+        isEqual(t, e, r = !1) {
+            return t === e ? !0 : !t || !e ? !1 : this.getComparisonKey(t, r) === this.getComparisonKey(e, r)
+        }
+        getComparisonKey(t, e = !1) {
+            return t.with({
+                path: this._ignorePathCasing(t) ? t.path.toLowerCase() : void 0,
+                fragment: e ? null : void 0
+            }).toString()
+        }
+        ignorePathCasing(t) {
+            return this._ignorePathCasing(t)
+        }
+        isEqualOrParent(t, e, r = !1) {
+            if (t.scheme === e.scheme) {
+                if (t.scheme === B.file) return m1(i1(t), i1(e), this._ignorePathCasing(t)) && t.query === e.query && (r || t.fragment === e.fragment);
+                if (At(t.authority, e.authority)) return m1(t.path, e.path, this._ignorePathCasing(t), "/") && t.query === e.query && (r || t.fragment === e.fragment)
+            }
+            return !1
+        }
+        joinPath(t, ...e) {
+            return q.joinPath(t, ...e)
+        }
+        basenameOrAuthority(t) {
+            return us(t) || t.authority
+        }
+        basename(t) {
+            return T.basename(t.path)
+        }
+        extname(t) {
+            return T.extname(t.path)
+        }
+        dirname(t) {
+            if (t.path.length === 0) return t;
+            let e;
+            return t.scheme === B.file ? e = q.file(Rn(i1(t))).path : (e = T.dirname(t.path), t.authority && e.length && e.charCodeAt(0) !== 47 && (console.error(`dirname("${t.toString})) resulted in a relative path`), e = "/")), t.with({
+                path: e
+            })
+        }
+        normalizePath(t) {
+            if (!t.path.length) return t;
+            let e;
+            return t.scheme === B.file ? e = q.file(kn(i1(t))).path : e = T.normalize(t.path), t.with({
+                path: e
+            })
+        }
+        relativePath(t, e) {
+            if (t.scheme !== e.scheme || !At(t.authority, e.authority)) return;
+            if (t.scheme === B.file) {
+                const s = dt(i1(t), i1(e));
+                return w1 ? mt(s) : s
+            }
+            let r = t.path || "/";
+            const n = e.path || "/";
+            if (this._ignorePathCasing(t)) {
+                let s = 0;
+                for (const i = Math.min(r.length, n.length); s < i && !(r.charCodeAt(s) !== n.charCodeAt(s) && r.charAt(s).toLowerCase() !== n.charAt(s).toLowerCase()); s++);
+                r = n.substr(0, s) + r.substr(s)
+            }
+            return T.relative(r, n)
+        }
+        resolvePath(t, e) {
+            if (t.scheme === B.file) {
+                const r = q.file(Tn(i1(t), e));
+                return t.with({
+                    authority: r.authority,
+                    path: r.path
+                })
+            }
+            return e = Dn(e), t.with({
+                path: T.resolve(t.path, e)
+            })
+        }
+        isAbsolutePath(t) {
+            return !!t.path && t.path[0] === "/"
+        }
+        isEqualAuthority(t, e) {
+            return t === e || t !== void 0 && e !== void 0 && at(t, e)
+        }
+        hasTrailingPathSeparator(t, e = s1) {
+            if (t.scheme === B.file) {
+                const r = i1(t);
+                return r.length > pt(r).length && r[r.length - 1] === e
+            } else {
+                const r = t.path;
+                return r.length > 1 && r.charCodeAt(r.length - 1) === 47 && !/^[a-zA-Z]:(\/$|\\$)/.test(t.fsPath)
+            }
+        }
+        removeTrailingPathSeparator(t, e = s1) {
+            return Et(t, e) ? t.with({
+                path: t.path.substr(0, t.path.length - 1)
+            }) : t
+        }
+        addTrailingPathSeparator(t, e = s1) {
+            let r = !1;
+            if (t.scheme === B.file) {
+                const n = i1(t);
+                r = n !== void 0 && n.length === pt(n).length && n[n.length - 1] === e
+            } else {
+                e = "/";
+                const n = t.path;
+                r = n.length === 1 && n.charCodeAt(n.length - 1) === 47
+            }
+            return !r && !Et(t, e) ? t.with({
+                path: t.path + "/"
+            }) : t
+        }
+    },
+    R = new x1(() => !1),
+    ni = new x1(t => t.scheme === B.file ? !pe : !0),
+    si = new x1(t => !0),
+    ii = R.isEqual.bind(R),
+    oi = R.isEqualOrParent.bind(R),
+    ai = R.getComparisonKey.bind(R),
+    li = R.basenameOrAuthority.bind(R),
+    us = R.basename.bind(R),
+    ui = R.extname.bind(R),
+    ci = R.dirname.bind(R),
+    fi = R.joinPath.bind(R),
+    hi = R.normalizePath.bind(R),
+    di = R.relativePath.bind(R),
+    mi = R.resolvePath.bind(R),
+    pi = R.isAbsolutePath.bind(R),
+    At = R.isEqualAuthority.bind(R),
+    Et = R.hasTrailingPathSeparator.bind(R),
+    vi = R.removeTrailingPathSeparator.bind(R),
+    gi = R.addTrailingPathSeparator.bind(R),
+    xt;
+(t => {
+    t.META_DATA_LABEL = "label", t.META_DATA_DESCRIPTION = "description", t.META_DATA_SIZE = "size", t.META_DATA_MIME = "mime";
+
+    function e(r) {
+        const n = new Map;
+        r.path.substring(r.path.indexOf(";") + 1, r.path.lastIndexOf(";")).split(";").forEach(a => {
+            const [o, u] = a.split(":");
+            o && u && n.set(o, u)
+        });
+        const i = r.path.substring(0, r.path.indexOf(";"));
+        return i && n.set(t.META_DATA_MIME, i), n
+    }
+    t.parseMetaData = e
+})(xt || (xt = {}));
+var _i = Symbol("MicrotaskDelay");
+
+function Nt(t) {
+    return !!t && typeof t.then == "function"
+}
+var cs, xe;
+(function() {
+    typeof globalThis.requestIdleCallback != "function" || typeof globalThis.cancelIdleCallback != "function" ? xe = (t, e, r) => {
+        Kr(() => {
+            if (n) return;
+            const s = Date.now() + 15;
+            e(Object.freeze({
+                didTimeout: !0,
+                timeRemaining() {
+                    return Math.max(0, s - Date.now())
+                }
+            }))
+        });
+        let n = !1;
+        return {
+            dispose() {
+                n || (n = !0)
+            }
+        }
+    } : xe = (t, e, r) => {
+        const n = t.requestIdleCallback(e, typeof r == "number" ? {
+            timeout: r
+        } : void 0);
+        let s = !1;
+        return {
+            dispose() {
+                s || (s = !0, t.cancelIdleCallback(n))
+            }
+        }
+    }, cs = (t, e) => xe(globalThis, t, e)
+})();
+var Ne;
+(t => {
+    async function e(n) {
+        let s;
+        const i = await Promise.all(n.map(a => a.then(o => o, o => {
+            s || (s = o)
+        })));
+        if (typeof s < "u") throw s;
+        return i
+    }
+    t.settled = e;
+
+    function r(n) {
+        return new Promise(async (s, i) => {
+            try {
+                await n(s, i)
+            } catch (a) {
+                i(a)
+            }
+        })
+    }
+    t.withAsyncBody = r
+})(Ne || (Ne = {}));
+var Pt = class V {
+    static fromArray(e) {
+        return new V(r => {
+            r.emitMany(e)
+        })
+    }
+    static fromPromise(e) {
+        return new V(async r => {
+            r.emitMany(await e)
+        })
+    }
+    static fromPromisesResolveOrder(e) {
+        return new V(async r => {
+            await Promise.all(e.map(async n => r.emitOne(await n)))
+        })
+    }
+    static merge(e) {
+        return new V(async r => {
+            await Promise.all(e.map(async n => {
+                for await (const s of n) r.emitOne(s)
+            }))
+        })
+    }
+    constructor(e, r) {
+        this._state = 0, this._results = [], this._error = null, this._onReturn = r, this._onStateChanged = new J, queueMicrotask(async () => {
+            const n = {
+                emitOne: s => this.emitOne(s),
+                emitMany: s => this.emitMany(s),
+                reject: s => this.reject(s)
+            };
+            try {
+                await Promise.resolve(e(n)), this.resolve()
+            } catch (s) {
+                this.reject(s)
+            } finally {
+                n.emitOne = void 0, n.emitMany = void 0, n.reject = void 0
+            }
+        })
+    } [Symbol.asyncIterator]() {
+        let e = 0;
+        return {
+            next: async () => {
+                do {
+                    if (this._state === 2) throw this._error;
+                    if (e < this._results.length) return {
+                        done: !1,
+                        value: this._results[e++]
+                    };
+                    if (this._state === 1) return {
+                        done: !0,
+                        value: void 0
+                    };
+                    await I1.toPromise(this._onStateChanged.event)
+                } while (!0)
+            },
+            return: async () => (this._onReturn?.(), {
+                done: !0,
+                value: void 0
+            })
+        }
+    }
+    static map(e, r) {
+        return new V(async n => {
+            for await (const s of e) n.emitOne(r(s))
+        })
+    }
+    map(e) {
+        return V.map(this, e)
+    }
+    static filter(e, r) {
+        return new V(async n => {
+            for await (const s of e) r(s) && n.emitOne(s)
+        })
+    }
+    filter(e) {
+        return V.filter(this, e)
+    }
+    static coalesce(e) {
+        return V.filter(e, r => !!r)
+    }
+    coalesce() {
+        return V.coalesce(this)
+    }
+    static async toPromise(e) {
+        const r = [];
+        for await (const n of e) r.push(n);
+        return r
+    }
+    toPromise() {
+        return V.toPromise(this)
+    }
+    emitOne(e) {
+        this._state === 0 && (this._results.push(e), this._onStateChanged.fire())
+    }
+    emitMany(e) {
+        this._state === 0 && (this._results = this._results.concat(e), this._onStateChanged.fire())
+    }
+    resolve() {
+        this._state === 0 && (this._state = 1, this._onStateChanged.fire())
+    }
+    reject(e) {
+        this._state === 0 && (this._state = 2, this._error = e, this._onStateChanged.fire())
+    }
+};
+Pt.EMPTY = Pt.fromArray([]);
+var Q1 = "**",
+    kt = "/",
+    K1 = "[/\\\\]",
+    V1 = "[^/\\\\]",
+    fs = /\//g;
+
+function St(t, e) {
+    switch (t) {
+        case 0:
+            return "";
+        case 1:
+            return `${V1}*?`;
+        default:
+            return `(?:${K1}|${V1}+${K1}${e?`|${K1}${V1}+`:""})*?`
+    }
+}
+
+function Tt(t, e) {
+    if (!t) return [];
+    const r = [];
+    let n = !1,
+        s = !1,
+        i = "";
+    for (const a of t) {
+        switch (a) {
+            case e:
+                if (!n && !s) {
+                    r.push(i), i = "";
+                    continue
+                }
+                break;
+            case "{":
+                n = !0;
+                break;
+            case "}":
+                n = !1;
+                break;
+            case "[":
+                s = !0;
+                break;
+            case "]":
+                s = !1;
+                break
+        }
+        i += a
+    }
+    return i && r.push(i), r
+}
+
+function Rt(t) {
+    if (!t) return "";
+    let e = "";
+    const r = Tt(t, kt);
+    if (r.every(n => n === Q1)) e = ".*";
+    else {
+        let n = !1;
+        r.forEach((s, i) => {
+            if (s === Q1) {
+                if (n) return;
+                e += St(2, i === r.length - 1)
+            } else {
+                let a = !1,
+                    o = "",
+                    u = !1,
+                    l = "";
+                for (const c of s) {
+                    if (c !== "}" && a) {
+                        o += c;
+                        continue
+                    }
+                    if (u && (c !== "]" || !l)) {
+                        let f;
+                        c === "-" ? f = c : (c === "^" || c === "!") && !l ? f = "^" : c === kt ? f = "" : f = ge(c), l += f;
+                        continue
+                    }
+                    switch (c) {
+                        case "{":
+                            a = !0;
+                            continue;
+                        case "[":
+                            u = !0;
+                            continue;
+                        case "}": {
+                            const h = `(?:${Tt(o,",").map(m=>Rt(m)).join("|")})`;
+                            e += h, a = !1, o = "";
+                            break
+                        }
+                        case "]": {
+                            e += "[" + l + "]", u = !1, l = "";
+                            break
+                        }
+                        case "?":
+                            e += V1;
+                            continue;
+                        case "*":
+                            e += St(1);
+                            continue;
+                        default:
+                            e += ge(c)
+                    }
+                }
+                i < r.length - 1 && (r[i + 1] !== Q1 || i + 2 < r.length) && (e += K1)
+            }
+            n = s === Q1
+        })
+    }
+    return e
+}
+var hs = /^\*\*\/\*\.[\w\.-]+$/,
+    ds = /^\*\*\/([\w\.-]+)\/?$/,
+    ms = /^{\*\*\/\*?[\w\.-]+\/?(,\*\*\/\*?[\w\.-]+\/?)*}$/,
+    ps = /^{\*\*\/\*?[\w\.-]+(\/(\*\*)?)?(,\*\*\/\*?[\w\.-]+(\/(\*\*)?)?)*}$/,
+    vs = /^\*\*((\/[\w\.-]+)+)\/?$/,
+    gs = /^([\w\.-]+(\/[\w\.-]+)*)\/?$/,
+    Ot = new vr(1e4),
+    It = function() {
+        return !1
+    },
+    X = function() {
+        return null
+    };
+
+function Pe(t, e) {
+    if (!t) return X;
+    let r;
+    typeof t != "string" ? r = t.pattern : r = t, r = r.trim();
+    const n = e.ignoreCase ?? !1,
+        s = e.ignoreCase ?? !pe,
+        i = {
+            ...e,
+            equals: n ? at : (l, c) => l === c,
+            endsWith: n ? rn : (l, c) => l.endsWith(c),
+            isEqualOrParent: (l, c) => m1(l, c, s)
+        },
+        a = `${n?r.toLowerCase():r}_${!!e.trimForExclusions}_${n}`;
+    let o = Ot.get(a);
+    if (o) return Dt(o, t, i);
+    let u;
+    return hs.test(r) ? o = bs(r.substring(4), r, i) : (u = ds.exec(ke(r, i))) ? o = ws(u[1], r, i) : (e.trimForExclusions ? ps : ms).test(r) ? o = ys(r, i) : (u = vs.exec(ke(r, i))) ? o = Mt(u[1].substring(1), r, !0, i) : (u = gs.exec(ke(r, i))) ? o = Mt(u[1], r, !1, i) : o = Cs(r, i), Ot.set(a, o), Dt(o, t, i)
+}
+
+function _s(t, e) {
+    const r = e.length;
+    if (r === 0) return {
+        ...t,
+        isEqualOrParent: () => !1
+    };
+    const n = s1.charCodeAt(0),
+        s = e.charCodeAt(r - 1) === n;
+    let i = !0;
+    for (let a = 0; a < r; a++)
+        if (e.charCodeAt(a) > 127) {
+            i = !1;
+            break
+        } if (i) {
+        const a = e.toLowerCase(),
+            o = c => c >= 65 && c <= 90 ? c + 32 : c,
+            u = o(a.charCodeAt(0)),
+            l = r > 1 ? o(a.charCodeAt(r - 1)) : u;
+        return {
+            ...t,
+            isEqualOrParent(c, f) {
+                if (c.length < r) return !1;
+                if (c.length > r) {
+                    const m = s ? r - 1 : r;
+                    if (c.charCodeAt(m) !== n) return !1
+                }
+                let h = c.charCodeAt(0);
+                if (h !== u) {
+                    if (h > 127) return m1(c, e, !0);
+                    if (h = o(h), h !== u) return !1
+                }
+                if (r > 1) {
+                    let m = c.charCodeAt(r - 1);
+                    if (m !== l) {
+                        if (m > 127) return m1(c, e, !0);
+                        if (m = o(m), m !== l) return !1
+                    }
+                }
+                for (let m = 0; m < r; m++) {
+                    const p = c.charCodeAt(m),
+                        b = a.charCodeAt(m);
+                    if (p === b) continue;
+                    if (p > 127) return m1(c, e, !0);
+                    let L = p;
+                    if (L >= 65 && L <= 90 && (L += 32), L !== b) return !1
+                }
+                return !0
+            }
+        }
+    }
+    return {
+        ...t,
+        isEqualOrParent(a, o) {
+            return m1(a, e, !0)
+        }
+    }
+}
+
+function Dt(t, e, r) {
+    if (typeof e == "string") return t;
+    const n = e.base,
+        s = n.length,
+        a = r.ignoreCase ?? !pe ? _s(r, n) : r,
+        o = s1.charCodeAt(0),
+        u = function(l, c) {
+            if (!a.isEqualOrParent(l, n)) return null;
+            let f = s;
+            for (; f < l.length && l.charCodeAt(f) === o;) f++;
+            return t(l.substring(f), c)
+        };
+    return u.allBasenames = t.allBasenames, u.allPaths = t.allPaths, u.basenames = t.basenames, u.patterns = t.patterns, u
+}
+
+function ke(t, e) {
+    return e.trimForExclusions && t.endsWith("/**") ? t.substring(0, t.length - 2) : t
+}
+
+function bs(t, e, r) {
+    return function(n, s) {
+        return typeof n == "string" && r.endsWith(n, t) ? e : null
+    }
+}
+
+function ws(t, e, r) {
+    const n = `/${t}`,
+        s = `\\${t}`,
+        i = function(o, u) {
+            return typeof o != "string" ? null : u ? r.equals(u, t) ? e : null : r.equals(o, t) || r.endsWith(o, n) || r.endsWith(o, s) ? e : null
+        },
+        a = [t];
+    return i.basenames = a, i.patterns = [e], i.allBasenames = a, i
+}
+
+function ys(t, e) {
+    const r = $t(t.slice(1, -1).split(",").map(o => Pe(o, e)).filter(o => o !== X), t),
+        n = r.length;
+    if (!n) return X;
+    if (n === 1) return r[0];
+    const s = function(o, u) {
+            for (let l = 0, c = r.length; l < c; l++)
+                if (r[l](o, u)) return t;
+            return null
+        },
+        i = r.find(o => !!o.allBasenames);
+    i && (s.allBasenames = i.allBasenames);
+    const a = r.reduce((o, u) => u.allPaths ? o.concat(u.allPaths) : o, []);
+    return a.length && (s.allPaths = a), s
+}
+
+function Mt(t, e, r, n) {
+    const s = s1 === T.sep,
+        i = s ? t : t.replace(fs, s1),
+        a = s1 + i,
+        o = T.sep + t;
+    let u;
+    return r ? u = function(l, c) {
+        return typeof l == "string" && (n.equals(l, i) || n.endsWith(l, a) || !s && (n.equals(l, t) || n.endsWith(l, o))) ? e : null
+    } : u = function(l, c) {
+        return typeof l == "string" && (n.equals(l, i) || !s && n.equals(l, t)) ? e : null
+    }, u.allPaths = [(r ? "*/" : "./") + t], u
+}
+
+function Cs(t, e) {
+    try {
+        const r = new RegExp(`^${Rt(t)}$`, e.ignoreCase ? "i" : void 0);
+        return function(n) {
+            return r.lastIndex = 0, typeof n == "string" && r.test(n) ? t : null
+        }
+    } catch {
+        return X
+    }
+}
+
+function J1(t, e, r) {
+    return !t || typeof e != "string" ? !1 : typeof r == "function" ? Y1(t)(e, void 0, r) : Y1(t, r)(e)
+}
+
+function Y1(t, e = {}) {
+    if (!t) return It;
+    if (typeof t == "string" || Ls(t)) {
+        const r = Pe(t, e);
+        if (r === X) return It;
+        const n = function(s, i) {
+            return !!r(s, i)
+        };
+        return r.allBasenames && (n.allBasenames = r.allBasenames), r.allPaths && (n.allPaths = r.allPaths), n
+    }
+    return As(t, e)
+}
+
+function Ls(t) {
+    const e = t;
+    return e ? typeof e.base == "string" && typeof e.pattern == "string" : !1
+}
+
+function As(t, e) {
+    const r = $t(Object.getOwnPropertyNames(t).map(o => Es(o, t[o], e)).filter(o => o !== X)),
+        n = r.length;
+    if (!n) return X;
+    if (!r.some(o => !!o.requiresSiblings)) {
+        if (n === 1) return r[0];
+        const o = function(c, f) {
+                for (let h = 0, m = r.length; h < m; h++) {
+                    const p = r[h](c, f);
+                    if (typeof p == "string") return p
+                }
+                return null
+            },
+            u = r.find(c => !!c.allBasenames);
+        u && (o.allBasenames = u.allBasenames);
+        const l = r.reduce((c, f) => f.allPaths ? c.concat(f.allPaths) : c, []);
+        return l.length && (o.allPaths = l), o
+    }
+    const s = function(o, u, l) {
+            let c, f;
+            for (let h = 0, m = r.length; h < m; h++) {
+                const p = r[h];
+                p.requiresSiblings && l && (u || (u = On(o)), c || (c = u.substr(0, u.length - In(o).length)));
+                const b = p(o, u, c, l);
+                if (typeof b == "string") return b;
+                Nt(b) && (f || (f = []), f.push(b))
+            }
+            return f ? (async () => {
+                for (const h of f) {
+                    const m = await h;
+                    if (typeof m == "string") return m
+                }
+                return null
+            })() : null
+        },
+        i = r.find(o => !!o.allBasenames);
+    i && (s.allBasenames = i.allBasenames);
+    const a = r.reduce((o, u) => u.allPaths ? o.concat(u.allPaths) : o, []);
+    return a.length && (s.allPaths = a), s
+}
+
+function Es(t, e, r) {
+    if (e === !1) return X;
+    const n = Pe(t, r);
+    if (n === X) return X;
+    if (typeof e == "boolean") return n;
+    if (e) {
+        const s = e.when;
+        if (typeof s == "string") {
+            const i = (a, o, u, l) => {
+                if (!l || !n(a, o)) return null;
+                const c = s.replace("$(basename)", () => u),
+                    f = l(c);
+                return Nt(f) ? f.then(h => h ? t : null) : f ? t : null
+            };
+            return i.requiresSiblings = !0, i
+        }
+    }
+    return n
+}
+
+function $t(t, e) {
+    const r = t.filter(o => !!o.basenames);
+    if (r.length < 2) return t;
+    const n = r.reduce((o, u) => {
+        const l = u.basenames;
+        return l ? o.concat(l) : o
+    }, []);
+    let s;
+    if (e) {
+        s = [];
+        for (let o = 0, u = n.length; o < u; o++) s.push(e)
+    } else s = r.reduce((o, u) => {
+        const l = u.patterns;
+        return l ? o.concat(l) : o
+    }, []);
+    const i = function(o, u) {
+        if (typeof o != "string") return null;
+        if (!u) {
+            let c;
+            for (c = o.length; c > 0; c--) {
+                const f = o.charCodeAt(c - 1);
+                if (f === 47 || f === 92) break
+            }
+            u = o.substr(c)
+        }
+        const l = n.indexOf(u);
+        return l !== -1 ? s[l] : null
+    };
+    i.basenames = n, i.patterns = s, i.allBasenames = n;
+    const a = t.filter(o => !o.basenames);
+    return a.push(i), a
+}
+var Ft = class Me {
+    static getChannel(e) {
+        return e.getChannel(Me.CHANNEL_NAME)
+    }
+    static setChannel(e, r) {
+        e.setChannel(Me.CHANNEL_NAME, r)
+    }
+};
+Ft.CHANNEL_NAME = "localFileSearchWorkerHost";
+var xs = Ft,
+    Ut = class p1 {
+        constructor(e, r) {
+            this.lineNumber = e, this.column = r
+        }
+        with(e = this.lineNumber, r = this.column) {
+            return e === this.lineNumber && r === this.column ? this : new p1(e, r)
+        }
+        delta(e = 0, r = 0) {
+            return this.with(Math.max(1, this.lineNumber + e), Math.max(1, this.column + r))
+        }
+        equals(e) {
+            return p1.equals(this, e)
+        }
+        static equals(e, r) {
+            return !e && !r ? !0 : !!e && !!r && e.lineNumber === r.lineNumber && e.column === r.column
+        }
+        isBefore(e) {
+            return p1.isBefore(this, e)
+        }
+        static isBefore(e, r) {
+            return e.lineNumber < r.lineNumber ? !0 : r.lineNumber < e.lineNumber ? !1 : e.column < r.column
+        }
+        isBeforeOrEqual(e) {
+            return p1.isBeforeOrEqual(this, e)
+        }
+        static isBeforeOrEqual(e, r) {
+            return e.lineNumber < r.lineNumber ? !0 : r.lineNumber < e.lineNumber ? !1 : e.column <= r.column
+        }
+        static compare(e, r) {
+            const n = e.lineNumber | 0,
+                s = r.lineNumber | 0;
+            if (n === s) {
+                const i = e.column | 0,
+                    a = r.column | 0;
+                return i - a
+            }
+            return n - s
+        }
+        clone() {
+            return new p1(this.lineNumber, this.column)
+        }
+        toString() {
+            return "(" + this.lineNumber + "," + this.column + ")"
+        }
+        static lift(e) {
+            return new p1(e.lineNumber, e.column)
+        }
+        static isIPosition(e) {
+            return e && typeof e.lineNumber == "number" && typeof e.column == "number"
+        }
+        toJSON() {
+            return {
+                lineNumber: this.lineNumber,
+                column: this.column
+            }
+        }
+    },
+    Bt = class D {
+        constructor(e, r, n, s) {
+            let i, a, o, u;
+            e == null || typeof e == "number" || Number.isNaN(e) ? (i = e, a = r, o = n, u = s) : "startLineNumber" in e && "startColumn" in e ? (i = e.startLineNumber, a = e.startColumn, o = e.endLineNumber, u = e.endColumn) : (i = e.startLineNumber, a = 1, o = e.endLineNumberExclusive, u = 1), i > o || i === o && a > u ? (this.startLineNumber = o, this.startColumn = u, this.endLineNumber = i, this.endColumn = a) : (this.startLineNumber = i, this.startColumn = a, this.endLineNumber = o, this.endColumn = u)
+        }
+        asIRange() {
+            return {
+                startLineNumber: this.startLineNumber,
+                startColumn: this.startColumn,
+                endLineNumber: this.endLineNumber,
+                endColumn: this.endColumn
+            }
+        }
+        isEmpty() {
+            return D.isEmpty(this)
+        }
+        static isEmpty(e) {
+            return e.startLineNumber === e.endLineNumber && e.startColumn === e.endColumn
+        }
+        containsPosition(e) {
+            return D.containsPosition(this, e)
+        }
+        static containsPosition(e, r) {
+            return !(r.lineNumber < e.startLineNumber || r.lineNumber > e.endLineNumber || r.lineNumber === e.startLineNumber && r.column < e.startColumn || r.lineNumber === e.endLineNumber && r.column > e.endColumn)
+        }
+        static strictContainsPosition(e, r) {
+            return !(r.lineNumber < e.startLineNumber || r.lineNumber > e.endLineNumber || r.lineNumber === e.startLineNumber && r.column <= e.startColumn || r.lineNumber === e.endLineNumber && r.column >= e.endColumn)
+        }
+        containsRange(e) {
+            return D.containsRange(this, e)
+        }
+        static containsRange(e, r) {
+            return !(r.startLineNumber < e.startLineNumber || r.endLineNumber < e.startLineNumber || r.startLineNumber > e.endLineNumber || r.endLineNumber > e.endLineNumber || r.startLineNumber === e.startLineNumber && r.startColumn < e.startColumn || r.endLineNumber === e.endLineNumber && r.endColumn > e.endColumn)
+        }
+        strictContainsRange(e) {
+            return D.strictContainsRange(this, e)
+        }
+        static strictContainsRange(e, r) {
+            return !(r.startLineNumber < e.startLineNumber || r.endLineNumber < e.startLineNumber || r.startLineNumber > e.endLineNumber || r.endLineNumber > e.endLineNumber || r.startLineNumber === e.startLineNumber && r.startColumn <= e.startColumn || r.endLineNumber === e.endLineNumber && r.endColumn >= e.endColumn)
+        }
+        plusRange(e) {
+            return D.plusRange(this, e)
+        }
+        static getRangeAbove(e, r) {
+            const n = Math.max(e.startLineNumber - r, 1),
+                s = e.startLineNumber;
+            return new D(n, e.startColumn, s, e.startColumn)
+        }
+        static getRangeOnBelow(e, r, n) {
+            const s = e.endLineNumber,
+                i = Math.min(e.endLineNumber + r, n);
+            return new D(s, e.endColumn, i, e.endColumn)
+        }
+        static getExtendedRange(e, r, n) {
+            const s = Math.max(e.startLineNumber - r, 0),
+                i = Math.min(e.endLineNumber + r, n);
+            return new D(s, e.startColumn, i, e.endColumn)
+        }
+        static plusRange(e, r) {
+            let n, s, i, a;
+            return r.startLineNumber < e.startLineNumber ? (n = r.startLineNumber, s = r.startColumn) : r.startLineNumber === e.startLineNumber ? (n = r.startLineNumber, s = Math.min(r.startColumn, e.startColumn)) : (n = e.startLineNumber, s = e.startColumn), r.endLineNumber > e.endLineNumber ? (i = r.endLineNumber, a = r.endColumn) : r.endLineNumber === e.endLineNumber ? (i = r.endLineNumber, a = Math.max(r.endColumn, e.endColumn)) : (i = e.endLineNumber, a = e.endColumn), new D(n, s, i, a)
+        }
+        intersectRanges(e) {
+            return D.intersectRanges(this, e)
+        }
+        static intersectRanges(e, r) {
+            let n = e.startLineNumber,
+                s = e.startColumn,
+                i = e.endLineNumber,
+                a = e.endColumn;
+            const o = r.startLineNumber,
+                u = r.startColumn,
+                l = r.endLineNumber,
+                c = r.endColumn;
+            return n < o ? (n = o, s = u) : n === o && (s = Math.max(s, u)), i > l ? (i = l, a = c) : i === l && (a = Math.min(a, c)), n > i || n === i && s > a ? null : new D(n, s, i, a)
+        }
+        static inverseEditRange(e, r) {
+            return {
+                startLineNumber: e.startLineNumber,
+                startColumn: e.startColumn,
+                endLineNumber: e.startLineNumber + r.split(`
+`).length - 1,
+                endColumn: r.lastIndexOf(`
+`) === -1 ? e.startColumn + r.length : r.length - r.lastIndexOf(`
+`)
+            }
+        }
+        whereIs(e) {
+            return e.endLineNumber < this.startLineNumber || e.endLineNumber === this.startLineNumber && e.endColumn <= this.startColumn ? "before" : e.startLineNumber > this.endLineNumber || e.startLineNumber === this.endLineNumber && e.startColumn >= this.endColumn ? "after" : "overlapping"
+        }
+        static rangeAfterEdit(e, r) {
+            const n = D.lift(e).whereIs(r.range);
+            switch (n) {
+                case "overlapping":
+                    throw new Error("Range is overlapping. The range after edit is ambiguous.");
+                case "after":
+                    return e;
+                case "before": {
+                    const s = r.text.split(`
+`).length - 1 - (r.range.endLineNumber - r.range.startLineNumber);
+                    if (r.range.endLineNumber < e.startLineNumber) return {
+                        startLineNumber: e.startLineNumber + s,
+                        startColumn: e.startColumn,
+                        endLineNumber: e.endLineNumber + s,
+                        endColumn: e.endColumn
+                    };
+                    {
+                        const i = r.text.lastIndexOf(`
+`) === -1 ? r.text.length : r.text.length - r.text.lastIndexOf(`
+`) - 1,
+                            a = r.range.startLineNumber === r.range.endLineNumber ? r.range.endColumn - r.range.startColumn : r.range.endColumn - 1,
+                            o = i - a;
+                        return {
+                            startLineNumber: e.startLineNumber + s,
+                            startColumn: e.startColumn + o,
+                            endLineNumber: e.endLineNumber + s,
+                            endColumn: e.startLineNumber === e.endLineNumber ? e.endColumn + o : e.endColumn
+                        }
+                    }
+                }
+                default: {
+                    const s = n;
+                    return e
+                }
+            }
+        }
+        equalsRange(e) {
+            return D.equalsRange(this, e)
+        }
+        static equalsRange(e, r) {
+            return !e && !r ? !0 : !!e && !!r && e.startLineNumber === r.startLineNumber && e.startColumn === r.startColumn && e.endLineNumber === r.endLineNumber && e.endColumn === r.endColumn
+        }
+        getEndPosition() {
+            return D.getEndPosition(this)
+        }
+        static getEndPosition(e) {
+            return new Ut(e.endLineNumber, e.endColumn)
+        }
+        getStartPosition() {
+            return D.getStartPosition(this)
+        }
+        static getStartPosition(e) {
+            return new Ut(e.startLineNumber, e.startColumn)
+        }
+        toString() {
+            return "[" + this.startLineNumber + "," + this.startColumn + " -> " + this.endLineNumber + "," + this.endColumn + "]"
+        }
+        setEndPosition(e, r) {
+            return new D(this.startLineNumber, this.startColumn, e, r)
+        }
+        setStartPosition(e, r) {
+            return new D(e, r, this.endLineNumber, this.endColumn)
+        }
+        collapseToStart() {
+            return D.collapseToStart(this)
+        }
+        static collapseToStart(e) {
+            return new D(e.startLineNumber, e.startColumn, e.startLineNumber, e.startColumn)
+        }
+        collapseToEnd() {
+            return D.collapseToEnd(this)
+        }
+        static collapseToEnd(e) {
+            return new D(e.endLineNumber, e.endColumn, e.endLineNumber, e.endColumn)
+        }
+        delta(e) {
+            return new D(this.startLineNumber + e, this.startColumn, this.endLineNumber + e, this.endColumn)
+        }
+        isSingleLine() {
+            return this.startLineNumber === this.endLineNumber
+        }
+        static fromPositions(e, r = e) {
+            return new D(e.lineNumber, e.column, r.lineNumber, r.column)
+        }
+        static lift(e) {
+            return e ? new D(e.startLineNumber, e.startColumn, e.endLineNumber, e.endColumn) : null
+        }
+        static isIRange(e) {
+            return e && typeof e.startLineNumber == "number" && typeof e.startColumn == "number" && typeof e.endLineNumber == "number" && typeof e.endColumn == "number"
+        }
+        static areIntersectingOrTouching(e, r) {
+            return !(e.endLineNumber < r.startLineNumber || e.endLineNumber === r.startLineNumber && e.endColumn < r.startColumn || r.endLineNumber < e.startLineNumber || r.endLineNumber === e.startLineNumber && r.endColumn < e.startColumn)
+        }
+        static areIntersecting(e, r) {
+            return !(e.endLineNumber < r.startLineNumber || e.endLineNumber === r.startLineNumber && e.endColumn <= r.startColumn || r.endLineNumber < e.startLineNumber || r.endLineNumber === e.startLineNumber && r.endColumn <= e.startColumn)
+        }
+        static areOnlyIntersecting(e, r) {
+            return !(e.endLineNumber < r.startLineNumber - 1 || e.endLineNumber === r.startLineNumber && e.endColumn < r.startColumn - 1 || r.endLineNumber < e.startLineNumber - 1 || r.endLineNumber === e.startLineNumber && r.endColumn < e.startColumn - 1)
+        }
+        static compareRangesUsingStarts(e, r) {
+            if (e && r) {
+                const i = e.startLineNumber | 0,
+                    a = r.startLineNumber | 0;
+                if (i === a) {
+                    const o = e.startColumn | 0,
+                        u = r.startColumn | 0;
+                    if (o === u) {
+                        const l = e.endLineNumber | 0,
+                            c = r.endLineNumber | 0;
+                        if (l === c) {
+                            const f = e.endColumn | 0,
+                                h = r.endColumn | 0;
+                            return f - h
+                        }
+                        return l - c
+                    }
+                    return o - u
+                }
+                return i - a
+            }
+            return (e ? 1 : 0) - (r ? 1 : 0)
+        }
+        static compareRangesUsingEnds(e, r) {
+            return e.endLineNumber === r.endLineNumber ? e.endColumn === r.endColumn ? e.startLineNumber === r.startLineNumber ? e.startColumn - r.startColumn : e.startLineNumber - r.startLineNumber : e.endColumn - r.endColumn : e.endLineNumber - r.endLineNumber
+        }
+        static spansMultipleLines(e) {
+            return e.endLineNumber > e.startLineNumber
+        }
+        toJSON() {
+            return this
+        }
+    },
+    Ns = (t, e, r) => {
+        let n;
+        if (t[0] === 255 && t[1] === 254) n = new TextDecoder("utf-16le").decode(t);
+        else if (t[0] === 254 && t[1] === 255) n = new TextDecoder("utf-16be").decode(t);
+        else if (n = new TextDecoder("utf8").decode(t), n.slice(0, 1e3).includes("\uFFFD") && t.includes(0)) return [];
+        const s = [],
+            i = [];
+        let a = null,
+            o = r.remainingResultQuota;
+        for (; o >= 0 && (a = e.exec(n));) i.push({
+            matchStartIndex: a.index,
+            matchedText: a[0]
+        }), o--;
+        if (i.length) {
+            const u = new Set,
+                l = new Set,
+                c = [],
+                f = L => n.slice(c[L].start, c[L].end);
+            let h = 0,
+                m = null;
+            const p = /\r?\n/g;
+            for (; m = p.exec(n);) c.push({
+                start: h,
+                end: m.index
+            }), h = m.index + m[0].length;
+            h < n.length && c.push({
+                start: h,
+                end: n.length
+            });
+            let b = 0;
+            for (const {
+                    matchStartIndex: L,
+                    matchedText: C
+                }
+                of i) {
+                if (o < 0) break;
+                for (; c[b + 1] && L > c[b].end;) b++;
+                let k = b;
+                for (; c[k + 1] && L + C.length > c[k].end;) k++;
+                if (r.surroundingContext)
+                    for (let S = Math.max(0, b - r.surroundingContext); S < b; S++) u.add(S);
+                let E = "",
+                    W = 0;
+                for (let S = b; S <= k; S++) {
+                    let H = f(S);
+                    r.previewOptions?.charsPerLine && H.length > r.previewOptions.charsPerLine && (W = Math.max(L - c[b].start - 20, 0), H = H.substr(W, r.previewOptions.charsPerLine)), E += `${H}
+`, l.add(S)
+                }
+                const y = new Bt(b, L - c[b].start, k, L + C.length - c[k].start),
+                    A = new Bt(0, L - c[b].start - W, k - b, L + C.length - c[k].start - (k === b ? W : 0)),
+                    P = {
+                        rangeLocations: [{
+                            source: y,
+                            preview: A
+                        }],
+                        previewText: E
+                    };
+                if (s.push(P), r.surroundingContext)
+                    for (let S = k + 1; S <= Math.min(k + r.surroundingContext, c.length - 1); S++) u.add(S)
+            }
+            for (const L of u) l.has(L) || s.push({
+                text: f(L),
+                lineNumber: L + 1
+            })
+        }
+        return s
+    },
+    Ps = class {
+        constructor(t, e, r) {
+            if (this.location = e, this.parent = r, e[e.length - 1] === "\\") throw Error("Unexpected path format, do not use trailing backslashes");
+            e[e.length - 1] !== "/" && (e += "/"), this.isPathIgnored = this.parseIgnoreFile(t, this.location, this.parent)
+        }
+        updateContents(t) {
+            this.isPathIgnored = this.parseIgnoreFile(t, this.location, this.parent)
+        }
+        isPathIncludedInTraversal(t, e) {
+            if (t[0] !== "/" || t[t.length - 1] === "/") throw Error("Unexpected path format, expectred to begin with slash and end without. got:" + t);
+            return !this.isPathIgnored(t, e)
+        }
+        isArbitraryPathIgnored(t, e) {
+            if (t[0] !== "/" || t[t.length - 1] === "/") throw Error("Unexpected path format, expectred to begin with slash and end without. got:" + t);
+            const r = t.split("/").filter(i => i);
+            let n = !1,
+                s = "";
+            for (let i = 0; i < r.length; i++) {
+                const a = i === r.length - 1,
+                    o = r[i];
+                if (s = s + "/" + o, !this.isPathIncludedInTraversal(s, a ? e : !0)) {
+                    n = !0;
+                    break
+                }
+            }
+            return n
+        }
+        gitignoreLinesToExpression(t, e, r) {
+            const n = t.map(i => this.gitignoreLineToGlob(i, e)),
+                s = Object.create(null);
+            for (const i of n) s[i] = !0;
+            return Y1(s, {
+                trimForExclusions: r
+            })
+        }
+        parseIgnoreFile(t, e, r) {
+            const n = t.split(`
+`).map(p => p.trim()).filter(p => p && p[0] !== "#"),
+                s = n.filter(p => !p.endsWith("/")),
+                i = s.filter(p => !p.includes("!")),
+                a = this.gitignoreLinesToExpression(i, e, !0),
+                o = s.filter(p => p.includes("!")).map(p => p.replace(/!/g, "")),
+                u = this.gitignoreLinesToExpression(o, e, !1),
+                l = n.filter(p => !p.includes("!")),
+                c = this.gitignoreLinesToExpression(l, e, !0),
+                f = n.filter(p => p.includes("!")).map(p => p.replace(/!/g, "")),
+                h = this.gitignoreLinesToExpression(f, e, !1);
+            return (p, b) => p.startsWith(e) ? b && c(p) && !h(p) || a(p) && !u(p) ? !0 : r ? r.isPathIgnored(p, b) : !1 : !1
+        }
+        gitignoreLineToGlob(t, e) {
+            const r = t.indexOf("/");
+            return r === -1 || r === t.length - 1 ? t = "**/" + t : (r === 0 ? e.slice(-1) === "/" && (t = t.slice(1)) : e.slice(-1) !== "/" && (t = "/" + t), t = e + t), t
+        }
+    };
+
+function Z1(t, e = 0) {
+    if (!t || e > 200) return t;
+    if (typeof t == "object") {
+        switch (t.$mid) {
+            case 1:
+                return q.revive(t);
+            case 2:
+                return new RegExp(t.source, t.flags);
+            case 17:
+                return new Date(t.source)
+        }
+        if (t instanceof Wn || t instanceof Uint8Array) return t;
+        if (Array.isArray(t))
+            for (let r = 0; r < t.length; ++r) t[r] = Z1(t[r], e + 1);
+        else
+            for (const r in t) Object.hasOwnProperty.call(t, r) && (t[r] = Z1(t[r], e + 1))
+    }
+    return t
+}
+var Wt = !1,
+    ks = +new Date,
+    qt = {},
+    L1 = async (t, e) => {
+        if (!Wt) return e();
+        const r = Date.now(),
+            n = (qt[t] ?? 0) + 1;
+        console.info(t, n, "starting", Math.round((r - ks) * 10) / 1e4), qt[t] = n;
+        const s = await e(),
+            i = Date.now();
+        return console.info(t, n, "took", i - r), s
+    };
+
+function Ss(t) {
+    return new Ts(t)
+}
+var Ts = class {
+    constructor(t) {
+        this.cancellationTokens = new Map, this.host = xs.getChannel(t)
+    }
+    $cancelQuery(t) {
+        this.cancellationTokens.get(t)?.cancel()
+    }
+    registerCancellationToken(t) {
+        const e = new Jr;
+        return this.cancellationTokens.set(t, e), e
+    }
+    async $listDirectory(t, e, r, n, s) {
+        const i = Se(r),
+            a = new x1(() => n),
+            o = this.registerCancellationToken(s),
+            u = [];
+        let l = !1,
+            c = 0;
+        const f = e.maxResults || 512,
+            h = e.filePattern ? m => e.filePattern.split("").every(p => m.includes(p)) : m => !0;
+        return await L1("listDirectory", () => this.walkFolderQuery(t, jt(e), i, a, m => {
+            if (h(m.name)) return c++, f && c > f && (l = !0, o.cancel()), u.push(m.path)
+        }, o.token, e.maxDepth)), {
+            results: u,
+            limitHit: l
+        }
+    }
+    async $searchDirectory(t, e, r, n, s) {
+        const i = Se(r),
+            a = new x1(() => n);
+        return L1("searchInFiles", async () => {
+            const o = this.registerCancellationToken(s),
+                u = [],
+                l = Rs(e.contentPattern),
+                c = [];
+            let f = 0,
+                h = 0;
+            const m = !1,
+                p = async b => {
+                    if (o.token.isCancellationRequested) return;
+                    f++;
+                    const L = await b.resolve();
+                    if (o.token.isCancellationRequested) return;
+                    const C = new Uint8Array(L),
+                        k = Ns(C, l, {
+                            surroundingContext: e.surroundingContext ?? 0,
+                            previewOptions: e.previewOptions,
+                            remainingResultQuota: e.maxResults ? e.maxResults - h : 1e4
+                        });
+                    if (k.length) {
+                        h += k.length, e.maxResults && h > e.maxResults && o.cancel();
+                        const E = {
+                            resource: q.joinPath(i.folder, b.path),
+                            results: k
+                        };
+                        this.host.$sendTextSearchMatch(E, s), u.push(E)
+                    }
+                };
+            return await L1("walkFolderToResolve", () => this.walkFolderQuery(t, jt(e), i, a, async b => c.push(p(b)), o.token)), await L1("resolveOngoingProcesses", () => Promise.all(c)), Wt && console.log("Searched in", f, "files"), {
+                results: u,
+                limitHit: m
+            }
+        })
+    }
+    async walkFolderQuery(t, e, r, n, s, i, a) {
+        const o = r.excludePattern?.map(C => Y1(C.pattern ?? {}, {
+                trimForExclusions: !0
+            })),
+            u = (C, k, E) => o?.some(W => W(C, k, E)),
+            l = (C, k, E) => (C = C.slice(1), !!(u(C, k, E) || Os(e, C))),
+            c = (C, k, E) => (C = C.slice(1), !(u(C, k, E) || !Is(e, C, n))),
+            f = (C, k) => ({
+                type: "file",
+                name: C.name,
+                path: k,
+                resolve: () => C.getFile().then(W => W.arrayBuffer())
+            }),
+            h = C => C.kind === "directory",
+            m = C => C.kind === "file",
+            p = async (C, k, E, W) => {
+                if (!r.disregardIgnoreFiles) {
+                    const A = await Promise.all([C.getFileHandle(".gitignore").catch(P => {}), C.getFileHandle(".ignore").catch(P => {})]);
+                    await Promise.all(A.map(async P => {
+                        if (!P) return;
+                        const S = new TextDecoder("utf8").decode(new Uint8Array(await (await P.getFile()).arrayBuffer()));
+                        E = new Ps(S, k, E)
+                    }))
+                }
+                const y = Ne.withAsyncBody(async A => {
+                    const P = [],
+                        S = [],
+                        H = [],
+                        u1 = new Set;
+                    for await (const o1 of C.entries()) H.push(o1), u1.add(o1[0]);
+                    for (const [o1, c1] of H) {
+                        if (i.isCancellationRequested) break;
+                        const f1 = k + o1;
+                        if (E && !E.isPathIncludedInTraversal(f1, c1.kind === "directory")) continue;
+                        const S1 = g => u1.has(g);
+                        if (h(c1) && !l(f1, o1, S1)) {
+                            if (a !== void 0 && W + 1 > a) continue;
+                            S.push(p(c1, f1 + "/", E, W + 1))
+                        } else m(c1) && c(f1, o1, S1) && P.push(f(c1, f1))
+                    }
+                    A([...await Promise.all(S), ...P])
+                });
+                return {
+                    type: "dir",
+                    name: C.name,
+                    entries: y
+                }
+            }, b = async (C, k) => {
+                i.isCancellationRequested || await Promise.all((await C.entries).sort((E, W) => -(E.type === "dir" ? 0 : 1) + (W.type === "dir" ? 0 : 1)).map(async E => E.type === "dir" ? b(E, k) : k(E)))
+            }, L = await L1("process", () => p(t, "/", void 0, 0));
+        await L1("resolve", () => b(L, s))
+    }
+};
+
+function Rs(t) {
+    return Xr(t.pattern, !!t.isRegExp, {
+        wholeWord: t.isWordMatch,
+        global: !0,
+        matchCase: t.isCaseSensitive,
+        multiline: !0,
+        unicode: !0
+    })
+}
+
+function Se(t) {
+    return Z1({
+        ...Z1(t),
+        excludePattern: t.excludePattern?.map(e => ({
+            folder: q.revive(e.folder),
+            pattern: e.pattern
+        })),
+        folder: q.revive(t.folder)
+    })
+}
+
+function jt(t) {
+    return {
+        ...t,
+        extraFileResources: t.extraFileResources?.map(e => q.revive(e)),
+        folderQueries: t.folderQueries.map(e => Se(e))
+    }
+}
+
+function Os(t, e) {
+    return !!(t.excludePattern && J1(t.excludePattern, e))
+}
+
+function Is(t, e, r) {
+    return t.excludePattern && J1(t.excludePattern, e) ? !1 : t.includePattern || t.usingSearchPaths ? t.includePattern && J1(t.includePattern, e) ? !0 : t.usingSearchPaths ? !!t.folderQueries && t.folderQueries.some(n => {
+        const s = n.folder,
+            i = q.file(e);
+        if (r.isEqualOrParent(i, s)) {
+            const a = dt(s.path, i.path);
+            return !n.includePattern || !!J1(n.includePattern, a)
+        } else return !1
+    }) : !1 : !0
+}
+_n(Ss);
+
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/core/vs/workbench/services/search/worker/localFileSearchMain.js.map
+
+//# debugId=c75eef73-5d27-5cb1-beb9-ce7ccd59bed1

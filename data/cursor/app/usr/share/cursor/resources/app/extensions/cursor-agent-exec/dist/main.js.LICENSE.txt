@@ -48,6 +48,11 @@
 /*! ws. MIT License. Einar Otto Stangvik <einaros@gmail.com> */
 
 /**
+ * @license MIT <https://opensource.org/licenses/MIT>
+ * @copyright Michael Hart 2024
+ */
+
+/**
  * @preserve
  * Copyright 2015-2018 Igor Bezkrovnyi
  * All rights reserved. (MIT Licensed)

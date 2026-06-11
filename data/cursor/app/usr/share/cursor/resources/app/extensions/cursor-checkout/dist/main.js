@@ -1,2 +1,277 @@
-(()=>{"use strict";var e={d:(t,a)=>{for(var r in a)e.o(a,r)&&!e.o(t,r)&&Object.defineProperty(t,r,{enumerable:!0,get:a[r]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t),r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},t={};e.r(t),e.d(t,{activate:()=>h,deactivate:()=>m});const a=require("vscode"),r=require("node:child_process"),i=require("node:fs/promises"),s=require("node:os"),n=require("node:util"),o=require("node:path"),c=(0,n.promisify)(r.execFile);class l{constructor(e){this.workspacePaths=e,this.recentlyWarmedBranches=new Map}getCwd(){return this.workspacePaths[0]??a.workspace.workspaceFolders?.[0]?.uri.fsPath??s.homedir()}normalizeRemoteName(e){const t=e?.trim()||"origin";if(t.startsWith("-"))throw new Error(`Invalid remote name: ${t}`);return t}async executeGitCommandStable(e,t,a,r){const{stdout:i}=await c("git",t,{cwd:e,env:r?{...process.env,...r}:void 0,maxBuffer:10485760,signal:a});return i??""}normalizeBranchName(e){let t=e.trim();if(t.startsWith("refs/heads/")?t=t.slice(11):t.startsWith("heads/")?t=t.slice(6):t.startsWith("remotes/")&&(t=t.slice(8)),t.startsWith("origin/")&&(t=t.slice(7)),t.startsWith("-"))throw new Error(`Invalid branch name: ${t}`);if(0===t.length)throw new Error("Invalid branch name: empty");return t}throwIfCancelled(e){if(e?.isCancellationRequested)throw new Error("Aborting checkout")}resolveCurrentBranchName(e){const t=e.trim();if(!t||"HEAD"===t)throw new Error("Current checkout is detached; cannot push without a branch");return this.normalizeBranchName(t)}normalizeCurrentBranchRef(e){let t=e.trim();return t.startsWith("refs/remotes/")&&(t=t.slice(13)),t}setBranchWarmTimestamp(e){this.recentlyWarmedBranches.set(e,Date.now())}wasBranchWarmedRecently(e){const t=this.recentlyWarmedBranches.get(e);return!(void 0===t||Date.now()-t>=3e4&&(this.recentlyWarmedBranches.delete(e),1))}async warmCheckoutBranch(e,t){const a=this.getCwd(),r=this.normalizeBranchName(e);this.throwIfCancelled(t);const i=new AbortController,s=t?.onCancellationRequested(()=>{i.abort()});t?.isCancellationRequested&&i.abort();try{await this.executeGitCommandStable(a,["fetch","origin",`refs/heads/${r}:refs/remotes/origin/${r}`,"--no-tags","--recurse-submodules=no","--no-write-fetch-head"],i.signal),this.setBranchWarmTimestamp(r)}finally{s?.dispose()}}async checkoutBranch(e,t,a,r){const i=this.getCwd(),s=this.normalizeBranchName(t),n=new AbortController,o=r?.onCancellationRequested(()=>{n.abort()});r?.isCancellationRequested&&n.abort();try{if(this.throwIfCancelled(r),""!==(await this.executeGitCommandStable(i,["status","--porcelain"],n.signal)).trim()){const a=await e.resolveConflict();if(this.throwIfCancelled(r),"stash"===a)await this.executeGitCommandStable(i,["stash","--include-untracked"],n.signal);else if("commit"===a)await this.executeGitCommandStable(i,["add","-A"],n.signal),await this.executeGitCommandStable(i,["commit","-m",`checkpoint before checking out ${t}`],n.signal);else{if("discard"!==a)throw new Error("Aborting checkout");await this.executeGitCommandStable(i,["reset","--hard","HEAD","--quiet"],n.signal),await this.executeGitCommandStable(i,["clean","-fd","--quiet"],n.signal)}}if(a?.localOnly){const e=`refs/heads/${s}`;return await this.executeGitCommandStable(i,["rev-parse","--verify",e],n.signal),void await this.executeGitCommandStable(i,["checkout",s],n.signal)}this.wasBranchWarmedRecently(s)||(await this.executeGitCommandStable(i,["fetch","origin",`refs/heads/${s}:refs/remotes/origin/${s}`,"--no-tags","--recurse-submodules=no","--no-write-fetch-head"],n.signal),this.setBranchWarmTimestamp(s));let o=!1;const c=`refs/heads/${s}`,l=`refs/remotes/origin/${s}`;try{await this.executeGitCommandStable(i,["rev-parse","--verify",c],n.signal),o=!0}catch{o=!1}if(o)await this.executeGitCommandStable(i,["checkout",s],n.signal);else{let e=!1;try{await this.executeGitCommandStable(i,["rev-parse","--verify",l],n.signal),e=!0}catch{e=!1}if(!e)throw new Error(`Remote branch not found on origin: ${s}`);await this.executeGitCommandStable(i,["checkout","-b",s,`origin/${s}`],n.signal)}await this.executeGitCommandStable(i,["merge","--ff-only",`origin/${s}`],n.signal)}finally{o?.dispose()}}async ensureCurrentBranchPushed(e,t){const a=e?.cwd?.trim()||this.getCwd(),r=this.normalizeRemoteName(e?.remoteName),i=new AbortController,s=t?.onCancellationRequested(()=>{i.abort()});t?.isCancellationRequested&&i.abort();try{this.throwIfCancelled(t);const s=e?.branchName?.trim(),n=s||this.resolveCurrentBranchName(this.normalizeCurrentBranchRef(await this.executeGitCommandStable(a,["rev-parse","--abbrev-ref","HEAD"],i.signal))),o=["push",r,`${s?`refs/heads/${n}`:"HEAD"}:refs/heads/${n}`];if(!0===e?.forcePush&&o.push("--force-with-lease"),!s){const e=`refs/remotes/${r}/${n}`;let t=!1;try{const r=await this.executeGitCommandStable(a,["rev-list","--count",`${e}..HEAD`],i.signal);t=Number(r.trim())>0}catch{t=!0}if(!t)return}await this.executeGitCommandStable(a,o,i.signal)}finally{s?.dispose()}}async snapshotAndPushCurrentBranch(e,t){const a=e?.cwd?.trim()||this.getCwd(),r=this.normalizeRemoteName(e?.remoteName),n=e?.commitMessage??"Cursor: Apply local changes for cloud agent",c=new AbortController,l=t?.onCancellationRequested(()=>{c.abort()});t?.isCancellationRequested&&c.abort();try{this.throwIfCancelled(t);const l=await this.executeGitCommandStable(a,["rev-parse","--abbrev-ref","HEAD"],c.signal),h=(this.resolveCurrentBranchName(this.normalizeCurrentBranchRef(l)),Date.now()),m=Math.random().toString(36).substring(2,7),d=`${e?.branchPrefix?.trim()||"cursor/"}cloud-agent-${h}-${m}`,u=o.join(s.tmpdir(),`cursor-index-${d.replace(/\//g,"-")}-${process.pid}-${m}`),w={GIT_INDEX_FILE:u};try{await this.executeGitCommandStable(a,["read-tree","HEAD"],c.signal,w),await this.executeGitCommandStable(a,["add","-A","--","."],c.signal,w);const e=(await this.executeGitCommandStable(a,["write-tree"],c.signal,w)).trim();if(e===(await this.executeGitCommandStable(a,["rev-parse","HEAD^{tree}"],c.signal)).trim())throw new Error("No changes were captured in the snapshot worktree");const t=(await this.executeGitCommandStable(a,["commit-tree",e,"-p","HEAD","-m",n],c.signal)).trim();await this.executeGitCommandStable(a,["update-ref",`refs/heads/${d}`,t],c.signal),await this.executeGitCommandStable(a,["push","--set-upstream",r,d],c.signal)}finally{try{await(0,i.unlink)(u)}catch{}}if(e?.stashLocalChangesAfterPush)try{const t=e.stashMessage??"Cursor: moved local changes to cloud agent";await this.executeGitCommandStable(a,["stash","push","--include-untracked","-m",t],c.signal)}catch{}return d}finally{l?.dispose()}}async hasDirtyWorkingTree(e){const t=this.getCwd();return this.throwIfCancelled(e),(await this.executeGitCommandStable(t,["--no-optional-locks","status","--porcelain"])).trim().length>0}}function h(e){const t=(a.workspace.workspaceFolders??[]).map(e=>e.uri.fsPath),r=new l(t),i=a.cursor.registerCheckoutProvider(r);e.subscriptions.push(i)}function m(){}var d=exports;for(var u in t)d[u]=t[u];t.__esModule&&Object.defineProperty(d,"__esModule",{value:!0})})();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/009bb5a3600dd98fe1c1f25798f767f686e14750/extensions/cursor-checkout/dist/main.js.map
+(() => {
+    "use strict";
+    var e = {
+            d: (t, a) => {
+                for (var r in a) e.o(a, r) && !e.o(t, r) && Object.defineProperty(t, r, {
+                    enumerable: !0,
+                    get: a[r]
+                })
+            },
+            o: (e, t) => Object.prototype.hasOwnProperty.call(e, t),
+            r: e => {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                })
+            }
+        },
+        t = {};
+    e.r(t), e.d(t, {
+        activate: () => l,
+        deactivate: () => m
+    });
+    const a = require("vscode"),
+        r = require("node:child_process"),
+        i = require("node:fs/promises"),
+        s = require("node:os"),
+        n = require("node:util"),
+        o = require("node:path"),
+        c = (0, n.promisify)(r.execFile);
+    class h {
+        constructor(e) {
+            this.workspacePaths = e, this.recentlyWarmedBranches = new Map
+        }
+        getCwd() {
+            return this.workspacePaths[0] ?? a.workspace.workspaceFolders?.[0]?.uri.fsPath ?? s.homedir()
+        }
+        normalizeRemoteName(e) {
+            const t = e?.trim() || "origin";
+            if (t.startsWith("-")) throw new Error(`Invalid remote name: ${t}`);
+            return t
+        }
+        async executeGitCommandStable(e, t, a, r) {
+            const {
+                stdout: i
+            } = await c("git", t, {
+                cwd: e,
+                env: r ? {
+                    ...process.env,
+                    ...r
+                } : void 0,
+                maxBuffer: 10485760,
+                signal: a
+            });
+            return i ?? ""
+        }
+        normalizeBranchName(e) {
+            let t = e.trim();
+            if (t.startsWith("refs/heads/") ? t = t.slice(11) : t.startsWith("heads/") ? t = t.slice(6) : t.startsWith("remotes/") && (t = t.slice(8)), t.startsWith("origin/") && (t = t.slice(7)), t.startsWith("-")) throw new Error(`Invalid branch name: ${t}`);
+            if (0 === t.length) throw new Error("Invalid branch name: empty");
+            return t
+        }
+        normalizeCommitSha(e) {
+            const t = e?.trim().toLowerCase();
+            if (t) return /^(?:[0-9a-f]{40}|[0-9a-f]{64})$/.test(t) ? t : void 0
+        }
+        throwIfCancelled(e) {
+            if (e?.isCancellationRequested) throw new Error("Aborting checkout")
+        }
+        resolveCurrentBranchName(e) {
+            const t = e.trim();
+            if (!t || "HEAD" === t) throw new Error("Current checkout is detached; cannot push without a branch");
+            return this.normalizeBranchName(t)
+        }
+        normalizeCurrentBranchRef(e) {
+            let t = e.trim();
+            return t.startsWith("refs/remotes/") && (t = t.slice(13)), t
+        }
+        setBranchWarmTimestamp(e) {
+            this.recentlyWarmedBranches.set(e, Date.now())
+        }
+        wasBranchWarmedRecently(e) {
+            const t = this.recentlyWarmedBranches.get(e);
+            return !(void 0 === t || Date.now() - t >= 3e4 && (this.recentlyWarmedBranches.delete(e), 1))
+        }
+        async commitExistsLocally(e, t, a) {
+            try {
+                return await this.executeGitCommandStable(e, ["cat-file", "-e", `${t}^{commit}`], a), !0
+            } catch (e) {
+                if (a.aborted) throw e;
+                return !1
+            }
+        }
+        async fetchCommitSha(e, t, a) {
+            if (await this.commitExistsLocally(e, t, a)) return !0;
+            try {
+                return await this.executeGitCommandStable(e, ["fetch", "origin", t, "--no-tags", "--recurse-submodules=no", "--no-write-fetch-head"], a), !0
+            } catch (e) {
+                if (a.aborted) throw e;
+                return !1
+            }
+        }
+        async getLocalBranchSha(e, t, a) {
+            try {
+                const r = await this.executeGitCommandStable(e, ["rev-parse", "--verify", `refs/heads/${t}`], a);
+                return this.normalizeCommitSha(r)
+            } catch (e) {
+                if (a.aborted) throw e;
+                return
+            }
+        }
+        async isCommitAncestor(e, t, a, r) {
+            try {
+                return await this.executeGitCommandStable(e, ["merge-base", "--is-ancestor", t, a], r), !0
+            } catch (e) {
+                if (r.aborted) throw e;
+                return !1
+            }
+        }
+        async checkoutFetchedCommit(e, t, a, r) {
+            const i = await this.getLocalBranchSha(e, t, r);
+            if (i !== a) return i ? await this.isCommitAncestor(e, i, a, r) ? void await this.executeGitCommandStable(e, ["checkout", "-B", t, a], r) : void await this.executeGitCommandStable(e, ["checkout", "--detach", a], r) : void await this.executeGitCommandStable(e, ["checkout", "-b", t, a], r);
+            await this.executeGitCommandStable(e, ["checkout", t], r)
+        }
+        async warmCheckoutBranch(e, t) {
+            const a = this.getCwd(),
+                r = this.normalizeBranchName(e);
+            this.throwIfCancelled(t);
+            const i = new AbortController,
+                s = t?.onCancellationRequested(() => {
+                    i.abort()
+                });
+            t?.isCancellationRequested && i.abort();
+            try {
+                await this.executeGitCommandStable(a, ["fetch", "origin", `refs/heads/${r}:refs/remotes/origin/${r}`, "--no-tags", "--recurse-submodules=no", "--no-write-fetch-head"], i.signal), this.setBranchWarmTimestamp(r)
+            } finally {
+                s?.dispose()
+            }
+        }
+        async checkoutBranch(e, t, a, r) {
+            const i = this.getCwd(),
+                s = this.normalizeBranchName(t),
+                n = this.normalizeCommitSha(a?.commitSha),
+                o = new AbortController,
+                c = r?.onCancellationRequested(() => {
+                    o.abort()
+                });
+            r?.isCancellationRequested && o.abort();
+            try {
+                if (this.throwIfCancelled(r), "" !== (await this.executeGitCommandStable(i, ["--no-optional-locks", "status", "--porcelain"], o.signal)).trim()) {
+                    const a = await e.resolveConflict();
+                    if (this.throwIfCancelled(r), "stash" === a) await this.executeGitCommandStable(i, ["stash", "--include-untracked"], o.signal);
+                    else if ("commit" === a) await this.executeGitCommandStable(i, ["add", "-A"], o.signal), await this.executeGitCommandStable(i, ["commit", "-m", `checkpoint before checking out ${t}`], o.signal);
+                    else {
+                        if ("discard" !== a) throw new Error("Aborting checkout");
+                        await this.executeGitCommandStable(i, ["reset", "--hard", "HEAD", "--quiet"], o.signal), await this.executeGitCommandStable(i, ["clean", "-fd", "--quiet"], o.signal)
+                    }
+                }
+                if (a?.localOnly) {
+                    const e = `refs/heads/${s}`;
+                    return await this.executeGitCommandStable(i, ["rev-parse", "--verify", e], o.signal), void await this.executeGitCommandStable(i, ["checkout", s], o.signal)
+                }
+                if (n && await this.fetchCommitSha(i, n, o.signal)) return void await this.checkoutFetchedCommit(i, s, n, o.signal);
+                this.wasBranchWarmedRecently(s) || (await this.executeGitCommandStable(i, ["fetch", "origin", `refs/heads/${s}:refs/remotes/origin/${s}`, "--no-tags", "--recurse-submodules=no", "--no-write-fetch-head"], o.signal), this.setBranchWarmTimestamp(s));
+                let c = !1;
+                const h = `refs/heads/${s}`,
+                    l = `refs/remotes/origin/${s}`;
+                try {
+                    await this.executeGitCommandStable(i, ["rev-parse", "--verify", h], o.signal), c = !0
+                } catch {
+                    c = !1
+                }
+                if (c) await this.executeGitCommandStable(i, ["checkout", s], o.signal);
+                else {
+                    let e = !1;
+                    try {
+                        await this.executeGitCommandStable(i, ["rev-parse", "--verify", l], o.signal), e = !0
+                    } catch {
+                        e = !1
+                    }
+                    if (!e) throw new Error(`Remote branch not found on origin: ${s}`);
+                    await this.executeGitCommandStable(i, ["checkout", "-b", s, `origin/${s}`], o.signal)
+                }
+                await this.executeGitCommandStable(i, ["merge", "--ff-only", `origin/${s}`], o.signal)
+            } finally {
+                c?.dispose()
+            }
+        }
+        async ensureCurrentBranchPushed(e, t) {
+            const a = e?.cwd?.trim() || this.getCwd(),
+                r = this.normalizeRemoteName(e?.remoteName),
+                i = new AbortController,
+                s = t?.onCancellationRequested(() => {
+                    i.abort()
+                });
+            t?.isCancellationRequested && i.abort();
+            try {
+                this.throwIfCancelled(t);
+                const s = e?.branchName?.trim(),
+                    n = s || this.resolveCurrentBranchName(this.normalizeCurrentBranchRef(await this.executeGitCommandStable(a, ["rev-parse", "--abbrev-ref", "HEAD"], i.signal))),
+                    o = ["push", r, `${s?`refs/heads/${n}`:"HEAD"}:refs/heads/${n}`];
+                if (!0 === e?.forcePush && o.push("--force-with-lease"), !s) {
+                    const e = `refs/remotes/${r}/${n}`;
+                    let t = !1;
+                    try {
+                        const r = await this.executeGitCommandStable(a, ["rev-list", "--count", `${e}..HEAD`], i.signal);
+                        t = Number(r.trim()) > 0
+                    } catch {
+                        t = !0
+                    }
+                    if (!t) return
+                }
+                await this.executeGitCommandStable(a, o, i.signal)
+            } finally {
+                s?.dispose()
+            }
+        }
+        async snapshotAndPushCurrentBranch(e, t) {
+            const a = e?.cwd?.trim() || this.getCwd(),
+                r = this.normalizeRemoteName(e?.remoteName),
+                n = e?.commitMessage ?? "Cursor: Apply local changes for cloud agent",
+                c = new AbortController,
+                h = t?.onCancellationRequested(() => {
+                    c.abort()
+                });
+            t?.isCancellationRequested && c.abort();
+            try {
+                this.throwIfCancelled(t);
+                const h = await this.executeGitCommandStable(a, ["rev-parse", "--abbrev-ref", "HEAD"], c.signal),
+                    l = (this.resolveCurrentBranchName(this.normalizeCurrentBranchRef(h)), Date.now()),
+                    m = Math.random().toString(36).substring(2, 7),
+                    u = `${e?.branchPrefix?.trim()||"cursor/"}cloud-agent-${l}-${m}`,
+                    d = o.join(s.tmpdir(), `cursor-index-${u.replace(/\//g,"-")}-${process.pid}-${m}`),
+                    w = {
+                        GIT_INDEX_FILE: d
+                    };
+                try {
+                    await this.executeGitCommandStable(a, ["read-tree", "HEAD"], c.signal, w), await this.executeGitCommandStable(a, ["add", "-A", "--", "."], c.signal, w);
+                    const e = (await this.executeGitCommandStable(a, ["write-tree"], c.signal, w)).trim();
+                    if (e === (await this.executeGitCommandStable(a, ["rev-parse", "HEAD^{tree}"], c.signal)).trim()) throw new Error("No changes were captured in the snapshot worktree");
+                    const t = (await this.executeGitCommandStable(a, ["commit-tree", e, "-p", "HEAD", "-m", n], c.signal)).trim();
+                    await this.executeGitCommandStable(a, ["update-ref", `refs/heads/${u}`, t], c.signal), await this.executeGitCommandStable(a, ["push", "--set-upstream", r, u], c.signal)
+                } finally {
+                    try {
+                        await (0, i.unlink)(d)
+                    } catch {}
+                }
+                if (e?.stashLocalChangesAfterPush) try {
+                    const t = e.stashMessage ?? "Cursor: moved local changes to cloud agent";
+                    await this.executeGitCommandStable(a, ["stash", "push", "--include-untracked", "-m", t], c.signal)
+                } catch {}
+                return u
+            } finally {
+                h?.dispose()
+            }
+        }
+        async hasDirtyWorkingTree(e) {
+            const t = this.getCwd();
+            return this.throwIfCancelled(e), (await this.executeGitCommandStable(t, ["--no-optional-locks", "status", "--porcelain"])).trim().length > 0
+        }
+    }
+
+    function l(e) {
+        const t = (a.workspace.workspaceFolders ?? []).map(e => e.uri.fsPath),
+            r = new h(t),
+            i = a.cursor.registerCheckoutProvider(r);
+        e.subscriptions.push(i)
+    }
+
+    function m() {}
+    var u = exports;
+    for (var d in t) u[d] = t[d];
+    t.__esModule && Object.defineProperty(u, "__esModule", {
+        value: !0
+    })
+})();
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/extensions/cursor-checkout/dist/main.js.map

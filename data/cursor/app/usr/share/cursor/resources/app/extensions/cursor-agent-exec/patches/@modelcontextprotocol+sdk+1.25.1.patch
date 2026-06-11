@@ -1,36 +1,18 @@
 diff --git a/node_modules/@modelcontextprotocol/sdk/dist/cjs/client/auth.js b/node_modules/@modelcontextprotocol/sdk/dist/cjs/client/auth.js
-index f89657f..6ca46e6 100644
+index f89657f..6033843 100644
 --- a/node_modules/@modelcontextprotocol/sdk/dist/cjs/client/auth.js
 +++ b/node_modules/@modelcontextprotocol/sdk/dist/cjs/client/auth.js
-@@ -33,6 +33,27 @@ class UnauthorizedError extends Error {
+@@ -33,6 +33,9 @@ class UnauthorizedError extends Error {
      }
  }
  exports.UnauthorizedError = UnauthorizedError;
-+function __cursorIsRetryableOAuthRefreshError(error) {
-+    if (!(error instanceof Error)) {
-+        return false;
-+    }
-+    if (error.name === 'AbortError' || error.name === 'TimeoutError') {
-+        return true;
-+    }
-+    const cause = error.cause;
-+    const code = error.code ?? (cause && typeof cause === 'object' && 'code' in cause ? cause.code : undefined);
-+    if (typeof code === 'string' && /^(EAI_AGAIN|ECONNABORTED|ECONNREFUSED|ECONNRESET|EHOSTUNREACH|ENETDOWN|ENETUNREACH|ENOTFOUND|EPIPE|ETIMEDOUT|EADDRNOTAVAIL)$/.test(code)) {
-+        return true;
-+    }
-+    const msg = (error.message ?? '').toLowerCase();
-+    if (/fetch failed|network error|socket hang up|client network socket disconnected|connection (?:timed out|timeout|closed|terminated)/i.test(msg)) {
-+        return true;
-+    }
-+    if (error instanceof errors_js_1.TemporarilyUnavailableError) {
-+        return true;
-+    }
-+    return false;
++function __cursorIsRetryableOAuthRefreshError(error, provider) {
++    return provider?.isRetryableOAuthRefreshError?.(error) === true;
 +}
  function isClientAuthMethod(method) {
      return ['client_secret_basic', 'client_secret_post', 'none'].includes(method);
  }
-@@ -168,6 +189,9 @@ async function auth(provider, options) {
+@@ -168,6 +171,9 @@ async function auth(provider, options) {
          return await authInternal(provider, options);
      }
      catch (error) {
@@ -40,7 +22,7 @@ index f89657f..6ca46e6 100644
          // Handle recoverable error types by invalidating credentials and retrying
          if (error instanceof errors_js_1.InvalidClientError || error instanceof errors_js_1.UnauthorizedClientError) {
              await provider.invalidateCredentials?.('all');
-@@ -182,6 +206,8 @@ async function auth(provider, options) {
+@@ -182,6 +188,8 @@ async function auth(provider, options) {
      }
  }
  async function authInternal(provider, { serverUrl, authorizationCode, scope, resourceMetadataUrl, fetchFn }) {
@@ -49,7 +31,7 @@ index f89657f..6ca46e6 100644
      let resourceMetadata;
      let authorizationServerUrl;
      try {
-@@ -231,7 +257,7 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
+@@ -231,7 +239,7 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
              const fullInformation = await registerClient(authorizationServerUrl, {
                  metadata,
                  clientMetadata: provider.clientMetadata,
@@ -58,7 +40,7 @@ index f89657f..6ca46e6 100644
              });
              await provider.saveClientInformation(fullInformation);
              clientInformation = fullInformation;
-@@ -245,7 +271,7 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
+@@ -245,7 +253,7 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
              metadata,
              resource,
              authorizationCode,
@@ -67,7 +49,7 @@ index f89657f..6ca46e6 100644
          });
          await provider.saveTokens(tokens);
          return 'AUTHORIZED';
-@@ -254,6 +280,8 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
+@@ -254,6 +262,8 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
      // Handle token refresh or new authorization
      if (tokens?.refresh_token) {
          try {
@@ -76,7 +58,7 @@ index f89657f..6ca46e6 100644
              // Attempt to refresh the token
              const newTokens = await refreshAuthorization(authorizationServerUrl, {
                  metadata,
-@@ -261,12 +289,75 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
+@@ -261,12 +271,48 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
                  refreshToken: tokens.refresh_token,
                  resource,
                  addClientAuthentication: provider.addClientAuthentication,
@@ -94,10 +76,9 @@ index f89657f..6ca46e6 100644
 +            // [CURSOR PATCH] Log the catch-branch decision point before any branch is taken.
 +            const __isOAuthError = error instanceof errors_js_1.OAuthError;
 +            const __isServerError = error instanceof errors_js_1.ServerError;
-+            const __isRetryable = __cursorIsRetryableOAuthRefreshError(error);
++            const __isRetryable = __cursorIsRetryableOAuthRefreshError(error, provider);
 +            const __isDefiniteOAuthFailure = __isOAuthError && !__isServerError && !(error instanceof errors_js_1.TemporarilyUnavailableError);
-+            const __fallthroughClassification = provider.classifyFallthroughError?.(error instanceof Error ? error.message : String(error)) ?? 'default';
-+            const __willRethrow = __isDefiniteOAuthFailure || __isRetryable || __fallthroughClassification === 'retry' || (__fallthroughClassification !== 'pass' && !!provider.shouldBlockRefreshFallthrough);
++            const __willRethrow = __isDefiniteOAuthFailure || __isRetryable;
 +            provider.logRefreshCatchBranch?.({
 +                errorIsOAuthError: __isOAuthError,
 +                errorIsServerError: __isServerError,
@@ -116,39 +97,13 @@ index f89657f..6ca46e6 100644
 +                throw error;
 +            }
 +            // Transient network / overload: do not fall through to interactive re-auth.
-+            if (__cursorIsRetryableOAuthRefreshError(error)) {
++            if (__cursorIsRetryableOAuthRefreshError(error, provider)) {
 +                const wrapped = new Error(error instanceof Error ? error.message : String(error));
 +                wrapped.name = 'OAuthRefreshTransientError';
 +                if (error instanceof Error && error.stack) {
 +                    wrapped.stack = error.stack;
 +                }
 +                throw wrapped;
-+            }
-+            // [CURSOR PATCH] Needle-based + catch-all classification for
-+            // unrecognized errors. classifyFallthroughError checks
-+            // fallthroughRetryNeedles/fallthroughPassNeedles from the
-+            // mcp_oauth_refresh_policy dynamic config.
-+            {
-+                const __errorMsg = error instanceof Error ? error.message : String(error);
-+                const __classification = provider.classifyFallthroughError?.(__errorMsg) ?? 'default';
-+                if (__classification === 'retry') {
-+                    const wrapped = new Error(__errorMsg);
-+                    wrapped.name = 'OAuthRefreshTransientError';
-+                    wrapped.cause = error;
-+                    if (error instanceof Error && error.stack) {
-+                        wrapped.stack = error.stack;
-+                    }
-+                    throw wrapped;
-+                }
-+                if (__classification !== 'pass' && !!provider.shouldBlockRefreshFallthrough) {
-+                    const wrapped = new Error(__errorMsg);
-+                    wrapped.name = 'OAuthRefreshTransientError';
-+                    wrapped.cause = error;
-+                    if (error instanceof Error && error.stack) {
-+                        wrapped.stack = error.stack;
-+                    }
-+                    throw wrapped;
-+                }
 +            }
              // If this is a ServerError, or an unknown type, log it out and try to continue. Otherwise, escalate so we can fix things and retry.
              if (!(error instanceof errors_js_1.OAuthError) || error instanceof errors_js_1.ServerError) {
@@ -192,10 +147,10 @@ index a29a7d3..eea8413 100644
                  }
              }
 diff --git a/node_modules/@modelcontextprotocol/sdk/dist/esm/client/auth.js b/node_modules/@modelcontextprotocol/sdk/dist/esm/client/auth.js
-index de86ff9..9b4d6bc 100644
+index de86ff9..ccc75fd 100644
 --- a/node_modules/@modelcontextprotocol/sdk/dist/esm/client/auth.js
 +++ b/node_modules/@modelcontextprotocol/sdk/dist/esm/client/auth.js
-@@ -3,12 +3,33 @@ import { LATEST_PROTOCOL_VERSION } from '../types.js';
+@@ -3,12 +3,15 @@ import { LATEST_PROTOCOL_VERSION } from '../types.js';
  import { OAuthErrorResponseSchema, OpenIdProviderDiscoveryMetadataSchema } from '../shared/auth.js';
  import { OAuthClientInformationFullSchema, OAuthMetadataSchema, OAuthProtectedResourceMetadataSchema, OAuthTokensSchema } from '../shared/auth.js';
  import { checkResourceAllowed, resourceUrlFromServerUrl } from '../shared/auth-utils.js';
@@ -206,31 +161,13 @@ index de86ff9..9b4d6bc 100644
          super(message ?? 'Unauthorized');
      }
  }
-+function __cursorIsRetryableOAuthRefreshError(error) {
-+    if (!(error instanceof Error)) {
-+        return false;
-+    }
-+    if (error.name === 'AbortError' || error.name === 'TimeoutError') {
-+        return true;
-+    }
-+    const cause = error.cause;
-+    const code = error.code ?? (cause && typeof cause === 'object' && 'code' in cause ? cause.code : undefined);
-+    if (typeof code === 'string' && /^(EAI_AGAIN|ECONNABORTED|ECONNREFUSED|ECONNRESET|EHOSTUNREACH|ENETDOWN|ENETUNREACH|ENOTFOUND|EPIPE|ETIMEDOUT|EADDRNOTAVAIL)$/.test(code)) {
-+        return true;
-+    }
-+    const msg = (error.message ?? '').toLowerCase();
-+    if (/fetch failed|network error|socket hang up|client network socket disconnected|connection (?:timed out|timeout|closed|terminated)/i.test(msg)) {
-+        return true;
-+    }
-+    if (error instanceof TemporarilyUnavailableError) {
-+        return true;
-+    }
-+    return false;
++function __cursorIsRetryableOAuthRefreshError(error, provider) {
++    return provider?.isRetryableOAuthRefreshError?.(error) === true;
 +}
  function isClientAuthMethod(method) {
      return ['client_secret_basic', 'client_secret_post', 'none'].includes(method);
  }
-@@ -144,6 +165,9 @@ export async function auth(provider, options) {
+@@ -144,6 +147,9 @@ export async function auth(provider, options) {
          return await authInternal(provider, options);
      }
      catch (error) {
@@ -240,7 +177,7 @@ index de86ff9..9b4d6bc 100644
          // Handle recoverable error types by invalidating credentials and retrying
          if (error instanceof InvalidClientError || error instanceof UnauthorizedClientError) {
              await provider.invalidateCredentials?.('all');
-@@ -158,6 +182,8 @@ export async function auth(provider, options) {
+@@ -158,6 +164,8 @@ export async function auth(provider, options) {
      }
  }
  async function authInternal(provider, { serverUrl, authorizationCode, scope, resourceMetadataUrl, fetchFn }) {
@@ -249,7 +186,7 @@ index de86ff9..9b4d6bc 100644
      let resourceMetadata;
      let authorizationServerUrl;
      try {
-@@ -207,7 +233,7 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
+@@ -207,7 +215,7 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
              const fullInformation = await registerClient(authorizationServerUrl, {
                  metadata,
                  clientMetadata: provider.clientMetadata,
@@ -258,7 +195,7 @@ index de86ff9..9b4d6bc 100644
              });
              await provider.saveClientInformation(fullInformation);
              clientInformation = fullInformation;
-@@ -221,7 +247,7 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
+@@ -221,7 +229,7 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
              metadata,
              resource,
              authorizationCode,
@@ -267,7 +204,7 @@ index de86ff9..9b4d6bc 100644
          });
          await provider.saveTokens(tokens);
          return 'AUTHORIZED';
-@@ -230,6 +256,8 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
+@@ -230,6 +238,8 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
      // Handle token refresh or new authorization
      if (tokens?.refresh_token) {
          try {
@@ -276,7 +213,7 @@ index de86ff9..9b4d6bc 100644
              // Attempt to refresh the token
              const newTokens = await refreshAuthorization(authorizationServerUrl, {
                  metadata,
-@@ -237,12 +265,75 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
+@@ -237,12 +247,48 @@ async function authInternal(provider, { serverUrl, authorizationCode, scope, res
                  refreshToken: tokens.refresh_token,
                  resource,
                  addClientAuthentication: provider.addClientAuthentication,
@@ -294,10 +231,9 @@ index de86ff9..9b4d6bc 100644
 +            // [CURSOR PATCH] Log the catch-branch decision point before any branch is taken.
 +            const __isOAuthError = error instanceof OAuthError;
 +            const __isServerError = error instanceof ServerError;
-+            const __isRetryable = __cursorIsRetryableOAuthRefreshError(error);
++            const __isRetryable = __cursorIsRetryableOAuthRefreshError(error, provider);
 +            const __isDefiniteOAuthFailure = __isOAuthError && !__isServerError && !(error instanceof TemporarilyUnavailableError);
-+            const __fallthroughClassification = provider.classifyFallthroughError?.(error instanceof Error ? error.message : String(error)) ?? 'default';
-+            const __willRethrow = __isDefiniteOAuthFailure || __isRetryable || __fallthroughClassification === 'retry' || (__fallthroughClassification !== 'pass' && !!provider.shouldBlockRefreshFallthrough);
++            const __willRethrow = __isDefiniteOAuthFailure || __isRetryable;
 +            provider.logRefreshCatchBranch?.({
 +                errorIsOAuthError: __isOAuthError,
 +                errorIsServerError: __isServerError,
@@ -316,39 +252,13 @@ index de86ff9..9b4d6bc 100644
 +                throw error;
 +            }
 +            // Transient network / overload: do not fall through to interactive re-auth.
-+            if (__cursorIsRetryableOAuthRefreshError(error)) {
++            if (__cursorIsRetryableOAuthRefreshError(error, provider)) {
 +                const wrapped = new Error(error instanceof Error ? error.message : String(error));
 +                wrapped.name = 'OAuthRefreshTransientError';
 +                if (error instanceof Error && error.stack) {
 +                    wrapped.stack = error.stack;
 +                }
 +                throw wrapped;
-+            }
-+            // [CURSOR PATCH] Needle-based + catch-all classification for
-+            // unrecognized errors. classifyFallthroughError checks
-+            // fallthroughRetryNeedles/fallthroughPassNeedles from the
-+            // mcp_oauth_refresh_policy dynamic config.
-+            {
-+                const __errorMsg = error instanceof Error ? error.message : String(error);
-+                const __classification = provider.classifyFallthroughError?.(__errorMsg) ?? 'default';
-+                if (__classification === 'retry') {
-+                    const wrapped = new Error(__errorMsg);
-+                    wrapped.name = 'OAuthRefreshTransientError';
-+                    wrapped.cause = error;
-+                    if (error instanceof Error && error.stack) {
-+                        wrapped.stack = error.stack;
-+                    }
-+                    throw wrapped;
-+                }
-+                if (__classification !== 'pass' && !!provider.shouldBlockRefreshFallthrough) {
-+                    const wrapped = new Error(__errorMsg);
-+                    wrapped.name = 'OAuthRefreshTransientError';
-+                    wrapped.cause = error;
-+                    if (error instanceof Error && error.stack) {
-+                        wrapped.stack = error.stack;
-+                    }
-+                    throw wrapped;
-+                }
 +            }
              // If this is a ServerError, or an unknown type, log it out and try to continue. Otherwise, escalate so we can fix things and retry.
              if (!(error instanceof OAuthError) || error instanceof ServerError) {
