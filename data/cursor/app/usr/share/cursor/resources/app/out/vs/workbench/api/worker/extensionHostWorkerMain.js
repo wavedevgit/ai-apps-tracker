@@ -10944,7 +10944,6 @@ var Bqn = qqn,
             return fdn.create(r, e)
         }
         static
-
         function(r, e) {
             return adn.create(r, e)
         }
