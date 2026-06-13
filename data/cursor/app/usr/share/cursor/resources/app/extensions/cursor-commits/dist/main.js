@@ -70652,6 +70652,24 @@
             name: "show_form_immediately",
             kind: "scalar",
             T: 8
+        }, {
+            no: 6,
+            name: "title",
+            kind: "scalar",
+            T: 9,
+            opt: !0
+        }, {
+            no: 7,
+            name: "negative_title",
+            kind: "scalar",
+            T: 9,
+            opt: !0
+        }, {
+            no: 8,
+            name: "comment_placeholder",
+            kind: "scalar",
+            T: 9,
+            opt: !0
         }]);
         let WW = VW;
         const KW = class e extends je {
@@ -81664,7 +81682,7 @@
         let I2 = B2;
         const k2 = class e extends je {
             constructor(e) {
-                super(), this.id = 0, this.execId = "", this.message = {
+                super(), this.id = 0, this.execId = "", this.hookAdditionalContexts = [], this.message = {
                     case: void 0
                 }, hn.util.initPartial(e, this)
             }
@@ -81697,6 +81715,12 @@
             kind: "scalar",
             T: 5,
             opt: !0
+        }, {
+            no: 45,
+            name: "hook_additional_contexts",
+            kind: "message",
+            T: yl,
+            repeated: !0
         }, {
             no: 2,
             name: "shell_result",
@@ -119615,4 +119639,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/extensions/cursor-commits/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/extensions/cursor-commits/dist/main.js.map

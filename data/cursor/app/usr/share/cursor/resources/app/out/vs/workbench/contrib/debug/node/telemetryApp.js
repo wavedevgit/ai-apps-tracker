@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "c380e76f-5ee9-595e-874e-ed5d1e20daa0")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4829bbbc-77a3-5e37-a8b5-14e11ccb5288")
     } catch (e) {}
 }();
 var ne = function(e, t) {
@@ -601,7 +601,7 @@ var o1 = class extends Error {
             return t.name === "CodeExpectedError"
         }
     },
-    ir = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "QuickAgentConversation", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
+    ir = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
     nr = !1;
 
 function Ne(e, t) {
@@ -5087,6 +5087,6 @@ var Ui = new Ri([qt]),
     qi = new Si("telemetry");
 qi.registerChannel("telemetryAppender", Ui);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/core/vs/workbench/contrib/debug/node/telemetryApp.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/core/vs/workbench/contrib/debug/node/telemetryApp.js.map
 
-//# debugId=c380e76f-5ee9-595e-874e-ed5d1e20daa0
+//# debugId=4829bbbc-77a3-5e37-a8b5-14e11ccb5288

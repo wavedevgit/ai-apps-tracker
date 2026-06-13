@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0b74481e-c6f6-5b9c-95e6-af0fe3fe93fb")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "b5f6d840-081e-5b84-a1ec-fef939443bd2")
     } catch (e) {}
 }();
 var z1 = function(e, t) {
@@ -1301,7 +1301,7 @@ var lr = class extends Error {
             return t.name === "CodeExpectedError"
         }
     },
-    ur = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "QuickAgentConversation", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
+    ur = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
     cr = !1,
     Ne, xe;
 
@@ -4638,6 +4638,6 @@ function jn(e) {
 }
 jn(kn);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/core/vs/workbench/contrib/output/common/outputLinkComputerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/core/vs/workbench/contrib/output/common/outputLinkComputerMain.js.map
 
-//# debugId=0b74481e-c6f6-5b9c-95e6-af0fe3fe93fb
+//# debugId=b5f6d840-081e-5b84-a1ec-fef939443bd2

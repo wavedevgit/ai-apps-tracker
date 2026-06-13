@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "349714bb-e339-57ce-9c00-e9ed6527f3ba")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "c9da007d-e076-505d-8dc7-685a52466cc5")
     } catch (e) {}
 }();
 var On = function(e, t) {
@@ -791,7 +791,7 @@ var Wi = class hl extends Error {
             super(t || "An unexpected bug occurred."), Object.setPrototypeOf(this, wf.prototype)
         }
     },
-    cd = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "QuickAgentConversation", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
+    cd = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
     ud = !1;
 
 function Al(e, t) {
@@ -24823,6 +24823,6 @@ export {
     oy as main
 };
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/core/vs/code/node/cliProcessMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/core/vs/code/node/cliProcessMain.js.map
 
-//# debugId=349714bb-e339-57ce-9c00-e9ed6527f3ba
+//# debugId=c9da007d-e076-505d-8dc7-685a52466cc5

@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "d6c59cf4-088e-53ab-914f-91344875c8c6")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "feb6ada0-9dcb-52d8-985b-2c8dfd9c4589")
     } catch (e) {}
 }();
 var qt = function(t, e) {
@@ -579,7 +579,7 @@ var Wt = class Hn extends Error {
             return e.name === "CodeExpectedError"
         }
     },
-    hs = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "QuickAgentConversation", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
+    hs = ["composerChatService", "composerService", "composerUtilsService", "composerAgentService", "composerCapabilities", "composerDecisionsService", "aiServiceImpl", "toolsV2Service", "toolsV2HandlerRegistryService", "agentCompatService", "mockAgentStreamController", "mockComposerStreamController", "toolFormer", "ToolFormer", "tool", "agent", "Agent", "stream", "Stream", "ComposerFullInputBox", "ComposerToolFormerMessage", "composerActions", "cancelAll", "abortChatAndWaitForFinish", "abortGenerationUUID"],
     cs = !1,
     nr, rr;
 
@@ -9219,6 +9219,6 @@ var Ri = class {
     };
 B1(Ya);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/core/vs/workbench/contrib/notebook/common/services/notebookWebWorkerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/core/vs/workbench/contrib/notebook/common/services/notebookWebWorkerMain.js.map
 
-//# debugId=d6c59cf4-088e-53ab-914f-91344875c8c6
+//# debugId=feb6ada0-9dcb-52d8-985b-2c8dfd9c4589

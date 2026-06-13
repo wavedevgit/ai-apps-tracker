@@ -195,6 +195,6 @@
 				})();
 			`)}catch(e){console.error("[BrowserView Preload] Failed to inject WebAuthn polyfill:",e)}}l(),c();const u={send:(e,...r)=>{(e==="focus-url-bar"||e==="element-selected"||e==="element-updated"||e==="element-picked"||e==="keyboard-shortcut"||e==="area-screenshot-selected"||e==="style-changes-confirmed"||e==="css-inspector-style-change"||e==="passkey-request-stalled")&&o.send("vscode:browser-view-message",e,...r)}};try{a.exposeInMainWorld("cursorBrowser",u)}catch(e){console.error("[BrowserView Preload] Failed to expose bridge:",e)}window.addEventListener("DOMContentLoaded",()=>{document.addEventListener("click",e=>{if(!e.altKey)return;const r=e.target.closest("a[href]");if(!r)return;const t=r.href;!t||t.startsWith("javascript:")||(e.preventDefault(),e.stopPropagation(),o.send("vscode:browser-view-message","open-url-side-group",{url:t}))},!0)})})();
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/core/vs/platform/browserView/electron-main/preload-browser.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/core/vs/platform/browserView/electron-main/preload-browser.js.map
 
 //# debugId=e6cff67d-afad-5139-a909-7be5de15dad2

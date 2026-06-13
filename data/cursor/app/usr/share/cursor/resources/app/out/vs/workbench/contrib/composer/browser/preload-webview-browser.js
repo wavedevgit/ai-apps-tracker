@@ -422,6 +422,6 @@
     }, !0)
 })();
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/core/vs/workbench/contrib/composer/browser/preload-webview-browser.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/core/vs/workbench/contrib/composer/browser/preload-webview-browser.js.map
 
 //# debugId=6e411980-f8f3-5617-8713-307d95f650e2

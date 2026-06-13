@@ -7033,8 +7033,8 @@
     };
     var i = {};
     s.r(i), s.d(i, {
-        activate: () => SAe,
-        deactivate: () => JAe
+        activate: () => vAe,
+        deactivate: () => EAe
     });
     const a = require("vscode"),
         o = require("node:fs"),
@@ -60661,6 +60661,24 @@
         name: "show_form_immediately",
         kind: "scalar",
         T: 8
+    }, {
+        no: 6,
+        name: "title",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }, {
+        no: 7,
+        name: "negative_title",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }, {
+        no: 8,
+        name: "comment_placeholder",
+        kind: "scalar",
+        T: 9,
+        opt: !0
     }]);
     let Jz = Sz;
     const vz = class e extends b {
@@ -73235,7 +73253,7 @@
         no: 1,
         name: "model_allowlist",
         kind: "message",
-        T: Wae,
+        T: Xae,
         opt: !0
     }]);
     let k3 = w3;
@@ -73270,7 +73288,7 @@
         no: 3,
         name: "model_allowlist",
         kind: "message",
-        T: Wae,
+        T: Xae,
         opt: !0
     }]);
     let J3 = S3;
@@ -83897,7 +83915,7 @@
     let Aae = Uae;
     const xae = class e extends b {
         constructor(e) {
-            super(), this.enabled = !1, this.parameterRestrictions = {}, nt.util.initPartial(e, this)
+            super(), this.grantedValues = [], nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -83912,7 +83930,32 @@
             return nt.util.equals(e, t, n)
         }
     };
-    xae.runtime = nt, xae.typeName = "aiserver.v1.ModelAllowlistModelEntry", xae.fields = nt.util.newFieldList(() => [{
+    xae.runtime = nt, xae.typeName = "aiserver.v1.ModelAllowlistParameterGrant", xae.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "granted_values",
+        kind: "scalar",
+        T: 9,
+        repeated: !0
+    }]);
+    let Dae = xae;
+    const Mae = class e extends b {
+        constructor(e) {
+            super(), this.enabled = !1, this.parameterRestrictions = {}, this.parameterGrants = {}, this.defaultParameterValues = [], nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    Mae.runtime = nt, Mae.typeName = "aiserver.v1.ModelAllowlistModelEntry", Mae.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "enabled",
         kind: "scalar",
@@ -83926,9 +83969,24 @@
             kind: "message",
             T: Aae
         }
+    }, {
+        no: 3,
+        name: "parameter_grants",
+        kind: "map",
+        K: 9,
+        V: {
+            kind: "message",
+            T: Dae
+        }
+    }, {
+        no: 4,
+        name: "default_parameter_values",
+        kind: "message",
+        T: qae,
+        repeated: !0
     }]);
-    let Dae = xae;
-    const Mae = class e extends b {
+    let Gae = Mae;
+    const Yae = class e extends b {
         constructor(e) {
             super(), this.enabled = !1, this.models = {}, nt.util.initPartial(e, this)
         }
@@ -83945,7 +84003,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Mae.runtime = nt, Mae.typeName = "aiserver.v1.ModelAllowlistProviderEntry", Mae.fields = nt.util.newFieldList(() => [{
+    Yae.runtime = nt, Yae.typeName = "aiserver.v1.ModelAllowlistProviderEntry", Yae.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "enabled",
         kind: "scalar",
@@ -83957,11 +84015,11 @@
         K: 9,
         V: {
             kind: "message",
-            T: Dae
+            T: Gae
         }
     }]);
-    let Gae = Mae;
-    const Yae = class e extends b {
+    let Vae = Yae;
+    const Hae = class e extends b {
         constructor(e) {
             super(), this.enabled = !1, nt.util.initPartial(e, this)
         }
@@ -83978,14 +84036,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Yae.runtime = nt, Yae.typeName = "aiserver.v1.ModelAllowlistByokEntry", Yae.fields = nt.util.newFieldList(() => [{
+    Hae.runtime = nt, Hae.typeName = "aiserver.v1.ModelAllowlistByokEntry", Hae.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "enabled",
         kind: "scalar",
         T: 8
     }]);
-    let Vae = Yae;
-    const Hae = class e extends b {
+    let Kae = Hae;
+    const zae = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -84002,39 +84060,39 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Hae.runtime = nt, Hae.typeName = "aiserver.v1.ModelAllowlistByok", Hae.fields = nt.util.newFieldList(() => [{
+    zae.runtime = nt, zae.typeName = "aiserver.v1.ModelAllowlistByok", zae.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "openai",
         kind: "message",
-        T: Vae,
+        T: Kae,
         opt: !0
     }, {
         no: 2,
         name: "anthropic",
         kind: "message",
-        T: Vae,
+        T: Kae,
         opt: !0
     }, {
         no: 3,
         name: "google",
         kind: "message",
-        T: Vae,
+        T: Kae,
         opt: !0
     }, {
         no: 4,
         name: "azure",
         kind: "message",
-        T: Vae,
+        T: Kae,
         opt: !0
     }, {
         no: 5,
         name: "bedrock",
         kind: "message",
-        T: Vae,
+        T: Kae,
         opt: !0
     }]);
-    let Kae = Hae;
-    const zae = class e extends b {
+    let Wae = zae;
+    const jae = class e extends b {
         constructor(e) {
             super(), this.newProviderDefault = 0, this.newModelDefault = 0, this.providers = {}, nt.util.initPartial(e, this)
         }
@@ -84051,16 +84109,16 @@
             return nt.util.equals(e, t, n)
         }
     };
-    zae.runtime = nt, zae.typeName = "aiserver.v1.ModelAllowlist", zae.fields = nt.util.newFieldList(() => [{
+    jae.runtime = nt, jae.typeName = "aiserver.v1.ModelAllowlist", jae.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "new_provider_default",
         kind: "enum",
-        T: nt.getEnumType(jae)
+        T: nt.getEnumType($ae)
     }, {
         no: 2,
         name: "new_model_default",
         kind: "enum",
-        T: nt.getEnumType(jae)
+        T: nt.getEnumType($ae)
     }, {
         no: 3,
         name: "providers",
@@ -84068,18 +84126,18 @@
         K: 9,
         V: {
             kind: "message",
-            T: Gae
+            T: Vae
         }
     }, {
         no: 4,
         name: "byok",
         kind: "message",
-        T: Kae,
+        T: Wae,
         opt: !0
     }]);
-    let Wae = zae;
-    var jae = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ENABLED = 1] = "ENABLED", e[e.DISABLED = 2] = "DISABLED", e))(jae || {});
-    nt.util.setEnumType(jae, "aiserver.v1.ModelAllowlist.DefaultBehavior", [{
+    let Xae = jae;
+    var $ae = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ENABLED = 1] = "ENABLED", e[e.DISABLED = 2] = "DISABLED", e))($ae || {});
+    nt.util.setEnumType($ae, "aiserver.v1.ModelAllowlist.DefaultBehavior", [{
         no: 0,
         name: "DEFAULT_BEHAVIOR_UNSPECIFIED"
     }, {
@@ -84089,7 +84147,7 @@
         no: 2,
         name: "DEFAULT_BEHAVIOR_DISABLED"
     }]);
-    const Xae = class e extends b {
+    const Qae = class e extends b {
         constructor(e) {
             super(), this.allowedModels = [], this.blockedModels = [], this.dotCursorProtection = !1, this.browserOriginAllowlist = [], this.networkDenylist = [], this.networkAllowlist = [], this.cloudAgentEgressAllowlist = [], this.remotePermissionsFilePaths = [], this.localPermissionsFilePath = [], nt.util.initPartial(e, this)
         }
@@ -84106,7 +84164,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Xae.runtime = nt, Xae.typeName = "aiserver.v1.GetTeamAdminSettingsResponse", Xae.fields = nt.util.newFieldList(() => [{
+    Qae.runtime = nt, Qae.typeName = "aiserver.v1.GetTeamAdminSettingsResponse", Qae.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "allowed_models",
         kind: "scalar",
@@ -84317,7 +84375,7 @@
         no: 35,
         name: "model_allowlist",
         kind: "message",
-        T: Wae,
+        T: Xae,
         opt: !0
     }, {
         no: 36,
@@ -84397,8 +84455,8 @@
         T: vae,
         opt: !0
     }]);
-    let $ae = Xae;
-    const Qae = class e extends b {
+    let Zae = Qae;
+    const eoe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -84415,14 +84473,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Qae.runtime = nt, Qae.typeName = "aiserver.v1.GetBaseTeamAdminSettingsRequest", Qae.fields = nt.util.newFieldList(() => [{
+    eoe.runtime = nt, eoe.typeName = "aiserver.v1.GetBaseTeamAdminSettingsRequest", eoe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let Zae = Qae;
-    const eoe = class e extends b {
+    let toe = eoe;
+    const noe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.allowedModels = [], this.blockedModels = [], this.dotCursorProtection = !1, this.browserOriginAllowlist = [], this.networkDenylist = [], this.networkAllowlist = [], this.cloudAgentEgressAllowlist = [], this.remotePermissionsFilePaths = [], this.localPermissionsFilePath = [], nt.util.initPartial(e, this)
         }
@@ -84439,7 +84497,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eoe.runtime = nt, eoe.typeName = "aiserver.v1.UpdateTeamAdminSettingsRequest", eoe.fields = nt.util.newFieldList(() => [{
+    noe.runtime = nt, noe.typeName = "aiserver.v1.UpdateTeamAdminSettingsRequest", noe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -84655,7 +84713,7 @@
         no: 36,
         name: "model_allowlist",
         kind: "message",
-        T: Wae,
+        T: Xae,
         opt: !0
     }, {
         no: 37,
@@ -84729,8 +84787,8 @@
         T: vae,
         opt: !0
     }]);
-    let toe = eoe;
-    const noe = class e extends b {
+    let roe = noe;
+    const soe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -84747,9 +84805,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    noe.runtime = nt, noe.typeName = "aiserver.v1.UpdateTeamAdminSettingsResponse", noe.fields = nt.util.newFieldList(() => []);
-    let roe = noe;
-    const soe = class e extends b {
+    soe.runtime = nt, soe.typeName = "aiserver.v1.UpdateTeamAdminSettingsResponse", soe.fields = nt.util.newFieldList(() => []);
+    let ioe = soe;
+    const aoe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.inviteLinkMaxTtlSeconds = 0, nt.util.initPartial(e, this)
         }
@@ -84766,7 +84824,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    soe.runtime = nt, soe.typeName = "aiserver.v1.UpdateTeamInviteLinkTTLSettingRequest", soe.fields = nt.util.newFieldList(() => [{
+    aoe.runtime = nt, aoe.typeName = "aiserver.v1.UpdateTeamInviteLinkTTLSettingRequest", aoe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -84777,25 +84835,6 @@
         kind: "scalar",
         T: 5
     }]);
-    let ioe = soe;
-    const aoe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    aoe.runtime = nt, aoe.typeName = "aiserver.v1.UpdateTeamInviteLinkTTLSettingResponse", aoe.fields = nt.util.newFieldList(() => []);
     let ooe = aoe;
     const loe = class e extends b {
         constructor(e) {
@@ -84814,7 +84853,26 @@
             return nt.util.equals(e, t, n)
         }
     };
-    loe.runtime = nt, loe.typeName = "aiserver.v1.CreateTeamFreeTrialCodeRequest", loe.fields = nt.util.newFieldList(() => [{
+    loe.runtime = nt, loe.typeName = "aiserver.v1.UpdateTeamInviteLinkTTLSettingResponse", loe.fields = nt.util.newFieldList(() => []);
+    let uoe = loe;
+    const moe = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    moe.runtime = nt, moe.typeName = "aiserver.v1.CreateTeamFreeTrialCodeRequest", moe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "trial_type",
         kind: "enum",
@@ -84827,8 +84885,8 @@
         T: nt.getEnumType(UZ),
         opt: !0
     }]);
-    let uoe = loe;
-    const moe = class e extends b {
+    let coe = moe;
+    const doe = class e extends b {
         constructor(e) {
             super(), this.code = "", nt.util.initPartial(e, this)
         }
@@ -84845,14 +84903,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    moe.runtime = nt, moe.typeName = "aiserver.v1.CreateTeamFreeTrialCodeResponse", moe.fields = nt.util.newFieldList(() => [{
+    doe.runtime = nt, doe.typeName = "aiserver.v1.CreateTeamFreeTrialCodeResponse", doe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "code",
         kind: "scalar",
         T: 9
     }]);
-    let coe = moe;
-    const doe = class e extends b {
+    let foe = doe;
+    const poe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -84869,7 +84927,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    doe.runtime = nt, doe.typeName = "aiserver.v1.GetTeamAnalyticsRequest", doe.fields = nt.util.newFieldList(() => [{
+    poe.runtime = nt, poe.typeName = "aiserver.v1.GetTeamAnalyticsRequest", poe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -84893,8 +84951,8 @@
         T: 9,
         opt: !0
     }]);
-    let foe = doe;
-    const poe = class e extends b {
+    let goe = poe;
+    const Toe = class e extends b {
         constructor(e) {
             super(), this.dailyMetrics = [], nt.util.initPartial(e, this)
         }
@@ -84911,25 +84969,25 @@
             return nt.util.equals(e, t, n)
         }
     };
-    poe.runtime = nt, poe.typeName = "aiserver.v1.GetTeamAnalyticsResponse", poe.fields = nt.util.newFieldList(() => [{
+    Toe.runtime = nt, Toe.typeName = "aiserver.v1.GetTeamAnalyticsResponse", Toe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "daily_metrics",
         kind: "message",
-        T: Roe,
+        T: Foe,
         repeated: !0
     }, {
         no: 2,
         name: "period",
         kind: "message",
-        T: Poe
+        T: Roe
     }, {
         no: 3,
         name: "active_users",
         kind: "message",
-        T: Boe
+        T: Poe
     }]);
-    let goe = poe;
-    const Toe = class e extends b {
+    let hoe = Toe;
+    const _oe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.userId = 0, nt.util.initPartial(e, this)
         }
@@ -84946,7 +85004,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Toe.runtime = nt, Toe.typeName = "aiserver.v1.GetUserAnalyticsRequest", Toe.fields = nt.util.newFieldList(() => [{
+    _oe.runtime = nt, _oe.typeName = "aiserver.v1.GetUserAnalyticsRequest", _oe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -84975,8 +85033,8 @@
         T: 9,
         opt: !0
     }]);
-    let hoe = Toe;
-    const _oe = class e extends b {
+    let yoe = _oe;
+    const woe = class e extends b {
         constructor(e) {
             super(), this.dailyMetrics = [], nt.util.initPartial(e, this)
         }
@@ -84993,17 +85051,17 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _oe.runtime = nt, _oe.typeName = "aiserver.v1.GetUserAnalyticsResponse", _oe.fields = nt.util.newFieldList(() => [{
+    woe.runtime = nt, woe.typeName = "aiserver.v1.GetUserAnalyticsResponse", woe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "daily_metrics",
         kind: "message",
-        T: Roe,
+        T: Foe,
         repeated: !0
     }, {
         no: 2,
         name: "period",
         kind: "message",
-        T: Poe
+        T: Roe
     }, {
         no: 3,
         name: "apply_lines_rank",
@@ -85053,8 +85111,8 @@
         T: 5,
         opt: !0
     }]);
-    let yoe = _oe;
-    const woe = class e extends b {
+    let koe = woe;
+    const Soe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -85071,7 +85129,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    woe.runtime = nt, woe.typeName = "aiserver.v1.GetTeamRawDataRequest", woe.fields = nt.util.newFieldList(() => [{
+    Soe.runtime = nt, Soe.typeName = "aiserver.v1.GetTeamRawDataRequest", Soe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -85095,8 +85153,8 @@
         T: 9,
         opt: !0
     }]);
-    let koe = woe;
-    const Soe = class e extends b {
+    let Joe = Soe;
+    const voe = class e extends b {
         constructor(e) {
             super(), this.data = [], nt.util.initPartial(e, this)
         }
@@ -85113,20 +85171,20 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Soe.runtime = nt, Soe.typeName = "aiserver.v1.GetTeamRawDataResponse", Soe.fields = nt.util.newFieldList(() => [{
+    voe.runtime = nt, voe.typeName = "aiserver.v1.GetTeamRawDataResponse", voe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "data",
         kind: "message",
-        T: Eoe,
+        T: Boe,
         repeated: !0
     }, {
         no: 2,
         name: "period",
         kind: "message",
-        T: Poe
+        T: Roe
     }]);
-    let Joe = Soe;
-    const voe = class e extends b {
+    let Eoe = voe;
+    const Noe = class e extends b {
         constructor(e) {
             super(), this.date = K.zero, this.userId = 0, this.isActive = !1, this.totalLinesAdded = 0, this.totalLinesDeleted = 0, this.acceptedLinesAdded = 0, this.acceptedLinesDeleted = 0, this.totalApplies = 0, this.totalAccepts = 0, this.totalRejects = 0, this.totalTabsShown = 0, this.totalTabsAccepted = 0, this.composerRequests = 0, this.chatRequests = 0, this.agentRequests = 0, this.cmdkUsages = 0, this.subscriptionIncludedReqs = 0, this.apiKeyReqs = 0, this.usageBasedReqs = 0, this.bugbotUsages = 0, nt.util.initPartial(e, this)
         }
@@ -85143,7 +85201,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    voe.runtime = nt, voe.typeName = "aiserver.v1.RawUserData", voe.fields = nt.util.newFieldList(() => [{
+    Noe.runtime = nt, Noe.typeName = "aiserver.v1.RawUserData", Noe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "date",
         kind: "scalar",
@@ -85274,8 +85332,8 @@
         T: 9,
         opt: !0
     }]);
-    let Eoe = voe;
-    const Noe = class e extends b {
+    let Boe = Noe;
+    const Ioe = class e extends b {
         constructor(e) {
             super(), this.current = 0, this.previous = 0, this.percentChange = 0, nt.util.initPartial(e, this)
         }
@@ -85292,7 +85350,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Noe.runtime = nt, Noe.typeName = "aiserver.v1.ActiveUsers", Noe.fields = nt.util.newFieldList(() => [{
+    Ioe.runtime = nt, Ioe.typeName = "aiserver.v1.ActiveUsers", Ioe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "current",
         kind: "scalar",
@@ -85308,8 +85366,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Boe = Noe;
-    const Ioe = class e extends b {
+    let Poe = Ioe;
+    const qoe = class e extends b {
         constructor(e) {
             super(), this.startDate = K.zero, this.endDate = K.zero, nt.util.initPartial(e, this)
         }
@@ -85326,7 +85384,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ioe.runtime = nt, Ioe.typeName = "aiserver.v1.AnalyticsPeriod", Ioe.fields = nt.util.newFieldList(() => [{
+    qoe.runtime = nt, qoe.typeName = "aiserver.v1.AnalyticsPeriod", qoe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "start_date",
         kind: "scalar",
@@ -85337,8 +85395,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Poe = Ioe;
-    const qoe = class e extends b {
+    let Roe = qoe;
+    const Loe = class e extends b {
         constructor(e) {
             super(), this.date = K.zero, this.activeUsers = 0, this.linesAdded = 0, this.linesDeleted = 0, this.acceptedLinesAdded = 0, this.acceptedLinesDeleted = 0, this.totalApplies = 0, this.totalAccepts = 0, this.totalRejects = 0, this.totalTabsShown = 0, this.totalTabsAccepted = 0, this.composerRequests = 0, this.chatRequests = 0, this.agentRequests = 0, this.cmdkUsages = 0, this.subscriptionIncludedReqs = 0, this.apiKeyReqs = 0, this.usageBasedReqs = 0, this.bugbotUsages = 0, this.modelUsage = [], this.extensionUsage = [], this.tabExtensionUsage = [], this.clientVersionUsage = [], nt.util.initPartial(e, this)
         }
@@ -85355,7 +85413,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qoe.runtime = nt, qoe.typeName = "aiserver.v1.DailyMetrics", qoe.fields = nt.util.newFieldList(() => [{
+    Loe.runtime = nt, Loe.typeName = "aiserver.v1.DailyMetrics", Loe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "date",
         kind: "scalar",
@@ -85454,29 +85512,29 @@
         no: 20,
         name: "model_usage",
         kind: "message",
-        T: Foe,
+        T: boe,
         repeated: !0
     }, {
         no: 21,
         name: "extension_usage",
         kind: "message",
-        T: Foe,
+        T: boe,
         repeated: !0
     }, {
         no: 22,
         name: "tab_extension_usage",
         kind: "message",
-        T: Foe,
+        T: boe,
         repeated: !0
     }, {
         no: 23,
         name: "client_version_usage",
         kind: "message",
-        T: Foe,
+        T: boe,
         repeated: !0
     }]);
-    let Roe = qoe;
-    const Loe = class e extends b {
+    let Foe = Loe;
+    const Ooe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.count = 0, nt.util.initPartial(e, this)
         }
@@ -85493,7 +85551,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Loe.runtime = nt, Loe.typeName = "aiserver.v1.StringCount", Loe.fields = nt.util.newFieldList(() => [{
+    Ooe.runtime = nt, Ooe.typeName = "aiserver.v1.StringCount", Ooe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -85504,8 +85562,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Foe = Loe;
-    const Ooe = class e extends b {
+    let boe = Ooe;
+    const Coe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.teamRepoType = "", this.repoId = 0, nt.util.initPartial(e, this)
         }
@@ -85522,7 +85580,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ooe.runtime = nt, Ooe.typeName = "aiserver.v1.SetTeamRepoTypeRequest", Ooe.fields = nt.util.newFieldList(() => [{
+    Coe.runtime = nt, Coe.typeName = "aiserver.v1.SetTeamRepoTypeRequest", Coe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -85538,8 +85596,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let boe = Ooe;
-    const Coe = class e extends b {
+    let Uoe = Coe;
+    const Aoe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -85556,9 +85614,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Coe.runtime = nt, Coe.typeName = "aiserver.v1.SetTeamRepoTypeResponse", Coe.fields = nt.util.newFieldList(() => []);
-    let Uoe = Coe;
-    const Aoe = class e extends b {
+    Aoe.runtime = nt, Aoe.typeName = "aiserver.v1.SetTeamRepoTypeResponse", Aoe.fields = nt.util.newFieldList(() => []);
+    let xoe = Aoe;
+    const Doe = class e extends b {
         constructor(e) {
             super(), this.conversationId = "", this.timestampBeforeRequest = 0, nt.util.initPartial(e, this)
         }
@@ -85575,7 +85633,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Aoe.runtime = nt, Aoe.typeName = "aiserver.v1.GetClientUsageDataRequest", Aoe.fields = nt.util.newFieldList(() => [{
+    Doe.runtime = nt, Doe.typeName = "aiserver.v1.GetClientUsageDataRequest", Doe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "conversation_id",
         kind: "scalar",
@@ -85586,8 +85644,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let xoe = Aoe;
-    const Doe = class e extends b {
+    let Moe = Doe;
+    const Goe = class e extends b {
         constructor(e) {
             super(), this.itemsWithCost = [], nt.util.initPartial(e, this)
         }
@@ -85604,15 +85662,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Doe.runtime = nt, Doe.typeName = "aiserver.v1.GetClientUsageDataResponse", Doe.fields = nt.util.newFieldList(() => [{
+    Goe.runtime = nt, Goe.typeName = "aiserver.v1.GetClientUsageDataResponse", Goe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "items_with_cost",
         kind: "message",
-        T: Yoe,
+        T: Hoe,
         repeated: !0
     }]);
-    let Moe = Doe;
-    const Goe = class e extends b {
+    let Yoe = Goe;
+    const Voe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.costInCents = 0, nt.util.initPartial(e, this)
         }
@@ -85629,7 +85687,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Goe.runtime = nt, Goe.typeName = "aiserver.v1.GetClientUsageDataResponse.NameToCost", Goe.fields = nt.util.newFieldList(() => [{
+    Voe.runtime = nt, Voe.typeName = "aiserver.v1.GetClientUsageDataResponse.NameToCost", Voe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -85640,8 +85698,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Yoe = Goe;
-    const Voe = class e extends b {
+    let Hoe = Voe;
+    const Koe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -85658,15 +85716,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Voe.runtime = nt, Voe.typeName = "aiserver.v1.GetCurrentPeriodUsageRequest", Voe.fields = nt.util.newFieldList(() => [{
+    Koe.runtime = nt, Koe.typeName = "aiserver.v1.GetCurrentPeriodUsageRequest", Koe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5,
         opt: !0
     }]);
-    let Hoe = Voe;
-    const Koe = class e extends b {
+    let zoe = Koe;
+    const Woe = class e extends b {
         constructor(e) {
             super(), this.billingCycleStart = K.zero, this.billingCycleEnd = K.zero, this.enabled = !1, this.displayMessage = "", this.autoBucketModels = [], nt.util.initPartial(e, this)
         }
@@ -85683,7 +85741,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Koe.runtime = nt, Koe.typeName = "aiserver.v1.GetCurrentPeriodUsageResponse", Koe.fields = nt.util.newFieldList(() => [{
+    Woe.runtime = nt, Woe.typeName = "aiserver.v1.GetCurrentPeriodUsageResponse", Woe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "billing_cycle_start",
         kind: "scalar",
@@ -85697,12 +85755,12 @@
         no: 3,
         name: "plan_usage",
         kind: "message",
-        T: joe
+        T: $oe
     }, {
         no: 4,
         name: "spend_limit_usage",
         kind: "message",
-        T: $oe
+        T: Zoe
     }, {
         no: 5,
         name: "display_threshold",
@@ -85723,7 +85781,7 @@
         no: 8,
         name: "free_best_of_n_promotion",
         kind: "message",
-        T: Zoe,
+        T: tle,
         opt: !0
     }, {
         no: 11,
@@ -85744,8 +85802,8 @@
         T: 9,
         repeated: !0
     }]);
-    let zoe = Koe;
-    const Woe = class e extends b {
+    let joe = Woe;
+    const Xoe = class e extends b {
         constructor(e) {
             super(), this.totalSpend = 0, this.includedSpend = 0, this.bonusSpend = 0, this.remaining = 0, this.limit = 0, nt.util.initPartial(e, this)
         }
@@ -85762,7 +85820,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Woe.runtime = nt, Woe.typeName = "aiserver.v1.GetCurrentPeriodUsageResponse.PlanUsage", Woe.fields = nt.util.newFieldList(() => [{
+    Xoe.runtime = nt, Xoe.typeName = "aiserver.v1.GetCurrentPeriodUsageResponse.PlanUsage", Xoe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "total_spend",
         kind: "scalar",
@@ -85842,8 +85900,8 @@
         T: 1,
         opt: !0
     }]);
-    let joe = Woe;
-    const Xoe = class e extends b {
+    let $oe = Xoe;
+    const Qoe = class e extends b {
         constructor(e) {
             super(), this.totalSpend = 0, this.individualUsed = 0, this.individualRemaining = 0, this.limitType = "", nt.util.initPartial(e, this)
         }
@@ -85860,7 +85918,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Xoe.runtime = nt, Xoe.typeName = "aiserver.v1.GetCurrentPeriodUsageResponse.SpendLimitUsage", Xoe.fields = nt.util.newFieldList(() => [{
+    Qoe.runtime = nt, Qoe.typeName = "aiserver.v1.GetCurrentPeriodUsageResponse.SpendLimitUsage", Qoe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "total_spend",
         kind: "scalar",
@@ -85923,8 +85981,8 @@
         T: 5,
         opt: !0
     }]);
-    let $oe = Xoe;
-    const Qoe = class e extends b {
+    let Zoe = Qoe;
+    const ele = class e extends b {
         constructor(e) {
             super(), this.trialsUsed = 0, this.trialsRemaining = 0, nt.util.initPartial(e, this)
         }
@@ -85941,7 +85999,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Qoe.runtime = nt, Qoe.typeName = "aiserver.v1.GetCurrentPeriodUsageResponse.FreeBestOfNPromotion", Qoe.fields = nt.util.newFieldList(() => [{
+    ele.runtime = nt, ele.typeName = "aiserver.v1.GetCurrentPeriodUsageResponse.FreeBestOfNPromotion", ele.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "trials_used",
         kind: "scalar",
@@ -85952,25 +86010,6 @@
         kind: "scalar",
         T: 5
     }]);
-    let Zoe = Qoe;
-    const ele = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    ele.runtime = nt, ele.typeName = "aiserver.v1.GetPlanInfoRequest", ele.fields = nt.util.newFieldList(() => []);
     let tle = ele;
     const nle = class e extends b {
         constructor(e) {
@@ -85989,21 +86028,40 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nle.runtime = nt, nle.typeName = "aiserver.v1.GetPlanInfoResponse", nle.fields = nt.util.newFieldList(() => [{
+    nle.runtime = nt, nle.typeName = "aiserver.v1.GetPlanInfoRequest", nle.fields = nt.util.newFieldList(() => []);
+    let rle = nle;
+    const sle = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    sle.runtime = nt, sle.typeName = "aiserver.v1.GetPlanInfoResponse", sle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plan_info",
         kind: "message",
-        T: ile,
+        T: ole,
         opt: !0
     }, {
         no: 2,
         name: "next_upgrade",
         kind: "message",
-        T: ole,
+        T: ule,
         opt: !0
     }]);
-    let rle = nle;
-    const sle = class e extends b {
+    let ile = sle;
+    const ale = class e extends b {
         constructor(e) {
             super(), this.planName = "", this.includedAmountCents = 0, nt.util.initPartial(e, this)
         }
@@ -86020,7 +86078,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sle.runtime = nt, sle.typeName = "aiserver.v1.GetPlanInfoResponse.PlanInfo", sle.fields = nt.util.newFieldList(() => [{
+    ale.runtime = nt, ale.typeName = "aiserver.v1.GetPlanInfoResponse.PlanInfo", ale.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plan_name",
         kind: "scalar",
@@ -86043,8 +86101,8 @@
         T: 3,
         opt: !0
     }]);
-    let ile = sle;
-    const ale = class e extends b {
+    let ole = ale;
+    const lle = class e extends b {
         constructor(e) {
             super(), this.tier = "", this.name = "", this.includedAmountCents = 0, this.price = "", this.description = "", nt.util.initPartial(e, this)
         }
@@ -86061,7 +86119,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ale.runtime = nt, ale.typeName = "aiserver.v1.GetPlanInfoResponse.NextUpgrade", ale.fields = nt.util.newFieldList(() => [{
+    lle.runtime = nt, lle.typeName = "aiserver.v1.GetPlanInfoResponse.NextUpgrade", lle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "tier",
         kind: "scalar",
@@ -86087,8 +86145,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let ole = ale;
-    const lle = class e extends b {
+    let ule = lle;
+    const mle = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -86105,9 +86163,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lle.runtime = nt, lle.typeName = "aiserver.v1.GetCursorReviewEntitlementRequest", lle.fields = nt.util.newFieldList(() => []);
-    let ule = lle;
-    const mle = class e extends b {
+    mle.runtime = nt, mle.typeName = "aiserver.v1.GetCursorReviewEntitlementRequest", mle.fields = nt.util.newFieldList(() => []);
+    let cle = mle;
+    const dle = class e extends b {
         constructor(e) {
             super(), this.eligibleForCursorReview = !1, this.requiresOnboarding = !1, this.billingContext = 0, this.reason = 0, nt.util.initPartial(e, this)
         }
@@ -86124,7 +86182,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mle.runtime = nt, mle.typeName = "aiserver.v1.GetCursorReviewEntitlementResponse", mle.fields = nt.util.newFieldList(() => [{
+    dle.runtime = nt, dle.typeName = "aiserver.v1.GetCursorReviewEntitlementResponse", dle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "eligible_for_cursor_review",
         kind: "scalar",
@@ -86138,12 +86196,12 @@
         no: 3,
         name: "billing_context",
         kind: "enum",
-        T: nt.getEnumType(dle)
+        T: nt.getEnumType(ple)
     }, {
         no: 4,
         name: "reason",
         kind: "enum",
-        T: nt.getEnumType(fle)
+        T: nt.getEnumType(gle)
     }, {
         no: 5,
         name: "team_id",
@@ -86157,9 +86215,9 @@
         T: 9,
         opt: !0
     }]);
-    let cle = mle;
-    var dle = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INDIVIDUAL = 1] = "INDIVIDUAL", e[e.TEAM = 2] = "TEAM", e[e.ENTERPRISE = 3] = "ENTERPRISE", e))(dle || {});
-    nt.util.setEnumType(dle, "aiserver.v1.GetCursorReviewEntitlementResponse.BillingContext", [{
+    let fle = dle;
+    var ple = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INDIVIDUAL = 1] = "INDIVIDUAL", e[e.TEAM = 2] = "TEAM", e[e.ENTERPRISE = 3] = "ENTERPRISE", e))(ple || {});
+    nt.util.setEnumType(ple, "aiserver.v1.GetCursorReviewEntitlementResponse.BillingContext", [{
         no: 0,
         name: "BILLING_CONTEXT_UNSPECIFIED"
     }, {
@@ -86172,8 +86230,8 @@
         no: 3,
         name: "BILLING_CONTEXT_ENTERPRISE"
     }]);
-    var fle = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.OK = 1] = "OK", e[e.REQUIRES_TEAM_OR_ENTERPRISE = 2] = "REQUIRES_TEAM_OR_ENTERPRISE", e[e.CURSOR_REVIEW_DISABLED = 3] = "CURSOR_REVIEW_DISABLED", e))(fle || {});
-    nt.util.setEnumType(fle, "aiserver.v1.GetCursorReviewEntitlementResponse.Reason", [{
+    var gle = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.OK = 1] = "OK", e[e.REQUIRES_TEAM_OR_ENTERPRISE = 2] = "REQUIRES_TEAM_OR_ENTERPRISE", e[e.CURSOR_REVIEW_DISABLED = 3] = "CURSOR_REVIEW_DISABLED", e))(gle || {});
+    nt.util.setEnumType(gle, "aiserver.v1.GetCursorReviewEntitlementResponse.Reason", [{
         no: 0,
         name: "REASON_UNSPECIFIED"
     }, {
@@ -86186,7 +86244,7 @@
         no: 3,
         name: "REASON_CURSOR_REVIEW_DISABLED"
     }]);
-    const ple = class e extends b {
+    const Tle = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -86203,9 +86261,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ple.runtime = nt, ple.typeName = "aiserver.v1.GetUsageLimitPolicyStatusRequest", ple.fields = nt.util.newFieldList(() => []);
-    let gle = ple;
-    const Tle = class e extends b {
+    Tle.runtime = nt, Tle.typeName = "aiserver.v1.GetUsageLimitPolicyStatusRequest", Tle.fields = nt.util.newFieldList(() => []);
+    let hle = Tle;
+    const _le = class e extends b {
         constructor(e) {
             super(), this.isInSlowPool = !1, this.features = {}, this.canConfigureSpendLimit = !1, this.hasPendingRequest = !1, this.allowedModelIds = [], this.allowedModelTags = [], nt.util.initPartial(e, this)
         }
@@ -86222,7 +86280,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Tle.runtime = nt, Tle.typeName = "aiserver.v1.GetUsageLimitPolicyStatusResponse", Tle.fields = nt.util.newFieldList(() => [{
+    _le.runtime = nt, _le.typeName = "aiserver.v1.GetUsageLimitPolicyStatusResponse", _le.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "is_in_slow_pool",
         kind: "scalar",
@@ -86289,8 +86347,8 @@
         T: va,
         opt: !0
     }]);
-    let hle = Tle;
-    const _le = class e extends b {
+    let yle = _le;
+    const wle = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -86307,9 +86365,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _le.runtime = nt, _le.typeName = "aiserver.v1.GetUsageLimitStatusAndActiveGrantsRequest", _le.fields = nt.util.newFieldList(() => []);
-    let yle = _le;
-    const wle = class e extends b {
+    wle.runtime = nt, wle.typeName = "aiserver.v1.GetUsageLimitStatusAndActiveGrantsRequest", wle.fields = nt.util.newFieldList(() => []);
+    let kle = wle;
+    const Sle = class e extends b {
         constructor(e) {
             super(), this.grantId = "", this.totalCents = K.zero, this.remainingCents = K.zero, this.expiresAtMs = K.zero, this.allowedModelIds = [], this.allowedModelTags = [], this.grantType = "", this.showInClient = !1, this.allowedClientTypes = [], nt.util.initPartial(e, this)
         }
@@ -86326,7 +86384,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wle.runtime = nt, wle.typeName = "aiserver.v1.ActiveCreditGrant", wle.fields = nt.util.newFieldList(() => [{
+    Sle.runtime = nt, Sle.typeName = "aiserver.v1.ActiveCreditGrant", Sle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "grant_id",
         kind: "scalar",
@@ -86393,8 +86451,8 @@
         T: 9,
         repeated: !0
     }]);
-    let kle = wle;
-    const Sle = class e extends b {
+    let Jle = Sle;
+    const vle = class e extends b {
         constructor(e) {
             super(), this.activeGrants = [], nt.util.initPartial(e, this)
         }
@@ -86411,20 +86469,20 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Sle.runtime = nt, Sle.typeName = "aiserver.v1.GetUsageLimitStatusAndActiveGrantsResponse", Sle.fields = nt.util.newFieldList(() => [{
+    vle.runtime = nt, vle.typeName = "aiserver.v1.GetUsageLimitStatusAndActiveGrantsResponse", vle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "usage_limit_policy_status",
         kind: "message",
-        T: Ele
+        T: Ble
     }, {
         no: 2,
         name: "active_grants",
         kind: "message",
-        T: kle,
+        T: Jle,
         repeated: !0
     }]);
-    let Jle = Sle;
-    const vle = class e extends b {
+    let Ele = vle;
+    const Nle = class e extends b {
         constructor(e) {
             super(), this.isInSlowPool = !1, this.features = {}, this.canConfigureSpendLimit = !1, this.hasPendingRequest = !1, this.allowedModelIds = [], this.allowedModelTags = [], nt.util.initPartial(e, this)
         }
@@ -86441,7 +86499,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vle.runtime = nt, vle.typeName = "aiserver.v1.GetUsageLimitStatusAndActiveGrantsResponse.UsageLimitPolicyStatus", vle.fields = nt.util.newFieldList(() => [{
+    Nle.runtime = nt, Nle.typeName = "aiserver.v1.GetUsageLimitStatusAndActiveGrantsResponse.UsageLimitPolicyStatus", Nle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "is_in_slow_pool",
         kind: "scalar",
@@ -86508,8 +86566,8 @@
         T: va,
         opt: !0
     }]);
-    let Ele = vle;
-    const Nle = class e extends b {
+    let Ble = Nle;
+    const Ile = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -86526,9 +86584,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Nle.runtime = nt, Nle.typeName = "aiserver.v1.GetCreditGrantsBalanceRequest", Nle.fields = nt.util.newFieldList(() => []);
-    let Ble = Nle;
-    const Ile = class e extends b {
+    Ile.runtime = nt, Ile.typeName = "aiserver.v1.GetCreditGrantsBalanceRequest", Ile.fields = nt.util.newFieldList(() => []);
+    let Ple = Ile;
+    const qle = class e extends b {
         constructor(e) {
             super(), this.hasCreditGrants = !1, this.creditBalanceCents = K.zero, this.totalCents = K.zero, this.usedCents = K.zero, nt.util.initPartial(e, this)
         }
@@ -86545,7 +86603,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ile.runtime = nt, Ile.typeName = "aiserver.v1.GetCreditGrantsBalanceResponse", Ile.fields = nt.util.newFieldList(() => [{
+    qle.runtime = nt, qle.typeName = "aiserver.v1.GetCreditGrantsBalanceResponse", qle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "has_credit_grants",
         kind: "scalar",
@@ -86566,8 +86624,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Ple = Ile;
-    const qle = class e extends b {
+    let Rle = qle;
+    const Lle = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -86584,15 +86642,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qle.runtime = nt, qle.typeName = "aiserver.v1.GetClientVisibleCreditGrantsRequest", qle.fields = nt.util.newFieldList(() => [{
+    Lle.runtime = nt, Lle.typeName = "aiserver.v1.GetClientVisibleCreditGrantsRequest", Lle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5,
         opt: !0
     }]);
-    let Rle = qle;
-    const Lle = class e extends b {
+    let Fle = Lle;
+    const Ole = class e extends b {
         constructor(e) {
             super(), this.grants = [], nt.util.initPartial(e, this)
         }
@@ -86609,15 +86667,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Lle.runtime = nt, Lle.typeName = "aiserver.v1.GetClientVisibleCreditGrantsResponse", Lle.fields = nt.util.newFieldList(() => [{
+    Ole.runtime = nt, Ole.typeName = "aiserver.v1.GetClientVisibleCreditGrantsResponse", Ole.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "grants",
         kind: "message",
-        T: ble,
+        T: Ule,
         repeated: !0
     }]);
-    let Fle = Lle;
-    const Ole = class e extends b {
+    let ble = Ole;
+    const Cle = class e extends b {
         constructor(e) {
             super(), this.remainingCents = K.zero, this.totalCents = K.zero, this.expiresAtMs = K.zero, this.displayName = "", nt.util.initPartial(e, this)
         }
@@ -86634,7 +86692,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ole.runtime = nt, Ole.typeName = "aiserver.v1.ClientVisibleCreditGrant", Ole.fields = nt.util.newFieldList(() => [{
+    Cle.runtime = nt, Cle.typeName = "aiserver.v1.ClientVisibleCreditGrant", Cle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "remaining_cents",
         kind: "scalar",
@@ -86655,8 +86713,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let ble = Ole;
-    const Cle = class e extends b {
+    let Ule = Cle;
+    const Ale = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -86673,14 +86731,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Cle.runtime = nt, Cle.typeName = "aiserver.v1.GetAdvancedAnalyticsEnabledRequest", Cle.fields = nt.util.newFieldList(() => [{
+    Ale.runtime = nt, Ale.typeName = "aiserver.v1.GetAdvancedAnalyticsEnabledRequest", Ale.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let Ule = Cle;
-    const Ale = class e extends b {
+    let xle = Ale;
+    const Dle = class e extends b {
         constructor(e) {
             super(), this.enabled = !1, nt.util.initPartial(e, this)
         }
@@ -86697,14 +86755,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ale.runtime = nt, Ale.typeName = "aiserver.v1.GetAdvancedAnalyticsEnabledResponse", Ale.fields = nt.util.newFieldList(() => [{
+    Dle.runtime = nt, Dle.typeName = "aiserver.v1.GetAdvancedAnalyticsEnabledResponse", Dle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "enabled",
         kind: "scalar",
         T: 8
     }]);
-    let xle = Ale;
-    const Dle = class e extends b {
+    let Mle = Dle;
+    const Gle = class e extends b {
         constructor(e) {
             super(), this.usageUuid = "", nt.util.initPartial(e, this)
         }
@@ -86721,14 +86779,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Dle.runtime = nt, Dle.typeName = "aiserver.v1.GetTokenUsageRequest", Dle.fields = nt.util.newFieldList(() => [{
+    Gle.runtime = nt, Gle.typeName = "aiserver.v1.GetTokenUsageRequest", Gle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "usage_uuid",
         kind: "scalar",
         T: 9
     }]);
-    let Mle = Dle;
-    const Gle = class e extends b {
+    let Yle = Gle;
+    const Vle = class e extends b {
         constructor(e) {
             super(), this.inputTokens = 0, this.outputTokens = 0, nt.util.initPartial(e, this)
         }
@@ -86745,7 +86803,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Gle.runtime = nt, Gle.typeName = "aiserver.v1.GetTokenUsageResponse", Gle.fields = nt.util.newFieldList(() => [{
+    Vle.runtime = nt, Vle.typeName = "aiserver.v1.GetTokenUsageResponse", Vle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "input_tokens",
         kind: "scalar",
@@ -86756,8 +86814,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Yle = Gle;
-    const Vle = class e extends b {
+    let Hle = Vle;
+    const Kle = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.bedrockIamRole = "", this.region = "", this.modelId = "", nt.util.initPartial(e, this)
         }
@@ -86774,7 +86832,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Vle.runtime = nt, Vle.typeName = "aiserver.v1.ValidateBedrockIamRoleRequest", Vle.fields = nt.util.newFieldList(() => [{
+    Kle.runtime = nt, Kle.typeName = "aiserver.v1.ValidateBedrockIamRoleRequest", Kle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -86795,8 +86853,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Hle = Vle;
-    const Kle = class e extends b {
+    let zle = Kle;
+    const Wle = class e extends b {
         constructor(e) {
             super(), this.success = !1, this.errorMessage = "", nt.util.initPartial(e, this)
         }
@@ -86813,7 +86871,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Kle.runtime = nt, Kle.typeName = "aiserver.v1.ValidateBedrockIamRoleResponse", Kle.fields = nt.util.newFieldList(() => [{
+    Wle.runtime = nt, Wle.typeName = "aiserver.v1.ValidateBedrockIamRoleResponse", Wle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -86824,8 +86882,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let zle = Kle;
-    const Wle = class e extends b {
+    let jle = Wle;
+    const Xle = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -86842,14 +86900,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Wle.runtime = nt, Wle.typeName = "aiserver.v1.CreateAnthropicCyberEnrollmentUrlRequest", Wle.fields = nt.util.newFieldList(() => [{
+    Xle.runtime = nt, Xle.typeName = "aiserver.v1.CreateAnthropicCyberEnrollmentUrlRequest", Xle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let jle = Wle;
-    const Xle = class e extends b {
+    let $le = Xle;
+    const Qle = class e extends b {
         constructor(e) {
             super(), this.enrollmentUrl = "", this.userProfileId = "", nt.util.initPartial(e, this)
         }
@@ -86866,7 +86924,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Xle.runtime = nt, Xle.typeName = "aiserver.v1.CreateAnthropicCyberEnrollmentUrlResponse", Xle.fields = nt.util.newFieldList(() => [{
+    Qle.runtime = nt, Qle.typeName = "aiserver.v1.CreateAnthropicCyberEnrollmentUrlResponse", Qle.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "enrollment_url",
         kind: "scalar",
@@ -86877,8 +86935,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let $le = Xle;
-    const Qle = class e extends b {
+    let Zle = Qle;
+    const eue = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -86895,14 +86953,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Qle.runtime = nt, Qle.typeName = "aiserver.v1.DeleteBedrockIamRoleRequest", Qle.fields = nt.util.newFieldList(() => [{
+    eue.runtime = nt, eue.typeName = "aiserver.v1.DeleteBedrockIamRoleRequest", eue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let Zle = Qle;
-    const eue = class e extends b {
+    let tue = eue;
+    const nue = class e extends b {
         constructor(e) {
             super(), this.success = !1, this.errorMessage = "", nt.util.initPartial(e, this)
         }
@@ -86919,7 +86977,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eue.runtime = nt, eue.typeName = "aiserver.v1.DeleteBedrockIamRoleResponse", eue.fields = nt.util.newFieldList(() => [{
+    nue.runtime = nt, nue.typeName = "aiserver.v1.DeleteBedrockIamRoleResponse", nue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -86930,8 +86988,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let tue = eue;
-    const nue = class e extends b {
+    let rue = nue;
+    const sue = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -86948,7 +87006,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nue.runtime = nt, nue.typeName = "aiserver.v1.GetTeamSpendRequest", nue.fields = nt.util.newFieldList(() => [{
+    sue.runtime = nt, sue.typeName = "aiserver.v1.GetTeamSpendRequest", sue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -87008,8 +87066,8 @@
         T: 5,
         opt: !0
     }]);
-    let rue = nue;
-    const sue = class e extends b {
+    let iue = sue;
+    const aue = class e extends b {
         constructor(e) {
             super(), this.role = 0, this.count = 0, nt.util.initPartial(e, this)
         }
@@ -87026,7 +87084,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sue.runtime = nt, sue.typeName = "aiserver.v1.TeamRoleCount", sue.fields = nt.util.newFieldList(() => [{
+    aue.runtime = nt, aue.typeName = "aiserver.v1.TeamRoleCount", aue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "role",
         kind: "enum",
@@ -87037,8 +87095,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let iue = sue;
-    const aue = class e extends b {
+    let oue = aue;
+    const lue = class e extends b {
         constructor(e) {
             super(), this.teamMemberSpend = [], this.subscriptionCycleStart = K.zero, this.totalMembers = 0, this.totalPages = 0, this.totalByRole = [], nt.util.initPartial(e, this)
         }
@@ -87055,11 +87113,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    aue.runtime = nt, aue.typeName = "aiserver.v1.GetTeamSpendResponse", aue.fields = nt.util.newFieldList(() => [{
+    lue.runtime = nt, lue.typeName = "aiserver.v1.GetTeamSpendResponse", lue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_member_spend",
         kind: "message",
-        T: uue,
+        T: cue,
         repeated: !0
     }, {
         no: 2,
@@ -87080,7 +87138,7 @@
         no: 5,
         name: "total_by_role",
         kind: "message",
-        T: iue,
+        T: oue,
         repeated: !0
     }, {
         no: 6,
@@ -87131,8 +87189,8 @@
         T: 8,
         opt: !0
     }]);
-    let oue = aue;
-    const lue = class e extends b {
+    let uue = lue;
+    const mue = class e extends b {
         constructor(e) {
             super(), this.userId = 0, this.spendCents = 0, this.fastPremiumRequests = 0, this.name = "", this.email = "", this.role = 0, this.hardLimitOverrideDollars = 0, nt.util.initPartial(e, this)
         }
@@ -87149,7 +87207,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lue.runtime = nt, lue.typeName = "aiserver.v1.GetTeamSpendResponse.TeamMemberSpend", lue.fields = nt.util.newFieldList(() => [{
+    mue.runtime = nt, mue.typeName = "aiserver.v1.GetTeamSpendResponse.TeamMemberSpend", mue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "user_id",
         kind: "scalar",
@@ -87251,8 +87309,8 @@
         T: 3,
         opt: !0
     }]);
-    let uue = lue;
-    const mue = class e extends b {
+    let cue = mue;
+    const due = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -87269,45 +87327,45 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mue.runtime = nt, mue.typeName = "aiserver.v1.GetCurrentBillingCycleRequest", mue.fields = nt.util.newFieldList(() => [{
+    due.runtime = nt, due.typeName = "aiserver.v1.GetCurrentBillingCycleRequest", due.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5,
         opt: !0
-    }]);
-    let cue = mue;
-    const due = class e extends b {
-        constructor(e) {
-            super(), this.startDateEpochMillis = K.zero, this.endDateEpochMillis = K.zero, nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    due.runtime = nt, due.typeName = "aiserver.v1.GetCurrentBillingCycleResponse", due.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "start_date_epoch_millis",
-        kind: "scalar",
-        T: 3
-    }, {
-        no: 2,
-        name: "end_date_epoch_millis",
-        kind: "scalar",
-        T: 3
     }]);
     let fue = due;
     const pue = class e extends b {
         constructor(e) {
+            super(), this.startDateEpochMillis = K.zero, this.endDateEpochMillis = K.zero, nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    pue.runtime = nt, pue.typeName = "aiserver.v1.GetCurrentBillingCycleResponse", pue.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "start_date_epoch_millis",
+        kind: "scalar",
+        T: 3
+    }, {
+        no: 2,
+        name: "end_date_epoch_millis",
+        kind: "scalar",
+        T: 3
+    }]);
+    let gue = pue;
+    const Tue = class e extends b {
+        constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -87323,15 +87381,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pue.runtime = nt, pue.typeName = "aiserver.v1.GetMonthlyBillingCycleRequest", pue.fields = nt.util.newFieldList(() => [{
+    Tue.runtime = nt, Tue.typeName = "aiserver.v1.GetMonthlyBillingCycleRequest", Tue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5,
         opt: !0
     }]);
-    let gue = pue;
-    const Tue = class e extends b {
+    let hue = Tue;
+    const _ue = class e extends b {
         constructor(e) {
             super(), this.startDateEpochMillis = K.zero, this.endDateEpochMillis = K.zero, nt.util.initPartial(e, this)
         }
@@ -87348,7 +87406,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Tue.runtime = nt, Tue.typeName = "aiserver.v1.GetMonthlyBillingCycleResponse", Tue.fields = nt.util.newFieldList(() => [{
+    _ue.runtime = nt, _ue.typeName = "aiserver.v1.GetMonthlyBillingCycleResponse", _ue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "start_date_epoch_millis",
         kind: "scalar",
@@ -87359,8 +87417,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let hue = Tue;
-    const _ue = class e extends b {
+    let yue = _ue;
+    const wue = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -87377,9 +87435,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _ue.runtime = nt, _ue.typeName = "aiserver.v1.GetBugbotSettingsRequest", _ue.fields = nt.util.newFieldList(() => []);
-    let yue = _ue;
-    const wue = class e extends b {
+    wue.runtime = nt, wue.typeName = "aiserver.v1.GetBugbotSettingsRequest", wue.fields = nt.util.newFieldList(() => []);
+    let kue = wue;
+    const Sue = class e extends b {
         constructor(e) {
             super(), this.available = !1, this.enabled = !1, this.prUrls = [], nt.util.initPartial(e, this)
         }
@@ -87396,7 +87454,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wue.runtime = nt, wue.typeName = "aiserver.v1.GetBugbotSettingsResponse", wue.fields = nt.util.newFieldList(() => [{
+    Sue.runtime = nt, Sue.typeName = "aiserver.v1.GetBugbotSettingsResponse", Sue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "available",
         kind: "scalar",
@@ -87413,8 +87471,8 @@
         T: 9,
         repeated: !0
     }]);
-    let kue = wue;
-    const Sue = class e extends b {
+    let Jue = Sue;
+    const vue = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -87431,7 +87489,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Sue.runtime = nt, Sue.typeName = "aiserver.v1.GetBugbotAnalyticsV2Request", Sue.fields = nt.util.newFieldList(() => [{
+    vue.runtime = nt, vue.typeName = "aiserver.v1.GetBugbotAnalyticsV2Request", vue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "start_date",
         kind: "scalar",
@@ -87450,8 +87508,8 @@
         T: 9,
         opt: !0
     }]);
-    let Jue = Sue;
-    const vue = class e extends b {
+    let Eue = vue;
+    const Nue = class e extends b {
         constructor(e) {
             super(), this.shouldSeeAnalytics = !1, this.prsReviewedSeries = [], this.bugsFoundSeries = [], this.numRunsSeries = [], this.bugsResolvedSeries = [], this.pctResolutionRate = 0, this.uniqueUsersSeries = [], this.uniqueUsersTotal = 0, this.highSevResolvedSeries = [], this.mediumSevResolvedSeries = [], this.lowSevResolvedSeries = [], this.autofixPrsMergedSeries = [], this.totalAutofixRuns = 0, this.costCentsSeries = [], this.numBilledRunsSeries = [], nt.util.initPartial(e, this)
         }
@@ -87468,7 +87526,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vue.runtime = nt, vue.typeName = "aiserver.v1.GetBugbotAnalyticsV2Response", vue.fields = nt.util.newFieldList(() => [{
+    Nue.runtime = nt, Nue.typeName = "aiserver.v1.GetBugbotAnalyticsV2Response", Nue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "should_see_analytics",
         kind: "scalar",
@@ -87477,25 +87535,25 @@
         no: 2,
         name: "prs_reviewed_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }, {
         no: 3,
         name: "bugs_found_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }, {
         no: 4,
         name: "num_runs_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }, {
         no: 5,
         name: "bugs_resolved_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }, {
         no: 6,
@@ -87506,7 +87564,7 @@
         no: 7,
         name: "unique_users_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }, {
         no: 8,
@@ -87517,25 +87575,25 @@
         no: 9,
         name: "high_sev_resolved_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }, {
         no: 10,
         name: "medium_sev_resolved_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }, {
         no: 11,
         name: "low_sev_resolved_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }, {
         no: 12,
         name: "autofix_prs_merged_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }, {
         no: 13,
@@ -87546,17 +87604,17 @@
         no: 14,
         name: "cost_cents_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }, {
         no: 15,
         name: "num_billed_runs_series",
         kind: "message",
-        T: Iue,
+        T: que,
         repeated: !0
     }]);
-    let Eue = vue;
-    const Nue = class e extends b {
+    let Bue = Nue;
+    const Iue = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -87573,7 +87631,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Nue.runtime = nt, Nue.typeName = "aiserver.v1.BugBotPRData", Nue.fields = nt.util.newFieldList(() => [{
+    Iue.runtime = nt, Iue.typeName = "aiserver.v1.BugBotPRData", Iue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "start_date",
         kind: "scalar",
@@ -87592,7 +87650,7 @@
         T: 9,
         opt: !0
     }]);
-    const Bue = class e extends b {
+    const Pue = class e extends b {
         constructor(e) {
             super(), this.date = K.zero, this.value = 0, nt.util.initPartial(e, this)
         }
@@ -87609,7 +87667,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Bue.runtime = nt, Bue.typeName = "aiserver.v1.BugbotAnalyticsDataPoint", Bue.fields = nt.util.newFieldList(() => [{
+    Pue.runtime = nt, Pue.typeName = "aiserver.v1.BugbotAnalyticsDataPoint", Pue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "date",
         kind: "scalar",
@@ -87620,8 +87678,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Iue = Bue;
-    const Pue = class e extends b {
+    let que = Pue;
+    const Rue = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -87638,7 +87696,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Pue.runtime = nt, Pue.typeName = "aiserver.v1.GetBugBotPRAnalyticsRequest", Pue.fields = nt.util.newFieldList(() => [{
+    Rue.runtime = nt, Rue.typeName = "aiserver.v1.GetBugBotPRAnalyticsRequest", Rue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "github_repo_node_id",
         kind: "scalar",
@@ -87681,8 +87739,8 @@
         T: 5,
         opt: !0
     }]);
-    let que = Pue;
-    const Rue = class e extends b {
+    let Lue = Rue;
+    const Fue = class e extends b {
         constructor(e) {
             super(), this.prs = [], this.userOptions = [], nt.util.initPartial(e, this)
         }
@@ -87699,21 +87757,21 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Rue.runtime = nt, Rue.typeName = "aiserver.v1.GetBugBotPRAnalyticsResponse", Rue.fields = nt.util.newFieldList(() => [{
+    Fue.runtime = nt, Fue.typeName = "aiserver.v1.GetBugBotPRAnalyticsResponse", Fue.fields = nt.util.newFieldList(() => [{
         no: 2,
         name: "prs",
         kind: "message",
-        T: Cue,
+        T: Aue,
         repeated: !0
     }, {
         no: 3,
         name: "user_options",
         kind: "message",
-        T: Oue,
+        T: Cue,
         repeated: !0
     }]);
-    let Lue = Rue;
-    const Fue = class e extends b {
+    let Oue = Fue;
+    const bue = class e extends b {
         constructor(e) {
             super(), this.githubUserNodeId = "", nt.util.initPartial(e, this)
         }
@@ -87730,7 +87788,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Fue.runtime = nt, Fue.typeName = "aiserver.v1.PRUserOption", Fue.fields = nt.util.newFieldList(() => [{
+    bue.runtime = nt, bue.typeName = "aiserver.v1.PRUserOption", bue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "github_user_node_id",
         kind: "scalar",
@@ -87742,8 +87800,8 @@
         T: 9,
         opt: !0
     }]);
-    let Oue = Fue;
-    const bue = class e extends b {
+    let Cue = bue;
+    const Uue = class e extends b {
         constructor(e) {
             super(), this.githubRepoNodeId = "", this.prNumber = 0, this.requestTime = K.zero, this.totalRuns = 0, this.totalBugs = 0, this.resolvedBugs = 0, this.unresolvedBugs = 0, this.isMerged = !1, this.highSevResolvedBugs = 0, this.mediumSevResolvedBugs = 0, this.lowSevResolvedBugs = 0, nt.util.initPartial(e, this)
         }
@@ -87760,7 +87818,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    bue.runtime = nt, bue.typeName = "aiserver.v1.BugBotPRAnalytics", bue.fields = nt.util.newFieldList(() => [{
+    Uue.runtime = nt, Uue.typeName = "aiserver.v1.BugBotPRAnalytics", Uue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "github_repo_node_id",
         kind: "scalar",
@@ -87822,43 +87880,6 @@
         kind: "scalar",
         T: 5
     }]);
-    let Cue = bue;
-    const Uue = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    Uue.runtime = nt, Uue.typeName = "aiserver.v1.GetGithubInstallationsRequest", Uue.fields = nt.util.newFieldList(() => [{
-        no: 2,
-        name: "include_team_owned_repos",
-        kind: "scalar",
-        T: 8,
-        opt: !0
-    }, {
-        no: 3,
-        name: "ghe_application",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }, {
-        no: 4,
-        name: "search",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }]);
     let Aue = Uue;
     const xue = class e extends b {
         constructor(e) {
@@ -87877,15 +87898,52 @@
             return nt.util.equals(e, t, n)
         }
     };
-    xue.runtime = nt, xue.typeName = "aiserver.v1.GetScmConnectionStatusRequest", xue.fields = nt.util.newFieldList(() => [{
-        no: 1,
+    xue.runtime = nt, xue.typeName = "aiserver.v1.GetGithubInstallationsRequest", xue.fields = nt.util.newFieldList(() => [{
+        no: 2,
+        name: "include_team_owned_repos",
+        kind: "scalar",
+        T: 8,
+        opt: !0
+    }, {
+        no: 3,
         name: "ghe_application",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }, {
+        no: 4,
+        name: "search",
         kind: "scalar",
         T: 9,
         opt: !0
     }]);
     let Due = xue;
     const Mue = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    Mue.runtime = nt, Mue.typeName = "aiserver.v1.GetScmConnectionStatusRequest", Mue.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "ghe_application",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let Gue = Mue;
+    const Yue = class e extends b {
         constructor(e) {
             super(), this.connected = !1, nt.util.initPartial(e, this)
         }
@@ -87902,14 +87960,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Mue.runtime = nt, Mue.typeName = "aiserver.v1.GetScmConnectionStatusResponse", Mue.fields = nt.util.newFieldList(() => [{
+    Yue.runtime = nt, Yue.typeName = "aiserver.v1.GetScmConnectionStatusResponse", Yue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "connected",
         kind: "scalar",
         T: 8
     }]);
-    let Gue = Mue;
-    const Yue = class e extends b {
+    let Vue = Yue;
+    const Hue = class e extends b {
         constructor(e) {
             super(), this.installations = [], this.githubConnected = !1, this.teamHasBugbotRepos = !1, this.githubUsernames = [], this.ssoRequiredOrgs = [], this.ssoRequiredOrgDisplayNames = [], nt.util.initPartial(e, this)
         }
@@ -87926,11 +87984,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Yue.runtime = nt, Yue.typeName = "aiserver.v1.GetGithubInstallationsResponse", Yue.fields = nt.util.newFieldList(() => [{
+    Hue.runtime = nt, Hue.typeName = "aiserver.v1.GetGithubInstallationsResponse", Hue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installations",
         kind: "message",
-        T: Wue,
+        T: Xue,
         repeated: !0
     }, {
         no: 2,
@@ -87973,8 +88031,8 @@
         T: 9,
         repeated: !0
     }]);
-    let Vue = Yue;
-    const Hue = class e extends b {
+    let Kue = Hue;
+    const zue = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, this.repoNodeId = "", this.owner = "", this.name = "", this.htmlUrl = "", this.archived = !1, nt.util.initPartial(e, this)
         }
@@ -87991,7 +88049,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Hue.runtime = nt, Hue.typeName = "aiserver.v1.GetGithubInstallationsResponse.Repository", Hue.fields = nt.util.newFieldList(() => [{
+    zue.runtime = nt, zue.typeName = "aiserver.v1.GetGithubInstallationsResponse.Repository", zue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88020,15 +88078,15 @@
         no: 6,
         name: "settings",
         kind: "message",
-        T: Que
+        T: eme
     }, {
         no: 7,
         name: "archived",
         kind: "scalar",
         T: 8
     }]);
-    let Kue = Hue;
-    const zue = class e extends b {
+    let Wue = zue;
+    const jue = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, this.repos = [], this.canModify = !1, this.hasMoreRepos = !1, this.canModifyInstallationSettings = !1, nt.util.initPartial(e, this)
         }
@@ -88045,7 +88103,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    zue.runtime = nt, zue.typeName = "aiserver.v1.GetGithubInstallationsResponse.Installation", zue.fields = nt.util.newFieldList(() => [{
+    jue.runtime = nt, jue.typeName = "aiserver.v1.GetGithubInstallationsResponse.Installation", jue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88054,13 +88112,13 @@
         no: 2,
         name: "repos",
         kind: "message",
-        T: Kue,
+        T: Wue,
         repeated: !0
     }, {
         no: 3,
         name: "settings",
         kind: "message",
-        T: Xue
+        T: Que
     }, {
         no: 4,
         name: "can_modify",
@@ -88095,8 +88153,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let Wue = zue;
-    const jue = class e extends b {
+    let Xue = jue;
+    const $ue = class e extends b {
         constructor(e) {
             super(), this.allowlist = [], this.allowlistConfig = 0, this.runOnlyOnce = !1, this.suppressNoBugsComments = !1, this.disableInlineReviews = !1, this.autoEnableNewRepos = !1, this.isPrSummaryEnabled = !1, this.prSummaryUseComment = !1, this.isLearningEnabled = !1, this.bugbotAutofixMode = 0, this.enableDraft = !1, this.failGithubActionOnBugbotFindings = !1, this.bugbotAutofixSeverityFilter = [], nt.util.initPartial(e, this)
         }
@@ -88113,7 +88171,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    jue.runtime = nt, jue.typeName = "aiserver.v1.InstallationSettings", jue.fields = nt.util.newFieldList(() => [{
+    $ue.runtime = nt, $ue.typeName = "aiserver.v1.InstallationSettings", $ue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "allowlist",
         kind: "scalar",
@@ -88181,8 +88239,8 @@
         T: 9,
         repeated: !0
     }]);
-    let Xue = jue;
-    const $ue = class e extends b {
+    let Que = $ue;
+    const Zue = class e extends b {
         constructor(e) {
             super(), this.bugBotEnabled = !1, this.bugBotManualOnly = !1, nt.util.initPartial(e, this)
         }
@@ -88199,7 +88257,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    $ue.runtime = nt, $ue.typeName = "aiserver.v1.RepoSettings", $ue.fields = nt.util.newFieldList(() => [{
+    Zue.runtime = nt, Zue.typeName = "aiserver.v1.RepoSettings", Zue.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "bug_bot_enabled",
         kind: "scalar",
@@ -88222,8 +88280,8 @@
         T: 8,
         opt: !0
     }]);
-    let Que = $ue;
-    const Zue = class e extends b {
+    let eme = Zue;
+    const tme = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, this.repoNodeId = "", nt.util.initPartial(e, this)
         }
@@ -88240,7 +88298,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Zue.runtime = nt, Zue.typeName = "aiserver.v1.RepoIdentifier", Zue.fields = nt.util.newFieldList(() => [{
+    tme.runtime = nt, tme.typeName = "aiserver.v1.RepoIdentifier", tme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88250,47 +88308,6 @@
         name: "repo_node_id",
         kind: "scalar",
         T: 9
-    }]);
-    let eme = Zue;
-    const tme = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    tme.runtime = nt, tme.typeName = "aiserver.v1.UpdateGithubRepoSettingsRequest", tme.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "repo",
-        kind: "message",
-        T: eme
-    }, {
-        no: 2,
-        name: "settings",
-        kind: "message",
-        T: Que
-    }, {
-        no: 3,
-        name: "skip_write_access_check",
-        kind: "scalar",
-        T: 8,
-        opt: !0
-    }, {
-        no: 4,
-        name: "ghe_application",
-        kind: "scalar",
-        T: 9,
-        opt: !0
     }]);
     let nme = tme;
     const rme = class e extends b {
@@ -88310,9 +88327,50 @@
             return nt.util.equals(e, t, n)
         }
     };
-    rme.runtime = nt, rme.typeName = "aiserver.v1.UpdateGithubRepoSettingsResponse", rme.fields = nt.util.newFieldList(() => []);
+    rme.runtime = nt, rme.typeName = "aiserver.v1.UpdateGithubRepoSettingsRequest", rme.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "repo",
+        kind: "message",
+        T: nme
+    }, {
+        no: 2,
+        name: "settings",
+        kind: "message",
+        T: eme
+    }, {
+        no: 3,
+        name: "skip_write_access_check",
+        kind: "scalar",
+        T: 8,
+        opt: !0
+    }, {
+        no: 4,
+        name: "ghe_application",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
     let sme = rme;
     const ime = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    ime.runtime = nt, ime.typeName = "aiserver.v1.UpdateGithubRepoSettingsResponse", ime.fields = nt.util.newFieldList(() => []);
+    let ame = ime;
+    const ome = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, nt.util.initPartial(e, this)
         }
@@ -88329,7 +88387,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ime.runtime = nt, ime.typeName = "aiserver.v1.UpdateGithubInstallationSettingsRequest", ime.fields = nt.util.newFieldList(() => [{
+    ome.runtime = nt, ome.typeName = "aiserver.v1.UpdateGithubInstallationSettingsRequest", ome.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88338,7 +88396,7 @@
         no: 2,
         name: "settings",
         kind: "message",
-        T: Xue
+        T: Que
     }, {
         no: 4,
         name: "ghe_application",
@@ -88346,8 +88404,8 @@
         T: 9,
         opt: !0
     }]);
-    let ame = ime;
-    const ome = class e extends b {
+    let lme = ome;
+    const ume = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -88364,9 +88422,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ome.runtime = nt, ome.typeName = "aiserver.v1.UpdateGithubInstallationSettingsResponse", ome.fields = nt.util.newFieldList(() => []);
-    let lme = ome;
-    const ume = class e extends b {
+    ume.runtime = nt, ume.typeName = "aiserver.v1.UpdateGithubInstallationSettingsResponse", ume.fields = nt.util.newFieldList(() => []);
+    let mme = ume;
+    const cme = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -88383,7 +88441,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ume.runtime = nt, ume.typeName = "aiserver.v1.UpdateGithubInstallationTeamScopeRequest", ume.fields = nt.util.newFieldList(() => [{
+    cme.runtime = nt, cme.typeName = "aiserver.v1.UpdateGithubInstallationTeamScopeRequest", cme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88400,8 +88458,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let mme = ume;
-    const cme = class e extends b {
+    let dme = cme;
+    const fme = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -88418,9 +88476,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    cme.runtime = nt, cme.typeName = "aiserver.v1.UpdateGithubInstallationTeamScopeResponse", cme.fields = nt.util.newFieldList(() => []);
-    let dme = cme;
-    const fme = class e extends b {
+    fme.runtime = nt, fme.typeName = "aiserver.v1.UpdateGithubInstallationTeamScopeResponse", fme.fields = nt.util.newFieldList(() => []);
+    let pme = fme;
+    const gme = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, this.repoNodeId = "", nt.util.initPartial(e, this)
         }
@@ -88437,7 +88495,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    fme.runtime = nt, fme.typeName = "aiserver.v1.StartBugbotBackfillLearningRequest", fme.fields = nt.util.newFieldList(() => [{
+    gme.runtime = nt, gme.typeName = "aiserver.v1.StartBugbotBackfillLearningRequest", gme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88460,8 +88518,8 @@
         T: 8,
         opt: !0
     }]);
-    let pme = fme;
-    const gme = class e extends b {
+    let Tme = gme;
+    const hme = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -88478,9 +88536,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    gme.runtime = nt, gme.typeName = "aiserver.v1.StartBugbotBackfillLearningResponse", gme.fields = nt.util.newFieldList(() => []);
-    let Tme = gme;
-    const hme = class e extends b {
+    hme.runtime = nt, hme.typeName = "aiserver.v1.StartBugbotBackfillLearningResponse", hme.fields = nt.util.newFieldList(() => []);
+    let _me = hme;
+    const yme = class e extends b {
         constructor(e) {
             super(), this.workflowId = "", nt.util.initPartial(e, this)
         }
@@ -88497,14 +88555,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    hme.runtime = nt, hme.typeName = "aiserver.v1.GetBugbotBackfillStatusRequest", hme.fields = nt.util.newFieldList(() => [{
+    yme.runtime = nt, yme.typeName = "aiserver.v1.GetBugbotBackfillStatusRequest", yme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "workflow_id",
         kind: "scalar",
         T: 9
     }]);
-    let _me = hme;
-    const yme = class e extends b {
+    let wme = yme;
+    const kme = class e extends b {
         constructor(e) {
             super(), this.status = 0, nt.util.initPartial(e, this)
         }
@@ -88521,7 +88579,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    yme.runtime = nt, yme.typeName = "aiserver.v1.GetBugbotBackfillStatusResponse", yme.fields = nt.util.newFieldList(() => [{
+    kme.runtime = nt, kme.typeName = "aiserver.v1.GetBugbotBackfillStatusResponse", kme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "status",
         kind: "enum",
@@ -88539,8 +88597,8 @@
         T: 5,
         opt: !0
     }]);
-    let wme = yme;
-    const kme = class e extends b {
+    let Sme = kme;
+    const Jme = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, this.bugBotEnabled = !1, nt.util.initPartial(e, this)
         }
@@ -88557,7 +88615,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    kme.runtime = nt, kme.typeName = "aiserver.v1.UpdateAllGithubRepoSettingsRequest", kme.fields = nt.util.newFieldList(() => [{
+    Jme.runtime = nt, Jme.typeName = "aiserver.v1.UpdateAllGithubRepoSettingsRequest", Jme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88586,8 +88644,8 @@
         T: 9,
         opt: !0
     }]);
-    let Sme = kme;
-    const Jme = class e extends b {
+    let vme = Jme;
+    const Eme = class e extends b {
         constructor(e) {
             super(), this.updatedCount = 0, this.asyncOperationStarted = !1, this.asyncOperationAlreadyInProgress = !1, nt.util.initPartial(e, this)
         }
@@ -88604,7 +88662,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Jme.runtime = nt, Jme.typeName = "aiserver.v1.UpdateAllGithubRepoSettingsResponse", Jme.fields = nt.util.newFieldList(() => [{
+    Eme.runtime = nt, Eme.typeName = "aiserver.v1.UpdateAllGithubRepoSettingsResponse", Eme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "updated_count",
         kind: "scalar",
@@ -88620,8 +88678,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let vme = Jme;
-    const Eme = class e extends b {
+    let Nme = Eme;
+    const Bme = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, this.operation = 0, nt.util.initPartial(e, this)
         }
@@ -88638,7 +88696,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Eme.runtime = nt, Eme.typeName = "aiserver.v1.UpdateSelfGithubAllowlistRequest", Eme.fields = nt.util.newFieldList(() => [{
+    Bme.runtime = nt, Bme.typeName = "aiserver.v1.UpdateSelfGithubAllowlistRequest", Bme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88647,7 +88705,7 @@
         no: 2,
         name: "operation",
         kind: "enum",
-        T: nt.getEnumType(Bme)
+        T: nt.getEnumType(Pme)
     }, {
         no: 4,
         name: "ghe_application",
@@ -88655,9 +88713,9 @@
         T: 9,
         opt: !0
     }]);
-    let Nme = Eme;
-    var Bme = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ADD = 1] = "ADD", e[e.REMOVE = 2] = "REMOVE", e))(Bme || {});
-    nt.util.setEnumType(Bme, "aiserver.v1.UpdateSelfGithubAllowlistRequest.Operation", [{
+    let Ime = Bme;
+    var Pme = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ADD = 1] = "ADD", e[e.REMOVE = 2] = "REMOVE", e))(Pme || {});
+    nt.util.setEnumType(Pme, "aiserver.v1.UpdateSelfGithubAllowlistRequest.Operation", [{
         no: 0,
         name: "OPERATION_UNSPECIFIED"
     }, {
@@ -88667,7 +88725,7 @@
         no: 2,
         name: "OPERATION_REMOVE"
     }]);
-    const Ime = class e extends b {
+    const qme = class e extends b {
         constructor(e) {
             super(), this.allowlist = [], nt.util.initPartial(e, this)
         }
@@ -88684,15 +88742,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ime.runtime = nt, Ime.typeName = "aiserver.v1.UpdateSelfGithubAllowlistResponse", Ime.fields = nt.util.newFieldList(() => [{
+    qme.runtime = nt, qme.typeName = "aiserver.v1.UpdateSelfGithubAllowlistResponse", qme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "allowlist",
         kind: "scalar",
         T: 9,
         repeated: !0
     }]);
-    let Pme = Ime;
-    const qme = class e extends b {
+    let Rme = qme;
+    const Lme = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, this.startPage = 0, nt.util.initPartial(e, this)
         }
@@ -88709,7 +88767,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qme.runtime = nt, qme.typeName = "aiserver.v1.GetInstallationReposRequest", qme.fields = nt.util.newFieldList(() => [{
+    Lme.runtime = nt, Lme.typeName = "aiserver.v1.GetInstallationReposRequest", Lme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88738,8 +88796,8 @@
         T: 9,
         opt: !0
     }]);
-    let Rme = qme;
-    const Lme = class e extends b {
+    let Fme = Lme;
+    const Ome = class e extends b {
         constructor(e) {
             super(), this.repos = [], this.hasMore = !1, nt.util.initPartial(e, this)
         }
@@ -88756,11 +88814,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Lme.runtime = nt, Lme.typeName = "aiserver.v1.GetInstallationReposResponse", Lme.fields = nt.util.newFieldList(() => [{
+    Ome.runtime = nt, Ome.typeName = "aiserver.v1.GetInstallationReposResponse", Ome.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "repos",
         kind: "message",
-        T: Kue,
+        T: Wue,
         repeated: !0
     }, {
         no: 2,
@@ -88774,8 +88832,8 @@
         T: 9,
         opt: !0
     }]);
-    let Fme = Lme;
-    const Ome = class e extends b {
+    let bme = Ome;
+    const Cme = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, nt.util.initPartial(e, this)
         }
@@ -88792,7 +88850,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ome.runtime = nt, Ome.typeName = "aiserver.v1.FetchAllInstallationReposRequest", Ome.fields = nt.util.newFieldList(() => [{
+    Cme.runtime = nt, Cme.typeName = "aiserver.v1.FetchAllInstallationReposRequest", Cme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88822,8 +88880,8 @@
         T: 8,
         opt: !0
     }]);
-    let bme = Ome;
-    const Cme = class e extends b {
+    let Ume = Cme;
+    const Ame = class e extends b {
         constructor(e) {
             super(), this.repos = [], nt.util.initPartial(e, this)
         }
@@ -88840,11 +88898,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Cme.runtime = nt, Cme.typeName = "aiserver.v1.FetchAllInstallationReposResponse", Cme.fields = nt.util.newFieldList(() => [{
+    Ame.runtime = nt, Ame.typeName = "aiserver.v1.FetchAllInstallationReposResponse", Ame.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "repos",
         kind: "message",
-        T: Kue,
+        T: Wue,
         repeated: !0
     }, {
         no: 2,
@@ -88853,8 +88911,8 @@
         T: 9,
         opt: !0
     }]);
-    let Ume = Cme;
-    const Ame = class e extends b {
+    let xme = Ame;
+    const Dme = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, nt.util.initPartial(e, this)
         }
@@ -88871,7 +88929,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ame.runtime = nt, Ame.typeName = "aiserver.v1.GetInstallationGithubUsersRequest", Ame.fields = nt.util.newFieldList(() => [{
+    Dme.runtime = nt, Dme.typeName = "aiserver.v1.GetInstallationGithubUsersRequest", Dme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -88883,8 +88941,8 @@
         T: 9,
         opt: !0
     }]);
-    let xme = Ame;
-    const Dme = class e extends b {
+    let Mme = Dme;
+    const Gme = class e extends b {
         constructor(e) {
             super(), this.login = "", this.nodeId = "", nt.util.initPartial(e, this)
         }
@@ -88901,7 +88959,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Dme.runtime = nt, Dme.typeName = "aiserver.v1.GithubUser", Dme.fields = nt.util.newFieldList(() => [{
+    Gme.runtime = nt, Gme.typeName = "aiserver.v1.GithubUser", Gme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "login",
         kind: "scalar",
@@ -88918,8 +88976,8 @@
         T: 9,
         opt: !0
     }]);
-    let Mme = Dme;
-    const Gme = class e extends b {
+    let Yme = Gme;
+    const Vme = class e extends b {
         constructor(e) {
             super(), this.hasPermission = !1, this.permissionSettingsUrl = "", nt.util.initPartial(e, this)
         }
@@ -88936,7 +88994,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Gme.runtime = nt, Gme.typeName = "aiserver.v1.GithubPermissionInfo", Gme.fields = nt.util.newFieldList(() => [{
+    Vme.runtime = nt, Vme.typeName = "aiserver.v1.GithubPermissionInfo", Vme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "has_permission",
         kind: "scalar",
@@ -88947,8 +89005,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Yme = Gme;
-    const Vme = class e extends b {
+    let Hme = Vme;
+    const Kme = class e extends b {
         constructor(e) {
             super(), this.githubUsers = [], nt.util.initPartial(e, this)
         }
@@ -88965,21 +89023,21 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Vme.runtime = nt, Vme.typeName = "aiserver.v1.GetInstallationGithubUsersResponse", Vme.fields = nt.util.newFieldList(() => [{
+    Kme.runtime = nt, Kme.typeName = "aiserver.v1.GetInstallationGithubUsersResponse", Kme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "github_users",
         kind: "message",
-        T: Mme,
+        T: Yme,
         repeated: !0
     }, {
         no: 2,
         name: "permission_info",
         kind: "message",
-        T: Yme,
+        T: Hme,
         opt: !0
     }]);
-    let Hme = Vme;
-    const Kme = class e extends b {
+    let zme = Kme;
+    const Wme = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -88996,15 +89054,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Kme.runtime = nt, Kme.typeName = "aiserver.v1.GetUserAdminOrganizationsRequest", Kme.fields = nt.util.newFieldList(() => [{
+    Wme.runtime = nt, Wme.typeName = "aiserver.v1.GetUserAdminOrganizationsRequest", Wme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "ghe_application_uuid",
         kind: "scalar",
         T: 9,
         opt: !0
     }]);
-    let zme = Kme;
-    const Wme = class e extends b {
+    let jme = Wme;
+    const Xme = class e extends b {
         constructor(e) {
             super(), this.organizations = [], nt.util.initPartial(e, this)
         }
@@ -89021,15 +89079,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Wme.runtime = nt, Wme.typeName = "aiserver.v1.GetUserAdminOrganizationsResponse", Wme.fields = nt.util.newFieldList(() => [{
+    Xme.runtime = nt, Xme.typeName = "aiserver.v1.GetUserAdminOrganizationsResponse", Xme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "organizations",
         kind: "message",
-        T: $me,
+        T: Zme,
         repeated: !0
     }]);
-    let jme = Wme;
-    const Xme = class e extends b {
+    let $me = Xme;
+    const Qme = class e extends b {
         constructor(e) {
             super(), this.login = "", this.hostname = "", nt.util.initPartial(e, this)
         }
@@ -89046,7 +89104,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Xme.runtime = nt, Xme.typeName = "aiserver.v1.GetUserAdminOrganizationsResponse.Organization", Xme.fields = nt.util.newFieldList(() => [{
+    Qme.runtime = nt, Qme.typeName = "aiserver.v1.GetUserAdminOrganizationsResponse.Organization", Qme.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "login",
         kind: "scalar",
@@ -89057,8 +89115,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let $me = Xme;
-    const Qme = class e extends b {
+    let Zme = Qme;
+    const ece = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -89075,7 +89133,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Qme.runtime = nt, Qme.typeName = "aiserver.v1.GetTeamGithubUsersRequest", Qme.fields = nt.util.newFieldList(() => [{
+    ece.runtime = nt, ece.typeName = "aiserver.v1.GetTeamGithubUsersRequest", ece.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -89087,8 +89145,8 @@
         T: 9,
         opt: !0
     }]);
-    let Zme = Qme;
-    const ece = class e extends b {
+    let tce = ece;
+    const nce = class e extends b {
         constructor(e) {
             super(), this.users = [], nt.util.initPartial(e, this)
         }
@@ -89105,15 +89163,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ece.runtime = nt, ece.typeName = "aiserver.v1.GetTeamGithubUsersResponse", ece.fields = nt.util.newFieldList(() => [{
+    nce.runtime = nt, nce.typeName = "aiserver.v1.GetTeamGithubUsersResponse", nce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "users",
         kind: "message",
-        T: Mme,
+        T: Yme,
         repeated: !0
     }]);
-    let tce = ece;
-    const nce = class e extends b {
+    let rce = nce;
+    const sce = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, this.githubUsers = [], nt.util.initPartial(e, this)
         }
@@ -89130,7 +89188,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nce.runtime = nt, nce.typeName = "aiserver.v1.AddGithubUsersToTeamRequest", nce.fields = nt.util.newFieldList(() => [{
+    sce.runtime = nt, sce.typeName = "aiserver.v1.AddGithubUsersToTeamRequest", sce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -89139,7 +89197,7 @@
         no: 2,
         name: "github_users",
         kind: "message",
-        T: Mme,
+        T: Yme,
         repeated: !0
     }, {
         no: 4,
@@ -89148,8 +89206,8 @@
         T: 9,
         opt: !0
     }]);
-    let rce = nce;
-    const sce = class e extends b {
+    let ice = sce;
+    const ace = class e extends b {
         constructor(e) {
             super(), this.addedUserCount = 0, nt.util.initPartial(e, this)
         }
@@ -89166,14 +89224,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sce.runtime = nt, sce.typeName = "aiserver.v1.AddGithubUsersToTeamResponse", sce.fields = nt.util.newFieldList(() => [{
+    ace.runtime = nt, ace.typeName = "aiserver.v1.AddGithubUsersToTeamResponse", ace.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "added_user_count",
         kind: "scalar",
         T: 5
     }]);
-    let ice = sce;
-    const ace = class e extends b {
+    let oce = ace;
+    const lce = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -89190,7 +89248,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ace.runtime = nt, ace.typeName = "aiserver.v1.GetUserPullRequestsRequest", ace.fields = nt.util.newFieldList(() => [{
+    lce.runtime = nt, lce.typeName = "aiserver.v1.GetUserPullRequestsRequest", lce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "repository_filter",
         kind: "scalar",
@@ -89239,8 +89297,8 @@
         T: 5,
         opt: !0
     }]);
-    let oce = ace;
-    const lce = class e extends b {
+    let uce = lce;
+    const mce = class e extends b {
         constructor(e) {
             super(), this.pullRequests = [], this.hasMore = !1, this.hasGitConnection = !1, nt.util.initPartial(e, this)
         }
@@ -89257,11 +89315,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lce.runtime = nt, lce.typeName = "aiserver.v1.GetUserPullRequestsResponse", lce.fields = nt.util.newFieldList(() => [{
+    mce.runtime = nt, mce.typeName = "aiserver.v1.GetUserPullRequestsResponse", mce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "pull_requests",
         kind: "message",
-        T: fce,
+        T: gce,
         repeated: !0
     }, {
         no: 2,
@@ -89286,8 +89344,8 @@
         T: 9,
         opt: !0
     }]);
-    let uce = lce;
-    const mce = class e extends b {
+    let cce = mce;
+    const dce = class e extends b {
         constructor(e) {
             super(), this.id = K.zero, this.nodeId = "", this.url = "", this.name = "", this.description = "", this.color = "", this.isDefault = !1, nt.util.initPartial(e, this)
         }
@@ -89304,7 +89362,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mce.runtime = nt, mce.typeName = "aiserver.v1.PullRequestLabel", mce.fields = nt.util.newFieldList(() => [{
+    dce.runtime = nt, dce.typeName = "aiserver.v1.PullRequestLabel", dce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -89340,8 +89398,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let cce = mce;
-    const dce = class e extends b {
+    let fce = dce;
+    const pce = class e extends b {
         constructor(e) {
             super(), this.number = 0, this.title = "", this.state = "", this.url = "", this.repository = "", this.createdAt = "", this.updatedAt = "", this.isDraft = !1, this.author = "", this.description = "", this.labels = [], this.headRef = "", this.baseRef = "", this.comments = 0, this.reviewComments = 0, this.mergedAt = "", this.closedAt = "", this.descriptionRaw = "", this.headSha = "", nt.util.initPartial(e, this)
         }
@@ -89358,7 +89416,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dce.runtime = nt, dce.typeName = "aiserver.v1.UserPullRequest", dce.fields = nt.util.newFieldList(() => [{
+    pce.runtime = nt, pce.typeName = "aiserver.v1.UserPullRequest", pce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "number",
         kind: "scalar",
@@ -89412,7 +89470,7 @@
         no: 11,
         name: "labels",
         kind: "message",
-        T: cce,
+        T: fce,
         repeated: !0
     }, {
         no: 12,
@@ -89455,8 +89513,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let fce = dce;
-    const pce = class e extends b {
+    let gce = pce;
+    const Tce = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -89473,7 +89531,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pce.runtime = nt, pce.typeName = "aiserver.v1.GetUserReviewRequestsRequest", pce.fields = nt.util.newFieldList(() => [{
+    Tce.runtime = nt, Tce.typeName = "aiserver.v1.GetUserReviewRequestsRequest", Tce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "repository_filter",
         kind: "scalar",
@@ -89510,8 +89568,8 @@
         T: 9,
         opt: !0
     }]);
-    let gce = pce;
-    const Tce = class e extends b {
+    let hce = Tce;
+    const _ce = class e extends b {
         constructor(e) {
             super(), this.pullRequests = [], this.hasMore = !1, this.hasGitConnection = !1, nt.util.initPartial(e, this)
         }
@@ -89528,11 +89586,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Tce.runtime = nt, Tce.typeName = "aiserver.v1.GetUserReviewRequestsResponse", Tce.fields = nt.util.newFieldList(() => [{
+    _ce.runtime = nt, _ce.typeName = "aiserver.v1.GetUserReviewRequestsResponse", _ce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "pull_requests",
         kind: "message",
-        T: fce,
+        T: gce,
         repeated: !0
     }, {
         no: 2,
@@ -89557,8 +89615,8 @@
         T: 9,
         opt: !0
     }]);
-    let hce = Tce;
-    const _ce = class e extends b {
+    let yce = _ce;
+    const wce = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -89575,15 +89633,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _ce.runtime = nt, _ce.typeName = "aiserver.v1.GetBugbotUserSettingsRequest", _ce.fields = nt.util.newFieldList(() => [{
+    wce.runtime = nt, wce.typeName = "aiserver.v1.GetBugbotUserSettingsRequest", wce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5,
         opt: !0
     }]);
-    let yce = _ce;
-    const wce = class e extends b {
+    let kce = wce;
+    const Sce = class e extends b {
         constructor(e) {
             super(), this.manualTriggerOnly = !1, this.runOnlyOnce = !1, this.suppressNoBugsComments = !1, this.bugbotAutofixMode = 0, this.enableVmRun = !1, this.failGithubActionOnBugbotFindings = !1, this.bugbotAutofixSeverityFilter = [], this.installationDefaultBugbotAutofixMode = 0, this.installationDefaultBugbotAutofixSeverityFilter = [], nt.util.initPartial(e, this)
         }
@@ -89600,7 +89658,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wce.runtime = nt, wce.typeName = "aiserver.v1.GetBugbotUserSettingsResponse", wce.fields = nt.util.newFieldList(() => [{
+    Sce.runtime = nt, Sce.typeName = "aiserver.v1.GetBugbotUserSettingsResponse", Sce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "manual_trigger_only",
         kind: "scalar",
@@ -89684,8 +89742,8 @@
         T: 8,
         opt: !0
     }]);
-    let kce = wce;
-    const Sce = class e extends b {
+    let Jce = Sce;
+    const vce = class e extends b {
         constructor(e) {
             super(), this.manualTriggerOnly = !1, this.runOnlyOnce = !1, this.suppressNoBugsComments = !1, this.bugbotAutofixMode = 0, this.enableVmRun = !1, this.failGithubActionOnBugbotFindings = !1, this.bugbotAutofixSeverityFilter = [], nt.util.initPartial(e, this)
         }
@@ -89702,7 +89760,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Sce.runtime = nt, Sce.typeName = "aiserver.v1.UpdateBugbotUserSettingsRequest", Sce.fields = nt.util.newFieldList(() => [{
+    vce.runtime = nt, vce.typeName = "aiserver.v1.UpdateBugbotUserSettingsRequest", vce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "manual_trigger_only",
         kind: "scalar",
@@ -89757,25 +89815,6 @@
         T: 8,
         opt: !0
     }]);
-    let Jce = Sce;
-    const vce = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    vce.runtime = nt, vce.typeName = "aiserver.v1.UpdateBugbotUserSettingsResponse", vce.fields = nt.util.newFieldList(() => []);
     let Ece = vce;
     const Nce = class e extends b {
         constructor(e) {
@@ -89794,9 +89833,28 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Nce.runtime = nt, Nce.typeName = "aiserver.v1.GetFullSelfDrivingUserSettingsRequest", Nce.fields = nt.util.newFieldList(() => []);
+    Nce.runtime = nt, Nce.typeName = "aiserver.v1.UpdateBugbotUserSettingsResponse", Nce.fields = nt.util.newFieldList(() => []);
     let Bce = Nce;
     const Ice = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    Ice.runtime = nt, Ice.typeName = "aiserver.v1.GetFullSelfDrivingUserSettingsRequest", Ice.fields = nt.util.newFieldList(() => []);
+    let Pce = Ice;
+    const qce = class e extends b {
         constructor(e) {
             super(), this.defaultMode = No.UNSPECIFIED, this.onlyCloudAgentPrs = !1, this.globallyDisabled = !1, this.autoCreateOnFirstPrPush = !1, this.slackNotificationsEnabled = !1, nt.util.initPartial(e, this)
         }
@@ -89813,7 +89871,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ice.runtime = nt, Ice.typeName = "aiserver.v1.GetFullSelfDrivingUserSettingsResponse", Ice.fields = nt.util.newFieldList(() => [{
+    qce.runtime = nt, qce.typeName = "aiserver.v1.GetFullSelfDrivingUserSettingsResponse", qce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "default_mode",
         kind: "enum",
@@ -89845,8 +89903,8 @@
         T: 9,
         opt: !0
     }]);
-    let Pce = Ice;
-    const qce = class e extends b {
+    let Rce = qce;
+    const Lce = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -89863,7 +89921,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qce.runtime = nt, qce.typeName = "aiserver.v1.UpdateFullSelfDrivingUserSettingsRequest", qce.fields = nt.util.newFieldList(() => [{
+    Lce.runtime = nt, Lce.typeName = "aiserver.v1.UpdateFullSelfDrivingUserSettingsRequest", Lce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "default_mode",
         kind: "enum",
@@ -89900,8 +89958,8 @@
         T: 9,
         opt: !0
     }]);
-    let Rce = qce;
-    const Lce = class e extends b {
+    let Fce = Lce;
+    const Oce = class e extends b {
         constructor(e) {
             super(), this.defaultMode = No.UNSPECIFIED, this.onlyCloudAgentPrs = !1, this.globallyDisabled = !1, this.autoCreateOnFirstPrPush = !1, this.slackNotificationsEnabled = !1, nt.util.initPartial(e, this)
         }
@@ -89918,7 +89976,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Lce.runtime = nt, Lce.typeName = "aiserver.v1.UpdateFullSelfDrivingUserSettingsResponse", Lce.fields = nt.util.newFieldList(() => [{
+    Oce.runtime = nt, Oce.typeName = "aiserver.v1.UpdateFullSelfDrivingUserSettingsResponse", Oce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "default_mode",
         kind: "enum",
@@ -89950,8 +90008,8 @@
         T: 9,
         opt: !0
     }]);
-    let Fce = Lce;
-    const Oce = class e extends b {
+    let bce = Oce;
+    const Cce = class e extends b {
         constructor(e) {
             super(), this.scmProvider = 0, this.scmRepoNodeId = "", this.repoUrl = "", this.enabled = !1, nt.util.initPartial(e, this)
         }
@@ -89968,7 +90026,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Oce.runtime = nt, Oce.typeName = "aiserver.v1.FullSelfDrivingRepoSetting", Oce.fields = nt.util.newFieldList(() => [{
+    Cce.runtime = nt, Cce.typeName = "aiserver.v1.FullSelfDrivingRepoSetting", Cce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "scm_provider",
         kind: "enum",
@@ -89995,8 +90053,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let bce = Oce;
-    const Cce = class e extends b {
+    let Uce = Cce;
+    const Ace = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -90013,9 +90071,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Cce.runtime = nt, Cce.typeName = "aiserver.v1.ListFullSelfDrivingRepoSettingsRequest", Cce.fields = nt.util.newFieldList(() => []);
-    let Uce = Cce;
-    const Ace = class e extends b {
+    Ace.runtime = nt, Ace.typeName = "aiserver.v1.ListFullSelfDrivingRepoSettingsRequest", Ace.fields = nt.util.newFieldList(() => []);
+    let xce = Ace;
+    const Dce = class e extends b {
         constructor(e) {
             super(), this.repos = [], nt.util.initPartial(e, this)
         }
@@ -90032,15 +90090,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ace.runtime = nt, Ace.typeName = "aiserver.v1.ListFullSelfDrivingRepoSettingsResponse", Ace.fields = nt.util.newFieldList(() => [{
+    Dce.runtime = nt, Dce.typeName = "aiserver.v1.ListFullSelfDrivingRepoSettingsResponse", Dce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "repos",
         kind: "message",
-        T: bce,
+        T: Uce,
         repeated: !0
     }]);
-    let xce = Ace;
-    const Dce = class e extends b {
+    let Mce = Dce;
+    const Gce = class e extends b {
         constructor(e) {
             super(), this.scmProvider = 0, this.scmRepoNodeId = "", this.repoUrl = "", this.enabled = !1, nt.util.initPartial(e, this)
         }
@@ -90057,7 +90115,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Dce.runtime = nt, Dce.typeName = "aiserver.v1.SetFullSelfDrivingRepoEnabledRequest", Dce.fields = nt.util.newFieldList(() => [{
+    Gce.runtime = nt, Gce.typeName = "aiserver.v1.SetFullSelfDrivingRepoEnabledRequest", Gce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "scm_provider",
         kind: "enum",
@@ -90084,8 +90142,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let Mce = Dce;
-    const Gce = class e extends b {
+    let Yce = Gce;
+    const Vce = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -90102,14 +90160,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Gce.runtime = nt, Gce.typeName = "aiserver.v1.SetFullSelfDrivingRepoEnabledResponse", Gce.fields = nt.util.newFieldList(() => [{
+    Vce.runtime = nt, Vce.typeName = "aiserver.v1.SetFullSelfDrivingRepoEnabledResponse", Vce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "repo",
         kind: "message",
-        T: bce
+        T: Uce
     }]);
-    let Yce = Gce;
-    const Vce = class e extends b {
+    let Hce = Vce;
+    const Kce = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.defaultMode = No.UNSPECIFIED, this.onlyCloudAgentPrs = !1, this.globallyDisabled = !1, this.autoCreateOnFirstPrPush = !1, nt.util.initPartial(e, this)
         }
@@ -90126,7 +90184,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Vce.runtime = nt, Vce.typeName = "aiserver.v1.FullSelfDrivingTeamSettings", Vce.fields = nt.util.newFieldList(() => [{
+    Kce.runtime = nt, Kce.typeName = "aiserver.v1.FullSelfDrivingTeamSettings", Kce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -90152,8 +90210,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let Hce = Vce;
-    const Kce = class e extends b {
+    let zce = Kce;
+    const Wce = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -90170,14 +90228,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Kce.runtime = nt, Kce.typeName = "aiserver.v1.GetFullSelfDrivingTeamSettingsRequest", Kce.fields = nt.util.newFieldList(() => [{
+    Wce.runtime = nt, Wce.typeName = "aiserver.v1.GetFullSelfDrivingTeamSettingsRequest", Wce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let zce = Kce;
-    const Wce = class e extends b {
+    let jce = Wce;
+    const Xce = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -90194,14 +90252,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Wce.runtime = nt, Wce.typeName = "aiserver.v1.GetFullSelfDrivingTeamSettingsResponse", Wce.fields = nt.util.newFieldList(() => [{
+    Xce.runtime = nt, Xce.typeName = "aiserver.v1.GetFullSelfDrivingTeamSettingsResponse", Xce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "settings",
         kind: "message",
-        T: Hce
+        T: zce
     }]);
-    let jce = Wce;
-    const Xce = class e extends b {
+    let $ce = Xce;
+    const Qce = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -90218,7 +90276,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Xce.runtime = nt, Xce.typeName = "aiserver.v1.UpdateFullSelfDrivingTeamSettingsRequest", Xce.fields = nt.util.newFieldList(() => [{
+    Qce.runtime = nt, Qce.typeName = "aiserver.v1.UpdateFullSelfDrivingTeamSettingsRequest", Qce.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -90248,8 +90306,8 @@
         T: 8,
         opt: !0
     }]);
-    let $ce = Xce;
-    const Qce = class e extends b {
+    let Zce = Qce;
+    const ede = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -90266,14 +90324,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Qce.runtime = nt, Qce.typeName = "aiserver.v1.UpdateFullSelfDrivingTeamSettingsResponse", Qce.fields = nt.util.newFieldList(() => [{
+    ede.runtime = nt, ede.typeName = "aiserver.v1.UpdateFullSelfDrivingTeamSettingsResponse", ede.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "settings",
         kind: "message",
-        T: Hce
+        T: zce
     }]);
-    let Zce = Qce;
-    const ede = class e extends b {
+    let tde = ede;
+    const nde = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.scmProvider = 0, this.scmRepoNodeId = "", this.repoUrl = "", this.enabled = !1, nt.util.initPartial(e, this)
         }
@@ -90290,7 +90348,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ede.runtime = nt, ede.typeName = "aiserver.v1.FullSelfDrivingTeamRepoSetting", ede.fields = nt.util.newFieldList(() => [{
+    nde.runtime = nt, nde.typeName = "aiserver.v1.FullSelfDrivingTeamRepoSetting", nde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -90322,8 +90380,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let tde = ede;
-    const nde = class e extends b {
+    let rde = nde;
+    const sde = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -90340,14 +90398,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nde.runtime = nt, nde.typeName = "aiserver.v1.ListFullSelfDrivingTeamRepoSettingsRequest", nde.fields = nt.util.newFieldList(() => [{
+    sde.runtime = nt, sde.typeName = "aiserver.v1.ListFullSelfDrivingTeamRepoSettingsRequest", sde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let rde = nde;
-    const sde = class e extends b {
+    let ide = sde;
+    const ade = class e extends b {
         constructor(e) {
             super(), this.repos = [], nt.util.initPartial(e, this)
         }
@@ -90364,15 +90422,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sde.runtime = nt, sde.typeName = "aiserver.v1.ListFullSelfDrivingTeamRepoSettingsResponse", sde.fields = nt.util.newFieldList(() => [{
+    ade.runtime = nt, ade.typeName = "aiserver.v1.ListFullSelfDrivingTeamRepoSettingsResponse", ade.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "repos",
         kind: "message",
-        T: tde,
+        T: rde,
         repeated: !0
     }]);
-    let ide = sde;
-    const ade = class e extends b {
+    let ode = ade;
+    const lde = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.scmProvider = 0, this.scmRepoNodeId = "", this.repoUrl = "", this.enabled = !1, nt.util.initPartial(e, this)
         }
@@ -90389,7 +90447,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ade.runtime = nt, ade.typeName = "aiserver.v1.SetFullSelfDrivingTeamRepoEnabledRequest", ade.fields = nt.util.newFieldList(() => [{
+    lde.runtime = nt, lde.typeName = "aiserver.v1.SetFullSelfDrivingTeamRepoEnabledRequest", lde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -90421,8 +90479,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let ode = ade;
-    const lde = class e extends b {
+    let ude = lde;
+    const mde = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -90439,14 +90497,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lde.runtime = nt, lde.typeName = "aiserver.v1.SetFullSelfDrivingTeamRepoEnabledResponse", lde.fields = nt.util.newFieldList(() => [{
+    mde.runtime = nt, mde.typeName = "aiserver.v1.SetFullSelfDrivingTeamRepoEnabledResponse", mde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "repo",
         kind: "message",
-        T: tde
+        T: rde
     }]);
-    let ude = lde;
-    const mde = class e extends b {
+    let cde = mde;
+    const dde = class e extends b {
         constructor(e) {
             super(), this.prUrl = "", this.repoUrl = "", this.pullNumber = 0, this.bcId = "", this.enabled = !1, this.mode = No.UNSPECIFIED, this.ownerUserId = 0, nt.util.initPartial(e, this)
         }
@@ -90463,7 +90521,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mde.runtime = nt, mde.typeName = "aiserver.v1.FullSelfDrivingActiveAgent", mde.fields = nt.util.newFieldList(() => [{
+    dde.runtime = nt, dde.typeName = "aiserver.v1.FullSelfDrivingActiveAgent", dde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -90529,8 +90587,8 @@
         T: 5,
         opt: !0
     }]);
-    let cde = mde;
-    const dde = class e extends b {
+    let fde = dde;
+    const pde = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -90547,7 +90605,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dde.runtime = nt, dde.typeName = "aiserver.v1.ListFullSelfDrivingActiveAgentsRequest", dde.fields = nt.util.newFieldList(() => [{
+    pde.runtime = nt, pde.typeName = "aiserver.v1.ListFullSelfDrivingActiveAgentsRequest", pde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "search_query",
         kind: "scalar",
@@ -90572,8 +90630,8 @@
         T: 8,
         opt: !0
     }]);
-    let fde = dde;
-    const pde = class e extends b {
+    let gde = pde;
+    const Tde = class e extends b {
         constructor(e) {
             super(), this.agents = [], this.totalCount = 0, nt.util.initPartial(e, this)
         }
@@ -90590,11 +90648,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pde.runtime = nt, pde.typeName = "aiserver.v1.ListFullSelfDrivingActiveAgentsResponse", pde.fields = nt.util.newFieldList(() => [{
+    Tde.runtime = nt, Tde.typeName = "aiserver.v1.ListFullSelfDrivingActiveAgentsResponse", Tde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "agents",
         kind: "message",
-        T: cde,
+        T: fde,
         repeated: !0
     }, {
         no: 2,
@@ -90602,8 +90660,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let gde = pde;
-    const Tde = class e extends b {
+    let hde = Tde;
+    const _de = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -90620,7 +90678,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Tde.runtime = nt, Tde.typeName = "aiserver.v1.ListFullSelfDrivingTeamActiveAgentsRequest", Tde.fields = nt.util.newFieldList(() => [{
+    _de.runtime = nt, _de.typeName = "aiserver.v1.ListFullSelfDrivingTeamActiveAgentsRequest", _de.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -90650,8 +90708,8 @@
         T: 8,
         opt: !0
     }]);
-    let hde = Tde;
-    const _de = class e extends b {
+    let yde = _de;
+    const wde = class e extends b {
         constructor(e) {
             super(), this.agents = [], this.totalCount = 0, nt.util.initPartial(e, this)
         }
@@ -90668,11 +90726,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _de.runtime = nt, _de.typeName = "aiserver.v1.ListFullSelfDrivingTeamActiveAgentsResponse", _de.fields = nt.util.newFieldList(() => [{
+    wde.runtime = nt, wde.typeName = "aiserver.v1.ListFullSelfDrivingTeamActiveAgentsResponse", wde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "agents",
         kind: "message",
-        T: cde,
+        T: fde,
         repeated: !0
     }, {
         no: 2,
@@ -90680,8 +90738,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let yde = _de;
-    const wde = class e extends b {
+    let kde = wde;
+    const Sde = class e extends b {
         constructor(e) {
             super(), this.prUrl = "", nt.util.initPartial(e, this)
         }
@@ -90698,7 +90756,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wde.runtime = nt, wde.typeName = "aiserver.v1.UpdateFullSelfDrivingPrConfigRequest", wde.fields = nt.util.newFieldList(() => [{
+    Sde.runtime = nt, Sde.typeName = "aiserver.v1.UpdateFullSelfDrivingPrConfigRequest", Sde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -90722,30 +90780,6 @@
         T: 5,
         opt: !0
     }]);
-    let kde = wde;
-    const Sde = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    Sde.runtime = nt, Sde.typeName = "aiserver.v1.UpdateFullSelfDrivingPrConfigResponse", Sde.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "agent",
-        kind: "message",
-        T: cde
-    }]);
     let Jde = Sde;
     const vde = class e extends b {
         constructor(e) {
@@ -90764,9 +90798,33 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vde.runtime = nt, vde.typeName = "aiserver.v1.GetBugBotProUserSettingsRequest", vde.fields = nt.util.newFieldList(() => []);
+    vde.runtime = nt, vde.typeName = "aiserver.v1.UpdateFullSelfDrivingPrConfigResponse", vde.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "agent",
+        kind: "message",
+        T: fde
+    }]);
     let Ede = vde;
     const Nde = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    Nde.runtime = nt, Nde.typeName = "aiserver.v1.GetBugBotProUserSettingsRequest", Nde.fields = nt.util.newFieldList(() => []);
+    let Bde = Nde;
+    const Ide = class e extends b {
         constructor(e) {
             super(), this.enabled = !1, this.bugbotWasEnabledInThisBillingCycle = !1, this.bugbotUsageTier = 0, this.bugbotBillingMode = 0, this.canMigrateToUsageBased = !1, this.seatLicenseCount = 0, this.bugbotUsageBasedOnEnable = !1, this.bugbotMigrationCreditAlreadyGranted = !1, nt.util.initPartial(e, this)
         }
@@ -90783,7 +90841,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Nde.runtime = nt, Nde.typeName = "aiserver.v1.GetBugBotProUserSettingsResponse", Nde.fields = nt.util.newFieldList(() => [{
+    Ide.runtime = nt, Ide.typeName = "aiserver.v1.GetBugBotProUserSettingsResponse", Ide.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "enabled",
         kind: "scalar",
@@ -90824,8 +90882,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let Bde = Nde;
-    const Ide = class e extends b {
+    let Pde = Ide;
+    const qde = class e extends b {
         constructor(e) {
             super(), this.enabled = !1, nt.util.initPartial(e, this)
         }
@@ -90842,31 +90900,12 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ide.runtime = nt, Ide.typeName = "aiserver.v1.UpdateBugBotProUserSettingsRequest", Ide.fields = nt.util.newFieldList(() => [{
+    qde.runtime = nt, qde.typeName = "aiserver.v1.UpdateBugBotProUserSettingsRequest", qde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "enabled",
         kind: "scalar",
         T: 8
     }]);
-    let Pde = Ide;
-    const qde = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    qde.runtime = nt, qde.typeName = "aiserver.v1.UpdateBugBotProUserSettingsResponse", qde.fields = nt.util.newFieldList(() => []);
     let Rde = qde;
     const Lde = class e extends b {
         constructor(e) {
@@ -90885,7 +90924,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Lde.runtime = nt, Lde.typeName = "aiserver.v1.MigrateBugBotProUserToUsageBasedBillingRequest", Lde.fields = nt.util.newFieldList(() => []);
+    Lde.runtime = nt, Lde.typeName = "aiserver.v1.UpdateBugBotProUserSettingsResponse", Lde.fields = nt.util.newFieldList(() => []);
     let Fde = Lde;
     const Ode = class e extends b {
         constructor(e) {
@@ -90904,7 +90943,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ode.runtime = nt, Ode.typeName = "aiserver.v1.MigrateBugBotProUserToUsageBasedBillingResponse", Ode.fields = nt.util.newFieldList(() => []);
+    Ode.runtime = nt, Ode.typeName = "aiserver.v1.MigrateBugBotProUserToUsageBasedBillingRequest", Ode.fields = nt.util.newFieldList(() => []);
     let bde = Ode;
     const Cde = class e extends b {
         constructor(e) {
@@ -90923,9 +90962,28 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Cde.runtime = nt, Cde.typeName = "aiserver.v1.GetGlassEarlyPreviewEnrollmentRequest", Cde.fields = nt.util.newFieldList(() => []);
+    Cde.runtime = nt, Cde.typeName = "aiserver.v1.MigrateBugBotProUserToUsageBasedBillingResponse", Cde.fields = nt.util.newFieldList(() => []);
     let Ude = Cde;
     const Ade = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    Ade.runtime = nt, Ade.typeName = "aiserver.v1.GetGlassEarlyPreviewEnrollmentRequest", Ade.fields = nt.util.newFieldList(() => []);
+    let xde = Ade;
+    const Dde = class e extends b {
         constructor(e) {
             super(), this.enabled = !1, nt.util.initPartial(e, this)
         }
@@ -90942,7 +91000,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ade.runtime = nt, Ade.typeName = "aiserver.v1.GetGlassEarlyPreviewEnrollmentResponse", Ade.fields = nt.util.newFieldList(() => [{
+    Dde.runtime = nt, Dde.typeName = "aiserver.v1.GetGlassEarlyPreviewEnrollmentResponse", Dde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "enabled",
         kind: "scalar",
@@ -90960,25 +91018,6 @@
         T: 8,
         opt: !0
     }]);
-    let xde = Ade;
-    const Dde = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    Dde.runtime = nt, Dde.typeName = "aiserver.v1.EnrollInGlassEarlyPreviewRequest", Dde.fields = nt.util.newFieldList(() => []);
     let Mde = Dde;
     const Gde = class e extends b {
         constructor(e) {
@@ -90997,7 +91036,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Gde.runtime = nt, Gde.typeName = "aiserver.v1.EnrollInGlassEarlyPreviewResponse", Gde.fields = nt.util.newFieldList(() => []);
+    Gde.runtime = nt, Gde.typeName = "aiserver.v1.EnrollInGlassEarlyPreviewRequest", Gde.fields = nt.util.newFieldList(() => []);
     let Yde = Gde;
     const Vde = class e extends b {
         constructor(e) {
@@ -91016,7 +91055,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Vde.runtime = nt, Vde.typeName = "aiserver.v1.UnenrollFromGlassEarlyPreviewRequest", Vde.fields = nt.util.newFieldList(() => []);
+    Vde.runtime = nt, Vde.typeName = "aiserver.v1.EnrollInGlassEarlyPreviewResponse", Vde.fields = nt.util.newFieldList(() => []);
     let Hde = Vde;
     const Kde = class e extends b {
         constructor(e) {
@@ -91035,9 +91074,28 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Kde.runtime = nt, Kde.typeName = "aiserver.v1.UnenrollFromGlassEarlyPreviewResponse", Kde.fields = nt.util.newFieldList(() => []);
+    Kde.runtime = nt, Kde.typeName = "aiserver.v1.UnenrollFromGlassEarlyPreviewRequest", Kde.fields = nt.util.newFieldList(() => []);
     let zde = Kde;
     const Wde = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    Wde.runtime = nt, Wde.typeName = "aiserver.v1.UnenrollFromGlassEarlyPreviewResponse", Wde.fields = nt.util.newFieldList(() => []);
+    let jde = Wde;
+    const Xde = class e extends b {
         constructor(e) {
             super(), this.bugId = "", this.event = 0, nt.util.initPartial(e, this)
         }
@@ -91054,7 +91112,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Wde.runtime = nt, Wde.typeName = "aiserver.v1.RecordBugbotDeeplinkEventRequest", Wde.fields = nt.util.newFieldList(() => [{
+    Xde.runtime = nt, Xde.typeName = "aiserver.v1.RecordBugbotDeeplinkEventRequest", Xde.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "bug_id",
         kind: "scalar",
@@ -91063,7 +91121,7 @@
         no: 2,
         name: "event",
         kind: "enum",
-        T: nt.getEnumType(Xde)
+        T: nt.getEnumType(Qde)
     }, {
         no: 3,
         name: "comment_id",
@@ -91071,9 +91129,9 @@
         T: 9,
         opt: !0
     }]);
-    let jde = Wde;
-    var Xde = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CLICKED = 1] = "CLICKED", e[e.HANDLED_DIALOG_SHOWN = 2] = "HANDLED_DIALOG_SHOWN", e[e.HANDLED_CHAT_CREATED = 3] = "HANDLED_CHAT_CREATED", e[e.ERROR = 4] = "ERROR", e[e.HANDLED_FIX_IN_WEB = 5] = "HANDLED_FIX_IN_WEB", e))(Xde || {});
-    nt.util.setEnumType(Xde, "aiserver.v1.RecordBugbotDeeplinkEventRequest.BugbotDeeplinkEvent", [{
+    let $de = Xde;
+    var Qde = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CLICKED = 1] = "CLICKED", e[e.HANDLED_DIALOG_SHOWN = 2] = "HANDLED_DIALOG_SHOWN", e[e.HANDLED_CHAT_CREATED = 3] = "HANDLED_CHAT_CREATED", e[e.ERROR = 4] = "ERROR", e[e.HANDLED_FIX_IN_WEB = 5] = "HANDLED_FIX_IN_WEB", e))(Qde || {});
+    nt.util.setEnumType(Qde, "aiserver.v1.RecordBugbotDeeplinkEventRequest.BugbotDeeplinkEvent", [{
         no: 0,
         name: "BUGBOT_DEEPLINK_EVENT_UNSPECIFIED"
     }, {
@@ -91092,7 +91150,7 @@
         no: 5,
         name: "BUGBOT_DEEPLINK_EVENT_HANDLED_FIX_IN_WEB"
     }]);
-    const $de = class e extends b {
+    const Zde = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -91109,9 +91167,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    $de.runtime = nt, $de.typeName = "aiserver.v1.RecordBugbotDeeplinkEventResponse", $de.fields = nt.util.newFieldList(() => []);
-    let Qde = $de;
-    const Zde = class e extends b {
+    Zde.runtime = nt, Zde.typeName = "aiserver.v1.RecordBugbotDeeplinkEventResponse", Zde.fields = nt.util.newFieldList(() => []);
+    let efe = Zde;
+    const tfe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -91128,7 +91186,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Zde.runtime = nt, Zde.typeName = "aiserver.v1.GetFilteredUsageEventsRequest", Zde.fields = nt.util.newFieldList(() => [{
+    tfe.runtime = nt, tfe.typeName = "aiserver.v1.GetFilteredUsageEventsRequest", tfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -91200,8 +91258,8 @@
         T: 9,
         opt: !0
     }]);
-    let efe = Zde;
-    const tfe = class e extends b {
+    let nfe = tfe;
+    const rfe = class e extends b {
         constructor(e) {
             super(), this.usageEvents = [], this.totalUsageEventsCount = 0, this.usageEventsDisplay = [], nt.util.initPartial(e, this)
         }
@@ -91218,7 +91276,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    tfe.runtime = nt, tfe.typeName = "aiserver.v1.GetFilteredUsageEventsResponse", tfe.fields = nt.util.newFieldList(() => [{
+    rfe.runtime = nt, rfe.typeName = "aiserver.v1.GetFilteredUsageEventsResponse", rfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "usage_events",
         kind: "message",
@@ -91236,8 +91294,8 @@
         T: _s,
         repeated: !0
     }]);
-    let nfe = tfe;
-    const rfe = class e extends b {
+    let sfe = rfe;
+    const ife = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -91254,7 +91312,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    rfe.runtime = nt, rfe.typeName = "aiserver.v1.GetAggregatedUsageEventsRequest", rfe.fields = nt.util.newFieldList(() => [{
+    ife.runtime = nt, ife.typeName = "aiserver.v1.GetAggregatedUsageEventsRequest", ife.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -91278,8 +91336,8 @@
         T: 5,
         opt: !0
     }]);
-    let sfe = rfe;
-    const ife = class e extends b {
+    let afe = ife;
+    const ofe = class e extends b {
         constructor(e) {
             super(), this.aggregations = [], this.totalInputTokens = K.zero, this.totalOutputTokens = K.zero, this.totalCacheWriteTokens = K.zero, this.totalCacheReadTokens = K.zero, this.totalCostCents = 0, this.percentOfBurstUsed = 0, nt.util.initPartial(e, this)
         }
@@ -91296,11 +91354,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ife.runtime = nt, ife.typeName = "aiserver.v1.GetAggregatedUsageEventsResponse", ife.fields = nt.util.newFieldList(() => [{
+    ofe.runtime = nt, ofe.typeName = "aiserver.v1.GetAggregatedUsageEventsResponse", ofe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "aggregations",
         kind: "message",
-        T: lfe,
+        T: mfe,
         repeated: !0
     }, {
         no: 2,
@@ -91339,8 +91397,8 @@
         T: 1,
         opt: !0
     }]);
-    let afe = ife;
-    const ofe = class e extends b {
+    let lfe = ofe;
+    const ufe = class e extends b {
         constructor(e) {
             super(), this.modelIntent = "", this.inputTokens = K.zero, this.outputTokens = K.zero, this.cacheWriteTokens = K.zero, this.cacheReadTokens = K.zero, this.totalCents = 0, nt.util.initPartial(e, this)
         }
@@ -91357,7 +91415,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ofe.runtime = nt, ofe.typeName = "aiserver.v1.GetAggregatedUsageEventsResponse.ModelUsageAggregation", ofe.fields = nt.util.newFieldList(() => [{
+    ufe.runtime = nt, ufe.typeName = "aiserver.v1.GetAggregatedUsageEventsResponse.ModelUsageAggregation", ufe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "model_intent",
         kind: "scalar",
@@ -91400,8 +91458,8 @@
         T: 5,
         opt: !0
     }]);
-    let lfe = ofe;
-    const ufe = class e extends b {
+    let mfe = ufe;
+    const cfe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -91418,7 +91476,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ufe.runtime = nt, ufe.typeName = "aiserver.v1.GetAuditLogsRequest", ufe.fields = nt.util.newFieldList(() => [{
+    cfe.runtime = nt, cfe.typeName = "aiserver.v1.GetAuditLogsRequest", cfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -91461,8 +91519,8 @@
         T: 5,
         opt: !0
     }]);
-    let mfe = ufe;
-    const cfe = class e extends b {
+    let dfe = cfe;
+    const ffe = class e extends b {
         constructor(e) {
             super(), this.events = [], this.totalCount = 0, nt.util.initPartial(e, this)
         }
@@ -91479,11 +91537,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    cfe.runtime = nt, cfe.typeName = "aiserver.v1.GetAuditLogsResponse", cfe.fields = nt.util.newFieldList(() => [{
+    ffe.runtime = nt, ffe.typeName = "aiserver.v1.GetAuditLogsResponse", ffe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "events",
         kind: "message",
-        T: pfe,
+        T: Tfe,
         repeated: !0
     }, {
         no: 2,
@@ -91491,8 +91549,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let dfe = cfe;
-    const ffe = class e extends b {
+    let pfe = ffe;
+    const gfe = class e extends b {
         constructor(e) {
             super(), this.id = K.zero, this.createdAt = "", this.eventId = "", this.timestamp = "", this.requestId = "", this.authId = "", this.ghostMode = !1, this.teamId = "", this.ipAddress = "", this.userEmail = "", this.eventType = "", this.eventData = "", nt.util.initPartial(e, this)
         }
@@ -91509,7 +91567,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ffe.runtime = nt, ffe.typeName = "aiserver.v1.AuditLogEvent", ffe.fields = nt.util.newFieldList(() => [{
+    gfe.runtime = nt, gfe.typeName = "aiserver.v1.AuditLogEvent", gfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -91570,8 +91628,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let pfe = ffe;
-    const gfe = class e extends b {
+    let Tfe = gfe;
+    const hfe = class e extends b {
         constructor(e) {
             super(), this.inviteCode = "", nt.util.initPartial(e, this)
         }
@@ -91588,14 +91646,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    gfe.runtime = nt, gfe.typeName = "aiserver.v1.RevokeTeamInviteLinkRequest", gfe.fields = nt.util.newFieldList(() => [{
+    hfe.runtime = nt, hfe.typeName = "aiserver.v1.RevokeTeamInviteLinkRequest", hfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "invite_code",
         kind: "scalar",
         T: 9
     }]);
-    let Tfe = gfe;
-    const hfe = class e extends b {
+    let _fe = hfe;
+    const yfe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -91612,9 +91670,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    hfe.runtime = nt, hfe.typeName = "aiserver.v1.RevokeTeamInviteLinkResponse", hfe.fields = nt.util.newFieldList(() => []);
-    let _fe = hfe;
-    const yfe = class e extends b {
+    yfe.runtime = nt, yfe.typeName = "aiserver.v1.RevokeTeamInviteLinkResponse", yfe.fields = nt.util.newFieldList(() => []);
+    let wfe = yfe;
+    const kfe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -91631,14 +91689,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    yfe.runtime = nt, yfe.typeName = "aiserver.v1.ListTeamInviteLinksRequest", yfe.fields = nt.util.newFieldList(() => [{
+    kfe.runtime = nt, kfe.typeName = "aiserver.v1.ListTeamInviteLinksRequest", kfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let wfe = yfe;
-    const kfe = class e extends b {
+    let Sfe = kfe;
+    const Jfe = class e extends b {
         constructor(e) {
             super(), this.inviteLink = "", this.validUntil = K.zero, nt.util.initPartial(e, this)
         }
@@ -91655,7 +91713,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    kfe.runtime = nt, kfe.typeName = "aiserver.v1.InviteLinkInfo", kfe.fields = nt.util.newFieldList(() => [{
+    Jfe.runtime = nt, Jfe.typeName = "aiserver.v1.InviteLinkInfo", Jfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "invite_link",
         kind: "scalar",
@@ -91666,8 +91724,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Sfe = kfe;
-    const Jfe = class e extends b {
+    let vfe = Jfe;
+    const Efe = class e extends b {
         constructor(e) {
             super(), this.inviteLinks = [], nt.util.initPartial(e, this)
         }
@@ -91684,15 +91742,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Jfe.runtime = nt, Jfe.typeName = "aiserver.v1.ListTeamInviteLinksResponse", Jfe.fields = nt.util.newFieldList(() => [{
+    Efe.runtime = nt, Efe.typeName = "aiserver.v1.ListTeamInviteLinksResponse", Efe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "invite_links",
         kind: "message",
-        T: Sfe,
+        T: vfe,
         repeated: !0
     }]);
-    let vfe = Jfe;
-    const Efe = class e extends b {
+    let Nfe = Efe;
+    const Bfe = class e extends b {
         constructor(e) {
             super(), this.firstName = "", this.lastName = "", nt.util.initPartial(e, this)
         }
@@ -91709,7 +91767,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Efe.runtime = nt, Efe.typeName = "aiserver.v1.UpdateUserNameRequest", Efe.fields = nt.util.newFieldList(() => [{
+    Bfe.runtime = nt, Bfe.typeName = "aiserver.v1.UpdateUserNameRequest", Bfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "first_name",
         kind: "scalar",
@@ -91720,8 +91778,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Nfe = Efe;
-    const Bfe = class e extends b {
+    let Ife = Bfe;
+    const Pfe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -91738,9 +91796,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Bfe.runtime = nt, Bfe.typeName = "aiserver.v1.UpdateUserNameResponse", Bfe.fields = nt.util.newFieldList(() => []);
-    let Ife = Bfe;
-    const Pfe = class e extends b {
+    Pfe.runtime = nt, Pfe.typeName = "aiserver.v1.UpdateUserNameResponse", Pfe.fields = nt.util.newFieldList(() => []);
+    let qfe = Pfe;
+    const Rfe = class e extends b {
         constructor(e) {
             super(), this.contentType = "", this.bytes = new Uint8Array(0), nt.util.initPartial(e, this)
         }
@@ -91757,7 +91815,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Pfe.runtime = nt, Pfe.typeName = "aiserver.v1.UploadUserProfilePictureRequest", Pfe.fields = nt.util.newFieldList(() => [{
+    Rfe.runtime = nt, Rfe.typeName = "aiserver.v1.UploadUserProfilePictureRequest", Rfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "content_type",
         kind: "scalar",
@@ -91768,8 +91826,8 @@
         kind: "scalar",
         T: 12
     }]);
-    let qfe = Pfe;
-    const Rfe = class e extends b {
+    let Lfe = Rfe;
+    const Ffe = class e extends b {
         constructor(e) {
             super(), this.profilePictureUrl = "", nt.util.initPartial(e, this)
         }
@@ -91786,36 +91844,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Rfe.runtime = nt, Rfe.typeName = "aiserver.v1.UploadUserProfilePictureResponse", Rfe.fields = nt.util.newFieldList(() => [{
+    Ffe.runtime = nt, Ffe.typeName = "aiserver.v1.UploadUserProfilePictureResponse", Ffe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "profile_picture_url",
         kind: "scalar",
         T: 9
-    }]);
-    let Lfe = Rfe;
-    const Ffe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    Ffe.runtime = nt, Ffe.typeName = "aiserver.v1.UpdateUserProfilePictureRequest", Ffe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "profile_picture_url",
-        kind: "scalar",
-        T: 9,
-        opt: !0
     }]);
     let Ofe = Ffe;
     const bfe = class e extends b {
@@ -91835,7 +91868,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    bfe.runtime = nt, bfe.typeName = "aiserver.v1.UpdateUserProfilePictureResponse", bfe.fields = nt.util.newFieldList(() => [{
+    bfe.runtime = nt, bfe.typeName = "aiserver.v1.UpdateUserProfilePictureRequest", bfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "profile_picture_url",
         kind: "scalar",
@@ -91860,7 +91893,32 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ufe.runtime = nt, Ufe.typeName = "aiserver.v1.ListInvoicesRequest", Ufe.fields = nt.util.newFieldList(() => [{
+    Ufe.runtime = nt, Ufe.typeName = "aiserver.v1.UpdateUserProfilePictureResponse", Ufe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "profile_picture_url",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let Afe = Ufe;
+    const xfe = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    xfe.runtime = nt, xfe.typeName = "aiserver.v1.ListInvoicesRequest", xfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -91885,8 +91943,8 @@
         T: 9,
         opt: !0
     }]);
-    let Afe = Ufe;
-    const xfe = class e extends b {
+    let Dfe = xfe;
+    const Mfe = class e extends b {
         constructor(e) {
             super(), this.invoiceId = "", this.date = K.zero, this.amountCents = 0, this.currency = "", this.status = "", this.hostedInvoiceUrl = "", this.refundAmount = 0, this.description = "", this.isMidMonthInvoice = !1, nt.util.initPartial(e, this)
         }
@@ -91903,7 +91961,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    xfe.runtime = nt, xfe.typeName = "aiserver.v1.InvoiceInfo", xfe.fields = nt.util.newFieldList(() => [{
+    Mfe.runtime = nt, Mfe.typeName = "aiserver.v1.InvoiceInfo", Mfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "invoice_id",
         kind: "scalar",
@@ -91949,8 +92007,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let Dfe = xfe;
-    const Mfe = class e extends b {
+    let Gfe = Mfe;
+    const Yfe = class e extends b {
         constructor(e) {
             super(), this.invoices = [], this.total = 0, this.totalPages = 0, nt.util.initPartial(e, this)
         }
@@ -91967,11 +92025,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Mfe.runtime = nt, Mfe.typeName = "aiserver.v1.ListInvoicesResponse", Mfe.fields = nt.util.newFieldList(() => [{
+    Yfe.runtime = nt, Yfe.typeName = "aiserver.v1.ListInvoicesResponse", Yfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "invoices",
         kind: "message",
-        T: Dfe,
+        T: Gfe,
         repeated: !0
     }, {
         no: 2,
@@ -91990,8 +92048,8 @@
         T: 8,
         opt: !0
     }]);
-    let Gfe = Mfe;
-    const Yfe = class e extends b {
+    let Vfe = Yfe;
+    const Hfe = class e extends b {
         constructor(e) {
             super(), this.inferredPrivacyMode = Ir.UNSPECIFIED, nt.util.initPartial(e, this)
         }
@@ -92008,7 +92066,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Yfe.runtime = nt, Yfe.typeName = "aiserver.v1.GetUserPrivacyModeRequest", Yfe.fields = nt.util.newFieldList(() => [{
+    Hfe.runtime = nt, Hfe.typeName = "aiserver.v1.GetUserPrivacyModeRequest", Hfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "inferred_privacy_mode",
         kind: "enum",
@@ -92020,8 +92078,8 @@
         T: 5,
         opt: !0
     }]);
-    let Vfe = Yfe;
-    const Hfe = class e extends b {
+    let Kfe = Hfe;
+    const zfe = class e extends b {
         constructor(e) {
             super(), this.privacyMode = Ir.UNSPECIFIED, this.hoursRemainingInGracePeriod = 0, this.isEnforcedByTeam = !1, this.isNotMigratedToServerSourceOfTruth = !1, this.partnerDataShare = !1, this.hasAcknowledgedGracePeriodDisclaimer = !1, nt.util.initPartial(e, this)
         }
@@ -92038,7 +92096,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Hfe.runtime = nt, Hfe.typeName = "aiserver.v1.GetUserPrivacyModeResponse", Hfe.fields = nt.util.newFieldList(() => [{
+    zfe.runtime = nt, zfe.typeName = "aiserver.v1.GetUserPrivacyModeResponse", zfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "privacy_mode",
         kind: "enum",
@@ -92069,8 +92127,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let Kfe = Hfe;
-    const zfe = class e extends b {
+    let Wfe = zfe;
+    const jfe = class e extends b {
         constructor(e) {
             super(), this.privacyMode = Ir.UNSPECIFIED, nt.util.initPartial(e, this)
         }
@@ -92087,31 +92145,12 @@
             return nt.util.equals(e, t, n)
         }
     };
-    zfe.runtime = nt, zfe.typeName = "aiserver.v1.SetUserPrivacyModeRequest", zfe.fields = nt.util.newFieldList(() => [{
+    jfe.runtime = nt, jfe.typeName = "aiserver.v1.SetUserPrivacyModeRequest", jfe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "privacy_mode",
         kind: "enum",
         T: nt.getEnumType(Ir)
     }]);
-    let Wfe = zfe;
-    const jfe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    jfe.runtime = nt, jfe.typeName = "aiserver.v1.SetUserPrivacyModeResponse", jfe.fields = nt.util.newFieldList(() => []);
     let Xfe = jfe;
     const $fe = class e extends b {
         constructor(e) {
@@ -92130,7 +92169,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    $fe.runtime = nt, $fe.typeName = "aiserver.v1.WebAcknowledgeGracePeriodDisclaimerRequest", $fe.fields = nt.util.newFieldList(() => []);
+    $fe.runtime = nt, $fe.typeName = "aiserver.v1.SetUserPrivacyModeResponse", $fe.fields = nt.util.newFieldList(() => []);
     let Qfe = $fe;
     const Zfe = class e extends b {
         constructor(e) {
@@ -92149,7 +92188,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Zfe.runtime = nt, Zfe.typeName = "aiserver.v1.WebAcknowledgeGracePeriodDisclaimerResponse", Zfe.fields = nt.util.newFieldList(() => []);
+    Zfe.runtime = nt, Zfe.typeName = "aiserver.v1.WebAcknowledgeGracePeriodDisclaimerRequest", Zfe.fields = nt.util.newFieldList(() => []);
     let epe = Zfe;
     const tpe = class e extends b {
         constructor(e) {
@@ -92168,7 +92207,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    tpe.runtime = nt, tpe.typeName = "aiserver.v1.SkipPrivacyModeGracePeriodRequest", tpe.fields = nt.util.newFieldList(() => []);
+    tpe.runtime = nt, tpe.typeName = "aiserver.v1.WebAcknowledgeGracePeriodDisclaimerResponse", tpe.fields = nt.util.newFieldList(() => []);
     let npe = tpe;
     const rpe = class e extends b {
         constructor(e) {
@@ -92187,7 +92226,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    rpe.runtime = nt, rpe.typeName = "aiserver.v1.SkipPrivacyModeGracePeriodResponse", rpe.fields = nt.util.newFieldList(() => []);
+    rpe.runtime = nt, rpe.typeName = "aiserver.v1.SkipPrivacyModeGracePeriodRequest", rpe.fields = nt.util.newFieldList(() => []);
     let spe = rpe;
     const ipe = class e extends b {
         constructor(e) {
@@ -92206,9 +92245,28 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ipe.runtime = nt, ipe.typeName = "aiserver.v1.NeedsPrivacyModeMigrationRequest", ipe.fields = nt.util.newFieldList(() => []);
+    ipe.runtime = nt, ipe.typeName = "aiserver.v1.SkipPrivacyModeGracePeriodResponse", ipe.fields = nt.util.newFieldList(() => []);
     let ape = ipe;
     const ope = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    ope.runtime = nt, ope.typeName = "aiserver.v1.NeedsPrivacyModeMigrationRequest", ope.fields = nt.util.newFieldList(() => []);
+    let lpe = ope;
+    const upe = class e extends b {
         constructor(e) {
             super(), this.needsMigration = !1, nt.util.initPartial(e, this)
         }
@@ -92225,14 +92283,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ope.runtime = nt, ope.typeName = "aiserver.v1.NeedsPrivacyModeMigrationResponse", ope.fields = nt.util.newFieldList(() => [{
+    upe.runtime = nt, upe.typeName = "aiserver.v1.NeedsPrivacyModeMigrationResponse", upe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "needs_migration",
         kind: "scalar",
         T: 8
     }]);
-    let lpe = ope;
-    const upe = class e extends b {
+    let mpe = upe;
+    const cpe = class e extends b {
         constructor(e) {
             super(), this.privacyMode = Ir.UNSPECIFIED, nt.util.initPartial(e, this)
         }
@@ -92249,13 +92307,13 @@
             return nt.util.equals(e, t, n)
         }
     };
-    upe.runtime = nt, upe.typeName = "aiserver.v1.SerializablePrivacyMode", upe.fields = nt.util.newFieldList(() => [{
+    cpe.runtime = nt, cpe.typeName = "aiserver.v1.SerializablePrivacyMode", cpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "privacy_mode",
         kind: "enum",
         T: nt.getEnumType(Ir)
     }]);
-    const mpe = class e extends b {
+    const dpe = class e extends b {
         constructor(e) {
             super(), this.privacyMode = Ir.UNSPECIFIED, this.isEnforcedByTeam = !1, nt.util.initPartial(e, this)
         }
@@ -92272,7 +92330,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mpe.runtime = nt, mpe.typeName = "aiserver.v1.PrivacyModeCacheInfo", mpe.fields = nt.util.newFieldList(() => [{
+    dpe.runtime = nt, dpe.typeName = "aiserver.v1.PrivacyModeCacheInfo", dpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "privacy_mode",
         kind: "enum",
@@ -92283,7 +92341,7 @@
         kind: "scalar",
         T: 8
     }]);
-    const cpe = class e extends b {
+    const fpe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -92300,9 +92358,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    cpe.runtime = nt, cpe.typeName = "aiserver.v1.GetRemainingRefundsRequest", cpe.fields = nt.util.newFieldList(() => []);
-    let dpe = cpe;
-    const fpe = class e extends b {
+    fpe.runtime = nt, fpe.typeName = "aiserver.v1.GetRemainingRefundsRequest", fpe.fields = nt.util.newFieldList(() => []);
+    let ppe = fpe;
+    const gpe = class e extends b {
         constructor(e) {
             super(), this.remainingRefunds = 0, nt.util.initPartial(e, this)
         }
@@ -92319,14 +92377,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    fpe.runtime = nt, fpe.typeName = "aiserver.v1.GetRemainingRefundsResponse", fpe.fields = nt.util.newFieldList(() => [{
+    gpe.runtime = nt, gpe.typeName = "aiserver.v1.GetRemainingRefundsResponse", gpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "remaining_refunds",
         kind: "scalar",
         T: 5
     }]);
-    let ppe = fpe;
-    const gpe = class e extends b {
+    let Tpe = gpe;
+    const hpe = class e extends b {
         constructor(e) {
             super(), this.serviceType = "", nt.util.initPartial(e, this)
         }
@@ -92343,7 +92401,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    gpe.runtime = nt, gpe.typeName = "aiserver.v1.GetServiceAccountSpendLimitRequest", gpe.fields = nt.util.newFieldList(() => [{
+    hpe.runtime = nt, hpe.typeName = "aiserver.v1.GetServiceAccountSpendLimitRequest", hpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -92355,8 +92413,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Tpe = gpe;
-    const hpe = class e extends b {
+    let _pe = hpe;
+    const ype = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -92373,7 +92431,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    hpe.runtime = nt, hpe.typeName = "aiserver.v1.GetServiceAccountSpendLimitResponse", hpe.fields = nt.util.newFieldList(() => [{
+    ype.runtime = nt, ype.typeName = "aiserver.v1.GetServiceAccountSpendLimitResponse", ype.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "spend_limit_cents",
         kind: "scalar",
@@ -92398,8 +92456,8 @@
         T: 3,
         opt: !0
     }]);
-    let _pe = hpe;
-    const ype = class e extends b {
+    let wpe = ype;
+    const kpe = class e extends b {
         constructor(e) {
             super(), this.serviceType = "", this.spendLimitCents = 0, nt.util.initPartial(e, this)
         }
@@ -92416,7 +92474,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ype.runtime = nt, ype.typeName = "aiserver.v1.SetServiceAccountSpendLimitRequest", ype.fields = nt.util.newFieldList(() => [{
+    kpe.runtime = nt, kpe.typeName = "aiserver.v1.SetServiceAccountSpendLimitRequest", kpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -92433,8 +92491,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let wpe = ype;
-    const kpe = class e extends b {
+    let Spe = kpe;
+    const Jpe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -92451,14 +92509,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    kpe.runtime = nt, kpe.typeName = "aiserver.v1.SetServiceAccountSpendLimitResponse", kpe.fields = nt.util.newFieldList(() => [{
+    Jpe.runtime = nt, Jpe.typeName = "aiserver.v1.SetServiceAccountSpendLimitResponse", Jpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let Spe = kpe;
-    const Jpe = class e extends b {
+    let vpe = Jpe;
+    const Epe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.userId = 0, this.hardLimitDollars = 0, nt.util.initPartial(e, this)
         }
@@ -92475,7 +92533,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Jpe.runtime = nt, Jpe.typeName = "aiserver.v1.SetUserHardLimitRequest", Jpe.fields = nt.util.newFieldList(() => [{
+    Epe.runtime = nt, Epe.typeName = "aiserver.v1.SetUserHardLimitRequest", Epe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -92491,8 +92549,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let vpe = Jpe;
-    const Epe = class e extends b {
+    let Npe = Epe;
+    const Bpe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -92509,9 +92567,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Epe.runtime = nt, Epe.typeName = "aiserver.v1.SetUserHardLimitResponse", Epe.fields = nt.util.newFieldList(() => []);
-    let Npe = Epe;
-    const Bpe = class e extends b {
+    Bpe.runtime = nt, Bpe.typeName = "aiserver.v1.SetUserHardLimitResponse", Bpe.fields = nt.util.newFieldList(() => []);
+    let Ipe = Bpe;
+    const Ppe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.userId = 0, this.monthlyLimitDollars = 0, nt.util.initPartial(e, this)
         }
@@ -92528,7 +92586,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Bpe.runtime = nt, Bpe.typeName = "aiserver.v1.SetUserMonthlyLimitRequest", Bpe.fields = nt.util.newFieldList(() => [{
+    Ppe.runtime = nt, Ppe.typeName = "aiserver.v1.SetUserMonthlyLimitRequest", Ppe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -92544,8 +92602,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Ipe = Bpe;
-    const Ppe = class e extends b {
+    let qpe = Ppe;
+    const Rpe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -92562,9 +92620,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ppe.runtime = nt, Ppe.typeName = "aiserver.v1.SetUserMonthlyLimitResponse", Ppe.fields = nt.util.newFieldList(() => []);
-    let qpe = Ppe;
-    const Rpe = class e extends b {
+    Rpe.runtime = nt, Rpe.typeName = "aiserver.v1.SetUserMonthlyLimitResponse", Rpe.fields = nt.util.newFieldList(() => []);
+    let Lpe = Rpe;
+    const Fpe = class e extends b {
         constructor(e) {
             super(), this.optOut = !1, nt.util.initPartial(e, this)
         }
@@ -92581,39 +92639,39 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Rpe.runtime = nt, Rpe.typeName = "aiserver.v1.ToggleMarketingEmailOptRequest", Rpe.fields = nt.util.newFieldList(() => [{
+    Fpe.runtime = nt, Fpe.typeName = "aiserver.v1.ToggleMarketingEmailOptRequest", Fpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "opt_out",
-        kind: "scalar",
-        T: 8
-    }]);
-    let Lpe = Rpe;
-    const Fpe = class e extends b {
-        constructor(e) {
-            super(), this.optedOut = !1, nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    Fpe.runtime = nt, Fpe.typeName = "aiserver.v1.ToggleMarketingEmailOptResponse", Fpe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "opted_out",
         kind: "scalar",
         T: 8
     }]);
     let Ope = Fpe;
     const bpe = class e extends b {
         constructor(e) {
+            super(), this.optedOut = !1, nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    bpe.runtime = nt, bpe.typeName = "aiserver.v1.ToggleMarketingEmailOptResponse", bpe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "opted_out",
+        kind: "scalar",
+        T: 8
+    }]);
+    let Cpe = bpe;
+    const Upe = class e extends b {
+        constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -92629,9 +92687,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    bpe.runtime = nt, bpe.typeName = "aiserver.v1.GetMarketingEmailOptRequest", bpe.fields = nt.util.newFieldList(() => []);
-    let Cpe = bpe;
-    const Upe = class e extends b {
+    Upe.runtime = nt, Upe.typeName = "aiserver.v1.GetMarketingEmailOptRequest", Upe.fields = nt.util.newFieldList(() => []);
+    let Ape = Upe;
+    const xpe = class e extends b {
         constructor(e) {
             super(), this.optedOut = !1, nt.util.initPartial(e, this)
         }
@@ -92648,31 +92706,12 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Upe.runtime = nt, Upe.typeName = "aiserver.v1.GetMarketingEmailOptResponse", Upe.fields = nt.util.newFieldList(() => [{
+    xpe.runtime = nt, xpe.typeName = "aiserver.v1.GetMarketingEmailOptResponse", xpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "opted_out",
         kind: "scalar",
         T: 8
     }]);
-    let Ape = Upe;
-    const xpe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    xpe.runtime = nt, xpe.typeName = "aiserver.v1.GetGlobalLeaderboardOptInRequest", xpe.fields = nt.util.newFieldList(() => []);
     let Dpe = xpe;
     const Mpe = class e extends b {
         constructor(e) {
@@ -92691,15 +92730,34 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Mpe.runtime = nt, Mpe.typeName = "aiserver.v1.GetGlobalLeaderboardOptInResponse", Mpe.fields = nt.util.newFieldList(() => [{
+    Mpe.runtime = nt, Mpe.typeName = "aiserver.v1.GetGlobalLeaderboardOptInRequest", Mpe.fields = nt.util.newFieldList(() => []);
+    let Gpe = Mpe;
+    const Ype = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    Ype.runtime = nt, Ype.typeName = "aiserver.v1.GetGlobalLeaderboardOptInResponse", Ype.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "opted_in",
         kind: "scalar",
         T: 8,
         opt: !0
     }]);
-    let Gpe = Mpe;
-    const Ype = class e extends b {
+    let Vpe = Ype;
+    const Hpe = class e extends b {
         constructor(e) {
             super(), this.optedIn = !1, nt.util.initPartial(e, this)
         }
@@ -92716,14 +92774,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ype.runtime = nt, Ype.typeName = "aiserver.v1.SetGlobalLeaderboardOptInRequest", Ype.fields = nt.util.newFieldList(() => [{
+    Hpe.runtime = nt, Hpe.typeName = "aiserver.v1.SetGlobalLeaderboardOptInRequest", Hpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "opted_in",
         kind: "scalar",
         T: 8
     }]);
-    let Vpe = Ype;
-    const Hpe = class e extends b {
+    let Kpe = Hpe;
+    const zpe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -92740,9 +92798,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Hpe.runtime = nt, Hpe.typeName = "aiserver.v1.SetGlobalLeaderboardOptInResponse", Hpe.fields = nt.util.newFieldList(() => []);
-    let Kpe = Hpe;
-    const zpe = class e extends b {
+    zpe.runtime = nt, zpe.typeName = "aiserver.v1.SetGlobalLeaderboardOptInResponse", zpe.fields = nt.util.newFieldList(() => []);
+    let Wpe = zpe;
+    const jpe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.newName = "", nt.util.initPartial(e, this)
         }
@@ -92759,7 +92817,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    zpe.runtime = nt, zpe.typeName = "aiserver.v1.UpdateTeamNameRequest", zpe.fields = nt.util.newFieldList(() => [{
+    jpe.runtime = nt, jpe.typeName = "aiserver.v1.UpdateTeamNameRequest", jpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -92770,8 +92828,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Wpe = zpe;
-    const jpe = class e extends b {
+    let Xpe = jpe;
+    const $pe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -92788,9 +92846,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    jpe.runtime = nt, jpe.typeName = "aiserver.v1.UpdateTeamNameResponse", jpe.fields = nt.util.newFieldList(() => []);
-    let Xpe = jpe;
-    const $pe = class e extends b {
+    $pe.runtime = nt, $pe.typeName = "aiserver.v1.UpdateTeamNameResponse", $pe.fields = nt.util.newFieldList(() => []);
+    let Qpe = $pe;
+    const Zpe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.dashboardAnalyticsRequiresAdmin = !1, nt.util.initPartial(e, this)
         }
@@ -92807,7 +92865,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    $pe.runtime = nt, $pe.typeName = "aiserver.v1.UpdateTeamDashboardAnalyticsSettingRequest", $pe.fields = nt.util.newFieldList(() => [{
+    Zpe.runtime = nt, Zpe.typeName = "aiserver.v1.UpdateTeamDashboardAnalyticsSettingRequest", Zpe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -92818,8 +92876,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let Qpe = $pe;
-    const Zpe = class e extends b {
+    let ege = Zpe;
+    const tge = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -92836,9 +92894,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Zpe.runtime = nt, Zpe.typeName = "aiserver.v1.UpdateTeamDashboardAnalyticsSettingResponse", Zpe.fields = nt.util.newFieldList(() => []);
-    let ege = Zpe;
-    const tge = class e extends b {
+    tge.runtime = nt, tge.typeName = "aiserver.v1.UpdateTeamDashboardAnalyticsSettingResponse", tge.fields = nt.util.newFieldList(() => []);
+    let nge = tge;
+    const rge = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.scimRequireUserDirectory = !1, nt.util.initPartial(e, this)
         }
@@ -92855,7 +92913,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    tge.runtime = nt, tge.typeName = "aiserver.v1.UpdateTeamScimRequireUserDirectorySettingRequest", tge.fields = nt.util.newFieldList(() => [{
+    rge.runtime = nt, rge.typeName = "aiserver.v1.UpdateTeamScimRequireUserDirectorySettingRequest", rge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -92866,8 +92924,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let nge = tge;
-    const rge = class e extends b {
+    let sge = rge;
+    const ige = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -92884,9 +92942,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    rge.runtime = nt, rge.typeName = "aiserver.v1.UpdateTeamScimRequireUserDirectorySettingResponse", rge.fields = nt.util.newFieldList(() => []);
-    let sge = rge;
-    const ige = class e extends b {
+    ige.runtime = nt, ige.typeName = "aiserver.v1.UpdateTeamScimRequireUserDirectorySettingResponse", ige.fields = nt.util.newFieldList(() => []);
+    let age = ige;
+    const oge = class e extends b {
         constructor(e) {
             super(), this.actor = 0, this.usePortalCallback = !1, nt.util.initPartial(e, this)
         }
@@ -92903,7 +92961,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ige.runtime = nt, ige.typeName = "aiserver.v1.GetLinearAuthUrlRequest", ige.fields = nt.util.newFieldList(() => [{
+    oge.runtime = nt, oge.typeName = "aiserver.v1.GetLinearAuthUrlRequest", oge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "actor",
         kind: "enum",
@@ -92914,8 +92972,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let age = ige;
-    const oge = class e extends b {
+    let lge = oge;
+    const uge = class e extends b {
         constructor(e) {
             super(), this.authUrl = "", this.csrfToken = "", nt.util.initPartial(e, this)
         }
@@ -92932,7 +92990,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    oge.runtime = nt, oge.typeName = "aiserver.v1.GetLinearAuthUrlResponse", oge.fields = nt.util.newFieldList(() => [{
+    uge.runtime = nt, uge.typeName = "aiserver.v1.GetLinearAuthUrlResponse", uge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "auth_url",
         kind: "scalar",
@@ -92943,8 +93001,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let lge = oge;
-    const uge = class e extends b {
+    let mge = uge;
+    const cge = class e extends b {
         constructor(e) {
             super(), this.code = "", this.state = "", nt.util.initPartial(e, this)
         }
@@ -92961,7 +93019,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    uge.runtime = nt, uge.typeName = "aiserver.v1.ConnectLinearCallbackRequest", uge.fields = nt.util.newFieldList(() => [{
+    cge.runtime = nt, cge.typeName = "aiserver.v1.ConnectLinearCallbackRequest", cge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "code",
         kind: "scalar",
@@ -92972,8 +93030,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let mge = uge;
-    const cge = class e extends b {
+    let dge = cge;
+    const fge = class e extends b {
         constructor(e) {
             super(), this.successType = "", nt.util.initPartial(e, this)
         }
@@ -92990,14 +93048,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    cge.runtime = nt, cge.typeName = "aiserver.v1.ConnectLinearCallbackResponse", cge.fields = nt.util.newFieldList(() => [{
+    fge.runtime = nt, fge.typeName = "aiserver.v1.ConnectLinearCallbackResponse", fge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success_type",
         kind: "scalar",
         T: 9
     }]);
-    let dge = cge;
-    const fge = class e extends b {
+    let pge = fge;
+    const gge = class e extends b {
         constructor(e) {
             super(), this.linkId = "", nt.util.initPartial(e, this)
         }
@@ -93014,14 +93072,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    fge.runtime = nt, fge.typeName = "aiserver.v1.GetMicrosoftTeamsLinkContextRequest", fge.fields = nt.util.newFieldList(() => [{
+    gge.runtime = nt, gge.typeName = "aiserver.v1.GetMicrosoftTeamsLinkContextRequest", gge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "link_id",
         kind: "scalar",
         T: 9
     }]);
-    let pge = fge;
-    const gge = class e extends b {
+    let Tge = gge;
+    const hge = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -93038,7 +93096,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    gge.runtime = nt, gge.typeName = "aiserver.v1.GetMicrosoftTeamsLinkContextResponse", gge.fields = nt.util.newFieldList(() => [{
+    hge.runtime = nt, hge.typeName = "aiserver.v1.GetMicrosoftTeamsLinkContextResponse", hge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_name",
         kind: "scalar",
@@ -93051,8 +93109,8 @@
         T: 9,
         opt: !0
     }]);
-    let Tge = gge;
-    const hge = class e extends b {
+    let _ge = hge;
+    const yge = class e extends b {
         constructor(e) {
             super(), this.linkId = "", nt.util.initPartial(e, this)
         }
@@ -93069,14 +93127,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    hge.runtime = nt, hge.typeName = "aiserver.v1.SetMicrosoftTeamsAuthRequest", hge.fields = nt.util.newFieldList(() => [{
+    yge.runtime = nt, yge.typeName = "aiserver.v1.SetMicrosoftTeamsAuthRequest", yge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "link_id",
         kind: "scalar",
         T: 9
     }]);
-    let _ge = hge;
-    const yge = class e extends b {
+    let wge = yge;
+    const kge = class e extends b {
         constructor(e) {
             super(), this.successType = "", nt.util.initPartial(e, this)
         }
@@ -93093,14 +93151,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    yge.runtime = nt, yge.typeName = "aiserver.v1.SetMicrosoftTeamsAuthResponse", yge.fields = nt.util.newFieldList(() => [{
+    kge.runtime = nt, kge.typeName = "aiserver.v1.SetMicrosoftTeamsAuthResponse", kge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success_type",
         kind: "scalar",
         T: 9
     }]);
-    let wge = yge;
-    const kge = class e extends b {
+    let Sge = kge;
+    const Jge = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -93117,9 +93175,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    kge.runtime = nt, kge.typeName = "aiserver.v1.GetLinearStatusRequest", kge.fields = nt.util.newFieldList(() => []);
-    let Sge = kge;
-    const Jge = class e extends b {
+    Jge.runtime = nt, Jge.typeName = "aiserver.v1.GetLinearStatusRequest", Jge.fields = nt.util.newFieldList(() => []);
+    let vge = Jge;
+    const Ege = class e extends b {
         constructor(e) {
             super(), this.status = "", this.autodraftingEnabled = !1, nt.util.initPartial(e, this)
         }
@@ -93136,7 +93194,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Jge.runtime = nt, Jge.typeName = "aiserver.v1.GetLinearStatusResponse", Jge.fields = nt.util.newFieldList(() => [{
+    Ege.runtime = nt, Ege.typeName = "aiserver.v1.GetLinearStatusResponse", Ege.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "status",
         kind: "scalar",
@@ -93147,25 +93205,6 @@
         kind: "scalar",
         T: 8
     }]);
-    let vge = Jge;
-    const Ege = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    Ege.runtime = nt, Ege.typeName = "aiserver.v1.DisconnectLinearRequest", Ege.fields = nt.util.newFieldList(() => []);
     let Nge = Ege;
     const Bge = class e extends b {
         constructor(e) {
@@ -93184,7 +93223,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Bge.runtime = nt, Bge.typeName = "aiserver.v1.DisconnectLinearResponse", Bge.fields = nt.util.newFieldList(() => []);
+    Bge.runtime = nt, Bge.typeName = "aiserver.v1.DisconnectLinearRequest", Bge.fields = nt.util.newFieldList(() => []);
     let Ige = Bge;
     const Pge = class e extends b {
         constructor(e) {
@@ -93203,9 +93242,28 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Pge.runtime = nt, Pge.typeName = "aiserver.v1.GetLinearTeamsRequest", Pge.fields = nt.util.newFieldList(() => []);
+    Pge.runtime = nt, Pge.typeName = "aiserver.v1.DisconnectLinearResponse", Pge.fields = nt.util.newFieldList(() => []);
     let qge = Pge;
     const Rge = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    Rge.runtime = nt, Rge.typeName = "aiserver.v1.GetLinearTeamsRequest", Rge.fields = nt.util.newFieldList(() => []);
+    let Lge = Rge;
+    const Fge = class e extends b {
         constructor(e) {
             super(), this.teams = [], nt.util.initPartial(e, this)
         }
@@ -93222,11 +93280,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Rge.runtime = nt, Rge.typeName = "aiserver.v1.GetLinearTeamsResponse", Rge.fields = nt.util.newFieldList(() => [{
+    Fge.runtime = nt, Fge.typeName = "aiserver.v1.GetLinearTeamsResponse", Fge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "teams",
         kind: "message",
-        T: Oge,
+        T: Cge,
         repeated: !0
     }, {
         no: 2,
@@ -93235,8 +93293,8 @@
         T: 9,
         opt: !0
     }]);
-    let Lge = Rge;
-    const Fge = class e extends b {
+    let Oge = Fge;
+    const bge = class e extends b {
         constructor(e) {
             super(), this.id = "", this.key = "", this.name = "", this.displayName = "", this.projects = [], this.labels = [], nt.util.initPartial(e, this)
         }
@@ -93253,7 +93311,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Fge.runtime = nt, Fge.typeName = "aiserver.v1.LinearTeam", Fge.fields = nt.util.newFieldList(() => [{
+    bge.runtime = nt, bge.typeName = "aiserver.v1.LinearTeam", bge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -93283,17 +93341,17 @@
         no: 6,
         name: "projects",
         kind: "message",
-        T: Cge,
+        T: Age,
         repeated: !0
     }, {
         no: 7,
         name: "labels",
         kind: "message",
-        T: eTe,
+        T: nTe,
         repeated: !0
     }]);
-    let Oge = Fge;
-    const bge = class e extends b {
+    let Cge = bge;
+    const Uge = class e extends b {
         constructor(e) {
             super(), this.id = "", this.name = "", nt.util.initPartial(e, this)
         }
@@ -93310,7 +93368,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    bge.runtime = nt, bge.typeName = "aiserver.v1.LinearProject", bge.fields = nt.util.newFieldList(() => [{
+    Uge.runtime = nt, Uge.typeName = "aiserver.v1.LinearProject", Uge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -93321,8 +93379,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Cge = bge;
-    const Uge = class e extends b {
+    let Age = Uge;
+    const xge = class e extends b {
         constructor(e) {
             super(), this.projectId = "", this.runOption = 0, this.conditions = "", nt.util.initPartial(e, this)
         }
@@ -93339,7 +93397,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Uge.runtime = nt, Uge.typeName = "aiserver.v1.LinearProjectSettings", Uge.fields = nt.util.newFieldList(() => [{
+    xge.runtime = nt, xge.typeName = "aiserver.v1.LinearProjectSettings", xge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "project_id",
         kind: "scalar",
@@ -93355,8 +93413,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Age = Uge;
-    const xge = class e extends b {
+    let Dge = xge;
+    const Mge = class e extends b {
         constructor(e) {
             super(), this.linearTeamId = "", this.defaultRunOption = 0, this.projectSettings = [], this.defaultConditions = "", this.labelFilterMode = 0, this.requiredLabelIds = [], nt.util.initPartial(e, this)
         }
@@ -93373,7 +93431,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    xge.runtime = nt, xge.typeName = "aiserver.v1.LinearTeamSettings", xge.fields = nt.util.newFieldList(() => [{
+    Mge.runtime = nt, Mge.typeName = "aiserver.v1.LinearTeamSettings", Mge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "linear_team_id",
         kind: "scalar",
@@ -93387,7 +93445,7 @@
         no: 3,
         name: "project_settings",
         kind: "message",
-        T: Age,
+        T: Dge,
         repeated: !0
     }, {
         no: 4,
@@ -93412,8 +93470,8 @@
         T: 5,
         opt: !0
     }]);
-    let Dge = xge;
-    const Mge = class e extends b {
+    let Gge = Mge;
+    const Yge = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -93430,15 +93488,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Mge.runtime = nt, Mge.typeName = "aiserver.v1.GetLinearSettingsRequest", Mge.fields = nt.util.newFieldList(() => [{
+    Yge.runtime = nt, Yge.typeName = "aiserver.v1.GetLinearSettingsRequest", Yge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5,
         opt: !0
     }]);
-    let Gge = Mge;
-    const Yge = class e extends b {
+    let Vge = Yge;
+    const Hge = class e extends b {
         constructor(e) {
             super(), this.teamSettings = [], this.isTeamSettings = !1, nt.util.initPartial(e, this)
         }
@@ -93455,11 +93513,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Yge.runtime = nt, Yge.typeName = "aiserver.v1.GetLinearSettingsResponse", Yge.fields = nt.util.newFieldList(() => [{
+    Hge.runtime = nt, Hge.typeName = "aiserver.v1.GetLinearSettingsResponse", Hge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_settings",
         kind: "message",
-        T: Dge,
+        T: Gge,
         repeated: !0
     }, {
         no: 2,
@@ -93467,8 +93525,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let Vge = Yge;
-    const Hge = class e extends b {
+    let Kge = Hge;
+    const zge = class e extends b {
         constructor(e) {
             super(), this.linearTeamId = "", this.defaultRunOption = 0, this.defaultConditions = "", this.labelFilterMode = 0, this.requiredLabelIds = [], nt.util.initPartial(e, this)
         }
@@ -93485,7 +93543,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Hge.runtime = nt, Hge.typeName = "aiserver.v1.UpdateLinearTeamSettingRequest", Hge.fields = nt.util.newFieldList(() => [{
+    zge.runtime = nt, zge.typeName = "aiserver.v1.UpdateLinearTeamSettingRequest", zge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -93524,8 +93582,8 @@
         T: 5,
         opt: !0
     }]);
-    let Kge = Hge;
-    const zge = class e extends b {
+    let Wge = zge;
+    const jge = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -93542,14 +93600,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    zge.runtime = nt, zge.typeName = "aiserver.v1.UpdateLinearTeamSettingResponse", zge.fields = nt.util.newFieldList(() => [{
+    jge.runtime = nt, jge.typeName = "aiserver.v1.UpdateLinearTeamSettingResponse", jge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let Wge = zge;
-    const jge = class e extends b {
+    let Xge = jge;
+    const $ge = class e extends b {
         constructor(e) {
             super(), this.linearTeamId = "", this.projectId = "", this.runOption = 0, this.conditions = "", nt.util.initPartial(e, this)
         }
@@ -93566,7 +93624,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    jge.runtime = nt, jge.typeName = "aiserver.v1.UpdateLinearProjectSettingRequest", jge.fields = nt.util.newFieldList(() => [{
+    $ge.runtime = nt, $ge.typeName = "aiserver.v1.UpdateLinearProjectSettingRequest", $ge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -93593,8 +93651,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Xge = jge;
-    const $ge = class e extends b {
+    let Qge = $ge;
+    const Zge = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -93611,14 +93669,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    $ge.runtime = nt, $ge.typeName = "aiserver.v1.UpdateLinearProjectSettingResponse", $ge.fields = nt.util.newFieldList(() => [{
+    Zge.runtime = nt, Zge.typeName = "aiserver.v1.UpdateLinearProjectSettingResponse", Zge.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let Qge = $ge;
-    const Zge = class e extends b {
+    let eTe = Zge;
+    const tTe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.name = "", nt.util.initPartial(e, this)
         }
@@ -93635,7 +93693,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Zge.runtime = nt, Zge.typeName = "aiserver.v1.LinearLabel", Zge.fields = nt.util.newFieldList(() => [{
+    tTe.runtime = nt, tTe.typeName = "aiserver.v1.LinearLabel", tTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -93652,8 +93710,8 @@
         T: 9,
         opt: !0
     }]);
-    let eTe = Zge;
-    const tTe = class e extends b {
+    let nTe = tTe;
+    const rTe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -93670,15 +93728,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    tTe.runtime = nt, tTe.typeName = "aiserver.v1.GetLinearLabelsRequest", tTe.fields = nt.util.newFieldList(() => [{
+    rTe.runtime = nt, rTe.typeName = "aiserver.v1.GetLinearLabelsRequest", rTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5,
         opt: !0
     }]);
-    let nTe = tTe;
-    const rTe = class e extends b {
+    let sTe = rTe;
+    const iTe = class e extends b {
         constructor(e) {
             super(), this.labels = [], nt.util.initPartial(e, this)
         }
@@ -93695,11 +93753,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    rTe.runtime = nt, rTe.typeName = "aiserver.v1.GetLinearLabelsResponse", rTe.fields = nt.util.newFieldList(() => [{
+    iTe.runtime = nt, iTe.typeName = "aiserver.v1.GetLinearLabelsResponse", iTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "labels",
         kind: "message",
-        T: eTe,
+        T: nTe,
         repeated: !0
     }, {
         no: 2,
@@ -93708,8 +93766,8 @@
         T: 9,
         opt: !0
     }]);
-    let sTe = rTe;
-    const iTe = class e extends b {
+    let aTe = iTe;
+    const oTe = class e extends b {
         constructor(e) {
             super(), this.orderBy = 0, nt.util.initPartial(e, this)
         }
@@ -93726,7 +93784,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    iTe.runtime = nt, iTe.typeName = "aiserver.v1.GetLinearIssuesRequest", iTe.fields = nt.util.newFieldList(() => [{
+    oTe.runtime = nt, oTe.typeName = "aiserver.v1.GetLinearIssuesRequest", oTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -93780,8 +93838,8 @@
         T: 8,
         opt: !0
     }]);
-    let aTe = iTe;
-    const oTe = class e extends b {
+    let lTe = oTe;
+    const uTe = class e extends b {
         constructor(e) {
             super(), this.issues = [], this.hasMore = !1, nt.util.initPartial(e, this)
         }
@@ -93798,11 +93856,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    oTe.runtime = nt, oTe.typeName = "aiserver.v1.GetLinearIssuesResponse", oTe.fields = nt.util.newFieldList(() => [{
+    uTe.runtime = nt, uTe.typeName = "aiserver.v1.GetLinearIssuesResponse", uTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "issues",
         kind: "message",
-        T: mTe,
+        T: dTe,
         repeated: !0
     }, {
         no: 2,
@@ -93822,8 +93880,8 @@
         T: 9,
         opt: !0
     }]);
-    let lTe = oTe;
-    const uTe = class e extends b {
+    let mTe = uTe;
+    const cTe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.identifier = "", this.title = "", this.labelIds = [], this.archived = !1, nt.util.initPartial(e, this)
         }
@@ -93840,7 +93898,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    uTe.runtime = nt, uTe.typeName = "aiserver.v1.LinearIssue", uTe.fields = nt.util.newFieldList(() => [{
+    cTe.runtime = nt, cTe.typeName = "aiserver.v1.LinearIssue", cTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -93951,8 +94009,8 @@
         T: 9,
         opt: !0
     }]);
-    let mTe = uTe;
-    const cTe = class e extends b {
+    let dTe = cTe;
+    const fTe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -93969,9 +94027,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    cTe.runtime = nt, cTe.typeName = "aiserver.v1.GetPagerDutyAuthUrlRequest", cTe.fields = nt.util.newFieldList(() => []);
-    let dTe = cTe;
-    const fTe = class e extends b {
+    fTe.runtime = nt, fTe.typeName = "aiserver.v1.GetPagerDutyAuthUrlRequest", fTe.fields = nt.util.newFieldList(() => []);
+    let pTe = fTe;
+    const gTe = class e extends b {
         constructor(e) {
             super(), this.authUrl = "", this.csrfToken = "", nt.util.initPartial(e, this)
         }
@@ -93988,7 +94046,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    fTe.runtime = nt, fTe.typeName = "aiserver.v1.GetPagerDutyAuthUrlResponse", fTe.fields = nt.util.newFieldList(() => [{
+    gTe.runtime = nt, gTe.typeName = "aiserver.v1.GetPagerDutyAuthUrlResponse", gTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "auth_url",
         kind: "scalar",
@@ -93999,8 +94057,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let pTe = fTe;
-    const gTe = class e extends b {
+    let TTe = gTe;
+    const hTe = class e extends b {
         constructor(e) {
             super(), this.code = "", this.state = "", nt.util.initPartial(e, this)
         }
@@ -94017,7 +94075,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    gTe.runtime = nt, gTe.typeName = "aiserver.v1.ConnectPagerDutyCallbackRequest", gTe.fields = nt.util.newFieldList(() => [{
+    hTe.runtime = nt, hTe.typeName = "aiserver.v1.ConnectPagerDutyCallbackRequest", hTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "code",
         kind: "scalar",
@@ -94028,8 +94086,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let TTe = gTe;
-    const hTe = class e extends b {
+    let _Te = hTe;
+    const yTe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -94046,14 +94104,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    hTe.runtime = nt, hTe.typeName = "aiserver.v1.ConnectPagerDutyCallbackResponse", hTe.fields = nt.util.newFieldList(() => [{
+    yTe.runtime = nt, yTe.typeName = "aiserver.v1.ConnectPagerDutyCallbackResponse", yTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let _Te = hTe;
-    const yTe = class e extends b {
+    let wTe = yTe;
+    const kTe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -94070,9 +94128,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    yTe.runtime = nt, yTe.typeName = "aiserver.v1.GetPagerDutyStatusRequest", yTe.fields = nt.util.newFieldList(() => []);
-    let wTe = yTe;
-    const kTe = class e extends b {
+    kTe.runtime = nt, kTe.typeName = "aiserver.v1.GetPagerDutyStatusRequest", kTe.fields = nt.util.newFieldList(() => []);
+    let STe = kTe;
+    const JTe = class e extends b {
         constructor(e) {
             super(), this.isConnected = !1, nt.util.initPartial(e, this)
         }
@@ -94089,7 +94147,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    kTe.runtime = nt, kTe.typeName = "aiserver.v1.GetPagerDutyStatusResponse", kTe.fields = nt.util.newFieldList(() => [{
+    JTe.runtime = nt, JTe.typeName = "aiserver.v1.GetPagerDutyStatusResponse", JTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "is_connected",
         kind: "scalar",
@@ -94107,8 +94165,8 @@
         T: 9,
         opt: !0
     }]);
-    let STe = kTe;
-    const JTe = class e extends b {
+    let vTe = JTe;
+    const ETe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -94125,9 +94183,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    JTe.runtime = nt, JTe.typeName = "aiserver.v1.GetPagerDutyServicesRequest", JTe.fields = nt.util.newFieldList(() => []);
-    let vTe = JTe;
-    const ETe = class e extends b {
+    ETe.runtime = nt, ETe.typeName = "aiserver.v1.GetPagerDutyServicesRequest", ETe.fields = nt.util.newFieldList(() => []);
+    let NTe = ETe;
+    const BTe = class e extends b {
         constructor(e) {
             super(), this.services = [], nt.util.initPartial(e, this)
         }
@@ -94144,15 +94202,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ETe.runtime = nt, ETe.typeName = "aiserver.v1.GetPagerDutyServicesResponse", ETe.fields = nt.util.newFieldList(() => [{
+    BTe.runtime = nt, BTe.typeName = "aiserver.v1.GetPagerDutyServicesResponse", BTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "services",
         kind: "message",
-        T: ITe,
+        T: qTe,
         repeated: !0
     }]);
-    let NTe = ETe;
-    const BTe = class e extends b {
+    let ITe = BTe;
+    const PTe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.name = "", this.description = "", this.status = "", nt.util.initPartial(e, this)
         }
@@ -94169,7 +94227,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    BTe.runtime = nt, BTe.typeName = "aiserver.v1.PagerDutyServiceInfo", BTe.fields = nt.util.newFieldList(() => [{
+    PTe.runtime = nt, PTe.typeName = "aiserver.v1.PagerDutyServiceInfo", PTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -94190,8 +94248,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let ITe = BTe;
-    const PTe = class e extends b {
+    let qTe = PTe;
+    const RTe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -94208,9 +94266,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    PTe.runtime = nt, PTe.typeName = "aiserver.v1.DisconnectPagerDutyRequest", PTe.fields = nt.util.newFieldList(() => []);
-    let qTe = PTe;
-    const RTe = class e extends b {
+    RTe.runtime = nt, RTe.typeName = "aiserver.v1.DisconnectPagerDutyRequest", RTe.fields = nt.util.newFieldList(() => []);
+    let LTe = RTe;
+    const FTe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -94227,14 +94285,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    RTe.runtime = nt, RTe.typeName = "aiserver.v1.DisconnectPagerDutyResponse", RTe.fields = nt.util.newFieldList(() => [{
+    FTe.runtime = nt, FTe.typeName = "aiserver.v1.DisconnectPagerDutyResponse", FTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let LTe = RTe;
-    const FTe = class e extends b {
+    let OTe = FTe;
+    const bTe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -94251,14 +94309,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    FTe.runtime = nt, FTe.typeName = "aiserver.v1.GetSlackUserSettingsRequest", FTe.fields = nt.util.newFieldList(() => [{
+    bTe.runtime = nt, bTe.typeName = "aiserver.v1.GetSlackUserSettingsRequest", bTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let OTe = FTe;
-    const bTe = class e extends b {
+    let CTe = bTe;
+    const UTe = class e extends b {
         constructor(e) {
             super(), this.hasSlackAuth = !1, this.defaultRepo = "", this.defaultBranch = "", this.defaultModel = "", this.canShow = !1, this.openPrByDefault = !1, this.ciFailureFollowupEnabled = !1, this.branchPrefix = "", nt.util.initPartial(e, this)
         }
@@ -94275,7 +94333,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    bTe.runtime = nt, bTe.typeName = "aiserver.v1.GetSlackUserSettingsResponse", bTe.fields = nt.util.newFieldList(() => [{
+    UTe.runtime = nt, UTe.typeName = "aiserver.v1.GetSlackUserSettingsResponse", UTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "has_slack_auth",
         kind: "scalar",
@@ -94322,8 +94380,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let CTe = bTe;
-    const UTe = class e extends b {
+    let ATe = UTe;
+    const xTe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -94340,9 +94398,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    UTe.runtime = nt, UTe.typeName = "aiserver.v1.UnlinkSlackAccessRequest", UTe.fields = nt.util.newFieldList(() => []);
-    let ATe = UTe;
-    const xTe = class e extends b {
+    xTe.runtime = nt, xTe.typeName = "aiserver.v1.UnlinkSlackAccessRequest", xTe.fields = nt.util.newFieldList(() => []);
+    let DTe = xTe;
+    const MTe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -94359,14 +94417,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    xTe.runtime = nt, xTe.typeName = "aiserver.v1.UnlinkSlackAccessResponse", xTe.fields = nt.util.newFieldList(() => [{
+    MTe.runtime = nt, MTe.typeName = "aiserver.v1.UnlinkSlackAccessResponse", MTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let DTe = xTe;
-    const MTe = class e extends b {
+    let GTe = MTe;
+    const YTe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.defaultRepo = "", this.defaultBranch = "", this.defaultModel = "", this.openPrByDefault = !1, this.ciFailureFollowupEnabled = !1, this.branchPrefix = "", nt.util.initPartial(e, this)
         }
@@ -94383,7 +94441,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    MTe.runtime = nt, MTe.typeName = "aiserver.v1.UpdateSlackUserSettingsRequest", MTe.fields = nt.util.newFieldList(() => [{
+    YTe.runtime = nt, YTe.typeName = "aiserver.v1.UpdateSlackUserSettingsRequest", YTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -94425,8 +94483,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let GTe = MTe;
-    const YTe = class e extends b {
+    let VTe = YTe;
+    const HTe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -94443,9 +94501,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    YTe.runtime = nt, YTe.typeName = "aiserver.v1.UpdateSlackUserSettingsResponse", YTe.fields = nt.util.newFieldList(() => []);
-    let VTe = YTe;
-    const HTe = class e extends b {
+    HTe.runtime = nt, HTe.typeName = "aiserver.v1.UpdateSlackUserSettingsResponse", HTe.fields = nt.util.newFieldList(() => []);
+    let KTe = HTe;
+    const zTe = class e extends b {
         constructor(e) {
             super(), this.id = 0, this.pattern = "", this.repo = "", this.isTeamRule = !1, this.targetType = 0, nt.util.initPartial(e, this)
         }
@@ -94462,7 +94520,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    HTe.runtime = nt, HTe.typeName = "aiserver.v1.SlackRepoRoutingRule", HTe.fields = nt.util.newFieldList(() => [{
+    zTe.runtime = nt, zTe.typeName = "aiserver.v1.SlackRepoRoutingRule", zTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -94494,8 +94552,8 @@
         T: 9,
         opt: !0
     }]);
-    let KTe = HTe;
-    const zTe = class e extends b {
+    let WTe = zTe;
+    const jTe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -94512,14 +94570,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    zTe.runtime = nt, zTe.typeName = "aiserver.v1.GetSlackRepoRoutingRulesRequest", zTe.fields = nt.util.newFieldList(() => [{
+    jTe.runtime = nt, jTe.typeName = "aiserver.v1.GetSlackRepoRoutingRulesRequest", jTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let WTe = zTe;
-    const jTe = class e extends b {
+    let XTe = jTe;
+    const $Te = class e extends b {
         constructor(e) {
             super(), this.rules = [], nt.util.initPartial(e, this)
         }
@@ -94536,15 +94594,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    jTe.runtime = nt, jTe.typeName = "aiserver.v1.GetSlackRepoRoutingRulesResponse", jTe.fields = nt.util.newFieldList(() => [{
+    $Te.runtime = nt, $Te.typeName = "aiserver.v1.GetSlackRepoRoutingRulesResponse", $Te.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rules",
         kind: "message",
-        T: KTe,
+        T: WTe,
         repeated: !0
     }]);
-    let XTe = jTe;
-    const $Te = class e extends b {
+    let QTe = $Te;
+    const ZTe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.pattern = "", this.repo = "", this.targetType = 0, nt.util.initPartial(e, this)
         }
@@ -94561,7 +94619,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    $Te.runtime = nt, $Te.typeName = "aiserver.v1.CreateSlackRepoRoutingRuleRequest", $Te.fields = nt.util.newFieldList(() => [{
+    ZTe.runtime = nt, ZTe.typeName = "aiserver.v1.CreateSlackRepoRoutingRuleRequest", ZTe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -94588,8 +94646,8 @@
         T: 9,
         opt: !0
     }]);
-    let QTe = $Te;
-    const ZTe = class e extends b {
+    let ehe = ZTe;
+    const the = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -94606,14 +94664,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ZTe.runtime = nt, ZTe.typeName = "aiserver.v1.CreateSlackRepoRoutingRuleResponse", ZTe.fields = nt.util.newFieldList(() => [{
+    the.runtime = nt, the.typeName = "aiserver.v1.CreateSlackRepoRoutingRuleResponse", the.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule",
         kind: "message",
-        T: KTe
+        T: WTe
     }]);
-    let ehe = ZTe;
-    const the = class e extends b {
+    let nhe = the;
+    const rhe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.ruleId = "", nt.util.initPartial(e, this)
         }
@@ -94630,7 +94688,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    the.runtime = nt, the.typeName = "aiserver.v1.DeleteSlackRepoRoutingRuleRequest", the.fields = nt.util.newFieldList(() => [{
+    rhe.runtime = nt, rhe.typeName = "aiserver.v1.DeleteSlackRepoRoutingRuleRequest", rhe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -94641,8 +94699,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let nhe = the;
-    const rhe = class e extends b {
+    let she = rhe;
+    const ihe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -94659,9 +94717,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    rhe.runtime = nt, rhe.typeName = "aiserver.v1.DeleteSlackRepoRoutingRuleResponse", rhe.fields = nt.util.newFieldList(() => []);
-    let she = rhe;
-    const ihe = class e extends b {
+    ihe.runtime = nt, ihe.typeName = "aiserver.v1.DeleteSlackRepoRoutingRuleResponse", ihe.fields = nt.util.newFieldList(() => []);
+    let ahe = ihe;
+    const ohe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.ruleId = "", this.pattern = "", this.repo = "", this.targetType = 0, nt.util.initPartial(e, this)
         }
@@ -94678,7 +94736,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ihe.runtime = nt, ihe.typeName = "aiserver.v1.UpdateSlackRepoRoutingRuleRequest", ihe.fields = nt.util.newFieldList(() => [{
+    ohe.runtime = nt, ohe.typeName = "aiserver.v1.UpdateSlackRepoRoutingRuleRequest", ohe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -94710,30 +94768,6 @@
         T: 9,
         opt: !0
     }]);
-    let ahe = ihe;
-    const ohe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    ohe.runtime = nt, ohe.typeName = "aiserver.v1.UpdateSlackRepoRoutingRuleResponse", ohe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "rule",
-        kind: "message",
-        T: KTe
-    }]);
     let lhe = ohe;
     const uhe = class e extends b {
         constructor(e) {
@@ -94752,9 +94786,33 @@
             return nt.util.equals(e, t, n)
         }
     };
-    uhe.runtime = nt, uhe.typeName = "aiserver.v1.IsOnNewPricingRequest", uhe.fields = nt.util.newFieldList(() => []);
+    uhe.runtime = nt, uhe.typeName = "aiserver.v1.UpdateSlackRepoRoutingRuleResponse", uhe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "rule",
+        kind: "message",
+        T: WTe
+    }]);
     let mhe = uhe;
     const che = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    che.runtime = nt, che.typeName = "aiserver.v1.IsOnNewPricingRequest", che.fields = nt.util.newFieldList(() => []);
+    let dhe = che;
+    const fhe = class e extends b {
         constructor(e) {
             super(), this.isOnNewPricing = !1, this.isOptedOut = !1, this.hasAutoSpillover = !1, this.hasTieredSelfServeTeamSpillover = !1, nt.util.initPartial(e, this)
         }
@@ -94771,7 +94829,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    che.runtime = nt, che.typeName = "aiserver.v1.IsOnNewPricingResponse", che.fields = nt.util.newFieldList(() => [{
+    fhe.runtime = nt, fhe.typeName = "aiserver.v1.IsOnNewPricingResponse", fhe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "is_on_new_pricing",
         kind: "scalar",
@@ -94798,8 +94856,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let dhe = che;
-    const fhe = class e extends b {
+    let phe = fhe;
+    const ghe = class e extends b {
         constructor(e) {
             super(), this.checkpoints = {}, this.isTeamAdmin = !1, this.isLoading = !1, this.isPrivacyModeLoading = !1, this.isGithubLoading = !1, this.isUsagePricingLoading = !1, this.triggeredByGithubConnect = !1, nt.util.initPartial(e, this)
         }
@@ -94816,7 +94874,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    fhe.runtime = nt, fhe.typeName = "aiserver.v1.LogSlackbotAuthConversionFunnelRequest", fhe.fields = nt.util.newFieldList(() => [{
+    ghe.runtime = nt, ghe.typeName = "aiserver.v1.LogSlackbotAuthConversionFunnelRequest", ghe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "checkpoints",
         kind: "map",
@@ -94868,8 +94926,8 @@
         T: 9,
         opt: !0
     }]);
-    let phe = fhe;
-    const ghe = class e extends b {
+    let The = ghe;
+    const hhe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -94886,9 +94944,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ghe.runtime = nt, ghe.typeName = "aiserver.v1.LogSlackbotAuthConversionFunnelResponse", ghe.fields = nt.util.newFieldList(() => []);
-    let The = ghe;
-    const hhe = class e extends b {
+    hhe.runtime = nt, hhe.typeName = "aiserver.v1.LogSlackbotAuthConversionFunnelResponse", hhe.fields = nt.util.newFieldList(() => []);
+    let _he = hhe;
+    const yhe = class e extends b {
         constructor(e) {
             super(), this.origin = 0, this.skipSetupFlow = !1, nt.util.initPartial(e, this)
         }
@@ -94905,20 +94963,20 @@
             return nt.util.equals(e, t, n)
         }
     };
-    hhe.runtime = nt, hhe.typeName = "aiserver.v1.LogClickedConnectSlackRequest", hhe.fields = nt.util.newFieldList(() => [{
+    yhe.runtime = nt, yhe.typeName = "aiserver.v1.LogClickedConnectSlackRequest", yhe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "origin",
         kind: "enum",
-        T: nt.getEnumType(yhe)
+        T: nt.getEnumType(khe)
     }, {
         no: 2,
         name: "skip_setup_flow",
         kind: "scalar",
         T: 8
     }]);
-    let _he = hhe;
-    var yhe = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.APP = 1] = "APP", e[e.WEBSITE = 2] = "WEBSITE", e[e.SLACK = 3] = "SLACK", e[e.PUBLIC_URL = 4] = "PUBLIC_URL", e))(yhe || {});
-    nt.util.setEnumType(yhe, "aiserver.v1.LogClickedConnectSlackRequest.Origin", [{
+    let whe = yhe;
+    var khe = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.APP = 1] = "APP", e[e.WEBSITE = 2] = "WEBSITE", e[e.SLACK = 3] = "SLACK", e[e.PUBLIC_URL = 4] = "PUBLIC_URL", e))(khe || {});
+    nt.util.setEnumType(khe, "aiserver.v1.LogClickedConnectSlackRequest.Origin", [{
         no: 0,
         name: "ORIGIN_UNSPECIFIED"
     }, {
@@ -94934,25 +94992,6 @@
         no: 4,
         name: "ORIGIN_PUBLIC_URL"
     }]);
-    const whe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    whe.runtime = nt, whe.typeName = "aiserver.v1.LogClickedConnectSlackResponse", whe.fields = nt.util.newFieldList(() => []);
-    let khe = whe;
     const She = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
@@ -94970,9 +95009,28 @@
             return nt.util.equals(e, t, n)
         }
     };
-    She.runtime = nt, She.typeName = "aiserver.v1.CheckUserApiKeyAccessRequest", She.fields = nt.util.newFieldList(() => []);
+    She.runtime = nt, She.typeName = "aiserver.v1.LogClickedConnectSlackResponse", She.fields = nt.util.newFieldList(() => []);
     let Jhe = She;
     const vhe = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    vhe.runtime = nt, vhe.typeName = "aiserver.v1.CheckUserApiKeyAccessRequest", vhe.fields = nt.util.newFieldList(() => []);
+    let Ehe = vhe;
+    const Nhe = class e extends b {
         constructor(e) {
             super(), this.hasAccess = !1, nt.util.initPartial(e, this)
         }
@@ -94989,14 +95047,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vhe.runtime = nt, vhe.typeName = "aiserver.v1.CheckUserApiKeyAccessResponse", vhe.fields = nt.util.newFieldList(() => [{
+    Nhe.runtime = nt, Nhe.typeName = "aiserver.v1.CheckUserApiKeyAccessResponse", Nhe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "has_access",
         kind: "scalar",
         T: 8
     }]);
-    let Ehe = vhe;
-    const Nhe = class e extends b {
+    let Bhe = Nhe;
+    const Ihe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -95013,9 +95071,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Nhe.runtime = nt, Nhe.typeName = "aiserver.v1.IsAllowedFreeTrialUsageRequest", Nhe.fields = nt.util.newFieldList(() => []);
-    let Bhe = Nhe;
-    const Ihe = class e extends b {
+    Ihe.runtime = nt, Ihe.typeName = "aiserver.v1.IsAllowedFreeTrialUsageRequest", Ihe.fields = nt.util.newFieldList(() => []);
+    let Phe = Ihe;
+    const qhe = class e extends b {
         constructor(e) {
             super(), this.isAllowed = !1, nt.util.initPartial(e, this)
         }
@@ -95032,14 +95090,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ihe.runtime = nt, Ihe.typeName = "aiserver.v1.IsAllowedFreeTrialUsageResponse", Ihe.fields = nt.util.newFieldList(() => [{
+    qhe.runtime = nt, qhe.typeName = "aiserver.v1.IsAllowedFreeTrialUsageResponse", qhe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "is_allowed",
         kind: "scalar",
         T: 8
     }]);
-    let Phe = Ihe;
-    const qhe = class e extends b {
+    let Rhe = qhe;
+    const Lhe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -95056,9 +95114,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qhe.runtime = nt, qhe.typeName = "aiserver.v1.IsNextSetupRunFreeRequest", qhe.fields = nt.util.newFieldList(() => []);
-    let Rhe = qhe;
-    const Lhe = class e extends b {
+    Lhe.runtime = nt, Lhe.typeName = "aiserver.v1.IsNextSetupRunFreeRequest", Lhe.fields = nt.util.newFieldList(() => []);
+    let Fhe = Lhe;
+    const Ohe = class e extends b {
         constructor(e) {
             super(), this.isFree = !1, this.remainingRuns = 0, nt.util.initPartial(e, this)
         }
@@ -95075,7 +95133,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Lhe.runtime = nt, Lhe.typeName = "aiserver.v1.IsNextSetupRunFreeResponse", Lhe.fields = nt.util.newFieldList(() => [{
+    Ohe.runtime = nt, Ohe.typeName = "aiserver.v1.IsNextSetupRunFreeResponse", Ohe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "is_free",
         kind: "scalar",
@@ -95086,8 +95144,8 @@
         kind: "scalar",
         T: 13
     }]);
-    let Fhe = Lhe;
-    const Ohe = class e extends b {
+    let bhe = Ohe;
+    const Che = class e extends b {
         constructor(e) {
             super(), this.name = "", this.id = 0, this.memberCount = 0, this.hardLimitPerUserDollars = 0, this.externalId = "", this.perUserMonthlyLimitDollars = 0, nt.util.initPartial(e, this)
         }
@@ -95104,7 +95162,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ohe.runtime = nt, Ohe.typeName = "aiserver.v1.DirectoryGroup", Ohe.fields = nt.util.newFieldList(() => [{
+    Che.runtime = nt, Che.typeName = "aiserver.v1.DirectoryGroup", Che.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -95140,8 +95198,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let bhe = Ohe;
-    const Che = class e extends b {
+    let Uhe = Che;
+    const Ahe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -95158,14 +95216,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Che.runtime = nt, Che.typeName = "aiserver.v1.GetDirectoryGroupsRequest", Che.fields = nt.util.newFieldList(() => [{
+    Ahe.runtime = nt, Ahe.typeName = "aiserver.v1.GetDirectoryGroupsRequest", Ahe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let Uhe = Che;
-    const Ahe = class e extends b {
+    let xhe = Ahe;
+    const Dhe = class e extends b {
         constructor(e) {
             super(), this.directoryGroups = [], nt.util.initPartial(e, this)
         }
@@ -95182,15 +95240,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ahe.runtime = nt, Ahe.typeName = "aiserver.v1.GetDirectoryGroupsResponse", Ahe.fields = nt.util.newFieldList(() => [{
+    Dhe.runtime = nt, Dhe.typeName = "aiserver.v1.GetDirectoryGroupsResponse", Dhe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "directory_groups",
         kind: "message",
-        T: bhe,
+        T: Uhe,
         repeated: !0
     }]);
-    let xhe = Ahe;
-    const Dhe = class e extends b {
+    let Mhe = Dhe;
+    const Ghe = class e extends b {
         constructor(e) {
             super(), this.directoryGroupId = 0, this.perUserMonthlyLimitDollars = 0, this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -95207,7 +95265,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Dhe.runtime = nt, Dhe.typeName = "aiserver.v1.UpdateDirectoryGroupSettingsRequest", Dhe.fields = nt.util.newFieldList(() => [{
+    Ghe.runtime = nt, Ghe.typeName = "aiserver.v1.UpdateDirectoryGroupSettingsRequest", Ghe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "directory_group_id",
         kind: "scalar",
@@ -95234,8 +95292,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Mhe = Dhe;
-    const Ghe = class e extends b {
+    let Yhe = Ghe;
+    const Vhe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -95252,9 +95310,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ghe.runtime = nt, Ghe.typeName = "aiserver.v1.UpdateDirectoryGroupSettingsResponse", Ghe.fields = nt.util.newFieldList(() => []);
-    let Yhe = Ghe;
-    const Vhe = class e extends b {
+    Vhe.runtime = nt, Vhe.typeName = "aiserver.v1.UpdateDirectoryGroupSettingsResponse", Vhe.fields = nt.util.newFieldList(() => []);
+    let Hhe = Vhe;
+    const Khe = class e extends b {
         constructor(e) {
             super(), this.day = K.zero, this.spendCents = 0, nt.util.initPartial(e, this)
         }
@@ -95271,7 +95329,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Vhe.runtime = nt, Vhe.typeName = "aiserver.v1.DailySpendPoint", Vhe.fields = nt.util.newFieldList(() => [{
+    Khe.runtime = nt, Khe.typeName = "aiserver.v1.DailySpendPoint", Khe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "day",
         kind: "scalar",
@@ -95282,8 +95340,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Hhe = Vhe;
-    const Khe = class e extends b {
+    let zhe = Khe;
+    const Whe = class e extends b {
         constructor(e) {
             super(), this.periodStartMs = K.zero, this.periodEndMs = K.zero, this.groupBy = 0, nt.util.initPartial(e, this)
         }
@@ -95300,7 +95358,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Khe.runtime = nt, Khe.typeName = "aiserver.v1.GetDailySpendByCategoryRequest", Khe.fields = nt.util.newFieldList(() => [{
+    Whe.runtime = nt, Whe.typeName = "aiserver.v1.GetDailySpendByCategoryRequest", Whe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -95364,8 +95422,8 @@
         T: 9,
         opt: !0
     }]);
-    let zhe = Khe;
-    const Whe = class e extends b {
+    let jhe = Whe;
+    const Xhe = class e extends b {
         constructor(e) {
             super(), this.day = K.zero, this.category = "", this.spendCents = 0, this.totalTokens = K.zero, nt.util.initPartial(e, this)
         }
@@ -95382,7 +95440,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Whe.runtime = nt, Whe.typeName = "aiserver.v1.DailySpendByCategory", Whe.fields = nt.util.newFieldList(() => [{
+    Xhe.runtime = nt, Xhe.typeName = "aiserver.v1.DailySpendByCategory", Xhe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "day",
         kind: "scalar",
@@ -95403,8 +95461,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let jhe = Whe;
-    const Xhe = class e extends b {
+    let $he = Xhe;
+    const Qhe = class e extends b {
         constructor(e) {
             super(), this.dailySpend = [], this.categories = [], nt.util.initPartial(e, this)
         }
@@ -95421,11 +95479,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Xhe.runtime = nt, Xhe.typeName = "aiserver.v1.GetDailySpendByCategoryResponse", Xhe.fields = nt.util.newFieldList(() => [{
+    Qhe.runtime = nt, Qhe.typeName = "aiserver.v1.GetDailySpendByCategoryResponse", Qhe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "daily_spend",
         kind: "message",
-        T: jhe,
+        T: $he,
         repeated: !0
     }, {
         no: 2,
@@ -95440,8 +95498,8 @@
         T: 5,
         opt: !0
     }]);
-    let $he = Xhe;
-    const Qhe = class e extends b {
+    let Zhe = Qhe;
+    const e_e = class e extends b {
         constructor(e) {
             super(), this.organizationId = "", this.periodStartMs = K.zero, this.periodEndMs = K.zero, this.groupBy = 0, nt.util.initPartial(e, this)
         }
@@ -95458,7 +95516,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Qhe.runtime = nt, Qhe.typeName = "aiserver.v1.GetOrgDailySpendByCategoryRequest", Qhe.fields = nt.util.newFieldList(() => [{
+    e_e.runtime = nt, e_e.typeName = "aiserver.v1.GetOrgDailySpendByCategoryRequest", e_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "organization_id",
         kind: "scalar",
@@ -95521,8 +95579,8 @@
         T: 9,
         opt: !0
     }]);
-    let Zhe = Qhe;
-    const e_e = class e extends b {
+    let t_e = e_e;
+    const n_e = class e extends b {
         constructor(e) {
             super(), this.id = 0, this.name = "", this.teamId = 0, this.memberCount = 0, this.createdAt = K.zero, this.updatedAt = K.zero, this.type = 0, this.members = [], this.formerMembers = [], this.dailySpend = [], nt.util.initPartial(e, this)
         }
@@ -95539,7 +95597,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    e_e.runtime = nt, e_e.typeName = "aiserver.v1.Group", e_e.fields = nt.util.newFieldList(() => [{
+    n_e.runtime = nt, n_e.typeName = "aiserver.v1.Group", n_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -95584,7 +95642,7 @@
         no: 9,
         name: "members",
         kind: "message",
-        T: r_e,
+        T: i_e,
         repeated: !0
     }, {
         no: 10,
@@ -95602,17 +95660,17 @@
         no: 12,
         name: "former_members",
         kind: "message",
-        T: r_e,
+        T: i_e,
         repeated: !0
     }, {
         no: 13,
         name: "daily_spend",
         kind: "message",
-        T: Hhe,
+        T: zhe,
         repeated: !0
     }]);
-    let t_e = e_e;
-    const n_e = class e extends b {
+    let r_e = n_e;
+    const s_e = class e extends b {
         constructor(e) {
             super(), this.userId = 0, this.name = "", this.email = "", this.joinedAt = K.zero, nt.util.initPartial(e, this)
         }
@@ -95629,7 +95687,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    n_e.runtime = nt, n_e.typeName = "aiserver.v1.GroupMember", n_e.fields = nt.util.newFieldList(() => [{
+    s_e.runtime = nt, s_e.typeName = "aiserver.v1.GroupMember", s_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "user_id",
         kind: "scalar",
@@ -95668,8 +95726,8 @@
         T: 5,
         opt: !0
     }]);
-    let r_e = n_e;
-    const s_e = class e extends b {
+    let i_e = s_e;
+    const a_e = class e extends b {
         constructor(e) {
             super(), this.serviceAccountId = "", this.name = "", this.serviceType = "", this.spendCents = 0, this.dailySpend = [], nt.util.initPartial(e, this)
         }
@@ -95686,7 +95744,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    s_e.runtime = nt, s_e.typeName = "aiserver.v1.ServiceAccountSpendInfo", s_e.fields = nt.util.newFieldList(() => [{
+    a_e.runtime = nt, a_e.typeName = "aiserver.v1.ServiceAccountSpendInfo", a_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "service_account_id",
         kind: "scalar",
@@ -95710,7 +95768,7 @@
         no: 5,
         name: "daily_spend",
         kind: "message",
-        T: Hhe,
+        T: zhe,
         repeated: !0
     }, {
         no: 6,
@@ -95725,8 +95783,8 @@
         T: 3,
         opt: !0
     }]);
-    let i_e = s_e;
-    const a_e = class e extends b {
+    let o_e = a_e;
+    const l_e = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -95743,7 +95801,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    a_e.runtime = nt, a_e.typeName = "aiserver.v1.GetGroupsRequest", a_e.fields = nt.util.newFieldList(() => [{
+    l_e.runtime = nt, l_e.typeName = "aiserver.v1.GetGroupsRequest", l_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -95761,8 +95819,8 @@
         T: 3,
         opt: !0
     }]);
-    let o_e = a_e;
-    const l_e = class e extends b {
+    let u_e = l_e;
+    const m_e = class e extends b {
         constructor(e) {
             super(), this.groups = [], this.unassignedMembers = [], this.teamDailySpend = [], this.serviceAccounts = [], nt.util.initPartial(e, this)
         }
@@ -95779,23 +95837,23 @@
             return nt.util.equals(e, t, n)
         }
     };
-    l_e.runtime = nt, l_e.typeName = "aiserver.v1.GetGroupsResponse", l_e.fields = nt.util.newFieldList(() => [{
+    m_e.runtime = nt, m_e.typeName = "aiserver.v1.GetGroupsResponse", m_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "groups",
         kind: "message",
-        T: t_e,
+        T: r_e,
         repeated: !0
     }, {
         no: 2,
         name: "unassigned_members",
         kind: "message",
-        T: r_e,
+        T: i_e,
         repeated: !0
     }, {
         no: 3,
         name: "unassigned_group",
         kind: "message",
-        T: t_e,
+        T: r_e,
         opt: !0
     }, {
         no: 4,
@@ -95813,17 +95871,17 @@
         no: 6,
         name: "team_daily_spend",
         kind: "message",
-        T: Hhe,
+        T: zhe,
         repeated: !0
     }, {
         no: 7,
         name: "service_accounts",
         kind: "message",
-        T: i_e,
+        T: o_e,
         repeated: !0
     }]);
-    let u_e = l_e;
-    const m_e = class e extends b {
+    let c_e = m_e;
+    const d_e = class e extends b {
         constructor(e) {
             super(), this.groupId = 0, this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -95840,7 +95898,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    m_e.runtime = nt, m_e.typeName = "aiserver.v1.GetGroupMembersRequest", m_e.fields = nt.util.newFieldList(() => [{
+    d_e.runtime = nt, d_e.typeName = "aiserver.v1.GetGroupMembersRequest", d_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group_id",
         kind: "scalar",
@@ -95857,8 +95915,8 @@
         T: nt.getEnumType(WZ),
         opt: !0
     }]);
-    let c_e = m_e;
-    const d_e = class e extends b {
+    let f_e = d_e;
+    const p_e = class e extends b {
         constructor(e) {
             super(), this.members = [], nt.util.initPartial(e, this)
         }
@@ -95875,15 +95933,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    d_e.runtime = nt, d_e.typeName = "aiserver.v1.GetGroupMembersResponse", d_e.fields = nt.util.newFieldList(() => [{
+    p_e.runtime = nt, p_e.typeName = "aiserver.v1.GetGroupMembersResponse", p_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "members",
         kind: "message",
-        T: r_e,
+        T: i_e,
         repeated: !0
     }]);
-    let f_e = d_e;
-    const p_e = class e extends b {
+    let g_e = p_e;
+    const T_e = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.name = "", nt.util.initPartial(e, this)
         }
@@ -95900,7 +95958,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    p_e.runtime = nt, p_e.typeName = "aiserver.v1.CreateGroupRequest", p_e.fields = nt.util.newFieldList(() => [{
+    T_e.runtime = nt, T_e.typeName = "aiserver.v1.CreateGroupRequest", T_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -95923,8 +95981,8 @@
         T: nt.getEnumType(WZ),
         opt: !0
     }]);
-    let g_e = p_e;
-    const T_e = class e extends b {
+    let h_e = T_e;
+    const __e = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -95941,14 +95999,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    T_e.runtime = nt, T_e.typeName = "aiserver.v1.CreateGroupResponse", T_e.fields = nt.util.newFieldList(() => [{
+    __e.runtime = nt, __e.typeName = "aiserver.v1.CreateGroupResponse", __e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group",
         kind: "message",
-        T: t_e
+        T: r_e
     }]);
-    let h_e = T_e;
-    const __e = class e extends b {
+    let y_e = __e;
+    const w_e = class e extends b {
         constructor(e) {
             super(), this.groupId = 0, this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -95965,7 +96023,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    __e.runtime = nt, __e.typeName = "aiserver.v1.UpdateGroupRequest", __e.fields = nt.util.newFieldList(() => [{
+    w_e.runtime = nt, w_e.typeName = "aiserver.v1.UpdateGroupRequest", w_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group_id",
         kind: "scalar",
@@ -95994,8 +96052,8 @@
         T: 5,
         opt: !0
     }]);
-    let y_e = __e;
-    const w_e = class e extends b {
+    let k_e = w_e;
+    const S_e = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -96012,14 +96070,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    w_e.runtime = nt, w_e.typeName = "aiserver.v1.UpdateGroupResponse", w_e.fields = nt.util.newFieldList(() => [{
+    S_e.runtime = nt, S_e.typeName = "aiserver.v1.UpdateGroupResponse", S_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group",
         kind: "message",
-        T: t_e
+        T: r_e
     }]);
-    let k_e = w_e;
-    const S_e = class e extends b {
+    let J_e = S_e;
+    const v_e = class e extends b {
         constructor(e) {
             super(), this.groupId = 0, this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -96036,7 +96094,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    S_e.runtime = nt, S_e.typeName = "aiserver.v1.DeleteGroupRequest", S_e.fields = nt.util.newFieldList(() => [{
+    v_e.runtime = nt, v_e.typeName = "aiserver.v1.DeleteGroupRequest", v_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group_id",
         kind: "scalar",
@@ -96053,8 +96111,8 @@
         T: nt.getEnumType(WZ),
         opt: !0
     }]);
-    let J_e = S_e;
-    const v_e = class e extends b {
+    let E_e = v_e;
+    const N_e = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -96071,9 +96129,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    v_e.runtime = nt, v_e.typeName = "aiserver.v1.DeleteGroupResponse", v_e.fields = nt.util.newFieldList(() => []);
-    let E_e = v_e;
-    const N_e = class e extends b {
+    N_e.runtime = nt, N_e.typeName = "aiserver.v1.DeleteGroupResponse", N_e.fields = nt.util.newFieldList(() => []);
+    let B_e = N_e;
+    const I_e = class e extends b {
         constructor(e) {
             super(), this.groupId = 0, this.teamId = 0, this.userIds = [], nt.util.initPartial(e, this)
         }
@@ -96090,7 +96148,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    N_e.runtime = nt, N_e.typeName = "aiserver.v1.AddGroupMembersRequest", N_e.fields = nt.util.newFieldList(() => [{
+    I_e.runtime = nt, I_e.typeName = "aiserver.v1.AddGroupMembersRequest", I_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group_id",
         kind: "scalar",
@@ -96112,34 +96170,34 @@
         kind: "enum",
         T: nt.getEnumType(WZ),
         opt: !0
-    }]);
-    let B_e = N_e;
-    const I_e = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    I_e.runtime = nt, I_e.typeName = "aiserver.v1.AddGroupMembersResponse", I_e.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "group",
-        kind: "message",
-        T: t_e
     }]);
     let P_e = I_e;
     const q_e = class e extends b {
         constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    q_e.runtime = nt, q_e.typeName = "aiserver.v1.AddGroupMembersResponse", q_e.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "group",
+        kind: "message",
+        T: r_e
+    }]);
+    let R_e = q_e;
+    const L_e = class e extends b {
+        constructor(e) {
             super(), this.groupId = 0, this.teamId = 0, this.userIds = [], nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -96155,7 +96213,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    q_e.runtime = nt, q_e.typeName = "aiserver.v1.RemoveGroupMembersRequest", q_e.fields = nt.util.newFieldList(() => [{
+    L_e.runtime = nt, L_e.typeName = "aiserver.v1.RemoveGroupMembersRequest", L_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group_id",
         kind: "scalar",
@@ -96178,8 +96236,8 @@
         T: nt.getEnumType(WZ),
         opt: !0
     }]);
-    let R_e = q_e;
-    const L_e = class e extends b {
+    let F_e = L_e;
+    const O_e = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -96196,14 +96254,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    L_e.runtime = nt, L_e.typeName = "aiserver.v1.RemoveGroupMembersResponse", L_e.fields = nt.util.newFieldList(() => [{
+    O_e.runtime = nt, O_e.typeName = "aiserver.v1.RemoveGroupMembersResponse", O_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group",
         kind: "message",
-        T: t_e
+        T: r_e
     }]);
-    let F_e = L_e;
-    const O_e = class e extends b {
+    let b_e = O_e;
+    const C_e = class e extends b {
         constructor(e) {
             super(), this.email = "", this.groupName = "", nt.util.initPartial(e, this)
         }
@@ -96220,7 +96278,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    O_e.runtime = nt, O_e.typeName = "aiserver.v1.GroupAssignment", O_e.fields = nt.util.newFieldList(() => [{
+    C_e.runtime = nt, C_e.typeName = "aiserver.v1.GroupAssignment", C_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "email",
         kind: "scalar",
@@ -96231,8 +96289,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let b_e = O_e;
-    const C_e = class e extends b {
+    let U_e = C_e;
+    const A_e = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.assignments = [], nt.util.initPartial(e, this)
         }
@@ -96249,7 +96307,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    C_e.runtime = nt, C_e.typeName = "aiserver.v1.BulkAssignGroupMembersRequest", C_e.fields = nt.util.newFieldList(() => [{
+    A_e.runtime = nt, A_e.typeName = "aiserver.v1.BulkAssignGroupMembersRequest", A_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -96258,7 +96316,7 @@
         no: 2,
         name: "assignments",
         kind: "message",
-        T: b_e,
+        T: U_e,
         repeated: !0
     }, {
         no: 3,
@@ -96267,8 +96325,8 @@
         T: nt.getEnumType(WZ),
         opt: !0
     }]);
-    let U_e = C_e;
-    const A_e = class e extends b {
+    let x_e = A_e;
+    const D_e = class e extends b {
         constructor(e) {
             super(), this.email = "", this.groupName = "", this.success = !1, nt.util.initPartial(e, this)
         }
@@ -96285,7 +96343,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    A_e.runtime = nt, A_e.typeName = "aiserver.v1.AssignmentResult", A_e.fields = nt.util.newFieldList(() => [{
+    D_e.runtime = nt, D_e.typeName = "aiserver.v1.AssignmentResult", D_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "email",
         kind: "scalar",
@@ -96307,8 +96365,8 @@
         T: 9,
         opt: !0
     }]);
-    let x_e = A_e;
-    const D_e = class e extends b {
+    let M_e = D_e;
+    const G_e = class e extends b {
         constructor(e) {
             super(), this.createdGroups = [], this.results = [], this.successCount = 0, this.errorCount = 0, nt.util.initPartial(e, this)
         }
@@ -96325,7 +96383,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    D_e.runtime = nt, D_e.typeName = "aiserver.v1.BulkAssignGroupMembersResponse", D_e.fields = nt.util.newFieldList(() => [{
+    G_e.runtime = nt, G_e.typeName = "aiserver.v1.BulkAssignGroupMembersResponse", G_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "created_groups",
         kind: "scalar",
@@ -96335,7 +96393,7 @@
         no: 2,
         name: "results",
         kind: "message",
-        T: x_e,
+        T: M_e,
         repeated: !0
     }, {
         no: 3,
@@ -96348,8 +96406,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let M_e = D_e;
-    const G_e = class e extends b {
+    let Y_e = G_e;
+    const V_e = class e extends b {
         constructor(e) {
             super(), this.groupId = 0, this.teamId = 0, this.directoryGroupId = 0, nt.util.initPartial(e, this)
         }
@@ -96366,7 +96424,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    G_e.runtime = nt, G_e.typeName = "aiserver.v1.PreviewAttachGroupToDirectoryRequest", G_e.fields = nt.util.newFieldList(() => [{
+    V_e.runtime = nt, V_e.typeName = "aiserver.v1.PreviewAttachGroupToDirectoryRequest", V_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group_id",
         kind: "scalar",
@@ -96388,8 +96446,8 @@
         T: nt.getEnumType(WZ),
         opt: !0
     }]);
-    let Y_e = G_e;
-    const V_e = class e extends b {
+    let H_e = V_e;
+    const K_e = class e extends b {
         constructor(e) {
             super(), this.userId = 0, this.email = "", this.name = "", this.changeType = 0, nt.util.initPartial(e, this)
         }
@@ -96406,7 +96464,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    V_e.runtime = nt, V_e.typeName = "aiserver.v1.GroupMemberChange", V_e.fields = nt.util.newFieldList(() => [{
+    K_e.runtime = nt, K_e.typeName = "aiserver.v1.GroupMemberChange", K_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "user_id",
         kind: "scalar",
@@ -96427,8 +96485,8 @@
         kind: "enum",
         T: nt.getEnumType($Z)
     }]);
-    let H_e = V_e;
-    const K_e = class e extends b {
+    let z_e = K_e;
+    const W_e = class e extends b {
         constructor(e) {
             super(), this.userId = 0, this.email = "", this.name = "", this.currentGroupId = 0, this.currentGroupName = "", this.isCurrentGroupScim = !1, nt.util.initPartial(e, this)
         }
@@ -96445,7 +96503,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    K_e.runtime = nt, K_e.typeName = "aiserver.v1.ConflictedUser", K_e.fields = nt.util.newFieldList(() => [{
+    W_e.runtime = nt, W_e.typeName = "aiserver.v1.ConflictedUser", W_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "user_id",
         kind: "scalar",
@@ -96476,8 +96534,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let z_e = K_e;
-    const W_e = class e extends b {
+    let j_e = W_e;
+    const X_e = class e extends b {
         constructor(e) {
             super(), this.changes = [], this.membersToAdd = 0, this.membersToRemove = 0, this.directoryGroupName = "", this.membersSkippedDueToConflict = 0, this.conflictedUsers = [], nt.util.initPartial(e, this)
         }
@@ -96494,11 +96552,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    W_e.runtime = nt, W_e.typeName = "aiserver.v1.PreviewAttachGroupToDirectoryResponse", W_e.fields = nt.util.newFieldList(() => [{
+    X_e.runtime = nt, X_e.typeName = "aiserver.v1.PreviewAttachGroupToDirectoryResponse", X_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "changes",
         kind: "message",
-        T: H_e,
+        T: z_e,
         repeated: !0
     }, {
         no: 2,
@@ -96524,11 +96582,11 @@
         no: 6,
         name: "conflicted_users",
         kind: "message",
-        T: z_e,
+        T: j_e,
         repeated: !0
     }]);
-    let j_e = W_e;
-    const X_e = class e extends b {
+    let $_e = X_e;
+    const Q_e = class e extends b {
         constructor(e) {
             super(), this.groupId = 0, this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -96545,7 +96603,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    X_e.runtime = nt, X_e.typeName = "aiserver.v1.DetachGroupFromDirectoryRequest", X_e.fields = nt.util.newFieldList(() => [{
+    Q_e.runtime = nt, Q_e.typeName = "aiserver.v1.DetachGroupFromDirectoryRequest", Q_e.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group_id",
         kind: "scalar",
@@ -96562,8 +96620,8 @@
         T: nt.getEnumType(WZ),
         opt: !0
     }]);
-    let $_e = X_e;
-    const Q_e = class e extends b {
+    let Z_e = Q_e;
+    const eye = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -96580,14 +96638,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Q_e.runtime = nt, Q_e.typeName = "aiserver.v1.DetachGroupFromDirectoryResponse", Q_e.fields = nt.util.newFieldList(() => [{
+    eye.runtime = nt, eye.typeName = "aiserver.v1.DetachGroupFromDirectoryResponse", eye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "group",
         kind: "message",
-        T: t_e
+        T: r_e
     }]);
-    let Z_e = Q_e;
-    const eye = class e extends b {
+    let tye = eye;
+    const nye = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -96604,7 +96662,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eye.runtime = nt, eye.typeName = "aiserver.v1.GetScimConflictsRequest", eye.fields = nt.util.newFieldList(() => [{
+    nye.runtime = nt, nye.typeName = "aiserver.v1.GetScimConflictsRequest", nye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -96616,8 +96674,8 @@
         T: nt.getEnumType(WZ),
         opt: !0
     }]);
-    let tye = eye;
-    const nye = class e extends b {
+    let rye = nye;
+    const sye = class e extends b {
         constructor(e) {
             super(), this.directoryGroupId = 0, this.directoryGroupName = "", nt.util.initPartial(e, this)
         }
@@ -96634,7 +96692,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nye.runtime = nt, nye.typeName = "aiserver.v1.ScimConflictDirectoryGroup", nye.fields = nt.util.newFieldList(() => [{
+    sye.runtime = nt, sye.typeName = "aiserver.v1.ScimConflictDirectoryGroup", sye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "directory_group_id",
         kind: "scalar",
@@ -96645,8 +96703,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let rye = nye;
-    const sye = class e extends b {
+    let iye = sye;
+    const aye = class e extends b {
         constructor(e) {
             super(), this.userId = 0, this.email = "", this.name = "", this.directoryGroups = [], nt.util.initPartial(e, this)
         }
@@ -96663,7 +96721,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sye.runtime = nt, sye.typeName = "aiserver.v1.ScimConflictUser", sye.fields = nt.util.newFieldList(() => [{
+    aye.runtime = nt, aye.typeName = "aiserver.v1.ScimConflictUser", aye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "user_id",
         kind: "scalar",
@@ -96682,7 +96740,7 @@
         no: 4,
         name: "directory_groups",
         kind: "message",
-        T: rye,
+        T: iye,
         repeated: !0
     }, {
         no: 5,
@@ -96703,8 +96761,8 @@
         T: 5,
         opt: !0
     }]);
-    let iye = sye;
-    const aye = class e extends b {
+    let oye = aye;
+    const lye = class e extends b {
         constructor(e) {
             super(), this.conflictedUsers = [], nt.util.initPartial(e, this)
         }
@@ -96721,15 +96779,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    aye.runtime = nt, aye.typeName = "aiserver.v1.GetScimConflictsResponse", aye.fields = nt.util.newFieldList(() => [{
+    lye.runtime = nt, lye.typeName = "aiserver.v1.GetScimConflictsResponse", lye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "conflicted_users",
         kind: "message",
-        T: iye,
+        T: oye,
         repeated: !0
     }]);
-    let oye = aye;
-    const lye = class e extends b {
+    let uye = lye;
+    const mye = class e extends b {
         constructor(e) {
             super(), this.id = K.zero, this.organizationId = "", this.ownerId = K.zero, this.ownerType = 0, this.scimDirectoryExternalId = "", this.provider = 0, this.createdAt = K.zero, this.updatedAt = K.zero, nt.util.initPartial(e, this)
         }
@@ -96746,7 +96804,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lye.runtime = nt, lye.typeName = "aiserver.v1.ScimDirectory", lye.fields = nt.util.newFieldList(() => [{
+    mye.runtime = nt, mye.typeName = "aiserver.v1.ScimDirectory", mye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -96787,8 +96845,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let uye = lye;
-    const mye = class e extends b {
+    let cye = mye;
+    const dye = class e extends b {
         constructor(e) {
             super(), this.organizationId = "", nt.util.initPartial(e, this)
         }
@@ -96805,14 +96863,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mye.runtime = nt, mye.typeName = "aiserver.v1.ListScimDirectoriesRequest", mye.fields = nt.util.newFieldList(() => [{
+    dye.runtime = nt, dye.typeName = "aiserver.v1.ListScimDirectoriesRequest", dye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "organization_id",
         kind: "scalar",
         T: 9
     }]);
-    let cye = mye;
-    const dye = class e extends b {
+    let fye = dye;
+    const pye = class e extends b {
         constructor(e) {
             super(), this.directories = [], nt.util.initPartial(e, this)
         }
@@ -96829,15 +96887,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dye.runtime = nt, dye.typeName = "aiserver.v1.ListScimDirectoriesResponse", dye.fields = nt.util.newFieldList(() => [{
+    pye.runtime = nt, pye.typeName = "aiserver.v1.ListScimDirectoriesResponse", pye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "directories",
         kind: "message",
-        T: uye,
+        T: cye,
         repeated: !0
     }]);
-    let fye = dye;
-    const pye = class e extends b {
+    let gye = pye;
+    const Tye = class e extends b {
         constructor(e) {
             super(), this.organizationId = "", this.scimDirectoryExternalId = "", this.provider = 0, this.ownerType = 0, nt.util.initPartial(e, this)
         }
@@ -96854,7 +96912,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pye.runtime = nt, pye.typeName = "aiserver.v1.CreateScimDirectoryRequest", pye.fields = nt.util.newFieldList(() => [{
+    Tye.runtime = nt, Tye.typeName = "aiserver.v1.CreateScimDirectoryRequest", Tye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "organization_id",
         kind: "scalar",
@@ -96875,8 +96933,8 @@
         kind: "enum",
         T: nt.getEnumType(QZ)
     }]);
-    let gye = pye;
-    const Tye = class e extends b {
+    let hye = Tye;
+    const _ye = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -96893,14 +96951,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Tye.runtime = nt, Tye.typeName = "aiserver.v1.CreateScimDirectoryResponse", Tye.fields = nt.util.newFieldList(() => [{
+    _ye.runtime = nt, _ye.typeName = "aiserver.v1.CreateScimDirectoryResponse", _ye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "directory",
         kind: "message",
-        T: uye
+        T: cye
     }]);
-    let hye = Tye;
-    const _ye = class e extends b {
+    let yye = _ye;
+    const wye = class e extends b {
         constructor(e) {
             super(), this.organizationId = "", this.scimDirectoryId = K.zero, nt.util.initPartial(e, this)
         }
@@ -96917,7 +96975,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _ye.runtime = nt, _ye.typeName = "aiserver.v1.DeleteScimDirectoryRequest", _ye.fields = nt.util.newFieldList(() => [{
+    wye.runtime = nt, wye.typeName = "aiserver.v1.DeleteScimDirectoryRequest", wye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "organization_id",
         kind: "scalar",
@@ -96928,8 +96986,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let yye = _ye;
-    const wye = class e extends b {
+    let kye = wye;
+    const Sye = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -96946,9 +97004,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wye.runtime = nt, wye.typeName = "aiserver.v1.DeleteScimDirectoryResponse", wye.fields = nt.util.newFieldList(() => []);
-    let kye = wye;
-    const Sye = class e extends b {
+    Sye.runtime = nt, Sye.typeName = "aiserver.v1.DeleteScimDirectoryResponse", Sye.fields = nt.util.newFieldList(() => []);
+    let Jye = Sye;
+    const vye = class e extends b {
         constructor(e) {
             super(), this.scimGroupExternalId = "", this.name = "", this.workosGroupId = "", this.idpId = "", nt.util.initPartial(e, this)
         }
@@ -96965,7 +97023,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Sye.runtime = nt, Sye.typeName = "aiserver.v1.ScimUpstreamGroup", Sye.fields = nt.util.newFieldList(() => [{
+    vye.runtime = nt, vye.typeName = "aiserver.v1.ScimUpstreamGroup", vye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "scim_group_external_id",
         kind: "scalar",
@@ -96986,8 +97044,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Jye = Sye;
-    const vye = class e extends b {
+    let Eye = vye;
+    const Nye = class e extends b {
         constructor(e) {
             super(), this.organizationId = "", this.scimDirectoryId = K.zero, nt.util.initPartial(e, this)
         }
@@ -97004,7 +97062,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vye.runtime = nt, vye.typeName = "aiserver.v1.ListScimGroupsFromUpstreamRequest", vye.fields = nt.util.newFieldList(() => [{
+    Nye.runtime = nt, Nye.typeName = "aiserver.v1.ListScimGroupsFromUpstreamRequest", Nye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "organization_id",
         kind: "scalar",
@@ -97015,8 +97073,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Eye = vye;
-    const Nye = class e extends b {
+    let Bye = Nye;
+    const Iye = class e extends b {
         constructor(e) {
             super(), this.groups = [], nt.util.initPartial(e, this)
         }
@@ -97033,15 +97091,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Nye.runtime = nt, Nye.typeName = "aiserver.v1.ListScimGroupsFromUpstreamResponse", Nye.fields = nt.util.newFieldList(() => [{
+    Iye.runtime = nt, Iye.typeName = "aiserver.v1.ListScimGroupsFromUpstreamResponse", Iye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "groups",
         kind: "message",
-        T: Jye,
+        T: Eye,
         repeated: !0
     }]);
-    let Bye = Nye;
-    const Iye = class e extends b {
+    let Pye = Iye;
+    const qye = class e extends b {
         constructor(e) {
             super(), this.id = K.zero, this.scimDirectoryId = K.zero, this.scimGroupExternalId = "", this.targetId = K.zero, this.targetType = 0, this.syncState = 0, this.createdAt = K.zero, this.updatedAt = K.zero, nt.util.initPartial(e, this)
         }
@@ -97058,7 +97116,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Iye.runtime = nt, Iye.typeName = "aiserver.v1.ScimTargetMapping", Iye.fields = nt.util.newFieldList(() => [{
+    qye.runtime = nt, qye.typeName = "aiserver.v1.ScimTargetMapping", qye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -97105,8 +97163,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Pye = Iye;
-    const qye = class e extends b {
+    let Rye = qye;
+    const Lye = class e extends b {
         constructor(e) {
             super(), this.organizationId = "", this.scimDirectoryId = K.zero, nt.util.initPartial(e, this)
         }
@@ -97123,7 +97181,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qye.runtime = nt, qye.typeName = "aiserver.v1.ListScimTargetMappingsRequest", qye.fields = nt.util.newFieldList(() => [{
+    Lye.runtime = nt, Lye.typeName = "aiserver.v1.ListScimTargetMappingsRequest", Lye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "organization_id",
         kind: "scalar",
@@ -97134,8 +97192,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Rye = qye;
-    const Lye = class e extends b {
+    let Fye = Lye;
+    const Oye = class e extends b {
         constructor(e) {
             super(), this.mappings = [], nt.util.initPartial(e, this)
         }
@@ -97152,15 +97210,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Lye.runtime = nt, Lye.typeName = "aiserver.v1.ListScimTargetMappingsResponse", Lye.fields = nt.util.newFieldList(() => [{
+    Oye.runtime = nt, Oye.typeName = "aiserver.v1.ListScimTargetMappingsResponse", Oye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "mappings",
         kind: "message",
-        T: Pye,
+        T: Rye,
         repeated: !0
     }]);
-    let Fye = Lye;
-    const Oye = class e extends b {
+    let bye = Oye;
+    const Cye = class e extends b {
         constructor(e) {
             super(), this.organizationId = "", this.scimDirectoryId = K.zero, this.scimGroupExternalId = "", this.targetId = K.zero, this.targetType = 0, nt.util.initPartial(e, this)
         }
@@ -97177,7 +97235,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Oye.runtime = nt, Oye.typeName = "aiserver.v1.CreateScimTargetMappingRequest", Oye.fields = nt.util.newFieldList(() => [{
+    Cye.runtime = nt, Cye.typeName = "aiserver.v1.CreateScimTargetMappingRequest", Cye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "organization_id",
         kind: "scalar",
@@ -97203,8 +97261,8 @@
         kind: "enum",
         T: nt.getEnumType(e1)
     }]);
-    let bye = Oye;
-    const Cye = class e extends b {
+    let Uye = Cye;
+    const Aye = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -97221,14 +97279,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Cye.runtime = nt, Cye.typeName = "aiserver.v1.CreateScimTargetMappingResponse", Cye.fields = nt.util.newFieldList(() => [{
+    Aye.runtime = nt, Aye.typeName = "aiserver.v1.CreateScimTargetMappingResponse", Aye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "mapping",
         kind: "message",
-        T: Pye
+        T: Rye
     }]);
-    let Uye = Cye;
-    const Aye = class e extends b {
+    let xye = Aye;
+    const Dye = class e extends b {
         constructor(e) {
             super(), this.organizationId = "", this.scimTargetMappingId = K.zero, nt.util.initPartial(e, this)
         }
@@ -97245,7 +97303,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Aye.runtime = nt, Aye.typeName = "aiserver.v1.DeleteScimTargetMappingRequest", Aye.fields = nt.util.newFieldList(() => [{
+    Dye.runtime = nt, Dye.typeName = "aiserver.v1.DeleteScimTargetMappingRequest", Dye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "organization_id",
         kind: "scalar",
@@ -97256,8 +97314,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let xye = Aye;
-    const Dye = class e extends b {
+    let Mye = Dye;
+    const Gye = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -97274,9 +97332,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Dye.runtime = nt, Dye.typeName = "aiserver.v1.DeleteScimTargetMappingResponse", Dye.fields = nt.util.newFieldList(() => []);
-    let Mye = Dye;
-    const Gye = class e extends b {
+    Gye.runtime = nt, Gye.typeName = "aiserver.v1.DeleteScimTargetMappingResponse", Gye.fields = nt.util.newFieldList(() => []);
+    let Yye = Gye;
+    const Vye = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.requestType = 0, nt.util.initPartial(e, this)
         }
@@ -97293,7 +97351,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Gye.runtime = nt, Gye.typeName = "aiserver.v1.NotifyTeamAdminsRequest", Gye.fields = nt.util.newFieldList(() => [{
+    Vye.runtime = nt, Vye.typeName = "aiserver.v1.NotifyTeamAdminsRequest", Vye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -97304,8 +97362,8 @@
         kind: "enum",
         T: nt.getEnumType(n1)
     }]);
-    let Yye = Gye;
-    const Vye = class e extends b {
+    let Hye = Vye;
+    const Kye = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -97322,7 +97380,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Vye.runtime = nt, Vye.typeName = "aiserver.v1.NotifyTeamAdminsResponse", Vye.fields = nt.util.newFieldList(() => [{
+    Kye.runtime = nt, Kye.typeName = "aiserver.v1.NotifyTeamAdminsResponse", Kye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -97334,8 +97392,8 @@
         T: 9,
         opt: !0
     }]);
-    let Hye = Vye;
-    const Kye = class e extends b {
+    let zye = Kye;
+    const Wye = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.requestType = 0, nt.util.initPartial(e, this)
         }
@@ -97352,7 +97410,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Kye.runtime = nt, Kye.typeName = "aiserver.v1.GetAdminNotificationStatusRequest", Kye.fields = nt.util.newFieldList(() => [{
+    Wye.runtime = nt, Wye.typeName = "aiserver.v1.GetAdminNotificationStatusRequest", Wye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -97363,8 +97421,8 @@
         kind: "enum",
         T: nt.getEnumType(n1)
     }]);
-    let zye = Kye;
-    const Wye = class e extends b {
+    let jye = Wye;
+    const Xye = class e extends b {
         constructor(e) {
             super(), this.canSend = !1, nt.util.initPartial(e, this)
         }
@@ -97381,7 +97439,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Wye.runtime = nt, Wye.typeName = "aiserver.v1.GetAdminNotificationStatusResponse", Wye.fields = nt.util.newFieldList(() => [{
+    Xye.runtime = nt, Xye.typeName = "aiserver.v1.GetAdminNotificationStatusResponse", Xye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "can_send",
         kind: "scalar",
@@ -97393,8 +97451,8 @@
         T: 3,
         opt: !0
     }]);
-    let jye = Wye;
-    const Xye = class e extends b {
+    let $ye = Xye;
+    const Qye = class e extends b {
         constructor(e) {
             super(), this.slackTeamId = "", this.slackUserId = "", this.setupPrerequisitesComplete = !1, nt.util.initPartial(e, this)
         }
@@ -97411,7 +97469,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Xye.runtime = nt, Xye.typeName = "aiserver.v1.CompletedLinkSlackAccountRequest", Xye.fields = nt.util.newFieldList(() => [{
+    Qye.runtime = nt, Qye.typeName = "aiserver.v1.CompletedLinkSlackAccountRequest", Qye.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "slack_team_id",
         kind: "scalar",
@@ -97427,8 +97485,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let $ye = Xye;
-    const Qye = class e extends b {
+    let Zye = Qye;
+    const ewe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -97445,9 +97503,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Qye.runtime = nt, Qye.typeName = "aiserver.v1.CompletedLinkSlackAccountResponse", Qye.fields = nt.util.newFieldList(() => []);
-    let Zye = Qye;
-    const ewe = class e extends b {
+    ewe.runtime = nt, ewe.typeName = "aiserver.v1.CompletedLinkSlackAccountResponse", ewe.fields = nt.util.newFieldList(() => []);
+    let twe = ewe;
+    const nwe = class e extends b {
         constructor(e) {
             super(), this.optIn = !1, nt.util.initPartial(e, this)
         }
@@ -97464,14 +97522,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ewe.runtime = nt, ewe.typeName = "aiserver.v1.OptOutNewPricingRequest", ewe.fields = nt.util.newFieldList(() => [{
+    nwe.runtime = nt, nwe.typeName = "aiserver.v1.OptOutNewPricingRequest", nwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "opt_in",
         kind: "scalar",
         T: 8
     }]);
-    let twe = ewe;
-    const nwe = class e extends b {
+    let rwe = nwe;
+    const swe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -97488,9 +97546,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nwe.runtime = nt, nwe.typeName = "aiserver.v1.OptOutNewPricingResponse", nwe.fields = nt.util.newFieldList(() => []);
-    let rwe = nwe;
-    const swe = class e extends b {
+    swe.runtime = nt, swe.typeName = "aiserver.v1.OptOutNewPricingResponse", swe.fields = nt.util.newFieldList(() => []);
+    let iwe = swe;
+    const awe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.optOut = !1, nt.util.initPartial(e, this)
         }
@@ -97507,7 +97565,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    swe.runtime = nt, swe.typeName = "aiserver.v1.UpdateTeamPrivacyModeMigrationOptOutRequest", swe.fields = nt.util.newFieldList(() => [{
+    awe.runtime = nt, awe.typeName = "aiserver.v1.UpdateTeamPrivacyModeMigrationOptOutRequest", awe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -97518,8 +97576,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let iwe = swe;
-    const awe = class e extends b {
+    let owe = awe;
+    const lwe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -97536,9 +97594,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    awe.runtime = nt, awe.typeName = "aiserver.v1.UpdateTeamPrivacyModeMigrationOptOutResponse", awe.fields = nt.util.newFieldList(() => []);
-    let owe = awe;
-    const lwe = class e extends b {
+    lwe.runtime = nt, lwe.typeName = "aiserver.v1.UpdateTeamPrivacyModeMigrationOptOutResponse", lwe.fields = nt.util.newFieldList(() => []);
+    let uwe = lwe;
+    const mwe = class e extends b {
         constructor(e) {
             super(), this.message = "", this.version = "", nt.util.initPartial(e, this)
         }
@@ -97555,7 +97613,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lwe.runtime = nt, lwe.typeName = "aiserver.v1.SubmitFeedbackRequest", lwe.fields = nt.util.newFieldList(() => [{
+    mwe.runtime = nt, mwe.typeName = "aiserver.v1.SubmitFeedbackRequest", mwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "message",
         kind: "scalar",
@@ -97602,8 +97660,8 @@
         T: 9,
         opt: !0
     }]);
-    let uwe = lwe;
-    const mwe = class e extends b {
+    let cwe = mwe;
+    const dwe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -97620,9 +97678,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mwe.runtime = nt, mwe.typeName = "aiserver.v1.SubmitFeedbackResponse", mwe.fields = nt.util.newFieldList(() => []);
-    let cwe = mwe;
-    const dwe = class e extends b {
+    dwe.runtime = nt, dwe.typeName = "aiserver.v1.SubmitFeedbackResponse", dwe.fields = nt.util.newFieldList(() => []);
+    let fwe = dwe;
+    const pwe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -97639,14 +97697,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dwe.runtime = nt, dwe.typeName = "aiserver.v1.GetTeamBugbotSettingsRequest", dwe.fields = nt.util.newFieldList(() => [{
+    pwe.runtime = nt, pwe.typeName = "aiserver.v1.GetTeamBugbotSettingsRequest", pwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let fwe = dwe;
-    const pwe = class e extends b {
+    let gwe = pwe;
+    const Twe = class e extends b {
         constructor(e) {
             super(), this.githubUsername = "", this.firstReviewTimestamp = K.zero, nt.util.initPartial(e, this)
         }
@@ -97663,7 +97721,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pwe.runtime = nt, pwe.typeName = "aiserver.v1.BugbotLicenseUsage", pwe.fields = nt.util.newFieldList(() => [{
+    Twe.runtime = nt, Twe.typeName = "aiserver.v1.BugbotLicenseUsage", Twe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "github_username",
         kind: "scalar",
@@ -97680,8 +97738,8 @@
         T: 9,
         opt: !0
     }]);
-    let gwe = pwe;
-    const Twe = class e extends b {
+    let hwe = Twe;
+    const _we = class e extends b {
         constructor(e) {
             super(), this.bugbotLicensesHardLimit = 0, this.bugbotPlanEnabled = !1, this.allowlist = [], this.currentCycleUniqueUsers = 0, this.bugbotLicenseCount = 0, this.allowlistConfig = 0, this.bugbotWasEnabledInThisBillingCycle = !1, this.licenseUsage = [], this.bugbotUsageTier = 0, this.bugbotGloballyDisabled = !1, this.mcpServerNames = [], this.bugbotBillingMode = 0, this.bugbotUsageBasedOnEnable = !1, this.canMigrateToUsageBased = !1, this.seatLicenseCount = 0, this.bugbotMigrationCreditAlreadyGranted = !1, this.isIncrementalReviewEnabled = !1, nt.util.initPartial(e, this)
         }
@@ -97698,7 +97756,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Twe.runtime = nt, Twe.typeName = "aiserver.v1.GetTeamBugbotSettingsResponse", Twe.fields = nt.util.newFieldList(() => [{
+    _we.runtime = nt, _we.typeName = "aiserver.v1.GetTeamBugbotSettingsResponse", _we.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "bugbot_licenses_hard_limit",
         kind: "scalar",
@@ -97738,7 +97796,7 @@
         no: 8,
         name: "license_usage",
         kind: "message",
-        T: gwe,
+        T: hwe,
         repeated: !0
     }, {
         no: 9,
@@ -97787,8 +97845,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let hwe = Twe;
-    const _we = class e extends b {
+    let ywe = _we;
+    const wwe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.allowlist = [], this.mcpServerNames = [], nt.util.initPartial(e, this)
         }
@@ -97805,7 +97863,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _we.runtime = nt, _we.typeName = "aiserver.v1.UpdateTeamBugbotSettingsRequest", _we.fields = nt.util.newFieldList(() => [{
+    wwe.runtime = nt, wwe.typeName = "aiserver.v1.UpdateTeamBugbotSettingsRequest", wwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -97853,8 +97911,8 @@
         T: 8,
         opt: !0
     }]);
-    let ywe = _we;
-    const wwe = class e extends b {
+    let kwe = wwe;
+    const Swe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -97871,9 +97929,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wwe.runtime = nt, wwe.typeName = "aiserver.v1.UpdateTeamBugbotSettingsResponse", wwe.fields = nt.util.newFieldList(() => []);
-    let kwe = wwe;
-    const Swe = class e extends b {
+    Swe.runtime = nt, Swe.typeName = "aiserver.v1.UpdateTeamBugbotSettingsResponse", Swe.fields = nt.util.newFieldList(() => []);
+    let Jwe = Swe;
+    const vwe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -97890,14 +97948,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Swe.runtime = nt, Swe.typeName = "aiserver.v1.MigrateTeamBugbotToUsageBasedBillingRequest", Swe.fields = nt.util.newFieldList(() => [{
+    vwe.runtime = nt, vwe.typeName = "aiserver.v1.MigrateTeamBugbotToUsageBasedBillingRequest", vwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let Jwe = Swe;
-    const vwe = class e extends b {
+    let Ewe = vwe;
+    const Nwe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -97914,9 +97972,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vwe.runtime = nt, vwe.typeName = "aiserver.v1.MigrateTeamBugbotToUsageBasedBillingResponse", vwe.fields = nt.util.newFieldList(() => []);
-    let Ewe = vwe;
-    const Nwe = class e extends b {
+    Nwe.runtime = nt, Nwe.typeName = "aiserver.v1.MigrateTeamBugbotToUsageBasedBillingResponse", Nwe.fields = nt.util.newFieldList(() => []);
+    let Bwe = Nwe;
+    const Iwe = class e extends b {
         constructor(e) {
             super(), this.content = "", this.sortOrder = 0, nt.util.initPartial(e, this)
         }
@@ -97933,7 +97991,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Nwe.runtime = nt, Nwe.typeName = "aiserver.v1.BugbotModePrompt", Nwe.fields = nt.util.newFieldList(() => [{
+    Iwe.runtime = nt, Iwe.typeName = "aiserver.v1.BugbotModePrompt", Iwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "content",
         kind: "scalar",
@@ -97944,8 +98002,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Bwe = Nwe;
-    const Iwe = class e extends b {
+    let Pwe = Iwe;
+    const qwe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -97962,37 +98020,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Iwe.runtime = nt, Iwe.typeName = "aiserver.v1.GetBugbotModeRequest", Iwe.fields = nt.util.newFieldList(() => []);
-    let Pwe = Iwe;
-    const qwe = class e extends b {
-        constructor(e) {
-            super(), this.mode = 0, this.prompts = [], nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    qwe.runtime = nt, qwe.typeName = "aiserver.v1.GetBugbotModeResponse", qwe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "mode",
-        kind: "enum",
-        T: nt.getEnumType(r1)
-    }, {
-        no: 2,
-        name: "prompts",
-        kind: "message",
-        T: Bwe,
-        repeated: !0
-    }]);
+    qwe.runtime = nt, qwe.typeName = "aiserver.v1.GetBugbotModeRequest", qwe.fields = nt.util.newFieldList(() => []);
     let Rwe = qwe;
     const Lwe = class e extends b {
         constructor(e) {
@@ -98011,7 +98039,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Lwe.runtime = nt, Lwe.typeName = "aiserver.v1.UpdateBugbotModeRequest", Lwe.fields = nt.util.newFieldList(() => [{
+    Lwe.runtime = nt, Lwe.typeName = "aiserver.v1.GetBugbotModeResponse", Lwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "mode",
         kind: "enum",
@@ -98020,7 +98048,7 @@
         no: 2,
         name: "prompts",
         kind: "message",
-        T: Bwe,
+        T: Pwe,
         repeated: !0
     }]);
     let Fwe = Lwe;
@@ -98041,7 +98069,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Owe.runtime = nt, Owe.typeName = "aiserver.v1.UpdateBugbotModeResponse", Owe.fields = nt.util.newFieldList(() => [{
+    Owe.runtime = nt, Owe.typeName = "aiserver.v1.UpdateBugbotModeRequest", Owe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "mode",
         kind: "enum",
@@ -98050,11 +98078,41 @@
         no: 2,
         name: "prompts",
         kind: "message",
-        T: Bwe,
+        T: Pwe,
         repeated: !0
     }]);
     let bwe = Owe;
     const Cwe = class e extends b {
+        constructor(e) {
+            super(), this.mode = 0, this.prompts = [], nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    Cwe.runtime = nt, Cwe.typeName = "aiserver.v1.UpdateBugbotModeResponse", Cwe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "mode",
+        kind: "enum",
+        T: nt.getEnumType(r1)
+    }, {
+        no: 2,
+        name: "prompts",
+        kind: "message",
+        T: Pwe,
+        repeated: !0
+    }]);
+    let Uwe = Cwe;
+    const Awe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.newNumLicenses = 0, nt.util.initPartial(e, this)
         }
@@ -98071,7 +98129,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Cwe.runtime = nt, Cwe.typeName = "aiserver.v1.RevokeBugBotLicensesRequest", Cwe.fields = nt.util.newFieldList(() => [{
+    Awe.runtime = nt, Awe.typeName = "aiserver.v1.RevokeBugBotLicensesRequest", Awe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -98082,8 +98140,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Uwe = Cwe;
-    const Awe = class e extends b {
+    let xwe = Awe;
+    const Dwe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -98100,9 +98158,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Awe.runtime = nt, Awe.typeName = "aiserver.v1.RevokeBugBotLicensesResponse", Awe.fields = nt.util.newFieldList(() => []);
-    let xwe = Awe;
-    const Dwe = class e extends b {
+    Dwe.runtime = nt, Dwe.typeName = "aiserver.v1.RevokeBugBotLicensesResponse", Dwe.fields = nt.util.newFieldList(() => []);
+    let Mwe = Dwe;
+    const Gwe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.githubUserNodeId = "", nt.util.initPartial(e, this)
         }
@@ -98119,7 +98177,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Dwe.runtime = nt, Dwe.typeName = "aiserver.v1.RevokeUserBugbotLicenseRequest", Dwe.fields = nt.util.newFieldList(() => [{
+    Gwe.runtime = nt, Gwe.typeName = "aiserver.v1.RevokeUserBugbotLicenseRequest", Gwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -98130,8 +98188,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Mwe = Dwe;
-    const Gwe = class e extends b {
+    let Ywe = Gwe;
+    const Vwe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -98148,9 +98206,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Gwe.runtime = nt, Gwe.typeName = "aiserver.v1.RevokeUserBugbotLicenseResponse", Gwe.fields = nt.util.newFieldList(() => []);
-    let Ywe = Gwe;
-    const Vwe = class e extends b {
+    Vwe.runtime = nt, Vwe.typeName = "aiserver.v1.RevokeUserBugbotLicenseResponse", Vwe.fields = nt.util.newFieldList(() => []);
+    let Hwe = Vwe;
+    const Kwe = class e extends b {
         constructor(e) {
             super(), this.code = "", nt.util.initPartial(e, this)
         }
@@ -98167,14 +98225,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Vwe.runtime = nt, Vwe.typeName = "aiserver.v1.RedeemGiftCodeRequest", Vwe.fields = nt.util.newFieldList(() => [{
+    Kwe.runtime = nt, Kwe.typeName = "aiserver.v1.RedeemGiftCodeRequest", Kwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "code",
         kind: "scalar",
         T: 9
     }]);
-    let Hwe = Vwe;
-    const Kwe = class e extends b {
+    let zwe = Kwe;
+    const Wwe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -98191,7 +98249,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Kwe.runtime = nt, Kwe.typeName = "aiserver.v1.RedeemGiftCodeResponse", Kwe.fields = nt.util.newFieldList(() => [{
+    Wwe.runtime = nt, Wwe.typeName = "aiserver.v1.RedeemGiftCodeResponse", Wwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -98215,8 +98273,8 @@
         T: 9,
         opt: !0
     }]);
-    let zwe = Kwe;
-    const Wwe = class e extends b {
+    let jwe = Wwe;
+    const Xwe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -98233,9 +98291,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Wwe.runtime = nt, Wwe.typeName = "aiserver.v1.CanStudentReverifyRequest", Wwe.fields = nt.util.newFieldList(() => []);
-    let jwe = Wwe;
-    const Xwe = class e extends b {
+    Xwe.runtime = nt, Xwe.typeName = "aiserver.v1.CanStudentReverifyRequest", Xwe.fields = nt.util.newFieldList(() => []);
+    let $we = Xwe;
+    const Qwe = class e extends b {
         constructor(e) {
             super(), this.canReverify = !1, this.hasReverified = !1, nt.util.initPartial(e, this)
         }
@@ -98252,7 +98310,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Xwe.runtime = nt, Xwe.typeName = "aiserver.v1.CanStudentReverifyResponse", Xwe.fields = nt.util.newFieldList(() => [{
+    Qwe.runtime = nt, Qwe.typeName = "aiserver.v1.CanStudentReverifyResponse", Qwe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "can_reverify",
         kind: "scalar",
@@ -98269,8 +98327,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let $we = Xwe;
-    const Qwe = class e extends b {
+    let Zwe = Qwe;
+    const eke = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -98287,15 +98345,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Qwe.runtime = nt, Qwe.typeName = "aiserver.v1.GetActiveOffboardingBannerRequest", Qwe.fields = nt.util.newFieldList(() => [{
+    eke.runtime = nt, eke.typeName = "aiserver.v1.GetActiveOffboardingBannerRequest", eke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5,
         opt: !0
     }]);
-    let Zwe = Qwe;
-    const eke = class e extends b {
+    let tke = eke;
+    const nke = class e extends b {
         constructor(e) {
             super(), this.hasBanner = !1, nt.util.initPartial(e, this)
         }
@@ -98312,7 +98370,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eke.runtime = nt, eke.typeName = "aiserver.v1.GetActiveOffboardingBannerResponse", eke.fields = nt.util.newFieldList(() => [{
+    nke.runtime = nt, nke.typeName = "aiserver.v1.GetActiveOffboardingBannerResponse", nke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "has_banner",
         kind: "scalar",
@@ -98321,11 +98379,11 @@
         no: 2,
         name: "banner",
         kind: "message",
-        T: rke,
+        T: ike,
         opt: !0
     }]);
-    let tke = eke;
-    const nke = class e extends b {
+    let rke = nke;
+    const ske = class e extends b {
         constructor(e) {
             super(), this.id = "", this.severity = "", this.messageKey = "", this.dismissible = !1, this.flowType = "", this.phaseId = "", nt.util.initPartial(e, this)
         }
@@ -98342,7 +98400,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nke.runtime = nt, nke.typeName = "aiserver.v1.OffboardingBanner", nke.fields = nt.util.newFieldList(() => [{
+    ske.runtime = nt, ske.typeName = "aiserver.v1.OffboardingBanner", ske.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -98385,8 +98443,8 @@
         T: 9,
         opt: !0
     }]);
-    let rke = nke;
-    const ske = class e extends b {
+    let ike = ske;
+    const ake = class e extends b {
         constructor(e) {
             super(), this.action = "", this.args = {}, nt.util.initPartial(e, this)
         }
@@ -98403,7 +98461,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ske.runtime = nt, ske.typeName = "aiserver.v1.ClientActionRequest", ske.fields = nt.util.newFieldList(() => [{
+    ake.runtime = nt, ake.typeName = "aiserver.v1.ClientActionRequest", ake.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "action",
         kind: "scalar",
@@ -98418,8 +98476,8 @@
             T: 9
         }
     }]);
-    let ike = ske;
-    const ake = class e extends b {
+    let oke = ake;
+    const lke = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -98436,7 +98494,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ake.runtime = nt, ake.typeName = "aiserver.v1.ClientActionResponse", ake.fields = nt.util.newFieldList(() => [{
+    lke.runtime = nt, lke.typeName = "aiserver.v1.ClientActionResponse", lke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -98454,8 +98512,8 @@
         T: 9,
         opt: !0
     }]);
-    let oke = ake;
-    const lke = class e extends b {
+    let uke = lke;
+    const mke = class e extends b {
         constructor(e) {
             super(), this.id = "", this.name = "", this.content = "", this.globs = [], this.isActive = !1, this.isRequired = !1, nt.util.initPartial(e, this)
         }
@@ -98472,7 +98530,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lke.runtime = nt, lke.typeName = "aiserver.v1.Rule", lke.fields = nt.util.newFieldList(() => [{
+    mke.runtime = nt, mke.typeName = "aiserver.v1.Rule", mke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -98504,8 +98562,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let uke = lke;
-    const mke = class e extends b {
+    let cke = mke;
+    const dke = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -98522,15 +98580,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mke.runtime = nt, mke.typeName = "aiserver.v1.GetTeamRulesRequest", mke.fields = nt.util.newFieldList(() => [{
+    dke.runtime = nt, dke.typeName = "aiserver.v1.GetTeamRulesRequest", dke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "active_only",
         kind: "scalar",
         T: 8,
         opt: !0
     }]);
-    let cke = mke;
-    const dke = class e extends b {
+    let fke = dke;
+    const pke = class e extends b {
         constructor(e) {
             super(), this.rules = [], nt.util.initPartial(e, this)
         }
@@ -98547,15 +98605,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dke.runtime = nt, dke.typeName = "aiserver.v1.GetTeamRulesResponse", dke.fields = nt.util.newFieldList(() => [{
+    pke.runtime = nt, pke.typeName = "aiserver.v1.GetTeamRulesResponse", pke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rules",
         kind: "message",
-        T: uke,
+        T: cke,
         repeated: !0
     }]);
-    let fke = dke;
-    const pke = class e extends b {
+    let gke = pke;
+    const Tke = class e extends b {
         constructor(e) {
             super(), this.name = "", this.content = "", this.globs = [], this.isActive = !1, this.isRequired = !1, nt.util.initPartial(e, this)
         }
@@ -98572,7 +98630,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pke.runtime = nt, pke.typeName = "aiserver.v1.CreateTeamRuleRequest", pke.fields = nt.util.newFieldList(() => [{
+    Tke.runtime = nt, Tke.typeName = "aiserver.v1.CreateTeamRuleRequest", Tke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -98599,8 +98657,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let gke = pke;
-    const Tke = class e extends b {
+    let hke = Tke;
+    const _ke = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -98617,14 +98675,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Tke.runtime = nt, Tke.typeName = "aiserver.v1.CreateTeamRuleResponse", Tke.fields = nt.util.newFieldList(() => [{
+    _ke.runtime = nt, _ke.typeName = "aiserver.v1.CreateTeamRuleResponse", _ke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule",
         kind: "message",
-        T: uke
+        T: cke
     }]);
-    let hke = Tke;
-    const _ke = class e extends b {
+    let yke = _ke;
+    const wke = class e extends b {
         constructor(e) {
             super(), this.ruleId = "", this.globs = [], nt.util.initPartial(e, this)
         }
@@ -98641,7 +98699,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _ke.runtime = nt, _ke.typeName = "aiserver.v1.UpdateTeamRuleRequest", _ke.fields = nt.util.newFieldList(() => [{
+    wke.runtime = nt, wke.typeName = "aiserver.v1.UpdateTeamRuleRequest", wke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule_id",
         kind: "scalar",
@@ -98677,8 +98735,8 @@
         T: 8,
         opt: !0
     }]);
-    let yke = _ke;
-    const wke = class e extends b {
+    let kke = wke;
+    const Ske = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -98695,14 +98753,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wke.runtime = nt, wke.typeName = "aiserver.v1.UpdateTeamRuleResponse", wke.fields = nt.util.newFieldList(() => [{
+    Ske.runtime = nt, Ske.typeName = "aiserver.v1.UpdateTeamRuleResponse", Ske.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule",
         kind: "message",
-        T: uke
+        T: cke
     }]);
-    let kke = wke;
-    const Ske = class e extends b {
+    let Jke = Ske;
+    const vke = class e extends b {
         constructor(e) {
             super(), this.ruleId = "", nt.util.initPartial(e, this)
         }
@@ -98719,14 +98777,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ske.runtime = nt, Ske.typeName = "aiserver.v1.DeleteTeamRuleRequest", Ske.fields = nt.util.newFieldList(() => [{
+    vke.runtime = nt, vke.typeName = "aiserver.v1.DeleteTeamRuleRequest", vke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule_id",
         kind: "scalar",
         T: 9
     }]);
-    let Jke = Ske;
-    const vke = class e extends b {
+    let Eke = vke;
+    const Nke = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -98743,9 +98801,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vke.runtime = nt, vke.typeName = "aiserver.v1.DeleteTeamRuleResponse", vke.fields = nt.util.newFieldList(() => []);
-    let Eke = vke;
-    const Nke = class e extends b {
+    Nke.runtime = nt, Nke.typeName = "aiserver.v1.DeleteTeamRuleResponse", Nke.fields = nt.util.newFieldList(() => []);
+    let Bke = Nke;
+    const Ike = class e extends b {
         constructor(e) {
             super(), this.id = 0, this.hookStep = "", this.scriptName = "", this.operatingSystems = [], this.isActive = !1, nt.util.initPartial(e, this)
         }
@@ -98762,7 +98820,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Nke.runtime = nt, Nke.typeName = "aiserver.v1.TeamHook", Nke.fields = nt.util.newFieldList(() => [{
+    Ike.runtime = nt, Ike.typeName = "aiserver.v1.TeamHook", Ike.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -98813,8 +98871,8 @@
         T: 9,
         opt: !0
     }]);
-    let Bke = Nke;
-    const Ike = class e extends b {
+    let Pke = Ike;
+    const qke = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -98831,15 +98889,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ike.runtime = nt, Ike.typeName = "aiserver.v1.GetTeamHooksRequest", Ike.fields = nt.util.newFieldList(() => [{
+    qke.runtime = nt, qke.typeName = "aiserver.v1.GetTeamHooksRequest", qke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "active_only",
         kind: "scalar",
         T: 8,
         opt: !0
     }]);
-    let Pke = Ike;
-    const qke = class e extends b {
+    let Rke = qke;
+    const Lke = class e extends b {
         constructor(e) {
             super(), this.hooks = [], nt.util.initPartial(e, this)
         }
@@ -98856,15 +98914,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qke.runtime = nt, qke.typeName = "aiserver.v1.GetTeamHooksResponse", qke.fields = nt.util.newFieldList(() => [{
+    Lke.runtime = nt, Lke.typeName = "aiserver.v1.GetTeamHooksResponse", Lke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "hooks",
         kind: "message",
-        T: Bke,
+        T: Pke,
         repeated: !0
     }]);
-    let Rke = qke;
-    const Lke = class e extends b {
+    let Fke = Lke;
+    const Oke = class e extends b {
         constructor(e) {
             super(), this.hookStep = "", this.scriptName = "", this.operatingSystems = [], this.isActive = !1, nt.util.initPartial(e, this)
         }
@@ -98881,7 +98939,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Lke.runtime = nt, Lke.typeName = "aiserver.v1.CreateTeamHookRequest", Lke.fields = nt.util.newFieldList(() => [{
+    Oke.runtime = nt, Oke.typeName = "aiserver.v1.CreateTeamHookRequest", Oke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "hook_step",
         kind: "scalar",
@@ -98927,8 +98985,8 @@
         T: 9,
         opt: !0
     }]);
-    let Fke = Lke;
-    const Oke = class e extends b {
+    let bke = Oke;
+    const Cke = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -98945,14 +99003,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Oke.runtime = nt, Oke.typeName = "aiserver.v1.CreateTeamHookResponse", Oke.fields = nt.util.newFieldList(() => [{
+    Cke.runtime = nt, Cke.typeName = "aiserver.v1.CreateTeamHookResponse", Cke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "hook",
         kind: "message",
-        T: Bke
+        T: Pke
     }]);
-    let bke = Oke;
-    const Cke = class e extends b {
+    let Uke = Cke;
+    const Ake = class e extends b {
         constructor(e) {
             super(), this.hookId = "", this.operatingSystems = [], nt.util.initPartial(e, this)
         }
@@ -98969,7 +99027,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Cke.runtime = nt, Cke.typeName = "aiserver.v1.UpdateTeamHookRequest", Cke.fields = nt.util.newFieldList(() => [{
+    Ake.runtime = nt, Ake.typeName = "aiserver.v1.UpdateTeamHookRequest", Ake.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "hook_id",
         kind: "scalar",
@@ -99017,8 +99075,8 @@
         T: 9,
         opt: !0
     }]);
-    let Uke = Cke;
-    const Ake = class e extends b {
+    let xke = Ake;
+    const Dke = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -99035,14 +99093,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ake.runtime = nt, Ake.typeName = "aiserver.v1.UpdateTeamHookResponse", Ake.fields = nt.util.newFieldList(() => [{
+    Dke.runtime = nt, Dke.typeName = "aiserver.v1.UpdateTeamHookResponse", Dke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "hook",
         kind: "message",
-        T: Bke
+        T: Pke
     }]);
-    let xke = Ake;
-    const Dke = class e extends b {
+    let Mke = Dke;
+    const Gke = class e extends b {
         constructor(e) {
             super(), this.hookId = "", nt.util.initPartial(e, this)
         }
@@ -99059,14 +99117,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Dke.runtime = nt, Dke.typeName = "aiserver.v1.DeleteTeamHookRequest", Dke.fields = nt.util.newFieldList(() => [{
+    Gke.runtime = nt, Gke.typeName = "aiserver.v1.DeleteTeamHookRequest", Gke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "hook_id",
         kind: "scalar",
         T: 9
     }]);
-    let Mke = Dke;
-    const Gke = class e extends b {
+    let Yke = Gke;
+    const Vke = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -99083,9 +99141,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Gke.runtime = nt, Gke.typeName = "aiserver.v1.DeleteTeamHookResponse", Gke.fields = nt.util.newFieldList(() => []);
-    let Yke = Gke;
-    const Vke = class e extends b {
+    Vke.runtime = nt, Vke.typeName = "aiserver.v1.DeleteTeamHookResponse", Vke.fields = nt.util.newFieldList(() => []);
+    let Hke = Vke;
+    const Kke = class e extends b {
         constructor(e) {
             super(), this.id = "", this.name = "", this.content = "", this.isActive = !1, nt.util.initPartial(e, this)
         }
@@ -99102,7 +99160,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Vke.runtime = nt, Vke.typeName = "aiserver.v1.TeamCommand", Vke.fields = nt.util.newFieldList(() => [{
+    Kke.runtime = nt, Kke.typeName = "aiserver.v1.TeamCommand", Kke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -99129,8 +99187,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let Hke = Vke;
-    const Kke = class e extends b {
+    let zke = Kke;
+    const Wke = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -99147,15 +99205,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Kke.runtime = nt, Kke.typeName = "aiserver.v1.GetTeamCommandsRequest", Kke.fields = nt.util.newFieldList(() => [{
+    Wke.runtime = nt, Wke.typeName = "aiserver.v1.GetTeamCommandsRequest", Wke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "active_only",
         kind: "scalar",
         T: 8,
         opt: !0
     }]);
-    let zke = Kke;
-    const Wke = class e extends b {
+    let jke = Wke;
+    const Xke = class e extends b {
         constructor(e) {
             super(), this.commands = [], nt.util.initPartial(e, this)
         }
@@ -99172,15 +99230,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Wke.runtime = nt, Wke.typeName = "aiserver.v1.GetTeamCommandsResponse", Wke.fields = nt.util.newFieldList(() => [{
+    Xke.runtime = nt, Xke.typeName = "aiserver.v1.GetTeamCommandsResponse", Xke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "commands",
         kind: "message",
-        T: Hke,
+        T: zke,
         repeated: !0
     }]);
-    let jke = Wke;
-    const Xke = class e extends b {
+    let $ke = Xke;
+    const Qke = class e extends b {
         constructor(e) {
             super(), this.name = "", this.content = "", nt.util.initPartial(e, this)
         }
@@ -99197,7 +99255,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Xke.runtime = nt, Xke.typeName = "aiserver.v1.CreateTeamCommandRequest", Xke.fields = nt.util.newFieldList(() => [{
+    Qke.runtime = nt, Qke.typeName = "aiserver.v1.CreateTeamCommandRequest", Qke.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -99220,8 +99278,8 @@
         T: 8,
         opt: !0
     }]);
-    let $ke = Xke;
-    const Qke = class e extends b {
+    let Zke = Qke;
+    const eSe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -99238,14 +99296,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Qke.runtime = nt, Qke.typeName = "aiserver.v1.CreateTeamCommandResponse", Qke.fields = nt.util.newFieldList(() => [{
+    eSe.runtime = nt, eSe.typeName = "aiserver.v1.CreateTeamCommandResponse", eSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "command",
         kind: "message",
-        T: Hke
+        T: zke
     }]);
-    let Zke = Qke;
-    const eSe = class e extends b {
+    let tSe = eSe;
+    const nSe = class e extends b {
         constructor(e) {
             super(), this.commandId = "", nt.util.initPartial(e, this)
         }
@@ -99262,7 +99320,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eSe.runtime = nt, eSe.typeName = "aiserver.v1.UpdateTeamCommandRequest", eSe.fields = nt.util.newFieldList(() => [{
+    nSe.runtime = nt, nSe.typeName = "aiserver.v1.UpdateTeamCommandRequest", nSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "command_id",
         kind: "scalar",
@@ -99292,8 +99350,8 @@
         T: 8,
         opt: !0
     }]);
-    let tSe = eSe;
-    const nSe = class e extends b {
+    let rSe = nSe;
+    const sSe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -99310,14 +99368,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nSe.runtime = nt, nSe.typeName = "aiserver.v1.UpdateTeamCommandResponse", nSe.fields = nt.util.newFieldList(() => [{
+    sSe.runtime = nt, sSe.typeName = "aiserver.v1.UpdateTeamCommandResponse", sSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "command",
         kind: "message",
-        T: Hke
+        T: zke
     }]);
-    let rSe = nSe;
-    const sSe = class e extends b {
+    let iSe = sSe;
+    const aSe = class e extends b {
         constructor(e) {
             super(), this.commandId = "", nt.util.initPartial(e, this)
         }
@@ -99334,14 +99392,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sSe.runtime = nt, sSe.typeName = "aiserver.v1.DeleteTeamCommandRequest", sSe.fields = nt.util.newFieldList(() => [{
+    aSe.runtime = nt, aSe.typeName = "aiserver.v1.DeleteTeamCommandRequest", aSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "command_id",
         kind: "scalar",
         T: 9
     }]);
-    let iSe = sSe;
-    const aSe = class e extends b {
+    let oSe = aSe;
+    const lSe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -99358,9 +99416,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    aSe.runtime = nt, aSe.typeName = "aiserver.v1.DeleteTeamCommandResponse", aSe.fields = nt.util.newFieldList(() => []);
-    let oSe = aSe;
-    const lSe = class e extends b {
+    lSe.runtime = nt, lSe.typeName = "aiserver.v1.DeleteTeamCommandResponse", lSe.fields = nt.util.newFieldList(() => []);
+    let uSe = lSe;
+    const mSe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.content = "", this.availability = 0, this.disabledSurfaces = [], this.requiresAllWorkspaceFoldersAreGitRepos = !1, nt.util.initPartial(e, this)
         }
@@ -99377,7 +99435,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lSe.runtime = nt, lSe.typeName = "aiserver.v1.GlobalCommand", lSe.fields = nt.util.newFieldList(() => [{
+    mSe.runtime = nt, mSe.typeName = "aiserver.v1.GlobalCommand", mSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -99416,8 +99474,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let uSe = lSe;
-    const mSe = class e extends b {
+    let cSe = mSe;
+    const dSe = class e extends b {
         constructor(e) {
             super(), this.surface = 0, nt.util.initPartial(e, this)
         }
@@ -99434,14 +99492,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mSe.runtime = nt, mSe.typeName = "aiserver.v1.GetGlobalCommandsRequest", mSe.fields = nt.util.newFieldList(() => [{
+    dSe.runtime = nt, dSe.typeName = "aiserver.v1.GetGlobalCommandsRequest", dSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "surface",
         kind: "enum",
         T: nt.getEnumType(i1)
     }]);
-    let cSe = mSe;
-    const dSe = class e extends b {
+    let fSe = dSe;
+    const pSe = class e extends b {
         constructor(e) {
             super(), this.commands = [], nt.util.initPartial(e, this)
         }
@@ -99458,15 +99516,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dSe.runtime = nt, dSe.typeName = "aiserver.v1.GetGlobalCommandsResponse", dSe.fields = nt.util.newFieldList(() => [{
+    pSe.runtime = nt, pSe.typeName = "aiserver.v1.GetGlobalCommandsResponse", pSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "commands",
         kind: "message",
-        T: uSe,
+        T: cSe,
         repeated: !0
     }]);
-    let fSe = dSe;
-    const pSe = class e extends b {
+    let gSe = pSe;
+    const TSe = class e extends b {
         constructor(e) {
             super(), this.repoUrl = "", nt.util.initPartial(e, this)
         }
@@ -99483,7 +99541,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pSe.runtime = nt, pSe.typeName = "aiserver.v1.GetRepoSlashCommandsRequest", pSe.fields = nt.util.newFieldList(() => [{
+    TSe.runtime = nt, TSe.typeName = "aiserver.v1.GetRepoSlashCommandsRequest", TSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
@@ -99495,8 +99553,8 @@
         T: 9,
         opt: !0
     }]);
-    let gSe = pSe;
-    const TSe = class e extends b {
+    let hSe = TSe;
+    const _Se = class e extends b {
         constructor(e) {
             super(), this.skillNames = [], this.commandNames = [], nt.util.initPartial(e, this)
         }
@@ -99513,7 +99571,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    TSe.runtime = nt, TSe.typeName = "aiserver.v1.GetRepoSlashCommandsResponse", TSe.fields = nt.util.newFieldList(() => [{
+    _Se.runtime = nt, _Se.typeName = "aiserver.v1.GetRepoSlashCommandsResponse", _Se.fields = nt.util.newFieldList(() => [{
         no: 3,
         name: "skill_names",
         kind: "scalar",
@@ -99526,8 +99584,8 @@
         T: 9,
         repeated: !0
     }]);
-    let hSe = TSe;
-    const _Se = class e extends b {
+    let ySe = _Se;
+    const wSe = class e extends b {
         constructor(e) {
             super(), this.bcId = "", nt.util.initPartial(e, this)
         }
@@ -99544,7 +99602,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _Se.runtime = nt, _Se.typeName = "aiserver.v1.GetBackgroundComposerSlashCommandsRequest", _Se.fields = nt.util.newFieldList(() => [{
+    wSe.runtime = nt, wSe.typeName = "aiserver.v1.GetBackgroundComposerSlashCommandsRequest", wSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -99562,8 +99620,8 @@
         T: 9,
         opt: !0
     }]);
-    let ySe = _Se;
-    const wSe = class e extends b {
+    let kSe = wSe;
+    const SSe = class e extends b {
         constructor(e) {
             super(), this.skillNames = [], this.commandNames = [], nt.util.initPartial(e, this)
         }
@@ -99580,7 +99638,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wSe.runtime = nt, wSe.typeName = "aiserver.v1.GetBackgroundComposerSlashCommandsResponse", wSe.fields = nt.util.newFieldList(() => [{
+    SSe.runtime = nt, SSe.typeName = "aiserver.v1.GetBackgroundComposerSlashCommandsResponse", SSe.fields = nt.util.newFieldList(() => [{
         no: 3,
         name: "skill_names",
         kind: "scalar",
@@ -99592,31 +99650,6 @@
         kind: "scalar",
         T: 9,
         repeated: !0
-    }]);
-    let kSe = wSe;
-    const SSe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    SSe.runtime = nt, SSe.typeName = "aiserver.v1.GetCloudAgentPluginsSnapshotRequest", SSe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "use_replica",
-        kind: "scalar",
-        T: 8,
-        opt: !0
     }]);
     let JSe = SSe;
     const vSe = class e extends b {
@@ -99636,11 +99669,36 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vSe.runtime = nt, vSe.typeName = "aiserver.v1.CloudAgentPluginSnapshot", vSe.fields = nt.util.newFieldList(() => [{
+    vSe.runtime = nt, vSe.typeName = "aiserver.v1.GetCloudAgentPluginsSnapshotRequest", vSe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "use_replica",
+        kind: "scalar",
+        T: 8,
+        opt: !0
+    }]);
+    let ESe = vSe;
+    const NSe = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    NSe.runtime = nt, NSe.typeName = "aiserver.v1.CloudAgentPluginSnapshot", NSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "effective_plugin",
         kind: "message",
-        T: kPe
+        T: JPe
     }, {
         no: 3,
         name: "git_ref",
@@ -99648,8 +99706,8 @@
         T: 9,
         opt: !0
     }]);
-    let ESe = vSe;
-    const NSe = class e extends b {
+    let BSe = NSe;
+    const ISe = class e extends b {
         constructor(e) {
             super(), this.snapshotToken = "", this.plugins = [], this.warnings = [], nt.util.initPartial(e, this)
         }
@@ -99666,7 +99724,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    NSe.runtime = nt, NSe.typeName = "aiserver.v1.GetCloudAgentPluginsSnapshotResponse", NSe.fields = nt.util.newFieldList(() => [{
+    ISe.runtime = nt, ISe.typeName = "aiserver.v1.GetCloudAgentPluginsSnapshotResponse", ISe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "snapshot_token",
         kind: "scalar",
@@ -99675,7 +99733,7 @@
         no: 2,
         name: "plugins",
         kind: "message",
-        T: ESe,
+        T: BSe,
         repeated: !0
     }, {
         no: 3,
@@ -99684,8 +99742,8 @@
         T: 9,
         repeated: !0
     }]);
-    let BSe = NSe;
-    const ISe = class e extends b {
+    let PSe = ISe;
+    const qSe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.name = "", this.content = "", this.isActive = !1, this.isRequired = !1, this.createdAt = "", this.updatedAt = "", nt.util.initPartial(e, this)
         }
@@ -99702,7 +99760,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ISe.runtime = nt, ISe.typeName = "aiserver.v1.BugbotRule", ISe.fields = nt.util.newFieldList(() => [{
+    qSe.runtime = nt, qSe.typeName = "aiserver.v1.BugbotRule", qSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -99738,8 +99796,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let PSe = ISe;
-    const qSe = class e extends b {
+    let RSe = qSe;
+    const LSe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -99756,15 +99814,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qSe.runtime = nt, qSe.typeName = "aiserver.v1.GetBugbotTeamRulesRequest", qSe.fields = nt.util.newFieldList(() => [{
+    LSe.runtime = nt, LSe.typeName = "aiserver.v1.GetBugbotTeamRulesRequest", LSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "active_only",
         kind: "scalar",
         T: 8,
         opt: !0
     }]);
-    let RSe = qSe;
-    const LSe = class e extends b {
+    let FSe = LSe;
+    const OSe = class e extends b {
         constructor(e) {
             super(), this.rules = [], nt.util.initPartial(e, this)
         }
@@ -99781,15 +99839,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    LSe.runtime = nt, LSe.typeName = "aiserver.v1.GetBugbotTeamRulesResponse", LSe.fields = nt.util.newFieldList(() => [{
+    OSe.runtime = nt, OSe.typeName = "aiserver.v1.GetBugbotTeamRulesResponse", OSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rules",
         kind: "message",
-        T: PSe,
+        T: RSe,
         repeated: !0
     }]);
-    let FSe = LSe;
-    const OSe = class e extends b {
+    let bSe = OSe;
+    const CSe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.content = "", nt.util.initPartial(e, this)
         }
@@ -99806,7 +99864,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    OSe.runtime = nt, OSe.typeName = "aiserver.v1.CreateBugbotTeamRuleRequest", OSe.fields = nt.util.newFieldList(() => [{
+    CSe.runtime = nt, CSe.typeName = "aiserver.v1.CreateBugbotTeamRuleRequest", CSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -99829,8 +99887,8 @@
         T: 8,
         opt: !0
     }]);
-    let bSe = OSe;
-    const CSe = class e extends b {
+    let USe = CSe;
+    const ASe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -99847,14 +99905,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    CSe.runtime = nt, CSe.typeName = "aiserver.v1.CreateBugbotTeamRuleResponse", CSe.fields = nt.util.newFieldList(() => [{
+    ASe.runtime = nt, ASe.typeName = "aiserver.v1.CreateBugbotTeamRuleResponse", ASe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule",
         kind: "message",
-        T: PSe
+        T: RSe
     }]);
-    let USe = CSe;
-    const ASe = class e extends b {
+    let xSe = ASe;
+    const DSe = class e extends b {
         constructor(e) {
             super(), this.ruleId = "", nt.util.initPartial(e, this)
         }
@@ -99871,7 +99929,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ASe.runtime = nt, ASe.typeName = "aiserver.v1.UpdateBugbotTeamRuleRequest", ASe.fields = nt.util.newFieldList(() => [{
+    DSe.runtime = nt, DSe.typeName = "aiserver.v1.UpdateBugbotTeamRuleRequest", DSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule_id",
         kind: "scalar",
@@ -99901,8 +99959,8 @@
         T: 8,
         opt: !0
     }]);
-    let xSe = ASe;
-    const DSe = class e extends b {
+    let MSe = DSe;
+    const GSe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -99919,14 +99977,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    DSe.runtime = nt, DSe.typeName = "aiserver.v1.UpdateBugbotTeamRuleResponse", DSe.fields = nt.util.newFieldList(() => [{
+    GSe.runtime = nt, GSe.typeName = "aiserver.v1.UpdateBugbotTeamRuleResponse", GSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule",
         kind: "message",
-        T: PSe
+        T: RSe
     }]);
-    let MSe = DSe;
-    const GSe = class e extends b {
+    let YSe = GSe;
+    const VSe = class e extends b {
         constructor(e) {
             super(), this.ruleId = "", nt.util.initPartial(e, this)
         }
@@ -99943,14 +100001,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    GSe.runtime = nt, GSe.typeName = "aiserver.v1.DeleteBugbotTeamRuleRequest", GSe.fields = nt.util.newFieldList(() => [{
+    VSe.runtime = nt, VSe.typeName = "aiserver.v1.DeleteBugbotTeamRuleRequest", VSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule_id",
         kind: "scalar",
         T: 9
     }]);
-    let YSe = GSe;
-    const VSe = class e extends b {
+    let HSe = VSe;
+    const KSe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -99967,9 +100025,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    VSe.runtime = nt, VSe.typeName = "aiserver.v1.DeleteBugbotTeamRuleResponse", VSe.fields = nt.util.newFieldList(() => []);
-    let HSe = VSe;
-    const KSe = class e extends b {
+    KSe.runtime = nt, KSe.typeName = "aiserver.v1.DeleteBugbotTeamRuleResponse", KSe.fields = nt.util.newFieldList(() => []);
+    let zSe = KSe;
+    const WSe = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, nt.util.initPartial(e, this)
         }
@@ -99986,7 +100044,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    KSe.runtime = nt, KSe.typeName = "aiserver.v1.GetBugbotLearnedRulesRequest", KSe.fields = nt.util.newFieldList(() => [{
+    WSe.runtime = nt, WSe.typeName = "aiserver.v1.GetBugbotLearnedRulesRequest", WSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -100004,8 +100062,8 @@
         T: 9,
         opt: !0
     }]);
-    let zSe = KSe;
-    const WSe = class e extends b {
+    let jSe = WSe;
+    const XSe = class e extends b {
         constructor(e) {
             super(), this.rules = [], nt.util.initPartial(e, this)
         }
@@ -100022,15 +100080,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    WSe.runtime = nt, WSe.typeName = "aiserver.v1.GetBugbotLearnedRulesResponse", WSe.fields = nt.util.newFieldList(() => [{
+    XSe.runtime = nt, XSe.typeName = "aiserver.v1.GetBugbotLearnedRulesResponse", XSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rules",
         kind: "message",
-        T: $Se,
+        T: ZSe,
         repeated: !0
     }]);
-    let jSe = WSe;
-    const XSe = class e extends b {
+    let $Se = XSe;
+    const QSe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.name = "", this.content = "", this.repoNodeId = "", this.repoName = "", this.status = "", this.createdAt = "", this.updatedAt = "", this.examplePrNumbers = [], this.repoOwner = "", this.scopedPaths = [], nt.util.initPartial(e, this)
         }
@@ -100047,7 +100105,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    XSe.runtime = nt, XSe.typeName = "aiserver.v1.BugbotLearnedRule", XSe.fields = nt.util.newFieldList(() => [{
+    QSe.runtime = nt, QSe.typeName = "aiserver.v1.BugbotLearnedRule", QSe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -100105,8 +100163,8 @@
         T: 9,
         repeated: !0
     }]);
-    let $Se = XSe;
-    const QSe = class e extends b {
+    let ZSe = QSe;
+    const eJe = class e extends b {
         constructor(e) {
             super(), this.ruleId = "", this.installationId = K.zero, this.scopedPaths = [], nt.util.initPartial(e, this)
         }
@@ -100123,7 +100181,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    QSe.runtime = nt, QSe.typeName = "aiserver.v1.UpdateBugbotLearnedRuleRequest", QSe.fields = nt.util.newFieldList(() => [{
+    eJe.runtime = nt, eJe.typeName = "aiserver.v1.UpdateBugbotLearnedRuleRequest", eJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule_id",
         kind: "scalar",
@@ -100164,8 +100222,8 @@
         T: 9,
         repeated: !0
     }]);
-    let ZSe = QSe;
-    const eJe = class e extends b {
+    let tJe = eJe;
+    const nJe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -100182,14 +100240,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eJe.runtime = nt, eJe.typeName = "aiserver.v1.UpdateBugbotLearnedRuleResponse", eJe.fields = nt.util.newFieldList(() => [{
+    nJe.runtime = nt, nJe.typeName = "aiserver.v1.UpdateBugbotLearnedRuleResponse", nJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule",
         kind: "message",
-        T: $Se
+        T: ZSe
     }]);
-    let tJe = eJe;
-    const nJe = class e extends b {
+    let rJe = nJe;
+    const sJe = class e extends b {
         constructor(e) {
             super(), this.ruleId = "", this.installationId = K.zero, nt.util.initPartial(e, this)
         }
@@ -100206,7 +100264,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nJe.runtime = nt, nJe.typeName = "aiserver.v1.DeleteBugbotLearnedRuleRequest", nJe.fields = nt.util.newFieldList(() => [{
+    sJe.runtime = nt, sJe.typeName = "aiserver.v1.DeleteBugbotLearnedRuleRequest", sJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule_id",
         kind: "scalar",
@@ -100223,8 +100281,8 @@
         T: 9,
         opt: !0
     }]);
-    let rJe = nJe;
-    const sJe = class e extends b {
+    let iJe = sJe;
+    const aJe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -100241,9 +100299,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sJe.runtime = nt, sJe.typeName = "aiserver.v1.DeleteBugbotLearnedRuleResponse", sJe.fields = nt.util.newFieldList(() => []);
-    let iJe = sJe;
-    const aJe = class e extends b {
+    aJe.runtime = nt, aJe.typeName = "aiserver.v1.DeleteBugbotLearnedRuleResponse", aJe.fields = nt.util.newFieldList(() => []);
+    let oJe = aJe;
+    const lJe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.name = "", this.content = "", this.repoNodeId = "", this.repoName = "", this.status = "", this.createdAt = "", this.updatedAt = "", this.repoOwner = "", this.scopedPaths = [], nt.util.initPartial(e, this)
         }
@@ -100260,7 +100318,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    aJe.runtime = nt, aJe.typeName = "aiserver.v1.BugbotManualRepositoryRule", aJe.fields = nt.util.newFieldList(() => [{
+    lJe.runtime = nt, lJe.typeName = "aiserver.v1.BugbotManualRepositoryRule", lJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -100312,8 +100370,8 @@
         T: 9,
         repeated: !0
     }]);
-    let oJe = aJe;
-    const lJe = class e extends b {
+    let uJe = lJe;
+    const mJe = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, this.repoNodeId = "", this.name = "", this.content = "", this.scopedPaths = [], nt.util.initPartial(e, this)
         }
@@ -100330,7 +100388,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lJe.runtime = nt, lJe.typeName = "aiserver.v1.CreateBugbotManualRepositoryRuleRequest", lJe.fields = nt.util.newFieldList(() => [{
+    mJe.runtime = nt, mJe.typeName = "aiserver.v1.CreateBugbotManualRepositoryRuleRequest", mJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -100369,8 +100427,8 @@
         T: 9,
         repeated: !0
     }]);
-    let uJe = lJe;
-    const mJe = class e extends b {
+    let cJe = mJe;
+    const dJe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -100387,14 +100445,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mJe.runtime = nt, mJe.typeName = "aiserver.v1.CreateBugbotManualRepositoryRuleResponse", mJe.fields = nt.util.newFieldList(() => [{
+    dJe.runtime = nt, dJe.typeName = "aiserver.v1.CreateBugbotManualRepositoryRuleResponse", dJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule",
         kind: "message",
-        T: oJe
+        T: uJe
     }]);
-    let cJe = mJe;
-    const dJe = class e extends b {
+    let fJe = dJe;
+    const pJe = class e extends b {
         constructor(e) {
             super(), this.installationId = K.zero, nt.util.initPartial(e, this)
         }
@@ -100411,7 +100469,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dJe.runtime = nt, dJe.typeName = "aiserver.v1.GetBugbotManualRepositoryRulesRequest", dJe.fields = nt.util.newFieldList(() => [{
+    pJe.runtime = nt, pJe.typeName = "aiserver.v1.GetBugbotManualRepositoryRulesRequest", pJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -100429,8 +100487,8 @@
         T: 9,
         opt: !0
     }]);
-    let fJe = dJe;
-    const pJe = class e extends b {
+    let gJe = pJe;
+    const TJe = class e extends b {
         constructor(e) {
             super(), this.rules = [], nt.util.initPartial(e, this)
         }
@@ -100447,15 +100505,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pJe.runtime = nt, pJe.typeName = "aiserver.v1.GetBugbotManualRepositoryRulesResponse", pJe.fields = nt.util.newFieldList(() => [{
+    TJe.runtime = nt, TJe.typeName = "aiserver.v1.GetBugbotManualRepositoryRulesResponse", TJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rules",
         kind: "message",
-        T: oJe,
+        T: uJe,
         repeated: !0
     }]);
-    let gJe = pJe;
-    const TJe = class e extends b {
+    let hJe = TJe;
+    const _Je = class e extends b {
         constructor(e) {
             super(), this.ruleId = "", this.installationId = K.zero, this.scopedPaths = [], nt.util.initPartial(e, this)
         }
@@ -100472,7 +100530,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    TJe.runtime = nt, TJe.typeName = "aiserver.v1.UpdateBugbotManualRepositoryRuleRequest", TJe.fields = nt.util.newFieldList(() => [{
+    _Je.runtime = nt, _Je.typeName = "aiserver.v1.UpdateBugbotManualRepositoryRuleRequest", _Je.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule_id",
         kind: "scalar",
@@ -100513,8 +100571,8 @@
         T: 9,
         repeated: !0
     }]);
-    let hJe = TJe;
-    const _Je = class e extends b {
+    let yJe = _Je;
+    const wJe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -100531,14 +100589,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _Je.runtime = nt, _Je.typeName = "aiserver.v1.UpdateBugbotManualRepositoryRuleResponse", _Je.fields = nt.util.newFieldList(() => [{
+    wJe.runtime = nt, wJe.typeName = "aiserver.v1.UpdateBugbotManualRepositoryRuleResponse", wJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule",
         kind: "message",
-        T: oJe
+        T: uJe
     }]);
-    let yJe = _Je;
-    const wJe = class e extends b {
+    let kJe = wJe;
+    const SJe = class e extends b {
         constructor(e) {
             super(), this.ruleId = "", this.installationId = K.zero, nt.util.initPartial(e, this)
         }
@@ -100555,7 +100613,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wJe.runtime = nt, wJe.typeName = "aiserver.v1.DeleteBugbotManualRepositoryRuleRequest", wJe.fields = nt.util.newFieldList(() => [{
+    SJe.runtime = nt, SJe.typeName = "aiserver.v1.DeleteBugbotManualRepositoryRuleRequest", SJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule_id",
         kind: "scalar",
@@ -100572,8 +100630,8 @@
         T: 9,
         opt: !0
     }]);
-    let kJe = wJe;
-    const SJe = class e extends b {
+    let JJe = SJe;
+    const vJe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -100590,9 +100648,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    SJe.runtime = nt, SJe.typeName = "aiserver.v1.DeleteBugbotManualRepositoryRuleResponse", SJe.fields = nt.util.newFieldList(() => []);
-    let JJe = SJe;
-    const vJe = class e extends b {
+    vJe.runtime = nt, vJe.typeName = "aiserver.v1.DeleteBugbotManualRepositoryRuleResponse", vJe.fields = nt.util.newFieldList(() => []);
+    let EJe = vJe;
+    const NJe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.installationId = K.zero, this.graphiteWorkspaceId = "", this.mode = 0, nt.util.initPartial(e, this)
         }
@@ -100609,7 +100667,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vJe.runtime = nt, vJe.typeName = "aiserver.v1.RunDiamondToBugbotMigrationRequest", vJe.fields = nt.util.newFieldList(() => [{
+    NJe.runtime = nt, NJe.typeName = "aiserver.v1.RunDiamondToBugbotMigrationRequest", NJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -100647,8 +100705,8 @@
         kind: "message",
         T: Yn
     }]);
-    let EJe = vJe;
-    const NJe = class e extends b {
+    let BJe = NJe;
+    const IJe = class e extends b {
         constructor(e) {
             super(), this.status = "", this.previewHash = "", this.previewJson = "", this.repositoryRulesJson = "", this.applyPlanJson = "", this.auditJson = "", this.warnings = [], this.blockers = [], this.appliedOperationIds = [], this.skippedOperationIds = [], this.resolvedTeamId = 0, nt.util.initPartial(e, this)
         }
@@ -100665,7 +100723,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    NJe.runtime = nt, NJe.typeName = "aiserver.v1.RunDiamondToBugbotMigrationResponse", NJe.fields = nt.util.newFieldList(() => [{
+    IJe.runtime = nt, IJe.typeName = "aiserver.v1.RunDiamondToBugbotMigrationResponse", IJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "status",
         kind: "scalar",
@@ -100725,8 +100783,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let BJe = NJe;
-    const IJe = class e extends b {
+    let PJe = IJe;
+    const qJe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -100743,7 +100801,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    IJe.runtime = nt, IJe.typeName = "aiserver.v1.GetBugbotRuleAnalyticsRequest", IJe.fields = nt.util.newFieldList(() => [{
+    qJe.runtime = nt, qJe.typeName = "aiserver.v1.GetBugbotRuleAnalyticsRequest", qJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "date_range_start",
         kind: "scalar",
@@ -100756,8 +100814,8 @@
         T: 9,
         opt: !0
     }]);
-    let PJe = IJe;
-    const qJe = class e extends b {
+    let RJe = qJe;
+    const LJe = class e extends b {
         constructor(e) {
             super(), this.rules = [], nt.util.initPartial(e, this)
         }
@@ -100774,15 +100832,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qJe.runtime = nt, qJe.typeName = "aiserver.v1.GetBugbotRuleAnalyticsResponse", qJe.fields = nt.util.newFieldList(() => [{
+    LJe.runtime = nt, LJe.typeName = "aiserver.v1.GetBugbotRuleAnalyticsResponse", LJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rules",
         kind: "message",
-        T: FJe,
+        T: bJe,
         repeated: !0
     }]);
-    let RJe = qJe;
-    const LJe = class e extends b {
+    let FJe = LJe;
+    const OJe = class e extends b {
         constructor(e) {
             super(), this.ruleId = "", this.ruleType = "", this.name = "", this.content = "", this.repositories = [], this.issuesFound = 0, this.prsReviewed = 0, this.acceptedIssues = 0, this.acceptanceRate = 0, this.upvoteRate = 0, this.downvoteRate = 0, this.status = "", this.createdAt = "", nt.util.initPartial(e, this)
         }
@@ -100799,7 +100857,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    LJe.runtime = nt, LJe.typeName = "aiserver.v1.BugbotRuleAnalytics", LJe.fields = nt.util.newFieldList(() => [{
+    OJe.runtime = nt, OJe.typeName = "aiserver.v1.BugbotRuleAnalytics", OJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule_id",
         kind: "scalar",
@@ -100866,8 +100924,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let FJe = LJe;
-    const OJe = class e extends b {
+    let bJe = OJe;
+    const CJe = class e extends b {
         constructor(e) {
             super(), this.ruleId = "", nt.util.initPartial(e, this)
         }
@@ -100884,53 +100942,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    OJe.runtime = nt, OJe.typeName = "aiserver.v1.GetBugbotRuleByIdRequest", OJe.fields = nt.util.newFieldList(() => [{
+    CJe.runtime = nt, CJe.typeName = "aiserver.v1.GetBugbotRuleByIdRequest", CJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule_id",
         kind: "scalar",
         T: 9
-    }]);
-    let bJe = OJe;
-    const CJe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    CJe.runtime = nt, CJe.typeName = "aiserver.v1.GetBugbotRuleByIdResponse", CJe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "team_rule",
-        kind: "message",
-        T: PSe,
-        opt: !0
-    }, {
-        no: 2,
-        name: "learned_rule",
-        kind: "message",
-        T: $Se,
-        opt: !0
-    }, {
-        no: 3,
-        name: "analytics",
-        kind: "message",
-        T: FJe
-    }, {
-        no: 4,
-        name: "manual_rule",
-        kind: "message",
-        T: oJe,
-        opt: !0
     }]);
     let UJe = CJe;
     const AJe = class e extends b {
@@ -100950,7 +100966,49 @@
             return nt.util.equals(e, t, n)
         }
     };
-    AJe.runtime = nt, AJe.typeName = "aiserver.v1.SharedConversationCreator", AJe.fields = nt.util.newFieldList(() => [{
+    AJe.runtime = nt, AJe.typeName = "aiserver.v1.GetBugbotRuleByIdResponse", AJe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "team_rule",
+        kind: "message",
+        T: RSe,
+        opt: !0
+    }, {
+        no: 2,
+        name: "learned_rule",
+        kind: "message",
+        T: ZSe,
+        opt: !0
+    }, {
+        no: 3,
+        name: "analytics",
+        kind: "message",
+        T: bJe
+    }, {
+        no: 4,
+        name: "manual_rule",
+        kind: "message",
+        T: uJe,
+        opt: !0
+    }]);
+    let xJe = AJe;
+    const DJe = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    DJe.runtime = nt, DJe.typeName = "aiserver.v1.SharedConversationCreator", DJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "user_id",
         kind: "scalar",
@@ -100963,8 +101021,8 @@
         T: 9,
         opt: !0
     }]);
-    let xJe = AJe;
-    const DJe = class e extends b {
+    let MJe = DJe;
+    const GJe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.title = "", this.visibility = 0, this.createdAt = "", nt.util.initPartial(e, this)
         }
@@ -100981,7 +101039,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    DJe.runtime = nt, DJe.typeName = "aiserver.v1.SharedConversationMetadata", DJe.fields = nt.util.newFieldList(() => [{
+    GJe.runtime = nt, GJe.typeName = "aiserver.v1.SharedConversationMetadata", GJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -101005,10 +101063,10 @@
         no: 5,
         name: "creator",
         kind: "message",
-        T: xJe
+        T: MJe
     }]);
-    let MJe = DJe;
-    const GJe = class e extends b {
+    let YJe = GJe;
+    const VJe = class e extends b {
         constructor(e) {
             super(), this.planId = "", this.title = "", this.content = "", nt.util.initPartial(e, this)
         }
@@ -101025,7 +101083,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    GJe.runtime = nt, GJe.typeName = "aiserver.v1.SharedConversationLatestPlan", GJe.fields = nt.util.newFieldList(() => [{
+    VJe.runtime = nt, VJe.typeName = "aiserver.v1.SharedConversationLatestPlan", VJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plan_id",
         kind: "scalar",
@@ -101041,8 +101099,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let YJe = GJe;
-    const VJe = class e extends b {
+    let HJe = VJe;
+    const KJe = class e extends b {
         constructor(e) {
             super(), this.messages = [], nt.util.initPartial(e, this)
         }
@@ -101059,7 +101117,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    VJe.runtime = nt, VJe.typeName = "aiserver.v1.SharedConversationSnapshot", VJe.fields = nt.util.newFieldList(() => [{
+    KJe.runtime = nt, KJe.typeName = "aiserver.v1.SharedConversationSnapshot", KJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "messages",
         kind: "message",
@@ -101069,10 +101127,10 @@
         no: 2,
         name: "latest_plan",
         kind: "message",
-        T: YJe,
+        T: HJe,
         opt: !0
     }]);
-    const HJe = class e extends b {
+    const zJe = class e extends b {
         constructor(e) {
             super(), this.appJs = new Uint8Array(0), this.dataJson = new Uint8Array(0), nt.util.initPartial(e, this)
         }
@@ -101089,7 +101147,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    HJe.runtime = nt, HJe.typeName = "aiserver.v1.SharedCanvasSnapshot", HJe.fields = nt.util.newFieldList(() => [{
+    zJe.runtime = nt, zJe.typeName = "aiserver.v1.SharedCanvasSnapshot", zJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "app_js",
         kind: "scalar",
@@ -101100,7 +101158,7 @@
         kind: "scalar",
         T: 12
     }]);
-    const KJe = class e extends b {
+    const WJe = class e extends b {
         constructor(e) {
             super(), this.userId = "", nt.util.initPartial(e, this)
         }
@@ -101117,7 +101175,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    KJe.runtime = nt, KJe.typeName = "aiserver.v1.SharedCanvasCreator", KJe.fields = nt.util.newFieldList(() => [{
+    WJe.runtime = nt, WJe.typeName = "aiserver.v1.SharedCanvasCreator", WJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "user_id",
         kind: "scalar",
@@ -101129,8 +101187,8 @@
         T: 9,
         opt: !0
     }]);
-    let zJe = KJe;
-    const WJe = class e extends b {
+    let jJe = WJe;
+    const XJe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.title = "", this.visibility = 0, this.createdAt = "", this.updatedAt = "", nt.util.initPartial(e, this)
         }
@@ -101147,7 +101205,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    WJe.runtime = nt, WJe.typeName = "aiserver.v1.SharedCanvasMetadata", WJe.fields = nt.util.newFieldList(() => [{
+    XJe.runtime = nt, XJe.typeName = "aiserver.v1.SharedCanvasMetadata", XJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -101171,15 +101229,15 @@
         no: 5,
         name: "creator",
         kind: "message",
-        T: zJe
+        T: jJe
     }, {
         no: 7,
         name: "updated_at",
         kind: "scalar",
         T: 9
     }]);
-    let jJe = WJe;
-    const XJe = class e extends b {
+    let $Je = XJe;
+    const QJe = class e extends b {
         constructor(e) {
             super(), this.title = "", this.visibility = 0, this.appJs = new Uint8Array(0), this.dataJson = new Uint8Array(0), nt.util.initPartial(e, this)
         }
@@ -101196,7 +101254,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    XJe.runtime = nt, XJe.typeName = "aiserver.v1.ShareCanvasRequest", XJe.fields = nt.util.newFieldList(() => [{
+    QJe.runtime = nt, QJe.typeName = "aiserver.v1.ShareCanvasRequest", QJe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "title",
         kind: "scalar",
@@ -101223,8 +101281,8 @@
         T: 9,
         opt: !0
     }]);
-    let $Je = XJe;
-    const QJe = class e extends b {
+    let ZJe = QJe;
+    const eve = class e extends b {
         constructor(e) {
             super(), this.shareId = "", this.shareUrl = "", nt.util.initPartial(e, this)
         }
@@ -101241,7 +101299,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    QJe.runtime = nt, QJe.typeName = "aiserver.v1.ShareCanvasResponse", QJe.fields = nt.util.newFieldList(() => [{
+    eve.runtime = nt, eve.typeName = "aiserver.v1.ShareCanvasResponse", eve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
@@ -101252,8 +101310,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let ZJe = QJe;
-    const eve = class e extends b {
+    let tve = eve;
+    const nve = class e extends b {
         constructor(e) {
             super(), this.shareId = "", nt.util.initPartial(e, this)
         }
@@ -101270,14 +101328,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eve.runtime = nt, eve.typeName = "aiserver.v1.GetSharedCanvasRequest", eve.fields = nt.util.newFieldList(() => [{
+    nve.runtime = nt, nve.typeName = "aiserver.v1.GetSharedCanvasRequest", nve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
         T: 9
     }]);
-    let tve = eve;
-    const nve = class e extends b {
+    let rve = nve;
+    const sve = class e extends b {
         constructor(e) {
             super(), this.appJs = new Uint8Array(0), this.dataJson = new Uint8Array(0), nt.util.initPartial(e, this)
         }
@@ -101294,11 +101352,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nve.runtime = nt, nve.typeName = "aiserver.v1.GetSharedCanvasResponse", nve.fields = nt.util.newFieldList(() => [{
+    sve.runtime = nt, sve.typeName = "aiserver.v1.GetSharedCanvasResponse", sve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "metadata",
         kind: "message",
-        T: jJe
+        T: $Je
     }, {
         no: 2,
         name: "app_js",
@@ -101310,8 +101368,8 @@
         kind: "scalar",
         T: 12
     }]);
-    let rve = nve;
-    const sve = class e extends b {
+    let ive = sve;
+    const ave = class e extends b {
         constructor(e) {
             super(), this.shareId = "", nt.util.initPartial(e, this)
         }
@@ -101328,14 +101386,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sve.runtime = nt, sve.typeName = "aiserver.v1.GetPublicSharedCanvasRequest", sve.fields = nt.util.newFieldList(() => [{
+    ave.runtime = nt, ave.typeName = "aiserver.v1.GetPublicSharedCanvasRequest", ave.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
         T: 9
     }]);
-    let ive = sve;
-    const ave = class e extends b {
+    let ove = ave;
+    const lve = class e extends b {
         constructor(e) {
             super(), this.title = "", nt.util.initPartial(e, this)
         }
@@ -101352,35 +101410,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ave.runtime = nt, ave.typeName = "aiserver.v1.PublicSharedCanvasPreview", ave.fields = nt.util.newFieldList(() => [{
+    lve.runtime = nt, lve.typeName = "aiserver.v1.PublicSharedCanvasPreview", lve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "title",
         kind: "scalar",
         T: 9
-    }]);
-    let ove = ave;
-    const lve = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    lve.runtime = nt, lve.typeName = "aiserver.v1.GetPublicSharedCanvasResponse", lve.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "preview",
-        kind: "message",
-        T: ove
     }]);
     let uve = lve;
     const mve = class e extends b {
@@ -101400,7 +101434,31 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mve.runtime = nt, mve.typeName = "aiserver.v1.ListSharedCanvasesRequest", mve.fields = nt.util.newFieldList(() => [{
+    mve.runtime = nt, mve.typeName = "aiserver.v1.GetPublicSharedCanvasResponse", mve.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "preview",
+        kind: "message",
+        T: uve
+    }]);
+    let cve = mve;
+    const dve = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    dve.runtime = nt, dve.typeName = "aiserver.v1.ListSharedCanvasesRequest", dve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "limit",
         kind: "scalar",
@@ -101425,8 +101483,8 @@
         T: 9,
         opt: !0
     }]);
-    let cve = mve;
-    const dve = class e extends b {
+    let fve = dve;
+    const pve = class e extends b {
         constructor(e) {
             super(), this.canvases = [], this.hasMore = !1, nt.util.initPartial(e, this)
         }
@@ -101443,11 +101501,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dve.runtime = nt, dve.typeName = "aiserver.v1.ListSharedCanvasesResponse", dve.fields = nt.util.newFieldList(() => [{
+    pve.runtime = nt, pve.typeName = "aiserver.v1.ListSharedCanvasesResponse", pve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "canvases",
         kind: "message",
-        T: jJe,
+        T: $Je,
         repeated: !0
     }, {
         no: 2,
@@ -101455,8 +101513,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let fve = dve;
-    const pve = class e extends b {
+    let gve = pve;
+    const Tve = class e extends b {
         constructor(e) {
             super(), this.shareId = "", nt.util.initPartial(e, this)
         }
@@ -101473,14 +101531,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pve.runtime = nt, pve.typeName = "aiserver.v1.DeleteSharedCanvasRequest", pve.fields = nt.util.newFieldList(() => [{
+    Tve.runtime = nt, Tve.typeName = "aiserver.v1.DeleteSharedCanvasRequest", Tve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
         T: 9
     }]);
-    let gve = pve;
-    const Tve = class e extends b {
+    let hve = Tve;
+    const _ve = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -101497,9 +101555,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Tve.runtime = nt, Tve.typeName = "aiserver.v1.DeleteSharedCanvasResponse", Tve.fields = nt.util.newFieldList(() => []);
-    let hve = Tve;
-    const _ve = class e extends b {
+    _ve.runtime = nt, _ve.typeName = "aiserver.v1.DeleteSharedCanvasResponse", _ve.fields = nt.util.newFieldList(() => []);
+    let yve = _ve;
+    const wve = class e extends b {
         constructor(e) {
             super(), this.canvasKey = "", nt.util.initPartial(e, this)
         }
@@ -101516,14 +101574,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _ve.runtime = nt, _ve.typeName = "aiserver.v1.LookupSharedCanvasByKeyRequest", _ve.fields = nt.util.newFieldList(() => [{
+    wve.runtime = nt, wve.typeName = "aiserver.v1.LookupSharedCanvasByKeyRequest", wve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "canvas_key",
         kind: "scalar",
         T: 9
     }]);
-    let yve = _ve;
-    const wve = class e extends b {
+    let kve = wve;
+    const Sve = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -101540,7 +101598,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wve.runtime = nt, wve.typeName = "aiserver.v1.LookupSharedCanvasByKeyResponse", wve.fields = nt.util.newFieldList(() => [{
+    Sve.runtime = nt, Sve.typeName = "aiserver.v1.LookupSharedCanvasByKeyResponse", Sve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
@@ -101565,8 +101623,8 @@
         T: 9,
         opt: !0
     }]);
-    let kve = wve;
-    const Sve = class e extends b {
+    let Jve = Sve;
+    const vve = class e extends b {
         constructor(e) {
             super(), this.conversationId = "", this.title = "", this.visibility = 0, this.messages = [], nt.util.initPartial(e, this)
         }
@@ -101583,7 +101641,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Sve.runtime = nt, Sve.typeName = "aiserver.v1.ShareConversationRequest", Sve.fields = nt.util.newFieldList(() => [{
+    vve.runtime = nt, vve.typeName = "aiserver.v1.ShareConversationRequest", vve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "conversation_id",
         kind: "scalar",
@@ -101608,11 +101666,11 @@
         no: 5,
         name: "latest_plan",
         kind: "message",
-        T: YJe,
+        T: HJe,
         opt: !0
     }]);
-    let Jve = Sve;
-    const vve = class e extends b {
+    let Eve = vve;
+    const Nve = class e extends b {
         constructor(e) {
             super(), this.shareId = "", this.shareUrl = "", nt.util.initPartial(e, this)
         }
@@ -101629,7 +101687,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vve.runtime = nt, vve.typeName = "aiserver.v1.ShareConversationResponse", vve.fields = nt.util.newFieldList(() => [{
+    Nve.runtime = nt, Nve.typeName = "aiserver.v1.ShareConversationResponse", Nve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
@@ -101646,8 +101704,8 @@
         T: 5,
         opt: !0
     }]);
-    let Eve = vve;
-    const Nve = class e extends b {
+    let Bve = Nve;
+    const Ive = class e extends b {
         constructor(e) {
             super(), this.shareId = "", nt.util.initPartial(e, this)
         }
@@ -101664,14 +101722,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Nve.runtime = nt, Nve.typeName = "aiserver.v1.GetSharedConversationRequest", Nve.fields = nt.util.newFieldList(() => [{
+    Ive.runtime = nt, Ive.typeName = "aiserver.v1.GetSharedConversationRequest", Ive.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
         T: 9
     }]);
-    let Bve = Nve;
-    const Ive = class e extends b {
+    let Pve = Ive;
+    const qve = class e extends b {
         constructor(e) {
             super(), this.messages = [], nt.util.initPartial(e, this)
         }
@@ -101688,11 +101746,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ive.runtime = nt, Ive.typeName = "aiserver.v1.GetSharedConversationResponse", Ive.fields = nt.util.newFieldList(() => [{
+    qve.runtime = nt, qve.typeName = "aiserver.v1.GetSharedConversationResponse", qve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "metadata",
         kind: "message",
-        T: MJe
+        T: YJe
     }, {
         no: 2,
         name: "messages",
@@ -101703,11 +101761,11 @@
         no: 3,
         name: "latest_plan",
         kind: "message",
-        T: YJe,
+        T: HJe,
         opt: !0
     }]);
-    let Pve = Ive;
-    const qve = class e extends b {
+    let Rve = qve;
+    const Lve = class e extends b {
         constructor(e) {
             super(), this.visibilities = [], nt.util.initPartial(e, this)
         }
@@ -101724,7 +101782,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qve.runtime = nt, qve.typeName = "aiserver.v1.ListSharedConversationsRequest", qve.fields = nt.util.newFieldList(() => [{
+    Lve.runtime = nt, Lve.typeName = "aiserver.v1.ListSharedConversationsRequest", Lve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "visibility",
         kind: "enum",
@@ -101749,8 +101807,8 @@
         T: nt.getEnumType(o1),
         repeated: !0
     }]);
-    let Rve = qve;
-    const Lve = class e extends b {
+    let Fve = Lve;
+    const Ove = class e extends b {
         constructor(e) {
             super(), this.shares = [], this.hasMore = !1, nt.util.initPartial(e, this)
         }
@@ -101767,11 +101825,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Lve.runtime = nt, Lve.typeName = "aiserver.v1.ListSharedConversationsResponse", Lve.fields = nt.util.newFieldList(() => [{
+    Ove.runtime = nt, Ove.typeName = "aiserver.v1.ListSharedConversationsResponse", Ove.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "shares",
         kind: "message",
-        T: MJe,
+        T: YJe,
         repeated: !0
     }, {
         no: 2,
@@ -101779,8 +101837,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let Fve = Lve;
-    const Ove = class e extends b {
+    let bve = Ove;
+    const Cve = class e extends b {
         constructor(e) {
             super(), this.shareId = "", nt.util.initPartial(e, this)
         }
@@ -101797,14 +101855,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ove.runtime = nt, Ove.typeName = "aiserver.v1.DeleteSharedConversationRequest", Ove.fields = nt.util.newFieldList(() => [{
+    Cve.runtime = nt, Cve.typeName = "aiserver.v1.DeleteSharedConversationRequest", Cve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
         T: 9
     }]);
-    let bve = Ove;
-    const Cve = class e extends b {
+    let Uve = Cve;
+    const Ave = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -101821,14 +101879,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Cve.runtime = nt, Cve.typeName = "aiserver.v1.DeleteSharedConversationResponse", Cve.fields = nt.util.newFieldList(() => [{
+    Ave.runtime = nt, Ave.typeName = "aiserver.v1.DeleteSharedConversationResponse", Ave.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let Uve = Cve;
-    const Ave = class e extends b {
+    let xve = Ave;
+    const Dve = class e extends b {
         constructor(e) {
             super(), this.shareId = "", this.visibility = 0, nt.util.initPartial(e, this)
         }
@@ -101845,7 +101903,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Ave.runtime = nt, Ave.typeName = "aiserver.v1.UpdateSharedConversationVisibilityRequest", Ave.fields = nt.util.newFieldList(() => [{
+    Dve.runtime = nt, Dve.typeName = "aiserver.v1.UpdateSharedConversationVisibilityRequest", Dve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
@@ -101856,8 +101914,8 @@
         kind: "enum",
         T: nt.getEnumType(o1)
     }]);
-    let xve = Ave;
-    const Dve = class e extends b {
+    let Mve = Dve;
+    const Gve = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -101874,14 +101932,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Dve.runtime = nt, Dve.typeName = "aiserver.v1.UpdateSharedConversationVisibilityResponse", Dve.fields = nt.util.newFieldList(() => [{
+    Gve.runtime = nt, Gve.typeName = "aiserver.v1.UpdateSharedConversationVisibilityResponse", Gve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let Mve = Dve;
-    const Gve = class e extends b {
+    let Yve = Gve;
+    const Vve = class e extends b {
         constructor(e) {
             super(), this.shareId = "", nt.util.initPartial(e, this)
         }
@@ -101898,14 +101956,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Gve.runtime = nt, Gve.typeName = "aiserver.v1.GetPublicSharedConversationRequest", Gve.fields = nt.util.newFieldList(() => [{
+    Vve.runtime = nt, Vve.typeName = "aiserver.v1.GetPublicSharedConversationRequest", Vve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
         T: 9
     }]);
-    let Yve = Gve;
-    const Vve = class e extends b {
+    let Hve = Vve;
+    const Kve = class e extends b {
         constructor(e) {
             super(), this.messages = [], this.allowIndexing = !1, nt.util.initPartial(e, this)
         }
@@ -101922,11 +101980,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Vve.runtime = nt, Vve.typeName = "aiserver.v1.GetPublicSharedConversationResponse", Vve.fields = nt.util.newFieldList(() => [{
+    Kve.runtime = nt, Kve.typeName = "aiserver.v1.GetPublicSharedConversationResponse", Kve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "metadata",
         kind: "message",
-        T: MJe
+        T: YJe
     }, {
         no: 2,
         name: "messages",
@@ -101942,11 +102000,11 @@
         no: 4,
         name: "latest_plan",
         kind: "message",
-        T: YJe,
+        T: HJe,
         opt: !0
     }]);
-    let Hve = Vve;
-    const Kve = class e extends b {
+    let zve = Kve;
+    const Wve = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -101963,14 +102021,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Kve.runtime = nt, Kve.typeName = "aiserver.v1.GetTeamSharedConversationSettingsRequest", Kve.fields = nt.util.newFieldList(() => [{
+    Wve.runtime = nt, Wve.typeName = "aiserver.v1.GetTeamSharedConversationSettingsRequest", Wve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let zve = Kve;
-    const Wve = class e extends b {
+    let jve = Wve;
+    const Xve = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -101987,37 +102045,8 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Wve.runtime = nt, Wve.typeName = "aiserver.v1.GetTeamSharedConversationSettingsResponse", Wve.fields = nt.util.newFieldList(() => [{
+    Xve.runtime = nt, Xve.typeName = "aiserver.v1.GetTeamSharedConversationSettingsResponse", Xve.fields = nt.util.newFieldList(() => [{
         no: 1,
-        name: "settings",
-        kind: "message",
-        T: Tae
-    }]);
-    let jve = Wve;
-    const Xve = class e extends b {
-        constructor(e) {
-            super(), this.teamId = 0, nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    Xve.runtime = nt, Xve.typeName = "aiserver.v1.UpdateTeamSharedConversationSettingsRequest", Xve.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "team_id",
-        kind: "scalar",
-        T: 5
-    }, {
-        no: 2,
         name: "settings",
         kind: "message",
         T: Tae
@@ -102025,25 +102054,6 @@
     let $ve = Xve;
     const Qve = class e extends b {
         constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    Qve.runtime = nt, Qve.typeName = "aiserver.v1.UpdateTeamSharedConversationSettingsResponse", Qve.fields = nt.util.newFieldList(() => []);
-    let Zve = Qve;
-    const eEe = class e extends b {
-        constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -102059,61 +102069,80 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eEe.runtime = nt, eEe.typeName = "aiserver.v1.GetTeamSharedCanvasSettingsRequest", eEe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "team_id",
-        kind: "scalar",
-        T: 5
-    }]);
-    let tEe = eEe;
-    const nEe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    nEe.runtime = nt, nEe.typeName = "aiserver.v1.GetTeamSharedCanvasSettingsResponse", nEe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "settings",
-        kind: "message",
-        T: _ae
-    }]);
-    let rEe = nEe;
-    const sEe = class e extends b {
-        constructor(e) {
-            super(), this.teamId = 0, nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    sEe.runtime = nt, sEe.typeName = "aiserver.v1.UpdateTeamSharedCanvasSettingsRequest", sEe.fields = nt.util.newFieldList(() => [{
+    Qve.runtime = nt, Qve.typeName = "aiserver.v1.UpdateTeamSharedConversationSettingsRequest", Qve.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }, {
         no: 2,
+        name: "settings",
+        kind: "message",
+        T: Tae
+    }]);
+    let Zve = Qve;
+    const eEe = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    eEe.runtime = nt, eEe.typeName = "aiserver.v1.UpdateTeamSharedConversationSettingsResponse", eEe.fields = nt.util.newFieldList(() => []);
+    let tEe = eEe;
+    const nEe = class e extends b {
+        constructor(e) {
+            super(), this.teamId = 0, nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    nEe.runtime = nt, nEe.typeName = "aiserver.v1.GetTeamSharedCanvasSettingsRequest", nEe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "team_id",
+        kind: "scalar",
+        T: 5
+    }]);
+    let rEe = nEe;
+    const sEe = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    sEe.runtime = nt, sEe.typeName = "aiserver.v1.GetTeamSharedCanvasSettingsResponse", sEe.fields = nt.util.newFieldList(() => [{
+        no: 1,
         name: "settings",
         kind: "message",
         T: _ae
@@ -102121,6 +102150,35 @@
     let iEe = sEe;
     const aEe = class e extends b {
         constructor(e) {
+            super(), this.teamId = 0, nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    aEe.runtime = nt, aEe.typeName = "aiserver.v1.UpdateTeamSharedCanvasSettingsRequest", aEe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "team_id",
+        kind: "scalar",
+        T: 5
+    }, {
+        no: 2,
+        name: "settings",
+        kind: "message",
+        T: _ae
+    }]);
+    let oEe = aEe;
+    const lEe = class e extends b {
+        constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -102136,9 +102194,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    aEe.runtime = nt, aEe.typeName = "aiserver.v1.UpdateTeamSharedCanvasSettingsResponse", aEe.fields = nt.util.newFieldList(() => []);
-    let oEe = aEe;
-    const lEe = class e extends b {
+    lEe.runtime = nt, lEe.typeName = "aiserver.v1.UpdateTeamSharedCanvasSettingsResponse", lEe.fields = nt.util.newFieldList(() => []);
+    let uEe = lEe;
+    const mEe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -102155,14 +102213,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lEe.runtime = nt, lEe.typeName = "aiserver.v1.GetTeamBackgroundAgentSettingsRequest", lEe.fields = nt.util.newFieldList(() => [{
+    mEe.runtime = nt, mEe.typeName = "aiserver.v1.GetTeamBackgroundAgentSettingsRequest", mEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let uEe = lEe;
-    const mEe = class e extends b {
+    let cEe = mEe;
+    const dEe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -102179,14 +102237,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mEe.runtime = nt, mEe.typeName = "aiserver.v1.GetTeamBackgroundAgentSettingsResponse", mEe.fields = nt.util.newFieldList(() => [{
+    dEe.runtime = nt, dEe.typeName = "aiserver.v1.GetTeamBackgroundAgentSettingsResponse", dEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "settings",
         kind: "message",
         T: Oie
     }]);
-    let cEe = mEe;
-    const dEe = class e extends b {
+    let fEe = dEe;
+    const pEe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -102203,7 +102261,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dEe.runtime = nt, dEe.typeName = "aiserver.v1.UpdateTeamBackgroundAgentSettingsRequest", dEe.fields = nt.util.newFieldList(() => [{
+    pEe.runtime = nt, pEe.typeName = "aiserver.v1.UpdateTeamBackgroundAgentSettingsRequest", pEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -102214,8 +102272,8 @@
         kind: "message",
         T: Oie
     }]);
-    let fEe = dEe;
-    const pEe = class e extends b {
+    let gEe = pEe;
+    const TEe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -102232,9 +102290,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pEe.runtime = nt, pEe.typeName = "aiserver.v1.UpdateTeamBackgroundAgentSettingsResponse", pEe.fields = nt.util.newFieldList(() => []);
-    let gEe = pEe;
-    const TEe = class e extends b {
+    TEe.runtime = nt, TEe.typeName = "aiserver.v1.UpdateTeamBackgroundAgentSettingsResponse", TEe.fields = nt.util.newFieldList(() => []);
+    let hEe = TEe;
+    const _Ee = class e extends b {
         constructor(e) {
             super(), this.id = "", this.teamId = 0, this.targetType = "", this.targetScope = "", this.thresholdCents = 0, this.notificationMode = "", this.enabled = !1, this.createdAt = K.zero, this.notifyAdminUserIds = [], this.notificationChannels = [], nt.util.initPartial(e, this)
         }
@@ -102251,7 +102309,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    TEe.runtime = nt, TEe.typeName = "aiserver.v1.UsageAlert", TEe.fields = nt.util.newFieldList(() => [{
+    _Ee.runtime = nt, _Ee.typeName = "aiserver.v1.UsageAlert", _Ee.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -102358,8 +102416,8 @@
         T: 9,
         repeated: !0
     }]);
-    let hEe = TEe;
-    const _Ee = class e extends b {
+    let yEe = _Ee;
+    const wEe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -102376,14 +102434,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _Ee.runtime = nt, _Ee.typeName = "aiserver.v1.ListUsageAlertsRequest", _Ee.fields = nt.util.newFieldList(() => [{
+    wEe.runtime = nt, wEe.typeName = "aiserver.v1.ListUsageAlertsRequest", wEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let yEe = _Ee;
-    const wEe = class e extends b {
+    let kEe = wEe;
+    const SEe = class e extends b {
         constructor(e) {
             super(), this.alerts = [], nt.util.initPartial(e, this)
         }
@@ -102400,15 +102458,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wEe.runtime = nt, wEe.typeName = "aiserver.v1.ListUsageAlertsResponse", wEe.fields = nt.util.newFieldList(() => [{
+    SEe.runtime = nt, SEe.typeName = "aiserver.v1.ListUsageAlertsResponse", SEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "alerts",
         kind: "message",
-        T: hEe,
+        T: yEe,
         repeated: !0
     }]);
-    let kEe = wEe;
-    const SEe = class e extends b {
+    let JEe = SEe;
+    const vEe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.targetType = "", this.targetScope = "", this.thresholdCents = [], this.notificationMode = "", this.notifyAdminUserIds = [], this.thresholdBps = [], this.notificationChannels = [], nt.util.initPartial(e, this)
         }
@@ -102425,7 +102483,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    SEe.runtime = nt, SEe.typeName = "aiserver.v1.CreateUsageAlertsRequest", SEe.fields = nt.util.newFieldList(() => [{
+    vEe.runtime = nt, vEe.typeName = "aiserver.v1.CreateUsageAlertsRequest", vEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -102512,8 +102570,8 @@
         T: 9,
         repeated: !0
     }]);
-    let JEe = SEe;
-    const vEe = class e extends b {
+    let EEe = vEe;
+    const NEe = class e extends b {
         constructor(e) {
             super(), this.createdAlerts = [], nt.util.initPartial(e, this)
         }
@@ -102530,15 +102588,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vEe.runtime = nt, vEe.typeName = "aiserver.v1.CreateUsageAlertsResponse", vEe.fields = nt.util.newFieldList(() => [{
+    NEe.runtime = nt, NEe.typeName = "aiserver.v1.CreateUsageAlertsResponse", NEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "created_alerts",
         kind: "message",
-        T: hEe,
+        T: yEe,
         repeated: !0
     }]);
-    let EEe = vEe;
-    const NEe = class e extends b {
+    let BEe = NEe;
+    const IEe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.alertIds = [], nt.util.initPartial(e, this)
         }
@@ -102555,7 +102613,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    NEe.runtime = nt, NEe.typeName = "aiserver.v1.DeleteUsageAlertsRequest", NEe.fields = nt.util.newFieldList(() => [{
+    IEe.runtime = nt, IEe.typeName = "aiserver.v1.DeleteUsageAlertsRequest", IEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -102567,8 +102625,8 @@
         T: 9,
         repeated: !0
     }]);
-    let BEe = NEe;
-    const IEe = class e extends b {
+    let PEe = IEe;
+    const qEe = class e extends b {
         constructor(e) {
             super(), this.deletedCount = 0, nt.util.initPartial(e, this)
         }
@@ -102585,14 +102643,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    IEe.runtime = nt, IEe.typeName = "aiserver.v1.DeleteUsageAlertsResponse", IEe.fields = nt.util.newFieldList(() => [{
+    qEe.runtime = nt, qEe.typeName = "aiserver.v1.DeleteUsageAlertsResponse", qEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "deleted_count",
         kind: "scalar",
         T: 5
     }]);
-    let PEe = IEe;
-    const qEe = class e extends b {
+    let REe = qEe;
+    const LEe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.alertIds = [], this.notificationMode = "", this.notifyAdminUserIds = [], this.notificationChannels = [], nt.util.initPartial(e, this)
         }
@@ -102609,7 +102667,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qEe.runtime = nt, qEe.typeName = "aiserver.v1.UpdateUsageAlertsRequest", qEe.fields = nt.util.newFieldList(() => [{
+    LEe.runtime = nt, LEe.typeName = "aiserver.v1.UpdateUsageAlertsRequest", LEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -102650,8 +102708,8 @@
         T: 9,
         repeated: !0
     }]);
-    let REe = qEe;
-    const LEe = class e extends b {
+    let FEe = LEe;
+    const OEe = class e extends b {
         constructor(e) {
             super(), this.updatedCount = 0, nt.util.initPartial(e, this)
         }
@@ -102668,14 +102726,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    LEe.runtime = nt, LEe.typeName = "aiserver.v1.UpdateUsageAlertsResponse", LEe.fields = nt.util.newFieldList(() => [{
+    OEe.runtime = nt, OEe.typeName = "aiserver.v1.UpdateUsageAlertsResponse", OEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "updated_count",
         kind: "scalar",
         T: 5
     }]);
-    let FEe = LEe;
-    const OEe = class e extends b {
+    let bEe = OEe;
+    const CEe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -102692,9 +102750,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    OEe.runtime = nt, OEe.typeName = "aiserver.v1.RequestIndividualLimitsOptOutRequest", OEe.fields = nt.util.newFieldList(() => []);
-    let bEe = OEe;
-    const CEe = class e extends b {
+    CEe.runtime = nt, CEe.typeName = "aiserver.v1.RequestIndividualLimitsOptOutRequest", CEe.fields = nt.util.newFieldList(() => []);
+    let UEe = CEe;
+    const AEe = class e extends b {
         constructor(e) {
             super(), this.teamResults = [], nt.util.initPartial(e, this)
         }
@@ -102711,15 +102769,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    CEe.runtime = nt, CEe.typeName = "aiserver.v1.RequestIndividualLimitsOptOutResponse", CEe.fields = nt.util.newFieldList(() => [{
+    AEe.runtime = nt, AEe.typeName = "aiserver.v1.RequestIndividualLimitsOptOutResponse", AEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_results",
         kind: "message",
-        T: xEe,
+        T: MEe,
         repeated: !0
     }]);
-    let UEe = CEe;
-    const AEe = class e extends b {
+    let xEe = AEe;
+    const DEe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.teamName = "", this.outcome = 0, nt.util.initPartial(e, this)
         }
@@ -102736,7 +102794,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    AEe.runtime = nt, AEe.typeName = "aiserver.v1.IndividualLimitsOptOutTeamResult", AEe.fields = nt.util.newFieldList(() => [{
+    DEe.runtime = nt, DEe.typeName = "aiserver.v1.IndividualLimitsOptOutTeamResult", DEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -102752,8 +102810,8 @@
         kind: "enum",
         T: nt.getEnumType(u1)
     }]);
-    let xEe = AEe;
-    const DEe = class e extends b {
+    let MEe = DEe;
+    const GEe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -102770,7 +102828,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    DEe.runtime = nt, DEe.typeName = "aiserver.v1.ListSlackConversationsRequest", DEe.fields = nt.util.newFieldList(() => [{
+    GEe.runtime = nt, GEe.typeName = "aiserver.v1.ListSlackConversationsRequest", GEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "search",
         kind: "scalar",
@@ -102789,8 +102847,8 @@
         T: 8,
         opt: !0
     }]);
-    let MEe = DEe;
-    const GEe = class e extends b {
+    let YEe = GEe;
+    const VEe = class e extends b {
         constructor(e) {
             super(), this.conversations = [], this.hasSlackAuth = !1, nt.util.initPartial(e, this)
         }
@@ -102807,11 +102865,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    GEe.runtime = nt, GEe.typeName = "aiserver.v1.ListSlackConversationsResponse", GEe.fields = nt.util.newFieldList(() => [{
+    VEe.runtime = nt, VEe.typeName = "aiserver.v1.ListSlackConversationsResponse", VEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "conversations",
         kind: "message",
-        T: tNe,
+        T: rNe,
         repeated: !0
     }, {
         no: 2,
@@ -102819,8 +102877,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let YEe = GEe;
-    const VEe = class e extends b {
+    let HEe = VEe;
+    const KEe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -102837,15 +102895,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    VEe.runtime = nt, VEe.typeName = "aiserver.v1.ListMicrosoftTeamsChannelsRequest", VEe.fields = nt.util.newFieldList(() => [{
+    KEe.runtime = nt, KEe.typeName = "aiserver.v1.ListMicrosoftTeamsChannelsRequest", KEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "search",
         kind: "scalar",
         T: 9,
         opt: !0
     }]);
-    let HEe = VEe;
-    const KEe = class e extends b {
+    let zEe = KEe;
+    const WEe = class e extends b {
         constructor(e) {
             super(), this.channels = [], this.hasMicrosoftTeamsAuth = !1, nt.util.initPartial(e, this)
         }
@@ -102862,11 +102920,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    KEe.runtime = nt, KEe.typeName = "aiserver.v1.ListMicrosoftTeamsChannelsResponse", KEe.fields = nt.util.newFieldList(() => [{
+    WEe.runtime = nt, WEe.typeName = "aiserver.v1.ListMicrosoftTeamsChannelsResponse", WEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "channels",
         kind: "message",
-        T: jEe,
+        T: $Ee,
         repeated: !0
     }, {
         no: 2,
@@ -102874,8 +102932,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let zEe = KEe;
-    const WEe = class e extends b {
+    let jEe = WEe;
+    const XEe = class e extends b {
         constructor(e) {
             super(), this.tenantId = "", this.teamId = "", this.teamDisplayName = "", this.channelId = "", this.displayName = "", nt.util.initPartial(e, this)
         }
@@ -102892,7 +102950,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    WEe.runtime = nt, WEe.typeName = "aiserver.v1.MicrosoftTeamsChannel", WEe.fields = nt.util.newFieldList(() => [{
+    XEe.runtime = nt, XEe.typeName = "aiserver.v1.MicrosoftTeamsChannel", XEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "tenant_id",
         kind: "scalar",
@@ -102924,8 +102982,8 @@
         T: 9,
         opt: !0
     }]);
-    let jEe = WEe;
-    const XEe = class e extends b {
+    let $Ee = XEe;
+    const QEe = class e extends b {
         constructor(e) {
             super(), this.conversationIds = [], nt.util.initPartial(e, this)
         }
@@ -102942,15 +103000,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    XEe.runtime = nt, XEe.typeName = "aiserver.v1.GetSlackConversationsByIdsRequest", XEe.fields = nt.util.newFieldList(() => [{
+    QEe.runtime = nt, QEe.typeName = "aiserver.v1.GetSlackConversationsByIdsRequest", QEe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "conversation_ids",
         kind: "scalar",
         T: 9,
         repeated: !0
     }]);
-    let $Ee = XEe;
-    const QEe = class e extends b {
+    let ZEe = QEe;
+    const eNe = class e extends b {
         constructor(e) {
             super(), this.conversations = [], nt.util.initPartial(e, this)
         }
@@ -102967,15 +103025,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    QEe.runtime = nt, QEe.typeName = "aiserver.v1.GetSlackConversationsByIdsResponse", QEe.fields = nt.util.newFieldList(() => [{
+    eNe.runtime = nt, eNe.typeName = "aiserver.v1.GetSlackConversationsByIdsResponse", eNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "conversations",
         kind: "message",
-        T: tNe,
+        T: rNe,
         repeated: !0
     }]);
-    let ZEe = QEe;
-    const eNe = class e extends b {
+    let tNe = eNe;
+    const nNe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.name = "", this.type = 0, this.isPrivate = !1, nt.util.initPartial(e, this)
         }
@@ -102992,7 +103050,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eNe.runtime = nt, eNe.typeName = "aiserver.v1.SlackConversation", eNe.fields = nt.util.newFieldList(() => [{
+    nNe.runtime = nt, nNe.typeName = "aiserver.v1.SlackConversation", nNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -103019,8 +103077,8 @@
         T: 8,
         opt: !0
     }]);
-    let tNe = eNe;
-    const nNe = class e extends b {
+    let rNe = nNe;
+    const sNe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -103037,9 +103095,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nNe.runtime = nt, nNe.typeName = "aiserver.v1.SendDownloadEmailRequest", nNe.fields = nt.util.newFieldList(() => []);
-    let rNe = nNe;
-    const sNe = class e extends b {
+    sNe.runtime = nt, sNe.typeName = "aiserver.v1.SendDownloadEmailRequest", sNe.fields = nt.util.newFieldList(() => []);
+    let iNe = sNe;
+    const aNe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -103056,14 +103114,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sNe.runtime = nt, sNe.typeName = "aiserver.v1.SendDownloadEmailResponse", sNe.fields = nt.util.newFieldList(() => [{
+    aNe.runtime = nt, aNe.typeName = "aiserver.v1.SendDownloadEmailResponse", aNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let iNe = sNe;
-    const aNe = class e extends b {
+    let oNe = aNe;
+    const lNe = class e extends b {
         constructor(e) {
             super(), this.id = K.zero, this.name = "", this.displayName = "", this.isVerified = !1, this.createdAt = K.zero, this.updatedAt = K.zero, nt.util.initPartial(e, this)
         }
@@ -103080,7 +103138,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    aNe.runtime = nt, aNe.typeName = "aiserver.v1.Publisher", aNe.fields = nt.util.newFieldList(() => [{
+    lNe.runtime = nt, lNe.typeName = "aiserver.v1.Publisher", lNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -103159,8 +103217,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let oNe = aNe;
-    const lNe = class e extends b {
+    let uNe = lNe;
+    const mNe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, this.directoryGroupIds = [], nt.util.initPartial(e, this)
         }
@@ -103177,7 +103235,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lNe.runtime = nt, lNe.typeName = "aiserver.v1.MarketplaceRequiredPluginInstall", lNe.fields = nt.util.newFieldList(() => [{
+    mNe.runtime = nt, mNe.typeName = "aiserver.v1.MarketplaceRequiredPluginInstall", mNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
@@ -103189,8 +103247,8 @@
         T: 3,
         repeated: !0
     }]);
-    let uNe = lNe;
-    const mNe = class e extends b {
+    let cNe = mNe;
+    const dNe = class e extends b {
         constructor(e) {
             super(), this.id = K.zero, this.name = "", this.gitUrl = "", this.createdAt = K.zero, this.updatedAt = K.zero, this.requiredPluginInstalls = [], this.autoReindex = !1, nt.util.initPartial(e, this)
         }
@@ -103207,7 +103265,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mNe.runtime = nt, mNe.typeName = "aiserver.v1.Marketplace", mNe.fields = nt.util.newFieldList(() => [{
+    dNe.runtime = nt, dNe.typeName = "aiserver.v1.Marketplace", dNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -103284,13 +103342,13 @@
         no: 14,
         name: "team_config",
         kind: "message",
-        T: fqe,
+        T: gqe,
         opt: !0
     }, {
         no: 15,
         name: "required_plugin_installs",
         kind: "message",
-        T: uNe,
+        T: cNe,
         repeated: !0
     }, {
         no: 16,
@@ -103298,8 +103356,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let cNe = mNe;
-    const dNe = class e extends b {
+    let fNe = dNe;
+    const pNe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.environments = [], this.disabledEnvironments = [], nt.util.initPartial(e, this)
         }
@@ -103316,7 +103374,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dNe.runtime = nt, dNe.typeName = "aiserver.v1.SkillDescriptor", dNe.fields = nt.util.newFieldList(() => [{
+    pNe.runtime = nt, pNe.typeName = "aiserver.v1.SkillDescriptor", pNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -103352,48 +103410,6 @@
         T: 9,
         repeated: !0
     }]);
-    let fNe = dNe;
-    const pNe = class e extends b {
-        constructor(e) {
-            super(), this.name = "", nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    pNe.runtime = nt, pNe.typeName = "aiserver.v1.SubagentDescriptor", pNe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "name",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "description",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }, {
-        no: 3,
-        name: "source_path",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }, {
-        no: 4,
-        name: "source_url",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }]);
     let gNe = pNe;
     const TNe = class e extends b {
         constructor(e) {
@@ -103412,7 +103428,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    TNe.runtime = nt, TNe.typeName = "aiserver.v1.HookDescriptor", TNe.fields = nt.util.newFieldList(() => [{
+    TNe.runtime = nt, TNe.typeName = "aiserver.v1.SubagentDescriptor", TNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -103454,7 +103470,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _Ne.runtime = nt, _Ne.typeName = "aiserver.v1.RuleDescriptor", _Ne.fields = nt.util.newFieldList(() => [{
+    _Ne.runtime = nt, _Ne.typeName = "aiserver.v1.HookDescriptor", _Ne.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -103496,7 +103512,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wNe.runtime = nt, wNe.typeName = "aiserver.v1.McpDescriptor", wNe.fields = nt.util.newFieldList(() => [{
+    wNe.runtime = nt, wNe.typeName = "aiserver.v1.RuleDescriptor", wNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -103538,7 +103554,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    SNe.runtime = nt, SNe.typeName = "aiserver.v1.CommandDescriptor", SNe.fields = nt.util.newFieldList(() => [{
+    SNe.runtime = nt, SNe.typeName = "aiserver.v1.McpDescriptor", SNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -103565,6 +103581,48 @@
     let JNe = SNe;
     const vNe = class e extends b {
         constructor(e) {
+            super(), this.name = "", nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    vNe.runtime = nt, vNe.typeName = "aiserver.v1.CommandDescriptor", vNe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "description",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }, {
+        no: 3,
+        name: "source_path",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }, {
+        no: 4,
+        name: "source_url",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let ENe = vNe;
+    const NNe = class e extends b {
+        constructor(e) {
             super(), this.id = K.zero, this.name = "", this.displayName = "", this.description = "", this.status = 0, this.tags = [], this.isPublished = !1, this.createdAt = K.zero, this.updatedAt = K.zero, this.isDeprecated = !1, this.gitUrl = "", this.fullRef = "", this.skills = [], this.subagents = [], this.hooks = [], this.rules = [], this.mcpServers = [], this.commands = [], this.curatedCategoryKeys = [], nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -103580,7 +103638,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vNe.runtime = nt, vNe.typeName = "aiserver.v1.Plugin", vNe.fields = nt.util.newFieldList(() => [{
+    NNe.runtime = nt, NNe.typeName = "aiserver.v1.Plugin", NNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -103654,7 +103712,7 @@
         no: 17,
         name: "publisher",
         kind: "message",
-        T: oNe,
+        T: uNe,
         opt: !0
     }, {
         no: 18,
@@ -103689,7 +103747,7 @@
         no: 23,
         name: "marketplace",
         kind: "message",
-        T: cNe,
+        T: fNe,
         opt: !0
     }, {
         no: 24,
@@ -103717,37 +103775,37 @@
         no: 28,
         name: "skills",
         kind: "message",
-        T: fNe,
+        T: gNe,
         repeated: !0
     }, {
         no: 29,
         name: "subagents",
         kind: "message",
-        T: gNe,
+        T: hNe,
         repeated: !0
     }, {
         no: 30,
         name: "hooks",
         kind: "message",
-        T: hNe,
+        T: yNe,
         repeated: !0
     }, {
         no: 31,
         name: "rules",
         kind: "message",
-        T: yNe,
+        T: kNe,
         repeated: !0
     }, {
         no: 32,
         name: "mcp_servers",
         kind: "message",
-        T: kNe,
+        T: JNe,
         repeated: !0
     }, {
         no: 33,
         name: "commands",
         kind: "message",
-        T: JNe,
+        T: ENe,
         repeated: !0
     }, {
         no: 34,
@@ -103790,8 +103848,8 @@
         kind: "message",
         T: Yn
     }]);
-    let ENe = vNe;
-    const NNe = class e extends b {
+    let BNe = NNe;
+    const INe = class e extends b {
         constructor(e) {
             super(), this.userId = 0, this.pluginId = K.zero, this.isEnabled = !1, this.createdAt = K.zero, this.updatedAt = K.zero, nt.util.initPartial(e, this)
         }
@@ -103808,7 +103866,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    NNe.runtime = nt, NNe.typeName = "aiserver.v1.UserPluginInstall", NNe.fields = nt.util.newFieldList(() => [{
+    INe.runtime = nt, INe.typeName = "aiserver.v1.UserPluginInstall", INe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "user_id",
         kind: "scalar",
@@ -103837,7 +103895,7 @@
         no: 8,
         name: "plugin",
         kind: "message",
-        T: ENe
+        T: BNe
     }, {
         no: 10,
         name: "pinned_git_ref",
@@ -103845,8 +103903,8 @@
         T: 9,
         opt: !0
     }]);
-    let BNe = NNe;
-    const INe = class e extends b {
+    let PNe = INe;
+    const qNe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.pluginId = K.zero, this.isRequired = !1, this.createdAt = K.zero, this.updatedAt = K.zero, nt.util.initPartial(e, this)
         }
@@ -103863,7 +103921,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    INe.runtime = nt, INe.typeName = "aiserver.v1.TeamPluginInstall", INe.fields = nt.util.newFieldList(() => [{
+    qNe.runtime = nt, qNe.typeName = "aiserver.v1.TeamPluginInstall", qNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -103898,7 +103956,7 @@
         no: 8,
         name: "plugin",
         kind: "message",
-        T: ENe
+        T: BNe
     }, {
         no: 10,
         name: "pinned_git_ref",
@@ -103906,8 +103964,8 @@
         T: 9,
         opt: !0
     }]);
-    let PNe = INe;
-    const qNe = class e extends b {
+    let RNe = qNe;
+    const LNe = class e extends b {
         constructor(e) {
             super(), this.tags = [], nt.util.initPartial(e, this)
         }
@@ -103924,7 +103982,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qNe.runtime = nt, qNe.typeName = "aiserver.v1.ListMarketplacePluginsRequest", qNe.fields = nt.util.newFieldList(() => [{
+    LNe.runtime = nt, LNe.typeName = "aiserver.v1.ListMarketplacePluginsRequest", LNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "search",
         kind: "scalar",
@@ -103973,8 +104031,8 @@
         T: 8,
         opt: !0
     }]);
-    let RNe = qNe;
-    const LNe = class e extends b {
+    let FNe = LNe;
+    const ONe = class e extends b {
         constructor(e) {
             super(), this.plugins = [], this.hasMore = !1, nt.util.initPartial(e, this)
         }
@@ -103991,11 +104049,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    LNe.runtime = nt, LNe.typeName = "aiserver.v1.ListMarketplacePluginsResponse", LNe.fields = nt.util.newFieldList(() => [{
+    ONe.runtime = nt, ONe.typeName = "aiserver.v1.ListMarketplacePluginsResponse", ONe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugins",
         kind: "message",
-        T: ENe,
+        T: BNe,
         repeated: !0
     }, {
         no: 2,
@@ -104009,8 +104067,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let FNe = LNe;
-    const ONe = class e extends b {
+    let bNe = ONe;
+    const CNe = class e extends b {
         constructor(e) {
             super(), this.visibility = "", this.links = {}, this.createdAt = "", this.updatedAt = "", this.badges = [], nt.util.initPartial(e, this)
         }
@@ -104027,7 +104085,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ONe.runtime = nt, ONe.typeName = "aiserver.v1.UserProfile", ONe.fields = nt.util.newFieldList(() => [{
+    CNe.runtime = nt, CNe.typeName = "aiserver.v1.UserProfile", CNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "handle",
         kind: "scalar",
@@ -104076,8 +104134,8 @@
         T: 9,
         repeated: !0
     }]);
-    let bNe = ONe;
-    const CNe = class e extends b {
+    let UNe = CNe;
+    const ANe = class e extends b {
         constructor(e) {
             super(), this.date = "", this.agentCount = 0, nt.util.initPartial(e, this)
         }
@@ -104094,7 +104152,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    CNe.runtime = nt, CNe.typeName = "aiserver.v1.PublicProfileDailyAgentCount", CNe.fields = nt.util.newFieldList(() => [{
+    ANe.runtime = nt, ANe.typeName = "aiserver.v1.PublicProfileDailyAgentCount", ANe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "date",
         kind: "scalar",
@@ -104105,8 +104163,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let UNe = CNe;
-    const ANe = class e extends b {
+    let xNe = ANe;
+    const DNe = class e extends b {
         constructor(e) {
             super(), this.date = "", this.count = 0, nt.util.initPartial(e, this)
         }
@@ -104123,7 +104181,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ANe.runtime = nt, ANe.typeName = "aiserver.v1.PublicProfileActivityCount", ANe.fields = nt.util.newFieldList(() => [{
+    DNe.runtime = nt, DNe.typeName = "aiserver.v1.PublicProfileActivityCount", DNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "date",
         kind: "scalar",
@@ -104134,8 +104192,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let xNe = ANe;
-    const DNe = class e extends b {
+    let MNe = DNe;
+    const GNe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.agentRequests = 0, nt.util.initPartial(e, this)
         }
@@ -104152,7 +104210,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    DNe.runtime = nt, DNe.typeName = "aiserver.v1.PublicProfileModelUsage", DNe.fields = nt.util.newFieldList(() => [{
+    GNe.runtime = nt, GNe.typeName = "aiserver.v1.PublicProfileModelUsage", GNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -104163,8 +104221,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let MNe = DNe;
-    const GNe = class e extends b {
+    let YNe = GNe;
+    const VNe = class e extends b {
         constructor(e) {
             super(), this.date = "", this.tokens = K.zero, nt.util.initPartial(e, this)
         }
@@ -104181,7 +104239,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    GNe.runtime = nt, GNe.typeName = "aiserver.v1.PublicProfileTokensPerDay", GNe.fields = nt.util.newFieldList(() => [{
+    VNe.runtime = nt, VNe.typeName = "aiserver.v1.PublicProfileTokensPerDay", VNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "date",
         kind: "scalar",
@@ -104192,8 +104250,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let YNe = GNe;
-    const VNe = class e extends b {
+    let HNe = VNe;
+    const KNe = class e extends b {
         constructor(e) {
             super(), this.date = "", this.localCount = 0, this.cloudCount = 0, nt.util.initPartial(e, this)
         }
@@ -104210,7 +104268,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    VNe.runtime = nt, VNe.typeName = "aiserver.v1.PublicProfileAgentsPerDay", VNe.fields = nt.util.newFieldList(() => [{
+    KNe.runtime = nt, KNe.typeName = "aiserver.v1.PublicProfileAgentsPerDay", KNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "date",
         kind: "scalar",
@@ -104226,8 +104284,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let HNe = VNe;
-    const KNe = class e extends b {
+    let zNe = KNe;
+    const WNe = class e extends b {
         constructor(e) {
             super(), this.mostActiveMonth = "", this.mostActiveDay = "", this.longestStreak = 0, this.currentStreak = 0, this.activeDates = [], this.dailyAgentCounts = [], this.activityCounts = [], this.topModels = [], this.agentsLocal = 0, this.agentsCloud = 0, this.longestAgentSeconds = K.zero, this.tokensOverTime = [], this.agentsOverTime = [], nt.util.initPartial(e, this)
         }
@@ -104244,7 +104302,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    KNe.runtime = nt, KNe.typeName = "aiserver.v1.PublicProfileActivitySummary", KNe.fields = nt.util.newFieldList(() => [{
+    WNe.runtime = nt, WNe.typeName = "aiserver.v1.PublicProfileActivitySummary", WNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "most_active_month",
         kind: "scalar",
@@ -104274,19 +104332,19 @@
         no: 6,
         name: "daily_agent_counts",
         kind: "message",
-        T: UNe,
+        T: xNe,
         repeated: !0
     }, {
         no: 7,
         name: "activity_counts",
         kind: "message",
-        T: xNe,
+        T: MNe,
         repeated: !0
     }, {
         no: 8,
         name: "top_models",
         kind: "message",
-        T: MNe,
+        T: YNe,
         repeated: !0
     }, {
         no: 10,
@@ -104307,17 +104365,17 @@
         no: 13,
         name: "tokens_over_time",
         kind: "message",
-        T: YNe,
+        T: HNe,
         repeated: !0
     }, {
         no: 14,
         name: "agents_over_time",
         kind: "message",
-        T: HNe,
+        T: zNe,
         repeated: !0
     }]);
-    let zNe = KNe;
-    const WNe = class e extends b {
+    let jNe = WNe;
+    const XNe = class e extends b {
         constructor(e) {
             super(), this.includeActivitySummary = !1, nt.util.initPartial(e, this)
         }
@@ -104334,14 +104392,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    WNe.runtime = nt, WNe.typeName = "aiserver.v1.GetUserProfileRequest", WNe.fields = nt.util.newFieldList(() => [{
+    XNe.runtime = nt, XNe.typeName = "aiserver.v1.GetUserProfileRequest", XNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "include_activity_summary",
         kind: "scalar",
         T: 8
     }]);
-    let jNe = WNe;
-    const XNe = class e extends b {
+    let $Ne = XNe;
+    const QNe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -104358,20 +104416,20 @@
             return nt.util.equals(e, t, n)
         }
     };
-    XNe.runtime = nt, XNe.typeName = "aiserver.v1.GetUserProfileResponse", XNe.fields = nt.util.newFieldList(() => [{
+    QNe.runtime = nt, QNe.typeName = "aiserver.v1.GetUserProfileResponse", QNe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "profile",
         kind: "message",
-        T: bNe,
+        T: UNe,
         opt: !0
     }, {
         no: 3,
         name: "activity_summary",
         kind: "message",
-        T: zNe
+        T: jNe
     }]);
-    let $Ne = XNe;
-    const QNe = class e extends b {
+    let ZNe = QNe;
+    const eBe = class e extends b {
         constructor(e) {
             super(), this.links = {}, nt.util.initPartial(e, this)
         }
@@ -104388,7 +104446,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    QNe.runtime = nt, QNe.typeName = "aiserver.v1.UpdateUserProfileRequest", QNe.fields = nt.util.newFieldList(() => [{
+    eBe.runtime = nt, eBe.typeName = "aiserver.v1.UpdateUserProfileRequest", eBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "visibility",
         kind: "scalar",
@@ -104410,8 +104468,8 @@
         T: Yn,
         opt: !0
     }]);
-    let ZNe = QNe;
-    const eBe = class e extends b {
+    let tBe = eBe;
+    const nBe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -104428,39 +104486,39 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eBe.runtime = nt, eBe.typeName = "aiserver.v1.UpdateUserProfileResponse", eBe.fields = nt.util.newFieldList(() => [{
+    nBe.runtime = nt, nBe.typeName = "aiserver.v1.UpdateUserProfileResponse", nBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "profile",
         kind: "message",
-        T: bNe
-    }]);
-    let tBe = eBe;
-    const nBe = class e extends b {
-        constructor(e) {
-            super(), this.handle = "", nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    nBe.runtime = nt, nBe.typeName = "aiserver.v1.ClaimUserProfileHandleRequest", nBe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "handle",
-        kind: "scalar",
-        T: 9
+        T: UNe
     }]);
     let rBe = nBe;
     const sBe = class e extends b {
         constructor(e) {
+            super(), this.handle = "", nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    sBe.runtime = nt, sBe.typeName = "aiserver.v1.ClaimUserProfileHandleRequest", sBe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "handle",
+        kind: "scalar",
+        T: 9
+    }]);
+    let iBe = sBe;
+    const aBe = class e extends b {
+        constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -104476,14 +104534,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sBe.runtime = nt, sBe.typeName = "aiserver.v1.ClaimUserProfileHandleResponse", sBe.fields = nt.util.newFieldList(() => [{
+    aBe.runtime = nt, aBe.typeName = "aiserver.v1.ClaimUserProfileHandleResponse", aBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "profile",
         kind: "message",
-        T: bNe
+        T: UNe
     }]);
-    let iBe = sBe;
-    const aBe = class e extends b {
+    let oBe = aBe;
+    const lBe = class e extends b {
         constructor(e) {
             super(), this.handle = "", nt.util.initPartial(e, this)
         }
@@ -104500,14 +104558,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    aBe.runtime = nt, aBe.typeName = "aiserver.v1.GetPublicProfileByHandleRequest", aBe.fields = nt.util.newFieldList(() => [{
+    lBe.runtime = nt, lBe.typeName = "aiserver.v1.GetPublicProfileByHandleRequest", lBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "handle",
         kind: "scalar",
         T: 9
     }]);
-    let oBe = aBe;
-    const lBe = class e extends b {
+    let uBe = lBe;
+    const mBe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -104524,19 +104582,19 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lBe.runtime = nt, lBe.typeName = "aiserver.v1.GetPublicProfileByHandleResponse", lBe.fields = nt.util.newFieldList(() => [{
+    mBe.runtime = nt, mBe.typeName = "aiserver.v1.GetPublicProfileByHandleResponse", mBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "profile",
         kind: "message",
-        T: bNe
+        T: UNe
     }, {
         no: 2,
         name: "activity_summary",
         kind: "message",
-        T: zNe
+        T: jNe
     }]);
-    let uBe = lBe;
-    const mBe = class e extends b {
+    let cBe = mBe;
+    const dBe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, nt.util.initPartial(e, this)
         }
@@ -104553,35 +104611,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mBe.runtime = nt, mBe.typeName = "aiserver.v1.GetPluginRequest", mBe.fields = nt.util.newFieldList(() => [{
+    dBe.runtime = nt, dBe.typeName = "aiserver.v1.GetPluginRequest", dBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
         T: 3
-    }]);
-    let cBe = mBe;
-    const dBe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    dBe.runtime = nt, dBe.typeName = "aiserver.v1.GetPluginResponse", dBe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "plugin",
-        kind: "message",
-        T: ENe
     }]);
     let fBe = dBe;
     const pBe = class e extends b {
@@ -104601,7 +104635,12 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pBe.runtime = nt, pBe.typeName = "aiserver.v1.TeamSkill", pBe.fields = nt.util.newFieldList(() => []);
+    pBe.runtime = nt, pBe.typeName = "aiserver.v1.GetPluginResponse", pBe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "plugin",
+        kind: "message",
+        T: BNe
+    }]);
     let gBe = pBe;
     const TBe = class e extends b {
         constructor(e) {
@@ -104620,9 +104659,28 @@
             return nt.util.equals(e, t, n)
         }
     };
-    TBe.runtime = nt, TBe.typeName = "aiserver.v1.TeamSubagent", TBe.fields = nt.util.newFieldList(() => []);
+    TBe.runtime = nt, TBe.typeName = "aiserver.v1.TeamSkill", TBe.fields = nt.util.newFieldList(() => []);
     let hBe = TBe;
     const _Be = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    _Be.runtime = nt, _Be.typeName = "aiserver.v1.TeamSubagent", _Be.fields = nt.util.newFieldList(() => []);
+    let yBe = _Be;
+    const wBe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.displayName = "", this.description = "", this.tags = [], this.inlineRules = [], this.inlineHooks = [], this.inlineCommands = [], this.mcpConfigJson = "", this.inlineSkills = [], this.inlineSubagents = [], nt.util.initPartial(e, this)
         }
@@ -104639,7 +104697,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _Be.runtime = nt, _Be.typeName = "aiserver.v1.CreatePluginRequest", _Be.fields = nt.util.newFieldList(() => [{
+    wBe.runtime = nt, wBe.typeName = "aiserver.v1.CreatePluginRequest", wBe.fields = nt.util.newFieldList(() => [{
         no: 2,
         name: "name",
         kind: "scalar",
@@ -104688,19 +104746,19 @@
         no: 16,
         name: "inline_rules",
         kind: "message",
-        T: uke,
+        T: cke,
         repeated: !0
     }, {
         no: 17,
         name: "inline_hooks",
         kind: "message",
-        T: Bke,
+        T: Pke,
         repeated: !0
     }, {
         no: 18,
         name: "inline_commands",
         kind: "message",
-        T: Hke,
+        T: zke,
         repeated: !0
     }, {
         no: 19,
@@ -104716,13 +104774,13 @@
         no: 21,
         name: "inline_skills",
         kind: "message",
-        T: gBe,
+        T: hBe,
         repeated: !0
     }, {
         no: 22,
         name: "inline_subagents",
         kind: "message",
-        T: hBe,
+        T: yBe,
         repeated: !0
     }, {
         no: 23,
@@ -104731,8 +104789,8 @@
         T: 3,
         opt: !0
     }]);
-    let yBe = _Be;
-    const wBe = class e extends b {
+    let kBe = wBe;
+    const SBe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -104749,14 +104807,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wBe.runtime = nt, wBe.typeName = "aiserver.v1.CreatePluginResponse", wBe.fields = nt.util.newFieldList(() => [{
+    SBe.runtime = nt, SBe.typeName = "aiserver.v1.CreatePluginResponse", SBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin",
         kind: "message",
-        T: ENe
+        T: BNe
     }]);
-    let kBe = wBe;
-    const SBe = class e extends b {
+    let JBe = SBe;
+    const vBe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, this.isPublished = !1, this.skills = [], this.subagents = [], this.hooks = [], this.rules = [], this.mcpServers = [], this.commands = [], nt.util.initPartial(e, this)
         }
@@ -104773,7 +104831,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    SBe.runtime = nt, SBe.typeName = "aiserver.v1.UpdatePluginRequest", SBe.fields = nt.util.newFieldList(() => [{
+    vBe.runtime = nt, vBe.typeName = "aiserver.v1.UpdatePluginRequest", vBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
@@ -104787,41 +104845,41 @@
         no: 3,
         name: "skills",
         kind: "message",
-        T: fNe,
+        T: gNe,
         repeated: !0
     }, {
         no: 4,
         name: "subagents",
         kind: "message",
-        T: gNe,
+        T: hNe,
         repeated: !0
     }, {
         no: 5,
         name: "hooks",
         kind: "message",
-        T: hNe,
+        T: yNe,
         repeated: !0
     }, {
         no: 6,
         name: "rules",
         kind: "message",
-        T: yNe,
+        T: kNe,
         repeated: !0
     }, {
         no: 7,
         name: "mcp_servers",
         kind: "message",
-        T: kNe,
+        T: JNe,
         repeated: !0
     }, {
         no: 8,
         name: "commands",
         kind: "message",
-        T: JNe,
+        T: ENe,
         repeated: !0
     }]);
-    let JBe = SBe;
-    const vBe = class e extends b {
+    let EBe = vBe;
+    const NBe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -104838,14 +104896,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vBe.runtime = nt, vBe.typeName = "aiserver.v1.UpdatePluginResponse", vBe.fields = nt.util.newFieldList(() => [{
+    NBe.runtime = nt, NBe.typeName = "aiserver.v1.UpdatePluginResponse", NBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin",
         kind: "message",
-        T: ENe
+        T: BNe
     }]);
-    let EBe = vBe;
-    const NBe = class e extends b {
+    let BBe = NBe;
+    const IBe = class e extends b {
         constructor(e) {
             super(), this.gitUrl = "", nt.util.initPartial(e, this)
         }
@@ -104862,7 +104920,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    NBe.runtime = nt, NBe.typeName = "aiserver.v1.ParseGitHubRepoForPluginRequest", NBe.fields = nt.util.newFieldList(() => [{
+    IBe.runtime = nt, IBe.typeName = "aiserver.v1.ParseGitHubRepoForPluginRequest", IBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "git_url",
         kind: "scalar",
@@ -104880,8 +104938,8 @@
         T: 8,
         opt: !0
     }]);
-    let BBe = NBe;
-    const IBe = class e extends b {
+    let PBe = IBe;
+    const qBe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.displayName = "", this.description = "", this.gitPath = "", this.skills = [], this.subagents = [], this.hooks = [], this.rules = [], this.mcpServers = [], this.commands = [], nt.util.initPartial(e, this)
         }
@@ -104898,7 +104956,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    IBe.runtime = nt, IBe.typeName = "aiserver.v1.ParsedPluginEntry", IBe.fields = nt.util.newFieldList(() => [{
+    qBe.runtime = nt, qBe.typeName = "aiserver.v1.ParsedPluginEntry", qBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -104922,37 +104980,37 @@
         no: 5,
         name: "skills",
         kind: "message",
-        T: fNe,
+        T: gNe,
         repeated: !0
     }, {
         no: 6,
         name: "subagents",
         kind: "message",
-        T: gNe,
+        T: hNe,
         repeated: !0
     }, {
         no: 7,
         name: "hooks",
         kind: "message",
-        T: hNe,
+        T: yNe,
         repeated: !0
     }, {
         no: 8,
         name: "rules",
         kind: "message",
-        T: yNe,
+        T: kNe,
         repeated: !0
     }, {
         no: 9,
         name: "mcp_servers",
         kind: "message",
-        T: kNe,
+        T: JNe,
         repeated: !0
     }, {
         no: 10,
         name: "commands",
         kind: "message",
-        T: JNe,
+        T: ENe,
         repeated: !0
     }, {
         no: 11,
@@ -104984,8 +105042,8 @@
         T: 9,
         opt: !0
     }]);
-    let PBe = IBe;
-    const qBe = class e extends b {
+    let RBe = qBe;
+    const LBe = class e extends b {
         constructor(e) {
             super(), this.marketplaceName = "", this.marketplaceDescription = "", this.defaultBranch = "", this.repositoryUrl = "", this.plugins = [], this.commitSha = "", nt.util.initPartial(e, this)
         }
@@ -105002,7 +105060,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qBe.runtime = nt, qBe.typeName = "aiserver.v1.ParseGitHubRepoForPluginsResponse", qBe.fields = nt.util.newFieldList(() => [{
+    LBe.runtime = nt, LBe.typeName = "aiserver.v1.ParseGitHubRepoForPluginsResponse", LBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_name",
         kind: "scalar",
@@ -105026,7 +105084,7 @@
         no: 5,
         name: "plugins",
         kind: "message",
-        T: PBe,
+        T: RBe,
         repeated: !0
     }, {
         no: 6,
@@ -105034,8 +105092,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let RBe = qBe;
-    const LBe = class e extends b {
+    let FBe = LBe;
+    const OBe = class e extends b {
         constructor(e) {
             super(), this.gitUrl = "", this.publisherId = K.zero, nt.util.initPartial(e, this)
         }
@@ -105052,7 +105110,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    LBe.runtime = nt, LBe.typeName = "aiserver.v1.ImportPluginsFromGitHubRequest", LBe.fields = nt.util.newFieldList(() => [{
+    OBe.runtime = nt, OBe.typeName = "aiserver.v1.ImportPluginsFromGitHubRequest", OBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "git_url",
         kind: "scalar",
@@ -105081,8 +105139,8 @@
         T: 9,
         opt: !0
     }]);
-    let FBe = LBe;
-    const OBe = class e extends b {
+    let bBe = OBe;
+    const CBe = class e extends b {
         constructor(e) {
             super(), this.createdPlugins = [], this.skippedPluginNames = [], nt.util.initPartial(e, this)
         }
@@ -105099,11 +105157,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    OBe.runtime = nt, OBe.typeName = "aiserver.v1.ImportPluginsFromGitHubResponse", OBe.fields = nt.util.newFieldList(() => [{
+    CBe.runtime = nt, CBe.typeName = "aiserver.v1.ImportPluginsFromGitHubResponse", CBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "created_plugins",
         kind: "message",
-        T: ENe,
+        T: BNe,
         repeated: !0
     }, {
         no: 2,
@@ -105112,8 +105170,8 @@
         T: 9,
         repeated: !0
     }]);
-    let bBe = OBe;
-    const CBe = class e extends b {
+    let UBe = CBe;
+    const ABe = class e extends b {
         constructor(e) {
             super(), this.type = "", this.added = [], this.removed = [], nt.util.initPartial(e, this)
         }
@@ -105130,7 +105188,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    CBe.runtime = nt, CBe.typeName = "aiserver.v1.ReindexComponentDiff", CBe.fields = nt.util.newFieldList(() => [{
+    ABe.runtime = nt, ABe.typeName = "aiserver.v1.ReindexComponentDiff", ABe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "type",
         kind: "scalar",
@@ -105148,8 +105206,8 @@
         T: 9,
         repeated: !0
     }]);
-    let UBe = CBe;
-    const ABe = class e extends b {
+    let xBe = ABe;
+    const DBe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.displayName = "", this.status = "", this.componentChanges = [], this.metadataChanges = [], nt.util.initPartial(e, this)
         }
@@ -105166,7 +105224,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ABe.runtime = nt, ABe.typeName = "aiserver.v1.ReindexPluginDiff", ABe.fields = nt.util.newFieldList(() => [{
+    DBe.runtime = nt, DBe.typeName = "aiserver.v1.ReindexPluginDiff", DBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -105185,7 +105243,7 @@
         no: 4,
         name: "component_changes",
         kind: "message",
-        T: UBe,
+        T: xBe,
         repeated: !0
     }, {
         no: 5,
@@ -105194,8 +105252,8 @@
         T: 9,
         repeated: !0
     }]);
-    let xBe = ABe;
-    const DBe = class e extends b {
+    let MBe = DBe;
+    const GBe = class e extends b {
         constructor(e) {
             super(), this.newPlugins = 0, this.removedPlugins = 0, this.updatedPlugins = 0, this.unchangedPlugins = 0, this.totalNewComponents = 0, this.totalRemovedComponents = 0, nt.util.initPartial(e, this)
         }
@@ -105212,7 +105270,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    DBe.runtime = nt, DBe.typeName = "aiserver.v1.ReindexSummary", DBe.fields = nt.util.newFieldList(() => [{
+    GBe.runtime = nt, GBe.typeName = "aiserver.v1.ReindexSummary", GBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "new_plugins",
         kind: "scalar",
@@ -105243,8 +105301,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let MBe = DBe;
-    const GBe = class e extends b {
+    let YBe = GBe;
+    const VBe = class e extends b {
         constructor(e) {
             super(), this.publisherName = "", this.gitUrl = "", this.gitRef = "", this.commitSha = "", this.pluginDiffs = [], this.newCommitCount = 0, this.conflictingNames = [], nt.util.initPartial(e, this)
         }
@@ -105261,7 +105319,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    GBe.runtime = nt, GBe.typeName = "aiserver.v1.PreviewReindexPluginRepoResponse", GBe.fields = nt.util.newFieldList(() => [{
+    VBe.runtime = nt, VBe.typeName = "aiserver.v1.PreviewReindexPluginRepoResponse", VBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "publisher_name",
         kind: "scalar",
@@ -105285,13 +105343,13 @@
         no: 5,
         name: "plugin_diffs",
         kind: "message",
-        T: xBe,
+        T: MBe,
         repeated: !0
     }, {
         no: 6,
         name: "summary",
         kind: "message",
-        T: MBe
+        T: YBe
     }, {
         no: 7,
         name: "new_commit_count",
@@ -105304,8 +105362,8 @@
         T: 9,
         repeated: !0
     }]);
-    let YBe = GBe;
-    const VBe = class e extends b {
+    let HBe = VBe;
+    const KBe = class e extends b {
         constructor(e) {
             super(), this.publisherId = K.zero, this.gitUrl = "", nt.util.initPartial(e, this)
         }
@@ -105322,7 +105380,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    VBe.runtime = nt, VBe.typeName = "aiserver.v1.PreviewReindexPluginRepoInternalRequest", VBe.fields = nt.util.newFieldList(() => [{
+    KBe.runtime = nt, KBe.typeName = "aiserver.v1.PreviewReindexPluginRepoInternalRequest", KBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "publisher_id",
         kind: "scalar",
@@ -105351,8 +105409,8 @@
         T: 9,
         opt: !0
     }]);
-    let HBe = VBe;
-    const KBe = class e extends b {
+    let zBe = KBe;
+    const WBe = class e extends b {
         constructor(e) {
             super(), this.publisherId = K.zero, this.gitUrl = "", this.deprecateRemoved = !1, nt.util.initPartial(e, this)
         }
@@ -105369,7 +105427,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    KBe.runtime = nt, KBe.typeName = "aiserver.v1.ApplyReindexPluginRepoInternalRequest", KBe.fields = nt.util.newFieldList(() => [{
+    WBe.runtime = nt, WBe.typeName = "aiserver.v1.ApplyReindexPluginRepoInternalRequest", WBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "publisher_id",
         kind: "scalar",
@@ -105397,8 +105455,8 @@
         T: 9,
         opt: !0
     }]);
-    let zBe = KBe;
-    const WBe = class e extends b {
+    let jBe = WBe;
+    const XBe = class e extends b {
         constructor(e) {
             super(), this.createdCount = 0, this.updatedCount = 0, this.deprecatedCount = 0, this.createdPluginNames = [], this.updatedPluginNames = [], this.deprecatedPluginNames = [], nt.util.initPartial(e, this)
         }
@@ -105415,7 +105473,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    WBe.runtime = nt, WBe.typeName = "aiserver.v1.ApplyReindexPluginRepoResponse", WBe.fields = nt.util.newFieldList(() => [{
+    XBe.runtime = nt, XBe.typeName = "aiserver.v1.ApplyReindexPluginRepoResponse", XBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "created_count",
         kind: "scalar",
@@ -105449,8 +105507,8 @@
         T: 9,
         repeated: !0
     }]);
-    let jBe = WBe;
-    const XBe = class e extends b {
+    let $Be = XBe;
+    const QBe = class e extends b {
         constructor(e) {
             super(), this.publisherId = K.zero, this.fromGitUrl = "", this.toGitUrl = "", nt.util.initPartial(e, this)
         }
@@ -105467,7 +105525,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    XBe.runtime = nt, XBe.typeName = "aiserver.v1.PreviewMigrateReindexPluginRepoInternalRequest", XBe.fields = nt.util.newFieldList(() => [{
+    QBe.runtime = nt, QBe.typeName = "aiserver.v1.PreviewMigrateReindexPluginRepoInternalRequest", QBe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "publisher_id",
         kind: "scalar",
@@ -105495,8 +105553,8 @@
         T: 9,
         opt: !0
     }]);
-    let $Be = XBe;
-    const QBe = class e extends b {
+    let ZBe = QBe;
+    const eIe = class e extends b {
         constructor(e) {
             super(), this.publisherName = "", this.fromGitUrl = "", this.toGitUrl = "", this.gitUrl = "", this.gitRef = "", this.commitSha = "", this.pluginDiffs = [], this.conflictingNames = [], this.targetRepoNameConflicts = [], this.deprecatedSourceNameConflicts = [], this.canApply = !1, nt.util.initPartial(e, this)
         }
@@ -105513,7 +105571,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    QBe.runtime = nt, QBe.typeName = "aiserver.v1.PreviewMigrateReindexPluginRepoResponse", QBe.fields = nt.util.newFieldList(() => [{
+    eIe.runtime = nt, eIe.typeName = "aiserver.v1.PreviewMigrateReindexPluginRepoResponse", eIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "publisher_name",
         kind: "scalar",
@@ -105547,13 +105605,13 @@
         no: 7,
         name: "plugin_diffs",
         kind: "message",
-        T: xBe,
+        T: MBe,
         repeated: !0
     }, {
         no: 8,
         name: "summary",
         kind: "message",
-        T: MBe
+        T: YBe
     }, {
         no: 9,
         name: "conflicting_names",
@@ -105578,8 +105636,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let ZBe = QBe;
-    const eIe = class e extends b {
+    let tIe = eIe;
+    const nIe = class e extends b {
         constructor(e) {
             super(), this.publisherId = K.zero, this.fromGitUrl = "", this.toGitUrl = "", this.deprecateRemoved = !1, nt.util.initPartial(e, this)
         }
@@ -105596,7 +105654,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eIe.runtime = nt, eIe.typeName = "aiserver.v1.ApplyMigrateReindexPluginRepoInternalRequest", eIe.fields = nt.util.newFieldList(() => [{
+    nIe.runtime = nt, nIe.typeName = "aiserver.v1.ApplyMigrateReindexPluginRepoInternalRequest", nIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "publisher_id",
         kind: "scalar",
@@ -105629,8 +105687,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let tIe = eIe;
-    const nIe = class e extends b {
+    let rIe = nIe;
+    const sIe = class e extends b {
         constructor(e) {
             super(), this.migratedCount = 0, this.createdCount = 0, this.updatedCount = 0, this.deprecatedCount = 0, this.createdPluginNames = [], this.updatedPluginNames = [], this.deprecatedPluginNames = [], this.toGitUrl = "", nt.util.initPartial(e, this)
         }
@@ -105647,7 +105705,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nIe.runtime = nt, nIe.typeName = "aiserver.v1.ApplyMigrateReindexPluginRepoResponse", nIe.fields = nt.util.newFieldList(() => [{
+    sIe.runtime = nt, sIe.typeName = "aiserver.v1.ApplyMigrateReindexPluginRepoResponse", sIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "migrated_count",
         kind: "scalar",
@@ -105691,8 +105749,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let rIe = nIe;
-    const sIe = class e extends b {
+    let iIe = sIe;
+    const aIe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, nt.util.initPartial(e, this)
         }
@@ -105709,39 +105767,39 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sIe.runtime = nt, sIe.typeName = "aiserver.v1.SubmitPluginForApprovalRequest", sIe.fields = nt.util.newFieldList(() => [{
+    aIe.runtime = nt, aIe.typeName = "aiserver.v1.SubmitPluginForApprovalRequest", aIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
         T: 3
-    }]);
-    let iIe = sIe;
-    const aIe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    aIe.runtime = nt, aIe.typeName = "aiserver.v1.SubmitPluginForApprovalResponse", aIe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "plugin",
-        kind: "message",
-        T: ENe
     }]);
     let oIe = aIe;
     const lIe = class e extends b {
         constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    lIe.runtime = nt, lIe.typeName = "aiserver.v1.SubmitPluginForApprovalResponse", lIe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "plugin",
+        kind: "message",
+        T: BNe
+    }]);
+    let uIe = lIe;
+    const mIe = class e extends b {
+        constructor(e) {
             super(), this.pluginId = K.zero, nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -105757,14 +105815,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lIe.runtime = nt, lIe.typeName = "aiserver.v1.ApprovePluginRequest", lIe.fields = nt.util.newFieldList(() => [{
+    mIe.runtime = nt, mIe.typeName = "aiserver.v1.ApprovePluginRequest", mIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
         T: 3
     }]);
-    let uIe = lIe;
-    const mIe = class e extends b {
+    let cIe = mIe;
+    const dIe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -105781,14 +105839,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mIe.runtime = nt, mIe.typeName = "aiserver.v1.ApprovePluginResponse", mIe.fields = nt.util.newFieldList(() => [{
+    dIe.runtime = nt, dIe.typeName = "aiserver.v1.ApprovePluginResponse", dIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin",
         kind: "message",
-        T: ENe
+        T: BNe
     }]);
-    let cIe = mIe;
-    const dIe = class e extends b {
+    let fIe = dIe;
+    const pIe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, nt.util.initPartial(e, this)
         }
@@ -105805,7 +105863,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dIe.runtime = nt, dIe.typeName = "aiserver.v1.RejectPluginRequest", dIe.fields = nt.util.newFieldList(() => [{
+    pIe.runtime = nt, pIe.typeName = "aiserver.v1.RejectPluginRequest", pIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
@@ -105816,30 +105874,6 @@
         kind: "scalar",
         T: 9,
         opt: !0
-    }]);
-    let fIe = dIe;
-    const pIe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    pIe.runtime = nt, pIe.typeName = "aiserver.v1.RejectPluginResponse", pIe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "plugin",
-        kind: "message",
-        T: ENe
     }]);
     let gIe = pIe;
     const TIe = class e extends b {
@@ -105859,75 +105893,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    TIe.runtime = nt, TIe.typeName = "aiserver.v1.ListUserPluginInstallsRequest", TIe.fields = nt.util.newFieldList(() => [{
+    TIe.runtime = nt, TIe.typeName = "aiserver.v1.RejectPluginResponse", TIe.fields = nt.util.newFieldList(() => [{
         no: 1,
-        name: "use_replica",
-        kind: "scalar",
-        T: 8,
-        opt: !0
+        name: "plugin",
+        kind: "message",
+        T: BNe
     }]);
     let hIe = TIe;
     const _Ie = class e extends b {
-        constructor(e) {
-            super(), this.installs = [], nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    _Ie.runtime = nt, _Ie.typeName = "aiserver.v1.ListUserPluginInstallsResponse", _Ie.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "installs",
-        kind: "message",
-        T: BNe,
-        repeated: !0
-    }]);
-    let yIe = _Ie;
-    const wIe = class e extends b {
-        constructor(e) {
-            super(), this.pluginId = K.zero, nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    wIe.runtime = nt, wIe.typeName = "aiserver.v1.InstallUserPluginRequest", wIe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "plugin_id",
-        kind: "scalar",
-        T: 3
-    }, {
-        no: 4,
-        name: "pinned_git_ref",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }, {
-        no: 5,
-        name: "variables",
-        kind: "message",
-        T: Yn
-    }]);
-    let kIe = wIe;
-    const SIe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -105944,14 +105917,40 @@
             return nt.util.equals(e, t, n)
         }
     };
-    SIe.runtime = nt, SIe.typeName = "aiserver.v1.InstallUserPluginResponse", SIe.fields = nt.util.newFieldList(() => [{
+    _Ie.runtime = nt, _Ie.typeName = "aiserver.v1.ListUserPluginInstallsRequest", _Ie.fields = nt.util.newFieldList(() => [{
         no: 1,
-        name: "install",
-        kind: "message",
-        T: BNe
+        name: "use_replica",
+        kind: "scalar",
+        T: 8,
+        opt: !0
     }]);
-    let JIe = SIe;
-    const vIe = class e extends b {
+    let yIe = _Ie;
+    const wIe = class e extends b {
+        constructor(e) {
+            super(), this.installs = [], nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    wIe.runtime = nt, wIe.typeName = "aiserver.v1.ListUserPluginInstallsResponse", wIe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "installs",
+        kind: "message",
+        T: PNe,
+        repeated: !0
+    }]);
+    let kIe = wIe;
+    const SIe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, nt.util.initPartial(e, this)
         }
@@ -105968,7 +105967,66 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vIe.runtime = nt, vIe.typeName = "aiserver.v1.UpdateUserPluginInstallRequest", vIe.fields = nt.util.newFieldList(() => [{
+    SIe.runtime = nt, SIe.typeName = "aiserver.v1.InstallUserPluginRequest", SIe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "plugin_id",
+        kind: "scalar",
+        T: 3
+    }, {
+        no: 4,
+        name: "pinned_git_ref",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }, {
+        no: 5,
+        name: "variables",
+        kind: "message",
+        T: Yn
+    }]);
+    let JIe = SIe;
+    const vIe = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    vIe.runtime = nt, vIe.typeName = "aiserver.v1.InstallUserPluginResponse", vIe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "install",
+        kind: "message",
+        T: PNe
+    }]);
+    let EIe = vIe;
+    const NIe = class e extends b {
+        constructor(e) {
+            super(), this.pluginId = K.zero, nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    NIe.runtime = nt, NIe.typeName = "aiserver.v1.UpdateUserPluginInstallRequest", NIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
@@ -105991,8 +106049,8 @@
         kind: "message",
         T: Yn
     }]);
-    let EIe = vIe;
-    const NIe = class e extends b {
+    let BIe = NIe;
+    const IIe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -106009,14 +106067,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    NIe.runtime = nt, NIe.typeName = "aiserver.v1.UpdateUserPluginInstallResponse", NIe.fields = nt.util.newFieldList(() => [{
+    IIe.runtime = nt, IIe.typeName = "aiserver.v1.UpdateUserPluginInstallResponse", IIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "install",
         kind: "message",
-        T: BNe
+        T: PNe
     }]);
-    let BIe = NIe;
-    const IIe = class e extends b {
+    let PIe = IIe;
+    const qIe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, nt.util.initPartial(e, this)
         }
@@ -106033,14 +106091,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    IIe.runtime = nt, IIe.typeName = "aiserver.v1.UninstallUserPluginRequest", IIe.fields = nt.util.newFieldList(() => [{
+    qIe.runtime = nt, qIe.typeName = "aiserver.v1.UninstallUserPluginRequest", qIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
         T: 3
     }]);
-    let PIe = IIe;
-    const qIe = class e extends b {
+    let RIe = qIe;
+    const LIe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -106057,14 +106115,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qIe.runtime = nt, qIe.typeName = "aiserver.v1.UninstallUserPluginResponse", qIe.fields = nt.util.newFieldList(() => [{
+    LIe.runtime = nt, LIe.typeName = "aiserver.v1.UninstallUserPluginResponse", LIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let RIe = qIe;
-    const LIe = class e extends b {
+    let FIe = LIe;
+    const OIe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -106081,7 +106139,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    LIe.runtime = nt, LIe.typeName = "aiserver.v1.ListTeamPluginInstallsRequest", LIe.fields = nt.util.newFieldList(() => [{
+    OIe.runtime = nt, OIe.typeName = "aiserver.v1.ListTeamPluginInstallsRequest", OIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -106093,8 +106151,8 @@
         T: 8,
         opt: !0
     }]);
-    let FIe = LIe;
-    const OIe = class e extends b {
+    let bIe = OIe;
+    const CIe = class e extends b {
         constructor(e) {
             super(), this.installs = [], nt.util.initPartial(e, this)
         }
@@ -106111,15 +106169,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    OIe.runtime = nt, OIe.typeName = "aiserver.v1.ListTeamPluginInstallsResponse", OIe.fields = nt.util.newFieldList(() => [{
+    CIe.runtime = nt, CIe.typeName = "aiserver.v1.ListTeamPluginInstallsResponse", CIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installs",
         kind: "message",
-        T: PNe,
+        T: RNe,
         repeated: !0
     }]);
-    let bIe = OIe;
-    const CIe = class e extends b {
+    let UIe = CIe;
+    const AIe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, this.memberInstallCount = 0, nt.util.initPartial(e, this)
         }
@@ -106136,7 +106194,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    CIe.runtime = nt, CIe.typeName = "aiserver.v1.TeamPluginPopularityCount", CIe.fields = nt.util.newFieldList(() => [{
+    AIe.runtime = nt, AIe.typeName = "aiserver.v1.TeamPluginPopularityCount", AIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
@@ -106147,8 +106205,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let UIe = CIe;
-    const AIe = class e extends b {
+    let xIe = AIe;
+    const DIe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -106165,7 +106223,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    AIe.runtime = nt, AIe.typeName = "aiserver.v1.GetTeamPluginPopularityRequest", AIe.fields = nt.util.newFieldList(() => [{
+    DIe.runtime = nt, DIe.typeName = "aiserver.v1.GetTeamPluginPopularityRequest", DIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -106177,8 +106235,8 @@
         T: 8,
         opt: !0
     }]);
-    let xIe = AIe;
-    const DIe = class e extends b {
+    let MIe = DIe;
+    const GIe = class e extends b {
         constructor(e) {
             super(), this.counts = [], nt.util.initPartial(e, this)
         }
@@ -106195,15 +106253,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    DIe.runtime = nt, DIe.typeName = "aiserver.v1.GetTeamPluginPopularityResponse", DIe.fields = nt.util.newFieldList(() => [{
+    GIe.runtime = nt, GIe.typeName = "aiserver.v1.GetTeamPluginPopularityResponse", GIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "counts",
         kind: "message",
-        T: UIe,
+        T: xIe,
         repeated: !0
     }]);
-    let MIe = DIe;
-    const GIe = class e extends b {
+    let YIe = GIe;
+    const VIe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.primitiveType = 0, this.interval = 0, nt.util.initPartial(e, this)
         }
@@ -106220,7 +106278,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    GIe.runtime = nt, GIe.typeName = "aiserver.v1.GetTeamPluginPrimitiveUsageRequest", GIe.fields = nt.util.newFieldList(() => [{
+    VIe.runtime = nt, VIe.typeName = "aiserver.v1.GetTeamPluginPrimitiveUsageRequest", VIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -106248,8 +106306,8 @@
         T: 5,
         opt: !0
     }]);
-    let YIe = GIe;
-    const VIe = class e extends b {
+    let HIe = VIe;
+    const KIe = class e extends b {
         constructor(e) {
             super(), this.primitiveName = "", this.pluginId = K.zero, this.primitiveType = 0, this.usageCount = K.zero, this.humanUsageCount = K.zero, this.agentUsageCount = K.zero, nt.util.initPartial(e, this)
         }
@@ -106266,7 +106324,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    VIe.runtime = nt, VIe.typeName = "aiserver.v1.TeamPluginPrimitiveUsageRow", VIe.fields = nt.util.newFieldList(() => [{
+    KIe.runtime = nt, KIe.typeName = "aiserver.v1.TeamPluginPrimitiveUsageRow", KIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "primitive_name",
         kind: "scalar",
@@ -106297,8 +106355,8 @@
         kind: "scalar",
         T: 4
     }]);
-    let HIe = VIe;
-    const KIe = class e extends b {
+    let zIe = KIe;
+    const WIe = class e extends b {
         constructor(e) {
             super(), this.rows = [], this.hasMore = !1, this.pageSize = 0, this.pageNumber = 0, nt.util.initPartial(e, this)
         }
@@ -106315,11 +106373,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    KIe.runtime = nt, KIe.typeName = "aiserver.v1.GetTeamPluginPrimitiveUsageResponse", KIe.fields = nt.util.newFieldList(() => [{
+    WIe.runtime = nt, WIe.typeName = "aiserver.v1.GetTeamPluginPrimitiveUsageResponse", WIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rows",
         kind: "message",
-        T: HIe,
+        T: zIe,
         repeated: !0
     }, {
         no: 2,
@@ -106337,8 +106395,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let zIe = KIe;
-    const WIe = class e extends b {
+    let jIe = WIe;
+    const XIe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -106355,7 +106413,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    WIe.runtime = nt, WIe.typeName = "aiserver.v1.ListTeamAvailableMarketplacePluginsRequest", WIe.fields = nt.util.newFieldList(() => [{
+    XIe.runtime = nt, XIe.typeName = "aiserver.v1.ListTeamAvailableMarketplacePluginsRequest", XIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -106391,8 +106449,8 @@
         T: 5,
         opt: !0
     }]);
-    let jIe = WIe;
-    const XIe = class e extends b {
+    let $Ie = XIe;
+    const QIe = class e extends b {
         constructor(e) {
             super(), this.plugins = [], this.hasMore = !1, nt.util.initPartial(e, this)
         }
@@ -106409,11 +106467,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    XIe.runtime = nt, XIe.typeName = "aiserver.v1.ListTeamAvailableMarketplacePluginsResponse", XIe.fields = nt.util.newFieldList(() => [{
+    QIe.runtime = nt, QIe.typeName = "aiserver.v1.ListTeamAvailableMarketplacePluginsResponse", QIe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugins",
         kind: "message",
-        T: ENe,
+        T: BNe,
         repeated: !0
     }, {
         no: 2,
@@ -106433,8 +106491,8 @@
         T: 5,
         opt: !0
     }]);
-    let $Ie = XIe;
-    const QIe = class e extends b {
+    let ZIe = QIe;
+    const ePe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -106451,14 +106509,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    QIe.runtime = nt, QIe.typeName = "aiserver.v1.GetTeamPinnedMarketplacePluginsRequest", QIe.fields = nt.util.newFieldList(() => [{
+    ePe.runtime = nt, ePe.typeName = "aiserver.v1.GetTeamPinnedMarketplacePluginsRequest", ePe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let ZIe = QIe;
-    const ePe = class e extends b {
+    let tPe = ePe;
+    const nPe = class e extends b {
         constructor(e) {
             super(), this.plugins = [], nt.util.initPartial(e, this)
         }
@@ -106475,15 +106533,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ePe.runtime = nt, ePe.typeName = "aiserver.v1.GetTeamPinnedMarketplacePluginsResponse", ePe.fields = nt.util.newFieldList(() => [{
+    nPe.runtime = nt, nPe.typeName = "aiserver.v1.GetTeamPinnedMarketplacePluginsResponse", nPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugins",
         kind: "message",
-        T: ENe,
+        T: BNe,
         repeated: !0
     }]);
-    let tPe = ePe;
-    const nPe = class e extends b {
+    let rPe = nPe;
+    const sPe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.pluginIds = [], nt.util.initPartial(e, this)
         }
@@ -106500,7 +106558,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nPe.runtime = nt, nPe.typeName = "aiserver.v1.UpdateTeamPinnedMarketplacePluginsRequest", nPe.fields = nt.util.newFieldList(() => [{
+    sPe.runtime = nt, sPe.typeName = "aiserver.v1.UpdateTeamPinnedMarketplacePluginsRequest", sPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -106512,8 +106570,8 @@
         T: 3,
         repeated: !0
     }]);
-    let rPe = nPe;
-    const sPe = class e extends b {
+    let iPe = sPe;
+    const aPe = class e extends b {
         constructor(e) {
             super(), this.plugins = [], nt.util.initPartial(e, this)
         }
@@ -106530,81 +106588,16 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sPe.runtime = nt, sPe.typeName = "aiserver.v1.UpdateTeamPinnedMarketplacePluginsResponse", sPe.fields = nt.util.newFieldList(() => [{
+    aPe.runtime = nt, aPe.typeName = "aiserver.v1.UpdateTeamPinnedMarketplacePluginsResponse", aPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugins",
         kind: "message",
-        T: ENe,
+        T: BNe,
         repeated: !0
-    }]);
-    let iPe = sPe;
-    const aPe = class e extends b {
-        constructor(e) {
-            super(), this.teamId = 0, this.pluginId = K.zero, nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    aPe.runtime = nt, aPe.typeName = "aiserver.v1.InstallTeamPluginRequest", aPe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "team_id",
-        kind: "scalar",
-        T: 5
-    }, {
-        no: 2,
-        name: "plugin_id",
-        kind: "scalar",
-        T: 3
-    }, {
-        no: 4,
-        name: "is_required",
-        kind: "scalar",
-        T: 8,
-        opt: !0
-    }, {
-        no: 5,
-        name: "pinned_git_ref",
-        kind: "scalar",
-        T: 9,
-        opt: !0
     }]);
     let oPe = aPe;
     const lPe = class e extends b {
         constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    lPe.runtime = nt, lPe.typeName = "aiserver.v1.InstallTeamPluginResponse", lPe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "install",
-        kind: "message",
-        T: PNe
-    }]);
-    let uPe = lPe;
-    const mPe = class e extends b {
-        constructor(e) {
             super(), this.teamId = 0, this.pluginId = K.zero, nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -106620,7 +106613,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mPe.runtime = nt, mPe.typeName = "aiserver.v1.UpdateTeamPluginInstallRequest", mPe.fields = nt.util.newFieldList(() => [{
+    lPe.runtime = nt, lPe.typeName = "aiserver.v1.InstallTeamPluginRequest", lPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -106643,8 +106636,8 @@
         T: 9,
         opt: !0
     }]);
-    let cPe = mPe;
-    const dPe = class e extends b {
+    let uPe = lPe;
+    const mPe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -106661,14 +106654,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dPe.runtime = nt, dPe.typeName = "aiserver.v1.UpdateTeamPluginInstallResponse", dPe.fields = nt.util.newFieldList(() => [{
+    mPe.runtime = nt, mPe.typeName = "aiserver.v1.InstallTeamPluginResponse", mPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "install",
         kind: "message",
-        T: PNe
+        T: RNe
     }]);
-    let fPe = dPe;
-    const pPe = class e extends b {
+    let cPe = mPe;
+    const dPe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.pluginId = K.zero, nt.util.initPartial(e, this)
         }
@@ -106685,7 +106678,72 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pPe.runtime = nt, pPe.typeName = "aiserver.v1.UninstallTeamPluginRequest", pPe.fields = nt.util.newFieldList(() => [{
+    dPe.runtime = nt, dPe.typeName = "aiserver.v1.UpdateTeamPluginInstallRequest", dPe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "team_id",
+        kind: "scalar",
+        T: 5
+    }, {
+        no: 2,
+        name: "plugin_id",
+        kind: "scalar",
+        T: 3
+    }, {
+        no: 4,
+        name: "is_required",
+        kind: "scalar",
+        T: 8,
+        opt: !0
+    }, {
+        no: 5,
+        name: "pinned_git_ref",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let fPe = dPe;
+    const pPe = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    pPe.runtime = nt, pPe.typeName = "aiserver.v1.UpdateTeamPluginInstallResponse", pPe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "install",
+        kind: "message",
+        T: RNe
+    }]);
+    let gPe = pPe;
+    const TPe = class e extends b {
+        constructor(e) {
+            super(), this.teamId = 0, this.pluginId = K.zero, nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    TPe.runtime = nt, TPe.typeName = "aiserver.v1.UninstallTeamPluginRequest", TPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -106696,8 +106754,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let gPe = pPe;
-    const TPe = class e extends b {
+    let hPe = TPe;
+    const _Pe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -106714,14 +106772,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    TPe.runtime = nt, TPe.typeName = "aiserver.v1.UninstallTeamPluginResponse", TPe.fields = nt.util.newFieldList(() => [{
+    _Pe.runtime = nt, _Pe.typeName = "aiserver.v1.UninstallTeamPluginResponse", _Pe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let hPe = TPe;
-    const _Pe = class e extends b {
+    let yPe = _Pe;
+    const wPe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -106738,15 +106796,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _Pe.runtime = nt, _Pe.typeName = "aiserver.v1.GetEffectiveUserPluginsRequest", _Pe.fields = nt.util.newFieldList(() => [{
+    wPe.runtime = nt, wPe.typeName = "aiserver.v1.GetEffectiveUserPluginsRequest", wPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "use_replica",
         kind: "scalar",
         T: 8,
         opt: !0
     }]);
-    let yPe = _Pe;
-    const wPe = class e extends b {
+    let kPe = wPe;
+    const SPe = class e extends b {
         constructor(e) {
             super(), this.isTeamRequired = !1, this.isEnabled = !1, this.hasTeamConfiguredVariables = !1, nt.util.initPartial(e, this)
         }
@@ -106763,11 +106821,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wPe.runtime = nt, wPe.typeName = "aiserver.v1.EffectivePlugin", wPe.fields = nt.util.newFieldList(() => [{
+    SPe.runtime = nt, SPe.typeName = "aiserver.v1.EffectivePlugin", SPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin",
         kind: "message",
-        T: ENe
+        T: BNe
     }, {
         no: 3,
         name: "is_team_required",
@@ -106801,8 +106859,8 @@
         T: 9,
         opt: !0
     }]);
-    let kPe = wPe;
-    const SPe = class e extends b {
+    let JPe = SPe;
+    const vPe = class e extends b {
         constructor(e) {
             super(), this.plugins = [], this.marketplaces = [], nt.util.initPartial(e, this)
         }
@@ -106819,21 +106877,21 @@
             return nt.util.equals(e, t, n)
         }
     };
-    SPe.runtime = nt, SPe.typeName = "aiserver.v1.GetEffectiveUserPluginsResponse", SPe.fields = nt.util.newFieldList(() => [{
+    vPe.runtime = nt, vPe.typeName = "aiserver.v1.GetEffectiveUserPluginsResponse", vPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugins",
         kind: "message",
-        T: kPe,
+        T: JPe,
         repeated: !0
     }, {
         no: 2,
         name: "marketplaces",
         kind: "message",
-        T: cNe,
+        T: fNe,
         repeated: !0
     }]);
-    let JPe = SPe;
-    const vPe = class e extends b {
+    let EPe = vPe;
+    const NPe = class e extends b {
         constructor(e) {
             super(), this.name = "", nt.util.initPartial(e, this)
         }
@@ -106850,7 +106908,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vPe.runtime = nt, vPe.typeName = "aiserver.v1.PluginRef", vPe.fields = nt.util.newFieldList(() => [{
+    NPe.runtime = nt, NPe.typeName = "aiserver.v1.PluginRef", NPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -106862,8 +106920,8 @@
         T: 9,
         opt: !0
     }]);
-    let EPe = vPe;
-    const NPe = class e extends b {
+    let BPe = NPe;
+    const IPe = class e extends b {
         constructor(e) {
             super(), this.refs = [], nt.util.initPartial(e, this)
         }
@@ -106880,15 +106938,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    NPe.runtime = nt, NPe.typeName = "aiserver.v1.ResolvePluginsByRefRequest", NPe.fields = nt.util.newFieldList(() => [{
+    IPe.runtime = nt, IPe.typeName = "aiserver.v1.ResolvePluginsByRefRequest", IPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "refs",
         kind: "message",
-        T: EPe,
+        T: BPe,
         repeated: !0
     }]);
-    let BPe = NPe;
-    const IPe = class e extends b {
+    let PPe = IPe;
+    const qPe = class e extends b {
         constructor(e) {
             super(), this.plugins = [], nt.util.initPartial(e, this)
         }
@@ -106905,15 +106963,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    IPe.runtime = nt, IPe.typeName = "aiserver.v1.ResolvePluginsByRefResponse", IPe.fields = nt.util.newFieldList(() => [{
+    qPe.runtime = nt, qPe.typeName = "aiserver.v1.ResolvePluginsByRefResponse", qPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugins",
         kind: "message",
-        T: ENe,
+        T: BNe,
         repeated: !0
     }]);
-    let PPe = IPe;
-    const qPe = class e extends b {
+    let RPe = qPe;
+    const LPe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -106930,9 +106988,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qPe.runtime = nt, qPe.typeName = "aiserver.v1.ListMarketplacesRequest", qPe.fields = nt.util.newFieldList(() => []);
-    let RPe = qPe;
-    const LPe = class e extends b {
+    LPe.runtime = nt, LPe.typeName = "aiserver.v1.ListMarketplacesRequest", LPe.fields = nt.util.newFieldList(() => []);
+    let FPe = LPe;
+    const OPe = class e extends b {
         constructor(e) {
             super(), this.marketplaces = [], nt.util.initPartial(e, this)
         }
@@ -106949,15 +107007,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    LPe.runtime = nt, LPe.typeName = "aiserver.v1.ListMarketplacesResponse", LPe.fields = nt.util.newFieldList(() => [{
+    OPe.runtime = nt, OPe.typeName = "aiserver.v1.ListMarketplacesResponse", OPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplaces",
         kind: "message",
-        T: cNe,
+        T: fNe,
         repeated: !0
     }]);
-    let FPe = LPe;
-    const OPe = class e extends b {
+    let bPe = OPe;
+    const CPe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.gitUrl = "", nt.util.initPartial(e, this)
         }
@@ -106974,7 +107032,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    OPe.runtime = nt, OPe.typeName = "aiserver.v1.AddMarketplaceRequest", OPe.fields = nt.util.newFieldList(() => [{
+    CPe.runtime = nt, CPe.typeName = "aiserver.v1.AddMarketplaceRequest", CPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -107015,8 +107073,8 @@
         T: 8,
         opt: !0
     }]);
-    let bPe = OPe;
-    const CPe = class e extends b {
+    let UPe = CPe;
+    const APe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -107033,14 +107091,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    CPe.runtime = nt, CPe.typeName = "aiserver.v1.AddMarketplaceResponse", CPe.fields = nt.util.newFieldList(() => [{
+    APe.runtime = nt, APe.typeName = "aiserver.v1.AddMarketplaceResponse", APe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace",
         kind: "message",
-        T: cNe
+        T: fNe
     }]);
-    let UPe = CPe;
-    const APe = class e extends b {
+    let xPe = APe;
+    const DPe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -107057,35 +107115,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    APe.runtime = nt, APe.typeName = "aiserver.v1.GetOrCreateDefaultTeamMarketplaceRequest", APe.fields = nt.util.newFieldList(() => [{
+    DPe.runtime = nt, DPe.typeName = "aiserver.v1.GetOrCreateDefaultTeamMarketplaceRequest", DPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
-    }]);
-    let xPe = APe;
-    const DPe = class e extends b {
-        constructor(e) {
-            super(), this.marketplaceId = K.zero, nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    DPe.runtime = nt, DPe.typeName = "aiserver.v1.GetOrCreateDefaultTeamMarketplaceResponse", DPe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "marketplace_id",
-        kind: "scalar",
-        T: 3
     }]);
     let MPe = DPe;
     const GPe = class e extends b {
@@ -107105,7 +107139,31 @@
             return nt.util.equals(e, t, n)
         }
     };
-    GPe.runtime = nt, GPe.typeName = "aiserver.v1.UpdateMarketplaceRequest", GPe.fields = nt.util.newFieldList(() => [{
+    GPe.runtime = nt, GPe.typeName = "aiserver.v1.GetOrCreateDefaultTeamMarketplaceResponse", GPe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "marketplace_id",
+        kind: "scalar",
+        T: 3
+    }]);
+    let YPe = GPe;
+    const VPe = class e extends b {
+        constructor(e) {
+            super(), this.marketplaceId = K.zero, nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    VPe.runtime = nt, VPe.typeName = "aiserver.v1.UpdateMarketplaceRequest", VPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_id",
         kind: "scalar",
@@ -107129,8 +107187,8 @@
         T: 8,
         opt: !0
     }]);
-    let YPe = GPe;
-    const VPe = class e extends b {
+    let HPe = VPe;
+    const KPe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -107147,14 +107205,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    VPe.runtime = nt, VPe.typeName = "aiserver.v1.UpdateMarketplaceResponse", VPe.fields = nt.util.newFieldList(() => [{
+    KPe.runtime = nt, KPe.typeName = "aiserver.v1.UpdateMarketplaceResponse", KPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace",
         kind: "message",
-        T: cNe
+        T: fNe
     }]);
-    let HPe = VPe;
-    const KPe = class e extends b {
+    let zPe = KPe;
+    const WPe = class e extends b {
         constructor(e) {
             super(), this.marketplaceId = K.zero, nt.util.initPartial(e, this)
         }
@@ -107171,14 +107229,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    KPe.runtime = nt, KPe.typeName = "aiserver.v1.RemoveMarketplaceRequest", KPe.fields = nt.util.newFieldList(() => [{
+    WPe.runtime = nt, WPe.typeName = "aiserver.v1.RemoveMarketplaceRequest", WPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_id",
         kind: "scalar",
         T: 3
     }]);
-    let zPe = KPe;
-    const WPe = class e extends b {
+    let jPe = WPe;
+    const XPe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -107195,14 +107253,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    WPe.runtime = nt, WPe.typeName = "aiserver.v1.RemoveMarketplaceResponse", WPe.fields = nt.util.newFieldList(() => [{
+    XPe.runtime = nt, XPe.typeName = "aiserver.v1.RemoveMarketplaceResponse", XPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let jPe = WPe;
-    const XPe = class e extends b {
+    let $Pe = XPe;
+    const QPe = class e extends b {
         constructor(e) {
             super(), this.marketplaceId = K.zero, nt.util.initPartial(e, this)
         }
@@ -107219,14 +107277,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    XPe.runtime = nt, XPe.typeName = "aiserver.v1.RefreshMarketplaceRequest", XPe.fields = nt.util.newFieldList(() => [{
+    QPe.runtime = nt, QPe.typeName = "aiserver.v1.RefreshMarketplaceRequest", QPe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_id",
         kind: "scalar",
         T: 3
     }]);
-    let $Pe = XPe;
-    const QPe = class e extends b {
+    let ZPe = QPe;
+    const eqe = class e extends b {
         constructor(e) {
             super(), this.pluginsIndexed = 0, this.pluginsUpdated = 0, this.pluginsDeprecated = 0, this.deprecatedPluginNames = [], this.errors = [], nt.util.initPartial(e, this)
         }
@@ -107243,11 +107301,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    QPe.runtime = nt, QPe.typeName = "aiserver.v1.RefreshMarketplaceResponse", QPe.fields = nt.util.newFieldList(() => [{
+    eqe.runtime = nt, eqe.typeName = "aiserver.v1.RefreshMarketplaceResponse", eqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace",
         kind: "message",
-        T: cNe
+        T: fNe
     }, {
         no: 2,
         name: "plugins_indexed",
@@ -107276,8 +107334,8 @@
         T: 9,
         repeated: !0
     }]);
-    let ZPe = QPe;
-    const eqe = class e extends b {
+    let tqe = eqe;
+    const nqe = class e extends b {
         constructor(e) {
             super(), this.marketplaceId = K.zero, nt.util.initPartial(e, this)
         }
@@ -107294,7 +107352,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eqe.runtime = nt, eqe.typeName = "aiserver.v1.ReindexAndApplyTeamMarketplaceChangesRequest", eqe.fields = nt.util.newFieldList(() => [{
+    nqe.runtime = nt, nqe.typeName = "aiserver.v1.ReindexAndApplyTeamMarketplaceChangesRequest", nqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_id",
         kind: "scalar",
@@ -107312,8 +107370,8 @@
         T: 9,
         opt: !0
     }]);
-    let tqe = eqe;
-    const nqe = class e extends b {
+    let rqe = nqe;
+    const sqe = class e extends b {
         constructor(e) {
             super(), this.marketplaceId = K.zero, this.plugins = [], this.removedPluginNames = [], nt.util.initPartial(e, this)
         }
@@ -107330,7 +107388,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nqe.runtime = nt, nqe.typeName = "aiserver.v1.ReindexAndApplyTeamMarketplaceChangesResponse", nqe.fields = nt.util.newFieldList(() => [{
+    sqe.runtime = nt, sqe.typeName = "aiserver.v1.ReindexAndApplyTeamMarketplaceChangesResponse", sqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_id",
         kind: "scalar",
@@ -107339,7 +107397,7 @@
         no: 2,
         name: "plugins",
         kind: "message",
-        T: cqe,
+        T: fqe,
         repeated: !0
     }, {
         no: 3,
@@ -107348,8 +107406,8 @@
         T: 9,
         repeated: !0
     }]);
-    let rqe = nqe;
-    const sqe = class e extends b {
+    let iqe = sqe;
+    const aqe = class e extends b {
         constructor(e) {
             super(), this.gitUrl = "", this.gitRef = "", this.marketplaceName = "", this.plugins = [], nt.util.initPartial(e, this)
         }
@@ -107366,7 +107424,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sqe.runtime = nt, sqe.typeName = "aiserver.v1.RegisterMarketplaceAndPluginsRequest", sqe.fields = nt.util.newFieldList(() => [{
+    aqe.runtime = nt, aqe.typeName = "aiserver.v1.RegisterMarketplaceAndPluginsRequest", aqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "git_url",
         kind: "scalar",
@@ -107385,7 +107443,7 @@
         no: 4,
         name: "plugins",
         kind: "message",
-        T: oqe,
+        T: uqe,
         repeated: !0
     }, {
         no: 5,
@@ -107400,8 +107458,8 @@
         T: 9,
         opt: !0
     }]);
-    let iqe = sqe;
-    const aqe = class e extends b {
+    let oqe = aqe;
+    const lqe = class e extends b {
         constructor(e) {
             super(), this.name = "", this.description = "", this.version = "", this.gitPath = "", this.gitUrl = "", this.gitRef = "", this.displayName = "", this.skills = [], this.subagents = [], this.hooks = [], this.rules = [], this.mcpServers = [], this.commands = [], nt.util.initPartial(e, this)
         }
@@ -107418,7 +107476,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    aqe.runtime = nt, aqe.typeName = "aiserver.v1.RegisterPluginEntry", aqe.fields = nt.util.newFieldList(() => [{
+    lqe.runtime = nt, lqe.typeName = "aiserver.v1.RegisterPluginEntry", lqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -107457,37 +107515,37 @@
         no: 8,
         name: "skills",
         kind: "message",
-        T: fNe,
+        T: gNe,
         repeated: !0
     }, {
         no: 9,
         name: "subagents",
         kind: "message",
-        T: gNe,
+        T: hNe,
         repeated: !0
     }, {
         no: 10,
         name: "hooks",
         kind: "message",
-        T: hNe,
+        T: yNe,
         repeated: !0
     }, {
         no: 11,
         name: "rules",
         kind: "message",
-        T: yNe,
+        T: kNe,
         repeated: !0
     }, {
         no: 12,
         name: "mcp_servers",
         kind: "message",
-        T: kNe,
+        T: JNe,
         repeated: !0
     }, {
         no: 13,
         name: "commands",
         kind: "message",
-        T: JNe,
+        T: ENe,
         repeated: !0
     }, {
         no: 14,
@@ -107501,8 +107559,8 @@
         kind: "message",
         T: Yn
     }]);
-    let oqe = aqe;
-    const lqe = class e extends b {
+    let uqe = lqe;
+    const mqe = class e extends b {
         constructor(e) {
             super(), this.marketplaceId = K.zero, this.plugins = [], nt.util.initPartial(e, this)
         }
@@ -107519,7 +107577,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lqe.runtime = nt, lqe.typeName = "aiserver.v1.RegisterMarketplaceAndPluginsResponse", lqe.fields = nt.util.newFieldList(() => [{
+    mqe.runtime = nt, mqe.typeName = "aiserver.v1.RegisterMarketplaceAndPluginsResponse", mqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_id",
         kind: "scalar",
@@ -107528,11 +107586,11 @@
         no: 2,
         name: "plugins",
         kind: "message",
-        T: cqe,
+        T: fqe,
         repeated: !0
     }]);
-    let uqe = lqe;
-    const mqe = class e extends b {
+    let cqe = mqe;
+    const dqe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, this.name = "", nt.util.initPartial(e, this)
         }
@@ -107549,7 +107607,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mqe.runtime = nt, mqe.typeName = "aiserver.v1.RegisteredPlugin", mqe.fields = nt.util.newFieldList(() => [{
+    dqe.runtime = nt, dqe.typeName = "aiserver.v1.RegisteredPlugin", dqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
@@ -107560,8 +107618,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let cqe = mqe;
-    const dqe = class e extends b {
+    let fqe = dqe;
+    const pqe = class e extends b {
         constructor(e) {
             super(), this.directoryGroupIds = [], this.createdAt = K.zero, this.updatedAt = K.zero, nt.util.initPartial(e, this)
         }
@@ -107578,7 +107636,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dqe.runtime = nt, dqe.typeName = "aiserver.v1.TeamMarketplaceConfig", dqe.fields = nt.util.newFieldList(() => [{
+    pqe.runtime = nt, pqe.typeName = "aiserver.v1.TeamMarketplaceConfig", pqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "directory_group_ids",
         kind: "scalar",
@@ -107601,8 +107659,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let fqe = dqe;
-    const pqe = class e extends b {
+    let gqe = pqe;
+    const Tqe = class e extends b {
         constructor(e) {
             super(), this.marketplaceId = K.zero, this.directoryGroupIds = [], nt.util.initPartial(e, this)
         }
@@ -107619,7 +107677,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pqe.runtime = nt, pqe.typeName = "aiserver.v1.UpdateTeamMarketplaceConfigRequest", pqe.fields = nt.util.newFieldList(() => [{
+    Tqe.runtime = nt, Tqe.typeName = "aiserver.v1.UpdateTeamMarketplaceConfigRequest", Tqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_id",
         kind: "scalar",
@@ -107631,8 +107689,8 @@
         T: 3,
         repeated: !0
     }]);
-    let gqe = pqe;
-    const Tqe = class e extends b {
+    let hqe = Tqe;
+    const _qe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -107649,14 +107707,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Tqe.runtime = nt, Tqe.typeName = "aiserver.v1.UpdateTeamMarketplaceConfigResponse", Tqe.fields = nt.util.newFieldList(() => [{
+    _qe.runtime = nt, _qe.typeName = "aiserver.v1.UpdateTeamMarketplaceConfigResponse", _qe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace",
         kind: "message",
-        T: cNe
+        T: fNe
     }]);
-    let hqe = Tqe;
-    const _qe = class e extends b {
+    let yqe = _qe;
+    const wqe = class e extends b {
         constructor(e) {
             super(), this.marketplaceId = K.zero, this.gitUrl = "", nt.util.initPartial(e, this)
         }
@@ -107673,7 +107731,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _qe.runtime = nt, _qe.typeName = "aiserver.v1.SetTeamMarketplaceRepositoryRequest", _qe.fields = nt.util.newFieldList(() => [{
+    wqe.runtime = nt, wqe.typeName = "aiserver.v1.SetTeamMarketplaceRepositoryRequest", wqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_id",
         kind: "scalar",
@@ -107690,8 +107748,8 @@
         T: 9,
         opt: !0
     }]);
-    let yqe = _qe;
-    const wqe = class e extends b {
+    let kqe = wqe;
+    const Sqe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -107708,14 +107766,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wqe.runtime = nt, wqe.typeName = "aiserver.v1.SetTeamMarketplaceRepositoryResponse", wqe.fields = nt.util.newFieldList(() => [{
+    Sqe.runtime = nt, Sqe.typeName = "aiserver.v1.SetTeamMarketplaceRepositoryResponse", Sqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace",
         kind: "message",
-        T: cNe
+        T: fNe
     }]);
-    let kqe = wqe;
-    const Sqe = class e extends b {
+    let Jqe = Sqe;
+    const vqe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, this.installMode = 0, this.createdAt = K.zero, this.updatedAt = K.zero, nt.util.initPartial(e, this)
         }
@@ -107732,7 +107790,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Sqe.runtime = nt, Sqe.typeName = "aiserver.v1.TeamMarketplacePluginPolicy", Sqe.fields = nt.util.newFieldList(() => [{
+    vqe.runtime = nt, vqe.typeName = "aiserver.v1.TeamMarketplacePluginPolicy", vqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
@@ -107759,8 +107817,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Jqe = Sqe;
-    const vqe = class e extends b {
+    let Eqe = vqe;
+    const Nqe = class e extends b {
         constructor(e) {
             super(), this.marketplaceId = K.zero, this.policies = [], nt.util.initPartial(e, this)
         }
@@ -107777,7 +107835,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vqe.runtime = nt, vqe.typeName = "aiserver.v1.SetTeamMarketplacePluginPoliciesRequest", vqe.fields = nt.util.newFieldList(() => [{
+    Nqe.runtime = nt, Nqe.typeName = "aiserver.v1.SetTeamMarketplacePluginPoliciesRequest", Nqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_id",
         kind: "scalar",
@@ -107786,11 +107844,11 @@
         no: 2,
         name: "policies",
         kind: "message",
-        T: Bqe,
+        T: Pqe,
         repeated: !0
     }]);
-    let Eqe = vqe;
-    const Nqe = class e extends b {
+    let Bqe = Nqe;
+    const Iqe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, this.installMode = 0, nt.util.initPartial(e, this)
         }
@@ -107807,7 +107865,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Nqe.runtime = nt, Nqe.typeName = "aiserver.v1.SetTeamMarketplacePluginPoliciesRequest.Policy", Nqe.fields = nt.util.newFieldList(() => [{
+    Iqe.runtime = nt, Iqe.typeName = "aiserver.v1.SetTeamMarketplacePluginPoliciesRequest.Policy", Iqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
@@ -107818,8 +107876,8 @@
         kind: "enum",
         T: nt.getEnumType(p1)
     }]);
-    let Bqe = Nqe;
-    const Iqe = class e extends b {
+    let Pqe = Iqe;
+    const qqe = class e extends b {
         constructor(e) {
             super(), this.policies = [], nt.util.initPartial(e, this)
         }
@@ -107836,15 +107894,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Iqe.runtime = nt, Iqe.typeName = "aiserver.v1.SetTeamMarketplacePluginPoliciesResponse", Iqe.fields = nt.util.newFieldList(() => [{
+    qqe.runtime = nt, qqe.typeName = "aiserver.v1.SetTeamMarketplacePluginPoliciesResponse", qqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "policies",
         kind: "message",
-        T: Jqe,
+        T: Eqe,
         repeated: !0
     }]);
-    let Pqe = Iqe;
-    const qqe = class e extends b {
+    let Rqe = qqe;
+    const Lqe = class e extends b {
         constructor(e) {
             super(), this.marketplaceId = K.zero, this.pluginId = K.zero, nt.util.initPartial(e, this)
         }
@@ -107861,7 +107919,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qqe.runtime = nt, qqe.typeName = "aiserver.v1.SetTeamMarketplacePluginPolicyVariablesRequest", qqe.fields = nt.util.newFieldList(() => [{
+    Lqe.runtime = nt, Lqe.typeName = "aiserver.v1.SetTeamMarketplacePluginPolicyVariablesRequest", Lqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "marketplace_id",
         kind: "scalar",
@@ -107877,8 +107935,8 @@
         kind: "message",
         T: Yn
     }]);
-    let Rqe = qqe;
-    const Lqe = class e extends b {
+    let Fqe = Lqe;
+    const Oqe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -107895,9 +107953,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Lqe.runtime = nt, Lqe.typeName = "aiserver.v1.SetTeamMarketplacePluginPolicyVariablesResponse", Lqe.fields = nt.util.newFieldList(() => []);
-    let Fqe = Lqe;
-    const Oqe = class e extends b {
+    Oqe.runtime = nt, Oqe.typeName = "aiserver.v1.SetTeamMarketplacePluginPolicyVariablesResponse", Oqe.fields = nt.util.newFieldList(() => []);
+    let bqe = Oqe;
+    const Cqe = class e extends b {
         constructor(e) {
             super(), this.pluginIds = [], this.marketplaceId = K.zero, nt.util.initPartial(e, this)
         }
@@ -107914,7 +107972,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Oqe.runtime = nt, Oqe.typeName = "aiserver.v1.ApplyTeamMarketplaceRequiredPluginsRequest", Oqe.fields = nt.util.newFieldList(() => [{
+    Cqe.runtime = nt, Cqe.typeName = "aiserver.v1.ApplyTeamMarketplaceRequiredPluginsRequest", Cqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_ids",
         kind: "scalar",
@@ -107925,35 +107983,11 @@
         name: "marketplace_id",
         kind: "scalar",
         T: 3
-    }]);
-    let bqe = Oqe;
-    const Cqe = class e extends b {
-        constructor(e) {
-            super(), this.success = !1, nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    Cqe.runtime = nt, Cqe.typeName = "aiserver.v1.ApplyTeamMarketplaceRequiredPluginsResponse", Cqe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "success",
-        kind: "scalar",
-        T: 8
     }]);
     let Uqe = Cqe;
     const Aqe = class e extends b {
         constructor(e) {
-            super(), this.pluginIds = [], this.marketplaceId = K.zero, nt.util.initPartial(e, this)
+            super(), this.success = !1, nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -107968,21 +108002,45 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Aqe.runtime = nt, Aqe.typeName = "aiserver.v1.LinkPluginsToTeamMarketplaceRequest", Aqe.fields = nt.util.newFieldList(() => [{
+    Aqe.runtime = nt, Aqe.typeName = "aiserver.v1.ApplyTeamMarketplaceRequiredPluginsResponse", Aqe.fields = nt.util.newFieldList(() => [{
         no: 1,
-        name: "plugin_ids",
+        name: "success",
         kind: "scalar",
-        T: 9,
-        repeated: !0
-    }, {
-        no: 2,
-        name: "marketplace_id",
-        kind: "scalar",
-        T: 3
+        T: 8
     }]);
     let xqe = Aqe;
     const Dqe = class e extends b {
         constructor(e) {
+            super(), this.pluginIds = [], this.marketplaceId = K.zero, nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    Dqe.runtime = nt, Dqe.typeName = "aiserver.v1.LinkPluginsToTeamMarketplaceRequest", Dqe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "plugin_ids",
+        kind: "scalar",
+        T: 9,
+        repeated: !0
+    }, {
+        no: 2,
+        name: "marketplace_id",
+        kind: "scalar",
+        T: 3
+    }]);
+    let Mqe = Dqe;
+    const Gqe = class e extends b {
+        constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -107998,14 +108056,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Dqe.runtime = nt, Dqe.typeName = "aiserver.v1.LinkPluginsToTeamMarketplaceResponse", Dqe.fields = nt.util.newFieldList(() => [{
+    Gqe.runtime = nt, Gqe.typeName = "aiserver.v1.LinkPluginsToTeamMarketplaceResponse", Gqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let Mqe = Dqe;
-    const Gqe = class e extends b {
+    let Yqe = Gqe;
+    const Vqe = class e extends b {
         constructor(e) {
             super(), this.pluginIds = [], this.marketplaceId = K.zero, nt.util.initPartial(e, this)
         }
@@ -108022,7 +108080,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Gqe.runtime = nt, Gqe.typeName = "aiserver.v1.UnlinkPluginsFromTeamMarketplaceRequest", Gqe.fields = nt.util.newFieldList(() => [{
+    Vqe.runtime = nt, Vqe.typeName = "aiserver.v1.UnlinkPluginsFromTeamMarketplaceRequest", Vqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_ids",
         kind: "scalar",
@@ -108034,8 +108092,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Yqe = Gqe;
-    const Vqe = class e extends b {
+    let Hqe = Vqe;
+    const Kqe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -108052,14 +108110,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Vqe.runtime = nt, Vqe.typeName = "aiserver.v1.UnlinkPluginsFromTeamMarketplaceResponse", Vqe.fields = nt.util.newFieldList(() => [{
+    Kqe.runtime = nt, Kqe.typeName = "aiserver.v1.UnlinkPluginsFromTeamMarketplaceResponse", Kqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let Hqe = Vqe;
-    const Kqe = class e extends b {
+    let zqe = Kqe;
+    const Wqe = class e extends b {
         constructor(e) {
             super(), this.pluginId = K.zero, nt.util.initPartial(e, this)
         }
@@ -108076,7 +108134,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Kqe.runtime = nt, Kqe.typeName = "aiserver.v1.DeprecatePluginRequest", Kqe.fields = nt.util.newFieldList(() => [{
+    Wqe.runtime = nt, Wqe.typeName = "aiserver.v1.DeprecatePluginRequest", Wqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin_id",
         kind: "scalar",
@@ -108094,8 +108152,8 @@
         T: 3,
         opt: !0
     }]);
-    let zqe = Kqe;
-    const Wqe = class e extends b {
+    let jqe = Wqe;
+    const Xqe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -108112,14 +108170,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Wqe.runtime = nt, Wqe.typeName = "aiserver.v1.DeprecatePluginResponse", Wqe.fields = nt.util.newFieldList(() => [{
+    Xqe.runtime = nt, Xqe.typeName = "aiserver.v1.DeprecatePluginResponse", Xqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "plugin",
         kind: "message",
-        T: ENe
+        T: BNe
     }]);
-    let jqe = Wqe;
-    const Xqe = class e extends b {
+    let $qe = Xqe;
+    const Qqe = class e extends b {
         constructor(e) {
             super(), this.repoUrl = "", this.branchName = "", nt.util.initPartial(e, this)
         }
@@ -108136,7 +108194,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Xqe.runtime = nt, Xqe.typeName = "aiserver.v1.GetPullRequestForBranchRequest", Xqe.fields = nt.util.newFieldList(() => [{
+    Qqe.runtime = nt, Qqe.typeName = "aiserver.v1.GetPullRequestForBranchRequest", Qqe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
@@ -108153,8 +108211,8 @@
         T: 8,
         opt: !0
     }]);
-    let $qe = Xqe;
-    const Qqe = class e extends b {
+    let Zqe = Qqe;
+    const eRe = class e extends b {
         constructor(e) {
             super(), this.prUrl = "", this.prUrls = [], nt.util.initPartial(e, this)
         }
@@ -108171,7 +108229,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    Qqe.runtime = nt, Qqe.typeName = "aiserver.v1.GetPullRequestForBranchResponse", Qqe.fields = nt.util.newFieldList(() => [{
+    eRe.runtime = nt, eRe.typeName = "aiserver.v1.GetPullRequestForBranchResponse", eRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -108183,8 +108241,8 @@
         T: 9,
         repeated: !0
     }]);
-    let Zqe = Qqe;
-    const eRe = class e extends b {
+    let tRe = eRe;
+    const nRe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -108201,9 +108259,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eRe.runtime = nt, eRe.typeName = "aiserver.v1.GetManagedSkillsRequest", eRe.fields = nt.util.newFieldList(() => []);
-    let tRe = eRe;
-    const nRe = class e extends b {
+    nRe.runtime = nt, nRe.typeName = "aiserver.v1.GetManagedSkillsRequest", nRe.fields = nt.util.newFieldList(() => []);
+    let rRe = nRe;
+    const sRe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.description = "", this.content = "", this.disableModelInvocation = !1, this.environments = [], this.disabledEnvironments = [], nt.util.initPartial(e, this)
         }
@@ -108220,7 +108278,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nRe.runtime = nt, nRe.typeName = "aiserver.v1.ManagedSkill", nRe.fields = nt.util.newFieldList(() => [{
+    sRe.runtime = nt, sRe.typeName = "aiserver.v1.ManagedSkill", sRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -108259,8 +108317,8 @@
         T: 8,
         opt: !0
     }]);
-    let rRe = nRe;
-    const sRe = class e extends b {
+    let iRe = sRe;
+    const aRe = class e extends b {
         constructor(e) {
             super(), this.skills = [], nt.util.initPartial(e, this)
         }
@@ -108277,32 +108335,13 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sRe.runtime = nt, sRe.typeName = "aiserver.v1.GetManagedSkillsResponse", sRe.fields = nt.util.newFieldList(() => [{
+    aRe.runtime = nt, aRe.typeName = "aiserver.v1.GetManagedSkillsResponse", aRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "skills",
         kind: "message",
-        T: rRe,
+        T: iRe,
         repeated: !0
     }]);
-    let iRe = sRe;
-    const aRe = class e extends b {
-        constructor(e) {
-            super(), nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    aRe.runtime = nt, aRe.typeName = "aiserver.v1.GetCursorUserStateRequest", aRe.fields = nt.util.newFieldList(() => []);
     let oRe = aRe;
     const lRe = class e extends b {
         constructor(e) {
@@ -108321,38 +108360,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lRe.runtime = nt, lRe.typeName = "aiserver.v1.GetCursorUserStateResponse", lRe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "state",
-        kind: "message",
-        T: Yn
-    }]);
+    lRe.runtime = nt, lRe.typeName = "aiserver.v1.GetCursorUserStateRequest", lRe.fields = nt.util.newFieldList(() => []);
     let uRe = lRe;
     const mRe = class e extends b {
-        constructor(e) {
-            super(), this.jobRole = "", nt.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return nt.util.equals(e, t, n)
-        }
-    };
-    mRe.runtime = nt, mRe.typeName = "aiserver.v1.SetJobDataRequest", mRe.fields = nt.util.newFieldList(() => [{
-        no: 1,
-        name: "job_role",
-        kind: "scalar",
-        T: 9
-    }]);
-    let cRe = mRe;
-    const dRe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -108369,7 +108379,36 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dRe.runtime = nt, dRe.typeName = "aiserver.v1.SetJobDataResponse", dRe.fields = nt.util.newFieldList(() => []);
+    mRe.runtime = nt, mRe.typeName = "aiserver.v1.GetCursorUserStateResponse", mRe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "state",
+        kind: "message",
+        T: Yn
+    }]);
+    let cRe = mRe;
+    const dRe = class e extends b {
+        constructor(e) {
+            super(), this.jobRole = "", nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    dRe.runtime = nt, dRe.typeName = "aiserver.v1.SetJobDataRequest", dRe.fields = nt.util.newFieldList(() => [{
+        no: 1,
+        name: "job_role",
+        kind: "scalar",
+        T: 9
+    }]);
     let fRe = dRe;
     const pRe = class e extends b {
         constructor(e) {
@@ -108388,9 +108427,28 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pRe.runtime = nt, pRe.typeName = "aiserver.v1.GetJiraInstallUrlRequest", pRe.fields = nt.util.newFieldList(() => []);
+    pRe.runtime = nt, pRe.typeName = "aiserver.v1.SetJobDataResponse", pRe.fields = nt.util.newFieldList(() => []);
     let gRe = pRe;
     const TRe = class e extends b {
+        constructor(e) {
+            super(), nt.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return nt.util.equals(e, t, n)
+        }
+    };
+    TRe.runtime = nt, TRe.typeName = "aiserver.v1.GetJiraInstallUrlRequest", TRe.fields = nt.util.newFieldList(() => []);
+    let hRe = TRe;
+    const _Re = class e extends b {
         constructor(e) {
             super(), this.installUrl = "", nt.util.initPartial(e, this)
         }
@@ -108407,14 +108465,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    TRe.runtime = nt, TRe.typeName = "aiserver.v1.GetJiraInstallUrlResponse", TRe.fields = nt.util.newFieldList(() => [{
+    _Re.runtime = nt, _Re.typeName = "aiserver.v1.GetJiraInstallUrlResponse", _Re.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "install_url",
         kind: "scalar",
         T: 9
     }]);
-    let hRe = TRe;
-    const _Re = class e extends b {
+    let yRe = _Re;
+    const wRe = class e extends b {
         constructor(e) {
             super(), this.installationId = "", this.teamId = 0, this.installToken = "", nt.util.initPartial(e, this)
         }
@@ -108431,7 +108489,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _Re.runtime = nt, _Re.typeName = "aiserver.v1.LinkJiraInstallationRequest", _Re.fields = nt.util.newFieldList(() => [{
+    wRe.runtime = nt, wRe.typeName = "aiserver.v1.LinkJiraInstallationRequest", wRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "installation_id",
         kind: "scalar",
@@ -108447,8 +108505,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let yRe = _Re;
-    const wRe = class e extends b {
+    let kRe = wRe;
+    const SRe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -108465,14 +108523,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wRe.runtime = nt, wRe.typeName = "aiserver.v1.LinkJiraInstallationResponse", wRe.fields = nt.util.newFieldList(() => [{
+    SRe.runtime = nt, SRe.typeName = "aiserver.v1.LinkJiraInstallationResponse", SRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let kRe = wRe;
-    const SRe = class e extends b {
+    let JRe = SRe;
+    const vRe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -108489,14 +108547,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    SRe.runtime = nt, SRe.typeName = "aiserver.v1.GetJiraStatusRequest", SRe.fields = nt.util.newFieldList(() => [{
+    vRe.runtime = nt, vRe.typeName = "aiserver.v1.GetJiraStatusRequest", vRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let JRe = SRe;
-    const vRe = class e extends b {
+    let ERe = vRe;
+    const NRe = class e extends b {
         constructor(e) {
             super(), this.status = "", nt.util.initPartial(e, this)
         }
@@ -108513,7 +108571,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    vRe.runtime = nt, vRe.typeName = "aiserver.v1.GetJiraStatusResponse", vRe.fields = nt.util.newFieldList(() => [{
+    NRe.runtime = nt, NRe.typeName = "aiserver.v1.GetJiraStatusResponse", NRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "status",
         kind: "scalar",
@@ -108531,8 +108589,8 @@
         T: 9,
         opt: !0
     }]);
-    let ERe = vRe;
-    const NRe = class e extends b {
+    let BRe = NRe;
+    const IRe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -108549,14 +108607,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    NRe.runtime = nt, NRe.typeName = "aiserver.v1.DisconnectJiraRequest", NRe.fields = nt.util.newFieldList(() => [{
+    IRe.runtime = nt, IRe.typeName = "aiserver.v1.DisconnectJiraRequest", IRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let BRe = NRe;
-    const IRe = class e extends b {
+    let PRe = IRe;
+    const qRe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -108573,9 +108631,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    IRe.runtime = nt, IRe.typeName = "aiserver.v1.DisconnectJiraResponse", IRe.fields = nt.util.newFieldList(() => []);
-    let PRe = IRe;
-    const qRe = class e extends b {
+    qRe.runtime = nt, qRe.typeName = "aiserver.v1.DisconnectJiraResponse", qRe.fields = nt.util.newFieldList(() => []);
+    let RRe = qRe;
+    const LRe = class e extends b {
         constructor(e) {
             super(), this.id = "", this.key = "", this.name = "", nt.util.initPartial(e, this)
         }
@@ -108592,7 +108650,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    qRe.runtime = nt, qRe.typeName = "aiserver.v1.JiraProject", qRe.fields = nt.util.newFieldList(() => [{
+    LRe.runtime = nt, LRe.typeName = "aiserver.v1.JiraProject", LRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -108608,8 +108666,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let RRe = qRe;
-    const LRe = class e extends b {
+    let FRe = LRe;
+    const ORe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -108626,14 +108684,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    LRe.runtime = nt, LRe.typeName = "aiserver.v1.GetJiraProjectsRequest", LRe.fields = nt.util.newFieldList(() => [{
+    ORe.runtime = nt, ORe.typeName = "aiserver.v1.GetJiraProjectsRequest", ORe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let FRe = LRe;
-    const ORe = class e extends b {
+    let bRe = ORe;
+    const CRe = class e extends b {
         constructor(e) {
             super(), this.projects = [], nt.util.initPartial(e, this)
         }
@@ -108650,11 +108708,11 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ORe.runtime = nt, ORe.typeName = "aiserver.v1.GetJiraProjectsResponse", ORe.fields = nt.util.newFieldList(() => [{
+    CRe.runtime = nt, CRe.typeName = "aiserver.v1.GetJiraProjectsResponse", CRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "projects",
         kind: "message",
-        T: RRe,
+        T: FRe,
         repeated: !0
     }, {
         no: 2,
@@ -108663,8 +108721,8 @@
         T: 9,
         opt: !0
     }]);
-    let bRe = ORe;
-    const CRe = class e extends b {
+    let URe = CRe;
+    const ARe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -108681,14 +108739,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    CRe.runtime = nt, CRe.typeName = "aiserver.v1.GetJiraTeamSettingsRequest", CRe.fields = nt.util.newFieldList(() => [{
+    ARe.runtime = nt, ARe.typeName = "aiserver.v1.GetJiraTeamSettingsRequest", ARe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let URe = CRe;
-    const ARe = class e extends b {
+    let xRe = ARe;
+    const DRe = class e extends b {
         constructor(e) {
             super(), this.requireUserAuth = !1, nt.util.initPartial(e, this)
         }
@@ -108705,14 +108763,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    ARe.runtime = nt, ARe.typeName = "aiserver.v1.GetJiraTeamSettingsResponse", ARe.fields = nt.util.newFieldList(() => [{
+    DRe.runtime = nt, DRe.typeName = "aiserver.v1.GetJiraTeamSettingsResponse", DRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "require_user_auth",
         kind: "scalar",
         T: 8
     }]);
-    let xRe = ARe;
-    const DRe = class e extends b {
+    let MRe = DRe;
+    const GRe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -108729,7 +108787,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    DRe.runtime = nt, DRe.typeName = "aiserver.v1.UpdateJiraTeamSettingsRequest", DRe.fields = nt.util.newFieldList(() => [{
+    GRe.runtime = nt, GRe.typeName = "aiserver.v1.UpdateJiraTeamSettingsRequest", GRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -108741,8 +108799,8 @@
         T: 8,
         opt: !0
     }]);
-    let MRe = DRe;
-    const GRe = class e extends b {
+    let YRe = GRe;
+    const VRe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -108759,9 +108817,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    GRe.runtime = nt, GRe.typeName = "aiserver.v1.UpdateJiraTeamSettingsResponse", GRe.fields = nt.util.newFieldList(() => []);
-    let YRe = GRe;
-    const VRe = class e extends b {
+    VRe.runtime = nt, VRe.typeName = "aiserver.v1.UpdateJiraTeamSettingsResponse", VRe.fields = nt.util.newFieldList(() => []);
+    let HRe = VRe;
+    const KRe = class e extends b {
         constructor(e) {
             super(), this.id = K.zero, this.repo = "", this.ruleText = "", nt.util.initPartial(e, this)
         }
@@ -108778,7 +108836,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    VRe.runtime = nt, VRe.typeName = "aiserver.v1.JiraRoutingRule", VRe.fields = nt.util.newFieldList(() => [{
+    KRe.runtime = nt, KRe.typeName = "aiserver.v1.JiraRoutingRule", KRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -108794,8 +108852,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let HRe = VRe;
-    const KRe = class e extends b {
+    let zRe = KRe;
+    const WRe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, nt.util.initPartial(e, this)
         }
@@ -108812,14 +108870,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    KRe.runtime = nt, KRe.typeName = "aiserver.v1.GetJiraRoutingRulesRequest", KRe.fields = nt.util.newFieldList(() => [{
+    WRe.runtime = nt, WRe.typeName = "aiserver.v1.GetJiraRoutingRulesRequest", WRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
         T: 5
     }]);
-    let zRe = KRe;
-    const WRe = class e extends b {
+    let jRe = WRe;
+    const XRe = class e extends b {
         constructor(e) {
             super(), this.rules = [], nt.util.initPartial(e, this)
         }
@@ -108836,15 +108894,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    WRe.runtime = nt, WRe.typeName = "aiserver.v1.GetJiraRoutingRulesResponse", WRe.fields = nt.util.newFieldList(() => [{
+    XRe.runtime = nt, XRe.typeName = "aiserver.v1.GetJiraRoutingRulesResponse", XRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rules",
         kind: "message",
-        T: HRe,
+        T: zRe,
         repeated: !0
     }]);
-    let jRe = WRe;
-    const XRe = class e extends b {
+    let $Re = XRe;
+    const QRe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.repo = "", this.ruleText = "", nt.util.initPartial(e, this)
         }
@@ -108861,7 +108919,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    XRe.runtime = nt, XRe.typeName = "aiserver.v1.CreateJiraRoutingRuleRequest", XRe.fields = nt.util.newFieldList(() => [{
+    QRe.runtime = nt, QRe.typeName = "aiserver.v1.CreateJiraRoutingRuleRequest", QRe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -108877,8 +108935,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let $Re = XRe;
-    const QRe = class e extends b {
+    let ZRe = QRe;
+    const eLe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -108895,14 +108953,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    QRe.runtime = nt, QRe.typeName = "aiserver.v1.CreateJiraRoutingRuleResponse", QRe.fields = nt.util.newFieldList(() => [{
+    eLe.runtime = nt, eLe.typeName = "aiserver.v1.CreateJiraRoutingRuleResponse", eLe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule",
         kind: "message",
-        T: HRe
+        T: zRe
     }]);
-    let ZRe = QRe;
-    const eLe = class e extends b {
+    let tLe = eLe;
+    const nLe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.ruleId = K.zero, this.repo = "", this.ruleText = "", nt.util.initPartial(e, this)
         }
@@ -108919,7 +108977,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    eLe.runtime = nt, eLe.typeName = "aiserver.v1.UpdateJiraRoutingRuleRequest", eLe.fields = nt.util.newFieldList(() => [{
+    nLe.runtime = nt, nLe.typeName = "aiserver.v1.UpdateJiraRoutingRuleRequest", nLe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -108940,8 +108998,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let tLe = eLe;
-    const nLe = class e extends b {
+    let rLe = nLe;
+    const sLe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -108958,14 +109016,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    nLe.runtime = nt, nLe.typeName = "aiserver.v1.UpdateJiraRoutingRuleResponse", nLe.fields = nt.util.newFieldList(() => [{
+    sLe.runtime = nt, sLe.typeName = "aiserver.v1.UpdateJiraRoutingRuleResponse", sLe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "rule",
         kind: "message",
-        T: HRe
+        T: zRe
     }]);
-    let rLe = nLe;
-    const sLe = class e extends b {
+    let iLe = sLe;
+    const aLe = class e extends b {
         constructor(e) {
             super(), this.teamId = 0, this.ruleId = K.zero, nt.util.initPartial(e, this)
         }
@@ -108982,7 +109040,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    sLe.runtime = nt, sLe.typeName = "aiserver.v1.DeleteJiraRoutingRuleRequest", sLe.fields = nt.util.newFieldList(() => [{
+    aLe.runtime = nt, aLe.typeName = "aiserver.v1.DeleteJiraRoutingRuleRequest", aLe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "team_id",
         kind: "scalar",
@@ -108993,8 +109051,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let iLe = sLe;
-    const aLe = class e extends b {
+    let oLe = aLe;
+    const lLe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -109011,9 +109069,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    aLe.runtime = nt, aLe.typeName = "aiserver.v1.DeleteJiraRoutingRuleResponse", aLe.fields = nt.util.newFieldList(() => []);
-    let oLe = aLe;
-    const lLe = class e extends b {
+    lLe.runtime = nt, lLe.typeName = "aiserver.v1.DeleteJiraRoutingRuleResponse", lLe.fields = nt.util.newFieldList(() => []);
+    let uLe = lLe;
+    const mLe = class e extends b {
         constructor(e) {
             super(), this.cloudId = "", this.jiraAccountId = "", this.linkToken = "", nt.util.initPartial(e, this)
         }
@@ -109030,7 +109088,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    lLe.runtime = nt, lLe.typeName = "aiserver.v1.LinkJiraUserRequest", lLe.fields = nt.util.newFieldList(() => [{
+    mLe.runtime = nt, mLe.typeName = "aiserver.v1.LinkJiraUserRequest", mLe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "cloud_id",
         kind: "scalar",
@@ -109046,8 +109104,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let uLe = lLe;
-    const mLe = class e extends b {
+    let cLe = mLe;
+    const dLe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -109064,14 +109122,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    mLe.runtime = nt, mLe.typeName = "aiserver.v1.LinkJiraUserResponse", mLe.fields = nt.util.newFieldList(() => [{
+    dLe.runtime = nt, dLe.typeName = "aiserver.v1.LinkJiraUserResponse", dLe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let cLe = mLe;
-    const dLe = class e extends b {
+    let fLe = dLe;
+    const pLe = class e extends b {
         constructor(e) {
             super(), nt.util.initPartial(e, this)
         }
@@ -109088,9 +109146,9 @@
             return nt.util.equals(e, t, n)
         }
     };
-    dLe.runtime = nt, dLe.typeName = "aiserver.v1.ListJiraUserLinksRequest", dLe.fields = nt.util.newFieldList(() => []);
-    let fLe = dLe;
-    const pLe = class e extends b {
+    pLe.runtime = nt, pLe.typeName = "aiserver.v1.ListJiraUserLinksRequest", pLe.fields = nt.util.newFieldList(() => []);
+    let gLe = pLe;
+    const TLe = class e extends b {
         constructor(e) {
             super(), this.links = [], nt.util.initPartial(e, this)
         }
@@ -109107,15 +109165,15 @@
             return nt.util.equals(e, t, n)
         }
     };
-    pLe.runtime = nt, pLe.typeName = "aiserver.v1.ListJiraUserLinksResponse", pLe.fields = nt.util.newFieldList(() => [{
+    TLe.runtime = nt, TLe.typeName = "aiserver.v1.ListJiraUserLinksResponse", TLe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "links",
         kind: "message",
-        T: hLe,
+        T: yLe,
         repeated: !0
     }]);
-    let gLe = pLe;
-    const TLe = class e extends b {
+    let hLe = TLe;
+    const _Le = class e extends b {
         constructor(e) {
             super(), this.cloudId = "", this.jiraAccountId = "", this.siteName = "", this.baseUrl = "", this.linkedAtMs = K.zero, nt.util.initPartial(e, this)
         }
@@ -109132,7 +109190,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    TLe.runtime = nt, TLe.typeName = "aiserver.v1.JiraUserLink", TLe.fields = nt.util.newFieldList(() => [{
+    _Le.runtime = nt, _Le.typeName = "aiserver.v1.JiraUserLink", _Le.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "cloud_id",
         kind: "scalar",
@@ -109158,8 +109216,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let hLe = TLe;
-    const _Le = class e extends b {
+    let yLe = _Le;
+    const wLe = class e extends b {
         constructor(e) {
             super(), this.cloudId = "", this.jiraAccountId = "", nt.util.initPartial(e, this)
         }
@@ -109176,7 +109234,7 @@
             return nt.util.equals(e, t, n)
         }
     };
-    _Le.runtime = nt, _Le.typeName = "aiserver.v1.UnlinkJiraUserRequest", _Le.fields = nt.util.newFieldList(() => [{
+    wLe.runtime = nt, wLe.typeName = "aiserver.v1.UnlinkJiraUserRequest", wLe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "cloud_id",
         kind: "scalar",
@@ -109187,8 +109245,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let yLe = _Le;
-    const wLe = class e extends b {
+    let kLe = wLe;
+    const SLe = class e extends b {
         constructor(e) {
             super(), this.success = !1, nt.util.initPartial(e, this)
         }
@@ -109205,14 +109263,14 @@
             return nt.util.equals(e, t, n)
         }
     };
-    wLe.runtime = nt, wLe.typeName = "aiserver.v1.UnlinkJiraUserResponse", wLe.fields = nt.util.newFieldList(() => [{
+    SLe.runtime = nt, SLe.typeName = "aiserver.v1.UnlinkJiraUserResponse", SLe.fields = nt.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let kLe = wLe;
-    const SLe = {
+    let JLe = SLe;
+    const vLe = {
             typeName: "aiserver.v1.DashboardService",
             methods: {
                 getTeams: {
@@ -109325,14 +109383,14 @@
                 },
                 getDirectoryGroups: {
                     name: "GetDirectoryGroups",
-                    I: Uhe,
-                    O: xhe,
+                    I: xhe,
+                    O: Mhe,
                     kind: st.Unary
                 },
                 updateDirectoryGroupSettings: {
                     name: "UpdateDirectoryGroupSettings",
-                    I: Mhe,
-                    O: Yhe,
+                    I: Yhe,
+                    O: Hhe,
                     kind: st.Unary
                 },
                 getOrganizationGroups: {
@@ -109415,116 +109473,116 @@
                 },
                 getGroups: {
                     name: "GetGroups",
-                    I: o_e,
-                    O: u_e,
+                    I: u_e,
+                    O: c_e,
                     kind: st.Unary
                 },
                 getGroupMembers: {
                     name: "GetGroupMembers",
-                    I: c_e,
-                    O: f_e,
+                    I: f_e,
+                    O: g_e,
                     kind: st.Unary
                 },
                 createGroup: {
                     name: "CreateGroup",
-                    I: g_e,
-                    O: h_e,
+                    I: h_e,
+                    O: y_e,
                     kind: st.Unary
                 },
                 updateGroup: {
                     name: "UpdateGroup",
-                    I: y_e,
-                    O: k_e,
+                    I: k_e,
+                    O: J_e,
                     kind: st.Unary
                 },
                 deleteGroup: {
                     name: "DeleteGroup",
-                    I: J_e,
-                    O: E_e,
+                    I: E_e,
+                    O: B_e,
                     kind: st.Unary
                 },
                 addGroupMembers: {
                     name: "AddGroupMembers",
-                    I: B_e,
-                    O: P_e,
+                    I: P_e,
+                    O: R_e,
                     kind: st.Unary
                 },
                 removeGroupMembers: {
                     name: "RemoveGroupMembers",
-                    I: R_e,
-                    O: F_e,
+                    I: F_e,
+                    O: b_e,
                     kind: st.Unary
                 },
                 bulkAssignGroupMembers: {
                     name: "BulkAssignGroupMembers",
-                    I: U_e,
-                    O: M_e,
+                    I: x_e,
+                    O: Y_e,
                     kind: st.Unary
                 },
                 previewAttachGroupToDirectory: {
                     name: "PreviewAttachGroupToDirectory",
-                    I: Y_e,
-                    O: j_e,
+                    I: H_e,
+                    O: $_e,
                     kind: st.Unary
                 },
                 detachGroupFromDirectory: {
                     name: "DetachGroupFromDirectory",
-                    I: $_e,
-                    O: Z_e,
+                    I: Z_e,
+                    O: tye,
                     kind: st.Unary
                 },
                 getScimConflicts: {
                     name: "GetScimConflicts",
-                    I: tye,
-                    O: oye,
+                    I: rye,
+                    O: uye,
                     kind: st.Unary
                 },
                 listScimDirectories: {
                     name: "ListScimDirectories",
-                    I: cye,
-                    O: fye,
+                    I: fye,
+                    O: gye,
                     kind: st.Unary
                 },
                 getOrganizationScimConfigurationLinks: {
                     name: "GetOrganizationScimConfigurationLinks",
-                    I: cye,
+                    I: fye,
                     O: Sre,
                     kind: st.Unary
                 },
                 createScimDirectory: {
                     name: "CreateScimDirectory",
-                    I: gye,
-                    O: hye,
+                    I: hye,
+                    O: yye,
                     kind: st.Unary
                 },
                 deleteScimDirectory: {
                     name: "DeleteScimDirectory",
-                    I: yye,
-                    O: kye,
+                    I: kye,
+                    O: Jye,
                     kind: st.Unary
                 },
                 listScimGroupsFromUpstream: {
                     name: "ListScimGroupsFromUpstream",
-                    I: Eye,
-                    O: Bye,
+                    I: Bye,
+                    O: Pye,
                     kind: st.Unary
                 },
                 listScimTargetMappings: {
                     name: "ListScimTargetMappings",
-                    I: Rye,
-                    O: Fye,
+                    I: Fye,
+                    O: bye,
                     kind: st.Unary
                 },
                 createScimTargetMapping: {
                     name: "CreateScimTargetMapping",
-                    I: bye,
-                    O: Uye,
+                    I: Uye,
+                    O: xye,
                     kind: st.Unary
                 },
                 deleteScimTargetMapping: {
                     name: "DeleteScimTargetMapping",
-                    I: xye,
-                    O: Mye,
+                    I: Mye,
+                    O: Yye,
                     kind: st.Unary
                 },
                 getActivationCheckoutUrl: {
@@ -109823,8 +109881,8 @@
                 },
                 getOrgDailySpendByCategory: {
                     name: "GetOrgDailySpendByCategory",
-                    I: Zhe,
-                    O: $he,
+                    I: t_e,
+                    O: Zhe,
                     kind: st.Unary
                 },
                 enableOnDemandSpend: {
@@ -109841,8 +109899,8 @@
                 },
                 sendDownloadEmail: {
                     name: "SendDownloadEmail",
-                    I: rNe,
-                    O: iNe,
+                    I: iNe,
+                    O: oNe,
                     kind: st.Unary
                 },
                 getMonthlyInvoice: {
@@ -109859,8 +109917,8 @@
                 },
                 getDailySpendByCategory: {
                     name: "GetDailySpendByCategory",
-                    I: zhe,
-                    O: $he,
+                    I: jhe,
+                    O: Zhe,
                     kind: st.Unary
                 },
                 getPricingHistory: {
@@ -110177,8 +110235,8 @@
                 },
                 redeemGiftCode: {
                     name: "RedeemGiftCode",
-                    I: Hwe,
-                    O: zwe,
+                    I: zwe,
+                    O: jwe,
                     kind: st.Unary
                 },
                 getTeamRepos: {
@@ -110195,182 +110253,182 @@
                 },
                 getTeamRules: {
                     name: "GetTeamRules",
-                    I: cke,
-                    O: fke,
+                    I: fke,
+                    O: gke,
                     kind: st.Unary
                 },
                 createTeamRule: {
                     name: "CreateTeamRule",
-                    I: gke,
-                    O: hke,
+                    I: hke,
+                    O: yke,
                     kind: st.Unary
                 },
                 updateTeamRule: {
                     name: "UpdateTeamRule",
-                    I: yke,
-                    O: kke,
+                    I: kke,
+                    O: Jke,
                     kind: st.Unary
                 },
                 deleteTeamRule: {
                     name: "DeleteTeamRule",
-                    I: Jke,
-                    O: Eke,
+                    I: Eke,
+                    O: Bke,
                     kind: st.Unary
                 },
                 getTeamHooks: {
                     name: "GetTeamHooks",
-                    I: Pke,
-                    O: Rke,
+                    I: Rke,
+                    O: Fke,
                     kind: st.Unary
                 },
                 createTeamHook: {
                     name: "CreateTeamHook",
-                    I: Fke,
-                    O: bke,
+                    I: bke,
+                    O: Uke,
                     kind: st.Unary
                 },
                 updateTeamHook: {
                     name: "UpdateTeamHook",
-                    I: Uke,
-                    O: xke,
+                    I: xke,
+                    O: Mke,
                     kind: st.Unary
                 },
                 deleteTeamHook: {
                     name: "DeleteTeamHook",
-                    I: Mke,
-                    O: Yke,
+                    I: Yke,
+                    O: Hke,
                     kind: st.Unary
                 },
                 getTeamCommands: {
                     name: "GetTeamCommands",
-                    I: zke,
-                    O: jke,
+                    I: jke,
+                    O: $ke,
                     kind: st.Unary
                 },
                 createTeamCommand: {
                     name: "CreateTeamCommand",
-                    I: $ke,
-                    O: Zke,
+                    I: Zke,
+                    O: tSe,
                     kind: st.Unary
                 },
                 updateTeamCommand: {
                     name: "UpdateTeamCommand",
-                    I: tSe,
-                    O: rSe,
+                    I: rSe,
+                    O: iSe,
                     kind: st.Unary
                 },
                 deleteTeamCommand: {
                     name: "DeleteTeamCommand",
-                    I: iSe,
-                    O: oSe,
+                    I: oSe,
+                    O: uSe,
                     kind: st.Unary
                 },
                 getGlobalCommands: {
                     name: "GetGlobalCommands",
-                    I: cSe,
-                    O: fSe,
+                    I: fSe,
+                    O: gSe,
                     kind: st.Unary
                 },
                 getRepoSlashCommands: {
                     name: "GetRepoSlashCommands",
-                    I: gSe,
-                    O: hSe,
+                    I: hSe,
+                    O: ySe,
                     kind: st.Unary
                 },
                 getBackgroundComposerSlashCommands: {
                     name: "GetBackgroundComposerSlashCommands",
-                    I: ySe,
-                    O: kSe,
+                    I: kSe,
+                    O: JSe,
                     kind: st.Unary
                 },
                 getCloudAgentPluginsSnapshot: {
                     name: "GetCloudAgentPluginsSnapshot",
-                    I: JSe,
-                    O: BSe,
+                    I: ESe,
+                    O: PSe,
                     kind: st.Unary
                 },
                 getBugbotTeamRules: {
                     name: "GetBugbotTeamRules",
-                    I: RSe,
-                    O: FSe,
+                    I: FSe,
+                    O: bSe,
                     kind: st.Unary
                 },
                 createBugbotTeamRule: {
                     name: "CreateBugbotTeamRule",
-                    I: bSe,
-                    O: USe,
+                    I: USe,
+                    O: xSe,
                     kind: st.Unary
                 },
                 updateBugbotTeamRule: {
                     name: "UpdateBugbotTeamRule",
-                    I: xSe,
-                    O: MSe,
+                    I: MSe,
+                    O: YSe,
                     kind: st.Unary
                 },
                 deleteBugbotTeamRule: {
                     name: "DeleteBugbotTeamRule",
-                    I: YSe,
-                    O: HSe,
+                    I: HSe,
+                    O: zSe,
                     kind: st.Unary
                 },
                 getBugbotLearnedRules: {
                     name: "GetBugbotLearnedRules",
-                    I: zSe,
-                    O: jSe,
+                    I: jSe,
+                    O: $Se,
                     kind: st.Unary
                 },
                 updateBugbotLearnedRule: {
                     name: "UpdateBugbotLearnedRule",
-                    I: ZSe,
-                    O: tJe,
+                    I: tJe,
+                    O: rJe,
                     kind: st.Unary
                 },
                 deleteBugbotLearnedRule: {
                     name: "DeleteBugbotLearnedRule",
-                    I: rJe,
-                    O: iJe,
+                    I: iJe,
+                    O: oJe,
                     kind: st.Unary
                 },
                 createBugbotManualRepositoryRule: {
                     name: "CreateBugbotManualRepositoryRule",
-                    I: uJe,
-                    O: cJe,
+                    I: cJe,
+                    O: fJe,
                     kind: st.Unary
                 },
                 getBugbotManualRepositoryRules: {
                     name: "GetBugbotManualRepositoryRules",
-                    I: fJe,
-                    O: gJe,
+                    I: gJe,
+                    O: hJe,
                     kind: st.Unary
                 },
                 updateBugbotManualRepositoryRule: {
                     name: "UpdateBugbotManualRepositoryRule",
-                    I: hJe,
-                    O: yJe,
+                    I: yJe,
+                    O: kJe,
                     kind: st.Unary
                 },
                 deleteBugbotManualRepositoryRule: {
                     name: "DeleteBugbotManualRepositoryRule",
-                    I: kJe,
-                    O: JJe,
+                    I: JJe,
+                    O: EJe,
                     kind: st.Unary
                 },
                 runDiamondToBugbotMigration: {
                     name: "RunDiamondToBugbotMigration",
-                    I: EJe,
-                    O: BJe,
+                    I: BJe,
+                    O: PJe,
                     kind: st.Unary
                 },
                 getBugbotRuleAnalytics: {
                     name: "GetBugbotRuleAnalytics",
-                    I: PJe,
-                    O: RJe,
+                    I: RJe,
+                    O: FJe,
                     kind: st.Unary
                 },
                 getBugbotRuleById: {
                     name: "GetBugbotRuleById",
-                    I: bJe,
-                    O: UJe,
+                    I: UJe,
+                    O: xJe,
                     kind: st.Unary
                 },
                 createTeamRepo: {
@@ -110399,38 +110457,38 @@
                 },
                 setTeamRepoType: {
                     name: "SetTeamRepoType",
-                    I: boe,
-                    O: Uoe,
+                    I: Uoe,
+                    O: xoe,
                     kind: st.Unary
                 },
                 getTeamAdminSettings: {
                     name: "GetTeamAdminSettings",
                     I: _ie,
-                    O: $ae,
+                    O: Zae,
                     kind: st.Unary
                 },
                 getTeamAdminSettingsOrEmptyIfNotInTeam: {
                     name: "GetTeamAdminSettingsOrEmptyIfNotInTeam",
                     I: _ie,
-                    O: $ae,
+                    O: Zae,
                     kind: st.Unary
                 },
                 getBaseTeamAdminSettings: {
                     name: "GetBaseTeamAdminSettings",
-                    I: Zae,
-                    O: $ae,
+                    I: toe,
+                    O: Zae,
                     kind: st.Unary
                 },
                 updateTeamAdminSettings: {
                     name: "UpdateTeamAdminSettings",
-                    I: toe,
-                    O: roe,
+                    I: roe,
+                    O: ioe,
                     kind: st.Unary
                 },
                 updateTeamInviteLinkTTLSetting: {
                     name: "UpdateTeamInviteLinkTTLSetting",
-                    I: ioe,
-                    O: ooe,
+                    I: ooe,
+                    O: uoe,
                     kind: st.Unary
                 },
                 getProtectedGitScopes: {
@@ -110453,98 +110511,98 @@
                 },
                 createTeamFreeTrialCode: {
                     name: "CreateTeamFreeTrialCode",
-                    I: uoe,
-                    O: coe,
+                    I: coe,
+                    O: foe,
                     kind: st.Unary
                 },
                 getTeamAnalytics: {
                     name: "GetTeamAnalytics",
-                    I: foe,
-                    O: goe,
+                    I: goe,
+                    O: hoe,
                     kind: st.Unary
                 },
                 getUserAnalytics: {
                     name: "GetUserAnalytics",
-                    I: hoe,
-                    O: yoe,
+                    I: yoe,
+                    O: koe,
                     kind: st.Unary
                 },
                 getTeamRawData: {
                     name: "GetTeamRawData",
-                    I: koe,
-                    O: Joe,
+                    I: Joe,
+                    O: Eoe,
                     kind: st.Unary
                 },
                 getClientUsageData: {
                     name: "GetClientUsageData",
-                    I: xoe,
-                    O: Moe,
+                    I: Moe,
+                    O: Yoe,
                     kind: st.Unary
                 },
                 getCurrentPeriodUsage: {
                     name: "GetCurrentPeriodUsage",
-                    I: Hoe,
-                    O: zoe,
+                    I: zoe,
+                    O: joe,
                     kind: st.Unary
                 },
                 getPlanInfo: {
                     name: "GetPlanInfo",
-                    I: tle,
-                    O: rle,
+                    I: rle,
+                    O: ile,
                     kind: st.Unary
                 },
                 getCursorReviewEntitlement: {
                     name: "GetCursorReviewEntitlement",
-                    I: ule,
-                    O: cle,
+                    I: cle,
+                    O: fle,
                     kind: st.Unary
                 },
                 getUsageLimitPolicyStatus: {
                     name: "GetUsageLimitPolicyStatus",
-                    I: gle,
-                    O: hle,
+                    I: hle,
+                    O: yle,
                     kind: st.Unary
                 },
                 getUsageLimitStatusAndActiveGrants: {
                     name: "GetUsageLimitStatusAndActiveGrants",
-                    I: yle,
-                    O: Jle,
+                    I: kle,
+                    O: Ele,
                     kind: st.Unary
                 },
                 getCreditGrantsBalance: {
                     name: "GetCreditGrantsBalance",
-                    I: Ble,
-                    O: Ple,
+                    I: Ple,
+                    O: Rle,
                     kind: st.Unary
                 },
                 getClientVisibleCreditGrants: {
                     name: "GetClientVisibleCreditGrants",
-                    I: Rle,
-                    O: Fle,
+                    I: Fle,
+                    O: ble,
                     kind: st.Unary
                 },
                 getAdvancedAnalyticsEnabled: {
                     name: "GetAdvancedAnalyticsEnabled",
-                    I: Ule,
-                    O: xle,
+                    I: xle,
+                    O: Mle,
                     kind: st.Unary
                 },
                 getTokenUsage: {
                     name: "GetTokenUsage",
-                    I: Mle,
-                    O: Yle,
+                    I: Yle,
+                    O: Hle,
                     kind: st.Unary
                 },
                 validateBedrockIamRole: {
                     name: "ValidateBedrockIamRole",
-                    I: Hle,
-                    O: zle,
+                    I: zle,
+                    O: jle,
                     kind: st.Unary
                 },
                 createAnthropicCyberEnrollmentUrl: {
                     name: "CreateAnthropicCyberEnrollmentUrl",
-                    I: jle,
-                    O: $le,
+                    I: $le,
+                    O: Zle,
                     kind: st.Unary
                 },
                 addUserToEarlyAccessList: {
@@ -110555,314 +110613,314 @@
                 },
                 getTeamSpend: {
                     name: "GetTeamSpend",
-                    I: rue,
-                    O: oue,
+                    I: iue,
+                    O: uue,
                     kind: st.Unary
                 },
                 getCurrentBillingCycle: {
                     name: "GetCurrentBillingCycle",
-                    I: cue,
-                    O: fue,
+                    I: fue,
+                    O: gue,
                     kind: st.Unary
                 },
                 getMonthlyBillingCycle: {
                     name: "GetMonthlyBillingCycle",
-                    I: gue,
-                    O: hue,
+                    I: hue,
+                    O: yue,
                     kind: st.Unary
                 },
                 getBugbotSettings: {
                     name: "GetBugbotSettings",
-                    I: yue,
-                    O: kue,
+                    I: kue,
+                    O: Jue,
                     kind: st.Unary
                 },
                 getBugbotAnalyticsV2: {
                     name: "GetBugbotAnalyticsV2",
-                    I: Jue,
-                    O: Eue,
+                    I: Eue,
+                    O: Bue,
                     kind: st.Unary
                 },
                 getBugBotPRAnalytics: {
                     name: "GetBugBotPRAnalytics",
-                    I: que,
-                    O: Lue,
+                    I: Lue,
+                    O: Oue,
                     kind: st.Unary
                 },
                 getGithubInstallations: {
                     name: "GetGithubInstallations",
-                    I: Aue,
-                    O: Vue,
+                    I: Due,
+                    O: Kue,
                     kind: st.Unary
                 },
                 getScmConnectionStatus: {
                     name: "GetScmConnectionStatus",
-                    I: Due,
-                    O: Gue,
+                    I: Gue,
+                    O: Vue,
                     kind: st.Unary
                 },
                 getInstallationRepos: {
                     name: "GetInstallationRepos",
-                    I: Rme,
-                    O: Fme,
+                    I: Fme,
+                    O: bme,
                     kind: st.Unary
                 },
                 fetchAllInstallationRepos: {
                     name: "FetchAllInstallationRepos",
-                    I: bme,
-                    O: Ume,
+                    I: Ume,
+                    O: xme,
                     kind: st.Unary
                 },
                 getInstallationGithubUsers: {
                     name: "GetInstallationGithubUsers",
-                    I: xme,
-                    O: Hme,
+                    I: Mme,
+                    O: zme,
                     kind: st.Unary
                 },
                 getUserAdminOrganizations: {
                     name: "GetUserAdminOrganizations",
-                    I: zme,
-                    O: jme,
+                    I: jme,
+                    O: $me,
                     kind: st.Unary
                 },
                 getTeamGithubUsers: {
                     name: "GetTeamGithubUsers",
-                    I: Zme,
-                    O: tce,
+                    I: tce,
+                    O: rce,
                     kind: st.Unary
                 },
                 addGithubUsersToTeam: {
                     name: "AddGithubUsersToTeam",
-                    I: rce,
-                    O: ice,
+                    I: ice,
+                    O: oce,
                     kind: st.Unary
                 },
                 getUserPullRequests: {
                     name: "GetUserPullRequests",
-                    I: oce,
-                    O: uce,
+                    I: uce,
+                    O: cce,
                     kind: st.Unary
                 },
                 getUserReviewRequests: {
                     name: "GetUserReviewRequests",
-                    I: gce,
-                    O: hce,
+                    I: hce,
+                    O: yce,
                     kind: st.Unary
                 },
                 getPullRequestForBranch: {
                     name: "GetPullRequestForBranch",
-                    I: $qe,
-                    O: Zqe,
+                    I: Zqe,
+                    O: tRe,
                     kind: st.Unary
                 },
                 updateGithubRepoSettings: {
                     name: "UpdateGithubRepoSettings",
-                    I: nme,
-                    O: sme,
+                    I: sme,
+                    O: ame,
                     kind: st.Unary
                 },
                 updateGithubInstallationSettings: {
                     name: "UpdateGithubInstallationSettings",
-                    I: ame,
-                    O: lme,
+                    I: lme,
+                    O: mme,
                     kind: st.Unary
                 },
                 updateAllGithubRepoSettings: {
                     name: "UpdateAllGithubRepoSettings",
-                    I: Sme,
-                    O: vme,
+                    I: vme,
+                    O: Nme,
                     kind: st.Unary
                 },
                 updateGithubInstallationTeamScope: {
                     name: "UpdateGithubInstallationTeamScope",
-                    I: mme,
-                    O: dme,
+                    I: dme,
+                    O: pme,
                     kind: st.Unary
                 },
                 updateSelfGithubAllowlist: {
                     name: "UpdateSelfGithubAllowlist",
-                    I: Nme,
-                    O: Pme,
+                    I: Ime,
+                    O: Rme,
                     kind: st.Unary
                 },
                 getTeamBugbotSettings: {
                     name: "GetTeamBugbotSettings",
-                    I: fwe,
-                    O: hwe,
+                    I: gwe,
+                    O: ywe,
                     kind: st.Unary
                 },
                 updateTeamBugbotSettings: {
                     name: "UpdateTeamBugbotSettings",
-                    I: ywe,
-                    O: kwe,
+                    I: kwe,
+                    O: Jwe,
                     kind: st.Unary
                 },
                 migrateTeamBugbotToUsageBasedBilling: {
                     name: "MigrateTeamBugbotToUsageBasedBilling",
-                    I: Jwe,
-                    O: Ewe,
+                    I: Ewe,
+                    O: Bwe,
                     kind: st.Unary
                 },
                 getBugbotMode: {
                     name: "GetBugbotMode",
-                    I: Pwe,
-                    O: Rwe,
+                    I: Rwe,
+                    O: Fwe,
                     kind: st.Unary
                 },
                 updateBugbotMode: {
                     name: "UpdateBugbotMode",
-                    I: Fwe,
-                    O: bwe,
+                    I: bwe,
+                    O: Uwe,
                     kind: st.Unary
                 },
                 getBugbotUserSettings: {
                     name: "GetBugbotUserSettings",
-                    I: yce,
-                    O: kce,
+                    I: kce,
+                    O: Jce,
                     kind: st.Unary
                 },
                 updateBugbotUserSettings: {
                     name: "UpdateBugbotUserSettings",
-                    I: Jce,
-                    O: Ece,
+                    I: Ece,
+                    O: Bce,
                     kind: st.Unary
                 },
                 getFullSelfDrivingUserSettings: {
                     name: "GetFullSelfDrivingUserSettings",
-                    I: Bce,
-                    O: Pce,
+                    I: Pce,
+                    O: Rce,
                     kind: st.Unary
                 },
                 updateFullSelfDrivingUserSettings: {
                     name: "UpdateFullSelfDrivingUserSettings",
-                    I: Rce,
-                    O: Fce,
+                    I: Fce,
+                    O: bce,
                     kind: st.Unary
                 },
                 listFullSelfDrivingRepoSettings: {
                     name: "ListFullSelfDrivingRepoSettings",
-                    I: Uce,
-                    O: xce,
+                    I: xce,
+                    O: Mce,
                     kind: st.Unary
                 },
                 setFullSelfDrivingRepoEnabled: {
                     name: "SetFullSelfDrivingRepoEnabled",
-                    I: Mce,
-                    O: Yce,
+                    I: Yce,
+                    O: Hce,
                     kind: st.Unary
                 },
                 getFullSelfDrivingTeamSettings: {
                     name: "GetFullSelfDrivingTeamSettings",
-                    I: zce,
-                    O: jce,
+                    I: jce,
+                    O: $ce,
                     kind: st.Unary
                 },
                 updateFullSelfDrivingTeamSettings: {
                     name: "UpdateFullSelfDrivingTeamSettings",
-                    I: $ce,
-                    O: Zce,
+                    I: Zce,
+                    O: tde,
                     kind: st.Unary
                 },
                 listFullSelfDrivingTeamRepoSettings: {
                     name: "ListFullSelfDrivingTeamRepoSettings",
-                    I: rde,
-                    O: ide,
+                    I: ide,
+                    O: ode,
                     kind: st.Unary
                 },
                 setFullSelfDrivingTeamRepoEnabled: {
                     name: "SetFullSelfDrivingTeamRepoEnabled",
-                    I: ode,
-                    O: ude,
+                    I: ude,
+                    O: cde,
                     kind: st.Unary
                 },
                 listFullSelfDrivingActiveAgents: {
                     name: "ListFullSelfDrivingActiveAgents",
-                    I: fde,
-                    O: gde,
+                    I: gde,
+                    O: hde,
                     kind: st.Unary
                 },
                 listFullSelfDrivingTeamActiveAgents: {
                     name: "ListFullSelfDrivingTeamActiveAgents",
-                    I: hde,
-                    O: yde,
+                    I: yde,
+                    O: kde,
                     kind: st.Unary
                 },
                 updateFullSelfDrivingPrConfig: {
                     name: "UpdateFullSelfDrivingPrConfig",
-                    I: kde,
-                    O: Jde,
+                    I: Jde,
+                    O: Ede,
                     kind: st.Unary
                 },
                 getBugBotProUserSettings: {
                     name: "GetBugBotProUserSettings",
-                    I: Ede,
-                    O: Bde,
+                    I: Bde,
+                    O: Pde,
                     kind: st.Unary
                 },
                 updateBugBotProUserSettings: {
                     name: "UpdateBugBotProUserSettings",
-                    I: Pde,
-                    O: Rde,
+                    I: Rde,
+                    O: Fde,
                     kind: st.Unary
                 },
                 migrateBugBotProUserToUsageBasedBilling: {
                     name: "MigrateBugBotProUserToUsageBasedBilling",
-                    I: Fde,
-                    O: bde,
+                    I: bde,
+                    O: Ude,
                     kind: st.Unary
                 },
                 getGlassEarlyPreviewEnrollment: {
                     name: "GetGlassEarlyPreviewEnrollment",
-                    I: Ude,
-                    O: xde,
+                    I: xde,
+                    O: Mde,
                     kind: st.Unary
                 },
                 enrollInGlassEarlyPreview: {
                     name: "EnrollInGlassEarlyPreview",
-                    I: Mde,
-                    O: Yde,
+                    I: Yde,
+                    O: Hde,
                     kind: st.Unary
                 },
                 unenrollFromGlassEarlyPreview: {
                     name: "UnenrollFromGlassEarlyPreview",
-                    I: Hde,
-                    O: zde,
+                    I: zde,
+                    O: jde,
                     kind: st.Unary
                 },
                 recordBugbotDeeplinkEvent: {
                     name: "RecordBugbotDeeplinkEvent",
-                    I: jde,
-                    O: Qde,
+                    I: $de,
+                    O: efe,
                     kind: st.Unary
                 },
                 recordBugbotDeeplinkEventUnauthenticated: {
                     name: "RecordBugbotDeeplinkEventUnauthenticated",
-                    I: jde,
-                    O: Qde,
+                    I: $de,
+                    O: efe,
                     kind: st.Unary
                 },
                 revokeBugBotLicenses: {
                     name: "RevokeBugBotLicenses",
-                    I: Uwe,
-                    O: xwe,
+                    I: xwe,
+                    O: Mwe,
                     kind: st.Unary
                 },
                 revokeUserBugbotLicense: {
                     name: "RevokeUserBugbotLicense",
-                    I: Mwe,
-                    O: Ywe,
+                    I: Ywe,
+                    O: Hwe,
                     kind: st.Unary
                 },
                 startBugbotBackfillLearning: {
                     name: "StartBugbotBackfillLearning",
-                    I: pme,
-                    O: Tme,
+                    I: Tme,
+                    O: _me,
                     kind: st.Unary
                 },
                 getBugbotBackfillStatus: {
                     name: "GetBugbotBackfillStatus",
-                    I: _me,
-                    O: wme,
+                    I: wme,
+                    O: Sme,
                     kind: st.Unary
                 },
                 setSlackAuth: {
@@ -110915,254 +110973,254 @@
                 },
                 getFilteredUsageEvents: {
                     name: "GetFilteredUsageEvents",
-                    I: efe,
-                    O: nfe,
+                    I: nfe,
+                    O: sfe,
                     kind: st.Unary
                 },
                 getAggregatedUsageEvents: {
                     name: "GetAggregatedUsageEvents",
-                    I: sfe,
-                    O: afe,
+                    I: afe,
+                    O: lfe,
                     kind: st.Unary
                 },
                 getAuditLogs: {
                     name: "GetAuditLogs",
-                    I: mfe,
-                    O: dfe,
+                    I: dfe,
+                    O: pfe,
                     kind: st.Unary
                 },
                 getUserPrivacyMode: {
                     name: "GetUserPrivacyMode",
-                    I: Vfe,
-                    O: Kfe,
+                    I: Kfe,
+                    O: Wfe,
                     kind: st.Unary
                 },
                 setUserPrivacyMode: {
                     name: "SetUserPrivacyMode",
-                    I: Wfe,
-                    O: Xfe,
+                    I: Xfe,
+                    O: Qfe,
                     kind: st.Unary
                 },
                 webAcknowledgeGracePeriodDisclaimer: {
                     name: "WebAcknowledgeGracePeriodDisclaimer",
-                    I: Qfe,
-                    O: epe,
+                    I: epe,
+                    O: npe,
                     kind: st.Unary
                 },
                 skipPrivacyModeGracePeriod: {
                     name: "SkipPrivacyModeGracePeriod",
-                    I: npe,
-                    O: spe,
+                    I: spe,
+                    O: ape,
                     kind: st.Unary
                 },
                 needsPrivacyModeMigration: {
                     name: "NeedsPrivacyModeMigration",
-                    I: ape,
-                    O: lpe,
+                    I: lpe,
+                    O: mpe,
                     kind: st.Unary
                 },
                 updateTeamPrivacyModeMigrationOptOut: {
                     name: "UpdateTeamPrivacyModeMigrationOptOut",
-                    I: iwe,
-                    O: owe,
+                    I: owe,
+                    O: uwe,
                     kind: st.Unary
                 },
                 shareConversation: {
                     name: "ShareConversation",
-                    I: Jve,
-                    O: Eve,
+                    I: Eve,
+                    O: Bve,
                     kind: st.Unary
                 },
                 getSharedConversation: {
                     name: "GetSharedConversation",
-                    I: Bve,
-                    O: Pve,
+                    I: Pve,
+                    O: Rve,
                     kind: st.Unary
                 },
                 getPublicSharedConversation: {
                     name: "GetPublicSharedConversation",
-                    I: Yve,
-                    O: Hve,
+                    I: Hve,
+                    O: zve,
                     kind: st.Unary
                 },
                 listSharedConversations: {
                     name: "ListSharedConversations",
-                    I: Rve,
-                    O: Fve,
+                    I: Fve,
+                    O: bve,
                     kind: st.Unary
                 },
                 deleteSharedConversation: {
                     name: "DeleteSharedConversation",
-                    I: bve,
-                    O: Uve,
+                    I: Uve,
+                    O: xve,
                     kind: st.Unary
                 },
                 updateSharedConversationVisibility: {
                     name: "UpdateSharedConversationVisibility",
-                    I: xve,
-                    O: Mve,
+                    I: Mve,
+                    O: Yve,
                     kind: st.Unary
                 },
                 shareCanvas: {
                     name: "ShareCanvas",
-                    I: $Je,
-                    O: ZJe,
+                    I: ZJe,
+                    O: tve,
                     kind: st.Unary
                 },
                 getSharedCanvas: {
                     name: "GetSharedCanvas",
-                    I: tve,
-                    O: rve,
+                    I: rve,
+                    O: ive,
                     kind: st.Unary
                 },
                 getPublicSharedCanvas: {
                     name: "GetPublicSharedCanvas",
-                    I: ive,
-                    O: uve,
+                    I: ove,
+                    O: cve,
                     kind: st.Unary
                 },
                 listSharedCanvases: {
                     name: "ListSharedCanvases",
-                    I: cve,
-                    O: fve,
+                    I: fve,
+                    O: gve,
                     kind: st.Unary
                 },
                 deleteSharedCanvas: {
                     name: "DeleteSharedCanvas",
-                    I: gve,
-                    O: hve,
+                    I: hve,
+                    O: yve,
                     kind: st.Unary
                 },
                 lookupSharedCanvasByKey: {
                     name: "LookupSharedCanvasByKey",
-                    I: yve,
-                    O: kve,
+                    I: kve,
+                    O: Jve,
                     kind: st.Unary
                 },
                 getTeamSharedConversationSettings: {
                     name: "GetTeamSharedConversationSettings",
-                    I: zve,
-                    O: jve,
+                    I: jve,
+                    O: $ve,
                     kind: st.Unary
                 },
                 updateTeamSharedConversationSettings: {
                     name: "UpdateTeamSharedConversationSettings",
-                    I: $ve,
-                    O: Zve,
+                    I: Zve,
+                    O: tEe,
                     kind: st.Unary
                 },
                 getTeamSharedCanvasSettings: {
                     name: "GetTeamSharedCanvasSettings",
-                    I: tEe,
-                    O: rEe,
+                    I: rEe,
+                    O: iEe,
                     kind: st.Unary
                 },
                 updateTeamSharedCanvasSettings: {
                     name: "UpdateTeamSharedCanvasSettings",
-                    I: iEe,
-                    O: oEe,
+                    I: oEe,
+                    O: uEe,
                     kind: st.Unary
                 },
                 getTeamBackgroundAgentSettings: {
                     name: "GetTeamBackgroundAgentSettings",
-                    I: uEe,
-                    O: cEe,
+                    I: cEe,
+                    O: fEe,
                     kind: st.Unary
                 },
                 updateTeamBackgroundAgentSettings: {
                     name: "UpdateTeamBackgroundAgentSettings",
-                    I: fEe,
-                    O: gEe,
+                    I: gEe,
+                    O: hEe,
                     kind: st.Unary
                 },
                 revokeTeamInviteLink: {
                     name: "RevokeTeamInviteLink",
-                    I: Tfe,
-                    O: _fe,
+                    I: _fe,
+                    O: wfe,
                     kind: st.Unary
                 },
                 listTeamInviteLinks: {
                     name: "ListTeamInviteLinks",
-                    I: wfe,
-                    O: vfe,
+                    I: Sfe,
+                    O: Nfe,
                     kind: st.Unary
                 },
                 updateUserName: {
                     name: "UpdateUserName",
-                    I: Nfe,
-                    O: Ife,
+                    I: Ife,
+                    O: qfe,
                     kind: st.Unary
                 },
                 uploadUserProfilePicture: {
                     name: "UploadUserProfilePicture",
-                    I: qfe,
-                    O: Lfe,
+                    I: Lfe,
+                    O: Ofe,
                     kind: st.Unary
                 },
                 updateUserProfilePicture: {
                     name: "UpdateUserProfilePicture",
-                    I: Ofe,
-                    O: Cfe,
+                    I: Cfe,
+                    O: Afe,
                     kind: st.Unary
                 },
                 listInvoices: {
                     name: "ListInvoices",
-                    I: Afe,
-                    O: Gfe,
+                    I: Dfe,
+                    O: Vfe,
                     kind: st.Unary
                 },
                 getRemainingRefunds: {
                     name: "GetRemainingRefunds",
-                    I: dpe,
-                    O: ppe,
+                    I: ppe,
+                    O: Tpe,
                     kind: st.Unary
                 },
                 getServiceAccountSpendLimit: {
                     name: "GetServiceAccountSpendLimit",
-                    I: Tpe,
-                    O: _pe,
+                    I: _pe,
+                    O: wpe,
                     kind: st.Unary
                 },
                 setServiceAccountSpendLimit: {
                     name: "SetServiceAccountSpendLimit",
-                    I: wpe,
-                    O: Spe,
+                    I: Spe,
+                    O: vpe,
                     kind: st.Unary
                 },
                 setUserHardLimit: {
                     name: "SetUserHardLimit",
-                    I: vpe,
-                    O: Npe,
+                    I: Npe,
+                    O: Ipe,
                     kind: st.Unary
                 },
                 setUserMonthlyLimit: {
                     name: "SetUserMonthlyLimit",
-                    I: Ipe,
-                    O: qpe,
+                    I: qpe,
+                    O: Lpe,
                     kind: st.Unary
                 },
                 toggleMarketingEmailOpt: {
                     name: "ToggleMarketingEmailOpt",
-                    I: Lpe,
-                    O: Ope,
+                    I: Ope,
+                    O: Cpe,
                     kind: st.Unary
                 },
                 getMarketingEmailOpt: {
                     name: "GetMarketingEmailOpt",
-                    I: Cpe,
-                    O: Ape,
+                    I: Ape,
+                    O: Dpe,
                     kind: st.Unary
                 },
                 getGlobalLeaderboardOptIn: {
                     name: "GetGlobalLeaderboardOptIn",
-                    I: Dpe,
-                    O: Gpe,
+                    I: Gpe,
+                    O: Vpe,
                     kind: st.Unary
                 },
                 setGlobalLeaderboardOptIn: {
                     name: "SetGlobalLeaderboardOptIn",
-                    I: Vpe,
-                    O: Kpe,
+                    I: Kpe,
+                    O: Wpe,
                     kind: st.Unary
                 },
                 createTeamApiKey: {
@@ -111275,20 +111333,20 @@
                 },
                 updateTeamName: {
                     name: "UpdateTeamName",
-                    I: Wpe,
-                    O: Xpe,
+                    I: Xpe,
+                    O: Qpe,
                     kind: st.Unary
                 },
                 updateTeamDashboardAnalyticsSetting: {
                     name: "UpdateTeamDashboardAnalyticsSetting",
-                    I: Qpe,
-                    O: ege,
+                    I: ege,
+                    O: nge,
                     kind: st.Unary
                 },
                 updateTeamScimRequireUserDirectorySetting: {
                     name: "UpdateTeamScimRequireUserDirectorySetting",
-                    I: nge,
-                    O: sge,
+                    I: sge,
+                    O: age,
                     kind: st.Unary
                 },
                 getTeamScimRequireUserDirectoryPreview: {
@@ -111299,739 +111357,739 @@
                 },
                 getSlackUserSettings: {
                     name: "GetSlackUserSettings",
-                    I: OTe,
-                    O: CTe,
+                    I: CTe,
+                    O: ATe,
                     kind: st.Unary
                 },
                 updateSlackUserSettings: {
                     name: "UpdateSlackUserSettings",
-                    I: GTe,
-                    O: VTe,
+                    I: VTe,
+                    O: KTe,
                     kind: st.Unary
                 },
                 getSlackRepoRoutingRules: {
                     name: "GetSlackRepoRoutingRules",
-                    I: WTe,
-                    O: XTe,
+                    I: XTe,
+                    O: QTe,
                     kind: st.Unary
                 },
                 createSlackRepoRoutingRule: {
                     name: "CreateSlackRepoRoutingRule",
-                    I: QTe,
-                    O: ehe,
+                    I: ehe,
+                    O: nhe,
                     kind: st.Unary
                 },
                 updateSlackRepoRoutingRule: {
                     name: "UpdateSlackRepoRoutingRule",
-                    I: ahe,
-                    O: lhe,
+                    I: lhe,
+                    O: mhe,
                     kind: st.Unary
                 },
                 deleteSlackRepoRoutingRule: {
                     name: "DeleteSlackRepoRoutingRule",
-                    I: nhe,
-                    O: she,
+                    I: she,
+                    O: ahe,
                     kind: st.Unary
                 },
                 isOnNewPricing: {
                     name: "IsOnNewPricing",
-                    I: mhe,
-                    O: dhe,
+                    I: dhe,
+                    O: phe,
                     kind: st.Unary
                 },
                 getLinearAuthUrl: {
                     name: "GetLinearAuthUrl",
-                    I: age,
-                    O: lge,
+                    I: lge,
+                    O: mge,
                     kind: st.Unary
                 },
                 connectLinearCallback: {
                     name: "ConnectLinearCallback",
-                    I: mge,
-                    O: dge,
+                    I: dge,
+                    O: pge,
                     kind: st.Unary
                 },
                 getMicrosoftTeamsLinkContext: {
                     name: "GetMicrosoftTeamsLinkContext",
-                    I: pge,
-                    O: Tge,
+                    I: Tge,
+                    O: _ge,
                     kind: st.Unary
                 },
                 setMicrosoftTeamsAuth: {
                     name: "SetMicrosoftTeamsAuth",
-                    I: _ge,
-                    O: wge,
+                    I: wge,
+                    O: Sge,
                     kind: st.Unary
                 },
                 getLinearStatus: {
                     name: "GetLinearStatus",
-                    I: Sge,
-                    O: vge,
+                    I: vge,
+                    O: Nge,
                     kind: st.Unary
                 },
                 disconnectLinear: {
                     name: "DisconnectLinear",
-                    I: Nge,
-                    O: Ige,
+                    I: Ige,
+                    O: qge,
                     kind: st.Unary
                 },
                 getLinearTeams: {
                     name: "GetLinearTeams",
-                    I: qge,
-                    O: Lge,
+                    I: Lge,
+                    O: Oge,
                     kind: st.Unary
                 },
                 getLinearSettings: {
                     name: "GetLinearSettings",
-                    I: Gge,
-                    O: Vge,
+                    I: Vge,
+                    O: Kge,
                     kind: st.Unary
                 },
                 updateLinearTeamSetting: {
                     name: "UpdateLinearTeamSetting",
-                    I: Kge,
-                    O: Wge,
+                    I: Wge,
+                    O: Xge,
                     kind: st.Unary
                 },
                 updateLinearProjectSetting: {
                     name: "UpdateLinearProjectSetting",
-                    I: Xge,
-                    O: Qge,
+                    I: Qge,
+                    O: eTe,
                     kind: st.Unary
                 },
                 getLinearLabels: {
                     name: "GetLinearLabels",
-                    I: nTe,
-                    O: sTe,
+                    I: sTe,
+                    O: aTe,
                     kind: st.Unary
                 },
                 getLinearIssues: {
                     name: "GetLinearIssues",
-                    I: aTe,
-                    O: lTe,
+                    I: lTe,
+                    O: mTe,
                     kind: st.Unary
                 },
                 getPagerDutyAuthUrl: {
                     name: "GetPagerDutyAuthUrl",
-                    I: dTe,
-                    O: pTe,
+                    I: pTe,
+                    O: TTe,
                     kind: st.Unary
                 },
                 connectPagerDutyCallback: {
                     name: "ConnectPagerDutyCallback",
-                    I: TTe,
-                    O: _Te,
+                    I: _Te,
+                    O: wTe,
                     kind: st.Unary
                 },
                 getPagerDutyStatus: {
                     name: "GetPagerDutyStatus",
-                    I: wTe,
-                    O: STe,
+                    I: STe,
+                    O: vTe,
                     kind: st.Unary
                 },
                 getPagerDutyServices: {
                     name: "GetPagerDutyServices",
-                    I: vTe,
-                    O: NTe,
+                    I: NTe,
+                    O: ITe,
                     kind: st.Unary
                 },
                 disconnectPagerDuty: {
                     name: "DisconnectPagerDuty",
-                    I: qTe,
-                    O: LTe,
+                    I: LTe,
+                    O: OTe,
                     kind: st.Unary
                 },
                 getJiraInstallUrl: {
                     name: "GetJiraInstallUrl",
-                    I: gRe,
-                    O: hRe,
+                    I: hRe,
+                    O: yRe,
                     kind: st.Unary
                 },
                 linkJiraInstallation: {
                     name: "LinkJiraInstallation",
-                    I: yRe,
-                    O: kRe,
+                    I: kRe,
+                    O: JRe,
                     kind: st.Unary
                 },
                 getJiraStatus: {
                     name: "GetJiraStatus",
-                    I: JRe,
-                    O: ERe,
+                    I: ERe,
+                    O: BRe,
                     kind: st.Unary
                 },
                 disconnectJira: {
                     name: "DisconnectJira",
-                    I: BRe,
-                    O: PRe,
+                    I: PRe,
+                    O: RRe,
                     kind: st.Unary
                 },
                 getJiraProjects: {
                     name: "GetJiraProjects",
-                    I: FRe,
-                    O: bRe,
+                    I: bRe,
+                    O: URe,
                     kind: st.Unary
                 },
                 getJiraTeamSettings: {
                     name: "GetJiraTeamSettings",
-                    I: URe,
-                    O: xRe,
+                    I: xRe,
+                    O: MRe,
                     kind: st.Unary
                 },
                 updateJiraTeamSettings: {
                     name: "UpdateJiraTeamSettings",
-                    I: MRe,
-                    O: YRe,
+                    I: YRe,
+                    O: HRe,
                     kind: st.Unary
                 },
                 getJiraRoutingRules: {
                     name: "GetJiraRoutingRules",
-                    I: zRe,
-                    O: jRe,
+                    I: jRe,
+                    O: $Re,
                     kind: st.Unary
                 },
                 createJiraRoutingRule: {
                     name: "CreateJiraRoutingRule",
-                    I: $Re,
-                    O: ZRe,
+                    I: ZRe,
+                    O: tLe,
                     kind: st.Unary
                 },
                 updateJiraRoutingRule: {
                     name: "UpdateJiraRoutingRule",
-                    I: tLe,
-                    O: rLe,
+                    I: rLe,
+                    O: iLe,
                     kind: st.Unary
                 },
                 deleteJiraRoutingRule: {
                     name: "DeleteJiraRoutingRule",
-                    I: iLe,
-                    O: oLe,
+                    I: oLe,
+                    O: uLe,
                     kind: st.Unary
                 },
                 linkJiraUser: {
                     name: "LinkJiraUser",
-                    I: uLe,
-                    O: cLe,
+                    I: cLe,
+                    O: fLe,
                     kind: st.Unary
                 },
                 listJiraUserLinks: {
                     name: "ListJiraUserLinks",
-                    I: fLe,
-                    O: gLe,
+                    I: gLe,
+                    O: hLe,
                     kind: st.Unary
                 },
                 unlinkJiraUser: {
                     name: "UnlinkJiraUser",
-                    I: yLe,
-                    O: kLe,
+                    I: kLe,
+                    O: JLe,
                     kind: st.Unary
                 },
                 deleteBedrockIamRole: {
                     name: "DeleteBedrockIamRole",
-                    I: Zle,
-                    O: tue,
+                    I: tue,
+                    O: rue,
                     kind: st.Unary
                 },
                 unlinkSlackAccess: {
                     name: "UnlinkSlackAccess",
-                    I: ATe,
-                    O: DTe,
+                    I: DTe,
+                    O: GTe,
                     kind: st.Unary
                 },
                 listSlackConversations: {
                     name: "ListSlackConversations",
-                    I: MEe,
-                    O: YEe,
+                    I: YEe,
+                    O: HEe,
                     kind: st.Unary
                 },
                 listMicrosoftTeamsChannels: {
                     name: "ListMicrosoftTeamsChannels",
-                    I: HEe,
-                    O: zEe,
+                    I: zEe,
+                    O: jEe,
                     kind: st.Unary
                 },
                 getSlackConversationsByIds: {
                     name: "GetSlackConversationsByIds",
-                    I: $Ee,
-                    O: ZEe,
+                    I: ZEe,
+                    O: tNe,
                     kind: st.Unary
                 },
                 logSlackbotAuthConversionFunnel: {
                     name: "LogSlackbotAuthConversionFunnel",
-                    I: phe,
-                    O: The,
+                    I: The,
+                    O: _he,
                     kind: st.Unary
                 },
                 logClickedConnectSlack: {
                     name: "LogClickedConnectSlack",
-                    I: _he,
-                    O: khe,
+                    I: whe,
+                    O: Jhe,
                     kind: st.Unary
                 },
                 checkUserApiKeyAccess: {
                     name: "CheckUserApiKeyAccess",
-                    I: Jhe,
-                    O: Ehe,
+                    I: Ehe,
+                    O: Bhe,
                     kind: st.Unary
                 },
                 isAllowedFreeTrialUsage: {
                     name: "IsAllowedFreeTrialUsage",
-                    I: Bhe,
-                    O: Phe,
+                    I: Phe,
+                    O: Rhe,
                     kind: st.Unary
                 },
                 isNextSetupRunFree: {
                     name: "IsNextSetupRunFree",
-                    I: Rhe,
-                    O: Fhe,
+                    I: Fhe,
+                    O: bhe,
                     kind: st.Unary
                 },
                 completedLinkSlackAccount: {
                     name: "CompletedLinkSlackAccount",
-                    I: $ye,
-                    O: Zye,
+                    I: Zye,
+                    O: twe,
                     kind: st.Unary
                 },
                 notifyTeamAdmins: {
                     name: "NotifyTeamAdmins",
-                    I: Yye,
-                    O: Hye,
+                    I: Hye,
+                    O: zye,
                     kind: st.Unary
                 },
                 getAdminNotificationStatus: {
                     name: "GetAdminNotificationStatus",
-                    I: zye,
-                    O: jye,
+                    I: jye,
+                    O: $ye,
                     kind: st.Unary
                 },
                 optOutNewPricing: {
                     name: "OptOutNewPricing",
-                    I: twe,
-                    O: rwe,
+                    I: rwe,
+                    O: iwe,
                     kind: st.Unary
                 },
                 submitFeedback: {
                     name: "SubmitFeedback",
-                    I: uwe,
-                    O: cwe,
+                    I: cwe,
+                    O: fwe,
                     kind: st.Unary
                 },
                 canStudentReverify: {
                     name: "CanStudentReverify",
-                    I: jwe,
-                    O: $we,
+                    I: $we,
+                    O: Zwe,
                     kind: st.Unary
                 },
                 getActiveOffboardingBanner: {
                     name: "GetActiveOffboardingBanner",
-                    I: Zwe,
-                    O: tke,
+                    I: tke,
+                    O: rke,
                     kind: st.Unary
                 },
                 clientAction: {
                     name: "ClientAction",
-                    I: ike,
-                    O: oke,
+                    I: oke,
+                    O: uke,
                     kind: st.Unary
                 },
                 listUsageAlerts: {
                     name: "ListUsageAlerts",
-                    I: yEe,
-                    O: kEe,
+                    I: kEe,
+                    O: JEe,
                     kind: st.Unary
                 },
                 createUsageAlerts: {
                     name: "CreateUsageAlerts",
-                    I: JEe,
-                    O: EEe,
+                    I: EEe,
+                    O: BEe,
                     kind: st.Unary
                 },
                 deleteUsageAlerts: {
                     name: "DeleteUsageAlerts",
-                    I: BEe,
-                    O: PEe,
+                    I: PEe,
+                    O: REe,
                     kind: st.Unary
                 },
                 updateUsageAlerts: {
                     name: "UpdateUsageAlerts",
-                    I: REe,
-                    O: FEe,
+                    I: FEe,
+                    O: bEe,
                     kind: st.Unary
                 },
                 requestIndividualLimitsOptOut: {
                     name: "RequestIndividualLimitsOptOut",
-                    I: bEe,
-                    O: UEe,
+                    I: UEe,
+                    O: xEe,
                     kind: st.Unary
                 },
                 listMarketplacePlugins: {
                     name: "ListMarketplacePlugins",
-                    I: RNe,
-                    O: FNe,
+                    I: FNe,
+                    O: bNe,
                     kind: st.Unary
                 },
                 getUserProfile: {
                     name: "GetUserProfile",
-                    I: jNe,
-                    O: $Ne,
+                    I: $Ne,
+                    O: ZNe,
                     kind: st.Unary
                 },
                 updateUserProfile: {
                     name: "UpdateUserProfile",
-                    I: ZNe,
-                    O: tBe,
+                    I: tBe,
+                    O: rBe,
                     kind: st.Unary
                 },
                 claimUserProfileHandle: {
                     name: "ClaimUserProfileHandle",
-                    I: rBe,
-                    O: iBe,
+                    I: iBe,
+                    O: oBe,
                     kind: st.Unary
                 },
                 getPublicProfileByHandle: {
                     name: "GetPublicProfileByHandle",
-                    I: oBe,
-                    O: uBe,
+                    I: uBe,
+                    O: cBe,
                     kind: st.Unary
                 },
                 getPlugin: {
                     name: "GetPlugin",
-                    I: cBe,
-                    O: fBe,
+                    I: fBe,
+                    O: gBe,
                     kind: st.Unary
                 },
                 createPlugin: {
                     name: "CreatePlugin",
-                    I: yBe,
-                    O: kBe,
+                    I: kBe,
+                    O: JBe,
                     kind: st.Unary
                 },
                 updatePlugin: {
                     name: "UpdatePlugin",
-                    I: JBe,
-                    O: EBe,
+                    I: EBe,
+                    O: BBe,
                     kind: st.Unary
                 },
                 parseGitHubRepoForPlugins: {
                     name: "ParseGitHubRepoForPlugins",
-                    I: BBe,
-                    O: RBe,
+                    I: PBe,
+                    O: FBe,
                     kind: st.Unary
                 },
                 importPluginsFromGitHub: {
                     name: "ImportPluginsFromGitHub",
-                    I: FBe,
-                    O: bBe,
+                    I: bBe,
+                    O: UBe,
                     kind: st.Unary
                 },
                 previewReindexPluginRepoInternal: {
                     name: "PreviewReindexPluginRepoInternal",
-                    I: HBe,
-                    O: YBe,
+                    I: zBe,
+                    O: HBe,
                     kind: st.Unary
                 },
                 applyReindexPluginRepoInternal: {
                     name: "ApplyReindexPluginRepoInternal",
-                    I: zBe,
-                    O: jBe,
+                    I: jBe,
+                    O: $Be,
                     kind: st.Unary
                 },
                 previewMigrateReindexPluginRepoInternal: {
                     name: "PreviewMigrateReindexPluginRepoInternal",
-                    I: $Be,
-                    O: ZBe,
+                    I: ZBe,
+                    O: tIe,
                     kind: st.Unary
                 },
                 applyMigrateReindexPluginRepoInternal: {
                     name: "ApplyMigrateReindexPluginRepoInternal",
-                    I: tIe,
-                    O: rIe,
+                    I: rIe,
+                    O: iIe,
                     kind: st.Unary
                 },
                 submitPluginForApproval: {
                     name: "SubmitPluginForApproval",
-                    I: iIe,
-                    O: oIe,
+                    I: oIe,
+                    O: uIe,
                     kind: st.Unary
                 },
                 approvePlugin: {
                     name: "ApprovePlugin",
-                    I: uIe,
-                    O: cIe,
+                    I: cIe,
+                    O: fIe,
                     kind: st.Unary
                 },
                 rejectPlugin: {
                     name: "RejectPlugin",
-                    I: fIe,
-                    O: gIe,
+                    I: gIe,
+                    O: hIe,
                     kind: st.Unary
                 },
                 listUserPluginInstalls: {
                     name: "ListUserPluginInstalls",
-                    I: hIe,
-                    O: yIe,
+                    I: yIe,
+                    O: kIe,
                     kind: st.Unary
                 },
                 installUserPlugin: {
                     name: "InstallUserPlugin",
-                    I: kIe,
-                    O: JIe,
+                    I: JIe,
+                    O: EIe,
                     kind: st.Unary
                 },
                 updateUserPluginInstall: {
                     name: "UpdateUserPluginInstall",
-                    I: EIe,
-                    O: BIe,
+                    I: BIe,
+                    O: PIe,
                     kind: st.Unary
                 },
                 uninstallUserPlugin: {
                     name: "UninstallUserPlugin",
-                    I: PIe,
-                    O: RIe,
+                    I: RIe,
+                    O: FIe,
                     kind: st.Unary
                 },
                 listTeamPluginInstalls: {
                     name: "ListTeamPluginInstalls",
-                    I: FIe,
-                    O: bIe,
+                    I: bIe,
+                    O: UIe,
                     kind: st.Unary
                 },
                 getTeamPluginPopularity: {
                     name: "GetTeamPluginPopularity",
-                    I: xIe,
-                    O: MIe,
+                    I: MIe,
+                    O: YIe,
                     kind: st.Unary
                 },
                 getTeamPluginPrimitiveUsage: {
                     name: "GetTeamPluginPrimitiveUsage",
-                    I: YIe,
-                    O: zIe,
+                    I: HIe,
+                    O: jIe,
                     kind: st.Unary
                 },
                 listTeamAvailableMarketplacePlugins: {
                     name: "ListTeamAvailableMarketplacePlugins",
-                    I: jIe,
-                    O: $Ie,
+                    I: $Ie,
+                    O: ZIe,
                     kind: st.Unary
                 },
                 getTeamPinnedMarketplacePlugins: {
                     name: "GetTeamPinnedMarketplacePlugins",
-                    I: ZIe,
-                    O: tPe,
+                    I: tPe,
+                    O: rPe,
                     kind: st.Unary
                 },
                 updateTeamPinnedMarketplacePlugins: {
                     name: "UpdateTeamPinnedMarketplacePlugins",
-                    I: rPe,
-                    O: iPe,
+                    I: iPe,
+                    O: oPe,
                     kind: st.Unary
                 },
                 installTeamPlugin: {
                     name: "InstallTeamPlugin",
-                    I: oPe,
-                    O: uPe,
+                    I: uPe,
+                    O: cPe,
                     kind: st.Unary
                 },
                 updateTeamPluginInstall: {
                     name: "UpdateTeamPluginInstall",
-                    I: cPe,
-                    O: fPe,
+                    I: fPe,
+                    O: gPe,
                     kind: st.Unary
                 },
                 uninstallTeamPlugin: {
                     name: "UninstallTeamPlugin",
-                    I: gPe,
-                    O: hPe,
+                    I: hPe,
+                    O: yPe,
                     kind: st.Unary
                 },
                 getEffectiveUserPlugins: {
                     name: "GetEffectiveUserPlugins",
-                    I: yPe,
-                    O: JPe,
+                    I: kPe,
+                    O: EPe,
                     kind: st.Unary
                 },
                 resolvePluginsByRef: {
                     name: "ResolvePluginsByRef",
-                    I: BPe,
-                    O: PPe,
+                    I: PPe,
+                    O: RPe,
                     kind: st.Unary
                 },
                 deprecatePlugin: {
                     name: "DeprecatePlugin",
-                    I: zqe,
-                    O: jqe,
+                    I: jqe,
+                    O: $qe,
                     kind: st.Unary
                 },
                 listMarketplaces: {
                     name: "ListMarketplaces",
-                    I: RPe,
-                    O: FPe,
+                    I: FPe,
+                    O: bPe,
                     kind: st.Unary
                 },
                 addMarketplace: {
                     name: "AddMarketplace",
-                    I: bPe,
-                    O: UPe,
+                    I: UPe,
+                    O: xPe,
                     kind: st.Unary
                 },
                 getOrCreateDefaultTeamMarketplace: {
                     name: "GetOrCreateDefaultTeamMarketplace",
-                    I: xPe,
-                    O: MPe,
+                    I: MPe,
+                    O: YPe,
                     kind: st.Unary
                 },
                 updateMarketplace: {
                     name: "UpdateMarketplace",
-                    I: YPe,
-                    O: HPe,
+                    I: HPe,
+                    O: zPe,
                     kind: st.Unary
                 },
                 removeMarketplace: {
                     name: "RemoveMarketplace",
-                    I: zPe,
-                    O: jPe,
+                    I: jPe,
+                    O: $Pe,
                     kind: st.Unary
                 },
                 refreshMarketplace: {
                     name: "RefreshMarketplace",
-                    I: $Pe,
-                    O: ZPe,
+                    I: ZPe,
+                    O: tqe,
                     kind: st.Unary
                 },
                 reindexAndApplyTeamMarketplaceChanges: {
                     name: "ReindexAndApplyTeamMarketplaceChanges",
-                    I: tqe,
-                    O: rqe,
+                    I: rqe,
+                    O: iqe,
                     kind: st.Unary
                 },
                 registerMarketplaceAndPlugins: {
                     name: "RegisterMarketplaceAndPlugins",
-                    I: iqe,
-                    O: uqe,
+                    I: oqe,
+                    O: cqe,
                     kind: st.Unary
                 },
                 updateTeamMarketplaceConfig: {
                     name: "UpdateTeamMarketplaceConfig",
-                    I: gqe,
-                    O: hqe,
+                    I: hqe,
+                    O: yqe,
                     kind: st.Unary
                 },
                 setTeamMarketplaceRepository: {
                     name: "SetTeamMarketplaceRepository",
-                    I: yqe,
-                    O: kqe,
+                    I: kqe,
+                    O: Jqe,
                     kind: st.Unary
                 },
                 setTeamMarketplacePluginPolicies: {
                     name: "SetTeamMarketplacePluginPolicies",
-                    I: Eqe,
-                    O: Pqe,
+                    I: Bqe,
+                    O: Rqe,
                     kind: st.Unary
                 },
                 setTeamMarketplacePluginPolicyVariables: {
                     name: "SetTeamMarketplacePluginPolicyVariables",
-                    I: Rqe,
-                    O: Fqe,
+                    I: Fqe,
+                    O: bqe,
                     kind: st.Unary
                 },
                 applyTeamMarketplaceRequiredPlugins: {
                     name: "ApplyTeamMarketplaceRequiredPlugins",
-                    I: bqe,
-                    O: Uqe,
+                    I: Uqe,
+                    O: xqe,
                     kind: st.Unary
                 },
                 linkPluginsToTeamMarketplace: {
                     name: "LinkPluginsToTeamMarketplace",
-                    I: xqe,
-                    O: Mqe,
+                    I: Mqe,
+                    O: Yqe,
                     kind: st.Unary
                 },
                 unlinkPluginsFromTeamMarketplace: {
                     name: "UnlinkPluginsFromTeamMarketplace",
-                    I: Yqe,
-                    O: Hqe,
+                    I: Hqe,
+                    O: zqe,
                     kind: st.Unary
                 },
                 getManagedSkills: {
                     name: "GetManagedSkills",
-                    I: tRe,
-                    O: iRe,
+                    I: rRe,
+                    O: oRe,
                     kind: st.Unary
                 },
                 getCursorUserState: {
                     name: "GetCursorUserState",
-                    I: oRe,
-                    O: uRe,
+                    I: uRe,
+                    O: cRe,
                     kind: st.Unary
                 },
                 setJobData: {
                     name: "SetJobData",
-                    I: cRe,
-                    O: fRe,
+                    I: fRe,
+                    O: gRe,
                     kind: st.Unary
                 }
             }
         },
-        JLe = require("events"),
-        vLe = require("fs"),
-        ELe = require("node:events"),
-        NLe = require("node:stream"),
-        BLe = require("node:string_decoder"),
-        ILe = require("path"),
-        PLe = require("assert"),
-        qLe = require("buffer"),
-        RLe = require("zlib");
-    var LLe = s.t(RLe, 2);
-    const FLe = require("node:assert"),
-        OLe = require("node:crypto"),
-        bLe = require("node:fs/promises");
-    var CLe = Object.defineProperty,
-        ULe = "object" == typeof process && process ? process : {
+        ELe = require("events"),
+        NLe = require("fs"),
+        BLe = require("node:events"),
+        ILe = require("node:stream"),
+        PLe = require("node:string_decoder"),
+        qLe = require("path"),
+        RLe = require("assert"),
+        LLe = require("buffer"),
+        FLe = require("zlib");
+    var OLe = s.t(FLe, 2);
+    const bLe = require("node:assert"),
+        CLe = require("node:crypto"),
+        ULe = require("node:fs/promises");
+    var ALe = Object.defineProperty,
+        xLe = "object" == typeof process && process ? process : {
             stdout: null,
             stderr: null
         },
-        ALe = e => !!e && "object" == typeof e && (e instanceof SFe || e instanceof NLe || xLe(e) || DLe(e)),
-        xLe = e => !!e && "object" == typeof e && e instanceof ELe.EventEmitter && "function" == typeof e.pipe && e.pipe !== NLe.Writable.prototype.pipe,
-        DLe = e => !!e && "object" == typeof e && e instanceof ELe.EventEmitter && "function" == typeof e.write && "function" == typeof e.end,
-        MLe = Symbol("EOF"),
-        GLe = Symbol("maybeEmitEnd"),
-        YLe = Symbol("emittedEnd"),
-        VLe = Symbol("emittingEnd"),
-        HLe = Symbol("emittedError"),
-        KLe = Symbol("closed"),
-        zLe = Symbol("read"),
-        WLe = Symbol("flush"),
-        jLe = Symbol("flushChunk"),
-        XLe = Symbol("encoding"),
-        $Le = Symbol("decoder"),
-        QLe = Symbol("flowing"),
-        ZLe = Symbol("paused"),
-        eFe = Symbol("resume"),
-        tFe = Symbol("buffer"),
-        nFe = Symbol("pipes"),
-        rFe = Symbol("bufferLength"),
-        sFe = Symbol("bufferPush"),
-        iFe = Symbol("bufferShift"),
-        aFe = Symbol("objectMode"),
-        oFe = Symbol("destroyed"),
-        lFe = Symbol("error"),
-        uFe = Symbol("emitData"),
-        mFe = Symbol("emitEnd"),
-        cFe = Symbol("emitEnd2"),
-        dFe = Symbol("async"),
-        fFe = Symbol("abort"),
-        pFe = Symbol("aborted"),
-        gFe = Symbol("signal"),
-        TFe = Symbol("dataListeners"),
-        hFe = Symbol("discarded"),
-        _Fe = e => Promise.resolve().then(e),
-        yFe = e => e(),
-        wFe = class {
+        DLe = e => !!e && "object" == typeof e && (e instanceof vFe || e instanceof ILe || MLe(e) || GLe(e)),
+        MLe = e => !!e && "object" == typeof e && e instanceof BLe.EventEmitter && "function" == typeof e.pipe && e.pipe !== ILe.Writable.prototype.pipe,
+        GLe = e => !!e && "object" == typeof e && e instanceof BLe.EventEmitter && "function" == typeof e.write && "function" == typeof e.end,
+        YLe = Symbol("EOF"),
+        VLe = Symbol("maybeEmitEnd"),
+        HLe = Symbol("emittedEnd"),
+        KLe = Symbol("emittingEnd"),
+        zLe = Symbol("emittedError"),
+        WLe = Symbol("closed"),
+        jLe = Symbol("read"),
+        XLe = Symbol("flush"),
+        $Le = Symbol("flushChunk"),
+        QLe = Symbol("encoding"),
+        ZLe = Symbol("decoder"),
+        eFe = Symbol("flowing"),
+        tFe = Symbol("paused"),
+        nFe = Symbol("resume"),
+        rFe = Symbol("buffer"),
+        sFe = Symbol("pipes"),
+        iFe = Symbol("bufferLength"),
+        aFe = Symbol("bufferPush"),
+        oFe = Symbol("bufferShift"),
+        lFe = Symbol("objectMode"),
+        uFe = Symbol("destroyed"),
+        mFe = Symbol("error"),
+        cFe = Symbol("emitData"),
+        dFe = Symbol("emitEnd"),
+        fFe = Symbol("emitEnd2"),
+        pFe = Symbol("async"),
+        gFe = Symbol("abort"),
+        TFe = Symbol("aborted"),
+        hFe = Symbol("signal"),
+        _Fe = Symbol("dataListeners"),
+        yFe = Symbol("discarded"),
+        wFe = e => Promise.resolve().then(e),
+        kFe = e => e(),
+        SFe = class {
             src;
             dest;
             opts;
             ondrain;
             constructor(e, t, n) {
-                this.src = e, this.dest = t, this.opts = n, this.ondrain = () => e[eFe](), this.dest.on("drain", this.ondrain)
+                this.src = e, this.dest = t, this.opts = n, this.ondrain = () => e[nFe](), this.dest.on("drain", this.ondrain)
             }
             unpipe() {
                 this.dest.removeListener("drain", this.ondrain)
@@ -112041,7 +112099,7 @@
                 this.unpipe(), this.opts.end && this.dest.end()
             }
         },
-        kFe = class extends wFe {
+        JFe = class extends SFe {
             unpipe() {
                 this.src.removeListener("error", this.proxyErrors), super.unpipe()
             }
@@ -112049,47 +112107,47 @@
                 super(e, t, n), this.proxyErrors = e => this.dest.emit("error", e), e.on("error", this.proxyErrors)
             }
         },
-        SFe = class extends ELe.EventEmitter {
-            [QLe] = !1;
-            [ZLe] = !1;
-            [nFe] = [];
-            [tFe] = [];
-            [aFe];
-            [XLe];
-            [dFe];
-            [$Le];
-            [MLe] = !1;
+        vFe = class extends BLe.EventEmitter {
+            [eFe] = !1;
+            [tFe] = !1;
+            [sFe] = [];
+            [rFe] = [];
+            [lFe];
+            [QLe];
+            [pFe];
+            [ZLe];
             [YLe] = !1;
-            [VLe] = !1;
+            [HLe] = !1;
             [KLe] = !1;
-            [HLe] = null;
-            [rFe] = 0;
-            [oFe] = !1;
-            [gFe];
-            [pFe] = !1;
-            [TFe] = 0;
-            [hFe] = !1;
+            [WLe] = !1;
+            [zLe] = null;
+            [iFe] = 0;
+            [uFe] = !1;
+            [hFe];
+            [TFe] = !1;
+            [_Fe] = 0;
+            [yFe] = !1;
             writable = !0;
             readable = !0;
             constructor(...e) {
                 let t = e[0] || {};
                 if (super(), t.objectMode && "string" == typeof t.encoding) throw new TypeError("Encoding and objectMode may not be used together");
                 var n;
-                t.objectMode ? (this[aFe] = !0, this[XLe] = null) : !(n = t).objectMode && n.encoding && "buffer" !== n.encoding ? (this[XLe] = t.encoding, this[aFe] = !1) : (this[aFe] = !1, this[XLe] = null), this[dFe] = !!t.async, this[$Le] = this[XLe] ? new BLe.StringDecoder(this[XLe]) : null, t && !0 === t.debugExposeBuffer && Object.defineProperty(this, "buffer", {
-                    get: () => this[tFe]
+                t.objectMode ? (this[lFe] = !0, this[QLe] = null) : !(n = t).objectMode && n.encoding && "buffer" !== n.encoding ? (this[QLe] = t.encoding, this[lFe] = !1) : (this[lFe] = !1, this[QLe] = null), this[pFe] = !!t.async, this[ZLe] = this[QLe] ? new PLe.StringDecoder(this[QLe]) : null, t && !0 === t.debugExposeBuffer && Object.defineProperty(this, "buffer", {
+                    get: () => this[rFe]
                 }), t && !0 === t.debugExposePipes && Object.defineProperty(this, "pipes", {
-                    get: () => this[nFe]
+                    get: () => this[sFe]
                 });
                 let {
                     signal: r
                 } = t;
-                r && (this[gFe] = r, r.aborted ? this[fFe]() : r.addEventListener("abort", () => this[fFe]()))
+                r && (this[hFe] = r, r.aborted ? this[gFe]() : r.addEventListener("abort", () => this[gFe]()))
             }
             get bufferLength() {
-                return this[rFe]
+                return this[iFe]
             }
             get encoding() {
-                return this[XLe]
+                return this[QLe]
             }
             set encoding(e) {
                 throw new Error("Encoding must be set at instantiation time")
@@ -112098,102 +112156,102 @@
                 throw new Error("Encoding must be set at instantiation time")
             }
             get objectMode() {
-                return this[aFe]
+                return this[lFe]
             }
             set objectMode(e) {
                 throw new Error("objectMode must be set at instantiation time")
             }
             get async() {
-                return this[dFe]
+                return this[pFe]
             }
             set async(e) {
-                this[dFe] = this[dFe] || !!e
-            } [fFe]() {
-                this[pFe] = !0, this.emit("abort", this[gFe]?.reason), this.destroy(this[gFe]?.reason)
+                this[pFe] = this[pFe] || !!e
+            } [gFe]() {
+                this[TFe] = !0, this.emit("abort", this[hFe]?.reason), this.destroy(this[hFe]?.reason)
             }
             get aborted() {
-                return this[pFe]
+                return this[TFe]
             }
             set aborted(e) {}
             write(e, t, n) {
-                if (this[pFe]) return !1;
-                if (this[MLe]) throw new Error("write after end");
-                if (this[oFe]) return this.emit("error", Object.assign(new Error("Cannot call write after a stream was destroyed"), {
+                if (this[TFe]) return !1;
+                if (this[YLe]) throw new Error("write after end");
+                if (this[uFe]) return this.emit("error", Object.assign(new Error("Cannot call write after a stream was destroyed"), {
                     code: "ERR_STREAM_DESTROYED"
                 })), !0;
                 "function" == typeof t && (n = t, t = "utf8"), t || (t = "utf8");
-                let r = this[dFe] ? _Fe : yFe;
-                if (!this[aFe] && !Buffer.isBuffer(e))
+                let r = this[pFe] ? wFe : kFe;
+                if (!this[lFe] && !Buffer.isBuffer(e))
                     if (s = e, !Buffer.isBuffer(s) && ArrayBuffer.isView(s)) e = Buffer.from(e.buffer, e.byteOffset, e.byteLength);
                     else if ((e => e instanceof ArrayBuffer || !!e && "object" == typeof e && e.constructor && "ArrayBuffer" === e.constructor.name && e.byteLength >= 0)(e)) e = Buffer.from(e);
                 else if ("string" != typeof e) throw new Error("Non-contiguous data written to non-objectMode stream");
                 var s;
-                return this[aFe] ? (this[QLe] && 0 !== this[rFe] && this[WLe](!0), this[QLe] ? this.emit("data", e) : this[sFe](e), 0 !== this[rFe] && this.emit("readable"), n && r(n), this[QLe]) : e.length ? ("string" == typeof e && !(t === this[XLe] && !this[$Le]?.lastNeed) && (e = Buffer.from(e, t)), Buffer.isBuffer(e) && this[XLe] && (e = this[$Le].write(e)), this[QLe] && 0 !== this[rFe] && this[WLe](!0), this[QLe] ? this.emit("data", e) : this[sFe](e), 0 !== this[rFe] && this.emit("readable"), n && r(n), this[QLe]) : (0 !== this[rFe] && this.emit("readable"), n && r(n), this[QLe])
+                return this[lFe] ? (this[eFe] && 0 !== this[iFe] && this[XLe](!0), this[eFe] ? this.emit("data", e) : this[aFe](e), 0 !== this[iFe] && this.emit("readable"), n && r(n), this[eFe]) : e.length ? ("string" == typeof e && !(t === this[QLe] && !this[ZLe]?.lastNeed) && (e = Buffer.from(e, t)), Buffer.isBuffer(e) && this[QLe] && (e = this[ZLe].write(e)), this[eFe] && 0 !== this[iFe] && this[XLe](!0), this[eFe] ? this.emit("data", e) : this[aFe](e), 0 !== this[iFe] && this.emit("readable"), n && r(n), this[eFe]) : (0 !== this[iFe] && this.emit("readable"), n && r(n), this[eFe])
             }
             read(e) {
-                if (this[oFe]) return null;
-                if (this[hFe] = !1, 0 === this[rFe] || 0 === e || e && e > this[rFe]) return this[GLe](), null;
-                this[aFe] && (e = null), this[tFe].length > 1 && !this[aFe] && (this[tFe] = [this[XLe] ? this[tFe].join("") : Buffer.concat(this[tFe], this[rFe])]);
-                let t = this[zLe](e || null, this[tFe][0]);
-                return this[GLe](), t
-            } [zLe](e, t) {
-                if (this[aFe]) this[iFe]();
+                if (this[uFe]) return null;
+                if (this[yFe] = !1, 0 === this[iFe] || 0 === e || e && e > this[iFe]) return this[VLe](), null;
+                this[lFe] && (e = null), this[rFe].length > 1 && !this[lFe] && (this[rFe] = [this[QLe] ? this[rFe].join("") : Buffer.concat(this[rFe], this[iFe])]);
+                let t = this[jLe](e || null, this[rFe][0]);
+                return this[VLe](), t
+            } [jLe](e, t) {
+                if (this[lFe]) this[oFe]();
                 else {
                     let n = t;
-                    e === n.length || null === e ? this[iFe]() : "string" == typeof n ? (this[tFe][0] = n.slice(e), t = n.slice(0, e), this[rFe] -= e) : (this[tFe][0] = n.subarray(e), t = n.subarray(0, e), this[rFe] -= e)
+                    e === n.length || null === e ? this[oFe]() : "string" == typeof n ? (this[rFe][0] = n.slice(e), t = n.slice(0, e), this[iFe] -= e) : (this[rFe][0] = n.subarray(e), t = n.subarray(0, e), this[iFe] -= e)
                 }
-                return this.emit("data", t), !this[tFe].length && !this[MLe] && this.emit("drain"), t
+                return this.emit("data", t), !this[rFe].length && !this[YLe] && this.emit("drain"), t
             }
             end(e, t, n) {
-                return "function" == typeof e && (n = e, e = void 0), "function" == typeof t && (n = t, t = "utf8"), void 0 !== e && this.write(e, t), n && this.once("end", n), this[MLe] = !0, this.writable = !1, (this[QLe] || !this[ZLe]) && this[GLe](), this
-            } [eFe]() {
-                this[oFe] || (!this[TFe] && !this[nFe].length && (this[hFe] = !0), this[ZLe] = !1, this[QLe] = !0, this.emit("resume"), this[tFe].length ? this[WLe]() : this[MLe] ? this[GLe]() : this.emit("drain"))
+                return "function" == typeof e && (n = e, e = void 0), "function" == typeof t && (n = t, t = "utf8"), void 0 !== e && this.write(e, t), n && this.once("end", n), this[YLe] = !0, this.writable = !1, (this[eFe] || !this[tFe]) && this[VLe](), this
+            } [nFe]() {
+                this[uFe] || (!this[_Fe] && !this[sFe].length && (this[yFe] = !0), this[tFe] = !1, this[eFe] = !0, this.emit("resume"), this[rFe].length ? this[XLe]() : this[YLe] ? this[VLe]() : this.emit("drain"))
             }
             resume() {
-                return this[eFe]()
+                return this[nFe]()
             }
             pause() {
-                this[QLe] = !1, this[ZLe] = !0, this[hFe] = !1
+                this[eFe] = !1, this[tFe] = !0, this[yFe] = !1
             }
             get destroyed() {
-                return this[oFe]
+                return this[uFe]
             }
             get flowing() {
-                return this[QLe]
+                return this[eFe]
             }
             get paused() {
-                return this[ZLe]
-            } [sFe](e) {
-                this[aFe] ? this[rFe] += 1 : this[rFe] += e.length, this[tFe].push(e)
-            } [iFe]() {
-                return this[aFe] ? this[rFe] -= 1 : this[rFe] -= this[tFe][0].length, this[tFe].shift()
-            } [WLe](e = !1) {
-                do {} while (this[jLe](this[iFe]()) && this[tFe].length);
-                !e && !this[tFe].length && !this[MLe] && this.emit("drain")
-            } [jLe](e) {
-                return this.emit("data", e), this[QLe]
+                return this[tFe]
+            } [aFe](e) {
+                this[lFe] ? this[iFe] += 1 : this[iFe] += e.length, this[rFe].push(e)
+            } [oFe]() {
+                return this[lFe] ? this[iFe] -= 1 : this[iFe] -= this[rFe][0].length, this[rFe].shift()
+            } [XLe](e = !1) {
+                do {} while (this[$Le](this[oFe]()) && this[rFe].length);
+                !e && !this[rFe].length && !this[YLe] && this.emit("drain")
+            } [$Le](e) {
+                return this.emit("data", e), this[eFe]
             }
             pipe(e, t) {
-                if (this[oFe]) return e;
-                this[hFe] = !1;
-                let n = this[YLe];
-                return t = t || {}, e === ULe.stdout || e === ULe.stderr ? t.end = !1 : t.end = !1 !== t.end, t.proxyErrors = !!t.proxyErrors, n ? t.end && e.end() : (this[nFe].push(t.proxyErrors ? new kFe(this, e, t) : new wFe(this, e, t)), this[dFe] ? _Fe(() => this[eFe]()) : this[eFe]()), e
+                if (this[uFe]) return e;
+                this[yFe] = !1;
+                let n = this[HLe];
+                return t = t || {}, e === xLe.stdout || e === xLe.stderr ? t.end = !1 : t.end = !1 !== t.end, t.proxyErrors = !!t.proxyErrors, n ? t.end && e.end() : (this[sFe].push(t.proxyErrors ? new JFe(this, e, t) : new SFe(this, e, t)), this[pFe] ? wFe(() => this[nFe]()) : this[nFe]()), e
             }
             unpipe(e) {
-                let t = this[nFe].find(t => t.dest === e);
-                t && (1 === this[nFe].length ? (this[QLe] && 0 === this[TFe] && (this[QLe] = !1), this[nFe] = []) : this[nFe].splice(this[nFe].indexOf(t), 1), t.unpipe())
+                let t = this[sFe].find(t => t.dest === e);
+                t && (1 === this[sFe].length ? (this[eFe] && 0 === this[_Fe] && (this[eFe] = !1), this[sFe] = []) : this[sFe].splice(this[sFe].indexOf(t), 1), t.unpipe())
             }
             addListener(e, t) {
                 return this.on(e, t)
             }
             on(e, t) {
                 let n = super.on(e, t);
-                if ("data" === e) this[hFe] = !1, this[TFe]++, !this[nFe].length && !this[QLe] && this[eFe]();
-                else if ("readable" === e && 0 !== this[rFe]) super.emit("readable");
-                else if ("end" !== (r = e) && "finish" !== r && "prefinish" !== r || !this[YLe]) {
-                    if ("error" === e && this[HLe]) {
+                if ("data" === e) this[yFe] = !1, this[_Fe]++, !this[sFe].length && !this[eFe] && this[nFe]();
+                else if ("readable" === e && 0 !== this[iFe]) super.emit("readable");
+                else if ("end" !== (r = e) && "finish" !== r && "prefinish" !== r || !this[HLe]) {
+                    if ("error" === e && this[zLe]) {
                         let e = t;
-                        this[dFe] ? _Fe(() => e.call(this, this[HLe])) : e.call(this, this[HLe])
+                        this[pFe] ? wFe(() => e.call(this, this[zLe])) : e.call(this, this[zLe])
                     }
                 } else super.emit(e), this.removeAllListeners(e);
                 var r;
@@ -112204,57 +112262,57 @@
             }
             off(e, t) {
                 let n = super.off(e, t);
-                return "data" === e && (this[TFe] = this.listeners("data").length, 0 === this[TFe] && !this[hFe] && !this[nFe].length && (this[QLe] = !1)), n
+                return "data" === e && (this[_Fe] = this.listeners("data").length, 0 === this[_Fe] && !this[yFe] && !this[sFe].length && (this[eFe] = !1)), n
             }
             removeAllListeners(e) {
                 let t = super.removeAllListeners(e);
-                return ("data" === e || void 0 === e) && (this[TFe] = 0, !this[hFe] && !this[nFe].length && (this[QLe] = !1)), t
+                return ("data" === e || void 0 === e) && (this[_Fe] = 0, !this[yFe] && !this[sFe].length && (this[eFe] = !1)), t
             }
             get emittedEnd() {
-                return this[YLe]
-            } [GLe]() {
-                !this[VLe] && !this[YLe] && !this[oFe] && 0 === this[tFe].length && this[MLe] && (this[VLe] = !0, this.emit("end"), this.emit("prefinish"), this.emit("finish"), this[KLe] && this.emit("close"), this[VLe] = !1)
+                return this[HLe]
+            } [VLe]() {
+                !this[KLe] && !this[HLe] && !this[uFe] && 0 === this[rFe].length && this[YLe] && (this[KLe] = !0, this.emit("end"), this.emit("prefinish"), this.emit("finish"), this[WLe] && this.emit("close"), this[KLe] = !1)
             }
             emit(e, ...t) {
                 let n = t[0];
-                if ("error" !== e && "close" !== e && e !== oFe && this[oFe]) return !1;
-                if ("data" === e) return !(!this[aFe] && !n) && (this[dFe] ? (_Fe(() => this[uFe](n)), !0) : this[uFe](n));
-                if ("end" === e) return this[mFe]();
+                if ("error" !== e && "close" !== e && e !== uFe && this[uFe]) return !1;
+                if ("data" === e) return !(!this[lFe] && !n) && (this[pFe] ? (wFe(() => this[cFe](n)), !0) : this[cFe](n));
+                if ("end" === e) return this[dFe]();
                 if ("close" === e) {
-                    if (this[KLe] = !0, !this[YLe] && !this[oFe]) return !1;
+                    if (this[WLe] = !0, !this[HLe] && !this[uFe]) return !1;
                     let e = super.emit("close");
                     return this.removeAllListeners("close"), e
                 }
                 if ("error" === e) {
-                    this[HLe] = n, super.emit(lFe, n);
-                    let e = !(this[gFe] && !this.listeners("error").length) && super.emit("error", n);
-                    return this[GLe](), e
+                    this[zLe] = n, super.emit(mFe, n);
+                    let e = !(this[hFe] && !this.listeners("error").length) && super.emit("error", n);
+                    return this[VLe](), e
                 }
                 if ("resume" === e) {
                     let e = super.emit("resume");
-                    return this[GLe](), e
+                    return this[VLe](), e
                 }
                 if ("finish" === e || "prefinish" === e) {
                     let t = super.emit(e);
                     return this.removeAllListeners(e), t
                 }
                 let r = super.emit(e, ...t);
-                return this[GLe](), r
-            } [uFe](e) {
-                for (let t of this[nFe]) !1 === t.dest.write(e) && this.pause();
-                let t = !this[hFe] && super.emit("data", e);
-                return this[GLe](), t
-            } [mFe]() {
-                return !this[YLe] && (this[YLe] = !0, this.readable = !1, this[dFe] ? (_Fe(() => this[cFe]()), !0) : this[cFe]())
-            } [cFe]() {
-                if (this[$Le]) {
-                    let e = this[$Le].end();
+                return this[VLe](), r
+            } [cFe](e) {
+                for (let t of this[sFe]) !1 === t.dest.write(e) && this.pause();
+                let t = !this[yFe] && super.emit("data", e);
+                return this[VLe](), t
+            } [dFe]() {
+                return !this[HLe] && (this[HLe] = !0, this.readable = !1, this[pFe] ? (wFe(() => this[fFe]()), !0) : this[fFe]())
+            } [fFe]() {
+                if (this[ZLe]) {
+                    let e = this[ZLe].end();
                     if (e) {
-                        for (let t of this[nFe]) t.dest.write(e);
-                        this[hFe] || super.emit("data", e)
+                        for (let t of this[sFe]) t.dest.write(e);
+                        this[yFe] || super.emit("data", e)
                     }
                 }
-                for (let e of this[nFe]) e.end();
+                for (let e of this[sFe]) e.end();
                 let e = super.emit("end");
                 return this.removeAllListeners("end"), e
             }
@@ -112262,23 +112320,23 @@
                 let e = Object.assign([], {
                     dataLength: 0
                 });
-                this[aFe] || (e.dataLength = 0);
+                this[lFe] || (e.dataLength = 0);
                 let t = this.promise();
                 return this.on("data", t => {
-                    e.push(t), this[aFe] || (e.dataLength += t.length)
+                    e.push(t), this[lFe] || (e.dataLength += t.length)
                 }), await t, e
             }
             async concat() {
-                if (this[aFe]) throw new Error("cannot concat in objectMode");
+                if (this[lFe]) throw new Error("cannot concat in objectMode");
                 let e = await this.collect();
-                return this[XLe] ? e.join("") : Buffer.concat(e, e.dataLength)
+                return this[QLe] ? e.join("") : Buffer.concat(e, e.dataLength)
             }
             async promise() {
                 return new Promise((e, t) => {
-                    this.on(oFe, () => t(new Error("stream destroyed"))), this.on("error", e => t(e)), this.on("end", () => e())
+                    this.on(uFe, () => t(new Error("stream destroyed"))), this.on("error", e => t(e)), this.on("end", () => e())
                 })
             } [Symbol.asyncIterator]() {
-                this[hFe] = !1;
+                this[yFe] = !1;
                 let e = !1,
                     t = async () => (this.pause(), e = !0, {
                         value: void 0,
@@ -112292,25 +112350,25 @@
                             done: !1,
                             value: n
                         });
-                        if (this[MLe]) return t();
+                        if (this[YLe]) return t();
                         let r, s, i = e => {
-                                this.off("data", a), this.off("end", o), this.off(oFe, l), t(), s(e)
+                                this.off("data", a), this.off("end", o), this.off(uFe, l), t(), s(e)
                             },
                             a = e => {
-                                this.off("error", i), this.off("end", o), this.off(oFe, l), this.pause(), r({
+                                this.off("error", i), this.off("end", o), this.off(uFe, l), this.pause(), r({
                                     value: e,
-                                    done: !!this[MLe]
+                                    done: !!this[YLe]
                                 })
                             },
                             o = () => {
-                                this.off("error", i), this.off("data", a), this.off(oFe, l), t(), r({
+                                this.off("error", i), this.off("data", a), this.off(uFe, l), t(), r({
                                     done: !0,
                                     value: void 0
                                 })
                             },
                             l = () => i(new Error("stream destroyed"));
                         return new Promise((e, t) => {
-                            s = t, r = e, this.once(oFe, l), this.once("error", i), this.once("end", o), this.once("data", a)
+                            s = t, r = e, this.once(uFe, l), this.once("error", i), this.once("end", o), this.once("data", a)
                         })
                     },
                     throw: t,
@@ -112321,13 +112379,13 @@
                     [Symbol.asyncDispose]: async () => {}
                 }
             } [Symbol.iterator]() {
-                this[hFe] = !1;
+                this[yFe] = !1;
                 let e = !1,
-                    t = () => (this.pause(), this.off(lFe, t), this.off(oFe, t), this.off("end", t), e = !0, {
+                    t = () => (this.pause(), this.off(mFe, t), this.off(uFe, t), this.off("end", t), e = !0, {
                         done: !0,
                         value: void 0
                     });
-                return this.once("end", t), this.once(lFe, t), this.once(oFe, t), {
+                return this.once("end", t), this.once(mFe, t), this.once(uFe, t), {
                     next: () => {
                         if (e) return t();
                         let n = this.read();
@@ -112345,90 +112403,90 @@
                 }
             }
             destroy(e) {
-                return this[oFe] ? (e ? this.emit("error", e) : this.emit(oFe), this) : (this[oFe] = !0, this[hFe] = !0, this[tFe].length = 0, this[rFe] = 0, "function" == typeof this.close && !this[KLe] && this.close(), e ? this.emit("error", e) : this.emit(oFe), this)
+                return this[uFe] ? (e ? this.emit("error", e) : this.emit(uFe), this) : (this[uFe] = !0, this[yFe] = !0, this[rFe].length = 0, this[iFe] = 0, "function" == typeof this.close && !this[WLe] && this.close(), e ? this.emit("error", e) : this.emit(uFe), this)
             }
             static get isStream() {
-                return ALe
+                return DLe
             }
         },
-        JFe = vLe.writev,
-        vFe = Symbol("_autoClose"),
-        EFe = Symbol("_close"),
-        NFe = Symbol("_ended"),
-        BFe = Symbol("_fd"),
-        IFe = Symbol("_finished"),
-        PFe = Symbol("_flags"),
-        qFe = Symbol("_flush"),
-        RFe = Symbol("_handleChunk"),
-        LFe = Symbol("_makeBuf"),
-        FFe = Symbol("_mode"),
-        OFe = Symbol("_needDrain"),
-        bFe = Symbol("_onerror"),
-        CFe = Symbol("_onopen"),
-        UFe = Symbol("_onread"),
-        AFe = Symbol("_onwrite"),
-        xFe = Symbol("_open"),
-        DFe = Symbol("_path"),
-        MFe = Symbol("_pos"),
-        GFe = Symbol("_queue"),
-        YFe = Symbol("_read"),
-        VFe = Symbol("_readSize"),
-        HFe = Symbol("_reading"),
-        KFe = Symbol("_remain"),
-        zFe = Symbol("_size"),
-        WFe = Symbol("_write"),
-        jFe = Symbol("_writing"),
-        XFe = Symbol("_defaultFlag"),
-        $Fe = Symbol("_errored"),
-        QFe = class extends SFe {
-            [$Fe] = !1;
-            [BFe];
-            [DFe];
-            [VFe];
-            [HFe] = !1;
-            [zFe];
+        EFe = NLe.writev,
+        NFe = Symbol("_autoClose"),
+        BFe = Symbol("_close"),
+        IFe = Symbol("_ended"),
+        PFe = Symbol("_fd"),
+        qFe = Symbol("_finished"),
+        RFe = Symbol("_flags"),
+        LFe = Symbol("_flush"),
+        FFe = Symbol("_handleChunk"),
+        OFe = Symbol("_makeBuf"),
+        bFe = Symbol("_mode"),
+        CFe = Symbol("_needDrain"),
+        UFe = Symbol("_onerror"),
+        AFe = Symbol("_onopen"),
+        xFe = Symbol("_onread"),
+        DFe = Symbol("_onwrite"),
+        MFe = Symbol("_open"),
+        GFe = Symbol("_path"),
+        YFe = Symbol("_pos"),
+        VFe = Symbol("_queue"),
+        HFe = Symbol("_read"),
+        KFe = Symbol("_readSize"),
+        zFe = Symbol("_reading"),
+        WFe = Symbol("_remain"),
+        jFe = Symbol("_size"),
+        XFe = Symbol("_write"),
+        $Fe = Symbol("_writing"),
+        QFe = Symbol("_defaultFlag"),
+        ZFe = Symbol("_errored"),
+        eOe = class extends vFe {
+            [ZFe] = !1;
+            [PFe];
+            [GFe];
             [KFe];
-            [vFe];
+            [zFe] = !1;
+            [jFe];
+            [WFe];
+            [NFe];
             constructor(e, t) {
                 if (super(t = t || {}), this.readable = !0, this.writable = !1, "string" != typeof e) throw new TypeError("path must be a string");
-                this[$Fe] = !1, this[BFe] = "number" == typeof t.fd ? t.fd : void 0, this[DFe] = e, this[VFe] = t.readSize || 16777216, this[HFe] = !1, this[zFe] = "number" == typeof t.size ? t.size : 1 / 0, this[KFe] = this[zFe], this[vFe] = "boolean" != typeof t.autoClose || t.autoClose, "number" == typeof this[BFe] ? this[YFe]() : this[xFe]()
+                this[ZFe] = !1, this[PFe] = "number" == typeof t.fd ? t.fd : void 0, this[GFe] = e, this[KFe] = t.readSize || 16777216, this[zFe] = !1, this[jFe] = "number" == typeof t.size ? t.size : 1 / 0, this[WFe] = this[jFe], this[NFe] = "boolean" != typeof t.autoClose || t.autoClose, "number" == typeof this[PFe] ? this[HFe]() : this[MFe]()
             }
             get fd() {
-                return this[BFe]
+                return this[PFe]
             }
             get path() {
-                return this[DFe]
+                return this[GFe]
             }
             write() {
                 throw new TypeError("this is a readable stream")
             }
             end() {
                 throw new TypeError("this is a readable stream")
-            } [xFe]() {
-                vLe.open(this[DFe], "r", (e, t) => this[CFe](e, t))
-            } [CFe](e, t) {
-                e ? this[bFe](e) : (this[BFe] = t, this.emit("open", t), this[YFe]())
-            } [LFe]() {
-                return Buffer.allocUnsafe(Math.min(this[VFe], this[KFe]))
-            } [YFe]() {
-                if (!this[HFe]) {
-                    this[HFe] = !0;
-                    let e = this[LFe]();
-                    if (0 === e.length) return process.nextTick(() => this[UFe](null, 0, e));
-                    vLe.read(this[BFe], e, 0, e.length, null, (e, t, n) => this[UFe](e, t, n))
+            } [MFe]() {
+                NLe.open(this[GFe], "r", (e, t) => this[AFe](e, t))
+            } [AFe](e, t) {
+                e ? this[UFe](e) : (this[PFe] = t, this.emit("open", t), this[HFe]())
+            } [OFe]() {
+                return Buffer.allocUnsafe(Math.min(this[KFe], this[WFe]))
+            } [HFe]() {
+                if (!this[zFe]) {
+                    this[zFe] = !0;
+                    let e = this[OFe]();
+                    if (0 === e.length) return process.nextTick(() => this[xFe](null, 0, e));
+                    NLe.read(this[PFe], e, 0, e.length, null, (e, t, n) => this[xFe](e, t, n))
                 }
-            } [UFe](e, t, n) {
-                this[HFe] = !1, e ? this[bFe](e) : this[RFe](t, n) && this[YFe]()
-            } [EFe]() {
-                if (this[vFe] && "number" == typeof this[BFe]) {
-                    let e = this[BFe];
-                    this[BFe] = void 0, vLe.close(e, e => e ? this.emit("error", e) : this.emit("close"))
+            } [xFe](e, t, n) {
+                this[zFe] = !1, e ? this[UFe](e) : this[FFe](t, n) && this[HFe]()
+            } [BFe]() {
+                if (this[NFe] && "number" == typeof this[PFe]) {
+                    let e = this[PFe];
+                    this[PFe] = void 0, NLe.close(e, e => e ? this.emit("error", e) : this.emit("close"))
                 }
-            } [bFe](e) {
-                this[HFe] = !0, this[EFe](), this.emit("error", e)
-            } [RFe](e, t) {
+            } [UFe](e) {
+                this[zFe] = !0, this[BFe](), this.emit("error", e)
+            } [FFe](e, t) {
                 let n = !1;
-                return this[KFe] -= e, e > 0 && (n = super.write(e < t.length ? t.subarray(0, e) : t)), (0 === e || this[KFe] <= 0) && (n = !1, this[EFe](), super.end()), n
+                return this[WFe] -= e, e > 0 && (n = super.write(e < t.length ? t.subarray(0, e) : t)), (0 === e || this[WFe] <= 0) && (n = !1, this[BFe](), super.end()), n
             }
             emit(e, ...t) {
                 switch (e) {
@@ -112436,134 +112494,134 @@
                     case "finish":
                         return !1;
                     case "drain":
-                        return "number" == typeof this[BFe] && this[YFe](), !1;
+                        return "number" == typeof this[PFe] && this[HFe](), !1;
                     case "error":
-                        return !this[$Fe] && (this[$Fe] = !0, super.emit(e, ...t));
+                        return !this[ZFe] && (this[ZFe] = !0, super.emit(e, ...t));
                     default:
                         return super.emit(e, ...t)
                 }
             }
         },
-        ZFe = class extends QFe {
-            [xFe]() {
+        tOe = class extends eOe {
+            [MFe]() {
                 let e = !0;
                 try {
-                    this[CFe](null, vLe.openSync(this[DFe], "r")), e = !1
+                    this[AFe](null, NLe.openSync(this[GFe], "r")), e = !1
                 } finally {
-                    e && this[EFe]()
+                    e && this[BFe]()
                 }
-            } [YFe]() {
+            } [HFe]() {
                 let e = !0;
                 try {
-                    if (!this[HFe]) {
-                        for (this[HFe] = !0;;) {
-                            let e = this[LFe](),
-                                t = 0 === e.length ? 0 : vLe.readSync(this[BFe], e, 0, e.length, null);
-                            if (!this[RFe](t, e)) break
+                    if (!this[zFe]) {
+                        for (this[zFe] = !0;;) {
+                            let e = this[OFe](),
+                                t = 0 === e.length ? 0 : NLe.readSync(this[PFe], e, 0, e.length, null);
+                            if (!this[FFe](t, e)) break
                         }
-                        this[HFe] = !1
+                        this[zFe] = !1
                     }
                     e = !1
                 } finally {
-                    e && this[EFe]()
+                    e && this[BFe]()
                 }
-            } [EFe]() {
-                if (this[vFe] && "number" == typeof this[BFe]) {
-                    let e = this[BFe];
-                    this[BFe] = void 0, vLe.closeSync(e), this.emit("close")
+            } [BFe]() {
+                if (this[NFe] && "number" == typeof this[PFe]) {
+                    let e = this[PFe];
+                    this[PFe] = void 0, NLe.closeSync(e), this.emit("close")
                 }
             }
         },
-        eOe = class extends JLe {
+        nOe = class extends ELe {
             readable = !1;
             writable = !0;
+            [ZFe] = !1;
             [$Fe] = !1;
-            [jFe] = !1;
-            [NFe] = !1;
-            [GFe] = [];
-            [OFe] = !1;
-            [DFe];
-            [FFe];
-            [vFe];
-            [BFe];
-            [XFe];
-            [PFe];
             [IFe] = !1;
-            [MFe];
+            [VFe] = [];
+            [CFe] = !1;
+            [GFe];
+            [bFe];
+            [NFe];
+            [PFe];
+            [QFe];
+            [RFe];
+            [qFe] = !1;
+            [YFe];
             constructor(e, t) {
-                super(t = t || {}), this[DFe] = e, this[BFe] = "number" == typeof t.fd ? t.fd : void 0, this[FFe] = void 0 === t.mode ? 438 : t.mode, this[MFe] = "number" == typeof t.start ? t.start : void 0, this[vFe] = "boolean" != typeof t.autoClose || t.autoClose;
-                let n = void 0 !== this[MFe] ? "r+" : "w";
-                this[XFe] = void 0 === t.flags, this[PFe] = void 0 === t.flags ? n : t.flags, void 0 === this[BFe] && this[xFe]()
+                super(t = t || {}), this[GFe] = e, this[PFe] = "number" == typeof t.fd ? t.fd : void 0, this[bFe] = void 0 === t.mode ? 438 : t.mode, this[YFe] = "number" == typeof t.start ? t.start : void 0, this[NFe] = "boolean" != typeof t.autoClose || t.autoClose;
+                let n = void 0 !== this[YFe] ? "r+" : "w";
+                this[QFe] = void 0 === t.flags, this[RFe] = void 0 === t.flags ? n : t.flags, void 0 === this[PFe] && this[MFe]()
             }
             emit(e, ...t) {
                 if ("error" === e) {
-                    if (this[$Fe]) return !1;
-                    this[$Fe] = !0
+                    if (this[ZFe]) return !1;
+                    this[ZFe] = !0
                 }
                 return super.emit(e, ...t)
             }
             get fd() {
-                return this[BFe]
+                return this[PFe]
             }
             get path() {
-                return this[DFe]
-            } [bFe](e) {
-                this[EFe](), this[jFe] = !0, this.emit("error", e)
-            } [xFe]() {
-                vLe.open(this[DFe], this[PFe], this[FFe], (e, t) => this[CFe](e, t))
-            } [CFe](e, t) {
-                this[XFe] && "r+" === this[PFe] && e && "ENOENT" === e.code ? (this[PFe] = "w", this[xFe]()) : e ? this[bFe](e) : (this[BFe] = t, this.emit("open", t), this[jFe] || this[qFe]())
+                return this[GFe]
+            } [UFe](e) {
+                this[BFe](), this[$Fe] = !0, this.emit("error", e)
+            } [MFe]() {
+                NLe.open(this[GFe], this[RFe], this[bFe], (e, t) => this[AFe](e, t))
+            } [AFe](e, t) {
+                this[QFe] && "r+" === this[RFe] && e && "ENOENT" === e.code ? (this[RFe] = "w", this[MFe]()) : e ? this[UFe](e) : (this[PFe] = t, this.emit("open", t), this[$Fe] || this[LFe]())
             }
             end(e, t) {
-                return e && this.write(e, t), this[NFe] = !0, !this[jFe] && !this[GFe].length && "number" == typeof this[BFe] && this[AFe](null, 0), this
+                return e && this.write(e, t), this[IFe] = !0, !this[$Fe] && !this[VFe].length && "number" == typeof this[PFe] && this[DFe](null, 0), this
             }
             write(e, t) {
-                return "string" == typeof e && (e = Buffer.from(e, t)), this[NFe] ? (this.emit("error", new Error("write() after end()")), !1) : void 0 === this[BFe] || this[jFe] || this[GFe].length ? (this[GFe].push(e), this[OFe] = !0, !1) : (this[jFe] = !0, this[WFe](e), !0)
-            } [WFe](e) {
-                vLe.write(this[BFe], e, 0, e.length, this[MFe], (e, t) => this[AFe](e, t))
-            } [AFe](e, t) {
-                e ? this[bFe](e) : (void 0 !== this[MFe] && "number" == typeof t && (this[MFe] += t), this[GFe].length ? this[qFe]() : (this[jFe] = !1, this[NFe] && !this[IFe] ? (this[IFe] = !0, this[EFe](), this.emit("finish")) : this[OFe] && (this[OFe] = !1, this.emit("drain"))))
-            } [qFe]() {
-                if (0 === this[GFe].length) this[NFe] && this[AFe](null, 0);
-                else if (1 === this[GFe].length) this[WFe](this[GFe].pop());
+                return "string" == typeof e && (e = Buffer.from(e, t)), this[IFe] ? (this.emit("error", new Error("write() after end()")), !1) : void 0 === this[PFe] || this[$Fe] || this[VFe].length ? (this[VFe].push(e), this[CFe] = !0, !1) : (this[$Fe] = !0, this[XFe](e), !0)
+            } [XFe](e) {
+                NLe.write(this[PFe], e, 0, e.length, this[YFe], (e, t) => this[DFe](e, t))
+            } [DFe](e, t) {
+                e ? this[UFe](e) : (void 0 !== this[YFe] && "number" == typeof t && (this[YFe] += t), this[VFe].length ? this[LFe]() : (this[$Fe] = !1, this[IFe] && !this[qFe] ? (this[qFe] = !0, this[BFe](), this.emit("finish")) : this[CFe] && (this[CFe] = !1, this.emit("drain"))))
+            } [LFe]() {
+                if (0 === this[VFe].length) this[IFe] && this[DFe](null, 0);
+                else if (1 === this[VFe].length) this[XFe](this[VFe].pop());
                 else {
-                    let e = this[GFe];
-                    this[GFe] = [], JFe(this[BFe], e, this[MFe], (e, t) => this[AFe](e, t))
+                    let e = this[VFe];
+                    this[VFe] = [], EFe(this[PFe], e, this[YFe], (e, t) => this[DFe](e, t))
                 }
-            } [EFe]() {
-                if (this[vFe] && "number" == typeof this[BFe]) {
-                    let e = this[BFe];
-                    this[BFe] = void 0, vLe.close(e, e => e ? this.emit("error", e) : this.emit("close"))
+            } [BFe]() {
+                if (this[NFe] && "number" == typeof this[PFe]) {
+                    let e = this[PFe];
+                    this[PFe] = void 0, NLe.close(e, e => e ? this.emit("error", e) : this.emit("close"))
                 }
             }
         },
-        tOe = class extends eOe {
-            [xFe]() {
+        rOe = class extends nOe {
+            [MFe]() {
                 let e;
-                if (this[XFe] && "r+" === this[PFe]) try {
-                    e = vLe.openSync(this[DFe], this[PFe], this[FFe])
+                if (this[QFe] && "r+" === this[RFe]) try {
+                    e = NLe.openSync(this[GFe], this[RFe], this[bFe])
                 } catch (e) {
-                    if ("ENOENT" === e?.code) return this[PFe] = "w", this[xFe]();
+                    if ("ENOENT" === e?.code) return this[RFe] = "w", this[MFe]();
                     throw e
-                } else e = vLe.openSync(this[DFe], this[PFe], this[FFe]);
-                this[CFe](null, e)
-            } [EFe]() {
-                if (this[vFe] && "number" == typeof this[BFe]) {
-                    let e = this[BFe];
-                    this[BFe] = void 0, vLe.closeSync(e), this.emit("close")
+                } else e = NLe.openSync(this[GFe], this[RFe], this[bFe]);
+                this[AFe](null, e)
+            } [BFe]() {
+                if (this[NFe] && "number" == typeof this[PFe]) {
+                    let e = this[PFe];
+                    this[PFe] = void 0, NLe.closeSync(e), this.emit("close")
                 }
-            } [WFe](e) {
+            } [XFe](e) {
                 let t = !0;
                 try {
-                    this[AFe](null, vLe.writeSync(this[BFe], e, 0, e.length, this[MFe])), t = !1
+                    this[DFe](null, NLe.writeSync(this[PFe], e, 0, e.length, this[YFe])), t = !1
                 } finally {
                     if (t) try {
-                        this[EFe]()
+                        this[BFe]()
                     } catch {}
                 }
             }
         },
-        nOe = new Map([
+        sOe = new Map([
             ["C", "cwd"],
             ["f", "file"],
             ["z", "gzip"],
@@ -112585,16 +112643,16 @@
             ["h", "follow"],
             ["onentry", "onReadEntry"]
         ]),
-        rOe = e => nOe.get(e) || e,
-        sOe = (e = {}) => {
+        iOe = e => sOe.get(e) || e,
+        aOe = (e = {}) => {
             if (!e) return {};
             let t = {};
-            for (let [n, r] of Object.entries(e)) t[rOe(n)] = r;
+            for (let [n, r] of Object.entries(e)) t[iOe(n)] = r;
             return void 0 === t.chmod && !1 === t.noChmod && (t.chmod = !0), delete t.noChmod, t
         },
-        iOe = (e, t, n, r, s) => Object.assign((i = [], a, o) => {
+        oOe = (e, t, n, r, s) => Object.assign((i = [], a, o) => {
             Array.isArray(i) && (a = i, i = {}), "function" == typeof a && (o = a, a = void 0), a = a ? Array.from(a) : [];
-            let l = sOe(i);
+            let l = aOe(i);
             if (s?.(l, a), (e => !!e.sync && !!e.file)(l)) {
                 if ("function" == typeof o) throw new TypeError("callback not supported for sync tar functions");
                 return e(l, a)
@@ -112620,10 +112678,10 @@
             asyncNoFile: r,
             validate: s
         }),
-        aOe = RLe.constants || {
+        lOe = FLe.constants || {
             ZLIB_VERNUM: 4736
         },
-        oOe = Object.freeze(Object.assign(Object.create(null), {
+        uOe = Object.freeze(Object.assign(Object.create(null), {
             Z_NO_FLUSH: 0,
             Z_PARTIAL_FLUSH: 1,
             Z_SYNC_FLUSH: 2,
@@ -112730,15 +112788,15 @@
             BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_2: -27,
             BROTLI_DECODER_ERROR_ALLOC_BLOCK_TYPE_TREES: -30,
             BROTLI_DECODER_ERROR_UNREACHABLE: -31
-        }, aOe)),
-        lOe = qLe.Buffer.concat,
-        uOe = Object.getOwnPropertyDescriptor(qLe.Buffer, "concat"),
-        mOe = e => e,
-        cOe = !0 === uOe?.writable || void 0 !== uOe?.set ? e => {
-            qLe.Buffer.concat = e ? mOe : lOe
+        }, lOe)),
+        mOe = LLe.Buffer.concat,
+        cOe = Object.getOwnPropertyDescriptor(LLe.Buffer, "concat"),
+        dOe = e => e,
+        fOe = !0 === cOe?.writable || void 0 !== cOe?.set ? e => {
+            LLe.Buffer.concat = e ? dOe : mOe
         } : e => {},
-        dOe = Symbol("_superWrite"),
-        fOe = class extends Error {
+        pOe = Symbol("_superWrite"),
+        gOe = class extends Error {
             code;
             errno;
             constructor(e, t) {
@@ -112750,8 +112808,8 @@
                 return "ZlibError"
             }
         },
-        pOe = Symbol("flushFlag"),
-        gOe = class extends SFe {
+        TOe = Symbol("flushFlag"),
+        hOe = class extends vFe {
             #e = !1;
             #t = !1;
             #n;
@@ -112770,25 +112828,25 @@
             }
             constructor(e, t) {
                 if (!e || "object" != typeof e) throw new TypeError("invalid options for ZlibBase constructor");
-                if (super(e), this.#n = e.flush ?? 0, this.#r = e.finishFlush ?? 0, this.#s = e.fullFlushFlag ?? 0, "function" != typeof LLe[t]) throw new TypeError("Compression method not supported: " + t);
+                if (super(e), this.#n = e.flush ?? 0, this.#r = e.finishFlush ?? 0, this.#s = e.fullFlushFlag ?? 0, "function" != typeof OLe[t]) throw new TypeError("Compression method not supported: " + t);
                 try {
-                    this.#i = new LLe[t](e)
+                    this.#i = new OLe[t](e)
                 } catch (e) {
-                    throw new fOe(e, this.constructor)
+                    throw new gOe(e, this.constructor)
                 }
                 this.#a = e => {
                     this.#e || (this.#e = !0, this.close(), this.emit("error", e))
-                }, this.#i?.on("error", e => this.#a(new fOe(e))), this.once("end", () => this.close)
+                }, this.#i?.on("error", e => this.#a(new gOe(e))), this.once("end", () => this.close)
             }
             close() {
                 this.#i && (this.#i.close(), this.#i = void 0, this.emit("close"))
             }
             reset() {
-                if (!this.#e) return PLe(this.#i, "zlib binding closed"), this.#i.reset?.()
+                if (!this.#e) return RLe(this.#i, "zlib binding closed"), this.#i.reset?.()
             }
             flush(e) {
-                this.ended || ("number" != typeof e && (e = this.#s), this.write(Object.assign(qLe.Buffer.alloc(0), {
-                    [pOe]: e
+                this.ended || ("number" != typeof e && (e = this.#s), this.write(Object.assign(LLe.Buffer.alloc(0), {
+                    [TOe]: e
                 })))
             }
             end(e, t, n) {
@@ -112796,46 +112854,46 @@
             }
             get ended() {
                 return this.#t
-            } [dOe](e) {
+            } [pOe](e) {
                 return super.write(e)
             }
             write(e, t, n) {
-                if ("function" == typeof t && (n = t, t = "utf8"), "string" == typeof e && (e = qLe.Buffer.from(e, t)), this.#e) return;
-                PLe(this.#i, "zlib binding closed");
+                if ("function" == typeof t && (n = t, t = "utf8"), "string" == typeof e && (e = LLe.Buffer.from(e, t)), this.#e) return;
+                RLe(this.#i, "zlib binding closed");
                 let r = this.#i._handle,
                     s = r.close;
                 r.close = () => {};
                 let i, a, o = this.#i.close;
-                this.#i.close = () => {}, cOe(!0);
+                this.#i.close = () => {}, fOe(!0);
                 try {
-                    let t = "number" == typeof e[pOe] ? e[pOe] : this.#n;
-                    i = this.#i._processChunk(e, t), cOe(!1)
+                    let t = "number" == typeof e[TOe] ? e[TOe] : this.#n;
+                    i = this.#i._processChunk(e, t), fOe(!1)
                 } catch (e) {
-                    cOe(!1), this.#a(new fOe(e, this.write))
+                    fOe(!1), this.#a(new gOe(e, this.write))
                 } finally {
                     this.#i && (this.#i._handle = r, r.close = s, this.#i.close = o, this.#i.removeAllListeners("error"))
                 }
-                if (this.#i && this.#i.on("error", e => this.#a(new fOe(e, this.write))), i)
+                if (this.#i && this.#i.on("error", e => this.#a(new gOe(e, this.write))), i)
                     if (Array.isArray(i) && i.length > 0) {
                         let e = i[0];
-                        a = this[dOe](qLe.Buffer.from(e));
-                        for (let e = 1; e < i.length; e++) a = this[dOe](i[e])
-                    } else a = this[dOe](qLe.Buffer.from(i));
+                        a = this[pOe](LLe.Buffer.from(e));
+                        for (let e = 1; e < i.length; e++) a = this[pOe](i[e])
+                    } else a = this[pOe](LLe.Buffer.from(i));
                 return n && n(), a
             }
         },
-        TOe = class extends gOe {
+        _Oe = class extends hOe {
             #e;
             #t;
             constructor(e, t) {
-                (e = e || {}).flush = e.flush || oOe.Z_NO_FLUSH, e.finishFlush = e.finishFlush || oOe.Z_FINISH, e.fullFlushFlag = oOe.Z_FULL_FLUSH, super(e, t), this.#e = e.level, this.#t = e.strategy
+                (e = e || {}).flush = e.flush || uOe.Z_NO_FLUSH, e.finishFlush = e.finishFlush || uOe.Z_FINISH, e.fullFlushFlag = uOe.Z_FULL_FLUSH, super(e, t), this.#e = e.level, this.#t = e.strategy
             }
             params(e, t) {
                 if (!this.sawError) {
                     if (!this.handle) throw new Error("cannot switch params when binding is closed");
                     if (!this.handle.params) throw new Error("not supported in this implementation");
                     if (this.#e !== e || this.#t !== t) {
-                        this.flush(oOe.Z_SYNC_FLUSH), PLe(this.handle, "zlib binding closed");
+                        this.flush(uOe.Z_SYNC_FLUSH), RLe(this.handle, "zlib binding closed");
                         let n = this.handle.flush;
                         this.handle.flush = (e, t) => {
                             "function" == typeof e && (t = e, e = this.flushFlag), this.flush(e), t?.()
@@ -112850,65 +112908,65 @@
                 }
             }
         },
-        hOe = class extends TOe {
+        yOe = class extends _Oe {
             #e;
             constructor(e) {
                 super(e, "Gzip"), this.#e = e && !!e.portable
-            } [dOe](e) {
-                return this.#e ? (this.#e = !1, e[9] = 255, super[dOe](e)) : super[dOe](e)
+            } [pOe](e) {
+                return this.#e ? (this.#e = !1, e[9] = 255, super[pOe](e)) : super[pOe](e)
             }
         },
-        _Oe = class extends TOe {
+        wOe = class extends _Oe {
             constructor(e) {
                 super(e, "Unzip")
             }
         },
-        yOe = class extends gOe {
+        kOe = class extends hOe {
             constructor(e, t) {
-                (e = e || {}).flush = e.flush || oOe.BROTLI_OPERATION_PROCESS, e.finishFlush = e.finishFlush || oOe.BROTLI_OPERATION_FINISH, e.fullFlushFlag = oOe.BROTLI_OPERATION_FLUSH, super(e, t)
+                (e = e || {}).flush = e.flush || uOe.BROTLI_OPERATION_PROCESS, e.finishFlush = e.finishFlush || uOe.BROTLI_OPERATION_FINISH, e.fullFlushFlag = uOe.BROTLI_OPERATION_FLUSH, super(e, t)
             }
         },
-        wOe = class extends yOe {
+        SOe = class extends kOe {
             constructor(e) {
                 super(e, "BrotliCompress")
             }
         },
-        kOe = class extends yOe {
+        JOe = class extends kOe {
             constructor(e) {
                 super(e, "BrotliDecompress")
             }
         },
-        SOe = class extends gOe {
+        vOe = class extends hOe {
             constructor(e, t) {
-                (e = e || {}).flush = e.flush || oOe.ZSTD_e_continue, e.finishFlush = e.finishFlush || oOe.ZSTD_e_end, e.fullFlushFlag = oOe.ZSTD_e_flush, super(e, t)
+                (e = e || {}).flush = e.flush || uOe.ZSTD_e_continue, e.finishFlush = e.finishFlush || uOe.ZSTD_e_end, e.fullFlushFlag = uOe.ZSTD_e_flush, super(e, t)
             }
         },
-        JOe = class extends SOe {
+        EOe = class extends vOe {
             constructor(e) {
                 super(e, "ZstdCompress")
             }
         },
-        vOe = class extends SOe {
+        NOe = class extends vOe {
             constructor(e) {
                 super(e, "ZstdDecompress")
             }
         },
-        EOe = e => 255 & (255 ^ e),
-        NOe = e => 1 + (255 ^ e) & 255;
+        BOe = e => 255 & (255 ^ e),
+        IOe = e => 1 + (255 ^ e) & 255;
     ((e, t) => {
-        for (var n in t) CLe(e, n, {
+        for (var n in t) ALe(e, n, {
             get: t[n],
             enumerable: !0
         })
     })({}, {
-        code: () => qOe,
-        isCode: () => BOe,
-        isName: () => IOe,
-        name: () => POe
+        code: () => LOe,
+        isCode: () => POe,
+        isName: () => qOe,
+        name: () => ROe
     });
-    var BOe = e => POe.has(e),
-        IOe = e => qOe.has(e),
-        POe = new Map([
+    var POe = e => ROe.has(e),
+        qOe = e => LOe.has(e),
+        ROe = new Map([
             ["0", "File"],
             ["", "OldFile"],
             ["1", "Link"],
@@ -112931,8 +112989,8 @@
             ["V", "TapeVolumeHeader"],
             ["X", "OldExtendedHeader"]
         ]),
-        qOe = new Map(Array.from(POe).map(e => [e[1], e[0]])),
-        ROe = class {
+        LOe = new Map(Array.from(ROe).map(e => [e[1], e[0]])),
+        FOe = class {
             cksumValid = !1;
             needPax = !1;
             nullBlock = !1;
@@ -112959,15 +113017,15 @@
             }
             decode(e, t, n, r) {
                 if (t || (t = 0), !(e && e.length >= t + 512)) throw new Error("need 512 bytes for header");
-                this.path = n?.path ?? FOe(e, t, 100), this.mode = n?.mode ?? r?.mode ?? COe(e, t + 100, 8), this.uid = n?.uid ?? r?.uid ?? COe(e, t + 108, 8), this.gid = n?.gid ?? r?.gid ?? COe(e, t + 116, 8), this.size = n?.size ?? r?.size ?? COe(e, t + 124, 12), this.mtime = n?.mtime ?? r?.mtime ?? OOe(e, t + 136, 12), this.cksum = COe(e, t + 148, 12), r && this.#t(r, !0), n && this.#t(n);
-                let s = FOe(e, t + 156, 1);
-                if (BOe(s) && (this.#e = s || "0"), "0" === this.#e && "/" === this.path.slice(-1) && (this.#e = "5"), "5" === this.#e && (this.size = 0), this.linkpath = FOe(e, t + 157, 100), "ustar\x0000" === e.subarray(t + 257, t + 265).toString())
-                    if (this.uname = n?.uname ?? r?.uname ?? FOe(e, t + 265, 32), this.gname = n?.gname ?? r?.gname ?? FOe(e, t + 297, 32), this.devmaj = n?.devmaj ?? r?.devmaj ?? COe(e, t + 329, 8) ?? 0, this.devmin = n?.devmin ?? r?.devmin ?? COe(e, t + 337, 8) ?? 0, 0 !== e[t + 475]) {
-                        let n = FOe(e, t + 345, 155);
+                this.path = n?.path ?? bOe(e, t, 100), this.mode = n?.mode ?? r?.mode ?? AOe(e, t + 100, 8), this.uid = n?.uid ?? r?.uid ?? AOe(e, t + 108, 8), this.gid = n?.gid ?? r?.gid ?? AOe(e, t + 116, 8), this.size = n?.size ?? r?.size ?? AOe(e, t + 124, 12), this.mtime = n?.mtime ?? r?.mtime ?? COe(e, t + 136, 12), this.cksum = AOe(e, t + 148, 12), r && this.#t(r, !0), n && this.#t(n);
+                let s = bOe(e, t + 156, 1);
+                if (POe(s) && (this.#e = s || "0"), "0" === this.#e && "/" === this.path.slice(-1) && (this.#e = "5"), "5" === this.#e && (this.size = 0), this.linkpath = bOe(e, t + 157, 100), "ustar\x0000" === e.subarray(t + 257, t + 265).toString())
+                    if (this.uname = n?.uname ?? r?.uname ?? bOe(e, t + 265, 32), this.gname = n?.gname ?? r?.gname ?? bOe(e, t + 297, 32), this.devmaj = n?.devmaj ?? r?.devmaj ?? AOe(e, t + 329, 8) ?? 0, this.devmin = n?.devmin ?? r?.devmin ?? AOe(e, t + 337, 8) ?? 0, 0 !== e[t + 475]) {
+                        let n = bOe(e, t + 345, 155);
                         this.path = n + "/" + this.path
                     } else {
-                        let s = FOe(e, t + 345, 130);
-                        s && (this.path = s + "/" + this.path), this.atime = n?.atime ?? r?.atime ?? OOe(e, t + 476, 12), this.ctime = n?.ctime ?? r?.ctime ?? OOe(e, t + 488, 12)
+                        let s = bOe(e, t + 345, 130);
+                        s && (this.path = s + "/" + this.path), this.atime = n?.atime ?? r?.atime ?? COe(e, t + 476, 12), this.ctime = n?.ctime ?? r?.ctime ?? COe(e, t + 488, 12)
                     } let i = 256;
                 for (let n = t; n < t + 148; n++) i += e[n];
                 for (let n = t + 156; n < t + 512; n++) i += e[n];
@@ -112979,31 +113037,31 @@
             encode(e, t = 0) {
                 if (e || (e = this.block = Buffer.alloc(512)), "Unsupported" === this.#e && (this.#e = "0"), !(e.length >= t + 512)) throw new Error("need 512 bytes for header");
                 let n = this.ctime || this.atime ? 130 : 155,
-                    r = LOe(this.path || "", n),
+                    r = OOe(this.path || "", n),
                     s = r[0],
                     i = r[1];
-                this.needPax = !!r[2], this.needPax = HOe(e, t, 100, s) || this.needPax, this.needPax = xOe(e, t + 100, 8, this.mode) || this.needPax, this.needPax = xOe(e, t + 108, 8, this.uid) || this.needPax, this.needPax = xOe(e, t + 116, 8, this.gid) || this.needPax, this.needPax = xOe(e, t + 124, 12, this.size) || this.needPax, this.needPax = YOe(e, t + 136, 12, this.mtime) || this.needPax, e[t + 156] = this.#e.charCodeAt(0), this.needPax = HOe(e, t + 157, 100, this.linkpath) || this.needPax, e.write("ustar\x0000", t + 257, 8), this.needPax = HOe(e, t + 265, 32, this.uname) || this.needPax, this.needPax = HOe(e, t + 297, 32, this.gname) || this.needPax, this.needPax = xOe(e, t + 329, 8, this.devmaj) || this.needPax, this.needPax = xOe(e, t + 337, 8, this.devmin) || this.needPax, this.needPax = HOe(e, t + 345, n, i) || this.needPax, 0 !== e[t + 475] ? this.needPax = HOe(e, t + 345, 155, i) || this.needPax : (this.needPax = HOe(e, t + 345, 130, i) || this.needPax, this.needPax = YOe(e, t + 476, 12, this.atime) || this.needPax, this.needPax = YOe(e, t + 488, 12, this.ctime) || this.needPax);
+                this.needPax = !!r[2], this.needPax = zOe(e, t, 100, s) || this.needPax, this.needPax = MOe(e, t + 100, 8, this.mode) || this.needPax, this.needPax = MOe(e, t + 108, 8, this.uid) || this.needPax, this.needPax = MOe(e, t + 116, 8, this.gid) || this.needPax, this.needPax = MOe(e, t + 124, 12, this.size) || this.needPax, this.needPax = HOe(e, t + 136, 12, this.mtime) || this.needPax, e[t + 156] = this.#e.charCodeAt(0), this.needPax = zOe(e, t + 157, 100, this.linkpath) || this.needPax, e.write("ustar\x0000", t + 257, 8), this.needPax = zOe(e, t + 265, 32, this.uname) || this.needPax, this.needPax = zOe(e, t + 297, 32, this.gname) || this.needPax, this.needPax = MOe(e, t + 329, 8, this.devmaj) || this.needPax, this.needPax = MOe(e, t + 337, 8, this.devmin) || this.needPax, this.needPax = zOe(e, t + 345, n, i) || this.needPax, 0 !== e[t + 475] ? this.needPax = zOe(e, t + 345, 155, i) || this.needPax : (this.needPax = zOe(e, t + 345, 130, i) || this.needPax, this.needPax = HOe(e, t + 476, 12, this.atime) || this.needPax, this.needPax = HOe(e, t + 488, 12, this.ctime) || this.needPax);
                 let a = 256;
                 for (let n = t; n < t + 148; n++) a += e[n];
                 for (let n = t + 156; n < t + 512; n++) a += e[n];
-                return this.cksum = a, xOe(e, t + 148, 8, this.cksum), this.cksumValid = !0, this.needPax
+                return this.cksum = a, MOe(e, t + 148, 8, this.cksum), this.cksumValid = !0, this.needPax
             }
             get type() {
-                return "Unsupported" === this.#e ? this.#e : POe.get(this.#e)
+                return "Unsupported" === this.#e ? this.#e : ROe.get(this.#e)
             }
             get typeKey() {
                 return this.#e
             }
             set type(e) {
-                let t = String(qOe.get(e));
-                if (BOe(t) || "Unsupported" === t) this.#e = t;
+                let t = String(LOe.get(e));
+                if (POe(t) || "Unsupported" === t) this.#e = t;
                 else {
-                    if (!BOe(e)) throw new TypeError("invalid entry type: " + e);
+                    if (!POe(e)) throw new TypeError("invalid entry type: " + e);
                     this.#e = e
                 }
             }
         },
-        LOe = (e, t) => {
+        OOe = (e, t) => {
             let n, r = e,
                 s = "",
                 i = u.posix.parse(e).root || ".";
@@ -113017,10 +113075,10 @@
             }
             return n
         },
-        FOe = (e, t, n) => e.subarray(t, t + n).toString("utf8").replace(/\0.*/, ""),
-        OOe = (e, t, n) => bOe(COe(e, t, n)),
-        bOe = e => void 0 === e ? void 0 : new Date(1e3 * e),
-        COe = (e, t, n) => 128 & Number(e[t]) ? (e => {
+        bOe = (e, t, n) => e.subarray(t, t + n).toString("utf8").replace(/\0.*/, ""),
+        COe = (e, t, n) => UOe(AOe(e, t, n)),
+        UOe = e => void 0 === e ? void 0 : new Date(1e3 * e),
+        AOe = (e, t, n) => 128 & Number(e[t]) ? (e => {
             let t = e[0],
                 n = 128 === t ? (e => {
                     for (var t = e.length, n = 0, r = t - 1; r > -1; r--) {
@@ -113031,20 +113089,20 @@
                 })(e.subarray(1, e.length)) : 255 === t ? (e => {
                     for (var t = e.length, n = 0, r = !1, s = t - 1; s > -1; s--) {
                         var i, a = Number(e[s]);
-                        r ? i = EOe(a) : 0 === a ? i = a : (r = !0, i = NOe(a)), 0 !== i && (n -= i * Math.pow(256, t - s - 1))
+                        r ? i = BOe(a) : 0 === a ? i = a : (r = !0, i = IOe(a)), 0 !== i && (n -= i * Math.pow(256, t - s - 1))
                     }
                     return n
                 })(e) : null;
             if (null === n) throw Error("invalid base256 encoding");
             if (!Number.isSafeInteger(n)) throw Error("parsed number outside of javascript safe integer range");
             return n
-        })(e.subarray(t, t + n)) : UOe(e, t, n),
-        UOe = (e, t, n) => (e => isNaN(e) ? void 0 : e)(parseInt(e.subarray(t, t + n).toString("utf8").replace(/\0.*$/, "").trim(), 8)),
-        AOe = {
+        })(e.subarray(t, t + n)) : xOe(e, t, n),
+        xOe = (e, t, n) => (e => isNaN(e) ? void 0 : e)(parseInt(e.subarray(t, t + n).toString("utf8").replace(/\0.*$/, "").trim(), 8)),
+        DOe = {
             12: 8589934591,
             8: 2097151
         },
-        xOe = (e, t, n, r) => void 0 !== r && (r > AOe[n] || r < 0 ? (((e, t) => {
+        MOe = (e, t, n, r) => void 0 !== r && (r > DOe[n] || r < 0 ? (((e, t) => {
             if (!Number.isSafeInteger(e)) throw Error("cannot encode number outside of javascript safe integer range");
             e < 0 ? ((e, t) => {
                 t[0] = 255;
@@ -113052,20 +113110,20 @@
                 e *= -1;
                 for (var r = t.length; r > 1; r--) {
                     var s = 255 & e;
-                    e = Math.floor(e / 256), n ? t[r - 1] = EOe(s) : 0 === s ? t[r - 1] = 0 : (n = !0, t[r - 1] = NOe(s))
+                    e = Math.floor(e / 256), n ? t[r - 1] = BOe(s) : 0 === s ? t[r - 1] = 0 : (n = !0, t[r - 1] = IOe(s))
                 }
             })(e, t) : ((e, t) => {
                 t[0] = 128;
                 for (var n = t.length; n > 1; n--) t[n - 1] = 255 & e, e = Math.floor(e / 256)
             })(e, t)
-        })(r, e.subarray(t, t + n)), !0) : (DOe(e, t, n, r), !1)),
-        DOe = (e, t, n, r) => e.write(MOe(r, n), t, n, "ascii"),
-        MOe = (e, t) => GOe(Math.floor(e).toString(8), t),
-        GOe = (e, t) => (e.length === t - 1 ? e : new Array(t - e.length - 1).join("0") + e + " ") + "\0",
-        YOe = (e, t, n, r) => void 0 !== r && xOe(e, t, n, r.getTime() / 1e3),
-        VOe = new Array(156).join("\0"),
-        HOe = (e, t, n, r) => void 0 !== r && (e.write(r + VOe, t, n, "utf8"), r.length !== Buffer.byteLength(r) || r.length > n),
-        KOe = class e {
+        })(r, e.subarray(t, t + n)), !0) : (GOe(e, t, n, r), !1)),
+        GOe = (e, t, n, r) => e.write(YOe(r, n), t, n, "ascii"),
+        YOe = (e, t) => VOe(Math.floor(e).toString(8), t),
+        VOe = (e, t) => (e.length === t - 1 ? e : new Array(t - e.length - 1).join("0") + e + " ") + "\0",
+        HOe = (e, t, n, r) => void 0 !== r && MOe(e, t, n, r.getTime() / 1e3),
+        KOe = new Array(156).join("\0"),
+        zOe = (e, t, n, r) => void 0 !== r && (e.write(r + KOe, t, n, "utf8"), r.length !== Buffer.byteLength(r) || r.length > n),
+        WOe = class e {
             atime;
             mtime;
             ctime;
@@ -113093,7 +113151,7 @@
                     n = 512 * Math.ceil(1 + t / 512),
                     r = Buffer.allocUnsafe(n);
                 for (let e = 0; e < 512; e++) r[e] = 0;
-                new ROe({
+                new FOe({
                     path: ("PaxHeader/" + (0, u.basename)(this.path ?? "")).slice(0, 99),
                     mode: this.mode || 420,
                     uid: this.uid,
@@ -113124,12 +113182,12 @@
                 return r + s >= Math.pow(10, s) && (s += 1), s + r + n
             }
             static parse(t, n, r = !1) {
-                return new e(zOe(WOe(t), n), r)
+                return new e(jOe(XOe(t), n), r)
             }
         },
-        zOe = (e, t) => t ? Object.assign({}, t, e) : e,
-        WOe = e => e.replace(/\n$/, "").split("\n").reduce(jOe, Object.create(null)),
-        jOe = (e, t) => {
+        jOe = (e, t) => t ? Object.assign({}, t, e) : e,
+        XOe = e => e.replace(/\n$/, "").split("\n").reduce($Oe, Object.create(null)),
+        $Oe = (e, t) => {
             let n = parseInt(t, 10);
             if (n !== Buffer.byteLength(t) + 1) return e;
             let r = (t = t.slice((n + " ").length)).split("="),
@@ -113139,8 +113197,8 @@
                 a = r.join("=");
             return e[i] = /^([A-Z]+\.)?([mac]|birth|creation)time$/.test(i) ? new Date(1e3 * Number(a)) : /^[0-9]+$/.test(a) ? +a : a, e
         },
-        XOe = "win32" !== (process.env.TESTING_TAR_FAKE_PLATFORM || process.platform) ? e => e : e => e && e.replace(/\\/g, "/"),
-        $Oe = class extends SFe {
+        QOe = "win32" !== (process.env.TESTING_TAR_FAKE_PLATFORM || process.platform) ? e => e : e => e && e.replace(/\\/g, "/"),
+        ZOe = class extends vFe {
             extended;
             globalExtended;
             header;
@@ -113192,7 +113250,7 @@
                         this.ignore = !0
                 }
                 if (!e.path) throw new Error("no path provided for tar.ReadEntry");
-                this.path = XOe(e.path), this.mode = e.mode, this.mode && (this.mode = 4095 & this.mode), this.uid = e.uid, this.gid = e.gid, this.uname = e.uname, this.gname = e.gname, this.size = this.remain, this.mtime = e.mtime, this.atime = e.atime, this.ctime = e.ctime, this.linkpath = e.linkpath ? XOe(e.linkpath) : void 0, this.uname = e.uname, this.gname = e.gname, t && this.#e(t), n && this.#e(n, !0)
+                this.path = QOe(e.path), this.mode = e.mode, this.mode && (this.mode = 4095 & this.mode), this.uid = e.uid, this.gid = e.gid, this.uname = e.uname, this.gname = e.gname, this.size = this.remain, this.mtime = e.mtime, this.atime = e.atime, this.ctime = e.ctime, this.linkpath = e.linkpath ? QOe(e.linkpath) : void 0, this.uname = e.uname, this.gname = e.gname, t && this.#e(t), n && this.#e(n, !0)
             }
             write(e) {
                 let t = e.length;
@@ -113202,47 +113260,47 @@
                 return this.remain = Math.max(0, n - t), this.blockRemain = Math.max(0, r - t), !!this.ignore || (n >= t ? super.write(e) : super.write(e.subarray(0, n)))
             }
             #e(e, t = !1) {
-                e.path && (e.path = XOe(e.path)), e.linkpath && (e.linkpath = XOe(e.linkpath)), Object.assign(this, Object.fromEntries(Object.entries(e).filter(([e, n]) => !(null == n || "path" === e && t))))
+                e.path && (e.path = QOe(e.path)), e.linkpath && (e.linkpath = QOe(e.linkpath)), Object.assign(this, Object.fromEntries(Object.entries(e).filter(([e, n]) => !(null == n || "path" === e && t))))
             }
         },
-        QOe = (e, t, n, r = {}) => {
+        ebe = (e, t, n, r = {}) => {
             e.file && (r.file = e.file), e.cwd && (r.cwd = e.cwd), r.code = n instanceof Error && n.code || t, r.tarCode = t, e.strict || !1 === r.recoverable ? n instanceof Error ? e.emit("error", Object.assign(n, r)) : e.emit("error", Object.assign(new Error(`${t}: ${n}`), r)) : (n instanceof Error && (r = Object.assign(n, r), n = n.message), e.emit("warn", t, n, r))
         },
-        ZOe = Buffer.from([31, 139]),
-        ebe = Buffer.from([40, 181, 47, 253]),
-        tbe = Math.max(ZOe.length, ebe.length),
-        nbe = Symbol("state"),
-        rbe = Symbol("writeEntry"),
-        sbe = Symbol("readEntry"),
-        ibe = Symbol("nextEntry"),
-        abe = Symbol("processEntry"),
-        obe = Symbol("extendedHeader"),
-        lbe = Symbol("globalExtendedHeader"),
-        ube = Symbol("meta"),
-        mbe = Symbol("emitMeta"),
-        cbe = Symbol("buffer"),
-        dbe = Symbol("queue"),
-        fbe = Symbol("ended"),
-        pbe = Symbol("emittedEnd"),
-        gbe = Symbol("emit"),
-        Tbe = Symbol("unzip"),
-        hbe = Symbol("consumeChunk"),
-        _be = Symbol("consumeChunkSub"),
-        ybe = Symbol("consumeBody"),
-        wbe = Symbol("consumeMeta"),
-        kbe = Symbol("consumeHeader"),
-        Sbe = Symbol("consuming"),
-        Jbe = Symbol("bufferConcat"),
-        vbe = Symbol("maybeEnd"),
-        Ebe = Symbol("writing"),
-        Nbe = Symbol("aborted"),
-        Bbe = Symbol("onDone"),
-        Ibe = Symbol("sawValidEntry"),
-        Pbe = Symbol("sawNullBlock"),
-        qbe = Symbol("sawEOF"),
-        Rbe = Symbol("closeStream"),
-        Lbe = () => !0,
-        Fbe = class extends JLe.EventEmitter {
+        tbe = Buffer.from([31, 139]),
+        nbe = Buffer.from([40, 181, 47, 253]),
+        rbe = Math.max(tbe.length, nbe.length),
+        sbe = Symbol("state"),
+        ibe = Symbol("writeEntry"),
+        abe = Symbol("readEntry"),
+        obe = Symbol("nextEntry"),
+        lbe = Symbol("processEntry"),
+        ube = Symbol("extendedHeader"),
+        mbe = Symbol("globalExtendedHeader"),
+        cbe = Symbol("meta"),
+        dbe = Symbol("emitMeta"),
+        fbe = Symbol("buffer"),
+        pbe = Symbol("queue"),
+        gbe = Symbol("ended"),
+        Tbe = Symbol("emittedEnd"),
+        hbe = Symbol("emit"),
+        _be = Symbol("unzip"),
+        ybe = Symbol("consumeChunk"),
+        wbe = Symbol("consumeChunkSub"),
+        kbe = Symbol("consumeBody"),
+        Sbe = Symbol("consumeMeta"),
+        Jbe = Symbol("consumeHeader"),
+        vbe = Symbol("consuming"),
+        Ebe = Symbol("bufferConcat"),
+        Nbe = Symbol("maybeEnd"),
+        Bbe = Symbol("writing"),
+        Ibe = Symbol("aborted"),
+        Pbe = Symbol("onDone"),
+        qbe = Symbol("sawValidEntry"),
+        Rbe = Symbol("sawNullBlock"),
+        Lbe = Symbol("sawEOF"),
+        Fbe = Symbol("closeStream"),
+        Obe = () => !0,
+        bbe = class extends ELe.EventEmitter {
             file;
             strict;
             maxMetaEntrySize;
@@ -113251,61 +113309,61 @@
             zstd;
             writable = !0;
             readable = !1;
-            [dbe] = [];
-            [cbe];
-            [sbe];
-            [rbe];
-            [nbe] = "begin";
-            [ube] = "";
-            [obe];
-            [lbe];
-            [fbe] = !1;
-            [Tbe];
-            [Nbe] = !1;
-            [Ibe];
-            [Pbe] = !1;
-            [qbe] = !1;
-            [Ebe] = !1;
-            [Sbe] = !1;
-            [pbe] = !1;
+            [pbe] = [];
+            [fbe];
+            [abe];
+            [ibe];
+            [sbe] = "begin";
+            [cbe] = "";
+            [ube];
+            [mbe];
+            [gbe] = !1;
+            [_be];
+            [Ibe] = !1;
+            [qbe];
+            [Rbe] = !1;
+            [Lbe] = !1;
+            [Bbe] = !1;
+            [vbe] = !1;
+            [Tbe] = !1;
             constructor(e = {}) {
-                super(), this.file = e.file || "", this.on(Bbe, () => {
-                    ("begin" === this[nbe] || !1 === this[Ibe]) && this.warn("TAR_BAD_ARCHIVE", "Unrecognized archive format")
-                }), e.ondone ? this.on(Bbe, e.ondone) : this.on(Bbe, () => {
+                super(), this.file = e.file || "", this.on(Pbe, () => {
+                    ("begin" === this[sbe] || !1 === this[qbe]) && this.warn("TAR_BAD_ARCHIVE", "Unrecognized archive format")
+                }), e.ondone ? this.on(Pbe, e.ondone) : this.on(Pbe, () => {
                     this.emit("prefinish"), this.emit("finish"), this.emit("end")
-                }), this.strict = !!e.strict, this.maxMetaEntrySize = e.maxMetaEntrySize || 1048576, this.filter = "function" == typeof e.filter ? e.filter : Lbe;
+                }), this.strict = !!e.strict, this.maxMetaEntrySize = e.maxMetaEntrySize || 1048576, this.filter = "function" == typeof e.filter ? e.filter : Obe;
                 let t = e.file && (e.file.endsWith(".tar.br") || e.file.endsWith(".tbr"));
                 this.brotli = e.gzip || e.zstd || void 0 === e.brotli ? !!t && void 0 : e.brotli;
                 let n = e.file && (e.file.endsWith(".tar.zst") || e.file.endsWith(".tzst"));
-                this.zstd = e.gzip || e.brotli || void 0 === e.zstd ? !!n || void 0 : e.zstd, this.on("end", () => this[Rbe]()), "function" == typeof e.onwarn && this.on("warn", e.onwarn), "function" == typeof e.onReadEntry && this.on("entry", e.onReadEntry)
+                this.zstd = e.gzip || e.brotli || void 0 === e.zstd ? !!n || void 0 : e.zstd, this.on("end", () => this[Fbe]()), "function" == typeof e.onwarn && this.on("warn", e.onwarn), "function" == typeof e.onReadEntry && this.on("entry", e.onReadEntry)
             }
             warn(e, t, n = {}) {
-                QOe(this, e, t, n)
-            } [kbe](e, t) {
+                ebe(this, e, t, n)
+            } [Jbe](e, t) {
                 let n;
-                void 0 === this[Ibe] && (this[Ibe] = !1);
+                void 0 === this[qbe] && (this[qbe] = !1);
                 try {
-                    n = new ROe(e, t, this[obe], this[lbe])
+                    n = new FOe(e, t, this[ube], this[mbe])
                 } catch (e) {
                     return this.warn("TAR_ENTRY_INVALID", e)
                 }
-                if (n.nullBlock) this[Pbe] ? (this[qbe] = !0, "begin" === this[nbe] && (this[nbe] = "header"), this[gbe]("eof")) : (this[Pbe] = !0, this[gbe]("nullBlock"));
-                else if (this[Pbe] = !1, n.cksumValid)
+                if (n.nullBlock) this[Rbe] ? (this[Lbe] = !0, "begin" === this[sbe] && (this[sbe] = "header"), this[hbe]("eof")) : (this[Rbe] = !0, this[hbe]("nullBlock"));
+                else if (this[Rbe] = !1, n.cksumValid)
                     if (n.path) {
                         let e = n.type;
                         if (/^(Symbolic)?Link$/.test(e) && !n.linkpath) this.warn("TAR_ENTRY_INVALID", "linkpath required", {
                             header: n
                         });
                         else if (/^(Symbolic)?Link$/.test(e) || /^(Global)?ExtendedHeader$/.test(e) || !n.linkpath) {
-                            let e = this[rbe] = new $Oe(n, this[obe], this[lbe]);
-                            if (!this[Ibe])
+                            let e = this[ibe] = new ZOe(n, this[ube], this[mbe]);
+                            if (!this[qbe])
                                 if (e.remain) {
                                     let t = () => {
-                                        e.invalid || (this[Ibe] = !0)
+                                        e.invalid || (this[qbe] = !0)
                                     };
                                     e.on("end", t)
-                                } else this[Ibe] = !0;
-                            e.meta ? e.size > this.maxMetaEntrySize ? (e.ignore = !0, this[gbe]("ignoredEntry", e), this[nbe] = "ignore", e.resume()) : e.size > 0 && (this[ube] = "", e.on("data", e => this[ube] += e), this[nbe] = "meta") : (this[obe] = void 0, e.ignore = e.ignore || !this.filter(e.path, e), e.ignore ? (this[gbe]("ignoredEntry", e), this[nbe] = e.remain ? "ignore" : "header", e.resume()) : (e.remain ? this[nbe] = "body" : (this[nbe] = "header", e.end()), this[sbe] ? this[dbe].push(e) : (this[dbe].push(e), this[ibe]())))
+                                } else this[qbe] = !0;
+                            e.meta ? e.size > this.maxMetaEntrySize ? (e.ignore = !0, this[hbe]("ignoredEntry", e), this[sbe] = "ignore", e.resume()) : e.size > 0 && (this[cbe] = "", e.on("data", e => this[cbe] += e), this[sbe] = "meta") : (this[ube] = void 0, e.ignore = e.ignore || !this.filter(e.path, e), e.ignore ? (this[hbe]("ignoredEntry", e), this[sbe] = e.remain ? "ignore" : "header", e.resume()) : (e.remain ? this[sbe] = "body" : (this[sbe] = "header", e.end()), this[abe] ? this[pbe].push(e) : (this[pbe].push(e), this[obe]())))
                         } else this.warn("TAR_ENTRY_INVALID", "linkpath forbidden", {
                             header: n
                         })
@@ -113315,53 +113373,53 @@
                 else this.warn("TAR_ENTRY_INVALID", "checksum failure", {
                     header: n
                 })
-            } [Rbe]() {
+            } [Fbe]() {
                 queueMicrotask(() => this.emit("close"))
-            } [abe](e) {
+            } [lbe](e) {
                 let t = !0;
                 if (e)
                     if (Array.isArray(e)) {
                         let [t, ...n] = e;
                         this.emit(t, ...n)
-                    } else this[sbe] = e, this.emit("entry", e), e.emittedEnd || (e.on("end", () => this[ibe]()), t = !1);
-                else this[sbe] = void 0, t = !1;
+                    } else this[abe] = e, this.emit("entry", e), e.emittedEnd || (e.on("end", () => this[obe]()), t = !1);
+                else this[abe] = void 0, t = !1;
                 return t
-            } [ibe]() {
-                do {} while (this[abe](this[dbe].shift()));
-                if (!this[dbe].length) {
-                    let e = this[sbe];
-                    !e || e.flowing || e.size === e.remain ? this[Ebe] || this.emit("drain") : e.once("drain", () => this.emit("drain"))
+            } [obe]() {
+                do {} while (this[lbe](this[pbe].shift()));
+                if (!this[pbe].length) {
+                    let e = this[abe];
+                    !e || e.flowing || e.size === e.remain ? this[Bbe] || this.emit("drain") : e.once("drain", () => this.emit("drain"))
                 }
-            } [ybe](e, t) {
-                let n = this[rbe];
+            } [kbe](e, t) {
+                let n = this[ibe];
                 if (!n) throw new Error("attempt to consume body without entry??");
                 let r = n.blockRemain ?? 0,
                     s = r >= e.length && 0 === t ? e : e.subarray(t, t + r);
-                return n.write(s), n.blockRemain || (this[nbe] = "header", this[rbe] = void 0, n.end()), s.length
-            } [wbe](e, t) {
-                let n = this[rbe],
-                    r = this[ybe](e, t);
-                return !this[rbe] && n && this[mbe](n), r
-            } [gbe](e, t, n) {
-                this[dbe].length || this[sbe] ? this[dbe].push([e, t, n]) : this.emit(e, t, n)
-            } [mbe](e) {
-                switch (this[gbe]("meta", this[ube]), e.type) {
+                return n.write(s), n.blockRemain || (this[sbe] = "header", this[ibe] = void 0, n.end()), s.length
+            } [Sbe](e, t) {
+                let n = this[ibe],
+                    r = this[kbe](e, t);
+                return !this[ibe] && n && this[dbe](n), r
+            } [hbe](e, t, n) {
+                this[pbe].length || this[abe] ? this[pbe].push([e, t, n]) : this.emit(e, t, n)
+            } [dbe](e) {
+                switch (this[hbe]("meta", this[cbe]), e.type) {
                     case "ExtendedHeader":
                     case "OldExtendedHeader":
-                        this[obe] = KOe.parse(this[ube], this[obe], !1);
+                        this[ube] = WOe.parse(this[cbe], this[ube], !1);
                         break;
                     case "GlobalExtendedHeader":
-                        this[lbe] = KOe.parse(this[ube], this[lbe], !0);
+                        this[mbe] = WOe.parse(this[cbe], this[mbe], !0);
                         break;
                     case "NextFileHasLongPath":
                     case "OldGnuLongPath": {
-                        let e = this[obe] ?? Object.create(null);
-                        this[obe] = e, e.path = this[ube].replace(/\0.*/, "");
+                        let e = this[ube] ?? Object.create(null);
+                        this[ube] = e, e.path = this[cbe].replace(/\0.*/, "");
                         break
                     }
                     case "NextFileHasLongLinkpath": {
-                        let e = this[obe] || Object.create(null);
-                        this[obe] = e, e.linkpath = this[ube].replace(/\0.*/, "");
+                        let e = this[ube] || Object.create(null);
+                        this[ube] = e, e.linkpath = this[cbe].replace(/\0.*/, "");
                         break
                     }
                     default:
@@ -113369,123 +113427,123 @@
                 }
             }
             abort(e) {
-                this[Nbe] = !0, this.emit("abort", e), this.warn("TAR_ABORT", e, {
+                this[Ibe] = !0, this.emit("abort", e), this.warn("TAR_ABORT", e, {
                     recoverable: !1
                 })
             }
             write(e, t, n) {
-                if ("function" == typeof t && (n = t, t = void 0), "string" == typeof e && (e = Buffer.from(e, "string" == typeof t ? t : "utf8")), this[Nbe]) return n?.(), !1;
-                if ((void 0 === this[Tbe] || void 0 === this.brotli && !1 === this[Tbe]) && e) {
-                    if (this[cbe] && (e = Buffer.concat([this[cbe], e]), this[cbe] = void 0), e.length < tbe) return this[cbe] = e, n?.(), !0;
-                    for (let t = 0; void 0 === this[Tbe] && t < ZOe.length; t++) e[t] !== ZOe[t] && (this[Tbe] = !1);
+                if ("function" == typeof t && (n = t, t = void 0), "string" == typeof e && (e = Buffer.from(e, "string" == typeof t ? t : "utf8")), this[Ibe]) return n?.(), !1;
+                if ((void 0 === this[_be] || void 0 === this.brotli && !1 === this[_be]) && e) {
+                    if (this[fbe] && (e = Buffer.concat([this[fbe], e]), this[fbe] = void 0), e.length < rbe) return this[fbe] = e, n?.(), !0;
+                    for (let t = 0; void 0 === this[_be] && t < tbe.length; t++) e[t] !== tbe[t] && (this[_be] = !1);
                     let t = !1;
-                    if (!1 === this[Tbe] && !1 !== this.zstd) {
+                    if (!1 === this[_be] && !1 !== this.zstd) {
                         t = !0;
-                        for (let n = 0; n < ebe.length; n++)
-                            if (e[n] !== ebe[n]) {
+                        for (let n = 0; n < nbe.length; n++)
+                            if (e[n] !== nbe[n]) {
                                 t = !1;
                                 break
                             }
                     }
                     let r = void 0 === this.brotli && !t;
-                    if (!1 === this[Tbe] && r)
+                    if (!1 === this[_be] && r)
                         if (e.length < 512) {
-                            if (!this[fbe]) return this[cbe] = e, n?.(), !0;
+                            if (!this[gbe]) return this[fbe] = e, n?.(), !0;
                             this.brotli = !0
                         } else try {
-                            new ROe(e.subarray(0, 512)), this.brotli = !1
+                            new FOe(e.subarray(0, 512)), this.brotli = !1
                         } catch {
                             this.brotli = !0
                         }
-                    if (void 0 === this[Tbe] || !1 === this[Tbe] && (this.brotli || t)) {
-                        let r = this[fbe];
-                        this[fbe] = !1, this[Tbe] = void 0 === this[Tbe] ? new _Oe({}) : t ? new vOe({}) : new kOe({}), this[Tbe].on("data", e => this[hbe](e)), this[Tbe].on("error", e => this.abort(e)), this[Tbe].on("end", () => {
-                            this[fbe] = !0, this[hbe]()
-                        }), this[Ebe] = !0;
-                        let s = !!this[Tbe][r ? "end" : "write"](e);
-                        return this[Ebe] = !1, n?.(), s
+                    if (void 0 === this[_be] || !1 === this[_be] && (this.brotli || t)) {
+                        let r = this[gbe];
+                        this[gbe] = !1, this[_be] = void 0 === this[_be] ? new wOe({}) : t ? new NOe({}) : new JOe({}), this[_be].on("data", e => this[ybe](e)), this[_be].on("error", e => this.abort(e)), this[_be].on("end", () => {
+                            this[gbe] = !0, this[ybe]()
+                        }), this[Bbe] = !0;
+                        let s = !!this[_be][r ? "end" : "write"](e);
+                        return this[Bbe] = !1, n?.(), s
                     }
                 }
-                this[Ebe] = !0, this[Tbe] ? this[Tbe].write(e) : this[hbe](e), this[Ebe] = !1;
-                let r = !this[dbe].length && (!this[sbe] || this[sbe].flowing);
-                return !r && !this[dbe].length && this[sbe]?.once("drain", () => this.emit("drain")), n?.(), r
-            } [Jbe](e) {
-                e && !this[Nbe] && (this[cbe] = this[cbe] ? Buffer.concat([this[cbe], e]) : e)
-            } [vbe]() {
-                if (this[fbe] && !this[pbe] && !this[Nbe] && !this[Sbe]) {
-                    this[pbe] = !0;
-                    let e = this[rbe];
+                this[Bbe] = !0, this[_be] ? this[_be].write(e) : this[ybe](e), this[Bbe] = !1;
+                let r = !this[pbe].length && (!this[abe] || this[abe].flowing);
+                return !r && !this[pbe].length && this[abe]?.once("drain", () => this.emit("drain")), n?.(), r
+            } [Ebe](e) {
+                e && !this[Ibe] && (this[fbe] = this[fbe] ? Buffer.concat([this[fbe], e]) : e)
+            } [Nbe]() {
+                if (this[gbe] && !this[Tbe] && !this[Ibe] && !this[vbe]) {
+                    this[Tbe] = !0;
+                    let e = this[ibe];
                     if (e && e.blockRemain) {
-                        let t = this[cbe] ? this[cbe].length : 0;
+                        let t = this[fbe] ? this[fbe].length : 0;
                         this.warn("TAR_BAD_ARCHIVE", `Truncated input (needed ${e.blockRemain} more bytes, only ${t} available)`, {
                             entry: e
-                        }), this[cbe] && e.write(this[cbe]), e.end()
+                        }), this[fbe] && e.write(this[fbe]), e.end()
                     }
-                    this[gbe](Bbe)
+                    this[hbe](Pbe)
                 }
-            } [hbe](e) {
-                if (this[Sbe] && e) this[Jbe](e);
-                else if (e || this[cbe]) {
+            } [ybe](e) {
+                if (this[vbe] && e) this[Ebe](e);
+                else if (e || this[fbe]) {
                     if (e) {
-                        if (this[Sbe] = !0, this[cbe]) {
-                            this[Jbe](e);
-                            let t = this[cbe];
-                            this[cbe] = void 0, this[_be](t)
-                        } else this[_be](e);
-                        for (; this[cbe] && this[cbe]?.length >= 512 && !this[Nbe] && !this[qbe];) {
-                            let e = this[cbe];
-                            this[cbe] = void 0, this[_be](e)
+                        if (this[vbe] = !0, this[fbe]) {
+                            this[Ebe](e);
+                            let t = this[fbe];
+                            this[fbe] = void 0, this[wbe](t)
+                        } else this[wbe](e);
+                        for (; this[fbe] && this[fbe]?.length >= 512 && !this[Ibe] && !this[Lbe];) {
+                            let e = this[fbe];
+                            this[fbe] = void 0, this[wbe](e)
                         }
-                        this[Sbe] = !1
+                        this[vbe] = !1
                     }
-                } else this[vbe]();
-                (!this[cbe] || this[fbe]) && this[vbe]()
-            } [_be](e) {
+                } else this[Nbe]();
+                (!this[fbe] || this[gbe]) && this[Nbe]()
+            } [wbe](e) {
                 let t = 0,
                     n = e.length;
-                for (; t + 512 <= n && !this[Nbe] && !this[qbe];) switch (this[nbe]) {
+                for (; t + 512 <= n && !this[Ibe] && !this[Lbe];) switch (this[sbe]) {
                     case "begin":
                     case "header":
-                        this[kbe](e, t), t += 512;
+                        this[Jbe](e, t), t += 512;
                         break;
                     case "ignore":
                     case "body":
-                        t += this[ybe](e, t);
+                        t += this[kbe](e, t);
                         break;
                     case "meta":
-                        t += this[wbe](e, t);
+                        t += this[Sbe](e, t);
                         break;
                     default:
-                        throw new Error("invalid state: " + this[nbe])
+                        throw new Error("invalid state: " + this[sbe])
                 }
-                t < n && (this[cbe] ? this[cbe] = Buffer.concat([e.subarray(t), this[cbe]]) : this[cbe] = e.subarray(t))
+                t < n && (this[fbe] ? this[fbe] = Buffer.concat([e.subarray(t), this[fbe]]) : this[fbe] = e.subarray(t))
             }
             end(e, t, n) {
-                return "function" == typeof e && (n = e, t = void 0, e = void 0), "function" == typeof t && (n = t, t = void 0), "string" == typeof e && (e = Buffer.from(e, t)), n && this.once("finish", n), this[Nbe] || (this[Tbe] ? (e && this[Tbe].write(e), this[Tbe].end()) : (this[fbe] = !0, (void 0 === this.brotli || void 0 === this.zstd) && (e = e || Buffer.alloc(0)), e && this.write(e), this[vbe]())), this
+                return "function" == typeof e && (n = e, t = void 0, e = void 0), "function" == typeof t && (n = t, t = void 0), "string" == typeof e && (e = Buffer.from(e, t)), n && this.once("finish", n), this[Ibe] || (this[_be] ? (e && this[_be].write(e), this[_be].end()) : (this[gbe] = !0, (void 0 === this.brotli || void 0 === this.zstd) && (e = e || Buffer.alloc(0)), e && this.write(e), this[Nbe]())), this
             }
         },
-        Obe = e => {
+        Cbe = e => {
             let t = e.length - 1,
                 n = -1;
             for (; t > -1 && "/" === e.charAt(t);) n = t, t--;
             return -1 === n ? e : e.slice(0, n)
         },
-        bbe = (e, t) => {
-            let n = new Map(t.map(e => [Obe(e), !0])),
+        Ube = (e, t) => {
+            let n = new Map(t.map(e => [Cbe(e), !0])),
                 r = e.filter,
                 s = (e, t = "") => {
-                    let r, i = t || (0, ILe.parse)(e).root || ".";
+                    let r, i = t || (0, qLe.parse)(e).root || ".";
                     if (e === i) r = !1;
                     else {
                         let t = n.get(e);
-                        r = void 0 !== t ? t : s((0, ILe.dirname)(e), i)
+                        r = void 0 !== t ? t : s((0, qLe.dirname)(e), i)
                     }
                     return n.set(e, r), r
                 };
-            e.filter = r ? (e, t) => r(e, t) && s(Obe(e)) : e => s(Obe(e))
+            e.filter = r ? (e, t) => r(e, t) && s(Cbe(e)) : e => s(Cbe(e))
         },
-        Cbe = iOe(e => {
-            let t, n = new Fbe(e),
+        Abe = oOe(e => {
+            let t, n = new bbe(e),
                 r = e.file;
             try {
                 t = o.openSync(r, "r");
@@ -113511,14 +113569,14 @@
                 } catch {}
             }
         }, (e, t) => {
-            let n = new Fbe(e),
+            let n = new bbe(e),
                 r = e.maxReadSize || 16777216,
                 s = e.file;
             return new Promise((e, t) => {
                 n.on("error", t), n.on("end", e), o.stat(s, (e, i) => {
                     if (e) t(e);
                     else {
-                        let e = new QFe(s, {
+                        let e = new eOe(s, {
                             readSize: r,
                             size: i.size
                         });
@@ -113526,53 +113584,53 @@
                     }
                 })
             })
-        }, e => new Fbe(e), e => new Fbe(e), (e, t) => {
-            t?.length && bbe(e, t), e.noResume || (e => {
+        }, e => new bbe(e), e => new bbe(e), (e, t) => {
+            t?.length && Ube(e, t), e.noResume || (e => {
                 let t = e.onReadEntry;
                 e.onReadEntry = t ? e => {
                     t(e), e.resume()
                 } : e => e.resume()
             })(e)
         }),
-        Ube = (e, t, n) => (e &= 4095, n && (e = -19 & e | 384), t && (256 & e && (e |= 64), 32 & e && (e |= 8), 4 & e && (e |= 1)), e),
+        xbe = (e, t, n) => (e &= 4095, n && (e = -19 & e | 384), t && (256 & e && (e |= 64), 32 & e && (e |= 8), 4 & e && (e |= 1)), e),
         {
-            isAbsolute: Abe,
-            parse: xbe
+            isAbsolute: Dbe,
+            parse: Mbe
         } = u.win32,
-        Dbe = e => {
+        Gbe = e => {
             let t = "",
-                n = xbe(e);
-            for (; Abe(e) || n.root;) {
+                n = Mbe(e);
+            for (; Dbe(e) || n.root;) {
                 let r = "/" === e.charAt(0) && "//?/" !== e.slice(0, 4) ? "/" : n.root;
-                e = e.slice(r.length), t += r, n = xbe(e)
+                e = e.slice(r.length), t += r, n = Mbe(e)
             }
             return [t, e]
         },
-        Mbe = ["|", "<", ">", "?", ":"],
-        Gbe = Mbe.map(e => String.fromCharCode(61440 + e.charCodeAt(0))),
-        Ybe = new Map(Mbe.map((e, t) => [e, Gbe[t]])),
-        Vbe = new Map(Gbe.map((e, t) => [e, Mbe[t]])),
-        Hbe = e => Mbe.reduce((e, t) => e.split(t).join(Ybe.get(t)), e),
-        Kbe = (e, t) => t ? (e = XOe(e).replace(/^\.(\/|$)/, ""), Obe(t) + "/" + e) : XOe(e),
-        zbe = Symbol("process"),
-        Wbe = Symbol("file"),
-        jbe = Symbol("directory"),
-        Xbe = Symbol("symlink"),
-        $be = Symbol("hardlink"),
-        Qbe = Symbol("header"),
-        Zbe = Symbol("read"),
-        eCe = Symbol("lstat"),
-        tCe = Symbol("onlstat"),
-        nCe = Symbol("onread"),
-        rCe = Symbol("onreadlink"),
-        sCe = Symbol("openfile"),
-        iCe = Symbol("onopenfile"),
-        aCe = Symbol("close"),
-        oCe = Symbol("mode"),
-        lCe = Symbol("awaitDrain"),
-        uCe = Symbol("ondrain"),
-        mCe = Symbol("prefix"),
-        cCe = class extends SFe {
+        Ybe = ["|", "<", ">", "?", ":"],
+        Vbe = Ybe.map(e => String.fromCharCode(61440 + e.charCodeAt(0))),
+        Hbe = new Map(Ybe.map((e, t) => [e, Vbe[t]])),
+        Kbe = new Map(Vbe.map((e, t) => [e, Ybe[t]])),
+        zbe = e => Ybe.reduce((e, t) => e.split(t).join(Hbe.get(t)), e),
+        Wbe = (e, t) => t ? (e = QOe(e).replace(/^\.(\/|$)/, ""), Cbe(t) + "/" + e) : QOe(e),
+        jbe = Symbol("process"),
+        Xbe = Symbol("file"),
+        $be = Symbol("directory"),
+        Qbe = Symbol("symlink"),
+        Zbe = Symbol("hardlink"),
+        eCe = Symbol("header"),
+        tCe = Symbol("read"),
+        nCe = Symbol("lstat"),
+        rCe = Symbol("onlstat"),
+        sCe = Symbol("onread"),
+        iCe = Symbol("onreadlink"),
+        aCe = Symbol("openfile"),
+        oCe = Symbol("onopenfile"),
+        lCe = Symbol("close"),
+        uCe = Symbol("mode"),
+        mCe = Symbol("awaitDrain"),
+        cCe = Symbol("ondrain"),
+        dCe = Symbol("prefix"),
+        fCe = class extends vFe {
             path;
             portable;
             myuid = process.getuid && process.getuid() || 0;
@@ -113604,54 +113662,54 @@
             onWriteEntry;
             #e = !1;
             constructor(e, t = {}) {
-                let n = sOe(t);
-                super(), this.path = XOe(e), this.portable = !!n.portable, this.maxReadSize = n.maxReadSize || 16777216, this.linkCache = n.linkCache || new Map, this.statCache = n.statCache || new Map, this.preservePaths = !!n.preservePaths, this.cwd = XOe(n.cwd || process.cwd()), this.strict = !!n.strict, this.noPax = !!n.noPax, this.noMtime = !!n.noMtime, this.mtime = n.mtime, this.prefix = n.prefix ? XOe(n.prefix) : void 0, this.onWriteEntry = n.onWriteEntry, "function" == typeof n.onwarn && this.on("warn", n.onwarn);
+                let n = aOe(t);
+                super(), this.path = QOe(e), this.portable = !!n.portable, this.maxReadSize = n.maxReadSize || 16777216, this.linkCache = n.linkCache || new Map, this.statCache = n.statCache || new Map, this.preservePaths = !!n.preservePaths, this.cwd = QOe(n.cwd || process.cwd()), this.strict = !!n.strict, this.noPax = !!n.noPax, this.noMtime = !!n.noMtime, this.mtime = n.mtime, this.prefix = n.prefix ? QOe(n.prefix) : void 0, this.onWriteEntry = n.onWriteEntry, "function" == typeof n.onwarn && this.on("warn", n.onwarn);
                 let r = !1;
                 if (!this.preservePaths) {
-                    let [e, t] = Dbe(this.path);
+                    let [e, t] = Gbe(this.path);
                     e && "string" == typeof t && (this.path = t, r = e)
                 }
                 var s;
-                this.win32 = !!n.win32 || "win32" === process.platform, this.win32 && (this.path = (s = this.path.replace(/\\/g, "/"), Gbe.reduce((e, t) => e.split(t).join(Vbe.get(t)), s)), e = e.replace(/\\/g, "/")), this.absolute = XOe(n.absolute || ILe.resolve(this.cwd, e)), "" === this.path && (this.path = "./"), r && this.warn("TAR_ENTRY_INFO", `stripping ${r} from absolute path`, {
+                this.win32 = !!n.win32 || "win32" === process.platform, this.win32 && (this.path = (s = this.path.replace(/\\/g, "/"), Vbe.reduce((e, t) => e.split(t).join(Kbe.get(t)), s)), e = e.replace(/\\/g, "/")), this.absolute = QOe(n.absolute || qLe.resolve(this.cwd, e)), "" === this.path && (this.path = "./"), r && this.warn("TAR_ENTRY_INFO", `stripping ${r} from absolute path`, {
                     entry: this,
                     path: r + this.path
                 });
                 let i = this.statCache.get(this.absolute);
-                i ? this[tCe](i) : this[eCe]()
+                i ? this[rCe](i) : this[nCe]()
             }
             warn(e, t, n = {}) {
-                return QOe(this, e, t, n)
+                return ebe(this, e, t, n)
             }
             emit(e, ...t) {
                 return "error" === e && (this.#e = !0), super.emit(e, ...t)
-            } [eCe]() {
-                vLe.lstat(this.absolute, (e, t) => {
+            } [nCe]() {
+                NLe.lstat(this.absolute, (e, t) => {
                     if (e) return this.emit("error", e);
-                    this[tCe](t)
+                    this[rCe](t)
                 })
-            } [tCe](e) {
-                this.statCache.set(this.absolute, e), this.stat = e, e.isFile() || (e.size = 0), this.type = pCe(e), this.emit("stat", e), this[zbe]()
-            } [zbe]() {
+            } [rCe](e) {
+                this.statCache.set(this.absolute, e), this.stat = e, e.isFile() || (e.size = 0), this.type = TCe(e), this.emit("stat", e), this[jbe]()
+            } [jbe]() {
                 switch (this.type) {
                     case "File":
-                        return this[Wbe]();
-                    case "Directory":
-                        return this[jbe]();
-                    case "SymbolicLink":
                         return this[Xbe]();
+                    case "Directory":
+                        return this[$be]();
+                    case "SymbolicLink":
+                        return this[Qbe]();
                     default:
                         return this.end()
                 }
-            } [oCe](e) {
-                return Ube(e, "Directory" === this.type, this.portable)
-            } [mCe](e) {
-                return Kbe(e, this.prefix)
-            } [Qbe]() {
+            } [uCe](e) {
+                return xbe(e, "Directory" === this.type, this.portable)
+            } [dCe](e) {
+                return Wbe(e, this.prefix)
+            } [eCe]() {
                 if (!this.stat) throw new Error("cannot write header before stat");
-                "Directory" === this.type && this.portable && (this.noMtime = !0), this.onWriteEntry?.(this), this.header = new ROe({
-                    path: this[mCe](this.path),
-                    linkpath: "Link" === this.type && void 0 !== this.linkpath ? this[mCe](this.linkpath) : this.linkpath,
-                    mode: this[oCe](this.stat.mode),
+                "Directory" === this.type && this.portable && (this.noMtime = !0), this.onWriteEntry?.(this), this.header = new FOe({
+                    path: this[dCe](this.path),
+                    linkpath: "Link" === this.type && void 0 !== this.linkpath ? this[dCe](this.linkpath) : this.linkpath,
+                    mode: this[uCe](this.stat.mode),
                     uid: this.portable ? void 0 : this.stat.uid,
                     gid: this.portable ? void 0 : this.stat.gid,
                     size: this.stat.size,
@@ -113660,13 +113718,13 @@
                     uname: this.portable ? void 0 : this.stat.uid === this.myuid ? this.myuser : "",
                     atime: this.portable ? void 0 : this.stat.atime,
                     ctime: this.portable ? void 0 : this.stat.ctime
-                }), this.header.encode() && !this.noPax && super.write(new KOe({
+                }), this.header.encode() && !this.noPax && super.write(new WOe({
                     atime: this.portable ? void 0 : this.header.atime,
                     ctime: this.portable ? void 0 : this.header.ctime,
                     gid: this.portable ? void 0 : this.header.gid,
                     mtime: this.noMtime ? void 0 : this.mtime || this.header.mtime,
-                    path: this[mCe](this.path),
-                    linkpath: "Link" === this.type && void 0 !== this.linkpath ? this[mCe](this.linkpath) : this.linkpath,
+                    path: this[dCe](this.path),
+                    linkpath: "Link" === this.type && void 0 !== this.linkpath ? this[dCe](this.linkpath) : this.linkpath,
                     size: this.header.size,
                     uid: this.portable ? void 0 : this.header.uid,
                     uname: this.portable ? void 0 : this.header.uname,
@@ -113677,41 +113735,41 @@
                 let e = this.header?.block;
                 if (!e) throw new Error("failed to encode header");
                 super.write(e)
-            } [jbe]() {
+            } [$be]() {
                 if (!this.stat) throw new Error("cannot create directory entry without stat");
-                "/" !== this.path.slice(-1) && (this.path += "/"), this.stat.size = 0, this[Qbe](), this.end()
-            } [Xbe]() {
-                vLe.readlink(this.absolute, (e, t) => {
-                    if (e) return this.emit("error", e);
-                    this[rCe](t)
-                })
-            } [rCe](e) {
-                this.linkpath = XOe(e), this[Qbe](), this.end()
-            } [$be](e) {
-                if (!this.stat) throw new Error("cannot create link entry without stat");
-                this.type = "Link", this.linkpath = XOe(ILe.relative(this.cwd, e)), this.stat.size = 0, this[Qbe](), this.end()
-            } [Wbe]() {
-                if (!this.stat) throw new Error("cannot create file entry without stat");
-                if (this.stat.nlink > 1) {
-                    let e = `${this.stat.dev}:${this.stat.ino}`,
-                        t = this.linkCache.get(e);
-                    if (0 === t?.indexOf(this.cwd)) return this[$be](t);
-                    this.linkCache.set(e, this.absolute)
-                }
-                if (this[Qbe](), 0 === this.stat.size) return this.end();
-                this[sCe]()
-            } [sCe]() {
-                vLe.open(this.absolute, "r", (e, t) => {
+                "/" !== this.path.slice(-1) && (this.path += "/"), this.stat.size = 0, this[eCe](), this.end()
+            } [Qbe]() {
+                NLe.readlink(this.absolute, (e, t) => {
                     if (e) return this.emit("error", e);
                     this[iCe](t)
                 })
             } [iCe](e) {
-                if (this.fd = e, this.#e) return this[aCe]();
+                this.linkpath = QOe(e), this[eCe](), this.end()
+            } [Zbe](e) {
+                if (!this.stat) throw new Error("cannot create link entry without stat");
+                this.type = "Link", this.linkpath = QOe(qLe.relative(this.cwd, e)), this.stat.size = 0, this[eCe](), this.end()
+            } [Xbe]() {
+                if (!this.stat) throw new Error("cannot create file entry without stat");
+                if (this.stat.nlink > 1) {
+                    let e = `${this.stat.dev}:${this.stat.ino}`,
+                        t = this.linkCache.get(e);
+                    if (0 === t?.indexOf(this.cwd)) return this[Zbe](t);
+                    this.linkCache.set(e, this.absolute)
+                }
+                if (this[eCe](), 0 === this.stat.size) return this.end();
+                this[aCe]()
+            } [aCe]() {
+                NLe.open(this.absolute, "r", (e, t) => {
+                    if (e) return this.emit("error", e);
+                    this[oCe](t)
+                })
+            } [oCe](e) {
+                if (this.fd = e, this.#e) return this[lCe]();
                 if (!this.stat) throw new Error("should stat before calling onopenfile");
                 this.blockLen = 512 * Math.ceil(this.stat.size / 512), this.blockRemain = this.blockLen;
                 let t = Math.min(this.blockLen, this.maxReadSize);
-                this.buf = Buffer.allocUnsafe(t), this.offset = 0, this.pos = 0, this.remain = this.stat.size, this.length = this.buf.length, this[Zbe]()
-            } [Zbe]() {
+                this.buf = Buffer.allocUnsafe(t), this.offset = 0, this.pos = 0, this.remain = this.stat.size, this.length = this.buf.length, this[tCe]()
+            } [tCe]() {
                 let {
                     fd: e,
                     buf: t,
@@ -113720,20 +113778,20 @@
                     pos: s
                 } = this;
                 if (void 0 === e || void 0 === t) throw new Error("cannot read file without first opening");
-                vLe.read(e, t, n, r, s, (e, t) => {
-                    if (e) return this[aCe](() => this.emit("error", e));
-                    this[nCe](t)
+                NLe.read(e, t, n, r, s, (e, t) => {
+                    if (e) return this[lCe](() => this.emit("error", e));
+                    this[sCe](t)
                 })
-            } [aCe](e = () => {}) {
-                void 0 !== this.fd && vLe.close(this.fd, e)
-            } [nCe](e) {
+            } [lCe](e = () => {}) {
+                void 0 !== this.fd && NLe.close(this.fd, e)
+            } [sCe](e) {
                 if (e <= 0 && this.remain > 0) {
                     let e = Object.assign(new Error("encountered unexpected EOF"), {
                         path: this.absolute,
                         syscall: "read",
                         code: "EOF"
                     });
-                    return this[aCe](() => this.emit("error", e))
+                    return this[lCe](() => this.emit("error", e))
                 }
                 if (e > this.remain) {
                     let e = Object.assign(new Error("did not encounter expected EOF"), {
@@ -113741,14 +113799,14 @@
                         syscall: "read",
                         code: "EOF"
                     });
-                    return this[aCe](() => this.emit("error", e))
+                    return this[lCe](() => this.emit("error", e))
                 }
                 if (!this.buf) throw new Error("should have created buffer prior to reading");
                 if (e === this.remain)
                     for (let t = e; t < this.length && e < this.blockRemain; t++) this.buf[t + this.offset] = 0, e++, this.remain++;
                 let t = 0 === this.offset && e === this.buf.length ? this.buf : this.buf.subarray(this.offset, this.offset + e);
-                this.write(t) ? this[uCe]() : this[lCe](() => this[uCe]())
-            } [lCe](e) {
+                this.write(t) ? this[cCe]() : this[mCe](() => this[cCe]())
+            } [mCe](e) {
                 this.once("drain", e)
             }
             write(e, t, n) {
@@ -113759,21 +113817,21 @@
                     return this.emit("error", e)
                 }
                 return this.remain -= e.length, this.blockRemain -= e.length, this.pos += e.length, this.offset += e.length, super.write(e, null, n)
-            } [uCe]() {
-                if (!this.remain) return this.blockRemain && super.write(Buffer.alloc(this.blockRemain)), this[aCe](e => e ? this.emit("error", e) : this.end());
+            } [cCe]() {
+                if (!this.remain) return this.blockRemain && super.write(Buffer.alloc(this.blockRemain)), this[lCe](e => e ? this.emit("error", e) : this.end());
                 if (!this.buf) throw new Error("buffer lost somehow in ONDRAIN");
-                this.offset >= this.length && (this.buf = Buffer.allocUnsafe(Math.min(this.blockRemain, this.buf.length)), this.offset = 0), this.length = this.buf.length - this.offset, this[Zbe]()
+                this.offset >= this.length && (this.buf = Buffer.allocUnsafe(Math.min(this.blockRemain, this.buf.length)), this.offset = 0), this.length = this.buf.length - this.offset, this[tCe]()
             }
         },
-        dCe = class extends cCe {
+        pCe = class extends fCe {
             sync = !0;
-            [eCe]() {
-                this[tCe](vLe.lstatSync(this.absolute))
-            } [Xbe]() {
-                this[rCe](vLe.readlinkSync(this.absolute))
-            } [sCe]() {
-                this[iCe](vLe.openSync(this.absolute, "r"))
-            } [Zbe]() {
+            [nCe]() {
+                this[rCe](NLe.lstatSync(this.absolute))
+            } [Qbe]() {
+                this[iCe](NLe.readlinkSync(this.absolute))
+            } [aCe]() {
+                this[oCe](NLe.openSync(this.absolute, "r"))
+            } [tCe]() {
                 let e = !0;
                 try {
                     let {
@@ -113784,20 +113842,20 @@
                         pos: i
                     } = this;
                     if (void 0 === t || void 0 === n) throw new Error("fd and buf must be set in READ method");
-                    let a = vLe.readSync(t, n, r, s, i);
-                    this[nCe](a), e = !1
+                    let a = NLe.readSync(t, n, r, s, i);
+                    this[sCe](a), e = !1
                 } finally {
                     if (e) try {
-                        this[aCe](() => {})
+                        this[lCe](() => {})
                     } catch {}
                 }
-            } [lCe](e) {
+            } [mCe](e) {
                 e()
-            } [aCe](e = () => {}) {
-                void 0 !== this.fd && vLe.closeSync(this.fd), e()
+            } [lCe](e = () => {}) {
+                void 0 !== this.fd && NLe.closeSync(this.fd), e()
             }
         },
-        fCe = class extends SFe {
+        gCe = class extends vFe {
             blockLen = 0;
             blockRemain = 0;
             buf = 0;
@@ -113826,24 +113884,24 @@
             size;
             onWriteEntry;
             warn(e, t, n = {}) {
-                return QOe(this, e, t, n)
+                return ebe(this, e, t, n)
             }
             constructor(e, t = {}) {
-                let n = sOe(t);
+                let n = aOe(t);
                 super(), this.preservePaths = !!n.preservePaths, this.portable = !!n.portable, this.strict = !!n.strict, this.noPax = !!n.noPax, this.noMtime = !!n.noMtime, this.onWriteEntry = n.onWriteEntry, this.readEntry = e;
                 let {
                     type: r
                 } = e;
                 if ("Unsupported" === r) throw new Error("writing entry that should be ignored");
-                this.type = r, "Directory" === this.type && this.portable && (this.noMtime = !0), this.prefix = n.prefix, this.path = XOe(e.path), this.mode = void 0 !== e.mode ? this[oCe](e.mode) : void 0, this.uid = this.portable ? void 0 : e.uid, this.gid = this.portable ? void 0 : e.gid, this.uname = this.portable ? void 0 : e.uname, this.gname = this.portable ? void 0 : e.gname, this.size = e.size, this.mtime = this.noMtime ? void 0 : n.mtime || e.mtime, this.atime = this.portable ? void 0 : e.atime, this.ctime = this.portable ? void 0 : e.ctime, this.linkpath = void 0 !== e.linkpath ? XOe(e.linkpath) : void 0, "function" == typeof n.onwarn && this.on("warn", n.onwarn);
+                this.type = r, "Directory" === this.type && this.portable && (this.noMtime = !0), this.prefix = n.prefix, this.path = QOe(e.path), this.mode = void 0 !== e.mode ? this[uCe](e.mode) : void 0, this.uid = this.portable ? void 0 : e.uid, this.gid = this.portable ? void 0 : e.gid, this.uname = this.portable ? void 0 : e.uname, this.gname = this.portable ? void 0 : e.gname, this.size = e.size, this.mtime = this.noMtime ? void 0 : n.mtime || e.mtime, this.atime = this.portable ? void 0 : e.atime, this.ctime = this.portable ? void 0 : e.ctime, this.linkpath = void 0 !== e.linkpath ? QOe(e.linkpath) : void 0, "function" == typeof n.onwarn && this.on("warn", n.onwarn);
                 let s = !1;
                 if (!this.preservePaths) {
-                    let [e, t] = Dbe(this.path);
+                    let [e, t] = Gbe(this.path);
                     e && "string" == typeof t && (this.path = t, s = e)
                 }
-                this.remain = e.size, this.blockRemain = e.startBlockSize, this.onWriteEntry?.(this), this.header = new ROe({
-                    path: this[mCe](this.path),
-                    linkpath: "Link" === this.type && void 0 !== this.linkpath ? this[mCe](this.linkpath) : this.linkpath,
+                this.remain = e.size, this.blockRemain = e.startBlockSize, this.onWriteEntry?.(this), this.header = new FOe({
+                    path: this[dCe](this.path),
+                    linkpath: "Link" === this.type && void 0 !== this.linkpath ? this[dCe](this.linkpath) : this.linkpath,
                     mode: this.mode,
                     uid: this.portable ? void 0 : this.uid,
                     gid: this.portable ? void 0 : this.gid,
@@ -113856,13 +113914,13 @@
                 }), s && this.warn("TAR_ENTRY_INFO", `stripping ${s} from absolute path`, {
                     entry: this,
                     path: s + this.path
-                }), this.header.encode() && !this.noPax && super.write(new KOe({
+                }), this.header.encode() && !this.noPax && super.write(new WOe({
                     atime: this.portable ? void 0 : this.atime,
                     ctime: this.portable ? void 0 : this.ctime,
                     gid: this.portable ? void 0 : this.gid,
                     mtime: this.noMtime ? void 0 : this.mtime,
-                    path: this[mCe](this.path),
-                    linkpath: "Link" === this.type && void 0 !== this.linkpath ? this[mCe](this.linkpath) : this.linkpath,
+                    path: this[dCe](this.path),
+                    linkpath: "Link" === this.type && void 0 !== this.linkpath ? this[dCe](this.linkpath) : this.linkpath,
                     size: this.size,
                     uid: this.portable ? void 0 : this.uid,
                     uname: this.portable ? void 0 : this.uname,
@@ -113873,10 +113931,10 @@
                 let i = this.header?.block;
                 if (!i) throw new Error("failed to encode header");
                 super.write(i), e.pipe(this)
-            } [mCe](e) {
-                return Kbe(e, this.prefix)
-            } [oCe](e) {
-                return Ube(e, "Directory" === this.type, this.portable)
+            } [dCe](e) {
+                return Wbe(e, this.prefix)
+            } [uCe](e) {
+                return xbe(e, "Directory" === this.type, this.portable)
             }
             write(e, t, n) {
                 "function" == typeof t && (n = t, t = void 0), "string" == typeof e && (e = Buffer.from(e, "string" == typeof t ? t : "utf8"));
@@ -113888,8 +113946,8 @@
                 return this.blockRemain && super.write(Buffer.alloc(this.blockRemain)), "function" == typeof e && (n = e, t = void 0, e = void 0), "function" == typeof t && (n = t, t = void 0), "string" == typeof e && (e = Buffer.from(e, t ?? "utf8")), n && this.once("finish", n), e ? super.end(e, n) : super.end(n), this
             }
         },
-        pCe = e => e.isFile() ? "File" : e.isDirectory() ? "Directory" : e.isSymbolicLink() ? "SymbolicLink" : "Unsupported",
-        gCe = class e {
+        TCe = e => e.isFile() ? "File" : e.isDirectory() ? "Directory" : e.isSymbolicLink() ? "SymbolicLink" : "Unsupported",
+        hCe = class e {
             tail;
             head;
             length = 0;
@@ -113920,11 +113978,11 @@
                 e.list = this, e.prev = t, t && (t.next = e), this.tail = e, this.head || (this.head = e), this.length++
             }
             push(...e) {
-                for (let t = 0, n = e.length; t < n; t++) hCe(this, e[t]);
+                for (let t = 0, n = e.length; t < n; t++) yCe(this, e[t]);
                 return this.length
             }
             unshift(...e) {
-                for (var t = 0, n = e.length; t < n; t++) _Ce(this, e[t]);
+                for (var t = 0, n = e.length; t < n; t++) wCe(this, e[t]);
                 return this.length
             }
             pop() {
@@ -114030,7 +114088,7 @@
                 let s = [];
                 for (let e = 0; r && e < t; e++) s.push(r.value), r = this.removeNode(r);
                 r ? r !== this.tail && (r = r.prev) : r = this.tail;
-                for (let e of n) r = TCe(this, r, e);
+                for (let e of n) r = _Ce(this, r, e);
                 return s
             }
             reverse() {
@@ -114044,21 +114102,21 @@
             }
         };
 
-    function TCe(e, t, n) {
+    function _Ce(e, t, n) {
         let r = t,
             s = t ? t.next : e.head,
-            i = new yCe(n, r, s, e);
+            i = new kCe(n, r, s, e);
         return void 0 === i.next && (e.tail = i), void 0 === i.prev && (e.head = i), e.length++, i
     }
 
-    function hCe(e, t) {
-        e.tail = new yCe(t, e.tail, void 0, e), e.head || (e.head = e.tail), e.length++
+    function yCe(e, t) {
+        e.tail = new kCe(t, e.tail, void 0, e), e.head || (e.head = e.tail), e.length++
     }
 
-    function _Ce(e, t) {
-        e.head = new yCe(t, void 0, e.head, e), e.tail || (e.tail = e.head), e.length++
+    function wCe(e, t) {
+        e.head = new kCe(t, void 0, e.head, e), e.tail || (e.tail = e.head), e.length++
     }
-    var yCe = class {
+    var kCe = class {
             list;
             next;
             prev;
@@ -114067,7 +114125,7 @@
                 this.list = r, this.value = e, t ? (t.next = this, this.prev = t) : this.prev = void 0, n ? (n.prev = this, this.next = n) : this.next = void 0
             }
         },
-        wCe = class {
+        SCe = class {
             path;
             absolute;
             entry;
@@ -114080,28 +114138,28 @@
                 this.path = e || "./", this.absolute = t
             }
         },
-        kCe = Buffer.alloc(1024),
-        SCe = Symbol("onStat"),
-        JCe = Symbol("ended"),
-        vCe = Symbol("queue"),
-        ECe = Symbol("current"),
-        NCe = Symbol("process"),
-        BCe = Symbol("processing"),
-        ICe = Symbol("processJob"),
-        PCe = Symbol("jobs"),
-        qCe = Symbol("jobDone"),
-        RCe = Symbol("addFSEntry"),
-        LCe = Symbol("addTarEntry"),
-        FCe = Symbol("stat"),
-        OCe = Symbol("readdir"),
-        bCe = Symbol("onreaddir"),
-        CCe = Symbol("pipe"),
-        UCe = Symbol("entry"),
-        ACe = Symbol("entryOpt"),
-        xCe = Symbol("writeEntryClass"),
-        DCe = Symbol("write"),
-        MCe = Symbol("ondrain"),
-        GCe = class extends SFe {
+        JCe = Buffer.alloc(1024),
+        vCe = Symbol("onStat"),
+        ECe = Symbol("ended"),
+        NCe = Symbol("queue"),
+        BCe = Symbol("current"),
+        ICe = Symbol("process"),
+        PCe = Symbol("processing"),
+        qCe = Symbol("processJob"),
+        RCe = Symbol("jobs"),
+        LCe = Symbol("jobDone"),
+        FCe = Symbol("addFSEntry"),
+        OCe = Symbol("addTarEntry"),
+        bCe = Symbol("stat"),
+        CCe = Symbol("readdir"),
+        UCe = Symbol("onreaddir"),
+        ACe = Symbol("pipe"),
+        xCe = Symbol("entry"),
+        DCe = Symbol("entryOpt"),
+        MCe = Symbol("writeEntryClass"),
+        GCe = Symbol("write"),
+        YCe = Symbol("ondrain"),
+        VCe = class extends vFe {
             sync = !1;
             opt;
             cwd;
@@ -114122,88 +114180,88 @@
             mtime;
             filter;
             jobs;
-            [xCe];
+            [MCe];
             onWriteEntry;
-            [vCe];
-            [PCe] = 0;
-            [BCe] = !1;
-            [JCe] = !1;
+            [NCe];
+            [RCe] = 0;
+            [PCe] = !1;
+            [ECe] = !1;
             constructor(e = {}) {
-                if (super(), this.opt = e, this.file = e.file || "", this.cwd = e.cwd || process.cwd(), this.maxReadSize = e.maxReadSize, this.preservePaths = !!e.preservePaths, this.strict = !!e.strict, this.noPax = !!e.noPax, this.prefix = XOe(e.prefix || ""), this.linkCache = e.linkCache || new Map, this.statCache = e.statCache || new Map, this.readdirCache = e.readdirCache || new Map, this.onWriteEntry = e.onWriteEntry, this[xCe] = cCe, "function" == typeof e.onwarn && this.on("warn", e.onwarn), this.portable = !!e.portable, e.gzip || e.brotli || e.zstd) {
+                if (super(), this.opt = e, this.file = e.file || "", this.cwd = e.cwd || process.cwd(), this.maxReadSize = e.maxReadSize, this.preservePaths = !!e.preservePaths, this.strict = !!e.strict, this.noPax = !!e.noPax, this.prefix = QOe(e.prefix || ""), this.linkCache = e.linkCache || new Map, this.statCache = e.statCache || new Map, this.readdirCache = e.readdirCache || new Map, this.onWriteEntry = e.onWriteEntry, this[MCe] = fCe, "function" == typeof e.onwarn && this.on("warn", e.onwarn), this.portable = !!e.portable, e.gzip || e.brotli || e.zstd) {
                     if ((e.gzip ? 1 : 0) + (e.brotli ? 1 : 0) + (e.zstd ? 1 : 0) > 1) throw new TypeError("gzip, brotli, zstd are mutually exclusive");
-                    if (e.gzip && ("object" != typeof e.gzip && (e.gzip = {}), this.portable && (e.gzip.portable = !0), this.zip = new hOe(e.gzip)), e.brotli && ("object" != typeof e.brotli && (e.brotli = {}), this.zip = new wOe(e.brotli)), e.zstd && ("object" != typeof e.zstd && (e.zstd = {}), this.zip = new JOe(e.zstd)), !this.zip) throw new Error("impossible");
+                    if (e.gzip && ("object" != typeof e.gzip && (e.gzip = {}), this.portable && (e.gzip.portable = !0), this.zip = new yOe(e.gzip)), e.brotli && ("object" != typeof e.brotli && (e.brotli = {}), this.zip = new SOe(e.brotli)), e.zstd && ("object" != typeof e.zstd && (e.zstd = {}), this.zip = new EOe(e.zstd)), !this.zip) throw new Error("impossible");
                     let t = this.zip;
-                    t.on("data", e => super.write(e)), t.on("end", () => super.end()), t.on("drain", () => this[MCe]()), this.on("resume", () => t.resume())
-                } else this.on("drain", this[MCe]);
-                this.noDirRecurse = !!e.noDirRecurse, this.follow = !!e.follow, this.noMtime = !!e.noMtime, e.mtime && (this.mtime = e.mtime), this.filter = "function" == typeof e.filter ? e.filter : () => !0, this[vCe] = new gCe, this[PCe] = 0, this.jobs = Number(e.jobs) || 4, this[BCe] = !1, this[JCe] = !1
-            } [DCe](e) {
+                    t.on("data", e => super.write(e)), t.on("end", () => super.end()), t.on("drain", () => this[YCe]()), this.on("resume", () => t.resume())
+                } else this.on("drain", this[YCe]);
+                this.noDirRecurse = !!e.noDirRecurse, this.follow = !!e.follow, this.noMtime = !!e.noMtime, e.mtime && (this.mtime = e.mtime), this.filter = "function" == typeof e.filter ? e.filter : () => !0, this[NCe] = new hCe, this[RCe] = 0, this.jobs = Number(e.jobs) || 4, this[PCe] = !1, this[ECe] = !1
+            } [GCe](e) {
                 return super.write(e)
             }
             add(e) {
                 return this.write(e), this
             }
             end(e, t, n) {
-                return "function" == typeof e && (n = e, e = void 0), "function" == typeof t && (n = t, t = void 0), e && this.add(e), this[JCe] = !0, this[NCe](), n && n(), this
+                return "function" == typeof e && (n = e, e = void 0), "function" == typeof t && (n = t, t = void 0), e && this.add(e), this[ECe] = !0, this[ICe](), n && n(), this
             }
             write(e) {
-                if (this[JCe]) throw new Error("write after end");
-                return e instanceof $Oe ? this[LCe](e) : this[RCe](e), this.flowing
-            } [LCe](e) {
-                let t = XOe(ILe.resolve(this.cwd, e.path));
-                if (this.filter(e.path, e)) {
-                    let n = new wCe(e.path, t);
-                    n.entry = new fCe(e, this[ACe](n)), n.entry.on("end", () => this[qCe](n)), this[PCe] += 1, this[vCe].push(n)
-                } else e.resume();
-                this[NCe]()
-            } [RCe](e) {
-                let t = XOe(ILe.resolve(this.cwd, e));
-                this[vCe].push(new wCe(e, t)), this[NCe]()
-            } [FCe](e) {
-                e.pending = !0, this[PCe] += 1;
-                let t = this.follow ? "stat" : "lstat";
-                vLe[t](e.absolute, (t, n) => {
-                    e.pending = !1, this[PCe] -= 1, t ? this.emit("error", t) : this[SCe](e, n)
-                })
-            } [SCe](e, t) {
-                this.statCache.set(e.absolute, t), e.stat = t, this.filter(e.path, t) ? t.isFile() && t.nlink > 1 && e === this[ECe] && !this.linkCache.get(`${t.dev}:${t.ino}`) && !this.sync && this[ICe](e) : e.ignore = !0, this[NCe]()
+                if (this[ECe]) throw new Error("write after end");
+                return e instanceof ZOe ? this[OCe](e) : this[FCe](e), this.flowing
             } [OCe](e) {
-                e.pending = !0, this[PCe] += 1, vLe.readdir(e.absolute, (t, n) => {
-                    if (e.pending = !1, this[PCe] -= 1, t) return this.emit("error", t);
-                    this[bCe](e, n)
+                let t = QOe(qLe.resolve(this.cwd, e.path));
+                if (this.filter(e.path, e)) {
+                    let n = new SCe(e.path, t);
+                    n.entry = new gCe(e, this[DCe](n)), n.entry.on("end", () => this[LCe](n)), this[RCe] += 1, this[NCe].push(n)
+                } else e.resume();
+                this[ICe]()
+            } [FCe](e) {
+                let t = QOe(qLe.resolve(this.cwd, e));
+                this[NCe].push(new SCe(e, t)), this[ICe]()
+            } [bCe](e) {
+                e.pending = !0, this[RCe] += 1;
+                let t = this.follow ? "stat" : "lstat";
+                NLe[t](e.absolute, (t, n) => {
+                    e.pending = !1, this[RCe] -= 1, t ? this.emit("error", t) : this[vCe](e, n)
                 })
-            } [bCe](e, t) {
-                this.readdirCache.set(e.absolute, t), e.readdir = t, this[NCe]()
-            } [NCe]() {
-                if (!this[BCe]) {
-                    this[BCe] = !0;
-                    for (let e = this[vCe].head; e && this[PCe] < this.jobs; e = e.next)
-                        if (this[ICe](e.value), e.value.ignore) {
+            } [vCe](e, t) {
+                this.statCache.set(e.absolute, t), e.stat = t, this.filter(e.path, t) ? t.isFile() && t.nlink > 1 && e === this[BCe] && !this.linkCache.get(`${t.dev}:${t.ino}`) && !this.sync && this[qCe](e) : e.ignore = !0, this[ICe]()
+            } [CCe](e) {
+                e.pending = !0, this[RCe] += 1, NLe.readdir(e.absolute, (t, n) => {
+                    if (e.pending = !1, this[RCe] -= 1, t) return this.emit("error", t);
+                    this[UCe](e, n)
+                })
+            } [UCe](e, t) {
+                this.readdirCache.set(e.absolute, t), e.readdir = t, this[ICe]()
+            } [ICe]() {
+                if (!this[PCe]) {
+                    this[PCe] = !0;
+                    for (let e = this[NCe].head; e && this[RCe] < this.jobs; e = e.next)
+                        if (this[qCe](e.value), e.value.ignore) {
                             let t = e.next;
-                            this[vCe].removeNode(e), e.next = t
-                        } this[BCe] = !1, this[JCe] && !this[vCe].length && 0 === this[PCe] && (this.zip ? this.zip.end(kCe) : (super.write(kCe), super.end()))
+                            this[NCe].removeNode(e), e.next = t
+                        } this[PCe] = !1, this[ECe] && !this[NCe].length && 0 === this[RCe] && (this.zip ? this.zip.end(JCe) : (super.write(JCe), super.end()))
                 }
             }
-            get[ECe]() {
-                return this[vCe] && this[vCe].head && this[vCe].head.value
+            get[BCe]() {
+                return this[NCe] && this[NCe].head && this[NCe].head.value
+            } [LCe](e) {
+                this[NCe].shift(), this[RCe] -= 1, this[ICe]()
             } [qCe](e) {
-                this[vCe].shift(), this[PCe] -= 1, this[NCe]()
-            } [ICe](e) {
                 if (!e.pending) {
-                    if (e.entry) return void(e === this[ECe] && !e.piped && this[CCe](e));
+                    if (e.entry) return void(e === this[BCe] && !e.piped && this[ACe](e));
                     if (!e.stat) {
                         let t = this.statCache.get(e.absolute);
-                        t ? this[SCe](e, t) : this[FCe](e)
+                        t ? this[vCe](e, t) : this[bCe](e)
                     }
                     if (e.stat && !e.ignore) {
                         if (!this.noDirRecurse && e.stat.isDirectory() && !e.readdir) {
                             let t = this.readdirCache.get(e.absolute);
-                            if (t ? this[bCe](e, t) : this[OCe](e), !e.readdir) return
+                            if (t ? this[UCe](e, t) : this[CCe](e), !e.readdir) return
                         }
-                        if (e.entry = this[UCe](e), !e.entry) return void(e.ignore = !0);
-                        e === this[ECe] && !e.piped && this[CCe](e)
+                        if (e.entry = this[xCe](e), !e.entry) return void(e.ignore = !0);
+                        e === this[BCe] && !e.piped && this[ACe](e)
                     }
                 }
-            } [ACe](e) {
+            } [DCe](e) {
                 return {
                     onwarn: (e, t, n) => this.warn(e, t, n),
                     noPax: this.noPax,
@@ -114220,20 +114278,20 @@
                     prefix: this.prefix,
                     onWriteEntry: this.onWriteEntry
                 }
-            } [UCe](e) {
-                this[PCe] += 1;
+            } [xCe](e) {
+                this[RCe] += 1;
                 try {
-                    return new this[xCe](e.path, this[ACe](e)).on("end", () => this[qCe](e)).on("error", e => this.emit("error", e))
+                    return new this[MCe](e.path, this[DCe](e)).on("end", () => this[LCe](e)).on("error", e => this.emit("error", e))
                 } catch (e) {
                     this.emit("error", e)
                 }
-            } [MCe]() {
-                this[ECe] && this[ECe].entry && this[ECe].entry.resume()
-            } [CCe](e) {
+            } [YCe]() {
+                this[BCe] && this[BCe].entry && this[BCe].entry.resume()
+            } [ACe](e) {
                 e.piped = !0, e.readdir && e.readdir.forEach(t => {
                     let n = e.path,
                         r = "./" === n ? "" : n.replace(/\/*$/, "/");
-                    this[RCe](r + t)
+                    this[FCe](r + t)
                 });
                 let t = e.entry,
                     n = this.zip;
@@ -114248,38 +114306,38 @@
                 return this.zip && this.zip.pause(), super.pause()
             }
             warn(e, t, n = {}) {
-                QOe(this, e, t, n)
+                ebe(this, e, t, n)
             }
         },
-        YCe = class extends GCe {
+        HCe = class extends VCe {
             sync = !0;
             constructor(e) {
-                super(e), this[xCe] = dCe
+                super(e), this[MCe] = pCe
             }
             pause() {}
-            resume() {} [FCe](e) {
+            resume() {} [bCe](e) {
                 let t = this.follow ? "statSync" : "lstatSync";
-                this[SCe](e, vLe[t](e.absolute))
-            } [OCe](e) {
-                this[bCe](e, vLe.readdirSync(e.absolute))
+                this[vCe](e, NLe[t](e.absolute))
             } [CCe](e) {
+                this[UCe](e, NLe.readdirSync(e.absolute))
+            } [ACe](e) {
                 let t = e.entry,
                     n = this.zip;
                 if (e.readdir && e.readdir.forEach(t => {
                         let n = e.path,
                             r = "./" === n ? "" : n.replace(/\/*$/, "/");
-                        this[RCe](r + t)
+                        this[FCe](r + t)
                     }), !t) throw new Error("Cannot pipe without source");
                 n ? t.on("data", e => {
                     n.write(e)
                 }) : t.on("data", e => {
-                    super[DCe](e)
+                    super[GCe](e)
                 })
             }
         },
-        VCe = (e, t) => {
+        KCe = (e, t) => {
             t.forEach(t => {
-                "@" === t.charAt(0) ? Cbe({
+                "@" === t.charAt(0) ? Abe({
                     file: u.resolve(e.cwd, t.slice(1)),
                     sync: !0,
                     noResume: !0,
@@ -114287,10 +114345,10 @@
                 }) : e.add(t)
             }), e.end()
         },
-        HCe = async (e, t) => {
+        zCe = async (e, t) => {
             for (let n = 0; n < t.length; n++) {
                 let r = String(t[n]);
-                "@" === r.charAt(0) ? await Cbe({
+                "@" === r.charAt(0) ? await Abe({
                     file: u.resolve(String(e.cwd), r.slice(1)),
                     noResume: !0,
                     onReadEntry: t => {
@@ -114299,55 +114357,55 @@
                 }) : e.add(r)
             }
             e.end()
-        }, KCe = (iOe((e, t) => {
-            let n = new YCe(e),
-                r = new tOe(e.file, {
+        }, WCe = (oOe((e, t) => {
+            let n = new HCe(e),
+                r = new rOe(e.file, {
                     mode: e.mode || 438
                 });
-            n.pipe(r), VCe(n, t)
+            n.pipe(r), KCe(n, t)
         }, (e, t) => {
-            let n = new GCe(e),
-                r = new eOe(e.file, {
+            let n = new VCe(e),
+                r = new nOe(e.file, {
                     mode: e.mode || 438
                 });
             n.pipe(r);
             let s = new Promise((e, t) => {
                 r.on("error", t), r.on("close", e), n.on("error", t)
             });
-            return HCe(n, t), s
+            return zCe(n, t), s
         }, (e, t) => {
-            let n = new YCe(e);
-            return VCe(n, t), n
+            let n = new HCe(e);
+            return KCe(n, t), n
         }, (e, t) => {
-            let n = new GCe(e);
-            return HCe(n, t), n
+            let n = new VCe(e);
+            return zCe(n, t), n
         }, (e, t) => {
             if (!t?.length) throw new TypeError("no paths specified to add to archive")
         }), "win32" === (process.env.__FAKE_PLATFORM__ || process.platform)), {
-            O_CREAT: zCe,
-            O_TRUNC: WCe,
-            O_WRONLY: jCe
-        } = vLe.constants, XCe = Number(process.env.__FAKE_FS_O_FILENAME__) || vLe.constants.UV_FS_O_FILEMAP || 0, $Ce = XCe | WCe | zCe | jCe, QCe = KCe && XCe ? e => e < 524288 ? $Ce : "w" : () => "w", ZCe = (e, t, n) => {
+            O_CREAT: jCe,
+            O_TRUNC: XCe,
+            O_WRONLY: $Ce
+        } = NLe.constants, QCe = Number(process.env.__FAKE_FS_O_FILENAME__) || NLe.constants.UV_FS_O_FILEMAP || 0, ZCe = QCe | XCe | jCe | $Ce, eUe = WCe && QCe ? e => e < 524288 ? ZCe : "w" : () => "w", tUe = (e, t, n) => {
             try {
                 return o.lchownSync(e, t, n)
             } catch (e) {
                 if ("ENOENT" !== e?.code) throw e
             }
-        }, eUe = (e, t, n, r) => {
+        }, nUe = (e, t, n, r) => {
             o.lchown(e, t, n, e => {
                 r(e && "ENOENT" !== e?.code ? e : null)
             })
-        }, tUe = (e, t, n, r, s) => {
-            if (t.isDirectory()) nUe(u.resolve(e, t.name), n, r, i => {
+        }, rUe = (e, t, n, r, s) => {
+            if (t.isDirectory()) sUe(u.resolve(e, t.name), n, r, i => {
                 if (i) return s(i);
                 let a = u.resolve(e, t.name);
-                eUe(a, n, r, s)
+                nUe(a, n, r, s)
             });
             else {
                 let i = u.resolve(e, t.name);
-                eUe(i, n, r, s)
+                nUe(i, n, r, s)
             }
-        }, nUe = (e, t, n, r) => {
+        }, sUe = (e, t, n, r) => {
             o.readdir(e, {
                 withFileTypes: !0
             }, (s, i) => {
@@ -114355,20 +114413,20 @@
                     if ("ENOENT" === s.code) return r();
                     if ("ENOTDIR" !== s.code && "ENOTSUP" !== s.code) return r(s)
                 }
-                if (s || !i.length) return eUe(e, t, n, r);
+                if (s || !i.length) return nUe(e, t, n, r);
                 let a = i.length,
                     o = null,
                     l = s => {
                         if (!o) {
                             if (s) return r(o = s);
-                            if (0 === --a) return eUe(e, t, n, r)
+                            if (0 === --a) return nUe(e, t, n, r)
                         }
                     };
-                for (let r of i) tUe(e, r, t, n, l)
+                for (let r of i) rUe(e, r, t, n, l)
             })
-        }, rUe = (e, t, n, r) => {
-            t.isDirectory() && sUe(u.resolve(e, t.name), n, r), ZCe(u.resolve(e, t.name), n, r)
-        }, sUe = (e, t, n) => {
+        }, iUe = (e, t, n, r) => {
+            t.isDirectory() && aUe(u.resolve(e, t.name), n, r), tUe(u.resolve(e, t.name), n, r)
+        }, aUe = (e, t, n) => {
             let r;
             try {
                 r = o.readdirSync(e, {
@@ -114377,12 +114435,12 @@
             } catch (r) {
                 let s = r;
                 if ("ENOENT" === s?.code) return;
-                if ("ENOTDIR" === s?.code || "ENOTSUP" === s?.code) return ZCe(e, t, n);
+                if ("ENOTDIR" === s?.code || "ENOTSUP" === s?.code) return tUe(e, t, n);
                 throw s
             }
-            for (let s of r) rUe(e, s, t, n);
-            return ZCe(e, t, n)
-        }, iUe = class extends Error {
+            for (let s of r) iUe(e, s, t, n);
+            return tUe(e, t, n)
+        }, oUe = class extends Error {
             path;
             code;
             syscall = "chdir";
@@ -114392,7 +114450,7 @@
             get name() {
                 return "CwdError"
             }
-        }, aUe = class extends Error {
+        }, lUe = class extends Error {
             path;
             symlink;
             syscall = "symlink";
@@ -114403,36 +114461,36 @@
             get name() {
                 return "SymlinkError"
             }
-        }, oUe = (e, t, n, r, s, i, a) => {
+        }, uUe = (e, t, n, r, s, i, a) => {
             if (!t.length) return a(null, i);
             let l = t.shift(),
-                m = XOe(u.resolve(e + "/" + l));
-            o.mkdir(m, n, lUe(m, t, n, r, s, i, a))
-        }, lUe = (e, t, n, r, s, i, a) => l => {
+                m = QOe(u.resolve(e + "/" + l));
+            o.mkdir(m, n, mUe(m, t, n, r, s, i, a))
+        }, mUe = (e, t, n, r, s, i, a) => l => {
             l ? o.lstat(e, (u, m) => {
-                if (u) u.path = u.path && XOe(u.path), a(u);
-                else if (m.isDirectory()) oUe(e, t, n, r, s, i, a);
+                if (u) u.path = u.path && QOe(u.path), a(u);
+                else if (m.isDirectory()) uUe(e, t, n, r, s, i, a);
                 else if (r) o.unlink(e, l => {
                     if (l) return a(l);
-                    o.mkdir(e, n, lUe(e, t, n, r, s, i, a))
+                    o.mkdir(e, n, mUe(e, t, n, r, s, i, a))
                 });
                 else {
-                    if (m.isSymbolicLink()) return a(new aUe(e, e + "/" + t.join("/")));
+                    if (m.isSymbolicLink()) return a(new lUe(e, e + "/" + t.join("/")));
                     a(l)
                 }
-            }) : oUe(e, t, n, r, s, i = i || e, a)
-        }, uUe = Object.create(null), mUe = new Set, cUe = "win32" === (process.env.TESTING_TAR_FAKE_PLATFORM || process.platform), dUe = class {
+            }) : uUe(e, t, n, r, s, i = i || e, a)
+        }, cUe = Object.create(null), dUe = new Set, fUe = "win32" === (process.env.TESTING_TAR_FAKE_PLATFORM || process.platform), pUe = class {
             #e = new Map;
             #t = new Map;
             #n = new Set;
             reserve(e, t) {
-                e = cUe ? ["win32 parallelization disabled"] : e.map(e => Obe((0, u.join)((e => {
-                    mUe.has(e) ? mUe.delete(e) : uUe[e] = e.normalize("NFD").toLocaleLowerCase("en").toLocaleUpperCase("en"), mUe.add(e);
-                    let t = uUe[e],
-                        n = mUe.size - 1e4;
+                e = fUe ? ["win32 parallelization disabled"] : e.map(e => Cbe((0, u.join)((e => {
+                    dUe.has(e) ? dUe.delete(e) : cUe[e] = e.normalize("NFD").toLocaleLowerCase("en").toLocaleUpperCase("en"), dUe.add(e);
+                    let t = cUe[e],
+                        n = dUe.size - 1e4;
                     if (n > 1e3)
-                        for (let e of mUe)
-                            if (mUe.delete(e), delete uUe[e], --n <= 0) break;
+                        for (let e of dUe)
+                            if (dUe.delete(e), delete cUe[e], --n <= 0) break;
                     return t
                 })(e))));
                 let n = new Set(e.map(e => e.split("/").slice(0, -1).reduce((e, t) => {
@@ -114509,11 +114567,11 @@
                 }
                 return this.#n.delete(e), s.forEach(e => this.#s(e)), !0
             }
-        }, fUe = Symbol("onEntry"), pUe = Symbol("checkFs"), gUe = Symbol("checkFs2"), TUe = Symbol("isReusable"), hUe = Symbol("makeFs"), _Ue = Symbol("file"), yUe = Symbol("directory"), wUe = Symbol("link"), kUe = Symbol("symlink"), SUe = Symbol("hardlink"), JUe = Symbol("ensureNoSymlink"), vUe = Symbol("unsupported"), EUe = Symbol("checkPath"), NUe = Symbol("stripAbsolutePath"), BUe = Symbol("mkdir"), IUe = Symbol("onError"), PUe = Symbol("pending"), qUe = Symbol("pend"), RUe = Symbol("unpend"), LUe = Symbol("ended"), FUe = Symbol("maybeClose"), OUe = Symbol("skip"), bUe = Symbol("doChown"), CUe = Symbol("uid"), UUe = Symbol("gid"), AUe = Symbol("checkedCwd"), xUe = "win32" === (process.env.TESTING_TAR_FAKE_PLATFORM || process.platform), DUe = (e, t, n) => void 0 !== e && e === e >>> 0 ? e : void 0 !== t && t === t >>> 0 ? t : n, MUe = class extends Fbe {
-            [LUe] = !1;
-            [AUe] = !1;
-            [PUe] = 0;
-            reservations = new dUe;
+        }, gUe = Symbol("onEntry"), TUe = Symbol("checkFs"), hUe = Symbol("checkFs2"), _Ue = Symbol("isReusable"), yUe = Symbol("makeFs"), wUe = Symbol("file"), kUe = Symbol("directory"), SUe = Symbol("link"), JUe = Symbol("symlink"), vUe = Symbol("hardlink"), EUe = Symbol("ensureNoSymlink"), NUe = Symbol("unsupported"), BUe = Symbol("checkPath"), IUe = Symbol("stripAbsolutePath"), PUe = Symbol("mkdir"), qUe = Symbol("onError"), RUe = Symbol("pending"), LUe = Symbol("pend"), FUe = Symbol("unpend"), OUe = Symbol("ended"), bUe = Symbol("maybeClose"), CUe = Symbol("skip"), UUe = Symbol("doChown"), AUe = Symbol("uid"), xUe = Symbol("gid"), DUe = Symbol("checkedCwd"), MUe = "win32" === (process.env.TESTING_TAR_FAKE_PLATFORM || process.platform), GUe = (e, t, n) => void 0 !== e && e === e >>> 0 ? e : void 0 !== t && t === t >>> 0 ? t : n, YUe = class extends bbe {
+            [OUe] = !1;
+            [DUe] = !1;
+            [RUe] = 0;
+            reservations = new pUe;
             transform;
             writable = !0;
             readable = !1;
@@ -114540,26 +114598,26 @@
             chmod;
             constructor(e = {}) {
                 if (e.ondone = () => {
-                        this[LUe] = !0, this[FUe]()
+                        this[OUe] = !0, this[bUe]()
                     }, super(e), this.transform = e.transform, this.chmod = !!e.chmod, "number" == typeof e.uid || "number" == typeof e.gid) {
                     if ("number" != typeof e.uid || "number" != typeof e.gid) throw new TypeError("cannot set owner without number uid and gid");
                     if (e.preserveOwner) throw new TypeError("cannot preserve owner in archive and also set owner explicitly");
                     this.uid = e.uid, this.gid = e.gid, this.setOwner = !0
                 } else this.uid = void 0, this.gid = void 0, this.setOwner = !1;
-                void 0 === e.preserveOwner && "number" != typeof e.uid ? this.preserveOwner = !(!process.getuid || 0 !== process.getuid()) : this.preserveOwner = !!e.preserveOwner, this.processUid = (this.preserveOwner || this.setOwner) && process.getuid ? process.getuid() : void 0, this.processGid = (this.preserveOwner || this.setOwner) && process.getgid ? process.getgid() : void 0, this.maxDepth = "number" == typeof e.maxDepth ? e.maxDepth : 1024, this.forceChown = !0 === e.forceChown, this.win32 = !!e.win32 || xUe, this.newer = !!e.newer, this.keep = !!e.keep, this.noMtime = !!e.noMtime, this.preservePaths = !!e.preservePaths, this.unlink = !!e.unlink, this.cwd = XOe(u.resolve(e.cwd || process.cwd())), this.strip = Number(e.strip) || 0, this.processUmask = this.chmod ? "number" == typeof e.processUmask ? e.processUmask : process.umask() : 0, this.umask = "number" == typeof e.umask ? e.umask : this.processUmask, this.dmode = e.dmode || 511 & ~this.umask, this.fmode = e.fmode || 438 & ~this.umask, this.on("entry", e => this[fUe](e))
+                void 0 === e.preserveOwner && "number" != typeof e.uid ? this.preserveOwner = !(!process.getuid || 0 !== process.getuid()) : this.preserveOwner = !!e.preserveOwner, this.processUid = (this.preserveOwner || this.setOwner) && process.getuid ? process.getuid() : void 0, this.processGid = (this.preserveOwner || this.setOwner) && process.getgid ? process.getgid() : void 0, this.maxDepth = "number" == typeof e.maxDepth ? e.maxDepth : 1024, this.forceChown = !0 === e.forceChown, this.win32 = !!e.win32 || MUe, this.newer = !!e.newer, this.keep = !!e.keep, this.noMtime = !!e.noMtime, this.preservePaths = !!e.preservePaths, this.unlink = !!e.unlink, this.cwd = QOe(u.resolve(e.cwd || process.cwd())), this.strip = Number(e.strip) || 0, this.processUmask = this.chmod ? "number" == typeof e.processUmask ? e.processUmask : process.umask() : 0, this.umask = "number" == typeof e.umask ? e.umask : this.processUmask, this.dmode = e.dmode || 511 & ~this.umask, this.fmode = e.fmode || 438 & ~this.umask, this.on("entry", e => this[gUe](e))
             }
             warn(e, t, n = {}) {
                 return ("TAR_BAD_ARCHIVE" === e || "TAR_ABORT" === e) && (n.recoverable = !1), super.warn(e, t, n)
-            } [FUe]() {
-                this[LUe] && 0 === this[PUe] && (this.emit("prefinish"), this.emit("finish"), this.emit("end"))
-            } [NUe](e, t) {
+            } [bUe]() {
+                this[OUe] && 0 === this[RUe] && (this.emit("prefinish"), this.emit("finish"), this.emit("end"))
+            } [IUe](e, t) {
                 let n = e[t],
                     {
                         type: r
                     } = e;
                 if (!n || this.preservePaths) return !0;
-                let [s, i] = Dbe(n), a = i.replace(/\\/g, "/").split("/");
-                if (a.includes("..") || xUe && /^[a-z]:\.\.$/i.test(a[0] ?? "")) {
+                let [s, i] = Gbe(n), a = i.replace(/\\/g, "/").split("/");
+                if (a.includes("..") || MUe && /^[a-z]:\.\.$/i.test(a[0] ?? "")) {
                     if ("path" === t || "Link" === r) return this.warn("TAR_ENTRY_ERROR", `${t} contains '..'`, {
                         entry: e,
                         [t]: n
@@ -114577,13 +114635,13 @@
                     entry: e,
                     [t]: n
                 })), !0
-            } [EUe](e) {
-                let t = XOe(e.path),
+            } [BUe](e) {
+                let t = QOe(e.path),
                     n = t.split("/");
                 if (this.strip) {
                     if (n.length < this.strip) return !1;
                     if ("Link" === e.type) {
-                        let t = XOe(String(e.linkpath)).split("/");
+                        let t = QOe(String(e.linkpath)).split("/");
                         if (!(t.length >= this.strip)) return !1;
                         e.linkpath = t.slice(this.strip).join("/")
                     }
@@ -114595,10 +114653,10 @@
                     depth: n.length,
                     maxDepth: this.maxDepth
                 }), !1;
-                if (!this[NUe](e, "path") || !this[NUe](e, "linkpath")) return !1;
-                if (u.isAbsolute(e.path) ? e.absolute = XOe(u.resolve(e.path)) : e.absolute = XOe(u.resolve(this.cwd, e.path)), !this.preservePaths && "string" == typeof e.absolute && 0 !== e.absolute.indexOf(this.cwd + "/") && e.absolute !== this.cwd) return this.warn("TAR_ENTRY_ERROR", "path escaped extraction target", {
+                if (!this[IUe](e, "path") || !this[IUe](e, "linkpath")) return !1;
+                if (u.isAbsolute(e.path) ? e.absolute = QOe(u.resolve(e.path)) : e.absolute = QOe(u.resolve(this.cwd, e.path)), !this.preservePaths && "string" == typeof e.absolute && 0 !== e.absolute.indexOf(this.cwd + "/") && e.absolute !== this.cwd) return this.warn("TAR_ENTRY_ERROR", "path escaped extraction target", {
                     entry: e,
-                    path: XOe(e.path),
+                    path: QOe(e.path),
                     resolvedPath: e.absolute,
                     cwd: this.cwd
                 }), !1;
@@ -114607,16 +114665,16 @@
                     let {
                         root: t
                     } = u.win32.parse(String(e.absolute));
-                    e.absolute = t + Hbe(String(e.absolute).slice(t.length));
+                    e.absolute = t + zbe(String(e.absolute).slice(t.length));
                     let {
                         root: n
                     } = u.win32.parse(e.path);
-                    e.path = n + Hbe(e.path.slice(n.length))
+                    e.path = n + zbe(e.path.slice(n.length))
                 }
                 return !0
-            } [fUe](e) {
-                if (!this[EUe](e)) return e.resume();
-                switch (FLe.equal(typeof e.absolute, "string"), e.type) {
+            } [gUe](e) {
+                if (!this[BUe](e)) return e.resume();
+                switch (bLe.equal(typeof e.absolute, "string"), e.type) {
                     case "Directory":
                     case "GNUDumpDir":
                         e.mode && (e.mode = 448 | e.mode);
@@ -114625,17 +114683,17 @@
                     case "ContiguousFile":
                     case "Link":
                     case "SymbolicLink":
-                        return this[pUe](e);
+                        return this[TUe](e);
                     default:
-                        return this[vUe](e)
+                        return this[NUe](e)
                 }
-            } [IUe](e, t) {
+            } [qUe](e, t) {
                 "CwdError" === e.name ? this.emit("error", e) : (this.warn("TAR_ENTRY_ERROR", e, {
                     entry: t
-                }), this[RUe](), t.resume())
-            } [BUe](e, t, n) {
+                }), this[FUe](), t.resume())
+            } [PUe](e, t, n) {
                 ((e, t, n) => {
-                    e = XOe(e);
+                    e = QOe(e);
                     let r = t.umask ?? 18,
                         s = 448 | t.mode,
                         i = 0 !== (s & r),
@@ -114644,22 +114702,22 @@
                         m = "number" == typeof a && "number" == typeof l && (a !== t.processUid || l !== t.processGid),
                         c = t.preserve,
                         d = t.unlink,
-                        f = XOe(t.cwd),
+                        f = QOe(t.cwd),
                         p = (t, r) => {
-                            t ? n(t) : r && m ? nUe(r, a, l, e => p(e)) : i ? o.chmod(e, s, n) : n()
+                            t ? n(t) : r && m ? sUe(r, a, l, e => p(e)) : i ? o.chmod(e, s, n) : n()
                         };
                     if (e === f) return ((e, t) => {
                         o.stat(e, (n, r) => {
-                            (n || !r.isDirectory()) && (n = new iUe(e, n?.code || "ENOTDIR")), t(n)
+                            (n || !r.isDirectory()) && (n = new oUe(e, n?.code || "ENOTDIR")), t(n)
                         })
                     })(e, p);
-                    if (c) return bLe.mkdir(e, {
+                    if (c) return ULe.mkdir(e, {
                         mode: s,
                         recursive: !0
                     }).then(e => p(null, e ?? void 0), p);
-                    let g = XOe(u.relative(f, e)).split("/");
-                    oUe(f, g, s, d, f, void 0, p)
-                })(XOe(e), {
+                    let g = QOe(u.relative(f, e)).split("/");
+                    uUe(f, g, s, d, f, void 0, p)
+                })(QOe(e), {
                     uid: this.uid,
                     gid: this.gid,
                     processUid: this.processUid,
@@ -114670,27 +114728,27 @@
                     cwd: this.cwd,
                     mode: t
                 }, n)
-            } [bUe](e) {
-                return this.forceChown || this.preserveOwner && ("number" == typeof e.uid && e.uid !== this.processUid || "number" == typeof e.gid && e.gid !== this.processGid) || "number" == typeof this.uid && this.uid !== this.processUid || "number" == typeof this.gid && this.gid !== this.processGid
-            } [CUe](e) {
-                return DUe(this.uid, e.uid, this.processUid)
             } [UUe](e) {
-                return DUe(this.gid, e.gid, this.processGid)
-            } [_Ue](e, t) {
+                return this.forceChown || this.preserveOwner && ("number" == typeof e.uid && e.uid !== this.processUid || "number" == typeof e.gid && e.gid !== this.processGid) || "number" == typeof this.uid && this.uid !== this.processUid || "number" == typeof this.gid && this.gid !== this.processGid
+            } [AUe](e) {
+                return GUe(this.uid, e.uid, this.processUid)
+            } [xUe](e) {
+                return GUe(this.gid, e.gid, this.processGid)
+            } [wUe](e, t) {
                 let n = "number" == typeof e.mode ? 4095 & e.mode : this.fmode,
-                    r = new eOe(String(e.absolute), {
-                        flags: QCe(e.size),
+                    r = new nOe(String(e.absolute), {
+                        flags: eUe(e.size),
                         mode: n,
                         autoClose: !1
                     });
                 r.on("error", n => {
-                    r.fd && o.close(r.fd, () => {}), r.write = () => !0, this[IUe](n, e), t()
+                    r.fd && o.close(r.fd, () => {}), r.write = () => !0, this[qUe](n, e), t()
                 });
                 let s = 1,
                     i = n => {
-                        if (n) return r.fd && o.close(r.fd, () => {}), this[IUe](n, e), void t();
+                        if (n) return r.fd && o.close(r.fd, () => {}), this[qUe](n, e), void t();
                         0 === --s && void 0 !== r.fd && o.close(r.fd, n => {
-                            n ? this[IUe](n, e) : this[RUe](), t()
+                            n ? this[qUe](n, e) : this[FUe](), t()
                         })
                     };
                 r.on("finish", () => {
@@ -114702,69 +114760,69 @@
                             a = e.mtime;
                         o.futimes(n, r, a, e => e ? o.utimes(t, r, a, t => i(t && e)) : i())
                     }
-                    if ("number" == typeof n && this[bUe](e)) {
+                    if ("number" == typeof n && this[UUe](e)) {
                         s++;
-                        let r = this[CUe](e),
-                            a = this[UUe](e);
+                        let r = this[AUe](e),
+                            a = this[xUe](e);
                         "number" == typeof r && "number" == typeof a && o.fchown(n, r, a, e => e ? o.chown(t, r, a, t => i(t && e)) : i())
                     }
                     i()
                 });
                 let a = this.transform && this.transform(e) || e;
                 a !== e && (a.on("error", n => {
-                    this[IUe](n, e), t()
+                    this[qUe](n, e), t()
                 }), e.pipe(a)), a.pipe(r)
-            } [yUe](e, t) {
+            } [kUe](e, t) {
                 let n = "number" == typeof e.mode ? 4095 & e.mode : this.dmode;
-                this[BUe](String(e.absolute), n, n => {
-                    if (n) return this[IUe](n, e), void t();
+                this[PUe](String(e.absolute), n, n => {
+                    if (n) return this[qUe](n, e), void t();
                     let r = 1,
                         s = () => {
-                            0 === --r && (t(), this[RUe](), e.resume())
+                            0 === --r && (t(), this[FUe](), e.resume())
                         };
-                    e.mtime && !this.noMtime && (r++, o.utimes(String(e.absolute), e.atime || new Date, e.mtime, s)), this[bUe](e) && (r++, o.chown(String(e.absolute), Number(this[CUe](e)), Number(this[UUe](e)), s)), s()
+                    e.mtime && !this.noMtime && (r++, o.utimes(String(e.absolute), e.atime || new Date, e.mtime, s)), this[UUe](e) && (r++, o.chown(String(e.absolute), Number(this[AUe](e)), Number(this[xUe](e)), s)), s()
                 })
-            } [vUe](e) {
+            } [NUe](e) {
                 e.unsupported = !0, this.warn("TAR_ENTRY_UNSUPPORTED", `unsupported entry type: ${e.type}`, {
                     entry: e
                 }), e.resume()
-            } [kUe](e, t) {
-                let n = XOe(u.relative(this.cwd, u.resolve(u.dirname(String(e.absolute)), String(e.linkpath)))).split("/");
-                this[JUe](e, this.cwd, n, () => this[wUe](e, String(e.linkpath), "symlink", t), n => {
-                    this[IUe](n, e), t()
+            } [JUe](e, t) {
+                let n = QOe(u.relative(this.cwd, u.resolve(u.dirname(String(e.absolute)), String(e.linkpath)))).split("/");
+                this[EUe](e, this.cwd, n, () => this[SUe](e, String(e.linkpath), "symlink", t), n => {
+                    this[qUe](n, e), t()
                 })
-            } [SUe](e, t) {
-                let n = XOe(u.resolve(this.cwd, String(e.linkpath))),
-                    r = XOe(String(e.linkpath)).split("/");
-                this[JUe](e, this.cwd, r, () => this[wUe](e, n, "link", t), n => {
-                    this[IUe](n, e), t()
+            } [vUe](e, t) {
+                let n = QOe(u.resolve(this.cwd, String(e.linkpath))),
+                    r = QOe(String(e.linkpath)).split("/");
+                this[EUe](e, this.cwd, r, () => this[SUe](e, n, "link", t), n => {
+                    this[qUe](n, e), t()
                 })
-            } [JUe](e, t, n, r, s) {
+            } [EUe](e, t, n, r, s) {
                 let i = n.shift();
                 if (this.preservePaths || void 0 === i) return r();
                 let a = u.resolve(t, i);
-                o.lstat(a, (t, i) => t ? r() : i?.isSymbolicLink() ? s(new aUe(a, u.resolve(a, n.join("/")))) : void this[JUe](e, a, n, r, s))
-            } [qUe]() {
-                this[PUe]++
-            } [RUe]() {
-                this[PUe]--, this[FUe]()
-            } [OUe](e) {
-                this[RUe](), e.resume()
-            } [TUe](e, t) {
-                return "File" === e.type && !this.unlink && t.isFile() && t.nlink <= 1 && !xUe
-            } [pUe](e) {
-                this[qUe]();
+                o.lstat(a, (t, i) => t ? r() : i?.isSymbolicLink() ? s(new lUe(a, u.resolve(a, n.join("/")))) : void this[EUe](e, a, n, r, s))
+            } [LUe]() {
+                this[RUe]++
+            } [FUe]() {
+                this[RUe]--, this[bUe]()
+            } [CUe](e) {
+                this[FUe](), e.resume()
+            } [_Ue](e, t) {
+                return "File" === e.type && !this.unlink && t.isFile() && t.nlink <= 1 && !MUe
+            } [TUe](e) {
+                this[LUe]();
                 let t = [e.path];
-                e.linkpath && t.push(e.linkpath), this.reservations.reserve(t, t => this[gUe](e, t))
-            } [gUe](e, t) {
+                e.linkpath && t.push(e.linkpath), this.reservations.reserve(t, t => this[hUe](e, t))
+            } [hUe](e, t) {
                 let n = e => {
                         t(e)
                     },
                     r = () => {
                         if (e.absolute !== this.cwd) {
-                            let t = XOe(u.dirname(String(e.absolute)));
-                            if (t !== this.cwd) return this[BUe](t, this.dmode, t => {
-                                if (t) return this[IUe](t, e), void n();
+                            let t = QOe(u.dirname(String(e.absolute)));
+                            if (t !== this.cwd) return this[PUe](t, this.dmode, t => {
+                                if (t) return this[qUe](t, e), void n();
                                 s()
                             })
                         }
@@ -114772,96 +114830,96 @@
                     },
                     s = () => {
                         o.lstat(String(e.absolute), (t, r) => {
-                            if (r && (this.keep || this.newer && r.mtime > (e.mtime ?? r.mtime))) return this[OUe](e), void n();
-                            if (t || this[TUe](e, r)) return this[hUe](null, e, n);
+                            if (r && (this.keep || this.newer && r.mtime > (e.mtime ?? r.mtime))) return this[CUe](e), void n();
+                            if (t || this[_Ue](e, r)) return this[yUe](null, e, n);
                             if (r.isDirectory()) {
                                 if ("Directory" === e.type) {
-                                    let t = t => this[hUe](t ?? null, e, n);
+                                    let t = t => this[yUe](t ?? null, e, n);
                                     return this.chmod && e.mode && (4095 & r.mode) !== e.mode ? o.chmod(String(e.absolute), Number(e.mode), t) : t()
                                 }
-                                if (e.absolute !== this.cwd) return o.rmdir(String(e.absolute), t => this[hUe](t ?? null, e, n))
+                                if (e.absolute !== this.cwd) return o.rmdir(String(e.absolute), t => this[yUe](t ?? null, e, n))
                             }
-                            if (e.absolute === this.cwd) return this[hUe](null, e, n);
+                            if (e.absolute === this.cwd) return this[yUe](null, e, n);
                             ((e, t) => {
-                                if (!xUe) return o.unlink(e, t);
-                                let n = e + ".DELETE." + (0, OLe.randomBytes)(16).toString("hex");
+                                if (!MUe) return o.unlink(e, t);
+                                let n = e + ".DELETE." + (0, CLe.randomBytes)(16).toString("hex");
                                 o.rename(e, n, e => {
                                     if (e) return t(e);
                                     o.unlink(n, t)
                                 })
-                            })(String(e.absolute), t => this[hUe](t ?? null, e, n))
+                            })(String(e.absolute), t => this[yUe](t ?? null, e, n))
                         })
                     };
-                this[AUe] ? r() : (() => {
-                    this[BUe](this.cwd, this.dmode, t => {
-                        if (t) return this[IUe](t, e), void n();
-                        this[AUe] = !0, r()
+                this[DUe] ? r() : (() => {
+                    this[PUe](this.cwd, this.dmode, t => {
+                        if (t) return this[qUe](t, e), void n();
+                        this[DUe] = !0, r()
                     })
                 })()
-            } [hUe](e, t, n) {
-                if (e) return this[IUe](e, t), void n();
+            } [yUe](e, t, n) {
+                if (e) return this[qUe](e, t), void n();
                 switch (t.type) {
                     case "File":
                     case "OldFile":
                     case "ContiguousFile":
-                        return this[_Ue](t, n);
+                        return this[wUe](t, n);
                     case "Link":
-                        return this[SUe](t, n);
+                        return this[vUe](t, n);
                     case "SymbolicLink":
-                        return this[kUe](t, n);
+                        return this[JUe](t, n);
                     case "Directory":
                     case "GNUDumpDir":
-                        return this[yUe](t, n)
+                        return this[kUe](t, n)
                 }
-            } [wUe](e, t, n, r) {
+            } [SUe](e, t, n, r) {
                 o[n](t, String(e.absolute), t => {
-                    t ? this[IUe](t, e) : (this[RUe](), e.resume()), r()
+                    t ? this[qUe](t, e) : (this[FUe](), e.resume()), r()
                 })
             }
-        }, GUe = e => {
+        }, VUe = e => {
             try {
                 return [null, e()]
             } catch (e) {
                 return [e, null]
             }
-        }, YUe = class extends MUe {
+        }, HUe = class extends YUe {
             sync = !0;
-            [hUe](e, t) {
-                return super[hUe](e, t, () => {})
-            } [pUe](e) {
-                if (!this[AUe]) {
-                    let t = this[BUe](this.cwd, this.dmode);
-                    if (t) return this[IUe](t, e);
-                    this[AUe] = !0
+            [yUe](e, t) {
+                return super[yUe](e, t, () => {})
+            } [TUe](e) {
+                if (!this[DUe]) {
+                    let t = this[PUe](this.cwd, this.dmode);
+                    if (t) return this[qUe](t, e);
+                    this[DUe] = !0
                 }
                 if (e.absolute !== this.cwd) {
-                    let t = XOe(u.dirname(String(e.absolute)));
+                    let t = QOe(u.dirname(String(e.absolute)));
                     if (t !== this.cwd) {
-                        let n = this[BUe](t, this.dmode);
-                        if (n) return this[IUe](n, e)
+                        let n = this[PUe](t, this.dmode);
+                        if (n) return this[qUe](n, e)
                     }
                 }
-                let [t, n] = GUe(() => o.lstatSync(String(e.absolute)));
-                if (n && (this.keep || this.newer && n.mtime > (e.mtime ?? n.mtime))) return this[OUe](e);
-                if (t || this[TUe](e, n)) return this[hUe](null, e);
+                let [t, n] = VUe(() => o.lstatSync(String(e.absolute)));
+                if (n && (this.keep || this.newer && n.mtime > (e.mtime ?? n.mtime))) return this[CUe](e);
+                if (t || this[_Ue](e, n)) return this[yUe](null, e);
                 if (n.isDirectory()) {
                     if ("Directory" === e.type) {
                         let t = this.chmod && e.mode && (4095 & n.mode) !== e.mode,
-                            [r] = t ? GUe(() => {
+                            [r] = t ? VUe(() => {
                                 o.chmodSync(String(e.absolute), Number(e.mode))
                             }) : [];
-                        return this[hUe](r, e)
+                        return this[yUe](r, e)
                     }
-                    let [t] = GUe(() => o.rmdirSync(String(e.absolute)));
-                    this[hUe](t, e)
+                    let [t] = VUe(() => o.rmdirSync(String(e.absolute)));
+                    this[yUe](t, e)
                 }
-                let [r] = e.absolute === this.cwd ? [] : GUe(() => (e => {
-                    if (!xUe) return o.unlinkSync(e);
-                    let t = e + ".DELETE." + (0, OLe.randomBytes)(16).toString("hex");
+                let [r] = e.absolute === this.cwd ? [] : VUe(() => (e => {
+                    if (!MUe) return o.unlinkSync(e);
+                    let t = e + ".DELETE." + (0, CLe.randomBytes)(16).toString("hex");
                     o.renameSync(e, t), o.unlinkSync(t)
                 })(String(e.absolute)));
-                this[hUe](r, e)
-            } [_Ue](e, t) {
+                this[yUe](r, e)
+            } [wUe](e, t) {
                 let n, r = "number" == typeof e.mode ? 4095 & e.mode : this.fmode,
                     s = r => {
                         let s;
@@ -114869,15 +114927,15 @@
                             o.closeSync(n)
                         } catch (e) {
                             s = e
-                        }(r || s) && this[IUe](r || s, e), t()
+                        }(r || s) && this[qUe](r || s, e), t()
                     };
                 try {
-                    n = o.openSync(String(e.absolute), QCe(e.size), r)
+                    n = o.openSync(String(e.absolute), eUe(e.size), r)
                 } catch (e) {
                     return s(e)
                 }
                 let i = this.transform && this.transform(e) || e;
-                i !== e && (i.on("error", t => this[IUe](t, e)), e.pipe(i)), i.on("data", e => {
+                i !== e && (i.on("error", t => this[qUe](t, e)), e.pipe(i)), i.on("data", e => {
                     try {
                         o.writeSync(n, e, 0, e.length)
                     } catch (e) {
@@ -114898,9 +114956,9 @@
                             }
                         }
                     }
-                    if (this[bUe](e)) {
-                        let r = this[CUe](e),
-                            s = this[UUe](e);
+                    if (this[UUe](e)) {
+                        let r = this[AUe](e),
+                            s = this[xUe](e);
                         try {
                             o.fchownSync(n, Number(r), Number(s))
                         } catch (n) {
@@ -114913,21 +114971,21 @@
                     }
                     s(t)
                 })
-            } [yUe](e, t) {
+            } [kUe](e, t) {
                 let n = "number" == typeof e.mode ? 4095 & e.mode : this.dmode,
-                    r = this[BUe](String(e.absolute), n);
-                if (r) return this[IUe](r, e), void t();
+                    r = this[PUe](String(e.absolute), n);
+                if (r) return this[qUe](r, e), void t();
                 if (e.mtime && !this.noMtime) try {
                     o.utimesSync(String(e.absolute), e.atime || new Date, e.mtime)
                 } catch {}
-                if (this[bUe](e)) try {
-                    o.chownSync(String(e.absolute), Number(this[CUe](e)), Number(this[UUe](e)))
+                if (this[UUe](e)) try {
+                    o.chownSync(String(e.absolute), Number(this[AUe](e)), Number(this[xUe](e)))
                 } catch {}
                 t(), e.resume()
-            } [BUe](e, t) {
+            } [PUe](e, t) {
                 try {
                     return ((e, t) => {
-                        e = XOe(e);
+                        e = QOe(e);
                         let n = t.umask ?? 18,
                             r = 448 | t.mode,
                             s = 0 !== (r & n),
@@ -114936,9 +114994,9 @@
                             l = "number" == typeof i && "number" == typeof a && (i !== t.processUid || a !== t.processGid),
                             m = t.preserve,
                             c = t.unlink,
-                            d = XOe(t.cwd),
+                            d = QOe(t.cwd),
                             f = t => {
-                                t && l && sUe(t, i, a), s && o.chmodSync(e, r)
+                                t && l && aUe(t, i, a), s && o.chmodSync(e, r)
                             };
                         if (e === d) return (e => {
                             let t, n = !1;
@@ -114947,16 +115005,16 @@
                             } catch (e) {
                                 t = e?.code
                             } finally {
-                                if (!n) throw new iUe(e, t ?? "ENOTDIR")
+                                if (!n) throw new oUe(e, t ?? "ENOTDIR")
                             }
                         })(d), f();
                         if (m) return f(o.mkdirSync(e, {
                             mode: r,
                             recursive: !0
                         }) ?? void 0);
-                        let p, g = XOe(u.relative(d, e)).split("/");
+                        let p, g = QOe(u.relative(d, e)).split("/");
                         for (let e = g.shift(), t = d; e && (t += "/" + e); e = g.shift()) {
-                            t = XOe(u.resolve(t));
+                            t = QOe(u.resolve(t));
                             try {
                                 o.mkdirSync(t, r), p = p || t
                             } catch {
@@ -114966,11 +115024,11 @@
                                     o.unlinkSync(t), o.mkdirSync(t, r), p = p || t;
                                     continue
                                 }
-                                if (e.isSymbolicLink()) return new aUe(t, t + "/" + g.join("/"))
+                                if (e.isSymbolicLink()) return new lUe(t, t + "/" + g.join("/"))
                             }
                         }
                         return f(p)
-                    })(XOe(e), {
+                    })(QOe(e), {
                         uid: this.uid,
                         gid: this.gid,
                         processUid: this.processUid,
@@ -114984,42 +115042,42 @@
                 } catch (e) {
                     return e
                 }
-            } [JUe](e, t, n, r, s) {
+            } [EUe](e, t, n, r, s) {
                 if (this.preservePaths || !n.length) return r();
                 let i = t;
                 for (let e of n) {
                     i = u.resolve(i, e);
-                    let [a, l] = GUe(() => o.lstatSync(i));
+                    let [a, l] = VUe(() => o.lstatSync(i));
                     if (a) return r();
-                    if (l.isSymbolicLink()) return s(new aUe(i, u.resolve(t, n.join("/"))))
+                    if (l.isSymbolicLink()) return s(new lUe(i, u.resolve(t, n.join("/"))))
                 }
                 r()
-            } [wUe](e, t, n, r) {
+            } [SUe](e, t, n, r) {
                 let s = `${n}Sync`;
                 try {
                     o[s](t, String(e.absolute)), r(), e.resume()
                 } catch (t) {
-                    return this[IUe](t, e)
+                    return this[qUe](t, e)
                 }
             }
-        }, VUe = iOe(e => {
-            let t = new YUe(e),
+        }, KUe = oOe(e => {
+            let t = new HUe(e),
                 n = e.file,
                 r = o.statSync(n),
                 s = e.maxReadSize || 16777216;
-            new ZFe(n, {
+            new tOe(n, {
                 readSize: s,
                 size: r.size
             }).pipe(t)
         }, (e, t) => {
-            let n = new MUe(e),
+            let n = new YUe(e),
                 r = e.maxReadSize || 16777216,
                 s = e.file;
             return new Promise((e, t) => {
                 n.on("error", t), n.on("close", e), o.stat(s, (e, i) => {
                     if (e) t(e);
                     else {
-                        let e = new QFe(s, {
+                        let e = new eOe(s, {
                             readSize: r,
                             size: i.size
                         });
@@ -115027,19 +115085,19 @@
                     }
                 })
             })
-        }, e => new YUe(e), e => new MUe(e), (e, t) => {
-            t?.length && bbe(e, t)
-        }), HUe = (e, t) => {
+        }, e => new HUe(e), e => new YUe(e), (e, t) => {
+            t?.length && Ube(e, t)
+        }), zUe = (e, t) => {
             t.forEach(t => {
-                "@" === t.charAt(0) ? Cbe({
+                "@" === t.charAt(0) ? Abe({
                     file: u.resolve(e.cwd, t.slice(1)),
                     sync: !0,
                     noResume: !0,
                     onReadEntry: t => e.add(t)
                 }) : e.add(t)
             }), e.end()
-        }, KUe = iOe((e, t) => {
-            let n, r, s = new YCe(e),
+        }, WUe = oOe((e, t) => {
+            let n, r, s = new HCe(e),
                 i = !0;
             try {
                 try {
@@ -115055,18 +115113,18 @@
                         if (t = o.readSync(n, l, e, l.length - e, r + e), 0 === r && 31 === l[0] && 139 === l[1]) throw new Error("cannot append to compressed archives");
                         if (!t) break e
                     }
-                    let t = new ROe(l);
+                    let t = new FOe(l);
                     if (!t.cksumValid) break;
                     let s = 512 * Math.ceil((t.size || 0) / 512);
                     if (r + s + 512 > a.size) break;
                     r += s, e.mtimeCache && t.mtime && e.mtimeCache.set(String(t.path), t.mtime)
                 }
                 i = !1, ((e, t, n, r, s) => {
-                    let i = new tOe(e.file, {
+                    let i = new rOe(e.file, {
                         fd: r,
                         start: n
                     });
-                    t.pipe(i), HUe(t, s)
+                    t.pipe(i), zUe(t, s)
                 })(e, s, r, n, t)
             } finally {
                 if (i) try {
@@ -115075,7 +115133,7 @@
             }
         }, (e, t) => {
             t = Array.from(t);
-            let n = new GCe(e);
+            let n = new VCe(e);
             return new Promise((r, s) => {
                 n.on("error", s);
                 let i = "r+",
@@ -115094,7 +115152,7 @@
                                     if (a += m, a < 512 && m) return o.read(t, l, a, l.length - a, i + a, u);
                                     if (0 === i && 31 === l[0] && 139 === l[1]) return s(new Error("cannot append to compressed archives"));
                                     if (a < 512) return s(null, i);
-                                    let c = new ROe(l);
+                                    let c = new FOe(l);
                                     if (!c.cksumValid) return s(null, i);
                                     let d = 512 * Math.ceil((c.size ?? 0) / 512);
                                     if (i + d + 512 > n || (i += d + 512, i >= n)) return s(null, i);
@@ -115103,14 +115161,14 @@
                             o.read(t, l, 0, 512, i, u)
                         })(m, a.size, (i, a) => {
                             if (i) return s(i);
-                            let o = new eOe(e.file, {
+                            let o = new nOe(e.file, {
                                 fd: m,
                                 start: a
                             });
                             n.pipe(o), o.on("error", s), o.on("close", r), (async (e, t) => {
                                 for (let n = 0; n < t.length; n++) {
                                     let r = String(t[n]);
-                                    "@" === r.charAt(0) ? await Cbe({
+                                    "@" === r.charAt(0) ? await Abe({
                                         file: u.resolve(String(e.cwd), r.slice(1)),
                                         noResume: !0,
                                         onReadEntry: t => e.add(t)
@@ -115130,19 +115188,19 @@
             if (!(e => !!e.file)(e)) throw new TypeError("file is required");
             if (e.gzip || e.brotli || e.zstd || e.file.endsWith(".br") || e.file.endsWith(".tbr")) throw new TypeError("cannot append to compressed archives");
             if (!t?.length) throw new TypeError("no paths specified to add/replace")
-        }), zUe = (iOe(KUe.syncFile, KUe.asyncFile, KUe.syncNoFile, KUe.asyncNoFile, (e, t = []) => {
-            KUe.validate?.(e, t), zUe(e)
+        }), jUe = (oOe(WUe.syncFile, WUe.asyncFile, WUe.syncNoFile, WUe.asyncNoFile, (e, t = []) => {
+            WUe.validate?.(e, t), jUe(e)
         }), e => {
             let t = e.filter;
             e.mtimeCache || (e.mtimeCache = new Map), e.filter = t ? (n, r) => t(n, r) && !((e.mtimeCache?.get(n) ?? r.mtime ?? 0) > (r.mtime ?? 0)) : (t, n) => !((e.mtimeCache?.get(t) ?? n.mtime ?? 0) > (n.mtime ?? 0))
         });
-    const WUe = 12e4,
-        jUe = 12e4,
-        XUe = "prod",
-        $Ue = "CURSOR_AGENT_WORKER_CLI_PATH",
-        QUe = "CURSOR_AGENT_WORKER_USE_DEV_CLI";
-    let ZUe;
-    async function eAe(e) {
+    const XUe = 12e4,
+        $Ue = 12e4,
+        QUe = "prod",
+        ZUe = "CURSOR_AGENT_WORKER_CLI_PATH",
+        eAe = "CURSOR_AGENT_WORKER_USE_DEV_CLI";
+    let tAe;
+    async function nAe(e) {
         const t = await o.promises.mkdtemp(u.join(l.tmpdir(), e)),
             n = u.join(t, "home"),
             r = u.join(n, ".local", "bin");
@@ -115155,27 +115213,27 @@
         }
     }
 
-    function tAe(e) {
+    function rAe(e) {
         const t = o.statSync(e);
         return `${t.mtimeMs}:${t.size}`
     }
 
-    function nAe(e) {
+    function sAe(e) {
         return `'${e.replace(/'/g,"'\\''")}'`
     }
-    const rAe = require("node:child_process"),
-        sAe = require("node:http2"),
-        iAe = require("node:net"),
-        aAe = "/agent.v1.PrivateWorkerApiService/GetWorkerId",
-        oAe = 5e3,
-        lAe = "cursor-agent-worker.apiKey",
-        uAe = "cursor-agent-worker.apiKeyAuthId";
-    async function mAe(e, t) {
-        const n = await cAe(e),
-            r = fAe(dAe().workspaceRoots),
+    const iAe = require("node:child_process"),
+        aAe = require("node:http2"),
+        oAe = require("node:net"),
+        lAe = "/agent.v1.PrivateWorkerApiService/GetWorkerId",
+        uAe = 5e3,
+        mAe = "cursor-agent-worker.apiKey",
+        cAe = "cursor-agent-worker.apiKeyAuthId";
+    async function dAe(e, t) {
+        const n = await fAe(e),
+            r = gAe(pAe().workspaceRoots),
             s = u.join(n, `${r}.pid`),
             i = u.join(n, `${r}.install`),
-            a = await pAe(s);
+            a = await TAe(s);
         if (void 0 !== a) try {
             process.kill(a, "SIGTERM"), t.appendLine(`[cursor-agent-worker] Stopped daemon "${r}" pid=${a}`)
         } catch (e) {
@@ -115185,16 +115243,16 @@
             force: !0
         }), await o.promises.rm(i, {
             force: !0
-        }), await e.secrets.delete(lAe), await e.secrets.delete(uAe)
+        }), await e.secrets.delete(mAe), await e.secrets.delete(cAe)
     }
-    async function cAe(e) {
+    async function fAe(e) {
         const t = e.globalStorageUri.fsPath;
         return await o.promises.mkdir(t, {
             recursive: !0
         }), t
     }
 
-    function dAe() {
+    function pAe() {
         const e = function() {
             const e = [];
             for (const t of a.workspace.workspaceFolders ?? []) {
@@ -115209,11 +115267,11 @@
         }
     }
 
-    function fAe(e) {
+    function gAe(e) {
         const t = [...e].sort();
-        return `cursor-agent-worker-${OLe.createHash("sha1").update(t.join("\0")).digest("hex").slice(0,10)}`
+        return `cursor-agent-worker-${CLe.createHash("sha1").update(t.join("\0")).digest("hex").slice(0,10)}`
     }
-    async function pAe(e) {
+    async function TAe(e) {
         let t;
         try {
             t = await o.promises.readFile(e, "utf8")
@@ -115228,37 +115286,37 @@
             return
         }
     }
-    async function gAe(e, t, n) {
+    async function hAe(e, t, n) {
         try {
             process.kill(e, "SIGTERM"), n.appendLine(`[cursor-agent-worker] Stopped daemon "${t}" pid=${e}`)
         } catch (r) {
             n.appendLine(`[cursor-agent-worker] Failed to stop daemon "${t}" pid=${e}: ${String(r)}`)
         }
     }
-    async function TAe({
+    async function _Ae({
         workerApiSocket: e,
         log: t,
         logFailure: n = !0
     }) {
         try {
             return await async function(e) {
-                const t = sAe.connect("http://localhost", {
+                const t = aAe.connect("http://localhost", {
                     createConnection: () => {
-                        const t = iAe.connect(e);
-                        return t.setTimeout(oAe, () => {
-                            t.destroy(new Error(`GetWorkerId timed out after ${oAe}ms`))
+                        const t = oAe.connect(e);
+                        return t.setTimeout(uAe, () => {
+                            t.destroy(new Error(`GetWorkerId timed out after ${uAe}ms`))
                         }), t
                     }
                 });
                 try {
                     return await new Promise((e, n) => {
                         const r = () => {
-                            n(new Error(`GetWorkerId timed out after ${oAe}ms`))
+                            n(new Error(`GetWorkerId timed out after ${uAe}ms`))
                         };
-                        t.on("error", n), t.setTimeout(oAe, r);
+                        t.on("error", n), t.setTimeout(uAe, r);
                         const s = t.request({
                                 ":method": "POST",
-                                ":path": aAe,
+                                ":path": lAe,
                                 "content-type": "application/json"
                             }),
                             i = [];
@@ -115281,7 +115339,7 @@
                             } catch (e) {
                                 n(e)
                             }
-                        }), s.on("error", n), s.setTimeout(oAe, r), s.end("{}")
+                        }), s.on("error", n), s.setTimeout(uAe, r), s.end("{}")
                     })
                 } finally {
                     t.close()
@@ -115291,28 +115349,28 @@
             return void(n && t.appendLine(`[cursor-agent-worker] Worker API GetWorkerId failed: ${String(e)}`))
         }
     }
-    const hAe = "enable_cursor_agent_worker_extension";
-    let _Ae, yAe, wAe = 0;
-    async function kAe(e) {
-        if (!_Ae) return;
-        if (!a.cursor.getCursorAuthToken()) return void _Ae.appendLine("[cursor-agent-worker] Auth token unavailable, waiting for login");
-        const t = ++wAe;
-        yAe || (yAe = (async () => {
-            if (t !== wAe) return;
+    const yAe = "enable_cursor_agent_worker_extension";
+    let wAe, kAe, SAe = 0;
+    async function JAe(e) {
+        if (!wAe) return;
+        if (!a.cursor.getCursorAuthToken()) return void wAe.appendLine("[cursor-agent-worker] Auth token unavailable, waiting for login");
+        const t = ++SAe;
+        kAe || (kAe = (async () => {
+            if (t !== SAe) return;
             const n = await
             function(e, t) {
-                return ZUe || (ZUe = async function(e, t) {
+                return tAe || (tAe = async function(e, t) {
                     const n = await async function(e) {
-                        const t = process.env[$Ue]?.trim();
+                        const t = process.env[ZUe]?.trim();
                         if (!t) return;
                         const n = "~" === (r = t) ? l.homedir() : r.startsWith(`~${u.sep}`) ? u.join(l.homedir(), r.slice(2)) : u.resolve(r);
                         var r;
-                        return await o.promises.access(n, o.constants.X_OK), e.appendLine(`[cursor-agent-worker] Using ${$Ue} at ${n}`), async function(e, t) {
+                        return await o.promises.access(n, o.constants.X_OK), e.appendLine(`[cursor-agent-worker] Using ${ZUe} at ${n}`), async function(e, t) {
                             const {
                                 tempRoot: n,
                                 agentHome: r,
                                 binDir: s
-                            } = await eAe("cursor-agent-worker-override-"), i = u.join(s, "cursor-agent");
+                            } = await nAe("cursor-agent-worker-override-"), i = u.join(s, "cursor-agent");
                             return await o.promises.symlink(e, i), {
                                 agentPath: i,
                                 agentHome: r,
@@ -115320,10 +115378,10 @@
                                 isDevelopment: !0,
                                 installId: t
                             }
-                        }(n, `override:${n}:${tAe(n)}`)
+                        }(n, `override:${n}:${rAe(n)}`)
                     }(t);
                     if (n) return n;
-                    if ("1" === process.env[QUe]) {
+                    if ("1" === process.env[eAe]) {
                         const n = await async function(e, t) {
                             const n = function(e, t) {
                                 const n = u.join(e, "..", "..", "..", "packages", "agent-cli"),
@@ -115348,7 +115406,7 @@
                                     command: m,
                                     args: [i],
                                     description: `built agent-cli at ${i}`,
-                                    installId: `dev-built:${i}:${tAe(i)}`,
+                                    installId: `dev-built:${i}:${rAe(i)}`,
                                     isSource: !1
                                 };
                                 o.existsSync(i) && t.appendLine("[cursor-agent-worker] Development mode but no Node runtime found for built agent-cli");
@@ -115357,7 +115415,7 @@
                                     command: c,
                                     args: [],
                                     description: `packaged agent-cli at ${c}`,
-                                    installId: `dev-package:${c}:${tAe(c)}`,
+                                    installId: `dev-package:${c}:${rAe(c)}`,
                                     isSource: !1
                                 } : void 0
                             }(e.extensionPath, t);
@@ -115367,7 +115425,7 @@
                                 tempRoot: r,
                                 agentHome: s,
                                 binDir: i
-                            } = await eAe("cursor-agent-worker-dev-"), m = u.join(i, "cursor-agent"), c = `#!/bin/sh\n${n.isSource?'export NODE_ENV=development\nexport DEV=true\nexport CURSOR_INVOKED_AS="$(basename "$0")"\n':""}exec "${n.command}" ${n.args.map(nAe).join(" ")} "$@"\n`;
+                            } = await nAe("cursor-agent-worker-dev-"), m = u.join(i, "cursor-agent"), c = `#!/bin/sh\n${n.isSource?'export NODE_ENV=development\nexport DEV=true\nexport CURSOR_INVOKED_AS="$(basename "$0")"\n':""}exec "${n.command}" ${n.args.map(sAe).join(" ")} "$@"\n`;
                             return await o.promises.writeFile(m, c, {
                                 mode: 493
                             }), t.appendLine(`[cursor-agent-worker] Dev agent path: ${m}`), {
@@ -115386,7 +115444,7 @@
                             tempRoot: t,
                             agentHome: n,
                             binDir: r
-                        } = await eAe("cursor-agent-worker-"), s = u.join(n, ".local", "share", "cursor-agent", "versions"), i = function() {
+                        } = await nAe("cursor-agent-worker-"), s = u.join(n, ".local", "share", "cursor-agent", "versions"), i = function() {
                             let e, t;
                             switch (process.platform) {
                                 case "linux":
@@ -115415,9 +115473,9 @@
                         }();
                         e.appendLine(`[cursor-agent-worker] Resolving installer for ${i.os}/${i.arch}`);
                         const l = await async function() {
-                            const e = J(SLe, a.cursor.connectTransport),
+                            const e = J(vLe, a.cursor.connectTransport),
                                 t = await e.getCliDownloadUrl({
-                                    channel: XUe
+                                    channel: QUe
                                 });
                             if (!t.url || !t.version) throw new Error("GetCliDownloadUrl response missing url or version");
                             return {
@@ -115448,7 +115506,7 @@
                                 } finally {
                                     clearTimeout(s)
                                 }
-                            }(m, c, WUe), await async function(e, t, n, r) {
+                            }(m, c, XUe), await async function(e, t, n, r) {
                                 let s;
                                 const i = new Promise((t, n) => {
                                     s = setTimeout(() => {
@@ -115456,7 +115514,7 @@
                                     }, r)
                                 });
                                 try {
-                                    await Promise.race([VUe({
+                                    await Promise.race([KUe({
                                         file: e,
                                         cwd: t,
                                         strip: 1
@@ -115464,7 +115522,7 @@
                                 } finally {
                                     s && clearTimeout(s)
                                 }
-                            }(c, d, 0, jUe), await o.promises.rm(f, {
+                            }(c, d, 0, $Ue), await o.promises.rm(f, {
                                 recursive: !0,
                                 force: !0
                             }), await o.promises.rename(d, f)
@@ -115492,19 +115550,19 @@
                         }
                     }(t)
                 }(e, t).catch(e => {
-                    throw ZUe = void 0, e
-                })), ZUe
-            }(e, _Ae);
-            if (t !== wAe) return;
+                    throw tAe = void 0, e
+                })), tAe
+            }(e, wAe);
+            if (t !== SAe) return;
             const r = await async function(e, t, n) {
-                const r = await cAe(e),
-                    s = dAe(),
-                    i = fAe(s.workspaceRoots),
+                const r = await fAe(e),
+                    s = pAe(),
+                    i = gAe(s.workspaceRoots),
                     m = u.join(r, `${i}.pid`),
                     c = u.join(r, `${i}.install`),
                     d = u.join(r, `${i}.log`),
                     f = u.join(l.tmpdir(), `${i}.sock`),
-                    p = await pAe(m);
+                    p = await TAe(m);
                 if (void 0 !== p) {
                     const e = await async function(e) {
                         try {
@@ -115515,17 +115573,17 @@
                             throw e
                         }
                     }(c);
-                    if (e && e !== t.installId) n.appendLine(`[cursor-agent-worker] CLI install changed, stopping daemon "${i}" pid=${p}`), await gAe(p, i, n), await o.promises.rm(m, {
+                    if (e && e !== t.installId) n.appendLine(`[cursor-agent-worker] CLI install changed, stopping daemon "${i}" pid=${p}`), await hAe(p, i, n), await o.promises.rm(m, {
                         force: !0
                     }), await o.promises.rm(c, {
                         force: !0
                     });
                     else {
-                        if (e || !t.isDevelopment) return n.appendLine(`[cursor-agent-worker] Attached to existing daemon "${i}" pid=${p}`), n.appendLine(`[cursor-agent-worker] Logs: ${d}`), TAe({
+                        if (e || !t.isDevelopment) return n.appendLine(`[cursor-agent-worker] Attached to existing daemon "${i}" pid=${p}`), n.appendLine(`[cursor-agent-worker] Logs: ${d}`), _Ae({
                             workerApiSocket: f,
                             log: n
                         });
-                        n.appendLine(`[cursor-agent-worker] Restarting daemon "${i}" with development CLI`), await gAe(p, i, n), await o.promises.rm(m, {
+                        n.appendLine(`[cursor-agent-worker] Restarting daemon "${i}" with development CLI`), await hAe(p, i, n), await o.promises.rm(m, {
                             force: !0
                         }), await o.promises.rm(c, {
                             force: !0
@@ -115535,12 +115593,12 @@
                 const g = await async function(e, t) {
                     const n = await a.cursor.getAuthId();
                     if (!n) throw new Error("Cannot create worker API key without an authenticated user");
-                    const r = await e.secrets.get(lAe),
-                        s = await e.secrets.get(uAe);
+                    const r = await e.secrets.get(mAe),
+                        s = await e.secrets.get(cAe);
                     if (r && s === n) return r;
-                    r && (await e.secrets.delete(lAe), await e.secrets.delete(uAe)), t.appendLine("[cursor-agent-worker] Creating worker API key");
+                    r && (await e.secrets.delete(mAe), await e.secrets.delete(cAe)), t.appendLine("[cursor-agent-worker] Creating worker API key");
                     const i = await async function() {
-                        const e = J(SLe, a.cursor.connectTransport),
+                        const e = J(vLe, a.cursor.connectTransport),
                             t = `cursor-agent-worker-ext-${l.hostname()}-${process.pid}-${Date.now()}`,
                             n = await e.createUserApiKey({
                                 name: t
@@ -115548,7 +115606,7 @@
                         if (!n.apiKey) throw new Error("CreateUserApiKey response missing api_key");
                         return n.apiKey
                     }();
-                    return await e.secrets.store(lAe, i), await e.secrets.store(uAe, n), i
+                    return await e.secrets.store(mAe, i), await e.secrets.store(cAe, n), i
                 }(e, n);
                 return await async function(e) {
                     const {
@@ -115574,7 +115632,7 @@
                     const g = await o.promises.open(i, "a", 384);
                     let T;
                     try {
-                        T = (0, rAe.spawn)(t.agentPath, ["--api-key", s, "worker", "start", ...f, "--name", r, "--worker-api-socket", m, "--verbose"], {
+                        T = (0, iAe.spawn)(t.agentPath, ["--api-key", s, "worker", "start", ...f, "--name", r, "--worker-api-socket", m, "--verbose"], {
                             cwd: d,
                             env: p,
                             stdio: ["ignore", g.fd, g.fd],
@@ -115610,7 +115668,7 @@
                     log: n
                 }), async function(e, t) {
                     for (let n = 0; n < 30; n++) {
-                        const n = await TAe({
+                        const n = await _Ae({
                             workerApiSocket: e,
                             log: t,
                             logFailure: !1
@@ -115620,61 +115678,61 @@
                     }
                     t.appendLine(`[cursor-agent-worker] Worker API GetWorkerId did not return a worker id for ${e}`)
                 }(f, n)
-            }(e, n, _Ae);
-            t === wAe && (await a.cursor.setAgentPrivateWorkerId(r), r && _Ae.appendLine(`[cursor-agent-worker] Pushed worker id "${r}" to browser service`))
+            }(e, n, wAe);
+            t === SAe && (await a.cursor.setAgentPrivateWorkerId(r), r && wAe.appendLine(`[cursor-agent-worker] Pushed worker id "${r}" to browser service`))
         })().finally(() => {
-            t === wAe && (yAe = void 0)
-        })), await yAe
+            t === SAe && (kAe = void 0)
+        })), await kAe
     }
-    async function SAe(e) {
-        if (_Ae = a.window.createOutputChannel("Cursor Agent Worker", {
+    async function vAe(e) {
+        if (wAe = a.window.createOutputChannel("Cursor Agent Worker", {
                 log: !0
-            }), e.subscriptions.push(_Ae), _Ae.appendLine("[cursor-agent-worker] Activating"), !await async function() {
+            }), e.subscriptions.push(wAe), wAe.appendLine("[cursor-agent-worker] Activating"), !await async function() {
                 try {
-                    return await a.cursor.checkFeatureGate(hAe)
+                    return await a.cursor.checkFeatureGate(yAe)
                 } catch (e) {
-                    return _Ae?.appendLine(`[cursor-agent-worker] Feature gate check failed, defaulting to disabled: ${String(e)}`), !1
+                    return wAe?.appendLine(`[cursor-agent-worker] Feature gate check failed, defaulting to disabled: ${String(e)}`), !1
                 }
-            }()) return void _Ae.appendLine(`[cursor-agent-worker] Disabled by feature gate "${hAe}"`);
+            }()) return void wAe.appendLine(`[cursor-agent-worker] Disabled by feature gate "${yAe}"`);
         try {
-            await kAe(e)
+            await JAe(e)
         } catch (e) {
-            _Ae.appendLine(`[cursor-agent-worker] Activation failed: ${String(e)}`)
+            wAe.appendLine(`[cursor-agent-worker] Activation failed: ${String(e)}`)
         }
         const t = a.cursor.onDidChangeCursorAuthToken(() => {
             (async () => {
-                if (!_Ae) return;
-                if (wAe++, !a.cursor.getCursorAuthToken()) {
-                    _Ae.appendLine("[cursor-agent-worker] Auth cleared, stopping worker");
+                if (!wAe) return;
+                if (SAe++, !a.cursor.getCursorAuthToken()) {
+                    wAe.appendLine("[cursor-agent-worker] Auth cleared, stopping worker");
                     try {
-                        await mAe(e, _Ae)
+                        await dAe(e, wAe)
                     } finally {
                         await a.cursor.setAgentPrivateWorkerId(void 0)
                     }
                     return
                 }
                 const t = await a.cursor.getAuthId(),
-                    n = await e.secrets.get(uAe);
+                    n = await e.secrets.get(cAe);
                 if (t && n && n !== t) {
-                    _Ae.appendLine("[cursor-agent-worker] Account changed, stopping worker");
+                    wAe.appendLine("[cursor-agent-worker] Account changed, stopping worker");
                     try {
-                        await mAe(e, _Ae)
+                        await dAe(e, wAe)
                     } finally {
                         await a.cursor.setAgentPrivateWorkerId(void 0)
                     }
                 }
-                await kAe(e)
+                await JAe(e)
             })().catch(e => {
-                _Ae?.appendLine(`[cursor-agent-worker] Failed to reconcile worker after auth change: ${String(e)}`)
+                wAe?.appendLine(`[cursor-agent-worker] Failed to reconcile worker after auth change: ${String(e)}`)
             })
         });
         e.subscriptions.push(t)
     }
-    async function JAe() {}
-    var vAe = exports;
-    for (var EAe in i) vAe[EAe] = i[EAe];
-    i.__esModule && Object.defineProperty(vAe, "__esModule", {
+    async function EAe() {}
+    var NAe = exports;
+    for (var BAe in i) NAe[BAe] = i[BAe];
+    i.__esModule && Object.defineProperty(NAe, "__esModule", {
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/extensions/cursor-agent-worker/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/extensions/cursor-agent-worker/dist/main.js.map

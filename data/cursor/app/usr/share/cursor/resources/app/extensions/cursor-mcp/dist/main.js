@@ -110505,6 +110505,9 @@
             categories = [];
             categoryGroups = [];
             showFormImmediately = !1;
+            title;
+            negativeTitle;
+            commentPlaceholder;
             constructor(e) {
                 super(), Ru.proto3.util.initPartial(e, this)
             }
@@ -110538,6 +110541,24 @@
                 name: "show_form_immediately",
                 kind: "scalar",
                 T: 8
+            }, {
+                no: 6,
+                name: "title",
+                kind: "scalar",
+                T: 9,
+                opt: !0
+            }, {
+                no: 7,
+                name: "negative_title",
+                kind: "scalar",
+                T: 9,
+                opt: !0
+            }, {
+                no: 8,
+                name: "comment_placeholder",
+                kind: "scalar",
+                T: 9,
+                opt: !0
             }]);
             static fromBinary(e, t) {
                 return (new EX).fromBinary(e, t)
@@ -113615,6 +113636,7 @@
             id = 0;
             execId = "";
             localExecutionTimeMs;
+            hookAdditionalContexts = [];
             message = {
                 case: void 0
             };
@@ -113639,6 +113661,12 @@
                 kind: "scalar",
                 T: 5,
                 opt: !0
+            }, {
+                no: 45,
+                name: "hook_additional_contexts",
+                kind: "message",
+                T: uD,
+                repeated: !0
             }, {
                 no: 2,
                 name: "shell_result",
@@ -114026,11 +114054,13 @@
                 } = n;
                 return async function*(n) {
                     const s = performance.now(),
-                        o = await n.exec.execute(e, i, {
-                            execId: t.execId
+                        o = [],
+                        a = await n.exec.execute(e, i, {
+                            execId: t.execId,
+                            hookContextCollector: o
                         }),
-                        a = n.serializeResult(r, o);
-                    a.localExecutionTimeMs = Math.round(Math.max(0, performance.now() - s)), yield a
+                        c = n.serializeResult(r, a);
+                    c.localExecutionTimeMs = Math.round(Math.max(0, performance.now() - s)), o.length > 0 && (c.hookAdditionalContexts = o), yield c
                 }(this)
             }
         }
@@ -114178,7 +114208,7 @@
                     }).catch(() => {});
                     const p = this.deserializeResult(l);
                     if (void 0 === p) throw new Error("No result value");
-                    return p
+                    return void 0 !== (null == n ? void 0 : n.hookContextCollector) && l.hookAdditionalContexts.length > 0 && n.hookContextCollector.push(...l.hookAdditionalContexts), p
                 } catch (e) {
                     r.error = e, r.hasError = !0
                 } finally {
@@ -115339,4 +115369,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e48ee6102a199492b0c9964699bf011886708ba0/extensions/cursor-mcp/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/extensions/cursor-mcp/dist/main.js.map
