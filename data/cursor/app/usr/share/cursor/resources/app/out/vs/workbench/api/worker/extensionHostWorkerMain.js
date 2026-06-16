@@ -10944,7 +10944,6 @@ var Wqn = Hqn,
             return Edn.create(r, e)
         }
         static
-
         function(r, e) {
             return Tdn.create(r, e)
         }
