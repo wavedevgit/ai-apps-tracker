@@ -5087,6 +5087,6 @@ var Ui = new Ri([qt]),
     qi = new Si("telemetry");
 qi.registerChannel("telemetryAppender", Ui);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/core/vs/workbench/contrib/debug/node/telemetryApp.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/core/vs/workbench/contrib/debug/node/telemetryApp.js.map
 
 //# debugId=4829bbbc-77a3-5e37-a8b5-14e11ccb5288

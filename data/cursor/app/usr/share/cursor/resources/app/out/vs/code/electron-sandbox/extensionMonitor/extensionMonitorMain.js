@@ -8379,6 +8379,6 @@ export {
     _l as startup
 }; /*! @license DOMPurify 3.1.7 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.1.7/LICENSE */
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/core/vs/code/electron-sandbox/extensionMonitor/extensionMonitorMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/core/vs/code/electron-sandbox/extensionMonitor/extensionMonitorMain.js.map
 
 //# debugId=558493bb-1a88-53df-bbb7-13f20faa8e0e

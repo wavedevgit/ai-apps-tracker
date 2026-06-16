@@ -37190,7 +37190,7 @@
     (() => {
         "use strict";
         __webpack_require__.r(__webpack_exports__), __webpack_require__.d(__webpack_exports__, {
-            activate: () => vun
+            activate: () => Iun
         });
         var e = {};
         __webpack_require__.r(e), __webpack_require__.d(e, {
@@ -90657,7 +90657,7 @@
         let Tz = _z;
         const Az = class e extends ol {
             constructor(e) {
-                super(), this.rules = [], this.repositoryInfo = [], this.tools = [], this.gitRepos = [], this.projectLayouts = [], this.mcpInstructions = [], this.fileContents = {}, this.customSubagents = [], this.agentSkills = [], this.precomputedHumanChanges = [], this.nonFileRules = [], Jm.util.initPartial(e, this)
+                super(), this.rules = [], this.repositoryInfo = [], this.tools = [], this.gitRepos = [], this.projectLayouts = [], this.mcpInstructions = [], this.fileContents = {}, this.customSubagents = [], this.agentSkills = [], this.precomputedHumanChanges = [], this.nonFileRules = [], this.disabledTeamRules = [], Jm.util.initPartial(e, this)
             }
             static fromBinary(t, n) {
                 return (new e).fromBinary(t, n)
@@ -90932,6 +90932,12 @@
             kind: "message",
             T: fz,
             opt: !0
+        }, {
+            no: 49,
+            name: "disabled_team_rules",
+            kind: "scalar",
+            T: 9,
+            repeated: !0
         }]);
         let wz = Az;
         const kz = class e extends ol {
@@ -131515,6 +131521,12 @@
         }, {
             no: 3,
             name: "increases_model_cost",
+            kind: "scalar",
+            T: 8,
+            opt: !0
+        }, {
+            no: 4,
+            name: "blocked_by_admin_allowlist",
             kind: "scalar",
             T: 8,
             opt: !0
@@ -247571,6 +247583,7 @@
             userPermissionsAutoRun;
             projectPermissionsAutoRun;
             adminPermissionsAutoRun;
+            disabledTeamRules = [];
             constructor(e) {
                 super(), $a.proto3.util.initPartial(e, this)
             }
@@ -247836,6 +247849,12 @@
                 kind: "message",
                 T: eMt,
                 opt: !0
+            }, {
+                no: 49,
+                name: "disabled_team_rules",
+                kind: "scalar",
+                T: 9,
+                repeated: !0
             }]);
             static fromBinary(e, t) {
                 return (new rMt).fromBinary(e, t)
@@ -301190,6 +301209,7 @@
             value = "";
             displayName;
             increasesModelCost;
+            blockedByAdminAllowlist;
             constructor(e) {
                 super(), $a.proto3.util.initPartial(e, this)
             }
@@ -301209,6 +301229,12 @@
             }, {
                 no: 3,
                 name: "increases_model_cost",
+                kind: "scalar",
+                T: 8,
+                opt: !0
+            }, {
+                no: 4,
+                name: "blocked_by_admin_allowlist",
                 kind: "scalar",
                 T: 8,
                 opt: !0
@@ -350012,7 +350038,57 @@
             const s = r.join("");
             return Mo.info(`Search by sha took ${performance.now()-n}ms for query "${t}"`), psn(s)
         }
-        class _sn {
+        async function _sn(e, t, n) {
+            const r = n ?? e,
+                s = await fsn(r, ["show", "-m", "--stat", "--stat-width=1000", `--pretty=format:%s${rsn}%b${rsn}%an${rsn}%ad${rsn}%cI${rsn}%P${rsn}`, t], {
+                    maxBuffer: 5242880
+                }),
+                [i, a, o, l, m, u, c] = s.split(rsn, 7),
+                d = [];
+            if (c) {
+                const e = c.trim().split("\n");
+                for (const t of e) {
+                    if (t.includes("files changed") || t.includes("file changed")) continue;
+                    const e = t.match(/^\s*(.+?)\s*\|\s*(\d+|Bin)/);
+                    if (e) {
+                        const t = e[1].trim();
+                        let n = t,
+                            r = t;
+                        if (t.includes(" => ")) {
+                            const e = t.match(/^\{(.+?)\s*=>\s*(.+?)\}(.*)$/);
+                            if (e) {
+                                const t = e[1].trim(),
+                                    s = e[2].trim(),
+                                    i = e[3];
+                                n = t + i, r = s + i
+                            } else {
+                                const e = t.match(/^(.+?)\s*=>\s*(.+)$/);
+                                e && (n = e[1].trim(), r = e[2].trim())
+                            }
+                        }
+                        d.push({
+                            from: n,
+                            to: r,
+                            chunks: [],
+                            additions: 0,
+                            deletions: 0
+                        })
+                    }
+                }
+            }
+            return {
+                sha: t,
+                message: i,
+                author: o,
+                date: l,
+                committerDate: m,
+                description: a,
+                diff: d,
+                parents: u ? u.trim().split(" ").filter(e => e.length > 0) : [],
+                diffOmitted: !0
+            }
+        }
+        class Tsn {
             constructor(e, t, n = !1, r) {
                 let s;
                 this.context = e, this.extensionIsolationEnabled = n, this.backendClientService = r, this.oktokitClient = {
@@ -351801,7 +351877,7 @@
                     const s = await this.executeGitCommandStable(e, ["--no-optional-locks", "cat-file", "-s", t], {
                             caller: `${n}.sizeCheck`
                         }),
-                        i = _sn._parseCatFileSize(s);
+                        i = Tsn._parseCatFileSize(s);
                     if (void 0 === i) return;
                     r = i
                 } catch {
@@ -352264,11 +352340,17 @@
                 this._gitContextProvider = {
                     getCommits: this.searchCommits.bind(this),
                     getFullCommit: (e, t) => async function(e, t, n) {
-                        const r = n ?? e,
+                        const r = n ?? e;
+                        let s;
+                        try {
                             s = await fsn(r, ["show", "-m", `--pretty=format:%s${rsn}%b${rsn}%an${rsn}%ad${rsn}%cI${rsn}%P${rsn}`, t], {
                                 maxBuffer: 31457280
-                            }),
-                            [i, a, o, l, m, u, c] = s.split(rsn, 7);
+                            })
+                        } catch (r) {
+                            if ("ERR_CHILD_PROCESS_STDIO_MAXBUFFER" === r?.code) return _sn(e, t, n);
+                            throw r
+                        }
+                        const [i, a, o, l, m, u, c] = s.split(rsn, 7);
                         return {
                             sha: t,
                             message: i,
@@ -352280,55 +352362,7 @@
                             parents: u ? u.trim().split(" ").filter(e => e.length > 0) : []
                         }
                     }(ca.workspace.workspaceFolders?.[0].uri.fsPath ?? "", e, t),
-                    getCommitMetadataOnly: (e, t) => async function(e, t, n) {
-                        const r = n ?? e,
-                            s = await fsn(r, ["show", "-m", "--stat", "--stat-width=1000", `--pretty=format:%s${rsn}%b${rsn}%an${rsn}%ad${rsn}%cI${rsn}%P${rsn}`, t], {
-                                maxBuffer: 5242880
-                            }),
-                            [i, a, o, l, m, u, c] = s.split(rsn, 7),
-                            d = [];
-                        if (c) {
-                            const e = c.trim().split("\n");
-                            for (const t of e) {
-                                if (t.includes("files changed") || t.includes("file changed")) continue;
-                                const e = t.match(/^\s*(.+?)\s*\|\s*(\d+|Bin)/);
-                                if (e) {
-                                    const t = e[1].trim();
-                                    let n = t,
-                                        r = t;
-                                    if (t.includes(" => ")) {
-                                        const e = t.match(/^\{(.+?)\s*=>\s*(.+?)\}(.*)$/);
-                                        if (e) {
-                                            const t = e[1].trim(),
-                                                s = e[2].trim(),
-                                                i = e[3];
-                                            n = t + i, r = s + i
-                                        } else {
-                                            const e = t.match(/^(.+?)\s*=>\s*(.+)$/);
-                                            e && (n = e[1].trim(), r = e[2].trim())
-                                        }
-                                    }
-                                    d.push({
-                                        from: n,
-                                        to: r,
-                                        chunks: [],
-                                        additions: 0,
-                                        deletions: 0
-                                    })
-                                }
-                            }
-                        }
-                        return {
-                            sha: t,
-                            message: i,
-                            author: o,
-                            date: l,
-                            committerDate: m,
-                            description: a,
-                            diff: d,
-                            parents: u ? u.trim().split(" ").filter(e => e.length > 0) : []
-                        }
-                    }(ca.workspace.workspaceFolders?.[0].uri.fsPath ?? "", e, t),
+                    getCommitMetadataOnly: (e, t) => _sn(ca.workspace.workspaceFolders?.[0].uri.fsPath ?? "", e, t),
                     getSingleFileDiff: (e, t, n) => async function(e, t, n, r) {
                         const s = r ?? e;
                         try {
@@ -352601,17 +352635,17 @@
             }
         }
 
-        function Tsn(e) {
+        function Asn(e) {
             if (void 0 === e) return;
             if ("/dev/null" === e) return e;
             let t = e.replace(/\\/g, "/");
             return t = t.replace(/^(?:a|b|i|w|c|o|1|2)\//, ""), t = t.replace(/^\.\/+/, ""), t = t.replace(/^\/+/, ""), t
         }
 
-        function Asn(e) {
+        function wsn(e) {
             return e.map(e => ({
-                from: Tsn(e.from) ?? void 0,
-                to: Tsn(e.to) ?? void 0,
+                from: Asn(e.from) ?? void 0,
+                to: Asn(e.to) ?? void 0,
                 added: e.chunks.reduce((e, t) => e + (t.newLines ?? 0), 0),
                 removed: e.chunks.reduce((e, t) => e + (t.oldLines ?? 0), 0),
                 chunks: e.chunks.map(e => ({
@@ -352625,7 +352659,7 @@
             }))
         }
 
-        function wsn(e) {
+        function ksn(e) {
             const t = [];
             for (const n of e) {
                 const e = n.beforeContent ?? "",
@@ -352687,7 +352721,7 @@
             return t
         }
 
-        function ksn(e) {
+        function ysn(e) {
             switch (e.source.kind) {
                 case "branch":
                     return {
@@ -352706,7 +352740,7 @@
             }
         }
 
-        function ysn() {
+        function Esn() {
             pTt(ma.ComputeLocalContext, async e => async function(e) {
                 const t = e.find(e => e.requestId)?.requestId;
                 return t && Qo.info(`Request ID: ${t}`), await Promise.all(e.map(e => async function(e) {
@@ -352723,11 +352757,11 @@
                         const n = e.source.files;
                         return n && 0 !== n.length ? {
                             gitDiff: {
-                                diffs: Asn(wsn(n)),
+                                diffs: wsn(ksn(n)),
                                 diffType: 2
                             },
                             contextFiles: n.filter(e => "string" == typeof e.afterContent && e.afterContent.trim().length > 0).map(e => ({
-                                relativeWorkspacePath: Tsn(e.relativePath) ?? e.relativePath,
+                                relativeWorkspacePath: Asn(e.relativePath) ?? e.relativePath,
                                 contents: e.afterContent
                             })),
                             bugbotRules: !0 === e.includes?.bugbotRules ? await r.LocalBugbotContext.getBugbotRules(t, n.map(e => e.relativePath)) : []
@@ -352740,7 +352774,7 @@
                             bugbotRules: []
                         })
                     }
-                    const n = ksn(e);
+                    const n = ysn(e);
                     Qo.debug(`source: ${JSON.stringify(n)}`);
                     const i = performance.now(),
                         a = new r.LocalBugbotContext(t),
@@ -352762,11 +352796,11 @@
                             await i.close(), Qo.trace(`Full Agent Review context trace written to '${r}'`)
                         }
                     }(o.diffText, o.changedFiles, o.bugbotRules);
-                    let m = Asn(wsn(function(e) {
+                    let m = wsn(ksn(function(e) {
                         const t = [];
                         for (const n of e) {
-                            const e = Tsn(n.to),
-                                r = Tsn(n.from),
+                            const e = Asn(n.to),
+                                r = Asn(n.from),
                                 s = void 0 !== e && "/dev/null" !== e ? e : void 0 !== r && "/dev/null" !== r ? r : void 0;
                             void 0 !== s && "string" == typeof n.afterFileContents && t.push({
                                 relativePath: s,
@@ -352782,7 +352816,7 @@
                         untracked: e.includes?.untracked
                     }))));
                     if (!0 !== e.includes?.autoGeneratedFiles) {
-                        const e = new Set(o.changedFiles.filter(e => e.isAutoGenerated).map(e => Tsn(e.path)));
+                        const e = new Set(o.changedFiles.filter(e => e.isAutoGenerated).map(e => Asn(e.path)));
                         o.changedFiles = o.changedFiles.filter(e => !e.isAutoGenerated), m = m.filter(t => !e.has(t.from) && !e.has(t.to))
                     }
                     return {
@@ -352809,7 +352843,7 @@
                         if ("pendingDiffs" === e.source.kind) return {
                             error: "Pending diffs are not supported for full diffs"
                         };
-                        const n = ksn(e);
+                        const n = ysn(e);
                         Qo.debug(`context: ${JSON.stringify(n)}`);
                         const s = performance.now(),
                             i = new r.LocalBugbotContext(t),
@@ -352827,7 +352861,7 @@
                 }
             })
         }
-        class Esn {
+        class Ssn {
             constructor(e, t) {
                 this.context = e, this.config = t, this.pending = new Map
             }
@@ -352900,11 +352934,11 @@
                 this.worker = void 0, this.pending.clear()
             }
         }
-        let Ssn;
-        class vsn {
+        let vsn;
+        class Isn {
             constructor(e) {
-                if (this.context = e, Ssn) throw new Error("DiffService already initialized");
-                Ssn = this, this.workerManager = new Esn(e, {
+                if (this.context = e, vsn) throw new Error("DiffService already initialized");
+                vsn = this, this.workerManager = new Ssn(e, {
                     timeoutAfterNoRequestsForMinutes: 5
                 })
             }
@@ -352917,13 +352951,13 @@
                 return t.response
             }
             dispose() {
-                this.workerManager.dispose(), Ssn = void 0
+                this.workerManager.dispose(), vsn = void 0
             }
         }
-        var Isn = __webpack_require__(5157),
-            Bsn = __webpack_require__.n(Isn);
+        var Bsn = __webpack_require__(5157),
+            Jsn = __webpack_require__.n(Bsn);
 
-        function Jsn(e, t, n) {
+        function Csn(e, t, n) {
             let r = n;
             if (e instanceof Error) {
                 const n = new Error(e.message);
@@ -352944,7 +352978,7 @@
                 const n = e.length;
                 return {
                     finalObject: e.map(e => {
-                        const s = Jsn(e, Math.min(t / n, t / r), r);
+                        const s = Csn(e, Math.min(t / n, t / r), r);
                         return r = s.numBigObjects, s.finalObject
                     }),
                     numBigObjects: r
@@ -352953,7 +352987,7 @@
             const s = Object.entries(e).reduce((e, [n, s]) => {
                 if ("string" == typeof s && s.length > t) r += 1, e[n] = `[Trimmed: ${s.length} chars]: ${s.slice(0,t)}`;
                 else if ("object" == typeof s && null !== s) {
-                    const i = Jsn(s, ((e, t) => Math.min(e / t, e))(t, r), r);
+                    const i = Csn(s, ((e, t) => Math.min(e / t, e))(t, r), r);
                     r = i.numBigObjects, e[n] = i.finalObject
                 } else e[n] = s;
                 return e
@@ -352964,9 +352998,9 @@
             }
         }
 
-        function Csn(e, t = 1e4) {
+        function Nsn(e, t = 1e4) {
             return function(e, t = 1e4) {
-                return null == e ? e : Jsn(e, t, 0).finalObject
+                return null == e ? e : Csn(e, t, 0).finalObject
             }(JSON.parse(JSON.stringify(e)), t)
         }
         pTt(aa.GetShallowDirectoryTree, async e => {
@@ -353013,14 +353047,14 @@
                     return s
                 }(e.fsPath, e.characterBudget, n => {
                     const r = _i.relative(t, n).split(_i.sep).join("/");
-                    return e.ignoreGlobs.some(e => Bsn().isMatch(r, e, {
+                    return e.ignoreGlobs.some(e => Jsn().isMatch(r, e, {
                         dot: !0,
                         nocase: "win32" === process.platform
                     }))
                 }, e.maxExecutionTimeMs);
             return void 0 === n ? "" : n.toJsonString()
         });
-        class Nsn {
+        class Rsn {
             constructor(e, t) {
                 this.extensionIsolationEnabled = t, this.disposables = [], this.aiClient = void 0, this.disposables.push(ca.cursor.onDidChangeCursorAuthToken(e => {
                     this.accessToken = e, this.aiClient = void 0
@@ -353070,7 +353104,7 @@
                 const n = {
                     supportedCommands: Object.keys(dTt).filter(e => !0),
                     runCommand: (t, n) => {
-                        let r = Csn(n);
+                        let r = Nsn(n);
                         Ho.debug(`Running command: ${t} with args: ${JSON.stringify(r)}`);
                         const s = function(e) {
                             return dTt[e]
@@ -353109,7 +353143,7 @@
                 this.disposables.forEach(e => e.dispose())
             }
         }
-        class Rsn {
+        class Psn {
             constructor(e, t) {
                 this._createWatcher = e, this._label = t, this._clients = new Set, this._eventSubscriptions = [], this._isDisposed = !1
             }
@@ -353147,9 +353181,9 @@
                 this._isDisposed || (this._isDisposed = !0, this._clients.clear(), this.stopWatching())
             }
         }
-        class Psn {
+        class Lsn {
             constructor() {
-                this._externalScopes = new Map, this._isDisposed = !1, this._workspaceScope = new Rsn(() => ca.workspace.createFileSystemWatcher("**"), "workspace")
+                this._externalScopes = new Map, this._isDisposed = !1, this._workspaceScope = new Psn(() => ca.workspace.createFileSystemWatcher("**"), "workspace")
             }
             registerClient(e) {
                 return this.throwIfDisposed(), this._workspaceScope.addClient(e)
@@ -353183,7 +353217,7 @@
                 const i = _i.resolve(t),
                     a = JSON.stringify([i, n, r]);
                 let o = this._externalScopes.get(a);
-                void 0 === o && (o = new Rsn(() => ca.cursor.createFileSystemWatcher(new ca.RelativePattern(ca.Uri.file(i), n), {
+                void 0 === o && (o = new Psn(() => ca.cursor.createFileSystemWatcher(new ca.RelativePattern(ca.Uri.file(i), n), {
                     excludes: [...r]
                 }), `external:${i}:${n}`), this._externalScopes.set(a, o));
                 const l = o.addClient(s),
@@ -353199,12 +353233,12 @@
                 if (this._isDisposed) throw new Error("FileSystemWatcherService has been disposed")
             }
         }
-        const Lsn = {
+        const Fsn = {
                 disableConsoleFallback: !0
             },
-            Fsn = "[push_req_context]";
+            bsn = "[push_req_context]";
 
-        function bsn(e) {
+        function qsn(e) {
             const t = /\n/g;
             let n, r = 0,
                 s = -1;
@@ -353214,7 +353248,7 @@
                 lastLineLength: s >= 0 ? e.length - s - 1 : e.length
             }
         }
-        class qsn {
+        class Dsn {
             constructor(e, t) {
                 this.progress = e, this.previewOptions = t
             }
@@ -353289,9 +353323,9 @@
                         return new ca.TextSearchMatch2(e, s, i)
                     }(t, r, e.submatches.map((e, t) => {
                         const n = e.match,
-                            r = bsn(s.slice(i, e.start).toString()),
+                            r = qsn(s.slice(i, e.start).toString()),
                             l = r.numLines > 0 ? r.lastLineLength : r.lastLineLength + a,
-                            m = bsn(n),
+                            m = qsn(n),
                             u = r.numLines + o,
                             c = m.numLines + u,
                             d = m.numLines > 0 ? m.lastLineLength : m.lastLineLength + l;
@@ -353304,7 +353338,7 @@
                 return n.replace(/\r?\n$/, "").split("\n").map((e, n) => new ca.TextSearchContext2(t, e, r + n))
             }
         }
-        class Dsn {
+        class xsn {
             constructor(e, t, n) {
                 if (this.fileSystemWatcherService = t, this.extensionStartedAt = n, this._disposables = [], this._trackedStateSnapshotPushVersion = 0, this._onDidInvalidateTrackedState = new ca.EventEmitter, this.onDidInvalidateTrackedState = this._onDidInvalidateTrackedState.event, this._onDidUpdateTrackedStateSnapshotEmitter = new ca.EventEmitter, this.onDidUpdateTrackedStateSnapshot = (e, t, n) => {
                         const r = this._onDidUpdateTrackedStateSnapshotEmitter.event(e, t, n);
@@ -353439,7 +353473,7 @@
                             excludes: o
                         };
                     Go.trace(`folderOptions: ${JSON.stringify(r)}`);
-                    const m = new qsn(n, t.previewOptions);
+                    const m = new Dsn(n, t.previewOptions);
                     return await s.queryWithCallback(a, e.pattern, l, (e, t) => {
                         m.handleMessage(t)
                     })
@@ -353498,13 +353532,13 @@
                         crepectlPath: this._crepectlPath
                     }, i), this._disposeTrackedStateInvalidationSubscription = this.subscribeToTrackedStateInvalidated(this._grepClient, () => {
                         this._onDidInvalidateTrackedState.fire(), this.scheduleTrackedStateSnapshotPush()
-                    }), this._watcherRegistration = this.fileSystemWatcherService.registerClient(this), Go.info("GrepClient initialized successfully"), this.logStructuredInfo(`${Fsn} cursor-retrieval GrepClient initialized`, {
+                    }), this._watcherRegistration = this.fileSystemWatcherService.registerClient(this), Go.info("GrepClient initialized successfully"), this.logStructuredInfo(`${bsn} cursor-retrieval GrepClient initialized`, {
                         reason: e,
                         workspaceCount: s.length,
                         latencyMs: performance.now() - this.extensionStartedAt
                     }), this.pushTrackedStateSnapshot(), this._onDidInvalidateTrackedState.fire()
                 } catch (t) {
-                    Go.error("Failed to initialize GrepClient", t), this.logStructuredInfo(`${Fsn} cursor-retrieval GrepClient initialization failed`, {
+                    Go.error("Failed to initialize GrepClient", t), this.logStructuredInfo(`${bsn} cursor-retrieval GrepClient initialization failed`, {
                         reason: e,
                         workspaceCount: ca.workspace.workspaceFolders?.length ?? 0,
                         latencyMs: performance.now() - this.extensionStartedAt,
@@ -353538,7 +353572,7 @@
                     ca.cursor.logStructuredInfo("agent_exec", e, {
                         vscodeSessionId: ca.env.sessionId,
                         ...t
-                    }, Lsn)
+                    }, Fsn)
                 } catch (e) {}
             }
             getGrepClient() {
@@ -353549,11 +353583,11 @@
             }
         }
 
-        function xsn(e) {
+        function Msn(e) {
             const t = U_t.createHash("sha256");
             return t.update(e), t.digest("hex")
         }
-        class Msn {
+        class Osn {
             constructor() {
                 this.ok_ = !1
             }
@@ -353567,37 +353601,37 @@
                 return this.err ?? "unknown error"
             }
             context(e) {
-                return this.ok_ ? this : Gsn(`${e}: ${this.err}`)
+                return this.ok_ ? this : Ysn(`${e}: ${this.err}`)
             }
         }
-        class Osn extends Msn {
+        class Usn extends Osn {
             constructor(e) {
                 super(), this.ok_ = !0, this.v = e, this.err = void 0
             }
         }
-        class Usn extends Msn {
+        class Qsn extends Osn {
             constructor(e) {
                 super(), this.ok_ = !1, this.err = e, this.v = void 0
             }
         }
 
-        function Qsn(e) {
-            return new Osn(e)
-        }
-
         function Gsn(e) {
             return new Usn(e)
         }
-        async function Ysn(e) {
+
+        function Ysn(e) {
+            return new Qsn(e)
+        }
+        async function Hsn(e) {
             try {
-                return Qsn(await e())
+                return Gsn(await e())
             } catch (e) {
-                return Mo.warn(e), Gsn(e)
+                return Mo.warn(e), Ysn(e)
             }
         }
-        var Hsn = (e => (e.ShouldIndex = "should-index", e.ShouldNotIndex = "should-not-index", e.FallBackToDefault = "default", e))(Hsn || {});
+        var Vsn = (e => (e.ShouldIndex = "should-index", e.ShouldNotIndex = "should-not-index", e.FallBackToDefault = "default", e))(Vsn || {});
 
-        function Vsn(e, t) {
+        function Wsn(e, t) {
             if (!t || !t.workspaceUris) return "." + _i.sep + e;
             if (t.isMultiRoot && e === r.MULTI_ROOT_ABSOLUTE_PATH) return ".";
             let n = Object.keys(t.workspaceUris).find(n => e === t.workspaceUris[n].fsPath);
@@ -353607,8 +353641,8 @@
             let i = "." + _i.sep + (t.isMultiRoot ? n + _i.sep : "") + (0, _i.relative)(s.fsPath, e).replaceAll("/", _i.sep);
             return i.endsWith(_i.sep) && (i = i.slice(0, -1)), i
         }
-        const Wsn = "high_level_folder_description.txt";
-        class Ksn {
+        const Ksn = "high_level_folder_description.txt";
+        class zsn {
             constructor(e, t, n) {
                 this.merkleClient = e, this.context = t, this.repoInfo = n, this.abortController = new AbortController
             }
@@ -353617,7 +353651,7 @@
                     const e = await this.merkleClient.getImportantPaths(100),
                         t = this.context.storageUri;
                     if (void 0 === t) return;
-                    const n = ca.Uri.joinPath(t, Wsn);
+                    const n = ca.Uri.joinPath(t, Ksn);
                     Mo.debug(`Computing high level folder description for ${e.length} files at ${n}`);
                     try {
                         const t = (await ca.workspace.fs.readFile(n)).toString(),
@@ -353626,7 +353660,7 @@
                         const s = JSON.parse(r),
                             i = Date.now() - 6048e5;
                         if (s.timestamp > i) {
-                            s.paths = e.map(e => Vsn(e, this.repoInfo));
+                            s.paths = e.map(e => Wsn(e, this.repoInfo));
                             const r = t.split("\n").slice(1).join("\n"),
                                 i = JSON.stringify(s) + "\n" + r;
                             return void await ca.workspace.fs.writeFile(n, Buffer.from(i, "utf8"))
@@ -353636,7 +353670,7 @@
                     }
                     const r = {
                         timestamp: Date.now() - 5184e5,
-                        paths: e.map(e => Vsn(e, this.repoInfo))
+                        paths: e.map(e => Wsn(e, this.repoInfo))
                     };
                     await ca.workspace.fs.writeFile(n, Buffer.from(JSON.stringify(r) + "\n", "utf8")), r.timestamp = Date.now() - 5184e5;
                     const s = await this.computeFull(e);
@@ -353652,7 +353686,7 @@
                 this.abortController.abort()
             }
         }
-        class zsn {
+        class jsn {
             constructor(e) {
                 this.context = e, this.cachedHighLevelFolderDescription = "(no description available)"
             }
@@ -353664,7 +353698,7 @@
             async actuallyGetHighLevelFolderDescription(e) {
                 const t = this.context.storageUri;
                 if (t) {
-                    const n = ca.Uri.joinPath(t, Wsn);
+                    const n = ca.Uri.joinPath(t, Ksn);
                     try {
                         const t = (await ca.workspace.fs.readFile(n)).toString(),
                             r = t.split("\n")[0],
@@ -353672,7 +353706,7 @@
                             i = t.split("\n").slice(1).join("\n"),
                             a = ca.window.tabGroups.all.flatMap(({
                                 tabs: e
-                            }) => e.map(e => "uri" in e.input ? e.input.uri : void 0)).filter(e => void 0 !== e).map(t => Vsn(t.fsPath, e)),
+                            }) => e.map(e => "uri" in e.input ? e.input.uri : void 0)).filter(e => void 0 !== e).map(t => Wsn(t.fsPath, e)),
                             o = new Set(s.paths);
                         a.forEach(e => o.add(e)), s.paths = Array.from(o);
                         const l = function(e) {
@@ -353699,7 +353733,7 @@
             }
         }
         Error;
-        class jsn {
+        class Xsn {
             constructor(e) {
                 this.codebaseId = e, this.currentIndexingJobs = new Array, this.numChanges = 0, this.numJobsToGo = 0, this.totalNumEmbeddableFiles = 0
             }
@@ -353745,22 +353779,6 @@
                 return this.currentIndexingJobs.length
             }
         }
-        class Xsn {
-            constructor() {
-                this.indexingStatus = {
-                    case: "loading"
-                }
-            }
-            init() {
-                ca.cursor.onDidChangeIndexingStatus()
-            }
-            set(e) {
-                this.indexingStatus = e, ca.cursor.onDidChangeIndexingStatus()
-            }
-            get() {
-                return this.indexingStatus
-            }
-        }
         class $sn {
             constructor() {
                 this.indexingStatus = {
@@ -353778,6 +353796,22 @@
             }
         }
         class Zsn {
+            constructor() {
+                this.indexingStatus = {
+                    case: "loading"
+                }
+            }
+            init() {
+                ca.cursor.onDidChangeIndexingStatus()
+            }
+            set(e) {
+                this.indexingStatus = e, ca.cursor.onDidChangeIndexingStatus()
+            }
+            get() {
+                return this.indexingStatus
+            }
+        }
+        class ein {
             constructor(e) {
                 this.context = e
             }
@@ -353794,20 +353828,20 @@
             }
         }
 
-        function ein(e, t, n, r) {
+        function tin(e, t, n, r) {
             t.set(e), void 0 !== r && ("synced" === e.case ? n.set(r, {
                 globalStatus: e,
                 progress: 100
             }) : ["loading", "indexing-setup", "indexing-init-from-similar-codebase", "indexing"].includes(e.case) || n.set(r, void 0))
         }
-        const tin = "aes-256-ctr",
-            nin = /([./\\])/,
-            rin = /([{}/\\.,])/;
+        const nin = "aes-256-ctr",
+            rin = /([./\\])/,
+            sin = /([{}/\\.,])/;
 
-        function sin() {
+        function iin() {
             return U_t.randomBytes(32).toString("base64url")
         }
-        class iin {
+        class ain {
             constructor(e) {
                 this.masterKeyRaw = e;
                 const t = Buffer.from(e, "base64url"),
@@ -353830,7 +353864,7 @@
                 t.update(e);
                 const n = t.digest().subarray(0, 6),
                     r = Buffer.concat([n, Buffer.alloc(10)]),
-                    s = U_t.createCipheriv(tin, this.encKey, r);
+                    s = U_t.createCipheriv(nin, this.encKey, r);
                 let i = s.update(function(e) {
                     const t = (4 - e.length % 4) % 4;
                     return e + "\0".repeat(t)
@@ -353842,12 +353876,12 @@
                     n = t.subarray(0, 6),
                     r = Buffer.concat([n, Buffer.alloc(10)]),
                     s = t.subarray(6).toString("base64url"),
-                    i = U_t.createDecipheriv(tin, this.encKey, r);
+                    i = U_t.createDecipheriv(nin, this.encKey, r);
                 let a = i.update(s, "base64url", "utf8");
                 return a += i.final("utf8"), a.replace(new RegExp("\0+$"), "")
             }
         }
-        class ain {
+        class oin {
             exportKey() {
                 return ""
             }
@@ -353859,22 +353893,22 @@
             }
         }
 
-        function oin(e, t) {
-            return e.split(nin).map(e => nin.test(e) || "" === e ? e : t.encrypt(e)).join("")
-        }
-
         function lin(e, t) {
-            return e.split(nin).map(e => nin.test(e) || "" === e ? e : t.decrypt(e)).join("")
+            return e.split(rin).map(e => rin.test(e) || "" === e ? e : t.encrypt(e)).join("")
         }
 
         function min(e, t) {
-            return e.split(rin).map(e => rin.test(e) || "" === e ? e : "**" === e ? "**" : e.includes("*") ? "*" : t.encrypt(e)).join("")
+            return e.split(rin).map(e => rin.test(e) || "" === e ? e : t.decrypt(e)).join("")
         }
 
         function uin(e, t) {
-            return "aes-256-ctr" === e ? new iin(t) : new ain
+            return e.split(sin).map(e => sin.test(e) || "" === e ? e : "**" === e ? "**" : e.includes("*") ? "*" : t.encrypt(e)).join("")
         }
-        class cin {
+
+        function cin(e, t) {
+            return "aes-256-ctr" === e ? new ain(t) : new oin
+        }
+        class din {
             constructor(e) {
                 this.timePeriodMs = e, this.window = [], this.runningSum = 0
             }
@@ -353897,7 +353931,7 @@
             }
         }
 
-        function din(e, t, n) {
+        function pin(e, t, n) {
             const r = e.get(t);
             if (void 0 === r) {
                 const r = n();
@@ -353905,16 +353939,16 @@
             }
             return r
         }
-        const pin = 10485760;
-        async function fin() {
+        const fin = 10485760;
+        async function gin() {
             await new Promise(e => setTimeout(e, 0))
         }
 
-        function gin(e, t) {
-            return Object.values(e).sort((e, t) => e.fsPath.localeCompare(t.fsPath)).map(e => oin(e.toString(), t)).join(",")
+        function hin(e, t) {
+            return Object.values(e).sort((e, t) => e.fsPath.localeCompare(t.fsPath)).map(e => lin(e.toString(), t)).join(",")
         }
 
-        function hin(e) {
+        function _in(e) {
             try {
                 if (!e.includes("://")) return e;
                 const t = new URL(e);
@@ -353924,7 +353958,7 @@
             }
         }
 
-        function _in(e) {
+        function Tin(e) {
             const t = new Map,
                 n = e.split(/\r\n|\r|\n/);
             let r = null;
@@ -353940,7 +353974,7 @@
             }
             return t
         }
-        async function Tin(e) {
+        async function Ain(e) {
             const t = _i.join(e, ".git");
             try {
                 const n = await (0, WTt.stat)(t);
@@ -353958,16 +353992,16 @@
             }
             return null
         }
-        async function Ain(e) {
+        async function win(e) {
             const t = {
                 remoteNames: [],
                 remoteUrls: []
             };
             for (const n of Object.values(e)) {
-                const e = await Tin(n.fsPath);
+                const e = await Ain(n.fsPath);
                 if (null !== e) try {
-                    const n = _in(await (0, WTt.readFile)(e, "utf-8"));
-                    for (const [e, r] of n) t.remoteNames.push(e), t.remoteUrls.push(hin(r));
+                    const n = Tin(await (0, WTt.readFile)(e, "utf-8"));
+                    for (const [e, r] of n) t.remoteNames.push(e), t.remoteUrls.push(_in(r));
                     if (t.remoteNames.length > 0) {
                         Mo.info(`Found ${t.remoteNames.length} git remote(s) in workspace`);
                         break
@@ -353976,16 +354010,16 @@
             }
             return t
         }
-        class win {
+        class kin {
             constructor(e, t, n, r, s, i, a, o, l, m, u, c) {
                 this.repoInfo = e, this.merkleClient = t, this.initialSync = n, this.clientRepositoryInfo = r, this.repoClient = s, this.context = i, this.currentIndexingJobs = a, this.statusMap = o, this.globalStatus = l, this.indexingConfig = m, this.indexingIntent = u, this.indexingStatusStateTracker = c, this.handshakeStartTime = null, this.syncMerkleStartTimes = new Map, this.syncDeletesStartTimes = new Map, this.stickySynced = !1, this.abortController = new AbortController, this.abortController.signal.addEventListener("abort", () => {
                     Mo.info("Aborting indexing job.")
                 });
                 const d = this.indexingStatusStateTracker.get(this.repoInfo);
-                d && (Mo.info("Setting global status from status tracker:", d.globalStatus.case), this.globalStatus.set(d.globalStatus), "synced" === d.globalStatus.case && (this.stickySynced = !0)), this.result = this.startIndexingRepository(), this.highLevelDescriptionJob = new Ksn(this.merkleClient, this.context, this.repoInfo)
+                d && (Mo.info("Setting global status from status tracker:", d.globalStatus.case), this.globalStatus.set(d.globalStatus), "synced" === d.globalStatus.case && (this.stickySynced = !0)), this.result = this.startIndexingRepository(), this.highLevelDescriptionJob = new zsn(this.merkleClient, this.context, this.repoInfo)
             }
             async setGlobalStatus(e) {
-                ein(e, this.globalStatus, this.indexingStatusStateTracker, this.repoInfo)
+                tin(e, this.globalStatus, this.indexingStatusStateTracker, this.repoInfo)
             }
             dispose() {
                 Mo.info("multiCodebaseIndexingJob dispose"), this.abortController.abort()
@@ -353997,34 +354031,34 @@
                 codebases: e,
                 status: t
             }, n) {
-                if (Mo.info("Starting fast remote sync."), this.abortController.signal.aborted) return Qsn(!1);
+                if (Mo.info("Starting fast remote sync."), this.abortController.signal.aborted) return Gsn(!1);
                 for (const e of this.currentIndexingJobs.values()) e.reset();
                 const r = await this.merkleClient.getNumEmbeddableFiles();
-                if (this.abortController.signal.aborted) return Qsn(!1);
+                if (this.abortController.signal.aborted) return Gsn(!1);
                 for (const e of this.currentIndexingJobs.values()) e.setTotalNumEmbeddableFiles(r);
                 if (Mo.info("Total num embeddable files: " + r), r > this.indexingConfig.absoluteMaxNumberFiles) return Mo.error("Too many files to upload."), this.setGlobalStatus({
                     case: "error",
                     error: "Too many files to upload."
-                }), Gsn("Too many files to upload.");
+                }), Ysn("Too many files to upload.");
                 const s = await this.merkleClient.getSubtreeHash(".");
-                if (this.abortController.signal.aborted) return Qsn(!1);
+                if (this.abortController.signal.aborted) return Gsn(!1);
                 switch (Mo.info("Root hash: " + s), t) {
                     case fw.FAILURE:
-                        return Gsn("Handshake failed.");
+                        return Ysn("Handshake failed.");
                     case fw.UNSPECIFIED:
-                        return Gsn("Handshake failed. REPORT THIS TO DATADOG PLEASE!")
+                        return Ysn("Handshake failed. REPORT THIS TO DATADOG PLEASE!")
                 }
                 const i = [];
                 for (const t of e) {
-                    let e = din(this.currentIndexingJobs, t.codebaseId, () => new jsn(t.codebaseId));
-                    const r = din(this.statusMap, t.codebaseId, () => new $sn);
+                    let e = pin(this.currentIndexingJobs, t.codebaseId, () => new Xsn(t.codebaseId));
+                    const r = pin(this.statusMap, t.codebaseId, () => new Zsn);
                     i.push(this.startCodebaseFastRemoteSync(t, e, r, "onlyCallThisFromStartFastRemoteSync", n))
                 }
                 for (const t of this.currentIndexingJobs.keys()) void 0 === e.find(e => e.codebaseId === t) && this.currentIndexingJobs.delete(t);
                 for (const t of this.statusMap.keys()) void 0 === e.find(e => e.codebaseId === t) && this.statusMap.delete(t);
                 try {
                     const t = await Promise.all(i);
-                    if (this.abortController.signal.aborted) return Qsn(!1);
+                    if (this.abortController.signal.aborted) return Gsn(!1);
                     let s = t.reduce((e, t) => t.isErr() ? t : e, t[0]);
                     s.isErr() ? this.setGlobalStatus({
                         case: "error",
@@ -354071,7 +354105,7 @@
                         error: e.toString()
                     }), e
                 }
-                return Qsn(!0)
+                return Gsn(!0)
             }
             async startCodebaseFastRemoteSync(e, t, n, r, s) {
                 const i = {
@@ -354083,7 +354117,7 @@
                         totalSubtreeCount: 0,
                         hitIterationLimit: !1
                     },
-                    a = new Ein(this.abortController, e.codebaseId, this.repoInfo, this.clientRepositoryInfo, this.repoClient, t, n, this.indexingConfig, this.merkleClient, this.globalStatus, t => {
+                    a = new Sin(this.abortController, e.codebaseId, this.repoInfo, this.clientRepositoryInfo, this.repoClient, t, n, this.indexingConfig, this.merkleClient, this.globalStatus, t => {
                         null !== t ? this.syncMerkleStartTimes.set(e.codebaseId, t) : this.syncMerkleStartTimes.delete(e.codebaseId)
                     }, t => {
                         null !== t ? this.syncDeletesStartTimes.set(e.codebaseId, t) : this.syncDeletesStartTimes.delete(e.codebaseId)
@@ -354094,21 +354128,21 @@
                             case: "indexing-setup"
                         });
                         let e = await a.startRepoUpload(r);
-                        return this.abortController.signal.aborted ? Qsn(i) : e.isErr() ? Gsn(e.error()) : Qsn(e.v)
+                        return this.abortController.signal.aborted ? Gsn(i) : e.isErr() ? Ysn(e.error()) : Gsn(e.v)
                     }
                     case cw.OUT_OF_SYNC: {
                         Mo.info("In the out of sync case."), this.stickySynced || this.setGlobalStatus({
                             case: "indexing-setup"
                         });
                         let e = await a.startSync(r);
-                        return this.abortController.signal.aborted ? Qsn(i) : e.isErr() ? Gsn(e.error()) : Qsn(e.v)
+                        return this.abortController.signal.aborted ? Gsn(i) : e.isErr() ? Ysn(e.error()) : Gsn(e.v)
                     }
                     case cw.UP_TO_DATE:
-                        return Qsn(i);
+                        return Gsn(i);
                     case cw.UNSPECIFIED:
-                        return Gsn("Handshake failed. REPORT THIS TO DATADOG PLEASE!");
+                        return Ysn("Handshake failed. REPORT THIS TO DATADOG PLEASE!");
                     default:
-                        return Gsn("Unhandled case: " + e.status + " asd " + cw.OUT_OF_SYNC)
+                        return Ysn("Unhandled case: " + e.status + " asd " + cw.OUT_OF_SYNC)
                 }
             }
             async getServerStatus() {
@@ -354132,7 +354166,7 @@
                             }
                         })(),
                         t = await this.constructMerkleTree(e);
-                    if (!t.ok()) return Gsn(t.error());
+                    if (!t.ok()) return Ysn(t.error());
                     this.highLevelDescriptionJob.compute();
                     const n = await this.merkleClient.getSubtreeHash(".");
                     Mo.info("Doing the initial handshake with hash: " + n);
@@ -354141,7 +354175,7 @@
                     Mo.info("Computed simhash vector of length: " + s.length);
                     const i = this.repoInfo.pathEncryptionKeySHA256Hash;
                     Mo.info("Path key hash: " + i);
-                    const a = await Ain(this.repoInfo.workspaceUris);
+                    const a = await win(this.repoInfo.workspaceUris);
                     let o, l;
                     try {
                         o = await this.repoClient.handshakeWithRetry({
@@ -354152,7 +354186,7 @@
                                 isTracked: !1,
                                 remoteNames: a.remoteNames,
                                 remoteUrls: a.remoteUrls,
-                                workspaceUri: gin(this.repoInfo.workspaceUris, this.repoInfo.pathEncryptionScheme)
+                                workspaceUri: hin(this.repoInfo.workspaceUris, this.repoInfo.pathEncryptionScheme)
                             },
                             rootHash: n,
                             similarityMetricType: bA.SIMHASH,
@@ -354186,7 +354220,7 @@
                                             for (const e of t) n.push({
                                                 node: e,
                                                 visited: !1
-                                            }), s++, (s >= 400 || performance.now() - i >= 10) && (await fin(), s = 0, i = performance.now());
+                                            }), s++, (s >= 400 || performance.now() - i >= 10) && (await gin(), s = 0, i = performance.now());
                                             continue
                                         }
                                         const a = e.node.children ?? [],
@@ -354197,10 +354231,10 @@
                                             o.push(t)
                                         }
                                         r.set(e.node, {
-                                            encryptedRelativePath: oin(e.node.unencryptedRelativePath, t),
+                                            encryptedRelativePath: lin(e.node.unencryptedRelativePath, t),
                                             hash: e.node.hash,
                                             children: o
-                                        }), s++, (s >= 400 || performance.now() - i >= 10) && (await fin(), s = 0, i = performance.now())
+                                        }), s++, (s >= 400 || performance.now() - i >= 10) && (await gin(), s = 0, i = performance.now())
                                     }
                                     const a = r.get(e);
                                     if (void 0 === a) throw new Error("Failed to convert local codebase root info");
@@ -354214,8 +354248,8 @@
                     } catch (e) {
                         l = e
                     }
-                    if (this.abortController.signal.aborted) return Gsn("Aborted");
-                    if (void 0 === o) return Mo.error("Handshake failed:"), Mo.error(l), Gsn("Handshake failed.");
+                    if (this.abortController.signal.aborted) return Ysn("Aborted");
+                    if (void 0 === o) return Mo.error("Handshake failed:"), Mo.error(l), Ysn("Handshake failed.");
                     const m = new pw({
                         ...o,
                         codebases: o.codebases?.map(e => ({
@@ -354223,7 +354257,7 @@
                             status: e.status
                         }))
                     });
-                    return Mo.info("Handshake result:", JSON.stringify(m)), Qsn({
+                    return Mo.info("Handshake result:", JSON.stringify(m)), Gsn({
                         response: o,
                         simhash: s
                     })
@@ -354267,7 +354301,7 @@
                 try {
                     Mo.debug("Computing merkle tree.");
                     let t = performance.now();
-                    if (this.abortController.signal.aborted) return Gsn("Aborted");
+                    if (this.abortController.signal.aborted) return Ysn("Aborted");
                     const n = ca.workspace.getConfiguration().get("cursor.general.globalCursorIgnoreList", []),
                         r = n.length > 0 ? n.join("\n") : void 0,
                         s = await ca.cursor.adminBlocklistPath(),
@@ -354318,18 +354352,18 @@
                             stat: "cursor_admin_repo_list.indexing_embeddable_file_count",
                             value: c,
                             tags: u
-                        }), this.indexingIntent === Hsn.FallBackToDefault && c > this.indexingConfig.autoIndexingMaxNumFiles) return this.abortController.abort(), this.setGlobalStatus({
+                        }), this.indexingIntent === Vsn.FallBackToDefault && c > this.indexingConfig.autoIndexingMaxNumFiles) return this.abortController.abort(), this.setGlobalStatus({
                         case: "not-auto-indexing",
                         numFiles: c
-                    }), Gsn(`Not automatically indexing because folder has ${c} files.`)
+                    }), Ysn(`Not automatically indexing because folder has ${c} files.`)
                 } catch (e) {
-                    return Gsn(e)
+                    return Ysn(e)
                 }
-                return Qsn(!0)
+                return Gsn(!0)
             }
         }
-        win.HANDSHAKE_TIMEOUT_MS = 18e5, win.SYNC_MERKLE_TIMEOUT_MS = 18e5, win.SYNC_DELETES_TIMEOUT_MS = 18e4;
-        class kin {
+        kin.HANDSHAKE_TIMEOUT_MS = 18e5, kin.SYNC_MERKLE_TIMEOUT_MS = 18e5, kin.SYNC_DELETES_TIMEOUT_MS = 18e4;
+        class yin {
             constructor(e, t, n, s, i, a, o, l, m) {
                 if (this.repoInfo = e, this.repoClient = t, this.indexingConfig = n, this.indexingIntent = s, this.context = i, this.currentIndexingJobsMap = a, this.statusMap = o, this.globalStatus = l, this.indexingStatusStateTracker = m, this._disposables = [], this.initialSync = !0, this.isDisposed = !1, Mo.info(`Starting RepoIndexWatcher for repo: ${this.repoInfo.repoName}, owner: ${this.repoInfo.repoOwner}`), this.clientRepositoryInfo = {
                         orthogonalTransformSeed: this.repoInfo.orthogonalTransformSeed
@@ -354366,7 +354400,7 @@
                 return this.currentIndexingJob?.getQueryOnlyRepoInfo()
             }
             async setGlobalStatus(e) {
-                ein(e, this.globalStatus, this.indexingStatusStateTracker, this.repoInfo)
+                tin(e, this.globalStatus, this.indexingStatusStateTracker, this.repoInfo)
             }
             async doUpdate() {
                 try {
@@ -354375,19 +354409,19 @@
                         const e = 6e4,
                             t = Array.from(this.currentIndexingJobsMap.values()).some(t => t.getJobs().some(t => Date.now() - t.startTime < e)),
                             n = this.currentIndexingJob.handshakeStartTime,
-                            r = null !== n && Date.now() - n < win.HANDSHAKE_TIMEOUT_MS,
+                            r = null !== n && Date.now() - n < kin.HANDSHAKE_TIMEOUT_MS,
                             s = this.currentIndexingJob.syncMerkleStartTimes,
                             i = Date.now(),
-                            a = Array.from(s.values()).some(e => i - e < win.SYNC_MERKLE_TIMEOUT_MS),
+                            a = Array.from(s.values()).some(e => i - e < kin.SYNC_MERKLE_TIMEOUT_MS),
                             o = this.currentIndexingJob.syncDeletesStartTimes,
-                            l = Array.from(o.values()).some(e => i - e < win.SYNC_DELETES_TIMEOUT_MS);
+                            l = Array.from(o.values()).some(e => i - e < kin.SYNC_DELETES_TIMEOUT_MS);
                         if (t || r || a || l) {
                             const e = r ? "handshake in progress" : a ? "sync merkle subtree in progress" : l ? "sync deletes in progress" : "recent jobs still running";
                             return void Mo.info(`Skipping new indexing job: ${e}`)
                         }
                         this.currentIndexingJob.dispose()
                     }
-                    this.currentIndexingJob = new win(this.repoInfo, this.merkleClient, this.initialSync, this.clientRepositoryInfo, this.repoClient, this.context, this.currentIndexingJobsMap, this.statusMap, this.globalStatus, this.indexingConfig, this.indexingIntent, this.indexingStatusStateTracker), this.currentIndexingJob.result.then(() => {
+                    this.currentIndexingJob = new kin(this.repoInfo, this.merkleClient, this.initialSync, this.clientRepositoryInfo, this.repoClient, this.context, this.currentIndexingJobsMap, this.statusMap, this.globalStatus, this.indexingConfig, this.indexingIntent, this.indexingStatusStateTracker), this.currentIndexingJob.result.then(() => {
                         Mo.info("Indexing job successfully done or aborted.")
                     }).catch(e => {
                         let t = e ? e.toString() : "Unknown error";
@@ -354410,7 +354444,7 @@
                 this._disposables = []
             }
         }
-        const yin = class e {
+        const Ein = class e {
             constructor(e, t, n, r, s, i, a, o, l, m, u, c) {
                 this.abortController = e, this.codebaseId = t, this.repoInfo = n, this.clientRepositoryInfo = r, this.repoClient = s, this.currentIndexingJobs = i, this.status = a, this.config = o, this.merkleClient = l, this.globalStatus = m, this.setSyncMerkleState = u, this.setSyncDeletesState = c, this.lastConfigCheckTime = 0, this.MAX_NUM_ITERATIONS = 1e7, this.syncFileListToServerCalled = !1
             }
@@ -354475,7 +354509,7 @@
                 return Mo.info("setting numJobsToGo to " + s), this.currentIndexingJobs.setNumJobsToGo(s), s
             }
             async startSync(e) {
-                if ("onlyCallThisFromStartFastRemoteSync" !== e) return Gsn("You must call this from startFastRemoteSync");
+                if ("onlyCallThisFromStartFastRemoteSync" !== e) return Ysn("You must call this from startFastRemoteSync");
                 const t = [],
                     n = await this.merkleClient.getSubtreeHash(".");
                 t.push({
@@ -354492,12 +354526,12 @@
                 const u = [];
                 for (this.setSyncMerkleState?.(Date.now());
                     (l.getCount() > 0 || t.length > 0) && m < this.MAX_NUM_ITERATIONS;) {
-                    if (m += 1, this.abortController.signal.aborted) return this.setSyncMerkleState?.(null), Gsn("Aborted");
+                    if (m += 1, this.abortController.signal.aborted) return this.setSyncMerkleState?.(null), Ysn("Aborted");
                     if (0 === t.length) {
                         Mo.info("Waiting on semaphore to be released", l.getCount()), await new Promise(e => setTimeout(e, 200));
                         continue
                     }
-                    if (this.abortController.signal.aborted) return this.setSyncMerkleState?.(null), Gsn("Aborted");
+                    if (this.abortController.signal.aborted) return this.setSyncMerkleState?.(null), Ysn("Aborted");
                     const e = Math.min(t.length, this.config.maxSyncMerkleBatchSize || 1),
                         n = [];
                     for (let r = 0; r < e && t.length > 0; r++) {
@@ -354507,19 +354541,19 @@
                     if (0 === n.length) continue;
                     Mo.debug(`[startSync]: Processing batch of ${n.length} subtrees`);
                     const c = l.withSemaphore(async () => {
-                        if (this.abortController.signal.aborted) return Gsn("Aborted");
+                        if (this.abortController.signal.aborted) return Ysn("Aborted");
                         if (this.config.maxSyncMerkleBatchSize && this.config.maxSyncMerkleBatchSize > 1 && n.length > 1) {
                             Mo.info("[startSync]: sending sync merkle subtree batch of size " + n.length);
-                            const e = await Ysn(async () => await this.repoClient.syncMerkleSubtreeWithRetry({
+                            const e = await Hsn(async () => await this.repoClient.syncMerkleSubtreeWithRetry({
                                 clientRepositoryInfo: this.clientRepositoryInfo,
                                 codebaseId: this.codebaseId,
                                 localPartialPaths: n.map(e => ({
                                     hashOfNode: e.hash,
-                                    relativeWorkspacePath: oin(e.relativePath, this.repoInfo.pathEncryptionScheme)
+                                    relativeWorkspacePath: lin(e.relativePath, this.repoInfo.pathEncryptionScheme)
                                 }))
                             }, this.abortController.signal));
-                            if (this.abortController.signal.aborted) return Gsn("Aborted");
-                            if (!e.ok() || void 0 === e.v) return t.push(...n), Mo.warn("[startSync]: batch res not ok or undefined"), Qsn("batch res not ok or undefined");
+                            if (this.abortController.signal.aborted) return Ysn("Aborted");
+                            if (!e.ok() || void 0 === e.v) return t.push(...n), Mo.warn("[startSync]: batch res not ok or undefined"), Gsn("batch res not ok or undefined");
                             const l = e.v;
                             if (l.results && l.results.length > 0)
                                 for (let e = 0; e < l.results.length && e < n.length; e++) {
@@ -354529,16 +354563,16 @@
                                 }
                         } else
                             for (const e of n) {
-                                const n = await Ysn(async () => await this.repoClient.syncMerkleSubtreeWithRetry({
+                                const n = await Hsn(async () => await this.repoClient.syncMerkleSubtreeWithRetry({
                                     clientRepositoryInfo: this.clientRepositoryInfo,
                                     codebaseId: this.codebaseId,
                                     localPartialPath: {
                                         hashOfNode: e.hash,
-                                        relativeWorkspacePath: oin(e.relativePath, this.repoInfo.pathEncryptionScheme)
+                                        relativeWorkspacePath: lin(e.relativePath, this.repoInfo.pathEncryptionScheme)
                                     },
                                     localPartialPaths: []
                                 }, this.abortController.signal));
-                                if (this.abortController.signal.aborted) return Gsn("Aborted");
+                                if (this.abortController.signal.aborted) return Ysn("Aborted");
                                 if (!n.ok() || void 0 === n.v) {
                                     t.push(e), Mo.warn("[startSync]: res not ok or undefined");
                                     continue
@@ -354546,11 +354580,11 @@
                                 const l = n.v;
                                 await this.processSyncResult(l, e, t, s, o, r, a, i)
                             }
-                        return Qsn("Finished batch")
+                        return Gsn("Finished batch")
                     });
                     u.push(c)
                 }
-                if (this.setSyncMerkleState?.(null), m === this.MAX_NUM_ITERATIONS) return Mo.error("startSync: There is likely an infinite loop here."), Qsn({
+                if (this.setSyncMerkleState?.(null), m === this.MAX_NUM_ITERATIONS) return Mo.error("startSync: There is likely an infinite loop here."), Gsn({
                     failedUploadCount: 0,
                     failedDeleteCount: 0,
                     totalUploadCount: 0,
@@ -354560,7 +354594,7 @@
                     hitIterationLimit: !0
                 });
                 const c = await Promise.all(u);
-                if (this.abortController.signal.aborted) return Gsn("Aborted");
+                if (this.abortController.signal.aborted) return Ysn("Aborted");
                 const d = c.length;
                 let p = 0;
                 c.forEach(e => {
@@ -354572,7 +354606,7 @@
                 if (Mo.info("[startSync]: numJobs: " + h), h >= this.config.absoluteMaxNumberFiles) return Mo.error("Too many jobs to upload. Aborting."), this.status.set({
                     case: "error",
                     error: "Too many files to upload."
-                }), Gsn("Too many files to upload.");
+                }), Ysn("Too many files to upload.");
                 let _ = Array.from(a);
                 this.setSyncDeletesState?.(Date.now());
                 const T = await this.deleteFileListFromServer(_),
@@ -354580,20 +354614,20 @@
                         failedDeleteCount: _.length,
                         totalDeleteCount: _.length
                     };
-                if (this.setSyncDeletesState?.(null), this.abortController.signal.aborted) return Gsn("Aborted");
+                if (this.setSyncDeletesState?.(null), this.abortController.signal.aborted) return Ysn("Aborted");
                 for (const e of g) {
                     let t = await this.merkleClient.getAllDirFilesToEmbed(this.getAbsolutePath(e));
-                    for (const e of t) f.push(Vsn(e, this.repoInfo))
+                    for (const e of t) f.push(Wsn(e, this.repoInfo))
                 }
                 const w = await this.syncFileListToServer(f.map(e => ({
                     absolutePath: this.getAbsolutePath(e),
                     relativePath: e,
                     updateType: Kw.ADD
                 })));
-                if (this.abortController.signal.aborted) return Gsn("Aborted");
-                if (w.isErr()) return Mo.error("Failed to upload files."), Gsn(w.error());
+                if (this.abortController.signal.aborted) return Ysn("Aborted");
+                if (w.isErr()) return Mo.error("Failed to upload files."), Ysn(w.error());
                 const k = w.v;
-                return Qsn({
+                return Gsn({
                     failedUploadCount: k.failedUploadCount,
                     failedDeleteCount: A.failedDeleteCount,
                     totalUploadCount: k.totalUploadCount,
@@ -354604,18 +354638,18 @@
                 })
             }
             async startRepoUpload(e) {
-                if (Mo.info("Starting repository upload from scratch."), "onlyCallThisFromStartFastRemoteSync" !== e) return Gsn("You must call this from startFastRemoteSync");
+                if (Mo.info("Starting repository upload from scratch."), "onlyCallThisFromStartFastRemoteSync" !== e) return Ysn("You must call this from startFastRemoteSync");
                 const t = await this.merkleClient.getAllFiles();
-                if (this.abortController.signal.aborted) return Gsn("Aborted");
+                if (this.abortController.signal.aborted) return Ysn("Aborted");
                 const n = await this.syncFileListToServer(t.map(e => ({
                     absolutePath: e,
-                    relativePath: Vsn(e, this.repoInfo),
+                    relativePath: Wsn(e, this.repoInfo),
                     updateType: Kw.ADD
                 })));
-                if (this.abortController.signal.aborted) return Gsn("Aborted");
-                if (n.isErr()) return Mo.error("Failed to upload files."), Gsn(n.error());
+                if (this.abortController.signal.aborted) return Ysn("Aborted");
+                if (n.isErr()) return Mo.error("Failed to upload files."), Ysn(n.error());
                 const r = n.v;
-                return Qsn({
+                return Gsn({
                     failedUploadCount: r.failedUploadCount,
                     failedDeleteCount: 0,
                     totalUploadCount: r.totalUploadCount,
@@ -354631,7 +354665,7 @@
                     try {
                         const t = this.hackyGetSplineWhenYouCantRelyOnTree(e);
                         r = t?.map(e => new XA({
-                            relativeWorkspacePath: oin(e, this.repoInfo.pathEncryptionScheme),
+                            relativeWorkspacePath: lin(e, this.repoInfo.pathEncryptionScheme),
                             hashOfNode: ""
                         }))
                     } catch (e) {
@@ -354646,7 +354680,7 @@
                         partialPath: {
                             case: "directory",
                             value: {
-                                relativeWorkspacePath: oin(t, this.repoInfo.pathEncryptionScheme),
+                                relativeWorkspacePath: lin(t, this.repoInfo.pathEncryptionScheme),
                                 hashOfNode: ""
                             }
                         },
@@ -354654,11 +354688,11 @@
                         updateType: Kw.DELETE,
                         fileUpdates: []
                     }, n);
-                    return s.status === tk.SUCCESS ? Qsn({
+                    return s.status === tk.SUCCESS ? Gsn({
                         relativePath: t
-                    }) : s.status === tk.EXPECTED_FAILURE ? Gsn("Expected failure") : Gsn("Unexpected failure")
+                    }) : s.status === tk.EXPECTED_FAILURE ? Ysn("Expected failure") : Ysn("Unexpected failure")
                 } catch (e) {
-                    return Gsn(e)
+                    return Ysn(e)
                 }
             }
             async deleteFileListFromServer(e) {
@@ -354670,7 +354704,7 @@
                     let s = 0,
                         i = 0;
                     for (; i < e.length;) {
-                        if (this.abortController.signal.aborted) return Gsn("Aborted");
+                        if (this.abortController.signal.aborted) return Ysn("Aborted");
                         if (s < r) {
                             const t = e[i],
                                 r = this.getAbsolutePath(t),
@@ -354681,20 +354715,20 @@
                     const a = await Promise.allSettled(n);
                     let o = 0;
                     for (const e of a)("rejected" === e.status || "fulfilled" === e.status && e.value.isErr()) && o++;
-                    return o > 0 && Mo.warn(`Delete completed with ${o}/${t} failures`), Mo.debug("[startSync]: pathsToDeleteResults: " + JSON.stringify(a)), Qsn({
+                    return o > 0 && Mo.warn(`Delete completed with ${o}/${t} failures`), Mo.debug("[startSync]: pathsToDeleteResults: " + JSON.stringify(a)), Gsn({
                         failedDeleteCount: o,
                         totalDeleteCount: t
                     })
                 } catch (e) {
-                    return Gsn(e)
+                    return Ysn(e)
                 }
             }
             async syncFileListToServer(e, t) {
-                if (this.abortController.signal.aborted) return Gsn("Aborted");
+                if (this.abortController.signal.aborted) return Ysn("Aborted");
                 if (Mo.info(`Uploading ${e.length} files.`), this.syncFileListToServerCalled) throw new Error("syncFileListToServer should only be called once in the life of the indexing job!");
                 this.syncFileListToServerCalled = !0;
                 const n = await this.merkleClient.getNumEmbeddableFiles();
-                if (Mo.info("Total number of files to embed: " + n), this.abortController.signal.aborted) return Mo.info("Aborted"), Gsn("Aborted");
+                if (Mo.info("Total number of files to embed: " + n), this.abortController.signal.aborted) return Mo.info("Aborted"), Ysn("Aborted");
                 Mo.info("Not aborted"), this.status.set({
                     case: "indexing"
                 }), this.globalStatus.set({
@@ -354713,8 +354747,8 @@
                     l = {
                         current: 0
                     };
-                const m = new cin(3e5),
-                    u = new cin(3e5),
+                const m = new din(3e5),
+                    u = new din(3e5),
                     c = {
                         current: Date.now() - 6e4
                     },
@@ -354730,7 +354764,7 @@
                 let p = Math.max(this.config.maxBatchBytes ?? 2097152, 1),
                     f = Math.max(this.config.maxBatchNumRequests ?? 1, 1);
                 for (; a.length > 0 || this.currentIndexingJobs.length > 0;) {
-                    if (this.abortController.signal.aborted) return Gsn("Aborted");
+                    if (this.abortController.signal.aborted) return Ysn("Aborted");
                     if (await this.checkAndApplyConfigUpdates()) {
                         const e = p,
                             t = f,
@@ -354751,7 +354785,7 @@
                         })
                     }
                     for (Mo.debug("fileQueue.length: " + a.length); this.currentIndexingJobs.length >= o.current || 0 === a.length;) {
-                        if (Mo.debug("Waiting for jobs to finish. currentIndexingJobs.length: " + this.currentIndexingJobs.length + " concurrentUploads.current: " + o.current + " fileQueue.length: " + a.length), await new Promise(e => setTimeout(e, l.current)), this.abortController.signal.aborted) return Gsn("Aborted");
+                        if (Mo.debug("Waiting for jobs to finish. currentIndexingJobs.length: " + this.currentIndexingJobs.length + " concurrentUploads.current: " + o.current + " fileQueue.length: " + a.length), await new Promise(e => setTimeout(e, l.current)), this.abortController.signal.aborted) return Ysn("Aborted");
                         if (0 === this.currentIndexingJobs.length) break;
                         for (; this.currentIndexingJobs.length > 0;) {
                             const e = this.currentIndexingJobs.getJobs(),
@@ -354764,7 +354798,7 @@
                                 if (this.currentIndexingJobs.setJobs(e), r += 1, 1 !== t.length) throw Mo.error("VIOLATION: Completed job length is not 1"), new Error("VIOLATION: Completed job length is not 1");
                                 if (void 0 === o || "" === o) Mo.info("Completed job successfully: " + this.codebaseId + " " + t[0].relativePath), m.incr(1), d(!0), this.currentIndexingJobs.updateNumJobsToGo(-1);
                                 else {
-                                    if (!0 === n.errorIsFatal) return this.currentIndexingJobs.updateNumJobsToGo(-1), Gsn(o ?? "Unknown fatal error");
+                                    if (!0 === n.errorIsFatal) return this.currentIndexingJobs.updateNumJobsToGo(-1), Ysn(o ?? "Unknown fatal error");
                                     !0 === n.errorIsRetryable ? (Mo.warn("Completed job unsuccessfully, will retry: " + t[0].relativePath + " error: " + o), u.incr(1), d(!1, n.errorIsRateLimitError), t[0].errorCount < this.config.maxFileRetries ? a.push({
                                         absolutePath: t[0].absolutePath,
                                         errorCount: t[0].errorCount + 1,
@@ -354785,7 +354819,7 @@
                         const t = a[0];
                         try {
                             const r = await (0, WTt.stat)(t.absolutePath);
-                            if (r.size > pin) {
+                            if (r.size > fin) {
                                 Mo.debug(`Skipping oversized file from index queue (${r.size} bytes)`), a.shift(), this.currentIndexingJobs.updateNumJobsToGo(-1);
                                 continue
                             }
@@ -354853,14 +354887,14 @@
                         })
                     }
                 }
-                if (Mo.debug("Finished uploading files in the while loop."), this.abortController.signal.aborted) return Gsn("Aborted");
+                if (Mo.debug("Finished uploading files in the while loop."), this.abortController.signal.aborted) return Ysn("Aborted");
                 const g = this.currentIndexingJobs.getJobs();
-                if (await Promise.allSettled(g.map(e => e.future)), this.abortController.signal.aborted) return Gsn("Aborted");
+                if (await Promise.allSettled(g.map(e => e.future)), this.abortController.signal.aborted) return Ysn("Aborted");
                 this.status.set({
                     case: "creating-index"
                 });
                 try {
-                    const e = await Ain(this.repoInfo.workspaceUris);
+                    const e = await win(this.repoInfo.workspaceUris);
                     await this.repoClient.ensureIndexCreatedWithRetry({
                         repository: {
                             ...this.repoInfo.export(),
@@ -354869,21 +354903,21 @@
                             isTracked: !1,
                             remoteNames: e.remoteNames,
                             remoteUrls: e.remoteUrls,
-                            workspaceUri: gin(this.repoInfo.workspaceUris, this.repoInfo.pathEncryptionScheme)
+                            workspaceUri: hin(this.repoInfo.workspaceUris, this.repoInfo.pathEncryptionScheme)
                         }
                     }, this.abortController.signal)
                 } catch (e) {
-                    if (this.abortController.signal.aborted) return Gsn("Aborted");
-                    if (e instanceof Ta && e.code === fa.Canceled) return Gsn("Aborted");
+                    if (this.abortController.signal.aborted) return Ysn("Aborted");
+                    if (e instanceof Ta && e.code === fa.Canceled) return Ysn("Aborted");
                     let t = e ? e.toString() : "Unknown error";
                     return this.status.set({
                         case: "error",
                         error: "Creating index failed: " + t
-                    }), Gsn(e)
+                    }), Ysn(e)
                 }
-                return this.abortController.signal.aborted ? Gsn("Aborted") : (Mo.debug("Should set to synced."), this.status.set({
+                return this.abortController.signal.aborted ? Ysn("Aborted") : (Mo.debug("Should set to synced."), this.status.set({
                     case: "synced"
-                }), this.currentIndexingJobs.setNumJobsToGo(0), this.currentIndexingJobs.forceUpdateProgressBar(), this.currentIndexingJobs.setJobs([]), s > 0 && Mo.warn(`Sync completed with ${s}/${i} failed uploads`), Qsn({
+                }), this.currentIndexingJobs.setNumJobsToGo(0), this.currentIndexingJobs.forceUpdateProgressBar(), this.currentIndexingJobs.setJobs([]), s > 0 && Mo.warn(`Sync completed with ${s}/${i} failed uploads`), Gsn({
                     failedUploadCount: s,
                     failedDeleteCount: 0,
                     totalUploadCount: i,
@@ -354898,13 +354932,13 @@
                     const t = [];
                     let n = 0;
                     for (const r of e) {
-                        const e = r.pathFromFileToRoot.map(e => Vsn(e, this.repoInfo)).map(e => new XA({
-                            relativeWorkspacePath: oin(e, this.repoInfo.pathEncryptionScheme),
+                        const e = r.pathFromFileToRoot.map(e => Wsn(e, this.repoInfo)).map(e => new XA({
+                            relativeWorkspacePath: lin(e, this.repoInfo.pathEncryptionScheme),
                             hashOfNode: ""
                         }));
                         try {
                             const e = await (0, WTt.stat)(r.absolutePath);
-                            if (e.size > pin) {
+                            if (e.size > fin) {
                                 Mo.debug(`syncFile skipping oversized file (${e.size} bytes)`);
                                 continue
                             }
@@ -354913,13 +354947,13 @@
                         }
                         const s = await ca.workspace.fs.readFile(ca.Uri.file(r.absolutePath)),
                             i = new TextDecoder("utf-8").decode(s),
-                            a = xsn(i);
+                            a = Msn(i);
                         n += s.length, t.push({
                             partialPath: {
                                 case: "localFile",
                                 value: {
                                     file: {
-                                        relativeWorkspacePath: oin(r.relativePath, this.repoInfo.pathEncryptionScheme),
+                                        relativeWorkspacePath: lin(r.relativePath, this.repoInfo.pathEncryptionScheme),
                                         contents: i
                                     },
                                     unencryptedRelativeWorkspacePath: r.relativePath,
@@ -354930,7 +354964,7 @@
                             updateType: r.updateType
                         })
                     }
-                    if (0 === t.length) return Qsn(!0);
+                    if (0 === t.length) return Gsn(!0);
                     const r = {
                         codebaseId: this.codebaseId,
                         clientRepositoryInfo: this.clientRepositoryInfo,
@@ -354939,30 +354973,30 @@
                     };
                     1 === t.length && (r.partialPath = t[0].partialPath, r.ancestorSpline = t[0].ancestorSpline, r.updateType = t[0].updateType, r.fileUpdates = []);
                     let s = await this.repoClient.fastUpdateFileV2(r, this.abortController.signal);
-                    return s.status === tk.FAILURE ? Gsn({
+                    return s.status === tk.FAILURE ? Ysn({
                         error: "Failed to sync file (unexpected)",
                         errorIsFatal: !1,
                         errorIsRetryable: !0,
                         errorIsRateLimitError: !1
-                    }) : s.status === tk.EXPECTED_FAILURE ? Gsn({
+                    }) : s.status === tk.EXPECTED_FAILURE ? Ysn({
                         error: "Failed to sync file (expected)",
                         errorIsFatal: !1,
                         errorIsRetryable: !1,
                         errorIsRateLimitError: !1
-                    }) : s.status === tk.SUCCESS ? Qsn(!0) : Gsn({
+                    }) : s.status === tk.SUCCESS ? Gsn(!0) : Ysn({
                         error: "Bad unexpected error",
                         errorIsFatal: !1,
                         errorIsRetryable: !0,
                         errorIsRateLimitError: !1
                     })
                 } catch (e) {
-                    if (!(e instanceof Ta)) return Gsn({
+                    if (!(e instanceof Ta)) return Ysn({
                         error: "Bad unexpected error",
                         errorIsFatal: !1,
                         errorIsRetryable: !0,
                         errorIsRateLimitError: !1
                     });
-                    if (e.code === fa.Canceled) return Gsn({
+                    if (e.code === fa.Canceled) return Ysn({
                         error: "Bad unexpected error",
                         errorIsFatal: !1,
                         errorIsRetryable: !0,
@@ -354971,24 +355005,24 @@
                     const t = e.findDetails(sf).find(e => e instanceof sf) || null;
                     return null != t && function(e) {
                         return e.error === af.FREE_USER_RATE_LIMIT_EXCEEDED || e.error === af.PRO_USER_RATE_LIMIT_EXCEEDED
-                    }(t) ? Gsn({
+                    }(t) ? Ysn({
                         error: "Rate limit error. " + e.rawMessage,
                         errorIsFatal: !1,
                         errorIsRetryable: !0,
                         errorIsRateLimitError: !0
                     }) : null != t && function(e) {
                         return e.error === af.FREE_USER_USAGE_LIMIT || e.error === af.PRO_USER_USAGE_LIMIT
-                    }(t) ? Gsn({
+                    }(t) ? Ysn({
                         error: `Usage limit error. ${e.rawMessage}`,
                         errorIsFatal: !0,
                         errorIsRetryable: !1,
                         errorIsRateLimitError: !1
-                    }) : e.code === fa.ResourceExhausted ? Gsn({
+                    }) : e.code === fa.ResourceExhausted ? Ysn({
                         error: "Rate limit error: " + e.rawMessage,
                         errorIsFatal: !1,
                         errorIsRetryable: !0,
                         errorIsRateLimitError: !0
-                    }) : Gsn({
+                    }) : Ysn({
                         error: "Weird error: " + e,
                         errorIsFatal: !1,
                         errorIsRetryable: !0,
@@ -355006,7 +355040,7 @@
                 for (; s > 0;) {
                     s -= 1;
                     const e = _i.dirname(n),
-                        i = Vsn(e, this.repoInfo);
+                        i = Wsn(e, this.repoInfo);
                     if (this.repoInfo.isMultiRoot && void 0 !== this.repoInfo.workspaceUris[i.replace("." + _i.sep, "")]) {
                         t.push(e), t.push(r.MULTI_ROOT_ABSOLUTE_PATH);
                         break
@@ -355027,7 +355061,7 @@
                 const c = e.result?.value?.children || [];
                 if (0 === c.length) return void s.add(m);
                 c.forEach(e => {
-                    e.relativeWorkspacePath = lin(e.relativeWorkspacePath, this.repoInfo.pathEncryptionScheme)
+                    e.relativeWorkspacePath = min(e.relativeWorkspacePath, this.repoInfo.pathEncryptionScheme)
                 });
                 const d = c.map(e => e.relativeWorkspacePath),
                     p = d.map(async e => {
@@ -355059,7 +355093,7 @@
                 })).map(e => (e.path = _i.join(u, e.name), e)).map(async e => {
                     let t = !1;
                     try {
-                        "" === await this.merkleClient.getSubtreeHash(Vsn(e.path, this.repoInfo)) && (t = !0)
+                        "" === await this.merkleClient.getSubtreeHash(Wsn(e.path, this.repoInfo)) && (t = !0)
                     } catch (e) {
                         t = !0
                     }
@@ -355068,12 +355102,12 @@
                 const T = await Promise.all(_),
                     A = [];
                 for (const e of T) - 1 !== e && A.push(e);
-                const w = A.filter(e => e.isFile()).map(e => Vsn(e.path, this.repoInfo)),
+                const w = A.filter(e => e.isFile()).map(e => Wsn(e.path, this.repoInfo)),
                     k = h.filter(e => w.includes(e.relativeWorkspacePath));
                 k.forEach(e => {
                     a.add(e.relativeWorkspacePath)
                 });
-                const y = A.filter(e => e.isDirectory()).map(e => Vsn(e.path, this.repoInfo)),
+                const y = A.filter(e => e.isDirectory()).map(e => Wsn(e.path, this.repoInfo)),
                     E = h.filter(e => y.includes(e.relativeWorkspacePath));
                 E.forEach(e => {
                     n.push({
@@ -355097,9 +355131,9 @@
                 }
             }
         };
-        yin.CONFIG_CHECK_INTERVAL_MS = 3e4;
-        let Ein = yin;
-        const Sin = {
+        Ein.CONFIG_CHECK_INTERVAL_MS = 3e4;
+        let Sin = Ein;
+        const vin = {
                 typeName: "aiserver.v1.RepositoryService",
                 methods: {
                     fastRepoInitHandshake: {
@@ -355218,7 +355252,7 @@
                     }
                 }
             },
-            vin = (Nm.Unary, Nm.Unary, Nm.Unary, Nm.Unary, Nm.Unary, Nm.Unary, class e extends ol {
+            Iin = (Nm.Unary, Nm.Unary, Nm.Unary, Nm.Unary, Nm.Unary, Nm.Unary, class e extends ol {
                 constructor(e) {
                     super(), Jm.util.initPartial(e, this)
                 }
@@ -355235,7 +355269,7 @@
                     return Jm.util.equals(e, t, n)
                 }
             });
-        vin.runtime = Jm, vin.typeName = "aiserver.v1.ConversationSummarizationPromptOptions", vin.fields = Jm.util.newFieldList(() => [{
+        Iin.runtime = Jm, Iin.typeName = "aiserver.v1.ConversationSummarizationPromptOptions", Iin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "inline_system_prompt",
             kind: "scalar",
@@ -355254,8 +355288,8 @@
             T: 9,
             opt: !0
         }]);
-        let Iin = vin;
-        const Bin = class e extends ol {
+        let Bin = Iin;
+        const Jin = class e extends ol {
             constructor(e) {
                 super(), this.commitHashes = [], this.onDemandSummaries = !1, Jm.util.initPartial(e, this)
             }
@@ -355272,7 +355306,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Bin.runtime = Jm, Bin.typeName = "aiserver.v1.GetCommitMetricsRequest", Bin.fields = Jm.util.newFieldList(() => [{
+        Jin.runtime = Jm, Jin.typeName = "aiserver.v1.GetCommitMetricsRequest", Jin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "commit_hashes",
             kind: "scalar",
@@ -355311,10 +355345,10 @@
             no: 12,
             name: "summarization_prompt_options",
             kind: "message",
-            T: Iin,
+            T: Bin,
             opt: !0
         }]);
-        const Jin = class e extends ol {
+        const Cin = class e extends ol {
             constructor(e) {
                 super(), this.filePath = "", Jm.util.initPartial(e, this)
             }
@@ -355331,7 +355365,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Jin.runtime = Jm, Jin.typeName = "aiserver.v1.GetCommitMetricsByFilePathRequest", Jin.fields = Jm.util.newFieldList(() => [{
+        Cin.runtime = Jm, Cin.typeName = "aiserver.v1.GetCommitMetricsByFilePathRequest", Cin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "file_path",
             kind: "scalar",
@@ -355394,10 +355428,10 @@
             no: 12,
             name: "summarization_prompt_options",
             kind: "message",
-            T: Iin,
+            T: Bin,
             opt: !0
         }]);
-        const Cin = class e extends ol {
+        const Nin = class e extends ol {
             constructor(e) {
                 super(), this.commitHash = "", this.totalLinesAdded = 0, this.totalLinesDeleted = 0, this.tabLinesAdded = 0, this.tabLinesDeleted = 0, this.agentLinesAdded = 0, this.agentLinesDeleted = 0, this.nonAiLinesAdded = 0, this.nonAiLinesDeleted = 0, this.repoName = "", this.userEmail = "", this.rangeAnnotations = [], Jm.util.initPartial(e, this)
             }
@@ -355414,7 +355448,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Cin.runtime = Jm, Cin.typeName = "aiserver.v1.CommitMetrics", Cin.fields = Jm.util.newFieldList(() => [{
+        Nin.runtime = Jm, Nin.typeName = "aiserver.v1.CommitMetrics", Nin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "commit_hash",
             kind: "scalar",
@@ -355506,8 +355540,8 @@
             T: 9,
             opt: !0
         }]);
-        let Nin = Cin;
-        const Rin = class e extends ol {
+        let Rin = Nin;
+        const Pin = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -355524,7 +355558,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Rin.runtime = Jm, Rin.typeName = "aiserver.v1.ConversationPlan", Rin.fields = Jm.util.newFieldList(() => [{
+        Pin.runtime = Jm, Pin.typeName = "aiserver.v1.ConversationPlan", Pin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "title",
             kind: "scalar",
@@ -355555,8 +355589,8 @@
             T: 9,
             opt: !0
         }]);
-        let Pin = Rin;
-        const Lin = class e extends ol {
+        let Lin = Pin;
+        const Fin = class e extends ol {
             constructor(e) {
                 super(), this.skillId = "", Jm.util.initPartial(e, this)
             }
@@ -355573,7 +355607,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Lin.runtime = Jm, Lin.typeName = "aiserver.v1.ConversationSkill", Lin.fields = Jm.util.newFieldList(() => [{
+        Fin.runtime = Jm, Fin.typeName = "aiserver.v1.ConversationSkill", Fin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "skill_id",
             kind: "scalar",
@@ -355627,8 +355661,8 @@
             T: 9,
             opt: !0
         }]);
-        let Fin = Lin;
-        const bin = class e extends ol {
+        let bin = Fin;
+        const qin = class e extends ol {
             constructor(e) {
                 super(), this.toolName = "", Jm.util.initPartial(e, this)
             }
@@ -355645,7 +355679,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        bin.runtime = Jm, bin.typeName = "aiserver.v1.ConversationMcp", bin.fields = Jm.util.newFieldList(() => [{
+        qin.runtime = Jm, qin.typeName = "aiserver.v1.ConversationMcp", qin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "tool_name",
             kind: "scalar",
@@ -355681,8 +355715,8 @@
             T: 9,
             opt: !0
         }]);
-        let qin = bin;
-        const Din = class e extends ol {
+        let Din = qin;
+        const xin = class e extends ol {
             constructor(e) {
                 super(), this.id = "", this.summaryBullets = [], this.models = [], this.plans = [], this.skills = [], this.mcps = [], Jm.util.initPartial(e, this)
             }
@@ -355699,7 +355733,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Din.runtime = Jm, Din.typeName = "aiserver.v1.ConversationReference", Din.fields = Jm.util.newFieldList(() => [{
+        xin.runtime = Jm, xin.typeName = "aiserver.v1.ConversationReference", xin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "id",
             kind: "scalar",
@@ -355738,7 +355772,7 @@
             no: 7,
             name: "plans",
             kind: "message",
-            T: Pin,
+            T: Lin,
             repeated: !0
         }, {
             no: 8,
@@ -355750,13 +355784,13 @@
             no: 9,
             name: "skills",
             kind: "message",
-            T: Fin,
+            T: bin,
             repeated: !0
         }, {
             no: 10,
             name: "mcps",
             kind: "message",
-            T: qin,
+            T: Din,
             repeated: !0
         }, {
             no: 11,
@@ -355765,8 +355799,8 @@
             T: 9,
             opt: !0
         }]);
-        let xin = Din;
-        const Min = class e extends ol {
+        let Min = xin;
+        const Oin = class e extends ol {
             constructor(e) {
                 super(), this.commits = [], this.conversations = [], Jm.util.initPartial(e, this)
             }
@@ -355783,21 +355817,21 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Min.runtime = Jm, Min.typeName = "aiserver.v1.GetCommitMetricsResponse", Min.fields = Jm.util.newFieldList(() => [{
+        Oin.runtime = Jm, Oin.typeName = "aiserver.v1.GetCommitMetricsResponse", Oin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "commits",
             kind: "message",
-            T: Nin,
+            T: Rin,
             repeated: !0
         }, {
             no: 2,
             name: "conversations",
             kind: "message",
-            T: xin,
+            T: Min,
             repeated: !0
         }]);
-        var Oin = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.OK = 1] = "OK", e[e.INVALID_REQUEST = 2] = "INVALID_REQUEST", e[e.DIFF_TOO_LONG = 3] = "DIFF_TOO_LONG", e[e.ERROR = 4] = "ERROR", e[e.CANCELLED = 5] = "CANCELLED", e))(Oin || {});
-        Jm.util.setEnumType(Oin, "aiserver.v1.CodeTourDoneReason", [{
+        var Uin = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.OK = 1] = "OK", e[e.INVALID_REQUEST = 2] = "INVALID_REQUEST", e[e.DIFF_TOO_LONG = 3] = "DIFF_TOO_LONG", e[e.ERROR = 4] = "ERROR", e[e.CANCELLED = 5] = "CANCELLED", e))(Uin || {});
+        Jm.util.setEnumType(Uin, "aiserver.v1.CodeTourDoneReason", [{
             no: 0,
             name: "CODE_TOUR_DONE_REASON_UNSPECIFIED"
         }, {
@@ -355816,7 +355850,7 @@
             no: 5,
             name: "CODE_TOUR_DONE_REASON_CANCELLED"
         }]);
-        const Uin = class e extends ol {
+        const Qin = class e extends ol {
             constructor(e) {
                 super(), this.telemEnabled = !1, this.bugBotDismissedNotificationLast10TimesUnixMs = [], this.bugBotViewedNotificationLast10TimesUnixMs = [], Jm.util.initPartial(e, this)
             }
@@ -355833,7 +355867,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Uin.runtime = Jm, Uin.typeName = "aiserver.v1.BugConfigRequest", Uin.fields = Jm.util.newFieldList(() => [{
+        Qin.runtime = Jm, Qin.typeName = "aiserver.v1.BugConfigRequest", Qin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "telem_enabled",
             kind: "scalar",
@@ -355851,7 +355885,7 @@
             T: 1,
             repeated: !0
         }]);
-        const Qin = class e extends ol {
+        const Gin = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -355868,24 +355902,24 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Qin.runtime = Jm, Qin.typeName = "aiserver.v1.BugConfigResponse", Qin.fields = Jm.util.newFieldList(() => [{
+        Gin.runtime = Jm, Gin.typeName = "aiserver.v1.BugConfigResponse", Gin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "linter_strategy_v1",
             kind: "message",
-            T: Hin
+            T: Vin
         }, {
             no: 2,
             name: "bug_bot_v1",
             kind: "message",
-            T: zin
+            T: jin
         }, {
             no: 3,
             name: "linter_strategy_v2",
             kind: "message",
-            T: Win
+            T: Kin
         }]);
-        let Gin = Qin;
-        const Yin = class e extends ol {
+        let Yin = Gin;
+        const Hin = class e extends ol {
             constructor(e) {
                 super(), this.enabled = !1, this.tryTriggerOnSave = !1, this.waitBetweenTriggersMs = 0, Jm.util.initPartial(e, this)
             }
@@ -355902,7 +355936,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Yin.runtime = Jm, Yin.typeName = "aiserver.v1.BugConfigResponse.LinterStrategyV1", Yin.fields = Jm.util.newFieldList(() => [{
+        Hin.runtime = Jm, Hin.typeName = "aiserver.v1.BugConfigResponse.LinterStrategyV1", Hin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
@@ -355918,8 +355952,8 @@
             kind: "scalar",
             T: 1
         }]);
-        let Hin = Yin;
-        const Vin = class e extends ol {
+        let Vin = Hin;
+        const Win = class e extends ol {
             constructor(e) {
                 super(), this.enabled = !1, this.waitBetweenTriggersMs = 0, this.debounceTriggersMs = 0, this.keepLinesAroundChunk = 0, this.preventTriggeringForFilesWithThisManyLines = 0, this.preventTriggeringWhenLints = !1, Jm.util.initPartial(e, this)
             }
@@ -355936,7 +355970,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Vin.runtime = Jm, Vin.typeName = "aiserver.v1.BugConfigResponse.LinterStrategyV2", Vin.fields = Jm.util.newFieldList(() => [{
+        Win.runtime = Jm, Win.typeName = "aiserver.v1.BugConfigResponse.LinterStrategyV2", Win.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
@@ -355967,8 +356001,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Win = Vin;
-        const Kin = class e extends ol {
+        let Kin = Win;
+        const zin = class e extends ol {
             constructor(e) {
                 super(), this.enabled = !1, this.isSubsidized = !1, this.backgroundCallFrequencyMs = 0, this.killSwitch = !1, this.showIntrusiveNotificationOnlyIfLastTimeWasMoreThanMsAgo = 0, Jm.util.initPartial(e, this)
             }
@@ -355985,7 +356019,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Kin.runtime = Jm, Kin.typeName = "aiserver.v1.BugConfigResponse.BugBotV1", Kin.fields = Jm.util.newFieldList(() => [{
+        zin.runtime = Jm, zin.typeName = "aiserver.v1.BugConfigResponse.BugBotV1", zin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
@@ -356095,8 +356129,8 @@
             T: 5,
             opt: !0
         }]);
-        let zin = Kin;
-        const jin = class e extends ol {
+        let jin = zin;
+        const Xin = class e extends ol {
             constructor(e) {
                 super(), this.activeFile = "", this.cursorLineNumberOneIndexed = 0, this.telemEnabled = !1, Jm.util.initPartial(e, this)
             }
@@ -356113,7 +356147,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        jin.runtime = Jm, jin.typeName = "aiserver.v1.StreamBugBotLinterRequest", jin.fields = Jm.util.newFieldList(() => [{
+        Xin.runtime = Jm, Xin.typeName = "aiserver.v1.StreamBugBotLinterRequest", Xin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "git_diff",
             kind: "message",
@@ -356140,7 +356174,7 @@
             kind: "scalar",
             T: 8
         }]);
-        const Xin = class e extends ol {
+        const $in = class e extends ol {
             constructor(e) {
                 super(), this.bugs = [], Jm.util.initPartial(e, this)
             }
@@ -356157,14 +356191,14 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Xin.runtime = Jm, Xin.typeName = "aiserver.v1.StreamBugBotLinterResponse", Xin.fields = Jm.util.newFieldList(() => [{
+        $in.runtime = Jm, $in.typeName = "aiserver.v1.StreamBugBotLinterResponse", $in.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "bugs",
             kind: "message",
             T: e8,
             repeated: !0
         }]);
-        const $in = class e extends ol {
+        const Zin = class e extends ol {
             constructor(e) {
                 super(), this.diffString = "", this.oldStart = 0, this.newStart = 0, this.oldLines = 0, this.newLines = 0, Jm.util.initPartial(e, this)
             }
@@ -356181,7 +356215,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        $in.runtime = Jm, $in.typeName = "aiserver.v1.ChunkDiff", $in.fields = Jm.util.newFieldList(() => [{
+        Zin.runtime = Jm, Zin.typeName = "aiserver.v1.ChunkDiff", Zin.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "diff_string",
             kind: "scalar",
@@ -356207,8 +356241,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let Zin = $in;
-        const ean = class e extends ol {
+        let ean = Zin;
+        const tan = class e extends ol {
             constructor(e) {
                 super(), this.fileDiffs = [], Jm.util.initPartial(e, this)
             }
@@ -356225,11 +356259,11 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        ean.runtime = Jm, ean.typeName = "aiserver.v1.ReviewRequestV2", ean.fields = Jm.util.newFieldList(() => [{
+        tan.runtime = Jm, tan.typeName = "aiserver.v1.ReviewRequestV2", tan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "file_diffs",
             kind: "message",
-            T: nan,
+            T: ran,
             repeated: !0
         }, {
             no: 2,
@@ -356250,7 +356284,7 @@
             T: 9,
             opt: !0
         }]);
-        const tan = class e extends ol {
+        const nan = class e extends ol {
             constructor(e) {
                 super(), this.chunkDiffs = [], Jm.util.initPartial(e, this)
             }
@@ -356267,7 +356301,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        tan.runtime = Jm, tan.typeName = "aiserver.v1.ReviewRequestV2.FileDiff", tan.fields = Jm.util.newFieldList(() => [{
+        nan.runtime = Jm, nan.typeName = "aiserver.v1.ReviewRequestV2.FileDiff", nan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "file",
             kind: "message",
@@ -356276,11 +356310,11 @@
             no: 2,
             name: "chunk_diffs",
             kind: "message",
-            T: Zin,
+            T: ean,
             repeated: !0
         }]);
-        let nan = tan;
-        const ran = class e extends ol {
+        let ran = nan;
+        const san = class e extends ol {
             constructor(e) {
                 super(), this.id = "", this.chunkId = "", this.relativeWorkspacePath = "", this.startLine = 0, this.endLine = 0, this.description = "", this.severity = 0, this.tldr = "", this.diff = "", this.fullChunkStartLine = 0, this.fullChunkEndLine = 0, this.fullChunkTotalLines = 0, Jm.util.initPartial(e, this)
             }
@@ -356297,7 +356331,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        ran.runtime = Jm, ran.typeName = "aiserver.v1.ReviewBugV2", ran.fields = Jm.util.newFieldList(() => [{
+        san.runtime = Jm, san.typeName = "aiserver.v1.ReviewBugV2", san.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "id",
             kind: "scalar",
@@ -356358,8 +356392,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let san = ran;
-        const ian = class e extends ol {
+        let ian = san;
+        const aan = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -356376,13 +356410,13 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        ian.runtime = Jm, ian.typeName = "aiserver.v1.ReviewResponseV2", ian.fields = Jm.util.newFieldList(() => [{
+        aan.runtime = Jm, aan.typeName = "aiserver.v1.ReviewResponseV2", aan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "bug",
             kind: "message",
-            T: san
+            T: ian
         }]);
-        const aan = class e extends ol {
+        const oan = class e extends ol {
             constructor(e) {
                 super(), this.messages = [], Jm.util.initPartial(e, this)
             }
@@ -356399,7 +356433,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        aan.runtime = Jm, aan.typeName = "aiserver.v1.ReviewChatRequestV2", aan.fields = Jm.util.newFieldList(() => [{
+        oan.runtime = Jm, oan.typeName = "aiserver.v1.ReviewChatRequestV2", oan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "file",
             kind: "message",
@@ -356408,7 +356442,7 @@
             no: 2,
             name: "bug",
             kind: "message",
-            T: san
+            T: ian
         }, {
             no: 3,
             name: "linter_rules",
@@ -356422,7 +356456,7 @@
             T: Kwe,
             repeated: !0
         }]);
-        const oan = class e extends ol {
+        const lan = class e extends ol {
             constructor(e) {
                 super(), this.text = "", Jm.util.initPartial(e, this)
             }
@@ -356439,13 +356473,13 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        oan.runtime = Jm, oan.typeName = "aiserver.v1.ReviewChatResponseV2", oan.fields = Jm.util.newFieldList(() => [{
+        lan.runtime = Jm, lan.typeName = "aiserver.v1.ReviewChatResponseV2", lan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "text",
             kind: "scalar",
             T: 9
         }]);
-        const lan = class e extends ol {
+        const man = class e extends ol {
             constructor(e) {
                 super(), this.commitHashes = [], Jm.util.initPartial(e, this)
             }
@@ -356462,11 +356496,11 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        lan.runtime = Jm, lan.typeName = "aiserver.v1.StreamCodeTourRequest", lan.fields = Jm.util.newFieldList(() => [{
+        man.runtime = Jm, man.typeName = "aiserver.v1.StreamCodeTourRequest", man.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "pull_request",
             kind: "message",
-            T: can
+            T: dan
         }, {
             no: 2,
             name: "diff",
@@ -356518,7 +356552,7 @@
             no: 10,
             name: "prompt_construction_mode",
             kind: "enum",
-            T: Jm.getEnumType(man),
+            T: Jm.getEnumType(uan),
             opt: !0
         }, {
             no: 11,
@@ -356527,8 +356561,8 @@
             T: 9,
             opt: !0
         }]);
-        var man = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SERVER_COMPACT = 1] = "SERVER_COMPACT", e[e.CLIENT_RAW = 2] = "CLIENT_RAW", e))(man || {});
-        Jm.util.setEnumType(man, "aiserver.v1.StreamCodeTourRequest.PromptConstructionMode", [{
+        var uan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SERVER_COMPACT = 1] = "SERVER_COMPACT", e[e.CLIENT_RAW = 2] = "CLIENT_RAW", e))(uan || {});
+        Jm.util.setEnumType(uan, "aiserver.v1.StreamCodeTourRequest.PromptConstructionMode", [{
             no: 0,
             name: "PROMPT_CONSTRUCTION_MODE_UNSPECIFIED"
         }, {
@@ -356538,7 +356572,7 @@
             no: 2,
             name: "PROMPT_CONSTRUCTION_MODE_CLIENT_RAW"
         }]);
-        const uan = class e extends ol {
+        const can = class e extends ol {
             constructor(e) {
                 super(), this.provider = "", this.owner = "", this.repository = "", this.pullRequestNumber = Tl.zero, Jm.util.initPartial(e, this)
             }
@@ -356555,7 +356589,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        uan.runtime = Jm, uan.typeName = "aiserver.v1.StreamCodeTourRequest.PullRequestReference", uan.fields = Jm.util.newFieldList(() => [{
+        can.runtime = Jm, can.typeName = "aiserver.v1.StreamCodeTourRequest.PullRequestReference", can.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "provider",
             kind: "scalar",
@@ -356606,8 +356640,8 @@
             T: 9,
             opt: !0
         }]);
-        let can = uan;
-        const dan = class e extends ol {
+        let dan = can;
+        const pan = class e extends ol {
             constructor(e) {
                 super(), this.event = {
                     case: void 0
@@ -356626,35 +356660,35 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        dan.runtime = Jm, dan.typeName = "aiserver.v1.StreamCodeTourResponse", dan.fields = Jm.util.newFieldList(() => [{
+        pan.runtime = Jm, pan.typeName = "aiserver.v1.StreamCodeTourResponse", pan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "message",
-            T: fan,
+            T: gan,
             oneof: "event"
         }, {
             no: 2,
             name: "done",
             kind: "message",
-            T: _an,
+            T: Tan,
             oneof: "event"
         }, {
             no: 3,
             name: "error",
             kind: "message",
-            T: Aan,
+            T: wan,
             oneof: "event"
         }, {
             no: 7,
             name: "markdown_delta",
             kind: "message",
-            T: kan,
+            T: yan,
             oneof: "event"
         }, {
             no: 8,
             name: "thinking_delta",
             kind: "message",
-            T: Ean,
+            T: San,
             oneof: "event"
         }, {
             no: 4,
@@ -356672,10 +356706,10 @@
             no: 6,
             name: "blame",
             kind: "message",
-            T: van,
+            T: Ian,
             opt: !0
         }]);
-        const pan = class e extends ol {
+        const fan = class e extends ol {
             constructor(e) {
                 super(), this.status = 0, Jm.util.initPartial(e, this)
             }
@@ -356692,11 +356726,11 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        pan.runtime = Jm, pan.typeName = "aiserver.v1.StreamCodeTourResponse.StatusEvent", pan.fields = Jm.util.newFieldList(() => [{
+        fan.runtime = Jm, fan.typeName = "aiserver.v1.StreamCodeTourResponse.StatusEvent", fan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "status",
             kind: "enum",
-            T: Jm.getEnumType(gan)
+            T: Jm.getEnumType(han)
         }, {
             no: 2,
             name: "message",
@@ -356704,9 +356738,9 @@
             T: 9,
             opt: !0
         }]);
-        let fan = pan;
-        var gan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.STARTED = 1] = "STARTED", e[e.PROCESSING = 2] = "PROCESSING", e))(gan || {});
-        Jm.util.setEnumType(gan, "aiserver.v1.StreamCodeTourResponse.StatusEvent.Status", [{
+        let gan = fan;
+        var han = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.STARTED = 1] = "STARTED", e[e.PROCESSING = 2] = "PROCESSING", e))(han || {});
+        Jm.util.setEnumType(han, "aiserver.v1.StreamCodeTourResponse.StatusEvent.Status", [{
             no: 0,
             name: "STATUS_UNSPECIFIED"
         }, {
@@ -356716,7 +356750,7 @@
             no: 2,
             name: "STATUS_PROCESSING"
         }]);
-        const han = class e extends ol {
+        const _an = class e extends ol {
             constructor(e) {
                 super(), this.reason = 0, Jm.util.initPartial(e, this)
             }
@@ -356733,14 +356767,14 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        han.runtime = Jm, han.typeName = "aiserver.v1.StreamCodeTourResponse.DoneEvent", han.fields = Jm.util.newFieldList(() => [{
+        _an.runtime = Jm, _an.typeName = "aiserver.v1.StreamCodeTourResponse.DoneEvent", _an.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "reason",
             kind: "enum",
-            T: Jm.getEnumType(Oin)
+            T: Jm.getEnumType(Uin)
         }]);
-        let _an = han;
-        const Tan = class e extends ol {
+        let Tan = _an;
+        const Aan = class e extends ol {
             constructor(e) {
                 super(), this.message = "", this.reason = 0, Jm.util.initPartial(e, this)
             }
@@ -356757,7 +356791,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Tan.runtime = Jm, Tan.typeName = "aiserver.v1.StreamCodeTourResponse.ErrorEvent", Tan.fields = Jm.util.newFieldList(() => [{
+        Aan.runtime = Jm, Aan.typeName = "aiserver.v1.StreamCodeTourResponse.ErrorEvent", Aan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "message",
             kind: "scalar",
@@ -356766,10 +356800,10 @@
             no: 2,
             name: "reason",
             kind: "enum",
-            T: Jm.getEnumType(Oin)
+            T: Jm.getEnumType(Uin)
         }]);
-        let Aan = Tan;
-        const wan = class e extends ol {
+        let wan = Aan;
+        const kan = class e extends ol {
             constructor(e) {
                 super(), this.markdownDelta = "", Jm.util.initPartial(e, this)
             }
@@ -356786,14 +356820,14 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        wan.runtime = Jm, wan.typeName = "aiserver.v1.StreamCodeTourResponse.MarkdownDeltaEvent", wan.fields = Jm.util.newFieldList(() => [{
+        kan.runtime = Jm, kan.typeName = "aiserver.v1.StreamCodeTourResponse.MarkdownDeltaEvent", kan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "markdown_delta",
             kind: "scalar",
             T: 9
         }]);
-        let kan = wan;
-        const yan = class e extends ol {
+        let yan = kan;
+        const Ean = class e extends ol {
             constructor(e) {
                 super(), this.thinkingDelta = "", Jm.util.initPartial(e, this)
             }
@@ -356810,14 +356844,14 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        yan.runtime = Jm, yan.typeName = "aiserver.v1.StreamCodeTourResponse.ThinkingDeltaEvent", yan.fields = Jm.util.newFieldList(() => [{
+        Ean.runtime = Jm, Ean.typeName = "aiserver.v1.StreamCodeTourResponse.ThinkingDeltaEvent", Ean.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "thinking_delta",
             kind: "scalar",
             T: 9
         }]);
-        let Ean = yan;
-        const San = class e extends ol {
+        let San = Ean;
+        const van = class e extends ol {
             constructor(e) {
                 super(), this.commits = [], this.conversations = [], Jm.util.initPartial(e, this)
             }
@@ -356834,21 +356868,21 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        San.runtime = Jm, San.typeName = "aiserver.v1.StreamCodeTourResponse.Blame", San.fields = Jm.util.newFieldList(() => [{
+        van.runtime = Jm, van.typeName = "aiserver.v1.StreamCodeTourResponse.Blame", van.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "commits",
             kind: "message",
-            T: Nin,
+            T: Rin,
             repeated: !0
         }, {
             no: 2,
             name: "conversations",
             kind: "message",
-            T: xin,
+            T: Min,
             repeated: !0
         }]);
-        let van = San;
-        const Ian = class e extends ol {
+        let Ian = van;
+        const Ban = class e extends ol {
             constructor(e) {
                 super(), this.bugs = [], Jm.util.initPartial(e, this)
             }
@@ -356865,14 +356899,14 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Ian.runtime = Jm, Ian.typeName = "aiserver.v1.StreamBugFindingResponse", Ian.fields = Jm.util.newFieldList(() => [{
+        Ban.runtime = Jm, Ban.typeName = "aiserver.v1.StreamBugFindingResponse", Ban.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "bugs",
             kind: "message",
-            T: Jan,
+            T: Can,
             repeated: !0
         }]);
-        const Ban = class e extends ol {
+        const Jan = class e extends ol {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.startLine = 0, this.endLineInclusive = 0, this.codeLines = [], this.severity = 0, this.confidence = 0, this.description = "", Jm.util.initPartial(e, this)
             }
@@ -356889,7 +356923,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Ban.runtime = Jm, Ban.typeName = "aiserver.v1.StreamBugFindingResponse.Bug", Ban.fields = Jm.util.newFieldList(() => [{
+        Jan.runtime = Jm, Jan.typeName = "aiserver.v1.StreamBugFindingResponse.Bug", Jan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -356926,8 +356960,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let Jan = Ban;
-        const Can = class e extends ol {
+        let Can = Jan;
+        const Nan = class e extends ol {
             constructor(e) {
                 super(), this.fileDiffs = [], Jm.util.initPartial(e, this)
             }
@@ -356944,14 +356978,14 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Can.runtime = Jm, Can.typeName = "aiserver.v1.StreamBugFindingRequest", Can.fields = Jm.util.newFieldList(() => [{
+        Nan.runtime = Jm, Nan.typeName = "aiserver.v1.StreamBugFindingRequest", Nan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "file_diffs",
             kind: "message",
-            T: Ran,
+            T: Pan,
             repeated: !0
         }]);
-        const Nan = class e extends ol {
+        const Ran = class e extends ol {
             constructor(e) {
                 super(), this.relativeWorkspacePath = "", this.lines = [], this.hunks = [], this.notTruncated = !1, Jm.util.initPartial(e, this)
             }
@@ -356968,7 +357002,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Nan.runtime = Jm, Nan.typeName = "aiserver.v1.StreamBugFindingRequest.FileDiff", Nan.fields = Jm.util.newFieldList(() => [{
+        Ran.runtime = Jm, Ran.typeName = "aiserver.v1.StreamBugFindingRequest.FileDiff", Ran.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "relative_workspace_path",
             kind: "scalar",
@@ -356977,13 +357011,13 @@
             no: 2,
             name: "lines",
             kind: "message",
-            T: ban,
+            T: qan,
             repeated: !0
         }, {
             no: 3,
             name: "hunks",
             kind: "message",
-            T: Lan,
+            T: Fan,
             repeated: !0
         }, {
             no: 4,
@@ -356997,8 +357031,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Ran = Nan;
-        const Pan = class e extends ol {
+        let Pan = Ran;
+        const Lan = class e extends ol {
             constructor(e) {
                 super(), this.oldStartOneIndexed = 0, this.newStartOneIndexed = 0, this.oldLines = [], this.newLines = [], Jm.util.initPartial(e, this)
             }
@@ -357015,7 +357049,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Pan.runtime = Jm, Pan.typeName = "aiserver.v1.StreamBugFindingRequest.FileDiff.Hunk", Pan.fields = Jm.util.newFieldList(() => [{
+        Lan.runtime = Jm, Lan.typeName = "aiserver.v1.StreamBugFindingRequest.FileDiff.Hunk", Lan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "old_start_one_indexed",
             kind: "scalar",
@@ -357038,8 +357072,8 @@
             T: 9,
             repeated: !0
         }]);
-        let Lan = Pan;
-        const Fan = class e extends ol {
+        let Fan = Lan;
+        const ban = class e extends ol {
             constructor(e) {
                 super(), this.oneIndexedLineNumber = 0, this.line = "", Jm.util.initPartial(e, this)
             }
@@ -357056,7 +357090,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Fan.runtime = Jm, Fan.typeName = "aiserver.v1.StreamBugFindingRequest.FileDiff.Line", Fan.fields = Jm.util.newFieldList(() => [{
+        ban.runtime = Jm, ban.typeName = "aiserver.v1.StreamBugFindingRequest.FileDiff.Line", ban.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "one_indexed_line_number",
             kind: "scalar",
@@ -357067,8 +357101,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let ban = Fan;
-        const qan = class e extends ol {
+        let qan = ban;
+        const Dan = class e extends ol {
             constructor(e) {
                 super(), this.samplingInterval = 0, Jm.util.initPartial(e, this)
             }
@@ -357085,7 +357119,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        qan.runtime = Jm, qan.typeName = "aiserver.v1.HeapProfileConfig", qan.fields = Jm.util.newFieldList(() => [{
+        Dan.runtime = Jm, Dan.typeName = "aiserver.v1.HeapProfileConfig", Dan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "sampling_interval",
             kind: "scalar",
@@ -357103,8 +357137,8 @@
             T: 8,
             opt: !0
         }]);
-        let Dan = qan;
-        const xan = class e extends ol {
+        let xan = Dan;
+        const Man = class e extends ol {
             constructor(e) {
                 super(), this.interval = 0, Jm.util.initPartial(e, this)
             }
@@ -357121,14 +357155,14 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        xan.runtime = Jm, xan.typeName = "aiserver.v1.CpuProfileConfig", xan.fields = Jm.util.newFieldList(() => [{
+        Man.runtime = Jm, Man.typeName = "aiserver.v1.CpuProfileConfig", Man.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "interval",
             kind: "scalar",
             T: 5
         }]);
-        let Man = xan;
-        const Oan = class e extends ol {
+        let Oan = Man;
+        const Uan = class e extends ol {
             constructor(e) {
                 super(), this.id = "", Jm.util.initPartial(e, this)
             }
@@ -357145,7 +357179,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Oan.runtime = Jm, Oan.typeName = "aiserver.v1.ProfileConfig", Oan.fields = Jm.util.newFieldList(() => [{
+        Uan.runtime = Jm, Uan.typeName = "aiserver.v1.ProfileConfig", Uan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "id",
             kind: "scalar",
@@ -357154,17 +357188,17 @@
             no: 2,
             name: "heap",
             kind: "message",
-            T: Dan,
+            T: xan,
             opt: !0
         }, {
             no: 3,
             name: "cpu",
             kind: "message",
-            T: Man,
+            T: Oan,
             opt: !0
         }]);
-        let Uan = Oan;
-        const Qan = class e extends ol {
+        let Qan = Uan;
+        const Gan = class e extends ol {
             constructor(e) {
                 super(), this.id = "", this.process = "", this.configId = "", this.activityTimeout = 0, Jm.util.initPartial(e, this)
             }
@@ -357181,7 +357215,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Qan.runtime = Jm, Qan.typeName = "aiserver.v1.ProfileScheduleConfig", Qan.fields = Jm.util.newFieldList(() => [{
+        Gan.runtime = Jm, Gan.typeName = "aiserver.v1.ProfileScheduleConfig", Gan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "id",
             kind: "scalar",
@@ -357200,15 +357234,15 @@
             no: 4,
             name: "schedule",
             kind: "message",
-            T: Han
+            T: Van
         }, {
             no: 5,
             name: "activity_timeout",
             kind: "scalar",
             T: 5
         }]);
-        let Gan = Qan;
-        const Yan = class e extends ol {
+        let Yan = Gan;
+        const Han = class e extends ol {
             constructor(e) {
                 super(), this.interval = 0, this.duration = 0, Jm.util.initPartial(e, this)
             }
@@ -357225,7 +357259,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Yan.runtime = Jm, Yan.typeName = "aiserver.v1.ProfileScheduleConfig.ScheduleConfig", Yan.fields = Jm.util.newFieldList(() => [{
+        Han.runtime = Jm, Han.typeName = "aiserver.v1.ProfileScheduleConfig.ScheduleConfig", Han.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "interval",
             kind: "scalar",
@@ -357236,8 +357270,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let Han = Yan;
-        const Van = class e extends ol {
+        let Van = Han;
+        const Wan = class e extends ol {
             constructor(e) {
                 super(), this.enabled = !1, this.configs = [], this.schedules = [], Jm.util.initPartial(e, this)
             }
@@ -357254,7 +357288,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Van.runtime = Jm, Van.typeName = "aiserver.v1.ProfilingConfig", Van.fields = Jm.util.newFieldList(() => [{
+        Wan.runtime = Jm, Wan.typeName = "aiserver.v1.ProfilingConfig", Wan.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
@@ -357263,18 +357297,18 @@
             no: 2,
             name: "configs",
             kind: "message",
-            T: Uan,
+            T: Qan,
             repeated: !0
         }, {
             no: 3,
             name: "schedules",
             kind: "message",
-            T: Gan,
+            T: Yan,
             repeated: !0
         }]);
-        let Wan = Van;
-        var Kan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LEADING = 1] = "LEADING", e[e.PRIMARY = 2] = "PRIMARY", e[e.SECONDARY = 3] = "SECONDARY", e))(Kan || {});
-        Jm.util.setEnumType(Kan, "aiserver.v1.ButtonType", [{
+        let Kan = Wan;
+        var zan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LEADING = 1] = "LEADING", e[e.PRIMARY = 2] = "PRIMARY", e[e.SECONDARY = 3] = "SECONDARY", e))(zan || {});
+        Jm.util.setEnumType(zan, "aiserver.v1.ButtonType", [{
             no: 0,
             name: "BUTTON_TYPE_UNSPECIFIED"
         }, {
@@ -357287,8 +357321,8 @@
             no: 3,
             name: "BUTTON_TYPE_SECONDARY"
         }]);
-        var zan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.TOAST = 1] = "TOAST", e[e.MODAL = 2] = "MODAL", e))(zan || {});
-        Jm.util.setEnumType(zan, "aiserver.v1.DisplayMode", [{
+        var jan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.TOAST = 1] = "TOAST", e[e.MODAL = 2] = "MODAL", e))(jan || {});
+        Jm.util.setEnumType(jan, "aiserver.v1.DisplayMode", [{
             no: 0,
             name: "DISPLAY_MODE_UNSPECIFIED"
         }, {
@@ -357298,8 +357332,8 @@
             no: 2,
             name: "DISPLAY_MODE_MODAL"
         }]);
-        var jan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NONE = 1] = "NONE", e[e.RECOMMENDED = 2] = "RECOMMENDED", e[e.REQUIRED = 3] = "REQUIRED", e))(jan || {});
-        Jm.util.setEnumType(jan, "aiserver.v1.ClientUpdateLevel", [{
+        var Xan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NONE = 1] = "NONE", e[e.RECOMMENDED = 2] = "RECOMMENDED", e[e.REQUIRED = 3] = "REQUIRED", e))(Xan || {});
+        Jm.util.setEnumType(Xan, "aiserver.v1.ClientUpdateLevel", [{
             no: 0,
             name: "CLIENT_UPDATE_LEVEL_UNSPECIFIED"
         }, {
@@ -357312,8 +357346,8 @@
             no: 3,
             name: "CLIENT_UPDATE_LEVEL_REQUIRED"
         }]);
-        var Xan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LOCAL = 1] = "LOCAL", e[e.WSL = 2] = "WSL", e[e.SSH = 3] = "SSH", e[e.DEVCONTAINER = 4] = "DEVCONTAINER", e[e.DEVCONTAINER_SSH = 5] = "DEVCONTAINER_SSH", e[e.DEVCONTAINER_WSL = 6] = "DEVCONTAINER_WSL", e))(Xan || {});
-        Jm.util.setEnumType(Xan, "aiserver.v1.RemoteConnectionType", [{
+        var $an = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LOCAL = 1] = "LOCAL", e[e.WSL = 2] = "WSL", e[e.SSH = 3] = "SSH", e[e.DEVCONTAINER = 4] = "DEVCONTAINER", e[e.DEVCONTAINER_SSH = 5] = "DEVCONTAINER_SSH", e[e.DEVCONTAINER_WSL = 6] = "DEVCONTAINER_WSL", e))($an || {});
+        Jm.util.setEnumType($an, "aiserver.v1.RemoteConnectionType", [{
             no: 0,
             name: "REMOTE_CONNECTION_TYPE_UNSPECIFIED"
         }, {
@@ -357335,8 +357369,8 @@
             no: 6,
             name: "REMOTE_CONNECTION_TYPE_DEVCONTAINER_WSL"
         }]);
-        var $an = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EDITOR = 1] = "EDITOR", e[e.GLASS = 2] = "GLASS", e))($an || {});
-        Jm.util.setEnumType($an, "aiserver.v1.ClientSurface", [{
+        var Zan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EDITOR = 1] = "EDITOR", e[e.GLASS = 2] = "GLASS", e))(Zan || {});
+        Jm.util.setEnumType(Zan, "aiserver.v1.ClientSurface", [{
             no: 0,
             name: "CLIENT_SURFACE_UNSPECIFIED"
         }, {
@@ -357346,8 +357380,8 @@
             no: 2,
             name: "CLIENT_SURFACE_GLASS"
         }]);
-        var Zan = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.MOUNT = 1] = "MOUNT", e[e.FIND_ISSUES = 2] = "FIND_ISSUES", e[e.GIT_PUSH = 3] = "GIT_PUSH", e[e.COMMIT = 4] = "COMMIT", e))(Zan || {});
-        Jm.util.setEnumType(Zan, "aiserver.v1.InAppAdTrigger", [{
+        var eon = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.MOUNT = 1] = "MOUNT", e[e.FIND_ISSUES = 2] = "FIND_ISSUES", e[e.GIT_PUSH = 3] = "GIT_PUSH", e[e.COMMIT = 4] = "COMMIT", e))(eon || {});
+        Jm.util.setEnumType(eon, "aiserver.v1.InAppAdTrigger", [{
             no: 0,
             name: "IN_APP_AD_TRIGGER_UNSPECIFIED"
         }, {
@@ -357363,8 +357397,8 @@
             no: 4,
             name: "IN_APP_AD_TRIGGER_COMMIT"
         }]);
-        var eon = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.FORCE_ALL_DISABLED = 1] = "FORCE_ALL_DISABLED", e[e.FORCE_ALL_ENABLED = 2] = "FORCE_ALL_ENABLED", e[e.FORCE_BIDI_DISABLED = 3] = "FORCE_BIDI_DISABLED", e[e.FORCE_BIDI_ENABLED = 4] = "FORCE_BIDI_ENABLED", e))(eon || {});
-        Jm.util.setEnumType(eon, "aiserver.v1.Http2Config", [{
+        var ton = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.FORCE_ALL_DISABLED = 1] = "FORCE_ALL_DISABLED", e[e.FORCE_ALL_ENABLED = 2] = "FORCE_ALL_ENABLED", e[e.FORCE_BIDI_DISABLED = 3] = "FORCE_BIDI_DISABLED", e[e.FORCE_BIDI_ENABLED = 4] = "FORCE_BIDI_ENABLED", e))(ton || {});
+        Jm.util.setEnumType(ton, "aiserver.v1.Http2Config", [{
             no: 0,
             name: "HTTP2_CONFIG_UNSPECIFIED"
         }, {
@@ -357380,8 +357414,8 @@
             no: 4,
             name: "HTTP2_CONFIG_FORCE_BIDI_ENABLED"
         }]);
-        var ton = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.TEAM = 1] = "TEAM", e[e.USER = 2] = "USER", e))(ton || {});
-        Jm.util.setEnumType(ton, "aiserver.v1.BugbotPlanType", [{
+        var non = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.TEAM = 1] = "TEAM", e[e.USER = 2] = "USER", e))(non || {});
+        Jm.util.setEnumType(non, "aiserver.v1.BugbotPlanType", [{
             no: 0,
             name: "BUGBOT_PLAN_TYPE_UNSPECIFIED"
         }, {
@@ -357391,8 +357425,8 @@
             no: 2,
             name: "BUGBOT_PLAN_TYPE_USER"
         }]);
-        var non = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ON_SELECT = 1] = "ON_SELECT", e[e.ON_ERROR = 2] = "ON_ERROR", e))(non || {});
-        Jm.util.setEnumType(non, "aiserver.v1.InferenceProviderWarningTrigger", [{
+        var ron = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ON_SELECT = 1] = "ON_SELECT", e[e.ON_ERROR = 2] = "ON_ERROR", e))(ron || {});
+        Jm.util.setEnumType(ron, "aiserver.v1.InferenceProviderWarningTrigger", [{
             no: 0,
             name: "INFERENCE_PROVIDER_WARNING_TRIGGER_UNSPECIFIED"
         }, {
@@ -357402,7 +357436,7 @@
             no: 2,
             name: "INFERENCE_PROVIDER_WARNING_TRIGGER_ON_ERROR"
         }]);
-        const ron = class e extends ol {
+        const son = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -357419,7 +357453,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        ron.runtime = Jm, ron.typeName = "aiserver.v1.ModalDisplayConfig", ron.fields = Jm.util.newFieldList(() => [{
+        son.runtime = Jm, son.typeName = "aiserver.v1.ModalDisplayConfig", son.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "background_gradient",
             kind: "scalar",
@@ -357444,8 +357478,8 @@
             T: 9,
             opt: !0
         }]);
-        let son = ron;
-        const ion = class e extends ol {
+        let ion = son;
+        const aon = class e extends ol {
             constructor(e) {
                 super(), this.id = "", this.buttons = [], this.displayMode = 0, this.targetSurfaces = [], Jm.util.initPartial(e, this)
             }
@@ -357462,7 +357496,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        ion.runtime = Jm, ion.typeName = "aiserver.v1.InAppAd", ion.fields = Jm.util.newFieldList(() => [{
+        aon.runtime = Jm, aon.typeName = "aiserver.v1.InAppAd", aon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "id",
             kind: "scalar",
@@ -357471,17 +357505,17 @@
             no: 2,
             name: "header",
             kind: "message",
-            T: lon
+            T: mon
         }, {
             no: 3,
             name: "content",
             kind: "message",
-            T: uon
+            T: con
         }, {
             no: 4,
             name: "buttons",
             kind: "message",
-            T: fon,
+            T: gon,
             repeated: !0
         }, {
             no: 5,
@@ -357493,7 +357527,7 @@
             no: 6,
             name: "display_mode",
             kind: "enum",
-            T: Jm.getEnumType(zan)
+            T: Jm.getEnumType(jan)
         }, {
             no: 7,
             name: "analytics_variant",
@@ -357504,17 +357538,17 @@
             no: 8,
             name: "modal_display_config",
             kind: "message",
-            T: son,
+            T: ion,
             opt: !0
         }, {
             no: 9,
             name: "target_surfaces",
             kind: "enum",
-            T: Jm.getEnumType($an),
+            T: Jm.getEnumType(Zan),
             repeated: !0
         }]);
-        let aon = ion;
-        const oon = class e extends ol {
+        let oon = aon;
+        const lon = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -357531,7 +357565,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        oon.runtime = Jm, oon.typeName = "aiserver.v1.AdHeader", oon.fields = Jm.util.newFieldList(() => [{
+        lon.runtime = Jm, lon.typeName = "aiserver.v1.AdHeader", lon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "banner_url",
             kind: "scalar",
@@ -357550,8 +357584,8 @@
             T: 9,
             opt: !0
         }]);
-        let lon = oon;
-        const mon = class e extends ol {
+        let mon = lon;
+        const uon = class e extends ol {
             constructor(e) {
                 super(), this.title = "", this.sections = [], Jm.util.initPartial(e, this)
             }
@@ -357568,7 +357602,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        mon.runtime = Jm, mon.typeName = "aiserver.v1.AdContent", mon.fields = Jm.util.newFieldList(() => [{
+        uon.runtime = Jm, uon.typeName = "aiserver.v1.AdContent", uon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "tag",
             kind: "scalar",
@@ -357583,7 +357617,7 @@
             no: 3,
             name: "sections",
             kind: "message",
-            T: don,
+            T: pon,
             repeated: !0
         }, {
             no: 4,
@@ -357592,8 +357626,8 @@
             T: 8,
             opt: !0
         }]);
-        let uon = mon;
-        const con = class e extends ol {
+        let con = uon;
+        const don = class e extends ol {
             constructor(e) {
                 super(), this.iconSvg = "", this.title = "", this.description = "", Jm.util.initPartial(e, this)
             }
@@ -357610,7 +357644,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        con.runtime = Jm, con.typeName = "aiserver.v1.AdSection", con.fields = Jm.util.newFieldList(() => [{
+        don.runtime = Jm, don.typeName = "aiserver.v1.AdSection", don.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "icon_svg",
             kind: "scalar",
@@ -357632,8 +357666,8 @@
             T: 8,
             opt: !0
         }]);
-        let don = con;
-        const pon = class e extends ol {
+        let pon = don;
+        const fon = class e extends ol {
             constructor(e) {
                 super(), this.text = "", this.buttonType = 0, this.action = {
                     case: void 0
@@ -357652,7 +357686,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        pon.runtime = Jm, pon.typeName = "aiserver.v1.AdButton", pon.fields = Jm.util.newFieldList(() => [{
+        fon.runtime = Jm, fon.typeName = "aiserver.v1.AdButton", fon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "text",
             kind: "scalar",
@@ -357661,7 +357695,7 @@
             no: 2,
             name: "button_type",
             kind: "enum",
-            T: Jm.getEnumType(Kan)
+            T: Jm.getEnumType(zan)
         }, {
             no: 3,
             name: "external_url",
@@ -357681,8 +357715,8 @@
             T: hf,
             oneof: "action"
         }]);
-        let fon = pon;
-        const gon = class e extends ol {
+        let gon = fon;
+        const hon = class e extends ol {
             constructor(e) {
                 super(), this.updateLevel = 0, this.currentClientVersion = "", this.minSupportedClientVersion = "", this.minAllowedClientVersion = "", Jm.util.initPartial(e, this)
             }
@@ -357699,11 +357733,11 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        gon.runtime = Jm, gon.typeName = "aiserver.v1.ClientVersionStatus", gon.fields = Jm.util.newFieldList(() => [{
+        hon.runtime = Jm, hon.typeName = "aiserver.v1.ClientVersionStatus", hon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "update_level",
             kind: "enum",
-            T: Jm.getEnumType(jan)
+            T: Jm.getEnumType(Xan)
         }, {
             no: 2,
             name: "current_client_version",
@@ -357726,8 +357760,8 @@
             T: 9,
             opt: !0
         }]);
-        let hon = gon;
-        const _on = class e extends ol {
+        let _on = hon;
+        const Ton = class e extends ol {
             constructor(e) {
                 super(), this.maxConcurrentUploads = 0, this.absoluteMaxNumberFiles = 0, this.maxFileRetries = 0, this.syncConcurrency = 0, this.autoIndexingMaxNumFiles = 0, this.indexingPeriodSeconds = 0, this.repo42AuthToken = "", this.copyStatusCheckPeriodSeconds = 0, this.copyTimeoutSeconds = 0, this.maxBatchBytes = 0, this.maxBatchNumRequests = 0, this.maxSyncMerkleBatchSize = 0, Jm.util.initPartial(e, this)
             }
@@ -357744,7 +357778,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        _on.runtime = Jm, _on.typeName = "aiserver.v1.IndexingConfig", _on.fields = Jm.util.newFieldList(() => [{
+        Ton.runtime = Jm, Ton.typeName = "aiserver.v1.IndexingConfig", Ton.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "max_concurrent_uploads",
             kind: "scalar",
@@ -357829,8 +357863,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let Ton = _on;
-        const Aon = class e extends ol {
+        let Aon = Ton;
+        const won = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -357847,7 +357881,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Aon.runtime = Jm, Aon.typeName = "aiserver.v1.GitIndexingConfig", Aon.fields = Jm.util.newFieldList(() => [{
+        won.runtime = Jm, won.typeName = "aiserver.v1.GitIndexingConfig", won.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
@@ -357908,8 +357942,8 @@
             T: 8,
             opt: !0
         }]);
-        let won = Aon;
-        const kon = class e extends ol {
+        let kon = won;
+        const yon = class e extends ol {
             constructor(e) {
                 super(), this.globalSampleRate = 0, this.tracesSampleRate = 0, this.loggerSampleRate = 0, this.minidumpSampleRate = 0, this.errorRateLimit = 0, this.performanceUnitRateLimit = 0, this.profilesSampleRate = 0, this.jsonStringifySampleRate = 0, Jm.util.initPartial(e, this)
             }
@@ -357926,7 +357960,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        kon.runtime = Jm, kon.typeName = "aiserver.v1.ClientTracingConfig", kon.fields = Jm.util.newFieldList(() => [{
+        yon.runtime = Jm, yon.typeName = "aiserver.v1.ClientTracingConfig", yon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "global_sample_rate",
             kind: "scalar",
@@ -357967,8 +358001,8 @@
             kind: "scalar",
             T: 1
         }]);
-        let yon = kon;
-        const Eon = class e extends ol {
+        let Eon = yon;
+        const Son = class e extends ol {
             constructor(e) {
                 super(), this.disableUnification = !1, this.fullContextTokenLimit = 0, this.disableYoloMode = !1, this.maxRuleLength = 0, this.maxMcpTools = 0, this.warnMcpTools = 0, this.summarizationMessage = "", this.numFilesForMemoryGeneration = 0, this.memoryDefaultEnabled = !1, this.numSummarizationsBeforeWarningShown = 0, this.cursorRulesReadFileFixEnabled = !1, this.dontSendCtrlCBeforeCommand = !1, this.clientStatsigPollIntervalMs = 0, this.disableStatsig = !1, this.listDirV2PredefinedIgnoreGlobs = [], Jm.util.initPartial(e, this)
             }
@@ -357985,7 +358019,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Eon.runtime = Jm, Eon.typeName = "aiserver.v1.ChatConfig", Eon.fields = Jm.util.newFieldList(() => [{
+        Son.runtime = Jm, Son.typeName = "aiserver.v1.ChatConfig", Son.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "disable_unification",
             kind: "scalar",
@@ -358062,8 +358096,8 @@
             T: 9,
             repeated: !0
         }]);
-        let Son = Eon;
-        const von = class e extends ol {
+        let von = Son;
+        const Ion = class e extends ol {
             constructor(e) {
                 super(), this.connectionType = 0, Jm.util.initPartial(e, this)
             }
@@ -358080,14 +358114,14 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        von.runtime = Jm, von.typeName = "aiserver.v1.RemoteAuthority", von.fields = Jm.util.newFieldList(() => [{
+        Ion.runtime = Jm, Ion.typeName = "aiserver.v1.RemoteAuthority", Ion.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "connection_type",
             kind: "enum",
-            T: Jm.getEnumType(Xan)
+            T: Jm.getEnumType($an)
         }]);
-        let Ion = von;
-        const Bon = class e extends ol {
+        let Bon = Ion;
+        const Jon = class e extends ol {
             constructor(e) {
                 super(), this.hasAlternativeCli = !1, this.hasCursorAgentCli = !1, Jm.util.initPartial(e, this)
             }
@@ -358104,7 +358138,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Bon.runtime = Jm, Bon.typeName = "aiserver.v1.DevEnvironment", Bon.fields = Jm.util.newFieldList(() => [{
+        Jon.runtime = Jm, Jon.typeName = "aiserver.v1.DevEnvironment", Jon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "has_alternative_cli",
             kind: "scalar",
@@ -358115,8 +358149,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Jon = Bon;
-        const Con = class e extends ol {
+        let Con = Jon;
+        const Non = class e extends ol {
             constructor(e) {
                 super(), this.telemEnabled = !1, this.bugBotDismissedNotificationLast10TimesUnixMs = [], this.bugBotViewedNotificationLast10TimesUnixMs = [], this.inAppAdTrigger = 0, this.clientSurface = 0, Jm.util.initPartial(e, this)
             }
@@ -358133,7 +358167,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Con.runtime = Jm, Con.typeName = "aiserver.v1.GetServerConfigRequest", Con.fields = Jm.util.newFieldList(() => [{
+        Non.runtime = Jm, Non.typeName = "aiserver.v1.GetServerConfigRequest", Non.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "telem_enabled",
             kind: "scalar",
@@ -358164,24 +358198,24 @@
             no: 6,
             name: "remote_authority",
             kind: "message",
-            T: Ion
+            T: Bon
         }, {
             no: 7,
             name: "in_app_ad_trigger",
             kind: "enum",
-            T: Jm.getEnumType(Zan)
+            T: Jm.getEnumType(eon)
         }, {
             no: 8,
             name: "dev_environment",
             kind: "message",
-            T: Jon
+            T: Con
         }, {
             no: 9,
             name: "client_surface",
             kind: "enum",
-            T: Jm.getEnumType($an)
+            T: Jm.getEnumType(Zan)
         }]);
-        const Non = class e extends ol {
+        const Ron = class e extends ol {
             constructor(e) {
                 super(), this.enabledInPrivacyMode = !1, this.enabledInNonPrivacyMode = !1, Jm.util.initPartial(e, this)
             }
@@ -358198,7 +358232,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Non.runtime = Jm, Non.typeName = "aiserver.v1.MetricsConfig", Non.fields = Jm.util.newFieldList(() => [{
+        Ron.runtime = Jm, Ron.typeName = "aiserver.v1.MetricsConfig", Ron.fields = Jm.util.newFieldList(() => [{
             no: 2,
             name: "enabled_in_privacy_mode",
             kind: "scalar",
@@ -358209,8 +358243,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Ron = Non;
-        const Pon = class e extends ol {
+        let Pon = Ron;
+        const Lon = class e extends ol {
             constructor(e) {
                 super(), this.enableBackgroundAgent = !1, this.showBackgroundAgentInBetaSettings = !1, this.showBackgroundAgentHistoryAction = !1, this.useModalExperience = !1, Jm.util.initPartial(e, this)
             }
@@ -358227,7 +358261,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Pon.runtime = Jm, Pon.typeName = "aiserver.v1.BackgroundComposerConfig", Pon.fields = Jm.util.newFieldList(() => [{
+        Lon.runtime = Jm, Lon.typeName = "aiserver.v1.BackgroundComposerConfig", Lon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enable_background_agent",
             kind: "scalar",
@@ -358278,8 +358312,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let Lon = Pon;
-        const Fon = class e extends ol {
+        let Fon = Lon;
+        const bon = class e extends ol {
             constructor(e) {
                 super(), this.enabled = !1, this.enabledFallback = !1, this.enabledGitGraph = !1, this.enabledSemSearch = !1, this.enabledV2 = !1, Jm.util.initPartial(e, this)
             }
@@ -358296,7 +358330,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Fon.runtime = Jm, Fon.typeName = "aiserver.v1.AutoContextConfig", Fon.fields = Jm.util.newFieldList(() => [{
+        bon.runtime = Jm, bon.typeName = "aiserver.v1.AutoContextConfig", bon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
@@ -358322,8 +358356,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let bon = Fon;
-        const qon = class e extends ol {
+        let qon = bon;
+        const Don = class e extends ol {
             constructor(e) {
                 super(), this.enabled = !1, this.showStatusEntry = !1, Jm.util.initPartial(e, this)
             }
@@ -358340,7 +358374,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        qon.runtime = Jm, qon.typeName = "aiserver.v1.MemoryMonitorConfig", qon.fields = Jm.util.newFieldList(() => [{
+        Don.runtime = Jm, Don.typeName = "aiserver.v1.MemoryMonitorConfig", Don.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
@@ -358369,8 +358403,8 @@
             T: 5,
             opt: !0
         }]);
-        let Don = qon;
-        const xon = class e extends ol {
+        let xon = Don;
+        const Mon = class e extends ol {
             constructor(e) {
                 super(), this.releaseTrack = "", this.mode = 0, Jm.util.initPartial(e, this)
             }
@@ -358387,7 +358421,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        xon.runtime = Jm, xon.typeName = "aiserver.v1.UpdateConfig", xon.fields = Jm.util.newFieldList(() => [{
+        Mon.runtime = Jm, Mon.typeName = "aiserver.v1.UpdateConfig", Mon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "release_track",
             kind: "scalar",
@@ -358396,7 +358430,7 @@
             no: 2,
             name: "mode",
             kind: "enum",
-            T: Jm.getEnumType(Oon)
+            T: Jm.getEnumType(Uon)
         }, {
             no: 3,
             name: "applied_at",
@@ -358404,16 +358438,16 @@
             T: 5,
             opt: !0
         }]);
-        let Mon = xon;
-        var Oon = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ONE_TIME = 1] = "ONE_TIME", e))(Oon || {});
-        Jm.util.setEnumType(Oon, "aiserver.v1.UpdateConfig.UpdateMode", [{
+        let Oon = Mon;
+        var Uon = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ONE_TIME = 1] = "ONE_TIME", e))(Uon || {});
+        Jm.util.setEnumType(Uon, "aiserver.v1.UpdateConfig.UpdateMode", [{
             no: 0,
             name: "UPDATE_MODE_UNSPECIFIED"
         }, {
             no: 1,
             name: "UPDATE_MODE_ONE_TIME"
         }]);
-        const Uon = class e extends ol {
+        const Qon = class e extends ol {
             constructor(e) {
                 super(), this.enabled = !1, Jm.util.initPartial(e, this)
             }
@@ -358430,7 +358464,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Uon.runtime = Jm, Uon.typeName = "aiserver.v1.PerformanceEventsConfig", Uon.fields = Jm.util.newFieldList(() => [{
+        Qon.runtime = Jm, Qon.typeName = "aiserver.v1.PerformanceEventsConfig", Qon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
@@ -358448,8 +358482,8 @@
             T: 5,
             opt: !0
         }]);
-        let Qon = Uon;
-        const Gon = class e extends ol {
+        let Gon = Qon;
+        const Yon = class e extends ol {
             constructor(e) {
                 super(), this.profilingEnabled = !1, this.metricsEnabled = !1, Jm.util.initPartial(e, this)
             }
@@ -358466,7 +358500,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Gon.runtime = Jm, Gon.typeName = "aiserver.v1.InteractionConfig", Gon.fields = Jm.util.newFieldList(() => [{
+        Yon.runtime = Jm, Yon.typeName = "aiserver.v1.InteractionConfig", Yon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "profiling_enabled",
             kind: "scalar",
@@ -358543,8 +358577,8 @@
             T: 5,
             opt: !0
         }]);
-        let Yon = Gon;
-        const Hon = class e extends ol {
+        let Hon = Yon;
+        const Von = class e extends ol {
             constructor(e) {
                 super(), this.enabled = !1, Jm.util.initPartial(e, this)
             }
@@ -358561,14 +358595,14 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Hon.runtime = Jm, Hon.typeName = "aiserver.v1.AgentTelemetryConfig", Hon.fields = Jm.util.newFieldList(() => [{
+        Von.runtime = Jm, Von.typeName = "aiserver.v1.AgentTelemetryConfig", Von.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
             T: 8
         }]);
-        let Von = Hon;
-        const Won = class e extends ol {
+        let Won = Von;
+        const Kon = class e extends ol {
             constructor(e) {
                 super(), this.enabled = !1, Jm.util.initPartial(e, this)
             }
@@ -358585,7 +358619,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Won.runtime = Jm, Won.typeName = "aiserver.v1.TraceConfig", Won.fields = Jm.util.newFieldList(() => [{
+        Kon.runtime = Jm, Kon.typeName = "aiserver.v1.TraceConfig", Kon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
@@ -358609,8 +358643,8 @@
             T: 1,
             opt: !0
         }]);
-        let Kon = Won;
-        const zon = class e extends ol {
+        let zon = Kon;
+        const jon = class e extends ol {
             constructor(e) {
                 super(), this.id = "", this.modelSetting = "", this.targetModel = "", Jm.util.initPartial(e, this)
             }
@@ -358627,7 +358661,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        zon.runtime = Jm, zon.typeName = "aiserver.v1.ModelMigration", zon.fields = Jm.util.newFieldList(() => [{
+        jon.runtime = Jm, jon.typeName = "aiserver.v1.ModelMigration", jon.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "id",
             kind: "scalar",
@@ -358673,8 +358707,8 @@
             T: 8,
             opt: !0
         }]);
-        let jon = zon;
-        const Xon = class e extends ol {
+        let Xon = jon;
+        const $on = class e extends ol {
             constructor(e) {
                 super(), this.maxTotalBytes = 0, this.maxNumFiles = 0, Jm.util.initPartial(e, this)
             }
@@ -358691,7 +358725,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Xon.runtime = Jm, Xon.typeName = "aiserver.v1.FolderSizeLimit", Xon.fields = Jm.util.newFieldList(() => [{
+        $on.runtime = Jm, $on.typeName = "aiserver.v1.FolderSizeLimit", $on.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "max_total_bytes",
             kind: "scalar",
@@ -358702,8 +358736,8 @@
             kind: "scalar",
             T: 5
         }]);
-        let $on = Xon;
-        const Zon = class e extends ol {
+        let Zon = $on;
+        const eln = class e extends ol {
             constructor(e) {
                 super(), this.compositeShellCommands = [], this.safeShellCommands = [], Jm.util.initPartial(e, this)
             }
@@ -358720,7 +358754,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Zon.runtime = Jm, Zon.typeName = "aiserver.v1.RunTerminalServerConfig", Zon.fields = Jm.util.newFieldList(() => [{
+        eln.runtime = Jm, eln.typeName = "aiserver.v1.RunTerminalServerConfig", eln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "composite_shell_commands",
             kind: "scalar",
@@ -358733,8 +358767,8 @@
             T: 9,
             repeated: !0
         }]);
-        let eln = Zon;
-        const tln = class e extends ol {
+        let tln = eln;
+        const nln = class e extends ol {
             constructor(e) {
                 super(), this.allowedActionIds = [], this.deniedActionIds = [], Jm.util.initPartial(e, this)
             }
@@ -358751,7 +358785,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        tln.runtime = Jm, tln.typeName = "aiserver.v1.AgentLayoutPolicy", tln.fields = Jm.util.newFieldList(() => [{
+        nln.runtime = Jm, nln.typeName = "aiserver.v1.AgentLayoutPolicy", nln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "allowed_action_ids",
             kind: "scalar",
@@ -358764,8 +358798,8 @@
             T: 9,
             repeated: !0
         }]);
-        let nln = tln;
-        const rln = class e extends ol {
+        let rln = nln;
+        const sln = class e extends ol {
             constructor(e) {
                 super(), this.message = "", this.enabled = !1, Jm.util.initPartial(e, this)
             }
@@ -358782,7 +358816,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        rln.runtime = Jm, rln.typeName = "aiserver.v1.TerminalTipConfig", rln.fields = Jm.util.newFieldList(() => [{
+        sln.runtime = Jm, sln.typeName = "aiserver.v1.TerminalTipConfig", sln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "message",
             kind: "scalar",
@@ -358793,8 +358827,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let sln = rln;
-        const iln = class e extends ol {
+        let iln = sln;
+        const aln = class e extends ol {
             constructor(e) {
                 super(), this.marketplacePluginNames = [], this.agenticOnboardingEnabled = !1, Jm.util.initPartial(e, this)
             }
@@ -358811,7 +358845,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        iln.runtime = Jm, iln.typeName = "aiserver.v1.OnboardingConfig", iln.fields = Jm.util.newFieldList(() => [{
+        aln.runtime = Jm, aln.typeName = "aiserver.v1.OnboardingConfig", aln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "marketplace_plugin_names",
             kind: "scalar",
@@ -358823,8 +358857,8 @@
             kind: "scalar",
             T: 8
         }]);
-        let aln = iln;
-        const oln = class e extends ol {
+        let oln = aln;
+        const lln = class e extends ol {
             constructor(e) {
                 super(), this.bugbotPlanEnabled = !1, this.bugbotPlanType = 0, Jm.util.initPartial(e, this)
             }
@@ -358841,7 +358875,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        oln.runtime = Jm, oln.typeName = "aiserver.v1.BugbotConfig", oln.fields = Jm.util.newFieldList(() => [{
+        lln.runtime = Jm, lln.typeName = "aiserver.v1.BugbotConfig", lln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "bugbot_plan_enabled",
             kind: "scalar",
@@ -358850,10 +358884,10 @@
             no: 2,
             name: "bugbot_plan_type",
             kind: "enum",
-            T: Jm.getEnumType(ton)
+            T: Jm.getEnumType(non)
         }]);
-        let lln = oln;
-        const mln = class e extends ol {
+        let mln = lln;
+        const uln = class e extends ol {
             constructor(e) {
                 super(), this.enabled = !1, this.resetToken = "", Jm.util.initPartial(e, this)
             }
@@ -358870,7 +358904,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        mln.runtime = Jm, mln.typeName = "aiserver.v1.CodebaseTelemetryConfig", mln.fields = Jm.util.newFieldList(() => [{
+        uln.runtime = Jm, uln.typeName = "aiserver.v1.CodebaseTelemetryConfig", uln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "enabled",
             kind: "scalar",
@@ -358881,8 +358915,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let uln = mln;
-        const cln = class e extends ol {
+        let cln = uln;
+        const dln = class e extends ol {
             constructor(e) {
                 super(), this.isDevDoNotUseForSecretThingsBecauseCanBeSpoofedByUsers = !1, this.configVersion = "", this.http2Config = 0, this.modelMigrations = [], this.useNlbForNal = !1, this.inferenceProviderWarnings = [], Jm.util.initPartial(e, this)
             }
@@ -358899,11 +358933,11 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        cln.runtime = Jm, cln.typeName = "aiserver.v1.GetServerConfigResponse", cln.fields = Jm.util.newFieldList(() => [{
+        dln.runtime = Jm, dln.typeName = "aiserver.v1.GetServerConfigResponse", dln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "bug_config_response",
             kind: "message",
-            T: Gin
+            T: Yin
         }, {
             no: 2,
             name: "is_dev_do_not_use_for_secret_things_because_can_be_spoofed_by_users",
@@ -358913,17 +358947,17 @@
             no: 3,
             name: "indexing_config",
             kind: "message",
-            T: Ton
+            T: Aon
         }, {
             no: 4,
             name: "client_tracing_config",
             kind: "message",
-            T: yon
+            T: Eon
         }, {
             no: 5,
             name: "chat_config",
             kind: "message",
-            T: Son
+            T: von
         }, {
             no: 6,
             name: "config_version",
@@ -358933,43 +358967,43 @@
             no: 7,
             name: "http2_config",
             kind: "enum",
-            T: Jm.getEnumType(eon)
+            T: Jm.getEnumType(ton)
         }, {
             no: 8,
             name: "profiling_config",
             kind: "message",
-            T: Wan
+            T: Kan
         }, {
             no: 9,
             name: "metrics_config",
             kind: "message",
-            T: Ron
+            T: Pon
         }, {
             no: 10,
             name: "background_composer_config",
             kind: "message",
-            T: Lon
+            T: Fon
         }, {
             no: 11,
             name: "auto_context_config",
             kind: "message",
-            T: bon
+            T: qon
         }, {
             no: 12,
             name: "model_migrations",
             kind: "message",
-            T: jon,
+            T: Xon,
             repeated: !0
         }, {
             no: 13,
             name: "memory_monitor_config",
             kind: "message",
-            T: Don
+            T: xon
         }, {
             no: 14,
             name: "folder_size_limit",
             kind: "message",
-            T: $on
+            T: Zon
         }, {
             no: 20,
             name: "online_metrics_config",
@@ -358979,56 +359013,56 @@
             no: 15,
             name: "git_indexing_config",
             kind: "message",
-            T: won
+            T: kon
         }, {
             no: 16,
             name: "performance_events_config",
             kind: "message",
-            T: Qon
+            T: Gon
         }, {
             no: 17,
             name: "current_in_app_ad",
             kind: "message",
-            T: aon,
+            T: oon,
             opt: !0
         }, {
             no: 18,
             name: "trace_config",
             kind: "message",
-            T: Kon
+            T: zon
         }, {
             no: 19,
             name: "run_terminal_server_config",
             kind: "message",
-            T: eln,
+            T: tln,
             opt: !0
         }, {
             no: 21,
             name: "interaction_config",
             kind: "message",
-            T: Yon
+            T: Hon
         }, {
             no: 22,
             name: "agent_telemetry_config",
             kind: "message",
-            T: Von
+            T: Won
         }, {
             no: 23,
             name: "client_version_status",
             kind: "message",
-            T: hon,
+            T: _on,
             opt: !0
         }, {
             no: 24,
             name: "update_config",
             kind: "message",
-            T: Mon,
+            T: Oon,
             opt: !0
         }, {
             no: 25,
             name: "agent_layout_policy",
             kind: "message",
-            T: nln,
+            T: rln,
             opt: !0
         }, {
             no: 26,
@@ -359039,7 +359073,7 @@
             no: 27,
             name: "agent_url_config",
             kind: "message",
-            T: hln
+            T: _ln
         }, {
             no: 28,
             name: "cli_sandbox_default_enabled",
@@ -359056,7 +359090,7 @@
             no: 30,
             name: "terminal_tip_config",
             kind: "message",
-            T: sln,
+            T: iln,
             opt: !0
         }, {
             no: 31,
@@ -359068,29 +359102,29 @@
             no: 32,
             name: "inference_provider_warnings",
             kind: "message",
-            T: fln,
+            T: gln,
             repeated: !0
         }, {
             no: 33,
             name: "onboarding_config",
             kind: "message",
-            T: aln,
+            T: oln,
             opt: !0
         }, {
             no: 34,
             name: "bugbot_config",
             kind: "message",
-            T: lln,
+            T: mln,
             opt: !0
         }, {
             no: 35,
             name: "codebase_telemetry_config",
             kind: "message",
-            T: uln,
+            T: cln,
             opt: !0
         }]);
-        let dln = cln;
-        const pln = class e extends ol {
+        let pln = dln;
+        const fln = class e extends ol {
             constructor(e) {
                 super(), this.message = "", this.affectedModels = [], this.trigger = 0, Jm.util.initPartial(e, this)
             }
@@ -359107,7 +359141,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        pln.runtime = Jm, pln.typeName = "aiserver.v1.InferenceProviderWarning", pln.fields = Jm.util.newFieldList(() => [{
+        fln.runtime = Jm, fln.typeName = "aiserver.v1.InferenceProviderWarning", fln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "message",
             kind: "scalar",
@@ -359128,10 +359162,10 @@
             no: 4,
             name: "trigger",
             kind: "enum",
-            T: Jm.getEnumType(non)
+            T: Jm.getEnumType(ron)
         }]);
-        let fln = pln;
-        const gln = class e extends ol {
+        let gln = fln;
+        const hln = class e extends ol {
             constructor(e) {
                 super(), this.agentUrl = "", this.agentnUrl = "", Jm.util.initPartial(e, this)
             }
@@ -359148,7 +359182,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        gln.runtime = Jm, gln.typeName = "aiserver.v1.AgentUrlConfig", gln.fields = Jm.util.newFieldList(() => [{
+        hln.runtime = Jm, hln.typeName = "aiserver.v1.AgentUrlConfig", hln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "agent_url",
             kind: "scalar",
@@ -359159,10 +359193,10 @@
             kind: "scalar",
             T: 9
         }]);
-        let hln = gln;
-        class _ln {
+        let _ln = hln;
+        class Tln {
             constructor(e, t, n) {
-                this.accessToken = e, this.backendUrl = t, this.globalStatus = n, this.repoClientUsageCount = 0, this.cachedExpirationResult = null, this.disposables = [], this.numMsForRequestToResetConnection = 1e4, this.networkChangeAbortController = new AbortController, this.lastServerSetHttp2Config = eon.UNSPECIFIED, this.consecutiveReconnectionErrors = 0, this.MAX_CONSECUTIVE_RECONNECTION_ERRORS = 3, this.RECONNECTION_ERROR_PATTERNS = ["NGHTTP2_REFUSED_STREAM"], this._repoClient = this.createRepoClient();
+                this.accessToken = e, this.backendUrl = t, this.globalStatus = n, this.repoClientUsageCount = 0, this.cachedExpirationResult = null, this.disposables = [], this.numMsForRequestToResetConnection = 1e4, this.networkChangeAbortController = new AbortController, this.lastServerSetHttp2Config = ton.UNSPECIFIED, this.consecutiveReconnectionErrors = 0, this.MAX_CONSECUTIVE_RECONNECTION_ERRORS = 3, this.RECONNECTION_ERROR_PATTERNS = ["NGHTTP2_REFUSED_STREAM"], this._repoClient = this.createRepoClient();
                 const r = setInterval(async () => {
                     await this.refreshConnectionIfServerSetHttp2ConfigChanged()
                 }, 6e5);
@@ -359172,11 +359206,11 @@
             }
             async getServerSetHttp2Config() {
                 try {
-                    const e = dln.fromJson(await ca.commands.executeCommand(sa.GetCachedServerConfig));
+                    const e = pln.fromJson(await ca.commands.executeCommand(sa.GetCachedServerConfig));
                     if (void 0 === e) throw new Error("Config is undefined");
                     return e?.http2Config
                 } catch (e) {
-                    return Mo.error("Error getting server config, using proto default config", e), new dln({}).http2Config
+                    return Mo.error("Error getting server config, using proto default config", e), new pln({}).http2Config
                 }
             }
             async refreshConnectionIfServerSetHttp2ConfigChanged() {
@@ -359458,7 +359492,7 @@
             }
             createRepoClient() {
                 Mo.info("Creating Indexing Repo client: ", this.backendUrl);
-                const e = (() => this.lastServerSetHttp2Config === eon.FORCE_ALL_DISABLED || this.lastServerSetHttp2Config !== eon.FORCE_ALL_ENABLED && ca.workspace.getConfiguration().get(ua, !1))();
+                const e = (() => this.lastServerSetHttp2Config === ton.FORCE_ALL_DISABLED || this.lastServerSetHttp2Config !== ton.FORCE_ALL_ENABLED && ca.workspace.getConfiguration().get(ua, !1))();
                 let t = {
                         agent: new qa.Agent({
                             keepAlive: !0
@@ -359476,7 +359510,7 @@
                     httpVersion: r,
                     ..."1.1" === r ? t : {},
                     baseUrl: n,
-                    interceptors: [e => t => ca.tracing.runInSpan(`${Sin.typeName}.${t.method.name}`, () => e(t)), e => async t => {
+                    interceptors: [e => t => ca.tracing.runInSpan(`${vin.typeName}.${t.method.name}`, () => e(t)), e => async t => {
                         if (this.isAlmostExpired(this.accessToken)) {
                             await ca.cursor.triggerRefreshCursorAuthToken();
                             const e = ca.cursor.getCursorAuthToken();
@@ -359496,7 +359530,7 @@
                     sendCompression: Pa,
                     acceptCompression: [Pa]
                 });
-                return zo(Sin, i)
+                return zo(vin, i)
             }
             handleReconnectionError(e) {
                 const t = e?.toString() || "",
@@ -359507,7 +359541,7 @@
                 this.consecutiveReconnectionErrors > 0 && (Mo.debug(`Resetting reconnection error count from ${this.consecutiveReconnectionErrors}`), this.consecutiveReconnectionErrors = 0)
             }
         }
-        class Tln {
+        class Aln {
             constructor(e) {
                 this.value = e;
                 const t = this.preferredEmbeddingModel;
@@ -359558,7 +359592,7 @@
                 }
             }
         }
-        const Aln = new Ton({
+        const wln = new Aon({
             maxConcurrentUploads: 50,
             absoluteMaxNumberFiles: 1e5,
             maxFileRetries: 20,
@@ -359571,10 +359605,10 @@
             maxBatchNumRequests: 1,
             maxSyncMerkleBatchSize: 1
         });
-        class wln {
+        class kln {
             constructor(e) {
-                if (this.context = e, this.disposables = [], this.globalStatus = new Xsn, this.localStatus = new Map, this.currentIndexingJobs = new Map, ta.localMode) return Mo.info("[FastIndexer] Local mode enabled — codebase indexing disabled"), this.highLevelDescriptionGetter = new zsn(e), this.indexingStatusStateTracker = new Zsn(e), void(this.getInitialValues = Promise.resolve());
-                this.highLevelDescriptionGetter = new zsn(e), this.indexingStatusStateTracker = new Zsn(e), this.getInitialValues = (async () => {
+                if (this.context = e, this.disposables = [], this.globalStatus = new $sn, this.localStatus = new Map, this.currentIndexingJobs = new Map, ta.localMode) return Mo.info("[FastIndexer] Local mode enabled — codebase indexing disabled"), this.highLevelDescriptionGetter = new jsn(e), this.indexingStatusStateTracker = new ein(e), void(this.getInitialValues = Promise.resolve());
+                this.highLevelDescriptionGetter = new jsn(e), this.indexingStatusStateTracker = new ein(e), this.getInitialValues = (async () => {
                     try {
                         const {
                             creds: e,
@@ -359605,7 +359639,7 @@
                 const t = async ({
                     overridePathEncryptionKey: e
                 }) => {
-                    if (void 0 !== e) return uin("" === e ? "plaintext" : "aes-256-ctr", e);
+                    if (void 0 !== e) return cin("" === e ? "plaintext" : "aes-256-ctr", e);
                     const t = await n();
                     return t?.pathEncryptionScheme
                 }, n = async () => {
@@ -359636,21 +359670,21 @@
                         const n = await t({
                             overridePathEncryptionKey: e.overridePathEncryptionKey
                         });
-                        return void 0 === n ? e.paths : e.paths.map(e => oin(e, n))
+                        return void 0 === n ? e.paths : e.paths.map(e => lin(e, n))
                     },
                     decryptPaths: async e => {
                         const n = await t({
                             overridePathEncryptionKey: e.overridePathEncryptionKey
                         });
-                        return void 0 === n ? e.paths : e.paths.map(e => lin(e, n))
+                        return void 0 === n ? e.paths : e.paths.map(e => min(e, n))
                     },
                     compileGlobFilter: async e => {
                         const n = await t({
                             overridePathEncryptionKey: e.overridePathEncryptionKey
                         });
                         return void 0 === n ? e : {
-                            globFilter: e.globFilter ? min(e.globFilter, n) : void 0,
-                            notGlobFilter: e.notGlobFilter ? min(e.notGlobFilter, n) : void 0
+                            globFilter: e.globFilter ? uin(e.globFilter, n) : void 0,
+                            notGlobFilter: e.notGlobFilter ? uin(e.notGlobFilter, n) : void 0
                         }
                     },
                     getRepoInfo: async () => (await n())?.export(),
@@ -359700,7 +359734,7 @@
                         error: "We had a trouble setting up the indexing. Please report this to hi@cursor.so"
                     }, t.info), void Mo.error(t.error ?? "Unknown error");
                     const n = t.info;
-                    Mo.info("Setting indexing intent to should-index"), this.setIndexingIntent(n, Hsn.ShouldIndex);
+                    Mo.info("Setting indexing intent to should-index"), this.setIndexingIntent(n, Vsn.ShouldIndex);
                     const r = void 0 !== e?.forceOverrideRepoInfo;
                     await this.createWatchersIfShouldIndex({
                         shouldRecreateIfExists: r
@@ -359717,7 +359751,7 @@
                     } else {
                         const e = await this.getWorkspaceRootInfo();
                         if (e.ok()) {
-                            this.setIndexingIntent(e.v, Hsn.ShouldNotIndex);
+                            this.setIndexingIntent(e.v, Vsn.ShouldNotIndex);
                             const t = this.getLegacyRepoName(Object.values(e.v.workspaceUris)),
                                 n = this.getRepoKeysKey(t),
                                 r = this.context.workspaceState.get(n, void 0);
@@ -359747,7 +359781,7 @@
                 return n
             }
             async setGlobalStatus(e, t) {
-                ein(e, this.globalStatus, this.indexingStatusStateTracker, t)
+                tin(e, this.globalStatus, this.indexingStatusStateTracker, t)
             }
             async createWatchersIfShouldIndex(e) {
                 for (; this.watcherCreationPromise;) try {
@@ -359766,7 +359800,7 @@
                         const s = r.v,
                             i = ca.cursor.shouldIndexNewRepos(),
                             a = this.getIndexingIntent(s);
-                        if (!(a === Hsn.FallBackToDefault ? i : a === Hsn.ShouldIndex)) return Mo.info("Not indexing because user does not want to index this workspace."), void this.setGlobalStatus({
+                        if (!(a === Vsn.FallBackToDefault ? i : a === Vsn.ShouldIndex)) return Mo.info("Not indexing because user does not want to index this workspace."), void this.setGlobalStatus({
                             case: "not-indexed"
                         }, s);
                         const o = await ca.commands.executeCommand(sa.GetCachedServerConfig);
@@ -359774,7 +359808,7 @@
                             if (void 0 === this.repoClient) return void Mo.error("Repo client is undefined. We shouldn't be indexing! This is a serious bug.");
                             if (void 0 === this.repoIndexWatcher) {
                                 let e;
-                                e = void 0 === o || null == o || void 0 === o.indexingConfig ? Aln : o.indexingConfig, this.repoIndexWatcher = new kin(s, this.repoClient, e, a, this.context, this.currentIndexingJobs, this.localStatus, this.globalStatus, this.indexingStatusStateTracker)
+                                e = void 0 === o || null == o || void 0 === o.indexingConfig ? wln : o.indexingConfig, this.repoIndexWatcher = new yin(s, this.repoClient, e, a, this.context, this.currentIndexingJobs, this.localStatus, this.globalStatus, this.indexingStatusStateTracker)
                             }
                         }
                     } finally {
@@ -359797,7 +359831,7 @@
                 this.repoIndexWatcher?.dispose(), this.highLevelDescriptionGetter.dispose(), this.repoClient?.dispose()
             }
             async createRemoteClients() {
-                void 0 !== this.repoClient && this.repoClient.dispose(), void 0 !== this.accessToken && void 0 !== this.backendUrl ? this.repoClient = new _ln(this.accessToken, this.backendUrl, this.globalStatus) : this.repoClient = void 0
+                void 0 !== this.repoClient && this.repoClient.dispose(), void 0 !== this.accessToken && void 0 !== this.backendUrl ? this.repoClient = new Tln(this.accessToken, this.backendUrl, this.globalStatus) : this.repoClient = void 0
             }
             getLegacyRepoNameAndOwner(e = {}) {
                 const t = e.overrideRepoInfo ?? this.forceOverrideRepoInfo,
@@ -359863,7 +359897,7 @@
                     repoName: e.repositoryInfo.repoName,
                     pathEncryptionScheme: "" === e.pathEncryptionKey ? "plaintext" : "aes-256-ctr",
                     canUpdateKey: !1
-                }, i = uin(a.pathEncryptionScheme ?? "aes-256-ctr", a.pathEncryptionKey);
+                }, i = cin(a.pathEncryptionScheme ?? "aes-256-ctr", a.pathEncryptionKey);
                 else {
                     const e = this.getRepoKeysKey(t);
                     let n = this.context.workspaceState.get(e, void 0);
@@ -359875,7 +359909,7 @@
                             scheme: r
                         } = await this.getRepoKeysWithScheme();
                         void 0 === n ? n = t : (n.pathEncryptionKey = t.pathEncryptionKey, n.pathEncryptionScheme = t.pathEncryptionScheme, n.canUpdateKey = !1), i = r, this.context.workspaceState.update(e, n)
-                    } else Mo.info("Using existing keys for an index"), i = uin(n.pathEncryptionScheme ?? "aes-256-ctr", n.pathEncryptionKey);
+                    } else Mo.info("Using existing keys for an index"), i = cin(n.pathEncryptionScheme ?? "aes-256-ctr", n.pathEncryptionKey);
                     if (s && "aes-256-ctr" === n.pathEncryptionScheme) {
                         const t = await async function(e) {
                             const t = Object.values(e).sort((e, t) => e.fsPath.localeCompare(t.fsPath));
@@ -359888,11 +359922,11 @@
                             } catch (e) {}
                             if ("" !== n) return n
                         }(r);
-                        t && (Mo.info("Using the key in .cursor/keys for a new index"), n.pathEncryptionKey = t, i = uin(n.pathEncryptionScheme, t), this.context.workspaceState.update(e, n))
+                        t && (Mo.info("Using the key in .cursor/keys for a new index"), n.pathEncryptionKey = t, i = cin(n.pathEncryptionScheme, t), this.context.workspaceState.update(e, n))
                     }
                     a = n
                 }
-                const o = new Tln({
+                const o = new Aln({
                     repoName: a.repoName,
                     legacyRepoName: t,
                     repoOwner: n,
@@ -359913,7 +359947,7 @@
                     info: e,
                     error: t
                 } = await this.getWorkspaceRootInfoWithProperError();
-                return void 0 !== t || void 0 === e ? Gsn(t ?? "Unknown error") : Qsn(e)
+                return void 0 !== t || void 0 === e ? Ysn(t ?? "Unknown error") : Gsn(e)
             }
             async getServerConfigKeyOnce() {
                 const e = await ca.commands.executeCommand(sa.GetCachedServerConfig);
@@ -359943,26 +359977,26 @@
                 } = function() {
                     if (function() {
                             try {
-                                const e = sin(),
+                                const e = iin(),
                                     t = "/home/user/Documents/myfile.txt",
-                                    n = new iin(e),
-                                    r = oin(t, n),
-                                    s = lin(r, n);
+                                    n = new ain(e),
+                                    r = lin(t, n),
+                                    s = min(r, n);
                                 return r !== t && s === t
                             } catch (e) {
                                 return !1
                             }
                         }()) {
-                        const e = sin();
+                        const e = iin();
                         return {
                             schemeIdentifier: "aes-256-ctr",
-                            scheme: new iin(e),
+                            scheme: new ain(e),
                             key: e
                         }
                     }
                     return {
                         schemeIdentifier: "plaintext",
-                        scheme: new ain,
+                        scheme: new oin,
                         key: ""
                     }
                 }();
@@ -359972,7 +360006,7 @@
                     const e = await this.getServerConfigKey();
                     e && e.length > 0 && (Mo.info("Using the default key from the server for a new index"), n = e)
                 }
-                const s = uin(r, n);
+                const s = cin(r, n);
                 return {
                     repoKeys: {
                         repoName: Crn(),
@@ -359987,18 +360021,18 @@
             getLegacyRepoName(e) {
                 const t = e.sort((e, t) => e.fsPath.localeCompare(t.fsPath)),
                     n = t.map(e => _i.basename(e.fsPath)).join("-");
-                return xsn(t.map(e => e.fsPath).join("-")) + "-" + n
+                return Msn(t.map(e => e.fsPath).join("-")) + "-" + n
             }
             setIndexingIntent(e, t) {
                 const n = this.getIndexingIntentKey(e);
                 this.context.workspaceState.update(n, t)
             }
             getIndexingIntentWithKey(e) {
-                const t = this.context.workspaceState.get(e, Hsn.FallBackToDefault);
+                const t = this.context.workspaceState.get(e, Vsn.FallBackToDefault);
                 try {
-                    return void 0 !== Hsn[t] ? Hsn.FallBackToDefault : t
+                    return void 0 !== Vsn[t] ? Vsn.FallBackToDefault : t
                 } catch (e) {
-                    return Hsn.FallBackToDefault
+                    return Vsn.FallBackToDefault
                 }
             }
             getIndexingIntent(e) {
@@ -360011,7 +360045,7 @@
                     repoOwner: t,
                     error: n
                 } = this.getLegacyRepoNameAndOwner();
-                return void 0 !== n ? Gsn(n) : Qsn(this.getIndexingIntentWithKey(this.getIndexingIntentKey({
+                return void 0 !== n ? Ysn(n) : Gsn(this.getIndexingIntentWithKey(this.getIndexingIntentKey({
                     legacyRepoName: e,
                     repoOwner: t
                 })))
@@ -360024,7 +360058,7 @@
             }
         }
 
-        function kln({
+        function yln({
             gitRoot: e,
             gitRootToHead: t
         }) {
@@ -360045,7 +360079,7 @@
             }
         }
 
-        function yln(e) {
+        function Eln(e) {
             switch (e.case) {
                 case "string":
                     return {
@@ -360063,7 +360097,7 @@
                     throw new Error(`Invalid cache value: ${e}`)
             }
         }
-        class Eln {
+        class Sln {
             constructor(e, t, n) {
                 this.context = e, this.requestTracker = t, this.disposables = [], this.lastSeenReflogLineCountByWorkTreeRoot = new Map, this.processedCommitKeys = new sAt({
                     max: 4096
@@ -360408,7 +360442,7 @@
                     const u = new Map;
                     for (const e of s.requestFiles) {
                         const t = o.get(e.fsPath) ?? null;
-                        u.set(e.fsPath, kln({
+                        u.set(e.fsPath, yln({
                             gitRoot: t,
                             gitRootToHead: m
                         }))
@@ -360437,7 +360471,7 @@
                             const l = o.split(_i.sep).join("/"),
                                 m = `${t}\0${l}\0${i}`,
                                 c = this.fileContentCache.get(m);
-                            if (c) return yln(c);
+                            if (c) return Eln(c);
                             try {
                                 if ((await Vn.promises.stat(n)).size > e.config.tooBigFileSizeBytes) return this.fileContentCache.set(m, {
                                     case: "tooBig"
@@ -360461,7 +360495,7 @@
                                     value: n
                                 }
                             })();
-                            return this.fileContentCache.set(m, d), yln(d)
+                            return this.fileContentCache.set(m, d), Eln(d)
                         },
                         gitInfos: u,
                         snapshotDateUnixMilliseconds: e.commitDateUnixMilliseconds
@@ -360473,7 +360507,7 @@
                 for (const e of this.scanDebounceHandleByWorkTreeRoot.values()) clearTimeout(e)
             }
         }
-        class Sln {
+        class vln {
             constructor(e, t) {
                 this.context = e, this.requestTracker = t, this.disposables = []
             }
@@ -360518,16 +360552,16 @@
             }
         }
 
-        function vln(e) {
+        function Iln(e) {
             return null === e ? [] : e.split("\n").map(e => e.endsWith("\r") ? e.slice(0, -1) : e)
         }
-        class Iln {
+        class Bln {
             constructor(e, t, n, r) {
                 this.context = e, this.diffService = t, this.backendClientService = n, this.gitAPI = r, this.requestTrackingCache = new Map, this.specificRequestTrackers = [], this.onDidFinishProcessingQueueEmitter = new ca.EventEmitter, this.onDidFinishProcessingQueue = this.onDidFinishProcessingQueueEmitter.event, this.disposables = [], this.queue = [], this.isQueueProcessing = !1, this.disposables.push(ca.commands.registerCommand("cursor.action.startTrackingRequest", e => {
                     this.startTrackingRequest(e).catch(e => {
                         Ho.error("Failed to start tracking request", e)
                     })
-                })), this.specificRequestTrackers.push(new Eln(this.context, this, this.gitAPI)), this.specificRequestTrackers.push(new Sln(this.context, this)), this.loadCache().catch(e => {
+                })), this.specificRequestTrackers.push(new Sln(this.context, this, this.gitAPI)), this.specificRequestTrackers.push(new vln(this.context, this)), this.loadCache().catch(e => {
                     Ho.error("Failed to load cache", e)
                 })
             }
@@ -360629,7 +360663,7 @@
                         fsPath: e,
                         gitRoot: n
                     }
-                    of t) s.set(e, kln({
+                    of t) s.set(e, yln({
                     gitRoot: n,
                     gitRootToHead: r
                 }));
@@ -360668,14 +360702,14 @@
                     }
                     const n = _i.join(i, e);
                     null !== t.startContents && (await Vn.promises.writeFile(n, t.startContents), l += t.startContents?.length ?? 0);
-                    const s = vln(t.startContents),
+                    const s = Iln(t.startContents),
                         m = new Map;
                     let u = 1;
                     for (let e = 0; e < s.length; e++) {
                         const t = s[e];
                         m.has(t) || (m.set(t, u), u++)
                     }
-                    const c = vln(t.endContents),
+                    const c = Iln(t.endContents),
                         d = await this.computeDiff(s, c, m),
                         p = {
                             fsPath: t.fsPath,
@@ -360829,8 +360863,8 @@
                         Ho.error(`File ${t.fsPath} not found in newFiles. Should not happen!`);
                         continue
                     }
-                    const u = vln(m.contents),
-                        c = vln(l),
+                    const u = Iln(m.contents),
+                        c = Iln(l),
                         d = new Map;
                     let p = 1;
                     for (let e = 0; e < c.length; e++) {
@@ -360892,7 +360926,7 @@
                 for (const e of this.specificRequestTrackers) e.dispose()
             }
         }
-        async function Bln(e) {
+        async function Jln(e) {
             try {
                 return 0 !== ((await ca.workspace.fs.stat(ca.Uri.file(e))).type & ca.FileType.Directory)
             } catch {
@@ -360900,11 +360934,11 @@
             }
         }
 
-        function Jln(e) {
+        function Cln(e) {
             const t = _i.normalize(_i.resolve(e));
             return "win32" === process.platform ? t.toLowerCase() : t
         }
-        class Cln {
+        class Nln {
             constructor() {
                 this.current = Promise.resolve()
             }
@@ -360912,7 +360946,7 @@
                 return this.current = this.current.then(e, e)
             }
         }
-        class Nln {
+        class Rln {
             constructor() {
                 this.activePromise = null, this.queuedPromise = null, this.queuedPromiseFactory = null
             }
@@ -360938,7 +360972,7 @@
                 }
             }
         }
-        class Rln {
+        class Pln {
             constructor(e) {
                 this._isRunning = !1, this._isFirstRun = !0, this._generation = 0, this.intervalMs = e.intervalMs, this.initialDelayMs = e.initialDelayMs, this.callback = e.callback, this.onError = e.onError
             }
@@ -360970,7 +361004,7 @@
                 }, t)
             }
         }
-        class Pln {
+        class Lln {
             constructor(e, t) {
                 this.debounceMs = e, this.onFire = t, this.timer = null, this.isTimerImmediate = !1
             }
@@ -360990,15 +361024,15 @@
             }
         }
 
-        function Lln(e, t) {
+        function Fln(e, t) {
             if (e <= 0) return 0;
             const n = Math.min(t.initialMs * Math.pow(t.multiplier, e - 1), t.maxMs),
                 r = n * (t.jitterFraction ?? .1) * (2 * Math.random() - 1);
             return Math.max(0, Math.floor(n + r))
         }
-        const Fln = Lln;
+        const bln = Fln;
 
-        function bln(e) {
+        function qln(e) {
             switch (e.type) {
                 case "MANUAL":
                     return 1;
@@ -361010,9 +361044,9 @@
                     return 0
             }
         }
-        const qln = Yo.scoped("AgentDotDirs");
+        const Dln = Yo.scoped("AgentDotDirs");
 
-        function Dln() {
+        function xln() {
             const e = Arn.homedir();
             return [{
                 path: _i.join(e, ".cursor"),
@@ -361048,17 +361082,17 @@
                 }
             }]
         }
-        const xln = new Set(Dln().map(e => e.kind));
+        const Mln = new Set(xln().map(e => e.kind));
 
-        function Mln(e) {
-            return xln.has(e.kind)
+        function Oln(e) {
+            return Mln.has(e.kind)
         }
-        class Oln {
+        class Uln {
             constructor(e, t, n) {
-                this.workspaceManager = e, this.watcherService = t, this.fsClient = n, this.sequencer = new Cln, this.watchers = new Map, this.isTimerArmed = !1, this.isDisposed = !1, this.periodicRunner = new Rln({
+                this.workspaceManager = e, this.watcherService = t, this.fsClient = n, this.sequencer = new Nln, this.watchers = new Map, this.isTimerArmed = !1, this.isDisposed = !1, this.periodicRunner = new Pln({
                     intervalMs: 3e5,
                     callback: () => this.runOnce(),
-                    onError: e => qln.error("periodic reconcile failed", e)
+                    onError: e => Dln.error("periodic reconcile failed", e)
                 })
             }
             runOnce() {
@@ -361071,12 +361105,12 @@
                     const t = e ?? this.lastGateEnabled ?? !1;
                     void 0 !== e && (this.lastGateEnabled = e);
                     const n = await async function(e) {
-                        const t = Dln(),
+                        const t = xln(),
                             n = [];
-                        for (const r of t) r.requiresGate && !e || await Bln(r.path) && n.push(r);
+                        for (const r of t) r.requiresGate && !e || await Jln(r.path) && n.push(r);
                         return n
                     }(t), r = void 0 === e ? `unknown (using ${t?"last enabled":"disabled"})` : e ? "enabled" : "disabled";
-                    qln.info(`reconcile: gate ${r}, ${n.length} active spec(s)`), this.isDisposed || (await this.workspaceManager.reconcileAgentDotDirCodebases(n), await this.reconcileWatchers(n))
+                    Dln.info(`reconcile: gate ${r}, ${n.length} active spec(s)`), this.isDisposed || (await this.workspaceManager.reconcileAgentDotDirCodebases(n), await this.reconcileWatchers(n))
                 })
             }
             async reconcileWatchers(e) {
@@ -361084,16 +361118,16 @@
                 if (!this.isDisposed) {
                     for (const [e, n] of this.watchers)
                         if (!t.has(e)) {
-                            qln.info(`reconcileWatchers: removing watcher ${e}`);
+                            Dln.info(`reconcileWatchers: removing watcher ${e}`);
                             try {
                                 n.dispose()
                             } catch (t) {
-                                qln.warn(`failed to dispose watcher ${e}`, t)
+                                Dln.warn(`failed to dispose watcher ${e}`, t)
                             }
                             this.watchers.delete(e)
                         } for (const [e, n] of t) {
                         if (this.watchers.has(e)) continue;
-                        qln.info(`reconcileWatchers: adding watcher ${e} (${n.kind})`);
+                        Dln.info(`reconcileWatchers: adding watcher ${e} (${n.kind})`);
                         const t = "directory" === n.kind ? this.watcherService.watchExternalRoot(e, this.fsClient, n.options) : this.watcherService.watchExternalFile(e, this.fsClient);
                         this.watchers.set(e, t)
                     }
@@ -361107,7 +361141,7 @@
                             const r = e.endsWith("/"),
                                 s = _i.join(n.path, e),
                                 i = r ? s : _i.dirname(s);
-                            await Bln(i) && t.set(s, {
+                            await Jln(i) && t.set(s, {
                                 kind: r ? "directory" : "file"
                             })
                         }
@@ -361133,14 +361167,14 @@
                     for (const [e, t] of this.watchers) try {
                         t.dispose()
                     } catch (t) {
-                        qln.warn(`failed to dispose watcher at ${e}`, t)
+                        Dln.warn(`failed to dispose watcher at ${e}`, t)
                     }
                     this.watchers.clear()
                 }
             }
         }
-        const Uln = Yo.scoped("CodebaseRegistrationService");
-        class Qln {
+        const Qln = Yo.scoped("CodebaseRegistrationService");
+        class Gln {
             constructor(e) {
                 this.grpcClient = e, this.registeredCodebases = new Set
             }
@@ -361152,7 +361186,7 @@
                 try {
                     if ("alreadyExists" === (await this.grpcClient.registerCodebase(e.codebaseUuid, e.path, e.kind)).type) {
                         const t = "Codebase registration conflict (alreadyExists)";
-                        return Uln.error(`${t} for ${e.codebaseUuid}`), {
+                        return Qln.error(`${t} for ${e.codebaseUuid}`), {
                             type: "failed",
                             message: t
                         }
@@ -361171,7 +361205,7 @@
                     } : {
                         message: String(t)
                     };
-                    return Uln.error(`ensureCodebaseRegistered: failed for ${e.codebaseUuid}: ${r}`, s), {
+                    return Qln.error(`ensureCodebaseRegistered: failed for ${e.codebaseUuid}: ${r}`, s), {
                         type: "failed",
                         message: r,
                         stack: s
@@ -361180,18 +361214,18 @@
                 var t
             }
             forget(e) {
-                this.registeredCodebases.delete(e) && Uln.debug(`Forgot server registration for ${e}`)
+                this.registeredCodebases.delete(e) && Qln.debug(`Forgot server registration for ${e}`)
             }
             prune(e) {
                 const t = new Set(e.map(e => e.codebaseUuid));
-                for (const e of this.registeredCodebases) t.has(e) || (this.registeredCodebases.delete(e), Uln.debug(`Pruned stale registration for removed codebase ${e}`))
+                for (const e of this.registeredCodebases) t.has(e) || (this.registeredCodebases.delete(e), Qln.debug(`Pruned stale registration for removed codebase ${e}`))
             }
             dispose() {
                 this.registeredCodebases.clear()
             }
         }
-        var Gln = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.GIT_MAIN_WORKTREE_ROOT = 1] = "GIT_MAIN_WORKTREE_ROOT", e[e.GIT_MAIN_WORKTREE_SUBDIRECTORY = 2] = "GIT_MAIN_WORKTREE_SUBDIRECTORY", e[e.GIT_LINKED_WORKTREE_ROOT = 3] = "GIT_LINKED_WORKTREE_ROOT", e[e.GIT_LINKED_WORKTREE_SUBDIRECTORY = 4] = "GIT_LINKED_WORKTREE_SUBDIRECTORY", e[e.PLAIN_DIRECTORY = 5] = "PLAIN_DIRECTORY", e[e.DOT_CURSOR = 6] = "DOT_CURSOR", e[e.DOT_CLAUDE = 7] = "DOT_CLAUDE", e[e.DOT_CODEX = 8] = "DOT_CODEX", e[e.DOT_AGENTS = 9] = "DOT_AGENTS", e))(Gln || {});
-        Jm.util.setEnumType(Gln, "aiserver.v1.CodebaseKind", [{
+        var Yln = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.GIT_MAIN_WORKTREE_ROOT = 1] = "GIT_MAIN_WORKTREE_ROOT", e[e.GIT_MAIN_WORKTREE_SUBDIRECTORY = 2] = "GIT_MAIN_WORKTREE_SUBDIRECTORY", e[e.GIT_LINKED_WORKTREE_ROOT = 3] = "GIT_LINKED_WORKTREE_ROOT", e[e.GIT_LINKED_WORKTREE_SUBDIRECTORY = 4] = "GIT_LINKED_WORKTREE_SUBDIRECTORY", e[e.PLAIN_DIRECTORY = 5] = "PLAIN_DIRECTORY", e[e.DOT_CURSOR = 6] = "DOT_CURSOR", e[e.DOT_CLAUDE = 7] = "DOT_CLAUDE", e[e.DOT_CODEX = 8] = "DOT_CODEX", e[e.DOT_AGENTS = 9] = "DOT_AGENTS", e))(Yln || {});
+        Jm.util.setEnumType(Yln, "aiserver.v1.CodebaseKind", [{
             no: 0,
             name: "CODEBASE_KIND_UNSPECIFIED"
         }, {
@@ -361222,8 +361256,8 @@
             no: 9,
             name: "CODEBASE_KIND_DOT_AGENTS"
         }]);
-        var Yln = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.MANUAL = 1] = "MANUAL", e[e.AGENT_REQUEST_START = 2] = "AGENT_REQUEST_START", e[e.AGENT_REQUEST_END = 3] = "AGENT_REQUEST_END", e))(Yln || {});
-        Jm.util.setEnumType(Yln, "aiserver.v1.CodebaseSnapshotReason", [{
+        var Hln = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.MANUAL = 1] = "MANUAL", e[e.AGENT_REQUEST_START = 2] = "AGENT_REQUEST_START", e[e.AGENT_REQUEST_END = 3] = "AGENT_REQUEST_END", e))(Hln || {});
+        Jm.util.setEnumType(Hln, "aiserver.v1.CodebaseSnapshotReason", [{
             no: 0,
             name: "CODEBASE_SNAPSHOT_REASON_UNSPECIFIED"
         }, {
@@ -361236,7 +361270,7 @@
             no: 3,
             name: "CODEBASE_SNAPSHOT_REASON_AGENT_REQUEST_END"
         }]);
-        const Hln = class e extends ol {
+        const Vln = class e extends ol {
             constructor(e) {
                 super(), this.codebaseUuid = "", this.path = "", this.kind = 0, Jm.util.initPartial(e, this)
             }
@@ -361253,7 +361287,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Hln.runtime = Jm, Hln.typeName = "aiserver.v1.RegisterCodebaseRequest", Hln.fields = Jm.util.newFieldList(() => [{
+        Vln.runtime = Jm, Vln.typeName = "aiserver.v1.RegisterCodebaseRequest", Vln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "codebase_uuid",
             kind: "scalar",
@@ -361267,10 +361301,10 @@
             no: 3,
             name: "kind",
             kind: "enum",
-            T: Jm.getEnumType(Gln)
+            T: Jm.getEnumType(Yln)
         }]);
-        let Vln = Hln;
-        const Wln = class e extends ol {
+        let Wln = Vln;
+        const Kln = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -361287,9 +361321,9 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Wln.runtime = Jm, Wln.typeName = "aiserver.v1.RegisterCodebaseResponse", Wln.fields = Jm.util.newFieldList(() => []);
-        let Kln = Wln;
-        const zln = class e extends ol {
+        Kln.runtime = Jm, Kln.typeName = "aiserver.v1.RegisterCodebaseResponse", Kln.fields = Jm.util.newFieldList(() => []);
+        let zln = Kln;
+        const jln = class e extends ol {
             constructor(e) {
                 super(), this.codebaseUuid = "", this.commitHash = "", this.treeHash = "", this.reason = 0, Jm.util.initPartial(e, this)
             }
@@ -361306,7 +361340,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        zln.runtime = Jm, zln.typeName = "aiserver.v1.RegisterCodebaseSnapshotRequest", zln.fields = Jm.util.newFieldList(() => [{
+        jln.runtime = Jm, jln.typeName = "aiserver.v1.RegisterCodebaseSnapshotRequest", jln.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "codebase_uuid",
             kind: "scalar",
@@ -361325,10 +361359,10 @@
             no: 4,
             name: "reason",
             kind: "enum",
-            T: Jm.getEnumType(Yln)
+            T: Jm.getEnumType(Hln)
         }]);
-        let jln = zln;
-        const Xln = class e extends ol {
+        let Xln = jln;
+        const $ln = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -361345,9 +361379,9 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Xln.runtime = Jm, Xln.typeName = "aiserver.v1.RegisterCodebaseSnapshotResponse", Xln.fields = Jm.util.newFieldList(() => []);
-        let $ln = Xln;
-        const Zln = class e extends ol {
+        $ln.runtime = Jm, $ln.typeName = "aiserver.v1.RegisterCodebaseSnapshotResponse", $ln.fields = Jm.util.newFieldList(() => []);
+        let Zln = $ln;
+        const emn = class e extends ol {
             constructor(e) {
                 super(), this.codebaseUuid = "", this.commitHash = "", Jm.util.initPartial(e, this)
             }
@@ -361364,7 +361398,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Zln.runtime = Jm, Zln.typeName = "aiserver.v1.GetCodebaseSnapshotStatusRequest", Zln.fields = Jm.util.newFieldList(() => [{
+        emn.runtime = Jm, emn.typeName = "aiserver.v1.GetCodebaseSnapshotStatusRequest", emn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "codebase_uuid",
             kind: "scalar",
@@ -361375,8 +361409,8 @@
             kind: "scalar",
             T: 9
         }]);
-        let emn = Zln;
-        const tmn = class e extends ol {
+        let tmn = emn;
+        const nmn = class e extends ol {
             constructor(e) {
                 super(), this.status = {
                     case: void 0
@@ -361395,27 +361429,27 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        tmn.runtime = Jm, tmn.typeName = "aiserver.v1.GetCodebaseSnapshotStatusResponse", tmn.fields = Jm.util.newFieldList(() => [{
+        nmn.runtime = Jm, nmn.typeName = "aiserver.v1.GetCodebaseSnapshotStatusResponse", nmn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "pending",
             kind: "message",
-            T: smn,
+            T: imn,
             oneof: "status"
         }, {
             no: 2,
             name: "verified",
             kind: "message",
-            T: amn,
+            T: omn,
             oneof: "status"
         }, {
             no: 3,
             name: "incomplete",
             kind: "message",
-            T: lmn,
+            T: mmn,
             oneof: "status"
         }]);
-        let nmn = tmn;
-        const rmn = class e extends ol {
+        let rmn = nmn;
+        const smn = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -361432,9 +361466,9 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        rmn.runtime = Jm, rmn.typeName = "aiserver.v1.GetCodebaseSnapshotStatusResponse.Pending", rmn.fields = Jm.util.newFieldList(() => []);
-        let smn = rmn;
-        const imn = class e extends ol {
+        smn.runtime = Jm, smn.typeName = "aiserver.v1.GetCodebaseSnapshotStatusResponse.Pending", smn.fields = Jm.util.newFieldList(() => []);
+        let imn = smn;
+        const amn = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -361451,9 +361485,9 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        imn.runtime = Jm, imn.typeName = "aiserver.v1.GetCodebaseSnapshotStatusResponse.Verified", imn.fields = Jm.util.newFieldList(() => []);
-        let amn = imn;
-        const omn = class e extends ol {
+        amn.runtime = Jm, amn.typeName = "aiserver.v1.GetCodebaseSnapshotStatusResponse.Verified", amn.fields = Jm.util.newFieldList(() => []);
+        let omn = amn;
+        const lmn = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -361470,9 +361504,9 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        omn.runtime = Jm, omn.typeName = "aiserver.v1.GetCodebaseSnapshotStatusResponse.Incomplete", omn.fields = Jm.util.newFieldList(() => []);
-        let lmn = omn;
-        const mmn = class e extends ol {
+        lmn.runtime = Jm, lmn.typeName = "aiserver.v1.GetCodebaseSnapshotStatusResponse.Incomplete", lmn.fields = Jm.util.newFieldList(() => []);
+        let mmn = lmn;
+        const umn = class e extends ol {
             constructor(e) {
                 super(), this.packId = "", this.contentSha256 = "", this.sizeBytes = Tl.zero, Jm.util.initPartial(e, this)
             }
@@ -361489,7 +361523,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        mmn.runtime = Jm, mmn.typeName = "aiserver.v1.PackfileMetadata", mmn.fields = Jm.util.newFieldList(() => [{
+        umn.runtime = Jm, umn.typeName = "aiserver.v1.PackfileMetadata", umn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "pack_id",
             kind: "scalar",
@@ -361505,8 +361539,8 @@
             kind: "scalar",
             T: 4
         }]);
-        let umn = mmn;
-        const cmn = class e extends ol {
+        let cmn = umn;
+        const dmn = class e extends ol {
             constructor(e) {
                 super(), this.method = {
                     case: void 0
@@ -361525,15 +361559,15 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        cmn.runtime = Jm, cmn.typeName = "aiserver.v1.PackfileUploadMethod", cmn.fields = Jm.util.newFieldList(() => [{
+        dmn.runtime = Jm, dmn.typeName = "aiserver.v1.PackfileUploadMethod", dmn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "direct_chunked_upload",
             kind: "message",
-            T: fmn,
+            T: gmn,
             oneof: "method"
         }]);
-        let dmn = cmn;
-        const pmn = class e extends ol {
+        let pmn = dmn;
+        const fmn = class e extends ol {
             constructor(e) {
                 super(), this.chunkSizeBytes = Tl.zero, Jm.util.initPartial(e, this)
             }
@@ -361550,14 +361584,14 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        pmn.runtime = Jm, pmn.typeName = "aiserver.v1.PackfileUploadMethod.DirectChunkedUpload", pmn.fields = Jm.util.newFieldList(() => [{
+        fmn.runtime = Jm, fmn.typeName = "aiserver.v1.PackfileUploadMethod.DirectChunkedUpload", fmn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "chunk_size_bytes",
             kind: "scalar",
             T: 4
         }]);
-        let fmn = pmn;
-        const gmn = class e extends ol {
+        let gmn = fmn;
+        const hmn = class e extends ol {
             constructor(e) {
                 super(), this.codebaseUuid = "", Jm.util.initPartial(e, this)
             }
@@ -361574,7 +361608,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        gmn.runtime = Jm, gmn.typeName = "aiserver.v1.CreatePackfileUploadRequest", gmn.fields = Jm.util.newFieldList(() => [{
+        hmn.runtime = Jm, hmn.typeName = "aiserver.v1.CreatePackfileUploadRequest", hmn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "codebase_uuid",
             kind: "scalar",
@@ -361583,10 +361617,10 @@
             no: 2,
             name: "packfile",
             kind: "message",
-            T: umn
+            T: cmn
         }]);
-        let hmn = gmn;
-        const _mn = class e extends ol {
+        let _mn = hmn;
+        const Tmn = class e extends ol {
             constructor(e) {
                 super(), this.result = {
                     case: void 0
@@ -361605,21 +361639,21 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        _mn.runtime = Jm, _mn.typeName = "aiserver.v1.CreatePackfileUploadResponse", _mn.fields = Jm.util.newFieldList(() => [{
+        Tmn.runtime = Jm, Tmn.typeName = "aiserver.v1.CreatePackfileUploadResponse", Tmn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "upload_required",
             kind: "message",
-            T: wmn,
+            T: kmn,
             oneof: "result"
         }, {
             no: 2,
             name: "already_uploaded",
             kind: "message",
-            T: ymn,
+            T: Emn,
             oneof: "result"
         }]);
-        let Tmn = _mn;
-        const Amn = class e extends ol {
+        let Amn = Tmn;
+        const wmn = class e extends ol {
             constructor(e) {
                 super(), this.uploadUuid = "", Jm.util.initPartial(e, this)
             }
@@ -361636,7 +361670,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Amn.runtime = Jm, Amn.typeName = "aiserver.v1.CreatePackfileUploadResponse.UploadRequired", Amn.fields = Jm.util.newFieldList(() => [{
+        wmn.runtime = Jm, wmn.typeName = "aiserver.v1.CreatePackfileUploadResponse.UploadRequired", wmn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "upload_uuid",
             kind: "scalar",
@@ -361645,10 +361679,10 @@
             no: 2,
             name: "method",
             kind: "message",
-            T: dmn
+            T: pmn
         }]);
-        let wmn = Amn;
-        const kmn = class e extends ol {
+        let kmn = wmn;
+        const ymn = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -361665,9 +361699,9 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        kmn.runtime = Jm, kmn.typeName = "aiserver.v1.CreatePackfileUploadResponse.AlreadyUploaded", kmn.fields = Jm.util.newFieldList(() => []);
-        let ymn = kmn;
-        const Emn = class e extends ol {
+        ymn.runtime = Jm, ymn.typeName = "aiserver.v1.CreatePackfileUploadResponse.AlreadyUploaded", ymn.fields = Jm.util.newFieldList(() => []);
+        let Emn = ymn;
+        const Smn = class e extends ol {
             constructor(e) {
                 super(), this.completion = {
                     case: void 0
@@ -361686,15 +361720,15 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Emn.runtime = Jm, Emn.typeName = "aiserver.v1.PackfileUploadCompletion", Emn.fields = Jm.util.newFieldList(() => [{
+        Smn.runtime = Jm, Smn.typeName = "aiserver.v1.PackfileUploadCompletion", Smn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "direct_chunked_upload",
             kind: "message",
-            T: Imn,
+            T: Bmn,
             oneof: "completion"
         }]);
-        let Smn = Emn;
-        const vmn = class e extends ol {
+        let vmn = Smn;
+        const Imn = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -361711,9 +361745,9 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        vmn.runtime = Jm, vmn.typeName = "aiserver.v1.PackfileUploadCompletion.DirectChunkedUpload", vmn.fields = Jm.util.newFieldList(() => []);
-        let Imn = vmn;
-        const Bmn = class e extends ol {
+        Imn.runtime = Jm, Imn.typeName = "aiserver.v1.PackfileUploadCompletion.DirectChunkedUpload", Imn.fields = Jm.util.newFieldList(() => []);
+        let Bmn = Imn;
+        const Jmn = class e extends ol {
             constructor(e) {
                 super(), this.codebaseUuid = "", this.uploadUuid = "", Jm.util.initPartial(e, this)
             }
@@ -361730,7 +361764,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Bmn.runtime = Jm, Bmn.typeName = "aiserver.v1.CompletePackfileUploadRequest", Bmn.fields = Jm.util.newFieldList(() => [{
+        Jmn.runtime = Jm, Jmn.typeName = "aiserver.v1.CompletePackfileUploadRequest", Jmn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "codebase_uuid",
             kind: "scalar",
@@ -361744,10 +361778,10 @@
             no: 3,
             name: "completion",
             kind: "message",
-            T: Smn
+            T: vmn
         }]);
-        let Jmn = Bmn;
-        const Cmn = class e extends ol {
+        let Cmn = Jmn;
+        const Nmn = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -361764,9 +361798,9 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Cmn.runtime = Jm, Cmn.typeName = "aiserver.v1.CompletePackfileUploadResponse", Cmn.fields = Jm.util.newFieldList(() => []);
-        let Nmn = Cmn;
-        const Rmn = class e extends ol {
+        Nmn.runtime = Jm, Nmn.typeName = "aiserver.v1.CompletePackfileUploadResponse", Nmn.fields = Jm.util.newFieldList(() => []);
+        let Rmn = Nmn;
+        const Pmn = class e extends ol {
             constructor(e) {
                 super(), this.codebaseUuid = "", this.uploadUuid = "", this.chunkIndex = 0, this.data = new Uint8Array(0), Jm.util.initPartial(e, this)
             }
@@ -361783,7 +361817,7 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Rmn.runtime = Jm, Rmn.typeName = "aiserver.v1.UploadPackfileChunkRequest", Rmn.fields = Jm.util.newFieldList(() => [{
+        Pmn.runtime = Jm, Pmn.typeName = "aiserver.v1.UploadPackfileChunkRequest", Pmn.fields = Jm.util.newFieldList(() => [{
             no: 1,
             name: "codebase_uuid",
             kind: "scalar",
@@ -361804,8 +361838,8 @@
             kind: "scalar",
             T: 12
         }]);
-        let Pmn = Rmn;
-        const Lmn = class e extends ol {
+        let Lmn = Pmn;
+        const Fmn = class e extends ol {
             constructor(e) {
                 super(), Jm.util.initPartial(e, this)
             }
@@ -361822,51 +361856,51 @@
                 return Jm.util.equals(e, t, n)
             }
         };
-        Lmn.runtime = Jm, Lmn.typeName = "aiserver.v1.UploadPackfileChunkResponse", Lmn.fields = Jm.util.newFieldList(() => []);
-        let Fmn = Lmn;
-        const bmn = {
+        Fmn.runtime = Jm, Fmn.typeName = "aiserver.v1.UploadPackfileChunkResponse", Fmn.fields = Jm.util.newFieldList(() => []);
+        let bmn = Fmn;
+        const qmn = {
                 typeName: "aiserver.v1.CodebaseSnapshotService",
                 methods: {
                     registerCodebase: {
                         name: "RegisterCodebase",
-                        I: Vln,
-                        O: Kln,
+                        I: Wln,
+                        O: zln,
                         kind: Nm.Unary
                     },
                     registerCodebaseSnapshot: {
                         name: "RegisterCodebaseSnapshot",
-                        I: jln,
-                        O: $ln,
+                        I: Xln,
+                        O: Zln,
                         kind: Nm.Unary
                     },
                     getCodebaseSnapshotStatus: {
                         name: "GetCodebaseSnapshotStatus",
-                        I: emn,
-                        O: nmn,
+                        I: tmn,
+                        O: rmn,
                         kind: Nm.Unary
                     },
                     createPackfileUpload: {
                         name: "CreatePackfileUpload",
-                        I: hmn,
-                        O: Tmn,
+                        I: _mn,
+                        O: Amn,
                         kind: Nm.Unary
                     },
                     completePackfileUpload: {
                         name: "CompletePackfileUpload",
-                        I: Jmn,
-                        O: Nmn,
+                        I: Cmn,
+                        O: Rmn,
                         kind: Nm.Unary
                     },
                     uploadPackfileChunk: {
                         name: "UploadPackfileChunk",
-                        I: Pmn,
-                        O: Fmn,
+                        I: Lmn,
+                        O: bmn,
                         kind: Nm.Unary
                     }
                 }
             },
-            qmn = 6e5;
-        class Dmn {
+            Dmn = 6e5;
+        class xmn {
             constructor(e) {
                 this.context = e, this.disposables = [], this.isDisposed = !1, this.disposables.push(ca.cursor.onDidChangeCursorAuthToken(e => {
                     this.cursorAuthToken = e
@@ -361896,7 +361930,7 @@
                         await new Promise(e => setTimeout(e, 200))
                     }
                     const t = this.createTransport(this.cursorCreds.backendUrl);
-                    this.client = Ko(bmn, t)
+                    this.client = Ko(qmn, t)
                 }
                 return this.client
             }
@@ -362027,7 +362061,7 @@
                         data: r
                     };
                 try {
-                    return await i.uploadPackfileChunk(a, this.createCallOptions(qmn, s)), {
+                    return await i.uploadPackfileChunk(a, this.createCallOptions(Dmn, s)), {
                         type: "success"
                     }
                 } catch (e) {
@@ -362109,30 +362143,30 @@
                 this.isDisposed = !0, this.disposables.forEach(e => e.dispose())
             }
         }
-        const xmn = Yo.scoped("CodebaseSnapshotManager"),
-            Mmn = class e {
+        const Mmn = Yo.scoped("CodebaseSnapshotManager"),
+            Omn = class e {
                 constructor(t) {
-                    this.snapshotClient = t, this.isDisposed = !1, this.codebases = new Map, this.pendingChanges = [], this.pendingChangeKeys = [], this.pendingChangePaths = new Set, this.consecutiveFlushFailures = 0, this.droppedChangesSinceLastCommit = 0, this.flushInFlight = null, this.flushDebouncer = new Pln(e.FLUSH_DEBOUNCE_MS, () => {
+                    this.snapshotClient = t, this.isDisposed = !1, this.codebases = new Map, this.pendingChanges = [], this.pendingChangeKeys = [], this.pendingChangePaths = new Set, this.consecutiveFlushFailures = 0, this.droppedChangesSinceLastCommit = 0, this.flushInFlight = null, this.flushDebouncer = new Lln(e.FLUSH_DEBOUNCE_MS, () => {
                         this.drainPendingChanges().catch(e => {
                             const t = e instanceof Error ? e.message : String(e);
-                            xmn.error(`flushDebouncer: failed to drain pending changes: ${t}`)
+                            Mmn.error(`flushDebouncer: failed to drain pending changes: ${t}`)
                         })
                     })
                 }
                 dispose() {
-                    this.isDisposed || (this.teardown(), this.snapshotClient.dispose(), xmn.info("disposed (flush)"))
+                    this.isDisposed || (this.teardown(), this.snapshotClient.dispose(), Mmn.info("disposed (flush)"))
                 }
                 disposeFast() {
-                    this.isDisposed || (this.teardown(), this.snapshotClient.disposeFast(), xmn.info("disposed (fast)"))
+                    this.isDisposed || (this.teardown(), this.snapshotClient.disposeFast(), Mmn.info("disposed (fast)"))
                 }
                 teardown() {
                     this.isDisposed = !0, this.flushDebouncer.dispose(), this.pendingChanges = [], this.pendingChangeKeys = [], this.pendingChangePaths.clear(), this.codebases.clear()
                 }
                 async addCodebase(e) {
-                    this.isDisposed ? xmn.warn("addCodebase: manager disposed, skipping") : (await this.snapshotClient.addCodebase(e.codebaseUuid, e.path, e.kind), this.codebases.set(e.codebaseUuid, e), xmn.info(`addCodebase: ${e.codebaseUuid} -> ${e.path} (kind=${e.kind})`))
+                    this.isDisposed ? Mmn.warn("addCodebase: manager disposed, skipping") : (await this.snapshotClient.addCodebase(e.codebaseUuid, e.path, e.kind), this.codebases.set(e.codebaseUuid, e), Mmn.info(`addCodebase: ${e.codebaseUuid} -> ${e.path} (kind=${e.kind})`))
                 }
                 async removeCodebase(e) {
-                    this.isDisposed ? xmn.warn("removeCodebase: manager disposed, skipping") : (await this.snapshotClient.removeCodebase(e.codebaseUuid), this.codebases.delete(e.codebaseUuid), xmn.info(`removeCodebase: ${e.codebaseUuid} -> ${e.path}`))
+                    this.isDisposed ? Mmn.warn("removeCodebase: manager disposed, skipping") : (await this.snapshotClient.removeCodebase(e.codebaseUuid), this.codebases.delete(e.codebaseUuid), Mmn.info(`removeCodebase: ${e.codebaseUuid} -> ${e.path}`))
                 }
                 getCodebases() {
                     return this.codebases.values()
@@ -362179,8 +362213,8 @@
                             const i = e.slice(r);
                             if (this.consecutiveFlushFailures >= t) {
                                 const e = this.consecutiveFlushFailures;
-                                this.droppedChangesSinceLastCommit += i.length, this.consecutiveFlushFailures = 0, xmn.error(`flushUntilDrained: Dropping ${i.length} changes after ${e} consecutive failures: ${s}`)
-                            } else this.replacePendingChanges(this.dedupeChangesByPath(i.concat(this.pendingChanges))), this.enforceMaxPendingChanges(), xmn.error(`flushUntilDrained: Failed to record batch of ${i.length} changes (attempt ${this.consecutiveFlushFailures}/${t}): ${s}`);
+                                this.droppedChangesSinceLastCommit += i.length, this.consecutiveFlushFailures = 0, Mmn.error(`flushUntilDrained: Dropping ${i.length} changes after ${e} consecutive failures: ${s}`)
+                            } else this.replacePendingChanges(this.dedupeChangesByPath(i.concat(this.pendingChanges))), this.enforceMaxPendingChanges(), Mmn.error(`flushUntilDrained: Failed to record batch of ${i.length} changes (attempt ${this.consecutiveFlushFailures}/${t}): ${s}`);
                             this.pendingChanges.length > 0 && !this.isDisposed && await new Promise(e => setTimeout(e, n))
                         }
                     }
@@ -362215,7 +362249,7 @@
                     } = e, n = this.pendingChanges.length - t;
                     if (n > 0) {
                         const e = this.dropOldestPendingChanges(n);
-                        this.droppedChangesSinceLastCommit += e, xmn.warn(`enforceMaxPendingChanges: Dropped ${e} oldest changes (buffer exceeded ${t})`)
+                        this.droppedChangesSinceLastCommit += e, Mmn.warn(`enforceMaxPendingChanges: Dropped ${e} oldest changes (buffer exceeded ${t})`)
                     }
                 }
                 dropOldestPendingChanges(e) {
@@ -362241,10 +362275,10 @@
                     return _i.normalize(e)
                 }
                 async snapshot(e, t) {
-                    if (this.isDisposed) return xmn.warn("snapshot: manager disposed, skipping"), null;
-                    if (!this.codebases.has(e)) return xmn.warn(`snapshot: unknown codebase ${e}, skipping`), null;
+                    if (this.isDisposed) return Mmn.warn("snapshot: manager disposed, skipping"), null;
+                    if (!this.codebases.has(e)) return Mmn.warn(`snapshot: unknown codebase ${e}, skipping`), null;
                     try {
-                        this.flushDebouncer.cancel(), await this.drainPendingChanges(), (this.pendingChanges.length > 0 || this.droppedChangesSinceLastCommit > 0) && xmn.warn(`snapshot: drainPendingChanges failed for ${e}, ${this.pendingChanges.length} unflushed, ${this.droppedChangesSinceLastCommit} dropped`), this.droppedChangesSinceLastCommit = 0;
+                        this.flushDebouncer.cancel(), await this.drainPendingChanges(), (this.pendingChanges.length > 0 || this.droppedChangesSinceLastCommit > 0) && Mmn.warn(`snapshot: drainPendingChanges failed for ${e}, ${this.pendingChanges.length} unflushed, ${this.droppedChangesSinceLastCommit} dropped`), this.droppedChangesSinceLastCommit = 0;
                         const n = {
                                 v: 1,
                                 reason: t
@@ -362253,22 +362287,22 @@
                             s = await this.snapshotClient.commit(e, r),
                             i = s.commitId,
                             a = s.treeId;
-                        return xmn.info(`snapshot: codebase ${e} -> ${i.substring(0,8)} (${t.type})`), {
+                        return Mmn.info(`snapshot: codebase ${e} -> ${i.substring(0,8)} (${t.type})`), {
                             commitHash: i,
                             treeHash: a
                         }
                     } catch (t) {
                         const n = t instanceof Error ? t.message : String(t);
-                        return xmn.error(`snapshot: failed for ${e}: ${n}`), null
+                        return Mmn.error(`snapshot: failed for ${e}: ${n}`), null
                     }
                 }
                 async markRegistered(e, t) {
                     if (this.isDisposed) return "not_on_chain";
                     try {
                         const n = await this.snapshotClient.markRegistered(e, t);
-                        return "advanced" === n ? xmn.info(`markRegistered: ${e.substring(0,8)}/${t.substring(0,8)}`) : xmn.warn(`markRegistered: ${n} for ${e.substring(0,8)}/${t.substring(0,8)}`), n
+                        return "advanced" === n ? Mmn.info(`markRegistered: ${e.substring(0,8)}/${t.substring(0,8)}`) : Mmn.warn(`markRegistered: ${n} for ${e.substring(0,8)}/${t.substring(0,8)}`), n
                     } catch (t) {
-                        return xmn.error(`markRegistered failed for ${e.substring(0,8)}:`, t), "not_on_chain"
+                        return Mmn.error(`markRegistered failed for ${e.substring(0,8)}:`, t), "not_on_chain"
                     }
                 }
                 async generatePackfile(e, t) {
@@ -362278,27 +362312,27 @@
                                 maxCommits: t.maxCommits
                             } : void 0,
                             r = await this.snapshotClient.generatePackfile(e, n);
-                        return r && xmn.info(`generatePackfile: ${e.substring(0,8)} - ${r.sizeBytes} bytes, ${r.commits.length} commits [${r.baseCommit?.substring(0,8)??"null"}..${r.tipCommit.substring(0,8)}]`), r ?? null
+                        return r && Mmn.info(`generatePackfile: ${e.substring(0,8)} - ${r.sizeBytes} bytes, ${r.commits.length} commits [${r.baseCommit?.substring(0,8)??"null"}..${r.tipCommit.substring(0,8)}]`), r ?? null
                     } catch (t) {
-                        return xmn.error(`generatePackfile failed for ${e.substring(0,8)}:`, t), null
+                        return Mmn.error(`generatePackfile failed for ${e.substring(0,8)}:`, t), null
                     }
                 }
                 async generateRepairPackfile(e, t) {
-                    if (this.isDisposed) return xmn.warn("generateRepairPackfile: manager disposed, skipping"), null;
+                    if (this.isDisposed) return Mmn.warn("generateRepairPackfile: manager disposed, skipping"), null;
                     throw new Error("Not implemented")
                 }
                 async cleanupPackfile(e, t) {
-                    if (this.isDisposed) xmn.warn("cleanupPackfile: manager disposed, skipping");
+                    if (this.isDisposed) Mmn.warn("cleanupPackfile: manager disposed, skipping");
                     else try {
-                        await this.snapshotClient.cleanupPackfile(e, t), xmn.debug(`cleanupPackfile: Removed ${t}`)
+                        await this.snapshotClient.cleanupPackfile(e, t), Mmn.debug(`cleanupPackfile: Removed ${t}`)
                     } catch (e) {
-                        xmn.warn(`cleanupPackfile failed for ${t}:`, e)
+                        Mmn.warn(`cleanupPackfile failed for ${t}:`, e)
                     }
                 }
             };
-        Mmn.MAX_PENDING_CHANGES = 5e4, Mmn.FLUSH_THRESHOLD = 5e3, Mmn.FLUSH_DEBOUNCE_MS = 250, Mmn.FLUSH_BATCH_SIZE = 5e3, Mmn.MAX_FLUSH_RETRIES = 3, Mmn.FLUSH_RETRY_DELAY_MS = 500;
-        let Omn = Mmn;
-        class Umn {
+        Omn.MAX_PENDING_CHANGES = 5e4, Omn.FLUSH_THRESHOLD = 5e3, Omn.FLUSH_DEBOUNCE_MS = 250, Omn.FLUSH_BATCH_SIZE = 5e3, Omn.MAX_FLUSH_RETRIES = 3, Omn.FLUSH_RETRY_DELAY_MS = 500;
+        let Umn = Omn;
+        class Qmn {
             constructor() {
                 this.disposables = [], this._isDisposed = !1
             }
@@ -362327,24 +362361,24 @@
                 }
             }
         }
-        const Qmn = Yo.scoped("CodebaseTelemetryLifecycle"),
-            Gmn = "codebase_telemetry_v2",
-            Ymn = "codebase_telemetry_v2_git_history",
-            Hmn = "codebase_telemetry_v2_agent_dot_dirs",
-            Vmn = [Gmn, Ymn, Hmn];
-        async function Wmn(e) {
+        const Gmn = Yo.scoped("CodebaseTelemetryLifecycle"),
+            Ymn = "codebase_telemetry_v2",
+            Hmn = "codebase_telemetry_v2_git_history",
+            Vmn = "codebase_telemetry_v2_agent_dot_dirs",
+            Wmn = [Ymn, Hmn, Vmn];
+        async function Kmn(e) {
             try {
                 return await ca.cursor.checkFeatureGate(e)
             } catch (t) {
-                return void Qmn.warn(`Failed to evaluate ${e} gate; preserving current state`, t)
+                return void Gmn.warn(`Failed to evaluate ${e} gate; preserving current state`, t)
             }
         }
 
-        function Kmn() {
+        function zmn() {
             return 4 === ca.cursor.getPrivacyModeEnum()
         }
 
-        function zmn(e) {
+        function jmn(e) {
             if (void 0 !== e) try {
                 const t = e.split(".");
                 if (t.length < 2) return;
@@ -362355,7 +362389,7 @@
                 return
             }
         }
-        class jmn {
+        class Xmn {
             constructor() {
                 this.emitter = new ca.EventEmitter, this.onRefresh = this.emitter.event
             }
@@ -362366,47 +362400,47 @@
                 this.emitter.dispose()
             }
         }
-        class Xmn {
+        class $mn {
             constructor(e) {
-                this.createService = e, this.subscriptions = new Umn, this.sequencer = new Cln, this.isDeactivated = !1, this.currentAuthId = zmn(ca.cursor.getCursorAuthToken()), this.subscriptions.add(ca.commands.registerCommand("cursor.codebaseTelemetry.triggerSnapshot", e => {
+                this.createService = e, this.subscriptions = new Qmn, this.sequencer = new Nln, this.isDeactivated = !1, this.currentAuthId = jmn(ca.cursor.getCursorAuthToken()), this.subscriptions.add(ca.commands.registerCommand("cursor.codebaseTelemetry.triggerSnapshot", e => {
                     void 0 !== this.service && this.service.triggerSnapshot(e ?? {
                         reason: {
                             type: "MANUAL"
                         }
                     }).catch(e => {
-                        Qmn.error("triggerSnapshot command failed", e)
+                        Gmn.error("triggerSnapshot command failed", e)
                     })
                 })), this.subscriptions.add(ca.commands.registerCommand("cursor.codebaseTelemetry.triggerGitHistoryCapture", () => {
                     void 0 !== this.service && this.service.triggerGitHistoryCapture().catch(e => {
-                        Qmn.error("triggerGitHistoryCapture command failed", e)
+                        Gmn.error("triggerGitHistoryCapture command failed", e)
                     })
                 })), this.subscriptions.add(ca.cursor.onDidChangeGates(e => {
-                    const t = (e.changedGates ?? []).filter(e => Vmn.includes(e));
-                    0 !== t.length && (Qmn.info(`Feature gates changed: [${t.join(", ")}], re-evaluating`), this.reconcile())
+                    const t = (e.changedGates ?? []).filter(e => Wmn.includes(e));
+                    0 !== t.length && (Gmn.info(`Feature gates changed: [${t.join(", ")}], re-evaluating`), this.reconcile())
                 })), this.subscriptions.add(ca.cursor.onDidChangePrivacyModeEnum(e => {
-                    Qmn.info(`Privacy mode changed to ${e}, re-evaluating`), this.reconcile()
+                    Gmn.info(`Privacy mode changed to ${e}, re-evaluating`), this.reconcile()
                 })), this.subscriptions.add(ca.cursor.onDidChangeCursorAuthToken(e => {
-                    const t = zmn(e);
-                    if (t !== this.currentAuthId) return Qmn.info("authId changed, re-evaluating"), this.currentAuthId = t, void this.reconcile();
+                    const t = jmn(e);
+                    if (t !== this.currentAuthId) return Gmn.info("authId changed, re-evaluating"), this.currentAuthId = t, void this.reconcile();
                     void 0 !== e && void 0 !== this.authTokenChannel && this.currentAuthId === this.serviceAuthId && this.authTokenChannel.fire(e)
                 })), this.reconcile()
             }
             reconcile() {
-                const e = () => !(this.isDeactivated || !Kmn()) || (this.stopService(this.isDeactivated ? "deactivate" : "privacy"), !1);
+                const e = () => !(this.isDeactivated || !zmn()) || (this.stopService(this.isDeactivated ? "deactivate" : "privacy"), !1);
                 this.sequencer.queue(async () => {
                     if (!e()) return;
                     try {
                         await ca.cursor.waitForTeamPrivacyModeFetched()
                     } catch {
-                        Qmn.warn("Failed to wait for team privacy mode to be fetched, proceeding with stale/cached privacy mode")
+                        Gmn.warn("Failed to wait for team privacy mode to be fetched, proceeding with stale/cached privacy mode")
                     }
                     if (!e()) return;
-                    void 0 !== this.service && this.serviceAuthId !== this.currentAuthId && (Qmn.info("authId changed, stopping codebase telemetry service"), this.stopService("auth"));
-                    const t = await Wmn(Gmn);
+                    void 0 !== this.service && this.serviceAuthId !== this.currentAuthId && (Gmn.info("authId changed, stopping codebase telemetry service"), this.stopService("auth"));
+                    const t = await Kmn(Ymn);
                     if (void 0 !== t && e())
                         if (t) {
                             if (await this.startService(), void 0 === this.service) return;
-                            const [e, t] = await Promise.all([Wmn(Ymn), Wmn(Hmn)]);
+                            const [e, t] = await Promise.all([Kmn(Hmn), Kmn(Vmn)]);
                             if (void 0 === this.service) return;
                             await this.service.reconcile({
                                 gitHistory: e,
@@ -362414,7 +362448,7 @@
                             })
                         } else this.stopService("gate")
                 }).catch(e => {
-                    Qmn.error("Error during codebase telemetry lifecycle transition", e)
+                    Gmn.error("Error during codebase telemetry lifecycle transition", e)
                 })
             }
             async startService() {
@@ -362422,7 +362456,7 @@
                 const e = this.currentAuthId;
                 if (void 0 === e) return;
                 let t;
-                Qmn.info("Starting codebase telemetry");
+                Gmn.info("Starting codebase telemetry");
                 try {
                     const e = ca.cursor.getCursorCreds();
                     void 0 !== e?.backendUrl && (t = {
@@ -362430,23 +362464,23 @@
                         ghostMode: !1
                     })
                 } catch {
-                    Qmn.warn("Failed to retrieve credentials for OTLP transport")
+                    Gmn.warn("Failed to retrieve credentials for OTLP transport")
                 }
-                const n = new jmn;
+                const n = new Xmn;
                 let r;
                 this.authTokenChannel = n, this.serviceAuthId = e;
                 try {
                     r = await this.createService(e, n, t)
                 } catch (e) {
-                    return this.serviceAuthId = void 0, this.authTokenChannel = void 0, n.dispose(), void Qmn.error("Failed to start codebase telemetry", e)
+                    return this.serviceAuthId = void 0, this.authTokenChannel = void 0, n.dispose(), void Gmn.error("Failed to start codebase telemetry", e)
                 }
-                if (void 0 === this.service && !this.isDeactivated && Kmn()) this.service = r;
+                if (void 0 === this.service && !this.isDeactivated && zmn()) this.service = r;
                 else {
-                    Qmn.info("Codebase telemetry start aborted due to state drift"), this.serviceAuthId = void 0, this.authTokenChannel = void 0;
+                    Gmn.info("Codebase telemetry start aborted due to state drift"), this.serviceAuthId = void 0, this.authTokenChannel = void 0;
                     try {
                         this.isDeactivated ? r.dispose() : r.disposeFast()
                     } catch (e) {
-                        Qmn.warn("Error disposing codebase telemetry service", e)
+                        Gmn.warn("Error disposing codebase telemetry service", e)
                     }
                     n.dispose()
                 }
@@ -362454,14 +362488,14 @@
             stopService(e) {
                 if (void 0 === this.service) return;
                 const t = Date.now();
-                Qmn.info(`Stopping codebase telemetry (${e})`);
+                Gmn.info(`Stopping codebase telemetry (${e})`);
                 const n = this.service,
                     r = this.authTokenChannel;
                 this.service = void 0, this.serviceAuthId = void 0, this.authTokenChannel = void 0;
                 try {
-                    "deactivate" === e ? n.dispose() : n.disposeFast(), Qmn.info(`Stopped codebase telemetry (${e}) in ${Date.now()-t}ms`)
+                    "deactivate" === e ? n.dispose() : n.disposeFast(), Gmn.info(`Stopped codebase telemetry (${e}) in ${Date.now()-t}ms`)
                 } catch (t) {
-                    Qmn.error(`Error disposing codebase telemetry service (${e})`, t)
+                    Gmn.error(`Error disposing codebase telemetry service (${e})`, t)
                 }
                 r?.dispose()
             }
@@ -362469,32 +362503,32 @@
                 this.isDeactivated = !0, this.stopService("deactivate"), this.subscriptions.dispose()
             }
         }
-        const $mn = Yo.scoped("CodebaseWorkspaceManager");
-        class Zmn {
+        const Zmn = Yo.scoped("CodebaseWorkspaceManager");
+        class eun {
             constructor(e, t, n) {
-                this.snapshotManager = e, this.stateStore = t, this.authId = n, this.disposables = new Umn, this.sequencer = new Cln, this.normalizedHomePath = Jln(Arn.homedir())
+                this.snapshotManager = e, this.stateStore = t, this.authId = n, this.disposables = new Qmn, this.sequencer = new Nln, this.normalizedHomePath = Cln(Arn.homedir())
             }
             get isDisposed() {
                 return this.disposables.isDisposed
             }
             async initialize() {
-                $mn.info("Initializing codebases"), await this.addWorkspaceFolderCodebases(ca.workspace.workspaceFolders ?? []), this.disposables.add(ca.workspace.onDidChangeWorkspaceFolders(e => {
+                Zmn.info("Initializing codebases"), await this.addWorkspaceFolderCodebases(ca.workspace.workspaceFolders ?? []), this.disposables.add(ca.workspace.onDidChangeWorkspaceFolders(e => {
                     this.sequencer.queue(() => this.handleWorkspaceFoldersChanged(e)).catch(e => {
-                        $mn.error("Failed to handle workspace folders change", e)
+                        Zmn.error("Failed to handle workspace folders change", e)
                     })
-                })), $mn.info(`Initialized ${this.snapshotManager.getCodebaseCount()} codebases`)
+                })), Zmn.info(`Initialized ${this.snapshotManager.getCodebaseCount()} codebases`)
             }
             async addWorkspaceFolderCodebases(e) {
                 for (const t of e) {
                     const e = t.uri.fsPath;
-                    this.isHomeDirectory(e) ? $mn.warn(`Skipping home directory workspace folder for codebase telemetry: ${e}`) : await this.isGitMainWorktreeRoot(e) ? await this.addCodebase(e, 1) : $mn.info(`Skipping non Git main worktree root folder: ${e}`)
+                    this.isHomeDirectory(e) ? Zmn.warn(`Skipping home directory workspace folder for codebase telemetry: ${e}`) : await this.isGitMainWorktreeRoot(e) ? await this.addCodebase(e, 1) : Zmn.info(`Skipping non Git main worktree root folder: ${e}`)
                 }
             }
             async reconcileAgentDotDirCodebases(e) {
                 const t = new Set(e.map(e => e.path)),
-                    n = new Set([...this.snapshotManager.getCodebases()].filter(Mln).map(e => e.path));
-                for (const e of n) t.has(e) || ($mn.info(`reconcileDotDirs: removing ${e}`), await this.removeCodebase(e));
-                for (const t of e) n.has(t.path) || ($mn.info(`reconcileDotDirs: adding codebase kind=${t.kind} at ${t.path}`), await this.addCodebase(t.path, t.kind))
+                    n = new Set([...this.snapshotManager.getCodebases()].filter(Oln).map(e => e.path));
+                for (const e of n) t.has(e) || (Zmn.info(`reconcileDotDirs: removing ${e}`), await this.removeCodebase(e));
+                for (const t of e) n.has(t.path) || (Zmn.info(`reconcileDotDirs: adding codebase kind=${t.kind} at ${t.path}`), await this.addCodebase(t.path, t.kind))
             }
             async handleWorkspaceFoldersChanged(e) {
                 for (const t of e.removed) {
@@ -362513,22 +362547,22 @@
                         kind: t
                     })
                 } catch (t) {
-                    return void $mn.error(`Failed to get or create codebase metadata at ${e}`, t)
+                    return void Zmn.error(`Failed to get or create codebase metadata at ${e}`, t)
                 }
                 try {
                     await this.snapshotManager.addCodebase(n)
                 } catch (t) {
-                    return void $mn.error(`Failed to add codebase at ${e}: ${t}`)
+                    return void Zmn.error(`Failed to add codebase at ${e}: ${t}`)
                 }
-                $mn.info(`Added codebase ${n.codebaseUuid} at ${e}`)
+                Zmn.info(`Added codebase ${n.codebaseUuid} at ${e}`)
             }
             async removeCodebase(e) {
                 if (this.isDisposed) return;
                 const t = Array.from(this.snapshotManager.getCodebases()).filter(t => t.path === e);
                 for (const n of t) try {
-                    await this.snapshotManager.removeCodebase(n), $mn.info(`Removed codebase ${n.codebaseUuid} at ${e}`)
+                    await this.snapshotManager.removeCodebase(n), Zmn.info(`Removed codebase ${n.codebaseUuid} at ${e}`)
                 } catch (t) {
-                    $mn.error(`Failed to remove codebase ${n.codebaseUuid} at ${e}`, t)
+                    Zmn.error(`Failed to remove codebase ${n.codebaseUuid} at ${e}`, t)
                 }
             }
             async isGitMainWorktreeRoot(e) {
@@ -362540,13 +362574,13 @@
                 }
             }
             isHomeDirectory(e) {
-                return Jln(e) === this.normalizedHomePath
+                return Cln(e) === this.normalizedHomePath
             }
             dispose() {
                 this.disposables.dispose()
             }
         }
-        const eun = {
+        const tun = {
             failureBackoff: {
                 initialMs: 3e4,
                 maxMs: 18e5,
@@ -362572,10 +362606,10 @@
             forgetAndRetryCodes: new Set(["permission_denied", "not_found"])
         };
 
-        function tun(e, t) {
+        function nun(e, t) {
             const n = e.failureCount + 1;
             return {
-                delayMs: Lln(n, t.failureBackoff),
+                delayMs: Fln(n, t.failureBackoff),
                 reason: "failure",
                 state: {
                     failureCount: n,
@@ -362585,40 +362619,40 @@
                 shouldForget: !1
             }
         }
-        const nun = "codebase_snapshot.client.",
-            run = Object.freeze({
+        const run = "codebase_snapshot.client.",
+            sun = Object.freeze({
                 surface: "ide"
             });
 
-        function sun(e) {
+        function iun(e) {
             return {
-                ...run,
+                ...sun,
                 ...e ?? {}
             }
         }
-        const iun = Yo.scoped("GitHistoryUploader");
-        class aun {
+        const aun = Yo.scoped("GitHistoryUploader");
+        class oun {
             constructor(e, t, n, r) {
-                this.snapshotManager = e, this.codebaseRegistrationService = t, this.snapshotsBaseDir = n, this.nextRunAt = new Map, this.failureCount = new Map, this.idleCount = new Map, this.permanentErrors = new Set, this.globalPauseUntil = 0, this.globalNetFailures = 0, this.singleFlight = new Nln, this.disposables = [], this.isDisposed = !1, this.hadCreds = !1, this.disposables.push(r.onRefresh(e => {
+                this.snapshotManager = e, this.codebaseRegistrationService = t, this.snapshotsBaseDir = n, this.nextRunAt = new Map, this.failureCount = new Map, this.idleCount = new Map, this.permanentErrors = new Set, this.globalPauseUntil = 0, this.globalNetFailures = 0, this.singleFlight = new Rln, this.disposables = [], this.isDisposed = !1, this.hadCreds = !1, this.disposables.push(r.onRefresh(e => {
                     this.session?.setAuthToken(e), this.forceScheduleNow()
-                })), this.hadCreds = lun(), this.disposables.push(ca.cursor.onDidChangeCursorCreds(e => {
+                })), this.hadCreds = mun(), this.disposables.push(ca.cursor.onDidChangeCursorCreds(e => {
                     if (void 0 !== this.session && e.backendUrl !== this.sessionBackendUrl) {
                         try {
                             this.session.dispose()
                         } catch (e) {
                             const {
                                 message: t
-                            } = mun(e);
-                            iun.warn(`session.dispose on creds change failed: ${t}`)
+                            } = uun(e);
+                            aun.warn(`session.dispose on creds change failed: ${t}`)
                         }
                         this.session = void 0, this.sessionBackendUrl = void 0, this.forceScheduleNow()
                     }
-                    const t = lun();
+                    const t = mun();
                     !this.hadCreds && t && this.forceScheduleNow(), this.hadCreds = t
                 }));
                 const s = Date.now() + 3e5;
                 for (const e of this.gitCodebases()) this.nextRunAt.set(e.codebaseUuid, s);
-                this.scheduleWake(), iun.info("GitHistoryUploader started; first sweep in 300000ms")
+                this.scheduleWake(), aun.info("GitHistoryUploader started; first sweep in 300000ms")
             }
             async runOnce() {
                 if (this.isDisposed) return;
@@ -362629,7 +362663,7 @@
                 }
                 await this.processDue()
             }* gitCodebases() {
-                for (const e of this.snapshotManager.getCodebases()) oun(e.kind) && (yield e)
+                for (const e of this.snapshotManager.getCodebases()) lun(e.kind) && (yield e)
             }
             effectiveNextRunAt(e) {
                 return Math.max(this.nextRunAt.get(e) ?? 0, this.globalPauseUntil)
@@ -362675,16 +362709,16 @@
                     const {
                         message: t,
                         stack: n
-                    } = mun(e);
-                    iun.error(`processDue failed: ${t}`, n)
+                    } = uun(e);
+                    aun.error(`processDue failed: ${t}`, n)
                 })
             }
             async processDueInternal() {
                 if (this.isDisposed) return;
-                if (this.discoverCodebases(), Date.now() < this.globalPauseUntil) return iun.debug(`processDue: globally paused for ${Math.round((this.globalPauseUntil-Date.now())/1e3)}s; skipping sweep`), void this.scheduleWake();
+                if (this.discoverCodebases(), Date.now() < this.globalPauseUntil) return aun.debug(`processDue: globally paused for ${Math.round((this.globalPauseUntil-Date.now())/1e3)}s; skipping sweep`), void this.scheduleWake();
                 const e = ca.cursor.getCursorCreds(),
                     t = ca.cursor.getCursorAuthToken();
-                if (!e || !t) return iun.debug("processDue: cursor creds/token not yet available"), this.globalPauseUntil = Math.max(this.globalPauseUntil, Date.now() + 3e4), void this.scheduleWake();
+                if (!e || !t) return aun.debug("processDue: cursor creds/token not yet available"), this.globalPauseUntil = Math.max(this.globalPauseUntil, Date.now() + 3e4), void this.scheduleWake();
                 const n = function() {
                         const e = new Headers;
                         ca.cursor.getAllRequestHeadersExceptAccessToken({
@@ -362745,8 +362779,8 @@
                     const {
                         message: r,
                         stack: s
-                    } = mun(e);
-                    return iun.error(`runCycle threw for ${t.codebaseUuid}: ${r}`, s), {
+                    } = uun(e);
+                    return aun.error(`runCycle threw for ${t.codebaseUuid}: ${r}`, s), {
                         outcome: {
                             kind: "error",
                             message: r
@@ -362767,8 +362801,8 @@
                             outcome: t,
                             wallTimeMs: n,
                             state: s
-                        } = e, i = e.config ?? eun;
-                        if ("error" === t.kind) return tun(s, i);
+                        } = e, i = e.config ?? tun;
+                        if ("error" === t.kind) return nun(s, i);
                         const a = t.outcome;
                         if (a.kind === r.CycleOutcomeKind.Success) {
                             if (a.hasPending) {
@@ -362789,7 +362823,7 @@
                             }
                             const e = s.idleCount + 1;
                             return {
-                                delayMs: Lln(e, i.idleBackoff),
+                                delayMs: Fln(e, i.idleBackoff),
                                 reason: "idle",
                                 state: {
                                     failureCount: 0,
@@ -362800,10 +362834,10 @@
                             }
                         }
                         const o = a.error;
-                        if (void 0 === o) return tun(s, i);
+                        if (void 0 === o) return nun(s, i);
                         if (o.retryStrategy === r.GitHistoryRetryStrategy.WaitForBetterNetwork) {
                             const e = s.globalNetFailures + 1,
-                                t = Lln(e, i.slowNetworkBackoff);
+                                t = Fln(e, i.slowNetworkBackoff);
                             return {
                                 delayMs: i.catchUpGap.minMs,
                                 reason: "slow_network",
@@ -362827,28 +362861,28 @@
                             shouldForget: !1,
                             permanentErrorCode: o.code
                         } : i.forgetAndRetryCodes.has(o.code) ? {
-                            ...tun(s, i),
+                            ...nun(s, i),
                             shouldForget: !0
-                        } : tun(s, i)
+                        } : nun(s, i)
                     }({
                         outcome: t.outcome,
                         wallTimeMs: t.wallTimeMs,
                         state: n
                     });
                 var i, a;
-                uun(this.failureCount, e, s.state.failureCount), uun(this.idleCount, e, s.state.idleCount), this.globalNetFailures = s.state.globalNetFailures, s.shouldForget && this.codebaseRegistrationService.forget(e), void 0 !== s.permanentErrorCode && (this.permanentErrors.add(e), iun.warn(`Codebase ${e} quarantined (permanent error: ${s.permanentErrorCode})`)), void 0 !== s.globalPauseDelayMs && (this.globalPauseUntil = Math.max(this.globalPauseUntil, Date.now() + s.globalPauseDelayMs), iun.info(`Global wait_for_better_network: paused for ${Math.round(s.globalPauseDelayMs/1e3)}s (codebase ${e})`)), this.nextRunAt.set(e, Date.now() + s.delayMs), i = s.reason, a = s.delayMs, ca.cursor.metricsIncrement({
+                cun(this.failureCount, e, s.state.failureCount), cun(this.idleCount, e, s.state.idleCount), this.globalNetFailures = s.state.globalNetFailures, s.shouldForget && this.codebaseRegistrationService.forget(e), void 0 !== s.permanentErrorCode && (this.permanentErrors.add(e), aun.warn(`Codebase ${e} quarantined (permanent error: ${s.permanentErrorCode})`)), void 0 !== s.globalPauseDelayMs && (this.globalPauseUntil = Math.max(this.globalPauseUntil, Date.now() + s.globalPauseDelayMs), aun.info(`Global wait_for_better_network: paused for ${Math.round(s.globalPauseDelayMs/1e3)}s (codebase ${e})`)), this.nextRunAt.set(e, Date.now() + s.delayMs), i = s.reason, a = s.delayMs, ca.cursor.metricsIncrement({
                     stat: "codebase_snapshot.client.history.scheduler.decisions",
                     value: 1,
-                    tags: sun({
+                    tags: iun({
                         reason: i
                     })
                 }), "permanent" !== i && ca.cursor.metricsDistribution({
                     stat: "codebase_snapshot.client.history.scheduler.delay_ms",
                     value: a,
-                    tags: sun({
+                    tags: iun({
                         reason: i
                     })
-                }), iun.info(`Codebase ${e}: outcome=${function(e){if("error"===e.kind)return"napi_error";const t=e.outcome;switch(t.kind){case r.CycleOutcomeKind.Success:return t.hasPending?"success(hasPending)":"success(drained)";case r.CycleOutcomeKind.Failed:return`failed[${t.error?.code??"unknown"}]`;default:return t.kind}}(t.outcome)} wallTime=${t.wallTimeMs}ms next=${function(e){return Number.isFinite(e)?e<1e3?`${e}ms`:`${Math.round(e/1e3)}s`:"permanent"}(s.delayMs)} reason=${s.reason}`)
+                }), aun.info(`Codebase ${e}: outcome=${function(e){if("error"===e.kind)return"napi_error";const t=e.outcome;switch(t.kind){case r.CycleOutcomeKind.Success:return t.hasPending?"success(hasPending)":"success(drained)";case r.CycleOutcomeKind.Failed:return`failed[${t.error?.code??"unknown"}]`;default:return t.kind}}(t.outcome)} wallTime=${t.wallTimeMs}ms next=${function(e){return Number.isFinite(e)?e<1e3?`${e}ms`:`${Math.round(e/1e3)}s`:"permanent"}(s.delayMs)} reason=${s.reason}`)
             }
             ensureSession(e, t, n) {
                 if (void 0 === this.session) {
@@ -362863,8 +362897,8 @@
                         const {
                             message: t,
                             stack: n
-                        } = mun(e);
-                        return void iun.error(`Failed to construct GitHistorySession: ${t}`, n)
+                        } = uun(e);
+                        return void aun.error(`Failed to construct GitHistorySession: ${t}`, n)
                     }
                     return this.session
                 }
@@ -362873,8 +362907,8 @@
                 } catch (e) {
                     const {
                         message: t
-                    } = mun(e);
-                    iun.warn(`setRequestHeaders failed: ${t}`)
+                    } = uun(e);
+                    aun.warn(`setRequestHeaders failed: ${t}`)
                 }
                 return this.session
             }
@@ -362885,19 +362919,19 @@
                     } catch (e) {
                         const {
                             message: t
-                        } = mun(e);
-                        iun.warn(`GitHistorySession.dispose failed: ${t}`)
+                        } = uun(e);
+                        aun.warn(`GitHistorySession.dispose failed: ${t}`)
                     } finally {
                         this.session = void 0, this.sessionBackendUrl = void 0
                     }
                     this.nextRunAt.clear(), this.failureCount.clear(), this.idleCount.clear(), this.permanentErrors.clear(), this.globalPauseUntil = 0, this.globalNetFailures = 0;
                     for (const e of this.disposables) e.dispose();
-                    this.disposables.length = 0, iun.info("GitHistoryUploader disposed")
+                    this.disposables.length = 0, aun.info("GitHistoryUploader disposed")
                 }
             }
         }
 
-        function oun(e) {
+        function lun(e) {
             switch (e) {
                 case 1:
                     return !0;
@@ -362916,11 +362950,11 @@
             }
         }
 
-        function lun() {
+        function mun() {
             return void 0 !== ca.cursor.getCursorCreds() && void 0 !== ca.cursor.getCursorAuthToken()
         }
 
-        function mun(e) {
+        function uun(e) {
             return e instanceof Error ? {
                 message: e.message,
                 stack: e.stack
@@ -362929,11 +362963,11 @@
             }
         }
 
-        function uun(e, t, n) {
+        function cun(e, t, n) {
             0 === n ? e.delete(t) : e.set(t, n)
         }
-        const cun = Yo.scoped("PackfileService");
-        class dun {
+        const dun = Yo.scoped("PackfileService");
+        class pun {
             constructor(e) {
                 this.grpcClient = e
             }
@@ -362956,7 +362990,7 @@
                     type: "error",
                     message: "Upload cancelled before start"
                 };
-                cun.info(`uploadPackfile: Starting - packId=${a.substring(0,16)}..., size=${l} bytes, codebase=${e}`);
+                dun.info(`uploadPackfile: Starting - packId=${a.substring(0,16)}..., size=${l} bytes, codebase=${e}`);
                 try {
                     let t;
                     try {
@@ -362974,7 +363008,7 @@
                             subsystem: r
                         })
                     }
-                    if (cun.info(`uploadPackfile: createPackfileUpload returned type=${t.type}`), "alreadyUploaded" === t.type) return cun.info("uploadPackfile: Packfile already exists on server, skipping upload"), {
+                    if (dun.info(`uploadPackfile: createPackfileUpload returned type=${t.type}`), "alreadyUploaded" === t.type) return dun.info("uploadPackfile: Packfile already exists on server, skipping upload"), {
                         type: "alreadyExists"
                     };
                     if ("permissionDenied" === t.type) return {
@@ -362985,15 +363019,15 @@
                         type: "rateLimited",
                         retryAfterMs: t.retryAfterMs
                     };
-                    if ("conflict" === t.type) return cun.warn(`Upload conflict for pack ${a.substring(0,16)}`), {
+                    if ("conflict" === t.type) return dun.warn(`Upload conflict for pack ${a.substring(0,16)}`), {
                         type: "error",
                         message: "Upload exists with different metadata (conflict)"
                     };
-                    if ("failedPrecondition" === t.type) return cun.warn(`Upload precondition failed for pack ${a.substring(0,16)}: ${t.message}`), {
+                    if ("failedPrecondition" === t.type) return dun.warn(`Upload precondition failed for pack ${a.substring(0,16)}: ${t.message}`), {
                         type: "error",
                         message: `Upload precondition: ${t.message}`
                     };
-                    cun.info(`uploadPackfile: Using directChunked method, uploadUuid=${t.uploadUuid}`);
+                    dun.info(`uploadPackfile: Using directChunked method, uploadUuid=${t.uploadUuid}`);
                     const n = await this.uploadViaChunksFromDisk({
                         codebaseUuid: e,
                         uploadUuid: t.uploadUuid,
@@ -363012,13 +363046,13 @@
                         shouldAbort: s,
                         signal: i
                     });
-                    return null !== u ? u : (cun.info(`uploadPackfile: SUCCESS - packId=${a.substring(0,16)}..., size=${l} bytes`), {
+                    return null !== u ? u : (dun.info(`uploadPackfile: SUCCESS - packId=${a.substring(0,16)}..., size=${l} bytes`), {
                         type: "success"
                     })
                 } catch (e) {
                     const t = e instanceof Error ? e.message : String(e),
                         n = e instanceof Error ? e.stack : void 0;
-                    return cun.error(`uploadPackfile: EXCEPTION - ${t}`, {
+                    return dun.error(`uploadPackfile: EXCEPTION - ${t}`, {
                         stack: n
                     }), this.classifyUnexpectedError(a, e)
                 }
@@ -363043,7 +363077,7 @@
                     message: `Server-provided chunk size ${i} exceeds max 67108864`
                 };
                 const m = Math.ceil(s / i);
-                cun.debug(`Uploading ${m} chunks of ${i} bytes each from ${r}`);
+                dun.debug(`Uploading ${m} chunks of ${i} bytes each from ${r}`);
                 const u = await (0, WTt.open)(r, "r");
                 try {
                     for (let e = 0; e < m; e++) {
@@ -363068,7 +363102,7 @@
                             return this.classifyRpcError({
                                 error: e,
                                 packId: n,
-                                timeoutMs: qmn,
+                                timeoutMs: Dmn,
                                 rpcMethod: "uploadPackfileChunk",
                                 subsystem: a
                             })
@@ -363094,7 +363128,7 @@
                                 }
                             }
                         }
-                        cun.info(`uploadPackfileChunk: ${e+1}/${m}`, {
+                        dun.info(`uploadPackfileChunk: ${e+1}/${m}`, {
                             subsystem: a,
                             uploadUuid: n,
                             chunkIndex: e,
@@ -363136,7 +363170,7 @@
                         subsystem: r
                     })
                 }
-                if ("success" === a.type) return cun.debug(`Completed packfile upload ${n}`), null;
+                if ("success" === a.type) return dun.debug(`Completed packfile upload ${n}`), null;
                 switch (a.type) {
                     case "notFound":
                         return {
@@ -363160,12 +363194,12 @@
                 }
             }
             classifyUnexpectedError(e, t) {
-                if (t instanceof Ta && t.code === fa.Unauthenticated) return cun.warn(`Upload unauthenticated for pack ${e.substring(0,16)}: ${t.rawMessage}`), {
+                if (t instanceof Ta && t.code === fa.Unauthenticated) return dun.warn(`Upload unauthenticated for pack ${e.substring(0,16)}: ${t.rawMessage}`), {
                     type: "unauthenticated",
                     message: t.rawMessage
                 };
                 const n = t instanceof Error ? t.message : String(t);
-                return cun.error(`Upload failed for pack ${e.substring(0,16)}: ${n}`), {
+                return dun.error(`Upload failed for pack ${e.substring(0,16)}: ${n}`), {
                     type: "error",
                     message: n
                 }
@@ -363185,8 +363219,8 @@
                     }, Number.isFinite(1) && ca.cursor.metricsIncrement({
                         stat: "codebase_snapshot.client.upload.timeout_count",
                         value: 1,
-                        tags: sun(a)
-                    }), cun.warn(`${s} timed out after ${r}ms`, {
+                        tags: iun(a)
+                    }), dun.warn(`${s} timed out after ${r}ms`, {
                         subsystem: i,
                         uploadPackId: n,
                         timeoutMs: r
@@ -363194,7 +363228,7 @@
                         type: "error",
                         message: `Upload timed out after ${r}ms`
                     };
-                    if (t.code === fa.Canceled) return cun.info(`${s} cancelled`, {
+                    if (t.code === fa.Canceled) return dun.info(`${s} cancelled`, {
                         subsystem: i,
                         uploadPackId: n
                     }), {
@@ -363206,15 +363240,15 @@
                 return this.classifyUnexpectedError(n, t)
             }
         }
-        const pun = Yo.scoped("SnapshotUploader"),
-            fun = {
+        const fun = Yo.scoped("SnapshotUploader"),
+            gun = {
                 initialMs: 1e4,
                 maxMs: 3e5,
                 multiplier: 2
             };
-        class gun {
+        class hun {
             constructor(e, t, n, r) {
-                this.snapshotManager = e, this.packfileService = t, this.codebaseRegistrationService = n, this.grpcClient = r, this.throttler = new Nln, this.backoffState = new Map, this.periodicRunner = new Rln({
+                this.snapshotManager = e, this.packfileService = t, this.codebaseRegistrationService = n, this.grpcClient = r, this.throttler = new Rln, this.backoffState = new Map, this.periodicRunner = new Pln({
                     intervalMs: 3e5,
                     initialDelayMs: 3e4,
                     callback: () => this.runOnce(),
@@ -363222,109 +363256,109 @@
                         const {
                             message: t,
                             stack: n
-                        } = hun(e);
-                        pun.error(`Scheduler: unexpected error in runOnce: ${t}`, n)
+                        } = _un(e);
+                        fun.error(`Scheduler: unexpected error in runOnce: ${t}`, n)
                     }
                 })
             }
             start() {
-                this.periodicRunner.start(), pun.info("SnapshotUploader started with interval 300000ms")
+                this.periodicRunner.start(), fun.info("SnapshotUploader started with interval 300000ms")
             }
             stop() {
-                this.periodicRunner.stop(), pun.info("SnapshotUploader stopped")
+                this.periodicRunner.stop(), fun.info("SnapshotUploader stopped")
             }
             runOnce() {
                 return this.throttler.queue(() => this.processAllCodebases())
             }
             async processAllCodebases() {
                 const e = [...this.snapshotManager.getCodebases()];
-                pun.debug(`SnapshotUploader.processAllCodebases: START - ${e.length} codebases`), this.pruneStaleState(e);
+                fun.debug(`SnapshotUploader.processAllCodebases: START - ${e.length} codebases`), this.pruneStaleState(e);
                 for (const t of e) try {
                     await this.processCodebase(t)
                 } catch (e) {
                     const {
                         message: n,
                         stack: r
-                    } = hun(e);
-                    pun.error(`SnapshotUploader: processCodebase failed for ${t.codebaseUuid}: ${n}`, r), this.applyBackoff(t.codebaseUuid, `unexpected: ${n}`)
+                    } = _un(e);
+                    fun.error(`SnapshotUploader: processCodebase failed for ${t.codebaseUuid}: ${n}`, r), this.applyBackoff(t.codebaseUuid, `unexpected: ${n}`)
                 }
-                pun.debug("SnapshotUploader.processAllCodebases: END")
+                fun.debug("SnapshotUploader.processAllCodebases: END")
             }
             pruneStaleState(e) {
                 const t = new Set(e.map(e => e.codebaseUuid));
-                for (const e of this.backoffState.keys()) t.has(e) || (this.backoffState.delete(e), pun.debug(`Pruned stale backoff state for removed codebase ${e}`));
+                for (const e of this.backoffState.keys()) t.has(e) || (this.backoffState.delete(e), fun.debug(`Pruned stale backoff state for removed codebase ${e}`));
                 this.codebaseRegistrationService.prune(e)
             }
             async processCodebase(e) {
                 const {
                     codebaseUuid: t
                 } = e;
-                pun.debug(`processCodebase: ${t} at ${e.path}`);
+                fun.debug(`processCodebase: ${t} at ${e.path}`);
                 const n = this.getBackoffWaitTime(t);
-                if (n > 0) return void pun.debug(`Codebase ${t} in backoff, waiting ${Math.round(n/1e3)}s`);
+                if (n > 0) return void fun.debug(`Codebase ${t} in backoff, waiting ${Math.round(n/1e3)}s`);
                 const r = await this.snapshotManager.generatePackfile(t);
                 if (r) try {
-                    if (0 === r.commits.length) return void pun.warn(`processCodebase: packfile for ${t} has 0 commits, skipping`);
+                    if (0 === r.commits.length) return void fun.warn(`processCodebase: packfile for ${t} has 0 commits, skipping`);
                     const n = await this.codebaseRegistrationService.ensureCodebaseRegistered(e);
-                    if ("registered" !== n.type) return this.applyBackoff(t, `registration: ${n.message}`), void pun.warn(`Codebase ${t} not registered, skipping upload`);
-                    n.fromCache || this.clearBackoff(t), pun.info(`Processing ${r.commits.length} pending commits for ${t} [${r.baseCommit??"null"}..${r.tipCommit}]`);
+                    if ("registered" !== n.type) return this.applyBackoff(t, `registration: ${n.message}`), void fun.warn(`Codebase ${t} not registered, skipping upload`);
+                    n.fromCache || this.clearBackoff(t), fun.info(`Processing ${r.commits.length} pending commits for ${t} [${r.baseCommit??"null"}..${r.tipCommit}]`);
                     const s = await this.packfileService.uploadPackfile(t, r, {
                         phase: "snapshot"
                     });
                     switch (s.type) {
                         case "permissionDenied":
-                            return this.codebaseRegistrationService.forget(t), this.applyBackoff(t, `permissionDenied: ${s.message}`), void pun.warn(`Permission denied for ${t}, will re-register after backoff`);
+                            return this.codebaseRegistrationService.forget(t), this.applyBackoff(t, `permissionDenied: ${s.message}`), void fun.warn(`Permission denied for ${t}, will re-register after backoff`);
                         case "error":
                             return void this.applyBackoff(t, s.message);
                         case "rateLimited": {
                             const e = this.backoffState.get(t),
                                 n = (e?.consecutiveFailures ?? 0) + 1,
-                                r = Fln(n, fun),
+                                r = bln(n, gun),
                                 i = s.retryAfterMs > 0 ? s.retryAfterMs : Math.max(r, 3e4);
                             return this.backoffState.set(t, {
                                 consecutiveFailures: n,
                                 nextRetryAt: Date.now() + i,
                                 lastError: `Rate limited (effective delay: ${i}ms)`
-                            }), void pun.info(`Rate limited for ${t}, waiting ${i}ms (server: ${s.retryAfterMs}ms, local: ${r}ms, attempt ${n})`)
+                            }), void fun.info(`Rate limited for ${t}, waiting ${i}ms (server: ${s.retryAfterMs}ms, local: ${r}ms, attempt ${n})`)
                         }
                         case "unauthenticated":
-                            return pun.error(`Upload failed (unauthenticated): ${s.message}`), void this.applyBackoff(t, `unauthenticated: ${s.message}`);
+                            return fun.error(`Upload failed (unauthenticated): ${s.message}`), void this.applyBackoff(t, `unauthenticated: ${s.message}`);
                         case "success":
                         case "alreadyExists":
                             break;
                         default: {
                             const e = s;
-                            return pun.error(`Unknown upload result type: ${JSON.stringify(e)}`), void this.applyBackoff(t, "unknown upload result")
+                            return fun.error(`Unknown upload result type: ${JSON.stringify(e)}`), void this.applyBackoff(t, "unknown upload result")
                         }
                     }
-                    pun.debug(`processCodebase: registering ${r.commits.length} snapshots for ${t}`);
+                    fun.debug(`processCodebase: registering ${r.commits.length} snapshots for ${t}`);
                     const i = await this.registerSnapshots(t, r);
                     if (i.lastSuccess) {
                         const e = await this.snapshotManager.markRegistered(t, i.lastSuccess);
-                        if ("advanced" !== e && "already_at_or_past" !== e) return pun.error(`processCodebase: markRegistered returned ${e} for ${i.lastSuccess} — pointer not advanced`), void this.applyBackoff(t, `markRegistered: ${e}`);
-                        pun.info(`processCodebase: marked ${i.lastSuccess} as registered (${e}) for ${t}`)
+                        if ("advanced" !== e && "already_at_or_past" !== e) return fun.error(`processCodebase: markRegistered returned ${e} for ${i.lastSuccess} — pointer not advanced`), void this.applyBackoff(t, `markRegistered: ${e}`);
+                        fun.info(`processCodebase: marked ${i.lastSuccess} as registered (${e}) for ${t}`)
                     }
-                    i.failedCommit ? (i.permissionDenied && this.codebaseRegistrationService.forget(t), this.applyBackoff(t, `registerSnapshot(${i.failedCommit}): ${i.errorMessage}`)) : i.lastSuccess ? this.clearBackoff(t) : (this.applyBackoff(t, "No snapshots registered (empty commits?)"), pun.warn(`processCodebase: no snapshots registered for ${t}`))
+                    i.failedCommit ? (i.permissionDenied && this.codebaseRegistrationService.forget(t), this.applyBackoff(t, `registerSnapshot(${i.failedCommit}): ${i.errorMessage}`)) : i.lastSuccess ? this.clearBackoff(t) : (this.applyBackoff(t, "No snapshots registered (empty commits?)"), fun.warn(`processCodebase: no snapshots registered for ${t}`))
                 } finally {
                     try {
                         await this.snapshotManager.cleanupPackfile(t, r.path)
                     } catch (e) {
                         const n = e instanceof Error ? e.message : String(e);
-                        pun.warn(`processCodebase: cleanupPackfile failed for ${t}: ${n}`)
+                        fun.warn(`processCodebase: cleanupPackfile failed for ${t}: ${n}`)
                     }
-                } else pun.debug(`processCodebase: no pending commits for ${t}, skipping`)
+                } else fun.debug(`processCodebase: no pending commits for ${t}, skipping`)
             }
             async registerSnapshots(e, t) {
                 let n;
                 for (const r of t.commits) try {
-                    const t = r.metadata?.reason ? bln(r.metadata.reason) : 0,
+                    const t = r.metadata?.reason ? qln(r.metadata.reason) : 0,
                         s = await this.grpcClient.registerSnapshot(e, r.commitHash, r.treeHash, t);
                     switch (s.type) {
                         case "success":
                         case "alreadyExists":
                             break;
                         case "permissionDenied":
-                            return pun.warn(`Permission denied registering snapshot ${r.commitHash} for codebase ${e}`), {
+                            return fun.warn(`Permission denied registering snapshot ${r.commitHash} for codebase ${e}`), {
                                 lastSuccess: n,
                                 failedCommit: r.commitHash,
                                 errorMessage: "Permission denied (codebase registration may be stale)",
@@ -363332,7 +363366,7 @@
                             };
                         default: {
                             const e = s;
-                            return pun.error(`Unknown register result: ${JSON.stringify(e)}`), {
+                            return fun.error(`Unknown register result: ${JSON.stringify(e)}`), {
                                 lastSuccess: n,
                                 failedCommit: r.commitHash,
                                 errorMessage: "Unknown result type"
@@ -363344,8 +363378,8 @@
                     const {
                         message: t,
                         stack: s
-                    } = hun(e);
-                    return pun.error(`Failed to register ${r.commitHash}: ${t}`, s), {
+                    } = _un(e);
+                    return fun.error(`Failed to register ${r.commitHash}: ${t}`, s), {
                         lastSuccess: n,
                         failedCommit: r.commitHash,
                         errorMessage: t
@@ -363366,22 +363400,22 @@
             applyBackoff(e, t) {
                 const n = this.backoffState.get(e),
                     r = (n?.consecutiveFailures ?? 0) + 1,
-                    s = Fln(r, fun);
+                    s = bln(r, gun);
                 this.backoffState.set(e, {
                     consecutiveFailures: r,
                     nextRetryAt: Date.now() + s,
                     lastError: t
-                }), pun.info(`Applied backoff for ${e}: ${s}ms (attempt ${r}, error: ${t})`)
+                }), fun.info(`Applied backoff for ${e}: ${s}ms (attempt ${r}, error: ${t})`)
             }
             clearBackoff(e) {
-                this.backoffState.has(e) && (pun.debug(`Cleared backoff for ${e}`), this.backoffState.delete(e))
+                this.backoffState.has(e) && (fun.debug(`Cleared backoff for ${e}`), this.backoffState.delete(e))
             }
             dispose() {
                 this.periodicRunner.dispose()
             }
         }
 
-        function hun(e) {
+        function _un(e) {
             return e instanceof Error ? {
                 message: e.message,
                 stack: e.stack
@@ -363389,8 +363423,8 @@
                 message: String(e)
             }
         }
-        const _un = Yo.scoped("StateStore");
-        class Tun {
+        const Tun = Yo.scoped("StateStore");
+        class Aun {
             constructor(e) {
                 this.memento = e.memento, this.prefix = e.prefix, this.toEntity = e.toEntity, this.fromEntity = e.fromEntity
             }
@@ -363412,9 +363446,9 @@
                 return this.keys().map(e => this.get(e)).filter(e => void 0 !== e)
             }
         }
-        class Aun {
+        class wun {
             constructor(e) {
-                this.memento = e.workspaceState, this.codebases = new Tun({
+                this.memento = e.workspaceState, this.codebases = new Aun({
                     memento: this.memento,
                     prefix: "codebaseTelemetry:codebases:",
                     toEntity: (e, t) => ({
@@ -363453,18 +363487,18 @@
                         await WTt.rm(n, {
                             recursive: !0,
                             force: !0
-                        }), _un.info(`Deleted shadow repo directory ${n}`), await this.codebases.delete(t), _un.info(`Deleted legacy codebase ${t}`)
+                        }), Tun.info(`Deleted shadow repo directory ${n}`), await this.codebases.delete(t), Tun.info(`Deleted legacy codebase ${t}`)
                     } catch (e) {
-                        _un.warn(`Failed to clean up legacy codebase ${t}`, e)
+                        Tun.warn(`Failed to clean up legacy codebase ${t}`, e)
                     }
                 }
             }
         }
-        const wun = Yo.scoped("CodebaseTelemetryService");
+        const kun = Yo.scoped("CodebaseTelemetryService");
 
-        function kun(e, t) {
+        function yun(e, t) {
             if (ta.localMode) {
-                wun.info("Local mode enabled — codebase telemetry disabled");
+                kun.info("Local mode enabled — codebase telemetry disabled");
                 const e = ca.commands.registerCommand("cursor.codebaseTelemetry.triggerSnapshot", () => {});
                 return {
                     dispose() {
@@ -363478,7 +363512,7 @@
                     return _i.dirname(_i.dirname(_i.dirname(t)))
                 }(e), "snapshots")
             }(e);
-            return wun.info(`Registering Codebase Telemetry with snapshotsBaseDir: ${n}`), new Xmn(async (s, i, a) => {
+            return kun.info(`Registering Codebase Telemetry with snapshotsBaseDir: ${n}`), new $mn(async (s, i, a) => {
                 const o = new r.CodebaseSnapshotClient({
                     snapshotsBaseDir: n,
                     otlpConfig: a
@@ -363493,9 +363527,9 @@
                                     n = e.name,
                                     r = e.value,
                                     s = e.tags;
-                                if ("string" != typeof n || !n.startsWith(nun)) return;
+                                if ("string" != typeof n || !n.startsWith(run)) return;
                                 if ("number" != typeof r || !Number.isFinite(r)) return;
-                                const i = sun();
+                                const i = iun();
                                 if (s && "object" == typeof s && !Array.isArray(s))
                                     for (const [e, t] of Object.entries(s)) "string" == typeof t && (i[e] = t);
                                 switch (t) {
@@ -363525,7 +363559,7 @@
                     }
                 });
                 o.updateCursorAuthToken(ca.cursor.getCursorAuthToken());
-                const l = new yun(n, new Aun(e), o, new Dmn(e), t, s, i);
+                const l = new Eun(n, new wun(e), o, new xmn(e), t, s, i);
                 try {
                     await l.initialize()
                 } catch (e) {
@@ -363534,44 +363568,44 @@
                 return l
             })
         }
-        class yun {
+        class Eun {
             constructor(e, t, n, r, s, i, a) {
-                this.snapshotsBaseDir = e, this.stateStore = t, this.authTokenChannel = a, this.disposables = [], this.isDisposed = !1, this.gitHistoryGateEnabled = !1, this.packfileService = new dun(r), this.codebaseRegistrationService = new Qln(r), this.snapshotManager = new Omn(n), this.workspaceManager = new Zmn(this.snapshotManager, t, i), this.uploadScheduler = new gun(this.snapshotManager, this.packfileService, this.codebaseRegistrationService, r), this.watcherService = s, this.agentDotDirsReconciler = new Oln(this.workspaceManager, this.watcherService, this), this.disposables.push(r), this.disposables.push(this.snapshotManager), this.disposables.push(this.workspaceManager), this.disposables.push(this.codebaseRegistrationService), this.disposables.push(this.uploadScheduler), this.disposables.push(this.agentDotDirsReconciler), this.disposables.push(this.authTokenChannel.onRefresh(e => n.updateCursorAuthToken(e)))
+                this.snapshotsBaseDir = e, this.stateStore = t, this.authTokenChannel = a, this.disposables = [], this.isDisposed = !1, this.gitHistoryGateEnabled = !1, this.packfileService = new pun(r), this.codebaseRegistrationService = new Gln(r), this.snapshotManager = new Umn(n), this.workspaceManager = new eun(this.snapshotManager, t, i), this.uploadScheduler = new hun(this.snapshotManager, this.packfileService, this.codebaseRegistrationService, r), this.watcherService = s, this.agentDotDirsReconciler = new Uln(this.workspaceManager, this.watcherService, this), this.disposables.push(r), this.disposables.push(this.snapshotManager), this.disposables.push(this.workspaceManager), this.disposables.push(this.codebaseRegistrationService), this.disposables.push(this.uploadScheduler), this.disposables.push(this.agentDotDirsReconciler), this.disposables.push(this.authTokenChannel.onRefresh(e => n.updateCursorAuthToken(e)))
             }
             async initialize() {
-                wun.info("initialize: starting");
+                kun.info("initialize: starting");
                 const e = Date.now();
                 await this.stateStore.deleteLegacyCodebases(this.snapshotsBaseDir), await this.workspaceManager.initialize(), this.uploadScheduler.start(), this.disposables.push(this.watcherService.registerClient(this));
                 const t = Date.now() - e;
-                wun.info(`initialize: finished in ${t}ms`)
+                kun.info(`initialize: finished in ${t}ms`)
             }
             async reconcile(e) {
                 if (this.isDisposed) return;
                 const t = await Promise.allSettled([this.agentDotDirsReconciler.reconcile(e.agentDotDirs), this.reconcileGitHistory(e.gitHistory)]);
-                for (const e of t) "rejected" === e.status && wun.error("Per-feature reconcile failed", e.reason)
+                for (const e of t) "rejected" === e.status && kun.error("Per-feature reconcile failed", e.reason)
             }
             async reconcileGitHistory(e) {
                 if (!(this.isDisposed || void 0 === e || e === this.gitHistoryGateEnabled && (e && void 0 !== this.gitHistoryUploader || !e && void 0 === this.gitHistoryUploader)))
-                    if (this.gitHistoryGateEnabled = e, wun.info("reconcileGitHistory: gate " + (e ? "enabled" : "disabled")), e) try {
+                    if (this.gitHistoryGateEnabled = e, kun.info("reconcileGitHistory: gate " + (e ? "enabled" : "disabled")), e) try {
                         if (void 0 !== this.gitHistoryUploader) return;
-                        this.gitHistoryUploader = new aun(this.snapshotManager, this.codebaseRegistrationService, this.snapshotsBaseDir, this.authTokenChannel)
+                        this.gitHistoryUploader = new oun(this.snapshotManager, this.codebaseRegistrationService, this.snapshotsBaseDir, this.authTokenChannel)
                     } catch (e) {
-                        wun.error("reconcileGitHistory: failed to start Git history uploader", e)
+                        kun.error("reconcileGitHistory: failed to start Git history uploader", e)
                     } else this.disposeGitHistoryUploader()
             }
             disposeGitHistoryUploader() {
                 if (void 0 !== this.gitHistoryUploader) try {
                     this.gitHistoryUploader.dispose()
                 } catch (e) {
-                    wun.warn("disposeGitHistoryUploader: failed to dispose Git history uploader", e)
+                    kun.warn("disposeGitHistoryUploader: failed to dispose Git history uploader", e)
                 } finally {
                     this.gitHistoryUploader = void 0
                 }
             }
             async triggerSnapshot(e) {
-                if (this.isDisposed) return void wun.warn("triggerSnapshot: service already disposed, skipping");
+                if (this.isDisposed) return void kun.warn("triggerSnapshot: service already disposed, skipping");
                 const t = this.snapshotManager.getCodebaseCount();
-                wun.info("triggerSnapshot", {
+                kun.info("triggerSnapshot", {
                     reason: e.reason.type,
                     requestId: "requestId" in e.reason ? e.reason.requestId : void 0,
                     codebaseCount: t
@@ -363580,11 +363614,11 @@
                     await this.snapshotManager.snapshot(t.codebaseUuid, e.reason)
                 } catch (e) {
                     const n = e instanceof Error ? e.message : String(e);
-                    wun.error(`commit failed for ${t.path}: ${n}`)
+                    kun.error(`commit failed for ${t.path}: ${n}`)
                 }
             }
             async triggerGitHistoryCapture() {
-                this.isDisposed ? wun.warn("triggerGitHistoryCapture: service already disposed, skipping") : void 0 !== this.gitHistoryUploader && await this.gitHistoryUploader.runOnce()
+                this.isDisposed ? kun.warn("triggerGitHistoryCapture: service already disposed, skipping") : void 0 !== this.gitHistoryUploader && await this.gitHistoryUploader.runOnce()
             }
             onDidCreate(e) {
                 this.isDisposed || this.snapshotManager.queueChange({
@@ -363607,35 +363641,35 @@
                 for (let t = e.length - 1; t >= 0; t--) try {
                     e[t].dispose()
                 } catch (e) {
-                    wun.error("Error disposing child resource", e)
+                    kun.error("Error disposing child resource", e)
                 }
             }
             dispose() {
                 if (this.isDisposed) return;
                 const e = Date.now();
-                wun.info("dispose: starting (flush)"), this.isDisposed = !0, this.disposeChildren(), wun.info(`dispose: finished (flush) in ${Date.now()-e}ms`)
+                kun.info("dispose: starting (flush)"), this.isDisposed = !0, this.disposeChildren(), kun.info(`dispose: finished (flush) in ${Date.now()-e}ms`)
             }
             disposeFast() {
                 if (this.isDisposed) return;
                 const e = Date.now();
-                wun.info("dispose: starting (fast)"), this.isDisposed = !0, this.snapshotManager.disposeFast(), this.disposeGitHistoryUploader(), this.disposeChildren(), wun.info(`dispose: finished (fast) in ${Date.now()-e}ms`)
+                kun.info("dispose: starting (fast)"), this.isDisposed = !0, this.snapshotManager.disposeFast(), this.disposeGitHistoryUploader(), this.disposeChildren(), kun.info(`dispose: finished (fast) in ${Date.now()-e}ms`)
             }
         }
-        const Eun = "cursor-retrieval-state-version";
-        let Sun;
-        async function vun(e) {
+        const Sun = "cursor-retrieval-state-version";
+        let vun;
+        async function Iun(e) {
             const t = performance.now();
             Mo.init(), Uo.init(), Qo.init(), Go.init(), e.isDevelopment && (Yo.init(), Ho.init()),
                 function(e) {
-                    if (0 === e.workspaceState.get(Eun, 0)) {
+                    if (0 === e.workspaceState.get(Sun, 0)) {
                         const t = e.workspaceState.keys();
                         for (const n of t) e.workspaceState.update(n, void 0);
-                        e.workspaceState.update(Eun, 1)
+                        e.workspaceState.update(Sun, 1)
                     }
                 }(e);
-            const n = new wln(e);
+            const n = new kln(e);
             e.subscriptions.push(n);
-            const s = await (void 0 === Sun && (Sun = Promise.resolve(ca.cursor.getCursorExtensionsIsolationEnabled()).catch(() => !1)), Sun);
+            const s = await (void 0 === vun && (vun = Promise.resolve(ca.cursor.getCursorExtensionsIsolationEnabled()).catch(() => !1)), vun);
             let i, a;
             if (!s) try {
                 i = await nsn()
@@ -363643,7 +363677,7 @@
                 Ho.error("Failed to get Git API", e)
             }
             s || (a = new cTt(e), e.subscriptions.push(a));
-            const o = new _sn(e, i, s, a);
+            const o = new Tsn(e, i, s, a);
             await new Promise(e => setImmediate(e)), o.registerProviders(), e.subscriptions.push(o);
             const m = o.getGitContextProvider();
             if (m && !ta.localMode) {
@@ -363651,15 +363685,15 @@
                 t && e.subscriptions.push(t)
             }
             if (!s && void 0 !== a) {
-                const t = new vsn(e);
+                const t = new Isn(e);
                 e.subscriptions.push(t);
-                const n = new Iln(e, t, a, i);
+                const n = new Bln(e, t, a, i);
                 e.subscriptions.push(n)
             }
-            const u = new Psn;
+            const u = new Lsn;
             e.subscriptions.push(u);
-            const c = new Dsn(e, u, t);
-            if (e.subscriptions.push(c), e.subscriptions.push(ca.workspace.registerTextSearchProvider2("file-indexed", c)), e.subscriptions.push(ca.cursor.registerGrepProvider(c)), e.subscriptions.push(kun(e, u)), pTt(aa.GetLineCounts, async t => {
+            const c = new xsn(e, u, t);
+            if (e.subscriptions.push(c), e.subscriptions.push(ca.workspace.registerTextSearchProvider2("file-indexed", c)), e.subscriptions.push(ca.cursor.registerGrepProvider(c)), e.subscriptions.push(yun(e, u)), pTt(aa.GetLineCounts, async t => {
                     const n = {};
                     return await Promise.all(t.uris.map(async t => {
                         try {
@@ -363702,7 +363736,7 @@
                         suggestedShell: n,
                         userHomeDir: yi.homedir()
                     }
-                }), ysn(), !s && i) {
+                }), Esn(), !s && i) {
                 const t = 5e3,
                     n = new Map,
                     r = e => {
@@ -363776,7 +363810,7 @@
                     return Mo.error("Error building codemap:", e), ""
                 }
             });
-            const d = new Nsn(e, s);
+            const d = new Rsn(e, s);
             e.subscriptions.push(d)
         }
     })();
@@ -363786,4 +363820,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/extensions/cursor-retrieval/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-retrieval/dist/main.js.map

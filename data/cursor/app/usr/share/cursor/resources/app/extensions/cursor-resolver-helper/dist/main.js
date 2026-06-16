@@ -43061,7 +43061,7 @@
     let IL = PL;
     const RL = class e extends q {
         constructor(e) {
-            super(), this.rules = [], this.repositoryInfo = [], this.tools = [], this.gitRepos = [], this.projectLayouts = [], this.mcpInstructions = [], this.fileContents = {}, this.customSubagents = [], this.agentSkills = [], this.precomputedHumanChanges = [], this.nonFileRules = [], je.util.initPartial(e, this)
+            super(), this.rules = [], this.repositoryInfo = [], this.tools = [], this.gitRepos = [], this.projectLayouts = [], this.mcpInstructions = [], this.fileContents = {}, this.customSubagents = [], this.agentSkills = [], this.precomputedHumanChanges = [], this.nonFileRules = [], this.disabledTeamRules = [], je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -43336,6 +43336,12 @@
         kind: "message",
         T: NL,
         opt: !0
+    }, {
+        no: 49,
+        name: "disabled_team_rules",
+        kind: "scalar",
+        T: 9,
+        repeated: !0
     }]);
     let LL = RL;
     const FL = class e extends q {
@@ -97056,6 +97062,12 @@
     }, {
         no: 3,
         name: "increases_model_cost",
+        kind: "scalar",
+        T: 8,
+        opt: !0
+    }, {
+        no: 4,
+        name: "blocked_by_admin_allowlist",
         kind: "scalar",
         T: 8,
         opt: !0
@@ -168451,4 +168463,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/extensions/cursor-resolver-helper/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-resolver-helper/dist/main.js.map

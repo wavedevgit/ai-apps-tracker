@@ -53177,7 +53177,7 @@
     let nM = tM;
     const rM = class e extends b {
         constructor(e) {
-            super(), this.rules = [], this.repositoryInfo = [], this.tools = [], this.gitRepos = [], this.projectLayouts = [], this.mcpInstructions = [], this.fileContents = {}, this.customSubagents = [], this.agentSkills = [], this.precomputedHumanChanges = [], this.nonFileRules = [], nt.util.initPartial(e, this)
+            super(), this.rules = [], this.repositoryInfo = [], this.tools = [], this.gitRepos = [], this.projectLayouts = [], this.mcpInstructions = [], this.fileContents = {}, this.customSubagents = [], this.agentSkills = [], this.precomputedHumanChanges = [], this.nonFileRules = [], this.disabledTeamRules = [], nt.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -53452,6 +53452,12 @@
         kind: "message",
         T: QD,
         opt: !0
+    }, {
+        no: 49,
+        name: "disabled_team_rules",
+        kind: "scalar",
+        T: 9,
+        repeated: !0
     }]);
     let sM = rM;
     const iM = class e extends b {
@@ -115735,4 +115741,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/extensions/cursor-agent-worker/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-agent-worker/dist/main.js.map

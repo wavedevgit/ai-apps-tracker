@@ -63167,7 +63167,7 @@
         let kO = IO;
         const CO = class e extends je {
             constructor(e) {
-                super(), this.rules = [], this.repositoryInfo = [], this.tools = [], this.gitRepos = [], this.projectLayouts = [], this.mcpInstructions = [], this.fileContents = {}, this.customSubagents = [], this.agentSkills = [], this.precomputedHumanChanges = [], this.nonFileRules = [], hn.util.initPartial(e, this)
+                super(), this.rules = [], this.repositoryInfo = [], this.tools = [], this.gitRepos = [], this.projectLayouts = [], this.mcpInstructions = [], this.fileContents = {}, this.customSubagents = [], this.agentSkills = [], this.precomputedHumanChanges = [], this.nonFileRules = [], this.disabledTeamRules = [], hn.util.initPartial(e, this)
             }
             static fromBinary(t, n) {
                 return (new e).fromBinary(t, n)
@@ -63442,6 +63442,12 @@
             kind: "message",
             T: wO,
             opt: !0
+        }, {
+            no: 49,
+            name: "disabled_team_rules",
+            kind: "scalar",
+            T: 9,
+            repeated: !0
         }]);
         let SO = CO;
         const JO = class e extends je {
@@ -104025,6 +104031,12 @@
             kind: "scalar",
             T: 8,
             opt: !0
+        }, {
+            no: 4,
+            name: "blocked_by_admin_allowlist",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         let vAe = NAe;
         const RAe = class e extends je {
@@ -119639,4 +119651,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/extensions/cursor-commits/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-commits/dist/main.js.map

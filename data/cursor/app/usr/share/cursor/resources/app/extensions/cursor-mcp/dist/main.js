@@ -83475,6 +83475,7 @@
             userPermissionsAutoRun;
             projectPermissionsAutoRun;
             adminPermissionsAutoRun;
+            disabledTeamRules = [];
             constructor(e) {
                 super(), Ru.proto3.util.initPartial(e, this)
             }
@@ -83740,6 +83741,12 @@
                 kind: "message",
                 T: hz,
                 opt: !0
+            }, {
+                no: 49,
+                name: "disabled_team_rules",
+                kind: "scalar",
+                T: 9,
+                repeated: !0
             }]);
             static fromBinary(e, t) {
                 return (new yz).fromBinary(e, t)
@@ -115369,4 +115376,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/776d1f9d76df50a4e0aeca61819a88e7c1b861e0/extensions/cursor-mcp/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-mcp/dist/main.js.map
