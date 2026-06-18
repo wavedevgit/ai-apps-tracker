@@ -661,7 +661,7 @@
                     w = i(1398),
                     b = s(i(5607)),
                     C = i(3193),
-                    v = i(9936),
+                    v = i(3901),
                     k = 3e4;
                 let R;
 
@@ -3038,7 +3038,7 @@
                     }, t);
                     let b;
                     try {
-                        b = await (0, E.createIPCServer)(e.storagePath)
+                        b = await (0, E.createIPCServer)(e.storagePath, e.secrets)
                     } catch (e) {
                         t.error(`[main] Failed to create git IPC: ${e}`)
                     }
@@ -5259,25 +5259,37 @@
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.IPCServer = void 0, t.createIPCServer = async function(e) {
-                    const t = c.createServer(),
-                        i = d.createHash("sha256");
-                    if (e) i.update(e);
+                }), t.IPCServer = void 0, t.createIPCServer = async function(e, t) {
+                    const i = c.createServer(),
+                        r = d.createHash("sha256");
+                    if (e) r.update(e);
                     else {
                         const e = await new Promise((e, t) => d.randomBytes(20, (i, r) => i ? t(i) : e(r)));
-                        i.update(e)
+                        r.update(e)
                     }
-                    const r = (n = i.digest("hex").substring(0, 10), "win32" === process.platform ? `\\\\.\\pipe\\vscode-git-${n}-sock` : "darwin" !== process.platform && process.env.XDG_RUNTIME_DIR ? l.join(process.env.XDG_RUNTIME_DIR, `vscode-git-${n}.sock`) : l.join(h.tmpdir(), `vscode-git-${n}.sock`)),
-                        o = d.randomBytes(32).toString("hex");
-                    var n;
+                    const o = (s = r.digest("hex").substring(0, 10), "win32" === process.platform ? `\\\\.\\pipe\\vscode-git-${s}-sock` : "darwin" !== process.platform && process.env.XDG_RUNTIME_DIR ? l.join(process.env.XDG_RUNTIME_DIR, `vscode-git-${s}.sock`) : l.join(h.tmpdir(), `vscode-git-${s}.sock`)),
+                        n = await async function(e, t) {
+                            if (!e || !t) return d.randomBytes(32).toString("hex");
+                            const i = `${p}${e}`;
+                            try {
+                                const e = await t.get(i);
+                                if (e && m.test(e)) return e
+                            } catch {}
+                            const r = d.randomBytes(32).toString("hex");
+                            try {
+                                await t.store(i, r)
+                            } catch {}
+                            return r
+                        }(e, t);
+                    var s;
                     if ("win32" !== process.platform) try {
-                        await u.promises.unlink(r)
+                        await u.promises.unlink(o)
                     } catch {}
-                    return new Promise((e, i) => {
+                    return new Promise((e, t) => {
                         try {
-                            t.on("error", e => i(e)), t.listen(r), e(new p(t, r, o))
+                            i.on("error", e => t(e)), i.listen(o), e(new g(i, o, n))
                         } catch (e) {
-                            i(e)
+                            t(e)
                         }
                     })
                 };
@@ -5286,8 +5298,10 @@
                     c = s(i(8611)),
                     h = s(i(857)),
                     u = s(i(9896)),
-                    d = s(i(6982));
-                class p {
+                    d = s(i(6982)),
+                    p = "git-ipc-auth-token:",
+                    m = /^[a-f0-9]{64}$/;
+                class g {
                     get ipcHandlePath() {
                         return this._ipcHandlePath
                     }
@@ -5328,7 +5342,7 @@
                         this.handlers.clear(), this.server.close(), this._ipcHandlePath && "win32" !== process.platform && u.unlinkSync(this._ipcHandlePath)
                     }
                 }
-                t.IPCServer = p
+                t.IPCServer = g
             },
             3804: (e, t, i) => {
                 "use strict";
@@ -5430,6 +5444,869 @@
                 }), Object.defineProperty(n, "mimeTypes", {
                     get: () => o.mimeTypes
                 }), e.exports = n
+            },
+            3901: (e, t, i) => {
+                "use strict";
+                i.r(t), i.d(t, {
+                    CancelledError: () => N,
+                    GIT_STDERR_LOG_CAP: () => n,
+                    GitError: () => c,
+                    GitErrorCodes: () => l,
+                    GitSpawner: () => F,
+                    appendGitDiagnostics: () => s,
+                    checkFilesGenerated: () => x,
+                    checkGitattributes: () => T,
+                    cpErrorHandler: () => u,
+                    dispose: () => b,
+                    findGit: () => A,
+                    findGitSimple: () => _,
+                    getGitErrorCode: () => h,
+                    isDescendant: () => k,
+                    isGenerated: () => M,
+                    isGeneratedContent: () => B,
+                    isGeneratedPath: () => I,
+                    isMacintosh: () => y,
+                    isWindows: () => f,
+                    parseGitDiagnostics: () => a,
+                    parseVersion: () => C,
+                    pathEquals: () => v,
+                    relativePath: () => R,
+                    sanitizePath: () => g,
+                    toDisposable: () => w
+                });
+                const r = " [git: ",
+                    o = / \[git: ([^\]]*)\]/,
+                    n = 2048;
+
+                function s(e, t, i) {
+                    if ("object" != typeof t || null === t) return e;
+                    if (o.test(e)) return e;
+                    const s = t,
+                        a = [];
+                    if ("string" == typeof s.gitErrorCode && s.gitErrorCode.length > 0 && a.push(`gitErrorCode=${s.gitErrorCode}`), "number" == typeof s.exitCode && Number.isFinite(s.exitCode) && a.push(`exitCode=${s.exitCode}`), 0 === a.length) return e;
+                    let l = `${e}${r}${a.join(" ")}]`;
+                    var c;
+                    return !0 === (null == i ? void 0 : i.includeStderr) && "string" == typeof s.stderr && s.stderr.length > 0 && (l += `\n--- git stderr ---\n${c=s.stderr,c.length<=n?c:`${c.slice(0,n)}… [truncated to ${n} chars]`}`), l
+                }
+
+                function a(e) {
+                    const t = e.match(o);
+                    if (null === t) return {};
+                    const i = {};
+                    for (const e of t[1].split(" ")) {
+                        const t = e.indexOf("=");
+                        if (-1 === t) continue;
+                        const r = e.slice(0, t),
+                            o = e.slice(t + 1);
+                        if ("gitErrorCode" === r && o.length > 0) i.gitErrorCode = o;
+                        else if ("exitCode" === r) {
+                            const e = Number(o);
+                            Number.isInteger(e) && (i.exitCode = e)
+                        }
+                    }
+                    return i
+                }
+                const l = {
+                    BadConfigFile: "BadConfigFile",
+                    AuthenticationFailed: "AuthenticationFailed",
+                    NoUserNameConfigured: "NoUserNameConfigured",
+                    NoUserEmailConfigured: "NoUserEmailConfigured",
+                    NoRemoteRepositorySpecified: "NoRemoteRepositorySpecified",
+                    NotAGitRepository: "NotAGitRepository",
+                    NotAtRepositoryRoot: "NotAtRepositoryRoot",
+                    Conflict: "Conflict",
+                    StashConflict: "StashConflict",
+                    UnmergedChanges: "UnmergedChanges",
+                    PushRejected: "PushRejected",
+                    ForcePushWithLeaseRejected: "ForcePushWithLeaseRejected",
+                    ForcePushWithLeaseIfIncludesRejected: "ForcePushWithLeaseIfIncludesRejected",
+                    RemoteConnectionError: "RemoteConnectionError",
+                    DirtyWorkTree: "DirtyWorkTree",
+                    CantOpenResource: "CantOpenResource",
+                    GitNotFound: "GitNotFound",
+                    CantCreatePipe: "CantCreatePipe",
+                    PermissionDenied: "PermissionDenied",
+                    CantAccessRemote: "CantAccessRemote",
+                    RepositoryNotFound: "RepositoryNotFound",
+                    RepositoryIsLocked: "RepositoryIsLocked",
+                    BranchNotFullyMerged: "BranchNotFullyMerged",
+                    NoRemoteReference: "NoRemoteReference",
+                    InvalidBranchName: "InvalidBranchName",
+                    BranchAlreadyExists: "BranchAlreadyExists",
+                    NoLocalChanges: "NoLocalChanges",
+                    NoStashFound: "NoStashFound",
+                    LocalChangesOverwritten: "LocalChangesOverwritten",
+                    NoUpstreamBranch: "NoUpstreamBranch",
+                    IsInSubmodule: "IsInSubmodule",
+                    WrongCase: "WrongCase",
+                    CantLockRef: "CantLockRef",
+                    CantRebaseMultipleBranches: "CantRebaseMultipleBranches",
+                    PatchDoesNotApply: "PatchDoesNotApply",
+                    NoPathFound: "NoPathFound",
+                    UnknownPath: "UnknownPath",
+                    EmptyCommitMessage: "EmptyCommitMessage",
+                    BranchFastForwardRejected: "BranchFastForwardRejected",
+                    BranchNotYetBorn: "BranchNotYetBorn",
+                    TagConflict: "TagConflict",
+                    CherryPickEmpty: "CherryPickEmpty",
+                    CherryPickConflict: "CherryPickConflict",
+                    WorktreeContainsChanges: "WorktreeContainsChanges",
+                    WorktreeAlreadyExists: "WorktreeAlreadyExists",
+                    WorktreeBranchAlreadyUsed: "WorktreeBranchAlreadyUsed"
+                };
+                class c extends Error {
+                    constructor(e) {
+                        var t;
+                        super((null === (t = e.error) || void 0 === t ? void 0 : t.message) || e.message || "Git error"), this.error = e.error, this.stdout = e.stdout, this.stderr = e.stderr, this.exitCode = e.exitCode, this.gitErrorCode = e.gitErrorCode, this.gitCommand = e.gitCommand, this.gitArgs = e.gitArgs
+                    }
+                    toString() {
+                        let e = this.message + " " + JSON.stringify({
+                            exitCode: this.exitCode,
+                            gitErrorCode: this.gitErrorCode,
+                            gitCommand: this.gitCommand,
+                            stdout: this.stdout,
+                            stderr: this.stderr
+                        }, null, 2);
+                        return this.error && (e += this.error.stack), e
+                    }
+                }
+
+                function h(e) {
+                    return /Another git process seems to be running in this repository|If no other git process is currently running/.test(e) ? l.RepositoryIsLocked : /Authentication failed/i.test(e) ? l.AuthenticationFailed : /Not a git repository/i.test(e) ? l.NotAGitRepository : /bad config file/.test(e) ? l.BadConfigFile : /cannot make pipe for command substitution|cannot create standard input pipe/.test(e) ? l.CantCreatePipe : /Repository not found/.test(e) ? l.RepositoryNotFound : /unable to access/.test(e) ? l.CantAccessRemote : /branch '.+' is not fully merged/.test(e) ? l.BranchNotFullyMerged : /Couldn't find remote ref/.test(e) ? l.NoRemoteReference : /A branch named '.+' already exists/.test(e) ? l.BranchAlreadyExists : /'.+' is not a valid branch name/.test(e) ? l.InvalidBranchName : /Please,? commit your changes or stash them/.test(e) ? l.DirtyWorkTree : /contains modified or untracked files|use --force to delete it/.test(e) ? l.WorktreeContainsChanges : /fatal: '[^']+' already exists/.test(e) ? l.WorktreeAlreadyExists : /is already used by worktree at/.test(e) ? l.WorktreeBranchAlreadyUsed : void 0
+                }
+
+                function u(e) {
+                    return t => {
+                        /ENOENT/.test(t.message) && (t = new c({
+                            error: t,
+                            message: "Failed to execute git (ENOENT)",
+                            gitErrorCode: l.NotAGitRepository
+                        })), e(t)
+                    }
+                }
+                const d = require("node:child_process"),
+                    p = require("node:path");
+                var m = i(493);
+
+                function g(e) {
+                    return e.replace(/^([a-z]):\\/i, (e, t) => `${t.toUpperCase()}:\\`)
+                }
+                const f = "win32" === process.platform,
+                    y = "darwin" === process.platform;
+
+                function w(e) {
+                    return {
+                        dispose: e
+                    }
+                }
+
+                function b(e) {
+                    for (const t of e) t.dispose()
+                }
+
+                function C(e) {
+                    return e.replace(/^git version /, "")
+                }
+
+                function v(e, t) {
+                    return f ? e.toLowerCase() === t.toLowerCase() : e === t
+                }
+
+                function k(e, t) {
+                    return f && (e = e.toLowerCase(), t = t.toLowerCase()), e === t || (e.charAt(e.length - 1) !== p.sep && (e += p.sep), t.startsWith(e))
+                }
+
+                function R(e, t) {
+                    return p.relative(e, t)
+                }
+                var E = function(e, t, i, r) {
+                    return new(i || (i = Promise))(function(o, n) {
+                        function s(e) {
+                            try {
+                                l(r.next(e))
+                            } catch (e) {
+                                n(e)
+                            }
+                        }
+
+                        function a(e) {
+                            try {
+                                l(r.throw(e))
+                            } catch (e) {
+                                n(e)
+                            }
+                        }
+
+                        function l(e) {
+                            var t;
+                            e.done ? o(e.value) : (t = e.value, t instanceof i ? t : new i(function(e) {
+                                e(t)
+                            })).then(s, a)
+                        }
+                        l((r = r.apply(e, t || [])).next())
+                    })
+                };
+
+                function S(e, t) {
+                    return new Promise((i, r) => {
+                        if (!t(e)) return r(new Error(`Path "${e}" is invalid.`));
+                        const o = [],
+                            n = d.spawn(e, ["--version"]);
+                        n.stdout.on("data", e => o.push(e)), n.on("error", u(r)), n.on("close", (t, n) => 0 !== t ? r(new Error(`Not found. Code: ${t}, Signal: ${n}`)) : i({
+                            path: e,
+                            version: C(Buffer.concat(o).toString("utf8").trim())
+                        }))
+                    })
+                }
+
+                function D(e, t) {
+                    return e ? S(p.join(e, "Git", "cmd", "git.exe"), t) : Promise.reject("Not found")
+                }
+
+                function A(e, t, i) {
+                    return E(this, void 0, void 0, function*() {
+                        for (const r of e) try {
+                            return yield S(r, t)
+                        } catch (e) {
+                            null == i || i.info(`Unable to find git on the PATH: "${r}". Error: ${e.message}`)
+                        }
+                        try {
+                            switch (process.platform) {
+                                case "darwin":
+                                    return yield function(e) {
+                                        return new Promise((t, i) => {
+                                            d.exec("which git", (r, o) => {
+                                                if (r) return i(new Error(`Executing "which git" failed: ${r.message}`));
+                                                const n = o.toString().trim();
+
+                                                function s(r) {
+                                                    if (!e(r)) return i(new Error(`Path "${r}" is invalid.`));
+                                                    const o = [],
+                                                        n = d.spawn(r, ["--version"]);
+                                                    n.stdout.on("data", e => o.push(e)), n.on("error", u(i)), n.on("close", (e, n) => 0 !== e ? i(new Error(`Executing "${r} --version" failed with code ${e}, signal ${n}`)) : t({
+                                                        path: r,
+                                                        version: C(Buffer.concat(o).toString("utf8").trim())
+                                                    }))
+                                                }
+                                                if ("/usr/bin/git" !== n) return s(n);
+                                                d.exec("xcode-select -p", e => {
+                                                    if (e && 2 === e.code) return i(new Error('Executing "xcode-select -p" failed with error code 2.'));
+                                                    s(n)
+                                                })
+                                            })
+                                        })
+                                    }(t);
+                                case "win32":
+                                    return yield function(e) {
+                                        return E(this, void 0, void 0, function*() {
+                                            return D(process.env.ProgramW6432, e).then(void 0, () => D(process.env["ProgramFiles(x86)"], e)).then(void 0, () => D(process.env.ProgramFiles, e)).then(void 0, () => D(p.join(process.env.LocalAppData, "Programs"), e)).then(void 0, () => function(e) {
+                                                return E(this, void 0, void 0, function*() {
+                                                    return S(yield m("git.exe"), e)
+                                                })
+                                            }(e))
+                                        })
+                                    }(t);
+                                default:
+                                    return yield S(yield m("git"), t)
+                            }
+                        } catch (e) {
+                            null == i || i.warn(`Unable to find git. Error: ${e.message}`)
+                        }
+                        throw new Error("Git installation not found.")
+                    })
+                }
+
+                function _() {
+                    return E(this, void 0, void 0, function*() {
+                        return A([], () => !0)
+                    })
+                }
+                var P = function(e, t, i, r) {
+                    return new(i || (i = Promise))(function(o, n) {
+                        function s(e) {
+                            try {
+                                l(r.next(e))
+                            } catch (e) {
+                                n(e)
+                            }
+                        }
+
+                        function a(e) {
+                            try {
+                                l(r.throw(e))
+                            } catch (e) {
+                                n(e)
+                            }
+                        }
+
+                        function l(e) {
+                            var t;
+                            e.done ? o(e.value) : (t = e.value, t instanceof i ? t : new i(function(e) {
+                                e(t)
+                            })).then(s, a)
+                        }
+                        l((r = r.apply(e, t || [])).next())
+                    })
+                };
+
+                function x(e) {
+                    return P(this, void 0, void 0, function*() {
+                        const {
+                            repoRoot: t,
+                            filePaths: i,
+                            getContent: r
+                        } = e, o = new Map;
+                        if (0 === i.length) return o;
+                        const n = yield T(t, i);
+                        return yield Promise.all(i.map(e => P(this, void 0, void 0, function*() {
+                            const t = n.get(e);
+                            if (!0 !== t)
+                                if (!1 !== t)
+                                    if (I(e)) o.set(e, {
+                                        isGenerated: !0,
+                                        source: "path-heuristic"
+                                    });
+                                    else {
+                                        if (r) {
+                                            const t = yield r(e);
+                                            if (void 0 !== t && B(e, t)) return void o.set(e, {
+                                                isGenerated: !0,
+                                                source: "content-heuristic"
+                                            })
+                                        }
+                                        o.set(e, {
+                                            isGenerated: !1,
+                                            source: "none"
+                                        })
+                                    }
+                            else o.set(e, {
+                                isGenerated: !1,
+                                source: "gitattributes"
+                            });
+                            else o.set(e, {
+                                isGenerated: !0,
+                                source: "gitattributes"
+                            })
+                        }))), o
+                    })
+                }
+
+                function T(e, t) {
+                    return P(this, void 0, void 0, function*() {
+                        const i = new Map;
+                        if (0 === t.length) return i;
+                        try {
+                            const r = yield new Promise((i, r) => {
+                                const o = (0, d.spawn)("git", ["check-attr", "linguist-generated", "--stdin"], {
+                                    cwd: e
+                                });
+                                let n = "";
+                                o.stdout.on("data", e => {
+                                    n += e.toString()
+                                }), o.stdin.write(`${t.join("\n")}\n`), o.stdin.end(), o.on("close", e => {
+                                    i(n)
+                                }), o.on("error", e => {
+                                    r(e)
+                                })
+                            });
+                            for (const e of r.trim().split("\n")) {
+                                const t = e.match(/^(.+): linguist-generated: (.+)$/);
+                                if (t) {
+                                    const e = t[1],
+                                        r = t[2];
+                                    "true" === r || "set" === r ? i.set(e, !0) : "false" !== r && "unset" !== r || i.set(e, !1)
+                                }
+                            }
+                        } catch (e) {}
+                        return i
+                    })
+                }
+
+                function M(e) {
+                    return P(this, void 0, void 0, function*() {
+                        const {
+                            filePath: t,
+                            getContent: i,
+                            gitattributesOverride: r
+                        } = e;
+                        if (void 0 !== r) return r;
+                        if (I(t)) return !0;
+                        if (i) {
+                            const e = yield i();
+                            if (void 0 !== e) return B(t, e)
+                        }
+                        return !1
+                    })
+                }
+
+                function I(e) {
+                    return new O(e).isGeneratedByPath()
+                }
+
+                function B(e, t) {
+                    return new O(e, () => t).isGeneratedByContent()
+                }
+                class O {
+                    constructor(e, t) {
+                        this.name = e, this.extname = p.extname(e).toLowerCase(), this.getContent = t
+                    }
+                    get lines() {
+                        var e;
+                        if (void 0 === this.cachedLines) {
+                            const t = null === (e = this.getContent) || void 0 === e ? void 0 : e.call(this);
+                            this.cachedLines = t ? t.split("\n") : []
+                        }
+                        return this.cachedLines
+                    }
+                    get data() {
+                        var e;
+                        return null === (e = this.getContent) || void 0 === e ? void 0 : e.call(this)
+                    }
+                    isGeneratedByPath() {
+                        return this.xcodeFile() || this.intellijFile() || this.cocoapods() || this.carthageBuild() || this.generatedGraphqlRelay() || this.generatedNetDesignerFile() || this.generatedNetSpecflowFeatureFile() || this.composerLock() || this.cargoLock() || this.cargoOrig() || this.denoLock() || this.flakeLock() || this.bazelLock() || this.nodeModules() || this.goVendor() || this.goLock() || this.packageResolved() || this.poetryLock() || this.pdmLock() || this.uvLock() || this.pixiLock() || this.esyLock() || this.npmShrinkwrapOrPackageLock() || this.pnpmLock() || this.bunLock() || this.terraformLock() || this.generatedYarnPlugnplay() || this.godeps() || this.generatedByZephir() || this.htmlcov() || this.gradleWrapper() || this.mavenWrapper() || this.pipenvLock() || this.generatedPascalTlb() || this.generatedSqlxQuery() || this.sourceMapByName()
+                    }
+                    isGeneratedByContent() {
+                        return !!this.getContent && (this.minifiedFiles() || this.hasSourceMap() || this.sourceMap() || this.compiledCoffeescript() || this.generatedParser() || this.generatedNetDocfile() || this.generatedPostscript() || this.compiledCythonFile() || this.generatedGo() || this.generatedProtocolBufferFromGo() || this.generatedProtocolBuffer() || this.generatedJavascriptProtocolBuffer() || this.generatedTypescriptProtocolBuffer() || this.generatedApacheThrift() || this.generatedJniHeader() || this.vcrCassette() || this.generatedAntlr() || this.generatedModule() || this.generatedUnity3dMeta() || this.generatedRacc() || this.generatedJflex() || this.generatedGrammarkit() || this.generatedRoxygen2() || this.generatedHtml() || this.generatedJison() || this.generatedGrpcCpp() || this.generatedDart() || this.generatedPerlPpportHeader() || this.generatedGamemakerstudio() || this.generatedGimp() || this.generatedVisualstudio6() || this.generatedHaxe() || this.generatedJooq() || this.generatedSorbetRbi() || this.generatedMysqlViewDefinitionFormat())
+                    }
+                    xcodeFile() {
+                        return [".nib", ".xcworkspacedata", ".xcuserstate"].includes(this.extname)
+                    }
+                    intellijFile() {
+                        return /(?:^|\/)\.idea\//.test(this.name)
+                    }
+                    cocoapods() {
+                        return /(^Pods|\/Pods)\//.test(this.name)
+                    }
+                    carthageBuild() {
+                        return /(^|\/)Carthage\/Build\//.test(this.name)
+                    }
+                    generatedGraphqlRelay() {
+                        return /__generated__\//.test(this.name)
+                    }
+                    generatedNetDesignerFile() {
+                        return /\.designer\.(cs|vb)$/i.test(this.name)
+                    }
+                    generatedNetSpecflowFeatureFile() {
+                        return /\.feature\.cs$/i.test(this.name)
+                    }
+                    composerLock() {
+                        return /composer\.lock/.test(this.name)
+                    }
+                    cargoLock() {
+                        return /Cargo\.lock/.test(this.name)
+                    }
+                    cargoOrig() {
+                        return /Cargo\.toml\.orig/.test(this.name)
+                    }
+                    denoLock() {
+                        return /deno\.lock/.test(this.name)
+                    }
+                    flakeLock() {
+                        return /(^|\/)flake\.lock$/.test(this.name)
+                    }
+                    bazelLock() {
+                        return /(^|\/)MODULE\.bazel\.lock$/.test(this.name)
+                    }
+                    nodeModules() {
+                        return /node_modules\//.test(this.name)
+                    }
+                    goVendor() {
+                        return /vendor\/((?!-)[-0-9A-Za-z]+(?<!-)\.)+(com|edu|gov|in|me|net|org|fm|io)/.test(this.name)
+                    }
+                    goLock() {
+                        return /(Gopkg|glide)\.lock/.test(this.name)
+                    }
+                    packageResolved() {
+                        return /Package\.resolved/.test(this.name)
+                    }
+                    poetryLock() {
+                        return /poetry\.lock/.test(this.name)
+                    }
+                    pdmLock() {
+                        return /pdm\.lock/.test(this.name)
+                    }
+                    uvLock() {
+                        return /uv\.lock/.test(this.name)
+                    }
+                    pixiLock() {
+                        return /pixi\.lock/.test(this.name)
+                    }
+                    esyLock() {
+                        return /(^|\/)(\w+\.)?esy\.lock$/.test(this.name)
+                    }
+                    npmShrinkwrapOrPackageLock() {
+                        return /npm-shrinkwrap\.json/.test(this.name) || /package-lock\.json/.test(this.name)
+                    }
+                    pnpmLock() {
+                        return /pnpm-lock\.yaml/.test(this.name)
+                    }
+                    bunLock() {
+                        return /(?:^|\/)bun\.lockb?$/.test(this.name)
+                    }
+                    terraformLock() {
+                        return /(?:^|\/)\.terraform\.lock\.hcl$/.test(this.name)
+                    }
+                    generatedYarnPlugnplay() {
+                        return /(^|\/)\.pnp\..*$/.test(this.name)
+                    }
+                    godeps() {
+                        return /Godeps\//.test(this.name)
+                    }
+                    generatedByZephir() {
+                        return /\.zep\.(c|h|php)$/.test(this.name)
+                    }
+                    htmlcov() {
+                        return /(?:^|\/)htmlcov\//.test(this.name)
+                    }
+                    gradleWrapper() {
+                        return /(?:^|\/)gradlew(?:\.bat)?$/i.test(this.name)
+                    }
+                    mavenWrapper() {
+                        return /(?:^|\/)mvnw(?:\.cmd)?$/i.test(this.name)
+                    }
+                    pipenvLock() {
+                        return /Pipfile\.lock/.test(this.name)
+                    }
+                    generatedPascalTlb() {
+                        return /_tlb\.pas$/i.test(this.name)
+                    }
+                    generatedSqlxQuery() {
+                        return /(?:^|\/)\.sqlx\/query-[a-f\d]{64}\.json$/.test(this.name)
+                    }
+                    sourceMapByName() {
+                        return /\.(css|js)\.map$/i.test(this.name)
+                    }
+                    maybeMinified() {
+                        return [".js", ".css"].includes(this.extname)
+                    }
+                    minifiedFiles() {
+                        return !(!this.maybeMinified() || 0 === this.lines.length) && this.lines.reduce((e, t) => e + t.length, 0) / this.lines.length > 110
+                    }
+                    hasSourceMap() {
+                        return !!this.maybeMinified() && this.lines.slice(-2).some(e => /^\/[*/][#@] source(?:Mapping)?URL|sourceURL=/.test(e))
+                    }
+                    sourceMap() {
+                        if (".map" !== this.extname) return !1;
+                        if (/\.(css|js)\.map$/i.test(this.name)) return !0;
+                        const e = this.lines[0] || "";
+                        return /^{"version":\d+,/.test(e) || /^\/\*\* Begin line maps\. \*\*\/{/.test(e)
+                    }
+                    compiledCoffeescript() {
+                        if (".js" !== this.extname) return !1;
+                        const e = this.lines[0] || "";
+                        if (/^\/\/ Generated by /.test(e)) return !0;
+                        if ("(function() {" === e && "}).call(this);" === (this.lines[this.lines.length - 2] || "") && "" === (this.lines[this.lines.length - 1] || "")) {
+                            let e = 0;
+                            for (const t of this.lines)
+                                if (/var /.test(t)) {
+                                    const i = t.match(/_fn|_i|_len|_ref|_results/g);
+                                    e += 1 * ((null == i ? void 0 : i.length) || 0);
+                                    const r = t.match(/__bind|__extends|__hasProp|__indexOf|__slice/g);
+                                    e += 3 * ((null == r ? void 0 : r.length) || 0)
+                                } return e >= 3
+                        }
+                        return !1
+                    }
+                    generatedNetDocfile() {
+                        return ".xml" === this.extname && !(this.lines.length <= 3) && (this.lines[1] || "").includes("<doc>") && (this.lines[2] || "").includes("<assembly>") && (this.lines[this.lines.length - 2] || "").includes("</doc>")
+                    }
+                    generatedParser() {
+                        if (".js" !== this.extname) return !1;
+                        const e = this.lines.slice(0, 5).join("");
+                        return /^(?:[^/]|\/[^*])*\/\*(?:[^*]|\*[^/])*Generated by PEG\.js/.test(e)
+                    }
+                    generatedPostscript() {
+                        if (![".ps", ".eps", ".pfa"].includes(this.extname)) return !1;
+                        const e = this.data;
+                        if (!e) return !1;
+                        if (/^\s*(?:currentfile eexec\s+|\/sfnts\s+\[\s<)/.test(e)) return !0;
+                        const t = this.lines.slice(0, 10).find(e => /^%%Creator: /.test(e));
+                        return !!t && (!(!/[0-9]|draw|mpage|ImageMagick|inkscape|MATLAB/.test(t) && !/PCBNEW|pnmtops|\(Unknown\)|Serif Affinity|Filterimage -tops/.test(t)) || !!t.includes("EAGLE") && this.lines.slice(0, 5).some(e => /^%%Title: EAGLE Drawing /.test(e)))
+                    }
+                    generatedGo() {
+                        return ".go" === this.extname && !(this.lines.length <= 1) && this.lines.slice(0, 40).some(e => /^\/\/ Code generated .*/.test(e))
+                    }
+                    generatedProtocolBufferFromGo() {
+                        return ".proto" === this.extname && !(this.lines.length <= 1) && this.lines.slice(0, 20).some(e => e.includes("This file was autogenerated by go-to-protobuf"))
+                    }
+                    generatedProtocolBuffer() {
+                        return !![".py", ".java", ".h", ".cc", ".cpp", ".m", ".rb", ".php"].includes(this.extname) && !(this.lines.length <= 1) && this.lines.slice(0, 3).some(e => e.includes("Generated by the protocol buffer compiler.  DO NOT EDIT!"))
+                    }
+                    generatedJavascriptProtocolBuffer() {
+                        return ".js" === this.extname && !(this.lines.length <= 6) && (this.lines[5] || "").includes("GENERATED CODE -- DO NOT EDIT!")
+                    }
+                    generatedTypescriptProtocolBuffer() {
+                        return ".ts" === this.extname && !(this.lines.length <= 4) && (this.lines[0] || "").includes("Code generated by protoc-gen-ts_proto. DO NOT EDIT.")
+                    }
+                    generatedApacheThrift() {
+                        return !![".rb", ".py", ".go", ".js", ".m", ".java", ".h", ".cc", ".cpp", ".php"].includes(this.extname) && this.lines.slice(0, 6).some(e => e.includes("Autogenerated by Thrift Compiler"))
+                    }
+                    generatedJniHeader() {
+                        return ".h" === this.extname && !(this.lines.length <= 2) && (this.lines[0] || "").includes("/* DO NOT EDIT THIS FILE - it is machine generated */") && (this.lines[1] || "").includes("#include <jni.h>")
+                    }
+                    vcrCassette() {
+                        return ".yml" === this.extname && !(this.lines.length <= 2) && (this.lines[this.lines.length - 2] || "").includes("recorded_with: VCR")
+                    }
+                    generatedAntlr() {
+                        return ".g" === this.extname && !(this.lines.length <= 2) && (this.lines[1] || "").includes("generated by Xtest")
+                    }
+                    compiledCythonFile() {
+                        return !![".c", ".cpp"].includes(this.extname) && !(this.lines.length <= 1) && (this.lines[0] || "").includes("Generated by Cython")
+                    }
+                    generatedModule() {
+                        if (".mod" !== this.extname) return !1;
+                        if (this.lines.length <= 1) return !1;
+                        const e = this.lines[0] || "";
+                        return e.includes("PCBNEW-LibModule-V") || e.includes("GFORTRAN module version '")
+                    }
+                    generatedUnity3dMeta() {
+                        return ".meta" === this.extname && !(this.lines.length <= 1) && (this.lines[0] || "").includes("fileFormatVersion: ")
+                    }
+                    generatedRacc() {
+                        return ".rb" === this.extname && !(this.lines.length <= 2) && (this.lines[2] || "").startsWith("# This file is automatically generated by Racc")
+                    }
+                    generatedJflex() {
+                        return ".java" === this.extname && !(this.lines.length <= 1) && (this.lines[0] || "").startsWith("/* The following code was generated by JFlex ")
+                    }
+                    generatedGrammarkit() {
+                        return ".java" === this.extname && !(this.lines.length <= 1) && (this.lines[0] || "").startsWith("// This is a generated file. Not intended for manual editing.")
+                    }
+                    generatedRoxygen2() {
+                        return ".rd" === this.extname && !(this.lines.length <= 1) && (this.lines[0] || "").includes("% Generated by roxygen2: do not edit by hand")
+                    }
+                    generatedHtml() {
+                        var e;
+                        if (![".html", ".htm", ".xhtml"].includes(this.extname)) return !1;
+                        if (this.lines.length <= 1) return !1;
+                        if (this.lines.slice(0, 2).some(e => /<!-- Generated by pkgdown: do not edit by hand -->/.test(e))) return !0;
+                        if (this.lines.length > 2 && (this.lines[2] || "").startsWith("\x3c!-- This is an automatically generated file.")) return !0;
+                        if (this.lines.slice(0, 31).some(e => /<!--\s+Generated by Doxygen\s+[.0-9]+\s*-->/i.test(e))) return !0;
+                        const t = this.lines.slice(0, 31).join(" ").match(/<meta(\s+[^>]+)>/gi);
+                        if (!t) return !1;
+                        for (const i of t) {
+                            const t = this.extractHtmlMeta(i);
+                            if ("generator" === (null === (e = t.name) || void 0 === e ? void 0 : e.toLowerCase()) && (t.content || t.value)) {
+                                const e = t.content || t.value || "";
+                                if (/^(org\s+mode|j?latex2html|groff|makeinfo|texi2html|ronn)\b/i.test(e)) return !0
+                            }
+                        }
+                        return !1
+                    }
+                    extractHtmlMeta(e) {
+                        const t = {},
+                            i = e.matchAll(/(?<=^|\s)(name|content|value)\s*=\s*("[^"]+"|'[^']+'|[^\s"']+)/gi);
+                        for (const e of i) {
+                            const i = e[1].toLowerCase();
+                            let r = e[2];
+                            (r.startsWith('"') && r.endsWith('"') || r.startsWith("'") && r.endsWith("'")) && (r = r.slice(1, -1)), t[i] = r
+                        }
+                        return t
+                    }
+                    generatedJison() {
+                        if (".js" !== this.extname) return !1;
+                        if (this.lines.length <= 1) return !1;
+                        const e = this.lines[0] || "";
+                        return e.startsWith("/* parser generated by jison ") || e.startsWith("/* generated by jison-lex ")
+                    }
+                    generatedGrpcCpp() {
+                        return !![".cpp", ".hpp", ".h", ".cc"].includes(this.extname) && !(this.lines.length <= 1) && (this.lines[0] || "").startsWith("// Generated by the gRPC")
+                    }
+                    generatedDart() {
+                        return ".dart" === this.extname && !(this.lines.length <= 1) && this.lines.slice(0, 3).some(e => /generated code\W{2,3}do not modify/i.test(e))
+                    }
+                    generatedPerlPpportHeader() {
+                        return !!/ppport\.h$/.test(this.name) && !(this.lines.length <= 10) && (this.lines[8] || "").includes("Automatically created by Devel::PPPort")
+                    }
+                    generatedGamemakerstudio() {
+                        if (![".yy", ".yyp"].includes(this.extname)) return !1;
+                        if (this.lines.length <= 3) return !1;
+                        const e = this.lines.slice(0, 3).join("");
+                        return /^\s*[{[]/.test(e) || /^\d\.\d\.\d.+\|\{/.test(this.lines[0] || "")
+                    }
+                    generatedGimp() {
+                        if (![".c", ".h"].includes(this.extname)) return !1;
+                        if (0 === this.lines.length) return !1;
+                        const e = this.lines[0] || "";
+                        return /^\/\* GIMP [a-zA-Z0-9- ]+ C-Source image dump \(.+?\.c\) \*\//.test(e) || /^\/\* {2}GIMP header image file format \([a-zA-Z0-9- ]+\): .+?\.h {2}\*\//.test(e)
+                    }
+                    generatedVisualstudio6() {
+                        return ".dsp" === this.extname && this.lines.slice(0, 3).some(e => e.includes("# Microsoft Developer Studio Generated Build File"))
+                    }
+                    generatedHaxe() {
+                        return !![".js", ".py", ".lua", ".cpp", ".h", ".java", ".cs", ".php"].includes(this.extname) && this.lines.slice(0, 3).some(e => e.includes("Generated by Haxe"))
+                    }
+                    generatedJooq() {
+                        return ".java" === this.extname && this.lines.slice(0, 2).some(e => e.includes("This file is generated by jOOQ."))
+                    }
+                    generatedSorbetRbi() {
+                        return ".rbi" === this.extname && !(this.lines.length < 5) && /^# typed:/.test(this.lines[0] || "") && (this.lines[2] || "").includes("DO NOT EDIT MANUALLY") && /^# Please (run|instead update this file by running) `bin\/tapioca/.test(this.lines[4] || "")
+                    }
+                    generatedMysqlViewDefinitionFormat() {
+                        return ".frm" === this.extname && (this.lines[0] || "").includes("TYPE=VIEW")
+                    }
+                }
+                const G = require("node:events"),
+                    L = require("node:url");
+                var H = function(e, t, i, r) {
+                    return new(i || (i = Promise))(function(o, n) {
+                        function s(e) {
+                            try {
+                                l(r.next(e))
+                            } catch (e) {
+                                n(e)
+                            }
+                        }
+
+                        function a(e) {
+                            try {
+                                l(r.throw(e))
+                            } catch (e) {
+                                n(e)
+                            }
+                        }
+
+                        function l(e) {
+                            var t;
+                            e.done ? o(e.value) : (t = e.value, t instanceof i ? t : new i(function(e) {
+                                e(t)
+                            })).then(s, a)
+                        }
+                        l((r = r.apply(e, t || [])).next())
+                    })
+                };
+                class N extends Error {
+                    constructor() {
+                        super("Operation cancelled"), this.name = "CancelledError"
+                    }
+                }
+                class F {
+                    get onOutput() {
+                        return this._onOutput
+                    }
+                    constructor(e) {
+                        this._onOutput = new G.EventEmitter, this.path = e.gitPath, this.env = e.env || {}, e.onLog && this._onOutput.on("log", e.onLog)
+                    }
+                    exec(e, t) {
+                        return H(this, arguments, void 0, function*(e, t, i = {}) {
+                            const r = Object.assign({
+                                cwd: e
+                            }, i);
+                            return yield this._exec(t, r)
+                        })
+                    }
+                    exec2(e) {
+                        return H(this, arguments, void 0, function*(e, t = {}) {
+                            return yield this._exec(e, t)
+                        })
+                    }
+                    stream(e, t, i = {}) {
+                        const r = Object.assign({
+                                cwd: e
+                            }, i),
+                            o = this.spawn(t, r);
+                        if (!1 !== i.log) {
+                            const e = Date.now();
+                            o.on("exit", () => {
+                                this.log(`> git ${t.join(" ")} [${Date.now()-e}ms]${o.killed?" (cancelled)":""}\n`)
+                            })
+                        }
+                        return o
+                    }
+                    _exec(e) {
+                        return H(this, arguments, void 0, function*(e, t = {}) {
+                            var i;
+                            const r = this.spawn(e, t);
+                            null === (i = t.onSpawn) || void 0 === i || i.call(t, r), t.input && r.stdin.end(t.input, "utf8");
+                            const o = Date.now();
+                            let n;
+                            try {
+                                n = yield function(e, t) {
+                                    return H(this, void 0, void 0, function*() {
+                                        if (!e.stdout || !e.stderr) throw new c({
+                                            message: "Failed to get stdout or stderr from git process."
+                                        });
+                                        if (null == t ? void 0 : t.aborted) throw new N;
+                                        const i = [],
+                                            r = (e, t, r) => {
+                                                e.once(t, r), i.push(w(() => e.removeListener(t, r)))
+                                            },
+                                            o = (e, t, r) => {
+                                                e.on(t, r), i.push(w(() => e.removeListener(t, r)))
+                                            };
+                                        let n = Promise.all([new Promise((t, i) => {
+                                            r(e, "error", u(i)), r(e, "exit", t)
+                                        }), new Promise(t => {
+                                            const i = [];
+                                            o(e.stdout, "data", e => i.push(e)), r(e.stdout, "close", () => t(Buffer.concat(i)))
+                                        }), new Promise(t => {
+                                            const i = [];
+                                            o(e.stderr, "data", e => i.push(e)), r(e.stderr, "close", () => t(Buffer.concat(i).toString("utf8")))
+                                        })]);
+                                        if (t) {
+                                            const r = new Promise((r, o) => {
+                                                const n = () => {
+                                                    try {
+                                                        e.kill()
+                                                    } catch (e) {}
+                                                    o(new N)
+                                                };
+                                                t.aborted ? n() : (t.addEventListener("abort", n, {
+                                                    once: !0
+                                                }), i.push(w(() => t.removeEventListener("abort", n))))
+                                            });
+                                            n = Promise.race([n, r])
+                                        }
+                                        try {
+                                            const [e, t, i] = yield n;
+                                            return {
+                                                exitCode: e,
+                                                stdout: t,
+                                                stderr: i
+                                            }
+                                        } finally {
+                                            b(i)
+                                        }
+                                    })
+                                }(r, t.signal)
+                            } catch (t) {
+                                throw t instanceof N && this.log(`> git ${e.join(" ")} [${Date.now()-o}ms] (cancelled)\n`), t
+                            }!1 !== t.log && (this.log(`> git ${e.join(" ")} [${Date.now()-o}ms] ${t.caller?`(${t.caller})`:""}\n`), n.stderr.length > 0 && this.log(`${n.stderr}\n`));
+                            const s = {
+                                exitCode: n.exitCode,
+                                stdout: n.stdout.toString("utf8"),
+                                stderr: n.stderr
+                            };
+                            return n.exitCode ? Promise.reject(new c({
+                                message: "Failed to execute git",
+                                stdout: s.stdout,
+                                stderr: s.stderr,
+                                exitCode: s.exitCode,
+                                gitErrorCode: h(s.stderr),
+                                gitCommand: e[0],
+                                gitArgs: e
+                            })) : s
+                        })
+                    }
+                    spawn(e, t = {}) {
+                        if (!this.path) throw new Error("git could not be found in the system.");
+                        const i = Object.assign({}, t);
+                        i.stdio || t.input || (i.stdio = ["ignore", null, null]), i.env = Object.assign(Object.assign(Object.assign(Object.assign({}, process.env), this.env), t.env || {}), {
+                            VSCODE_GIT_COMMAND: e[0],
+                            LC_ALL: "en_US.UTF-8",
+                            LANG: "en_US.UTF-8",
+                            GIT_PAGER: "cat"
+                        });
+                        const r = this.getCwd(t);
+                        return r && (i.cwd = g(r)), d.spawn(this.path, e, i)
+                    }
+                    getCwd(e) {
+                        const t = e.cwd;
+                        return void 0 === t || "string" == typeof t ? t : t instanceof URL && "file:" === t.protocol ? (0, L.fileURLToPath)(t) : void 0
+                    }
+                    log(e) {
+                        this._onOutput.emit("log", e)
+                    }
+                }
             },
             3940: (e, t, i) => {
                 "use strict";
@@ -12754,23 +13631,31 @@
                         return this._historyProvider
                     }
                     constructor(e, t, i, r, o, n, s, a, l, c) {
-                        this.repository = e, this.repositoryResolver = t, this.pushErrorHandlerRegistry = i, this.branchProtectionProviderRegistry = n, this.logger = l, this.telemetryReporter = c, this._onDidChangeRepository = new p.EventEmitter, this.onDidChangeRepository = this._onDidChangeRepository.event, this._onDidChangeState = new p.EventEmitter, this.onDidChangeState = this._onDidChangeState.event, this._onDidChangeStatus = new p.EventEmitter, this.onDidRunGitStatus = this._onDidChangeStatus.event, this._onDidActuallyChangeStatus = new p.EventEmitter, this.onDidActuallyChangeStatus = this._onDidActuallyChangeStatus.event, this._onDidChangeOriginalResource = new p.EventEmitter, this.onDidChangeOriginalResource = this._onDidChangeOriginalResource.event, this._onRunOperation = new p.EventEmitter, this.onRunOperation = this._onRunOperation.event, this._onDidRunOperation = new p.EventEmitter, this.onDidRunOperation = this._onDidRunOperation.event, this._onDidChangeBranchProtection = new p.EventEmitter, this.onDidChangeBranchProtection = this._onDidChangeBranchProtection.event, this._refs = [], this._remotes = [], this._submodules = [], this._worktrees = [], this._rebaseCommit = void 0, this._mergeInProgress = !1, this._cherryPickInProgress = !1, this._isWorktreeMigrating = !1, this._state = 0, this.isRepositoryHuge = !1, this.didWarnAboutLimit = !1, this.unpublishedCommits = void 0, this.unsupportedCheckIgnorePaths = new Map, this.branchProtection = new Map, this.resourceCommandResolver = new G(this), this.disposables = [], this._operations = new v.OperationManager(this.logger);
-                        const u = p.workspace.createFileSystemWatcher(new p.RelativePattern(p.Uri.file(e.root), "**"));
-                        this.disposables.push(u);
-                        const g = (0, S.anyEvent)(u.onDidChange, u.onDidCreate, u.onDidDelete),
-                            w = (0, S.filterEvent)(g, t => !/\.git($|\\|\/)/.test((0, S.relativePath)(e.root, t.fsPath)));
-                        let b;
+                        this.repository = e, this.repositoryResolver = t, this.pushErrorHandlerRegistry = i, this.branchProtectionProviderRegistry = n, this.logger = l, this.telemetryReporter = c, this._onDidChangeRepository = new p.EventEmitter, this.onDidChangeRepository = this._onDidChangeRepository.event, this._onDidChangeState = new p.EventEmitter, this.onDidChangeState = this._onDidChangeState.event, this._onDidChangeStatus = new p.EventEmitter, this.onDidRunGitStatus = this._onDidChangeStatus.event, this._onDidActuallyChangeStatus = new p.EventEmitter, this.onDidActuallyChangeStatus = this._onDidActuallyChangeStatus.event, this._onDidChangeOriginalResource = new p.EventEmitter, this.onDidChangeOriginalResource = this._onDidChangeOriginalResource.event, this._onRunOperation = new p.EventEmitter, this.onRunOperation = this._onRunOperation.event, this._onDidRunOperation = new p.EventEmitter, this.onDidRunOperation = this._onDidRunOperation.event, this._onDidChangeBranchProtection = new p.EventEmitter, this.onDidChangeBranchProtection = this._onDidChangeBranchProtection.event, this._refs = [], this._remotes = [], this._submodules = [], this._worktrees = [], this._rebaseCommit = void 0, this._mergeInProgress = !1, this._cherryPickInProgress = !1, this._isWorktreeMigrating = !1, this._state = 0, this.isRepositoryHuge = !1, this.didWarnAboutLimit = !1, this.unpublishedCommits = void 0, this.unsupportedCheckIgnorePaths = new Map, this.statusIgnoredPathFilterEnabled = !1, this.statusIgnorePathVerdicts = new Map, this.ignoredStatusDirs = new Set, this.pendingStatusIgnorePaths = new Set, this.statusIgnoreCacheGeneration = 0, this.branchProtection = new Map, this.resourceCommandResolver = new G(this), this.disposables = [], this._operations = new v.OperationManager(this.logger);
+                        const u = () => {
+                            d.cursor.checkFeatureGate("git_status_ignored_path_filter").then(e => {
+                                this.statusIgnoredPathFilterEnabled = e
+                            }, () => {})
+                        };
+                        u(), this.disposables.push(d.cursor.onDidChangeGates(e => {
+                            e.changedGates?.includes("git_status_ignored_path_filter") && u()
+                        }));
+                        const g = p.workspace.createFileSystemWatcher(new p.RelativePattern(p.Uri.file(e.root), "**"));
+                        this.disposables.push(g);
+                        const w = (0, S.anyEvent)(g.onDidChange, g.onDidCreate, g.onDidDelete),
+                            b = (0, S.filterEvent)(w, t => !/\.git($|\\|\/)/.test((0, S.relativePath)(e.root, t.fsPath)));
+                        let E;
                         try {
                             const e = new I(this, l);
-                            b = e.event, this.disposables.push(e)
+                            E = e.event, this.disposables.push(e)
                         } catch (e) {
-                            l.error(`Failed to watch path:'${this.dotGit.path}' or commonPath:'${this.dotGit.commonPath}', reverting to legacy API file watched. Some events might be lost.\n${e.stack||e}`), b = (0, S.filterEvent)(g, e => /\.git($|\\|\/)/.test(e.path))
-                        }(0, S.anyEvent)(w, b)(this.onFileChange, this, this.disposables), b(this._onDidChangeRepository.fire, this._onDidChangeRepository, this.disposables);
-                        const E = h.join(e.dotGit.path, "HEAD");
-                        (0, S.filterEvent)(b, e => (0, S.pathEquals)(e.fsPath, E))(() => d.scm.gitHeadChanged(e.root), this, this.disposables), this.disposables.push(new M(w, b, l));
-                        const D = "submodule" === e.kind ? e.dotGit.superProjectPath : "worktree" === e.kind && e.dotGit.commonPath ? h.dirname(e.dotGit.commonPath) : void 0,
-                            A = (this.repositoryResolver.getRepository(D), p.Uri.file(e.root));
-                        this._sourceControl = p.scm.createSourceControl("git", "Git", A), this._sourceControl.quickDiffProvider = this, this._historyProvider = new C.GitHistoryProvider(s, this, l), this._sourceControl.historyProvider = this._historyProvider, this.disposables.push(this._historyProvider), this._sourceControl.acceptInputCommand = {
+                            l.error(`Failed to watch path:'${this.dotGit.path}' or commonPath:'${this.dotGit.commonPath}', reverting to legacy API file watched. Some events might be lost.\n${e.stack||e}`), E = (0, S.filterEvent)(w, e => /\.git($|\\|\/)/.test(e.path))
+                        }(0, S.anyEvent)(b, E)(this.onFileChange, this, this.disposables), E(this._onDidChangeRepository.fire, this._onDidChangeRepository, this.disposables);
+                        const D = h.join(e.dotGit.path, "HEAD");
+                        (0, S.filterEvent)(E, e => (0, S.pathEquals)(e.fsPath, D))(() => d.scm.gitHeadChanged(e.root), this, this.disposables), this.disposables.push(new M(b, E, l));
+                        const A = "submodule" === e.kind ? e.dotGit.superProjectPath : "worktree" === e.kind && e.dotGit.commonPath ? h.dirname(e.dotGit.commonPath) : void 0,
+                            _ = (this.repositoryResolver.getRepository(A), p.Uri.file(e.root));
+                        this._sourceControl = p.scm.createSourceControl("git", "Git", _), this._sourceControl.quickDiffProvider = this, this._historyProvider = new C.GitHistoryProvider(s, this, l), this._sourceControl.historyProvider = this._historyProvider, this.disposables.push(this._historyProvider), this._sourceControl.acceptInputCommand = {
                             command: "git.commit",
                             title: p.l10n.t("Commit"),
                             arguments: [this._sourceControl]
@@ -12783,18 +13668,18 @@
                         }), this._untrackedGroup = this._sourceControl.createResourceGroup("untracked", p.l10n.t("Untracked Changes"), {
                             multiDiffEditorEnableViewChanges: !0
                         });
-                        const _ = () => {
-                            const e = p.workspace.getConfiguration("git", A);
+                        const P = () => {
+                            const e = p.workspace.getConfiguration("git", _);
                             this.indexGroup.hideWhenEmpty = !e.get("alwaysShowStagedChangesResourceGroup")
                         };
-                        (0, S.filterEvent)(p.workspace.onDidChangeConfiguration, e => e.affectsConfiguration("git.alwaysShowStagedChangesResourceGroup", A))(_, this, this.disposables), _(), p.workspace.onDidChangeConfiguration(e => {
+                        (0, S.filterEvent)(p.workspace.onDidChangeConfiguration, e => e.affectsConfiguration("git.alwaysShowStagedChangesResourceGroup", _))(P, this, this.disposables), P(), p.workspace.onDidChangeConfiguration(e => {
                             e.affectsConfiguration("git.mergeEditor") && (this.mergeGroup.resourceStates = this.mergeGroup.resourceStates.map(e => e.clone()))
-                        }, void 0, this.disposables), (0, S.filterEvent)(p.workspace.onDidChangeConfiguration, e => e.affectsConfiguration("git.branchSortOrder", A) || e.affectsConfiguration("git.untrackedChanges", A) || e.affectsConfiguration("git.ignoreSubmodules", A) || e.affectsConfiguration("git.openDiffOnClick", A) || e.affectsConfiguration("git.showActionButton", A) || e.affectsConfiguration("git.similarityThreshold", A))(() => this.updateModelState(), this, this.disposables);
-                        const P = () => {
-                            const e = p.workspace.getConfiguration("git", A);
+                        }, void 0, this.disposables), (0, S.filterEvent)(p.workspace.onDidChangeConfiguration, e => e.affectsConfiguration("git.branchSortOrder", _) || e.affectsConfiguration("git.untrackedChanges", _) || e.affectsConfiguration("git.ignoreSubmodules", _) || e.affectsConfiguration("git.openDiffOnClick", _) || e.affectsConfiguration("git.showActionButton", _) || e.affectsConfiguration("git.similarityThreshold", _))(() => this.updateModelState(), this, this.disposables);
+                        const x = () => {
+                            const e = p.workspace.getConfiguration("git", _);
                             this._sourceControl.inputBox.visible = e.get("showCommitInput", !0)
                         };
-                        if ((0, S.filterEvent)(p.workspace.onDidChangeConfiguration, e => e.affectsConfiguration("git.showCommitInput", A))(P, this, this.disposables), P(), this.mergeGroup.hideWhenEmpty = !0, this.untrackedGroup.hideWhenEmpty = !0, this.disposables.push(this.mergeGroup), this.disposables.push(this.indexGroup), this.disposables.push(this.workingTreeGroup), this.disposables.push(this.untrackedGroup), p.workspace.isTrusted) this.disposables.push(new f.AutoFetcher(this, a));
+                        if ((0, S.filterEvent)(p.workspace.onDidChangeConfiguration, e => e.affectsConfiguration("git.showCommitInput", _))(x, this, this.disposables), x(), this.mergeGroup.hideWhenEmpty = !0, this.untrackedGroup.hideWhenEmpty = !0, this.disposables.push(this.mergeGroup), this.disposables.push(this.indexGroup), this.disposables.push(this.workingTreeGroup), this.disposables.push(this.untrackedGroup), p.workspace.isTrusted) this.disposables.push(new f.AutoFetcher(this, a));
                         else {
                             const e = p.workspace.onDidGrantWorkspaceTrust(() => {
                                 e.dispose(), this.disposables.push(new f.AutoFetcher(this, a))
@@ -12803,14 +13688,14 @@
                         }(0, S.filterEvent)(this.onDidRunOperation, e => e.operation.kind === v.OperationKind.Push && !e.error)(() => {
                             p.workspace.getConfiguration("git").get("showPushSuccessNotification") && p.window.showInformationMessage(p.l10n.t("Successfully pushed."))
                         }, null, this.disposables);
-                        const x = (0, S.filterEvent)(this.branchProtectionProviderRegistry.onDidChangeBranchProtectionProviders, e => (0, S.pathEquals)(e.fsPath, A.fsPath));
-                        this.disposables.push(x(e => this.updateBranchProtectionMatchers(e))), this.disposables.push(this.branchProtectionProviderRegistry.registerBranchProtectionProvider(A, new y.GitBranchProtectionProvider(A)));
-                        const B = new R.StatusBarCommands(this, r);
-                        this.disposables.push(B), B.onDidChange(() => this._sourceControl.statusBarCommands = B.commands, null, this.disposables), this._sourceControl.statusBarCommands = B.commands, this.commitCommandCenter = new k.CommitCommandsCenter(a, this, o), this.disposables.push(this.commitCommandCenter);
-                        const O = new m.ActionButton(this, this.commitCommandCenter, this.logger);
-                        this.disposables.push(O), O.onDidChange(() => this._sourceControl.actionButton = O.button, this, this.disposables), this._sourceControl.actionButton = O.button;
-                        const L = new T(this);
-                        this.disposables.push(L), (0, S.filterEvent)(p.workspace.onDidChangeConfiguration, e => e.affectsConfiguration("git.countBadge", A))(this.setCountBadge, this, this.disposables), this.setCountBadge()
+                        const B = (0, S.filterEvent)(this.branchProtectionProviderRegistry.onDidChangeBranchProtectionProviders, e => (0, S.pathEquals)(e.fsPath, _.fsPath));
+                        this.disposables.push(B(e => this.updateBranchProtectionMatchers(e))), this.disposables.push(this.branchProtectionProviderRegistry.registerBranchProtectionProvider(_, new y.GitBranchProtectionProvider(_)));
+                        const O = new R.StatusBarCommands(this, r);
+                        this.disposables.push(O), O.onDidChange(() => this._sourceControl.statusBarCommands = O.commands, null, this.disposables), this._sourceControl.statusBarCommands = O.commands, this.commitCommandCenter = new k.CommitCommandsCenter(a, this, o), this.disposables.push(this.commitCommandCenter);
+                        const L = new m.ActionButton(this, this.commitCommandCenter, this.logger);
+                        this.disposables.push(L), L.onDidChange(() => this._sourceControl.actionButton = L.button, this, this.disposables), this._sourceControl.actionButton = L.button;
+                        const H = new T(this);
+                        this.disposables.push(H), (0, S.filterEvent)(p.workspace.onDidChangeConfiguration, e => e.affectsConfiguration("git.countBadge", _))(this.setCountBadge, this, this.disposables), this.setCountBadge()
                     }
                     validateInput(e, t) {
                         return this.isRepositoryHuge ? {
@@ -13882,10 +14767,59 @@
                         }
                     }
                     onFileChange(e) {
-                        if ((0, S.isDescendant)(this.dotGit.path, e.fsPath) || this.dotGit.commonPath && (0, S.isDescendant)(this.dotGit.commonPath, e.fsPath)) this.unsupportedCheckIgnorePaths.clear();
-                        else
+                        const t = (0, S.isDescendant)(this.dotGit.path, e.fsPath) || void 0 !== this.dotGit.commonPath && (0, S.isDescendant)(this.dotGit.commonPath, e.fsPath),
+                            i = !t && ".gitignore" === h.basename(e.fsPath);
+                        if (t) this.unsupportedCheckIgnorePaths.clear(), this.clearStatusIgnorePathCache();
+                        else {
                             for (const t of Array.from(this.unsupportedCheckIgnorePaths.keys()))((0, S.isDescendant)(e.fsPath, t) || (0, S.isDescendant)(t, e.fsPath)) && this.unsupportedCheckIgnorePaths.delete(t);
-                        p.workspace.getConfiguration("git").get("autorefresh") ? this.isRepositoryHuge ? this.logger.trace("[Repository][onFileChange] Skip running git status because repository is huge.") : this.operations.isIdle() ? this.eventuallyUpdateWhenIdleAndWait() : this.logger.trace("[Repository][onFileChange] Skip running git status because an operation is running.") : this.logger.trace("[Repository][onFileChange] Skip running git status because autorefresh setting is disabled.")
+                            i && this.clearStatusIgnorePathCache()
+                        }
+                        p.workspace.getConfiguration("git").get("autorefresh") ? this.isRepositoryHuge ? this.logger.trace("[Repository][onFileChange] Skip running git status because repository is huge.") : this.operations.isIdle() ? !this.statusIgnoredPathFilterEnabled || t || i ? this.eventuallyUpdateWhenIdleAndWait() : this.eventuallyRunStatusUnlessPathIgnored(e.fsPath) : this.logger.trace("[Repository][onFileChange] Skip running git status because an operation is running.") : this.logger.trace("[Repository][onFileChange] Skip running git status because autorefresh setting is disabled.")
+                    }
+                    eventuallyRunStatusUnlessPathIgnored(e) {
+                        const t = this.statusIgnorePathVerdicts.get(e) ?? (!!this.isUnderKnownIgnoredDir(e) || void 0);
+                        if (!0 !== t)
+                            if (!1 !== t) {
+                                if (this.pendingStatusIgnorePaths.size >= L.MaxPendingStatusIgnorePaths) return this.pendingStatusIgnorePaths.clear(), void this.eventuallyUpdateWhenIdleAndWait();
+                                this.pendingStatusIgnorePaths.add(e), this.eventuallyClassifyPendingStatusIgnorePaths()
+                            } else this.eventuallyUpdateWhenIdleAndWait()
+                    }
+                    eventuallyClassifyPendingStatusIgnorePaths() {
+                        this.classifyPendingStatusIgnorePaths()
+                    }
+                    async classifyPendingStatusIgnorePaths() {
+                        const e = Array.from(this.pendingStatusIgnorePaths);
+                        if (this.pendingStatusIgnorePaths = new Set, 0 === e.length) return;
+                        const t = new Set;
+                        for (const i of e) {
+                            const e = h.dirname(i);
+                            (0, S.pathEquals)(e, this.root) || !(0, S.isDescendant)(this.root, e) || this.statusIgnorePathVerdicts.has(e) || this.isUnderKnownIgnoredDir(e) || t.add(e)
+                        }
+                        const i = this.statusIgnoreCacheGeneration;
+                        let r;
+                        try {
+                            r = await this.doCheckIgnore([...e, ...t])
+                        } catch (e) {
+                            return this.logger.warn(`[Repository][classifyPendingStatusIgnorePaths] git check-ignore failed, scheduling git status: ${e}`), void this.eventuallyUpdateWhenIdleAndWait()
+                        }
+                        if (1 === this.state) return;
+                        if (i !== this.statusIgnoreCacheGeneration) return void this.eventuallyUpdateWhenIdleAndWait();
+                        for (const e of t) r.has(e) && this.ignoredStatusDirs.size < L.MaxIgnoredStatusDirs && this.ignoredStatusDirs.add(e);
+                        this.statusIgnorePathVerdicts.size + e.length > L.MaxStatusIgnorePathVerdicts && this.statusIgnorePathVerdicts.clear();
+                        let o = !1;
+                        for (const t of e) {
+                            const e = r.has(t) || this.isUnderKnownIgnoredDir(t);
+                            this.statusIgnorePathVerdicts.set(t, e), e || (o = !0)
+                        }
+                        o ? this.eventuallyUpdateWhenIdleAndWait() : this.logger.trace(`[Repository][onFileChange] Skip running git status because all ${e.length} changed path(s) are gitignored.`)
+                    }
+                    isUnderKnownIgnoredDir(e) {
+                        for (const t of this.ignoredStatusDirs)
+                            if ((0, S.isDescendant)(t, e)) return !0;
+                        return !1
+                    }
+                    clearStatusIgnorePathCache() {
+                        this.statusIgnoreCacheGeneration++, this.statusIgnorePathVerdicts.clear(), this.ignoredStatusDirs.clear()
                     }
                     eventuallyUpdateWhenIdleAndWait() {
                         this.updateWhenIdleAndWait()
@@ -14006,7 +14940,7 @@
                         this.disposables = (0, S.dispose)(this.disposables)
                     }
                 }
-                t.Repository = L, L.KnownHugeFolderNames = ["node_modules"], s([w.memoize], L.prototype, "onDidChangeOperations", null), s([w.throttle], L.prototype, "status", null), s([w.throttle], L.prototype, "refresh", null), s([w.throttle], L.prototype, "fastForwardBranch", null), s([w.sequentialize], L.prototype, "getBranchBase", null), s([w.throttle], L.prototype, "fetchDefault", null), s([w.throttle], L.prototype, "fetchPrune", null), s([w.throttle], L.prototype, "fetchAll", null), s([w.throttle], L.prototype, "pullWithRebase", null), s([w.throttle], L.prototype, "pull", null), s([w.throttle], L.prototype, "push", null), s([w.throttle], L.prototype, "sync", null), s([(0, w.debounce)(1e3)], L.prototype, "eventuallyUpdateWhenIdleAndWait", null), s([w.throttle], L.prototype, "updateWhenIdleAndWait", null), t.StagedResourceQuickDiffProvider = class {
+                t.Repository = L, L.MaxPendingStatusIgnorePaths = 5e3, L.MaxStatusIgnorePathVerdicts = 2e4, L.MaxIgnoredStatusDirs = 256, L.KnownHugeFolderNames = ["node_modules"], s([w.memoize], L.prototype, "onDidChangeOperations", null), s([w.throttle], L.prototype, "status", null), s([w.throttle], L.prototype, "refresh", null), s([w.throttle], L.prototype, "fastForwardBranch", null), s([w.sequentialize], L.prototype, "getBranchBase", null), s([w.throttle], L.prototype, "fetchDefault", null), s([w.throttle], L.prototype, "fetchPrune", null), s([w.throttle], L.prototype, "fetchAll", null), s([w.throttle], L.prototype, "pullWithRebase", null), s([w.throttle], L.prototype, "pull", null), s([w.throttle], L.prototype, "push", null), s([w.throttle], L.prototype, "sync", null), s([(0, w.debounce)(500)], L.prototype, "eventuallyClassifyPendingStatusIgnorePaths", null), s([(0, w.debounce)(1e3)], L.prototype, "eventuallyUpdateWhenIdleAndWait", null), s([w.throttle], L.prototype, "updateWhenIdleAndWait", null), t.StagedResourceQuickDiffProvider = class {
                     constructor(e) {
                         this._repositoryResolver = e, this.visible = !1, this._disposables = [], this._disposables.push(p.window.registerQuickDiffProvider({
                             scheme: "file"
@@ -15672,834 +16606,6 @@
             9896: e => {
                 "use strict";
                 e.exports = require("fs")
-            },
-            9936: (e, t, i) => {
-                "use strict";
-                i.r(t), i.d(t, {
-                    CancelledError: () => B,
-                    GitError: () => o,
-                    GitErrorCodes: () => r,
-                    GitSpawner: () => O,
-                    checkFilesGenerated: () => S,
-                    checkGitattributes: () => D,
-                    cpErrorHandler: () => s,
-                    dispose: () => m,
-                    findGit: () => k,
-                    findGitSimple: () => R,
-                    getGitErrorCode: () => n,
-                    isDescendant: () => y,
-                    isGenerated: () => A,
-                    isGeneratedContent: () => P,
-                    isGeneratedPath: () => _,
-                    isMacintosh: () => d,
-                    isWindows: () => u,
-                    parseVersion: () => g,
-                    pathEquals: () => f,
-                    relativePath: () => w,
-                    sanitizePath: () => h,
-                    toDisposable: () => p
-                });
-                const r = {
-                    BadConfigFile: "BadConfigFile",
-                    AuthenticationFailed: "AuthenticationFailed",
-                    NoUserNameConfigured: "NoUserNameConfigured",
-                    NoUserEmailConfigured: "NoUserEmailConfigured",
-                    NoRemoteRepositorySpecified: "NoRemoteRepositorySpecified",
-                    NotAGitRepository: "NotAGitRepository",
-                    NotAtRepositoryRoot: "NotAtRepositoryRoot",
-                    Conflict: "Conflict",
-                    StashConflict: "StashConflict",
-                    UnmergedChanges: "UnmergedChanges",
-                    PushRejected: "PushRejected",
-                    ForcePushWithLeaseRejected: "ForcePushWithLeaseRejected",
-                    ForcePushWithLeaseIfIncludesRejected: "ForcePushWithLeaseIfIncludesRejected",
-                    RemoteConnectionError: "RemoteConnectionError",
-                    DirtyWorkTree: "DirtyWorkTree",
-                    CantOpenResource: "CantOpenResource",
-                    GitNotFound: "GitNotFound",
-                    CantCreatePipe: "CantCreatePipe",
-                    PermissionDenied: "PermissionDenied",
-                    CantAccessRemote: "CantAccessRemote",
-                    RepositoryNotFound: "RepositoryNotFound",
-                    RepositoryIsLocked: "RepositoryIsLocked",
-                    BranchNotFullyMerged: "BranchNotFullyMerged",
-                    NoRemoteReference: "NoRemoteReference",
-                    InvalidBranchName: "InvalidBranchName",
-                    BranchAlreadyExists: "BranchAlreadyExists",
-                    NoLocalChanges: "NoLocalChanges",
-                    NoStashFound: "NoStashFound",
-                    LocalChangesOverwritten: "LocalChangesOverwritten",
-                    NoUpstreamBranch: "NoUpstreamBranch",
-                    IsInSubmodule: "IsInSubmodule",
-                    WrongCase: "WrongCase",
-                    CantLockRef: "CantLockRef",
-                    CantRebaseMultipleBranches: "CantRebaseMultipleBranches",
-                    PatchDoesNotApply: "PatchDoesNotApply",
-                    NoPathFound: "NoPathFound",
-                    UnknownPath: "UnknownPath",
-                    EmptyCommitMessage: "EmptyCommitMessage",
-                    BranchFastForwardRejected: "BranchFastForwardRejected",
-                    BranchNotYetBorn: "BranchNotYetBorn",
-                    TagConflict: "TagConflict",
-                    CherryPickEmpty: "CherryPickEmpty",
-                    CherryPickConflict: "CherryPickConflict",
-                    WorktreeContainsChanges: "WorktreeContainsChanges",
-                    WorktreeAlreadyExists: "WorktreeAlreadyExists",
-                    WorktreeBranchAlreadyUsed: "WorktreeBranchAlreadyUsed"
-                };
-                class o extends Error {
-                    constructor(e) {
-                        var t;
-                        super((null === (t = e.error) || void 0 === t ? void 0 : t.message) || e.message || "Git error"), this.error = e.error, this.stdout = e.stdout, this.stderr = e.stderr, this.exitCode = e.exitCode, this.gitErrorCode = e.gitErrorCode, this.gitCommand = e.gitCommand, this.gitArgs = e.gitArgs
-                    }
-                    toString() {
-                        let e = this.message + " " + JSON.stringify({
-                            exitCode: this.exitCode,
-                            gitErrorCode: this.gitErrorCode,
-                            gitCommand: this.gitCommand,
-                            stdout: this.stdout,
-                            stderr: this.stderr
-                        }, null, 2);
-                        return this.error && (e += this.error.stack), e
-                    }
-                }
-
-                function n(e) {
-                    return /Another git process seems to be running in this repository|If no other git process is currently running/.test(e) ? r.RepositoryIsLocked : /Authentication failed/i.test(e) ? r.AuthenticationFailed : /Not a git repository/i.test(e) ? r.NotAGitRepository : /bad config file/.test(e) ? r.BadConfigFile : /cannot make pipe for command substitution|cannot create standard input pipe/.test(e) ? r.CantCreatePipe : /Repository not found/.test(e) ? r.RepositoryNotFound : /unable to access/.test(e) ? r.CantAccessRemote : /branch '.+' is not fully merged/.test(e) ? r.BranchNotFullyMerged : /Couldn't find remote ref/.test(e) ? r.NoRemoteReference : /A branch named '.+' already exists/.test(e) ? r.BranchAlreadyExists : /'.+' is not a valid branch name/.test(e) ? r.InvalidBranchName : /Please,? commit your changes or stash them/.test(e) ? r.DirtyWorkTree : /contains modified or untracked files|use --force to delete it/.test(e) ? r.WorktreeContainsChanges : /fatal: '[^']+' already exists/.test(e) ? r.WorktreeAlreadyExists : /is already used by worktree at/.test(e) ? r.WorktreeBranchAlreadyUsed : void 0
-                }
-
-                function s(e) {
-                    return t => {
-                        /ENOENT/.test(t.message) && (t = new o({
-                            error: t,
-                            message: "Failed to execute git (ENOENT)",
-                            gitErrorCode: r.NotAGitRepository
-                        })), e(t)
-                    }
-                }
-                const a = require("node:child_process"),
-                    l = require("node:path");
-                var c = i(493);
-
-                function h(e) {
-                    return e.replace(/^([a-z]):\\/i, (e, t) => `${t.toUpperCase()}:\\`)
-                }
-                const u = "win32" === process.platform,
-                    d = "darwin" === process.platform;
-
-                function p(e) {
-                    return {
-                        dispose: e
-                    }
-                }
-
-                function m(e) {
-                    for (const t of e) t.dispose()
-                }
-
-                function g(e) {
-                    return e.replace(/^git version /, "")
-                }
-
-                function f(e, t) {
-                    return u ? e.toLowerCase() === t.toLowerCase() : e === t
-                }
-
-                function y(e, t) {
-                    return u && (e = e.toLowerCase(), t = t.toLowerCase()), e === t || (e.charAt(e.length - 1) !== l.sep && (e += l.sep), t.startsWith(e))
-                }
-
-                function w(e, t) {
-                    return l.relative(e, t)
-                }
-                var b = function(e, t, i, r) {
-                    return new(i || (i = Promise))(function(o, n) {
-                        function s(e) {
-                            try {
-                                l(r.next(e))
-                            } catch (e) {
-                                n(e)
-                            }
-                        }
-
-                        function a(e) {
-                            try {
-                                l(r.throw(e))
-                            } catch (e) {
-                                n(e)
-                            }
-                        }
-
-                        function l(e) {
-                            var t;
-                            e.done ? o(e.value) : (t = e.value, t instanceof i ? t : new i(function(e) {
-                                e(t)
-                            })).then(s, a)
-                        }
-                        l((r = r.apply(e, t || [])).next())
-                    })
-                };
-
-                function C(e, t) {
-                    return new Promise((i, r) => {
-                        if (!t(e)) return r(new Error(`Path "${e}" is invalid.`));
-                        const o = [],
-                            n = a.spawn(e, ["--version"]);
-                        n.stdout.on("data", e => o.push(e)), n.on("error", s(r)), n.on("close", (t, n) => 0 !== t ? r(new Error(`Not found. Code: ${t}, Signal: ${n}`)) : i({
-                            path: e,
-                            version: g(Buffer.concat(o).toString("utf8").trim())
-                        }))
-                    })
-                }
-
-                function v(e, t) {
-                    return e ? C(l.join(e, "Git", "cmd", "git.exe"), t) : Promise.reject("Not found")
-                }
-
-                function k(e, t, i) {
-                    return b(this, void 0, void 0, function*() {
-                        for (const r of e) try {
-                            return yield C(r, t)
-                        } catch (e) {
-                            null == i || i.info(`Unable to find git on the PATH: "${r}". Error: ${e.message}`)
-                        }
-                        try {
-                            switch (process.platform) {
-                                case "darwin":
-                                    return yield function(e) {
-                                        return new Promise((t, i) => {
-                                            a.exec("which git", (r, o) => {
-                                                if (r) return i(new Error(`Executing "which git" failed: ${r.message}`));
-                                                const n = o.toString().trim();
-
-                                                function l(r) {
-                                                    if (!e(r)) return i(new Error(`Path "${r}" is invalid.`));
-                                                    const o = [],
-                                                        n = a.spawn(r, ["--version"]);
-                                                    n.stdout.on("data", e => o.push(e)), n.on("error", s(i)), n.on("close", (e, n) => 0 !== e ? i(new Error(`Executing "${r} --version" failed with code ${e}, signal ${n}`)) : t({
-                                                        path: r,
-                                                        version: g(Buffer.concat(o).toString("utf8").trim())
-                                                    }))
-                                                }
-                                                if ("/usr/bin/git" !== n) return l(n);
-                                                a.exec("xcode-select -p", e => {
-                                                    if (e && 2 === e.code) return i(new Error('Executing "xcode-select -p" failed with error code 2.'));
-                                                    l(n)
-                                                })
-                                            })
-                                        })
-                                    }(t);
-                                case "win32":
-                                    return yield function(e) {
-                                        return b(this, void 0, void 0, function*() {
-                                            return v(process.env.ProgramW6432, e).then(void 0, () => v(process.env["ProgramFiles(x86)"], e)).then(void 0, () => v(process.env.ProgramFiles, e)).then(void 0, () => v(l.join(process.env.LocalAppData, "Programs"), e)).then(void 0, () => function(e) {
-                                                return b(this, void 0, void 0, function*() {
-                                                    return C(yield c("git.exe"), e)
-                                                })
-                                            }(e))
-                                        })
-                                    }(t);
-                                default:
-                                    return yield C(yield c("git"), t)
-                            }
-                        } catch (e) {
-                            null == i || i.warn(`Unable to find git. Error: ${e.message}`)
-                        }
-                        throw new Error("Git installation not found.")
-                    })
-                }
-
-                function R() {
-                    return b(this, void 0, void 0, function*() {
-                        return k([], () => !0)
-                    })
-                }
-                var E = function(e, t, i, r) {
-                    return new(i || (i = Promise))(function(o, n) {
-                        function s(e) {
-                            try {
-                                l(r.next(e))
-                            } catch (e) {
-                                n(e)
-                            }
-                        }
-
-                        function a(e) {
-                            try {
-                                l(r.throw(e))
-                            } catch (e) {
-                                n(e)
-                            }
-                        }
-
-                        function l(e) {
-                            var t;
-                            e.done ? o(e.value) : (t = e.value, t instanceof i ? t : new i(function(e) {
-                                e(t)
-                            })).then(s, a)
-                        }
-                        l((r = r.apply(e, t || [])).next())
-                    })
-                };
-
-                function S(e) {
-                    return E(this, void 0, void 0, function*() {
-                        const {
-                            repoRoot: t,
-                            filePaths: i,
-                            getContent: r
-                        } = e, o = new Map;
-                        if (0 === i.length) return o;
-                        const n = yield D(t, i);
-                        return yield Promise.all(i.map(e => E(this, void 0, void 0, function*() {
-                            const t = n.get(e);
-                            if (!0 !== t)
-                                if (!1 !== t)
-                                    if (_(e)) o.set(e, {
-                                        isGenerated: !0,
-                                        source: "path-heuristic"
-                                    });
-                                    else {
-                                        if (r) {
-                                            const t = yield r(e);
-                                            if (void 0 !== t && P(e, t)) return void o.set(e, {
-                                                isGenerated: !0,
-                                                source: "content-heuristic"
-                                            })
-                                        }
-                                        o.set(e, {
-                                            isGenerated: !1,
-                                            source: "none"
-                                        })
-                                    }
-                            else o.set(e, {
-                                isGenerated: !1,
-                                source: "gitattributes"
-                            });
-                            else o.set(e, {
-                                isGenerated: !0,
-                                source: "gitattributes"
-                            })
-                        }))), o
-                    })
-                }
-
-                function D(e, t) {
-                    return E(this, void 0, void 0, function*() {
-                        const i = new Map;
-                        if (0 === t.length) return i;
-                        try {
-                            const r = yield new Promise((i, r) => {
-                                const o = (0, a.spawn)("git", ["check-attr", "linguist-generated", "--stdin"], {
-                                    cwd: e
-                                });
-                                let n = "";
-                                o.stdout.on("data", e => {
-                                    n += e.toString()
-                                }), o.stdin.write(`${t.join("\n")}\n`), o.stdin.end(), o.on("close", e => {
-                                    i(n)
-                                }), o.on("error", e => {
-                                    r(e)
-                                })
-                            });
-                            for (const e of r.trim().split("\n")) {
-                                const t = e.match(/^(.+): linguist-generated: (.+)$/);
-                                if (t) {
-                                    const e = t[1],
-                                        r = t[2];
-                                    "true" === r || "set" === r ? i.set(e, !0) : "false" !== r && "unset" !== r || i.set(e, !1)
-                                }
-                            }
-                        } catch (e) {}
-                        return i
-                    })
-                }
-
-                function A(e) {
-                    return E(this, void 0, void 0, function*() {
-                        const {
-                            filePath: t,
-                            getContent: i,
-                            gitattributesOverride: r
-                        } = e;
-                        if (void 0 !== r) return r;
-                        if (_(t)) return !0;
-                        if (i) {
-                            const e = yield i();
-                            if (void 0 !== e) return P(t, e)
-                        }
-                        return !1
-                    })
-                }
-
-                function _(e) {
-                    return new x(e).isGeneratedByPath()
-                }
-
-                function P(e, t) {
-                    return new x(e, () => t).isGeneratedByContent()
-                }
-                class x {
-                    constructor(e, t) {
-                        this.name = e, this.extname = l.extname(e).toLowerCase(), this.getContent = t
-                    }
-                    get lines() {
-                        var e;
-                        if (void 0 === this.cachedLines) {
-                            const t = null === (e = this.getContent) || void 0 === e ? void 0 : e.call(this);
-                            this.cachedLines = t ? t.split("\n") : []
-                        }
-                        return this.cachedLines
-                    }
-                    get data() {
-                        var e;
-                        return null === (e = this.getContent) || void 0 === e ? void 0 : e.call(this)
-                    }
-                    isGeneratedByPath() {
-                        return this.xcodeFile() || this.intellijFile() || this.cocoapods() || this.carthageBuild() || this.generatedGraphqlRelay() || this.generatedNetDesignerFile() || this.generatedNetSpecflowFeatureFile() || this.composerLock() || this.cargoLock() || this.cargoOrig() || this.denoLock() || this.flakeLock() || this.bazelLock() || this.nodeModules() || this.goVendor() || this.goLock() || this.packageResolved() || this.poetryLock() || this.pdmLock() || this.uvLock() || this.pixiLock() || this.esyLock() || this.npmShrinkwrapOrPackageLock() || this.pnpmLock() || this.bunLock() || this.terraformLock() || this.generatedYarnPlugnplay() || this.godeps() || this.generatedByZephir() || this.htmlcov() || this.gradleWrapper() || this.mavenWrapper() || this.pipenvLock() || this.generatedPascalTlb() || this.generatedSqlxQuery() || this.sourceMapByName()
-                    }
-                    isGeneratedByContent() {
-                        return !!this.getContent && (this.minifiedFiles() || this.hasSourceMap() || this.sourceMap() || this.compiledCoffeescript() || this.generatedParser() || this.generatedNetDocfile() || this.generatedPostscript() || this.compiledCythonFile() || this.generatedGo() || this.generatedProtocolBufferFromGo() || this.generatedProtocolBuffer() || this.generatedJavascriptProtocolBuffer() || this.generatedTypescriptProtocolBuffer() || this.generatedApacheThrift() || this.generatedJniHeader() || this.vcrCassette() || this.generatedAntlr() || this.generatedModule() || this.generatedUnity3dMeta() || this.generatedRacc() || this.generatedJflex() || this.generatedGrammarkit() || this.generatedRoxygen2() || this.generatedHtml() || this.generatedJison() || this.generatedGrpcCpp() || this.generatedDart() || this.generatedPerlPpportHeader() || this.generatedGamemakerstudio() || this.generatedGimp() || this.generatedVisualstudio6() || this.generatedHaxe() || this.generatedJooq() || this.generatedSorbetRbi() || this.generatedMysqlViewDefinitionFormat())
-                    }
-                    xcodeFile() {
-                        return [".nib", ".xcworkspacedata", ".xcuserstate"].includes(this.extname)
-                    }
-                    intellijFile() {
-                        return /(?:^|\/)\.idea\//.test(this.name)
-                    }
-                    cocoapods() {
-                        return /(^Pods|\/Pods)\//.test(this.name)
-                    }
-                    carthageBuild() {
-                        return /(^|\/)Carthage\/Build\//.test(this.name)
-                    }
-                    generatedGraphqlRelay() {
-                        return /__generated__\//.test(this.name)
-                    }
-                    generatedNetDesignerFile() {
-                        return /\.designer\.(cs|vb)$/i.test(this.name)
-                    }
-                    generatedNetSpecflowFeatureFile() {
-                        return /\.feature\.cs$/i.test(this.name)
-                    }
-                    composerLock() {
-                        return /composer\.lock/.test(this.name)
-                    }
-                    cargoLock() {
-                        return /Cargo\.lock/.test(this.name)
-                    }
-                    cargoOrig() {
-                        return /Cargo\.toml\.orig/.test(this.name)
-                    }
-                    denoLock() {
-                        return /deno\.lock/.test(this.name)
-                    }
-                    flakeLock() {
-                        return /(^|\/)flake\.lock$/.test(this.name)
-                    }
-                    bazelLock() {
-                        return /(^|\/)MODULE\.bazel\.lock$/.test(this.name)
-                    }
-                    nodeModules() {
-                        return /node_modules\//.test(this.name)
-                    }
-                    goVendor() {
-                        return /vendor\/((?!-)[-0-9A-Za-z]+(?<!-)\.)+(com|edu|gov|in|me|net|org|fm|io)/.test(this.name)
-                    }
-                    goLock() {
-                        return /(Gopkg|glide)\.lock/.test(this.name)
-                    }
-                    packageResolved() {
-                        return /Package\.resolved/.test(this.name)
-                    }
-                    poetryLock() {
-                        return /poetry\.lock/.test(this.name)
-                    }
-                    pdmLock() {
-                        return /pdm\.lock/.test(this.name)
-                    }
-                    uvLock() {
-                        return /uv\.lock/.test(this.name)
-                    }
-                    pixiLock() {
-                        return /pixi\.lock/.test(this.name)
-                    }
-                    esyLock() {
-                        return /(^|\/)(\w+\.)?esy\.lock$/.test(this.name)
-                    }
-                    npmShrinkwrapOrPackageLock() {
-                        return /npm-shrinkwrap\.json/.test(this.name) || /package-lock\.json/.test(this.name)
-                    }
-                    pnpmLock() {
-                        return /pnpm-lock\.yaml/.test(this.name)
-                    }
-                    bunLock() {
-                        return /(?:^|\/)bun\.lockb?$/.test(this.name)
-                    }
-                    terraformLock() {
-                        return /(?:^|\/)\.terraform\.lock\.hcl$/.test(this.name)
-                    }
-                    generatedYarnPlugnplay() {
-                        return /(^|\/)\.pnp\..*$/.test(this.name)
-                    }
-                    godeps() {
-                        return /Godeps\//.test(this.name)
-                    }
-                    generatedByZephir() {
-                        return /\.zep\.(c|h|php)$/.test(this.name)
-                    }
-                    htmlcov() {
-                        return /(?:^|\/)htmlcov\//.test(this.name)
-                    }
-                    gradleWrapper() {
-                        return /(?:^|\/)gradlew(?:\.bat)?$/i.test(this.name)
-                    }
-                    mavenWrapper() {
-                        return /(?:^|\/)mvnw(?:\.cmd)?$/i.test(this.name)
-                    }
-                    pipenvLock() {
-                        return /Pipfile\.lock/.test(this.name)
-                    }
-                    generatedPascalTlb() {
-                        return /_tlb\.pas$/i.test(this.name)
-                    }
-                    generatedSqlxQuery() {
-                        return /(?:^|\/)\.sqlx\/query-[a-f\d]{64}\.json$/.test(this.name)
-                    }
-                    sourceMapByName() {
-                        return /\.(css|js)\.map$/i.test(this.name)
-                    }
-                    maybeMinified() {
-                        return [".js", ".css"].includes(this.extname)
-                    }
-                    minifiedFiles() {
-                        return !(!this.maybeMinified() || 0 === this.lines.length) && this.lines.reduce((e, t) => e + t.length, 0) / this.lines.length > 110
-                    }
-                    hasSourceMap() {
-                        return !!this.maybeMinified() && this.lines.slice(-2).some(e => /^\/[*/][#@] source(?:Mapping)?URL|sourceURL=/.test(e))
-                    }
-                    sourceMap() {
-                        if (".map" !== this.extname) return !1;
-                        if (/\.(css|js)\.map$/i.test(this.name)) return !0;
-                        const e = this.lines[0] || "";
-                        return /^{"version":\d+,/.test(e) || /^\/\*\* Begin line maps\. \*\*\/{/.test(e)
-                    }
-                    compiledCoffeescript() {
-                        if (".js" !== this.extname) return !1;
-                        const e = this.lines[0] || "";
-                        if (/^\/\/ Generated by /.test(e)) return !0;
-                        if ("(function() {" === e && "}).call(this);" === (this.lines[this.lines.length - 2] || "") && "" === (this.lines[this.lines.length - 1] || "")) {
-                            let e = 0;
-                            for (const t of this.lines)
-                                if (/var /.test(t)) {
-                                    const i = t.match(/_fn|_i|_len|_ref|_results/g);
-                                    e += 1 * ((null == i ? void 0 : i.length) || 0);
-                                    const r = t.match(/__bind|__extends|__hasProp|__indexOf|__slice/g);
-                                    e += 3 * ((null == r ? void 0 : r.length) || 0)
-                                } return e >= 3
-                        }
-                        return !1
-                    }
-                    generatedNetDocfile() {
-                        return ".xml" === this.extname && !(this.lines.length <= 3) && (this.lines[1] || "").includes("<doc>") && (this.lines[2] || "").includes("<assembly>") && (this.lines[this.lines.length - 2] || "").includes("</doc>")
-                    }
-                    generatedParser() {
-                        if (".js" !== this.extname) return !1;
-                        const e = this.lines.slice(0, 5).join("");
-                        return /^(?:[^/]|\/[^*])*\/\*(?:[^*]|\*[^/])*Generated by PEG\.js/.test(e)
-                    }
-                    generatedPostscript() {
-                        if (![".ps", ".eps", ".pfa"].includes(this.extname)) return !1;
-                        const e = this.data;
-                        if (!e) return !1;
-                        if (/^\s*(?:currentfile eexec\s+|\/sfnts\s+\[\s<)/.test(e)) return !0;
-                        const t = this.lines.slice(0, 10).find(e => /^%%Creator: /.test(e));
-                        return !!t && (!(!/[0-9]|draw|mpage|ImageMagick|inkscape|MATLAB/.test(t) && !/PCBNEW|pnmtops|\(Unknown\)|Serif Affinity|Filterimage -tops/.test(t)) || !!t.includes("EAGLE") && this.lines.slice(0, 5).some(e => /^%%Title: EAGLE Drawing /.test(e)))
-                    }
-                    generatedGo() {
-                        return ".go" === this.extname && !(this.lines.length <= 1) && this.lines.slice(0, 40).some(e => /^\/\/ Code generated .*/.test(e))
-                    }
-                    generatedProtocolBufferFromGo() {
-                        return ".proto" === this.extname && !(this.lines.length <= 1) && this.lines.slice(0, 20).some(e => e.includes("This file was autogenerated by go-to-protobuf"))
-                    }
-                    generatedProtocolBuffer() {
-                        return !![".py", ".java", ".h", ".cc", ".cpp", ".m", ".rb", ".php"].includes(this.extname) && !(this.lines.length <= 1) && this.lines.slice(0, 3).some(e => e.includes("Generated by the protocol buffer compiler.  DO NOT EDIT!"))
-                    }
-                    generatedJavascriptProtocolBuffer() {
-                        return ".js" === this.extname && !(this.lines.length <= 6) && (this.lines[5] || "").includes("GENERATED CODE -- DO NOT EDIT!")
-                    }
-                    generatedTypescriptProtocolBuffer() {
-                        return ".ts" === this.extname && !(this.lines.length <= 4) && (this.lines[0] || "").includes("Code generated by protoc-gen-ts_proto. DO NOT EDIT.")
-                    }
-                    generatedApacheThrift() {
-                        return !![".rb", ".py", ".go", ".js", ".m", ".java", ".h", ".cc", ".cpp", ".php"].includes(this.extname) && this.lines.slice(0, 6).some(e => e.includes("Autogenerated by Thrift Compiler"))
-                    }
-                    generatedJniHeader() {
-                        return ".h" === this.extname && !(this.lines.length <= 2) && (this.lines[0] || "").includes("/* DO NOT EDIT THIS FILE - it is machine generated */") && (this.lines[1] || "").includes("#include <jni.h>")
-                    }
-                    vcrCassette() {
-                        return ".yml" === this.extname && !(this.lines.length <= 2) && (this.lines[this.lines.length - 2] || "").includes("recorded_with: VCR")
-                    }
-                    generatedAntlr() {
-                        return ".g" === this.extname && !(this.lines.length <= 2) && (this.lines[1] || "").includes("generated by Xtest")
-                    }
-                    compiledCythonFile() {
-                        return !![".c", ".cpp"].includes(this.extname) && !(this.lines.length <= 1) && (this.lines[0] || "").includes("Generated by Cython")
-                    }
-                    generatedModule() {
-                        if (".mod" !== this.extname) return !1;
-                        if (this.lines.length <= 1) return !1;
-                        const e = this.lines[0] || "";
-                        return e.includes("PCBNEW-LibModule-V") || e.includes("GFORTRAN module version '")
-                    }
-                    generatedUnity3dMeta() {
-                        return ".meta" === this.extname && !(this.lines.length <= 1) && (this.lines[0] || "").includes("fileFormatVersion: ")
-                    }
-                    generatedRacc() {
-                        return ".rb" === this.extname && !(this.lines.length <= 2) && (this.lines[2] || "").startsWith("# This file is automatically generated by Racc")
-                    }
-                    generatedJflex() {
-                        return ".java" === this.extname && !(this.lines.length <= 1) && (this.lines[0] || "").startsWith("/* The following code was generated by JFlex ")
-                    }
-                    generatedGrammarkit() {
-                        return ".java" === this.extname && !(this.lines.length <= 1) && (this.lines[0] || "").startsWith("// This is a generated file. Not intended for manual editing.")
-                    }
-                    generatedRoxygen2() {
-                        return ".rd" === this.extname && !(this.lines.length <= 1) && (this.lines[0] || "").includes("% Generated by roxygen2: do not edit by hand")
-                    }
-                    generatedHtml() {
-                        var e;
-                        if (![".html", ".htm", ".xhtml"].includes(this.extname)) return !1;
-                        if (this.lines.length <= 1) return !1;
-                        if (this.lines.slice(0, 2).some(e => /<!-- Generated by pkgdown: do not edit by hand -->/.test(e))) return !0;
-                        if (this.lines.length > 2 && (this.lines[2] || "").startsWith("\x3c!-- This is an automatically generated file.")) return !0;
-                        if (this.lines.slice(0, 31).some(e => /<!--\s+Generated by Doxygen\s+[.0-9]+\s*-->/i.test(e))) return !0;
-                        const t = this.lines.slice(0, 31).join(" ").match(/<meta(\s+[^>]+)>/gi);
-                        if (!t) return !1;
-                        for (const i of t) {
-                            const t = this.extractHtmlMeta(i);
-                            if ("generator" === (null === (e = t.name) || void 0 === e ? void 0 : e.toLowerCase()) && (t.content || t.value)) {
-                                const e = t.content || t.value || "";
-                                if (/^(org\s+mode|j?latex2html|groff|makeinfo|texi2html|ronn)\b/i.test(e)) return !0
-                            }
-                        }
-                        return !1
-                    }
-                    extractHtmlMeta(e) {
-                        const t = {},
-                            i = e.matchAll(/(?<=^|\s)(name|content|value)\s*=\s*("[^"]+"|'[^']+'|[^\s"']+)/gi);
-                        for (const e of i) {
-                            const i = e[1].toLowerCase();
-                            let r = e[2];
-                            (r.startsWith('"') && r.endsWith('"') || r.startsWith("'") && r.endsWith("'")) && (r = r.slice(1, -1)), t[i] = r
-                        }
-                        return t
-                    }
-                    generatedJison() {
-                        if (".js" !== this.extname) return !1;
-                        if (this.lines.length <= 1) return !1;
-                        const e = this.lines[0] || "";
-                        return e.startsWith("/* parser generated by jison ") || e.startsWith("/* generated by jison-lex ")
-                    }
-                    generatedGrpcCpp() {
-                        return !![".cpp", ".hpp", ".h", ".cc"].includes(this.extname) && !(this.lines.length <= 1) && (this.lines[0] || "").startsWith("// Generated by the gRPC")
-                    }
-                    generatedDart() {
-                        return ".dart" === this.extname && !(this.lines.length <= 1) && this.lines.slice(0, 3).some(e => /generated code\W{2,3}do not modify/i.test(e))
-                    }
-                    generatedPerlPpportHeader() {
-                        return !!/ppport\.h$/.test(this.name) && !(this.lines.length <= 10) && (this.lines[8] || "").includes("Automatically created by Devel::PPPort")
-                    }
-                    generatedGamemakerstudio() {
-                        if (![".yy", ".yyp"].includes(this.extname)) return !1;
-                        if (this.lines.length <= 3) return !1;
-                        const e = this.lines.slice(0, 3).join("");
-                        return /^\s*[{[]/.test(e) || /^\d\.\d\.\d.+\|\{/.test(this.lines[0] || "")
-                    }
-                    generatedGimp() {
-                        if (![".c", ".h"].includes(this.extname)) return !1;
-                        if (0 === this.lines.length) return !1;
-                        const e = this.lines[0] || "";
-                        return /^\/\* GIMP [a-zA-Z0-9- ]+ C-Source image dump \(.+?\.c\) \*\//.test(e) || /^\/\* {2}GIMP header image file format \([a-zA-Z0-9- ]+\): .+?\.h {2}\*\//.test(e)
-                    }
-                    generatedVisualstudio6() {
-                        return ".dsp" === this.extname && this.lines.slice(0, 3).some(e => e.includes("# Microsoft Developer Studio Generated Build File"))
-                    }
-                    generatedHaxe() {
-                        return !![".js", ".py", ".lua", ".cpp", ".h", ".java", ".cs", ".php"].includes(this.extname) && this.lines.slice(0, 3).some(e => e.includes("Generated by Haxe"))
-                    }
-                    generatedJooq() {
-                        return ".java" === this.extname && this.lines.slice(0, 2).some(e => e.includes("This file is generated by jOOQ."))
-                    }
-                    generatedSorbetRbi() {
-                        return ".rbi" === this.extname && !(this.lines.length < 5) && /^# typed:/.test(this.lines[0] || "") && (this.lines[2] || "").includes("DO NOT EDIT MANUALLY") && /^# Please (run|instead update this file by running) `bin\/tapioca/.test(this.lines[4] || "")
-                    }
-                    generatedMysqlViewDefinitionFormat() {
-                        return ".frm" === this.extname && (this.lines[0] || "").includes("TYPE=VIEW")
-                    }
-                }
-                const T = require("node:events"),
-                    M = require("node:url");
-                var I = function(e, t, i, r) {
-                    return new(i || (i = Promise))(function(o, n) {
-                        function s(e) {
-                            try {
-                                l(r.next(e))
-                            } catch (e) {
-                                n(e)
-                            }
-                        }
-
-                        function a(e) {
-                            try {
-                                l(r.throw(e))
-                            } catch (e) {
-                                n(e)
-                            }
-                        }
-
-                        function l(e) {
-                            var t;
-                            e.done ? o(e.value) : (t = e.value, t instanceof i ? t : new i(function(e) {
-                                e(t)
-                            })).then(s, a)
-                        }
-                        l((r = r.apply(e, t || [])).next())
-                    })
-                };
-                class B extends Error {
-                    constructor() {
-                        super("Operation cancelled"), this.name = "CancelledError"
-                    }
-                }
-                class O {
-                    get onOutput() {
-                        return this._onOutput
-                    }
-                    constructor(e) {
-                        this._onOutput = new T.EventEmitter, this.path = e.gitPath, this.env = e.env || {}, e.onLog && this._onOutput.on("log", e.onLog)
-                    }
-                    exec(e, t) {
-                        return I(this, arguments, void 0, function*(e, t, i = {}) {
-                            const r = Object.assign({
-                                cwd: e
-                            }, i);
-                            return yield this._exec(t, r)
-                        })
-                    }
-                    exec2(e) {
-                        return I(this, arguments, void 0, function*(e, t = {}) {
-                            return yield this._exec(e, t)
-                        })
-                    }
-                    stream(e, t, i = {}) {
-                        const r = Object.assign({
-                                cwd: e
-                            }, i),
-                            o = this.spawn(t, r);
-                        if (!1 !== i.log) {
-                            const e = Date.now();
-                            o.on("exit", () => {
-                                this.log(`> git ${t.join(" ")} [${Date.now()-e}ms]${o.killed?" (cancelled)":""}\n`)
-                            })
-                        }
-                        return o
-                    }
-                    _exec(e) {
-                        return I(this, arguments, void 0, function*(e, t = {}) {
-                            var i;
-                            const r = this.spawn(e, t);
-                            null === (i = t.onSpawn) || void 0 === i || i.call(t, r), t.input && r.stdin.end(t.input, "utf8");
-                            const a = Date.now();
-                            let l;
-                            try {
-                                l = yield function(e, t) {
-                                    return I(this, void 0, void 0, function*() {
-                                        if (!e.stdout || !e.stderr) throw new o({
-                                            message: "Failed to get stdout or stderr from git process."
-                                        });
-                                        if (null == t ? void 0 : t.aborted) throw new B;
-                                        const i = [],
-                                            r = (e, t, r) => {
-                                                e.once(t, r), i.push(p(() => e.removeListener(t, r)))
-                                            },
-                                            n = (e, t, r) => {
-                                                e.on(t, r), i.push(p(() => e.removeListener(t, r)))
-                                            };
-                                        let a = Promise.all([new Promise((t, i) => {
-                                            r(e, "error", s(i)), r(e, "exit", t)
-                                        }), new Promise(t => {
-                                            const i = [];
-                                            n(e.stdout, "data", e => i.push(e)), r(e.stdout, "close", () => t(Buffer.concat(i)))
-                                        }), new Promise(t => {
-                                            const i = [];
-                                            n(e.stderr, "data", e => i.push(e)), r(e.stderr, "close", () => t(Buffer.concat(i).toString("utf8")))
-                                        })]);
-                                        if (t) {
-                                            const r = new Promise((r, o) => {
-                                                const n = () => {
-                                                    try {
-                                                        e.kill()
-                                                    } catch (e) {}
-                                                    o(new B)
-                                                };
-                                                t.aborted ? n() : (t.addEventListener("abort", n, {
-                                                    once: !0
-                                                }), i.push(p(() => t.removeEventListener("abort", n))))
-                                            });
-                                            a = Promise.race([a, r])
-                                        }
-                                        try {
-                                            const [e, t, i] = yield a;
-                                            return {
-                                                exitCode: e,
-                                                stdout: t,
-                                                stderr: i
-                                            }
-                                        } finally {
-                                            m(i)
-                                        }
-                                    })
-                                }(r, t.signal)
-                            } catch (t) {
-                                throw t instanceof B && this.log(`> git ${e.join(" ")} [${Date.now()-a}ms] (cancelled)\n`), t
-                            }!1 !== t.log && (this.log(`> git ${e.join(" ")} [${Date.now()-a}ms] ${t.caller?`(${t.caller})`:""}\n`), l.stderr.length > 0 && this.log(`${l.stderr}\n`));
-                            const c = {
-                                exitCode: l.exitCode,
-                                stdout: l.stdout.toString("utf8"),
-                                stderr: l.stderr
-                            };
-                            return l.exitCode ? Promise.reject(new o({
-                                message: "Failed to execute git",
-                                stdout: c.stdout,
-                                stderr: c.stderr,
-                                exitCode: c.exitCode,
-                                gitErrorCode: n(c.stderr),
-                                gitCommand: e[0],
-                                gitArgs: e
-                            })) : c
-                        })
-                    }
-                    spawn(e, t = {}) {
-                        if (!this.path) throw new Error("git could not be found in the system.");
-                        const i = Object.assign({}, t);
-                        i.stdio || t.input || (i.stdio = ["ignore", null, null]), i.env = Object.assign(Object.assign(Object.assign(Object.assign({}, process.env), this.env), t.env || {}), {
-                            VSCODE_GIT_COMMAND: e[0],
-                            LC_ALL: "en_US.UTF-8",
-                            LANG: "en_US.UTF-8",
-                            GIT_PAGER: "cat"
-                        });
-                        const r = this.getCwd(t);
-                        return r && (i.cwd = h(r)), a.spawn(this.path, e, i)
-                    }
-                    getCwd(e) {
-                        const t = e.cwd;
-                        return void 0 === t || "string" == typeof t ? t : t instanceof URL && "file:" === t.protocol ? (0, M.fileURLToPath)(t) : void 0
-                    }
-                    log(e) {
-                        this._onOutput.emit("log", e)
-                    }
-                }
             }
         },
         __webpack_module_cache__ = {};
@@ -16531,4 +16637,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/git/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/extensions/git/dist/main.js.map

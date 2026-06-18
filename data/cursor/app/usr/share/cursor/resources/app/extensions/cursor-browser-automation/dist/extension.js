@@ -62172,68 +62172,28 @@
         }
         const qA = o.join(c.homedir(), ".cursor", "browser-logs");
         const HA = function() {
-                const e = {},
-                    t = function(e) {
-                        return {
-                            async navigate(t, r) {
-                                await async function(e) {
-                                    await n.commands.executeCommand("cursor.browserOriginAllowlist.ensureNavigationAllowed", {
-                                        url: e
-                                    })
-                                }(t.url), a.info(`Navigating to ${t.url}${t.headless?" (headless)":""}`);
-                                const i = {
-                                        ownerAgentId: r?.ownerAgentId
-                                    },
-                                    s = await n.commands.executeCommand("cursor.browserView.listTabs", i),
-                                    o = s?.tabs ?? [],
-                                    c = new Set(s?.headlessTabs ?? []);
-                                if (t.viewId) {
-                                    const i = o.includes(t.viewId);
-                                    if (!i && t.headless) {
-                                        a.info(`Creating headless tab with viewId: ${t.viewId}`);
-                                        const i = await n.commands.executeCommand("cursor.browserView.newHeadlessTab", t.url, t.viewId, r?.ownerAgentId);
-                                        return i?.browserId ? e.snapshot({
-                                            viewId: i.browserId,
-                                            headless: !0,
-                                            take_screenshot_afterwards: t.take_screenshot_afterwards
-                                        }, r) : {
-                                            content: [{
-                                                type: "text",
-                                                text: "Failed to create headless browser tab"
-                                            }]
-                                        }
-                                    }
-                                    return i ? (wA.delete(t.viewId), await n.commands.executeCommand("cursor.browserView.navigate", t.url, t.viewId, {
-                                        headless: t.headless,
-                                        preserveFocus: !0,
-                                        trackingId: "mcp_tool",
-                                        ownerAgentId: r?.ownerAgentId
-                                    }), e.snapshot({
-                                        viewId: t.viewId,
-                                        headless: t.headless,
-                                        take_screenshot_afterwards: t.take_screenshot_afterwards
-                                    }, r)) : {
-                                        content: [{
-                                            type: "text",
-                                            text: `Browser view not found: ${t.viewId}. Use browser_navigate without a viewId to create a new tab.`
-                                        }]
-                                    }
-                                }
-                                if (o.length > 0 && !t.headless && !t.newTab) {
-                                    const a = o.find(e => !c.has(e));
-                                    if (a) return wA.delete(a), await n.commands.executeCommand("cursor.browserView.navigate", t.url, a, {
-                                        preserveFocus: !0,
-                                        trackingId: "mcp_tool",
-                                        ownerAgentId: r?.ownerAgentId
-                                    }), e.snapshot({
-                                        viewId: a,
-                                        take_screenshot_afterwards: t.take_screenshot_afterwards
-                                    }, r)
-                                }
-                                if (t.headless) {
-                                    const a = await n.commands.executeCommand("cursor.browserView.newHeadlessTab", t.url, void 0, r?.ownerAgentId);
-                                    return a?.browserId ? e.snapshot({
-                                        viewId: a.browserId,
+            const e = {},
+                t = function(e) {
+                    return {
+                        async navigate(t, r) {
+                            await async function(e) {
+                                await n.commands.executeCommand("cursor.browserOriginAllowlist.ensureNavigationAllowed", {
+                                    url: e
+                                })
+                            }(t.url), a.info(`Navigating to ${t.url}${t.headless?" (headless)":""}`);
+                            const i = {
+                                    ownerAgentId: r?.ownerAgentId
+                                },
+                                s = await n.commands.executeCommand("cursor.browserView.listTabs", i),
+                                o = s?.tabs ?? [],
+                                c = new Set(s?.headlessTabs ?? []);
+                            if (t.viewId) {
+                                const i = o.includes(t.viewId);
+                                if (!i && t.headless) {
+                                    a.info(`Creating headless tab with viewId: ${t.viewId}`);
+                                    const i = await n.commands.executeCommand("cursor.browserView.newHeadlessTab", t.url, t.viewId, r?.ownerAgentId);
+                                    return i?.browserId ? e.snapshot({
+                                        viewId: i.browserId,
                                         headless: !0,
                                         take_screenshot_afterwards: t.take_screenshot_afterwards
                                     }, r) : {
@@ -62243,613 +62203,806 @@
                                         }]
                                     }
                                 }
-                                const d = {
-                                    preserveFocus: void 0 === t.position,
+                                return i ? (wA.delete(t.viewId), await n.commands.executeCommand("cursor.browserView.navigate", t.url, t.viewId, {
+                                    headless: t.headless,
+                                    preserveFocus: !0,
                                     trackingId: "mcp_tool",
-                                    agentId: r?.ownerAgentId
-                                };
-                                t.position && (d.position = t.position);
-                                const u = await n.commands.executeCommand("cursor.browserView.newTab", t.url, d);
-                                return u?.browserId ? e.snapshot({
-                                    viewId: u.browserId,
+                                    ownerAgentId: r?.ownerAgentId
+                                }), e.snapshot({
+                                    viewId: t.viewId,
+                                    headless: t.headless,
+                                    take_screenshot_afterwards: t.take_screenshot_afterwards
+                                }, r)) : {
+                                    content: [{
+                                        type: "text",
+                                        text: `Browser view not found: ${t.viewId}. Use browser_navigate without a viewId to create a new tab.`
+                                    }]
+                                }
+                            }
+                            if (o.length > 0 && !t.headless && !t.newTab) {
+                                const a = o.find(e => !c.has(e));
+                                if (a) return wA.delete(a), await n.commands.executeCommand("cursor.browserView.navigate", t.url, a, {
+                                    preserveFocus: !0,
+                                    trackingId: "mcp_tool",
+                                    ownerAgentId: r?.ownerAgentId
+                                }), e.snapshot({
+                                    viewId: a,
+                                    take_screenshot_afterwards: t.take_screenshot_afterwards
+                                }, r)
+                            }
+                            if (t.headless) {
+                                const a = await n.commands.executeCommand("cursor.browserView.newHeadlessTab", t.url, void 0, r?.ownerAgentId);
+                                return a?.browserId ? e.snapshot({
+                                    viewId: a.browserId,
+                                    headless: !0,
                                     take_screenshot_afterwards: t.take_screenshot_afterwards
                                 }, r) : {
                                     content: [{
                                         type: "text",
-                                        text: "Failed to create new browser tab"
+                                        text: "Failed to create headless browser tab"
                                     }]
                                 }
-                            },
-                            async tabs(t, r) {
-                                const a = {
-                                    ownerAgentId: r?.ownerAgentId
-                                };
-                                switch (t.action) {
-                                    case "list": {
-                                        const e = await n.commands.executeCommand("cursor.browserView.listTabs", a);
-                                        return e && e.tabs ? {
-                                            content: [{
-                                                type: "text",
-                                                text: `Open tabs:\n${(await Promise.all(e.tabs.map(async(e,t)=>{const[r,i]=await Promise.all([n.commands.executeCommand("cursor.browserView.getURL",e,a),n.commands.executeCommand("cursor.browserView.getTitle",e,a)]);return`[${t}] "${i||"New Tab"}" - ${r||"about:blank"} (viewId: ${e})`}))).join("\n")}`
-                                            }]
-                                        } : {
-                                            content: [{
-                                                type: "text",
-                                                text: "Open tabs:\n(none)"
-                                            }]
-                                        }
+                            }
+                            const d = {
+                                preserveFocus: void 0 === t.position,
+                                trackingId: "mcp_tool",
+                                agentId: r?.ownerAgentId
+                            };
+                            t.position && (d.position = t.position);
+                            const u = await n.commands.executeCommand("cursor.browserView.newTab", t.url, d);
+                            return u?.browserId ? e.snapshot({
+                                viewId: u.browserId,
+                                take_screenshot_afterwards: t.take_screenshot_afterwards
+                            }, r) : {
+                                content: [{
+                                    type: "text",
+                                    text: "Failed to create new browser tab"
+                                }]
+                            }
+                        },
+                        async tabs(t, r) {
+                            const a = {
+                                ownerAgentId: r?.ownerAgentId
+                            };
+                            switch (t.action) {
+                                case "list": {
+                                    const e = await n.commands.executeCommand("cursor.browserView.listTabs", a);
+                                    return e && e.tabs ? {
+                                        content: [{
+                                            type: "text",
+                                            text: `Open tabs:\n${(await Promise.all(e.tabs.map(async(e,t)=>{const[r,i]=await Promise.all([n.commands.executeCommand("cursor.browserView.getURL",e,a),n.commands.executeCommand("cursor.browserView.getTitle",e,a)]);return`[${t}] "${i||"New Tab"}" - ${r||"about:blank"} (viewId: ${e})`}))).join("\n")}`
+                                        }]
+                                    } : {
+                                        content: [{
+                                            type: "text",
+                                            text: "Open tabs:\n(none)"
+                                        }]
                                     }
-                                    case "new": {
-                                        const e = {
-                                            preserveFocus: void 0 === t.position,
-                                            trackingId: "mcp_tool",
-                                            agentId: r?.ownerAgentId
-                                        };
-                                        t.position && (e.position = t.position);
-                                        const a = await n.commands.executeCommand("cursor.browserView.newTab", void 0, e),
-                                            i = a?.browserId,
-                                            s = [{
-                                                type: "text",
-                                                text: "Created new tab" + ("side" === t.position ? " on the side" : "")
-                                            }];
-                                        return i && s.push({
-                                            type: "metadata",
-                                            viewId: i,
-                                            title: "New Tab",
-                                            url: "about:blank"
-                                        }), {
-                                            content: s
-                                        }
-                                    }
-                                    case "close": {
-                                        const i = await n.commands.executeCommand("cursor.browserView.listTabs", a),
-                                            s = i?.tabs ?? [],
-                                            o = void 0 !== t.index ? s[t.index] : void 0;
-                                        let c = "Tab",
-                                            d = "";
-                                        if (o) {
-                                            const [e, t] = await Promise.all([n.commands.executeCommand("cursor.browserView.getTitle", o, a), n.commands.executeCommand("cursor.browserView.getURL", o, a)]);
-                                            c = e || "Tab", d = t || ""
-                                        }
-                                        await n.commands.executeCommand("cursor.browserView.closeTab", o, a);
-                                        const u = await n.commands.executeCommand("cursor.browserView.listTabs", a),
-                                            l = u?.activeTab ?? u?.lastInteractedTab;
-                                        return l ? e.snapshot({
-                                            viewId: l
-                                        }, r) : {
-                                            content: [{
-                                                type: "text",
-                                                text: "Tab closed. No remaining tabs."
-                                            }, {
-                                                type: "metadata",
-                                                viewId: o || "",
-                                                title: c,
-                                                url: d
-                                            }]
-                                        }
-                                    }
-                                    case "select": {
-                                        if (void 0 === t.index) throw new Error("Tab index is required");
-                                        const i = await n.commands.executeCommand("cursor.browserView.listTabs", a),
-                                            s = (i?.tabs ?? [])[t.index];
-                                        if (!s) throw new Error(`Tab ${t.index} not found`);
-                                        await n.commands.executeCommand("cursor.browserView.selectTab", s, {
-                                            preserveFocus: !0,
-                                            ownerAgentId: r?.ownerAgentId
-                                        });
-                                        const [o, c] = await Promise.all([n.commands.executeCommand("cursor.browserView.getTitle", s, a), n.commands.executeCommand("cursor.browserView.getURL", s, a)]), d = await e.snapshot({
-                                            viewId: s
-                                        }, r), u = d.content?.find(e => "metadata" === e.type);
-                                        return u && "metadata" === u.type && (u.title = o || "New Tab", u.url = c || "about:blank"), d
-                                    }
-                                    default:
-                                        throw new Error(`Unknown action: ${t.action}`)
                                 }
+                                case "new": {
+                                    const e = {
+                                        preserveFocus: void 0 === t.position,
+                                        trackingId: "mcp_tool",
+                                        agentId: r?.ownerAgentId
+                                    };
+                                    t.position && (e.position = t.position);
+                                    const a = await n.commands.executeCommand("cursor.browserView.newTab", void 0, e),
+                                        i = a?.browserId,
+                                        s = [{
+                                            type: "text",
+                                            text: "Created new tab" + ("side" === t.position ? " on the side" : "")
+                                        }];
+                                    return i && s.push({
+                                        type: "metadata",
+                                        viewId: i,
+                                        title: "New Tab",
+                                        url: "about:blank"
+                                    }), {
+                                        content: s
+                                    }
+                                }
+                                case "close": {
+                                    const i = await n.commands.executeCommand("cursor.browserView.listTabs", a),
+                                        s = i?.tabs ?? [],
+                                        o = void 0 !== t.index ? s[t.index] : void 0;
+                                    let c = "Tab",
+                                        d = "";
+                                    if (o) {
+                                        const [e, t] = await Promise.all([n.commands.executeCommand("cursor.browserView.getTitle", o, a), n.commands.executeCommand("cursor.browserView.getURL", o, a)]);
+                                        c = e || "Tab", d = t || ""
+                                    }
+                                    await n.commands.executeCommand("cursor.browserView.closeTab", o, a);
+                                    const u = await n.commands.executeCommand("cursor.browserView.listTabs", a),
+                                        l = u?.activeTab ?? u?.lastInteractedTab;
+                                    return l ? e.snapshot({
+                                        viewId: l
+                                    }, r) : {
+                                        content: [{
+                                            type: "text",
+                                            text: "Tab closed. No remaining tabs."
+                                        }, {
+                                            type: "metadata",
+                                            viewId: o || "",
+                                            title: c,
+                                            url: d
+                                        }]
+                                    }
+                                }
+                                case "select": {
+                                    if (void 0 === t.index) throw new Error("Tab index is required");
+                                    const i = await n.commands.executeCommand("cursor.browserView.listTabs", a),
+                                        s = (i?.tabs ?? [])[t.index];
+                                    if (!s) throw new Error(`Tab ${t.index} not found`);
+                                    await n.commands.executeCommand("cursor.browserView.selectTab", s, {
+                                        preserveFocus: !0,
+                                        ownerAgentId: r?.ownerAgentId
+                                    });
+                                    const [o, c] = await Promise.all([n.commands.executeCommand("cursor.browserView.getTitle", s, a), n.commands.executeCommand("cursor.browserView.getURL", s, a)]), d = await e.snapshot({
+                                        viewId: s
+                                    }, r), u = d.content?.find(e => "metadata" === e.type);
+                                    return u && "metadata" === u.type && (u.title = o || "New Tab", u.url = c || "about:blank"), d
+                                }
+                                default:
+                                    throw new Error(`Unknown action: ${t.action}`)
                             }
                         }
-                    }(e),
-                    r = {
-                        async snapshot(e, t) {
-                            const n = await ZA(e.viewId, t);
-                            if (!n) return {
+                    }
+                }(e),
+                r = {
+                    async snapshot(e, t) {
+                        const n = await ZA(e.viewId, t);
+                        if (!n) return {
+                            content: [{
+                                type: "text",
+                                text: "No browser tab available. Please navigate to a page first."
+                            }]
+                        };
+                        await AA("browser_snapshot", n, t);
+                        const r = {
+                                interactive: e.interactive ?? !1,
+                                maxDepth: e.maxDepth ?? 20,
+                                compact: e.compact ?? !1,
+                                selector: e.selector ?? null
+                            },
+                            a = `\n\t\t\t\t${i}\n\t\t\t\t(function() {\n\t\t\t\t\tconst options = ${JSON.stringify(r)};\n\t\t\t\t\tconst result = buildPageSnapshot(options);\n\t\t\t\t\treturn {\n\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\tsnapshot: result.tree\n\t\t\t\t\t\t},\n\t\t\t\t\t\tstats: result.stats\n\t\t\t\t\t};\n\t\t\t\t})();\n\t\t\t`,
+                            s = await NA(a, n, e.headless, t);
+                        wA.set(n, Date.now());
+                        const o = [];
+                        s.stats && (o.push(`- Total refs: ${s.stats.totalRefs}`), o.push(`- Interactive refs: ${s.stats.interactiveRefs}`), e.interactive && o.push("- Filter: interactive only"), e.compact && o.push("- Filter: compact mode"), e.selector && o.push(`- Selector: ${e.selector}`));
+                        const c = IA(s.pageState.snapshot),
+                            d = await PA({
+                                action: "snapshot",
+                                detailLines: o.length > 0 ? o : void 0,
+                                pageState: s.pageState,
+                                viewId: n,
+                                snapshotYaml: c,
+                                includeSnapshotDiff: e.includeDiff ?? !1,
+                                context: t
+                            });
+                        return function(e, t) {
+                            xA.set(e, t)
+                        }(n, c), FA(d, n, e.take_screenshot_afterwards ?? !1, t)
+                    }
+                },
+                c = function(e) {
+                    return {
+                        async cdp(t, r) {
+                            const a = await ZA(t.viewId, r);
+                            if (!a) return {
                                 content: [{
                                     type: "text",
                                     text: "No browser tab available. Please navigate to a page first."
                                 }]
                             };
-                            await AA("browser_snapshot", n, t);
-                            const r = {
-                                    interactive: e.interactive ?? !1,
-                                    maxDepth: e.maxDepth ?? 20,
-                                    compact: e.compact ?? !1,
-                                    selector: e.selector ?? null
-                                },
-                                a = `\n\t\t\t\t${i}\n\t\t\t\t(function() {\n\t\t\t\t\tconst options = ${JSON.stringify(r)};\n\t\t\t\t\tconst result = buildPageSnapshot(options);\n\t\t\t\t\treturn {\n\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\tsnapshot: result.tree\n\t\t\t\t\t\t},\n\t\t\t\t\t\tstats: result.stats\n\t\t\t\t\t};\n\t\t\t\t})();\n\t\t\t`,
-                                s = await NA(a, n, e.headless, t);
-                            wA.set(n, Date.now());
-                            const o = [];
-                            s.stats && (o.push(`- Total refs: ${s.stats.totalRefs}`), o.push(`- Interactive refs: ${s.stats.interactiveRefs}`), e.interactive && o.push("- Filter: interactive only"), e.compact && o.push("- Filter: compact mode"), e.selector && o.push(`- Selector: ${e.selector}`));
-                            const c = IA(s.pageState.snapshot),
-                                d = await PA({
-                                    action: "snapshot",
-                                    detailLines: o.length > 0 ? o : void 0,
-                                    pageState: s.pageState,
-                                    viewId: n,
-                                    snapshotYaml: c,
-                                    includeSnapshotDiff: e.includeDiff ?? !1,
-                                    context: t
-                                });
-                            return function(e, t) {
-                                xA.set(e, t)
-                            }(n, c), FA(d, n, e.take_screenshot_afterwards ?? !1, t)
-                        }
-                    },
-                    c = function(e) {
-                        return {
-                            async cdp(t, r) {
-                                const a = await ZA(t.viewId, r);
-                                if (!a) return {
-                                    content: [{
-                                        type: "text",
-                                        text: "No browser tab available. Please navigate to a page first."
-                                    }]
-                                };
-                                await AA("browser_cdp", a, r);
-                                const i = await n.commands.executeCommand("cursor.browserView.sendCDPCommand", t.method, t.params ?? {}, a, {
-                                        ownerAgentId: r?.ownerAgentId
-                                    }),
-                                    c = JSON.stringify(i ?? {}, null, 2);
-                                let d;
-                                if (function(e, t) {
-                                        return "Profiler.stop" === e || t.length > 25e3
-                                    }(t.method, c)) {
-                                    const {
-                                        filePath: e,
-                                        sizeBytes: n
-                                    } = await async function(e, t) {
-                                        await s.mkdir(qA, {
-                                            recursive: !0
-                                        });
-                                        const n = o.join(qA, function(e) {
-                                            const t = (new Date).toISOString().replace(/[:.]/g, "-"),
-                                                n = e.replace(/[^a-zA-Z0-9.-]/g, "_");
-                                            return `${"Profiler.stop"===e?"cdp-profile":"cdp-response"}-${n}-${t}.json`
-                                        }(e));
-                                        return await s.writeFile(n, t, "utf8"), {
-                                            filePath: n,
-                                            sizeBytes: Buffer.byteLength(t, "utf8")
-                                        }
-                                    }(t.method, c);
-                                    d = {
-                                        content: [{
-                                            type: "text",
-                                            text: `${"Profiler.stop"===t.method?"Profile data can be large, so it was saved to a file instead of being inlined.":"CDP response exceeded 25000 characters, so it was saved to a file instead of being inlined."}\nFile: ${e}`
-                                        }, {
-                                            type: "log_file",
-                                            file: e,
-                                            size: n
-                                        }, {
-                                            type: "metadata",
-                                            viewId: a
-                                        }]
+                            await AA("browser_cdp", a, r);
+                            const i = await n.commands.executeCommand("cursor.browserView.sendCDPCommand", t.method, t.params ?? {}, a, {
+                                    ownerAgentId: r?.ownerAgentId
+                                }),
+                                c = JSON.stringify(i ?? {}, null, 2);
+                            let d;
+                            if (function(e, t) {
+                                    return "Profiler.stop" === e || t.length > 25e3
+                                }(t.method, c)) {
+                                const {
+                                    filePath: e,
+                                    sizeBytes: n
+                                } = await async function(e, t) {
+                                    await s.mkdir(qA, {
+                                        recursive: !0
+                                    });
+                                    const n = o.join(qA, function(e) {
+                                        const t = (new Date).toISOString().replace(/[:.]/g, "-"),
+                                            n = e.replace(/[^a-zA-Z0-9.-]/g, "_");
+                                        return `${"Profiler.stop"===e?"cdp-profile":"cdp-response"}-${n}-${t}.json`
+                                    }(e));
+                                    return await s.writeFile(n, t, "utf8"), {
+                                        filePath: n,
+                                        sizeBytes: Buffer.byteLength(t, "utf8")
                                     }
-                                } else d = {
+                                }(t.method, c);
+                                d = {
                                     content: [{
                                         type: "text",
-                                        text: c
+                                        text: `${"Profiler.stop"===t.method?"Profile data can be large, so it was saved to a file instead of being inlined.":"CDP response exceeded 25000 characters, so it was saved to a file instead of being inlined."}\nFile: ${e}`
+                                    }, {
+                                        type: "log_file",
+                                        file: e,
+                                        size: n
                                     }, {
                                         type: "metadata",
                                         viewId: a
                                     }]
-                                };
-                                if (!t.take_screenshot_afterwards) return d;
-                                const u = await e.takeScreenshot({
-                                    viewId: a,
-                                    headless: t.headless
-                                }, r);
-                                return {
-                                    content: [...d.content, ...u.content]
                                 }
-                            },
-                            async takeScreenshot(e, t) {
-                                const r = await ZA(e.viewId, t);
-                                if (!r) return {
-                                    content: [{
-                                        type: "text",
-                                        text: "No browser tab available. Please navigate to a page first."
-                                    }]
-                                };
-                                await AA("browser_take_screenshot", r, t);
-                                let a = {
-                                    ...e,
-                                    viewId: r,
+                            } else d = {
+                                content: [{
+                                    type: "text",
+                                    text: c
+                                }, {
+                                    type: "metadata",
+                                    viewId: a
+                                }]
+                            };
+                            if (!t.take_screenshot_afterwards) return d;
+                            const u = await e.takeScreenshot({
+                                viewId: a,
+                                headless: t.headless
+                            }, r);
+                            return {
+                                content: [...d.content, ...u.content]
+                            }
+                        },
+                        async takeScreenshot(e, t) {
+                            const r = await ZA(e.viewId, t);
+                            if (!r) return {
+                                content: [{
+                                    type: "text",
+                                    text: "No browser tab available. Please navigate to a page first."
+                                }]
+                            };
+                            await AA("browser_take_screenshot", r, t);
+                            let a = {
+                                ...e,
+                                viewId: r,
+                                headless: e.headless,
+                                ownerAgentId: t?.ownerAgentId
+                            };
+                            if (e.filename && !/\.[a-zA-Z0-9]+$/.test(e.filename)) {
+                                const t = e.type || "png";
+                                a = {
+                                    ...a,
+                                    filename: `${e.filename}.${t}`
+                                }
+                            }
+                            const i = new Promise(e => {
+                                    setTimeout(() => {
+                                        e({
+                                            success: !1,
+                                            error: "screen shot timed out, please try again"
+                                        })
+                                    }, 5e3)
+                                }),
+                                s = n.commands.executeCommand("cursor.browserView.takeScreenshot", a),
+                                o = await Promise.race([s, i]);
+                            if (!o.success || o.error) return {
+                                content: [{
+                                    type: "text",
+                                    text: `Screenshot failed: ${o.error||"Unknown error"}`
+                                }]
+                            };
+                            if (o.dataUrl) {
+                                await jA(r, o.dataUrl);
+                                const n = await DA(r, o.dataUrl, {
+                                    cacheViewportScreenshot: (c = a, !c.fullPage && !c.ref && !c.element),
                                     headless: e.headless,
-                                    ownerAgentId: t?.ownerAgentId
-                                };
-                                if (e.filename && !/\.[a-zA-Z0-9]+$/.test(e.filename)) {
-                                    const t = e.type || "png";
-                                    a = {
-                                        ...a,
-                                        filename: `${e.filename}.${t}`
+                                    context: t
+                                });
+                                if (n) {
+                                    const e = ["Screenshot captured successfully"];
+                                    return o.filename && e.push(`Filename: ${o.filename}`), o.savedPath && e.push(`Saved to: ${o.savedPath}`), {
+                                        content: [{
+                                            type: "text",
+                                            text: e.join("\n")
+                                        }, n, {
+                                            type: "metadata",
+                                            viewId: r
+                                        }]
                                     }
                                 }
-                                const i = new Promise(e => {
-                                        setTimeout(() => {
-                                            e({
-                                                success: !1,
-                                                error: "screen shot timed out, please try again"
-                                            })
-                                        }, 5e3)
-                                    }),
-                                    s = n.commands.executeCommand("cursor.browserView.takeScreenshot", a),
-                                    o = await Promise.race([s, i]);
-                                if (!o.success || o.error) return {
-                                    content: [{
-                                        type: "text",
-                                        text: `Screenshot failed: ${o.error||"Unknown error"}`
-                                    }]
-                                };
-                                if (o.dataUrl) {
-                                    await jA(r, o.dataUrl);
-                                    const n = await DA(r, o.dataUrl, {
-                                        cacheViewportScreenshot: (c = a, !c.fullPage && !c.ref && !c.element),
-                                        headless: e.headless,
-                                        context: t
-                                    });
-                                    if (n) {
-                                        const e = ["Screenshot captured successfully"];
-                                        return o.filename && e.push(`Filename: ${o.filename}`), o.savedPath && e.push(`Saved to: ${o.savedPath}`), {
-                                            content: [{
-                                                type: "text",
-                                                text: e.join("\n")
-                                            }, n, {
-                                                type: "metadata",
-                                                viewId: r
-                                            }]
-                                        }
-                                    }
-                                }
-                                var c;
+                            }
+                            var c;
+                            return {
+                                content: [{
+                                    type: "text",
+                                    text: o.savedPath ? `Screenshot saved to: ${o.savedPath}` : "Screenshot captured but no image data available"
+                                }, {
+                                    type: "metadata",
+                                    viewId: r
+                                }]
+                            }
+                        },
+                        async scroll(e, t) {
+                            const n = await ZA(e.viewId, t);
+                            if (!n) return {
+                                content: [{
+                                    type: "text",
+                                    text: "No browser tab available. Please navigate to a page first."
+                                }]
+                            };
+                            await AA("browser_scroll", n, t);
+                            let r = e.deltaX ?? 0,
+                                a = e.deltaY ?? 0;
+                            const i = e.amount ?? 300;
+                            if (e.direction) switch (e.direction) {
+                                case "up":
+                                    a = -i;
+                                    break;
+                                case "down":
+                                    a = i;
+                                    break;
+                                case "left":
+                                    r = -i;
+                                    break;
+                                case "right":
+                                    r = i
+                            }
+                            const s = e.scrollIntoView ?? (e.ref && 0 === r && 0 === a),
+                                o = e.ref ? TA(e.ref) : void 0,
+                                c = `\n\t\t\t\t(async function() {\n\t\t\t\t\t${EA}\n\n\t\t\t\t\tconst ref = ${JSON.stringify(o)};\n\t\t\t\t\tconst deltaX = ${r};\n\t\t\t\t\tconst deltaY = ${a};\n\t\t\t\t\tconst scrollIntoView = ${s};\n\n\t\t\t\t\tfunction getScrollableAncestors(el) {\n\t\t\t\t\t\tconst ancestors = [];\n\t\t\t\t\t\tlet current = el.parentElement;\n\t\t\t\t\t\twhile (current && current !== document.body && current !== document.documentElement) {\n\t\t\t\t\t\t\tconst style = window.getComputedStyle(current);\n\t\t\t\t\t\t\tconst overflowY = style.overflowY;\n\t\t\t\t\t\t\tconst overflowX = style.overflowX;\n\t\t\t\t\t\t\tconst isScrollable = (\n\t\t\t\t\t\t\t\t(overflowY === 'auto' || overflowY === 'scroll' || overflowX === 'auto' || overflowX === 'scroll') &&\n\t\t\t\t\t\t\t\t(current.scrollHeight > current.clientHeight || current.scrollWidth > current.clientWidth)\n\t\t\t\t\t\t\t);\n\t\t\t\t\t\t\tif (isScrollable) {\n\t\t\t\t\t\t\t\tancestors.push(current);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tcurrent = current.parentElement;\n\t\t\t\t\t\t}\n\t\t\t\t\t\treturn ancestors;\n\t\t\t\t\t}\n\n\t\t\t\t\tfunction isElementVisibleInContainer(el, container) {\n\t\t\t\t\t\tconst elRect = el.getBoundingClientRect();\n\t\t\t\t\t\tconst containerRect = container.getBoundingClientRect();\n\t\t\t\t\t\tconst padding = 10;\n\t\t\t\t\t\treturn (\n\t\t\t\t\t\t\telRect.top >= containerRect.top - padding &&\n\t\t\t\t\t\t\telRect.bottom <= containerRect.bottom + padding &&\n\t\t\t\t\t\t\telRect.left >= containerRect.left - padding &&\n\t\t\t\t\t\t\telRect.right <= containerRect.right + padding\n\t\t\t\t\t\t);\n\t\t\t\t\t}\n\n\t\t\t\t\tfunction scrollElementIntoContainer(el, container) {\n\t\t\t\t\t\tconst elRect = el.getBoundingClientRect();\n\t\t\t\t\t\tconst containerRect = container.getBoundingClientRect();\n\n\t\t\t\t\t\tlet scrollTopDelta = 0;\n\t\t\t\t\t\tlet scrollLeftDelta = 0;\n\n\t\t\t\t\t\tconst elCenterY = elRect.top + elRect.height / 2;\n\t\t\t\t\t\tconst containerCenterY = containerRect.top + containerRect.height / 2;\n\t\t\t\t\t\tconst elCenterX = elRect.left + elRect.width / 2;\n\t\t\t\t\t\tconst containerCenterX = containerRect.left + containerRect.width / 2;\n\n\t\t\t\t\t\tscrollTopDelta = elCenterY - containerCenterY;\n\t\t\t\t\t\tscrollLeftDelta = elCenterX - containerCenterX;\n\n\t\t\t\t\t\tif (Math.abs(scrollTopDelta) > 5 || Math.abs(scrollLeftDelta) > 5) {\n\t\t\t\t\t\t\tcontainer.scrollBy({ top: scrollTopDelta, left: scrollLeftDelta, behavior: 'instant' });\n\t\t\t\t\t\t\treturn true;\n\t\t\t\t\t\t}\n\t\t\t\t\t\treturn false;\n\t\t\t\t\t}\n\n\t\t\t\t\tif (ref) {\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tif (!element) {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\terror: 'Element not found: ' + ref + '. Take a snapshot to get updated refs.'\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (scrollIntoView) {\n\t\t\t\t\t\t\tconst scrollableAncestors = getScrollableAncestors(element);\n\t\t\t\t\t\t\tlet scrolledContainers = 0;\n\n\t\t\t\t\t\t\tfor (const container of scrollableAncestors) {\n\t\t\t\t\t\t\t\tif (!isElementVisibleInContainer(element, container)) {\n\t\t\t\t\t\t\t\t\tscrollElementIntoContainer(element, container);\n\t\t\t\t\t\t\t\t\tscrolledContainers++;\n\t\t\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 100));\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\telement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 200));\n\n\t\t\t\t\t\t\tconst finalRect = element.getBoundingClientRect();\n\t\t\t\t\t\t\tconst isVisible = finalRect.top >= 0 && finalRect.bottom <= window.innerHeight &&\n\t\t\t\t\t\t\t\tfinalRect.left >= 0 && finalRect.right <= window.innerWidth;\n\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\t\taction: 'scrollIntoView',\n\t\t\t\t\t\t\t\tref: ref,\n\t\t\t\t\t\t\t\tscrolledContainers: scrolledContainers,\n\t\t\t\t\t\t\t\tisNowVisible: isVisible,\n\t\t\t\t\t\t\t\tmessage: 'Scrolled element into view' + (scrolledContainers > 0 ? ' (scrolled ' + scrolledContainers + ' nested container(s))' : '') + (isVisible ? '' : ' (element may still be partially obscured)')\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tconst scrollableParent = getScrollableAncestors(element)[0];\n\n\t\t\t\t\t\t\tif (scrollableParent) {\n\t\t\t\t\t\t\t\tconst beforeX = scrollableParent.scrollLeft;\n\t\t\t\t\t\t\t\tconst beforeY = scrollableParent.scrollTop;\n\t\t\t\t\t\t\t\tscrollableParent.scrollBy({ left: deltaX, top: deltaY, behavior: 'smooth' });\n\t\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 200));\n\t\t\t\t\t\t\t\tconst actualDeltaX = scrollableParent.scrollLeft - beforeX;\n\t\t\t\t\t\t\t\tconst actualDeltaY = scrollableParent.scrollTop - beforeY;\n\n\t\t\t\t\t\t\t\tconst containerRef = scrollableParent.getAttribute('data-cursor-ref');\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\t\t\taction: 'scrollContainer',\n\t\t\t\t\t\t\t\t\tref: ref,\n\t\t\t\t\t\t\t\t\tcontainerRef: containerRef || undefined,\n\t\t\t\t\t\t\t\t\tscrolled: { deltaX: actualDeltaX, deltaY: actualDeltaY },\n\t\t\t\t\t\t\t\t\tmessage: 'Scrolled container by (' + actualDeltaX + ', ' + actualDeltaY + ') pixels'\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\t\terror: 'Element ' + ref + ' is not inside a scrollable container.',\n\t\t\t\t\t\t\t\t\tsuggestion: 'Use scrollIntoView: true to scroll the element into view using the standard scrollIntoView method, or omit the ref to scroll the main page.'\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t} else {\n\t\t\t\t\t\tconst beforeX = window.scrollX;\n\t\t\t\t\t\tconst beforeY = window.scrollY;\n\t\t\t\t\t\twindow.scrollBy({ left: deltaX, top: deltaY, behavior: 'smooth' });\n\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 200));\n\t\t\t\t\t\tconst actualDeltaX = window.scrollX - beforeX;\n\t\t\t\t\t\tconst actualDeltaY = window.scrollY - beforeY;\n\n\t\t\t\t\t\tif (actualDeltaX === 0 && actualDeltaY === 0 && (deltaX !== 0 || deltaY !== 0)) {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\t\taction: 'scroll',\n\t\t\t\t\t\t\t\twarning: 'Page may have reached scroll boundary',\n\t\t\t\t\t\t\t\tmessage: 'Attempted to scroll page, but no scroll occurred (may be at edge)'\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\taction: 'scroll',\n\t\t\t\t\t\t\tscrolled: { deltaX: actualDeltaX, deltaY: actualDeltaY },\n\t\t\t\t\t\t\tmessage: 'Scrolled page by (' + actualDeltaX + ', ' + actualDeltaY + ') pixels'\n\t\t\t\t\t\t};\n\t\t\t\t\t}\n\t\t\t\t})();\n\t\t\t`,
+                                d = RA(await NA(c, n, e.headless, t), []);
+                            if (!d.success) return {
+                                content: [{
+                                    type: "text",
+                                    text: OA(SA(d.error || "Unknown scroll error", {
+                                        ref: e.ref
+                                    }))
+                                }]
+                            };
+                            const u = ["### Action: scroll"];
+                            return u.push(`- ${d.message}`), d.scrolled && u.push(`- Actual scroll: (${d.scrolled.deltaX}px, ${d.scrolled.deltaY}px)`), d.warning && u.push(`- Warning: ${d.warning}`), FA({
+                                content: [{
+                                    type: "text",
+                                    text: u.join("\n")
+                                }, {
+                                    type: "metadata",
+                                    viewId: n
+                                }]
+                            }, n, e.take_screenshot_afterwards ?? !1, t)
+                        },
+                        async getBoundingBox(e, t) {
+                            const n = await ZA(e.viewId, t);
+                            if (!n) return {
+                                content: [{
+                                    type: "text",
+                                    text: "No browser tab available. Please navigate to a page first."
+                                }]
+                            };
+                            try {
+                                await AA("browser_get_bounding_box", n, t), await MA(n, e.headless, i, t);
+                                const r = TA(e.ref),
+                                    a = e.element || "",
+                                    s = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t(function() {\n\t\t\t\t\t\tconst ref = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst expectedDescription = ${JSON.stringify(a)};\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tif (!element) {\n\t\t\t\t\t\t\treturn { success: false, error: 'Element not found: ' + ref + '. Take a snapshot to get updated refs.' };\n\t\t\t\t\t\t}\n\t\t\t\t\t\tassertDescriptionMatches(element, ref, expectedDescription);\n\t\t\t\t\t\tconst rect = element.getBoundingClientRect();\n\t\t\t\t\t\tconst x = rect.left + window.scrollX;\n\t\t\t\t\t\tconst y = rect.top + window.scrollY;\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\tbox: {\n\t\t\t\t\t\t\t\tx,\n\t\t\t\t\t\t\t\ty,\n\t\t\t\t\t\t\t\twidth: rect.width,\n\t\t\t\t\t\t\t\theight: rect.height,\n\t\t\t\t\t\t\t\ttop: rect.top,\n\t\t\t\t\t\t\t\tleft: rect.left,\n\t\t\t\t\t\t\t\tright: rect.right,\n\t\t\t\t\t\t\t\tbottom: rect.bottom\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t})();\n\t\t\t\t`,
+                                    o = RA(await NA(s, n, e.headless, t), ["box"]).box;
                                 return {
                                     content: [{
                                         type: "text",
-                                        text: o.savedPath ? `Screenshot saved to: ${o.savedPath}` : "Screenshot captured but no image data available"
-                                    }, {
-                                        type: "metadata",
-                                        viewId: r
-                                    }]
-                                }
-                            },
-                            async scroll(e, t) {
-                                const n = await ZA(e.viewId, t);
-                                if (!n) return {
-                                    content: [{
-                                        type: "text",
-                                        text: "No browser tab available. Please navigate to a page first."
-                                    }]
-                                };
-                                await AA("browser_scroll", n, t);
-                                let r = e.deltaX ?? 0,
-                                    a = e.deltaY ?? 0;
-                                const i = e.amount ?? 300;
-                                if (e.direction) switch (e.direction) {
-                                    case "up":
-                                        a = -i;
-                                        break;
-                                    case "down":
-                                        a = i;
-                                        break;
-                                    case "left":
-                                        r = -i;
-                                        break;
-                                    case "right":
-                                        r = i
-                                }
-                                const s = e.scrollIntoView ?? (e.ref && 0 === r && 0 === a),
-                                    o = e.ref ? TA(e.ref) : void 0,
-                                    c = `\n\t\t\t\t(async function() {\n\t\t\t\t\t${EA}\n\n\t\t\t\t\tconst ref = ${JSON.stringify(o)};\n\t\t\t\t\tconst deltaX = ${r};\n\t\t\t\t\tconst deltaY = ${a};\n\t\t\t\t\tconst scrollIntoView = ${s};\n\n\t\t\t\t\tfunction getScrollableAncestors(el) {\n\t\t\t\t\t\tconst ancestors = [];\n\t\t\t\t\t\tlet current = el.parentElement;\n\t\t\t\t\t\twhile (current && current !== document.body && current !== document.documentElement) {\n\t\t\t\t\t\t\tconst style = window.getComputedStyle(current);\n\t\t\t\t\t\t\tconst overflowY = style.overflowY;\n\t\t\t\t\t\t\tconst overflowX = style.overflowX;\n\t\t\t\t\t\t\tconst isScrollable = (\n\t\t\t\t\t\t\t\t(overflowY === 'auto' || overflowY === 'scroll' || overflowX === 'auto' || overflowX === 'scroll') &&\n\t\t\t\t\t\t\t\t(current.scrollHeight > current.clientHeight || current.scrollWidth > current.clientWidth)\n\t\t\t\t\t\t\t);\n\t\t\t\t\t\t\tif (isScrollable) {\n\t\t\t\t\t\t\t\tancestors.push(current);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tcurrent = current.parentElement;\n\t\t\t\t\t\t}\n\t\t\t\t\t\treturn ancestors;\n\t\t\t\t\t}\n\n\t\t\t\t\tfunction isElementVisibleInContainer(el, container) {\n\t\t\t\t\t\tconst elRect = el.getBoundingClientRect();\n\t\t\t\t\t\tconst containerRect = container.getBoundingClientRect();\n\t\t\t\t\t\tconst padding = 10;\n\t\t\t\t\t\treturn (\n\t\t\t\t\t\t\telRect.top >= containerRect.top - padding &&\n\t\t\t\t\t\t\telRect.bottom <= containerRect.bottom + padding &&\n\t\t\t\t\t\t\telRect.left >= containerRect.left - padding &&\n\t\t\t\t\t\t\telRect.right <= containerRect.right + padding\n\t\t\t\t\t\t);\n\t\t\t\t\t}\n\n\t\t\t\t\tfunction scrollElementIntoContainer(el, container) {\n\t\t\t\t\t\tconst elRect = el.getBoundingClientRect();\n\t\t\t\t\t\tconst containerRect = container.getBoundingClientRect();\n\n\t\t\t\t\t\tlet scrollTopDelta = 0;\n\t\t\t\t\t\tlet scrollLeftDelta = 0;\n\n\t\t\t\t\t\tconst elCenterY = elRect.top + elRect.height / 2;\n\t\t\t\t\t\tconst containerCenterY = containerRect.top + containerRect.height / 2;\n\t\t\t\t\t\tconst elCenterX = elRect.left + elRect.width / 2;\n\t\t\t\t\t\tconst containerCenterX = containerRect.left + containerRect.width / 2;\n\n\t\t\t\t\t\tscrollTopDelta = elCenterY - containerCenterY;\n\t\t\t\t\t\tscrollLeftDelta = elCenterX - containerCenterX;\n\n\t\t\t\t\t\tif (Math.abs(scrollTopDelta) > 5 || Math.abs(scrollLeftDelta) > 5) {\n\t\t\t\t\t\t\tcontainer.scrollBy({ top: scrollTopDelta, left: scrollLeftDelta, behavior: 'instant' });\n\t\t\t\t\t\t\treturn true;\n\t\t\t\t\t\t}\n\t\t\t\t\t\treturn false;\n\t\t\t\t\t}\n\n\t\t\t\t\tif (ref) {\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tif (!element) {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\terror: 'Element not found: ' + ref + '. Take a snapshot to get updated refs.'\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (scrollIntoView) {\n\t\t\t\t\t\t\tconst scrollableAncestors = getScrollableAncestors(element);\n\t\t\t\t\t\t\tlet scrolledContainers = 0;\n\n\t\t\t\t\t\t\tfor (const container of scrollableAncestors) {\n\t\t\t\t\t\t\t\tif (!isElementVisibleInContainer(element, container)) {\n\t\t\t\t\t\t\t\t\tscrollElementIntoContainer(element, container);\n\t\t\t\t\t\t\t\t\tscrolledContainers++;\n\t\t\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 100));\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\telement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 200));\n\n\t\t\t\t\t\t\tconst finalRect = element.getBoundingClientRect();\n\t\t\t\t\t\t\tconst isVisible = finalRect.top >= 0 && finalRect.bottom <= window.innerHeight &&\n\t\t\t\t\t\t\t\tfinalRect.left >= 0 && finalRect.right <= window.innerWidth;\n\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\t\taction: 'scrollIntoView',\n\t\t\t\t\t\t\t\tref: ref,\n\t\t\t\t\t\t\t\tscrolledContainers: scrolledContainers,\n\t\t\t\t\t\t\t\tisNowVisible: isVisible,\n\t\t\t\t\t\t\t\tmessage: 'Scrolled element into view' + (scrolledContainers > 0 ? ' (scrolled ' + scrolledContainers + ' nested container(s))' : '') + (isVisible ? '' : ' (element may still be partially obscured)')\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tconst scrollableParent = getScrollableAncestors(element)[0];\n\n\t\t\t\t\t\t\tif (scrollableParent) {\n\t\t\t\t\t\t\t\tconst beforeX = scrollableParent.scrollLeft;\n\t\t\t\t\t\t\t\tconst beforeY = scrollableParent.scrollTop;\n\t\t\t\t\t\t\t\tscrollableParent.scrollBy({ left: deltaX, top: deltaY, behavior: 'smooth' });\n\t\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 200));\n\t\t\t\t\t\t\t\tconst actualDeltaX = scrollableParent.scrollLeft - beforeX;\n\t\t\t\t\t\t\t\tconst actualDeltaY = scrollableParent.scrollTop - beforeY;\n\n\t\t\t\t\t\t\t\tconst containerRef = scrollableParent.getAttribute('data-cursor-ref');\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\t\t\taction: 'scrollContainer',\n\t\t\t\t\t\t\t\t\tref: ref,\n\t\t\t\t\t\t\t\t\tcontainerRef: containerRef || undefined,\n\t\t\t\t\t\t\t\t\tscrolled: { deltaX: actualDeltaX, deltaY: actualDeltaY },\n\t\t\t\t\t\t\t\t\tmessage: 'Scrolled container by (' + actualDeltaX + ', ' + actualDeltaY + ') pixels'\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\t\terror: 'Element ' + ref + ' is not inside a scrollable container.',\n\t\t\t\t\t\t\t\t\tsuggestion: 'Use scrollIntoView: true to scroll the element into view using the standard scrollIntoView method, or omit the ref to scroll the main page.'\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t} else {\n\t\t\t\t\t\tconst beforeX = window.scrollX;\n\t\t\t\t\t\tconst beforeY = window.scrollY;\n\t\t\t\t\t\twindow.scrollBy({ left: deltaX, top: deltaY, behavior: 'smooth' });\n\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 200));\n\t\t\t\t\t\tconst actualDeltaX = window.scrollX - beforeX;\n\t\t\t\t\t\tconst actualDeltaY = window.scrollY - beforeY;\n\n\t\t\t\t\t\tif (actualDeltaX === 0 && actualDeltaY === 0 && (deltaX !== 0 || deltaY !== 0)) {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\t\taction: 'scroll',\n\t\t\t\t\t\t\t\twarning: 'Page may have reached scroll boundary',\n\t\t\t\t\t\t\t\tmessage: 'Attempted to scroll page, but no scroll occurred (may be at edge)'\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\taction: 'scroll',\n\t\t\t\t\t\t\tscrolled: { deltaX: actualDeltaX, deltaY: actualDeltaY },\n\t\t\t\t\t\t\tmessage: 'Scrolled page by (' + actualDeltaX + ', ' + actualDeltaY + ') pixels'\n\t\t\t\t\t\t};\n\t\t\t\t\t}\n\t\t\t\t})();\n\t\t\t`,
-                                    d = RA(await NA(c, n, e.headless, t), []);
-                                if (!d.success) return {
-                                    content: [{
-                                        type: "text",
-                                        text: OA(SA(d.error || "Unknown scroll error", {
-                                            ref: e.ref
-                                        }))
-                                    }]
-                                };
-                                const u = ["### Action: scroll"];
-                                return u.push(`- ${d.message}`), d.scrolled && u.push(`- Actual scroll: (${d.scrolled.deltaX}px, ${d.scrolled.deltaY}px)`), d.warning && u.push(`- Warning: ${d.warning}`), FA({
-                                    content: [{
-                                        type: "text",
-                                        text: u.join("\n")
+                                        text: `Bounding box: x=${Math.round(o.x)}, y=${Math.round(o.y)}, w=${Math.round(o.width)}, h=${Math.round(o.height)}`
                                     }, {
                                         type: "metadata",
                                         viewId: n
                                     }]
-                                }, n, e.take_screenshot_afterwards ?? !1, t)
-                            },
-                            async getBoundingBox(e, t) {
-                                const n = await ZA(e.viewId, t);
-                                if (!n) return {
-                                    content: [{
-                                        type: "text",
-                                        text: "No browser tab available. Please navigate to a page first."
-                                    }]
-                                };
-                                try {
-                                    await AA("browser_get_bounding_box", n, t), await MA(n, e.headless, i, t);
-                                    const r = TA(e.ref),
-                                        a = e.element || "",
-                                        s = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t(function() {\n\t\t\t\t\t\tconst ref = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst expectedDescription = ${JSON.stringify(a)};\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tif (!element) {\n\t\t\t\t\t\t\treturn { success: false, error: 'Element not found: ' + ref + '. Take a snapshot to get updated refs.' };\n\t\t\t\t\t\t}\n\t\t\t\t\t\tassertDescriptionMatches(element, ref, expectedDescription);\n\t\t\t\t\t\tconst rect = element.getBoundingClientRect();\n\t\t\t\t\t\tconst x = rect.left + window.scrollX;\n\t\t\t\t\t\tconst y = rect.top + window.scrollY;\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\tbox: {\n\t\t\t\t\t\t\t\tx,\n\t\t\t\t\t\t\t\ty,\n\t\t\t\t\t\t\t\twidth: rect.width,\n\t\t\t\t\t\t\t\theight: rect.height,\n\t\t\t\t\t\t\t\ttop: rect.top,\n\t\t\t\t\t\t\t\tleft: rect.left,\n\t\t\t\t\t\t\t\tright: rect.right,\n\t\t\t\t\t\t\t\tbottom: rect.bottom\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t})();\n\t\t\t\t`,
-                                        o = RA(await NA(s, n, e.headless, t), ["box"]).box;
-                                    return {
-                                        content: [{
-                                            type: "text",
-                                            text: `Bounding box: x=${Math.round(o.x)}, y=${Math.round(o.y)}, w=${Math.round(o.width)}, h=${Math.round(o.height)}`
-                                        }, {
-                                            type: "metadata",
-                                            viewId: n
-                                        }]
-                                    }
-                                } catch (t) {
-                                    return {
-                                        content: [{
-                                            type: "text",
-                                            text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
-                                                ref: e.ref,
-                                                action: "get_bounding_box"
-                                            }))
-                                        }]
-                                    }
                                 }
-                            },
-                            async highlight(e, t) {
-                                const n = await ZA(e.viewId, t);
-                                if (!n) return {
+                            } catch (t) {
+                                return {
                                     content: [{
                                         type: "text",
-                                        text: "No browser tab available. Please navigate to a page first."
-                                    }]
-                                };
-                                try {
-                                    await AA("browser_highlight", n, t), await MA(n, e.headless, i, t);
-                                    const r = TA(e.ref),
-                                        a = e.element || "",
-                                        s = e.durationMs ?? 2e3,
-                                        o = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t(function() {\n\t\t\t\t\t\tconst ref = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst expectedDescription = ${JSON.stringify(a)};\n\t\t\t\t\t\tconst durationMs = ${s};\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tif (!element) {\n\t\t\t\t\t\t\treturn { success: false, error: 'Element not found: ' + ref + '. Take a snapshot to get updated refs.' };\n\t\t\t\t\t\t}\n\t\t\t\t\t\tassertDescriptionMatches(element, ref, expectedDescription);\n\n\t\t\t\t\t\tconst styleId = 'cursor-highlight-style';\n\t\t\t\t\t\tif (!document.getElementById(styleId)) {\n\t\t\t\t\t\t\tconst style = document.createElement('style');\n\t\t\t\t\t\t\tstyle.id = styleId;\n\t\t\t\t\t\t\tstyle.textContent = '.cursor-highlighted { outline: 2px solid #ff6a00; box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.4); }';\n\t\t\t\t\t\t\tdocument.head.appendChild(style);\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telement.classList.add('cursor-highlighted');\n\t\t\t\t\t\tsetTimeout(() => {\n\t\t\t\t\t\t\telement.classList.remove('cursor-highlighted');\n\t\t\t\t\t\t}, durationMs);\n\n\t\t\t\t\t\treturn { success: true, durationMs };\n\t\t\t\t\t})();\n\t\t\t\t`;
-                                    return {
-                                        content: [{
-                                            type: "text",
-                                            text: `Highlighted element for ${RA(await NA(o,n,e.headless,t),["durationMs"]).durationMs}ms`
-                                        }, {
-                                            type: "metadata",
-                                            viewId: n
-                                        }]
-                                    }
-                                } catch (t) {
-                                    return {
-                                        content: [{
-                                            type: "text",
-                                            text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
-                                                ref: e.ref,
-                                                action: "highlight"
-                                            }))
-                                        }]
-                                    }
-                                }
-                            },
-                            async lock(e, t) {
-                                const r = await ZA(e.viewId, t);
-                                if (!r) return {
-                                    content: [{
-                                        type: "text",
-                                        text: "No browser tab available. Please navigate to a page first."
-                                    }]
-                                };
-                                const a = "unlock" === e.action,
-                                    i = await n.commands.executeCommand("cursor.browserView.setLocked", r, !a, {
-                                        ownerAgentId: t?.ownerAgentId
-                                    });
-                                return i?.success ? {
-                                    content: [{
-                                        type: "text",
-                                        text: a ? "Browser unlocked." : "Browser locked."
-                                    }, await LA(r, void 0, t)]
-                                } : {
-                                    content: [{
-                                        type: "text",
-                                        text: a ? "Failed to unlock browser." : "Failed to lock browser."
+                                        text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
+                                            ref: e.ref,
+                                            action: "get_bounding_box"
+                                        }))
                                     }]
                                 }
+                            }
+                        },
+                        async highlight(e, t) {
+                            const n = await ZA(e.viewId, t);
+                            if (!n) return {
+                                content: [{
+                                    type: "text",
+                                    text: "No browser tab available. Please navigate to a page first."
+                                }]
+                            };
+                            try {
+                                await AA("browser_highlight", n, t), await MA(n, e.headless, i, t);
+                                const r = TA(e.ref),
+                                    a = e.element || "",
+                                    s = e.durationMs ?? 2e3,
+                                    o = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t(function() {\n\t\t\t\t\t\tconst ref = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst expectedDescription = ${JSON.stringify(a)};\n\t\t\t\t\t\tconst durationMs = ${s};\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tif (!element) {\n\t\t\t\t\t\t\treturn { success: false, error: 'Element not found: ' + ref + '. Take a snapshot to get updated refs.' };\n\t\t\t\t\t\t}\n\t\t\t\t\t\tassertDescriptionMatches(element, ref, expectedDescription);\n\n\t\t\t\t\t\tconst styleId = 'cursor-highlight-style';\n\t\t\t\t\t\tif (!document.getElementById(styleId)) {\n\t\t\t\t\t\t\tconst style = document.createElement('style');\n\t\t\t\t\t\t\tstyle.id = styleId;\n\t\t\t\t\t\t\tstyle.textContent = '.cursor-highlighted { outline: 2px solid #ff6a00; box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.4); }';\n\t\t\t\t\t\t\tdocument.head.appendChild(style);\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telement.classList.add('cursor-highlighted');\n\t\t\t\t\t\tsetTimeout(() => {\n\t\t\t\t\t\t\telement.classList.remove('cursor-highlighted');\n\t\t\t\t\t\t}, durationMs);\n\n\t\t\t\t\t\treturn { success: true, durationMs };\n\t\t\t\t\t})();\n\t\t\t\t`;
+                                return {
+                                    content: [{
+                                        type: "text",
+                                        text: `Highlighted element for ${RA(await NA(o,n,e.headless,t),["durationMs"]).durationMs}ms`
+                                    }, {
+                                        type: "metadata",
+                                        viewId: n
+                                    }]
+                                }
+                            } catch (t) {
+                                return {
+                                    content: [{
+                                        type: "text",
+                                        text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
+                                            ref: e.ref,
+                                            action: "highlight"
+                                        }))
+                                    }]
+                                }
+                            }
+                        },
+                        async lock(e, t) {
+                            const r = await ZA(e.viewId, t);
+                            if (!r) return {
+                                content: [{
+                                    type: "text",
+                                    text: "No browser tab available. Please navigate to a page first."
+                                }]
+                            };
+                            const a = "unlock" === e.action,
+                                i = await n.commands.executeCommand("cursor.browserView.setLocked", r, !a, {
+                                    ownerAgentId: t?.ownerAgentId
+                                });
+                            return i?.success ? {
+                                content: [{
+                                    type: "text",
+                                    text: a ? "Browser unlocked." : "Browser locked."
+                                }, await LA(r, void 0, t)]
+                            } : {
+                                content: [{
+                                    type: "text",
+                                    text: a ? "Failed to unlock browser." : "Failed to lock browser."
+                                }]
                             }
                         }
-                    }(e),
-                    d = {
-                        async type(e, t) {
-                            const n = await ZA(e.viewId, t);
-                            if (!n) return {
+                    }
+                }(e),
+                d = {
+                    async type(e, t) {
+                        const n = await ZA(e.viewId, t);
+                        if (!n) return {
+                            content: [{
+                                type: "text",
+                                text: "No browser tab available. Please navigate to a page first."
+                            }]
+                        };
+                        try {
+                            await AA("browser_type", n, t), await MA(n, e.headless, i, t);
+                            const r = TA(e.ref),
+                                a = e.element || "",
+                                s = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t${i}\n\t\t\t\t\t${$A}\n\t\t\t\t\t(async function() {\n\t\t\t\t\t\tconst ref = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst expectedDescription = ${JSON.stringify(a)};\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tvalidateElementForInteraction(element, ref, 'type', expectedDescription);\n\n\t\t\t\t\t\tconst rect = element.getBoundingClientRect();\n\t\t\t\t\t\tconst scrollPadding = 50;\n\t\t\t\t\t\tconst needsScroll = rect.top < scrollPadding || rect.left < scrollPadding ||\n\t\t\t\t\t\t\trect.bottom > window.innerHeight - scrollPadding || rect.right > window.innerWidth - scrollPadding;\n\t\t\t\t\t\tif (needsScroll) {\n\t\t\t\t\t\t\telement.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' });\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 300));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst tagName = element.tagName.toUpperCase();\n\t\t\t\t\t\tconst isContentEditable = element.isContentEditable;\n\n\t\t\t\t\t\tconst valueBefore = isContentEditable ? element.textContent : element.value;\n\n\t\t\t\t\t\tconst previousActiveElement = document.activeElement;\n\t\t\t\t\t\tif (previousActiveElement && previousActiveElement !== element && previousActiveElement !== document.body) {\n\t\t\t\t\t\t\tif (typeof previousActiveElement.blur === 'function') {\n\t\t\t\t\t\t\t\tpreviousActiveElement.blur();\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telement.focus();\n\n\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 0));\n\n\t\t\t\t\t\tif (document.activeElement !== element) {\n\t\t\t\t\t\t\telement.click();\n\t\t\t\t\t\t\telement.focus();\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 0));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (document.activeElement !== element) {\n\t\t\t\t\t\t\tconst elementTag = element.tagName?.toLowerCase() || 'element';\n\t\t\t\t\t\t\tconst focusBlockers = [];\n\n\t\t\t\t\t\t\tconst style = window.getComputedStyle(element);\n\t\t\t\t\t\t\tif (element.tabIndex < 0) focusBlockers.push('negative tabindex');\n\t\t\t\t\t\t\tif (style.display === 'none') focusBlockers.push('display: none');\n\t\t\t\t\t\t\tif (style.visibility === 'hidden') focusBlockers.push('visibility: hidden');\n\t\t\t\t\t\t\tif (element.disabled) focusBlockers.push('disabled attribute');\n\n\t\t\t\t\t\t\tconst hitCheck = document.elementFromPoint(\n\t\t\t\t\t\t\t\trect.left + rect.width / 2,\n\t\t\t\t\t\t\t\trect.top + rect.height / 2\n\t\t\t\t\t\t\t);\n\t\t\t\t\t\t\tif (hitCheck && hitCheck !== element && !element.contains(hitCheck)) {\n\t\t\t\t\t\t\t\tconst hitPreview = hitCheck.tagName?.toLowerCase() + (hitCheck.getAttribute('data-cursor-ref') ? ' (ref: ' + hitCheck.getAttribute('data-cursor-ref') + ')' : '');\n\t\t\t\t\t\t\t\tfocusBlockers.push('another element at position: ' + hitPreview);\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\tconst reason = focusBlockers.length > 0\n\t\t\t\t\t\t\t\t? ' Possible reasons: ' + focusBlockers.join(', ') + '.'\n\t\t\t\t\t\t\t\t: ' The element may not be focusable, or another element may be intercepting focus.';\n\t\t\t\t\t\t\tthrow new Error('Failed to focus ' + elementTag + ' ' + ref + '.' + reason + ' Try taking a fresh snapshot to verify the element state.');\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst text = ${JSON.stringify(e.text)};\n\t\t\t\t\t\tconst clearFirst = ${JSON.stringify(e.clear)} || false;\n\t\t\t\t\t\tconst slowly = ${JSON.stringify(e.slowly)} || false;\n\t\t\t\t\t\tconst submit = ${JSON.stringify(e.submit)} || false;\n\n\t\t\t\t\t\tfunction dispatchInputEvent(el) {\n\t\t\t\t\t\t\tconst inputEvent = new InputEvent('input', { bubbles: true, cancelable: true, inputType: 'insertText', data: text });\n\t\t\t\t\t\t\tel.dispatchEvent(inputEvent);\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (clearFirst) {\n\t\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\t\telement.textContent = '';\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\tsetNativeValue(element, '');\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\telement.dispatchEvent(new Event('input', { bubbles: true }));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (slowly) {\n\t\t\t\t\t\t\tconst delay = 50;\n\t\t\t\t\t\t\tconst existingValue = clearFirst ? '' : (isContentEditable ? (element.textContent || '') : (element.value || ''));\n\t\t\t\t\t\t\tfor (let i = 0; i < text.length; i++) {\n\t\t\t\t\t\t\t\tconst char = text[i];\n\t\t\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\t\t\tconst selection = window.getSelection();\n\t\t\t\t\t\t\t\t\tconst range = document.createRange();\n\t\t\t\t\t\t\t\t\trange.selectNodeContents(element);\n\t\t\t\t\t\t\t\t\trange.collapse(false);\n\t\t\t\t\t\t\t\t\tselection.removeAllRanges();\n\t\t\t\t\t\t\t\t\tselection.addRange(range);\n\t\t\t\t\t\t\t\t\tdocument.execCommand('insertText', false, char);\n\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\tsetNativeValue(element, existingValue + text.substring(0, i + 1));\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\telement.dispatchEvent(new KeyboardEvent('keydown', { key: char, bubbles: true, cancelable: true }));\n\t\t\t\t\t\t\t\tdispatchInputEvent(element);\n\t\t\t\t\t\t\t\telement.dispatchEvent(new KeyboardEvent('keyup', { key: char, bubbles: true, cancelable: true }));\n\t\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, delay));\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\t\tconst existingContent = clearFirst ? '' : (element.textContent || '');\n\t\t\t\t\t\t\t\telement.textContent = existingContent + text;\n\t\t\t\t\t\t\t\telement.dispatchEvent(new Event('input', { bubbles: true }));\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\tconst existingValue = clearFirst ? '' : (element.value || '');\n\t\t\t\t\t\t\t\tsetNativeValue(element, existingValue + text);\n\t\t\t\t\t\t\t\tdispatchInputEvent(element);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telement.dispatchEvent(new Event('change', { bubbles: true }));\n\n\t\t\t\t\t\tif (submit) {\n\t\t\t\t\t\t\telement.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', keyCode: 13, code: 'Enter', which: 13, bubbles: true, cancelable: true }));\n\t\t\t\t\t\t\telement.dispatchEvent(new KeyboardEvent('keypress', { key: 'Enter', keyCode: 13, code: 'Enter', which: 13, bubbles: true, cancelable: true }));\n\t\t\t\t\t\t\telement.dispatchEvent(new KeyboardEvent('keyup', { key: 'Enter', keyCode: 13, code: 'Enter', which: 13, bubbles: true, cancelable: true }));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst valueAfter = isContentEditable ? element.textContent : element.value;\n\t\t\t\t\t\tconst valueChanged = valueBefore !== valueAfter;\n\t\t\t\t\t\tconst valueMatchesExpected = isContentEditable\n\t\t\t\t\t\t\t? (element.textContent || '').includes(text)\n\t\t\t\t\t\t\t: element.value === text || element.value.endsWith(text);\n\n\t\t\t\t\t\tconst maxLength = element.maxLength;\n\t\t\t\t\t\tconst hasMaxLength = maxLength > 0 && maxLength !== 2147483647;\n\t\t\t\t\t\tconst exceedsMaxLength = hasMaxLength && (valueAfter?.length || 0) > maxLength;\n\n\t\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\tslowly,\n\t\t\t\t\t\t\tsubmitted: submit,\n\t\t\t\t\t\t\ttextLength: text.length,\n\t\t\t\t\t\t\tvalueChanged,\n\t\t\t\t\t\t\tvalueMatchesExpected,\n\t\t\t\t\t\t\tactualValue: valueAfter ? String(valueAfter).substring(0, 100) : '',\n\t\t\t\t\t\t\tmaxLength: hasMaxLength ? maxLength : null,\n\t\t\t\t\t\t\texceedsMaxLength,\n\t\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t})();\n\t\t\t\t`,
+                                o = await NA(s, n, e.headless, t),
+                                c = [];
+                            return c.push(`- Characters typed: ${o.textLength}`), c.push("- Typing mode: " + (o.slowly ? "slow (character-by-character)" : "fast")), e.clear && c.push("- Cleared existing content: yes"), o.submitted && c.push("- Form submitted: yes (Enter key pressed)"), o.valueChanged || c.push("- WARNING: Value did not change after typing"), !o.valueMatchesExpected && o.valueChanged && c.push(`- Note: Final value differs from input (actual: "${o.actualValue}")`), o.exceedsMaxLength && null !== o.maxLength && c.push(`- Note: Input exceeds maxlength attribute (${o.maxLength}). Browser automation bypasses maxlength validation. Server-side validation may still reject this value.`), wA.set(n, Date.now()), FA(await PA({
+                                action: "type",
+                                detailLines: c,
+                                pageState: o.pageState,
+                                viewId: n,
+                                context: t
+                            }), n, e.take_screenshot_afterwards ?? !1, t)
+                        } catch (t) {
+                            return {
                                 content: [{
                                     type: "text",
-                                    text: "No browser tab available. Please navigate to a page first."
+                                    text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
+                                        ref: e.ref,
+                                        action: "type"
+                                    }))
                                 }]
-                            };
-                            try {
-                                await AA("browser_type", n, t), await MA(n, e.headless, i, t);
-                                const r = TA(e.ref),
-                                    a = e.element || "",
-                                    s = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t${i}\n\t\t\t\t\t${$A}\n\t\t\t\t\t(async function() {\n\t\t\t\t\t\tconst ref = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst expectedDescription = ${JSON.stringify(a)};\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tvalidateElementForInteraction(element, ref, 'type', expectedDescription);\n\n\t\t\t\t\t\tconst rect = element.getBoundingClientRect();\n\t\t\t\t\t\tconst scrollPadding = 50;\n\t\t\t\t\t\tconst needsScroll = rect.top < scrollPadding || rect.left < scrollPadding ||\n\t\t\t\t\t\t\trect.bottom > window.innerHeight - scrollPadding || rect.right > window.innerWidth - scrollPadding;\n\t\t\t\t\t\tif (needsScroll) {\n\t\t\t\t\t\t\telement.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' });\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 300));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst tagName = element.tagName.toUpperCase();\n\t\t\t\t\t\tconst isContentEditable = element.isContentEditable;\n\n\t\t\t\t\t\tconst valueBefore = isContentEditable ? element.textContent : element.value;\n\n\t\t\t\t\t\tconst previousActiveElement = document.activeElement;\n\t\t\t\t\t\tif (previousActiveElement && previousActiveElement !== element && previousActiveElement !== document.body) {\n\t\t\t\t\t\t\tif (typeof previousActiveElement.blur === 'function') {\n\t\t\t\t\t\t\t\tpreviousActiveElement.blur();\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telement.focus();\n\n\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 0));\n\n\t\t\t\t\t\tif (document.activeElement !== element) {\n\t\t\t\t\t\t\telement.click();\n\t\t\t\t\t\t\telement.focus();\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 0));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (document.activeElement !== element) {\n\t\t\t\t\t\t\tconst elementTag = element.tagName?.toLowerCase() || 'element';\n\t\t\t\t\t\t\tconst focusBlockers = [];\n\n\t\t\t\t\t\t\tconst style = window.getComputedStyle(element);\n\t\t\t\t\t\t\tif (element.tabIndex < 0) focusBlockers.push('negative tabindex');\n\t\t\t\t\t\t\tif (style.display === 'none') focusBlockers.push('display: none');\n\t\t\t\t\t\t\tif (style.visibility === 'hidden') focusBlockers.push('visibility: hidden');\n\t\t\t\t\t\t\tif (element.disabled) focusBlockers.push('disabled attribute');\n\n\t\t\t\t\t\t\tconst hitCheck = document.elementFromPoint(\n\t\t\t\t\t\t\t\trect.left + rect.width / 2,\n\t\t\t\t\t\t\t\trect.top + rect.height / 2\n\t\t\t\t\t\t\t);\n\t\t\t\t\t\t\tif (hitCheck && hitCheck !== element && !element.contains(hitCheck)) {\n\t\t\t\t\t\t\t\tconst hitPreview = hitCheck.tagName?.toLowerCase() + (hitCheck.getAttribute('data-cursor-ref') ? ' (ref: ' + hitCheck.getAttribute('data-cursor-ref') + ')' : '');\n\t\t\t\t\t\t\t\tfocusBlockers.push('another element at position: ' + hitPreview);\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\tconst reason = focusBlockers.length > 0\n\t\t\t\t\t\t\t\t? ' Possible reasons: ' + focusBlockers.join(', ') + '.'\n\t\t\t\t\t\t\t\t: ' The element may not be focusable, or another element may be intercepting focus.';\n\t\t\t\t\t\t\tthrow new Error('Failed to focus ' + elementTag + ' ' + ref + '.' + reason + ' Try taking a fresh snapshot to verify the element state.');\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst text = ${JSON.stringify(e.text)};\n\t\t\t\t\t\tconst clearFirst = ${JSON.stringify(e.clear)} || false;\n\t\t\t\t\t\tconst slowly = ${JSON.stringify(e.slowly)} || false;\n\t\t\t\t\t\tconst submit = ${JSON.stringify(e.submit)} || false;\n\n\t\t\t\t\t\tfunction dispatchInputEvent(el) {\n\t\t\t\t\t\t\tconst inputEvent = new InputEvent('input', { bubbles: true, cancelable: true, inputType: 'insertText', data: text });\n\t\t\t\t\t\t\tel.dispatchEvent(inputEvent);\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (clearFirst) {\n\t\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\t\telement.textContent = '';\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\tsetNativeValue(element, '');\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\telement.dispatchEvent(new Event('input', { bubbles: true }));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (slowly) {\n\t\t\t\t\t\t\tconst delay = 50;\n\t\t\t\t\t\t\tconst existingValue = clearFirst ? '' : (isContentEditable ? (element.textContent || '') : (element.value || ''));\n\t\t\t\t\t\t\tfor (let i = 0; i < text.length; i++) {\n\t\t\t\t\t\t\t\tconst char = text[i];\n\t\t\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\t\t\tconst selection = window.getSelection();\n\t\t\t\t\t\t\t\t\tconst range = document.createRange();\n\t\t\t\t\t\t\t\t\trange.selectNodeContents(element);\n\t\t\t\t\t\t\t\t\trange.collapse(false);\n\t\t\t\t\t\t\t\t\tselection.removeAllRanges();\n\t\t\t\t\t\t\t\t\tselection.addRange(range);\n\t\t\t\t\t\t\t\t\tdocument.execCommand('insertText', false, char);\n\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\tsetNativeValue(element, existingValue + text.substring(0, i + 1));\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\telement.dispatchEvent(new KeyboardEvent('keydown', { key: char, bubbles: true, cancelable: true }));\n\t\t\t\t\t\t\t\tdispatchInputEvent(element);\n\t\t\t\t\t\t\t\telement.dispatchEvent(new KeyboardEvent('keyup', { key: char, bubbles: true, cancelable: true }));\n\t\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, delay));\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\t\tconst existingContent = clearFirst ? '' : (element.textContent || '');\n\t\t\t\t\t\t\t\telement.textContent = existingContent + text;\n\t\t\t\t\t\t\t\telement.dispatchEvent(new Event('input', { bubbles: true }));\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\tconst existingValue = clearFirst ? '' : (element.value || '');\n\t\t\t\t\t\t\t\tsetNativeValue(element, existingValue + text);\n\t\t\t\t\t\t\t\tdispatchInputEvent(element);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telement.dispatchEvent(new Event('change', { bubbles: true }));\n\n\t\t\t\t\t\tif (submit) {\n\t\t\t\t\t\t\telement.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', keyCode: 13, code: 'Enter', which: 13, bubbles: true, cancelable: true }));\n\t\t\t\t\t\t\telement.dispatchEvent(new KeyboardEvent('keypress', { key: 'Enter', keyCode: 13, code: 'Enter', which: 13, bubbles: true, cancelable: true }));\n\t\t\t\t\t\t\telement.dispatchEvent(new KeyboardEvent('keyup', { key: 'Enter', keyCode: 13, code: 'Enter', which: 13, bubbles: true, cancelable: true }));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst valueAfter = isContentEditable ? element.textContent : element.value;\n\t\t\t\t\t\tconst valueChanged = valueBefore !== valueAfter;\n\t\t\t\t\t\tconst valueMatchesExpected = isContentEditable\n\t\t\t\t\t\t\t? (element.textContent || '').includes(text)\n\t\t\t\t\t\t\t: element.value === text || element.value.endsWith(text);\n\n\t\t\t\t\t\tconst maxLength = element.maxLength;\n\t\t\t\t\t\tconst hasMaxLength = maxLength > 0 && maxLength !== 2147483647;\n\t\t\t\t\t\tconst exceedsMaxLength = hasMaxLength && (valueAfter?.length || 0) > maxLength;\n\n\t\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\tslowly,\n\t\t\t\t\t\t\tsubmitted: submit,\n\t\t\t\t\t\t\ttextLength: text.length,\n\t\t\t\t\t\t\tvalueChanged,\n\t\t\t\t\t\t\tvalueMatchesExpected,\n\t\t\t\t\t\t\tactualValue: valueAfter ? String(valueAfter).substring(0, 100) : '',\n\t\t\t\t\t\t\tmaxLength: hasMaxLength ? maxLength : null,\n\t\t\t\t\t\t\texceedsMaxLength,\n\t\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t})();\n\t\t\t\t`,
-                                    o = await NA(s, n, e.headless, t),
-                                    c = [];
-                                return c.push(`- Characters typed: ${o.textLength}`), c.push("- Typing mode: " + (o.slowly ? "slow (character-by-character)" : "fast")), e.clear && c.push("- Cleared existing content: yes"), o.submitted && c.push("- Form submitted: yes (Enter key pressed)"), o.valueChanged || c.push("- WARNING: Value did not change after typing"), !o.valueMatchesExpected && o.valueChanged && c.push(`- Note: Final value differs from input (actual: "${o.actualValue}")`), o.exceedsMaxLength && null !== o.maxLength && c.push(`- Note: Input exceeds maxlength attribute (${o.maxLength}). Browser automation bypasses maxlength validation. Server-side validation may still reject this value.`), wA.set(n, Date.now()), FA(await PA({
-                                    action: "type",
-                                    detailLines: c,
-                                    pageState: o.pageState,
-                                    viewId: n,
-                                    context: t
-                                }), n, e.take_screenshot_afterwards ?? !1, t)
-                            } catch (t) {
-                                return {
+                            }
+                        }
+                    },
+                    async fill(e, t) {
+                        const n = await ZA(e.viewId, t);
+                        if (!n) return {
+                            content: [{
+                                type: "text",
+                                text: "No browser tab available. Please navigate to a page first."
+                            }]
+                        };
+                        try {
+                            await AA("browser_fill", n, t), await MA(n, e.headless, i, t);
+                            const r = TA(e.ref),
+                                a = e.element || "",
+                                s = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t${i}\n\t\t\t\t\t${$A}\n\t\t\t\t\t(async function() {\n\t\t\t\t\t\tconst ref = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst expectedDescription = ${JSON.stringify(a)};\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tvalidateElementForInteraction(element, ref, 'fill', expectedDescription);\n\n\t\t\t\t\t\tconst rect = element.getBoundingClientRect();\n\t\t\t\t\t\tconst scrollPadding = 50;\n\t\t\t\t\t\tconst needsScroll = rect.top < scrollPadding || rect.left < scrollPadding ||\n\t\t\t\t\t\t\trect.bottom > window.innerHeight - scrollPadding || rect.right > window.innerWidth - scrollPadding;\n\t\t\t\t\t\tif (needsScroll) {\n\t\t\t\t\t\t\telement.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' });\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 300));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst tagName = element.tagName.toUpperCase();\n\t\t\t\t\t\tconst isContentEditable = element.isContentEditable;\n\n\t\t\t\t\t\tconst previousActiveElement = document.activeElement;\n\t\t\t\t\t\tif (previousActiveElement && previousActiveElement !== element && previousActiveElement !== document.body) {\n\t\t\t\t\t\t\tif (typeof previousActiveElement.blur === 'function') {\n\t\t\t\t\t\t\t\tpreviousActiveElement.blur();\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telement.focus();\n\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 0));\n\n\t\t\t\t\t\tif (document.activeElement !== element) {\n\t\t\t\t\t\t\telement.click();\n\t\t\t\t\t\t\telement.focus();\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 0));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst value = ${JSON.stringify(e.value)};\n\n\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\telement.textContent = '';\n\t\t\t\t\t\t\telement.textContent = value;\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tsetNativeValue(element, '');\n\t\t\t\t\t\t\tsetNativeValue(element, value);\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telement.dispatchEvent(new Event('input', { bubbles: true }));\n\t\t\t\t\t\telement.dispatchEvent(new Event('change', { bubbles: true }));\n\n\t\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\tvalue: value,\n\t\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t})();\n\t\t\t\t`,
+                                o = await NA(s, n, e.headless, t);
+                            return wA.set(n, Date.now()), FA(await PA({
+                                action: "fill",
+                                detailLines: [`- Filled with value: "${o.value.substring(0,50)}${o.value.length>50?"...":""}"`],
+                                pageState: o.pageState,
+                                viewId: n,
+                                context: t
+                            }), n, e.take_screenshot_afterwards ?? !1, t)
+                        } catch (t) {
+                            return {
+                                content: [{
+                                    type: "text",
+                                    text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
+                                        ref: e.ref,
+                                        action: "fill"
+                                    }))
+                                }]
+                            }
+                        }
+                    },
+                    async fillForm(e, t) {
+                        const n = await ZA(e.viewId, t);
+                        if (!n) return {
+                            content: [{
+                                type: "text",
+                                text: "No browser tab available. Please navigate to a page first."
+                            }]
+                        };
+                        if (!e.fields || !Array.isArray(e.fields)) return {
+                            content: [{
+                                type: "text",
+                                text: 'Error: Missing required "fields" parameter.\n\nThe browser_fill_form tool requires a "fields" array containing the fields to fill.\n\nExample usage:\n{ fields: [{ ref: "e123", value: "John Doe" }, { ref: "e456", value: "john@example.com" }] }\n\nEach field should have a "ref" (element reference) and "value" (text to fill).'
+                            }]
+                        };
+                        if (0 === e.fields.length) return {
+                            content: [{
+                                type: "text",
+                                text: 'Error: Empty "fields" array provided.\n\nProvide at least one field to fill. Take a snapshot to identify the form fields and their refs.'
+                            }]
+                        };
+                        try {
+                            await AA("browser_fill_form", n, t), await MA(n, e.headless, i, t);
+                            const r = e.fields.map(e => ({
+                                    ref: TA(e.ref),
+                                    value: e.value,
+                                    element: e.element || "",
+                                    clear: e.clear
+                                })),
+                                a = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t${i}\n\t\t\t\t\t${$A}\n\t\t\t\t\t(async function() {\n\t\t\t\t\t\tconst fields = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst filled = [];\n\t\t\t\t\t\tconst failed = [];\n\n\t\t\t\t\t\tfor (const field of fields) {\n\t\t\t\t\t\t\tconst ref = field.ref;\n\t\t\t\t\t\t\tconst expectedDescription = field.element || '';\n\t\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\t\t\tvalidateElementForInteraction(element, ref, 'fill', expectedDescription);\n\n\t\t\t\t\t\t\t\tconst rect = element.getBoundingClientRect();\n\t\t\t\t\t\t\t\tconst scrollPadding = 50;\n\t\t\t\t\t\t\t\tconst needsScroll = rect.top < scrollPadding || rect.left < scrollPadding ||\n\t\t\t\t\t\t\t\t\trect.bottom > window.innerHeight - scrollPadding || rect.right > window.innerWidth - scrollPadding;\n\t\t\t\t\t\t\t\tif (needsScroll) {\n\t\t\t\t\t\t\t\t\telement.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' });\n\t\t\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 300));\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tconst isContentEditable = element.isContentEditable;\n\t\t\t\t\t\t\t\tconst clearFirst = field.clear !== undefined ? field.clear : true;\n\t\t\t\t\t\t\t\tconst value = String(field.value);\n\n\t\t\t\t\t\t\t\tif (clearFirst) {\n\t\t\t\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\t\t\t\telement.textContent = '';\n\t\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\t\tsetNativeValue(element, '');\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\t\t\tconst existingContent = clearFirst ? '' : (element.textContent || '');\n\t\t\t\t\t\t\t\t\telement.textContent = existingContent + value;\n\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\tconst existingValue = clearFirst ? '' : (element.value || '');\n\t\t\t\t\t\t\t\t\tsetNativeValue(element, existingValue + value);\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\telement.dispatchEvent(new Event('input', { bubbles: true }));\n\t\t\t\t\t\t\t\telement.dispatchEvent(new Event('change', { bubbles: true }));\n\n\t\t\t\t\t\t\t\tconst preview = value.length > 60 ? value.substring(0, 60) + '...' : value;\n\t\t\t\t\t\t\t\tfilled.push({ ref, valuePreview: preview });\n\t\t\t\t\t\t\t} catch (err) {\n\t\t\t\t\t\t\t\tconst message = err instanceof Error ? err.message : String(err);\n\t\t\t\t\t\t\t\tfailed.push({ ref, error: message });\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: failed.length === 0,\n\t\t\t\t\t\t\tfilled,\n\t\t\t\t\t\t\tfailed,\n\t\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t})();\n\t\t\t\t`,
+                                s = RA(await NA(a, n, e.headless, t), ["filled", "failed", "pageState"]),
+                                o = [];
+                            if (o.push(`- Fields filled: ${s.filled.length}`), s.failed.length > 0) {
+                                o.push(`- Fields failed: ${s.failed.length}`);
+                                const e = s.failed.slice(0, 5).map(e => `${e.ref}: ${e.error}`);
+                                o.push(`- Failed refs: ${e.join("; ")}`)
+                            }
+                            return wA.set(n, Date.now()), FA(await PA({
+                                action: "fill_form",
+                                detailLines: o,
+                                pageState: s.pageState,
+                                viewId: n,
+                                context: t
+                            }), n, e.take_screenshot_afterwards ?? !1, t)
+                        } catch (e) {
+                            return {
+                                content: [{
+                                    type: "text",
+                                    text: OA(SA(e instanceof Error ? e : new Error(String(e)), {
+                                        action: "fill_form"
+                                    }))
+                                }]
+                            }
+                        }
+                    },
+                    async selectOption(e, t) {
+                        const n = await ZA(e.viewId, t);
+                        if (!n) return {
+                            content: [{
+                                type: "text",
+                                text: "No browser tab available. Please navigate to a page first."
+                            }]
+                        };
+                        if (!e.values || !Array.isArray(e.values)) return {
+                            content: [{
+                                type: "text",
+                                text: 'Error: Missing required "values" parameter.\n\nThe browser_select_option tool requires a "values" array containing the option(s) to select.\n\nExample usage:\n- Single select: { ref: "e123", values: ["optionValue"] }\n- Multi-select: { ref: "e123", values: ["value1", "value2"] }\n\nValues can be option values or labels. Take a snapshot to see available options.'
+                            }]
+                        };
+                        if (0 === e.values.length) return {
+                            content: [{
+                                type: "text",
+                                text: 'Error: Empty "values" array provided.\n\nProvide at least one value to select. Take a snapshot to see available options for this select element.'
+                            }]
+                        };
+                        try {
+                            await AA("browser_select_option", n, t), await MA(n, e.headless, i, t);
+                            const r = TA(e.ref),
+                                a = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t${i}\n\t\t\t\t\t(async function() {\n\t\t\t\t\t\tconst ref = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tif (!element) throw new Error('Element not found: ' + ref + '. Take a snapshot to get updated refs.');\n\n\t\t\t\t\t\tconst selectElement = element;\n\t\t\t\t\t\tif (selectElement.tagName.toUpperCase() !== 'SELECT') {\n\t\t\t\t\t\t\tthrow new Error('Element ' + ref + ' is not a select element (found: ' + selectElement.tagName.toLowerCase() + ').');\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (selectElement.disabled) {\n\t\t\t\t\t\t\tthrow new Error('Select element ' + ref + ' is disabled and cannot be interacted with.');\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst rect = selectElement.getBoundingClientRect();\n\t\t\t\t\t\tconst scrollPadding = 50;\n\t\t\t\t\t\tconst needsScroll = rect.top < scrollPadding || rect.left < scrollPadding ||\n\t\t\t\t\t\t\trect.bottom > window.innerHeight - scrollPadding || rect.right > window.innerWidth - scrollPadding;\n\t\t\t\t\t\tif (needsScroll) {\n\t\t\t\t\t\t\tselectElement.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' });\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 300));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tselectElement.focus();\n\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 0));\n\n\t\t\t\t\t\tconst values = ${JSON.stringify(e.values)};\n\n\t\t\t\t\t\tconst availableOptions = Array.from(selectElement.options).map(o => ({\n\t\t\t\t\t\t\tvalue: o.value,\n\t\t\t\t\t\t\tlabel: o.textContent?.trim() || o.label || '',\n\t\t\t\t\t\t\tdisabled: o.disabled\n\t\t\t\t\t\t}));\n\n\t\t\t\t\t\tif (values.length > 1 && !selectElement.multiple) {\n\t\t\t\t\t\t\tthrow new Error('Cannot select multiple values on a single-select dropdown. The select element does not have the "multiple" attribute. Use a single value instead, or interact with the correct multi-select element.');\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (!selectElement.multiple) {\n\t\t\t\t\t\t\tselectElement.value = '';\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tArray.from(selectElement.options).forEach(option => {\n\t\t\t\t\t\t\t\toption.selected = false;\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst selectedValues = [];\n\t\t\t\t\t\tconst matchedBy = [];\n\t\t\t\t\t\tfor (const value of values) {\n\t\t\t\t\t\t\tlet optionFound = false;\n\t\t\t\t\t\t\tfor (const option of selectElement.options) {\n\t\t\t\t\t\t\t\tif (option.value === value) {\n\t\t\t\t\t\t\t\t\tif (option.disabled) {\n\t\t\t\t\t\t\t\t\t\tthrow new Error('Option "' + value + '" is disabled and cannot be selected.');\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\toption.selected = true;\n\t\t\t\t\t\t\t\t\tselectedValues.push(option.value);\n\t\t\t\t\t\t\t\t\tmatchedBy.push('value');\n\t\t\t\t\t\t\t\t\toptionFound = true;\n\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif (!optionFound) {\n\t\t\t\t\t\t\t\tfor (const option of selectElement.options) {\n\t\t\t\t\t\t\t\t\tconst labelText = (option.textContent?.trim() || option.label || '').toLowerCase();\n\t\t\t\t\t\t\t\t\tif (labelText === value.toLowerCase()) {\n\t\t\t\t\t\t\t\t\t\tif (option.disabled) {\n\t\t\t\t\t\t\t\t\t\t\tthrow new Error('Option with label "' + value + '" is disabled and cannot be selected.');\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\toption.selected = true;\n\t\t\t\t\t\t\t\t\t\tselectedValues.push(option.value);\n\t\t\t\t\t\t\t\t\t\tmatchedBy.push('label');\n\t\t\t\t\t\t\t\t\t\toptionFound = true;\n\t\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif (!optionFound) {\n\t\t\t\t\t\t\t\tfor (const option of selectElement.options) {\n\t\t\t\t\t\t\t\t\tconst labelText = (option.textContent?.trim() || option.label || '').toLowerCase();\n\t\t\t\t\t\t\t\t\tif (labelText.includes(value.toLowerCase())) {\n\t\t\t\t\t\t\t\t\t\tif (option.disabled) {\n\t\t\t\t\t\t\t\t\t\t\tthrow new Error('Option containing "' + value + '" is disabled and cannot be selected.');\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\toption.selected = true;\n\t\t\t\t\t\t\t\t\t\tselectedValues.push(option.value);\n\t\t\t\t\t\t\t\t\t\tmatchedBy.push('partial label');\n\t\t\t\t\t\t\t\t\t\toptionFound = true;\n\t\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif (!optionFound) {\n\t\t\t\t\t\t\t\tconst optionList = availableOptions.slice(0, 8).map(o =>\n\t\t\t\t\t\t\t\t\t'"' + o.label + '"' + (o.value !== o.label ? ' (value: ' + o.value + ')' : '') + (o.disabled ? ' [disabled]' : '')\n\t\t\t\t\t\t\t\t).join(', ');\n\t\t\t\t\t\t\t\tconst isMultiple = selectElement.multiple ? ' (multi-select)' : ' (single-select)';\n\t\t\t\t\t\t\t\tthrow new Error('Option "' + value + '" not found in select element' + isMultiple + '. Available options: ' + optionList + (availableOptions.length > 8 ? '...' : '') + '. Try using the exact option value or label.');\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tselectElement.dispatchEvent(new Event('input', { bubbles: true }));\n\t\t\t\t\t\tselectElement.dispatchEvent(new Event('change', { bubbles: true }));\n\n\t\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\tselectedValues,\n\t\t\t\t\t\t\tmatchedBy,\n\t\t\t\t\t\t\tavailableOptions: availableOptions.slice(0, 10),\n\t\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t})();\n\t\t\t\t`,
+                                s = RA(await NA(a, n, e.headless, t), ["selectedValues", "matchedBy", "pageState"]),
+                                o = [];
+                            if (s.selectedValues.length > 0) {
+                                const e = s.selectedValues.map((e, t) => `${e} (matched by ${s.matchedBy[t]||"value"})`);
+                                o.push(`- Selected: ${e.join(", ")}`)
+                            } else o.push("- Selected values: (none)");
+                            return wA.set(n, Date.now()), FA(await PA({
+                                action: "select_option",
+                                detailLines: o,
+                                pageState: s.pageState,
+                                viewId: n,
+                                context: t
+                            }), n, e.take_screenshot_afterwards ?? !1, t)
+                        } catch (t) {
+                            return {
+                                content: [{
+                                    type: "text",
+                                    text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
+                                        ref: e.ref,
+                                        action: "selectOption"
+                                    }))
+                                }]
+                            }
+                        }
+                    },
+                    async pressKey(e, t) {
+                        const n = await ZA(e.viewId, t);
+                        if (!n) return {
+                            content: [{
+                                type: "text",
+                                text: "No browser tab available. Please navigate to a page first."
+                            }]
+                        };
+                        await AA("browser_press_key", n, t);
+                        const r = `\n\t\t\t\t(function() {\n\t\t\t\t\tconst keyInput = ${JSON.stringify(e.key)};\n\n\t\t\t\t\tconst keyCodeMap = {\n\t\t\t\t\t\t'PageDown': 34, 'PageUp': 33, 'End': 35, 'Home': 36,\n\t\t\t\t\t\t'ArrowLeft': 37, 'ArrowUp': 38, 'ArrowRight': 39, 'ArrowDown': 40,\n\t\t\t\t\t\t'Enter': 13, 'Escape': 27, 'Tab': 9, 'Backspace': 8, 'Delete': 46,\n\t\t\t\t\t\t'Space': 32, ' ': 32, 'F1': 112, 'F2': 113, 'F3': 114, 'F4': 115,\n\t\t\t\t\t\t'F5': 116, 'F6': 117, 'F7': 118, 'F8': 119, 'F9': 120, 'F10': 121,\n\t\t\t\t\t\t'F11': 122, 'F12': 123, 'Insert': 45, 'NumLock': 144, 'ScrollLock': 145,\n\t\t\t\t\t\t'Pause': 19, 'CapsLock': 20\n\t\t\t\t\t};\n\n\t\t\t\t\tconst codeMap = {\n\t\t\t\t\t\t'a': 'KeyA', 'b': 'KeyB', 'c': 'KeyC', 'd': 'KeyD', 'e': 'KeyE',\n\t\t\t\t\t\t'f': 'KeyF', 'g': 'KeyG', 'h': 'KeyH', 'i': 'KeyI', 'j': 'KeyJ',\n\t\t\t\t\t\t'k': 'KeyK', 'l': 'KeyL', 'm': 'KeyM', 'n': 'KeyN', 'o': 'KeyO',\n\t\t\t\t\t\t'p': 'KeyP', 'q': 'KeyQ', 'r': 'KeyR', 's': 'KeyS', 't': 'KeyT',\n\t\t\t\t\t\t'u': 'KeyU', 'v': 'KeyV', 'w': 'KeyW', 'x': 'KeyX', 'y': 'KeyY', 'z': 'KeyZ',\n\t\t\t\t\t\t'0': 'Digit0', '1': 'Digit1', '2': 'Digit2', '3': 'Digit3', '4': 'Digit4',\n\t\t\t\t\t\t'5': 'Digit5', '6': 'Digit6', '7': 'Digit7', '8': 'Digit8', '9': 'Digit9',\n\t\t\t\t\t\t' ': 'Space', 'Space': 'Space',\n\t\t\t\t\t\t'Enter': 'Enter', 'Tab': 'Tab', 'Escape': 'Escape', 'Backspace': 'Backspace',\n\t\t\t\t\t\t'Delete': 'Delete', 'Insert': 'Insert',\n\t\t\t\t\t\t'ArrowUp': 'ArrowUp', 'ArrowDown': 'ArrowDown', 'ArrowLeft': 'ArrowLeft', 'ArrowRight': 'ArrowRight',\n\t\t\t\t\t\t'Home': 'Home', 'End': 'End', 'PageUp': 'PageUp', 'PageDown': 'PageDown',\n\t\t\t\t\t\t'F1': 'F1', 'F2': 'F2', 'F3': 'F3', 'F4': 'F4', 'F5': 'F5', 'F6': 'F6',\n\t\t\t\t\t\t'F7': 'F7', 'F8': 'F8', 'F9': 'F9', 'F10': 'F10', 'F11': 'F11', 'F12': 'F12',\n\t\t\t\t\t\t'-': 'Minus', '=': 'Equal', '[': 'BracketLeft', ']': 'BracketRight',\n\t\t\t\t\t\t'\\\\': 'Backslash', ';': 'Semicolon', "'": 'Quote', ',': 'Comma',\n\t\t\t\t\t\t'.': 'Period', '/': 'Slash', '\`': 'Backquote'\n\t\t\t\t\t};\n\n\t\t\t\t\tconst scrollAmounts = {\n\t\t\t\t\t\t'PageDown': { x: 0, y: window.innerHeight * 0.8 },\n\t\t\t\t\t\t'PageUp': { x: 0, y: -window.innerHeight * 0.8 },\n\t\t\t\t\t\t'ArrowDown': { x: 0, y: 40 },\n\t\t\t\t\t\t'ArrowUp': { x: 0, y: -40 },\n\t\t\t\t\t\t'End': { x: 0, y: document.documentElement.scrollHeight - window.scrollY },\n\t\t\t\t\t\t'Home': { x: 0, y: -window.scrollY },\n\t\t\t\t\t\t'Space': { x: 0, y: window.innerHeight * 0.8 },\n\t\t\t\t\t\t' ': { x: 0, y: window.innerHeight * 0.8 },\n\t\t\t\t\t};\n\n\t\t\t\t\tconst modifierAliases = {\n\t\t\t\t\t\t'Control': ['Control', 'Ctrl', 'control', 'ctrl'],\n\t\t\t\t\t\t'Shift': ['Shift', 'shift'],\n\t\t\t\t\t\t'Alt': ['Alt', 'alt', 'Option', 'option'],\n\t\t\t\t\t\t'Meta': ['Meta', 'meta', 'Command', 'command', 'Cmd', 'cmd', 'Win', 'win']\n\t\t\t\t\t};\n\n\t\t\t\t\tfunction parseKeyCombo(input) {\n\t\t\t\t\t\tconst parts = input.split('+').map(p => p.trim());\n\t\t\t\t\t\tconst modifiers = { ctrlKey: false, shiftKey: false, altKey: false, metaKey: false };\n\t\t\t\t\t\tlet mainKey = '';\n\n\t\t\t\t\t\tfor (const part of parts) {\n\t\t\t\t\t\t\tlet isModifier = false;\n\t\t\t\t\t\t\tfor (const [mod, aliases] of Object.entries(modifierAliases)) {\n\t\t\t\t\t\t\t\tif (aliases.includes(part)) {\n\t\t\t\t\t\t\t\t\tif (mod === 'Control') modifiers.ctrlKey = true;\n\t\t\t\t\t\t\t\t\telse if (mod === 'Shift') modifiers.shiftKey = true;\n\t\t\t\t\t\t\t\t\telse if (mod === 'Alt') modifiers.altKey = true;\n\t\t\t\t\t\t\t\t\telse if (mod === 'Meta') modifiers.metaKey = true;\n\t\t\t\t\t\t\t\t\tisModifier = true;\n\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif (!isModifier) {\n\t\t\t\t\t\t\t\tmainKey = part;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\treturn { modifiers, mainKey };\n\t\t\t\t\t}\n\n\t\t\t\t\tconst { modifiers, mainKey } = parseKeyCombo(keyInput);\n\t\t\t\t\tconst key = mainKey || keyInput;\n\n\t\t\t\t\tconst keyLower = key.toLowerCase();\n\t\t\t\t\tconst code = codeMap[key] || codeMap[keyLower] || (key.length === 1 ? 'Key' + key.toUpperCase() : key);\n\t\t\t\t\tconst keyCode = keyCodeMap[key] || (key.length === 1 ? key.toUpperCase().charCodeAt(0) : 0);\n\n\t\t\t\t\tconst activeElement = document.activeElement || document.body;\n\n\t\t\t\t\tconst scrollKeys = ['PageDown', 'PageUp', 'Home', 'End'];\n\t\t\t\t\tif (scrollKeys.includes(key) && !modifiers.ctrlKey && !modifiers.altKey && !modifiers.metaKey) {\n\t\t\t\t\t\tconst isScrollable = (el) => {\n\t\t\t\t\t\t\tif (!el || !(el instanceof HTMLElement)) return false;\n\t\t\t\t\t\t\tconst style = getComputedStyle(el);\n\t\t\t\t\t\t\tconst overflowY = style.overflowY;\n\t\t\t\t\t\t\treturn (overflowY === 'auto' || overflowY === 'scroll') && el.scrollHeight > el.clientHeight;\n\t\t\t\t\t\t};\n\n\t\t\t\t\t\tlet scrollable = null;\n\t\t\t\t\t\tlet current = activeElement;\n\t\t\t\t\t\twhile (current && current !== document.body) {\n\t\t\t\t\t\t\tif (isScrollable(current)) {\n\t\t\t\t\t\t\t\tscrollable = current;\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tcurrent = current.parentElement;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (!scrollable) {\n\t\t\t\t\t\t\tscrollable = document.scrollingElement || document.documentElement;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst viewportHeight = scrollable.clientHeight;\n\n\t\t\t\t\t\tswitch (key) {\n\t\t\t\t\t\t\tcase 'PageDown':\n\t\t\t\t\t\t\t\tscrollable.scrollBy({ top: viewportHeight, behavior: 'instant' });\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\tcase 'PageUp':\n\t\t\t\t\t\t\t\tscrollable.scrollBy({ top: -viewportHeight, behavior: 'instant' });\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\tcase 'Home':\n\t\t\t\t\t\t\t\tscrollable.scrollTo({ top: 0, behavior: 'instant' });\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\tcase 'End':\n\t\t\t\t\t\t\t\tscrollable.scrollTo({ top: scrollable.scrollHeight, behavior: 'instant' });\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t}\n\t\t\t\t\t} else if (scrollAmounts[key] && !modifiers.ctrlKey && !modifiers.altKey && !modifiers.metaKey) {\n\t\t\t\t\t\twindow.scrollBy({ left: scrollAmounts[key].x, top: scrollAmounts[key].y, behavior: 'smooth' });\n\t\t\t\t\t}\n\n\t\t\t\t\tconst eventInit = {\n\t\t\t\t\t\tkey: key,\n\t\t\t\t\t\tcode: code,\n\t\t\t\t\t\tkeyCode: keyCode,\n\t\t\t\t\t\twhich: keyCode,\n\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\tctrlKey: modifiers.ctrlKey,\n\t\t\t\t\t\tshiftKey: modifiers.shiftKey,\n\t\t\t\t\t\taltKey: modifiers.altKey,\n\t\t\t\t\t\tmetaKey: modifiers.metaKey\n\t\t\t\t\t};\n\n\t\t\t\t\tactiveElement.dispatchEvent(new KeyboardEvent('keydown', eventInit));\n\n\t\t\t\t\tif (key.length === 1 && !modifiers.ctrlKey && !modifiers.altKey && !modifiers.metaKey) {\n\t\t\t\t\t\tactiveElement.dispatchEvent(new KeyboardEvent('keypress', eventInit));\n\n\t\t\t\t\t\tif (activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA' || activeElement.isContentEditable) {\n\t\t\t\t\t\t\tconst inputEvent = new InputEvent('beforeinput', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tinputType: 'insertText',\n\t\t\t\t\t\t\t\tdata: key\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\tactiveElement.dispatchEvent(inputEvent);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\tactiveElement.dispatchEvent(new KeyboardEvent('keyup', eventInit));\n\n\t\t\t\t\tconst modifierStr = [\n\t\t\t\t\t\tmodifiers.ctrlKey ? 'Ctrl' : '',\n\t\t\t\t\t\tmodifiers.shiftKey ? 'Shift' : '',\n\t\t\t\t\t\tmodifiers.altKey ? 'Alt' : '',\n\t\t\t\t\t\tmodifiers.metaKey ? 'Meta' : ''\n\t\t\t\t\t].filter(Boolean).join('+');\n\n\t\t\t\t\treturn {\n\t\t\t\t\t\taction: 'press_key',\n\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\tkey: key,\n\t\t\t\t\t\tcode: code,\n\t\t\t\t\t\tmodifiers: modifierStr || 'none',\n\t\t\t\t\t\tfullCombo: modifierStr ? modifierStr + '+' + key : key\n\t\t\t\t\t};\n\t\t\t\t})();\n\t\t\t`,
+                            a = RA(await NA(r, n, e.headless, t), ["key", "code", "fullCombo"]);
+                        return a.success ? FA({
+                            content: [{
+                                type: "text",
+                                text: `Successfully pressed key: ${a.fullCombo} (code: ${a.code})`
+                            }, {
+                                type: "metadata",
+                                viewId: n
+                            }]
+                        }, n, e.take_screenshot_afterwards ?? !1, t) : {
+                            content: [{
+                                type: "text",
+                                text: `Failed to press key: ${a.key}`
+                            }]
+                        }
+                    }
+                },
+                u = {
+                    click: async (e, t) => WA({
+                        ...e,
+                        retryWithOffset: !1,
+                        actionType: "click"
+                    }, NA, t),
+                    safeClick: async (e, t) => WA(e, NA, t),
+                    mouseClickXY: async (e, t) => async function(e, t, n) {
+                        const r = "click at position",
+                            a = Math.round(e.x),
+                            s = Math.round(e.y),
+                            o = `(${a}, ${s})`;
+                        if (!Number.isFinite(a) || !Number.isFinite(s)) return {
+                            content: [{
+                                type: "text",
+                                text: "Error: x and y must be finite numbers.\n\nUse coordinates from a fresh viewport screenshot."
+                            }]
+                        };
+                        const c = await ZA(e.viewId, n);
+                        if (!c) return VA({
+                            actionType: r,
+                            targetDescription: `(${a}, ${s})`,
+                            attempts: 1,
+                            outcome: "failure",
+                            error: "No browser tab available"
+                        }), {
+                            content: [{
+                                type: "text",
+                                text: "No browser tab available. Please navigate to a page first."
+                            }]
+                        };
+                        const d = function(e) {
+                            return pA.get(e)
+                        }(c);
+                        if (!d) return VA({
+                            actionType: r,
+                            targetDescription: o,
+                            attempts: 1,
+                            outcome: "failure",
+                            error: "No recent viewport screenshot available"
+                        }), {
+                            content: [{
+                                type: "text",
+                                text: "Error: browser_mouse_click_xy needs a fresh screenshot for this tab.\n\nTake a screenshot right before this call. Other browser tool calls clear the cache."
+                            }]
+                        };
+                        const u = function(e, t, n) {
+                            const r = n.viewportCssWidth / n.sentImageWidth,
+                                a = n.viewportCssHeight / n.sentImageHeight;
+                            return {
+                                mappedX: Math.round(e * r),
+                                mappedY: Math.round(t * a),
+                                scaleX: r,
+                                scaleY: a
+                            }
+                        }(a, s, d);
+                        try {
+                            await AA("browser_mouse_click_xy", c, n);
+                            const l = `\n\t\t\t${EA}\n\t\t\t${i}\n\t\t\t${BA}\n\t\t\t(async function() {\n\t\t\t\tconst screenshotX = ${a};\n\t\t\t\tconst screenshotY = ${s};\n\t\t\t\tconst mappedX = ${u.mappedX};\n\t\t\t\tconst mappedY = ${u.mappedY};\n\t\t\t\tconst cachedUrl = ${JSON.stringify(d.url)};\n\t\t\t\tconst sentImageWidth = ${d.sentImageWidth};\n\t\t\t\tconst sentImageHeight = ${d.sentImageHeight};\n\n\t\t\t\tif (window.location.href !== cachedUrl) {\n\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\treturn {\n\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\tstaleScreenshot: true,\n\t\t\t\t\t\terror: 'browser_mouse_click_xy needs a fresh screenshot. The page changed since the last one.',\n\t\t\t\t\t\tsuggestion: 'Take a new screenshot for this tab, then retry with coordinates from it.',\n\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t}\n\t\t\t\t\t};\n\t\t\t\t}\n\n\t\t\t\tconst targetElement = getDeepElementFromPoint(document, mappedX, mappedY);\n\n\t\t\t\tif (!targetElement) {\n\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\treturn {\n\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\terror: 'The coordinates are outside the visible viewport.',\n\t\t\t\t\t\tsuggestion: 'Take a new screenshot for this tab, then retry with coordinates from it.',\n\t\t\t\t\t\tscreenshotCoordinates: { x: screenshotX, y: screenshotY },\n\t\t\t\t\t\tmappedCoordinates: { x: mappedX, y: mappedY },\n\t\t\t\t\t\tscreenshotSize: { width: sentImageWidth, height: sentImageHeight },\n\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t}\n\t\t\t\t\t};\n\t\t\t\t}\n\n\t\t\t\tawait dispatchMouseClickSequenceInBrowser(targetElement, {\n\t\t\t\t\tx: mappedX,\n\t\t\t\t\ty: mappedY,\n\t\t\t\t\tbutton: ${JSON.stringify(e.button??"left")}\n\t\t\t\t});\n\n\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\treturn {\n\t\t\t\t\tsuccess: true,\n\t\t\t\t\tbutton: ${JSON.stringify(e.button??"left")},\n\t\t\t\t\tscreenshotCoordinates: { x: screenshotX, y: screenshotY },\n\t\t\t\t\tmappedCoordinates: { x: mappedX, y: mappedY },\n\t\t\t\t\tscreenshotSize: { width: sentImageWidth, height: sentImageHeight },\n\t\t\t\t\ttargetPreview: previewNode(targetElement),\n\t\t\t\t\ttargetRef: targetElement.getAttribute ? (targetElement.getAttribute('data-cursor-ref') || undefined) : undefined,\n\t\t\t\t\tpageState: {\n\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t})();\n\t\t`,
+                                h = RA(await t(l, c, e.headless, n), []);
+                            if (!h.success) {
+                                const t = [`Error: ${h.error||`Failed to click at coordinates (${a}, ${s}).`}`];
+                                return h.screenshotCoordinates && h.mappedCoordinates && (t.push(`- Screenshot position: (${h.screenshotCoordinates.x}, ${h.screenshotCoordinates.y})`), t.push(`- Mapped viewport position: (${h.mappedCoordinates.x}, ${h.mappedCoordinates.y})`)), h.screenshotSize && t.push(`- Screenshot size: ${h.screenshotSize.width}x${h.screenshotSize.height}`), h.suggestion && t.push("", `Suggestion: ${h.suggestion}`), h.staleScreenshot && _A(c), VA({
+                                    actionType: r,
+                                    targetDescription: o,
+                                    attempts: 1,
+                                    outcome: "failure",
+                                    error: h.error
+                                }), h.pageState ? (wA.set(c, Date.now()), FA(await PA({
+                                    action: `${r} (failed)`,
+                                    detailLines: t,
+                                    pageState: h.pageState,
+                                    viewId: c,
+                                    context: n
+                                }), c, e.take_screenshot_afterwards ?? !1, n)) : {
                                     content: [{
                                         type: "text",
-                                        text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
-                                            ref: e.ref,
-                                            action: "type"
-                                        }))
+                                        text: t.join("\n")
                                     }]
                                 }
                             }
-                        },
-                        async fill(e, t) {
-                            const n = await ZA(e.viewId, t);
-                            if (!n) return {
+                            const p = [`- Screenshot position: (${a}, ${s})`];
+                            return u.mappedX === a && u.mappedY === s || p.push(`- Viewport position: (${u.mappedX}, ${u.mappedY})`), h.targetPreview && p.push(`- Target: ${h.targetPreview}`), h.targetRef && p.push(`- Target ref: ${h.targetRef}`), VA({
+                                actionType: r,
+                                targetDescription: h.targetPreview ?? `${o} -> (${u.mappedX}, ${u.mappedY})`,
+                                attempts: 1,
+                                outcome: "success"
+                            }), _A(c), wA.set(c, Date.now()), FA(await PA({
+                                action: r,
+                                detailLines: p,
+                                pageState: h.pageState,
+                                viewId: c,
+                                context: n
+                            }), c, e.take_screenshot_afterwards ?? !1, n)
+                        } catch (e) {
+                            const t = SA(e instanceof Error ? e : new Error(String(e)), {
+                                action: r
+                            });
+                            return VA({
+                                actionType: r,
+                                targetDescription: `(${a}, ${s})`,
+                                attempts: 1,
+                                outcome: "failure",
+                                error: t.message
+                            }), {
                                 content: [{
                                     type: "text",
-                                    text: "No browser tab available. Please navigate to a page first."
+                                    text: OA(t)
                                 }]
-                            };
-                            try {
-                                await AA("browser_fill", n, t), await MA(n, e.headless, i, t);
-                                const r = TA(e.ref),
-                                    a = e.element || "",
-                                    s = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t${i}\n\t\t\t\t\t${$A}\n\t\t\t\t\t(async function() {\n\t\t\t\t\t\tconst ref = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst expectedDescription = ${JSON.stringify(a)};\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tvalidateElementForInteraction(element, ref, 'fill', expectedDescription);\n\n\t\t\t\t\t\tconst rect = element.getBoundingClientRect();\n\t\t\t\t\t\tconst scrollPadding = 50;\n\t\t\t\t\t\tconst needsScroll = rect.top < scrollPadding || rect.left < scrollPadding ||\n\t\t\t\t\t\t\trect.bottom > window.innerHeight - scrollPadding || rect.right > window.innerWidth - scrollPadding;\n\t\t\t\t\t\tif (needsScroll) {\n\t\t\t\t\t\t\telement.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' });\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 300));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst tagName = element.tagName.toUpperCase();\n\t\t\t\t\t\tconst isContentEditable = element.isContentEditable;\n\n\t\t\t\t\t\tconst previousActiveElement = document.activeElement;\n\t\t\t\t\t\tif (previousActiveElement && previousActiveElement !== element && previousActiveElement !== document.body) {\n\t\t\t\t\t\t\tif (typeof previousActiveElement.blur === 'function') {\n\t\t\t\t\t\t\t\tpreviousActiveElement.blur();\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telement.focus();\n\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 0));\n\n\t\t\t\t\t\tif (document.activeElement !== element) {\n\t\t\t\t\t\t\telement.click();\n\t\t\t\t\t\t\telement.focus();\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 0));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst value = ${JSON.stringify(e.value)};\n\n\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\telement.textContent = '';\n\t\t\t\t\t\t\telement.textContent = value;\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tsetNativeValue(element, '');\n\t\t\t\t\t\t\tsetNativeValue(element, value);\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telement.dispatchEvent(new Event('input', { bubbles: true }));\n\t\t\t\t\t\telement.dispatchEvent(new Event('change', { bubbles: true }));\n\n\t\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\tvalue: value,\n\t\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t})();\n\t\t\t\t`,
-                                    o = await NA(s, n, e.headless, t);
-                                return wA.set(n, Date.now()), FA(await PA({
-                                    action: "fill",
-                                    detailLines: [`- Filled with value: "${o.value.substring(0,50)}${o.value.length>50?"...":""}"`],
-                                    pageState: o.pageState,
-                                    viewId: n,
-                                    context: t
-                                }), n, e.take_screenshot_afterwards ?? !1, t)
-                            } catch (t) {
-                                return {
-                                    content: [{
-                                        type: "text",
-                                        text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
-                                            ref: e.ref,
-                                            action: "fill"
-                                        }))
-                                    }]
-                                }
                             }
-                        },
-                        async fillForm(e, t) {
-                            const n = await ZA(e.viewId, t);
-                            if (!n) return {
+                        }
+                    }(e, NA, t),
+                    hover: async (e, t) => KA({
+                        ...e,
+                        actionType: "hover"
+                    }, NA, t),
+                    hoverAndWait: async (e, t) => KA(e, NA, t),
+                    async drag(e, t) {
+                        const n = await ZA(e.viewId, t);
+                        if (!n) return {
+                            content: [{
+                                type: "text",
+                                text: "No browser tab available. Please navigate to a page first."
+                            }]
+                        };
+                        try {
+                            await AA("browser_drag", n, t), await MA(n, e.headless, i, t);
+                            const r = TA(e.sourceRef),
+                                a = e.targetRef ? TA(e.targetRef) : void 0;
+                            if (!a && (void 0 === e.targetX || void 0 === e.targetY)) return {
                                 content: [{
                                     type: "text",
-                                    text: "No browser tab available. Please navigate to a page first."
+                                    text: "Error: Either targetRef or both targetX and targetY must be provided for drag operation.\n\nSuggestion: Specify where to drop the element using targetRef (for element-to-element drag) or targetX/targetY coordinates."
                                 }]
                             };
-                            if (!e.fields || !Array.isArray(e.fields)) return {
+                            const s = `\n\t\t\t\t\t(async function() {\n\t\t\t\t\t\t${EA}\n\n\t\t\t\t\t\tconst sourceRef = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst targetRef = ${JSON.stringify(a)};\n\t\t\t\t\t\tconst targetX = ${e.targetX??"null"};\n\t\t\t\t\t\tconst targetY = ${e.targetY??"null"};\n\n\t\t\t\t\t\tconst { element: sourceElement } = findElementByRef(sourceRef);\n\t\t\t\t\t\tif (!sourceElement) {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\terror: 'Source element not found: ' + sourceRef + '. Take a snapshot to get updated refs.',\n\t\t\t\t\t\t\t\tsuggestion: 'The source element reference may be stale. Take a new snapshot to get current element refs.'\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst sourceStyle = window.getComputedStyle(sourceElement);\n\t\t\t\t\t\tconst isDraggable = sourceElement.draggable || sourceElement.getAttribute('draggable') === 'true';\n\t\t\t\t\t\tif (!isDraggable && sourceStyle.cursor !== 'grab' && sourceStyle.cursor !== 'move') {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\terror: 'Source element ' + sourceRef + ' does not appear to be draggable. It lacks the draggable attribute.',\n\t\t\t\t\t\t\t\tsuggestion: 'Verify the element is meant to be dragged. Check if it has draggable="true" attribute or is part of a drag-and-drop library that uses different mechanisms.'\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tlet targetElement = null;\n\t\t\t\t\t\tif (targetRef) {\n\t\t\t\t\t\t\tconst targetResult = findElementByRef(targetRef);\n\t\t\t\t\t\t\ttargetElement = targetResult.element;\n\t\t\t\t\t\t\tif (!targetElement) {\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\t\terror: 'Target element not found: ' + targetRef + '. Take a snapshot to get updated refs.',\n\t\t\t\t\t\t\t\t\tsuggestion: 'The target element reference may be stale. Take a new snapshot to get current element refs.'\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst sourceRect = sourceElement.getBoundingClientRect();\n\t\t\t\t\t\tconst startX = Math.round(sourceRect.left + sourceRect.width / 2);\n\t\t\t\t\t\tconst startY = Math.round(sourceRect.top + sourceRect.height / 2);\n\n\t\t\t\t\t\tlet dropX, dropY;\n\t\t\t\t\t\tif (targetElement) {\n\t\t\t\t\t\t\tconst targetRect = targetElement.getBoundingClientRect();\n\t\t\t\t\t\t\tdropX = Math.round(targetRect.left + targetRect.width / 2);\n\t\t\t\t\t\t\tdropY = Math.round(targetRect.top + targetRect.height / 2);\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tdropX = targetX;\n\t\t\t\t\t\t\tdropY = targetY;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\tconst dataTransfer = new DataTransfer();\n\t\t\t\t\t\t\tdataTransfer.effectAllowed = 'all';\n\n\t\t\t\t\t\t\tconst pointerOpts = {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tview: window,\n\t\t\t\t\t\t\t\tpointerId: 1,\n\t\t\t\t\t\t\t\tpointerType: 'mouse',\n\t\t\t\t\t\t\t\tisPrimary: true,\n\t\t\t\t\t\t\t\tbutton: 0,\n\t\t\t\t\t\t\t\tbuttons: 1\n\t\t\t\t\t\t\t};\n\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new PointerEvent('pointerover', { ...pointerOpts, clientX: startX, clientY: startY }));\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new PointerEvent('pointerenter', { ...pointerOpts, clientX: startX, clientY: startY, bubbles: false }));\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new MouseEvent('mouseover', { bubbles: true, clientX: startX, clientY: startY }));\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new MouseEvent('mouseenter', { bubbles: false, clientX: startX, clientY: startY }));\n\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new PointerEvent('pointerdown', { ...pointerOpts, clientX: startX, clientY: startY }));\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true, clientX: startX, clientY: startY, button: 0 }));\n\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 50));\n\n\t\t\t\t\t\t\tconst dragStartEvent = new DragEvent('dragstart', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tclientX: startX,\n\t\t\t\t\t\t\t\tclientY: startY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\tconst dragStarted = sourceElement.dispatchEvent(dragStartEvent);\n\n\t\t\t\t\t\t\tif (!dragStarted) {\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\t\terror: 'Drag start was prevented by the page.',\n\t\t\t\t\t\t\t\t\tsuggestion: 'The page may have event handlers preventing drag. Try using browser_evaluate to trigger the drag programmatically.'\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new DragEvent('drag', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tclientX: startX,\n\t\t\t\t\t\t\t\tclientY: startY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t}));\n\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 50));\n\n\t\t\t\t\t\t\tconst dropTarget = targetElement || document.elementFromPoint(dropX, dropY);\n\t\t\t\t\t\t\tif (!dropTarget) {\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\t\terror: 'No element found at drop coordinates (' + dropX + ', ' + dropY + ').',\n\t\t\t\t\t\t\t\t\tsuggestion: 'Verify the target coordinates are within the viewport and point to a valid drop zone.'\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\tdropTarget.dispatchEvent(new DragEvent('dragenter', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tclientX: dropX,\n\t\t\t\t\t\t\t\tclientY: dropY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t}));\n\n\t\t\t\t\t\t\tconst dragOverEvent = new DragEvent('dragover', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tclientX: dropX,\n\t\t\t\t\t\t\t\tclientY: dropY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\tdropTarget.dispatchEvent(dragOverEvent);\n\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 50));\n\n\t\t\t\t\t\t\tconst dropEvent = new DragEvent('drop', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tclientX: dropX,\n\t\t\t\t\t\t\t\tclientY: dropY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\tconst dropAccepted = dropTarget.dispatchEvent(dropEvent);\n\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new DragEvent('dragend', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: false,\n\t\t\t\t\t\t\t\tclientX: dropX,\n\t\t\t\t\t\t\t\tclientY: dropY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t}));\n\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new PointerEvent('pointerup', { ...pointerOpts, clientX: dropX, clientY: dropY }));\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, clientX: dropX, clientY: dropY }));\n\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\t\taction: 'drag',\n\t\t\t\t\t\t\t\tsource: sourceRef,\n\t\t\t\t\t\t\t\ttarget: targetRef || ('(' + dropX + ', ' + dropY + ')'),\n\t\t\t\t\t\t\t\tdropAccepted: dropAccepted,\n\t\t\t\t\t\t\t\tmessage: 'Drag completed from ' + sourceRef + ' to ' + (targetRef || 'coordinates (' + dropX + ', ' + dropY + ')') + (dropAccepted ? '' : ' (drop may not have been accepted by target)')\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t} catch (err) {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\terror: 'Drag operation failed: ' + (err instanceof Error ? err.message : String(err)),\n\t\t\t\t\t\t\t\tsuggestion: 'The drag-and-drop may use a library (like react-dnd or sortablejs) that requires specific event sequences. Try using browser_evaluate to interact with the library directly.'\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\t\t\t\t\t})();\n\t\t\t\t`,
+                                o = RA(await NA(s, n, e.headless, t), []);
+                            return o.success ? FA({
                                 content: [{
                                     type: "text",
-                                    text: 'Error: Missing required "fields" parameter.\n\nThe browser_fill_form tool requires a "fields" array containing the fields to fill.\n\nExample usage:\n{ fields: [{ ref: "e123", value: "John Doe" }, { ref: "e456", value: "john@example.com" }] }\n\nEach field should have a "ref" (element reference) and "value" (text to fill).'
-                                }]
-                            };
-                            if (0 === e.fields.length) return {
-                                content: [{
-                                    type: "text",
-                                    text: 'Error: Empty "fields" array provided.\n\nProvide at least one field to fill. Take a snapshot to identify the form fields and their refs.'
-                                }]
-                            };
-                            try {
-                                await AA("browser_fill_form", n, t), await MA(n, e.headless, i, t);
-                                const r = e.fields.map(e => ({
-                                        ref: TA(e.ref),
-                                        value: e.value,
-                                        element: e.element || "",
-                                        clear: e.clear
-                                    })),
-                                    a = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t${i}\n\t\t\t\t\t${$A}\n\t\t\t\t\t(async function() {\n\t\t\t\t\t\tconst fields = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst filled = [];\n\t\t\t\t\t\tconst failed = [];\n\n\t\t\t\t\t\tfor (const field of fields) {\n\t\t\t\t\t\t\tconst ref = field.ref;\n\t\t\t\t\t\t\tconst expectedDescription = field.element || '';\n\t\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\t\t\tvalidateElementForInteraction(element, ref, 'fill', expectedDescription);\n\n\t\t\t\t\t\t\t\tconst rect = element.getBoundingClientRect();\n\t\t\t\t\t\t\t\tconst scrollPadding = 50;\n\t\t\t\t\t\t\t\tconst needsScroll = rect.top < scrollPadding || rect.left < scrollPadding ||\n\t\t\t\t\t\t\t\t\trect.bottom > window.innerHeight - scrollPadding || rect.right > window.innerWidth - scrollPadding;\n\t\t\t\t\t\t\t\tif (needsScroll) {\n\t\t\t\t\t\t\t\t\telement.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' });\n\t\t\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 300));\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tconst isContentEditable = element.isContentEditable;\n\t\t\t\t\t\t\t\tconst clearFirst = field.clear !== undefined ? field.clear : true;\n\t\t\t\t\t\t\t\tconst value = String(field.value);\n\n\t\t\t\t\t\t\t\tif (clearFirst) {\n\t\t\t\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\t\t\t\telement.textContent = '';\n\t\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\t\tsetNativeValue(element, '');\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\tif (isContentEditable) {\n\t\t\t\t\t\t\t\t\tconst existingContent = clearFirst ? '' : (element.textContent || '');\n\t\t\t\t\t\t\t\t\telement.textContent = existingContent + value;\n\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\tconst existingValue = clearFirst ? '' : (element.value || '');\n\t\t\t\t\t\t\t\t\tsetNativeValue(element, existingValue + value);\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\telement.dispatchEvent(new Event('input', { bubbles: true }));\n\t\t\t\t\t\t\t\telement.dispatchEvent(new Event('change', { bubbles: true }));\n\n\t\t\t\t\t\t\t\tconst preview = value.length > 60 ? value.substring(0, 60) + '...' : value;\n\t\t\t\t\t\t\t\tfilled.push({ ref, valuePreview: preview });\n\t\t\t\t\t\t\t} catch (err) {\n\t\t\t\t\t\t\t\tconst message = err instanceof Error ? err.message : String(err);\n\t\t\t\t\t\t\t\tfailed.push({ ref, error: message });\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: failed.length === 0,\n\t\t\t\t\t\t\tfilled,\n\t\t\t\t\t\t\tfailed,\n\t\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t})();\n\t\t\t\t`,
-                                    s = RA(await NA(a, n, e.headless, t), ["filled", "failed", "pageState"]),
-                                    o = [];
-                                if (o.push(`- Fields filled: ${s.filled.length}`), s.failed.length > 0) {
-                                    o.push(`- Fields failed: ${s.failed.length}`);
-                                    const e = s.failed.slice(0, 5).map(e => `${e.ref}: ${e.error}`);
-                                    o.push(`- Failed refs: ${e.join("; ")}`)
-                                }
-                                return wA.set(n, Date.now()), FA(await PA({
-                                    action: "fill_form",
-                                    detailLines: o,
-                                    pageState: s.pageState,
-                                    viewId: n,
-                                    context: t
-                                }), n, e.take_screenshot_afterwards ?? !1, t)
-                            } catch (e) {
-                                return {
-                                    content: [{
-                                        type: "text",
-                                        text: OA(SA(e instanceof Error ? e : new Error(String(e)), {
-                                            action: "fill_form"
-                                        }))
-                                    }]
-                                }
-                            }
-                        },
-                        async selectOption(e, t) {
-                            const n = await ZA(e.viewId, t);
-                            if (!n) return {
-                                content: [{
-                                    type: "text",
-                                    text: "No browser tab available. Please navigate to a page first."
-                                }]
-                            };
-                            if (!e.values || !Array.isArray(e.values)) return {
-                                content: [{
-                                    type: "text",
-                                    text: 'Error: Missing required "values" parameter.\n\nThe browser_select_option tool requires a "values" array containing the option(s) to select.\n\nExample usage:\n- Single select: { ref: "e123", values: ["optionValue"] }\n- Multi-select: { ref: "e123", values: ["value1", "value2"] }\n\nValues can be option values or labels. Take a snapshot to see available options.'
-                                }]
-                            };
-                            if (0 === e.values.length) return {
-                                content: [{
-                                    type: "text",
-                                    text: 'Error: Empty "values" array provided.\n\nProvide at least one value to select. Take a snapshot to see available options for this select element.'
-                                }]
-                            };
-                            try {
-                                await AA("browser_select_option", n, t), await MA(n, e.headless, i, t);
-                                const r = TA(e.ref),
-                                    a = `\n\t\t\t\t\t${EA}\n\t\t\t\t\t${i}\n\t\t\t\t\t(async function() {\n\t\t\t\t\t\tconst ref = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst { element } = findElementByRef(ref);\n\t\t\t\t\t\tif (!element) throw new Error('Element not found: ' + ref + '. Take a snapshot to get updated refs.');\n\n\t\t\t\t\t\tconst selectElement = element;\n\t\t\t\t\t\tif (selectElement.tagName.toUpperCase() !== 'SELECT') {\n\t\t\t\t\t\t\tthrow new Error('Element ' + ref + ' is not a select element (found: ' + selectElement.tagName.toLowerCase() + ').');\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (selectElement.disabled) {\n\t\t\t\t\t\t\tthrow new Error('Select element ' + ref + ' is disabled and cannot be interacted with.');\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst rect = selectElement.getBoundingClientRect();\n\t\t\t\t\t\tconst scrollPadding = 50;\n\t\t\t\t\t\tconst needsScroll = rect.top < scrollPadding || rect.left < scrollPadding ||\n\t\t\t\t\t\t\trect.bottom > window.innerHeight - scrollPadding || rect.right > window.innerWidth - scrollPadding;\n\t\t\t\t\t\tif (needsScroll) {\n\t\t\t\t\t\t\tselectElement.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' });\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 300));\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tselectElement.focus();\n\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 0));\n\n\t\t\t\t\t\tconst values = ${JSON.stringify(e.values)};\n\n\t\t\t\t\t\tconst availableOptions = Array.from(selectElement.options).map(o => ({\n\t\t\t\t\t\t\tvalue: o.value,\n\t\t\t\t\t\t\tlabel: o.textContent?.trim() || o.label || '',\n\t\t\t\t\t\t\tdisabled: o.disabled\n\t\t\t\t\t\t}));\n\n\t\t\t\t\t\tif (values.length > 1 && !selectElement.multiple) {\n\t\t\t\t\t\t\tthrow new Error('Cannot select multiple values on a single-select dropdown. The select element does not have the "multiple" attribute. Use a single value instead, or interact with the correct multi-select element.');\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (!selectElement.multiple) {\n\t\t\t\t\t\t\tselectElement.value = '';\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tArray.from(selectElement.options).forEach(option => {\n\t\t\t\t\t\t\t\toption.selected = false;\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst selectedValues = [];\n\t\t\t\t\t\tconst matchedBy = [];\n\t\t\t\t\t\tfor (const value of values) {\n\t\t\t\t\t\t\tlet optionFound = false;\n\t\t\t\t\t\t\tfor (const option of selectElement.options) {\n\t\t\t\t\t\t\t\tif (option.value === value) {\n\t\t\t\t\t\t\t\t\tif (option.disabled) {\n\t\t\t\t\t\t\t\t\t\tthrow new Error('Option "' + value + '" is disabled and cannot be selected.');\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\toption.selected = true;\n\t\t\t\t\t\t\t\t\tselectedValues.push(option.value);\n\t\t\t\t\t\t\t\t\tmatchedBy.push('value');\n\t\t\t\t\t\t\t\t\toptionFound = true;\n\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif (!optionFound) {\n\t\t\t\t\t\t\t\tfor (const option of selectElement.options) {\n\t\t\t\t\t\t\t\t\tconst labelText = (option.textContent?.trim() || option.label || '').toLowerCase();\n\t\t\t\t\t\t\t\t\tif (labelText === value.toLowerCase()) {\n\t\t\t\t\t\t\t\t\t\tif (option.disabled) {\n\t\t\t\t\t\t\t\t\t\t\tthrow new Error('Option with label "' + value + '" is disabled and cannot be selected.');\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\toption.selected = true;\n\t\t\t\t\t\t\t\t\t\tselectedValues.push(option.value);\n\t\t\t\t\t\t\t\t\t\tmatchedBy.push('label');\n\t\t\t\t\t\t\t\t\t\toptionFound = true;\n\t\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif (!optionFound) {\n\t\t\t\t\t\t\t\tfor (const option of selectElement.options) {\n\t\t\t\t\t\t\t\t\tconst labelText = (option.textContent?.trim() || option.label || '').toLowerCase();\n\t\t\t\t\t\t\t\t\tif (labelText.includes(value.toLowerCase())) {\n\t\t\t\t\t\t\t\t\t\tif (option.disabled) {\n\t\t\t\t\t\t\t\t\t\t\tthrow new Error('Option containing "' + value + '" is disabled and cannot be selected.');\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\toption.selected = true;\n\t\t\t\t\t\t\t\t\t\tselectedValues.push(option.value);\n\t\t\t\t\t\t\t\t\t\tmatchedBy.push('partial label');\n\t\t\t\t\t\t\t\t\t\toptionFound = true;\n\t\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif (!optionFound) {\n\t\t\t\t\t\t\t\tconst optionList = availableOptions.slice(0, 8).map(o =>\n\t\t\t\t\t\t\t\t\t'"' + o.label + '"' + (o.value !== o.label ? ' (value: ' + o.value + ')' : '') + (o.disabled ? ' [disabled]' : '')\n\t\t\t\t\t\t\t\t).join(', ');\n\t\t\t\t\t\t\t\tconst isMultiple = selectElement.multiple ? ' (multi-select)' : ' (single-select)';\n\t\t\t\t\t\t\t\tthrow new Error('Option "' + value + '" not found in select element' + isMultiple + '. Available options: ' + optionList + (availableOptions.length > 8 ? '...' : '') + '. Try using the exact option value or label.');\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tselectElement.dispatchEvent(new Event('input', { bubbles: true }));\n\t\t\t\t\t\tselectElement.dispatchEvent(new Event('change', { bubbles: true }));\n\n\t\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\tselectedValues,\n\t\t\t\t\t\t\tmatchedBy,\n\t\t\t\t\t\t\tavailableOptions: availableOptions.slice(0, 10),\n\t\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t})();\n\t\t\t\t`,
-                                    s = RA(await NA(a, n, e.headless, t), ["selectedValues", "matchedBy", "pageState"]),
-                                    o = [];
-                                if (s.selectedValues.length > 0) {
-                                    const e = s.selectedValues.map((e, t) => `${e} (matched by ${s.matchedBy[t]||"value"})`);
-                                    o.push(`- Selected: ${e.join(", ")}`)
-                                } else o.push("- Selected values: (none)");
-                                return wA.set(n, Date.now()), FA(await PA({
-                                    action: "select_option",
-                                    detailLines: o,
-                                    pageState: s.pageState,
-                                    viewId: n,
-                                    context: t
-                                }), n, e.take_screenshot_afterwards ?? !1, t)
-                            } catch (t) {
-                                return {
-                                    content: [{
-                                        type: "text",
-                                        text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
-                                            ref: e.ref,
-                                            action: "selectOption"
-                                        }))
-                                    }]
-                                }
-                            }
-                        },
-                        async pressKey(e, t) {
-                            const n = await ZA(e.viewId, t);
-                            if (!n) return {
-                                content: [{
-                                    type: "text",
-                                    text: "No browser tab available. Please navigate to a page first."
-                                }]
-                            };
-                            await AA("browser_press_key", n, t);
-                            const r = `\n\t\t\t\t(function() {\n\t\t\t\t\tconst keyInput = ${JSON.stringify(e.key)};\n\n\t\t\t\t\tconst keyCodeMap = {\n\t\t\t\t\t\t'PageDown': 34, 'PageUp': 33, 'End': 35, 'Home': 36,\n\t\t\t\t\t\t'ArrowLeft': 37, 'ArrowUp': 38, 'ArrowRight': 39, 'ArrowDown': 40,\n\t\t\t\t\t\t'Enter': 13, 'Escape': 27, 'Tab': 9, 'Backspace': 8, 'Delete': 46,\n\t\t\t\t\t\t'Space': 32, ' ': 32, 'F1': 112, 'F2': 113, 'F3': 114, 'F4': 115,\n\t\t\t\t\t\t'F5': 116, 'F6': 117, 'F7': 118, 'F8': 119, 'F9': 120, 'F10': 121,\n\t\t\t\t\t\t'F11': 122, 'F12': 123, 'Insert': 45, 'NumLock': 144, 'ScrollLock': 145,\n\t\t\t\t\t\t'Pause': 19, 'CapsLock': 20\n\t\t\t\t\t};\n\n\t\t\t\t\tconst codeMap = {\n\t\t\t\t\t\t'a': 'KeyA', 'b': 'KeyB', 'c': 'KeyC', 'd': 'KeyD', 'e': 'KeyE',\n\t\t\t\t\t\t'f': 'KeyF', 'g': 'KeyG', 'h': 'KeyH', 'i': 'KeyI', 'j': 'KeyJ',\n\t\t\t\t\t\t'k': 'KeyK', 'l': 'KeyL', 'm': 'KeyM', 'n': 'KeyN', 'o': 'KeyO',\n\t\t\t\t\t\t'p': 'KeyP', 'q': 'KeyQ', 'r': 'KeyR', 's': 'KeyS', 't': 'KeyT',\n\t\t\t\t\t\t'u': 'KeyU', 'v': 'KeyV', 'w': 'KeyW', 'x': 'KeyX', 'y': 'KeyY', 'z': 'KeyZ',\n\t\t\t\t\t\t'0': 'Digit0', '1': 'Digit1', '2': 'Digit2', '3': 'Digit3', '4': 'Digit4',\n\t\t\t\t\t\t'5': 'Digit5', '6': 'Digit6', '7': 'Digit7', '8': 'Digit8', '9': 'Digit9',\n\t\t\t\t\t\t' ': 'Space', 'Space': 'Space',\n\t\t\t\t\t\t'Enter': 'Enter', 'Tab': 'Tab', 'Escape': 'Escape', 'Backspace': 'Backspace',\n\t\t\t\t\t\t'Delete': 'Delete', 'Insert': 'Insert',\n\t\t\t\t\t\t'ArrowUp': 'ArrowUp', 'ArrowDown': 'ArrowDown', 'ArrowLeft': 'ArrowLeft', 'ArrowRight': 'ArrowRight',\n\t\t\t\t\t\t'Home': 'Home', 'End': 'End', 'PageUp': 'PageUp', 'PageDown': 'PageDown',\n\t\t\t\t\t\t'F1': 'F1', 'F2': 'F2', 'F3': 'F3', 'F4': 'F4', 'F5': 'F5', 'F6': 'F6',\n\t\t\t\t\t\t'F7': 'F7', 'F8': 'F8', 'F9': 'F9', 'F10': 'F10', 'F11': 'F11', 'F12': 'F12',\n\t\t\t\t\t\t'-': 'Minus', '=': 'Equal', '[': 'BracketLeft', ']': 'BracketRight',\n\t\t\t\t\t\t'\\\\': 'Backslash', ';': 'Semicolon', "'": 'Quote', ',': 'Comma',\n\t\t\t\t\t\t'.': 'Period', '/': 'Slash', '\`': 'Backquote'\n\t\t\t\t\t};\n\n\t\t\t\t\tconst scrollAmounts = {\n\t\t\t\t\t\t'PageDown': { x: 0, y: window.innerHeight * 0.8 },\n\t\t\t\t\t\t'PageUp': { x: 0, y: -window.innerHeight * 0.8 },\n\t\t\t\t\t\t'ArrowDown': { x: 0, y: 40 },\n\t\t\t\t\t\t'ArrowUp': { x: 0, y: -40 },\n\t\t\t\t\t\t'End': { x: 0, y: document.documentElement.scrollHeight - window.scrollY },\n\t\t\t\t\t\t'Home': { x: 0, y: -window.scrollY },\n\t\t\t\t\t\t'Space': { x: 0, y: window.innerHeight * 0.8 },\n\t\t\t\t\t\t' ': { x: 0, y: window.innerHeight * 0.8 },\n\t\t\t\t\t};\n\n\t\t\t\t\tconst modifierAliases = {\n\t\t\t\t\t\t'Control': ['Control', 'Ctrl', 'control', 'ctrl'],\n\t\t\t\t\t\t'Shift': ['Shift', 'shift'],\n\t\t\t\t\t\t'Alt': ['Alt', 'alt', 'Option', 'option'],\n\t\t\t\t\t\t'Meta': ['Meta', 'meta', 'Command', 'command', 'Cmd', 'cmd', 'Win', 'win']\n\t\t\t\t\t};\n\n\t\t\t\t\tfunction parseKeyCombo(input) {\n\t\t\t\t\t\tconst parts = input.split('+').map(p => p.trim());\n\t\t\t\t\t\tconst modifiers = { ctrlKey: false, shiftKey: false, altKey: false, metaKey: false };\n\t\t\t\t\t\tlet mainKey = '';\n\n\t\t\t\t\t\tfor (const part of parts) {\n\t\t\t\t\t\t\tlet isModifier = false;\n\t\t\t\t\t\t\tfor (const [mod, aliases] of Object.entries(modifierAliases)) {\n\t\t\t\t\t\t\t\tif (aliases.includes(part)) {\n\t\t\t\t\t\t\t\t\tif (mod === 'Control') modifiers.ctrlKey = true;\n\t\t\t\t\t\t\t\t\telse if (mod === 'Shift') modifiers.shiftKey = true;\n\t\t\t\t\t\t\t\t\telse if (mod === 'Alt') modifiers.altKey = true;\n\t\t\t\t\t\t\t\t\telse if (mod === 'Meta') modifiers.metaKey = true;\n\t\t\t\t\t\t\t\t\tisModifier = true;\n\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif (!isModifier) {\n\t\t\t\t\t\t\t\tmainKey = part;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\treturn { modifiers, mainKey };\n\t\t\t\t\t}\n\n\t\t\t\t\tconst { modifiers, mainKey } = parseKeyCombo(keyInput);\n\t\t\t\t\tconst key = mainKey || keyInput;\n\n\t\t\t\t\tconst keyLower = key.toLowerCase();\n\t\t\t\t\tconst code = codeMap[key] || codeMap[keyLower] || (key.length === 1 ? 'Key' + key.toUpperCase() : key);\n\t\t\t\t\tconst keyCode = keyCodeMap[key] || (key.length === 1 ? key.toUpperCase().charCodeAt(0) : 0);\n\n\t\t\t\t\tconst activeElement = document.activeElement || document.body;\n\n\t\t\t\t\tconst scrollKeys = ['PageDown', 'PageUp', 'Home', 'End'];\n\t\t\t\t\tif (scrollKeys.includes(key) && !modifiers.ctrlKey && !modifiers.altKey && !modifiers.metaKey) {\n\t\t\t\t\t\tconst isScrollable = (el) => {\n\t\t\t\t\t\t\tif (!el || !(el instanceof HTMLElement)) return false;\n\t\t\t\t\t\t\tconst style = getComputedStyle(el);\n\t\t\t\t\t\t\tconst overflowY = style.overflowY;\n\t\t\t\t\t\t\treturn (overflowY === 'auto' || overflowY === 'scroll') && el.scrollHeight > el.clientHeight;\n\t\t\t\t\t\t};\n\n\t\t\t\t\t\tlet scrollable = null;\n\t\t\t\t\t\tlet current = activeElement;\n\t\t\t\t\t\twhile (current && current !== document.body) {\n\t\t\t\t\t\t\tif (isScrollable(current)) {\n\t\t\t\t\t\t\t\tscrollable = current;\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tcurrent = current.parentElement;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (!scrollable) {\n\t\t\t\t\t\t\tscrollable = document.scrollingElement || document.documentElement;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst viewportHeight = scrollable.clientHeight;\n\n\t\t\t\t\t\tswitch (key) {\n\t\t\t\t\t\t\tcase 'PageDown':\n\t\t\t\t\t\t\t\tscrollable.scrollBy({ top: viewportHeight, behavior: 'instant' });\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\tcase 'PageUp':\n\t\t\t\t\t\t\t\tscrollable.scrollBy({ top: -viewportHeight, behavior: 'instant' });\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\tcase 'Home':\n\t\t\t\t\t\t\t\tscrollable.scrollTo({ top: 0, behavior: 'instant' });\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\tcase 'End':\n\t\t\t\t\t\t\t\tscrollable.scrollTo({ top: scrollable.scrollHeight, behavior: 'instant' });\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t}\n\t\t\t\t\t} else if (scrollAmounts[key] && !modifiers.ctrlKey && !modifiers.altKey && !modifiers.metaKey) {\n\t\t\t\t\t\twindow.scrollBy({ left: scrollAmounts[key].x, top: scrollAmounts[key].y, behavior: 'smooth' });\n\t\t\t\t\t}\n\n\t\t\t\t\tconst eventInit = {\n\t\t\t\t\t\tkey: key,\n\t\t\t\t\t\tcode: code,\n\t\t\t\t\t\tkeyCode: keyCode,\n\t\t\t\t\t\twhich: keyCode,\n\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\tctrlKey: modifiers.ctrlKey,\n\t\t\t\t\t\tshiftKey: modifiers.shiftKey,\n\t\t\t\t\t\taltKey: modifiers.altKey,\n\t\t\t\t\t\tmetaKey: modifiers.metaKey\n\t\t\t\t\t};\n\n\t\t\t\t\tactiveElement.dispatchEvent(new KeyboardEvent('keydown', eventInit));\n\n\t\t\t\t\tif (key.length === 1 && !modifiers.ctrlKey && !modifiers.altKey && !modifiers.metaKey) {\n\t\t\t\t\t\tactiveElement.dispatchEvent(new KeyboardEvent('keypress', eventInit));\n\n\t\t\t\t\t\tif (activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA' || activeElement.isContentEditable) {\n\t\t\t\t\t\t\tconst inputEvent = new InputEvent('beforeinput', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tinputType: 'insertText',\n\t\t\t\t\t\t\t\tdata: key\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\tactiveElement.dispatchEvent(inputEvent);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\tactiveElement.dispatchEvent(new KeyboardEvent('keyup', eventInit));\n\n\t\t\t\t\tconst modifierStr = [\n\t\t\t\t\t\tmodifiers.ctrlKey ? 'Ctrl' : '',\n\t\t\t\t\t\tmodifiers.shiftKey ? 'Shift' : '',\n\t\t\t\t\t\tmodifiers.altKey ? 'Alt' : '',\n\t\t\t\t\t\tmodifiers.metaKey ? 'Meta' : ''\n\t\t\t\t\t].filter(Boolean).join('+');\n\n\t\t\t\t\treturn {\n\t\t\t\t\t\taction: 'press_key',\n\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\tkey: key,\n\t\t\t\t\t\tcode: code,\n\t\t\t\t\t\tmodifiers: modifierStr || 'none',\n\t\t\t\t\t\tfullCombo: modifierStr ? modifierStr + '+' + key : key\n\t\t\t\t\t};\n\t\t\t\t})();\n\t\t\t`,
-                                a = RA(await NA(r, n, e.headless, t), ["key", "code", "fullCombo"]);
-                            return a.success ? FA({
-                                content: [{
-                                    type: "text",
-                                    text: `Successfully pressed key: ${a.fullCombo} (code: ${a.code})`
+                                    text: `### Action: drag\n- ${o.message}\n- Source: ${o.source}\n- Target: ${o.target}`
                                 }, {
                                     type: "metadata",
                                     viewId: n
@@ -62857,178 +63010,26 @@
                             }, n, e.take_screenshot_afterwards ?? !1, t) : {
                                 content: [{
                                     type: "text",
-                                    text: `Failed to press key: ${a.key}`
+                                    text: `Error: ${o.error||"Unknown drag error"}\n\nSuggestion: ${o.suggestion||"Take a snapshot to verify the elements are draggable."}\n\nRecovery action: browser_snapshot`
+                                }]
+                            }
+                        } catch (t) {
+                            return {
+                                content: [{
+                                    type: "text",
+                                    text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
+                                        ref: e.sourceRef,
+                                        action: "drag"
+                                    }))
                                 }]
                             }
                         }
-                    },
-                    u = {
-                        click: async (e, t) => WA({
-                            ...e,
-                            retryWithOffset: !1,
-                            actionType: "click"
-                        }, NA, t),
-                        safeClick: async (e, t) => WA(e, NA, t),
-                        mouseClickXY: async (e, t) => async function(e, t, n) {
-                            const r = "click at position",
-                                a = Math.round(e.x),
-                                s = Math.round(e.y),
-                                o = `(${a}, ${s})`;
-                            if (!Number.isFinite(a) || !Number.isFinite(s)) return {
-                                content: [{
-                                    type: "text",
-                                    text: "Error: x and y must be finite numbers.\n\nUse coordinates from a fresh viewport screenshot."
-                                }]
-                            };
-                            const c = await ZA(e.viewId, n);
-                            if (!c) return VA({
-                                actionType: r,
-                                targetDescription: `(${a}, ${s})`,
-                                attempts: 1,
-                                outcome: "failure",
-                                error: "No browser tab available"
-                            }), {
-                                content: [{
-                                    type: "text",
-                                    text: "No browser tab available. Please navigate to a page first."
-                                }]
-                            };
-                            const d = function(e) {
-                                return pA.get(e)
-                            }(c);
-                            if (!d) return VA({
-                                actionType: r,
-                                targetDescription: o,
-                                attempts: 1,
-                                outcome: "failure",
-                                error: "No recent viewport screenshot available"
-                            }), {
-                                content: [{
-                                    type: "text",
-                                    text: "Error: browser_mouse_click_xy needs a fresh screenshot for this tab.\n\nTake a screenshot right before this call. Other browser tool calls clear the cache."
-                                }]
-                            };
-                            const u = function(e, t, n) {
-                                const r = n.viewportCssWidth / n.sentImageWidth,
-                                    a = n.viewportCssHeight / n.sentImageHeight;
-                                return {
-                                    mappedX: Math.round(e * r),
-                                    mappedY: Math.round(t * a),
-                                    scaleX: r,
-                                    scaleY: a
-                                }
-                            }(a, s, d);
-                            try {
-                                await AA("browser_mouse_click_xy", c, n);
-                                const l = `\n\t\t\t${EA}\n\t\t\t${i}\n\t\t\t${BA}\n\t\t\t(async function() {\n\t\t\t\tconst screenshotX = ${a};\n\t\t\t\tconst screenshotY = ${s};\n\t\t\t\tconst mappedX = ${u.mappedX};\n\t\t\t\tconst mappedY = ${u.mappedY};\n\t\t\t\tconst cachedUrl = ${JSON.stringify(d.url)};\n\t\t\t\tconst sentImageWidth = ${d.sentImageWidth};\n\t\t\t\tconst sentImageHeight = ${d.sentImageHeight};\n\n\t\t\t\tif (window.location.href !== cachedUrl) {\n\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\treturn {\n\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\tstaleScreenshot: true,\n\t\t\t\t\t\terror: 'browser_mouse_click_xy needs a fresh screenshot. The page changed since the last one.',\n\t\t\t\t\t\tsuggestion: 'Take a new screenshot for this tab, then retry with coordinates from it.',\n\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t}\n\t\t\t\t\t};\n\t\t\t\t}\n\n\t\t\t\tconst targetElement = getDeepElementFromPoint(document, mappedX, mappedY);\n\n\t\t\t\tif (!targetElement) {\n\t\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\t\treturn {\n\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\terror: 'The coordinates are outside the visible viewport.',\n\t\t\t\t\t\tsuggestion: 'Take a new screenshot for this tab, then retry with coordinates from it.',\n\t\t\t\t\t\tscreenshotCoordinates: { x: screenshotX, y: screenshotY },\n\t\t\t\t\t\tmappedCoordinates: { x: mappedX, y: mappedY },\n\t\t\t\t\t\tscreenshotSize: { width: sentImageWidth, height: sentImageHeight },\n\t\t\t\t\t\tpageState: {\n\t\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t\t}\n\t\t\t\t\t};\n\t\t\t\t}\n\n\t\t\t\tawait dispatchMouseClickSequenceInBrowser(targetElement, {\n\t\t\t\t\tx: mappedX,\n\t\t\t\t\ty: mappedY,\n\t\t\t\t\tbutton: ${JSON.stringify(e.button??"left")}\n\t\t\t\t});\n\n\t\t\t\tconst snapshotResult = buildPageSnapshot();\n\t\t\t\treturn {\n\t\t\t\t\tsuccess: true,\n\t\t\t\t\tbutton: ${JSON.stringify(e.button??"left")},\n\t\t\t\t\tscreenshotCoordinates: { x: screenshotX, y: screenshotY },\n\t\t\t\t\tmappedCoordinates: { x: mappedX, y: mappedY },\n\t\t\t\t\tscreenshotSize: { width: sentImageWidth, height: sentImageHeight },\n\t\t\t\t\ttargetPreview: previewNode(targetElement),\n\t\t\t\t\ttargetRef: targetElement.getAttribute ? (targetElement.getAttribute('data-cursor-ref') || undefined) : undefined,\n\t\t\t\t\tpageState: {\n\t\t\t\t\t\turl: window.location.href,\n\t\t\t\t\t\ttitle: document.title,\n\t\t\t\t\t\tsnapshot: snapshotResult.tree\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t})();\n\t\t`,
-                                    h = RA(await t(l, c, e.headless, n), []);
-                                if (!h.success) {
-                                    const t = [`Error: ${h.error||`Failed to click at coordinates (${a}, ${s}).`}`];
-                                    return h.screenshotCoordinates && h.mappedCoordinates && (t.push(`- Screenshot position: (${h.screenshotCoordinates.x}, ${h.screenshotCoordinates.y})`), t.push(`- Mapped viewport position: (${h.mappedCoordinates.x}, ${h.mappedCoordinates.y})`)), h.screenshotSize && t.push(`- Screenshot size: ${h.screenshotSize.width}x${h.screenshotSize.height}`), h.suggestion && t.push("", `Suggestion: ${h.suggestion}`), h.staleScreenshot && _A(c), VA({
-                                        actionType: r,
-                                        targetDescription: o,
-                                        attempts: 1,
-                                        outcome: "failure",
-                                        error: h.error
-                                    }), h.pageState ? (wA.set(c, Date.now()), FA(await PA({
-                                        action: `${r} (failed)`,
-                                        detailLines: t,
-                                        pageState: h.pageState,
-                                        viewId: c,
-                                        context: n
-                                    }), c, e.take_screenshot_afterwards ?? !1, n)) : {
-                                        content: [{
-                                            type: "text",
-                                            text: t.join("\n")
-                                        }]
-                                    }
-                                }
-                                const p = [`- Screenshot position: (${a}, ${s})`];
-                                return u.mappedX === a && u.mappedY === s || p.push(`- Viewport position: (${u.mappedX}, ${u.mappedY})`), h.targetPreview && p.push(`- Target: ${h.targetPreview}`), h.targetRef && p.push(`- Target ref: ${h.targetRef}`), VA({
-                                    actionType: r,
-                                    targetDescription: h.targetPreview ?? `${o} -> (${u.mappedX}, ${u.mappedY})`,
-                                    attempts: 1,
-                                    outcome: "success"
-                                }), _A(c), wA.set(c, Date.now()), FA(await PA({
-                                    action: r,
-                                    detailLines: p,
-                                    pageState: h.pageState,
-                                    viewId: c,
-                                    context: n
-                                }), c, e.take_screenshot_afterwards ?? !1, n)
-                            } catch (e) {
-                                const t = SA(e instanceof Error ? e : new Error(String(e)), {
-                                    action: r
-                                });
-                                return VA({
-                                    actionType: r,
-                                    targetDescription: `(${a}, ${s})`,
-                                    attempts: 1,
-                                    outcome: "failure",
-                                    error: t.message
-                                }), {
-                                    content: [{
-                                        type: "text",
-                                        text: OA(t)
-                                    }]
-                                }
-                            }
-                        }(e, NA, t),
-                        hover: async (e, t) => KA({
-                            ...e,
-                            actionType: "hover"
-                        }, NA, t),
-                        hoverAndWait: async (e, t) => KA(e, NA, t),
-                        async drag(e, t) {
-                            const n = await ZA(e.viewId, t);
-                            if (!n) return {
-                                content: [{
-                                    type: "text",
-                                    text: "No browser tab available. Please navigate to a page first."
-                                }]
-                            };
-                            try {
-                                await AA("browser_drag", n, t), await MA(n, e.headless, i, t);
-                                const r = TA(e.sourceRef),
-                                    a = e.targetRef ? TA(e.targetRef) : void 0;
-                                if (!a && (void 0 === e.targetX || void 0 === e.targetY)) return {
-                                    content: [{
-                                        type: "text",
-                                        text: "Error: Either targetRef or both targetX and targetY must be provided for drag operation.\n\nSuggestion: Specify where to drop the element using targetRef (for element-to-element drag) or targetX/targetY coordinates."
-                                    }]
-                                };
-                                const s = `\n\t\t\t\t\t(async function() {\n\t\t\t\t\t\t${EA}\n\n\t\t\t\t\t\tconst sourceRef = ${JSON.stringify(r)};\n\t\t\t\t\t\tconst targetRef = ${JSON.stringify(a)};\n\t\t\t\t\t\tconst targetX = ${e.targetX??"null"};\n\t\t\t\t\t\tconst targetY = ${e.targetY??"null"};\n\n\t\t\t\t\t\tconst { element: sourceElement } = findElementByRef(sourceRef);\n\t\t\t\t\t\tif (!sourceElement) {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\terror: 'Source element not found: ' + sourceRef + '. Take a snapshot to get updated refs.',\n\t\t\t\t\t\t\t\tsuggestion: 'The source element reference may be stale. Take a new snapshot to get current element refs.'\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst sourceStyle = window.getComputedStyle(sourceElement);\n\t\t\t\t\t\tconst isDraggable = sourceElement.draggable || sourceElement.getAttribute('draggable') === 'true';\n\t\t\t\t\t\tif (!isDraggable && sourceStyle.cursor !== 'grab' && sourceStyle.cursor !== 'move') {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\terror: 'Source element ' + sourceRef + ' does not appear to be draggable. It lacks the draggable attribute.',\n\t\t\t\t\t\t\t\tsuggestion: 'Verify the element is meant to be dragged. Check if it has draggable="true" attribute or is part of a drag-and-drop library that uses different mechanisms.'\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tlet targetElement = null;\n\t\t\t\t\t\tif (targetRef) {\n\t\t\t\t\t\t\tconst targetResult = findElementByRef(targetRef);\n\t\t\t\t\t\t\ttargetElement = targetResult.element;\n\t\t\t\t\t\t\tif (!targetElement) {\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\t\terror: 'Target element not found: ' + targetRef + '. Take a snapshot to get updated refs.',\n\t\t\t\t\t\t\t\t\tsuggestion: 'The target element reference may be stale. Take a new snapshot to get current element refs.'\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tconst sourceRect = sourceElement.getBoundingClientRect();\n\t\t\t\t\t\tconst startX = Math.round(sourceRect.left + sourceRect.width / 2);\n\t\t\t\t\t\tconst startY = Math.round(sourceRect.top + sourceRect.height / 2);\n\n\t\t\t\t\t\tlet dropX, dropY;\n\t\t\t\t\t\tif (targetElement) {\n\t\t\t\t\t\t\tconst targetRect = targetElement.getBoundingClientRect();\n\t\t\t\t\t\t\tdropX = Math.round(targetRect.left + targetRect.width / 2);\n\t\t\t\t\t\t\tdropY = Math.round(targetRect.top + targetRect.height / 2);\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tdropX = targetX;\n\t\t\t\t\t\t\tdropY = targetY;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\tconst dataTransfer = new DataTransfer();\n\t\t\t\t\t\t\tdataTransfer.effectAllowed = 'all';\n\n\t\t\t\t\t\t\tconst pointerOpts = {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tview: window,\n\t\t\t\t\t\t\t\tpointerId: 1,\n\t\t\t\t\t\t\t\tpointerType: 'mouse',\n\t\t\t\t\t\t\t\tisPrimary: true,\n\t\t\t\t\t\t\t\tbutton: 0,\n\t\t\t\t\t\t\t\tbuttons: 1\n\t\t\t\t\t\t\t};\n\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new PointerEvent('pointerover', { ...pointerOpts, clientX: startX, clientY: startY }));\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new PointerEvent('pointerenter', { ...pointerOpts, clientX: startX, clientY: startY, bubbles: false }));\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new MouseEvent('mouseover', { bubbles: true, clientX: startX, clientY: startY }));\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new MouseEvent('mouseenter', { bubbles: false, clientX: startX, clientY: startY }));\n\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new PointerEvent('pointerdown', { ...pointerOpts, clientX: startX, clientY: startY }));\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true, clientX: startX, clientY: startY, button: 0 }));\n\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 50));\n\n\t\t\t\t\t\t\tconst dragStartEvent = new DragEvent('dragstart', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tclientX: startX,\n\t\t\t\t\t\t\t\tclientY: startY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\tconst dragStarted = sourceElement.dispatchEvent(dragStartEvent);\n\n\t\t\t\t\t\t\tif (!dragStarted) {\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\t\terror: 'Drag start was prevented by the page.',\n\t\t\t\t\t\t\t\t\tsuggestion: 'The page may have event handlers preventing drag. Try using browser_evaluate to trigger the drag programmatically.'\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new DragEvent('drag', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tclientX: startX,\n\t\t\t\t\t\t\t\tclientY: startY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t}));\n\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 50));\n\n\t\t\t\t\t\t\tconst dropTarget = targetElement || document.elementFromPoint(dropX, dropY);\n\t\t\t\t\t\t\tif (!dropTarget) {\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\t\terror: 'No element found at drop coordinates (' + dropX + ', ' + dropY + ').',\n\t\t\t\t\t\t\t\t\tsuggestion: 'Verify the target coordinates are within the viewport and point to a valid drop zone.'\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\tdropTarget.dispatchEvent(new DragEvent('dragenter', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tclientX: dropX,\n\t\t\t\t\t\t\t\tclientY: dropY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t}));\n\n\t\t\t\t\t\t\tconst dragOverEvent = new DragEvent('dragover', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tclientX: dropX,\n\t\t\t\t\t\t\t\tclientY: dropY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\tdropTarget.dispatchEvent(dragOverEvent);\n\n\t\t\t\t\t\t\tawait new Promise(r => setTimeout(r, 50));\n\n\t\t\t\t\t\t\tconst dropEvent = new DragEvent('drop', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: true,\n\t\t\t\t\t\t\t\tclientX: dropX,\n\t\t\t\t\t\t\t\tclientY: dropY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\tconst dropAccepted = dropTarget.dispatchEvent(dropEvent);\n\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new DragEvent('dragend', {\n\t\t\t\t\t\t\t\tbubbles: true,\n\t\t\t\t\t\t\t\tcancelable: false,\n\t\t\t\t\t\t\t\tclientX: dropX,\n\t\t\t\t\t\t\t\tclientY: dropY,\n\t\t\t\t\t\t\t\tdataTransfer: dataTransfer\n\t\t\t\t\t\t\t}));\n\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new PointerEvent('pointerup', { ...pointerOpts, clientX: dropX, clientY: dropY }));\n\t\t\t\t\t\t\tsourceElement.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, clientX: dropX, clientY: dropY }));\n\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: true,\n\t\t\t\t\t\t\t\taction: 'drag',\n\t\t\t\t\t\t\t\tsource: sourceRef,\n\t\t\t\t\t\t\t\ttarget: targetRef || ('(' + dropX + ', ' + dropY + ')'),\n\t\t\t\t\t\t\t\tdropAccepted: dropAccepted,\n\t\t\t\t\t\t\t\tmessage: 'Drag completed from ' + sourceRef + ' to ' + (targetRef || 'coordinates (' + dropX + ', ' + dropY + ')') + (dropAccepted ? '' : ' (drop may not have been accepted by target)')\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t} catch (err) {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tsuccess: false,\n\t\t\t\t\t\t\t\terror: 'Drag operation failed: ' + (err instanceof Error ? err.message : String(err)),\n\t\t\t\t\t\t\t\tsuggestion: 'The drag-and-drop may use a library (like react-dnd or sortablejs) that requires specific event sequences. Try using browser_evaluate to interact with the library directly.'\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\t\t\t\t\t})();\n\t\t\t\t`,
-                                    o = RA(await NA(s, n, e.headless, t), []);
-                                return o.success ? FA({
-                                    content: [{
-                                        type: "text",
-                                        text: `### Action: drag\n- ${o.message}\n- Source: ${o.source}\n- Target: ${o.target}`
-                                    }, {
-                                        type: "metadata",
-                                        viewId: n
-                                    }]
-                                }, n, e.take_screenshot_afterwards ?? !1, t) : {
-                                    content: [{
-                                        type: "text",
-                                        text: `Error: ${o.error||"Unknown drag error"}\n\nSuggestion: ${o.suggestion||"Take a snapshot to verify the elements are draggable."}\n\nRecovery action: browser_snapshot`
-                                    }]
-                                }
-                            } catch (t) {
-                                return {
-                                    content: [{
-                                        type: "text",
-                                        text: OA(SA(t instanceof Error ? t : new Error(String(t)), {
-                                            ref: e.sourceRef,
-                                            action: "drag"
-                                        }))
-                                    }]
-                                }
-                            }
-                        }
-                    };
-                return Object.assign(e, t), Object.assign(e, r), Object.assign(e, c), Object.assign(e, d), Object.assign(e, u), e
-            }(),
-            GA = {
+                    }
+                };
+            return Object.assign(e, t), Object.assign(e, r), Object.assign(e, c), Object.assign(e, d), Object.assign(e, u), e
+        }();
+        new Set(["agent-stores", "shared-agent-stores"]);
+        const GA = {
                 clusters: {
                     local: {
                         managerUrl: "http://localhost:50051",
@@ -63237,6 +63238,63 @@
                             publishPublicIps: !1
                         }
                     },
+                    train10: {
+                        awsRegion: "us-west-2",
+                        managerUrl: "https://train10.cursorvm-manager.com",
+                        httpProxyUrl: null,
+                        isLocal: !1,
+                        class: "internal",
+                        label: "train10",
+                        spaceliftStackId: "agent-runner-vpcs-train10",
+                        portalWebsite: {
+                            vncWebsocketOrigin: null
+                        },
+                        anyrunDashboard: {
+                            group: "training",
+                            show: !0
+                        },
+                        docsSite: {
+                            publishPublicIps: !1
+                        }
+                    },
+                    train11: {
+                        awsRegion: "us-west-2",
+                        managerUrl: "https://train11.cursorvm-manager.com",
+                        httpProxyUrl: null,
+                        isLocal: !1,
+                        class: "internal",
+                        label: "train11",
+                        spaceliftStackId: "agent-runner-vpcs-train11",
+                        portalWebsite: {
+                            vncWebsocketOrigin: null
+                        },
+                        anyrunDashboard: {
+                            group: "training",
+                            show: !0
+                        },
+                        docsSite: {
+                            publishPublicIps: !1
+                        }
+                    },
+                    train12: {
+                        awsRegion: "eu-west-2",
+                        managerUrl: "https://train12.cursorvm-manager.com",
+                        httpProxyUrl: null,
+                        isLocal: !1,
+                        class: "internal",
+                        label: "train12",
+                        spaceliftStackId: "agent-runner-vpcs-train12",
+                        portalWebsite: {
+                            vncWebsocketOrigin: null
+                        },
+                        anyrunDashboard: {
+                            group: "training",
+                            show: !0
+                        },
+                        docsSite: {
+                            publishPublicIps: !1
+                        }
+                    },
                     eval1: {
                         awsRegion: "us-east-1",
                         managerUrl: "https://eval1.cursorvm-manager.com",
@@ -63301,6 +63359,25 @@
                         class: "internal",
                         label: "test1",
                         spaceliftStackId: "agent-runner-vpcs-test1",
+                        portalWebsite: {
+                            vncWebsocketOrigin: null
+                        },
+                        anyrunDashboard: {
+                            group: null,
+                            show: !0
+                        },
+                        docsSite: {
+                            publishPublicIps: !1
+                        }
+                    },
+                    test3: {
+                        awsRegion: "us-east-1",
+                        managerUrl: "https://test3.cursorvm-manager.com",
+                        httpProxyUrl: null,
+                        isLocal: !1,
+                        class: "internal",
+                        label: "test3",
+                        spaceliftStackId: "agent-runner-vpcs-test3",
                         portalWebsite: {
                             vncWebsocketOrigin: null
                         },
@@ -63561,7 +63638,7 @@
                     }
                 }
             },
-            YA = ["dev", "us1", "us1p", "us3", "us3p", "us4", "us4p", "us5", "us5p", "us6", "us6p", "us7", "us7p", "train1", "train2", "train3", "train4", "train5", "train6", "train7", "train8", "train9", "eval1", "eval2", "eval3", "test1", "test2-gcp", "local"];
+            YA = ["dev", "us1", "us1p", "us3", "us3p", "us4", "us4p", "us5", "us5p", "us6", "us6p", "us7", "us7p", "train1", "train2", "train3", "train4", "train5", "train6", "train7", "train8", "train9", "train10", "train11", "train12", "eval1", "eval2", "eval3", "test1", "test3", "test2-gcp", "local"];
         var XA;
         ! function() {
             const e = Object.keys(GA.clusters),
@@ -63576,7 +63653,8 @@
         }(), new Set(["image/png", "image/jpeg", "image/gif", "image/webp", "video/mp4", "video/webm"]),
             function(e) {
                 e.github = "github", e.githubEnterprise = "github-enterprise", e.cursorGithub = "cursor-github"
-            }(XA || (XA = {})), new Set(["Your environment snapshot has expired after inactivity.", "Your environment snapshot is invalid.", "The environment snapshot you requested does not exist, or you do not have permission to access it.", "Failed to start the development environment. The update script in your configuration failed during VM startup.", "Failed to start the development environment. The build process failed. Please check your Dockerfile."]);
+            }(XA || (XA = {}));
+        new Set(["Your environment snapshot has expired after inactivity.", "Your environment snapshot is invalid.", "The environment snapshot you requested does not exist, or you do not have permission to access it.", "Failed to start the development environment. The update script in your configuration failed during VM startup.", "Failed to start the development environment. The build process failed. Please check your Dockerfile."]);
         const JA = {
             standard: {
                 referralDiscountId: "cursor-for-startups",
@@ -64429,4 +64507,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-browser-automation/dist/extension.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/extensions/cursor-browser-automation/dist/extension.js.map

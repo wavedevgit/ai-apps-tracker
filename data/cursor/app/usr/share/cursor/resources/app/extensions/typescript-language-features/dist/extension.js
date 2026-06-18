@@ -3,17 +3,17 @@
     var e = {
             71: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -23,17 +23,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -46,29 +46,29 @@
                     if (Array.isArray(t) !== Array.isArray(n)) return !1;
                     if (Array.isArray(t)) return a.equals(t, n, e);
                     {
-                        const r = [];
-                        for (const e in t) r.push(e);
-                        r.sort();
                         const i = [];
-                        for (const e in n) i.push(e);
-                        return i.sort(), !!a.equals(r, i) && r.every(r => e(t[r], n[r]))
+                        for (const e in t) i.push(e);
+                        i.sort();
+                        const r = [];
+                        for (const e in n) r.push(e);
+                        return r.sort(), !!a.equals(i, r) && i.every(i => e(t[i], n[i]))
                     }
                 };
                 const a = o(n(3489))
             },
             136: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -78,17 +78,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     }),
                     a = this && this.__importDefault || function(e) {
@@ -103,8 +103,8 @@
                     l = o(n(6928)),
                     u = o(n(1398)),
                     d = n(4906),
-                    h = o(n(746)),
-                    p = n(5328),
+                    p = o(n(746)),
+                    h = n(5328),
                     f = n(1627),
                     g = n(4900),
                     m = a(n(2290)),
@@ -124,11 +124,14 @@
                     k = a(n(7237));
                 var D;
                 ! function(e) {
-                    e.None = {
-                        type: 0
+                    let t;
+                    ! function(e) {
+                        e[e.None = 0] = "None", e[e.Running = 1] = "Running", e[e.Errored = 2] = "Errored"
+                    }(t = e.Type || (e.Type = {})), e.None = {
+                        type: t.None
                     }, e.Running = class {
-                        constructor(e, t, n, r) {
-                            this.server = e, this.apiVersion = t, this.tsserverVersion = n, this.languageServiceEnabled = r, this.type = 1, this.toCancelOnResourceChange = new Set
+                        constructor(e, n, i, r) {
+                            this.server = e, this.apiVersion = n, this.tsserverVersion = i, this.languageServiceEnabled = r, this.type = t.Running, this.toCancelOnResourceChange = new Set
                         }
                         updateTsserverVersion(e) {
                             this.tsserverVersion = e
@@ -137,27 +140,27 @@
                             this.languageServiceEnabled = e
                         }
                     }, e.Errored = class {
-                        constructor(e, t) {
-                            this.error = e, this.tsServerLog = t, this.type = 2
+                        constructor(e, n) {
+                            this.error = e, this.tsServerLog = n, this.type = t.Errored
                         }
                     }
                 }(D || (D = {})), t.emptyAuthority = "ts-nul-authority", t.inMemoryResourcePrefix = "^";
-                class M extends x.Disposable {
-                    constructor(e, t, n, r) {
-                        let i, s;
+                class R extends x.Disposable {
+                    constructor(e, t, n, i) {
+                        let r, s;
                         super(), this.context = e, this.serverState = D.None, this._isPromptingAfterCrash = !1, this.isRestarting = !1, this.hasServerFatallyCrashedTooManyTimes = !1, this.watches = new Map, this.watchEvents = new Map, this._memoryMonitorEnabled = !1, this._onDidChangeCapabilities = this._register(new u.EventEmitter), this.onDidChangeCapabilities = this._onDidChangeCapabilities.event, this._onTsServerStarted = this._register(new u.EventEmitter), this.onTsServerStarted = this._onTsServerStarted.event, this._onDiagnosticsReceived = this._register(new u.EventEmitter), this.onDiagnosticsReceived = this._onDiagnosticsReceived.event, this._onConfigDiagnosticsReceived = this._register(new u.EventEmitter), this.onConfigDiagnosticsReceived = this._onConfigDiagnosticsReceived.event, this._onResendModelsRequested = this._register(new u.EventEmitter), this.onResendModelsRequested = this._onResendModelsRequested.event, this._onProjectLanguageServiceStateChanged = this._register(new u.EventEmitter), this.onProjectLanguageServiceStateChanged = this._onProjectLanguageServiceStateChanged.event, this._onDidBeginInstallTypings = this._register(new u.EventEmitter), this.onDidBeginInstallTypings = this._onDidBeginInstallTypings.event, this._onDidEndInstallTypings = this._register(new u.EventEmitter), this.onDidEndInstallTypings = this._onDidEndInstallTypings.event, this._onTypesInstallerInitializationFailed = this._register(new u.EventEmitter), this.onTypesInstallerInitializationFailed = this._onTypesInstallerInitializationFailed.event, this._onSurveyReady = this._register(new u.EventEmitter), this.onSurveyReady = this._onSurveyReady.event, this.token = 0, this.loadingIndicator = this._register(new I(this)), this.logger = n.logger, this.tracer = new m.default(this.logger), this.pluginManager = n.pluginManager, this.logDirectoryProvider = n.logDirectoryProvider, this.cancellerFactory = n.cancellerFactory, this.versionProvider = n.versionProvider, this.processFactory = n.processFactory, this.lastStart = Date.now();
                         const o = new Promise((e, t) => {
-                            i = e, s = t
+                            r = e, s = t
                         });
                         this._onReady = {
                             promise: o,
-                            resolve: i,
+                            resolve: r,
                             reject: s
                         }, this.numberRestarts = 0, this._configuration = n.serviceConfigurationProvider.loadFromWorkspace(), this.versionProvider.updateConfiguration(this._configuration), this.pluginPathsProvider = new _.TypeScriptPluginPathsProvider(this._configuration), this._versionManager = this._register(new O.TypeScriptVersionManager(this._configuration, this.versionProvider, e.workspaceState)), this._register(this._versionManager.onDidPickNewVersion(() => {
                             this.restartTsServer()
                         })), this._nodeVersionManager = this._register(new w.NodeVersionManager(this._configuration, e.workspaceState)), this._register(this._nodeVersionManager.onDidPickNewVersion(() => {
                             this.restartTsServer()
-                        })), this.bufferSyncSupport = new b.default(this, r, t), this.onReady(() => {
+                        })), this.bufferSyncSupport = new b.default(this, i, t), this.onReady(() => {
                             this.bufferSyncSupport.listen()
                         }), this.bufferSyncSupport.onDelete(e => {
                             this.cancelInflightRequestsForResource(e), this.diagnosticsManager.deleteAllDiagnosticsInFile(e)
@@ -165,40 +168,40 @@
                             this.cancelInflightRequestsForResource(e)
                         }), u.workspace.onDidChangeConfiguration(() => {
                             const e = this._configuration;
-                            this._configuration = n.serviceConfigurationProvider.loadFromWorkspace(), this.versionProvider.updateConfiguration(this._configuration), this._versionManager.updateConfiguration(this._configuration), this.pluginPathsProvider.updateConfiguration(this._configuration), this._nodeVersionManager.updateConfiguration(this._configuration), 1 === this.serverState.type && (this._configuration.implicitProjectConfiguration.isEqualTo(e.implicitProjectConfiguration) || this.setCompilerOptionsForInferredProjects(this._configuration), (0, d.areServiceConfigurationsEqual)(this._configuration, e) || this.restartTsServer())
-                        }, this, this._disposables), this.telemetryReporter = new g.VSCodeTelemetryReporter(n.experimentTelemetryReporter, () => 1 === this.serverState.type && this.serverState.tsserverVersion ? this.serverState.tsserverVersion : this.apiVersion.fullVersionString), this.diagnosticsManager = new f.DiagnosticsManager("typescript", this._configuration, this.telemetryReporter, t), this.typescriptServerSpawner = new C.TypeScriptServerSpawner(this.versionProvider, this._versionManager, this._nodeVersionManager, this.logDirectoryProvider, this.pluginPathsProvider, this.logger, this.telemetryReporter, this.tracer, this.processFactory), this._register(this.pluginManager.onDidUpdateConfig(e => {
+                            this._configuration = n.serviceConfigurationProvider.loadFromWorkspace(), this.versionProvider.updateConfiguration(this._configuration), this._versionManager.updateConfiguration(this._configuration), this.pluginPathsProvider.updateConfiguration(this._configuration), this._nodeVersionManager.updateConfiguration(this._configuration), this.serverState.type === D.Type.Running && (this._configuration.implicitProjectConfiguration.isEqualTo(e.implicitProjectConfiguration) || this.setCompilerOptionsForInferredProjects(this._configuration), (0, d.areServiceConfigurationsEqual)(this._configuration, e) || this.restartTsServer())
+                        }, this, this._disposables), this.telemetryReporter = new g.VSCodeTelemetryReporter(n.experimentTelemetryReporter, () => this.serverState.type === D.Type.Running && this.serverState.tsserverVersion ? this.serverState.tsserverVersion : this.apiVersion.fullVersionString), this.diagnosticsManager = new f.DiagnosticsManager("typescript", this._configuration, this.telemetryReporter, t), this.typescriptServerSpawner = new C.TypeScriptServerSpawner(this.versionProvider, this._versionManager, this._nodeVersionManager, this.logDirectoryProvider, this.pluginPathsProvider, this.logger, this.telemetryReporter, this.tracer, this.processFactory), this._register(this.pluginManager.onDidUpdateConfig(e => {
                             this.configurePlugin(e.pluginId, e.config)
                         })), this._register(this.pluginManager.onDidChangePlugins(() => {
                             this.restartTsServer()
                         }))
                     }
                     get capabilities() {
-                        return 1 === this._configuration.useSyntaxServer ? new T.ClientCapabilities(T.ClientCapability.Syntax, T.ClientCapability.EnhancedSyntax) : (0, E.isWeb)() ? this.isProjectWideIntellisenseOnWebEnabled() ? new T.ClientCapabilities(T.ClientCapability.Syntax, T.ClientCapability.EnhancedSyntax, T.ClientCapability.Semantic) : new T.ClientCapabilities(T.ClientCapability.Syntax, T.ClientCapability.EnhancedSyntax) : this.apiVersion.gte(y.API.v400) ? new T.ClientCapabilities(T.ClientCapability.Syntax, T.ClientCapability.EnhancedSyntax, T.ClientCapability.Semantic) : new T.ClientCapabilities(T.ClientCapability.Syntax, T.ClientCapability.Semantic)
+                        return this._configuration.useSyntaxServer === d.SyntaxServerConfiguration.Always ? new T.ClientCapabilities(T.ClientCapability.Syntax, T.ClientCapability.EnhancedSyntax) : (0, E.isWeb)() ? this.isProjectWideIntellisenseOnWebEnabled() ? new T.ClientCapabilities(T.ClientCapability.Syntax, T.ClientCapability.EnhancedSyntax, T.ClientCapability.Semantic) : new T.ClientCapabilities(T.ClientCapability.Syntax, T.ClientCapability.EnhancedSyntax) : this.apiVersion.gte(y.API.v400) ? new T.ClientCapabilities(T.ClientCapability.Syntax, T.ClientCapability.EnhancedSyntax, T.ClientCapability.Semantic) : new T.ClientCapabilities(T.ClientCapability.Syntax, T.ClientCapability.Semantic)
                     }
                     isProjectWideIntellisenseOnWebEnabled() {
                         return (0, E.isWebAndHasSharedArrayBuffers)() && this._configuration.webProjectWideIntellisenseEnabled
                     }
                     cancelInflightRequestsForResource(e) {
-                        if (1 === this.serverState.type)
+                        if (this.serverState.type === D.Type.Running)
                             for (const t of this.serverState.toCancelOnResourceChange) t.resource.toString() === e.toString() && t.cancel()
                     }
                     get configuration() {
                         return this._configuration
                     }
                     dispose() {
-                        super.dispose(), this.bufferSyncSupport.dispose(), 1 === this.serverState.type && this.serverState.server.kill(), this.loadingIndicator.reset(), this.resetWatchers(), this._stopMemoryMonitor()
+                        super.dispose(), this.bufferSyncSupport.dispose(), this.serverState.type === D.Type.Running && this.serverState.server.kill(), this.loadingIndicator.reset(), this.resetWatchers(), this._stopMemoryMonitor()
                     }
                     restartTsServer(e = !1) {
-                        1 === this.serverState.type && (this.logger.info("Killing TS Server"), this.isRestarting = !0, this.serverState.server.kill()), e && (this.hasServerFatallyCrashedTooManyTimes = !1, this.numberRestarts = 0, this.lastStart = Date.now()), this.serverState = this.startService(!0)
+                        this.serverState.type === D.Type.Running && (this.logger.info("Killing TS Server"), this.isRestarting = !0, this.serverState.server.kill()), e && (this.hasServerFatallyCrashedTooManyTimes = !1, this.numberRestarts = 0, this.lastStart = Date.now()), this.serverState = this.startService(!0)
                     }
                     get apiVersion() {
-                        return 1 === this.serverState.type ? this.serverState.apiVersion : y.API.defaultVersion
+                        return this.serverState.type === D.Type.Running ? this.serverState.apiVersion : y.API.defaultVersion
                     }
                     onReady(e) {
                         return this._onReady.promise.then(e)
                     }
                     ensureServiceStarted() {
-                        1 !== this.serverState.type && this.startService()
+                        this.serverState.type !== D.Type.Running && this.startService()
                     }
                     startService(e = !1) {
                         if (this.logger.info("Starting TS Server"), this.isDisposed) return this.logger.info("Not starting server: disposed"), D.None;
@@ -207,12 +210,12 @@
                         t.isValid || (u.window.showWarningMessage(u.l10n.t("The path {0} doesn't point to a valid tsserver install. Falling back to bundled TypeScript version.", t.path)), this._versionManager.reset(), t = this._versionManager.currentVersion), this.logger.info(`Using tsserver from: ${t.path}`);
                         const n = this._nodeVersionManager.currentVersion;
                         n && this.logger.info(`Using Node installation from ${n} to run TS Server`), this.resetWatchers();
-                        const r = t.apiVersion || y.API.defaultVersion,
-                            i = ++this.token,
+                        const i = t.apiVersion || y.API.defaultVersion,
+                            r = ++this.token,
                             s = this.typescriptServerSpawner.spawn(t, this.capabilities, this.configuration, this.pluginManager, this.cancellerFactory, {
                                 onFatalError: (e, t) => this.fatalError(e, t)
                             });
-                        this.serverState = new D.Running(s, r, void 0, !0), this.lastStart = Date.now();
+                        this.serverState = new D.Running(s, i, void 0, !0), this.lastStart = Date.now();
                         const o = {
                             hasGlobalPlugins: this.pluginManager.plugins.length > 0,
                             globalPluginNameHashes: JSON.stringify(this.pluginManager.plugins.map(e => (0, j.hash)(e.name)))
@@ -222,9 +225,9 @@
                             localTypeScriptVersion: this.versionProvider.localVersion ? this.versionProvider.localVersion.displayName : "",
                             typeScriptVersionSource: t.source
                         }), s.onError(e => {
-                            this.token === i && (e && u.window.showErrorMessage(u.l10n.t("TypeScript language server exited with error. Error message is: {0}", e.message || e.name)), this.serverState = new D.Errored(e, s.tsServerLog), this.logger.error("TSServer errored with error.", e), "file" === s.tsServerLog?.type && this.logger.error(`TSServer log file: ${s.tsServerLog.uri.fsPath}`), this.telemetryReporter.logTelemetry("tsserver.error", {
+                            this.token === r && (e && u.window.showErrorMessage(u.l10n.t("TypeScript language server exited with error. Error message is: {0}", e.message || e.name)), this.serverState = new D.Errored(e, s.tsServerLog), this.logger.error("TSServer errored with error.", e), "file" === s.tsServerLog?.type && this.logger.error(`TSServer log file: ${s.tsServerLog.uri.fsPath}`), this.telemetryReporter.logTelemetry("tsserver.error", {
                                 ...o
-                            }), this.serviceExited(!1, r))
+                            }), this.serviceExited(!1, i))
                         }), s.onExit(e => {
                             const {
                                 code: t,
@@ -234,10 +237,10 @@
                                 ...o,
                                 code: t ?? void 0,
                                 signal: n ?? void 0
-                            }), this.token === i && ("file" === s.tsServerLog?.type && this.logger.info(`TSServer log file: ${s.tsServerLog.uri.fsPath}`), this.serviceExited(!this.isRestarting, r), this.isRestarting = !1)
+                            }), this.token === r && ("file" === s.tsServerLog?.type && this.logger.info(`TSServer log file: ${s.tsServerLog.uri.fsPath}`), this.serviceExited(!this.isRestarting, i), this.isRestarting = !1)
                         }), s.onEvent(e => this.dispatchEvent(e)), this._startMemoryMonitor(s), this.serviceStarted(e), this._onReady.resolve(), this._onTsServerStarted.fire({
                             version: t,
-                            usedApiVersion: r
+                            usedApiVersion: i
                         }), this._onDidChangeCapabilities.fire(), this.serverState
                     }
                     resetWatchers() {
@@ -257,7 +260,7 @@
                                 this.restartTsServer()
                             })
                         }), !1;
-                        if (1 !== this.serverState.type || !this.serverState.server.tsServerLog) return u.window.showWarningMessage(u.l10n.t("TS Server has not started logging.")), !1;
+                        if (this.serverState.type !== D.Type.Running || !this.serverState.server.tsServerLog) return u.window.showWarningMessage(u.l10n.t("TS Server has not started logging.")), !1;
                         switch (this.serverState.server.tsServerLog.type) {
                             case "output":
                                 return this.serverState.server.tsServerLog.output.show(), !0;
@@ -297,7 +300,7 @@
                     }
                     getCompilerOptionsForInferredProjects(e) {
                         return {
-                            ...(0, v.inferredProjectCompilerOptions)(this.apiVersion, 0, e),
+                            ...(0, v.inferredProjectCompilerOptions)(this.apiVersion, v.ProjectType.TypeScript, e),
                             allowJs: !0,
                             allowSyntheticDefaultImports: !0,
                             allowNonTsExtensions: !0,
@@ -309,13 +312,13 @@
                             const e = Date.now() - this.lastStart;
                             this.numberRestarts++;
                             let n = !0;
-                            const r = this.pluginManager.plugins.map(e => e.extension.id).join(", "),
-                                i = {
+                            const i = this.pluginManager.plugins.map(e => e.extension.id).join(", "),
+                                r = {
                                     title: u.l10n.t("Report Issue")
                                 };
                             let s;
-                            2 == this.numberRestarts && (this.tracer.forceLogging = !0), this.numberRestarts > 5 ? (this.numberRestarts = 0, e < 1e4 ? (this.lastStart = Date.now(), n = !1, this.hasServerFatallyCrashedTooManyTimes = !0, s = this.pluginManager.plugins.length ? u.window.showErrorMessage(u.l10n.t("The JS/TS language service immediately crashed 5 times. The service will not be restarted.\nThis may be caused by a plugin contributed by one of these extensions: {0}.\nPlease try disabling these extensions before filing an issue against VS Code.", r)) : u.window.showErrorMessage(u.l10n.t("The JS/TS language service immediately crashed 5 times. The service will not be restarted."), i), this.telemetryReporter.logTelemetry("serviceExited")) : e < 3e5 && (this.lastStart = Date.now(), this._isPromptingAfterCrash || (s = this.pluginManager.plugins.length ? u.window.showWarningMessage(u.l10n.t("The JS/TS language service crashed 5 times in the last 5 Minutes.\nThis may be caused by a plugin contributed by one of these extensions: {0}\nPlease try disabling these extensions before filing an issue against VS Code.", r)) : u.window.showWarningMessage(u.l10n.t("The JS/TS language service crashed 5 times in the last 5 Minutes."), i)))) : ["vscode-insiders", "code-oss"].includes(u.env.uriScheme) && (this.numberRestarts = 0, this._isPromptingAfterCrash || (s = this.pluginManager.plugins.length ? u.window.showWarningMessage(u.l10n.t("The JS/TS language service crashed.\nThis may be caused by a plugin contributed by one of these extensions: {0}.\nPlease try disabling these extensions before filing an issue against VS Code.", r)) : u.window.showWarningMessage(u.l10n.t("The JS/TS language service crashed."), i))), s && (this._isPromptingAfterCrash = !0), s?.then(async e => {
-                                if (this._isPromptingAfterCrash = !1, e === i) {
+                            2 == this.numberRestarts && (this.tracer.forceLogging = !0), this.numberRestarts > 5 ? (this.numberRestarts = 0, e < 1e4 ? (this.lastStart = Date.now(), n = !1, this.hasServerFatallyCrashedTooManyTimes = !0, s = this.pluginManager.plugins.length ? u.window.showErrorMessage(u.l10n.t("The JS/TS language service immediately crashed 5 times. The service will not be restarted.\nThis may be caused by a plugin contributed by one of these extensions: {0}.\nPlease try disabling these extensions before filing an issue against VS Code.", i)) : u.window.showErrorMessage(u.l10n.t("The JS/TS language service immediately crashed 5 times. The service will not be restarted."), r), this.telemetryReporter.logTelemetry("serviceExited")) : e < 3e5 && (this.lastStart = Date.now(), this._isPromptingAfterCrash || (s = this.pluginManager.plugins.length ? u.window.showWarningMessage(u.l10n.t("The JS/TS language service crashed 5 times in the last 5 Minutes.\nThis may be caused by a plugin contributed by one of these extensions: {0}\nPlease try disabling these extensions before filing an issue against VS Code.", i)) : u.window.showWarningMessage(u.l10n.t("The JS/TS language service crashed 5 times in the last 5 Minutes."), r)))) : ["vscode-insiders", "code-oss"].includes(u.env.uriScheme) && (this.numberRestarts = 0, this._isPromptingAfterCrash || (s = this.pluginManager.plugins.length ? u.window.showWarningMessage(u.l10n.t("The JS/TS language service crashed.\nThis may be caused by a plugin contributed by one of these extensions: {0}.\nPlease try disabling these extensions before filing an issue against VS Code.", i)) : u.window.showWarningMessage(u.l10n.t("The JS/TS language service crashed."), r))), s && (this._isPromptingAfterCrash = !0), s?.then(async e => {
+                                if (this._isPromptingAfterCrash = !1, e === r) {
                                     const e = this.versionProvider.bundledVersion.apiVersion;
                                     if (t.isYarnPnp()) {
                                         const e = {
@@ -334,18 +337,18 @@
                         }
                     }
                     toTsFilePath(e) {
-                        if (!h.disabledSchemes.has(e.scheme)) return e.scheme !== h.file || (0, E.isWeb)() ? (this.isProjectWideIntellisenseOnWebEnabled() ? "" : t.inMemoryResourcePrefix) + "/" + e.scheme + "/" + (e.authority || t.emptyAuthority) + (e.path.startsWith("/") ? e.path : "/" + e.path) + (e.fragment ? "#" + e.fragment : "") : e.fsPath
+                        if (!p.disabledSchemes.has(e.scheme)) return e.scheme !== p.file || (0, E.isWeb)() ? (this.isProjectWideIntellisenseOnWebEnabled() ? "" : t.inMemoryResourcePrefix) + "/" + e.scheme + "/" + (e.authority || t.emptyAuthority) + (e.path.startsWith("/") ? e.path : "/" + e.path) + (e.fragment ? "#" + e.fragment : "") : e.fsPath
                     }
                     toOpenTsFilePath(e, t = {}) {
                         const n = e instanceof u.Uri ? e : e.uri;
                         if (this.bufferSyncSupport.ensureHasBuffer(n)) return this.toTsFilePath(n);
-                        t.suppressAlertOnFailure || h.disabledSchemes.has(n.scheme) || console.error(`Unexpected resource ${n}`)
+                        t.suppressAlertOnFailure || p.disabledSchemes.has(n.scheme) || console.error(`Unexpected resource ${n}`)
                     }
                     hasCapabilityForResource(e, t) {
                         if (!this.capabilities.has(t)) return !1;
                         switch (t) {
                             case T.ClientCapability.Semantic:
-                                return h.getSemanticSupportedSchemes().includes(e.scheme);
+                                return p.getSemanticSupportedSchemes().includes(e.scheme);
                             case T.ClientCapability.Syntax:
                             case T.ClientCapability.EnhancedSyntax:
                                 return !0
@@ -372,7 +375,7 @@
                     getWorkspaceRootForResource(e) {
                         const t = u.workspace.workspaceFolders ? Array.from(u.workspace.workspaceFolders) : void 0;
                         if (t?.length) {
-                            if (e.scheme === p.Schemes.notebookCell)
+                            if (e.scheme === h.Schemes.notebookCell)
                                 for (const t of u.workspace.notebookDocuments)
                                     for (const n of t.getCells())
                                         if (n.document.uri.toString() === e.toString()) {
@@ -383,40 +386,40 @@
                             return u.workspace.getWorkspaceFolder(e)?.uri
                         }
                     }
-                    execute(e, t, n, r) {
-                        let i;
-                        if (r?.cancelOnResourceChange) {
+                    execute(e, t, n, i) {
+                        let r;
+                        if (i?.cancelOnResourceChange) {
                             const s = this.serverState;
-                            if (1 === s.type) {
+                            if (s.type === D.Type.Running) {
                                 const o = new u.CancellationTokenSource;
                                 n.onCancellationRequested(() => o.cancel());
                                 const a = {
-                                    resource: r.cancelOnResourceChange,
+                                    resource: i.cancelOnResourceChange,
                                     cancel: () => o.cancel()
                                 };
-                                s.toCancelOnResourceChange.add(a), i = this.executeImpl(e, t, {
+                                s.toCancelOnResourceChange.add(a), r = this.executeImpl(e, t, {
                                     isAsync: !1,
                                     token: o.token,
                                     expectsResult: !0,
-                                    ...r
-                                }), i[0].finally(() => {
+                                    ...i
+                                }), r[0].finally(() => {
                                     s.toCancelOnResourceChange.delete(a), o.dispose()
                                 })
                             }
                         }
-                        if (i || (i = this.executeImpl(e, t, {
+                        if (r || (r = this.executeImpl(e, t, {
                                 isAsync: !1,
                                 token: n,
                                 expectsResult: !0,
-                                ...r
-                            })), r?.nonRecoverable && i[0].catch(t => this.fatalError(e, t)), "updateOpen" === e) {
-                            const e = Promise.all(i).then(() => {
+                                ...i
+                            })), i?.nonRecoverable && r[0].catch(t => this.fatalError(e, t)), "updateOpen" === e) {
+                            const e = Promise.all(r).then(() => {
                                     this.loadingIndicator.reset()
                                 }),
                                 n = t;
                             1 === n.openFiles?.length && this.loadingIndicator.startedLoadingFile(n.openFiles[0].file, e)
                         }
-                        return i[0]
+                        return r[0]
                     }
                     executeWithoutWaitingForResponse(e, t) {
                         this.executeImpl(e, t, {
@@ -433,8 +436,8 @@
                         })[0]
                     }
                     executeImpl(e, t, n) {
-                        const r = this.serverState;
-                        return 1 === r.type ? (this.bufferSyncSupport.beforeCommand(e), r.server.executeImpl(e, t, n)) : [Promise.resolve(T.ServerResponse.NoServer)]
+                        const i = this.serverState;
+                        return i.type === D.Type.Running ? (this.bufferSyncSupport.beforeCommand(e), i.server.executeImpl(e, t, n)) : [Promise.resolve(T.ServerResponse.NoServer)]
                     }
                     interruptGetErr(e) {
                         return this.bufferSyncSupport.interruptGetErr(e)
@@ -444,7 +447,7 @@
                                 ...t instanceof P.TypeScriptServerError ? t.telemetry : {
                                     command: e
                                 }
-                            }), console.error(`A non-recoverable error occurred while executing tsserver command: ${e}`), t instanceof P.TypeScriptServerError && t.serverErrorText && console.error(t.serverErrorText), 1 === this.serverState.type) {
+                            }), console.error(`A non-recoverable error occurred while executing tsserver command: ${e}`), t instanceof P.TypeScriptServerError && t.serverErrorText && console.error(t.serverErrorText), this.serverState.type === D.Type.Running) {
                             this.logger.info("Killing TS Server");
                             const e = this.serverState.server.tsServerLog;
                             this.serverState.server.kill(), t instanceof P.TypeScriptServerError && (this.serverState = new D.Errored(t, e))
@@ -459,7 +462,7 @@
                                 this.loadingIndicator.reset();
                                 const t = e;
                                 return void(t.body?.diagnostics && this._onDiagnosticsReceived.fire({
-                                    kind: R(e),
+                                    kind: M(e),
                                     resource: this.toResource(t.body.file),
                                     diagnostics: t.body.diagnostics,
                                     spans: t.body.spans
@@ -473,7 +476,7 @@
                             }
                             case S.EventName.projectLanguageServiceState: {
                                 const t = e.body;
-                                return 1 === this.serverState.type && this.serverState.updateLanguageServiceEnabled(t.languageServiceEnabled), void this._onProjectLanguageServiceStateChanged.fire(t)
+                                return this.serverState.type === D.Type.Running && this.serverState.updateLanguageServiceEnabled(t.languageServiceEnabled), void this._onProjectLanguageServiceStateChanged.fire(t)
                             }
                             case S.EventName.projectsUpdatedInBackground: {
                                 this.loadingIndicator.reset();
@@ -530,34 +533,34 @@
                         }, 100))
                     }
                     addWatchEvent(e, t, n) {
-                        let r = this.watchEvents.get(e);
-                        const i = e => {
-                                r?.[e]?.delete(n) && 0 === r[e].size && (r[e] = void 0)
+                        let i = this.watchEvents.get(e);
+                        const r = e => {
+                                i?.[e]?.delete(n) && 0 === i[e].size && (i[e] = void 0)
                             },
                             s = () => {
-                                r || this.watchEvents.set(e, r = {}), (r[t] ?? (r[t] = new Set)).add(n)
+                                i || this.watchEvents.set(e, i = {}), (i[t] ?? (i[t] = new Set)).add(n)
                             };
                         switch (t) {
                             case "created":
-                                i("deleted"), i("updated"), s();
+                                r("deleted"), r("updated"), s();
                                 break;
                             case "deleted":
-                                i("created"), i("updated"), s();
+                                r("created"), r("updated"), s();
                                 break;
                             case "updated":
-                                if (r?.created?.has(n)) return;
-                                i("deleted"), s()
+                                if (i?.created?.has(n)) return;
+                                r("deleted"), s()
                         }
                         this.scheduleExecuteWatchChangeRequest()
                     }
                     createFileSystemWatcher(e, t, n) {
-                        const r = new x.DisposableStore,
-                            i = r.add(u.workspace.createFileSystemWatcher(t, void 0, n));
-                        r.add(i.onDidChange(t => this.addWatchEvent(e, "updated", t.fsPath))), r.add(i.onDidCreate(t => this.addWatchEvent(e, "created", t.fsPath))), r.add(i.onDidDelete(t => this.addWatchEvent(e, "deleted", t.fsPath))), r.add({
+                        const i = new x.DisposableStore,
+                            r = i.add(u.workspace.createFileSystemWatcher(t, void 0, n));
+                        i.add(r.onDidChange(t => this.addWatchEvent(e, "updated", t.fsPath))), i.add(r.onDidCreate(t => this.addWatchEvent(e, "created", t.fsPath))), i.add(r.onDidDelete(t => this.addWatchEvent(e, "deleted", t.fsPath))), i.add({
                             dispose: () => {
                                 this.watchEvents.delete(e), this.watches.delete(e)
                             }
-                        }), this.watches.has(e) && this.closeFileSystemWatcher(e), this.watches.set(e, r)
+                        }), this.watches.has(e) && this.closeFileSystemWatcher(e), this.watches.set(e, i)
                     }
                     closeFileSystemWatcher(e) {
                         const t = this.watches.get(e);
@@ -581,7 +584,7 @@
                                 break
                             }
                         }
-                        "projectInfo" === e.telemetryEventName && 1 === this.serverState.type && this.serverState.updateTsserverVersion(t.version), this.telemetryReporter.logTelemetry(e.telemetryEventName, t)
+                        "projectInfo" === e.telemetryEventName && this.serverState.type === D.Type.Running && this.serverState.updateTsserverVersion(t.version), this.telemetryReporter.logTelemetry(e.telemetryEventName, t)
                     }
                     configurePlugin(e, t) {
                         this.executeWithoutWaitingForResponse("configurePlugin", {
@@ -593,28 +596,28 @@
                         const t = e.pids;
                         if (0 === t.length) return;
                         const n = this.configuration.maxTsServerMemory,
-                            r = .85 * n;
+                            i = .85 * n;
                         if ("win32" === process.platform) return;
-                        const i = async e => {
+                        const r = async e => {
                             this._memoryMonitorEnabled && (this._memoryCheckTimer = setTimeout(async () => {
                                 let s = !1;
                                 try {
                                     s = await (async () => {
                                         const e = await (0, k.default)(t),
-                                            i = Object.values(e).map(e => e.memory / 1024 / 1024).find(e => e > r),
+                                            r = Object.values(e).map(e => e.memory / 1024 / 1024).find(e => e > i),
                                             s = u.l10n.t("TypeScript language service is approaching its memory limit");
-                                        return !!i && (u.window.showWarningMessage(s, "Fix").then(async e => {
+                                        return !!r && (u.window.showWarningMessage(s, "Fix").then(async e => {
                                             "Fix" === e && "Configure" === await u.window.showWarningMessage(s, {
                                                 modal: !0,
-                                                detail: u.l10n.t("A TypeScript language service process is using {0} MB of memory (>{1}% of the configured limit of {2} MB). You may experience slowness and instability.\n\nYou can configure the memory limit in application settings.", i.toFixed(0), 100 * r / n, n)
+                                                detail: u.l10n.t("A TypeScript language service process is using {0} MB of memory (>{1}% of the configured limit of {2} MB). You may experience slowness and instability.\n\nYou can configure the memory limit in application settings.", r.toFixed(0), 100 * i / n, n)
                                             }, "Configure") && await u.commands.executeCommand("workbench.action.openSettings", "typescript.tsserver.nodePath")
                                         }), !0)
                                     })()
                                 } catch (e) {}
-                                s ? this._memoryMonitorEnabled = !1 : i(e)
+                                s ? this._memoryMonitorEnabled = !1 : r(e)
                             }, e))
                         };
-                        this._memoryMonitorEnabled = !0, void 0 !== this._memoryCheckTimer && (clearTimeout(this._memoryCheckTimer), this._memoryCheckTimer = void 0), i(800), e.onExit(() => {
+                        this._memoryMonitorEnabled = !0, void 0 !== this._memoryCheckTimer && (clearTimeout(this._memoryCheckTimer), this._memoryCheckTimer = void 0), r(800), e.onExit(() => {
                             this._stopMemoryMonitor()
                         })
                     }
@@ -623,20 +626,20 @@
                     }
                 }
 
-                function R(e) {
+                function M(e) {
                     switch (e.event) {
                         case "syntaxDiag":
-                            return 0;
+                            return f.DiagnosticKind.Syntax;
                         case "semanticDiag":
-                            return 1;
+                            return f.DiagnosticKind.Semantic;
                         case "suggestionDiag":
-                            return 2;
+                            return f.DiagnosticKind.Suggestion;
                         case "regionSemanticDiag":
-                            return 3
+                            return f.DiagnosticKind.RegionSemantic
                     }
                     throw new Error("Unknown dignostics kind")
                 }
-                t.default = M;
+                t.default = R;
                 class I extends x.Disposable {
                     constructor(e) {
                         super(), this.client = e
@@ -674,11 +677,11 @@
                 }
             },
             144: (e, t, n) => {
-                const r = n(3908);
+                const i = n(3908);
                 e.exports = (e, t, n = !1) => {
-                    if (e instanceof r) return e;
+                    if (e instanceof i) return e;
                     try {
-                        return new r(e, t)
+                        return new i(e, t)
                     } catch (e) {
                         if (!n) return null;
                         throw e
@@ -691,17 +694,17 @@
             },
             185: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -711,38 +714,41 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.SyntaxRoutingTsServer = t.GetErrRoutingTsServer = t.SingleTsServer = t.ExecutionTarget = void 0;
+                }), t.SyntaxRoutingTsServer = t.GetErrRoutingTsServer = t.SingleTsServer = t.TsServerProcessKind = t.ExecutionTarget = void 0;
                 const a = n(6386),
                     c = o(n(1398)),
                     l = n(5635),
                     u = n(4514),
                     d = n(5847),
-                    h = n(7371),
-                    p = n(5602),
+                    p = n(7371),
+                    h = n(5602),
                     f = n(8160),
                     g = n(1788);
-                var m, v;
+                var m, v, y;
                 ! function(e) {
                     e[e.Semantic = 0] = "Semantic", e[e.Syntax = 1] = "Syntax"
-                }(m || (t.ExecutionTarget = m = {}));
-                class y extends p.Disposable {
-                    constructor(e, t, n, r, i, s, o, a) {
-                        super(), this._serverId = e, this._serverSource = t, this._process = n, this._tsServerLog = r, this._requestCanceller = i, this._version = s, this._telemetryReporter = o, this._tracer = a, this._requestQueue = new u.RequestQueue, this._callbacks = new l.CallbackMap, this._pendingResponses = new Set, this._onEvent = this._register(new c.EventEmitter), this.onEvent = this._onEvent.event, this._onExit = this._register(new c.EventEmitter), this.onExit = this._onExit.event, this._onError = this._register(new c.EventEmitter), this.onError = this._onError.event, this._process.onData(e => {
+                }(m || (t.ExecutionTarget = m = {})),
+                function(e) {
+                    e.Main = "main", e.Syntax = "syntax", e.Semantic = "semantic", e.Diagnostics = "diagnostics"
+                }(v || (t.TsServerProcessKind = v = {}));
+                class b extends h.Disposable {
+                    constructor(e, t, n, i, r, s, o, a) {
+                        super(), this._serverId = e, this._serverSource = t, this._process = n, this._tsServerLog = i, this._requestCanceller = r, this._version = s, this._telemetryReporter = o, this._tracer = a, this._requestQueue = new u.RequestQueue, this._callbacks = new l.CallbackMap, this._pendingResponses = new Set, this._onEvent = this._register(new c.EventEmitter), this.onEvent = this._onEvent.event, this._onExit = this._register(new c.EventEmitter), this.onExit = this._onExit.event, this._onError = this._register(new c.EventEmitter), this.onError = this._onError.event, this._process.onData(e => {
                             this.dispatchMessage(e)
                         }), this._process.onExit((e, t) => {
                             this._onExit.fire({
@@ -800,37 +806,37 @@
                             return this._requestQueue.tryDeletePendingRequest(n) ? (this.logTrace(`Canceled request with sequence number ${n}`), !0) : !!this._requestCanceller.tryCancelOngoingRequest(n) || (this.logTrace(`Tried to cancel request with sequence number ${n}. But request got already delivered.`), !1)
                         } finally {
                             const e = this.fetchCallback(n);
-                            e?.onSuccess(new h.ServerResponse.Cancelled(`Cancelled request ${n} - ${t}`))
+                            e?.onSuccess(new p.ServerResponse.Cancelled(`Cancelled request ${n} - ${t}`))
                         }
                     }
                     dispatchResponse(e) {
                         const t = this.fetchCallback(e.request_seq);
-                        t && (this._tracer.traceResponse(this._serverId, e, t), e.success ? t.onSuccess(e) : "No content available." === e.message ? t.onSuccess(h.ServerResponse.NoContent) : t.onError(d.TypeScriptServerError.create(this._serverId, this._version, e)))
+                        t && (this._tracer.traceResponse(this._serverId, e, t), e.success ? t.onSuccess(e) : "No content available." === e.message ? t.onSuccess(p.ServerResponse.NoContent) : t.onError(d.TypeScriptServerError.create(this._serverId, this._version, e)))
                     }
                     executeImpl(e, t, n) {
-                        const r = this._requestQueue.createRequest(e, t),
-                            i = {
-                                request: r,
+                        const i = this._requestQueue.createRequest(e, t),
+                            r = {
+                                request: i,
                                 expectsResponse: n.expectsResult,
                                 isAsync: n.isAsync,
-                                queueingType: y.getQueueingType(e, n.lowPriority)
+                                queueingType: b.getQueueingType(e, n.lowPriority)
                             };
                         let s;
-                        return n.expectsResult && (s = new Promise((t, i) => {
-                            if (this._callbacks.add(r.seq, {
+                        return n.expectsResult && (s = new Promise((t, r) => {
+                            if (this._callbacks.add(i.seq, {
                                     onSuccess: t,
-                                    onError: i,
+                                    onError: r,
                                     queuingStartTime: Date.now(),
                                     isAsync: n.isAsync
                                 }, n.isAsync), n.token) {
-                                const t = (0, f.isWebAndHasSharedArrayBuffers)() ? a.Cancellation.addData(r) : void 0;
+                                const t = (0, f.isWebAndHasSharedArrayBuffers)() ? a.Cancellation.addData(i) : void 0;
                                 n.token.onCancellationRequested(() => {
-                                    t?.(), this.tryCancelRequest(r, e)
+                                    t?.(), this.tryCancelRequest(i, e)
                                 })
                             }
                         }).catch(e => {
                             throw e instanceof d.TypeScriptServerError && (n.token?.isCancellationRequested || this._telemetryReporter.logTelemetry("languageServiceErrorResponse", e.telemetry)), e
-                        })), this._requestQueue.enqueue(i), this.sendNextRequests(), [s]
+                        })), this._requestQueue.enqueue(r), this.sendNextRequests(), [s]
                     }
                     sendNextRequests() {
                         for (; 0 === this._pendingResponses.size && this._requestQueue.length > 0;) {
@@ -856,62 +862,62 @@
                         this._tracer.trace(this._serverId, e)
                     }
                     static getQueueingType(e, t) {
-                        return y.fenceCommands.has(e) ? u.RequestQueueingType.Fence : t ? u.RequestQueueingType.LowPriority : u.RequestQueueingType.Normal
+                        return b.fenceCommands.has(e) ? u.RequestQueueingType.Fence : t ? u.RequestQueueingType.LowPriority : u.RequestQueueingType.Normal
                     }
                 }
-                t.SingleTsServer = y, y.fenceCommands = new Set(["change", "close", "open", "updateOpen"]);
-                class b {
+                t.SingleTsServer = b, b.fenceCommands = new Set(["change", "close", "open", "updateOpen"]);
+                class w {
                     constructor(e, t) {
                         this.servers = e, this.delegate = t
                     }
                     execute(e, t, n) {
-                        if (b.sharedCommands.has(e) && void 0 === n.executionTarget) {
-                            const r = this.servers.map(() => v.Unresolved);
-                            let i;
+                        if (w.sharedCommands.has(e) && void 0 === n.executionTarget) {
+                            const i = this.servers.map(() => y.Unresolved);
+                            let r;
                             if (n.token) {
                                 const e = new c.CancellationTokenSource;
                                 n.token.onCancellationRequested(() => {
-                                    r.some(e => e === v.Resolved) || e.cancel()
-                                }), i = e.token
+                                    i.some(e => e === y.Resolved) || e.cancel()
+                                }), r = e.token
                             }
                             const s = [];
                             for (let o = 0; o < this.servers.length; ++o) {
                                 const a = this.servers[o].server.executeImpl(e, t, {
                                     ...n,
-                                    token: i
+                                    token: r
                                 })[0];
                                 s.push(a), a && a.then(t => {
-                                    r[o] = v.Resolved;
-                                    const n = r.find(e => 2 === e.type);
+                                    i[o] = y.Resolved;
+                                    const n = i.find(e => e.type === y.Type.Errored);
                                     return n && this.delegate.onFatalError(e, n.err), t
                                 }, t => {
-                                    throw r[o] = new v.Errored(t), r.some(e => e === v.Resolved) && this.delegate.onFatalError(e, t), t
+                                    throw i[o] = new y.Errored(t), i.some(e => e === y.Resolved) && this.delegate.onFatalError(e, t), t
                                 })
                             }
                             return s
                         }
                         for (const {
-                                canRun: r,
-                                server: i
+                                canRun: i,
+                                server: r
                             }
                             of this.servers)
-                            if (!r || r(e, n)) return i.executeImpl(e, t, n);
+                            if (!i || i(e, n)) return r.executeImpl(e, t, n);
                         throw new Error(`Could not find server for command: '${e}'`)
                     }
                 }
-                b.sharedCommands = new Set(["change", "close", "open", "updateOpen", "configure"]);
-                class w extends p.Disposable {
+                w.sharedCommands = new Set(["change", "close", "open", "updateOpen", "configure"]);
+                class _ extends h.Disposable {
                     constructor(e, t) {
-                        super(), this._onEvent = this._register(new c.EventEmitter), this.onEvent = this._onEvent.event, this._onExit = this._register(new c.EventEmitter), this.onExit = this._onExit.event, this._onError = this._register(new c.EventEmitter), this.onError = this._onError.event, this.getErrServer = e.getErr, this.mainServer = e.primary, this.router = new b([{
+                        super(), this._onEvent = this._register(new c.EventEmitter), this.onEvent = this._onEvent.event, this._onExit = this._register(new c.EventEmitter), this.onExit = this._onExit.event, this._onError = this._register(new c.EventEmitter), this.onError = this._onError.event, this.getErrServer = e.getErr, this.mainServer = e.primary, this.router = new w([{
                             server: this.getErrServer,
                             canRun: e => ["geterr", "geterrForProject"].includes(e)
                         }, {
                             server: this.mainServer,
                             canRun: void 0
                         }], t), this._register(this.getErrServer.onEvent(e => {
-                            w.diagnosticEvents.has(e.event) && this._onEvent.fire(e)
+                            _.diagnosticEvents.has(e.event) && this._onEvent.fire(e)
                         })), this._register(this.mainServer.onEvent(e => {
-                            w.diagnosticEvents.has(e.event) || this._onEvent.fire(e)
+                            _.diagnosticEvents.has(e.event) || this._onEvent.fire(e)
                         })), this._register(this.getErrServer.onError(e => this._onError.fire(e))), this._register(this.mainServer.onError(e => this._onError.fire(e))), this._register(this.mainServer.onExit(e => {
                             this._onExit.fire(e), this.getErrServer.kill()
                         }))
@@ -929,10 +935,10 @@
                         return this.router.execute(e, t, n)
                     }
                 }
-                t.GetErrRoutingTsServer = w, w.diagnosticEvents = new Set([g.EventName.configFileDiag, g.EventName.syntaxDiag, g.EventName.semanticDiag, g.EventName.suggestionDiag]);
-                class _ extends p.Disposable {
+                t.GetErrRoutingTsServer = _, _.diagnosticEvents = new Set([g.EventName.configFileDiag, g.EventName.syntaxDiag, g.EventName.semanticDiag, g.EventName.suggestionDiag]);
+                class S extends h.Disposable {
                     constructor(e, t, n) {
-                        super(), this._projectLoading = !0, this._onEvent = this._register(new c.EventEmitter), this.onEvent = this._onEvent.event, this._onExit = this._register(new c.EventEmitter), this.onExit = this._onExit.event, this._onError = this._register(new c.EventEmitter), this.onError = this._onError.event, this.syntaxServer = e.syntax, this.semanticServer = e.semantic, this.router = new b([{
+                        super(), this._projectLoading = !0, this._onEvent = this._register(new c.EventEmitter), this.onEvent = this._onEvent.event, this._onExit = this._register(new c.EventEmitter), this.onExit = this._onExit.event, this._onError = this._register(new c.EventEmitter), this.onError = this._onError.event, this.syntaxServer = e.syntax, this.semanticServer = e.semantic, this.router = new w([{
                             server: this.syntaxServer,
                             canRun: (e, t) => {
                                 switch (t.executionTarget) {
@@ -941,7 +947,7 @@
                                     case m.Syntax:
                                         return !0
                                 }
-                                return !!_.syntaxAlwaysCommands.has(e) || !_.semanticCommands.has(e) && !!(n && this.projectLoading && _.syntaxAllowedCommands.has(e))
+                                return !!S.syntaxAlwaysCommands.has(e) || !S.semanticCommands.has(e) && !!(n && this.projectLoading && S.syntaxAllowedCommands.has(e))
                             }
                         }, {
                             server: this.semanticServer,
@@ -979,18 +985,21 @@
                         return this.router.execute(e, t, n)
                     }
                 }
-                t.SyntaxRoutingTsServer = _, _.syntaxAlwaysCommands = new Set(["navtree", "getOutliningSpans", "jsxClosingTag", "selectionRange", "format", "formatonkey", "docCommentTemplate", "linkedEditingRange"]), _.semanticCommands = new Set(["geterr", "geterrForProject", "projectInfo", "configurePlugin"]), _.syntaxAllowedCommands = new Set(["completions", "completionEntryDetails", "completionInfo", "definition", "definitionAndBoundSpan", "documentHighlights", "implementation", "navto", "quickinfo", "references", "rename", "signatureHelp"]),
+                t.SyntaxRoutingTsServer = S, S.syntaxAlwaysCommands = new Set(["navtree", "getOutliningSpans", "jsxClosingTag", "selectionRange", "format", "formatonkey", "docCommentTemplate", "linkedEditingRange"]), S.semanticCommands = new Set(["geterr", "geterrForProject", "projectInfo", "configurePlugin"]), S.syntaxAllowedCommands = new Set(["completions", "completionEntryDetails", "completionInfo", "definition", "definitionAndBoundSpan", "documentHighlights", "implementation", "navto", "quickinfo", "references", "rename", "signatureHelp"]),
                     function(e) {
-                        e.Unresolved = {
-                            type: 0
+                        let t;
+                        ! function(e) {
+                            e[e.Unresolved = 0] = "Unresolved", e[e.Resolved = 1] = "Resolved", e[e.Errored = 2] = "Errored"
+                        }(t = e.Type || (e.Type = {})), e.Unresolved = {
+                            type: t.Unresolved
                         }, e.Resolved = {
-                            type: 1
+                            type: t.Resolved
                         }, e.Errored = class {
                             constructor(e) {
-                                this.err = e, this.type = 2
+                                this.err = e, this.type = t.Errored
                             }
                         }
-                    }(v || (v = {}))
+                    }(y || (y = {}))
             },
             201: (e, t) => {
                 "use strict";
@@ -1000,17 +1009,17 @@
             },
             256: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -1020,17 +1029,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     }),
                     a = this && this.__importDefault || function(e) {
@@ -1041,13 +1050,13 @@
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.register = function(e, t) {
-                    return (0, d.conditionalRegistration)([(0, d.requireSomeCapability)(t, l.ClientCapability.Semantic)], () => c.languages.registerImplementationProvider(e.semantic, new h(t)))
+                    return (0, d.conditionalRegistration)([(0, d.requireSomeCapability)(t, l.ClientCapability.Semantic)], () => c.languages.registerImplementationProvider(e.semantic, new p(t)))
                 };
                 const c = o(n(1398)),
                     l = n(7371),
                     u = a(n(2174)),
                     d = n(6362);
-                class h extends u.default {
+                class p extends u.default {
                     provideImplementation(e, t, n) {
                         return this.getSymbolLocations("implementation", e, t, n)
                     }
@@ -1062,29 +1071,29 @@
                 }
             },
             270: (e, t, n) => {
-                const r = n(3908),
-                    i = n(8311);
+                const i = n(3908),
+                    r = n(8311);
                 e.exports = (e, t, n) => {
                     let s = null,
                         o = null,
                         a = null;
                     try {
-                        a = new i(t, n)
+                        a = new r(t, n)
                     } catch (e) {
                         return null
                     }
                     return e.forEach(e => {
-                        a.test(e) && (s && 1 !== o.compare(e) || (s = e, o = new r(s, n)))
+                        a.test(e) && (s && 1 !== o.compare(e) || (s = e, o = new i(s, n)))
                     }), s
                 }
             },
             440: (e, t, n) => {
                 "use strict";
-                const r = n(5317).spawn;
-                e.exports = function(e, t, n, i) {
-                    "function" == typeof n && (i = n, n = void 0);
+                const i = n(5317).spawn;
+                e.exports = function(e, t, n, r) {
+                    "function" == typeof n && (r = n, n = void 0);
                     let s = !1;
-                    const o = r(e, t, n);
+                    const o = i(e, t, n);
                     let a = "",
                         c = "";
                     o.stdout.on("data", function(e) {
@@ -1092,28 +1101,28 @@
                     }), o.stderr.on("data", function(e) {
                         c += e.toString()
                     }), o.on("error", function(e) {
-                        s || (s = !0, i(new Error(e)))
+                        s || (s = !0, r(new Error(e)))
                     }), o.on("close", function(e, t) {
                         if (!s) {
-                            if (s = !0, c) return i(new Error(c));
-                            i(null, a, e)
+                            if (s = !0, c) return r(new Error(c));
+                            r(null, a, e)
                         }
                     })
                 }
             },
             539: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -1123,38 +1132,38 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.register = function(e, t, n) {
-                    return (0, m.conditionalRegistration)([(0, m.requireSomeCapability)(e, h.ClientCapability.Semantic)], () => new y(e, t, n))
+                    return (0, m.conditionalRegistration)([(0, m.requireSomeCapability)(e, p.ClientCapability.Semantic)], () => new y(e, t, n))
                 };
                 const a = o(n(6928)),
                     c = o(n(1398)),
                     l = o(n(746)),
                     u = n(4760),
                     d = o(n(2144)),
-                    h = n(7371),
-                    p = n(2287),
+                    p = n(7371),
+                    h = n(2287),
                     f = n(8040),
                     g = n(5602),
                     m = n(6362),
                     v = "updateImportsOnFileMove.enabled";
                 class y extends g.Disposable {
                     constructor(e, t, n) {
-                        super(), this.client = e, this.fileConfigurationManager = t, this._handles = n, this._delayer = new p.Delayer(50), this._pendingRenames = new Set, this._register(c.workspace.onDidRenameFiles(async e => {
+                        super(), this.client = e, this.fileConfigurationManager = t, this._handles = n, this._delayer = new h.Delayer(50), this._pendingRenames = new Set, this._register(c.workspace.onDidRenameFiles(async e => {
                             for (const {
                                     newUri: t,
                                     oldUri: n
@@ -1162,16 +1171,16 @@
                                 of e.files) {
                                 const e = this.client.toTsFilePath(t);
                                 if (!e) continue;
-                                const r = this.client.toTsFilePath(n);
-                                if (!r) continue;
+                                const i = this.client.toTsFilePath(n);
+                                if (!i) continue;
                                 if ("never" === this.getConfiguration(t).get(v)) continue;
-                                const i = await this.getJsTsFileBeingMoved(t);
-                                i && this.client.toTsFilePath(i) && (this._pendingRenames.add({
+                                const r = await this.getJsTsFileBeingMoved(t);
+                                r && this.client.toTsFilePath(r) && (this._pendingRenames.add({
                                     oldUri: n,
                                     newUri: t,
                                     newFilePath: e,
-                                    oldFilePath: r,
-                                    jsTsFileThatIsBeingMoved: i
+                                    oldFilePath: i,
+                                    jsTsFileThatIsBeingMoved: r
                                 }), this._delayer.trigger(() => {
                                     c.window.withProgress({
                                         location: c.ProgressLocation.Window,
@@ -1188,15 +1197,15 @@
                             const e = new c.WorkspaceEdit,
                                 n = [];
                             for (const {
-                                    oldUri: r,
-                                    newUri: i,
+                                    oldUri: i,
+                                    newUri: r,
                                     newFilePath: s,
                                     oldFilePath: o,
                                     jsTsFileThatIsBeingMoved: a
                                 }
                                 of t) {
                                 const t = await c.workspace.openTextDocument(a);
-                                this.client.bufferSyncSupport.closeResource(r), this.client.bufferSyncSupport.openTextDocument(t), await this.withEditsForFileRename(e, t, o, s) && n.push(i)
+                                this.client.bufferSyncSupport.closeResource(i), this.client.bufferSyncSupport.openTextDocument(t), await this.withEditsForFileRename(e, t, o, s) && n.push(r)
                             }
                             e.size && await this.confirmActionWithUser(n) && await c.workspace.applyEdit(e, {
                                 isRefactoring: !0
@@ -1226,24 +1235,24 @@
                             n = {
                                 title: c.l10n.t("Yes")
                             },
-                            r = {
+                            i = {
                                 title: c.l10n.t("Always")
                             },
-                            i = {
+                            r = {
                                 title: c.l10n.t("Never")
                             };
                         switch (await c.window.showInformationMessage(1 === e.length ? c.l10n.t("Update imports for '{0}'?", a.basename(e[0].fsPath)) : this.getConfirmMessage(c.l10n.t("Update imports for the following {0} files?", e.length), e), {
                                 modal: !0
-                            }, t, n, r, i)) {
+                            }, t, n, i, r)) {
                             case n:
                                 return !0;
                             case t:
                                 return !1;
-                            case r: {
+                            case i: {
                                 const t = this.getConfiguration(e[0]);
                                 return t.update(v, "always", this.getConfigTargetScope(t, v)), !0
                             }
-                            case i: {
+                            case r: {
                                 const t = this.getConfiguration(e[0]);
                                 return t.update(v, "never", this.getConfigTargetScope(t, v)), !1
                             }
@@ -1260,16 +1269,16 @@
                             }
                         }(e) ? (await c.workspace.findFiles(new c.RelativePattern(e, "**/*.{ts,tsx,js,jsx}"), "**/node_modules/**", 1))[0] : await this._handles(e) ? e : void 0
                     }
-                    async withEditsForFileRename(e, t, n, r) {
-                        const i = await this.client.interruptGetErr(() => {
+                    async withEditsForFileRename(e, t, n, i) {
+                        const r = await this.client.interruptGetErr(() => {
                             this.fileConfigurationManager.setGlobalConfigurationFromDocument(t, f.nulToken);
                             const e = {
                                 oldFilePath: n,
-                                newFilePath: r
+                                newFilePath: i
                             };
                             return this.client.execute("getEditsForFileRename", e, f.nulToken)
                         });
-                        return !("response" !== i.type || !i.body.length || (d.WorkspaceEdit.withFileCodeEdits(e, this.client, i.body), 0))
+                        return !("response" !== r.type || !r.body.length || (d.WorkspaceEdit.withFileCodeEdits(e, this.client, r.body), 0))
                     }
                     groupRenames(e) {
                         const t = new Map;
@@ -1290,22 +1299,22 @@
                 }
             },
             560: (e, t, n) => {
-                const r = n(3908);
-                e.exports = (e, t, n) => new r(e, n).compare(new r(t, n))
+                const i = n(3908);
+                e.exports = (e, t, n) => new i(e, n).compare(new i(t, n))
             },
             746: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -1315,17 +1324,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -1343,17 +1352,17 @@
             },
             800: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -1363,17 +1372,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -1384,7 +1393,7 @@
                     l = n(4760),
                     u = n(3256),
                     d = n(5602);
-                class h extends d.Disposable {
+                class p extends d.Disposable {
                     constructor(e) {
                         super(), this.isInManagedFileContext = !1, e.onDidChangeActiveJsTsEditor(this.onDidChangeActiveTextEditor, this, this._disposables), this.onDidChangeActiveTextEditor(e.activeJsTsEditor)
                     }
@@ -1392,7 +1401,7 @@
                         e ? this.updateContext(this.isManagedFile(e)) : this.updateContext(!1)
                     }
                     updateContext(e) {
-                        e !== this.isInManagedFileContext && (a.commands.executeCommand("setContext", h.contextName, e), this.isInManagedFileContext = e)
+                        e !== this.isInManagedFileContext && (a.commands.executeCommand("setContext", p.contextName, e), this.isInManagedFileContext = e)
                     }
                     isManagedFile(e) {
                         return this.isManagedScriptFile(e) || this.isManagedConfigFile(e)
@@ -1404,21 +1413,21 @@
                         return (0, l.isJsConfigOrTsConfigFileName)(e.document.fileName)
                     }
                 }
-                h.contextName = "typescript.isManagedFile", t.default = h
+                p.contextName = "typescript.isManagedFile", t.default = p
             },
             824: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -1428,24 +1437,24 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.register = function(e, t, n, r, i) {
-                    return (0, p.conditionalRegistration)([(0, p.requireMinVersion)(n, g.minVersion), (0, p.requireSomeCapability)(n, u.ClientCapability.Semantic)], () => {
-                        const s = new g(t, n, r, i);
+                }), t.register = function(e, t, n, i, r) {
+                    return (0, h.conditionalRegistration)([(0, h.requireMinVersion)(n, g.minVersion), (0, h.requireSomeCapability)(n, u.ClientCapability.Semantic)], () => {
+                        const s = new g(t, n, i, r);
                         return a.languages.registerInlayHintsProvider(e.semantic, s)
                     })
                 };
@@ -1454,32 +1463,32 @@
                     l = n(2144),
                     u = n(7371),
                     d = n(5602),
-                    h = n(1068),
-                    p = n(6362),
-                    f = Object.freeze([h.InlayHintSettingNames.parameterNamesSuppressWhenArgumentMatchesName, h.InlayHintSettingNames.parameterNamesEnabled, h.InlayHintSettingNames.variableTypesEnabled, h.InlayHintSettingNames.variableTypesSuppressWhenTypeMatchesName, h.InlayHintSettingNames.propertyDeclarationTypesEnabled, h.InlayHintSettingNames.functionLikeReturnTypesEnabled, h.InlayHintSettingNames.enumMemberValuesEnabled]);
+                    p = n(1068),
+                    h = n(6362),
+                    f = Object.freeze([p.InlayHintSettingNames.parameterNamesSuppressWhenArgumentMatchesName, p.InlayHintSettingNames.parameterNamesEnabled, p.InlayHintSettingNames.variableTypesEnabled, p.InlayHintSettingNames.variableTypesSuppressWhenTypeMatchesName, p.InlayHintSettingNames.propertyDeclarationTypesEnabled, p.InlayHintSettingNames.functionLikeReturnTypesEnabled, p.InlayHintSettingNames.enumMemberValuesEnabled]);
                 class g extends d.Disposable {
-                    constructor(e, t, n, r) {
-                        super(), this.language = e, this.client = t, this.fileConfigurationManager = n, this.telemetryReporter = r, this._onDidChangeInlayHints = this._register(new a.EventEmitter), this.onDidChangeInlayHints = this._onDidChangeInlayHints.event, this.hasReportedTelemetry = !1, this._register(a.workspace.onDidChangeConfiguration(t => {
+                    constructor(e, t, n, i) {
+                        super(), this.language = e, this.client = t, this.fileConfigurationManager = n, this.telemetryReporter = i, this._onDidChangeInlayHints = this._register(new a.EventEmitter), this.onDidChangeInlayHints = this._onDidChangeInlayHints.event, this.hasReportedTelemetry = !1, this._register(a.workspace.onDidChangeConfiguration(t => {
                             f.some(n => t.affectsConfiguration(e.id + "." + n)) && this._onDidChangeInlayHints.fire()
                         })), this._register(a.workspace.onDidChangeTextDocument(t => {
                             e.languageIds.includes(t.document.languageId) && this._onDidChangeInlayHints.fire()
                         }))
                     }
                     async provideInlayHints(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return;
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return;
                         if (! function(e, t) {
                                 const n = a.workspace.getConfiguration(e.id, t),
-                                    r = (0, h.getInlayHintsPreferences)(n);
-                                return "literals" === r.includeInlayParameterNameHints || "all" === r.includeInlayParameterNameHints || r.includeInlayEnumMemberValueHints || r.includeInlayFunctionLikeReturnTypeHints || r.includeInlayFunctionParameterTypeHints || r.includeInlayPropertyDeclarationTypeHints || r.includeInlayVariableTypeHints
+                                    i = (0, p.getInlayHintsPreferences)(n);
+                                return "literals" === i.includeInlayParameterNameHints || "all" === i.includeInlayParameterNameHints || i.includeInlayEnumMemberValueHints || i.includeInlayFunctionLikeReturnTypeHints || i.includeInlayFunctionParameterTypeHints || i.includeInlayPropertyDeclarationTypeHints || i.includeInlayVariableTypeHints
                             }(this.language, e)) return;
-                        const i = e.offsetAt(t.start),
-                            s = e.offsetAt(t.end) - i;
+                        const r = e.offsetAt(t.start),
+                            s = e.offsetAt(t.end) - r;
                         if (await this.fileConfigurationManager.ensureConfigurationForDocument(e, n), n.isCancellationRequested) return;
                         this.hasReportedTelemetry || (this.hasReportedTelemetry = !0, this.telemetryReporter.logTelemetry("inlayHints.provide", {}));
                         const o = await this.client.execute("provideInlayHints", {
-                            file: r,
-                            start: i,
+                            file: i,
+                            start: r,
                             length: s
                         }, n);
                         return "response" === o.type && o.success && o.body ? o.body.map(e => {
@@ -1510,26 +1519,26 @@
                 e.exports = require("os")
             },
             909: (e, t, n) => {
-                const r = n(3908);
+                const i = n(3908);
                 e.exports = (e, t, n) => {
-                    const i = new r(e, n),
-                        s = new r(t, n);
-                    return i.compare(s) || i.compareBuild(s)
+                    const r = new i(e, n),
+                        s = new i(t, n);
+                    return r.compare(s) || r.compareBuild(s)
                 }
             },
             917: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -1539,17 +1548,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -1565,18 +1574,18 @@
                     constructor(e) {
                         this.client = e
                     }
-                    async provideReferences(e, t, n, r) {
-                        const i = this.client.toOpenTsFilePath(e);
-                        if (!i) return [];
-                        const s = c.Position.toFileLocationRequestArgs(i, t),
-                            o = await this.client.execute("references", s, r);
+                    async provideReferences(e, t, n, i) {
+                        const r = this.client.toOpenTsFilePath(e);
+                        if (!r) return [];
+                        const s = c.Position.toFileLocationRequestArgs(r, t),
+                            o = await this.client.execute("references", s, i);
                         if ("response" !== o.type || !o.body) return [];
                         const a = [];
                         for (const e of o.body.refs) {
                             if (!n.includeDeclaration && e.isDefinition) continue;
                             const t = this.client.toResource(e.file),
-                                r = c.Location.fromTextSpan(t, e);
-                            a.push(r)
+                                i = c.Location.fromTextSpan(t, e);
+                            a.push(i)
                         }
                         return a
                     }
@@ -1584,17 +1593,17 @@
             },
             1033: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -1604,24 +1613,24 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.getEditForCodeAction = l, t.applyCodeAction = async function(e, t, n) {
-                    const r = l(e, t);
-                    return !(r && !await a.workspace.applyEdit(r)) && u(e, t.commands, n)
+                    const i = l(e, t);
+                    return !(i && !await a.workspace.applyEdit(i)) && u(e, t.commands, n)
                 }, t.applyCodeActionCommands = u;
                 const a = o(n(1398)),
                     c = o(n(2144));
@@ -1631,25 +1640,25 @@
                 }
                 async function u(e, t, n) {
                     if (t?.length)
-                        for (const r of t) await e.execute("applyCodeActionCommand", {
-                            command: r
+                        for (const i of t) await e.execute("applyCodeActionCommand", {
+                            command: i
                         }, n);
                     return !0
                 }
             },
             1068: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -1659,17 +1668,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -1680,10 +1689,10 @@
                     l = o(n(746)),
                     u = n(3256),
                     d = n(2928),
-                    h = n(5602),
-                    p = n(71),
+                    p = n(5602),
+                    h = n(71),
                     f = n(5141);
-                class g extends h.Disposable {
+                class g extends p.Disposable {
                     constructor(e, t) {
                         super(), this.client = e, this.formatOptions = new f.ResourceMap(void 0, {
                             onCaseInsensitiveFileSystem: t
@@ -1703,22 +1712,22 @@
                         }
                     }
                     async ensureConfigurationOptions(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return;
-                        const i = this.getFileOptions(e, t),
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return;
+                        const r = this.getFileOptions(e, t),
                             s = this.formatOptions.get(e.uri);
                         if (s) {
                             const e = await s;
                             if (n.isCancellationRequested) return;
-                            if (e && (o = e, a = i, (0, p.equals)(o, a))) return
+                            if (e && (o = e, a = r, (0, h.equals)(o, a))) return
                         }
                         var o, a;
                         const c = (async () => {
                             try {
                                 return "response" === (await this.client.execute("configure", {
-                                    file: r,
-                                    ...i
-                                }, n)).type ? i : void 0
+                                    file: i,
+                                    ...r
+                                }, n)).type ? r : void 0
                             } catch {
                                 return
                             }
@@ -1728,11 +1737,11 @@
                     async setGlobalConfigurationFromDocument(e, t) {
                         const n = this.getFormattingOptions(e);
                         if (!n) return;
-                        const r = {
+                        const i = {
                             file: void 0,
                             ...this.getFileOptions(e, n)
                         };
-                        await this.client.execute("configure", r, t)
+                        await this.client.execute("configure", i, t)
                     }
                     reset() {
                         this.formatOptions.clear()
@@ -1815,8 +1824,8 @@
                     getAutoImportFileExcludePatternsPreference(e, t) {
                         return t && e.get("autoImportFileExcludePatterns")?.map(e => {
                             const n = /^\.\.?($|[\/\\])/.test(e),
-                                r = this.client.apiVersion.gte(d.API.v540) ? "" : a.parse(this.client.toTsFilePath(t)).root;
-                            return a.isAbsolute(e) ? e : e.startsWith("*") ? r + e : n ? this.client.toTsFilePath(c.Uri.joinPath(t, e)) : r + "**" + a.sep + e
+                                i = this.client.apiVersion.gte(d.API.v540) ? "" : a.parse(this.client.toTsFilePath(t)).root;
+                            return a.isAbsolute(e) ? e : e.startsWith("*") ? i + e : n ? this.client.toTsFilePath(c.Uri.joinPath(t, e)) : i + "**" + a.sep + e
                         })
                     }
                     getOrganizeImportsPreferences(e) {
@@ -1908,17 +1917,17 @@
             },
             1119: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -1928,17 +1937,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -1949,28 +1958,31 @@
                     l = n(2330),
                     u = n(7371),
                     d = n(5602);
-                var h;
+                var p;
                 ! function(e) {
-                    e.None = Object.freeze({
-                        type: 0
+                    let t;
+                    ! function(e) {
+                        e[e.None = 0] = "None", e[e.Pending = 1] = "Pending", e[e.Resolved = 2] = "Resolved", e[e.SyntaxOnly = 3] = "SyntaxOnly"
+                    }(t = e.Type || (e.Type = {})), e.None = Object.freeze({
+                        type: t.None
                     }), e.SyntaxOnly = Object.freeze({
-                        type: 3
+                        type: t.SyntaxOnly
                     }), e.Pending = class {
-                        constructor(e, t) {
-                            this.resource = e, this.projectType = t, this.type = 1, this.cancellation = new a.CancellationTokenSource
+                        constructor(e, n) {
+                            this.resource = e, this.projectType = n, this.type = t.Pending, this.cancellation = new a.CancellationTokenSource
                         }
                     }, e.Resolved = class {
-                        constructor(e, t, n) {
-                            this.resource = e, this.projectType = t, this.configFile = n, this.type = 2
+                        constructor(e, n, i) {
+                            this.resource = e, this.projectType = n, this.configFile = i, this.type = t.Resolved
                         }
                     }
-                }(h || (h = {}));
-                class p extends d.Disposable {
+                }(p || (p = {}));
+                class h extends d.Disposable {
                     constructor(e, t, n) {
-                        super(), this._client = e, this._activeTextEditorManager = n, this.openOpenConfigCommandId = "_typescript.openConfig", this.createOrOpenConfigCommandId = "_typescript.createOrOpenConfig", this._ready = !1, this._state = h.None, t.register({
+                        super(), this._client = e, this._activeTextEditorManager = n, this.openOpenConfigCommandId = "_typescript.openConfig", this.createOrOpenConfigCommandId = "_typescript.createOrOpenConfig", this._ready = !1, this._state = p.None, t.register({
                             id: this.openOpenConfigCommandId,
                             execute: async (...[e, t]) => {
-                                2 === this._state.type ? await (0, l.openProjectConfigOrPromptToCreate)(t, this._client, e, this._state.configFile) : 1 === this._state.type && await (0, l.openProjectConfigForFile)(t, this._client, this._state.resource)
+                                this._state.type === p.Type.Resolved ? await (0, l.openProjectConfigOrPromptToCreate)(t, this._client, e, this._state.configFile) : this._state.type === p.Type.Pending && await (0, l.openProjectConfigForFile)(t, this._client, this._state.resource)
                             }
                         }), t.register({
                             id: this.createOrOpenConfigCommandId,
@@ -1986,40 +1998,40 @@
                     }
                     async updateStatus() {
                         const e = this._activeTextEditorManager.activeJsTsEditor?.document;
-                        if (!e || !(0, c.isSupportedLanguageMode)(e)) return void this.updateState(h.None);
-                        if (!this._client.hasCapabilityForResource(e.uri, u.ClientCapability.Semantic)) return void this.updateState(h.SyntaxOnly);
+                        if (!e || !(0, c.isSupportedLanguageMode)(e)) return void this.updateState(p.None);
+                        if (!this._client.hasCapabilityForResource(e.uri, u.ClientCapability.Semantic)) return void this.updateState(p.SyntaxOnly);
                         const t = this._client.toOpenTsFilePath(e, {
                             suppressAlertOnFailure: !0
                         });
-                        if (!t) return void this.updateState(h.None);
+                        if (!t) return void this.updateState(p.None);
                         if (!this._ready) return;
-                        const n = (0, c.isTypeScriptDocument)(e) ? 0 : 1,
-                            r = new h.Pending(e.uri, n);
-                        this.updateState(r);
-                        const i = await this._client.execute("projectInfo", {
+                        const n = (0, c.isTypeScriptDocument)(e) ? l.ProjectType.TypeScript : l.ProjectType.JavaScript,
+                            i = new p.Pending(e.uri, n);
+                        this.updateState(i);
+                        const r = await this._client.execute("projectInfo", {
                             file: t,
                             needFileNameList: !1
-                        }, r.cancellation.token);
-                        "response" === i.type && i.body && this._state === r && this.updateState(new h.Resolved(e.uri, n, i.body.configFileName))
+                        }, i.cancellation.token);
+                        "response" === r.type && r.body && this._state === i && this.updateState(new p.Resolved(e.uri, n, r.body.configFileName))
                     }
                     updateState(e) {
-                        if (this._state !== e) switch (1 === this._state.type && (this._state.cancellation.cancel(), this._state.cancellation.dispose()), this._state = e, this._state.type) {
-                            case 0:
+                        if (this._state !== e) switch (this._state.type === p.Type.Pending && (this._state.cancellation.cancel(), this._state.cancellation.dispose()), this._state = e, this._state.type) {
+                            case p.Type.None:
                                 this._statusItem?.dispose(), this._statusItem = void 0;
                                 break;
-                            case 1: {
+                            case p.Type.Pending: {
                                 const e = this.ensureStatusItem();
                                 e.severity = a.LanguageStatusSeverity.Information, e.text = a.l10n.t("Loading IntelliSense status"), e.detail = void 0, e.command = void 0, e.busy = !0;
                                 break
                             }
-                            case 2: {
-                                const e = 0 === this._state.projectType ? a.l10n.t("No tsconfig") : a.l10n.t("No jsconfig"),
+                            case p.Type.Resolved: {
+                                const e = this._state.projectType === l.ProjectType.TypeScript ? a.l10n.t("No tsconfig") : a.l10n.t("No jsconfig"),
                                     t = this._client.getWorkspaceRootForResource(this._state.resource);
                                 if (!t) return void(this._statusItem && (this._statusItem.text = e, this._statusItem.detail = a.workspace.workspaceFolders ? a.l10n.t("File is not part opened folders") : a.l10n.t("No opened folders"), this._statusItem.busy = !1));
                                 const n = this.ensureStatusItem();
                                 n.busy = !1, n.detail = void 0, n.severity = a.LanguageStatusSeverity.Information, (0, l.isImplicitProjectConfigFile)(this._state.configFile) ? (n.text = e, n.detail = void 0, n.command = {
                                     command: this.createOrOpenConfigCommandId,
-                                    title: 0 === this._state.projectType ? a.l10n.t("Configure TSConfig") : a.l10n.t("Configure JSConfig"),
+                                    title: this._state.projectType === l.ProjectType.TypeScript ? a.l10n.t("Configure TSConfig") : a.l10n.t("Configure JSConfig"),
                                     arguments: [t, this._state.projectType]
                                 }) : (n.text = a.workspace.asRelativePath(this._state.configFile), n.detail = void 0, n.command = {
                                     command: this.openOpenConfigCommandId,
@@ -2028,7 +2040,7 @@
                                 });
                                 break
                             }
-                            case 3: {
+                            case p.Type.SyntaxOnly: {
                                 const e = this.ensureStatusItem();
                                 e.severity = a.LanguageStatusSeverity.Warning, e.text = a.l10n.t("Partial mode"), e.detail = a.l10n.t("Project wide IntelliSense not available"), e.busy = !1, e.command = {
                                     title: a.l10n.t("Learn More"),
@@ -2043,14 +2055,14 @@
                         return this._statusItem || (this._statusItem = a.languages.createLanguageStatusItem("typescript.projectStatus", c.jsTsLanguageModes), this._statusItem.name = a.l10n.t("JS/TS IntelliSense Status")), this._statusItem
                     }
                 }
-                t.IntellisenseStatus = p
+                t.IntellisenseStatus = h
             },
             1123: e => {
                 const t = /^[0-9]+$/,
                     n = (e, n) => {
-                        const r = t.test(e),
-                            i = t.test(n);
-                        return r && i && (e = +e, n = +n), e === n ? 0 : r && !i ? -1 : i && !r ? 1 : e < n ? -1 : 1
+                        const i = t.test(e),
+                            r = t.test(n);
+                        return i && r && (e = +e, n = +n), e === n ? 0 : i && !r ? -1 : r && !i ? 1 : e < n ? -1 : 1
                     };
                 e.exports = {
                     compareIdentifiers: n,
@@ -2058,20 +2070,20 @@
                 }
             },
             1261: (e, t, n) => {
-                const r = n(3908),
-                    i = n(8311),
+                const i = n(3908),
+                    r = n(8311),
                     s = n(5580);
                 e.exports = (e, t) => {
-                    e = new i(e, t);
-                    let n = new r("0.0.0");
+                    e = new r(e, t);
+                    let n = new i("0.0.0");
                     if (e.test(n)) return n;
-                    if (n = new r("0.0.0-0"), e.test(n)) return n;
+                    if (n = new i("0.0.0-0"), e.test(n)) return n;
                     n = null;
                     for (let t = 0; t < e.set.length; ++t) {
-                        const i = e.set[t];
+                        const r = e.set[t];
                         let o = null;
-                        i.forEach(e => {
-                            const t = new r(e.semver.version);
+                        r.forEach(e => {
+                            const t = new i(e.semver.version);
                             switch (e.operator) {
                                 case ">":
                                     0 === t.prerelease.length ? t.patch++ : t.prerelease.push(0), t.raw = t.format();
@@ -2096,17 +2108,17 @@
             },
             1520: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -2116,17 +2128,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -2142,32 +2154,32 @@
                         extendsValue: t,
                         linkType: n
                     }) => {
-                        const r = await async function(e, t, n) {
-                            async function r(e) {
-                                return e.path.endsWith(".json") || await (0, h.exists)(e) ? e : e.with({
+                        const i = await async function(e, t, n) {
+                            async function i(e) {
+                                return e.path.endsWith(".json") || await (0, p.exists)(e) ? e : e.with({
                                     path: `${e.path}${n===g.References?"/tsconfig.json":".json"}`
                                 })
                             }
-                            return ["./", "../"].some(e => t.startsWith(e)) ? r(l.Uri.joinPath(e, t)) : t.startsWith("/") || (0, h.looksLikeAbsoluteWindowsPath)(t) ? r(l.Uri.file(t)) : async function(e, t) {
+                            return ["./", "../"].some(e => t.startsWith(e)) ? i(l.Uri.joinPath(e, t)) : t.startsWith("/") || (0, p.looksLikeAbsoluteWindowsPath)(t) ? i(l.Uri.file(t)) : async function(e, t) {
                                 let n = e;
-                                const r = t[0],
-                                    i = r.startsWith("@") ? 2 : 1,
-                                    s = r.split(c.posix.sep).slice(0, i).join(c.posix.sep);
+                                const i = t[0],
+                                    r = i.startsWith("@") ? 2 : 1,
+                                    s = i.split(c.posix.sep).slice(0, r).join(c.posix.sep);
                                 for (;;) {
                                     const e = l.Uri.joinPath(n, "node_modules", s);
-                                    let r;
+                                    let i;
                                     try {
-                                        r = await l.workspace.fs.stat(e)
+                                        i = await l.workspace.fs.stat(e)
                                     } catch (e) {}
-                                    if (r && r.type & l.FileType.Directory)
-                                        for (const n of t.map(e => e.split(c.posix.sep).slice(i).join(c.posix.sep)).filter(Boolean).map(t => l.Uri.joinPath(e, t)))
-                                            if (await (0, h.exists)(n)) return n;
+                                    if (i && i.type & l.FileType.Directory)
+                                        for (const n of t.map(e => e.split(c.posix.sep).slice(r).join(c.posix.sep)).filter(Boolean).map(t => l.Uri.joinPath(e, t)))
+                                            if (await (0, p.exists)(n)) return n;
                                     const o = n;
                                     if (n = l.Uri.joinPath(n, ".."), o.path === n.path) return
                                 }
                             }(e, [t, ...t.endsWith(".json") ? [] : [`${t}.json`, `${t}/tsconfig.json`]])
                         }(u.Utils.dirname(l.Uri.from(e)), t, n);
-                        void 0 !== r ? await l.commands.executeCommand("vscode.open", r) : l.window.showErrorMessage(l.l10n.t("Failed to resolve {0} as module", t))
+                        void 0 !== i ? await l.commands.executeCommand("vscode.open", i) : l.window.showErrorMessage(l.l10n.t("Failed to resolve {0} as module", t))
                     }), l.languages.registerDocumentLinkProvider(t, new m))
                 };
                 const a = o(n(5887)),
@@ -2175,9 +2187,9 @@
                     l = o(n(1398)),
                     u = n(4756),
                     d = n(3489),
-                    h = n(5540);
+                    p = n(5540);
 
-                function p(e, t) {
+                function h(e, t) {
                     return "array" === e?.type && e.children ? e.children.map(t) : []
                 }
                 const f = "_typescript.openExtendsLink";
@@ -2195,14 +2207,14 @@
                         return n && this.tryCreateTsConfigLink(e, n, g.Extends)
                     }
                     getReferencesLinks(e, t) {
-                        return p(a.findNodeAtLocation(t, ["references"]), t => {
+                        return h(a.findNodeAtLocation(t, ["references"]), t => {
                             const n = a.findNodeAtLocation(t, ["path"]);
                             return n && this.tryCreateTsConfigLink(e, n, g.References)
                         })
                     }
                     tryCreateTsConfigLink(e, t, n) {
                         if (!this.isPathValue(t)) return;
-                        const r = {
+                        const i = {
                                 resourceUri: {
                                     ...e.uri.toJSON(),
                                     $mid: void 0
@@ -2210,11 +2222,11 @@
                                 extendsValue: t.value,
                                 linkType: n
                             },
-                            i = new l.DocumentLink(this.getRange(e, t), l.Uri.parse(`command:${f}?${JSON.stringify(r)}`));
-                        return i.tooltip = l.l10n.t("Follow link"), i
+                            r = new l.DocumentLink(this.getRange(e, t), l.Uri.parse(`command:${f}?${JSON.stringify(i)}`));
+                        return r.tooltip = l.l10n.t("Follow link"), r
                     }
                     getFilesLinks(e, t) {
-                        return p(a.findNodeAtLocation(t, ["files"]), t => this.pathNodeToLink(e, t))
+                        return h(a.findNodeAtLocation(t, ["files"]), t => this.pathNodeToLink(e, t))
                     }
                     pathNodeToLink(e, t) {
                         return this.isPathValue(t) ? new l.DocumentLink(this.getRange(e, t), this.getFileTarget(e, t)) : void 0
@@ -2227,25 +2239,25 @@
                     }
                     getRange(e, t) {
                         const n = t.offset,
-                            r = e.positionAt(n + 1),
-                            i = e.positionAt(n + (t.length - 1));
-                        return new l.Range(r, i)
+                            i = e.positionAt(n + 1),
+                            r = e.positionAt(n + (t.length - 1));
+                        return new l.Range(i, r)
                     }
                 }
             },
             1627: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -2255,59 +2267,63 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.DiagnosticsManager = void 0;
+                }), t.DiagnosticsManager = t.DiagnosticKind = void 0;
                 const a = o(n(1398)),
                     c = o(n(3489)),
                     l = n(5602),
                     u = n(71),
                     d = n(5141);
+                var p;
+                ! function(e) {
+                    e[e.Syntax = 0] = "Syntax", e[e.Semantic = 1] = "Semantic", e[e.Suggestion = 2] = "Suggestion", e[e.RegionSemantic = 3] = "RegionSemantic"
+                }(p || (t.DiagnosticKind = p = {}));
                 class h {
                     constructor(e, t) {
                         this.file = e, this.language = t, this._diagnostics = new Map
                     }
-                    updateDiagnostics(e, t, n, r) {
+                    updateDiagnostics(e, t, n, i) {
                         e !== this.language && (this._diagnostics.clear(), this.language = e);
-                        const i = this._diagnostics.get(t);
-                        return (0 !== i?.length || 0 !== n.length) && (3 === t ? this.updateRegionDiagnostics(n, r) : (this._diagnostics.set(t, n), !0))
+                        const r = this._diagnostics.get(t);
+                        return (0 !== r?.length || 0 !== n.length) && (t === p.RegionSemantic ? this.updateRegionDiagnostics(n, i) : (this._diagnostics.set(t, n), !0))
                     }
                     getAllDiagnostics(e) {
-                        return e.getValidate(this.language) ? [...this.get(0), ...this.get(1), ...this.getSuggestionDiagnostics(e)] : []
+                        return e.getValidate(this.language) ? [...this.get(p.Syntax), ...this.get(p.Semantic), ...this.getSuggestionDiagnostics(e)] : []
                     }
                     delete(e) {
                         for (const [t, n] of this._diagnostics) this._diagnostics.set(t, n.filter(t => {
-                            return !((n = t) === (r = e) || n.code === r.code && n.message === r.message && n.severity === r.severity && n.source === r.source && n.range.isEqual(r.range) && c.equals(n.relatedInformation || c.empty, r.relatedInformation || c.empty, (e, t) => e.message === t.message && e.location.range.isEqual(t.location.range) && e.location.uri.fsPath === t.location.uri.fsPath) && c.equals(n.tags || c.empty, r.tags || c.empty));
-                            var n, r
+                            return !((n = t) === (i = e) || n.code === i.code && n.message === i.message && n.severity === i.severity && n.source === i.source && n.range.isEqual(i.range) && c.equals(n.relatedInformation || c.empty, i.relatedInformation || c.empty, (e, t) => e.message === t.message && e.location.range.isEqual(t.location.range) && e.location.uri.fsPath === t.location.uri.fsPath) && c.equals(n.tags || c.empty, i.tags || c.empty));
+                            var n, i
                         }))
                     }
                     updateRegionDiagnostics(e, t) {
-                        if (!this._diagnostics.get(1)) return this._diagnostics.set(1, e), !0;
-                        const n = this._diagnostics.get(1).filter(e => !t.some(t => e.range.intersection(t)));
-                        return n.push(...e), this._diagnostics.set(1, n), !0
+                        if (!this._diagnostics.get(p.Semantic)) return this._diagnostics.set(p.Semantic, e), !0;
+                        const n = this._diagnostics.get(p.Semantic).filter(e => !t.some(t => e.range.intersection(t)));
+                        return n.push(...e), this._diagnostics.set(p.Semantic, n), !0
                     }
                     getSuggestionDiagnostics(e) {
                         const t = e.getEnableSuggestions(this.language);
-                        return this.get(2).filter(e => !!t || e.tags && (e.tags.includes(a.DiagnosticTag.Unnecessary) || e.tags.includes(a.DiagnosticTag.Deprecated)))
+                        return this.get(p.Suggestion).filter(e => !!t || e.tags && (e.tags.includes(a.DiagnosticTag.Unnecessary) || e.tags.includes(a.DiagnosticTag.Deprecated)))
                     }
                     get(e) {
                         return this._diagnostics.get(e) || []
                     }
                 }
-                class p {
+                class f {
                     constructor() {
                         this._languageSettings = new Map
                     }
@@ -2330,21 +2346,21 @@
                         }))
                     }
                     get(e) {
-                        return this._languageSettings.get(e) || p.defaultSettings
+                        return this._languageSettings.get(e) || f.defaultSettings
                     }
                     update(e, t) {
                         const n = this.get(e),
-                            r = t(n);
-                        return this._languageSettings.set(e, r), ! function(e, t) {
+                            i = t(n);
+                        return this._languageSettings.set(e, i), ! function(e, t) {
                             return e.validate === t.validate && e.enableSuggestions === t.enableSuggestions
-                        }(n, r)
+                        }(n, i)
                     }
                 }
-                p.defaultSettings = {
+                f.defaultSettings = {
                     validate: !0,
                     enableSuggestions: !0
                 };
-                class f extends l.Disposable {
+                class g extends l.Disposable {
                     constructor(e, t) {
                         super(), this._telemetryReporter = e, this._diagnosticsCollection = t, this._diagnosticCodesMap = new Map, this._diagnosticSnapshotsMap = new d.ResourceMap(e => e.toString(), {
                             onCaseInsensitiveFileSystem: !1
@@ -2392,13 +2408,13 @@
                         super.dispose(), clearTimeout(this._timeout), clearInterval(this._telemetryEmitter)
                     }
                 }
-                class g extends l.Disposable {
-                    constructor(e, t, n, r) {
-                        super(), this._settings = new p, this._updateDelay = 50, this._diagnostics = new d.ResourceMap(void 0, {
-                            onCaseInsensitiveFileSystem: r
+                class m extends l.Disposable {
+                    constructor(e, t, n, i) {
+                        super(), this._settings = new f, this._updateDelay = 50, this._diagnostics = new d.ResourceMap(void 0, {
+                            onCaseInsensitiveFileSystem: i
                         }), this._pendingUpdates = new d.ResourceMap(void 0, {
-                            onCaseInsensitiveFileSystem: r
-                        }), this._currentDiagnostics = this._register(a.languages.createDiagnosticCollection(e)), (1e3 * Math.random() <= 1 || t.enableDiagnosticsTelemetry) && (this._diagnosticsTelemetryManager = this._register(new f(n, this._currentDiagnostics)))
+                            onCaseInsensitiveFileSystem: i
+                        }), this._currentDiagnostics = this._register(a.languages.createDiagnosticCollection(e)), (1e3 * Math.random() <= 1 || t.enableDiagnosticsTelemetry) && (this._diagnosticsTelemetryManager = this._register(new g(n, this._currentDiagnostics)))
                     }
                     dispose() {
                         super.dispose();
@@ -2414,13 +2430,13 @@
                     setEnableSuggestions(e, t) {
                         this._settings.setEnableSuggestions(e, t) && this.rebuildAll()
                     }
-                    updateDiagnostics(e, t, n, r, i) {
+                    updateDiagnostics(e, t, n, i, r) {
                         let s = !1;
                         const o = this._diagnostics.get(e);
-                        if (o) s = o.updateDiagnostics(t, n, r, i);
-                        else if (r.length) {
+                        if (o) s = o.updateDiagnostics(t, n, i, r);
+                        else if (i.length) {
                             const o = new h(e, t);
-                            o.updateDiagnostics(t, n, r, i), this._diagnostics.set(e, o), s = !0
+                            o.updateDiagnostics(t, n, i, r), this._diagnostics.set(e, o), s = !0
                         }
                         s && this.scheduleDiagnosticsUpdate(e)
                     }
@@ -2456,21 +2472,21 @@
                         this._currentDiagnostics.set(e.file, e.getAllDiagnostics(this._settings))
                     }
                 }
-                t.DiagnosticsManager = g
+                t.DiagnosticsManager = m
             },
             1668: (e, t, n) => {
                 "use strict";
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.JavaScriptGoToProjectConfigCommand = t.TypeScriptGoToProjectConfigCommand = void 0;
-                const r = n(2330);
+                const i = n(2330);
                 t.TypeScriptGoToProjectConfigCommand = class {
                     constructor(e, t) {
                         this.activeJsTsEditorTracker = e, this.lazyClientHost = t, this.id = "typescript.goToProjectConfig"
                     }
                     execute() {
                         const e = this.activeJsTsEditorTracker.activeJsTsEditor;
-                        e && (0, r.openProjectConfigForFile)(0, this.lazyClientHost.value.serviceClient, e.document.uri)
+                        e && (0, i.openProjectConfigForFile)(i.ProjectType.TypeScript, this.lazyClientHost.value.serviceClient, e.document.uri)
                     }
                 }, t.JavaScriptGoToProjectConfigCommand = class {
                     constructor(e, t) {
@@ -2478,20 +2494,20 @@
                     }
                     execute() {
                         const e = this.activeJsTsEditorTracker.activeJsTsEditor;
-                        e && (0, r.openProjectConfigForFile)(1, this.lazyClientHost.value.serviceClient, e.document.uri)
+                        e && (0, i.openProjectConfigForFile)(i.ProjectType.JavaScript, this.lazyClientHost.value.serviceClient, e.document.uri)
                     }
                 }
             },
             1729: (e, t, n) => {
-                const r = n(144);
+                const i = n(144);
                 e.exports = (e, t) => {
-                    const n = r(e, t);
+                    const n = i(e, t);
                     return n && n.prerelease.length ? n.prerelease : null
                 }
             },
             1763: (e, t, n) => {
-                const r = n(560);
-                e.exports = (e, t) => r(e, t, !0)
+                const i = n(560);
+                e.exports = (e, t) => i(e, t, !0)
             },
             1788: (e, t) => {
                 "use strict";
@@ -2500,10 +2516,10 @@
                 }), t.OrganizeImportsMode = t.EventName = t.DisplayPartKind = t.KindModifiers = t.DiagnosticCategory = t.Kind = void 0;
                 class n {}
                 t.Kind = n, n.alias = "alias", n.callSignature = "call", n.class = "class", n.const = "const", n.constructorImplementation = "constructor", n.constructSignature = "construct", n.directory = "directory", n.enum = "enum", n.enumMember = "enum member", n.externalModuleName = "external module name", n.function = "function", n.indexSignature = "index", n.interface = "interface", n.keyword = "keyword", n.let = "let", n.localFunction = "local function", n.localVariable = "local var", n.method = "method", n.memberGetAccessor = "getter", n.memberSetAccessor = "setter", n.memberVariable = "property", n.module = "module", n.primitiveType = "primitive type", n.script = "script", n.type = "type", n.variable = "var", n.warning = "warning", n.string = "string", n.parameter = "parameter", n.typeParameter = "type parameter";
-                class r {}
-                t.DiagnosticCategory = r, r.error = "error", r.warning = "warning", r.suggestion = "suggestion";
                 class i {}
-                t.KindModifiers = i, i.optional = "optional", i.deprecated = "deprecated", i.color = "color", i.dtsFile = ".d.ts", i.tsFile = ".ts", i.tsxFile = ".tsx", i.jsFile = ".js", i.jsxFile = ".jsx", i.jsonFile = ".json", i.fileExtensionKindModifiers = [i.dtsFile, i.tsFile, i.tsxFile, i.jsFile, i.jsxFile, i.jsonFile];
+                t.DiagnosticCategory = i, i.error = "error", i.warning = "warning", i.suggestion = "suggestion";
+                class r {}
+                t.KindModifiers = r, r.optional = "optional", r.deprecated = "deprecated", r.color = "color", r.dtsFile = ".d.ts", r.tsFile = ".ts", r.tsxFile = ".tsx", r.jsFile = ".js", r.jsxFile = ".jsx", r.jsonFile = ".json", r.fileExtensionKindModifiers = [r.dtsFile, r.tsFile, r.tsxFile, r.jsFile, r.jsxFile, r.jsonFile];
                 class s {}
                 var o, a;
                 t.DisplayPartKind = s, s.functionName = "functionName", s.methodName = "methodName", s.parameterName = "parameterName", s.propertyName = "propertyName", s.punctuation = "punctuation", s.text = "text",
@@ -2530,34 +2546,34 @@
                 t.SelectTypeScriptVersionCommand = n, n.id = "typescript.selectTypeScriptVersion"
             },
             1832: (e, t, n) => {
-                const r = n(144);
+                const i = n(144);
                 e.exports = (e, t) => {
-                    const n = r(e, null, !0),
-                        i = r(t, null, !0),
-                        s = n.compare(i);
+                    const n = i(e, null, !0),
+                        r = i(t, null, !0),
+                        s = n.compare(r);
                     if (0 === s) return null;
                     const o = s > 0,
-                        a = o ? n : i,
-                        c = o ? i : n,
+                        a = o ? n : r,
+                        c = o ? r : n,
                         l = !!a.prerelease.length;
                     if (c.prerelease.length && !l) return c.patch || c.minor ? a.patch ? "patch" : a.minor ? "minor" : "major" : "major";
                     const u = l ? "pre" : "";
-                    return n.major !== i.major ? u + "major" : n.minor !== i.minor ? u + "minor" : n.patch !== i.patch ? u + "patch" : "prerelease"
+                    return n.major !== r.major ? u + "major" : n.minor !== r.minor ? u + "minor" : n.patch !== r.patch ? u + "patch" : "prerelease"
                 }
             },
             1860: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -2567,17 +2583,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -2588,8 +2604,8 @@
                     l = o(n(3256)),
                     u = o(n(2144)),
                     d = n(7371),
-                    h = n(136),
-                    p = n(3489),
+                    p = n(136),
+                    h = n(3489),
                     f = n(2287),
                     g = n(8040),
                     m = n(5602),
@@ -2656,15 +2672,15 @@
                             const e = [],
                                 t = [],
                                 n = [];
-                            for (const r of this._pending.values()) switch (r.type) {
+                            for (const i of this._pending.values()) switch (i.type) {
                                 case 2:
-                                    n.push(r.args);
+                                    n.push(i.args);
                                     break;
                                 case 1:
-                                    t.push(r.args);
+                                    t.push(i.args);
                                     break;
                                 case 0:
-                                    e.push(r.args)
+                                    e.push(i.args)
                             }
                             this.client.execute("updateOpen", {
                                 changedFiles: n,
@@ -2687,8 +2703,8 @@
                     }
                 }
                 class C {
-                    constructor(e, t, n, r) {
-                        this.document = e, this.filepath = t, this.client = n, this.synchronizer = r, this.state = 0
+                    constructor(e, t, n, i) {
+                        this.document = e, this.filepath = t, this.client = n, this.synchronizer = i, this.state = 0
                     }
                     open() {
                         const e = {
@@ -2710,7 +2726,7 @@
                                     break
                                 } if (t) {
                             const e = this.client.toTsFilePath(t);
-                            return e?.startsWith(h.inMemoryResourcePrefix) ? void 0 : e
+                            return e?.startsWith(p.inMemoryResourcePrefix) ? void 0 : e
                         }
                         return c.isOfScheme(e, c.officeScript, c.chatCodeBlock) ? "/" : void 0
                     }
@@ -2752,9 +2768,9 @@
                     }
                     constructor(e, t, n) {
                         if (this.client = e, this.files = t, this._done = !1, this._token = new a.CancellationTokenSource, !this.isErrorReportingEnabled()) return this._done = !0, void(0, f.setImmediate)(n);
-                        const r = this.client.apiVersion.gte(y.API.v440),
-                            i = Array.from(t.entries()).filter(t => r || e.hasCapabilityForResource(t.resource, d.ClientCapability.Semantic)),
-                            s = (0, p.coalesce)(i.map(t => e.toTsFilePath(t.resource)));
+                        const i = this.client.apiVersion.gte(y.API.v440),
+                            r = Array.from(t.entries()).filter(t => i || e.hasCapabilityForResource(t.resource, d.ClientCapability.Semantic)),
+                            s = (0, h.coalesce)(r.map(t => e.toTsFilePath(t.resource)));
                         if (s.length) {
                             let t;
                             if (this.areProjectDiagnosticsEnabled()) t = e.executeAsync("geterrForProject", {
@@ -2763,10 +2779,10 @@
                             }, this._token.token);
                             else {
                                 let n;
-                                n = this.areRegionDiagnosticsEnabled() ? (0, p.coalesce)(i.map(t => {
+                                n = this.areRegionDiagnosticsEnabled() ? (0, h.coalesce)(r.map(t => {
                                     const n = e.toTsFilePath(t.resource),
-                                        r = t.value;
-                                    return n && r ? u.Range.toFileRangesRequestArgs(n, r) : n
+                                        i = t.value;
+                                    return n && i ? u.Range.toFileRangesRequestArgs(n, i) : n
                                 })) : s, t = e.executeAsync("geterr", {
                                     delay: 0,
                                     files: n
@@ -2815,8 +2831,8 @@
                     add(e) {
                         const t = [];
                         for (const n of this.getResourcesForTab(e)) {
-                            const r = this._tabResources.get(n);
-                            r ? r.tabs.add(e) : (this._tabResources.set(n, {
+                            const i = this._tabResources.get(n);
+                            i ? i.tabs.add(e) : (this._tabResources.set(n, {
                                 tabs: new Set([e])
                             }), t.push(n))
                         }
@@ -2825,8 +2841,8 @@
                     delete(e) {
                         const t = [];
                         for (const n of this.getResourcesForTab(e)) {
-                            const r = this._tabResources.get(n);
-                            r && (r.tabs.delete(e), 0 === r.tabs.size && (this._tabResources.delete(n), t.push(n)))
+                            const i = this._tabResources.get(n);
+                            i && (i.tabs.delete(e), 0 === i.tabs.size && (this._tabResources.delete(n), t.push(n)))
                         }
                         return t
                     }
@@ -2837,12 +2853,12 @@
                 class E extends m.Disposable {
                     constructor(e, t, n) {
                         super(), this._validateJavaScript = !0, this._validateTypeScript = !0, this.listening = !1, this._onDelete = this._register(new a.EventEmitter), this.onDelete = this._onDelete.event, this._onWillChange = this._register(new a.EventEmitter), this.onWillChange = this._onWillChange.event, this.client = e, this.modeIds = new Set(t), this.diagnosticDelayer = new f.Delayer(300);
-                        const r = e => this.client.toTsFilePath(e);
-                        this.syncedBuffers = new O(r, {
+                        const i = e => this.client.toTsFilePath(e);
+                        this.syncedBuffers = new O(i, {
                             onCaseInsensitiveFileSystem: n
-                        }), this.pendingDiagnostics = new T(r, {
+                        }), this.pendingDiagnostics = new T(i, {
                             onCaseInsensitiveFileSystem: n
-                        }), this.synchronizer = new P(e, r, n), this._tabResources = this._register(new j(r, {
+                        }), this.synchronizer = new P(e, i, n), this._tabResources = this._register(new j(i, {
                             onCaseInsensitiveFileSystem: n
                         })), this._register(this._tabResources.onDidChange(e => {
                             if (!this.client.configuration.enableProjectDiagnostics) {
@@ -2897,8 +2913,8 @@
                         if (!n) return !1;
                         if (!t.path && t.scheme.endsWith("-anysphere")) return !1;
                         if (this.syncedBuffers.has(t)) return !0;
-                        const r = new C(e, n, this.client, this.synchronizer);
-                        return this.syncedBuffers.set(t, r), r.open(), this.requestDiagnostic(r), !0
+                        const i = new C(e, n, this.client, this.synchronizer);
+                        return this.syncedBuffers.set(t, i), i.open(), this.requestDiagnostic(i), !0
                     }
                     closeResource(e) {
                         const t = this.syncedBuffers.get(e);
@@ -3002,17 +3018,17 @@
             },
             1910: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -3022,17 +3038,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -3053,41 +3069,41 @@
                     async provideDocumentSymbols(e, t) {
                         const n = this.client.toOpenTsFilePath(e);
                         if (!n) return;
-                        const r = {
+                        const i = {
                                 file: n
                             },
-                            i = await this.cachedResponse.execute(e, () => this.client.execute("navtree", r, t));
-                        if ("response" !== i.type || !i.body?.childItems) return;
+                            r = await this.cachedResponse.execute(e, () => this.client.execute("navtree", i, t));
+                        if ("response" !== r.type || !r.body?.childItems) return;
                         const s = [];
-                        for (const t of i.body.childItems) d.convertNavTree(e.uri, s, t);
+                        for (const t of r.body.childItems) d.convertNavTree(e.uri, s, t);
                         return s
                     }
                     static convertNavTree(e, t, n) {
-                        let r = d.shouldInclueEntry(n);
-                        if (!r && !n.childItems?.length) return !1;
-                        const i = new Set(n.childItems || []);
+                        let i = d.shouldInclueEntry(n);
+                        if (!i && !n.childItems?.length) return !1;
+                        const r = new Set(n.childItems || []);
                         for (const s of n.spans) {
                             const o = u.Range.fromTextSpan(s),
                                 a = d.convertSymbol(n, o);
-                            for (const t of i)
+                            for (const t of r)
                                 if (t.spans.some(e => !!o.intersection(u.Range.fromTextSpan(e)))) {
                                     const n = d.convertNavTree(e, a.children, t);
-                                    r = r || n, i.delete(t)
-                                } r && t.push(a)
+                                    i = i || n, r.delete(t)
+                                } i && t.push(a)
                         }
-                        return r
+                        return i
                     }
                     static convertSymbol(e, t) {
                         const n = e.nameSpan ? u.Range.fromTextSpan(e.nameSpan) : t;
-                        let r = e.text;
+                        let i = e.text;
                         switch (e.kind) {
                             case l.Kind.memberGetAccessor:
-                                r = `(get) ${r}`;
+                                i = `(get) ${i}`;
                                 break;
                             case l.Kind.memberSetAccessor:
-                                r = `(set) ${r}`
+                                i = `(set) ${i}`
                         }
-                        const i = new a.DocumentSymbol(r, "", (e => {
+                        const r = new a.DocumentSymbol(i, "", (e => {
                             switch (e) {
                                 case l.Kind.module:
                                     return a.SymbolKind.Module;
@@ -3116,7 +3132,7 @@
                             }
                             return a.SymbolKind.Variable
                         })(e.kind), t, t.contains(n) ? n : t);
-                        return (0, c.parseKindModifier)(e.kindModifiers).has(l.KindModifiers.deprecated) && (i.tags = [a.SymbolTag.Deprecated]), i
+                        return (0, c.parseKindModifier)(e.kindModifiers).has(l.KindModifiers.deprecated) && (r.tags = [a.SymbolTag.Deprecated]), r
                     }
                     static shouldInclueEntry(e) {
                         return e.kind !== l.Kind.alias && !(!e.text || "<function>" === e.text || "<class>" === e.text)
@@ -3125,17 +3141,17 @@
             },
             1928: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -3145,56 +3161,56 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.register = function(e, t) {
-                    return (0, f.conditionalRegistration)([(0, f.requireMinVersion)(t, g.minVersion), (0, f.requireSomeCapability)(t, p.ClientCapability.Semantic)], () => c.languages.registerCallHierarchyProvider(e.semantic, new g(t)))
+                    return (0, f.conditionalRegistration)([(0, f.requireMinVersion)(t, g.minVersion), (0, f.requireSomeCapability)(t, h.ClientCapability.Semantic)], () => c.languages.registerCallHierarchyProvider(e.semantic, new g(t)))
                 };
                 const a = o(n(6928)),
                     c = o(n(1398)),
                     l = n(2928),
                     u = n(8487),
                     d = o(n(1788)),
-                    h = o(n(2144)),
-                    p = n(7371),
+                    p = o(n(2144)),
+                    h = n(7371),
                     f = n(6362);
                 class g {
                     constructor(e) {
                         this.client = e
                     }
                     async prepareCallHierarchy(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return;
-                        const i = h.Position.toFileLocationRequestArgs(r, t),
-                            s = await this.client.execute("prepareCallHierarchy", i, n);
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return;
+                        const r = p.Position.toFileLocationRequestArgs(i, t),
+                            s = await this.client.execute("prepareCallHierarchy", r, n);
                         return "response" === s.type && s.body ? Array.isArray(s.body) ? s.body.map(m) : m(s.body) : void 0
                     }
                     async provideCallHierarchyIncomingCalls(e, t) {
                         const n = this.client.toTsFilePath(e.uri);
                         if (!n) return;
-                        const r = h.Position.toFileLocationRequestArgs(n, e.selectionRange.start),
-                            i = await this.client.execute("provideCallHierarchyIncomingCalls", r, t);
-                        return "response" === i.type && i.body ? i.body.map(v) : void 0
+                        const i = p.Position.toFileLocationRequestArgs(n, e.selectionRange.start),
+                            r = await this.client.execute("provideCallHierarchyIncomingCalls", i, t);
+                        return "response" === r.type && r.body ? r.body.map(v) : void 0
                     }
                     async provideCallHierarchyOutgoingCalls(e, t) {
                         const n = this.client.toTsFilePath(e.uri);
                         if (!n) return;
-                        const r = h.Position.toFileLocationRequestArgs(n, e.selectionRange.start),
-                            i = await this.client.execute("provideCallHierarchyOutgoingCalls", r, t);
-                        return "response" === i.type && i.body ? i.body.map(y) : void 0
+                        const i = p.Position.toFileLocationRequestArgs(n, e.selectionRange.start),
+                            r = await this.client.execute("provideCallHierarchyOutgoingCalls", i, t);
+                        return "response" === r.type && r.body ? r.body.map(y) : void 0
                     }
                 }
 
@@ -3203,34 +3219,34 @@
                             return e.kind === d.Kind.script || e.kind === d.Kind.module && 1 === e.selectionSpan.start.line && 1 === e.selectionSpan.start.offset
                         }(e),
                         n = t ? a.basename(e.file) : e.name,
-                        r = t ? c.workspace.asRelativePath(a.dirname(e.file)) : e.containerName ?? "",
-                        i = new c.CallHierarchyItem(h.SymbolKind.fromProtocolScriptElementKind(e.kind), n, r, c.Uri.file(e.file), h.Range.fromTextSpan(e.span), h.Range.fromTextSpan(e.selectionSpan)),
+                        i = t ? c.workspace.asRelativePath(a.dirname(e.file)) : e.containerName ?? "",
+                        r = new c.CallHierarchyItem(p.SymbolKind.fromProtocolScriptElementKind(e.kind), n, i, c.Uri.file(e.file), p.Range.fromTextSpan(e.span), p.Range.fromTextSpan(e.selectionSpan)),
                         s = e.kindModifiers ? (0, u.parseKindModifier)(e.kindModifiers) : void 0;
-                    return s?.has(d.KindModifiers.deprecated) && (i.tags = [c.SymbolTag.Deprecated]), i
+                    return s?.has(d.KindModifiers.deprecated) && (r.tags = [c.SymbolTag.Deprecated]), r
                 }
 
                 function v(e) {
-                    return new c.CallHierarchyIncomingCall(m(e.from), e.fromSpans.map(h.Range.fromTextSpan))
+                    return new c.CallHierarchyIncomingCall(m(e.from), e.fromSpans.map(p.Range.fromTextSpan))
                 }
 
                 function y(e) {
-                    return new c.CallHierarchyOutgoingCall(m(e.to), e.fromSpans.map(h.Range.fromTextSpan))
+                    return new c.CallHierarchyOutgoingCall(m(e.to), e.fromSpans.map(p.Range.fromTextSpan))
                 }
                 g.minVersion = l.API.v380
             },
             2071: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -3240,17 +3256,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -3263,8 +3279,8 @@
                     l = o(n(1398)),
                     u = n(8631),
                     d = n(7371),
-                    h = n(3489),
-                    p = n(5602),
+                    p = n(3489),
+                    h = n(5602),
                     f = n(5540),
                     g = n(4760),
                     m = n(2330),
@@ -3273,7 +3289,7 @@
                 ! function(e) {
                     e.on = "on", e.off = "off", e.build = "build", e.watch = "watch"
                 }(y || (y = {}));
-                class b extends p.Disposable {
+                class b extends h.Disposable {
                     constructor(e) {
                         super(), this.client = e, this.projectInfoRequestTimeout = 2e3, this.findConfigFilesTimeout = 5e3, this.autoDetect = y.on, this.tsconfigProvider = new v.TsConfigProvider, this._register(l.workspace.onDidChangeConfiguration(this.onConfigurationChanged, this)), this.onConfigurationChanged()
                     }
@@ -3281,9 +3297,9 @@
                         const t = l.workspace.workspaceFolders;
                         if (this.autoDetect === y.off || !t?.length) return [];
                         const n = new Set,
-                            r = [];
-                        for (const t of await this.getAllTsConfigs(e)) n.has(t.fsPath) || (n.add(t.fsPath), r.push(...await this.getTasksForProject(t)));
-                        return r
+                            i = [];
+                        for (const t of await this.getAllTsConfigs(e)) n.has(t.fsPath) || (n.add(t.fsPath), i.push(...await this.getTasksForProject(t)));
+                        return i
                     }
                     async resolveTask(e) {
                         const t = e.definition;
@@ -3291,20 +3307,20 @@
                         const n = t.tsconfig;
                         if (!n) return;
                         if (void 0 === e.scope || e.scope === l.TaskScope.Global || e.scope === l.TaskScope.Workspace) return;
-                        const r = e.scope.uri.with({
+                        const i = e.scope.uri.with({
                                 path: e.scope.uri.path + "/" + n
                             }),
-                            i = {
-                                uri: r,
-                                fsPath: r.fsPath,
-                                posixPath: r.path,
+                            r = {
+                                uri: i,
+                                fsPath: i.fsPath,
+                                posixPath: i.path,
                                 workspaceFolder: e.scope
                             };
-                        return this.getTasksForProjectAndDefinition(i, t)
+                        return this.getTasksForProjectAndDefinition(r, t)
                     }
                     async getAllTsConfigs(e) {
                         const t = (await Promise.all([this.getTsConfigForActiveFile(e), this.getTsConfigsInWorkspace(e)])).flat();
-                        return Promise.all(t.map(async e => await (0, f.exists)(e.uri) ? e : void 0)).then(h.coalesce)
+                        return Promise.all(t.map(async e => await (0, f.exists)(e.uri) ? e : void 0)).then(p.coalesce)
                     }
                     async getTsConfigForActiveFile(e) {
                         const t = l.window.activeTextEditor;
@@ -3319,16 +3335,16 @@
                         }
                         const n = this.getActiveTypeScriptFile();
                         if (!n) return [];
-                        const r = await Promise.race([this.client.value.execute("projectInfo", {
+                        const i = await Promise.race([this.client.value.execute("projectInfo", {
                             file: n,
                             needFileNameList: !1
                         }, e), new Promise(e => setTimeout(() => e(d.ServerResponse.NoContent), this.projectInfoRequestTimeout))]);
-                        if ("response" !== r.type || !r.body) return [];
+                        if ("response" !== i.type || !i.body) return [];
                         const {
-                            configFileName: i
-                        } = r.body;
-                        if (i && !(0, m.isImplicitProjectConfigFile)(i)) {
-                            const e = c.normalize(i),
+                            configFileName: r
+                        } = i.body;
+                        if (r && !(0, m.isImplicitProjectConfigFile)(r)) {
+                            const e = c.normalize(r),
                                 t = l.Uri.file(e),
                                 n = l.workspace.getWorkspaceFolder(t);
                             return [{
@@ -3365,42 +3381,42 @@
                             if (t && ("typescript" === t.languageId || "typescriptreact" === t.languageId)) return this.client.value.toTsFilePath(t.uri)
                         }
                     }
-                    getBuildTask(e, t, n, r, i) {
-                        const s = new l.Task(i, e || l.TaskScope.Workspace, l.l10n.t("build - {0}", t), "tsc", new l.ShellExecution(n, r), "$tsc");
+                    getBuildTask(e, t, n, i, r) {
+                        const s = new l.Task(r, e || l.TaskScope.Workspace, l.l10n.t("build - {0}", t), "tsc", new l.ShellExecution(n, i), "$tsc");
                         return s.group = l.TaskGroup.Build, s.isBackground = !1, s
                     }
-                    getWatchTask(e, t, n, r, i) {
-                        const s = new l.Task(i, e || l.TaskScope.Workspace, l.l10n.t("watch - {0}", t), "tsc", new l.ShellExecution(n, [...r, "--watch"]), "$tsc-watch");
+                    getWatchTask(e, t, n, i, r) {
+                        const s = new l.Task(r, e || l.TaskScope.Workspace, l.l10n.t("watch - {0}", t), "tsc", new l.ShellExecution(n, [...i, "--watch"]), "$tsc-watch");
                         return s.group = l.TaskGroup.Build, s.isBackground = !0, s
                     }
                     async getTasksForProject(e) {
                         const t = await b.getCommand(e),
                             n = await this.getBuildShellArgs(e),
-                            r = this.getLabelForTasks(e),
-                            i = [];
-                        return this.autoDetect !== y.build && this.autoDetect !== y.on || i.push(this.getBuildTask(e.workspaceFolder, r, t, n, {
+                            i = this.getLabelForTasks(e),
+                            r = [];
+                        return this.autoDetect !== y.build && this.autoDetect !== y.on || r.push(this.getBuildTask(e.workspaceFolder, i, t, n, {
                             type: "typescript",
-                            tsconfig: r
-                        })), this.autoDetect !== y.watch && this.autoDetect !== y.on || i.push(this.getWatchTask(e.workspaceFolder, r, t, n, {
+                            tsconfig: i
+                        })), this.autoDetect !== y.watch && this.autoDetect !== y.on || r.push(this.getWatchTask(e.workspaceFolder, i, t, n, {
                             type: "typescript",
-                            tsconfig: r,
+                            tsconfig: i,
                             option: "watch"
-                        })), i
+                        })), r
                     }
                     async getTasksForProjectAndDefinition(e, t) {
                         const n = await b.getCommand(e),
-                            r = await this.getBuildShellArgs(e),
-                            i = this.getLabelForTasks(e);
+                            i = await this.getBuildShellArgs(e),
+                            r = this.getLabelForTasks(e);
                         let s;
-                        return void 0 === t.option ? s = this.getBuildTask(e.workspaceFolder, i, n, r, t) : "watch" === t.option && (s = this.getWatchTask(e.workspaceFolder, i, n, r, t)), s
+                        return void 0 === t.option ? s = this.getBuildTask(e.workspaceFolder, r, n, i, t) : "watch" === t.option && (s = this.getWatchTask(e.workspaceFolder, r, n, i, t)), s
                     }
                     async getBuildShellArgs(e) {
                         const t = ["-p", e.fsPath];
                         try {
                             const t = await l.workspace.fs.readFile(e.uri),
                                 n = Buffer.from(t).toString("utf-8"),
-                                r = a.parse(n);
-                            if (r?.references) return ["-b", e.fsPath]
+                                i = a.parse(n);
+                            if (i?.references) return ["-b", e.fsPath]
                         } catch {}
                         return t
                     }
@@ -3418,8 +3434,8 @@
                 }
             },
             2111: (e, t, n) => {
-                const r = n(4641),
-                    i = n(3999),
+                const i = n(4641),
+                    r = n(3999),
                     s = n(5580),
                     o = n(4089),
                     a = n(7059),
@@ -3433,9 +3449,9 @@
                         case "":
                         case "=":
                         case "==":
-                            return r(e, n, l);
-                        case "!=":
                             return i(e, n, l);
+                        case "!=":
+                            return r(e, n, l);
                         case ">":
                             return s(e, n, l);
                         case ">=":
@@ -3451,17 +3467,17 @@
             },
             2144: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -3471,17 +3487,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -3489,7 +3505,7 @@
                 }), t.OrganizeImportsMode = t.CompletionTriggerKind = t.SymbolKind = t.WorkspaceEdit = t.TextEdit = t.Location = t.Position = t.Range = void 0;
                 const a = o(n(1398)),
                     c = o(n(1788));
-                var l, u, d, h, p, f, g, m;
+                var l, u, d, p, h, f, g, m;
                 ! function(e) {
                     e.fromTextSpan = t => e.fromLocations(t.start, t.end), e.toTextSpan = e => ({
                         start: u.toLocation(e.start),
@@ -3528,19 +3544,19 @@
                 }(d || (t.Location = d = {})),
                 function(e) {
                     e.fromCodeEdit = e => new a.TextEdit(l.fromTextSpan(e), e.newText)
-                }(h || (t.TextEdit = h = {})),
+                }(p || (t.TextEdit = p = {})),
                 function(e) {
                     function t(e, t, n) {
-                        for (const r of n) {
-                            const n = t.toResource(r.fileName);
-                            for (const t of r.textChanges) e.replace(n, l.fromTextSpan(t), t.newText)
+                        for (const i of n) {
+                            const n = t.toResource(i.fileName);
+                            for (const t of i.textChanges) e.replace(n, l.fromTextSpan(t), t.newText)
                         }
                         return e
                     }
                     e.fromFileCodeEdits = function(e, n) {
                         return t(new a.WorkspaceEdit, e, n)
                     }, e.withFileCodeEdits = t
-                }(p || (t.WorkspaceEdit = p = {})),
+                }(h || (t.WorkspaceEdit = h = {})),
                 function(e) {
                     e.fromProtocolScriptElementKind = function(e) {
                         switch (e) {
@@ -3610,17 +3626,17 @@
             },
             2174: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -3630,17 +3646,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -3651,11 +3667,11 @@
                     constructor(e) {
                         this.client = e
                     }
-                    async getSymbolLocations(e, t, n, r) {
-                        const i = this.client.toOpenTsFilePath(t);
-                        if (!i) return;
-                        const s = a.Position.toFileLocationRequestArgs(i, n),
-                            o = await this.client.execute(e, s, r);
+                    async getSymbolLocations(e, t, n, i) {
+                        const r = this.client.toOpenTsFilePath(t);
+                        if (!r) return;
+                        const s = a.Position.toFileLocationRequestArgs(r, n),
+                            o = await this.client.execute(e, s, i);
                         return "response" === o.type && o.body ? o.body.map(e => a.Location.fromTextSpan(this.client.toResource(e.file), e)) : void 0
                     }
                 }
@@ -3674,8 +3690,8 @@
                 }
             },
             2211: (e, t, n) => {
-                const r = n(9896),
-                    i = n(6928),
+                const i = n(9896),
+                    r = n(6928),
                     s = n(8265),
                     o = n(2792),
                     a = n(4705);
@@ -3685,16 +3701,16 @@
 
                 function d() {}
 
-                function h(e) {
-                    e.fd && r.close(e.fd, d)
+                function p(e) {
+                    e.fd && i.close(e.fd, d)
                 }
 
-                function p(e, t, n) {
-                    let i = !1;
-                    "function" == typeof t && (n = t, t = l.alloc(u), i = !0), r.read(e, t, 0, u, 0, function(r, s, o) {
-                        if (r) return void n(r);
-                        const a = l.concat([t, o], i ? s : t.length + s);
-                        s !== u ? n(null, t) : p(e, a, n)
+                function h(e, t, n) {
+                    let r = !1;
+                    "function" == typeof t && (n = t, t = l.alloc(u), r = !0), i.read(e, t, 0, u, 0, function(i, s, o) {
+                        if (i) return void n(i);
+                        const a = l.concat([t, o], r ? s : t.length + s);
+                        s !== u ? n(null, t) : h(e, a, n)
                     })
                 }
 
@@ -3704,14 +3720,14 @@
                     void 0 === s && (o = !0, s = {}),
                         function(e, t, n) {
                             if (t.fd) return n(null, t.fd);
-                            r.open(e, "r", n)
-                        }(i.join("/proc", "" + e, "stat"), s, function(r, i) {
-                            return r ? ("ENOENT" === r.code && (r.message = "No matching pid found"), n(r, null)) : r ? n(r) : void p(i, function(r, l) {
-                                if (r) return n(r);
+                            i.open(e, "r", n)
+                        }(r.join("/proc", "" + e, "stat"), s, function(i, r) {
+                            return i ? ("ENOENT" === i.code && (i.message = "No matching pid found"), n(i, null)) : i ? n(i) : void h(r, function(i, l) {
+                                if (i) return n(i);
                                 let u = l.toString("utf8");
                                 const d = Date.now(),
-                                    p = u.lastIndexOf(")");
-                                u = u.substr(p + 2).split(" ");
+                                    h = u.lastIndexOf(")");
+                                u = u.substr(h + 2).split(" ");
                                 const g = {
                                         ppid: parseInt(u[1]),
                                         utime: 1e3 * parseFloat(u[11]) / c.clockTick,
@@ -3721,14 +3737,14 @@
                                         start: 1e3 * parseFloat(u[19]) / c.clockTick,
                                         rss: parseFloat(u[21]),
                                         uptime: 1e3 * c.uptime,
-                                        fd: i
+                                        fd: r
                                     },
                                     m = g.rss * c.pageSize,
                                     v = t.childrens ? g.cutime + g.cstime : 0,
                                     y = g.stime - (s.stime || 0) + g.utime - (s.utime || 0) + v,
                                     b = Math.abs(void 0 !== s.uptime ? g.uptime - s.uptime : g.start - g.uptime),
                                     w = b > 0 ? y / b * 100 : 0;
-                                return a.set(e, g, t.maxage, h), o ? f(e, t, n) : n(null, {
+                                return a.set(e, g, t.maxage, p), o ? f(e, t, n) : n(null, {
                                     cpu: w,
                                     memory: m,
                                     ctime: g.utime + g.stime,
@@ -3741,9 +3757,9 @@
                         })
                 }
                 e.exports = function(e, t, n) {
-                    s(c, function(r, i) {
-                        if (r) return n(r);
-                        c = i;
+                    s(c, function(i, r) {
+                        if (i) return n(i);
+                        c = r;
                         const s = {};
                         e.forEach(function(e, n) {
                             s[e] = function(n) {
@@ -3757,17 +3773,17 @@
             },
             2236: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -3777,17 +3793,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -3798,9 +3814,9 @@
                     l = o(n(1398)),
                     u = o(n(5317)),
                     d = o(n(9896)),
-                    h = n(4906),
-                    p = n(8366);
-                class f extends h.BaseServiceConfigurationProvider {
+                    p = n(4906),
+                    h = n(8366);
+                class f extends p.BaseServiceConfigurationProvider {
                     fixPathPrefixes(e) {
                         const t = ["~" + c.sep];
                         for (const n of t)
@@ -3823,7 +3839,7 @@
                         if (t?.workspaceValue && "string" == typeof t.workspaceValue) {
                             if ("node" === t.workspaceValue) return this.findNodePath();
                             const e = this.fixPathPrefixes(t.workspaceValue);
-                            return c.isAbsolute(e) ? e : p.RelativeWorkspacePathResolver.asAbsoluteWorkspacePath(e) || null
+                            return c.isAbsolute(e) ? e : h.RelativeWorkspacePathResolver.asAbsoluteWorkspacePath(e) || null
                         }
                         return null
                     }
@@ -3874,11 +3890,11 @@
                         }
                     }
                 }, t.raceTimeout = function(e, t, n) {
-                    let r;
-                    const i = setTimeout(() => {
-                        r?.(void 0), n?.()
+                    let i;
+                    const r = setTimeout(() => {
+                        i?.(void 0), n?.()
                     }, t);
-                    return Promise.race([e.finally(() => clearTimeout(i)), new Promise(e => r = e)])
+                    return Promise.race([e.finally(() => clearTimeout(r)), new Promise(e => i = e)])
                 }, t.Delayer = class {
                     constructor(e) {
                         this.defaultDelay = e, this.timeout = null, this.completionPromise = null, this.onSuccess = null, this.task = null
@@ -3933,17 +3949,17 @@
             },
             2288: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -3953,58 +3969,58 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.register = function(e, t) {
-                    return (0, d.conditionalRegistration)([(0, d.requireMinVersion)(t, h.minVersion), (0, d.requireSomeCapability)(t, u.ClientCapability.Syntax)], () => a.languages.registerLinkedEditingRangeProvider(e.syntax, new h(t)))
+                    return (0, d.conditionalRegistration)([(0, d.requireMinVersion)(t, p.minVersion), (0, d.requireSomeCapability)(t, u.ClientCapability.Syntax)], () => a.languages.registerLinkedEditingRangeProvider(e.syntax, new p(t)))
                 };
                 const a = o(n(1398)),
                     c = n(2928),
                     l = o(n(2144)),
                     u = n(7371),
                     d = n(6362);
-                class h {
+                class p {
                     constructor(e) {
                         this.client = e
                     }
                     async provideLinkedEditingRanges(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return;
-                        const i = l.Position.toFileLocationRequestArgs(r, t),
-                            s = await this.client.execute("linkedEditingRange", i, n);
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return;
+                        const r = l.Position.toFileLocationRequestArgs(i, t),
+                            s = await this.client.execute("linkedEditingRange", r, n);
                         if ("response" !== s.type || !s.body) return;
                         const o = s.body.wordPattern ? new RegExp(s.body.wordPattern) : void 0;
                         return new a.LinkedEditingRanges(s.body.ranges.map(e => l.Range.fromTextSpan(e)), o)
                     }
                 }
-                h.minVersion = c.API.v510
+                p.minVersion = c.API.v510
             },
             2290: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4014,17 +4030,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -4036,14 +4052,14 @@
                     constructor(e, t = !1) {
                         super(), this.logger = e, this.forceLogging = t
                     }
-                    traceRequest(e, t, n, r) {
-                        (this.logger.logLevel === a.LogLevel.Trace || this.forceLogging) && this.trace(e, `Sending request: ${t.command} (${t.seq}). Response expected: ${n?"yes":"no"}. Current queue length: ${r}`, t.arguments)
+                    traceRequest(e, t, n, i) {
+                        (this.logger.logLevel === a.LogLevel.Trace || this.forceLogging) && this.trace(e, `Sending request: ${t.command} (${t.seq}). Response expected: ${n?"yes":"no"}. Current queue length: ${i}`, t.arguments)
                     }
                     traceResponse(e, t, n) {
                         (this.logger.logLevel === a.LogLevel.Trace || this.forceLogging) && this.trace(e, `Response received: ${t.command} (${t.request_seq}). Request took ${Date.now()-n.queuingStartTime} ms. Success: ${t.success} ${t.success?"":". Message: "+t.message}`, t.body)
                     }
-                    traceRequestCompleted(e, t, n, r) {
-                        (this.logger.logLevel === a.LogLevel.Trace || this.forceLogging) && this.trace(e, `Async response received: ${t} (${n}). Request took ${Date.now()-r.queuingStartTime} ms.`)
+                    traceRequestCompleted(e, t, n, i) {
+                        (this.logger.logLevel === a.LogLevel.Trace || this.forceLogging) && this.trace(e, `Async response received: ${t} (${n}). Request took ${Date.now()-i.queuingStartTime} ms.`)
                     }
                     traceEvent(e, t) {
                         this.logger.logLevel === a.LogLevel.Trace && this.trace(e, `Event received: ${t.event} (${t.seq}).`, t.body)
@@ -4056,17 +4072,17 @@
             },
             2330: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4076,96 +4092,99 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.isImplicitProjectConfigFile = u, t.inferredProjectCompilerOptions = d, t.openOrCreateConfig = h, t.openProjectConfigOrPromptToCreate = p, t.openProjectConfigForFile = async function(e, t, n) {
-                    const r = t.getWorkspaceRootForResource(n);
-                    if (!r) return void a.window.showInformationMessage(a.l10n.t("Please open a folder in VS Code to use a TypeScript or JavaScript project"));
-                    const i = t.toTsFilePath(n);
-                    if (!i || !t.toTsFilePath(n)) return void a.window.showWarningMessage(a.l10n.t("Could not determine TypeScript or JavaScript project. Unsupported file type"));
+                }), t.ProjectType = void 0, t.isImplicitProjectConfigFile = d, t.inferredProjectCompilerOptions = p, t.openOrCreateConfig = h, t.openProjectConfigOrPromptToCreate = f, t.openProjectConfigForFile = async function(e, t, n) {
+                    const i = t.getWorkspaceRootForResource(n);
+                    if (!i) return void a.window.showInformationMessage(a.l10n.t("Please open a folder in VS Code to use a TypeScript or JavaScript project"));
+                    const r = t.toTsFilePath(n);
+                    if (!r || !t.toTsFilePath(n)) return void a.window.showWarningMessage(a.l10n.t("Could not determine TypeScript or JavaScript project. Unsupported file type"));
                     let s;
                     try {
                         s = await t.execute("projectInfo", {
-                            file: i,
+                            file: r,
                             needFileNameList: !1
                         }, l.nulToken)
                     } catch {}
-                    if ("response" === s?.type && s.body) return p(e, t, r, s.body.configFileName);
+                    if ("response" === s?.type && s.body) return f(e, t, i, s.body.configFileName);
                     a.window.showWarningMessage(a.l10n.t("Could not determine TypeScript or JavaScript project"))
                 };
                 const a = o(n(1398)),
                     c = n(2928),
                     l = n(8040);
+                var u;
 
-                function u(e) {
+                function d(e) {
                     return e.startsWith("/dev/null/")
                 }
 
-                function d(e, t, n) {
-                    const r = {
+                function p(e, t, n) {
+                    const i = {
                         module: e.gte(c.API.v540) ? "Preserve" : "ESNext",
                         moduleResolution: e.gte(c.API.v540) ? "Bundler" : "Node",
                         target: "ES2022",
                         jsx: "react"
                     };
-                    return e.gte(c.API.v500) && (r.allowImportingTsExtensions = !0), n.implicitProjectConfiguration.checkJs && (r.checkJs = !0, 0 === t && (r.allowJs = !0)), n.implicitProjectConfiguration.experimentalDecorators && (r.experimentalDecorators = !0), n.implicitProjectConfiguration.strictNullChecks && (r.strictNullChecks = !0), n.implicitProjectConfiguration.strictFunctionTypes && (r.strictFunctionTypes = !0), n.implicitProjectConfiguration.module && (r.module = n.implicitProjectConfiguration.module), n.implicitProjectConfiguration.target && (r.target = n.implicitProjectConfiguration.target), 0 === t && (r.sourceMap = !0), r
+                    return e.gte(c.API.v500) && (i.allowImportingTsExtensions = !0), n.implicitProjectConfiguration.checkJs && (i.checkJs = !0, t === u.TypeScript && (i.allowJs = !0)), n.implicitProjectConfiguration.experimentalDecorators && (i.experimentalDecorators = !0), n.implicitProjectConfiguration.strictNullChecks && (i.strictNullChecks = !0), n.implicitProjectConfiguration.strictFunctionTypes && (i.strictFunctionTypes = !0), n.implicitProjectConfiguration.module && (i.module = n.implicitProjectConfiguration.module), n.implicitProjectConfiguration.target && (i.target = n.implicitProjectConfiguration.target), t === u.TypeScript && (i.sourceMap = !0), i
                 }
-                async function h(e, t, n, r) {
-                    const i = a.Uri.joinPath(n, 0 === t ? "tsconfig.json" : "jsconfig.json"),
+                async function h(e, t, n, i) {
+                    const r = a.Uri.joinPath(n, t === u.TypeScript ? "tsconfig.json" : "jsconfig.json"),
                         s = a.window.activeTextEditor?.viewColumn;
                     try {
-                        const e = await a.workspace.openTextDocument(i);
+                        const e = await a.workspace.openTextDocument(r);
                         return a.window.showTextDocument(e, s)
                     } catch {
-                        const n = await a.workspace.openTextDocument(i.with({
+                        const n = await a.workspace.openTextDocument(r.with({
                                 scheme: "untitled"
                             })),
                             o = await a.window.showTextDocument(n, s);
                         return 0 === o.document.getText().length && await o.insertSnippet(function(e, t, n) {
-                            const r = d(e, t, n);
-                            0 === t && delete r.allowImportingTsExtensions;
-                            const i = Object.keys(r).map(e => `"${e}": ${JSON.stringify(r[e])}`);
-                            return new a.SnippetString(`{\n\t"compilerOptions": {\n\t\t${i.join(",\n\t\t")}$0\n\t},\n\t"exclude": [\n\t\t"node_modules",\n\t\t"**/node_modules/*"\n\t]\n}`)
-                        }(e, t, r)), o
+                            const i = p(e, t, n);
+                            t === u.TypeScript && delete i.allowImportingTsExtensions;
+                            const r = Object.keys(i).map(e => `"${e}": ${JSON.stringify(i[e])}`);
+                            return new a.SnippetString(`{\n\t"compilerOptions": {\n\t\t${r.join(",\n\t\t")}$0\n\t},\n\t"exclude": [\n\t\t"node_modules",\n\t\t"**/node_modules/*"\n\t]\n}`)
+                        }(e, t, i)), o
                     }
                 }
-                async function p(e, t, n, r) {
-                    if (!u(r)) {
-                        const e = await a.workspace.openTextDocument(t.toResource(r));
+                async function f(e, t, n, i) {
+                    if (!d(i)) {
+                        const e = await a.workspace.openTextDocument(t.toResource(i));
                         return void a.window.showTextDocument(e, a.window.activeTextEditor?.viewColumn)
                     }
-                    const i = {
-                        title: 0 === e ? a.l10n.t("Configure tsconfig.json") : a.l10n.t("Configure jsconfig.json")
+                    const r = {
+                        title: e === u.TypeScript ? a.l10n.t("Configure tsconfig.json") : a.l10n.t("Configure jsconfig.json")
                     };
-                    await a.window.showInformationMessage(0 === e ? a.l10n.t("File is not part of a TypeScript project. View the [tsconfig.json documentation]({0}) to learn more.", "https://go.microsoft.com/fwlink/?linkid=841896") : a.l10n.t("File is not part of a JavaScript project. View the [jsconfig.json documentation]({0}) to learn more.", "https://go.microsoft.com/fwlink/?linkid=759670"), i) !== i || h(t.apiVersion, e, n, t.configuration)
-                }
+                    await a.window.showInformationMessage(e === u.TypeScript ? a.l10n.t("File is not part of a TypeScript project. View the [tsconfig.json documentation]({0}) to learn more.", "https://go.microsoft.com/fwlink/?linkid=841896") : a.l10n.t("File is not part of a JavaScript project. View the [jsconfig.json documentation]({0}) to learn more.", "https://go.microsoft.com/fwlink/?linkid=759670"), r) !== r || h(t.apiVersion, e, n, t.configuration)
+                }! function(e) {
+                    e[e.TypeScript = 0] = "TypeScript", e[e.JavaScript = 1] = "JavaScript"
+                }(u || (t.ProjectType = u = {}))
             },
             2361: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4175,17 +4194,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -4198,8 +4217,8 @@
                     l = n(4760),
                     u = n(2928),
                     d = n(8487),
-                    h = o(n(1788)),
-                    p = o(n(2144)),
+                    p = o(n(1788)),
+                    h = o(n(2144)),
                     f = n(3489);
                 class g {
                     constructor(e, t) {
@@ -4212,13 +4231,13 @@
                             const e = this.getDocument();
                             if (n = e ? await this.toOpenedFiledPath(e) : void 0, !n && this.client.apiVersion.lt(u.API.v390)) return []
                         }
-                        const r = {
+                        const i = {
                                 file: n,
                                 searchValue: e,
                                 maxResultCount: 256
                             },
-                            i = await this.client.execute("navto", r, t);
-                        return "response" === i.type && i.body ? (0, f.coalesce)(i.body.map(e => this.toSymbolInformation(e))) : []
+                            r = await this.client.execute("navto", i, t);
+                        return "response" === r.type && r.body ? (0, f.coalesce)(r.body.map(e => this.toSymbolInformation(e))) : []
                     }
                     get searchAllOpenProjects() {
                         return this.client.apiVersion.gte(u.API.v390) && "allOpenProjects" === a.workspace.getConfiguration("typescript").get("workspaceSymbols.scope", "allOpenProjects")
@@ -4238,33 +4257,33 @@
                         const t = this.client.toResource(e.file);
                         if (c.isOfScheme(t, c.chatCodeBlock)) return;
                         const n = g.getLabel(e),
-                            r = new a.SymbolInformation(n, function(e) {
+                            i = new a.SymbolInformation(n, function(e) {
                                 switch (e.kind) {
-                                    case h.Kind.method:
+                                    case p.Kind.method:
                                         return a.SymbolKind.Method;
-                                    case h.Kind.enum:
+                                    case p.Kind.enum:
                                         return a.SymbolKind.Enum;
-                                    case h.Kind.enumMember:
+                                    case p.Kind.enumMember:
                                         return a.SymbolKind.EnumMember;
-                                    case h.Kind.function:
+                                    case p.Kind.function:
                                         return a.SymbolKind.Function;
-                                    case h.Kind.class:
+                                    case p.Kind.class:
                                         return a.SymbolKind.Class;
-                                    case h.Kind.interface:
+                                    case p.Kind.interface:
                                         return a.SymbolKind.Interface;
-                                    case h.Kind.type:
+                                    case p.Kind.type:
                                         return a.SymbolKind.Class;
-                                    case h.Kind.memberVariable:
-                                    case h.Kind.memberGetAccessor:
-                                    case h.Kind.memberSetAccessor:
+                                    case p.Kind.memberVariable:
+                                    case p.Kind.memberGetAccessor:
+                                    case p.Kind.memberSetAccessor:
                                         return a.SymbolKind.Field;
-                                    case h.Kind.variable:
+                                    case p.Kind.variable:
                                     default:
                                         return a.SymbolKind.Variable
                                 }
-                            }(e), e.containerName || "", p.Location.fromTextSpan(t, e)),
-                            i = e.kindModifiers ? (0, d.parseKindModifier)(e.kindModifiers) : void 0;
-                        return i?.has(h.KindModifiers.deprecated) && (r.tags = [a.SymbolTag.Deprecated]), r
+                            }(e), e.containerName || "", h.Location.fromTextSpan(t, e)),
+                            r = e.kindModifiers ? (0, d.parseKindModifier)(e.kindModifiers) : void 0;
+                        return r?.has(p.KindModifiers.deprecated) && (i.tags = [a.SymbolTag.Deprecated]), i
                     }
                     static getLabel(e) {
                         const t = e.name;
@@ -4281,17 +4300,17 @@
             },
             2374: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4301,17 +4320,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     }),
                     a = this && this.__importDefault || function(e) {
@@ -4321,47 +4340,47 @@
                     };
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.createLazyClientHost = function(e, t, n, r) {
-                    return new p.Lazy(() => {
-                        const i = new l.default(h.standardLanguageDescriptions, e, t, n, r);
-                        return e.subscriptions.push(i), i
+                }), t.createLazyClientHost = function(e, t, n, i) {
+                    return new h.Lazy(() => {
+                        const r = new l.default(p.standardLanguageDescriptions, e, t, n, i);
+                        return e.subscriptions.push(r), r
                     })
-                }, t.lazilyActivateClient = function(e, t, n, r = () => Promise.resolve()) {
-                    const i = [],
-                        s = [...h.standardLanguageDescriptions.map(e => e.languageIds), ...t.plugins.map(e => e.languages)].flat();
+                }, t.lazilyActivateClient = function(e, t, n, i = () => Promise.resolve()) {
+                    const r = [],
+                        s = [...p.standardLanguageDescriptions.map(e => e.languageIds), ...t.plugins.map(e => e.languages)].flat();
                     let o = !1;
                     const a = t => !(o || ! function(e, t) {
-                        return (e.indexOf(t.languageId) >= 0 || (0, h.isJsConfigOrTsConfigFileName)(t.fileName)) && !d.disabledSchemes.has(t.uri.scheme)
-                    }(s, t) || (o = !0, r().then(() => {
-                        e.value, i.push(new u.default(n))
+                        return (e.indexOf(t.languageId) >= 0 || (0, p.isJsConfigOrTsConfigFileName)(t.fileName)) && !d.disabledSchemes.has(t.uri.scheme)
+                    }(s, t) || (o = !0, i().then(() => {
+                        e.value, r.push(new u.default(n))
                     }), 0));
                     if (!c.workspace.textDocuments.some(a)) {
                         const e = c.workspace.onDidOpenTextDocument(t => {
                             a(t) && e.dispose()
-                        }, void 0, i)
+                        }, void 0, r)
                     }
-                    return c.Disposable.from(...i)
+                    return c.Disposable.from(...r)
                 };
                 const c = o(n(1398)),
                     l = a(n(9698)),
                     u = a(n(800)),
                     d = o(n(746)),
-                    h = n(4760),
-                    p = n(6489)
+                    p = n(4760),
+                    h = n(6489)
             },
             2435: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4371,25 +4390,25 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__decorate || function(e, t, n, r) {
-                        var i, s = arguments.length,
-                            o = s < 3 ? t : null === r ? r = Object.getOwnPropertyDescriptor(t, n) : r;
-                        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) o = Reflect.decorate(e, t, n, r);
+                    o = this && this.__decorate || function(e, t, n, i) {
+                        var r, s = arguments.length,
+                            o = s < 3 ? t : null === i ? i = Object.getOwnPropertyDescriptor(t, n) : i;
+                        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) o = Reflect.decorate(e, t, n, i);
                         else
-                            for (var a = e.length - 1; a >= 0; a--)(i = e[a]) && (o = (s < 3 ? i(o) : s > 3 ? i(t, n, o) : i(t, n)) || o);
+                            for (var a = e.length - 1; a >= 0; a--)(r = e[a]) && (o = (s < 3 ? r(o) : s > 3 ? r(t, n, o) : r(t, n)) || o);
                         return s > 3 && o && Object.defineProperty(t, n, o), o
                     },
-                    a = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    a = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -4420,17 +4439,17 @@
             },
             2447: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4440,17 +4459,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -4478,12 +4497,12 @@
                         n ? await a.window.withProgress({
                             location: a.ProgressLocation.Window,
                             title: a.l10n.t("Finding file references")
-                        }, async (t, r) => {
-                            const i = await this.client.execute("fileReferences", {
+                        }, async (t, i) => {
+                            const r = await this.client.execute("fileReferences", {
                                 file: n
-                            }, r);
-                            if ("response" !== i.type || !i.body) return;
-                            const s = i.body.refs.map(e => u.Location.fromTextSpan(this.client.toResource(e.file), e)),
+                            }, i);
+                            if ("response" !== r.type || !r.body) return;
+                            const s = r.body.refs.map(e => u.Location.fromTextSpan(this.client.toResource(e.file), e)),
                                 o = a.workspace.getConfiguration("references"),
                                 c = o.inspect("preferredLocation");
                             await o.update("preferredLocation", "view");
@@ -4498,14 +4517,14 @@
                 d.context = "tsSupportsFileReferences", d.minVersion = l.API.v420
             },
             2525: (e, t, n) => {
-                const r = n(7638),
-                    i = n(560);
+                const i = n(7638),
+                    r = n(560);
                 e.exports = (e, t, n) => {
                     const s = [];
                     let o = null,
                         a = null;
-                    const c = e.sort((e, t) => i(e, t, n));
-                    for (const e of c) r(e, t, n) ? (a = e, o || (o = e)) : (a && s.push([o, a]), a = null, o = null);
+                    const c = e.sort((e, t) => r(e, t, n));
+                    for (const e of c) i(e, t, n) ? (a = e, o || (o = e)) : (a && s.push([o, a]), a = null, o = null);
                     o && s.push([o, null]);
                     const l = [];
                     for (const [e, t] of s) e === t ? l.push(e) : t || e !== c[0] ? t ? e === c[0] ? l.push(`<=${t}`) : l.push(`${e} - ${t}`) : l.push(`>=${e}`) : l.push("*");
@@ -4520,17 +4539,17 @@
             },
             2634: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4540,25 +4559,25 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.register = function(e, t) {
-                    return (0, u.conditionalRegistration)([(0, u.requireSomeCapability)(t, l.ClientCapability.EnhancedSyntax, l.ClientCapability.Semantic)], () => a.languages.registerSignatureHelpProvider(e.syntax, new h(t), {
-                        triggerCharacters: h.triggerCharacters,
-                        retriggerCharacters: h.retriggerCharacters
+                    return (0, u.conditionalRegistration)([(0, u.requireSomeCapability)(t, l.ClientCapability.EnhancedSyntax, l.ClientCapability.Semantic)], () => a.languages.registerSignatureHelpProvider(e.syntax, new p(t), {
+                        triggerCharacters: p.triggerCharacters,
+                        retriggerCharacters: p.retriggerCharacters
                     }))
                 };
                 const a = o(n(1398)),
@@ -4566,27 +4585,27 @@
                     l = n(7371),
                     u = n(6362),
                     d = o(n(5365));
-                class h {
+                class p {
                     constructor(e) {
                         this.client = e
                     }
-                    async provideSignatureHelp(e, t, n, r) {
-                        const i = this.client.toOpenTsFilePath(e);
-                        if (!i) return;
+                    async provideSignatureHelp(e, t, n, i) {
+                        const r = this.client.toOpenTsFilePath(e);
+                        if (!r) return;
                         const s = {
-                                ...c.Position.toFileLocationRequestArgs(i, t),
-                                triggerReason: p(r)
+                                ...c.Position.toFileLocationRequestArgs(r, t),
+                                triggerReason: h(i)
                             },
                             o = await this.client.interruptGetErr(() => this.client.execute("signatureHelp", s, n));
                         if ("response" !== o.type || !o.body) return;
                         const l = o.body,
                             u = new a.SignatureHelp;
-                        return u.signatures = l.items.map(t => this.convertSignature(t, e.uri)), u.activeSignature = this.getActiveSignature(r, l, u.signatures), u.activeParameter = this.getActiveParameter(l), u
+                        return u.signatures = l.items.map(t => this.convertSignature(t, e.uri)), u.activeSignature = this.getActiveSignature(i, l, u.signatures), u.activeParameter = this.getActiveParameter(l), u
                     }
                     getActiveSignature(e, t, n) {
-                        const r = e.activeSignatureHelp?.signatures[e.activeSignatureHelp.activeSignature];
-                        if (r && e.isRetrigger) {
-                            const e = n.findIndex(e => e.label === r?.label);
+                        const i = e.activeSignatureHelp?.signatures[e.activeSignatureHelp.activeSignature];
+                        if (i && e.isRetrigger) {
+                            const e = n.findIndex(e => e.label === i?.label);
                             if (e >= 0) return e
                         }
                         return t.selectedItemIndex
@@ -4597,18 +4616,18 @@
                     }
                     convertSignature(e, t) {
                         const n = new a.SignatureInformation(d.asPlainTextWithLinks(e.prefixDisplayParts, this.client), d.documentationToMarkdown(e.documentation, e.tags.filter(e => "param" !== e.name), this.client, t));
-                        let r = n.label.length;
-                        const i = d.asPlainTextWithLinks(e.separatorDisplayParts, this.client);
+                        let i = n.label.length;
+                        const r = d.asPlainTextWithLinks(e.separatorDisplayParts, this.client);
                         for (let s = 0; s < e.parameters.length; ++s) {
                             const o = e.parameters[s],
                                 c = d.asPlainTextWithLinks(o.displayParts, this.client);
-                            n.parameters.push(new a.ParameterInformation([r, r + c.length], d.documentationToMarkdown(o.documentation, [], this.client, t))), r += c.length, n.label += c, s !== e.parameters.length - 1 && (n.label += i, r += i.length)
+                            n.parameters.push(new a.ParameterInformation([i, i + c.length], d.documentationToMarkdown(o.documentation, [], this.client, t))), i += c.length, n.label += c, s !== e.parameters.length - 1 && (n.label += r, i += r.length)
                         }
                         return n.label += d.asPlainTextWithLinks(e.suffixDisplayParts, this.client), n
                     }
                 }
 
-                function p(e) {
+                function h(e) {
                     switch (e.triggerKind) {
                         case a.SignatureHelpTriggerKind.TriggerCharacter:
                             return e.triggerCharacter ? e.isRetrigger ? {
@@ -4633,21 +4652,21 @@
                             }
                     }
                 }
-                h.triggerCharacters = ["(", ",", "<"], h.retriggerCharacters = [")"]
+                p.triggerCharacters = ["(", ",", "<"], p.retriggerCharacters = [")"]
             },
             2646: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4657,32 +4676,32 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.TypeScriptReferencesCodeLensProvider = void 0, t.register = function(e, t, n, r) {
-                    return (0, h.conditionalRegistration)([(0, h.requireGlobalConfiguration)(t.id, "referencesCodeLens.enabled"), (0, h.requireSomeCapability)(n, d.ClientCapability.Semantic)], () => a.languages.registerCodeLensProvider(e.semantic, new f(n, r, t)))
+                }), t.TypeScriptReferencesCodeLensProvider = void 0, t.register = function(e, t, n, i) {
+                    return (0, p.conditionalRegistration)([(0, p.requireGlobalConfiguration)(t.id, "referencesCodeLens.enabled"), (0, p.requireSomeCapability)(n, d.ClientCapability.Semantic)], () => a.languages.registerCodeLensProvider(e.semantic, new f(n, i, t)))
                 };
                 const a = o(n(1398)),
                     c = o(n(1788)),
                     l = n(185),
                     u = o(n(2144)),
                     d = n(7371),
-                    h = n(6362),
-                    p = n(6156);
-                class f extends p.TypeScriptBaseCodeLensProvider {
+                    p = n(6362),
+                    h = n(6156);
+                class f extends h.TypeScriptBaseCodeLensProvider {
                     constructor(e, t, n) {
                         super(e, t), this._cachedResponse = t, this.language = n, this._register(a.workspace.onDidChangeConfiguration(e => {
                             e.affectsConfiguration(`${n.id}.referencesCodeLens.showOnAllFunctions`) && this.changeEmitter.fire()
@@ -4690,39 +4709,39 @@
                     }
                     async resolveCodeLens(e, t) {
                         const n = u.Position.toFileLocationRequestArgs(e.file, e.range.start),
-                            r = await this.client.execute("references", n, t, {
+                            i = await this.client.execute("references", n, t, {
                                 lowPriority: !0,
                                 executionTarget: l.ExecutionTarget.Semantic,
                                 cancelOnResourceChange: e.document
                             });
-                        if ("response" !== r.type || !r.body) return e.command = "cancelled" === r.type ? p.TypeScriptBaseCodeLensProvider.cancelledCommand : p.TypeScriptBaseCodeLensProvider.errorCommand, e;
-                        const i = r.body.refs.filter(e => !e.isDefinition).map(e => u.Location.fromTextSpan(this.client.toResource(e.file), e));
+                        if ("response" !== i.type || !i.body) return e.command = "cancelled" === i.type ? h.TypeScriptBaseCodeLensProvider.cancelledCommand : h.TypeScriptBaseCodeLensProvider.errorCommand, e;
+                        const r = i.body.refs.filter(e => !e.isDefinition).map(e => u.Location.fromTextSpan(this.client.toResource(e.file), e));
                         return e.command = {
-                            title: this.getCodeLensLabel(i),
-                            command: i.length ? "editor.action.showReferences" : "",
-                            arguments: [e.document, e.range.start, i]
+                            title: this.getCodeLensLabel(r),
+                            command: r.length ? "editor.action.showReferences" : "",
+                            arguments: [e.document, e.range.start, r]
                         }, e
                     }
                     getCodeLensLabel(e) {
                         return 1 === e.length ? a.l10n.t("1 reference") : a.l10n.t("{0} references", e.length)
                     }
                     extractSymbol(e, t, n) {
-                        if (n?.kind === c.Kind.enum) return (0, p.getSymbolRange)(e, t);
+                        if (n?.kind === c.Kind.enum) return (0, h.getSymbolRange)(e, t);
                         switch (t.kind) {
                             case c.Kind.function:
-                                if (a.workspace.getConfiguration(this.language.id).get("referencesCodeLens.showOnAllFunctions") && t.nameSpan) return (0, p.getSymbolRange)(e, t);
+                                if (a.workspace.getConfiguration(this.language.id).get("referencesCodeLens.showOnAllFunctions") && t.nameSpan) return (0, h.getSymbolRange)(e, t);
                             case c.Kind.const:
                             case c.Kind.let:
                             case c.Kind.variable:
-                                if (/\bexport\b/.test(t.kindModifiers)) return (0, p.getSymbolRange)(e, t);
+                                if (/\bexport\b/.test(t.kindModifiers)) return (0, h.getSymbolRange)(e, t);
                                 break;
                             case c.Kind.class:
                                 if ("<class>" === t.text) break;
-                                return (0, p.getSymbolRange)(e, t);
+                                return (0, h.getSymbolRange)(e, t);
                             case c.Kind.interface:
                             case c.Kind.type:
                             case c.Kind.enum:
-                                return (0, p.getSymbolRange)(e, t);
+                                return (0, h.getSymbolRange)(e, t);
                             case c.Kind.method:
                             case c.Kind.memberGetAccessor:
                             case c.Kind.memberSetAccessor:
@@ -4733,7 +4752,7 @@
                                     case c.Kind.class:
                                     case c.Kind.interface:
                                     case c.Kind.type:
-                                        return (0, p.getSymbolRange)(e, t)
+                                        return (0, h.getSymbolRange)(e, t)
                                 }
                         }
                     }
@@ -4742,17 +4761,17 @@
             },
             2693: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4762,17 +4781,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -4822,16 +4841,16 @@
             },
             2792: e => {
                 e.exports = function(e, t, n) {
-                    let r;
-                    "function" == typeof t && (n = t, t = {}), Array.isArray(e) || (r = Object.keys(e));
-                    const i = r ? r.length : e.length;
-                    let s = i;
-                    const o = r ? {} : [];
+                    let i;
+                    "function" == typeof t && (n = t, t = {}), Array.isArray(e) || (i = Object.keys(e));
+                    const r = i ? i.length : e.length;
+                    let s = r;
+                    const o = i ? {} : [];
 
-                    function a(e, r, a) {
-                        o[e] = a, (0 === --s || r && !t.graceful) && (t.graceful && r && i > 1 && (r = null), n && n(r, o), n = null)
+                    function a(e, i, a) {
+                        o[e] = a, (0 === --s || i && !t.graceful) && (t.graceful && i && r > 1 && (i = null), n && n(i, o), n = null)
                     }
-                    r ? r.forEach(function(t) {
+                    i ? i.forEach(function(t) {
                         e[t](function(e, n) {
                             a(t, e, n)
                         })
@@ -4843,44 +4862,44 @@
                 }
             },
             2861: (e, t, n) => {
-                var r = n(181),
-                    i = r.Buffer;
+                var i = n(181),
+                    r = i.Buffer;
 
                 function s(e, t) {
                     for (var n in e) t[n] = e[n]
                 }
 
                 function o(e, t, n) {
-                    return i(e, t, n)
+                    return r(e, t, n)
                 }
-                i.from && i.alloc && i.allocUnsafe && i.allocUnsafeSlow ? e.exports = r : (s(r, t), t.Buffer = o), o.prototype = Object.create(i.prototype), s(i, o), o.from = function(e, t, n) {
+                r.from && r.alloc && r.allocUnsafe && r.allocUnsafeSlow ? e.exports = i : (s(i, t), t.Buffer = o), o.prototype = Object.create(r.prototype), s(r, o), o.from = function(e, t, n) {
                     if ("number" == typeof e) throw new TypeError("Argument must not be a number");
-                    return i(e, t, n)
+                    return r(e, t, n)
                 }, o.alloc = function(e, t, n) {
                     if ("number" != typeof e) throw new TypeError("Argument must be a number");
-                    var r = i(e);
-                    return void 0 !== t ? "string" == typeof n ? r.fill(t, n) : r.fill(t) : r.fill(0), r
+                    var i = r(e);
+                    return void 0 !== t ? "string" == typeof n ? i.fill(t, n) : i.fill(t) : i.fill(0), i
                 }, o.allocUnsafe = function(e) {
                     if ("number" != typeof e) throw new TypeError("Argument must be a number");
-                    return i(e)
+                    return r(e)
                 }, o.allocUnsafeSlow = function(e) {
                     if ("number" != typeof e) throw new TypeError("Argument must be a number");
-                    return r.SlowBuffer(e)
+                    return i.SlowBuffer(e)
                 }
             },
             2928: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4890,17 +4909,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -4937,15 +4956,15 @@
                 t.API = l, l.defaultVersion = l.fromSimpleString("1.0.0"), l.v380 = l.fromSimpleString("3.8.0"), l.v390 = l.fromSimpleString("3.9.0"), l.v400 = l.fromSimpleString("4.0.0"), l.v401 = l.fromSimpleString("4.0.1"), l.v420 = l.fromSimpleString("4.2.0"), l.v430 = l.fromSimpleString("4.3.0"), l.v440 = l.fromSimpleString("4.4.0"), l.v460 = l.fromSimpleString("4.6.0"), l.v470 = l.fromSimpleString("4.7.0"), l.v490 = l.fromSimpleString("4.9.0"), l.v500 = l.fromSimpleString("5.0.0"), l.v510 = l.fromSimpleString("5.1.0"), l.v520 = l.fromSimpleString("5.2.0"), l.v544 = l.fromSimpleString("5.4.4"), l.v540 = l.fromSimpleString("5.4.0"), l.v560 = l.fromSimpleString("5.6.0"), l.v570 = l.fromSimpleString("5.7.0")
             },
             2938: (e, t, n) => {
-                const r = n(3908);
-                e.exports = (e, t) => new r(e, t).major
+                const i = n(3908);
+                e.exports = (e, t) => new i(e, t).major
             },
             3007: (e, t, n) => {
-                const r = n(3908);
-                e.exports = (e, t, n, i, s) => {
-                    "string" == typeof n && (s = i, i = n, n = void 0);
+                const i = n(3908);
+                e.exports = (e, t, n, r, s) => {
+                    "string" == typeof n && (s = r, r = n, n = void 0);
                     try {
-                        return new r(e instanceof r ? e.version : e, n).inc(t, i, s).version
+                        return new i(e instanceof i ? e.version : e, n).inc(t, r, s).version
                     } catch (e) {
                         return null
                     }
@@ -4953,17 +4972,17 @@
             },
             3214: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -4973,17 +4992,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -5007,17 +5026,17 @@
             },
             3256: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -5027,17 +5046,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -5052,17 +5071,17 @@
             },
             3289: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -5072,17 +5091,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     }),
                     a = this && this.__importDefault || function(e) {
@@ -5093,25 +5112,25 @@
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.register = function(e, t) {
-                    return (0, p.conditionalRegistration)([(0, p.requireSomeCapability)(t, d.ClientCapability.EnhancedSyntax, d.ClientCapability.Semantic)], () => c.languages.registerDefinitionProvider(e.syntax, new f(t)))
+                    return (0, h.conditionalRegistration)([(0, h.requireSomeCapability)(t, d.ClientCapability.EnhancedSyntax, d.ClientCapability.Semantic)], () => c.languages.registerDefinitionProvider(e.syntax, new f(t)))
                 };
                 const c = o(n(1398)),
                     l = n(2928),
                     u = o(n(2144)),
                     d = n(7371),
-                    h = a(n(2174)),
-                    p = n(6362);
-                class f extends h.default {
+                    p = a(n(2174)),
+                    h = n(6362);
+                class f extends p.default {
                     async provideDefinition(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return;
-                        const i = u.Position.toFileLocationRequestArgs(r, t),
-                            s = await this.client.execute("definitionAndBoundSpan", i, n);
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return;
+                        const r = u.Position.toFileLocationRequestArgs(i, t),
+                            s = await this.client.execute("definitionAndBoundSpan", r, n);
                         if ("response" !== s.type || !s.body) return;
                         const o = s.body.textSpan ? u.Range.fromTextSpan(s.body.textSpan) : void 0;
                         let a = s.body.definitions;
                         if (c.workspace.getConfiguration(e.languageId).get("preferGoToSourceDefinition", !1) && this.client.apiVersion.gte(l.API.v470)) {
-                            const e = await this.client.execute("findSourceDefinition", i, n);
+                            const e = await this.client.execute("findSourceDefinition", r, n);
                             "response" === e.type && e.body?.length && (a = e.body)
                         }
                         return a.map(e => {
@@ -5136,10 +5155,10 @@
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.registerBaseCommands = function(e, t, n, f) {
-                    e.register(new l.ReloadTypeScriptProjectsCommand(t)), e.register(new l.ReloadJavaScriptProjectsCommand(t)), e.register(new h.SelectTypeScriptVersionCommand(t)), e.register(new c.OpenTsServerLogCommand(t)), e.register(new u.RestartTsServerCommand(t)), e.register(new d.ReselectNodeVersionCommand(t)), e.register(new s.TypeScriptGoToProjectConfigCommand(f, t)), e.register(new s.JavaScriptGoToProjectConfigCommand(f, t)), e.register(new r.ConfigurePluginCommand(n)), e.register(new o.LearnMoreAboutRefactoringsCommand), e.register(new p.TSServerRequestCommand(t)), e.register(new a.OpenJsDocLinkCommand), e.register(new i.EnableTsgoCommand), e.register(new i.DisableTsgoCommand)
+                    e.register(new l.ReloadTypeScriptProjectsCommand(t)), e.register(new l.ReloadJavaScriptProjectsCommand(t)), e.register(new p.SelectTypeScriptVersionCommand(t)), e.register(new c.OpenTsServerLogCommand(t)), e.register(new u.RestartTsServerCommand(t)), e.register(new d.ReselectNodeVersionCommand(t)), e.register(new s.TypeScriptGoToProjectConfigCommand(f, t)), e.register(new s.JavaScriptGoToProjectConfigCommand(f, t)), e.register(new i.ConfigurePluginCommand(n)), e.register(new o.LearnMoreAboutRefactoringsCommand), e.register(new h.TSServerRequestCommand(t)), e.register(new a.OpenJsDocLinkCommand), e.register(new r.EnableTsgoCommand), e.register(new r.DisableTsgoCommand)
                 };
-                const r = n(3351),
-                    i = n(7284),
+                const i = n(3351),
+                    r = n(7284),
                     s = n(1668),
                     o = n(8101),
                     a = n(6431),
@@ -5147,22 +5166,22 @@
                     l = n(5318),
                     u = n(2205),
                     d = n(7239),
-                    h = n(1813),
-                    p = n(3918)
+                    p = n(1813),
+                    h = n(3918)
             },
             3347: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -5172,23 +5191,23 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.register = function(e, t, n, r) {
-                    return (0, h.conditionalRegistration)([(0, h.requireSomeCapability)(n, u.ClientCapability.Semantic), (0, h.requireMinVersion)(n, c.API.v570), (0, h.requireGlobalConfiguration)(t.id, m)], () => a.languages.registerDocumentPasteEditProvider(e.semantic, new v(t.id, n, r), {
+                }), t.register = function(e, t, n, i) {
+                    return (0, p.conditionalRegistration)([(0, p.requireSomeCapability)(n, u.ClientCapability.Semantic), (0, p.requireMinVersion)(n, c.API.v570), (0, p.requireGlobalConfiguration)(t.id, m)], () => a.languages.registerDocumentPasteEditProvider(e.semantic, new v(t.id, n, i), {
                         providedPasteEditKinds: [v.kind],
                         copyMimeTypes: [v.metadataMimeType],
                         pasteMimeTypes: [v.metadataMimeType]
@@ -5199,15 +5218,15 @@
                     l = o(n(2144)),
                     u = n(7371),
                     d = n(2287),
-                    h = n(6362);
-                class p {
+                    p = n(6362);
+                class h {
                     static parse(e) {
                         try {
                             const t = JSON.parse(e),
                                 n = a.Uri.parse(t.resource),
-                                r = t.ranges.map(e => new a.Range(e.start, e.end)),
-                                i = t.copyOperation ? Promise.resolve(t.copyOperation) : void 0;
-                            return new p(n, r, i)
+                                i = t.ranges.map(e => new a.Range(e.start, e.end)),
+                                r = t.copyOperation ? Promise.resolve(t.copyOperation) : void 0;
+                            return new h(n, i, r)
                         } catch (e) {
                             return
                         }
@@ -5220,9 +5239,9 @@
                     static tryCreateFromResponse(e, t) {
                         if ("response" !== t.type || !t.body?.edits.length) return;
                         const n = new f,
-                            r = new a.WorkspaceEdit;
-                        for (const n of t.body.edits) r.set(e.toResource(n.fileName), n.textChanges.map(l.TextEdit.fromCodeEdit));
-                        return n.additionalEdit = r, n
+                            i = new a.WorkspaceEdit;
+                        for (const n of t.body.edits) i.set(e.toResource(n.fileName), n.textChanges.map(l.TextEdit.fromCodeEdit));
+                        return n.additionalEdit = i, n
                     }
                     constructor() {
                         super("", a.l10n.t("Paste with imports"), v.kind), this.yieldTo = [a.DocumentDropOrPasteEditKind.Text.append("plain")]
@@ -5238,29 +5257,29 @@
                     constructor(e, t, n) {
                         this._modeId = e, this._client = t, this.fileConfigurationManager = n
                     }
-                    async prepareDocumentPaste(e, t, n, r) {
+                    async prepareDocumentPaste(e, t, n, i) {
                         if (!this.isEnabled(e)) return;
-                        const i = this._client.toOpenTsFilePath(e);
-                        if (!i) return;
+                        const r = this._client.toOpenTsFilePath(e);
+                        if (!r) return;
                         const s = this._client.interruptGetErr(() => this._client.execute("preparePasteEdits", {
-                                file: i,
+                                file: r,
                                 copiedTextSpan: t.map(l.Range.toTextSpan)
-                            }, r)),
+                            }, i)),
                             o = await (0, d.raceTimeout)(s, 200);
-                        if (!r.isCancellationRequested)
+                        if (!i.isCancellationRequested)
                             if (o) {
                                 if ("response" !== o.type || !o.body) return;
-                                n.set(v.metadataMimeType, new a.DataTransferItem(new p(e.uri, t, void 0)))
-                            } else n.set(v.metadataMimeType, new a.DataTransferItem(new p(e.uri, t, s)))
+                                n.set(v.metadataMimeType, new a.DataTransferItem(new h(e.uri, t, void 0)))
+                            } else n.set(v.metadataMimeType, new a.DataTransferItem(new h(e.uri, t, s)))
                     }
-                    async provideDocumentPasteEdits(e, t, n, r, i) {
+                    async provideDocumentPasteEdits(e, t, n, i, r) {
                         if (!this.isEnabled(e)) return;
                         const s = this._client.toOpenTsFilePath(e);
                         if (!s) return;
                         const o = await (n.get("text/plain")?.asString());
-                        if (!o || i.isCancellationRequested) return;
-                        const c = await this.extractMetadata(n, i);
-                        if (i.isCancellationRequested) return;
+                        if (!o || r.isCancellationRequested) return;
+                        const c = await this.extractMetadata(n, r);
+                        if (r.isCancellationRequested) return;
                         let u;
                         if (c) {
                             const e = c.ranges.map(l.Range.toTextSpan),
@@ -5271,26 +5290,26 @@
                             })
                         }
                         if (u?.file === s) return;
-                        const h = new a.CancellationTokenSource;
-                        i.onCancellationRequested(() => h.cancel()), c?.copyOperation?.then(e => {
-                            "response" === e.type && e.body || h.cancel()
+                        const p = new a.CancellationTokenSource;
+                        r.onCancellationRequested(() => p.cancel()), c?.copyOperation?.then(e => {
+                            "response" === e.type && e.body || p.cancel()
                         }, e => {});
                         try {
-                            const n = this._client.interruptGetErr(() => (this.fileConfigurationManager.ensureConfigurationForDocument(e, i), this._client.execute("getPasteEdits", {
+                            const n = this._client.interruptGetErr(() => (this.fileConfigurationManager.ensureConfigurationForDocument(e, r), this._client.execute("getPasteEdits", {
                                     file: s,
                                     pastedText: [o],
                                     pasteLocations: t.map(l.Range.toTextSpan),
                                     copiedFrom: u
-                                }, h.token))),
-                                r = 200,
-                                a = await (0, d.raceTimeout)(n, r);
+                                }, p.token))),
+                                i = 200,
+                                a = await (0, d.raceTimeout)(n, i);
                             if (a) {
                                 const e = f.tryCreateFromResponse(this._client, a);
                                 return e ? [e] : void 0
                             }
                             return [new g(o, n)]
                         } finally {
-                            h.dispose()
+                            p.dispose()
                         }
                     }
                     async resolveDocumentPasteEdit(e, t) {
@@ -5300,7 +5319,7 @@
                     }
                     async extractMetadata(e, t) {
                         const n = await (e.get(v.metadataMimeType)?.value);
-                        if (!t.isCancellationRequested) return n instanceof p ? n : "string" == typeof n ? p.parse(n) : void 0
+                        if (!t.isCancellationRequested) return n instanceof h ? n : "string" == typeof n ? h.parse(n) : void 0
                     }
                     isEnabled(e) {
                         return a.workspace.getConfiguration(this._modeId, e.uri).get(m, !0)
@@ -5323,17 +5342,17 @@
             },
             3390: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -5343,17 +5362,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -5369,24 +5388,24 @@
                         this.client = e
                     }
                     async provideFoldingRanges(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return;
-                        const i = {
-                                file: r
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return;
+                        const r = {
+                                file: i
                             },
-                            s = await this.client.execute("getOutliningSpans", i, n);
+                            s = await this.client.execute("getOutliningSpans", r, n);
                         return "response" === s.type && s.body ? (0, l.coalesce)(s.body.map(t => this.convertOutliningSpan(t, e))) : void 0
                     }
                     convertOutliningSpan(e, t) {
                         const n = c.Range.fromTextSpan(e.textSpan),
-                            r = u.getFoldingRangeKind(e);
+                            i = u.getFoldingRangeKind(e);
                         if ("comment" === e.kind) {
                             const e = t.lineAt(n.start.line).text;
                             if (/\/\/\s*#endregion/gi.test(e)) return
                         }
-                        const i = n.start.line,
+                        const r = n.start.line,
                             s = this.adjustFoldingEnd(n, t);
-                        return new a.FoldingRange(i, s, r)
+                        return new a.FoldingRange(r, s, i)
                     }
                     adjustFoldingEnd(e, t) {
                         if (e.end.character > 0) {
@@ -5412,17 +5431,17 @@
             },
             3433: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -5432,17 +5451,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -5474,24 +5493,24 @@
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.empty = void 0, t.equals = function(e, t, n = (e, t) => e === t) {
-                    return e === t || e.length === t.length && e.every((e, r) => n(e, t[r]))
+                    return e === t || e.length === t.length && e.every((e, i) => n(e, t[i]))
                 }, t.coalesce = function(e) {
                     return e.filter(e => !!e)
                 }, t.empty = Object.freeze([])
             },
             3606: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -5501,17 +5520,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -5522,21 +5541,22 @@
                     l = o(n(6928)),
                     u = o(n(1398)),
                     d = n(5602),
-                    h = n(2928),
-                    p = 8192,
-                    f = Buffer.byteLength("Content-Length: ", "utf8"),
-                    g = Buffer.from(" ", "utf8")[0],
-                    m = Buffer.from("\r", "utf8")[0],
-                    v = Buffer.from("\n", "utf8")[0];
-                class y {
+                    p = n(2928),
+                    h = n(185),
+                    f = 8192,
+                    g = Buffer.byteLength("Content-Length: ", "utf8"),
+                    m = Buffer.from(" ", "utf8")[0],
+                    v = Buffer.from("\r", "utf8")[0],
+                    y = Buffer.from("\n", "utf8")[0];
+                class b {
                     constructor() {
-                        this.index = 0, this.buffer = Buffer.allocUnsafe(p)
+                        this.index = 0, this.buffer = Buffer.allocUnsafe(f)
                     }
                     append(e) {
                         let t = null;
                         if (t = Buffer.isBuffer(e) ? e : Buffer.from(e, "utf8"), this.buffer.length - this.index >= t.length) t.copy(this.buffer, this.index, 0, t.length);
                         else {
-                            const e = (Math.ceil((this.index + t.length) / p) + 1) * p;
+                            const e = (Math.ceil((this.index + t.length) / f) + 1) * f;
                             0 === this.index ? (this.buffer = Buffer.allocUnsafe(e), t.copy(this.buffer, 0, 0, t.length)) : this.buffer = Buffer.concat([this.buffer.slice(0, this.index), t], e)
                         }
                         this.index += t.length
@@ -5544,26 +5564,26 @@
                     tryReadContentLength() {
                         let e = -1,
                             t = 0;
-                        for (; t < this.index && (this.buffer[t] === g || this.buffer[t] === m || this.buffer[t] === v);) t++;
-                        if (this.index < t + f) return e;
-                        t += f;
+                        for (; t < this.index && (this.buffer[t] === m || this.buffer[t] === v || this.buffer[t] === y);) t++;
+                        if (this.index < t + g) return e;
+                        t += g;
                         const n = t;
-                        for (; t < this.index && this.buffer[t] !== m;) t++;
-                        if (t + 3 >= this.index || this.buffer[t + 1] !== v || this.buffer[t + 2] !== m || this.buffer[t + 3] !== v) return e;
-                        const r = this.buffer.toString("utf8", n, t);
-                        return e = parseInt(r), this.buffer = this.buffer.slice(t + 4), this.index = this.index - (t + 4), e
+                        for (; t < this.index && this.buffer[t] !== v;) t++;
+                        if (t + 3 >= this.index || this.buffer[t + 1] !== y || this.buffer[t + 2] !== v || this.buffer[t + 3] !== y) return e;
+                        const i = this.buffer.toString("utf8", n, t);
+                        return e = parseInt(i), this.buffer = this.buffer.slice(t + 4), this.index = this.index - (t + 4), e
                     }
                     tryReadContent(e) {
                         if (this.index < e) return null;
                         const t = this.buffer.toString("utf8", 0, e);
                         let n = e;
-                        for (; n < this.index && (this.buffer[n] === m || this.buffer[n] === v);) n++;
+                        for (; n < this.index && (this.buffer[n] === v || this.buffer[n] === y);) n++;
                         return this.buffer.copy(this.buffer, 0, n), this.index = this.index - n, t
                     }
                 }
-                class b extends d.Disposable {
+                class w extends d.Disposable {
                     constructor(e) {
-                        super(), this.buffer = new y, this.nextMessageLength = -1, this._onError = this._register(new u.EventEmitter), this.onError = this._onError.event, this._onData = this._register(new u.EventEmitter), this.onData = this._onData.event, e.on("data", e => this.onLengthData(e))
+                        super(), this.buffer = new b, this.nextMessageLength = -1, this._onError = this._register(new u.EventEmitter), this.onError = this._onError.event, this._onData = this._register(new u.EventEmitter), this.onData = this._onData.event, e.on("data", e => this.onLengthData(e))
                     }
                     onLengthData(e) {
                         if (!this.isDisposed) try {
@@ -5581,10 +5601,10 @@
                     }
                 }
 
-                function w() {
+                function _() {
                     return process.env[u.env.remoteName ? "TSS_REMOTE_DEBUG_BRK" : "TSS_DEBUG_BRK"]
                 }
-                class _ extends d.Disposable {
+                class S extends d.Disposable {
                     constructor(e) {
                         super(), this._process = e
                     }
@@ -5607,9 +5627,9 @@
                         return this._process.pid
                     }
                 }
-                class S extends d.Disposable {
+                class P extends d.Disposable {
                     constructor(e) {
-                        super(), this._process = e, this._reader = this._register(new b(this._process.stdout))
+                        super(), this._process = e, this._reader = this._register(new w(this._process.stdout))
                     }
                     write(e) {
                         this._process.stdin.write(JSON.stringify(e) + "\r\n", "utf8")
@@ -5631,51 +5651,51 @@
                     }
                 }
                 t.ElectronServiceProcessFactory = class {
-                    fork(e, t, n, r, i, s, o) {
+                    fork(e, t, n, i, r, s, o) {
                         let d = e.tsServerPath;
-                        c.existsSync(d) || (u.window.showWarningMessage(u.l10n.t("The path {0} doesn't point to a valid tsserver install. Falling back to bundled TypeScript version.", d)), i.reset(), d = i.currentVersion.tsServerPath);
-                        let p = s.currentVersion,
-                            f = !1;
-                        if (!p && r.useBundledNode) {
+                        c.existsSync(d) || (u.window.showWarningMessage(u.l10n.t("The path {0} doesn't point to a valid tsserver install. Falling back to bundled TypeScript version.", d)), r.reset(), d = r.currentVersion.tsServerPath);
+                        let f = s.currentVersion,
+                            g = !1;
+                        if (!f && i.useBundledNode) {
                             const e = u.env.bundledNodePath?.();
-                            e && (p = e, f = !0)
+                            e && (f = e, g = !0)
                         }
-                        const g = function(e, t, n) {
-                            const r = Object.assign({}, e);
-                            return n || (r.ELECTRON_RUN_AS_NODE = "1"), r.NODE_PATH = l.join(t, "..", "..", ".."), r.PATH = r.PATH || process.env.PATH, r
-                        }(process.env, d, !!p);
-                        g.CURSOR_SPAWNED_BY_EXTENSION_ID = "vscode.typescript-language-features", g.CURSOR_SPAWN_CHAIN = "vscode.typescript-language-features";
-                        const m = [...t],
-                            v = function(e, t) {
+                        const m = function(e, t, n) {
+                            const i = Object.assign({}, e);
+                            return n || (i.ELECTRON_RUN_AS_NODE = "1"), i.NODE_PATH = l.join(t, "..", "..", ".."), i.PATH = i.PATH || process.env.PATH, i
+                        }(process.env, d, !!f);
+                        m.CURSOR_SPAWNED_BY_EXTENSION_ID = "vscode.typescript-language-features", m.CURSOR_SPAWN_CHAIN = "vscode.typescript-language-features";
+                        const v = [...t],
+                            y = function(e, t) {
                                 const n = [],
-                                    r = function(e) {
-                                        if ("syntax" === e) return;
-                                        const t = w() || process.env[u.env.remoteName ? "TSS_REMOTE_DEBUG" : "TSS_DEBUG"];
+                                    i = function(e) {
+                                        if (e === h.TsServerProcessKind.Syntax) return;
+                                        const t = _() || process.env[u.env.remoteName ? "TSS_REMOTE_DEBUG" : "TSS_DEBUG"];
                                         if (t) {
                                             const e = parseInt(t);
                                             if (!isNaN(e)) return e
                                         }
                                     }(e);
-                                if (r) {
-                                    const e = w() ? "--inspect-brk" : "--inspect";
-                                    n.push(`${e}=${r}`)
+                                if (i) {
+                                    const e = _() ? "--inspect-brk" : "--inspect";
+                                    n.push(`${e}=${i}`)
                                 }
                                 return t.maxTsServerMemory && n.push(`--max-old-space-size=${t.maxTsServerMemory}`), n
-                            }(n, r),
-                            y = !p && e.apiVersion?.gte(h.API.v460);
-                        y && m.push("--useNodeIpc"), (y || f) && (g.VSCODE_PROCESS_TITLE = `tsserver[${e.displayName}]: ${n}`, v.push("-e", 'process.title = process.env["VSCODE_PROCESS_TITLE"]; require(process.argv[1])'));
-                        const b = p ? a.spawn(p, [...v, d, ...m], {
+                            }(n, i),
+                            b = !f && e.apiVersion?.gte(p.API.v460);
+                        b && v.push("--useNodeIpc"), (b || g) && (m.VSCODE_PROCESS_TITLE = `tsserver[${e.displayName}]: ${n}`, y.push("-e", 'process.title = process.env["VSCODE_PROCESS_TITLE"]; require(process.argv[1])'));
+                        const w = f ? a.spawn(f, [...y, d, ...v], {
                             windowsHide: !0,
                             cwd: void 0,
-                            env: g
-                        }) : a.fork(d, m, {
+                            env: m
+                        }) : a.fork(d, v, {
                             silent: !0,
                             cwd: void 0,
-                            env: g,
-                            execArgv: v,
-                            stdio: y ? ["pipe", "pipe", "pipe", "ipc"] : void 0
+                            env: m,
+                            execArgv: y,
+                            stdio: b ? ["pipe", "pipe", "pipe", "ipc"] : void 0
                         });
-                        return y ? new _(b) : new S(b)
+                        return b ? new S(w) : new P(w)
                     }
                 }
             },
@@ -5700,17 +5720,17 @@
             },
             3680: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -5720,25 +5740,25 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__decorate || function(e, t, n, r) {
-                        var i, s = arguments.length,
-                            o = s < 3 ? t : null === r ? r = Object.getOwnPropertyDescriptor(t, n) : r;
-                        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) o = Reflect.decorate(e, t, n, r);
+                    o = this && this.__decorate || function(e, t, n, i) {
+                        var r, s = arguments.length,
+                            o = s < 3 ? t : null === i ? i = Object.getOwnPropertyDescriptor(t, n) : i;
+                        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) o = Reflect.decorate(e, t, n, i);
                         else
-                            for (var a = e.length - 1; a >= 0; a--)(i = e[a]) && (o = (s < 3 ? i(o) : s > 3 ? i(t, n, o) : i(t, n)) || o);
+                            for (var a = e.length - 1; a >= 0; a--)(r = e[a]) && (o = (s < 3 ? r(o) : s > 3 ? r(t, n, o) : r(t, n)) || o);
                         return s > 3 && o && Object.defineProperty(t, n, o), o
                     },
-                    a = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    a = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -5748,7 +5768,7 @@
                     l = a(n(6928)),
                     u = a(n(1398)),
                     d = n(4267);
-                class h {
+                class p {
                     constructor(e) {
                         this.context = e
                     }
@@ -5769,21 +5789,21 @@
                         }
                     }
                 }
-                t.NodeLogDirectoryProvider = h, o([d.memoize], h.prototype, "logDirectory", null)
+                t.NodeLogDirectoryProvider = p, o([d.memoize], p.prototype, "logDirectory", null)
             },
             3724: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -5793,17 +5813,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -5818,25 +5838,25 @@
                     constructor(e) {
                         this.client = e
                     }
-                    async provideMultiDocumentHighlights(e, t, n, r) {
-                        const i = [e, ...n].map(e => this.client.toOpenTsFilePath(e)).filter(e => !!e),
+                    async provideMultiDocumentHighlights(e, t, n, i) {
+                        const r = [e, ...n].map(e => this.client.toOpenTsFilePath(e)).filter(e => !!e),
                             s = this.client.toOpenTsFilePath(e);
-                        if (!s || 0 === i.length) return [];
+                        if (!s || 0 === r.length) return [];
                         const o = {
                                 ...c.Position.toFileLocationRequestArgs(s, t),
-                                filesToSearch: i
+                                filesToSearch: r
                             },
-                            l = await this.client.execute("documentHighlights", o, r);
+                            l = await this.client.execute("documentHighlights", o, i);
                         return "response" === l.type && l.body ? l.body.map(e => new a.MultiDocumentHighlight(a.Uri.file(e.file), [...u(e)])) : []
                     }
                     async provideDocumentHighlights(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return [];
-                        const i = {
-                                ...c.Position.toFileLocationRequestArgs(r, t),
-                                filesToSearch: [r]
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return [];
+                        const r = {
+                                ...c.Position.toFileLocationRequestArgs(i, t),
+                                filesToSearch: [i]
                             },
-                            s = await this.client.execute("documentHighlights", i, n);
+                            s = await this.client.execute("documentHighlights", r, n);
                         return "response" === s.type && s.body ? s.body.flatMap(u) : []
                     }
                 }
@@ -5847,17 +5867,17 @@
             },
             3753: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -5867,23 +5887,23 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.templateToSnippet = h, t.register = function(e, t, n, r) {
-                    return a.languages.registerCompletionItemProvider(e.syntax, new d(n, t, r), "*")
+                }), t.templateToSnippet = p, t.register = function(e, t, n, i) {
+                    return a.languages.registerCompletionItemProvider(e.syntax, new d(n, t, i), "*")
                 };
                 const a = o(n(1398)),
                     c = o(n(2144)),
@@ -5892,10 +5912,10 @@
                     constructor(e, t) {
                         super("/** */", a.CompletionItemKind.Text), this.document = e, this.position = t, this.detail = a.l10n.t("JSDoc comment"), this.sortText = "\0";
                         const n = e.lineAt(t.line).text,
-                            r = n.slice(0, t.character).match(/\/\**\s*$/),
-                            i = n.slice(t.character).match(/^\s*\**\//),
-                            s = t.translate(0, r ? -r[0].length : 0),
-                            o = new a.Range(s, t.translate(0, i ? i[0].length : 0));
+                            i = n.slice(0, t.character).match(/\/\**\s*$/),
+                            r = n.slice(t.character).match(/^\s*\**\//),
+                            s = t.translate(0, i ? -i[0].length : 0),
+                            o = new a.Range(s, t.translate(0, r ? r[0].length : 0));
                         this.range = {
                             inserting: o,
                             replacing: o
@@ -5908,69 +5928,69 @@
                     }
                     async provideCompletionItems(e, t, n) {
                         if (!a.workspace.getConfiguration(this.language.id, e).get("suggest.completeJSDocs")) return;
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return;
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return;
                         if (!this.isPotentiallyValidDocCompletionPosition(e, t)) return;
-                        const i = await this.client.interruptGetErr(async () => {
+                        const r = await this.client.interruptGetErr(async () => {
                             await this.fileConfigurationManager.ensureConfigurationForDocument(e, n);
-                            const i = c.Position.toFileLocationRequestArgs(r, t);
-                            return this.client.execute("docCommentTemplate", i, n)
+                            const r = c.Position.toFileLocationRequestArgs(i, t);
+                            return this.client.execute("docCommentTemplate", r, n)
                         });
-                        if ("response" !== i.type || !i.body) return;
+                        if ("response" !== r.type || !r.body) return;
                         const s = new u(e, t);
-                        return "/** */" === i.body.newText ? s.insertText = l : s.insertText = h(i.body.newText), [s]
+                        return "/** */" === r.body.newText ? s.insertText = l : s.insertText = p(r.body.newText), [s]
                     }
                     isPotentiallyValidDocCompletionPosition(e, t) {
                         const n = e.lineAt(t.line).text,
-                            r = n.slice(0, t.character);
-                        if (!/^\s*$|\/\*\*\s*$|^\s*\/\*\*+\s*$/.test(r)) return !1;
-                        const i = n.slice(t.character);
-                        return /^\s*(\*+\/)?\s*$/.test(i)
+                            i = n.slice(0, t.character);
+                        if (!/^\s*$|\/\*\*\s*$|^\s*\/\*\*+\s*$/.test(i)) return !1;
+                        const r = n.slice(t.character);
+                        return /^\s*(\*+\/)?\s*$/.test(r)
                     }
                 }
 
-                function h(e) {
+                function p(e) {
                     let t = 1;
-                    return e = (e = (e = (e = (e = e.replace(/\$/g, "\\$")).replace(/^[ \t]*(?=(\/|[ ]\*))/gm, "")).replace(/^(\/\*\*\s*\*[ ]*)$/m, e => e + "$0")).replace(/\* @param([ ]\{\S+\})?\s+(\S+)[ \t]*$/gm, (e, n, r) => {
-                        let i = "* @param ";
-                        return " {any}" === n || " {*}" === n ? i += `{\${${t++}:*}} ` : n && (i += n + " "), i += r + ` \${${t++}}`, i
+                    return e = (e = (e = (e = (e = e.replace(/\$/g, "\\$")).replace(/^[ \t]*(?=(\/|[ ]\*))/gm, "")).replace(/^(\/\*\*\s*\*[ ]*)$/m, e => e + "$0")).replace(/\* @param([ ]\{\S+\})?\s+(\S+)[ \t]*$/gm, (e, n, i) => {
+                        let r = "* @param ";
+                        return " {any}" === n || " {*}" === n ? r += `{\${${t++}:*}} ` : n && (r += n + " "), r += i + ` \${${t++}}`, r
                     })).replace(/\* @returns[ \t]*$/gm, `* @returns \${${t++}}`), new a.SnippetString(e)
                 }
             },
             3874: (e, t, n) => {
-                const r = n(8311);
+                const i = n(8311);
                 e.exports = (e, t) => {
                     try {
-                        return new r(e, t).range || "*"
+                        return new i(e, t).range || "*"
                     } catch (e) {
                         return null
                     }
                 }
             },
             3904: (e, t, n) => {
-                const r = Symbol("SemVer ANY");
-                class i {
+                const i = Symbol("SemVer ANY");
+                class r {
                     static get ANY() {
-                        return r
+                        return i
                     }
                     constructor(e, t) {
-                        if (t = s(t), e instanceof i) {
+                        if (t = s(t), e instanceof r) {
                             if (e.loose === !!t.loose) return e;
                             e = e.value
                         }
-                        e = e.trim().split(/\s+/).join(" "), l("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === r ? this.value = "" : this.value = this.operator + this.semver.version, l("comp", this)
+                        e = e.trim().split(/\s+/).join(" "), l("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === i ? this.value = "" : this.value = this.operator + this.semver.version, l("comp", this)
                     }
                     parse(e) {
                         const t = this.options.loose ? o[a.COMPARATORLOOSE] : o[a.COMPARATOR],
                             n = e.match(t);
                         if (!n) throw new TypeError(`Invalid comparator: ${e}`);
-                        this.operator = void 0 !== n[1] ? n[1] : "", "=" === this.operator && (this.operator = ""), n[2] ? this.semver = new u(n[2], this.options.loose) : this.semver = r
+                        this.operator = void 0 !== n[1] ? n[1] : "", "=" === this.operator && (this.operator = ""), n[2] ? this.semver = new u(n[2], this.options.loose) : this.semver = i
                     }
                     toString() {
                         return this.value
                     }
                     test(e) {
-                        if (l("Comparator.test", e, this.options.loose), this.semver === r || e === r) return !0;
+                        if (l("Comparator.test", e, this.options.loose), this.semver === i || e === i) return !0;
                         if ("string" == typeof e) try {
                             e = new u(e, this.options)
                         } catch (e) {
@@ -5979,11 +5999,11 @@
                         return c(e, this.operator, this.semver, this.options)
                     }
                     intersects(e, t) {
-                        if (!(e instanceof i)) throw new TypeError("a Comparator is required");
+                        if (!(e instanceof r)) throw new TypeError("a Comparator is required");
                         return "" === this.operator ? "" === this.value || new d(e.value, t).test(this.value) : "" === e.operator ? "" === e.value || new d(this.value, t).test(e.semver) : !((t = s(t)).includePrerelease && ("<0.0.0-0" === this.value || "<0.0.0-0" === e.value) || !t.includePrerelease && (this.value.startsWith("<0.0.0") || e.value.startsWith("<0.0.0")) || (!this.operator.startsWith(">") || !e.operator.startsWith(">")) && (!this.operator.startsWith("<") || !e.operator.startsWith("<")) && (this.semver.version !== e.semver.version || !this.operator.includes("=") || !e.operator.includes("=")) && !(c(this.semver, "<", e.semver, t) && this.operator.startsWith(">") && e.operator.startsWith("<")) && !(c(this.semver, ">", e.semver, t) && this.operator.startsWith("<") && e.operator.startsWith(">")))
                     }
                 }
-                e.exports = i;
+                e.exports = r;
                 const s = n(8587),
                     {
                         safeRe: o,
@@ -5995,9 +6015,9 @@
                     d = n(8311)
             },
             3908: (e, t, n) => {
-                const r = n(7272),
+                const i = n(7272),
                     {
-                        MAX_LENGTH: i,
+                        MAX_LENGTH: r,
                         MAX_SAFE_INTEGER: s
                     } = n(6874),
                     {
@@ -6014,8 +6034,8 @@
                             if (e.loose === !!t.loose && e.includePrerelease === !!t.includePrerelease) return e;
                             e = e.version
                         } else if ("string" != typeof e) throw new TypeError(`Invalid version. Must be a string. Got type "${typeof e}".`);
-                        if (e.length > i) throw new TypeError(`version is longer than ${i} characters`);
-                        r("SemVer", e, t), this.options = t, this.loose = !!t.loose, this.includePrerelease = !!t.includePrerelease;
+                        if (e.length > r) throw new TypeError(`version is longer than ${r} characters`);
+                        i("SemVer", e, t), this.options = t, this.loose = !!t.loose, this.includePrerelease = !!t.includePrerelease;
                         const n = e.trim().match(t.loose ? o[a.LOOSE] : o[a.FULL]);
                         if (!n) throw new TypeError(`Invalid Version: ${e}`);
                         if (this.raw = e, this.major = +n[1], this.minor = +n[2], this.patch = +n[3], this.major > s || this.major < 0) throw new TypeError("Invalid major version");
@@ -6036,7 +6056,7 @@
                         return this.version
                     }
                     compare(e) {
-                        if (r("SemVer.compare", this.version, this.options, e), !(e instanceof u)) {
+                        if (i("SemVer.compare", this.version, this.options, e), !(e instanceof u)) {
                             if ("string" == typeof e && e === this.version) return 0;
                             e = new u(e, this.options)
                         }
@@ -6052,11 +6072,11 @@
                         let t = 0;
                         do {
                             const n = this.prerelease[t],
-                                i = e.prerelease[t];
-                            if (r("prerelease compare", t, n, i), void 0 === n && void 0 === i) return 0;
-                            if (void 0 === i) return 1;
+                                r = e.prerelease[t];
+                            if (i("prerelease compare", t, n, r), void 0 === n && void 0 === r) return 0;
+                            if (void 0 === r) return 1;
                             if (void 0 === n) return -1;
-                            if (n !== i) return l(n, i)
+                            if (n !== r) return l(n, r)
                         } while (++t)
                     }
                     compareBuild(e) {
@@ -6064,11 +6084,11 @@
                         let t = 0;
                         do {
                             const n = this.build[t],
-                                i = e.build[t];
-                            if (r("prerelease compare", t, n, i), void 0 === n && void 0 === i) return 0;
-                            if (void 0 === i) return 1;
+                                r = e.build[t];
+                            if (i("prerelease compare", t, n, r), void 0 === n && void 0 === r) return 0;
+                            if (void 0 === r) return 1;
                             if (void 0 === n) return -1;
-                            if (n !== i) return l(n, i)
+                            if (n !== r) return l(n, r)
                         } while (++t)
                     }
                     inc(e, t, n) {
@@ -6099,16 +6119,16 @@
                                 if (!t && !1 === n) throw new Error("invalid increment argument: identifier is empty");
                                 if (0 === this.prerelease.length) this.prerelease = [e];
                                 else {
-                                    let r = this.prerelease.length;
-                                    for (; --r >= 0;) "number" == typeof this.prerelease[r] && (this.prerelease[r]++, r = -2);
-                                    if (-1 === r) {
+                                    let i = this.prerelease.length;
+                                    for (; --i >= 0;) "number" == typeof this.prerelease[i] && (this.prerelease[i]++, i = -2);
+                                    if (-1 === i) {
                                         if (t === this.prerelease.join(".") && !1 === n) throw new Error("invalid increment argument: identifier already exists");
                                         this.prerelease.push(e)
                                     }
                                 }
                                 if (t) {
-                                    let r = [t, e];
-                                    !1 === n && (r = [t]), 0 === l(this.prerelease[0], t) ? isNaN(this.prerelease[1]) && (this.prerelease = r) : this.prerelease = r
+                                    let i = [t, e];
+                                    !1 === n && (i = [t]), 0 === l(this.prerelease[0], t) ? isNaN(this.prerelease[1]) && (this.prerelease = i) : this.prerelease = i
                                 }
                                 break
                             }
@@ -6122,17 +6142,17 @@
             },
             3918: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -6142,17 +6162,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -6164,26 +6184,26 @@
                     constructor(e) {
                         this.lazyClientHost = e, this.id = "typescript.tsserverRequest"
                     }
-                    async execute(e, t, n, r) {
-                        var i;
-                        if ((i = r) && "boolean" == typeof i.isCancellationRequested && "function" == typeof i.onCancellationRequested || (r = c.nulToken), t && "object" == typeof t && !Array.isArray(t)) {
+                    async execute(e, t, n, i) {
+                        var r;
+                        if ((r = i) && "boolean" == typeof r.isCancellationRequested && "function" == typeof r.onCancellationRequested || (i = c.nulToken), t && "object" == typeof t && !Array.isArray(t)) {
                             const e = t;
                             let n;
                             if (e.file instanceof a.Uri) {
                                 n = {
                                     ...t
                                 };
-                                const r = this.lazyClientHost.value.serviceClient;
-                                n.file = r.toOpenTsFilePath(e.file), t = n
+                                const i = this.lazyClientHost.value.serviceClient;
+                                n.file = i.toOpenTsFilePath(e.file), t = n
                             }
                         }
-                        if (["emit-output", "semanticDiagnosticsSync", "syntacticDiagnosticsSync", "suggestionDiagnosticsSync", "quickinfo", "quickinfo-full", "completionInfo"].includes(e) || e.startsWith("_")) return this.lazyClientHost.value.serviceClient.execute(e, t, r, n)
+                        if (["emit-output", "semanticDiagnosticsSync", "syntacticDiagnosticsSync", "suggestionDiagnosticsSync", "quickinfo", "quickinfo-full", "completionInfo"].includes(e) || e.startsWith("_")) return this.lazyClientHost.value.serviceClient.execute(e, t, i, n)
                     }
                 }
             },
             3927: (e, t, n) => {
-                const r = n(909);
-                e.exports = (e, t) => e.sort((e, n) => r(e, n, t))
+                const i = n(909);
+                e.exports = (e, t) => e.sort((e, n) => i(e, n, t))
             },
             3952: (e, t) => {
                 "use strict";
@@ -6199,22 +6219,22 @@
                 }
             },
             3999: (e, t, n) => {
-                const r = n(560);
-                e.exports = (e, t, n) => 0 !== r(e, t, n)
+                const i = n(560);
+                e.exports = (e, t, n) => 0 !== i(e, t, n)
             },
             4029: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -6224,25 +6244,25 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.register = function(e, t, n, r) {
-                    return (0, h.conditionalRegistration)([(0, h.requireSomeCapability)(t, d.ClientCapability.Semantic)], () => {
-                        const i = new y(t, n, r);
-                        return a.languages.registerCodeActionsProvider(e.semantic, i, i.metadata)
+                }), t.register = function(e, t, n, i) {
+                    return (0, p.conditionalRegistration)([(0, p.requireSomeCapability)(t, d.ClientCapability.Semantic)], () => {
+                        const r = new y(t, n, i);
+                        return a.languages.registerCodeActionsProvider(e.semantic, r, r.metadata)
                     })
                 };
                 const a = o(n(1398)),
@@ -6250,18 +6270,18 @@
                     l = o(n(6384)),
                     u = o(n(2144)),
                     d = n(7371),
-                    h = n(6362);
-                async function p(e, t, n, r, i, s) {
-                    for (const o of i)
+                    p = n(6362);
+                async function h(e, t, n, i, r, s) {
+                    for (const o of r)
                         for (const {
-                                codes: i,
+                                codes: r,
                                 fixName: a
                             }
                             of e) {
                             if (s.isCancellationRequested) return;
-                            if (!i.has(o.code)) continue;
+                            if (!r.has(o.code)) continue;
                             const e = {
-                                    ...u.Range.toFileRangeRequestArgs(r, o.range),
+                                    ...u.Range.toFileRangeRequestArgs(i, o.range),
                                     errorCodes: [+o.code]
                                 },
                                 c = await n.execute("getCodeFixes", e, s);
@@ -6273,14 +6293,14 @@
                                     scope: {
                                         type: "file",
                                         args: {
-                                            file: r
+                                            file: i
                                         }
                                     },
                                     fixId: l.fixId
                                 },
-                                h = await n.execute("getCombinedCodeFix", d, s);
-                            if ("response" !== h.type || !h.body) return;
-                            return void u.WorkspaceEdit.withFileCodeEdits(t, n, h.body.changes)
+                                p = await n.execute("getCombinedCodeFix", d, s);
+                            if ("response" !== p.type || !p.body) return;
+                            return void u.WorkspaceEdit.withFileCodeEdits(t, n, p.body.changes)
                         }
                 }
                 class f extends a.CodeAction {}
@@ -6288,18 +6308,18 @@
                     constructor() {
                         super(a.l10n.t("Fix all fixable JS/TS issues"), g.kind)
                     }
-                    async build(e, t, n, r) {
-                        this.edit = new a.WorkspaceEdit, await async function(e, t, n, r, i, s) {
-                            for (const o of i)
+                    async build(e, t, n, i) {
+                        this.edit = new a.WorkspaceEdit, await async function(e, t, n, i, r, s) {
+                            for (const o of r)
                                 for (const {
-                                        codes: i,
+                                        codes: r,
                                         fixName: a
                                     }
                                     of e) {
                                     if (s.isCancellationRequested) return;
-                                    if (!i.has(o.code)) continue;
+                                    if (!r.has(o.code)) continue;
                                     const e = {
-                                            ...u.Range.toFileRangeRequestArgs(r, o.range),
+                                            ...u.Range.toFileRangeRequestArgs(i, o.range),
                                             errorCodes: [+o.code]
                                         },
                                         c = await n.execute("getCodeFixes", e, s);
@@ -6316,10 +6336,10 @@
                         }, {
                             codes: c.asyncOnlyAllowedInAsyncFunctions,
                             fixName: l.awaitInSyncFunction
-                        }], this.edit, e, t, n, r), await p([{
+                        }], this.edit, e, t, n, i), await h([{
                             codes: c.unreachableCode,
                             fixName: l.unreachableCode
-                        }], this.edit, e, t, n, r)
+                        }], this.edit, e, t, n, i)
                     }
                 }
                 g.kind = a.CodeActionKind.SourceFixAll.append("ts");
@@ -6327,11 +6347,11 @@
                     constructor() {
                         super(a.l10n.t("Remove all unused code"), m.kind)
                     }
-                    async build(e, t, n, r) {
-                        this.edit = new a.WorkspaceEdit, await p([{
+                    async build(e, t, n, i) {
+                        this.edit = new a.WorkspaceEdit, await h([{
                             codes: c.variableDeclaredButNeverUsed,
                             fixName: l.unusedIdentifier
-                        }], this.edit, e, t, n, r)
+                        }], this.edit, e, t, n, i)
                     }
                 }
                 m.kind = a.CodeActionKind.Source.append("removeUnused").append("ts");
@@ -6339,11 +6359,11 @@
                     constructor() {
                         super(a.l10n.t("Add all missing imports"), v.kind)
                     }
-                    async build(e, t, n, r) {
-                        this.edit = new a.WorkspaceEdit, await p([{
+                    async build(e, t, n, i) {
+                        this.edit = new a.WorkspaceEdit, await h([{
                             codes: c.cannotFindName,
                             fixName: l.fixImport
-                        }], this.edit, e, t, n, r)
+                        }], this.edit, e, t, n, i)
                     }
                 }
                 v.kind = a.CodeActionKind.Source.append("addMissingImports").append("ts");
@@ -6356,13 +6376,13 @@
                             providedCodeActionKinds: y.kindProviders.map(e => e.kind)
                         }
                     }
-                    async provideCodeActions(e, t, n, r) {
+                    async provideCodeActions(e, t, n, i) {
                         if (!n.only || !a.CodeActionKind.Source.intersects(n.only)) return;
-                        const i = this.client.toOpenTsFilePath(e);
-                        if (!i) return;
+                        const r = this.client.toOpenTsFilePath(e);
+                        if (!r) return;
                         const s = this.getFixAllActions(n.only),
                             o = this.diagnosticsManager.getDiagnostics(e.uri);
-                        return o.length ? (await this.fileConfigurationManager.ensureConfigurationForDocument(e, r), r.isCancellationRequested ? void 0 : (await Promise.all(s.map(e => e.build(this.client, i, o, r))), s)) : s
+                        return o.length ? (await this.fileConfigurationManager.ensureConfigurationForDocument(e, i), i.isCancellationRequested ? void 0 : (await Promise.all(s.map(e => e.build(this.client, r, o, i))), s)) : s
                     }
                     getFixAllActions(e) {
                         return y.kindProviders.filter(t => e.intersects(t.kind)).map(e => new e)
@@ -6371,52 +6391,52 @@
                 y.kindProviders = [g, m, v]
             },
             4089: (e, t, n) => {
-                const r = n(560);
-                e.exports = (e, t, n) => r(e, t, n) >= 0
+                const i = n(560);
+                e.exports = (e, t, n) => i(e, t, n) >= 0
             },
             4267: (e, t) => {
                 "use strict";
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.memoize = function(e, t, n) {
-                    let r, i;
-                    if ("function" == typeof n.value) r = "value", i = n.value;
+                    let i, r;
+                    if ("function" == typeof n.value) i = "value", r = n.value;
                     else {
                         if ("function" != typeof n.get) throw new Error("not supported");
-                        r = "get", i = n.get
+                        i = "get", r = n.get
                     }
                     const s = `$memoize$${t}`;
-                    n[r] = function(...e) {
+                    n[i] = function(...e) {
                         return this.hasOwnProperty(s) || Object.defineProperty(this, s, {
                             configurable: !1,
                             enumerable: !1,
                             writable: !1,
-                            value: i.apply(this, e)
+                            value: r.apply(this, e)
                         }), this[s]
                     }
                 }
             },
             4277: (e, t, n) => {
-                const r = n(909);
-                e.exports = (e, t) => e.sort((e, n) => r(n, e, t))
+                const i = n(909);
+                e.exports = (e, t) => e.sort((e, n) => i(n, e, t))
             },
             4493: (e, t, n) => {
-                const r = n(3908);
-                e.exports = (e, t) => new r(e, t).patch
+                const i = n(3908);
+                e.exports = (e, t) => new i(e, t).patch
             },
             4496: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -6426,17 +6446,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -6476,8 +6496,8 @@
                         for (const t of a.extensions.all) {
                             const n = t.packageJSON;
                             if (n.contributes && Array.isArray(n.contributes.typescriptServerPlugins)) {
-                                const r = [];
-                                for (const e of n.contributes.typescriptServerPlugins) r.push({
+                                const i = [];
+                                for (const e of n.contributes.typescriptServerPlugins) i.push({
                                     extension: t,
                                     name: e.name,
                                     enableForWorkspaceTypeScriptVersions: !!e.enableForWorkspaceTypeScriptVersions,
@@ -6485,7 +6505,7 @@
                                     languages: Array.isArray(e.languages) ? e.languages : [],
                                     configNamespace: e.configNamespace
                                 });
-                                r.length && e.set(t.id, r)
+                                i.length && e.set(t.id, i)
                             }
                         }
                         return e
@@ -6541,10 +6561,10 @@
                 const n = {
                         dispose: () => {}
                     },
-                    r = (e, t, r) => n;
+                    i = (e, t, i) => n;
                 t.default = class {
                     constructor(e, t) {
-                        this.telemetryLevel = "off", this.onDidChangeTelemetryLevel = r
+                        this.telemetryLevel = "off", this.onDidChangeTelemetryLevel = i
                     }
                     sendTelemetryEvent(e, t, n) {}
                     sendRawTelemetryEvent(e, t, n) {}
@@ -6558,17 +6578,17 @@
             },
             4640: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -6578,17 +6598,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -6605,17 +6625,17 @@
                         message: e,
                         document: t,
                         expand: n,
-                        action: r
+                        action: i
                     }) {
-                        "quickfix" === r.type ? this.telemetryReporter.logTelemetry("aiQuickfix.execute", {
-                            action: r.quickfix.fixName
+                        "quickfix" === i.type ? this.telemetryReporter.logTelemetry("aiQuickfix.execute", {
+                            action: i.quickfix.fixName
                         }) : this.telemetryReporter.logTelemetry("aiRefactor.execute", {
-                            action: r.refactor.name
+                            action: i.refactor.name
                         });
-                        const i = "navtree-function" === n.kind ? await p(this.client, t, n.pos.line) : "refactor-info" === n.kind ? await f(this.client, t, n.refactor.edits.flatMap(e => e.textChanges)) : "code-action" === n.kind ? await f(this.client, t, n.action.changes.flatMap(e => e.textChanges)) : n.range,
-                            s = i ? new a.Selection(i.start, i.end) : void 0;
+                        const r = "navtree-function" === n.kind ? await h(this.client, t, n.pos.line) : "refactor-info" === n.kind ? await f(this.client, t, n.refactor.edits.flatMap(e => e.textChanges)) : "code-action" === n.kind ? await f(this.client, t, n.action.changes.flatMap(e => e.textChanges)) : n.range,
+                            s = r ? new a.Selection(r.start, r.end) : void 0;
                         await a.commands.executeCommand("vscode.editorChat.start", {
-                            initialRange: i,
+                            initialRange: r,
                             initialSelection: s,
                             message: e,
                             autoSend: !0
@@ -6632,51 +6652,51 @@
                     }
                 }
 
-                function h(e, t) {
+                function p(e, t) {
                     for (const n of t) {
                         const t = l.Range.fromTextSpan(n.spans[0]);
                         if (e === t.start.line) return t;
-                        if (e > t.start.line && e <= t.end.line && n.childItems) return h(e, n.childItems)
+                        if (e > t.start.line && e <= t.end.line && n.childItems) return p(e, n.childItems)
                     }
                 }
-                async function p(e, t, n) {
-                    const r = e.toOpenTsFilePath(t);
-                    if (!r) return;
-                    const i = await e.execute("navtree", {
-                        file: r
+                async function h(e, t, n) {
+                    const i = e.toOpenTsFilePath(t);
+                    if (!i) return;
+                    const r = await e.execute("navtree", {
+                        file: i
                     }, c.nulToken);
-                    return "response" === i.type && i.body?.childItems ? h(n, i.body.childItems) : void 0
+                    return "response" === r.type && r.body?.childItems ? p(n, r.body.childItems) : void 0
                 }
                 async function f(e, t, n) {
-                    let r = l.Position.fromLocation(n[0].start),
-                        i = n[0],
+                    let i = l.Position.fromLocation(n[0].start),
+                        r = n[0],
                         s = n[0],
                         o = l.Position.fromLocation(n[0].start);
                     for (const e of n) {
                         const t = l.Position.fromLocation(e.start),
                             n = l.Position.fromLocation(e.end);
-                        t.compareTo(r) < 0 && (r = t, i = e), n.compareTo(o) > 0 && (o = n, s = e)
+                        t.compareTo(i) < 0 && (i = t, r = e), n.compareTo(o) > 0 && (o = n, s = e)
                     }
                     const c = t.getText(),
-                        u = c.indexOf(i.newText),
-                        d = u > -1 ? t.positionAt(u) : r,
-                        h = c.lastIndexOf(s.newText),
-                        f = h > -1 ? t.positionAt(h + s.newText.length) : o,
-                        g = await p(e, t, f.line);
+                        u = c.indexOf(r.newText),
+                        d = u > -1 ? t.positionAt(u) : i,
+                        p = c.lastIndexOf(s.newText),
+                        f = p > -1 ? t.positionAt(p + s.newText.length) : o,
+                        g = await h(e, t, f.line);
                     return new a.Range(d, g?.end ?? f)
                 }
                 t.CompositeCommand = d, d.ID = "_typescript.compositeCommand"
             },
             4641: (e, t, n) => {
-                const r = n(560);
-                e.exports = (e, t, n) => 0 === r(e, t, n)
+                const i = n(560);
+                e.exports = (e, t, n) => 0 === i(e, t, n)
             },
             4705: e => {
                 "use strict";
                 const t = 6e4,
                     n = {},
-                    r = {},
-                    i = {};
+                    i = {},
+                    r = {};
                 let s = 0,
                     o = null;
 
@@ -6689,7 +6709,7 @@
                         t = Object.keys(n);
                     for (let o = 0; o < t.length; o++) {
                         const a = t[o];
-                        n[a] < e && (s--, i[a] && i[a](r[a]), delete r[a], delete n[a], delete i[a])
+                        n[a] < e && (s--, r[a] && r[a](i[a]), delete i[a], delete n[a], delete r[a])
                     }
                     a()
                 }
@@ -6698,24 +6718,24 @@
                     for (const t in e) delete e[t]
                 }
                 e.exports = {
-                    get: function(e, i) {
-                        if (!(i <= 0)) return void 0 !== r[e] && (n[e] = Date.now() + (i || t)), r[e]
+                    get: function(e, r) {
+                        if (!(r <= 0)) return void 0 !== i[e] && (n[e] = Date.now() + (r || t)), i[e]
                     },
                     set: function(e, o, c, l) {
-                        void 0 === o || c <= 0 || (n[e] = Date.now() + (c || t), void 0 === r[e] && (s++, a(c)), r[e] = o, l && (i[e] = l))
+                        void 0 === o || c <= 0 || (n[e] = Date.now() + (c || t), void 0 === i[e] && (s++, a(c)), i[e] = o, l && (r[e] = l))
                     },
                     clear: function() {
-                        null !== o && (clearInterval(o), o = null), l(r), l(n), l(i)
+                        null !== o && (clearInterval(o), o = null), l(i), l(n), l(r)
                     }
                 }
             },
             4756: (e, t, n) => {
                 "use strict";
-                var r;
+                var i;
                 n.r(t), n.d(t, {
-                    URI: () => i,
+                    URI: () => r,
                     Utils: () => s
-                }), r = (() => {
+                }), i = (() => {
                     var e = {
                             470: e => {
                                 function t(e) {
@@ -6723,7 +6743,7 @@
                                 }
 
                                 function n(e, t) {
-                                    for (var n, r = "", i = 0, s = -1, o = 0, a = 0; a <= e.length; ++a) {
+                                    for (var n, i = "", r = 0, s = -1, o = 0, a = 0; a <= e.length; ++a) {
                                         if (a < e.length) n = e.charCodeAt(a);
                                         else {
                                             if (47 === n) break;
@@ -6732,37 +6752,37 @@
                                         if (47 === n) {
                                             if (s === a - 1 || 1 === o);
                                             else if (s !== a - 1 && 2 === o) {
-                                                if (r.length < 2 || 2 !== i || 46 !== r.charCodeAt(r.length - 1) || 46 !== r.charCodeAt(r.length - 2))
-                                                    if (r.length > 2) {
-                                                        var c = r.lastIndexOf("/");
-                                                        if (c !== r.length - 1) {
-                                                            -1 === c ? (r = "", i = 0) : i = (r = r.slice(0, c)).length - 1 - r.lastIndexOf("/"), s = a, o = 0;
+                                                if (i.length < 2 || 2 !== r || 46 !== i.charCodeAt(i.length - 1) || 46 !== i.charCodeAt(i.length - 2))
+                                                    if (i.length > 2) {
+                                                        var c = i.lastIndexOf("/");
+                                                        if (c !== i.length - 1) {
+                                                            -1 === c ? (i = "", r = 0) : r = (i = i.slice(0, c)).length - 1 - i.lastIndexOf("/"), s = a, o = 0;
                                                             continue
                                                         }
-                                                    } else if (2 === r.length || 1 === r.length) {
-                                                    r = "", i = 0, s = a, o = 0;
+                                                    } else if (2 === i.length || 1 === i.length) {
+                                                    i = "", r = 0, s = a, o = 0;
                                                     continue
                                                 }
-                                                t && (r.length > 0 ? r += "/.." : r = "..", i = 2)
-                                            } else r.length > 0 ? r += "/" + e.slice(s + 1, a) : r = e.slice(s + 1, a), i = a - s - 1;
+                                                t && (i.length > 0 ? i += "/.." : i = "..", r = 2)
+                                            } else i.length > 0 ? i += "/" + e.slice(s + 1, a) : i = e.slice(s + 1, a), r = a - s - 1;
                                             s = a, o = 0
                                         } else 46 === n && -1 !== o ? ++o : o = -1
                                     }
-                                    return r
+                                    return i
                                 }
-                                var r = {
+                                var i = {
                                     resolve: function() {
-                                        for (var e, r = "", i = !1, s = arguments.length - 1; s >= -1 && !i; s--) {
+                                        for (var e, i = "", r = !1, s = arguments.length - 1; s >= -1 && !r; s--) {
                                             var o;
-                                            s >= 0 ? o = arguments[s] : (void 0 === e && (e = process.cwd()), o = e), t(o), 0 !== o.length && (r = o + "/" + r, i = 47 === o.charCodeAt(0))
+                                            s >= 0 ? o = arguments[s] : (void 0 === e && (e = process.cwd()), o = e), t(o), 0 !== o.length && (i = o + "/" + i, r = 47 === o.charCodeAt(0))
                                         }
-                                        return r = n(r, !i), i ? r.length > 0 ? "/" + r : "/" : r.length > 0 ? r : "."
+                                        return i = n(i, !r), r ? i.length > 0 ? "/" + i : "/" : i.length > 0 ? i : "."
                                     },
                                     normalize: function(e) {
                                         if (t(e), 0 === e.length) return ".";
-                                        var r = 47 === e.charCodeAt(0),
-                                            i = 47 === e.charCodeAt(e.length - 1);
-                                        return 0 !== (e = n(e, !r)).length || r || (e = "."), e.length > 0 && i && (e += "/"), r ? "/" + e : e
+                                        var i = 47 === e.charCodeAt(0),
+                                            r = 47 === e.charCodeAt(e.length - 1);
+                                        return 0 !== (e = n(e, !i)).length || i || (e = "."), e.length > 0 && r && (e += "/"), i ? "/" + e : e
                                     },
                                     isAbsolute: function(e) {
                                         return t(e), e.length > 0 && 47 === e.charCodeAt(0)
@@ -6770,94 +6790,94 @@
                                     join: function() {
                                         if (0 === arguments.length) return ".";
                                         for (var e, n = 0; n < arguments.length; ++n) {
-                                            var i = arguments[n];
-                                            t(i), i.length > 0 && (void 0 === e ? e = i : e += "/" + i)
+                                            var r = arguments[n];
+                                            t(r), r.length > 0 && (void 0 === e ? e = r : e += "/" + r)
                                         }
-                                        return void 0 === e ? "." : r.normalize(e)
+                                        return void 0 === e ? "." : i.normalize(e)
                                     },
                                     relative: function(e, n) {
                                         if (t(e), t(n), e === n) return "";
-                                        if ((e = r.resolve(e)) === (n = r.resolve(n))) return "";
-                                        for (var i = 1; i < e.length && 47 === e.charCodeAt(i); ++i);
-                                        for (var s = e.length, o = s - i, a = 1; a < n.length && 47 === n.charCodeAt(a); ++a);
+                                        if ((e = i.resolve(e)) === (n = i.resolve(n))) return "";
+                                        for (var r = 1; r < e.length && 47 === e.charCodeAt(r); ++r);
+                                        for (var s = e.length, o = s - r, a = 1; a < n.length && 47 === n.charCodeAt(a); ++a);
                                         for (var c = n.length - a, l = o < c ? o : c, u = -1, d = 0; d <= l; ++d) {
                                             if (d === l) {
                                                 if (c > l) {
                                                     if (47 === n.charCodeAt(a + d)) return n.slice(a + d + 1);
                                                     if (0 === d) return n.slice(a + d)
-                                                } else o > l && (47 === e.charCodeAt(i + d) ? u = d : 0 === d && (u = 0));
+                                                } else o > l && (47 === e.charCodeAt(r + d) ? u = d : 0 === d && (u = 0));
                                                 break
                                             }
-                                            var h = e.charCodeAt(i + d);
-                                            if (h !== n.charCodeAt(a + d)) break;
-                                            47 === h && (u = d)
+                                            var p = e.charCodeAt(r + d);
+                                            if (p !== n.charCodeAt(a + d)) break;
+                                            47 === p && (u = d)
                                         }
-                                        var p = "";
-                                        for (d = i + u + 1; d <= s; ++d) d !== s && 47 !== e.charCodeAt(d) || (0 === p.length ? p += ".." : p += "/..");
-                                        return p.length > 0 ? p + n.slice(a + u) : (a += u, 47 === n.charCodeAt(a) && ++a, n.slice(a))
+                                        var h = "";
+                                        for (d = r + u + 1; d <= s; ++d) d !== s && 47 !== e.charCodeAt(d) || (0 === h.length ? h += ".." : h += "/..");
+                                        return h.length > 0 ? h + n.slice(a + u) : (a += u, 47 === n.charCodeAt(a) && ++a, n.slice(a))
                                     },
                                     _makeLong: function(e) {
                                         return e
                                     },
                                     dirname: function(e) {
                                         if (t(e), 0 === e.length) return ".";
-                                        for (var n = e.charCodeAt(0), r = 47 === n, i = -1, s = !0, o = e.length - 1; o >= 1; --o)
+                                        for (var n = e.charCodeAt(0), i = 47 === n, r = -1, s = !0, o = e.length - 1; o >= 1; --o)
                                             if (47 === (n = e.charCodeAt(o))) {
                                                 if (!s) {
-                                                    i = o;
+                                                    r = o;
                                                     break
                                                 }
                                             } else s = !1;
-                                        return -1 === i ? r ? "/" : "." : r && 1 === i ? "//" : e.slice(0, i)
+                                        return -1 === r ? i ? "/" : "." : i && 1 === r ? "//" : e.slice(0, r)
                                     },
                                     basename: function(e, n) {
                                         if (void 0 !== n && "string" != typeof n) throw new TypeError('"ext" argument must be a string');
                                         t(e);
-                                        var r, i = 0,
+                                        var i, r = 0,
                                             s = -1,
                                             o = !0;
                                         if (void 0 !== n && n.length > 0 && n.length <= e.length) {
                                             if (n.length === e.length && n === e) return "";
                                             var a = n.length - 1,
                                                 c = -1;
-                                            for (r = e.length - 1; r >= 0; --r) {
-                                                var l = e.charCodeAt(r);
+                                            for (i = e.length - 1; i >= 0; --i) {
+                                                var l = e.charCodeAt(i);
                                                 if (47 === l) {
                                                     if (!o) {
-                                                        i = r + 1;
+                                                        r = i + 1;
                                                         break
                                                     }
-                                                } else - 1 === c && (o = !1, c = r + 1), a >= 0 && (l === n.charCodeAt(a) ? -1 == --a && (s = r) : (a = -1, s = c))
+                                                } else - 1 === c && (o = !1, c = i + 1), a >= 0 && (l === n.charCodeAt(a) ? -1 == --a && (s = i) : (a = -1, s = c))
                                             }
-                                            return i === s ? s = c : -1 === s && (s = e.length), e.slice(i, s)
+                                            return r === s ? s = c : -1 === s && (s = e.length), e.slice(r, s)
                                         }
-                                        for (r = e.length - 1; r >= 0; --r)
-                                            if (47 === e.charCodeAt(r)) {
+                                        for (i = e.length - 1; i >= 0; --i)
+                                            if (47 === e.charCodeAt(i)) {
                                                 if (!o) {
-                                                    i = r + 1;
+                                                    r = i + 1;
                                                     break
                                                 }
-                                            } else - 1 === s && (o = !1, s = r + 1);
-                                        return -1 === s ? "" : e.slice(i, s)
+                                            } else - 1 === s && (o = !1, s = i + 1);
+                                        return -1 === s ? "" : e.slice(r, s)
                                     },
                                     extname: function(e) {
                                         t(e);
-                                        for (var n = -1, r = 0, i = -1, s = !0, o = 0, a = e.length - 1; a >= 0; --a) {
+                                        for (var n = -1, i = 0, r = -1, s = !0, o = 0, a = e.length - 1; a >= 0; --a) {
                                             var c = e.charCodeAt(a);
-                                            if (47 !== c) - 1 === i && (s = !1, i = a + 1), 46 === c ? -1 === n ? n = a : 1 !== o && (o = 1) : -1 !== n && (o = -1);
+                                            if (47 !== c) - 1 === r && (s = !1, r = a + 1), 46 === c ? -1 === n ? n = a : 1 !== o && (o = 1) : -1 !== n && (o = -1);
                                             else if (!s) {
-                                                r = a + 1;
+                                                i = a + 1;
                                                 break
                                             }
                                         }
-                                        return -1 === n || -1 === i || 0 === o || 1 === o && n === i - 1 && n === r + 1 ? "" : e.slice(n, i)
+                                        return -1 === n || -1 === r || 0 === o || 1 === o && n === r - 1 && n === i + 1 ? "" : e.slice(n, r)
                                     },
                                     format: function(e) {
                                         if (null === e || "object" != typeof e) throw new TypeError('The "pathObject" argument must be of type Object. Received type ' + typeof e);
                                         return function(e, t) {
                                             var n = t.dir || t.root,
-                                                r = t.base || (t.name || "") + (t.ext || "");
-                                            return n ? n === t.root ? n + r : n + "/" + r : r
+                                                i = t.base || (t.name || "") + (t.ext || "");
+                                            return n ? n === t.root ? n + i : n + "/" + i : i
                                         }(0, e)
                                     },
                                     parse: function(e) {
@@ -6870,11 +6890,11 @@
                                             name: ""
                                         };
                                         if (0 === e.length) return n;
-                                        var r, i = e.charCodeAt(0),
-                                            s = 47 === i;
-                                        s ? (n.root = "/", r = 1) : r = 0;
-                                        for (var o = -1, a = 0, c = -1, l = !0, u = e.length - 1, d = 0; u >= r; --u)
-                                            if (47 !== (i = e.charCodeAt(u))) - 1 === c && (l = !1, c = u + 1), 46 === i ? -1 === o ? o = u : 1 !== d && (d = 1) : -1 !== o && (d = -1);
+                                        var i, r = e.charCodeAt(0),
+                                            s = 47 === r;
+                                        s ? (n.root = "/", i = 1) : i = 0;
+                                        for (var o = -1, a = 0, c = -1, l = !0, u = e.length - 1, d = 0; u >= i; --u)
+                                            if (47 !== (r = e.charCodeAt(u))) - 1 === c && (l = !1, c = u + 1), 46 === r ? -1 === o ? o = u : 1 !== d && (d = 1) : -1 !== o && (d = -1);
                                             else if (!l) {
                                             a = u + 1;
                                             break
@@ -6886,17 +6906,17 @@
                                     win32: null,
                                     posix: null
                                 };
-                                r.posix = r, e.exports = r
+                                i.posix = i, e.exports = i
                             },
                             447: (e, t, n) => {
-                                var r;
+                                var i;
                                 if (n.r(t), n.d(t, {
                                         URI: () => g,
                                         Utils: () => T
-                                    }), "object" == typeof process) r = "win32" === process.platform;
+                                    }), "object" == typeof process) i = "win32" === process.platform;
                                 else if ("object" == typeof navigator) {
-                                    var i = navigator.userAgent;
-                                    r = i.indexOf("Windows") >= 0
+                                    var r = navigator.userAgent;
+                                    i = r.indexOf("Windows") >= 0
                                 }
                                 var s, o, a = (s = function(e, t) {
                                         return (s = Object.setPrototypeOf || {
@@ -6927,22 +6947,22 @@
                                             if (!l.test(e.path)) throw new Error('[UriError]: If a URI contains an authority component, then the path component must either be empty or begin with a slash ("/") character')
                                         } else if (u.test(e.path)) throw new Error('[UriError]: If a URI does not contain an authority component, then the path cannot begin with two slash characters ("//")')
                                 }
-                                var h = "",
-                                    p = "/",
+                                var p = "",
+                                    h = "/",
                                     f = /^(([^:/?#]+?):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/,
                                     g = function() {
-                                        function e(e, t, n, r, i, s) {
-                                            void 0 === s && (s = !1), "object" == typeof e ? (this.scheme = e.scheme || h, this.authority = e.authority || h, this.path = e.path || h, this.query = e.query || h, this.fragment = e.fragment || h) : (this.scheme = function(e, t) {
+                                        function e(e, t, n, i, r, s) {
+                                            void 0 === s && (s = !1), "object" == typeof e ? (this.scheme = e.scheme || p, this.authority = e.authority || p, this.path = e.path || p, this.query = e.query || p, this.fragment = e.fragment || p) : (this.scheme = function(e, t) {
                                                 return e || t ? e : "file"
-                                            }(e, s), this.authority = t || h, this.path = function(e, t) {
+                                            }(e, s), this.authority = t || p, this.path = function(e, t) {
                                                 switch (e) {
                                                     case "https":
                                                     case "http":
                                                     case "file":
-                                                        t ? t[0] !== p && (t = p + t) : t = p
+                                                        t ? t[0] !== h && (t = h + t) : t = h
                                                 }
                                                 return t
-                                            }(this.scheme, n || h), this.query = r || h, this.fragment = i || h, d(this, s))
+                                            }(this.scheme, n || p), this.query = i || p, this.fragment = r || p, d(this, s))
                                         }
                                         return e.isUri = function(t) {
                                             return t instanceof e || !!t && "string" == typeof t.authority && "string" == typeof t.fragment && "string" == typeof t.path && "string" == typeof t.query && "string" == typeof t.scheme && "string" == typeof t.fsPath && "function" == typeof t.with && "function" == typeof t.toString
@@ -6956,20 +6976,20 @@
                                             if (!e) return this;
                                             var t = e.scheme,
                                                 n = e.authority,
-                                                r = e.path,
-                                                i = e.query,
+                                                i = e.path,
+                                                r = e.query,
                                                 s = e.fragment;
-                                            return void 0 === t ? t = this.scheme : null === t && (t = h), void 0 === n ? n = this.authority : null === n && (n = h), void 0 === r ? r = this.path : null === r && (r = h), void 0 === i ? i = this.query : null === i && (i = h), void 0 === s ? s = this.fragment : null === s && (s = h), t === this.scheme && n === this.authority && r === this.path && i === this.query && s === this.fragment ? this : new v(t, n, r, i, s)
+                                            return void 0 === t ? t = this.scheme : null === t && (t = p), void 0 === n ? n = this.authority : null === n && (n = p), void 0 === i ? i = this.path : null === i && (i = p), void 0 === r ? r = this.query : null === r && (r = p), void 0 === s ? s = this.fragment : null === s && (s = p), t === this.scheme && n === this.authority && i === this.path && r === this.query && s === this.fragment ? this : new v(t, n, i, r, s)
                                         }, e.parse = function(e, t) {
                                             void 0 === t && (t = !1);
                                             var n = f.exec(e);
-                                            return n ? new v(n[2] || h, O(n[4] || h), O(n[5] || h), O(n[7] || h), O(n[9] || h), t) : new v(h, h, h, h, h)
+                                            return n ? new v(n[2] || p, O(n[4] || p), O(n[5] || p), O(n[7] || p), O(n[9] || p), t) : new v(p, p, p, p, p)
                                         }, e.file = function(e) {
-                                            var t = h;
-                                            if (r && (e = e.replace(/\\/g, p)), e[0] === p && e[1] === p) {
-                                                var n = e.indexOf(p, 2); - 1 === n ? (t = e.substring(2), e = p) : (t = e.substring(2, n), e = e.substring(n) || p)
+                                            var t = p;
+                                            if (i && (e = e.replace(/\\/g, h)), e[0] === h && e[1] === h) {
+                                                var n = e.indexOf(h, 2); - 1 === n ? (t = e.substring(2), e = h) : (t = e.substring(2, n), e = e.substring(n) || h)
                                             }
-                                            return new v("file", t, e, h, h)
+                                            return new v("file", t, e, p, p)
                                         }, e.from = function(e) {
                                             var t = new v(e.scheme, e.authority, e.path, e.query, e.fragment);
                                             return d(t, !0), t
@@ -6986,7 +7006,7 @@
                                             return t
                                         }, e
                                     }(),
-                                    m = r ? 1 : void 0,
+                                    m = i ? 1 : void 0,
                                     v = function(e) {
                                         function t() {
                                             var t = null !== e && e.apply(this, arguments) || this;
@@ -7010,45 +7030,45 @@
                                     y = ((o = {})[58] = "%3A", o[47] = "%2F", o[63] = "%3F", o[35] = "%23", o[91] = "%5B", o[93] = "%5D", o[64] = "%40", o[33] = "%21", o[36] = "%24", o[38] = "%26", o[39] = "%27", o[40] = "%28", o[41] = "%29", o[42] = "%2A", o[43] = "%2B", o[44] = "%2C", o[59] = "%3B", o[61] = "%3D", o[32] = "%20", o);
 
                                 function b(e, t) {
-                                    for (var n = void 0, r = -1, i = 0; i < e.length; i++) {
-                                        var s = e.charCodeAt(i);
-                                        if (s >= 97 && s <= 122 || s >= 65 && s <= 90 || s >= 48 && s <= 57 || 45 === s || 46 === s || 95 === s || 126 === s || t && 47 === s) - 1 !== r && (n += encodeURIComponent(e.substring(r, i)), r = -1), void 0 !== n && (n += e.charAt(i));
+                                    for (var n = void 0, i = -1, r = 0; r < e.length; r++) {
+                                        var s = e.charCodeAt(r);
+                                        if (s >= 97 && s <= 122 || s >= 65 && s <= 90 || s >= 48 && s <= 57 || 45 === s || 46 === s || 95 === s || 126 === s || t && 47 === s) - 1 !== i && (n += encodeURIComponent(e.substring(i, r)), i = -1), void 0 !== n && (n += e.charAt(r));
                                         else {
-                                            void 0 === n && (n = e.substr(0, i));
+                                            void 0 === n && (n = e.substr(0, r));
                                             var o = y[s];
-                                            void 0 !== o ? (-1 !== r && (n += encodeURIComponent(e.substring(r, i)), r = -1), n += o) : -1 === r && (r = i)
+                                            void 0 !== o ? (-1 !== i && (n += encodeURIComponent(e.substring(i, r)), i = -1), n += o) : -1 === i && (i = r)
                                         }
                                     }
-                                    return -1 !== r && (n += encodeURIComponent(e.substring(r))), void 0 !== n ? n : e
+                                    return -1 !== i && (n += encodeURIComponent(e.substring(i))), void 0 !== n ? n : e
                                 }
 
                                 function w(e) {
                                     for (var t = void 0, n = 0; n < e.length; n++) {
-                                        var r = e.charCodeAt(n);
-                                        35 === r || 63 === r ? (void 0 === t && (t = e.substr(0, n)), t += y[r]) : void 0 !== t && (t += e[n])
+                                        var i = e.charCodeAt(n);
+                                        35 === i || 63 === i ? (void 0 === t && (t = e.substr(0, n)), t += y[i]) : void 0 !== t && (t += e[n])
                                     }
                                     return void 0 !== t ? t : e
                                 }
 
                                 function _(e, t) {
                                     var n;
-                                    return n = e.authority && e.path.length > 1 && "file" === e.scheme ? "//".concat(e.authority).concat(e.path) : 47 === e.path.charCodeAt(0) && (e.path.charCodeAt(1) >= 65 && e.path.charCodeAt(1) <= 90 || e.path.charCodeAt(1) >= 97 && e.path.charCodeAt(1) <= 122) && 58 === e.path.charCodeAt(2) ? t ? e.path.substr(1) : e.path[1].toLowerCase() + e.path.substr(2) : e.path, r && (n = n.replace(/\//g, "\\")), n
+                                    return n = e.authority && e.path.length > 1 && "file" === e.scheme ? "//".concat(e.authority).concat(e.path) : 47 === e.path.charCodeAt(0) && (e.path.charCodeAt(1) >= 65 && e.path.charCodeAt(1) <= 90 || e.path.charCodeAt(1) >= 97 && e.path.charCodeAt(1) <= 122) && 58 === e.path.charCodeAt(2) ? t ? e.path.substr(1) : e.path[1].toLowerCase() + e.path.substr(2) : e.path, i && (n = n.replace(/\//g, "\\")), n
                                 }
 
                                 function S(e, t) {
                                     var n = t ? w : b,
-                                        r = "",
-                                        i = e.scheme,
+                                        i = "",
+                                        r = e.scheme,
                                         s = e.authority,
                                         o = e.path,
                                         a = e.query,
                                         c = e.fragment;
-                                    if (i && (r += i, r += ":"), (s || "file" === i) && (r += p, r += p), s) {
+                                    if (r && (i += r, i += ":"), (s || "file" === r) && (i += h, i += h), s) {
                                         var l = s.indexOf("@");
                                         if (-1 !== l) {
                                             var u = s.substr(0, l);
-                                            s = s.substr(l + 1), -1 === (l = u.indexOf(":")) ? r += n(u, !1) : (r += n(u.substr(0, l), !1), r += ":", r += n(u.substr(l + 1), !1)), r += "@"
-                                        } - 1 === (l = (s = s.toLowerCase()).indexOf(":")) ? r += n(s, !1) : (r += n(s.substr(0, l), !1), r += s.substr(l))
+                                            s = s.substr(l + 1), -1 === (l = u.indexOf(":")) ? i += n(u, !1) : (i += n(u.substr(0, l), !1), i += ":", i += n(u.substr(l + 1), !1)), i += "@"
+                                        } - 1 === (l = (s = s.toLowerCase()).indexOf(":")) ? i += n(s, !1) : (i += n(s.substr(0, l), !1), i += s.substr(l))
                                     }
                                     if (o) {
                                         if (o.length >= 3 && 47 === o.charCodeAt(0) && 58 === o.charCodeAt(2))(d = o.charCodeAt(1)) >= 65 && d <= 90 && (o = "/".concat(String.fromCharCode(d + 32), ":").concat(o.substr(3)));
@@ -7056,9 +7076,9 @@
                                             var d;
                                             (d = o.charCodeAt(0)) >= 65 && d <= 90 && (o = "".concat(String.fromCharCode(d + 32), ":").concat(o.substr(2)))
                                         }
-                                        r += n(o, !0)
+                                        i += n(o, !0)
                                     }
-                                    return a && (r += "?", r += n(a, !1)), c && (r += "#", r += t ? c : b(c, !1)), r
+                                    return a && (i += "?", i += n(a, !1)), c && (i += "#", i += t ? c : b(c, !1)), i
                                 }
 
                                 function P(e) {
@@ -7078,8 +7098,8 @@
                                 var T, x = n(470),
                                     j = function(e, t, n) {
                                         if (n || 2 === arguments.length)
-                                            for (var r, i = 0, s = t.length; i < s; i++) !r && i in t || (r || (r = Array.prototype.slice.call(t, 0, i)), r[i] = t[i]);
-                                        return e.concat(r || Array.prototype.slice.call(t))
+                                            for (var i, r = 0, s = t.length; r < s; r++) !i && r in t || (i || (i = Array.prototype.slice.call(t, 0, r)), i[r] = t[r]);
+                                        return e.concat(i || Array.prototype.slice.call(t))
                                     },
                                     E = x.posix || x;
                                 ! function(e) {
@@ -7090,9 +7110,9 @@
                                         })
                                     }, e.resolvePath = function(e) {
                                         for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-                                        var r = e.path || "/";
+                                        var i = e.path || "/";
                                         return e.with({
-                                            path: E.resolve.apply(E, j([r], t, !1))
+                                            path: E.resolve.apply(E, j([i], t, !1))
                                         })
                                     }, e.dirname = function(e) {
                                         var t = E.dirname(e.path);
@@ -7109,17 +7129,17 @@
                         },
                         t = {};
 
-                    function n(r) {
-                        if (t[r]) return t[r].exports;
-                        var i = t[r] = {
+                    function n(i) {
+                        if (t[i]) return t[i].exports;
+                        var r = t[i] = {
                             exports: {}
                         };
-                        return e[r](i, i.exports, n), i.exports
+                        return e[i](r, r.exports, n), r.exports
                     }
                     return n.d = (e, t) => {
-                        for (var r in t) n.o(t, r) && !n.o(e, r) && Object.defineProperty(e, r, {
+                        for (var i in t) n.o(t, i) && !n.o(e, i) && Object.defineProperty(e, i, {
                             enumerable: !0,
-                            get: t[r]
+                            get: t[i]
                         })
                     }, n.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), n.r = e => {
                         "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -7130,23 +7150,23 @@
                     }, n(447)
                 })();
                 const {
-                    URI: i,
+                    URI: r,
                     Utils: s
-                } = r
+                } = i
             },
             4760: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -7156,22 +7176,22 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.standardLanguageDescriptions = t.allDiagnosticLanguages = void 0, t.isTsConfigFileName = function(e) {
+                }), t.standardLanguageDescriptions = t.allDiagnosticLanguages = t.DiagnosticLanguage = void 0, t.isTsConfigFileName = function(e) {
                     return /^tsconfig\.(.+\.)?json$/i.test((0, a.basename)(e))
                 }, t.isJsConfigOrTsConfigFileName = function(e) {
                     return /^[jt]sconfig\.(.+\.)?json$/i.test((0, a.basename)(e))
@@ -7182,11 +7202,14 @@
                 };
                 const a = n(6928),
                     c = o(n(3256));
-                t.allDiagnosticLanguages = [0, 1], t.standardLanguageDescriptions = [{
+                var l;
+                ! function(e) {
+                    e[e.JavaScript = 0] = "JavaScript", e[e.TypeScript = 1] = "TypeScript"
+                }(l || (t.DiagnosticLanguage = l = {})), t.allDiagnosticLanguages = [l.JavaScript, l.TypeScript], t.standardLanguageDescriptions = [{
                     id: "typescript",
                     diagnosticOwner: "typescript",
                     diagnosticSource: "ts",
-                    diagnosticLanguage: 1,
+                    diagnosticLanguage: l.TypeScript,
                     languageIds: [c.typescript, c.typescriptreact],
                     configFilePattern: /^tsconfig(\..*)?\.json$/i,
                     standardFileExtensions: ["ts", "tsx", "cts", "mts"]
@@ -7194,7 +7217,7 @@
                     id: "javascript",
                     diagnosticOwner: "typescript",
                     diagnosticSource: "ts",
-                    diagnosticLanguage: 0,
+                    diagnosticLanguage: l.JavaScript,
                     languageIds: [c.javascript, c.javascriptreact],
                     configFilePattern: /^jsconfig(\..*)?\.json$/i,
                     standardFileExtensions: ["js", "jsx", "cjs", "mjs", "es6", "pac"]
@@ -7202,17 +7225,17 @@
             },
             4821: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -7222,17 +7245,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -7263,61 +7286,61 @@
                         }, t)
                     }
                     async provideDocumentRangeSemanticTokens(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r || e.offsetAt(t.end) - e.offsetAt(t.start) > u) return null;
-                        const i = e.offsetAt(t.start),
-                            s = e.offsetAt(t.end) - i;
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i || e.offsetAt(t.end) - e.offsetAt(t.start) > u) return null;
+                        const r = e.offsetAt(t.start),
+                            s = e.offsetAt(t.end) - r;
                         return this.provideSemanticTokens(e, {
-                            file: r,
-                            start: i,
+                            file: i,
+                            start: r,
                             length: s
                         }, n)
                     }
                     async provideSemanticTokens(e, t, n) {
                         if (!this.client.toOpenTsFilePath(e)) return null;
-                        const r = e.version,
-                            i = await this.client.execute("encodedSemanticClassifications-full", {
+                        const i = e.version,
+                            r = await this.client.execute("encodedSemanticClassifications-full", {
                                 ...t,
                                 format: "2020"
                             }, n, {
                                 cancelOnResourceChange: e.uri
                             });
-                        if ("response" !== i.type || !i.body) return null;
-                        if (r !== e.version) throw await
+                        if ("response" !== r.type || !r.body) return null;
+                        if (i !== e.version) throw await
                         function(e) {
                             let t = e.version;
                             return new Promise(n => {
-                                const r = setInterval(i => {
-                                    e.version === t && (clearInterval(r), n()), t = e.version
+                                const i = setInterval(r => {
+                                    e.version === t && (clearInterval(i), n()), t = e.version
                                 }, 400)
                             })
                         }(e), new a.CancellationError;
-                        const s = i.body.spans,
+                        const s = r.body.spans,
                             o = new a.SemanticTokensBuilder;
                         for (let t = 0; t < s.length;) {
                             const n = s[t++],
-                                r = s[t++],
                                 i = s[t++],
-                                a = h(i);
+                                r = s[t++],
+                                a = p(r);
                             if (void 0 === a) continue;
-                            const c = p(i),
+                            const c = h(r),
                                 l = e.positionAt(n),
-                                u = e.positionAt(n + r);
+                                u = e.positionAt(n + i);
                             for (let t = l.line; t <= u.line; t++) {
                                 const n = t === l.line ? l.character : 0,
-                                    r = t === u.line ? u.character : e.lineAt(t).text.length;
-                                o.push(t, n, r - n, a, c)
+                                    i = t === u.line ? u.character : e.lineAt(t).text.length;
+                                o.push(t, n, i - n, a, c)
                             }
                         }
                         return o.build()
                     }
                 }
 
-                function h(e) {
+                function p(e) {
                     if (e > 255) return (e >> 8) - 1
                 }
 
-                function p(e) {
+                function h(e) {
                     return 255 & e
                 }
                 const f = [];
@@ -7370,17 +7393,17 @@
             },
             4902: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -7390,17 +7413,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -7428,17 +7451,17 @@
             },
             4906: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -7448,28 +7471,28 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.BaseServiceConfigurationProvider = t.ImplicitProjectConfiguration = t.TsServerLogLevel = void 0, t.areServiceConfigurationsEqual = function(e, t) {
+                }), t.BaseServiceConfigurationProvider = t.ImplicitProjectConfiguration = t.SyntaxServerConfiguration = t.TsServerLogLevel = void 0, t.areServiceConfigurationsEqual = function(e, t) {
                     return c.equals(e, t)
                 };
                 const a = o(n(1398)),
                     c = o(n(71)),
                     l = o(n(857));
-                var u;
+                var u, d;
                 ! function(e) {
                     e[e.Off = 0] = "Off", e[e.Normal = 1] = "Normal", e[e.Terse = 2] = "Terse", e[e.Verbose = 3] = "Verbose"
                 }(u || (t.TsServerLogLevel = u = {})),
@@ -7498,10 +7521,13 @@
                                 return "off"
                         }
                     }
-                }(u || (t.TsServerLogLevel = u = {}));
-                class d {
+                }(u || (t.TsServerLogLevel = u = {})),
+                function(e) {
+                    e[e.Never = 0] = "Never", e[e.Always = 1] = "Always", e[e.Auto = 2] = "Auto"
+                }(d || (t.SyntaxServerConfiguration = d = {}));
+                class p {
                     constructor(e) {
-                        this.target = d.readTarget(e), this.module = d.readModule(e), this.checkJs = d.readCheckJs(e), this.experimentalDecorators = d.readExperimentalDecorators(e), this.strictNullChecks = d.readImplicitStrictNullChecks(e), this.strictFunctionTypes = d.readImplicitStrictFunctionTypes(e)
+                        this.target = p.readTarget(e), this.module = p.readModule(e), this.checkJs = p.readCheckJs(e), this.experimentalDecorators = p.readExperimentalDecorators(e), this.strictNullChecks = p.readImplicitStrictNullChecks(e), this.strictFunctionTypes = p.readImplicitStrictFunctionTypes(e)
                     }
                     isEqualTo(e) {
                         return c.equals(this, e)
@@ -7525,9 +7551,9 @@
                         return e.get("js/ts.implicitProjectConfig.strictFunctionTypes", !0)
                     }
                 }
-                t.ImplicitProjectConfiguration = d;
+                t.ImplicitProjectConfiguration = p;
                 const h = "vscode",
-                    p = 3072;
+                    f = 3072;
                 t.BaseServiceConfigurationProvider = class {
                     loadFromWorkspace() {
                         const e = a.workspace.getConfiguration();
@@ -7538,7 +7564,7 @@
                             npmLocation: this.readNpmLocation(e),
                             tsServerLogLevel: this.readTsServerLogLevel(e),
                             tsServerPluginPaths: this.readTsServerPluginPaths(e),
-                            implicitProjectConfiguration: new d(e),
+                            implicitProjectConfiguration: new p(e),
                             disableAutomaticTypeAcquisition: this.readDisableAutomaticTypeAcquisition(e),
                             useSyntaxServer: this.readUseSyntaxServer(e),
                             webProjectWideIntellisenseEnabled: this.readWebProjectWideIntellisenseEnable(e),
@@ -7579,14 +7605,14 @@
                     readUseSyntaxServer(e) {
                         switch (e.get("typescript.tsserver.useSyntaxServer")) {
                             case "never":
-                                return 0;
+                                return d.Never;
                             case "always":
-                                return 1;
+                                return d.Always;
                             case "auto":
-                                return 2
+                                return d.Auto
                         }
                         const t = e.get("typescript.tsserver.useSeparateSyntaxServer", !0);
-                        return "forAllRequests" === t ? 1 : !0 === t ? 2 : 0
+                        return "forAllRequests" === t ? d.Always : !0 === t ? d.Auto : d.Never
                     }
                     readEnableDiagnosticsTelemetry(e) {
                         return e.get("typescript.enableDiagnosticsTelemetry", !1)
@@ -7614,8 +7640,8 @@
                         return t <= 0 && (t = function() {
                             const e = l.totalmem() / 1073741824;
                             let t = Math.floor(1024 * Math.min(.5 * e, 32));
-                            return t < p && (t = p), t
-                        }()), t < 128 && (t = 128), Number.isSafeInteger(t) ? Math.max(t, 128) : p
+                            return t < f && (t = f), t
+                        }()), t < 128 && (t = 128), Number.isSafeInteger(t) ? Math.max(t, 128) : f
                     }
                     readUseBundledNode(e) {
                         return e.get("typescript.tsserver.experimental.useBundledNode", !0)
@@ -7645,17 +7671,17 @@
             },
             4921: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -7665,17 +7691,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -7691,15 +7717,15 @@
                 function d(e) {
                     const t = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
                     let n = "";
-                    for (let r = 0; r < e; r++) n += t[Math.floor(t.length * Math.random())];
+                    for (let i = 0; i < e; i++) n += t[Math.floor(t.length * Math.random())];
                     return n
                 }
-                const h = new u.Lazy(() => {
+                const p = new u.Lazy(() => {
                     const e = `vscode-typescript${"win32"!==process.platform&&process.getuid?process.getuid():""}`;
                     return l.join(c.tmpdir(), e)
                 });
                 t.instanceTempDir = new u.Lazy(() => {
-                    const e = l.join(h.value, d(20));
+                    const e = l.join(p.value, d(20));
                     return a.mkdirSync(e, {
                         recursive: !0
                     }), e
@@ -7715,8 +7741,8 @@
             },
             4950: (e, t, n) => {
                 "use strict";
-                const r = n(9896),
-                    i = n(857),
+                const i = n(9896),
+                    r = n(857),
                     s = n(5317).spawn,
                     o = {
                         ps: () => n(5896),
@@ -7738,46 +7764,46 @@
                         sunos: "ps",
                         win: "wmic"
                     };
-                let c, l = i.platform();
-                r.existsSync("/etc/alpine-release") && (l = "alpine"), l.match(/^win/) && (l = "win");
+                let c, l = r.platform();
+                i.existsSync("/etc/alpine-release") && (l = "alpine"), l.match(/^win/) && (l = "win");
                 try {
                     c = o[a[l]]()
                 } catch (e) {}
                 e.exports = function(e, t, n) {
-                    let r = c;
-                    if ("win" !== l && !0 === t.usePs && (r = o.ps()), "win" === l) {
+                    let i = c;
+                    if ("win" !== l && !0 === t.usePs && (i = o.ps()), "win" === l) {
                         let e;
                         try {
                             e = s("wmic", function(e) {
                                 if (e) throw new Error(e)
                             })
                         } catch (e) {
-                            r = o.gwmi()
+                            i = o.gwmi()
                         } finally {
                             e && e.kill()
                         }
                     }
-                    if (void 0 === r) return n(new Error(i.platform() + " is not supported yet, please open an issue (https://github.com/soyuka/pidusage)"));
+                    if (void 0 === i) return n(new Error(r.platform() + " is not supported yet, please open an issue (https://github.com/soyuka/pidusage)"));
                     let a = !1;
                     if (Array.isArray(e) || (a = !0, e = [e]), 0 === e.length) return n(new TypeError("You must provide at least one pid"));
                     for (let t = 0; t < e.length; t++)
                         if (e[t] = parseInt(e[t], 10), isNaN(e[t]) || e[t] < 0) return n(new TypeError("One of the pids provided is invalid"));
-                    r(e, t, function(t, r) {
+                    i(e, t, function(t, i) {
                         if (t) return n(t);
-                        n(null, a ? r[e[0]] : r)
+                        n(null, a ? i[e[0]] : i)
                     })
                 }
             },
             5032: (e, t, n) => {
-                const r = n(8311),
-                    i = n(3904),
+                const i = n(8311),
+                    r = n(3904),
                     {
                         ANY: s
-                    } = i,
+                    } = r,
                     o = n(7638),
                     a = n(560),
-                    c = [new i(">=0.0.0-0")],
-                    l = [new i(">=0.0.0")],
+                    c = [new r(">=0.0.0-0")],
+                    l = [new r(">=0.0.0")],
                     u = (e, t, n) => {
                         if (e === t) return !0;
                         if (1 === e.length && e[0].semver === s) {
@@ -7788,74 +7814,74 @@
                             if (n.includePrerelease) return !0;
                             t = l
                         }
-                        const r = new Set;
-                        let i, u, p, f, g, m, v;
-                        for (const t of e) ">" === t.operator || ">=" === t.operator ? i = d(i, t, n) : "<" === t.operator || "<=" === t.operator ? u = h(u, t, n) : r.add(t.semver);
-                        if (r.size > 1) return null;
-                        if (i && u) {
-                            if (p = a(i.semver, u.semver, n), p > 0) return null;
-                            if (0 === p && (">=" !== i.operator || "<=" !== u.operator)) return null
+                        const i = new Set;
+                        let r, u, h, f, g, m, v;
+                        for (const t of e) ">" === t.operator || ">=" === t.operator ? r = d(r, t, n) : "<" === t.operator || "<=" === t.operator ? u = p(u, t, n) : i.add(t.semver);
+                        if (i.size > 1) return null;
+                        if (r && u) {
+                            if (h = a(r.semver, u.semver, n), h > 0) return null;
+                            if (0 === h && (">=" !== r.operator || "<=" !== u.operator)) return null
                         }
-                        for (const e of r) {
-                            if (i && !o(e, String(i), n)) return null;
+                        for (const e of i) {
+                            if (r && !o(e, String(r), n)) return null;
                             if (u && !o(e, String(u), n)) return null;
-                            for (const r of t)
-                                if (!o(e, String(r), n)) return !1;
+                            for (const i of t)
+                                if (!o(e, String(i), n)) return !1;
                             return !0
                         }
                         let y = !(!u || n.includePrerelease || !u.semver.prerelease.length) && u.semver,
-                            b = !(!i || n.includePrerelease || !i.semver.prerelease.length) && i.semver;
+                            b = !(!r || n.includePrerelease || !r.semver.prerelease.length) && r.semver;
                         y && 1 === y.prerelease.length && "<" === u.operator && 0 === y.prerelease[0] && (y = !1);
                         for (const e of t) {
-                            if (v = v || ">" === e.operator || ">=" === e.operator, m = m || "<" === e.operator || "<=" === e.operator, i)
+                            if (v = v || ">" === e.operator || ">=" === e.operator, m = m || "<" === e.operator || "<=" === e.operator, r)
                                 if (b && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === b.major && e.semver.minor === b.minor && e.semver.patch === b.patch && (b = !1), ">" === e.operator || ">=" === e.operator) {
-                                    if (f = d(i, e, n), f === e && f !== i) return !1
-                                } else if (">=" === i.operator && !o(i.semver, String(e), n)) return !1;
+                                    if (f = d(r, e, n), f === e && f !== r) return !1
+                                } else if (">=" === r.operator && !o(r.semver, String(e), n)) return !1;
                             if (u)
                                 if (y && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === y.major && e.semver.minor === y.minor && e.semver.patch === y.patch && (y = !1), "<" === e.operator || "<=" === e.operator) {
-                                    if (g = h(u, e, n), g === e && g !== u) return !1
+                                    if (g = p(u, e, n), g === e && g !== u) return !1
                                 } else if ("<=" === u.operator && !o(u.semver, String(e), n)) return !1;
-                            if (!e.operator && (u || i) && 0 !== p) return !1
+                            if (!e.operator && (u || r) && 0 !== h) return !1
                         }
-                        return !(i && m && !u && 0 !== p || u && v && !i && 0 !== p || b || y)
+                        return !(r && m && !u && 0 !== h || u && v && !r && 0 !== h || b || y)
                     },
                     d = (e, t, n) => {
                         if (!e) return t;
-                        const r = a(e.semver, t.semver, n);
-                        return r > 0 ? e : r < 0 || ">" === t.operator && ">=" === e.operator ? t : e
+                        const i = a(e.semver, t.semver, n);
+                        return i > 0 ? e : i < 0 || ">" === t.operator && ">=" === e.operator ? t : e
                     },
-                    h = (e, t, n) => {
+                    p = (e, t, n) => {
                         if (!e) return t;
-                        const r = a(e.semver, t.semver, n);
-                        return r < 0 ? e : r > 0 || "<" === t.operator && "<=" === e.operator ? t : e
+                        const i = a(e.semver, t.semver, n);
+                        return i < 0 ? e : i > 0 || "<" === t.operator && "<=" === e.operator ? t : e
                     };
                 e.exports = (e, t, n = {}) => {
                     if (e === t) return !0;
-                    e = new r(e, n), t = new r(t, n);
-                    let i = !1;
-                    e: for (const r of e.set) {
+                    e = new i(e, n), t = new i(t, n);
+                    let r = !1;
+                    e: for (const i of e.set) {
                         for (const e of t.set) {
-                            const t = u(r, e, n);
-                            if (i = i || null !== t, t) continue e
+                            const t = u(i, e, n);
+                            if (r = r || null !== t, t) continue e
                         }
-                        if (i) return !1
+                        if (r) return !1
                     }
                     return !0
                 }
             },
             5141: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -7865,17 +7891,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -7903,8 +7929,8 @@
                     set(e, t) {
                         const n = this.toKey(e);
                         if (!n) return;
-                        const r = this._map.get(n);
-                        r ? r.value = t : this._map.set(n, {
+                        const i = this._map.get(n);
+                        i ? i.value = t : this._map.set(n, {
                             resource: e,
                             value: t
                         })
@@ -7934,17 +7960,17 @@
             },
             5187: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -7954,17 +7980,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -7990,14 +8016,14 @@
                         const t = e.document.uri,
                             n = await a.workspace.openTextDocument(t);
                         if (!(0, c.isSupportedLanguageMode)(n)) return void a.window.showErrorMessage(a.l10n.t("Go to Source Definition failed. Unsupported file type."));
-                        const r = this.client.toOpenTsFilePath(n);
-                        r ? await a.window.withProgress({
+                        const i = this.client.toOpenTsFilePath(n);
+                        i ? await a.window.withProgress({
                             location: a.ProgressLocation.Window,
                             title: a.l10n.t("Finding source definitions")
-                        }, async (n, i) => {
+                        }, async (n, r) => {
                             const s = e.selection.anchor,
-                                o = u.Position.toFileLocationRequestArgs(r, s),
-                                c = await this.client.execute("findSourceDefinition", o, i);
+                                o = u.Position.toFileLocationRequestArgs(i, s),
+                                c = await this.client.execute("findSourceDefinition", o, r);
                             if ("response" === c.type && c.body) {
                                 const e = c.body.map(e => u.Location.fromTextSpan(this.client.toResource(e.file), e));
                                 if (e.length) return void(1 === e.length ? a.commands.executeCommand("vscode.open", e[0].uri.with({
@@ -8011,22 +8037,22 @@
                 d.context = "tsSupportsSourceDefinition", d.minVersion = l.API.v470
             },
             5200: (e, t, n) => {
-                const r = n(560);
-                e.exports = (e, t, n) => r(e, t, n) <= 0
+                const i = n(560);
+                e.exports = (e, t, n) => i(e, t, n) <= 0
             },
             5256: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -8036,17 +8062,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     }),
                     a = this && this.__importDefault || function(e) {
@@ -8059,13 +8085,13 @@
                 }), t.activate = function(e) {
                     const t = new d.CommandManager;
                     e.subscriptions.push(t);
-                    if (l.workspace.getConfiguration("typescript").get("experimental.useTsgo", !1)) return t.register(new h.DisableTsgoCommand), {
+                    if (l.workspace.getConfiguration("typescript").get("experimental.useTsgo", !1)) return t.register(new p.DisableTsgoCommand), {
                         getAPI() {}
                     };
-                    const r = new _.PluginManager;
-                    e.subscriptions.push(r);
-                    const i = new l.EventEmitter;
+                    const i = new _.PluginManager;
                     e.subscriptions.push(i);
+                    const r = new l.EventEmitter;
+                    e.subscriptions.push(r);
                     const s = new w.NodeLogDirectoryProvider(e),
                         a = new P.DiskTypeScriptVersionProvider,
                         c = new C.ActiveJsTsEditorTracker;
@@ -8076,12 +8102,12 @@
                         const {
                             name: t,
                             version: n
-                        } = k, r = new E.default("");
-                        j = new g.ExperimentationTelemetryReporter(r), e.subscriptions.push(j), new m.ExperimentationService(j, t, n, e.globalState)
+                        } = k, i = new E.default("");
+                        j = new g.ExperimentationTelemetryReporter(i), e.subscriptions.push(j), new m.ExperimentationService(j, t, n, e.globalState)
                     }
                     const D = new y.Logger,
-                        M = (0, v.createLazyClientHost)(e, (0, O.onCaseInsensitiveFileSystem)(), {
-                            pluginManager: r,
+                        R = (0, v.createLazyClientHost)(e, (0, O.onCaseInsensitiveFileSystem)(), {
+                            pluginManager: i,
                             commandManager: t,
                             logDirectoryProvider: s,
                             cancellerFactory: b.nodeRequestCancellerFactory,
@@ -8092,13 +8118,13 @@
                             experimentTelemetryReporter: j,
                             logger: D
                         }, e => {
-                            i.fire(e)
+                            r.fire(e)
                         });
-                    return (0, p.registerBaseCommands)(t, M, r, c), Promise.resolve().then(() => o(n(2071))).then(t => {
-                        e.subscriptions.push(t.register(new T.Lazy(() => M.value.serviceClient)))
+                    return (0, h.registerBaseCommands)(t, R, i, c), Promise.resolve().then(() => o(n(2071))).then(t => {
+                        e.subscriptions.push(t.register(new T.Lazy(() => R.value.serviceClient)))
                     }), Promise.resolve().then(() => o(n(1520))).then(t => {
                         e.subscriptions.push(t.register())
-                    }), e.subscriptions.push((0, v.lazilyActivateClient)(M, r, c)), (0, u.getExtensionApi)(i.event, r)
+                    }), e.subscriptions.push((0, v.lazilyActivateClient)(R, i, c)), (0, u.getExtensionApi)(r.event, i)
                 }, t.deactivate = function() {
                     c.rmSync(j.instanceTempDir.value, {
                         recursive: !0,
@@ -8109,8 +8135,8 @@
                     l = o(n(1398)),
                     u = n(9301),
                     d = n(7906),
-                    h = n(7284),
-                    p = n(3316),
+                    p = n(7284),
+                    h = n(3316),
                     f = n(2236),
                     g = n(4846),
                     m = n(5894),
@@ -8168,22 +8194,22 @@
                 })
             },
             5342: (e, t, n) => {
-                const r = n(7075);
-                e.exports = (e, t, n) => r(e, t, "<", n)
+                const i = n(7075);
+                e.exports = (e, t, n) => i(e, t, "<", n)
             },
             5365: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -8193,26 +8219,26 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.asPlainTextWithLinks = u, t.tagsToMarkdown = p, t.documentationToMarkdown = function(e, t, n, r) {
-                    const i = new a.MarkdownString;
-                    return f(i, e, t, n), i.baseUri = r, i.isTrusted = {
+                }), t.asPlainTextWithLinks = u, t.tagsToMarkdown = h, t.documentationToMarkdown = function(e, t, n, i) {
+                    const r = new a.MarkdownString;
+                    return f(r, e, t, n), r.baseUri = i, r.isTrusted = {
                         enabledCommands: [c.OpenJsDocLinkCommand.id]
-                    }, i
+                    }, r
                 }, t.appendDocumentationAsMarkdown = f;
                 const a = o(n(1398)),
                     c = n(6431),
@@ -8226,54 +8252,54 @@
                     if (!e) return "";
                     if ("string" == typeof e) return e;
                     const n = [];
-                    let r;
-                    for (const i of e) switch (i.kind) {
+                    let i;
+                    for (const r of e) switch (r.kind) {
                         case "link":
-                            if (r) {
-                                if (r.target) {
+                            if (i) {
+                                if (i.target) {
                                     const e = {
                                             file: {
-                                                ...t.toResource(r.target.file).toJSON(),
+                                                ...t.toResource(i.target.file).toJSON(),
                                                 $mid: void 0
                                             },
-                                            position: l.Position.fromLocation(r.target.start)
+                                            position: l.Position.fromLocation(i.target.start)
                                         },
-                                        i = `command:${c.OpenJsDocLinkCommand.id}?${encodeURIComponent(JSON.stringify([e]))}`,
-                                        s = r.text ? r.text : h(r.name ?? "");
-                                    n.push(`[${r.linkcode?"`"+s+"`":s}](${i})`)
+                                        r = `command:${c.OpenJsDocLinkCommand.id}?${encodeURIComponent(JSON.stringify([e]))}`,
+                                        s = i.text ? i.text : p(i.name ?? "");
+                                    n.push(`[${i.linkcode?"`"+s+"`":s}](${r})`)
                                 } else {
-                                    const e = r.text ?? r.name;
+                                    const e = i.text ?? i.name;
                                     if (e)
                                         if (/^https?:/.test(e)) {
                                             const t = e.split(" ");
-                                            if (1 !== t.length || r.linkcode) {
+                                            if (1 !== t.length || i.linkcode) {
                                                 const e = t.length > 1 ? t.slice(1).join(" ") : t[0];
-                                                n.push(`[${r.linkcode?"`"+h(e)+"`":e}](${t[0]})`)
+                                                n.push(`[${i.linkcode?"`"+p(e)+"`":e}](${t[0]})`)
                                             } else n.push(`<${t[0]}>`)
-                                        } else n.push(h(e))
+                                        } else n.push(p(e))
                                 }
-                                r = void 0
-                            } else r = {
-                                linkcode: "{@linkcode " === i.text
+                                i = void 0
+                            } else i = {
+                                linkcode: "{@linkcode " === r.text
                             };
                             break;
                         case "linkName":
-                            r && (r.name = i.text, r.target = i.target);
+                            i && (i.name = r.text, i.target = r.target);
                             break;
                         case "linkText":
-                            r && (r.text = i.text);
+                            i && (i.text = r.text);
                             break;
                         default:
-                            n.push(i.text)
+                            n.push(r.text)
                     }
                     return n.join("")
                 }
 
-                function h(e) {
+                function p(e) {
                     return e.replace(/`/g, "\\$&")
                 }
 
-                function p(e, t) {
+                function h(e, t) {
                     return e.map(e => function(e, t) {
                         switch (e.name) {
                             case "augments":
@@ -8285,17 +8311,17 @@
                                         const n = e.text;
                                         if (n && "string" != typeof n) {
                                             const e = n.filter(e => "typeParameterName" === e.kind).map(e => e.text).join(", "),
-                                                r = n.filter(e => "text" === e.kind).map(e => d(e.text.replace(/^\s*-?\s*/, ""), t)).join(" ");
-                                            return e ? ["", e, r] : void 0
+                                                i = n.filter(e => "text" === e.kind).map(e => d(e.text.replace(/^\s*-?\s*/, ""), t)).join(" ");
+                                            return e ? ["", e, i] : void 0
                                         }
                                     }
                                     return d(e.text, t).split(/^(\S+)\s*-?\s*/)
                                 }(e, t);
                                 if (3 === n?.length) {
                                     const t = n[1],
-                                        r = n[2],
-                                        i = `*@${e.name}* \`${t}\``;
-                                    return r ? i + (r.match(/\r\n|\n/g) ? "  \n" + r : ` — ${r}`) : i
+                                        i = n[2],
+                                        r = `*@${e.name}* \`${t}\``;
+                                    return i ? r + (i.match(/\r\n|\n/g) ? "  \n" + i : ` — ${i}`) : r
                                 }
                                 break
                             }
@@ -8304,37 +8330,37 @@
                                 if (!e.text?.length) return
                         }
                         const n = `*@${e.name}*`,
-                            r = function(e, t) {
+                            i = function(e, t) {
                                 if (!e.text) return;
 
                                 function n(e) {
                                     return /^\s*[~`]{3}/m.test(e) ? e : "```tsx\n" + e + "\n```"
                                 }
-                                let r = d(e.text, t);
+                                let i = d(e.text, t);
                                 switch (e.name) {
                                     case "example": {
-                                        r = "string" == typeof(i = e.text) ? i : i.map(e => e.text).join("");
-                                        const t = r.match(/<caption>(.*?)<\/caption>\s*(\r\n|\n)/);
-                                        return 0 === t?.index ? t[1] + "\n" + n(r.substr(t[0].length)) : n(r)
+                                        i = "string" == typeof(r = e.text) ? r : r.map(e => e.text).join("");
+                                        const t = i.match(/<caption>(.*?)<\/caption>\s*(\r\n|\n)/);
+                                        return 0 === t?.index ? t[1] + "\n" + n(i.substr(t[0].length)) : n(i)
                                     }
                                     case "author": {
-                                        const e = r.match(/(.+)\s<([-.\w]+@[-.\w]+)>/);
-                                        return null === e ? r : `${e[1]} ${e[2]}`
+                                        const e = i.match(/(.+)\s<([-.\w]+@[-.\w]+)>/);
+                                        return null === e ? i : `${e[1]} ${e[2]}`
                                     }
                                     case "default":
-                                        return n(r);
+                                        return n(i);
                                     default:
-                                        return r
+                                        return i
                                 }
-                                var i
+                                var r
                             }(e, t);
-                        return r ? n + (r.match(/\r\n|\n/g) ? "  \n" + r : ` — ${r}`) : n
+                        return i ? n + (i.match(/\r\n|\n/g) ? "  \n" + i : ` — ${i}`) : n
                     }(e, t)).join("  \n\n")
                 }
 
-                function f(e, t, n, r) {
-                    if (t && e.appendMarkdown(u(t, r)), n) {
-                        const t = p(n, r);
+                function f(e, t, n, i) {
+                    if (t && e.appendMarkdown(u(t, i)), n) {
+                        const t = h(n, i);
                         t && e.appendMarkdown("\n\n" + t)
                     }
                     return e.isTrusted = {
@@ -8344,17 +8370,17 @@
             },
             5376: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -8364,39 +8390,39 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.register = function(e, t, n, r, i, s, o, c) {
-                    return (0, g.conditionalRegistration)([(0, g.requireSomeCapability)(n, h.ClientCapability.EnhancedSyntax, h.ClientCapability.Semantic)], () => a.languages.registerCompletionItemProvider(e.syntax, new P(n, t, r, i, s, o, c), ...P.triggerCharacters))
+                }), t.register = function(e, t, n, i, r, s, o, c) {
+                    return (0, g.conditionalRegistration)([(0, g.requireSomeCapability)(n, p.ClientCapability.EnhancedSyntax, p.ClientCapability.Semantic)], () => a.languages.registerCompletionItemProvider(e.syntax, new P(n, t, i, r, s, o, c), ...P.triggerCharacters))
                 };
                 const a = o(n(1398)),
                     c = n(2928),
                     l = n(8487),
                     u = o(n(1788)),
                     d = o(n(2144)),
-                    h = n(7371),
-                    p = n(8040),
+                    p = n(7371),
+                    h = n(8040),
                     f = n(1033),
                     g = n(6362),
                     m = n(7102),
                     v = o(n(5365));
                 class y extends a.CompletionItem {
-                    constructor(e, t, n, r, i, s, o) {
+                    constructor(e, t, n, i, r, s, o) {
                         const d = n.name || (n.insertText ?? "");
-                        if (super(d, y.convertKind(n.kind)), this.position = e, this.document = t, this.tsEntry = n, this.completionContext = r, this.metadata = i, n.source && n.hasAction && s.apiVersion.lt(c.API.v490) ? this.sortText = "￿" + n.sortText : this.sortText = n.sortText, n.source && n.hasAction) {
+                        if (super(d, y.convertKind(n.kind)), this.position = e, this.document = t, this.tsEntry = n, this.completionContext = i, this.metadata = r, n.source && n.hasAction && s.apiVersion.lt(c.API.v490) ? this.sortText = "￿" + n.sortText : this.sortText = n.sortText, n.source && n.hasAction) {
                             const e = a.workspace.asRelativePath(n.source);
                             e !== n.source && (this.label = {
                                 label: d,
@@ -8404,21 +8430,21 @@
                             })
                         }
                         const {
-                            sourceDisplay: h,
-                            isSnippet: p
+                            sourceDisplay: p,
+                            isSnippet: h
                         } = n;
-                        if (h && (this.label = {
+                        if (p && (this.label = {
                                 label: d,
-                                description: v.asPlainTextWithLinks(h, s)
+                                description: v.asPlainTextWithLinks(p, s)
                             }), n.labelDetails && (this.label = {
                                 label: d,
                                 ...n.labelDetails
-                            }), this.preselect = n.isRecommended, this.position = e, this.useCodeSnippet = r.completeFunctionCalls && (this.kind === a.CompletionItemKind.Function || this.kind === a.CompletionItemKind.Method), this.range = this.getRangeFromReplacementSpan(n, r), this.commitCharacters = y.getCommitCharacters(r, n, o), this.insertText = p && n.insertText ? new a.SnippetString(n.insertText) : n.insertText, this.filterText = n.filterText || this.getFilterText(r.line, n.insertText), r.isMemberCompletion && r.dotAccessorContext && !(this.insertText instanceof a.SnippetString) && (this.filterText = r.dotAccessorContext.text + (this.insertText || this.textLabel), !this.range)) {
+                            }), this.preselect = n.isRecommended, this.position = e, this.useCodeSnippet = i.completeFunctionCalls && (this.kind === a.CompletionItemKind.Function || this.kind === a.CompletionItemKind.Method), this.range = this.getRangeFromReplacementSpan(n, i), this.commitCharacters = y.getCommitCharacters(i, n, o), this.insertText = h && n.insertText ? new a.SnippetString(n.insertText) : n.insertText, this.filterText = n.filterText || this.getFilterText(i.line, n.insertText), i.isMemberCompletion && i.dotAccessorContext && !(this.insertText instanceof a.SnippetString) && (this.filterText = i.dotAccessorContext.text + (this.insertText || this.textLabel), !this.range)) {
                             const e = this.completionContext.wordRange;
                             this.range = e ? {
-                                inserting: r.dotAccessorContext.range,
-                                replacing: r.dotAccessorContext.range.union(e)
-                            } : r.dotAccessorContext.range, this.insertText = this.filterText
+                                inserting: i.dotAccessorContext.range,
+                                replacing: i.dotAccessorContext.range.union(e)
+                            } : i.dotAccessorContext.range, this.insertText = this.filterText
                         }
                         if (n.kindModifiers) {
                             const e = (0, l.parseKindModifier)(n.kindModifiers);
@@ -8441,31 +8467,31 @@
                                 }, 300)
                             }), this._resolvedPromise) return ++this._resolvedPromise.waiting, this._resolvedPromise.promise;
                         const n = new a.CancellationTokenSource,
-                            r = (async () => {
-                                const r = e.toOpenTsFilePath(this.document);
-                                if (!r) return;
-                                const i = {
-                                        ...d.Position.toFileLocationRequestArgs(r, this.position),
+                            i = (async () => {
+                                const i = e.toOpenTsFilePath(this.document);
+                                if (!i) return;
+                                const r = {
+                                        ...d.Position.toFileLocationRequestArgs(i, this.position),
                                         entryNames: [this.tsEntry.source || this.tsEntry.data ? {
                                             name: this.tsEntry.name,
                                             source: this.tsEntry.source,
                                             data: this.tsEntry.data
                                         } : this.tsEntry.name]
                                     },
-                                    s = await e.interruptGetErr(() => e.execute("completionEntryDetails", i, n.token));
+                                    s = await e.interruptGetErr(() => e.execute("completionEntryDetails", r, n.token));
                                 if ("response" !== s.type || !s.body?.length) return;
                                 const o = s.body[0],
                                     c = this.getDetails(e, o);
                                 c && (this.detail = c), this.documentation = this.getDocumentation(e, o, this.document.uri);
-                                const l = this.getCodeActions(o, r),
+                                const l = this.getCodeActions(o, i),
                                     u = [{
                                         command: b.ID,
                                         title: "",
                                         arguments: [this]
                                     }];
                                 l.command && u.push(l.command);
-                                const h = l.additionalTextEdits;
-                                if (this.useCodeSnippet && await this.isValidFunctionCompletionContext(e, r, this.position, this.document, t)) {
+                                const p = l.additionalTextEdits;
+                                if (this.useCodeSnippet && await this.isValidFunctionCompletionContext(e, i, this.position, this.document, t)) {
                                     const {
                                         snippet: e,
                                         parameterCount: t
@@ -8480,11 +8506,11 @@
                                 }
                                 return {
                                     commands: u,
-                                    edits: h
+                                    edits: p
                                 }
                             })();
                         return this._resolvedPromise = {
-                            promise: r,
+                            promise: i,
                             requestToken: n,
                             waiting: 1
                         }, this._resolvedPromise.promise
@@ -8497,13 +8523,13 @@
                         }
                     }
                     getDocumentation(e, t, n) {
-                        const r = new a.MarkdownString;
-                        return v.appendDocumentationAsMarkdown(r, t.documentation, t.tags, e), r.baseUri = n, r.value.length ? r : void 0
+                        const i = new a.MarkdownString;
+                        return v.appendDocumentationAsMarkdown(i, t.documentation, t.tags, e), i.baseUri = n, i.value.length ? i : void 0
                     }
-                    async isValidFunctionCompletionContext(e, t, n, r, i) {
+                    async isValidFunctionCompletionContext(e, t, n, i, r) {
                         try {
-                            const r = d.Position.toFileLocationRequestArgs(t, n),
-                                s = await e.execute("quickinfo", r, i);
+                            const i = d.Position.toFileLocationRequestArgs(t, n),
+                                s = await e.execute("quickinfo", i, r);
                             if ("response" === s.type && s.body) switch (s.body.kind) {
                                 case "var":
                                 case "let":
@@ -8512,17 +8538,17 @@
                                     return !1
                             }
                         } catch {}
-                        const s = r.lineAt(n.line);
+                        const s = i.lineAt(n.line);
                         return !s.text.slice(n.character).match(/^[a-z_$0-9]*\s*\(/gi) && !s.text.slice(0, n.character).match(/<\s*[\w]*$/gi)
                     }
                     getCodeActions(e, t) {
                         if (!e.codeActions?.length) return {};
                         const n = [];
-                        let r, i = !1;
-                        for (const r of e.codeActions)
-                            if (r.commands && (i = !0), r.changes)
-                                for (const e of r.changes) e.fileName === t ? n.push(...e.textChanges.map(d.TextEdit.fromCodeEdit)) : i = !0;
-                        return i && (r = {
+                        let i, r = !1;
+                        for (const i of e.codeActions)
+                            if (i.commands && (r = !0), i.changes)
+                                for (const e of i.changes) e.fileName === t ? n.push(...e.textChanges.map(d.TextEdit.fromCodeEdit)) : r = !0;
+                        return r && (i = {
                             title: "",
                             command: _.ID,
                             arguments: [t, e.codeActions.map(e => ({
@@ -8531,7 +8557,7 @@
                                 changes: e.changes.filter(e => e.fileName !== t)
                             }))]
                         }), {
-                            command: r,
+                            command: i,
                             additionalTextEdits: n.length ? n : void 0
                         }
                     }
@@ -8549,8 +8575,8 @@
                     getFilterText(e, t) {
                         if (this.tsEntry.name.startsWith("#")) {
                             const n = this.completionContext.wordRange,
-                                r = n ? e.charAt(n.start.character) : void 0;
-                            return t ? t.startsWith("this.#") ? "#" === r ? t : t.replace(/^this\.#/, "") : t : "#" === r ? void 0 : this.tsEntry.name.replace(/^#/, "")
+                                i = n ? e.charAt(n.start.character) : void 0;
+                            return t ? t.startsWith("this.#") ? "#" === i ? t : t.replace(/^this\.#/, "") : t : "#" === i ? void 0 : this.tsEntry.name.replace(/^#/, "")
                         }
                         if (!t?.startsWith("this.")) return t?.startsWith("[") ? t.replace(/^\[['"](.+)[['"]\]$/, ".$1") : t
                     }
@@ -8611,8 +8637,8 @@
                         }
                     }
                     static getCommitCharacters(e, t, n) {
-                        let r = t.commitCharacters ?? (n ? Array.from(n) : void 0);
-                        return r ? (e.enableCallCompletions && !e.isNewIdentifierLocation && t.kind !== u.Kind.warning && t.kind !== u.Kind.string && r.push("("), r) : t.kind === u.Kind.warning || t.kind === u.Kind.string || e.isNewIdentifierLocation ? void 0 : (r = [".", ",", ";"], e.enableCallCompletions && r.push("("), r)
+                        let i = t.commitCharacters ?? (n ? Array.from(n) : void 0);
+                        return i ? (e.enableCallCompletions && !e.isNewIdentifierLocation && t.kind !== u.Kind.warning && t.kind !== u.Kind.string && i.push("("), i) : t.kind === u.Kind.warning || t.kind === u.Kind.string || e.isNewIdentifierLocation ? void 0 : (i = [".", ",", ";"], e.enableCallCompletions && i.push("("), i)
                     }
                 }
                 class b {
@@ -8632,18 +8658,18 @@
                         this.client = e, this.id = w.ID
                     }
                     async execute(e) {
-                        const t = await e.resolveCompletionItem(this.client, p.nulToken);
+                        const t = await e.resolveCompletionItem(this.client, h.nulToken);
                         if (!t) return;
                         const {
                             edits: n,
-                            commands: r
+                            commands: i
                         } = t;
                         if (n) {
                             const t = new a.WorkspaceEdit;
-                            for (const r of n) t.replace(e.document.uri, r.range, r.newText);
+                            for (const i of n) t.replace(e.document.uri, i.range, i.newText);
                             await a.workspace.applyEdit(t)
                         }
-                        for (const e of r) await a.commands.executeCommand(e.command, ...e.arguments ?? [])
+                        for (const e of i) await a.commands.executeCommand(e.command, ...e.arguments ?? [])
                     }
                 }
                 w.ID = "_typescript.applyCompletionCommand";
@@ -8653,7 +8679,7 @@
                     }
                     async execute(e, t) {
                         if (0 === t.length) return !0;
-                        if (1 === t.length) return (0, f.applyCodeAction)(this.client, t[0], p.nulToken);
+                        if (1 === t.length) return (0, f.applyCodeAction)(this.client, t[0], h.nulToken);
                         const n = await a.window.showQuickPick(t.map(e => ({
                             label: e.description,
                             description: "",
@@ -8661,28 +8687,28 @@
                         })), {
                             placeHolder: a.l10n.t("Select code action to apply")
                         });
-                        return !!n && (0, f.applyCodeAction)(this.client, n.action, p.nulToken)
+                        return !!n && (0, f.applyCodeAction)(this.client, n.action, h.nulToken)
                     }
                 }
                 var S;
                 _.ID = "_typescript.applyCompletionCodeAction",
                     function(e) {
                         e.completeFunctionCalls = "suggest.completeFunctionCalls", e.nameSuggestions = "suggest.names", e.pathSuggestions = "suggest.paths", e.autoImportSuggestions = "suggest.autoImports", e.importStatementSuggestions = "suggest.importStatements", e.getConfigurationForResource = function(t, n) {
-                            const r = a.workspace.getConfiguration(t, n);
+                            const i = a.workspace.getConfiguration(t, n);
                             return {
-                                completeFunctionCalls: r.get(e.completeFunctionCalls, !1),
-                                pathSuggestions: r.get(e.pathSuggestions, !0),
-                                autoImportSuggestions: r.get(e.autoImportSuggestions, !0),
-                                nameSuggestions: r.get(e.nameSuggestions, !0),
-                                importStatementSuggestions: r.get(e.importStatementSuggestions, !0)
+                                completeFunctionCalls: i.get(e.completeFunctionCalls, !1),
+                                pathSuggestions: i.get(e.pathSuggestions, !0),
+                                autoImportSuggestions: i.get(e.autoImportSuggestions, !0),
+                                nameSuggestions: i.get(e.nameSuggestions, !0),
+                                importStatementSuggestions: i.get(e.importStatementSuggestions, !0)
                             }
                         }
                     }(S || (S = {}));
                 class P {
-                    constructor(e, t, n, r, i, s, o) {
-                        this.client = e, this.language = t, this.typingsStatus = n, this.fileConfigurationManager = r, this.telemetryReporter = s, i.register(new _(this.client)), i.register(new b(o, this.telemetryReporter)), i.register(new w(this.client))
+                    constructor(e, t, n, i, r, s, o) {
+                        this.client = e, this.language = t, this.typingsStatus = n, this.fileConfigurationManager = i, this.telemetryReporter = s, r.register(new _(this.client)), r.register(new b(o, this.telemetryReporter)), r.register(new w(this.client))
                     }
-                    async provideCompletionItems(e, t, n, r) {
+                    async provideCompletionItems(e, t, n, i) {
                         if (!a.workspace.getConfiguration(this.language.id, e).get("suggest.enabled")) return;
                         if (this.typingsStatus.isAcquiringTypings) return Promise.reject({
                             label: a.l10n.t({
@@ -8694,11 +8720,11 @@
                                 comment: ["Typings refers to the *.d.ts typings files that power our IntelliSense. It should not be localized"]
                             })
                         });
-                        const i = this.client.toOpenTsFilePath(e);
-                        if (!i) return;
+                        const r = this.client.toOpenTsFilePath(e);
+                        if (!r) return;
                         const s = e.lineAt(t.line),
                             o = S.getConfigurationForResource(this.language.id, e.uri);
-                        if (!this.shouldTrigger(r, s, t, o)) return;
+                        if (!this.shouldTrigger(i, s, t, o)) return;
                         let c = e.getWordRangeAtPosition(t);
                         if (c && !c.isEmpty) {
                             const t = c.start.translate(0, 1);
@@ -8706,39 +8732,39 @@
                         }
                         await this.client.interruptGetErr(() => this.fileConfigurationManager.ensureConfigurationForDocument(e, n));
                         const l = {
-                            ...d.Position.toFileLocationRequestArgs(i, t),
+                            ...d.Position.toFileLocationRequestArgs(r, t),
                             includeExternalModuleExports: o.autoImportSuggestions,
                             includeInsertTextCompletions: !0,
-                            triggerCharacter: this.getTsTriggerCharacter(r),
-                            triggerKind: d.CompletionTriggerKind.toProtocolCompletionTriggerKind(r.triggerKind)
+                            triggerCharacter: this.getTsTriggerCharacter(i),
+                            triggerKind: d.CompletionTriggerKind.toProtocolCompletionTriggerKind(i.triggerKind)
                         };
-                        let u, h, p, f;
+                        let u, p, h, f;
                         const g = Date.now();
                         try {
-                            h = await this.client.interruptGetErr(() => this.client.execute("completionInfo", l, n))
+                            p = await this.client.interruptGetErr(() => this.client.execute("completionInfo", l, n))
                         } finally {
-                            p = Date.now() - g
+                            h = Date.now() - g
                         }
-                        if ("response" !== h.type || !h.body) return void this.logCompletionsTelemetry(p, h);
-                        const m = h.body.isNewIdentifierLocation,
-                            v = h.body.isMemberCompletion;
+                        if ("response" !== p.type || !p.body) return void this.logCompletionsTelemetry(h, p);
+                        const m = p.body.isNewIdentifierLocation,
+                            v = p.body.isMemberCompletion;
                         if (v) {
                             const n = s.text.slice(0, t.character).match(/\??\.\s*$/) || void 0;
                             if (n) {
-                                const r = new a.Range(t.translate({
+                                const i = new a.Range(t.translate({
                                     characterDelta: -n[0].length
                                 }), t);
                                 u = {
-                                    range: r,
-                                    text: e.getText(r)
+                                    range: i,
+                                    text: e.getText(i)
                                 }
                             }
                         }
-                        const b = !!h.body.isIncomplete || h.metadata?.isIncomplete,
-                            _ = h.body.entries,
-                            P = h.metadata,
-                            O = Object.freeze(h.body.defaultCommitCharacters);
-                        h.body.optionalReplacementSpan && (f = d.Range.fromTextSpan(h.body.optionalReplacementSpan));
+                        const b = !!p.body.isIncomplete || p.metadata?.isIncomplete,
+                            _ = p.body.entries,
+                            P = p.metadata,
+                            O = Object.freeze(p.body.defaultCommitCharacters);
+                        p.body.optionalReplacementSpan && (f = d.Range.fromTextSpan(p.body.optionalReplacementSpan));
                         const T = {
                             isNewIdentifierLocation: m,
                             isMemberCompletion: v,
@@ -8754,15 +8780,15 @@
                         const E = [];
                         for (const n of _)
                             if (!C(n, o)) {
-                                const r = new y(t, e, n, T, P, this.client, O);
-                                r.command = {
+                                const i = new y(t, e, n, T, P, this.client, O);
+                                i.command = {
                                     command: w.ID,
                                     title: "",
-                                    arguments: [r]
-                                }, E.push(r), x = x || !!n.isPackageJsonImport, j = j || !!n.isImportStatementCompletion
-                            } return void 0 !== p && this.logCompletionsTelemetry(p, h, x, j), new a.CompletionList(E, b)
+                                    arguments: [i]
+                                }, E.push(i), x = x || !!n.isPackageJsonImport, j = j || !!n.isImportStatementCompletion
+                            } return void 0 !== h && this.logCompletionsTelemetry(h, p, x, j), new a.CompletionList(E, b)
                     }
-                    logCompletionsTelemetry(e, t, n, r) {
+                    logCompletionsTelemetry(e, t, n, i) {
                         this.telemetryReporter.logTelemetry("completions.execute", {
                             duration: String(e),
                             type: t?.type ?? "unknown",
@@ -8771,7 +8797,7 @@
                             updateGraphDurationMs: "response" === t?.type && "number" == typeof t.performanceData?.updateGraphDurationMs ? String(t.performanceData.updateGraphDurationMs) : void 0,
                             createAutoImportProviderProgramDurationMs: "response" === t?.type && "number" == typeof t.performanceData?.createAutoImportProviderProgramDurationMs ? String(t.performanceData.createAutoImportProviderProgramDurationMs) : void 0,
                             includesPackageJsonImport: n ? "true" : void 0,
-                            includesImportStatementCompletion: r ? "true" : void 0
+                            includesImportStatementCompletion: i ? "true" : void 0
                         })
                     }
                     getTsTriggerCharacter(e) {
@@ -8796,8 +8822,8 @@
                     async resolveCompletionItem(e, t) {
                         return await e.resolveCompletionItem(this.client, t), e
                     }
-                    shouldTrigger(e, t, n, r) {
-                        return " " !== e.triggerCharacter || !(!r.importStatementSuggestions || this.client.apiVersion.lt(c.API.v430)) && "import" === t.text.slice(0, n.character)
+                    shouldTrigger(e, t, n, i) {
+                        return " " !== e.triggerCharacter || !(!i.importStatementSuggestions || this.client.apiVersion.lt(c.API.v430)) && "import" === t.text.slice(0, n.character)
                     }
                 }
 
@@ -8808,17 +8834,17 @@
             },
             5540: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -8828,17 +8854,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -8856,17 +8882,17 @@
             },
             5544: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -8876,17 +8902,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -8905,12 +8931,12 @@
                             if (n.languageServiceEnabled) e.hide();
                             else {
                                 e.show();
-                                const r = n.projectName;
-                                r && (e.configFileName = r, a.window.showWarningMessage(e.getCurrentHint().message, {
+                                const i = n.projectName;
+                                i && (e.configFileName = i, a.window.showWarningMessage(e.getCurrentHint().message, {
                                     title: a.l10n.t("Configure Excludes"),
                                     index: 0
                                 }).then(e => {
-                                    0 === e?.index && u(t, r)
+                                    0 === e?.index && u(t, i)
                                 }))
                             }
                         })
@@ -8938,17 +8964,17 @@
                 function u(e, t) {
                     if ((0, c.isImplicitProjectConfigFile)(t)) {
                         const n = e.getWorkspaceRootForResource(a.Uri.file(t));
-                        n && (0, c.openOrCreateConfig)(e.apiVersion, /tsconfig\.?.*\.json/.test(t) ? 0 : 1, n, e.configuration)
+                        n && (0, c.openOrCreateConfig)(e.apiVersion, /tsconfig\.?.*\.json/.test(t) ? c.ProjectType.TypeScript : c.ProjectType.JavaScript, n, e.configuration)
                     } else a.workspace.openTextDocument(t).then(a.window.showTextDocument)
                 }
             },
             5571: (e, t, n) => {
-                const r = n(7075);
-                e.exports = (e, t, n) => r(e, t, ">", n)
+                const i = n(7075);
+                e.exports = (e, t, n) => i(e, t, ">", n)
             },
             5580: (e, t, n) => {
-                const r = n(560);
-                e.exports = (e, t, n) => r(e, t, n) > 0
+                const i = n(560);
+                e.exports = (e, t, n) => i(e, t, n) > 0
             },
             5602: (e, t) => {
                 "use strict";
@@ -8966,7 +8992,7 @@
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.DisposableStore = t.Disposable = void 0, t.disposeAll = n;
-                class r {
+                class i {
                     constructor() {
                         this._isDisposed = !1, this._disposables = []
                     }
@@ -8980,7 +9006,7 @@
                         return this._isDisposed
                     }
                 }
-                t.Disposable = r, t.DisposableStore = class extends r {
+                t.Disposable = i, t.DisposableStore = class extends i {
                     add(e) {
                         return this._register(e), e
                     }
@@ -8991,13 +9017,13 @@
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.CallbackMap = void 0;
-                const r = n(7371);
+                const i = n(7371);
                 t.CallbackMap = class {
                     constructor() {
                         this._callbacks = new Map, this._asyncCallbacks = new Map
                     }
                     destroy(e) {
-                        const t = new r.ServerResponse.Cancelled(e);
+                        const t = new i.ServerResponse.Cancelled(e);
                         for (const e of this._callbacks.values()) e.onSuccess(t);
                         this._callbacks.clear();
                         for (const e of this._asyncCallbacks.values()) e.onSuccess(t);
@@ -9021,12 +9047,12 @@
                     value: !0
                 }), t.TypeScriptServerError = void 0;
                 class n extends Error {
-                    static create(e, t, r) {
-                        const i = n.parseErrorText(r);
-                        return new n(e, t, r, i?.message, i?.stack, i?.sanitizedStack)
+                    static create(e, t, i) {
+                        const r = n.parseErrorText(i);
+                        return new n(e, t, i, r?.message, r?.stack, r?.sanitizedStack)
                     }
-                    constructor(e, t, n, r, i, s) {
-                        super([`<${e}> TypeScript Server Error (${t.displayName})`, r, i].filter(Boolean).join("\n")), this.serverId = e, this.version = t, this.response = n, this.serverMessage = r, this.serverStack = i, this.sanitizedStack = s
+                    constructor(e, t, n, i, r, s) {
+                        super([`<${e}> TypeScript Server Error (${t.displayName})`, i, r].filter(Boolean).join("\n")), this.serverId = e, this.version = t, this.response = n, this.serverMessage = i, this.serverStack = r, this.sanitizedStack = s
                     }
                     get serverErrorText() {
                         return this.response.message
@@ -9047,12 +9073,12 @@
                         if (t) {
                             const e = "Error processing request. ";
                             if (t.startsWith(e)) {
-                                const r = t.substr(e.length),
-                                    i = r.indexOf("\n");
-                                if (i >= 0) {
-                                    const e = r.substring(i + 1);
+                                const i = t.substr(e.length),
+                                    r = i.indexOf("\n");
+                                if (r >= 0) {
+                                    const e = i.substring(r + 1);
                                     return {
-                                        message: r.substring(0, i),
+                                        message: i.substring(0, r),
                                         stack: e,
                                         sanitizedStack: n.sanitizeStack(e)
                                     }
@@ -9065,9 +9091,9 @@
                         const t = /(\btsserver)?(\.(?:ts|tsx|js|jsx)(?::\d+(?::\d+)?)?)\)?$/gim;
                         let n = "";
                         for (;;) {
-                            const r = t.exec(e);
-                            if (!r) break;
-                            n += `${r[1]||"suppressed"}${r[2]}\n`
+                            const i = t.exec(e);
+                            if (!i) break;
+                            n += `${i[1]||"suppressed"}${i[2]}\n`
                         }
                         return n
                     }
@@ -9077,86 +9103,86 @@
             5887: (e, t, n) => {
                 "use strict";
 
-                function r(e, t = !1) {
+                function i(e, t = !1) {
                     const n = e.length;
-                    let r = 0,
+                    let i = 0,
                         a = "",
                         c = 0,
                         l = 16,
                         u = 0,
                         d = 0,
-                        h = 0,
                         p = 0,
+                        h = 0,
                         f = 0;
 
                     function g(t, n) {
-                        let i = 0,
+                        let r = 0,
                             s = 0;
-                        for (; i < t || !n;) {
-                            let t = e.charCodeAt(r);
+                        for (; r < t || !n;) {
+                            let t = e.charCodeAt(i);
                             if (t >= 48 && t <= 57) s = 16 * s + t - 48;
                             else if (t >= 65 && t <= 70) s = 16 * s + t - 65 + 10;
                             else {
                                 if (!(t >= 97 && t <= 102)) break;
                                 s = 16 * s + t - 97 + 10
                             }
-                            r++, i++
+                            i++, r++
                         }
-                        return i < t && (s = -1), s
+                        return r < t && (s = -1), s
                     }
 
                     function m() {
-                        if (a = "", f = 0, c = r, d = u, p = h, r >= n) return c = n, l = 17;
-                        let t = e.charCodeAt(r);
-                        if (i(t)) {
+                        if (a = "", f = 0, c = i, d = u, h = p, i >= n) return c = n, l = 17;
+                        let t = e.charCodeAt(i);
+                        if (r(t)) {
                             do {
-                                r++, a += String.fromCharCode(t), t = e.charCodeAt(r)
-                            } while (i(t));
+                                i++, a += String.fromCharCode(t), t = e.charCodeAt(i)
+                            } while (r(t));
                             return l = 15
                         }
-                        if (s(t)) return r++, a += String.fromCharCode(t), 13 === t && 10 === e.charCodeAt(r) && (r++, a += "\n"), u++, h = r, l = 14;
+                        if (s(t)) return i++, a += String.fromCharCode(t), 13 === t && 10 === e.charCodeAt(i) && (i++, a += "\n"), u++, p = i, l = 14;
                         switch (t) {
                             case 123:
-                                return r++, l = 1;
+                                return i++, l = 1;
                             case 125:
-                                return r++, l = 2;
+                                return i++, l = 2;
                             case 91:
-                                return r++, l = 3;
+                                return i++, l = 3;
                             case 93:
-                                return r++, l = 4;
+                                return i++, l = 4;
                             case 58:
-                                return r++, l = 6;
+                                return i++, l = 6;
                             case 44:
-                                return r++, l = 5;
+                                return i++, l = 5;
                             case 34:
-                                return r++, a = function() {
+                                return i++, a = function() {
                                     let t = "",
-                                        i = r;
+                                        r = i;
                                     for (;;) {
-                                        if (r >= n) {
-                                            t += e.substring(i, r), f = 2;
+                                        if (i >= n) {
+                                            t += e.substring(r, i), f = 2;
                                             break
                                         }
-                                        const o = e.charCodeAt(r);
+                                        const o = e.charCodeAt(i);
                                         if (34 === o) {
-                                            t += e.substring(i, r), r++;
+                                            t += e.substring(r, i), i++;
                                             break
                                         }
                                         if (92 !== o) {
                                             if (o >= 0 && o <= 31) {
                                                 if (s(o)) {
-                                                    t += e.substring(i, r), f = 2;
+                                                    t += e.substring(r, i), f = 2;
                                                     break
                                                 }
                                                 f = 6
                                             }
-                                            r++
+                                            i++
                                         } else {
-                                            if (t += e.substring(i, r), r++, r >= n) {
+                                            if (t += e.substring(r, i), i++, i >= n) {
                                                 f = 2;
                                                 break
                                             }
-                                            switch (e.charCodeAt(r++)) {
+                                            switch (e.charCodeAt(i++)) {
                                                 case 34:
                                                     t += '"';
                                                     break;
@@ -9188,34 +9214,34 @@
                                                 default:
                                                     f = 5
                                             }
-                                            i = r
+                                            r = i
                                         }
                                     }
                                     return t
                                 }(), l = 10;
                             case 47:
-                                const i = r - 1;
-                                if (47 === e.charCodeAt(r + 1)) {
-                                    for (r += 2; r < n && !s(e.charCodeAt(r));) r++;
-                                    return a = e.substring(i, r), l = 12
+                                const r = i - 1;
+                                if (47 === e.charCodeAt(i + 1)) {
+                                    for (i += 2; i < n && !s(e.charCodeAt(i));) i++;
+                                    return a = e.substring(r, i), l = 12
                                 }
-                                if (42 === e.charCodeAt(r + 1)) {
-                                    r += 2;
+                                if (42 === e.charCodeAt(i + 1)) {
+                                    i += 2;
                                     const t = n - 1;
                                     let o = !1;
-                                    for (; r < t;) {
-                                        const t = e.charCodeAt(r);
-                                        if (42 === t && 47 === e.charCodeAt(r + 1)) {
-                                            r += 2, o = !0;
+                                    for (; i < t;) {
+                                        const t = e.charCodeAt(i);
+                                        if (42 === t && 47 === e.charCodeAt(i + 1)) {
+                                            i += 2, o = !0;
                                             break
                                         }
-                                        r++, s(t) && (13 === t && 10 === e.charCodeAt(r) && r++, u++, h = r)
+                                        i++, s(t) && (13 === t && 10 === e.charCodeAt(i) && i++, u++, p = i)
                                     }
-                                    return o || (r++, f = 1), a = e.substring(i, r), l = 13
+                                    return o || (i++, f = 1), a = e.substring(r, i), l = 13
                                 }
-                                return a += String.fromCharCode(t), r++, l = 16;
+                                return a += String.fromCharCode(t), i++, l = 16;
                             case 45:
-                                if (a += String.fromCharCode(t), r++, r === n || !o(e.charCodeAt(r))) return l = 16;
+                                if (a += String.fromCharCode(t), i++, i === n || !o(e.charCodeAt(i))) return l = 16;
                             case 48:
                             case 49:
                             case 50:
@@ -9227,26 +9253,26 @@
                             case 56:
                             case 57:
                                 return a += function() {
-                                    let t = r;
-                                    if (48 === e.charCodeAt(r)) r++;
+                                    let t = i;
+                                    if (48 === e.charCodeAt(i)) i++;
                                     else
-                                        for (r++; r < e.length && o(e.charCodeAt(r));) r++;
-                                    if (r < e.length && 46 === e.charCodeAt(r)) {
-                                        if (r++, !(r < e.length && o(e.charCodeAt(r)))) return f = 3, e.substring(t, r);
-                                        for (r++; r < e.length && o(e.charCodeAt(r));) r++
+                                        for (i++; i < e.length && o(e.charCodeAt(i));) i++;
+                                    if (i < e.length && 46 === e.charCodeAt(i)) {
+                                        if (i++, !(i < e.length && o(e.charCodeAt(i)))) return f = 3, e.substring(t, i);
+                                        for (i++; i < e.length && o(e.charCodeAt(i));) i++
                                     }
-                                    let n = r;
-                                    if (r < e.length && (69 === e.charCodeAt(r) || 101 === e.charCodeAt(r)))
-                                        if (r++, (r < e.length && 43 === e.charCodeAt(r) || 45 === e.charCodeAt(r)) && r++, r < e.length && o(e.charCodeAt(r))) {
-                                            for (r++; r < e.length && o(e.charCodeAt(r));) r++;
-                                            n = r
+                                    let n = i;
+                                    if (i < e.length && (69 === e.charCodeAt(i) || 101 === e.charCodeAt(i)))
+                                        if (i++, (i < e.length && 43 === e.charCodeAt(i) || 45 === e.charCodeAt(i)) && i++, i < e.length && o(e.charCodeAt(i))) {
+                                            for (i++; i < e.length && o(e.charCodeAt(i));) i++;
+                                            n = i
                                         } else f = 3;
                                     return e.substring(t, n)
                                 }(), l = 11;
                             default:
-                                for (; r < n && v(t);) r++, t = e.charCodeAt(r);
-                                if (c !== r) {
-                                    switch (a = e.substring(c, r), a) {
+                                for (; i < n && v(t);) i++, t = e.charCodeAt(i);
+                                if (c !== i) {
+                                    switch (a = e.substring(c, i), a) {
                                         case "true":
                                             return l = 8;
                                         case "false":
@@ -9256,12 +9282,12 @@
                                     }
                                     return l = 16
                                 }
-                                return a += String.fromCharCode(t), r++, l = 16
+                                return a += String.fromCharCode(t), i++, l = 16
                         }
                     }
 
                     function v(e) {
-                        if (i(e) || s(e)) return !1;
+                        if (r(e) || s(e)) return !1;
                         switch (e) {
                             case 125:
                             case 93:
@@ -9277,9 +9303,9 @@
                     }
                     return {
                         setPosition: function(e) {
-                            r = e, a = "", c = 0, l = 16, f = 0
+                            i = e, a = "", c = 0, l = 16, f = 0
                         },
-                        getPosition: () => r,
+                        getPosition: () => i,
                         scan: t ? function() {
                             let e;
                             do {
@@ -9290,14 +9316,14 @@
                         getToken: () => l,
                         getTokenValue: () => a,
                         getTokenOffset: () => c,
-                        getTokenLength: () => r - c,
+                        getTokenLength: () => i - c,
                         getTokenStartLine: () => d,
-                        getTokenStartCharacter: () => c - p,
+                        getTokenStartCharacter: () => c - h,
                         getTokenError: () => f
                     }
                 }
 
-                function i(e) {
+                function r(e) {
                     return 32 === e || 9 === e
                 }
 
@@ -9311,27 +9337,27 @@
                 var a, c;
 
                 function l(e, t, n) {
-                    let i, s, o, a, c;
+                    let r, s, o, a, c;
                     if (t) {
                         for (a = t.offset, c = a + t.length, o = a; o > 0 && !d(e, o - 1);) o--;
-                        let r = c;
-                        for (; r < e.length && !d(e, r);) r++;
-                        s = e.substring(o, r), i = function(e, t) {
+                        let i = c;
+                        for (; i < e.length && !d(e, i);) i++;
+                        s = e.substring(o, i), r = function(e, t) {
                             let n = 0,
-                                r = 0;
-                            const i = t.tabSize || 4;
+                                i = 0;
+                            const r = t.tabSize || 4;
                             for (; n < e.length;) {
                                 let t = e.charAt(n);
-                                if (" " === t) r++;
+                                if (" " === t) i++;
                                 else {
                                     if ("\t" !== t) break;
-                                    r += i
+                                    i += r
                                 }
                                 n++
                             }
-                            return Math.floor(r / i)
+                            return Math.floor(i / r)
                         }(s, n)
-                    } else s = e, i = 0, o = 0, a = 0, c = e.length;
+                    } else s = e, r = 0, o = 0, a = 0, c = e.length;
                     const l = function(e, t) {
                         for (let e = 0; e < t.length; e++) {
                             const n = t.charAt(e);
@@ -9340,63 +9366,63 @@
                         }
                         return e && e.eol || "\n"
                     }(n, e);
-                    let h, p = 0,
+                    let p, h = 0,
                         f = 0;
-                    h = n.insertSpaces ? u(" ", n.tabSize || 4) : "\t";
-                    let g = r(s, !1),
+                    p = n.insertSpaces ? u(" ", n.tabSize || 4) : "\t";
+                    let g = i(s, !1),
                         m = !1;
 
                     function v() {
-                        return p > 1 ? u(l, p) + u(h, i + f) : l + u(h, i + f)
+                        return h > 1 ? u(l, h) + u(p, r + f) : l + u(p, r + f)
                     }
 
                     function y() {
                         let e = g.scan();
-                        for (p = 0; 15 === e || 14 === e;) 14 === e && n.keepLines ? p += 1 : 14 === e && (p = 1), e = g.scan();
+                        for (h = 0; 15 === e || 14 === e;) 14 === e && n.keepLines ? h += 1 : 14 === e && (h = 1), e = g.scan();
                         return m = 16 === e || 0 !== g.getTokenError(), e
                     }
                     const b = [];
 
-                    function w(n, r, i) {
-                        m || t && !(r < c && i > a) || e.substring(r, i) === n || b.push({
-                            offset: r,
-                            length: i - r,
+                    function w(n, i, r) {
+                        m || t && !(i < c && r > a) || e.substring(i, r) === n || b.push({
+                            offset: i,
+                            length: r - i,
                             content: n
                         })
                     }
                     let _ = y();
-                    if (n.keepLines && p > 0 && w(u(l, p), 0, 0), 17 !== _) {
+                    if (n.keepLines && h > 0 && w(u(l, h), 0, 0), 17 !== _) {
                         let e = g.getTokenOffset() + o;
-                        w(u(h, i), o, e)
+                        w(u(p, r), o, e)
                     }
                     for (; 17 !== _;) {
                         let e = g.getTokenOffset() + g.getTokenLength() + o,
                             t = y(),
-                            r = "",
-                            i = !1;
-                        for (; 0 === p && (12 === t || 13 === t);) w(" ", e, g.getTokenOffset() + o), e = g.getTokenOffset() + g.getTokenLength() + o, i = 12 === t, r = i ? v() : "", t = y();
-                        if (2 === t) 1 !== _ && f--, n.keepLines && p > 0 || !n.keepLines && 1 !== _ ? r = v() : n.keepLines && (r = " ");
-                        else if (4 === t) 3 !== _ && f--, n.keepLines && p > 0 || !n.keepLines && 3 !== _ ? r = v() : n.keepLines && (r = " ");
+                            i = "",
+                            r = !1;
+                        for (; 0 === h && (12 === t || 13 === t);) w(" ", e, g.getTokenOffset() + o), e = g.getTokenOffset() + g.getTokenLength() + o, r = 12 === t, i = r ? v() : "", t = y();
+                        if (2 === t) 1 !== _ && f--, n.keepLines && h > 0 || !n.keepLines && 1 !== _ ? i = v() : n.keepLines && (i = " ");
+                        else if (4 === t) 3 !== _ && f--, n.keepLines && h > 0 || !n.keepLines && 3 !== _ ? i = v() : n.keepLines && (i = " ");
                         else {
                             switch (_) {
                                 case 3:
                                 case 1:
-                                    f++, r = n.keepLines && p > 0 || !n.keepLines ? v() : " ";
+                                    f++, i = n.keepLines && h > 0 || !n.keepLines ? v() : " ";
                                     break;
                                 case 5:
-                                    r = n.keepLines && p > 0 || !n.keepLines ? v() : " ";
+                                    i = n.keepLines && h > 0 || !n.keepLines ? v() : " ";
                                     break;
                                 case 12:
-                                    r = v();
+                                    i = v();
                                     break;
                                 case 13:
-                                    p > 0 ? r = v() : i || (r = " ");
+                                    h > 0 ? i = v() : r || (i = " ");
                                     break;
                                 case 6:
-                                    n.keepLines && p > 0 ? r = v() : i || (r = " ");
+                                    n.keepLines && h > 0 ? i = v() : r || (i = " ");
                                     break;
                                 case 10:
-                                    n.keepLines && p > 0 ? r = v() : 6 !== t || i || (r = "");
+                                    n.keepLines && h > 0 ? i = v() : 6 !== t || r || (i = "");
                                     break;
                                 case 7:
                                 case 8:
@@ -9404,21 +9430,21 @@
                                 case 11:
                                 case 2:
                                 case 4:
-                                    n.keepLines && p > 0 ? r = v() : 12 !== t && 13 !== t || i ? 5 !== t && 17 !== t && (m = !0) : r = " ";
+                                    n.keepLines && h > 0 ? i = v() : 12 !== t && 13 !== t || r ? 5 !== t && 17 !== t && (m = !0) : i = " ";
                                     break;
                                 case 16:
                                     m = !0
                             }
-                            p > 0 && (12 === t || 13 === t) && (r = v())
+                            h > 0 && (12 === t || 13 === t) && (i = v())
                         }
-                        17 === t && (r = n.keepLines && p > 0 ? v() : n.insertFinalNewline ? l : ""), w(r, e, g.getTokenOffset() + o), _ = t
+                        17 === t && (i = n.keepLines && h > 0 ? v() : n.insertFinalNewline ? l : ""), w(i, e, g.getTokenOffset() + o), _ = t
                     }
                     return b
                 }
 
                 function u(e, t) {
                     let n = "";
-                    for (let r = 0; r < t; r++) n += e;
+                    for (let i = 0; i < t; i++) n += e;
                     return n
                 }
 
@@ -9426,8 +9452,8 @@
                     return -1 !== "\r\n".indexOf(e.charAt(t))
                 }
 
-                function h(e, t = [], n = c.DEFAULT) {
-                    let r = {
+                function p(e, t = [], n = c.DEFAULT) {
+                    let i = {
                         type: "array",
                         offset: -1,
                         length: -1,
@@ -9435,87 +9461,87 @@
                         parent: void 0
                     };
 
-                    function i(e) {
-                        "property" === r.type && (r.length = e - r.offset, r = r.parent)
+                    function r(e) {
+                        "property" === i.type && (i.length = e - i.offset, i = i.parent)
                     }
 
                     function s(e) {
-                        return r.children.push(e), e
+                        return i.children.push(e), e
                     }
                     f(e, {
                         onObjectBegin: e => {
-                            r = s({
+                            i = s({
                                 type: "object",
                                 offset: e,
                                 length: -1,
-                                parent: r,
+                                parent: i,
                                 children: []
                             })
                         },
                         onObjectProperty: (e, t, n) => {
-                            r = s({
+                            i = s({
                                 type: "property",
                                 offset: t,
                                 length: -1,
-                                parent: r,
+                                parent: i,
                                 children: []
-                            }), r.children.push({
+                            }), i.children.push({
                                 type: "string",
                                 value: e,
                                 offset: t,
                                 length: n,
-                                parent: r
+                                parent: i
                             })
                         },
                         onObjectEnd: (e, t) => {
-                            i(e + t), r.length = e + t - r.offset, r = r.parent, i(e + t)
+                            r(e + t), i.length = e + t - i.offset, i = i.parent, r(e + t)
                         },
                         onArrayBegin: (e, t) => {
-                            r = s({
+                            i = s({
                                 type: "array",
                                 offset: e,
                                 length: -1,
-                                parent: r,
+                                parent: i,
                                 children: []
                             })
                         },
                         onArrayEnd: (e, t) => {
-                            r.length = e + t - r.offset, r = r.parent, i(e + t)
+                            i.length = e + t - i.offset, i = i.parent, r(e + t)
                         },
                         onLiteralValue: (e, t, n) => {
                             s({
                                 type: g(e),
                                 offset: t,
                                 length: n,
-                                parent: r,
+                                parent: i,
                                 value: e
-                            }), i(t + n)
+                            }), r(t + n)
                         },
                         onSeparator: (e, t, n) => {
-                            "property" === r.type && (":" === e ? r.colonOffset = t : "," === e && i(t))
+                            "property" === i.type && (":" === e ? i.colonOffset = t : "," === e && r(t))
                         },
-                        onError: (e, n, r) => {
+                        onError: (e, n, i) => {
                             t.push({
                                 error: e,
                                 offset: n,
-                                length: r
+                                length: i
                             })
                         }
                     }, n);
-                    const o = r.children[0];
+                    const o = i.children[0];
                     return o && delete o.parent, o
                 }
 
-                function p(e, t) {
+                function h(e, t) {
                     if (!e) return;
                     let n = e;
                     for (let e of t)
                         if ("string" == typeof e) {
                             if ("object" !== n.type || !Array.isArray(n.children)) return;
                             let t = !1;
-                            for (const r of n.children)
-                                if (Array.isArray(r.children) && r.children[0].value === e && 2 === r.children.length) {
-                                    n = r.children[1], t = !0;
+                            for (const i of n.children)
+                                if (Array.isArray(i.children) && i.children[0].value === e && 2 === i.children.length) {
+                                    n = i.children[1], t = !0;
                                     break
                                 } if (!t) return
                         } else {
@@ -9526,27 +9552,27 @@
                 }
 
                 function f(e, t, n = c.DEFAULT) {
-                    const i = r(e, !1),
+                    const r = i(e, !1),
                         s = [];
 
                     function o(e) {
-                        return e ? () => e(i.getTokenOffset(), i.getTokenLength(), i.getTokenStartLine(), i.getTokenStartCharacter()) : () => !0
+                        return e ? () => e(r.getTokenOffset(), r.getTokenLength(), r.getTokenStartLine(), r.getTokenStartCharacter()) : () => !0
                     }
 
                     function a(e) {
-                        return e ? () => e(i.getTokenOffset(), i.getTokenLength(), i.getTokenStartLine(), i.getTokenStartCharacter(), () => s.slice()) : () => !0
+                        return e ? () => e(r.getTokenOffset(), r.getTokenLength(), r.getTokenStartLine(), r.getTokenStartCharacter(), () => s.slice()) : () => !0
                     }
 
                     function l(e) {
-                        return e ? t => e(t, i.getTokenOffset(), i.getTokenLength(), i.getTokenStartLine(), i.getTokenStartCharacter()) : () => !0
+                        return e ? t => e(t, r.getTokenOffset(), r.getTokenLength(), r.getTokenStartLine(), r.getTokenStartCharacter()) : () => !0
                     }
 
                     function u(e) {
-                        return e ? t => e(t, i.getTokenOffset(), i.getTokenLength(), i.getTokenStartLine(), i.getTokenStartCharacter(), () => s.slice()) : () => !0
+                        return e ? t => e(t, r.getTokenOffset(), r.getTokenLength(), r.getTokenStartLine(), r.getTokenStartCharacter(), () => s.slice()) : () => !0
                     }
                     const d = a(t.onObjectBegin),
-                        h = u(t.onObjectProperty),
-                        p = o(t.onObjectEnd),
+                        p = u(t.onObjectProperty),
+                        h = o(t.onObjectEnd),
                         f = a(t.onArrayBegin),
                         g = o(t.onArrayEnd),
                         m = u(t.onLiteralValue),
@@ -9558,8 +9584,8 @@
 
                     function S() {
                         for (;;) {
-                            const e = i.scan();
-                            switch (i.getTokenError()) {
+                            const e = r.scan();
+                            switch (r.getTokenError()) {
                                 case 4:
                                     P(14);
                                     break;
@@ -9597,7 +9623,7 @@
 
                     function P(e, t = [], n = []) {
                         if (b(e), t.length + n.length > 0) {
-                            let e = i.getToken();
+                            let e = r.getToken();
                             for (; 17 !== e;) {
                                 if (-1 !== t.indexOf(e)) {
                                     S();
@@ -9610,48 +9636,48 @@
                     }
 
                     function C(e) {
-                        const t = i.getTokenValue();
-                        return e ? m(t) : (h(t), s.push(t)), S(), !0
+                        const t = r.getTokenValue();
+                        return e ? m(t) : (p(t), s.push(t)), S(), !0
                     }
 
                     function O() {
-                        return 10 !== i.getToken() ? (P(3, [], [2, 5]), !1) : (C(!1), 6 === i.getToken() ? (v(":"), S(), T() || P(4, [], [2, 5])) : P(5, [], [2, 5]), s.pop(), !0)
+                        return 10 !== r.getToken() ? (P(3, [], [2, 5]), !1) : (C(!1), 6 === r.getToken() ? (v(":"), S(), T() || P(4, [], [2, 5])) : P(5, [], [2, 5]), s.pop(), !0)
                     }
 
                     function T() {
-                        switch (i.getToken()) {
+                        switch (r.getToken()) {
                             case 3:
                                 return function() {
                                     f(), S();
                                     let e = !0,
                                         t = !1;
-                                    for (; 4 !== i.getToken() && 17 !== i.getToken();) {
-                                        if (5 === i.getToken()) {
-                                            if (t || P(4, [], []), v(","), S(), 4 === i.getToken() && _) break
+                                    for (; 4 !== r.getToken() && 17 !== r.getToken();) {
+                                        if (5 === r.getToken()) {
+                                            if (t || P(4, [], []), v(","), S(), 4 === r.getToken() && _) break
                                         } else t && P(6, [], []);
                                         e ? (s.push(0), e = !1) : s[s.length - 1]++, T() || P(4, [], [4, 5]), t = !0
                                     }
-                                    return g(), e || s.pop(), 4 !== i.getToken() ? P(8, [4], []) : S(), !0
+                                    return g(), e || s.pop(), 4 !== r.getToken() ? P(8, [4], []) : S(), !0
                                 }();
                             case 1:
                                 return function() {
                                     d(), S();
                                     let e = !1;
-                                    for (; 2 !== i.getToken() && 17 !== i.getToken();) {
-                                        if (5 === i.getToken()) {
-                                            if (e || P(4, [], []), v(","), S(), 2 === i.getToken() && _) break
+                                    for (; 2 !== r.getToken() && 17 !== r.getToken();) {
+                                        if (5 === r.getToken()) {
+                                            if (e || P(4, [], []), v(","), S(), 2 === r.getToken() && _) break
                                         } else e && P(6, [], []);
                                         O() || P(4, [], [2, 5]), e = !0
                                     }
-                                    return p(), 2 !== i.getToken() ? P(7, [2], []) : S(), !0
+                                    return h(), 2 !== r.getToken() ? P(7, [2], []) : S(), !0
                                 }();
                             case 10:
                                 return C(!0);
                             default:
                                 return function() {
-                                    switch (i.getToken()) {
+                                    switch (r.getToken()) {
                                         case 11:
-                                            const e = i.getTokenValue();
+                                            const e = r.getTokenValue();
                                             let t = Number(e);
                                             isNaN(t) && (P(2), t = 0), m(t);
                                             break;
@@ -9671,7 +9697,7 @@
                                 }()
                         }
                     }
-                    return S(), 17 === i.getToken() ? !!n.allowEmptyContent || (P(4, [], []), !1) : T() ? (17 !== i.getToken() && P(9, [], []), !0) : (P(4, [], []), !1)
+                    return S(), 17 === r.getToken() ? !!n.allowEmptyContent || (P(4, [], []), !1) : T() ? (17 !== r.getToken() && P(9, [], []), !0) : (P(4, [], []), !1)
                 }
 
                 function g(e) {
@@ -9691,28 +9717,28 @@
 
                 function m(e, t, n) {
                     if (!n.formattingOptions) return [t];
-                    let r = v(e, t),
-                        i = t.offset,
+                    let i = v(e, t),
+                        r = t.offset,
                         s = t.offset + t.content.length;
                     if (0 === t.length || 0 === t.content.length) {
-                        for (; i > 0 && !d(r, i - 1);) i--;
-                        for (; s < r.length && !d(r, s);) s++
+                        for (; r > 0 && !d(i, r - 1);) r--;
+                        for (; s < i.length && !d(i, s);) s++
                     }
-                    const o = l(r, {
-                        offset: i,
-                        length: s - i
+                    const o = l(i, {
+                        offset: r,
+                        length: s - r
                     }, {
                         ...n.formattingOptions,
                         keepLines: !1
                     });
                     for (let e = o.length - 1; e >= 0; e--) {
                         const t = o[e];
-                        r = v(r, t), i = Math.min(i, t.offset), s = Math.max(s, t.offset + t.length), s += t.content.length - t.length
+                        i = v(i, t), r = Math.min(r, t.offset), s = Math.max(s, t.offset + t.length), s += t.content.length - t.length
                     }
                     return [{
-                        offset: i,
-                        length: e.length - (r.length - s) - i,
-                        content: r.substring(i, s)
+                        offset: r,
+                        length: e.length - (i.length - s) - r,
+                        content: i.substring(r, s)
                     }]
                 }
 
@@ -9727,11 +9753,11 @@
                         createScanner: () => y,
                         findNodeAtLocation: () => C,
                         findNodeAtOffset: () => O,
-                        format: () => M,
+                        format: () => R,
                         getLocation: () => _,
                         getNodePath: () => T,
                         getNodeValue: () => x,
-                        modify: () => R,
+                        modify: () => M,
                         parse: () => S,
                         parseTree: () => P,
                         printParseErrorCode: () => D,
@@ -9746,7 +9772,7 @@
                             allowTrailingComma: !1
                         }
                     }(c || (c = {}));
-                const y = r;
+                const y = i;
                 var b, w;
                 ! function(e) {
                     e[e.None = 0] = "None", e[e.UnexpectedEndOfComment = 1] = "UnexpectedEndOfComment", e[e.UnexpectedEndOfString = 2] = "UnexpectedEndOfString", e[e.UnexpectedEndOfNumber = 3] = "UnexpectedEndOfNumber", e[e.InvalidUnicode = 4] = "InvalidUnicode", e[e.InvalidEscapeCharacter = 5] = "InvalidEscapeCharacter", e[e.InvalidCharacter = 6] = "InvalidCharacter"
@@ -9756,8 +9782,8 @@
                 }(w || (w = {}));
                 const _ = function(e, t) {
                         const n = [],
-                            r = new Object;
-                        let i;
+                            i = new Object;
+                        let r;
                         const s = {
                             value: {},
                             offset: 0,
@@ -9767,106 +9793,106 @@
                         };
                         let o = !1;
 
-                        function a(e, t, n, r) {
-                            s.value = e, s.offset = t, s.length = n, s.type = r, s.colonOffset = void 0, i = s
+                        function a(e, t, n, i) {
+                            s.value = e, s.offset = t, s.length = n, s.type = i, s.colonOffset = void 0, r = s
                         }
                         try {
                             f(e, {
                                 onObjectBegin: (e, s) => {
-                                    if (t <= e) throw r;
-                                    i = void 0, o = t > e, n.push("")
+                                    if (t <= e) throw i;
+                                    r = void 0, o = t > e, n.push("")
                                 },
-                                onObjectProperty: (e, i, s) => {
-                                    if (t < i) throw r;
-                                    if (a(e, i, s, "property"), n[n.length - 1] = e, t <= i + s) throw r
+                                onObjectProperty: (e, r, s) => {
+                                    if (t < r) throw i;
+                                    if (a(e, r, s, "property"), n[n.length - 1] = e, t <= r + s) throw i
                                 },
                                 onObjectEnd: (e, s) => {
-                                    if (t <= e) throw r;
-                                    i = void 0, n.pop()
+                                    if (t <= e) throw i;
+                                    r = void 0, n.pop()
                                 },
                                 onArrayBegin: (e, s) => {
-                                    if (t <= e) throw r;
-                                    i = void 0, n.push(0)
+                                    if (t <= e) throw i;
+                                    r = void 0, n.push(0)
                                 },
                                 onArrayEnd: (e, s) => {
-                                    if (t <= e) throw r;
-                                    i = void 0, n.pop()
+                                    if (t <= e) throw i;
+                                    r = void 0, n.pop()
                                 },
-                                onLiteralValue: (e, n, i) => {
-                                    if (t < n) throw r;
-                                    if (a(e, n, i, g(e)), t <= n + i) throw r
+                                onLiteralValue: (e, n, r) => {
+                                    if (t < n) throw i;
+                                    if (a(e, n, r, g(e)), t <= n + r) throw i
                                 },
                                 onSeparator: (e, s, a) => {
-                                    if (t <= s) throw r;
-                                    if (":" === e && i && "property" === i.type) i.colonOffset = s, o = !1, i = void 0;
+                                    if (t <= s) throw i;
+                                    if (":" === e && r && "property" === r.type) r.colonOffset = s, o = !1, r = void 0;
                                     else if ("," === e) {
                                         const e = n[n.length - 1];
-                                        "number" == typeof e ? n[n.length - 1] = e + 1 : (o = !0, n[n.length - 1] = ""), i = void 0
+                                        "number" == typeof e ? n[n.length - 1] = e + 1 : (o = !0, n[n.length - 1] = ""), r = void 0
                                     }
                                 }
                             })
                         } catch (e) {
-                            if (e !== r) throw e
+                            if (e !== i) throw e
                         }
                         return {
                             path: n,
-                            previousNode: i,
+                            previousNode: r,
                             isAtPropertyKey: o,
                             matches: e => {
                                 let t = 0;
-                                for (let r = 0; t < e.length && r < n.length; r++)
-                                    if (e[t] === n[r] || "*" === e[t]) t++;
+                                for (let i = 0; t < e.length && i < n.length; i++)
+                                    if (e[t] === n[i] || "*" === e[t]) t++;
                                     else if ("**" !== e[t]) return !1;
                                 return t === e.length
                             }
                         }
                     },
                     S = function(e, t = [], n = c.DEFAULT) {
-                        let r = null,
-                            i = [];
+                        let i = null,
+                            r = [];
                         const s = [];
 
                         function o(e) {
-                            Array.isArray(i) ? i.push(e) : null !== r && (i[r] = e)
+                            Array.isArray(r) ? r.push(e) : null !== i && (r[i] = e)
                         }
                         return f(e, {
                             onObjectBegin: () => {
                                 const e = {};
-                                o(e), s.push(i), i = e, r = null
+                                o(e), s.push(r), r = e, i = null
                             },
                             onObjectProperty: e => {
-                                r = e
+                                i = e
                             },
                             onObjectEnd: () => {
-                                i = s.pop()
+                                r = s.pop()
                             },
                             onArrayBegin: () => {
                                 const e = [];
-                                o(e), s.push(i), i = e, r = null
+                                o(e), s.push(r), r = e, i = null
                             },
                             onArrayEnd: () => {
-                                i = s.pop()
+                                r = s.pop()
                             },
                             onLiteralValue: o,
-                            onError: (e, n, r) => {
+                            onError: (e, n, i) => {
                                 t.push({
                                     error: e,
                                     offset: n,
-                                    length: r
+                                    length: i
                                 })
                             }
-                        }, n), i[0]
+                        }, n), r[0]
                     },
-                    P = h,
-                    C = p,
-                    O = function e(t, n, r = !1) {
+                    P = p,
+                    C = h,
+                    O = function e(t, n, i = !1) {
                         if (function(e, t, n = !1) {
                                 return t >= e.offset && t < e.offset + e.length || n && t === e.offset + e.length
-                            }(t, n, r)) {
-                            const i = t.children;
-                            if (Array.isArray(i))
-                                for (let t = 0; t < i.length && i[t].offset <= n; t++) {
-                                    const s = e(i[t], n, r);
+                            }(t, n, i)) {
+                            const r = t.children;
+                            if (Array.isArray(r))
+                                for (let t = 0; t < r.length && r[t].offset <= n; t++) {
+                                    const s = e(r[t], n, i);
                                     if (s) return s
                                 }
                             return t
@@ -9889,9 +9915,9 @@
                                 return t.children.map(e);
                             case "object":
                                 const n = Object.create(null);
-                                for (let r of t.children) {
-                                    const t = r.children[1];
-                                    t && (n[r.children[0].value] = e(t))
+                                for (let i of t.children) {
+                                    const t = i.children[1];
+                                    t && (n[i.children[0].value] = e(t))
                                 }
                                 return n;
                             case "null":
@@ -9905,15 +9931,15 @@
                     },
                     j = f,
                     E = function(e, t) {
-                        let n, i, s = r(e),
+                        let n, r, s = i(e),
                             o = [],
                             a = 0;
                         do {
-                            switch (i = s.getPosition(), n = s.scan(), n) {
+                            switch (r = s.getPosition(), n = s.scan(), n) {
                                 case 12:
                                 case 13:
                                 case 17:
-                                    a !== i && o.push(e.substring(a, i)), void 0 !== t && o.push(s.getTokenValue().replace(/[^\r\n]/g, t)), a = s.getPosition()
+                                    a !== r && o.push(e.substring(a, r)), void 0 !== t && o.push(s.getTokenValue().replace(/[^\r\n]/g, t)), a = s.getPosition()
                             }
                         } while (17 !== n);
                         return o.join("")
@@ -9958,48 +9984,48 @@
                     return "<unknown ParseErrorCode>"
                 }
 
-                function M(e, t, n) {
+                function R(e, t, n) {
                     return l(e, t, n)
                 }
 
-                function R(e, t, n, r) {
-                    return function(e, t, n, r) {
-                        const i = t.slice(),
-                            s = h(e, []);
+                function M(e, t, n, i) {
+                    return function(e, t, n, i) {
+                        const r = t.slice(),
+                            s = p(e, []);
                         let o, a;
-                        for (; i.length > 0 && (a = i.pop(), o = p(s, i), void 0 === o && void 0 !== n);) n = "string" == typeof a ? {
+                        for (; r.length > 0 && (a = r.pop(), o = h(s, r), void 0 === o && void 0 !== n);) n = "string" == typeof a ? {
                             [a]: n
                         } : [n];
                         if (o) {
                             if ("object" === o.type && "string" == typeof a && Array.isArray(o.children)) {
-                                const t = p(o, [a]);
+                                const t = h(o, [a]);
                                 if (void 0 !== t) {
                                     if (void 0 === n) {
                                         if (!t.parent) throw new Error("Malformed AST");
                                         const n = o.children.indexOf(t.parent);
-                                        let i, s = t.parent.offset + t.parent.length;
+                                        let r, s = t.parent.offset + t.parent.length;
                                         if (n > 0) {
                                             let e = o.children[n - 1];
-                                            i = e.offset + e.length
-                                        } else i = o.offset + 1, o.children.length > 1 && (s = o.children[1].offset);
+                                            r = e.offset + e.length
+                                        } else r = o.offset + 1, o.children.length > 1 && (s = o.children[1].offset);
                                         return m(e, {
-                                            offset: i,
-                                            length: s - i,
+                                            offset: r,
+                                            length: s - r,
                                             content: ""
-                                        }, r)
+                                        }, i)
                                     }
                                     return m(e, {
                                         offset: t.offset,
                                         length: t.length,
                                         content: JSON.stringify(n)
-                                    }, r)
+                                    }, i)
                                 } {
                                     if (void 0 === n) return [];
                                     const t = `${JSON.stringify(a)}: ${JSON.stringify(n)}`,
-                                        i = r.getInsertionIndex ? r.getInsertionIndex(o.children.map(e => e.children[0].value)) : o.children.length;
+                                        r = i.getInsertionIndex ? i.getInsertionIndex(o.children.map(e => e.children[0].value)) : o.children.length;
                                     let s;
-                                    if (i > 0) {
-                                        let e = o.children[i - 1];
+                                    if (r > 0) {
+                                        let e = o.children[r - 1];
                                         s = {
                                             offset: e.offset + e.length,
                                             length: 0,
@@ -10014,34 +10040,34 @@
                                         length: 0,
                                         content: t + ","
                                     };
-                                    return m(e, s, r)
+                                    return m(e, s, i)
                                 }
                             }
                             if ("array" === o.type && "number" == typeof a && Array.isArray(o.children)) {
                                 const t = a;
                                 if (-1 === t) {
                                     const t = `${JSON.stringify(n)}`;
-                                    let i;
-                                    if (0 === o.children.length) i = {
+                                    let r;
+                                    if (0 === o.children.length) r = {
                                         offset: o.offset + 1,
                                         length: 0,
                                         content: t
                                     };
                                     else {
                                         const e = o.children[o.children.length - 1];
-                                        i = {
+                                        r = {
                                             offset: e.offset + e.length,
                                             length: 0,
                                             content: "," + t
                                         }
                                     }
-                                    return m(e, i, r)
+                                    return m(e, r, i)
                                 }
                                 if (void 0 === n && o.children.length >= 0) {
                                     const t = a,
                                         n = o.children[t];
-                                    let i;
-                                    if (1 === o.children.length) i = {
+                                    let r;
+                                    if (1 === o.children.length) r = {
                                         offset: o.offset + 1,
                                         length: o.length - 2,
                                         content: ""
@@ -10049,32 +10075,32 @@
                                     else if (o.children.length - 1 === t) {
                                         let e = o.children[t - 1],
                                             n = e.offset + e.length;
-                                        i = {
+                                        r = {
                                             offset: n,
                                             length: o.offset + o.length - 2 - n,
                                             content: ""
                                         }
-                                    } else i = {
+                                    } else r = {
                                         offset: n.offset,
                                         length: o.children[t + 1].offset - n.offset,
                                         content: ""
                                     };
-                                    return m(e, i, r)
+                                    return m(e, r, i)
                                 }
                                 if (void 0 !== n) {
                                     let t;
-                                    const i = `${JSON.stringify(n)}`;
-                                    if (!r.isArrayInsertion && o.children.length > a) {
+                                    const r = `${JSON.stringify(n)}`;
+                                    if (!i.isArrayInsertion && o.children.length > a) {
                                         const e = o.children[a];
                                         t = {
                                             offset: e.offset,
                                             length: e.length,
-                                            content: i
+                                            content: r
                                         }
                                     } else if (0 === o.children.length || 0 === a) t = {
                                         offset: o.offset + 1,
                                         length: 0,
-                                        content: 0 === o.children.length ? i : i + ","
+                                        content: 0 === o.children.length ? r : r + ","
                                     };
                                     else {
                                         const e = a > o.children.length ? o.children.length : a,
@@ -10082,12 +10108,12 @@
                                         t = {
                                             offset: n.offset + n.length,
                                             length: 0,
-                                            content: "," + i
+                                            content: "," + r
                                         }
                                     }
-                                    return m(e, t, r)
+                                    return m(e, t, i)
                                 }
-                                throw new Error(`Can not ${void 0===n?"remove":r.isArrayInsertion?"insert":"modify"} Array index ${t} as length is not sufficient`)
+                                throw new Error(`Can not ${void 0===n?"remove":i.isArrayInsertion?"insert":"modify"} Array index ${t} as length is not sufficient`)
                             }
                             throw new Error(`Can not add ${"number"!=typeof a?"index":"property"} to parent of type ${o.type}`)
                         }
@@ -10096,8 +10122,8 @@
                             offset: s ? s.offset : 0,
                             length: s ? s.length : 0,
                             content: JSON.stringify(n)
-                        }, r)
-                    }(e, t, n, r)
+                        }, i)
+                    }(e, t, n, i)
                 }
 
                 function I(e, t) {
@@ -10105,11 +10131,11 @@
                             const n = e.offset - t.offset;
                             return 0 === n ? e.length - t.length : n
                         }),
-                        r = e.length;
+                        i = e.length;
                     for (let t = n.length - 1; t >= 0; t--) {
-                        let i = n[t];
-                        if (!(i.offset + i.length <= r)) throw new Error("Overlapping edit");
-                        e = v(e, i), r = i.offset
+                        let r = n[t];
+                        if (!(r.offset + r.length <= i)) throw new Error("Overlapping edit");
+                        e = v(e, r), i = r.offset
                     }
                     return e
                 }! function(e) {
@@ -10118,7 +10144,7 @@
             },
             5894: (e, t) => {
                 "use strict";
-                async function n(e, t, n, r) {
+                async function n(e, t, n, i) {
                     return {
                         initialFetch: Promise.resolve(),
                         getTreatmentVariableAsync: async () => {}
@@ -10127,7 +10153,7 @@
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.ExperimentationService = void 0, t.createTasExperimentationService = n, t.ExperimentationService = class {
-                    constructor(e, t, r, i) {
+                    constructor(e, t, i, r) {
                         this._experimentationServicePromise = n()
                     }
                     async getTreatmentVariable(e, t) {
@@ -10142,21 +10168,21 @@
             },
             5896: (e, t, n) => {
                 "use strict";
-                const r = n(857),
-                    i = n(440),
+                const i = n(857),
+                    r = n(440),
                     s = n(4705),
-                    o = r.platform();
+                    o = i.platform();
 
                 function a(e, t) {
                     let n = 0;
-                    const r = e.split(/-|:|\./);
-                    let i = r.length - 1;
-                    return i >= 0 && t && "darwin" === o && (n += 10 * parseInt(r[i--], 10)), i >= 0 && (n += 1e3 * parseInt(r[i--], 10)), i >= 0 && (n += 6e4 * parseInt(r[i--], 10)), i >= 0 && (n += 36e5 * parseInt(r[i--], 10)), i >= 0 && (n += 864e5 * parseInt(r[i--], 10)), n
+                    const i = e.split(/-|:|\./);
+                    let r = i.length - 1;
+                    return r >= 0 && t && "darwin" === o && (n += 10 * parseInt(i[r--], 10)), r >= 0 && (n += 1e3 * parseInt(i[r--], 10)), r >= 0 && (n += 6e4 * parseInt(i[r--], 10)), r >= 0 && (n += 36e5 * parseInt(i[r--], 10)), r >= 0 && (n += 864e5 * parseInt(i[r--], 10)), n
                 }
                 e.exports = function(e, t, n) {
                     const c = e.join(",");
                     let l = ["-o", "etime,pid,ppid,pcpu,rss,time", "-p", c];
-                    "aix" !== o && "os400" !== o || (l = ["-o", "etime,pid,ppid,pcpu,rssize,time", "-p", c]), i("ps", l, function(e, i, c) {
+                    "aix" !== o && "os400" !== o || (l = ["-o", "etime,pid,ppid,pcpu,rssize,time", "-p", c]), r("ps", l, function(e, r, c) {
                         if (e) return "os390" === o && /no matching processes found/.test(e) && ((e = new Error("No matching pid found")).code = "ENOENT"), n(e);
                         if (1 === c) {
                             const e = new Error("No matching pid found");
@@ -10164,30 +10190,30 @@
                         }
                         if (0 !== c) return n(new Error("pidusage ps command exited with code " + c));
                         const l = Date.now();
-                        i = i.split(r.EOL);
+                        r = r.split(i.EOL);
                         const u = {};
-                        for (let e = 1; e < i.length; e++) {
-                            const n = i[e].trim().split(/\s+/);
+                        for (let e = 1; e < r.length; e++) {
+                            const n = r[e].trim().split(/\s+/);
                             if (!n || 6 !== n.length) continue;
-                            const r = parseInt(n[1], 10);
-                            let o = s.get(r, t.maxage);
+                            const i = parseInt(n[1], 10);
+                            let o = s.get(i, t.maxage);
                             void 0 === o && (o = {});
                             const c = parseInt(n[2], 10),
                                 d = 1024 * parseInt(n[4], 10),
-                                h = a(n[0]),
-                                p = a(n[5], !0),
-                                f = p - (o.ctime || 0),
-                                g = Math.abs(void 0 !== o.elapsed ? h - o.elapsed : h),
+                                p = a(n[0]),
+                                h = a(n[5], !0),
+                                f = h - (o.ctime || 0),
+                                g = Math.abs(void 0 !== o.elapsed ? p - o.elapsed : p),
                                 m = g > 0 ? f / g * 100 : 0;
-                            u[r] = {
+                            u[i] = {
                                 cpu: m,
                                 memory: d,
                                 ppid: c,
-                                pid: r,
-                                ctime: p,
-                                elapsed: h,
+                                pid: i,
+                                ctime: h,
+                                elapsed: p,
                                 timestamp: l
-                            }, s.set(r, u[r], t.maxage)
+                            }, s.set(i, u[i], t.maxage)
                         }
                         n(null, u)
                     })
@@ -10195,17 +10221,17 @@
             },
             5904: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -10215,23 +10241,23 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.register = function(e, t, n) {
-                    return (0, u.conditionalRegistration)([h(e.syntax, t)], () => new d(n))
+                    return (0, u.conditionalRegistration)([p(e.syntax, t)], () => new d(n))
                 };
                 const a = o(n(1398)),
                     c = o(n(2144)),
@@ -10250,10 +10276,10 @@
                         reason: n
                     }) {
                         if (0 === t.length || n === a.TextDocumentChangeReason.Undo || n === a.TextDocumentChangeReason.Redo) return;
-                        const r = a.window.activeTextEditor?.document;
-                        if (e !== r) return;
-                        const i = this.client.toOpenTsFilePath(e);
-                        if (!i) return;
+                        const i = a.window.activeTextEditor?.document;
+                        if (e !== i) return;
+                        const r = this.client.toOpenTsFilePath(e);
+                        if (!r) return;
                         void 0 !== this._timeout && clearTimeout(this._timeout), this._cancel && (this._cancel.cancel(), this._cancel.dispose(), this._cancel = void 0);
                         const s = t[t.length - 1],
                             o = s.text[s.text.length - 1];
@@ -10268,16 +10294,16 @@
                                 n = t.length <= 1 ? s.range.start.translate({
                                     characterDelta: s.text.length
                                 }) : new a.Position(s.range.start.line + t.length - 1, t[t.length - 1].length),
-                                r = c.Position.toFileLocationRequestArgs(i, n);
+                                i = c.Position.toFileLocationRequestArgs(r, n);
                             this._cancel = new a.CancellationTokenSource;
-                            const o = await this.client.execute("jsxClosingTag", r, this._cancel.token);
+                            const o = await this.client.execute("jsxClosingTag", i, this._cancel.token);
                             if ("response" !== o.type || !o.body) return;
                             if (this._disposed) return;
                             const u = a.window.activeTextEditor;
                             if (!u) return;
                             const d = o.body,
-                                h = u.document;
-                            e === h && h.version === l && u.insertSnippet(this.getTagSnippet(d), this.getInsertionPositions(u, n))
+                                p = u.document;
+                            e === p && p.version === l && u.insertSnippet(this.getTagSnippet(d), this.getInsertionPositions(u, n))
                         }, 100)
                     }
                     getTagSnippet(e) {
@@ -10290,7 +10316,7 @@
                     }
                 }
 
-                function h(e, t) {
+                function p(e, t) {
                     return new u.Condition(() => {
                         const n = a.window.activeTextEditor;
                         return !(!n || !a.languages.match(e, n.document) || !a.workspace.getConfiguration(t.id, n.document).get("autoClosingTags"))
@@ -10299,17 +10325,17 @@
             },
             5983: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -10319,32 +10345,32 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.register = function(e, t, n, r) {
-                    return (0, d.conditionalRegistration)([(0, d.requireGlobalConfiguration)(t.id, "implementationsCodeLens.enabled"), (0, d.requireSomeCapability)(n, u.ClientCapability.Semantic)], () => a.languages.registerCodeLensProvider(e.semantic, new f(n, r, t)))
+                }), t.register = function(e, t, n, i) {
+                    return (0, d.conditionalRegistration)([(0, d.requireGlobalConfiguration)(t.id, "implementationsCodeLens.enabled"), (0, d.requireSomeCapability)(n, u.ClientCapability.Semantic)], () => a.languages.registerCodeLensProvider(e.semantic, new f(n, i, t)))
                 };
                 const a = o(n(1398)),
                     c = o(n(1788)),
                     l = o(n(2144)),
                     u = n(7371),
                     d = n(6362),
-                    h = n(6156),
-                    p = n(185);
-                class f extends h.TypeScriptBaseCodeLensProvider {
+                    p = n(6156),
+                    h = n(185);
+                class f extends p.TypeScriptBaseCodeLensProvider {
                     constructor(e, t, n) {
                         super(e, t), this._cachedResponse = t, this.language = n, this._register(a.workspace.onDidChangeConfiguration(e => {
                             e.affectsConfiguration(`${n.id}.implementationsCodeLens.showOnInterfaceMethods`) && this.changeEmitter.fire()
@@ -10352,14 +10378,14 @@
                     }
                     async resolveCodeLens(e, t) {
                         const n = l.Position.toFileLocationRequestArgs(e.file, e.range.start),
-                            r = await this.client.execute("implementation", n, t, {
+                            i = await this.client.execute("implementation", n, t, {
                                 lowPriority: !0,
-                                executionTarget: p.ExecutionTarget.Semantic,
+                                executionTarget: h.ExecutionTarget.Semantic,
                                 cancelOnResourceChange: e.document
                             });
-                        if ("response" !== r.type || !r.body) return e.command = "cancelled" === r.type ? h.TypeScriptBaseCodeLensProvider.cancelledCommand : h.TypeScriptBaseCodeLensProvider.errorCommand, e;
-                        const i = r.body.map(e => new a.Location(this.client.toResource(e.file), e.start.line === e.end.line ? l.Range.fromTextSpan(e) : new a.Range(l.Position.fromLocation(e.start), new a.Position(e.start.line, 0)))).filter(t => !(t.uri.toString() === e.document.toString() && t.range.start.line === e.range.start.line && t.range.start.character === e.range.start.character));
-                        return e.command = this.getCommand(i, e), e
+                        if ("response" !== i.type || !i.body) return e.command = "cancelled" === i.type ? p.TypeScriptBaseCodeLensProvider.cancelledCommand : p.TypeScriptBaseCodeLensProvider.errorCommand, e;
+                        const r = i.body.map(e => new a.Location(this.client.toResource(e.file), e.start.line === e.end.line ? l.Range.fromTextSpan(e) : new a.Range(l.Position.fromLocation(e.start), new a.Position(e.start.line, 0)))).filter(t => !(t.uri.toString() === e.document.toString() && t.range.start.line === e.range.start.line && t.range.start.character === e.range.start.character));
+                        return e.command = this.getCommand(r, e), e
                     }
                     getCommand(e, t) {
                         return {
@@ -10372,16 +10398,16 @@
                         return 1 === e.length ? a.l10n.t("1 implementation") : a.l10n.t("{0} implementations", e.length)
                     }
                     extractSymbol(e, t, n) {
-                        if (t.kind === c.Kind.method && n?.kind === c.Kind.interface && a.workspace.getConfiguration(this.language.id).get("implementationsCodeLens.showOnInterfaceMethods")) return (0, h.getSymbolRange)(e, t);
+                        if (t.kind === c.Kind.method && n?.kind === c.Kind.interface && a.workspace.getConfiguration(this.language.id).get("implementationsCodeLens.showOnInterfaceMethods")) return (0, p.getSymbolRange)(e, t);
                         switch (t.kind) {
                             case c.Kind.interface:
-                                return (0, h.getSymbolRange)(e, t);
+                                return (0, p.getSymbolRange)(e, t);
                             case c.Kind.class:
                             case c.Kind.method:
                             case c.Kind.memberVariable:
                             case c.Kind.memberGetAccessor:
                             case c.Kind.memberSetAccessor:
-                                if (t.kindModifiers.match(/\babstract\b/g)) return (0, h.getSymbolRange)(e, t)
+                                if (t.kindModifiers.match(/\babstract\b/g)) return (0, p.getSymbolRange)(e, t)
                         }
                     }
                 }
@@ -10389,17 +10415,17 @@
             },
             6006: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -10409,17 +10435,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -10434,13 +10460,13 @@
                         this.client = e
                     }
                     async provideSelectionRanges(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return;
-                        const i = {
-                                file: r,
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return;
+                        const r = {
+                                file: i,
                                 locations: t.map(c.Position.toLocation)
                             },
-                            s = await this.client.execute("selectionRange", i, n);
+                            s = await this.client.execute("selectionRange", r, n);
                         return "response" === s.type && s.body ? s.body.map(l.convertSelectionRange) : void 0
                     }
                     static convertSelectionRange(e) {
@@ -10450,17 +10476,17 @@
             },
             6156: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -10470,17 +10496,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -10489,11 +10515,11 @@
                     if (t.nameSpan) return c.Range.fromTextSpan(t.nameSpan);
                     const n = t.spans?.[0];
                     if (!n) return;
-                    const r = c.Range.fromTextSpan(n),
-                        i = e.getText(r),
-                        s = new RegExp(`^(.*?(\\b|\\W))${(0,l.escapeRegExp)(t.text||"")}(\\b|\\W)`, "gm").exec(i),
+                    const i = c.Range.fromTextSpan(n),
+                        r = e.getText(i),
+                        s = new RegExp(`^(.*?(\\b|\\W))${(0,l.escapeRegExp)(t.text||"")}(\\b|\\W)`, "gm").exec(r),
                         o = s ? s.index + s[1].length : 0,
-                        u = e.offsetAt(new a.Position(r.start.line, r.start.character)) + o;
+                        u = e.offsetAt(new a.Position(i.start.line, i.start.character)) + o;
                     return new a.Range(e.positionAt(u), e.positionAt(u + t.text.length))
                 };
                 const a = o(n(1398)),
@@ -10506,42 +10532,42 @@
                     }
                 }
                 t.ReferencesCodeLens = d;
-                class h extends u.Disposable {
+                class p extends u.Disposable {
                     constructor(e, t) {
                         super(), this.client = e, this.cachedResponse = t, this.changeEmitter = this._register(new a.EventEmitter), this.onDidChangeCodeLenses = this.changeEmitter.event
                     }
                     async provideCodeLenses(e, t) {
                         const n = this.client.toOpenTsFilePath(e);
                         if (!n) return [];
-                        const r = await this.cachedResponse.execute(e, () => this.client.execute("navtree", {
+                        const i = await this.cachedResponse.execute(e, () => this.client.execute("navtree", {
                             file: n
                         }, t));
-                        if ("response" !== r.type) return [];
-                        const i = [];
-                        return r.body?.childItems?.forEach(t => this.walkNavTree(e, t, void 0, i)), i.map(t => new d(e.uri, n, t))
+                        if ("response" !== i.type) return [];
+                        const r = [];
+                        return i.body?.childItems?.forEach(t => this.walkNavTree(e, t, void 0, r)), r.map(t => new d(e.uri, n, t))
                     }
-                    walkNavTree(e, t, n, r) {
-                        const i = this.extractSymbol(e, t, n);
-                        i && r.push(i), t.childItems?.forEach(n => this.walkNavTree(e, n, t, r))
+                    walkNavTree(e, t, n, i) {
+                        const r = this.extractSymbol(e, t, n);
+                        r && i.push(r), t.childItems?.forEach(n => this.walkNavTree(e, n, t, i))
                     }
                 }
-                t.TypeScriptBaseCodeLensProvider = h, h.cancelledCommand = {
+                t.TypeScriptBaseCodeLensProvider = p, p.cancelledCommand = {
                     title: "",
                     command: ""
-                }, h.errorCommand = {
+                }, p.errorCommand = {
                     title: a.l10n.t("Could not determine references"),
                     command: ""
                 }
             },
             6170: (e, t, n) => {
-                const r = n(3908),
-                    i = n(144),
+                const i = n(3908),
+                    r = n(144),
                     {
                         safeRe: s,
                         t: o
                     } = n(9718);
                 e.exports = (e, t) => {
-                    if (e instanceof r) return e;
+                    if (e instanceof i) return e;
                     if ("number" == typeof e && (e = String(e)), "string" != typeof e) return null;
                     let n = null;
                     if ((t = t || {}).rtl) {
@@ -10550,26 +10576,26 @@
                             (t = s[o.COERCERTL].exec(e)) && (!n || n.index + n[0].length !== e.length);) n && t.index + t[0].length === n.index + n[0].length || (n = t), s[o.COERCERTL].lastIndex = t.index + t[1].length + t[2].length;
                         s[o.COERCERTL].lastIndex = -1
                     } else n = e.match(s[o.COERCE]);
-                    return null === n ? null : i(`${n[2]}.${n[3]||"0"}.${n[4]||"0"}`, t)
+                    return null === n ? null : r(`${n[2]}.${n[3]||"0"}.${n[4]||"0"}`, t)
                 }
             },
             6254: (e, t, n) => {
-                const r = n(3908);
-                e.exports = (e, t) => new r(e, t).minor
+                const i = n(3908);
+                e.exports = (e, t) => new i(e, t).minor
             },
             6325: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -10579,62 +10605,62 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.register = function(e, t, n, r) {
-                    return (0, p.conditionalRegistration)([(0, p.requireSomeCapability)(n, h.ClientCapability.Semantic)], () => c.languages.registerRenameProvider(e.semantic, new f(t, n, r)))
+                }), t.register = function(e, t, n, i) {
+                    return (0, h.conditionalRegistration)([(0, h.requireSomeCapability)(n, p.ClientCapability.Semantic)], () => c.languages.registerRenameProvider(e.semantic, new f(t, n, i)))
                 };
                 const a = o(n(6928)),
                     c = o(n(1398)),
                     l = o(n(3256)),
                     u = n(2928),
                     d = o(n(2144)),
-                    h = n(7371),
-                    p = n(6362);
+                    p = n(7371),
+                    h = n(6362);
                 class f {
                     constructor(e, t, n) {
                         this.language = e, this.client = t, this.fileConfigurationManager = n
                     }
                     async prepareRename(e, t, n) {
-                        const r = await this.execRename(e, t, n);
-                        if (r) switch (r.type) {
+                        const i = await this.execRename(e, t, n);
+                        if (i) switch (i.type) {
                             case "rename": {
-                                const e = r.body.info;
+                                const e = i.body.info;
                                 return e.canRename ? d.Range.fromTextSpan(e.triggerSpan) : Promise.reject(e.localizedErrorMessage)
                             }
                             case "jsxLinkedEditing":
-                                return r.spans.map(d.Range.fromTextSpan).find(e => e.contains(t))
+                                return i.spans.map(d.Range.fromTextSpan).find(e => e.contains(t))
                         }
                     }
-                    async provideRenameEdits(e, t, n, r) {
-                        const i = this.client.toOpenTsFilePath(e);
-                        if (!i) return;
-                        const s = await this.execRename(e, t, r);
-                        if (s && !r.isCancellationRequested) switch (s.type) {
+                    async provideRenameEdits(e, t, n, i) {
+                        const r = this.client.toOpenTsFilePath(e);
+                        if (!r) return;
+                        const s = await this.execRename(e, t, i);
+                        if (s && !i.isCancellationRequested) switch (s.type) {
                             case "rename": {
                                 const e = s.body.info;
                                 if (!e.canRename) return Promise.reject(e.localizedErrorMessage);
                                 if (e.fileToRename) {
-                                    return await this.renameFile(e.fileToRename, e.fullDisplayName, n, r) || Promise.reject(c.l10n.t("An error occurred while renaming file"))
+                                    return await this.renameFile(e.fileToRename, e.fullDisplayName, n, i) || Promise.reject(c.l10n.t("An error occurred while renaming file"))
                                 }
                                 return this.updateLocs(s.body.locs, n)
                             }
                             case "jsxLinkedEditing":
                                 return this.updateLocs([{
-                                    file: i,
+                                    file: r,
                                     locs: s.spans.map(e => ({
                                         ...e
                                     }))
@@ -10642,25 +10668,25 @@
                         }
                     }
                     async execRename(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return;
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return;
                         if (this.client.apiVersion.gte(u.API.v510) && c.workspace.getConfiguration(this.language.id).get("preferences.renameMatchingJsxTags", !0) && this.looksLikePotentialJsxTagContext(e, t)) {
-                            const e = d.Position.toFileLocationRequestArgs(r, t),
-                                i = await this.client.execute("linkedEditingRange", e, n);
-                            if ("response" !== i.type || !i.body) return;
+                            const e = d.Position.toFileLocationRequestArgs(i, t),
+                                r = await this.client.execute("linkedEditingRange", e, n);
+                            if ("response" !== r.type || !r.body) return;
                             return {
                                 type: "jsxLinkedEditing",
-                                spans: i.body.ranges
+                                spans: r.body.ranges
                             }
                         }
-                        const i = {
-                            ...d.Position.toFileLocationRequestArgs(r, t),
+                        const r = {
+                            ...d.Position.toFileLocationRequestArgs(i, t),
                             findInStrings: !1,
                             findInComments: !1
                         };
                         return this.client.interruptGetErr(async () => {
                             this.fileConfigurationManager.ensureConfigurationForDocument(e, n);
-                            const t = await this.client.execute("rename", i, n);
+                            const t = await this.client.execute("rename", r, n);
                             if ("response" === t.type && t.body) return {
                                 type: "rename",
                                 body: t.body
@@ -10674,22 +10700,22 @@
                     }
                     updateLocs(e, t) {
                         const n = new c.WorkspaceEdit;
-                        for (const r of e) {
-                            const e = this.client.toResource(r.file);
-                            for (const i of r.locs) n.replace(e, d.Range.fromTextSpan(i), (i.prefixText || "") + t + (i.suffixText || ""))
+                        for (const i of e) {
+                            const e = this.client.toResource(i.file);
+                            for (const r of i.locs) n.replace(e, d.Range.fromTextSpan(r), (r.prefixText || "") + t + (r.suffixText || ""))
                         }
                         return n
                     }
-                    async renameFile(e, t, n, r) {
+                    async renameFile(e, t, n, i) {
                         a.extname(n) ? a.extname(n) === a.extname(t) && (n = n.slice(0, n.length - a.extname(n).length) + a.extname(e)) : n += a.extname(e);
-                        const i = a.dirname(e),
-                            s = a.join(i, n),
+                        const r = a.dirname(e),
+                            s = a.join(r, n),
                             o = {
                                 file: e,
                                 oldFilePath: e,
                                 newFilePath: s
                             },
-                            l = await this.client.execute("getEditsForFileRename", o, r);
+                            l = await this.client.execute("getEditsForFileRename", o, i);
                         if ("response" !== l.type || !l.body) return;
                         const u = d.WorkspaceEdit.fromFileCodeEdits(this.client, l.body);
                         return u.renameFile(c.Uri.file(e), c.Uri.file(s)), u
@@ -10698,17 +10724,17 @@
             },
             6361: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -10718,17 +10744,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     }),
                     a = this && this.__importDefault || function(e) {
@@ -10739,32 +10765,32 @@
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.register = function(e, t) {
-                    return (0, d.conditionalRegistration)([(0, d.requireSomeCapability)(t, l.ClientCapability.EnhancedSyntax, l.ClientCapability.Semantic)], () => c.languages.registerTypeDefinitionProvider(e.syntax, new h(t)))
+                    return (0, d.conditionalRegistration)([(0, d.requireSomeCapability)(t, l.ClientCapability.EnhancedSyntax, l.ClientCapability.Semantic)], () => c.languages.registerTypeDefinitionProvider(e.syntax, new p(t)))
                 };
                 const c = o(n(1398)),
                     l = n(7371),
                     u = a(n(2174)),
                     d = n(6362);
-                class h extends u.default {
+                class p extends u.default {
                     provideTypeDefinition(e, t, n) {
                         return this.getSymbolLocations("typeDefinition", e, t, n)
                     }
                 }
-                t.default = h
+                t.default = p
             },
             6362: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -10774,17 +10800,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -10828,17 +10854,17 @@
             },
             6381: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -10848,17 +10874,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -10869,7 +10895,7 @@
                     l = n(5602),
                     u = "typescript.useWorkspaceTsdk",
                     d = "typescript.suppressPromptWorkspaceTsdk";
-                class h extends l.Disposable {
+                class p extends l.Disposable {
                     constructor(e, t, n) {
                         if (super(), this.configuration = e, this.versionProvider = t, this.workspaceState = n, this._onDidPickNewVersion = this._register(new a.EventEmitter), this.onDidPickNewVersion = this._onDidPickNewVersion.event, this._currentVersion = this.versionProvider.defaultVersion, this.useWorkspaceTsdkSetting)
                             if (a.workspace.isTrusted) {
@@ -10897,7 +10923,7 @@
                             kind: a.QuickPickItemKind.Separator,
                             label: "",
                             run: () => {}
-                        }, p], {
+                        }, h], {
                             placeHolder: a.l10n.t("Select the TypeScript version used for JavaScript and TypeScript language features")
                         });
                         return e?.run()
@@ -10932,9 +10958,9 @@
                         if (void 0 === e) throw new Error("Could not prompt to use workspace TypeScript version because no workspace version is specified");
                         const t = a.l10n.t("Allow"),
                             n = a.l10n.t("Dismiss"),
-                            r = a.l10n.t("Never in this Workspace"),
-                            i = await a.window.showInformationMessage(a.l10n.t("This workspace contains a TypeScript version. Would you like to use the workspace TypeScript version for TypeScript and JavaScript language features?"), t, n, r);
-                        i === t ? (await this.workspaceState.update(u, !0), this.updateActiveVersion(e)) : i === r && await this.workspaceState.update(d, !0)
+                            i = a.l10n.t("Never in this Workspace"),
+                            r = await a.window.showInformationMessage(a.l10n.t("This workspace contains a TypeScript version. Would you like to use the workspace TypeScript version for TypeScript and JavaScript language features?"), t, n, i);
+                        r === t ? (await this.workspaceState.update(u, !0), this.updateActiveVersion(e)) : r === i && await this.workspaceState.update(d, !0)
                     }
                     updateActiveVersion(e) {
                         const t = this.currentVersion;
@@ -10950,8 +10976,8 @@
                         return null !== e.localTsdk && !0 === e.enablePromptUseWorkspaceTsdk && !1 === this.suppressPromptWorkspaceTsdkSetting && !1 === this.useWorkspaceTsdkSetting
                     }
                 }
-                t.TypeScriptVersionManager = h;
-                const p = {
+                t.TypeScriptVersionManager = p;
+                const h = {
                     label: a.l10n.t("Learn more about managing TypeScript versions"),
                     description: "",
                     run: () => {
@@ -10985,17 +11011,17 @@
             },
             6413: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -11005,17 +11031,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -11026,8 +11052,8 @@
                     l = o(n(1398)),
                     u = n(8366),
                     d = n(2928),
-                    h = n(6477);
-                class p {
+                    p = n(6477);
+                class h {
                     constructor(e) {
                         this.configuration = e
                     }
@@ -11039,7 +11065,7 @@
                     }
                     get globalVersion() {
                         if (this.configuration?.globalTsdk) {
-                            const e = this.loadVersionsFromSetting("user-setting", this.configuration.globalTsdk);
+                            const e = this.loadVersionsFromSetting(p.TypeScriptVersionSource.UserSetting, this.configuration.globalTsdk);
                             if (e?.length) return e[0]
                         }
                         return this.contributedTsNextVersion
@@ -11056,55 +11082,55 @@
                         return e.filter(e => !t.has(e.path) && (t.add(e.path), !0))
                     }
                     get bundledVersion() {
-                        const e = this.getContributedVersion("bundled", "vscode.typescript-language-features", ["..", "node_modules"]);
+                        const e = this.getContributedVersion(p.TypeScriptVersionSource.Bundled, "vscode.typescript-language-features", ["..", "node_modules"]);
                         if (e) return e;
                         throw l.window.showErrorMessage(l.l10n.t("VS Code's tsserver was deleted by another application such as a misbehaving virus detection tool. Please reinstall VS Code.")), new Error("Could not find bundled tsserver.js")
                     }
                     get contributedTsNextVersion() {
-                        return this.getContributedVersion("ts-nightly-extension", "ms-vscode.vscode-typescript-next", ["node_modules"])
+                        return this.getContributedVersion(p.TypeScriptVersionSource.TsNightlyExtension, "ms-vscode.vscode-typescript-next", ["node_modules"])
                     }
                     getContributedVersion(e, t, n) {
                         try {
-                            const r = l.extensions.getExtension(t);
-                            if (r) {
-                                const t = c.join(r.extensionPath, ...n, "typescript", "lib", "tsserver.js"),
-                                    i = new h.TypeScriptVersion(e, t, p.getApiVersion(t), "");
-                                if (i.isValid) return i
+                            const i = l.extensions.getExtension(t);
+                            if (i) {
+                                const t = c.join(i.extensionPath, ...n, "typescript", "lib", "tsserver.js"),
+                                    r = new p.TypeScriptVersion(e, t, h.getApiVersion(t), "");
+                                if (r.isValid) return r
                             }
                         } catch {}
                     }
                     get localTsdkVersions() {
                         const e = this.configuration?.localTsdk;
-                        return e ? this.loadVersionsFromSetting("workspace-setting", e) : []
+                        return e ? this.loadVersionsFromSetting(p.TypeScriptVersionSource.WorkspaceSetting, e) : []
                     }
                     loadVersionsFromSetting(e, t) {
                         if (c.isAbsolute(t)) {
                             const n = c.join(t, "tsserver.js");
-                            return [new h.TypeScriptVersion(e, n, p.getApiVersion(n), t)]
+                            return [new p.TypeScriptVersion(e, n, h.getApiVersion(n), t)]
                         }
                         const n = u.RelativeWorkspacePathResolver.asAbsoluteWorkspacePath(t);
                         if (void 0 !== n) {
-                            const r = c.join(n, "tsserver.js");
-                            return [new h.TypeScriptVersion(e, r, p.getApiVersion(r), t)]
+                            const i = c.join(n, "tsserver.js");
+                            return [new p.TypeScriptVersion(e, i, h.getApiVersion(i), t)]
                         }
                         return this.loadTypeScriptVersionsFromPath(e, t)
                     }
                     get localNodeModulesVersions() {
-                        return this.loadTypeScriptVersionsFromPath("node-modules", c.join("node_modules", "typescript", "lib")).filter(e => e.isValid)
+                        return this.loadTypeScriptVersionsFromPath(p.TypeScriptVersionSource.NodeModules, c.join("node_modules", "typescript", "lib")).filter(e => e.isValid)
                     }
                     loadTypeScriptVersionsFromPath(e, t) {
                         if (!l.workspace.workspaceFolders) return [];
                         const n = [];
-                        for (const r of l.workspace.workspaceFolders) {
-                            let i = t;
-                            l.workspace.workspaceFolders.length > 1 && (i = c.join(r.name, t));
-                            const s = c.join(r.uri.fsPath, t, "tsserver.js");
-                            n.push(new h.TypeScriptVersion(e, s, p.getApiVersion(s), i))
+                        for (const i of l.workspace.workspaceFolders) {
+                            let r = t;
+                            l.workspace.workspaceFolders.length > 1 && (r = c.join(i.name, t));
+                            const s = c.join(i.uri.fsPath, t, "tsserver.js");
+                            n.push(new p.TypeScriptVersion(e, s, h.getApiVersion(s), r))
                         }
                         return n
                     }
                     static getApiVersion(e) {
-                        const t = p.getTypeScriptVersion(e);
+                        const t = h.getTypeScriptVersion(e);
                         if (t) return t;
                         const n = l.workspace.getConfiguration().get("typescript.tsdk_version", void 0);
                         return n ? d.API.fromVersionString(n) : void 0
@@ -11114,33 +11140,33 @@
                         const t = e.split(c.sep);
                         if (t.length <= 2) return;
                         const n = t.slice(0, -2).join(c.sep);
-                        let r = c.join(n, "package.json");
-                        if (a.existsSync(r) || "built" === c.basename(n) && (r = c.join(n, "..", "package.json")), !a.existsSync(r)) return;
-                        const i = a.readFileSync(r).toString();
+                        let i = c.join(n, "package.json");
+                        if (a.existsSync(i) || "built" === c.basename(n) && (i = c.join(n, "..", "package.json")), !a.existsSync(i)) return;
+                        const r = a.readFileSync(i).toString();
                         let s = null;
                         try {
-                            s = JSON.parse(i)
+                            s = JSON.parse(r)
                         } catch (e) {
                             return
                         }
                         return s?.version && s.version ? d.API.fromVersionString(s.version) : void 0
                     }
                 }
-                t.DiskTypeScriptVersionProvider = p
+                t.DiskTypeScriptVersionProvider = h
             },
             6431: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -11150,17 +11176,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -11175,9 +11201,9 @@
                         const {
                             line: t,
                             character: n
-                        } = e.position, r = new a.Position(t, n);
+                        } = e.position, i = new a.Position(t, n);
                         await a.commands.executeCommand("vscode.open", a.Uri.from(e.file), {
-                            selection: new a.Range(r, r)
+                            selection: new a.Range(i, i)
                         })
                     }
                 }
@@ -11185,15 +11211,15 @@
             },
             6449: (e, t, n) => {
                 "use strict";
-                const r = n(857),
-                    i = n(440),
+                const i = n(857),
+                    r = n(440),
                     s = n(4705);
 
                 function o(e) {
                     const t = e.substring(0, 4),
                         n = e.substring(4, 6),
-                        r = e.substring(6, 8),
-                        i = e.substring(8, 10),
+                        i = e.substring(6, 8),
+                        r = e.substring(8, 10),
                         s = e.substring(10, 12),
                         o = e.substring(12, 14),
                         a = e.substring(15, 21),
@@ -11201,64 +11227,64 @@
                         l = parseInt(e.substring(22, 25), 10),
                         u = Math.floor(l / 60),
                         d = l % 60;
-                    return new Date(t + "-" + n + "-" + r + "T" + i + ":" + s + ":" + o + "." + a + c + (u > 9 ? u : "0" + u) + (d > 9 ? d : "0" + d))
+                    return new Date(t + "-" + n + "-" + i + "T" + r + ":" + s + ":" + o + "." + a + c + (u > 9 ? u : "0" + u) + (d > 9 ? d : "0" + d))
                 }
                 e.exports = function e(t, n, a) {
                     let c = "ProcessId=" + t[0];
                     for (let e = 1; e < t.length; e++) c += " or ProcessId=" + t[e];
-                    i("gwmi", ["win32_process", "-Filter", "'" + c + "'", "| select CreationDate,KernelModeTime,ParentProcessId,ProcessId,UserModeTime,WorkingSetSize", "| format-table"], {
+                    r("gwmi", ["win32_process", "-Filter", "'" + c + "'", "| select CreationDate,KernelModeTime,ParentProcessId,ProcessId,UserModeTime,WorkingSetSize", "| format-table"], {
                         windowsHide: !0,
                         windowsVerbatimArguments: !0,
                         shell: "powershell.exe"
-                    }, function(i, c, l) {
-                        if (i) {
-                            if (-1 !== i.message.indexOf("No Instance(s) Available.")) {
+                    }, function(r, c, l) {
+                        if (r) {
+                            if (-1 !== r.message.indexOf("No Instance(s) Available.")) {
                                 const e = new Error("No matching pid found");
                                 return e.code = "ENOENT", a(e)
                             }
-                            return a(i)
+                            return a(r)
                         }
                         if (0 !== l) return a(new Error("pidusage gwmi command exited with code " + l));
                         const u = Date.now(),
-                            d = Math.floor(r.uptime() || u / 1e3),
-                            h = (c = c.split(r.EOL).slice(1)).findIndex(e => !!e);
-                        if (!(c = c.slice(h + 2)).length) {
+                            d = Math.floor(i.uptime() || u / 1e3),
+                            p = (c = c.split(i.EOL).slice(1)).findIndex(e => !!e);
+                        if (!(c = c.slice(p + 2)).length) {
                             const e = new Error("No matching pid found");
                             return e.code = "ENOENT", a(e)
                         }
-                        let p = !1;
+                        let h = !1;
                         const f = {};
                         for (let e = 0; e < c.length; e++) {
                             const t = c[e].trim().split(/\s+/);
                             if (!t || 1 === t.length) continue;
-                            const r = o(t[0]),
-                                i = parseInt(t[2], 10),
+                            const i = o(t[0]),
+                                r = parseInt(t[2], 10),
                                 a = parseInt(t[3], 10),
                                 l = Math.round(parseInt(t[1], 10) / 1e4),
-                                h = Math.round(parseInt(t[4], 10) / 1e4),
+                                p = Math.round(parseInt(t[4], 10) / 1e4),
                                 g = parseInt(t[5], 10);
                             let m = s.get(a, n.maxage);
-                            void 0 === m && (p = !0, m = {
-                                ctime: l + h,
+                            void 0 === m && (h = !0, m = {
+                                ctime: l + p,
                                 uptime: d
                             });
-                            const v = (l + h - m.ctime) / 1e3,
+                            const v = (l + p - m.ctime) / 1e3,
                                 y = d - m.uptime,
                                 b = y > 0 ? v / y * 100 : 0;
                             s.set(a, {
-                                ctime: h + l,
+                                ctime: p + l,
                                 uptime: d
                             }, n.maxage), f[a] = {
                                 cpu: b,
                                 memory: g,
-                                ppid: i,
+                                ppid: r,
                                 pid: a,
-                                ctime: h + l,
-                                elapsed: u - r.getTime(),
+                                ctime: p + l,
+                                elapsed: u - i.getTime(),
                                 timestamp: u
                             }
                         }
-                        if (p) return e(t, n, function(e, t) {
+                        if (h) return e(t, n, function(e, t) {
                             if (e) return a(e);
                             a(null, Object.assign(f, t))
                         });
@@ -11268,17 +11294,17 @@
             },
             6470: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -11288,17 +11314,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -11328,27 +11354,27 @@
                     }
                     provideCompletionItems(e, t, n) {
                         if (!this.client.toOpenTsFilePath(e)) return [];
-                        const r = e.lineAt(t.line).text.slice(0, t.character).match(/^\s*\/\/+\s?(@[a-zA-Z\-]*)?$/);
-                        return r ? (this.client.apiVersion.gte(c.API.v390) ? u : l).map(e => {
+                        const i = e.lineAt(t.line).text.slice(0, t.character).match(/^\s*\/\/+\s?(@[a-zA-Z\-]*)?$/);
+                        return i ? (this.client.apiVersion.gte(c.API.v390) ? u : l).map(e => {
                             const n = new a.CompletionItem(e.value, a.CompletionItemKind.Snippet);
-                            return n.detail = e.description, n.range = new a.Range(t.line, Math.max(0, t.character - (r[1] ? r[1].length : 0)), t.line, t.character), n
+                            return n.detail = e.description, n.range = new a.Range(t.line, Math.max(0, t.character - (i[1] ? i[1].length : 0)), t.line, t.character), n
                         }) : []
                     }
                 }
             },
             6477: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -11358,26 +11384,29 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.TypeScriptVersion = void 0;
+                }), t.TypeScriptVersion = t.TypeScriptVersionSource = void 0;
                 const a = o(n(1398));
-                t.TypeScriptVersion = class {
-                    constructor(e, t, n, r) {
-                        this.source = e, this.path = t, this.apiVersion = n, this._pathLabel = r
+                var c;
+                ! function(e) {
+                    e.Bundled = "bundled", e.TsNightlyExtension = "ts-nightly-extension", e.NodeModules = "node-modules", e.UserSetting = "user-setting", e.WorkspaceSetting = "workspace-setting"
+                }(c || (t.TypeScriptVersionSource = c = {})), t.TypeScriptVersion = class {
+                    constructor(e, t, n, i) {
+                        this.source = e, this.path = t, this.apiVersion = n, this._pathLabel = i
                     }
                     get tsServerPath() {
                         return this.path
@@ -11431,27 +11460,27 @@
                     return (t << 5) - t + e | 0
                 }
 
-                function r(e, t) {
+                function i(e, t) {
                     t = n(149417, t);
-                    for (let r = 0, i = e.length; r < i; r++) t = n(e.charCodeAt(r), t);
+                    for (let i = 0, r = e.length; i < r; i++) t = n(e.charCodeAt(i), t);
                     return t
                 }
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.hash = function e(t, i = 0) {
+                }), t.hash = function e(t, r = 0) {
                     switch (typeof t) {
                         case "object":
-                            return null === t ? n(349, i) : Array.isArray(t) ? (s = t, o = n(104579, o = i), s.reduce((t, n) => e(n, t), o)) : function(t, i) {
-                                return i = n(181387, i), Object.keys(t).sort().reduce((n, i) => (n = r(i, n), e(t[i], n)), i)
-                            }(t, i);
+                            return null === t ? n(349, r) : Array.isArray(t) ? (s = t, o = n(104579, o = r), s.reduce((t, n) => e(n, t), o)) : function(t, r) {
+                                return r = n(181387, r), Object.keys(t).sort().reduce((n, r) => (n = i(r, n), e(t[r], n)), r)
+                            }(t, r);
                         case "string":
-                            return r(t, i);
+                            return i(t, r);
                         case "boolean":
                             return function(e, t) {
                                 return n(e ? 433 : 863, t)
-                            }(t, i);
+                            }(t, r);
                         case "number":
-                            return n(t, i);
+                            return n(t, r);
                         case "undefined":
                             return 29047;
                         default:
@@ -11461,8 +11490,8 @@
                 }
             },
             6780: (e, t, n) => {
-                const r = n(8311);
-                e.exports = (e, t, n) => (e = new r(e, n), t = new r(t, n), e.intersects(t, n))
+                const i = n(8311);
+                e.exports = (e, t, n) => (e = new i(e, n), t = new i(t, n), e.intersects(t, n))
             },
             6874: e => {
                 const t = Number.MAX_SAFE_INTEGER || 9007199254740991;
@@ -11481,25 +11510,25 @@
                 e.exports = require("path")
             },
             6953: (e, t, n) => {
-                const r = n(144);
+                const i = n(144);
                 e.exports = (e, t) => {
-                    const n = r(e, t);
+                    const n = i(e, t);
                     return n ? n.version : null
                 }
             },
             7008: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -11509,17 +11538,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -11548,40 +11577,40 @@
                 }
             },
             7059: (e, t, n) => {
-                const r = n(560);
-                e.exports = (e, t, n) => r(e, t, n) < 0
+                const i = n(560);
+                e.exports = (e, t, n) => i(e, t, n) < 0
             },
             7075: (e, t, n) => {
-                const r = n(3908),
-                    i = n(3904),
+                const i = n(3908),
+                    r = n(3904),
                     {
                         ANY: s
-                    } = i,
+                    } = r,
                     o = n(8311),
                     a = n(7638),
                     c = n(5580),
                     l = n(7059),
                     u = n(5200),
                     d = n(4089);
-                e.exports = (e, t, n, h) => {
-                    let p, f, g, m, v;
-                    switch (e = new r(e, h), t = new o(t, h), n) {
+                e.exports = (e, t, n, p) => {
+                    let h, f, g, m, v;
+                    switch (e = new i(e, p), t = new o(t, p), n) {
                         case ">":
-                            p = c, f = u, g = l, m = ">", v = ">=";
+                            h = c, f = u, g = l, m = ">", v = ">=";
                             break;
                         case "<":
-                            p = l, f = d, g = c, m = "<", v = "<=";
+                            h = l, f = d, g = c, m = "<", v = "<=";
                             break;
                         default:
                             throw new TypeError('Must provide a hilo val of "<" or ">"')
                     }
-                    if (a(e, t, h)) return !1;
+                    if (a(e, t, p)) return !1;
                     for (let n = 0; n < t.set.length; ++n) {
-                        const r = t.set[n];
+                        const i = t.set[n];
                         let o = null,
                             a = null;
-                        if (r.forEach(e => {
-                                e.semver === s && (e = new i(">=0.0.0")), o = o || e, a = a || e, p(e.semver, o.semver, h) ? o = e : g(e.semver, a.semver, h) && (a = e)
+                        if (i.forEach(e => {
+                                e.semver === s && (e = new r(">=0.0.0")), o = o || e, a = a || e, h(e.semver, o.semver, p) ? o = e : g(e.semver, a.semver, p) && (a = e)
                             }), o.operator === m || o.operator === v) return !1;
                         if ((!a.operator || a.operator === m) && f(e, a.semver)) return !1;
                         if (a.operator === v && g(e, a.semver)) return !1
@@ -11591,17 +11620,17 @@
             },
             7098: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -11611,17 +11640,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -11631,13 +11660,14 @@
                     c = o(n(1398)),
                     l = o(n(746)),
                     u = n(5328),
-                    d = n(3651),
+                    d = n(1627),
+                    p = n(3651),
                     h = n(7371),
-                    p = n(5602),
-                    f = n(8160);
-                class g extends p.Disposable {
-                    constructor(e, t, n, r, i, s, o) {
-                        super(), this.client = e, this.description = t, this.commandManager = n, this.telemetryReporter = r, this.typingsStatus = i, this.fileConfigurationManager = s, this.onCompletionAccepted = o, c.workspace.onDidChangeConfiguration(this.configurationChanged, this, this._disposables), this.configurationChanged(), e.onReady(() => this.registerProviders())
+                    f = n(5602),
+                    g = n(8160);
+                class m extends f.Disposable {
+                    constructor(e, t, n, i, r, s, o) {
+                        super(), this.client = e, this.description = t, this.commandManager = n, this.telemetryReporter = i, this.typingsStatus = r, this.fileConfigurationManager = s, this.onCompletionAccepted = o, c.workspace.onDidChangeConfiguration(this.configurationChanged, this, this._disposables), this.configurationChanged(), e.onReady(() => this.registerProviders())
                     }
                     get documentSelector() {
                         const e = [],
@@ -11658,7 +11688,7 @@
                     }
                     async registerProviders() {
                         const e = this.documentSelector,
-                            t = new d.CachedResponse;
+                            t = new p.CachedResponse;
                         await Promise.all([Promise.resolve().then(() => o(n(1928))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(5983))).then(n => this._register(n.register(e, this.description, this.client, t))), Promise.resolve().then(() => o(n(2646))).then(n => this._register(n.register(e, this.description, this.client, t))), Promise.resolve().then(() => o(n(5376))).then(t => this._register(t.register(e, this.description, this.client, this.typingsStatus, this.fileConfigurationManager, this.commandManager, this.telemetryReporter, this.onCompletionAccepted))), Promise.resolve().then(() => o(n(3347))).then(t => this._register(t.register(e, this.description, this.client, this.fileConfigurationManager))), Promise.resolve().then(() => o(n(3289))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(6470))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(3724))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(1910))).then(n => this._register(n.register(e, this.client, t))), Promise.resolve().then(() => o(n(2447))).then(e => this._register(e.register(this.client, this.commandManager))), Promise.resolve().then(() => o(n(4029))).then(t => this._register(t.register(e, this.client, this.fileConfigurationManager, this.client.diagnosticsManager))), Promise.resolve().then(() => o(n(3390))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(9944))).then(t => this._register(t.register(e, this.description, this.client, this.fileConfigurationManager))), Promise.resolve().then(() => o(n(9181))).then(t => this._register(t.register(e, this.client, this.fileConfigurationManager))), Promise.resolve().then(() => o(n(256))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(824))).then(t => this._register(t.register(e, this.description, this.client, this.fileConfigurationManager, this.telemetryReporter))), Promise.resolve().then(() => o(n(3753))).then(t => this._register(t.register(e, this.description, this.client, this.fileConfigurationManager))), Promise.resolve().then(() => o(n(2288))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(8110))).then(t => this._register(t.register(e, this.client, this.commandManager, this.fileConfigurationManager, this.telemetryReporter))), Promise.resolve().then(() => o(n(8337))).then(t => this._register(t.register(e, this.client, this.fileConfigurationManager, this.commandManager, this.client.diagnosticsManager, this.telemetryReporter))), Promise.resolve().then(() => o(n(7369))).then(n => this._register(n.register(e, this.client, t, this.fileConfigurationManager, this.commandManager, this.telemetryReporter))), Promise.resolve().then(() => o(n(917))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(6325))).then(t => this._register(t.register(e, this.description, this.client, this.fileConfigurationManager))), Promise.resolve().then(() => o(n(4821))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(2634))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(6006))).then(t => this._register(t.register(e, this.client))), Promise.resolve().then(() => o(n(5187))).then(e => this._register(e.register(this.client, this.commandManager))), Promise.resolve().then(() => o(n(5904))).then(t => this._register(t.register(e, this.description, this.client))), Promise.resolve().then(() => o(n(6361))).then(t => this._register(t.register(e, this.client)))])
                     }
                     configurationChanged() {
@@ -11694,14 +11724,14 @@
                     triggerAllDiagnostics() {
                         this.client.bufferSyncSupport.requestAllDiagnostics()
                     }
-                    diagnosticsReceived(e, t, n, r) {
-                        if (0 !== e && !this.client.hasCapabilityForResource(t, h.ClientCapability.Semantic)) return;
-                        if (1 === e && (0, f.isWeb)() && (!(0, f.isWebAndHasSharedArrayBuffers)() || !(0, f.supportsReadableByteStreams)() || this.client.configuration.webProjectWideIntellisenseSuppressSemanticErrors || !this.client.configuration.webProjectWideIntellisenseEnabled)) return;
-                        if (1 === e && t.scheme === u.Schemes.notebookCell) return;
-                        const i = c.workspace.getConfiguration(this.id, t),
-                            s = i.get("showUnused", !0),
-                            o = i.get("showDeprecated", !0);
-                        this.client.diagnosticsManager.updateDiagnostics(t, this._diagnosticLanguage, e, n.filter(e => !(!s && e.reportUnnecessary && e.severity === c.DiagnosticSeverity.Hint || !o && e.reportDeprecated && e.severity === c.DiagnosticSeverity.Hint)), r)
+                    diagnosticsReceived(e, t, n, i) {
+                        if (e !== d.DiagnosticKind.Syntax && !this.client.hasCapabilityForResource(t, h.ClientCapability.Semantic)) return;
+                        if (e === d.DiagnosticKind.Semantic && (0, g.isWeb)() && (!(0, g.isWebAndHasSharedArrayBuffers)() || !(0, g.supportsReadableByteStreams)() || this.client.configuration.webProjectWideIntellisenseSuppressSemanticErrors || !this.client.configuration.webProjectWideIntellisenseEnabled)) return;
+                        if (e === d.DiagnosticKind.Semantic && t.scheme === u.Schemes.notebookCell) return;
+                        const r = c.workspace.getConfiguration(this.id, t),
+                            s = r.get("showUnused", !0),
+                            o = r.get("showDeprecated", !0);
+                        this.client.diagnosticsManager.updateDiagnostics(t, this._diagnosticLanguage, e, n.filter(e => !(!s && e.reportUnnecessary && e.severity === c.DiagnosticSeverity.Hint || !o && e.reportDeprecated && e.severity === c.DiagnosticSeverity.Hint)), i)
                     }
                     configFileDiagnosticsReceived(e, t) {
                         this.client.diagnosticsManager.configFileDiagnosticsReceived(e, t)
@@ -11710,21 +11740,21 @@
                         return this.description.diagnosticLanguage
                     }
                 }
-                t.default = g
+                t.default = m
             },
             7102: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -11734,17 +11764,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -11757,8 +11787,8 @@
                     const n = function(e) {
                             const t = [];
                             let n = [],
-                                r = !1,
                                 i = !1,
+                                r = !1,
                                 s = 0,
                                 o = 0;
                             e: for (let a = 0; a < e.length; ++a) {
@@ -11768,23 +11798,23 @@
                                     case c.DisplayPartKind.functionName:
                                     case c.DisplayPartKind.text:
                                     case c.DisplayPartKind.propertyName:
-                                        0 === s && 0 === o && (r = !0);
+                                        0 === s && 0 === o && (i = !0);
                                         break;
                                     case c.DisplayPartKind.parameterName:
-                                        if (1 === s && 0 === o && r) {
-                                            const r = e[a + 1],
-                                                s = "?" === r?.text,
+                                        if (1 === s && 0 === o && i) {
+                                            const i = e[a + 1],
+                                                s = "?" === i?.text,
                                                 o = "this" === l.text;
-                                            s ? n.push(l) : (t.push(...n), n = []), s || o || t.push(l), i = i || s
+                                            s ? n.push(l) : (t.push(...n), n = []), s || o || t.push(l), r = r || s
                                         }
                                         break;
                                     case c.DisplayPartKind.punctuation:
                                         if ("(" === l.text) ++s;
                                         else if (")" === l.text) {
-                                            if (--s, s <= 0 && r) break e
+                                            if (--s, s <= 0 && i) break e
                                         } else {
                                             if ("..." === l.text && 1 === s) {
-                                                i = !0;
+                                                r = !0;
                                                 break e
                                             }
                                             "{" === l.text ? ++o : "}" === l.text && --o
@@ -11792,19 +11822,19 @@
                                 }
                             }
                             return {
-                                hasOptionalParameters: i,
+                                hasOptionalParameters: r,
                                 parts: t
                             }
                         }(t),
-                        r = new a.SnippetString;
-                    return r.appendText(`${e.insertText||e.label}(`),
+                        i = new a.SnippetString;
+                    return i.appendText(`${e.insertText||e.label}(`),
                         function(e, t) {
                             for (let n = 0; n < t.length; ++n) {
-                                const r = t[n];
-                                e.appendPlaceholder(r.text), n !== t.length - 1 && e.appendText(", ")
+                                const i = t[n];
+                                e.appendPlaceholder(i.text), n !== t.length - 1 && e.appendText(", ")
                             }
-                        }(r, n.parts), n.hasOptionalParameters && r.appendTabstop(), r.appendText(")"), r.appendTabstop(0), {
-                            snippet: r,
+                        }(i, n.parts), n.hasOptionalParameters && i.appendTabstop(), i.appendText(")"), i.appendTabstop(0), {
+                            snippet: i,
                             parameterCount: n.parts.length + (n.hasOptionalParameters ? 1 : 0)
                         }
                 };
@@ -11813,17 +11843,17 @@
             },
             7200: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -11833,25 +11863,25 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__decorate || function(e, t, n, r) {
-                        var i, s = arguments.length,
-                            o = s < 3 ? t : null === r ? r = Object.getOwnPropertyDescriptor(t, n) : r;
-                        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) o = Reflect.decorate(e, t, n, r);
+                    o = this && this.__decorate || function(e, t, n, i) {
+                        var r, s = arguments.length,
+                            o = s < 3 ? t : null === i ? i = Object.getOwnPropertyDescriptor(t, n) : i;
+                        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) o = Reflect.decorate(e, t, n, i);
                         else
-                            for (var a = e.length - 1; a >= 0; a--)(i = e[a]) && (o = (s < 3 ? i(o) : s > 3 ? i(t, n, o) : i(t, n)) || o);
+                            for (var a = e.length - 1; a >= 0; a--)(r = e[a]) && (o = (s < 3 ? r(o) : s > 3 ? r(t, n, o) : r(t, n)) || o);
                         return s > 3 && o && Object.defineProperty(t, n, o), o
                     },
-                    a = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    a = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -11861,17 +11891,17 @@
                     l = n(4906),
                     u = n(7371),
                     d = n(4267),
-                    h = n(8160),
-                    p = n(2928),
+                    p = n(8160),
+                    h = n(2928),
                     f = n(185);
                 class g {
                     static get tsServerLogOutputChannel() {
                         return c.window.createOutputChannel(c.l10n.t("TypeScript Server Log"))
                     }
-                    constructor(e, t, n, r, i, s, o, a, c) {
-                        this._versionProvider = e, this._versionManager = t, this._nodeVersionManager = n, this._logDirectoryProvider = r, this._pluginPathsProvider = i, this._logger = s, this._telemetryReporter = o, this._tracer = a, this._factory = c
+                    constructor(e, t, n, i, r, s, o, a, c) {
+                        this._versionProvider = e, this._versionManager = t, this._nodeVersionManager = n, this._logDirectoryProvider = i, this._pluginPathsProvider = r, this._logger = s, this._telemetryReporter = o, this._tracer = a, this._factory = c
                     }
-                    spawn(e, t, n, r, i, s) {
+                    spawn(e, t, n, i, r, s) {
                         let o;
                         const a = this.getCompositeServerType(e, t, n),
                             c = this.shouldUseSeparateDiagnosticsServer(n);
@@ -11880,56 +11910,64 @@
                             case 2: {
                                 const t = !c && 2 === a;
                                 o = new f.SyntaxRoutingTsServer({
-                                    syntax: this.spawnTsServer("syntax", e, n, r, i),
-                                    semantic: this.spawnTsServer("semantic", e, n, r, i)
+                                    syntax: this.spawnTsServer(f.TsServerProcessKind.Syntax, e, n, i, r),
+                                    semantic: this.spawnTsServer(f.TsServerProcessKind.Semantic, e, n, i, r)
                                 }, s, t);
                                 break
                             }
                             case 0:
-                                o = this.spawnTsServer("main", e, n, r, i);
+                                o = this.spawnTsServer(f.TsServerProcessKind.Main, e, n, i, r);
                                 break;
                             case 3:
-                                o = this.spawnTsServer("syntax", e, n, r, i)
+                                o = this.spawnTsServer(f.TsServerProcessKind.Syntax, e, n, i, r)
                         }
                         return c ? new f.GetErrRoutingTsServer({
-                            getErr: this.spawnTsServer("diagnostics", e, n, r, i),
+                            getErr: this.spawnTsServer(f.TsServerProcessKind.Diagnostics, e, n, i, r),
                             primary: o
                         }, s) : o
                     }
                     getCompositeServerType(e, t, n) {
                         if (!t.has(u.ClientCapability.Semantic)) return 3;
                         switch (n.useSyntaxServer) {
-                            case 1:
+                            case l.SyntaxServerConfiguration.Always:
                                 return 3;
-                            case 0:
+                            case l.SyntaxServerConfiguration.Never:
                                 return 0;
-                            case 2:
-                                return e.apiVersion?.gte(p.API.v400) ? 2 : 1
+                            case l.SyntaxServerConfiguration.Auto:
+                                return e.apiVersion?.gte(h.API.v400) ? 2 : 1
                         }
                     }
                     shouldUseSeparateDiagnosticsServer(e) {
                         return e.enableProjectDiagnostics
                     }
-                    spawnTsServer(e, t, n, r, i) {
-                        const s = t.apiVersion || p.API.defaultVersion,
-                            o = i.create(e, this._tracer),
+                    spawnTsServer(e, t, n, i, r) {
+                        const s = t.apiVersion || h.API.defaultVersion,
+                            o = r.create(e, this._tracer),
                             {
                                 args: a,
                                 tsServerLog: c,
                                 tsServerTraceDirectory: l
-                            } = this.getTsServerArgs(e, n, t, s, r, o.cancellationPipeName);
+                            } = this.getTsServerArgs(e, n, t, s, i, o.cancellationPipeName);
                         g.isLoggingEnabled(n) && ("file" === c?.type ? this._logger.info(`<${e}> Log file: ${c.uri.fsPath}`) : "output" === c?.type ? this._logger.info(`<${e}> Logging to output`) : this._logger.error(`<${e}> Could not create TS Server log`)), n.enableTsServerTracing && (l ? this._logger.info(`<${e}> Trace directory: ${l.fsPath}`) : this._logger.error(`<${e}> Could not create trace directory`)), this._logger.info(`<${e}> Forking...`);
                         const u = this._factory.fork(t, a, e, n, this._versionManager, this._nodeVersionManager, c);
                         return this._logger.info(`<${e}> Starting...`), new f.SingleTsServer(e, this.kindToServerType(e), u, c, o, t, this._telemetryReporter, this._tracer)
                     }
                     kindToServerType(e) {
-                        return "syntax" === e ? u.ServerType.Syntax : u.ServerType.Semantic
+                        switch (e) {
+                            case f.TsServerProcessKind.Syntax:
+                                return u.ServerType.Syntax;
+                            case f.TsServerProcessKind.Main:
+                            case f.TsServerProcessKind.Semantic:
+                            case f.TsServerProcessKind.Diagnostics:
+                            default:
+                                return u.ServerType.Semantic
+                        }
                     }
-                    getTsServerArgs(e, t, n, r, i, s) {
+                    getTsServerArgs(e, t, n, i, r, s) {
                         const o = [];
                         let a, u;
-                        if ("syntax" === e && (r.gte(p.API.v401) ? o.push("--serverMode", "partialSemantic") : o.push("--syntaxOnly")), o.push("--useInferredProjectPerProjectRoot"), (t.disableAutomaticTypeAcquisition || "syntax" === e || "diagnostics" === e) && o.push("--disableAutomaticTypingAcquisition"), "semantic" !== e && "main" !== e || o.push("--enableTelemetry"), s && o.push("--cancellationPipeName", s + "*"), g.isLoggingEnabled(t))
-                            if ((0, h.isWeb)()) o.push("--logVerbosity", l.TsServerLogLevel.toString(t.tsServerLogLevel)), a = {
+                        if (e === f.TsServerProcessKind.Syntax && (i.gte(h.API.v401) ? o.push("--serverMode", "partialSemantic") : o.push("--syntaxOnly")), o.push("--useInferredProjectPerProjectRoot"), (t.disableAutomaticTypeAcquisition || e === f.TsServerProcessKind.Syntax || e === f.TsServerProcessKind.Diagnostics) && o.push("--disableAutomaticTypingAcquisition"), e !== f.TsServerProcessKind.Semantic && e !== f.TsServerProcessKind.Main || o.push("--enableTelemetry"), s && o.push("--cancellationPipeName", s + "*"), g.isLoggingEnabled(t))
+                            if ((0, p.isWeb)()) o.push("--logVerbosity", l.TsServerLogLevel.toString(t.tsServerLogLevel)), a = {
                                 type: "output",
                                 output: g.tsServerLogOutputChannel
                             };
@@ -11942,17 +11980,17 @@
                                         uri: e
                                     }, o.push("--logVerbosity", l.TsServerLogLevel.toString(t.tsServerLogLevel)), o.push("--logFile", e.fsPath)
                                 }
-                            } t.enableTsServerTracing && !(0, h.isWeb)() && (u = this._logDirectoryProvider.getNewLogDirectory(e), u && o.push("--traceDirectory", `"${u.fsPath}"`));
-                        const d = (0, h.isWeb)() ? [] : this._pluginPathsProvider.getPluginPaths();
-                        if (i.plugins.length) {
-                            o.push("--globalPlugins", i.plugins.map(e => e.name).join(","));
+                            } t.enableTsServerTracing && !(0, p.isWeb)() && (u = this._logDirectoryProvider.getNewLogDirectory(e), u && o.push("--traceDirectory", `"${u.fsPath}"`));
+                        const d = (0, p.isWeb)() ? [] : this._pluginPathsProvider.getPluginPaths();
+                        if (r.plugins.length) {
+                            o.push("--globalPlugins", r.plugins.map(e => e.name).join(","));
                             const e = n.path === this._versionProvider.defaultVersion.path;
-                            for (const t of i.plugins)(e || t.enableForWorkspaceTypeScriptVersions) && d.push((0, h.isWeb)() ? t.uri.toString() : t.uri.fsPath)
+                            for (const t of r.plugins)(e || t.enableForWorkspaceTypeScriptVersions) && d.push((0, p.isWeb)() ? t.uri.toString() : t.uri.fsPath)
                         }
-                        0 !== d.length && o.push("--pluginProbeLocations", d.join(",")), t.npmLocation && !(0, h.isWeb)() && o.push("--npmLocation", `"${t.npmLocation}"`), o.push("--locale", g.getTsLocale(t)), o.push("--noGetErrOnBackgroundUpdate");
-                        const f = t.useVsCodeWatcher,
-                            m = r.isYarnPnp();
-                        return r.gte(p.API.v544) && f && !m ? o.push("--canUseWatchEvents") : f ? m && this._logger.info(`<${e}> Falling back to legacy node.js based file watching because of Yarn PnP.`) : this._logger.info(`<${e}> Falling back to legacy node.js based file watching because of user settings.`), o.push("--validateDefaultNpmLocation"), (0, h.isWebAndHasSharedArrayBuffers)() && o.push("--enableProjectWideIntelliSenseOnWeb"), {
+                        0 !== d.length && o.push("--pluginProbeLocations", d.join(",")), t.npmLocation && !(0, p.isWeb)() && o.push("--npmLocation", `"${t.npmLocation}"`), o.push("--locale", g.getTsLocale(t)), o.push("--noGetErrOnBackgroundUpdate");
+                        const m = t.useVsCodeWatcher,
+                            v = i.isYarnPnp();
+                        return i.gte(h.API.v544) && m && !v ? o.push("--canUseWatchEvents") : m ? v && this._logger.info(`<${e}> Falling back to legacy node.js based file watching because of Yarn PnP.`) : this._logger.info(`<${e}> Falling back to legacy node.js based file watching because of user settings.`), o.push("--validateDefaultNpmLocation"), (0, p.isWebAndHasSharedArrayBuffers)() && o.push("--enableProjectWideIntelliSenseOnWeb"), {
                             args: o,
                             tsServerLog: a,
                             tsServerTraceDirectory: u
@@ -11969,18 +12007,18 @@
             },
             7237: (e, t, n) => {
                 "use strict";
-                const r = n(4950);
+                const i = n(4950);
                 e.exports = function(e, t, n) {
                     if ("function" == typeof t && (n = t, t = {}), void 0 === t && (t = {}), t = Object.assign({
                             usePs: /^true$/i.test(process.env.PIDUSAGE_USE_PS),
                             maxage: process.env.PIDUSAGE_MAXAGE
-                        }, t), "function" != typeof n) return new Promise(function(n, i) {
-                        r(e, t, function(e, t) {
-                            if (e) return i(e);
+                        }, t), "function" != typeof n) return new Promise(function(n, r) {
+                        i(e, t, function(e, t) {
+                            if (e) return r(e);
                             n(t)
                         })
                     });
-                    r(e, t, n)
+                    i(e, t, n)
                 }, e.exports.clear = n(4705).clear
             },
             7239: (e, t) => {
@@ -12002,17 +12040,17 @@
             },
             7284: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -12022,17 +12060,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -12047,9 +12085,9 @@
                     const t = a.workspace.getConfiguration("typescript");
                     if (t.get("experimental.useTsgo", !1) === e) return;
                     let n = a.ConfigurationTarget.Global;
-                    const r = t.inspect("experimental.useTsgo");
-                    if (void 0 !== r?.workspaceValue) n = a.ConfigurationTarget.Workspace;
-                    else if (void 0 !== r?.workspaceFolderValue) n = a.ConfigurationTarget.WorkspaceFolder;
+                    const i = t.inspect("experimental.useTsgo");
+                    if (void 0 !== i?.workspaceValue) n = a.ConfigurationTarget.Workspace;
+                    else if (void 0 !== i?.workspaceFolderValue) n = a.ConfigurationTarget.WorkspaceFolder;
                     else {
                         const e = a.workspace.getConfiguration("typescript-go").inspect("executablePath");
                         void 0 !== e?.workspaceValue ? n = a.ConfigurationTarget.Workspace : void 0 !== e?.workspaceFolderValue && (n = a.ConfigurationTarget.WorkspaceFolder)
@@ -12074,17 +12112,17 @@
             },
             7369: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -12094,31 +12132,31 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.register = function(e, t, n, r, i, s) {
-                    return (0, w.conditionalRegistration)([(0, w.requireSomeCapability)(t, m.ClientCapability.Semantic)], () => c.languages.registerCodeActionsProvider(e.semantic, new $(t, n, r, i, s), $.metadata))
+                }), t.register = function(e, t, n, i, r, s) {
+                    return (0, w.conditionalRegistration)([(0, w.requireSomeCapability)(t, m.ClientCapability.Semantic)], () => c.languages.registerCodeActionsProvider(e.semantic, new $(t, n, i, r, s), $.metadata))
                 };
                 const a = o(n(6928)),
                     c = o(n(1398)),
                     l = n(4756),
                     u = n(8101),
                     d = o(n(746)),
-                    h = n(5328),
-                    p = n(2928),
+                    p = n(5328),
+                    h = n(2928),
                     f = o(n(1788)),
                     g = o(n(2144)),
                     m = n(7371),
@@ -12129,8 +12167,8 @@
 
                 function _(e, t) {
                     const n = new c.WorkspaceEdit;
-                    for (const r of t) {
-                        const t = e.toResource(r.fileName);
+                    for (const i of t) {
+                        const t = e.toResource(i.fileName);
                         t.scheme === d.file && n.createFile(t, {
                             ignoreIfExists: !0
                         })
@@ -12177,7 +12215,7 @@
                         if (!t) return;
                         const n = await this.getTargetFile(e.document, t, e.range);
                         if (!n || n.toString() === t.toString()) return;
-                        const r = {
+                        const i = {
                                 ...g.Range.toFileRangeRequestArgs(t, e.range),
                                 action: e.action.name,
                                 refactor: e.refactor.name,
@@ -12185,9 +12223,9 @@
                                     targetFile: n
                                 }
                             },
-                            i = await this.client.execute("getEditsForRefactor", r, y.nulToken);
-                        if ("response" !== i.type || !i.body) return;
-                        const s = _(this.client, i.body.edits);
+                            r = await this.client.execute("getEditsForRefactor", i, y.nulToken);
+                        if ("response" !== r.type || !r.body) return;
+                        const s = _(this.client, r.body.edits);
                         await c.workspace.applyEdit(s, {
                             isRefactoring: !0
                         }) ? await this.didApplyCommand.execute({
@@ -12196,10 +12234,10 @@
                         }) : c.window.showErrorMessage(c.l10n.t("Could not apply refactoring"))
                     }
                     async getTargetFile(e, t, n) {
-                        const r = g.Range.toFileRangeRequestArgs(t, n),
-                            i = await this.client.execute("getMoveToRefactoringFileSuggestions", r, y.nulToken);
-                        if ("response" !== i.type || !i.body) return;
-                        const s = i.body,
+                        const i = g.Range.toFileRangeRequestArgs(t, n),
+                            r = await this.client.execute("getMoveToRefactoringFileSuggestions", i, y.nulToken);
+                        if ("response" !== r.type || !r.body) return;
+                        const s = r.body,
                             o = {
                                 label: c.l10n.t("Select existing file...")
                             },
@@ -12207,44 +12245,44 @@
                                 label: c.l10n.t("Enter new file path...")
                             },
                             d = c.workspace.getWorkspaceFolder(e.uri),
-                            p = c.window.createQuickPick();
-                        p.ignoreFocusOut = !0;
+                            h = c.window.createQuickPick();
+                        h.ignoreFocusOut = !0;
                         let f = !0;
                         const m = () => {
-                            const t = ["./", "../"].find(e => p.value.startsWith(e));
+                            const t = ["./", "../"].find(e => h.value.startsWith(e));
                             if (!1 === f && 0 == !!t) return;
                             f = !!t;
                             const n = s.files.map(n => {
-                                const r = this.client.toResource(n),
-                                    i = l.Utils.dirname(r),
-                                    s = l.Utils.basename(r);
+                                const i = this.client.toResource(n),
+                                    r = l.Utils.dirname(i),
+                                    s = l.Utils.basename(i);
                                 let o;
                                 if (d) {
-                                    if (o = r.scheme === h.Schemes.file ? a.relative(d.uri.fsPath, i.fsPath) : a.posix.relative(d.uri.path, i.path), t) {
-                                        const n = (c = a.relative(a.dirname(e.uri.fsPath), r.fsPath)).startsWith("../") ? c : `./${c}`;
+                                    if (o = i.scheme === p.Schemes.file ? a.relative(d.uri.fsPath, r.fsPath) : a.posix.relative(d.uri.path, r.path), t) {
+                                        const n = (c = a.relative(a.dirname(e.uri.fsPath), i.fsPath)).startsWith("../") ? c : `./${c}`;
                                         if (!n.startsWith(t)) return;
                                         o = n
                                     }
-                                } else o = i.fsPath;
+                                } else o = r.fsPath;
                                 var c;
                                 return {
                                     file: n,
-                                    label: l.Utils.basename(r),
+                                    label: l.Utils.basename(i),
                                     description: t ? o : a.join(o, s)
                                 }
                             });
-                            p.items = [o, u, {
+                            h.items = [o, u, {
                                 label: c.l10n.t("destination files"),
                                 kind: c.QuickPickItemKind.Separator
                             }, ...(0, v.coalesce)(n)]
                         };
-                        p.title = c.l10n.t("Move to File"), p.placeholder = c.l10n.t("Enter file path"), p.matchOnDescription = !0, p.onDidChangeValue(m), m();
+                        h.title = c.l10n.t("Move to File"), h.placeholder = c.l10n.t("Enter file path"), h.matchOnDescription = !0, h.onDidChangeValue(m), m();
                         const b = await new Promise(e => {
-                            p.onDidAccept(() => {
-                                e(p.selectedItems[0]), p.dispose()
-                            }), p.onDidHide(() => {
-                                e(void 0), p.dispose()
-                            }), p.show()
+                            h.onDidAccept(() => {
+                                e(h.selectedItems[0]), h.dispose()
+                            }), h.onDidHide(() => {
+                                e(void 0), h.dispose()
+                            }), h.show()
                         });
                         if (b) {
                             if (b === o) {
@@ -12259,7 +12297,7 @@
                                 const e = await c.window.showSaveDialog({
                                     title: c.l10n.t("Select move destination"),
                                     saveLabel: c.l10n.t("Move to File"),
-                                    defaultUri: this.client.toResource(i.body.newFileName)
+                                    defaultUri: this.client.toResource(r.body.newFileName)
                                 });
                                 return e ? this.client.toTsFilePath(e) : void 0
                             }
@@ -12296,11 +12334,11 @@
                         kind: c.CodeActionKind.RefactorRewrite.append("import"),
                         matches: e => e.name.startsWith("Convert namespace import") || e.name.startsWith("Convert named imports")
                     }),
-                    M = Object.freeze({
+                    R = Object.freeze({
                         kind: c.CodeActionKind.RefactorRewrite.append("export"),
                         matches: e => e.name.startsWith("Convert default export") || e.name.startsWith("Convert named export")
                     }),
-                    R = Object.freeze({
+                    M = Object.freeze({
                         kind: c.CodeActionKind.RefactorRewrite.append("arrow").append("braces"),
                         matches: e => e.name.startsWith("Convert default export") || e.name.startsWith("Convert named export")
                     }),
@@ -12312,17 +12350,17 @@
                         kind: c.CodeActionKind.RefactorRewrite.append("property").append("generateAccessors"),
                         matches: e => e.name.startsWith("Generate 'get' and 'set' accessors")
                     }),
-                    F = [O, T, x, j, E, k, D, M, R, I, A];
+                    F = [O, T, x, j, E, k, D, R, M, I, A];
                 class N extends c.CodeAction {
-                    constructor(e, t, n, r, i, s) {
-                        const o = r.description;
-                        super(o, N.getKind(r)), this.client = e, this.document = t, this.refactor = n, this.action = r, this.range = i, r.notApplicableReason && (this.disabled = {
-                            reason: r.notApplicableReason
+                    constructor(e, t, n, i, r, s) {
+                        const o = i.description;
+                        super(o, N.getKind(i)), this.client = e, this.document = t, this.refactor = n, this.action = i, this.range = r, i.notApplicableReason && (this.disabled = {
+                            reason: i.notApplicableReason
                         }), this.command = {
                             title: o,
                             command: S.ID,
                             arguments: [{
-                                action: r.name,
+                                action: i.name,
                                 trigger: s
                             }]
                         }
@@ -12335,14 +12373,14 @@
                                 refactor: this.refactor.name,
                                 action: this.action.name
                             },
-                            r = await this.client.execute("getEditsForRefactor", n, e);
-                        "response" === r.type && r.body && (this.edit = _(this.client, r.body.edits), this.edit.size ? r.body.renameLocation && this.document.uri.scheme !== d.walkThroughSnippet && (this.command = {
+                            i = await this.client.execute("getEditsForRefactor", n, e);
+                        "response" === i.type && i.body && (this.edit = _(this.client, i.body.edits), this.edit.size ? i.body.renameLocation && this.document.uri.scheme !== d.walkThroughSnippet && (this.command = {
                             command: b.CompositeCommand.ID,
                             title: "",
                             arguments: (0, v.coalesce)([this.command, {
                                 command: "editor.action.rename",
                                 arguments: [
-                                    [this.document.uri, g.Position.fromLocation(r.body.renameLocation)]
+                                    [this.document.uri, g.Position.fromLocation(i.body.renameLocation)]
                                 ]
                             }])
                         }) : c.window.showErrorMessage(c.l10n.t("Could not apply refactoring")))
@@ -12354,7 +12392,7 @@
                     }
                 }
                 class L extends c.CodeAction {
-                    constructor(e, t, n, r, i) {
+                    constructor(e, t, n, i, r) {
                         super(n.description, E.kind), n.notApplicableReason && (this.disabled = {
                             reason: n.notApplicableReason
                         }), this.command = {
@@ -12364,14 +12402,14 @@
                                 refactor: t,
                                 action: n,
                                 document: e,
-                                range: r,
-                                trigger: i
+                                range: i,
+                                trigger: r
                             }]
                         }
                     }
                 }
                 class V extends c.CodeAction {
-                    constructor(e, t, n, r) {
+                    constructor(e, t, n, i) {
                         super(e.description, c.CodeActionKind.Refactor), this.command = {
                             title: e.description,
                             command: P.ID,
@@ -12379,7 +12417,7 @@
                                 document: t,
                                 refactor: e,
                                 rangeOrSelection: n,
-                                trigger: r
+                                trigger: i
                             }]
                         }
                     }
@@ -12398,39 +12436,39 @@
                         }
                         return e.childItems?.some(e => this.isOnSignatureName(e, t)) ?? !1
                     }
-                    constructor(e, t, n, r, i) {
+                    constructor(e, t, n, i, r) {
                         this.client = e, this.cachedNavTree = t, this.formattingOptionsManager = n;
-                        const s = new S(i);
-                        r.register(s), r.register(new b.CompositeCommand), r.register(new P(this.client)), r.register(new C(this.client, s)), r.register(new b.EditorChatFollowUp(this.client, i))
+                        const s = new S(r);
+                        i.register(s), i.register(new b.CompositeCommand), i.register(new P(this.client)), i.register(new C(this.client, s)), i.register(new b.EditorChatFollowUp(this.client, r))
                     }
-                    async provideCodeActions(e, t, n, r) {
+                    async provideCodeActions(e, t, n, i) {
                         if (!this.shouldTrigger(n, t)) return;
                         if (!this.client.toOpenTsFilePath(e)) return;
-                        const i = await this.interruptGetErrIfNeeded(n, () => {
-                            const i = this.client.toOpenTsFilePath(e);
-                            if (!i) return;
-                            this.formattingOptionsManager.ensureConfigurationForDocument(e, r);
+                        const r = await this.interruptGetErrIfNeeded(n, () => {
+                            const r = this.client.toOpenTsFilePath(e);
+                            if (!r) return;
+                            this.formattingOptionsManager.ensureConfigurationForDocument(e, i);
                             const s = {
-                                ...g.Range.toFileRangeRequestArgs(i, t),
+                                ...g.Range.toFileRangeRequestArgs(r, t),
                                 triggerReason: this.toTsTriggerReason(n),
                                 kind: n.only?.value,
-                                includeInteractiveActions: this.client.apiVersion.gte(p.API.v520)
+                                includeInteractiveActions: this.client.apiVersion.gte(h.API.v520)
                             };
-                            return this.client.execute("getApplicableRefactors", s, r)
+                            return this.client.execute("getApplicableRefactors", s, i)
                         });
-                        if ("response" !== i?.type || !i.body) return;
-                        const s = this.convertApplicableRefactors(e, n, i.body, t),
-                            o = (0, v.coalesce)(await Promise.all(Array.from(s, async i => {
-                                if (!this.client.apiVersion.lt(p.API.v430) || n.only || "refactor.rewrite.function.returnType" !== i.kind?.value) {
-                                    if (this.client.apiVersion.lt(p.API.v540) && n.triggerKind === c.CodeActionTriggerKind.Automatic && (i.kind?.value === k.kind.value || i.kind?.value === E.kind.value)) {
+                        if ("response" !== r?.type || !r.body) return;
+                        const s = this.convertApplicableRefactors(e, n, r.body, t),
+                            o = (0, v.coalesce)(await Promise.all(Array.from(s, async r => {
+                                if (!this.client.apiVersion.lt(h.API.v430) || n.only || "refactor.rewrite.function.returnType" !== r.kind?.value) {
+                                    if (this.client.apiVersion.lt(h.API.v540) && n.triggerKind === c.CodeActionTriggerKind.Automatic && (r.kind?.value === k.kind.value || r.kind?.value === E.kind.value)) {
                                         const n = this.client.toOpenTsFilePath(e);
                                         if (!n) return;
-                                        const i = await this.cachedNavTree.execute(e, () => this.client.execute("navtree", {
+                                        const r = await this.cachedNavTree.execute(e, () => this.client.execute("navtree", {
                                             file: n
-                                        }, r));
-                                        if ("response" !== i.type || !i.body || !$.isOnSignatureName(i.body, t)) return
+                                        }, i));
+                                        if ("response" !== r.type || !r.body || !$.isOnSignatureName(r.body, t)) return
                                     }
-                                    return i
+                                    return r
                                 }
                             })));
                         return n.only ? this.pruneInvalidActions(this.appendInvalidActions(o), n.only, 5) : o
@@ -12443,17 +12481,17 @@
                     }
                     toTsTriggerReason(e) {
                         return e.triggerKind === c.CodeActionTriggerKind.Invoke ? "invoked" : "implicit"
-                    }* convertApplicableRefactors(e, t, n, r) {
-                        for (const i of n)
-                            if (!1 === i.inlineable) yield new V(i, e, r, t.triggerKind);
+                    }* convertApplicableRefactors(e, t, n, i) {
+                        for (const r of n)
+                            if (!1 === r.inlineable) yield new V(r, e, i, t.triggerKind);
                             else
-                                for (const n of i.actions)
-                                    for (const s of this.refactorActionToCodeActions(e, t, i, n, r, i.actions)) yield s
+                                for (const n of r.actions)
+                                    for (const s of this.refactorActionToCodeActions(e, t, r, n, i, r.actions)) yield s
                     }
-                    refactorActionToCodeActions(e, t, n, r, i, s) {
+                    refactorActionToCodeActions(e, t, n, i, r, s) {
                         const o = [];
-                        "Move to file" === r.name ? o.push(new L(e, n, r, i, t.triggerKind)) : o.push(new N(this.client, e, n, r, i, t.triggerKind));
-                        for (const e of o) e.isPreferred = $.isPreferred(r, s);
+                        "Move to file" === i.name ? o.push(new L(e, n, i, r, t.triggerKind)) : o.push(new N(this.client, e, n, i, r, t.triggerKind));
+                        for (const e of o) e.isPreferred = $.isPreferred(i, s);
                         return o
                     }
                     shouldTrigger(e, t) {
@@ -12465,16 +12503,16 @@
                                     const t = e.match(/scope_(\d)/)?.[1];
                                     return t ? +t : void 0
                                 },
-                                r = n(e.name);
-                            return "number" == typeof r && t.filter(t => t !== e && T.matches(t)).every(e => {
+                                i = n(e.name);
+                            return "number" == typeof i && t.filter(t => t !== e && T.matches(t)).every(e => {
                                 const t = n(e.name);
-                                return "number" != typeof t || r < t
+                                return "number" != typeof t || i < t
                             })
                         }
                         return !(!x.matches(e) && !j.matches(e))
                     }
                     appendInvalidActions(e) {
-                        if (this.client.apiVersion.gte(p.API.v400)) return e;
+                        if (this.client.apiVersion.gte(h.API.v400)) return e;
                         if (!e.some(e => e.kind && T.kind.contains(e.kind))) {
                             const t = new c.CodeAction(c.l10n.t("Extract to constant"), T.kind);
                             t.disabled = {
@@ -12490,15 +12528,15 @@
                         return e
                     }
                     pruneInvalidActions(e, t, n) {
-                        if (this.client.apiVersion.lt(p.API.v400)) return e;
-                        const r = [],
-                            i = [],
+                        if (this.client.apiVersion.lt(h.API.v400)) return e;
+                        const i = [],
+                            r = [],
                             s = [];
-                        for (const t of e) t.disabled ? t.kind && (T.kind.contains(t.kind) || O.kind.contains(t.kind)) ? i.push(t) : s.push(t) : r.push(t);
+                        for (const t of e) t.disabled ? t.kind && (T.kind.contains(t.kind) || O.kind.contains(t.kind)) ? r.push(t) : s.push(t) : i.push(t);
                         const o = [];
-                        o.push(...i), o.push(...s);
+                        o.push(...r), o.push(...s);
                         const a = o.filter(e => !t || e.kind && t.contains(e.kind)).slice(0, n);
-                        return r.push(...a), r
+                        return i.push(...a), i
                     }
                 }
                 $._declarationKinds = new Set([f.Kind.module, f.Kind.class, f.Kind.interface, f.Kind.function, f.Kind.enum, f.Kind.type, f.Kind.const, f.Kind.variable, f.Kind.let]), $.metadata = {
@@ -12514,7 +12552,7 @@
             },
             7371: (e, t) => {
                 "use strict";
-                var n, r, i;
+                var n, i, r;
                 Object.defineProperty(t, "__esModule", {
                         value: !0
                     }), t.ClientCapabilities = t.ClientCapability = t.ServerResponse = t.ServerType = void 0,
@@ -12531,10 +12569,10 @@
                         }, e.NoServer = {
                             type: "noServer"
                         }
-                    }(r || (t.ServerResponse = r = {})),
+                    }(i || (t.ServerResponse = i = {})),
                     function(e) {
                         e[e.Syntax = 0] = "Syntax", e[e.EnhancedSyntax = 1] = "EnhancedSyntax", e[e.Semantic = 2] = "Semantic"
-                    }(i || (t.ClientCapability = i = {})), t.ClientCapabilities = class {
+                    }(r || (t.ClientCapability = r = {})), t.ClientCapabilities = class {
                         constructor(...e) {
                             this.capabilities = new Set(e)
                         }
@@ -12544,25 +12582,25 @@
                     }
             },
             7414: (e, t, n) => {
-                const r = n(144);
+                const i = n(144);
                 e.exports = (e, t) => {
-                    const n = r(e.trim().replace(/^[=v]+/, ""), t);
+                    const n = i(e.trim().replace(/^[=v]+/, ""), t);
                     return n ? n.version : null
                 }
             },
             7543: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -12572,17 +12610,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -12593,7 +12631,7 @@
                     l = n(3256),
                     u = n(5602),
                     d = n(3489);
-                class h extends u.Disposable {
+                class p extends u.Disposable {
                     constructor() {
                         super(), this._onDidChangeActiveJsTsEditor = this._register(new a.EventEmitter), this.onDidChangeActiveJsTsEditor = this._onDidChangeActiveJsTsEditor.event, this._register(a.window.onDidChangeActiveTextEditor(e => this.update())), this._register(a.window.onDidChangeVisibleTextEditors(e => this.update())), this._register(a.window.tabGroups.onDidChangeTabGroups(e => this.update())), this.update()
                     }
@@ -12613,8 +12651,8 @@
                         } = e;
                         if (t.input instanceof a.TabInputText) {
                             const e = t.input.uri,
-                                r = a.window.visibleTextEditors.find(t => t.document.uri.toString() === e.toString() && t.viewColumn === n);
-                            return r ? [r] : []
+                                i = a.window.visibleTextEditors.find(t => t.document.uri.toString() === e.toString() && t.viewColumn === n);
+                            return i ? [i] : []
                         }
                         if (t.input instanceof a.TabInputTextDiff) {
                             const e = t.input.original,
@@ -12625,8 +12663,8 @@
                             const e = a.window.activeTextEditor;
                             if (!e) return [];
                             if (void 0 !== e.viewColumn) return [];
-                            const r = a.window.visibleNotebookEditors.find(e => e.notebook.uri.toString() === t.input.uri.toString() && e.viewColumn === n);
-                            return r?.notebook.getCells().some(t => t.document.uri.toString() === e.document.uri.toString()) ? [e] : []
+                            const i = a.window.visibleNotebookEditors.find(e => e.notebook.uri.toString() === t.input.uri.toString() && e.viewColumn === n);
+                            return i?.notebook.getCells().some(t => t.document.uri.toString() === e.document.uri.toString()) ? [e] : []
                         }
                         return []
                     }
@@ -12655,17 +12693,17 @@
                         return (0, c.isJsConfigOrTsConfigFileName)(e.document.fileName)
                     }
                 }
-                t.ActiveJsTsEditorTracker = h
+                t.ActiveJsTsEditorTracker = p
             },
             7631: (e, t, n) => {
-                const r = n(8311);
-                e.exports = (e, t) => new r(e, t).set.map(e => e.map(e => e.value).join(" ").trim().split(" "))
+                const i = n(8311);
+                e.exports = (e, t) => new i(e, t).set.map(e => e.map(e => e.value).join(" ").trim().split(" "))
             },
             7638: (e, t, n) => {
-                const r = n(8311);
+                const i = n(8311);
                 e.exports = (e, t, n) => {
                     try {
-                        t = new r(t, n)
+                        t = new i(t, n)
                     } catch (e) {
                         return !1
                     }
@@ -12674,17 +12712,17 @@
             },
             7906: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -12694,17 +12732,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -12732,17 +12770,17 @@
             },
             8019: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -12752,17 +12790,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -12773,7 +12811,7 @@
                     l = n(5602),
                     u = "typescript.useWorkspaceNode",
                     d = "typescript.lastKnownWorkspaceNode";
-                class h extends l.Disposable {
+                class p extends l.Disposable {
                     constructor(e, t) {
                         if (super(), this.configuration = e, this.workspaceState = t, this._onDidPickNewVersion = this._register(new a.EventEmitter), this.onDidPickNewVersion = this._onDidPickNewVersion.event, this._currentVersion = this.configuration.globalNodePath || void 0, a.workspace.isTrusted) {
                             const e = this.configuration.localNodePath;
@@ -12820,19 +12858,19 @@
                         const t = this.configuration.localNodePath;
                         if (null === t) throw new Error("Could not prompt to use workspace Node installation because no workspace Node installation is specified");
                         const n = a.l10n.t("Yes"),
-                            r = a.l10n.t("No"),
-                            i = a.l10n.t("Not now");
+                            i = a.l10n.t("No"),
+                            r = a.l10n.t("Not now");
                         let s;
                         switch (await a.window.showInformationMessage(a.l10n.t("This workspace wants to use the Node installation at '{0}' to run TS Server. Would you like to use it?", t), {
                                 modal: e
-                            }, n, r, i)) {
+                            }, n, i, r)) {
                             case n:
                                 await this.setUseWorkspaceNodeState(!0, t), s = t;
                                 break;
-                            case r:
+                            case i:
                                 await this.setUseWorkspaceNodeState(!1, t);
                                 break;
-                            case i:
+                            case r:
                                 await this.setUseWorkspaceNodeState(void 0, t)
                         }
                         return s
@@ -12856,21 +12894,21 @@
                         await this.workspaceState.update(d, t), await this.workspaceState.update(u, e)
                     }
                 }
-                t.NodeVersionManager = h
+                t.NodeVersionManager = p
             },
             8040: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -12880,17 +12918,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -12904,17 +12942,17 @@
             },
             8101: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -12924,17 +12962,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -12955,17 +12993,17 @@
             },
             8110: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -12975,25 +13013,25 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.register = function(e, t, n, r, i) {
+                }), t.register = function(e, t, n, i, r) {
                     const s = [];
-                    for (const o of [f, g, m]) s.push((0, p.conditionalRegistration)([(0, p.requireMinVersion)(t, o.minVersion ?? c.API.defaultVersion), (0, p.requireSomeCapability)(t, d.ClientCapability.Semantic)], () => {
-                        const s = new b(t, o, n, r, i);
+                    for (const o of [f, g, m]) s.push((0, h.conditionalRegistration)([(0, h.requireMinVersion)(t, o.minVersion ?? c.API.defaultVersion), (0, h.requireSomeCapability)(t, d.ClientCapability.Semantic)], () => {
+                        const s = new b(t, o, n, i, r);
                         return a.Disposable.from(a.languages.registerCodeActionsProvider(e.semantic, s, {
                             providedCodeActionKinds: [o.kind]
                         }))
@@ -13011,8 +13049,8 @@
                     l = n(1788),
                     u = o(n(2144)),
                     d = n(7371),
-                    h = n(8040),
-                    p = n(6362),
+                    p = n(8040),
+                    h = n(6362),
                     f = {
                         commandIds: [],
                         title: a.l10n.t("Organize Imports"),
@@ -13048,10 +13086,10 @@
                     }
                 }
                 class b {
-                    constructor(e, t, n, r, i) {
-                        this.client = e, this.commandMetadata = t, this.fileConfigManager = r, n.register(new v(i))
+                    constructor(e, t, n, i, r) {
+                        this.client = e, this.commandMetadata = t, this.fileConfigManager = i, n.register(new v(r))
                     }
-                    provideCodeActions(e, t, n, r) {
+                    provideCodeActions(e, t, n, i) {
                         return n.only?.contains(this.commandMetadata.kind) && this.client.toOpenTsFilePath(e) ? [new y(this.commandMetadata.title, this.commandMetadata.kind, e)] : []
                     }
                     async resolveCodeAction(e, t) {
@@ -13059,7 +13097,7 @@
                             if (await this.fileConfigManager.ensureConfigurationForDocument(e.document, t), t.isCancellationRequested) return;
                             const n = this.client.toOpenTsFilePath(e.document);
                             if (!n) return;
-                            const r = {
+                            const i = {
                                 scope: {
                                     type: "file",
                                     args: {
@@ -13069,7 +13107,7 @@
                                 skipDestructiveCodeActions: this.commandMetadata.mode === l.OrganizeImportsMode.SortAndCombine,
                                 mode: u.OrganizeImportsMode.toProtocolOrganizeImportsMode(this.commandMetadata.mode)
                             };
-                            return this.client.execute("organizeImports", r, h.nulToken)
+                            return this.client.execute("organizeImports", i, p.nulToken)
                         });
                         if ("response" === n?.type && n.body && !t.isCancellationRequested) return n.body.length && (e.edit = u.WorkspaceEdit.fromFileCodeEdits(this.client, n.body)), e.command = {
                             command: v.ID,
@@ -13081,17 +13119,17 @@
             },
             8160: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -13101,17 +13139,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -13128,14 +13166,14 @@
                 }
             },
             8265: (e, t, n) => {
-                const r = n(857),
-                    i = n(9896),
+                const i = n(857),
+                    r = n(9896),
                     s = n(5317).exec,
                     o = n(2792);
 
                 function a(e) {
-                    i.readFile("/proc/uptime", "utf8", function(t, n) {
-                        return t || void 0 === n ? (process.env.PIDUSAGE_SILENT || console.warn("[pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value"), e(null, r.uptime() || new Date / 1e3)) : e(null, parseFloat(n.split(" ")[0]))
+                    r.readFile("/proc/uptime", "utf8", function(t, n) {
+                        return t || void 0 === n ? (process.env.PIDUSAGE_SILENT || console.warn("[pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value"), e(null, i.uptime() || new Date / 1e3)) : e(null, parseFloat(n.split(" ")[0]))
                     })
                 }
 
@@ -13160,28 +13198,28 @@
                 function l(e, t, n) {
                     "function" == typeof t && (n = t, t = {
                         default: ""
-                    }), s("getconf " + e, function(r, i, s) {
-                        return null !== r ? (process.env.PIDUSAGE_SILENT || console.error('Error while calling "getconf ' + e + '"', r), n(null, t.default)) : (i = parseInt(i), isNaN(i) ? n(null, t.default) : n(null, i))
+                    }), s("getconf " + e, function(i, r, s) {
+                        return null !== i ? (process.env.PIDUSAGE_SILENT || console.error('Error while calling "getconf ' + e + '"', i), n(null, t.default)) : (r = parseInt(r), isNaN(r) ? n(null, t.default) : n(null, r))
                     })
                 }
                 e.exports = function(e, t) {
-                    null === e ? o([c, a], function(n, r) {
+                    null === e ? o([c, a], function(n, i) {
                         if (n) return t(n);
                         e = {
-                            clockTick: r[0].clockTick,
-                            pageSize: r[0].pageSize,
-                            uptime: r[1]
+                            clockTick: i[0].clockTick,
+                            pageSize: i[0].pageSize,
+                            uptime: i[1]
                         }, t(null, e)
-                    }) : a(function(n, r) {
+                    }) : a(function(n, i) {
                         if (n) return t(n);
-                        e.uptime = r, t(null, e)
+                        e.uptime = i, t(null, e)
                     })
                 }
             },
             8311: (e, t, n) => {
-                class r {
+                class i {
                     constructor(e, t) {
-                        if (t = s(t), e instanceof r) return e.loose === !!t.loose && e.includePrerelease === !!t.includePrerelease ? e : new r(e.raw, t);
+                        if (t = s(t), e instanceof i) return e.loose === !!t.loose && e.includePrerelease === !!t.includePrerelease ? e : new i(e.raw, t);
                         if (e instanceof o) return this.raw = e.value, this.set = [
                             [e]
                         ], this.format(), this;
@@ -13206,13 +13244,13 @@
                     }
                     parseRange(e) {
                         const t = ((this.options.includePrerelease && f) | (this.options.loose && g)) + ":" + e,
-                            n = i.get(t);
+                            n = r.get(t);
                         if (n) return n;
-                        const r = this.options.loose,
-                            s = r ? l[u.HYPHENRANGELOOSE] : l[u.HYPHENRANGE];
+                        const i = this.options.loose,
+                            s = i ? l[u.HYPHENRANGELOOSE] : l[u.HYPHENRANGE];
                         e = e.replace(s, E(this.options.includePrerelease)), a("hyphen replace", e), e = e.replace(l[u.COMPARATORTRIM], d), a("comparator trim", e);
-                        let c = (e = (e = e.replace(l[u.TILDETRIM], h)).replace(l[u.CARETTRIM], p)).split(" ").map(e => b(e, this.options)).join(" ").split(/\s+/).map(e => j(e, this.options));
-                        r && (c = c.filter(e => (a("loose invalid filter", e, this.options), !!e.match(l[u.COMPARATORLOOSE])))), a("range list", c);
+                        let c = (e = (e = e.replace(l[u.TILDETRIM], p)).replace(l[u.CARETTRIM], h)).split(" ").map(e => b(e, this.options)).join(" ").split(/\s+/).map(e => j(e, this.options));
+                        i && (c = c.filter(e => (a("loose invalid filter", e, this.options), !!e.match(l[u.COMPARATORLOOSE])))), a("range list", c);
                         const v = new Map,
                             y = c.map(e => new o(e, this.options));
                         for (const e of y) {
@@ -13221,10 +13259,10 @@
                         }
                         v.size > 1 && v.has("") && v.delete("");
                         const w = [...v.values()];
-                        return i.set(t, w), w
+                        return r.set(t, w), w
                     }
                     intersects(e, t) {
-                        if (!(e instanceof r)) throw new TypeError("a Range is required");
+                        if (!(e instanceof i)) throw new TypeError("a Range is required");
                         return this.set.some(n => y(n, t) && e.set.some(e => y(e, t) && n.every(n => e.every(e => n.intersects(e, t)))))
                     }
                     test(e) {
@@ -13239,8 +13277,8 @@
                         return !1
                     }
                 }
-                e.exports = r;
-                const i = new(n(9749))({
+                e.exports = i;
+                const r = new(n(9749))({
                         max: 1e3
                     }),
                     s = n(8587),
@@ -13251,8 +13289,8 @@
                         safeRe: l,
                         t: u,
                         comparatorTrimReplace: d,
-                        tildeTrimReplace: h,
-                        caretTrimReplace: p
+                        tildeTrimReplace: p,
+                        caretTrimReplace: h
                     } = n(9718),
                     {
                         FLAG_INCLUDE_PRERELEASE: f,
@@ -13262,9 +13300,9 @@
                     v = e => "" === e.value,
                     y = (e, t) => {
                         let n = !0;
-                        const r = e.slice();
-                        let i = r.pop();
-                        for (; n && r.length;) n = r.every(e => i.intersects(e, t)), i = r.pop();
+                        const i = e.slice();
+                        let r = i.pop();
+                        for (; n && i.length;) n = i.every(e => r.intersects(e, t)), r = i.pop();
                         return n
                     },
                     b = (e, t) => (a("comp", e, t), e = P(e, t), a("caret", e), e = _(e, t), a("tildes", e), e = O(e, t), a("xrange", e), e = x(e, t), a("stars", e), e),
@@ -13272,45 +13310,45 @@
                     _ = (e, t) => e.trim().split(/\s+/).map(e => S(e, t)).join(" "),
                     S = (e, t) => {
                         const n = t.loose ? l[u.TILDELOOSE] : l[u.TILDE];
-                        return e.replace(n, (t, n, r, i, s) => {
+                        return e.replace(n, (t, n, i, r, s) => {
                             let o;
-                            return a("tilde", e, t, n, r, i, s), w(n) ? o = "" : w(r) ? o = `>=${n}.0.0 <${+n+1}.0.0-0` : w(i) ? o = `>=${n}.${r}.0 <${n}.${+r+1}.0-0` : s ? (a("replaceTilde pr", s), o = `>=${n}.${r}.${i}-${s} <${n}.${+r+1}.0-0`) : o = `>=${n}.${r}.${i} <${n}.${+r+1}.0-0`, a("tilde return", o), o
+                            return a("tilde", e, t, n, i, r, s), w(n) ? o = "" : w(i) ? o = `>=${n}.0.0 <${+n+1}.0.0-0` : w(r) ? o = `>=${n}.${i}.0 <${n}.${+i+1}.0-0` : s ? (a("replaceTilde pr", s), o = `>=${n}.${i}.${r}-${s} <${n}.${+i+1}.0-0`) : o = `>=${n}.${i}.${r} <${n}.${+i+1}.0-0`, a("tilde return", o), o
                         })
                     },
                     P = (e, t) => e.trim().split(/\s+/).map(e => C(e, t)).join(" "),
                     C = (e, t) => {
                         a("caret", e, t);
                         const n = t.loose ? l[u.CARETLOOSE] : l[u.CARET],
-                            r = t.includePrerelease ? "-0" : "";
-                        return e.replace(n, (t, n, i, s, o) => {
+                            i = t.includePrerelease ? "-0" : "";
+                        return e.replace(n, (t, n, r, s, o) => {
                             let c;
-                            return a("caret", e, t, n, i, s, o), w(n) ? c = "" : w(i) ? c = `>=${n}.0.0${r} <${+n+1}.0.0-0` : w(s) ? c = "0" === n ? `>=${n}.${i}.0${r} <${n}.${+i+1}.0-0` : `>=${n}.${i}.0${r} <${+n+1}.0.0-0` : o ? (a("replaceCaret pr", o), c = "0" === n ? "0" === i ? `>=${n}.${i}.${s}-${o} <${n}.${i}.${+s+1}-0` : `>=${n}.${i}.${s}-${o} <${n}.${+i+1}.0-0` : `>=${n}.${i}.${s}-${o} <${+n+1}.0.0-0`) : (a("no pr"), c = "0" === n ? "0" === i ? `>=${n}.${i}.${s}${r} <${n}.${i}.${+s+1}-0` : `>=${n}.${i}.${s}${r} <${n}.${+i+1}.0-0` : `>=${n}.${i}.${s} <${+n+1}.0.0-0`), a("caret return", c), c
+                            return a("caret", e, t, n, r, s, o), w(n) ? c = "" : w(r) ? c = `>=${n}.0.0${i} <${+n+1}.0.0-0` : w(s) ? c = "0" === n ? `>=${n}.${r}.0${i} <${n}.${+r+1}.0-0` : `>=${n}.${r}.0${i} <${+n+1}.0.0-0` : o ? (a("replaceCaret pr", o), c = "0" === n ? "0" === r ? `>=${n}.${r}.${s}-${o} <${n}.${r}.${+s+1}-0` : `>=${n}.${r}.${s}-${o} <${n}.${+r+1}.0-0` : `>=${n}.${r}.${s}-${o} <${+n+1}.0.0-0`) : (a("no pr"), c = "0" === n ? "0" === r ? `>=${n}.${r}.${s}${i} <${n}.${r}.${+s+1}-0` : `>=${n}.${r}.${s}${i} <${n}.${+r+1}.0-0` : `>=${n}.${r}.${s} <${+n+1}.0.0-0`), a("caret return", c), c
                         })
                     },
                     O = (e, t) => (a("replaceXRanges", e, t), e.split(/\s+/).map(e => T(e, t)).join(" ")),
                     T = (e, t) => {
                         e = e.trim();
                         const n = t.loose ? l[u.XRANGELOOSE] : l[u.XRANGE];
-                        return e.replace(n, (n, r, i, s, o, c) => {
-                            a("xRange", e, n, r, i, s, o, c);
-                            const l = w(i),
+                        return e.replace(n, (n, i, r, s, o, c) => {
+                            a("xRange", e, n, i, r, s, o, c);
+                            const l = w(r),
                                 u = l || w(s),
                                 d = u || w(o),
-                                h = d;
-                            return "=" === r && h && (r = ""), c = t.includePrerelease ? "-0" : "", l ? n = ">" === r || "<" === r ? "<0.0.0-0" : "*" : r && h ? (u && (s = 0), o = 0, ">" === r ? (r = ">=", u ? (i = +i + 1, s = 0, o = 0) : (s = +s + 1, o = 0)) : "<=" === r && (r = "<", u ? i = +i + 1 : s = +s + 1), "<" === r && (c = "-0"), n = `${r+i}.${s}.${o}${c}`) : u ? n = `>=${i}.0.0${c} <${+i+1}.0.0-0` : d && (n = `>=${i}.${s}.0${c} <${i}.${+s+1}.0-0`), a("xRange return", n), n
+                                p = d;
+                            return "=" === i && p && (i = ""), c = t.includePrerelease ? "-0" : "", l ? n = ">" === i || "<" === i ? "<0.0.0-0" : "*" : i && p ? (u && (s = 0), o = 0, ">" === i ? (i = ">=", u ? (r = +r + 1, s = 0, o = 0) : (s = +s + 1, o = 0)) : "<=" === i && (i = "<", u ? r = +r + 1 : s = +s + 1), "<" === i && (c = "-0"), n = `${i+r}.${s}.${o}${c}`) : u ? n = `>=${r}.0.0${c} <${+r+1}.0.0-0` : d && (n = `>=${r}.${s}.0${c} <${r}.${+s+1}.0-0`), a("xRange return", n), n
                         })
                     },
                     x = (e, t) => (a("replaceStars", e, t), e.trim().replace(l[u.STAR], "")),
                     j = (e, t) => (a("replaceGTE0", e, t), e.trim().replace(l[t.includePrerelease ? u.GTE0PRE : u.GTE0], "")),
-                    E = e => (t, n, r, i, s, o, a, c, l, u, d, h, p) => `${n=w(r)?"":w(i)?`>=${r}.0.0${e?"-0":""}`:w(s)?`>=${r}.${i}.0${e?"-0":""}`:o?`>=${n}`:`>=${n}${e?"-0":""}`} ${c=w(l)?"":w(u)?`<${+l+1}.0.0-0`:w(d)?`<${l}.${+u+1}.0-0`:h?`<=${l}.${u}.${d}-${h}`:e?`<${l}.${u}.${+d+1}-0`:`<=${c}`}`.trim(),
+                    E = e => (t, n, i, r, s, o, a, c, l, u, d, p, h) => `${n=w(i)?"":w(r)?`>=${i}.0.0${e?"-0":""}`:w(s)?`>=${i}.${r}.0${e?"-0":""}`:o?`>=${n}`:`>=${n}${e?"-0":""}`} ${c=w(l)?"":w(u)?`<${+l+1}.0.0-0`:w(d)?`<${l}.${+u+1}.0-0`:p?`<=${l}.${u}.${d}-${p}`:e?`<${l}.${u}.${+d+1}-0`:`<=${c}`}`.trim(),
                     k = (e, t, n) => {
                         for (let n = 0; n < e.length; n++)
                             if (!e[n].test(t)) return !1;
                         if (t.prerelease.length && !n.includePrerelease) {
                             for (let n = 0; n < e.length; n++)
                                 if (a(e[n].semver), e[n].semver !== o.ANY && e[n].semver.prerelease.length > 0) {
-                                    const r = e[n].semver;
-                                    if (r.major === t.major && r.minor === t.minor && r.patch === t.patch) return !0
+                                    const i = e[n].semver;
+                                    if (i.major === t.major && i.minor === t.minor && i.patch === t.patch) return !0
                                 } return !1
                         }
                         return !0
@@ -13318,17 +13356,17 @@
             },
             8337: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -13338,38 +13376,38 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__decorate || function(e, t, n, r) {
-                        var i, s = arguments.length,
-                            o = s < 3 ? t : null === r ? r = Object.getOwnPropertyDescriptor(t, n) : r;
-                        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) o = Reflect.decorate(e, t, n, r);
+                    o = this && this.__decorate || function(e, t, n, i) {
+                        var r, s = arguments.length,
+                            o = s < 3 ? t : null === i ? i = Object.getOwnPropertyDescriptor(t, n) : i;
+                        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) o = Reflect.decorate(e, t, n, i);
                         else
-                            for (var a = e.length - 1; a >= 0; a--)(i = e[a]) && (o = (s < 3 ? i(o) : s > 3 ? i(t, n, o) : i(t, n)) || o);
+                            for (var a = e.length - 1; a >= 0; a--)(r = e[a]) && (o = (s < 3 ? r(o) : s > 3 ? r(t, n, o) : r(t, n)) || o);
                         return s > 3 && o && Object.defineProperty(t, n, o), o
                     },
-                    a = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    a = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.register = function(e, t, n, r, i, s) {
-                    return (0, m.conditionalRegistration)([(0, m.requireSomeCapability)(t, d.ClientCapability.Semantic)], () => c.languages.registerCodeActionsProvider(e.semantic, new O(t, n, r, i, s), O.metadata))
+                }), t.register = function(e, t, n, i, r, s) {
+                    return (0, m.conditionalRegistration)([(0, m.requireSomeCapability)(t, d.ClientCapability.Semantic)], () => c.languages.registerCodeActionsProvider(e.semantic, new O(t, n, i, r, s), O.metadata))
                 };
                 const c = a(n(1398)),
                     l = a(n(6384)),
                     u = a(n(2144)),
                     d = n(7371),
-                    h = n(8040),
-                    p = n(4267),
+                    p = n(8040),
+                    h = n(4267),
                     f = n(71),
                     g = n(1033),
                     m = n(6362),
@@ -13382,13 +13420,13 @@
                         document: e,
                         action: t,
                         diagnostic: n,
-                        followupAction: r
+                        followupAction: i
                     }) {
                         this.telemetryReporter.logTelemetry("quickFix.execute", {
                             fixName: t.fixName
                         }), this.diagnosticManager.deleteDiagnostic(e.uri, n);
-                        const i = await (0, g.applyCodeActionCommands)(this.client, t.commands, h.nulToken);
-                        return await (r?.execute()), i
+                        const r = await (0, g.applyCodeActionCommands)(this.client, t.commands, p.nulToken);
+                        return await (i?.execute()), r
                     }
                 }
                 y.ID = "_typescript.applyCodeActionCommand";
@@ -13399,7 +13437,7 @@
                     async execute(e) {
                         this.telemetryReporter.logTelemetry("quickFixAll.execute", {
                             fixName: e.action.tsAction.fixName
-                        }), e.action.combinedResponse && await (0, g.applyCodeActionCommands)(this.client, e.action.combinedResponse.body.commands, h.nulToken)
+                        }), e.action.combinedResponse && await (0, g.applyCodeActionCommands)(this.client, e.action.combinedResponse.body.commands, p.nulToken)
                     }
                 }
                 b.ID = "_typescript.applyFixAllCodeAction";
@@ -13432,8 +13470,8 @@
                     }
                 }
                 class S extends _ {
-                    constructor(e, t, n, r) {
-                        super(e, n, r), this.file = t
+                    constructor(e, t, n, i) {
+                        super(e, n, i), this.file = t
                     }
                 }
                 class P {
@@ -13469,33 +13507,33 @@
                         return w.from(e.filter(e => void 0 !== e.code && t.has(e.code + "")))
                     }
                     get fixableDiagnosticCodes() {
-                        return this.client.execute("getSupportedCodeFixes", null, h.nulToken).then(e => "response" === e.type && e.body || []).then(e => new Set(e))
+                        return this.client.execute("getSupportedCodeFixes", null, p.nulToken).then(e => "response" === e.type && e.body || []).then(e => new Set(e))
                     }
                 }
-                o([p.memoize], C.prototype, "fixableDiagnosticCodes", null);
+                o([h.memoize], C.prototype, "fixableDiagnosticCodes", null);
                 class O {
-                    constructor(e, t, n, r, i) {
-                        this.client = e, this.formattingConfigurationManager = t, this.diagnosticsManager = r, n.register(new v.CompositeCommand), n.register(new y(e, r, i)), n.register(new b(e, i)), n.register(new v.EditorChatFollowUp(e, i)), this.supportedCodeActionProvider = new C(e)
+                    constructor(e, t, n, i, r) {
+                        this.client = e, this.formattingConfigurationManager = t, this.diagnosticsManager = i, n.register(new v.CompositeCommand), n.register(new y(e, i, r)), n.register(new b(e, r)), n.register(new v.EditorChatFollowUp(e, r)), this.supportedCodeActionProvider = new C(e)
                     }
-                    async provideCodeActions(e, t, n, r) {
-                        const i = this.client.toOpenTsFilePath(e);
-                        if (!i) return;
+                    async provideCodeActions(e, t, n, i) {
+                        const r = this.client.toOpenTsFilePath(e);
+                        if (!r) return;
                         let s = n.diagnostics;
                         if (this.client.bufferSyncSupport.hasPendingDiagnostics(e.uri)) {
                             if (await new Promise(e => {
                                     setTimeout(e, 500)
-                                }), r.isCancellationRequested) return;
+                                }), i.isCancellationRequested) return;
                             const n = [];
-                            for (const r of this.diagnosticsManager.getDiagnostics(e.uri))
-                                if (t.intersection(r.range) && n.push(r) > O._maxCodeActionsPerFile) break;
+                            for (const i of this.diagnosticsManager.getDiagnostics(e.uri))
+                                if (t.intersection(i.range) && n.push(i) > O._maxCodeActionsPerFile) break;
                             s = n
                         }
                         const o = await this.supportedCodeActionProvider.getFixableDiagnosticsForContext(s);
-                        if (!o.size || r.isCancellationRequested) return;
-                        if (await this.formattingConfigurationManager.ensureConfigurationForDocument(e, r), r.isCancellationRequested) return;
+                        if (!o.size || i.isCancellationRequested) return;
+                        if (await this.formattingConfigurationManager.ensureConfigurationForDocument(e, i), i.isCancellationRequested) return;
                         const a = new P;
                         for (const t of o.values)
-                            if (await this.getFixesForDiagnostic(e, i, t, a, r), r.isCancellationRequested) return;
+                            if (await this.getFixesForDiagnostic(e, r, t, a, i), i.isCancellationRequested) return;
                         const c = Array.from(a.values());
                         for (const e of c) e.isPreferred = j(e, c);
                         return c
@@ -13511,26 +13549,26 @@
                                 },
                                 fixId: e.tsAction.fixId
                             },
-                            r = await this.client.execute("getCombinedCodeFix", n, t);
-                        return "response" === r.type && (e.combinedResponse = r, e.edit = u.WorkspaceEdit.fromFileCodeEdits(this.client, r.body.changes)), e
+                            i = await this.client.execute("getCombinedCodeFix", n, t);
+                        return "response" === i.type && (e.combinedResponse = i, e.edit = u.WorkspaceEdit.fromFileCodeEdits(this.client, i.body.changes)), e
                     }
-                    async getFixesForDiagnostic(e, t, n, r, i) {
+                    async getFixesForDiagnostic(e, t, n, i, r) {
                         const s = {
                                 ...u.Range.toFileRangeRequestArgs(t, n.range),
                                 errorCodes: [+n.code]
                             },
-                            o = await this.client.execute("getCodeFixes", s, i);
-                        if ("response" !== o.type || !o.body) return r;
-                        for (const i of o.body) {
-                            for (const t of this.getFixesForTsCodeAction(e, n, i)) r.addAction(t);
-                            this.addFixAllForTsCodeAction(r, e.uri, t, n, i)
+                            o = await this.client.execute("getCodeFixes", s, r);
+                        if ("response" !== o.type || !o.body) return i;
+                        for (const r of o.body) {
+                            for (const t of this.getFixesForTsCodeAction(e, n, r)) i.addAction(t);
+                            this.addFixAllForTsCodeAction(i, e.uri, t, n, r)
                         }
-                        return r
+                        return i
                     }
                     getFixesForTsCodeAction(e, t, n) {
-                        const r = [],
-                            i = new _(n, n.description, c.CodeActionKind.QuickFix);
-                        i.edit = (0, g.getEditForCodeAction)(this.client, n), i.diagnostics = [t], i.ranges = [t.range], i.command = {
+                        const i = [],
+                            r = new _(n, n.description, c.CodeActionKind.QuickFix);
+                        r.edit = (0, g.getEditForCodeAction)(this.client, n), r.diagnostics = [t], r.ranges = [t.range], r.command = {
                             command: y.ID,
                             arguments: [{
                                 action: n,
@@ -13538,25 +13576,25 @@
                                 document: e
                             }],
                             title: ""
-                        }, r.push(i);
+                        }, i.push(r);
                         const s = c.extensions.getExtension("github.copilot-chat");
                         if (s?.isActive) {
-                            let i, s, o = n.description;
-                            if (n.fixName === l.classIncorrectlyImplementsInterface) o += " with Copilot", i = `Implement the stubbed-out class members for ${e.getText(t.range)} with a useful implementation.`, s = {
+                            let r, s, o = n.description;
+                            if (n.fixName === l.classIncorrectlyImplementsInterface) o += " with Copilot", r = `Implement the stubbed-out class members for ${e.getText(t.range)} with a useful implementation.`, s = {
                                 kind: "code-action",
                                 action: n
                             };
-                            else if (n.fixName === l.fixClassDoesntImplementInheritedAbstractMember) o += " with Copilot", i = `Implement the stubbed-out class members for ${e.getText(t.range)} with a useful implementation.`, s = {
+                            else if (n.fixName === l.fixClassDoesntImplementInheritedAbstractMember) o += " with Copilot", r = `Implement the stubbed-out class members for ${e.getText(t.range)} with a useful implementation.`, s = {
                                 kind: "code-action",
                                 action: n
                             };
-                            else if (n.fixName === l.fixMissingFunctionDeclaration) o = `Implement missing function declaration '${e.getText(t.range)}' using Copilot`, i = `Provide a reasonable implementation of the function ${e.getText(t.range)} given its type and the context it's called in.`, s = {
+                            else if (n.fixName === l.fixMissingFunctionDeclaration) o = `Implement missing function declaration '${e.getText(t.range)}' using Copilot`, r = `Provide a reasonable implementation of the function ${e.getText(t.range)} given its type and the context it's called in.`, s = {
                                 kind: "code-action",
                                 action: n
                             };
                             else if (n.fixName === l.inferFromUsage) {
-                                const i = new _(n, "Infer types using Copilot", c.CodeActionKind.QuickFix);
-                                i.edit = new c.WorkspaceEdit, i.diagnostics = [t], i.ranges = [t.range], i.isAI = !0, i.command = {
+                                const r = new _(n, "Infer types using Copilot", c.CodeActionKind.QuickFix);
+                                r.edit = new c.WorkspaceEdit, r.diagnostics = [t], r.ranges = [t.range], r.isAI = !0, r.command = {
                                     command: v.EditorChatFollowUp.ID,
                                     arguments: [{
                                         message: "Add types to this code. Add separate interfaces when possible. Do not change the code except for adding types.",
@@ -13571,12 +13609,12 @@
                                         }
                                     }],
                                     title: ""
-                                }, r.push(i)
-                            } else n.fixName === l.addNameToNamelessParameter && (o = "Add meaningful parameter name with Copilot", i = `Rename the parameter ${n.changes.map(e=>e.textChanges.map(e=>e.newText).join("")).join("")} with a more meaningful name.`, s = {
+                                }, i.push(r)
+                            } else n.fixName === l.addNameToNamelessParameter && (o = "Add meaningful parameter name with Copilot", r = `Rename the parameter ${n.changes.map(e=>e.textChanges.map(e=>e.newText).join("")).join("")} with a more meaningful name.`, s = {
                                 kind: "navtree-function",
                                 pos: t.range.start
                             });
-                            if (s && void 0 !== i) {
+                            if (s && void 0 !== r) {
                                 const a = new _(n, o, c.CodeActionKind.QuickFix);
                                 a.edit = (0, g.getEditForCodeAction)(this.client, n), a.edit?.insert(e.uri, t.range.start, ""), a.diagnostics = [t], a.ranges = [t.range], a.isAI = !0, a.command = {
                                     command: v.CompositeCommand.ID,
@@ -13593,7 +13631,7 @@
                                         command: v.EditorChatFollowUp.ID,
                                         title: "",
                                         arguments: [{
-                                            message: i,
+                                            message: r,
                                             expand: s,
                                             document: e,
                                             action: {
@@ -13602,22 +13640,22 @@
                                             }
                                         }]
                                     }]
-                                }, r.push(a)
+                                }, i.push(a)
                             }
                         }
-                        return r
+                        return i
                     }
-                    addFixAllForTsCodeAction(e, t, n, r, i) {
-                        if (!i.fixId || e.hasFixAllAction(i.fixId)) return e;
-                        if (!this.diagnosticsManager.getDiagnostics(t).some(e => e !== r && (e.code === r.code || T.has(e.code) && T.get(e.code) === T.get(r.code)))) return e;
-                        const s = new S(i, n, i.fixAllDescription || c.l10n.t("{0} (Fix all in file)", i.description), c.CodeActionKind.QuickFix);
-                        return s.diagnostics = [r], s.ranges = [r.range], s.command = {
+                    addFixAllForTsCodeAction(e, t, n, i, r) {
+                        if (!r.fixId || e.hasFixAllAction(r.fixId)) return e;
+                        if (!this.diagnosticsManager.getDiagnostics(t).some(e => e !== i && (e.code === i.code || T.has(e.code) && T.get(e.code) === T.get(i.code)))) return e;
+                        const s = new S(r, n, r.fixAllDescription || c.l10n.t("{0} (Fix all in file)", r.description), c.CodeActionKind.QuickFix);
+                        return s.diagnostics = [i], s.ranges = [i.range], s.command = {
                             command: b.ID,
                             arguments: [{
                                 action: s
                             }],
                             title: ""
-                        }, e.addFixAllAction(i.fixId, s), e
+                        }, e.addFixAllAction(r.fixId, s), e
                     }
                 }
                 O._maxCodeActionsPerFile = 1e3, O.metadata = {
@@ -13682,24 +13720,24 @@
                     return !!n && t.every(t => {
                         if (t === e) return !0;
                         if (t instanceof S) return !0;
-                        const r = x.get(t.tsAction.fixName);
-                        return !r || r.priority < n.priority || !(r.priority > n.priority) && (!n.thereCanOnlyBeOne || e.tsAction.fixName !== t.tsAction.fixName)
+                        const i = x.get(t.tsAction.fixName);
+                        return !i || i.priority < n.priority || !(i.priority > n.priority) && (!n.thereCanOnlyBeOne || e.tsAction.fixName !== t.tsAction.fixName)
                     })
                 }
             },
             8366: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -13709,17 +13747,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -13731,8 +13769,8 @@
                     static asAbsoluteWorkspacePath(e) {
                         for (const t of c.workspace.workspaceFolders || []) {
                             const n = [`./${t.name}/`, `${t.name}/`, `.\\${t.name}\\`, `${t.name}\\`];
-                            for (const r of n)
-                                if (e.startsWith(r)) return a.join(t.uri.fsPath, e.replace(r, ""))
+                            for (const i of n)
+                                if (e.startsWith(i)) return a.join(t.uri.fsPath, e.replace(i, ""))
                         }
                     }
                 }
@@ -13767,17 +13805,17 @@
             },
             8631: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -13787,38 +13825,38 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.insertModesValues = t.Config = t.joinLines = t.wait = t.CURSOR = void 0, t.rndName = h, t.createRandomFile = p, t.deleteFile = f, t.withRandomFileEditor = function(e, n, r) {
-                    const i = e.indexOf(t.CURSOR);
-                    return p(e.replace(t.CURSOR, ""), n).then(e => d.workspace.openTextDocument(e).then(t => d.window.showTextDocument(t).then(n => {
-                        if (i >= 0) {
-                            const e = t.positionAt(i);
+                }), t.insertModesValues = t.Config = t.joinLines = t.wait = t.CURSOR = void 0, t.rndName = p, t.createRandomFile = h, t.deleteFile = f, t.withRandomFileEditor = function(e, n, i) {
+                    const r = e.indexOf(t.CURSOR);
+                    return h(e.replace(t.CURSOR, ""), n).then(e => d.workspace.openTextDocument(e).then(t => d.window.showTextDocument(t).then(n => {
+                        if (r >= 0) {
+                            const e = t.positionAt(r);
                             n.selection = new d.Selection(e, e)
                         }
-                        return r(n, t).then(n => t.isDirty ? t.save().then(() => f(e)) : f(e))
+                        return i(n, t).then(n => t.isDirty ? t.save().then(() => f(e)) : f(e))
                     })))
                 }, t.createTestEditor = async function(e, ...n) {
-                    const r = await d.workspace.openTextDocument(e),
-                        i = await d.window.showTextDocument(r);
-                    return await i.insertSnippet(new d.SnippetString((0, t.joinLines)(...n)), new d.Range(0, 0, 1e3, 0)), i
-                }, t.assertEditorContents = function(e, n, r) {
-                    const i = n.indexOf(t.CURSOR);
-                    if (a.strictEqual(e.document.getText(), n.replace(t.CURSOR, ""), r), i >= 0) {
-                        const t = e.document.positionAt(i);
+                    const i = await d.workspace.openTextDocument(e),
+                        r = await d.window.showTextDocument(i);
+                    return await r.insertSnippet(new d.SnippetString((0, t.joinLines)(...n)), new d.Range(0, 0, 1e3, 0)), r
+                }, t.assertEditorContents = function(e, n, i) {
+                    const r = n.indexOf(t.CURSOR);
+                    if (a.strictEqual(e.document.getText(), n.replace(t.CURSOR, ""), i), r >= 0) {
+                        const t = e.document.positionAt(r);
                         a.deepStrictEqual({
                             line: e.selection.active.line,
                             character: e.selection.active.line
@@ -13827,20 +13865,20 @@
                             character: t.line
                         }, "Cursor position")
                     }
-                }, t.updateConfig = g, t.enumerateConfig = async function(e, t, n, r) {
-                    for (const i of n) {
+                }, t.updateConfig = g, t.enumerateConfig = async function(e, t, n, i) {
+                    for (const r of n) {
                         const n = {
-                            [t]: i
+                            [t]: r
                         };
-                        await g(e, n), await r(JSON.stringify(n))
+                        await g(e, n), await i(JSON.stringify(n))
                     }
-                }, t.onChangedDocument = m, t.retryUntilDocumentChanges = async function(e, n, r, i) {
-                    const s = m(e, r);
+                }, t.onChangedDocument = m, t.retryUntilDocumentChanges = async function(e, n, i, r) {
+                    const s = m(e, i);
                     let o = !1;
                     const a = await Promise.race([s, (async () => {
                         for (let e = 0; e < n.retries; ++e) {
                             if (await (0, t.wait)(n.timeout), o) return;
-                            await i()
+                            await r()
                         }
                     })()]);
                     return o = !0, a
@@ -13851,18 +13889,18 @@
                     u = n(6928),
                     d = o(n(1398));
 
-                function h() {
+                function p() {
                     let e = "";
                     for (let t = 0; t < 10; t++) e += "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".charAt(Math.floor(62 * Math.random()));
                     return e
                 }
 
-                function p(e = "", t = "txt") {
-                    return new Promise((n, r) => {
-                        const i = (0, u.join)(l.tmpdir(), h() + "." + t);
-                        c.writeFile(i, e, e => {
-                            if (e) return r(e);
-                            n(d.Uri.file(i))
+                function h(e = "", t = "txt") {
+                    return new Promise((n, i) => {
+                        const r = (0, u.join)(l.tmpdir(), p() + "." + t);
+                        c.writeFile(r, e, e => {
+                            if (e) return i(e);
+                            n(d.Uri.file(r))
                         })
                     })
                 }
@@ -13876,8 +13914,8 @@
                 }
                 async function g(e, t) {
                     const n = {},
-                        r = d.workspace.getConfiguration(void 0, e);
-                    for (const e of Object.keys(t)) n[e] = r.get(e), await new Promise((n, i) => r.update(e, t[e], d.ConfigurationTarget.Global).then(() => n(), i));
+                        i = d.workspace.getConfiguration(void 0, e);
+                    for (const e of Object.keys(t)) n[e] = i.get(e), await new Promise((n, r) => i.update(e, t[e], d.ConfigurationTarget.Global).then(() => n(), r));
                     return n
                 }
 
@@ -13899,19 +13937,19 @@
             8799: (e, t, n) => {
                 "use strict";
 
-                function r(e) {
+                function i(e) {
                     var t = this;
-                    if (t instanceof r || (t = new r), t.tail = null, t.head = null, t.length = 0, e && "function" == typeof e.forEach) e.forEach(function(e) {
+                    if (t instanceof i || (t = new i), t.tail = null, t.head = null, t.length = 0, e && "function" == typeof e.forEach) e.forEach(function(e) {
                         t.push(e)
                     });
                     else if (arguments.length > 0)
-                        for (var n = 0, i = arguments.length; n < i; n++) t.push(arguments[n]);
+                        for (var n = 0, r = arguments.length; n < r; n++) t.push(arguments[n]);
                     return t
                 }
 
-                function i(e, t, n) {
-                    var r = t === e.head ? new a(n, null, t, e) : new a(n, t, t.next, e);
-                    return null === r.next && (e.tail = r), null === r.prev && (e.head = r), e.length++, r
+                function r(e, t, n) {
+                    var i = t === e.head ? new a(n, null, t, e) : new a(n, t, t.next, e);
+                    return null === i.next && (e.tail = i), null === i.prev && (e.head = i), e.length++, i
                 }
 
                 function s(e, t) {
@@ -13922,132 +13960,132 @@
                     e.head = new a(t, null, e.head, e), e.tail || (e.tail = e.head), e.length++
                 }
 
-                function a(e, t, n, r) {
-                    if (!(this instanceof a)) return new a(e, t, n, r);
-                    this.list = r, this.value = e, t ? (t.next = this, this.prev = t) : this.prev = null, n ? (n.prev = this, this.next = n) : this.next = null
+                function a(e, t, n, i) {
+                    if (!(this instanceof a)) return new a(e, t, n, i);
+                    this.list = i, this.value = e, t ? (t.next = this, this.prev = t) : this.prev = null, n ? (n.prev = this, this.next = n) : this.next = null
                 }
-                e.exports = r, r.Node = a, r.create = r, r.prototype.removeNode = function(e) {
+                e.exports = i, i.Node = a, i.create = i, i.prototype.removeNode = function(e) {
                     if (e.list !== this) throw new Error("removing node which does not belong to this list");
                     var t = e.next,
                         n = e.prev;
                     return t && (t.prev = n), n && (n.next = t), e === this.head && (this.head = t), e === this.tail && (this.tail = n), e.list.length--, e.next = null, e.prev = null, e.list = null, t
-                }, r.prototype.unshiftNode = function(e) {
+                }, i.prototype.unshiftNode = function(e) {
                     if (e !== this.head) {
                         e.list && e.list.removeNode(e);
                         var t = this.head;
                         e.list = this, e.next = t, t && (t.prev = e), this.head = e, this.tail || (this.tail = e), this.length++
                     }
-                }, r.prototype.pushNode = function(e) {
+                }, i.prototype.pushNode = function(e) {
                     if (e !== this.tail) {
                         e.list && e.list.removeNode(e);
                         var t = this.tail;
                         e.list = this, e.prev = t, t && (t.next = e), this.tail = e, this.head || (this.head = e), this.length++
                     }
-                }, r.prototype.push = function() {
+                }, i.prototype.push = function() {
                     for (var e = 0, t = arguments.length; e < t; e++) s(this, arguments[e]);
                     return this.length
-                }, r.prototype.unshift = function() {
+                }, i.prototype.unshift = function() {
                     for (var e = 0, t = arguments.length; e < t; e++) o(this, arguments[e]);
                     return this.length
-                }, r.prototype.pop = function() {
+                }, i.prototype.pop = function() {
                     if (this.tail) {
                         var e = this.tail.value;
                         return this.tail = this.tail.prev, this.tail ? this.tail.next = null : this.head = null, this.length--, e
                     }
-                }, r.prototype.shift = function() {
+                }, i.prototype.shift = function() {
                     if (this.head) {
                         var e = this.head.value;
                         return this.head = this.head.next, this.head ? this.head.prev = null : this.tail = null, this.length--, e
                     }
-                }, r.prototype.forEach = function(e, t) {
+                }, i.prototype.forEach = function(e, t) {
                     t = t || this;
-                    for (var n = this.head, r = 0; null !== n; r++) e.call(t, n.value, r, this), n = n.next
-                }, r.prototype.forEachReverse = function(e, t) {
+                    for (var n = this.head, i = 0; null !== n; i++) e.call(t, n.value, i, this), n = n.next
+                }, i.prototype.forEachReverse = function(e, t) {
                     t = t || this;
-                    for (var n = this.tail, r = this.length - 1; null !== n; r--) e.call(t, n.value, r, this), n = n.prev
-                }, r.prototype.get = function(e) {
+                    for (var n = this.tail, i = this.length - 1; null !== n; i--) e.call(t, n.value, i, this), n = n.prev
+                }, i.prototype.get = function(e) {
                     for (var t = 0, n = this.head; null !== n && t < e; t++) n = n.next;
                     if (t === e && null !== n) return n.value
-                }, r.prototype.getReverse = function(e) {
+                }, i.prototype.getReverse = function(e) {
                     for (var t = 0, n = this.tail; null !== n && t < e; t++) n = n.prev;
                     if (t === e && null !== n) return n.value
-                }, r.prototype.map = function(e, t) {
+                }, i.prototype.map = function(e, t) {
                     t = t || this;
-                    for (var n = new r, i = this.head; null !== i;) n.push(e.call(t, i.value, this)), i = i.next;
+                    for (var n = new i, r = this.head; null !== r;) n.push(e.call(t, r.value, this)), r = r.next;
                     return n
-                }, r.prototype.mapReverse = function(e, t) {
+                }, i.prototype.mapReverse = function(e, t) {
                     t = t || this;
-                    for (var n = new r, i = this.tail; null !== i;) n.push(e.call(t, i.value, this)), i = i.prev;
+                    for (var n = new i, r = this.tail; null !== r;) n.push(e.call(t, r.value, this)), r = r.prev;
                     return n
-                }, r.prototype.reduce = function(e, t) {
-                    var n, r = this.head;
+                }, i.prototype.reduce = function(e, t) {
+                    var n, i = this.head;
                     if (arguments.length > 1) n = t;
                     else {
                         if (!this.head) throw new TypeError("Reduce of empty list with no initial value");
-                        r = this.head.next, n = this.head.value
+                        i = this.head.next, n = this.head.value
                     }
-                    for (var i = 0; null !== r; i++) n = e(n, r.value, i), r = r.next;
+                    for (var r = 0; null !== i; r++) n = e(n, i.value, r), i = i.next;
                     return n
-                }, r.prototype.reduceReverse = function(e, t) {
-                    var n, r = this.tail;
+                }, i.prototype.reduceReverse = function(e, t) {
+                    var n, i = this.tail;
                     if (arguments.length > 1) n = t;
                     else {
                         if (!this.tail) throw new TypeError("Reduce of empty list with no initial value");
-                        r = this.tail.prev, n = this.tail.value
+                        i = this.tail.prev, n = this.tail.value
                     }
-                    for (var i = this.length - 1; null !== r; i--) n = e(n, r.value, i), r = r.prev;
+                    for (var r = this.length - 1; null !== i; r--) n = e(n, i.value, r), i = i.prev;
                     return n
-                }, r.prototype.toArray = function() {
+                }, i.prototype.toArray = function() {
                     for (var e = new Array(this.length), t = 0, n = this.head; null !== n; t++) e[t] = n.value, n = n.next;
                     return e
-                }, r.prototype.toArrayReverse = function() {
+                }, i.prototype.toArrayReverse = function() {
                     for (var e = new Array(this.length), t = 0, n = this.tail; null !== n; t++) e[t] = n.value, n = n.prev;
                     return e
-                }, r.prototype.slice = function(e, t) {
+                }, i.prototype.slice = function(e, t) {
                     (t = t || this.length) < 0 && (t += this.length), (e = e || 0) < 0 && (e += this.length);
-                    var n = new r;
+                    var n = new i;
                     if (t < e || t < 0) return n;
                     e < 0 && (e = 0), t > this.length && (t = this.length);
-                    for (var i = 0, s = this.head; null !== s && i < e; i++) s = s.next;
-                    for (; null !== s && i < t; i++, s = s.next) n.push(s.value);
-                    return n
-                }, r.prototype.sliceReverse = function(e, t) {
-                    (t = t || this.length) < 0 && (t += this.length), (e = e || 0) < 0 && (e += this.length);
-                    var n = new r;
-                    if (t < e || t < 0) return n;
-                    e < 0 && (e = 0), t > this.length && (t = this.length);
-                    for (var i = this.length, s = this.tail; null !== s && i > t; i--) s = s.prev;
-                    for (; null !== s && i > e; i--, s = s.prev) n.push(s.value);
-                    return n
-                }, r.prototype.splice = function(e, t, ...n) {
-                    e > this.length && (e = this.length - 1), e < 0 && (e = this.length + e);
                     for (var r = 0, s = this.head; null !== s && r < e; r++) s = s.next;
+                    for (; null !== s && r < t; r++, s = s.next) n.push(s.value);
+                    return n
+                }, i.prototype.sliceReverse = function(e, t) {
+                    (t = t || this.length) < 0 && (t += this.length), (e = e || 0) < 0 && (e += this.length);
+                    var n = new i;
+                    if (t < e || t < 0) return n;
+                    e < 0 && (e = 0), t > this.length && (t = this.length);
+                    for (var r = this.length, s = this.tail; null !== s && r > t; r--) s = s.prev;
+                    for (; null !== s && r > e; r--, s = s.prev) n.push(s.value);
+                    return n
+                }, i.prototype.splice = function(e, t, ...n) {
+                    e > this.length && (e = this.length - 1), e < 0 && (e = this.length + e);
+                    for (var i = 0, s = this.head; null !== s && i < e; i++) s = s.next;
                     var o = [];
-                    for (r = 0; s && r < t; r++) o.push(s.value), s = this.removeNode(s);
-                    for (null === s && (s = this.tail), s !== this.head && s !== this.tail && (s = s.prev), r = 0; r < n.length; r++) s = i(this, s, n[r]);
+                    for (i = 0; s && i < t; i++) o.push(s.value), s = this.removeNode(s);
+                    for (null === s && (s = this.tail), s !== this.head && s !== this.tail && (s = s.prev), i = 0; i < n.length; i++) s = r(this, s, n[i]);
                     return o
-                }, r.prototype.reverse = function() {
+                }, i.prototype.reverse = function() {
                     for (var e = this.head, t = this.tail, n = e; null !== n; n = n.prev) {
-                        var r = n.prev;
-                        n.prev = n.next, n.next = r
+                        var i = n.prev;
+                        n.prev = n.next, n.next = i
                     }
                     return this.head = t, this.tail = e, this
                 };
                 try {
-                    n(259)(r)
+                    n(259)(i)
                 } catch (e) {}
             },
             9033: (e, t, n) => {
                 "use strict";
-                const r = n(857),
-                    i = n(440),
+                const i = n(857),
+                    r = n(440),
                     s = n(4705);
 
                 function o(e) {
                     const t = e.substring(0, 4),
                         n = e.substring(4, 6),
-                        r = e.substring(6, 8),
-                        i = e.substring(8, 10),
+                        i = e.substring(6, 8),
+                        r = e.substring(8, 10),
                         s = e.substring(10, 12),
                         o = e.substring(12, 14),
                         a = e.substring(15, 21),
@@ -14055,39 +14093,39 @@
                         l = parseInt(e.substring(22, 25), 10),
                         u = Math.floor(l / 60),
                         d = l % 60;
-                    return new Date(t + "-" + n + "-" + r + "T" + i + ":" + s + ":" + o + "." + a + c + (u > 9 ? u : "0" + u) + (d > 9 ? d : "0" + d))
+                    return new Date(t + "-" + n + "-" + i + "T" + r + ":" + s + ":" + o + "." + a + c + (u > 9 ? u : "0" + u) + (d > 9 ? d : "0" + d))
                 }
                 e.exports = function e(t, n, a) {
                     let c = "ProcessId=" + t[0];
                     for (let e = 1; e < t.length; e++) c += " or ProcessId=" + t[e];
-                    i("wmic", ["PROCESS", "where", '"' + c + '"', "get", "CreationDate,KernelModeTime,ParentProcessId,ProcessId,UserModeTime,WorkingSetSize"], {
+                    r("wmic", ["PROCESS", "where", '"' + c + '"', "get", "CreationDate,KernelModeTime,ParentProcessId,ProcessId,UserModeTime,WorkingSetSize"], {
                         windowsHide: !0,
                         windowsVerbatimArguments: !0
-                    }, function(i, c, l) {
-                        if (i) {
-                            if (-1 !== i.message.indexOf("No Instance(s) Available.")) {
+                    }, function(r, c, l) {
+                        if (r) {
+                            if (-1 !== r.message.indexOf("No Instance(s) Available.")) {
                                 const e = new Error("No matching pid found");
                                 return e.code = "ENOENT", a(e)
                             }
-                            return a(i)
+                            return a(r)
                         }
                         if (0 !== l) return a(new Error("pidusage wmic command exited with code " + l));
                         const u = Date.now(),
-                            d = Math.floor(r.uptime() || u / 1e3);
-                        c = c.split(r.EOL);
-                        let h = !1;
-                        const p = {};
+                            d = Math.floor(i.uptime() || u / 1e3);
+                        c = c.split(i.EOL);
+                        let p = !1;
+                        const h = {};
                         for (let e = 1; e < c.length; e++) {
                             const t = c[e].trim().split(/\s+/);
                             if (!t || 6 !== t.length) continue;
-                            const r = o(t[0]),
-                                i = parseInt(t[2], 10),
+                            const i = o(t[0]),
+                                r = parseInt(t[2], 10),
                                 a = parseInt(t[3], 10),
                                 l = Math.round(parseInt(t[1], 10) / 1e4),
                                 f = Math.round(parseInt(t[4], 10) / 1e4),
                                 g = parseInt(t[5], 10);
                             let m = s.get(a, n.maxage);
-                            void 0 === m && (h = !0, m = {
+                            void 0 === m && (p = !0, m = {
                                 ctime: l + f,
                                 uptime: d
                             });
@@ -14097,37 +14135,37 @@
                             s.set(a, {
                                 ctime: f + l,
                                 uptime: d
-                            }, n.maxage), p[a] = {
+                            }, n.maxage), h[a] = {
                                 cpu: b,
                                 memory: g,
-                                ppid: i,
+                                ppid: r,
                                 pid: a,
                                 ctime: f + l,
-                                elapsed: u - r.getTime(),
+                                elapsed: u - i.getTime(),
                                 timestamp: u
                             }
                         }
-                        if (h) return e(t, n, function(e, t) {
+                        if (p) return e(t, n, function(e, t) {
                             if (e) return a(e);
-                            a(null, Object.assign(p, t))
+                            a(null, Object.assign(h, t))
                         });
-                        a(null, p)
+                        a(null, h)
                     })
                 }
             },
             9181: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -14137,54 +14175,54 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.register = function(e, t, n) {
-                    return (0, l.conditionalRegistration)([(0, l.requireSomeCapability)(t, c.ClientCapability.EnhancedSyntax, c.ClientCapability.Semantic)], () => a.languages.registerHoverProvider(e.syntax, new h(t, n)))
+                    return (0, l.conditionalRegistration)([(0, l.requireSomeCapability)(t, c.ClientCapability.EnhancedSyntax, c.ClientCapability.Semantic)], () => a.languages.registerHoverProvider(e.syntax, new p(t, n)))
                 };
                 const a = o(n(1398)),
                     c = n(7371),
                     l = n(6362),
                     u = n(5365),
                     d = o(n(2144));
-                class h {
+                class p {
                     constructor(e, t) {
                         this.client = e, this.fileConfigurationManager = t
                     }
                     async provideHover(e, t, n) {
-                        const r = this.client.toOpenTsFilePath(e);
-                        if (!r) return;
-                        const i = await this.client.interruptGetErr(async () => {
+                        const i = this.client.toOpenTsFilePath(e);
+                        if (!i) return;
+                        const r = await this.client.interruptGetErr(async () => {
                             await this.fileConfigurationManager.ensureConfigurationForDocument(e, n);
-                            const i = d.Position.toFileLocationRequestArgs(r, t);
-                            return this.client.execute("quickinfo", i, n)
+                            const r = d.Position.toFileLocationRequestArgs(i, t);
+                            return this.client.execute("quickinfo", r, n)
                         });
-                        return "response" === i.type && i.body ? new a.Hover(this.getContents(e.uri, i.body, i._serverType), d.Range.fromTextSpan(i.body)) : void 0
+                        return "response" === r.type && r.body ? new a.Hover(this.getContents(e.uri, r.body, r._serverType), d.Range.fromTextSpan(r.body)) : void 0
                     }
                     getContents(e, t, n) {
-                        const r = [];
+                        const i = [];
                         if (t.displayString) {
-                            const i = [];
-                            n === c.ServerType.Syntax && this.client.hasCapabilityForResource(e, c.ClientCapability.Semantic) && i.push(a.l10n.t({
+                            const r = [];
+                            n === c.ServerType.Syntax && this.client.hasCapabilityForResource(e, c.ClientCapability.Semantic) && r.push(a.l10n.t({
                                 message: "(loading...)",
                                 comment: ["Prefix displayed for hover entries while the server is still loading"]
-                            })), i.push(t.displayString), r.push((new a.MarkdownString).appendCodeblock(i.join(" "), "typescript"))
+                            })), r.push(t.displayString), i.push((new a.MarkdownString).appendCodeblock(r.join(" "), "typescript"))
                         }
-                        const i = (0, u.documentationToMarkdown)(t.documentation, t.tags, this.client, e);
-                        return r.push(i), r
+                        const r = (0, u.documentationToMarkdown)(t.documentation, t.tags, this.client, e);
+                        return i.push(r), i
                     }
                 }
             },
@@ -14194,8 +14232,8 @@
                     value: !0
                 }), t.getExtensionApi = function(e, t) {
                     return {
-                        getAPI(r) {
-                            if (0 === r) return new n(e, t)
+                        getAPI(i) {
+                            if (0 === i) return new n(e, t)
                         }
                     }
                 };
@@ -14210,17 +14248,17 @@
             },
             9334: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -14230,17 +14268,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -14307,17 +14345,17 @@
             },
             9401: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -14327,17 +14365,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
@@ -14365,8 +14403,8 @@
                 }
             },
             9589: (e, t, n) => {
-                const r = n(9718),
-                    i = n(6874),
+                const i = n(9718),
+                    r = n(6874),
                     s = n(3908),
                     o = n(1123),
                     a = n(144),
@@ -14374,8 +14412,8 @@
                     l = n(7414),
                     u = n(3007),
                     d = n(1832),
-                    h = n(2938),
-                    p = n(6254),
+                    p = n(2938),
+                    h = n(6254),
                     f = n(4493),
                     g = n(1729),
                     m = n(560),
@@ -14394,8 +14432,8 @@
                     E = n(6170),
                     k = n(3904),
                     D = n(8311),
-                    M = n(7638),
-                    R = n(7631),
+                    R = n(7638),
+                    M = n(7631),
                     I = n(9628),
                     A = n(270),
                     F = n(1261),
@@ -14403,17 +14441,17 @@
                     L = n(7075),
                     V = n(5571),
                     $ = n(5342),
-                    W = n(6780),
-                    q = n(2525),
-                    K = n(5032);
+                    K = n(6780),
+                    W = n(2525),
+                    q = n(5032);
                 e.exports = {
                     parse: a,
                     valid: c,
                     clean: l,
                     inc: u,
                     diff: d,
-                    major: h,
-                    minor: p,
+                    major: p,
+                    minor: h,
                     patch: f,
                     prerelease: g,
                     compare: m,
@@ -14432,8 +14470,8 @@
                     coerce: E,
                     Comparator: k,
                     Range: D,
-                    satisfies: M,
-                    toComparators: R,
+                    satisfies: R,
+                    toComparators: M,
                     maxSatisfying: I,
                     minSatisfying: A,
                     minVersion: F,
@@ -14441,49 +14479,49 @@
                     outside: L,
                     gtr: V,
                     ltr: $,
-                    intersects: W,
-                    simplifyRange: q,
-                    subset: K,
+                    intersects: K,
+                    simplifyRange: W,
+                    subset: q,
                     SemVer: s,
-                    re: r.re,
-                    src: r.src,
-                    tokens: r.t,
-                    SEMVER_SPEC_VERSION: i.SEMVER_SPEC_VERSION,
-                    RELEASE_TYPES: i.RELEASE_TYPES,
+                    re: i.re,
+                    src: i.src,
+                    tokens: i.t,
+                    SEMVER_SPEC_VERSION: r.SEMVER_SPEC_VERSION,
+                    RELEASE_TYPES: r.RELEASE_TYPES,
                     compareIdentifiers: o.compareIdentifiers,
                     rcompareIdentifiers: o.rcompareIdentifiers
                 }
             },
             9628: (e, t, n) => {
-                const r = n(3908),
-                    i = n(8311);
+                const i = n(3908),
+                    r = n(8311);
                 e.exports = (e, t, n) => {
                     let s = null,
                         o = null,
                         a = null;
                     try {
-                        a = new i(t, n)
+                        a = new r(t, n)
                     } catch (e) {
                         return null
                     }
                     return e.forEach(e => {
-                        a.test(e) && (s && -1 !== o.compare(e) || (s = e, o = new r(s, n)))
+                        a.test(e) && (s && -1 !== o.compare(e) || (s = e, o = new i(s, n)))
                     }), s
                 }
             },
             9698: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -14493,17 +14531,17 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     }),
                     a = this && this.__importDefault || function(e) {
@@ -14515,44 +14553,45 @@
                     value: !0
                 });
                 const c = o(n(1398)),
-                    l = a(n(1068)),
-                    u = a(n(7098)),
-                    d = n(2693),
+                    l = n(4760),
+                    u = a(n(1068)),
+                    d = a(n(7098)),
+                    p = n(2693),
                     h = o(n(201)),
-                    p = o(n(1788)),
-                    f = o(n(2144)),
-                    g = a(n(136)),
-                    m = n(1119),
-                    v = o(n(5544)),
-                    y = o(n(9334)),
-                    b = n(4902),
-                    w = n(3489),
-                    _ = n(5602),
-                    S = new Set([...h.variableDeclaredButNeverUsed, ...h.propertyDeclaretedButNeverUsed, ...h.allImportsAreUnused, ...h.unreachableCode, ...h.unusedLabel, ...h.fallThroughCaseInSwitch, ...h.notAllCodePathsReturnAValue]);
-                class P extends _.Disposable {
-                    constructor(e, t, r, i, s) {
-                        super(), this.languages = [], this.languagePerId = new Map, this.reportStyleCheckAsWarnings = !0, this.commandManager = i.commandManager;
-                        const a = this.getAllModeIds(e, i.pluginManager);
-                        this.client = this._register(new g.default(t, r, i, a)), this.client.onDiagnosticsReceived(({
+                    f = o(n(1788)),
+                    g = o(n(2144)),
+                    m = a(n(136)),
+                    v = n(1119),
+                    y = o(n(5544)),
+                    b = o(n(9334)),
+                    w = n(4902),
+                    _ = n(3489),
+                    S = n(5602),
+                    P = new Set([...h.variableDeclaredButNeverUsed, ...h.propertyDeclaretedButNeverUsed, ...h.allImportsAreUnused, ...h.unreachableCode, ...h.unusedLabel, ...h.fallThroughCaseInSwitch, ...h.notAllCodePathsReturnAValue]);
+                class C extends S.Disposable {
+                    constructor(e, t, i, r, s) {
+                        super(), this.languages = [], this.languagePerId = new Map, this.reportStyleCheckAsWarnings = !0, this.commandManager = r.commandManager;
+                        const a = this.getAllModeIds(e, r.pluginManager);
+                        this.client = this._register(new m.default(t, i, r, a)), this.client.onDiagnosticsReceived(({
                             kind: e,
                             resource: t,
                             diagnostics: n,
-                            spans: r
+                            spans: i
                         }) => {
-                            this.diagnosticsReceived(e, t, n, r)
-                        }, null, this._disposables), this.client.onConfigDiagnosticsReceived(e => this.configFileDiagnosticsReceived(e), null, this._disposables), this.client.onResendModelsRequested(() => this.populateService(), null, this._disposables), this._register(new b.VersionStatus(this.client)), this._register(new m.IntellisenseStatus(this.client, i.commandManager, i.activeJsTsEditorTracker)), this._register(new y.AtaProgressReporter(this.client)), this.typingsStatus = this._register(new y.default(this.client)), this._register(v.create(this.client)), this.fileConfigurationManager = this._register(new l.default(this.client, r));
+                            this.diagnosticsReceived(e, t, n, i)
+                        }, null, this._disposables), this.client.onConfigDiagnosticsReceived(e => this.configFileDiagnosticsReceived(e), null, this._disposables), this.client.onResendModelsRequested(() => this.populateService(), null, this._disposables), this._register(new w.VersionStatus(this.client)), this._register(new v.IntellisenseStatus(this.client, r.commandManager, r.activeJsTsEditorTracker)), this._register(new b.AtaProgressReporter(this.client)), this.typingsStatus = this._register(new b.default(this.client)), this._register(y.create(this.client)), this.fileConfigurationManager = this._register(new u.default(this.client, i));
                         for (const t of e) {
-                            const e = new u.default(this.client, t, this.commandManager, this.client.telemetryReporter, this.typingsStatus, this.fileConfigurationManager, s);
+                            const e = new d.default(this.client, t, this.commandManager, this.client.telemetryReporter, this.typingsStatus, this.fileConfigurationManager, s);
                             this.languages.push(e), this._register(e), this.languagePerId.set(t.id, e)
                         }
                         Promise.resolve().then(() => o(n(539))).then(e => this._register(e.register(this.client, this.fileConfigurationManager, e => this.handles(e)))), Promise.resolve().then(() => o(n(2361))).then(e => this._register(e.register(this.client, a))), this.client.ensureServiceStarted(), this.client.onReady(() => {
                             const e = new Set;
-                            for (const t of i.pluginManager.plugins)
+                            for (const t of r.pluginManager.plugins)
                                 if (t.configNamespace && t.languages.length) this.registerExtensionLanguageProvider({
                                     id: t.configNamespace,
                                     languageIds: Array.from(t.languages),
                                     diagnosticSource: "ts-plugin",
-                                    diagnosticLanguage: 1,
+                                    diagnosticLanguage: l.DiagnosticLanguage.TypeScript,
                                     diagnosticOwner: "typescript",
                                     isExternal: !0,
                                     standardFileExtensions: []
@@ -14563,17 +14602,17 @@
                                 id: "typescript-plugins",
                                 languageIds: Array.from(e.values()),
                                 diagnosticSource: "ts-plugin",
-                                diagnosticLanguage: 1,
+                                diagnosticLanguage: l.DiagnosticLanguage.TypeScript,
                                 diagnosticOwner: "typescript",
                                 isExternal: !0,
                                 standardFileExtensions: []
                             }, s)
                         }), this.client.onTsServerStarted(() => {
                             this.triggerAllDiagnostics()
-                        }), c.workspace.onDidChangeConfiguration(this.configurationChanged, this, this._disposables), this.configurationChanged(), this._register(new d.LogLevelMonitor(t))
+                        }), c.workspace.onDidChangeConfiguration(this.configurationChanged, this, this._disposables), this.configurationChanged(), this._register(new p.LogLevelMonitor(t))
                     }
                     registerExtensionLanguageProvider(e, t) {
-                        const n = new u.default(this.client, e, this.commandManager, this.client.telemetryReporter, this.typingsStatus, this.fileConfigurationManager, t);
+                        const n = new d.default(this.client, e, this.commandManager, this.client.telemetryReporter, this.typingsStatus, this.fileConfigurationManager, t);
                         this.languages.push(n), this._register(n), this.languagePerId.set(e.id, n)
                     }
                     getAllModeIds(e, t) {
@@ -14609,17 +14648,17 @@
                         this.fileConfigurationManager.reset();
                         for (const e of this.languagePerId.values()) e.reInitialize()
                     }
-                    async diagnosticsReceived(e, t, n, r) {
-                        const i = await this.findLanguage(t);
-                        i && i.diagnosticsReceived(e, t, this.createMarkerDatas(n, i.diagnosticSource), r?.map(e => f.Range.fromTextSpan(e)))
+                    async diagnosticsReceived(e, t, n, i) {
+                        const r = await this.findLanguage(t);
+                        r && r.diagnosticsReceived(e, t, this.createMarkerDatas(n, r.diagnosticSource), i?.map(e => g.Range.fromTextSpan(e)))
                     }
                     configFileDiagnosticsReceived(e) {
                         const t = e.body;
                         t?.diagnostics && t.configFile && this.findLanguage(this.client.toResource(t.configFile)).then(e => {
                             e?.configFileDiagnosticsReceived(this.client.toResource(t.configFile), t.diagnostics.map(t => {
-                                const n = t.start && t.end ? f.Range.fromTextSpan(t) : new c.Range(0, 0, 0, 1),
-                                    r = new c.Diagnostic(n, t.text, this.getDiagnosticSeverity(t));
-                                return r.source = e.diagnosticSource, r
+                                const n = t.start && t.end ? g.Range.fromTextSpan(t) : new c.Range(0, 0, 0, 1),
+                                    i = new c.Diagnostic(n, t.text, this.getDiagnosticSeverity(t));
+                                return i.source = e.diagnosticSource, i
                             }))
                         })
                     }
@@ -14629,14 +14668,14 @@
                     tsDiagnosticToVsDiagnostic(e, t) {
                         const {
                             start: n,
-                            end: r,
-                            text: i
-                        } = e, s = new c.Range(f.Position.fromLocation(n), f.Position.fromLocation(r)), o = new c.Diagnostic(s, i, this.getDiagnosticSeverity(e));
+                            end: i,
+                            text: r
+                        } = e, s = new c.Range(g.Position.fromLocation(n), g.Position.fromLocation(i)), o = new c.Diagnostic(s, r, this.getDiagnosticSeverity(e));
                         o.source = e.source || t, e.code && (o.code = e.code);
                         const a = e.relatedInformation;
-                        a && (o.relatedInformation = (0, w.coalesce)(a.map(e => {
+                        a && (o.relatedInformation = (0, _.coalesce)(a.map(e => {
                             const t = e.span;
-                            if (t) return new c.DiagnosticRelatedInformation(f.Location.fromTextSpan(this.client.toResource(t.file), t), e.message)
+                            if (t) return new c.DiagnosticRelatedInformation(g.Location.fromTextSpan(this.client.toResource(t.file), t), e.message)
                         })));
                         const l = [];
                         e.reportsUnnecessary && l.push(c.DiagnosticTag.Unnecessary), e.reportsDeprecated && l.push(c.DiagnosticTag.Deprecated), o.tags = l.length ? l : void 0;
@@ -14644,40 +14683,40 @@
                         return u.reportUnnecessary = e.reportsUnnecessary, u.reportDeprecated = e.reportsDeprecated, u
                     }
                     getDiagnosticSeverity(e) {
-                        if (this.reportStyleCheckAsWarnings && this.isStyleCheckDiagnostic(e.code) && e.category === p.DiagnosticCategory.error) return c.DiagnosticSeverity.Warning;
+                        if (this.reportStyleCheckAsWarnings && this.isStyleCheckDiagnostic(e.code) && e.category === f.DiagnosticCategory.error) return c.DiagnosticSeverity.Warning;
                         switch (e.category) {
-                            case p.DiagnosticCategory.error:
+                            case f.DiagnosticCategory.error:
                                 return c.DiagnosticSeverity.Error;
-                            case p.DiagnosticCategory.warning:
+                            case f.DiagnosticCategory.warning:
                                 return c.DiagnosticSeverity.Warning;
-                            case p.DiagnosticCategory.suggestion:
+                            case f.DiagnosticCategory.suggestion:
                                 return c.DiagnosticSeverity.Hint;
                             default:
                                 return c.DiagnosticSeverity.Error
                         }
                     }
                     isStyleCheckDiagnostic(e) {
-                        return "number" == typeof e && S.has(e)
+                        return "number" == typeof e && P.has(e)
                     }
                 }
-                t.default = P
+                t.default = C
             },
             9718: (e, t, n) => {
                 const {
-                    MAX_SAFE_COMPONENT_LENGTH: r
-                } = n(6874), i = n(7272), s = (t = e.exports = {}).re = [], o = t.safeRe = [], a = t.src = [], c = t.t = {};
+                    MAX_SAFE_COMPONENT_LENGTH: i
+                } = n(6874), r = n(7272), s = (t = e.exports = {}).re = [], o = t.safeRe = [], a = t.src = [], c = t.t = {};
                 let l = 0;
                 const u = (e, t, n) => {
-                    const r = t.split("\\s*").join("\\s{0,1}").split("\\s+").join("\\s"),
+                    const i = t.split("\\s*").join("\\s{0,1}").split("\\s+").join("\\s"),
                         u = l++;
-                    i(e, u, t), c[e] = u, a[u] = t, s[u] = new RegExp(t, n ? "g" : void 0), o[u] = new RegExp(r, n ? "g" : void 0)
+                    r(e, u, t), c[e] = u, a[u] = t, s[u] = new RegExp(t, n ? "g" : void 0), o[u] = new RegExp(i, n ? "g" : void 0)
                 };
-                u("NUMERICIDENTIFIER", "0|[1-9]\\d*"), u("NUMERICIDENTIFIERLOOSE", "[0-9]+"), u("NONNUMERICIDENTIFIER", "\\d*[a-zA-Z-][a-zA-Z0-9-]*"), u("MAINVERSION", `(${a[c.NUMERICIDENTIFIER]})\\.(${a[c.NUMERICIDENTIFIER]})\\.(${a[c.NUMERICIDENTIFIER]})`), u("MAINVERSIONLOOSE", `(${a[c.NUMERICIDENTIFIERLOOSE]})\\.(${a[c.NUMERICIDENTIFIERLOOSE]})\\.(${a[c.NUMERICIDENTIFIERLOOSE]})`), u("PRERELEASEIDENTIFIER", `(?:${a[c.NUMERICIDENTIFIER]}|${a[c.NONNUMERICIDENTIFIER]})`), u("PRERELEASEIDENTIFIERLOOSE", `(?:${a[c.NUMERICIDENTIFIERLOOSE]}|${a[c.NONNUMERICIDENTIFIER]})`), u("PRERELEASE", `(?:-(${a[c.PRERELEASEIDENTIFIER]}(?:\\.${a[c.PRERELEASEIDENTIFIER]})*))`), u("PRERELEASELOOSE", `(?:-?(${a[c.PRERELEASEIDENTIFIERLOOSE]}(?:\\.${a[c.PRERELEASEIDENTIFIERLOOSE]})*))`), u("BUILDIDENTIFIER", "[0-9A-Za-z-]+"), u("BUILD", `(?:\\+(${a[c.BUILDIDENTIFIER]}(?:\\.${a[c.BUILDIDENTIFIER]})*))`), u("FULLPLAIN", `v?${a[c.MAINVERSION]}${a[c.PRERELEASE]}?${a[c.BUILD]}?`), u("FULL", `^${a[c.FULLPLAIN]}$`), u("LOOSEPLAIN", `[v=\\s]*${a[c.MAINVERSIONLOOSE]}${a[c.PRERELEASELOOSE]}?${a[c.BUILD]}?`), u("LOOSE", `^${a[c.LOOSEPLAIN]}$`), u("GTLT", "((?:<|>)?=?)"), u("XRANGEIDENTIFIERLOOSE", `${a[c.NUMERICIDENTIFIERLOOSE]}|x|X|\\*`), u("XRANGEIDENTIFIER", `${a[c.NUMERICIDENTIFIER]}|x|X|\\*`), u("XRANGEPLAIN", `[v=\\s]*(${a[c.XRANGEIDENTIFIER]})(?:\\.(${a[c.XRANGEIDENTIFIER]})(?:\\.(${a[c.XRANGEIDENTIFIER]})(?:${a[c.PRERELEASE]})?${a[c.BUILD]}?)?)?`), u("XRANGEPLAINLOOSE", `[v=\\s]*(${a[c.XRANGEIDENTIFIERLOOSE]})(?:\\.(${a[c.XRANGEIDENTIFIERLOOSE]})(?:\\.(${a[c.XRANGEIDENTIFIERLOOSE]})(?:${a[c.PRERELEASELOOSE]})?${a[c.BUILD]}?)?)?`), u("XRANGE", `^${a[c.GTLT]}\\s*${a[c.XRANGEPLAIN]}$`), u("XRANGELOOSE", `^${a[c.GTLT]}\\s*${a[c.XRANGEPLAINLOOSE]}$`), u("COERCE", `(^|[^\\d])(\\d{1,${r}})(?:\\.(\\d{1,${r}}))?(?:\\.(\\d{1,${r}}))?(?:$|[^\\d])`), u("COERCERTL", a[c.COERCE], !0), u("LONETILDE", "(?:~>?)"), u("TILDETRIM", `(\\s*)${a[c.LONETILDE]}\\s+`, !0), t.tildeTrimReplace = "$1~", u("TILDE", `^${a[c.LONETILDE]}${a[c.XRANGEPLAIN]}$`), u("TILDELOOSE", `^${a[c.LONETILDE]}${a[c.XRANGEPLAINLOOSE]}$`), u("LONECARET", "(?:\\^)"), u("CARETTRIM", `(\\s*)${a[c.LONECARET]}\\s+`, !0), t.caretTrimReplace = "$1^", u("CARET", `^${a[c.LONECARET]}${a[c.XRANGEPLAIN]}$`), u("CARETLOOSE", `^${a[c.LONECARET]}${a[c.XRANGEPLAINLOOSE]}$`), u("COMPARATORLOOSE", `^${a[c.GTLT]}\\s*(${a[c.LOOSEPLAIN]})$|^$`), u("COMPARATOR", `^${a[c.GTLT]}\\s*(${a[c.FULLPLAIN]})$|^$`), u("COMPARATORTRIM", `(\\s*)${a[c.GTLT]}\\s*(${a[c.LOOSEPLAIN]}|${a[c.XRANGEPLAIN]})`, !0), t.comparatorTrimReplace = "$1$2$3", u("HYPHENRANGE", `^\\s*(${a[c.XRANGEPLAIN]})\\s+-\\s+(${a[c.XRANGEPLAIN]})\\s*$`), u("HYPHENRANGELOOSE", `^\\s*(${a[c.XRANGEPLAINLOOSE]})\\s+-\\s+(${a[c.XRANGEPLAINLOOSE]})\\s*$`), u("STAR", "(<|>)?=?\\s*\\*"), u("GTE0", "^\\s*>=\\s*0\\.0\\.0\\s*$"), u("GTE0PRE", "^\\s*>=\\s*0\\.0\\.0-0\\s*$")
+                u("NUMERICIDENTIFIER", "0|[1-9]\\d*"), u("NUMERICIDENTIFIERLOOSE", "[0-9]+"), u("NONNUMERICIDENTIFIER", "\\d*[a-zA-Z-][a-zA-Z0-9-]*"), u("MAINVERSION", `(${a[c.NUMERICIDENTIFIER]})\\.(${a[c.NUMERICIDENTIFIER]})\\.(${a[c.NUMERICIDENTIFIER]})`), u("MAINVERSIONLOOSE", `(${a[c.NUMERICIDENTIFIERLOOSE]})\\.(${a[c.NUMERICIDENTIFIERLOOSE]})\\.(${a[c.NUMERICIDENTIFIERLOOSE]})`), u("PRERELEASEIDENTIFIER", `(?:${a[c.NUMERICIDENTIFIER]}|${a[c.NONNUMERICIDENTIFIER]})`), u("PRERELEASEIDENTIFIERLOOSE", `(?:${a[c.NUMERICIDENTIFIERLOOSE]}|${a[c.NONNUMERICIDENTIFIER]})`), u("PRERELEASE", `(?:-(${a[c.PRERELEASEIDENTIFIER]}(?:\\.${a[c.PRERELEASEIDENTIFIER]})*))`), u("PRERELEASELOOSE", `(?:-?(${a[c.PRERELEASEIDENTIFIERLOOSE]}(?:\\.${a[c.PRERELEASEIDENTIFIERLOOSE]})*))`), u("BUILDIDENTIFIER", "[0-9A-Za-z-]+"), u("BUILD", `(?:\\+(${a[c.BUILDIDENTIFIER]}(?:\\.${a[c.BUILDIDENTIFIER]})*))`), u("FULLPLAIN", `v?${a[c.MAINVERSION]}${a[c.PRERELEASE]}?${a[c.BUILD]}?`), u("FULL", `^${a[c.FULLPLAIN]}$`), u("LOOSEPLAIN", `[v=\\s]*${a[c.MAINVERSIONLOOSE]}${a[c.PRERELEASELOOSE]}?${a[c.BUILD]}?`), u("LOOSE", `^${a[c.LOOSEPLAIN]}$`), u("GTLT", "((?:<|>)?=?)"), u("XRANGEIDENTIFIERLOOSE", `${a[c.NUMERICIDENTIFIERLOOSE]}|x|X|\\*`), u("XRANGEIDENTIFIER", `${a[c.NUMERICIDENTIFIER]}|x|X|\\*`), u("XRANGEPLAIN", `[v=\\s]*(${a[c.XRANGEIDENTIFIER]})(?:\\.(${a[c.XRANGEIDENTIFIER]})(?:\\.(${a[c.XRANGEIDENTIFIER]})(?:${a[c.PRERELEASE]})?${a[c.BUILD]}?)?)?`), u("XRANGEPLAINLOOSE", `[v=\\s]*(${a[c.XRANGEIDENTIFIERLOOSE]})(?:\\.(${a[c.XRANGEIDENTIFIERLOOSE]})(?:\\.(${a[c.XRANGEIDENTIFIERLOOSE]})(?:${a[c.PRERELEASELOOSE]})?${a[c.BUILD]}?)?)?`), u("XRANGE", `^${a[c.GTLT]}\\s*${a[c.XRANGEPLAIN]}$`), u("XRANGELOOSE", `^${a[c.GTLT]}\\s*${a[c.XRANGEPLAINLOOSE]}$`), u("COERCE", `(^|[^\\d])(\\d{1,${i}})(?:\\.(\\d{1,${i}}))?(?:\\.(\\d{1,${i}}))?(?:$|[^\\d])`), u("COERCERTL", a[c.COERCE], !0), u("LONETILDE", "(?:~>?)"), u("TILDETRIM", `(\\s*)${a[c.LONETILDE]}\\s+`, !0), t.tildeTrimReplace = "$1~", u("TILDE", `^${a[c.LONETILDE]}${a[c.XRANGEPLAIN]}$`), u("TILDELOOSE", `^${a[c.LONETILDE]}${a[c.XRANGEPLAINLOOSE]}$`), u("LONECARET", "(?:\\^)"), u("CARETTRIM", `(\\s*)${a[c.LONECARET]}\\s+`, !0), t.caretTrimReplace = "$1^", u("CARET", `^${a[c.LONECARET]}${a[c.XRANGEPLAIN]}$`), u("CARETLOOSE", `^${a[c.LONECARET]}${a[c.XRANGEPLAINLOOSE]}$`), u("COMPARATORLOOSE", `^${a[c.GTLT]}\\s*(${a[c.LOOSEPLAIN]})$|^$`), u("COMPARATOR", `^${a[c.GTLT]}\\s*(${a[c.FULLPLAIN]})$|^$`), u("COMPARATORTRIM", `(\\s*)${a[c.GTLT]}\\s*(${a[c.LOOSEPLAIN]}|${a[c.XRANGEPLAIN]})`, !0), t.comparatorTrimReplace = "$1$2$3", u("HYPHENRANGE", `^\\s*(${a[c.XRANGEPLAIN]})\\s+-\\s+(${a[c.XRANGEPLAIN]})\\s*$`), u("HYPHENRANGELOOSE", `^\\s*(${a[c.XRANGEPLAINLOOSE]})\\s+-\\s+(${a[c.XRANGEPLAINLOOSE]})\\s*$`), u("STAR", "(<|>)?=?\\s*\\*"), u("GTE0", "^\\s*>=\\s*0\\.0\\.0\\s*$"), u("GTE0PRE", "^\\s*>=\\s*0\\.0\\.0-0\\s*$")
             },
             9749: (e, t, n) => {
                 "use strict";
-                const r = n(8799),
-                    i = Symbol("max"),
+                const i = n(8799),
+                    r = Symbol("max"),
                     s = Symbol("length"),
                     o = Symbol("lengthCalculator"),
                     a = Symbol("allowStale"),
@@ -14685,16 +14724,16 @@
                     l = Symbol("dispose"),
                     u = Symbol("noDisposeOnSet"),
                     d = Symbol("lruList"),
-                    h = Symbol("cache"),
-                    p = Symbol("updateAgeOnGet"),
+                    p = Symbol("cache"),
+                    h = Symbol("updateAgeOnGet"),
                     f = () => 1,
                     g = (e, t, n) => {
-                        const r = e[h].get(t);
-                        if (r) {
-                            const t = r.value;
+                        const i = e[p].get(t);
+                        if (i) {
+                            const t = i.value;
                             if (m(e, t)) {
-                                if (y(e, r), !e[a]) return
-                            } else n && (e[p] && (r.value.now = Date.now()), e[d].unshiftNode(r));
+                                if (y(e, i), !e[a]) return
+                            } else n && (e[h] && (i.value.now = Date.now()), e[d].unshiftNode(i));
                             return t.value
                         }
                     },
@@ -14704,8 +14743,8 @@
                         return t.maxAge ? n > t.maxAge : e[c] && n > e[c]
                     },
                     v = e => {
-                        if (e[s] > e[i])
-                            for (let t = e[d].tail; e[s] > e[i] && null !== t;) {
+                        if (e[s] > e[r])
+                            for (let t = e[d].tail; e[s] > e[r] && null !== t;) {
                                 const n = t.prev;
                                 y(e, t), t = n
                             }
@@ -14713,34 +14752,34 @@
                     y = (e, t) => {
                         if (t) {
                             const n = t.value;
-                            e[l] && e[l](n.key, n.value), e[s] -= n.length, e[h].delete(n.key), e[d].removeNode(t)
+                            e[l] && e[l](n.key, n.value), e[s] -= n.length, e[p].delete(n.key), e[d].removeNode(t)
                         }
                     };
                 class b {
-                    constructor(e, t, n, r, i) {
-                        this.key = e, this.value = t, this.length = n, this.now = r, this.maxAge = i || 0
+                    constructor(e, t, n, i, r) {
+                        this.key = e, this.value = t, this.length = n, this.now = i, this.maxAge = r || 0
                     }
                 }
-                const w = (e, t, n, r) => {
-                    let i = n.value;
-                    m(e, i) && (y(e, n), e[a] || (i = void 0)), i && t.call(r, i.value, i.key, e)
+                const w = (e, t, n, i) => {
+                    let r = n.value;
+                    m(e, r) && (y(e, n), e[a] || (r = void 0)), r && t.call(i, r.value, r.key, e)
                 };
                 e.exports = class {
                     constructor(e) {
                         if ("number" == typeof e && (e = {
                                 max: e
                             }), e || (e = {}), e.max && ("number" != typeof e.max || e.max < 0)) throw new TypeError("max must be a non-negative number");
-                        this[i] = e.max || 1 / 0;
+                        this[r] = e.max || 1 / 0;
                         const t = e.length || f;
                         if (this[o] = "function" != typeof t ? f : t, this[a] = e.stale || !1, e.maxAge && "number" != typeof e.maxAge) throw new TypeError("maxAge must be a number");
-                        this[c] = e.maxAge || 0, this[l] = e.dispose, this[u] = e.noDisposeOnSet || !1, this[p] = e.updateAgeOnGet || !1, this.reset()
+                        this[c] = e.maxAge || 0, this[l] = e.dispose, this[u] = e.noDisposeOnSet || !1, this[h] = e.updateAgeOnGet || !1, this.reset()
                     }
                     set max(e) {
                         if ("number" != typeof e || e < 0) throw new TypeError("max must be a non-negative number");
-                        this[i] = e || 1 / 0, v(this)
+                        this[r] = e || 1 / 0, v(this)
                     }
                     get max() {
-                        return this[i]
+                        return this[r]
                     }
                     set allowStale(e) {
                         this[a] = !!e
@@ -14772,15 +14811,15 @@
                     rforEach(e, t) {
                         t = t || this;
                         for (let n = this[d].tail; null !== n;) {
-                            const r = n.prev;
-                            w(this, e, n, t), n = r
+                            const i = n.prev;
+                            w(this, e, n, t), n = i
                         }
                     }
                     forEach(e, t) {
                         t = t || this;
                         for (let n = this[d].head; null !== n;) {
-                            const r = n.next;
-                            w(this, e, n, t), n = r
+                            const i = n.next;
+                            w(this, e, n, t), n = i
                         }
                     }
                     keys() {
@@ -14790,7 +14829,7 @@
                         return this[d].toArray().map(e => e.value)
                     }
                     reset() {
-                        this[l] && this[d] && this[d].length && this[d].forEach(e => this[l](e.key, e.value)), this[h] = new Map, this[d] = new r, this[s] = 0
+                        this[l] && this[d] && this[d].length && this[d].forEach(e => this[l](e.key, e.value)), this[p] = new Map, this[d] = new i, this[s] = 0
                     }
                     dump() {
                         return this[d].map(e => !m(this, e) && {
@@ -14804,19 +14843,19 @@
                     }
                     set(e, t, n) {
                         if ((n = n || this[c]) && "number" != typeof n) throw new TypeError("maxAge must be a number");
-                        const r = n ? Date.now() : 0,
+                        const i = n ? Date.now() : 0,
                             a = this[o](t, e);
-                        if (this[h].has(e)) {
-                            if (a > this[i]) return y(this, this[h].get(e)), !1;
-                            const o = this[h].get(e).value;
-                            return this[l] && (this[u] || this[l](e, o.value)), o.now = r, o.maxAge = n, o.value = t, this[s] += a - o.length, o.length = a, this.get(e), v(this), !0
+                        if (this[p].has(e)) {
+                            if (a > this[r]) return y(this, this[p].get(e)), !1;
+                            const o = this[p].get(e).value;
+                            return this[l] && (this[u] || this[l](e, o.value)), o.now = i, o.maxAge = n, o.value = t, this[s] += a - o.length, o.length = a, this.get(e), v(this), !0
                         }
-                        const p = new b(e, t, a, r, n);
-                        return p.length > this[i] ? (this[l] && this[l](e, t), !1) : (this[s] += p.length, this[d].unshift(p), this[h].set(e, this[d].head), v(this), !0)
+                        const h = new b(e, t, a, i, n);
+                        return h.length > this[r] ? (this[l] && this[l](e, t), !1) : (this[s] += h.length, this[d].unshift(h), this[p].set(e, this[d].head), v(this), !0)
                     }
                     has(e) {
-                        if (!this[h].has(e)) return !1;
-                        const t = this[h].get(e).value;
+                        if (!this[p].has(e)) return !1;
+                        const t = this[p].get(e).value;
                         return !m(this, t)
                     }
                     get(e) {
@@ -14830,23 +14869,23 @@
                         return e ? (y(this, e), e.value) : null
                     }
                     del(e) {
-                        y(this, this[h].get(e))
+                        y(this, this[p].get(e))
                     }
                     load(e) {
                         this.reset();
                         const t = Date.now();
                         for (let n = e.length - 1; n >= 0; n--) {
-                            const r = e[n],
-                                i = r.e || 0;
-                            if (0 === i) this.set(r.k, r.v);
+                            const i = e[n],
+                                r = i.e || 0;
+                            if (0 === r) this.set(i.k, i.v);
                             else {
-                                const e = i - t;
-                                e > 0 && this.set(r.k, r.v, e)
+                                const e = r - t;
+                                e > 0 && this.set(i.k, i.v, e)
                             }
                         }
                     }
                     prune() {
-                        this[h].forEach((e, t) => g(this, t, !1))
+                        this[p].forEach((e, t) => g(this, t, !1))
                     }
                 }
             },
@@ -14856,17 +14895,17 @@
             },
             9944: function(e, t, n) {
                 "use strict";
-                var r, i = this && this.__createBinding || (Object.create ? function(e, t, n, r) {
-                        void 0 === r && (r = n);
-                        var i = Object.getOwnPropertyDescriptor(t, n);
-                        i && !("get" in i ? !t.__esModule : i.writable || i.configurable) || (i = {
+                var i, r = this && this.__createBinding || (Object.create ? function(e, t, n, i) {
+                        void 0 === i && (i = n);
+                        var r = Object.getOwnPropertyDescriptor(t, n);
+                        r && !("get" in r ? !t.__esModule : r.writable || r.configurable) || (r = {
                             enumerable: !0,
                             get: function() {
                                 return t[n]
                             }
-                        }), Object.defineProperty(e, r, i)
-                    } : function(e, t, n, r) {
-                        void 0 === r && (r = n), e[r] = t[n]
+                        }), Object.defineProperty(e, i, r)
+                    } : function(e, t, n, i) {
+                        void 0 === i && (i = n), e[i] = t[n]
                     }),
                     s = this && this.__setModuleDefault || (Object.create ? function(e, t) {
                         Object.defineProperty(e, "default", {
@@ -14876,24 +14915,24 @@
                     } : function(e, t) {
                         e.default = t
                     }),
-                    o = this && this.__importStar || (r = function(e) {
-                        return r = Object.getOwnPropertyNames || function(e) {
+                    o = this && this.__importStar || (i = function(e) {
+                        return i = Object.getOwnPropertyNames || function(e) {
                             var t = [];
                             for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                             return t
-                        }, r(e)
+                        }, i(e)
                     }, function(e) {
                         if (e && e.__esModule) return e;
                         var t = {};
                         if (null != e)
-                            for (var n = r(e), o = 0; o < n.length; o++) "default" !== n[o] && i(t, e, n[o]);
+                            for (var n = i(e), o = 0; o < n.length; o++) "default" !== n[o] && r(t, e, n[o]);
                         return s(t, e), t
                     });
                 Object.defineProperty(t, "__esModule", {
                     value: !0
-                }), t.register = function(e, t, n, r) {
+                }), t.register = function(e, t, n, i) {
                     return (0, l.conditionalRegistration)([(0, l.requireGlobalConfiguration)(t.id, "format.enable")], () => {
-                        const t = new u(n, r);
+                        const t = new u(n, i);
                         return a.Disposable.from(a.languages.registerOnTypeFormattingEditProvider(e.syntax, t, ";", "}", "\n"), a.languages.registerDocumentRangeFormattingEditProvider(e.syntax, t))
                     })
                 };
@@ -14904,31 +14943,31 @@
                     constructor(e, t) {
                         this.client = e, this.fileConfigurationManager = t
                     }
-                    async provideDocumentRangeFormattingEdits(e, t, n, r) {
-                        const i = this.client.toOpenTsFilePath(e);
-                        if (!i) return;
-                        await this.fileConfigurationManager.ensureConfigurationOptions(e, n, r);
-                        const s = c.Range.toFormattingRequestArgs(i, t),
-                            o = await this.client.execute("format", s, r);
+                    async provideDocumentRangeFormattingEdits(e, t, n, i) {
+                        const r = this.client.toOpenTsFilePath(e);
+                        if (!r) return;
+                        await this.fileConfigurationManager.ensureConfigurationOptions(e, n, i);
+                        const s = c.Range.toFormattingRequestArgs(r, t),
+                            o = await this.client.execute("format", s, i);
                         return "response" === o.type && o.body ? o.body.map(c.TextEdit.fromCodeEdit) : void 0
                     }
-                    async provideOnTypeFormattingEdits(e, t, n, r, i) {
+                    async provideOnTypeFormattingEdits(e, t, n, i, r) {
                         const s = this.client.toOpenTsFilePath(e);
                         if (!s) return [];
-                        await this.fileConfigurationManager.ensureConfigurationOptions(e, r, i);
+                        await this.fileConfigurationManager.ensureConfigurationOptions(e, i, r);
                         const o = {
                                 ...c.Position.toFileLocationRequestArgs(s, t),
                                 key: n
                             },
-                            a = await this.client.execute("formatonkey", o, i);
+                            a = await this.client.execute("formatonkey", o, r);
                         if ("response" !== a.type || !a.body) return [];
                         const l = [];
                         for (const t of a.body) {
                             const n = c.TextEdit.fromCodeEdit(t),
-                                r = n.range;
-                            if (0 === r.start.character && r.start.line === r.end.line && "" === n.newText) {
-                                const t = e.lineAt(r.start.line).text;
-                                (t.trim().length > 0 || t.length > r.end.character) && l.push(n)
+                                i = n.range;
+                            if (0 === i.start.character && i.start.line === i.end.line && "" === n.newText) {
+                                const t = e.lineAt(i.start.line).text;
+                                (t.trim().length > 0 || t.length > i.end.character) && l.push(n)
                             } else l.push(n)
                         }
                         return l
@@ -14936,24 +14975,24 @@
                 }
             },
             9970: (e, t, n) => {
-                const r = n(560);
-                e.exports = (e, t, n) => r(t, e, n)
+                const i = n(560);
+                e.exports = (e, t, n) => i(t, e, n)
             }
         },
         t = {};
 
-    function n(r) {
-        var i = t[r];
-        if (void 0 !== i) return i.exports;
-        var s = t[r] = {
+    function n(i) {
+        var r = t[i];
+        if (void 0 !== r) return r.exports;
+        var s = t[i] = {
             exports: {}
         };
-        return e[r].call(s.exports, s, s.exports, n), s.exports
+        return e[i].call(s.exports, s, s.exports, n), s.exports
     }
     n.d = (e, t) => {
-        for (var r in t) n.o(t, r) && !n.o(e, r) && Object.defineProperty(e, r, {
+        for (var i in t) n.o(t, i) && !n.o(e, i) && Object.defineProperty(e, i, {
             enumerable: !0,
-            get: t[r]
+            get: t[i]
         })
     }, n.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), n.r = e => {
         "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -14962,11 +15001,11 @@
             value: !0
         })
     };
-    var r = n(5256),
-        i = exports;
-    for (var s in r) i[s] = r[s];
-    r.__esModule && Object.defineProperty(i, "__esModule", {
+    var i = n(5256),
+        r = exports;
+    for (var s in i) r[s] = i[s];
+    i.__esModule && Object.defineProperty(r, "__esModule", {
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/typescript-language-features/dist/extension.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/extensions/typescript-language-features/dist/extension.js.map

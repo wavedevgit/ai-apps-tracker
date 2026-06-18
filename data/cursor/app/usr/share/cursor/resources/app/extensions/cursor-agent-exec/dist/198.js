@@ -647,4 +647,4 @@ exports.id = 198, exports.ids = [198, 891], exports.modules = {
         const s = () => process.env.AWS_CONFIG_FILE || (0, n.join)((0, o.R)(), ".aws", "config")
     }
 };
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-agent-exec/dist/198.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/extensions/cursor-agent-exec/dist/198.js.map

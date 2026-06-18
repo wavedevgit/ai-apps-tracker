@@ -18,17 +18,22 @@
         },
         t = {};
     e.r(t), e.d(t, {
-        activate: () => l,
-        deactivate: () => m
+        activate: () => m,
+        deactivate: () => u
     });
     const a = require("vscode"),
         r = require("node:child_process"),
         i = require("node:fs/promises"),
         s = require("node:os"),
         n = require("node:util"),
-        o = require("node:path"),
-        c = (0, n.promisify)(r.execFile);
-    class h {
+        o = require("node:path");
+
+    function c(e) {
+        const t = null == e ? void 0 : e.trim().toLowerCase();
+        if (t) return /^(?:[0-9a-f]{40}|[0-9a-f]{64})$/.test(t) ? t : void 0
+    }
+    const h = (0, n.promisify)(r.execFile);
+    class l {
         constructor(e) {
             this.workspacePaths = e, this.recentlyWarmedBranches = new Map
         }
@@ -43,7 +48,7 @@
         async executeGitCommandStable(e, t, a, r) {
             const {
                 stdout: i
-            } = await c("git", t, {
+            } = await h("git", t, {
                 cwd: e,
                 env: r ? {
                     ...process.env,
@@ -59,10 +64,6 @@
             if (t.startsWith("refs/heads/") ? t = t.slice(11) : t.startsWith("heads/") ? t = t.slice(6) : t.startsWith("remotes/") && (t = t.slice(8)), t.startsWith("origin/") && (t = t.slice(7)), t.startsWith("-")) throw new Error(`Invalid branch name: ${t}`);
             if (0 === t.length) throw new Error("Invalid branch name: empty");
             return t
-        }
-        normalizeCommitSha(e) {
-            const t = e?.trim().toLowerCase();
-            if (t) return /^(?:[0-9a-f]{40}|[0-9a-f]{64})$/.test(t) ? t : void 0
         }
         throwIfCancelled(e) {
             if (e?.isCancellationRequested) throw new Error("Aborting checkout")
@@ -102,8 +103,7 @@
         }
         async getLocalBranchSha(e, t, a) {
             try {
-                const r = await this.executeGitCommandStable(e, ["rev-parse", "--verify", `refs/heads/${t}`], a);
-                return this.normalizeCommitSha(r)
+                return c(await this.executeGitCommandStable(e, ["rev-parse", "--verify", `refs/heads/${t}`], a))
             } catch (e) {
                 if (a.aborted) throw e;
                 return
@@ -140,9 +140,9 @@
         async checkoutBranch(e, t, a, r) {
             const i = this.getCwd(),
                 s = this.normalizeBranchName(t),
-                n = this.normalizeCommitSha(a?.commitSha),
+                n = c(a?.commitSha),
                 o = new AbortController,
-                c = r?.onCancellationRequested(() => {
+                h = r?.onCancellationRequested(() => {
                     o.abort()
                 });
             r?.isCancellationRequested && o.abort();
@@ -183,7 +183,7 @@
                 }
                 await this.executeGitCommandStable(i, ["merge", "--ff-only", `origin/${s}`], o.signal)
             } finally {
-                c?.dispose()
+                h?.dispose()
             }
         }
         async ensureCurrentBranchPushed(e, t) {
@@ -260,18 +260,18 @@
         }
     }
 
-    function l(e) {
+    function m(e) {
         const t = (a.workspace.workspaceFolders ?? []).map(e => e.uri.fsPath),
-            r = new h(t),
+            r = new l(t),
             i = a.cursor.registerCheckoutProvider(r);
         e.subscriptions.push(i)
     }
 
-    function m() {}
-    var u = exports;
-    for (var d in t) u[d] = t[d];
-    t.__esModule && Object.defineProperty(u, "__esModule", {
+    function u() {}
+    var d = exports;
+    for (var w in t) d[w] = t[w];
+    t.__esModule && Object.defineProperty(d, "__esModule", {
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-checkout/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/extensions/cursor-checkout/dist/main.js.map

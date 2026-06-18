@@ -20945,8 +20945,8 @@
     (() => {
         "use strict";
         A.r(n), A.d(n, {
-            activate: () => Ql,
-            deactivate: () => Cl
+            activate: () => yl,
+            deactivate: () => wl
         });
         const e = require("vscode");
         const t = 3e4;
@@ -34146,9 +34146,13 @@
             return e instanceof Error && e.message.includes(hl) && e.message.toLowerCase().includes("command")
         }
         const Bl = "automations_deep_linking",
-            pl = new Set(["prefill", "prefilljson", "prefillyaml", "prefillworkflowdata", "prefillworkflowdatajson"]);
+            pl = "glass_automations_ui",
+            Ql = new Set(["prefill", "prefilljson", "prefillyaml", "prefillworkflowdata", "prefillworkflowdatajson"]);
+        async function Cl(t) {
+            return await Promise.resolve(e.cursor.checkFeatureGate(t)).catch(() => !1)
+        }
 
-        function Ql(t) {
+        function yl(t) {
             const A = {
                     async handleUri(t) {
                         try {
@@ -34351,11 +34355,10 @@
                                     }
                                 })
                             }(t): "/automations" === t.path || t.path.startsWith("/automations/") ? await async function(t) {
-                                await async function(t) {
-                                    return await Promise.resolve(e.cursor.checkFeatureGate(t)).catch(() => !1)
-                                }(Bl) ? function(e) {
+                                const [A, n] = await Promise.all([Cl(Bl), Cl(pl)]);
+                                A && n ? function(e) {
                                     for (const t of e.keys())
-                                        if (pl.has(t.toLowerCase())) return !0;
+                                        if (Ql.has(t.toLowerCase())) return !0;
                                     return !1
                                 }(new URLSearchParams(t.query)) ? e.window.showWarningMessage("Automation deep links do not support raw prefill payloads. Use cursor-app-control.open_automation instead.") : await e.commands.executeCommand("cursor.openOrFocusGlassWindow", {
                                     agentsWindowOpenSource: "deeplink",
@@ -34610,7 +34613,7 @@
                 });
             t.subscriptions.push(e.window.registerUriHandler(A)), t.subscriptions.push(n)
         }
-        async function Cl() {}
+        async function wl() {}
     })();
     var r = exports;
     for (var o in n) r[o] = n[o];
@@ -34618,4 +34621,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-deeplink/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/extensions/cursor-deeplink/dist/main.js.map

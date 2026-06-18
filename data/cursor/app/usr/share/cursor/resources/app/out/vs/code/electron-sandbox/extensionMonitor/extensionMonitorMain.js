@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "558493bb-1a88-53df-bbb7-13f20faa8e0e")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "b9aa610b-df3d-5033-ba0a-abaeec0ed9b2")
     } catch (e) {}
 }();
 var Ir = function(e, t) {
@@ -4768,7 +4768,7 @@ var gc = Date.now(),
     yc = 1800 * 1e3,
     qa = ["vscode.typescript", "vscode.javascript", "vscode.python", "vscode.json", "vscode.html", "vscode.css", "vscode.markdown", "vscode.yaml", "vscode.xml", "vscode.go", "vscode.rust", "vscode.cpp", "vscode.java", "vscode.csharp", "vscode.ruby", "vscode.sql", "vscode.shellscript", "vscode.swift", "vscode.dart", "vscode.scss", "vscode.less", "vscode.lua", "vscode.perl", "vscode.r", "vscode.php", "vscode.docker", "vscode.ini", "vscode.diff", "vscode.make", "vscode.log", "mechatroner.rainbow-csv"],
     ui = ["anysphere.cursor-resolver", "anysphere.cursor-always-local", "anysphere.cursor-agent-worker", "anysphere.cursor-agent-exec", "anysphere.cursor-checkout", "anysphere.cursor-explorer", "anysphere.cursor-commits", "anysphere.cursor-mcp", "anysphere.cursor-ndjson-ingest", "anysphere.cursor-retrieval", "cursor.cursor-browser-automation", "vscode.git", "vscode.git-base", "vscode.vscode-theme-seti", "undefined_publisher.cursor-themes", ...qa, "vscodevim.vim", "asvetliakov.vscode-neovim", "tuttieee.emacs-mcx"],
-    Za = ["vscode.css-language-features", "vscode.html-language-features", "vscode.json-language-features", "vscode.php-language-features", "vscode.typescript-language-features", "typescriptteam.native-preview", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "biomejs.biome", "denoland.vscode-deno", "vue.volar", "svelte.svelte-vscode", "astro-build.astro-vscode", "angular.ng-template", "bradlc.vscode-tailwindcss", "stylelint.vscode-stylelint", "unifiedjs.vscode-mdx", "ms-python.python", "ms-python.vscode-pylance", "charliermarsh.ruff", "golang.go", "rust-lang.rust-analyzer", "ms-vscode.cpptools", "llvm-vs-code-extensions.vscode-clangd", "ms-vscode.cmake-tools", "twxs.cmake", "ms-dotnettools.csharp", "redhat.java", "vscjava.vscode-gradle", "fwcd.kotlin", "mathiasfrohlich.kotlin", "scalameta.metals", "scala-lang.scala", "swiftlang.swift-vscode", "sswg.swift-lang", "bmewburn.vscode-intelephense-client", "devsense.phptools-vscode", "shopify.ruby-lsp", "dart-code.dart-code", "dart-code.flutter", "jakebecker.elixir-ls", "pgourlain.erlang", "betterthantomorrow.calva", "ziglang.vscode-zig", "sumneko.lua", "julialang.language-julia", "reditorsupport.r", "haskell.haskell", "ocamllabs.ocaml-platform", "fortran-lang.linter-gfortran", "ms-vscode.powershell", "timonwong.shellcheck", "mads-hartmann.bash-ide-vscode", "juanblanco.solidity", "nomicfoundation.hardhat-solidity", "james-yu.latex-workshop", "graphql.vscode-graphql", "graphql.vscode-graphql-syntax", "prisma.prisma", "hashicorp.terraform", "ms-azuretools.vscode-bicep", "ms-azuretools.vscode-docker", "docker.docker", "redhat.vscode-yaml", "redhat.vscode-xml", "tamasfe.even-better-toml", "tombi-toml.tombi", "wholroyd.jinja", "samuelcolvin.jinjahtml", "zxh404.vscode-proto3", "bufbuild.vscode-buf", "jnoortheen.nix-ide", "bbenoist.nix"],
+    Za = ["vscode.css-language-features", "vscode.html-language-features", "vscode.json-language-features", "vscode.php-language-features", "vscode.typescript-language-features", "typescriptteam.native-preview", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "biomejs.biome", "denoland.vscode-deno", "vue.volar", "svelte.svelte-vscode", "astro-build.astro-vscode", "angular.ng-template", "bradlc.vscode-tailwindcss", "stylelint.vscode-stylelint", "unifiedjs.vscode-mdx", "ms-python.python", "ms-python.vscode-pylance", "charliermarsh.ruff", "golang.go", "rust-lang.rust-analyzer", "ms-vscode.cpptools", "llvm-vs-code-extensions.vscode-clangd", "ms-vscode.cmake-tools", "twxs.cmake", "ms-dotnettools.csharp", "redhat.java", "vscjava.vscode-gradle", "fwcd.kotlin", "mathiasfrohlich.kotlin", "scalameta.metals", "scala-lang.scala", "swiftlang.swift-vscode", "sswg.swift-lang", "bmewburn.vscode-intelephense-client", "devsense.phptools-vscode", "shopify.ruby-lsp", "dart-code.dart-code", "dart-code.flutter", "jakebecker.elixir-ls", "pgourlain.erlang", "betterthantomorrow.calva", "ziglang.vscode-zig", "sumneko.lua", "geequlim.godot-tools", "julialang.language-julia", "reditorsupport.r", "haskell.haskell", "ocamllabs.ocaml-platform", "fortran-lang.linter-gfortran", "ms-vscode.powershell", "timonwong.shellcheck", "mads-hartmann.bash-ide-vscode", "juanblanco.solidity", "nomicfoundation.hardhat-solidity", "james-yu.latex-workshop", "graphql.vscode-graphql", "graphql.vscode-graphql-syntax", "prisma.prisma", "hashicorp.terraform", "hashicorp.hcl", "ms-azuretools.vscode-bicep", "ms-azuretools.vscode-docker", "docker.docker", "redhat.vscode-yaml", "redhat.vscode-xml", "tamasfe.even-better-toml", "tombi-toml.tombi", "wholroyd.jinja", "samuelcolvin.jinjahtml", "zxh404.vscode-proto3", "bufbuild.vscode-buf", "jnoortheen.nix-ide", "bbenoist.nix"],
     Ya = [...ui, "anysphere.cursor-deeplink", "anysphere.cursor-resolver-helper", "anysphere.cursor-socket", "vscode.github-authentication"],
     Qa = [...ui, "anysphere.remote-ssh", "anysphere.remote-wsl", "anysphere.remote-containers"],
     Xa = [...Qa, ...Za],
@@ -7827,7 +7827,7 @@ var qi;
     e.fromJSONObject = r
 })(qi || (qi = {}));
 var sl = /^([\w_-]+)$/,
-    ol = ut(2547, null),
+    ol = ut(2548, null),
     al = class extends Le {
         constructor() {
             super(), this._onDidChange = this._register(new Z), this.onDidChange = this._onDidChange.event, this.iconSchema = {
@@ -7837,13 +7837,13 @@ var sl = /^([\w_-]+)$/,
                         properties: {
                             fontId: {
                                 type: "string",
-                                description: ut(2548, null),
+                                description: ut(2549, null),
                                 pattern: sl.source,
                                 patternErrorMessage: ol
                             },
                             fontCharacter: {
                                 type: "string",
-                                description: ut(2549, null)
+                                description: ut(2550, null)
                             }
                         },
                         additionalProperties: !1,
@@ -7958,9 +7958,9 @@ var Xi = new G1(() => Qi.notifySchemaChanged(Yi), 200);
 Je.onDidChange(() => {
     Xi.isScheduled() || Xi.schedule()
 });
-var Vc = En("widget-close", Ae.close, ut(2550, null)),
-    Bc = En("goto-previous-location", Ae.arrowUp, ut(2551, null)),
-    Kc = En("goto-next-location", Ae.arrowDown, ut(2552, null)),
+var Vc = En("widget-close", Ae.close, ut(2551, null)),
+    Bc = En("goto-previous-location", Ae.arrowUp, ut(2552, null)),
+    Kc = En("goto-next-location", Ae.arrowDown, ut(2553, null)),
     $c = Oe.modify(Ae.sync, "spin"),
     Wc = Oe.modify(Ae.loading, "spin");
 
@@ -8379,6 +8379,6 @@ export {
     _l as startup
 }; /*! @license DOMPurify 3.1.7 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.1.7/LICENSE */
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/core/vs/code/electron-sandbox/extensionMonitor/extensionMonitorMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/core/vs/code/electron-sandbox/extensionMonitor/extensionMonitorMain.js.map
 
-//# debugId=558493bb-1a88-53df-bbb7-13f20faa8e0e
+//# debugId=b9aa610b-df3d-5033-ba0a-abaeec0ed9b2

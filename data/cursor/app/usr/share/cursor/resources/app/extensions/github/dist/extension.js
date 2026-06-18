@@ -227,7 +227,7 @@
                         throw h = void 0, e
                     })), h
                 }, r.getOctokitGraphql = async function() {
-                    if (!b) try {
+                    if (!E) try {
                         const e = await a.authentication.getSession("github", g, {
                             silent: !0
                         });
@@ -245,9 +245,9 @@
                             }
                         })
                     } catch (e) {
-                        throw b = void 0, e
+                        throw E = void 0, e
                     }
-                    return b
+                    return E
                 };
                 const a = t(398),
                     c = t(692),
@@ -282,7 +282,7 @@
                         createIfNone: !0
                     })
                 }
-                let h, b
+                let h, E
             },
             183: (e, r, t) => {
                 "use strict";
@@ -365,13 +365,6 @@
                                 const t = (0, i.getBranchLink)(e, r);
                                 o.env.openExternal(o.Uri.parse(t))
                             }
-                        }, {
-                            label: o.l10n.t("Checkout on vscode.dev"),
-                            icon: "globe",
-                            run(r) {
-                                const t = (0, i.getBranchLink)(e, r, (0, i.getVscodeDevHost)());
-                                o.env.openExternal(o.Uri.parse(t))
-                            }
                         }] : []
                     }
                 }
@@ -396,8 +389,8 @@
                         t.appendLine(s.l10n.t("Log level: {0}", s.LogLevel[e]))
                     };
                     r.push(t.onDidChangeLogLevel(o)), o(t.logLevel);
-                    const b = new h.default("");
-                    r.push(b), r.push(function() {
+                    const h = new m.default("");
+                    r.push(h), r.push(function() {
                         const e = new c.DisposableStore,
                             r = r => {
                                 r ? (() => {
@@ -414,12 +407,12 @@
                     }()), r.push(function(e, r, t) {
                         const o = new c.DisposableStore;
                         let n = s.extensions.getExtension("vscode.git");
-                        const h = () => {
+                        const m = () => {
                             n.activate().then(n => {
-                                const h = h => {
-                                    if (h) {
-                                        const h = n.getAPI(1);
-                                        o.add((0, i.registerCommands)(h)), o.add(new a.GithubCredentialProviderManager(h)), o.add(new u.GitHubBranchProtectionProviderManager(h, e.globalState, t, r)), o.add(h.registerPushErrorHandler(new p.GithubPushErrorHandler(r))), o.add(h.registerRemoteSourcePublisher(new l.GithubRemoteSourcePublisher(h))), o.add(h.registerSourceControlHistoryItemDetailsProvider(new m.GitHubSourceControlHistoryItemDetailsProvider(h, t))), o.add(new d.GitHubCanonicalUriProvider(h)), o.add(new g.VscodeDevShareProvider(h)),
+                                const m = m => {
+                                    if (m) {
+                                        const m = n.getAPI(1);
+                                        o.add((0, i.registerCommands)(m)), o.add(new a.GithubCredentialProviderManager(m)), o.add(new u.GitHubBranchProtectionProviderManager(m, e.globalState, t, r)), o.add(m.registerPushErrorHandler(new p.GithubPushErrorHandler(r))), o.add(m.registerRemoteSourcePublisher(new l.GithubRemoteSourcePublisher(m))), o.add(m.registerSourceControlHistoryItemDetailsProvider(new g.GitHubSourceControlHistoryItemDetailsProvider(m, t))), o.add(new d.GitHubCanonicalUriProvider(m)),
                                             function(e, r) {
                                                 if (e.repositories.find(e => (0, c.repositoryHasGitHubRemote)(e))) s.commands.executeCommand("setContext", "github.hasGitHubRepo", !0);
                                                 else {
@@ -428,21 +421,21 @@
                                                     });
                                                     r.add(t)
                                                 }
-                                            }(h, o), s.commands.executeCommand("setContext", "git-base.gitEnabled", !0)
+                                            }(m, o), s.commands.executeCommand("setContext", "git-base.gitEnabled", !0)
                                     } else o.dispose()
                                 };
-                                o.add(n.onDidChangeEnablement(h)), h(n.enabled)
+                                o.add(n.onDidChangeEnablement(m)), m(n.enabled)
                             })
                         };
-                        if (n) h();
+                        if (n) m();
                         else {
                             const e = s.extensions.onDidChange(() => {
-                                !n && s.extensions.getExtension("vscode.git") && (n = s.extensions.getExtension("vscode.git"), h(), e.dispose())
+                                !n && s.extensions.getExtension("vscode.git") && (n = s.extensions.getExtension("vscode.git"), m(), e.dispose())
                             });
                             o.add(e)
                         }
                         return o
-                    }(e, b, t))
+                    }(e, h, t))
                 };
                 const s = t(398),
                     n = t(183),
@@ -453,104 +446,8 @@
                     l = t(384),
                     u = t(558),
                     d = t(988),
-                    g = t(262),
-                    m = t(107),
-                    h = o(t(588))
-            },
-            262: function(e, r, t) {
-                "use strict";
-                var o, s = this && this.__createBinding || (Object.create ? function(e, r, t, o) {
-                        void 0 === o && (o = t);
-                        var s = Object.getOwnPropertyDescriptor(r, t);
-                        s && !("get" in s ? !r.__esModule : s.writable || s.configurable) || (s = {
-                            enumerable: !0,
-                            get: function() {
-                                return r[t]
-                            }
-                        }), Object.defineProperty(e, o, s)
-                    } : function(e, r, t, o) {
-                        void 0 === o && (o = t), e[o] = r[t]
-                    }),
-                    n = this && this.__setModuleDefault || (Object.create ? function(e, r) {
-                        Object.defineProperty(e, "default", {
-                            enumerable: !0,
-                            value: r
-                        })
-                    } : function(e, r) {
-                        e.default = r
-                    }),
-                    i = this && this.__importStar || (o = function(e) {
-                        return o = Object.getOwnPropertyNames || function(e) {
-                            var r = [];
-                            for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && (r[r.length] = t);
-                            return r
-                        }, o(e)
-                    }, function(e) {
-                        if (e && e.__esModule) return e;
-                        var r = {};
-                        if (null != e)
-                            for (var t = o(e), i = 0; i < t.length; i++) "default" !== t[i] && s(r, e, t[i]);
-                        return n(r, e), r
-                    });
-                Object.defineProperty(r, "__esModule", {
-                    value: !0
-                }), r.VscodeDevShareProvider = void 0;
-                const a = i(t(398)),
-                    c = t(937),
-                    p = t(676);
-                r.VscodeDevShareProvider = class {
-                    set hasGitHubRepositories(e) {
-                        a.commands.executeCommand("setContext", "github.hasGitHubRepo", e), this._hasGitHubRepositories = e, this.ensureShareProviderRegistration()
-                    }
-                    constructor(e) {
-                        this.gitAPI = e, this.id = "copyVscodeDevLink", this.label = a.l10n.t("Copy vscode.dev Link"), this.priority = 10, this._hasGitHubRepositories = !1, this.disposables = [], this.initializeGitHubRepoContext()
-                    }
-                    dispose() {
-                        this.disposables.forEach(e => e.dispose())
-                    }
-                    initializeGitHubRepoContext() {
-                        this.gitAPI.repositories.find(e => (0, c.repositoryHasGitHubRemote)(e)) ? (this.hasGitHubRepositories = !0, a.commands.executeCommand("setContext", "github.hasGitHubRepo", !0)) : this.disposables.push(this.gitAPI.onDidOpenRepository(async e => {
-                            await e.status(), (0, c.repositoryHasGitHubRemote)(e) && (a.commands.executeCommand("setContext", "github.hasGitHubRepo", !0), this.hasGitHubRepositories = !0)
-                        })), this.disposables.push(this.gitAPI.onDidCloseRepository(() => {
-                            this.gitAPI.repositories.find(e => (0, c.repositoryHasGitHubRemote)(e)) || (this.hasGitHubRepositories = !1)
-                        }))
-                    }
-                    ensureShareProviderRegistration() {
-                        if ("codespaces" !== a.env.appHost && !this.shareProviderRegistration && this._hasGitHubRepositories) {
-                            const e = a.window.registerShareProvider({
-                                scheme: "file"
-                            }, this);
-                            this.shareProviderRegistration = e, this.disposables.push(e)
-                        } else this.shareProviderRegistration && !this._hasGitHubRepositories && (this.shareProviderRegistration.dispose(), this.shareProviderRegistration = void 0)
-                    }
-                    async provideShare(e, r) {
-                        const t = (0, p.getRepositoryForFile)(this.gitAPI, e.resourceUri);
-                        if (!t) return;
-                        let o;
-                        if (await (0, p.ensurePublished)(t, e.resourceUri), t.state.remotes.find(e => {
-                                if (e.fetchUrl) {
-                                    const r = (0, c.getRepositoryFromUrl)(e.fetchUrl);
-                                    if (r && e.name === t.state.HEAD?.upstream?.remote) return void(o = r);
-                                    r && !o && (o = r)
-                                }
-                            }), !o) return;
-                        const s = t?.state.HEAD?.name ? (0, p.encodeURIComponentExceptSlashes)(t.state.HEAD?.name) : t?.state.HEAD?.commit,
-                            n = (0, p.encodeURIComponentExceptSlashes)(e.resourceUri.path.substring(t?.rootUri.path.length)),
-                            i = function(e) {
-                                if ("vscode-notebook-cell" === e.resourceUri.scheme) {
-                                    const r = a.window.visibleNotebookEditors.find(r => r.notebook.uri.fsPath === e.resourceUri.fsPath),
-                                        t = r?.notebook.getCells().find(r => r.document.uri.fragment === e.resourceUri?.fragment),
-                                        o = t?.index ?? r?.selection.start;
-                                    return (0, p.notebookCellRangeString)(o, e.selection)
-                                }
-                                return (0, p.rangeString)(e.selection)
-                            }(e);
-                        return a.Uri.parse(`${this.getVscodeDevHost()}/${o.owner}/${o.repo}/blob/${s}${n}${i}`)
-                    }
-                    getVscodeDevHost() {
-                        return `https://${a.env.appName.toLowerCase().includes("insiders")?"insiders.":""}vscode.dev/github`
-                    }
-                }
+                    g = t(107),
+                    m = o(t(588))
             },
             278: e => {
                 "use strict";
@@ -578,7 +475,7 @@
             401: (e, r, t) => {
                 "use strict";
                 t.r(r), t.d(r, {
-                    Octokit: () => C
+                    Octokit: () => F
                 });
                 var o = t(407);
 
@@ -626,7 +523,7 @@
                     g = "(?:[a-zA-Z0-9_-]+)",
                     m = new RegExp(`^${g}\\.${g}\\.${g}$`),
                     h = m.test.bind(m);
-                async function b(e) {
+                async function E(e) {
                     const r = h(e),
                         t = e.startsWith("v1.") || e.startsWith("ghs_"),
                         o = e.startsWith("ghu_");
@@ -636,7 +533,7 @@
                         tokenType: r ? "app" : t ? "installation" : o ? "user-to-server" : "oauth"
                     }
                 }
-                async function E(e, r, t, o) {
+                async function b(e, r, t, o) {
                     const s = r.endpoint.merge(t, o);
                     return s.headers.authorization = function(e) {
                         return 3 === e.split(/\./).length ? `bearer ${e}` : `token ${e}`
@@ -645,15 +542,15 @@
                 var T = function(e) {
                     if (!e) throw new Error("[@octokit/auth-token] No token passed to createTokenAuth");
                     if ("string" != typeof e) throw new Error("[@octokit/auth-token] Token passed to createTokenAuth is not a string");
-                    return e = e.replace(/^(token|bearer) +/i, ""), Object.assign(b.bind(null, e), {
-                        hook: E.bind(null, e)
+                    return e = e.replace(/^(token|bearer) +/i, ""), Object.assign(E.bind(null, e), {
+                        hook: b.bind(null, e)
                     })
                 };
-                const f = "6.1.4",
-                    w = () => {},
+                const w = "6.1.4",
+                    f = () => {},
                     _ = console.warn.bind(console),
                     y = console.error.bind(console),
-                    v = `octokit-core.js/${f} ${(0,o.$)()}`;
+                    v = `octokit-core.js/${w} ${(0,o.$)()}`;
 
                 function P(e) {
                     e.hook.wrap("request", (r, t) => {
@@ -1958,8 +1855,8 @@
                     }
                 }
                 U.VERSION = "13.3.1";
-                const C = class {
-                    static VERSION = f;
+                const F = class {
+                    static VERSION = w;
                     static defaults(e) {
                         return class extends(this) {
                             constructor(...r) {
@@ -1991,8 +1888,8 @@
                                 }
                             };
                         if (t.headers["user-agent"] = e.userAgent ? `${e.userAgent} ${v}` : v, e.baseUrl && (t.baseUrl = e.baseUrl), e.previews && (t.mediaType.previews = e.previews), e.timeZone && (t.headers["time-zone"] = e.timeZone), this.request = u.E.defaults(t), this.graphql = (0, d.withCustomRequest)(this.request).defaults(t), this.log = Object.assign({
-                                debug: w,
-                                info: w,
+                                debug: f,
+                                info: f,
                                 warn: _,
                                 error: y
                             }, e.log), this.hook = r, e.authStrategy) {
@@ -2083,39 +1980,24 @@
                         } catch (e) {
                             a.window.showErrorMessage(e.message)
                         }
-                    })), r.add(a.commands.registerCommand("github.copyVscodeDevLink", async r => u(e, !0, r))), r.add(a.commands.registerCommand("github.copyVscodeDevLinkFile", async r => u(e, !1, r))), r.add(a.commands.registerCommand("github.copyVscodeDevLinkWithoutRange", async r => u(e, !0, r, !1))), r.add(a.commands.registerCommand("github.openOnGitHub", async (e, r) => {
+                    })), r.add(a.commands.registerCommand("github.openOnGitHub", async (e, r) => {
                         const t = (0, l.getCommitLink)(e, r);
                         a.env.openExternal(a.Uri.parse(t))
                     })), r.add(a.commands.registerCommand("github.graph.openOnGitHub", async (r, t) => {
                         if (!r || !t) return;
                         const o = e.repositories.find(e => e.rootUri.fsPath === r.rootUri?.fsPath);
-                        o && await d(o, t.id)
+                        o && await u(o, t.id)
                     })), r.add(a.commands.registerCommand("github.timeline.openOnGitHub", async (r, t) => {
                         if (!r.id || !t) return;
                         const o = e.getRepository(t);
-                        o && await d(o, r.id)
-                    })), r.add(a.commands.registerCommand("github.openOnVscodeDev", async () => async function(e) {
-                        try {
-                            const r = await (0, l.getLink)(e, !0, !1, (0, l.getVscodeDevHost)(), "headlink");
-                            return r ? a.Uri.parse(r) : void 0
-                        } catch (e) {
-                            return void(e instanceof a.CancellationError || a.window.showErrorMessage(e.message))
-                        }
-                    }(e))), r
+                        o && await u(o, r.id)
+                    })), r
                 };
                 const a = i(t(398)),
                     c = t(566),
                     p = t(937),
                     l = t(676);
-                async function u(e, r, t, o = !0) {
-                    try {
-                        const s = await (0, l.getLink)(e, r, !0, (0, l.getVscodeDevHost)(), "headlink", t, o);
-                        if (s) return a.env.clipboard.writeText(s)
-                    } catch (e) {
-                        e instanceof a.CancellationError || a.window.showErrorMessage(e.message)
-                    }
-                }
-                async function d(e, r) {
+                async function u(e, r) {
                     const t = await e.getBranches({
                             contains: r,
                             remote: !0
@@ -2595,9 +2477,9 @@
                         return c
                     });
                     if (!h) return;
-                    const b = a.l10n.t("Open on GitHub");
-                    a.window.showInformationMessage(a.l10n.t('Successfully published the "{0}" repository to GitHub.', `${o}/${n}`), b).then(e => {
-                        e === b && a.commands.executeCommand("vscode.open", a.Uri.parse(h.html_url))
+                    const E = a.l10n.t("Open on GitHub");
+                    a.window.showInformationMessage(a.l10n.t('Successfully published the "{0}" repository to GitHub.', `${o}/${n}`), E).then(e => {
+                        e === E && a.commands.executeCommand("vscode.open", a.Uri.parse(h.html_url))
                     })
                 };
                 const a = i(t(398)),
@@ -2722,22 +2604,22 @@
                                 range: void 0
                             }
                         }(n),
-                        E = p?.uri,
+                        b = p?.uri,
                         T = e.repositories.find(e => (0, c.repositoryHasGitHubRemote)(e)),
-                        f = (E ? l(e, E) : T) ?? T;
-                    if (!f) return;
-                    let w;
-                    if (t && E && await b(f, E), f.state.remotes.find(e => {
+                        w = (b ? l(e, b) : T) ?? T;
+                    if (!w) return;
+                    let f;
+                    if (t && b && await E(w, b), w.state.remotes.find(e => {
                             if (e.fetchUrl) {
                                 const r = (0, c.getRepositoryFromUrl)(e.fetchUrl);
-                                if (r && e.name === f.state.HEAD?.upstream?.remote) return void(w = r);
-                                r && !w && (w = r)
+                                if (r && e.name === w.state.HEAD?.upstream?.remote) return void(f = r);
+                                r && !f && (f = r)
                             }
-                        }), !w) return;
-                    const _ = f.state.HEAD ? `/blob/${"headlink"===s&&f.state.HEAD.name?h(f.state.HEAD.name):f.state.HEAD?.commit}` : "",
-                        y = `${o}/${w.owner}/${w.repo}${_}`;
-                    if (!E) return y;
-                    const v = h(E.path.substring(f.rootUri.path.length));
+                        }), !f) return;
+                    const _ = w.state.HEAD ? `/blob/${"headlink"===s&&w.state.HEAD.name?h(w.state.HEAD.name):w.state.HEAD?.commit}` : "",
+                        y = `${o}/${f.owner}/${f.repo}${_}`;
+                    if (!b) return y;
+                    const v = h(b.path.substring(w.rootUri.path.length));
                     return `${y}${p.type===u.File?r?`${v}${i?g(p.range):""}`:"":r?`${v}${i?m(p.cellIndex,p.range):""}`:""}`
                 }, r.getAvatarLink = function(e, r) {
                     return `https://avatars.githubusercontent.com/u/${e}?s=${r}`
@@ -2749,9 +2631,7 @@
                     const o = (0, c.getRepositoryFromUrl)(e);
                     if (!o) throw new Error("Invalid repository URL provided");
                     return `${t}/${o.owner}/${o.repo}/commit/${r}`
-                }, r.getVscodeDevHost = function() {
-                    return `https://${a.env.appName.toLowerCase().includes("insiders")?"insiders.":""}vscode.dev/github`
-                }, r.ensurePublished = b;
+                }, r.ensurePublished = E;
                 const a = i(t(398)),
                     c = t(937);
 
@@ -2785,7 +2665,7 @@
                 function h(e) {
                     return e.split("/").map(e => encodeURIComponent(e)).join("/")
                 }
-                async function b(e, r) {
+                async function E(e, r) {
                     if (await e.status(), (0 === e.state.HEAD?.type || 2 === e.state.HEAD?.type) && !e?.state.HEAD?.upstream) {
                         const e = a.l10n.t("Publish Branch & Copy Link");
                         if (await a.window.showInformationMessage(a.l10n.t("The current branch is not published to the remote. Would you like to publish your branch before copying a link?"), {
@@ -2907,7 +2787,7 @@
                     return ";" === e || "&" === e || "?" === e
                 }
 
-                function b(e, r) {
+                function E(e, r) {
                     var t = ["+", "#", ".", "/", ";", "?", "&"];
                     return e = e.replace(/\{([^\{\}]+)\}|([^\{\}]+)/g, function(e, o, s) {
                         if (o) {
@@ -2945,7 +2825,7 @@
                     }), "/" === e ? e : e.replace(/\/$/, "")
                 }
 
-                function E(e) {
+                function b(e) {
                     let r, t = e.method.toUpperCase(),
                         o = (e.url || "/").replace(/:([a-z]\w+)/g, "{$1}"),
                         s = Object.assign({}, e.headers),
@@ -2956,7 +2836,7 @@
                     }(o);
                     var a;
                     o = (a = o, {
-                        expand: b.bind(null, a)
+                        expand: E.bind(null, a)
                     }).expand(n), /^http/.test(o) || (o = e.baseUrl + o);
                     const u = l(n, Object.keys(e).filter(e => i.includes(e)).concat("baseUrl"));
                     if (!/application\/octet-stream/i.test(s.accept) && (e.mediaType.format && (s.accept = s.accept.split(/,/).map(r => r.replace(/application\/vnd(\.\w+)(\.v3)?(\.\w+)?(\+json)?$/, `application/vnd$1$2.${e.mediaType.format}`)).join(",")), o.endsWith("/graphql") && e.mediaType.previews?.length)) {
@@ -2979,16 +2859,16 @@
                 }
 
                 function T(e, r, t) {
-                    return E(a(e, r, t))
+                    return b(a(e, r, t))
                 }
-                var f = function e(r, t) {
+                var w = function e(r, t) {
                         const o = a(r, t),
                             s = T.bind(null, o);
                         return Object.assign(s, {
                             DEFAULTS: o,
                             defaults: e.bind(null, o),
                             merge: a.bind(null, o),
-                            parse: E
+                            parse: b
                         })
                     }(null, {
                         method: "GET",
@@ -3001,7 +2881,7 @@
                             format: ""
                         }
                     }),
-                    w = t(773);
+                    f = t(773);
                 class _ extends Error {
                     name;
                     status;
@@ -3096,7 +2976,7 @@
                 async function v(e) {
                     const r = e.headers.get("content-type");
                     if (!r) return e.text().catch(() => "");
-                    const t = (0, w.xL)(r);
+                    const t = (0, f.xL)(r);
                     if (! function(e) {
                             return "application/json" === e.type || "application/scim+json" === e.type
                         }(t)) return t.type.startsWith("text/") || "utf-8" === t.parameters.charset?.toLowerCase() ? e.text().catch(() => "") : e.arrayBuffer().catch(() => new ArrayBuffer(0));
@@ -3123,7 +3003,7 @@
                         endpoint: o,
                         defaults: e.bind(null, o)
                     })
-                }(f, {
+                }(w, {
                     headers: {
                         "user-agent": `octokit-request.js/0.0.0-development ${(0,o.$)()}`
                     }
@@ -3209,7 +3089,7 @@
                         s = await c.window.showQuickPick(t, o);
                     return s?.template
                 }
-                class b {
+                class E {
                     constructor() {
                         this.items = new Map
                     }
@@ -3225,7 +3105,7 @@
                 }
                 r.GithubPushErrorHandler = class {
                     constructor(e) {
-                        this.telemetryReporter = e, this.disposables = [], this.commandErrors = new b, this.disposables.push(c.workspace.registerTextDocumentContentProvider("github-output", this.commandErrors))
+                        this.telemetryReporter = e, this.disposables = [], this.commandErrors = new E, this.disposables.push(c.workspace.registerTextDocumentContentProvider("github-output", this.commandErrors))
                     }
                     async handlePushError(e, r, t, o) {
                         if ("PermissionDenied" !== o.gitErrorCode && "PushRejected" !== o.gitErrorCode) return !1;
@@ -3252,8 +3132,8 @@
                             }, n, i) !== n) return;
                         const d = /^([^:]*):([^:]*)$/.exec(t),
                             g = d ? d[1] : t;
-                        let b = d ? d[2] : t;
-                        const [E, T] = await c.window.withProgress({
+                        let E = d ? d[2] : t;
+                        const [b, T] = await c.window.withProgress({
                             location: c.ProgressLocation.Notification,
                             cancellable: !1,
                             title: c.l10n.t("Create GitHub fork")
@@ -3270,7 +3150,7 @@
                                     if (!e) throw new Error("Unable to fork respository");
                                     if (i = e.repository, e.ref) {
                                         let r = e.ref;
-                                        r.startsWith("refs/heads/") && (r = r.substr(11)), b = r
+                                        r.startsWith("refs/heads/") && (r = r.substr(11)), E = r
                                     }
                                 } else i = (await n.repos.createFork({
                                     owner: o,
@@ -3286,7 +3166,7 @@
                             const a = "https" === c.workspace.getConfiguration("github").get("gitProtocol") ? i.clone_url : i.ssh_url;
                             await e.addRemote("origin", a);
                             try {
-                                await e.fetch("origin", b), await e.setBranchUpstream(g, `origin/${b}`)
+                                await e.fetch("origin", E), await e.setBranchUpstream(g, `origin/${E}`)
                             } catch {}
                             return await e.push("origin", g, !0), [n, i]
                         });
@@ -3301,7 +3181,7 @@
                                         cancellable: !1,
                                         title: c.l10n.t("Creating GitHub Pull Request...")
                                     }, async r => {
-                                        let t = `Update ${b}`;
+                                        let t = `Update ${E}`;
                                         const n = e.state.HEAD?.name;
                                         let i;
                                         if (n) {
@@ -3316,15 +3196,15 @@
                                         }
                                         const {
                                             data: l
-                                        } = await E.pulls.create({
+                                        } = await b.pulls.create({
                                             owner: o,
                                             repo: s,
                                             title: t,
                                             body: i,
-                                            head: `${T.owner.login}:${b}`,
+                                            head: `${T.owner.login}:${E}`,
                                             base: T.default_branch
                                         });
-                                        return await e.setConfig(`branch.${g}.remote`, "upstream"), await e.setConfig(`branch.${g}.merge`, `refs/heads/${b}`), await e.setConfig(`branch.${g}.github-pr-owner-number`, `${o}#${s}#${l.number}`), l
+                                        return await e.setConfig(`branch.${g}.remote`, "upstream"), await e.setConfig(`branch.${g}.merge`, `refs/heads/${E}`), await e.setConfig(`branch.${g}.github-pr-owner-number`, `${o}#${s}#${l.number}`), l
                                     }),
                                     t = c.l10n.t("Open PR");
                                 await c.window.showInformationMessage(c.l10n.t('The PR "{0}/{1}#{2}" was successfully created on GitHub.', o, s, r.number), t) === t && await c.commands.executeCommand("vscode.open", c.Uri.parse(r.html_url))
@@ -3553,4 +3433,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/github/dist/extension.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/extensions/github/dist/extension.js.map

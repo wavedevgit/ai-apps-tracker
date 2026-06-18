@@ -21,10 +21,10 @@ exports.id = 411, exports.ids = [411], exports.modules = {
             BCS_AGENT_STORE_BUCKET_HOSTS: () => oe,
             BackoffScheduler: () => r,
             BcsAgentStoreTransport: () => x,
-            BoundedConcurrencyQueue: () => L,
+            BoundedConcurrencyQueue: () => T,
             DEFAULT_MAX_FILE_SIZE_BYTES: () => dt,
             DISK_FULL_REPEAT_WINDOW_MS: () => Z,
-            HttpAgentStoreBlobTransfer: () => kt,
+            HttpAgentStoreBlobTransfer: () => vt,
             LocalAgentStoreIndex: () => j,
             LocalIndexError: () => G,
             MountScopedAgentStoreClient: () => te,
@@ -60,7 +60,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
             createHostAllowlistValidator: () => ae,
             defaultPresignedUrlValidator: () => se,
             ensureSecureDirectoryChain: () => D.Ew,
-            getCurrentStoreLockIdentity: () => Le,
+            getCurrentStoreLockIdentity: () => Te,
             hashRelPath: () => Ye,
             isAgentStoreId: () => D.Y6,
             isAgentStoreShareMountKey: () => D.A8,
@@ -83,10 +83,10 @@ exports.id = 411, exports.ids = [411], exports.modules = {
             resolveSafeChildPath: () => p,
             resolveStoreBase: () => D.v5,
             safeAddBreadcrumb: () => Q,
-            safeNotifyListener: () => ke,
+            safeNotifyListener: () => ve,
             safeWalk: () => w,
             setWindowsStoreAcl: () => D.xD,
-            tryAcquireStoreLock: () => Te,
+            tryAcquireStoreLock: () => Le,
             validateRawSegmentName: () => g
         });
         class r {
@@ -337,7 +337,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                 files: [],
                 refusals: []
             };
-            return k({
+            return v({
                 fsModule: s,
                 absDir: r,
                 relDir: "",
@@ -348,7 +348,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
             }), a
         }
 
-        function k({
+        function v({
             fsModule: e,
             absDir: t,
             relDir: n,
@@ -386,7 +386,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                         a = g(i.name)
                     } catch (e) {
                         r.refusals.push({
-                            relPath: v({
+                            relPath: k({
                                 dir: n,
                                 segment: i.name
                             }),
@@ -394,7 +394,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                         });
                         continue
                     }
-                    const o = v({
+                    const o = k({
                             dir: n,
                             segment: a
                         }),
@@ -425,7 +425,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                     h.isSymbolicLink() ? r.refusals.push({
                         relPath: o,
                         reason: "symlink_refused"
-                    }) : h.isDirectory() ? k({
+                    }) : h.isDirectory() ? v({
                         fsModule: e,
                         absDir: d,
                         relDir: o,
@@ -450,7 +450,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                 })
         }
 
-        function v({
+        function k({
             dir: e,
             segment: t
         }) {
@@ -617,6 +617,12 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                     name: "MarkFollowupEditing",
                     I: M.XLg,
                     O: M.NxT,
+                    kind: _.MethodKind.Unary
+                },
+                requestLocalAgentRemoteControl: {
+                    name: "RequestLocalAgentRemoteControl",
+                    I: M.eVU,
+                    O: M.ACY,
                     kind: _.MethodKind.Unary
                 },
                 getCursorServerUrl: {
@@ -889,6 +895,12 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                     O: M.A$2,
                     kind: _.MethodKind.Unary
                 },
+                getEnvironment: {
+                    name: "GetEnvironment",
+                    I: M.pgg,
+                    O: M.$KW,
+                    kind: _.MethodKind.Unary
+                },
                 resolveOrCreateMultiRepoEnvironment: {
                     name: "ResolveOrCreateMultiRepoEnvironment",
                     I: M.fTZ,
@@ -1141,6 +1153,18 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                     O: M.bt2,
                     kind: _.MethodKind.Unary
                 },
+                syncLiveActivity: {
+                    name: "SyncLiveActivity",
+                    I: M._ps,
+                    O: M.Kft,
+                    kind: _.MethodKind.Unary
+                },
+                deleteLiveActivity: {
+                    name: "DeleteLiveActivity",
+                    I: M.ccq,
+                    O: M.car,
+                    kind: _.MethodKind.Unary
+                },
                 verifyBackgroundComposerAccess: {
                     name: "VerifyBackgroundComposerAccess",
                     I: M.BUE,
@@ -1341,10 +1365,10 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                     return {
                         token: n.token,
                         expiresAtMs: Number(n.expiresAtMs),
-                        agentIds: [...n.agentIds]
+                        storeIds: [...n.storeIds.length > 0 ? n.storeIds : n.agentIds]
                     }
                 } catch (e) {
-                    throw T(e)
+                    throw L(e)
                 }
             }
             async listFiles({
@@ -1382,7 +1406,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                         expiresAtMs: Number(e.expiresAtMs)
                     }))
                 } catch (e) {
-                    throw T(e)
+                    throw L(e)
                 }
             }
             async presignWrites({
@@ -1416,7 +1440,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                         }
                     })
                 } catch (e) {
-                    throw T(e)
+                    throw L(e)
                 }
             }
             fetchCachedFlatFileList(e) {
@@ -1444,7 +1468,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                         serverMtimeMs: Number(e.lastModifiedMs)
                     }))
                 } catch (e) {
-                    throw T(e)
+                    throw L(e)
                 }
             }
         }
@@ -1469,10 +1493,10 @@ exports.id = 411, exports.ids = [411], exports.modules = {
             return e.replaceAll("\\", "/").replace(/^\/+/, "").replace(/\/+$/, "")
         }
 
-        function T(e) {
+        function L(e) {
             return e instanceof R.T && (e.code === C.C.Unauthenticated || e.code === C.C.PermissionDenied) ? new i(e.message) : e
         }
-        class L {
+        class T {
             max;
             inFlight = 0;
             waiting = [];
@@ -2054,7 +2078,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
             onNetworkError() {}
         });
 
-        function ke(e, t, n) {
+        function ve(e, t, n) {
             if (void 0 === e) return;
             const s = e[t];
             if ("function" != typeof s) return;
@@ -2064,10 +2088,10 @@ exports.id = 411, exports.ids = [411], exports.modules = {
             } catch (e) {
                 return
             }
-            null != r && "function" == typeof r.then && r.then(ve, ve)
+            null != r && "function" == typeof r.then && r.then(ke, ke)
         }
 
-        function ve() {}
+        function ke() {}
         const Pe = {
             tokenMinted() {},
             tokenRefreshUnauthorized() {}
@@ -2166,7 +2190,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
         }
 
         function Ie(e) {
-            const t = e.agentIds[0];
+            const t = e.storeIds[0];
             if (void 0 === t || "" === t) throw new i("Agent store token did not include a scoped store id");
             return t
         }
@@ -2269,7 +2293,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                     attempt: n,
                     exhausted: s
                 };
-                ke(this.listener, "onNetworkError", r)
+                ve(this.listener, "onNetworkError", r)
             }
             computeAttemptDelayMs(e) {
                 const t = this.baseDelayMs * Math.pow(this.multiplier, e - 1);
@@ -2343,14 +2367,14 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                 void 0 !== this.timer && clearInterval(this.timer)
             }
         }
-        async function Te(e) {
+        async function Le(e) {
             const t = function(e) {
                 var t, n, s, r, i, a, d, h, c;
                 return {
                     lockPath: l.resolve(e.lockPath),
                     windowId: e.windowId,
                     hostname: null !== (t = e.hostname) && void 0 !== t ? t : Ae.hostname(),
-                    identity: null !== (n = e.identity) && void 0 !== n ? n : Le(),
+                    identity: null !== (n = e.identity) && void 0 !== n ? n : Te(),
                     now: null !== (s = e.now) && void 0 !== s ? s : Date.now,
                     pid: null !== (r = e.pid) && void 0 !== r ? r : process.pid,
                     processExists: null !== (i = e.processExists) && void 0 !== i ? i : Ge,
@@ -2386,7 +2410,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
             return (0, D.Ew)(l.dirname(t.lockPath)), (0, D.rs)(t.lockPath), De(t, !1)
         }
 
-        function Le(e = process.platform) {
+        function Te(e = process.platform) {
             var t;
             if ("win32" === e) return {
                 sid: qe()
@@ -2579,10 +2603,10 @@ exports.id = 411, exports.ids = [411], exports.modules = {
         }) {
             "symlink_refused" !== t.code && "toctou_swap_refused" !== t.code ? function(e) {
                 return "fs_write_failed" === e.code || "fs_read_failed" === e.code
-            }(t) && ke(n, "onDiskFull", {
+            }(t) && ve(n, "onDiskFull", {
                 agentId: e,
                 op: "fs_read_failed" === t.code ? "fs_read" : "fs_write"
-            }) : ke(n, "onSymlinkRefused", {
+            }) : ve(n, "onSymlinkRefused", {
                 agentId: e,
                 op: "fs_read",
                 relPathHash: Ye({
@@ -2701,16 +2725,16 @@ exports.id = 411, exports.ids = [411], exports.modules = {
 
         function lt() {
             return {
-                s3: new L({
+                s3: new T({
                     max: 8
                 }),
-                list: new L({
+                list: new T({
                     max: 4
                 }),
-                hash: new L({
+                hash: new T({
                     max: 4
                 }),
-                presign: new L({
+                presign: new T({
                     max: 4
                 })
             }
@@ -2754,7 +2778,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
                 var t, n, s, r, i, a, o, d;
                 if (!l.isAbsolute(e.filesDir)) throw new Error(`AgentStoreSyncEngine.filesDir must be absolute: ${e.filesDir}`);
                 if (!l.isAbsolute(e.tmpDir)) throw new Error(`AgentStoreSyncEngine.tmpDir must be absolute: ${e.tmpDir}`);
-                this.agentId = e.agentId, this.filesDir = l.resolve(e.filesDir), this.tmpDir = l.resolve(e.tmpDir), this.client = e.client, this.index = e.index, this.queues = e.queues, this.maxFileSizeBytes = null !== (t = e.maxFileSizeBytes) && void 0 !== t ? t : dt, this.blobTransfer = null !== (n = e.blobTransfer) && void 0 !== n ? n : new kt({
+                this.agentId = e.agentId, this.filesDir = l.resolve(e.filesDir), this.tmpDir = l.resolve(e.tmpDir), this.client = e.client, this.index = e.index, this.queues = e.queues, this.maxFileSizeBytes = null !== (t = e.maxFileSizeBytes) && void 0 !== t ? t : dt, this.blobTransfer = null !== (n = e.blobTransfer) && void 0 !== n ? n : new vt({
                     maxFileSizeBytes: this.maxFileSizeBytes
                 }), this.fetchImpl = null !== (s = e.fetch) && void 0 !== s ? s : globalThis.fetch.bind(globalThis), this.now = null !== (r = e.now) && void 0 !== r ? r : Date.now, this.validatePresignedUrl = e.validatePresignedUrl, this.lockProvider = e.lockProvider, this.syncMode = null !== (i = e.syncMode) && void 0 !== i ? i : "readWrite", this.onStateChanged = e.onStateChanged, this.passiveRetryIntervalMs = null !== (a = e.passiveRetryIntervalMs) && void 0 !== a ? a : 5e3, this.passiveIndexPollIntervalMs = null !== (o = e.passiveIndexPollIntervalMs) && void 0 !== o ? o : 2e3, this.indexFilePath = e.indexPath, this.onPassiveIndexUpdated = e.onPassiveIndexUpdated, this.state = null !== (d = e.initialState) && void 0 !== d ? d : "running", "running" === this.state && void 0 !== this.lockProvider && (this.state = "paused")
             }
@@ -3632,7 +3656,7 @@ exports.id = 411, exports.ids = [411], exports.modules = {
             return e instanceof Error && "string" == typeof e.code
         }
         const wt = new Set(["content-md5", "content-type"]);
-        class kt {
+        class vt {
             maxFileSizeBytes;
             allowInsecureScheme;
             constructor(e = {}) {
@@ -3733,4 +3757,4 @@ exports.id = 411, exports.ids = [411], exports.modules = {
         }
     }
 };
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-agent-exec/dist/411.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/extensions/cursor-agent-exec/dist/411.js.map

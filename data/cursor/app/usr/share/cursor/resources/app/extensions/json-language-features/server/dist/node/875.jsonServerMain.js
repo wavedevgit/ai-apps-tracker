@@ -13176,4 +13176,4 @@ exports.id = 875, exports.ids = [875], exports.modules = {
                             }(i || (t.DidChangeWorkspaceFoldersNotification = i = {}))
                         }
                     };
-                    //# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/json-language-features/server/dist/node/875.jsonServerMain.js.map
+                    //# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/extensions/json-language-features/server/dist/node/875.jsonServerMain.js.map

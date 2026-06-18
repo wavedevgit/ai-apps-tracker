@@ -591,7 +591,7 @@
                         this.inputEvent = e, this.listening && (this.inputEventListener.dispose(), this.inputEventListener = e(this.emitter.fire, this.emitter))
                     }
                     dispose() {
-                        this.inputEventListener.dispose(), this.emitter.dispose()
+                        this.inputEventListener.dispose(), this.inputEvent = l.None, this.emitter.dispose()
                     }
                 }, t.ValueWithChangeEvent = class {
                     static
@@ -2929,10 +2929,10 @@
                             return new h.LinesDiff(e, [], R)
                         }
                         const S = [],
-                            D = r => {
+                            A = r => {
                                 if (d)
                                     for (let s = 0; s < r; s++) {
-                                        const r = A + s,
+                                        const r = D + s,
                                             o = M + s;
                                         if (e[r] !== t[o]) {
                                             const s = this.refineDiff(e, t, new f.SequenceDiff(new a.OffsetRange(r, r + 1), new a.OffsetRange(o, o + 1)), i, d, n);
@@ -2941,15 +2941,15 @@
                                         }
                                     }
                             };
-                        let A = 0,
+                        let D = 0,
                             M = 0;
                         for (const r of C) {
-                            (0, s.assertFn)(() => r.seq1Range.start - A === r.seq2Range.start - M), D(r.seq1Range.start - A), A = r.seq1Range.endExclusive, M = r.seq2Range.endExclusive;
+                            (0, s.assertFn)(() => r.seq1Range.start - D === r.seq2Range.start - M), A(r.seq1Range.start - D), D = r.seq1Range.endExclusive, M = r.seq2Range.endExclusive;
                             const o = this.refineDiff(e, t, r, i, d, n);
                             o.hitTimeout && (R = !0);
                             for (const e of o.mappings) S.push(e)
                         }
-                        D(e.length - A);
+                        A(e.length - D);
                         const O = (0, c.lineRangeMappingFromRangeMappings)(S, new l.ArrayText(e), new l.ArrayText(t));
                         let P = [];
                         if (n.computeMoves && (P = this.computeMoves(O, e, t, _, v, i, d, n)), (0, s.assertFn)(() => {
@@ -3998,8 +3998,8 @@
                     })
                 }, t.removeAnsiEscapeCodes = x, t.removeAnsiEscapeCodesFromPrompt = function(e) {
                     return x(e).replace(S, "")
-                }, t.startsWithUTF8BOM = D, t.stripUTF8BOM = function(e) {
-                    return D(e) ? e.substr(1) : e
+                }, t.startsWithUTF8BOM = A, t.stripUTF8BOM = function(e) {
+                    return A(e) ? e.substr(1) : e
                 }, t.fuzzyContains = function(e, t) {
                     if (!e || !t) return !1;
                     if (e.length < t.length) return !1;
@@ -4181,7 +4181,7 @@
                         for (; !t.eol();) {
                             const n = t.offset,
                                 r = e.getGraphemeBreakType(t.nextCodePoint());
-                            if (A(i, r)) {
+                            if (D(i, r)) {
                                 t.setOffset(n);
                                 break
                             }
@@ -4197,7 +4197,7 @@
                         for (; t.offset > 0;) {
                             const n = t.offset,
                                 r = e.getGraphemeBreakType(t.prevCodePoint());
-                            if (A(r, i)) {
+                            if (D(r, i)) {
                                 t.setOffset(n);
                                 break
                             }
@@ -4232,11 +4232,11 @@
                 }
                 const S = /\\\[.*?\\\]/g;
 
-                function D(e) {
+                function A(e) {
                     return !!(e && e.length > 0 && 65279 === e.charCodeAt(0))
                 }
 
-                function A(e, t) {
+                function D(e, t) {
                     return 0 === e ? 5 !== t && 7 !== t : !(2 === e && 3 === t || 4 !== e && 2 !== e && 3 !== e && 4 !== t && 2 !== t && 3 !== t && (8 === e && (8 === t || 9 === t || 11 === t || 12 === t) || !(11 !== e && 9 !== e || 9 !== t && 10 !== t) || (12 === e || 10 === e) && 10 === t || 5 === t || 13 === t || 7 === t || 1 === e || 13 === e && 14 === t || 6 === e && 6 === t))
                 }
                 t.UTF8_BOM_CHARACTER = String.fromCharCode(65279);
@@ -4600,38 +4600,42 @@
                 Object.defineProperty(t, "__esModule", {
                     value: !0
                 }), t.VSBuffer = void 0, t.setOversizeVSBufferDecodeThreshold = function(e) {
-                    g = e
+                    m = e
                 }, t.setOversizeVSBufferDecodeHandler = function(e) {
                     d = e
-                }, t.binaryIndexOf = p, t.readUInt16LE = function(e, t) {
+                }, t.setLargeVSBufferAllocationThreshold = function(e) {
+                    p = e
+                }, t.setLargeVSBufferAllocationHandler = function(e) {
+                    g = e
+                }, t.binaryIndexOf = _, t.readUInt16LE = function(e, t) {
                     return (0 | e[t + 0]) >>> 0 | e[t + 1] << 8 >>> 0
                 }, t.writeUInt16LE = function(e, t, n) {
                     e[n + 0] = 255 & t, t >>>= 8, e[n + 1] = 255 & t
-                }, t.readUInt32BE = b, t.writeUInt32BE = L, t.readUInt32LE = _, t.writeUInt32LE = v, t.readUInt8 = E, t.writeUInt8 = w, t.readableToBuffer = function(e) {
-                    return u.consumeReadable(e, e => m.concat(e))
+                }, t.readUInt32BE = v, t.writeUInt32BE = E, t.readUInt32LE = w, t.writeUInt32LE = N, t.readUInt8 = y, t.writeUInt8 = C, t.readableToBuffer = function(e) {
+                    return u.consumeReadable(e, e => L.concat(e))
                 }, t.bufferToReadable = function(e) {
                     return u.toReadable(e)
-                }, t.streamToBuffer = N, t.bufferedStreamToBuffer = async function(e) {
-                    return e.ended ? m.concat(e.buffer) : m.concat([...e.buffer, await N(e.stream)])
+                }, t.streamToBuffer = R, t.bufferedStreamToBuffer = async function(e) {
+                    return e.ended ? L.concat(e.buffer) : L.concat([...e.buffer, await R(e.stream)])
                 }, t.bufferToStream = function(e) {
-                    return u.toStream(e, e => m.concat(e))
+                    return u.toStream(e, e => L.concat(e))
                 }, t.streamToBufferReadableStream = function(e) {
                     return u.transform(e, {
-                        data: e => "string" == typeof e ? m.fromString(e) : m.wrap(e)
-                    }, e => m.concat(e))
+                        data: e => "string" == typeof e ? L.fromString(e) : L.wrap(e)
+                    }, e => L.concat(e))
                 }, t.newWriteableBufferStream = function(e) {
-                    return u.newWriteableStream(e => m.concat(e), e)
+                    return u.newWriteableStream(e => L.concat(e), e)
                 }, t.prefixedBufferReadable = function(e, t) {
-                    return u.prefixedReadable(e, t, e => m.concat(e))
+                    return u.prefixedReadable(e, t, e => L.concat(e))
                 }, t.prefixedBufferStream = function(e, t) {
-                    return u.prefixedStream(e, t, e => m.concat(e))
-                }, t.decodeBase64 = y, t.decodeJwt = function(e) {
-                    const t = y(e.split(".")[1]);
+                    return u.prefixedStream(e, t, e => L.concat(e))
+                }, t.decodeBase64 = x, t.decodeJwt = function(e) {
+                    const t = x(e.split(".")[1]);
                     return JSON.parse(t.toString())
                 }, t.encodeBase64 = function({
                     buffer: e
                 }, t = !0, n = !1) {
-                    const i = n ? R : C;
+                    const i = n ? A : S;
                     let r = "";
                     const s = e.byteLength % 3;
                     let o = 0;
@@ -4655,19 +4659,33 @@
                     u = o(n(247)),
                     l = "undefined" != typeof Buffer,
                     h = new a.Lazy(() => new Uint8Array(256));
-                let c, f, d, g = 1 / 0;
-                class m {
+                let c, f, d, g, m = 1 / 0,
+                    p = 1 / 0;
+
+                function b(e, t) {
+                    if (g && e.byteLength >= p) try {
+                        g({
+                            buffer: e,
+                            byteLength: e.byteLength,
+                            source: t
+                        })
+                    } catch {}
+                }
+                class L {
                     static alloc(e) {
-                        return new m(l ? Buffer.allocUnsafe(e) : new Uint8Array(e))
+                        let t;
+                        return t = new L(l ? Buffer.allocUnsafe(e) : new Uint8Array(e)), b(t, "alloc"), t
                     }
                     static wrap(e) {
-                        return l && !Buffer.isBuffer(e) && (e = Buffer.from(e.buffer, e.byteOffset, e.byteLength)), new m(e)
+                        l && !Buffer.isBuffer(e) && (e = Buffer.from(e.buffer, e.byteOffset, e.byteLength));
+                        const t = new L(e);
+                        return b(t, "wrap"), t
                     }
                     static fromString(e, t) {
-                        return !t?.dontUseNodeBuffer && l ? new m(Buffer.from(e)) : (c || (c = new TextEncoder), new m(c.encode(e)))
+                        return !t?.dontUseNodeBuffer && l ? new L(Buffer.from(e)) : (c || (c = new TextEncoder), new L(c.encode(e)))
                     }
                     static fromByteArray(e) {
-                        const t = m.alloc(e.length);
+                        const t = L.alloc(e.length);
                         for (let n = 0, i = e.length; n < i; n++) t.buffer[n] = e[n];
                         return t
                     }
@@ -4676,7 +4694,7 @@
                             t = 0;
                             for (let n = 0, i = e.length; n < i; n++) t += e[n].byteLength
                         }
-                        const n = m.alloc(t);
+                        const n = L.alloc(t);
                         let i = 0;
                         for (let t = 0, r = e.length; t < r; t++) {
                             const r = e[t];
@@ -4688,21 +4706,21 @@
                         this.buffer = e, this.byteLength = this.buffer.byteLength
                     }
                     clone() {
-                        const e = m.alloc(this.byteLength);
+                        const e = L.alloc(this.byteLength);
                         return e.set(this), e
                     }
                     toString() {
                         if (l) return this.buffer.toString();
-                        if (d && this.buffer.byteLength > g) try {
+                        if (d && this.buffer.byteLength > m) try {
                             d(this.buffer.byteLength)
                         } catch {}
                         return f || (f = new TextDecoder), f.decode(this.buffer)
                     }
                     slice(e, t) {
-                        return new m(this.buffer.subarray(e, t))
+                        return new L(this.buffer.subarray(e, t))
                     }
                     set(e, t) {
-                        if (e instanceof m) this.buffer.set(e.buffer, t);
+                        if (e instanceof L) this.buffer.set(e.buffer, t);
                         else if (e instanceof Uint8Array) this.buffer.set(e, t);
                         else if (e instanceof ArrayBuffer) this.buffer.set(new Uint8Array(e), t);
                         else {
@@ -4711,32 +4729,32 @@
                         }
                     }
                     readUInt32BE(e) {
-                        return b(this.buffer, e)
+                        return v(this.buffer, e)
                     }
                     writeUInt32BE(e, t) {
-                        L(this.buffer, e, t)
+                        E(this.buffer, e, t)
                     }
                     readUInt32LE(e) {
-                        return _(this.buffer, e)
+                        return w(this.buffer, e)
                     }
                     writeUInt32LE(e, t) {
-                        v(this.buffer, e, t)
+                        N(this.buffer, e, t)
                     }
                     readUInt8(e) {
-                        return E(this.buffer, e)
+                        return y(this.buffer, e)
                     }
                     writeUInt8(e, t) {
-                        w(this.buffer, e, t)
+                        C(this.buffer, e, t)
                     }
                     indexOf(e, t = 0) {
-                        return p(this.buffer, e instanceof m ? e.buffer : e, t)
+                        return _(this.buffer, e instanceof L ? e.buffer : e, t)
                     }
                     equals(e) {
                         return this === e || this.byteLength === e.byteLength && this.buffer.every((t, n) => t === e.buffer[n])
                     }
                 }
 
-                function p(e, t, n = 0) {
+                function _(e, t, n = 0) {
                     const i = t.byteLength,
                         r = e.byteLength;
                     if (0 === i) return 0;
@@ -4759,35 +4777,35 @@
                     return u
                 }
 
-                function b(e, t) {
+                function v(e, t) {
                     return e[t] * 2 ** 24 + 65536 * e[t + 1] + 256 * e[t + 2] + e[t + 3]
                 }
 
-                function L(e, t, n) {
+                function E(e, t, n) {
                     e[n + 3] = t, t >>>= 8, e[n + 2] = t, t >>>= 8, e[n + 1] = t, t >>>= 8, e[n] = t
                 }
 
-                function _(e, t) {
+                function w(e, t) {
                     return (0 | e[t + 0]) >>> 0 | e[t + 1] << 8 >>> 0 | e[t + 2] << 16 >>> 0 | e[t + 3] << 24 >>> 0
                 }
 
-                function v(e, t, n) {
+                function N(e, t, n) {
                     e[n + 0] = 255 & t, t >>>= 8, e[n + 1] = 255 & t, t >>>= 8, e[n + 2] = 255 & t, t >>>= 8, e[n + 3] = 255 & t
                 }
 
-                function E(e, t) {
+                function y(e, t) {
                     return e[t]
                 }
 
-                function w(e, t, n) {
+                function C(e, t, n) {
                     e[n] = t
                 }
 
-                function N(e) {
-                    return u.consumeStream(e, e => m.concat(e))
+                function R(e) {
+                    return u.consumeStream(e, e => L.concat(e))
                 }
 
-                function y(e) {
+                function x(e) {
                     let t = 0,
                         n = 0,
                         i = 0;
@@ -4823,11 +4841,11 @@
                     }
                     const o = i;
                     for (; n > 0;) s(0);
-                    return m.wrap(r).slice(0, o)
+                    return L.wrap(r).slice(0, o)
                 }
-                t.VSBuffer = m;
-                const C = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
-                    R = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+                t.VSBuffer = L;
+                const S = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
+                    A = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
             },
             701: (e, t) => {
                 function n(e, t, n) {
@@ -6837,4 +6855,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/5702c9cfca656d8710fad58402fe37f14345e3a0/extensions/cursor-commits/worker/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/extensions/cursor-commits/worker/dist/main.js.map
