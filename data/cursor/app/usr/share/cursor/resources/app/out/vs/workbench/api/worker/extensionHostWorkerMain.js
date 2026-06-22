@@ -11038,7 +11038,6 @@ var Sxn = Txn,
             return Ovn.create(r, e)
         }
         static
-
         function(r, e) {
             return Nvn.create(r, e)
         }
