@@ -149117,6 +149117,12 @@
             kind: "message",
             T: VGe,
             opt: !0
+        }, {
+            no: 52,
+            name: "marketplace_leaderboard_disabled",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         const xVe = class e extends dn {
             constructor(e) {
@@ -149458,6 +149464,12 @@
             name: "bitbucket_integration_settings",
             kind: "message",
             T: VGe,
+            opt: !0
+        }, {
+            no: 52,
+            name: "marketplace_leaderboard_disabled",
+            kind: "scalar",
+            T: 8,
             opt: !0
         }]);
         const OVe = class e extends dn {
@@ -216277,4 +216289,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/extensions/cursor-retrieval/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/7cf19b7482706625cdb70db3211b7dd035b7aa30/extensions/cursor-retrieval/dist/main.js.map

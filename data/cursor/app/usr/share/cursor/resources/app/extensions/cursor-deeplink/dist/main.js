@@ -20945,8 +20945,8 @@
     (() => {
         "use strict";
         A.r(n), A.d(n, {
-            activate: () => yl,
-            deactivate: () => wl
+            activate: () => Nl,
+            deactivate: () => kl
         });
         const e = require("vscode");
         const t = 3e4;
@@ -34151,8 +34151,11 @@
         async function Cl(t) {
             return await Promise.resolve(e.cursor.checkFeatureGate(t)).catch(() => !1)
         }
+        const yl = "workbench.action.openCustomizeEditor",
+            wl = "aiSettings.action.open",
+            Tl = new Set(["plugins", "mcps", "rules", "hooks"]);
 
-        function yl(t) {
+        function Nl(t) {
             const A = {
                     async handleUri(t) {
                         try {
@@ -34365,6 +34368,41 @@
                                     startupHandoff: !1,
                                     deeplinkUrl: t.toString(!0)
                                 }) : e.window.showWarningMessage("Automation deep links are not enabled.")
+                            }(t): "/customize" === t.path ? await async function(t, A = {}) {
+                                const n = A.executeCommand ?? ((t, ...A) => e.commands.executeCommand(t, ...A)),
+                                    r = A.getCommands ?? (t => e.commands.getCommands(t)),
+                                    o = function(e) {
+                                        const t = new URLSearchParams(e).get("tab");
+                                        if (null === t || "" === t) return;
+                                        const A = "mcp" === t ? "mcps" : t;
+                                        return Tl.has(A) ? A : void 0
+                                    }(t.query);
+                                if (await async function(e) {
+                                        try {
+                                            return (await e(!0)).includes(yl)
+                                        } catch {
+                                            return !1
+                                        }
+                                    }(r)) try {
+                                    return void await async function(e, t) {
+                                        void 0 !== e ? await t(yl, {
+                                            initialView: {
+                                                kind: "manage",
+                                                tab: e,
+                                                scope: "user"
+                                            }
+                                        }) : await t(yl)
+                                    }(o, n)
+                                } catch (e) {
+                                    if (! function(e, t) {
+                                            return e instanceof Error && e.message.includes(t) && e.message.toLowerCase().includes("command")
+                                        }(e, yl)) throw e
+                                }
+                                await async function(e, t) {
+                                    void 0 !== e ? await t(wl, function(e) {
+                                        return "mcps" === e ? "mcp" : e
+                                    }(e)) : await t(wl)
+                                }(o, n)
                             }(t): t.path.startsWith("/settings") ? await async function(t) {
                                 t.path.startsWith("/settings/background-composer") ? await e.commands.executeCommand("aiSettings.action.open", "background-composer") : t.path.startsWith("/settings/plugins") ? await e.commands.executeCommand("aiSettings.action.open", "plugins") : await e.commands.executeCommand("aiSettings.action.open")
                             }(t): "/prompt" === t.path ? await async function(t) {
@@ -34613,7 +34651,7 @@
                 });
             t.subscriptions.push(e.window.registerUriHandler(A)), t.subscriptions.push(n)
         }
-        async function wl() {}
+        async function kl() {}
     })();
     var r = exports;
     for (var o in n) r[o] = n[o];
@@ -34621,4 +34659,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/extensions/cursor-deeplink/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/7cf19b7482706625cdb70db3211b7dd035b7aa30/extensions/cursor-deeplink/dist/main.js.map

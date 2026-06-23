@@ -126139,6 +126139,12 @@
         kind: "message",
         T: uFe,
         opt: !0
+    }, {
+        no: 52,
+        name: "marketplace_leaderboard_disabled",
+        kind: "scalar",
+        T: 8,
+        opt: !0
     }]);
     const sCe = class e extends q {
         constructor(e) {
@@ -126480,6 +126486,12 @@
         name: "bitbucket_integration_settings",
         kind: "message",
         T: uFe,
+        opt: !0
+    }, {
+        no: 52,
+        name: "marketplace_leaderboard_disabled",
+        kind: "scalar",
+        T: 8,
         opt: !0
     }]);
     const aCe = class e extends q {
@@ -173319,4 +173331,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/extensions/cursor-resolver-helper/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/7cf19b7482706625cdb70db3211b7dd035b7aa30/extensions/cursor-resolver-helper/dist/main.js.map

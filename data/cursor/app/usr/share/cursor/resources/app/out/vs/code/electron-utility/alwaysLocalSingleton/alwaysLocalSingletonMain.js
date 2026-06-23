@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "a29c19ea-fcf1-59f3-8710-705370c2ca6c")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "83cf6afd-8f54-5797-b83b-4a06376d7fce")
     } catch (e) {}
 }();
 var b_r = function(s, e) {
@@ -146747,6 +146747,12 @@ var aIr = class uee extends a {
                 kind: "message",
                 T: w8r,
                 opt: !0
+            }, {
+                no: 52,
+                name: "marketplace_leaderboard_disabled",
+                kind: "scalar",
+                T: 8,
+                opt: !0
             }])
         }
         static fromBinary(e, t) {
@@ -147104,6 +147110,12 @@ var aIr = class uee extends a {
                 name: "bitbucket_integration_settings",
                 kind: "message",
                 T: w8r,
+                opt: !0
+            }, {
+                no: 52,
+                name: "marketplace_leaderboard_disabled",
+                kind: "scalar",
+                T: 8,
                 opt: !0
             }])
         }
@@ -347318,6 +347330,12 @@ bWn.runtime = n, bWn.typeName = "aiserver.v1.GetTeamAdminSettingsResponse", bWn.
     kind: "message",
     T: vjr,
     opt: !0
+}, {
+    no: 52,
+    name: "marketplace_leaderboard_disabled",
+    kind: "scalar",
+    T: 8,
+    opt: !0
 }]);
 var tOr = bWn,
     DWn = class Cwt extends i {
@@ -347661,6 +347679,12 @@ GWn.runtime = n, GWn.typeName = "aiserver.v1.UpdateTeamAdminSettingsRequest", GW
     name: "bitbucket_integration_settings",
     kind: "message",
     T: vjr,
+    opt: !0
+}, {
+    no: 52,
+    name: "marketplace_leaderboard_disabled",
+    kind: "scalar",
+    T: 8,
     opt: !0
 }]);
 var Q7i = GWn,
@@ -432827,6 +432851,10 @@ var tya = g.enum(["off", "default-on", "default-off", "hidden", "end-of-life", "
             client: !0,
             default: !1
         },
+        remote_control_remote_ssh: {
+            client: !0,
+            default: !1
+        },
         send_to_cloud_on_followup: {
             client: !0,
             default: !1
@@ -433375,7 +433403,7 @@ var tya = g.enum(["off", "default-on", "default-off", "hidden", "end-of-life", "
                 stage: "control"
             },
             parseValue: {
-                stage: Q(["control", "cta", "full"])
+                stage: Q(["control", "cta", "banner", "full"])
             }
         },
         marketplace_card_install_cta_ab: {
@@ -435882,6 +435910,6 @@ export {
     aes as main
 };
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/core/vs/code/electron-utility/alwaysLocalSingleton/alwaysLocalSingletonMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/7cf19b7482706625cdb70db3211b7dd035b7aa30/core/vs/code/electron-utility/alwaysLocalSingleton/alwaysLocalSingletonMain.js.map
 
-//# debugId=a29c19ea-fcf1-59f3-8710-705370c2ca6c
+//# debugId=83cf6afd-8f54-5797-b83b-4a06376d7fce

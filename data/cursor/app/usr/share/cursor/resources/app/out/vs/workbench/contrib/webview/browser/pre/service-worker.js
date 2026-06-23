@@ -256,6 +256,6 @@ async function getWorkerClientForId(t) {
     return [...e, ...o].find(r => r.id === t)
 }
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/core/vs/workbench/contrib/webview/browser/pre/service-worker.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/7cf19b7482706625cdb70db3211b7dd035b7aa30/core/vs/workbench/contrib/webview/browser/pre/service-worker.js.map
 
 //# debugId=c64f52b9-b03c-5bac-a222-0b7b25217c8a

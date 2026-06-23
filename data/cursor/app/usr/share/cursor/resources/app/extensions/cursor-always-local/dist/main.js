@@ -91822,6 +91822,7 @@
                     extensionInstallCooldownSettings;
                     publicProfileSettings;
                     bitbucketIntegrationSettings;
+                    marketplaceLeaderboardDisabled;
                     constructor(e) {
                         super(), r.proto3.util.initPartial(e, this)
                     }
@@ -92129,6 +92130,12 @@
                         kind: "message",
                         T: xl,
                         opt: !0
+                    }, {
+                        no: 52,
+                        name: "marketplace_leaderboard_disabled",
+                        kind: "scalar",
+                        T: 8,
+                        opt: !0
                     }]);
                     static fromBinary(e, t) {
                         return (new uu).fromBinary(e, t)
@@ -92221,6 +92228,7 @@
                     extensionInstallCooldownSettings;
                     publicProfileSettings;
                     bitbucketIntegrationSettings;
+                    marketplaceLeaderboardDisabled;
                     constructor(e) {
                         super(), r.proto3.util.initPartial(e, this)
                     }
@@ -92526,6 +92534,12 @@
                         name: "bitbucket_integration_settings",
                         kind: "message",
                         T: xl,
+                        opt: !0
+                    }, {
+                        no: 52,
+                        name: "marketplace_leaderboard_disabled",
+                        kind: "scalar",
+                        T: 8,
                         opt: !0
                     }]);
                     static fromBinary(e, t) {
@@ -353699,6 +353713,12 @@
             kind: "message",
             T: UOe,
             opt: !0
+        }, {
+            no: 52,
+            name: "marketplace_leaderboard_disabled",
+            kind: "scalar",
+            T: 8,
+            opt: !0
         }]);
         const FQe = class e extends h {
             constructor(e) {
@@ -354040,6 +354060,12 @@
             name: "bitbucket_integration_settings",
             kind: "message",
             T: UOe,
+            opt: !0
+        }, {
+            no: 52,
+            name: "marketplace_leaderboard_disabled",
+            kind: "scalar",
+            T: 8,
             opt: !0
         }]);
         const DQe = class e extends h {
@@ -404931,6 +404957,10 @@
                 client: !0,
                 default: !1
             },
+            remote_control_remote_ssh: {
+                client: !0,
+                default: !1
+            },
             send_to_cloud_on_followup: {
                 client: !0,
                 default: !1
@@ -405478,7 +405508,7 @@
                     stage: "control"
                 },
                 parseValue: {
-                    stage: qTt(["control", "cta", "full"])
+                    stage: qTt(["control", "cta", "banner", "full"])
                 }
             },
             marketplace_card_install_cta_ab: {
@@ -410251,4 +410281,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/extensions/cursor-always-local/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/7cf19b7482706625cdb70db3211b7dd035b7aa30/extensions/cursor-always-local/dist/main.js.map

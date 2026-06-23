@@ -624,7 +624,7 @@ var w = $(import.meta.url),
 E.BUILD_INSERT_PRODUCT_CONFIGURATION && (E = w("../product.json"));
 var P = {
     "name": "Cursor",
-    "version": "3.8.22",
+    "version": "3.8.23",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -825,6 +825,6 @@ function te() {
 }
 te(), U(), process.env.VSCODE_DEV_INJECT_NODE_MODULE_LOOKUP_PATH ? R(process.env.VSCODE_DEV_INJECT_NODE_MODULE_LOOKUP_PATH) : process.env.VSCODE_DEV && R(), process.send && process.env.VSCODE_PIPE_LOGGING === "true" && Z(), process.env.VSCODE_HANDLES_UNCAUGHT_ERRORS || ee(), process.env.VSCODE_PARENT_PID && re(), await z(), await import([`./${process.env.VSCODE_ESM_ENTRYPOINT}.js`].join("/"));
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/core/bootstrap-fork.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/7cf19b7482706625cdb70db3211b7dd035b7aa30/core/bootstrap-fork.js.map
 
 //# debugId=f6613304-ba3c-5f39-b1a4-8fa3283e14bf
