@@ -39,6 +39,7 @@
 			<button id="tab-live" class="tab-button">Live</button>
 			<button id="tab-history-mem" class="tab-button">History (Mem)</button>
 			<button id="tab-history-cpu" class="tab-button">History (CPU)</button>
+			<button id="tab-history-net" class="tab-button">History (Net)</button>
 		</div>
 		<div id="process-list"></div>
 		<div id="history-mem" class="history-view" style="display:none;">
@@ -56,6 +57,14 @@
 				<div id="time-range-controls-cpu" class="time-range-controls"></div>
 			</div>
 			<div id="history-cpu-legend" class="history-legend"></div>
+		</div>
+		<div id="history-net" class="history-view" style="display:none;">
+			<div id="analysis-bar-net" class="analysis-bar"></div>
+			<div class="history-chart-wrapper">
+				<canvas id="history-net-chart" class="history-chart-canvas"></canvas>
+				<div id="time-range-controls-net" class="time-range-controls"></div>
+			</div>
+			<div id="history-net-legend" class="history-legend"></div>
 		</div>
 	</body>
 

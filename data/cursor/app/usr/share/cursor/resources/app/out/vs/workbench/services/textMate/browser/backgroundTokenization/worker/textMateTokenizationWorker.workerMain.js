@@ -7008,61 +7008,61 @@ var z1 = {
     function n(a) {
         switch (a) {
             case 0:
-                return w(830, null);
-            case 1:
                 return w(831, null);
-            case 2:
+            case 1:
                 return w(832, null);
-            case 3:
+            case 2:
                 return w(833, null);
-            case 4:
+            case 3:
                 return w(834, null);
-            case 5:
+            case 4:
                 return w(835, null);
-            case 6:
+            case 5:
                 return w(836, null);
-            case 7:
+            case 6:
                 return w(837, null);
-            case 8:
+            case 7:
                 return w(838, null);
-            case 9:
+            case 8:
                 return w(839, null);
-            case 10:
+            case 9:
                 return w(840, null);
-            case 11:
+            case 10:
                 return w(841, null);
-            case 12:
+            case 11:
                 return w(842, null);
-            case 13:
+            case 12:
                 return w(843, null);
-            case 14:
+            case 13:
                 return w(844, null);
-            case 15:
+            case 14:
                 return w(845, null);
-            case 16:
+            case 15:
                 return w(846, null);
-            case 17:
+            case 16:
                 return w(847, null);
-            case 18:
+            case 17:
                 return w(848, null);
-            case 19:
+            case 18:
                 return w(849, null);
-            case 20:
+            case 19:
                 return w(850, null);
-            case 21:
+            case 20:
                 return w(851, null);
-            case 22:
+            case 21:
                 return w(852, null);
-            case 23:
+            case 22:
                 return w(853, null);
-            case 24:
+            case 23:
                 return w(854, null);
-            case 25:
+            case 24:
                 return w(855, null);
-            case 26:
+            case 25:
                 return w(856, null);
-            case 27:
+            case 26:
                 return w(857, null);
+            case 27:
+                return w(858, null);
             default:
                 return ""
         }
@@ -7078,32 +7078,32 @@ var z1 = {
     t.fromString = o
 })(Mn || (Mn = {}));
 var ta = {
-        17: w(858, null),
-        16: w(859, null),
-        4: w(860, null),
-        13: w(861, null),
-        8: w(862, null),
-        9: w(863, null),
-        21: w(864, null),
-        23: w(865, null),
-        7: w(866, null),
-        0: w(867, null),
-        11: w(868, null),
-        10: w(869, null),
-        19: w(870, null),
-        5: w(871, null),
-        1: w(872, null),
-        2: w(873, null),
-        20: w(874, null),
-        15: w(875, null),
-        18: w(876, null),
-        24: w(877, null),
-        3: w(878, null),
-        6: w(879, null),
-        14: w(880, null),
-        22: w(881, null),
-        25: w(882, null),
-        12: w(883, null)
+        17: w(859, null),
+        16: w(860, null),
+        4: w(861, null),
+        13: w(862, null),
+        8: w(863, null),
+        9: w(864, null),
+        21: w(865, null),
+        23: w(866, null),
+        7: w(867, null),
+        0: w(868, null),
+        11: w(869, null),
+        10: w(870, null),
+        19: w(871, null),
+        5: w(872, null),
+        1: w(873, null),
+        2: w(874, null),
+        20: w(875, null),
+        15: w(876, null),
+        18: w(877, null),
+        24: w(878, null),
+        3: w(879, null),
+        6: w(880, null),
+        14: w(881, null),
+        22: w(882, null),
+        25: w(883, null),
+        12: w(884, null)
     },
     zn;
 (t => {
@@ -8297,6 +8297,6 @@ function mo(t) {
 }
 mo(no);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/core/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.workerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/core/vs/workbench/services/textMate/browser/backgroundTokenization/worker/textMateTokenizationWorker.workerMain.js.map
 
 //# debugId=815a4493-8f2a-5ab0-907a-612be2bb381b

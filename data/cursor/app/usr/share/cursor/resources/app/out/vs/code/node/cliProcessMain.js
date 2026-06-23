@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "e757ae27-1509-5f5d-935f-aaffa6d52ba2")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5e5c8de9-52db-5296-b5df-3e76f2adf210")
     } catch (e) {}
 }();
 var Tn = function(e, t) {
@@ -6261,7 +6261,7 @@ var li = {
         constructor() {
             super(), this.registeredConfigurationDefaults = [], this.overrideIdentifiers = new Set, this._onDidSchemaChange = this._register(new T), this.onDidSchemaChange = this._onDidSchemaChange.event, this._onDidUpdateConfiguration = this._register(new T), this.onDidUpdateConfiguration = this._onDidUpdateConfiguration.event, this.configurationDefaultsOverrides = new Map, this.defaultLanguageConfigurationOverridesNode = {
                 id: "defaultOverrides",
-                title: m(1809, null),
+                title: m(1810, null),
                 properties: {}
             }, this.configurationContributors = [this.defaultLanguageConfigurationOverridesNode], this.resourceLanguageSettingsSchema = {
                 properties: {},
@@ -6375,7 +6375,7 @@ var li = {
             const r = {
                 type: "object",
                 default: t.value,
-                description: m(1810, null, Ip(e)),
+                description: m(1811, null, Ip(e)),
                 $ref: Pi,
                 defaultDefaultValue: t.value,
                 source: i,
@@ -6565,8 +6565,8 @@ var li = {
                 const t = `[${e}]`,
                     i = {
                         type: "object",
-                        description: m(1811, null),
-                        errorMessage: m(1812, null),
+                        description: m(1812, null),
+                        errorMessage: m(1813, null),
                         $ref: Pi
                     };
                 this.updatePropertyDefaultValue(t, i), Ws.properties[t] = i, qs.properties[t] = i, Bs.properties[t] = i, zs.properties[t] = i, js.properties[t] = i, Ks.properties[t] = i, Tr.properties[t] = i
@@ -6575,8 +6575,8 @@ var li = {
         registerOverridePropertyPatternKey() {
             const e = {
                 type: "object",
-                description: m(1813, null),
-                errorMessage: m(1814, null),
+                description: m(1814, null),
+                errorMessage: m(1815, null),
                 $ref: Pi
             };
             Ws.patternProperties[ci] = e, qs.patternProperties[ci] = e, Bs.patternProperties[ci] = e, zs.patternProperties[ci] = e, js.patternProperties[ci] = e, Ks.patternProperties[ci] = e, Tr.patternProperties[ci] = e, this._onDidSchemaChange.fire()
@@ -6638,7 +6638,7 @@ var Hs = new Wp;
 Ot.add(li.Configuration, Hs);
 
 function jp(e, t) {
-    return e.trim() ? Qt.test(e) ? m(1816, null, e) : Hs.getConfigurationProperties()[e] !== void 0 ? m(1817, null, e) : t.policy?.name && Hs.getPolicyConfigurations().get(t.policy?.name) !== void 0 ? m(1818, null, e, t.policy?.name, Hs.getPolicyConfigurations().get(t.policy?.name)) : null : m(1815, null)
+    return e.trim() ? Qt.test(e) ? m(1817, null, e) : Hs.getConfigurationProperties()[e] !== void 0 ? m(1818, null, e) : t.policy?.name && Hs.getPolicyConfigurations().get(t.policy?.name) !== void 0 ? m(1819, null, e, t.policy?.name, Hs.getPolicyConfigurations().get(t.policy?.name)) : null : m(1816, null)
 }
 var Fr = "**",
     tu = "/",
@@ -7955,17 +7955,17 @@ pg._bigBlock32 = new DataView(new ArrayBuffer(320));
 function mo(...e) {
     switch (e.length) {
         case 1:
-            return m(1842, null, e[0]);
+            return m(1843, null, e[0]);
         case 2:
-            return m(1843, null, e[0], e[1]);
+            return m(1844, null, e[0], e[1]);
         case 3:
-            return m(1844, null, e[0], e[1], e[2]);
+            return m(1845, null, e[0], e[1], e[2]);
         default:
             return
     }
 }
-var gg = m(1845, null),
-    mg = m(1846, null),
+var gg = m(1846, null),
+    mg = m(1847, null),
     vo = class hl {
         constructor() {
             this._input = "", this._start = 0, this._current = 0, this._tokens = [], this._errors = [], this.stringRe = /[a-zA-Z0-9_<>\-\./\\:\*\?\+\[\]\^,#@;"%\$\p{L}-]+/uy
@@ -8192,14 +8192,14 @@ var yg = Object.prototype.hasOwnProperty,
     wg = {
         regexParsingWithErrorRecovery: !0
     },
-    Sg = m(1820, null),
-    Eg = m(1821, null),
-    bg = m(1822, null),
-    gu = m(1823, null),
-    _g = m(1824, null),
-    xg = m(1825, null),
-    Cg = m(1826, null),
-    Pg = m(1827, null),
+    Sg = m(1821, null),
+    Eg = m(1822, null),
+    bg = m(1823, null),
+    gu = m(1824, null),
+    _g = m(1825, null),
+    xg = m(1826, null),
+    Cg = m(1827, null),
+    Pg = m(1828, null),
     mu = class hs {
         constructor(t = wg) {
             this._config = t, this._scanner = new Ur, this._tokens = [], this._current = 0, this._parsingErrors = [], this._flagsGYRe = /g|y/g
@@ -8469,7 +8469,7 @@ var yg = Object.prototype.hasOwnProperty,
             throw this._errExpectedButGot(i, this._peek())
         }
         _errExpectedButGot(t, i, r) {
-            const s = m(1828, null, t, Ur.getLexeme(i)),
+            const s = m(1829, null, t, Ur.getLexeme(i)),
                 n = i.offset,
                 o = Ur.getLexeme(i);
             return this._parsingErrors.push({
@@ -10355,7 +10355,7 @@ function Nt(e, t) {
 }
 
 function Ri(e) {
-    return e || Nt(m(2033, null), "Unknown")
+    return e || Nt(m(2034, null), "Unknown")
 }
 
 function Hg(e, t) {
@@ -10503,7 +10503,7 @@ function Lu(e) {
 }
 var Ct = class ii {
     static formatSize(t) {
-        return Ol(t) || (t = 0), t < ii.KB ? m(2034, null, t.toFixed(0)) : t < ii.MB ? m(2035, null, (t / ii.KB).toFixed(2)) : t < ii.GB ? m(2036, null, (t / ii.MB).toFixed(2)) : t < ii.TB ? m(2037, null, (t / ii.GB).toFixed(2)) : m(2038, null, (t / ii.TB).toFixed(2))
+        return Ol(t) || (t = 0), t < ii.KB ? m(2035, null, t.toFixed(0)) : t < ii.MB ? m(2036, null, (t / ii.KB).toFixed(2)) : t < ii.GB ? m(2037, null, (t / ii.MB).toFixed(2)) : t < ii.TB ? m(2038, null, (t / ii.GB).toFixed(2)) : m(2039, null, (t / ii.TB).toFixed(2))
     }
 };
 Ct.KB = 1024, Ct.MB = Ct.KB * Ct.KB, Ct.GB = Ct.MB * Ct.KB, Ct.TB = Ct.GB * Ct.KB;
@@ -10575,53 +10575,53 @@ function t0(e = !0, t = !0) {
     Vo = [{
         id: "http",
         order: 15,
-        title: m(2227, null),
+        title: m(2228, null),
         type: "object",
         scope: 2,
         properties: {
             "http.useLocalProxyConfiguration": {
                 type: "boolean",
                 default: t,
-                markdownDescription: m(2228, null),
+                markdownDescription: m(2229, null),
                 restricted: !0
             }
         }
     }, {
         id: "http",
         order: 15,
-        title: m(2229, null),
+        title: m(2230, null),
         type: "object",
         scope: 1,
         properties: {
             "http.electronFetch": {
                 type: "boolean",
                 default: !1,
-                description: m(2230, null),
+                description: m(2231, null),
                 restricted: !0
             }
         }
     }, {
         id: "http",
         order: 15,
-        title: m(2231, null),
+        title: m(2232, null),
         type: "object",
         scope: e ? 1 : 2,
         properties: {
             "http.proxy": {
                 type: "string",
                 pattern: "^(https?|socks|socks4a?|socks5h?)://([^:]*(:[^@]*)?@)?([^:]+|\\[[:0-9a-fA-F]+\\])(:\\d+)?/?$|^$",
-                markdownDescription: m(2232, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: m(2233, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxyStrictSSL": {
                 type: "boolean",
                 default: !0,
-                markdownDescription: m(2233, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: m(2234, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxyKerberosServicePrincipal": {
                 type: "string",
-                markdownDescription: m(2234, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: m(2235, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.noProxy": {
@@ -10629,40 +10629,40 @@ function t0(e = !0, t = !0) {
                 items: {
                     type: "string"
                 },
-                markdownDescription: m(2235, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: m(2236, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxyAuthorization": {
                 type: ["null", "string"],
                 default: null,
-                markdownDescription: m(2236, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: m(2237, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.proxySupport": {
                 type: "string",
                 enum: ["off", "on", "fallback", "override"],
-                enumDescriptions: [m(2237, null), m(2238, null), m(2239, null), m(2240, null)],
+                enumDescriptions: [m(2238, null), m(2239, null), m(2240, null), m(2241, null)],
                 default: "override",
-                markdownDescription: m(2241, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: m(2242, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.systemCertificates": {
                 type: "boolean",
                 default: !0,
-                markdownDescription: m(2242, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: m(2243, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.experimental.systemCertificatesV2": {
                 type: "boolean",
                 tags: ["experimental"],
                 default: !1,
-                markdownDescription: m(2243, null, "`#http.useLocalProxyConfiguration#`"),
+                markdownDescription: m(2244, null, "`#http.useLocalProxyConfiguration#`"),
                 restricted: !0
             },
             "http.fetchAdditionalSupport": {
                 type: "boolean",
                 default: !0,
-                markdownDescription: m(2244, null, "`#http.useLocalProxyConfiguration#`", "`#http.proxySupport#`", "`#http.systemCertificates#`"),
+                markdownDescription: m(2245, null, "`#http.useLocalProxyConfiguration#`", "`#http.proxySupport#`", "`#http.systemCertificates#`"),
                 restricted: !0
             }
         }
@@ -11088,8 +11088,8 @@ async function Ko(e, t) {
     }
     return i.children ? (await Promise.all(i.children.map(s => Ko(s.resource, t)))).reduce((s, n) => s + n, 0) : i.size ?? 0
 }
-var Uy = Gl(1944, "Extensions"),
-    Vy = Gl(1945, "Preferences"),
+var Uy = Gl(1945, "Extensions"),
+    Vy = Gl(1946, "Preferences"),
     b0 = "extensions.gallery.useUnpkgResourceApi",
     Go = "extensions.allowed",
     _0 = "extensions.installCooldownHours",
@@ -11249,7 +11249,7 @@ var Zt = oe("telemetryService"),
     q0 = "telemetry",
     By = {
         id: q0,
-        name: m(2261, null)
+        name: m(2262, null)
     };
 
 function Gu(e, t) {
@@ -12626,31 +12626,31 @@ function am(e, t, i) {
 
 function lm(e, t, i, r, s, n) {
     const o = [];
-    if (typeof r.publisher < "u" && typeof r.publisher != "string") return o.push([We.Error, m(1998, null)]), o;
-    if (typeof r.name != "string") return o.push([We.Error, m(1999, null, "name")]), o;
-    if (typeof r.version != "string") return o.push([We.Error, m(2e3, null, "version")]), o;
-    if (!r.engines) return o.push([We.Error, m(2001, null, "engines")]), o;
-    if (typeof r.engines.vscode != "string") return o.push([We.Error, m(2002, null, "engines.vscode")]), o;
-    if (typeof r.extensionDependencies < "u" && !sh(r.extensionDependencies)) return o.push([We.Error, m(2003, null, "extensionDependencies")]), o;
+    if (typeof r.publisher < "u" && typeof r.publisher != "string") return o.push([We.Error, m(1999, null)]), o;
+    if (typeof r.name != "string") return o.push([We.Error, m(2e3, null, "name")]), o;
+    if (typeof r.version != "string") return o.push([We.Error, m(2001, null, "version")]), o;
+    if (!r.engines) return o.push([We.Error, m(2002, null, "engines")]), o;
+    if (typeof r.engines.vscode != "string") return o.push([We.Error, m(2003, null, "engines.vscode")]), o;
+    if (typeof r.extensionDependencies < "u" && !sh(r.extensionDependencies)) return o.push([We.Error, m(2004, null, "extensionDependencies")]), o;
     if (typeof r.activationEvents < "u") {
-        if (!sh(r.activationEvents)) return o.push([We.Error, m(2004, null, "activationEvents")]), o;
-        if (typeof r.main > "u" && typeof r.browser > "u") return o.push([We.Error, m(2005, null, "activationEvents", "main", "browser")]), o
+        if (!sh(r.activationEvents)) return o.push([We.Error, m(2005, null, "activationEvents")]), o;
+        if (typeof r.main > "u" && typeof r.browser > "u") return o.push([We.Error, m(2006, null, "activationEvents", "main", "browser")]), o
     }
-    if (typeof r.extensionKind < "u" && typeof r.main > "u" && o.push([We.Warning, m(2006, null, "extensionKind")]), typeof r.main < "u") {
-        if (typeof r.main != "string") return o.push([We.Error, m(2007, null, "main")]), o;
+    if (typeof r.extensionKind < "u" && typeof r.main > "u" && o.push([We.Warning, m(2007, null, "extensionKind")]), typeof r.main < "u") {
+        if (typeof r.main != "string") return o.push([We.Error, m(2008, null, "main")]), o;
         {
             const c = W(i, r.main);
-            Dc(c, i) || o.push([We.Warning, m(2008, null, c.path, i.path)])
+            Dc(c, i) || o.push([We.Warning, m(2009, null, c.path, i.path)])
         }
     }
     if (typeof r.browser < "u") {
-        if (typeof r.browser != "string") return o.push([We.Error, m(2009, null, "browser")]), o;
+        if (typeof r.browser != "string") return o.push([We.Error, m(2010, null, "browser")]), o;
         {
             const c = W(i, r.browser);
-            Dc(c, i) || o.push([We.Warning, m(2010, null, c.path, i.path)])
+            Dc(c, i) || o.push([We.Warning, m(2011, null, c.path, i.path)])
         }
     }
-    if (!em(r.version)) return o.push([We.Error, m(2011, null)]), o;
+    if (!em(r.version)) return o.push([We.Error, m(2012, null)]), o;
     const a = [];
     if (!cm(e, t, r, s, a))
         for (const c of a) o.push([We.Error, c]);
@@ -12684,16 +12684,16 @@ function ta(e, t) {
         if (!a) continue;
         r[o]?.version !== a && s.push(o)
     }
-    return s.length ? (i && (s.length === 1 ? i.push(m(2012, null, s[0])) : i.push(m(2013, null, s.slice(0, s.length - 1).map(o => `'${o}'`).join(", "), s[s.length - 1]))), !1) : !0
+    return s.length ? (i && (s.length === 1 ? i.push(m(2013, null, s[0])) : i.push(m(2014, null, s.slice(0, s.length - 1).map(o => `'${o}'`).join(", "), s[s.length - 1]))), !1) : !0
 }
 
 function rh(e, t, i, r = []) {
     const s = ea(Zo(i));
-    if (!s) return r.push(m(2014, null, i)), !1;
+    if (!s) return r.push(m(2015, null, i)), !1;
     if (s.majorBase === 0) {
-        if (!s.majorMustEqual || !s.minorMustEqual) return r.push(m(2015, null, i)), !1
-    } else if (!s.majorMustEqual) return r.push(m(2016, null, i)), !1;
-    return am(e, t, s) ? !0 : (r.push(m(2017, null, e, i)), !1)
+        if (!s.majorMustEqual || !s.minorMustEqual) return r.push(m(2016, null, i)), !1
+    } else if (!s.majorMustEqual) return r.push(m(2017, null, i)), !1;
+    return am(e, t, s) ? !0 : (r.push(m(2018, null, e, i)), !1)
 }
 
 function sh(e) {
@@ -12957,7 +12957,7 @@ function vm(e) {
 var oh = "code-workspace",
     x5 = `.${oh}`,
     C5 = [{
-        name: m(2678, null),
+        name: m(2679, null),
         extensions: [oh]
     }],
     qe = oe("IUriIdentityService");
@@ -13050,7 +13050,7 @@ var Kr = class extends K {
         return this._profilesObject
     }
     createDefaultProfile() {
-        const e = ln("__default__profile__", m(2631, null), this.environmentService.userRoamingDataHome, this.profilesCacheHome);
+        const e = ln("__default__profile__", m(2632, null), this.environmentService.userRoamingDataHome, this.profilesCacheHome);
         return {
             ...e,
             extensionsResource: this.getDefaultProfileExtensionsLocation() ?? e.extensionsResource,
@@ -14806,8 +14806,8 @@ Jr.SIGNING_REGISTRY_MAP = {
     "marketplace.cursorapi.com": "https://open-vsx.org",
     "open-vsx.org": "https://open-vsx.org"
 }, Jr = __decorate([__param(0, ue), __param(1, et)], Jr);
-var Bm = e => m(1946, null, e),
-    ph = m(1947, null, "anysphere.csharp"),
+var Bm = e => m(1947, null, e),
+    ph = m(1948, null, "anysphere.csharp"),
     Ti = class {
         constructor(e, t, i) {
             this.logger = e, this.extensionManagementService = t, this.extensionGalleryService = i
@@ -14828,14 +14828,14 @@ var Bm = e => m(1946, null, e),
                 });
                 return
             }
-            this.location && this.logger.info(m(1948, null, this.location)), r = r.sort((o, a) => o.identifier.id.localeCompare(a.identifier.id));
+            this.location && this.logger.info(m(1949, null, this.location)), r = r.sort((o, a) => o.identifier.id.localeCompare(a.identifier.id));
             let n;
             for (const o of r) n !== o.identifier.id && (n = o.identifier.id, this.logger.info(e ? `${n}@${o.manifest.version}` : n))
         }
         async installExtensions(e, t, i, r) {
             const s = [];
             try {
-                e.length && this.logger.info(this.location ? m(1949, null, this.location) : m(1950, null));
+                e.length && this.logger.info(this.location ? m(1950, null, this.location) : m(1951, null));
                 const n = [],
                     o = [],
                     a = (c, h, f) => {
@@ -14884,9 +14884,9 @@ var Bm = e => m(1946, null, e),
                     s.push(...c)
                 }
             } catch (n) {
-                throw this.logger.error(m(1951, null, $(n))), n
+                throw this.logger.error(m(1952, null, $(n))), n
             }
-            if (s.length) throw new Error(m(1952, null, s.join(", ")))
+            if (s.length) throw new Error(m(1953, null, s.join(", ")))
         }
         async updateExtensions(e) {
             const t = await this.extensionManagementService.getInstalled(1, e),
@@ -14895,7 +14895,7 @@ var Bm = e => m(1946, null, e),
                 ...o.identifier,
                 preRelease: o.preRelease
             });
-            this.logger.trace(m(1953, null, i.length));
+            this.logger.trace(m(1954, null, i.length));
             const r = await this.extensionGalleryService.getExtensions(i, {
                     compatible: !0
                 }, de.None),
@@ -14911,12 +14911,12 @@ var Bm = e => m(1946, null, e),
                     }
                 });
             if (!s.length) {
-                this.logger.info(m(1954, null));
+                this.logger.info(m(1955, null));
                 return
             }
-            this.logger.info(m(1955, null, s.map(o => o.extension.identifier.id).join(", ")));
+            this.logger.info(m(1956, null, s.map(o => o.extension.identifier.id).join(", ")));
             const n = await this.extensionManagementService.installGalleryExtensions(s);
-            for (const o of n) o.error ? this.logger.error(m(1956, null, o.identifier.id, $(o.error))) : this.logger.info(m(1957, null, o.identifier.id, o.local?.manifest.version))
+            for (const o of n) o.error ? this.logger.error(m(1957, null, o.identifier.id, $(o.error))) : this.logger.info(m(1958, null, o.identifier.id, o.local?.manifest.version))
         }
         async installGalleryExtensions(e, t, i) {
             if (e = e.filter(o => {
@@ -14928,8 +14928,8 @@ var Bm = e => m(1946, null, e),
                         id: a
                     }));
                     if (h) {
-                        if (!i && (!l || l === "prerelease" && h.preRelease)) return this.logger.info(m(1958, null, a, h.manifest.version, a)), !1;
-                        if (l && h.manifest.version === l) return this.logger.info(m(1959, null, `${a}@${l}`)), !1;
+                        if (!i && (!l || l === "prerelease" && h.preRelease)) return this.logger.info(m(1959, null, a, h.manifest.version, a)), !1;
+                        if (l && h.manifest.version === l) return this.logger.info(m(1960, null, `${a}@${l}`)), !1;
                         h.preRelease && l !== "prerelease" && (c.preRelease = !1)
                     }
                     return !0
@@ -14958,12 +14958,12 @@ ${ph}`), r.push(o);
                     const h = t.find(f => Q(f.identifier, c.identifier));
                     if (h) {
                         if (c.version === h.manifest.version) {
-                            this.logger.info(m(1960, null, a ? `${o}@${a}` : o));
+                            this.logger.info(m(1961, null, a ? `${o}@${a}` : o));
                             return
                         }
-                        this.logger.info(m(1961, null, o, c.version))
+                        this.logger.info(m(1962, null, o, c.version))
                     }
-                    l.isBuiltin ? this.logger.info(a ? m(1962, null, o, a) : m(1963, null, o)) : this.logger.info(a ? m(1964, null, o, a) : m(1965, null, o)), s.push({
+                    l.isBuiltin ? this.logger.info(a ? m(1963, null, o, a) : m(1964, null, o)) : this.logger.info(a ? m(1965, null, o, a) : m(1966, null, o)), s.push({
                         extension: c,
                         options: {
                             ...l,
@@ -14973,7 +14973,7 @@ ${ph}`), r.push(o);
                     })
                 })), s.length) {
                 const o = await this.extensionManagementService.installGalleryExtensions(s);
-                for (const a of o) a.error ? (this.logger.error(m(1966, null, a.identifier.id, $(a.error))), r.push(a.identifier.id)) : this.logger.info(m(1967, null, a.identifier.id, a.local?.manifest.version))
+                for (const a of o) a.error ? (this.logger.error(m(1967, null, a.identifier.id, $(a.error))), r.push(a.identifier.id)) : this.logger.info(m(1968, null, a.identifier.id, a.local?.manifest.version))
             }
             return r
         }
@@ -14984,9 +14984,9 @@ ${ph}`), r.push(o);
                 await this.extensionManagementService.install(e, {
                     ...t,
                     installGivenVersion: !0
-                }), this.logger.info(m(1968, null, Ji(e)))
+                }), this.logger.info(m(1969, null, Ji(e)))
             } catch (o) {
-                if ($i(o)) this.logger.info(m(1969, null, Ji(e)));
+                if ($i(o)) this.logger.info(m(1970, null, Ji(e)));
                 else throw o
             }
         }
@@ -15014,7 +15014,7 @@ ${ph}`), r.push(o);
                         id: dt(e.publisher, e.name)
                     },
                     n = r.find(o => Q(s, o.identifier) && Yo(o.manifest.version, e.version));
-                if (n) return this.logger.info(m(1970, null, n.identifier.id, n.manifest.version, e.version)), !1
+                if (n) return this.logger.info(m(1971, null, n.identifier.id, n.manifest.version, e.version)), !1
             }
             return this.validateExtensionKind(e)
         }
@@ -15034,18 +15034,18 @@ ${ph}`), r.push(o);
                 if (!l.length) throw new Error(`${this.notInstalled(o)}
 ${ph}`);
                 if (l.some(c => c.type === 0)) {
-                    this.logger.info(m(1971, null, o));
-                    return
-                }
-                if (!t && l.some(c => c.isBuiltin)) {
                     this.logger.info(m(1972, null, o));
                     return
                 }
-                this.logger.info(m(1973, null, o));
+                if (!t && l.some(c => c.isBuiltin)) {
+                    this.logger.info(m(1973, null, o));
+                    return
+                }
+                this.logger.info(m(1974, null, o));
                 for (const c of l) await this.extensionManagementService.uninstall(c, {
                     profileLocation: i
                 }), s.push(c);
-                this.location ? this.logger.info(m(1974, null, o, this.location)) : this.logger.info(m(1975, null, o))
+                this.location ? this.logger.info(m(1975, null, o, this.location)) : this.logger.info(m(1976, null, o))
             }
         }
         async locateExtension(e) {
@@ -15060,7 +15060,7 @@ ${ph}`);
             })
         }
         notInstalled(e) {
-            return this.location ? m(1976, null, e, this.location) : m(1977, null, e)
+            return this.location ? m(1977, null, e, this.location) : m(1978, null, e)
         }
     };
 Ti = __decorate([__param(1, jo), __param(2, di)], Ti);
@@ -15326,7 +15326,7 @@ function Km(e, t, i, r) {
                     y = r?.[f],
                     v = typeof y == "string" ? y : y?.message;
                 if (!p) {
-                    v || e.warn(`[${t.name}]: ${m(1978,null,f)}`);
+                    v || e.warn(`[${t.name}]: ${m(1979,null,f)}`);
                     return
                 }
                 if (a && (o === "title" || o === "category") && v && v !== p) {
@@ -15740,7 +15740,7 @@ var Yr = class {
             try {
                 i = (await this.fileService.readFile(t)).value.toString()
             } catch (s) {
-                throw $e(s) !== 1 && this.logService.error(this.formatMessage(e, m(1979, null, t.path, s.message))), s
+                throw $e(s) !== 1 && this.logService.error(this.formatMessage(e, m(1980, null, t.path, s.message))), s
             }
             let r;
             try {
@@ -15748,11 +15748,11 @@ var Yr = class {
             } catch (s) {
                 const n = [];
                 Rr(i, n);
-                for (const o of n) this.logService.error(this.formatMessage(e, m(1980, null, t.path, o.offset, o.length, ha(o.error))));
+                for (const o of n) this.logService.error(this.formatMessage(e, m(1981, null, t.path, o.offset, o.length, ha(o.error))));
                 throw s
             }
             if (Ar(r) !== "object") {
-                const s = this.formatMessage(e, m(1981, null, t.path));
+                const s = this.formatMessage(e, m(1982, null, t.path));
                 throw this.logService.error(s), new Error(s)
             }
             return r
@@ -15763,9 +15763,9 @@ var Yr = class {
                 const s = [],
                     n = await this.resolveOriginalMessageBundle(r.default, s);
                 if (s.length > 0) return s.forEach(a => {
-                    this.logService.error(this.formatMessage(e, m(1982, null, r.default?.path, ha(a.error))))
+                    this.logService.error(this.formatMessage(e, m(1983, null, r.default?.path, ha(a.error))))
                 }), t;
-                if (Ar(r) !== "object") return this.logService.error(this.formatMessage(e, m(1983, null, r.default?.path))), t;
+                if (Ar(r) !== "object") return this.logService.error(this.formatMessage(e, m(1984, null, r.default?.path))), t;
                 const o = r.values || Object.create(null);
                 return jm(this.logService, t, o, n)
             } catch {}
@@ -15775,11 +15775,11 @@ var Yr = class {
             const r = W(e, "package.nls.json"),
                 s = (l, c) => {
                     c.forEach(h => {
-                        this.logService.error(this.formatMessage(e, m(1984, null, l?.path, ha(h.error))))
+                        this.logService.error(this.formatMessage(e, m(1985, null, l?.path, ha(h.error))))
                     })
                 },
                 n = l => {
-                    this.logService.error(this.formatMessage(e, m(1985, null, l?.path)))
+                    this.logService.error(this.formatMessage(e, m(1986, null, l?.path)))
                 },
                 o = `${t.publisher}.${t.name}`,
                 a = i.translations[o];
@@ -17594,7 +17594,7 @@ function Ov(e, t) {
     const i = e.match(/^`+/gm)?.reduce((s, n) => s.length > n.length ? s : n).length ?? 0,
         r = i >= 3 ? i + 1 : 3;
     return [`${"`".repeat(r)}${t}`,e,`${"`".repeat(r)}`].join(`
-`)}var _a=class extends K{constructor(e,t){super(),this.productService=e,this.allowedExtensionsService=t}async canInstall(e){const t=this.allowedExtensionsService.isAllowed({id:e.identifier.id,publisherDisplayName:e.publisherDisplayName});if(t!==!0)return new Oi(m(1923,null,t.value));if(!await this.isExtensionPlatformCompatible(e)){const i=Wt?"https://aka.ms/vscode-web-extensions-guide":"https://aka.ms/vscode-platform-specific-extensions";return new Oi(`${m(1924,null,e.displayName??e.identifier.id,this.productService.nameLong,$u(await this.getTargetPlatform()))} [${m(1925,null)}](${i})`)
+`)}var _a=class extends K{constructor(e,t){super(),this.productService=e,this.allowedExtensionsService=t}async canInstall(e){const t=this.allowedExtensionsService.isAllowed({id:e.identifier.id,publisherDisplayName:e.publisherDisplayName});if(t!==!0)return new Oi(m(1924,null,t.value));if(!await this.isExtensionPlatformCompatible(e)){const i=Wt?"https://aka.ms/vscode-web-extensions-guide":"https://aka.ms/vscode-platform-specific-extensions";return new Oi(`${m(1925,null,e.displayName??e.identifier.id,this.productService.nameLong,$u(await this.getTargetPlatform()))} [${m(1926,null)}](${i})`)
 }
 return !0
 }
@@ -17658,7 +17658,7 @@ var xa = class extends _a {
         }
     }
     async installGalleryExtensions(e) {
-        if (!this.galleryService.isEnabled()) throw new ve(m(1926, null), "NotAllowed");
+        if (!this.galleryService.isEnabled()) throw new ve(m(1927, null), "NotAllowed");
         const t = [],
             i = [];
         return await Promise.allSettled(e.map(async ({
@@ -18023,7 +18023,7 @@ var xa = class extends _a {
     async checkAndGetCompatibleVersion(e, t, i, r) {
         let s;
         const n = await this.getExtensionsControlManifest();
-        if (J0(e.identifier, n.malicious)) throw new ve(m(1927, null, e.identifier.id), "Malicious");
+        if (J0(e.identifier, n.malicious)) throw new ve(m(1928, null, e.identifier.id), "Malicious");
         const o = n.deprecated[e.identifier.id.toLowerCase()];
         if (o?.extension?.autoMigrate) {
             if (this.logService.info(`The '${e.identifier.id}' extension is deprecated, fetching the compatible '${o.extension.id}' extension instead.`), s = (await this.galleryService.getExtensions([{
@@ -18033,15 +18033,15 @@ var xa = class extends _a {
                     targetPlatform: await this.getTargetPlatform(),
                     compatible: !0,
                     productVersion: r
-                }, de.None))[0], !s) throw new ve(m(1928, null, e.identifier.id, o.extension.id), "Deprecated")
+                }, de.None))[0], !s) throw new ve(m(1929, null, e.identifier.id, o.extension.id), "Deprecated")
         } else {
             if (await this.canInstall(e) !== !0) {
                 const l = await this.getTargetPlatform();
-                throw new ve(m(1929, null, e.identifier.id, this.productService.nameLong, $u(l)), "IncompatibleTargetPlatform")
+                throw new ve(m(1930, null, e.identifier.id, this.productService.nameLong, $u(l)), "IncompatibleTargetPlatform")
             }
             if (s = await this.getCompatibleVersion(e, t, i, r), !s) {
                 const l = [];
-                throw ta(e.properties.enabledApiProposals ?? [], l) ? !i && e.properties.isPreReleaseVersion && (await this.galleryService.getExtensions([e.identifier], {}, de.None, e.queryContext))[0] ? new ve(m(1931, null, e.displayName ?? e.identifier.id), "ReleaseVersionNotFound") : new ve(m(1932, null, e.identifier.id, this.productService.nameLong, this.productService.version, this.productService.vscodeVersion), "Incompatible") : new ve(m(1930, null, e.displayName ?? e.identifier.id, l[0]), "IncompatibleApi")
+                throw ta(e.properties.enabledApiProposals ?? [], l) ? !i && e.properties.isPreReleaseVersion && (await this.galleryService.getExtensions([e.identifier], {}, de.None, e.queryContext))[0] ? new ve(m(1932, null, e.displayName ?? e.identifier.id), "ReleaseVersionNotFound") : new ve(m(1933, null, e.identifier.id, this.productService.nameLong, this.productService.version, this.productService.vscodeVersion), "Incompatible") : new ve(m(1931, null, e.displayName ?? e.identifier.id, l[0]), "IncompatibleApi")
             }
         }
         this.logService.info("Getting Manifest...", s.identifier.id);
@@ -18175,7 +18175,7 @@ var xa = class extends _a {
         }
     }
     getDependentsErrorMessage(e, t, i) {
-        return i === e ? t.length === 1 ? m(1933, null, i.manifest.displayName || i.manifest.name, t[0].manifest.displayName || t[0].manifest.name) : t.length === 2 ? m(1934, null, i.manifest.displayName || i.manifest.name, t[0].manifest.displayName || t[0].manifest.name, t[1].manifest.displayName || t[1].manifest.name) : m(1935, null, i.manifest.displayName || i.manifest.name, t[0].manifest.displayName || t[0].manifest.name, t[1].manifest.displayName || t[1].manifest.name) : t.length === 1 ? m(1936, null, i.manifest.displayName || i.manifest.name, e.manifest.displayName || e.manifest.name, t[0].manifest.displayName || t[0].manifest.name) : t.length === 2 ? m(1937, null, i.manifest.displayName || i.manifest.name, e.manifest.displayName || e.manifest.name, t[0].manifest.displayName || t[0].manifest.name, t[1].manifest.displayName || t[1].manifest.name) : m(1938, null, i.manifest.displayName || i.manifest.name, e.manifest.displayName || e.manifest.name, t[0].manifest.displayName || t[0].manifest.name, t[1].manifest.displayName || t[1].manifest.name)
+        return i === e ? t.length === 1 ? m(1934, null, i.manifest.displayName || i.manifest.name, t[0].manifest.displayName || t[0].manifest.name) : t.length === 2 ? m(1935, null, i.manifest.displayName || i.manifest.name, t[0].manifest.displayName || t[0].manifest.name, t[1].manifest.displayName || t[1].manifest.name) : m(1936, null, i.manifest.displayName || i.manifest.name, t[0].manifest.displayName || t[0].manifest.name, t[1].manifest.displayName || t[1].manifest.name) : t.length === 1 ? m(1937, null, i.manifest.displayName || i.manifest.name, e.manifest.displayName || e.manifest.name, t[0].manifest.displayName || t[0].manifest.name) : t.length === 2 ? m(1938, null, i.manifest.displayName || i.manifest.name, e.manifest.displayName || e.manifest.name, t[0].manifest.displayName || t[0].manifest.name, t[1].manifest.displayName || t[1].manifest.name) : m(1939, null, i.manifest.displayName || i.manifest.name, e.manifest.displayName || e.manifest.name, t[0].manifest.displayName || t[0].manifest.name, t[1].manifest.displayName || t[1].manifest.name)
     }
     getAllPackExtensionsToUninstall(e, t, i = []) {
         if (i.indexOf(e) !== -1) return [];
@@ -18267,7 +18267,7 @@ async function Ia(e) {
     try {
         return JSON.parse(t.toString("utf8"))
     } catch {
-        throw new ve(m(1997, null), "Invalid")
+        throw new ve(m(1998, null), "Invalid")
     }
 }
 var hr = class extends K {
@@ -18745,14 +18745,14 @@ var Nv = class extends K {
                 const s = await Ia(Ei(i.fsPath)),
                     n = dt(s.publisher, s.name);
                 if (n !== "typescriptteam.native-preview") {
-                    if (s.engines && s.engines.vscode && !jr(s.engines.vscode, this.productService.vscodeVersion, this.productService.date)) throw new Error(m(1986, null, n, this.productService.vscodeVersion))
+                    if (s.engines && s.engines.vscode && !jr(s.engines.vscode, this.productService.vscodeVersion, this.productService.date)) throw new Error(m(1987, null, n, this.productService.vscodeVersion))
                 }
                 const o = this.allowedExtensionsService.isAllowed({
                     id: n,
                     version: s.version,
                     publisherDisplayName: void 0
                 });
-                if (o !== !0) throw new Error(m(1987, null, o.value));
+                if (o !== !0) throw new Error(m(1988, null, o.value));
                 const l = (await this.installExtensions([{
                     manifest: s,
                     extension: i,
@@ -18869,7 +18869,7 @@ var Nv = class extends K {
                 const c = await Ia(a.fsPath);
                 if (!new ct(t.identifier, t.version).equals(new ct({
                         id: dt(c.publisher, c.name)
-                    }, c.version))) throw new ve(m(1988, null, t.identifier.id), "Invalid");
+                    }, c.version))) throw new ve(m(1989, null, t.identifier.id), "Invalid");
                 const h = await this.extensionsScanner.extractUserExtension(e, a.fsPath, !1, s);
                 if (l && o === ce.Success) try {
                     const f = W(h.location, ".signature.sigzip");
@@ -18926,10 +18926,10 @@ var Nv = class extends K {
                 } catch (l) {
                     this.logService.warn("Error while deleting signature archive", o.toString(), $(l))
                 }
-                if (!n) throw new ve(m(1989, null), "SignatureVerificationInternal");
+                if (!n) throw new ve(m(1990, null), "SignatureVerificationInternal");
                 switch (n) {
                     case ce.NotSigned:
-                        throw new ve(m(1990, null), "PackageNotSigned");
+                        throw new ve(m(1991, null), "PackageNotSigned");
                     case ce.PackageIntegrityCheckFailed:
                     case ce.SignatureIsInvalid:
                     case ce.SignatureManifestIsInvalid:
@@ -18940,9 +18940,9 @@ var Nv = class extends K {
                     case ce.CertificateRevoked:
                     case ce.SignatureIsNotValid:
                     case ce.SignatureArchiveHasTooManyEntries:
-                        throw new ve(m(1991, null, n), "SignatureVerificationFailed")
+                        throw new ve(m(1992, null, n), "SignatureVerificationFailed")
                 }
-                throw new ve(m(1992, null, n), "SignatureVerificationInternal")
+                throw new ve(m(1993, null, n), "SignatureVerificationInternal")
             }
             return {
                 location: s,
@@ -19084,7 +19084,7 @@ var Aa = class extends K {
             try {
                 await this.deleteExtensionFromLocation(e.id, o, "removeExisting")
             } catch {
-                throw new ve(m(1993, null, o.fsPath, e.id), "Delete")
+                throw new ve(m(1994, null, o.fsPath, e.id), "Delete")
             }
         }
         try {
@@ -19253,7 +19253,7 @@ var Aa = class extends K {
                 });
                 if (r) return await this.toLocalExtension(r)
             }
-            throw new ve(m(1994, null, e.path), "ScanningExtension")
+            throw new ve(m(1995, null, e.path), "ScanningExtension")
         } catch (r) {
             throw Ce(r, "ScanningExtension")
         }
@@ -19386,13 +19386,13 @@ var La = class extends Wh {
             if (i && this.extensionKey.equals(new ct(i.identifier, i.manifest.version))) try {
                 await this.extensionsScanner.deleteExtension(i, "existing")
             } catch {
-                throw new Error(m(1995, null, this.manifest.displayName || this.manifest.name))
+                throw new Error(m(1996, null, this.manifest.displayName || this.manifest.name))
             }
             const o = await this.unsetIfRemoved(this.extensionKey);
             if (o) try {
                 await this.extensionsScanner.deleteExtension(o, "existing")
             } catch {
-                throw new Error(m(1996, null, this.manifest.displayName || this.manifest.name))
+                throw new Error(m(1997, null, this.manifest.displayName || this.manifest.name))
             }
         } else {
             if (r.id = this.source.identifier.uuid, r.publisherId = this.source.publisherId, r.publisherDisplayName = this.source.publisherDisplayName, r.targetPlatform = this.source.properties.targetPlatform, r.updated = !!i, r.private = this.source.private, r.isPreReleaseVersion = this.source.properties.isPreReleaseVersion, r.hasPreReleaseVersion = i?.hasPreReleaseVersion || this.source.properties.isPreReleaseVersion, r.preRelease = Et(this.options.preRelease) ? this.options.preRelease : this.options.installPreReleaseVersion || this.source.properties.isPreReleaseVersion || i?.preRelease, i && i.type !== 0 && i.manifest.version === this.source.version && !(!["undefined", "web"].includes(i.targetPlatform) && this.source.properties.targetPlatform !== "web" && i.targetPlatform !== this.source.properties.targetPlatform)) return this.extensionsScanner.updateMetadata(i, r, this.options.profileLocation);
@@ -19502,7 +19502,7 @@ function Oa(e) {
 }
 
 function Wv(e, t) {
-    if (typeof t?.limits?.size == "number" && e > t.limits.size) throw Nt(m(2067, null), Ae.FileTooLarge);
+    if (typeof t?.limits?.size == "number" && e > t.limits.size) throw Nt(m(2068, null), Ae.FileTooLarge);
     return !0
 }
 
@@ -19573,12 +19573,12 @@ alwaysApply: true
             }))
         }
         async withProvider(e) {
-            if (!pp(e)) throw new Ze(m(2039, null, this.resourceForError(e)), 8);
+            if (!pp(e)) throw new Ze(m(2040, null, this.resourceForError(e)), 8);
             await this.activateProvider(e.scheme);
             const t = this.provider.get(e.scheme);
             if (!t) {
                 const i = new Wi;
-                throw i.message = m(2040, null, e.toString()), i
+                throw i.message = m(2041, null, e.toString()), i
             }
             return t
         }
@@ -19596,7 +19596,7 @@ alwaysApply: true
             try {
                 return await this.doResolveFile(e, t)
             } catch (i) {
-                throw en(i) === Ae.FileNotFound ? new Ze(m(2041, null, this.resourceForError(e)), 1) : Ri(i)
+                throw en(i) === Ae.FileNotFound ? new Ze(m(2042, null, this.resourceForError(e)), 1) : Ri(i)
             }
         }
         async doResolveFile(e, t) {
@@ -19613,7 +19613,7 @@ alwaysApply: true
             })) ? !0 : c.isDirectory && n ? h === 1 : !1))
         }
         async toFileStat(e, t, i, r, s, n) {
-            if (!i || typeof i.type != "number") throw Nt(m(2042, null), Ae.Unknown);
+            if (!i || typeof i.type != "number") throw Nt(m(2043, null), Ae.Unknown);
             const {
                 providerExtUri: o
             } = this.getExtUri(e), a = {
@@ -19693,7 +19693,7 @@ alwaysApply: true
             return !0
         }
         async doValidateCreateFile(e, t) {
-            if (!t?.overwrite && await this.exists(e)) throw new Ze(m(2043, null, this.resourceForError(e)), 3, t)
+            if (!t?.overwrite && await this.exists(e)) throw new Ze(m(2044, null, this.resourceForError(e)), 3, t)
         }
         async createFile(e, t = U.fromString(""), i) {
             qv(e) && t.toString().trim() === "" && (t = U.fromString(Bv)), await this.doValidateCreateFile(e, i);
@@ -19720,7 +19720,7 @@ alwaysApply: true
                 } = await this.validateWriteFile(r, e, t, n);
                 o || await this.mkdirp(r, s.dirname(e)), a || (a = await this.peekBufferForWriting(r, t)), !hi(r) || mt(r) && a instanceof U || mt(r) && Ru(r) && n?.atomic ? await this.doWriteUnbuffered(r, e, n, a) : await this.doWriteBuffered(r, e, n, a instanceof U ? G1(a) : a), this._onDidRunOperation.fire(new nr(e, 4))
             } catch (o) {
-                throw new Ze(m(2044, null, this.resourceForError(e), Ri(o).toString()), $e(o), n)
+                throw new Ze(m(2045, null, this.resourceForError(e), Ri(o).toString()), $e(o), n)
             }
             return this.resolve(e, {
                 resolveMetadata: !0
@@ -19738,11 +19738,11 @@ alwaysApply: true
         }
         async validateWriteFile(e, t, i, r) {
             const s = !!r?.unlock;
-            if (s && !(e.capabilities & 8192)) throw new Error(m(2045, null, this.resourceForError(t)));
+            if (s && !(e.capabilities & 8192)) throw new Error(m(2046, null, this.resourceForError(t)));
             if (!!r?.atomic) {
-                if (!(e.capabilities & 32768)) throw new Error(m(2046, null, this.resourceForError(t)));
-                if (!(e.capabilities & 2)) throw new Error(m(2047, null, this.resourceForError(t)));
-                if (s) throw new Error(m(2048, null, this.resourceForError(t)))
+                if (!(e.capabilities & 32768)) throw new Error(m(2047, null, this.resourceForError(t)));
+                if (!(e.capabilities & 2)) throw new Error(m(2048, null, this.resourceForError(t)));
+                if (s) throw new Error(m(2049, null, this.resourceForError(t)))
             }
             let o;
             try {
@@ -19751,7 +19751,7 @@ alwaysApply: true
                 return Object.create(null)
             }
             if (!o || typeof o.type != "number") return Object.create(null);
-            if ((o.type & ft.Directory) !== 0) throw new Ze(m(2049, null, this.resourceForError(t)), 0, r);
+            if ((o.type & ft.Directory) !== 0) throw new Ze(m(2050, null, this.resourceForError(t)), 0, r);
             this.throwIfFileIsReadonly(t, o);
             let a;
             if (typeof r?.mtime == "number" && typeof r.etag == "string" && r.etag !== Uo && typeof o.mtime == "number" && typeof o.size == "number" && r.mtime < o.mtime && r.etag !== Lu({
@@ -19771,7 +19771,7 @@ alwaysApply: true
                         buffer: a
                     }
                 } catch {}
-                throw new Ze(m(2050, null), 3, r)
+                throw new Ze(m(2051, null), 3, r)
             }
             return {
                 stat: o,
@@ -19829,7 +19829,7 @@ alwaysApply: true
             }
         }
         restoreReadError(e, t, i) {
-            const r = m(2051, null, this.resourceForError(t), Ri(e).toString());
+            const r = m(2052, null, this.resourceForError(t), Ri(e).toString());
             return e instanceof Mo ? new Mo(r, e.stat, i) : e instanceof No ? new No(r, e.fileOperationResult, e.size, e.options) : new Ze(r, $e(e), i)
         }
         readFileStreamed(e, t, i, r = Object.create(null)) {
@@ -19864,12 +19864,12 @@ alwaysApply: true
             const i = await this.resolve(e, {
                 resolveMetadata: !0
             });
-            if (i.isDirectory) throw new Ze(m(2052, null, this.resourceForError(e)), 0, t);
-            if (typeof t?.etag == "string" && t.etag !== Uo && t.etag === i.etag) throw new Mo(m(2053, null), i, t);
+            if (i.isDirectory) throw new Ze(m(2053, null, this.resourceForError(e)), 0, t);
+            if (typeof t?.etag == "string" && t.etag !== Uo && t.etag === i.etag) throw new Mo(m(2054, null), i, t);
             return this.validateReadFileLimits(e, i.size, t), i
         }
         validateReadFileLimits(e, t, i) {
-            if (typeof i?.limits?.size == "number" && t > i.limits.size) throw new No(m(2054, null, this.resourceForError(e)), 7, t, i)
+            if (typeof i?.limits?.size == "number" && t > i.limits.size) throw new No(m(2055, null, this.resourceForError(e)), 7, t, i)
         }
         async canMove(e, t, i) {
             return this.doCanMoveCopy(e, t, "move", i)
@@ -19947,17 +19947,17 @@ alwaysApply: true
                     providerExtUri: l,
                     isPathCaseSensitive: c
                 } = this.getExtUri(e);
-                if (c || (o = l.isEqual(t, r)), o && s === "copy") throw new Error(m(2055, null, this.resourceForError(t), this.resourceForError(r)));
-                if (!o && l.isEqualOrParent(r, t)) throw new Error(m(2056, null, this.resourceForError(t), this.resourceForError(r)))
+                if (c || (o = l.isEqual(t, r)), o && s === "copy") throw new Error(m(2056, null, this.resourceForError(t), this.resourceForError(r)));
+                if (!o && l.isEqualOrParent(r, t)) throw new Error(m(2057, null, this.resourceForError(t), this.resourceForError(r)))
             }
             const a = await this.exists(r);
             if (a && !o) {
-                if (!n) throw new Ze(m(2057, null, this.resourceForError(t), this.resourceForError(r)), 4);
+                if (!n) throw new Ze(m(2058, null, this.resourceForError(t), this.resourceForError(r)), 4);
                 if (e === i) {
                     const {
                         providerExtUri: l
                     } = this.getExtUri(e);
-                    if (l.isEqualOrParent(t, r)) throw new Error(m(2058, null, this.resourceForError(t), this.resourceForError(r)))
+                    if (l.isEqualOrParent(t, r)) throw new Error(m(2059, null, this.resourceForError(t), this.resourceForError(r)))
                 }
             }
             return {
@@ -19994,7 +19994,7 @@ alwaysApply: true
                     i.push(r.basename(t)), t = r.dirname(t);
                     continue
                 }
-                if ((s.type & ft.Directory) === 0) throw new Error(m(2059, null, this.resourceForError(t)));
+                if ((s.type & ft.Directory) === 0) throw new Error(m(2060, null, this.resourceForError(t)));
                 break
             } catch (s) {
                 if (en(s) !== Ae.FileNotFound) throw s;
@@ -20020,19 +20020,19 @@ alwaysApply: true
         async doValidateDelete(e, t) {
             const i = this.throwIfFileSystemIsReadonly(await this.withProvider(e), e),
                 r = !!t?.useTrash;
-            if (r && !(i.capabilities & 4096)) throw new Error(m(2060, null, this.resourceForError(e)));
+            if (r && !(i.capabilities & 4096)) throw new Error(m(2061, null, this.resourceForError(e)));
             const s = t?.atomic;
-            if (s && !(i.capabilities & 65536)) throw new Error(m(2061, null, this.resourceForError(e)));
-            if (r && s) throw new Error(m(2062, null, this.resourceForError(e)));
+            if (s && !(i.capabilities & 65536)) throw new Error(m(2062, null, this.resourceForError(e)));
+            if (r && s) throw new Error(m(2063, null, this.resourceForError(e)));
             let n;
             try {
                 n = await i.stat(e)
             } catch {}
             if (n) this.throwIfFileIsReadonly(e, n);
-            else throw new Ze(m(2063, null, this.resourceForError(e)), 1);
+            else throw new Ze(m(2064, null, this.resourceForError(e)), 1);
             if (!!!t?.recursive) {
                 const a = await this.resolve(e);
-                if (a.isDirectory && Array.isArray(a.children) && a.children.length > 0) throw new Error(m(2064, null, this.resourceForError(e)))
+                if (a.isDirectory && Array.isArray(a.children) && a.children.length > 0) throw new Error(m(2065, null, this.resourceForError(e)))
             }
             return i
         }
@@ -20236,11 +20236,11 @@ alwaysApply: true
             await this.doWriteUnbuffered(i, r, void 0, s)
         }
         throwIfFileSystemIsReadonly(e, t) {
-            if (e.capabilities & 2048) throw new Ze(m(2065, null, this.resourceForError(t)), 6);
+            if (e.capabilities & 2048) throw new Ze(m(2066, null, this.resourceForError(t)), 6);
             return e
         }
         throwIfFileIsReadonly(e, t) {
-            if ((t.permissions ?? 0) & Br.Readonly) throw new Ze(m(2066, null, this.resourceForError(e)), 6)
+            if ((t.permissions ?? 0) & Br.Readonly) throw new Ze(m(2067, null, this.resourceForError(e)), 6)
         }
         resourceForError(e) {
             return e.scheme === re.file ? e.fsPath : e.toString(!0)
@@ -21599,8 +21599,8 @@ var _2 = Va,
                 const o = this.toFilePath(t);
                 if (!r.create || !r.overwrite) {
                     if (await fe.exists(o)) {
-                        if (!r.overwrite) throw Nt(m(2070, null), Ae.FileExists)
-                    } else if (!r.create) throw Nt(m(2071, null), Ae.FileNotFound)
+                        if (!r.overwrite) throw Nt(m(2071, null), Ae.FileExists)
+                    } else if (!r.create) throw Nt(m(2072, null), Ae.FileNotFound)
                 }
                 if (n = await this.open(t, {
                         create: !0,
@@ -21743,7 +21743,7 @@ var _2 = Va,
             if (s !== n) try {
                 await this.validateMoveCopy(t, i, "move", r.overwrite), await fe.rename(s, n)
             } catch (o) {
-                throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(m(2072, null, bt(s), bt(ni(n)), o.toString()))), this.toFileSystemProviderError(o)
+                throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(m(2073, null, bt(s), bt(ni(n)), o.toString()))), this.toFileSystemProviderError(o)
             }
         }
         async copy(t, i, r) {
@@ -21754,7 +21754,7 @@ var _2 = Va,
                     preserveSymlinks: !0
                 })
             } catch (o) {
-                throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(m(2073, null, bt(s), bt(ni(n)), o.toString()))), this.toFileSystemProviderError(o)
+                throw (o.code === "EINVAL" || o.code === "EBUSY" || o.code === "ENAMETOOLONG") && (o = new Error(m(2074, null, bt(s), bt(ni(n)), o.toString()))), this.toFileSystemProviderError(o)
             }
         }
         async validateMoveCopy(t, i, r, s) {
@@ -21762,14 +21762,14 @@ var _2 = Va,
                 o = this.toFilePath(i);
             let a = !1;
             if (!!(this.capabilities & 1024) || (a = Ps(n, o, !0)), a) {
-                if (r === "copy") throw Nt(m(2074, null), Ae.FileExists);
+                if (r === "copy") throw Nt(m(2075, null), Ae.FileExists);
                 if (r === "move") return
             }
             const c = await this.statIgnoreError(t);
-            if (!c) throw Nt(m(2075, null), Ae.FileNotFound);
+            if (!c) throw Nt(m(2076, null), Ae.FileNotFound);
             const h = await this.statIgnoreError(i);
             if (h) {
-                if (!s) throw Nt(m(2076, null), Ae.FileExists);
+                if (!s) throw Nt(m(2077, null), Ae.FileExists);
                 (c.type & ft.File) !== 0 && (h.type & ft.File) !== 0 || await this.delete(i, {
                     recursive: !0,
                     useTrash: !1,
@@ -22222,7 +22222,7 @@ var L2 = oe("languagePackService"),
         createQuickPickItem(e, t, i) {
             const r = t ?? e;
             let s;
-            if (r !== e && (s = `(${e})`), e.toLowerCase() === At.toLowerCase() && (s ??= "", s += m(2085, null)), i?.installCount) {
+            if (r !== e && (s = `(${e})`), e.toLowerCase() === At.toLowerCase() && (s ??= "", s += m(2086, null)), i?.installCount) {
                 s ??= "";
                 const n = i.installCount;
                 let o;
@@ -22602,9 +22602,9 @@ async function Q2() {
 import "assert";
 var ow = Hf(Xf(), 1),
     aw = {
-        o: m(1862, null),
-        e: m(1863, null),
-        t: m(1864, null)
+        o: m(1863, null),
+        e: m(1864, null),
+        t: m(1865, null)
     },
     J2 = {
         tunnel: {
@@ -22614,7 +22614,7 @@ var ow = Hf(Xf(), 1),
                 "cli-data-dir": {
                     type: "string",
                     args: "dir",
-                    description: m(1865, null)
+                    description: m(1866, null)
                 },
                 "disable-telemetry": {
                     type: "boolean"
@@ -22645,72 +22645,72 @@ var ow = Hf(Xf(), 1),
             cat: "o",
             alias: "d",
             args: ["file", "file"],
-            description: m(1866, null)
+            description: m(1867, null)
         },
         merge: {
             type: "boolean",
             cat: "o",
             alias: "m",
             args: ["path1", "path2", "base", "result"],
-            description: m(1867, null)
+            description: m(1868, null)
         },
         add: {
             type: "boolean",
             cat: "o",
             alias: "a",
             args: "folder",
-            description: m(1868, null)
+            description: m(1869, null)
         },
         remove: {
             type: "boolean",
             cat: "o",
             args: "folder",
-            description: m(1869, null)
+            description: m(1870, null)
         },
         goto: {
             type: "boolean",
             cat: "o",
             alias: "g",
             args: "file:line[:character]",
-            description: m(1870, null)
+            description: m(1871, null)
         },
         "new-window": {
             type: "boolean",
             cat: "o",
             alias: "n",
-            description: m(1871, null)
+            description: m(1872, null)
         },
         "reuse-window": {
             type: "boolean",
             cat: "o",
             alias: "r",
-            description: m(1872, null)
+            description: m(1873, null)
         },
         "suppress-popups-on-startup": {
             type: "boolean",
             cat: "o",
-            description: m(1873, null)
+            description: m(1874, null)
         },
         "web-worker-exthost": {
             type: "boolean",
             cat: "o",
-            description: m(1874, null)
+            description: m(1875, null)
         },
         glass: {
             type: "boolean",
             cat: "o",
-            description: m(1875, null)
+            description: m(1876, null)
         },
         classic: {
             type: "boolean",
             cat: "o",
-            description: m(1876, null)
+            description: m(1877, null)
         },
         wait: {
             type: "boolean",
             cat: "o",
             alias: "w",
-            description: m(1877, null)
+            description: m(1878, null)
         },
         waitMarkerFilePath: {
             type: "string"
@@ -22719,32 +22719,32 @@ var ow = Hf(Xf(), 1),
             type: "string",
             cat: "o",
             args: "locale",
-            description: m(1878, null)
+            description: m(1879, null)
         },
         "user-data-dir": {
             type: "string",
             cat: "o",
             args: "dir",
-            description: m(1879, null)
+            description: m(1880, null)
         },
         profile: {
             type: "string",
             cat: "o",
             args: "profileName",
-            description: m(1880, null)
+            description: m(1881, null)
         },
         help: {
             type: "boolean",
             cat: "o",
             alias: "h",
-            description: m(1881, null)
+            description: m(1882, null)
         },
         "extensions-dir": {
             type: "string",
             deprecates: ["extensionHomePath"],
             cat: "e",
             args: "dir",
-            description: m(1882, null)
+            description: m(1883, null)
         },
         "extensions-download-dir": {
             type: "string"
@@ -22755,84 +22755,84 @@ var ow = Hf(Xf(), 1),
         "list-extensions": {
             type: "boolean",
             cat: "e",
-            description: m(1883, null)
+            description: m(1884, null)
         },
         "show-versions": {
             type: "boolean",
             cat: "e",
-            description: m(1884, null)
+            description: m(1885, null)
         },
         category: {
             type: "string",
             allowEmptyValue: !0,
             cat: "e",
-            description: m(1885, null),
+            description: m(1886, null),
             args: "category"
         },
         "install-extension": {
             type: "string[]",
             cat: "e",
             args: "ext-id | path",
-            description: m(1886, null)
+            description: m(1887, null)
         },
         "pre-release": {
             type: "boolean",
             cat: "e",
-            description: m(1887, null)
+            description: m(1888, null)
         },
         "uninstall-extension": {
             type: "string[]",
             cat: "e",
             args: "ext-id",
-            description: m(1888, null)
+            description: m(1889, null)
         },
         "update-extensions": {
             type: "boolean",
             cat: "e",
-            description: m(1889, null)
+            description: m(1890, null)
         },
         "enable-proposed-api": {
             type: "string[]",
             allowEmptyValue: !0,
             cat: "e",
             args: "ext-id",
-            description: m(1890, null)
+            description: m(1891, null)
         },
         "add-mcp": {
             type: "string[]",
             cat: "o",
             args: "json",
-            description: m(1891, null)
+            description: m(1892, null)
         },
         version: {
             type: "boolean",
             cat: "t",
             alias: "v",
-            description: m(1892, null)
+            description: m(1893, null)
         },
         verbose: {
             type: "boolean",
             cat: "t",
             global: !0,
-            description: m(1893, null)
+            description: m(1894, null)
         },
         log: {
             type: "string[]",
             cat: "t",
             args: "level",
             global: !0,
-            description: m(1894, null)
+            description: m(1895, null)
         },
         status: {
             type: "boolean",
             alias: "s",
             cat: "t",
-            description: m(1895, null)
+            description: m(1896, null)
         },
         "prof-startup": {
             type: "boolean",
             cat: "t",
-            description: m(1896, null)
+            description: m(1897, null)
         },
         "prof-append-timers": {
             type: "string"
@@ -22856,18 +22856,18 @@ var ow = Hf(Xf(), 1),
             type: "boolean",
             deprecates: ["disableExtensions"],
             cat: "t",
-            description: m(1897, null)
+            description: m(1898, null)
         },
         "disable-extension": {
             type: "string[]",
             cat: "t",
             args: "ext-id",
-            description: m(1898, null)
+            description: m(1899, null)
         },
         sync: {
             type: "string",
             cat: "t",
-            description: m(1899, null),
+            description: m(1900, null),
             args: ["on | off"]
         },
         "inspect-extensions": {
@@ -22876,7 +22876,7 @@ var ow = Hf(Xf(), 1),
             deprecates: ["debugPluginHost"],
             args: "port",
             cat: "t",
-            description: m(1900, null)
+            description: m(1901, null)
         },
         "inspect-brk-extensions": {
             type: "string",
@@ -22884,22 +22884,22 @@ var ow = Hf(Xf(), 1),
             deprecates: ["debugBrkPluginHost"],
             args: "port",
             cat: "t",
-            description: m(1901, null)
+            description: m(1902, null)
         },
         "disable-lcd-text": {
             type: "boolean",
             cat: "t",
-            description: m(1902, null)
+            description: m(1903, null)
         },
         "disable-gpu": {
             type: "boolean",
             cat: "t",
-            description: m(1903, null)
+            description: m(1904, null)
         },
         "disable-chromium-sandbox": {
             type: "boolean",
             cat: "t",
-            description: m(1904, null)
+            description: m(1905, null)
         },
         sandbox: {
             type: "boolean"
@@ -22908,12 +22908,12 @@ var ow = Hf(Xf(), 1),
             type: "string",
             cat: "t",
             args: ["shell"],
-            description: m(1905, null)
+            description: m(1906, null)
         },
         telemetry: {
             type: "boolean",
             cat: "t",
-            description: m(1906, null)
+            description: m(1907, null)
         },
         remote: {
             type: "string",
@@ -23217,7 +23217,7 @@ var ow = Hf(Xf(), 1),
         chat: {
             type: "boolean",
             cat: "o",
-            description: m(1907, null)
+            description: m(1908, null)
         },
         _: {
             type: "string[]"
@@ -23250,12 +23250,12 @@ async function e4(e, t, i, r) {
         const l = e.getValue("application.shellEnvironmentResolutionTimeout");
         typeof l == "number" && (a = Z2(l, 1, 120) * 1e3);
         const c = setTimeout(() => {
-            o.dispose(!0), n(new Error(m(2245, null)))
+            o.dispose(!0), n(new Error(m(2246, null)))
         }, a);
         try {
             s(await t4(t, o.token))
         } catch (h) {
-            !$i(h) && !o.token.isCancellationRequested ? n(new Error(m(2246, null, Ci(h)))) : s({})
+            !$i(h) && !o.token.isCancellationRequested ? n(new Error(m(2247, null, Ci(h)))) : s({})
         } finally {
             clearTimeout(c), o.dispose()
         }
@@ -23297,7 +23297,7 @@ async function t4(e, t) {
             const I = Buffer.concat(v).toString("utf8");
             e.trace("getUnixShellEnvironment#raw", I);
             const M = Buffer.concat(b).toString("utf8");
-            if (M.trim() && e.trace("getUnixShellEnvironment#stderr", M), E || k) return c(new Error(m(2247, null, E, k)));
+            if (M.trim() && e.trace("getUnixShellEnvironment#stderr", M), E || k) return c(new Error(m(2248, null, E, k)));
             const C = n.exec(I),
                 O = C ? C[1] : "{}";
             try {
@@ -23600,9 +23600,9 @@ var l4 = class extends xn {
 ns.IDLE_START_EVENT_NAME = "UserIdleStart", ns.IDLE_STOP_EVENT_NAME = "UserIdleStop", ns = __decorate([__param(1, Ht), __param(2, et)], ns);
 
 function c4() {
-    const e = m(2254, null, dr.nameLong),
-        t = m(2255, null, "https://cursor.com/privacy", "https://cursor.com/security"),
-        i = Wt ? "" : m(2256, null);
+    const e = m(2255, null, dr.nameLong),
+        t = m(2256, null, "https://cursor.com/privacy", "https://cursor.com/security"),
+        i = Wt ? "" : m(2257, null);
     return `
 ${e} ${t} ${i}
 `
@@ -23627,14 +23627,14 @@ u4.registerConfiguration({
         "telemetry.feedback.enabled": {
             type: "boolean",
             default: !1,
-            description: m(2257, null)
+            description: m(2258, null)
         },
         [Ho]: {
             type: "boolean",
-            markdownDescription: dr.privacyStatementUrl ? m(2259, null, dr.nameLong, dr.privacyStatementUrl) : m(2258, null, dr.nameLong),
+            markdownDescription: dr.privacyStatementUrl ? m(2260, null, dr.nameLong, dr.privacyStatementUrl) : m(2259, null, dr.nameLong),
             default: !0,
             restricted: !0,
-            markdownDeprecationMessage: m(2260, null, `\`#${sn}#\``),
+            markdownDeprecationMessage: m(2261, null, `\`#${sn}#\``),
             scope: 1,
             tags: ["usesOnlineServices", "telemetry"]
         }
@@ -24391,8 +24391,8 @@ var ty = /^(?<version>\d+\.\d+\.\d+(-.*)?)(@(?<platform>.+))?$/,
             Z4(e) ? (t = e.identifier.id.toLowerCase(), i = e.version, s = e.properties.isPreReleaseVersion, n = e.publisher.toLowerCase(), o = e.publisherDisplayName.toLowerCase(), r = e.properties.targetPlatform) : ey(e) ? (t = e.identifier.id.toLowerCase(), i = e.manifest.version, s = e.preRelease, n = e.manifest.publisher.toLowerCase(), o = e.publisherDisplayName?.toLowerCase(), r = e.targetPlatform) : (t = e.id.toLowerCase(), i = e.version ?? "*", r = e.targetPlatform ?? "universal", s = e.prerelease ?? !1, n = e.id.substring(0, e.id.indexOf(".")).toLowerCase(), o = e.publisherDisplayName?.toLowerCase());
             const a = P.parse(`command:workbench.action.openSettings?${encodeURIComponent(JSON.stringify({query:`@id:${Go}`}))}`).toString(),
                 l = this._allowedExtensionsConfigValue[t],
-                c = new Oi(m(1939, null, a));
-            if (!pt(l)) return Et(l) ? l ? !0 : c : l === "stable" && s ? new Oi(m(1940, null, a)) : i !== "*" && Array.isArray(l) && !l.some(d => {
+                c = new Oi(m(1940, null, a));
+            if (!pt(l)) return Et(l) ? l ? !0 : c : l === "stable" && s ? new Oi(m(1941, null, a)) : i !== "*" && Array.isArray(l) && !l.some(d => {
                 const p = ty.exec(d);
                 if (p && p.groups) {
                     const {
@@ -24402,10 +24402,10 @@ var ty = /^(?<version>\d+\.\d+\.\d+(-.*)?)(@(?<platform>.+))?$/,
                     return !(v !== i || r !== "universal" && y && r !== y)
                 }
                 return !1
-            }) ? new Oi(m(1941, null, i, a)) : !0;
+            }) ? new Oi(m(1942, null, i, a)) : !0;
             const h = o && this.publisherOrgs.includes(o) ? o : n,
                 f = this._allowedExtensionsConfigValue[h];
-            return pt(f) ? this._allowedExtensionsConfigValue["*"] === !0 ? !0 : c : Et(f) ? f ? !0 : new Oi(m(1942, null, h, a)) : f === "stable" && s ? new Oi(m(1943, null, h, a)) : !0
+            return pt(f) ? this._allowedExtensionsConfigValue["*"] === !0 ? !0 : c : Et(f) ? f ? !0 : new Oi(m(1943, null, h, a)) : f === "stable" && s ? new Oi(m(1944, null, h, a)) : !0
         }
     };
 il = __decorate([__param(0, et), __param(1, Ht)], il);
@@ -24631,7 +24631,7 @@ var ry = class extends K {
         const r = new H4(Mg(i), i.logsHome);
         e.set(Rg, r);
         const s = this._register(r.createLogger("cli", {
-                name: m(180, null)
+                name: m(181, null)
             })),
             n = [];
         r.getLogLevel() === me.Trace && n.push(new ki(r.getLogLevel()));
@@ -24728,6 +24728,6 @@ export {
     sy as main
 };
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/core/vs/code/node/cliProcessMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/core/vs/code/node/cliProcessMain.js.map
 
-//# debugId=e757ae27-1509-5f5d-935f-aaffa6d52ba2
+//# debugId=5e5c8de9-52db-5296-b5df-3e76f2adf210

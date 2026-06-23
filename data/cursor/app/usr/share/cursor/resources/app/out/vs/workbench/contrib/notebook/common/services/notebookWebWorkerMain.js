@@ -6810,17 +6810,17 @@ var Ul = new ur(1e4),
 function On(...t) {
     switch (t.length) {
         case 1:
-            return ne(1842, null, t[0]);
+            return ne(1843, null, t[0]);
         case 2:
-            return ne(1843, null, t[0], t[1]);
+            return ne(1844, null, t[0], t[1]);
         case 3:
-            return ne(1844, null, t[0], t[1], t[2]);
+            return ne(1845, null, t[0], t[1], t[2]);
         default:
             return
     }
 }
-var da = ne(1845, null),
-    ga = ne(1846, null),
+var da = ne(1846, null),
+    ga = ne(1847, null),
     Tn = class Xn {
         constructor() {
             this._input = "", this._start = 0, this._current = 0, this._tokens = [], this._errors = [], this.stringRe = /[a-zA-Z0-9_<>\-\./\\:\*\?\+\[\]\^,#@;"%\$\p{L}-]+/uy
@@ -7076,14 +7076,14 @@ var _a = Object.prototype.hasOwnProperty,
     Ca = {
         regexParsingWithErrorRecovery: !0
     },
-    va = ne(1820, null),
-    ba = ne(1821, null),
-    ya = ne(1822, null),
-    gi = ne(1823, null),
-    wa = ne(1824, null),
-    La = ne(1825, null),
-    xa = ne(1826, null),
-    Ea = ne(1827, null),
+    va = ne(1821, null),
+    ba = ne(1822, null),
+    ya = ne(1823, null),
+    gi = ne(1824, null),
+    wa = ne(1825, null),
+    La = ne(1826, null),
+    xa = ne(1827, null),
+    Ea = ne(1828, null),
     pi = class ct {
         constructor(e = Ca) {
             this._config = e, this._scanner = new nt, this._tokens = [], this._current = 0, this._parsingErrors = [], this._flagsGYRe = /g|y/g
@@ -7353,7 +7353,7 @@ var _a = Object.prototype.hasOwnProperty,
             throw this._errExpectedButGot(n, this._peek())
         }
         _errExpectedButGot(e, n, r) {
-            const i = ne(1828, null, e, nt.getLexeme(n)),
+            const i = ne(1829, null, e, nt.getLexeme(n)),
                 s = n.offset,
                 o = nt.getLexeme(n);
             return this._parsingErrors.push({
@@ -9249,6 +9249,6 @@ var Di = class {
     };
 U1(Za);
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/core/vs/workbench/contrib/notebook/common/services/notebookWebWorkerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/core/vs/workbench/contrib/notebook/common/services/notebookWebWorkerMain.js.map
 
 //# debugId=41435f09-1128-5ebe-9509-aa3568adc5d5

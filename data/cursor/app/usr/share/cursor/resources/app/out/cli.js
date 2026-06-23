@@ -5320,7 +5320,7 @@ var Qa, en, pe, Ya = x({
             }
         }, en.MIXED_CORRELATION = null, pe = class xe {
             static formatSize(t) {
-                return ro(t) || (t = 0), t < xe.KB ? w(2034, null, t.toFixed(0)) : t < xe.MB ? w(2035, null, (t / xe.KB).toFixed(2)) : t < xe.GB ? w(2036, null, (t / xe.MB).toFixed(2)) : t < xe.TB ? w(2037, null, (t / xe.GB).toFixed(2)) : w(2038, null, (t / xe.TB).toFixed(2))
+                return ro(t) || (t = 0), t < xe.KB ? w(2035, null, t.toFixed(0)) : t < xe.MB ? w(2036, null, (t / xe.KB).toFixed(2)) : t < xe.GB ? w(2037, null, (t / xe.MB).toFixed(2)) : t < xe.TB ? w(2038, null, (t / xe.GB).toFixed(2)) : w(2039, null, (t / xe.TB).toFixed(2))
             }
         }, pe.KB = 1024, pe.MB = pe.KB * pe.KB, pe.GB = pe.MB * pe.KB, pe.TB = pe.GB * pe.KB
     }
@@ -5847,7 +5847,7 @@ function on(e, t, r = dn) {
         h.alias && delete f[h.alias];
         let m = f[d];
         if (h.deprecates)
-            for (const E of h.deprecates) f.hasOwnProperty(E) && (m || (m = f[E], m && r.onDeprecatedOption(E, h.deprecationMessage || w(1908, null, d))), delete f[E]);
+            for (const E of h.deprecates) f.hasOwnProperty(E) && (m || (m = f[E], m && r.onDeprecatedOption(E, h.deprecationMessage || w(1909, null, d))), delete f[E]);
         if (typeof m < "u") {
             if (h.type === "string[]") {
                 if (Array.isArray(m) || (m = [m]), !h.allowEmptyValue) {
@@ -5910,9 +5910,9 @@ function u2(e, t) {
 
 function f2(e, t, r, s, i) {
     const n = process.stdout.isTTY && process.stdout.columns || 80,
-        a = i?.noInputFiles !== !0 ? `[${w(1909,null)}...]` : "",
+        a = i?.noInputFiles !== !0 ? `[${w(1910,null)}...]` : "",
         o = [`${e} ${r}`];
-    o.push(""), o.push(`${w(1910,null)}: ${t} [${w(1911,null)}]${a}`), o.push(""), i?.noPipe !== !0 && (V ? o.push(w(1912, null, t)) : o.push(w(1913, null, t)), o.push(""));
+    o.push(""), o.push(`${w(1911,null)}: ${t} [${w(1912,null)}]${a}`), o.push(""), i?.noPipe !== !0 && (V ? o.push(w(1913, null, t)) : o.push(w(1914, null, t)), o.push(""));
     const c = {},
         l = [];
     for (const u in s) {
@@ -5931,22 +5931,22 @@ function f2(e, t, r, s, i) {
             d = c[f];
         d && (o.push(un[f]), o.push(...c2(d, n)), o.push(""))
     }
-    return l.length && (o.push(w(1914, null)), o.push(...an(l.map(u => [u.command, u.description]), n)), o.push("")), o.join(`
+    return l.length && (o.push(w(1915, null)), o.push(...an(l.map(u => [u.command, u.description]), n)), o.push("")), o.join(`
 `)
 }
 
 function h2(e, t) {
-    return `${e||w(1915,null)}
-${t||w(1916,null)}
+    return `${e||w(1916,null)}
+${t||w(1917,null)}
 ${process.arch}`
 }
 var cn, un, e1, t1, fn, hn, dn, pn = x({
     "out-build/vs/platform/environment/node/argv.js"() {
         "use strict";
         cn = zn(a2(), 1), X(), $t(), un = {
-            o: w(1862, null),
-            e: w(1863, null),
-            t: w(1864, null)
+            o: w(1863, null),
+            e: w(1864, null),
+            t: w(1865, null)
         }, e1 = ["tunnel"], t1 = {
             tunnel: {
                 type: "subcommand",
@@ -5955,7 +5955,7 @@ var cn, un, e1, t1, fn, hn, dn, pn = x({
                     "cli-data-dir": {
                         type: "string",
                         args: "dir",
-                        description: w(1865, null)
+                        description: w(1866, null)
                     },
                     "disable-telemetry": {
                         type: "boolean"
@@ -5986,72 +5986,72 @@ var cn, un, e1, t1, fn, hn, dn, pn = x({
                 cat: "o",
                 alias: "d",
                 args: ["file", "file"],
-                description: w(1866, null)
+                description: w(1867, null)
             },
             merge: {
                 type: "boolean",
                 cat: "o",
                 alias: "m",
                 args: ["path1", "path2", "base", "result"],
-                description: w(1867, null)
+                description: w(1868, null)
             },
             add: {
                 type: "boolean",
                 cat: "o",
                 alias: "a",
                 args: "folder",
-                description: w(1868, null)
+                description: w(1869, null)
             },
             remove: {
                 type: "boolean",
                 cat: "o",
                 args: "folder",
-                description: w(1869, null)
+                description: w(1870, null)
             },
             goto: {
                 type: "boolean",
                 cat: "o",
                 alias: "g",
                 args: "file:line[:character]",
-                description: w(1870, null)
+                description: w(1871, null)
             },
             "new-window": {
                 type: "boolean",
                 cat: "o",
                 alias: "n",
-                description: w(1871, null)
+                description: w(1872, null)
             },
             "reuse-window": {
                 type: "boolean",
                 cat: "o",
                 alias: "r",
-                description: w(1872, null)
+                description: w(1873, null)
             },
             "suppress-popups-on-startup": {
                 type: "boolean",
                 cat: "o",
-                description: w(1873, null)
+                description: w(1874, null)
             },
             "web-worker-exthost": {
                 type: "boolean",
                 cat: "o",
-                description: w(1874, null)
+                description: w(1875, null)
             },
             glass: {
                 type: "boolean",
                 cat: "o",
-                description: w(1875, null)
+                description: w(1876, null)
             },
             classic: {
                 type: "boolean",
                 cat: "o",
-                description: w(1876, null)
+                description: w(1877, null)
             },
             wait: {
                 type: "boolean",
                 cat: "o",
                 alias: "w",
-                description: w(1877, null)
+                description: w(1878, null)
             },
             waitMarkerFilePath: {
                 type: "string"
@@ -6060,32 +6060,32 @@ var cn, un, e1, t1, fn, hn, dn, pn = x({
                 type: "string",
                 cat: "o",
                 args: "locale",
-                description: w(1878, null)
+                description: w(1879, null)
             },
             "user-data-dir": {
                 type: "string",
                 cat: "o",
                 args: "dir",
-                description: w(1879, null)
+                description: w(1880, null)
             },
             profile: {
                 type: "string",
                 cat: "o",
                 args: "profileName",
-                description: w(1880, null)
+                description: w(1881, null)
             },
             help: {
                 type: "boolean",
                 cat: "o",
                 alias: "h",
-                description: w(1881, null)
+                description: w(1882, null)
             },
             "extensions-dir": {
                 type: "string",
                 deprecates: ["extensionHomePath"],
                 cat: "e",
                 args: "dir",
-                description: w(1882, null)
+                description: w(1883, null)
             },
             "extensions-download-dir": {
                 type: "string"
@@ -6096,84 +6096,84 @@ var cn, un, e1, t1, fn, hn, dn, pn = x({
             "list-extensions": {
                 type: "boolean",
                 cat: "e",
-                description: w(1883, null)
+                description: w(1884, null)
             },
             "show-versions": {
                 type: "boolean",
                 cat: "e",
-                description: w(1884, null)
+                description: w(1885, null)
             },
             category: {
                 type: "string",
                 allowEmptyValue: !0,
                 cat: "e",
-                description: w(1885, null),
+                description: w(1886, null),
                 args: "category"
             },
             "install-extension": {
                 type: "string[]",
                 cat: "e",
                 args: "ext-id | path",
-                description: w(1886, null)
+                description: w(1887, null)
             },
             "pre-release": {
                 type: "boolean",
                 cat: "e",
-                description: w(1887, null)
+                description: w(1888, null)
             },
             "uninstall-extension": {
                 type: "string[]",
                 cat: "e",
                 args: "ext-id",
-                description: w(1888, null)
+                description: w(1889, null)
             },
             "update-extensions": {
                 type: "boolean",
                 cat: "e",
-                description: w(1889, null)
+                description: w(1890, null)
             },
             "enable-proposed-api": {
                 type: "string[]",
                 allowEmptyValue: !0,
                 cat: "e",
                 args: "ext-id",
-                description: w(1890, null)
+                description: w(1891, null)
             },
             "add-mcp": {
                 type: "string[]",
                 cat: "o",
                 args: "json",
-                description: w(1891, null)
+                description: w(1892, null)
             },
             version: {
                 type: "boolean",
                 cat: "t",
                 alias: "v",
-                description: w(1892, null)
+                description: w(1893, null)
             },
             verbose: {
                 type: "boolean",
                 cat: "t",
                 global: !0,
-                description: w(1893, null)
+                description: w(1894, null)
             },
             log: {
                 type: "string[]",
                 cat: "t",
                 args: "level",
                 global: !0,
-                description: w(1894, null)
+                description: w(1895, null)
             },
             status: {
                 type: "boolean",
                 alias: "s",
                 cat: "t",
-                description: w(1895, null)
+                description: w(1896, null)
             },
             "prof-startup": {
                 type: "boolean",
                 cat: "t",
-                description: w(1896, null)
+                description: w(1897, null)
             },
             "prof-append-timers": {
                 type: "string"
@@ -6197,18 +6197,18 @@ var cn, un, e1, t1, fn, hn, dn, pn = x({
                 type: "boolean",
                 deprecates: ["disableExtensions"],
                 cat: "t",
-                description: w(1897, null)
+                description: w(1898, null)
             },
             "disable-extension": {
                 type: "string[]",
                 cat: "t",
                 args: "ext-id",
-                description: w(1898, null)
+                description: w(1899, null)
             },
             sync: {
                 type: "string",
                 cat: "t",
-                description: w(1899, null),
+                description: w(1900, null),
                 args: ["on | off"]
             },
             "inspect-extensions": {
@@ -6217,7 +6217,7 @@ var cn, un, e1, t1, fn, hn, dn, pn = x({
                 deprecates: ["debugPluginHost"],
                 args: "port",
                 cat: "t",
-                description: w(1900, null)
+                description: w(1901, null)
             },
             "inspect-brk-extensions": {
                 type: "string",
@@ -6225,22 +6225,22 @@ var cn, un, e1, t1, fn, hn, dn, pn = x({
                 deprecates: ["debugBrkPluginHost"],
                 args: "port",
                 cat: "t",
-                description: w(1901, null)
+                description: w(1902, null)
             },
             "disable-lcd-text": {
                 type: "boolean",
                 cat: "t",
-                description: w(1902, null)
+                description: w(1903, null)
             },
             "disable-gpu": {
                 type: "boolean",
                 cat: "t",
-                description: w(1903, null)
+                description: w(1904, null)
             },
             "disable-chromium-sandbox": {
                 type: "boolean",
                 cat: "t",
-                description: w(1904, null)
+                description: w(1905, null)
             },
             sandbox: {
                 type: "boolean"
@@ -6249,12 +6249,12 @@ var cn, un, e1, t1, fn, hn, dn, pn = x({
                 type: "string",
                 cat: "t",
                 args: ["shell"],
-                description: w(1905, null)
+                description: w(1906, null)
             },
             telemetry: {
                 type: "boolean",
                 cat: "t",
-                description: w(1906, null)
+                description: w(1907, null)
             },
             remote: {
                 type: "string",
@@ -6558,7 +6558,7 @@ var cn, un, e1, t1, fn, hn, dn, pn = x({
             chat: {
                 type: "boolean",
                 cat: "o",
-                description: w(1907, null)
+                description: w(1908, null)
             },
             _: {
                 type: "string[]"
@@ -6584,17 +6584,17 @@ import d2 from "assert";
 
 function p2(e, t) {
     const r = (c, l) => {
-            console.warn(w(1917, null, c, l))
+            console.warn(w(1918, null, c, l))
         },
         s = c => {
-            console.warn(w(1918, null, c))
+            console.warn(w(1919, null, c))
         },
         i = (c, l) => {
-            console.warn(w(1919, null, c, l))
+            console.warn(w(1920, null, c, l))
         },
         n = c => ({
             onUnknownOption: l => {
-                e1.includes(c) || console.warn(w(1920, null, l, c))
+                e1.includes(c) || console.warn(w(1921, null, l, c))
             },
             onMultipleValues: r,
             onEmptyValue: s,
@@ -6603,14 +6603,14 @@ function p2(e, t) {
         }),
         o = on(e, t1, t ? {
             onUnknownOption: c => {
-                console.warn(w(1921, null, c))
+                console.warn(w(1922, null, c))
             },
             onMultipleValues: r,
             onEmptyValue: s,
             onDeprecatedOption: i,
             getSubcommandReporter: n
         } : void 0);
-    return o.goto && o._.forEach(c => d2(/^(\w:)?[^:]+(:\d*){0,2}:?$/.test(c), w(1922, null))), o
+    return o.goto && o._.forEach(c => d2(/^(\w:)?[^:]+(:\d*){0,2}:?$/.test(c), w(1923, null))), o
 }
 
 function m2(e) {
@@ -7202,7 +7202,7 @@ var wr = el(import.meta.url),
 st.BUILD_INSERT_PRODUCT_CONFIGURATION && (st = wr("../product.json"));
 var br = {
     "name": "Cursor",
-    "version": "3.8.11",
+    "version": "3.8.22",
     "distro": "d5c0e77a0214208f36b56d42e8e787de88d02ea4",
     "author": {
         "name": "Anysphere, Inc."
@@ -7464,6 +7464,6 @@ var dl = B2(V2(import.meta.url)),
     });
 process.env.VSCODE_NLS_CONFIG = JSON.stringify(pl), J2(Cr), process.env.VSCODE_CLI = "1", await ll(), await Promise.resolve().then(() => (U2(), yn));
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/core/cli.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/core/cli.js.map
 
 //# debugId=48aa41e0-50c2-537d-8636-025c6ca2f9c2

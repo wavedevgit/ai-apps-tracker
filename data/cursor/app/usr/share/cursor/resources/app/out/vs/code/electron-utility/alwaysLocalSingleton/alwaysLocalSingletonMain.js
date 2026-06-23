@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "2e7cac45-24b1-5394-83f3-a1059ed94801")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "a29c19ea-fcf1-59f3-8710-705370c2ca6c")
     } catch (e) {}
 }();
 var b_r = function(s, e) {
@@ -134233,7 +134233,7 @@ var Cxs = class fz extends a {
     },
     Gxs = class Rz extends a {
         constructor(e) {
-            super(), this.id = 0, this.name = "", this.isTeamServer = !1, this.enabled = !1, this.type = "", this.args = [], this.isUnseen = !1, this.isRequired = !1, this.managedByTeamPluginPolicy = !1, r.util.initPartial(e, this)
+            super(), this.id = 0, this.name = "", this.isTeamServer = !1, this.enabled = !1, this.type = "", this.args = [], this.isUnseen = !1, this.isRequired = !1, this.managedByTeamPluginPolicy = !1, this.disabledByTeamAdminPolicy = !1, r.util.initPartial(e, this)
         }
         static {
             this.runtime = r
@@ -134310,6 +134310,11 @@ var Cxs = class fz extends a {
             }, {
                 no: 13,
                 name: "managed_by_team_plugin_policy",
+                kind: "scalar",
+                T: 8
+            }, {
+                no: 14,
+                name: "disabled_by_team_admin_policy",
                 kind: "scalar",
                 T: 8
             }])
@@ -175460,6 +175465,18 @@ var F4s = class Nie extends a {
                 kind: "scalar",
                 T: 8,
                 opt: !0
+            }, {
+                no: 5,
+                name: "team_id",
+                kind: "scalar",
+                T: 5,
+                opt: !0
+            }, {
+                no: 6,
+                name: "display_name",
+                kind: "scalar",
+                T: 9,
+                opt: !0
             }])
         }
         static fromBinary(e, t) {
@@ -185785,6 +185802,12 @@ var ozs = class Lhe extends a {
                 name: "private_workspace_identifier",
                 kind: "message",
                 T: eCr,
+                opt: !0
+            }, {
+                no: 65,
+                name: "private_worker_display_name",
+                kind: "scalar",
+                T: 9,
                 opt: !0
             }])
         }
@@ -336938,7 +336961,7 @@ K5n.runtime = n, K5n.typeName = "aiserver.v1.GetAvailableMcpServersResponse", K5
 var Z3i = K5n,
     Y5n = class Vht extends i {
         constructor(e) {
-            super(), this.id = 0, this.name = "", this.isTeamServer = !1, this.enabled = !1, this.type = "", this.args = [], this.isUnseen = !1, this.isRequired = !1, this.managedByTeamPluginPolicy = !1, n.util.initPartial(e, this)
+            super(), this.id = 0, this.name = "", this.isTeamServer = !1, this.enabled = !1, this.type = "", this.args = [], this.isUnseen = !1, this.isRequired = !1, this.managedByTeamPluginPolicy = !1, this.disabledByTeamAdminPolicy = !1, n.util.initPartial(e, this)
         }
         static fromBinary(e, t) {
             return new Vht().fromBinary(e, t)
@@ -337021,6 +337044,11 @@ Y5n.runtime = n, Y5n.typeName = "aiserver.v1.GetAvailableMcpServersResponse.McpS
 }, {
     no: 13,
     name: "managed_by_team_plugin_policy",
+    kind: "scalar",
+    T: 8
+}, {
+    no: 14,
+    name: "disabled_by_team_admin_policy",
     kind: "scalar",
     T: 8
 }]);
@@ -371467,6 +371495,18 @@ jnr.runtime = n, jnr.typeName = "aiserver.v1.UpdateMarketplaceRequest", jnr.fiel
     kind: "scalar",
     T: 8,
     opt: !0
+}, {
+    no: 5,
+    name: "team_id",
+    kind: "scalar",
+    T: 5,
+    opt: !0
+}, {
+    no: 6,
+    name: "display_name",
+    kind: "scalar",
+    T: 9,
+    opt: !0
 }]);
 var bZi = jnr,
     Qnr = class CNt extends i {
@@ -389886,6 +389926,12 @@ Blr.runtime = n, Blr.typeName = "aiserver.v1.BackgroundComposer", Blr.fields = n
     name: "private_workspace_identifier",
     kind: "message",
     T: zUr,
+    opt: !0
+}, {
+    no: 65,
+    name: "private_worker_display_name",
+    kind: "scalar",
+    T: 9,
     opt: !0
 }]);
 var Ilr = Blr,
@@ -429683,17 +429729,17 @@ Nwa._bigBlock32 = new DataView(new ArrayBuffer(320));
 function qDr(...s) {
     switch (s.length) {
         case 1:
-            return _e(1842, null, s[0]);
+            return _e(1843, null, s[0]);
         case 2:
-            return _e(1843, null, s[0], s[1]);
+            return _e(1844, null, s[0], s[1]);
         case 3:
-            return _e(1844, null, s[0], s[1], s[2]);
+            return _e(1845, null, s[0], s[1], s[2]);
         default:
             return
     }
 }
-var Lwa = _e(1845, null),
-    Awa = _e(1846, null),
+var Lwa = _e(1846, null),
+    Awa = _e(1847, null),
     PDr = class zDr {
         constructor() {
             this._input = "", this._start = 0, this._current = 0, this._tokens = [], this._errors = [], this.stringRe = /[a-zA-Z0-9_<>\-\./\\:\*\?\+\[\]\^,#@;"%\$\p{L}-]+/uy
@@ -429949,14 +429995,14 @@ var Owa = Object.prototype.hasOwnProperty,
     Uwa = {
         regexParsingWithErrorRecovery: !0
     },
-    bwa = _e(1820, null),
-    Dwa = _e(1821, null),
-    Gwa = _e(1822, null),
-    OZr = _e(1823, null),
-    Mwa = _e(1824, null),
-    Hwa = _e(1825, null),
-    Wwa = _e(1826, null),
-    Vwa = _e(1827, null),
+    bwa = _e(1821, null),
+    Dwa = _e(1822, null),
+    Gwa = _e(1823, null),
+    OZr = _e(1824, null),
+    Mwa = _e(1825, null),
+    Hwa = _e(1826, null),
+    Wwa = _e(1827, null),
+    Vwa = _e(1828, null),
     UZr = class pKt {
         constructor(e = Uwa) {
             this._config = e, this._scanner = new ou, this._tokens = [], this._current = 0, this._parsingErrors = [], this._flagsGYRe = /g|y/g
@@ -430226,7 +430272,7 @@ var Owa = Object.prototype.hasOwnProperty,
             throw this._errExpectedButGot(t, this._peek())
         }
         _errExpectedButGot(e, t, o) {
-            const u = _e(1828, null, e, ou.getLexeme(t)),
+            const u = _e(1829, null, e, ou.getLexeme(t)),
                 m = t.offset,
                 c = ou.getLexeme(t);
             return this._parsingErrors.push({
@@ -431273,6 +431319,10 @@ var tya = g.enum(["off", "default-on", "default-off", "hidden", "end-of-life", "
             client: !0,
             default: !1
         },
+        glass_filetree_dont_show_default: {
+            client: !0,
+            default: !1
+        },
         glass_sidebar_agent_indicator_dots: {
             client: !0,
             default: !1
@@ -432149,6 +432199,10 @@ var tya = g.enum(["off", "default-on", "default-off", "hidden", "end-of-life", "
             client: !0,
             default: !1
         },
+        web_cloud_agent_export_chat: {
+            client: !0,
+            default: !1
+        },
         cloud_agent_environment_secrets: {
             client: !0,
             default: !0
@@ -432278,6 +432332,10 @@ var tya = g.enum(["off", "default-on", "default-off", "hidden", "end-of-life", "
             default: !1
         },
         mcp_settings_overhaul: {
+            client: !0,
+            default: !1
+        },
+        mcp_settings_overhaul_portal: {
             client: !0,
             default: !1
         },
@@ -432522,6 +432580,10 @@ var tya = g.enum(["off", "default-on", "default-off", "hidden", "end-of-life", "
             default: !1
         },
         show_dev_only_ttft_warning: {
+            client: !0,
+            default: !1
+        },
+        shimmer_is_current: {
             client: !0,
             default: !1
         },
@@ -433110,10 +433172,6 @@ var tya = g.enum(["off", "default-on", "default-off", "hidden", "end-of-life", "
             default: !1
         },
         retry_hydration_optimization: {
-            client: !0,
-            default: !1
-        },
-        composer_summarized_conversation_recovery: {
             client: !0,
             default: !1
         },
@@ -433965,6 +434023,7 @@ var tya = g.enum(["off", "default-on", "default-off", "hidden", "end-of-life", "
         extension_monitor_control: g.object({
             local_enabled: g.boolean(),
             backend_reporting_enabled: g.boolean(),
+            network_diagnostics_reporting_enabled: g.boolean().optional(),
             subsample_polling_rate_sec: g.number(),
             sample_polling_rate_min: g.number()
         }),
@@ -434461,6 +434520,7 @@ var tya = g.enum(["off", "default-on", "default-off", "hidden", "end-of-life", "
             fallbackValues: {
                 local_enabled: !1,
                 backend_reporting_enabled: !1,
+                network_diagnostics_reporting_enabled: !1,
                 subsample_polling_rate_sec: 0,
                 sample_polling_rate_min: 0
             }
@@ -435822,6 +435882,6 @@ export {
     aes as main
 };
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/e56ad3440df06d22ca7501e65fd518e905486ef0/core/vs/code/electron-utility/alwaysLocalSingleton/alwaysLocalSingletonMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/46fb7aafe279d7c72346febe68c2e004b7d1de60/core/vs/code/electron-utility/alwaysLocalSingleton/alwaysLocalSingletonMain.js.map
 
-//# debugId=2e7cac45-24b1-5394-83f3-a1059ed94801
+//# debugId=a29c19ea-fcf1-59f3-8710-705370c2ca6c
