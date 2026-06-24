@@ -7020,8 +7020,8 @@
     };
     var r = {};
     n.r(r), n.d(r, {
-        activate: () => qst,
-        deactivate: () => Pst
+        activate: () => Cst,
+        deactivate: () => Ast
     });
     var s, i, a = n(38);
 
@@ -154434,7 +154434,7 @@
         no: 1,
         name: "files",
         kind: "message",
-        T: bQe,
+        T: HQe,
         repeated: !0
     }, {
         no: 2,
@@ -154514,7 +154514,7 @@
         no: 1,
         name: "files",
         kind: "message",
-        T: bQe,
+        T: HQe,
         repeated: !0
     }, {
         no: 2,
@@ -154592,6 +154592,124 @@
     }]);
     const DQe = class e extends q {
         constructor(e) {
+            super(), this.repoUrl = "", this.branchName = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    DQe.runtime = je, DQe.typeName = "aiserver.v1.SCMBranchRef", DQe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "repo_url",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "branch_name",
+        kind: "scalar",
+        T: 9
+    }]);
+    let bQe = DQe;
+    const UQe = class e extends q {
+        constructor(e) {
+            super(), this.branches = [], je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    UQe.runtime = je, UQe.typeName = "aiserver.v1.SCMBatchGetPullRequestForBranchRequest", UQe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "branches",
+        kind: "message",
+        T: bQe,
+        repeated: !0
+    }, {
+        no: 2,
+        name: "skip_cache",
+        kind: "scalar",
+        T: 8,
+        opt: !0
+    }]);
+    const MQe = class e extends q {
+        constructor(e) {
+            super(), this.repoUrl = "", this.branchName = "", this.prUrls = [], je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    MQe.runtime = je, MQe.typeName = "aiserver.v1.SCMBranchPullRequests", MQe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "repo_url",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "branch_name",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 3,
+        name: "pr_urls",
+        kind: "scalar",
+        T: 9,
+        repeated: !0
+    }]);
+    let GQe = MQe;
+    const YQe = class e extends q {
+        constructor(e) {
+            super(), this.results = [], je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    YQe.runtime = je, YQe.typeName = "aiserver.v1.SCMBatchGetPullRequestForBranchResponse", YQe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "results",
+        kind: "message",
+        T: GQe,
+        repeated: !0
+    }]);
+    const VQe = class e extends q {
+        constructor(e) {
             super(), this.filename = "", this.status = 0, je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -154607,7 +154725,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    DQe.runtime = je, DQe.typeName = "aiserver.v1.SCMPullRequestDiffFile", DQe.fields = je.util.newFieldList(() => [{
+    VQe.runtime = je, VQe.typeName = "aiserver.v1.SCMPullRequestDiffFile", VQe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "filename",
         kind: "scalar",
@@ -154648,8 +154766,8 @@
         T: 8,
         opt: !0
     }]);
-    let bQe = DQe;
-    const UQe = class e extends q {
+    let HQe = VQe;
+    const KQe = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", this.mergeMethod = 0, je.util.initPartial(e, this)
         }
@@ -154666,7 +154784,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    UQe.runtime = je, UQe.typeName = "aiserver.v1.SCMMergePullRequestRequest", UQe.fields = je.util.newFieldList(() => [{
+    KQe.runtime = je, KQe.typeName = "aiserver.v1.SCMMergePullRequestRequest", KQe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -154676,170 +154794,6 @@
         name: "merge_method",
         kind: "enum",
         T: je.getEnumType(eQe)
-    }]);
-    const MQe = class e extends q {
-        constructor(e) {
-            super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    MQe.runtime = je, MQe.typeName = "aiserver.v1.SCMMergePullRequestResponse", MQe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "success",
-        kind: "scalar",
-        T: 8
-    }, {
-        no: 2,
-        name: "error",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 3,
-        name: "pr_node_id",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }]);
-    const GQe = class e extends q {
-        constructor(e) {
-            super(), this.prUrl = "", this.title = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    GQe.runtime = je, GQe.typeName = "aiserver.v1.SCMUpdatePullRequestTitleRequest", GQe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "pr_url",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "title",
-        kind: "scalar",
-        T: 9
-    }]);
-    const YQe = class e extends q {
-        constructor(e) {
-            super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    YQe.runtime = je, YQe.typeName = "aiserver.v1.SCMUpdatePullRequestTitleResponse", YQe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "success",
-        kind: "scalar",
-        T: 8
-    }, {
-        no: 2,
-        name: "error",
-        kind: "scalar",
-        T: 9
-    }]);
-    const VQe = class e extends q {
-        constructor(e) {
-            super(), this.prUrl = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    VQe.runtime = je, VQe.typeName = "aiserver.v1.SCMMakePullRequestReadyRequest", VQe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "pr_url",
-        kind: "scalar",
-        T: 9
-    }]);
-    const HQe = class e extends q {
-        constructor(e) {
-            super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    HQe.runtime = je, HQe.typeName = "aiserver.v1.SCMMakePullRequestReadyResponse", HQe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "success",
-        kind: "scalar",
-        T: 8
-    }, {
-        no: 2,
-        name: "error",
-        kind: "scalar",
-        T: 9
-    }]);
-    const KQe = class e extends q {
-        constructor(e) {
-            super(), this.prUrl = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    KQe.runtime = je, KQe.typeName = "aiserver.v1.SCMClosePullRequestRequest", KQe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "pr_url",
-        kind: "scalar",
-        T: 9
     }]);
     const WQe = class e extends q {
         constructor(e) {
@@ -154858,7 +154812,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    WQe.runtime = je, WQe.typeName = "aiserver.v1.SCMClosePullRequestResponse", WQe.fields = je.util.newFieldList(() => [{
+    WQe.runtime = je, WQe.typeName = "aiserver.v1.SCMMergePullRequestResponse", WQe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -154868,10 +154822,16 @@
         name: "error",
         kind: "scalar",
         T: 9
+    }, {
+        no: 3,
+        name: "pr_node_id",
+        kind: "scalar",
+        T: 9,
+        opt: !0
     }]);
     const zQe = class e extends q {
         constructor(e) {
-            super(), this.prUrl = "", je.util.initPartial(e, this)
+            super(), this.prUrl = "", this.title = "", je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -154886,9 +154846,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    zQe.runtime = je, zQe.typeName = "aiserver.v1.SCMReopenPullRequestRequest", zQe.fields = je.util.newFieldList(() => [{
+    zQe.runtime = je, zQe.typeName = "aiserver.v1.SCMUpdatePullRequestTitleRequest", zQe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "title",
         kind: "scalar",
         T: 9
     }]);
@@ -154909,7 +154874,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    jQe.runtime = je, jQe.typeName = "aiserver.v1.SCMReopenPullRequestResponse", jQe.fields = je.util.newFieldList(() => [{
+    jQe.runtime = je, jQe.typeName = "aiserver.v1.SCMUpdatePullRequestTitleResponse", jQe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -154922,7 +154887,7 @@
     }]);
     const XQe = class e extends q {
         constructor(e) {
-            super(), this.prUrl = "", this.mergeMethod = 0, je.util.initPartial(e, this)
+            super(), this.prUrl = "", je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -154937,16 +154902,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    XQe.runtime = je, XQe.typeName = "aiserver.v1.SCMEnablePullRequestAutoMergeRequest", XQe.fields = je.util.newFieldList(() => [{
+    XQe.runtime = je, XQe.typeName = "aiserver.v1.SCMMakePullRequestReadyRequest", XQe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
         T: 9
-    }, {
-        no: 2,
-        name: "merge_method",
-        kind: "enum",
-        T: je.getEnumType(eQe)
     }]);
     const QQe = class e extends q {
         constructor(e) {
@@ -154965,7 +154925,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    QQe.runtime = je, QQe.typeName = "aiserver.v1.SCMEnablePullRequestAutoMergeResponse", QQe.fields = je.util.newFieldList(() => [{
+    QQe.runtime = je, QQe.typeName = "aiserver.v1.SCMMakePullRequestReadyResponse", QQe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -154975,12 +154935,6 @@
         name: "error",
         kind: "scalar",
         T: 9
-    }, {
-        no: 3,
-        name: "pr_node_id",
-        kind: "scalar",
-        T: 9,
-        opt: !0
     }]);
     const $Qe = class e extends q {
         constructor(e) {
@@ -154999,7 +154953,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    $Qe.runtime = je, $Qe.typeName = "aiserver.v1.SCMDisablePullRequestAutoMergeRequest", $Qe.fields = je.util.newFieldList(() => [{
+    $Qe.runtime = je, $Qe.typeName = "aiserver.v1.SCMClosePullRequestRequest", $Qe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -155022,7 +154976,114 @@
             return je.util.equals(e, t, n)
         }
     };
-    ZQe.runtime = je, ZQe.typeName = "aiserver.v1.SCMDisablePullRequestAutoMergeResponse", ZQe.fields = je.util.newFieldList(() => [{
+    ZQe.runtime = je, ZQe.typeName = "aiserver.v1.SCMClosePullRequestResponse", ZQe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "success",
+        kind: "scalar",
+        T: 8
+    }, {
+        no: 2,
+        name: "error",
+        kind: "scalar",
+        T: 9
+    }]);
+    const e$e = class e extends q {
+        constructor(e) {
+            super(), this.prUrl = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    e$e.runtime = je, e$e.typeName = "aiserver.v1.SCMReopenPullRequestRequest", e$e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "pr_url",
+        kind: "scalar",
+        T: 9
+    }]);
+    const t$e = class e extends q {
+        constructor(e) {
+            super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    t$e.runtime = je, t$e.typeName = "aiserver.v1.SCMReopenPullRequestResponse", t$e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "success",
+        kind: "scalar",
+        T: 8
+    }, {
+        no: 2,
+        name: "error",
+        kind: "scalar",
+        T: 9
+    }]);
+    const n$e = class e extends q {
+        constructor(e) {
+            super(), this.prUrl = "", this.mergeMethod = 0, je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    n$e.runtime = je, n$e.typeName = "aiserver.v1.SCMEnablePullRequestAutoMergeRequest", n$e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "pr_url",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "merge_method",
+        kind: "enum",
+        T: je.getEnumType(eQe)
+    }]);
+    const r$e = class e extends q {
+        constructor(e) {
+            super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    r$e.runtime = je, r$e.typeName = "aiserver.v1.SCMEnablePullRequestAutoMergeResponse", r$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -155039,7 +155100,64 @@
         T: 9,
         opt: !0
     }]);
-    const e$e = class e extends q {
+    const s$e = class e extends q {
+        constructor(e) {
+            super(), this.prUrl = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    s$e.runtime = je, s$e.typeName = "aiserver.v1.SCMDisablePullRequestAutoMergeRequest", s$e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "pr_url",
+        kind: "scalar",
+        T: 9
+    }]);
+    const i$e = class e extends q {
+        constructor(e) {
+            super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    i$e.runtime = je, i$e.typeName = "aiserver.v1.SCMDisablePullRequestAutoMergeResponse", i$e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "success",
+        kind: "scalar",
+        T: 8
+    }, {
+        no: 2,
+        name: "error",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 3,
+        name: "pr_node_id",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    const a$e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", this.provider = "", this.providerCheckId = "", je.util.initPartial(e, this)
         }
@@ -155056,7 +155174,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    e$e.runtime = je, e$e.typeName = "aiserver.v1.GetPullRequestCheckLogExcerptRequest", e$e.fields = je.util.newFieldList(() => [{
+    a$e.runtime = je, a$e.typeName = "aiserver.v1.GetPullRequestCheckLogExcerptRequest", a$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -155078,7 +155196,7 @@
         T: 13,
         opt: !0
     }]);
-    const t$e = class e extends q {
+    const o$e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", this.paths = [], this.skipCache = !1, je.util.initPartial(e, this)
         }
@@ -155095,7 +155213,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    t$e.runtime = je, t$e.typeName = "aiserver.v1.GetPullRequestCodeownersRequest", t$e.fields = je.util.newFieldList(() => [{
+    o$e.runtime = je, o$e.typeName = "aiserver.v1.GetPullRequestCodeownersRequest", o$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -155112,7 +155230,7 @@
         kind: "scalar",
         T: 8
     }]);
-    const n$e = class e extends q {
+    const l$e = class e extends q {
         constructor(e) {
             super(), this.path = "", this.owners = [], je.util.initPartial(e, this)
         }
@@ -155129,7 +155247,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    n$e.runtime = je, n$e.typeName = "aiserver.v1.PullRequestPathCodeowners", n$e.fields = je.util.newFieldList(() => [{
+    l$e.runtime = je, l$e.typeName = "aiserver.v1.PullRequestPathCodeowners", l$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "path",
         kind: "scalar",
@@ -155141,8 +155259,8 @@
         T: 9,
         repeated: !0
     }]);
-    let r$e = n$e;
-    const s$e = class e extends q {
+    let u$e = l$e;
+    const m$e = class e extends q {
         constructor(e) {
             super(), this.entries = [], je.util.initPartial(e, this)
         }
@@ -155159,14 +155277,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    s$e.runtime = je, s$e.typeName = "aiserver.v1.GetPullRequestCodeownersResponse", s$e.fields = je.util.newFieldList(() => [{
+    m$e.runtime = je, m$e.typeName = "aiserver.v1.GetPullRequestCodeownersResponse", m$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "entries",
         kind: "message",
-        T: r$e,
+        T: u$e,
         repeated: !0
     }]);
-    const i$e = class e extends q {
+    const c$e = class e extends q {
         constructor(e) {
             super(), this.status = 0, this.excerpt = "", this.totalBytes = b.zero, this.truncated = !1, this.message = "", je.util.initPartial(e, this)
         }
@@ -155183,7 +155301,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    i$e.runtime = je, i$e.typeName = "aiserver.v1.GetPullRequestCheckLogExcerptResponse", i$e.fields = je.util.newFieldList(() => [{
+    c$e.runtime = je, c$e.typeName = "aiserver.v1.GetPullRequestCheckLogExcerptResponse", c$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "status",
         kind: "enum",
@@ -155209,7 +155327,7 @@
         kind: "scalar",
         T: 9
     }]);
-    const a$e = class e extends q {
+    const d$e = class e extends q {
         constructor(e) {
             super(), this.creationTimestampMs = b.zero, this.payload = {
                 case: void 0
@@ -155228,7 +155346,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    a$e.runtime = je, a$e.typeName = "aiserver.v1.AgentStartupTraceEvent", a$e.fields = je.util.newFieldList(() => [{
+    d$e.runtime = je, d$e.typeName = "aiserver.v1.AgentStartupTraceEvent", d$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "creation_timestamp_ms",
         kind: "scalar",
@@ -155237,35 +155355,35 @@
         no: 2,
         name: "span_started",
         kind: "message",
-        T: c$e,
+        T: g$e,
         oneof: "payload"
     }, {
         no: 3,
         name: "span_ended",
         kind: "message",
-        T: f$e,
+        T: h$e,
         oneof: "payload"
     }, {
         no: 4,
         name: "user_action",
         kind: "message",
-        T: T$e,
+        T: k$e,
         oneof: "payload"
     }, {
         no: 5,
         name: "turn_close",
         kind: "message",
-        T: g$e,
+        T: J$e,
         oneof: "payload"
     }, {
         no: 6,
         name: "context_link",
         kind: "message",
-        T: u$e,
+        T: T$e,
         oneof: "payload"
     }]);
-    let o$e = a$e;
-    const l$e = class e extends q {
+    let f$e = d$e;
+    const p$e = class e extends q {
         constructor(e) {
             super(), this.name = "", this.href = "", je.util.initPartial(e, this)
         }
@@ -155282,7 +155400,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    l$e.runtime = je, l$e.typeName = "aiserver.v1.AgentStartupTraceEvent.ContextLink", l$e.fields = je.util.newFieldList(() => [{
+    p$e.runtime = je, p$e.typeName = "aiserver.v1.AgentStartupTraceEvent.ContextLink", p$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -155293,8 +155411,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let u$e = l$e;
-    const m$e = class e extends q {
+    let T$e = p$e;
+    const _$e = class e extends q {
         constructor(e) {
             super(), this.spanId = "", this.name = "", je.util.initPartial(e, this)
         }
@@ -155311,7 +155429,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    m$e.runtime = je, m$e.typeName = "aiserver.v1.AgentStartupTraceEvent.SpanStarted", m$e.fields = je.util.newFieldList(() => [{
+    _$e.runtime = je, _$e.typeName = "aiserver.v1.AgentStartupTraceEvent.SpanStarted", _$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "span_id",
         kind: "scalar",
@@ -155346,8 +155464,8 @@
         T: 9,
         opt: !0
     }]);
-    let c$e = m$e;
-    const d$e = class e extends q {
+    let g$e = _$e;
+    const w$e = class e extends q {
         constructor(e) {
             super(), this.spanId = "", je.util.initPartial(e, this)
         }
@@ -155364,14 +155482,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    d$e.runtime = je, d$e.typeName = "aiserver.v1.AgentStartupTraceEvent.SpanEnded", d$e.fields = je.util.newFieldList(() => [{
+    w$e.runtime = je, w$e.typeName = "aiserver.v1.AgentStartupTraceEvent.SpanEnded", w$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "span_id",
         kind: "scalar",
         T: 9
     }]);
-    let f$e = d$e;
-    const p$e = class e extends q {
+    let h$e = w$e;
+    const y$e = class e extends q {
         constructor(e) {
             super(), this.turnIndex = 0, je.util.initPartial(e, this)
         }
@@ -155388,14 +155506,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    p$e.runtime = je, p$e.typeName = "aiserver.v1.AgentStartupTraceEvent.UserAction", p$e.fields = je.util.newFieldList(() => [{
+    y$e.runtime = je, y$e.typeName = "aiserver.v1.AgentStartupTraceEvent.UserAction", y$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "turn_index",
         kind: "scalar",
         T: 13
     }]);
-    let T$e = p$e;
-    const _$e = class e extends q {
+    let k$e = y$e;
+    const S$e = class e extends q {
         constructor(e) {
             super(), this.turnIndex = 0, je.util.initPartial(e, this)
         }
@@ -155412,15 +155530,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    _$e.runtime = je, _$e.typeName = "aiserver.v1.AgentStartupTraceEvent.TurnClose", _$e.fields = je.util.newFieldList(() => [{
+    S$e.runtime = je, S$e.typeName = "aiserver.v1.AgentStartupTraceEvent.TurnClose", S$e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "turn_index",
         kind: "scalar",
         T: 13
     }]);
-    let g$e = _$e;
-    var w$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.RUNNING = 1] = "RUNNING", e[e.FINISHED = 2] = "FINISHED", e[e.ERROR = 3] = "ERROR", e[e.CREATING = 4] = "CREATING", e[e.EXPIRED = 5] = "EXPIRED", e))(w$e || {});
-    je.util.setEnumType(w$e, "aiserver.v1.BackgroundComposerStatus", [{
+    let J$e = S$e;
+    var E$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.RUNNING = 1] = "RUNNING", e[e.FINISHED = 2] = "FINISHED", e[e.ERROR = 3] = "ERROR", e[e.CREATING = 4] = "CREATING", e[e.EXPIRED = 5] = "EXPIRED", e))(E$e || {});
+    je.util.setEnumType(E$e, "aiserver.v1.BackgroundComposerStatus", [{
         no: 0,
         name: "BACKGROUND_COMPOSER_STATUS_UNSPECIFIED"
     }, {
@@ -155439,8 +155557,8 @@
         no: 5,
         name: "BACKGROUND_COMPOSER_STATUS_EXPIRED"
     }]);
-    var h$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.RUNNING = 1] = "RUNNING", e[e.IDLE = 2] = "IDLE", e[e.ERROR = 3] = "ERROR", e[e.ARCHIVED = 4] = "ARCHIVED", e[e.EXPIRED = 5] = "EXPIRED", e[e.NOT_YET_STARTED = 6] = "NOT_YET_STARTED", e[e.WAITING_FOR_BACKGROUND_WORK = 7] = "WAITING_FOR_BACKGROUND_WORK", e))(h$e || {});
-    je.util.setEnumType(h$e, "aiserver.v1.CloudAgentWorkflowStatus", [{
+    var v$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.RUNNING = 1] = "RUNNING", e[e.IDLE = 2] = "IDLE", e[e.ERROR = 3] = "ERROR", e[e.ARCHIVED = 4] = "ARCHIVED", e[e.EXPIRED = 5] = "EXPIRED", e[e.NOT_YET_STARTED = 6] = "NOT_YET_STARTED", e[e.WAITING_FOR_BACKGROUND_WORK = 7] = "WAITING_FOR_BACKGROUND_WORK", e))(v$e || {});
+    je.util.setEnumType(v$e, "aiserver.v1.CloudAgentWorkflowStatus", [{
         no: 0,
         name: "CLOUD_AGENT_WORKFLOW_STATUS_UNSPECIFIED"
     }, {
@@ -155465,8 +155583,8 @@
         no: 7,
         name: "CLOUD_AGENT_WORKFLOW_STATUS_WAITING_FOR_BACKGROUND_WORK"
     }]);
-    var y$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EDITOR = 1] = "EDITOR", e[e.SLACK = 2] = "SLACK", e[e.WEBSITE = 3] = "WEBSITE", e[e.LINEAR = 4] = "LINEAR", e[e.IOS_APP = 5] = "IOS_APP", e[e.API = 6] = "API", e[e.GITHUB = 7] = "GITHUB", e[e.CLI = 8] = "CLI", e[e.GITHUB_CI_AUTOFIX = 9] = "GITHUB_CI_AUTOFIX", e[e.GITLAB = 10] = "GITLAB", e[e.ENVIRONMENT_SETUP_WEB = 11] = "ENVIRONMENT_SETUP_WEB", e[e.GRIND_WEB = 12] = "GRIND_WEB", e[e.BUGBOT_AUTOFIX = 13] = "BUGBOT_AUTOFIX", e[e.AUTOMATIONS = 14] = "AUTOMATIONS", e[e.GRAPHITE_CHAT_WEB = 15] = "GRAPHITE_CHAT_WEB", e[e.GLASS = 16] = "GLASS", e[e.GRAPHITE_FULL_SELF_DRIVING = 17] = "GRAPHITE_FULL_SELF_DRIVING", e[e.TEAMS = 18] = "TEAMS", e[e.LOCAL = 19] = "LOCAL", e[e.JIRA = 20] = "JIRA", e[e.SDK = 21] = "SDK", e[e.FULL_SELF_DRIVING = 22] = "FULL_SELF_DRIVING", e[e.QABOT_FRONTEND = 23] = "QABOT_FRONTEND", e[e.AS_SUBAGENT_FROM_LOCAL = 24] = "AS_SUBAGENT_FROM_LOCAL", e[e.ENVIRONMENT_SETUP_GLASS = 25] = "ENVIRONMENT_SETUP_GLASS", e[e.SAND_CODING_SUBAGENT = 26] = "SAND_CODING_SUBAGENT", e[e.BITBUCKET = 27] = "BITBUCKET", e))(y$e || {});
-    je.util.setEnumType(y$e, "aiserver.v1.BackgroundComposerSource", [{
+    var N$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.EDITOR = 1] = "EDITOR", e[e.SLACK = 2] = "SLACK", e[e.WEBSITE = 3] = "WEBSITE", e[e.LINEAR = 4] = "LINEAR", e[e.IOS_APP = 5] = "IOS_APP", e[e.API = 6] = "API", e[e.GITHUB = 7] = "GITHUB", e[e.CLI = 8] = "CLI", e[e.GITHUB_CI_AUTOFIX = 9] = "GITHUB_CI_AUTOFIX", e[e.GITLAB = 10] = "GITLAB", e[e.ENVIRONMENT_SETUP_WEB = 11] = "ENVIRONMENT_SETUP_WEB", e[e.GRIND_WEB = 12] = "GRIND_WEB", e[e.BUGBOT_AUTOFIX = 13] = "BUGBOT_AUTOFIX", e[e.AUTOMATIONS = 14] = "AUTOMATIONS", e[e.GRAPHITE_CHAT_WEB = 15] = "GRAPHITE_CHAT_WEB", e[e.GLASS = 16] = "GLASS", e[e.GRAPHITE_FULL_SELF_DRIVING = 17] = "GRAPHITE_FULL_SELF_DRIVING", e[e.TEAMS = 18] = "TEAMS", e[e.LOCAL = 19] = "LOCAL", e[e.JIRA = 20] = "JIRA", e[e.SDK = 21] = "SDK", e[e.FULL_SELF_DRIVING = 22] = "FULL_SELF_DRIVING", e[e.QABOT_FRONTEND = 23] = "QABOT_FRONTEND", e[e.AS_SUBAGENT_FROM_LOCAL = 24] = "AS_SUBAGENT_FROM_LOCAL", e[e.ENVIRONMENT_SETUP_GLASS = 25] = "ENVIRONMENT_SETUP_GLASS", e[e.SAND_CODING_SUBAGENT = 26] = "SAND_CODING_SUBAGENT", e[e.BITBUCKET = 27] = "BITBUCKET", e))(N$e || {});
+    je.util.setEnumType(N$e, "aiserver.v1.BackgroundComposerSource", [{
         no: 0,
         name: "BACKGROUND_COMPOSER_SOURCE_UNSPECIFIED"
     }, {
@@ -155551,8 +155669,8 @@
         no: 27,
         name: "BACKGROUND_COMPOSER_SOURCE_BITBUCKET"
     }]);
-    var k$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER = 1] = "USER", e[e.SERVICE_ACCOUNT = 2] = "SERVICE_ACCOUNT", e))(k$e || {});
-    je.util.setEnumType(k$e, "aiserver.v1.OwnerType", [{
+    var B$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER = 1] = "USER", e[e.SERVICE_ACCOUNT = 2] = "SERVICE_ACCOUNT", e))(B$e || {});
+    je.util.setEnumType(B$e, "aiserver.v1.OwnerType", [{
         no: 0,
         name: "OWNER_TYPE_UNSPECIFIED"
     }, {
@@ -155562,8 +155680,8 @@
         no: 2,
         name: "OWNER_TYPE_SERVICE_ACCOUNT"
     }]);
-    var S$e = (e => (e[e.PR_STATUS_UNSPECIFIED = 0] = "PR_STATUS_UNSPECIFIED", e[e.PR_STATUS_OPEN = 1] = "PR_STATUS_OPEN", e[e.PR_STATUS_DRAFT = 2] = "PR_STATUS_DRAFT", e[e.PR_STATUS_MERGED = 3] = "PR_STATUS_MERGED", e[e.PR_STATUS_CLOSED = 4] = "PR_STATUS_CLOSED", e))(S$e || {});
-    je.util.setEnumType(S$e, "aiserver.v1.PRStatus", [{
+    var q$e = (e => (e[e.PR_STATUS_UNSPECIFIED = 0] = "PR_STATUS_UNSPECIFIED", e[e.PR_STATUS_OPEN = 1] = "PR_STATUS_OPEN", e[e.PR_STATUS_DRAFT = 2] = "PR_STATUS_DRAFT", e[e.PR_STATUS_MERGED = 3] = "PR_STATUS_MERGED", e[e.PR_STATUS_CLOSED = 4] = "PR_STATUS_CLOSED", e))(q$e || {});
+    je.util.setEnumType(q$e, "aiserver.v1.PRStatus", [{
         no: 0,
         name: "PR_STATUS_UNSPECIFIED"
     }, {
@@ -155579,16 +155697,16 @@
         no: 4,
         name: "PR_STATUS_CLOSED"
     }]);
-    var J$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LOCAL = 1] = "LOCAL", e))(J$e || {});
-    je.util.setEnumType(J$e, "aiserver.v1.CloudSubagentParentAgentType", [{
+    var P$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.LOCAL = 1] = "LOCAL", e))(P$e || {});
+    je.util.setEnumType(P$e, "aiserver.v1.CloudSubagentParentAgentType", [{
         no: 0,
         name: "CLOUD_SUBAGENT_PARENT_AGENT_TYPE_UNSPECIFIED"
     }, {
         no: 1,
         name: "CLOUD_SUBAGENT_PARENT_AGENT_TYPE_LOCAL"
     }]);
-    var E$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PARENT = 1] = "PARENT", e[e.CHILD = 2] = "CHILD", e))(E$e || {});
-    je.util.setEnumType(E$e, "aiserver.v1.EnsembleStatus", [{
+    var I$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PARENT = 1] = "PARENT", e[e.CHILD = 2] = "CHILD", e))(I$e || {});
+    je.util.setEnumType(I$e, "aiserver.v1.EnsembleStatus", [{
         no: 0,
         name: "ENSEMBLE_STATUS_UNSPECIFIED"
     }, {
@@ -155598,8 +155716,8 @@
         no: 2,
         name: "ENSEMBLE_STATUS_CHILD"
     }]);
-    var v$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLAN = 1] = "PLAN", e[e.EXECUTE = 2] = "EXECUTE", e))(v$e || {});
-    je.util.setEnumType(v$e, "aiserver.v1.PlanFollowupType", [{
+    var R$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLAN = 1] = "PLAN", e[e.EXECUTE = 2] = "EXECUTE", e))(R$e || {});
+    je.util.setEnumType(R$e, "aiserver.v1.PlanFollowupType", [{
         no: 0,
         name: "PLAN_FOLLOWUP_TYPE_UNSPECIFIED"
     }, {
@@ -155609,8 +155727,8 @@
         no: 2,
         name: "PLAN_FOLLOWUP_TYPE_EXECUTE"
     }]);
-    var N$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.REQUEST_RECEIVED = 1] = "REQUEST_RECEIVED", e[e.PREWARMED_POD_RECEIVED = 2] = "PREWARMED_POD_RECEIVED", e[e.POD_REQUESTED = 3] = "POD_REQUESTED", e[e.POD_READY = 4] = "POD_READY", e[e.FIRST_TOKEN = 5] = "FIRST_TOKEN", e))(N$e || {});
-    je.util.setEnumType(N$e, "aiserver.v1.CloudAgentTimingEventType", [{
+    var L$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.REQUEST_RECEIVED = 1] = "REQUEST_RECEIVED", e[e.PREWARMED_POD_RECEIVED = 2] = "PREWARMED_POD_RECEIVED", e[e.POD_REQUESTED = 3] = "POD_REQUESTED", e[e.POD_READY = 4] = "POD_READY", e[e.FIRST_TOKEN = 5] = "FIRST_TOKEN", e))(L$e || {});
+    je.util.setEnumType(L$e, "aiserver.v1.CloudAgentTimingEventType", [{
         no: 0,
         name: "CLOUD_AGENT_TIMING_EVENT_TYPE_UNSPECIFIED"
     }, {
@@ -155629,8 +155747,8 @@
         no: 5,
         name: "CLOUD_AGENT_TIMING_EVENT_TYPE_FIRST_TOKEN"
     }]);
-    var B$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NONE = 1] = "NONE", e[e.NO_AUTH_TOKEN = 2] = "NO_AUTH_TOKEN", e[e.APP_NOT_INSTALLED = 3] = "APP_NOT_INSTALLED", e[e.USER_NO_ACCESS = 4] = "USER_NO_ACCESS", e[e.APP_INSUFFICIENT_PERMS = 5] = "APP_INSUFFICIENT_PERMS", e[e.PUBLIC_REPO = 6] = "PUBLIC_REPO", e))(B$e || {});
-    je.util.setEnumType(B$e, "aiserver.v1.GithubAccessErrorType", [{
+    var F$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NONE = 1] = "NONE", e[e.NO_AUTH_TOKEN = 2] = "NO_AUTH_TOKEN", e[e.APP_NOT_INSTALLED = 3] = "APP_NOT_INSTALLED", e[e.USER_NO_ACCESS = 4] = "USER_NO_ACCESS", e[e.APP_INSUFFICIENT_PERMS = 5] = "APP_INSUFFICIENT_PERMS", e[e.PUBLIC_REPO = 6] = "PUBLIC_REPO", e))(F$e || {});
+    je.util.setEnumType(F$e, "aiserver.v1.GithubAccessErrorType", [{
         no: 0,
         name: "GITHUB_ACCESS_ERROR_TYPE_UNSPECIFIED"
     }, {
@@ -155652,8 +155770,8 @@
         no: 6,
         name: "GITHUB_ACCESS_ERROR_TYPE_PUBLIC_REPO"
     }]);
-    var q$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DASHBOARD = 1] = "DASHBOARD", e[e.SETUP_FLOW = 2] = "SETUP_FLOW", e[e.SDK_V1 = 3] = "SDK_V1", e[e.RESTORE = 4] = "RESTORE", e))(q$e || {});
-    je.util.setEnumType(q$e, "aiserver.v1.EnvironmentWriteSource", [{
+    var C$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DASHBOARD = 1] = "DASHBOARD", e[e.SETUP_FLOW = 2] = "SETUP_FLOW", e[e.SDK_V1 = 3] = "SDK_V1", e[e.RESTORE = 4] = "RESTORE", e))(C$e || {});
+    je.util.setEnumType(C$e, "aiserver.v1.EnvironmentWriteSource", [{
         no: 0,
         name: "ENVIRONMENT_WRITE_SOURCE_UNSPECIFIED"
     }, {
@@ -155669,8 +155787,8 @@
         no: 4,
         name: "ENVIRONMENT_WRITE_SOURCE_RESTORE"
     }]);
-    var P$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PERSONAL = 1] = "PERSONAL", e[e.TEAM = 2] = "TEAM", e))(P$e || {});
-    je.util.setEnumType(P$e, "aiserver.v1.EnvironmentType", [{
+    var A$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PERSONAL = 1] = "PERSONAL", e[e.TEAM = 2] = "TEAM", e))(A$e || {});
+    je.util.setEnumType(A$e, "aiserver.v1.EnvironmentType", [{
         no: 0,
         name: "ENVIRONMENT_TYPE_UNSPECIFIED"
     }, {
@@ -155680,8 +155798,8 @@
         no: 2,
         name: "ENVIRONMENT_TYPE_TEAM"
     }]);
-    var I$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PERSONAL = 1] = "PERSONAL", e[e.TEAM = 2] = "TEAM", e[e.REPOSITORY = 3] = "REPOSITORY", e))(I$e || {});
-    je.util.setEnumType(I$e, "aiserver.v1.LogicalEnvironmentScope", [{
+    var x$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PERSONAL = 1] = "PERSONAL", e[e.TEAM = 2] = "TEAM", e[e.REPOSITORY = 3] = "REPOSITORY", e))(x$e || {});
+    je.util.setEnumType(x$e, "aiserver.v1.LogicalEnvironmentScope", [{
         no: 0,
         name: "LOGICAL_ENVIRONMENT_SCOPE_UNSPECIFIED"
     }, {
@@ -155694,8 +155812,8 @@
         no: 3,
         name: "LOGICAL_ENVIRONMENT_SCOPE_REPOSITORY"
     }]);
-    var R$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SAME_SCOPE_ONLY = 1] = "SAME_SCOPE_ONLY", e[e.ALLOW_TEAM_NAMED_FOR_PERSONAL = 2] = "ALLOW_TEAM_NAMED_FOR_PERSONAL", e))(R$e || {});
-    je.util.setEnumType(R$e, "aiserver.v1.MultiRepoEnvironmentReusePolicy", [{
+    var O$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SAME_SCOPE_ONLY = 1] = "SAME_SCOPE_ONLY", e[e.ALLOW_TEAM_NAMED_FOR_PERSONAL = 2] = "ALLOW_TEAM_NAMED_FOR_PERSONAL", e))(O$e || {});
+    je.util.setEnumType(O$e, "aiserver.v1.MultiRepoEnvironmentReusePolicy", [{
         no: 0,
         name: "MULTI_REPO_ENVIRONMENT_REUSE_POLICY_UNSPECIFIED"
     }, {
@@ -155705,8 +155823,8 @@
         no: 2,
         name: "MULTI_REPO_ENVIRONMENT_REUSE_POLICY_ALLOW_TEAM_NAMED_FOR_PERSONAL"
     }]);
-    var L$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.REPO_FILE = 1] = "REPO_FILE", e[e.DATABASE_USER = 2] = "DATABASE_USER", e[e.DATABASE_TEAM = 3] = "DATABASE_TEAM", e[e.REQUEST_OVERRIDE = 4] = "REQUEST_OVERRIDE", e))(L$e || {});
-    je.util.setEnumType(L$e, "aiserver.v1.EnvironmentVersionSourceKind", [{
+    var D$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.REPO_FILE = 1] = "REPO_FILE", e[e.DATABASE_USER = 2] = "DATABASE_USER", e[e.DATABASE_TEAM = 3] = "DATABASE_TEAM", e[e.REQUEST_OVERRIDE = 4] = "REQUEST_OVERRIDE", e))(D$e || {});
+    je.util.setEnumType(D$e, "aiserver.v1.EnvironmentVersionSourceKind", [{
         no: 0,
         name: "ENVIRONMENT_VERSION_SOURCE_KIND_UNSPECIFIED"
     }, {
@@ -155722,8 +155840,8 @@
         no: 4,
         name: "ENVIRONMENT_VERSION_SOURCE_KIND_REQUEST_OVERRIDE"
     }]);
-    var F$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CREATED = 1] = "CREATED", e[e.UPDATED = 2] = "UPDATED", e[e.DELETED = 3] = "DELETED", e[e.FORWARD_FILLED = 4] = "FORWARD_FILLED", e))(F$e || {});
-    je.util.setEnumType(F$e, "aiserver.v1.EnvironmentUpdateEventKind", [{
+    var b$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CREATED = 1] = "CREATED", e[e.UPDATED = 2] = "UPDATED", e[e.DELETED = 3] = "DELETED", e[e.FORWARD_FILLED = 4] = "FORWARD_FILLED", e))(b$e || {});
+    je.util.setEnumType(b$e, "aiserver.v1.EnvironmentUpdateEventKind", [{
         no: 0,
         name: "ENVIRONMENT_UPDATE_EVENT_KIND_UNSPECIFIED"
     }, {
@@ -155739,8 +155857,8 @@
         no: 4,
         name: "ENVIRONMENT_UPDATE_EVENT_KIND_FORWARD_FILLED"
     }]);
-    var C$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ALWAYS = 1] = "ALWAYS", e[e.SINGLE = 2] = "SINGLE", e[e.NEVER = 3] = "NEVER", e))(C$e || {});
-    je.util.setEnumType(C$e, "aiserver.v1.AutoCreatePrSetting", [{
+    var U$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ALWAYS = 1] = "ALWAYS", e[e.SINGLE = 2] = "SINGLE", e[e.NEVER = 3] = "NEVER", e))(U$e || {});
+    je.util.setEnumType(U$e, "aiserver.v1.AutoCreatePrSetting", [{
         no: 0,
         name: "AUTO_CREATE_PR_SETTING_UNSPECIFIED"
     }, {
@@ -155753,8 +155871,8 @@
         no: 3,
         name: "AUTO_CREATE_PR_SETTING_NEVER"
     }]);
-    var A$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUBAGENT = 1] = "SUBAGENT", e[e.PARENT_AGENT = 2] = "PARENT_AGENT", e))(A$e || {});
-    je.util.setEnumType(A$e, "aiserver.v1.BackgroundComposerQuickActionExecutionMode", [{
+    var M$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SUBAGENT = 1] = "SUBAGENT", e[e.PARENT_AGENT = 2] = "PARENT_AGENT", e))(M$e || {});
+    je.util.setEnumType(M$e, "aiserver.v1.BackgroundComposerQuickActionExecutionMode", [{
         no: 0,
         name: "BACKGROUND_COMPOSER_QUICK_ACTION_EXECUTION_MODE_UNSPECIFIED"
     }, {
@@ -155764,8 +155882,8 @@
         no: 2,
         name: "BACKGROUND_COMPOSER_QUICK_ACTION_EXECUTION_MODE_PARENT_AGENT"
     }]);
-    var x$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.BUILTIN = 1] = "BUILTIN", e[e.USER = 2] = "USER", e[e.TEAM = 3] = "TEAM", e))(x$e || {});
-    je.util.setEnumType(x$e, "aiserver.v1.BackgroundComposerQuickActionSubagentTemplateScope", [{
+    var G$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.BUILTIN = 1] = "BUILTIN", e[e.USER = 2] = "USER", e[e.TEAM = 3] = "TEAM", e))(G$e || {});
+    je.util.setEnumType(G$e, "aiserver.v1.BackgroundComposerQuickActionSubagentTemplateScope", [{
         no: 0,
         name: "BACKGROUND_COMPOSER_QUICK_ACTION_SUBAGENT_TEMPLATE_SCOPE_UNSPECIFIED"
     }, {
@@ -155778,8 +155896,8 @@
         no: 3,
         name: "BACKGROUND_COMPOSER_QUICK_ACTION_SUBAGENT_TEMPLATE_SCOPE_TEAM"
     }]);
-    var O$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CREATE = 1] = "CREATE", e[e.UPDATE = 2] = "UPDATE", e[e.DELETE = 3] = "DELETE", e))(O$e || {});
-    je.util.setEnumType(O$e, "aiserver.v1.BackgroundComposerQuickActionSubagentTemplateOperation", [{
+    var Y$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CREATE = 1] = "CREATE", e[e.UPDATE = 2] = "UPDATE", e[e.DELETE = 3] = "DELETE", e))(Y$e || {});
+    je.util.setEnumType(Y$e, "aiserver.v1.BackgroundComposerQuickActionSubagentTemplateOperation", [{
         no: 0,
         name: "BACKGROUND_COMPOSER_QUICK_ACTION_SUBAGENT_TEMPLATE_OPERATION_UNSPECIFIED"
     }, {
@@ -155792,8 +155910,8 @@
         no: 3,
         name: "BACKGROUND_COMPOSER_QUICK_ACTION_SUBAGENT_TEMPLATE_OPERATION_DELETE"
     }]);
-    var D$e = (e => (e[e.PR_DEPLOYMENT_STATE_UNSPECIFIED = 0] = "PR_DEPLOYMENT_STATE_UNSPECIFIED", e[e.PR_DEPLOYMENT_STATE_UNKNOWN = 1] = "PR_DEPLOYMENT_STATE_UNKNOWN", e[e.PR_DEPLOYMENT_STATE_PENDING = 2] = "PR_DEPLOYMENT_STATE_PENDING", e[e.PR_DEPLOYMENT_STATE_QUEUED = 3] = "PR_DEPLOYMENT_STATE_QUEUED", e[e.PR_DEPLOYMENT_STATE_IN_PROGRESS = 4] = "PR_DEPLOYMENT_STATE_IN_PROGRESS", e[e.PR_DEPLOYMENT_STATE_SUCCESS = 5] = "PR_DEPLOYMENT_STATE_SUCCESS", e[e.PR_DEPLOYMENT_STATE_FAILURE = 6] = "PR_DEPLOYMENT_STATE_FAILURE", e[e.PR_DEPLOYMENT_STATE_ERROR = 7] = "PR_DEPLOYMENT_STATE_ERROR", e[e.PR_DEPLOYMENT_STATE_INACTIVE = 8] = "PR_DEPLOYMENT_STATE_INACTIVE", e[e.PR_DEPLOYMENT_STATE_WAITING = 9] = "PR_DEPLOYMENT_STATE_WAITING", e[e.PR_DEPLOYMENT_STATE_ACTIVE = 10] = "PR_DEPLOYMENT_STATE_ACTIVE", e[e.PR_DEPLOYMENT_STATE_ABANDONED = 11] = "PR_DEPLOYMENT_STATE_ABANDONED", e[e.PR_DEPLOYMENT_STATE_DESTROYED = 12] = "PR_DEPLOYMENT_STATE_DESTROYED", e[e.PR_DEPLOYMENT_STATE_BLOCKED = 13] = "PR_DEPLOYMENT_STATE_BLOCKED", e[e.PR_DEPLOYMENT_STATE_CANCELED = 14] = "PR_DEPLOYMENT_STATE_CANCELED", e))(D$e || {});
-    je.util.setEnumType(D$e, "aiserver.v1.PRDeploymentState", [{
+    var V$e = (e => (e[e.PR_DEPLOYMENT_STATE_UNSPECIFIED = 0] = "PR_DEPLOYMENT_STATE_UNSPECIFIED", e[e.PR_DEPLOYMENT_STATE_UNKNOWN = 1] = "PR_DEPLOYMENT_STATE_UNKNOWN", e[e.PR_DEPLOYMENT_STATE_PENDING = 2] = "PR_DEPLOYMENT_STATE_PENDING", e[e.PR_DEPLOYMENT_STATE_QUEUED = 3] = "PR_DEPLOYMENT_STATE_QUEUED", e[e.PR_DEPLOYMENT_STATE_IN_PROGRESS = 4] = "PR_DEPLOYMENT_STATE_IN_PROGRESS", e[e.PR_DEPLOYMENT_STATE_SUCCESS = 5] = "PR_DEPLOYMENT_STATE_SUCCESS", e[e.PR_DEPLOYMENT_STATE_FAILURE = 6] = "PR_DEPLOYMENT_STATE_FAILURE", e[e.PR_DEPLOYMENT_STATE_ERROR = 7] = "PR_DEPLOYMENT_STATE_ERROR", e[e.PR_DEPLOYMENT_STATE_INACTIVE = 8] = "PR_DEPLOYMENT_STATE_INACTIVE", e[e.PR_DEPLOYMENT_STATE_WAITING = 9] = "PR_DEPLOYMENT_STATE_WAITING", e[e.PR_DEPLOYMENT_STATE_ACTIVE = 10] = "PR_DEPLOYMENT_STATE_ACTIVE", e[e.PR_DEPLOYMENT_STATE_ABANDONED = 11] = "PR_DEPLOYMENT_STATE_ABANDONED", e[e.PR_DEPLOYMENT_STATE_DESTROYED = 12] = "PR_DEPLOYMENT_STATE_DESTROYED", e[e.PR_DEPLOYMENT_STATE_BLOCKED = 13] = "PR_DEPLOYMENT_STATE_BLOCKED", e[e.PR_DEPLOYMENT_STATE_CANCELED = 14] = "PR_DEPLOYMENT_STATE_CANCELED", e))(V$e || {});
+    je.util.setEnumType(V$e, "aiserver.v1.PRDeploymentState", [{
         no: 0,
         name: "PR_DEPLOYMENT_STATE_UNSPECIFIED"
     }, {
@@ -155839,8 +155957,8 @@
         no: 14,
         name: "PR_DEPLOYMENT_STATE_CANCELED"
     }]);
-    var b$e = (e => (e[e.PR_DEPLOYMENT_STATUS_STATE_UNSPECIFIED = 0] = "PR_DEPLOYMENT_STATUS_STATE_UNSPECIFIED", e[e.PR_DEPLOYMENT_STATUS_STATE_UNKNOWN = 1] = "PR_DEPLOYMENT_STATUS_STATE_UNKNOWN", e[e.PR_DEPLOYMENT_STATUS_STATE_PENDING = 2] = "PR_DEPLOYMENT_STATUS_STATE_PENDING", e[e.PR_DEPLOYMENT_STATUS_STATE_QUEUED = 3] = "PR_DEPLOYMENT_STATUS_STATE_QUEUED", e[e.PR_DEPLOYMENT_STATUS_STATE_IN_PROGRESS = 4] = "PR_DEPLOYMENT_STATUS_STATE_IN_PROGRESS", e[e.PR_DEPLOYMENT_STATUS_STATE_SUCCESS = 5] = "PR_DEPLOYMENT_STATUS_STATE_SUCCESS", e[e.PR_DEPLOYMENT_STATUS_STATE_FAILURE = 6] = "PR_DEPLOYMENT_STATUS_STATE_FAILURE", e[e.PR_DEPLOYMENT_STATUS_STATE_ERROR = 7] = "PR_DEPLOYMENT_STATUS_STATE_ERROR", e[e.PR_DEPLOYMENT_STATUS_STATE_INACTIVE = 8] = "PR_DEPLOYMENT_STATUS_STATE_INACTIVE", e[e.PR_DEPLOYMENT_STATUS_STATE_WAITING = 9] = "PR_DEPLOYMENT_STATUS_STATE_WAITING", e[e.PR_DEPLOYMENT_STATUS_STATE_BLOCKED = 10] = "PR_DEPLOYMENT_STATUS_STATE_BLOCKED", e[e.PR_DEPLOYMENT_STATUS_STATE_CANCELED = 11] = "PR_DEPLOYMENT_STATUS_STATE_CANCELED", e))(b$e || {});
-    je.util.setEnumType(b$e, "aiserver.v1.PRDeploymentStatusState", [{
+    var H$e = (e => (e[e.PR_DEPLOYMENT_STATUS_STATE_UNSPECIFIED = 0] = "PR_DEPLOYMENT_STATUS_STATE_UNSPECIFIED", e[e.PR_DEPLOYMENT_STATUS_STATE_UNKNOWN = 1] = "PR_DEPLOYMENT_STATUS_STATE_UNKNOWN", e[e.PR_DEPLOYMENT_STATUS_STATE_PENDING = 2] = "PR_DEPLOYMENT_STATUS_STATE_PENDING", e[e.PR_DEPLOYMENT_STATUS_STATE_QUEUED = 3] = "PR_DEPLOYMENT_STATUS_STATE_QUEUED", e[e.PR_DEPLOYMENT_STATUS_STATE_IN_PROGRESS = 4] = "PR_DEPLOYMENT_STATUS_STATE_IN_PROGRESS", e[e.PR_DEPLOYMENT_STATUS_STATE_SUCCESS = 5] = "PR_DEPLOYMENT_STATUS_STATE_SUCCESS", e[e.PR_DEPLOYMENT_STATUS_STATE_FAILURE = 6] = "PR_DEPLOYMENT_STATUS_STATE_FAILURE", e[e.PR_DEPLOYMENT_STATUS_STATE_ERROR = 7] = "PR_DEPLOYMENT_STATUS_STATE_ERROR", e[e.PR_DEPLOYMENT_STATUS_STATE_INACTIVE = 8] = "PR_DEPLOYMENT_STATUS_STATE_INACTIVE", e[e.PR_DEPLOYMENT_STATUS_STATE_WAITING = 9] = "PR_DEPLOYMENT_STATUS_STATE_WAITING", e[e.PR_DEPLOYMENT_STATUS_STATE_BLOCKED = 10] = "PR_DEPLOYMENT_STATUS_STATE_BLOCKED", e[e.PR_DEPLOYMENT_STATUS_STATE_CANCELED = 11] = "PR_DEPLOYMENT_STATUS_STATE_CANCELED", e))(H$e || {});
+    je.util.setEnumType(H$e, "aiserver.v1.PRDeploymentStatusState", [{
         no: 0,
         name: "PR_DEPLOYMENT_STATUS_STATE_UNSPECIFIED"
     }, {
@@ -155877,8 +155995,8 @@
         no: 11,
         name: "PR_DEPLOYMENT_STATUS_STATE_CANCELED"
     }]);
-    var U$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.IOS = 1] = "IOS", e[e.ANDROID = 2] = "ANDROID", e[e.WEB = 3] = "WEB", e))(U$e || {});
-    je.util.setEnumType(U$e, "aiserver.v1.PushPlatform", [{
+    var K$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.IOS = 1] = "IOS", e[e.ANDROID = 2] = "ANDROID", e[e.WEB = 3] = "WEB", e))(K$e || {});
+    je.util.setEnumType(K$e, "aiserver.v1.PushPlatform", [{
         no: 0,
         name: "PUSH_PLATFORM_UNSPECIFIED"
     }, {
@@ -155891,8 +156009,8 @@
         no: 3,
         name: "PUSH_PLATFORM_WEB"
     }]);
-    var M$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER_MESSAGE = 1] = "USER_MESSAGE", e[e.PLAN_START = 2] = "PLAN_START", e[e.PLAN_EXECUTE = 3] = "PLAN_EXECUTE", e))(M$e || {});
-    je.util.setEnumType(M$e, "aiserver.v1.StartingMessageType", [{
+    var W$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER_MESSAGE = 1] = "USER_MESSAGE", e[e.PLAN_START = 2] = "PLAN_START", e[e.PLAN_EXECUTE = 3] = "PLAN_EXECUTE", e))(W$e || {});
+    je.util.setEnumType(W$e, "aiserver.v1.StartingMessageType", [{
         no: 0,
         name: "STARTING_MESSAGE_TYPE_UNSPECIFIED"
     }, {
@@ -155905,8 +156023,8 @@
         no: 3,
         name: "STARTING_MESSAGE_TYPE_PLAN_EXECUTE"
     }]);
-    var G$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PR_TITLE_EDITED = 1] = "PR_TITLE_EDITED", e[e.PR_DESCRIPTION_EDITED = 2] = "PR_DESCRIPTION_EDITED", e[e.ASYNC_USER_INSTALL_SCRIPT_RUNNING = 3] = "ASYNC_USER_INSTALL_SCRIPT_RUNNING", e))(G$e || {});
-    je.util.setEnumType(G$e, "aiserver.v1.NextTurnSystemReminderKind", [{
+    var z$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PR_TITLE_EDITED = 1] = "PR_TITLE_EDITED", e[e.PR_DESCRIPTION_EDITED = 2] = "PR_DESCRIPTION_EDITED", e[e.ASYNC_USER_INSTALL_SCRIPT_RUNNING = 3] = "ASYNC_USER_INSTALL_SCRIPT_RUNNING", e))(z$e || {});
+    je.util.setEnumType(z$e, "aiserver.v1.NextTurnSystemReminderKind", [{
         no: 0,
         name: "NEXT_TURN_SYSTEM_REMINDER_KIND_UNSPECIFIED"
     }, {
@@ -155919,8 +156037,8 @@
         no: 3,
         name: "NEXT_TURN_SYSTEM_REMINDER_KIND_ASYNC_USER_INSTALL_SCRIPT_RUNNING"
     }]);
-    var Y$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SNAPSHOT_EXPIRED = 1] = "SNAPSHOT_EXPIRED", e[e.SNAPSHOT_INVALID = 2] = "SNAPSHOT_INVALID", e[e.SNAPSHOT_NOT_FOUND_OR_NO_ACCESS = 3] = "SNAPSHOT_NOT_FOUND_OR_NO_ACCESS", e[e.SNAPSHOT_COPY_FAILED = 4] = "SNAPSHOT_COPY_FAILED", e))(Y$e || {});
-    je.util.setEnumType(Y$e, "aiserver.v1.CloudAgentStartupWarningType", [{
+    var j$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.SNAPSHOT_EXPIRED = 1] = "SNAPSHOT_EXPIRED", e[e.SNAPSHOT_INVALID = 2] = "SNAPSHOT_INVALID", e[e.SNAPSHOT_NOT_FOUND_OR_NO_ACCESS = 3] = "SNAPSHOT_NOT_FOUND_OR_NO_ACCESS", e[e.SNAPSHOT_COPY_FAILED = 4] = "SNAPSHOT_COPY_FAILED", e))(j$e || {});
+    je.util.setEnumType(j$e, "aiserver.v1.CloudAgentStartupWarningType", [{
         no: 0,
         name: "CLOUD_AGENT_STARTUP_WARNING_TYPE_UNSPECIFIED"
     }, {
@@ -155936,8 +156054,8 @@
         no: 4,
         name: "CLOUD_AGENT_STARTUP_WARNING_TYPE_SNAPSHOT_COPY_FAILED"
     }]);
-    var V$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DOCKER_BUILD = 1] = "DOCKER_BUILD", e[e.SETUP = 2] = "SETUP", e))(V$e || {});
-    je.util.setEnumType(V$e, "aiserver.v1.CloudAgentMemoryDbLogSource", [{
+    var X$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DOCKER_BUILD = 1] = "DOCKER_BUILD", e[e.SETUP = 2] = "SETUP", e))(X$e || {});
+    je.util.setEnumType(X$e, "aiserver.v1.CloudAgentMemoryDbLogSource", [{
         no: 0,
         name: "CLOUD_AGENT_MEMORY_DB_LOG_SOURCE_UNSPECIFIED"
     }, {
@@ -155947,8 +156065,8 @@
         no: 2,
         name: "CLOUD_AGENT_MEMORY_DB_LOG_SOURCE_SETUP"
     }]);
-    var H$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ALL = 1] = "ALL", e[e.TEAM_POOL = 2] = "TEAM_POOL", e[e.PERSONAL = 3] = "PERSONAL", e))(H$e || {});
-    je.util.setEnumType(H$e, "aiserver.v1.PrivateWorkerListScope", [{
+    var Q$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ALL = 1] = "ALL", e[e.TEAM_POOL = 2] = "TEAM_POOL", e[e.PERSONAL = 3] = "PERSONAL", e))(Q$e || {});
+    je.util.setEnumType(Q$e, "aiserver.v1.PrivateWorkerListScope", [{
         no: 0,
         name: "PRIVATE_WORKER_LIST_SCOPE_UNSPECIFIED"
     }, {
@@ -155961,8 +156079,8 @@
         no: 3,
         name: "PRIVATE_WORKER_LIST_SCOPE_PERSONAL"
     }]);
-    var K$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ALL = 1] = "ALL", e[e.IN_USE = 2] = "IN_USE", e[e.IDLE = 3] = "IDLE", e))(K$e || {});
-    je.util.setEnumType(K$e, "aiserver.v1.PrivateWorkerStatusFilter", [{
+    var $$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ALL = 1] = "ALL", e[e.IN_USE = 2] = "IN_USE", e[e.IDLE = 3] = "IDLE", e))($$e || {});
+    je.util.setEnumType($$e, "aiserver.v1.PrivateWorkerStatusFilter", [{
         no: 0,
         name: "PRIVATE_WORKER_STATUS_FILTER_UNSPECIFIED"
     }, {
@@ -155975,8 +156093,8 @@
         no: 3,
         name: "PRIVATE_WORKER_STATUS_FILTER_IDLE"
     }]);
-    var W$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CLOUD = 1] = "CLOUD", e[e.LOCAL = 2] = "LOCAL", e))(W$e || {});
-    je.util.setEnumType(W$e, "aiserver.v1.AgentStoreKind", [{
+    var Z$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CLOUD = 1] = "CLOUD", e[e.LOCAL = 2] = "LOCAL", e))(Z$e || {});
+    je.util.setEnumType(Z$e, "aiserver.v1.AgentStoreKind", [{
         no: 0,
         name: "AGENT_STORE_KIND_UNSPECIFIED"
     }, {
@@ -155986,8 +156104,8 @@
         no: 2,
         name: "AGENT_STORE_KIND_LOCAL"
     }]);
-    var z$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DIRECTORY = 1] = "DIRECTORY", e[e.FILE = 2] = "FILE", e))(z$e || {});
-    je.util.setEnumType(z$e, "aiserver.v1.AgentStoreEntryKind", [{
+    var eZe = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DIRECTORY = 1] = "DIRECTORY", e[e.FILE = 2] = "FILE", e))(eZe || {});
+    je.util.setEnumType(eZe, "aiserver.v1.AgentStoreEntryKind", [{
         no: 0,
         name: "AGENT_STORE_ENTRY_KIND_UNSPECIFIED"
     }, {
@@ -155997,8 +156115,8 @@
         no: 2,
         name: "AGENT_STORE_ENTRY_KIND_FILE"
     }]);
-    var j$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.TEAM = 2] = "TEAM", e[e.PUBLIC = 3] = "PUBLIC", e))(j$e || {});
-    je.util.setEnumType(j$e, "aiserver.v1.AgentStoreShareVisibility", [{
+    var tZe = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.TEAM = 2] = "TEAM", e[e.PUBLIC = 3] = "PUBLIC", e))(tZe || {});
+    je.util.setEnumType(tZe, "aiserver.v1.AgentStoreShareVisibility", [{
         no: 0,
         name: "AGENT_STORE_SHARE_VISIBILITY_UNSPECIFIED"
     }, {
@@ -156008,8 +156126,8 @@
         no: 3,
         name: "AGENT_STORE_SHARE_VISIBILITY_PUBLIC"
     }]);
-    var X$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.MINE = 1] = "MINE", e[e.TEAM = 2] = "TEAM", e))(X$e || {});
-    je.util.setEnumType(X$e, "aiserver.v1.ListSharedAgentStoresScope", [{
+    var nZe = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.MINE = 1] = "MINE", e[e.TEAM = 2] = "TEAM", e))(nZe || {});
+    je.util.setEnumType(nZe, "aiserver.v1.ListSharedAgentStoresScope", [{
         no: 0,
         name: "LIST_SHARED_AGENT_STORES_SCOPE_UNSPECIFIED"
     }, {
@@ -156019,8 +156137,8 @@
         no: 2,
         name: "LIST_SHARED_AGENT_STORES_SCOPE_TEAM"
     }]);
-    var Q$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DISPATCHED = 1] = "DISPATCHED", e[e.DESKTOP_UNREACHABLE = 2] = "DESKTOP_UNREACHABLE", e[e.REJECTED = 3] = "REJECTED", e))(Q$e || {});
-    je.util.setEnumType(Q$e, "aiserver.v1.RemoteControlRequestStatus", [{
+    var rZe = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DISPATCHED = 1] = "DISPATCHED", e[e.DESKTOP_UNREACHABLE = 2] = "DESKTOP_UNREACHABLE", e[e.REJECTED = 3] = "REJECTED", e))(rZe || {});
+    je.util.setEnumType(rZe, "aiserver.v1.RemoteControlRequestStatus", [{
         no: 0,
         name: "REMOTE_CONTROL_REQUEST_STATUS_UNSPECIFIED"
     }, {
@@ -156033,8 +156151,8 @@
         no: 3,
         name: "REMOTE_CONTROL_REQUEST_STATUS_REJECTED"
     }]);
-    var $$e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NOT_OWNED = 1] = "NOT_OWNED", e[e.MACHINE_NOT_FOUND = 2] = "MACHINE_NOT_FOUND", e[e.REPO_MISMATCH = 3] = "REPO_MISMATCH", e[e.AMBIGUOUS = 4] = "AMBIGUOUS", e[e.UNLINKED = 5] = "UNLINKED", e[e.WORKER_OFFLINE = 6] = "WORKER_OFFLINE", e))($$e || {});
-    je.util.setEnumType($$e, "aiserver.v1.RemoteControlRequestRejectionReason", [{
+    var sZe = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.NOT_OWNED = 1] = "NOT_OWNED", e[e.MACHINE_NOT_FOUND = 2] = "MACHINE_NOT_FOUND", e[e.REPO_MISMATCH = 3] = "REPO_MISMATCH", e[e.AMBIGUOUS = 4] = "AMBIGUOUS", e[e.UNLINKED = 5] = "UNLINKED", e[e.WORKER_OFFLINE = 6] = "WORKER_OFFLINE", e))(sZe || {});
+    je.util.setEnumType(sZe, "aiserver.v1.RemoteControlRequestRejectionReason", [{
         no: 0,
         name: "REMOTE_CONTROL_REQUEST_REJECTION_REASON_UNSPECIFIED"
     }, {
@@ -156056,7 +156174,7 @@
         no: 6,
         name: "REMOTE_CONTROL_REQUEST_REJECTION_REASON_WORKER_OFFLINE"
     }]);
-    const Z$e = class e extends q {
+    const iZe = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.replace = !1, je.util.initPartial(e, this)
         }
@@ -156073,7 +156191,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Z$e.runtime = je, Z$e.typeName = "aiserver.v1.UpdateBackgroundComposerEnvironmentRequest", Z$e.fields = je.util.newFieldList(() => [{
+    iZe.runtime = je, iZe.typeName = "aiserver.v1.UpdateBackgroundComposerEnvironmentRequest", iZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -156084,8 +156202,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let eZe = Z$e;
-    const tZe = class e extends q {
+    let aZe = iZe;
+    const oZe = class e extends q {
         constructor(e) {
             super(), this.applied = 0, this.removed = 0, je.util.initPartial(e, this)
         }
@@ -156102,7 +156220,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    tZe.runtime = je, tZe.typeName = "aiserver.v1.UpdateBackgroundComposerEnvironmentResponse", tZe.fields = je.util.newFieldList(() => [{
+    oZe.runtime = je, oZe.typeName = "aiserver.v1.UpdateBackgroundComposerEnvironmentResponse", oZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "applied",
         kind: "scalar",
@@ -156113,8 +156231,8 @@
         kind: "scalar",
         T: 13
     }]);
-    let nZe = tZe;
-    const rZe = class e extends q {
+    let lZe = oZe;
+    const uZe = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.excludeBeforeAfterDiffs = !1, this.committedOnly = !1, je.util.initPartial(e, this)
         }
@@ -156131,7 +156249,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    rZe.runtime = je, rZe.typeName = "aiserver.v1.GetOptimizedDiffDetailsRequest", rZe.fields = je.util.newFieldList(() => [{
+    uZe.runtime = je, uZe.typeName = "aiserver.v1.GetOptimizedDiffDetailsRequest", uZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -156159,8 +156277,8 @@
         T: 9,
         opt: !0
     }]);
-    let sZe = rZe;
-    const iZe = class e extends q {
+    let mZe = uZe;
+    const cZe = class e extends q {
         constructor(e) {
             super(), this.submoduleDiffs = [], je.util.initPartial(e, this)
         }
@@ -156177,7 +156295,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    iZe.runtime = je, iZe.typeName = "aiserver.v1.GetOptimizedDiffDetailsResponse", iZe.fields = je.util.newFieldList(() => [{
+    cZe.runtime = je, cZe.typeName = "aiserver.v1.GetOptimizedDiffDetailsResponse", cZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "diff",
         kind: "message",
@@ -156186,11 +156304,11 @@
         no: 2,
         name: "submodule_diffs",
         kind: "message",
-        T: lZe,
+        T: pZe,
         repeated: !0
     }]);
-    let aZe = iZe;
-    const oZe = class e extends q {
+    let dZe = cZe;
+    const fZe = class e extends q {
         constructor(e) {
             super(), this.relativePath = "", this.errored = !1, je.util.initPartial(e, this)
         }
@@ -156207,7 +156325,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    oZe.runtime = je, oZe.typeName = "aiserver.v1.GetOptimizedDiffDetailsResponse.SubmoduleDiff", oZe.fields = je.util.newFieldList(() => [{
+    fZe.runtime = je, fZe.typeName = "aiserver.v1.GetOptimizedDiffDetailsResponse.SubmoduleDiff", fZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "relative_path",
         kind: "scalar",
@@ -156223,8 +156341,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let lZe = oZe;
-    const uZe = class e extends q {
+    let pZe = fZe;
+    const TZe = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -156241,14 +156359,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    uZe.runtime = je, uZe.typeName = "aiserver.v1.NotifyBackgroundComposerShownRequest", uZe.fields = je.util.newFieldList(() => [{
+    TZe.runtime = je, TZe.typeName = "aiserver.v1.NotifyBackgroundComposerShownRequest", TZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let mZe = uZe;
-    const cZe = class e extends q {
+    let _Ze = TZe;
+    const gZe = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -156265,9 +156383,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    cZe.runtime = je, cZe.typeName = "aiserver.v1.NotifyBackgroundComposerShownResponse", cZe.fields = je.util.newFieldList(() => []);
-    let dZe = cZe;
-    const fZe = class e extends q {
+    gZe.runtime = je, gZe.typeName = "aiserver.v1.NotifyBackgroundComposerShownResponse", gZe.fields = je.util.newFieldList(() => []);
+    let wZe = gZe;
+    const hZe = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.newName = "", je.util.initPartial(e, this)
         }
@@ -156284,7 +156402,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    fZe.runtime = je, fZe.typeName = "aiserver.v1.RenameBackgroundComposerRequest", fZe.fields = je.util.newFieldList(() => [{
+    hZe.runtime = je, hZe.typeName = "aiserver.v1.RenameBackgroundComposerRequest", hZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -156295,8 +156413,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let pZe = fZe;
-    const TZe = class e extends q {
+    let yZe = hZe;
+    const kZe = class e extends q {
         constructor(e) {
             super(), this.name = "", je.util.initPartial(e, this)
         }
@@ -156313,14 +156431,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    TZe.runtime = je, TZe.typeName = "aiserver.v1.RenameBackgroundComposerResponse", TZe.fields = je.util.newFieldList(() => [{
+    kZe.runtime = je, kZe.typeName = "aiserver.v1.RenameBackgroundComposerResponse", kZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
         T: 9
     }]);
-    let _Ze = TZe;
-    const gZe = class e extends q {
+    let SZe = kZe;
+    const JZe = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -156337,14 +156455,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    gZe.runtime = je, gZe.typeName = "aiserver.v1.RefreshGithubAccessTokenInBackgroundComposerRequest", gZe.fields = je.util.newFieldList(() => [{
+    JZe.runtime = je, JZe.typeName = "aiserver.v1.RefreshGithubAccessTokenInBackgroundComposerRequest", JZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let wZe = gZe;
-    const hZe = class e extends q {
+    let EZe = JZe;
+    const vZe = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -156361,9 +156479,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    hZe.runtime = je, hZe.typeName = "aiserver.v1.RefreshGithubAccessTokenInBackgroundComposerResponse", hZe.fields = je.util.newFieldList(() => []);
-    let yZe = hZe;
-    const kZe = class e extends q {
+    vZe.runtime = je, vZe.typeName = "aiserver.v1.RefreshGithubAccessTokenInBackgroundComposerResponse", vZe.fields = je.util.newFieldList(() => []);
+    let NZe = vZe;
+    const BZe = class e extends q {
         constructor(e) {
             super(), this.text = "", this.richText = "", je.util.initPartial(e, this)
         }
@@ -156380,7 +156498,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    kZe.runtime = je, kZe.typeName = "aiserver.v1.BackgroundComposerFollowupContent", kZe.fields = je.util.newFieldList(() => [{
+    BZe.runtime = je, BZe.typeName = "aiserver.v1.BackgroundComposerFollowupContent", BZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "text",
         kind: "scalar",
@@ -156391,7 +156509,7 @@
         kind: "scalar",
         T: 9
     }]);
-    const SZe = class e extends q {
+    const qZe = class e extends q {
         constructor(e) {
             super(), this.includeSecrets = !1, this.optimisticPrewarming = !1, je.util.initPartial(e, this)
         }
@@ -156408,11 +156526,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    SZe.runtime = je, SZe.typeName = "aiserver.v1.CreateBackgroundComposerPodRequest", SZe.fields = je.util.newFieldList(() => [{
+    qZe.runtime = je, qZe.typeName = "aiserver.v1.CreateBackgroundComposerPodRequest", qZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "devcontainer_starting_point",
         kind: "message",
-        T: V0e
+        T: X0e
     }, {
         no: 2,
         name: "include_secrets",
@@ -156442,8 +156560,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let JZe = SZe;
-    const EZe = class e extends q {
+    let PZe = qZe;
+    const IZe = class e extends q {
         constructor(e) {
             super(), this.podId = "", this.workspaceRootPath = "", je.util.initPartial(e, this)
         }
@@ -156460,7 +156578,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    EZe.runtime = je, EZe.typeName = "aiserver.v1.CreateBackgroundComposerPodResponse", EZe.fields = je.util.newFieldList(() => [{
+    IZe.runtime = je, IZe.typeName = "aiserver.v1.CreateBackgroundComposerPodResponse", IZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pod_id",
         kind: "scalar",
@@ -156470,79 +156588,6 @@
         name: "workspace_root_path",
         kind: "scalar",
         T: 9
-    }]);
-    let vZe = EZe;
-    const NZe = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    NZe.runtime = je, NZe.typeName = "aiserver.v1.PreWarmPodRequest", NZe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "start_request",
-        kind: "message",
-        T: X0e
-    }]);
-    let BZe = NZe;
-    const qZe = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    qZe.runtime = je, qZe.typeName = "aiserver.v1.PreWarmPodResponse", qZe.fields = je.util.newFieldList(() => []);
-    let PZe = qZe;
-    const IZe = class e extends q {
-        constructor(e) {
-            super(), this.podId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    IZe.runtime = je, IZe.typeName = "aiserver.v1.AttachBackgroundComposerPodRequest", IZe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "pod_id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "last_event_id",
-        kind: "scalar",
-        T: 9,
-        opt: !0
     }]);
     let RZe = IZe;
     const LZe = class e extends q {
@@ -156562,158 +156607,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    LZe.runtime = je, LZe.typeName = "aiserver.v1.AttachBackgroundComposerPodResponse", LZe.fields = je.util.newFieldList(() => [{
+    LZe.runtime = je, LZe.typeName = "aiserver.v1.PreWarmPodRequest", LZe.fields = je.util.newFieldList(() => [{
         no: 1,
-        name: "event",
+        name: "start_request",
         kind: "message",
-        T: AZe
-    }, {
-        no: 2,
-        name: "updated_status",
-        kind: "message",
-        T: Fm
+        T: n9e
     }]);
     let FZe = LZe;
     const CZe = class e extends q {
-        constructor(e) {
-            super(), this.eventId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    CZe.runtime = je, CZe.typeName = "aiserver.v1.AttachBackgroundComposerPodResponse.Event", CZe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "event_id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "event",
-        kind: "message",
-        T: Lo
-    }]);
-    let AZe = CZe;
-    const xZe = class e extends q {
-        constructor(e) {
-            super(), this.podId = "", this.visibility = 0, je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    xZe.runtime = je, xZe.typeName = "aiserver.v1.CreateBackgroundComposerPodSnapshotRequest", xZe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "pod_id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "visibility",
-        kind: "enum",
-        T: je.getEnumType(GZe)
-    }, {
-        no: 3,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }]);
-    let OZe = xZe;
-    const DZe = class e extends q {
-        constructor(e) {
-            super(), this.snapshotId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    DZe.runtime = je, DZe.typeName = "aiserver.v1.CreateBackgroundComposerPodSnapshotResponse", DZe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "snapshot_id",
-        kind: "scalar",
-        T: 9
-    }]);
-    let bZe = DZe;
-    const UZe = class e extends q {
-        constructor(e) {
-            super(), this.snapshotId = "", this.visibility = 0, this.repoUrl = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    UZe.runtime = je, UZe.typeName = "aiserver.v1.ChangeBackgroundComposerSnapshotVisibilityRequest", UZe.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "snapshot_id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "visibility",
-        kind: "enum",
-        T: je.getEnumType(GZe)
-    }, {
-        no: 3,
-        name: "repo_url",
-        kind: "scalar",
-        T: 9
-    }]);
-    let MZe = UZe;
-    var GZe = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER = 1] = "USER", e[e.REPO_READ_WRITE = 2] = "REPO_READ_WRITE", e[e.PUBLIC = 4] = "PUBLIC", e[e.TEAM = 5] = "TEAM", e))(GZe || {});
-    je.util.setEnumType(GZe, "aiserver.v1.ChangeBackgroundComposerSnapshotVisibilityRequest.Visibility", [{
-        no: 0,
-        name: "VISIBILITY_UNSPECIFIED"
-    }, {
-        no: 1,
-        name: "VISIBILITY_USER"
-    }, {
-        no: 2,
-        name: "VISIBILITY_REPO_READ_WRITE"
-    }, {
-        no: 4,
-        name: "VISIBILITY_PUBLIC"
-    }, {
-        no: 5,
-        name: "VISIBILITY_TEAM"
-    }]);
-    const YZe = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -156730,9 +156631,132 @@
             return je.util.equals(e, t, n)
         }
     };
-    YZe.runtime = je, YZe.typeName = "aiserver.v1.ChangeBackgroundComposerSnapshotVisibilityResponse", YZe.fields = je.util.newFieldList(() => []);
-    let VZe = YZe;
-    const HZe = class e extends q {
+    CZe.runtime = je, CZe.typeName = "aiserver.v1.PreWarmPodResponse", CZe.fields = je.util.newFieldList(() => []);
+    let AZe = CZe;
+    const xZe = class e extends q {
+        constructor(e) {
+            super(), this.podId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    xZe.runtime = je, xZe.typeName = "aiserver.v1.AttachBackgroundComposerPodRequest", xZe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "pod_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "last_event_id",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let OZe = xZe;
+    const DZe = class e extends q {
+        constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    DZe.runtime = je, DZe.typeName = "aiserver.v1.AttachBackgroundComposerPodResponse", DZe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "event",
+        kind: "message",
+        T: MZe
+    }, {
+        no: 2,
+        name: "updated_status",
+        kind: "message",
+        T: Fm
+    }]);
+    let bZe = DZe;
+    const UZe = class e extends q {
+        constructor(e) {
+            super(), this.eventId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    UZe.runtime = je, UZe.typeName = "aiserver.v1.AttachBackgroundComposerPodResponse.Event", UZe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "event_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "event",
+        kind: "message",
+        T: Lo
+    }]);
+    let MZe = UZe;
+    const GZe = class e extends q {
+        constructor(e) {
+            super(), this.podId = "", this.visibility = 0, je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    GZe.runtime = je, GZe.typeName = "aiserver.v1.CreateBackgroundComposerPodSnapshotRequest", GZe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "pod_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "visibility",
+        kind: "enum",
+        T: je.getEnumType(zZe)
+    }, {
+        no: 3,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let YZe = GZe;
+    const VZe = class e extends q {
         constructor(e) {
             super(), this.snapshotId = "", je.util.initPartial(e, this)
         }
@@ -156749,14 +156773,108 @@
             return je.util.equals(e, t, n)
         }
     };
-    HZe.runtime = je, HZe.typeName = "aiserver.v1.GetBackgroundComposerSnapshotInfoRequest", HZe.fields = je.util.newFieldList(() => [{
+    VZe.runtime = je, VZe.typeName = "aiserver.v1.CreateBackgroundComposerPodSnapshotResponse", VZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "snapshot_id",
         kind: "scalar",
         T: 9
     }]);
-    let KZe = HZe;
-    const WZe = class e extends q {
+    let HZe = VZe;
+    const KZe = class e extends q {
+        constructor(e) {
+            super(), this.snapshotId = "", this.visibility = 0, this.repoUrl = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    KZe.runtime = je, KZe.typeName = "aiserver.v1.ChangeBackgroundComposerSnapshotVisibilityRequest", KZe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "snapshot_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "visibility",
+        kind: "enum",
+        T: je.getEnumType(zZe)
+    }, {
+        no: 3,
+        name: "repo_url",
+        kind: "scalar",
+        T: 9
+    }]);
+    let WZe = KZe;
+    var zZe = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER = 1] = "USER", e[e.REPO_READ_WRITE = 2] = "REPO_READ_WRITE", e[e.PUBLIC = 4] = "PUBLIC", e[e.TEAM = 5] = "TEAM", e))(zZe || {});
+    je.util.setEnumType(zZe, "aiserver.v1.ChangeBackgroundComposerSnapshotVisibilityRequest.Visibility", [{
+        no: 0,
+        name: "VISIBILITY_UNSPECIFIED"
+    }, {
+        no: 1,
+        name: "VISIBILITY_USER"
+    }, {
+        no: 2,
+        name: "VISIBILITY_REPO_READ_WRITE"
+    }, {
+        no: 4,
+        name: "VISIBILITY_PUBLIC"
+    }, {
+        no: 5,
+        name: "VISIBILITY_TEAM"
+    }]);
+    const jZe = class e extends q {
+        constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    jZe.runtime = je, jZe.typeName = "aiserver.v1.ChangeBackgroundComposerSnapshotVisibilityResponse", jZe.fields = je.util.newFieldList(() => []);
+    let XZe = jZe;
+    const QZe = class e extends q {
+        constructor(e) {
+            super(), this.snapshotId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    QZe.runtime = je, QZe.typeName = "aiserver.v1.GetBackgroundComposerSnapshotInfoRequest", QZe.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "snapshot_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let $Ze = QZe;
+    const ZZe = class e extends q {
         constructor(e) {
             super(), this.snapshotId = "", this.visibility = 0, this.repoUrl = "", this.createdAtMs = 0, je.util.initPartial(e, this)
         }
@@ -156773,7 +156891,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    WZe.runtime = je, WZe.typeName = "aiserver.v1.GetBackgroundComposerSnapshotInfoResponse", WZe.fields = je.util.newFieldList(() => [{
+    ZZe.runtime = je, ZZe.typeName = "aiserver.v1.GetBackgroundComposerSnapshotInfoResponse", ZZe.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "snapshot_id",
         kind: "scalar",
@@ -156782,7 +156900,7 @@
         no: 2,
         name: "visibility",
         kind: "enum",
-        T: je.getEnumType(GZe)
+        T: je.getEnumType(zZe)
     }, {
         no: 3,
         name: "repo_url",
@@ -156794,8 +156912,8 @@
         kind: "scalar",
         T: 1
     }]);
-    let zZe = WZe;
-    const jZe = class e extends q {
+    let e1e = ZZe;
+    const t1e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -156812,7 +156930,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    jZe.runtime = je, jZe.typeName = "aiserver.v1.ListBackgroundComposerSnapshotsByBcIdRequest", jZe.fields = je.util.newFieldList(() => [{
+    t1e.runtime = je, t1e.typeName = "aiserver.v1.ListBackgroundComposerSnapshotsByBcIdRequest", t1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -156830,8 +156948,8 @@
         T: 13,
         opt: !0
     }]);
-    let XZe = jZe;
-    const QZe = class e extends q {
+    let n1e = t1e;
+    const r1e = class e extends q {
         constructor(e) {
             super(), this.snapshotId = "", this.visibility = 0, this.createdAtMs = 0, je.util.initPartial(e, this)
         }
@@ -156848,7 +156966,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    QZe.runtime = je, QZe.typeName = "aiserver.v1.BackgroundComposerSnapshotSummary", QZe.fields = je.util.newFieldList(() => [{
+    r1e.runtime = je, r1e.typeName = "aiserver.v1.BackgroundComposerSnapshotSummary", r1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "snapshot_id",
         kind: "scalar",
@@ -156857,15 +156975,15 @@
         no: 2,
         name: "visibility",
         kind: "enum",
-        T: je.getEnumType(GZe)
+        T: je.getEnumType(zZe)
     }, {
         no: 3,
         name: "created_at_ms",
         kind: "scalar",
         T: 1
     }]);
-    let $Ze = QZe;
-    const ZZe = class e extends q {
+    let s1e = r1e;
+    const i1e = class e extends q {
         constructor(e) {
             super(), this.snapshots = [], je.util.initPartial(e, this)
         }
@@ -156882,15 +157000,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    ZZe.runtime = je, ZZe.typeName = "aiserver.v1.ListBackgroundComposerSnapshotsByBcIdResponse", ZZe.fields = je.util.newFieldList(() => [{
+    i1e.runtime = je, i1e.typeName = "aiserver.v1.ListBackgroundComposerSnapshotsByBcIdResponse", i1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "snapshots",
         kind: "message",
-        T: $Ze,
+        T: s1e,
         repeated: !0
     }]);
-    let e1e = ZZe;
-    const t1e = class e extends q {
+    let a1e = i1e;
+    const o1e = class e extends q {
         constructor(e) {
             super(), this.bcIds = [], je.util.initPartial(e, this)
         }
@@ -156907,7 +157025,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    t1e.runtime = je, t1e.typeName = "aiserver.v1.ListBackgroundComposerSnapshotStatusesByBcIdsRequest", t1e.fields = je.util.newFieldList(() => [{
+    o1e.runtime = je, o1e.typeName = "aiserver.v1.ListBackgroundComposerSnapshotStatusesByBcIdsRequest", o1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_ids",
         kind: "scalar",
@@ -156920,8 +157038,8 @@
         T: 8,
         opt: !0
     }]);
-    let n1e = t1e;
-    const r1e = class e extends q {
+    let l1e = o1e;
+    const u1e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -156938,7 +157056,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    r1e.runtime = je, r1e.typeName = "aiserver.v1.BackgroundComposerSnapshotStatusByBcId", r1e.fields = je.util.newFieldList(() => [{
+    u1e.runtime = je, u1e.typeName = "aiserver.v1.BackgroundComposerSnapshotStatusByBcId", u1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -156953,7 +157071,7 @@
         no: 3,
         name: "visibility",
         kind: "enum",
-        T: je.getEnumType(GZe),
+        T: je.getEnumType(zZe),
         opt: !0
     }, {
         no: 4,
@@ -156962,8 +157080,8 @@
         T: 1,
         opt: !0
     }]);
-    let s1e = r1e;
-    const i1e = class e extends q {
+    let m1e = u1e;
+    const c1e = class e extends q {
         constructor(e) {
             super(), this.snapshotStatuses = [], je.util.initPartial(e, this)
         }
@@ -156980,99 +157098,40 @@
             return je.util.equals(e, t, n)
         }
     };
-    i1e.runtime = je, i1e.typeName = "aiserver.v1.ListBackgroundComposerSnapshotStatusesByBcIdsResponse", i1e.fields = je.util.newFieldList(() => [{
+    c1e.runtime = je, c1e.typeName = "aiserver.v1.ListBackgroundComposerSnapshotStatusesByBcIdsResponse", c1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "snapshot_statuses",
         kind: "message",
-        T: s1e,
+        T: m1e,
         repeated: !0
-    }]);
-    let a1e = i1e;
-    const o1e = class e extends q {
-        constructor(e) {
-            super(), this.snapshotId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    o1e.runtime = je, o1e.typeName = "aiserver.v1.GetBackgroundComposerSnapshotStateRequest", o1e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "snapshot_id",
-        kind: "scalar",
-        T: 9
-    }]);
-    let l1e = o1e;
-    const u1e = class e extends q {
-        constructor(e) {
-            super(), this.snapshotId = "", this.state = oc.UNSPECIFIED, je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    u1e.runtime = je, u1e.typeName = "aiserver.v1.GetBackgroundComposerSnapshotStateResponse", u1e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "snapshot_id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "state",
-        kind: "enum",
-        T: je.getEnumType(oc)
-    }, {
-        no: 3,
-        name: "error_message",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }]);
-    let m1e = u1e;
-    const c1e = class e extends q {
-        constructor(e) {
-            super(), this.snapshotId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    c1e.runtime = je, c1e.typeName = "aiserver.v1.WatchBackgroundComposerSnapshotStateRequest", c1e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "snapshot_id",
-        kind: "scalar",
-        T: 9
     }]);
     let d1e = c1e;
     const f1e = class e extends q {
         constructor(e) {
+            super(), this.snapshotId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    f1e.runtime = je, f1e.typeName = "aiserver.v1.GetBackgroundComposerSnapshotStateRequest", f1e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "snapshot_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let p1e = f1e;
+    const T1e = class e extends q {
+        constructor(e) {
             super(), this.snapshotId = "", this.state = oc.UNSPECIFIED, je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -157088,7 +157147,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    f1e.runtime = je, f1e.typeName = "aiserver.v1.WatchBackgroundComposerSnapshotStateResponse", f1e.fields = je.util.newFieldList(() => [{
+    T1e.runtime = je, T1e.typeName = "aiserver.v1.GetBackgroundComposerSnapshotStateResponse", T1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "snapshot_id",
         kind: "scalar",
@@ -157105,8 +157164,67 @@
         T: 9,
         opt: !0
     }]);
-    let p1e = f1e;
-    const T1e = class e extends q {
+    let _1e = T1e;
+    const g1e = class e extends q {
+        constructor(e) {
+            super(), this.snapshotId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    g1e.runtime = je, g1e.typeName = "aiserver.v1.WatchBackgroundComposerSnapshotStateRequest", g1e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "snapshot_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let w1e = g1e;
+    const h1e = class e extends q {
+        constructor(e) {
+            super(), this.snapshotId = "", this.state = oc.UNSPECIFIED, je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    h1e.runtime = je, h1e.typeName = "aiserver.v1.WatchBackgroundComposerSnapshotStateResponse", h1e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "snapshot_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "state",
+        kind: "enum",
+        T: je.getEnumType(oc)
+    }, {
+        no: 3,
+        name: "error_message",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let y1e = h1e;
+    const k1e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -157123,7 +157241,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    T1e.runtime = je, T1e.typeName = "aiserver.v1.GetBackgroundComposerChangesHashRequest", T1e.fields = je.util.newFieldList(() => [{
+    k1e.runtime = je, k1e.typeName = "aiserver.v1.GetBackgroundComposerChangesHashRequest", k1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -157135,8 +157253,8 @@
         T: 9,
         opt: !0
     }]);
-    let _1e = T1e;
-    const g1e = class e extends q {
+    let S1e = k1e;
+    const J1e = class e extends q {
         constructor(e) {
             super(), this.hash = "", je.util.initPartial(e, this)
         }
@@ -157153,14 +157271,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    g1e.runtime = je, g1e.typeName = "aiserver.v1.GetBackgroundComposerChangesHashResponse", g1e.fields = je.util.newFieldList(() => [{
+    J1e.runtime = je, J1e.typeName = "aiserver.v1.GetBackgroundComposerChangesHashResponse", J1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "hash",
         kind: "scalar",
         T: 9
     }]);
-    let w1e = g1e;
-    const h1e = class e extends q {
+    let E1e = J1e;
+    const v1e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -157177,7 +157295,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    h1e.runtime = je, h1e.typeName = "aiserver.v1.GetBackgroundComposerDiffDetailsRequest", h1e.fields = je.util.newFieldList(() => [{
+    v1e.runtime = je, v1e.typeName = "aiserver.v1.GetBackgroundComposerDiffDetailsRequest", v1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -157195,8 +157313,8 @@
         T: 9,
         opt: !0
     }]);
-    let y1e = h1e;
-    const k1e = class e extends q {
+    let N1e = v1e;
+    const B1e = class e extends q {
         constructor(e) {
             super(), this.path = "", this.originalContent = "", this.modifiedContent = "", this.fullPath = "", this.baseRef = "", je.util.initPartial(e, this)
         }
@@ -157213,7 +157331,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    k1e.runtime = je, k1e.typeName = "aiserver.v1.BackgroundComposerFullDiff", k1e.fields = je.util.newFieldList(() => [{
+    B1e.runtime = je, B1e.typeName = "aiserver.v1.BackgroundComposerFullDiff", B1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "path",
         kind: "scalar",
@@ -157250,8 +157368,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let S1e = k1e;
-    const J1e = class e extends q {
+    let q1e = B1e;
+    const P1e = class e extends q {
         constructor(e) {
             super(), this.branchName = "", this.baseBranch = "", this.diffs = [], this.gitDiffs = [], je.util.initPartial(e, this)
         }
@@ -157268,7 +157386,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    J1e.runtime = je, J1e.typeName = "aiserver.v1.GetBackgroundComposerDiffDetailsResponse", J1e.fields = je.util.newFieldList(() => [{
+    P1e.runtime = je, P1e.typeName = "aiserver.v1.GetBackgroundComposerDiffDetailsResponse", P1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "branch_name",
         kind: "scalar",
@@ -157282,7 +157400,7 @@
         no: 3,
         name: "diffs",
         kind: "message",
-        T: S1e,
+        T: q1e,
         repeated: !0
     }, {
         no: 4,
@@ -157291,8 +157409,8 @@
         T: Hr,
         repeated: !0
     }]);
-    let E1e = J1e;
-    const v1e = class e extends q {
+    let I1e = P1e;
+    const R1e = class e extends q {
         constructor(e) {
             super(), this.id = "", this.ownerType = 0, je.util.initPartial(e, this)
         }
@@ -157309,7 +157427,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    v1e.runtime = je, v1e.typeName = "aiserver.v1.OwnerIdentifier", v1e.fields = je.util.newFieldList(() => [{
+    R1e.runtime = je, R1e.typeName = "aiserver.v1.OwnerIdentifier", R1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -157318,10 +157436,10 @@
         no: 2,
         name: "owner_type",
         kind: "enum",
-        T: je.getEnumType(k$e)
+        T: je.getEnumType(B$e)
     }]);
-    let N1e = v1e;
-    const B1e = class e extends q {
+    let L1e = R1e;
+    const F1e = class e extends q {
         constructor(e) {
             super(), this.owners = [], je.util.initPartial(e, this)
         }
@@ -157338,15 +157456,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    B1e.runtime = je, B1e.typeName = "aiserver.v1.OwnerFilter", B1e.fields = je.util.newFieldList(() => [{
+    F1e.runtime = je, F1e.typeName = "aiserver.v1.OwnerFilter", F1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "owners",
         kind: "message",
-        T: N1e,
+        T: L1e,
         repeated: !0
     }]);
-    let q1e = B1e;
-    const P1e = class e extends q {
+    let C1e = F1e;
+    const A1e = class e extends q {
         constructor(e) {
             super(), this.includeTeamWide = !1, this.includeDiff = !1, this.bcIds = [], je.util.initPartial(e, this)
         }
@@ -157363,7 +157481,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    P1e.runtime = je, P1e.typeName = "aiserver.v1.ListDetailedBackgroundComposersRequest", P1e.fields = je.util.newFieldList(() => [{
+    A1e.runtime = je, A1e.typeName = "aiserver.v1.ListDetailedBackgroundComposersRequest", A1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "include_team_wide",
         kind: "scalar",
@@ -157401,7 +157519,7 @@
         no: 7,
         name: "owner_filter",
         kind: "message",
-        T: q1e,
+        T: C1e,
         opt: !0
     }, {
         no: 8,
@@ -157422,8 +157540,8 @@
         T: 8,
         opt: !0
     }]);
-    let I1e = P1e;
-    const R1e = class e extends q {
+    let x1e = A1e;
+    const O1e = class e extends q {
         constructor(e) {
             super(), this.composers = [], this.participants = [], je.util.initPartial(e, this)
         }
@@ -157440,21 +157558,21 @@
             return je.util.equals(e, t, n)
         }
     };
-    R1e.runtime = je, R1e.typeName = "aiserver.v1.ListDetailedBackgroundComposersResponse", R1e.fields = je.util.newFieldList(() => [{
+    O1e.runtime = je, O1e.typeName = "aiserver.v1.ListDetailedBackgroundComposersResponse", O1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "composers",
         kind: "message",
-        T: v3e,
+        T: R3e,
         repeated: !0
     }, {
         no: 2,
         name: "participants",
         kind: "message",
-        T: w0e,
+        T: E0e,
         repeated: !0
     }]);
-    let L1e = R1e;
-    const F1e = class e extends q {
+    let D1e = O1e;
+    const b1e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.source = 0, je.util.initPartial(e, this)
         }
@@ -157471,7 +157589,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    F1e.runtime = je, F1e.typeName = "aiserver.v1.PauseBackgroundComposerRequest", F1e.fields = je.util.newFieldList(() => [{
+    b1e.runtime = je, b1e.typeName = "aiserver.v1.PauseBackgroundComposerRequest", b1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -157480,7 +157598,7 @@
         no: 3,
         name: "source",
         kind: "enum",
-        T: je.getEnumType(y$e)
+        T: je.getEnumType(N$e)
     }, {
         no: 4,
         name: "run_id",
@@ -157488,8 +157606,8 @@
         T: 9,
         opt: !0
     }]);
-    let C1e = F1e;
-    const A1e = class e extends q {
+    let U1e = b1e;
+    const M1e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -157506,9 +157624,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    A1e.runtime = je, A1e.typeName = "aiserver.v1.PauseBackgroundComposerResponse", A1e.fields = je.util.newFieldList(() => []);
-    let x1e = A1e;
-    const O1e = class e extends q {
+    M1e.runtime = je, M1e.typeName = "aiserver.v1.PauseBackgroundComposerResponse", M1e.fields = je.util.newFieldList(() => []);
+    let G1e = M1e;
+    const Y1e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.unarchive = !1, this.onlyNotifyRunner = !1, this.source = 0, je.util.initPartial(e, this)
         }
@@ -157525,7 +157643,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    O1e.runtime = je, O1e.typeName = "aiserver.v1.ArchiveBackgroundComposerRequest", O1e.fields = je.util.newFieldList(() => [{
+    Y1e.runtime = je, Y1e.typeName = "aiserver.v1.ArchiveBackgroundComposerRequest", Y1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -157544,7 +157662,7 @@
         no: 4,
         name: "source",
         kind: "enum",
-        T: je.getEnumType(y$e)
+        T: je.getEnumType(N$e)
     }, {
         no: 5,
         name: "close_pull_request",
@@ -157552,8 +157670,8 @@
         T: 8,
         opt: !0
     }]);
-    let D1e = O1e;
-    const b1e = class e extends q {
+    let V1e = Y1e;
+    const H1e = class e extends q {
         constructor(e) {
             super(), this.closedPullRequest = !1, je.util.initPartial(e, this)
         }
@@ -157570,82 +157688,39 @@
             return je.util.equals(e, t, n)
         }
     };
-    b1e.runtime = je, b1e.typeName = "aiserver.v1.ArchiveBackgroundComposerResponse", b1e.fields = je.util.newFieldList(() => [{
+    H1e.runtime = je, H1e.typeName = "aiserver.v1.ArchiveBackgroundComposerResponse", H1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "closed_pull_request",
         kind: "scalar",
         T: 8
     }]);
-    let U1e = b1e;
-    const M1e = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    M1e.runtime = je, M1e.typeName = "aiserver.v1.DeleteBackgroundComposerRequest", M1e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9
-    }]);
-    let G1e = M1e;
-    const Y1e = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    Y1e.runtime = je, Y1e.typeName = "aiserver.v1.DeleteBackgroundComposerResponse", Y1e.fields = je.util.newFieldList(() => []);
-    let V1e = Y1e;
-    const H1e = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    H1e.runtime = je, H1e.typeName = "aiserver.v1.ResumeBackgroundComposerRequest", H1e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9
-    }]);
     let K1e = H1e;
     const W1e = class e extends q {
         constructor(e) {
+            super(), this.bcId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    W1e.runtime = je, W1e.typeName = "aiserver.v1.DeleteBackgroundComposerRequest", W1e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let z1e = W1e;
+    const j1e = class e extends q {
+        constructor(e) {
             super(), je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -157661,11 +157736,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    W1e.runtime = je, W1e.typeName = "aiserver.v1.ResumeBackgroundComposerResponse", W1e.fields = je.util.newFieldList(() => []);
-    let z1e = W1e;
-    const j1e = class e extends q {
+    j1e.runtime = je, j1e.typeName = "aiserver.v1.DeleteBackgroundComposerResponse", j1e.fields = je.util.newFieldList(() => []);
+    let X1e = j1e;
+    const Q1e = class e extends q {
         constructor(e) {
-            super(), this.bcId = "", this.commit = "", je.util.initPartial(e, this)
+            super(), this.bcId = "", je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -157680,67 +157755,16 @@
             return je.util.equals(e, t, n)
         }
     };
-    j1e.runtime = je, j1e.typeName = "aiserver.v1.GetCursorServerUrlRequest", j1e.fields = je.util.newFieldList(() => [{
+    Q1e.runtime = je, Q1e.typeName = "aiserver.v1.ResumeBackgroundComposerRequest", Q1e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
-    }, {
-        no: 2,
-        name: "commit",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 3,
-        name: "connection_token",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }]);
-    let X1e = j1e;
-    const Q1e = class e extends q {
-        constructor(e) {
-            super(), this.host = "", this.port = 0, this.connectionToken = "", this.headers = [], je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    Q1e.runtime = je, Q1e.typeName = "aiserver.v1.GetCursorServerUrlResponse", Q1e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "host",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "port",
-        kind: "scalar",
-        T: 5
-    }, {
-        no: 3,
-        name: "connection_token",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 4,
-        name: "headers",
-        kind: "message",
-        T: e0e,
-        repeated: !0
     }]);
     let $1e = Q1e;
     const Z1e = class e extends q {
         constructor(e) {
-            super(), this.key = "", this.value = "", je.util.initPartial(e, this)
+            super(), je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -157755,17 +157779,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Z1e.runtime = je, Z1e.typeName = "aiserver.v1.GetCursorServerUrlResponse.Header", Z1e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "key",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "value",
-        kind: "scalar",
-        T: 9
-    }]);
+    Z1e.runtime = je, Z1e.typeName = "aiserver.v1.ResumeBackgroundComposerResponse", Z1e.fields = je.util.newFieldList(() => []);
     let e0e = Z1e;
     const t0e = class e extends q {
         constructor(e) {
@@ -157784,7 +157798,111 @@
             return je.util.equals(e, t, n)
         }
     };
-    t0e.runtime = je, t0e.typeName = "aiserver.v1.WarmCursorServerDownloadRequest", t0e.fields = je.util.newFieldList(() => [{
+    t0e.runtime = je, t0e.typeName = "aiserver.v1.GetCursorServerUrlRequest", t0e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "commit",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 3,
+        name: "connection_token",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let n0e = t0e;
+    const r0e = class e extends q {
+        constructor(e) {
+            super(), this.host = "", this.port = 0, this.connectionToken = "", this.headers = [], je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    r0e.runtime = je, r0e.typeName = "aiserver.v1.GetCursorServerUrlResponse", r0e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "host",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "port",
+        kind: "scalar",
+        T: 5
+    }, {
+        no: 3,
+        name: "connection_token",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 4,
+        name: "headers",
+        kind: "message",
+        T: a0e,
+        repeated: !0
+    }]);
+    let s0e = r0e;
+    const i0e = class e extends q {
+        constructor(e) {
+            super(), this.key = "", this.value = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    i0e.runtime = je, i0e.typeName = "aiserver.v1.GetCursorServerUrlResponse.Header", i0e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "key",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "value",
+        kind: "scalar",
+        T: 9
+    }]);
+    let a0e = i0e;
+    const o0e = class e extends q {
+        constructor(e) {
+            super(), this.bcId = "", this.commit = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    o0e.runtime = je, o0e.typeName = "aiserver.v1.WarmCursorServerDownloadRequest", o0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -157795,8 +157913,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let n0e = t0e;
-    const r0e = class e extends q {
+    let l0e = o0e;
+    const u0e = class e extends q {
         constructor(e) {
             super(), this.alreadyDownloaded = !1, je.util.initPartial(e, this)
         }
@@ -157813,14 +157931,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    r0e.runtime = je, r0e.typeName = "aiserver.v1.WarmCursorServerDownloadResponse", r0e.fields = je.util.newFieldList(() => [{
+    u0e.runtime = je, u0e.typeName = "aiserver.v1.WarmCursorServerDownloadResponse", u0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "already_downloaded",
         kind: "scalar",
         T: 8
     }]);
-    let s0e = r0e;
-    const i0e = class e extends q {
+    let m0e = u0e;
+    const c0e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -157837,7 +157955,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    i0e.runtime = je, i0e.typeName = "aiserver.v1.MakePRBackgroundComposerRequest", i0e.fields = je.util.newFieldList(() => [{
+    c0e.runtime = je, c0e.typeName = "aiserver.v1.MakePRBackgroundComposerRequest", c0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -157855,8 +157973,8 @@
         T: 9,
         opt: !0
     }]);
-    let a0e = i0e;
-    const o0e = class e extends q {
+    let d0e = c0e;
+    const f0e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", this.branchName = "", this.hasCommits = !1, je.util.initPartial(e, this)
         }
@@ -157873,7 +157991,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    o0e.runtime = je, o0e.typeName = "aiserver.v1.MakePRBackgroundComposerResponse", o0e.fields = je.util.newFieldList(() => [{
+    f0e.runtime = je, f0e.typeName = "aiserver.v1.MakePRBackgroundComposerResponse", f0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -157901,8 +158019,8 @@
         T: 9,
         opt: !0
     }]);
-    let l0e = o0e;
-    const u0e = class e extends q {
+    let p0e = f0e;
+    const T0e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.agentStateBlobId = new Uint8Array(0), je.util.initPartial(e, this)
         }
@@ -157919,7 +158037,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    u0e.runtime = je, u0e.typeName = "aiserver.v1.OpenPRBackgroundComposerRequest", u0e.fields = je.util.newFieldList(() => [{
+    T0e.runtime = je, T0e.typeName = "aiserver.v1.OpenPRBackgroundComposerRequest", T0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -157984,8 +158102,8 @@
         T: 9,
         opt: !0
     }]);
-    let m0e = u0e;
-    const c0e = class e extends q {
+    let _0e = T0e;
+    const g0e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", this.prNumber = 0, this.branchName = "", this.baseBranch = "", this.success = !1, je.util.initPartial(e, this)
         }
@@ -158002,7 +158120,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    c0e.runtime = je, c0e.typeName = "aiserver.v1.OpenPRBackgroundComposerResponse", c0e.fields = je.util.newFieldList(() => [{
+    g0e.runtime = je, g0e.typeName = "aiserver.v1.OpenPRBackgroundComposerResponse", g0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -158034,8 +158152,8 @@
         T: 9,
         opt: !0
     }]);
-    let d0e = c0e;
-    const f0e = class e extends q {
+    let w0e = g0e;
+    const h0e = class e extends q {
         constructor(e) {
             super(), this.n = 0, this.includeTeamWide = !1, this.additionalRepoUrls = [], this.includeStatus = !1, this.includeSources = [], this.includeHiddenSources = [], je.util.initPartial(e, this)
         }
@@ -158052,7 +158170,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    f0e.runtime = je, f0e.typeName = "aiserver.v1.ListBackgroundComposersRequest", f0e.fields = je.util.newFieldList(() => [{
+    h0e.runtime = je, h0e.typeName = "aiserver.v1.ListBackgroundComposersRequest", h0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "n",
         kind: "scalar",
@@ -158089,13 +158207,13 @@
         no: 7,
         name: "include_sources",
         kind: "enum",
-        T: je.getEnumType(y$e),
+        T: je.getEnumType(N$e),
         repeated: !0
     }, {
         no: 8,
         name: "owner_filter",
         kind: "message",
-        T: q1e,
+        T: C1e,
         opt: !0
     }, {
         no: 9,
@@ -158125,11 +158243,11 @@
         no: 13,
         name: "include_hidden_sources",
         kind: "enum",
-        T: je.getEnumType(y$e),
+        T: je.getEnumType(N$e),
         repeated: !0
     }]);
-    let p0e = f0e;
-    const T0e = class e extends q {
+    let y0e = h0e;
+    const k0e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.createdAtMs = 0, this.updatedAtMs = 0, this.workspaceRootPath = "", this.isOwnedByDifferentTeamMember = !1, this.name = "", this.branchName = "", this.hasStartedVm = !1, this.repoUrl = "", this.isArchived = !1, this.nId = "", this.isKilled = !1, this.status = 0, this.isUnread = !1, this.source = 0, this.githubIssueId = "", this.slackChannelId = "", this.slackMessageTimestamp = "", this.slackTeamId = "", this.linearIssueId = "", this.linearOrgId = "", this.promptGroupId = "", this.prUrl = "", this.isPrMerged = !1, this.triggeredPrincipalType = "", this.triggeredPrincipalId = "", this.visibility = "", this.ensembleStatus = 0, this.participantUserIds = [], this.repoUrls = [], je.util.initPartial(e, this)
         }
@@ -158146,7 +158264,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    T0e.runtime = je, T0e.typeName = "aiserver.v1.BackgroundComposer", T0e.fields = je.util.newFieldList(() => [{
+    k0e.runtime = je, k0e.typeName = "aiserver.v1.BackgroundComposer", k0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -158210,7 +158328,7 @@
         no: 12,
         name: "status",
         kind: "enum",
-        T: je.getEnumType(w$e)
+        T: je.getEnumType(E$e)
     }, {
         no: 13,
         name: "is_unread",
@@ -158220,7 +158338,7 @@
         no: 14,
         name: "source",
         kind: "enum",
-        T: je.getEnumType(y$e)
+        T: je.getEnumType(N$e)
     }, {
         no: 24,
         name: "github_issue_id",
@@ -158309,7 +158427,7 @@
         no: 32,
         name: "ensemble_status",
         kind: "enum",
-        T: je.getEnumType(E$e)
+        T: je.getEnumType(I$e)
     }, {
         no: 33,
         name: "workflow_id",
@@ -158374,13 +158492,13 @@
         no: 43,
         name: "pr_status",
         kind: "enum",
-        T: je.getEnumType(S$e),
+        T: je.getEnumType(q$e),
         opt: !0
     }, {
         no: 57,
         name: "external_source_metadata",
         kind: "message",
-        T: y0e,
+        T: N0e,
         opt: !0
     }, {
         no: 58,
@@ -158410,7 +158528,7 @@
         no: 61,
         name: "cloud_subagent_parent",
         kind: "message",
-        T: E0e,
+        T: I0e,
         opt: !0
     }, {
         no: 62,
@@ -158428,7 +158546,7 @@
         no: 64,
         name: "private_workspace_identifier",
         kind: "message",
-        T: S0e,
+        T: q0e,
         opt: !0
     }, {
         no: 65,
@@ -158437,8 +158555,8 @@
         T: 9,
         opt: !0
     }]);
-    let _0e = T0e;
-    const g0e = class e extends q {
+    let S0e = k0e;
+    const J0e = class e extends q {
         constructor(e) {
             super(), this.userId = 0, je.util.initPartial(e, this)
         }
@@ -158455,7 +158573,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    g0e.runtime = je, g0e.typeName = "aiserver.v1.BackgroundComposerParticipant", g0e.fields = je.util.newFieldList(() => [{
+    J0e.runtime = je, J0e.typeName = "aiserver.v1.BackgroundComposerParticipant", J0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "user_id",
         kind: "scalar",
@@ -158479,118 +158597,6 @@
         T: 9,
         opt: !0
     }]);
-    let w0e = g0e;
-    const h0e = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    h0e.runtime = je, h0e.typeName = "aiserver.v1.ExternalSourceMetadata", h0e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "slack",
-        kind: "message",
-        T: N0e,
-        opt: !0
-    }, {
-        no: 2,
-        name: "linear",
-        kind: "message",
-        T: q0e,
-        opt: !0
-    }, {
-        no: 3,
-        name: "github",
-        kind: "message",
-        T: I0e,
-        opt: !0
-    }, {
-        no: 4,
-        name: "gitlab",
-        kind: "message",
-        T: L0e,
-        opt: !0
-    }]);
-    let y0e = h0e;
-    const k0e = class e extends q {
-        constructor(e) {
-            super(), this.id = "", this.uri = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    k0e.runtime = je, k0e.typeName = "aiserver.v1.PrivateWorkspaceIdentifier", k0e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "uri",
-        kind: "scalar",
-        T: 9
-    }]);
-    let S0e = k0e;
-    const J0e = class e extends q {
-        constructor(e) {
-            super(), this.parentAgentId = "", this.parentToolCallId = "", this.parentAgentType = 0, je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    J0e.runtime = je, J0e.typeName = "aiserver.v1.CloudSubagentParentReference", J0e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "parent_agent_id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "parent_tool_call_id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 3,
-        name: "parent_agent_type",
-        kind: "enum",
-        T: je.getEnumType(J$e)
-    }, {
-        no: 5,
-        name: "subagent_type_name",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }]);
     let E0e = J0e;
     const v0e = class e extends q {
         constructor(e) {
@@ -158609,7 +158615,119 @@
             return je.util.equals(e, t, n)
         }
     };
-    v0e.runtime = je, v0e.typeName = "aiserver.v1.SlackSourceMetadata", v0e.fields = je.util.newFieldList(() => [{
+    v0e.runtime = je, v0e.typeName = "aiserver.v1.ExternalSourceMetadata", v0e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "slack",
+        kind: "message",
+        T: L0e,
+        opt: !0
+    }, {
+        no: 2,
+        name: "linear",
+        kind: "message",
+        T: C0e,
+        opt: !0
+    }, {
+        no: 3,
+        name: "github",
+        kind: "message",
+        T: x0e,
+        opt: !0
+    }, {
+        no: 4,
+        name: "gitlab",
+        kind: "message",
+        T: D0e,
+        opt: !0
+    }]);
+    let N0e = v0e;
+    const B0e = class e extends q {
+        constructor(e) {
+            super(), this.id = "", this.uri = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    B0e.runtime = je, B0e.typeName = "aiserver.v1.PrivateWorkspaceIdentifier", B0e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "uri",
+        kind: "scalar",
+        T: 9
+    }]);
+    let q0e = B0e;
+    const P0e = class e extends q {
+        constructor(e) {
+            super(), this.parentAgentId = "", this.parentToolCallId = "", this.parentAgentType = 0, je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    P0e.runtime = je, P0e.typeName = "aiserver.v1.CloudSubagentParentReference", P0e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "parent_agent_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "parent_tool_call_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 3,
+        name: "parent_agent_type",
+        kind: "enum",
+        T: je.getEnumType(P$e)
+    }, {
+        no: 5,
+        name: "subagent_type_name",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let I0e = P0e;
+    const R0e = class e extends q {
+        constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    R0e.runtime = je, R0e.typeName = "aiserver.v1.SlackSourceMetadata", R0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "channel_id",
         kind: "scalar",
@@ -158640,8 +158758,8 @@
         T: 9,
         opt: !0
     }]);
-    let N0e = v0e;
-    const B0e = class e extends q {
+    let L0e = R0e;
+    const F0e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -158658,7 +158776,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    B0e.runtime = je, B0e.typeName = "aiserver.v1.LinearSourceMetadata", B0e.fields = je.util.newFieldList(() => [{
+    F0e.runtime = je, F0e.typeName = "aiserver.v1.LinearSourceMetadata", F0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "issue_id",
         kind: "scalar",
@@ -158683,8 +158801,8 @@
         T: 9,
         opt: !0
     }]);
-    let q0e = B0e;
-    const P0e = class e extends q {
+    let C0e = F0e;
+    const A0e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -158701,7 +158819,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    P0e.runtime = je, P0e.typeName = "aiserver.v1.GithubSourceMetadata", P0e.fields = je.util.newFieldList(() => [{
+    A0e.runtime = je, A0e.typeName = "aiserver.v1.GithubSourceMetadata", A0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "issue_id",
         kind: "scalar",
@@ -158732,8 +158850,8 @@
         T: 9,
         opt: !0
     }]);
-    let I0e = P0e;
-    const R0e = class e extends q {
+    let x0e = A0e;
+    const O0e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -158750,7 +158868,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    R0e.runtime = je, R0e.typeName = "aiserver.v1.GitlabSourceMetadata", R0e.fields = je.util.newFieldList(() => [{
+    O0e.runtime = je, O0e.typeName = "aiserver.v1.GitlabSourceMetadata", O0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "mr_iid",
         kind: "scalar",
@@ -158769,8 +158887,8 @@
         T: 9,
         opt: !0
     }]);
-    let L0e = R0e;
-    const F0e = class e extends q {
+    let D0e = O0e;
+    const b0e = class e extends q {
         constructor(e) {
             super(), this.composers = [], this.didLoadStatus = !1, this.hasMore = !1, this.participants = [], je.util.initPartial(e, this)
         }
@@ -158787,11 +158905,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    F0e.runtime = je, F0e.typeName = "aiserver.v1.ListBackgroundComposersResponse", F0e.fields = je.util.newFieldList(() => [{
+    b0e.runtime = je, b0e.typeName = "aiserver.v1.ListBackgroundComposersResponse", b0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "composers",
         kind: "message",
-        T: _0e,
+        T: S0e,
         repeated: !0
     }, {
         no: 2,
@@ -158813,11 +158931,11 @@
         no: 5,
         name: "participants",
         kind: "message",
-        T: w0e,
+        T: E0e,
         repeated: !0
     }]);
-    let C0e = F0e;
-    const A0e = class e extends q {
+    let U0e = b0e;
+    const M0e = class e extends q {
         constructor(e) {
             super(), this.repoUrl = "", this.scmRepoNodeId = "", je.util.initPartial(e, this)
         }
@@ -158834,7 +158952,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    A0e.runtime = je, A0e.typeName = "aiserver.v1.EnvironmentRepoEntry", A0e.fields = je.util.newFieldList(() => [{
+    M0e.runtime = je, M0e.typeName = "aiserver.v1.EnvironmentRepoEntry", M0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
@@ -158851,8 +158969,8 @@
         T: 9,
         opt: !0
     }]);
-    let x0e = A0e;
-    const O0e = class e extends q {
+    let G0e = M0e;
+    const Y0e = class e extends q {
         constructor(e) {
             super(), this.repoUrl = "", this.path = "", je.util.initPartial(e, this)
         }
@@ -158869,7 +158987,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    O0e.runtime = je, O0e.typeName = "aiserver.v1.EnvironmentJsonFileLocation", O0e.fields = je.util.newFieldList(() => [{
+    Y0e.runtime = je, Y0e.typeName = "aiserver.v1.EnvironmentJsonFileLocation", Y0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
@@ -158880,8 +158998,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let D0e = O0e;
-    const b0e = class e extends q {
+    let V0e = Y0e;
+    const H0e = class e extends q {
         constructor(e) {
             super(), this.repos = [], je.util.initPartial(e, this)
         }
@@ -158898,21 +159016,21 @@
             return je.util.equals(e, t, n)
         }
     };
-    b0e.runtime = je, b0e.typeName = "aiserver.v1.EnvironmentRepoConfig", b0e.fields = je.util.newFieldList(() => [{
+    H0e.runtime = je, H0e.typeName = "aiserver.v1.EnvironmentRepoConfig", H0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repos",
         kind: "message",
-        T: x0e,
+        T: G0e,
         repeated: !0
     }, {
         no: 2,
         name: "environment_json_location",
         kind: "message",
-        T: D0e,
+        T: V0e,
         opt: !0
     }]);
-    let U0e = b0e;
-    const M0e = class e extends q {
+    let K0e = H0e;
+    const W0e = class e extends q {
         constructor(e) {
             super(), this.repoUrl = "", this.ref = "", this.baseRef = "", je.util.initPartial(e, this)
         }
@@ -158929,7 +159047,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    M0e.runtime = je, M0e.typeName = "aiserver.v1.RepoStartingRef", M0e.fields = je.util.newFieldList(() => [{
+    W0e.runtime = je, W0e.typeName = "aiserver.v1.RepoStartingRef", W0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
@@ -158945,8 +159063,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let G0e = M0e;
-    const Y0e = class e extends q {
+    let z0e = W0e;
+    const j0e = class e extends q {
         constructor(e) {
             super(), this.url = "", this.ref = "", this.userExtensions = [], this.cursorServerCommit = "", this.environmentJsonOverride = "", this.dontAllowReadingEnvironmentJsonFromDatabase = !1, this.skipBuildCaches = !1, this.startingRefs = [], je.util.initPartial(e, this)
         }
@@ -158963,7 +159081,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Y0e.runtime = je, Y0e.typeName = "aiserver.v1.DevcontainerStartingPoint", Y0e.fields = je.util.newFieldList(() => [{
+    j0e.runtime = je, j0e.typeName = "aiserver.v1.DevcontainerStartingPoint", j0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "url",
         kind: "scalar",
@@ -159008,7 +159126,7 @@
         no: 11,
         name: "repo_config",
         kind: "message",
-        T: U0e,
+        T: K0e,
         opt: !0
     }, {
         no: 12,
@@ -159032,11 +159150,11 @@
         no: 14,
         name: "starting_refs",
         kind: "message",
-        T: G0e,
+        T: z0e,
         repeated: !0
     }]);
-    let V0e = Y0e;
-    const H0e = class e extends q {
+    let X0e = j0e;
+    const Q0e = class e extends q {
         constructor(e) {
             super(), this.timeBudgetMs = b.zero, this.phase = 0, je.util.initPartial(e, this)
         }
@@ -159053,7 +159171,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    H0e.runtime = je, H0e.typeName = "aiserver.v1.GrindModeConfig", H0e.fields = je.util.newFieldList(() => [{
+    Q0e.runtime = je, Q0e.typeName = "aiserver.v1.GrindModeConfig", Q0e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "time_budget_ms",
         kind: "scalar",
@@ -159068,7 +159186,7 @@
         no: 3,
         name: "phase",
         kind: "enum",
-        T: je.getEnumType(W0e)
+        T: je.getEnumType(Z0e)
     }, {
         no: 4,
         name: "auto_proceed_after_planning",
@@ -159088,9 +159206,9 @@
         T: 8,
         opt: !0
     }]);
-    let K0e = H0e;
-    var W0e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLANNING = 1] = "PLANNING", e[e.EXECUTING = 2] = "EXECUTING", e[e.CONTROLLER = 3] = "CONTROLLER", e))(W0e || {});
-    je.util.setEnumType(W0e, "aiserver.v1.GrindModeConfig.Phase", [{
+    let $0e = Q0e;
+    var Z0e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLANNING = 1] = "PLANNING", e[e.EXECUTING = 2] = "EXECUTING", e[e.CONTROLLER = 3] = "CONTROLLER", e))(Z0e || {});
+    je.util.setEnumType(Z0e, "aiserver.v1.GrindModeConfig.Phase", [{
         no: 0,
         name: "PHASE_UNSPECIFIED"
     }, {
@@ -159103,7 +159221,7 @@
         no: 3,
         name: "PHASE_CONTROLLER"
     }]);
-    const z0e = class e extends q {
+    const e9e = class e extends q {
         constructor(e) {
             super(), this.noToolTurnStreak = 0, this.finalSummaryRequested = !1, je.util.initPartial(e, this)
         }
@@ -159120,7 +159238,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    z0e.runtime = je, z0e.typeName = "aiserver.v1.GrindModeTrackingState", z0e.fields = je.util.newFieldList(() => [{
+    e9e.runtime = je, e9e.typeName = "aiserver.v1.GrindModeTrackingState", e9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "no_tool_turn_streak",
         kind: "scalar",
@@ -159143,7 +159261,7 @@
         T: 3,
         opt: !0
     }]);
-    const j0e = class e extends q {
+    const t9e = class e extends q {
         constructor(e) {
             super(), this.snapshotNameOrId = "", this.prompt = "", this.richPrompt = "", this.files = [], this.additionalModelDetails = [], this.requestedModels = [], this.snapshotWorkspaceRootPath = "", this.startForAuthIdOnTeam = "", this.autoBranch = !1, this.returnImmediately = !1, this.images = [], this.conversationHistory = [], this.documentationIdentifiers = [], this.externalLinks = [], this.bcId = "", this.preFetchedBlobs = [], this.labels = [], this.skills = [], this.customSubagents = [], this.requestedAdditionalStoreIds = [], je.util.initPartial(e, this)
         }
@@ -159160,7 +159278,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    j0e.runtime = je, j0e.typeName = "aiserver.v1.StartBackgroundComposerFromSnapshotRequest", j0e.fields = je.util.newFieldList(() => [{
+    t9e.runtime = je, t9e.typeName = "aiserver.v1.StartBackgroundComposerFromSnapshotRequest", t9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "snapshot_name_or_id",
         kind: "scalar",
@@ -159169,7 +159287,7 @@
         no: 11,
         name: "devcontainer_starting_point",
         kind: "message",
-        T: V0e
+        T: X0e
     }, {
         no: 2,
         name: "prompt",
@@ -159184,7 +159302,7 @@
         no: 3,
         name: "files",
         kind: "message",
-        T: $0e,
+        T: s9e,
         repeated: !0
     }, {
         no: 4,
@@ -159207,7 +159325,7 @@
         no: 5,
         name: "repository_info",
         kind: "message",
-        T: p2e
+        T: y2e
     }, {
         no: 6,
         name: "snapshot_workspace_root_path",
@@ -159268,7 +159386,7 @@
         no: 23,
         name: "source",
         kind: "enum",
-        T: je.getEnumType(y$e),
+        T: je.getEnumType(N$e),
         opt: !0
     }, {
         no: 19,
@@ -159345,7 +159463,7 @@
         no: 94,
         name: "external_source_metadata",
         kind: "message",
-        T: y0e,
+        T: N0e,
         opt: !0
     }, {
         no: 31,
@@ -159399,13 +159517,13 @@
         no: 39,
         name: "webhook_config",
         kind: "message",
-        T: e9e,
+        T: a9e,
         opt: !0
     }, {
         no: 41,
         name: "starting_message_type",
         kind: "enum",
-        T: je.getEnumType(M$e),
+        T: je.getEnumType(W$e),
         opt: !0
     }, {
         no: 42,
@@ -159453,7 +159571,7 @@
         no: 48,
         name: "pre_fetched_blobs",
         kind: "message",
-        T: S9e,
+        T: q9e,
         repeated: !0
     }, {
         no: 49,
@@ -159477,7 +159595,7 @@
         no: 52,
         name: "grind_mode_config",
         kind: "message",
-        T: K0e,
+        T: $0e,
         opt: !0
     }, {
         no: 73,
@@ -159495,19 +159613,19 @@
         no: 59,
         name: "labels",
         kind: "message",
-        T: xnt,
+        T: Gnt,
         repeated: !0
     }, {
         no: 97,
         name: "private_worker_owner_filter",
         kind: "message",
-        T: Dnt,
+        T: Vnt,
         opt: !0
     }, {
         no: 100,
         name: "private_workspace_identifier",
         kind: "message",
-        T: S0e,
+        T: q0e,
         opt: !0
     }, {
         no: 56,
@@ -159591,7 +159709,7 @@
         no: 99,
         name: "cloud_subagent_parent",
         kind: "message",
-        T: E0e,
+        T: I0e,
         opt: !0
     }, {
         no: 101,
@@ -159600,8 +159718,8 @@
         T: 9,
         repeated: !0
     }]);
-    let X0e = j0e;
-    const Q0e = class e extends q {
+    let n9e = t9e;
+    const r9e = class e extends q {
         constructor(e) {
             super(), this.relativeWorkspacePath = "", this.contents = "", je.util.initPartial(e, this)
         }
@@ -159618,7 +159736,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Q0e.runtime = je, Q0e.typeName = "aiserver.v1.StartBackgroundComposerFromSnapshotRequest.File", Q0e.fields = je.util.newFieldList(() => [{
+    r9e.runtime = je, r9e.typeName = "aiserver.v1.StartBackgroundComposerFromSnapshotRequest.File", r9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "relative_workspace_path",
         kind: "scalar",
@@ -159629,8 +159747,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let $0e = Q0e;
-    const Z0e = class e extends q {
+    let s9e = r9e;
+    const i9e = class e extends q {
         constructor(e) {
             super(), this.url = "", je.util.initPartial(e, this)
         }
@@ -159647,7 +159765,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Z0e.runtime = je, Z0e.typeName = "aiserver.v1.StartBackgroundComposerFromSnapshotRequest.WebhookConfig", Z0e.fields = je.util.newFieldList(() => [{
+    i9e.runtime = je, i9e.typeName = "aiserver.v1.StartBackgroundComposerFromSnapshotRequest.WebhookConfig", i9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "url",
         kind: "scalar",
@@ -159659,8 +159777,8 @@
         T: 9,
         opt: !0
     }]);
-    let e9e = Z0e;
-    const t9e = class e extends q {
+    let a9e = i9e;
+    const o9e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -159677,11 +159795,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    t9e.runtime = je, t9e.typeName = "aiserver.v1.StartBackgroundComposerFromSnapshotResponse", t9e.fields = je.util.newFieldList(() => [{
+    o9e.runtime = je, o9e.typeName = "aiserver.v1.StartBackgroundComposerFromSnapshotResponse", o9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "composer",
         kind: "message",
-        T: _0e
+        T: S0e
     }, {
         no: 2,
         name: "was_swapped_to_default",
@@ -159695,8 +159813,8 @@
         T: 9,
         opt: !0
     }]);
-    let n9e = t9e;
-    const r9e = class e extends q {
+    let l9e = o9e;
+    const u9e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -159713,7 +159831,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    r9e.runtime = je, r9e.typeName = "aiserver.v1.AttachBackgroundComposerLogsRequest", r9e.fields = je.util.newFieldList(() => [{
+    u9e.runtime = je, u9e.typeName = "aiserver.v1.AttachBackgroundComposerLogsRequest", u9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -159749,8 +159867,8 @@
         T: 9,
         opt: !0
     }]);
-    let s9e = r9e;
-    const i9e = class e extends q {
+    let m9e = u9e;
+    const c9e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -159767,11 +159885,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    i9e.runtime = je, i9e.typeName = "aiserver.v1.AttachBackgroundComposerLogsResponse", i9e.fields = je.util.newFieldList(() => [{
+    c9e.runtime = je, c9e.typeName = "aiserver.v1.AttachBackgroundComposerLogsResponse", c9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "event",
         kind: "message",
-        T: l9e
+        T: p9e
     }, {
         no: 2,
         name: "updated_status",
@@ -159783,8 +159901,8 @@
         kind: "message",
         T: ki
     }]);
-    let a9e = i9e;
-    const o9e = class e extends q {
+    let d9e = c9e;
+    const f9e = class e extends q {
         constructor(e) {
             super(), this.eventId = "", je.util.initPartial(e, this)
         }
@@ -159801,7 +159919,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    o9e.runtime = je, o9e.typeName = "aiserver.v1.AttachBackgroundComposerLogsResponse.Event", o9e.fields = je.util.newFieldList(() => [{
+    f9e.runtime = je, f9e.typeName = "aiserver.v1.AttachBackgroundComposerLogsResponse.Event", f9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "event_id",
         kind: "scalar",
@@ -159817,8 +159935,8 @@
         kind: "message",
         T: Xye
     }]);
-    let l9e = o9e;
-    const u9e = class e extends q {
+    let p9e = f9e;
+    const T9e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -159835,7 +159953,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    u9e.runtime = je, u9e.typeName = "aiserver.v1.AttachBackgroundComposerRequest", u9e.fields = je.util.newFieldList(() => [{
+    T9e.runtime = je, T9e.typeName = "aiserver.v1.AttachBackgroundComposerRequest", T9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -159847,8 +159965,8 @@
         T: 5,
         opt: !0
     }]);
-    let m9e = u9e;
-    const c9e = class e extends q {
+    let _9e = T9e;
+    const g9e = class e extends q {
         constructor(e) {
             super(), this.startingCommit = "", this.baseBranch = "", this.statusUpdate = 0, je.util.initPartial(e, this)
         }
@@ -159865,16 +159983,16 @@
             return je.util.equals(e, t, n)
         }
     };
-    c9e.runtime = je, c9e.typeName = "aiserver.v1.AttachBackgroundComposerResponse", c9e.fields = je.util.newFieldList(() => [{
+    g9e.runtime = je, g9e.typeName = "aiserver.v1.AttachBackgroundComposerResponse", g9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "headless_agentic_composer_response",
         kind: "message",
-        T: r2e
+        T: u2e
     }, {
         no: 2,
         name: "prompt",
         kind: "message",
-        T: _2e
+        T: S2e
     }, {
         no: 4,
         name: "starting_commit",
@@ -159889,15 +160007,15 @@
         no: 6,
         name: "status_update",
         kind: "enum",
-        T: je.getEnumType(w$e)
+        T: je.getEnumType(E$e)
     }, {
         no: 3,
         name: "diff_since_start",
         kind: "message",
         T: Hr
     }]);
-    let d9e = c9e;
-    const f9e = class e extends q {
+    let w9e = g9e;
+    const h9e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.shouldSendPrefetchedBlobsFirst = !1, this.preFetchedBlobIds = [], je.util.initPartial(e, this)
         }
@@ -159914,7 +160032,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    f9e.runtime = je, f9e.typeName = "aiserver.v1.StreamConversationRequest", f9e.fields = je.util.newFieldList(() => [{
+    h9e.runtime = je, h9e.typeName = "aiserver.v1.StreamConversationRequest", h9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -159967,8 +160085,8 @@
         T: 8,
         opt: !0
     }]);
-    let p9e = f9e;
-    const T9e = class e extends q {
+    let y9e = h9e;
+    const k9e = class e extends q {
         constructor(e) {
             super(), this.message = {
                 case: void 0
@@ -159987,7 +160105,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    T9e.runtime = je, T9e.typeName = "aiserver.v1.ConversationStreamMessage", T9e.fields = je.util.newFieldList(() => [{
+    k9e.runtime = je, k9e.typeName = "aiserver.v1.ConversationStreamMessage", k9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "interaction_update",
         kind: "message",
@@ -160003,7 +160121,7 @@
         no: 3,
         name: "workflow_status",
         kind: "enum",
-        T: je.getEnumType(h$e),
+        T: je.getEnumType(v$e),
         oneof: "message"
     }, {
         no: 4,
@@ -160015,13 +160133,13 @@
         no: 5,
         name: "transient_error",
         kind: "message",
-        T: ytt,
+        T: Ntt,
         oneof: "message"
     }, {
         no: 6,
         name: "worker_lifecycle_event",
         kind: "message",
-        T: y9e,
+        T: N9e,
         oneof: "message"
     }, {
         no: 7,
@@ -160039,10 +160157,10 @@
         no: 9,
         name: "read_only_shared_pod_lifecycle_event",
         kind: "message",
-        T: g9e,
+        T: J9e,
         oneof: "message"
     }]);
-    const _9e = class e extends q {
+    const S9e = class e extends q {
         constructor(e) {
             super(), this.phase = 0, je.util.initPartial(e, this)
         }
@@ -160059,15 +160177,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    _9e.runtime = je, _9e.typeName = "aiserver.v1.ReadOnlySharedPodLifecycleEvent", _9e.fields = je.util.newFieldList(() => [{
+    S9e.runtime = je, S9e.typeName = "aiserver.v1.ReadOnlySharedPodLifecycleEvent", S9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "phase",
         kind: "enum",
-        T: je.getEnumType(w9e)
+        T: je.getEnumType(E9e)
     }]);
-    let g9e = _9e;
-    var w9e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.AWAITING_FULL_POD = 2] = "AWAITING_FULL_POD", e[e.INACTIVE = 3] = "INACTIVE", e))(w9e || {});
-    je.util.setEnumType(w9e, "aiserver.v1.ReadOnlySharedPodLifecycleEvent.Phase", [{
+    let J9e = S9e;
+    var E9e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.AWAITING_FULL_POD = 2] = "AWAITING_FULL_POD", e[e.INACTIVE = 3] = "INACTIVE", e))(E9e || {});
+    je.util.setEnumType(E9e, "aiserver.v1.ReadOnlySharedPodLifecycleEvent.Phase", [{
         no: 0,
         name: "PHASE_UNSPECIFIED"
     }, {
@@ -160077,7 +160195,7 @@
         no: 3,
         name: "PHASE_INACTIVE"
     }]);
-    const h9e = class e extends q {
+    const v9e = class e extends q {
         constructor(e) {
             super(), this.workerIndex = 0, this.event = {
                 case: void 0
@@ -160096,7 +160214,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    h9e.runtime = je, h9e.typeName = "aiserver.v1.WorkerLifecycleEvent", h9e.fields = je.util.newFieldList(() => [{
+    v9e.runtime = je, v9e.typeName = "aiserver.v1.WorkerLifecycleEvent", v9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "worker_index",
         kind: "scalar",
@@ -160108,8 +160226,8 @@
         T: Ln,
         oneof: "event"
     }]);
-    let y9e = h9e;
-    const k9e = class e extends q {
+    let N9e = v9e;
+    const B9e = class e extends q {
         constructor(e) {
             super(), this.id = new Uint8Array(0), this.value = new Uint8Array(0), je.util.initPartial(e, this)
         }
@@ -160126,7 +160244,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    k9e.runtime = je, k9e.typeName = "aiserver.v1.PreFetchedBlob", k9e.fields = je.util.newFieldList(() => [{
+    B9e.runtime = je, B9e.typeName = "aiserver.v1.PreFetchedBlob", B9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -160137,8 +160255,8 @@
         kind: "scalar",
         T: 12
     }]);
-    let S9e = k9e;
-    const J9e = class e extends q {
+    let q9e = B9e;
+    const P9e = class e extends q {
         constructor(e) {
             super(), this.message = {
                 case: void 0
@@ -160157,83 +160275,83 @@
             return je.util.equals(e, t, n)
         }
     };
-    J9e.runtime = je, J9e.typeName = "aiserver.v1.StreamConversationResponse", J9e.fields = je.util.newFieldList(() => [{
+    P9e.runtime = je, P9e.typeName = "aiserver.v1.StreamConversationResponse", P9e.fields = je.util.newFieldList(() => [{
         no: 3,
         name: "initial_state",
         kind: "message",
-        T: P9e,
+        T: A9e,
         oneof: "message"
     }, {
         no: 4,
         name: "interaction_update_with_offset",
         kind: "message",
-        T: F9e,
+        T: b9e,
         oneof: "message"
     }, {
         no: 5,
         name: "cloud_agent_state_with_id_and_offset",
         kind: "message",
-        T: R9e,
+        T: O9e,
         oneof: "message"
     }, {
         no: 6,
         name: "workflow_status_with_offset",
         kind: "message",
-        T: O9e,
+        T: Y9e,
         oneof: "message"
     }, {
         no: 7,
         name: "prefetched_blobs",
         kind: "message",
-        T: B9e,
+        T: F9e,
         oneof: "message"
     }, {
         no: 8,
         name: "stream_signal",
         kind: "enum",
-        T: je.getEnumType(v9e),
+        T: je.getEnumType(R9e),
         oneof: "message"
     }, {
         no: 9,
         name: "transient_error_with_offset",
         kind: "message",
-        T: b9e,
+        T: H9e,
         oneof: "message"
     }, {
         no: 10,
         name: "dev_banner_message",
         kind: "message",
-        T: M9e,
+        T: W9e,
         oneof: "message"
     }, {
         no: 11,
         name: "worker_lifecycle_event_with_offset",
         kind: "message",
-        T: Y9e,
+        T: j9e,
         oneof: "message"
     }, {
         no: 12,
         name: "interaction_query_with_offset",
         kind: "message",
-        T: A9e,
+        T: M9e,
         oneof: "message"
     }, {
         no: 13,
         name: "read_only_shared_pod_lifecycle_event_with_offset",
         kind: "message",
-        T: H9e,
+        T: Q9e,
         oneof: "message"
     }]);
-    let E9e = J9e;
-    var v9e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.END_OF_INITIAL_STATE_PREFETCH = 1] = "END_OF_INITIAL_STATE_PREFETCH", e))(v9e || {});
-    je.util.setEnumType(v9e, "aiserver.v1.StreamConversationResponse.StreamSignal", [{
+    let I9e = P9e;
+    var R9e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.END_OF_INITIAL_STATE_PREFETCH = 1] = "END_OF_INITIAL_STATE_PREFETCH", e))(R9e || {});
+    je.util.setEnumType(R9e, "aiserver.v1.StreamConversationResponse.StreamSignal", [{
         no: 0,
         name: "STREAM_SIGNAL_UNSPECIFIED"
     }, {
         no: 1,
         name: "STREAM_SIGNAL_END_OF_INITIAL_STATE_PREFETCH"
     }]);
-    const N9e = class e extends q {
+    const L9e = class e extends q {
         constructor(e) {
             super(), this.preFetchedBlobs = [], je.util.initPartial(e, this)
         }
@@ -160250,15 +160368,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    N9e.runtime = je, N9e.typeName = "aiserver.v1.StreamConversationResponse.PrefetchedBlobs", N9e.fields = je.util.newFieldList(() => [{
+    L9e.runtime = je, L9e.typeName = "aiserver.v1.StreamConversationResponse.PrefetchedBlobs", L9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pre_fetched_blobs",
         kind: "message",
-        T: S9e,
+        T: q9e,
         repeated: !0
     }]);
-    let B9e = N9e;
-    const q9e = class e extends q {
+    let F9e = L9e;
+    const C9e = class e extends q {
         constructor(e) {
             super(), this.blobId = new Uint8Array(0), this.preFetchedBlobs = [], this.workflowStatus = 0, this.userDisplayInfos = [], je.util.initPartial(e, this)
         }
@@ -160275,7 +160393,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    q9e.runtime = je, q9e.typeName = "aiserver.v1.StreamConversationResponse.InitialState", q9e.fields = je.util.newFieldList(() => [{
+    C9e.runtime = je, C9e.typeName = "aiserver.v1.StreamConversationResponse.InitialState", C9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "blob_id",
         kind: "scalar",
@@ -160284,18 +160402,18 @@
         no: 2,
         name: "cloud_agent_state",
         kind: "message",
-        T: ltt
+        T: ptt
     }, {
         no: 4,
         name: "pre_fetched_blobs",
         kind: "message",
-        T: S9e,
+        T: q9e,
         repeated: !0
     }, {
         no: 5,
         name: "workflow_status",
         kind: "enum",
-        T: je.getEnumType(h$e)
+        T: je.getEnumType(v$e)
     }, {
         no: 6,
         name: "user_display_infos",
@@ -160303,8 +160421,8 @@
         T: eO,
         repeated: !0
     }]);
-    let P9e = q9e;
-    const I9e = class e extends q {
+    let A9e = C9e;
+    const x9e = class e extends q {
         constructor(e) {
             super(), this.offsetKey = "", this.blobId = new Uint8Array(0), this.preFetchedBlobs = [], this.userDisplayInfos = [], je.util.initPartial(e, this)
         }
@@ -160321,7 +160439,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    I9e.runtime = je, I9e.typeName = "aiserver.v1.StreamConversationResponse.CloudAgentStateWithIdAndOffset", I9e.fields = je.util.newFieldList(() => [{
+    x9e.runtime = je, x9e.typeName = "aiserver.v1.StreamConversationResponse.CloudAgentStateWithIdAndOffset", x9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "offset_key",
         kind: "scalar",
@@ -160335,12 +160453,12 @@
         no: 3,
         name: "cloud_agent_state",
         kind: "message",
-        T: ltt
+        T: ptt
     }, {
         no: 4,
         name: "pre_fetched_blobs",
         kind: "message",
-        T: S9e,
+        T: q9e,
         repeated: !0
     }, {
         no: 5,
@@ -160349,8 +160467,8 @@
         T: eO,
         repeated: !0
     }]);
-    let R9e = I9e;
-    const L9e = class e extends q {
+    let O9e = x9e;
+    const D9e = class e extends q {
         constructor(e) {
             super(), this.offsetKey = "", this.userDisplayInfos = [], je.util.initPartial(e, this)
         }
@@ -160367,7 +160485,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    L9e.runtime = je, L9e.typeName = "aiserver.v1.StreamConversationResponse.InteractionUpdateWithOffset", L9e.fields = je.util.newFieldList(() => [{
+    D9e.runtime = je, D9e.typeName = "aiserver.v1.StreamConversationResponse.InteractionUpdateWithOffset", D9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "offset_key",
         kind: "scalar",
@@ -160384,8 +160502,8 @@
         T: eO,
         repeated: !0
     }]);
-    let F9e = L9e;
-    const C9e = class e extends q {
+    let b9e = D9e;
+    const U9e = class e extends q {
         constructor(e) {
             super(), this.offsetKey = "", je.util.initPartial(e, this)
         }
@@ -160402,7 +160520,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    C9e.runtime = je, C9e.typeName = "aiserver.v1.StreamConversationResponse.InteractionQueryWithOffset", C9e.fields = je.util.newFieldList(() => [{
+    U9e.runtime = je, U9e.typeName = "aiserver.v1.StreamConversationResponse.InteractionQueryWithOffset", U9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "offset_key",
         kind: "scalar",
@@ -160413,8 +160531,8 @@
         kind: "message",
         T: Nb
     }]);
-    let A9e = C9e;
-    const x9e = class e extends q {
+    let M9e = U9e;
+    const G9e = class e extends q {
         constructor(e) {
             super(), this.offsetKey = "", this.workflowStatus = 0, je.util.initPartial(e, this)
         }
@@ -160431,7 +160549,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    x9e.runtime = je, x9e.typeName = "aiserver.v1.StreamConversationResponse.WorkflowStatusWithOffset", x9e.fields = je.util.newFieldList(() => [{
+    G9e.runtime = je, G9e.typeName = "aiserver.v1.StreamConversationResponse.WorkflowStatusWithOffset", G9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "offset_key",
         kind: "scalar",
@@ -160440,89 +160558,7 @@
         no: 2,
         name: "workflow_status",
         kind: "enum",
-        T: je.getEnumType(h$e)
-    }]);
-    let O9e = x9e;
-    const D9e = class e extends q {
-        constructor(e) {
-            super(), this.offsetKey = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    D9e.runtime = je, D9e.typeName = "aiserver.v1.StreamConversationResponse.TransientErrorWithOffset", D9e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "offset_key",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "transient_error",
-        kind: "message",
-        T: ytt
-    }]);
-    let b9e = D9e;
-    const U9e = class e extends q {
-        constructor(e) {
-            super(), this.text = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    U9e.runtime = je, U9e.typeName = "aiserver.v1.StreamConversationResponse.DevBannerMessage", U9e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "text",
-        kind: "scalar",
-        T: 9
-    }]);
-    let M9e = U9e;
-    const G9e = class e extends q {
-        constructor(e) {
-            super(), this.offsetKey = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    G9e.runtime = je, G9e.typeName = "aiserver.v1.StreamConversationResponse.WorkerLifecycleEventWithOffset", G9e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "offset_key",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "worker_lifecycle_event",
-        kind: "message",
-        T: y9e
+        T: je.getEnumType(v$e)
     }]);
     let Y9e = G9e;
     const V9e = class e extends q {
@@ -160542,7 +160578,89 @@
             return je.util.equals(e, t, n)
         }
     };
-    V9e.runtime = je, V9e.typeName = "aiserver.v1.StreamConversationResponse.ReadOnlySharedPodLifecycleEventWithOffset", V9e.fields = je.util.newFieldList(() => [{
+    V9e.runtime = je, V9e.typeName = "aiserver.v1.StreamConversationResponse.TransientErrorWithOffset", V9e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "offset_key",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "transient_error",
+        kind: "message",
+        T: Ntt
+    }]);
+    let H9e = V9e;
+    const K9e = class e extends q {
+        constructor(e) {
+            super(), this.text = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    K9e.runtime = je, K9e.typeName = "aiserver.v1.StreamConversationResponse.DevBannerMessage", K9e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "text",
+        kind: "scalar",
+        T: 9
+    }]);
+    let W9e = K9e;
+    const z9e = class e extends q {
+        constructor(e) {
+            super(), this.offsetKey = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    z9e.runtime = je, z9e.typeName = "aiserver.v1.StreamConversationResponse.WorkerLifecycleEventWithOffset", z9e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "offset_key",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "worker_lifecycle_event",
+        kind: "message",
+        T: N9e
+    }]);
+    let j9e = z9e;
+    const X9e = class e extends q {
+        constructor(e) {
+            super(), this.offsetKey = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    X9e.runtime = je, X9e.typeName = "aiserver.v1.StreamConversationResponse.ReadOnlySharedPodLifecycleEventWithOffset", X9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "offset_key",
         kind: "scalar",
@@ -160551,10 +160669,10 @@
         no: 2,
         name: "read_only_shared_pod_lifecycle_event",
         kind: "message",
-        T: g9e
+        T: J9e
     }]);
-    let H9e = V9e;
-    const K9e = class e extends q {
+    let Q9e = X9e;
+    const $9e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -160571,14 +160689,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    K9e.runtime = je, K9e.typeName = "aiserver.v1.GetLatestAgentConversationStateRequest", K9e.fields = je.util.newFieldList(() => [{
+    $9e.runtime = je, $9e.typeName = "aiserver.v1.GetLatestAgentConversationStateRequest", $9e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let W9e = K9e;
-    const z9e = class e extends q {
+    let Z9e = $9e;
+    const e2e = class e extends q {
         constructor(e) {
             super(), this.numPriorInteractionUpdates = 0, je.util.initPartial(e, this)
         }
@@ -160595,7 +160713,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    z9e.runtime = je, z9e.typeName = "aiserver.v1.LatestAgentConversationState", z9e.fields = je.util.newFieldList(() => [{
+    e2e.runtime = je, e2e.typeName = "aiserver.v1.LatestAgentConversationState", e2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "conversation_state",
         kind: "message",
@@ -160606,8 +160724,8 @@
         kind: "scalar",
         T: 13
     }]);
-    let j9e = z9e;
-    const X9e = class e extends q {
+    let t2e = e2e;
+    const n2e = class e extends q {
         constructor(e) {
             super(), this.preFetchedBlobs = [], je.util.initPartial(e, this)
         }
@@ -160624,20 +160742,20 @@
             return je.util.equals(e, t, n)
         }
     };
-    X9e.runtime = je, X9e.typeName = "aiserver.v1.GetLatestAgentConversationStateResponse", X9e.fields = je.util.newFieldList(() => [{
+    n2e.runtime = je, n2e.typeName = "aiserver.v1.GetLatestAgentConversationStateResponse", n2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "latest_conversation_state",
         kind: "message",
-        T: j9e
+        T: t2e
     }, {
         no: 2,
         name: "pre_fetched_blobs",
         kind: "message",
-        T: S9e,
+        T: q9e,
         repeated: !0
     }]);
-    let Q9e = X9e;
-    const $9e = class e extends q {
+    let r2e = n2e;
+    const s2e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.blobId = new Uint8Array(0), je.util.initPartial(e, this)
         }
@@ -160654,7 +160772,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    $9e.runtime = je, $9e.typeName = "aiserver.v1.GetBlobForAgentKVRequest", $9e.fields = je.util.newFieldList(() => [{
+    s2e.runtime = je, s2e.typeName = "aiserver.v1.GetBlobForAgentKVRequest", s2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -160665,8 +160783,8 @@
         kind: "scalar",
         T: 12
     }]);
-    let Z9e = $9e;
-    const e2e = class e extends q {
+    let i2e = s2e;
+    const a2e = class e extends q {
         constructor(e) {
             super(), this.blobData = new Uint8Array(0), je.util.initPartial(e, this)
         }
@@ -160683,14 +160801,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    e2e.runtime = je, e2e.typeName = "aiserver.v1.GetBlobForAgentKVResponse", e2e.fields = je.util.newFieldList(() => [{
+    a2e.runtime = je, a2e.typeName = "aiserver.v1.GetBlobForAgentKVResponse", a2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "blob_data",
         kind: "scalar",
         T: 12
     }]);
-    let t2e = e2e;
-    const n2e = class e extends q {
+    let o2e = a2e;
+    const l2e = class e extends q {
         constructor(e) {
             super(), this.text = "", this.isMessageDone = !1, je.util.initPartial(e, this)
         }
@@ -160707,7 +160825,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    n2e.runtime = je, n2e.typeName = "aiserver.v1.HeadlessAgenticComposerResponse", n2e.fields = je.util.newFieldList(() => [{
+    l2e.runtime = je, l2e.typeName = "aiserver.v1.HeadlessAgenticComposerResponse", l2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "text",
         kind: "scalar",
@@ -160722,7 +160840,7 @@
         no: 3,
         name: "final_tool_result",
         kind: "message",
-        T: o2e,
+        T: f2e,
         opt: !0
     }, {
         no: 6,
@@ -160734,7 +160852,7 @@
         no: 4,
         name: "user_message",
         kind: "message",
-        T: i2e
+        T: c2e
     }, {
         no: 5,
         name: "is_message_done",
@@ -160744,7 +160862,7 @@
         no: 7,
         name: "error",
         kind: "message",
-        T: u2e,
+        T: T2e,
         opt: !0
     }, {
         no: 8,
@@ -160773,11 +160891,11 @@
         no: 11,
         name: "status",
         kind: "message",
-        T: c2e,
+        T: g2e,
         opt: !0
     }]);
-    let r2e = n2e;
-    const s2e = class e extends q {
+    let u2e = l2e;
+    const m2e = class e extends q {
         constructor(e) {
             super(), this.text = "", this.richText = "", je.util.initPartial(e, this)
         }
@@ -160794,7 +160912,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    s2e.runtime = je, s2e.typeName = "aiserver.v1.HeadlessAgenticComposerResponse.UserMessage", s2e.fields = je.util.newFieldList(() => [{
+    m2e.runtime = je, m2e.typeName = "aiserver.v1.HeadlessAgenticComposerResponse.UserMessage", m2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "text",
         kind: "scalar",
@@ -160805,8 +160923,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let i2e = s2e;
-    const a2e = class e extends q {
+    let c2e = m2e;
+    const d2e = class e extends q {
         constructor(e) {
             super(), this.toolCallId = "", je.util.initPartial(e, this)
         }
@@ -160823,7 +160941,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    a2e.runtime = je, a2e.typeName = "aiserver.v1.HeadlessAgenticComposerResponse.FinalToolResult", a2e.fields = je.util.newFieldList(() => [{
+    d2e.runtime = je, d2e.typeName = "aiserver.v1.HeadlessAgenticComposerResponse.FinalToolResult", d2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "tool_call_id",
         kind: "scalar",
@@ -160834,8 +160952,8 @@
         kind: "message",
         T: CU
     }]);
-    let o2e = a2e;
-    const l2e = class e extends q {
+    let f2e = d2e;
+    const p2e = class e extends q {
         constructor(e) {
             super(), this.message = "", je.util.initPartial(e, this)
         }
@@ -160852,7 +160970,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    l2e.runtime = je, l2e.typeName = "aiserver.v1.HeadlessAgenticComposerResponse.Error", l2e.fields = je.util.newFieldList(() => [{
+    p2e.runtime = je, p2e.typeName = "aiserver.v1.HeadlessAgenticComposerResponse.Error", p2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "message",
         kind: "scalar",
@@ -160863,8 +160981,8 @@
         kind: "message",
         T: ki
     }]);
-    let u2e = l2e;
-    const m2e = class e extends q {
+    let T2e = p2e;
+    const _2e = class e extends q {
         constructor(e) {
             super(), this.type = 0, this.message = "", this.isComplete = !1, je.util.initPartial(e, this)
         }
@@ -160881,11 +160999,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    m2e.runtime = je, m2e.typeName = "aiserver.v1.HeadlessAgenticComposerResponse.Status", m2e.fields = je.util.newFieldList(() => [{
+    _2e.runtime = je, _2e.typeName = "aiserver.v1.HeadlessAgenticComposerResponse.Status", _2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "type",
         kind: "enum",
-        T: je.getEnumType(d2e)
+        T: je.getEnumType(w2e)
     }, {
         no: 2,
         name: "message",
@@ -160897,9 +161015,9 @@
         kind: "scalar",
         T: 8
     }]);
-    let c2e = m2e;
-    var d2e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INDEX_SYNC = 1] = "INDEX_SYNC", e[e.GENERIC = 2] = "GENERIC", e))(d2e || {});
-    je.util.setEnumType(d2e, "aiserver.v1.HeadlessAgenticComposerResponse.Status.StatusType", [{
+    let g2e = _2e;
+    var w2e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INDEX_SYNC = 1] = "INDEX_SYNC", e[e.GENERIC = 2] = "GENERIC", e))(w2e || {});
+    je.util.setEnumType(w2e, "aiserver.v1.HeadlessAgenticComposerResponse.Status.StatusType", [{
         no: 0,
         name: "STATUS_TYPE_UNSPECIFIED"
     }, {
@@ -160909,7 +161027,7 @@
         no: 2,
         name: "STATUS_TYPE_GENERIC"
     }]);
-    const f2e = class e extends q {
+    const h2e = class e extends q {
         constructor(e) {
             super(), this.pathEncryptionKey = "", this.repositoryInfoShouldQueryStaging = !1, this.repositoryInfoShouldQueryProd = !1, this.repoQueryAuthToken = "", this.shouldSyncIndex = !1, je.util.initPartial(e, this)
         }
@@ -160926,7 +161044,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    f2e.runtime = je, f2e.typeName = "aiserver.v1.HeadlessAgenticComposerRepositoryInfo", f2e.fields = je.util.newFieldList(() => [{
+    h2e.runtime = je, h2e.typeName = "aiserver.v1.HeadlessAgenticComposerRepositoryInfo", h2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repository_info",
         kind: "message",
@@ -160962,8 +161080,8 @@
         kind: "message",
         T: Pk
     }]);
-    let p2e = f2e;
-    const T2e = class e extends q {
+    let y2e = h2e;
+    const k2e = class e extends q {
         constructor(e) {
             super(), this.text = "", this.richText = "", this.fileSelections = [], this.fileAttachments = [], this.images = [], this.conversationHistory = [], this.documentationIdentifiers = [], this.externalLinks = [], this.blobDataPerMessage = [], je.util.initPartial(e, this)
         }
@@ -160980,7 +161098,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    T2e.runtime = je, T2e.typeName = "aiserver.v1.HeadlessAgenticComposerPrompt", T2e.fields = je.util.newFieldList(() => [{
+    k2e.runtime = je, k2e.typeName = "aiserver.v1.HeadlessAgenticComposerPrompt", k2e.fields = je.util.newFieldList(() => [{
         no: 5,
         name: "base_conversation_message",
         kind: "message",
@@ -160999,13 +161117,13 @@
         no: 2,
         name: "file_selections",
         kind: "message",
-        T: w2e,
+        T: E2e,
         repeated: !0
     }, {
         no: 3,
         name: "file_attachments",
         kind: "message",
-        T: y2e,
+        T: N2e,
         repeated: !0
     }, {
         no: 4,
@@ -161044,8 +161162,8 @@
         T: Jke,
         repeated: !0
     }]);
-    let _2e = T2e;
-    const g2e = class e extends q {
+    let S2e = k2e;
+    const J2e = class e extends q {
         constructor(e) {
             super(), this.relativeWorkspacePath = "", je.util.initPartial(e, this)
         }
@@ -161062,14 +161180,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    g2e.runtime = je, g2e.typeName = "aiserver.v1.HeadlessAgenticComposerPrompt.FileSelection", g2e.fields = je.util.newFieldList(() => [{
+    J2e.runtime = je, J2e.typeName = "aiserver.v1.HeadlessAgenticComposerPrompt.FileSelection", J2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "relative_workspace_path",
         kind: "scalar",
         T: 9
     }]);
-    let w2e = g2e;
-    const h2e = class e extends q {
+    let E2e = J2e;
+    const v2e = class e extends q {
         constructor(e) {
             super(), this.name = "", this.contents = "", je.util.initPartial(e, this)
         }
@@ -161086,7 +161204,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    h2e.runtime = je, h2e.typeName = "aiserver.v1.HeadlessAgenticComposerPrompt.FileAttachment", h2e.fields = je.util.newFieldList(() => [{
+    v2e.runtime = je, v2e.typeName = "aiserver.v1.HeadlessAgenticComposerPrompt.FileAttachment", v2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -161097,8 +161215,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let y2e = h2e;
-    const k2e = class e extends q {
+    let N2e = v2e;
+    const B2e = class e extends q {
         constructor(e) {
             super(), this.chatModelName = "", this.autoCommit = !1, this.isBackground = !1, this.additionalModelDetails = [], je.util.initPartial(e, this)
         }
@@ -161115,7 +161233,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    k2e.runtime = je, k2e.typeName = "aiserver.v1.HeadlessAgenticComposerConfig", k2e.fields = je.util.newFieldList(() => [{
+    B2e.runtime = je, B2e.typeName = "aiserver.v1.HeadlessAgenticComposerConfig", B2e.fields = je.util.newFieldList(() => [{
         no: 2,
         name: "chat_model_name",
         kind: "scalar",
@@ -161145,7 +161263,7 @@
         no: 8,
         name: "background_agent_source",
         kind: "enum",
-        T: je.getEnumType(y$e),
+        T: je.getEnumType(N$e),
         opt: !0
     }, {
         no: 9,
@@ -161199,10 +161317,10 @@
         no: 17,
         name: "cloud_subagent_parent",
         kind: "message",
-        T: E0e,
+        T: I0e,
         opt: !0
     }]);
-    const S2e = class e extends q {
+    const q2e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -161219,14 +161337,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    S2e.runtime = je, S2e.typeName = "aiserver.v1.GetBackgroundComposerStatusRequest", S2e.fields = je.util.newFieldList(() => [{
+    q2e.runtime = je, q2e.typeName = "aiserver.v1.GetBackgroundComposerStatusRequest", q2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let J2e = S2e;
-    const E2e = class e extends q {
+    let P2e = q2e;
+    const I2e = class e extends q {
         constructor(e) {
             super(), this.status = 0, this.isUnread = !1, je.util.initPartial(e, this)
         }
@@ -161243,19 +161361,19 @@
             return je.util.equals(e, t, n)
         }
     };
-    E2e.runtime = je, E2e.typeName = "aiserver.v1.GetBackgroundComposerStatusResponse", E2e.fields = je.util.newFieldList(() => [{
+    I2e.runtime = je, I2e.typeName = "aiserver.v1.GetBackgroundComposerStatusResponse", I2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "status",
         kind: "enum",
-        T: je.getEnumType(w$e)
+        T: je.getEnumType(E$e)
     }, {
         no: 2,
         name: "is_unread",
         kind: "scalar",
         T: 8
     }]);
-    let v2e = E2e;
-    const N2e = class e extends q {
+    let R2e = I2e;
+    const L2e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.followup = "", this.richFollowup = "", this.synchronous = !1, this.requestedAdditionalStoreIds = [], je.util.initPartial(e, this)
         }
@@ -161272,7 +161390,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    N2e.runtime = je, N2e.typeName = "aiserver.v1.AddAsyncFollowupBackgroundComposerRequest", N2e.fields = je.util.newFieldList(() => [{
+    L2e.runtime = je, L2e.typeName = "aiserver.v1.AddAsyncFollowupBackgroundComposerRequest", L2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -161313,7 +161431,7 @@
         no: 7,
         name: "followup_source",
         kind: "enum",
-        T: je.getEnumType(y$e),
+        T: je.getEnumType(N$e),
         opt: !0
     }, {
         no: 8,
@@ -161325,7 +161443,7 @@
         no: 9,
         name: "plan_followup_type",
         kind: "enum",
-        T: je.getEnumType(v$e),
+        T: je.getEnumType(R$e),
         opt: !0
     }, {
         no: 10,
@@ -161370,8 +161488,8 @@
         T: 9,
         repeated: !0
     }]);
-    let B2e = N2e;
-    const q2e = class e extends q {
+    let F2e = L2e;
+    const C2e = class e extends q {
         constructor(e) {
             super(), this.runId = "", je.util.initPartial(e, this)
         }
@@ -161388,14 +161506,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    q2e.runtime = je, q2e.typeName = "aiserver.v1.AddAsyncFollowupBackgroundComposerResponse", q2e.fields = je.util.newFieldList(() => [{
+    C2e.runtime = je, C2e.typeName = "aiserver.v1.AddAsyncFollowupBackgroundComposerResponse", C2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "run_id",
         kind: "scalar",
         T: 9
     }]);
-    let P2e = q2e;
-    const I2e = class e extends q {
+    let A2e = C2e;
+    const x2e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -161412,7 +161530,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    I2e.runtime = je, I2e.typeName = "aiserver.v1.SubmitInteractionResponseBackgroundComposerRequest", I2e.fields = je.util.newFieldList(() => [{
+    x2e.runtime = je, x2e.typeName = "aiserver.v1.SubmitInteractionResponseBackgroundComposerRequest", x2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -161423,8 +161541,8 @@
         kind: "message",
         T: qb
     }]);
-    let R2e = I2e;
-    const L2e = class e extends q {
+    let O2e = x2e;
+    const D2e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -161441,9 +161559,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    L2e.runtime = je, L2e.typeName = "aiserver.v1.SubmitInteractionResponseBackgroundComposerResponse", L2e.fields = je.util.newFieldList(() => []);
-    let F2e = L2e;
-    const C2e = class e extends q {
+    D2e.runtime = je, D2e.typeName = "aiserver.v1.SubmitInteractionResponseBackgroundComposerResponse", D2e.fields = je.util.newFieldList(() => []);
+    let b2e = D2e;
+    const U2e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -161460,14 +161578,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    C2e.runtime = je, C2e.typeName = "aiserver.v1.ListPendingFollowupsRequest", C2e.fields = je.util.newFieldList(() => [{
+    U2e.runtime = je, U2e.typeName = "aiserver.v1.ListPendingFollowupsRequest", U2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let A2e = C2e;
-    const x2e = class e extends q {
+    let M2e = U2e;
+    const G2e = class e extends q {
         constructor(e) {
             super(), this.followupId = "", this.text = "", this.richText = "", this.createdAtMs = b.zero, this.source = 0, this.cursorCommands = [], this.cursorCommandsExplicitlySet = !1, this.pastChats = [], this.pastChatsExplicitlySet = !1, this.blobData = [], je.util.initPartial(e, this)
         }
@@ -161484,7 +161602,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    x2e.runtime = je, x2e.typeName = "aiserver.v1.PendingFollowup", x2e.fields = je.util.newFieldList(() => [{
+    G2e.runtime = je, G2e.typeName = "aiserver.v1.PendingFollowup", G2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "followup_id",
         kind: "scalar",
@@ -161508,7 +161626,7 @@
         no: 5,
         name: "source",
         kind: "enum",
-        T: je.getEnumType(y$e)
+        T: je.getEnumType(N$e)
     }, {
         no: 6,
         name: "cursor_commands",
@@ -161544,8 +161662,8 @@
         T: kke,
         repeated: !0
     }]);
-    let O2e = x2e;
-    const D2e = class e extends q {
+    let Y2e = G2e;
+    const V2e = class e extends q {
         constructor(e) {
             super(), this.pendingFollowups = [], je.util.initPartial(e, this)
         }
@@ -161562,15 +161680,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    D2e.runtime = je, D2e.typeName = "aiserver.v1.ListPendingFollowupsResponse", D2e.fields = je.util.newFieldList(() => [{
+    V2e.runtime = je, V2e.typeName = "aiserver.v1.ListPendingFollowupsResponse", V2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pending_followups",
         kind: "message",
-        T: O2e,
+        T: Y2e,
         repeated: !0
     }]);
-    let b2e = D2e;
-    const U2e = class e extends q {
+    let H2e = V2e;
+    const K2e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.followupId = "", je.util.initPartial(e, this)
         }
@@ -161587,7 +161705,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    U2e.runtime = je, U2e.typeName = "aiserver.v1.UpdatePendingFollowupRequest", U2e.fields = je.util.newFieldList(() => [{
+    K2e.runtime = je, K2e.typeName = "aiserver.v1.UpdatePendingFollowupRequest", K2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -161603,8 +161721,8 @@
         kind: "message",
         T: D1
     }]);
-    let M2e = U2e;
-    const G2e = class e extends q {
+    let W2e = K2e;
+    const z2e = class e extends q {
         constructor(e) {
             super(), this.success = !1, this.errorMessage = "", je.util.initPartial(e, this)
         }
@@ -161621,7 +161739,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    G2e.runtime = je, G2e.typeName = "aiserver.v1.UpdatePendingFollowupResponse", G2e.fields = je.util.newFieldList(() => [{
+    z2e.runtime = je, z2e.typeName = "aiserver.v1.UpdatePendingFollowupResponse", z2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -161632,8 +161750,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Y2e = G2e;
-    const V2e = class e extends q {
+    let j2e = z2e;
+    const X2e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.followupId = "", je.util.initPartial(e, this)
         }
@@ -161650,7 +161768,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    V2e.runtime = je, V2e.typeName = "aiserver.v1.DeletePendingFollowupRequest", V2e.fields = je.util.newFieldList(() => [{
+    X2e.runtime = je, X2e.typeName = "aiserver.v1.DeletePendingFollowupRequest", X2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -161661,8 +161779,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let H2e = V2e;
-    const K2e = class e extends q {
+    let Q2e = X2e;
+    const $2e = class e extends q {
         constructor(e) {
             super(), this.success = !1, this.errorMessage = "", je.util.initPartial(e, this)
         }
@@ -161679,7 +161797,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    K2e.runtime = je, K2e.typeName = "aiserver.v1.DeletePendingFollowupResponse", K2e.fields = je.util.newFieldList(() => [{
+    $2e.runtime = je, $2e.typeName = "aiserver.v1.DeletePendingFollowupResponse", $2e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -161690,8 +161808,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let W2e = K2e;
-    const z2e = class e extends q {
+    let Z2e = $2e;
+    const e3e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.followupId = "", this.targetFollowupId = "", this.insertAfter = !1, je.util.initPartial(e, this)
         }
@@ -161708,7 +161826,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    z2e.runtime = je, z2e.typeName = "aiserver.v1.ReorderPendingFollowupRequest", z2e.fields = je.util.newFieldList(() => [{
+    e3e.runtime = je, e3e.typeName = "aiserver.v1.ReorderPendingFollowupRequest", e3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -161729,97 +161847,10 @@
         kind: "scalar",
         T: 8
     }]);
-    let j2e = z2e;
-    const X2e = class e extends q {
-        constructor(e) {
-            super(), this.success = !1, this.errorMessage = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    X2e.runtime = je, X2e.typeName = "aiserver.v1.ReorderPendingFollowupResponse", X2e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "success",
-        kind: "scalar",
-        T: 8
-    }, {
-        no: 2,
-        name: "error_message",
-        kind: "scalar",
-        T: 9
-    }]);
-    let Q2e = X2e;
-    const $2e = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", this.followupId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    $2e.runtime = je, $2e.typeName = "aiserver.v1.SubmitPendingFollowupNowRequest", $2e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "followup_id",
-        kind: "scalar",
-        T: 9
-    }]);
-    let Z2e = $2e;
-    const e3e = class e extends q {
-        constructor(e) {
-            super(), this.success = !1, this.errorMessage = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    e3e.runtime = je, e3e.typeName = "aiserver.v1.SubmitPendingFollowupNowResponse", e3e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "success",
-        kind: "scalar",
-        T: 8
-    }, {
-        no: 2,
-        name: "error_message",
-        kind: "scalar",
-        T: 9
-    }]);
     let t3e = e3e;
     const n3e = class e extends q {
         constructor(e) {
-            super(), this.bcId = "", this.followupId = "", je.util.initPartial(e, this)
+            super(), this.success = !1, this.errorMessage = "", je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -161834,20 +161865,49 @@
             return je.util.equals(e, t, n)
         }
     };
-    n3e.runtime = je, n3e.typeName = "aiserver.v1.MarkFollowupEditingRequest", n3e.fields = je.util.newFieldList(() => [{
+    n3e.runtime = je, n3e.typeName = "aiserver.v1.ReorderPendingFollowupResponse", n3e.fields = je.util.newFieldList(() => [{
         no: 1,
-        name: "bc_id",
+        name: "success",
         kind: "scalar",
-        T: 9
+        T: 8
     }, {
         no: 2,
-        name: "followup_id",
+        name: "error_message",
         kind: "scalar",
         T: 9
     }]);
     let r3e = n3e;
     const s3e = class e extends q {
         constructor(e) {
+            super(), this.bcId = "", this.followupId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    s3e.runtime = je, s3e.typeName = "aiserver.v1.SubmitPendingFollowupNowRequest", s3e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "followup_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let i3e = s3e;
+    const a3e = class e extends q {
+        constructor(e) {
             super(), this.success = !1, this.errorMessage = "", je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -161863,7 +161923,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    s3e.runtime = je, s3e.typeName = "aiserver.v1.MarkFollowupEditingResponse", s3e.fields = je.util.newFieldList(() => [{
+    a3e.runtime = je, a3e.typeName = "aiserver.v1.SubmitPendingFollowupNowResponse", a3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -161874,34 +161934,10 @@
         kind: "scalar",
         T: 9
     }]);
-    let i3e = s3e;
-    const a3e = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    a3e.runtime = je, a3e.typeName = "aiserver.v1.StartSlackStreamingForFollowupRequest", a3e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9
-    }]);
     let o3e = a3e;
     const l3e = class e extends q {
         constructor(e) {
-            super(), je.util.initPartial(e, this)
+            super(), this.bcId = "", this.followupId = "", je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -161916,127 +161952,132 @@
             return je.util.equals(e, t, n)
         }
     };
-    l3e.runtime = je, l3e.typeName = "aiserver.v1.StartSlackStreamingForFollowupResponse", l3e.fields = je.util.newFieldList(() => []);
-    let u3e = l3e;
-    const m3e = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    m3e.runtime = je, m3e.typeName = "aiserver.v1.StartGithubStreamingForFollowupRequest", m3e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9
-    }]);
-    let c3e = m3e;
-    const d3e = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    d3e.runtime = je, d3e.typeName = "aiserver.v1.StartGithubStreamingForFollowupResponse", d3e.fields = je.util.newFieldList(() => []);
-    let f3e = d3e;
-    const p3e = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    p3e.runtime = je, p3e.typeName = "aiserver.v1.StartLinearStreamingForFollowupRequest", p3e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9
-    }]);
-    let T3e = p3e;
-    const _3e = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    _3e.runtime = je, _3e.typeName = "aiserver.v1.StartLinearStreamingForFollowupResponse", _3e.fields = je.util.newFieldList(() => []);
-    let g3e = _3e;
-    const w3e = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", this.includeDiff = !1, this.doNotThrowIfSetupNotFinished = !1, je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    w3e.runtime = je, w3e.typeName = "aiserver.v1.GetBackgroundComposerInfoRequest", w3e.fields = je.util.newFieldList(() => [{
+    l3e.runtime = je, l3e.typeName = "aiserver.v1.MarkFollowupEditingRequest", l3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }, {
         no: 2,
-        name: "include_diff",
+        name: "followup_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let u3e = l3e;
+    const m3e = class e extends q {
+        constructor(e) {
+            super(), this.success = !1, this.errorMessage = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    m3e.runtime = je, m3e.typeName = "aiserver.v1.MarkFollowupEditingResponse", m3e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "success",
         kind: "scalar",
         T: 8
     }, {
-        no: 3,
-        name: "do_not_throw_if_setup_not_finished",
+        no: 2,
+        name: "error_message",
         kind: "scalar",
-        T: 8
+        T: 9
     }]);
+    let c3e = m3e;
+    const d3e = class e extends q {
+        constructor(e) {
+            super(), this.bcId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    d3e.runtime = je, d3e.typeName = "aiserver.v1.StartSlackStreamingForFollowupRequest", d3e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let f3e = d3e;
+    const p3e = class e extends q {
+        constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    p3e.runtime = je, p3e.typeName = "aiserver.v1.StartSlackStreamingForFollowupResponse", p3e.fields = je.util.newFieldList(() => []);
+    let T3e = p3e;
+    const _3e = class e extends q {
+        constructor(e) {
+            super(), this.bcId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    _3e.runtime = je, _3e.typeName = "aiserver.v1.StartGithubStreamingForFollowupRequest", _3e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let g3e = _3e;
+    const w3e = class e extends q {
+        constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    w3e.runtime = je, w3e.typeName = "aiserver.v1.StartGithubStreamingForFollowupResponse", w3e.fields = je.util.newFieldList(() => []);
     let h3e = w3e;
     const y3e = class e extends q {
         constructor(e) {
@@ -162055,7 +162096,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    y3e.runtime = je, y3e.typeName = "aiserver.v1.GetBackgroundComposerTimingsRequest", y3e.fields = je.util.newFieldList(() => [{
+    y3e.runtime = je, y3e.typeName = "aiserver.v1.StartLinearStreamingForFollowupRequest", y3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -162063,6 +162104,83 @@
     }]);
     let k3e = y3e;
     const S3e = class e extends q {
+        constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    S3e.runtime = je, S3e.typeName = "aiserver.v1.StartLinearStreamingForFollowupResponse", S3e.fields = je.util.newFieldList(() => []);
+    let J3e = S3e;
+    const E3e = class e extends q {
+        constructor(e) {
+            super(), this.bcId = "", this.includeDiff = !1, this.doNotThrowIfSetupNotFinished = !1, je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    E3e.runtime = je, E3e.typeName = "aiserver.v1.GetBackgroundComposerInfoRequest", E3e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "include_diff",
+        kind: "scalar",
+        T: 8
+    }, {
+        no: 3,
+        name: "do_not_throw_if_setup_not_finished",
+        kind: "scalar",
+        T: 8
+    }]);
+    let v3e = E3e;
+    const N3e = class e extends q {
+        constructor(e) {
+            super(), this.bcId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    N3e.runtime = je, N3e.typeName = "aiserver.v1.GetBackgroundComposerTimingsRequest", N3e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let B3e = N3e;
+    const q3e = class e extends q {
         constructor(e) {
             super(), this.timestampMs = 0, this.event = 0, je.util.initPartial(e, this)
         }
@@ -162079,7 +162197,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    S3e.runtime = je, S3e.typeName = "aiserver.v1.CloudAgentTimingEvent", S3e.fields = je.util.newFieldList(() => [{
+    q3e.runtime = je, q3e.typeName = "aiserver.v1.CloudAgentTimingEvent", q3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "timestamp_ms",
         kind: "scalar",
@@ -162088,7 +162206,7 @@
         no: 2,
         name: "event",
         kind: "enum",
-        T: je.getEnumType(N$e)
+        T: je.getEnumType(L$e)
     }, {
         no: 3,
         name: "turn_number",
@@ -162096,8 +162214,8 @@
         T: 13,
         opt: !0
     }]);
-    let J3e = S3e;
-    const E3e = class e extends q {
+    let P3e = q3e;
+    const I3e = class e extends q {
         constructor(e) {
             super(), this.startingCommit = "", this.baseBranch = "", this.status = 0, this.unread = !1, this.environmentPorts = [], this.videoAnnotations = [], this.prs = [], this.vmProvisionedSkills = [], this.labels = [], this.startupWarnings = [], je.util.initPartial(e, this)
         }
@@ -162114,11 +162232,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    E3e.runtime = je, E3e.typeName = "aiserver.v1.DetailedBackgroundComposer", E3e.fields = je.util.newFieldList(() => [{
+    I3e.runtime = je, I3e.typeName = "aiserver.v1.DetailedBackgroundComposer", I3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "composer",
         kind: "message",
-        T: _0e
+        T: S0e
     }, {
         no: 2,
         name: "starting_commit",
@@ -162133,12 +162251,12 @@
         no: 4,
         name: "prompt",
         kind: "message",
-        T: _2e
+        T: S2e
     }, {
         no: 5,
         name: "status",
         kind: "enum",
-        T: je.getEnumType(w$e)
+        T: je.getEnumType(E$e)
     }, {
         no: 6,
         name: "diff_since_start",
@@ -162169,7 +162287,7 @@
         no: 11,
         name: "environment_ports",
         kind: "message",
-        T: Net,
+        T: Let,
         repeated: !0
     }, {
         no: 12,
@@ -162205,7 +162323,7 @@
         no: 18,
         name: "video_annotations",
         kind: "message",
-        T: O3e,
+        T: Y3e,
         repeated: !0
     }, {
         no: 19,
@@ -162217,13 +162335,13 @@
         no: 20,
         name: "prs",
         kind: "message",
-        T: P3e,
+        T: A3e,
         repeated: !0
     }, {
         no: 21,
         name: "vm_provisioned_skills",
         kind: "message",
-        T: B3e,
+        T: F3e,
         repeated: !0
     }, {
         no: 22,
@@ -162235,7 +162353,7 @@
         no: 23,
         name: "repo_config",
         kind: "message",
-        T: U0e,
+        T: K0e,
         opt: !0
     }, {
         no: 24,
@@ -162253,13 +162371,13 @@
         no: 26,
         name: "labels",
         kind: "message",
-        T: xnt,
+        T: Gnt,
         repeated: !0
     }, {
         no: 27,
         name: "used_environment_version",
         kind: "message",
-        T: P8e,
+        T: A8e,
         opt: !0
     }, {
         no: 28,
@@ -162271,17 +162389,17 @@
         no: 29,
         name: "cloud_subagent_parent",
         kind: "message",
-        T: E0e,
+        T: I0e,
         opt: !0
     }, {
         no: 30,
         name: "startup_warnings",
         kind: "message",
-        T: btt,
+        T: Htt,
         repeated: !0
     }]);
-    let v3e = E3e;
-    const N3e = class e extends q {
+    let R3e = I3e;
+    const L3e = class e extends q {
         constructor(e) {
             super(), this.skillId = "", this.description = "", this.environments = [], this.disabledEnvironments = [], je.util.initPartial(e, this)
         }
@@ -162298,7 +162416,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    N3e.runtime = je, N3e.typeName = "aiserver.v1.VmProvisionedSkill", N3e.fields = je.util.newFieldList(() => [{
+    L3e.runtime = je, L3e.typeName = "aiserver.v1.VmProvisionedSkill", L3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "skill_id",
         kind: "scalar",
@@ -162321,8 +162439,8 @@
         T: 9,
         repeated: !0
     }]);
-    let B3e = N3e;
-    const q3e = class e extends q {
+    let F3e = L3e;
+    const C3e = class e extends q {
         constructor(e) {
             super(), this.branchName = "", this.baseBranch = "", je.util.initPartial(e, this)
         }
@@ -162339,7 +162457,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    q3e.runtime = je, q3e.typeName = "aiserver.v1.BackgroundComposerPr", q3e.fields = je.util.newFieldList(() => [{
+    C3e.runtime = je, C3e.typeName = "aiserver.v1.BackgroundComposerPr", C3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "branch_name",
         kind: "scalar",
@@ -162365,7 +162483,7 @@
         no: 5,
         name: "pr_status",
         kind: "enum",
-        T: je.getEnumType(S$e),
+        T: je.getEnumType(q$e),
         opt: !0
     }, {
         no: 6,
@@ -162380,8 +162498,8 @@
         T: 9,
         opt: !0
     }]);
-    let P3e = q3e;
-    const I3e = class e extends q {
+    let A3e = C3e;
+    const x3e = class e extends q {
         constructor(e) {
             super(), this.minutes = 0, this.seconds = 0, je.util.initPartial(e, this)
         }
@@ -162398,7 +162516,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    I3e.runtime = je, I3e.typeName = "aiserver.v1.VideoTimestamp", I3e.fields = je.util.newFieldList(() => [{
+    x3e.runtime = je, x3e.typeName = "aiserver.v1.VideoTimestamp", x3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "minutes",
         kind: "scalar",
@@ -162409,8 +162527,8 @@
         kind: "scalar",
         T: 1
     }]);
-    let R3e = I3e;
-    const L3e = class e extends q {
+    let O3e = x3e;
+    const D3e = class e extends q {
         constructor(e) {
             super(), this.label = "", this.shouldHide = !1, je.util.initPartial(e, this)
         }
@@ -162427,11 +162545,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    L3e.runtime = je, L3e.typeName = "aiserver.v1.VideoChapter", L3e.fields = je.util.newFieldList(() => [{
+    D3e.runtime = je, D3e.typeName = "aiserver.v1.VideoChapter", D3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "start_time",
         kind: "message",
-        T: R3e
+        T: O3e
     }, {
         no: 3,
         name: "label",
@@ -162443,8 +162561,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let F3e = L3e;
-    const C3e = class e extends q {
+    let b3e = D3e;
+    const U3e = class e extends q {
         constructor(e) {
             super(), this.labeledChapters = [], je.util.initPartial(e, this)
         }
@@ -162461,17 +162579,17 @@
             return je.util.equals(e, t, n)
         }
     };
-    C3e.runtime = je, C3e.typeName = "aiserver.v1.VideoAnnotation", C3e.fields = je.util.newFieldList(() => [{
+    U3e.runtime = je, U3e.typeName = "aiserver.v1.VideoAnnotation", U3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "labeled_chapters",
         kind: "message",
-        T: F3e,
+        T: b3e,
         repeated: !0
     }, {
         no: 2,
         name: "thumbnail_timestamp",
         kind: "message",
-        T: R3e
+        T: O3e
     }, {
         no: 3,
         name: "trim_start_seconds",
@@ -162485,8 +162603,8 @@
         T: 1,
         opt: !0
     }]);
-    let A3e = C3e;
-    const x3e = class e extends q {
+    let M3e = U3e;
+    const G3e = class e extends q {
         constructor(e) {
             super(), this.artifactPath = "", je.util.initPartial(e, this)
         }
@@ -162503,7 +162621,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    x3e.runtime = je, x3e.typeName = "aiserver.v1.VideoAnnotationEntry", x3e.fields = je.util.newFieldList(() => [{
+    G3e.runtime = je, G3e.typeName = "aiserver.v1.VideoAnnotationEntry", G3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "artifact_path",
         kind: "scalar",
@@ -162512,80 +162630,7 @@
         no: 2,
         name: "annotation",
         kind: "message",
-        T: A3e
-    }]);
-    let O3e = x3e;
-    const D3e = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    D3e.runtime = je, D3e.typeName = "aiserver.v1.GetBackgroundComposerInfoResponse", D3e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "composer",
-        kind: "message",
-        T: v3e
-    }]);
-    let b3e = D3e;
-    const U3e = class e extends q {
-        constructor(e) {
-            super(), this.events = [], je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    U3e.runtime = je, U3e.typeName = "aiserver.v1.GetBackgroundComposerTimingsResponse", U3e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "events",
-        kind: "message",
-        T: J3e,
-        repeated: !0
-    }]);
-    let M3e = U3e;
-    const G3e = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    G3e.runtime = je, G3e.typeName = "aiserver.v1.GetBackgroundComposerRepositoryInfoRequest", G3e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9
+        T: M3e
     }]);
     let Y3e = G3e;
     const V3e = class e extends q {
@@ -162605,25 +162650,39 @@
             return je.util.equals(e, t, n)
         }
     };
-    V3e.runtime = je, V3e.typeName = "aiserver.v1.GetBackgroundComposerRepositoryInfoResponse", V3e.fields = je.util.newFieldList(() => [{
+    V3e.runtime = je, V3e.typeName = "aiserver.v1.GetBackgroundComposerInfoResponse", V3e.fields = je.util.newFieldList(() => [{
         no: 1,
-        name: "repository_info",
+        name: "composer",
         kind: "message",
-        T: qS
-    }, {
-        no: 2,
-        name: "path_encryption_key",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }, {
-        no: 3,
-        name: "query_only_repo_access",
-        kind: "message",
-        T: Pk
+        T: R3e
     }]);
     let H3e = V3e;
     const K3e = class e extends q {
+        constructor(e) {
+            super(), this.events = [], je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    K3e.runtime = je, K3e.typeName = "aiserver.v1.GetBackgroundComposerTimingsResponse", K3e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "events",
+        kind: "message",
+        T: P3e,
+        repeated: !0
+    }]);
+    let W3e = K3e;
+    const z3e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -162640,14 +162699,73 @@
             return je.util.equals(e, t, n)
         }
     };
-    K3e.runtime = je, K3e.typeName = "aiserver.v1.GetMachineRequest", K3e.fields = je.util.newFieldList(() => [{
+    z3e.runtime = je, z3e.typeName = "aiserver.v1.GetBackgroundComposerRepositoryInfoRequest", z3e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let W3e = K3e;
-    const z3e = class e extends q {
+    let j3e = z3e;
+    const X3e = class e extends q {
+        constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    X3e.runtime = je, X3e.typeName = "aiserver.v1.GetBackgroundComposerRepositoryInfoResponse", X3e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "repository_info",
+        kind: "message",
+        T: qS
+    }, {
+        no: 2,
+        name: "path_encryption_key",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }, {
+        no: 3,
+        name: "query_only_repo_access",
+        kind: "message",
+        T: Pk
+    }]);
+    let Q3e = X3e;
+    const $3e = class e extends q {
+        constructor(e) {
+            super(), this.bcId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    $3e.runtime = je, $3e.typeName = "aiserver.v1.GetMachineRequest", $3e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let Z3e = $3e;
+    const e5e = class e extends q {
         constructor(e) {
             super(), this.podId = "", this.tenantId = "", this.networkToken = "", this.cluster = "", je.util.initPartial(e, this)
         }
@@ -162664,7 +162782,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    z3e.runtime = je, z3e.typeName = "aiserver.v1.PodReference", z3e.fields = je.util.newFieldList(() => [{
+    e5e.runtime = je, e5e.typeName = "aiserver.v1.PodReference", e5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pod_id",
         kind: "scalar",
@@ -162697,8 +162815,8 @@
         T: 9,
         opt: !0
     }]);
-    let j3e = z3e;
-    const X3e = class e extends q {
+    let t5e = e5e;
+    const n5e = class e extends q {
         constructor(e) {
             super(), this.workerId = "", this.workspaceRootPath = "", je.util.initPartial(e, this)
         }
@@ -162715,7 +162833,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    X3e.runtime = je, X3e.typeName = "aiserver.v1.WorkerReference", X3e.fields = je.util.newFieldList(() => [{
+    n5e.runtime = je, n5e.typeName = "aiserver.v1.WorkerReference", n5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "worker_id",
         kind: "scalar",
@@ -162726,8 +162844,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Q3e = X3e;
-    const $3e = class e extends q {
+    let r5e = n5e;
+    const s5e = class e extends q {
         constructor(e) {
             super(), this.reference = {
                 case: void 0
@@ -162746,21 +162864,21 @@
             return je.util.equals(e, t, n)
         }
     };
-    $3e.runtime = je, $3e.typeName = "aiserver.v1.MachineReference", $3e.fields = je.util.newFieldList(() => [{
+    s5e.runtime = je, s5e.typeName = "aiserver.v1.MachineReference", s5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pod",
         kind: "message",
-        T: j3e,
+        T: t5e,
         oneof: "reference"
     }, {
         no: 2,
         name: "worker",
         kind: "message",
-        T: Q3e,
+        T: r5e,
         oneof: "reference"
     }]);
-    let Z3e = $3e;
-    const e5e = class e extends q {
+    let i5e = s5e;
+    const a5e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -162777,14 +162895,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    e5e.runtime = je, e5e.typeName = "aiserver.v1.GetMachineResponse", e5e.fields = je.util.newFieldList(() => [{
+    a5e.runtime = je, a5e.typeName = "aiserver.v1.GetMachineResponse", a5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "machine",
         kind: "message",
-        T: Z3e
+        T: i5e
     }]);
-    let t5e = e5e;
-    const n5e = class e extends q {
+    let o5e = a5e;
+    const l5e = class e extends q {
         constructor(e) {
             super(), this.mandatoryRepoUrls = [], this.optionalRepoUrls = [], je.util.initPartial(e, this)
         }
@@ -162801,7 +162919,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    n5e.runtime = je, n5e.typeName = "aiserver.v1.GetGithubAccessTokenForReposRequest", n5e.fields = je.util.newFieldList(() => [{
+    l5e.runtime = je, l5e.typeName = "aiserver.v1.GetGithubAccessTokenForReposRequest", l5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "mandatory_repo_urls",
         kind: "scalar",
@@ -162820,8 +162938,8 @@
         T: 8,
         opt: !0
     }]);
-    let r5e = n5e;
-    const s5e = class e extends q {
+    let u5e = l5e;
+    const m5e = class e extends q {
         constructor(e) {
             super(), this.repoUrlStatuses = [], this.errorType = 0, je.util.initPartial(e, this)
         }
@@ -162838,7 +162956,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    s5e.runtime = je, s5e.typeName = "aiserver.v1.GetGithubAccessTokenForReposResponse", s5e.fields = je.util.newFieldList(() => [{
+    m5e.runtime = je, m5e.typeName = "aiserver.v1.GetGithubAccessTokenForReposResponse", m5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "has_access",
         kind: "scalar",
@@ -162854,13 +162972,13 @@
         no: 3,
         name: "repo_url_statuses",
         kind: "message",
-        T: o5e,
+        T: f5e,
         repeated: !0
     }, {
         no: 4,
         name: "error_type",
         kind: "enum",
-        T: je.getEnumType(B$e)
+        T: je.getEnumType(F$e)
     }, {
         no: 5,
         name: "github_redirect_url",
@@ -162868,8 +162986,8 @@
         T: 9,
         opt: !0
     }]);
-    let i5e = s5e;
-    const a5e = class e extends q {
+    let c5e = m5e;
+    const d5e = class e extends q {
         constructor(e) {
             super(), this.repoUrl = "", this.hasAccess = !1, je.util.initPartial(e, this)
         }
@@ -162886,7 +163004,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    a5e.runtime = je, a5e.typeName = "aiserver.v1.GetGithubAccessTokenForReposResponse.Status", a5e.fields = je.util.newFieldList(() => [{
+    d5e.runtime = je, d5e.typeName = "aiserver.v1.GetGithubAccessTokenForReposResponse.Status", d5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
@@ -162903,8 +163021,8 @@
         T: 9,
         opt: !0
     }]);
-    let o5e = a5e;
-    const l5e = class e extends q {
+    let f5e = d5e;
+    const p5e = class e extends q {
         constructor(e) {
             super(), this.method = "", this.path = "", this.githubUserToken = "", this.caller = "", je.util.initPartial(e, this)
         }
@@ -162921,7 +163039,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    l5e.runtime = je, l5e.typeName = "aiserver.v1.MakeGithubRequestRequest", l5e.fields = je.util.newFieldList(() => [{
+    p5e.runtime = je, p5e.typeName = "aiserver.v1.MakeGithubRequestRequest", p5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "method",
         kind: "scalar",
@@ -162966,8 +163084,8 @@
         T: 9,
         opt: !0
     }]);
-    let u5e = l5e;
-    const m5e = class e extends q {
+    let T5e = p5e;
+    const _5e = class e extends q {
         constructor(e) {
             super(), this.status = 0, this.statusText = "", this.headers = {}, this.body = "", je.util.initPartial(e, this)
         }
@@ -162984,7 +163102,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    m5e.runtime = je, m5e.typeName = "aiserver.v1.MakeGithubRequestResponse", m5e.fields = je.util.newFieldList(() => [{
+    _5e.runtime = je, _5e.typeName = "aiserver.v1.MakeGithubRequestResponse", _5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "status",
         kind: "scalar",
@@ -163009,8 +163127,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let c5e = m5e;
-    const d5e = class e extends q {
+    let g5e = _5e;
+    const w5e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -163027,14 +163145,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    d5e.runtime = je, d5e.typeName = "aiserver.v1.GetBackgroundComposerConversationRequest", d5e.fields = je.util.newFieldList(() => [{
+    w5e.runtime = je, w5e.typeName = "aiserver.v1.GetBackgroundComposerConversationRequest", w5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let f5e = d5e;
-    const p5e = class e extends q {
+    let h5e = w5e;
+    const y5e = class e extends q {
         constructor(e) {
             super(), this.conversation = [], je.util.initPartial(e, this)
         }
@@ -163051,15 +163169,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    p5e.runtime = je, p5e.typeName = "aiserver.v1.GetBackgroundComposerConversationResponse", p5e.fields = je.util.newFieldList(() => [{
+    y5e.runtime = je, y5e.typeName = "aiserver.v1.GetBackgroundComposerConversationResponse", y5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "conversation",
         kind: "message",
         T: D1,
         repeated: !0
     }]);
-    let T5e = p5e;
-    const _5e = class e extends q {
+    let k5e = y5e;
+    const S5e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -163076,14 +163194,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    _5e.runtime = je, _5e.typeName = "aiserver.v1.GetBackgroundComposerPullRequestRequest", _5e.fields = je.util.newFieldList(() => [{
+    S5e.runtime = je, S5e.typeName = "aiserver.v1.GetBackgroundComposerPullRequestRequest", S5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let g5e = _5e;
-    const w5e = class e extends q {
+    let J5e = S5e;
+    const E5e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", je.util.initPartial(e, this)
         }
@@ -163100,14 +163218,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    w5e.runtime = je, w5e.typeName = "aiserver.v1.GetBackgroundComposerPullRequestResponse", w5e.fields = je.util.newFieldList(() => [{
+    E5e.runtime = je, E5e.typeName = "aiserver.v1.GetBackgroundComposerPullRequestResponse", E5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
         T: 9
     }]);
-    let h5e = w5e;
-    const y5e = class e extends q {
+    let v5e = E5e;
+    const N5e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.commitMessage = "", je.util.initPartial(e, this)
         }
@@ -163124,7 +163242,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    y5e.runtime = je, y5e.typeName = "aiserver.v1.CommitBackgroundComposerRequest", y5e.fields = je.util.newFieldList(() => [{
+    N5e.runtime = je, N5e.typeName = "aiserver.v1.CommitBackgroundComposerRequest", N5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -163135,8 +163253,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let k5e = y5e;
-    const S5e = class e extends q {
+    let B5e = N5e;
+    const q5e = class e extends q {
         constructor(e) {
             super(), this.commitHash = "", je.util.initPartial(e, this)
         }
@@ -163153,14 +163271,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    S5e.runtime = je, S5e.typeName = "aiserver.v1.CommitBackgroundComposerResponse", S5e.fields = je.util.newFieldList(() => [{
+    q5e.runtime = je, q5e.typeName = "aiserver.v1.CommitBackgroundComposerResponse", q5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "commit_hash",
         kind: "scalar",
         T: 9
     }]);
-    let J5e = S5e;
-    const E5e = class e extends q {
+    let P5e = q5e;
+    const I5e = class e extends q {
         constructor(e) {
             super(), this.environmentJson = "", this.repoUrl = "", this.writeSource = 0, je.util.initPartial(e, this)
         }
@@ -163177,7 +163295,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    E5e.runtime = je, E5e.typeName = "aiserver.v1.SetPersonalEnvironmentJsonRequest", E5e.fields = je.util.newFieldList(() => [{
+    I5e.runtime = je, I5e.typeName = "aiserver.v1.SetPersonalEnvironmentJsonRequest", I5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment_json",
         kind: "scalar",
@@ -163191,7 +163309,7 @@
         no: 3,
         name: "write_source",
         kind: "enum",
-        T: je.getEnumType(q$e)
+        T: je.getEnumType(C$e)
     }, {
         no: 4,
         name: "source_bc_id",
@@ -163208,7 +163326,7 @@
         no: 6,
         name: "repo_config",
         kind: "message",
-        T: U0e,
+        T: K0e,
         opt: !0
     }, {
         no: 7,
@@ -163223,8 +163341,8 @@
         T: 9,
         opt: !0
     }]);
-    let v5e = E5e;
-    const N5e = class e extends q {
+    let R5e = I5e;
+    const L5e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -163241,15 +163359,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    N5e.runtime = je, N5e.typeName = "aiserver.v1.SetPersonalEnvironmentJsonResponse", N5e.fields = je.util.newFieldList(() => [{
+    L5e.runtime = je, L5e.typeName = "aiserver.v1.SetPersonalEnvironmentJsonResponse", L5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment",
         kind: "message",
-        T: u8e,
+        T: T8e,
         opt: !0
     }]);
-    let B5e = N5e;
-    const q5e = class e extends q {
+    let F5e = L5e;
+    const C5e = class e extends q {
         constructor(e) {
             super(), this.repoUrl = "", je.util.initPartial(e, this)
         }
@@ -163266,14 +163384,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    q5e.runtime = je, q5e.typeName = "aiserver.v1.GetPersonalEnvironmentJsonRequest", q5e.fields = je.util.newFieldList(() => [{
+    C5e.runtime = je, C5e.typeName = "aiserver.v1.GetPersonalEnvironmentJsonRequest", C5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
         T: 9
     }]);
-    let P5e = q5e;
-    const I5e = class e extends q {
+    let A5e = C5e;
+    const x5e = class e extends q {
         constructor(e) {
             super(), this.environmentJson = "", this.repoUrl = "", je.util.initPartial(e, this)
         }
@@ -163290,7 +163408,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    I5e.runtime = je, I5e.typeName = "aiserver.v1.GetPersonalEnvironmentJsonResponse", I5e.fields = je.util.newFieldList(() => [{
+    x5e.runtime = je, x5e.typeName = "aiserver.v1.GetPersonalEnvironmentJsonResponse", x5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment_json",
         kind: "scalar",
@@ -163301,8 +163419,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let R5e = I5e;
-    const L5e = class e extends q {
+    let O5e = x5e;
+    const D5e = class e extends q {
         constructor(e) {
             super(), this.repoUrl = "", this.ref = "", je.util.initPartial(e, this)
         }
@@ -163319,7 +163437,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    L5e.runtime = je, L5e.typeName = "aiserver.v1.GetEnvironmentJsonCandidatesRequest", L5e.fields = je.util.newFieldList(() => [{
+    D5e.runtime = je, D5e.typeName = "aiserver.v1.GetEnvironmentJsonCandidatesRequest", D5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
@@ -163330,8 +163448,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let F5e = L5e;
-    const C5e = class e extends q {
+    let b5e = D5e;
+    const U5e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -163348,7 +163466,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    C5e.runtime = je, C5e.typeName = "aiserver.v1.GetEnvironmentJsonCandidatesResponse", C5e.fields = je.util.newFieldList(() => [{
+    U5e.runtime = je, U5e.typeName = "aiserver.v1.GetEnvironmentJsonCandidatesResponse", U5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_environment_json",
         kind: "scalar",
@@ -163367,8 +163485,8 @@
         T: 9,
         opt: !0
     }]);
-    let A5e = C5e;
-    const x5e = class e extends q {
+    let M5e = U5e;
+    const G5e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -163385,15 +163503,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    x5e.runtime = je, x5e.typeName = "aiserver.v1.ListPersonalEnvironmentsRequest", x5e.fields = je.util.newFieldList(() => [{
+    G5e.runtime = je, G5e.typeName = "aiserver.v1.ListPersonalEnvironmentsRequest", G5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "limit",
         kind: "scalar",
         T: 5,
         opt: !0
     }]);
-    let O5e = x5e;
-    const D5e = class e extends q {
+    let Y5e = G5e;
+    const V5e = class e extends q {
         constructor(e) {
             super(), this.repoUrl = "", this.environmentJson = "", this.createdAtMs = b.zero, this.updatedAtMs = b.zero, this.id = b.zero, je.util.initPartial(e, this)
         }
@@ -163410,7 +163528,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    D5e.runtime = je, D5e.typeName = "aiserver.v1.PersonalEnvironment", D5e.fields = je.util.newFieldList(() => [{
+    V5e.runtime = je, V5e.typeName = "aiserver.v1.PersonalEnvironment", V5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
@@ -163442,8 +163560,8 @@
         T: 9,
         opt: !0
     }]);
-    let b5e = D5e;
-    const U5e = class e extends q {
+    let H5e = V5e;
+    const K5e = class e extends q {
         constructor(e) {
             super(), this.environments = [], je.util.initPartial(e, this)
         }
@@ -163460,15 +163578,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    U5e.runtime = je, U5e.typeName = "aiserver.v1.ListPersonalEnvironmentsResponse", U5e.fields = je.util.newFieldList(() => [{
+    K5e.runtime = je, K5e.typeName = "aiserver.v1.ListPersonalEnvironmentsResponse", K5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environments",
         kind: "message",
-        T: b5e,
+        T: H5e,
         repeated: !0
     }]);
-    let M5e = U5e;
-    const G5e = class e extends q {
+    let W5e = K5e;
+    const z5e = class e extends q {
         constructor(e) {
             super(), this.id = b.zero, je.util.initPartial(e, this)
         }
@@ -163485,7 +163603,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    G5e.runtime = je, G5e.typeName = "aiserver.v1.DeletePersonalEnvironmentJsonRequest", G5e.fields = je.util.newFieldList(() => [{
+    z5e.runtime = je, z5e.typeName = "aiserver.v1.DeletePersonalEnvironmentJsonRequest", z5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -163497,8 +163615,8 @@
         T: 9,
         opt: !0
     }]);
-    let Y5e = G5e;
-    const V5e = class e extends q {
+    let j5e = z5e;
+    const X5e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -163515,9 +163633,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    V5e.runtime = je, V5e.typeName = "aiserver.v1.DeletePersonalEnvironmentJsonResponse", V5e.fields = je.util.newFieldList(() => []);
-    let H5e = V5e;
-    const K5e = class e extends q {
+    X5e.runtime = je, X5e.typeName = "aiserver.v1.DeletePersonalEnvironmentJsonResponse", X5e.fields = je.util.newFieldList(() => []);
+    let Q5e = X5e;
+    const $5e = class e extends q {
         constructor(e) {
             super(), this.id = b.zero, this.environmentType = 0, je.util.initPartial(e, this)
         }
@@ -163534,7 +163652,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    K5e.runtime = je, K5e.typeName = "aiserver.v1.PublishEnvironmentRequest", K5e.fields = je.util.newFieldList(() => [{
+    $5e.runtime = je, $5e.typeName = "aiserver.v1.PublishEnvironmentRequest", $5e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -163543,10 +163661,10 @@
         no: 2,
         name: "environment_type",
         kind: "enum",
-        T: je.getEnumType(P$e)
+        T: je.getEnumType(A$e)
     }]);
-    let W5e = K5e;
-    const z5e = class e extends q {
+    let Z5e = $5e;
+    const e8e = class e extends q {
         constructor(e) {
             super(), this.success = !1, this.prUrl = "", this.branchName = "", je.util.initPartial(e, this)
         }
@@ -163563,7 +163681,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    z5e.runtime = je, z5e.typeName = "aiserver.v1.PublishEnvironmentResponse", z5e.fields = je.util.newFieldList(() => [{
+    e8e.runtime = je, e8e.typeName = "aiserver.v1.PublishEnvironmentResponse", e8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -163585,8 +163703,8 @@
         T: 9,
         opt: !0
     }]);
-    let j5e = z5e;
-    const X5e = class e extends q {
+    let t8e = e8e;
+    const n8e = class e extends q {
         constructor(e) {
             super(), this.id = b.zero, je.util.initPartial(e, this)
         }
@@ -163603,14 +163721,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    X5e.runtime = je, X5e.typeName = "aiserver.v1.PublishPersonalEnvironmentRequest", X5e.fields = je.util.newFieldList(() => [{
+    n8e.runtime = je, n8e.typeName = "aiserver.v1.PublishPersonalEnvironmentRequest", n8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
         T: 3
     }]);
-    let Q5e = X5e;
-    const $5e = class e extends q {
+    let r8e = n8e;
+    const s8e = class e extends q {
         constructor(e) {
             super(), this.success = !1, this.prUrl = "", this.branchName = "", je.util.initPartial(e, this)
         }
@@ -163627,7 +163745,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    $5e.runtime = je, $5e.typeName = "aiserver.v1.PublishPersonalEnvironmentResponse", $5e.fields = je.util.newFieldList(() => [{
+    s8e.runtime = je, s8e.typeName = "aiserver.v1.PublishPersonalEnvironmentResponse", s8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -163649,8 +163767,8 @@
         T: 9,
         opt: !0
     }]);
-    let Z5e = $5e;
-    const e8e = class e extends q {
+    let i8e = s8e;
+    const a8e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -163667,15 +163785,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    e8e.runtime = je, e8e.typeName = "aiserver.v1.ListTeamEnvironmentsRequest", e8e.fields = je.util.newFieldList(() => [{
+    a8e.runtime = je, a8e.typeName = "aiserver.v1.ListTeamEnvironmentsRequest", a8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "limit",
         kind: "scalar",
         T: 5,
         opt: !0
     }]);
-    let t8e = e8e;
-    const n8e = class e extends q {
+    let o8e = a8e;
+    const l8e = class e extends q {
         constructor(e) {
             super(), this.id = b.zero, this.teamId = 0, this.repoUrl = "", this.environmentJson = "", this.createdByUserId = 0, this.createdAtMs = b.zero, this.updatedAtMs = b.zero, this.scmRepoNodeId = "", je.util.initPartial(e, this)
         }
@@ -163692,7 +163810,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    n8e.runtime = je, n8e.typeName = "aiserver.v1.TeamEnvironment", n8e.fields = je.util.newFieldList(() => [{
+    l8e.runtime = je, l8e.typeName = "aiserver.v1.TeamEnvironment", l8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -163745,8 +163863,8 @@
         T: 9,
         opt: !0
     }]);
-    let r8e = n8e;
-    const s8e = class e extends q {
+    let u8e = l8e;
+    const m8e = class e extends q {
         constructor(e) {
             super(), this.environments = [], je.util.initPartial(e, this)
         }
@@ -163763,15 +163881,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    s8e.runtime = je, s8e.typeName = "aiserver.v1.ListTeamEnvironmentsResponse", s8e.fields = je.util.newFieldList(() => [{
+    m8e.runtime = je, m8e.typeName = "aiserver.v1.ListTeamEnvironmentsResponse", m8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environments",
         kind: "message",
-        T: r8e,
+        T: u8e,
         repeated: !0
     }]);
-    let i8e = s8e;
-    const a8e = class e extends q {
+    let c8e = m8e;
+    const d8e = class e extends q {
         constructor(e) {
             super(), this.repositoryScopeRepoUrls = [], je.util.initPartial(e, this)
         }
@@ -163788,7 +163906,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    a8e.runtime = je, a8e.typeName = "aiserver.v1.ListEnvironmentsRequest", a8e.fields = je.util.newFieldList(() => [{
+    d8e.runtime = je, d8e.typeName = "aiserver.v1.ListEnvironmentsRequest", d8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "limit",
         kind: "scalar",
@@ -163807,8 +163925,8 @@
         T: 9,
         repeated: !0
     }]);
-    let o8e = a8e;
-    const l8e = class e extends q {
+    let f8e = d8e;
+    const p8e = class e extends q {
         constructor(e) {
             super(), this.id = b.zero, this.publicId = "", this.name = "", this.scope = 0, this.createdAtMs = b.zero, this.updatedAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -163825,7 +163943,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    l8e.runtime = je, l8e.typeName = "aiserver.v1.LogicalEnvironment", l8e.fields = je.util.newFieldList(() => [{
+    p8e.runtime = je, p8e.typeName = "aiserver.v1.LogicalEnvironment", p8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -163844,7 +163962,7 @@
         no: 4,
         name: "scope",
         kind: "enum",
-        T: je.getEnumType(I$e)
+        T: je.getEnumType(x$e)
     }, {
         no: 5,
         name: "owning_team",
@@ -163861,7 +163979,7 @@
         no: 7,
         name: "repo_config",
         kind: "message",
-        T: U0e,
+        T: K0e,
         opt: !0
     }, {
         no: 8,
@@ -163886,8 +164004,8 @@
         T: 9,
         opt: !0
     }]);
-    let u8e = l8e;
-    const m8e = class e extends q {
+    let T8e = p8e;
+    const _8e = class e extends q {
         constructor(e) {
             super(), this.environments = [], je.util.initPartial(e, this)
         }
@@ -163904,11 +164022,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    m8e.runtime = je, m8e.typeName = "aiserver.v1.ListEnvironmentsResponse", m8e.fields = je.util.newFieldList(() => [{
+    _8e.runtime = je, _8e.typeName = "aiserver.v1.ListEnvironmentsResponse", _8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environments",
         kind: "message",
-        T: u8e,
+        T: T8e,
         repeated: !0
     }, {
         no: 2,
@@ -163917,8 +164035,8 @@
         T: 9,
         opt: !0
     }]);
-    let c8e = m8e;
-    const d8e = class e extends q {
+    let g8e = _8e;
+    const w8e = class e extends q {
         constructor(e) {
             super(), this.publicId = "", je.util.initPartial(e, this)
         }
@@ -163935,7 +164053,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    d8e.runtime = je, d8e.typeName = "aiserver.v1.GetEnvironmentRequest", d8e.fields = je.util.newFieldList(() => [{
+    w8e.runtime = je, w8e.typeName = "aiserver.v1.GetEnvironmentRequest", w8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "public_id",
         kind: "scalar",
@@ -163947,8 +164065,8 @@
         T: 8,
         opt: !0
     }]);
-    let f8e = d8e;
-    const p8e = class e extends q {
+    let h8e = w8e;
+    const y8e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -163965,15 +164083,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    p8e.runtime = je, p8e.typeName = "aiserver.v1.GetEnvironmentResponse", p8e.fields = je.util.newFieldList(() => [{
+    y8e.runtime = je, y8e.typeName = "aiserver.v1.GetEnvironmentResponse", y8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment",
         kind: "message",
-        T: u8e,
+        T: T8e,
         opt: !0
     }]);
-    let T8e = p8e;
-    const _8e = class e extends q {
+    let k8e = y8e;
+    const S8e = class e extends q {
         constructor(e) {
             super(), this.ownerId = {
                 case: void 0
@@ -163992,7 +164110,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    _8e.runtime = je, _8e.typeName = "aiserver.v1.ResolveOrCreateMultiRepoEnvironmentRequest", _8e.fields = je.util.newFieldList(() => [{
+    S8e.runtime = je, S8e.typeName = "aiserver.v1.ResolveOrCreateMultiRepoEnvironmentRequest", S8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "user_id",
         kind: "scalar",
@@ -164014,20 +164132,20 @@
         no: 4,
         name: "repo_config",
         kind: "message",
-        T: U0e
+        T: K0e
     }, {
         no: 5,
         name: "write_source",
         kind: "enum",
-        T: je.getEnumType(q$e)
+        T: je.getEnumType(C$e)
     }, {
         no: 6,
         name: "reuse_policy",
         kind: "enum",
-        T: je.getEnumType(R$e)
+        T: je.getEnumType(O$e)
     }]);
-    let g8e = _8e;
-    const w8e = class e extends q {
+    let J8e = S8e;
+    const E8e = class e extends q {
         constructor(e) {
             super(), this.created = !1, je.util.initPartial(e, this)
         }
@@ -164044,19 +164162,19 @@
             return je.util.equals(e, t, n)
         }
     };
-    w8e.runtime = je, w8e.typeName = "aiserver.v1.ResolveOrCreateMultiRepoEnvironmentResponse", w8e.fields = je.util.newFieldList(() => [{
+    E8e.runtime = je, E8e.typeName = "aiserver.v1.ResolveOrCreateMultiRepoEnvironmentResponse", E8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment",
         kind: "message",
-        T: u8e
+        T: T8e
     }, {
         no: 2,
         name: "created",
         kind: "scalar",
         T: 8
     }]);
-    let h8e = w8e;
-    const y8e = class e extends q {
+    let v8e = E8e;
+    const N8e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.targetScope = 0, this.repoUrl = "", je.util.initPartial(e, this)
         }
@@ -164073,7 +164191,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    y8e.runtime = je, y8e.typeName = "aiserver.v1.ResolveOrCreateDraftEnvironmentRequest", y8e.fields = je.util.newFieldList(() => [{
+    N8e.runtime = je, N8e.typeName = "aiserver.v1.ResolveOrCreateDraftEnvironmentRequest", N8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -164082,7 +164200,7 @@
         no: 2,
         name: "target_scope",
         kind: "enum",
-        T: je.getEnumType(I$e)
+        T: je.getEnumType(x$e)
     }, {
         no: 3,
         name: "repo_url",
@@ -164092,11 +164210,11 @@
         no: 4,
         name: "repo_config",
         kind: "message",
-        T: U0e,
+        T: K0e,
         opt: !0
     }]);
-    let k8e = y8e;
-    const S8e = class e extends q {
+    let B8e = N8e;
+    const q8e = class e extends q {
         constructor(e) {
             super(), this.created = !1, je.util.initPartial(e, this)
         }
@@ -164113,19 +164231,19 @@
             return je.util.equals(e, t, n)
         }
     };
-    S8e.runtime = je, S8e.typeName = "aiserver.v1.ResolveOrCreateDraftEnvironmentResponse", S8e.fields = je.util.newFieldList(() => [{
+    q8e.runtime = je, q8e.typeName = "aiserver.v1.ResolveOrCreateDraftEnvironmentResponse", q8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment",
         kind: "message",
-        T: u8e
+        T: T8e
     }, {
         no: 2,
         name: "created",
         kind: "scalar",
         T: 8
     }]);
-    let J8e = S8e;
-    const E8e = class e extends q {
+    let P8e = q8e;
+    const I8e = class e extends q {
         constructor(e) {
             super(), this.repoUrls = [], je.util.initPartial(e, this)
         }
@@ -164142,7 +164260,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    E8e.runtime = je, E8e.typeName = "aiserver.v1.RepoConfigSummary", E8e.fields = je.util.newFieldList(() => [{
+    I8e.runtime = je, I8e.typeName = "aiserver.v1.RepoConfigSummary", I8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_urls",
         kind: "scalar",
@@ -164155,8 +164273,8 @@
         T: 9,
         opt: !0
     }]);
-    let v8e = E8e;
-    const N8e = class e extends q {
+    let R8e = I8e;
+    const L8e = class e extends q {
         constructor(e) {
             super(), this.restoredFromEnvironmentVersionPublicId = "", this.restoredFromSourceKind = 0, je.util.initPartial(e, this)
         }
@@ -164173,7 +164291,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    N8e.runtime = je, N8e.typeName = "aiserver.v1.EnvironmentVersionRestoreMetadata", N8e.fields = je.util.newFieldList(() => [{
+    L8e.runtime = je, L8e.typeName = "aiserver.v1.EnvironmentVersionRestoreMetadata", L8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "restored_from_environment_version_public_id",
         kind: "scalar",
@@ -164182,7 +164300,7 @@
         no: 2,
         name: "restored_from_source_kind",
         kind: "enum",
-        T: je.getEnumType(L$e)
+        T: je.getEnumType(D$e)
     }, {
         no: 3,
         name: "restored_from_environment_public_id",
@@ -164202,8 +164320,8 @@
         T: 9,
         opt: !0
     }]);
-    let B8e = N8e;
-    const q8e = class e extends q {
+    let F8e = L8e;
+    const C8e = class e extends q {
         constructor(e) {
             super(), this.publicId = "", this.sourceKind = 0, this.createdAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -164220,7 +164338,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    q8e.runtime = je, q8e.typeName = "aiserver.v1.EnvironmentVersionSummary", q8e.fields = je.util.newFieldList(() => [{
+    C8e.runtime = je, C8e.typeName = "aiserver.v1.EnvironmentVersionSummary", C8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "public_id",
         kind: "scalar",
@@ -164229,7 +164347,7 @@
         no: 2,
         name: "source_kind",
         kind: "enum",
-        T: je.getEnumType(L$e)
+        T: je.getEnumType(D$e)
     }, {
         no: 3,
         name: "commit_hash",
@@ -164246,7 +164364,7 @@
         no: 5,
         name: "repo_config",
         kind: "message",
-        T: v8e,
+        T: R8e,
         opt: !0
     }, {
         no: 6,
@@ -164284,8 +164402,8 @@
         T: 9,
         opt: !0
     }]);
-    let P8e = q8e;
-    const I8e = class e extends q {
+    let A8e = C8e;
+    const x8e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -164302,14 +164420,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    I8e.runtime = je, I8e.typeName = "aiserver.v1.GetBackgroundComposerEnvironmentVersionRequest", I8e.fields = je.util.newFieldList(() => [{
+    x8e.runtime = je, x8e.typeName = "aiserver.v1.GetBackgroundComposerEnvironmentVersionRequest", x8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let R8e = I8e;
-    const L8e = class e extends q {
+    let O8e = x8e;
+    const D8e = class e extends q {
         constructor(e) {
             super(), this.environmentVersionHistory = [], je.util.initPartial(e, this)
         }
@@ -164326,15 +164444,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    L8e.runtime = je, L8e.typeName = "aiserver.v1.GetBackgroundComposerEnvironmentVersionResponse", L8e.fields = je.util.newFieldList(() => [{
+    D8e.runtime = je, D8e.typeName = "aiserver.v1.GetBackgroundComposerEnvironmentVersionResponse", D8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment_version_history",
         kind: "message",
-        T: P8e,
+        T: A8e,
         repeated: !0
     }]);
-    let F8e = L8e;
-    const C8e = class e extends q {
+    let b8e = D8e;
+    const U8e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.createdAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -164351,7 +164469,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    C8e.runtime = je, C8e.typeName = "aiserver.v1.EnvironmentSetupRunLink", C8e.fields = je.util.newFieldList(() => [{
+    U8e.runtime = je, U8e.typeName = "aiserver.v1.EnvironmentSetupRunLink", U8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -164374,8 +164492,8 @@
         T: 9,
         opt: !0
     }]);
-    let A8e = C8e;
-    const x8e = class e extends q {
+    let M8e = U8e;
+    const G8e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -164392,20 +164510,20 @@
             return je.util.equals(e, t, n)
         }
     };
-    x8e.runtime = je, x8e.typeName = "aiserver.v1.EnvironmentHistoryVersion", x8e.fields = je.util.newFieldList(() => [{
+    G8e.runtime = je, G8e.typeName = "aiserver.v1.EnvironmentHistoryVersion", G8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "version",
         kind: "message",
-        T: P8e
+        T: A8e
     }, {
         no: 2,
         name: "setup_run",
         kind: "message",
-        T: A8e,
+        T: M8e,
         opt: !0
     }]);
-    let O8e = x8e;
-    const D8e = class e extends q {
+    let Y8e = G8e;
+    const V8e = class e extends q {
         constructor(e) {
             super(), this.publicId = "", this.eventKind = 0, this.sourceKind = 0, this.recordedVia = "", this.createdAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -164422,7 +164540,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    D8e.runtime = je, D8e.typeName = "aiserver.v1.EnvironmentHistoryLifecycleEvent", D8e.fields = je.util.newFieldList(() => [{
+    V8e.runtime = je, V8e.typeName = "aiserver.v1.EnvironmentHistoryLifecycleEvent", V8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "public_id",
         kind: "scalar",
@@ -164431,12 +164549,12 @@
         no: 2,
         name: "event_kind",
         kind: "enum",
-        T: je.getEnumType(F$e)
+        T: je.getEnumType(b$e)
     }, {
         no: 3,
         name: "source_kind",
         kind: "enum",
-        T: je.getEnumType(L$e)
+        T: je.getEnumType(D$e)
     }, {
         no: 4,
         name: "recorded_via",
@@ -164451,23 +164569,23 @@
         no: 6,
         name: "version",
         kind: "message",
-        T: P8e,
+        T: A8e,
         opt: !0
     }, {
         no: 7,
         name: "setup_run",
         kind: "message",
-        T: A8e,
+        T: M8e,
         opt: !0
     }, {
         no: 8,
         name: "restore_metadata",
         kind: "message",
-        T: B8e,
+        T: F8e,
         opt: !0
     }]);
-    let b8e = D8e;
-    const U8e = class e extends q {
+    let H8e = V8e;
+    const K8e = class e extends q {
         constructor(e) {
             super(), this.versions = [], this.lifecycleEvents = [], je.util.initPartial(e, this)
         }
@@ -164484,26 +164602,26 @@
             return je.util.equals(e, t, n)
         }
     };
-    U8e.runtime = je, U8e.typeName = "aiserver.v1.EnvironmentHistoryObject", U8e.fields = je.util.newFieldList(() => [{
+    K8e.runtime = je, K8e.typeName = "aiserver.v1.EnvironmentHistoryObject", K8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment",
         kind: "message",
-        T: u8e
+        T: T8e
     }, {
         no: 2,
         name: "versions",
         kind: "message",
-        T: O8e,
+        T: Y8e,
         repeated: !0
     }, {
         no: 3,
         name: "lifecycle_events",
         kind: "message",
-        T: b8e,
+        T: H8e,
         repeated: !0
     }]);
-    let M8e = U8e;
-    const G8e = class e extends q {
+    let W8e = K8e;
+    const z8e = class e extends q {
         constructor(e) {
             super(), this.id = "", this.createdAtMs = b.zero, this.scope = 0, this.eventKind = 0, this.title = "", this.description = "", je.util.initPartial(e, this)
         }
@@ -164520,7 +164638,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    G8e.runtime = je, G8e.typeName = "aiserver.v1.EnvironmentEffectiveHistoryEvent", G8e.fields = je.util.newFieldList(() => [{
+    z8e.runtime = je, z8e.typeName = "aiserver.v1.EnvironmentEffectiveHistoryEvent", z8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -164534,12 +164652,12 @@
         no: 3,
         name: "scope",
         kind: "enum",
-        T: je.getEnumType(I$e)
+        T: je.getEnumType(x$e)
     }, {
         no: 4,
         name: "event_kind",
         kind: "enum",
-        T: je.getEnumType(F$e)
+        T: je.getEnumType(b$e)
     }, {
         no: 5,
         name: "title",
@@ -164554,19 +164672,19 @@
         no: 7,
         name: "version",
         kind: "message",
-        T: P8e,
+        T: A8e,
         opt: !0
     }, {
         no: 8,
         name: "fallback_version",
         kind: "message",
-        T: P8e,
+        T: A8e,
         opt: !0
     }, {
         no: 9,
         name: "setup_run",
         kind: "message",
-        T: A8e,
+        T: M8e,
         opt: !0
     }, {
         no: 10,
@@ -164584,11 +164702,11 @@
         no: 12,
         name: "restore_metadata",
         kind: "message",
-        T: B8e,
+        T: F8e,
         opt: !0
     }]);
-    let Y8e = G8e;
-    const V8e = class e extends q {
+    let j8e = z8e;
+    const X8e = class e extends q {
         constructor(e) {
             super(), this.environmentPublicIds = [], je.util.initPartial(e, this)
         }
@@ -164605,11 +164723,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    V8e.runtime = je, V8e.typeName = "aiserver.v1.GetEnvironmentHistoryRequest", V8e.fields = je.util.newFieldList(() => [{
+    X8e.runtime = je, X8e.typeName = "aiserver.v1.GetEnvironmentHistoryRequest", X8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_config",
         kind: "message",
-        T: U0e,
+        T: K0e,
         opt: !0
     }, {
         no: 2,
@@ -164630,8 +164748,8 @@
         T: 9,
         opt: !0
     }]);
-    let H8e = V8e;
-    const K8e = class e extends q {
+    let Q8e = X8e;
+    const $8e = class e extends q {
         constructor(e) {
             super(), this.effectiveEvents = [], this.environmentHistories = [], this.truncated = !1, this.dashboardScopeUnavailable = !1, je.util.initPartial(e, this)
         }
@@ -164648,17 +164766,17 @@
             return je.util.equals(e, t, n)
         }
     };
-    K8e.runtime = je, K8e.typeName = "aiserver.v1.GetEnvironmentHistoryResponse", K8e.fields = je.util.newFieldList(() => [{
+    $8e.runtime = je, $8e.typeName = "aiserver.v1.GetEnvironmentHistoryResponse", $8e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "effective_events",
         kind: "message",
-        T: Y8e,
+        T: j8e,
         repeated: !0
     }, {
         no: 2,
         name: "environment_histories",
         kind: "message",
-        T: M8e,
+        T: W8e,
         repeated: !0
     }, {
         no: 3,
@@ -164671,8 +164789,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let W8e = K8e;
-    const z8e = class e extends q {
+    let Z8e = $8e;
+    const e4e = class e extends q {
         constructor(e) {
             super(), this.id = b.zero, je.util.initPartial(e, this)
         }
@@ -164689,7 +164807,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    z8e.runtime = je, z8e.typeName = "aiserver.v1.DeleteTeamEnvironmentRequest", z8e.fields = je.util.newFieldList(() => [{
+    e4e.runtime = je, e4e.typeName = "aiserver.v1.DeleteTeamEnvironmentRequest", e4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -164701,8 +164819,8 @@
         T: 9,
         opt: !0
     }]);
-    let j8e = z8e;
-    const X8e = class e extends q {
+    let t4e = e4e;
+    const n4e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -164719,9 +164837,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    X8e.runtime = je, X8e.typeName = "aiserver.v1.DeleteTeamEnvironmentResponse", X8e.fields = je.util.newFieldList(() => []);
-    let Q8e = X8e;
-    const $8e = class e extends q {
+    n4e.runtime = je, n4e.typeName = "aiserver.v1.DeleteTeamEnvironmentResponse", n4e.fields = je.util.newFieldList(() => []);
+    let r4e = n4e;
+    const s4e = class e extends q {
         constructor(e) {
             super(), this.environmentVersionPublicId = "", this.targetScope = 0, je.util.initPartial(e, this)
         }
@@ -164738,7 +164856,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    $8e.runtime = je, $8e.typeName = "aiserver.v1.RestoreEnvironmentVersionRequest", $8e.fields = je.util.newFieldList(() => [{
+    s4e.runtime = je, s4e.typeName = "aiserver.v1.RestoreEnvironmentVersionRequest", s4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment_version_public_id",
         kind: "scalar",
@@ -164747,7 +164865,7 @@
         no: 2,
         name: "target_scope",
         kind: "enum",
-        T: je.getEnumType(I$e)
+        T: je.getEnumType(x$e)
     }, {
         no: 3,
         name: "target_environment_public_id",
@@ -164761,8 +164879,8 @@
         T: 9,
         opt: !0
     }]);
-    let Z8e = $8e;
-    const e4e = class e extends q {
+    let i4e = s4e;
+    const a4e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -164779,15 +164897,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    e4e.runtime = je, e4e.typeName = "aiserver.v1.RestoreEnvironmentVersionResponse", e4e.fields = je.util.newFieldList(() => [{
+    a4e.runtime = je, a4e.typeName = "aiserver.v1.RestoreEnvironmentVersionResponse", a4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment",
         kind: "message",
-        T: u8e,
+        T: T8e,
         opt: !0
     }]);
-    let t4e = e4e;
-    const n4e = class e extends q {
+    let o4e = a4e;
+    const l4e = class e extends q {
         constructor(e) {
             super(), this.environmentJson = "", this.repoUrl = "", this.scmRepoNodeId = "", this.deletePersonalEnvironment = !1, this.writeSource = 0, je.util.initPartial(e, this)
         }
@@ -164804,7 +164922,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    n4e.runtime = je, n4e.typeName = "aiserver.v1.SetTeamEnvironmentJsonRequest", n4e.fields = je.util.newFieldList(() => [{
+    l4e.runtime = je, l4e.typeName = "aiserver.v1.SetTeamEnvironmentJsonRequest", l4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment_json",
         kind: "scalar",
@@ -164834,7 +164952,7 @@
         no: 6,
         name: "write_source",
         kind: "enum",
-        T: je.getEnumType(q$e)
+        T: je.getEnumType(C$e)
     }, {
         no: 7,
         name: "source_bc_id",
@@ -164851,7 +164969,7 @@
         no: 9,
         name: "repo_config",
         kind: "message",
-        T: U0e,
+        T: K0e,
         opt: !0
     }, {
         no: 10,
@@ -164872,8 +164990,8 @@
         T: 9,
         opt: !0
     }]);
-    let r4e = n4e;
-    const s4e = class e extends q {
+    let u4e = l4e;
+    const m4e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -164890,15 +165008,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    s4e.runtime = je, s4e.typeName = "aiserver.v1.SetTeamEnvironmentJsonResponse", s4e.fields = je.util.newFieldList(() => [{
+    m4e.runtime = je, m4e.typeName = "aiserver.v1.SetTeamEnvironmentJsonResponse", m4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment",
         kind: "message",
-        T: u8e,
+        T: T8e,
         opt: !0
     }]);
-    let i4e = s4e;
-    const a4e = class e extends q {
+    let c4e = m4e;
+    const d4e = class e extends q {
         constructor(e) {
             super(), this.target = 0, this.bcId = "", this.repoUrl = "", je.util.initPartial(e, this)
         }
@@ -164915,11 +165033,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    a4e.runtime = je, a4e.typeName = "aiserver.v1.SnapshotAndSaveEnvironmentRequest", a4e.fields = je.util.newFieldList(() => [{
+    d4e.runtime = je, d4e.typeName = "aiserver.v1.SnapshotAndSaveEnvironmentRequest", d4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "target",
         kind: "enum",
-        T: je.getEnumType(l4e)
+        T: je.getEnumType(p4e)
     }, {
         no: 2,
         name: "bc_id",
@@ -164964,7 +165082,7 @@
         no: 9,
         name: "repo_config",
         kind: "message",
-        T: U0e,
+        T: K0e,
         opt: !0
     }, {
         no: 10,
@@ -164973,9 +165091,9 @@
         T: 9,
         opt: !0
     }]);
-    let o4e = a4e;
-    var l4e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PERSONAL = 1] = "PERSONAL", e[e.TEAM = 2] = "TEAM", e))(l4e || {});
-    je.util.setEnumType(l4e, "aiserver.v1.SnapshotAndSaveEnvironmentRequest.Target", [{
+    let f4e = d4e;
+    var p4e = (e => (e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PERSONAL = 1] = "PERSONAL", e[e.TEAM = 2] = "TEAM", e))(p4e || {});
+    je.util.setEnumType(p4e, "aiserver.v1.SnapshotAndSaveEnvironmentRequest.Target", [{
         no: 0,
         name: "TARGET_UNSPECIFIED"
     }, {
@@ -164985,7 +165103,7 @@
         no: 2,
         name: "TARGET_TEAM"
     }]);
-    const u4e = class e extends q {
+    const T4e = class e extends q {
         constructor(e) {
             super(), this.snapshotId = "", je.util.initPartial(e, this)
         }
@@ -165002,14 +165120,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    u4e.runtime = je, u4e.typeName = "aiserver.v1.SnapshotAndSaveEnvironmentResponse", u4e.fields = je.util.newFieldList(() => [{
+    T4e.runtime = je, T4e.typeName = "aiserver.v1.SnapshotAndSaveEnvironmentResponse", T4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "snapshot_id",
         kind: "scalar",
         T: 9
     }]);
-    let m4e = u4e;
-    const c4e = class e extends q {
+    let _4e = T4e;
+    const g4e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -165026,9 +165144,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    c4e.runtime = je, c4e.typeName = "aiserver.v1.ListReposWithLocalEnvironmentRequest", c4e.fields = je.util.newFieldList(() => []);
-    let d4e = c4e;
-    const f4e = class e extends q {
+    g4e.runtime = je, g4e.typeName = "aiserver.v1.ListReposWithLocalEnvironmentRequest", g4e.fields = je.util.newFieldList(() => []);
+    let w4e = g4e;
+    const h4e = class e extends q {
         constructor(e) {
             super(), this.repoUrl = "", this.fileExists = !1, this.lastSeenAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -165045,7 +165163,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    f4e.runtime = je, f4e.typeName = "aiserver.v1.RepoWithLocalEnvironment", f4e.fields = je.util.newFieldList(() => [{
+    h4e.runtime = je, h4e.typeName = "aiserver.v1.RepoWithLocalEnvironment", h4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
@@ -165061,8 +165179,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let p4e = f4e;
-    const T4e = class e extends q {
+    let y4e = h4e;
+    const k4e = class e extends q {
         constructor(e) {
             super(), this.repos = [], je.util.initPartial(e, this)
         }
@@ -165079,83 +165197,40 @@
             return je.util.equals(e, t, n)
         }
     };
-    T4e.runtime = je, T4e.typeName = "aiserver.v1.ListReposWithLocalEnvironmentResponse", T4e.fields = je.util.newFieldList(() => [{
+    k4e.runtime = je, k4e.typeName = "aiserver.v1.ListReposWithLocalEnvironmentResponse", k4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repos",
         kind: "message",
-        T: p4e,
+        T: y4e,
         repeated: !0
-    }]);
-    let _4e = T4e;
-    const g4e = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    g4e.runtime = je, g4e.typeName = "aiserver.v1.MarkBackgroundComposerReadRequest", g4e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9
-    }]);
-    let w4e = g4e;
-    const h4e = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    h4e.runtime = je, h4e.typeName = "aiserver.v1.MarkBackgroundComposerReadResponse", h4e.fields = je.util.newFieldList(() => []);
-    let y4e = h4e;
-    const k4e = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    k4e.runtime = je, k4e.typeName = "aiserver.v1.MarkBackgroundComposerUnreadRequest", k4e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9
     }]);
     let S4e = k4e;
     const J4e = class e extends q {
         constructor(e) {
+            super(), this.bcId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    J4e.runtime = je, J4e.typeName = "aiserver.v1.MarkBackgroundComposerReadRequest", J4e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let E4e = J4e;
+    const v4e = class e extends q {
+        constructor(e) {
             super(), je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -165171,9 +165246,52 @@
             return je.util.equals(e, t, n)
         }
     };
-    J4e.runtime = je, J4e.typeName = "aiserver.v1.MarkBackgroundComposerUnreadResponse", J4e.fields = je.util.newFieldList(() => []);
-    let E4e = J4e;
-    const v4e = class e extends q {
+    v4e.runtime = je, v4e.typeName = "aiserver.v1.MarkBackgroundComposerReadResponse", v4e.fields = je.util.newFieldList(() => []);
+    let N4e = v4e;
+    const B4e = class e extends q {
+        constructor(e) {
+            super(), this.bcId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    B4e.runtime = je, B4e.typeName = "aiserver.v1.MarkBackgroundComposerUnreadRequest", B4e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let q4e = B4e;
+    const P4e = class e extends q {
+        constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    P4e.runtime = je, P4e.typeName = "aiserver.v1.MarkBackgroundComposerUnreadResponse", P4e.fields = je.util.newFieldList(() => []);
+    let I4e = P4e;
+    const R4e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.startIndex = 0, je.util.initPartial(e, this)
         }
@@ -165190,7 +165308,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    v4e.runtime = je, v4e.typeName = "aiserver.v1.FetchBackgroundComposerRequest", v4e.fields = je.util.newFieldList(() => [{
+    R4e.runtime = je, R4e.typeName = "aiserver.v1.FetchBackgroundComposerRequest", R4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -165207,8 +165325,8 @@
         T: 5,
         opt: !0
     }]);
-    let N4e = v4e;
-    const B4e = class e extends q {
+    let L4e = R4e;
+    const F4e = class e extends q {
         constructor(e) {
             super(), this.responses = [], this.totalResponses = 0, je.util.initPartial(e, this)
         }
@@ -165225,11 +165343,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    B4e.runtime = je, B4e.typeName = "aiserver.v1.FetchBackgroundComposerResponse", B4e.fields = je.util.newFieldList(() => [{
+    F4e.runtime = je, F4e.typeName = "aiserver.v1.FetchBackgroundComposerResponse", F4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "responses",
         kind: "message",
-        T: r2e,
+        T: u2e,
         repeated: !0
     }, {
         no: 2,
@@ -165237,8 +165355,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let q4e = B4e;
-    const P4e = class e extends q {
+    let C4e = F4e;
+    const A4e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -165255,7 +165373,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    P4e.runtime = je, P4e.typeName = "aiserver.v1.GetTurnSummaryBackgroundComposerRequest", P4e.fields = je.util.newFieldList(() => [{
+    A4e.runtime = je, A4e.typeName = "aiserver.v1.GetTurnSummaryBackgroundComposerRequest", A4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -165264,11 +165382,11 @@
         no: 2,
         name: "source_type",
         kind: "enum",
-        T: je.getEnumType(y$e),
+        T: je.getEnumType(N$e),
         opt: !0
     }]);
-    let I4e = P4e;
-    const R4e = class e extends q {
+    let x4e = A4e;
+    const O4e = class e extends q {
         constructor(e) {
             super(), this.summary = "", je.util.initPartial(e, this)
         }
@@ -165285,14 +165403,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    R4e.runtime = je, R4e.typeName = "aiserver.v1.GetTurnSummaryBackgroundComposerResponse", R4e.fields = je.util.newFieldList(() => [{
+    O4e.runtime = je, O4e.typeName = "aiserver.v1.GetTurnSummaryBackgroundComposerResponse", O4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "summary",
         kind: "scalar",
         T: 9
     }]);
-    let L4e = R4e;
-    const F4e = class e extends q {
+    let D4e = O4e;
+    const b4e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -165309,14 +165427,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    F4e.runtime = je, F4e.typeName = "aiserver.v1.GetBackgroundComposerNameRequest", F4e.fields = je.util.newFieldList(() => [{
+    b4e.runtime = je, b4e.typeName = "aiserver.v1.GetBackgroundComposerNameRequest", b4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let C4e = F4e;
-    const A4e = class e extends q {
+    let U4e = b4e;
+    const M4e = class e extends q {
         constructor(e) {
             super(), this.name = "", je.util.initPartial(e, this)
         }
@@ -165333,14 +165451,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    A4e.runtime = je, A4e.typeName = "aiserver.v1.GetBackgroundComposerNameResponse", A4e.fields = je.util.newFieldList(() => [{
+    M4e.runtime = je, M4e.typeName = "aiserver.v1.GetBackgroundComposerNameResponse", M4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
         T: 9
     }]);
-    let x4e = A4e;
-    const O4e = class e extends q {
+    let G4e = M4e;
+    const Y4e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -165357,14 +165475,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    O4e.runtime = je, O4e.typeName = "aiserver.v1.GetBackgroundComposerPromptRequest", O4e.fields = je.util.newFieldList(() => [{
+    Y4e.runtime = je, Y4e.typeName = "aiserver.v1.GetBackgroundComposerPromptRequest", Y4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let D4e = O4e;
-    const b4e = class e extends q {
+    let V4e = Y4e;
+    const H4e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -165381,14 +165499,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    b4e.runtime = je, b4e.typeName = "aiserver.v1.GetBackgroundComposerPromptResponse", b4e.fields = je.util.newFieldList(() => [{
+    H4e.runtime = je, H4e.typeName = "aiserver.v1.GetBackgroundComposerPromptResponse", H4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "prompt",
         kind: "message",
         T: D1
     }]);
-    let U4e = b4e;
-    const M4e = class e extends q {
+    let K4e = H4e;
+    const W4e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -165405,14 +165523,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    M4e.runtime = je, M4e.typeName = "aiserver.v1.ListBackgroundComposerArtifactsRequest", M4e.fields = je.util.newFieldList(() => [{
+    W4e.runtime = je, W4e.typeName = "aiserver.v1.ListBackgroundComposerArtifactsRequest", W4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let G4e = M4e;
-    const Y4e = class e extends q {
+    let z4e = W4e;
+    const j4e = class e extends q {
         constructor(e) {
             super(), this.absolutePath = "", this.sizeBytes = b.zero, this.updatedAtUnixMs = b.zero, je.util.initPartial(e, this)
         }
@@ -165429,7 +165547,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Y4e.runtime = je, Y4e.typeName = "aiserver.v1.BackgroundComposerArtifact", Y4e.fields = je.util.newFieldList(() => [{
+    j4e.runtime = je, j4e.typeName = "aiserver.v1.BackgroundComposerArtifact", j4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "absolute_path",
         kind: "scalar",
@@ -165445,8 +165563,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let V4e = Y4e;
-    const H4e = class e extends q {
+    let X4e = j4e;
+    const Q4e = class e extends q {
         constructor(e) {
             super(), this.artifacts = [], je.util.initPartial(e, this)
         }
@@ -165463,15 +165581,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    H4e.runtime = je, H4e.typeName = "aiserver.v1.ListBackgroundComposerArtifactsResponse", H4e.fields = je.util.newFieldList(() => [{
+    Q4e.runtime = je, Q4e.typeName = "aiserver.v1.ListBackgroundComposerArtifactsResponse", Q4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "artifacts",
         kind: "message",
-        T: V4e,
+        T: X4e,
         repeated: !0
     }]);
-    let K4e = H4e;
-    const W4e = class e extends q {
+    let $4e = Q4e;
+    const Z4e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.absolutePath = "", je.util.initPartial(e, this)
         }
@@ -165488,7 +165606,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    W4e.runtime = je, W4e.typeName = "aiserver.v1.GetBackgroundComposerArtifactRequest", W4e.fields = je.util.newFieldList(() => [{
+    Z4e.runtime = je, Z4e.typeName = "aiserver.v1.GetBackgroundComposerArtifactRequest", Z4e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -165499,8 +165617,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let z4e = W4e;
-    const j4e = class e extends q {
+    let e6e = Z4e;
+    const t6e = class e extends q {
         constructor(e) {
             super(), this.url = "", this.expiresAt = "", je.util.initPartial(e, this)
         }
@@ -165517,7 +165635,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    j4e.runtime = je, j4e.typeName = "aiserver.v1.GetBackgroundComposerArtifactResponse", j4e.fields = je.util.newFieldList(() => [{
+    t6e.runtime = je, t6e.typeName = "aiserver.v1.GetBackgroundComposerArtifactResponse", t6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "url",
         kind: "scalar",
@@ -165528,8 +165646,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let X4e = j4e;
-    const Q4e = class e extends q {
+    let n6e = t6e;
+    const r6e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.absolutePath = "", je.util.initPartial(e, this)
         }
@@ -165546,7 +165664,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Q4e.runtime = je, Q4e.typeName = "aiserver.v1.GetBackgroundComposerArtifactBytesRequest", Q4e.fields = je.util.newFieldList(() => [{
+    r6e.runtime = je, r6e.typeName = "aiserver.v1.GetBackgroundComposerArtifactBytesRequest", r6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -165557,8 +165675,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let $4e = Q4e;
-    const Z4e = class e extends q {
+    let s6e = r6e;
+    const i6e = class e extends q {
         constructor(e) {
             super(), this.content = new Uint8Array(0), this.contentType = "", je.util.initPartial(e, this)
         }
@@ -165575,7 +165693,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Z4e.runtime = je, Z4e.typeName = "aiserver.v1.GetBackgroundComposerArtifactBytesResponse", Z4e.fields = je.util.newFieldList(() => [{
+    i6e.runtime = je, i6e.typeName = "aiserver.v1.GetBackgroundComposerArtifactBytesResponse", i6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "content",
         kind: "scalar",
@@ -165586,8 +165704,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let e6e = Z4e;
-    const t6e = class e extends q {
+    let a6e = i6e;
+    const o6e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.path = "", je.util.initPartial(e, this)
         }
@@ -165604,7 +165722,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    t6e.runtime = je, t6e.typeName = "aiserver.v1.ReadBinaryFileRequest", t6e.fields = je.util.newFieldList(() => [{
+    o6e.runtime = je, o6e.typeName = "aiserver.v1.ReadBinaryFileRequest", o6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -165615,8 +165733,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let n6e = t6e;
-    const r6e = class e extends q {
+    let l6e = o6e;
+    const u6e = class e extends q {
         constructor(e) {
             super(), this.content = new Uint8Array(0), je.util.initPartial(e, this)
         }
@@ -165633,14 +165751,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    r6e.runtime = je, r6e.typeName = "aiserver.v1.ReadBinaryFileResponse", r6e.fields = je.util.newFieldList(() => [{
+    u6e.runtime = je, u6e.typeName = "aiserver.v1.ReadBinaryFileResponse", u6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "content",
         kind: "scalar",
         T: 12
     }]);
-    let s6e = r6e;
-    const i6e = class e extends q {
+    let m6e = u6e;
+    const c6e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.absolutePath = "", je.util.initPartial(e, this)
         }
@@ -165657,7 +165775,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    i6e.runtime = je, i6e.typeName = "aiserver.v1.StreamBackgroundComposerArtifactRequest", i6e.fields = je.util.newFieldList(() => [{
+    c6e.runtime = je, c6e.typeName = "aiserver.v1.StreamBackgroundComposerArtifactRequest", c6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -165668,8 +165786,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let a6e = i6e;
-    const o6e = class e extends q {
+    let d6e = c6e;
+    const f6e = class e extends q {
         constructor(e) {
             super(), this.contentChunk = new Uint8Array(0), this.contentType = "", this.totalSize = b.zero, je.util.initPartial(e, this)
         }
@@ -165686,7 +165804,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    o6e.runtime = je, o6e.typeName = "aiserver.v1.StreamBackgroundComposerArtifactResponse", o6e.fields = je.util.newFieldList(() => [{
+    f6e.runtime = je, f6e.typeName = "aiserver.v1.StreamBackgroundComposerArtifactResponse", f6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "content_chunk",
         kind: "scalar",
@@ -165702,8 +165820,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let l6e = o6e;
-    const u6e = class e extends q {
+    let p6e = f6e;
+    const T6e = class e extends q {
         constructor(e) {
             super(), this.artifactId = "", this.sourceBcId = "", this.sourceAbsolutePath = "", this.publicUrl = "", this.title = "", this.contentType = "", this.shareSource = "", this.createdAtMs = b.zero, this.updatedAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -165720,7 +165838,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    u6e.runtime = je, u6e.typeName = "aiserver.v1.BackgroundComposerSharedArtifact", u6e.fields = je.util.newFieldList(() => [{
+    T6e.runtime = je, T6e.typeName = "aiserver.v1.BackgroundComposerSharedArtifact", T6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "artifact_id",
         kind: "scalar",
@@ -165772,8 +165890,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let m6e = u6e;
-    const c6e = class e extends q {
+    let _6e = T6e;
+    const g6e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -165790,14 +165908,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    c6e.runtime = je, c6e.typeName = "aiserver.v1.ListSharedBackgroundComposerArtifactsRequest", c6e.fields = je.util.newFieldList(() => [{
+    g6e.runtime = je, g6e.typeName = "aiserver.v1.ListSharedBackgroundComposerArtifactsRequest", g6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let d6e = c6e;
-    const f6e = class e extends q {
+    let w6e = g6e;
+    const h6e = class e extends q {
         constructor(e) {
             super(), this.artifacts = [], je.util.initPartial(e, this)
         }
@@ -165814,15 +165932,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    f6e.runtime = je, f6e.typeName = "aiserver.v1.ListSharedBackgroundComposerArtifactsResponse", f6e.fields = je.util.newFieldList(() => [{
+    h6e.runtime = je, h6e.typeName = "aiserver.v1.ListSharedBackgroundComposerArtifactsResponse", h6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "artifacts",
         kind: "message",
-        T: m6e,
+        T: _6e,
         repeated: !0
     }]);
-    let p6e = f6e;
-    const T6e = class e extends q {
+    let y6e = h6e;
+    const k6e = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.absolutePath = "", je.util.initPartial(e, this)
         }
@@ -165839,7 +165957,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    T6e.runtime = je, T6e.typeName = "aiserver.v1.ShareBackgroundComposerArtifactRequest", T6e.fields = je.util.newFieldList(() => [{
+    k6e.runtime = je, k6e.typeName = "aiserver.v1.ShareBackgroundComposerArtifactRequest", k6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -165856,82 +165974,33 @@
         T: 9,
         opt: !0
     }]);
-    let _6e = T6e;
-    const g6e = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    g6e.runtime = je, g6e.typeName = "aiserver.v1.ShareBackgroundComposerArtifactResponse", g6e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "artifact",
-        kind: "message",
-        T: m6e
-    }]);
-    let w6e = g6e;
-    const h6e = class e extends q {
-        constructor(e) {
-            super(), this.artifactId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    h6e.runtime = je, h6e.typeName = "aiserver.v1.UnshareBackgroundComposerArtifactRequest", h6e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "artifact_id",
-        kind: "scalar",
-        T: 9
-    }]);
-    let y6e = h6e;
-    const k6e = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    k6e.runtime = je, k6e.typeName = "aiserver.v1.UnshareBackgroundComposerArtifactResponse", k6e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "artifact",
-        kind: "message",
-        T: m6e,
-        opt: !0
-    }]);
     let S6e = k6e;
     const J6e = class e extends q {
         constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    J6e.runtime = je, J6e.typeName = "aiserver.v1.ShareBackgroundComposerArtifactResponse", J6e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "artifact",
+        kind: "message",
+        T: _6e
+    }]);
+    let E6e = J6e;
+    const v6e = class e extends q {
+        constructor(e) {
             super(), this.artifactId = "", je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -165947,14 +166016,63 @@
             return je.util.equals(e, t, n)
         }
     };
-    J6e.runtime = je, J6e.typeName = "aiserver.v1.GetPublicBackgroundComposerArtifactRequest", J6e.fields = je.util.newFieldList(() => [{
+    v6e.runtime = je, v6e.typeName = "aiserver.v1.UnshareBackgroundComposerArtifactRequest", v6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "artifact_id",
         kind: "scalar",
         T: 9
     }]);
-    let E6e = J6e;
-    const v6e = class e extends q {
+    let N6e = v6e;
+    const B6e = class e extends q {
+        constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    B6e.runtime = je, B6e.typeName = "aiserver.v1.UnshareBackgroundComposerArtifactResponse", B6e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "artifact",
+        kind: "message",
+        T: _6e,
+        opt: !0
+    }]);
+    let q6e = B6e;
+    const P6e = class e extends q {
+        constructor(e) {
+            super(), this.artifactId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    P6e.runtime = je, P6e.typeName = "aiserver.v1.GetPublicBackgroundComposerArtifactRequest", P6e.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "artifact_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let I6e = P6e;
+    const R6e = class e extends q {
         constructor(e) {
             super(), this.url = "", this.contentType = "", je.util.initPartial(e, this)
         }
@@ -165971,7 +166089,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    v6e.runtime = je, v6e.typeName = "aiserver.v1.GetPublicBackgroundComposerArtifactResponse", v6e.fields = je.util.newFieldList(() => [{
+    R6e.runtime = je, R6e.typeName = "aiserver.v1.GetPublicBackgroundComposerArtifactResponse", R6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "url",
         kind: "scalar",
@@ -165988,8 +166106,8 @@
         T: 9,
         opt: !0
     }]);
-    let N6e = v6e;
-    const B6e = class e extends q {
+    let L6e = R6e;
+    const F6e = class e extends q {
         constructor(e) {
             super(), this.allowlist = [], je.util.initPartial(e, this)
         }
@@ -166006,15 +166124,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    B6e.runtime = je, B6e.typeName = "aiserver.v1.BackgroundComposerUserEgressPolicy", B6e.fields = je.util.newFieldList(() => [{
+    F6e.runtime = je, F6e.typeName = "aiserver.v1.BackgroundComposerUserEgressPolicy", F6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "allowlist",
         kind: "scalar",
         T: 9,
         repeated: !0
     }]);
-    let q6e = B6e;
-    const P6e = class e extends q {
+    let C6e = F6e;
+    const A6e = class e extends q {
         constructor(e) {
             super(), this.id = "", this.label = "", this.templateId = "", this.subagentType = "", this.enabled = !1, this.order = 0, this.executionMode = 0, je.util.initPartial(e, this)
         }
@@ -166031,7 +166149,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    P6e.runtime = je, P6e.typeName = "aiserver.v1.BackgroundComposerQuickActionSubagentSlot", P6e.fields = je.util.newFieldList(() => [{
+    A6e.runtime = je, A6e.typeName = "aiserver.v1.BackgroundComposerQuickActionSubagentSlot", A6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -166065,10 +166183,10 @@
         no: 7,
         name: "execution_mode",
         kind: "enum",
-        T: je.getEnumType(A$e)
+        T: je.getEnumType(M$e)
     }]);
-    let I6e = P6e;
-    const R6e = class e extends q {
+    let x6e = A6e;
+    const O6e = class e extends q {
         constructor(e) {
             super(), this.templateId = "", this.label = "", this.description = "", this.subagentType = "", this.scope = 0, this.canEdit = !1, this.canDelete = !1, je.util.initPartial(e, this)
         }
@@ -166085,7 +166203,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    R6e.runtime = je, R6e.typeName = "aiserver.v1.BackgroundComposerQuickActionSubagentTemplate", R6e.fields = je.util.newFieldList(() => [{
+    O6e.runtime = je, O6e.typeName = "aiserver.v1.BackgroundComposerQuickActionSubagentTemplate", O6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "template_id",
         kind: "scalar",
@@ -166115,7 +166233,7 @@
         no: 6,
         name: "scope",
         kind: "enum",
-        T: je.getEnumType(x$e)
+        T: je.getEnumType(G$e)
     }, {
         no: 7,
         name: "can_edit",
@@ -166133,8 +166251,8 @@
         T: 9,
         opt: !0
     }]);
-    let L6e = R6e;
-    const F6e = class e extends q {
+    let D6e = O6e;
+    const b6e = class e extends q {
         constructor(e) {
             super(), this.operation = 0, je.util.initPartial(e, this)
         }
@@ -166151,19 +166269,19 @@
             return je.util.equals(e, t, n)
         }
     };
-    F6e.runtime = je, F6e.typeName = "aiserver.v1.BackgroundComposerQuickActionSubagentTemplateMutation", F6e.fields = je.util.newFieldList(() => [{
+    b6e.runtime = je, b6e.typeName = "aiserver.v1.BackgroundComposerQuickActionSubagentTemplateMutation", b6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "operation",
         kind: "enum",
-        T: je.getEnumType(O$e)
+        T: je.getEnumType(Y$e)
     }, {
         no: 2,
         name: "template",
         kind: "message",
-        T: L6e
+        T: D6e
     }]);
-    let C6e = F6e;
-    const A6e = class e extends q {
+    let U6e = b6e;
+    const M6e = class e extends q {
         constructor(e) {
             super(), this.quickActionSubagentSlots = [], this.quickActionSubagentSlotsExplicitlySet = !1, this.quickActionSubagentTemplates = [], this.quickActionSubagentTemplateMutations = [], je.util.initPartial(e, this)
         }
@@ -166180,11 +166298,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    A6e.runtime = je, A6e.typeName = "aiserver.v1.BackgroundComposerQuickActionSettings", A6e.fields = je.util.newFieldList(() => [{
+    M6e.runtime = je, M6e.typeName = "aiserver.v1.BackgroundComposerQuickActionSettings", M6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "quick_action_subagent_slots",
         kind: "message",
-        T: I6e,
+        T: x6e,
         repeated: !0
     }, {
         no: 2,
@@ -166201,17 +166319,17 @@
         no: 4,
         name: "quick_action_subagent_templates",
         kind: "message",
-        T: L6e,
+        T: D6e,
         repeated: !0
     }, {
         no: 5,
         name: "quick_action_subagent_template_mutations",
         kind: "message",
-        T: C6e,
+        T: U6e,
         repeated: !0
     }]);
-    let x6e = A6e;
-    const O6e = class e extends q {
+    let G6e = M6e;
+    const Y6e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -166228,11 +166346,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    O6e.runtime = je, O6e.typeName = "aiserver.v1.BackgroundComposerDefaultEnvironmentSetting", O6e.fields = je.util.newFieldList(() => [{
+    Y6e.runtime = je, Y6e.typeName = "aiserver.v1.BackgroundComposerDefaultEnvironmentSetting", Y6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_config",
         kind: "message",
-        T: U0e,
+        T: K0e,
         opt: !0
     }, {
         no: 2,
@@ -166241,8 +166359,8 @@
         T: 9,
         opt: !0
     }]);
-    let D6e = O6e;
-    const b6e = class e extends q {
+    let V6e = Y6e;
+    const H6e = class e extends q {
         constructor(e) {
             super(), this.defaultEnvironmentSettings = [], je.util.initPartial(e, this)
         }
@@ -166259,7 +166377,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    b6e.runtime = je, b6e.typeName = "aiserver.v1.UpdateBackgroundComposerUserSettingsRequest", b6e.fields = je.util.newFieldList(() => [{
+    H6e.runtime = je, H6e.typeName = "aiserver.v1.UpdateBackgroundComposerUserSettingsRequest", H6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "model_name",
         kind: "scalar",
@@ -166287,7 +166405,7 @@
         no: 5,
         name: "auto_create_pr_setting",
         kind: "enum",
-        T: je.getEnumType(C$e),
+        T: je.getEnumType(U$e),
         opt: !0
     }, {
         no: 6,
@@ -166311,7 +166429,7 @@
         no: 9,
         name: "egress_policy",
         kind: "message",
-        T: q6e,
+        T: C6e,
         opt: !0
     }, {
         no: 10,
@@ -166323,7 +166441,7 @@
         no: 11,
         name: "quick_action_settings",
         kind: "message",
-        T: x6e,
+        T: G6e,
         opt: !0
     }, {
         no: 12,
@@ -166347,7 +166465,7 @@
         no: 15,
         name: "default_environment_settings",
         kind: "message",
-        T: D6e,
+        T: V6e,
         repeated: !0
     }, {
         no: 16,
@@ -166356,8 +166474,8 @@
         T: 8,
         opt: !0
     }]);
-    let U6e = b6e;
-    const M6e = class e extends q {
+    let K6e = H6e;
+    const W6e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -166374,9 +166492,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    M6e.runtime = je, M6e.typeName = "aiserver.v1.UpdateBackgroundComposerUserSettingsResponse", M6e.fields = je.util.newFieldList(() => []);
-    let G6e = M6e;
-    const Y6e = class e extends q {
+    W6e.runtime = je, W6e.typeName = "aiserver.v1.UpdateBackgroundComposerUserSettingsResponse", W6e.fields = je.util.newFieldList(() => []);
+    let z6e = W6e;
+    const j6e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -166393,9 +166511,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    Y6e.runtime = je, Y6e.typeName = "aiserver.v1.GetBackgroundComposerUserSettingsRequest", Y6e.fields = je.util.newFieldList(() => []);
-    let V6e = Y6e;
-    const H6e = class e extends q {
+    j6e.runtime = je, j6e.typeName = "aiserver.v1.GetBackgroundComposerUserSettingsRequest", j6e.fields = je.util.newFieldList(() => []);
+    let X6e = j6e;
+    const Q6e = class e extends q {
         constructor(e) {
             super(), this.defaultEnvironmentSettings = [], je.util.initPartial(e, this)
         }
@@ -166412,7 +166530,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    H6e.runtime = je, H6e.typeName = "aiserver.v1.GetBackgroundComposerUserSettingsResponse", H6e.fields = je.util.newFieldList(() => [{
+    Q6e.runtime = je, Q6e.typeName = "aiserver.v1.GetBackgroundComposerUserSettingsResponse", Q6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "model_name",
         kind: "scalar",
@@ -166440,7 +166558,7 @@
         no: 5,
         name: "auto_create_pr_setting",
         kind: "enum",
-        T: je.getEnumType(C$e),
+        T: je.getEnumType(U$e),
         opt: !0
     }, {
         no: 6,
@@ -166464,7 +166582,7 @@
         no: 9,
         name: "egress_policy",
         kind: "message",
-        T: q6e,
+        T: C6e,
         opt: !0
     }, {
         no: 10,
@@ -166476,7 +166594,7 @@
         no: 11,
         name: "quick_action_settings",
         kind: "message",
-        T: x6e,
+        T: G6e,
         opt: !0
     }, {
         no: 12,
@@ -166494,7 +166612,7 @@
         no: 14,
         name: "default_environment_settings",
         kind: "message",
-        T: D6e,
+        T: V6e,
         repeated: !0
     }, {
         no: 15,
@@ -166503,8 +166621,8 @@
         T: 8,
         opt: !0
     }]);
-    let K6e = H6e;
-    const W6e = class e extends q {
+    let $6e = Q6e;
+    const Z6e = class e extends q {
         constructor(e) {
             super(), this.repoUrl = "", je.util.initPartial(e, this)
         }
@@ -166521,7 +166639,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    W6e.runtime = je, W6e.typeName = "aiserver.v1.GetRepositoryBranchesRequest", W6e.fields = je.util.newFieldList(() => [{
+    Z6e.runtime = je, Z6e.typeName = "aiserver.v1.GetRepositoryBranchesRequest", Z6e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "repo_url",
         kind: "scalar",
@@ -166551,8 +166669,8 @@
         T: 5,
         opt: !0
     }]);
-    let z6e = W6e;
-    const j6e = class e extends q {
+    let e7e = Z6e;
+    const t7e = class e extends q {
         constructor(e) {
             super(), this.branches = [], this.hasMore = !1, this.page = 0, this.isEmptyRepo = !1, this.bootstrapBranch = "", je.util.initPartial(e, this)
         }
@@ -166569,11 +166687,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    j6e.runtime = je, j6e.typeName = "aiserver.v1.GetRepositoryBranchesResponse", j6e.fields = je.util.newFieldList(() => [{
+    t7e.runtime = je, t7e.typeName = "aiserver.v1.GetRepositoryBranchesResponse", t7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "branches",
         kind: "message",
-        T: $6e,
+        T: s7e,
         repeated: !0
     }, {
         no: 2,
@@ -166596,8 +166714,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let X6e = j6e;
-    const Q6e = class e extends q {
+    let n7e = t7e;
+    const r7e = class e extends q {
         constructor(e) {
             super(), this.name = "", this.isDefault = !1, je.util.initPartial(e, this)
         }
@@ -166614,7 +166732,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Q6e.runtime = je, Q6e.typeName = "aiserver.v1.GetRepositoryBranchesResponse.Branch", Q6e.fields = je.util.newFieldList(() => [{
+    r7e.runtime = je, r7e.typeName = "aiserver.v1.GetRepositoryBranchesResponse.Branch", r7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -166625,8 +166743,8 @@
         kind: "scalar",
         T: 8
     }]);
-    let $6e = Q6e;
-    const Z6e = class e extends q {
+    let s7e = r7e;
+    const i7e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", je.util.initPartial(e, this)
         }
@@ -166643,7 +166761,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Z6e.runtime = je, Z6e.typeName = "aiserver.v1.GetPullRequestMergeStatusRequest", Z6e.fields = je.util.newFieldList(() => [{
+    i7e.runtime = je, i7e.typeName = "aiserver.v1.GetPullRequestMergeStatusRequest", i7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -166655,8 +166773,8 @@
         T: 8,
         opt: !0
     }]);
-    let e7e = Z6e;
-    const t7e = class e extends q {
+    let a7e = i7e;
+    const o7e = class e extends q {
         constructor(e) {
             super(), this.isMerged = !1, this.isClosed = !1, this.mergeableState = "", this.state = "", this.isDraft = !1, this.title = "", this.baseBranch = "", this.behindBy = 0, this.canUpdateBranch = !1, this.isAutoMergeEnabled = !1, je.util.initPartial(e, this)
         }
@@ -166673,7 +166791,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    t7e.runtime = je, t7e.typeName = "aiserver.v1.GetPullRequestMergeStatusResponse", t7e.fields = je.util.newFieldList(() => [{
+    o7e.runtime = je, o7e.typeName = "aiserver.v1.GetPullRequestMergeStatusResponse", o7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "is_merged",
         kind: "scalar",
@@ -166730,8 +166848,8 @@
         T: 8,
         opt: !0
     }]);
-    let n7e = t7e;
-    const r7e = class e extends q {
+    let l7e = o7e;
+    const u7e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", je.util.initPartial(e, this)
         }
@@ -166748,7 +166866,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    r7e.runtime = je, r7e.typeName = "aiserver.v1.GetDetailedPullRequestStatusRequest", r7e.fields = je.util.newFieldList(() => [{
+    u7e.runtime = je, u7e.typeName = "aiserver.v1.GetDetailedPullRequestStatusRequest", u7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -166760,8 +166878,8 @@
         T: 5,
         opt: !0
     }]);
-    let s7e = r7e;
-    const i7e = class e extends q {
+    let m7e = u7e;
+    const c7e = class e extends q {
         constructor(e) {
             super(), this.environmentUrl = "", this.logUrl = "", this.state = 0, je.util.initPartial(e, this)
         }
@@ -166778,7 +166896,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    i7e.runtime = je, i7e.typeName = "aiserver.v1.PRDeploymentPreviewStatus", i7e.fields = je.util.newFieldList(() => [{
+    c7e.runtime = je, c7e.typeName = "aiserver.v1.PRDeploymentPreviewStatus", c7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment_url",
         kind: "scalar",
@@ -166792,10 +166910,10 @@
         no: 3,
         name: "state",
         kind: "enum",
-        T: je.getEnumType(b$e)
+        T: je.getEnumType(H$e)
     }]);
-    let a7e = i7e;
-    const o7e = class e extends q {
+    let d7e = c7e;
+    const f7e = class e extends q {
         constructor(e) {
             super(), this.environment = "", this.state = 0, je.util.initPartial(e, this)
         }
@@ -166812,7 +166930,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    o7e.runtime = je, o7e.typeName = "aiserver.v1.PRDeploymentPreview", o7e.fields = je.util.newFieldList(() => [{
+    f7e.runtime = je, f7e.typeName = "aiserver.v1.PRDeploymentPreview", f7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "environment",
         kind: "scalar",
@@ -166821,15 +166939,15 @@
         no: 2,
         name: "state",
         kind: "enum",
-        T: je.getEnumType(D$e)
+        T: je.getEnumType(V$e)
     }, {
         no: 3,
         name: "latest_status",
         kind: "message",
-        T: a7e
+        T: d7e
     }]);
-    let l7e = o7e;
-    const u7e = class e extends q {
+    let p7e = f7e;
+    const T7e = class e extends q {
         constructor(e) {
             super(), this.isMerged = !1, this.isClosed = !1, this.mergeableState = "", this.state = "", this.isDraft = !1, this.title = "", this.baseBranch = "", this.behindBy = 0, this.canUpdateBranch = !1, this.isAutoMergeEnabled = !1, this.deploymentPreviews = [], this.reviewers = [], this.requestedReviewers = [], je.util.initPartial(e, this)
         }
@@ -166846,7 +166964,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    u7e.runtime = je, u7e.typeName = "aiserver.v1.GetDetailedPullRequestStatusResponse", u7e.fields = je.util.newFieldList(() => [{
+    T7e.runtime = je, T7e.typeName = "aiserver.v1.GetDetailedPullRequestStatusResponse", T7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "is_merged",
         kind: "scalar",
@@ -166930,7 +167048,7 @@
         no: 16,
         name: "deployment_previews",
         kind: "message",
-        T: l7e,
+        T: p7e,
         repeated: !0
     }, {
         no: 17,
@@ -166960,17 +167078,17 @@
         no: 21,
         name: "reviewers",
         kind: "message",
-        T: d7e,
+        T: w7e,
         repeated: !0
     }, {
         no: 22,
         name: "requested_reviewers",
         kind: "message",
-        T: p7e,
+        T: y7e,
         repeated: !0
     }]);
-    let m7e = u7e;
-    const c7e = class e extends q {
+    let _7e = T7e;
+    const g7e = class e extends q {
         constructor(e) {
             super(), this.authorLogin = "", je.util.initPartial(e, this)
         }
@@ -166987,7 +167105,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    c7e.runtime = je, c7e.typeName = "aiserver.v1.PRReviewSummary", c7e.fields = je.util.newFieldList(() => [{
+    g7e.runtime = je, g7e.typeName = "aiserver.v1.PRReviewSummary", g7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "author_login",
         kind: "scalar",
@@ -167011,8 +167129,8 @@
         T: 9,
         opt: !0
     }]);
-    let d7e = c7e;
-    const f7e = class e extends q {
+    let w7e = g7e;
+    const h7e = class e extends q {
         constructor(e) {
             super(), this.login = "", je.util.initPartial(e, this)
         }
@@ -167029,7 +167147,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    f7e.runtime = je, f7e.typeName = "aiserver.v1.PRRequestedReviewer", f7e.fields = je.util.newFieldList(() => [{
+    h7e.runtime = je, h7e.typeName = "aiserver.v1.PRRequestedReviewer", h7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "login",
         kind: "scalar",
@@ -167053,8 +167171,8 @@
         T: 9,
         opt: !0
     }]);
-    let p7e = f7e;
-    const T7e = class e extends q {
+    let y7e = h7e;
+    const k7e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", je.util.initPartial(e, this)
         }
@@ -167071,14 +167189,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    T7e.runtime = je, T7e.typeName = "aiserver.v1.CheckPullRequestMergeabilityRequest", T7e.fields = je.util.newFieldList(() => [{
+    k7e.runtime = je, k7e.typeName = "aiserver.v1.CheckPullRequestMergeabilityRequest", k7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
         T: 9
     }]);
-    let _7e = T7e;
-    const g7e = class e extends q {
+    let S7e = k7e;
+    const J7e = class e extends q {
         constructor(e) {
             super(), this.canMerge = !1, this.error = "", je.util.initPartial(e, this)
         }
@@ -167095,7 +167213,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    g7e.runtime = je, g7e.typeName = "aiserver.v1.CheckPullRequestMergeabilityResponse", g7e.fields = je.util.newFieldList(() => [{
+    J7e.runtime = je, J7e.typeName = "aiserver.v1.CheckPullRequestMergeabilityResponse", J7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "can_merge",
         kind: "scalar",
@@ -167112,8 +167230,8 @@
         T: 9,
         opt: !0
     }]);
-    let w7e = g7e;
-    const h7e = class e extends q {
+    let E7e = J7e;
+    const v7e = class e extends q {
         constructor(e) {
             super(), this.id = "", this.authorLogin = "", this.avatarUrl = "", this.body = "", this.createdAt = "", je.util.initPartial(e, this)
         }
@@ -167130,7 +167248,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    h7e.runtime = je, h7e.typeName = "aiserver.v1.PRReviewComment", h7e.fields = je.util.newFieldList(() => [{
+    v7e.runtime = je, v7e.typeName = "aiserver.v1.PRReviewComment", v7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -167174,8 +167292,8 @@
         T: 9,
         opt: !0
     }]);
-    let y7e = h7e;
-    const k7e = class e extends q {
+    let N7e = v7e;
+    const B7e = class e extends q {
         constructor(e) {
             super(), this.id = "", this.path = "", this.diffSide = "", this.isResolved = !1, this.isOutdated = !1, this.comments = [], je.util.initPartial(e, this)
         }
@@ -167192,7 +167310,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    k7e.runtime = je, k7e.typeName = "aiserver.v1.PRReviewThread", k7e.fields = je.util.newFieldList(() => [{
+    B7e.runtime = je, B7e.typeName = "aiserver.v1.PRReviewThread", B7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -167245,7 +167363,7 @@
         no: 10,
         name: "comments",
         kind: "message",
-        T: y7e,
+        T: N7e,
         repeated: !0
     }, {
         no: 11,
@@ -167254,8 +167372,8 @@
         T: 9,
         opt: !0
     }]);
-    let S7e = k7e;
-    const J7e = class e extends q {
+    let q7e = B7e;
+    const P7e = class e extends q {
         constructor(e) {
             super(), this.id = "", this.authorLogin = "", this.avatarUrl = "", this.body = "", this.createdAt = "", je.util.initPartial(e, this)
         }
@@ -167272,7 +167390,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    J7e.runtime = je, J7e.typeName = "aiserver.v1.PRTopLevelComment", J7e.fields = je.util.newFieldList(() => [{
+    P7e.runtime = je, P7e.typeName = "aiserver.v1.PRTopLevelComment", P7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -167310,8 +167428,8 @@
         T: 9,
         opt: !0
     }]);
-    let E7e = J7e;
-    const v7e = class e extends q {
+    let I7e = P7e;
+    const R7e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -167328,7 +167446,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    v7e.runtime = je, v7e.typeName = "aiserver.v1.PRCommitUser", v7e.fields = je.util.newFieldList(() => [{
+    R7e.runtime = je, R7e.typeName = "aiserver.v1.PRCommitUser", R7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -167347,8 +167465,8 @@
         T: 9,
         opt: !0
     }]);
-    let N7e = v7e;
-    const B7e = class e extends q {
+    let L7e = R7e;
+    const F7e = class e extends q {
         constructor(e) {
             super(), this.sha = "", this.message = "", this.committedDate = "", this.additions = 0, this.deletions = 0, je.util.initPartial(e, this)
         }
@@ -167365,7 +167483,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    B7e.runtime = je, B7e.typeName = "aiserver.v1.PRCommit", B7e.fields = je.util.newFieldList(() => [{
+    F7e.runtime = je, F7e.typeName = "aiserver.v1.PRCommit", F7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "sha",
         kind: "scalar",
@@ -167400,15 +167518,15 @@
         no: 7,
         name: "author",
         kind: "message",
-        T: N7e
+        T: L7e
     }, {
         no: 8,
         name: "committer",
         kind: "message",
-        T: N7e
+        T: L7e
     }]);
-    let q7e = B7e;
-    const P7e = class e extends q {
+    let C7e = F7e;
+    const A7e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", je.util.initPartial(e, this)
         }
@@ -167425,7 +167543,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    P7e.runtime = je, P7e.typeName = "aiserver.v1.GetPullRequestDiscussionsRequest", P7e.fields = je.util.newFieldList(() => [{
+    A7e.runtime = je, A7e.typeName = "aiserver.v1.GetPullRequestDiscussionsRequest", A7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -167437,8 +167555,8 @@
         T: 8,
         opt: !0
     }]);
-    let I7e = P7e;
-    const R7e = class e extends q {
+    let x7e = A7e;
+    const O7e = class e extends q {
         constructor(e) {
             super(), this.threads = [], this.topLevelComments = [], je.util.initPartial(e, this)
         }
@@ -167455,17 +167573,17 @@
             return je.util.equals(e, t, n)
         }
     };
-    R7e.runtime = je, R7e.typeName = "aiserver.v1.GetPullRequestDiscussionsResponse", R7e.fields = je.util.newFieldList(() => [{
+    O7e.runtime = je, O7e.typeName = "aiserver.v1.GetPullRequestDiscussionsResponse", O7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "threads",
         kind: "message",
-        T: S7e,
+        T: q7e,
         repeated: !0
     }, {
         no: 2,
         name: "top_level_comments",
         kind: "message",
-        T: E7e,
+        T: I7e,
         repeated: !0
     }, {
         no: 3,
@@ -167474,8 +167592,8 @@
         T: _Qe,
         opt: !0
     }]);
-    let L7e = R7e;
-    const F7e = class e extends q {
+    let D7e = O7e;
+    const b7e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", je.util.initPartial(e, this)
         }
@@ -167492,7 +167610,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    F7e.runtime = je, F7e.typeName = "aiserver.v1.GetPullRequestCommitsRequest", F7e.fields = je.util.newFieldList(() => [{
+    b7e.runtime = je, b7e.typeName = "aiserver.v1.GetPullRequestCommitsRequest", b7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -167504,8 +167622,8 @@
         T: 9,
         opt: !0
     }]);
-    let C7e = F7e;
-    const A7e = class e extends q {
+    let U7e = b7e;
+    const M7e = class e extends q {
         constructor(e) {
             super(), this.commits = [], this.hasNextPage = !1, je.util.initPartial(e, this)
         }
@@ -167522,11 +167640,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    A7e.runtime = je, A7e.typeName = "aiserver.v1.GetPullRequestCommitsResponse", A7e.fields = je.util.newFieldList(() => [{
+    M7e.runtime = je, M7e.typeName = "aiserver.v1.GetPullRequestCommitsResponse", M7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "commits",
         kind: "message",
-        T: q7e,
+        T: C7e,
         repeated: !0
     }, {
         no: 2,
@@ -167540,8 +167658,8 @@
         T: 9,
         opt: !0
     }]);
-    let x7e = A7e;
-    const O7e = class e extends q {
+    let G7e = M7e;
+    const Y7e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", je.util.initPartial(e, this)
         }
@@ -167558,7 +167676,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    O7e.runtime = je, O7e.typeName = "aiserver.v1.GetPullRequestTimelineEventsRequest", O7e.fields = je.util.newFieldList(() => [{
+    Y7e.runtime = je, Y7e.typeName = "aiserver.v1.GetPullRequestTimelineEventsRequest", Y7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -167570,8 +167688,8 @@
         T: 5,
         opt: !0
     }]);
-    let D7e = O7e;
-    const b7e = class e extends q {
+    let V7e = Y7e;
+    const H7e = class e extends q {
         constructor(e) {
             super(), this.events = [], this.hasNextPage = !1, je.util.initPartial(e, this)
         }
@@ -167588,11 +167706,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    b7e.runtime = je, b7e.typeName = "aiserver.v1.GetPullRequestTimelineEventsResponse", b7e.fields = je.util.newFieldList(() => [{
+    H7e.runtime = je, H7e.typeName = "aiserver.v1.GetPullRequestTimelineEventsResponse", H7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "events",
         kind: "message",
-        T: G7e,
+        T: z7e,
         repeated: !0
     }, {
         no: 2,
@@ -167606,8 +167724,8 @@
         T: 5,
         opt: !0
     }]);
-    let U7e = b7e;
-    const M7e = class e extends q {
+    let K7e = H7e;
+    const W7e = class e extends q {
         constructor(e) {
             super(), this.id = "", this.eventType = "", this.createdAt = "", je.util.initPartial(e, this)
         }
@@ -167624,7 +167742,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    M7e.runtime = je, M7e.typeName = "aiserver.v1.PRTimelineEvent", M7e.fields = je.util.newFieldList(() => [{
+    W7e.runtime = je, W7e.typeName = "aiserver.v1.PRTimelineEvent", W7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "id",
         kind: "scalar",
@@ -167643,7 +167761,7 @@
         no: 4,
         name: "actor",
         kind: "message",
-        T: V7e,
+        T: X7e,
         opt: !0
     }, {
         no: 5,
@@ -167658,8 +167776,8 @@
         T: 9,
         opt: !0
     }]);
-    let G7e = M7e;
-    const Y7e = class e extends q {
+    let z7e = W7e;
+    const j7e = class e extends q {
         constructor(e) {
             super(), this.login = "", je.util.initPartial(e, this)
         }
@@ -167676,7 +167794,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Y7e.runtime = je, Y7e.typeName = "aiserver.v1.PRTimelineActor", Y7e.fields = je.util.newFieldList(() => [{
+    j7e.runtime = je, j7e.typeName = "aiserver.v1.PRTimelineActor", j7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "login",
         kind: "scalar",
@@ -167694,8 +167812,8 @@
         T: 9,
         opt: !0
     }]);
-    let V7e = Y7e;
-    const H7e = class e extends q {
+    let X7e = j7e;
+    const Q7e = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", this.threadId = "", this.body = "", je.util.initPartial(e, this)
         }
@@ -167712,7 +167830,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    H7e.runtime = je, H7e.typeName = "aiserver.v1.ReplyToReviewThreadRequest", H7e.fields = je.util.newFieldList(() => [{
+    Q7e.runtime = je, Q7e.typeName = "aiserver.v1.ReplyToReviewThreadRequest", Q7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -167728,8 +167846,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let K7e = H7e;
-    const W7e = class e extends q {
+    let $7e = Q7e;
+    const Z7e = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -167746,98 +167864,45 @@
             return je.util.equals(e, t, n)
         }
     };
-    W7e.runtime = je, W7e.typeName = "aiserver.v1.ReplyToReviewThreadResponse", W7e.fields = je.util.newFieldList(() => [{
+    Z7e.runtime = je, Z7e.typeName = "aiserver.v1.ReplyToReviewThreadResponse", Z7e.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "thread",
         kind: "message",
-        T: S7e,
+        T: q7e,
         opt: !0
-    }]);
-    let z7e = W7e;
-    const j7e = class e extends q {
-        constructor(e) {
-            super(), this.prUrl = "", this.threadId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    j7e.runtime = je, j7e.typeName = "aiserver.v1.ResolveReviewThreadRequest", j7e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "pr_url",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "thread_id",
-        kind: "scalar",
-        T: 9
-    }]);
-    let X7e = j7e;
-    const Q7e = class e extends q {
-        constructor(e) {
-            super(), this.success = !1, je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    Q7e.runtime = je, Q7e.typeName = "aiserver.v1.ResolveReviewThreadResponse", Q7e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "success",
-        kind: "scalar",
-        T: 8
-    }]);
-    let $7e = Q7e;
-    const Z7e = class e extends q {
-        constructor(e) {
-            super(), this.prUrl = "", this.threadId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    Z7e.runtime = je, Z7e.typeName = "aiserver.v1.UnresolveReviewThreadRequest", Z7e.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "pr_url",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "thread_id",
-        kind: "scalar",
-        T: 9
     }]);
     let eet = Z7e;
     const tet = class e extends q {
         constructor(e) {
+            super(), this.prUrl = "", this.threadId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    tet.runtime = je, tet.typeName = "aiserver.v1.ResolveReviewThreadRequest", tet.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "pr_url",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "thread_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let net = tet;
+    const ret = class e extends q {
+        constructor(e) {
             super(), this.success = !1, je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -167853,14 +167918,67 @@
             return je.util.equals(e, t, n)
         }
     };
-    tet.runtime = je, tet.typeName = "aiserver.v1.UnresolveReviewThreadResponse", tet.fields = je.util.newFieldList(() => [{
+    ret.runtime = je, ret.typeName = "aiserver.v1.ResolveReviewThreadResponse", ret.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let net = tet;
-    const ret = class e extends q {
+    let set = ret;
+    const iet = class e extends q {
+        constructor(e) {
+            super(), this.prUrl = "", this.threadId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    iet.runtime = je, iet.typeName = "aiserver.v1.UnresolveReviewThreadRequest", iet.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "pr_url",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "thread_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let aet = iet;
+    const oet = class e extends q {
+        constructor(e) {
+            super(), this.success = !1, je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    oet.runtime = je, oet.typeName = "aiserver.v1.UnresolveReviewThreadResponse", oet.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "success",
+        kind: "scalar",
+        T: 8
+    }]);
+    let uet = oet;
+    const met = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", this.commentId = "", je.util.initPartial(e, this)
         }
@@ -167877,7 +167995,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    ret.runtime = je, ret.typeName = "aiserver.v1.DeletePullRequestReviewCommentRequest", ret.fields = je.util.newFieldList(() => [{
+    met.runtime = je, met.typeName = "aiserver.v1.DeletePullRequestReviewCommentRequest", met.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -167894,8 +168012,8 @@
         T: 9,
         opt: !0
     }]);
-    let set = ret;
-    const iet = class e extends q {
+    let cet = met;
+    const det = class e extends q {
         constructor(e) {
             super(), this.success = !1, je.util.initPartial(e, this)
         }
@@ -167912,14 +168030,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    iet.runtime = je, iet.typeName = "aiserver.v1.DeletePullRequestReviewCommentResponse", iet.fields = je.util.newFieldList(() => [{
+    det.runtime = je, det.typeName = "aiserver.v1.DeletePullRequestReviewCommentResponse", det.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
         T: 8
     }]);
-    let aet = iet;
-    const oet = class e extends q {
+    let fet = det;
+    const pet = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", this.path = "", this.body = "", this.line = 0, je.util.initPartial(e, this)
         }
@@ -167936,7 +168054,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    oet.runtime = je, oet.typeName = "aiserver.v1.AddPullRequestReviewCommentRequest", oet.fields = je.util.newFieldList(() => [{
+    pet.runtime = je, pet.typeName = "aiserver.v1.AddPullRequestReviewCommentRequest", pet.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
@@ -167975,8 +168093,8 @@
         T: 9,
         opt: !0
     }]);
-    let uet = oet;
-    const met = class e extends q {
+    let Tet = pet;
+    const _et = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -167993,112 +168111,17 @@
             return je.util.equals(e, t, n)
         }
     };
-    met.runtime = je, met.typeName = "aiserver.v1.AddPullRequestReviewCommentResponse", met.fields = je.util.newFieldList(() => [{
+    _et.runtime = je, _et.typeName = "aiserver.v1.AddPullRequestReviewCommentResponse", _et.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "thread",
         kind: "message",
-        T: S7e,
-        opt: !0
-    }]);
-    let cet = met;
-    const det = class e extends q {
-        constructor(e) {
-            super(), this.prUrl = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    det.runtime = je, det.typeName = "aiserver.v1.MergePullRequestRequest", det.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "pr_url",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "merge_method",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }]);
-    let fet = det;
-    const pet = class e extends q {
-        constructor(e) {
-            super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    pet.runtime = je, pet.typeName = "aiserver.v1.MergePullRequestResponse", pet.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "success",
-        kind: "scalar",
-        T: 8
-    }, {
-        no: 2,
-        name: "error",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 3,
-        name: "pr_node_id",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }]);
-    let Tet = pet;
-    const _et = class e extends q {
-        constructor(e) {
-            super(), this.prUrl = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    _et.runtime = je, _et.typeName = "aiserver.v1.EnablePullRequestAutoMergeRequest", _et.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "pr_url",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "merge_method",
-        kind: "scalar",
-        T: 9,
+        T: q7e,
         opt: !0
     }]);
     let get = _et;
     const wet = class e extends q {
         constructor(e) {
-            super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
+            super(), this.prUrl = "", je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
             return (new e).fromBinary(t, n)
@@ -168113,19 +168136,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    wet.runtime = je, wet.typeName = "aiserver.v1.EnablePullRequestAutoMergeResponse", wet.fields = je.util.newFieldList(() => [{
+    wet.runtime = je, wet.typeName = "aiserver.v1.MergePullRequestRequest", wet.fields = je.util.newFieldList(() => [{
         no: 1,
-        name: "success",
-        kind: "scalar",
-        T: 8
-    }, {
-        no: 2,
-        name: "error",
+        name: "pr_url",
         kind: "scalar",
         T: 9
     }, {
-        no: 3,
-        name: "pr_node_id",
+        no: 2,
+        name: "merge_method",
         kind: "scalar",
         T: 9,
         opt: !0
@@ -168133,30 +168151,6 @@
     let het = wet;
     const yet = class e extends q {
         constructor(e) {
-            super(), this.prUrl = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    yet.runtime = je, yet.typeName = "aiserver.v1.DisablePullRequestAutoMergeRequest", yet.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "pr_url",
-        kind: "scalar",
-        T: 9
-    }]);
-    let ket = yet;
-    const Jet = class e extends q {
-        constructor(e) {
             super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -168172,7 +168166,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Jet.runtime = je, Jet.typeName = "aiserver.v1.DisablePullRequestAutoMergeResponse", Jet.fields = je.util.newFieldList(() => [{
+    yet.runtime = je, yet.typeName = "aiserver.v1.MergePullRequestResponse", yet.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -168189,8 +168183,132 @@
         T: 9,
         opt: !0
     }]);
+    let ket = yet;
+    const Jet = class e extends q {
+        constructor(e) {
+            super(), this.prUrl = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    Jet.runtime = je, Jet.typeName = "aiserver.v1.EnablePullRequestAutoMergeRequest", Jet.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "pr_url",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "merge_method",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
     let Eet = Jet;
     const vet = class e extends q {
+        constructor(e) {
+            super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    vet.runtime = je, vet.typeName = "aiserver.v1.EnablePullRequestAutoMergeResponse", vet.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "success",
+        kind: "scalar",
+        T: 8
+    }, {
+        no: 2,
+        name: "error",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 3,
+        name: "pr_node_id",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let Net = vet;
+    const Bet = class e extends q {
+        constructor(e) {
+            super(), this.prUrl = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    Bet.runtime = je, Bet.typeName = "aiserver.v1.DisablePullRequestAutoMergeRequest", Bet.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "pr_url",
+        kind: "scalar",
+        T: 9
+    }]);
+    let qet = Bet;
+    const Pet = class e extends q {
+        constructor(e) {
+            super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    Pet.runtime = je, Pet.typeName = "aiserver.v1.DisablePullRequestAutoMergeResponse", Pet.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "success",
+        kind: "scalar",
+        T: 8
+    }, {
+        no: 2,
+        name: "error",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 3,
+        name: "pr_node_id",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let Iet = Pet;
+    const Ret = class e extends q {
         constructor(e) {
             super(), this.name = "", this.port = 0, je.util.initPartial(e, this)
         }
@@ -168207,7 +168325,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    vet.runtime = je, vet.typeName = "aiserver.v1.EnvironmentPort", vet.fields = je.util.newFieldList(() => [{
+    Ret.runtime = je, Ret.typeName = "aiserver.v1.EnvironmentPort", Ret.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "name",
         kind: "scalar",
@@ -168218,8 +168336,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Net = vet;
-    const Bet = class e extends q {
+    let Let = Ret;
+    const Fet = class e extends q {
         constructor(e) {
             super(), this.token = "", this.platform = 0, this.deviceId = "", je.util.initPartial(e, this)
         }
@@ -168236,7 +168354,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Bet.runtime = je, Bet.typeName = "aiserver.v1.RegisterPushNotificationTokenRequest", Bet.fields = je.util.newFieldList(() => [{
+    Fet.runtime = je, Fet.typeName = "aiserver.v1.RegisterPushNotificationTokenRequest", Fet.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "token",
         kind: "scalar",
@@ -168245,15 +168363,15 @@
         no: 2,
         name: "platform",
         kind: "enum",
-        T: je.getEnumType(U$e)
+        T: je.getEnumType(K$e)
     }, {
         no: 3,
         name: "device_id",
         kind: "scalar",
         T: 9
     }]);
-    let qet = Bet;
-    const Pet = class e extends q {
+    let Cet = Fet;
+    const Aet = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -168270,9 +168388,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    Pet.runtime = je, Pet.typeName = "aiserver.v1.RegisterPushNotificationTokenResponse", Pet.fields = je.util.newFieldList(() => []);
-    let Iet = Pet;
-    const Ret = class e extends q {
+    Aet.runtime = je, Aet.typeName = "aiserver.v1.RegisterPushNotificationTokenResponse", Aet.fields = je.util.newFieldList(() => []);
+    let xet = Aet;
+    const Oet = class e extends q {
         constructor(e) {
             super(), this.deviceId = "", this.platform = 0, je.util.initPartial(e, this)
         }
@@ -168289,7 +168407,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ret.runtime = je, Ret.typeName = "aiserver.v1.DeletePushNotificationTokenRequest", Ret.fields = je.util.newFieldList(() => [{
+    Oet.runtime = je, Oet.typeName = "aiserver.v1.DeletePushNotificationTokenRequest", Oet.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "device_id",
         kind: "scalar",
@@ -168298,10 +168416,10 @@
         no: 2,
         name: "platform",
         kind: "enum",
-        T: je.getEnumType(U$e)
+        T: je.getEnumType(K$e)
     }]);
-    let Let = Ret;
-    const Fet = class e extends q {
+    let Det = Oet;
+    const bet = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -168318,9 +168436,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    Fet.runtime = je, Fet.typeName = "aiserver.v1.DeletePushNotificationTokenResponse", Fet.fields = je.util.newFieldList(() => []);
-    let Cet = Fet;
-    const Aet = class e extends q {
+    bet.runtime = je, bet.typeName = "aiserver.v1.DeletePushNotificationTokenResponse", bet.fields = je.util.newFieldList(() => []);
+    let Uet = bet;
+    const Met = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.title = "", this.status = 0, this.startedAtEpochSeconds = b.zero, je.util.initPartial(e, this)
         }
@@ -168337,7 +168455,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Aet.runtime = je, Aet.typeName = "aiserver.v1.LiveActivityAgentEntry", Aet.fields = je.util.newFieldList(() => [{
+    Met.runtime = je, Met.typeName = "aiserver.v1.LiveActivityAgentEntry", Met.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -168351,7 +168469,7 @@
         no: 3,
         name: "status",
         kind: "enum",
-        T: je.getEnumType(w$e)
+        T: je.getEnumType(E$e)
     }, {
         no: 4,
         name: "started_at_epoch_seconds",
@@ -168400,8 +168518,8 @@
         T: 5,
         opt: !0
     }]);
-    let xet = Aet;
-    const Oet = class e extends q {
+    let Get = Met;
+    const Yet = class e extends q {
         constructor(e) {
             super(), this.agents = [], je.util.initPartial(e, this)
         }
@@ -168418,15 +168536,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    Oet.runtime = je, Oet.typeName = "aiserver.v1.LiveActivityContentState", Oet.fields = je.util.newFieldList(() => [{
+    Yet.runtime = je, Yet.typeName = "aiserver.v1.LiveActivityContentState", Yet.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "agents",
         kind: "message",
-        T: xet,
+        T: Get,
         repeated: !0
     }]);
-    let Det = Oet;
-    const bet = class e extends q {
+    let Vet = Yet;
+    const Het = class e extends q {
         constructor(e) {
             super(), this.deviceId = "", this.platform = 0, this.activityPushToken = "", this.stateVersion = b.zero, this.bundleId = "", je.util.initPartial(e, this)
         }
@@ -168443,7 +168561,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    bet.runtime = je, bet.typeName = "aiserver.v1.SyncLiveActivityRequest", bet.fields = je.util.newFieldList(() => [{
+    Het.runtime = je, Het.typeName = "aiserver.v1.SyncLiveActivityRequest", Het.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "device_id",
         kind: "scalar",
@@ -168452,7 +168570,7 @@
         no: 2,
         name: "platform",
         kind: "enum",
-        T: je.getEnumType(U$e)
+        T: je.getEnumType(K$e)
     }, {
         no: 3,
         name: "activity_push_token",
@@ -168462,7 +168580,7 @@
         no: 4,
         name: "content_state",
         kind: "message",
-        T: Det
+        T: Vet
     }, {
         no: 5,
         name: "state_version",
@@ -168474,8 +168592,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Uet = bet;
-    const Met = class e extends q {
+    let Ket = Het;
+    const Wet = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -168492,9 +168610,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    Met.runtime = je, Met.typeName = "aiserver.v1.SyncLiveActivityResponse", Met.fields = je.util.newFieldList(() => []);
-    let Get = Met;
-    const Yet = class e extends q {
+    Wet.runtime = je, Wet.typeName = "aiserver.v1.SyncLiveActivityResponse", Wet.fields = je.util.newFieldList(() => []);
+    let zet = Wet;
+    const jet = class e extends q {
         constructor(e) {
             super(), this.deviceId = "", this.platform = 0, je.util.initPartial(e, this)
         }
@@ -168511,7 +168629,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Yet.runtime = je, Yet.typeName = "aiserver.v1.DeleteLiveActivityRequest", Yet.fields = je.util.newFieldList(() => [{
+    jet.runtime = je, jet.typeName = "aiserver.v1.DeleteLiveActivityRequest", jet.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "device_id",
         kind: "scalar",
@@ -168520,10 +168638,10 @@
         no: 2,
         name: "platform",
         kind: "enum",
-        T: je.getEnumType(U$e)
+        T: je.getEnumType(K$e)
     }]);
-    let Vet = Yet;
-    const Het = class e extends q {
+    let Xet = jet;
+    const Qet = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -168540,9 +168658,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    Het.runtime = je, Het.typeName = "aiserver.v1.DeleteLiveActivityResponse", Het.fields = je.util.newFieldList(() => []);
-    let Ket = Het;
-    const Wet = class e extends q {
+    Qet.runtime = je, Qet.typeName = "aiserver.v1.DeleteLiveActivityResponse", Qet.fields = je.util.newFieldList(() => []);
+    let $et = Qet;
+    const Zet = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.accessType = "", je.util.initPartial(e, this)
         }
@@ -168559,7 +168677,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Wet.runtime = je, Wet.typeName = "aiserver.v1.VerifyBackgroundComposerAccessRequest", Wet.fields = je.util.newFieldList(() => [{
+    Zet.runtime = je, Zet.typeName = "aiserver.v1.VerifyBackgroundComposerAccessRequest", Zet.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -168570,8 +168688,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let zet = Wet;
-    const jet = class e extends q {
+    let ett = Zet;
+    const ttt = class e extends q {
         constructor(e) {
             super(), this.hasAccess = !1, je.util.initPartial(e, this)
         }
@@ -168588,14 +168706,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    jet.runtime = je, jet.typeName = "aiserver.v1.VerifyBackgroundComposerAccessResponse", jet.fields = je.util.newFieldList(() => [{
+    ttt.runtime = je, ttt.typeName = "aiserver.v1.VerifyBackgroundComposerAccessResponse", ttt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "has_access",
         kind: "scalar",
         T: 8
     }]);
-    let Xet = jet;
-    const Qet = class e extends q {
+    let ntt = ttt;
+    const rtt = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -168612,7 +168730,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Qet.runtime = je, Qet.typeName = "aiserver.v1.ConvertPullRequestFromDraftRequest", Qet.fields = je.util.newFieldList(() => [{
+    rtt.runtime = je, rtt.typeName = "aiserver.v1.ConvertPullRequestFromDraftRequest", rtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -168624,8 +168742,8 @@
         T: 9,
         opt: !0
     }]);
-    let $et = Qet;
-    const Zet = class e extends q {
+    let stt = rtt;
+    const itt = class e extends q {
         constructor(e) {
             super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
         }
@@ -168642,7 +168760,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Zet.runtime = je, Zet.typeName = "aiserver.v1.ConvertPullRequestFromDraftResponse", Zet.fields = je.util.newFieldList(() => [{
+    itt.runtime = je, itt.typeName = "aiserver.v1.ConvertPullRequestFromDraftResponse", itt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -168653,8 +168771,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let ett = Zet;
-    const ttt = class e extends q {
+    let att = itt;
+    const ott = class e extends q {
         constructor(e) {
             super(), this.prUrl = "", je.util.initPartial(e, this)
         }
@@ -168671,14 +168789,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    ttt.runtime = je, ttt.typeName = "aiserver.v1.UpdatePullRequestBranchRequest", ttt.fields = je.util.newFieldList(() => [{
+    ott.runtime = je, ott.typeName = "aiserver.v1.UpdatePullRequestBranchRequest", ott.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pr_url",
         kind: "scalar",
         T: 9
     }]);
-    let ntt = ttt;
-    const rtt = class e extends q {
+    let ltt = ott;
+    const utt = class e extends q {
         constructor(e) {
             super(), this.success = !1, this.error = "", je.util.initPartial(e, this)
         }
@@ -168695,7 +168813,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    rtt.runtime = je, rtt.typeName = "aiserver.v1.UpdatePullRequestBranchResponse", rtt.fields = je.util.newFieldList(() => [{
+    utt.runtime = je, utt.typeName = "aiserver.v1.UpdatePullRequestBranchResponse", utt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "success",
         kind: "scalar",
@@ -168712,8 +168830,8 @@
         T: 9,
         opt: !0
     }]);
-    let stt = rtt;
-    const itt = class e extends q {
+    let mtt = utt;
+    const ctt = class e extends q {
         constructor(e) {
             super(), this.cloudAgentStateBlobId = new Uint8Array(0), this.offsetKey = "", this.timestampMs = 0, this.workflowStatus = 0, this.version = 0, je.util.initPartial(e, this)
         }
@@ -168730,7 +168848,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    itt.runtime = je, itt.typeName = "aiserver.v1.CloudAgentStatePersistedMetadata", itt.fields = je.util.newFieldList(() => [{
+    ctt.runtime = je, ctt.typeName = "aiserver.v1.CloudAgentStatePersistedMetadata", ctt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "cloud_agent_state_blob_id",
         kind: "scalar",
@@ -168749,22 +168867,22 @@
         no: 4,
         name: "workflow_status",
         kind: "enum",
-        T: je.getEnumType(h$e)
+        T: je.getEnumType(v$e)
     }, {
         no: 5,
         name: "version",
         kind: "enum",
-        T: je.getEnumType(att)
+        T: je.getEnumType(dtt)
     }]);
-    var att = (e => (e[e.PERSISTED_METADATA_VERSION_UNSPECIFIED = 0] = "PERSISTED_METADATA_VERSION_UNSPECIFIED", e[e.PERSISTED_METADATA_VERSION_1 = 1] = "PERSISTED_METADATA_VERSION_1", e))(att || {});
-    je.util.setEnumType(att, "aiserver.v1.CloudAgentStatePersistedMetadata.PersistedMetadataVersion", [{
+    var dtt = (e => (e[e.PERSISTED_METADATA_VERSION_UNSPECIFIED = 0] = "PERSISTED_METADATA_VERSION_UNSPECIFIED", e[e.PERSISTED_METADATA_VERSION_1 = 1] = "PERSISTED_METADATA_VERSION_1", e))(dtt || {});
+    je.util.setEnumType(dtt, "aiserver.v1.CloudAgentStatePersistedMetadata.PersistedMetadataVersion", [{
         no: 0,
         name: "PERSISTED_METADATA_VERSION_UNSPECIFIED"
     }, {
         no: 1,
         name: "PERSISTED_METADATA_VERSION_1"
     }]);
-    const ott = class e extends q {
+    const ftt = class e extends q {
         constructor(e) {
             super(), this.numPriorInteractionUpdates = 0, this.prBody = new Uint8Array(0), this.summary = new Uint8Array(0), this.branchName = new Uint8Array(0), this.prUrl = new Uint8Array(0), this.agentName = new Uint8Array(0), this.lastInteractionUpdateOffsetKey = "", this.config = new Uint8Array(0), this.originalPromptBlobId = new Uint8Array(0), this.repositoryInfoBlobId = new Uint8Array(0), this.originalConversationActionBlobId = new Uint8Array(0), this.videoAnnotationsBlobId = new Uint8Array(0), this.turnStartTodoIds = [], this.commits = [], this.numCompletedTurns = 0, this.startRequestBlobId = new Uint8Array(0), this.commitReminderStateBlobId = new Uint8Array(0), this.grindModeTrackingStateBlobId = new Uint8Array(0), this.workflowControlStateBlobId = new Uint8Array(0), this.workerCreations = [], this.resolvedEgressPolicyBlobId = new Uint8Array(0), this.pendingPrBlobId = new Uint8Array(0), this.nextTurnSystemRemindersBlobId = new Uint8Array(0), this.cloudPluginManifestBlobId = new Uint8Array(0), this.perBranchOptimizedDiffs = {}, this.startupWarnings = [], je.util.initPartial(e, this)
         }
@@ -168781,7 +168899,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    ott.runtime = je, ott.typeName = "aiserver.v1.CloudAgentState", ott.fields = je.util.newFieldList(() => [{
+    ftt.runtime = je, ftt.typeName = "aiserver.v1.CloudAgentState", ftt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "conversation_state",
         kind: "message",
@@ -168874,7 +168992,7 @@
         no: 18,
         name: "last_followup_source",
         kind: "enum",
-        T: je.getEnumType(y$e),
+        T: je.getEnumType(N$e),
         opt: !0
     }, {
         no: 19,
@@ -168916,13 +169034,13 @@
         no: 25,
         name: "grind_mode_config",
         kind: "message",
-        T: K0e,
+        T: $0e,
         opt: !0
     }, {
         no: 26,
         name: "commits",
         kind: "message",
-        T: Ktt,
+        T: $tt,
         repeated: !0
     }, {
         no: 27,
@@ -168934,13 +169052,13 @@
         no: 28,
         name: "user_facing_error_details",
         kind: "message",
-        T: Ott,
+        T: Ytt,
         opt: !0
     }, {
         no: 29,
         name: "initial_source",
         kind: "enum",
-        T: je.getEnumType(y$e),
+        T: je.getEnumType(N$e),
         opt: !0
     }, {
         no: 30,
@@ -168951,7 +169069,7 @@
         no: 31,
         name: "synthesis_subagent_config",
         kind: "message",
-        T: wtt,
+        T: Ett,
         opt: !0
     }, {
         no: 32,
@@ -168977,7 +169095,7 @@
         no: 36,
         name: "worker_creations",
         kind: "message",
-        T: _tt,
+        T: Stt,
         repeated: !0
     }, {
         no: 37,
@@ -168994,7 +169112,7 @@
         no: 39,
         name: "optimized_diff",
         kind: "message",
-        T: ptt,
+        T: ytt,
         opt: !0
     }, {
         no: 40,
@@ -169024,23 +169142,23 @@
         K: 9,
         V: {
             kind: "message",
-            T: ptt
+            T: ytt
         }
     }, {
         no: 45,
         name: "startup_warnings",
         kind: "message",
-        T: btt,
+        T: Htt,
         repeated: !0
     }, {
         no: 46,
         name: "private_workspace_identifier",
         kind: "message",
-        T: S0e,
+        T: q0e,
         opt: !0
     }]);
-    let ltt = ott;
-    const utt = class e extends q {
+    let ptt = ftt;
+    const Ttt = class e extends q {
         constructor(e) {
             super(), this.kind = 0, this.reminder = "", je.util.initPartial(e, this)
         }
@@ -169057,19 +169175,19 @@
             return je.util.equals(e, t, n)
         }
     };
-    utt.runtime = je, utt.typeName = "aiserver.v1.NextTurnSystemReminderEntry", utt.fields = je.util.newFieldList(() => [{
+    Ttt.runtime = je, Ttt.typeName = "aiserver.v1.NextTurnSystemReminderEntry", Ttt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "kind",
         kind: "enum",
-        T: je.getEnumType(G$e)
+        T: je.getEnumType(z$e)
     }, {
         no: 2,
         name: "reminder",
         kind: "scalar",
         T: 9
     }]);
-    let mtt = utt;
-    const ctt = class e extends q {
+    let _tt = Ttt;
+    const gtt = class e extends q {
         constructor(e) {
             super(), this.reminders = [], je.util.initPartial(e, this)
         }
@@ -169086,14 +169204,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    ctt.runtime = je, ctt.typeName = "aiserver.v1.NextTurnSystemRemindersWrapper", ctt.fields = je.util.newFieldList(() => [{
+    gtt.runtime = je, gtt.typeName = "aiserver.v1.NextTurnSystemRemindersWrapper", gtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "reminders",
         kind: "message",
-        T: mtt,
+        T: _tt,
         repeated: !0
     }]);
-    const dtt = class e extends q {
+    const wtt = class e extends q {
         constructor(e) {
             super(), this.title = "", this.body = "", this.branchName = "", je.util.initPartial(e, this)
         }
@@ -169110,7 +169228,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    dtt.runtime = je, dtt.typeName = "aiserver.v1.PendingPullRequestData", dtt.fields = je.util.newFieldList(() => [{
+    wtt.runtime = je, wtt.typeName = "aiserver.v1.PendingPullRequestData", wtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "title",
         kind: "scalar",
@@ -169132,7 +169250,7 @@
         T: 9,
         opt: !0
     }]);
-    const ftt = class e extends q {
+    const htt = class e extends q {
         constructor(e) {
             super(), this.state = {
                 case: void 0
@@ -169151,7 +169269,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    ftt.runtime = je, ftt.typeName = "aiserver.v1.OptimizedDiffState", ftt.fields = je.util.newFieldList(() => [{
+    htt.runtime = je, htt.typeName = "aiserver.v1.OptimizedDiffState", htt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pending",
         kind: "message",
@@ -169182,8 +169300,8 @@
         T: 9,
         opt: !0
     }]);
-    let ptt = ftt;
-    const Ttt = class e extends q {
+    let ytt = htt;
+    const ktt = class e extends q {
         constructor(e) {
             super(), this.workerIndex = 0, this.createdAtUnixMs = b.zero, this.numCompletedTurns = 0, je.util.initPartial(e, this)
         }
@@ -169200,7 +169318,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ttt.runtime = je, Ttt.typeName = "aiserver.v1.WorkerCreation", Ttt.fields = je.util.newFieldList(() => [{
+    ktt.runtime = je, ktt.typeName = "aiserver.v1.WorkerCreation", ktt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "worker_index",
         kind: "scalar",
@@ -169216,8 +169334,8 @@
         kind: "scalar",
         T: 13
     }]);
-    let _tt = Ttt;
-    const gtt = class e extends q {
+    let Stt = ktt;
+    const Jtt = class e extends q {
         constructor(e) {
             super(), this.additionalModelNames = [], this.originalUserPromptBlobId = new Uint8Array(0), je.util.initPartial(e, this)
         }
@@ -169234,7 +169352,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    gtt.runtime = je, gtt.typeName = "aiserver.v1.SynthesisSubagentConfig", gtt.fields = je.util.newFieldList(() => [{
+    Jtt.runtime = je, Jtt.typeName = "aiserver.v1.SynthesisSubagentConfig", Jtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "additional_model_names",
         kind: "scalar",
@@ -169246,8 +169364,8 @@
         kind: "scalar",
         T: 12
     }]);
-    let wtt = gtt;
-    const htt = class e extends q {
+    let Ett = Jtt;
+    const vtt = class e extends q {
         constructor(e) {
             super(), this.errorMessage = "", je.util.initPartial(e, this)
         }
@@ -169264,14 +169382,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    htt.runtime = je, htt.typeName = "aiserver.v1.TransientError", htt.fields = je.util.newFieldList(() => [{
+    vtt.runtime = je, vtt.typeName = "aiserver.v1.TransientError", vtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "error_message",
         kind: "scalar",
         T: 9
     }]);
-    let ytt = htt;
-    const ktt = class e extends q {
+    let Ntt = vtt;
+    const Btt = class e extends q {
         constructor(e) {
             super(), this.pendingFollowups = [], this.followupCompletionCount = 0, this.runningDesired = !1, this.canRunLoop = !1, this.pendingMakePrRequests = [], this.pendingOpenPrRequests = [], this.immediateFollowupIds = [], this.lastUpdatedMs = b.zero, this.completedFollowupIds = [], this.skippedInputActions = [], this.completedMakePrRequests = [], this.completedOpenPrRequests = [], this.pendingInteractionResponses = [], this.completedInteractionQueryIds = [], je.util.initPartial(e, this)
         }
@@ -169288,11 +169406,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    ktt.runtime = je, ktt.typeName = "aiserver.v1.CloudAgentWorkflowControlState", ktt.fields = je.util.newFieldList(() => [{
+    Btt.runtime = je, Btt.typeName = "aiserver.v1.CloudAgentWorkflowControlState", Btt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "pending_followups",
         kind: "message",
-        T: Btt,
+        T: Ftt,
         repeated: !0
     }, {
         no: 2,
@@ -169313,13 +169431,13 @@
         no: 5,
         name: "pending_make_pr_requests",
         kind: "message",
-        T: Ftt,
+        T: btt,
         repeated: !0
     }, {
         no: 6,
         name: "pending_open_pr_requests",
         kind: "message",
-        T: Att,
+        T: Mtt,
         repeated: !0
     }, {
         no: 7,
@@ -169348,25 +169466,25 @@
         no: 11,
         name: "completed_make_pr_requests",
         kind: "message",
-        T: Jtt,
+        T: Ptt,
         repeated: !0
     }, {
         no: 12,
         name: "completed_open_pr_requests",
         kind: "message",
-        T: vtt,
+        T: Rtt,
         repeated: !0
     }, {
         no: 13,
         name: "paused_interaction_step",
         kind: "message",
-        T: Ptt,
+        T: Att,
         opt: !0
     }, {
         no: 14,
         name: "pending_interaction_responses",
         kind: "message",
-        T: Rtt,
+        T: Ott,
         repeated: !0
     }, {
         no: 15,
@@ -169375,7 +169493,7 @@
         T: 13,
         repeated: !0
     }]);
-    const Stt = class e extends q {
+    const qtt = class e extends q {
         constructor(e) {
             super(), this.requestId = "", this.completedAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -169392,7 +169510,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Stt.runtime = je, Stt.typeName = "aiserver.v1.CompletedMakePRRequest", Stt.fields = je.util.newFieldList(() => [{
+    qtt.runtime = je, qtt.typeName = "aiserver.v1.CompletedMakePRRequest", qtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "request_id",
         kind: "scalar",
@@ -169406,7 +169524,7 @@
         no: 3,
         name: "response",
         kind: "message",
-        T: l0e,
+        T: p0e,
         opt: !0
     }, {
         no: 4,
@@ -169421,8 +169539,8 @@
         T: 9,
         opt: !0
     }]);
-    let Jtt = Stt;
-    const Ett = class e extends q {
+    let Ptt = qtt;
+    const Itt = class e extends q {
         constructor(e) {
             super(), this.requestId = "", this.completedAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -169439,7 +169557,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ett.runtime = je, Ett.typeName = "aiserver.v1.CompletedOpenPRRequest", Ett.fields = je.util.newFieldList(() => [{
+    Itt.runtime = je, Itt.typeName = "aiserver.v1.CompletedOpenPRRequest", Itt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "request_id",
         kind: "scalar",
@@ -169453,7 +169571,7 @@
         no: 3,
         name: "response",
         kind: "message",
-        T: d0e,
+        T: w0e,
         opt: !0
     }, {
         no: 4,
@@ -169468,8 +169586,8 @@
         T: 9,
         opt: !0
     }]);
-    let vtt = Ett;
-    const Ntt = class e extends q {
+    let Rtt = Itt;
+    const Ltt = class e extends q {
         constructor(e) {
             super(), this.followupId = "", this.createdAtMs = b.zero, this.source = 0, this.isSimulated = !1, this.synchronous = !1, this.cursorCommands = [], this.cursorCommandsExplicitlySet = !1, this.blobData = [], je.util.initPartial(e, this)
         }
@@ -169486,7 +169604,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ntt.runtime = je, Ntt.typeName = "aiserver.v1.QueuedFollowup", Ntt.fields = je.util.newFieldList(() => [{
+    Ltt.runtime = je, Ltt.typeName = "aiserver.v1.QueuedFollowup", Ltt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "followup_id",
         kind: "scalar",
@@ -169500,7 +169618,7 @@
         no: 3,
         name: "source",
         kind: "enum",
-        T: je.getEnumType(y$e)
+        T: je.getEnumType(N$e)
     }, {
         no: 4,
         name: "is_simulated",
@@ -169565,8 +169683,8 @@
         T: 3,
         opt: !0
     }]);
-    let Btt = Ntt;
-    const qtt = class e extends q {
+    let Ftt = Ltt;
+    const Ctt = class e extends q {
         constructor(e) {
             super(), this.stepContextBlobId = new Uint8Array(0), this.agentStateBlobId = new Uint8Array(0), this.isTimeLimitExpired = !1, this.useStepSeparation = !1, this.toolCallIndex = 0, this.queryId = 0, this.toolCallId = "", this.currentStepInTurn = 0, je.util.initPartial(e, this)
         }
@@ -169583,7 +169701,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    qtt.runtime = je, qtt.typeName = "aiserver.v1.PausedInteractionStep", qtt.fields = je.util.newFieldList(() => [{
+    Ctt.runtime = je, Ctt.typeName = "aiserver.v1.PausedInteractionStep", Ctt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "step_context_blob_id",
         kind: "scalar",
@@ -169624,8 +169742,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Ptt = qtt;
-    const Itt = class e extends q {
+    let Att = Ctt;
+    const xtt = class e extends q {
         constructor(e) {
             super(), this.queryId = 0, this.submittedAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -169642,7 +169760,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Itt.runtime = je, Itt.typeName = "aiserver.v1.QueuedInteractionResponse", Itt.fields = je.util.newFieldList(() => [{
+    xtt.runtime = je, xtt.typeName = "aiserver.v1.QueuedInteractionResponse", xtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "query_id",
         kind: "scalar",
@@ -169658,8 +169776,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Rtt = Itt;
-    const Ltt = class e extends q {
+    let Ott = xtt;
+    const Dtt = class e extends q {
         constructor(e) {
             super(), this.requestId = "", this.createdAtMs = b.zero, this.requestBlobId = new Uint8Array(0), je.util.initPartial(e, this)
         }
@@ -169676,7 +169794,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ltt.runtime = je, Ltt.typeName = "aiserver.v1.QueuedMakePRRequest", Ltt.fields = je.util.newFieldList(() => [{
+    Dtt.runtime = je, Dtt.typeName = "aiserver.v1.QueuedMakePRRequest", Dtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "request_id",
         kind: "scalar",
@@ -169692,8 +169810,8 @@
         kind: "scalar",
         T: 12
     }]);
-    let Ftt = Ltt;
-    const Ctt = class e extends q {
+    let btt = Dtt;
+    const Utt = class e extends q {
         constructor(e) {
             super(), this.requestId = "", this.createdAtMs = b.zero, this.requestBlobId = new Uint8Array(0), je.util.initPartial(e, this)
         }
@@ -169710,7 +169828,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ctt.runtime = je, Ctt.typeName = "aiserver.v1.QueuedOpenPRRequest", Ctt.fields = je.util.newFieldList(() => [{
+    Utt.runtime = je, Utt.typeName = "aiserver.v1.QueuedOpenPRRequest", Utt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "request_id",
         kind: "scalar",
@@ -169726,8 +169844,8 @@
         kind: "scalar",
         T: 12
     }]);
-    let Att = Ctt;
-    const xtt = class e extends q {
+    let Mtt = Utt;
+    const Gtt = class e extends q {
         constructor(e) {
             super(), this.errorMessage = "", this.errorCode = "", je.util.initPartial(e, this)
         }
@@ -169744,7 +169862,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    xtt.runtime = je, xtt.typeName = "aiserver.v1.CloudAgentErrorDetails", xtt.fields = je.util.newFieldList(() => [{
+    Gtt.runtime = je, Gtt.typeName = "aiserver.v1.CloudAgentErrorDetails", Gtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "error_message",
         kind: "scalar",
@@ -169761,8 +169879,8 @@
         T: 9,
         opt: !0
     }]);
-    let Ott = xtt;
-    const Dtt = class e extends q {
+    let Ytt = Gtt;
+    const Vtt = class e extends q {
         constructor(e) {
             super(), this.warningType = 0, this.userFacingMessage = "", je.util.initPartial(e, this)
         }
@@ -169779,19 +169897,19 @@
             return je.util.equals(e, t, n)
         }
     };
-    Dtt.runtime = je, Dtt.typeName = "aiserver.v1.CloudAgentStartupWarning", Dtt.fields = je.util.newFieldList(() => [{
+    Vtt.runtime = je, Vtt.typeName = "aiserver.v1.CloudAgentStartupWarning", Vtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "warning_type",
         kind: "enum",
-        T: je.getEnumType(Y$e)
+        T: je.getEnumType(j$e)
     }, {
         no: 2,
         name: "user_facing_message",
         kind: "scalar",
         T: 9
     }]);
-    let btt = Dtt;
-    const Utt = class e extends q {
+    let Htt = Vtt;
+    const Ktt = class e extends q {
         constructor(e) {
             super(), this.entries = [], je.util.initPartial(e, this)
         }
@@ -169808,14 +169926,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    Utt.runtime = je, Utt.typeName = "aiserver.v1.VideoAnnotationsWrapper", Utt.fields = je.util.newFieldList(() => [{
+    Ktt.runtime = je, Ktt.typeName = "aiserver.v1.VideoAnnotationsWrapper", Ktt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "entries",
         kind: "message",
-        T: O3e,
+        T: Y3e,
         repeated: !0
     }]);
-    const Mtt = class e extends q {
+    const Wtt = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -169832,14 +169950,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    Mtt.runtime = je, Mtt.typeName = "aiserver.v1.GetBackgroundComposerVmUsageRequest", Mtt.fields = je.util.newFieldList(() => [{
+    Wtt.runtime = je, Wtt.typeName = "aiserver.v1.GetBackgroundComposerVmUsageRequest", Wtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let Gtt = Mtt;
-    const Ytt = class e extends q {
+    let ztt = Wtt;
+    const jtt = class e extends q {
         constructor(e) {
             super(), this.totalDurationMs = b.zero, je.util.initPartial(e, this)
         }
@@ -169856,14 +169974,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ytt.runtime = je, Ytt.typeName = "aiserver.v1.GetBackgroundComposerVmUsageResponse", Ytt.fields = je.util.newFieldList(() => [{
+    jtt.runtime = je, jtt.typeName = "aiserver.v1.GetBackgroundComposerVmUsageResponse", jtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "total_duration_ms",
         kind: "scalar",
         T: 3
     }]);
-    let Vtt = Ytt;
-    const Htt = class e extends q {
+    let Xtt = jtt;
+    const Qtt = class e extends q {
         constructor(e) {
             super(), this.sha = "", this.message = "", this.authorName = "", this.authorEmail = "", this.timestamp = "", je.util.initPartial(e, this)
         }
@@ -169880,7 +169998,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Htt.runtime = je, Htt.typeName = "aiserver.v1.BackgroundComposerCommit", Htt.fields = je.util.newFieldList(() => [{
+    Qtt.runtime = je, Qtt.typeName = "aiserver.v1.BackgroundComposerCommit", Qtt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "sha",
         kind: "scalar",
@@ -169906,8 +170024,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Ktt = Htt;
-    const Wtt = class e extends q {
+    let $tt = Qtt;
+    const Ztt = class e extends q {
         constructor(e) {
             super(), this.limit = 0, je.util.initPartial(e, this)
         }
@@ -169924,14 +170042,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    Wtt.runtime = je, Wtt.typeName = "aiserver.v1.ListGrindModeComposersRequest", Wtt.fields = je.util.newFieldList(() => [{
+    Ztt.runtime = je, Ztt.typeName = "aiserver.v1.ListGrindModeComposersRequest", Ztt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "limit",
         kind: "scalar",
         T: 5
     }]);
-    let ztt = Wtt;
-    const jtt = class e extends q {
+    let ent = Ztt;
+    const tnt = class e extends q {
         constructor(e) {
             super(), this.composers = [], je.util.initPartial(e, this)
         }
@@ -169948,15 +170066,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    jtt.runtime = je, jtt.typeName = "aiserver.v1.ListGrindModeComposersResponse", jtt.fields = je.util.newFieldList(() => [{
+    tnt.runtime = je, tnt.typeName = "aiserver.v1.ListGrindModeComposersResponse", tnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "composers",
         kind: "message",
-        T: _0e,
+        T: S0e,
         repeated: !0
     }]);
-    let Xtt = jtt;
-    const Qtt = class e extends q {
+    let nnt = tnt;
+    const rnt = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -169973,7 +170091,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Qtt.runtime = je, Qtt.typeName = "aiserver.v1.GetCloudAgentDebugDetailsRequest", Qtt.fields = je.util.newFieldList(() => [{
+    rnt.runtime = je, rnt.typeName = "aiserver.v1.GetCloudAgentDebugDetailsRequest", rnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -169991,8 +170109,8 @@
         T: 12,
         opt: !0
     }]);
-    let $tt = Qtt;
-    const Ztt = class e extends q {
+    let snt = rnt;
+    const int = class e extends q {
         constructor(e) {
             super(), this.entries = [], je.util.initPartial(e, this)
         }
@@ -170009,15 +170127,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ztt.runtime = je, Ztt.typeName = "aiserver.v1.CloudAgentVmHistory", Ztt.fields = je.util.newFieldList(() => [{
+    int.runtime = je, int.typeName = "aiserver.v1.CloudAgentVmHistory", int.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "entries",
         kind: "message",
-        T: nnt,
+        T: lnt,
         repeated: !0
     }]);
-    let ent = Ztt;
-    const tnt = class e extends q {
+    let ant = int;
+    const ont = class e extends q {
         constructor(e) {
             super(), this.workerIndex = 0, this.isCurrentWorker = !1, this.info = {
                 case: void 0
@@ -170036,7 +170154,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    tnt.runtime = je, tnt.typeName = "aiserver.v1.CloudAgentVmHistoryEntry", tnt.fields = je.util.newFieldList(() => [{
+    ont.runtime = je, ont.typeName = "aiserver.v1.CloudAgentVmHistoryEntry", ont.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "worker_index",
         kind: "scalar",
@@ -170062,17 +170180,17 @@
         no: 5,
         name: "anyrun",
         kind: "message",
-        T: snt,
+        T: mnt,
         oneof: "info"
     }, {
         no: 6,
         name: "anyrun_pending_docker_build",
         kind: "message",
-        T: ant,
+        T: dnt,
         oneof: "info"
     }]);
-    let nnt = tnt;
-    const rnt = class e extends q {
+    let lnt = ont;
+    const unt = class e extends q {
         constructor(e) {
             super(), this.tenantId = "", this.podId = "", this.anyrunCluster = "", this.workspaceRootPath = "", je.util.initPartial(e, this)
         }
@@ -170089,7 +170207,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    rnt.runtime = je, rnt.typeName = "aiserver.v1.CloudAgentAnyrunVmInfo", rnt.fields = je.util.newFieldList(() => [{
+    unt.runtime = je, unt.typeName = "aiserver.v1.CloudAgentAnyrunVmInfo", unt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "tenant_id",
         kind: "scalar",
@@ -170128,8 +170246,8 @@
         T: 9,
         opt: !0
     }]);
-    let snt = rnt;
-    const int = class e extends q {
+    let mnt = unt;
+    const cnt = class e extends q {
         constructor(e) {
             super(), this.anyrunCluster = "", this.dockerBuildEventsRedisStreamKey = "", je.util.initPartial(e, this)
         }
@@ -170146,7 +170264,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    int.runtime = je, int.typeName = "aiserver.v1.CloudAgentAnyrunPendingDockerBuildVmInfo", int.fields = je.util.newFieldList(() => [{
+    cnt.runtime = je, cnt.typeName = "aiserver.v1.CloudAgentAnyrunPendingDockerBuildVmInfo", cnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "anyrun_cluster",
         kind: "scalar",
@@ -170157,8 +170275,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let ant = int;
-    const ont = class e extends q {
+    let dnt = cnt;
+    const fnt = class e extends q {
         constructor(e) {
             super(), this.cloudAgentStateBlobId = new Uint8Array(0), this.streamMessages = [], this.preFetchedBlobs = [], je.util.initPartial(e, this)
         }
@@ -170175,7 +170293,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    ont.runtime = je, ont.typeName = "aiserver.v1.GetCloudAgentDebugDetailsResponse", ont.fields = je.util.newFieldList(() => [{
+    fnt.runtime = je, fnt.typeName = "aiserver.v1.GetCloudAgentDebugDetailsResponse", fnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "cloud_agent_state_blob_id",
         kind: "scalar",
@@ -170184,134 +170302,24 @@
         no: 2,
         name: "cloud_agent_state",
         kind: "message",
-        T: ltt
+        T: ptt
     }, {
         no: 3,
         name: "stream_messages",
         kind: "message",
-        T: E9e,
+        T: I9e,
         repeated: !0
     }, {
         no: 4,
         name: "pre_fetched_blobs",
         kind: "message",
-        T: S9e,
+        T: q9e,
         repeated: !0
     }, {
         no: 5,
         name: "vm_history",
         kind: "message",
-        T: ent
-    }]);
-    let lnt = ont;
-    const unt = class e extends q {
-        constructor(e) {
-            super(), this.bcId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    unt.runtime = je, unt.typeName = "aiserver.v1.GetCloudAgentMemoryDbLogsRequest", unt.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "bc_id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "worker_index",
-        kind: "scalar",
-        T: 13,
-        opt: !0
-    }, {
-        no: 3,
-        name: "limit",
-        kind: "scalar",
-        T: 5,
-        opt: !0
-    }]);
-    let mnt = unt;
-    const cnt = class e extends q {
-        constructor(e) {
-            super(), this.entries = [], this.truncated = !1, je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    cnt.runtime = je, cnt.typeName = "aiserver.v1.GetCloudAgentMemoryDbLogsResponse", cnt.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "entries",
-        kind: "message",
-        T: pnt,
-        repeated: !0
-    }, {
-        no: 2,
-        name: "truncated",
-        kind: "scalar",
-        T: 8
-    }]);
-    let dnt = cnt;
-    const fnt = class e extends q {
-        constructor(e) {
-            super(), this.source = 0, this.log = {
-                case: void 0
-            }, je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    fnt.runtime = je, fnt.typeName = "aiserver.v1.CloudAgentMemoryDbLogEntry", fnt.fields = je.util.newFieldList(() => [{
-        no: 2,
-        name: "source",
-        kind: "enum",
-        T: je.getEnumType(V$e)
-    }, {
-        no: 3,
-        name: "worker_index",
-        kind: "scalar",
-        T: 13,
-        opt: !0
-    }, {
-        no: 4,
-        name: "event",
-        kind: "message",
-        T: Lo,
-        oneof: "log"
-    }, {
-        no: 5,
-        name: "waterfall_update",
-        kind: "message",
-        T: Xye,
-        oneof: "log"
+        T: ant
     }]);
     let pnt = fnt;
     const Tnt = class e extends q {
@@ -170331,14 +170339,124 @@
             return je.util.equals(e, t, n)
         }
     };
-    Tnt.runtime = je, Tnt.typeName = "aiserver.v1.CreateAgentShareRequest", Tnt.fields = je.util.newFieldList(() => [{
+    Tnt.runtime = je, Tnt.typeName = "aiserver.v1.GetCloudAgentMemoryDbLogsRequest", Tnt.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "bc_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "worker_index",
+        kind: "scalar",
+        T: 13,
+        opt: !0
+    }, {
+        no: 3,
+        name: "limit",
+        kind: "scalar",
+        T: 5,
+        opt: !0
+    }]);
+    let _nt = Tnt;
+    const gnt = class e extends q {
+        constructor(e) {
+            super(), this.entries = [], this.truncated = !1, je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    gnt.runtime = je, gnt.typeName = "aiserver.v1.GetCloudAgentMemoryDbLogsResponse", gnt.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "entries",
+        kind: "message",
+        T: ynt,
+        repeated: !0
+    }, {
+        no: 2,
+        name: "truncated",
+        kind: "scalar",
+        T: 8
+    }]);
+    let wnt = gnt;
+    const hnt = class e extends q {
+        constructor(e) {
+            super(), this.source = 0, this.log = {
+                case: void 0
+            }, je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    hnt.runtime = je, hnt.typeName = "aiserver.v1.CloudAgentMemoryDbLogEntry", hnt.fields = je.util.newFieldList(() => [{
+        no: 2,
+        name: "source",
+        kind: "enum",
+        T: je.getEnumType(X$e)
+    }, {
+        no: 3,
+        name: "worker_index",
+        kind: "scalar",
+        T: 13,
+        opt: !0
+    }, {
+        no: 4,
+        name: "event",
+        kind: "message",
+        T: Lo,
+        oneof: "log"
+    }, {
+        no: 5,
+        name: "waterfall_update",
+        kind: "message",
+        T: Xye,
+        oneof: "log"
+    }]);
+    let ynt = hnt;
+    const knt = class e extends q {
+        constructor(e) {
+            super(), this.bcId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    knt.runtime = je, knt.typeName = "aiserver.v1.CreateAgentShareRequest", knt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
         T: 9
     }]);
-    let _nt = Tnt;
-    const gnt = class e extends q {
+    let Snt = knt;
+    const Jnt = class e extends q {
         constructor(e) {
             super(), this.shareId = "", this.shareUrl = "", je.util.initPartial(e, this)
         }
@@ -170355,7 +170473,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    gnt.runtime = je, gnt.typeName = "aiserver.v1.CreateAgentShareResponse", gnt.fields = je.util.newFieldList(() => [{
+    Jnt.runtime = je, Jnt.typeName = "aiserver.v1.CreateAgentShareResponse", Jnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
@@ -170366,8 +170484,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let wnt = gnt;
-    const hnt = class e extends q {
+    let Ent = Jnt;
+    const vnt = class e extends q {
         constructor(e) {
             super(), this.shareId = "", je.util.initPartial(e, this)
         }
@@ -170384,7 +170502,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    hnt.runtime = je, hnt.typeName = "aiserver.v1.GetAgentSharePreviewRequest", hnt.fields = je.util.newFieldList(() => [{
+    vnt.runtime = je, vnt.typeName = "aiserver.v1.GetAgentSharePreviewRequest", vnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
@@ -170396,8 +170514,8 @@
         T: 8,
         opt: !0
     }]);
-    let ynt = hnt;
-    const knt = class e extends q {
+    let Nnt = vnt;
+    const Bnt = class e extends q {
         constructor(e) {
             super(), this.shareId = "", this.bcId = "", je.util.initPartial(e, this)
         }
@@ -170414,7 +170532,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    knt.runtime = je, knt.typeName = "aiserver.v1.GetAgentSharePreviewResponse", knt.fields = je.util.newFieldList(() => [{
+    Bnt.runtime = je, Bnt.typeName = "aiserver.v1.GetAgentSharePreviewResponse", Bnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
@@ -170473,8 +170591,8 @@
         T: 12,
         opt: !0
     }]);
-    let Snt = knt;
-    const Jnt = class e extends q {
+    let qnt = Bnt;
+    const Pnt = class e extends q {
         constructor(e) {
             super(), this.statusFilter = 0, this.pageSize = 0, this.listScope = 0, je.util.initPartial(e, this)
         }
@@ -170491,11 +170609,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    Jnt.runtime = je, Jnt.typeName = "aiserver.v1.ListPrivateWorkersRequest", Jnt.fields = je.util.newFieldList(() => [{
+    Pnt.runtime = je, Pnt.typeName = "aiserver.v1.ListPrivateWorkersRequest", Pnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "status_filter",
         kind: "enum",
-        T: je.getEnumType(K$e)
+        T: je.getEnumType($$e)
     }, {
         no: 2,
         name: "page_size",
@@ -170511,10 +170629,10 @@
         no: 4,
         name: "list_scope",
         kind: "enum",
-        T: je.getEnumType(H$e)
+        T: je.getEnumType(Q$e)
     }]);
-    let Ent = Jnt;
-    const vnt = class e extends q {
+    let Int = Pnt;
+    const Rnt = class e extends q {
         constructor(e) {
             super(), this.workers = [], this.nextPageToken = "", this.totalCount = 0, je.util.initPartial(e, this)
         }
@@ -170531,11 +170649,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    vnt.runtime = je, vnt.typeName = "aiserver.v1.ListPrivateWorkersResponse", vnt.fields = je.util.newFieldList(() => [{
+    Rnt.runtime = je, Rnt.typeName = "aiserver.v1.ListPrivateWorkersResponse", Rnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "workers",
         kind: "message",
-        T: Cnt,
+        T: Unt,
         repeated: !0
     }, {
         no: 2,
@@ -170548,8 +170666,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Nnt = vnt;
-    const Bnt = class e extends q {
+    let Lnt = Rnt;
+    const Fnt = class e extends q {
         constructor(e) {
             super(), this.pageSize = 0, je.util.initPartial(e, this)
         }
@@ -170566,7 +170684,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Bnt.runtime = je, Bnt.typeName = "aiserver.v1.ListPendingPrivateWorkerRequestsRequest", Bnt.fields = je.util.newFieldList(() => [{
+    Fnt.runtime = je, Fnt.typeName = "aiserver.v1.ListPendingPrivateWorkerRequestsRequest", Fnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "page_size",
         kind: "scalar",
@@ -170584,8 +170702,8 @@
         T: 9,
         opt: !0
     }]);
-    let qnt = Bnt;
-    const Pnt = class e extends q {
+    let Cnt = Fnt;
+    const Ant = class e extends q {
         constructor(e) {
             super(), this.requests = [], this.nextPageToken = "", this.totalCount = 0, je.util.initPartial(e, this)
         }
@@ -170602,11 +170720,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    Pnt.runtime = je, Pnt.typeName = "aiserver.v1.ListPendingPrivateWorkerRequestsResponse", Pnt.fields = je.util.newFieldList(() => [{
+    Ant.runtime = je, Ant.typeName = "aiserver.v1.ListPendingPrivateWorkerRequestsResponse", Ant.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "requests",
         kind: "message",
-        T: Lnt,
+        T: Dnt,
         repeated: !0
     }, {
         no: 2,
@@ -170619,8 +170737,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Int = Pnt;
-    const Rnt = class e extends q {
+    let xnt = Ant;
+    const Ont = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.userId = 0, this.labels = [], this.createdAtMs = 0, je.util.initPartial(e, this)
         }
@@ -170637,7 +170755,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Rnt.runtime = je, Rnt.typeName = "aiserver.v1.PendingPrivateWorkerRequest", Rnt.fields = je.util.newFieldList(() => [{
+    Ont.runtime = je, Ont.typeName = "aiserver.v1.PendingPrivateWorkerRequest", Ont.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -170675,7 +170793,7 @@
         no: 7,
         name: "labels",
         kind: "message",
-        T: xnt,
+        T: Gnt,
         repeated: !0
     }, {
         no: 8,
@@ -170683,8 +170801,8 @@
         kind: "scalar",
         T: 1
     }]);
-    let Lnt = Rnt;
-    const Fnt = class e extends q {
+    let Dnt = Ont;
+    const bnt = class e extends q {
         constructor(e) {
             super(), this.workerId = "", this.repoOwner = "", this.repoName = "", this.workspaceRootPath = "", this.connectedAtMs = 0, this.userId = 0, this.isInUse = !1, this.labels = [], je.util.initPartial(e, this)
         }
@@ -170701,7 +170819,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Fnt.runtime = je, Fnt.typeName = "aiserver.v1.PrivateWorker", Fnt.fields = je.util.newFieldList(() => [{
+    bnt.runtime = je, bnt.typeName = "aiserver.v1.PrivateWorker", bnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "worker_id",
         kind: "scalar",
@@ -170758,7 +170876,7 @@
         no: 11,
         name: "labels",
         kind: "message",
-        T: xnt,
+        T: Gnt,
         repeated: !0
     }, {
         no: 12,
@@ -170779,8 +170897,8 @@
         T: 9,
         opt: !0
     }]);
-    let Cnt = Fnt;
-    const Ant = class e extends q {
+    let Unt = bnt;
+    const Mnt = class e extends q {
         constructor(e) {
             super(), this.key = "", this.value = "", je.util.initPartial(e, this)
         }
@@ -170797,7 +170915,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ant.runtime = je, Ant.typeName = "aiserver.v1.PrivateWorkerLabel", Ant.fields = je.util.newFieldList(() => [{
+    Mnt.runtime = je, Mnt.typeName = "aiserver.v1.PrivateWorkerLabel", Mnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "key",
         kind: "scalar",
@@ -170808,8 +170926,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let xnt = Ant;
-    const Ont = class e extends q {
+    let Gnt = Mnt;
+    const Ynt = class e extends q {
         constructor(e) {
             super(), this.ownerCursorUserId = 0, je.util.initPartial(e, this)
         }
@@ -170826,14 +170944,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ont.runtime = je, Ont.typeName = "aiserver.v1.PrivateWorkerOwnerFilter", Ont.fields = je.util.newFieldList(() => [{
+    Ynt.runtime = je, Ynt.typeName = "aiserver.v1.PrivateWorkerOwnerFilter", Ynt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "owner_cursor_user_id",
         kind: "scalar",
         T: 5
     }]);
-    let Dnt = Ont;
-    const bnt = class e extends q {
+    let Vnt = Ynt;
+    const Hnt = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -170850,9 +170968,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    bnt.runtime = je, bnt.typeName = "aiserver.v1.GetPrivateWorkersSummaryRequest", bnt.fields = je.util.newFieldList(() => []);
-    let Unt = bnt;
-    const Mnt = class e extends q {
+    Hnt.runtime = je, Hnt.typeName = "aiserver.v1.GetPrivateWorkersSummaryRequest", Hnt.fields = je.util.newFieldList(() => []);
+    let Knt = Hnt;
+    const Wnt = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -170869,27 +170987,27 @@
             return je.util.equals(e, t, n)
         }
     };
-    Mnt.runtime = je, Mnt.typeName = "aiserver.v1.GetPrivateWorkersSummaryResponse", Mnt.fields = je.util.newFieldList(() => [{
+    Wnt.runtime = je, Wnt.typeName = "aiserver.v1.GetPrivateWorkersSummaryResponse", Wnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "user_summary",
         kind: "message",
-        T: Vnt,
+        T: Xnt,
         opt: !0
     }, {
         no: 2,
         name: "team_summary",
         kind: "message",
-        T: Knt,
+        T: $nt,
         opt: !0
     }, {
         no: 3,
         name: "team_limit_summary",
         kind: "message",
-        T: znt,
+        T: ert,
         opt: !0
     }]);
-    let Gnt = Mnt;
-    const Ynt = class e extends q {
+    let znt = Wnt;
+    const jnt = class e extends q {
         constructor(e) {
             super(), this.totalConnected = 0, this.inUse = 0, this.teamWorkersInUseByUser = 0, je.util.initPartial(e, this)
         }
@@ -170906,7 +171024,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ynt.runtime = je, Ynt.typeName = "aiserver.v1.UserWorkerSummary", Ynt.fields = je.util.newFieldList(() => [{
+    jnt.runtime = je, jnt.typeName = "aiserver.v1.UserWorkerSummary", jnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "total_connected",
         kind: "scalar",
@@ -170922,8 +171040,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Vnt = Ynt;
-    const Hnt = class e extends q {
+    let Xnt = jnt;
+    const Qnt = class e extends q {
         constructor(e) {
             super(), this.totalConnected = 0, this.inUse = 0, je.util.initPartial(e, this)
         }
@@ -170940,7 +171058,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Hnt.runtime = je, Hnt.typeName = "aiserver.v1.TeamWorkerSummary", Hnt.fields = je.util.newFieldList(() => [{
+    Qnt.runtime = je, Qnt.typeName = "aiserver.v1.TeamWorkerSummary", Qnt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "total_connected",
         kind: "scalar",
@@ -170951,8 +171069,8 @@
         kind: "scalar",
         T: 5
     }]);
-    let Knt = Hnt;
-    const Wnt = class e extends q {
+    let $nt = Qnt;
+    const Znt = class e extends q {
         constructor(e) {
             super(), this.totalConnected = 0, this.maxWorkers = 0, je.util.initPartial(e, this)
         }
@@ -170969,7 +171087,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Wnt.runtime = je, Wnt.typeName = "aiserver.v1.TeamWorkerLimitSummary", Wnt.fields = je.util.newFieldList(() => [{
+    Znt.runtime = je, Znt.typeName = "aiserver.v1.TeamWorkerLimitSummary", Znt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "total_connected",
         kind: "scalar",
@@ -170980,81 +171098,33 @@
         kind: "scalar",
         T: 5
     }]);
-    let znt = Wnt;
-    const jnt = class e extends q {
-        constructor(e) {
-            super(), this.workerId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    jnt.runtime = je, jnt.typeName = "aiserver.v1.GetPrivateWorkerRequest", jnt.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "worker_id",
-        kind: "scalar",
-        T: 9
-    }]);
-    let Xnt = jnt;
-    const Qnt = class e extends q {
-        constructor(e) {
-            super(), je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    Qnt.runtime = je, Qnt.typeName = "aiserver.v1.GetPrivateWorkerResponse", Qnt.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "worker",
-        kind: "message",
-        T: Cnt
-    }]);
-    let $nt = Qnt;
-    const Znt = class e extends q {
-        constructor(e) {
-            super(), this.workerId = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    Znt.runtime = je, Znt.typeName = "aiserver.v1.ReleasePrivateWorkerRequest", Znt.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "worker_id",
-        kind: "scalar",
-        T: 9
-    }]);
     let ert = Znt;
     const trt = class e extends q {
         constructor(e) {
+            super(), this.workerId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    trt.runtime = je, trt.typeName = "aiserver.v1.GetPrivateWorkerRequest", trt.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "worker_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let nrt = trt;
+    const rrt = class e extends q {
+        constructor(e) {
             super(), je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -171070,9 +171140,57 @@
             return je.util.equals(e, t, n)
         }
     };
-    trt.runtime = je, trt.typeName = "aiserver.v1.ReleasePrivateWorkerResponse", trt.fields = je.util.newFieldList(() => []);
-    let nrt = trt;
-    const rrt = class e extends q {
+    rrt.runtime = je, rrt.typeName = "aiserver.v1.GetPrivateWorkerResponse", rrt.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "worker",
+        kind: "message",
+        T: Unt
+    }]);
+    let srt = rrt;
+    const irt = class e extends q {
+        constructor(e) {
+            super(), this.workerId = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    irt.runtime = je, irt.typeName = "aiserver.v1.ReleasePrivateWorkerRequest", irt.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "worker_id",
+        kind: "scalar",
+        T: 9
+    }]);
+    let art = irt;
+    const ort = class e extends q {
+        constructor(e) {
+            super(), je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    ort.runtime = je, ort.typeName = "aiserver.v1.ReleasePrivateWorkerResponse", ort.fields = je.util.newFieldList(() => []);
+    let lrt = ort;
+    const urt = class e extends q {
         constructor(e) {
             super(), this.bcIds = [], je.util.initPartial(e, this)
         }
@@ -171089,15 +171207,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    rrt.runtime = je, rrt.typeName = "aiserver.v1.BatchRefreshPullRequestStatusRequest", rrt.fields = je.util.newFieldList(() => [{
+    urt.runtime = je, urt.typeName = "aiserver.v1.BatchRefreshPullRequestStatusRequest", urt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_ids",
         kind: "scalar",
         T: 9,
         repeated: !0
     }]);
-    let srt = rrt;
-    const irt = class e extends q {
+    let mrt = urt;
+    const crt = class e extends q {
         constructor(e) {
             super(), this.results = {}, this.failedBcIds = [], je.util.initPartial(e, this)
         }
@@ -171114,14 +171232,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    irt.runtime = je, irt.typeName = "aiserver.v1.BatchRefreshPullRequestStatusResponse", irt.fields = je.util.newFieldList(() => [{
+    crt.runtime = je, crt.typeName = "aiserver.v1.BatchRefreshPullRequestStatusResponse", crt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "results",
         kind: "map",
         K: 9,
         V: {
             kind: "message",
-            T: m7e
+            T: _7e
         }
     }, {
         no: 2,
@@ -171130,8 +171248,8 @@
         T: 9,
         repeated: !0
     }]);
-    let art = irt;
-    const ort = class e extends q {
+    let drt = crt;
+    const frt = class e extends q {
         constructor(e) {
             super(), this.diffChangesHash = "", je.util.initPartial(e, this)
         }
@@ -171148,7 +171266,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    ort.runtime = je, ort.typeName = "aiserver.v1.BackgroundComposerCachedDetailsProto", ort.fields = je.util.newFieldList(() => [{
+    frt.runtime = je, frt.typeName = "aiserver.v1.BackgroundComposerCachedDetailsProto", frt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "diff_changes_hash",
         kind: "scalar",
@@ -171162,9 +171280,9 @@
         no: 3,
         name: "bc",
         kind: "message",
-        T: v3e
+        T: R3e
     }]);
-    const lrt = class e extends q {
+    const prt = class e extends q {
         constructor(e) {
             super(), this.bcId = "", je.util.initPartial(e, this)
         }
@@ -171181,7 +171299,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    lrt.runtime = je, lrt.typeName = "aiserver.v1.AttachAgentStartupTraceRequest", lrt.fields = je.util.newFieldList(() => [{
+    prt.runtime = je, prt.typeName = "aiserver.v1.AttachAgentStartupTraceRequest", prt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -171193,8 +171311,8 @@
         T: 9,
         opt: !0
     }]);
-    let urt = lrt;
-    const mrt = class e extends q {
+    let Trt = prt;
+    const _rt = class e extends q {
         constructor(e) {
             super(), this.eventId = "", je.util.initPartial(e, this)
         }
@@ -171211,7 +171329,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    mrt.runtime = je, mrt.typeName = "aiserver.v1.AttachAgentStartupTraceResponse", mrt.fields = je.util.newFieldList(() => [{
+    _rt.runtime = je, _rt.typeName = "aiserver.v1.AttachAgentStartupTraceResponse", _rt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "event_id",
         kind: "scalar",
@@ -171220,10 +171338,10 @@
         no: 3,
         name: "trace_event",
         kind: "message",
-        T: o$e
+        T: f$e
     }]);
-    let crt = mrt;
-    const drt = class e extends q {
+    let grt = _rt;
+    const wrt = class e extends q {
         constructor(e) {
             super(), this.n = 0, je.util.initPartial(e, this)
         }
@@ -171240,7 +171358,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    drt.runtime = je, drt.typeName = "aiserver.v1.ListAgentStoresRequest", drt.fields = je.util.newFieldList(() => [{
+    wrt.runtime = je, wrt.typeName = "aiserver.v1.ListAgentStoresRequest", wrt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "n",
         kind: "scalar",
@@ -171252,8 +171370,8 @@
         T: 9,
         opt: !0
     }]);
-    let frt = drt;
-    const prt = class e extends q {
+    let hrt = wrt;
+    const yrt = class e extends q {
         constructor(e) {
             super(), this.storeId = "", this.createdAtMs = 0, this.updatedAtMs = 0, this.repoUrls = [], this.shares = [], this.kind = 0, this.sourceId = "", je.util.initPartial(e, this)
         }
@@ -171270,7 +171388,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    prt.runtime = je, prt.typeName = "aiserver.v1.AgentStore", prt.fields = je.util.newFieldList(() => [{
+    yrt.runtime = je, yrt.typeName = "aiserver.v1.AgentStore", yrt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "store_id",
         kind: "scalar",
@@ -171295,13 +171413,13 @@
         no: 9,
         name: "shares",
         kind: "message",
-        T: Zrt,
+        T: ist,
         repeated: !0
     }, {
         no: 10,
         name: "kind",
         kind: "enum",
-        T: je.getEnumType(W$e)
+        T: je.getEnumType(Z$e)
     }, {
         no: 11,
         name: "last_file_write_at_ms",
@@ -171320,8 +171438,8 @@
         T: 9,
         opt: !0
     }]);
-    let Trt = prt;
-    const _rt = class e extends q {
+    let krt = yrt;
+    const Srt = class e extends q {
         constructor(e) {
             super(), this.stores = [], this.hasMore = !1, je.util.initPartial(e, this)
         }
@@ -171338,11 +171456,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    _rt.runtime = je, _rt.typeName = "aiserver.v1.ListAgentStoresResponse", _rt.fields = je.util.newFieldList(() => [{
+    Srt.runtime = je, Srt.typeName = "aiserver.v1.ListAgentStoresResponse", Srt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "stores",
         kind: "message",
-        T: Trt,
+        T: krt,
         repeated: !0
     }, {
         no: 2,
@@ -171355,117 +171473,6 @@
         kind: "scalar",
         T: 9,
         opt: !0
-    }]);
-    let grt = _rt;
-    const wrt = class e extends q {
-        constructor(e) {
-            super(), this.storeId = "", this.relativePath = "", je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    wrt.runtime = je, wrt.typeName = "aiserver.v1.ListAgentStoreEntriesRequest", wrt.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "store_id",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "relative_path",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 3,
-        name: "share_id",
-        kind: "scalar",
-        T: 9,
-        opt: !0
-    }]);
-    let hrt = wrt;
-    const yrt = class e extends q {
-        constructor(e) {
-            super(), this.name = "", this.relativePath = "", this.kind = 0, je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    yrt.runtime = je, yrt.typeName = "aiserver.v1.AgentStoreEntry", yrt.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "name",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "relative_path",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 3,
-        name: "kind",
-        kind: "enum",
-        T: je.getEnumType(z$e)
-    }, {
-        no: 4,
-        name: "size_bytes",
-        kind: "scalar",
-        T: 3,
-        opt: !0
-    }, {
-        no: 5,
-        name: "updated_at_ms",
-        kind: "scalar",
-        T: 1,
-        opt: !0
-    }]);
-    let krt = yrt;
-    const Srt = class e extends q {
-        constructor(e) {
-            super(), this.normalizedRelativePath = "", this.entries = [], je.util.initPartial(e, this)
-        }
-        static fromBinary(t, n) {
-            return (new e).fromBinary(t, n)
-        }
-        static fromJson(t, n) {
-            return (new e).fromJson(t, n)
-        }
-        static fromJsonString(t, n) {
-            return (new e).fromJsonString(t, n)
-        }
-        static equals(t, n) {
-            return je.util.equals(e, t, n)
-        }
-    };
-    Srt.runtime = je, Srt.typeName = "aiserver.v1.ListAgentStoreEntriesResponse", Srt.fields = je.util.newFieldList(() => [{
-        no: 1,
-        name: "normalized_relative_path",
-        kind: "scalar",
-        T: 9
-    }, {
-        no: 2,
-        name: "entries",
-        kind: "message",
-        T: krt,
-        repeated: !0
     }]);
     let Jrt = Srt;
     const Ert = class e extends q {
@@ -171485,7 +171492,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Ert.runtime = je, Ert.typeName = "aiserver.v1.ReadAgentStoreFileRequest", Ert.fields = je.util.newFieldList(() => [{
+    Ert.runtime = je, Ert.typeName = "aiserver.v1.ListAgentStoreEntriesRequest", Ert.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "store_id",
         kind: "scalar",
@@ -171505,6 +171512,117 @@
     let vrt = Ert;
     const Nrt = class e extends q {
         constructor(e) {
+            super(), this.name = "", this.relativePath = "", this.kind = 0, je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    Nrt.runtime = je, Nrt.typeName = "aiserver.v1.AgentStoreEntry", Nrt.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "relative_path",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 3,
+        name: "kind",
+        kind: "enum",
+        T: je.getEnumType(eZe)
+    }, {
+        no: 4,
+        name: "size_bytes",
+        kind: "scalar",
+        T: 3,
+        opt: !0
+    }, {
+        no: 5,
+        name: "updated_at_ms",
+        kind: "scalar",
+        T: 1,
+        opt: !0
+    }]);
+    let Brt = Nrt;
+    const qrt = class e extends q {
+        constructor(e) {
+            super(), this.normalizedRelativePath = "", this.entries = [], je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    qrt.runtime = je, qrt.typeName = "aiserver.v1.ListAgentStoreEntriesResponse", qrt.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "normalized_relative_path",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "entries",
+        kind: "message",
+        T: Brt,
+        repeated: !0
+    }]);
+    let Prt = qrt;
+    const Irt = class e extends q {
+        constructor(e) {
+            super(), this.storeId = "", this.relativePath = "", je.util.initPartial(e, this)
+        }
+        static fromBinary(t, n) {
+            return (new e).fromBinary(t, n)
+        }
+        static fromJson(t, n) {
+            return (new e).fromJson(t, n)
+        }
+        static fromJsonString(t, n) {
+            return (new e).fromJsonString(t, n)
+        }
+        static equals(t, n) {
+            return je.util.equals(e, t, n)
+        }
+    };
+    Irt.runtime = je, Irt.typeName = "aiserver.v1.ReadAgentStoreFileRequest", Irt.fields = je.util.newFieldList(() => [{
+        no: 1,
+        name: "store_id",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 2,
+        name: "relative_path",
+        kind: "scalar",
+        T: 9
+    }, {
+        no: 3,
+        name: "share_id",
+        kind: "scalar",
+        T: 9,
+        opt: !0
+    }]);
+    let Rrt = Irt;
+    const Lrt = class e extends q {
+        constructor(e) {
             super(), this.content = "", je.util.initPartial(e, this)
         }
         static fromBinary(t, n) {
@@ -171520,14 +171638,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    Nrt.runtime = je, Nrt.typeName = "aiserver.v1.ReadAgentStoreFileResponse", Nrt.fields = je.util.newFieldList(() => [{
+    Lrt.runtime = je, Lrt.typeName = "aiserver.v1.ReadAgentStoreFileResponse", Lrt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "content",
         kind: "scalar",
         T: 9
     }]);
-    let Brt = Nrt;
-    const qrt = class e extends q {
+    let Frt = Lrt;
+    const Crt = class e extends q {
         constructor(e) {
             super(), this.agentId = "", je.util.initPartial(e, this)
         }
@@ -171544,7 +171662,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    qrt.runtime = je, qrt.typeName = "aiserver.v1.MintAgentStoreTokenRequest", qrt.fields = je.util.newFieldList(() => [{
+    Crt.runtime = je, Crt.typeName = "aiserver.v1.MintAgentStoreTokenRequest", Crt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "agent_id",
         kind: "scalar",
@@ -171556,8 +171674,8 @@
         T: 9,
         opt: !0
     }]);
-    let Prt = qrt;
-    const Irt = class e extends q {
+    let Art = Crt;
+    const xrt = class e extends q {
         constructor(e) {
             super(), this.token = "", this.expiresAtMs = b.zero, this.agentIds = [], this.storeIds = [], je.util.initPartial(e, this)
         }
@@ -171574,7 +171692,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Irt.runtime = je, Irt.typeName = "aiserver.v1.MintAgentStoreTokenResponse", Irt.fields = je.util.newFieldList(() => [{
+    xrt.runtime = je, xrt.typeName = "aiserver.v1.MintAgentStoreTokenResponse", xrt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "token",
         kind: "scalar",
@@ -171597,8 +171715,8 @@
         T: 9,
         repeated: !0
     }]);
-    let Rrt = Irt;
-    const Lrt = class e extends q {
+    let Ort = xrt;
+    const Drt = class e extends q {
         constructor(e) {
             super(), this.relPath = "", this.etag = "", this.sizeBytes = b.zero, this.lastModifiedMs = b.zero, je.util.initPartial(e, this)
         }
@@ -171615,7 +171733,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Lrt.runtime = je, Lrt.typeName = "aiserver.v1.AgentStoreFileEntry", Lrt.fields = je.util.newFieldList(() => [{
+    Drt.runtime = je, Drt.typeName = "aiserver.v1.AgentStoreFileEntry", Drt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "rel_path",
         kind: "scalar",
@@ -171636,8 +171754,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Frt = Lrt;
-    const Crt = class e extends q {
+    let brt = Drt;
+    const Urt = class e extends q {
         constructor(e) {
             super(), this.agentId = "", je.util.initPartial(e, this)
         }
@@ -171654,7 +171772,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Crt.runtime = je, Crt.typeName = "aiserver.v1.ListAgentStoreFilesRequest", Crt.fields = je.util.newFieldList(() => [{
+    Urt.runtime = je, Urt.typeName = "aiserver.v1.ListAgentStoreFilesRequest", Urt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "agent_id",
         kind: "scalar",
@@ -171666,8 +171784,8 @@
         T: 9,
         opt: !0
     }]);
-    let Art = Crt;
-    const xrt = class e extends q {
+    let Mrt = Urt;
+    const Grt = class e extends q {
         constructor(e) {
             super(), this.files = [], je.util.initPartial(e, this)
         }
@@ -171684,15 +171802,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    xrt.runtime = je, xrt.typeName = "aiserver.v1.ListAgentStoreFilesResponse", xrt.fields = je.util.newFieldList(() => [{
+    Grt.runtime = je, Grt.typeName = "aiserver.v1.ListAgentStoreFilesResponse", Grt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "files",
         kind: "message",
-        T: Frt,
+        T: brt,
         repeated: !0
     }]);
-    let Ort = xrt;
-    const Drt = class e extends q {
+    let Yrt = Grt;
+    const Vrt = class e extends q {
         constructor(e) {
             super(), this.relPath = "", this.url = "", this.expiresAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -171709,7 +171827,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Drt.runtime = je, Drt.typeName = "aiserver.v1.AgentStoreReadInstruction", Drt.fields = je.util.newFieldList(() => [{
+    Vrt.runtime = je, Vrt.typeName = "aiserver.v1.AgentStoreReadInstruction", Vrt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "rel_path",
         kind: "scalar",
@@ -171725,8 +171843,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let brt = Drt;
-    const Urt = class e extends q {
+    let Hrt = Vrt;
+    const Krt = class e extends q {
         constructor(e) {
             super(), this.agentId = "", this.relPaths = [], je.util.initPartial(e, this)
         }
@@ -171743,7 +171861,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Urt.runtime = je, Urt.typeName = "aiserver.v1.PresignAgentStoreReadsRequest", Urt.fields = je.util.newFieldList(() => [{
+    Krt.runtime = je, Krt.typeName = "aiserver.v1.PresignAgentStoreReadsRequest", Krt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "agent_id",
         kind: "scalar",
@@ -171761,8 +171879,8 @@
         T: 9,
         opt: !0
     }]);
-    let Mrt = Urt;
-    const Grt = class e extends q {
+    let Wrt = Krt;
+    const zrt = class e extends q {
         constructor(e) {
             super(), this.instructions = [], je.util.initPartial(e, this)
         }
@@ -171779,15 +171897,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    Grt.runtime = je, Grt.typeName = "aiserver.v1.PresignAgentStoreReadsResponse", Grt.fields = je.util.newFieldList(() => [{
+    zrt.runtime = je, zrt.typeName = "aiserver.v1.PresignAgentStoreReadsResponse", zrt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "instructions",
         kind: "message",
-        T: brt,
+        T: Hrt,
         repeated: !0
     }]);
-    let Yrt = Grt;
-    const Vrt = class e extends q {
+    let jrt = zrt;
+    const Xrt = class e extends q {
         constructor(e) {
             super(), this.relPath = "", this.sizeBytes = b.zero, this.sha = "", je.util.initPartial(e, this)
         }
@@ -171804,7 +171922,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Vrt.runtime = je, Vrt.typeName = "aiserver.v1.AgentStoreWriteFileEntry", Vrt.fields = je.util.newFieldList(() => [{
+    Xrt.runtime = je, Xrt.typeName = "aiserver.v1.AgentStoreWriteFileEntry", Xrt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "rel_path",
         kind: "scalar",
@@ -171820,8 +171938,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Hrt = Vrt;
-    const Krt = class e extends q {
+    let Qrt = Xrt;
+    const $rt = class e extends q {
         constructor(e) {
             super(), this.relPath = "", this.url = "", this.headers = {}, this.expiresAtMs = b.zero, je.util.initPartial(e, this)
         }
@@ -171838,7 +171956,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    Krt.runtime = je, Krt.typeName = "aiserver.v1.AgentStoreWriteInstruction", Krt.fields = je.util.newFieldList(() => [{
+    $rt.runtime = je, $rt.typeName = "aiserver.v1.AgentStoreWriteInstruction", $rt.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "rel_path",
         kind: "scalar",
@@ -171863,8 +171981,8 @@
         kind: "scalar",
         T: 3
     }]);
-    let Wrt = Krt;
-    const zrt = class e extends q {
+    let Zrt = $rt;
+    const est = class e extends q {
         constructor(e) {
             super(), this.agentId = "", this.files = [], je.util.initPartial(e, this)
         }
@@ -171881,7 +171999,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    zrt.runtime = je, zrt.typeName = "aiserver.v1.PresignAgentStoreWritesRequest", zrt.fields = je.util.newFieldList(() => [{
+    est.runtime = je, est.typeName = "aiserver.v1.PresignAgentStoreWritesRequest", est.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "agent_id",
         kind: "scalar",
@@ -171890,11 +172008,11 @@
         no: 2,
         name: "files",
         kind: "message",
-        T: Hrt,
+        T: Qrt,
         repeated: !0
     }]);
-    let jrt = zrt;
-    const Xrt = class e extends q {
+    let tst = est;
+    const nst = class e extends q {
         constructor(e) {
             super(), this.instructions = [], je.util.initPartial(e, this)
         }
@@ -171911,15 +172029,15 @@
             return je.util.equals(e, t, n)
         }
     };
-    Xrt.runtime = je, Xrt.typeName = "aiserver.v1.PresignAgentStoreWritesResponse", Xrt.fields = je.util.newFieldList(() => [{
+    nst.runtime = je, nst.typeName = "aiserver.v1.PresignAgentStoreWritesResponse", nst.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "instructions",
         kind: "message",
-        T: Wrt,
+        T: Zrt,
         repeated: !0
     }]);
-    let Qrt = Xrt;
-    const $rt = class e extends q {
+    let rst = nst;
+    const sst = class e extends q {
         constructor(e) {
             super(), this.shareId = "", this.pathPrefix = "", this.visibility = 0, this.createdAtMs = 0, je.util.initPartial(e, this)
         }
@@ -171936,7 +172054,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    $rt.runtime = je, $rt.typeName = "aiserver.v1.SharedAgentStoreInfo", $rt.fields = je.util.newFieldList(() => [{
+    sst.runtime = je, sst.typeName = "aiserver.v1.SharedAgentStoreInfo", sst.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
@@ -171950,7 +172068,7 @@
         no: 3,
         name: "visibility",
         kind: "enum",
-        T: je.getEnumType(j$e)
+        T: je.getEnumType(tZe)
     }, {
         no: 4,
         name: "created_at_ms",
@@ -171963,8 +172081,8 @@
         T: 1,
         opt: !0
     }]);
-    let Zrt = $rt;
-    const est = class e extends q {
+    let ist = sst;
+    const ast = class e extends q {
         constructor(e) {
             super(), this.agentId = "", this.pathPrefix = "", je.util.initPartial(e, this)
         }
@@ -171981,7 +172099,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    est.runtime = je, est.typeName = "aiserver.v1.ShareAgentStoreRequest", est.fields = je.util.newFieldList(() => [{
+    ast.runtime = je, ast.typeName = "aiserver.v1.ShareAgentStoreRequest", ast.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "agent_id",
         kind: "scalar",
@@ -171992,8 +172110,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let tst = est;
-    const nst = class e extends q {
+    let ost = ast;
+    const lst = class e extends q {
         constructor(e) {
             super(), this.shareId = "", this.shareUrl = "", je.util.initPartial(e, this)
         }
@@ -172010,7 +172128,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    nst.runtime = je, nst.typeName = "aiserver.v1.ShareAgentStoreResponse", nst.fields = je.util.newFieldList(() => [{
+    lst.runtime = je, lst.typeName = "aiserver.v1.ShareAgentStoreResponse", lst.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
@@ -172021,8 +172139,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let rst = nst;
-    const sst = class e extends q {
+    let ust = lst;
+    const mst = class e extends q {
         constructor(e) {
             super(), this.shareId = "", je.util.initPartial(e, this)
         }
@@ -172039,14 +172157,14 @@
             return je.util.equals(e, t, n)
         }
     };
-    sst.runtime = je, sst.typeName = "aiserver.v1.UnshareAgentStoreRequest", sst.fields = je.util.newFieldList(() => [{
+    mst.runtime = je, mst.typeName = "aiserver.v1.UnshareAgentStoreRequest", mst.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
         T: 9
     }]);
-    let ist = sst;
-    const ast = class e extends q {
+    let cst = mst;
+    const dst = class e extends q {
         constructor(e) {
             super(), je.util.initPartial(e, this)
         }
@@ -172063,9 +172181,9 @@
             return je.util.equals(e, t, n)
         }
     };
-    ast.runtime = je, ast.typeName = "aiserver.v1.UnshareAgentStoreResponse", ast.fields = je.util.newFieldList(() => []);
-    let ost = ast;
-    const lst = class e extends q {
+    dst.runtime = je, dst.typeName = "aiserver.v1.UnshareAgentStoreResponse", dst.fields = je.util.newFieldList(() => []);
+    let fst = dst;
+    const pst = class e extends q {
         constructor(e) {
             super(), this.limit = 0, je.util.initPartial(e, this)
         }
@@ -172082,7 +172200,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    lst.runtime = je, lst.typeName = "aiserver.v1.ListSharedAgentStoresRequest", lst.fields = je.util.newFieldList(() => [{
+    pst.runtime = je, pst.typeName = "aiserver.v1.ListSharedAgentStoresRequest", pst.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "limit",
         kind: "scalar",
@@ -172109,7 +172227,7 @@
         no: 5,
         name: "scope",
         kind: "enum",
-        T: je.getEnumType(X$e),
+        T: je.getEnumType(nZe),
         opt: !0
     }, {
         no: 6,
@@ -172118,8 +172236,8 @@
         T: 9,
         opt: !0
     }]);
-    let ust = lst;
-    const mst = class e extends q {
+    let Tst = pst;
+    const _st = class e extends q {
         constructor(e) {
             super(), this.shareId = "", this.agentId = "", this.storeId = "", this.pathPrefix = "", this.visibility = 0, this.createdAtMs = 0, this.ownerDisplayName = "", this.storeKind = "", je.util.initPartial(e, this)
         }
@@ -172136,7 +172254,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    mst.runtime = je, mst.typeName = "aiserver.v1.SharedAgentStoreListing", mst.fields = je.util.newFieldList(() => [{
+    _st.runtime = je, _st.typeName = "aiserver.v1.SharedAgentStoreListing", _st.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "share_id",
         kind: "scalar",
@@ -172160,7 +172278,7 @@
         no: 5,
         name: "visibility",
         kind: "enum",
-        T: je.getEnumType(j$e)
+        T: je.getEnumType(tZe)
     }, {
         no: 6,
         name: "created_at_ms",
@@ -172195,8 +172313,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let cst = mst;
-    const dst = class e extends q {
+    let gst = _st;
+    const wst = class e extends q {
         constructor(e) {
             super(), this.listings = [], this.hasMore = !1, je.util.initPartial(e, this)
         }
@@ -172213,11 +172331,11 @@
             return je.util.equals(e, t, n)
         }
     };
-    dst.runtime = je, dst.typeName = "aiserver.v1.ListSharedAgentStoresResponse", dst.fields = je.util.newFieldList(() => [{
+    wst.runtime = je, wst.typeName = "aiserver.v1.ListSharedAgentStoresResponse", wst.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "listings",
         kind: "message",
-        T: cst,
+        T: gst,
         repeated: !0
     }, {
         no: 2,
@@ -172237,8 +172355,8 @@
         T: 9,
         opt: !0
     }]);
-    let fst = dst;
-    const pst = class e extends q {
+    let hst = wst;
+    const yst = class e extends q {
         constructor(e) {
             super(), this.bcId = "", this.machineName = "", this.workerId = "", this.idempotencyKey = "", je.util.initPartial(e, this)
         }
@@ -172255,7 +172373,7 @@
             return je.util.equals(e, t, n)
         }
     };
-    pst.runtime = je, pst.typeName = "aiserver.v1.RequestLocalAgentRemoteControlRequest", pst.fields = je.util.newFieldList(() => [{
+    yst.runtime = je, yst.typeName = "aiserver.v1.RequestLocalAgentRemoteControlRequest", yst.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "bc_id",
         kind: "scalar",
@@ -172276,8 +172394,8 @@
         kind: "scalar",
         T: 9
     }]);
-    let Tst = pst;
-    const _st = class e extends q {
+    let kst = yst;
+    const Sst = class e extends q {
         constructor(e) {
             super(), this.status = 0, this.rejectionReason = 0, this.message = "", this.migratedBcId = "", je.util.initPartial(e, this)
         }
@@ -172294,16 +172412,16 @@
             return je.util.equals(e, t, n)
         }
     };
-    _st.runtime = je, _st.typeName = "aiserver.v1.RequestLocalAgentRemoteControlResponse", _st.fields = je.util.newFieldList(() => [{
+    Sst.runtime = je, Sst.typeName = "aiserver.v1.RequestLocalAgentRemoteControlResponse", Sst.fields = je.util.newFieldList(() => [{
         no: 1,
         name: "status",
         kind: "enum",
-        T: je.getEnumType(Q$e)
+        T: je.getEnumType(rZe)
     }, {
         no: 2,
         name: "rejection_reason",
         kind: "enum",
-        T: je.getEnumType($$e)
+        T: je.getEnumType(sZe)
     }, {
         no: 3,
         name: "message",
@@ -172315,692 +172433,692 @@
         kind: "scalar",
         T: 9
     }]);
-    let gst = _st;
-    const wst = {
+    let Jst = Sst;
+    const Est = {
             typeName: "aiserver.v1.BackgroundComposerService",
             methods: {
                 listBackgroundComposers: {
                     name: "ListBackgroundComposers",
-                    I: p0e,
-                    O: C0e,
+                    I: y0e,
+                    O: U0e,
                     kind: Qe.Unary
                 },
                 attachBackgroundComposer: {
                     name: "AttachBackgroundComposer",
-                    I: m9e,
-                    O: d9e,
+                    I: _9e,
+                    O: w9e,
                     kind: Qe.ServerStreaming
                 },
                 streamConversation: {
                     name: "StreamConversation",
-                    I: p9e,
-                    O: E9e,
+                    I: y9e,
+                    O: I9e,
                     kind: Qe.ServerStreaming
                 },
                 getLatestAgentConversationState: {
                     name: "GetLatestAgentConversationState",
-                    I: W9e,
-                    O: Q9e,
+                    I: Z9e,
+                    O: r2e,
                     kind: Qe.Unary
                 },
                 getBlobForAgentKV: {
                     name: "GetBlobForAgentKV",
-                    I: Z9e,
-                    O: t2e,
+                    I: i2e,
+                    O: o2e,
                     kind: Qe.Unary
                 },
                 attachBackgroundComposerLogs: {
                     name: "AttachBackgroundComposerLogs",
-                    I: s9e,
-                    O: a9e,
+                    I: m9e,
+                    O: d9e,
                     kind: Qe.ServerStreaming
                 },
                 attachAgentStartupTrace: {
                     name: "AttachAgentStartupTrace",
-                    I: urt,
-                    O: crt,
+                    I: Trt,
+                    O: grt,
                     kind: Qe.ServerStreaming
                 },
                 startBackgroundComposerFromSnapshot: {
                     name: "StartBackgroundComposerFromSnapshot",
-                    I: X0e,
-                    O: n9e,
+                    I: n9e,
+                    O: l9e,
                     kind: Qe.Unary
                 },
                 makePRBackgroundComposer: {
                     name: "MakePRBackgroundComposer",
-                    I: a0e,
-                    O: l0e,
+                    I: d0e,
+                    O: p0e,
                     kind: Qe.Unary
                 },
                 openPRBackgroundComposer: {
                     name: "OpenPRBackgroundComposer",
-                    I: m0e,
-                    O: d0e,
+                    I: _0e,
+                    O: w0e,
                     kind: Qe.Unary
                 },
                 getBackgroundComposerStatus: {
                     name: "GetBackgroundComposerStatus",
-                    I: J2e,
-                    O: v2e,
+                    I: P2e,
+                    O: R2e,
                     kind: Qe.Unary
                 },
                 addAsyncFollowupBackgroundComposer: {
                     name: "AddAsyncFollowupBackgroundComposer",
-                    I: B2e,
-                    O: P2e,
+                    I: F2e,
+                    O: A2e,
                     kind: Qe.Unary
                 },
                 submitInteractionResponseBackgroundComposer: {
                     name: "SubmitInteractionResponseBackgroundComposer",
-                    I: R2e,
-                    O: F2e,
+                    I: O2e,
+                    O: b2e,
                     kind: Qe.Unary
                 },
                 listPendingFollowups: {
                     name: "ListPendingFollowups",
-                    I: A2e,
-                    O: b2e,
+                    I: M2e,
+                    O: H2e,
                     kind: Qe.Unary
                 },
                 updatePendingFollowup: {
                     name: "UpdatePendingFollowup",
-                    I: M2e,
-                    O: Y2e,
+                    I: W2e,
+                    O: j2e,
                     kind: Qe.Unary
                 },
                 deletePendingFollowup: {
                     name: "DeletePendingFollowup",
-                    I: H2e,
-                    O: W2e,
+                    I: Q2e,
+                    O: Z2e,
                     kind: Qe.Unary
                 },
                 reorderPendingFollowup: {
                     name: "ReorderPendingFollowup",
-                    I: j2e,
-                    O: Q2e,
+                    I: t3e,
+                    O: r3e,
                     kind: Qe.Unary
                 },
                 submitPendingFollowupNow: {
                     name: "SubmitPendingFollowupNow",
-                    I: Z2e,
-                    O: t3e,
+                    I: i3e,
+                    O: o3e,
                     kind: Qe.Unary
                 },
                 markFollowupEditing: {
                     name: "MarkFollowupEditing",
-                    I: r3e,
-                    O: i3e,
+                    I: u3e,
+                    O: c3e,
                     kind: Qe.Unary
                 },
                 requestLocalAgentRemoteControl: {
                     name: "RequestLocalAgentRemoteControl",
-                    I: Tst,
-                    O: gst,
+                    I: kst,
+                    O: Jst,
                     kind: Qe.Unary
                 },
                 getCursorServerUrl: {
                     name: "GetCursorServerUrl",
-                    I: X1e,
-                    O: $1e,
-                    kind: Qe.Unary
-                },
-                warmCursorServerDownload: {
-                    name: "WarmCursorServerDownload",
                     I: n0e,
                     O: s0e,
                     kind: Qe.Unary
                 },
+                warmCursorServerDownload: {
+                    name: "WarmCursorServerDownload",
+                    I: l0e,
+                    O: m0e,
+                    kind: Qe.Unary
+                },
                 preWarmPod: {
                     name: "PreWarmPod",
-                    I: BZe,
-                    O: PZe,
+                    I: FZe,
+                    O: AZe,
                     kind: Qe.Unary
                 },
                 pauseBackgroundComposer: {
                     name: "PauseBackgroundComposer",
-                    I: C1e,
-                    O: x1e,
+                    I: U1e,
+                    O: G1e,
                     kind: Qe.Unary
                 },
                 resumeBackgroundComposer: {
                     name: "ResumeBackgroundComposer",
-                    I: K1e,
-                    O: z1e,
+                    I: $1e,
+                    O: e0e,
                     kind: Qe.Unary
                 },
                 archiveBackgroundComposer: {
                     name: "ArchiveBackgroundComposer",
-                    I: D1e,
-                    O: U1e,
+                    I: V1e,
+                    O: K1e,
                     kind: Qe.Unary
                 },
                 deleteBackgroundComposer: {
                     name: "DeleteBackgroundComposer",
-                    I: G1e,
-                    O: V1e,
+                    I: z1e,
+                    O: X1e,
                     kind: Qe.Unary
                 },
                 getBackgroundComposerInfo: {
                     name: "GetBackgroundComposerInfo",
-                    I: h3e,
-                    O: b3e,
+                    I: v3e,
+                    O: H3e,
                     kind: Qe.Unary
                 },
                 getBackgroundComposerEnvironmentVersion: {
                     name: "GetBackgroundComposerEnvironmentVersion",
-                    I: R8e,
-                    O: F8e,
+                    I: O8e,
+                    O: b8e,
                     kind: Qe.Unary
                 },
                 getEnvironmentHistory: {
                     name: "GetEnvironmentHistory",
-                    I: H8e,
-                    O: W8e,
+                    I: Q8e,
+                    O: Z8e,
                     kind: Qe.Unary
                 },
                 getBackgroundComposerTimings: {
                     name: "GetBackgroundComposerTimings",
-                    I: k3e,
-                    O: M3e,
+                    I: B3e,
+                    O: W3e,
                     kind: Qe.Unary
                 },
                 getBackgroundComposerRepositoryInfo: {
                     name: "GetBackgroundComposerRepositoryInfo",
-                    I: Y3e,
-                    O: H3e,
+                    I: j3e,
+                    O: Q3e,
                     kind: Qe.Unary
                 },
                 getMachine: {
                     name: "GetMachine",
-                    I: W3e,
-                    O: t5e,
+                    I: Z3e,
+                    O: o5e,
                     kind: Qe.Unary
                 },
                 listDetailedBackgroundComposers: {
                     name: "ListDetailedBackgroundComposers",
-                    I: I1e,
-                    O: L1e,
+                    I: x1e,
+                    O: D1e,
                     kind: Qe.Unary
                 },
                 getGithubAccessTokenForRepos: {
                     name: "GetGithubAccessTokenForRepos",
-                    I: r5e,
-                    O: i5e,
-                    kind: Qe.Unary
-                },
-                makeGithubRequest: {
-                    name: "MakeGithubRequest",
                     I: u5e,
                     O: c5e,
                     kind: Qe.Unary
                 },
+                makeGithubRequest: {
+                    name: "MakeGithubRequest",
+                    I: T5e,
+                    O: g5e,
+                    kind: Qe.Unary
+                },
                 getBackgroundComposerDiffDetails: {
                     name: "GetBackgroundComposerDiffDetails",
-                    I: y1e,
-                    O: E1e,
+                    I: N1e,
+                    O: I1e,
                     kind: Qe.Unary
                 },
                 getOptimizedDiffDetails: {
                     name: "GetOptimizedDiffDetails",
-                    I: sZe,
-                    O: aZe,
-                    kind: Qe.Unary
-                },
-                getBackgroundComposerChangesHash: {
-                    name: "GetBackgroundComposerChangesHash",
-                    I: _1e,
-                    O: w1e,
-                    kind: Qe.Unary
-                },
-                getBackgroundComposerPullRequest: {
-                    name: "GetBackgroundComposerPullRequest",
-                    I: g5e,
-                    O: h5e,
-                    kind: Qe.Unary
-                },
-                refreshGithubAccessTokenInBackgroundComposer: {
-                    name: "RefreshGithubAccessTokenInBackgroundComposer",
-                    I: wZe,
-                    O: yZe,
-                    kind: Qe.Unary
-                },
-                createBackgroundComposerPod: {
-                    name: "CreateBackgroundComposerPod",
-                    I: JZe,
-                    O: vZe,
-                    kind: Qe.Unary
-                },
-                attachBackgroundComposerPod: {
-                    name: "AttachBackgroundComposerPod",
-                    I: RZe,
-                    O: FZe,
-                    kind: Qe.ServerStreaming
-                },
-                createBackgroundComposerPodSnapshot: {
-                    name: "CreateBackgroundComposerPodSnapshot",
-                    I: OZe,
-                    O: bZe,
-                    kind: Qe.Unary
-                },
-                changeBackgroundComposerSnapshotVisibility: {
-                    name: "ChangeBackgroundComposerSnapshotVisibility",
-                    I: MZe,
-                    O: VZe,
-                    kind: Qe.Unary
-                },
-                getBackgroundComposerSnapshotInfo: {
-                    name: "GetBackgroundComposerSnapshotInfo",
-                    I: KZe,
-                    O: zZe,
-                    kind: Qe.Unary
-                },
-                listBackgroundComposerSnapshotsByBcId: {
-                    name: "ListBackgroundComposerSnapshotsByBcId",
-                    I: XZe,
-                    O: e1e,
-                    kind: Qe.Unary
-                },
-                listBackgroundComposerSnapshotStatusesByBcIds: {
-                    name: "ListBackgroundComposerSnapshotStatusesByBcIds",
-                    I: n1e,
-                    O: a1e,
-                    kind: Qe.Unary
-                },
-                getBackgroundComposerSnapshotState: {
-                    name: "GetBackgroundComposerSnapshotState",
-                    I: l1e,
-                    O: m1e,
-                    kind: Qe.Unary
-                },
-                watchBackgroundComposerSnapshotState: {
-                    name: "WatchBackgroundComposerSnapshotState",
-                    I: d1e,
-                    O: p1e,
-                    kind: Qe.ServerStreaming
-                },
-                getBackgroundComposerConversation: {
-                    name: "GetBackgroundComposerConversation",
-                    I: f5e,
-                    O: T5e,
-                    kind: Qe.Unary
-                },
-                renameBackgroundComposer: {
-                    name: "RenameBackgroundComposer",
-                    I: pZe,
-                    O: _Ze,
-                    kind: Qe.Unary
-                },
-                commitBackgroundComposer: {
-                    name: "CommitBackgroundComposer",
-                    I: k5e,
-                    O: J5e,
-                    kind: Qe.Unary
-                },
-                setPersonalEnvironmentJson: {
-                    name: "SetPersonalEnvironmentJson",
-                    I: v5e,
-                    O: B5e,
-                    kind: Qe.Unary
-                },
-                getPersonalEnvironmentJson: {
-                    name: "GetPersonalEnvironmentJson",
-                    I: P5e,
-                    O: R5e,
-                    kind: Qe.Unary
-                },
-                getEnvironmentJsonCandidates: {
-                    name: "GetEnvironmentJsonCandidates",
-                    I: F5e,
-                    O: A5e,
-                    kind: Qe.Unary
-                },
-                listPersonalEnvironments: {
-                    name: "ListPersonalEnvironments",
-                    I: O5e,
-                    O: M5e,
-                    kind: Qe.Unary
-                },
-                deletePersonalEnvironmentJson: {
-                    name: "DeletePersonalEnvironmentJson",
-                    I: Y5e,
-                    O: H5e,
-                    kind: Qe.Unary
-                },
-                publishEnvironment: {
-                    name: "PublishEnvironment",
-                    I: W5e,
-                    O: j5e,
-                    kind: Qe.Unary
-                },
-                publishPersonalEnvironment: {
-                    name: "PublishPersonalEnvironment",
-                    I: Q5e,
-                    O: Z5e,
-                    kind: Qe.Unary
-                },
-                listTeamEnvironments: {
-                    name: "ListTeamEnvironments",
-                    I: t8e,
-                    O: i8e,
-                    kind: Qe.Unary
-                },
-                deleteTeamEnvironment: {
-                    name: "DeleteTeamEnvironment",
-                    I: j8e,
-                    O: Q8e,
-                    kind: Qe.Unary
-                },
-                setTeamEnvironmentJson: {
-                    name: "SetTeamEnvironmentJson",
-                    I: r4e,
-                    O: i4e,
-                    kind: Qe.Unary
-                },
-                restoreEnvironmentVersion: {
-                    name: "RestoreEnvironmentVersion",
-                    I: Z8e,
-                    O: t4e,
-                    kind: Qe.Unary
-                },
-                listEnvironments: {
-                    name: "ListEnvironments",
-                    I: o8e,
-                    O: c8e,
-                    kind: Qe.Unary
-                },
-                getEnvironment: {
-                    name: "GetEnvironment",
-                    I: f8e,
-                    O: T8e,
-                    kind: Qe.Unary
-                },
-                resolveOrCreateMultiRepoEnvironment: {
-                    name: "ResolveOrCreateMultiRepoEnvironment",
-                    I: g8e,
-                    O: h8e,
-                    kind: Qe.Unary
-                },
-                resolveOrCreateDraftEnvironment: {
-                    name: "ResolveOrCreateDraftEnvironment",
-                    I: k8e,
-                    O: J8e,
-                    kind: Qe.Unary
-                },
-                snapshotAndSaveEnvironment: {
-                    name: "SnapshotAndSaveEnvironment",
-                    I: o4e,
-                    O: m4e,
-                    kind: Qe.Unary
-                },
-                listReposWithLocalEnvironment: {
-                    name: "ListReposWithLocalEnvironment",
-                    I: d4e,
-                    O: _4e,
-                    kind: Qe.Unary
-                },
-                markBackgroundComposerRead: {
-                    name: "MarkBackgroundComposerRead",
-                    I: w4e,
-                    O: y4e,
-                    kind: Qe.Unary
-                },
-                markBackgroundComposerUnread: {
-                    name: "MarkBackgroundComposerUnread",
-                    I: S4e,
-                    O: E4e,
-                    kind: Qe.Unary
-                },
-                notifyBackgroundComposerShown: {
-                    name: "NotifyBackgroundComposerShown",
                     I: mZe,
                     O: dZe,
                     kind: Qe.Unary
                 },
+                getBackgroundComposerChangesHash: {
+                    name: "GetBackgroundComposerChangesHash",
+                    I: S1e,
+                    O: E1e,
+                    kind: Qe.Unary
+                },
+                getBackgroundComposerPullRequest: {
+                    name: "GetBackgroundComposerPullRequest",
+                    I: J5e,
+                    O: v5e,
+                    kind: Qe.Unary
+                },
+                refreshGithubAccessTokenInBackgroundComposer: {
+                    name: "RefreshGithubAccessTokenInBackgroundComposer",
+                    I: EZe,
+                    O: NZe,
+                    kind: Qe.Unary
+                },
+                createBackgroundComposerPod: {
+                    name: "CreateBackgroundComposerPod",
+                    I: PZe,
+                    O: RZe,
+                    kind: Qe.Unary
+                },
+                attachBackgroundComposerPod: {
+                    name: "AttachBackgroundComposerPod",
+                    I: OZe,
+                    O: bZe,
+                    kind: Qe.ServerStreaming
+                },
+                createBackgroundComposerPodSnapshot: {
+                    name: "CreateBackgroundComposerPodSnapshot",
+                    I: YZe,
+                    O: HZe,
+                    kind: Qe.Unary
+                },
+                changeBackgroundComposerSnapshotVisibility: {
+                    name: "ChangeBackgroundComposerSnapshotVisibility",
+                    I: WZe,
+                    O: XZe,
+                    kind: Qe.Unary
+                },
+                getBackgroundComposerSnapshotInfo: {
+                    name: "GetBackgroundComposerSnapshotInfo",
+                    I: $Ze,
+                    O: e1e,
+                    kind: Qe.Unary
+                },
+                listBackgroundComposerSnapshotsByBcId: {
+                    name: "ListBackgroundComposerSnapshotsByBcId",
+                    I: n1e,
+                    O: a1e,
+                    kind: Qe.Unary
+                },
+                listBackgroundComposerSnapshotStatusesByBcIds: {
+                    name: "ListBackgroundComposerSnapshotStatusesByBcIds",
+                    I: l1e,
+                    O: d1e,
+                    kind: Qe.Unary
+                },
+                getBackgroundComposerSnapshotState: {
+                    name: "GetBackgroundComposerSnapshotState",
+                    I: p1e,
+                    O: _1e,
+                    kind: Qe.Unary
+                },
+                watchBackgroundComposerSnapshotState: {
+                    name: "WatchBackgroundComposerSnapshotState",
+                    I: w1e,
+                    O: y1e,
+                    kind: Qe.ServerStreaming
+                },
+                getBackgroundComposerConversation: {
+                    name: "GetBackgroundComposerConversation",
+                    I: h5e,
+                    O: k5e,
+                    kind: Qe.Unary
+                },
+                renameBackgroundComposer: {
+                    name: "RenameBackgroundComposer",
+                    I: yZe,
+                    O: SZe,
+                    kind: Qe.Unary
+                },
+                commitBackgroundComposer: {
+                    name: "CommitBackgroundComposer",
+                    I: B5e,
+                    O: P5e,
+                    kind: Qe.Unary
+                },
+                setPersonalEnvironmentJson: {
+                    name: "SetPersonalEnvironmentJson",
+                    I: R5e,
+                    O: F5e,
+                    kind: Qe.Unary
+                },
+                getPersonalEnvironmentJson: {
+                    name: "GetPersonalEnvironmentJson",
+                    I: A5e,
+                    O: O5e,
+                    kind: Qe.Unary
+                },
+                getEnvironmentJsonCandidates: {
+                    name: "GetEnvironmentJsonCandidates",
+                    I: b5e,
+                    O: M5e,
+                    kind: Qe.Unary
+                },
+                listPersonalEnvironments: {
+                    name: "ListPersonalEnvironments",
+                    I: Y5e,
+                    O: W5e,
+                    kind: Qe.Unary
+                },
+                deletePersonalEnvironmentJson: {
+                    name: "DeletePersonalEnvironmentJson",
+                    I: j5e,
+                    O: Q5e,
+                    kind: Qe.Unary
+                },
+                publishEnvironment: {
+                    name: "PublishEnvironment",
+                    I: Z5e,
+                    O: t8e,
+                    kind: Qe.Unary
+                },
+                publishPersonalEnvironment: {
+                    name: "PublishPersonalEnvironment",
+                    I: r8e,
+                    O: i8e,
+                    kind: Qe.Unary
+                },
+                listTeamEnvironments: {
+                    name: "ListTeamEnvironments",
+                    I: o8e,
+                    O: c8e,
+                    kind: Qe.Unary
+                },
+                deleteTeamEnvironment: {
+                    name: "DeleteTeamEnvironment",
+                    I: t4e,
+                    O: r4e,
+                    kind: Qe.Unary
+                },
+                setTeamEnvironmentJson: {
+                    name: "SetTeamEnvironmentJson",
+                    I: u4e,
+                    O: c4e,
+                    kind: Qe.Unary
+                },
+                restoreEnvironmentVersion: {
+                    name: "RestoreEnvironmentVersion",
+                    I: i4e,
+                    O: o4e,
+                    kind: Qe.Unary
+                },
+                listEnvironments: {
+                    name: "ListEnvironments",
+                    I: f8e,
+                    O: g8e,
+                    kind: Qe.Unary
+                },
+                getEnvironment: {
+                    name: "GetEnvironment",
+                    I: h8e,
+                    O: k8e,
+                    kind: Qe.Unary
+                },
+                resolveOrCreateMultiRepoEnvironment: {
+                    name: "ResolveOrCreateMultiRepoEnvironment",
+                    I: J8e,
+                    O: v8e,
+                    kind: Qe.Unary
+                },
+                resolveOrCreateDraftEnvironment: {
+                    name: "ResolveOrCreateDraftEnvironment",
+                    I: B8e,
+                    O: P8e,
+                    kind: Qe.Unary
+                },
+                snapshotAndSaveEnvironment: {
+                    name: "SnapshotAndSaveEnvironment",
+                    I: f4e,
+                    O: _4e,
+                    kind: Qe.Unary
+                },
+                listReposWithLocalEnvironment: {
+                    name: "ListReposWithLocalEnvironment",
+                    I: w4e,
+                    O: S4e,
+                    kind: Qe.Unary
+                },
+                markBackgroundComposerRead: {
+                    name: "MarkBackgroundComposerRead",
+                    I: E4e,
+                    O: N4e,
+                    kind: Qe.Unary
+                },
+                markBackgroundComposerUnread: {
+                    name: "MarkBackgroundComposerUnread",
+                    I: q4e,
+                    O: I4e,
+                    kind: Qe.Unary
+                },
+                notifyBackgroundComposerShown: {
+                    name: "NotifyBackgroundComposerShown",
+                    I: _Ze,
+                    O: wZe,
+                    kind: Qe.Unary
+                },
                 fetchBackgroundComposer: {
                     name: "FetchBackgroundComposer",
-                    I: N4e,
-                    O: q4e,
+                    I: L4e,
+                    O: C4e,
                     kind: Qe.Unary
                 },
                 getTurnSummaryBackgroundComposer: {
                     name: "GetTurnSummaryBackgroundComposer",
-                    I: I4e,
-                    O: L4e,
+                    I: x4e,
+                    O: D4e,
                     kind: Qe.Unary
                 },
                 getBackgroundComposerName: {
                     name: "GetBackgroundComposerName",
-                    I: C4e,
-                    O: x4e,
+                    I: U4e,
+                    O: G4e,
                     kind: Qe.Unary
                 },
                 getBackgroundComposerPrompt: {
                     name: "GetBackgroundComposerPrompt",
-                    I: D4e,
-                    O: U4e,
+                    I: V4e,
+                    O: K4e,
                     kind: Qe.Unary
                 },
                 readBinaryFile: {
                     name: "ReadBinaryFile",
-                    I: n6e,
-                    O: s6e,
+                    I: l6e,
+                    O: m6e,
                     kind: Qe.Unary
                 },
                 listBackgroundComposerArtifacts: {
                     name: "ListBackgroundComposerArtifacts",
-                    I: G4e,
-                    O: K4e,
+                    I: z4e,
+                    O: $4e,
                     kind: Qe.Unary
                 },
                 getBackgroundComposerArtifact: {
                     name: "GetBackgroundComposerArtifact",
-                    I: z4e,
-                    O: X4e,
+                    I: e6e,
+                    O: n6e,
                     kind: Qe.Unary
                 },
                 getBackgroundComposerArtifactBytes: {
                     name: "GetBackgroundComposerArtifactBytes",
-                    I: $4e,
-                    O: e6e,
+                    I: s6e,
+                    O: a6e,
                     kind: Qe.Unary
                 },
                 streamBackgroundComposerArtifact: {
                     name: "StreamBackgroundComposerArtifact",
-                    I: a6e,
-                    O: l6e,
+                    I: d6e,
+                    O: p6e,
                     kind: Qe.ServerStreaming
                 },
                 listSharedBackgroundComposerArtifacts: {
                     name: "ListSharedBackgroundComposerArtifacts",
-                    I: d6e,
-                    O: p6e,
+                    I: w6e,
+                    O: y6e,
                     kind: Qe.Unary
                 },
                 shareBackgroundComposerArtifact: {
                     name: "ShareBackgroundComposerArtifact",
-                    I: _6e,
-                    O: w6e,
+                    I: S6e,
+                    O: E6e,
                     kind: Qe.Unary
                 },
                 unshareBackgroundComposerArtifact: {
                     name: "UnshareBackgroundComposerArtifact",
-                    I: y6e,
-                    O: S6e,
+                    I: N6e,
+                    O: q6e,
                     kind: Qe.Unary
                 },
                 getPublicBackgroundComposerArtifact: {
                     name: "GetPublicBackgroundComposerArtifact",
-                    I: E6e,
-                    O: N6e,
+                    I: I6e,
+                    O: L6e,
                     kind: Qe.Unary
                 },
                 updateBackgroundComposerUserSettings: {
                     name: "UpdateBackgroundComposerUserSettings",
-                    I: U6e,
-                    O: G6e,
+                    I: K6e,
+                    O: z6e,
                     kind: Qe.Unary
                 },
                 getBackgroundComposerUserSettings: {
                     name: "GetBackgroundComposerUserSettings",
-                    I: V6e,
-                    O: K6e,
+                    I: X6e,
+                    O: $6e,
                     kind: Qe.Unary
                 },
                 updateBackgroundComposerEnvironment: {
                     name: "UpdateBackgroundComposerEnvironment",
-                    I: eZe,
-                    O: nZe,
+                    I: aZe,
+                    O: lZe,
                     kind: Qe.Unary
                 },
                 getRepositoryBranches: {
                     name: "GetRepositoryBranches",
-                    I: z6e,
-                    O: X6e,
-                    kind: Qe.Unary
-                },
-                getPullRequestMergeStatus: {
-                    name: "GetPullRequestMergeStatus",
                     I: e7e,
                     O: n7e,
                     kind: Qe.Unary
                 },
+                getPullRequestMergeStatus: {
+                    name: "GetPullRequestMergeStatus",
+                    I: a7e,
+                    O: l7e,
+                    kind: Qe.Unary
+                },
                 getDetailedPullRequestStatus: {
                     name: "GetDetailedPullRequestStatus",
-                    I: s7e,
-                    O: m7e,
+                    I: m7e,
+                    O: _7e,
                     kind: Qe.Unary
                 },
                 checkPullRequestMergeability: {
                     name: "CheckPullRequestMergeability",
-                    I: _7e,
-                    O: w7e,
+                    I: S7e,
+                    O: E7e,
                     kind: Qe.Unary
                 },
                 getPullRequestDiscussions: {
                     name: "GetPullRequestDiscussions",
-                    I: I7e,
-                    O: L7e,
+                    I: x7e,
+                    O: D7e,
                     kind: Qe.Unary
                 },
                 getPullRequestCommits: {
                     name: "GetPullRequestCommits",
-                    I: C7e,
-                    O: x7e,
+                    I: U7e,
+                    O: G7e,
                     kind: Qe.Unary
                 },
                 getPullRequestTimelineEvents: {
                     name: "GetPullRequestTimelineEvents",
-                    I: D7e,
-                    O: U7e,
+                    I: V7e,
+                    O: K7e,
                     kind: Qe.Unary
                 },
                 replyToReviewThread: {
                     name: "ReplyToReviewThread",
-                    I: K7e,
-                    O: z7e,
+                    I: $7e,
+                    O: eet,
                     kind: Qe.Unary
                 },
                 resolveReviewThread: {
                     name: "ResolveReviewThread",
-                    I: X7e,
-                    O: $7e,
+                    I: net,
+                    O: set,
                     kind: Qe.Unary
                 },
                 unresolveReviewThread: {
                     name: "UnresolveReviewThread",
-                    I: eet,
-                    O: net,
+                    I: aet,
+                    O: uet,
                     kind: Qe.Unary
                 },
                 deletePullRequestReviewComment: {
                     name: "DeletePullRequestReviewComment",
-                    I: set,
-                    O: aet,
+                    I: cet,
+                    O: fet,
                     kind: Qe.Unary
                 },
                 addPullRequestReviewComment: {
                     name: "AddPullRequestReviewComment",
-                    I: uet,
-                    O: cet,
+                    I: Tet,
+                    O: get,
                     kind: Qe.Unary
                 },
                 mergePullRequest: {
                     name: "MergePullRequest",
-                    I: fet,
-                    O: Tet,
+                    I: het,
+                    O: ket,
                     kind: Qe.Unary
                 },
                 enablePullRequestAutoMerge: {
                     name: "EnablePullRequestAutoMerge",
-                    I: get,
-                    O: het,
+                    I: Eet,
+                    O: Net,
                     kind: Qe.Unary
                 },
                 disablePullRequestAutoMerge: {
                     name: "DisablePullRequestAutoMerge",
-                    I: ket,
-                    O: Eet,
-                    kind: Qe.Unary
-                },
-                convertPullRequestFromDraft: {
-                    name: "ConvertPullRequestFromDraft",
-                    I: $et,
-                    O: ett,
-                    kind: Qe.Unary
-                },
-                updatePullRequestBranch: {
-                    name: "UpdatePullRequestBranch",
-                    I: ntt,
-                    O: stt,
-                    kind: Qe.Unary
-                },
-                registerPushNotificationToken: {
-                    name: "RegisterPushNotificationToken",
                     I: qet,
                     O: Iet,
                     kind: Qe.Unary
                 },
+                convertPullRequestFromDraft: {
+                    name: "ConvertPullRequestFromDraft",
+                    I: stt,
+                    O: att,
+                    kind: Qe.Unary
+                },
+                updatePullRequestBranch: {
+                    name: "UpdatePullRequestBranch",
+                    I: ltt,
+                    O: mtt,
+                    kind: Qe.Unary
+                },
+                registerPushNotificationToken: {
+                    name: "RegisterPushNotificationToken",
+                    I: Cet,
+                    O: xet,
+                    kind: Qe.Unary
+                },
                 deletePushNotificationToken: {
                     name: "DeletePushNotificationToken",
-                    I: Let,
-                    O: Cet,
+                    I: Det,
+                    O: Uet,
                     kind: Qe.Unary
                 },
                 syncLiveActivity: {
                     name: "SyncLiveActivity",
-                    I: Uet,
-                    O: Get,
+                    I: Ket,
+                    O: zet,
                     kind: Qe.Unary
                 },
                 deleteLiveActivity: {
                     name: "DeleteLiveActivity",
-                    I: Vet,
-                    O: Ket,
+                    I: Xet,
+                    O: $et,
                     kind: Qe.Unary
                 },
                 verifyBackgroundComposerAccess: {
                     name: "VerifyBackgroundComposerAccess",
-                    I: zet,
-                    O: Xet,
+                    I: ett,
+                    O: ntt,
                     kind: Qe.Unary
                 },
                 startSlackStreamingForFollowup: {
                     name: "StartSlackStreamingForFollowup",
-                    I: o3e,
-                    O: u3e,
+                    I: f3e,
+                    O: T3e,
                     kind: Qe.Unary
                 },
                 startGithubStreamingForFollowup: {
                     name: "StartGithubStreamingForFollowup",
-                    I: c3e,
-                    O: f3e,
+                    I: g3e,
+                    O: h3e,
                     kind: Qe.Unary
                 },
                 startLinearStreamingForFollowup: {
                     name: "StartLinearStreamingForFollowup",
-                    I: T3e,
-                    O: g3e,
+                    I: k3e,
+                    O: J3e,
                     kind: Qe.Unary
                 },
                 getGithubInstallations: {
@@ -173017,155 +173135,155 @@
                 },
                 getBackgroundComposerVmUsage: {
                     name: "GetBackgroundComposerVmUsage",
-                    I: Gtt,
-                    O: Vtt,
-                    kind: Qe.Unary
-                },
-                listGrindModeComposers: {
-                    name: "ListGrindModeComposers",
                     I: ztt,
                     O: Xtt,
                     kind: Qe.Unary
                 },
+                listGrindModeComposers: {
+                    name: "ListGrindModeComposers",
+                    I: ent,
+                    O: nnt,
+                    kind: Qe.Unary
+                },
                 getCloudAgentDebugDetails: {
                     name: "GetCloudAgentDebugDetails",
-                    I: $tt,
-                    O: lnt,
+                    I: snt,
+                    O: pnt,
                     kind: Qe.Unary
                 },
                 getCloudAgentMemoryDbLogs: {
                     name: "GetCloudAgentMemoryDbLogs",
-                    I: mnt,
-                    O: dnt,
-                    kind: Qe.Unary
-                },
-                createAgentShare: {
-                    name: "CreateAgentShare",
                     I: _nt,
                     O: wnt,
                     kind: Qe.Unary
                 },
+                createAgentShare: {
+                    name: "CreateAgentShare",
+                    I: Snt,
+                    O: Ent,
+                    kind: Qe.Unary
+                },
                 getAgentSharePreview: {
                     name: "GetAgentSharePreview",
-                    I: ynt,
-                    O: Snt,
+                    I: Nnt,
+                    O: qnt,
                     kind: Qe.Unary
                 },
                 listPrivateWorkers: {
                     name: "ListPrivateWorkers",
-                    I: Ent,
-                    O: Nnt,
+                    I: Int,
+                    O: Lnt,
                     kind: Qe.Unary
                 },
                 listPendingPrivateWorkerRequests: {
                     name: "ListPendingPrivateWorkerRequests",
-                    I: qnt,
-                    O: Int,
+                    I: Cnt,
+                    O: xnt,
                     kind: Qe.Unary
                 },
                 getPrivateWorkersSummary: {
                     name: "GetPrivateWorkersSummary",
-                    I: Unt,
-                    O: Gnt,
+                    I: Knt,
+                    O: znt,
                     kind: Qe.Unary
                 },
                 getPrivateWorker: {
                     name: "GetPrivateWorker",
-                    I: Xnt,
-                    O: $nt,
+                    I: nrt,
+                    O: srt,
                     kind: Qe.Unary
                 },
                 releasePrivateWorker: {
                     name: "ReleasePrivateWorker",
-                    I: ert,
-                    O: nrt,
+                    I: art,
+                    O: lrt,
                     kind: Qe.Unary
                 },
                 batchRefreshPullRequestStatus: {
                     name: "BatchRefreshPullRequestStatus",
-                    I: srt,
-                    O: art,
+                    I: mrt,
+                    O: drt,
                     kind: Qe.Unary
                 },
                 listAgentStores: {
                     name: "ListAgentStores",
-                    I: frt,
-                    O: grt,
-                    kind: Qe.Unary
-                },
-                listAgentStoreEntries: {
-                    name: "ListAgentStoreEntries",
                     I: hrt,
                     O: Jrt,
                     kind: Qe.Unary
                 },
+                listAgentStoreEntries: {
+                    name: "ListAgentStoreEntries",
+                    I: vrt,
+                    O: Prt,
+                    kind: Qe.Unary
+                },
                 readAgentStoreFile: {
                     name: "ReadAgentStoreFile",
-                    I: vrt,
-                    O: Brt,
+                    I: Rrt,
+                    O: Frt,
                     kind: Qe.Unary
                 },
                 mintAgentStoreToken: {
                     name: "MintAgentStoreToken",
-                    I: Prt,
-                    O: Rrt,
-                    kind: Qe.Unary
-                },
-                listAgentStoreFiles: {
-                    name: "ListAgentStoreFiles",
                     I: Art,
                     O: Ort,
                     kind: Qe.Unary
                 },
-                presignAgentStoreReads: {
-                    name: "PresignAgentStoreReads",
+                listAgentStoreFiles: {
+                    name: "ListAgentStoreFiles",
                     I: Mrt,
                     O: Yrt,
                     kind: Qe.Unary
                 },
-                presignAgentStoreWrites: {
-                    name: "PresignAgentStoreWrites",
-                    I: jrt,
-                    O: Qrt,
+                presignAgentStoreReads: {
+                    name: "PresignAgentStoreReads",
+                    I: Wrt,
+                    O: jrt,
                     kind: Qe.Unary
                 },
-                shareAgentStore: {
-                    name: "ShareAgentStore",
+                presignAgentStoreWrites: {
+                    name: "PresignAgentStoreWrites",
                     I: tst,
                     O: rst,
                     kind: Qe.Unary
                 },
+                shareAgentStore: {
+                    name: "ShareAgentStore",
+                    I: ost,
+                    O: ust,
+                    kind: Qe.Unary
+                },
                 unshareAgentStore: {
                     name: "UnshareAgentStore",
-                    I: ist,
-                    O: ost,
+                    I: cst,
+                    O: fst,
                     kind: Qe.Unary
                 },
                 listSharedAgentStores: {
                     name: "ListSharedAgentStores",
-                    I: ust,
-                    O: fst,
+                    I: Tst,
+                    O: hst,
                     kind: Qe.Unary
                 }
             }
         },
-        hst = require("vscode");
+        vst = require("vscode");
 
-    function yst(e) {
+    function Nst(e) {
         return `connectionToken:${e}`
     }
-    const kst = 3e4,
-        Sst = 864e5;
-    async function Jst(e, t, n, r, s, i) {
-        await e.secrets.store(yst(t), JSON.stringify({
+    const Bst = 3e4,
+        qst = 864e5;
+    async function Pst(e, t, n, r, s, i) {
+        await e.secrets.store(Nst(t), JSON.stringify({
             connectionToken: n,
             commit: r,
             cursorServerUrl: s,
             cursorServerUrlFetchedAtMs: i
         }))
     }
-    async function Est(e, t) {
-        const n = await e.secrets.get(yst(t));
+    async function Ist(e, t) {
+        const n = await e.secrets.get(Nst(t));
         if (n) try {
             const e = JSON.parse(n);
             return "string" == typeof e.connectionToken && "string" == typeof e.commit ? {
@@ -173178,30 +173296,30 @@
             return
         }
     }
-    const vst = new Map;
+    const Rst = new Map;
 
-    function Nst(e, t) {
-        const n = (vst.get(e) ?? Promise.resolve()).then(t, t);
-        return vst.set(e, n), n.catch(() => {}).finally(() => {
-            vst.get(e) === n && vst.delete(e)
+    function Lst(e, t) {
+        const n = (Rst.get(e) ?? Promise.resolve()).then(t, t);
+        return Rst.set(e, n), n.catch(() => {}).finally(() => {
+            Rst.get(e) === n && Rst.delete(e)
         }), n
     }
-    async function Bst(e, t, n) {
-        const r = await Est(e, t);
+    async function Fst(e, t, n) {
+        const r = await Ist(e, t);
         if (r && r.commit === n) return r;
         const s = globalThis.crypto.randomUUID();
-        return await Jst(e, t, s, n), {
+        return await Pst(e, t, s, n), {
             connectionToken: s,
             commit: n
         }
     }
 
-    function qst(e) {
-        const t = hst.window.createOutputChannel("Cursor Resolver Helper");
+    function Cst(e) {
+        const t = vst.window.createOutputChannel("Cursor Resolver Helper");
         e.subscriptions.push(t);
         const n = "undefined" != typeof process && !!process.versions?.node;
         t.appendLine(`[cursor-resolver-helper] Running in ${n?"Node.js":"web-worker"} extension host`);
-        const r = (o = wst, p = hst.cursor.connectTransport, function(e, t) {
+        const r = (o = Est, p = vst.cursor.connectTransport, function(e, t) {
                 const n = {};
                 for (const [r, s] of Object.entries(e.methods)) {
                     const i = t(Object.assign(Object.assign({}, s), {
@@ -173269,13 +173387,13 @@
             })),
             i = {
                 getOrCreateConnectionToken: (t, n) => function(e, t, n) {
-                    return Nst(t, () => Bst(e, t, n))
+                    return Lst(t, () => Fst(e, t, n))
                 }(e, t, n),
                 getOrCreateCursorServerUrl: (t, n, s) => function(e, t, n, r, s = !0) {
-                    return Nst(n, async () => {
-                        const i = await Bst(e, n, r);
+                    return Lst(n, async () => {
+                        const i = await Fst(e, n, r);
                         if (s && function(e) {
-                                return void 0 !== e.cursorServerUrl && "number" == typeof e.cursorServerUrlFetchedAtMs && Date.now() - e.cursorServerUrlFetchedAtMs < Sst
+                                return void 0 !== e.cursorServerUrl && "number" == typeof e.cursorServerUrlFetchedAtMs && Date.now() - e.cursorServerUrlFetchedAtMs < qst
                             }(i)) return i.cursorServerUrl;
                         const a = performance.now();
                         let o = !1;
@@ -173286,12 +173404,12 @@
                                         commit: r,
                                         connectionToken: i.connectionToken
                                     }, {
-                                        timeoutMs: kst
+                                        timeoutMs: Bst
                                     });
                                     return o = !0, e
                                 } finally {
                                     try {
-                                        hst.cursor.metricsDistribution({
+                                        vst.cursor.metricsDistribution({
                                             stat: "background-composer.getCursorServerUrl",
                                             value: performance.now() - a,
                                             tags: {
@@ -173314,21 +173432,21 @@
                             },
                             m = Date.now();
                         return await async function(e, t, n, r) {
-                            const s = await Est(e, t);
-                            s && await Jst(e, t, s.connectionToken, s.commit, n, r)
+                            const s = await Ist(e, t);
+                            s && await Pst(e, t, s.connectionToken, s.commit, n, r)
                         }(e, n, u, m), u
                     })
                 }(e, r, t, n, s)
             };
         var o, p;
-        e.subscriptions.push(hst.cursor.registerConnectionTokenProvider(i)), t.appendLine("[cursor-resolver-helper] Registered connection token provider")
+        e.subscriptions.push(vst.cursor.registerConnectionTokenProvider(i)), t.appendLine("[cursor-resolver-helper] Registered connection token provider")
     }
 
-    function Pst() {}
-    var Ist = exports;
-    for (var Rst in r) Ist[Rst] = r[Rst];
-    r.__esModule && Object.defineProperty(Ist, "__esModule", {
+    function Ast() {}
+    var xst = exports;
+    for (var Ost in r) xst[Ost] = r[Ost];
+    r.__esModule && Object.defineProperty(xst, "__esModule", {
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/7cf19b7482706625cdb70db3211b7dd035b7aa30/extensions/cursor-resolver-helper/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/cf80f4b937f3b9c48070d7085129a838ce7876a0/extensions/cursor-resolver-helper/dist/main.js.map

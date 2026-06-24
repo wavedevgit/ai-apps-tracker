@@ -243993,280 +243993,280 @@
                 81589: (e, t, n) => {
                     "use strict";
                     n.d(t, {
-                        FFs: () => mo,
-                        FE5: () => ho,
-                        _hm: () => xl,
-                        IWb: () => Rl,
-                        MxJ: () => Au,
-                        wj9: () => zr,
-                        CYG: () => Vr,
-                        UlU: () => Xc,
-                        sR0: () => eu,
-                        ok9: () => xs,
-                        uZB: () => Rs,
-                        QkZ: () => yr,
-                        QWd: () => wr,
-                        R3$: () => Ms,
-                        RkD: () => Ps,
+                        FFs: () => fo,
+                        FE5: () => go,
+                        _hm: () => Nl,
+                        IWb: () => Ml,
+                        MxJ: () => wu,
+                        wj9: () => $r,
+                        CYG: () => Kr,
+                        UlU: () => tu,
+                        sR0: () => nu,
+                        ok9: () => Ns,
+                        uZB: () => Ms,
+                        QkZ: () => vr,
+                        QWd: () => Er,
+                        R3$: () => Ds,
+                        RkD: () => Fs,
                         _bo: () => $t,
-                        FCY: () => Kc,
-                        B9R: () => Zc,
-                        W0U: () => Tr,
-                        Ql7: () => kr,
-                        kz7: () => al,
-                        IRR: () => ll,
-                        HAL: () => ui,
-                        xKX: () => di,
-                        MjE: () => Kl,
-                        Wmt: () => Zl,
-                        I2o: () => xc,
-                        S93: () => Rc,
-                        vSW: () => hr,
-                        BE6: () => fr,
-                        JHC: () => Er,
-                        bJ8: () => _r,
-                        jNw: () => $r,
-                        vCd: () => Kr,
-                        ccq: () => Wl,
-                        car: () => zl,
-                        AIj: () => _o,
-                        o6Z: () => To,
-                        _lu: () => Ei,
-                        Cvk: () => _i,
-                        uG2: () => Sl,
-                        Wq8: () => Bl,
-                        dbI: () => Ul,
-                        bt2: () => ql,
-                        LtT: () => Ki,
-                        JHS: () => Zi,
-                        LIf: () => Fl,
-                        JmB: () => Ll,
-                        uor: () => Pl,
-                        eep: () => Dl,
-                        STY: () => pa,
-                        IUx: () => ma,
-                        qtI: () => Nc,
-                        Y6D: () => Mc,
-                        tnE: () => Ia,
-                        fPH: () => ba,
-                        QN3: () => Ta,
-                        m_2: () => ka,
-                        fob: () => Lr,
-                        Fw9: () => Or,
-                        JTH: () => ii,
-                        rVE: () => ai,
-                        n93: () => Qr,
-                        Vzb: () => Ur,
-                        RH3: () => qi,
-                        j7u: () => Gi,
-                        Y_J: () => Fo,
-                        C1Z: () => Ho,
-                        t19: () => ga,
-                        lym: () => Aa,
-                        ETN: () => ya,
-                        YrB: () => wa,
-                        mSm: () => li,
-                        ayY: () => ci,
-                        M4E: () => zo,
-                        s83: () => Vo,
-                        iHR: () => Ir,
-                        K1R: () => br,
-                        RT7: () => Mr,
-                        zxZ: () => Pr,
-                        SUj: () => uo,
-                        M9t: () => po,
-                        LNj: () => Lo,
-                        plY: () => Wo,
-                        knx: () => za,
-                        c3R: () => Va,
-                        aw2: () => gc,
-                        usA: () => Ac,
-                        Wt4: () => Xs,
-                        KVC: () => eo,
-                        jC6: () => Ec,
-                        b$5: () => bc,
-                        CkI: () => Cc,
-                        wbS: () => Sc,
-                        OUA: () => es,
-                        Q9S: () => ts,
-                        G6j: () => tl,
-                        kT7: () => sl,
-                        rhe: () => Vi,
-                        RVb: () => $i,
-                        xY2: () => gi,
-                        llv: () => Ai,
-                        pgg: () => Mi,
-                        $KW: () => Pi,
-                        IlY: () => ti,
-                        ERi: () => ni,
-                        Ww7: () => $s,
-                        OCy: () => Zs,
-                        BIY: () => $o,
-                        zWh: () => ei,
-                        WMw: () => or,
-                        WGk: () => ir,
-                        Hsh: () => hi,
-                        tIW: () => fi,
-                        p4E: () => Wc,
-                        Jnn: () => zc,
-                        WcO: () => qc,
-                        EpF: () => Gc,
-                        dBV: () => Oa,
-                        lcJ: () => Qa,
-                        W$u: () => gl,
-                        KtS: () => Al,
-                        VDi: () => hl,
-                        Lh4: () => fl,
-                        O9v: () => Xa,
-                        Kjz: () => el,
-                        EtC: () => yl,
-                        kNC: () => wl,
-                        wfJ: () => $a,
-                        Y11: () => Ka,
-                        zoE: () => ha,
-                        lEW: () => fa,
-                        uHz: () => su,
-                        i1u: () => iu,
-                        JN6: () => pu,
-                        NS0: () => mu,
-                        vzr: () => tu,
-                        xLc: () => ru,
-                        bGX: () => va,
-                        dKy: () => _a,
-                        G4v: () => xr,
-                        e4W: () => Nr,
-                        mOw: () => Cr,
-                        Af5: () => Br,
-                        D3X: () => cs,
-                        Lgg: () => ws,
-                        tUz: () => jr,
-                        VF_: () => Yr,
-                        Cwe: () => xi,
-                        A$2: () => Ni,
-                        Kl: () => wc,
-                        Ekb: () => vc,
-                        oQP: () => Ao,
-                        c_Y: () => wo,
-                        eUR: () => Fc,
-                        uuM: () => Lc,
-                        eol: () => yi,
-                        g53: () => vi,
-                        eQJ: () => Pc,
-                        Kqy: () => Dc,
-                        T_4: () => oa,
-                        XVt: () => aa,
-                        WQW: () => bu,
-                        opu: () => Su,
-                        s6$: () => Na,
-                        Eg9: () => Ma,
-                        d9E: () => Ci,
-                        rpb: () => Bi,
-                        cgv: () => si,
-                        W3_: () => oi,
-                        w17: () => os,
-                        eAP: () => is,
-                        FZx: () => la,
-                        t8V: () => ca,
-                        qfW: () => ua,
-                        WZT: () => da,
-                        XLg: () => So,
-                        NxT: () => Bo,
-                        Iu7: () => Nl,
-                        o0u: () => Ml,
-                        dyJ: () => cu,
-                        NjW: () => uu,
-                        emS: () => lr,
-                        Ckz: () => cr,
-                        WZ5: () => as,
-                        _3r: () => ls,
-                        O6D: () => Hr,
-                        aWc: () => Wr,
-                        FLZ: () => gr,
-                        x8R: () => Ar,
-                        xN6: () => fu,
-                        tKE: () => gu,
-                        WJM: () => wu,
-                        GLZ: () => vu,
-                        k4t: () => Ti,
-                        kAu: () => ki,
-                        g2F: () => Ii,
-                        _Js: () => bi,
-                        ujH: () => au,
-                        EmT: () => lu,
-                        nSy: () => Ca,
-                        TV9: () => Sa,
-                        iqf: () => pr,
-                        a6F: () => mr,
-                        nL3: () => Ql,
-                        pXc: () => Jl,
-                        EJE: () => Vc,
-                        sRE: () => $c,
-                        M_M: () => ur,
-                        SNB: () => dr,
-                        wP9: () => ko,
-                        E$E: () => Io,
-                        Paz: () => _l,
-                        RS3: () => Tl,
-                        eVU: () => Bu,
-                        ACY: () => xu,
-                        DuM: () => Li,
-                        brK: () => Oi,
-                        fTZ: () => Di,
-                        LKF: () => Fi,
-                        YJS: () => kl,
-                        I10: () => Il,
-                        Vbg: () => Xi,
-                        d29: () => ea,
-                        Htf: () => Zr,
-                        NbP: () => Xr,
-                        dzi: () => pi,
-                        jFM: () => mi,
-                        Q6X: () => ta,
-                        Mgd: () => na,
-                        FTX: () => _u,
-                        fpi: () => Tu,
-                        Bs6: () => Pa,
-                        p$w: () => Da,
-                        jnd: () => ra,
-                        Dkj: () => sa,
-                        IU4: () => bs,
-                        Uc$: () => Bs,
-                        Mng: () => No,
-                        WO7: () => Mo,
-                        Onu: () => Po,
-                        ej_: () => Do,
-                        d$o: () => xo,
-                        Dtj: () => Ro,
-                        etb: () => Ba,
-                        qho: () => xa,
-                        D23: () => Ds,
-                        HNK: () => Qs,
-                        jeP: () => fo,
-                        $5K: () => go,
-                        $te: () => bo,
-                        pxd: () => Co,
-                        _ps: () => Yl,
-                        Kft: () => Hl,
-                        f6P: () => bl,
-                        Vcn: () => Cl,
-                        Ogi: () => ku,
-                        Qvs: () => Iu,
-                        WdU: () => Fa,
-                        _hK: () => La,
-                        aSW: () => rr,
-                        yMG: () => sr,
-                        rtk: () => Ha,
-                        B70: () => Wa,
-                        Sgj: () => vo,
-                        k$2: () => Eo,
-                        RU: () => Xl,
-                        NNE: () => ec,
-                        BUE: () => Vl,
-                        LIp: () => $l,
-                        SX: () => rs,
-                        I63: () => ss,
-                        yu$: () => Dr,
-                        Mfv: () => Fr
+                        FCY: () => Xc,
+                        B9R: () => eu,
+                        W0U: () => Ir,
+                        Ql7: () => br,
+                        kz7: () => cl,
+                        IRR: () => ul,
+                        HAL: () => pi,
+                        xKX: () => mi,
+                        MjE: () => Xl,
+                        Wmt: () => ec,
+                        I2o: () => Nc,
+                        S93: () => Mc,
+                        vSW: () => gr,
+                        BE6: () => Ar,
+                        JHC: () => Tr,
+                        bJ8: () => kr,
+                        jNw: () => Zr,
+                        vCd: () => Xr,
+                        ccq: () => Vl,
+                        car: () => $l,
+                        AIj: () => ko,
+                        o6Z: () => Io,
+                        _lu: () => Ti,
+                        Cvk: () => ki,
+                        uG2: () => xl,
+                        Wq8: () => Rl,
+                        dbI: () => Gl,
+                        bt2: () => jl,
+                        LtT: () => Xi,
+                        JHS: () => ea,
+                        LIf: () => Ol,
+                        JmB: () => Ql,
+                        uor: () => Fl,
+                        eep: () => Ll,
+                        STY: () => ha,
+                        IUx: () => fa,
+                        qtI: () => Pc,
+                        Y6D: () => Dc,
+                        tnE: () => Ca,
+                        fPH: () => Sa,
+                        QN3: () => Ia,
+                        m_2: () => ba,
+                        fob: () => Qr,
+                        Fw9: () => Jr,
+                        JTH: () => li,
+                        rVE: () => ci,
+                        n93: () => Ur,
+                        Vzb: () => Gr,
+                        RH3: () => ji,
+                        j7u: () => Yi,
+                        Y_J: () => Oo,
+                        C1Z: () => zo,
+                        t19: () => ya,
+                        lym: () => wa,
+                        ETN: () => va,
+                        YrB: () => Ea,
+                        mSm: () => ui,
+                        ayY: () => di,
+                        M4E: () => $o,
+                        s83: () => Ko,
+                        iHR: () => Cr,
+                        K1R: () => Sr,
+                        RT7: () => Dr,
+                        zxZ: () => Fr,
+                        SUj: () => mo,
+                        M9t: () => ho,
+                        LNj: () => Qo,
+                        plY: () => Vo,
+                        knx: () => $a,
+                        c3R: () => Ka,
+                        aw2: () => yc,
+                        usA: () => wc,
+                        Wt4: () => to,
+                        KVC: () => no,
+                        jC6: () => Tc,
+                        b$5: () => Sc,
+                        CkI: () => Bc,
+                        wbS: () => xc,
+                        OUA: () => ns,
+                        Q9S: () => rs,
+                        G6j: () => rl,
+                        kT7: () => il,
+                        rhe: () => Ki,
+                        RVb: () => Zi,
+                        xY2: () => yi,
+                        llv: () => wi,
+                        pgg: () => Di,
+                        $KW: () => Fi,
+                        IlY: () => ri,
+                        ERi: () => si,
+                        Ww7: () => Zs,
+                        OCy: () => eo,
+                        BIY: () => Zo,
+                        zWh: () => ni,
+                        WMw: () => ar,
+                        WGk: () => lr,
+                        Hsh: () => gi,
+                        tIW: () => Ai,
+                        p4E: () => Vc,
+                        Jnn: () => $c,
+                        WcO: () => jc,
+                        EpF: () => Yc,
+                        dBV: () => Ja,
+                        lcJ: () => Ua,
+                        W$u: () => yl,
+                        KtS: () => wl,
+                        VDi: () => gl,
+                        Lh4: () => Al,
+                        O9v: () => tl,
+                        Kjz: () => nl,
+                        EtC: () => vl,
+                        kNC: () => El,
+                        wfJ: () => Za,
+                        Y11: () => Xa,
+                        zoE: () => ga,
+                        lEW: () => Aa,
+                        uHz: () => iu,
+                        i1u: () => lu,
+                        JN6: () => hu,
+                        NS0: () => fu,
+                        vzr: () => ru,
+                        xLc: () => ou,
+                        bGX: () => _a,
+                        dKy: () => ka,
+                        G4v: () => Nr,
+                        e4W: () => Pr,
+                        mOw: () => Br,
+                        Af5: () => Rr,
+                        D3X: () => ds,
+                        Lgg: () => Es,
+                        tUz: () => Hr,
+                        VF_: () => Wr,
+                        Cwe: () => Ni,
+                        A$2: () => Pi,
+                        Kl: () => Ec,
+                        Ekb: () => _c,
+                        oQP: () => wo,
+                        c_Y: () => Eo,
+                        eUR: () => Oc,
+                        uuM: () => Qc,
+                        eol: () => vi,
+                        g53: () => _i,
+                        eQJ: () => Fc,
+                        Kqy: () => Lc,
+                        T_4: () => aa,
+                        XVt: () => ca,
+                        WQW: () => Su,
+                        opu: () => xu,
+                        s6$: () => Pa,
+                        Eg9: () => Da,
+                        d9E: () => Bi,
+                        rpb: () => Ri,
+                        cgv: () => ii,
+                        W3_: () => ai,
+                        w17: () => as,
+                        eAP: () => ls,
+                        FZx: () => ua,
+                        t8V: () => da,
+                        qfW: () => pa,
+                        WZT: () => ma,
+                        XLg: () => xo,
+                        NxT: () => Ro,
+                        Iu7: () => Pl,
+                        o0u: () => Dl,
+                        dyJ: () => du,
+                        NjW: () => pu,
+                        emS: () => ur,
+                        Ckz: () => dr,
+                        WZ5: () => cs,
+                        _3r: () => us,
+                        O6D: () => zr,
+                        aWc: () => Vr,
+                        FLZ: () => yr,
+                        x8R: () => wr,
+                        xN6: () => Au,
+                        tKE: () => yu,
+                        WJM: () => Eu,
+                        GLZ: () => _u,
+                        k4t: () => Ii,
+                        kAu: () => bi,
+                        g2F: () => Ci,
+                        _Js: () => Si,
+                        ujH: () => cu,
+                        EmT: () => uu,
+                        nSy: () => Ba,
+                        TV9: () => xa,
+                        iqf: () => hr,
+                        a6F: () => fr,
+                        nL3: () => Ul,
+                        pXc: () => ql,
+                        EJE: () => Kc,
+                        sRE: () => Zc,
+                        M_M: () => pr,
+                        SNB: () => mr,
+                        wP9: () => bo,
+                        E$E: () => Co,
+                        Paz: () => kl,
+                        RS3: () => Il,
+                        eVU: () => Ru,
+                        ACY: () => Nu,
+                        DuM: () => Qi,
+                        brK: () => Ji,
+                        fTZ: () => Li,
+                        LKF: () => Oi,
+                        YJS: () => bl,
+                        I10: () => Cl,
+                        Vbg: () => ta,
+                        d29: () => na,
+                        Htf: () => es,
+                        NbP: () => ts,
+                        dzi: () => hi,
+                        jFM: () => fi,
+                        Q6X: () => ra,
+                        Mgd: () => sa,
+                        FTX: () => ku,
+                        fpi: () => Iu,
+                        Bs6: () => Fa,
+                        p$w: () => La,
+                        jnd: () => oa,
+                        Dkj: () => ia,
+                        IU4: () => Ss,
+                        Uc$: () => Rs,
+                        Mng: () => Po,
+                        WO7: () => Do,
+                        Onu: () => Fo,
+                        ej_: () => Lo,
+                        d$o: () => No,
+                        Dtj: () => Mo,
+                        etb: () => Ra,
+                        qho: () => Na,
+                        D23: () => Ls,
+                        HNK: () => Us,
+                        jeP: () => Ao,
+                        $5K: () => yo,
+                        $te: () => So,
+                        pxd: () => Bo,
+                        _ps: () => Wl,
+                        Kft: () => zl,
+                        f6P: () => Sl,
+                        Vcn: () => Bl,
+                        Ogi: () => bu,
+                        Qvs: () => Cu,
+                        WdU: () => Oa,
+                        _hK: () => Qa,
+                        aSW: () => or,
+                        yMG: () => ir,
+                        rtk: () => za,
+                        B70: () => Va,
+                        Sgj: () => _o,
+                        k$2: () => To,
+                        RU: () => tc,
+                        NNE: () => nc,
+                        BUE: () => Kl,
+                        LIp: () => Zl,
+                        SX: () => os,
+                        I63: () => is,
+                        yu$: () => Lr,
+                        Mfv: () => Or
                     });
                     var r, s, o, i, a, l, c, u, d, p, m, h, f, g, A, y = n(36038),
                         w = n(67918);
@@ -251864,7 +251864,7 @@
                         no: 1,
                         name: "files",
                         kind: "message",
-                        T: Vn,
+                        T: Kn,
                         repeated: !0
                     }, {
                         no: 2,
@@ -251908,7 +251908,7 @@
                         no: 1,
                         name: "files",
                         kind: "message",
-                        T: Vn,
+                        T: Kn,
                         repeated: !0
                     }, {
                         no: 2,
@@ -251949,6 +251949,97 @@
                         repeated: !0
                     }]);
                     class Vn extends y.Message {
+                        repoUrl = "";
+                        branchName = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.SCMBranchRef";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "repo_url",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 2,
+                            name: "branch_name",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Vn).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Vn).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Vn).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Vn, e, t)
+                        }
+                    }
+                    y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
+                        no: 1,
+                        name: "branches",
+                        kind: "message",
+                        T: Vn,
+                        repeated: !0
+                    }, {
+                        no: 2,
+                        name: "skip_cache",
+                        kind: "scalar",
+                        T: 8,
+                        opt: !0
+                    }]);
+                    class $n extends y.Message {
+                        repoUrl = "";
+                        branchName = "";
+                        prUrls = [];
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.SCMBranchPullRequests";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "repo_url",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 2,
+                            name: "branch_name",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 3,
+                            name: "pr_urls",
+                            kind: "scalar",
+                            T: 9,
+                            repeated: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new $n).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new $n).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new $n).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals($n, e, t)
+                        }
+                    }
+                    y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
+                        no: 1,
+                        name: "results",
+                        kind: "message",
+                        T: $n,
+                        repeated: !0
+                    }]);
+                    class Kn extends y.Message {
                         filename = "";
                         previousFilename;
                         status = Yt.SCM_PULL_REQUEST_DIFF_FILE_STATUS_UNSPECIFIED;
@@ -252003,16 +252094,16 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Vn).fromBinary(e, t)
+                            return (new Kn).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Vn).fromJson(e, t)
+                            return (new Kn).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Vn).fromJsonString(e, t)
+                            return (new Kn).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Vn, e, t)
+                            return y.proto3.util.equals(Kn, e, t)
                         }
                     }
                     y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
@@ -252191,7 +252282,7 @@
                         kind: "scalar",
                         T: 8
                     }]);
-                    class $n extends y.Message {
+                    class Zn extends y.Message {
                         path = "";
                         owners = [];
                         constructor(e) {
@@ -252212,23 +252303,23 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new $n).fromBinary(e, t)
+                            return (new Zn).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new $n).fromJson(e, t)
+                            return (new Zn).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new $n).fromJsonString(e, t)
+                            return (new Zn).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals($n, e, t)
+                            return y.proto3.util.equals(Zn, e, t)
                         }
                     }
                     y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
                         no: 1,
                         name: "entries",
                         kind: "message",
-                        T: $n,
+                        T: Zn,
                         repeated: !0
                     }]), y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
                         no: 1,
@@ -252256,7 +252347,7 @@
                         kind: "scalar",
                         T: 9
                     }]);
-                    class Kn extends y.Message {
+                    class Xn extends y.Message {
                         creationTimestampMs = y.protoInt64.zero;
                         payload = {
                             case: void 0
@@ -252275,47 +252366,47 @@
                             no: 2,
                             name: "span_started",
                             kind: "message",
-                            T: Xn,
+                            T: tr,
                             oneof: "payload"
                         }, {
                             no: 3,
                             name: "span_ended",
                             kind: "message",
-                            T: er,
+                            T: nr,
                             oneof: "payload"
                         }, {
                             no: 4,
                             name: "user_action",
                             kind: "message",
-                            T: tr,
+                            T: rr,
                             oneof: "payload"
                         }, {
                             no: 5,
                             name: "turn_close",
                             kind: "message",
-                            T: nr,
+                            T: sr,
                             oneof: "payload"
                         }, {
                             no: 6,
                             name: "context_link",
                             kind: "message",
-                            T: Zn,
+                            T: er,
                             oneof: "payload"
                         }]);
                         static fromBinary(e, t) {
-                            return (new Kn).fromBinary(e, t)
+                            return (new Xn).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Kn).fromJson(e, t)
+                            return (new Xn).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Kn).fromJsonString(e, t)
+                            return (new Xn).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Kn, e, t)
+                            return y.proto3.util.equals(Xn, e, t)
                         }
                     }
-                    class Zn extends y.Message {
+                    class er extends y.Message {
                         name = "";
                         href = "";
                         constructor(e) {
@@ -252335,19 +252426,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Zn).fromBinary(e, t)
+                            return (new er).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Zn).fromJson(e, t)
+                            return (new er).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Zn).fromJsonString(e, t)
+                            return (new er).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Zn, e, t)
+                            return y.proto3.util.equals(er, e, t)
                         }
                     }
-                    class Xn extends y.Message {
+                    class tr extends y.Message {
                         spanId = "";
                         name = "";
                         parentSpanId;
@@ -252395,58 +252486,6 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Xn).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Xn).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Xn).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Xn, e, t)
-                        }
-                    }
-                    class er extends y.Message {
-                        spanId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.AgentStartupTraceEvent.SpanEnded";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "span_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new er).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new er).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new er).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(er, e, t)
-                        }
-                    }
-                    class tr extends y.Message {
-                        turnIndex = 0;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.AgentStartupTraceEvent.UserAction";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "turn_index",
-                            kind: "scalar",
-                            T: 13
-                        }]);
-                        static fromBinary(e, t) {
                             return (new tr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -252460,6 +252499,58 @@
                         }
                     }
                     class nr extends y.Message {
+                        spanId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.AgentStartupTraceEvent.SpanEnded";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "span_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new nr).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new nr).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new nr).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(nr, e, t)
+                        }
+                    }
+                    class rr extends y.Message {
+                        turnIndex = 0;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.AgentStartupTraceEvent.UserAction";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "turn_index",
+                            kind: "scalar",
+                            T: 13
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new rr).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new rr).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new rr).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(rr, e, t)
+                        }
+                    }
+                    class sr extends y.Message {
                             turnIndex = 0;
                             constructor(e) {
                                 super(), y.proto3.util.initPartial(e, this)
@@ -252473,16 +252564,16 @@
                                 T: 13
                             }]);
                             static fromBinary(e, t) {
-                                return (new nr).fromBinary(e, t)
+                                return (new sr).fromBinary(e, t)
                             }
                             static fromJson(e, t) {
-                                return (new nr).fromJson(e, t)
+                                return (new sr).fromJson(e, t)
                             }
                             static fromJsonString(e, t) {
-                                return (new nr).fromJsonString(e, t)
+                                return (new sr).fromJsonString(e, t)
                             }
                             static equals(e, t) {
-                                return y.proto3.util.equals(nr, e, t)
+                                return y.proto3.util.equals(sr, e, t)
                             }
                         }! function(e) {
                             e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.RUNNING = 1] = "RUNNING", e[e.FINISHED = 2] = "FINISHED", e[e.ERROR = 3] = "ERROR", e[e.CREATING = 4] = "CREATING", e[e.EXPIRED = 5] = "EXPIRED"
@@ -253156,7 +253247,7 @@
                             no: 6,
                             name: "REMOTE_CONTROL_REQUEST_REJECTION_REASON_WORKER_OFFLINE"
                         }]);
-                    class rr extends y.Message {
+                    class or extends y.Message {
                         bcId = "";
                         replace = !1;
                         constructor(e) {
@@ -253176,19 +253267,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new rr).fromBinary(e, t)
+                            return (new or).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new rr).fromJson(e, t)
+                            return (new or).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new rr).fromJsonString(e, t)
+                            return (new or).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(rr, e, t)
+                            return y.proto3.util.equals(or, e, t)
                         }
                     }
-                    class sr extends y.Message {
+                    class ir extends y.Message {
                         applied = 0;
                         removed = 0;
                         constructor(e) {
@@ -253208,19 +253299,19 @@
                             T: 13
                         }]);
                         static fromBinary(e, t) {
-                            return (new sr).fromBinary(e, t)
+                            return (new ir).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new sr).fromJson(e, t)
+                            return (new ir).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new sr).fromJsonString(e, t)
+                            return (new ir).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(sr, e, t)
+                            return y.proto3.util.equals(ir, e, t)
                         }
                     }
-                    class or extends y.Message {
+                    class ar extends y.Message {
                         bcId = "";
                         excludeBeforeAfterDiffs = !1;
                         committedOnly = !1;
@@ -253260,19 +253351,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new or).fromBinary(e, t)
+                            return (new ar).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new or).fromJson(e, t)
+                            return (new ar).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new or).fromJsonString(e, t)
+                            return (new ar).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(or, e, t)
+                            return y.proto3.util.equals(ar, e, t)
                         }
                     }
-                    class ir extends y.Message {
+                    class lr extends y.Message {
                         diff;
                         submoduleDiffs = [];
                         constructor(e) {
@@ -253289,23 +253380,23 @@
                             no: 2,
                             name: "submodule_diffs",
                             kind: "message",
-                            T: ar,
+                            T: cr,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ir).fromBinary(e, t)
+                            return (new lr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ir).fromJson(e, t)
+                            return (new lr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ir).fromJsonString(e, t)
+                            return (new lr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ir, e, t)
+                            return y.proto3.util.equals(lr, e, t)
                         }
                     }
-                    class ar extends y.Message {
+                    class cr extends y.Message {
                         relativePath = "";
                         diff;
                         errored = !1;
@@ -253331,52 +253422,6 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new ar).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new ar).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new ar).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(ar, e, t)
-                        }
-                    }
-                    class lr extends y.Message {
-                        bcId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.NotifyBackgroundComposerShownRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new lr).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new lr).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new lr).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(lr, e, t)
-                        }
-                    }
-                    class cr extends y.Message {
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.NotifyBackgroundComposerShownResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
-                        static fromBinary(e, t) {
                             return (new cr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -253390,6 +253435,52 @@
                         }
                     }
                     class ur extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.NotifyBackgroundComposerShownRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new ur).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new ur).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new ur).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(ur, e, t)
+                        }
+                    }
+                    class dr extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.NotifyBackgroundComposerShownResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new dr).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new dr).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new dr).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(dr, e, t)
+                        }
+                    }
+                    class pr extends y.Message {
                         bcId = "";
                         newName = "";
                         constructor(e) {
@@ -253409,58 +253500,6 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new ur).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new ur).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new ur).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(ur, e, t)
-                        }
-                    }
-                    class dr extends y.Message {
-                        name = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.RenameBackgroundComposerResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "name",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new dr).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new dr).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new dr).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(dr, e, t)
-                        }
-                    }
-                    class pr extends y.Message {
-                        bcId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.RefreshGithubAccessTokenInBackgroundComposerRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new pr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -253474,12 +253513,18 @@
                         }
                     }
                     class mr extends y.Message {
+                        name = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.RefreshGithubAccessTokenInBackgroundComposerResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
+                        static typeName = "aiserver.v1.RenameBackgroundComposerResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "name",
+                            kind: "scalar",
+                            T: 9
+                        }]);
                         static fromBinary(e, t) {
                             return (new mr).fromBinary(e, t)
                         }
@@ -253493,6 +253538,52 @@
                             return y.proto3.util.equals(mr, e, t)
                         }
                     }
+                    class hr extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.RefreshGithubAccessTokenInBackgroundComposerRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new hr).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new hr).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new hr).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(hr, e, t)
+                        }
+                    }
+                    class fr extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.RefreshGithubAccessTokenInBackgroundComposerResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new fr).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new fr).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new fr).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(fr, e, t)
+                        }
+                    }
                     y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
                         no: 1,
                         name: "text",
@@ -253504,7 +253595,7 @@
                         kind: "scalar",
                         T: 9
                     }]);
-                    class hr extends y.Message {
+                    class gr extends y.Message {
                         devcontainerStartingPoint;
                         includeSecrets = !1;
                         forceCluster;
@@ -253520,7 +253611,7 @@
                             no: 1,
                             name: "devcontainer_starting_point",
                             kind: "message",
-                            T: ks
+                            T: bs
                         }, {
                             no: 2,
                             name: "include_secrets",
@@ -253551,19 +253642,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new hr).fromBinary(e, t)
+                            return (new gr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new hr).fromJson(e, t)
+                            return (new gr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new hr).fromJsonString(e, t)
+                            return (new gr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(hr, e, t)
+                            return y.proto3.util.equals(gr, e, t)
                         }
                     }
-                    class fr extends y.Message {
+                    class Ar extends y.Message {
                         podId = "";
                         workspaceRootPath = "";
                         constructor(e) {
@@ -253583,52 +253674,6 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new fr).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new fr).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new fr).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(fr, e, t)
-                        }
-                    }
-                    class gr extends y.Message {
-                        startRequest;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.PreWarmPodRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "start_request",
-                            kind: "message",
-                            T: bs
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new gr).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new gr).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new gr).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(gr, e, t)
-                        }
-                    }
-                    class Ar extends y.Message {
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.PreWarmPodResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
-                        static fromBinary(e, t) {
                             return (new Ar).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -253642,6 +253687,52 @@
                         }
                     }
                     class yr extends y.Message {
+                        startRequest;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.PreWarmPodRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "start_request",
+                            kind: "message",
+                            T: Ss
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new yr).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new yr).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new yr).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(yr, e, t)
+                        }
+                    }
+                    class wr extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.PreWarmPodResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new wr).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new wr).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new wr).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(wr, e, t)
+                        }
+                    }
+                    class vr extends y.Message {
                         podId = "";
                         lastEventId;
                         constructor(e) {
@@ -253662,19 +253753,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new yr).fromBinary(e, t)
+                            return (new vr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new yr).fromJson(e, t)
+                            return (new vr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new yr).fromJsonString(e, t)
+                            return (new vr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(yr, e, t)
+                            return y.proto3.util.equals(vr, e, t)
                         }
                     }
-                    class wr extends y.Message {
+                    class Er extends y.Message {
                         event;
                         updatedStatus;
                         constructor(e) {
@@ -253686,7 +253777,7 @@
                             no: 1,
                             name: "event",
                             kind: "message",
-                            T: vr
+                            T: _r
                         }, {
                             no: 2,
                             name: "updated_status",
@@ -253694,19 +253785,19 @@
                             T: et
                         }]);
                         static fromBinary(e, t) {
-                            return (new wr).fromBinary(e, t)
+                            return (new Er).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new wr).fromJson(e, t)
+                            return (new Er).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new wr).fromJsonString(e, t)
+                            return (new Er).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(wr, e, t)
+                            return y.proto3.util.equals(Er, e, t)
                         }
                     }
-                    class vr extends y.Message {
+                    class _r extends y.Message {
                         eventId = "";
                         event;
                         constructor(e) {
@@ -253726,19 +253817,19 @@
                             T: P
                         }]);
                         static fromBinary(e, t) {
-                            return (new vr).fromBinary(e, t)
+                            return (new _r).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new vr).fromJson(e, t)
+                            return (new _r).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new vr).fromJsonString(e, t)
+                            return (new _r).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(vr, e, t)
+                            return y.proto3.util.equals(_r, e, t)
                         }
                     }
-                    class Er extends y.Message {
+                    class Tr extends y.Message {
                         podId = "";
                         visibility = xn.UNSPECIFIED;
                         bcId;
@@ -253765,19 +253856,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Er).fromBinary(e, t)
+                            return (new Tr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Er).fromJson(e, t)
+                            return (new Tr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Er).fromJsonString(e, t)
+                            return (new Tr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Er, e, t)
+                            return y.proto3.util.equals(Tr, e, t)
                         }
                     }
-                    class _r extends y.Message {
+                    class kr extends y.Message {
                         snapshotId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -253791,19 +253882,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new _r).fromBinary(e, t)
+                            return (new kr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new _r).fromJson(e, t)
+                            return (new kr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new _r).fromJsonString(e, t)
+                            return (new kr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(_r, e, t)
+                            return y.proto3.util.equals(kr, e, t)
                         }
                     }
-                    class Tr extends y.Message {
+                    class Ir extends y.Message {
                         snapshotId = "";
                         visibility = xn.UNSPECIFIED;
                         repoUrl = "";
@@ -253829,16 +253920,16 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Tr).fromBinary(e, t)
+                            return (new Ir).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Tr).fromJson(e, t)
+                            return (new Ir).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Tr).fromJsonString(e, t)
+                            return (new Ir).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Tr, e, t)
+                            return y.proto3.util.equals(Ir, e, t)
                         }
                     }! function(e) {
                         e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER = 1] = "USER", e[e.REPO_READ_WRITE = 2] = "REPO_READ_WRITE", e[e.PUBLIC = 4] = "PUBLIC", e[e.TEAM = 5] = "TEAM"
@@ -253858,7 +253949,7 @@
                         no: 5,
                         name: "VISIBILITY_TEAM"
                     }]);
-                    class kr extends y.Message {
+                    class br extends y.Message {
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
@@ -253866,19 +253957,19 @@
                         static typeName = "aiserver.v1.ChangeBackgroundComposerSnapshotVisibilityResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
-                            return (new kr).fromBinary(e, t)
+                            return (new br).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new kr).fromJson(e, t)
+                            return (new br).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new kr).fromJsonString(e, t)
+                            return (new br).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(kr, e, t)
+                            return y.proto3.util.equals(br, e, t)
                         }
                     }
-                    class Ir extends y.Message {
+                    class Cr extends y.Message {
                         snapshotId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -253892,19 +253983,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ir).fromBinary(e, t)
+                            return (new Cr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ir).fromJson(e, t)
+                            return (new Cr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ir).fromJsonString(e, t)
+                            return (new Cr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ir, e, t)
+                            return y.proto3.util.equals(Cr, e, t)
                         }
                     }
-                    class br extends y.Message {
+                    class Sr extends y.Message {
                         snapshotId = "";
                         visibility = xn.UNSPECIFIED;
                         repoUrl = "";
@@ -253936,19 +254027,19 @@
                             T: 1
                         }]);
                         static fromBinary(e, t) {
-                            return (new br).fromBinary(e, t)
+                            return (new Sr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new br).fromJson(e, t)
+                            return (new Sr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new br).fromJsonString(e, t)
+                            return (new Sr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(br, e, t)
+                            return y.proto3.util.equals(Sr, e, t)
                         }
                     }
-                    class Cr extends y.Message {
+                    class Br extends y.Message {
                         bcId = "";
                         usePrimary;
                         limit;
@@ -253976,19 +254067,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Cr).fromBinary(e, t)
+                            return (new Br).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Cr).fromJson(e, t)
+                            return (new Br).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Cr).fromJsonString(e, t)
+                            return (new Br).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Cr, e, t)
+                            return y.proto3.util.equals(Br, e, t)
                         }
                     }
-                    class Sr extends y.Message {
+                    class xr extends y.Message {
                         snapshotId = "";
                         visibility = xn.UNSPECIFIED;
                         createdAtMs = 0;
@@ -254014,19 +254105,19 @@
                             T: 1
                         }]);
                         static fromBinary(e, t) {
-                            return (new Sr).fromBinary(e, t)
+                            return (new xr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Sr).fromJson(e, t)
+                            return (new xr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Sr).fromJsonString(e, t)
+                            return (new xr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Sr, e, t)
+                            return y.proto3.util.equals(xr, e, t)
                         }
                     }
-                    class Br extends y.Message {
+                    class Rr extends y.Message {
                         snapshots = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -254037,23 +254128,23 @@
                             no: 1,
                             name: "snapshots",
                             kind: "message",
-                            T: Sr,
+                            T: xr,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Br).fromBinary(e, t)
+                            return (new Rr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Br).fromJson(e, t)
+                            return (new Rr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Br).fromJsonString(e, t)
+                            return (new Rr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Br, e, t)
+                            return y.proto3.util.equals(Rr, e, t)
                         }
                     }
-                    class xr extends y.Message {
+                    class Nr extends y.Message {
                         bcIds = [];
                         usePrimary;
                         constructor(e) {
@@ -254075,19 +254166,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new xr).fromBinary(e, t)
+                            return (new Nr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new xr).fromJson(e, t)
+                            return (new Nr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new xr).fromJsonString(e, t)
+                            return (new Nr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(xr, e, t)
+                            return y.proto3.util.equals(Nr, e, t)
                         }
                     }
-                    class Rr extends y.Message {
+                    class Mr extends y.Message {
                         bcId = "";
                         snapshotId;
                         visibility;
@@ -254122,59 +254213,6 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Rr).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Rr).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Rr).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Rr, e, t)
-                        }
-                    }
-                    class Nr extends y.Message {
-                        snapshotStatuses = [];
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ListBackgroundComposerSnapshotStatusesByBcIdsResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "snapshot_statuses",
-                            kind: "message",
-                            T: Rr,
-                            repeated: !0
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Nr).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Nr).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Nr).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Nr, e, t)
-                        }
-                    }
-                    class Mr extends y.Message {
-                        snapshotId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerSnapshotStateRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "snapshot_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new Mr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -254188,30 +254226,18 @@
                         }
                     }
                     class Pr extends y.Message {
-                        snapshotId = "";
-                        state = A.UNSPECIFIED;
-                        errorMessage;
+                        snapshotStatuses = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerSnapshotStateResponse";
+                        static typeName = "aiserver.v1.ListBackgroundComposerSnapshotStatusesByBcIdsResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "snapshot_id",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 2,
-                            name: "state",
-                            kind: "enum",
-                            T: y.proto3.getEnumType(A)
-                        }, {
-                            no: 3,
-                            name: "error_message",
-                            kind: "scalar",
-                            T: 9,
-                            opt: !0
+                            name: "snapshot_statuses",
+                            kind: "message",
+                            T: Mr,
+                            repeated: !0
                         }]);
                         static fromBinary(e, t) {
                             return (new Pr).fromBinary(e, t)
@@ -254232,7 +254258,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.WatchBackgroundComposerSnapshotStateRequest";
+                        static typeName = "aiserver.v1.GetBackgroundComposerSnapshotStateRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "snapshot_id",
@@ -254260,7 +254286,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.WatchBackgroundComposerSnapshotStateResponse";
+                        static typeName = "aiserver.v1.GetBackgroundComposerSnapshotStateResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "snapshot_id",
@@ -254292,6 +254318,71 @@
                         }
                     }
                     class Lr extends y.Message {
+                        snapshotId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.WatchBackgroundComposerSnapshotStateRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "snapshot_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Lr).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Lr).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Lr).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Lr, e, t)
+                        }
+                    }
+                    class Or extends y.Message {
+                        snapshotId = "";
+                        state = A.UNSPECIFIED;
+                        errorMessage;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.WatchBackgroundComposerSnapshotStateResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "snapshot_id",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 2,
+                            name: "state",
+                            kind: "enum",
+                            T: y.proto3.getEnumType(A)
+                        }, {
+                            no: 3,
+                            name: "error_message",
+                            kind: "scalar",
+                            T: 9,
+                            opt: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Or).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Or).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Or).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Or, e, t)
+                        }
+                    }
+                    class Qr extends y.Message {
                         bcId = "";
                         branchName;
                         constructor(e) {
@@ -254312,19 +254403,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Lr).fromBinary(e, t)
+                            return (new Qr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Lr).fromJson(e, t)
+                            return (new Qr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Lr).fromJsonString(e, t)
+                            return (new Qr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Lr, e, t)
+                            return y.proto3.util.equals(Qr, e, t)
                         }
                     }
-                    class Or extends y.Message {
+                    class Jr extends y.Message {
                         hash = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -254338,19 +254429,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Or).fromBinary(e, t)
+                            return (new Jr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Or).fromJson(e, t)
+                            return (new Jr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Or).fromJsonString(e, t)
+                            return (new Jr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Or, e, t)
+                            return y.proto3.util.equals(Jr, e, t)
                         }
                     }
-                    class Qr extends y.Message {
+                    class Ur extends y.Message {
                         bcId = "";
                         branchName;
                         repoUrl;
@@ -254378,19 +254469,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Qr).fromBinary(e, t)
+                            return (new Ur).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Qr).fromJson(e, t)
+                            return (new Ur).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Qr).fromJsonString(e, t)
+                            return (new Ur).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Qr, e, t)
+                            return y.proto3.util.equals(Ur, e, t)
                         }
                     }
-                    class Jr extends y.Message {
+                    class qr extends y.Message {
                         path = "";
                         originalContent = "";
                         modifiedContent = "";
@@ -254441,19 +254532,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Jr).fromBinary(e, t)
+                            return (new qr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Jr).fromJson(e, t)
+                            return (new qr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Jr).fromJsonString(e, t)
+                            return (new qr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Jr, e, t)
+                            return y.proto3.util.equals(qr, e, t)
                         }
                     }
-                    class Ur extends y.Message {
+                    class Gr extends y.Message {
                         branchName = "";
                         baseBranch = "";
                         diffs = [];
@@ -254477,7 +254568,7 @@
                             no: 3,
                             name: "diffs",
                             kind: "message",
-                            T: Jr,
+                            T: qr,
                             repeated: !0
                         }, {
                             no: 4,
@@ -254487,19 +254578,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ur).fromBinary(e, t)
+                            return (new Gr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ur).fromJson(e, t)
+                            return (new Gr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ur).fromJsonString(e, t)
+                            return (new Gr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ur, e, t)
+                            return y.proto3.util.equals(Gr, e, t)
                         }
                     }
-                    class qr extends y.Message {
+                    class jr extends y.Message {
                         id = "";
                         ownerType = Kt.UNSPECIFIED;
                         constructor(e) {
@@ -254519,19 +254610,19 @@
                             T: y.proto3.getEnumType(Kt)
                         }]);
                         static fromBinary(e, t) {
-                            return (new qr).fromBinary(e, t)
+                            return (new jr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new qr).fromJson(e, t)
+                            return (new jr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new qr).fromJsonString(e, t)
+                            return (new jr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(qr, e, t)
+                            return y.proto3.util.equals(jr, e, t)
                         }
                     }
-                    class Gr extends y.Message {
+                    class Yr extends y.Message {
                         owners = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -254542,23 +254633,23 @@
                             no: 1,
                             name: "owners",
                             kind: "message",
-                            T: qr,
+                            T: jr,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Gr).fromBinary(e, t)
+                            return (new Yr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Gr).fromJson(e, t)
+                            return (new Yr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Gr).fromJsonString(e, t)
+                            return (new Yr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Gr, e, t)
+                            return y.proto3.util.equals(Yr, e, t)
                         }
                     }
-                    class jr extends y.Message {
+                    class Hr extends y.Message {
                         includeTeamWide = !1;
                         bcId;
                         n;
@@ -254612,7 +254703,7 @@
                             no: 7,
                             name: "owner_filter",
                             kind: "message",
-                            T: Gr,
+                            T: Yr,
                             opt: !0
                         }, {
                             no: 8,
@@ -254634,19 +254725,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new jr).fromBinary(e, t)
+                            return (new Hr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new jr).fromJson(e, t)
+                            return (new Hr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new jr).fromJsonString(e, t)
+                            return (new Hr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(jr, e, t)
+                            return y.proto3.util.equals(Hr, e, t)
                         }
                     }
-                    class Yr extends y.Message {
+                    class Wr extends y.Message {
                         composers = [];
                         participants = [];
                         constructor(e) {
@@ -254658,29 +254749,29 @@
                             no: 1,
                             name: "composers",
                             kind: "message",
-                            T: Qo,
+                            T: Uo,
                             repeated: !0
                         }, {
                             no: 2,
                             name: "participants",
                             kind: "message",
-                            T: ds,
+                            T: ms,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Yr).fromBinary(e, t)
+                            return (new Wr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Yr).fromJson(e, t)
+                            return (new Wr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Yr).fromJsonString(e, t)
+                            return (new Wr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Yr, e, t)
+                            return y.proto3.util.equals(Wr, e, t)
                         }
                     }
-                    class Hr extends y.Message {
+                    class zr extends y.Message {
                         bcId = "";
                         source = $t.UNSPECIFIED;
                         runId;
@@ -254707,19 +254798,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Hr).fromBinary(e, t)
+                            return (new zr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Hr).fromJson(e, t)
+                            return (new zr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Hr).fromJsonString(e, t)
+                            return (new zr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Hr, e, t)
+                            return y.proto3.util.equals(zr, e, t)
                         }
                     }
-                    class Wr extends y.Message {
+                    class Vr extends y.Message {
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
@@ -254727,19 +254818,19 @@
                         static typeName = "aiserver.v1.PauseBackgroundComposerResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
-                            return (new Wr).fromBinary(e, t)
+                            return (new Vr).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Wr).fromJson(e, t)
+                            return (new Vr).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Wr).fromJsonString(e, t)
+                            return (new Vr).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Wr, e, t)
+                            return y.proto3.util.equals(Vr, e, t)
                         }
                     }
-                    class zr extends y.Message {
+                    class $r extends y.Message {
                         bcId = "";
                         unarchive = !1;
                         onlyNotifyRunner = !1;
@@ -254778,58 +254869,6 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new zr).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new zr).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new zr).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(zr, e, t)
-                        }
-                    }
-                    class Vr extends y.Message {
-                        closedPullRequest = !1;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ArchiveBackgroundComposerResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "closed_pull_request",
-                            kind: "scalar",
-                            T: 8
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Vr).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Vr).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Vr).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Vr, e, t)
-                        }
-                    }
-                    class $r extends y.Message {
-                        bcId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.DeleteBackgroundComposerRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new $r).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -254843,12 +254882,18 @@
                         }
                     }
                     class Kr extends y.Message {
+                        closedPullRequest = !1;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.DeleteBackgroundComposerResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
+                        static typeName = "aiserver.v1.ArchiveBackgroundComposerResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "closed_pull_request",
+                            kind: "scalar",
+                            T: 8
+                        }]);
                         static fromBinary(e, t) {
                             return (new Kr).fromBinary(e, t)
                         }
@@ -254868,7 +254913,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ResumeBackgroundComposerRequest";
+                        static typeName = "aiserver.v1.DeleteBackgroundComposerRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "bc_id",
@@ -254893,7 +254938,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ResumeBackgroundComposerResponse";
+                        static typeName = "aiserver.v1.DeleteBackgroundComposerResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
                             return (new Xr).fromBinary(e, t)
@@ -254909,6 +254954,52 @@
                         }
                     }
                     class es extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.ResumeBackgroundComposerRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new es).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new es).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new es).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(es, e, t)
+                        }
+                    }
+                    class ts extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.ResumeBackgroundComposerResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new ts).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new ts).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new ts).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(ts, e, t)
+                        }
+                    }
+                    class ns extends y.Message {
                         bcId = "";
                         commit = "";
                         connectionToken;
@@ -254935,19 +255026,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new es).fromBinary(e, t)
+                            return (new ns).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new es).fromJson(e, t)
+                            return (new ns).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new es).fromJsonString(e, t)
+                            return (new ns).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(es, e, t)
+                            return y.proto3.util.equals(ns, e, t)
                         }
                     }
-                    class ts extends y.Message {
+                    class rs extends y.Message {
                         host = "";
                         port = 0;
                         connectionToken = "";
@@ -254976,23 +255067,23 @@
                             no: 4,
                             name: "headers",
                             kind: "message",
-                            T: ns,
+                            T: ss,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ts).fromBinary(e, t)
+                            return (new rs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ts).fromJson(e, t)
+                            return (new rs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ts).fromJsonString(e, t)
+                            return (new rs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ts, e, t)
+                            return y.proto3.util.equals(rs, e, t)
                         }
                     }
-                    class ns extends y.Message {
+                    class ss extends y.Message {
                         key = "";
                         value = "";
                         constructor(e) {
@@ -255012,19 +255103,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new ns).fromBinary(e, t)
+                            return (new ss).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ns).fromJson(e, t)
+                            return (new ss).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ns).fromJsonString(e, t)
+                            return (new ss).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ns, e, t)
+                            return y.proto3.util.equals(ss, e, t)
                         }
                     }
-                    class rs extends y.Message {
+                    class os extends y.Message {
                         bcId = "";
                         commit = "";
                         constructor(e) {
@@ -255044,19 +255135,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new rs).fromBinary(e, t)
+                            return (new os).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new rs).fromJson(e, t)
+                            return (new os).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new rs).fromJsonString(e, t)
+                            return (new os).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(rs, e, t)
+                            return y.proto3.util.equals(os, e, t)
                         }
                     }
-                    class ss extends y.Message {
+                    class is extends y.Message {
                         alreadyDownloaded = !1;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -255070,19 +255161,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new ss).fromBinary(e, t)
+                            return (new is).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ss).fromJson(e, t)
+                            return (new is).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ss).fromJsonString(e, t)
+                            return (new is).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ss, e, t)
+                            return y.proto3.util.equals(is, e, t)
                         }
                     }
-                    class os extends y.Message {
+                    class as extends y.Message {
                         bcId = "";
                         workflowId;
                         branchName;
@@ -255110,19 +255201,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new os).fromBinary(e, t)
+                            return (new as).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new os).fromJson(e, t)
+                            return (new as).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new os).fromJsonString(e, t)
+                            return (new as).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(os, e, t)
+                            return y.proto3.util.equals(as, e, t)
                         }
                     }
-                    class is extends y.Message {
+                    class ls extends y.Message {
                         prUrl = "";
                         branchName = "";
                         hasCommits = !1;
@@ -255162,19 +255253,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new is).fromBinary(e, t)
+                            return (new ls).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new is).fromJson(e, t)
+                            return (new ls).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new is).fromJsonString(e, t)
+                            return (new ls).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(is, e, t)
+                            return y.proto3.util.equals(ls, e, t)
                         }
                     }
-                    class as extends y.Message {
+                    class cs extends y.Message {
                         bcId = "";
                         title;
                         body;
@@ -255257,19 +255348,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new as).fromBinary(e, t)
+                            return (new cs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new as).fromJson(e, t)
+                            return (new cs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new as).fromJsonString(e, t)
+                            return (new cs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(as, e, t)
+                            return y.proto3.util.equals(cs, e, t)
                         }
                     }
-                    class ls extends y.Message {
+                    class us extends y.Message {
                         prUrl = "";
                         prNumber = 0;
                         branchName = "";
@@ -255314,19 +255405,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ls).fromBinary(e, t)
+                            return (new us).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ls).fromJson(e, t)
+                            return (new us).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ls).fromJsonString(e, t)
+                            return (new us).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ls, e, t)
+                            return y.proto3.util.equals(us, e, t)
                         }
                     }
-                    class cs extends y.Message {
+                    class ds extends y.Message {
                         n = 0;
                         includeTeamWide = !1;
                         bcId;
@@ -255388,7 +255479,7 @@
                             no: 8,
                             name: "owner_filter",
                             kind: "message",
-                            T: Gr,
+                            T: Yr,
                             opt: !0
                         }, {
                             no: 9,
@@ -255422,19 +255513,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new cs).fromBinary(e, t)
+                            return (new ds).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new cs).fromJson(e, t)
+                            return (new ds).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new cs).fromJsonString(e, t)
+                            return (new ds).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(cs, e, t)
+                            return y.proto3.util.equals(ds, e, t)
                         }
                     }
-                    class us extends y.Message {
+                    class ps extends y.Message {
                         bcId = "";
                         createdAtMs = 0;
                         updatedAtMs = 0;
@@ -255727,7 +255818,7 @@
                             no: 57,
                             name: "external_source_metadata",
                             kind: "message",
-                            T: ps,
+                            T: hs,
                             opt: !0
                         }, {
                             no: 58,
@@ -255757,7 +255848,7 @@
                             no: 61,
                             name: "cloud_subagent_parent",
                             kind: "message",
-                            T: hs,
+                            T: gs,
                             opt: !0
                         }, {
                             no: 62,
@@ -255775,7 +255866,7 @@
                             no: 64,
                             name: "private_workspace_identifier",
                             kind: "message",
-                            T: ms,
+                            T: fs,
                             opt: !0
                         }, {
                             no: 65,
@@ -255785,19 +255876,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new us).fromBinary(e, t)
+                            return (new ps).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new us).fromJson(e, t)
+                            return (new ps).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new us).fromJsonString(e, t)
+                            return (new ps).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(us, e, t)
+                            return y.proto3.util.equals(ps, e, t)
                         }
                     }
-                    class ds extends y.Message {
+                    class ms extends y.Message {
                         userId = 0;
                         displayName;
                         email;
@@ -255832,19 +255923,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ds).fromBinary(e, t)
+                            return (new ms).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ds).fromJson(e, t)
+                            return (new ms).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ds).fromJsonString(e, t)
+                            return (new ms).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ds, e, t)
+                            return y.proto3.util.equals(ms, e, t)
                         }
                     }
-                    class ps extends y.Message {
+                    class hs extends y.Message {
                         slack;
                         linear;
                         github;
@@ -255858,41 +255949,41 @@
                             no: 1,
                             name: "slack",
                             kind: "message",
-                            T: fs,
+                            T: As,
                             opt: !0
                         }, {
                             no: 2,
                             name: "linear",
                             kind: "message",
-                            T: gs,
+                            T: ys,
                             opt: !0
                         }, {
                             no: 3,
                             name: "github",
                             kind: "message",
-                            T: As,
+                            T: ws,
                             opt: !0
                         }, {
                             no: 4,
                             name: "gitlab",
                             kind: "message",
-                            T: ys,
+                            T: vs,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ps).fromBinary(e, t)
+                            return (new hs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ps).fromJson(e, t)
+                            return (new hs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ps).fromJsonString(e, t)
+                            return (new hs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ps, e, t)
+                            return y.proto3.util.equals(hs, e, t)
                         }
                     }
-                    class ms extends y.Message {
+                    class fs extends y.Message {
                         id = "";
                         uri = "";
                         constructor(e) {
@@ -255912,19 +256003,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new ms).fromBinary(e, t)
+                            return (new fs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ms).fromJson(e, t)
+                            return (new fs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ms).fromJsonString(e, t)
+                            return (new fs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ms, e, t)
+                            return y.proto3.util.equals(fs, e, t)
                         }
                     }
-                    class hs extends y.Message {
+                    class gs extends y.Message {
                         parentAgentId = "";
                         parentToolCallId = "";
                         parentAgentType = Xt.UNSPECIFIED;
@@ -255957,19 +256048,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new hs).fromBinary(e, t)
+                            return (new gs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new hs).fromJson(e, t)
+                            return (new gs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new hs).fromJsonString(e, t)
+                            return (new gs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(hs, e, t)
+                            return y.proto3.util.equals(gs, e, t)
                         }
                     }
-                    class fs extends y.Message {
+                    class As extends y.Message {
                         channelId;
                         channelName;
                         teamId;
@@ -256012,19 +256103,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new fs).fromBinary(e, t)
+                            return (new As).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new fs).fromJson(e, t)
+                            return (new As).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new fs).fromJsonString(e, t)
+                            return (new As).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(fs, e, t)
+                            return y.proto3.util.equals(As, e, t)
                         }
                     }
-                    class gs extends y.Message {
+                    class ys extends y.Message {
                         issueId;
                         orgId;
                         issueIdentifier;
@@ -256060,19 +256151,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new gs).fromBinary(e, t)
+                            return (new ys).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new gs).fromJson(e, t)
+                            return (new ys).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new gs).fromJsonString(e, t)
+                            return (new ys).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(gs, e, t)
+                            return y.proto3.util.equals(ys, e, t)
                         }
                     }
-                    class As extends y.Message {
+                    class ws extends y.Message {
                         issueId;
                         prNumber;
                         prTitle;
@@ -256115,19 +256206,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new As).fromBinary(e, t)
+                            return (new ws).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new As).fromJson(e, t)
+                            return (new ws).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new As).fromJsonString(e, t)
+                            return (new ws).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(As, e, t)
+                            return y.proto3.util.equals(ws, e, t)
                         }
                     }
-                    class ys extends y.Message {
+                    class vs extends y.Message {
                         mrIid;
                         mrTitle;
                         mrWebUrl;
@@ -256156,19 +256247,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ys).fromBinary(e, t)
+                            return (new vs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ys).fromJson(e, t)
+                            return (new vs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ys).fromJsonString(e, t)
+                            return (new vs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ys, e, t)
+                            return y.proto3.util.equals(vs, e, t)
                         }
                     }
-                    class ws extends y.Message {
+                    class Es extends y.Message {
                         composers = [];
                         didLoadStatus = !1;
                         hasMore = !1;
@@ -256183,7 +256274,7 @@
                             no: 1,
                             name: "composers",
                             kind: "message",
-                            T: us,
+                            T: ps,
                             repeated: !0
                         }, {
                             no: 2,
@@ -256205,23 +256296,23 @@
                             no: 5,
                             name: "participants",
                             kind: "message",
-                            T: ds,
+                            T: ms,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ws).fromBinary(e, t)
+                            return (new Es).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ws).fromJson(e, t)
+                            return (new Es).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ws).fromJsonString(e, t)
+                            return (new Es).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ws, e, t)
+                            return y.proto3.util.equals(Es, e, t)
                         }
                     }
-                    class vs extends y.Message {
+                    class _s extends y.Message {
                         repoUrl = "";
                         scmRepoNodeId = "";
                         gitEnterpriseUuid;
@@ -256248,19 +256339,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new vs).fromBinary(e, t)
+                            return (new _s).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new vs).fromJson(e, t)
+                            return (new _s).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new vs).fromJsonString(e, t)
+                            return (new _s).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(vs, e, t)
+                            return y.proto3.util.equals(_s, e, t)
                         }
                     }
-                    class Es extends y.Message {
+                    class Ts extends y.Message {
                         repoUrl = "";
                         path = "";
                         constructor(e) {
@@ -256280,19 +256371,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Es).fromBinary(e, t)
+                            return (new Ts).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Es).fromJson(e, t)
+                            return (new Ts).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Es).fromJsonString(e, t)
+                            return (new Ts).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Es, e, t)
+                            return y.proto3.util.equals(Ts, e, t)
                         }
                     }
-                    class _s extends y.Message {
+                    class ks extends y.Message {
                         repos = [];
                         environmentJsonLocation;
                         constructor(e) {
@@ -256304,29 +256395,29 @@
                             no: 1,
                             name: "repos",
                             kind: "message",
-                            T: vs,
+                            T: _s,
                             repeated: !0
                         }, {
                             no: 2,
                             name: "environment_json_location",
                             kind: "message",
-                            T: Es,
+                            T: Ts,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new _s).fromBinary(e, t)
+                            return (new ks).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new _s).fromJson(e, t)
+                            return (new ks).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new _s).fromJsonString(e, t)
+                            return (new ks).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(_s, e, t)
+                            return y.proto3.util.equals(ks, e, t)
                         }
                     }
-                    class Ts extends y.Message {
+                    class Is extends y.Message {
                         repoUrl = "";
                         ref = "";
                         baseRef = "";
@@ -256352,19 +256443,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ts).fromBinary(e, t)
+                            return (new Is).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ts).fromJson(e, t)
+                            return (new Is).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ts).fromJsonString(e, t)
+                            return (new Is).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ts, e, t)
+                            return y.proto3.util.equals(Is, e, t)
                         }
                     }
-                    class ks extends y.Message {
+                    class bs extends y.Message {
                         url = "";
                         ref = "";
                         userExtensions = [];
@@ -256428,7 +256519,7 @@
                             no: 11,
                             name: "repo_config",
                             kind: "message",
-                            T: _s,
+                            T: ks,
                             opt: !0
                         }, {
                             no: 12,
@@ -256452,23 +256543,23 @@
                             no: 14,
                             name: "starting_refs",
                             kind: "message",
-                            T: Ts,
+                            T: Is,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ks).fromBinary(e, t)
+                            return (new bs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ks).fromJson(e, t)
+                            return (new bs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ks).fromJsonString(e, t)
+                            return (new bs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ks, e, t)
+                            return y.proto3.util.equals(bs, e, t)
                         }
                     }
-                    class Is extends y.Message {
+                    class Cs extends y.Message {
                         timeBudgetMs = y.protoInt64.zero;
                         startTimeUnixMs;
                         phase = Rn.UNSPECIFIED;
@@ -256516,16 +256607,16 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Is).fromBinary(e, t)
+                            return (new Cs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Is).fromJson(e, t)
+                            return (new Cs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Is).fromJsonString(e, t)
+                            return (new Cs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Is, e, t)
+                            return y.proto3.util.equals(Cs, e, t)
                         }
                     }! function(e) {
                         e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PLANNING = 1] = "PLANNING", e[e.EXECUTING = 2] = "EXECUTING", e[e.CONTROLLER = 3] = "CONTROLLER"
@@ -256564,7 +256655,7 @@
                         T: 3,
                         opt: !0
                     }]);
-                    class bs extends y.Message {
+                    class Ss extends y.Message {
                         snapshotNameOrId = "";
                         devcontainerStartingPoint;
                         prompt = "";
@@ -256654,7 +256745,7 @@
                             no: 11,
                             name: "devcontainer_starting_point",
                             kind: "message",
-                            T: ks
+                            T: bs
                         }, {
                             no: 2,
                             name: "prompt",
@@ -256669,7 +256760,7 @@
                             no: 3,
                             name: "files",
                             kind: "message",
-                            T: Cs,
+                            T: Bs,
                             repeated: !0
                         }, {
                             no: 4,
@@ -256692,7 +256783,7 @@
                             no: 5,
                             name: "repository_info",
                             kind: "message",
-                            T: io
+                            T: lo
                         }, {
                             no: 6,
                             name: "snapshot_workspace_root_path",
@@ -256830,7 +256921,7 @@
                             no: 94,
                             name: "external_source_metadata",
                             kind: "message",
-                            T: ps,
+                            T: hs,
                             opt: !0
                         }, {
                             no: 31,
@@ -256884,7 +256975,7 @@
                             no: 39,
                             name: "webhook_config",
                             kind: "message",
-                            T: Ss,
+                            T: xs,
                             opt: !0
                         }, {
                             no: 41,
@@ -256938,7 +257029,7 @@
                             no: 48,
                             name: "pre_fetched_blobs",
                             kind: "message",
-                            T: Os,
+                            T: Js,
                             repeated: !0
                         }, {
                             no: 49,
@@ -256962,7 +257053,7 @@
                             no: 52,
                             name: "grind_mode_config",
                             kind: "message",
-                            T: Is,
+                            T: Cs,
                             opt: !0
                         }, {
                             no: 73,
@@ -256980,19 +257071,19 @@
                             no: 59,
                             name: "labels",
                             kind: "message",
-                            T: Jc,
+                            T: qc,
                             repeated: !0
                         }, {
                             no: 97,
                             name: "private_worker_owner_filter",
                             kind: "message",
-                            T: Uc,
+                            T: Gc,
                             opt: !0
                         }, {
                             no: 100,
                             name: "private_workspace_identifier",
                             kind: "message",
-                            T: ms,
+                            T: fs,
                             opt: !0
                         }, {
                             no: 56,
@@ -257076,7 +257167,7 @@
                             no: 99,
                             name: "cloud_subagent_parent",
                             kind: "message",
-                            T: hs,
+                            T: gs,
                             opt: !0
                         }, {
                             no: 101,
@@ -257086,19 +257177,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new bs).fromBinary(e, t)
+                            return (new Ss).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new bs).fromJson(e, t)
+                            return (new Ss).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new bs).fromJsonString(e, t)
+                            return (new Ss).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(bs, e, t)
+                            return y.proto3.util.equals(Ss, e, t)
                         }
                     }
-                    class Cs extends y.Message {
+                    class Bs extends y.Message {
                         relativeWorkspacePath = "";
                         contents = "";
                         constructor(e) {
@@ -257118,19 +257209,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Cs).fromBinary(e, t)
+                            return (new Bs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Cs).fromJson(e, t)
+                            return (new Bs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Cs).fromJsonString(e, t)
+                            return (new Bs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Cs, e, t)
+                            return y.proto3.util.equals(Bs, e, t)
                         }
                     }
-                    class Ss extends y.Message {
+                    class xs extends y.Message {
                         url = "";
                         secret;
                         constructor(e) {
@@ -257151,19 +257242,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ss).fromBinary(e, t)
+                            return (new xs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ss).fromJson(e, t)
+                            return (new xs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ss).fromJsonString(e, t)
+                            return (new xs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ss, e, t)
+                            return y.proto3.util.equals(xs, e, t)
                         }
                     }
-                    class Bs extends y.Message {
+                    class Rs extends y.Message {
                         composer;
                         wasSwappedToDefault;
                         initialRunId;
@@ -257176,7 +257267,7 @@
                             no: 1,
                             name: "composer",
                             kind: "message",
-                            T: us
+                            T: ps
                         }, {
                             no: 2,
                             name: "was_swapped_to_default",
@@ -257191,19 +257282,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Bs).fromBinary(e, t)
+                            return (new Rs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Bs).fromJson(e, t)
+                            return (new Rs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Bs).fromJsonString(e, t)
+                            return (new Rs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Bs, e, t)
+                            return y.proto3.util.equals(Rs, e, t)
                         }
                     }
-                    class xs extends y.Message {
+                    class Ns extends y.Message {
                         bcId = "";
                         lastEventId;
                         workerIndex;
@@ -257252,19 +257343,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new xs).fromBinary(e, t)
+                            return (new Ns).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new xs).fromJson(e, t)
+                            return (new Ns).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new xs).fromJsonString(e, t)
+                            return (new Ns).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(xs, e, t)
+                            return y.proto3.util.equals(Ns, e, t)
                         }
                     }
-                    class Rs extends y.Message {
+                    class Ms extends y.Message {
                         event;
                         updatedStatus;
                         startError;
@@ -257277,7 +257368,7 @@
                             no: 1,
                             name: "event",
                             kind: "message",
-                            T: Ns
+                            T: Ps
                         }, {
                             no: 2,
                             name: "updated_status",
@@ -257290,19 +257381,19 @@
                             T: w.vj
                         }]);
                         static fromBinary(e, t) {
-                            return (new Rs).fromBinary(e, t)
+                            return (new Ms).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Rs).fromJson(e, t)
+                            return (new Ms).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Rs).fromJsonString(e, t)
+                            return (new Ms).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Rs, e, t)
+                            return y.proto3.util.equals(Ms, e, t)
                         }
                     }
-                    class Ns extends y.Message {
+                    class Ps extends y.Message {
                         eventId = "";
                         event;
                         waterfallUpdate;
@@ -257328,19 +257419,19 @@
                             T: It
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ns).fromBinary(e, t)
+                            return (new Ps).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ns).fromJson(e, t)
+                            return (new Ps).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ns).fromJsonString(e, t)
+                            return (new Ps).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ns, e, t)
+                            return y.proto3.util.equals(Ps, e, t)
                         }
                     }
-                    class Ms extends y.Message {
+                    class Ds extends y.Message {
                         bcId = "";
                         startingIndex;
                         constructor(e) {
@@ -257361,19 +257452,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ms).fromBinary(e, t)
+                            return (new Ds).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ms).fromJson(e, t)
+                            return (new Ds).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ms).fromJsonString(e, t)
+                            return (new Ds).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ms, e, t)
+                            return y.proto3.util.equals(Ds, e, t)
                         }
                     }
-                    class Ps extends y.Message {
+                    class Fs extends y.Message {
                         headlessAgenticComposerResponse;
                         prompt;
                         startingCommit = "";
@@ -257389,12 +257480,12 @@
                             no: 1,
                             name: "headless_agentic_composer_response",
                             kind: "message",
-                            T: to
+                            T: ro
                         }, {
                             no: 2,
                             name: "prompt",
                             kind: "message",
-                            T: ao
+                            T: co
                         }, {
                             no: 4,
                             name: "starting_commit",
@@ -257417,19 +257508,19 @@
                             T: w.o$
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ps).fromBinary(e, t)
+                            return (new Fs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ps).fromJson(e, t)
+                            return (new Fs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ps).fromJsonString(e, t)
+                            return (new Fs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ps, e, t)
+                            return y.proto3.util.equals(Fs, e, t)
                         }
                     }
-                    class Ds extends y.Message {
+                    class Ls extends y.Message {
                         bcId = "";
                         offsetKey;
                         filterHeavyStepData;
@@ -257498,16 +257589,16 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ds).fromBinary(e, t)
+                            return (new Ls).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ds).fromJson(e, t)
+                            return (new Ls).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ds).fromJsonString(e, t)
+                            return (new Ls).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ds, e, t)
+                            return y.proto3.util.equals(Ls, e, t)
                         }
                     }
                     y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
@@ -257538,13 +257629,13 @@
                         no: 5,
                         name: "transient_error",
                         kind: "message",
-                        T: ic,
+                        T: lc,
                         oneof: "message"
                     }, {
                         no: 6,
                         name: "worker_lifecycle_event",
                         kind: "message",
-                        T: Ls,
+                        T: Qs,
                         oneof: "message"
                     }, {
                         no: 7,
@@ -257562,10 +257653,10 @@
                         no: 9,
                         name: "read_only_shared_pod_lifecycle_event",
                         kind: "message",
-                        T: Fs,
+                        T: Os,
                         oneof: "message"
                     }]);
-                    class Fs extends y.Message {
+                    class Os extends y.Message {
                         phase = Nn.UNSPECIFIED;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -257579,16 +257670,16 @@
                             T: y.proto3.getEnumType(Nn)
                         }]);
                         static fromBinary(e, t) {
-                            return (new Fs).fromBinary(e, t)
+                            return (new Os).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Fs).fromJson(e, t)
+                            return (new Os).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Fs).fromJsonString(e, t)
+                            return (new Os).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Fs, e, t)
+                            return y.proto3.util.equals(Os, e, t)
                         }
                     }! function(e) {
                         e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.AWAITING_FULL_POD = 2] = "AWAITING_FULL_POD", e[e.INACTIVE = 3] = "INACTIVE"
@@ -257602,7 +257693,7 @@
                         no: 3,
                         name: "PHASE_INACTIVE"
                     }]);
-                    class Ls extends y.Message {
+                    class Qs extends y.Message {
                         workerIndex = 0;
                         event = {
                             case: void 0
@@ -257625,19 +257716,19 @@
                             oneof: "event"
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ls).fromBinary(e, t)
+                            return (new Qs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ls).fromJson(e, t)
+                            return (new Qs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ls).fromJsonString(e, t)
+                            return (new Qs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ls, e, t)
+                            return y.proto3.util.equals(Qs, e, t)
                         }
                     }
-                    class Os extends y.Message {
+                    class Js extends y.Message {
                         id = new Uint8Array(0);
                         value = new Uint8Array(0);
                         constructor(e) {
@@ -257657,130 +257748,6 @@
                             T: 12
                         }]);
                         static fromBinary(e, t) {
-                            return (new Os).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Os).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Os).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Os, e, t)
-                        }
-                    }
-                    class Qs extends y.Message {
-                        message = {
-                            case: void 0
-                        };
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.StreamConversationResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 3,
-                            name: "initial_state",
-                            kind: "message",
-                            T: Us,
-                            oneof: "message"
-                        }, {
-                            no: 4,
-                            name: "interaction_update_with_offset",
-                            kind: "message",
-                            T: Gs,
-                            oneof: "message"
-                        }, {
-                            no: 5,
-                            name: "cloud_agent_state_with_id_and_offset",
-                            kind: "message",
-                            T: qs,
-                            oneof: "message"
-                        }, {
-                            no: 6,
-                            name: "workflow_status_with_offset",
-                            kind: "message",
-                            T: Ys,
-                            oneof: "message"
-                        }, {
-                            no: 7,
-                            name: "prefetched_blobs",
-                            kind: "message",
-                            T: Js,
-                            oneof: "message"
-                        }, {
-                            no: 8,
-                            name: "stream_signal",
-                            kind: "enum",
-                            T: y.proto3.getEnumType(Mn),
-                            oneof: "message"
-                        }, {
-                            no: 9,
-                            name: "transient_error_with_offset",
-                            kind: "message",
-                            T: Hs,
-                            oneof: "message"
-                        }, {
-                            no: 10,
-                            name: "dev_banner_message",
-                            kind: "message",
-                            T: Ws,
-                            oneof: "message"
-                        }, {
-                            no: 11,
-                            name: "worker_lifecycle_event_with_offset",
-                            kind: "message",
-                            T: zs,
-                            oneof: "message"
-                        }, {
-                            no: 12,
-                            name: "interaction_query_with_offset",
-                            kind: "message",
-                            T: js,
-                            oneof: "message"
-                        }, {
-                            no: 13,
-                            name: "read_only_shared_pod_lifecycle_event_with_offset",
-                            kind: "message",
-                            T: Vs,
-                            oneof: "message"
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Qs).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Qs).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Qs).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Qs, e, t)
-                        }
-                    }! function(e) {
-                        e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.END_OF_INITIAL_STATE_PREFETCH = 1] = "END_OF_INITIAL_STATE_PREFETCH"
-                    }(Mn || (Mn = {})), y.proto3.util.setEnumType(Mn, "aiserver.v1.StreamConversationResponse.StreamSignal", [{
-                        no: 0,
-                        name: "STREAM_SIGNAL_UNSPECIFIED"
-                    }, {
-                        no: 1,
-                        name: "STREAM_SIGNAL_END_OF_INITIAL_STATE_PREFETCH"
-                    }]);
-                    class Js extends y.Message {
-                        preFetchedBlobs = [];
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.StreamConversationResponse.PrefetchedBlobs";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "pre_fetched_blobs",
-                            kind: "message",
-                            T: Os,
-                            repeated: !0
-                        }]);
-                        static fromBinary(e, t) {
                             return (new Js).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -257794,6 +257761,130 @@
                         }
                     }
                     class Us extends y.Message {
+                        message = {
+                            case: void 0
+                        };
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.StreamConversationResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 3,
+                            name: "initial_state",
+                            kind: "message",
+                            T: Gs,
+                            oneof: "message"
+                        }, {
+                            no: 4,
+                            name: "interaction_update_with_offset",
+                            kind: "message",
+                            T: Ys,
+                            oneof: "message"
+                        }, {
+                            no: 5,
+                            name: "cloud_agent_state_with_id_and_offset",
+                            kind: "message",
+                            T: js,
+                            oneof: "message"
+                        }, {
+                            no: 6,
+                            name: "workflow_status_with_offset",
+                            kind: "message",
+                            T: Ws,
+                            oneof: "message"
+                        }, {
+                            no: 7,
+                            name: "prefetched_blobs",
+                            kind: "message",
+                            T: qs,
+                            oneof: "message"
+                        }, {
+                            no: 8,
+                            name: "stream_signal",
+                            kind: "enum",
+                            T: y.proto3.getEnumType(Mn),
+                            oneof: "message"
+                        }, {
+                            no: 9,
+                            name: "transient_error_with_offset",
+                            kind: "message",
+                            T: zs,
+                            oneof: "message"
+                        }, {
+                            no: 10,
+                            name: "dev_banner_message",
+                            kind: "message",
+                            T: Vs,
+                            oneof: "message"
+                        }, {
+                            no: 11,
+                            name: "worker_lifecycle_event_with_offset",
+                            kind: "message",
+                            T: $s,
+                            oneof: "message"
+                        }, {
+                            no: 12,
+                            name: "interaction_query_with_offset",
+                            kind: "message",
+                            T: Hs,
+                            oneof: "message"
+                        }, {
+                            no: 13,
+                            name: "read_only_shared_pod_lifecycle_event_with_offset",
+                            kind: "message",
+                            T: Ks,
+                            oneof: "message"
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Us).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Us).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Us).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Us, e, t)
+                        }
+                    }! function(e) {
+                        e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.END_OF_INITIAL_STATE_PREFETCH = 1] = "END_OF_INITIAL_STATE_PREFETCH"
+                    }(Mn || (Mn = {})), y.proto3.util.setEnumType(Mn, "aiserver.v1.StreamConversationResponse.StreamSignal", [{
+                        no: 0,
+                        name: "STREAM_SIGNAL_UNSPECIFIED"
+                    }, {
+                        no: 1,
+                        name: "STREAM_SIGNAL_END_OF_INITIAL_STATE_PREFETCH"
+                    }]);
+                    class qs extends y.Message {
+                        preFetchedBlobs = [];
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.StreamConversationResponse.PrefetchedBlobs";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "pre_fetched_blobs",
+                            kind: "message",
+                            T: Js,
+                            repeated: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new qs).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new qs).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new qs).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(qs, e, t)
+                        }
+                    }
+                    class Gs extends y.Message {
                         blobId = new Uint8Array(0);
                         cloudAgentState;
                         preFetchedBlobs = [];
@@ -257813,12 +257904,12 @@
                             no: 2,
                             name: "cloud_agent_state",
                             kind: "message",
-                            T: tc
+                            T: rc
                         }, {
                             no: 4,
                             name: "pre_fetched_blobs",
                             kind: "message",
-                            T: Os,
+                            T: Js,
                             repeated: !0
                         }, {
                             no: 5,
@@ -257833,19 +257924,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Us).fromBinary(e, t)
+                            return (new Gs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Us).fromJson(e, t)
+                            return (new Gs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Us).fromJsonString(e, t)
+                            return (new Gs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Us, e, t)
+                            return y.proto3.util.equals(Gs, e, t)
                         }
                     }
-                    class qs extends y.Message {
+                    class js extends y.Message {
                         offsetKey = "";
                         blobId = new Uint8Array(0);
                         cloudAgentState;
@@ -257870,12 +257961,12 @@
                             no: 3,
                             name: "cloud_agent_state",
                             kind: "message",
-                            T: tc
+                            T: rc
                         }, {
                             no: 4,
                             name: "pre_fetched_blobs",
                             kind: "message",
-                            T: Os,
+                            T: Js,
                             repeated: !0
                         }, {
                             no: 5,
@@ -257885,19 +257976,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new qs).fromBinary(e, t)
+                            return (new js).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new qs).fromJson(e, t)
+                            return (new js).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new qs).fromJsonString(e, t)
+                            return (new js).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(qs, e, t)
+                            return y.proto3.util.equals(js, e, t)
                         }
                     }
-                    class Gs extends y.Message {
+                    class Ys extends y.Message {
                         offsetKey = "";
                         interactionUpdate;
                         userDisplayInfos = [];
@@ -257924,19 +258015,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Gs).fromBinary(e, t)
+                            return (new Ys).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Gs).fromJson(e, t)
+                            return (new Ys).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Gs).fromJsonString(e, t)
+                            return (new Ys).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Gs, e, t)
+                            return y.proto3.util.equals(Ys, e, t)
                         }
                     }
-                    class js extends y.Message {
+                    class Hs extends y.Message {
                         offsetKey = "";
                         interactionQuery;
                         constructor(e) {
@@ -257956,19 +258047,19 @@
                             T: vt.Pd
                         }]);
                         static fromBinary(e, t) {
-                            return (new js).fromBinary(e, t)
+                            return (new Hs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new js).fromJson(e, t)
+                            return (new Hs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new js).fromJsonString(e, t)
+                            return (new Hs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(js, e, t)
+                            return y.proto3.util.equals(Hs, e, t)
                         }
                     }
-                    class Ys extends y.Message {
+                    class Ws extends y.Message {
                         offsetKey = "";
                         workflowStatus = Vt.UNSPECIFIED;
                         constructor(e) {
@@ -257988,19 +258079,19 @@
                             T: y.proto3.getEnumType(Vt)
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ys).fromBinary(e, t)
+                            return (new Ws).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ys).fromJson(e, t)
+                            return (new Ws).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ys).fromJsonString(e, t)
+                            return (new Ws).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ys, e, t)
+                            return y.proto3.util.equals(Ws, e, t)
                         }
                     }
-                    class Hs extends y.Message {
+                    class zs extends y.Message {
                         offsetKey = "";
                         transientError;
                         constructor(e) {
@@ -258017,22 +258108,22 @@
                             no: 2,
                             name: "transient_error",
                             kind: "message",
-                            T: ic
+                            T: lc
                         }]);
                         static fromBinary(e, t) {
-                            return (new Hs).fromBinary(e, t)
+                            return (new zs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Hs).fromJson(e, t)
+                            return (new zs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Hs).fromJsonString(e, t)
+                            return (new zs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Hs, e, t)
+                            return y.proto3.util.equals(zs, e, t)
                         }
                     }
-                    class Ws extends y.Message {
+                    class Vs extends y.Message {
                         text = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -258046,19 +258137,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ws).fromBinary(e, t)
+                            return (new Vs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ws).fromJson(e, t)
+                            return (new Vs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ws).fromJsonString(e, t)
+                            return (new Vs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ws, e, t)
+                            return y.proto3.util.equals(Vs, e, t)
                         }
                     }
-                    class zs extends y.Message {
+                    class $s extends y.Message {
                         offsetKey = "";
                         workerLifecycleEvent;
                         constructor(e) {
@@ -258075,22 +258166,22 @@
                             no: 2,
                             name: "worker_lifecycle_event",
                             kind: "message",
-                            T: Ls
+                            T: Qs
                         }]);
                         static fromBinary(e, t) {
-                            return (new zs).fromBinary(e, t)
+                            return (new $s).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new zs).fromJson(e, t)
+                            return (new $s).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new zs).fromJsonString(e, t)
+                            return (new $s).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(zs, e, t)
+                            return y.proto3.util.equals($s, e, t)
                         }
                     }
-                    class Vs extends y.Message {
+                    class Ks extends y.Message {
                         offsetKey = "";
                         readOnlySharedPodLifecycleEvent;
                         constructor(e) {
@@ -258107,22 +258198,22 @@
                             no: 2,
                             name: "read_only_shared_pod_lifecycle_event",
                             kind: "message",
-                            T: Fs
+                            T: Os
                         }]);
                         static fromBinary(e, t) {
-                            return (new Vs).fromBinary(e, t)
+                            return (new Ks).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Vs).fromJson(e, t)
+                            return (new Ks).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Vs).fromJsonString(e, t)
+                            return (new Ks).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Vs, e, t)
+                            return y.proto3.util.equals(Ks, e, t)
                         }
                     }
-                    class $s extends y.Message {
+                    class Zs extends y.Message {
                         bcId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -258136,19 +258227,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new $s).fromBinary(e, t)
+                            return (new Zs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new $s).fromJson(e, t)
+                            return (new Zs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new $s).fromJsonString(e, t)
+                            return (new Zs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals($s, e, t)
+                            return y.proto3.util.equals(Zs, e, t)
                         }
                     }
-                    class Ks extends y.Message {
+                    class Xs extends y.Message {
                         conversationState;
                         numPriorInteractionUpdates = 0;
                         constructor(e) {
@@ -258168,19 +258259,19 @@
                             T: 13
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ks).fromBinary(e, t)
+                            return (new Xs).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ks).fromJson(e, t)
+                            return (new Xs).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ks).fromJsonString(e, t)
+                            return (new Xs).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ks, e, t)
+                            return y.proto3.util.equals(Xs, e, t)
                         }
                     }
-                    class Zs extends y.Message {
+                    class eo extends y.Message {
                         latestConversationState;
                         preFetchedBlobs = [];
                         constructor(e) {
@@ -258192,28 +258283,28 @@
                             no: 1,
                             name: "latest_conversation_state",
                             kind: "message",
-                            T: Ks
+                            T: Xs
                         }, {
                             no: 2,
                             name: "pre_fetched_blobs",
                             kind: "message",
-                            T: Os,
+                            T: Js,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Zs).fromBinary(e, t)
+                            return (new eo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Zs).fromJson(e, t)
+                            return (new eo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Zs).fromJsonString(e, t)
+                            return (new eo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Zs, e, t)
+                            return y.proto3.util.equals(eo, e, t)
                         }
                     }
-                    class Xs extends y.Message {
+                    class to extends y.Message {
                         bcId = "";
                         blobId = new Uint8Array(0);
                         constructor(e) {
@@ -258233,19 +258324,19 @@
                             T: 12
                         }]);
                         static fromBinary(e, t) {
-                            return (new Xs).fromBinary(e, t)
+                            return (new to).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Xs).fromJson(e, t)
+                            return (new to).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Xs).fromJsonString(e, t)
+                            return (new to).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Xs, e, t)
+                            return y.proto3.util.equals(to, e, t)
                         }
                     }
-                    class eo extends y.Message {
+                    class no extends y.Message {
                         blobData = new Uint8Array(0);
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -258259,19 +258350,19 @@
                             T: 12
                         }]);
                         static fromBinary(e, t) {
-                            return (new eo).fromBinary(e, t)
+                            return (new no).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new eo).fromJson(e, t)
+                            return (new no).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new eo).fromJsonString(e, t)
+                            return (new no).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(eo, e, t)
+                            return y.proto3.util.equals(no, e, t)
                         }
                     }
-                    class to extends y.Message {
+                    class ro extends y.Message {
                         text = "";
                         toolCall;
                         finalToolResult;
@@ -258304,7 +258395,7 @@
                             no: 3,
                             name: "final_tool_result",
                             kind: "message",
-                            T: ro,
+                            T: oo,
                             opt: !0
                         }, {
                             no: 6,
@@ -258316,7 +258407,7 @@
                             no: 4,
                             name: "user_message",
                             kind: "message",
-                            T: no
+                            T: so
                         }, {
                             no: 5,
                             name: "is_message_done",
@@ -258326,7 +258417,7 @@
                             no: 7,
                             name: "error",
                             kind: "message",
-                            T: so,
+                            T: io,
                             opt: !0
                         }, {
                             no: 8,
@@ -258355,23 +258446,23 @@
                             no: 11,
                             name: "status",
                             kind: "message",
-                            T: oo,
+                            T: ao,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new to).fromBinary(e, t)
+                            return (new ro).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new to).fromJson(e, t)
+                            return (new ro).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new to).fromJsonString(e, t)
+                            return (new ro).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(to, e, t)
+                            return y.proto3.util.equals(ro, e, t)
                         }
                     }
-                    class no extends y.Message {
+                    class so extends y.Message {
                         text = "";
                         richText = "";
                         constructor(e) {
@@ -258391,19 +258482,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new no).fromBinary(e, t)
+                            return (new so).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new no).fromJson(e, t)
+                            return (new so).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new no).fromJsonString(e, t)
+                            return (new so).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(no, e, t)
+                            return y.proto3.util.equals(so, e, t)
                         }
                     }
-                    class ro extends y.Message {
+                    class oo extends y.Message {
                         toolCallId = "";
                         result;
                         constructor(e) {
@@ -258423,19 +258514,19 @@
                             T: Lt.Ue3
                         }]);
                         static fromBinary(e, t) {
-                            return (new ro).fromBinary(e, t)
+                            return (new oo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ro).fromJson(e, t)
+                            return (new oo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ro).fromJsonString(e, t)
+                            return (new oo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ro, e, t)
+                            return y.proto3.util.equals(oo, e, t)
                         }
                     }
-                    class so extends y.Message {
+                    class io extends y.Message {
                         message = "";
                         errorDetails;
                         constructor(e) {
@@ -258455,19 +258546,19 @@
                             T: w.vj
                         }]);
                         static fromBinary(e, t) {
-                            return (new so).fromBinary(e, t)
+                            return (new io).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new so).fromJson(e, t)
+                            return (new io).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new so).fromJsonString(e, t)
+                            return (new io).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(so, e, t)
+                            return y.proto3.util.equals(io, e, t)
                         }
                     }
-                    class oo extends y.Message {
+                    class ao extends y.Message {
                         type = Pn.UNSPECIFIED;
                         message = "";
                         isComplete = !1;
@@ -258493,16 +258584,16 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new oo).fromBinary(e, t)
+                            return (new ao).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new oo).fromJson(e, t)
+                            return (new ao).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new oo).fromJsonString(e, t)
+                            return (new ao).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(oo, e, t)
+                            return y.proto3.util.equals(ao, e, t)
                         }
                     }! function(e) {
                         e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.INDEX_SYNC = 1] = "INDEX_SYNC", e[e.GENERIC = 2] = "GENERIC"
@@ -258516,7 +258607,7 @@
                         no: 2,
                         name: "STATUS_TYPE_GENERIC"
                     }]);
-                    class io extends y.Message {
+                    class lo extends y.Message {
                         repositoryInfo;
                         pathEncryptionKey = "";
                         repositoryInfoShouldQueryStaging = !1;
@@ -258566,19 +258657,19 @@
                             T: Ot.bq
                         }]);
                         static fromBinary(e, t) {
-                            return (new io).fromBinary(e, t)
+                            return (new lo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new io).fromJson(e, t)
+                            return (new lo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new io).fromJsonString(e, t)
+                            return (new lo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(io, e, t)
+                            return y.proto3.util.equals(lo, e, t)
                         }
                     }
-                    class ao extends y.Message {
+                    class co extends y.Message {
                         baseConversationMessage;
                         text = "";
                         richText = "";
@@ -258614,13 +258705,13 @@
                             no: 2,
                             name: "file_selections",
                             kind: "message",
-                            T: lo,
+                            T: uo,
                             repeated: !0
                         }, {
                             no: 3,
                             name: "file_attachments",
                             kind: "message",
-                            T: co,
+                            T: po,
                             repeated: !0
                         }, {
                             no: 4,
@@ -258660,19 +258751,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ao).fromBinary(e, t)
+                            return (new co).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ao).fromJson(e, t)
+                            return (new co).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ao).fromJsonString(e, t)
+                            return (new co).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ao, e, t)
+                            return y.proto3.util.equals(co, e, t)
                         }
                     }
-                    class lo extends y.Message {
+                    class uo extends y.Message {
                         relativeWorkspacePath = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -258686,19 +258777,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new lo).fromBinary(e, t)
+                            return (new uo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new lo).fromJson(e, t)
+                            return (new uo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new lo).fromJsonString(e, t)
+                            return (new uo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(lo, e, t)
+                            return y.proto3.util.equals(uo, e, t)
                         }
                     }
-                    class co extends y.Message {
+                    class po extends y.Message {
                         name = "";
                         contents = "";
                         constructor(e) {
@@ -258718,16 +258809,16 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new co).fromBinary(e, t)
+                            return (new po).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new co).fromJson(e, t)
+                            return (new po).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new co).fromJsonString(e, t)
+                            return (new po).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(co, e, t)
+                            return y.proto3.util.equals(po, e, t)
                         }
                     }
                     y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
@@ -258814,10 +258905,10 @@
                         no: 17,
                         name: "cloud_subagent_parent",
                         kind: "message",
-                        T: hs,
+                        T: gs,
                         opt: !0
                     }]);
-                    class uo extends y.Message {
+                    class mo extends y.Message {
                         bcId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -258831,19 +258922,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new uo).fromBinary(e, t)
+                            return (new mo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new uo).fromJson(e, t)
+                            return (new mo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new uo).fromJsonString(e, t)
+                            return (new mo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(uo, e, t)
+                            return y.proto3.util.equals(mo, e, t)
                         }
                     }
-                    class po extends y.Message {
+                    class ho extends y.Message {
                         status = zt.UNSPECIFIED;
                         isUnread = !1;
                         constructor(e) {
@@ -258863,19 +258954,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new po).fromBinary(e, t)
+                            return (new ho).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new po).fromJson(e, t)
+                            return (new ho).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new po).fromJsonString(e, t)
+                            return (new ho).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(po, e, t)
+                            return y.proto3.util.equals(ho, e, t)
                         }
                     }
-                    class mo extends y.Message {
+                    class fo extends y.Message {
                         bcId = "";
                         followup = "";
                         richFollowup = "";
@@ -258997,19 +259088,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new mo).fromBinary(e, t)
+                            return (new fo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new mo).fromJson(e, t)
+                            return (new fo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new mo).fromJsonString(e, t)
+                            return (new fo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(mo, e, t)
+                            return y.proto3.util.equals(fo, e, t)
                         }
                     }
-                    class ho extends y.Message {
+                    class go extends y.Message {
                         runId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -259023,19 +259114,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new ho).fromBinary(e, t)
+                            return (new go).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ho).fromJson(e, t)
+                            return (new go).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ho).fromJsonString(e, t)
+                            return (new go).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ho, e, t)
+                            return y.proto3.util.equals(go, e, t)
                         }
                     }
-                    class fo extends y.Message {
+                    class Ao extends y.Message {
                         bcId = "";
                         interactionResponse;
                         constructor(e) {
@@ -259055,52 +259146,6 @@
                             T: vt.Y5
                         }]);
                         static fromBinary(e, t) {
-                            return (new fo).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new fo).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new fo).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(fo, e, t)
-                        }
-                    }
-                    class go extends y.Message {
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.SubmitInteractionResponseBackgroundComposerResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
-                        static fromBinary(e, t) {
-                            return (new go).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new go).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new go).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(go, e, t)
-                        }
-                    }
-                    class Ao extends y.Message {
-                        bcId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ListPendingFollowupsRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new Ao).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -259114,6 +259159,52 @@
                         }
                     }
                     class yo extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.SubmitInteractionResponseBackgroundComposerResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new yo).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new yo).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new yo).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(yo, e, t)
+                        }
+                    }
+                    class wo extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.ListPendingFollowupsRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new wo).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new wo).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new wo).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(wo, e, t)
+                        }
+                    }
+                    class vo extends y.Message {
                         followupId = "";
                         text = "";
                         richText = "";
@@ -259191,19 +259282,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new yo).fromBinary(e, t)
+                            return (new vo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new yo).fromJson(e, t)
+                            return (new vo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new yo).fromJsonString(e, t)
+                            return (new vo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(yo, e, t)
+                            return y.proto3.util.equals(vo, e, t)
                         }
                     }
-                    class wo extends y.Message {
+                    class Eo extends y.Message {
                         pendingFollowups = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -259214,23 +259305,23 @@
                             no: 1,
                             name: "pending_followups",
                             kind: "message",
-                            T: yo,
+                            T: vo,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new wo).fromBinary(e, t)
+                            return (new Eo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new wo).fromJson(e, t)
+                            return (new Eo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new wo).fromJsonString(e, t)
+                            return (new Eo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(wo, e, t)
+                            return y.proto3.util.equals(Eo, e, t)
                         }
                     }
-                    class vo extends y.Message {
+                    class _o extends y.Message {
                         bcId = "";
                         followupId = "";
                         updatedMessage;
@@ -259256,70 +259347,6 @@
                             T: Et.hS
                         }]);
                         static fromBinary(e, t) {
-                            return (new vo).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new vo).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new vo).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(vo, e, t)
-                        }
-                    }
-                    class Eo extends y.Message {
-                        success = !1;
-                        errorMessage = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.UpdatePendingFollowupResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "success",
-                            kind: "scalar",
-                            T: 8
-                        }, {
-                            no: 2,
-                            name: "error_message",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Eo).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Eo).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Eo).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Eo, e, t)
-                        }
-                    }
-                    class _o extends y.Message {
-                        bcId = "";
-                        followupId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.DeletePendingFollowupRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 2,
-                            name: "followup_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new _o).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -259339,7 +259366,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.DeletePendingFollowupResponse";
+                        static typeName = "aiserver.v1.UpdatePendingFollowupResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "success",
@@ -259365,6 +259392,70 @@
                         }
                     }
                     class ko extends y.Message {
+                        bcId = "";
+                        followupId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.DeletePendingFollowupRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 2,
+                            name: "followup_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new ko).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new ko).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new ko).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(ko, e, t)
+                        }
+                    }
+                    class Io extends y.Message {
+                        success = !1;
+                        errorMessage = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.DeletePendingFollowupResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "success",
+                            kind: "scalar",
+                            T: 8
+                        }, {
+                            no: 2,
+                            name: "error_message",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Io).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Io).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Io).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Io, e, t)
+                        }
+                    }
+                    class bo extends y.Message {
                         bcId = "";
                         followupId = "";
                         targetFollowupId = "";
@@ -259396,70 +259487,6 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new ko).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new ko).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new ko).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(ko, e, t)
-                        }
-                    }
-                    class Io extends y.Message {
-                        success = !1;
-                        errorMessage = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ReorderPendingFollowupResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "success",
-                            kind: "scalar",
-                            T: 8
-                        }, {
-                            no: 2,
-                            name: "error_message",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Io).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Io).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Io).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Io, e, t)
-                        }
-                    }
-                    class bo extends y.Message {
-                        bcId = "";
-                        followupId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.SubmitPendingFollowupNowRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 2,
-                            name: "followup_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new bo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -259479,7 +259506,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.SubmitPendingFollowupNowResponse";
+                        static typeName = "aiserver.v1.ReorderPendingFollowupResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "success",
@@ -259511,7 +259538,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.MarkFollowupEditingRequest";
+                        static typeName = "aiserver.v1.SubmitPendingFollowupNowRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "bc_id",
@@ -259543,7 +259570,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.MarkFollowupEditingResponse";
+                        static typeName = "aiserver.v1.SubmitPendingFollowupNowResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "success",
@@ -259570,14 +259597,20 @@
                     }
                     class xo extends y.Message {
                         bcId = "";
+                        followupId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.StartSlackStreamingForFollowupRequest";
+                        static typeName = "aiserver.v1.MarkFollowupEditingRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 2,
+                            name: "followup_id",
                             kind: "scalar",
                             T: 9
                         }]);
@@ -259595,12 +259628,24 @@
                         }
                     }
                     class Ro extends y.Message {
+                        success = !1;
+                        errorMessage = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.StartSlackStreamingForFollowupResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
+                        static typeName = "aiserver.v1.MarkFollowupEditingResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "success",
+                            kind: "scalar",
+                            T: 8
+                        }, {
+                            no: 2,
+                            name: "error_message",
+                            kind: "scalar",
+                            T: 9
+                        }]);
                         static fromBinary(e, t) {
                             return (new Ro).fromBinary(e, t)
                         }
@@ -259620,7 +259665,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.StartGithubStreamingForFollowupRequest";
+                        static typeName = "aiserver.v1.StartSlackStreamingForFollowupRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "bc_id",
@@ -259645,7 +259690,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.StartGithubStreamingForFollowupResponse";
+                        static typeName = "aiserver.v1.StartSlackStreamingForFollowupResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
                             return (new Mo).fromBinary(e, t)
@@ -259666,7 +259711,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.StartLinearStreamingForFollowupRequest";
+                        static typeName = "aiserver.v1.StartGithubStreamingForFollowupRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "bc_id",
@@ -259691,7 +259736,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.StartLinearStreamingForFollowupResponse";
+                        static typeName = "aiserver.v1.StartGithubStreamingForFollowupResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
                             return (new Do).fromBinary(e, t)
@@ -259707,6 +259752,52 @@
                         }
                     }
                     class Fo extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.StartLinearStreamingForFollowupRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Fo).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Fo).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Fo).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Fo, e, t)
+                        }
+                    }
+                    class Lo extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.StartLinearStreamingForFollowupResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new Lo).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Lo).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Lo).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Lo, e, t)
+                        }
+                    }
+                    class Oo extends y.Message {
                         bcId = "";
                         includeDiff = !1;
                         doNotThrowIfSetupNotFinished = !1;
@@ -259732,19 +259823,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new Fo).fromBinary(e, t)
+                            return (new Oo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Fo).fromJson(e, t)
+                            return (new Oo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Fo).fromJsonString(e, t)
+                            return (new Oo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Fo, e, t)
+                            return y.proto3.util.equals(Oo, e, t)
                         }
                     }
-                    class Lo extends y.Message {
+                    class Qo extends y.Message {
                         bcId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -259758,19 +259849,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Lo).fromBinary(e, t)
+                            return (new Qo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Lo).fromJson(e, t)
+                            return (new Qo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Lo).fromJsonString(e, t)
+                            return (new Qo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Lo, e, t)
+                            return y.proto3.util.equals(Qo, e, t)
                         }
                     }
-                    class Oo extends y.Message {
+                    class Jo extends y.Message {
                         timestampMs = 0;
                         event = nn.UNSPECIFIED;
                         turnNumber;
@@ -259797,19 +259888,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Oo).fromBinary(e, t)
+                            return (new Jo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Oo).fromJson(e, t)
+                            return (new Jo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Oo).fromJsonString(e, t)
+                            return (new Jo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Oo, e, t)
+                            return y.proto3.util.equals(Jo, e, t)
                         }
                     }
-                    class Qo extends y.Message {
+                    class Uo extends y.Message {
                         composer;
                         startingCommit = "";
                         baseBranch = "";
@@ -259848,7 +259939,7 @@
                             no: 1,
                             name: "composer",
                             kind: "message",
-                            T: us
+                            T: ps
                         }, {
                             no: 2,
                             name: "starting_commit",
@@ -259863,7 +259954,7 @@
                             no: 4,
                             name: "prompt",
                             kind: "message",
-                            T: ao
+                            T: co
                         }, {
                             no: 5,
                             name: "status",
@@ -259899,7 +259990,7 @@
                             no: 11,
                             name: "environment_ports",
                             kind: "message",
-                            T: Ol,
+                            T: Jl,
                             repeated: !0
                         }, {
                             no: 12,
@@ -259935,7 +260026,7 @@
                             no: 18,
                             name: "video_annotations",
                             kind: "message",
-                            T: Yo,
+                            T: Wo,
                             repeated: !0
                         }, {
                             no: 19,
@@ -259947,13 +260038,13 @@
                             no: 20,
                             name: "prs",
                             kind: "message",
-                            T: Uo,
+                            T: Go,
                             repeated: !0
                         }, {
                             no: 21,
                             name: "vm_provisioned_skills",
                             kind: "message",
-                            T: Jo,
+                            T: qo,
                             repeated: !0
                         }, {
                             no: 22,
@@ -259965,7 +260056,7 @@
                             no: 23,
                             name: "repo_config",
                             kind: "message",
-                            T: _s,
+                            T: ks,
                             opt: !0
                         }, {
                             no: 24,
@@ -259983,13 +260074,13 @@
                             no: 26,
                             name: "labels",
                             kind: "message",
-                            T: Jc,
+                            T: qc,
                             repeated: !0
                         }, {
                             no: 27,
                             name: "used_environment_version",
                             kind: "message",
-                            T: Ui,
+                            T: Gi,
                             opt: !0
                         }, {
                             no: 28,
@@ -260001,29 +260092,29 @@
                             no: 29,
                             name: "cloud_subagent_parent",
                             kind: "message",
-                            T: hs,
+                            T: gs,
                             opt: !0
                         }, {
                             no: 30,
                             name: "startup_warnings",
                             kind: "message",
-                            T: fc,
+                            T: Ac,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Qo).fromBinary(e, t)
+                            return (new Uo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Qo).fromJson(e, t)
+                            return (new Uo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Qo).fromJsonString(e, t)
+                            return (new Uo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Qo, e, t)
+                            return y.proto3.util.equals(Uo, e, t)
                         }
                     }
-                    class Jo extends y.Message {
+                    class qo extends y.Message {
                         skillId = "";
                         description = "";
                         environments = [];
@@ -260057,19 +260148,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Jo).fromBinary(e, t)
+                            return (new qo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Jo).fromJson(e, t)
+                            return (new qo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Jo).fromJsonString(e, t)
+                            return (new qo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Jo, e, t)
+                            return y.proto3.util.equals(qo, e, t)
                         }
                     }
-                    class Uo extends y.Message {
+                    class Go extends y.Message {
                         branchName = "";
                         baseBranch = "";
                         scmRepoNodeId;
@@ -260124,19 +260215,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Uo).fromBinary(e, t)
+                            return (new Go).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Uo).fromJson(e, t)
+                            return (new Go).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Uo).fromJsonString(e, t)
+                            return (new Go).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Uo, e, t)
+                            return y.proto3.util.equals(Go, e, t)
                         }
                     }
-                    class qo extends y.Message {
+                    class jo extends y.Message {
                         minutes = 0;
                         seconds = 0;
                         constructor(e) {
@@ -260156,19 +260247,19 @@
                             T: 1
                         }]);
                         static fromBinary(e, t) {
-                            return (new qo).fromBinary(e, t)
+                            return (new jo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new qo).fromJson(e, t)
+                            return (new jo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new qo).fromJsonString(e, t)
+                            return (new jo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(qo, e, t)
+                            return y.proto3.util.equals(jo, e, t)
                         }
                     }
-                    class Go extends y.Message {
+                    class Yo extends y.Message {
                         startTime;
                         label = "";
                         shouldHide = !1;
@@ -260181,7 +260272,7 @@
                             no: 1,
                             name: "start_time",
                             kind: "message",
-                            T: qo
+                            T: jo
                         }, {
                             no: 3,
                             name: "label",
@@ -260194,19 +260285,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new Go).fromBinary(e, t)
+                            return (new Yo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Go).fromJson(e, t)
+                            return (new Yo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Go).fromJsonString(e, t)
+                            return (new Yo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Go, e, t)
+                            return y.proto3.util.equals(Yo, e, t)
                         }
                     }
-                    class jo extends y.Message {
+                    class Ho extends y.Message {
                         labeledChapters = [];
                         thumbnailTimestamp;
                         trimStartSeconds;
@@ -260220,13 +260311,13 @@
                             no: 1,
                             name: "labeled_chapters",
                             kind: "message",
-                            T: Go,
+                            T: Yo,
                             repeated: !0
                         }, {
                             no: 2,
                             name: "thumbnail_timestamp",
                             kind: "message",
-                            T: qo
+                            T: jo
                         }, {
                             no: 3,
                             name: "trim_start_seconds",
@@ -260241,19 +260332,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new jo).fromBinary(e, t)
+                            return (new Ho).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new jo).fromJson(e, t)
+                            return (new Ho).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new jo).fromJsonString(e, t)
+                            return (new Ho).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(jo, e, t)
+                            return y.proto3.util.equals(Ho, e, t)
                         }
                     }
-                    class Yo extends y.Message {
+                    class Wo extends y.Message {
                         artifactPath = "";
                         annotation;
                         constructor(e) {
@@ -260270,60 +260361,7 @@
                             no: 2,
                             name: "annotation",
                             kind: "message",
-                            T: jo
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Yo).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Yo).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Yo).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Yo, e, t)
-                        }
-                    }
-                    class Ho extends y.Message {
-                        composer;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerInfoResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "composer",
-                            kind: "message",
-                            T: Qo
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Ho).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Ho).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Ho).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Ho, e, t)
-                        }
-                    }
-                    class Wo extends y.Message {
-                        events = [];
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerTimingsResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "events",
-                            kind: "message",
-                            T: Oo,
-                            repeated: !0
+                            T: Ho
                         }]);
                         static fromBinary(e, t) {
                             return (new Wo).fromBinary(e, t)
@@ -260339,17 +260377,17 @@
                         }
                     }
                     class zo extends y.Message {
-                        bcId = "";
+                        composer;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerRepositoryInfoRequest";
+                        static typeName = "aiserver.v1.GetBackgroundComposerInfoResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
+                            name: "composer",
+                            kind: "message",
+                            T: Uo
                         }]);
                         static fromBinary(e, t) {
                             return (new zo).fromBinary(e, t)
@@ -260365,6 +260403,59 @@
                         }
                     }
                     class Vo extends y.Message {
+                        events = [];
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetBackgroundComposerTimingsResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "events",
+                            kind: "message",
+                            T: Jo,
+                            repeated: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Vo).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Vo).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Vo).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Vo, e, t)
+                        }
+                    }
+                    class $o extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetBackgroundComposerRepositoryInfoRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new $o).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new $o).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new $o).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals($o, e, t)
+                        }
+                    }
+                    class Ko extends y.Message {
                         repositoryInfo;
                         pathEncryptionKey;
                         queryOnlyRepoAccess;
@@ -260391,19 +260482,19 @@
                             T: Ot.bq
                         }]);
                         static fromBinary(e, t) {
-                            return (new Vo).fromBinary(e, t)
+                            return (new Ko).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Vo).fromJson(e, t)
+                            return (new Ko).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Vo).fromJsonString(e, t)
+                            return (new Ko).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Vo, e, t)
+                            return y.proto3.util.equals(Ko, e, t)
                         }
                     }
-                    class $o extends y.Message {
+                    class Zo extends y.Message {
                         bcId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -260417,19 +260508,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new $o).fromBinary(e, t)
+                            return (new Zo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new $o).fromJson(e, t)
+                            return (new Zo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new $o).fromJsonString(e, t)
+                            return (new Zo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals($o, e, t)
+                            return y.proto3.util.equals(Zo, e, t)
                         }
                     }
-                    class Ko extends y.Message {
+                    class Xo extends y.Message {
                         podId = "";
                         tenantId = "";
                         networkToken = "";
@@ -260475,19 +260566,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ko).fromBinary(e, t)
+                            return (new Xo).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ko).fromJson(e, t)
+                            return (new Xo).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ko).fromJsonString(e, t)
+                            return (new Xo).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ko, e, t)
+                            return y.proto3.util.equals(Xo, e, t)
                         }
                     }
-                    class Zo extends y.Message {
+                    class ei extends y.Message {
                         workerId = "";
                         workspaceRootPath = "";
                         constructor(e) {
@@ -260507,67 +260598,6 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Zo).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Zo).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Zo).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Zo, e, t)
-                        }
-                    }
-                    class Xo extends y.Message {
-                        reference = {
-                            case: void 0
-                        };
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.MachineReference";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "pod",
-                            kind: "message",
-                            T: Ko,
-                            oneof: "reference"
-                        }, {
-                            no: 2,
-                            name: "worker",
-                            kind: "message",
-                            T: Zo,
-                            oneof: "reference"
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Xo).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Xo).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Xo).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Xo, e, t)
-                        }
-                    }
-                    class ei extends y.Message {
-                        machine;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetMachineResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "machine",
-                            kind: "message",
-                            T: Xo
-                        }]);
-                        static fromBinary(e, t) {
                             return (new ei).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -260581,6 +260611,67 @@
                         }
                     }
                     class ti extends y.Message {
+                        reference = {
+                            case: void 0
+                        };
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.MachineReference";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "pod",
+                            kind: "message",
+                            T: Xo,
+                            oneof: "reference"
+                        }, {
+                            no: 2,
+                            name: "worker",
+                            kind: "message",
+                            T: ei,
+                            oneof: "reference"
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new ti).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new ti).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new ti).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(ti, e, t)
+                        }
+                    }
+                    class ni extends y.Message {
+                        machine;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetMachineResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "machine",
+                            kind: "message",
+                            T: ti
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new ni).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new ni).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new ni).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(ni, e, t)
+                        }
+                    }
+                    class ri extends y.Message {
                         mandatoryRepoUrls = [];
                         optionalRepoUrls = [];
                         skipCache;
@@ -260609,19 +260700,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ti).fromBinary(e, t)
+                            return (new ri).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ti).fromJson(e, t)
+                            return (new ri).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ti).fromJsonString(e, t)
+                            return (new ri).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ti, e, t)
+                            return y.proto3.util.equals(ri, e, t)
                         }
                     }
-                    class ni extends y.Message {
+                    class si extends y.Message {
                         hasAccess;
                         error;
                         repoUrlStatuses = [];
@@ -260648,7 +260739,7 @@
                             no: 3,
                             name: "repo_url_statuses",
                             kind: "message",
-                            T: ri,
+                            T: oi,
                             repeated: !0
                         }, {
                             no: 4,
@@ -260663,19 +260754,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ni).fromBinary(e, t)
+                            return (new si).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ni).fromJson(e, t)
+                            return (new si).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ni).fromJsonString(e, t)
+                            return (new si).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ni, e, t)
+                            return y.proto3.util.equals(si, e, t)
                         }
                     }
-                    class ri extends y.Message {
+                    class oi extends y.Message {
                         repoUrl = "";
                         hasAccess = !1;
                         error;
@@ -260702,19 +260793,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ri).fromBinary(e, t)
+                            return (new oi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ri).fromJson(e, t)
+                            return (new oi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ri).fromJsonString(e, t)
+                            return (new oi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ri, e, t)
+                            return y.proto3.util.equals(oi, e, t)
                         }
                     }
-                    class si extends y.Message {
+                    class ii extends y.Message {
                         method = "";
                         path = "";
                         bodyJson;
@@ -260774,19 +260865,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new si).fromBinary(e, t)
+                            return (new ii).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new si).fromJson(e, t)
+                            return (new ii).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new si).fromJsonString(e, t)
+                            return (new ii).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(si, e, t)
+                            return y.proto3.util.equals(ii, e, t)
                         }
                     }
-                    class oi extends y.Message {
+                    class ai extends y.Message {
                         status = 0;
                         statusText = "";
                         headers = {};
@@ -260822,59 +260913,6 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new oi).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new oi).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new oi).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(oi, e, t)
-                        }
-                    }
-                    class ii extends y.Message {
-                        bcId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerConversationRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new ii).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new ii).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new ii).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(ii, e, t)
-                        }
-                    }
-                    class ai extends y.Message {
-                        conversation = [];
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerConversationResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "conversation",
-                            kind: "message",
-                            T: Et.hS,
-                            repeated: !0
-                        }]);
-                        static fromBinary(e, t) {
                             return (new ai).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -260893,7 +260931,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerPullRequestRequest";
+                        static typeName = "aiserver.v1.GetBackgroundComposerConversationRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "bc_id",
@@ -260914,17 +260952,18 @@
                         }
                     }
                     class ci extends y.Message {
-                        prUrl = "";
+                        conversation = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerPullRequestResponse";
+                        static typeName = "aiserver.v1.GetBackgroundComposerConversationResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "pr_url",
-                            kind: "scalar",
-                            T: 9
+                            name: "conversation",
+                            kind: "message",
+                            T: Et.hS,
+                            repeated: !0
                         }]);
                         static fromBinary(e, t) {
                             return (new ci).fromBinary(e, t)
@@ -260940,6 +260979,58 @@
                         }
                     }
                     class ui extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetBackgroundComposerPullRequestRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new ui).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new ui).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new ui).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(ui, e, t)
+                        }
+                    }
+                    class di extends y.Message {
+                        prUrl = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetBackgroundComposerPullRequestResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "pr_url",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new di).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new di).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new di).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(di, e, t)
+                        }
+                    }
+                    class pi extends y.Message {
                         bcId = "";
                         commitMessage = "";
                         constructor(e) {
@@ -260959,19 +261050,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new ui).fromBinary(e, t)
+                            return (new pi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ui).fromJson(e, t)
+                            return (new pi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ui).fromJsonString(e, t)
+                            return (new pi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ui, e, t)
+                            return y.proto3.util.equals(pi, e, t)
                         }
                     }
-                    class di extends y.Message {
+                    class mi extends y.Message {
                         commitHash = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -260985,19 +261076,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new di).fromBinary(e, t)
+                            return (new mi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new di).fromJson(e, t)
+                            return (new mi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new di).fromJsonString(e, t)
+                            return (new mi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(di, e, t)
+                            return y.proto3.util.equals(mi, e, t)
                         }
                     }
-                    class pi extends y.Message {
+                    class hi extends y.Message {
                         environmentJson = "";
                         repoUrl = "";
                         writeSource = sn.UNSPECIFIED;
@@ -261042,7 +261133,7 @@
                             no: 6,
                             name: "repo_config",
                             kind: "message",
-                            T: _s,
+                            T: ks,
                             opt: !0
                         }, {
                             no: 7,
@@ -261058,59 +261149,6 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new pi).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new pi).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new pi).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(pi, e, t)
-                        }
-                    }
-                    class mi extends y.Message {
-                        environment;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.SetPersonalEnvironmentJsonResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "environment",
-                            kind: "message",
-                            T: Ri,
-                            opt: !0
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new mi).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new mi).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new mi).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(mi, e, t)
-                        }
-                    }
-                    class hi extends y.Message {
-                        repoUrl = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetPersonalEnvironmentJsonRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "repo_url",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new hi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -261124,6 +261162,59 @@
                         }
                     }
                     class fi extends y.Message {
+                        environment;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.SetPersonalEnvironmentJsonResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "environment",
+                            kind: "message",
+                            T: Mi,
+                            opt: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new fi).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new fi).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new fi).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(fi, e, t)
+                        }
+                    }
+                    class gi extends y.Message {
+                        repoUrl = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetPersonalEnvironmentJsonRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "repo_url",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new gi).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new gi).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new gi).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(gi, e, t)
+                        }
+                    }
+                    class Ai extends y.Message {
                         environmentJson = "";
                         repoUrl = "";
                         constructor(e) {
@@ -261143,19 +261234,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new fi).fromBinary(e, t)
+                            return (new Ai).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new fi).fromJson(e, t)
+                            return (new Ai).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new fi).fromJsonString(e, t)
+                            return (new Ai).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(fi, e, t)
+                            return y.proto3.util.equals(Ai, e, t)
                         }
                     }
-                    class gi extends y.Message {
+                    class yi extends y.Message {
                         repoUrl = "";
                         ref = "";
                         constructor(e) {
@@ -261175,19 +261266,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new gi).fromBinary(e, t)
+                            return (new yi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new gi).fromJson(e, t)
+                            return (new yi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new gi).fromJsonString(e, t)
+                            return (new yi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(gi, e, t)
+                            return y.proto3.util.equals(yi, e, t)
                         }
                     }
-                    class Ai extends y.Message {
+                    class wi extends y.Message {
                         repoEnvironmentJson;
                         personalEnvironmentJson;
                         teamEnvironmentJson;
@@ -261216,19 +261307,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ai).fromBinary(e, t)
+                            return (new wi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ai).fromJson(e, t)
+                            return (new wi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ai).fromJsonString(e, t)
+                            return (new wi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ai, e, t)
+                            return y.proto3.util.equals(wi, e, t)
                         }
                     }
-                    class yi extends y.Message {
+                    class vi extends y.Message {
                         limit;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -261243,19 +261334,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new yi).fromBinary(e, t)
+                            return (new vi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new yi).fromJson(e, t)
+                            return (new vi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new yi).fromJsonString(e, t)
+                            return (new vi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(yi, e, t)
+                            return y.proto3.util.equals(vi, e, t)
                         }
                     }
-                    class wi extends y.Message {
+                    class Ei extends y.Message {
                         repoUrl = "";
                         environmentJson = "";
                         createdAtMs = y.protoInt64.zero;
@@ -261300,19 +261391,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new wi).fromBinary(e, t)
+                            return (new Ei).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new wi).fromJson(e, t)
+                            return (new Ei).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new wi).fromJsonString(e, t)
+                            return (new Ei).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(wi, e, t)
+                            return y.proto3.util.equals(Ei, e, t)
                         }
                     }
-                    class vi extends y.Message {
+                    class _i extends y.Message {
                         environments = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -261323,23 +261414,23 @@
                             no: 1,
                             name: "environments",
                             kind: "message",
-                            T: wi,
+                            T: Ei,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new vi).fromBinary(e, t)
+                            return (new _i).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new vi).fromJson(e, t)
+                            return (new _i).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new vi).fromJsonString(e, t)
+                            return (new _i).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(vi, e, t)
+                            return y.proto3.util.equals(_i, e, t)
                         }
                     }
-                    class Ei extends y.Message {
+                    class Ti extends y.Message {
                         id = y.protoInt64.zero;
                         environmentPublicId;
                         constructor(e) {
@@ -261360,19 +261451,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ei).fromBinary(e, t)
+                            return (new Ti).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ei).fromJson(e, t)
+                            return (new Ti).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ei).fromJsonString(e, t)
+                            return (new Ti).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ei, e, t)
+                            return y.proto3.util.equals(Ti, e, t)
                         }
                     }
-                    class _i extends y.Message {
+                    class ki extends y.Message {
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
@@ -261380,19 +261471,19 @@
                         static typeName = "aiserver.v1.DeletePersonalEnvironmentJsonResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
-                            return (new _i).fromBinary(e, t)
+                            return (new ki).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new _i).fromJson(e, t)
+                            return (new ki).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new _i).fromJsonString(e, t)
+                            return (new ki).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(_i, e, t)
+                            return y.proto3.util.equals(ki, e, t)
                         }
                     }
-                    class Ti extends y.Message {
+                    class Ii extends y.Message {
                         id = y.protoInt64.zero;
                         environmentType = on.UNSPECIFIED;
                         constructor(e) {
@@ -261410,77 +261501,6 @@
                             name: "environment_type",
                             kind: "enum",
                             T: y.proto3.getEnumType(on)
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Ti).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Ti).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Ti).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Ti, e, t)
-                        }
-                    }
-                    class ki extends y.Message {
-                        success = !1;
-                        prUrl = "";
-                        branchName = "";
-                        error;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.PublishEnvironmentResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "success",
-                            kind: "scalar",
-                            T: 8
-                        }, {
-                            no: 2,
-                            name: "pr_url",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 3,
-                            name: "branch_name",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 4,
-                            name: "error",
-                            kind: "scalar",
-                            T: 9,
-                            opt: !0
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new ki).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new ki).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new ki).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(ki, e, t)
-                        }
-                    }
-                    class Ii extends y.Message {
-                        id = y.protoInt64.zero;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.PublishPersonalEnvironmentRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "id",
-                            kind: "scalar",
-                            T: 3
                         }]);
                         static fromBinary(e, t) {
                             return (new Ii).fromBinary(e, t)
@@ -261504,7 +261524,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.PublishPersonalEnvironmentResponse";
+                        static typeName = "aiserver.v1.PublishEnvironmentResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "success",
@@ -261541,18 +261561,17 @@
                         }
                     }
                     class Ci extends y.Message {
-                        limit;
+                        id = y.protoInt64.zero;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ListTeamEnvironmentsRequest";
+                        static typeName = "aiserver.v1.PublishPersonalEnvironmentRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "limit",
+                            name: "id",
                             kind: "scalar",
-                            T: 5,
-                            opt: !0
+                            T: 3
                         }]);
                         static fromBinary(e, t) {
                             return (new Ci).fromBinary(e, t)
@@ -261568,6 +261587,78 @@
                         }
                     }
                     class Si extends y.Message {
+                        success = !1;
+                        prUrl = "";
+                        branchName = "";
+                        error;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.PublishPersonalEnvironmentResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "success",
+                            kind: "scalar",
+                            T: 8
+                        }, {
+                            no: 2,
+                            name: "pr_url",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 3,
+                            name: "branch_name",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 4,
+                            name: "error",
+                            kind: "scalar",
+                            T: 9,
+                            opt: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Si).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Si).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Si).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Si, e, t)
+                        }
+                    }
+                    class Bi extends y.Message {
+                        limit;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.ListTeamEnvironmentsRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "limit",
+                            kind: "scalar",
+                            T: 5,
+                            opt: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Bi).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Bi).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Bi).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Bi, e, t)
+                        }
+                    }
+                    class xi extends y.Message {
                         id = y.protoInt64.zero;
                         teamId = 0;
                         repoUrl = "";
@@ -261637,19 +261728,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Si).fromBinary(e, t)
+                            return (new xi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Si).fromJson(e, t)
+                            return (new xi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Si).fromJsonString(e, t)
+                            return (new xi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Si, e, t)
+                            return y.proto3.util.equals(xi, e, t)
                         }
                     }
-                    class Bi extends y.Message {
+                    class Ri extends y.Message {
                         environments = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -261660,23 +261751,23 @@
                             no: 1,
                             name: "environments",
                             kind: "message",
-                            T: Si,
+                            T: xi,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Bi).fromBinary(e, t)
+                            return (new Ri).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Bi).fromJson(e, t)
+                            return (new Ri).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Bi).fromJsonString(e, t)
+                            return (new Ri).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Bi, e, t)
+                            return y.proto3.util.equals(Ri, e, t)
                         }
                     }
-                    class xi extends y.Message {
+                    class Ni extends y.Message {
                         limit;
                         includeEnvironmentJson;
                         repositoryScopeRepoUrls = [];
@@ -261705,19 +261796,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new xi).fromBinary(e, t)
+                            return (new Ni).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new xi).fromJson(e, t)
+                            return (new Ni).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new xi).fromJsonString(e, t)
+                            return (new Ni).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(xi, e, t)
+                            return y.proto3.util.equals(Ni, e, t)
                         }
                     }
-                    class Ri extends y.Message {
+                    class Mi extends y.Message {
                         id = y.protoInt64.zero;
                         publicId = "";
                         name = "";
@@ -261770,7 +261861,7 @@
                             no: 7,
                             name: "repo_config",
                             kind: "message",
-                            T: _s,
+                            T: ks,
                             opt: !0
                         }, {
                             no: 8,
@@ -261796,19 +261887,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ri).fromBinary(e, t)
+                            return (new Mi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ri).fromJson(e, t)
+                            return (new Mi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ri).fromJsonString(e, t)
+                            return (new Mi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ri, e, t)
+                            return y.proto3.util.equals(Mi, e, t)
                         }
                     }
-                    class Ni extends y.Message {
+                    class Pi extends y.Message {
                         environments = [];
                         dashboardScopeId;
                         constructor(e) {
@@ -261820,7 +261911,7 @@
                             no: 1,
                             name: "environments",
                             kind: "message",
-                            T: Ri,
+                            T: Mi,
                             repeated: !0
                         }, {
                             no: 2,
@@ -261830,19 +261921,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ni).fromBinary(e, t)
+                            return (new Pi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ni).fromJson(e, t)
+                            return (new Pi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ni).fromJsonString(e, t)
+                            return (new Pi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ni, e, t)
+                            return y.proto3.util.equals(Pi, e, t)
                         }
                     }
-                    class Mi extends y.Message {
+                    class Di extends y.Message {
                         publicId = "";
                         includeEnvironmentJson;
                         constructor(e) {
@@ -261863,19 +261954,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Mi).fromBinary(e, t)
+                            return (new Di).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Mi).fromJson(e, t)
+                            return (new Di).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Mi).fromJsonString(e, t)
+                            return (new Di).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Mi, e, t)
+                            return y.proto3.util.equals(Di, e, t)
                         }
                     }
-                    class Pi extends y.Message {
+                    class Fi extends y.Message {
                         environment;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -261886,23 +261977,23 @@
                             no: 1,
                             name: "environment",
                             kind: "message",
-                            T: Ri,
+                            T: Mi,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Pi).fromBinary(e, t)
+                            return (new Fi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Pi).fromJson(e, t)
+                            return (new Fi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Pi).fromJsonString(e, t)
+                            return (new Fi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Pi, e, t)
+                            return y.proto3.util.equals(Fi, e, t)
                         }
                     }
-                    class Di extends y.Message {
+                    class Li extends y.Message {
                         ownerId = {
                             case: void 0
                         };
@@ -261936,7 +262027,7 @@
                             no: 4,
                             name: "repo_config",
                             kind: "message",
-                            T: _s
+                            T: ks
                         }, {
                             no: 5,
                             name: "write_source",
@@ -261949,19 +262040,19 @@
                             T: y.proto3.getEnumType(ln)
                         }]);
                         static fromBinary(e, t) {
-                            return (new Di).fromBinary(e, t)
+                            return (new Li).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Di).fromJson(e, t)
+                            return (new Li).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Di).fromJsonString(e, t)
+                            return (new Li).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Di, e, t)
+                            return y.proto3.util.equals(Li, e, t)
                         }
                     }
-                    class Fi extends y.Message {
+                    class Oi extends y.Message {
                         environment;
                         created = !1;
                         constructor(e) {
@@ -261973,7 +262064,7 @@
                             no: 1,
                             name: "environment",
                             kind: "message",
-                            T: Ri
+                            T: Mi
                         }, {
                             no: 2,
                             name: "created",
@@ -261981,19 +262072,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new Fi).fromBinary(e, t)
+                            return (new Oi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Fi).fromJson(e, t)
+                            return (new Oi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Fi).fromJsonString(e, t)
+                            return (new Oi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Fi, e, t)
+                            return y.proto3.util.equals(Oi, e, t)
                         }
                     }
-                    class Li extends y.Message {
+                    class Qi extends y.Message {
                         bcId = "";
                         targetScope = an.UNSPECIFIED;
                         repoUrl = "";
@@ -262022,23 +262113,23 @@
                             no: 4,
                             name: "repo_config",
                             kind: "message",
-                            T: _s,
+                            T: ks,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Li).fromBinary(e, t)
+                            return (new Qi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Li).fromJson(e, t)
+                            return (new Qi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Li).fromJsonString(e, t)
+                            return (new Qi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Li, e, t)
+                            return y.proto3.util.equals(Qi, e, t)
                         }
                     }
-                    class Oi extends y.Message {
+                    class Ji extends y.Message {
                         environment;
                         created = !1;
                         constructor(e) {
@@ -262050,7 +262141,7 @@
                             no: 1,
                             name: "environment",
                             kind: "message",
-                            T: Ri
+                            T: Mi
                         }, {
                             no: 2,
                             name: "created",
@@ -262058,19 +262149,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new Oi).fromBinary(e, t)
+                            return (new Ji).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Oi).fromJson(e, t)
+                            return (new Ji).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Oi).fromJsonString(e, t)
+                            return (new Ji).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Oi, e, t)
+                            return y.proto3.util.equals(Ji, e, t)
                         }
                     }
-                    class Qi extends y.Message {
+                    class Ui extends y.Message {
                         repoUrls = [];
                         environmentJsonPath;
                         constructor(e) {
@@ -262092,19 +262183,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Qi).fromBinary(e, t)
+                            return (new Ui).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Qi).fromJson(e, t)
+                            return (new Ui).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Qi).fromJsonString(e, t)
+                            return (new Ui).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Qi, e, t)
+                            return y.proto3.util.equals(Ui, e, t)
                         }
                     }
-                    class Ji extends y.Message {
+                    class qi extends y.Message {
                         restoredFromEnvironmentVersionPublicId = "";
                         restoredFromSourceKind = cn.UNSPECIFIED;
                         restoredFromEnvironmentPublicId;
@@ -262145,19 +262236,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ji).fromBinary(e, t)
+                            return (new qi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ji).fromJson(e, t)
+                            return (new qi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ji).fromJsonString(e, t)
+                            return (new qi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ji, e, t)
+                            return y.proto3.util.equals(qi, e, t)
                         }
                     }
-                    class Ui extends y.Message {
+                    class Gi extends y.Message {
                         publicId = "";
                         sourceKind = cn.UNSPECIFIED;
                         commitHash;
@@ -262200,7 +262291,7 @@
                             no: 5,
                             name: "repo_config",
                             kind: "message",
-                            T: Qi,
+                            T: Ui,
                             opt: !0
                         }, {
                             no: 6,
@@ -262239,59 +262330,6 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ui).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Ui).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Ui).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Ui, e, t)
-                        }
-                    }
-                    class qi extends y.Message {
-                        bcId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerEnvironmentVersionRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new qi).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new qi).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new qi).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(qi, e, t)
-                        }
-                    }
-                    class Gi extends y.Message {
-                        environmentVersionHistory = [];
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerEnvironmentVersionResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "environment_version_history",
-                            kind: "message",
-                            T: Ui,
-                            repeated: !0
-                        }]);
-                        static fromBinary(e, t) {
                             return (new Gi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -262305,6 +262343,59 @@
                         }
                     }
                     class ji extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetBackgroundComposerEnvironmentVersionRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new ji).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new ji).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new ji).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(ji, e, t)
+                        }
+                    }
+                    class Yi extends y.Message {
+                        environmentVersionHistory = [];
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetBackgroundComposerEnvironmentVersionResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "environment_version_history",
+                            kind: "message",
+                            T: Gi,
+                            repeated: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Yi).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Yi).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Yi).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Yi, e, t)
+                        }
+                    }
+                    class Hi extends y.Message {
                         bcId = "";
                         status;
                         createdAtMs = y.protoInt64.zero;
@@ -262338,19 +262429,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ji).fromBinary(e, t)
+                            return (new Hi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ji).fromJson(e, t)
+                            return (new Hi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ji).fromJsonString(e, t)
+                            return (new Hi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ji, e, t)
+                            return y.proto3.util.equals(Hi, e, t)
                         }
                     }
-                    class Yi extends y.Message {
+                    class Wi extends y.Message {
                         version;
                         setupRun;
                         constructor(e) {
@@ -262362,28 +262453,28 @@
                             no: 1,
                             name: "version",
                             kind: "message",
-                            T: Ui
+                            T: Gi
                         }, {
                             no: 2,
                             name: "setup_run",
                             kind: "message",
-                            T: ji,
+                            T: Hi,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Yi).fromBinary(e, t)
+                            return (new Wi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Yi).fromJson(e, t)
+                            return (new Wi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Yi).fromJsonString(e, t)
+                            return (new Wi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Yi, e, t)
+                            return y.proto3.util.equals(Wi, e, t)
                         }
                     }
-                    class Hi extends y.Message {
+                    class zi extends y.Message {
                         publicId = "";
                         eventKind = un.UNSPECIFIED;
                         sourceKind = cn.UNSPECIFIED;
@@ -262426,35 +262517,35 @@
                             no: 6,
                             name: "version",
                             kind: "message",
-                            T: Ui,
+                            T: Gi,
                             opt: !0
                         }, {
                             no: 7,
                             name: "setup_run",
                             kind: "message",
-                            T: ji,
+                            T: Hi,
                             opt: !0
                         }, {
                             no: 8,
                             name: "restore_metadata",
                             kind: "message",
-                            T: Ji,
+                            T: qi,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Hi).fromBinary(e, t)
+                            return (new zi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Hi).fromJson(e, t)
+                            return (new zi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Hi).fromJsonString(e, t)
+                            return (new zi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Hi, e, t)
+                            return y.proto3.util.equals(zi, e, t)
                         }
                     }
-                    class Wi extends y.Message {
+                    class Vi extends y.Message {
                         environment;
                         versions = [];
                         lifecycleEvents = [];
@@ -262467,34 +262558,34 @@
                             no: 1,
                             name: "environment",
                             kind: "message",
-                            T: Ri
+                            T: Mi
                         }, {
                             no: 2,
                             name: "versions",
                             kind: "message",
-                            T: Yi,
+                            T: Wi,
                             repeated: !0
                         }, {
                             no: 3,
                             name: "lifecycle_events",
                             kind: "message",
-                            T: Hi,
+                            T: zi,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Wi).fromBinary(e, t)
+                            return (new Vi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Wi).fromJson(e, t)
+                            return (new Vi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Wi).fromJsonString(e, t)
+                            return (new Vi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Wi, e, t)
+                            return y.proto3.util.equals(Vi, e, t)
                         }
                     }
-                    class zi extends y.Message {
+                    class $i extends y.Message {
                         id = "";
                         createdAtMs = y.protoInt64.zero;
                         scope = an.UNSPECIFIED;
@@ -262546,19 +262637,19 @@
                             no: 7,
                             name: "version",
                             kind: "message",
-                            T: Ui,
+                            T: Gi,
                             opt: !0
                         }, {
                             no: 8,
                             name: "fallback_version",
                             kind: "message",
-                            T: Ui,
+                            T: Gi,
                             opt: !0
                         }, {
                             no: 9,
                             name: "setup_run",
                             kind: "message",
-                            T: ji,
+                            T: Hi,
                             opt: !0
                         }, {
                             no: 10,
@@ -262576,23 +262667,23 @@
                             no: 12,
                             name: "restore_metadata",
                             kind: "message",
-                            T: Ji,
+                            T: qi,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new zi).fromBinary(e, t)
+                            return (new $i).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new zi).fromJson(e, t)
+                            return (new $i).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new zi).fromJsonString(e, t)
+                            return (new $i).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(zi, e, t)
+                            return y.proto3.util.equals($i, e, t)
                         }
                     }
-                    class Vi extends y.Message {
+                    class Ki extends y.Message {
                         repoConfig;
                         environmentPublicIds = [];
                         limit;
@@ -262606,7 +262697,7 @@
                             no: 1,
                             name: "repo_config",
                             kind: "message",
-                            T: _s,
+                            T: ks,
                             opt: !0
                         }, {
                             no: 2,
@@ -262628,19 +262719,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Vi).fromBinary(e, t)
+                            return (new Ki).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Vi).fromJson(e, t)
+                            return (new Ki).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Vi).fromJsonString(e, t)
+                            return (new Ki).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Vi, e, t)
+                            return y.proto3.util.equals(Ki, e, t)
                         }
                     }
-                    class $i extends y.Message {
+                    class Zi extends y.Message {
                         effectiveEvents = [];
                         environmentHistories = [];
                         truncated = !1;
@@ -262654,13 +262745,13 @@
                             no: 1,
                             name: "effective_events",
                             kind: "message",
-                            T: zi,
+                            T: $i,
                             repeated: !0
                         }, {
                             no: 2,
                             name: "environment_histories",
                             kind: "message",
-                            T: Wi,
+                            T: Vi,
                             repeated: !0
                         }, {
                             no: 3,
@@ -262674,19 +262765,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new $i).fromBinary(e, t)
+                            return (new Zi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new $i).fromJson(e, t)
+                            return (new Zi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new $i).fromJsonString(e, t)
+                            return (new Zi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals($i, e, t)
+                            return y.proto3.util.equals(Zi, e, t)
                         }
                     }
-                    class Ki extends y.Message {
+                    class Xi extends y.Message {
                         id = y.protoInt64.zero;
                         environmentPublicId;
                         constructor(e) {
@@ -262707,19 +262798,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ki).fromBinary(e, t)
+                            return (new Xi).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ki).fromJson(e, t)
+                            return (new Xi).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ki).fromJsonString(e, t)
+                            return (new Xi).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ki, e, t)
+                            return y.proto3.util.equals(Xi, e, t)
                         }
                     }
-                    class Zi extends y.Message {
+                    class ea extends y.Message {
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
@@ -262727,19 +262818,19 @@
                         static typeName = "aiserver.v1.DeleteTeamEnvironmentResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
-                            return (new Zi).fromBinary(e, t)
+                            return (new ea).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Zi).fromJson(e, t)
+                            return (new ea).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Zi).fromJsonString(e, t)
+                            return (new ea).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Zi, e, t)
+                            return y.proto3.util.equals(ea, e, t)
                         }
                     }
-                    class Xi extends y.Message {
+                    class ta extends y.Message {
                         environmentVersionPublicId = "";
                         targetScope = an.UNSPECIFIED;
                         targetEnvironmentPublicId;
@@ -262773,19 +262864,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Xi).fromBinary(e, t)
+                            return (new ta).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Xi).fromJson(e, t)
+                            return (new ta).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Xi).fromJsonString(e, t)
+                            return (new ta).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Xi, e, t)
+                            return y.proto3.util.equals(ta, e, t)
                         }
                     }
-                    class ea extends y.Message {
+                    class na extends y.Message {
                         environment;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -262796,23 +262887,23 @@
                             no: 1,
                             name: "environment",
                             kind: "message",
-                            T: Ri,
+                            T: Mi,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ea).fromBinary(e, t)
+                            return (new na).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ea).fromJson(e, t)
+                            return (new na).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ea).fromJsonString(e, t)
+                            return (new na).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ea, e, t)
+                            return y.proto3.util.equals(na, e, t)
                         }
                     }
-                    class ta extends y.Message {
+                    class ra extends y.Message {
                         environmentJson = "";
                         repoUrl = "";
                         scmRepoNodeId = "";
@@ -262877,7 +262968,7 @@
                             no: 9,
                             name: "repo_config",
                             kind: "message",
-                            T: _s,
+                            T: ks,
                             opt: !0
                         }, {
                             no: 10,
@@ -262899,19 +262990,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ta).fromBinary(e, t)
+                            return (new ra).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ta).fromJson(e, t)
+                            return (new ra).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ta).fromJsonString(e, t)
+                            return (new ra).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ta, e, t)
+                            return y.proto3.util.equals(ra, e, t)
                         }
                     }
-                    class na extends y.Message {
+                    class sa extends y.Message {
                         environment;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -262922,23 +263013,23 @@
                             no: 1,
                             name: "environment",
                             kind: "message",
-                            T: Ri,
+                            T: Mi,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new na).fromBinary(e, t)
+                            return (new sa).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new na).fromJson(e, t)
+                            return (new sa).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new na).fromJsonString(e, t)
+                            return (new sa).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(na, e, t)
+                            return y.proto3.util.equals(sa, e, t)
                         }
                     }
-                    class ra extends y.Message {
+                    class oa extends y.Message {
                         target = Dn.UNSPECIFIED;
                         bcId = "";
                         repoUrl = "";
@@ -263003,7 +263094,7 @@
                             no: 9,
                             name: "repo_config",
                             kind: "message",
-                            T: _s,
+                            T: ks,
                             opt: !0
                         }, {
                             no: 10,
@@ -263013,16 +263104,16 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ra).fromBinary(e, t)
+                            return (new oa).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ra).fromJson(e, t)
+                            return (new oa).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ra).fromJsonString(e, t)
+                            return (new oa).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ra, e, t)
+                            return y.proto3.util.equals(oa, e, t)
                         }
                     }! function(e) {
                         e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.PERSONAL = 1] = "PERSONAL", e[e.TEAM = 2] = "TEAM"
@@ -263036,7 +263127,7 @@
                         no: 2,
                         name: "TARGET_TEAM"
                     }]);
-                    class sa extends y.Message {
+                    class ia extends y.Message {
                         snapshotId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -263050,19 +263141,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new sa).fromBinary(e, t)
+                            return (new ia).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new sa).fromJson(e, t)
+                            return (new ia).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new sa).fromJsonString(e, t)
+                            return (new ia).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(sa, e, t)
+                            return y.proto3.util.equals(ia, e, t)
                         }
                     }
-                    class oa extends y.Message {
+                    class aa extends y.Message {
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
@@ -263070,19 +263161,19 @@
                         static typeName = "aiserver.v1.ListReposWithLocalEnvironmentRequest";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
-                            return (new oa).fromBinary(e, t)
+                            return (new aa).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new oa).fromJson(e, t)
+                            return (new aa).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new oa).fromJsonString(e, t)
+                            return (new aa).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(oa, e, t)
+                            return y.proto3.util.equals(aa, e, t)
                         }
                     }
-                    class ia extends y.Message {
+                    class la extends y.Message {
                         repoUrl = "";
                         fileExists = !1;
                         lastSeenAtMs = y.protoInt64.zero;
@@ -263108,59 +263199,6 @@
                             T: 3
                         }]);
                         static fromBinary(e, t) {
-                            return (new ia).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new ia).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new ia).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(ia, e, t)
-                        }
-                    }
-                    class aa extends y.Message {
-                        repos = [];
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ListReposWithLocalEnvironmentResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "repos",
-                            kind: "message",
-                            T: ia,
-                            repeated: !0
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new aa).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new aa).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new aa).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(aa, e, t)
-                        }
-                    }
-                    class la extends y.Message {
-                        bcId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.MarkBackgroundComposerReadRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new la).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -263174,12 +263212,19 @@
                         }
                     }
                     class ca extends y.Message {
+                        repos = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.MarkBackgroundComposerReadResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
+                        static typeName = "aiserver.v1.ListReposWithLocalEnvironmentResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "repos",
+                            kind: "message",
+                            T: la,
+                            repeated: !0
+                        }]);
                         static fromBinary(e, t) {
                             return (new ca).fromBinary(e, t)
                         }
@@ -263199,7 +263244,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.MarkBackgroundComposerUnreadRequest";
+                        static typeName = "aiserver.v1.MarkBackgroundComposerReadRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "bc_id",
@@ -263224,7 +263269,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.MarkBackgroundComposerUnreadResponse";
+                        static typeName = "aiserver.v1.MarkBackgroundComposerReadResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
                             return (new da).fromBinary(e, t)
@@ -263240,6 +263285,52 @@
                         }
                     }
                     class pa extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.MarkBackgroundComposerUnreadRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new pa).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new pa).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new pa).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(pa, e, t)
+                        }
+                    }
+                    class ma extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.MarkBackgroundComposerUnreadResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new ma).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new ma).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new ma).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(ma, e, t)
+                        }
+                    }
+                    class ha extends y.Message {
                         bcId = "";
                         startIndex = 0;
                         limit;
@@ -263266,19 +263357,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new pa).fromBinary(e, t)
+                            return (new ha).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new pa).fromJson(e, t)
+                            return (new ha).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new pa).fromJsonString(e, t)
+                            return (new ha).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(pa, e, t)
+                            return y.proto3.util.equals(ha, e, t)
                         }
                     }
-                    class ma extends y.Message {
+                    class fa extends y.Message {
                         responses = [];
                         totalResponses = 0;
                         constructor(e) {
@@ -263290,7 +263381,7 @@
                             no: 1,
                             name: "responses",
                             kind: "message",
-                            T: to,
+                            T: ro,
                             repeated: !0
                         }, {
                             no: 2,
@@ -263299,19 +263390,19 @@
                             T: 5
                         }]);
                         static fromBinary(e, t) {
-                            return (new ma).fromBinary(e, t)
+                            return (new fa).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ma).fromJson(e, t)
+                            return (new fa).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ma).fromJsonString(e, t)
+                            return (new fa).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ma, e, t)
+                            return y.proto3.util.equals(fa, e, t)
                         }
                     }
-                    class ha extends y.Message {
+                    class ga extends y.Message {
                         bcId = "";
                         sourceType;
                         constructor(e) {
@@ -263332,58 +263423,6 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ha).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new ha).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new ha).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(ha, e, t)
-                        }
-                    }
-                    class fa extends y.Message {
-                        summary = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetTurnSummaryBackgroundComposerResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "summary",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new fa).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new fa).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new fa).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(fa, e, t)
-                        }
-                    }
-                    class ga extends y.Message {
-                        bcId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerNameRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new ga).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -263397,15 +263436,15 @@
                         }
                     }
                     class Aa extends y.Message {
-                        name = "";
+                        summary = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerNameResponse";
+                        static typeName = "aiserver.v1.GetTurnSummaryBackgroundComposerResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "name",
+                            name: "summary",
                             kind: "scalar",
                             T: 9
                         }]);
@@ -263428,7 +263467,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerPromptRequest";
+                        static typeName = "aiserver.v1.GetBackgroundComposerNameRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "bc_id",
@@ -263449,17 +263488,17 @@
                         }
                     }
                     class wa extends y.Message {
-                        prompt;
+                        name = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerPromptResponse";
+                        static typeName = "aiserver.v1.GetBackgroundComposerNameResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "prompt",
-                            kind: "message",
-                            T: Et.hS
+                            name: "name",
+                            kind: "scalar",
+                            T: 9
                         }]);
                         static fromBinary(e, t) {
                             return (new wa).fromBinary(e, t)
@@ -263480,7 +263519,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ListBackgroundComposerArtifactsRequest";
+                        static typeName = "aiserver.v1.GetBackgroundComposerPromptRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "bc_id",
@@ -263501,6 +263540,58 @@
                         }
                     }
                     class Ea extends y.Message {
+                        prompt;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetBackgroundComposerPromptResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "prompt",
+                            kind: "message",
+                            T: Et.hS
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Ea).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Ea).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Ea).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Ea, e, t)
+                        }
+                    }
+                    class _a extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.ListBackgroundComposerArtifactsRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new _a).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new _a).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new _a).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(_a, e, t)
+                        }
+                    }
+                    class Ta extends y.Message {
                         absolutePath = "";
                         sizeBytes = y.protoInt64.zero;
                         updatedAtUnixMs = y.protoInt64.zero;
@@ -263526,65 +263617,6 @@
                             T: 3
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ea).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Ea).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Ea).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Ea, e, t)
-                        }
-                    }
-                    class _a extends y.Message {
-                        artifacts = [];
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ListBackgroundComposerArtifactsResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "artifacts",
-                            kind: "message",
-                            T: Ea,
-                            repeated: !0
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new _a).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new _a).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new _a).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(_a, e, t)
-                        }
-                    }
-                    class Ta extends y.Message {
-                        bcId = "";
-                        absolutePath = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerArtifactRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 2,
-                            name: "absolute_path",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new Ta).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -263598,23 +263630,18 @@
                         }
                     }
                     class ka extends y.Message {
-                        url = "";
-                        expiresAt = "";
+                        artifacts = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerArtifactResponse";
+                        static typeName = "aiserver.v1.ListBackgroundComposerArtifactsResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "url",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 2,
-                            name: "expires_at",
-                            kind: "scalar",
-                            T: 9
+                            name: "artifacts",
+                            kind: "message",
+                            T: Ta,
+                            repeated: !0
                         }]);
                         static fromBinary(e, t) {
                             return (new ka).fromBinary(e, t)
@@ -263636,7 +263663,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerArtifactBytesRequest";
+                        static typeName = "aiserver.v1.GetBackgroundComposerArtifactRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "bc_id",
@@ -263662,6 +263689,70 @@
                         }
                     }
                     class ba extends y.Message {
+                        url = "";
+                        expiresAt = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetBackgroundComposerArtifactResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "url",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 2,
+                            name: "expires_at",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new ba).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new ba).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new ba).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(ba, e, t)
+                        }
+                    }
+                    class Ca extends y.Message {
+                        bcId = "";
+                        absolutePath = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetBackgroundComposerArtifactBytesRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 2,
+                            name: "absolute_path",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Ca).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Ca).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Ca).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Ca, e, t)
+                        }
+                    }
+                    class Sa extends y.Message {
                         content = new Uint8Array(0);
                         contentType = "";
                         constructor(e) {
@@ -263681,19 +263772,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new ba).fromBinary(e, t)
+                            return (new Sa).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ba).fromJson(e, t)
+                            return (new Sa).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ba).fromJsonString(e, t)
+                            return (new Sa).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ba, e, t)
+                            return y.proto3.util.equals(Sa, e, t)
                         }
                     }
-                    class Ca extends y.Message {
+                    class Ba extends y.Message {
                         bcId = "";
                         path = "";
                         constructor(e) {
@@ -263713,19 +263804,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ca).fromBinary(e, t)
+                            return (new Ba).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ca).fromJson(e, t)
+                            return (new Ba).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ca).fromJsonString(e, t)
+                            return (new Ba).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ca, e, t)
+                            return y.proto3.util.equals(Ba, e, t)
                         }
                     }
-                    class Sa extends y.Message {
+                    class xa extends y.Message {
                         content = new Uint8Array(0);
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -263739,19 +263830,19 @@
                             T: 12
                         }]);
                         static fromBinary(e, t) {
-                            return (new Sa).fromBinary(e, t)
+                            return (new xa).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Sa).fromJson(e, t)
+                            return (new xa).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Sa).fromJsonString(e, t)
+                            return (new xa).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Sa, e, t)
+                            return y.proto3.util.equals(xa, e, t)
                         }
                     }
-                    class Ba extends y.Message {
+                    class Ra extends y.Message {
                         bcId = "";
                         absolutePath = "";
                         constructor(e) {
@@ -263771,19 +263862,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ba).fromBinary(e, t)
+                            return (new Ra).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ba).fromJson(e, t)
+                            return (new Ra).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ba).fromJsonString(e, t)
+                            return (new Ra).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ba, e, t)
+                            return y.proto3.util.equals(Ra, e, t)
                         }
                     }
-                    class xa extends y.Message {
+                    class Na extends y.Message {
                         contentChunk = new Uint8Array(0);
                         contentType = "";
                         totalSize = y.protoInt64.zero;
@@ -263809,19 +263900,19 @@
                             T: 3
                         }]);
                         static fromBinary(e, t) {
-                            return (new xa).fromBinary(e, t)
+                            return (new Na).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new xa).fromJson(e, t)
+                            return (new Na).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new xa).fromJsonString(e, t)
+                            return (new Na).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(xa, e, t)
+                            return y.proto3.util.equals(Na, e, t)
                         }
                     }
-                    class Ra extends y.Message {
+                    class Ma extends y.Message {
                         artifactId = "";
                         sourceBcId = "";
                         sourceAbsolutePath = "";
@@ -263890,59 +263981,6 @@
                             T: 3
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ra).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Ra).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Ra).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Ra, e, t)
-                        }
-                    }
-                    class Na extends y.Message {
-                        bcId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ListSharedBackgroundComposerArtifactsRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "bc_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Na).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Na).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Na).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Na, e, t)
-                        }
-                    }
-                    class Ma extends y.Message {
-                        artifacts = [];
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ListSharedBackgroundComposerArtifactsResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "artifacts",
-                            kind: "message",
-                            T: Ra,
-                            repeated: !0
-                        }]);
-                        static fromBinary(e, t) {
                             return (new Ma).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -263956,6 +263994,59 @@
                         }
                     }
                     class Pa extends y.Message {
+                        bcId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.ListSharedBackgroundComposerArtifactsRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Pa).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Pa).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Pa).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Pa, e, t)
+                        }
+                    }
+                    class Da extends y.Message {
+                        artifacts = [];
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.ListSharedBackgroundComposerArtifactsResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "artifacts",
+                            kind: "message",
+                            T: Ma,
+                            repeated: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Da).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Da).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Da).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Da, e, t)
+                        }
+                    }
+                    class Fa extends y.Message {
                         bcId = "";
                         absolutePath = "";
                         title;
@@ -263982,58 +264073,6 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Pa).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Pa).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Pa).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Pa, e, t)
-                        }
-                    }
-                    class Da extends y.Message {
-                        artifact;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ShareBackgroundComposerArtifactResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "artifact",
-                            kind: "message",
-                            T: Ra
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Da).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Da).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Da).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Da, e, t)
-                        }
-                    }
-                    class Fa extends y.Message {
-                        artifactId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.UnshareBackgroundComposerArtifactRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "artifact_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new Fa).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -264052,13 +264091,12 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.UnshareBackgroundComposerArtifactResponse";
+                        static typeName = "aiserver.v1.ShareBackgroundComposerArtifactResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "artifact",
                             kind: "message",
-                            T: Ra,
-                            opt: !0
+                            T: Ma
                         }]);
                         static fromBinary(e, t) {
                             return (new La).fromBinary(e, t)
@@ -264079,7 +264117,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetPublicBackgroundComposerArtifactRequest";
+                        static typeName = "aiserver.v1.UnshareBackgroundComposerArtifactRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "artifact_id",
@@ -264100,6 +264138,59 @@
                         }
                     }
                     class Qa extends y.Message {
+                        artifact;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.UnshareBackgroundComposerArtifactResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "artifact",
+                            kind: "message",
+                            T: Ma,
+                            opt: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Qa).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Qa).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Qa).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Qa, e, t)
+                        }
+                    }
+                    class Ja extends y.Message {
+                        artifactId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetPublicBackgroundComposerArtifactRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "artifact_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Ja).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Ja).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Ja).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Ja, e, t)
+                        }
+                    }
+                    class Ua extends y.Message {
                         url = "";
                         contentType = "";
                         title;
@@ -264126,19 +264217,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Qa).fromBinary(e, t)
+                            return (new Ua).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Qa).fromJson(e, t)
+                            return (new Ua).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Qa).fromJsonString(e, t)
+                            return (new Ua).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Qa, e, t)
+                            return y.proto3.util.equals(Ua, e, t)
                         }
                     }
-                    class Ja extends y.Message {
+                    class qa extends y.Message {
                         allowlist = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -264153,19 +264244,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ja).fromBinary(e, t)
+                            return (new qa).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ja).fromJson(e, t)
+                            return (new qa).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ja).fromJsonString(e, t)
+                            return (new qa).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ja, e, t)
+                            return y.proto3.util.equals(qa, e, t)
                         }
                     }
-                    class Ua extends y.Message {
+                    class Ga extends y.Message {
                         id = "";
                         label = "";
                         templateId = "";
@@ -264215,19 +264306,19 @@
                             T: y.proto3.getEnumType(pn)
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ua).fromBinary(e, t)
+                            return (new Ga).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ua).fromJson(e, t)
+                            return (new Ga).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ua).fromJsonString(e, t)
+                            return (new Ga).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ua, e, t)
+                            return y.proto3.util.equals(Ga, e, t)
                         }
                     }
-                    class qa extends y.Message {
+                    class ja extends y.Message {
                         templateId = "";
                         label = "";
                         description = "";
@@ -264291,19 +264382,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new qa).fromBinary(e, t)
+                            return (new ja).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new qa).fromJson(e, t)
+                            return (new ja).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new qa).fromJsonString(e, t)
+                            return (new ja).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(qa, e, t)
+                            return y.proto3.util.equals(ja, e, t)
                         }
                     }
-                    class Ga extends y.Message {
+                    class Ya extends y.Message {
                         operation = hn.UNSPECIFIED;
                         template;
                         constructor(e) {
@@ -264320,22 +264411,22 @@
                             no: 2,
                             name: "template",
                             kind: "message",
-                            T: qa
+                            T: ja
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ga).fromBinary(e, t)
+                            return (new Ya).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ga).fromJson(e, t)
+                            return (new Ya).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ga).fromJsonString(e, t)
+                            return (new Ya).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ga, e, t)
+                            return y.proto3.util.equals(Ya, e, t)
                         }
                     }
-                    class ja extends y.Message {
+                    class Ha extends y.Message {
                         quickActionSubagentSlots = [];
                         quickActionSubagentSlotsExplicitlySet = !1;
                         quickActionSubagentCatalogVersion;
@@ -264350,7 +264441,7 @@
                             no: 1,
                             name: "quick_action_subagent_slots",
                             kind: "message",
-                            T: Ua,
+                            T: Ga,
                             repeated: !0
                         }, {
                             no: 2,
@@ -264367,29 +264458,29 @@
                             no: 4,
                             name: "quick_action_subagent_templates",
                             kind: "message",
-                            T: qa,
+                            T: ja,
                             repeated: !0
                         }, {
                             no: 5,
                             name: "quick_action_subagent_template_mutations",
                             kind: "message",
-                            T: Ga,
+                            T: Ya,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ja).fromBinary(e, t)
+                            return (new Ha).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ja).fromJson(e, t)
+                            return (new Ha).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ja).fromJsonString(e, t)
+                            return (new Ha).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ja, e, t)
+                            return y.proto3.util.equals(Ha, e, t)
                         }
                     }
-                    class Ya extends y.Message {
+                    class Wa extends y.Message {
                         repoConfig;
                         environmentPublicId;
                         constructor(e) {
@@ -264401,7 +264492,7 @@
                             no: 1,
                             name: "repo_config",
                             kind: "message",
-                            T: _s,
+                            T: ks,
                             opt: !0
                         }, {
                             no: 2,
@@ -264411,19 +264502,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ya).fromBinary(e, t)
+                            return (new Wa).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ya).fromJson(e, t)
+                            return (new Wa).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ya).fromJsonString(e, t)
+                            return (new Wa).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ya, e, t)
+                            return y.proto3.util.equals(Wa, e, t)
                         }
                     }
-                    class Ha extends y.Message {
+                    class za extends y.Message {
                         modelName;
                         slackNotificationsForWebEnabled;
                         ciFailureFollowupEnabled;
@@ -264497,7 +264588,7 @@
                             no: 9,
                             name: "egress_policy",
                             kind: "message",
-                            T: Ja,
+                            T: qa,
                             opt: !0
                         }, {
                             no: 10,
@@ -264509,7 +264600,7 @@
                             no: 11,
                             name: "quick_action_settings",
                             kind: "message",
-                            T: ja,
+                            T: Ha,
                             opt: !0
                         }, {
                             no: 12,
@@ -264533,7 +264624,7 @@
                             no: 15,
                             name: "default_environment_settings",
                             kind: "message",
-                            T: Ya,
+                            T: Wa,
                             repeated: !0
                         }, {
                             no: 16,
@@ -264542,46 +264633,6 @@
                             T: 8,
                             opt: !0
                         }]);
-                        static fromBinary(e, t) {
-                            return (new Ha).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Ha).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Ha).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Ha, e, t)
-                        }
-                    }
-                    class Wa extends y.Message {
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.UpdateBackgroundComposerUserSettingsResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
-                        static fromBinary(e, t) {
-                            return (new Wa).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Wa).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Wa).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Wa, e, t)
-                        }
-                    }
-                    class za extends y.Message {
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetBackgroundComposerUserSettingsRequest";
-                        static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
                             return (new za).fromBinary(e, t)
                         }
@@ -264596,6 +264647,46 @@
                         }
                     }
                     class Va extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.UpdateBackgroundComposerUserSettingsResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new Va).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Va).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Va).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Va, e, t)
+                        }
+                    }
+                    class $a extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetBackgroundComposerUserSettingsRequest";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new $a).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new $a).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new $a).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals($a, e, t)
+                        }
+                    }
+                    class Ka extends y.Message {
                         modelName;
                         slackNotificationsForWebEnabled;
                         ciFailureFollowupEnabled;
@@ -264668,7 +264759,7 @@
                             no: 9,
                             name: "egress_policy",
                             kind: "message",
-                            T: Ja,
+                            T: qa,
                             opt: !0
                         }, {
                             no: 10,
@@ -264680,7 +264771,7 @@
                             no: 11,
                             name: "quick_action_settings",
                             kind: "message",
-                            T: ja,
+                            T: Ha,
                             opt: !0
                         }, {
                             no: 12,
@@ -264698,7 +264789,7 @@
                             no: 14,
                             name: "default_environment_settings",
                             kind: "message",
-                            T: Ya,
+                            T: Wa,
                             repeated: !0
                         }, {
                             no: 15,
@@ -264708,19 +264799,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Va).fromBinary(e, t)
+                            return (new Ka).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Va).fromJson(e, t)
+                            return (new Ka).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Va).fromJsonString(e, t)
+                            return (new Ka).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Va, e, t)
+                            return y.proto3.util.equals(Ka, e, t)
                         }
                     }
-                    class $a extends y.Message {
+                    class Za extends y.Message {
                         repoUrl = "";
                         page;
                         query;
@@ -264762,19 +264853,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new $a).fromBinary(e, t)
+                            return (new Za).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new $a).fromJson(e, t)
+                            return (new Za).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new $a).fromJsonString(e, t)
+                            return (new Za).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals($a, e, t)
+                            return y.proto3.util.equals(Za, e, t)
                         }
                     }
-                    class Ka extends y.Message {
+                    class Xa extends y.Message {
                         branches = [];
                         hasMore = !1;
                         page = 0;
@@ -264789,7 +264880,7 @@
                             no: 1,
                             name: "branches",
                             kind: "message",
-                            T: Za,
+                            T: el,
                             repeated: !0
                         }, {
                             no: 2,
@@ -264813,19 +264904,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ka).fromBinary(e, t)
+                            return (new Xa).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ka).fromJson(e, t)
+                            return (new Xa).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ka).fromJsonString(e, t)
+                            return (new Xa).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ka, e, t)
+                            return y.proto3.util.equals(Xa, e, t)
                         }
                     }
-                    class Za extends y.Message {
+                    class el extends y.Message {
                         name = "";
                         isDefault = !1;
                         constructor(e) {
@@ -264845,19 +264936,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new Za).fromBinary(e, t)
+                            return (new el).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Za).fromJson(e, t)
+                            return (new el).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Za).fromJsonString(e, t)
+                            return (new el).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Za, e, t)
+                            return y.proto3.util.equals(el, e, t)
                         }
                     }
-                    class Xa extends y.Message {
+                    class tl extends y.Message {
                         prUrl = "";
                         includeBehindCount;
                         constructor(e) {
@@ -264878,19 +264969,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Xa).fromBinary(e, t)
+                            return (new tl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Xa).fromJson(e, t)
+                            return (new tl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Xa).fromJsonString(e, t)
+                            return (new tl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Xa, e, t)
+                            return y.proto3.util.equals(tl, e, t)
                         }
                     }
-                    class el extends y.Message {
+                    class nl extends y.Message {
                         isMerged = !1;
                         isClosed = !1;
                         mergeableState = "";
@@ -264965,19 +265056,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new el).fromBinary(e, t)
+                            return (new nl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new el).fromJson(e, t)
+                            return (new nl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new el).fromJsonString(e, t)
+                            return (new nl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(el, e, t)
+                            return y.proto3.util.equals(nl, e, t)
                         }
                     }
-                    class tl extends y.Message {
+                    class rl extends y.Message {
                         prUrl = "";
                         cacheExpirationSeconds;
                         constructor(e) {
@@ -264998,19 +265089,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new tl).fromBinary(e, t)
+                            return (new rl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new tl).fromJson(e, t)
+                            return (new rl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new tl).fromJsonString(e, t)
+                            return (new rl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(tl, e, t)
+                            return y.proto3.util.equals(rl, e, t)
                         }
                     }
-                    class nl extends y.Message {
+                    class sl extends y.Message {
                         environmentUrl = "";
                         logUrl = "";
                         state = gn.PR_DEPLOYMENT_STATUS_STATE_UNSPECIFIED;
@@ -265036,19 +265127,19 @@
                             T: y.proto3.getEnumType(gn)
                         }]);
                         static fromBinary(e, t) {
-                            return (new nl).fromBinary(e, t)
+                            return (new sl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new nl).fromJson(e, t)
+                            return (new sl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new nl).fromJsonString(e, t)
+                            return (new sl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(nl, e, t)
+                            return y.proto3.util.equals(sl, e, t)
                         }
                     }
-                    class rl extends y.Message {
+                    class ol extends y.Message {
                         environment = "";
                         state = fn.PR_DEPLOYMENT_STATE_UNSPECIFIED;
                         latestStatus;
@@ -265071,22 +265162,22 @@
                             no: 3,
                             name: "latest_status",
                             kind: "message",
-                            T: nl
+                            T: sl
                         }]);
                         static fromBinary(e, t) {
-                            return (new rl).fromBinary(e, t)
+                            return (new ol).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new rl).fromJson(e, t)
+                            return (new ol).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new rl).fromJsonString(e, t)
+                            return (new ol).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(rl, e, t)
+                            return y.proto3.util.equals(ol, e, t)
                         }
                     }
-                    class sl extends y.Message {
+                    class il extends y.Message {
                         isMerged = !1;
                         isClosed = !1;
                         mergeableState = "";
@@ -265198,7 +265289,7 @@
                             no: 16,
                             name: "deployment_previews",
                             kind: "message",
-                            T: rl,
+                            T: ol,
                             repeated: !0
                         }, {
                             no: 17,
@@ -265228,29 +265319,29 @@
                             no: 21,
                             name: "reviewers",
                             kind: "message",
-                            T: ol,
+                            T: al,
                             repeated: !0
                         }, {
                             no: 22,
                             name: "requested_reviewers",
                             kind: "message",
-                            T: il,
+                            T: ll,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new sl).fromBinary(e, t)
+                            return (new il).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new sl).fromJson(e, t)
+                            return (new il).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new sl).fromJsonString(e, t)
+                            return (new il).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(sl, e, t)
+                            return y.proto3.util.equals(il, e, t)
                         }
                     }
-                    class ol extends y.Message {
+                    class al extends y.Message {
                         authorLogin = "";
                         authorName;
                         authorAvatarUrl;
@@ -265285,19 +265376,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ol).fromBinary(e, t)
+                            return (new al).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ol).fromJson(e, t)
+                            return (new al).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ol).fromJsonString(e, t)
+                            return (new al).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ol, e, t)
+                            return y.proto3.util.equals(al, e, t)
                         }
                     }
-                    class il extends y.Message {
+                    class ll extends y.Message {
                         login = "";
                         name;
                         avatarUrl;
@@ -265332,19 +265423,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new il).fromBinary(e, t)
+                            return (new ll).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new il).fromJson(e, t)
+                            return (new ll).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new il).fromJsonString(e, t)
+                            return (new ll).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(il, e, t)
+                            return y.proto3.util.equals(ll, e, t)
                         }
                     }
-                    class al extends y.Message {
+                    class cl extends y.Message {
                         prUrl = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -265358,19 +265449,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new al).fromBinary(e, t)
+                            return (new cl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new al).fromJson(e, t)
+                            return (new cl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new al).fromJsonString(e, t)
+                            return (new cl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(al, e, t)
+                            return y.proto3.util.equals(cl, e, t)
                         }
                     }
-                    class ll extends y.Message {
+                    class ul extends y.Message {
                         canMerge = !1;
                         error = "";
                         mergeableState;
@@ -265397,19 +265488,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ll).fromBinary(e, t)
+                            return (new ul).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ll).fromJson(e, t)
+                            return (new ul).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ll).fromJsonString(e, t)
+                            return (new ul).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ll, e, t)
+                            return y.proto3.util.equals(ul, e, t)
                         }
                     }
-                    class cl extends y.Message {
+                    class dl extends y.Message {
                         id = "";
                         authorLogin = "";
                         avatarUrl = "";
@@ -265468,19 +265559,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new cl).fromBinary(e, t)
+                            return (new dl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new cl).fromJson(e, t)
+                            return (new dl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new cl).fromJsonString(e, t)
+                            return (new dl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(cl, e, t)
+                            return y.proto3.util.equals(dl, e, t)
                         }
                     }
-                    class ul extends y.Message {
+                    class pl extends y.Message {
                         id = "";
                         path = "";
                         line;
@@ -265550,7 +265641,7 @@
                             no: 10,
                             name: "comments",
                             kind: "message",
-                            T: cl,
+                            T: dl,
                             repeated: !0
                         }, {
                             no: 11,
@@ -265560,19 +265651,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ul).fromBinary(e, t)
+                            return (new pl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ul).fromJson(e, t)
+                            return (new pl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ul).fromJsonString(e, t)
+                            return (new pl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ul, e, t)
+                            return y.proto3.util.equals(pl, e, t)
                         }
                     }
-                    class dl extends y.Message {
+                    class ml extends y.Message {
                         id = "";
                         authorLogin = "";
                         avatarUrl = "";
@@ -265624,19 +265715,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new dl).fromBinary(e, t)
+                            return (new ml).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new dl).fromJson(e, t)
+                            return (new ml).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new dl).fromJsonString(e, t)
+                            return (new ml).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(dl, e, t)
+                            return y.proto3.util.equals(ml, e, t)
                         }
                     }
-                    class pl extends y.Message {
+                    class hl extends y.Message {
                         name;
                         email;
                         avatarUrl;
@@ -265665,19 +265756,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new pl).fromBinary(e, t)
+                            return (new hl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new pl).fromJson(e, t)
+                            return (new hl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new pl).fromJsonString(e, t)
+                            return (new hl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(pl, e, t)
+                            return y.proto3.util.equals(hl, e, t)
                         }
                     }
-                    class ml extends y.Message {
+                    class fl extends y.Message {
                         sha = "";
                         message = "";
                         committedDate = "";
@@ -265726,27 +265817,27 @@
                             no: 7,
                             name: "author",
                             kind: "message",
-                            T: pl
+                            T: hl
                         }, {
                             no: 8,
                             name: "committer",
                             kind: "message",
-                            T: pl
+                            T: hl
                         }]);
                         static fromBinary(e, t) {
-                            return (new ml).fromBinary(e, t)
+                            return (new fl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ml).fromJson(e, t)
+                            return (new fl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ml).fromJsonString(e, t)
+                            return (new fl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ml, e, t)
+                            return y.proto3.util.equals(fl, e, t)
                         }
                     }
-                    class hl extends y.Message {
+                    class gl extends y.Message {
                         prUrl = "";
                         skipCache;
                         constructor(e) {
@@ -265767,19 +265858,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new hl).fromBinary(e, t)
+                            return (new gl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new hl).fromJson(e, t)
+                            return (new gl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new hl).fromJsonString(e, t)
+                            return (new gl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(hl, e, t)
+                            return y.proto3.util.equals(gl, e, t)
                         }
                     }
-                    class fl extends y.Message {
+                    class Al extends y.Message {
                         threads = [];
                         topLevelComments = [];
                         checkStatus;
@@ -265792,13 +265883,13 @@
                             no: 1,
                             name: "threads",
                             kind: "message",
-                            T: ul,
+                            T: pl,
                             repeated: !0
                         }, {
                             no: 2,
                             name: "top_level_comments",
                             kind: "message",
-                            T: dl,
+                            T: ml,
                             repeated: !0
                         }, {
                             no: 3,
@@ -265808,19 +265899,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new fl).fromBinary(e, t)
+                            return (new Al).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new fl).fromJson(e, t)
+                            return (new Al).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new fl).fromJsonString(e, t)
+                            return (new Al).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(fl, e, t)
+                            return y.proto3.util.equals(Al, e, t)
                         }
                     }
-                    class gl extends y.Message {
+                    class yl extends y.Message {
                         prUrl = "";
                         afterCursor;
                         constructor(e) {
@@ -265841,19 +265932,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new gl).fromBinary(e, t)
+                            return (new yl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new gl).fromJson(e, t)
+                            return (new yl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new gl).fromJsonString(e, t)
+                            return (new yl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(gl, e, t)
+                            return y.proto3.util.equals(yl, e, t)
                         }
                     }
-                    class Al extends y.Message {
+                    class wl extends y.Message {
                         commits = [];
                         hasNextPage = !1;
                         endCursor;
@@ -265866,7 +265957,7 @@
                             no: 1,
                             name: "commits",
                             kind: "message",
-                            T: ml,
+                            T: fl,
                             repeated: !0
                         }, {
                             no: 2,
@@ -265881,19 +265972,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Al).fromBinary(e, t)
+                            return (new wl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Al).fromJson(e, t)
+                            return (new wl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Al).fromJsonString(e, t)
+                            return (new wl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Al, e, t)
+                            return y.proto3.util.equals(wl, e, t)
                         }
                     }
-                    class yl extends y.Message {
+                    class vl extends y.Message {
                         prUrl = "";
                         page;
                         constructor(e) {
@@ -265914,19 +266005,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new yl).fromBinary(e, t)
+                            return (new vl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new yl).fromJson(e, t)
+                            return (new vl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new yl).fromJsonString(e, t)
+                            return (new vl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(yl, e, t)
+                            return y.proto3.util.equals(vl, e, t)
                         }
                     }
-                    class wl extends y.Message {
+                    class El extends y.Message {
                         events = [];
                         hasNextPage = !1;
                         nextPage;
@@ -265939,7 +266030,7 @@
                             no: 1,
                             name: "events",
                             kind: "message",
-                            T: vl,
+                            T: _l,
                             repeated: !0
                         }, {
                             no: 2,
@@ -265954,19 +266045,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new wl).fromBinary(e, t)
+                            return (new El).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new wl).fromJson(e, t)
+                            return (new El).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new wl).fromJsonString(e, t)
+                            return (new El).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(wl, e, t)
+                            return y.proto3.util.equals(El, e, t)
                         }
                     }
-                    class vl extends y.Message {
+                    class _l extends y.Message {
                         id = "";
                         eventType = "";
                         createdAt = "";
@@ -265997,7 +266088,7 @@
                             no: 4,
                             name: "actor",
                             kind: "message",
-                            T: El,
+                            T: Tl,
                             opt: !0
                         }, {
                             no: 5,
@@ -266013,19 +266104,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new vl).fromBinary(e, t)
+                            return (new _l).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new vl).fromJson(e, t)
+                            return (new _l).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new vl).fromJsonString(e, t)
+                            return (new _l).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(vl, e, t)
+                            return y.proto3.util.equals(_l, e, t)
                         }
                     }
-                    class El extends y.Message {
+                    class Tl extends y.Message {
                         login = "";
                         avatarUrl;
                         name;
@@ -266053,19 +266144,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new El).fromBinary(e, t)
+                            return (new Tl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new El).fromJson(e, t)
+                            return (new Tl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new El).fromJsonString(e, t)
+                            return (new Tl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(El, e, t)
+                            return y.proto3.util.equals(Tl, e, t)
                         }
                     }
-                    class _l extends y.Message {
+                    class kl extends y.Message {
                         prUrl = "";
                         threadId = "";
                         body = "";
@@ -266091,65 +266182,6 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new _l).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new _l).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new _l).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(_l, e, t)
-                        }
-                    }
-                    class Tl extends y.Message {
-                        thread;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ReplyToReviewThreadResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "thread",
-                            kind: "message",
-                            T: ul,
-                            opt: !0
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Tl).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Tl).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Tl).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Tl, e, t)
-                        }
-                    }
-                    class kl extends y.Message {
-                        prUrl = "";
-                        threadId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ResolveReviewThreadRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "pr_url",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 2,
-                            name: "thread_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
                             return (new kl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -266163,17 +266195,18 @@
                         }
                     }
                     class Il extends y.Message {
-                        success = !1;
+                        thread;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ResolveReviewThreadResponse";
+                        static typeName = "aiserver.v1.ReplyToReviewThreadResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "success",
-                            kind: "scalar",
-                            T: 8
+                            name: "thread",
+                            kind: "message",
+                            T: pl,
+                            opt: !0
                         }]);
                         static fromBinary(e, t) {
                             return (new Il).fromBinary(e, t)
@@ -266195,7 +266228,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.UnresolveReviewThreadRequest";
+                        static typeName = "aiserver.v1.ResolveReviewThreadRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "pr_url",
@@ -266226,7 +266259,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.UnresolveReviewThreadResponse";
+                        static typeName = "aiserver.v1.ResolveReviewThreadResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "success",
@@ -266247,6 +266280,64 @@
                         }
                     }
                     class Sl extends y.Message {
+                        prUrl = "";
+                        threadId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.UnresolveReviewThreadRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "pr_url",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 2,
+                            name: "thread_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Sl).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Sl).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Sl).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Sl, e, t)
+                        }
+                    }
+                    class Bl extends y.Message {
+                        success = !1;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.UnresolveReviewThreadResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "success",
+                            kind: "scalar",
+                            T: 8
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Bl).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Bl).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Bl).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Bl, e, t)
+                        }
+                    }
+                    class xl extends y.Message {
                         prUrl = "";
                         commentId = "";
                         commentKind;
@@ -266273,19 +266364,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Sl).fromBinary(e, t)
+                            return (new xl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Sl).fromJson(e, t)
+                            return (new xl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Sl).fromJsonString(e, t)
+                            return (new xl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Sl, e, t)
+                            return y.proto3.util.equals(xl, e, t)
                         }
                     }
-                    class Bl extends y.Message {
+                    class Rl extends y.Message {
                         success = !1;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -266299,19 +266390,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new Bl).fromBinary(e, t)
+                            return (new Rl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Bl).fromJson(e, t)
+                            return (new Rl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Bl).fromJsonString(e, t)
+                            return (new Rl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Bl, e, t)
+                            return y.proto3.util.equals(Rl, e, t)
                         }
                     }
-                    class xl extends y.Message {
+                    class Nl extends y.Message {
                         prUrl = "";
                         path = "";
                         body = "";
@@ -266364,66 +266455,6 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new xl).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new xl).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new xl).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(xl, e, t)
-                        }
-                    }
-                    class Rl extends y.Message {
-                        thread;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.AddPullRequestReviewCommentResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "thread",
-                            kind: "message",
-                            T: ul,
-                            opt: !0
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Rl).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Rl).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Rl).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Rl, e, t)
-                        }
-                    }
-                    class Nl extends y.Message {
-                        prUrl = "";
-                        mergeMethod;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.MergePullRequestRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "pr_url",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 2,
-                            name: "merge_method",
-                            kind: "scalar",
-                            T: 9,
-                            opt: !0
-                        }]);
-                        static fromBinary(e, t) {
                             return (new Nl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -266437,29 +266468,17 @@
                         }
                     }
                     class Ml extends y.Message {
-                        success = !1;
-                        error = "";
-                        prNodeId;
+                        thread;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.MergePullRequestResponse";
+                        static typeName = "aiserver.v1.AddPullRequestReviewCommentResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "success",
-                            kind: "scalar",
-                            T: 8
-                        }, {
-                            no: 2,
-                            name: "error",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 3,
-                            name: "pr_node_id",
-                            kind: "scalar",
-                            T: 9,
+                            name: "thread",
+                            kind: "message",
+                            T: pl,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
@@ -266482,7 +266501,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.EnablePullRequestAutoMergeRequest";
+                        static typeName = "aiserver.v1.MergePullRequestRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "pr_url",
@@ -266516,7 +266535,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.EnablePullRequestAutoMergeResponse";
+                        static typeName = "aiserver.v1.MergePullRequestResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "success",
@@ -266549,16 +266568,23 @@
                     }
                     class Fl extends y.Message {
                         prUrl = "";
+                        mergeMethod;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.DisablePullRequestAutoMergeRequest";
+                        static typeName = "aiserver.v1.EnablePullRequestAutoMergeRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "pr_url",
                             kind: "scalar",
                             T: 9
+                        }, {
+                            no: 2,
+                            name: "merge_method",
+                            kind: "scalar",
+                            T: 9,
+                            opt: !0
                         }]);
                         static fromBinary(e, t) {
                             return (new Fl).fromBinary(e, t)
@@ -266581,7 +266607,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.DisablePullRequestAutoMergeResponse";
+                        static typeName = "aiserver.v1.EnablePullRequestAutoMergeResponse";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "success",
@@ -266613,6 +266639,71 @@
                         }
                     }
                     class Ol extends y.Message {
+                        prUrl = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.DisablePullRequestAutoMergeRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "pr_url",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Ol).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Ol).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Ol).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Ol, e, t)
+                        }
+                    }
+                    class Ql extends y.Message {
+                        success = !1;
+                        error = "";
+                        prNodeId;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.DisablePullRequestAutoMergeResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "success",
+                            kind: "scalar",
+                            T: 8
+                        }, {
+                            no: 2,
+                            name: "error",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 3,
+                            name: "pr_node_id",
+                            kind: "scalar",
+                            T: 9,
+                            opt: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Ql).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Ql).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Ql).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Ql, e, t)
+                        }
+                    }
+                    class Jl extends y.Message {
                         name = "";
                         port = 0;
                         constructor(e) {
@@ -266632,19 +266723,19 @@
                             T: 5
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ol).fromBinary(e, t)
+                            return (new Jl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ol).fromJson(e, t)
+                            return (new Jl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ol).fromJsonString(e, t)
+                            return (new Jl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ol, e, t)
+                            return y.proto3.util.equals(Jl, e, t)
                         }
                     }
-                    class Ql extends y.Message {
+                    class Ul extends y.Message {
                         token = "";
                         platform = An.UNSPECIFIED;
                         deviceId = "";
@@ -266670,19 +266761,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ql).fromBinary(e, t)
+                            return (new Ul).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ql).fromJson(e, t)
+                            return (new Ul).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ql).fromJsonString(e, t)
+                            return (new Ul).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ql, e, t)
+                            return y.proto3.util.equals(Ul, e, t)
                         }
                     }
-                    class Jl extends y.Message {
+                    class ql extends y.Message {
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
@@ -266690,19 +266781,19 @@
                         static typeName = "aiserver.v1.RegisterPushNotificationTokenResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
-                            return (new Jl).fromBinary(e, t)
+                            return (new ql).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Jl).fromJson(e, t)
+                            return (new ql).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Jl).fromJsonString(e, t)
+                            return (new ql).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Jl, e, t)
+                            return y.proto3.util.equals(ql, e, t)
                         }
                     }
-                    class Ul extends y.Message {
+                    class Gl extends y.Message {
                         deviceId = "";
                         platform = An.UNSPECIFIED;
                         constructor(e) {
@@ -266722,19 +266813,19 @@
                             T: y.proto3.getEnumType(An)
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ul).fromBinary(e, t)
+                            return (new Gl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ul).fromJson(e, t)
+                            return (new Gl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ul).fromJsonString(e, t)
+                            return (new Gl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ul, e, t)
+                            return y.proto3.util.equals(Gl, e, t)
                         }
                     }
-                    class ql extends y.Message {
+                    class jl extends y.Message {
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
@@ -266742,19 +266833,19 @@
                         static typeName = "aiserver.v1.DeletePushNotificationTokenResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
-                            return (new ql).fromBinary(e, t)
+                            return (new jl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ql).fromJson(e, t)
+                            return (new jl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ql).fromJsonString(e, t)
+                            return (new jl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ql, e, t)
+                            return y.proto3.util.equals(jl, e, t)
                         }
                     }
-                    class Gl extends y.Message {
+                    class Yl extends y.Message {
                         bcId = "";
                         title = "";
                         status = zt.UNSPECIFIED;
@@ -266835,19 +266926,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Gl).fromBinary(e, t)
+                            return (new Yl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Gl).fromJson(e, t)
+                            return (new Yl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Gl).fromJsonString(e, t)
+                            return (new Yl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Gl, e, t)
+                            return y.proto3.util.equals(Yl, e, t)
                         }
                     }
-                    class jl extends y.Message {
+                    class Hl extends y.Message {
                         agents = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -266858,23 +266949,23 @@
                             no: 1,
                             name: "agents",
                             kind: "message",
-                            T: Gl,
+                            T: Yl,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new jl).fromBinary(e, t)
+                            return (new Hl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new jl).fromJson(e, t)
+                            return (new Hl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new jl).fromJsonString(e, t)
+                            return (new Hl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(jl, e, t)
+                            return y.proto3.util.equals(Hl, e, t)
                         }
                     }
-                    class Yl extends y.Message {
+                    class Wl extends y.Message {
                         deviceId = "";
                         platform = An.UNSPECIFIED;
                         activityPushToken = "";
@@ -266905,7 +266996,7 @@
                             no: 4,
                             name: "content_state",
                             kind: "message",
-                            T: jl
+                            T: Hl
                         }, {
                             no: 5,
                             name: "state_version",
@@ -266916,58 +267007,6 @@
                             name: "bundle_id",
                             kind: "scalar",
                             T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Yl).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Yl).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Yl).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Yl, e, t)
-                        }
-                    }
-                    class Hl extends y.Message {
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.SyncLiveActivityResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
-                        static fromBinary(e, t) {
-                            return (new Hl).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Hl).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Hl).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Hl, e, t)
-                        }
-                    }
-                    class Wl extends y.Message {
-                        deviceId = "";
-                        platform = An.UNSPECIFIED;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.DeleteLiveActivityRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "device_id",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 2,
-                            name: "platform",
-                            kind: "enum",
-                            T: y.proto3.getEnumType(An)
                         }]);
                         static fromBinary(e, t) {
                             return (new Wl).fromBinary(e, t)
@@ -266987,7 +267026,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.DeleteLiveActivityResponse";
+                        static typeName = "aiserver.v1.SyncLiveActivityResponse";
                         static fields = y.proto3.util.newFieldList(() => []);
                         static fromBinary(e, t) {
                             return (new zl).fromBinary(e, t)
@@ -267003,6 +267042,58 @@
                         }
                     }
                     class Vl extends y.Message {
+                        deviceId = "";
+                        platform = An.UNSPECIFIED;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.DeleteLiveActivityRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "device_id",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 2,
+                            name: "platform",
+                            kind: "enum",
+                            T: y.proto3.getEnumType(An)
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Vl).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Vl).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Vl).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Vl, e, t)
+                        }
+                    }
+                    class $l extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.DeleteLiveActivityResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new $l).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new $l).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new $l).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals($l, e, t)
+                        }
+                    }
+                    class Kl extends y.Message {
                         bcId = "";
                         accessType = "";
                         constructor(e) {
@@ -267022,19 +267113,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Vl).fromBinary(e, t)
+                            return (new Kl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Vl).fromJson(e, t)
+                            return (new Kl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Vl).fromJsonString(e, t)
+                            return (new Kl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Vl, e, t)
+                            return y.proto3.util.equals(Kl, e, t)
                         }
                     }
-                    class $l extends y.Message {
+                    class Zl extends y.Message {
                         hasAccess = !1;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -267048,19 +267139,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new $l).fromBinary(e, t)
+                            return (new Zl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new $l).fromJson(e, t)
+                            return (new Zl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new $l).fromJsonString(e, t)
+                            return (new Zl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals($l, e, t)
+                            return y.proto3.util.equals(Zl, e, t)
                         }
                     }
-                    class Kl extends y.Message {
+                    class Xl extends y.Message {
                         bcId = "";
                         prUrl;
                         constructor(e) {
@@ -267081,19 +267172,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Kl).fromBinary(e, t)
+                            return (new Xl).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Kl).fromJson(e, t)
+                            return (new Xl).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Kl).fromJsonString(e, t)
+                            return (new Xl).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Kl, e, t)
+                            return y.proto3.util.equals(Xl, e, t)
                         }
                     }
-                    class Zl extends y.Message {
+                    class ec extends y.Message {
                         success = !1;
                         error = "";
                         constructor(e) {
@@ -267113,19 +267204,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Zl).fromBinary(e, t)
+                            return (new ec).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Zl).fromJson(e, t)
+                            return (new ec).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Zl).fromJsonString(e, t)
+                            return (new ec).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Zl, e, t)
+                            return y.proto3.util.equals(ec, e, t)
                         }
                     }
-                    class Xl extends y.Message {
+                    class tc extends y.Message {
                         prUrl = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -267139,19 +267230,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Xl).fromBinary(e, t)
+                            return (new tc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Xl).fromJson(e, t)
+                            return (new tc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Xl).fromJsonString(e, t)
+                            return (new tc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Xl, e, t)
+                            return y.proto3.util.equals(tc, e, t)
                         }
                     }
-                    class ec extends y.Message {
+                    class nc extends y.Message {
                         success = !1;
                         error = "";
                         newHeadSha;
@@ -267178,16 +267269,16 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ec).fromBinary(e, t)
+                            return (new nc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ec).fromJson(e, t)
+                            return (new nc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ec).fromJsonString(e, t)
+                            return (new nc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ec, e, t)
+                            return y.proto3.util.equals(nc, e, t)
                         }
                     }
                     y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
@@ -267225,7 +267316,7 @@
                             no: 1,
                             name: "PERSISTED_METADATA_VERSION_1"
                         }]);
-                    class tc extends y.Message {
+                    class rc extends y.Message {
                         conversationState;
                         numPriorInteractionUpdates = 0;
                         prBody = new Uint8Array(0);
@@ -267412,13 +267503,13 @@
                             no: 25,
                             name: "grind_mode_config",
                             kind: "message",
-                            T: Is,
+                            T: Cs,
                             opt: !0
                         }, {
                             no: 26,
                             name: "commits",
                             kind: "message",
-                            T: yc,
+                            T: vc,
                             repeated: !0
                         }, {
                             no: 27,
@@ -267430,7 +267521,7 @@
                             no: 28,
                             name: "user_facing_error_details",
                             kind: "message",
-                            T: hc,
+                            T: gc,
                             opt: !0
                         }, {
                             no: 29,
@@ -267447,7 +267538,7 @@
                             no: 31,
                             name: "synthesis_subagent_config",
                             kind: "message",
-                            T: oc,
+                            T: ac,
                             opt: !0
                         }, {
                             no: 32,
@@ -267473,7 +267564,7 @@
                             no: 36,
                             name: "worker_creations",
                             kind: "message",
-                            T: sc,
+                            T: ic,
                             repeated: !0
                         }, {
                             no: 37,
@@ -267490,7 +267581,7 @@
                             no: 39,
                             name: "optimized_diff",
                             kind: "message",
-                            T: rc,
+                            T: oc,
                             opt: !0
                         }, {
                             no: 40,
@@ -267520,35 +267611,35 @@
                             K: 9,
                             V: {
                                 kind: "message",
-                                T: rc
+                                T: oc
                             }
                         }, {
                             no: 45,
                             name: "startup_warnings",
                             kind: "message",
-                            T: fc,
+                            T: Ac,
                             repeated: !0
                         }, {
                             no: 46,
                             name: "private_workspace_identifier",
                             kind: "message",
-                            T: ms,
+                            T: fs,
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new tc).fromBinary(e, t)
+                            return (new rc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new tc).fromJson(e, t)
+                            return (new rc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new tc).fromJsonString(e, t)
+                            return (new rc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(tc, e, t)
+                            return y.proto3.util.equals(rc, e, t)
                         }
                     }
-                    class nc extends y.Message {
+                    class sc extends y.Message {
                         kind = wn.UNSPECIFIED;
                         reminder = "";
                         constructor(e) {
@@ -267568,23 +267659,23 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new nc).fromBinary(e, t)
+                            return (new sc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new nc).fromJson(e, t)
+                            return (new sc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new nc).fromJsonString(e, t)
+                            return (new sc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(nc, e, t)
+                            return y.proto3.util.equals(sc, e, t)
                         }
                     }
                     y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
                         no: 1,
                         name: "reminders",
                         kind: "message",
-                        T: nc,
+                        T: sc,
                         repeated: !0
                     }]), y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
                         no: 1,
@@ -267608,7 +267699,7 @@
                         T: 9,
                         opt: !0
                     }]);
-                    class rc extends y.Message {
+                    class oc extends y.Message {
                         state = {
                             case: void 0
                         };
@@ -267652,19 +267743,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new rc).fromBinary(e, t)
+                            return (new oc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new rc).fromJson(e, t)
+                            return (new oc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new rc).fromJsonString(e, t)
+                            return (new oc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(rc, e, t)
+                            return y.proto3.util.equals(oc, e, t)
                         }
                     }
-                    class sc extends y.Message {
+                    class ic extends y.Message {
                         workerIndex = 0;
                         createdAtUnixMs = y.protoInt64.zero;
                         numCompletedTurns = 0;
@@ -267690,19 +267781,19 @@
                             T: 13
                         }]);
                         static fromBinary(e, t) {
-                            return (new sc).fromBinary(e, t)
+                            return (new ic).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new sc).fromJson(e, t)
+                            return (new ic).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new sc).fromJsonString(e, t)
+                            return (new ic).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(sc, e, t)
+                            return y.proto3.util.equals(ic, e, t)
                         }
                     }
-                    class oc extends y.Message {
+                    class ac extends y.Message {
                         additionalModelNames = [];
                         originalUserPromptBlobId = new Uint8Array(0);
                         constructor(e) {
@@ -267723,19 +267814,19 @@
                             T: 12
                         }]);
                         static fromBinary(e, t) {
-                            return (new oc).fromBinary(e, t)
+                            return (new ac).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new oc).fromJson(e, t)
+                            return (new ac).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new oc).fromJsonString(e, t)
+                            return (new ac).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(oc, e, t)
+                            return y.proto3.util.equals(ac, e, t)
                         }
                     }
-                    class ic extends y.Message {
+                    class lc extends y.Message {
                         errorMessage = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -267749,23 +267840,23 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new ic).fromBinary(e, t)
+                            return (new lc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ic).fromJson(e, t)
+                            return (new lc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ic).fromJsonString(e, t)
+                            return (new lc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ic, e, t)
+                            return y.proto3.util.equals(lc, e, t)
                         }
                     }
                     y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
                         no: 1,
                         name: "pending_followups",
                         kind: "message",
-                        T: cc,
+                        T: dc,
                         repeated: !0
                     }, {
                         no: 2,
@@ -267786,13 +267877,13 @@
                         no: 5,
                         name: "pending_make_pr_requests",
                         kind: "message",
-                        T: pc,
+                        T: hc,
                         repeated: !0
                     }, {
                         no: 6,
                         name: "pending_open_pr_requests",
                         kind: "message",
-                        T: mc,
+                        T: fc,
                         repeated: !0
                     }, {
                         no: 7,
@@ -267821,25 +267912,25 @@
                         no: 11,
                         name: "completed_make_pr_requests",
                         kind: "message",
-                        T: ac,
+                        T: cc,
                         repeated: !0
                     }, {
                         no: 12,
                         name: "completed_open_pr_requests",
                         kind: "message",
-                        T: lc,
+                        T: uc,
                         repeated: !0
                     }, {
                         no: 13,
                         name: "paused_interaction_step",
                         kind: "message",
-                        T: uc,
+                        T: pc,
                         opt: !0
                     }, {
                         no: 14,
                         name: "pending_interaction_responses",
                         kind: "message",
-                        T: dc,
+                        T: mc,
                         repeated: !0
                     }, {
                         no: 15,
@@ -267848,7 +267939,7 @@
                         T: 13,
                         repeated: !0
                     }]);
-                    class ac extends y.Message {
+                    class cc extends y.Message {
                         requestId = "";
                         completedAtMs = y.protoInt64.zero;
                         response;
@@ -267859,59 +267950,6 @@
                         }
                         static runtime = y.proto3;
                         static typeName = "aiserver.v1.CompletedMakePRRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "request_id",
-                            kind: "scalar",
-                            T: 9
-                        }, {
-                            no: 2,
-                            name: "completed_at_ms",
-                            kind: "scalar",
-                            T: 3
-                        }, {
-                            no: 3,
-                            name: "response",
-                            kind: "message",
-                            T: is,
-                            opt: !0
-                        }, {
-                            no: 4,
-                            name: "error_message",
-                            kind: "scalar",
-                            T: 9,
-                            opt: !0
-                        }, {
-                            no: 5,
-                            name: "error_code",
-                            kind: "scalar",
-                            T: 9,
-                            opt: !0
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new ac).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new ac).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new ac).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(ac, e, t)
-                        }
-                    }
-                    class lc extends y.Message {
-                        requestId = "";
-                        completedAtMs = y.protoInt64.zero;
-                        response;
-                        errorMessage;
-                        errorCode;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.CompletedOpenPRRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "request_id",
@@ -267942,19 +267980,72 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new lc).fromBinary(e, t)
+                            return (new cc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new lc).fromJson(e, t)
+                            return (new cc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new lc).fromJsonString(e, t)
+                            return (new cc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(lc, e, t)
+                            return y.proto3.util.equals(cc, e, t)
                         }
                     }
-                    class cc extends y.Message {
+                    class uc extends y.Message {
+                        requestId = "";
+                        completedAtMs = y.protoInt64.zero;
+                        response;
+                        errorMessage;
+                        errorCode;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.CompletedOpenPRRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "request_id",
+                            kind: "scalar",
+                            T: 9
+                        }, {
+                            no: 2,
+                            name: "completed_at_ms",
+                            kind: "scalar",
+                            T: 3
+                        }, {
+                            no: 3,
+                            name: "response",
+                            kind: "message",
+                            T: us,
+                            opt: !0
+                        }, {
+                            no: 4,
+                            name: "error_message",
+                            kind: "scalar",
+                            T: 9,
+                            opt: !0
+                        }, {
+                            no: 5,
+                            name: "error_code",
+                            kind: "scalar",
+                            T: 9,
+                            opt: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new uc).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new uc).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new uc).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(uc, e, t)
+                        }
+                    }
+                    class dc extends y.Message {
                         followupId = "";
                         createdAtMs = y.protoInt64.zero;
                         source = $t.UNSPECIFIED;
@@ -268054,19 +268145,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new cc).fromBinary(e, t)
+                            return (new dc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new cc).fromJson(e, t)
+                            return (new dc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new cc).fromJsonString(e, t)
+                            return (new dc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(cc, e, t)
+                            return y.proto3.util.equals(dc, e, t)
                         }
                     }
-                    class uc extends y.Message {
+                    class pc extends y.Message {
                         stepContextBlobId = new Uint8Array(0);
                         agentStateBlobId = new Uint8Array(0);
                         isTimeLimitExpired = !1;
@@ -268122,19 +268213,19 @@
                             T: 5
                         }]);
                         static fromBinary(e, t) {
-                            return (new uc).fromBinary(e, t)
+                            return (new pc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new uc).fromJson(e, t)
+                            return (new pc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new uc).fromJsonString(e, t)
+                            return (new pc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(uc, e, t)
+                            return y.proto3.util.equals(pc, e, t)
                         }
                     }
-                    class dc extends y.Message {
+                    class mc extends y.Message {
                         queryId = 0;
                         interactionResponse;
                         submittedAtMs = y.protoInt64.zero;
@@ -268160,19 +268251,19 @@
                             T: 3
                         }]);
                         static fromBinary(e, t) {
-                            return (new dc).fromBinary(e, t)
+                            return (new mc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new dc).fromJson(e, t)
+                            return (new mc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new dc).fromJsonString(e, t)
+                            return (new mc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(dc, e, t)
+                            return y.proto3.util.equals(mc, e, t)
                         }
                     }
-                    class pc extends y.Message {
+                    class hc extends y.Message {
                         requestId = "";
                         createdAtMs = y.protoInt64.zero;
                         requestBlobId = new Uint8Array(0);
@@ -268198,19 +268289,19 @@
                             T: 12
                         }]);
                         static fromBinary(e, t) {
-                            return (new pc).fromBinary(e, t)
+                            return (new hc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new pc).fromJson(e, t)
+                            return (new hc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new pc).fromJsonString(e, t)
+                            return (new hc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(pc, e, t)
+                            return y.proto3.util.equals(hc, e, t)
                         }
                     }
-                    class mc extends y.Message {
+                    class fc extends y.Message {
                         requestId = "";
                         createdAtMs = y.protoInt64.zero;
                         requestBlobId = new Uint8Array(0);
@@ -268236,19 +268327,19 @@
                             T: 12
                         }]);
                         static fromBinary(e, t) {
-                            return (new mc).fromBinary(e, t)
+                            return (new fc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new mc).fromJson(e, t)
+                            return (new fc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new mc).fromJsonString(e, t)
+                            return (new fc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(mc, e, t)
+                            return y.proto3.util.equals(fc, e, t)
                         }
                     }
-                    class hc extends y.Message {
+                    class gc extends y.Message {
                         errorMessage = "";
                         errorCode = "";
                         devOnlyMessage;
@@ -268275,19 +268366,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new hc).fromBinary(e, t)
+                            return (new gc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new hc).fromJson(e, t)
+                            return (new gc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new hc).fromJsonString(e, t)
+                            return (new gc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(hc, e, t)
+                            return y.proto3.util.equals(gc, e, t)
                         }
                     }
-                    class fc extends y.Message {
+                    class Ac extends y.Message {
                         warningType = vn.UNSPECIFIED;
                         userFacingMessage = "";
                         constructor(e) {
@@ -268307,26 +268398,26 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new fc).fromBinary(e, t)
+                            return (new Ac).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new fc).fromJson(e, t)
+                            return (new Ac).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new fc).fromJsonString(e, t)
+                            return (new Ac).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(fc, e, t)
+                            return y.proto3.util.equals(Ac, e, t)
                         }
                     }
                     y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
                         no: 1,
                         name: "entries",
                         kind: "message",
-                        T: Yo,
+                        T: Wo,
                         repeated: !0
                     }]);
-                    class gc extends y.Message {
+                    class yc extends y.Message {
                         bcId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -268340,19 +268431,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new gc).fromBinary(e, t)
+                            return (new yc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new gc).fromJson(e, t)
+                            return (new yc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new gc).fromJsonString(e, t)
+                            return (new yc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(gc, e, t)
+                            return y.proto3.util.equals(yc, e, t)
                         }
                     }
-                    class Ac extends y.Message {
+                    class wc extends y.Message {
                         totalDurationMs = y.protoInt64.zero;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -268366,19 +268457,19 @@
                             T: 3
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ac).fromBinary(e, t)
+                            return (new wc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ac).fromJson(e, t)
+                            return (new wc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ac).fromJsonString(e, t)
+                            return (new wc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ac, e, t)
+                            return y.proto3.util.equals(wc, e, t)
                         }
                     }
-                    class yc extends y.Message {
+                    class vc extends y.Message {
                         sha = "";
                         message = "";
                         authorName = "";
@@ -268416,59 +268507,6 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new yc).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new yc).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new yc).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(yc, e, t)
-                        }
-                    }
-                    class wc extends y.Message {
-                        limit = 0;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ListGrindModeComposersRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "limit",
-                            kind: "scalar",
-                            T: 5
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new wc).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new wc).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new wc).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(wc, e, t)
-                        }
-                    }
-                    class vc extends y.Message {
-                        composers = [];
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ListGrindModeComposersResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "composers",
-                            kind: "message",
-                            T: us,
-                            repeated: !0
-                        }]);
-                        static fromBinary(e, t) {
                             return (new vc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -268482,6 +268520,59 @@
                         }
                     }
                     class Ec extends y.Message {
+                        limit = 0;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.ListGrindModeComposersRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "limit",
+                            kind: "scalar",
+                            T: 5
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Ec).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Ec).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Ec).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Ec, e, t)
+                        }
+                    }
+                    class _c extends y.Message {
+                        composers = [];
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.ListGrindModeComposersResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "composers",
+                            kind: "message",
+                            T: ps,
+                            repeated: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new _c).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new _c).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new _c).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(_c, e, t)
+                        }
+                    }
+                    class Tc extends y.Message {
                         bcId = "";
                         agentBlobId;
                         blobId;
@@ -268509,19 +268600,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ec).fromBinary(e, t)
+                            return (new Tc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ec).fromJson(e, t)
+                            return (new Tc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ec).fromJsonString(e, t)
+                            return (new Tc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ec, e, t)
+                            return y.proto3.util.equals(Tc, e, t)
                         }
                     }
-                    class _c extends y.Message {
+                    class kc extends y.Message {
                         entries = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -268532,23 +268623,23 @@
                             no: 1,
                             name: "entries",
                             kind: "message",
-                            T: Tc,
+                            T: Ic,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new _c).fromBinary(e, t)
+                            return (new kc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new _c).fromJson(e, t)
+                            return (new kc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new _c).fromJsonString(e, t)
+                            return (new kc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(_c, e, t)
+                            return y.proto3.util.equals(kc, e, t)
                         }
                     }
-                    class Tc extends y.Message {
+                    class Ic extends y.Message {
                         workerIndex = 0;
                         isCurrentWorker = !1;
                         environmentVersionId;
@@ -268587,29 +268678,29 @@
                             no: 5,
                             name: "anyrun",
                             kind: "message",
-                            T: kc,
+                            T: bc,
                             oneof: "info"
                         }, {
                             no: 6,
                             name: "anyrun_pending_docker_build",
                             kind: "message",
-                            T: Ic,
+                            T: Cc,
                             oneof: "info"
                         }]);
                         static fromBinary(e, t) {
-                            return (new Tc).fromBinary(e, t)
+                            return (new Ic).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Tc).fromJson(e, t)
+                            return (new Ic).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Tc).fromJsonString(e, t)
+                            return (new Ic).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Tc, e, t)
+                            return y.proto3.util.equals(Ic, e, t)
                         }
                     }
-                    class kc extends y.Message {
+                    class bc extends y.Message {
                         tenantId = "";
                         podId = "";
                         anyrunCluster = "";
@@ -268662,19 +268753,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new kc).fromBinary(e, t)
+                            return (new bc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new kc).fromJson(e, t)
+                            return (new bc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new kc).fromJsonString(e, t)
+                            return (new bc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(kc, e, t)
+                            return y.proto3.util.equals(bc, e, t)
                         }
                     }
-                    class Ic extends y.Message {
+                    class Cc extends y.Message {
                         anyrunCluster = "";
                         dockerBuildEventsRedisStreamKey = "";
                         constructor(e) {
@@ -268694,19 +268785,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Ic).fromBinary(e, t)
+                            return (new Cc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Ic).fromJson(e, t)
+                            return (new Cc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Ic).fromJsonString(e, t)
+                            return (new Cc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Ic, e, t)
+                            return y.proto3.util.equals(Cc, e, t)
                         }
                     }
-                    class bc extends y.Message {
+                    class Sc extends y.Message {
                         cloudAgentStateBlobId = new Uint8Array(0);
                         cloudAgentState;
                         streamMessages = [];
@@ -268726,39 +268817,39 @@
                             no: 2,
                             name: "cloud_agent_state",
                             kind: "message",
-                            T: tc
+                            T: rc
                         }, {
                             no: 3,
                             name: "stream_messages",
                             kind: "message",
-                            T: Qs,
+                            T: Us,
                             repeated: !0
                         }, {
                             no: 4,
                             name: "pre_fetched_blobs",
                             kind: "message",
-                            T: Os,
+                            T: Js,
                             repeated: !0
                         }, {
                             no: 5,
                             name: "vm_history",
                             kind: "message",
-                            T: _c
+                            T: kc
                         }]);
                         static fromBinary(e, t) {
-                            return (new bc).fromBinary(e, t)
+                            return (new Sc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new bc).fromJson(e, t)
+                            return (new Sc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new bc).fromJsonString(e, t)
+                            return (new Sc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(bc, e, t)
+                            return y.proto3.util.equals(Sc, e, t)
                         }
                     }
-                    class Cc extends y.Message {
+                    class Bc extends y.Message {
                         bcId = "";
                         workerIndex;
                         limit;
@@ -268786,19 +268877,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Cc).fromBinary(e, t)
+                            return (new Bc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Cc).fromJson(e, t)
+                            return (new Bc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Cc).fromJsonString(e, t)
+                            return (new Bc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Cc, e, t)
+                            return y.proto3.util.equals(Bc, e, t)
                         }
                     }
-                    class Sc extends y.Message {
+                    class xc extends y.Message {
                         entries = [];
                         truncated = !1;
                         constructor(e) {
@@ -268810,7 +268901,7 @@
                             no: 1,
                             name: "entries",
                             kind: "message",
-                            T: Bc,
+                            T: Rc,
                             repeated: !0
                         }, {
                             no: 2,
@@ -268819,19 +268910,19 @@
                             T: 8
                         }]);
                         static fromBinary(e, t) {
-                            return (new Sc).fromBinary(e, t)
+                            return (new xc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Sc).fromJson(e, t)
+                            return (new xc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Sc).fromJsonString(e, t)
+                            return (new xc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Sc, e, t)
+                            return y.proto3.util.equals(xc, e, t)
                         }
                     }
-                    class Bc extends y.Message {
+                    class Rc extends y.Message {
                         source = En.UNSPECIFIED;
                         workerIndex;
                         log = {
@@ -268867,19 +268958,19 @@
                             oneof: "log"
                         }]);
                         static fromBinary(e, t) {
-                            return (new Bc).fromBinary(e, t)
+                            return (new Rc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Bc).fromJson(e, t)
+                            return (new Rc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Bc).fromJsonString(e, t)
+                            return (new Rc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Bc, e, t)
+                            return y.proto3.util.equals(Rc, e, t)
                         }
                     }
-                    class xc extends y.Message {
+                    class Nc extends y.Message {
                         bcId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -268893,19 +268984,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new xc).fromBinary(e, t)
+                            return (new Nc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new xc).fromJson(e, t)
+                            return (new Nc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new xc).fromJsonString(e, t)
+                            return (new Nc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(xc, e, t)
+                            return y.proto3.util.equals(Nc, e, t)
                         }
                     }
-                    class Rc extends y.Message {
+                    class Mc extends y.Message {
                         shareId = "";
                         shareUrl = "";
                         constructor(e) {
@@ -268925,19 +269016,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Rc).fromBinary(e, t)
+                            return (new Mc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Rc).fromJson(e, t)
+                            return (new Mc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Rc).fromJsonString(e, t)
+                            return (new Mc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Rc, e, t)
+                            return y.proto3.util.equals(Mc, e, t)
                         }
                     }
-                    class Nc extends y.Message {
+                    class Pc extends y.Message {
                         shareId = "";
                         includePreviewImage;
                         constructor(e) {
@@ -268958,19 +269049,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Nc).fromBinary(e, t)
+                            return (new Pc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Nc).fromJson(e, t)
+                            return (new Pc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Nc).fromJsonString(e, t)
+                            return (new Pc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Nc, e, t)
+                            return y.proto3.util.equals(Pc, e, t)
                         }
                     }
-                    class Mc extends y.Message {
+                    class Dc extends y.Message {
                         shareId = "";
                         bcId = "";
                         name;
@@ -269046,19 +269137,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Mc).fromBinary(e, t)
+                            return (new Dc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Mc).fromJson(e, t)
+                            return (new Dc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Mc).fromJsonString(e, t)
+                            return (new Dc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Mc, e, t)
+                            return y.proto3.util.equals(Dc, e, t)
                         }
                     }
-                    class Pc extends y.Message {
+                    class Fc extends y.Message {
                         statusFilter = Tn.UNSPECIFIED;
                         pageSize = 0;
                         pageToken;
@@ -269091,19 +269182,19 @@
                             T: y.proto3.getEnumType(_n)
                         }]);
                         static fromBinary(e, t) {
-                            return (new Pc).fromBinary(e, t)
+                            return (new Fc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Pc).fromJson(e, t)
+                            return (new Fc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Pc).fromJsonString(e, t)
+                            return (new Fc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Pc, e, t)
+                            return y.proto3.util.equals(Fc, e, t)
                         }
                     }
-                    class Dc extends y.Message {
+                    class Lc extends y.Message {
                         workers = [];
                         nextPageToken = "";
                         totalCount = 0;
@@ -269116,7 +269207,7 @@
                             no: 1,
                             name: "workers",
                             kind: "message",
-                            T: Qc,
+                            T: Uc,
                             repeated: !0
                         }, {
                             no: 2,
@@ -269130,19 +269221,19 @@
                             T: 5
                         }]);
                         static fromBinary(e, t) {
-                            return (new Dc).fromBinary(e, t)
+                            return (new Lc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Dc).fromJson(e, t)
+                            return (new Lc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Dc).fromJsonString(e, t)
+                            return (new Lc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Dc, e, t)
+                            return y.proto3.util.equals(Lc, e, t)
                         }
                     }
-                    class Fc extends y.Message {
+                    class Oc extends y.Message {
                         pageSize = 0;
                         pageToken;
                         repository;
@@ -269170,19 +269261,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Fc).fromBinary(e, t)
+                            return (new Oc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Fc).fromJson(e, t)
+                            return (new Oc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Fc).fromJsonString(e, t)
+                            return (new Oc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Fc, e, t)
+                            return y.proto3.util.equals(Oc, e, t)
                         }
                     }
-                    class Lc extends y.Message {
+                    class Qc extends y.Message {
                         requests = [];
                         nextPageToken = "";
                         totalCount = 0;
@@ -269195,7 +269286,7 @@
                             no: 1,
                             name: "requests",
                             kind: "message",
-                            T: Oc,
+                            T: Jc,
                             repeated: !0
                         }, {
                             no: 2,
@@ -269209,19 +269300,19 @@
                             T: 5
                         }]);
                         static fromBinary(e, t) {
-                            return (new Lc).fromBinary(e, t)
+                            return (new Qc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Lc).fromJson(e, t)
+                            return (new Qc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Lc).fromJsonString(e, t)
+                            return (new Qc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Lc, e, t)
+                            return y.proto3.util.equals(Qc, e, t)
                         }
                     }
-                    class Oc extends y.Message {
+                    class Jc extends y.Message {
                         bcId = "";
                         userId = 0;
                         serviceAccountId;
@@ -269273,7 +269364,7 @@
                             no: 7,
                             name: "labels",
                             kind: "message",
-                            T: Jc,
+                            T: qc,
                             repeated: !0
                         }, {
                             no: 8,
@@ -269282,19 +269373,19 @@
                             T: 1
                         }]);
                         static fromBinary(e, t) {
-                            return (new Oc).fromBinary(e, t)
+                            return (new Jc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Oc).fromJson(e, t)
+                            return (new Jc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Oc).fromJsonString(e, t)
+                            return (new Jc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Oc, e, t)
+                            return y.proto3.util.equals(Jc, e, t)
                         }
                     }
-                    class Qc extends y.Message {
+                    class Uc extends y.Message {
                         workerId = "";
                         repoOwner = "";
                         repoName = "";
@@ -269371,7 +269462,7 @@
                             no: 11,
                             name: "labels",
                             kind: "message",
-                            T: Jc,
+                            T: qc,
                             repeated: !0
                         }, {
                             no: 12,
@@ -269393,19 +269484,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Qc).fromBinary(e, t)
+                            return (new Uc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Qc).fromJson(e, t)
+                            return (new Uc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Qc).fromJsonString(e, t)
+                            return (new Uc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Qc, e, t)
+                            return y.proto3.util.equals(Uc, e, t)
                         }
                     }
-                    class Jc extends y.Message {
+                    class qc extends y.Message {
                         key = "";
                         value = "";
                         constructor(e) {
@@ -269425,52 +269516,6 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Jc).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Jc).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Jc).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Jc, e, t)
-                        }
-                    }
-                    class Uc extends y.Message {
-                        ownerCursorUserId = 0;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.PrivateWorkerOwnerFilter";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "owner_cursor_user_id",
-                            kind: "scalar",
-                            T: 5
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Uc).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Uc).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Uc).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Uc, e, t)
-                        }
-                    }
-                    class qc extends y.Message {
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetPrivateWorkersSummaryRequest";
-                        static fields = y.proto3.util.newFieldList(() => []);
-                        static fromBinary(e, t) {
                             return (new qc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -269484,32 +269529,17 @@
                         }
                     }
                     class Gc extends y.Message {
-                        userSummary;
-                        teamSummary;
-                        teamLimitSummary;
+                        ownerCursorUserId = 0;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetPrivateWorkersSummaryResponse";
+                        static typeName = "aiserver.v1.PrivateWorkerOwnerFilter";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "user_summary",
-                            kind: "message",
-                            T: jc,
-                            opt: !0
-                        }, {
-                            no: 2,
-                            name: "team_summary",
-                            kind: "message",
-                            T: Yc,
-                            opt: !0
-                        }, {
-                            no: 3,
-                            name: "team_limit_summary",
-                            kind: "message",
-                            T: Hc,
-                            opt: !0
+                            name: "owner_cursor_user_id",
+                            kind: "scalar",
+                            T: 5
                         }]);
                         static fromBinary(e, t) {
                             return (new Gc).fromBinary(e, t)
@@ -269525,6 +269555,67 @@
                         }
                     }
                     class jc extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetPrivateWorkersSummaryRequest";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new jc).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new jc).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new jc).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(jc, e, t)
+                        }
+                    }
+                    class Yc extends y.Message {
+                        userSummary;
+                        teamSummary;
+                        teamLimitSummary;
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.GetPrivateWorkersSummaryResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "user_summary",
+                            kind: "message",
+                            T: Hc,
+                            opt: !0
+                        }, {
+                            no: 2,
+                            name: "team_summary",
+                            kind: "message",
+                            T: Wc,
+                            opt: !0
+                        }, {
+                            no: 3,
+                            name: "team_limit_summary",
+                            kind: "message",
+                            T: zc,
+                            opt: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Yc).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Yc).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Yc).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Yc, e, t)
+                        }
+                    }
+                    class Hc extends y.Message {
                         totalConnected = 0;
                         inUse = 0;
                         teamWorkersInUseByUser = 0;
@@ -269550,19 +269641,19 @@
                             T: 5
                         }]);
                         static fromBinary(e, t) {
-                            return (new jc).fromBinary(e, t)
+                            return (new Hc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new jc).fromJson(e, t)
+                            return (new Hc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new jc).fromJsonString(e, t)
+                            return (new Hc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(jc, e, t)
+                            return y.proto3.util.equals(Hc, e, t)
                         }
                     }
-                    class Yc extends y.Message {
+                    class Wc extends y.Message {
                         totalConnected = 0;
                         inUse = 0;
                         constructor(e) {
@@ -269582,19 +269673,19 @@
                             T: 5
                         }]);
                         static fromBinary(e, t) {
-                            return (new Yc).fromBinary(e, t)
+                            return (new Wc).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Yc).fromJson(e, t)
+                            return (new Wc).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Yc).fromJsonString(e, t)
+                            return (new Wc).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Yc, e, t)
+                            return y.proto3.util.equals(Wc, e, t)
                         }
                     }
-                    class Hc extends y.Message {
+                    class zc extends y.Message {
                         totalConnected = 0;
                         maxWorkers = 0;
                         constructor(e) {
@@ -269612,58 +269703,6 @@
                             name: "max_workers",
                             kind: "scalar",
                             T: 5
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Hc).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Hc).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Hc).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Hc, e, t)
-                        }
-                    }
-                    class Wc extends y.Message {
-                        workerId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetPrivateWorkerRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "worker_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new Wc).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Wc).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Wc).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Wc, e, t)
-                        }
-                    }
-                    class zc extends y.Message {
-                        worker;
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.GetPrivateWorkerResponse";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "worker",
-                            kind: "message",
-                            T: Qc
                         }]);
                         static fromBinary(e, t) {
                             return (new zc).fromBinary(e, t)
@@ -269684,7 +269723,7 @@
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ReleasePrivateWorkerRequest";
+                        static typeName = "aiserver.v1.GetPrivateWorkerRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
                             name: "worker_id",
@@ -269705,12 +269744,18 @@
                         }
                     }
                     class $c extends y.Message {
+                        worker;
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.ReleasePrivateWorkerResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
+                        static typeName = "aiserver.v1.GetPrivateWorkerResponse";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "worker",
+                            kind: "message",
+                            T: Uc
+                        }]);
                         static fromBinary(e, t) {
                             return (new $c).fromBinary(e, t)
                         }
@@ -269725,18 +269770,17 @@
                         }
                     }
                     class Kc extends y.Message {
-                        bcIds = [];
+                        workerId = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
                         }
                         static runtime = y.proto3;
-                        static typeName = "aiserver.v1.BatchRefreshPullRequestStatusRequest";
+                        static typeName = "aiserver.v1.ReleasePrivateWorkerRequest";
                         static fields = y.proto3.util.newFieldList(() => [{
                             no: 1,
-                            name: "bc_ids",
+                            name: "worker_id",
                             kind: "scalar",
-                            T: 9,
-                            repeated: !0
+                            T: 9
                         }]);
                         static fromBinary(e, t) {
                             return (new Kc).fromBinary(e, t)
@@ -269752,6 +269796,53 @@
                         }
                     }
                     class Zc extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.ReleasePrivateWorkerResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new Zc).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Zc).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Zc).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Zc, e, t)
+                        }
+                    }
+                    class Xc extends y.Message {
+                        bcIds = [];
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.BatchRefreshPullRequestStatusRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "bc_ids",
+                            kind: "scalar",
+                            T: 9,
+                            repeated: !0
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new Xc).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Xc).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Xc).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Xc, e, t)
+                        }
+                    }
+                    class eu extends y.Message {
                         results = {};
                         failedBcIds = [];
                         constructor(e) {
@@ -269766,7 +269857,7 @@
                             K: 9,
                             V: {
                                 kind: "message",
-                                T: sl
+                                T: il
                             }
                         }, {
                             no: 2,
@@ -269776,16 +269867,16 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Zc).fromBinary(e, t)
+                            return (new eu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Zc).fromJson(e, t)
+                            return (new eu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Zc).fromJsonString(e, t)
+                            return (new eu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Zc, e, t)
+                            return y.proto3.util.equals(eu, e, t)
                         }
                     }
                     y.Message, y.proto3, y.proto3.util.newFieldList(() => [{
@@ -269802,9 +269893,9 @@
                         no: 3,
                         name: "bc",
                         kind: "message",
-                        T: Qo
+                        T: Uo
                     }]);
-                    class Xc extends y.Message {
+                    class tu extends y.Message {
                         bcId = "";
                         lastEventId;
                         constructor(e) {
@@ -269825,19 +269916,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Xc).fromBinary(e, t)
+                            return (new tu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Xc).fromJson(e, t)
+                            return (new tu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Xc).fromJsonString(e, t)
+                            return (new tu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Xc, e, t)
+                            return y.proto3.util.equals(tu, e, t)
                         }
                     }
-                    class eu extends y.Message {
+                    class nu extends y.Message {
                         eventId = "";
                         traceEvent;
                         constructor(e) {
@@ -269854,22 +269945,22 @@
                             no: 3,
                             name: "trace_event",
                             kind: "message",
-                            T: Kn
+                            T: Xn
                         }]);
                         static fromBinary(e, t) {
-                            return (new eu).fromBinary(e, t)
+                            return (new nu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new eu).fromJson(e, t)
+                            return (new nu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new eu).fromJsonString(e, t)
+                            return (new nu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(eu, e, t)
+                            return y.proto3.util.equals(nu, e, t)
                         }
                     }
-                    class tu extends y.Message {
+                    class ru extends y.Message {
                         n = 0;
                         pageToken;
                         constructor(e) {
@@ -269890,19 +269981,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new tu).fromBinary(e, t)
+                            return (new ru).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new tu).fromJson(e, t)
+                            return (new ru).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new tu).fromJsonString(e, t)
+                            return (new ru).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(tu, e, t)
+                            return y.proto3.util.equals(ru, e, t)
                         }
                     }
-                    class nu extends y.Message {
+                    class su extends y.Message {
                         storeId = "";
                         createdAtMs = 0;
                         updatedAtMs = 0;
@@ -269942,7 +270033,7 @@
                             no: 9,
                             name: "shares",
                             kind: "message",
-                            T: Eu,
+                            T: Tu,
                             repeated: !0
                         }, {
                             no: 10,
@@ -269968,19 +270059,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new nu).fromBinary(e, t)
+                            return (new su).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new nu).fromJson(e, t)
+                            return (new su).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new nu).fromJsonString(e, t)
+                            return (new su).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(nu, e, t)
+                            return y.proto3.util.equals(su, e, t)
                         }
                     }
-                    class ru extends y.Message {
+                    class ou extends y.Message {
                         stores = [];
                         hasMore = !1;
                         nextPageToken;
@@ -269993,7 +270084,7 @@
                             no: 1,
                             name: "stores",
                             kind: "message",
-                            T: nu,
+                            T: su,
                             repeated: !0
                         }, {
                             no: 2,
@@ -270008,19 +270099,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ru).fromBinary(e, t)
+                            return (new ou).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ru).fromJson(e, t)
+                            return (new ou).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ru).fromJsonString(e, t)
+                            return (new ou).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ru, e, t)
+                            return y.proto3.util.equals(ou, e, t)
                         }
                     }
-                    class su extends y.Message {
+                    class iu extends y.Message {
                         storeId = "";
                         relativePath = "";
                         shareId;
@@ -270047,19 +270138,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new su).fromBinary(e, t)
+                            return (new iu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new su).fromJson(e, t)
+                            return (new iu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new su).fromJsonString(e, t)
+                            return (new iu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(su, e, t)
+                            return y.proto3.util.equals(iu, e, t)
                         }
                     }
-                    class ou extends y.Message {
+                    class au extends y.Message {
                         name = "";
                         relativePath = "";
                         kind = In.UNSPECIFIED;
@@ -270099,19 +270190,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new ou).fromBinary(e, t)
+                            return (new au).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new ou).fromJson(e, t)
+                            return (new au).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new ou).fromJsonString(e, t)
+                            return (new au).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(ou, e, t)
+                            return y.proto3.util.equals(au, e, t)
                         }
                     }
-                    class iu extends y.Message {
+                    class lu extends y.Message {
                         normalizedRelativePath = "";
                         entries = [];
                         constructor(e) {
@@ -270128,23 +270219,23 @@
                             no: 2,
                             name: "entries",
                             kind: "message",
-                            T: ou,
+                            T: au,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new iu).fromBinary(e, t)
+                            return (new lu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new iu).fromJson(e, t)
+                            return (new lu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new iu).fromJsonString(e, t)
+                            return (new lu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(iu, e, t)
+                            return y.proto3.util.equals(lu, e, t)
                         }
                     }
-                    class au extends y.Message {
+                    class cu extends y.Message {
                         storeId = "";
                         relativePath = "";
                         shareId;
@@ -270171,19 +270262,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new au).fromBinary(e, t)
+                            return (new cu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new au).fromJson(e, t)
+                            return (new cu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new au).fromJsonString(e, t)
+                            return (new cu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(au, e, t)
+                            return y.proto3.util.equals(cu, e, t)
                         }
                     }
-                    class lu extends y.Message {
+                    class uu extends y.Message {
                         content = "";
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -270197,19 +270288,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new lu).fromBinary(e, t)
+                            return (new uu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new lu).fromJson(e, t)
+                            return (new uu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new lu).fromJsonString(e, t)
+                            return (new uu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(lu, e, t)
+                            return y.proto3.util.equals(uu, e, t)
                         }
                     }
-                    class cu extends y.Message {
+                    class du extends y.Message {
                         agentId = "";
                         shareId;
                         constructor(e) {
@@ -270230,19 +270321,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new cu).fromBinary(e, t)
+                            return (new du).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new cu).fromJson(e, t)
+                            return (new du).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new cu).fromJsonString(e, t)
+                            return (new du).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(cu, e, t)
+                            return y.proto3.util.equals(du, e, t)
                         }
                     }
-                    class uu extends y.Message {
+                    class pu extends y.Message {
                         token = "";
                         expiresAtMs = y.protoInt64.zero;
                         agentIds = [];
@@ -270276,19 +270367,19 @@
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new uu).fromBinary(e, t)
+                            return (new pu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new uu).fromJson(e, t)
+                            return (new pu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new uu).fromJsonString(e, t)
+                            return (new pu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(uu, e, t)
+                            return y.proto3.util.equals(pu, e, t)
                         }
                     }
-                    class du extends y.Message {
+                    class mu extends y.Message {
                         relPath = "";
                         etag = "";
                         sizeBytes = y.protoInt64.zero;
@@ -270320,19 +270411,19 @@
                             T: 3
                         }]);
                         static fromBinary(e, t) {
-                            return (new du).fromBinary(e, t)
+                            return (new mu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new du).fromJson(e, t)
+                            return (new mu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new du).fromJsonString(e, t)
+                            return (new mu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(du, e, t)
+                            return y.proto3.util.equals(mu, e, t)
                         }
                     }
-                    class pu extends y.Message {
+                    class hu extends y.Message {
                         agentId = "";
                         shareId;
                         constructor(e) {
@@ -270353,19 +270444,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new pu).fromBinary(e, t)
+                            return (new hu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new pu).fromJson(e, t)
+                            return (new hu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new pu).fromJsonString(e, t)
+                            return (new hu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(pu, e, t)
+                            return y.proto3.util.equals(hu, e, t)
                         }
                     }
-                    class mu extends y.Message {
+                    class fu extends y.Message {
                         files = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -270376,23 +270467,23 @@
                             no: 1,
                             name: "files",
                             kind: "message",
-                            T: du,
+                            T: mu,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new mu).fromBinary(e, t)
+                            return (new fu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new mu).fromJson(e, t)
+                            return (new fu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new mu).fromJsonString(e, t)
+                            return (new fu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(mu, e, t)
+                            return y.proto3.util.equals(fu, e, t)
                         }
                     }
-                    class hu extends y.Message {
+                    class gu extends y.Message {
                         relPath = "";
                         url = "";
                         expiresAtMs = y.protoInt64.zero;
@@ -270418,19 +270509,19 @@
                             T: 3
                         }]);
                         static fromBinary(e, t) {
-                            return (new hu).fromBinary(e, t)
+                            return (new gu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new hu).fromJson(e, t)
+                            return (new gu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new hu).fromJsonString(e, t)
+                            return (new gu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(hu, e, t)
+                            return y.proto3.util.equals(gu, e, t)
                         }
                     }
-                    class fu extends y.Message {
+                    class Au extends y.Message {
                         agentId = "";
                         relPaths = [];
                         shareId;
@@ -270458,19 +270549,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new fu).fromBinary(e, t)
+                            return (new Au).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new fu).fromJson(e, t)
+                            return (new Au).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new fu).fromJsonString(e, t)
+                            return (new Au).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(fu, e, t)
+                            return y.proto3.util.equals(Au, e, t)
                         }
                     }
-                    class gu extends y.Message {
+                    class yu extends y.Message {
                         instructions = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -270481,23 +270572,23 @@
                             no: 1,
                             name: "instructions",
                             kind: "message",
-                            T: hu,
+                            T: gu,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new gu).fromBinary(e, t)
+                            return (new yu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new gu).fromJson(e, t)
+                            return (new yu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new gu).fromJsonString(e, t)
+                            return (new yu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(gu, e, t)
+                            return y.proto3.util.equals(yu, e, t)
                         }
                     }
-                    class Au extends y.Message {
+                    class wu extends y.Message {
                         relPath = "";
                         sizeBytes = y.protoInt64.zero;
                         sha = "";
@@ -270523,19 +270614,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Au).fromBinary(e, t)
+                            return (new wu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Au).fromJson(e, t)
+                            return (new wu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Au).fromJsonString(e, t)
+                            return (new wu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Au, e, t)
+                            return y.proto3.util.equals(wu, e, t)
                         }
                     }
-                    class yu extends y.Message {
+                    class vu extends y.Message {
                         relPath = "";
                         url = "";
                         headers = {};
@@ -270571,19 +270662,19 @@
                             T: 3
                         }]);
                         static fromBinary(e, t) {
-                            return (new yu).fromBinary(e, t)
+                            return (new vu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new yu).fromJson(e, t)
+                            return (new vu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new yu).fromJsonString(e, t)
+                            return (new vu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(yu, e, t)
+                            return y.proto3.util.equals(vu, e, t)
                         }
                     }
-                    class wu extends y.Message {
+                    class Eu extends y.Message {
                         agentId = "";
                         files = [];
                         constructor(e) {
@@ -270600,23 +270691,23 @@
                             no: 2,
                             name: "files",
                             kind: "message",
-                            T: Au,
+                            T: wu,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new wu).fromBinary(e, t)
+                            return (new Eu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new wu).fromJson(e, t)
+                            return (new Eu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new wu).fromJsonString(e, t)
+                            return (new Eu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(wu, e, t)
+                            return y.proto3.util.equals(Eu, e, t)
                         }
                     }
-                    class vu extends y.Message {
+                    class _u extends y.Message {
                         instructions = [];
                         constructor(e) {
                             super(), y.proto3.util.initPartial(e, this)
@@ -270627,23 +270718,23 @@
                             no: 1,
                             name: "instructions",
                             kind: "message",
-                            T: yu,
+                            T: vu,
                             repeated: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new vu).fromBinary(e, t)
+                            return (new _u).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new vu).fromJson(e, t)
+                            return (new _u).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new vu).fromJsonString(e, t)
+                            return (new _u).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(vu, e, t)
+                            return y.proto3.util.equals(_u, e, t)
                         }
                     }
-                    class Eu extends y.Message {
+                    class Tu extends y.Message {
                         shareId = "";
                         pathPrefix = "";
                         visibility = bn.UNSPECIFIED;
@@ -270682,19 +270773,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Eu).fromBinary(e, t)
+                            return (new Tu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Eu).fromJson(e, t)
+                            return (new Tu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Eu).fromJsonString(e, t)
+                            return (new Tu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Eu, e, t)
+                            return y.proto3.util.equals(Tu, e, t)
                         }
                     }
-                    class _u extends y.Message {
+                    class ku extends y.Message {
                         agentId = "";
                         pathPrefix = "";
                         constructor(e) {
@@ -270714,19 +270805,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new _u).fromBinary(e, t)
+                            return (new ku).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new _u).fromJson(e, t)
+                            return (new ku).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new _u).fromJsonString(e, t)
+                            return (new ku).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(_u, e, t)
+                            return y.proto3.util.equals(ku, e, t)
                         }
                     }
-                    class Tu extends y.Message {
+                    class Iu extends y.Message {
                         shareId = "";
                         shareUrl = "";
                         constructor(e) {
@@ -270746,52 +270837,6 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Tu).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new Tu).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new Tu).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(Tu, e, t)
-                        }
-                    }
-                    class ku extends y.Message {
-                        shareId = "";
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.UnshareAgentStoreRequest";
-                        static fields = y.proto3.util.newFieldList(() => [{
-                            no: 1,
-                            name: "share_id",
-                            kind: "scalar",
-                            T: 9
-                        }]);
-                        static fromBinary(e, t) {
-                            return (new ku).fromBinary(e, t)
-                        }
-                        static fromJson(e, t) {
-                            return (new ku).fromJson(e, t)
-                        }
-                        static fromJsonString(e, t) {
-                            return (new ku).fromJsonString(e, t)
-                        }
-                        static equals(e, t) {
-                            return y.proto3.util.equals(ku, e, t)
-                        }
-                    }
-                    class Iu extends y.Message {
-                        constructor(e) {
-                            super(), y.proto3.util.initPartial(e, this)
-                        }
-                        static runtime = y.proto3;
-                        static typeName = "aiserver.v1.UnshareAgentStoreResponse";
-                        static fields = y.proto3.util.newFieldList(() => []);
-                        static fromBinary(e, t) {
                             return (new Iu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
@@ -270805,6 +270850,52 @@
                         }
                     }
                     class bu extends y.Message {
+                        shareId = "";
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.UnshareAgentStoreRequest";
+                        static fields = y.proto3.util.newFieldList(() => [{
+                            no: 1,
+                            name: "share_id",
+                            kind: "scalar",
+                            T: 9
+                        }]);
+                        static fromBinary(e, t) {
+                            return (new bu).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new bu).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new bu).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(bu, e, t)
+                        }
+                    }
+                    class Cu extends y.Message {
+                        constructor(e) {
+                            super(), y.proto3.util.initPartial(e, this)
+                        }
+                        static runtime = y.proto3;
+                        static typeName = "aiserver.v1.UnshareAgentStoreResponse";
+                        static fields = y.proto3.util.newFieldList(() => []);
+                        static fromBinary(e, t) {
+                            return (new Cu).fromBinary(e, t)
+                        }
+                        static fromJson(e, t) {
+                            return (new Cu).fromJson(e, t)
+                        }
+                        static fromJsonString(e, t) {
+                            return (new Cu).fromJsonString(e, t)
+                        }
+                        static equals(e, t) {
+                            return y.proto3.util.equals(Cu, e, t)
+                        }
+                    }
+                    class Su extends y.Message {
                         limit = 0;
                         createdBeforeMs;
                         owningUserId;
@@ -270853,19 +270944,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new bu).fromBinary(e, t)
+                            return (new Su).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new bu).fromJson(e, t)
+                            return (new Su).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new bu).fromJsonString(e, t)
+                            return (new Su).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(bu, e, t)
+                            return y.proto3.util.equals(Su, e, t)
                         }
                     }
-                    class Cu extends y.Message {
+                    class Bu extends y.Message {
                         shareId = "";
                         agentId = "";
                         storeId = "";
@@ -270942,19 +271033,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Cu).fromBinary(e, t)
+                            return (new Bu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Cu).fromJson(e, t)
+                            return (new Bu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Cu).fromJsonString(e, t)
+                            return (new Bu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Cu, e, t)
+                            return y.proto3.util.equals(Bu, e, t)
                         }
                     }
-                    class Su extends y.Message {
+                    class xu extends y.Message {
                         listings = [];
                         hasMore = !1;
                         nextCreatedBeforeMs;
@@ -270968,7 +271059,7 @@
                             no: 1,
                             name: "listings",
                             kind: "message",
-                            T: Cu,
+                            T: Bu,
                             repeated: !0
                         }, {
                             no: 2,
@@ -270989,19 +271080,19 @@
                             opt: !0
                         }]);
                         static fromBinary(e, t) {
-                            return (new Su).fromBinary(e, t)
+                            return (new xu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Su).fromJson(e, t)
+                            return (new xu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Su).fromJsonString(e, t)
+                            return (new xu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Su, e, t)
+                            return y.proto3.util.equals(xu, e, t)
                         }
                     }
-                    class Bu extends y.Message {
+                    class Ru extends y.Message {
                         bcId = "";
                         machineName = "";
                         workerId = "";
@@ -271033,19 +271124,19 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new Bu).fromBinary(e, t)
+                            return (new Ru).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new Bu).fromJson(e, t)
+                            return (new Ru).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new Bu).fromJsonString(e, t)
+                            return (new Ru).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(Bu, e, t)
+                            return y.proto3.util.equals(Ru, e, t)
                         }
                     }
-                    class xu extends y.Message {
+                    class Nu extends y.Message {
                         status = Sn.UNSPECIFIED;
                         rejectionReason = Bn.UNSPECIFIED;
                         message = "";
@@ -271077,16 +271168,16 @@
                             T: 9
                         }]);
                         static fromBinary(e, t) {
-                            return (new xu).fromBinary(e, t)
+                            return (new Nu).fromBinary(e, t)
                         }
                         static fromJson(e, t) {
-                            return (new xu).fromJson(e, t)
+                            return (new Nu).fromJson(e, t)
                         }
                         static fromJsonString(e, t) {
-                            return (new xu).fromJsonString(e, t)
+                            return (new Nu).fromJsonString(e, t)
                         }
                         static equals(e, t) {
-                            return y.proto3.util.equals(xu, e, t)
+                            return y.proto3.util.equals(Nu, e, t)
                         }
                     }
                 },
@@ -327102,4 +327193,4 @@
                         $ {
                             t.protocol
                         } //${t.host}${t.pathname}`}catch{return"<unparseable-presigned-url>"}})}const D=d.join(__dirname,"node_modules","better-sqlite3","build","Release","better_sqlite3.node");class F{constructor(e){this.options=e,this.failures=0}recordSuccess(){this.failures=0}recordFailure(){this.failures+=1;const e=Math.min(this.options.baseDelayMs*2**(this.failures-1),this.options.maxDelayMs),t=Math.max(0,Math.min(Math.random(),1)),n=1-this.options.jitter+2*t*this.options.jitter;return Math.min(this.options.maxDelayMs,Math.max(1,Math.floor(e*n)))}}function L(){return new F({baseDelayMs:5e3,maxDelayMs:6e4,jitter:.2})}class O{constructor(e,t,n){this.harness=e,this.windowId=t,this.log=n,this.engines=new Map,this.disposables=[],this.mountBackoff=new Map,this.inFlightMounts=new Set,this.disposed=!1;const r=globalThis;if("function"==typeof r.addEventListener){const e=()=>this.onOnlineEvent();r.addEventListener("online",e),this.disposables.push({dispose:()=>{r.removeEventListener?.("online",e)}})}}getSharedQueues(e){return void 0===this.queues&&(this.queues=function(e){return{s3:new e.BoundedConcurrencyQueue({max:8}),list:new e.BoundedConcurrencyQueue({max:4}),hash:new e.BoundedConcurrencyQueue({max:4}),presign:new e.BoundedConcurrencyQueue({max:4})}}(e)),this.queues}ensureMounted(e){if(!this.disposed){try{(0,B._b)(e)}catch(e){return void this.log.appendLine(`[agent-store-sync] refusing unsafe agent id: ${String(e)}`)}this.ensureMountedSpec({mountKey:e,mountKind:"self",remoteTarget:{kind:"direct",agentId:e},syncMode:"readWrite"}).catch(()=>{})}}ensureMountedPeer(e){if(this.disposed)return Promise.resolve("not-started");try{(0,B._b)(e.peerAgentId)}catch(e){return this.log.appendLine(`[agent-store-sync] refusing unsafe peer mount: ${String(e)}`),Promise.resolve("invalid")}const t={mountKey:e.peerAgentId,mountKind:"peer",remoteTarget:{kind:"direct",agentId:e.peerAgentId},syncMode:"readWrite",...void 0!==e.alias?{alias:e.alias}:{}};return this.ensureMountedSpec(t)}ensureMountedShare(e){if(this.disposed)return Promise.resolve("not-started");if(!(0,B.A8)(e.shareId))return this.log.appendLine(`[agent-store-sync] refusing unsafe share mount key: ${e.shareId}`),Promise.resolve("invalid");try{(0,B.qh)(e.shareId)}catch(e){return this.log.appendLine(`[agent-store-sync] refusing unsafe share mount: ${String(e)}`),Promise.resolve("invalid")}const t={mountKey:e.shareId,mountKind:"share",remoteTarget:{kind:"share",shareId:e.shareId},syncMode:"readOnly",...void 0!==e.alias?{alias:e.alias}:{}};return this.ensureMountedSpec(t)}async ensureMountedSpec(e){const t=e.mountKey,n=this.engines.get(t);if(void 0!==n)return this.reconcileMountKind(n,e),"already-present";const r=this.mountBackoff.get(t);if(void 0!==r&&Date.now()<r.readyAtMs)return"cooling-down";const s={agentId:t,mountKind:e.mountKind,engine:Q,index:{close:()=>{}},syncTimer:void 0,syncing:void 0,syncRequested:!1,lastSyncSummary:void 0,lastDiskFullToastMs:0,syncBackoff:L()};this.engines.set(t,s);const o=this.mountEngine(e,s).then(e=>(e&&this.mountBackoff.delete(t),e),e=>{this.engines.get(t)===s&&this.engines.delete(t);const n=this.mountBackoff.get(t)?.scheduler??new F({baseDelayMs:3e4,maxDelayMs:6e5,jitter:.2}),r=n.recordFailure();throw this.mountBackoff.set(t,{scheduler:n,readyAtMs:Date.now()+r}),this.log.appendLine(`[agent-store-sync] mount ${t} failed: ${P(e)} (next retry in ${Math.round(r/1e3)}s)`),e});return this.inFlightMounts.add(o),o.finally(()=>{this.inFlightMounts.delete(o)}).catch(()=>{}),await o?"mounted":"not-started"}async forceSyncMountedIfPresent(e){const t=this.engines.get(e);if(void 0!==t&&"running"===t.engine.getState())return await this.runSync(t),t.lastSyncSummary}async dispose(){if(this.disposed)return;this.disposed=!0;for(const e of this.disposables.splice(0))try{e.dispose()}catch{}this.inFlightMounts.size>0&&await Promise.allSettled([...this.inFlightMounts]);const e=[...this.engines.values()].filter(e=>e.engine!==Q);this.engines.clear(),await Promise.allSettled(e.map(async e=>{if(void 0!==e.syncTimer&&clearTimeout(e.syncTimer),!this.guardedPathsSafeForShutdown(e))try{await e.engine.pause()}catch{}try{await e.engine.dispose()}catch(t){this.log.appendLine(`[agent-store-sync] dispose ${e.agentId} failed: ${P(t)}`)}finally{try{e.index.close()}catch{}}}))}guardedPathsSafeForShutdown(e){if(void 0===e.guardedPaths)return!0;try{for(const t of e.guardedPaths)(0,B.rs)(t);return!0}catch(t){return this.log.appendLine(`[agent-store-sync] skipping final flush for ${e.agentId}: ${P(t)}`),!1}}async checkpoint(e,t,n){if(!this.disposed&&this.engines.get(e)===t)return!0;if(void 0!==n?.engine)try{await n.engine.dispose()}catch{}if(void 0!==n?.index)try{n.index.close()}catch{}return this.dropOwnedSlot(e,t),!1}dropOwnedSlot(e,t){this.engines.get(e)===t&&this.engines.delete(e)}reconcileMountKind(e,t){"self"===t.mountKind&&"self"!==e.mountKind&&("share"!==e.mountKind?(this.log.appendLine(`[agent-store-sync] promoting ${t.mountKey} from peer to self`),e.mountKind="self",e.engine!==Q&&this.writeMountConfig({...t,mountKind:"self"})):this.log.appendLine(`[agent-store-sync] refusing to promote share mount ${t.mountKey} to self`))}async mountEngine(e,t){const n=e.mountKey,r=await this.loadModule();if(void 0===r)throw this.dropOwnedSlot(n,t),new Error("agent-store-sync module load failed");if(!await this.checkpoint(n,t))return!1;const s=(0,B.f$)({base:this.harness.base,agentId:n}),o=(0,B.DE)({base:this.harness.base,agentId:n}),i=(0,B.mD)({base:this.harness.base,agentId:n}),a=(0,B.N1)({base:this.harness.base,agentId:n});try{(0,B.rs)(o),(0,B.rs)(i),(0,B.rs)(a)}catch(e){throw this.dropOwnedSlot(n,t),e}const l=await this.loadSqlite();if(!await this.checkpoint(n,t))return!1;try{(0,B.rs)(o),(0,B.rs)(i),(0,B.rs)(a)}catch(e){throw this.dropOwnedSlot(n,t),e}const u=r.openAgentStoreLocalIndex(i,{sqlite:l});if(!await this.checkpoint(n,t,{index:u}))return!1;let d;const p={agentId:n,mountKind:e.mountKind,engine:void 0,index:u,syncTimer:void 0,syncing:void 0,syncRequested:!1,lastSyncSummary:void 0,lastDiskFullToastMs:0,syncBackoff:L()};try{const l=new r.BcsAgentStoreTransport({transport:c.cursor.connectTransport}),m=new r.RetryingAgentStoreClient(new r.TokenCachingAgentStoreClient(l)),h="self"===e.mountKind?m:new r.MountScopedAgentStoreClient({inner:m,target:e.remoteTarget}),f=this.getSharedQueues(r),g=c.cursor.getCursorCreds()?.backendUrl??"",A=r.isLocalAgentStoreBackendUrl(g),y={agentId:n,filesDir:s,tmpDir:o,client:h,index:u,queues:f,validatePresignedUrl:r.createAgentStorePresignedUrlValidatorForBackend(g),blobTransfer:new r.HttpAgentStoreBlobTransfer({allowInsecureScheme:A}),syncMode:e.syncMode,lockProvider:this.lockProviderFor(r,n),initialState:"paused",indexPath:i,onStateChanged:e=>this.onEngineStateChanged(e)};if(d=new r.AgentStoreSyncEngine(y),p.engine=d,!await this.checkpoint(n,t,{engine:d,index:u}))return!1;const w=this.engines.get(n)?.mountKind??e.mountKind;if(w!==p.mountKind&&(p.mountKind=w),this.engines.set(n,p),p.guardedPaths=[o,i,a],await d.unpause(),this.engines.get(n)!==p)return!1;this.writeMountConfig({...e,mountKind:p.mountKind})}catch(e){if(void 0!==d)try{await d.dispose()}catch{}try{u.close()}catch{}const r=this.engines.get(n);throw r!==t&&r!==p||this.engines.delete(n),e}return this.log.appendLine(`[agent-store-sync] mounted ${n} (state=${d.getState()})`),!0}writeMountConfig(e){const t=e.mountKey,n="readOnly"===e.syncMode,r="share"===e.remoteTarget.kind?e.remoteTarget.shareId:e.remoteTarget.agentId,s={version:1,kind:e.mountKind,mountKey:t,readOnly:n};"self"!==e.mountKind&&(s.remoteId=r,void 0!==e.alias&&(s.alias=e.alias));const o=(0,B.BE)({base:this.harness.base,agentId:t});try{N.writeFileSync(o,JSON.stringify(s,void 0,2),{mode:384})}catch(e){this.log.appendLine(`[agent-store-sync] failed to write mount config for ${t}: ${P(e)}`)}}async loadModule(){return void 0===this.modulePromise&&(this.modulePromise=(async()=>{try{return await Promise.all([__webpack_require__.e(68),__webpack_require__.e(411)]).then(__webpack_require__.bind(__webpack_require__,96411))}catch(e){return void this.log.appendLine(`[agent-store-sync] failed to load @anysphere/agent-store-sync: ${String(e)}`)}})()),await this.modulePromise}async loadSqlite(){return void 0===this.sqliteCtor&&(this.sqliteCtor=await async function(){return function(e){if(!N.existsSync(D))return e;const t=function(t,n){return new e(t,{...n,nativeBinding:n?.nativeBinding??D})};return Object.setPrototypeOf(t,e),t.prototype=e.prototype,t}((await Promise.resolve().then(__webpack_require__.t.bind(__webpack_require__,87550,23))).default)}()),this.sqliteCtor}lockProviderFor(e,t){const n=(0,B.N1)({base:this.harness.base,agentId:t}),r=this.windowId;return{async acquire(){try{(0,B.rs)(n)}catch{return}const t=await e.tryAcquireStoreLock({lockPath:n,windowId:r});if("acquired"===t.kind)return{release:async()=>{try{await t.lock.dispose()}catch{}}}}}}scheduleSync(e,t=5e3){this.disposed||this.engines.get(e.agentId)===e&&(void 0!==e.syncTimer&&clearTimeout(e.syncTimer),e.syncTimer=setTimeout(()=>{e.syncTimer=void 0,this.runSync(e)},t),e.syncTimer.unref?.())}async runSync(e){if(!this.disposed&&"running"===e.engine.getState()&&this.guardedPathsSafe(e)){if(void 0!==e.syncing)return e.syncRequested=!0,void await e.syncing;e.syncing=(async()=>{let t=!1;try{const n=await e.engine.forceSync();if(e.lastSyncSummary=n,n.errors.length>0){t=!0;for(const t of n.errors)this.log.appendLine(`[agent-store-sync] ${e.agentId} ${t.code} ${t.relPath??"<unknown>"}: ${P(t.message)}`),"fs_write_failed"===t.code&&this.maybeShowDiskFullToast(e)}}catch(n){t=!0,this.log.appendLine(`[agent-store-sync] ${e.agentId} sync failed: ${P(n)}`)}finally{e.syncing=void 0;const n=t?e.syncBackoff.recordFailure():(e.syncBackoff.recordSuccess(),5e3);e.syncRequested&&!this.disposed?(e.syncRequested=!1,this.runSync(e),void 0===e.syncing&&this.scheduleSync(e,n)):this.scheduleSync(e,n)}})(),await e.syncing}}maybeShowDiskFullToast(e){const t=Date.now();t-e.lastDiskFullToastMs<3e5||(e.lastDiskFullToastMs=t,c.window.showWarningMessage(`Cursor agent store can't write to ${this.harness.base}. Some agent files won't sync until space is freed.`))}onOnlineEvent(){const e=[...this.engines.values()].filter(e=>e.engine!==Q&&"running"===e.engine.getState());if(0!==e.length){this.log.appendLine(`[agent-store-sync] online → waking ${e.length} engine(s)`);for(const t of e)void 0!==t.syncTimer&&(clearTimeout(t.syncTimer),t.syncTimer=void 0),this.runSync(t)}}onEngineStateChanged(e){if(this.log.appendLine(`[agent-store-sync] ${e.agentId} ${e.fromState} → ${e.toState} (${e.reason})`),"running"!==e.toState||this.disposed)return;const t=this.engines.get(e.agentId);void 0!==t&&t.engine!==Q&&(void 0!==t.syncTimer&&(clearTimeout(t.syncTimer),t.syncTimer=void 0),this.runSync(t))}guardedPathsSafe(e){if(void 0===e.guardedPaths)return!0;try{for(const t of e.guardedPaths)(0,B.rs)(t);return!0}catch(t){return this.unmountUnsafeEngine(e,String(t)),!1}}async unmountUnsafeEngine(e,t){if(this.engines.get(e.agentId)===e){this.log.appendLine(`[agent-store-sync] unmounting ${e.agentId}: ${t}`),void 0!==e.syncTimer&&(clearTimeout(e.syncTimer),e.syncTimer=void 0),this.engines.delete(e.agentId);try{await e.engine.pause()}catch{}try{await e.engine.dispose()}catch{}try{e.index.close()}catch{}}}}const Q={getState:()=>"paused",pause:async()=>{},dispose:async()=>{}},J="agent_store_sync_client",U="CURSOR_AGENT_STORE_FILES_DIR",q=/^[A-Za-z_][A-Za-z0-9_]*$/,G="Agent store sync is disabled. Enable `agent_store_sync_client`.";let j,Y,H;const W=new Map,z=new Map;function V(){return void 0!==j&&void 0!==Y}function $(){c.window.showInformationMessage(G)}async function K(e){try{return await c.cursor.checkFeatureGate(J)}catch(t){return e.appendLine(`[cursor-agent-exec] Agent store subagent inherit gate check failed, defaulting to disabled: ${String(t)}`),!1}}function Z(e,t){const n="peer"===e?"agent_store":"shared_store",r=`${n}_${t.slice(-8).replace(/[^A-Za-z0-9_]/g,"_").replace(/^[0-9]/,"_")}`;return q.test(r)?r:n}function X(e,t){let n=e,r=2;for(;t.has(n);)n=`${e}_${r}`,r++;return t.add(n),n}async function ee(e,t){if(!await async function(e){return async function(e){try{return await c.cursor.checkFeatureGate(J)}catch(t){return e.appendLine(`[cursor-agent-exec] Agent store sync gate check failed, defaulting to disabled: ${String(t)}`),!1}}(e)}(e)||!V())return t.silent||$(),{mounted:!1,reason:"disabled"};const n=(0,B.j6)(t);if(void 0===n)return{mounted:!1,reason:"invalid-mount"};const r="share"===n.kind?n.shareId:n.agentId,s=W.get(r);if(void 0!==s)return{mounted:!0,kind:s.kind,mountKey:r,storeId:"peer"===n.kind?n.agentId:void 0,shareId:"share"===n.kind?n.shareId:void 0,alias:s.alias,filesDir:s.filesDir,reason:"already-mounted"};const o=t.alias?.trim(),i=X(o&&q.test(o)?o:Z(n.kind,r),new Set([...W.values()].map(e=>e.alias)));if(void 0===Y||void 0===j)return t.silent||$(),{mounted:!1,kind:n.kind,mountKey:r,alias:i,reason:"disabled"};const a="share"===n.kind?await Y.ensureMountedShare({shareId:n.shareId,alias:i}):await Y.ensureMountedPeer({peerAgentId:n.agentId,alias:i});if("mounted"!==a&&"already-present"!==a)return{mounted:!1,kind:n.kind,mountKey:r,storeId:"peer"===n.kind?n.agentId:void 0,shareId:"share"===n.kind?n.shareId:void 0,alias:i,reason:"mount-not-started"};const l=(0,B.f$)({base:j.base,agentId:r});return function(e,t,n){W.set(t,n),e.appendLine(`[cursor-agent-exec] mount alias add kind=${n.kind} mountKey=${t} alias=${n.alias}`)}(e,r,{alias:i,filesDir:l,kind:n.kind}),t.silent||c.window.showInformationMessage(`Mounted ${n.kind} ${r} as ${i}`),{mounted:!0,kind:n.kind,mountKey:r,storeId:"peer"===n.kind?n.agentId:void 0,shareId:"share"===n.kind?n.shareId:void 0,alias:i,filesDir:l}}const te="agent_exec",ne="mcp",re={disableConsoleFallback:!0},se=(async()=>{try{return await c.cursor.checkFeatureGate("mcp_structured_logging")}catch{return!1}})();function oe(e){se.then(t=>{t&&e()})}class ie{log(e,t){const{level:n,message:r,metadata:s,error:o}=t,i=o instanceof Error?o:void 0;switch(n){case"debug":c.cursor.logStructuredDebug(te,r,s);break;case"info":c.cursor.logStructuredInfo(te,r,s);break;case"warn":c.cursor.logStructuredWarn(te,r,s);break;case"error":c.cursor.logStructuredError(te,r,i,s);break;default:throw new Error(`Unhandled log level: ${n}`)}}}class ae{constructor(e){this.options=e}log(e,t){oe(()=>{const e=this.buildMcpMetadata(t.metadata),n=t.error instanceof Error?t.error:void 0;switch(t.level){case"debug":c.cursor.logStructuredDebug(ne,t.message,e,re);break;case"info":c.cursor.logStructuredInfo(ne,t.message,e,re);break;case"warn":c.cursor.logStructuredWarn(ne,t.message,e,re);break;case"error":c.cursor.logStructuredError(ne,t.message,n,e,re);break;default:{const e=t.level;throw new Error(`Unhandled log level: ${e}`)}}})}buildMcpMetadata(e){const t={subkey:this.options.subkey,mcp_version:this.options.mcpVersion};if(void 0!==this.options.identifier&&(t.identifier=this.options.identifier),e)for(const[n,r]of Object.entries(e))t[n]=r;return{mcpMeta:t}}}class le{constructor(e,t=s.ut){this.backend=e,this.metadataKey=t}log(e,t){if(!0!==t.metadata?.[this.metadataKey])return;const n={...t.metadata??{}};delete n[this.metadataKey],this.backend.log(e,{...t,metadata:n})}}class ce{constructor(e){this.outputChannel=e}log(e,t){const{level:n,message:r,metadata:s,error:o}=t;let i=r;switch(s&&Object.keys(s).length>0&&(i+=` ${JSON.stringify(s)}`),n){case"debug":this.outputChannel.debug(i),o&&this.outputChannel.debug(this.formatError(o));break;case"info":this.outputChannel.info(i),o&&this.outputChannel.info(this.formatError(o));break;case"warn":this.outputChannel.warn(i),o&&this.outputChannel.warn(this.formatError(o));break;case"error":this.outputChannel.error(i),o&&this.outputChannel.error(this.formatError(o));break;default:throw new Error(`Unhandled log level: ${n}`)}}formatError(e){return e instanceof Error?`${e.message}\n${e.stack??""}`:String(e)}}class ue{constructor(e){this.backends=e}log(e,t){for(const n of this.backends)n.log(e,t)}}class de{record(e,t,n,r){c.cursor.metricsGauge({stat:t.name,value:n,tags:r})}increment(e,t,n,r){c.cursor.metricsIncrement({stat:t.name,value:n??1,tags:r})}gauge(e,t,n,r){c.cursor.metricsGauge({stat:t.name,value:n,tags:r})}histogram(e,t,n,r){c.cursor.metricsDistribution({stat:t.name,value:n,tags:r})}}var pe=__webpack_require__(34873),me=__webpack_require__(55094),he=__webpack_require__(69584),fe=(e,t)=>(t=Symbol[e])?t:Symbol.for("Symbol."+e),ge=e=>{throw TypeError(e)},Ae=(e,t,n)=>{var r,s;return null!=t?("object"!=typeof t&&"function"!=typeof t&&ge("Object expected"),n&&(r=t[fe("asyncDispose")]),void 0===r&&(r=t[fe("dispose")],n&&(s=r)),"function"!=typeof r&&ge("Object not disposable"),s&&(r=function(){try{s.call(this)}catch(e){return Promise.reject(e)}}),e.push([n,r,t])):n&&e.push([n]),t};let ye;function we(){return ye??(ye=Promise.resolve().then(__webpack_require__.bind(__webpack_require__,96844))),ye}class ve{constructor(e){this.callbacks=e}getBlob(e,t){return this.callbacks.getBlob(t)}setBlob(e,t,n){return this.callbacks.setBlob(t,n,!1)}setBlobLocallyOnly(e,t,n){return this.callbacks.setBlob(t,n,!0)}flush(e){return Promise.resolve()}}class Ee{constructor(e){this.callbacks=e,this.postTurnEndedWorkQueue=[]}async sendUpdate(e,t){await this.callbacks.sendInteractionUpdate(t.toBinary())}async query(e,t){const n=await this.callbacks.queryInteraction(t.toBinary());return he.Y5.fromBinary(n)}enqueuePostTurnEndedWork(e){this.postTurnEndedWorkQueue.push(e)}async flushPostTurnEndedWork(e){const t=this.postTurnEndedWorkQueue.splice(0);for(const e of t)await e()}}class _e{constructor(e,t,n,r,s,o){this.factory=e,this.teamSettingsService=t,this.createTerminalExecutor=n,this.workspacePaths=r,this.loggerBackend=s,this.metricsBackend=o,this.sessions=new Map}invalidateTeamSettingsCache(){this.teamSettingsService.invalidateCache()}async spawn(e,n){const r=n.cwd??this.workspacePaths[0]??C.homedir(),s=this.createTerminalExecutor().clone(r);try{const n=(0,t.q6)().with(t._O,this.loggerBackend).with(o.Fm,this.metricsBackend),i=await s.execute(n,e,{workingDirectory:r,env:{CURSOR_AGENT:"1"}});let a="",l="",c=0;for await(const e of i)"stdout"===e.type?a+=e.data.toString("utf8"):"stderr"===e.type?l+=e.data.toString("utf8"):"exit"===e.type&&(c=e.code??0);return{stdout:a,stderr:l,code:c}}catch(e){return{stdout:"",stderr:e.message??String(e),code:e.exitCode??1}}}createSession(e,n,r,s,i,a){const l=crypto.randomUUID(),{manager:c,baseResources:u,unsubscribe:d,terminalExecutor:p}=this.factory.createSessionExecManager(l,e,n,r,s.workspacePaths,s.worktreeMainPath,i,a,s.isGlassRoot),m=this.loggerBackend,h=this.metricsBackend,g=this.sessions,A={createStream:(e,n,r)=>async function*(){var s,i,a,l,u,d,p=[];try{const s=me.Ye.fromBinary(n);let i,a;if(s.spanContext){const e=s.spanContext;i=(0,t.V5)({traceId:e.traceId,spanId:e.spanId,traceFlags:e.traceFlags??1},"exec.handle").with(t._O,m).with(o.Fm,h),a=(0,t.fU)(i)}else i=(0,t.q6)().with(t._O,m).with(o.Fm,h);i=i.with(f,e),e.requestId&&(i=(0,t.Mf)(i,"requestId",e.requestId)),e.composerId&&(i=(0,t.Mf)(i,"composerId",e.composerId));const[l,u]=i.withCancel();r.aborted?u():r.addEventListener("abort",()=>{u()},{once:!0}),Ae(p,a?new t.r2(l,a):void 0);const d=Ae(p,(0,t.VI)(l.withName("controlledExecManager.handle"))),g=c.handle(d.ctx,s);for await(const e of g){const t=(()=>{if(e instanceof me.yT)return"M";if(e instanceof me.$Y)return"C";throw new Error("Invalid message type")})(),n=e.toBinary(),r=new Uint8Array(n.length+1);r[0]=t.charCodeAt(0),r.set(n,1),yield r}}catch(e){var g=e,A=!0}finally{s=p,i=g,a=A,l="function"==typeof SuppressedError?SuppressedError:function(e,t,n,r){return(r=Error(n)).name="SuppressedError",r.error=e,r.suppressed=t,r},u=e=>i=a?new l(e,i,"An error was suppressed during disposal"):(a=!0,e),(d=e=>{for(;e=s.pop();)try{var t=e[1]&&e[1].call(e[2]);if(e[0])return Promise.resolve(t).then(d,e=>(u(e),d()))}catch(e){u(e)}if(a)throw i})()}}(),dispose(){d(),u.dispose(),p.dispose(),g.delete(l)}};return this.sessions.set(l,A),A}async runLocalAgent(e,n){const r=crypto.randomUUID(),s=new c.EventEmitter;let i,a,l,u,d,p,m;try{({resources:i,baseResources:a,unsubscribe:l,terminalExecutor:u}=this.factory.createSessionExecManager(r,async()=>({approved:!0}),async()=>({action:"cancel"}),async()=>{},e.agentExecOptions.workspacePaths,e.agentExecOptions.worktreeMainPath,async()=>({allow:[],deny:[],approvalMode:"unrestricted",userConfiguredPolicy:{type:"insecure_none"}}),s.event,e.agentExecOptions.isGlassRoot))}catch(e){throw s.dispose(),e}try{d=e.modelDetails?he.Gm.fromBinary(e.modelDetails):void 0,p=he.Gm.fromBinary(e.defaultModel),m={...e.runOptions,requestedModel:e.runOptions.requestedModel?he.G4.fromBinary(e.runOptions.requestedModel):void 0}}catch(e){throw s.dispose(),l(),a.dispose(),u.dispose(),e}const h={conversationId:e.runOptions.conversationId,composerId:e.runOptions.conversationGroupId??e.runOptions.conversationId,requestId:e.runOptions.generationUUID??crypto.randomUUID(),modelName:d?.modelId??p.modelId??""},g=(0,t.q6)().with(t._O,this.loggerBackend).with(o.Fm,this.metricsBackend).with(f,h);try{const{LocalAgentClient:t}=await we(),r=new t({localProvider:{kind:"http",baseUrl:e.baseUrl,apiKey:e.apiKey},userAgent:e.userAgent,defaultModel:p,privacyMode:e.privacyMode});await r.run(g,he.Y9.fromBinary(e.conversationState),he.QF.fromBinary(e.action),d,new Ee(n),i,new ve(n),new pe.hg,{async handleCheckpoint(e,t){await n.handleCheckpoint(t.toBinary())},getLatestCheckpoint(){}},e.mcpTools,m)}finally{s.dispose(),l(),a.dispose(),u.dispose()}}async runLocalInference(e){const t=await we();switch(e.kind){case"agentName":return t.generateLocalAgentName({modelId:e.modelId,baseUrl:e.baseUrl,apiKey:e.apiKey,userAgent:e.userAgent,userMessage:e.userMessage??""});case"commitMessage":return t.generateLocalCommitMessage({modelId:e.modelId,baseUrl:e.baseUrl,apiKey:e.apiKey,userAgent:e.userAgent,diffs:e.diffs??[],previousCommitMessages:e.previousCommitMessages,explicitContext:e.explicitContext});case"branchName":return t.generateLocalBranchName({modelId:e.modelId,baseUrl:e.baseUrl,apiKey:e.apiKey,userAgent:e.userAgent,diffs:e.diff??e.diffs?.join("\n\n")??"",context:e.context});default:{const t=e.kind;throw new Error(`Unknown local inference kind: ${t}`)}}}async fetchLocalProviderModels(e){const t=await we(),n=await t.fetchLocalProviderModels({baseUrl:e.baseUrl,apiKey:e.apiKey,userAgent:e.userAgent});return{models:n.models.map(e=>({id:e.id,contextLength:e.contextLength,maxOutputTokens:e.maxOutputTokens,supportsReasoning:e.supportsReasoning,supportsVision:e.supportsVision})),allProviderModelIds:n.allModelIds}}dispose(){for(const e of this.sessions.values())e.dispose();this.sessions.clear()}}function Te(e){const n=(0,t.mJ)(e),r=e.get(f),s=r?.composerId;return{spanContext:n?{traceId:n.traceId,spanId:n.spanId,traceFlags:n.traceFlags}:void 0,name:e.name,composerId:s}}function ke(e){const t=Te(e),n=new c.CancellationTokenSource,r=()=>{n.cancel()};return e.signal.aborted?n.cancel():e.signal.addEventListener("abort",r),{serializableContext:t,cancellationTokenSource:n,dispose:()=>{e.signal.removeEventListener("abort",r),n.dispose()}}}var Ie=(e,t)=>(t=Symbol[e])?t:Symbol.for("Symbol."+e),be=e=>{throw TypeError(e)},Ce=(e,t,n)=>{var r,s;return null!=t?("object"!=typeof t&&"function"!=typeof t&&be("Object expected"),n&&(r=t[Ie("asyncDispose")]),void 0===r&&(r=t[Ie("dispose")],n&&(s=r)),"function"!=typeof r&&be("Object not disposable"),s&&(r=function(){try{s.call(this)}catch(e){return Promise.reject(e)}}),e.push([n,r,t])):n&&e.push([n]),t},Se=(e,t,n)=>{var r="function"==typeof SuppressedError?SuppressedError:function(e,t,n,r){return(r=Error(n)).name="SuppressedError",r.error=e,r.suppressed=t,r},s=e=>t=n?new r(e,t,"An error was suppressed during disposal"):(n=!0,e),o=r=>{for(;r=e.pop();)try{var i=r[1]&&r[1].call(r[2]);if(r[0])return Promise.resolve(i).then(o,e=>(s(e),o()))}catch(e){s(e)}if(n)throw t};return o()};class Be{constructor(e){this.configuredHooks=[],this.configuredSteps=new Set,this.subscription=c.cursor.onDidChangeHooks(e=>{this.configuredHooks=e,this.configuredSteps=new Set(e.map(e=>e.step))}),this.initPromise=(async()=>{var n=[];try{const r=e?e.withName("HooksConfigTracker.constructorInit"):(0,t.q6)().withName("HooksConfigTracker.constructorInit"),s=Te(Ce(n,(0,t.VI)(r)).ctx),o=await c.cursor.getConfiguredHooks(s);this.configuredHooks=o,this.configuredSteps=new Set(o.map(e=>e.step))}catch(e){var r=e,s=!0}finally{Se(n,r,s)}})()}async initialize(e){var n=[];try{Ce(n,(0,t.VI)(e.withName("HooksConfigTracker.initialize"))),await this.initPromise}catch(e){var r=e,s=!0}finally{Se(n,r,s)}}hasHookForStep(e){return this.configuredSteps.has(e)}getConfiguredHooks(){return[...this.configuredHooks]}getConfiguredSteps(){return new Set(this.configuredSteps)}dispose(){this.subscription.dispose()}}var xe=__webpack_require__(82987);const Re=(0,o.v5)("vscode.agent_exec.event_loop_delay_ms",{description:"Event loop delay in milliseconds"}),Ne=(0,o.wt)("vscode.agent_exec.event_loop_delay_min_ms",{description:"Minimum event loop delay in milliseconds"}),Me=(0,o.wt)("vscode.agent_exec.event_loop_delay_max_ms",{description:"Maximum event loop delay in milliseconds"}),Pe=(0,o.wt)("vscode.agent_exec.event_loop_delay_mean_ms",{description:"Mean event loop delay in milliseconds"}),De=(0,o.wt)("vscode.agent_exec.memory_heap_used_mb",{description:"V8 heap used memory in megabytes"}),Fe=(0,o.wt)("vscode.agent_exec.memory_heap_total_mb",{description:"V8 heap total memory in megabytes"}),Le=(0,o.wt)("vscode.agent_exec.memory_rss_mb",{description:"Resident set size memory in megabytes"}),Oe=(0,o.wt)("vscode.agent_exec.memory_external_mb",{description:"External memory usage in megabytes"}),Qe=(0,o.wt)("vscode.agent_exec.memory_array_buffers_mb",{description:"ArrayBuffers memory usage in megabytes"}),Je=(0,o.wt)("vscode.agent_exec.cpu_user_percent",{description:"CPU user time percentage"}),Ue=(0,o.wt)("vscode.agent_exec.cpu_system_percent",{description:"CPU system time percentage"}),qe=1048576;class Ge{constructor(e,t=1e4){this.intervalId=null,this.lastCpuUsage=null,this.lastCpuTime=0,this.getContext=e,this.intervalMs=t,this.eventLoopMonitor=xe.monitorEventLoopDelay({resolution:20})}start(){null===this.intervalId&&(this.eventLoopMonitor.enable(),this.lastCpuUsage=process.cpuUsage(),this.lastCpuTime=Date.now(),this.collectMetrics(),this.intervalId=setInterval(()=>{this.collectMetrics()},this.intervalMs))}stop(){null!==this.intervalId&&(clearInterval(this.intervalId),this.intervalId=null),this.eventLoopMonitor.disable()}collectMetrics(){const e=this.getContext();this.collectEventLoopMetrics(e),this.collectMemoryMetrics(e),this.collectCpuMetrics(e)}collectEventLoopMetrics(e){const t=e=>e/1e6;Re.histogram(e,t(this.eventLoopMonitor.mean)),Ne.gauge(e,t(this.eventLoopMonitor.min)),Me.gauge(e,t(this.eventLoopMonitor.max)),Pe.gauge(e,t(this.eventLoopMonitor.mean)),this.eventLoopMonitor.reset()}collectMemoryMetrics(e){const t=process.memoryUsage();De.gauge(e,t.heapUsed/qe),Fe.gauge(e,t.heapTotal/qe),Le.gauge(e,t.rss/qe),Oe.gauge(e,t.external/qe),Qe.gauge(e,t.arrayBuffers/qe)}collectCpuMetrics(e){const t=process.cpuUsage(),n=Date.now();if(null!==this.lastCpuUsage){const r=1e3*(n-this.lastCpuTime),s=(t.user-this.lastCpuUsage.user)/r*100,o=(t.system-this.lastCpuUsage.system)/r*100;Je.gauge(e,s),Ue.gauge(e,o)}this.lastCpuUsage=t,this.lastCpuTime=n}}var je=__webpack_require__(79896);const Ye="ripgrep_invocation_monitor",He="ripgrep_invocation_monitor_config",We={windowMs:1e4,threshold:50,maxRecords:100,cooldownMs:3e5,reportToSentry:!0};var ze=__webpack_require__(8037),Ve=__webpack_require__(91943),$e=__webpack_require__(36038),Ke=__webpack_require__(87016);async function Ze(e){try{const t=await(0,Ve.readFile)(e,"utf-8");return JSON.parse(t)}catch{return null}}class Xe{constructor(e){this.options=e}async getPrimitiveAuthorship(e){return async function(e,t,n){const r=[];let s=0;const o=Array.from({length:Math.min(t,e.length)},()=>async function(){for(;s<e.length;){const t=s;s+=1;const o=e[t];void 0!==o&&(r[t]=await n(o))}}());return await Promise.all(o),r}(e,4,async e=>{const t=function(e){if(void 0===e.pluginSource)return;const t=e.publisherName?.trim();return t?{label:t,kind:"publisher",authorName:t}:void 0}(e)??await this.resolveGitAuthorship(e);return{sourceId:e.sourceId,authorship:t}})}async resolveGitAuthorship(e){if(void 0===e.pluginSource)try{const n=await this.options.gitExecutorPromise,r=(0,t.q6)(),o=(0,S.dirname)(e.filePath),i=await(0,s.ky)(r,n,o);if(null===i)return;const a=(0,S.relative)(i,e.filePath);if(".."===a||a.startsWith(`..${S.sep}`))return;return function(e){const[t,n,r,s]=e.trim().split("\0");if(t&&n)return{label:n,kind:"git",authorName:n,...void 0!==r&&r.length>0&&{authorEmail:r},commitSha:t,...void 0!==s&&s.length>0&&{committedAt:s}}}((await n.exec(r,i,["log","-1","--follow","--format=%H%x00%an%x00%ae%x00%aI","--",a],{timeout:5e3,caller:"primitiveAuthorship"})).stdout)}catch(e){return void this.options.logDebug?.(`[primitive-authorship] git authorship failed: ${String(e)}`)}}}async function et(e){try{await e.reload(),e.notifyPluginsChanged()}catch(t){throw e.onFailure?.(t),t}}async function tt(e){try{await et(e)}catch{}}function nt(e,t){let n;return{schedule:()=>{n&&clearTimeout(n),n=setTimeout(async()=>{n=void 0,await t()},e)},dispose:()=>{n&&(clearTimeout(n),n=void 0)}}}const rt="enable_local_plugin_marketplace_settings";async function st(){const e=await c.cursor.checkFeatureGate("enable_claude_plugins_root_scan"),t=(0,ze.Be)(e,C.homedir());t?(process.env.CURSOR_PLUGIN_ROOT=t,process.env.CLAUDE_PLUGIN_ROOT=t):(delete process.env.CURSOR_PLUGIN_ROOT,delete process.env.CLAUDE_PLUGIN_ROOT)}async function ot(e){const{workspacePaths:n,getThirdPartyExtensibilityEnabled:r,getAllowUserLocalPluginImports:o,deactivateTasks:a,context:l,gitExecutorPromise:u}=e,d=new ze.KY(C.homedir()),p=await c.cursor.getAuthId()??"anonymous",m=await c.cursor.checkFeatureGate("enable_marketplace_plugin_logging"),f=await c.cursor.checkFeatureGate(rt).then(e=>e,()=>!1),g=c.window.createOutputChannel("Cursor Plugins",{log:!0}),A={log:(e,t,n)=>{const r=`[pluginsSubsystem] ${t}`,s=(new Date).toISOString();if(g?.appendLine(`[${s}] [${e}] ${t}`),m)try{switch(e){case"info":c.cursor.logStructuredInfo("agent_exec",r,n,{disableConsoleFallback:!0});break;case"warn":c.cursor.logStructuredWarn("agent_exec",r,n,{disableConsoleFallback:!0});break;case"error":c.cursor.logStructuredError("agent_exec",r,void 0,n,{disableConsoleFallback:!0});break;default:throw new Error(`Unhandled plugin metrics log level: ${e}`)}}catch(e){console.error("[cursor-agent-exec] Failed to log plugin metrics:",e)}},increment:(e,t,n)=>{m&&c.cursor.metricsIncrement({stat:e,value:t,tags:n})},distribution:(e,t,n)=>{m&&c.cursor.metricsDistribution({stat:e,value:t,tags:n})},captureException:(e,t)=>{m&&c.cursor.captureException(e,t)}},y=(0,S.join)(C.homedir(),".cursor","plugins","marketplaces"),w=await c.cursor.checkFeatureGate("team_marketplace_mcps"),v=(0,ze.Nw)(async()=>{A.increment("backend_marketplace_client.get_effective_user_plugins.count",1);try{return await c.cursor.getEffectiveUserPlugins(!0)??{plugins:[]}}catch(e){return A.log("error","Failed to get effective user plugins",{error:String(e)}),A.increment("backend_marketplace_client.get_effective_user_plugins.error",1),{plugins:[]}}},y,A,void 0,{enableInlinePlugins:w}),E=[{client:v,userId:p,cacheManager:new ze.WC(C.homedir())},{client:(0,ze.Nw)(async()=>{try{const e=n[0];if(!e)return{plugins:[]};const t=await(0,ze.i3)(e);if(0===t.length)return{plugins:[]};const r=t.filter(e=>e.entry.gitUrl),s=t.filter(e=>!e.entry.gitUrl),o=r.filter(({key:e,entry:t})=>{const n=t.gitUrl;return!(n&&!(0,ze.QY)(n)&&(console.warn(`[cursor-agent-exec] Ignoring project plugin with invalid gitUrl in .cursor/settings.json: key=${JSON.stringify(e)} gitUrl=${JSON.stringify(n)}`),1))}).map(({key:e,entry:t})=>{const n=(0,ze.kX)(e);return{plugin:{name:n.name,gitUrl:t.gitUrl,gitRef:t.gitRef,gitPath:t.gitPath,marketplace:{name:n.marketplaceName,gitUrl:t.gitUrl,gitRef:t.gitRef}},isEnabled:!0}}),i=s.length>0?(await c.cursor.resolveProjectPlugins(s.map(e=>(0,ze.kX)(e.key)).map(e=>({name:e.name,marketplaceName:e.marketplaceName}))))?.plugins?.map(e=>({plugin:e,isEnabled:!0}))??[]:[];return{plugins:[...o,...i]}}catch(e){return console.error("[cursor-agent-exec] Failed to resolve project plugins:",e),{plugins:[]}}},y,A,void 0,{enableInlinePlugins:w}),userId:p,cacheManager:new ze.WC(C.homedir()),pruneOldVersions:!0}],_=new s.Np(n,C.homedir(),()=>({importThirdPartyPlugins:r(),loadUserLocalPlugins:o(),loadUserSettingsPlugins:f&&o(),loadCursorFirstParty:!0}),E,A,async e=>{try{const t=await l.secrets.get(`localPluginVariables:${e}`);if(t)return JSON.parse(t)}catch{}}),T=new s.gR(_),k=new s.aA(_),I=new s.O0(_),b={reload:async()=>{await _.reload()},notifyPluginsChanged:()=>{c.cursor.notifyPluginsChanged()},onFailure:e=>{h.warn((0,t.q6)(),"Failed to refresh plugins",{error:String(e)})}},B=function(e){let t;const n=(e,n)=>{void 0!==n&&t===e&&(t=n)};return{initializeLastSeenUserTeamPluginSignature:async()=>{const r=t,s=await e.getUserTeamPluginSignatureFromBackend();n(r,s)},refreshPlugins:async()=>{const r=t,s=await e.getUserTeamPluginSignatureFromBackend();await e.refreshPluginsStrict(),n(r,s)},refreshPluginsOnWindowFocus:async()=>{const r=await e.getUserTeamPluginSignatureFromBackend();if(void 0===r)return void await e.refreshPluginsBestEffort();const s=t;s!==r&&(await e.refreshPluginsStrict(),n(s,r))},getLastSeenUserTeamPluginSignature:()=>t}}({getUserTeamPluginSignatureFromBackend:async()=>{try{return function(e,t={}){const{enableInlinePlugins:n=!1}=t,r=[],s=e?.marketplaces??[];for(const t of e?.plugins??[]){if(!t.isEnabled)continue;const e=t.plugin;if(e?.name)if(e.gitUrl)r.push(JSON.stringify([t.isTeamRequired?"team":"user",e.name,e.gitUrl,(0,ze.gF)(t,s),e.gitPath??"",e.releaseRepo??"",e.releaseAsset??"",e.releaseTag??""]));else{if(!n)continue;r.push(JSON.stringify([t.isTeamRequired?"team":"user",e.name,`inline:${e.id??""}`,String(e.updatedAt??"")]))}}return r.sort(),JSON.stringify(r)}(await c.cursor.getEffectiveUserPlugins(!0)??{plugins:[]},{enableInlinePlugins:w})}catch(e){return void h.warn((0,t.q6)(),"Failed to fetch effective user/team plugins for focus refresh",{error:String(e)})}},refreshPluginsStrict:async()=>{await et(b)},refreshPluginsBestEffort:async()=>{await tt(b)}});B.initializeLastSeenUserTeamPluginSignature();const x=async()=>{await B.refreshPlugins()},R=function(){let e,t=0,n=!1,r=!1,s=!1;const o=async()=>{if(!s&&!n){n=!0,t=Date.now();try{await(async()=>{try{await B.refreshPluginsOnWindowFocus()}catch{}})()}finally{n=!1,r&&!s&&(r=!1,i())}}},i=()=>{if(s)return;const i=5e3-(Date.now()-t);if(i<=0)return n?void(r=!0):void o();e||(e=setTimeout(()=>{e=void 0,s||(n?r=!0:o())},i))};return{schedule:i,dispose:()=>{s=!0,r=!1,e&&(clearTimeout(e),e=void 0)}}}(),N=nt(2e3,async()=>{try{await x()}catch{}});let M,P=!1;const D=()=>{M?P=!0:M=(async()=>{do{P=!1,await x()}while(P)})().catch(e=>{console.error("[cursor-agent-exec] Failed to refresh plugins after project settings change:",e)}).finally(()=>{M=void 0})},F=c.workspace.createFileSystemWatcher("**/.cursor/settings.json");F.onDidCreate(()=>{D()}),F.onDidChange(()=>{D()}),F.onDidDelete(()=>{D()}),a.push(()=>{F.dispose()});const L=nt(1e3,async()=>{await tt(b)});f?(async()=>{try{const e=(0,S.join)(C.homedir(),".cursor");await(0,Ve.mkdir)(e,{recursive:!0});const t=(0,je.watch)(e,(e,t)=>{"settings.json"===t?.toString()&&L.schedule()});a.push(()=>{t.close(),L.dispose()})}catch(e){h.warn((0,t.q6)(),"Failed to watch user plugin settings file",{error:String(e)})}})():a.push(()=>{L.dispose()});const O=(0,S.join)(C.homedir(),".cursor","plugins",ze.DD),Q=nt(1e3,async()=>{o()&&await tt(b)});(async()=>{if(o())try{await(0,Ve.mkdir)(O,{recursive:!0});const e=(0,je.watch)(O,{recursive:!0},()=>{Q.schedule()});a.push(()=>{e.close(),Q.dispose()})}catch(e){h.warn((0,t.q6)(),"Failed to watch user-local plugins directory",{error:String(e)})}})();const J=new Map,U=nt(1e3,async()=>{await tt(b)}),q=function(e){const{pluginsService:t,pluginMcpService:n,pluginHooksService:r,pluginCommandsService:s,githubPluginsStore:o,refreshPlugins:a,pluginMetricsLogger:l,backendMarketplaceClient:u,workspacePaths:d,requestRefreshSchedule:p,secretStorage:m,primitiveAuthorshipResolver:h}=e,f="localPluginVariables:",g=async()=>t.getLoadFailures(),A=async()=>{const e=await t.getAllEnabledPlugins();return Promise.all(e.map(async e=>{const t=e.identifier.sourceInfo.name,n=e.identifier.source,r="user-settings"===e.identifier.source||"extension"===e.identifier.source?(0,ze.s4)(e.identifier):t,s="cursor-first-party"===e.identifier.source||"cursor-third-party"===e.identifier.source||"claude-plugin"===e.identifier.source?e.identifier.sourceInfo.version:void 0,o="extension"===e.identifier.source||"user-settings"===e.identifier.source?e.identifier.sourceInfo.localPath:void 0,i="extension"===e.identifier.source?e.identifier.sourceInfo.extensionId:void 0;let a;if("user-local"===n||"user-settings"===n){const e="user-local"===n?t:r;try{const t=await m.get(`${f}${e}`);t&&(a=JSON.parse(t))}catch{}}return{id:r,name:t,source:n,version:s,installPath:e.installPath,localPath:o,extensionId:i,loadError:e.loadError,skillsCount:e.skills.length,agentsCount:e.agents.length,commandsCount:e.commands.length,hasHooks:void 0!==e.hooks&&"config"in e.hooks,hooksCount:e.hooks&&"config"in e.hooks?Object.keys(e.hooks.config).length:0,mcpServersCount:e.mcpConfig?.mcpServers?Object.keys(e.mcpConfig.mcpServers).length:0,skillNames:e.skills.map(e=>e.name??e.path),agentNames:e.agents.map(e=>e.name),ruleNames:e.rules.map(e=>e.name),commandNames:e.commands.map(e=>e.name),mcpServerNames:e.mcpConfig?.mcpServers?Object.keys(e.mcpConfig.mcpServers):[],capabilities:e.capabilities,variablesSchema:e.variablesSchema,configuredVariables:a}}))},y=(e,t,n)=>{const r=e.identifier.sourceInfo,s=e.hooks&&"config"in e.hooks?e.hooks.sourcePath:void 0;return{rawIdentifier:t,name:r.name,displayName:e.displayName??r.name,description:e.description??"",sources:n,projectInstallKey:n.includes("project")?t:void 0,publisherName:e.authorName,skills:e.skills.map(e=>({name:e.name||e.path,description:e.description,sourcePath:e.path})),subagents:e.agents.map(e=>({name:e.name,description:e.description,sourcePath:e.path})),rules:e.rules.map(e=>({name:e.name,description:e.description,sourcePath:e.path})),commands:e.commands.map(e=>({name:e.name,description:e.description,sourcePath:e.path})),hooks:e.hooks&&"config"in e.hooks?Object.keys(e.hooks.config.hooks).map(e=>({name:e,sourcePath:s})):[],mcpServers:e.mcpConfig?.mcpServers?Object.keys(e.mcpConfig.mcpServers).map(t=>({name:t,sourcePath:e.mcpConfig?.mcpServerSourcePaths?.[t]})):[]}},w=(e,t=0)=>(e.sort((e,t)=>e.rawIdentifier.localeCompare(t.rawIdentifier)),e.map((e,n)=>({plugin:{id:-(t+n+1),name:e.name,displayName:e.displayName,description:e.description,...void 0!==e.publisherName&&e.publisherName.trim().length>0&&{publisher:{name:e.publisherName,displayName:e.publisherName}},skills:e.skills,subagents:e.subagents,rules:e.rules,commands:e.commands,hooks:e.hooks,mcpServers:e.mcpServers},scopes:e.sources,projectInstallKey:e.projectInstallKey}))),v=async()=>{const e=[],n=new Set;try{const{userEnabledPluginIds:r,projectEnabledPluginIds:s}=await async function(e,t){const n=(0,S.join)(e,".claude","settings.json"),[r,s,o]=await Promise.all([Ze(n),t?Ze((0,S.join)(t,".claude","settings.json")):Promise.resolve(null),t?Ze((0,S.join)(t,".claude","settings.local.json")):Promise.resolve(null)]),i=new Set(Object.entries(r?.enabledPlugins??{}).filter(([,e])=>!0===e).map(([e])=>e)),a={...s?.enabledPlugins??{},...o?.enabledPlugins??{}};return{userEnabledPluginIds:i,projectEnabledPluginIds:new Set(Object.entries(a).filter(([,e])=>!0===e).map(([e])=>e))}}(C.homedir(),d[0]),o=await t.getAllEnabledPlugins();for(const t of o){if("claude-plugin"!==t.identifier.source)continue;const o=t.identifier.sourceInfo,i="raw"in o&&"string"==typeof o.raw?o.raw:o.name;if(n.has(i))continue;n.add(i);const a=[];r.has(i)&&a.push("user"),s.has(i)&&a.push("project"),0===a.length&&a.push("user"),e.push(y(t,i,a))}}catch(e){console.error("[cursor-agent-exec] Failed to get imported external plugins:",e)}return w(e,0)},E=async()=>{const e=[],n=new Set;try{const r=d[0],s=r?await(0,ze.i3)(r):[],o=await t.getAllEnabledPlugins();for(const t of o){if("cursor-third-party"!==t.identifier.source)continue;const r=t.identifier.sourceInfo,o=r.name;if(n.has(o))continue;n.add(o);const i=s.find(({key:e})=>{const t=(0,ze.kX)(e);return t.name===r.name&&t.marketplaceName===r.marketplace});if(!i)continue;const a=y(t,i.key,["project"]);a.projectInstallKey=i.key,e.push(a)}}catch(e){console.error("[cursor-agent-exec] Failed to get cursor third-party plugins:",e)}return w(e,1e6)},_=async e=>{const t=[];try{const n=await c.cursor.getEffectiveUserPlugins(e);for(const e of n?.plugins??[])e.plugin&&e.isEnabled&&t.push({plugin:e.plugin,source:e.isTeamRequired?"team":"user",isTeamRequired:e.isTeamRequired,pinnedGitRef:e.pinnedGitRef,configuredVariables:e.configuredVariables,hasTeamConfiguredVariables:e.hasTeamConfiguredVariables})}catch(e){console.error("[cursor-agent-exec] Failed to get effective user plugins for installed list:",e)}try{const e=d[0];if(e){const n=(await(0,ze.i3)(e)).filter(e=>!e.entry.gitUrl);if(n.length>0){const e=n.map(e=>(0,ze.kX)(e.key)),r=await c.cursor.resolveProjectPlugins(e.map(e=>({name:e.name,marketplaceName:e.marketplaceName})));for(const e of r?.plugins??[]){const r=n.find(t=>{const n=(0,ze.kX)(t.key);return n.name===e.name&&n.marketplaceName===e.marketplace?.name});t.push({plugin:e,source:"project",projectInstallKey:r?.key})}}}}catch(e){console.error("[cursor-agent-exec] Failed to resolve project plugins for installed list:",e)}const n={project:0,team:1,user:2},r=new Map;for(const e of t){const t=void 0!==e.plugin.id?String(e.plugin.id):void 0;if(!t)continue;const s=r.get(t);if(!s){r.set(t,{plugin:e.plugin,scopes:[e.source],projectInstallKey:e.projectInstallKey,isTeamRequired:e.isTeamRequired,pinnedGitRef:e.pinnedGitRef,configuredVariables:e.configuredVariables,hasTeamConfiguredVariables:e.hasTeamConfiguredVariables});continue}s.scopes.includes(e.source)||s.scopes.push(e.source);const o=s.scopes[0];(void 0===o||n[e.source]<n[o])&&(s.isTeamRequired=e.isTeamRequired,s.pinnedGitRef=e.pinnedGitRef),void 0!==e.hasTeamConfiguredVariables&&(s.hasTeamConfiguredVariables=e.hasTeamConfiguredVariables),void 0!==e.projectInstallKey&&(s.projectInstallKey=e.projectInstallKey),r.set(t,s)}return Array.from(r.values()).map(e=>({...e,scopes:[...e.scopes].sort((e,t)=>n[e]-n[t])}))};return{getPluginMcpServers:async()=>(await n.getPluginMcpServers()).map(e=>({...e,plugin:e.pluginName,pluginSource:"cursor-third-party"===e.pluginSource?"cursor-first-party":e.pluginSource})),getPluginHooks:async()=>r.getPluginHooks(),getPluginCommands:async()=>s.getPluginCommands(),getLoadedPluginsSummary:A,getPluginLoadFailures:g,getInstalledGitHubPlugins:async()=>o.listPlugins(),addGitHubPlugin:async e=>{throw new Error("Direct GitHub plugin installs are no longer supported. Use a marketplace instead.")},removeGitHubPlugin:async e=>{await o.removePlugin(e),await a()},removeLocalPlugin:async e=>{await(0,ze._f)(e,{userHomeDir:C.homedir(),log:l}),await a()},saveLocalPluginVariables:async(e,t)=>{if(!((n=e).startsWith("user-settings:")?n.length>14:!n.includes("/")&&!n.includes("\\")&&".."!==n&&"."!==n))throw new Error(`Invalid local plugin variables key: ${e}`);var n;await m.store(`${f}${e}`,JSON.stringify(t)),p()},discoverMarketplacePlugins:async(e,t,n)=>u.discoverMarketplacePlugins(e,t,n),parseGitHubRepoForPluginsLocally:async(e,t)=>{try{const n=(0,ze.z4)(e)?(0,Ke.fileURLToPath)(e.trim()):void 0,r=(0,S.join)(C.homedir(),".cursor","plugins","marketplaces"),s=void 0!==n?await(0,ze.ND)({localPath:n,pluginMetricsLogger:l}):await(0,ze.U2)({gitUrl:e,gitRef:t,marketplaceCacheRoot:r,allowNonGitHubHosts:!0,pluginMetricsLogger:l}),o=e=>new i.ngG({name:e.name,description:e.description}),a=e=>new i.Vdt({name:e.name,description:e.description}),c=e=>new i.$el({name:e.name,description:e.description}),u=e=>new i.Q63({name:e.name,description:e.description}),d=e=>new i.UCU({name:e.name,description:e.description}),p=e=>new i.tlS({name:e.name,description:e.description});return(0,$e.toPlainMessage)(new i.nXe({marketplaceName:s.marketplaceName,marketplaceDescription:s.marketplaceDescription,defaultBranch:s.defaultBranch,repositoryUrl:s.repositoryUrl,commitSha:s.commitSha,plugins:s.plugins.map(e=>new i.HvA({name:e.name,displayName:e.displayName,description:e.description,gitPath:e.gitPath,logoUrl:e.logoUrl,variables:e.variables?$e.Struct.fromJson(e.variables):void 0,sourceGitUrl:e.externalUrl,sourceGitRef:e.externalRef,skills:e.skills.map(o),subagents:e.subagents.map(a),hooks:e.hooks.map(c),rules:e.rules.map(u),mcpServers:e.mcpServers.map(d),commands:e.commands.map(p),parseError:e.parseError}))}))}catch(e){throw l.captureException(e,{error_type:"parse_github_repo_for_plugins_locally"}),e}},discoverClaudeMarketplacePayloads:async e=>{const t={log:(e,t)=>{l.log("info",`[cc-marketplace-import] ${e}`,t??{})}};try{const{payloads:n}=await(0,ze.kx)({existingUserMarketplaceNames:e,logger:t});return n.map(e=>({gitUrl:e.gitUrl,gitRef:e.gitRef,marketplaceName:e.marketplaceName,commitSha:e.commitSha,plugins:e.plugins.map(e=>({name:e.name,displayName:e.displayName,description:e.description,gitPath:e.gitPath,gitUrl:e.gitUrl,gitRef:e.gitRef,skills:e.skills,subagents:e.subagents,hooks:e.hooks,rules:e.rules,mcpServers:e.mcpServers,commands:e.commands,logoUrl:e.logoUrl,variables:e.variables}))}))}catch(e){throw l.captureException(e,{error_type:"discover_claude_marketplace_payloads"}),e}},installProjectPlugin:async e=>{const t=d[0];if(!t)throw new Error("No workspace path available for project plugin installation");"third-party"===e.type?await(0,ze.YU)(t,e.key,e.gitInfo):await(0,ze.QO)(t,e.key),await a()},removeProjectPlugin:async e=>{const t=d[0];if(!t)throw new Error("No workspace path available for project plugin removal");await(0,ze.Zy)(t,e),await a()},getEffectiveInstalledPlugins:_,getPluginsSnapshot:async e=>{const[t,n,r,s,i,a]=await Promise.all([_(e),v(),E(),A(),o.listPlugins(),g()]);return{effectiveInstalledPlugins:t,importedExternalPlugins:n,installedCursorThirdPartyPlugins:r,loadedPluginsSummary:s,installedGitHubPlugins:i,loadFailures:a}},getPluginComponentFiles:async()=>{const e=await t.getAllEnabledPlugins(),n=await _(!1),r=new Map;for(const e of n){const t=e.plugin;if(void 0===t.name)continue;r.set(t.name,t);const n=t.marketplace?.name;void 0!==n&&"cursor-public"!==n&&r.set(`${t.name}@${n}`,t)}return Promise.all(e.map(async e=>{const t=e.identifier.sourceInfo.name,n=e.identifier.source,s=e.identifier.sourceInfo;let o=t;if("claude-plugin"===e.identifier.source){const n=e.identifier.sourceInfo.marketplace;n&&"cursor-public"!==n&&(o=`${t}@${n}`)}else"cursor-first-party"!==e.identifier.source&&"cursor-third-party"!==e.identifier.source||!("marketplace"in s)||"string"!=typeof s.marketplace||"cursor-public"===s.marketplace||(o=`${t}@${s.marketplace}`);const i=r.get(o)??r.get(t),a=[],l=e=>{const t=e.split("/");return t.length>=2?t[t.length-2]:t[0]??e};for(const t of e.skills)a.push({type:"Skills",name:l(t.path),filePath:(0,S.join)(e.installPath,t.path)});for(const t of e.rules)a.push({type:"Rules",name:t.name,filePath:(0,S.join)(e.installPath,t.path)});for(const t of e.agents)a.push({type:"Subagents",name:t.name,filePath:(0,S.join)(e.installPath,t.path)});for(const t of e.commands)a.push({type:"Commands",name:t.name,filePath:(0,S.join)(e.installPath,t.path)});if(e.hooks&&"config"in e.hooks&&a.push({type:"Hooks",name:"hooks.json",filePath:e.hooks.sourcePath??(0,S.join)(e.installPath,"hooks","hooks.json")}),e.mcpConfig?.mcpServers){const t=(0,S.join)(e.installPath,".mcp.json");let n=(0,S.join)(e.installPath,"mcp.json");try{await(0,Ve.access)(t),n=t}catch{}for(const t of Object.keys(e.mcpConfig.mcpServers))a.push({type:"MCPs",name:t,filePath:e.mcpConfig.mcpServerSourcePaths?.[t]??n})}return{pluginName:t,pluginId:i?.id?.toString(),marketplaceId:i?.marketplace?.id?.toString(),pluginKey:o,pluginSource:n,publisherName:e.authorName,components:a}}))},getPrimitiveAuthorship:async e=>h.getPrimitiveAuthorship(e),requestRefresh:async()=>{p()},addExtensionPlugin:async({path:e,extensionId:n})=>{await t.registerExtensionPlugin({path:e,extensionId:n}),await a()},removeExtensionPlugin:async({path:e,extensionId:n})=>{await t.unregisterExtensionPlugin({path:e,extensionId:n})&&await a()}}}({pluginsService:_,pluginMcpService:T,pluginHooksService:k,pluginCommandsService:I,githubPluginsStore:d,refreshPlugins:x,pluginMetricsLogger:A,backendMarketplaceClient:v,workspacePaths:n,requestRefreshSchedule:()=>N.schedule(),secretStorage:l.secrets,primitiveAuthorshipResolver:new Xe({gitExecutorPromise:u,logDebug:e=>h.debug((0,t.q6)(),e)})}),G=c.cursor.registerPluginsProvider({...q,addExtensionPlugin:async e=>{let n;await q.addExtensionPlugin(e);try{n=await(0,Ve.realpath)(e.path)}catch{n=e.path}if(!J.has(n))try{const e=(0,je.watch)(n,{recursive:!0},()=>{U.schedule()});J.set(n,e)}catch(e){h.warn((0,t.q6)(),"Failed to watch extension plugin directory",{path:n,error:String(e)})}},removeExtensionPlugin:async e=>{let t;await q.removeExtensionPlugin(e);try{t=await(0,Ve.realpath)(e.path)}catch{t=e.path}const n=J.get(t);n&&(n.close(),J.delete(t))}});l.subscriptions.push(G),a.push(()=>{for(const e of J.values())e.close();J.clear(),U.dispose()});const j=c.window.onDidChangeWindowState(e=>{e.focused&&R.schedule()}),Y=c.cursor.onDidChangeAllowUserLocalPluginImports(()=>{tt(b)});return l.subscriptions.push({dispose:()=>{j.dispose(),Y.dispose(),R.dispose(),N.dispose()}}),{pluginsService:_,refreshPluginHooks:st}}var it=__webpack_require__(46725);class at{constructor(e){this.onChange=e}async trackChange(e,t,n,r){const s={path:e,before:t,after:n,metadata:r};this.onChange&&await this.onChange(s)}}function lt(e){if("insecure_none"===e.type)return e;const{networkAccess:t,skipStatsigDefaults:n,...r}=e;return{...r,networkPolicy:t?(0,a.T6)():(0,a.Po)(),skipStatsigDefaults:n}}function ct(e){return{...e,userConfiguredPolicy:lt(e.userConfiguredPolicy)}}class ut{constructor(e,t){this.fetchPermissions=e,this.onDidChangePermissions=t,this.cachedPermissions=e().then(ct),this.permissionsSubscription=this.onDidChangePermissions(e=>{this.cachedPermissions=Promise.resolve(ct(e))})}async getPermissions(){return this.cachedPermissions}async updatePermissions(e){}dispose(){this.permissionsSubscription.dispose()}}class dt{constructor(){this._isDisposed=!1,this._disposables=[]}dispose(){this._isDisposed||(this._isDisposed=!0,function(e){for(;e.length;){const t=e.pop();t?.dispose()}}(this._disposables))}_register(e){return this._isDisposed?e.dispose():this._disposables.push(e),e}get isDisposed(){return this._isDisposed}}class pt extends dt{constructor(e){super(),this.sessionId=e,this.writeEmitter=this._register(new c.EventEmitter),this.onDidWrite=this.writeEmitter.event,this.writeBufferEmitter=this._register(new c.EventEmitter),this.onDidWriteBuffer=this.writeBufferEmitter.event,this.closeEmitter=this._register(new c.EventEmitter),this.onDidClose=this.closeEmitter.event,this.isStarted=!1,this.isFirstCommand=!0,this.outputQueue=[],this.isOutputPaused=!1,this.pauseWaiters=[]}open(e){this.isStarted||(this.isStarted=!0,this.writeBufferEmitter.fire(Buffer.from(this.osc633("P","HasRichCommandDetection=True"))),this.ensureOutputDrained())}pause(){this.isOutputPaused=!0}resume(){if(this.isOutputPaused){this.isOutputPaused=!1;const e=this.pauseWaiters;this.pauseWaiters=[];for(const t of e)t()}this.outputQueue.length>0&&this.ensureOutputDrained()}async awaitUnpaused(){for(;this.isOutputPaused;)await new Promise(e=>this.pauseWaiters.push(e))}close(){this.resume(),this.closeEmitter.fire()}dispose(){this.resume(),super.dispose()}async showCommand(e,t){const n=[];this.isFirstCommand||n.push("\r\n"),this.isFirstCommand=!1,n.push(this.osc633("A"));const r=t?"🔒 ":"";n.push(`${r}$ `),n.push(this.osc633("B"));const s=e.split("\n")[0];n.push(this.osc633("E",this.escapeOscValue(s))),n.push(`${s}\r\n`),n.push(this.osc633("C")),await this.emitBufferedData(Buffer.from(n.join("")))}async handleEvent(e){switch(e.type){case"stdout":case"stderr":await this.handleShellOutput(e.data);break;case"exit":await this.handleExit(e.code??0);break;case"stdin_ready":case"sandbox_denies":break;case"suppressed_output":await this.handleShellOutput(Buffer.from(a.Ls));break;default:throw new Error(`Unhandled event type: ${e.type}`)}}async handleShellOutput(e){await this.emitBufferedData(e)}async handleExit(e){await this.showCommandCompleted(e)}async showCommandCompleted(e){await this.emitBufferedData(Buffer.from(this.osc633("D",e.toString())))}async emitBufferedData(e){this.outputQueue.push(e),this.isStarted&&await this.ensureOutputDrained()}async ensureOutputDrained(){if(this.isStarted)for(;;){if(this.outputDrainPromise){await this.outputDrainPromise;continue}if(0===this.outputQueue.length||this.isOutputPaused)return;const e=this.runOutputDrain();this.outputDrainPromise=e;try{await e}finally{this.outputDrainPromise===e&&(this.outputDrainPromise=void 0)}}}async runOutputDrain(){for(;!this.isOutputPaused&&this.outputQueue.length>0;){const e=this.outputQueue.shift();this.writeBufferEmitter.fire(e),await new Promise(e=>setImmediate(e))}}escapeOscValue(e){return e.replace(/\\/g,"\\\\").replace(/;/g,"\\x3b").replace(/[\x00-\x1f]/g,e=>`\\x${e.charCodeAt(0).toString(16).padStart(2,"0")}`)}osc633(e,...t){return`]633;${[e,...t].filter(e=>void 0!==e).join(";")}`}}class mt extends dt{constructor(e,t,n={}){super(),this.inner=e,this.sessionId=t,this.shouldSuppressTerminalUiStreaming=n.shouldSuppressTerminalUiStreaming??(async()=>!1),this.shellExecOutputBackpressureEnabled=n.shellExecOutputBackpressureEnabled??!1,this.shellExecOutputSuppressionOptions=n.shellExecOutputSuppressionOptions,this.extraEnvProvider=n.extraEnvProvider??(()=>({})),this.pty=this._register(new pt(t))}ensureTerminal(e){this.terminal||this.isDisposed||(this.terminal=c.window.createTerminal({name:"Agent Terminal",pty:this.pty,convertEol:!0,iconPath:new c.ThemeIcon("infinity"),hideFromUser:!0,metadata:{conversationId:e,agentOwned:!0}}))}getTerminal(){return this.terminal}async*execute(e,t,n){const r=this.extraEnvProvider(e),s=0===Object.keys(r).length?n:{...n,env:{...n?.env,...r}};if(this.isDisposed)return;if(await this.shouldSuppressTerminalUiStreaming()){for await(const n of this.inner.execute(e,t,s))yield n;return}const o=e.get(f),i=o?.conversationId;if(void 0===i){for await(const n of this.inner.execute(e,t,s))yield n;return}const l=s?.sandboxPolicy?.perRepo?.type??s?.sandboxPolicy?.perUser?.type??s?.sandboxPolicy?.teamAdmin?.type,c="workspace_readonly"===l||"workspace_readwrite"===l;this.ensureTerminal(i),await this.pty.showCommand(t,c);const u=this.shellExecOutputBackpressureEnabled?new a.vu({...this.shellExecOutputSuppressionOptions}):void 0;try{for await(const n of this.inner.execute(e,t,s)){if(void 0!==u&&("stdout"===n.type||"stderr"===n.type)){const e=u.record(n.data.length);if(e.noticeJustTriggered){const e={type:"stdout",data:Buffer.from(a.Ls)};await this.pty.awaitUnpaused(),await this.pty.handleEvent(e),yield{type:"suppressed_output"}}if(!e.shouldForward){yield n;continue}}await this.pty.awaitUnpaused(),await this.pty.handleEvent(n),yield n}}finally{u?.dispose()}}async getCwd(){return this.inner.getCwd()}clone(e){return this.inner.clone(e)}dispose(){this.isDisposed||(this.terminal&&(this.terminal.dispose(),this.terminal=void 0),super.dispose())}}class ht{constructor(e,t){this.vscodeHookExecutor=e,this.configTracker=t}async executeHookForStep(e,t){if(this.configTracker.hasHookForStep(e))return await this.vscodeHookExecutor.executeHookForStep(e,t)}}class ft{constructor(e){this.approvalHandler=e}async requestApproval(e){if(e.toolCallId){const t={toolCallId:e.toolCallId,operation:{type:e.type,details:e.details}};return this.approvalHandler(t)}return{approved:!0}}}class gt extends e.R1{constructor(e){super(),this.terminalProvider=e}enqueueCompletion(e){const t=this.getPendingCompletionsCount();super.enqueueCompletion(e),this.getPendingCompletionsCount()>t&&"shell"===e.kind&&this.terminalProvider.shouldForwardShellOutputCompletion(e)&&("task_progress"===e.reason&&this.markAwaitedCompletion(e.taskId),this.terminalProvider.enqueueShellOutputCompletion(e))}}class At{constructor(e){this.elicitationHandler=e}createProvider(e,t,n){return new yt(this.elicitationHandler,e,t,n)}}class yt{constructor(e,t,n,r){this.elicitationHandler=e,this.serverName=t,this.toolName=n,this.toolCallId=r}async elicit(e){return this.elicitationHandler(this.serverName,this.toolName,this.toolCallId,e)}}const wt=S.join(C.homedir(),".cursor","sandbox.json");class vt{constructor(e){this.options=e,this.ignoreService=e.ignoreService,this.teamSettingsService=e.teamSettingsService,this.terminalProvider=e.terminalProvider,this.createTerminalExecutor=e.createTerminalExecutor,this.projectDir=e.projectDir,this.workspacePaths=e.workspacePaths,this.gitExecutor=e.gitExecutor,this.grepProvider=e.grepProvider,this.diagnosticsProvider=e.diagnosticsProvider,this.getCanvasDiagnostics=e.getCanvasDiagnostics,this.mcpLease=e.mcpLease,this.getOrCreateMcpStateAccessor=e.getOrCreateMcpStateAccessor,this.cursorRulesService=e.cursorRulesService,this.subagentsService=e.subagentsService,this.codebaseReferenceProvider=e.codebaseReferenceProvider,this.getOrCreateSharedRequestContextExecutor=e.getOrCreateSharedRequestContextExecutor,this.terminalPathHint=e.terminalPathHint,this.hooksConfigTracker=e.hooksConfigTracker,this.adminNetworkControlsEnabled=e.adminNetworkControlsEnabled,this.mcpAllowlistLog=e.mcpAllowlistLog,this.getMcpFileSystemOptions=e.getMcpFileSystemOptions,this.shellOutputBackpressureOptions=e.shellOutputBackpressureOptions,this.shellExecOutputSuppressionOptions=e.shellExecOutputSuppressionOptions,this.createSessionExecManager=this.createSessionExecManager.bind(this),this.perUserSandboxPolicy=function(e,t){try{const n=je.readFileSync(e,"utf-8"),r=JSON.parse(n),s=(0,a.$6)(r);return(0,a.l7)(s,t)}catch{return}}(wt,C.homedir())}createSessionExecManager(t,n,r,o,i,a,l,u,d){const p=0===i.length?[C.homedir()]:i,m=a?{mainWorktreePath:a}:void 0;this.grepProvider.setWorktreeGuardInfo?.(p,m);const h=new ft(n),g=new ut(l,u),A=new s.kh(this.ignoreService,h,g,this.teamSettingsService,p,this.adminNetworkControlsEnabled,this.mcpAllowlistLog?{mcpAllowlistLog:this.mcpAllowlistLog}:void 0),y=new at(async e=>{e.metadata?.toolCallId&&await o({path:e.path,before:e.before,after:e.after,metadata:{toolCallId:e.metadata.toolCallId}})}),w=new At(r),v=function(){let e,t;const n=()=>(void 0===e&&(e=(async()=>{try{return await c.cursor.checkFeatureGate("disable_terminal_output_ui_streaming")}catch{return!1}})().then(e=>(t=e,e))),e);return n.getResolvedValue=()=>t,n}();v();const E=function(){let e;return()=>(void 0===e&&(e=Promise.resolve(c.cursor.checkFeatureGate("streaming_agent_read_tool")).catch(()=>!1)),e)}();E();const _={onShellCreated:(e,t,n,r,s,o,i)=>!0===v.getResolvedValue()?this.terminalProvider.trackHeadlessShell(e,t,s,o,i):this.terminalProvider.createTerminal(e,t,n,r,s,o,i,()=>void 0!==this.shellOutputBackpressureOptions,()=>this.shellExecOutputSuppressionOptions)},T=(0,s.hQ)(this.projectDir,_,e=>e.get(f)?.conversationId),k=new gt(this.terminalProvider),I=this.createTerminalExecutor().clone(p[0]),S=function(e){const t=new Map;return n=>{if(!j)return{};const r=n.get(f)?.conversationId,s=r??e.sessionId;try{(0,B._b)(s)}catch{return{}}let o=t.get(s);if(void 0===o){o=(0,B.f$)({base:j.base,agentId:s});try{(0,B.rs)(o),N.mkdirSync(o,{recursive:!0,mode:B.qH});try{N.chmodSync(o,B.qH)}catch{}}catch{return{}}t.set(s,o)}Y?.ensureMounted(s);const i={[U]:o},a=n.get(f)?.conversationId,l=void 0!==a&&z.has(a);return(W.size>0||l)&&void 0!==H&&(i[x.eXX]=function(e,t){const n={},r=void 0!==t?z.get(t):void 0;if(void 0!==r)for(const t of r.values()){try{(0,B.rs)(t.filesDir)}catch(n){e.appendLine(`[cursor-agent-exec] omitting inherited mount alias ${t.alias} from env: ${P(n)}`);continue}n[t.alias]={path:t.filesDir,readOnly:!0}}for(const[t,r]of W)if(void 0===n[r.alias]){try{(0,B.rs)(r.filesDir)}catch(n){e.appendLine(`[cursor-agent-exec] omitting mount alias ${r.alias} (${t}) from env: ${P(n)}`);continue}n[r.alias]={path:r.filesDir,readOnly:"share"===r.kind}}return JSON.stringify(n)}(H,a)),i}}({sessionId:t}),R=new mt(I,t,{shouldSuppressTerminalUiStreaming:v,shellExecOutputBackpressureEnabled:void 0!==this.shellOutputBackpressureOptions,shellExecOutputSuppressionOptions:this.shellExecOutputSuppressionOptions,extraEnvProvider:S}),M=p.length===this.workspacePaths.length&&p.every((e,t)=>e===this.workspacePaths[t]),D=this.perUserSandboxPolicy?{perUser:this.perUserSandboxPolicy}:void 0,F=new s.Dv({pendingDecisionStore:h,fileChangeTracker:y,gitExecutor:this.gitExecutor,ignoreService:this.ignoreService,grepProvider:this.grepProvider,permissionsService:A,workspacePaths:p,worktreeMainPath:a,diagnosticsProvider:this.diagnosticsProvider,getCanvasDiagnostics:this.getCanvasDiagnostics,mcpLease:this.mcpLease,mcpStateAccessor:this.getOrCreateMcpStateAccessor(),cursorRulesService:this.cursorRulesService,subagentsService:this.subagentsService,repositoryProvider:this.codebaseReferenceProvider,projectDir:this.projectDir,shellManager:void 0,_sandboxPolicyResolver:void 0,_defaultSandboxPolicy:{type:"insecure_none"},_defaultSandboxPolicySources:D,mcpFileOutputThresholdBytes:void 0,backgroundShellFactory:T,backgroundWorkRegistry:k,mcpElicitationFactory:w,createFileWatcher:void 0,sharedRequestContextExecutor:M?this.getOrCreateSharedRequestContextExecutor():void 0,terminalExecutor:R,userTerminalHint:this.terminalPathHint,additionalRules:d?[b()]:void 0,getMcpFileSystemOptions:this.getMcpFileSystemOptions,shellOutputBackpressureOptions:this.shellOutputBackpressureOptions,useStreamingRead:E}),L=new ht(c.cursor.getHookExecutor(),this.hooksConfigTracker),O=new it.ae(F,L,e=>{const t=e.get(f);return{conversation_id:t?.conversationId??"",generation_id:t?.requestId??"",model:t?.modelName??""}},this.mcpLease);return{manager:e.n6.fromResources(O),baseResources:F,resources:O,unsubscribe:()=>{g.dispose()},terminalExecutor:R}}}const Et=require("node:module"),_t="node_modules",Tt="tsconfig.json",kt=JSON.stringify({compilerOptions:{target:"ES2021",module:"ESNext",moduleResolution:"bundler",jsx:"react-jsx",strict:!0,noEmit:!0,skipLibCheck:!0,lib:["ESNext","DOM"]},include:["*.canvas.tsx"]},null,2);async function It(e){try{return(await(0,u.readFile)((0,d.join)(e,"canvas-sdk-version"),"utf-8")).trim()}catch{return}}let bt=0,Ct=0;function St(){}function Bt(e){return e.replace(/\\/g,"/")}class xt{canvasesDir;canvasesDirPrefix;tsResolveAnchor;resolutionTable;bootstrapReady;tsModule;compilerSetup;constructor(e){this.canvasesDir=(0,d.normalize)(e.canvasesDir),this.canvasesDirPrefix=this.canvasesDir.endsWith(d.sep)?this.canvasesDir:`${this.canvasesDir}${d.sep}`,this.tsResolveAnchor=e.tsResolveAnchor;const t=function(e){const t=(0,d.join)(e,"cursor"),n=(0,d.join)(e,"@types","react");return{cursorPackageJson:(0,d.join)(t,"package.json"),cursorCanvasIndex:(0,d.join)(t,"canvas","index.d.ts"),reactRoot:n,reactIndex:(0,d.join)(n,"index.d.ts"),reactJsxRuntime:(0,d.join)(n,"jsx-runtime.d.ts")}}((0,d.join)(this.canvasesDir,_t));this.resolutionTable=new Map([["cursor/canvas",t.cursorCanvasIndex],["react",t.reactIndex],["react/jsx-runtime",t.reactJsxRuntime],["react/jsx-dev-runtime",t.reactJsxRuntime]]),this.bootstrapReady=async function(e){const t=await It(e.sdkSourceDir);if(void 0===t)return;await async function(e){if(await(0,u.mkdir)(e,{recursive:!0}),(await(0,u.lstat)(e)).isSymbolicLink())throw new Error(`Refusing to bootstrap canvas SDK into symlinked directory: ${e}`)}(e.canvasesDir);const n=(0,d.join)(e.canvasesDir,_t),r=(0,d.join)(e.canvasesDir,Tt),s=await It(n)===t,o=await async function(e,t){try{return await(0,u.readFile)(e,"utf-8")===t}catch{return!1}}(r,kt);return s||await async function(e,t,n){const r=(0,d.join)(t,_t),s=`${process.pid}.${++Ct}`,o=(0,d.join)(t,`.node_modules.staging-${s}`),i=(0,d.join)(t,`.node_modules.old-${s}`);await(0,u.cp)(e,o,{recursive:!0});try{let e=!1;try{await(0,u.rename)(r,i),e=!0}catch(e){if("ENOENT"!==e.code)throw e}try{await(0,u.rename)(o,r)}catch(t){e&&await(0,u.rename)(i,r).catch(St);for(let e=0;e<20;e++){if(await It(r)===n)return;await new Promise(e=>setTimeout(e,5))}throw t}e&&await(0,u.rm)(i,{recursive:!0,force:!0}).catch(St)}finally{await(0,u.rm)(o,{recursive:!0,force:!0}).catch(St)}}(e.sdkSourceDir,e.canvasesDir,t),o||await async function(e,t){const n=`${e}.tmp.${process.pid}.${++bt}`;await(0,u.writeFile)(n,t,"utf-8"),await(0,u.rename)(n,e)}(r,kt),{canvasesDir:e.canvasesDir,tsconfigPath:r}}({canvasesDir:this.canvasesDir,sdkSourceDir:e.sdkSourceDir})}async getDiagnostics(e){const t=(0,d.normalize)(e);if(!t.endsWith(".canvas.tsx")||!t.startsWith(this.canvasesDirPrefix))return;let n;try{n=await this.bootstrapReady}catch{return}if(void 0===n)return;const r=this.loadTypeScript();if(!r)return;const s=await this.getOrInitCompilerSetup(r);if(!s)return;let o;try{o=await(0,u.readFile)(t,"utf-8")}catch{return}const i=this.buildProgram(r,s,t,o),a=i.getSourceFile(t)??i.getSourceFile(Bt(t));return a?[...i.getSyntacticDiagnostics(a),...i.getSemanticDiagnostics(a)].map(e=>this.mapDiagnostic(r,e,a)):void 0}loadTypeScript(){if(this.tsModule)return this.tsModule;try{const e=(0,Et.createRequire)((0,d.join)(this.tsResolveAnchor,"package.json"));return this.tsModule=e("typescript"),this.tsModule}catch{return}}getOrInitCompilerSetup(e){if(this.compilerSetup)return this.compilerSetup;const t=(async()=>{const t=(0,d.join)(this.canvasesDir,Tt);let n;try{n=await(0,u.readFile)(t,"utf-8")}catch{return}const r=e.readConfigFile(t,()=>n);if(r.error)return;const s=e.parseJsonConfigFileContent(r.config,e.sys,this.canvasesDir);return{options:s.options,sdkSourceFileCache:new Map,moduleResolutionCache:e.createModuleResolutionCache(this.canvasesDir,e=>e,s.options)}})();return this.compilerSetup=t,t.then(e=>{void 0===e&&this.compilerSetup===t&&(this.compilerSetup=void 0)},()=>{this.compilerSetup===t&&(this.compilerSetup=void 0)}),t}buildProgram(e,t,n,r){const s=e.createCompilerHost(t.options),o=s.getSourceFile.bind(s),i=t.sdkSourceFileCache,a=t.moduleResolutionCache,l=this.resolutionTable,c=Bt(n);return s.getSourceFile=(t,s,a,l)=>{if(t===n||Bt(t)===c)return e.createSourceFile(t,r,s,!0,e.ScriptKind.TSX);if(i.has(t))return i.get(t);const u=o(t,s,a,l);return i.set(t,u),u},s.resolveModuleNameLiterals=(t,n,r,o)=>t.map(t=>{const i=l.get(t.text);return void 0!==i?{resolvedModule:{resolvedFileName:i,extension:e.Extension.Dts,isExternalLibraryImport:!0}}:e.resolveModuleName(t.text,n,o,s,a,r)}),e.createProgram({rootNames:[n],options:t.options,host:s})}mapDiagnostic(e,t,n){const r=e.flattenDiagnosticMessageText(t.messageText,"\n"),s=void 0!==t.code?`TS${t.code}`:void 0;let o={line:0,character:0},i={line:0,character:0};if(void 0!==t.start){const e=n.getLineAndCharacterOfPosition(t.start);o={line:e.line,character:e.character};const r=t.start+(t.length??0),s=n.getLineAndCharacterOfPosition(r);i={line:s.line,character:s.character}}let a=1;switch(t.category){case e.DiagnosticCategory.Error:a=1;break;case e.DiagnosticCategory.Warning:a=2;break;case e.DiagnosticCategory.Message:case e.DiagnosticCategory.Suggestion:a=3}return{range:{start:o,end:i},severity:a,code:s,message:r}}}var Rt=__webpack_require__(31421),Nt=__webpack_require__(37067),Mt=__webpack_require__(48161);const Pt=require("esbuild-wasm");__webpack_require__(43487),__webpack_require__(81630),__webpack_require__(21843),__webpack_require__(53926),__webpack_require__(92074),__webpack_require__(92421);var Dt=__webpack_require__(6252),Ft=__webpack_require__(14674);function Lt(e){return"number"==typeof e&&Number.isInteger(e)&&e>0?e:void 0}const Ot='-apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", system-ui, "Ubuntu", "Droid Sans", sans-serif';var Qt=__webpack_require__(38522);const Jt=(0,t.h)("canvas-server:http-server"),Ut=/spawn\s+\S+\s+(ENOENT|EACCES|EPERM|ENOEXEC|ENOTDIR)\b/;let qt,Gt=0,jt=!1;const Yt="canvas-runtime.esm.js",Ht=`/runtime/${Yt}`,Wt=1048576;function zt(e){return R.createHash("sha256").update(`canvas:${e}`).digest("hex").slice(0,12)}function Vt(e){const t=d.dirname(e),n=d.basename(e,d.extname(e));return d.join(t,`${n}.status.json`)}function $t(e){const t=d.dirname(e),n=d.basename(e,d.extname(e));return d.join(t,`${n}.data.json`)}class Kt extends Error{constructor(){super("Request body too large")}}class Zt{_server;_wss;_port;_sessionToken;_registrations=new Map;logContext;_runtimeDir;_nodeExecPath;_runtimeModule;_actionCallback;_errorCallback;_errorClearedCallback;_dataWriteTimers=new Map;constructor(e){this.logContext=e.logContext??(0,t.q6)(),this._runtimeDir=e.runtimeDir,this._nodeExecPath=e.nodeExecPath}onAction(e){this._actionCallback=e}onError(e){this._errorCallback=e}onErrorCleared(e){this._errorClearedCallback=e}_readBody(e,t){return new Promise((n,r)=>{let s="",o=0,i=!1;e.on("data",e=>{o+=e.length,o>t?i=!0:i||(s+=e.toString())}),e.on("end",()=>{i?r(new Kt):n(s)}),e.on("error",r)})}get registeredCanvasCount(){return this._registrations.size}get sessionToken(){return this._sessionToken}async start(){if(this._server)return{port:this._port,sessionToken:this._sessionToken};!function(e,t){if(jt)return;jt=!0;const n=function(){const e=function(){const e=process.env.PATH;if(!e)return;const t="win32"===process.platform?["node.exe","node.cmd"]:["node"];for(const n of e.split(d.delimiter))if(n)for(const e of t){const t=d.join(n,e);try{if(N.existsSync(t))return t}catch{}}}();if(!e)return"absent";const t=function(e){try{const t=(0,Rt.execFileSync)(e,["--version"],{cwd:Mt.tmpdir(),encoding:"utf8",timeout:2e3,stdio:["ignore","pipe","ignore"]}).trim(),n=/^v?(\d+)\./.exec(t);return n?Number.parseInt(n[1],10):void 0}catch{return}}(e);return void 0===t?"unusable":t>=18?"satisfies":"unusable"}();if("satisfies"===n)return;if(!e)return;const r=d.dirname(e),s=process.env.PATH??"";if("absent"===n){if(s.split(d.delimiter).includes(r))return;return process.env.PATH=s?`${s}${d.delimiter}${r}`:r,void Jt.info(t,"Appended bundled node to PATH for esbuild-wasm (no node found on PATH)")}const o=s.split(d.delimiter).filter(e=>e&&e!==r);process.env.PATH=[r,...o].join(d.delimiter),Jt.info(t,"Prepended bundled node to PATH for esbuild-wasm (resolved node is too old or unusable from an arbitrary directory)",{requiredMajor:18})}(this._nodeExecPath,this.logContext);const e=Date.now();this._sessionToken=R.randomBytes(32).toString("hex"),this._runtimeModule??=await sn(this._runtimeDir);const t=Nt.createServer((e,t)=>{this._handleRequest(e,t)}),n=new Ft({noServer:!0});t.on("upgrade",(e,t,r)=>{const s=new URL(e.url??"/","http://127.0.0.1"),o=s.pathname;if(!this._isValidOrigin(e.headers.origin))return void t.destroy();if(s.searchParams.get("token")!==this._sessionToken)return void t.destroy();const i=o.match(/^\/canvas\/([a-f0-9]{12})\/ws$/);if(!i)return void t.destroy();const a=this._registrations.get(i[1]);a?n.handleUpgrade(e,t,r,e=>{a.eventClients.add(e);for(const[t,n]of a.hostState)e.send(`{"type":"state","channel":${JSON.stringify(t)},"payload":${n}}`);for(const[t,n]of Object.entries(a.canvasData))e.send(JSON.stringify({type:"canvas-data",key:t,value:n}));e.on("close",()=>{a.eventClients.delete(e)}),e.on("error",()=>{a.eventClients.delete(e)})}):t.destroy()});try{this._port=await this._listen(t)}catch(e){throw t.close(),e}return this._server=t,this._wss=n,Jt.info(this.logContext,"Canvas server started",{port:this._port,startDurationMs:Date.now()-e}),{port:this._port,sessionToken:this._sessionToken}}async stop(){await this._flushPendingDataWrites();for(const e of this._registrations.values())this._stopFileWatcher(e),this._stopDataFileWatcher(e),this._closeEventClients(e),this._deleteStatusFile(e.path);this._registrations.clear(),this._wss?.close(),this._wss=void 0,this._server?.close(),this._server=void 0,this._port=void 0,this._sessionToken=void 0,Jt.info(this.logContext,"Canvas server stopped")}_validateId(e){return/^[a-f0-9]{12}$/.test(e)}getUrl(e,t){if(!this._validateId(e))return;if(!this._port||!this._sessionToken)return;if(!this._registrations.has(e))return;const n=`http://localhost:${this._port}/canvas/${e}/`,r=new URL(n);return r.searchParams.set("token",this._sessionToken),t&&r.searchParams.set("preview","1"),r.toString()}async _registerCanvas(e){if(void 0===this._port)throw new Error("CanvasServer.start() must be called before registerCanvas()");const t=zt(e.path);if(!this._validateId(t))throw new Error(`Invalid canvas ID: ${t}`);const n=this._registrations.get(t);n&&(this._stopFileWatcher(n),this._stopDataFileWatcher(n),this._closeEventClients(n));const r={canvasId:t,path:e.path,eventClients:new Set,hostState:new Map,canvasData:await this._readDataFile(e.path),pendingBuild:!1,notifyClientsOnBuild:!1};return this._startFileWatcher(r),this._startDataFileWatcher(r),this._registrations.set(t,r),t}async registerCanvas(e){return{canvasId:await this._registerCanvas(e),path:e.path}}getRegisteredCanvasPath(e){if(this._validateId(e))return this._registrations.get(e)?.path}async getShareArtifact(e){const t=zt(e.path),n=this._registrations.get(t);if(!n)return{appJs:"",dataJson:{},status:{status:"canvas-missing"}};const r=await this._ensureBuildState(n),s=en(r);if("rendered"!==s.status)return{appJs:"",dataJson:{},status:s};const o={...n.canvasData};this._runtimeModule??=await sn(this._runtimeDir);const i=function(e){return{version:1,runtimeEsm:e.runtimeEsm,userModule:e.userModule}}({runtimeEsm:this._runtimeModule,userModule:r.appModule}),a=(l=i,Qt.gzipSync(Buffer.from(JSON.stringify(l),"utf-8"),{level:9}));var l;return function(e,t,n=5e6){return function(e,t){const n=Buffer.byteLength(JSON.stringify(t),"utf-8");return e.length+n+64}(e,t)<=n}(a,o)?{appJs:a.toString("base64"),dataJson:o,status:s}:{appJs:"",dataJson:{},status:{status:"content-too-large"}}}pushState(e){if(!this._validateId(e.canvasId))return!1;const t=this._registrations.get(e.canvasId);return!!t&&(t.hostState.set(e.channel,e.jsonPayload),this._sendStateEvent(t,e.channel,e.jsonPayload),!0)}pushStateAll(e){for(const t of this._registrations.values())t.hostState.set(e.channel,e.jsonPayload),this._sendStateEvent(t,e.channel,e.jsonPayload)}_sendStateEvent(e,t,n){const r=`{"type":"state","channel":${JSON.stringify(t)},"payload":${n}}`;for(const t of e.eventClients)try{t.readyState===Dt.OPEN&&t.send(r)}catch{e.eventClients.delete(t)}}_sendCanvasDataEvent(e,t,n){const r=JSON.stringify({type:"canvas-data",key:t,value:n});for(const t of e.eventClients)try{t.readyState===Dt.OPEN&&t.send(r)}catch{e.eventClients.delete(t)}}async destroyCanvas(e){if(!this._validateId(e.canvasId))return;const t=this._registrations.get(e.canvasId);t&&(await this._flushDataWriteForCanvas(e.canvasId,t),this._registrations.delete(e.canvasId),this._stopFileWatcher(t),this._stopDataFileWatcher(t),this._closeEventClients(t),this._deleteStatusFile(t.path))}_startFileWatcher(e){this._stopFileWatcher(e);try{e.fileWatcher=N.watch(e.path,{persistent:!1},t=>{this._requestBuild(e,{notifyClients:!0}),"rename"===t&&setTimeout(()=>{this._registrations.get(e.canvasId)===e&&this._startFileWatcher(e)},100)}),e.fileWatcher.on("error",()=>{this._stopFileWatcher(e)})}catch{}}_stopFileWatcher(e){e.fileWatcher&&(e.fileWatcher.close(),e.fileWatcher=void 0)}_startDataFileWatcher(e){this._stopDataFileWatcher(e);const t=$t(e.path);try{e.dataFileWatcher=N.watch(t,{persistent:!1},t=>{this._dataWriteTimers.has(e.canvasId)||this._reloadDataFile(e),"rename"===t&&setTimeout(()=>{this._registrations.get(e.canvasId)===e&&this._startDataFileWatcher(e)},100)}),e.dataFileWatcher.on("error",()=>{this._stopDataFileWatcher(e)})}catch{}}_stopDataFileWatcher(e){e.dataFileWatcher&&(e.dataFileWatcher.close(),e.dataFileWatcher=void 0)}async _reloadDataFile(e){const t=await this._readDataFile(e.path);if(JSON.stringify(e.canvasData)===JSON.stringify(t))return;const n=e.canvasData;e.canvasData=t;const r=new Set([...Object.keys(n),...Object.keys(t)]);for(const s of r)JSON.stringify(n[s])!==JSON.stringify(t[s])&&this._sendCanvasDataEvent(e,s,t[s])}_notifyReload(e){for(const t of e.eventClients)try{t.readyState===Dt.OPEN&&t.send('{"type":"reload"}')}catch{e.eventClients.delete(t)}}_closeEventClients(e){for(const t of e.eventClients)try{t.close()}catch{}e.eventClients.clear()}async _requestBuild(e,t){return e.pendingBuild=!0,e.notifyClientsOnBuild=e.notifyClientsOnBuild||t.notifyClients,e.buildPromise||(e.buildPromise=(async()=>{for(;e.pendingBuild;){const t=e.notifyClientsOnBuild;e.pendingBuild=!1,e.notifyClientsOnBuild=!1;const n=e.buildState?.status,r=Date.now();e.buildState=await this._buildCanvas(e.path);const s=Date.now()-r;this._logBuildOutcome(e.path,n,e.buildState,s),this._writeStatusFile(e.path,en(e.buildState)),"compile-error"===e.buildState.status?this._errorCallback?.({canvasId:e.canvasId,canvasPath:e.path,error:e.buildState.diagnosticsText??"Unknown compile error",errorKind:"compile-error"}):"canvas-missing"===e.buildState.status?this._errorCallback?.({canvasId:e.canvasId,canvasPath:e.path,error:"",errorKind:"canvas-missing"}):"ready"===e.buildState.status&&this._errorClearedCallback?.(e.canvasId,e.path),t&&this._notifyReload(e)}})().finally(()=>{e.buildPromise=void 0,e.pendingBuild&&this._requestBuild(e,{notifyClients:!1})})),e.buildPromise}async _ensureBuildState(e){return e.buildState||e.buildPromise?e.buildPromise&&await e.buildPromise:await this._requestBuild(e,{notifyClients:!1}),e.buildState??tn("Canvas build did not produce any output.")}_serve404(e,t){const n=`<!DOCTYPE html>\n<html><head><meta charset="utf-8"><title>Canvas not found</title>\n<style>\n*{margin:0;padding:0;box-sizing:border-box}\nbody{font-family:${Ot};background:#1e1e1e;color:#ccc;display:flex;align-items:center;justify-content:center;min-height:100vh}\n.c{text-align:center;padding:40px}\nh1{font-size:18px;color:#888;margin-bottom:8px}\np{font-size:13px;color:#666}\ncode{background:#2a2a2a;padding:2px 6px;border-radius:4px;font-size:12px}\n</style></head><body><div class="c">\n<h1>Canvas not found</h1>\n<p>${t?`<code>${t}</code> may have been deleted or expired.`:"Invalid canvas URL."}</p>\n</div></body></html>`;e.writeHead(404,{"Content-Type":"text/html; charset=utf-8"}),e.end(n)}_isValidOrigin(e){if(!e)return!0;try{const t=new URL(e).hostname;return"localhost"===t||"127.0.0.1"===t}catch{return!1}}_rejectForbidden(e){e.writeHead(403,{"Content-Type":"application/json"}),e.end('{"error":"forbidden"}')}async _handleRequest(e,t){const n=new URL(e.url??"/","http://127.0.0.1"),r=n.pathname;if(!this._isValidOrigin(e.headers.origin))return void this._rejectForbidden(t);if(n.searchParams.get("token")!==this._sessionToken)return void this._rejectForbidden(t);if(r===Ht)return void this._serveRuntimeModule(t);if(/^\/canvas\/([a-z0-9]+)\/(data|version)\.json$/.test(r))return t.writeHead(404,{"Content-Type":"application/json"}),void t.end('{"error":"not found"}');const s=r.match(/^\/canvas\/([a-z0-9]+)\/state$/);if(s)return"GET"===e.method?void this._handleStateGet(t,s[1]):"POST"===e.method?void await this._handleStatePost(t,s[1],e):(t.writeHead(405,{"Content-Type":"application/json"}),void t.end('{"error":"method not allowed"}'));const o=r.match(/^\/canvas\/([a-z0-9]+)\/report-error$/);if(o&&"POST"===e.method)return void await this._handleErrorReport(t,o[1],e);const i=r.match(/^\/canvas\/([a-z0-9]+)\/action$/);if(i&&"POST"===e.method)return void await this._handleAction(t,i[1],e);const a=r.match(/^\/canvas\/([a-z0-9]+)\/app\.js$/);if(a)return void await this._serveCanvasApp(t,a[1]);const l=r.match(/^\/canvas\/([a-z0-9]+)\/?$/);if(!l)return void this._serve404(t);const c=l[1];if(!this._registrations.get(c))return void this._serve404(t,c);const u=["default-src 'self'","script-src 'self' 'unsafe-inline'","style-src 'self' 'unsafe-inline'","font-src 'self'","img-src 'self' data: blob:","connect-src 'self'"].join("; ");var d,p;t.writeHead(200,{"Content-Type":"text/html; charset=utf-8","Content-Security-Policy":u,"Cache-Control":"no-store"}),t.end((d=c,p=this._sessionToken,`<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Canvas</title>\n  <style>*{margin:0;padding:0;box-sizing:border-box;scrollbar-width:thin;scrollbar-color:rgba(121,121,121,0.4) transparent}html,body{min-height:100vh}body{padding:24px 32px}#root{min-height:calc(100vh - 48px);width:100%;margin:0 auto;overflow-x:auto;position:relative;contain:paint}:root{--cursor-canvas-focus-ring-width:1px;--cursor-canvas-focus-ring-offset:2px;--cursor-canvas-focus-ring-radius:4px}*:focus,*:focus-visible{outline:none}*:focus-visible{outline:var(--cursor-canvas-focus-ring-width) solid var(--cursor-canvas-focus-ring-color,currentColor);outline-offset:var(--cursor-canvas-focus-ring-offset)}:where(a[href],[role="link"]):focus-visible{border-radius:var(--cursor-canvas-focus-ring-radius)}::-webkit-scrollbar{width:8px;height:8px;background:transparent}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(121,121,121,0.4);border-radius:4px}::-webkit-scrollbar-thumb:hover{background:rgba(121,121,121,0.7)}::-webkit-scrollbar-corner{background:transparent}</style>\n</head>\n<body>\n  <div id="root"></div>\n  ${function(e,t){const n=t?`?token=${t}`:"";return`\n<script>\n(function() {\n  var canvasId = ${JSON.stringify(e)};\n  var tokenParam = ${JSON.stringify(n)};\n  var isPreview = false;\n  try {\n    isPreview = new URLSearchParams(window.location.search).has('preview');\n  } catch (_) {}\n  var isReloading = false;\n  var isDisposed = false;\n  var ws = null;\n\n  // Preview-mode iframes auto-mount in chat without a user gesture, so we\n  // close the canvas-action API surface by not exposing canvasId / tokenParam\n  // on window.__cursorCanvas. dispatchCanvasAction() in canvas-components\n  // early-returns when canvasId is missing, neutering the SDK end-to-end.\n  // The closure-local canvasId / tokenParam stay available to the runtime's\n  // own WebSocket connection (read-only: only forwards reload events).\n  window.__cursorCanvas = {\n    canvasId: isPreview ? undefined : canvasId,\n    tokenParam: isPreview ? '' : tokenParam,\n    state: new Map(),\n    data: new Map(),\n    reportError: function(message) {\n      if (isPreview) return;\n      fetch('/canvas/' + canvasId + '/report-error' + tokenParam, {\n        method: 'POST',\n        headers: { 'Content-Type': 'application/json' },\n        body: JSON.stringify({ message: String(message) })\n      }).catch(function() {});\n    }\n  };\n\n  function connectHostState() {\n    if (isDisposed || ws) return;\n    var loc = window.location;\n    var proto = loc.protocol === 'https:' ? 'wss:' : 'ws:';\n    ws = new WebSocket(proto + '//' + loc.host + '/canvas/' + canvasId + '/ws' + tokenParam);\n    ws.onmessage = function(e) {\n      try {\n        var msg = JSON.parse(e.data);\n        if (msg.type === 'reload') { triggerReload(); return; }\n        if (msg.type === 'state') {\n          window.__cursorCanvas.state.set(msg.channel, msg.payload);\n          document.dispatchEvent(\n            new CustomEvent('cursor-canvas-state-change', { detail: { channel: msg.channel } })\n          );\n          return;\n        }\n        // Preview iframes are read-only; canvas-data round-trips through a\n        // missing canvasId, so drop rather than partially apply.\n        if (isPreview) return;\n        if (msg.type === 'canvas-data') {\n          if (msg.value === undefined) {\n            window.__cursorCanvas.data.delete(msg.key);\n          } else {\n            window.__cursorCanvas.data.set(msg.key, msg.value);\n          }\n          document.dispatchEvent(\n            new CustomEvent('cursor-canvas-data-change', { detail: { key: msg.key } })\n          );\n        }\n      } catch (_) {}\n    };\n    ws.onclose = function() {\n      ws = null;\n      if (!isDisposed) setTimeout(connectHostState, 1000);\n    };\n  }\n\n  function disconnectHostState() {\n    if (!ws) return;\n    ws.close();\n    ws = null;\n  }\n\n  function cleanup() {\n    if (isDisposed) return;\n    isDisposed = true;\n    disconnectHostState();\n    window.removeEventListener('beforeunload', cleanup);\n    window.removeEventListener('pagehide', cleanup);\n  }\n\n  function triggerReload() {\n    if (isDisposed || isReloading) return;\n    isReloading = true;\n    window.location.reload();\n  }\n\n  window.addEventListener('beforeunload', cleanup);\n  window.addEventListener('pagehide', cleanup);\n  connectHostState();\n})();\n<\/script>\n`}(d,p)}\n  <script type="module">\n    import { mountCanvas } from "${Ht}?token=${p}";\n    mountCanvas("/canvas/${d}/app.js?token=${p}");\n  <\/script>\n</body>\n</html>`))}_serveRuntimeModule(e){if(!this._runtimeModule)return e.writeHead(503,{"Content-Type":"application/json"}),void e.end('{"error":"server not started"}');e.writeHead(200,{"Content-Type":"text/javascript; charset=utf-8","Cache-Control":"public, max-age=31536000, immutable"}),e.end(this._runtimeModule)}async _handleErrorReport(e,t,n){const r=this._registrations.get(t);if(!r)return e.writeHead(404,{"Content-Type":"application/json"}),void e.end('{"error":"not found"}');let s;try{s=await this._readBody(n,Wt)}catch(t){if(t instanceof Kt)return e.writeHead(413,{"Content-Type":"application/json"}),void e.end('{"error":"request body too large"}');throw t}let o="Unknown runtime error";try{const e=JSON.parse(s);null!=e.message&&(o=String(e.message))}catch{const e=s.trim();e&&(o=e.slice(0,500))}this._writeStatusFile(r.path,{status:"runtime-error",error:o}),this._errorCallback?.({canvasId:t,canvasPath:r.path,error:o,errorKind:"runtime-error"}),Jt.warn(this.logContext,"Canvas runtime error reported",{canvasId:t,path:r.path,errorSummary:o.split("\n")[0]?.slice(0,200)}),e.writeHead(200,{"Content-Type":"application/json"}),e.end('{"ok":true}')}async _handleAction(e,t,n){if(!this._registrations.get(t))return e.writeHead(404,{"Content-Type":"application/json"}),void e.end('{"error":"not found"}');let r,s;try{r=await this._readBody(n,Wt)}catch(t){if(t instanceof Kt)return e.writeHead(413,{"Content-Type":"application/json"}),void e.end('{"error":"request body too large"}');throw t}try{s=JSON.parse(r)}catch{return e.writeHead(400,{"Content-Type":"application/json"}),void e.end('{"error":"invalid JSON body"}')}const o=function(e){if("object"!=typeof e||null===e)return;const t=e;switch(t.type){case"openAgent":return"string"==typeof t.agentId&&t.agentId.length>0?{type:"openAgent",agentId:t.agentId}:void 0;case"newComposerChat":{if(void 0===t.userPrompt)return{type:"newComposerChat"};if("string"!=typeof t.userPrompt)return;const e=t.userPrompt.trim();return e.length>0?{type:"newComposerChat",userPrompt:e}:{type:"newComposerChat"}}case"openFile":{if("string"!=typeof t.path)return;const e=t.path.trim();if(0===e.length)return;const n=function(e){if(void 0===e)return;if("object"!=typeof e||null===e)return;const t=e,n=Lt(t.startLineNumber);if(void 0===n)return;const r=Lt(t.startColumn),s=Lt(t.endLineNumber),o=Lt(t.endColumn);return void 0!==t.startColumn&&void 0===r||void 0!==t.endLineNumber&&void 0===s||void 0!==t.endColumn&&void 0===o?void 0:{startLineNumber:n,...void 0!==r?{startColumn:r}:{},...void 0!==s?{endLineNumber:s}:{},...void 0!==o?{endColumn:o}:{}}}(t.selection);if(void 0!==t.selection&&void 0===n)return;return{type:"openFile",path:e,...void 0!==n?{selection:n}:{}}}default:return}}(s);if(!o)return e.writeHead(400,{"Content-Type":"application/json"}),void e.end('{"error":"invalid action"}');if(this._actionCallback)try{this._actionCallback(t,o)}catch(e){Jt.warn(this.logContext,"Canvas action callback error",{canvasId:t,actionType:o.type,error:e instanceof Error?e.message:String(e)})}e.writeHead(200,{"Content-Type":"application/json"}),e.end('{"ok":true}')}_handleStateGet(e,t){const n=this._registrations.get(t);if(!n)return e.writeHead(404,{"Content-Type":"application/json"}),void e.end('{"error":"not found"}');e.writeHead(200,{"Content-Type":"application/json","Cache-Control":"no-store"}),e.end(JSON.stringify(n.canvasData))}async _handleStatePost(e,t,n){const r=this._registrations.get(t);if(!r)return e.writeHead(404,{"Content-Type":"application/json"}),void e.end('{"error":"not found"}');let s,o;try{s=await this._readBody(n,Wt)}catch(t){if(t instanceof Kt)return e.writeHead(413,{"Content-Type":"application/json"}),void e.end('{"error":"request body too large"}');throw t}try{o=JSON.parse(s)}catch{return e.writeHead(400,{"Content-Type":"application/json"}),void e.end('{"error":"invalid JSON body"}')}if("string"!=typeof o.key)return e.writeHead(400,{"Content-Type":"application/json"}),void e.end('{"error":"key must be a string"}');const i=o.key,a=o.value;if(void 0===a)delete r.canvasData[i];else{const t=r.canvasData[i];r.canvasData[i]=a;const n=JSON.stringify(r.canvasData);if(Buffer.byteLength(n,"utf-8")>1048576)return r.canvasData[i]=t,void 0===t&&delete r.canvasData[i],e.writeHead(413,{"Content-Type":"application/json"}),void e.end('{"error":"canvas state size limit exceeded"}')}this._scheduleDataFileWrite(r.canvasId,r.path,r.canvasData),this._sendCanvasDataEvent(r,i,a),e.writeHead(200,{"Content-Type":"application/json"}),e.end('{"ok":true}')}async _serveCanvasApp(e,t){const n=this._registrations.get(t);if(!n)return e.writeHead(404,{"Content-Type":"application/json"}),void e.end('{"error":"not found"}');const r=await this._ensureBuildState(n);e.writeHead(200,{"Content-Type":"text/javascript; charset=utf-8","Cache-Control":"no-store"}),e.end(r.appModule)}_listen(e){return new Promise((t,n)=>{e.listen(0,"127.0.0.1",()=>{const r=e.address();r&&"object"==typeof r?t(r.port):n(new Error("Failed to bind canvas server"))}),e.on("error",n)})}async _buildCanvas(e){try{const t=await N.promises.readFile(e,"utf-8"),n=await this._transformCanvasSource(t,e);return n.code?{appModule:n.code.replace(/^\s*import\b[\s\S]*?;\s*$/gm,""),status:"ready"}:tn("Canvas build completed without producing output.")}catch(e){if(function(e){return"object"==typeof e&&null!==e&&"ENOENT"===e.code}(e))return{appModule:"export default function CanvasMissing() { return null; }\n",status:"canvas-missing"};const t=await async function(e){if(function(e){return"object"==typeof e&&null!==e&&"errors"in e&&Array.isArray(e.errors)}(e)){const t=await Pt.formatMessages(e.errors,{color:!1,kind:"error",terminalWidth:100});if(t.length>0)return t.join("\n\n")}return e instanceof Error?e.message:String(e)}(e);return tn(t)}}async _transformCanvasSource(e,t){const n=Gt;try{return await this._runCanvasTransform(e,t)}catch(r){const s=function(e){const t=e instanceof Error?e.message:String(e);return Ut.test(t)?"nonretryable-startup":t.includes("The service is no longer running")||"The service was stopped"===t||t.includes("write EPIPE")||t.includes("ECONNRESET")?"retryable-disconnect":void 0}(r);if("retryable-disconnect"!==s)throw r;const o=await async function(e){if(e!==Gt)return"restart-already-complete";if(qt)return await qt,"reused-inflight-restart";let t=!1;return qt=(async()=>{e===Gt&&(await Pt.stop(),Gt+=1,t=!0)})().finally(()=>{qt=void 0}),await qt,t?"performed-restart":"restart-already-complete"}(n);"performed-restart"===o&&Jt.warn(this.logContext,"Canvas build service disconnected; restarting esbuild and retrying",{path:t,error:r instanceof Error?r.message:String(r)});try{const n=await this._runCanvasTransform(e,t);return"performed-restart"===o&&Jt.info(this.logContext,"Canvas build recovered after restarting esbuild",{path:t}),n}catch(e){throw Jt.warn(this.logContext,"Canvas build retry failed after recovery",{path:t,recoveryResult:o,error:e instanceof Error?e.message:String(e)}),e}}}_runCanvasTransform(e,t){return Pt.transform(e,{loader:Xt(t),jsx:"transform",jsxFactory:"React.createElement",jsxFragment:"React.Fragment",format:"esm",target:"es2022",sourcefile:d.basename(t),logLevel:"silent"})}_logBuildOutcome(e,t,n,r){"compile-error"!==n.status?"canvas-missing"!==n.status?"compile-error"!==t&&"canvas-missing"!==t||Jt.info(this.logContext,"Canvas build recovered",{path:e,buildDurationMs:r}):Jt.info(this.logContext,"Canvas source file missing",{path:e,buildDurationMs:r}):Jt.warn(this.logContext,"Canvas build failed",{path:e,diagnosticsSummary:rn(n.diagnosticsText),buildDurationMs:r})}_writeStatusFile(e,t){const n=Vt(e);try{N.writeFileSync(n,JSON.stringify(t),"utf-8")}catch{Jt.warn(this.logContext,"Failed to write canvas status file",{path:n})}}_deleteStatusFile(e){const t=Vt(e);try{N.unlinkSync(t)}catch{}}async _readDataFile(e){const t=$t(e);try{const e=await N.promises.readFile(t,"utf-8"),n=JSON.parse(e);if(n&&"object"==typeof n&&!Array.isArray(n))return n}catch{}return{}}_scheduleDataFileWrite(e,t,n){const r=this._dataWriteTimers.get(e);void 0!==r&&clearTimeout(r);const s=JSON.stringify(n,null,2);this._dataWriteTimers.set(e,setTimeout(()=>{this._dataWriteTimers.delete(e);const n=$t(t);N.promises.writeFile(n,s,"utf-8").catch(()=>{Jt.warn(this.logContext,"Failed to write canvas data file",{path:n})})},300))}async _flushDataWriteForCanvas(e,t){const n=this._dataWriteTimers.get(e);if(void 0===n)return;clearTimeout(n),this._dataWriteTimers.delete(e);const r=$t(t.path);try{await N.promises.writeFile(r,JSON.stringify(t.canvasData,null,2),"utf-8")}catch{Jt.warn(this.logContext,"Failed to flush canvas data file",{path:r})}}async _flushPendingDataWrites(){const e=[];for(const[t,n]of this._dataWriteTimers){clearTimeout(n);const r=this._registrations.get(t);if(!r)continue;const s=$t(r.path);e.push(N.promises.writeFile(s,JSON.stringify(r.canvasData,null,2),"utf-8").catch(()=>{Jt.warn(this.logContext,"Failed to flush canvas data file",{path:s})}))}this._dataWriteTimers.clear(),await Promise.all(e)}}function Xt(e){switch(d.extname(e).toLowerCase()){case".tsx":default:return"tsx";case".ts":return"ts";case".jsx":return"jsx";case".js":return"js"}}function en(e){switch(e.status){case"compile-error":return{status:"compile-error",diagnostics:e.diagnosticsText??""};case"canvas-missing":return{status:"canvas-missing"};case"ready":return{status:"rendered"};default:return e.status}}function tn(e){return{appModule:nn(e),status:"compile-error",diagnosticsText:e}}function nn(e){return`\nvar diagnostics = ${JSON.stringify(e)};\n\nexport default function CanvasCompileError() {\n  return React.createElement("div", {\n    style: {\n      minHeight: "100vh",\n      padding: "24px 32px",\n      boxSizing: "border-box",\n      background: ${JSON.stringify("#181818")},\n      color: ${JSON.stringify("#E4E4E4EB")},\n      fontFamily: ${JSON.stringify(Ot)},\n    },\n  },\n    React.createElement("h1", {\n      style: { margin: "0 0 12px 0", fontSize: "20px", fontWeight: "700" },\n    }, "Canvas Compile Error"),\n    React.createElement("p", {\n      style: {\n        margin: "0 0 16px 0",\n        color: ${JSON.stringify("#E4E4E48D")},\n        lineHeight: "1.5",\n      },\n    }, "Cursor could not compile this canvas. Fix the errors below and save again."),\n    React.createElement("pre", {\n      style: {\n        margin: "0",\n        padding: "16px",\n        whiteSpace: "pre-wrap",\n        wordBreak: "break-word",\n        overflowX: "auto",\n        borderRadius: "12px",\n        border: "1px solid #E4E4E426",\n        background: ${JSON.stringify("#1e1e1e")},\n        color: ${JSON.stringify("#f5c2c7")},\n        fontFamily: ${JSON.stringify('ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace')},\n        fontSize: "13px",\n        lineHeight: "1.6",\n      },\n    }, diagnostics)\n  );\n}\n`}function rn(e){const t=e?.trim();if(t)return t.split("\n")[0]}async function sn(e){const t=d.join(e,Yt);try{return await N.promises.readFile(t,"utf-8")}catch{throw new Error(`Missing canvas runtime module "${Yt}" in ${e}.`)}}const on=(0,t.h)("canvas-server");class an{canvasServer;logContext;_startPromise;_started=!1;constructor(e){this.logContext=e.logContext??(0,t.q6)(),this.canvasServer=new Zt({logContext:this.logContext,runtimeDir:e.runtimeDir,nodeExecPath:e.nodeExecPath})}onAction(e){this.canvasServer.onAction(e)}onError(e){this.canvasServer.onError(e)}onErrorCleared(e){this.canvasServer.onErrorCleared(e)}async _ensureStarted(){this._started||(this._startPromise||(this._startPromise=this.canvasServer.start().then(()=>{this._started=!0}).catch(e=>{throw this._startPromise=void 0,e})),await this._startPromise)}get sessionToken(){return this.canvasServer.sessionToken}async stop(){this._startPromise&&!this._started&&await this._startPromise.catch(()=>{}),this._started&&(await this.canvasServer.stop(),this._started=!1,this._startPromise=void 0,on.info(this.logContext,"Canvas server stopped"))}async registerCanvas(e){await this._ensureStarted();const t=await this.canvasServer.registerCanvas({path:e.path});return on.info(this.logContext,"Registered canvas",{path:e.path,canvasId:t.canvasId}),t}getCanvasUrl(e){return this.canvasServer.getUrl(e.canvasId,e.preview)}async destroyCanvas(e){await this.canvasServer.destroyCanvas({canvasId:e.canvasId})}getRegisteredCanvasPath(e){return this.canvasServer.getRegisteredCanvasPath(e)}async getShareArtifact(e){return await this._ensureStarted(),this.canvasServer.getShareArtifact({path:e.path})}pushState(e){return this.canvasServer.pushState({canvasId:e.canvasId,channel:e.channel,jsonPayload:e.payload})}pushStateAll(e){this.canvasServer.pushStateAll({channel:e.channel,jsonPayload:e.payload})}get isRunning(){return this._started}}__webpack_require__(73136);class ln{constructor(){this._providers=new Map,this._providerListeners=new Map,this._changeListeners=[],this._disposed=!1}onDidChangeState(e){return this._changeListeners.push(e),{dispose:()=>{const t=this._changeListeners.indexOf(e);t>=0&&this._changeListeners.splice(t,1)}}}registerStateProvider(e){if(this._disposed)return e.dispose(),{dispose(){}};const t=this._providers.get(e.channel);t&&(this._providerListeners.get(e.channel)?.dispose(),t.dispose()),this._providers.set(e.channel,e);const n=e.onDidChange(()=>{this._emitProvider(e)});return this._providerListeners.set(e.channel,n),this._emitProvider(e),{dispose:()=>{this._providers.get(e.channel)===e&&(this._providerListeners.get(e.channel)?.dispose(),this._providerListeners.delete(e.channel),this._providers.delete(e.channel),e.dispose())}}}getAllState(){const e=[];for(const t of this._providers.values()){const n=cn(t.getState());void 0!==n&&e.push({channel:t.channel,payload:n})}return e}dispose(){if(!this._disposed){this._disposed=!0;for(const e of this._providerListeners.values())e.dispose();this._providerListeners.clear();for(const e of this._providers.values())e.dispose();this._providers.clear(),this._changeListeners.length=0}}_emitProvider(e){const t=cn(e.getState());if(void 0!==t)for(const n of this._changeListeners)n(e.channel,t)}}function cn(e){try{return JSON.stringify(e)}catch{return}}const un=(0,t.h)("canvas-server-provider"),dn=/(?:^|[\\/])\.cursor[\\/]projects[\\/][^\\/]+[\\/]canvases[\\/][^\\/]+\.canvas\.tsx$/i,pn=/^[A-Za-z]:[\\/]/;function mn(e){c.commands.executeCommand("canvas.handleCanvasError",e.canvasId,e.error,e.errorKind)}function hn(e){c.commands.executeCommand("canvas.handleCanvasErrorCleared",e)}function fn(e){return d.isAbsolute(e)||pn.test(e)}function gn(e){return dn.test(e)}async function An(e){if(!fn(e)||!gn(e))return{status:"invalid",reason:"path-not-managed-canvas"};let t,n;try{t=await(0,u.lstat)(e),n=await(0,u.realpath)(e)}catch(e){return{status:"invalid",reason:e instanceof Error&&"code"in e?`stat-${String(e.code)}`:"stat-failed"}}return!t.isFile()||t.isSymbolicLink()?{status:"invalid",reason:"path-not-regular-file"}:fn(n)&&gn(n)?{status:"valid",stats:t,realPath:n}:{status:"invalid",reason:"realpath-not-managed-canvas"}}function yn(){const{kind:e}=c.window.activeColorTheme;switch(e){case c.ColorThemeKind.Light:return{kind:"light"};case c.ColorThemeKind.Dark:return{kind:"dark"};case c.ColorThemeKind.HighContrast:return{kind:"hc-dark"};case c.ColorThemeKind.HighContrastLight:return{kind:"hc-light"};default:return{kind:"dark"}}}function wn(e,t){const n=[[t.canvasesDir,"<canvasesDir>"],[t.sdkSourceDir,"<sdkSourceDir>"],[(0,Mt.homedir)(),"~"]];n.sort((e,t)=>t[0].length-e[0].length);let r=e;for(const[e,t]of n)0!==e.length&&r.includes(e)&&(r=r.split(e).join(t));return r}function vn(e,t){return e?(0,d.join)(e,"terminals",`${t}.txt`):void 0}class En{constructor(){this.tail=Promise.resolve()}queue(e){const t=this.tail.then(async()=>{await e()});this.tail=t.catch(()=>{})}}class _n extends dt{constructor(e,t,n,r,s=()=>!1,o=()=>{}){super(),this.command=e,this.cwd=t,this.abortShell=n,this.onExit=r,this.isShellExecOutputBackpressureEnabled=s,this.getShellExecOutputSuppressionOptions=o,this.writeEmitter=this._register(new c.EventEmitter),this.onDidWrite=this.writeEmitter.event,this.writeBufferEmitter=this._register(new c.EventEmitter),this.onDidWriteBuffer=this.writeBufferEmitter.event,this.closeEmitter=this._register(new c.EventEmitter),this.onDidClose=this.closeEmitter.event,this.isStarted=!1,this.hasExited=!1,this.hasClosed=!1,this.abortRequestedByUser=!1,this.pendingOutput=[],this.isOutputPaused=!1,this.pauseWaiters=[],this.pendingExitCode=void 0,this.hasPendingExit=!1}handleInput(e){""!==e||this.hasExited||(this.abortRequestedByUser=!0,this.abortShell())}getEventHandler(){return{onStdout:e=>this.handleShellOutput(e),onStderr:e=>this.handleShellOutput(e),onExit:e=>this.handleExit(e),onStart:()=>this.handleStart()}}open(e){if(!this.isStarted){this.isStarted=!0,this.emitImmediate(this.osc633("P",`Cwd=${this.escapeOscValue(this.cwd)}`)),this.emitImmediate(this.osc633("P","HasRichCommandDetection=True")),this.showPrompt(),this.showCommand(this.command);for(const e of this.pendingOutput)this.writeBufferEmitter.fire(e);this.pendingOutput=[],this.hasPendingExit&&this._completeExit(this.pendingExitCode??null)}}pause(){this.isOutputPaused=!0}resume(e){if(!this.isOutputPaused&&!e?.force)return;this.isOutputPaused=!1;const t=this.pauseWaiters;this.pauseWaiters=[];for(const e of t)e()}async awaitUnpaused(){for(;this.isOutputPaused;)await new Promise(e=>this.pauseWaiters.push(e))}close(){this.resume(),this.hasClosed||(this.hasClosed=!0,this.hasExited||this.emitImmediate("\r\n[Terminal closing]\r\n"),this.closeEmitter.fire())}dispose(){this.resume(),super.dispose()}handleStart(){}async handleShellOutput(e){this.isTerminalClosed()||this.isDisposed||(await this.awaitUnpaused(),this.isTerminalClosed()||this.isDisposed||this.writeShellStreamOutput(e))}writeShellStreamOutput(e){if(!this.isShellExecOutputBackpressureEnabled())return void this.emitShellOutput(e);if(this.isDisposed)return;void 0===this.outputSuppressor&&(this.outputSuppressor=this._register(new a.vu(this.getShellExecOutputSuppressionOptions())));const t=this.outputSuppressor.record(Buffer.byteLength(e,"utf8"));t.noticeJustTriggered&&this.emitShellOutput(a.Ls),t.shouldForward&&this.emitShellOutput(e)}emitShellOutput(e){const t=Buffer.from(e);this.isStarted?this.writeBufferEmitter.fire(t):this.pendingOutput.push(t)}emitImmediate(e){this.emitShellOutput(e)}handleExit(e){if(!this.hasExited){if(!this.isStarted)return this.hasPendingExit=!0,void(this.pendingExitCode=e);this.resume({force:!0}),this._completeExit(e)}}_completeExit(e){this.hasExited=!0,this.showCommandCompleted(e??0),this.emitImmediate("\r\n"),this.hasClosed||(this.hasClosed=!0,this.closeEmitter.fire(e??0)),this.onExit({code:e,aborted:this.abortRequestedByUser||null===e})}hasExitOccurred(){return this.hasExited}isTerminalClosed(){return this.hasExited||this.hasClosed}showPrompt(){this.emitImmediate(this.osc633("A")),this.emitImmediate("$ "),this.emitImmediate(this.osc633("B"))}showCommand(e){this.emitImmediate(this.osc633("E",this.escapeOscValue(e))),this.emitImmediate(`${e}\r\n`),this.emitImmediate(this.osc633("C"))}showCommandCompleted(e){this.emitImmediate(this.osc633("D",e.toString()))}escapeOscValue(e){return e.replace(/\\/g,"\\\\").replace(/;/g,"\\x3b").replace(/[\x00-\x1f]/g,e=>`\\x${e.charCodeAt(0).toString(16).padStart(2,"0")}`)}osc633(e,...t){return`]633;${[e,...t].filter(e=>void 0!==e).join(";")}`}}class Tn extends dt{constructor(e){super(),this.projectDir=e,this.terminals=new Map,this.pseudoTerminals=new Map,this.abortFunctions=new Map,this.closeListeners=new Map,this.trackedWork=new Map,this.headlessShells=new Set,this.completionPublishedShellIds=new Set,this.shellWorkNotificationQueue=new En}async createTerminal(e,t,n,r,s,o,i,a=()=>!1,l=()=>{}){const u=`Cursor (${this.extractCommandDescription(t)})`;let d;const p=new _n(t,n,o,t=>{const n=t.aborted?"aborted":0===t.code?"success":"error",r=t.aborted||0===t.code||null===t.code?void 0:`exit_code=${t.code}`;this.enqueueShellCompletion(e,n,r);const s=this.pseudoTerminals.get(e);this.cleanupShell(e,{disposePty:!1});const o=d;queueMicrotask(()=>{s?.dispose(),this.pseudoTerminals.delete(e),o?.dispose()})},a,l);this.pseudoTerminals.set(e,p),d=c.window.createTerminal({name:u,pty:p,convertEol:!0,iconPath:new c.ThemeIcon("infinity"),hideFromUser:!1,metadata:{backgroundShellId:e,conversationId:s,agentOwned:!0}}),this.terminals.set(e,d),this.abortFunctions.set(e,o);const m=this.createShellWorkItem({shellId:e,command:t,conversationId:s,description:i});this.trackedWork.set(e,m),this.shellWorkNotificationQueue.queue(()=>this.notifyShellUpserted(m)),r(p.getEventHandler());const h=c.window.onDidCloseTerminal(t=>{if(t===d){p.hasExitOccurred()||this.enqueueShellCompletion(e,"aborted","terminated_by_user");const t=this.abortFunctions.get(e);t&&t(),this.cleanupShell(e)}});this.closeListeners.set(e,h)}async trackHeadlessShell(e,t,n,r,s){this.abortFunctions.set(e,r),this.headlessShells.add(e);const o=this.createShellWorkItem({shellId:e,command:t,conversationId:n,description:s});this.trackedWork.set(e,o),this.shellWorkNotificationQueue.queue(()=>this.notifyShellUpserted(o))}shouldForwardShellOutputCompletion(e){if("task_progress"===e.reason)return!0;if("task_finished"!==e.reason)return!1;const t=this.getShellIdFromCompletionTaskId(e.taskId);return void 0!==t&&this.headlessShells.has(t)}enqueueShellOutputCompletion(e){if("shell"!==e.kind)return;const t=this.getShellIdFromCompletionTaskId(e.taskId);if(void 0===t)return;const n=this.trackedWork.get(t);if(n&&n.composerId){if("task_finished"===e.reason){if(this.completionPublishedShellIds.has(t))return;this.completionPublishedShellIds.add(t)}this.forwardShellOutputCompletion(t,n.composerId,e),"task_finished"===e.reason&&this.cleanupShell(t)}}createShellWorkItem(e){return{id:String(e.shellId),kind:"shell",composerId:e.conversationId??"",title:e.description||e.command,startTimeMs:Date.now()}}async notifyShellUpserted(e){try{await c.cursor.upsertBackgroundShellWork(e)}catch{}}async notifyShellCleared(e){try{await c.cursor.clearBackgroundShellWork(String(e))}catch{}}async notifyBackgroundTaskCompletion(e){try{await c.cursor.enqueueBackgroundTaskCompletion(e)}catch{}}async getLongRunningJobsEnabled(){return void 0!==this.longRunningJobsEnabled?this.longRunningJobsEnabled:(this.longRunningJobsEnabledPromise||(this.longRunningJobsEnabledPromise=Promise.resolve(c.cursor.checkFeatureGate("long_running_jobs")).then(e=>(this.longRunningJobsEnabled=e,e),()=>(this.longRunningJobsEnabled=!1,!1))),this.longRunningJobsEnabledPromise)}enqueueShellCompletion(e,t,n){if(this.completionPublishedShellIds.has(e))return;const r=this.trackedWork.get(e);r&&r.composerId&&(this.completionPublishedShellIds.add(e),this.shellWorkNotificationQueue.queue(()=>this.getLongRunningJobsEnabled().then(s=>{if(s)return this.notifyBackgroundTaskCompletion(function(e){const t=vn(e.projectDir,e.shellId);return{composerId:e.composerId,taskId:String(e.shellId),kind:"shell",status:e.status,title:e.title,...e.detail?{detail:e.detail}:{},...t?{outputPath:t}:{},reason:"task_finished"}}({projectDir:this.projectDir,shellId:e,composerId:r.composerId,title:r.title,status:t,...n?{detail:n}:{}}))})))}forwardShellOutputCompletion(e,t,n){this.shellWorkNotificationQueue.queue(()=>this.getLongRunningJobsEnabled().then(r=>{if(!r)return;const s=n.outputPath??vn(this.projectDir,e);return this.notifyBackgroundTaskCompletion({composerId:t,taskId:n.taskId,kind:n.kind,status:n.status,title:n.title,...n.detail?{detail:n.detail}:{},...s?{outputPath:s}:{},...n.reason?{reason:n.reason}:{}})}))}getShellIdFromCompletionTaskId(e){const t=e.trim().split(":",1)[0];if(!t)return;const n=Number(t);return Number.isInteger(n)?n:void 0}cleanupShell(e,t){const n=t?.disposePty??!0;this.terminals.delete(e),n&&(this.pseudoTerminals.get(e)?.dispose(),this.pseudoTerminals.delete(e)),this.abortFunctions.delete(e),this.headlessShells.delete(e),this.disposeCloseListener(e),this.trackedWork.has(e)&&(this.trackedWork.delete(e),this.shellWorkNotificationQueue.queue(()=>this.notifyShellCleared(e)))}disposeCloseListener(e){const t=this.closeListeners.get(e);t&&(t.dispose(),this.closeListeners.delete(e))}async listBackgroundShellWork(e){const t=[...this.trackedWork.values()];return e?t.filter(t=>t.composerId===e):t}async killBackgroundShell(e){const t=Number(e);if(!Number.isInteger(t))return!1;const n=this.abortFunctions.get(t);return!!n&&(this.disposeCloseListener(t),this.terminals.get(t)?.dispose(),this.enqueueShellCompletion(t,"aborted","terminated_by_user"),n(),this.cleanupShell(t),!0)}async showBackgroundShell(e){const t=Number(e);if(!Number.isInteger(t))return!1;const n=this.terminals.get(t);if(n)return n.show(!1),!0;if(this.headlessShells.has(t)&&this.projectDir){const e=vn(this.projectDir,t);return void 0!==e&&(await c.window.showTextDocument(c.Uri.file(e),{preview:!1}),!0)}return!1}extractCommandDescription(e){const t=e.split("\n")[0];return(t.length>50?t.substring(0,47)+"...":t)||"Shell"}getTerminal(e){return this.terminals.get(e)}dispose(){if(!this.isDisposed){for(const e of this.abortFunctions.values())e();for(const e of this.terminals.values())e.dispose();for(const e of[...this.trackedWork.keys()])this.cleanupShell(e);for(const e of this.pseudoTerminals.values())e.dispose();this.terminals.clear(),this.pseudoTerminals.clear(),this.abortFunctions.clear(),this.closeListeners.clear(),this.trackedWork.clear(),super.dispose()}}}var kn=__webpack_require__(59903);class In{constructor(e,t){this.ignoreService=e,this.provider=t,this.worktreeGuardByRootsKey=new Map}setWorktreeGuardInfo(e,t){const n=this.getRootsKey(e);void 0!==t?this.worktreeGuardByRootsKey.set(n,t):this.worktreeGuardByRootsKey.delete(n)}getWorktreeGuardInfo(e){return this.worktreeGuardByRootsKey.get(this.getRootsKey(e))}getRootsKey(e){return e.slice().sort().join("|")}async executeIndexedGrep(e,t,n){const r=await this.provider();if(void 0===r)return;const s=this.getWorktreeGuardInfo(t);if((0,l.fl)({targetPath:n.path,workspacePaths:t,mainWorktreePath:s?.mainWorktreePath}))throw new Error(l.PS);const o=n.outputMode??"content",i={path:n.path,context:n.context,contextBefore:n.contextBefore,contextAfter:n.contextAfter,literal:!1,caseInsensitive:n.caseInsensitive,multiline:n.multiline,sort:n.sort,includes:void 0!==n.glob?[n.glob]:void 0,excludes:void 0};try{return"content"===o?await this.executeContentMode(r,t,n.pattern,i):"files_with_matches"===o?await this.executeFilesMode(r,t,n.pattern,i):"count"===o?await this.executeCountMode(r,t,n.pattern,i):void 0}catch(e){return}}async executeContentMode(e,t,n,r){const o=await e.queryContent(t,n,r);if(null===o)return;const i={};for(const[e,t]of Object.entries(o)){const n=[];let r=t.totalLines,o=t.totalMatchedLines;for(const i of t.byFile){const t=i.matches??[],a=await(0,s.ye)((0,l.o1)(i.file,e));if(null===a||await this.ignoreService.isIgnoredByAny(a)){r-=t.length,o-=t.filter(e=>!e.isContextLine).length;continue}const c=new kn.uI({file:i.file,matches:t.map(e=>new kn.dx({lineNumber:e.lineNumber,content:e.content,isContextLine:e.isContextLine}))});n.push(c)}const a=new kn.Zp({matches:n,totalLines:r,totalMatchedLines:o,clientTruncated:t.truncated});i[e]=new kn.vD({result:{case:"content",value:a}})}return i}async executeFilesMode(e,t,n,r){const o=await e.queryContent(t,n,{...r,mode:"files_only"});if(null===o)return;const i={};for(const[e,t]of Object.entries(o)){const n=[];let r=0;for(const o of t.byFile){const t=await(0,s.ye)((0,l.o1)(o.file,e));null===t||await this.ignoreService.isIgnoredByAny(t)?r++:n.push(o.file)}const o=new kn.T7({files:n,totalFiles:t.totalFiles-r,clientTruncated:t.truncated});i[e]=new kn.vD({result:{case:"files",value:o}})}return i}async executeCountMode(e,t,n,r){const o=await e.queryContent(t,n,{...r,mode:"count"});if(null===o)return;const i={};for(const[e,t]of Object.entries(o)){const n=[];let r=0,o=0;for(const i of t.byFile){const t=i.count??0,a=await(0,s.ye)((0,l.o1)(i.file,e));null===a||await this.ignoreService.isIgnoredByAny(a)?o++:(n.push(new kn.sS({file:i.file,count:t})),r+=t)}const a=new kn.xA({counts:n,totalFiles:t.totalFiles-o,totalMatches:r,clientTruncated:t.truncated});i[e]=new kn.vD({result:{case:"count",value:a}})}return i}async getTrackedState(e){const t=this.provider();if(void 0!==t)try{const n=await t.getTrackedState(e);if(null===n)return;const r={};for(const[e,t]of Object.entries(n))r[e]={gitStatus:t.gitStatus,gitBranchName:t.gitBranchName};return r}catch{return}}}var bn=__webpack_require__(42956),Cn=__webpack_require__(34175);function Sn(e,t){const n=[],r=new Set;for(const s of t){r.add(s.serverIdentifier);const t=e.get(s.serverIdentifier);void 0!==t&&t===s.snapshotGeneration||n.push(s),e.set(s.serverIdentifier,s.snapshotGeneration)}for(const t of Array.from(e.keys()))r.has(t)||e.delete(t);return n}var Bn=(e,t)=>(t=Symbol[e])?t:Symbol.for("Symbol."+e),xn=e=>{throw TypeError(e)},Rn=(e,t,n)=>{var r,s;return null!=t?("object"!=typeof t&&"function"!=typeof t&&xn("Object expected"),n&&(r=t[Bn("asyncDispose")]),void 0===r&&(r=t[Bn("dispose")],n&&(s=r)),"function"!=typeof r&&xn("Object not disposable"),s&&(r=function(){try{s.call(this)}catch(e){return Promise.reject(e)}}),e.push([n,r,t])):n&&e.push([n]),t},Nn=(e,t,n)=>{var r="function"==typeof SuppressedError?SuppressedError:function(e,t,n,r){return(r=Error(n)).name="SuppressedError",r.error=e,r.suppressed=t,r},s=e=>t=n?new r(e,t,"An error was suppressed during disposal"):(n=!0,e),o=r=>{for(;r=e.pop();)try{var i=r[1]&&r[1].call(r[2]);if(r[0])return Promise.resolve(i).then(o,e=>(s(e),o()))}catch(e){s(e)}if(n)throw t};return o()};const Mn=c.env.remoteName?`lease_connection:${c.env.remoteName}`:"lease_connection:local";let Pn="unknown";function Dn(e,t,n="distribution",r){try{const s=r?.some(e=>e.startsWith("mcp_version:")),o=[Mn,...s?[]:["mcp_version:snapshots"],...r??[]];"distribution"===n?c.cursor.metricsDistribution({stat:e,value:t,tags:o}):c.cursor.metricsIncrement({stat:e,value:t,tags:o})}catch{}}function Fn(e,n,r,s){return(0,t.uj)((r??(0,t.q6)()).withName(e),async(t,r)=>{const o=Date.now();r.setAttribute("mcp.op.name",e),r.setAttribute("mcp.lease.type",Pn),r.setAttribute("mcp.lease.connection",Mn);try{const t=await Promise.resolve(n()),i=Date.now()-o;return r.setAttribute("mcp.op.duration_ms",String(i)),r.setAttribute("mcp.op.outcome","success"),Dn("mcp.ipc.duration_ms",i,"distribution",[`name:${e}`,"outcome:success",...s??[]]),Dn("mcp.ipc.count",1,"increment",[`name:${e}`,"outcome:success",...s??[]]),t}catch(t){const n=Date.now()-o;throw r.setAttribute("mcp.op.duration_ms",String(n)),r.setAttribute("mcp.op.outcome","error"),Dn("mcp.ipc.duration_ms",n,"distribution",[`name:${e}`,"outcome:error",...s??[]]),Dn("mcp.ipc.count",1,"increment",[`name:${e}`,"outcome:error",...s??[]]),t}})}const Ln=["mcp_version:vscode_lease"];class On{constructor(){this.changeListeners=new Set,this.mainThreadLeaseRegistration=c.cursor.registerMcpLeaseChangeListener(),this.mcpLeasePromise=(async()=>{const e=c.extensions.getExtension("anysphere.cursor-mcp");if(!e)throw new Error("cursor-mcp extension is not installed or not available");e.isActive||await e.activate();const t=e.exports;if(!t)throw new Error("cursor-mcp extension API is not available");const n=t.getMcpLease();return this.leaseChangeDisposable=n.onDidChange(e=>{this.fireDidChange(e)}),n})()}onDidChange(e){return this.changeListeners.add(e),{dispose:()=>{this.changeListeners.delete(e)}}}fireDidChange(e){for(const t of this.changeListeners)try{t(e)}catch(e){console.error("Error in MCP change listener:",e)}}async getMcpLease(){return this.mcpLeasePromise}async getClients(e){return Fn("vscode_lease.get_clients",async()=>(await this.getMcpLease()).getClients(e),e,Ln)}async getClient(e,t){return Fn("vscode_lease.get_client",async()=>(await this.getMcpLease()).getClient(e,t),e,Ln)}async getInstructions(e){return Fn("vscode_lease.get_instructions",async()=>(await this.getMcpLease()).getInstructions(e),e,Ln)}async getTools(e){return Fn("vscode_lease.get_tools",async()=>(await this.getMcpLease()).getTools(e),e,Ln)}async getToolsForServers(e,t){return Fn("vscode_lease.get_tools_for_servers",async()=>{const n=await this.getMcpLease();if("getToolsForServers"in n&&"function"==typeof n.getToolsForServers)return n.getToolsForServers(e,t);const r=new Set(t);return(await n.getTools(e)).filter(e=>r.has(e.clientKey))},e,Ln)}async getToolSet(e){return Fn("vscode_lease.get_tool_set",async()=>(await this.getMcpLease()).getToolSet(e),e,Ln)}dispose(){this.leaseChangeDisposable&&(this.leaseChangeDisposable.dispose(),this.leaseChangeDisposable=void 0),this.mainThreadLeaseRegistration.dispose(),this.changeListeners.clear()}}class Qn{constructor(e,t,n){this.tools=e,this.ctx=t,this.extraMetricTags=n??[]}async execute(e,t,n,r){const s=this.tools.find(t=>t.name===e);if(!s)throw new bn.U$(e,this.tools.map(e=>e.name));return Fn("workbench_toolset.execute",async()=>{const e=r?.createProvider(s.providerIdentifier,s.toolName,n),o=e?async t=>await e.elicit({message:t.message,requestedSchema:t.requestedSchema}):void 0,{serializableContext:i,cancellationTokenSource:a,dispose:l}=ke(this.ctx);try{const e=await c.cursor.callMcpLeaseTool(s.clientKey,s.toolName,t,n,i,a.token,o,i.composerId);return{content:e.content,isError:e.isError,structuredContent:e.structuredContent}}finally{l()}},this.ctx,this.extraMetricTags)}getTools(){return this.tools}}class Jn{constructor(e){this.serverIdentifier=e.serverIdentifier,this.serverName=e.serverName,this.snapshot=e}async getTools(e){return this.snapshot.tools.map(e=>({name:e.name,description:e.description,inputSchema:e.inputSchema,outputSchema:e.outputSchema}))}async callTool(e,t,n,r,s){return Fn("snapshot_client.call_tool",async()=>{const{serializableContext:o,cancellationTokenSource:i,dispose:a}=ke(e);try{const e=s?async e=>await s.elicit({message:e.message,requestedSchema:e.requestedSchema}):void 0,a=await c.cursor.callMcpLeaseTool(this.serverIdentifier,t,n,r,o,i.token,e,o.composerId);return{content:a.content,isError:a.isError,structuredContent:a.structuredContent}}finally{a()}},e,["mcp_version:snapshots"])}async getInstructions(e){return this.snapshot.instructions??void 0}async getState(e){switch(this.snapshot.status){case"connected":case"degraded":return{kind:"ready"};case"needsAuth":return{kind:"requires_authentication",url:this.snapshot.statusDetail??"",callback:async()=>{}};case"error":return{kind:"error",message:this.snapshot.statusDetail};default:return{kind:"loading"}}}async listResources(e){return{resources:this.snapshot.resources}}async readResource(e,t){return Fn("snapshot_client.read_resource",async()=>{const{serializableContext:n,cancellationTokenSource:r,dispose:s}=ke(e);try{return await c.cursor.readMcpLeaseResource(this.serverIdentifier,t.uri,n,r.token)}finally{s()}},e,["mcp_version:snapshots"])}async listPrompts(e){return this.snapshot.prompts}async getPrompt(e,t,n){return Fn("snapshot_client.get_prompt",async()=>{const{serializableContext:r,cancellationTokenSource:s,dispose:o}=ke(e);try{return await c.cursor.getMcpLeasePrompt(this.serverIdentifier,t,n,r,s.token)}finally{o()}},e,["mcp_version:snapshots"])}}class Un{constructor(){this.changeListeners=new Set,this._mergedNotifyFlush=!1,this._disposed=!1,this._snapshotProvider=new qn,this.leaseChangeDisposable=c.cursor.registerMcpLeaseChangeListener();const e=c.cursor.onDidChangeMcpLease(e=>{this.scheduleMergedNotify(function(e){return void 0===e?{serverIdentifiers:void 0,reason:c.cursor.McpLeaseChangeReason.Unknown}:{serverIdentifiers:e.serverIdentifiers?[...e.serverIdentifiers]:void 0,reason:e.reason}}(e))}),t=c.cursor.onDidChangeMcpSnapshots(e=>{this.scheduleMergedNotify({serverIdentifiers:e?[...e]:void 0,reason:c.cursor.McpLeaseChangeReason.Snapshots})}),n=this.leaseChangeDisposable.dispose.bind(this.leaseChangeDisposable);this.leaseChangeDisposable={dispose:()=>{n(),e.dispose(),t.dispose()}}}get snapshotProvider(){return this._snapshotProvider}scheduleMergedNotify(t){this._disposed||(this._mergedNotifyPending=(0,e.sf)(this._mergedNotifyPending,t),this._mergedNotifyFlush||(this._mergedNotifyFlush=!0,queueMicrotask(()=>{if(this._mergedNotifyFlush=!1,this._disposed)return;const e=this._mergedNotifyPending;this._mergedNotifyPending=void 0,void 0!==e&&this.fireDidChange(e)})))}onDidChange(e){return this.changeListeners.add(e),{dispose:()=>{this.changeListeners.delete(e)}}}fireDidChange(e){for(const t of this.changeListeners)try{t(e)}catch(e){console.error("Error in MCP snapshot change listener:",e)}}async getClients(e){return Fn("snapshot_lease.get_clients",async()=>{const t=ke(e);try{const e=await c.cursor.getMcpSnapshots(t.serializableContext),n={};for(const t of e)n[t.serverIdentifier]=new Jn(t);return n}finally{t.dispose()}},e,["mcp_version:snapshots"])}async getClient(e,t){return Fn("snapshot_lease.get_client",async()=>{const n=ke(e);try{let e=await c.cursor.getMcpSnapshot(t,n.serializableContext);return e||(e=(await c.cursor.getMcpSnapshots(n.serializableContext)).find(e=>e.serverName===t)),e?new Jn(e):void 0}finally{n.dispose()}},e,["mcp_version:snapshots"])}async getInstructions(e){return Fn("snapshot_lease.get_instructions",async()=>{const{serializableContext:t,dispose:n}=ke(e);try{return(await c.cursor.getMcpSnapshots(t)).filter(e=>void 0!==e.instructions&&e.instructions.trim().length>0).map(e=>new Cn.I0({serverName:e.serverName,instructions:e.instructions.trim(),serverIdentifier:e.serverIdentifier}))}finally{n()}},e,["mcp_version:snapshots"])}async getTools(e){return Fn("snapshot_lease.get_tools",async()=>{const{serializableContext:t,dispose:n}=ke(e);try{const e=await c.cursor.getMcpSnapshotTools(t),n=[];for(const t of e)for(const e of t.tools)n.push({name:`${t.serverIdentifier}-${e.name}`,description:e.description,inputSchema:e.inputSchema,outputSchema:e.outputSchema,clientKey:t.serverIdentifier,providerIdentifier:t.serverName,plugin:t.plugin,marketplace:t.marketplace,pluginId:t.pluginId,marketplaceId:t.marketplaceId,toolName:e.name});return n}finally{n()}},e,["mcp_version:snapshots"])}async getToolsForServers(e,t){const n=new Set(t);return(await this.getTools(e)).filter(e=>n.has(e.clientKey))}async getToolSet(e){const t=await this.getTools(e);return new Qn(t,e,["mcp_version:snapshots"])}dispose(){this._disposed||(this._disposed=!0,this.leaseChangeDisposable&&(this.leaseChangeDisposable.dispose(),this.leaseChangeDisposable=void 0),this.changeListeners.clear())}}class qn{constructor(){this._knownGenerations=new Map}async getSnapshot(e,t){return Fn("snapshot_provider.get_snapshot",async()=>{const n=ke(e);try{const e=await c.cursor.getMcpSnapshot(t,n.serializableContext);return e?this._knownGenerations.set(e.serverIdentifier,e.snapshotGeneration):this._knownGenerations.delete(t),e?Gn(e):void 0}finally{n.dispose()}},e,["mcp_version:snapshots"])}async getAllSnapshots(e){return Fn("snapshot_provider.get_all_snapshots",async()=>{const t=ke(e);try{const e=await c.cursor.getMcpSnapshots(t.serializableContext);return Sn(this._knownGenerations,e),e.map(Gn)}finally{t.dispose()}},e,["mcp_version:snapshots"])}onDidChange(e){return c.cursor.onDidChangeMcpSnapshots(async t=>{const n=Date.now(),r=await c.cursor.getMcpSnapshots(),s=Date.now()-n,o=Sn(this._knownGenerations,r);Dn("mcp.ipc.duration_ms",s,"distribution",["name:snapshot_provider.notify_pull","outcome:success","mcp_version:snapshots"]),Dn("mcp.ipc.count",1,"increment",["name:snapshot_provider.notify_pull","outcome:success","mcp_version:snapshots"]),Dn("mcp.snapshot.notify_pull_changed_count",o.length,"distribution",["mcp_version:snapshots"]);for(const t of o)e(Gn(t))})}}function Gn(e){return{serverIdentifier:e.serverIdentifier,serverName:e.serverName,plugin:e.plugin,marketplace:e.marketplace,pluginId:e.pluginId,marketplaceId:e.marketplaceId,status:e.status,statusDetail:e.statusDetail,tools:e.tools.map(e=>({name:e.name,description:e.description,inputSchema:e.inputSchema,outputSchema:e.outputSchema})),resources:e.resources,prompts:e.prompts,instructions:e.instructions,snapshotGeneration:e.snapshotGeneration}}function jn(e,t,n){var r;r={event:"mcp_agent_exec_lease_selected",lease_type:e,lease_reason:t,lease_connection:Mn,...n},oe(()=>{c.cursor.logStructuredInfo(ne,"MCP agent-exec lease selected",{mcpMeta:{subkey:"agent_exec",mcp_version:"snapshots",...r}},re)})}function Yn(e,t){return Pn="snapshot",Dn("mcp.agent_exec.lease_selected",1,"increment",["lease_type:snapshot",`reason:${e}`]),jn("snapshot",e,t),new Un}async function Hn(e){var n=[];try{const r=Rn(n,(0,t.VI)(e.withName("getVscodeMcpLease"))).span;if(void 0===c.env.remoteName)return r.setAttribute("mcp.lease.type","snapshot"),r.setAttribute("mcp.lease.reason","local"),Yn("local");try{const e=await async function(){const e=c.extensions.getExtension("anysphere.cursor-mcp");if(e)return e.isActive||await e.activate(),e.exports?new On:void 0}();if(e)return Pn="vscode",r.setAttribute("mcp.lease.type","vscode"),Dn("mcp.agent_exec.lease_selected",1,"increment",["lease_type:vscode"]),jn("vscode","vscode_lease_available",{shared_process_gate_enabled:!1}),e}catch{}return r.setAttribute("mcp.lease.type","snapshot"),r.setAttribute("mcp.lease.reason","vscode_lease_unavailable"),Yn("vscode_lease_unavailable")}catch(e){var r=e,s=!0}finally{Nn(n,r,s)}}var Wn=(e,t)=>(t=Symbol[e])?t:Symbol.for("Symbol."+e),zn=e=>{throw TypeError(e)},Vn=(e,t,n)=>{var r,s;return null!=t?("object"!=typeof t&&"function"!=typeof t&&zn("Object expected"),n&&(r=t[Wn("asyncDispose")]),void 0===r&&(r=t[Wn("dispose")],n&&(s=r)),"function"!=typeof r&&zn("Object not disposable"),s&&(r=function(){try{s.call(this)}catch(e){return Promise.reject(e)}}),e.push([n,r,t])):n&&e.push([n]),t},$n=(e,t,n)=>{var r="function"==typeof SuppressedError?SuppressedError:function(e,t,n,r){return(r=Error(n)).name="SuppressedError",r.error=e,r.suppressed=t,r},s=e=>t=n?new r(e,t,"An error was suppressed during disposal"):(n=!0,e),o=r=>{for(;r=e.pop();)try{var i=r[1]&&r[1].call(r[2]);if(r[0])return Promise.resolve(i).then(o,e=>(s(e),o()))}catch(e){s(e)}if(n)throw t};return o()};const Kn="mcp_always_expose_auth_tool";let Zn,Xn;const er="mcp_access_network_allowlist",tr="mcp_settings_overhaul",nr="cursor_rules_batch_update";function rr(e){if("string"!=typeof e)return;const t=e.trim();return t.length>0?t:void 0}const sr=(0,o.Pu)("vscode.agent_exec.activate_calls",{});class or{constructor(e){this.vscodeGitExtension=e}async exec(n,r,s,o){var i=[];try{if(!this.vscodeGitExtension)throw new e.YH("Failed to execute git command because there is no available Git API. Ensure there is a reachable git installation on the workspace system.");return Vn(i,(0,t.VI)(n.withName("VscodeGitExecutor.exec"),{attributes:{"git.cwd":r,"git.args":s,"git.caller":o?.caller}})),await this.vscodeGitExtension.rawGit.exec(r,s,o)}catch(e){var a=e,l=!0}finally{$n(i,a,l)}}}class ir{constructor(e){this.spawnerPromise=e}async exec(n,r,s,o){var i=[];try{let u;var a=[];try{Vn(a,(0,t.VI)(n.withName("GitCoreVscodeGitExecutor await git spawner"))),u=await this.spawnerPromise}catch(e){var l=e,c=!0}finally{$n(a,l,c)}if(void 0===u)throw new e.YH("Failed to execute git command because there is no available GitSpawner. Ensure there is a reachable git installation on the workspace system.");return Vn(i,(0,t.VI)(n.withName("VscodeGitExecutor.exec"),{attributes:{"git.cwd":r,"git.args":s,"git.caller":o?.caller}})),await u.exec(r,s,o)}catch(e){var u=e,d=!0}finally{$n(i,u,d)}}}const ar=[];class lr{async open(e,t){}async getDiagnostics(e,t){return[]}}class cr{constructor(e){this.disposables=[],this.watcher=c.workspace.createFileSystemWatcher(e??"**")}onDidChange(e){const t=this.watcher.onDidChange(t=>{e(t.fsPath)});this.disposables.push(t)}onDidCreate(e){const t=this.watcher.onDidCreate(t=>{e(t.fsPath)});this.disposables.push(t)}onDidDelete(e){const t=this.watcher.onDidDelete(t=>{e(t.fsPath)});this.disposables.push(t)}dispose(){this.disposables.forEach(e=>e.dispose()),this.watcher.dispose()}}class ur{async getCodebaseReference(e,t){const[n,r]=await Promise.all([c.cursor.getRepoInfo(),c.cursor.getPathEncryptionKey()]);if(n&&r)return{relativeWorkspacePath:n.relativeWorkspacePath,repoName:n.repoName,repoOwner:n.repoOwner,isTracked:!1,isLocal:!0,numFiles:0,orthogonalTransformSeed:n.orthogonalTransformSeed??0,pathEncryptionKey:r}}}async function dr(e){var u,p=[];try{const k=Date.now(),I=c.window.createOutputChannel("Cursor Agent Exec",{log:!0});e.subscriptions.push(I),async function(e,t,n){if(e.subscriptions.push(c.commands.registerCommand(x._4M,e=>void 0===e?Promise.resolve({mounted:!1,reason:"invalid-mount"}):ee(t,e)),c.commands.registerCommand(x.kJI,e=>function(e){if(void 0===j)return[];const t=new Set([...W.values()].map(e=>e.alias)),n=[],r=new Set;for(const s of e?.storeIds??[]){const e=s.trim();if(!(0,B.Y6)(e)&&!(0,B.v8)(e)||r.has(e))continue;r.add(e);const o=W.get(e),i=o?.alias??X(Z("peer",e),t),a=o?.filesDir??(0,B.f$)({base:j.base,agentId:e});n.push({kind:"mine",storeId:e,alias:i,filesDir:a})}const s=new Set;for(const r of e?.shareIds??[]){const e=r.trim();if(!(0,B.A8)(e)||s.has(e))continue;s.add(e);const o=W.get(e),i=o?.alias??X(Z("share",e),t),a=o?.filesDir??(0,B.f$)({base:j.base,agentId:e});n.push({kind:"shared",shareId:e,alias:i,filesDir:a})}return n}(e)),c.commands.registerCommand(x.oP$,e=>async function(e,t){if(!await K(e)||!V()||void 0===j)return{applied:!1,inheritedSourceIds:[]};const n=t.parentConversationId.trim(),r=t.childConversationId.trim();if(0===n.length||0===r.length||!(0,B.v8)(n))return{applied:!1,inheritedSourceIds:[]};const s=new Map;Y?.ensureMounted(n);const o=(0,B.f$)({base:j.base,agentId:n});try{(0,B.rs)(o),s.set(x._uO,{alias:x._uO,filesDir:o})}catch(t){e.appendLine(`[cursor-agent-exec] subagent inherit skip parent store: ${P(t)}`)}if(0===s.size)return{applied:!1,inheritedSourceIds:[]};const i=!1!==t.registerLocalShellMounts;return i&&z.set(r,s),e.appendLine(`[cursor-agent-exec] subagent inherit applied child=${r} parent=${n} mounts=${s.size} registerLocalShellMounts=${i}`),{applied:!0,inheritedSourceIds:[n]}}(t,e)),c.commands.registerCommand(x.Bib,e=>function(e,t){const n=t.childConversationId.trim();0!==n.length&&z.delete(n)&&e.appendLine(`[cursor-agent-exec] subagent inherit cleared child=${n}`)}(t,e)),c.commands.registerCommand(x.rs0,e=>async function(e,t){if(!await K(e)||!V())return;const n=new Set;for(const r of t.agentIds){const t=r.trim();if(0===t.length||n.has(t)||!(0,B.v8)(t))continue;n.add(t);const s=await(Y?.forceSyncMountedIfPresent(t));if(void 0===s)e.appendLine(`[cursor-agent-exec] subagent-pre-cloud-sync skipped unmounted store ${t}`);else{e.appendLine(`[cursor-agent-exec] subagent-pre-cloud-sync mounted done: pushed=${s.filesPushed} pulled=${s.filesPulled} skipped=${s.filesSkipped} refusals=${s.refusals} errors=${s.errors.length} (${s.durationMs}ms)`);for(const t of s.errors)e.appendLine(`[cursor-agent-exec]   error ${t.code} on ${t.relPath??"<unknown>"}: ${P(t.message)}`)}}}(t,e))),await async function(e){try{return await c.cursor.checkFeatureGate(J)}catch(t){return e.appendLine(`[cursor-agent-exec] Agent store sync gate check failed, defaulting to disabled: ${String(t)}`),!1}}(t))try{const e=(0,B.v5)();await async function(e){const t=d.join(e,B.EJ);await N.promises.mkdir(t,{recursive:!0,mode:B.qH});try{await N.promises.chmod(t,B.qH)}catch{}}(e.base),j=e,H=t,t.appendLine(`[cursor-agent-exec] Agent store sync ready at ${e.base} (source=${e.source}, ephemeral=${e.ephemeralOnLogout})`),Y=new O(e,`${process.pid}-${(0,R.randomUUID)()}`,t),n.push(async()=>{const e=Y;if(Y=void 0,H=void 0,void 0!==e)try{await e.dispose()}catch(e){t.appendLine(`[cursor-agent-exec] controller dispose failed: ${String(e)}`)}})}catch(e){t.appendLine(`[cursor-agent-exec] Failed to resolve agent store base: ${String(e)}`)}}(e,I,ar).catch(e=>{I.appendLine(`[cursor-agent-exec] Agent store harness activation failed: ${String(e)}`)});const M=new ue([new ie,new ce(I)]),D=new de,F=(0,t.q6)().with(t._O,M).with(o.Fm,D);sr.increment(F);const L=Vn(p,(0,t.VI)(F.withName("CursorAgentExec.activate"))).ctx,{initialBuiltinSkillsSyncPromise:Q}=T(F,ar),U=new Ge(()=>(0,t.q6)().with(t._O,M).with(o.Fm,D));U.start(),ar.push(()=>U.stop()),function(e,t){const n=c.cursor.rgPath;if(n){const r=(0,je.existsSync)(n),s=(0,S.dirname)(n),o=(0,je.existsSync)(s);(0,a.J)(n);const i={rgPath:n,rgPathExists:r,rgParentDirExists:o,platform:process.platform,arch:process.arch,nodeVersion:process.version,extensionPath:t.extensionPath,execPath:process.execPath,remoteName:c.env.remoteName,uiKind:c.env.uiKind===c.UIKind.Desktop?"desktop":"web"};if(r)try{const e=(0,je.statSync)(n);i.rgFileSize=e.size,i.rgFileMode=e.mode.toString(8),i.rgIsFile=e.isFile()}catch(e){i.rgStatError=e instanceof Error?e.message:String(e)}const l=50;if(o)try{i.parentDirContents=(0,je.readdirSync)(s).slice(0,l)}catch(e){i.parentDirListError=e instanceof Error?e.message:String(e)}const u=(0,S.dirname)(s);try{i.grandparentDirExists=(0,je.existsSync)(u),i.grandparentDirExists&&(i.grandparentDirContents=(0,je.readdirSync)(u).slice(0,l))}catch(e){i.grandparentDirError=e instanceof Error?e.message:String(e)}const d="node_modules.asar.unpacked";if(n.includes(d)){const e=n.split(d)[0];if(e){try{i.asarExists=(0,je.existsSync)(e.concat("node_modules.asar"))}catch{i.asarExists="check_failed"}const t=e.concat(d);try{if(i.asarUnpackedDirExists=(0,je.existsSync)(t),i.asarUnpackedDirExists){const e=(0,S.join)(t,"@vscode","ripgrep");i.ripgrepPkgDirExists=(0,je.existsSync)(e)}}catch{i.asarUnpackedDirExists="check_failed"}}}h.info(e,"rg_diagnostics.startup",i),r||h.warn(e,"rg_diagnostics.startup.missing_binary",i)}else h.error(e,"rg_diagnostics.startup.no_path",{platform:process.platform,arch:process.arch,nodeVersion:process.version,extensionPath:t.extensionPath,execPath:process.execPath,remoteName:c.env.remoteName,uiKind:c.env.uiKind===c.UIKind.Desktop?"desktop":"web"})}(F,e),async function(e,t){let n=!1;try{n=await c.cursor.checkFeatureGate(Ye)}catch{n=!1}if(!n)return;let r=We;try{const e=await c.cursor.getDynamicConfigValue(He);e&&(r={windowMs:e.window_ms??We.windowMs,threshold:e.threshold??We.threshold,maxRecords:e.max_records??We.maxRecords,cooldownMs:e.cooldown_ms??We.cooldownMs,reportToSentry:e.report_to_sentry??We.reportToSentry})}catch{r=We}const o=[];let i=0;(0,s.o9)(e=>{try{o.push(e);const n=Math.max(1,r.maxRecords,r.threshold);o.length>n&&o.splice(0,o.length-n);const s=e.timestamp,a=s-r.windowMs;let l=0;for(let e=o.length-1;e>=0&&o[e].timestamp>=a;e--)l++;if(l<r.threshold)return;if(!r.reportToSentry)return;if(s-i<r.cooldownMs)return;i=s,((e,n)=>{const s=n-r.windowMs,i=o.filter(e=>e.timestamp>=s),a={},l={};for(const e of i)a[e.source]=(a[e.source]??0)+1,l[e.mode]=(l[e.mode]??0)+1;const u=Object.entries(a).sort((e,t)=>t[1]-e[1])[0]?.[0]??"unknown",d=i.length>0?i[0].timestamp:n,p=r.windowMs>0?e/r.windowMs*1e3:0;try{c.cursor.captureException(new Error(`Excessive ripgrep invocations (agent-exec): ${e} spawns in ${r.windowMs}ms`),{client_error_type:"ripgrep_invocation_storm",force_upload:"forced",top_source:u,"event.process":"extension-host"},{level:"warning",fingerprint:["ripgrep-invocation-storm","agent-exec",u],extra:{windowCount:e,windowMs:r.windowMs,threshold:r.threshold,maxRecords:r.maxRecords,bufferSize:o.length,distinctSources:Object.keys(a).length,windowSpanMs:n-d,ratePerSec:p.toFixed(1),sourceCounts:JSON.stringify(a),modeCounts:JSON.stringify(l)},jsonAttachments:[{filename:"ripgrep-invocations.json",json:JSON.stringify({schemaVersion:1,description:"Most recent ripgrep spawns from the agent-exec paths (agent grep/glob tool + ripwalk) before the storm threshold was crossed. No raw query text or paths are included.",windowMs:r.windowMs,threshold:r.threshold,windowCount:e,sourceCounts:a,modeCounts:l,records:o},null,2)}]}),t?.(`[ripgrep-monitor] reported storm: ${e} spawns in ${r.windowMs}ms (top=${u})`)}catch(e){t?.(`[ripgrep-monitor] report failed: ${String(e)}`)}})(l,s)}catch{}}),e.push(()=>(0,s.o9)(void 0)),t?.(`[ripgrep-monitor] enabled (window=${r.windowMs}ms threshold=${r.threshold} maxRecords=${r.maxRecords} report=${r.reportToSentry})`)}(ar,e=>I.appendLine(e)).catch(e=>I.appendLine(`[cursor-agent-exec] ripgrep invocation monitor failed: ${String(e)}`));const q=function(e){if("linux"!==process.platform&&"win32"!==process.platform&&"darwin"!==process.platform)return void console.log(`[cursor-agent-exec] Sandbox helper: unsupported platform ${process.platform}`);const t="win32"===process.platform?"cursorsandbox.exe":"cursorsandbox",n=process.resourcesPath,r=S.dirname(process.execPath);console.log("[cursor-agent-exec] Sandbox helper resolution:"),console.log(`[cursor-agent-exec]   platform=${process.platform}`),console.log(`[cursor-agent-exec]   resourcesPath=${n}`),console.log(`[cursor-agent-exec]   execPath=${process.execPath}`),console.log(`[cursor-agent-exec]   execDir=${r}`),console.log(`[cursor-agent-exec]   extensionRoot=${e}`),console.log(`[cursor-agent-exec]   VSCODE_DEV=${process.env.VSCODE_DEV}`);const s=[];s.push({name:"extensionRoot relative (../../resources/helpers)",path:S.join(e,"../../resources/helpers",t)}),n&&(s.push({name:"resourcesPath/app/resources/helpers",path:S.join(n,"app","resources","helpers",t)}),s.push({name:"resourcesPath/resources/helpers",path:S.join(n,"resources","helpers",t)})),s.push({name:"execDir/resources/helpers",path:S.join(r,"resources","helpers",t)}),s.push({name:"execDir/resources/app/resources/helpers",path:S.join(r,"resources","app","resources","helpers",t)}),"1"===process.env.VSCODE_DEV&&s.push({name:"dev node_modules",path:S.join(e,"../../node_modules/@anysphere/sandbox-helper/bin",t)});for(const e of s)try{const t=je.existsSync(e.path);if(console.log(`[cursor-agent-exec]   candidate (${e.name}): ${e.path}, exists=${t}`),!t){const t=S.dirname(e.path);try{if(je.existsSync(t)){const e=je.readdirSync(t);console.log(`[cursor-agent-exec]     parent dir ${t} contents: ${JSON.stringify(e)}`)}else console.log(`[cursor-agent-exec]     parent dir ${t} does not exist`)}catch(e){console.log(`[cursor-agent-exec]     failed to list parent dir: ${e}`)}}if(t)return console.log(`[cursor-agent-exec]   FOUND sandbox helper at: ${e.path}`),e.path}catch(t){console.log(`[cursor-agent-exec]   candidate (${e.name}): error checking ${e.path}: ${t}`)}console.log(`[cursor-agent-exec] Sandbox helper: no candidate found after checking ${s.length} paths`)}(e.extensionPath);if(q)try{(0,a.St)({sandboxBinaryPath:q}),console.log(`[cursor-agent-exec] Sandbox configured: binary=${q}`)}catch(e){console.error("[cursor-agent-exec] Failed to configure sandbox:",e)}else console.warn("[cursor-agent-exec] Sandbox helper path not found, sandboxing will be unavailable");const G=(c.workspace.workspaceFolders??[]).map(e=>e.uri.fsPath);h.info(F,"cursor_agent_exec.startup.workspace_paths",{workspacePathCount:G.length,workspacePaths:G});const $=G.at(0),te=(0,l.yn)($,C.homedir()),ne=function(){let e=c.env.shell??"";try{const t=c.workspace.getConfiguration("terminal.integrated"),n="win32"===process.platform?"windows":"darwin"===process.platform?"osx":"linux",r=t.get(`defaultProfile.${n}`);if(r){const s=t.get(`profiles.${n}`),o=s?.[r]?.path;o&&(e=o)}}catch(e){console.warn("[cursor-agent-exec] Failed to read terminal config",e)}return e}();let re=!1;c.cursor.getUseLegacyTerminalTool().then(e=>{re=e});const se=c.cursor.onDidChangeUseLegacyTerminalTool(e=>{re=e});ar.push(()=>se.dispose());const oe=()=>{const e={env:{CURSOR_AGENT:"1"}};if(re){const t=(0,a.G6)(ne),n=(0,a.WE)(t);return(0,a.fi)({...e,shell:n})}return(0,a.Fn)({...e,userTerminalHint:ne})},pe=(0,n.m4)(),me=async()=>{try{const e=Date.now(),t=await(0,s.r5)({projectsDir:pe,ttlMs:s.pt});h.debug(F,"Agent data cleanup completed",{...t,projectsDir:pe,durationMs:Date.now()-e})}catch(e){h.warn(F,"Agent data cleanup failed",{projectsDir:pe,error:String(e)})}},he=setTimeout(()=>{me()},3e4),fe=setInterval(()=>{me()},s.BN);ar.push(()=>{clearTimeout(he),clearInterval(fe)});const ge={getTeamAdminSettings:async()=>{try{const e=await c.cursor.getTeamAdminSettings();return e?new i.V5U(e):void 0}catch{return}},getTeamRepos:async()=>{try{const e=await c.cursor.getTeamRepos();return e?new i.k1F(e):void 0}catch{return}}},Ae={getDefaultNetworkAllowlist:async()=>{try{const e=await c.cursor.getDynamicConfigValue("sandbox_default_network_allowlist");return e?.allowlist??[]}catch{return[]}}},ye=new s.w(ge,Ae,{isMcpAccessNetworkAllowlistEnabled:()=>c.cursor.checkFeatureGate(er),isMcpSettingsOverhaulEnabled:e=>c.cursor.checkFeatureGate(tr,e)});let we,ve;const Ee=new Promise(e=>{ve=e}),Te=()=>c.cursor.getThirdPartyExtensibilityEnabled(),ke=()=>c.cursor.getAllowUserLocalPluginImports(),Ie={subscribe:(e,t,n)=>{const r=[],s=e=>{"git"!==e.scheme&&n(e.fsPath)};for(const n of t){const t=new c.RelativePattern(e,n),o=c.workspace.createFileSystemWatcher(t);o.onDidCreate(s),o.onDidChange(s),o.onDidDelete(s),r.push(o)}return()=>{for(const e of r)e.dispose()}}},be="rootWorkspace"===c.cursor.glassWorkspaceRole?c.cursor.workspaceId():(0,S.join)(C.tmpdir(),crypto.randomUUID()),Ce=(0,n.Xq)($??be),Se=(void 0===Xn&&(Xn=Promise.resolve(c.cursor.getPushRequestContextEnabled()).catch(()=>!1)),Xn);c.cursor.pushMcpWorkspaceProjectDir(Ce),c.cursor.pushEnvStaticData({osVersion:`${C.platform()} ${C.release()}`,shell:(0,a.G6)(ne),projectDir:Ce,isWorkingDirHomeDir:te});const xe=new Be(L);ar.push(()=>{xe.dispose()});const Re=ot({workspacePaths:G,getThirdPartyExtensibilityEnabled:Te,getAllowUserLocalPluginImports:ke,deactivateTasks:ar,context:e,gitExecutorPromise:Ee}),[Ne,Me,Pe,De,Fe,Le,Oe,Qe,Je,Ue]=await Promise.all([(void 0===Zn&&(Zn=Promise.resolve(c.cursor.getCursorExtensionsIsolationEnabled()).catch(()=>!1)),Zn),Hn(L),Re,c.cursor.checkFeatureGate("mcp_direct_client_tool_fetch"),c.cursor.checkFeatureGate("meta_mcp_tool"),c.cursor.checkFeatureGate(Kn),Promise.resolve(c.cursor.getDynamicConfigValue("mcp_auth_status_copy_config")).catch(()=>{}),xe.initialize(L),Se,Promise.resolve(c.cursor.checkFeatureGate("canvas_post_edit_diagnostics")).catch(()=>!1)]);ar.push(()=>{Me.dispose()});const{pluginsService:qe,refreshPluginHooks:ze}=Pe;if(Ne){var m=[];try{Vn(m,(0,t.VI)(L.withName("fetch git (isolation)")));const e=(async()=>{try{const e=await(0,r.Qv)();return new r.RG({gitPath:e.path,onLog:e=>I.debug(`[git] ${e}`)})}catch(e){return void I.error(e)}})();we=new ir(e)}catch(e){var f=e,g=!0}finally{$n(m,f,g)}}else{var A=[];try{Vn(A,(0,t.VI)(L.withName("fetch git (no isolation)")));const e=await async function(){const e=c.extensions.getExtension("vscode.git");if(!e)return;const t=e.isActive?e.exports:await e.activate();return t&&t.enabled?t.getAPI(1):void 0}();void 0===e&&I.error("Failed to find a Git API."),we=new or(e)}catch(e){var y=e,v=!0}finally{$n(A,y,v)}}ve(we);const Ve=new s.E1(we,ye,G);!function(e,t){const n=c.workspace.createFileSystemWatcher("**/.cursorignore");n.onDidCreate(async t=>{const n=await(0,s.ye)(t.fsPath);null!==n&&e.handleCursorIgnoreCreated(n).catch(()=>{})}),n.onDidChange(async t=>{const n=await(0,s.ye)(t.fsPath);null!==n&&e.handleCursorIgnoreChanged(n).catch(()=>{})}),n.onDidDelete(async t=>{const n=await(0,s.ye)(t.fsPath)??(0,s.gM)(t.fsPath);e.handleCursorIgnoreDeleted(n).catch(()=>{})}),t.push(()=>{n.dispose()})}(Ve,ar);const $e=new lr,Ke=new ur,Ze=G.map(e=>new s.KO(F,we,e,!0,Te,Ie)),Xe=new s.EV(F,G,C.homedir(),we,!0,Ie,Te,Q,"ide"),et=new s.Rx(F,()=>({importThirdPartyPlugins:Te()}),Ie,qe),tt=new s.Px([...Ze,Xe,et]),nt=new s.NB([Xe,et],()=>[],()=>({workspacePaths:G,userHomeDirectory:C.homedir()})),rt=G.map(e=>new s.Vz(e,Te)),st=new s.Vz(C.homedir(),Te,"user"),it=new s._J(()=>({importThirdPartyPlugins:Te()}),qe),at=new s.o_([...rt,st,it]);ar.push(()=>{tt.dispose()});const lt=Je&&"rootWorkspace"===c.cursor.glassWorkspaceRole&&0===G.length,ct=e=>{if(!lt)return e;const t=b();return e.some(e=>e.fullPath===t.fullPath)?e:[t,...e]},ut=async e=>{const t=function(e){return e.map(e=>{if("agentFetched"!==e.type?.type.case||!e.content)return e;const t=e.clone();return t.content="",t})}(ct(e));await Promise.resolve(c.cursor.checkFeatureGate(nr)).catch(()=>!1)?await c.cursor.updateCursorRulesInBatches(t):await c.cursor.updateCursorRules(t)};tt.getAllCursorRules(F).then(e=>{I.appendLine("cursorRulesService.getAllCursorRules"),ut(e)}),function(e){const{mergedAgentSkillsService:t,serviceCtx:n,deactivateTasks:r}=e,s=async e=>{const t=e.map(_);await Promise.resolve(c.cursor.checkFeatureGate(E)).catch(()=>!1)?await c.cursor.updateAgentSkillsInBatches(t):await c.cursor.updateAgentSkills(t)};let o;t.getAllAgentSkills(n).then(e=>{s(e)});const i=t.onDidChangeSkills(()=>{void 0!==o&&clearTimeout(o),o=setTimeout(()=>{o=void 0,(async()=>{const e=await t.getAllAgentSkills(n);await s(e)})().catch(e=>{h.warn(n,"mergedAgentSkillsService.onDidChangeSkills failed",{error:String(e)})})},w)});r.push(i),r.push(()=>{void 0!==o&&clearTimeout(o)})}({mergedAgentSkillsService:nt,serviceCtx:F,deactivateTasks:ar,pushRequestContextEnabled:Je}),ze();const dt=4e3;let pt;const mt=tt.onDidChangeRules(()=>{void 0!==pt&&clearTimeout(pt),pt=setTimeout(()=>{pt=void 0,(async()=>{const e=await tt.getAllCursorRules(F);await ut(e)})().catch(e=>{I.appendLine(`cursorRulesService.onDidChangeRules failed: ${String(e)}`)})},dt)});ar.push(mt),ar.push(()=>{void 0!==pt&&clearTimeout(pt)});const ht=c.cursor.registerCursorRulesProvider({reloadRules:async()=>{var e=[];try{const n=(0,t.q6)().with(t._O,M).with(o.Fm,D),r=Vn(e,(0,t.VI)(n.withName("cursorRulesProvider.reloadRules")));tt.reload(r.ctx);const s=await tt.getAllCursorRules(r.ctx);void 0!==pt&&(clearTimeout(pt),pt=void 0),await ut(s)}catch(e){var n=e,r=!0}finally{$n(e,n,r)}}});ar.push(()=>ht.dispose());const ft=c.cursor.registerSubagentsProvider({getAllSubagents:async()=>at.getAllSubagents(),reload:async()=>{await at.reload()},reloadAndGetAllSubagents:async()=>await at.reload()});ar.push(()=>ft.dispose());const gt="snapshots",At=c.window.createOutputChannel("Mcp FileSystem Writer",{log:!0});ar.push(()=>{At.dispose()});const yt=new ce(At),wt=new le(new ae({subkey:"agent_exec_mcp_file_writer",mcpVersion:gt})),Et=new ue([yt,wt]);let _t;try{_t=function(e){if(null===e||"object"!=typeof e||Array.isArray(e))return;const t=e,n={authToolDescription:rr(t.authToolDescription),errorStatusMessage:rr(t.errorStatusMessage),needsAuthStatusMessageWithAuthTool:rr(t.needsAuthStatusMessageWithAuthTool)};return Object.values(n).every(e=>void 0===e)?void 0:n}(Oe)}catch{_t=void 0}const Tt=new s.x7(Me,Ce,{loggerBackend:Et,mcpAuthCopyOverrides:_t,useDirectClientTools:De,alwaysExposeVirtualMcpAuthTool:Le,getEnabledToolsByServer:async()=>c.cursor.getEnabledMcpTools(),snapshotProvider:Me instanceof Un?Me.snapshotProvider:void 0,mcpVersion:gt,onDidWrite:Je?e=>{c.cursor.pushMcpFileSystemDescriptors(e)}:void 0});ar.push(()=>{Tt.dispose()});const kt=new Tn(Ce);ar.push(()=>{kt.dispose()});const It=c.cursor.registerBackgroundShellProvider({listBackgroundShellWork:async e=>kt.listBackgroundShellWork(e),killBackgroundShell:async e=>kt.killBackgroundShell(e),showBackgroundShell:async e=>kt.showBackgroundShell(e)});ar.push(()=>It.dispose());const bt=new s.mu,Ct=G.length>1?void 0:G.at(0),St=new In(Ve,()=>c.cursor.getGrepProvider());let Bt,Rt;const Nt=()=>Rt||(Rt=new s.aZ(Me),Rt),Mt=()=>{if(Bt)return Bt;const e=new s.Ws(bt,Ve,Ct);Bt=new s.d2(tt,void 0,at,Ke,St,e,Nt(),we,G,{projectDir:Ce,isWorkingDirHomeDir:te,createFileWatcher:Je?void 0:e=>new cr(e),getSandboxEnabled:void 0,getNetworkAllowlistInfo:()=>(0,s.mA)(ye,C.homedir(),G[0]),userTerminalHint:ne,getMcpFileSystemOptions:(e,t)=>Tt.getMcpFileSystemOptions(e,t),mcpMetaToolEnabled:Fe,alwaysExposeVirtualMcpAuthTool:Le,getAgentSkills:e=>nt.getAllAgentSkills(e)});const t=tt.onDidChangeRules(()=>{Bt?.rebuildAllCaches()});return ar.push(t),Bt};if(ar.push(()=>{Bt?.dispose(),Rt?.dispose()}),Je){const e=(0,t.q6)().with(t._O,M);Promise.all(G.map(async t=>{let n;try{n=(await we.exec(e,t,["rev-parse","--show-toplevel"],{caller:"pushGitWorkspaceCaches"})).stdout.trim()}catch{n=void 0}return{workspacePath:t,repoPath:n,remoteUrl:n?await(0,s.gT)(e,we,n):void 0}})).then(e=>c.cursor.pushGitWorkspaceCaches(e)).catch(e=>{console.warn("[cursor-agent-exec] Failed to push git workspace caches",e)})}const Pt=c.cursor.onDidChangeThirdPartyExtensibilityEnabled(()=>{var e=[];try{const n=(0,t.q6)().with(t._O,M).with(o.Fm,D),r=Vn(e,(0,t.VI)(n.withName("thirdPartyExtensibilityEnabledChanged")));tt.reload(r.ctx),at.reload()}catch(e){var n=e,r=!0}finally{$n(e,n,r)}});ar.push(()=>Pt.dispose());const Dt=function(e,t){const n=[];let r;const o=async()=>{try{const n=await(0,s.my)(e,t);c.cursor.pushSandboxNetworkFileEntries(n)}catch(e){console.warn("[cursor-agent-exec] Failed to read sandbox network file entries",e)}},i=()=>{void 0!==r&&clearTimeout(r),r=setTimeout(()=>{r=void 0,o()},500)},a=e=>{const t=c.workspace.createFileSystemWatcher(new c.RelativePattern(c.Uri.file((0,S.join)(e,".cursor")),"sandbox.json"));t.onDidChange(i),t.onDidCreate(i),t.onDidDelete(i),n.push(t)};return a(e),t&&a(t),o(),{dispose(){void 0!==r&&clearTimeout(r);for(const e of n)e.dispose()}}}(C.homedir(),G[0]);let Ft,Lt;ar.push(()=>Dt.dispose());try{if(await c.cursor.checkFeatureGate("shell_exec_output_backpressure")){const e=await c.cursor.getDynamicConfigValue("shell_exec_output_backpressure_config");e&&(Ft={bufferOutputEvents:!0,outputLimiterOptions:{flushIntervalMs:e.outputLimiterFlushIntervalMs,maxBufferedBytes:e.outputLimiterMaxBufferedBytes}},Lt={windowMs:e.outputSuppressionWindowMs,minimumThresholdCharsPerSecond:e.outputSuppressionThresholdCharsPerSecond,minChars:e.outputSuppressionMinChars})}}catch{Ft=void 0,Lt=void 0}const Ot=(0,S.join)(Ce,"canvases"),Qt=(0,S.join)(e.extensionPath,"dist","agent-sdk"),Jt=(u={canvasesDir:Ot,sdkSourceDir:Qt,tsResolveAnchor:e.extensionPath},new xt(u));Jt.bootstrapReady.then(e=>{void 0===e&&h.error(F,"Canvas SDK source missing from extension bundle")},e=>{const t=function(e,t){return{errorName:e instanceof Error&&e.name.length>0?e.name:"UnknownError",errorMessage:wn(e instanceof Error?e.message:String(e),t)}}(e,{canvasesDir:Ot,sdkSourceDir:Qt});h.warn(F,"Canvas dir bootstrap failed",{errorName:t.errorName,errorMessage:t.errorMessage})});const Ut=new vt({ignoreService:Ve,teamSettingsService:ye,terminalProvider:kt,createTerminalExecutor:oe,projectDir:Ce,workspacePaths:G,gitExecutor:we,grepProvider:St,diagnosticsProvider:$e,getCanvasDiagnostics:Ue?e=>Jt.getDiagnostics(e):void 0,mcpLease:Me,getOrCreateMcpStateAccessor:Nt,cursorRulesService:tt,subagentsService:at,codebaseReferenceProvider:Ke,getOrCreateSharedRequestContextExecutor:Mt,terminalPathHint:ne,hooksConfigTracker:xe,adminNetworkControlsEnabled:!0,mcpAllowlistLog:e=>c.cursor.logMcpAllowlist(e),getMcpFileSystemOptions:(e,t)=>Tt.getMcpFileSystemOptions(e,t),shellOutputBackpressureOptions:Ft,shellExecOutputSuppressionOptions:Lt}),qt=new _e(Ut,ye,oe,G,M,D);e.subscriptions.push(qt);const Gt=c.cursor.registerAgentExecProvider(qt);e.subscriptions.push(Gt);const jt=c.env.bundledNodePath?.()??(process.versions.electron?void 0:process.execPath),Yt=function(e,n){const r="string"==typeof e?{runtimeDir:e,logContext:n}:e,{runtimeDir:s}=r,o=new an({runtimeDir:s,logContext:r.logContext,nodeExecPath:r.nodeExecPath}),i=new ln,a=i.registerStateProvider(function(){const e=(0,t.q6)(),n=[];let r=yn();const s=()=>{for(const t of n)try{t()}catch(t){un.warn(e,"Canvas theme listener threw during broadcast",{errorType:t instanceof Error?t.name:typeof t})}};let o=0;const i=async()=>{const e=++o;let t;try{const e=await c.commands.executeCommand(x.PY7);e&&"string"==typeof e.kind&&(t={kind:e.kind,...e.primary?{primary:e.primary}:{},...e.editorBackground?{editorBackground:e.editorBackground}:{},...e.editorForeground?{editorForeground:e.editorForeground}:{}})}catch{t=void 0}if(e===o){if(void 0===t){const e=yn().kind;return void(e!==r.kind&&(r={...r,kind:e},s()))}r=t,s()}},a=c.window.onDidChangeActiveColorTheme(()=>{i()});return i(),{channel:"theme",getState:()=>r,onDidChange:e=>(n.push(e),{dispose(){const t=n.indexOf(e);t>=0&&n.splice(t,1)}}),dispose(){a.dispose(),n.length=0}}}());o.onAction((e,t)=>function(e,t,n,r){switch(un.info(r,"Canvas action dispatched",{canvasId:t,actionType:n.type}),n.type){case"openAgent":c.commands.executeCommand("canvas.openAgentByConversationId",n.agentId);break;case"newComposerChat":{const s=e.getRegisteredCanvasPath(t);if(!s){un.warn(r,"newComposerChat: unknown canvasId",{canvasId:t});break}c.commands.executeCommand("canvas.newComposerChat",s,n.userPrompt);break}case"openFile":{const e=[n.path];void 0!==n.selection&&e.push(n.selection),c.commands.executeCommand("canvas.openFileInWorkbench",...e);break}}}(o,e,t,l)),o.onError(mn),o.onErrorCleared(hn);const l=r.logContext??(0,t.q6)(),u=i.onDidChangeState((e,t)=>{o.pushStateAll({channel:e,payload:t})});return{async registerCanvas(e){const t=await o.registerCanvas({path:e}).catch(e=>{throw un.error(l,"Failed to start canvas server",{errorType:e instanceof Error?e.name:typeof e}),e});for(const e of i.getAllState())o.pushState({canvasId:t.canvasId,channel:e.channel,payload:e.payload});return t},getCanvasUrl:async(e,t)=>o.getCanvasUrl({canvasId:e,preview:t}),async destroyCanvas(e){await o.destroyCanvas({canvasId:e})},async shareCanvas(e,t,n){const r=()=>{if(n?.isCancellationRequested)throw new c.CancellationError};r();const s=await An(e);if("invalid"===s.status)return un.warn(l,"Rejected canvas share for invalid source path",{reason:s.reason}),{status:"canvas-missing"};let i;try{i=await o.getShareArtifact({path:e}),r()}catch(e){if(e instanceof c.CancellationError)throw e;throw un.error(l,"Failed to build canvas share artifact for upload",{errorType:e instanceof Error?e.name:typeof e}),e}if("rendered"===i.status.status){const n=await An(e);if("invalid"===n.status)return un.warn(l,"Rejected canvas share after source path changed",{reason:n.reason}),{status:"canvas-missing"};if(s.realPath!==n.realPath||function({before:e,after:t}){return e.dev!==t.dev||e.ino!==t.ino||e.size!==t.size||e.mtimeMs!==t.mtimeMs}({before:s.stats,after:n.stats}))return un.warn(l,"Rejected canvas share after source file changed during artifact build"),{status:"canvas-missing"};r();try{return{status:"shared",shareUrl:(await c.cursor.shareCanvasArtifact({title:t.title,visibility:t.visibility,appJs:i.appJs,dataJson:i.dataJson,canvasPath:e})).shareUrl}}catch(e){throw un.error(l,"Failed to upload canvas share artifact",{errorType:e instanceof Error?e.name:typeof e}),e}}return i.status},dispose(){u.dispose(),a.dispose(),i.dispose(),o.stop()}}}({runtimeDir:(0,S.join)(e.extensionPath,"dist","canvas-runtime"),logContext:F,nodeExecPath:jt}),Ht=c.cursor.registerCanvasServerProvider(Yt);e.subscriptions.push(Ht),ar.push(()=>{Yt.dispose()}),h.info(F,"cursor_agent_exec.startup.activation_latency",{durationMs:Date.now()-k})}catch(e){var k=e,I=!0}finally{$n(p,k,I)}}async function pr(){for(const e of ar){const t=e();if(t instanceof Promise)try{await t}catch{}}}})();var __webpack_export_target__=exports;for(var __webpack_i__ in __webpack_exports__)__webpack_export_target__[__webpack_i__]=__webpack_exports__[__webpack_i__];__webpack_exports__.__esModule&&Object.defineProperty(__webpack_export_target__,"__esModule",{value:!0})})();
-                        //# sourceMappingURL=http://go/sourcemap/sourcemaps/7cf19b7482706625cdb70db3211b7dd035b7aa30/extensions/cursor-agent-exec/dist/main.js.map
+                        //# sourceMappingURL=http://go/sourcemap/sourcemaps/cf80f4b937f3b9c48070d7085129a838ce7876a0/extensions/cursor-agent-exec/dist/main.js.map

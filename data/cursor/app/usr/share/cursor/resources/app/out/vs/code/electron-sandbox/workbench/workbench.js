@@ -398,6 +398,6 @@
     performance.mark("code/didLoadWorkbenchMain"), B.main(S)
 })();
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/7cf19b7482706625cdb70db3211b7dd035b7aa30/core/vs/code/electron-sandbox/workbench/workbench.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/cf80f4b937f3b9c48070d7085129a838ce7876a0/core/vs/code/electron-sandbox/workbench/workbench.js.map
 
 //# debugId=04b649c0-64bf-5945-bf89-4d5f092933cf
