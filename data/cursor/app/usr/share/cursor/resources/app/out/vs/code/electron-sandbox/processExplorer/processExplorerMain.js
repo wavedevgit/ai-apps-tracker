@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "efeb8f8b-9df5-5240-8cbd-8e22da03795f")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "95dfde73-7a10-515e-8915-64d4d93f7095")
     } catch (e) {}
 }();
 var _r = function(e, t) {
@@ -22539,6 +22539,6 @@ export {
     l5 as startup
 }; /*! @license DOMPurify 3.1.7 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.1.7/LICENSE */
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/4aa8ff1b7877ed7bd01bcba308698f71a6735380/core/vs/code/electron-sandbox/processExplorer/processExplorerMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/042b3c1a4c53f2c3808067f519fbfc67b72cad80/core/vs/code/electron-sandbox/processExplorer/processExplorerMain.js.map
 
-//# debugId=efeb8f8b-9df5-5240-8cbd-8e22da03795f
+//# debugId=95dfde73-7a10-515e-8915-64d4d93f7095

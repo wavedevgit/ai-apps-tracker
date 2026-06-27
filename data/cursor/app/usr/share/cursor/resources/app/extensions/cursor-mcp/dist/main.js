@@ -2458,7 +2458,7 @@
                             allowedMcpConfiguration: e,
                             matchedServer: c,
                             server: t
-                        }) || (void 0 === t || u) && void 0 !== a,
+                        }) || void 0 === t && void 0 !== a,
                         d = void 0 === t ? o ? null == i ? void 0 : i.flatMap(e => {
                             var t;
                             return null !== (t = e.networkAllowlist) && void 0 !== t ? t : []
@@ -2466,7 +2466,7 @@
                             var r;
                             return void 0 === e ? n : [...null !== (r = e.networkAllowlist) && void 0 !== r ? r : [], ...void 0 !== N(e.serverUrl) && void 0 !== t.url ? [t.url] : []]
                         }(c, t, s),
-                        m = void 0 === t ? void 0 : function(e, t) {
+                        m = void 0 === t ? void 0 : u ? "allow_all" : function(e, t) {
                             var n, r;
                             if (void 0 !== N(null == e ? void 0 : e.command) && void 0 !== t.command && void 0 === t.url) return null !== (n = "allow_all" === (r = null == e ? void 0 : e.networkMode) || "allowlist" === r || "deny_all" === r || "no_sandbox" === r ? r : void 0) && void 0 !== n ? n : "no_sandbox"
                         }(c, t),
@@ -103040,4 +103040,4 @@
         value: !0
     })
 })();
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/4aa8ff1b7877ed7bd01bcba308698f71a6735380/extensions/cursor-mcp/dist/main.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/042b3c1a4c53f2c3808067f519fbfc67b72cad80/extensions/cursor-mcp/dist/main.js.map

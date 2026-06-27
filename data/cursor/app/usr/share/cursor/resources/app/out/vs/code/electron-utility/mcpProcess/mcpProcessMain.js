@@ -5,7 +5,7 @@
     try {
         var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
             n = (new e.Error).stack;
-        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "563787b3-0559-5464-8d99-2c2c3afa36e0")
+        n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "f1bc5d30-3086-5370-b204-b48ee3877b11")
     } catch (e) {}
 }();
 var Lo = function(e, t) {
@@ -5949,19 +5949,23 @@ var Ba, Lf = m({
             "use strict";
             Ct(), Br = class f2 {
                 constructor(t) {
-                    this.promise = t
+                    this.initializer = t
+                }
+                promise;
+                getExecutor() {
+                    return this.promise === void 0 && (this.promise = this.initializer()), this.promise
                 }
                 async getCwd() {
-                    return (await this.promise).getCwd()
+                    return (await this.getExecutor()).getCwd()
                 }
                 clone(t) {
-                    return new f2(this.promise.then(r => r.clone(t)))
+                    return new f2(async () => (await this.getExecutor()).clone(t))
                 }
                 async * execute(t, r, s) {
                     var n = [];
                     try {
                         const a = sr(n, cr(t.withName("LazyTerminalExecutor.execute"))),
-                            c = await this.promise;
+                            c = await this.getExecutor();
                         for await (const l of c.execute(t, r, s)) yield l
                     } catch (a) {
                         var i = a,
@@ -7314,13 +7318,13 @@ function fS(e) {
     }
     switch (l1(t?.userTerminalHint ?? "")) {
         case "zsh":
-            return new Br(Vf(t));
+            return new Br(() => Vf(t));
         case "bash":
-            return new Br(Of(t));
+            return new Br(() => Of(t));
         case "powershell":
-            return new Br(zf());
+            return new Br(() => zf());
         case "zsh-light":
-            return new Br(Zf(t));
+            return new Br(() => Zf(t));
         default:
             return Wf(t)
     }
@@ -27165,6 +27169,6 @@ export {
     l2 as main
 };
 
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/4aa8ff1b7877ed7bd01bcba308698f71a6735380/core/vs/code/electron-utility/mcpProcess/mcpProcessMain.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/042b3c1a4c53f2c3808067f519fbfc67b72cad80/core/vs/code/electron-utility/mcpProcess/mcpProcessMain.js.map
 
-//# debugId=563787b3-0559-5464-8d99-2c2c3afa36e0
+//# debugId=f1bc5d30-3086-5370-b204-b48ee3877b11

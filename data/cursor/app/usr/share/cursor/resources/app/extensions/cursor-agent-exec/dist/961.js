@@ -4466,4 +4466,4 @@ exports.id = 961, exports.ids = [961], exports.modules = {
         }(u || (u = {}))
     }
 };
-//# sourceMappingURL=http://go/sourcemap/sourcemaps/4aa8ff1b7877ed7bd01bcba308698f71a6735380/extensions/cursor-agent-exec/dist/961.js.map
+//# sourceMappingURL=http://go/sourcemap/sourcemaps/042b3c1a4c53f2c3808067f519fbfc67b72cad80/extensions/cursor-agent-exec/dist/961.js.map
