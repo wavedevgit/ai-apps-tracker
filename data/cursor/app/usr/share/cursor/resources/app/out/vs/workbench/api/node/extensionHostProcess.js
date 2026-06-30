@@ -17497,6 +17497,7 @@ var h4r = p4r,
             return QEr.create(r, e)
         }
         static
+
         function(r, e) {
             return WEr.create(r, e)
         }
