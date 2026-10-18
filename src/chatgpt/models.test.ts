@@ -10,6 +10,16 @@ assert.deepEqual(
     [{ id: 'gpt-6.1-sol', codename: 'sol61' }],
 );
 
+assert.deepEqual(
+    getModels(
+        'const models = [{ slug: `gpt-5.6-sol`, aliases: [`gpt-5.6-sol-fast`], displayName: `5.6 Sol` }];',
+    ),
+    [
+        { id: 'gpt-5.6-sol', codename: '5.6 Sol' },
+        { id: 'gpt-5.6-sol-fast', codename: '5.6 Sol' },
+    ],
+);
+
 assert.equal(
     parseManifest(
         "window.__reactRouterManifest={'version':'build-1','hmr':undefined,'entry':{'module':'/entry.js','imports':[],'css':[]},'routes':{},'url':'/manifest.js'};",
