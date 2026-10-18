@@ -1,118 +1,80 @@
 [
     {
-        "id": "gpt-5-6",
-        "codename": "5.6 Sol"
-    },
-    {
-        "id": "gpt-5-6-auto-thinking",
-        "codename": "5.6 Sol"
-    },
-    {
-        "id": "gpt-5-6-instant",
-        "codename": "5.6 Sol"
-    },
-    {
-        "id": "gpt-5-6-pro",
-        "codename": "5.6 Sol"
-    },
-    {
-        "id": "gpt-5-6-thinking",
-        "codename": "5.6 Sol"
-    },
-    {
-        "id": "gpt-5.4-cyber",
-        "codename": "Daybreak Red"
-    },
-    {
-        "id": "gpt-5.5-cyber-preview",
-        "codename": "Daybreak Red"
-    },
-    {
-        "id": "gpt-5.6-cyber",
-        "codename": "Daybreak Red"
-    },
-    {
         "id": "gpt-5.6-luna",
-        "codename": "5.6 Luna"
-    },
-    {
-        "id": "gpt-5.6-luna-priority",
-        "codename": "5.6 Luna"
-    },
-    {
-        "id": "gpt-5.6-luna-wm",
-        "codename": "5.6 Luna"
+        "codenames": [
+            "5.6 Luna"
+        ],
+        "aliases": [
+            "gpt-5.6-luna-wm",
+            "gpt-5.6-luna-priority"
+        ]
     },
     {
         "id": "gpt-5.6-sol",
-        "codename": "5.6 Sol"
-    },
-    {
-        "id": "gpt-5.6-sol-priority",
-        "codename": "5.6 Sol"
-    },
-    {
-        "id": "gpt-5.6-sol-wm",
-        "codename": "5.6 Sol"
+        "codenames": [
+            "5.6 Sol"
+        ],
+        "aliases": [
+            "gpt-5.6-sol-wm",
+            "gpt-5.6-sol-priority",
+            "gpt-5-6",
+            "gpt-5-6-instant",
+            "gpt-5-6-thinking",
+            "gpt-5-6-auto-thinking",
+            "gpt-5-6-pro"
+        ]
     },
     {
         "id": "gpt-5.6-terra",
-        "codename": "5.6 Terra"
-    },
-    {
-        "id": "gpt-5.6-terra-priority",
-        "codename": "5.6 Terra"
-    },
-    {
-        "id": "gpt-5.6-terra-wm",
-        "codename": "5.6 Terra"
+        "codenames": [
+            "5.6 Terra"
+        ],
+        "aliases": [
+            "gpt-5.6-terra-wm",
+            "gpt-5.6-terra-priority"
+        ]
     },
     {
         "id": "gpt-6-astra",
-        "codename": "6 Astra"
-    },
-    {
-        "id": "gpt-6-astra-wm",
-        "codename": "6 Astra"
-    },
-    {
-        "id": "gpt-6-pro",
-        "codename": "6 Astra"
+        "codenames": [
+            "6 Astra"
+        ],
+        "aliases": [
+            "gpt-6-astra-wm",
+            "gpt-6-pro"
+        ]
     },
     {
         "id": "gpt-daybreak-5.6-sol",
-        "codename": "Daybreak Blue"
-    },
-    {
-        "id": "gpt-daybreak-blue-latest",
-        "codename": "Daybreak Blue"
+        "codenames": [
+            "Daybreak Blue"
+        ],
+        "aliases": [
+            "gpt-daybreak-blue-latest"
+        ]
     },
     {
         "id": "gpt-daybreak-red-5.6-sol",
-        "codename": "Daybreak Red"
-    },
-    {
-        "id": "gpt-daybreak-red-latest",
-        "codename": "Daybreak Red"
-    },
-    {
-        "id": "gpt-lifesciences",
-        "codename": "Rosalind"
+        "codenames": [
+            "Daybreak Red"
+        ],
+        "aliases": [
+            "gpt-5.4-cyber",
+            "gpt-5.5-cyber-preview",
+            "gpt-5.6-cyber",
+            "gpt-daybreak-red-latest"
+        ]
     },
     {
         "id": "gpt-rosalind-5.5",
-        "codename": "Rosalind"
-    },
-    {
-        "id": "gpt-rosalind-5.5-wm",
-        "codename": "Rosalind"
-    },
-    {
-        "id": "gpt-rosalind-discovery",
-        "codename": "Rosalind"
-    },
-    {
-        "id": "gpt-rosalind-discovery-wm",
-        "codename": "Rosalind"
+        "codenames": [
+            "Rosalind"
+        ],
+        "aliases": [
+            "gpt-lifesciences",
+            "gpt-rosalind-5.5-wm",
+            "gpt-rosalind-discovery",
+            "gpt-rosalind-discovery-wm"
+        ]
     }
 ]
