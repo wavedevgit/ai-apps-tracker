@@ -68,7 +68,17 @@ export default async function scrapeChatgpt() {
         }
 
         if (code.includes('gpt-')) {
-            for (const model of getModels(code)) models.set(model.id, model);
+            for (const model of getModels(code)) {
+                const existing = models.get(model.id);
+                if (existing) {
+                    existing.codenames = [
+                        ...new Set([...existing.codenames, ...model.codenames]),
+                    ];
+                    existing.aliases = [
+                        ...new Set([...existing.aliases, ...model.aliases]),
+                    ];
+                } else models.set(model.id, model);
+            }
         }
     }
 

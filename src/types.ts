@@ -79,7 +79,9 @@ interface ChatGptManifest {
 
 interface ChatGptModel {
     id: string;
-    codename: string;
+    codenames: string[];
+    aliases: string[];
+    codename?: string; // old models.json format
 }
 
 export type {

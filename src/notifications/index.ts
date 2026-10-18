@@ -124,14 +124,38 @@ export function diffChatGpt(
         }
     }
 
-    const ids = new Set(oldModels?.map((model) => model.id) ?? []);
-    const models = newerModels.filter((model) => !ids.has(model.id));
+    const oldById = new Map(oldModels?.map((model) => [model.id, model]));
+    const oldIds = new Set(oldById.keys());
+    const modelChanges: string[] = [];
+    for (const model of newerModels) {
+        const oldModel = oldById.get(model.id);
+        if (!oldModel) {
+            modelChanges.push(
+                `+ **\`${model.id}\`** (${model.codenames.map((codename) => `\`${codename}\``).join(', ')})${model.aliases.length ? `\n  Aliases: ${model.aliases.map((alias) => `\`${alias}\``).join(', ')}` : ''}`,
+            );
+            continue;
+        }
+
+        const oldCodenames = new Set(
+            oldModel.codenames ??
+                (oldModel.codename ? [oldModel.codename] : []),
+        );
+        const codenames = model.codenames.filter(
+            (codename) => !oldCodenames.has(codename),
+        );
+        const oldAliases = new Set(oldModel.aliases ?? []);
+        const aliases = model.aliases.filter(
+            (alias) => !oldAliases.has(alias) && !oldIds.has(alias),
+        );
+        if (codenames.length || aliases.length)
+            modelChanges.push(
+                `~ **\`${model.id}\`**${codenames.length ? `\n  + Codenames: ${codenames.map((codename) => `\`${codename}\``).join(', ')}` : ''}${aliases.length ? `\n  + Aliases: ${aliases.map((alias) => `\`${alias}\``).join(', ')}` : ''}`,
+            );
+    }
     pushList(
         modelEmbeds,
-        'New ChatGPT models',
-        models.map(
-            (model) => `- **\`${model.id}\`** (\`${model.codename}\`)`,
-        ),
+        'ChatGPT model diff',
+        modelChanges,
         timestamp,
     );
 }

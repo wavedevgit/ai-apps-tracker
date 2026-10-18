@@ -5,9 +5,15 @@ import { redactSecrets } from './index.js';
 
 assert.deepEqual(
     getModels(
-        'import "./chunk.js"; const models = new Map([["gpt-6.1-sol", copy.sol61], ["other", copy.nope]]);',
+        'import "./chunk.js"; const models = new Map([["gpt-6.1-sol", copy.sol61], ["gpt-6.1-sol-wm", copy.sol61], ["gpt-6.1-sol", copy.sol], ["other", copy.nope]]);',
     ),
-    [{ id: 'gpt-6.1-sol', codename: 'sol61' }],
+    [
+        {
+            id: 'gpt-6.1-sol',
+            codenames: ['sol61', 'sol'],
+            aliases: ['gpt-6.1-sol-wm'],
+        },
+    ],
 );
 
 assert.deepEqual(
@@ -15,8 +21,11 @@ assert.deepEqual(
         'const models = [{ slug: `gpt-5.6-sol`, aliases: [`gpt-5.6-sol-fast`], displayName: `5.6 Sol` }];',
     ),
     [
-        { id: 'gpt-5.6-sol', codename: '5.6 Sol' },
-        { id: 'gpt-5.6-sol-fast', codename: '5.6 Sol' },
+        {
+            id: 'gpt-5.6-sol',
+            codenames: ['5.6 Sol'],
+            aliases: ['gpt-5.6-sol-fast'],
+        },
     ],
 );
 
