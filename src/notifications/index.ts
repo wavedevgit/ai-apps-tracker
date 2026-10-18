@@ -95,43 +95,45 @@ export function diffChatGpt(
 ) {
     const timestamp = new Date().toISOString();
 
-    if (old && old.version !== newer.version) {
+    if (old?.version !== newer.version) {
         featureEmbeds.push({
             color: 0x10a37f,
             title: 'New ChatGPT build',
-            description: `**\`${old.version}\`** to **\`${newer.version}\`**\n[View changes/diff](https://github.com/wavedevgit/ai-apps-tracker/tree/main/data/chatgpt)`,
+            description: old
+                ? `**\`${old.version}\`** to **\`${newer.version}\`**\n[View changes/diff](https://github.com/wavedevgit/ai-apps-tracker/tree/main/data/chatgpt)`
+                : `Initial build: **\`${newer.version}\`**`,
             timestamp,
         });
 
-        const addedRoutes = Object.keys(newer.routes).filter(
-            (route) => !old.routes[route],
-        );
-        const removedRoutes = Object.keys(old.routes).filter(
-            (route) => !newer.routes[route],
-        );
-        pushList(
-            featureEmbeds,
-            'ChatGPT route diff',
-            [
-                ...addedRoutes.map((route) => `+ \`${route}\``),
-                ...removedRoutes.map((route) => `- \`${route}\``),
-            ],
-            timestamp,
-        );
+        if (old) {
+            const addedRoutes = Object.keys(newer.routes).filter(
+                (route) => !old.routes[route],
+            );
+            const removedRoutes = Object.keys(old.routes).filter(
+                (route) => !newer.routes[route],
+            );
+            pushList(
+                featureEmbeds,
+                'ChatGPT route diff',
+                [
+                    ...addedRoutes.map((route) => `+ \`${route}\``),
+                    ...removedRoutes.map((route) => `- \`${route}\``),
+                ],
+                timestamp,
+            );
+        }
     }
 
-    if (oldModels) {
-        const ids = new Set(oldModels.map((model) => model.id));
-        const models = newerModels.filter((model) => !ids.has(model.id));
-        pushList(
-            modelEmbeds,
-            'New ChatGPT models',
-            models.map(
-                (model) => `- **\`${model.id}\`** (\`${model.codename}\`)`,
-            ),
-            timestamp,
-        );
-    }
+    const ids = new Set(oldModels?.map((model) => model.id) ?? []);
+    const models = newerModels.filter((model) => !ids.has(model.id));
+    pushList(
+        modelEmbeds,
+        'New ChatGPT models',
+        models.map(
+            (model) => `- **\`${model.id}\`** (\`${model.codename}\`)`,
+        ),
+        timestamp,
+    );
 }
 
 export async function sendNotifications() {
@@ -140,6 +142,11 @@ export async function sendNotifications() {
         const message: Message = { content: '', embeds: queue };
         return sendMessage({ message, env });
     };
+
+    if (!embeds.length && !modelEmbeds.length && !featureEmbeds.length) {
+        console.log('No notification changes detected');
+        return;
+    }
 
     await Promise.all([
         send(embeds),

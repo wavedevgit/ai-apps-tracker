@@ -47,6 +47,7 @@ export default async function sendMessage(
                 });
                 if (!response.ok)
                     throw new Error(`Discord returned ${response.status}`);
+                console.log(`Sent Discord notification via ${env}`);
             } catch (err) {
                 console.log(
                     'failed to send message to webhook',
