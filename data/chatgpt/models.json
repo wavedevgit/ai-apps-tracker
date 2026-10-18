@@ -1,0 +1,118 @@
+[
+    {
+        "id": "gpt-5-6",
+        "codename": "5.6 Sol"
+    },
+    {
+        "id": "gpt-5-6-auto-thinking",
+        "codename": "5.6 Sol"
+    },
+    {
+        "id": "gpt-5-6-instant",
+        "codename": "5.6 Sol"
+    },
+    {
+        "id": "gpt-5-6-pro",
+        "codename": "5.6 Sol"
+    },
+    {
+        "id": "gpt-5-6-thinking",
+        "codename": "5.6 Sol"
+    },
+    {
+        "id": "gpt-5.4-cyber",
+        "codename": "Daybreak Red"
+    },
+    {
+        "id": "gpt-5.5-cyber-preview",
+        "codename": "Daybreak Red"
+    },
+    {
+        "id": "gpt-5.6-cyber",
+        "codename": "Daybreak Red"
+    },
+    {
+        "id": "gpt-5.6-luna",
+        "codename": "5.6 Luna"
+    },
+    {
+        "id": "gpt-5.6-luna-priority",
+        "codename": "5.6 Luna"
+    },
+    {
+        "id": "gpt-5.6-luna-wm",
+        "codename": "5.6 Luna"
+    },
+    {
+        "id": "gpt-5.6-sol",
+        "codename": "5.6 Sol"
+    },
+    {
+        "id": "gpt-5.6-sol-priority",
+        "codename": "5.6 Sol"
+    },
+    {
+        "id": "gpt-5.6-sol-wm",
+        "codename": "5.6 Sol"
+    },
+    {
+        "id": "gpt-5.6-terra",
+        "codename": "5.6 Terra"
+    },
+    {
+        "id": "gpt-5.6-terra-priority",
+        "codename": "5.6 Terra"
+    },
+    {
+        "id": "gpt-5.6-terra-wm",
+        "codename": "5.6 Terra"
+    },
+    {
+        "id": "gpt-6-astra",
+        "codename": "6 Astra"
+    },
+    {
+        "id": "gpt-6-astra-wm",
+        "codename": "6 Astra"
+    },
+    {
+        "id": "gpt-6-pro",
+        "codename": "6 Astra"
+    },
+    {
+        "id": "gpt-daybreak-5.6-sol",
+        "codename": "Daybreak Blue"
+    },
+    {
+        "id": "gpt-daybreak-blue-latest",
+        "codename": "Daybreak Blue"
+    },
+    {
+        "id": "gpt-daybreak-red-5.6-sol",
+        "codename": "Daybreak Red"
+    },
+    {
+        "id": "gpt-daybreak-red-latest",
+        "codename": "Daybreak Red"
+    },
+    {
+        "id": "gpt-lifesciences",
+        "codename": "Rosalind"
+    },
+    {
+        "id": "gpt-rosalind-5.5",
+        "codename": "Rosalind"
+    },
+    {
+        "id": "gpt-rosalind-5.5-wm",
+        "codename": "Rosalind"
+    },
+    {
+        "id": "gpt-rosalind-discovery",
+        "codename": "Rosalind"
+    },
+    {
+        "id": "gpt-rosalind-discovery-wm",
+        "codename": "Rosalind"
+    }
+]
