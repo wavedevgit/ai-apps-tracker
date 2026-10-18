@@ -1,0 +1,168 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as n,
+    Btt as r,
+    Htt as i,
+    JV as a,
+    Nrt as o,
+    Prt as s,
+    k1 as c
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as l,
+    At as u,
+    Bn as d,
+    Nn as f,
+    Rn as p,
+    Ut as m,
+    Vn as h,
+    wn as g
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+
+function _(e, t) {
+    return `${T[t]}${encodeURIComponent(e)}?reason=done`
+}
+
+function v(e) {
+    return `yougov-survey-login-attempted:${e}`
+}
+
+function y() {
+    return new Promise(b)
+}
+
+function b(e) {
+    window.setTimeout(e, E)
+}
+
+function x() {
+    return r.flushStructuredEvents(D)
+}
+var S, C, w, T, E, D, O, k = e((() => {
+    l(), S = g(), c(), o(), i(), C = t(h()), p(), a(), w = d(), T = {
+        1: `https://isurvey-us.yougov.com/resume/complete/`,
+        2: `https://start.yougov.com/resume/complete/`
+    }, E = 1e4, D = 2e4, O = m(function() {
+        "use forget";
+        let e = (0, S.c)(28),
+            {
+                visa: t,
+                rtn: i,
+                hasAuthAttemptedFallback: a
+            } = u(),
+            o = (0, C.useRef)(!1),
+            c = (0, C.useRef)(!1),
+            [l, d] = (0, C.useState)(!1),
+            p;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (p = s(), e[0] = p) : p = e[0];
+        let m = p,
+            h = window.sessionStorage.getItem(v(t)) != null || a,
+            g;
+        e[1] !== i || e[2] !== t ? (g = new URLSearchParams({
+            visa: t,
+            rtn: String(i),
+            authAttempted: `1`
+        }).toString(), e[1] = i, e[2] = t, e[3] = g) : g = e[3];
+        let b = `/yglogin?${g}`,
+            T;
+        e[4] !== i || e[5] !== t ? (T = _(t, i), e[4] = i, e[5] = t, e[6] = T) : T = e[6];
+        let E = T,
+            D = m && h,
+            O;
+        e[7] !== b || e[8] !== a || e[9] !== t ? (O = () => {
+            let e = v(t),
+                i = window.sessionStorage.getItem(e) != null || a;
+            if (!m || !i) {
+                if (o.current) return;
+                window.sessionStorage.setItem(e, `true`), o.current = !0, n({
+                    callbackUrl: b,
+                    skipLoginModal: !0
+                });
+                return
+            }
+            let s = x,
+                l = y;
+            c.current || (r.logStructuredEvent(`ChatgptYougovSurveyLogin`, {
+                visa: t
+            }), window.sessionStorage.removeItem(e), c.current = !0, Promise.all([s(), l()]).finally(() => {
+                d(!0)
+            }));
+            let u = () => {
+                    document.visibilityState === `hidden` && s()
+                },
+                f = () => {
+                    s()
+                },
+                p = () => {
+                    s()
+                };
+            return document.addEventListener(`visibilitychange`, u), window.addEventListener(`pagehide`, f), window.addEventListener(`beforeunload`, p, {
+                once: !0
+            }), () => {
+                document.removeEventListener(`visibilitychange`, u), window.removeEventListener(`pagehide`, f), window.removeEventListener(`beforeunload`, p)
+            }
+        }, e[7] = b, e[8] = a, e[9] = t, e[10] = O) : O = e[10];
+        let k;
+        if (e[11] !== b || e[12] !== a || e[13] !== E || e[14] !== t ? (k = [b, a, m, E, t], e[11] = b, e[12] = a, e[13] = E, e[14] = t, e[15] = k) : k = e[15], (0, C.useEffect)(O, k), !D) return null;
+        let A = !l,
+            j;
+        e[16] !== l || e[17] !== E ? (j = l ? (0, w.jsx)(`button`, {
+            type: `button`,
+            className: `bg-token-text-primary text-token-bg-primary hover:bg-token-text-secondary rounded-full px-5 py-2.5 text-sm font-medium transition-colors`,
+            onClick: () => {
+                window.location.assign(E)
+            },
+            children: (0, w.jsx)(f, {
+                id: `roPGjs`,
+                defaultMessage: `Return to YouGov`
+            })
+        }) : (0, w.jsx)(`div`, {
+            className: `border-token-border-default border-t-token-text-primary h-8 w-8 animate-spin rounded-full border-2`,
+            "aria-hidden": !0
+        }), e[16] = l, e[17] = E, e[18] = j) : j = e[18];
+        let M;
+        e[19] === l ? M = e[20] : (M = (0, w.jsx)(`p`, {
+            className: `text-base font-medium`,
+            children: (0, w.jsx)(f, {
+                id: `oHZSjT`,
+                defaultMessage: `{canReturnToSurvey, select, true {You're signed in} other {You're signed in. Saving your survey login...}}`,
+                values: {
+                    canReturnToSurvey: l
+                }
+            })
+        }), e[19] = l, e[20] = M);
+        let N;
+        e[21] === l ? N = e[22] : (N = (0, w.jsx)(`p`, {
+            className: `text-token-text-tertiary text-sm`,
+            children: (0, w.jsx)(f, {
+                id: `uMiOtt`,
+                defaultMessage: `{canReturnToSurvey, select, true {Tap the button to go back to your survey.} other {This may take a few seconds. Please keep this page open.}}`,
+                values: {
+                    canReturnToSurvey: l
+                }
+            })
+        }), e[21] = l, e[22] = N);
+        let P;
+        return e[23] !== A || e[24] !== j || e[25] !== M || e[26] !== N ? (P = (0, w.jsx)(`div`, {
+            className: `bg-token-bg-primary text-token-text-primary flex min-h-screen items-center justify-center px-6`,
+            children: (0, w.jsxs)(`div`, {
+                className: `flex max-w-sm flex-col items-center gap-3 text-center`,
+                role: `status`,
+                "aria-live": `polite`,
+                "aria-busy": A,
+                children: [j, M, N]
+            })
+        }), e[23] = A, e[24] = j, e[25] = M, e[26] = N, e[27] = P) : P = e[27], P
+    })
+}));
+e((() => {
+    k()
+}))();
+export {
+    O as
+    default
+};
+//# sourceMappingURL=yglogin-kyc45i37.js.map

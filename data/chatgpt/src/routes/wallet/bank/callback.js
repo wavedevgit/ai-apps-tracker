@@ -1,0 +1,111 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $et as n,
+    Qet as r,
+    Zet as i
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as a,
+    Bn as o,
+    Nn as s,
+    Rn as c,
+    Ut as l,
+    Vn as u,
+    wn as d
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    JCn as f,
+    YCn as p,
+    eAt as m,
+    nAt as h,
+    tAt as g
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    r as _,
+    t as v
+} from "./ed7002b4-d89e0f6uhka4yjsm.js";
+var y, b, x, S = e((() => {
+    y = d(), _(), c(), b = o(), x = e => {
+        "use forget";
+        let t = (0, y.c)(2),
+            {
+                status: n
+            } = e,
+            r;
+        return t[0] === n ? r = t[1] : (r = (0, b.jsx)(v, {
+            children: (0, b.jsx)(`div`, {
+                className: `flex min-h-full items-center justify-center p-6 text-center`,
+                children: (0, b.jsx)(`p`, {
+                    role: `status`,
+                    children: n === `submitting` ? (0, b.jsx)(s, {
+                        id: `chatgpt.wallet.bank_callback.status.submitting`,
+                        defaultMessage: `Recording the bank result…`
+                    }) : n === `approved` ? (0, b.jsx)(s, {
+                        id: `chatgpt.wallet.bank_callback.status.approval_received`,
+                        defaultMessage: `Bank approval received. Return to Wallet to check card enrollment.`
+                    }) : n === `pending` ? (0, b.jsx)(s, {
+                        id: `chatgpt.wallet.bank_callback.status.pending`,
+                        defaultMessage: `We couldn’t confirm the result. Return to Wallet to check its status.`
+                    }) : (0, b.jsx)(s, {
+                        id: `chatgpt.wallet.bank_callback.status.failed`,
+                        defaultMessage: `The bank result could not be recorded. Return to Wallet to try again.`
+                    })
+                })
+            })
+        }), t[0] = n, t[1] = r), r
+    }
+}));
+async function C(e) {
+    if (e == null) return `failed`;
+    let t;
+    try {
+        let n = await new g(`sheep-gateway`, f().baseUrl, ``, `application/json`, `application/json`, {
+            parseJson: e => e.status === 200 ? e.json() : Promise.resolve(void 0)
+        }).post(`/wallet/bank/callback`, {
+            body: e
+        }, {
+            credentials: `omit`,
+            headers: {
+                "x-openai-use-sheep": `1`
+            },
+            signal: AbortSignal.timeout(15e3),
+            cache: `no-store`,
+            referrerPolicy: `no-referrer`
+        });
+        if (n.status === 200) return n.data.status;
+        t = n.status
+    } catch (e) {
+        e instanceof m && (t = e.status)
+    }
+    return t === 400 || t === 401 || t === 403 ? `failed` : `pending`
+}
+var w = e((() => {
+        p(), h()
+    })),
+    T, E, D, O, k, A = e((() => {
+        a(), T = d(), r(), S(), w(), E = t(u()), D = o(), O = () => {
+            "use forget";
+            let e = (0, T.c)(4),
+                t = (0, E.useRef)(!1),
+                [r, a] = (0, E.useState)(`submitting`),
+                o, s;
+            e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = () => {
+                t.current || (t.current = !0, n(), C(i()).then(a))
+            }, s = [], e[0] = o, e[1] = s) : (o = e[0], s = e[1]), (0, E.useEffect)(o, s);
+            let c;
+            return e[2] === r ? c = e[3] : (c = (0, D.jsx)(x, {
+                status: r
+            }), e[2] = r, e[3] = c), c
+        }, k = l(O)
+    }));
+e((() => {
+    A()
+}))();
+export {
+    k as
+    default
+};
+//# sourceMappingURL=wallet.bank.callback-gmxnjrix.js.map

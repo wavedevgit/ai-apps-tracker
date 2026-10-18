@@ -1,0 +1,31 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $ as t,
+    Bn as n,
+    Ut as r
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    n as i,
+    t as a
+} from "./8c6976e5-ibz7fcap50r267b6.js";
+import {
+    n as o,
+    t as s
+} from "./16d1957c-fq8hpy20z4lorrqg.js";
+var c, l, u = e((() => {
+    t(), o(), a(), c = n(), l = r(function() {
+        return (0, c.jsx)(s, {
+            ...i()
+        })
+    })
+}));
+e((() => {
+    u()
+}))();
+export {
+    l as
+    default
+};
+//# sourceMappingURL=admin.groups._index-m1p6ynln.js.map

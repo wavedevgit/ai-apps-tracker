@@ -1,0 +1,58 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    LV as n,
+    zV as r
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    Bn as i,
+    Vn as a,
+    wn as o
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+
+function s(e) {
+    "use forget";
+    let t = (0, l.c)(8),
+        {
+            children: n,
+            slug: r,
+            effectiveLocale: i,
+            layout: a
+        } = e,
+        [o, s] = (0, u.useState)(0),
+        c;
+    t[0] !== i || t[1] !== a || t[2] !== r || t[3] !== o ? (c = {
+        effectiveLocale: i,
+        layout: a,
+        slug: r,
+        theme: o,
+        setTheme: s
+    }, t[0] = i, t[1] = a, t[2] = r, t[3] = o, t[4] = c) : c = t[4];
+    let p;
+    return t[5] !== n || t[6] !== c ? (p = (0, d.jsx)(f.Provider, {
+        value: c,
+        children: n
+    }), t[5] = n, t[6] = c, t[7] = p) : p = t[7], p
+}
+
+function c() {
+    "use forget";
+    let e = (0, u.useContext)(f);
+    if (e == null) throw Error(`useContentfulPageContext hook must be used within ContentfulPageProvider`);
+    return e
+}
+var l, u, d, f, p = e((() => {
+    l = o(), r(), u = t(a()), d = i(), f = (0, u.createContext)({
+        effectiveLocale: n,
+        layout: void 0,
+        slug: `/`,
+        theme: 0,
+        setTheme: () => {}
+    })
+}));
+export {
+    p as n, c as r, s as t
+};
+//# sourceMappingURL=bb47c0a1-d1hvam8myjas7ee8.js.map

@@ -1,0 +1,569 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $D as n,
+    A3 as r,
+    AG as i,
+    B6 as a,
+    BW as o,
+    C1 as s,
+    DG as c,
+    Dit as l,
+    HW as u,
+    I0 as d,
+    JD as ee,
+    K0 as f,
+    KW as p,
+    O3 as m,
+    QD as h,
+    S3 as te,
+    UW as g,
+    XD as ne,
+    YD as _,
+    ZD as v,
+    aO as y,
+    bst as b,
+    cO as re,
+    eO as x,
+    fO as S,
+    i5 as ie,
+    iO as C,
+    kit as w,
+    lO as T,
+    oO as E,
+    pnt as D,
+    qD as ae,
+    qW as oe,
+    sO as se,
+    tO as ce,
+    u1 as le,
+    uO as ue,
+    wst as O,
+    x1 as de,
+    x3 as fe,
+    y3 as pe,
+    ynt as k
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    Bn as me,
+    Ln as he,
+    Nn as ge,
+    Rn as A,
+    Vn as _e,
+    wn as j,
+    zn as ve
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    iyn as ye,
+    ryn as M
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    n as be,
+    r as N
+} from "./5f4d7fa0-h884rob3aq4wlepb.js";
+import {
+    n as xe,
+    t as Se
+} from "./673c0d9b-mgw9cf750vpkh02r.js";
+import {
+    a as P,
+    d as Ce,
+    i as F,
+    n as I,
+    t as we,
+    u as Te
+} from "./54aa3ef4-f4qwj20w1of2rz0d.js";
+import {
+    i as Ee,
+    r as De
+} from "./5568a160-lq4fhhrmhf7wjeln.js";
+import {
+    s as Oe,
+    t as ke
+} from "./b90db9d2-nqn5x1xpx8jm45ix.js";
+import {
+    n as Ae,
+    t as je
+} from "./191ef300-omyhxkslvlmq58bo.js";
+
+function Me(e) {
+    "use forget";
+    let t = (0, L.c)(39),
+        {
+            workspaceId: n,
+            maxTtlSeconds: r,
+            disabled: i,
+            triggerVariant: a
+        } = e,
+        o = ve(),
+        s;
+    t[0] === n ? s = t[1] : (s = {
+        workspaceId: n
+    }, t[0] = n, t[1] = s);
+    let c = Ae(s),
+        l = c.isPending ? c.variables?.maxTtlSeconds : r,
+        u;
+    t[2] === l ? u = t[3] : (u = Ne(l), t[2] = l, t[3] = u);
+    let d = u,
+        [ee, f] = (0, R.useState)(null),
+        p = ee ?? d,
+        m = l == null ? `` : String(Math.floor(l / F)),
+        [h, te] = (0, R.useState)(m),
+        g, ne;
+    t[4] === m ? (g = t[5], ne = t[6]) : (g = () => {
+        te(m), f(null)
+    }, ne = [m], t[4] = m, t[5] = g, t[6] = ne), (0, R.useEffect)(g, ne);
+    let _;
+    t[7] !== c || t[8] !== h || t[9] !== m ? (_ = () => {
+        let e = Number.parseInt(h, 10);
+        if (!Number.isSafeInteger(e) || e < 1) {
+            te(m), f(null);
+            return
+        }
+        c.mutate({
+            maxTtlSeconds: e * F
+        })
+    }, t[7] = c, t[8] = h, t[9] = m, t[10] = _) : _ = t[10];
+    let v = _,
+        y;
+    t[11] === o ? y = t[12] : (y = P({
+        intl: o,
+        maxTtlSeconds: null,
+        customLabel: o.formatMessage(B.accessTokenMaxTtlCustom),
+        noneLabel: o.formatMessage(B.accessTokenMaxTtlNoLimit),
+        showPresetDates: !1
+    }), t[11] = o, t[12] = y);
+    let b = y,
+        re = a === "default" ? `min-w-44` : void 0,
+        x;
+    t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, z.jsx)(`span`, {
+        id: `access-token-max-ttl-label`,
+        className: `sr-only`,
+        children: (0, z.jsx)(ge, {
+            ...B.accessTokenMaxTtlLabel
+        })
+    }), t[13] = x) : x = t[13];
+    let S;
+    t[14] === o ? S = t[15] : (S = o.formatMessage(B.accessTokenMaxTtlNoLimit), t[14] = o, t[15] = S);
+    let ie = i || c.isPending,
+        C;
+    t[16] !== c || t[17] !== m ? (C = e => {
+        if (e === `custom`) {
+            f(`custom`), te(m);
+            return
+        }
+        if (e === `none`) {
+            f(null), c.mutate({
+                maxTtlSeconds: null
+            });
+            return
+        }
+        Ce(e) && (f(null), c.mutate({
+            maxTtlSeconds: I[e] * F
+        }))
+    }, t[16] = c, t[17] = m, t[18] = C) : C = t[18];
+    let w;
+    t[19] !== b || t[20] !== p || t[21] !== ie || t[22] !== C || t[23] !== S || t[24] !== a ? (w = (0, z.jsx)(we, {
+        labelId: `access-token-max-ttl-label`,
+        triggerId: `access-token-max-ttl`,
+        value: p,
+        options: b,
+        placeholder: S,
+        triggerVariant: a,
+        disabled: ie,
+        onChange: C
+    }), t[19] = b, t[20] = p, t[21] = ie, t[22] = C, t[23] = S, t[24] = a, t[25] = w) : w = t[25];
+    let T;
+    t[26] !== w || t[27] !== re ? (T = (0, z.jsxs)(`div`, {
+        className: re,
+        children: [x, w]
+    }), t[26] = w, t[27] = re, t[28] = T) : T = t[28];
+    let E;
+    t[29] !== c.isPending || t[30] !== v || t[31] !== h || t[32] !== i || t[33] !== o || t[34] !== p ? (E = p === `custom` && (0, z.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [(0, z.jsx)(`input`, {
+            "aria-label": o.formatMessage(B.accessTokenMaxTtlCustomInputLabel),
+            name: `access-token-max-ttl-custom-days`,
+            type: `number`,
+            inputMode: `numeric`,
+            min: 1,
+            value: h,
+            disabled: i || c.isPending,
+            onChange: e => te(e.target.value),
+            onBlur: v,
+            onKeyDown: e => {
+                e.key === `Enter` && (e.preventDefault(), v())
+            },
+            className: `border-token-border-heavy bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary h-10 w-20 rounded-xl border px-3 text-end text-sm focus:ring-1 focus:outline-hidden`
+        }), (0, z.jsx)(`span`, {
+            className: `text-token-text-secondary text-sm`,
+            children: (0, z.jsx)(ge, {
+                ...B.accessTokenMaxTtlCustomInputSuffix
+            })
+        })]
+    }), t[29] = c.isPending, t[30] = v, t[31] = h, t[32] = i, t[33] = o, t[34] = p, t[35] = E) : E = t[35];
+    let D;
+    return t[36] !== T || t[37] !== E ? (D = (0, z.jsxs)(`div`, {
+        className: `flex items-center justify-end gap-2`,
+        children: [T, E]
+    }), t[36] = T, t[37] = E, t[38] = D) : D = t[38], D
+}
+
+function Ne(e) {
+    return e == null ? `none` : e === I[`7d`] * 86400 ? `7d` : e === I[`30d`] * 86400 ? `30d` : e === I[`60d`] * 86400 ? `60d` : e === I[`90d`] * 86400 ? `90d` : `custom`
+}
+var L, R, z, B, V, Pe, H, Fe, U, Ie, W, Le = e((() => {
+    L = j(), O(), Te(), Oe(), je(), pe(), k(), R = t(_e()), A(), z = me(), B = he({
+        codexRemoteControlTitle: {
+            id: `chatgpt.workspace_settings.codex.local.remote_control.title`,
+            defaultMessage: `Allow members to discover and control devices remotely`
+        },
+        codexRemoteControlDescription: {
+            id: `chatgpt.workspace_settings.codex.local.remote_control.description`,
+            defaultMessage: `Manage whether members can control their local Codex app environments from authorized devices such as mobile phones.`
+        },
+        accessTokenMaxTtlNoLimit: {
+            id: `chatgpt.workspace_settings.codex.local.access_token_max_ttl.option.no_limit`,
+            defaultMessage: `No limit`
+        },
+        accessTokenMaxTtlLabel: {
+            id: `chatgpt.workspace_settings.codex.local.access_token_max_ttl.label`,
+            defaultMessage: `Access token expiration limit`
+        },
+        accessTokenMaxTtlCustom: {
+            id: `chatgpt.workspace_settings.codex.local.access_token_max_ttl.option.custom`,
+            defaultMessage: `Custom duration`
+        },
+        accessTokenMaxTtlCustomInputLabel: {
+            id: `chatgpt.workspace_settings.codex.local.access_token_max_ttl.custom_input.label`,
+            defaultMessage: `Custom access token expiration limit in days`
+        },
+        accessTokenMaxTtlCustomInputSuffix: {
+            id: `chatgpt.workspace_settings.codex.local.access_token_max_ttl.custom_input.suffix`,
+            defaultMessage: `days`
+        }
+    }), V = `chatgpt.workspace.feature.codex-remote-control.access`, Pe = `codex_remote_control`, H = `personal_access_tokens`, Fe = `access_token_max_ttl`, U = e => ((e?.isEnterprisey?.() ?? !1) || r(e?.planType)) && D(`1597280620`), Ie = ({
+        account: e,
+        isRbacEnabled: t
+    }) => U(e) ? t ? [{
+        rbac: !0,
+        title: B.codexRemoteControlTitle,
+        description: B.codexRemoteControlDescription,
+        permissionName: V
+    }] : [{
+        rbac: !1,
+        title: B.codexRemoteControlTitle,
+        description: B.codexRemoteControlDescription,
+        settingName: Pe,
+        hipaaMetadata: ke
+    }] : [], W = ({
+        settingName: e,
+        workspaceId: t,
+        data: n,
+        disabled: r,
+        accessTokenMaxTtlTriggerVariant: i = `default`,
+        renderDisabledToggleAsOff: a,
+        ariaLabel: o,
+        BasicSettingToggle: s
+    }) => e === `allow_computer_history` ? (0, z.jsx)(s, {
+        workspaceId: t,
+        enabled: n.beta_settings[b.ALLOW_COMPUTER_HISTORY] ?? !1,
+        feature: b.ALLOW_COMPUTER_HISTORY,
+        disabled: r,
+        renderDisabledToggleAsOff: a,
+        ariaLabel: o
+    }) : e === Pe ? (0, z.jsx)(s, {
+        workspaceId: t,
+        enabled: n.beta_settings[b.CODEX_REMOTE_CONTROL],
+        feature: b.CODEX_REMOTE_CONTROL,
+        disabled: r,
+        renderDisabledToggleAsOff: a,
+        ariaLabel: o
+    }) : e === H ? (0, z.jsx)(s, {
+        workspaceId: t,
+        enabled: n.beta_settings[b.PERSONAL_ACCESS_TOKENS] ?? !1,
+        feature: b.PERSONAL_ACCESS_TOKENS,
+        disabled: r,
+        renderDisabledToggleAsOff: a,
+        ariaLabel: o
+    }) : e === Fe ? (0, z.jsx)(Me, {
+        workspaceId: t,
+        maxTtlSeconds: n.access_token_max_ttl ?? null,
+        disabled: r,
+        triggerVariant: i
+    }) : null
+}));
+
+function Re({
+    candidateSource: e,
+    candidateValue: t,
+    comparison: n,
+    legacySource: r,
+    legacyValue: i,
+    planType: a,
+    workspaceId: o
+}) {
+    let s = i === t,
+        c = o ?? null,
+        u = a ?? null,
+        d = JSON.stringify({
+            candidateSource: e,
+            candidateValue: t,
+            comparison: n,
+            legacySource: r,
+            legacyValue: i,
+            normalizedPlanType: u,
+            normalizedWorkspaceId: c
+        });
+    G.has(d) || (G.add(d), l.addAction(s ? `feature_shadow_comparison_match` : `feature_shadow_comparison_mismatch`, {
+        candidate_source: e,
+        candidate_value: t,
+        comparison: n,
+        legacy_source: r,
+        legacy_value: i,
+        matched: s,
+        plan_type: u,
+        workspace_id: c
+    }))
+}
+var G, ze = e((() => {
+    w(), G = new Set
+}));
+
+function Be() {
+    return N({
+        purpose: `workspace_settings`
+    }) === !0
+}
+var Ve, He, Ue, We, Ge, Ke, qe, Je, Ye, K, Xe = e((() => {
+    Ve = j(), Se(), ue(), Ee(), o(), M(), c(), a(), le(), f(), ze(), pe(), k(), be(), He = t(_e()), Ue = `2626466824`, We = `2865007894`, Ge = `3165887977`, Ke = `224248639`, qe = `244461079`, Je = `632526812`, Ye = `1625797156`, K = e => {
+        "use forget";
+        let t = (0, Ve.c)(97),
+            a = de(e),
+            o = s(),
+            c = a ?? o,
+            l = e ?? o?.id,
+            {
+                data: f
+            } = i(l),
+            b;
+        t[0] !== o?.id || t[1] !== l || t[2] !== e || t[3] !== f ? (b = f?.workspace_id === l && f != null ? f.file_library_auto_reference_admin_control_retired ?? !1 : e == null || o?.id === e ? D(`2225607335`) : void 0, t[0] = o?.id, t[1] = l, t[2] = e, t[3] = f, t[4] = b) : b = t[4];
+        let w = b,
+            le = ie(ye),
+            ue = c?.residencyRegion === `no_constraint`,
+            O;
+        t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (O = D(`614413305`), t[5] = O) : O = t[5];
+        let pe = O,
+            k;
+        t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (k = D(`417039829`), t[6] = k) : k = t[6];
+        let me = k,
+            he;
+        t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (he = ne(), t[7] = he) : he = t[7];
+        let ge = he,
+            A;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (A = n(), t[8] = A) : A = t[8];
+        let _e = A,
+            j;
+        t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (j = _(), t[9] = j) : j = t[9];
+        let ve = j,
+            M;
+        t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (M = ee(), t[10] = M) : M = t[10];
+        let be = M,
+            N;
+        t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (N = C(), t[11] = N) : N = t[11];
+        let Se = N,
+            P;
+        t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (P = Se && D(`708977443`), t[12] = P) : P = t[12];
+        let Ce = P,
+            F = ie(Be),
+            I;
+        t[13] === c ? I = t[14] : (I = c?.hasThinkingMiniRouterControls() ?? !1, t[13] = c, t[14] = I);
+        let we = I,
+            Te;
+        t[15] === c ? Te = t[16] : (Te = c?.isEdu?.() ?? fe(c?.planType), t[15] = c, t[16] = Te);
+        let Ee = Te,
+            Oe;
+        t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (Oe = ae(), t[17] = Oe) : Oe = t[17];
+        let ke = Oe,
+            {
+                hasAccess: Ae,
+                isWorkspaceAllowed: je
+            } = xe(),
+            Me = Ae === !0 || je,
+            Ne = c?.isFedrampCompliantWorkspace ?? !1,
+            L;
+        t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (L = y(), t[18] = L) : L = t[18];
+        let R = L,
+            z;
+        t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (z = x(), t[19] = z) : z = t[19];
+        let B = z,
+            V;
+        t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (V = ce(), t[20] = V) : V = t[20];
+        let Pe = V,
+            H;
+        t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (H = re(), t[21] = H) : H = t[21];
+        let Fe = H,
+            U;
+        t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (U = S(), t[22] = U) : U = t[22];
+        let Ie = U,
+            W;
+        t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (W = E(), t[23] = W) : W = t[23];
+        let Le = W,
+            G;
+        t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (G = se(), t[24] = G) : G = t[24];
+        let ze = G,
+            K;
+        t[25] === Symbol.for(`react.memo_cache_sentinel`) ? (K = T(), t[25] = K) : K = t[25];
+        let Xe = K,
+            Ze;
+        t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (Ze = D(`461775725`), t[26] = Ze) : Ze = t[26];
+        let Qe = Ze,
+            $e;
+        t[27] === Symbol.for(`react.memo_cache_sentinel`) ? ($e = h(), t[27] = $e) : $e = t[27];
+        let et = $e,
+            tt;
+        t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (tt = v(), t[28] = tt) : tt = t[28];
+        let nt = tt,
+            rt;
+        t[29] === Symbol.for(`react.memo_cache_sentinel`) ? (rt = D(`3710572384`), t[29] = rt) : rt = t[29];
+        let it = rt,
+            at;
+        t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (at = u(), t[30] = at) : at = t[30];
+        let ot = at,
+            st = c?.planType,
+            ct;
+        t[31] === st ? ct = t[32] : (ct = m(st), t[31] = st, t[32] = ct);
+        let q = ct,
+            lt;
+        t[33] !== o?.id || t[34] !== q || t[35] !== e ? (lt = !q && (e == null || o?.id === e) && D(`2990156945`), t[33] = o?.id, t[34] = q, t[35] = e, t[36] = lt) : lt = t[36];
+        let ut = lt,
+            dt;
+        t[37] === Symbol.for(`react.memo_cache_sentinel`) ? (dt = D(`3709545847`), t[37] = dt) : dt = t[37];
+        let ft = dt,
+            pt;
+        t[38] === Symbol.for(`react.memo_cache_sentinel`) ? (pt = g(), t[38] = pt) : pt = t[38];
+        let mt = pt,
+            ht;
+        t[39] === Symbol.for(`react.memo_cache_sentinel`) ? (ht = p(), t[39] = ht) : ht = t[39];
+        let gt = ht,
+            _t;
+        t[40] === Symbol.for(`react.memo_cache_sentinel`) ? (_t = ot && oe(), t[40] = _t) : _t = t[40];
+        let vt = _t,
+            yt;
+        t[41] === Symbol.for(`react.memo_cache_sentinel`) ? (yt = D(We), t[41] = yt) : yt = t[41];
+        let bt = yt,
+            xt;
+        t[42] === Symbol.for(`react.memo_cache_sentinel`) ? (xt = D(Ue), t[42] = xt) : xt = t[42];
+        let St = xt,
+            Ct = Ee && c?.residencyRegion === `no_constraint`,
+            wt;
+        t[43] === Symbol.for(`react.memo_cache_sentinel`) ? (wt = D(`4084539573`), t[43] = wt) : wt = t[43];
+        let Tt = wt,
+            Et;
+        t[44] !== c || t[45] !== w ? (Et = c?.isEnterprisey() === !0 && D(Ke) && D(qe) && w === !1, t[44] = c, t[45] = w, t[46] = Et) : Et = t[46];
+        let Dt = Et,
+            Ot;
+        t[47] !== c || t[48] !== o?.id || t[49] !== e ? (Ot = c?.isEnterprisey() === !0 && (e == null || o?.id === e) && D(Je), t[47] = c, t[48] = o?.id, t[49] = e, t[50] = Ot) : Ot = t[50];
+        let kt = Ot,
+            At;
+        t[51] !== c || t[52] !== o?.id || t[53] !== e ? (At = (r(c?.planType) || c?.isEnterprisey() === !0) && (e == null || o?.id === e), t[51] = c, t[52] = o?.id, t[53] = e, t[54] = At) : At = t[54];
+        let jt = At,
+            Mt;
+        t[55] === c ? Mt = t[56] : (Mt = D(Ye) && c?.isEnterprisey() === !0 && R, t[55] = c, t[56] = Mt);
+        let J = Mt,
+            Nt;
+        t[57] !== o?.id || t[58] !== J || t[59] !== e ? (Nt = J && (e == null || o?.id === e) && De(), t[57] = o?.id, t[58] = J, t[59] = e, t[60] = Nt) : Nt = t[60];
+        let Pt = Nt,
+            Ft;
+        t[61] === Symbol.for(`react.memo_cache_sentinel`) ? (Ft = D(Ge), t[61] = Ft) : Ft = t[61];
+        let It = Ft,
+            Lt;
+        t[62] === c?.features ? Lt = t[63] : (Lt = c?.features.includes(d), t[62] = c?.features, t[63] = Lt);
+        let Y = Lt === !0,
+            Rt;
+        t[64] !== c?.id || t[65] !== c?.planType || t[66] !== Y ? (Rt = () => {
+            Re({
+                candidateSource: d,
+                candidateValue: Y,
+                comparison: `basispoints_workspace_rollout`,
+                legacySource: Ge,
+                legacyValue: It,
+                planType: c?.planType,
+                workspaceId: c?.id
+            })
+        }, t[64] = c?.id, t[65] = c?.planType, t[66] = Y, t[67] = Rt) : Rt = t[67];
+        let zt = c?.id,
+            Bt = c?.planType,
+            Vt;
+        t[68] !== Y || t[69] !== zt || t[70] !== Bt ? (Vt = [zt, Bt, Y, It], t[68] = Y, t[69] = zt, t[70] = Bt, t[71] = Vt) : Vt = t[71], (0, He.useEffect)(Rt, Vt);
+        let Ht = It,
+            X;
+        t[72] === q ? X = t[73] : (X = q ? {
+            isSelfServeBusinessWorkspace: q
+        } : {}, t[72] = q, t[73] = X);
+        let Z;
+        t[74] !== c?.planType || t[75] !== Ee ? (Z = te(c?.planType) || Ee, t[74] = c?.planType, t[75] = Ee, t[76] = Z) : Z = t[76];
+        let Q;
+        t[77] === ut ? Q = t[78] : (Q = ut ? {
+            includeLibrarySharingPermissions: ut,
+            isLibrarySharingGa: ft
+        } : {}, t[77] = ut, t[78] = Q);
+        let $;
+        t[79] === kt ? $ = t[80] : ($ = kt ? {
+            includeLegalPermissionsEarlyAccess: kt
+        } : {}, t[79] = kt, t[80] = $);
+        let Ut;
+        return t[81] !== F || t[82] !== we || t[83] !== Me || t[84] !== jt || t[85] !== Dt || t[86] !== J || t[87] !== ue || t[88] !== Ne || t[89] !== le || t[90] !== Pt || t[91] !== Ct || t[92] !== X || t[93] !== Z || t[94] !== Q || t[95] !== $ ? (Ut = {
+            hasThinkingMiniRouterControls: we,
+            isRbacEnabled: R,
+            githubConnectorEnabled: F,
+            isInSupportedDrRegion: le,
+            showHiveToggle: me,
+            isAppleIntelligenceToggleEnabled: ue,
+            isAppleIntelligenceMdmToggleEnabled: pe,
+            includeFeatures: ge,
+            includeModels: _e,
+            includeBetaSettings: ve,
+            includeBetaSettingsAdvanced: be,
+            includeGizmoPermissions: Se,
+            includeFirstPartyGPTPermission: Ce,
+            includeAgentMode: ke,
+            includeCodexSecurity: Me,
+            isFedrampCompliantWorkspace: Ne,
+            includeConnectorPermissions: B,
+            includeDevModePermissions: Pe,
+            includeThinkingMini: Fe,
+            isGPT52ToggleEnabled: Ie,
+            isSimplifiedModelControlEnabled: Le,
+            isSimplifiedModelControlReasoningProEnabled: ze,
+            includePrivatePublishGPTPermission: Xe,
+            showUnifiedContainerEgressToggle: Qe,
+            includeHazelnutsPermissions: et,
+            includeHazelnutsAdditionalRbacPermissions: nt,
+            includeHermesPermissionsEarlyAccess: it,
+            includeSitesPermissionsEarlyAccess: ot,
+            ...X,
+            includeLibraryWorkspaceLinkSharingPermissions: Z,
+            ...Q,
+            includeSitesExternalVisitorInvitesPermission: mt,
+            includeSitesPrivateTunnelsPermission: gt,
+            appgenWorkspacePublishEnabled: vt,
+            showPedagogyModePermission: bt,
+            showU18ModelPolicyPermission: St,
+            showDataExportPermission: Ct,
+            showWebSearchDomainAllowlistSetting: Tt,
+            includeFileLibraryAutoReferencePermissions: Dt,
+            ...$,
+            includeComputerHistoryPermissions: jt,
+            includeFloraPermissions: J,
+            isWorkLocalIndependentControlsEnabled: Pt,
+            showBasisPointsPermission: Ht
+        }, t[81] = F, t[82] = we, t[83] = Me, t[84] = jt, t[85] = Dt, t[86] = J, t[87] = ue, t[88] = Ne, t[89] = le, t[90] = Pt, t[91] = Ct, t[92] = X, t[93] = Z, t[94] = Q, t[95] = $, t[96] = Ut) : Ut = t[96], Ut
+    }
+}));
+export {
+    Le as a, W as i, K as n, Ie as r, Xe as t
+};
+//# sourceMappingURL=6fd89734-ukvy961mk0pbfe49.js.map

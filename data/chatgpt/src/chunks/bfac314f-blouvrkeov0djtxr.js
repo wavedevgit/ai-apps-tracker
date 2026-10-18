@@ -1,0 +1,34 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t, n, r, i = e((() => {
+    t = {
+        O: {
+            color: `#bac1d3`,
+            reactions: []
+        },
+        Alfred: {
+            color: `#ffd529`,
+            reactions: [`🙌`]
+        },
+        Felipe: {
+            color: `#35a0fd`,
+            reactions: [`💡`, `🎨`]
+        },
+        Iggy: {
+            color: `#da61dc`,
+            reactions: [`👀`, `💗`]
+        },
+        Todd: {
+            color: `#b5ea4e`,
+            reactions: [`✅`]
+        }
+    }, n = [.22, 1, .36, 1], r = [.19, 1, .22, 1]
+}));
+export {
+    i,
+    r as n,
+    n as r,
+    t
+};
+//# sourceMappingURL=bfac314f-blouvrkeov0djtxr.js.map

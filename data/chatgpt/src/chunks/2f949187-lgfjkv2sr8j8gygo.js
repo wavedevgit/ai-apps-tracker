@@ -1,0 +1,70 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e) {
+    let t = e?.autoAdvanceSeconds ?? 5;
+    return e?.autoAdvanceEnabled === !0 && Number.isFinite(t) && t > 0 ? Math.min(60, Math.max(3, t)) * 1e3 : 0
+}
+
+function n({
+    viewport: e,
+    region: t,
+    delay: n,
+    advance: r
+}) {
+    let i = `[data-dots-autoplay-pause], button, a, input, [role=tab]`,
+        a = e => e instanceof Element && t.contains(e) && e.closest(i) != null,
+        o = window.matchMedia(`(hover: hover)`).matches && Array.from(t.querySelectorAll(i)).some(e => e.matches(`:hover`)),
+        s = () => t.contains(document.activeElement) && document.activeElement?.matches(`:focus-visible`) === !0,
+        c = s(),
+        l = t.matches(`:active`),
+        u = !1,
+        d = !1,
+        f = n,
+        p = 0,
+        m, h = () => {
+            m !== void 0 && (f = Math.max(0, f - (performance.now() - p)), window.clearTimeout(m), m = void 0)
+        },
+        g = () => {
+            h(), !(d || o || c || l || !u || document.hidden) && (p = performance.now(), m = window.setTimeout(() => {
+                m = void 0, d = !0, r()
+            }, f))
+        },
+        _ = () => {
+            h(), d = !1, f = n, g()
+        },
+        v = e => {
+            e.pointerType === `mouse` && (o = a(e.type === `pointerout` ? e.relatedTarget : e.target), g())
+        },
+        y = e => {
+            c = e.type === `focusin` ? s() : e.relatedTarget instanceof Element && t.contains(e.relatedTarget) && e.relatedTarget.matches(`:focus-visible`), g()
+        },
+        b = e => {
+            a(e.target) && (l = !0, c = !1, _())
+        },
+        x = () => {
+            l = !1, g()
+        },
+        S = () => {
+            c = !0, _()
+        },
+        C = e => {
+            (Math.abs(e.deltaX) > Math.abs(e.deltaY) || e.shiftKey) && _()
+        },
+        w = new IntersectionObserver(([e]) => {
+            u = e.isIntersecting && e.intersectionRatio >= .25, g()
+        }, {
+            threshold: .25
+        });
+    return w.observe(e), t.addEventListener(`pointerover`, v), t.addEventListener(`pointerout`, v), t.addEventListener(`pointerdown`, b, !0), t.addEventListener(`click`, _, !0), t.addEventListener(`keydown`, S, !0), window.addEventListener(`pointerup`, x), window.addEventListener(`pointercancel`, x), t.addEventListener(`focusin`, y), t.addEventListener(`focusout`, y), e.addEventListener(`wheel`, C, {
+        passive: !0
+    }), document.addEventListener(`visibilitychange`, g), () => {
+        h(), w.disconnect(), t.removeEventListener(`pointerover`, v), t.removeEventListener(`pointerout`, v), t.removeEventListener(`pointerdown`, b, !0), t.removeEventListener(`click`, _, !0), t.removeEventListener(`keydown`, S, !0), window.removeEventListener(`pointerup`, x), window.removeEventListener(`pointercancel`, x), t.removeEventListener(`focusin`, y), t.removeEventListener(`focusout`, y), e.removeEventListener(`wheel`, C), document.removeEventListener(`visibilitychange`, g)
+    }
+}
+var r = e((() => {}));
+export {
+    r as n, n as r, t
+};
+//# sourceMappingURL=2f949187-lgfjkv2sr8j8gygo.js.map

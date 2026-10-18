@@ -1,0 +1,65 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t, n, r, i, a, o, s, c, l, u, d, f, p, m = e((() => {
+        t = `uCLcCW_Actions`, n = `uCLcCW_Attachments`, r = `uCLcCW_AttachmentsContainer`, i = `uCLcCW_Composer`, a = `uCLcCW_ComposerInput`, o = `uCLcCW_ContentWrapper`, s = `uCLcCW_ProseMirrorComposerInput`, c = `uCLcCW_ProseMirrorEditor`, l = `uCLcCW_ProseMirrorHiddenTextarea`, u = `uCLcCW_ProseMirrorPlaceholder`, d = `uCLcCW_Reply`, f = `uCLcCW_ReplyTransitionChild`, p = {
+            Actions: t,
+            Attachments: n,
+            AttachmentsContainer: r,
+            Composer: i,
+            ComposerInput: a,
+            ContentWrapper: o,
+            ProseMirrorComposerInput: s,
+            ProseMirrorEditor: c,
+            ProseMirrorHiddenTextarea: l,
+            ProseMirrorPlaceholder: u,
+            Reply: d,
+            ReplyTransitionChild: f
+        }
+    })),
+    h, g, _, v, y, b, x, S, C, w = e((() => {
+        h = `YxPpAW_FileAttachment`, g = `YxPpAW_FileAttachmentIcon`, _ = `YxPpAW_FileIconSvg`, v = `YxPpAW_Filename`, y = `YxPpAW_FileType`, b = `YxPpAW_ImageAttachment`, x = `YxPpAW_ImagePreview`, S = `YxPpAW_UploadIndicator`, C = {
+            FileAttachment: h,
+            FileAttachmentIcon: g,
+            FileIconSvg: _,
+            Filename: v,
+            FileType: y,
+            ImageAttachment: b,
+            ImagePreview: x,
+            UploadIndicator: S
+        }
+    })),
+    T, E, D, O, k = e((() => {
+        T = `qKxazG_CircularProgress`, E = `qKxazG_ComposerAttachment`, D = `qKxazG_Delete`, O = {
+            CircularProgress: T,
+            ComposerAttachment: E,
+            Delete: D
+        }
+    })),
+    A, j, M, N, P, F, I, L, R, z, B, V, H, U, W, G = e((() => {
+        A = `TdXjlG_Menu`, j = `TdXjlG_MenuInner`, M = `TdXjlG_MenuList`, N = `TdXjlG_Option`, P = `TdXjlG_OptionGroupHeading`, F = `TdXjlG_OptionHardLimitHeading`, I = `TdXjlG_OptionInner`, L = `TdXjlG_OptionLabel`, R = `TdXjlG_OptionsGroupHeadingTopBorder`, z = `TdXjlG_OptionsLimit`, B = `TdXjlG_OptionsList`, V = `TdXjlG_PendingIndicator`, H = `TdXjlG_PressableInner`, U = `TdXjlG_ReturnIcon`, W = {
+            Menu: A,
+            MenuInner: j,
+            MenuList: M,
+            Option: N,
+            OptionGroupHeading: P,
+            OptionHardLimitHeading: F,
+            OptionInner: I,
+            OptionLabel: L,
+            OptionsGroupHeadingTopBorder: R,
+            OptionsLimit: z,
+            OptionsList: B,
+            PendingIndicator: V,
+            PressableInner: H,
+            ReturnIcon: U
+        }
+    })),
+    K, q, J = e((() => {
+        K = `_8_dEUG_Canvas`, q = {
+            Canvas: K
+        }
+    }));
+export {
+    O as a, w as c, G as i, p as l, J as n, k as o, W as r, C as s, q as t, m as u
+};
+//# sourceMappingURL=a4e570c1-iuksjeff1siuy8s1.js.map

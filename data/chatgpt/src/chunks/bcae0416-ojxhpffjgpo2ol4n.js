@@ -1,0 +1,400 @@
+import {
+    t as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t = e(((e, t) => {
+        t.exports = e => {
+            if (Object.prototype.toString.call(e) !== `[object Object]`) return !1;
+            let t = Object.getPrototypeOf(e);
+            return t === null || t === Object.prototype
+        }
+    })),
+    n = e((e => {
+        var n = t();
+        e.BLOCKS = void 0, (function(e) {
+            e.DOCUMENT = `document`, e.PARAGRAPH = `paragraph`, e.HEADING_1 = `heading-1`, e.HEADING_2 = `heading-2`, e.HEADING_3 = `heading-3`, e.HEADING_4 = `heading-4`, e.HEADING_5 = `heading-5`, e.HEADING_6 = `heading-6`, e.OL_LIST = `ordered-list`, e.UL_LIST = `unordered-list`, e.LIST_ITEM = `list-item`, e.HR = `hr`, e.QUOTE = `blockquote`, e.EMBEDDED_ENTRY = `embedded-entry-block`, e.EMBEDDED_ASSET = `embedded-asset-block`, e.EMBEDDED_RESOURCE = `embedded-resource-block`, e.TABLE = `table`, e.TABLE_ROW = `table-row`, e.TABLE_CELL = `table-cell`, e.TABLE_HEADER_CELL = `table-header-cell`
+        })(e.BLOCKS ||= {}), e.INLINES = void 0, (function(e) {
+            e.ASSET_HYPERLINK = `asset-hyperlink`, e.EMBEDDED_ENTRY = `embedded-entry-inline`, e.EMBEDDED_RESOURCE = `embedded-resource-inline`, e.ENTRY_HYPERLINK = `entry-hyperlink`, e.HYPERLINK = `hyperlink`, e.RESOURCE_HYPERLINK = `resource-hyperlink`
+        })(e.INLINES ||= {}), e.MARKS = void 0, (function(e) {
+            e.BOLD = `bold`, e.ITALIC = `italic`, e.UNDERLINE = `underline`, e.CODE = `code`, e.SUPERSCRIPT = `superscript`, e.SUBSCRIPT = `subscript`, e.STRIKETHROUGH = `strikethrough`
+        })(e.MARKS ||= {});
+        var r = function(e, t) {
+            return r = Object.setPrototypeOf || {
+                __proto__: []
+            }
+            instanceof Array && function(e, t) {
+                e.__proto__ = t
+            } || function(e, t) {
+                for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
+            }, r(e, t)
+        };
+
+        function i(e, t) {
+            if (typeof t != `function` && t !== null) throw TypeError(`Class extends value ` + String(t) + ` is not a constructor or null`);
+            r(e, t);
+
+            function n() {
+                this.constructor = e
+            }
+            e.prototype = t === null ? Object.create(t) : (n.prototype = t.prototype, new n)
+        }
+
+        function a(e, t, n) {
+            if (n || arguments.length === 2)
+                for (var r = 0, i = t.length, a; r < i; r++)(a || !(r in t)) && (a ||= Array.prototype.slice.call(t, 0, r), a[r] = t[r]);
+            return e.concat(a || Array.prototype.slice.call(t))
+        }
+        var o, s = [e.BLOCKS.PARAGRAPH, e.BLOCKS.HEADING_1, e.BLOCKS.HEADING_2, e.BLOCKS.HEADING_3, e.BLOCKS.HEADING_4, e.BLOCKS.HEADING_5, e.BLOCKS.HEADING_6, e.BLOCKS.OL_LIST, e.BLOCKS.UL_LIST, e.BLOCKS.HR, e.BLOCKS.QUOTE, e.BLOCKS.EMBEDDED_ENTRY, e.BLOCKS.EMBEDDED_ASSET, e.BLOCKS.EMBEDDED_RESOURCE, e.BLOCKS.TABLE],
+            c = [e.BLOCKS.PARAGRAPH, e.BLOCKS.HEADING_1, e.BLOCKS.HEADING_2, e.BLOCKS.HEADING_3, e.BLOCKS.HEADING_4, e.BLOCKS.HEADING_5, e.BLOCKS.HEADING_6, e.BLOCKS.OL_LIST, e.BLOCKS.UL_LIST, e.BLOCKS.HR, e.BLOCKS.QUOTE, e.BLOCKS.EMBEDDED_ENTRY, e.BLOCKS.EMBEDDED_ASSET, e.BLOCKS.EMBEDDED_RESOURCE],
+            l = [e.BLOCKS.TABLE, e.BLOCKS.TABLE_ROW, e.BLOCKS.TABLE_CELL, e.BLOCKS.TABLE_HEADER_CELL],
+            u = [e.BLOCKS.HR, e.BLOCKS.EMBEDDED_ENTRY, e.BLOCKS.EMBEDDED_ASSET, e.BLOCKS.EMBEDDED_RESOURCE],
+            d = (o = {}, o[e.BLOCKS.OL_LIST] = [e.BLOCKS.LIST_ITEM], o[e.BLOCKS.UL_LIST] = [e.BLOCKS.LIST_ITEM], o[e.BLOCKS.LIST_ITEM] = c, o[e.BLOCKS.QUOTE] = [e.BLOCKS.PARAGRAPH], o[e.BLOCKS.TABLE] = [e.BLOCKS.TABLE_ROW], o[e.BLOCKS.TABLE_ROW] = [e.BLOCKS.TABLE_CELL, e.BLOCKS.TABLE_HEADER_CELL], o[e.BLOCKS.TABLE_CELL] = [e.BLOCKS.PARAGRAPH, e.BLOCKS.UL_LIST, e.BLOCKS.OL_LIST], o[e.BLOCKS.TABLE_HEADER_CELL] = [e.BLOCKS.PARAGRAPH], o),
+            f = [e.BLOCKS.HEADING_1, e.BLOCKS.HEADING_2, e.BLOCKS.HEADING_3, e.BLOCKS.HEADING_4, e.BLOCKS.HEADING_5, e.BLOCKS.HEADING_6],
+            p = a([e.BLOCKS.PARAGRAPH], f, !0),
+            m = [e.BLOCKS.DOCUMENT, e.BLOCKS.PARAGRAPH, e.BLOCKS.HEADING_1, e.BLOCKS.HEADING_2, e.BLOCKS.HEADING_3, e.BLOCKS.HEADING_4, e.BLOCKS.HEADING_5, e.BLOCKS.HEADING_6, e.BLOCKS.OL_LIST, e.BLOCKS.UL_LIST, e.BLOCKS.LIST_ITEM, e.BLOCKS.HR, e.BLOCKS.QUOTE, e.BLOCKS.EMBEDDED_ENTRY, e.BLOCKS.EMBEDDED_ASSET, e.INLINES.HYPERLINK, e.INLINES.ENTRY_HYPERLINK, e.INLINES.ASSET_HYPERLINK, e.INLINES.EMBEDDED_ENTRY, `text`],
+            h = [e.MARKS.BOLD, e.MARKS.CODE, e.MARKS.ITALIC, e.MARKS.UNDERLINE],
+            g = {
+                nodeType: e.BLOCKS.DOCUMENT,
+                data: {},
+                content: [{
+                    nodeType: e.BLOCKS.PARAGRAPH,
+                    data: {},
+                    content: [{
+                        nodeType: `text`,
+                        value: ``,
+                        marks: [],
+                        data: {}
+                    }]
+                }]
+            };
+
+        function _(e, t) {
+            for (var n = 0, r = Object.keys(e); n < r.length; n++)
+                if (t === e[r[n]]) return !0;
+            return !1
+        }
+
+        function v(t) {
+            return _(e.INLINES, t.nodeType)
+        }
+
+        function y(t) {
+            return _(e.BLOCKS, t.nodeType)
+        }
+
+        function b(e) {
+            return e.nodeType === `text`
+        }
+        var x = Object.freeze({
+                __proto__: null,
+                isBlock: y,
+                isInline: v,
+                isText: b
+            }),
+            S = function(e) {
+                var t = e.path,
+                    n = e.property,
+                    r = e.typeName,
+                    i = e.value;
+                return {
+                    details: `The type of "${n}" is incorrect, expected type: ${r}`,
+                    name: `type`,
+                    path: t.toArray(),
+                    type: r,
+                    value: i
+                }
+            },
+            C = function(e) {
+                var t = e.min,
+                    n = e.value;
+                return {
+                    name: `size`,
+                    min: t,
+                    path: e.path.toArray(),
+                    details: `Size must be at least ${t}`,
+                    value: n
+                }
+            },
+            w = function(e) {
+                var t = e.max,
+                    n = e.value;
+                return {
+                    name: `size`,
+                    max: t,
+                    path: e.path.toArray(),
+                    details: `Size must be at most ${t}`,
+                    value: n
+                }
+            },
+            T = function(e) {
+                var t = e.expected,
+                    n = e.value,
+                    r = e.path;
+                return {
+                    details: `Value must be one of expected values`,
+                    name: `in`,
+                    expected: a([], t, !0).sort(),
+                    path: r.toArray(),
+                    value: n
+                }
+            },
+            E = function(e) {
+                var t = e.property,
+                    n = e.path;
+                return {
+                    details: `The property "${t}" is not expected`,
+                    name: `unexpected`,
+                    path: n.toArray()
+                }
+            },
+            D = function(e) {
+                var t = e.property,
+                    n = e.path;
+                return {
+                    details: `The property "${t}" is required here`,
+                    name: `required`,
+                    path: n.toArray()
+                }
+            },
+            O = function() {
+                function e(e, t) {
+                    var r = this;
+                    this.obj = e, this.path = t, this._errors = [], this.catch = function() {
+                        for (var e, t = [], n = 0; n < arguments.length; n++) t[n] = arguments[n];
+                        (e = r._errors).push.apply(e, t)
+                    }, this.exists = function(e) {
+                        return e in r.obj ? !0 : (r.catch(D({
+                            property: e,
+                            path: r.path.of(e)
+                        })), !1)
+                    }, this.object = function(e) {
+                        var t = e ? r.obj[e] : r.obj;
+                        if (e && !r.exists(e)) return !1;
+                        if (n(t)) return !0;
+                        var i = e ? r.path.of(e) : r.path,
+                            a = e ?? r.path.last() ?? `value`;
+                        return r.catch(S({
+                            typeName: `Object`,
+                            property: a,
+                            path: i,
+                            value: t
+                        })), !1
+                    }, this.string = function(e) {
+                        var t = r.obj[e];
+                        return e && !r.exists(e) ? !1 : typeof t == `string` ? !0 : (r.catch(S({
+                            typeName: `String`,
+                            property: e,
+                            path: r.path.of(e),
+                            value: t
+                        })), !1)
+                    }, this.number = function(e, t) {
+                        var n = r.obj[e];
+                        return t && !(e in r.obj) ? !0 : r.exists(e) ? typeof n == `number` && !Number.isNaN(n) ? !0 : (r.catch(S({
+                            typeName: `Number`,
+                            property: e,
+                            path: r.path.of(e),
+                            value: n
+                        })), !1) : !1
+                    }, this.array = function(e) {
+                        var t = r.obj[e];
+                        return e && !r.exists(e) ? !1 : Array.isArray(t) ? !0 : (r.catch(S({
+                            typeName: `Array`,
+                            property: e,
+                            path: r.path.of(e),
+                            value: t
+                        })), !1)
+                    }, this.enum = function(e, t) {
+                        var n = r.obj[e];
+                        return typeof n == `string` && t.includes(n) ? !0 : (r.catch(T({
+                            expected: t,
+                            value: n,
+                            path: r.path.of(e)
+                        })), !1)
+                    }, this.empty = function(e) {
+                        if (!r.array(e)) return !1;
+                        var t = r.obj[e];
+                        return t.length === 0 ? !0 : (r.catch(w({
+                            max: 0,
+                            value: t,
+                            path: r.path.of(e)
+                        })), !1)
+                    }, this.minLength = function(e, t) {
+                        if (!r.array(e)) return !1;
+                        var n = r.obj[e];
+                        return n.length >= t ? !0 : (r.catch(C({
+                            min: t,
+                            value: n,
+                            path: r.path.of(e)
+                        })), !1)
+                    }, this.noAdditionalProperties = function(e) {
+                        var t = Object.keys(r.obj).sort().filter(function(t) {
+                            return !e.includes(t)
+                        });
+                        return t.forEach(function(e) {
+                            return r.catch(E({
+                                property: e,
+                                path: r.path.of(e)
+                            }))
+                        }), t.length === 0
+                    }, this.each = function(e, t) {
+                        if (r.array(e)) {
+                            var n = r.obj[e],
+                                i = !1;
+                            n.forEach(function(n, a) {
+                                if (!i) {
+                                    var o = t(n, r.path.of(e).of(a));
+                                    o.length > 0 && (i = !0), r.catch.apply(r, o)
+                                }
+                            })
+                        }
+                    }
+                }
+                return Object.defineProperty(e.prototype, "errors", {
+                    get: function() {
+                        var e = this,
+                            t = function(e) {
+                                return JSON.stringify({
+                                    details: e.details,
+                                    path: e.path
+                                })
+                            };
+                        return this._errors.filter(function(n, r) {
+                            return e._errors.findIndex(function(e) {
+                                return t(n) === t(e)
+                            }) === r
+                        })
+                    },
+                    enumerable: !1,
+                    configurable: !0
+                }), e
+            }(),
+            k = [],
+            A = function() {
+                function e(e, t) {
+                    this.contentRule = e, this.validateData = t
+                }
+                return e.prototype.assert = function(e, t) {
+                    var n = new O(e, t);
+                    if (!n.object()) return n.errors;
+                    n.noAdditionalProperties([`nodeType`, `data`, `content`]);
+                    var r = Array.isArray(this.contentRule) ? {
+                            nodeTypes: this.contentRule
+                        } : this.contentRule(e, t),
+                        i = r.nodeTypes,
+                        a = r.min,
+                        o = a === void 0 ? 0 : a;
+                    if (i.length === 0 && o > 0) throw Error(`Invalid content rule. Cannot have enforce a 'min' of ${o} with no nodeTypes`);
+                    if (n.minLength(`content`, o), i.length === 0 ? n.empty(`content`) : n.each(`content`, function(e, t) {
+                            var n = new O(e, t);
+                            return n.object() && n.enum(`nodeType`, i), n.errors
+                        }), n.object(`data`)) {
+                        var s = this.validateData?.call(this, e.data, t.of(`data`)) ?? [];
+                        n.catch.apply(n, s)
+                    }
+                    return n.errors
+                }, e
+            }(),
+            j = function(e) {
+                i(t, e);
+
+                function t(t, n) {
+                    var r = e.call(this, n, function(e, t) {
+                        return r.assertLink(e, t)
+                    }) || this;
+                    return r.linkType = t, r.assertLink = function(e, t) {
+                        var n = new O(e, t);
+                        if (n.object(`target`)) {
+                            var i = new O(e.target.sys, t.of(`target`).of(`sys`));
+                            i.object() && (i.enum(`type`, [r.type]), i.enum(`linkType`, [r.linkType]), r.type === `Link` ? (i.string(`id`), i.noAdditionalProperties([`type`, `linkType`, `id`])) : r.type === `ResourceLink` && (i.string(`urn`), i.noAdditionalProperties([`type`, `linkType`, `urn`]))), n.catch.apply(n, i.errors)
+                        }
+                        return n.noAdditionalProperties([`target`]), n.errors
+                    }, r.type = r.linkType.startsWith(`Contentful:`) ? `ResourceLink` : `Link`, r
+                }
+                return t
+            }(A),
+            M = function(e) {
+                i(t, e);
+
+                function t() {
+                    var t = e.call(this, [`text`], function(e, n) {
+                        return t.assertLink(e, n)
+                    }) || this;
+                    return t.assertLink = function(e, t) {
+                        var n = new O(e, t);
+                        return n.string(`uri`), n.noAdditionalProperties([`uri`]), n.errors
+                    }, t
+                }
+                return t
+            }(A),
+            N = function(e, t) {
+                return new A(e, t)
+            },
+            P = function(e, t) {
+                return new j(e, t)
+            },
+            F = function() {
+                function e(t) {
+                    t === void 0 && (t = []);
+                    var n = this;
+                    this.path = t, this.of = function(t) {
+                        return new e(a(a([], n.path, !0), [t], !1))
+                    }, this.isRoot = function() {
+                        return n.path.length === 0
+                    }, this.last = function() {
+                        return n.path[n.path.length - 1]
+                    }, this.toArray = function() {
+                        return n.path
+                    }
+                }
+                return e
+            }();
+
+        function I(e, t) {
+            var n = new O(e, t);
+            return n.object() ? (n.noAdditionalProperties([`nodeType`, `data`, `value`, `marks`]), n.object(`data`), n.each(`marks`, function(e, t) {
+                var n = new O(e, t);
+                return n.object() && n.string(`type`), n.errors
+            }), n.string(`value`), n.errors) : n.errors
+        }
+        var L, R = N(a(a([], Object.values(e.INLINES), !0), [`text`], !1).sort()),
+            z = N([e.BLOCKS.LIST_ITEM]),
+            B = P(`Entry`, k),
+            V = N(function() {
+                return {
+                    nodeTypes: [e.BLOCKS.PARAGRAPH],
+                    min: 1
+                }
+            }, function(e, t) {
+                var n = new O(e, t);
+                return n.noAdditionalProperties([`colspan`, `rowspan`]), n.number(`colspan`, !0), n.number(`rowspan`, !0), n.errors
+            }),
+            H = (L = {}, L[e.BLOCKS.DOCUMENT] = N(s), L[e.BLOCKS.PARAGRAPH] = R, L[e.BLOCKS.HEADING_1] = R, L[e.BLOCKS.HEADING_2] = R, L[e.BLOCKS.HEADING_3] = R, L[e.BLOCKS.HEADING_4] = R, L[e.BLOCKS.HEADING_5] = R, L[e.BLOCKS.HEADING_6] = R, L[e.BLOCKS.QUOTE] = N(d[e.BLOCKS.QUOTE]), L[e.BLOCKS.EMBEDDED_ENTRY] = B, L[e.BLOCKS.EMBEDDED_ASSET] = P(`Asset`, k), L[e.BLOCKS.EMBEDDED_RESOURCE] = P(`Contentful:Entry`, k), L[e.BLOCKS.HR] = N(k), L[e.BLOCKS.OL_LIST] = z, L[e.BLOCKS.UL_LIST] = z, L[e.BLOCKS.LIST_ITEM] = N(a([], c, !0).sort()), L[e.BLOCKS.TABLE] = N(function() {
+                return {
+                    nodeTypes: [e.BLOCKS.TABLE_ROW],
+                    min: 1
+                }
+            }), L[e.BLOCKS.TABLE_ROW] = N(function() {
+                return {
+                    nodeTypes: [e.BLOCKS.TABLE_CELL, e.BLOCKS.TABLE_HEADER_CELL],
+                    min: 1
+                }
+            }), L[e.BLOCKS.TABLE_CELL] = V, L[e.BLOCKS.TABLE_HEADER_CELL] = V, L[e.INLINES.HYPERLINK] = new M, L[e.INLINES.EMBEDDED_ENTRY] = B, L[e.INLINES.EMBEDDED_RESOURCE] = P(`Contentful:Entry`, k), L[e.INLINES.ENTRY_HYPERLINK] = P(`Entry`, [`text`]), L[e.INLINES.ASSET_HYPERLINK] = P(`Asset`, [`text`]), L[e.INLINES.RESOURCE_HYPERLINK] = P(`Contentful:Entry`, [`text`]), L);
+
+        function U(e, t) {
+            if (e.nodeType === `text`) return I(e, t);
+            var n = H[e.nodeType].assert(e, t);
+            if (n.length > 0) return n;
+            var r = new O(e, t);
+            return r.each(`content`, function(e, t) {
+                return U(e, t)
+            }), r.errors
+        }
+        e.CONTAINERS = d, e.EMPTY_DOCUMENT = g, e.HEADINGS = f, e.LIST_ITEM_BLOCKS = c, e.TABLE_BLOCKS = l, e.TEXT_CONTAINERS = p, e.TOP_LEVEL_BLOCKS = s, e.V1_MARKS = h, e.V1_NODE_TYPES = m, e.VOID_BLOCKS = u, e.helpers = x, e.validateRichTextDocument = function(t) {
+            var n = new F,
+                r = new O(t, n);
+            return r.object() && r.enum(`nodeType`, [e.BLOCKS.DOCUMENT]), r.errors.length > 0 ? r.errors : U(t, n)
+        }
+    }));
+export {
+    n as t
+};
+//# sourceMappingURL=bcae0416-ojxhpffjgpo2ol4n.js.map

@@ -1,0 +1,43 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t, n, r, i, a, o, s, c = e((() => {
+    t = `appsCreate`, n = `appsTemplate`, r = (e, r) => {
+        let i = new URLSearchParams;
+        for (let t of new URLSearchParams(e).getAll(`statsig_overrides`)) i.append(`statsig_overrides`, t);
+        return i.set(t, r.kind), r.kind === `template` && i.set(n, r.templateId), `${r.kind===`template`?`/admin/plugins/${encodeURIComponent(r.pluginId)}`:`/admin/plugins`}?${i}`
+    }, i = e => {
+        let r = new URLSearchParams(e),
+            i = r.getAll(t),
+            a = r.getAll(n),
+            o = a.length === 1 ? a[0] : void 0,
+            s = i.length === 1 && i[0] === `mcp` && a.length === 0 ? {
+                kind: `mcp`
+            } : i.length === 1 && i[0] === `template` && o?.trim() ? {
+                kind: `template`,
+                templateId: o
+            } : null;
+        return r.delete(t), r.delete(n), {
+            intent: s,
+            searchWithoutIntent: r.size ? `?${r}` : ``
+        }
+    }, a = e => {
+        let t = new URL(e, `https://admin.invalid`),
+            {
+                searchWithoutIntent: n
+            } = i(t.search);
+        return `${t.pathname}${n}${t.hash}`
+    }, o = (e, t) => ({
+        kind: `apps-admin`,
+        ...t,
+        returnTo: `${e.pathname}${e.search}${e.hash}`
+    }), s = (e, t) => {
+        if (typeof e != `object` || !e || !(`kind` in e) || e.kind !== `apps-admin` || !(`workspaceId` in e) || e.workspaceId !== t.workspaceId || !(`workspaceUserId` in e) || e.workspaceUserId !== t.workspaceUserId || !(`actorUserId` in e) || e.actorUserId !== t.actorUserId || !(`returnTo` in e) || typeof e.returnTo != `string`) return null;
+        let n = new URL(e.returnTo, `https://admin.invalid`);
+        return n.origin !== `https://admin.invalid` || n.pathname !== `/admin/apps` && !n.pathname.startsWith(`/admin/apps/`) ? null : `${n.pathname}${n.search}${n.hash}`
+    }
+}));
+export {
+    i as a, c as i, r as n, a as o, s as r, o as t
+};
+//# sourceMappingURL=cfef0b14-jrxhmy19n7nmtjpw.js.map

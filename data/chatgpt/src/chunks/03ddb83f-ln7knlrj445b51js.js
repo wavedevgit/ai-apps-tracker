@@ -1,0 +1,203 @@
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    B6 as r,
+    i5 as i
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    Bn as a,
+    Ln as o,
+    Rn as s,
+    Vn as c,
+    wn as l,
+    zn as u
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    Ozt as d,
+    _zt as f,
+    dzt as p,
+    vzt as m,
+    wzt as h
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    n as g,
+    t as _
+} from "./18093cad-ik1j6oyh5nr3ta5y.js";
+import {
+    C as v,
+    S as y,
+    a as b,
+    d as x,
+    o as S,
+    t as C,
+    x as w
+} from "./4285e798-mb6k70xz6sq0hl39.js";
+import {
+    n as T,
+    t as E
+} from "./43332649-hrw1zeeczaonr9a4.js";
+import {
+    n as D,
+    t as O
+} from "./be1c64d6-kjn0fsg4zf5zbt03.js";
+import {
+    a as k,
+    i as A,
+    n as j,
+    o as M,
+    r as N,
+    t as P
+} from "./17ffbb22-oyplknbned0sorpn.js";
+var F = t({
+    AgentDetails: () => V
+});
+
+function I() {
+    return d(m())
+}
+var L, R, z, B, V, H, U = e((() => {
+    L = l(), C(), h(), r(), _(), R = n(c()), s(), M(), A(), D(), E(), P(), z = a(), B = () => {
+        let e = m(),
+            {
+                currentGpt: t,
+                previewGpt: n
+            } = e,
+            r = f();
+        return {
+            prompt: (n ?? t).prompt,
+            promptUpdate: d(e) ? {
+                revision: r.revision,
+                source: `programmatic`
+            } : r
+        }
+    }, V = () => {
+        "use forget";
+        let e = (0, L.c)(36),
+            t = u(),
+            n = i(I),
+            [r, a] = (0, R.useState)(!1),
+            o = (0, R.useRef)(!1),
+            s = T(),
+            {
+                hasPersistedGpt: c,
+                openAddAppsModal: l,
+                openAddFilePicker: d
+            } = s,
+            {
+                mentionEntities: f,
+                allowedMentionTombstoneKinds: m
+            } = j(s),
+            h;
+        e[0] !== c || e[1] !== t ? (h = k({
+            hasPersistedGpt: c,
+            intl: t
+        }), e[0] = c, e[1] = t, e[2] = h) : h = e[2];
+        let _ = h,
+            C;
+        e[3] !== l || e[4] !== d ? (C = e => {
+            switch (e) {
+                case `connect_app`:
+                    b({
+                        actionType: S.APPS_MODAL_OPEN,
+                        source: w.INSTRUCTIONS_SLASH_COMMAND
+                    }), l();
+                    return;
+                case `add_skill`:
+                    b({
+                        actionType: S.SKILLS_MODAL_OPEN,
+                        source: w.INSTRUCTIONS_SLASH_COMMAND
+                    }), a(!0);
+                    return;
+                case `upload_file`:
+                    b({
+                        actionType: S.FILE_UPLOAD_PICKER_OPEN,
+                        source: w.INSTRUCTIONS_SLASH_COMMAND,
+                        file: {
+                            uploadMode: y.FILE,
+                            uploadSource: v.PICKER
+                        }
+                    }), d();
+                    return
+            }
+        }, e[3] = l, e[4] = d, e[5] = C) : C = e[5];
+        let E = C,
+            D;
+        e[6] !== E || e[7] !== n || e[8] !== _ ? (D = n ? void 0 : {
+            slashActions: _,
+            onRunSlashAction: E
+        }, e[6] = E, e[7] = n, e[8] = _, e[9] = D) : D = e[9];
+        let A = D,
+            M;
+        e[10] !== t || e[11] !== n ? (M = n ? `` : t.formatMessage(H.instructionsPlaceholder), e[10] = t, e[11] = n, e[12] = M) : M = e[12];
+        let P = M,
+            F;
+        e[13] === t ? F = e[14] : (F = t.formatMessage(H.detailsSectionLabel), e[13] = t, e[14] = F);
+        let V;
+        e[15] === t ? V = e[16] : (V = t.formatMessage(H.instructionsLabel), e[15] = t, e[16] = V);
+        let U;
+        e[17] === t ? U = e[18] : (U = t.formatMessage(H.instructionsTooltip), e[17] = t, e[18] = U);
+        let W, G;
+        e[19] === Symbol.for(`react.memo_cache_sentinel`) ? (W = e => {
+            o.current || (o.current = !0, b({
+                actionType: S.INSTRUCTIONS_EDIT,
+                source: w.DIRECT,
+                editor: {
+                    field: x.INSTRUCTIONS
+                }
+            })), p.setPromptFromEditor(e)
+        }, G = () => {
+            o.current = !1
+        }, e[19] = W, e[20] = G) : (W = e[19], G = e[20]);
+        let K;
+        e[21] !== m || e[22] !== A || e[23] !== P || e[24] !== n || e[25] !== f || e[26] !== V || e[27] !== U ? (K = (0, z.jsx)(N, {
+            commandConfig: A,
+            mentionEntities: f,
+            allowedMentionTombstoneKinds: m,
+            readonly: n,
+            label: V,
+            labelTooltip: U,
+            onChange: W,
+            onBlur: G,
+            placeholder: P,
+            promptSyncState$: B
+        }), e[21] = m, e[22] = A, e[23] = P, e[24] = n, e[25] = f, e[26] = V, e[27] = U, e[28] = K) : K = e[28];
+        let q;
+        e[29] === Symbol.for(`react.memo_cache_sentinel`) ? (q = (0, z.jsx)(O, {}), e[29] = q) : q = e[29];
+        let J;
+        e[30] === r ? J = e[31] : (J = (0, z.jsx)(g, {
+            open: r,
+            onOpenChange: a,
+            children: q
+        }), e[30] = r, e[31] = J);
+        let Y;
+        return e[32] !== J || e[33] !== F || e[34] !== K ? (Y = (0, z.jsxs)(`div`, {
+            "aria-label": F,
+            className: `flex flex-col`,
+            children: [K, J]
+        }), e[32] = J, e[33] = F, e[34] = K, e[35] = Y) : Y = e[35], Y
+    }, H = o({
+        detailsSectionLabel: {
+            id: `Hermes.GptStudio.Builder.AgentDetails.detailsSectionLabel`,
+            defaultMessage: `Agent details`
+        },
+        instructionsLabel: {
+            id: `Hermes.GptStudio.Builder.AgentDetails.instructionsLabel`,
+            defaultMessage: `Instructions`
+        },
+        instructionsTooltip: {
+            id: `Hermes.GptStudio.Builder.AgentDetails.instructionsTooltip`,
+            defaultMessage: `Instructions are the rules and guidance that tell your agent what it should do, how it should behave, and how to handle requests.`
+        },
+        instructionsPlaceholder: {
+            id: `Hermes.GptStudio.Builder.AgentDetails.instructionsPlaceholder`,
+            defaultMessage: `Give your agent instructions on how to operate.`
+        }
+    })
+}));
+export {
+    F as n, U as r, V as t
+};
+//# sourceMappingURL=03ddb83f-ln7knlrj445b51js.js.map

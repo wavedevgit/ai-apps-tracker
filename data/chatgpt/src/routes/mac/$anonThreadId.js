@@ -1,0 +1,40 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $ as n,
+    At as r,
+    Pt as i,
+    Vn as a,
+    wn as o
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+
+function s() {
+    "use forget";
+    let e = (0, c.c)(4),
+        {
+            movedConversationId: t
+        } = r(),
+        n = i(),
+        a, o;
+    return e[0] !== t || e[1] !== n ? (a = () => {
+        n(`/c/${t}`, {
+            replace: !0
+        })
+    }, o = [t, n], e[0] = t, e[1] = n, e[2] = a, e[3] = o) : (a = e[2], o = e[3]), (0, l.useEffect)(a, o), null
+}
+var c, l, u = e((() => {
+        c = o(), l = t(a()), n()
+    })),
+    d = e((() => {
+        u()
+    }));
+e((() => {
+    d()
+}))();
+export {
+    s as
+    default
+};
+//# sourceMappingURL=mac._anonThreadId-l1jp056s.js.map

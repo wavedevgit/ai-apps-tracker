@@ -1,0 +1,94 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as n,
+    dz as r,
+    fz as i,
+    k1 as a
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as o,
+    At as s,
+    Bn as c,
+    Nn as l,
+    Rn as u,
+    Ut as d,
+    Vn as f,
+    wn as p,
+    zn as m
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    la as h,
+    ua as g
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    n as _,
+    t as v
+} from "./68b36cc8-b4t3ax7liydnquw9.js";
+
+function y() {
+    "use forget";
+    let e = (0, b.c)(9),
+        t = m(),
+        i = s(),
+        a = (0, x.useRef)(!1),
+        o, c;
+    e[0] === i.isLoggedIn ? (o = e[1], c = e[2]) : (o = () => {
+        i.isLoggedIn || a.current || (a.current = !0, n({
+            callbackUrl: C,
+            fallbackScreenHint: `login`,
+            useFallbackScreenHint: !0
+        }))
+    }, c = [i.isLoggedIn], e[0] = i.isLoggedIn, e[1] = o, e[2] = c), (0, x.useEffect)(o, c);
+    let u;
+    e[3] === t ? u = e[4] : (u = t.formatMessage({
+        id: `passkeys.manage.route.aria-label`,
+        defaultMessage: `Passkeys`
+    }), e[3] = t, e[4] = u);
+    let d;
+    e[5] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, S.jsx)(r, {
+        className: `text-token-text-primary h-10 w-10`
+    }), e[5] = d) : d = e[5];
+    let f;
+    e[6] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, S.jsx)(`main`, {
+        className: `flex h-full w-full items-center justify-center p-6`,
+        role: `status`,
+        "aria-live": `polite`,
+        "aria-busy": `true`,
+        children: (0, S.jsxs)(`div`, {
+            className: `flex flex-col items-center gap-4 text-center`,
+            children: [d, (0, S.jsx)(`p`, {
+                className: `text-token-text-primary text-sm`,
+                children: (0, S.jsx)(l, {
+                    id: `passkeys.manage.route.redirect-message`,
+                    defaultMessage: `Opening passkey settings...`
+                })
+            })]
+        })
+    }), e[6] = f) : f = e[6];
+    let p;
+    return e[7] === u ? p = e[8] : (p = (0, S.jsx)(h, {
+        ariaLabel: u,
+        anchor: `vertical`,
+        className: v.screen,
+        children: f
+    }), e[7] = u, e[8] = p), p
+}
+var b, x, S, C, w, T = e((() => {
+    o(), b = p(), g(), _(), i(), a(), x = t(f()), u(), S = c(), C = `/passkeys/manage`, w = d(function() {
+        "use forget";
+        let e = (0, b.c)(1),
+            t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, S.jsx)(y, {}), e[0] = t) : t = e[0], t
+    })
+}));
+e((() => {
+    T()
+}))();
+export {
+    w as
+    default
+};
+//# sourceMappingURL=passkeys.manage-khhvxrsv.js.map

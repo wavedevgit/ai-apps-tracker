@@ -1,0 +1,49 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    cu as n
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as r,
+    Bn as i,
+    Pt as a,
+    Ut as o,
+    Vn as s,
+    wn as c
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    kAt as l
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    n as u,
+    t as d
+} from "./af004db9-6w68dbz1fjui3k0e.js";
+var f, p, m, h, g = e((() => {
+    r(), f = c(), u(), l(), p = t(s()), m = i(), h = o(function() {
+        "use forget";
+        let e = (0, f.c)(4),
+            t = a(),
+            r = (0, p.useRef)(!1),
+            i, o;
+        e[0] === t ? (i = e[1], o = e[2]) : (i = () => {
+            r.current || (r.current = !0, window.close(), window.setTimeout(() => {
+                t(n)
+            }, 150))
+        }, o = [t], e[0] = t, e[1] = i, e[2] = o), (0, p.useEffect)(i, o);
+        let s;
+        return e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, m.jsx)(`div`, {
+            className: `flex min-h-[40vh] items-center justify-center`,
+            children: (0, m.jsx)(d, {})
+        }), e[3] = s) : s = e[3], s
+    })
+}));
+e((() => {
+    g()
+}))();
+export {
+    h as
+    default
+};
+//# sourceMappingURL=ledger.plaid.oauth_redirect-ok9ptshe.js.map

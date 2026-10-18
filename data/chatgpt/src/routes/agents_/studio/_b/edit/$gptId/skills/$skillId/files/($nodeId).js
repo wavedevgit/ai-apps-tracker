@@ -1,0 +1,216 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    B6 as t,
+    J8 as n,
+    Y8 as r,
+    i5 as i
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as a,
+    At as o,
+    Bn as s,
+    Rt as c,
+    Ut as l,
+    lt as u,
+    s as d,
+    wn as f,
+    y as p
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    aRt as m,
+    cRt as h,
+    hRt as g,
+    uRt as _
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    f as v,
+    t as y
+} from "./5579e947-f551sia4protgc1g.js";
+import {
+    G as b,
+    W as x
+} from "./8e7d0a25-o85cwyy659hwtt54.js";
+import {
+    T as S,
+    f as C
+} from "./11e71471-nh4mslcftsk3pqyf.js";
+import {
+    t as w
+} from "./a9fa9fda-0o2c1qvydhmhz1w4.js";
+import {
+    n as T,
+    t as E
+} from "./43332649-hrw1zeeczaonr9a4.js";
+import {
+    r as D,
+    t as O
+} from "./eab609b4-cwo8v65mfnn879dz.js";
+import {
+    n as k,
+    t as A
+} from "./a4e05c1e-cy7z77ja31oyrkin.js";
+import {
+    i as j,
+    n as M,
+    r as N,
+    t as P
+} from "./e7105c78-ht80lsn50qgxgmjb.js";
+import {
+    n as F,
+    t as I
+} from "./081a1911-edclxiyw2ng8j9az.js";
+var L, R, z, B, V = e((() => {
+    L = f(), j(), M(), D(), k(), w(), x(), F(), S(), E(), v(), t(), a(), R = s(), z = () => {
+        "use forget";
+        let e = (0, L.c)(13),
+            {
+                isReadonly: t,
+                skills: n
+            } = T(),
+            {
+                skillId: r
+            } = c(),
+            i;
+        if (e[0] !== r || e[1] !== n) {
+            let t;
+            e[3] === r ? t = e[4] : (t = e => e.id === r, e[3] = r, e[4] = t), i = n.find(t), e[0] = r, e[1] = n, e[2] = i
+        } else i = e[2];
+        let a = i;
+        if (!a) {
+            let t;
+            return e[5] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, R.jsx)(u, {
+                to: y.buildRoute(``),
+                replace: !0
+            }), e[5] = t) : t = e[5], t
+        }
+        if (`chatgpt_skill_id` in a) {
+            let t;
+            e[6] === a.id ? t = e[7] : (t = y.buildRoute(`/skills/${a.id}`), e[6] = a.id, e[7] = t);
+            let n;
+            return e[8] === t ? n = e[9] : (n = (0, R.jsx)(u, {
+                to: t,
+                replace: !0
+            }), e[8] = t, e[9] = n), n
+        }
+        let o;
+        return e[10] !== t || e[11] !== a ? (o = (0, R.jsx)(B, {
+            skill: a,
+            isReadonly: t
+        }), e[10] = t, e[11] = a, e[12] = o) : o = e[12], o
+    }, B = e => {
+        "use forget";
+        let t = (0, L.c)(29),
+            {
+                skill: n,
+                isReadonly: r
+            } = e,
+            {
+                nodeId: a,
+                gptId: o
+            } = c(),
+            s = !a,
+            l = i(m),
+            u;
+        t[0] !== a || t[1] !== n.id ? (u = {
+            nodeId: a,
+            skillId: n.id
+        }, t[0] = a, t[1] = n.id, t[2] = u) : u = t[2];
+        let {
+            data: d
+        } = g(u);
+        if (d?.node == null) return null;
+        let f = `tool-detail-skill:${n.id}`,
+            p = `tool-detail-skill-header:${n.id}`,
+            h;
+        t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, R.jsx)(C, {
+            className: `size-11`
+        }), t[3] = h) : h = t[3];
+        let _;
+        t[4] !== d.node || t[5] !== s || t[6] !== n ? (_ = s ? (0, R.jsx)(I, {
+            skill: n
+        }) : (0, R.jsxs)(`div`, {
+            className: `flex-1`,
+            children: [(0, R.jsx)(`h3`, {
+                className: `text-lg font-normal`,
+                children: d.node.name
+            }), (0, R.jsx)(N, {
+                rootLabel: n.name,
+                rootUrl: `../files`,
+                node: d.node
+            })]
+        }), t[4] = d.node, t[5] = s, t[6] = n, t[7] = _) : _ = t[7];
+        let v;
+        t[8] !== d.node || t[9] !== o || t[10] !== n.id || t[11] !== l ? (v = d.node.kind === `file` && (0, R.jsx)(P, {
+            gptId: o,
+            node: d.node,
+            skillId: n.id,
+            versionId: l
+        }), t[8] = d.node, t[9] = o, t[10] = n.id, t[11] = l, t[12] = v) : v = t[12];
+        let y;
+        t[13] !== p || t[14] !== _ || t[15] !== v ? (y = (0, R.jsxs)(`div`, {
+            className: `mb-4 flex items-center gap-3 py-2`,
+            "data-assistant-focus": p,
+            children: [h, _, v]
+        }), t[13] = p, t[14] = _, t[15] = v, t[16] = y) : y = t[16];
+        let x;
+        t[17] !== d.children || t[18] !== d.node || t[19] !== o || t[20] !== r || t[21] !== a || t[22] !== n.id || t[23] !== l ? (x = d.node.kind === `folder` ? (0, R.jsx)(A, {
+            queryNodeId: a ?? null,
+            node: d.node,
+            childNodes: d.children,
+            isReadonly: r,
+            skillId: n.id,
+            rootUrl: `../files`
+        }) : (0, R.jsx)(O, {
+            node: d.node,
+            gptId: o,
+            versionId: l,
+            skillId: n.id,
+            isReadonly: r || b(d.node)
+        }, d.node.id), t[17] = d.children, t[18] = d.node, t[19] = o, t[20] = r, t[21] = a, t[22] = n.id, t[23] = l, t[24] = x) : x = t[24];
+        let S;
+        return t[25] !== f || t[26] !== y || t[27] !== x ? (S = (0, R.jsxs)(`div`, {
+            className: `flex h-full flex-col`,
+            "data-assistant-focus": f,
+            children: [y, x]
+        }), t[25] = f, t[26] = y, t[27] = x, t[28] = S) : S = t[28], S
+    }
+}));
+async function H({
+    params: e
+}) {
+    let t = n();
+    return await t.prefetchQuery(h({
+        gptId: e.gptId,
+        skillId: e.skillId,
+        nodeId: e.nodeId
+    })), t
+}
+async function U(e) {
+    return await H(e), {
+        dehydratedState: null
+    }
+}
+var W, G, K, q, J = e((() => {
+    a(), W = f(), _(), V(), r(), d(), G = s(), K = () => !1, q = l(function() {
+        "use forget";
+        let e = (0, W.c)(3),
+            t = o(),
+            n;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, G.jsx)(z, {}), e[0] = n) : n = e[0];
+        let r;
+        return e[1] === t.dehydratedState ? r = e[2] : (r = (0, G.jsx)(p, {
+            state: t.dehydratedState,
+            children: n
+        }), e[1] = t.dehydratedState, e[2] = r), r
+    })
+}));
+e((() => {
+    J()
+}))();
+export {
+    U as clientLoader, q as
+    default, K as shouldRevalidate
+};
+//# sourceMappingURL=agents_.studio._b.edit._gptId.skills._skillId.files.(_nodeId)-m00343kh.js.map

@@ -1,0 +1,35 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $ as n,
+    At as r,
+    Pt as i,
+    Ut as a,
+    Vn as o,
+    wn as s
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+var c, l, u, d = e((() => {
+    n(), c = s(), l = t(o()), u = a(function() {
+        "use forget";
+        let e = (0, c.c)(6),
+            t = r(),
+            n = i(),
+            [a, o] = (0, l.useState)(!1),
+            s, u;
+        return e[0] !== t.toPath || e[1] !== t.useDocumentHandoff || e[2] !== a || e[3] !== n ? (s = () => {
+            a || (t.useDocumentHandoff ? window.location.replace(t.toPath) : n(t.toPath, {
+                replace: !0
+            }), o(!0))
+        }, u = [a, t.toPath, t.useDocumentHandoff, n], e[0] = t.toPath, e[1] = t.useDocumentHandoff, e[2] = a, e[3] = n, e[4] = s, e[5] = u) : (s = e[4], u = e[5]), (0, l.useEffect)(s, u), null
+    })
+}));
+e((() => {
+    d()
+}))();
+export {
+    u as
+    default
+};
+//# sourceMappingURL=load-page-with-auth-fmwrm215.js.map

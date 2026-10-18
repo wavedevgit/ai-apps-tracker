@@ -1,0 +1,52 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bn as n,
+    Nn as r,
+    Rn as i,
+    Vn as a,
+    wn as o
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+var s, c, l, u, d = e((() => {
+    s = o(), c = t(a()), i(), l = n(), u = e => {
+        "use forget";
+        let t = (0, s.c)(11),
+            {
+                error: n
+            } = e,
+            i = (0, c.useId)(),
+            a;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, l.jsx)(r, {
+            id: `wham.universe.sessions.failure.title`,
+            defaultMessage: `Session failed`
+        }), t[0] = a) : a = t[0];
+        let o;
+        t[1] === i ? o = t[2] : (o = (0, l.jsx)(`h3`, {
+            className: `text-token-text-status-error mb-2 text-sm font-medium`,
+            id: i,
+            children: a
+        }), t[1] = i, t[2] = o);
+        let u;
+        t[3] === n ? u = t[4] : (u = n?.trim() ? n : (0, l.jsx)(r, {
+            id: `wham.universe.sessions.failure.unavailable`,
+            defaultMessage: `No error details are available.`
+        }), t[3] = n, t[4] = u);
+        let d;
+        t[5] === u ? d = t[6] : (d = (0, l.jsx)(`p`, {
+            className: `text-token-text-primary text-sm leading-6 [overflow-wrap:anywhere] whitespace-pre-wrap`,
+            children: u
+        }), t[5] = u, t[6] = d);
+        let f;
+        return t[7] !== i || t[8] !== o || t[9] !== d ? (f = (0, l.jsxs)(`section`, {
+            "aria-labelledby": i,
+            className: `border-token-border-error bg-token-bg-status-error min-w-0 rounded-xl border p-4`,
+            children: [o, d]
+        }), t[7] = i, t[8] = o, t[9] = d, t[10] = f) : f = t[10], f
+    }
+}));
+export {
+    d as n, u as t
+};
+//# sourceMappingURL=55c7ac69-no7k1pnsai0n8oqo.js.map

@@ -1,0 +1,97 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    o as n,
+    s as r
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as i,
+    At as a,
+    Bn as o,
+    Nn as s,
+    Rn as c,
+    Ut as l,
+    Vn as u,
+    Wt as d,
+    wn as f
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+var p, m, h, g, _, v, y = e((() => {
+    i(), p = f(), r(), m = t(u()), c(), h = o(), g = () => [{
+        title: `Opening ChatGPT`
+    }], _ = l(function() {
+        "use forget";
+        let e = (0, p.c)(10),
+            {
+                nativeUrl: t,
+                fallbackUrl: n,
+                fallbackDelayMs: r
+            } = a(),
+            i, o;
+        e[0] !== r || e[1] !== n || e[2] !== t ? (i = () => {
+            if (window.__memoryMobileUpsellBridgeStarted) return;
+            window.__memoryMobileUpsellBridgeStarted = !0;
+            let e = document.visibilityState === `hidden`,
+                i = () => {
+                    document.visibilityState === `hidden` && (e = !0)
+                },
+                a = () => {
+                    e = !0
+                };
+            document.addEventListener(`visibilitychange`, i), window.addEventListener(`pagehide`, a);
+            let o = window.setTimeout(() => {
+                !e && document.visibilityState === `visible` && window.location.replace(n)
+            }, r);
+            try {
+                window.location.assign(t)
+            } catch {
+                window.clearTimeout(o), window.location.replace(n)
+            }
+            return () => {
+                window.clearTimeout(o), document.removeEventListener(`visibilitychange`, i), window.removeEventListener(`pagehide`, a)
+            }
+        }, o = [r, n, t], e[0] = r, e[1] = n, e[2] = t, e[3] = i, e[4] = o) : (i = e[3], o = e[4]), (0, m.useEffect)(i, o);
+        let c;
+        e[5] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, h.jsx)(`div`, {
+            className: `border-token-border-default border-t-token-text-primary h-8 w-8 animate-spin rounded-full border-2`,
+            "aria-hidden": !0
+        }), e[5] = c) : c = e[5];
+        let l;
+        e[6] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, h.jsx)(`p`, {
+            className: `text-base font-medium`,
+            children: (0, h.jsx)(s, {
+                id: `chatgpt.memory_mobile_upsell.deeplink_bridge.status`,
+                defaultMessage: `Opening ChatGPT...`
+            })
+        }), e[6] = l) : l = e[6];
+        let u;
+        e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, h.jsx)(s, {
+            id: `chatgpt.memory_mobile_upsell.deeplink_bridge.web_fallback_link`,
+            defaultMessage: `Continue on web`
+        }), e[7] = u) : u = e[7];
+        let d;
+        return e[8] === n ? d = e[9] : (d = (0, h.jsx)(`main`, {
+            className: `bg-token-bg-primary text-token-text-primary flex min-h-screen items-center justify-center px-6`,
+            children: (0, h.jsxs)(`div`, {
+                className: `flex max-w-sm flex-col items-center gap-3 text-center`,
+                role: `status`,
+                "aria-live": `polite`,
+                "aria-busy": !0,
+                children: [c, l, (0, h.jsx)(`a`, {
+                    className: `text-token-text-secondary hover:text-token-text-primary text-sm underline underline-offset-2`,
+                    href: n,
+                    children: u
+                })]
+            })
+        }), e[8] = n, e[9] = d), d
+    }), v = d(n)
+}));
+e((() => {
+    y()
+}))();
+export {
+    v as ErrorBoundary, _ as
+    default, g as meta
+};
+//# sourceMappingURL=memory-mobile-upsell-o6zm38b5.js.map

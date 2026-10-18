@@ -1,0 +1,2351 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as n,
+    AT as r,
+    Cit as i,
+    Eit as a,
+    IU as o,
+    J2 as s,
+    J8 as c,
+    LU as l,
+    NN as u,
+    S1 as d,
+    Sit as f,
+    Tit as p,
+    Y2 as m,
+    Y8 as h,
+    b5 as g,
+    e1 as _,
+    fU as v,
+    iF as y,
+    jN as b,
+    k1 as x,
+    kT as S,
+    n1 as C,
+    nF as w,
+    o as T,
+    pU as E,
+    q2 as D,
+    r1 as O,
+    rF as k,
+    s as A,
+    u1 as j,
+    v1 as ee,
+    y1 as M,
+    y5 as N
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as P,
+    At as F,
+    Bn as I,
+    Dt as L,
+    Ht as R,
+    Nn as z,
+    Pt as B,
+    Rn as V,
+    St as H,
+    Tn as te,
+    Ut as ne,
+    Vn as U,
+    Wt as W,
+    nt as re,
+    wn as ie,
+    zn as ae,
+    zt as oe
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    Flt as se,
+    Gst as ce,
+    H8t as le,
+    Nlt as G,
+    Ust as K,
+    X4t as ue,
+    Z4t as de,
+    q8t as fe
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    Bv as q,
+    Hv as pe,
+    Qy as me,
+    Vv as he,
+    Zy as ge,
+    zv as _e
+} from "./30901919-e33mbl5u1y88w5wu.js";
+import {
+    d as ve,
+    f as ye,
+    i as be,
+    r as xe
+} from "./74a883a0-hvxle82pkyqdut0n.js";
+import {
+    A as Se,
+    C as Ce,
+    D as we,
+    E as Te,
+    F as Ee,
+    L as De,
+    M as Oe,
+    N as ke,
+    O as Ae,
+    P as je,
+    R as Me,
+    S as Ne,
+    a as Pe,
+    b as Fe,
+    c as Ie,
+    g as Le,
+    h as Re,
+    i as ze,
+    j as Be,
+    k as Ve,
+    n as He,
+    o as Ue,
+    r as We,
+    t as Ge,
+    x as Ke,
+    y as qe
+} from "./55acaef8-f92t1frsa50rn7k8.js";
+import {
+    n as J,
+    t as Je
+} from "./4d183cec-krkn4kqqm3ook1t7.js";
+import {
+    n as Y,
+    t as Ye
+} from "./cb9c87a9-iwfsag0y6bn45f2n.js";
+var Xe, Ze, X, Qe, $e = e((() => {
+        Xe = ie(), se(), be(), g(), Ze = t(U()), V(), P(), Je(), Ee(), Ye(), X = I(), Qe = e => {
+            "use forget";
+            let t = (0, Xe.c)(27),
+                {
+                    children: n,
+                    description: r,
+                    embedded: i,
+                    headerActions: a,
+                    title: o
+                } = e,
+                s = i !== void 0 && i,
+                c = ae(),
+                l = B(),
+                u = (0, Ze.useId)(),
+                d;
+            t[0] !== s || t[1] !== a || t[2] !== c ? (d = !s && (0, X.jsxs)(G.Header, {
+                className: Y.topbar,
+                children: [(0, X.jsxs)(`div`, {
+                    className: Y.brandGroup,
+                    children: [(0, X.jsxs)(`a`, {
+                        "aria-label": c.formatMessage(J.homeLabel),
+                        className: Y.brand,
+                        href: `/`,
+                        children: [(0, X.jsx)(xe, {
+                            "aria-hidden": `true`,
+                            className: Y.brandMark
+                        }), (0, X.jsx)(`span`, {
+                            className: Y.brandName,
+                            children: (0, X.jsx)(z, {
+                                ...J.brandName
+                            })
+                        })]
+                    }), (0, X.jsx)(`span`, {
+                        "aria-hidden": `true`,
+                        className: Y.brandDivider
+                    }), (0, X.jsx)(`span`, {
+                        className: Y.productName,
+                        children: (0, X.jsx)(z, {
+                            ...J.productName
+                        })
+                    })]
+                }), a && (0, X.jsx)(`div`, {
+                    className: Y.headerActions,
+                    children: a
+                })]
+            }), t[0] = s, t[1] = a, t[2] = c, t[3] = d) : d = t[3];
+            let f;
+            t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (f = N(Y.layout, Y.mainPanel), t[4] = f) : f = t[4];
+            let p;
+            t[5] !== o || t[6] !== u ? (p = (0, X.jsx)(`h1`, {
+                className: Y.pageTitle,
+                id: u,
+                children: o
+            }), t[5] = o, t[6] = u, t[7] = p) : p = t[7];
+            let m;
+            t[8] === r ? m = t[9] : (m = (0, X.jsx)(`p`, {
+                className: Y.pageDescription,
+                children: r
+            }), t[8] = r, t[9] = m);
+            let h;
+            t[10] !== p || t[11] !== m ? (h = (0, X.jsxs)(`header`, {
+                className: Y.pageIntro,
+                children: [p, m]
+            }), t[10] = p, t[11] = m, t[12] = h) : h = t[12];
+            let g;
+            t[13] !== n || t[14] !== h ? (g = (0, X.jsx)(G.Contents, {
+                children: (0, X.jsxs)(`main`, {
+                    className: f,
+                    id: `main`,
+                    children: [h, n]
+                })
+            }), t[13] = n, t[14] = h, t[15] = g) : g = t[15];
+            let _;
+            t[16] !== d || t[17] !== g ? (_ = (0, X.jsxs)(X.Fragment, {
+                children: [d, g]
+            }), t[16] = d, t[17] = g, t[18] = _) : _ = t[18];
+            let v = _,
+                y;
+            t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (y = N(Y.root, `overflow-hidden`), t[19] = y) : y = t[19];
+            let b;
+            t[20] !== s || t[21] !== l ? (b = e => {
+                e || l(Me(Be, s), {
+                    replace: !0
+                })
+            }, t[20] = s, t[21] = l, t[22] = b) : b = t[22];
+            let x;
+            return t[23] !== v || t[24] !== b || t[25] !== o ? (x = (0, X.jsx)(G, {
+                accessibleTitle: o,
+                className: y,
+                onOpenChange: b,
+                open: !0,
+                renderInPlace: !0,
+                children: v
+            }), t[23] = v, t[24] = b, t[25] = o, t[26] = x) : x = t[26], x
+        }
+    })),
+    et, tt, Z, nt, rt = e((() => {
+        et = ie(), tt = t(U()), V(), Re(), Je(), Ye(), Z = I(), nt = e => {
+            "use forget";
+            let t = (0, et.c)(24),
+                {
+                    capabilities: n,
+                    currentTier: r,
+                    status: i,
+                    details: a,
+                    onDetailsChange: o,
+                    onSubmit: s,
+                    error: c
+                } = e,
+                l = (0, tt.useId)();
+            if (!n?.researchUpgradeRequests || r !== `discovery`) return null;
+            let u;
+            t[0] === a ? u = t[1] : (u = a.trim(), t[0] = a, t[1] = u);
+            let d = u,
+                f = i === `draft` && d.length >= Ie.researchPurpose.min && a.length <= Ie.researchPurpose.max,
+                p = i === `draft` || i === `submitting`,
+                m = `${l}-title`,
+                h = `${l}-title`,
+                g;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, Z.jsx)(z, {
+                id: `chatgpt.rosalind_access.upgrade.heading`,
+                defaultMessage: `Request Rosalind Research`
+            }), t[2] = g) : g = t[2];
+            let _;
+            t[3] === h ? _ = t[4] : (_ = (0, Z.jsx)(`h2`, {
+                className: `text-token-text-primary text-lg font-medium`,
+                id: h,
+                children: g
+            }), t[3] = h, t[4] = _);
+            let v;
+            t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, Z.jsx)(`p`, {
+                className: Y.sectionDescription,
+                children: (0, Z.jsx)(z, {
+                    id: `chatgpt.rosalind_access.upgrade.eligibility.description`,
+                    defaultMessage: `The upgrade form will request more information for further review.`
+                })
+            }), t[5] = v) : v = t[5];
+            let y;
+            t[6] === _ ? y = t[7] : (y = (0, Z.jsxs)(`div`, {
+                className: `grid gap-1`,
+                children: [_, v]
+            }), t[6] = _, t[7] = y);
+            let b;
+            t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (b = (0, Z.jsx)(`dt`, {
+                className: `text-token-text-secondary`,
+                children: (0, Z.jsx)(z, {
+                    id: `chatgpt.rosalind_access.upgrade.current_access.label`,
+                    defaultMessage: `Current access`
+                })
+            }), t[8] = b) : b = t[8];
+            let x;
+            t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, Z.jsxs)(`dl`, {
+                className: `border-token-border-default flex flex-wrap items-baseline justify-between gap-2 rounded-xl border p-4 text-sm`,
+                children: [b, (0, Z.jsx)(`dd`, {
+                    className: `font-medium`,
+                    children: (0, Z.jsx)(z, {
+                        id: `chatgpt.rosalind_access.upgrade.current_access.discovery`,
+                        defaultMessage: `Rosalind Discovery`
+                    })
+                })]
+            }), t[9] = x) : x = t[9];
+            let S;
+            t[10] !== f || t[11] !== a || t[12] !== c || t[13] !== l || t[14] !== o || t[15] !== s || t[16] !== p || t[17] !== i || t[18] !== d ? (S = p ? (0, Z.jsxs)(`form`, {
+                "aria-busy": i === `submitting`,
+                className: `grid gap-4`,
+                onSubmit: e => {
+                    e.preventDefault(), f && s(d)
+                },
+                children: [(0, Z.jsxs)(`div`, {
+                    className: Y.field,
+                    children: [(0, Z.jsx)(`label`, {
+                        className: Y.fieldLabel,
+                        htmlFor: `${l}-details`,
+                        children: (0, Z.jsx)(z, {
+                            id: `chatgpt.rosalind_access.upgrade.details.label`,
+                            defaultMessage: `Why do you need Rosalind Research?`
+                        })
+                    }), (0, Z.jsx)(`p`, {
+                        className: Y.fieldHint,
+                        id: `${l}-details-help`,
+                        children: (0, Z.jsx)(z, {
+                            id: `chatgpt.rosalind_access.upgrade.details.help_text`,
+                            defaultMessage: `Describe your use case and include 1–2 example prompts or tasks. If you have used Rosalind Discovery, explain any limitations you encountered.`
+                        })
+                    }), (0, Z.jsx)(`textarea`, {
+                        "aria-describedby": c ? `${l}-details-help ${l}-privacy ${l}-error` : `${l}-details-help ${l}-privacy`,
+                        className: `${Y.textarea} mt-2`,
+                        id: `${l}-details`,
+                        maxLength: Ie.researchPurpose.max,
+                        minLength: Ie.researchPurpose.min,
+                        name: `research-upgrade-details`,
+                        onChange: e => o(e.target.value),
+                        readOnly: i === `submitting`,
+                        required: !0,
+                        rows: 5,
+                        value: a
+                    }), (0, Z.jsx)(`p`, {
+                        className: Y.fieldHint,
+                        id: `${l}-privacy`,
+                        children: (0, Z.jsx)(z, {
+                            ...J.researchPrivacy
+                        })
+                    }), c && (0, Z.jsx)(`p`, {
+                        className: `text-token-text-primary mt-2 text-sm`,
+                        id: `${l}-error`,
+                        role: `alert`,
+                        children: c
+                    })]
+                }), (0, Z.jsx)(`p`, {
+                    className: Y.fieldHint,
+                    children: (0, Z.jsx)(z, {
+                        id: `chatgpt.rosalind_access.upgrade.privacy.help_text`,
+                        defaultMessage: `This request does not change your current access or your privacy and data-retention choices.`
+                    })
+                }), (0, Z.jsx)(`button`, {
+                    "aria-disabled": !f,
+                    className: `interactive-button interactive-button-primary justify-self-start rounded-full px-4 py-2 text-sm`,
+                    type: `submit`,
+                    children: i === `submitting` ? (0, Z.jsx)(z, {
+                        id: `chatgpt.rosalind_access.upgrade.submit.pending_label`,
+                        defaultMessage: `Submitting request…`
+                    }) : (0, Z.jsx)(z, {
+                        id: `chatgpt.rosalind_access.upgrade.submit.label`,
+                        defaultMessage: `Submit upgrade request`
+                    })
+                })]
+            }) : (0, Z.jsx)(`p`, {
+                className: `bg-token-bg-secondary rounded-xl p-4 text-sm`,
+                role: `status`,
+                children: i === `pending` ? (0, Z.jsx)(z, {
+                    id: `chatgpt.rosalind_access.upgrade.status.pending`,
+                    defaultMessage: `Your Rosalind Research request is under review. You can continue using Rosalind Discovery.`
+                }) : i === `approved` ? (0, Z.jsx)(z, {
+                    id: `chatgpt.rosalind_access.upgrade.status.approved`,
+                    defaultMessage: `Your Rosalind Research request is approved and awaiting activation. Your current access is still Rosalind Discovery.`
+                }) : (0, Z.jsx)(z, {
+                    id: `chatgpt.rosalind_access.upgrade.status.declined`,
+                    defaultMessage: `Your Rosalind Research request was not approved. Your current access is still Rosalind Discovery.`
+                })
+            }), t[10] = f, t[11] = a, t[12] = c, t[13] = l, t[14] = o, t[15] = s, t[16] = p, t[17] = i, t[18] = d, t[19] = S) : S = t[19];
+            let C;
+            return t[20] !== S || t[21] !== m || t[22] !== y ? (C = (0, Z.jsxs)(`section`, {
+                "aria-labelledby": m,
+                className: `grid gap-4`,
+                children: [y, x, S]
+            }), t[20] = S, t[21] = m, t[22] = y, t[23] = C) : C = t[23], C
+        }
+    }));
+
+function it(e) {
+    "use forget";
+    let t = (0, at.c)(15),
+        {
+            application: n,
+            capabilities: r
+        } = e,
+        i = ae(),
+        a = L(),
+        [o, s] = (0, ot.useState)(``),
+        c = (0, ot.useRef)(null),
+        l = n.researchUpgrade ?? (a.data?.upgradeRequested ? a.data.researchUpgrade : void 0);
+    if (!r?.researchUpgradeRequests || n.state !== `access_granted` || n.activeTier !== `discovery` || !n.canRequestResearchUpgrade && l === void 0) return null;
+    let u = l?.status ?? (a.state === `idle` ? `draft` : `submitting`),
+        d;
+    t[0] !== a.data?.upgradeRequested || t[1] !== i ? (d = a.data?.upgradeRequested === !1 ? i.formatMessage(J.submissionFailed) : void 0, t[0] = a.data?.upgradeRequested, t[1] = i, t[2] = d) : d = t[2];
+    let f;
+    t[3] !== n.bioagentsApplicationReference || t[4] !== n.organizationId || t[5] !== a || t[6] !== l ? (f = e => {
+        a.state !== `idle` || l !== void 0 || (c.current === null && (c.current = crypto.randomUUID()), a.submit({
+            intent: `research-upgrade`,
+            organizationId: n.organizationId,
+            bioagentsApplicationReference: n.bioagentsApplicationReference,
+            details: e,
+            idempotencyKey: c.current
+        }, {
+            action: ke,
+            method: `post`,
+            encType: `application/json`
+        }))
+    }, t[3] = n.bioagentsApplicationReference, t[4] = n.organizationId, t[5] = a, t[6] = l, t[7] = f) : f = t[7];
+    let p;
+    return t[8] !== n.activeTier || t[9] !== r || t[10] !== o || t[11] !== u || t[12] !== d || t[13] !== f ? (p = (0, st.jsx)(nt, {
+        capabilities: r,
+        currentTier: n.activeTier,
+        status: u,
+        details: o,
+        onDetailsChange: s,
+        error: d,
+        onSubmit: f
+    }), t[8] = n.activeTier, t[9] = r, t[10] = o, t[11] = u, t[12] = d, t[13] = f, t[14] = p) : p = t[14], p
+}
+var at, ot, st, ct = e((() => {
+    at = ie(), ot = t(U()), V(), P(), Je(), Ee(), rt(), st = I()
+}));
+
+function lt(e) {
+    let {
+        key: t,
+        label: n,
+        value: r
+    } = e;
+    return (0, $.jsxs)(`div`, {
+        className: Y.reviewRow,
+        children: [(0, $.jsx)(`dt`, {
+            className: Y.reviewLabel,
+            children: (0, $.jsx)(z, {
+                ...n
+            })
+        }), (0, $.jsx)(`dd`, {
+            className: Y.reviewValue,
+            children: r
+        })]
+    }, t)
+}
+
+function ut(e) {
+    return e.canConfigure
+}
+
+function dt(e) {
+    return (0, $.jsx)(`a`, {
+        className: Y.inlineLegalLink,
+        href: `https://help.openai.com/`,
+        rel: `noopener noreferrer`,
+        target: `_blank`,
+        children: e
+    })
+}
+
+function ft(e) {
+    return (0, $.jsx)(S, {
+        as: `a`,
+        color: `secondary`,
+        openNewTab: !0,
+        rel: `noopener noreferrer`,
+        to: le(`/models?tab=workspace`, e.workspaceId),
+        children: (0, $.jsx)(z, {
+            id: `chatgpt.rosalind_access.tracking.workspace_model_settings.configure.button`,
+            defaultMessage: `Configure {workspaceName}`,
+            values: {
+                workspaceName: e.workspaceName
+            }
+        })
+    }, e.workspaceId)
+}
+
+function pt(e, t) {
+    return e.date && t.date ? Date.parse(e.date) - Date.parse(t.date) : 0
+}
+
+function mt(e) {
+    let {
+        date: t,
+        key: n,
+        label: r
+    } = e;
+    return (0, $.jsxs)(`div`, {
+        className: Y.reviewRow,
+        children: [(0, $.jsx)(`dt`, {
+            className: Y.reviewLabel,
+            children: r
+        }), (0, $.jsx)(`dd`, {
+            className: Y.reviewValue,
+            children: t ? (0, $.jsx)(te, {
+                day: `numeric`,
+                hour: `numeric`,
+                minute: `2-digit`,
+                month: `short`,
+                timeZoneName: `short`,
+                value: new Date(t),
+                year: `numeric`
+            }) : (0, $.jsx)(K, {
+                className: `h-5 w-48 max-w-full animate-none!`
+            })
+        })]
+    }, n)
+}
+var ht, Q, $, gt, _t, vt, yt, bt, xt, St, Ct, wt, Tt, Et, Dt, Ot, kt, At = e((() => {
+    ht = ie(), r(), fe(), pe(), me(), q(), o(), ce(), ye(), g(), Q = t(U()), V(), P(), Ke(), Re(), Je(), Ue(), Ee(), $e(), We(), Ye(), ct(), $ = I(), gt = `https://openai.com/policies/services-agreement/`, _t = e => {
+        let {
+            provisioningApproval: t,
+            provisioningPricing: n
+        } = e;
+        return t !== void 0 && n !== void 0 && (t.pricingVersion === n.pricingVersion || e.canApproveProvisioning === !1 && t.acceptedResearchTerms === !0 && Le(t.pricingVersion, n)) && t.requestedResearchMode === n.requestedResearchMode && t.pricingStatus === n.pricingStatus && t.researchTermsVersion === e.researchTermsVersion
+    }, vt = e => e.state === `approved` && !_t(e), yt = e => e.requestedResearchMode === `research_zdr` && e.grantedResearchMode !== `research_zdr` && (e.zdrUpgradeRequested === !0 || e.grantedResearchMode === `research_non_zdr`), bt = e => {
+        switch (e.state) {
+            case `submitted`:
+                return J.submittedStatus;
+            case `in_progress`:
+                return J.statusInReviewBadge;
+            case `action_required`:
+                return e.actionOwner === `applicant` ? J.actionRequiredStatus : J.statusInReviewBadge;
+            case `approved`:
+                return vt(e) ? J.actionRequiredStatus : J.approvedStatus;
+            case `access_granted`:
+                return J.accessGrantedStatus;
+            case `denied`:
+                return J.deniedStatus;
+            case `revoked`:
+                return J.accessRevokedStatus;
+            case `canceled`:
+                return J.canceledStatus
+        }
+    }, xt = e => {
+        switch (e.state) {
+            case `submitted`:
+                return {
+                    headline: J.statusSubmittedHeadline, description: J.statusSubmittedDescription
+                };
+            case `in_progress`:
+                return {
+                    headline: J.statusInProgressHeadline, description: J.statusInProgressDescription
+                };
+            case `action_required`:
+                return e.actionOwner === `applicant` ? {
+                    headline: J.statusActionRequiredHeadline,
+                    description: J.statusActionRequiredDescription
+                } : {
+                    headline: J.statusInProgressHeadline,
+                    description: J.statusInProgressDescription
+                };
+            case `approved`:
+                return yt(e) ? {
+                    headline: J.statusApprovedStandardRetentionHeadline,
+                    description: e.zdrUpgradeApproved === !0 ? J.statusApprovedEnhancedPrivacyAwaitingProvisioningDescription : J.statusApprovedEnhancedPrivacyPendingDescription
+                } : {
+                    headline: J.statusApprovedHeadline,
+                    description: J.statusApprovedDescription
+                };
+            case `access_granted`:
+                return yt(e) ? {
+                    headline: J.statusApprovedStandardRetentionHeadline,
+                    description: e.zdrUpgradeApproved === !0 ? J.statusAccessGrantedEnhancedPrivacyAwaitingProvisioningDescription : J.statusAccessGrantedEnhancedPrivacyPendingDescription
+                } : {
+                    headline: J.statusAccessGrantedHeadline,
+                    description: J.statusAccessGrantedDescription
+                };
+            case `denied`:
+                return {
+                    headline: J.statusDeniedHeadline, description: J.statusDeniedDescription
+                };
+            case `revoked`:
+                return {
+                    headline: J.statusRevokedHeadline, description: J.statusRevokedDescription
+                };
+            case `canceled`:
+                return {
+                    headline: J.statusCanceledHeadline, description: J.statusCanceledDescription
+                }
+        }
+    }, St = e => {
+        switch (e.state) {
+            case `submitted`:
+                return 0;
+            case `in_progress`:
+            case `action_required`:
+                return 1;
+            case `approved`:
+                return 2;
+            case `access_granted`:
+                return 3;
+            case `denied`:
+                return 2;
+            case `revoked`:
+                return 3;
+            case `canceled`:
+                return 0
+        }
+    }, Ct = e => {
+        "use forget";
+        let t = (0, ht.c)(23),
+            {
+                application: n
+            } = e,
+            r = ae(),
+            i = St(n),
+            a = n.state === `action_required` && n.actionOwner === `applicant`,
+            o;
+        t[0] === n ? o = t[1] : (o = vt(n), t[0] = n, t[1] = o);
+        let s = o,
+            c = a || s,
+            l = n.state === `denied` || n.state === `revoked` || n.state === `canceled`,
+            u = s ? `action_required` : n.state === `action_required` && !a ? `in_progress` : n.state,
+            d;
+        t[2] === r ? d = t[3] : (d = r.formatMessage(J.applicationProgress), t[2] = r, t[3] = d);
+        let f = n.state === `canceled` ? J.canceledStatus : J.submittedStatus,
+            p;
+        t[4] === a ? p = t[5] : (p = a ? J.actionRequiredStatus : {
+            id: `chatgpt.rosalind_access.tracking.progress.review.label`,
+            defaultMessage: `In review`,
+            description: `Concise label for the review stage in the four-step GPT-Rosalind application-status progress indicator. This stage follows submission and precedes a decision; it does not indicate that access has been approved or granted.`
+        }, t[4] = a, t[5] = p);
+        let m;
+        t[6] !== n.state || t[7] !== s ? (m = s ? J.actionRequiredStatus : n.state === `denied` ? J.deniedStatus : {
+            id: `chatgpt.rosalind_access.tracking.progress.decision.label`,
+            defaultMessage: `Decision`,
+            description: `Concise label for the decision stage in the four-step GPT-Rosalind application-status progress indicator. An approved decision does not mean product access has already been granted.`
+        }, t[6] = n.state, t[7] = s, t[8] = m) : m = t[8];
+        let h = n.state === `revoked` ? J.accessRevokedStatus : J.accessGrantedStatus,
+            g;
+        t[9] !== f || t[10] !== p || t[11] !== m || t[12] !== h ? (g = [f, p, m, h], t[9] = f, t[10] = p, t[11] = m, t[12] = h, t[13] = g) : g = t[13];
+        let _;
+        t[14] !== i || t[15] !== c || t[16] !== g || t[17] !== l ? (_ = (0, $.jsx)(`ol`, {
+            className: Y.stepList,
+            children: g.map((e, t) => {
+                let n = t < i,
+                    r = t === i;
+                return (0, $.jsx)(`li`, {
+                    "aria-current": r ? `step` : void 0,
+                    className: Y.stepItem,
+                    "data-state": r ? l ? `terminal` : c ? `paused` : `active` : n ? `complete` : `upcoming`,
+                    children: (0, $.jsxs)(`span`, {
+                        className: Y.stepButton,
+                        children: [(0, $.jsx)(`span`, {
+                            "aria-hidden": `true`,
+                            className: Y.stepNumber,
+                            children: n ? (0, $.jsx)(ge, {
+                                className: `icon-sm`
+                            }) : t + 1
+                        }), (0, $.jsx)(`span`, {
+                            className: Y.stepLabel,
+                            children: (0, $.jsx)(z, {
+                                ...e
+                            })
+                        })]
+                    })
+                }, e.id)
+            })
+        }), t[14] = i, t[15] = c, t[16] = g, t[17] = l, t[18] = _) : _ = t[18];
+        let v;
+        return t[19] !== u || t[20] !== d || t[21] !== _ ? (v = (0, $.jsx)(`nav`, {
+            "aria-label": d,
+            className: Y.progress,
+            "data-state": u,
+            children: _
+        }), t[19] = u, t[20] = d, t[21] = _, t[22] = v) : v = t[22], v
+    }, wt = () => (0, $.jsxs)(`section`, {
+        className: Y.successCard,
+        children: [(0, $.jsx)(_e, {
+            "aria-hidden": `true`,
+            className: `icon`
+        }), (0, $.jsx)(`h2`, {
+            className: Y.title,
+            children: (0, $.jsx)(z, {
+                id: `chatgpt.rosalind_access.tracking.empty.heading`,
+                defaultMessage: `No organizations available`
+            })
+        }), (0, $.jsx)(`p`, {
+            className: Y.sectionDescription,
+            children: (0, $.jsx)(z, {
+                id: `chatgpt.rosalind_access.tracking.empty.description`,
+                defaultMessage: `No eligible organizations are available for this account.`
+            })
+        })]
+    }), Tt = e => {
+        "use forget";
+        let t = (0, ht.c)(36),
+            {
+                application: n,
+                refreshing: r,
+                approvalSummary: i,
+                applicationReviewStatus: a,
+                onApproveProvisioning: o,
+                onRetryApplicationReview: s
+            } = e,
+            c = r !== void 0 && r,
+            l = ae(),
+            [u, d] = (0, Q.useState)(!1),
+            [f, p] = (0, Q.useState)(!1),
+            [m, h] = (0, Q.useState)(!1),
+            [g, _] = (0, Q.useState)(!1),
+            [v, y] = (0, Q.useState)(!1),
+            b = (0, Q.useId)(),
+            x = n.requestedResearchMode,
+            C = n.provisioningPricing,
+            w = C?.pricingStatus === `final` && C.pricingVersion === `rosalind-provisioning-agreement-pricing-v1` && C.separateCharge === !0,
+            T;
+        t[0] === n ? T = t[1] : (T = _t(n), t[0] = n, t[1] = T);
+        let E = T,
+            D = n.canApproveProvisioning === !0,
+            O = D && x !== void 0 && n.researchTermsUrl !== void 0 && n.researchTermsVersion !== void 0 && i !== void 0 && i.requestedResearchMode === x && C !== void 0 && C.requestedResearchMode === x && !E && o !== void 0,
+            k = O && u && f && m && !g && !c,
+            A = `${b}-heading`,
+            j = E ? `approved` : `action_required`,
+            ee;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (ee = (0, $.jsx)(_e, {
+            "aria-hidden": `true`,
+            className: `icon`
+        }), t[2] = ee) : ee = t[2];
+        let M = `${b}-heading`,
+            N = E ? J.statusProvisioningApprovalReceivedHeading : J.statusProvisioningApprovalHeading,
+            P;
+        t[3] === N ? P = t[4] : (P = (0, $.jsx)(z, {
+            ...N
+        }), t[3] = N, t[4] = P);
+        let F;
+        t[5] !== M || t[6] !== P ? (F = (0, $.jsx)(`h3`, {
+            id: M,
+            className: Y.statusActionHeading,
+            children: P
+        }), t[5] = M, t[6] = P, t[7] = F) : F = t[7];
+        let I;
+        t[8] !== f || t[9] !== m || t[10] !== D || t[11] !== w || t[12] !== n || t[13] !== a || t[14] !== O || t[15] !== v || t[16] !== b || t[17] !== g || t[18] !== i || t[19] !== k || t[20] !== u || t[21] !== E || t[22] !== l || t[23] !== o || t[24] !== s || t[25] !== C || t[26] !== c || t[27] !== x ? (I = E ? (0, $.jsx)(`p`, {
+            className: Y.statusActionDescription,
+            role: `status`,
+            children: (0, $.jsx)(z, {
+                ...J.statusProvisioningApprovalReceivedDescription
+            })
+        }) : D ? (0, $.jsxs)($.Fragment, {
+            children: [(0, $.jsx)(`p`, {
+                className: Y.statusActionDescription,
+                children: (0, $.jsx)(z, {
+                    ...J.statusProvisioningApprovalDescription
+                })
+            }), x !== void 0 && (0, $.jsxs)($.Fragment, {
+                children: [(0, $.jsx)(`p`, {
+                    className: Y.statusProvisioningRate,
+                    children: C?.separateCharge === !1 ? (0, $.jsx)(z, {
+                        ...J.statusProvisioningNoSeparateCharge
+                    }) : C?.pricingStatus === `final` ? C.rateDisplay : (0, $.jsx)(z, {
+                        ...x === `research_zdr` ? J.statusProvisioningApprovalZdrRates : J.statusProvisioningApprovalStandardRates
+                    })
+                }), w && (0, $.jsx)(`p`, {
+                    className: Y.statusActionDescription,
+                    children: (0, $.jsx)(Pe, {
+                        message: J.statusProvisioningPricingLinks
+                    })
+                }), i === void 0 ? a === `loading` ? (0, $.jsx)(`p`, {
+                    className: Y.statusActionDescription,
+                    role: `status`,
+                    children: (0, $.jsx)(z, {
+                        ...J.statusProvisioningApplicationReviewLoading
+                    })
+                }) : a === `unavailable` ? (0, $.jsxs)(`div`, {
+                    role: `alert`,
+                    children: [(0, $.jsx)(`p`, {
+                        className: Y.statusActionDescription,
+                        children: (0, $.jsx)(z, {
+                            ...J.statusProvisioningApplicationReviewUnavailable
+                        })
+                    }), s !== void 0 && (0, $.jsx)(S, {
+                        className: Y.statusActionButton,
+                        color: `secondary`,
+                        onClick: s,
+                        type: `button`,
+                        children: (0, $.jsx)(z, {
+                            ...J.statusProvisioningApplicationReviewRetry
+                        })
+                    })]
+                }) : null : (0, $.jsx)(Et, {
+                    summary: i
+                }), (0, $.jsx)(`p`, {
+                    className: Y.statusActionDescription,
+                    children: (0, $.jsx)(z, {
+                        ...J.statusProvisioningLegalAttestation,
+                        values: {
+                            servicesAgreement: (0, $.jsx)(`a`, {
+                                className: Y.inlineLegalLink,
+                                href: gt,
+                                rel: `noopener noreferrer`,
+                                target: `_blank`,
+                                children: (0, $.jsx)(z, {
+                                    ...J.statusProvisioningServicesAgreementLink
+                                })
+                            })
+                        }
+                    })
+                }), (0, $.jsxs)(`div`, {
+                    className: Y.statusProvisioningConfirmations,
+                    children: [(0, $.jsxs)(`label`, {
+                        className: Y.checkRow,
+                        htmlFor: `${b}-provisioning`,
+                        children: [(0, $.jsx)(`input`, {
+                            checked: u,
+                            className: Y.checkbox,
+                            disabled: g || c,
+                            id: `${b}-provisioning`,
+                            name: `rosalind-provisioning-confirmation`,
+                            onChange: e => d(e.target.checked),
+                            type: `checkbox`
+                        }), (0, $.jsx)(`span`, {
+                            className: Y.checkLabel,
+                            children: (0, $.jsx)(z, {
+                                ...J.statusProvisioningApprovalConfirmation
+                            })
+                        })]
+                    }), (0, $.jsxs)(`label`, {
+                        className: Y.checkRow,
+                        htmlFor: `${b}-pricing`,
+                        children: [(0, $.jsx)(`input`, {
+                            checked: f,
+                            className: Y.checkbox,
+                            disabled: g || c,
+                            id: `${b}-pricing`,
+                            name: `rosalind-provisioning-pricing-acceptance`,
+                            onChange: e => p(e.target.checked),
+                            type: `checkbox`
+                        }), (0, $.jsx)(`span`, {
+                            className: Y.checkLabel,
+                            children: (0, $.jsx)(z, {
+                                ...C?.separateCharge === !1 ? J.statusProvisioningNoSeparateChargeAcknowledgement : w ? J.statusProvisioningAgreementPricingAcknowledgement : C?.pricingStatus === `final` ? x === `research_zdr` ? J.statusProvisioningApprovalZdrFinalRatesConfirmation : J.statusProvisioningApprovalStandardFinalRatesConfirmation : x === `research_zdr` ? J.statusProvisioningApprovalZdrRatesConfirmation : J.statusProvisioningApprovalStandardRatesConfirmation
+                            })
+                        })]
+                    }), (0, $.jsxs)(`label`, {
+                        className: Y.checkRow,
+                        htmlFor: `${b}-research-terms`,
+                        children: [(0, $.jsx)(`input`, {
+                            "aria-label": l.formatMessage(J.statusProvisioningResearchTermsAgreement, {
+                                researchTerms: l.formatMessage(J.statusProvisioningResearchTermsLink),
+                                servicesAgreement: l.formatMessage(J.statusProvisioningApplicableServicesAgreementLink)
+                            }),
+                            checked: m,
+                            className: Y.checkbox,
+                            disabled: g || c,
+                            id: `${b}-research-terms`,
+                            name: `rosalind-research-terms-acceptance`,
+                            onChange: e => h(e.target.checked),
+                            type: `checkbox`
+                        }), (0, $.jsx)(`span`, {
+                            className: Y.checkLabel,
+                            children: (0, $.jsx)(z, {
+                                ...J.statusProvisioningResearchTermsAgreement,
+                                values: {
+                                    researchTerms: n.researchTermsUrl === void 0 ? (0, $.jsx)(z, {
+                                        ...J.statusProvisioningResearchTermsLink
+                                    }) : (0, $.jsx)(`a`, {
+                                        className: Y.inlineLegalLink,
+                                        href: n.researchTermsUrl,
+                                        rel: `noopener noreferrer`,
+                                        target: `_blank`,
+                                        children: (0, $.jsx)(z, {
+                                            ...J.statusProvisioningResearchTermsLink
+                                        })
+                                    }),
+                                    servicesAgreement: (0, $.jsx)(`a`, {
+                                        className: Y.inlineLegalLink,
+                                        href: gt,
+                                        rel: `noopener noreferrer`,
+                                        target: `_blank`,
+                                        children: (0, $.jsx)(z, {
+                                            ...J.statusProvisioningApplicableServicesAgreementLink
+                                        })
+                                    })
+                                }
+                            })
+                        })]
+                    })]
+                })]
+            }), (0, $.jsx)(S, {
+                color: `primary`,
+                disabled: !k,
+                className: Y.statusActionButton,
+                onClick: async () => {
+                    if (!(!k || !x || !n.researchTermsUrl || !n.researchTermsVersion || !i || !C || !o)) {
+                        _(!0), y(!1);
+                        try {
+                            await o(n, {
+                                confirmedProvisioning: !0,
+                                acceptedPricing: !0,
+                                acceptedResearchTerms: !0,
+                                researchTermsVersion: n.researchTermsVersion,
+                                requestedResearchMode: x,
+                                pricingVersion: C.pricingVersion
+                            })
+                        } catch {
+                            y(!0)
+                        }
+                        _(!1)
+                    }
+                },
+                type: `button`,
+                children: (0, $.jsx)(z, {
+                    ...J.statusProvisioningApprovalButton
+                })
+            }), !O && (0, $.jsx)(`p`, {
+                className: Y.statusActionDescription,
+                role: `status`,
+                children: (0, $.jsx)(z, {
+                    ...J.statusProvisioningApprovalUnavailable
+                })
+            }), v && (0, $.jsx)(`p`, {
+                className: Y.statusActionDescription,
+                role: `alert`,
+                children: (0, $.jsx)(z, {
+                    ...J.statusProvisioningApprovalFailed
+                })
+            })]
+        }) : (0, $.jsx)(`p`, {
+            className: Y.statusActionDescription,
+            children: (0, $.jsx)(z, {
+                ...J.statusProvisioningApprovalAdministratorRequired
+            })
+        }), t[8] = f, t[9] = m, t[10] = D, t[11] = w, t[12] = n, t[13] = a, t[14] = O, t[15] = v, t[16] = b, t[17] = g, t[18] = i, t[19] = k, t[20] = u, t[21] = E, t[22] = l, t[23] = o, t[24] = s, t[25] = C, t[26] = c, t[27] = x, t[28] = I) : I = t[28];
+        let L;
+        t[29] !== I || t[30] !== F ? (L = (0, $.jsxs)(`div`, {
+            className: Y.statusProvisioningApproval,
+            children: [F, I]
+        }), t[29] = I, t[30] = F, t[31] = L) : L = t[31];
+        let R;
+        return t[32] !== L || t[33] !== A || t[34] !== j ? (R = (0, $.jsxs)(`section`, {
+            "aria-labelledby": A,
+            className: Y.statusActionPanel,
+            "data-state": j,
+            children: [ee, L]
+        }), t[32] = L, t[33] = A, t[34] = j, t[35] = R) : R = t[35], R
+    }, Et = e => {
+        "use forget";
+        let t = (0, ht.c)(54),
+            {
+                summary: n
+            } = e,
+            r = ae(),
+            i = (0, Q.useId)(),
+            a, o, s, c, l, u, d, f;
+        if (t[0] !== r || t[1] !== n.additionalCountries || t[2] !== n.additionalLocations || t[3] !== n.primaryCountry || t[4] !== n.products || t[5] !== n.requestedResearchMode || t[6] !== n.researchPurpose || t[7] !== n.researchScopes || t[8] !== n.selectedSafeguards) {
+            let e = {
+                    "chatgpt-codex": J.chatgptCodex,
+                    "internal-api": J.internalApi,
+                    "external-api": J.externalApi
+                },
+                i = {
+                    "regulated-materials": J.regulatedMaterials,
+                    "pathogen-engineering": J.pathogenEngineering,
+                    "biological-toxins": J.biologicalToxins,
+                    "high-containment": J.highContainmentResearch,
+                    "gene-drive": J.geneDriveResearch,
+                    "human-animal-infection": J.humanAnimalInfectionStudies,
+                    "wet-lab": J.wetLab,
+                    none: J.noneOfAbove
+                },
+                p = {
+                    "authorized-personnel": J.safeguardAuthorized,
+                    "institutional-oversight": J.safeguardOversight,
+                    "training-and-sops": J.safeguardTraining,
+                    "secure-research-data": J.safeguardData,
+                    "human-review": J.safeguardHumanReview,
+                    "incident-reporting": J.safeguardIncidents,
+                    "dual-use-review": J.safeguardDualUse,
+                    other: J.safeguardOther
+                },
+                m;
+            t[17] !== r || t[18] !== n.primaryCountry ? (m = r.formatDisplayName(n.primaryCountry, {
+                type: `region`
+            }) ?? n.primaryCountry, t[17] = r, t[18] = n.primaryCountry, t[19] = m) : m = t[19];
+            let h = m,
+                g = n.additionalCountries?.map(e => r.formatDisplayName(e, {
+                    type: `region`
+                }) ?? e),
+                _ = n.requestedResearchMode === `research_zdr` ? J.zdrResearchMode : J.nonZdrResearchMode;
+            t[20] === _ ? a = t[21] : (a = {
+                key: `research-mode`,
+                label: J.summaryResearchMode,
+                value: (0, $.jsx)(z, {
+                    ..._
+                })
+            }, t[20] = _, t[21] = a);
+            let v = r.formatList(n.products.map(t => r.formatMessage(e[t])));
+            t[22] === v ? o = t[23] : (o = {
+                key: `requested-access`,
+                label: J.requestedAccess,
+                value: v
+            }, t[22] = v, t[23] = o), t[24] === n.researchPurpose ? s = t[25] : (s = {
+                key: `research-purpose`,
+                label: J.researchPurposeSummary,
+                value: n.researchPurpose
+            }, t[24] = n.researchPurpose, t[25] = s);
+            let y = r.formatList(n.researchScopes.map(e => r.formatMessage(i[e])));
+            t[26] === y ? c = t[27] : (c = {
+                key: `research-scope`,
+                label: J.summaryScope,
+                value: y
+            }, t[26] = y, t[27] = c), t[28] === h ? l = t[29] : (l = {
+                key: `primary-location`,
+                label: J.summaryPrimaryLocation,
+                value: h
+            }, t[28] = h, t[29] = l);
+            let b = n.additionalLocations === `no` ? (0, $.jsx)(z, {
+                ...J.none
+            }) : n.additionalLocations === `unsure` ? (0, $.jsx)(z, {
+                ...J.additionalLocationsUnconfirmed
+            }) : (0, $.jsx)(z, {
+                ...J.policyReviewRequired,
+                values: {
+                    locations: r.formatList(g ?? [])
+                }
+            });
+            t[30] === b ? u = t[31] : (u = {
+                key: `additional-locations`,
+                label: J.summaryAdditionalLocations,
+                value: b
+            }, t[30] = b, t[31] = u), t[32] === Symbol.for(`react.memo_cache_sentinel`) ? (d = {
+                key: `safeguards`,
+                label: J.summarySafeguards,
+                value: (0, $.jsx)(z, {
+                    ...J.safeguardsConfirmed
+                })
+            }, t[32] = d) : d = t[32], f = n.selectedSafeguards.length === 0 ? [] : [{
+                key: `selected-safeguards`,
+                label: J.safeguardsInPlace,
+                value: r.formatList(n.selectedSafeguards.map(e => r.formatMessage(p[e])))
+            }], t[0] = r, t[1] = n.additionalCountries, t[2] = n.additionalLocations, t[3] = n.primaryCountry, t[4] = n.products, t[5] = n.requestedResearchMode, t[6] = n.researchPurpose, t[7] = n.researchScopes, t[8] = n.selectedSafeguards, t[9] = a, t[10] = o, t[11] = s, t[12] = c, t[13] = l, t[14] = u, t[15] = d, t[16] = f
+        } else a = t[9], o = t[10], s = t[11], c = t[12], l = t[13], u = t[14], d = t[15], f = t[16];
+        let p;
+        t[33] === n.otherSafeguardDetails ? p = t[34] : (p = n.otherSafeguardDetails === void 0 ? [] : [{
+            key: `other-safeguards`,
+            label: J.otherSafeguardsSummary,
+            value: n.otherSafeguardDetails
+        }], t[33] = n.otherSafeguardDetails, t[34] = p);
+        let m;
+        t[35] !== a || t[36] !== o || t[37] !== s || t[38] !== c || t[39] !== l || t[40] !== u || t[41] !== d || t[42] !== f || t[43] !== p ? (m = [a, o, s, c, l, u, d, ...f, ...p], t[35] = a, t[36] = o, t[37] = s, t[38] = c, t[39] = l, t[40] = u, t[41] = d, t[42] = f, t[43] = p, t[44] = m) : m = t[44];
+        let h = m,
+            g;
+        t[45] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, $.jsx)(z, {
+            ...J.applicationDetailsVisualHeading
+        }), t[45] = g) : g = t[45];
+        let _;
+        t[46] === i ? _ = t[47] : (_ = (0, $.jsx)(`h4`, {
+            className: Y.statusActionHeading,
+            id: i,
+            children: g
+        }), t[46] = i, t[47] = _);
+        let v;
+        t[48] === h ? v = t[49] : (v = (0, $.jsx)(`dl`, {
+            className: Y.reviewCard,
+            children: h.map(lt)
+        }), t[48] = h, t[49] = v);
+        let y;
+        return t[50] !== i || t[51] !== _ || t[52] !== v ? (y = (0, $.jsxs)(`section`, {
+            "aria-labelledby": i,
+            children: [_, v]
+        }), t[50] = i, t[51] = _, t[52] = v, t[53] = y) : y = t[53], y
+    }, Dt = e => {
+        "use forget";
+        let t = (0, ht.c)(149),
+            {
+                application: n,
+                refreshing: r,
+                cancellationError: i,
+                cancellationNotice: a,
+                cancellationPending: o,
+                embedded: s,
+                onApproveProvisioning: c,
+                onCancelApplication: u,
+                onRetryApplicationReview: d,
+                organization: f,
+                timeline: p,
+                workspaceModelSettings: m
+            } = e,
+            h = r !== void 0 && r,
+            g = s !== void 0 && s,
+            [_, v] = (0, Q.useState)(null),
+            y = (0, Q.useRef)(null),
+            b = (0, Q.useRef)(null),
+            x = (0, Q.useRef)(!1),
+            C = (0, Q.useId)(),
+            w = (0, Q.useId)(),
+            T = (0, Q.useId)(),
+            E = (0, Q.useId)(),
+            D = n !== null && _?.organizationId === f.id && _.bioagentsApplicationReference === n.bioagentsApplicationReference,
+            O;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (O = e => {
+            x.current && (x.current = !1, Ne({
+                surface: `STATUS`,
+                action: `CANCELLATION_CONFIRMATION`,
+                result: e
+            }))
+        }, t[0] = O) : O = t[0];
+        let k = O,
+            A;
+        t[1] !== n?.state || t[2] !== a || t[3] !== T || t[4] !== D ? (A = () => {
+            if (a && n?.state === `canceled`) {
+                b.current?.focus();
+                return
+            }
+            if (!D) {
+                x.current = !1;
+                return
+            }
+            return y.current?.focus(), () => document.getElementById(T)?.focus()
+        }, t[1] = n?.state, t[2] = a, t[3] = T, t[4] = D, t[5] = A) : A = t[5];
+        let j = n?.state,
+            ee;
+        if (t[6] !== a || t[7] !== T || t[8] !== D || t[9] !== j ? (ee = [j, a, D, T], t[6] = a, t[7] = T, t[8] = D, t[9] = j, t[10] = ee) : ee = t[10], (0, Q.useEffect)(A, ee), n === null) {
+            let e;
+            t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, $.jsx)(`span`, {
+                "aria-hidden": `true`,
+                className: Y.organizationIcon,
+                children: (0, $.jsx)(he, {
+                    className: `icon`
+                })
+            }), t[11] = e) : e = t[11];
+            let n;
+            t[12] === f.name ? n = t[13] : (n = (0, $.jsx)(`h2`, {
+                className: Y.title,
+                children: f.name
+            }), t[12] = f.name, t[13] = n);
+            let r;
+            t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, $.jsx)(`p`, {
+                className: Y.sectionDescription,
+                children: (0, $.jsx)(z, {
+                    id: `chatgpt.rosalind_access.tracking.no_application.description`,
+                    defaultMessage: `There is no active GPT-Rosalind application for this organization.`
+                })
+            }), t[14] = r) : r = t[14];
+            let i;
+            t[15] === f.id ? i = t[16] : (i = new URLSearchParams({
+                organization_id: f.id
+            }), t[15] = f.id, t[16] = i);
+            let a = `${Be}?${i}`,
+                o;
+            t[17] !== g || t[18] !== a ? (o = Me(a, g), t[17] = g, t[18] = a, t[19] = o) : o = t[19];
+            let s;
+            t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, $.jsx)(z, {
+                id: `chatgpt.rosalind_access.tracking.no_application.upgrade_access.button`,
+                defaultMessage: `Upgrade access`
+            }), t[20] = s) : s = t[20];
+            let c;
+            t[21] === o ? c = t[22] : (c = (0, $.jsx)(S, {
+                as: `link`,
+                to: o,
+                color: `primary`,
+                children: s
+            }), t[21] = o, t[22] = c);
+            let l;
+            return t[23] !== c || t[24] !== n ? (l = (0, $.jsxs)(`article`, {
+                className: Y.successCard,
+                children: [e, n, r, c]
+            }), t[23] = c, t[24] = n, t[25] = l) : l = t[25], l
+        }
+        let M, P, F, I, L, R, B, V, H, te, ne, U, W;
+        if (t[26] !== n || t[27] !== o || t[28] !== T || t[29] !== D || t[30] !== g || t[31] !== c || t[32] !== u || t[33] !== d || t[34] !== f.id || t[35] !== f.name || t[36] !== h || t[37] !== p || t[38] !== m || t[39] !== E) {
+            let e = m.filter(ut),
+                r = ze(n),
+                i;
+            t[53] === n ? i = t[54] : (i = xt(n), t[53] = n, t[54] = i);
+            let a = i,
+                s = vt(n) ? `action_required` : n.state === `action_required` && n.actionOwner !== `applicant` ? `in_progress` : n.state;
+            M = n.canCancel && n.organizationId === f.id && (n.state === `submitted` || n.state === `in_progress` || n.state === `action_required`) && u !== void 0, P = M && n.actionOwner === `applicant` && n.requiredAction === `provide_additional_information`;
+            let _;
+            t[55] !== n.bioagentsApplicationReference || t[56] !== M || t[57] !== o || t[58] !== f.id ? (_ = () => {
+                !M || o || (x.current || (x.current = !0, Ne({
+                    surface: `STATUS`,
+                    action: `CANCELLATION_CONFIRMATION`,
+                    result: `STARTED`
+                })), v({
+                    organizationId: f.id,
+                    bioagentsApplicationReference: n.bioagentsApplicationReference
+                }))
+            }, t[55] = n.bioagentsApplicationReference, t[56] = M, t[57] = o, t[58] = f.id, t[59] = _) : _ = t[59], F = _, ne = h || void 0, t[60] === Symbol.for(`react.memo_cache_sentinel`) ? (U = N(Y.successCard, Y.statusDecisionCard), t[60] = U) : U = t[60], W = s;
+            let y;
+            t[61] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, $.jsx)(`p`, {
+                className: Y.fieldLabel,
+                children: (0, $.jsx)(z, {
+                    ...J.applicationStatusLabel
+                })
+            }), t[61] = y) : y = t[61];
+            let b;
+            t[62] === f.name ? b = t[63] : (b = (0, $.jsxs)(`div`, {
+                children: [y, (0, $.jsx)(`h2`, {
+                    className: Y.title,
+                    children: f.name
+                })]
+            }), t[62] = f.name, t[63] = b);
+            let C;
+            t[64] === Symbol.for(`react.memo_cache_sentinel`) ? (C = N(Y.submittedStatus, Y.statusBadge), t[64] = C) : C = t[64];
+            let w;
+            t[65] === n ? w = t[66] : (w = bt(n), t[65] = n, t[66] = w);
+            let O;
+            t[67] === w ? O = t[68] : (O = (0, $.jsx)(z, {
+                ...w
+            }), t[67] = w, t[68] = O);
+            let k;
+            t[69] !== s || t[70] !== O ? (k = (0, $.jsx)(`span`, {
+                role: `status`,
+                className: C,
+                "data-state": s,
+                children: O
+            }), t[69] = s, t[70] = O, t[71] = k) : k = t[71], t[72] !== b || t[73] !== k ? (I = (0, $.jsxs)(`header`, {
+                className: Y.successCardHeader,
+                children: [b, k]
+            }), t[72] = b, t[73] = k, t[74] = I) : I = t[74];
+            let A;
+            t[75] === a.headline ? A = t[76] : (A = (0, $.jsx)(`h3`, {
+                className: Y.statusDecisionHeading,
+                children: (0, $.jsx)(z, {
+                    ...a.headline
+                })
+            }), t[75] = a.headline, t[76] = A);
+            let j;
+            t[77] === a.description ? j = t[78] : (j = (0, $.jsx)(`p`, {
+                className: Y.statusDecisionDescription,
+                children: (0, $.jsx)(z, {
+                    ...a.description
+                })
+            }), t[77] = a.description, t[78] = j), t[79] !== A || t[80] !== j ? (L = (0, $.jsxs)(`div`, {
+                children: [A, j]
+            }), t[79] = A, t[80] = j, t[81] = L) : L = t[81], t[82] === n ? R = t[83] : (R = (0, $.jsx)(Ct, {
+                application: n
+            }), t[82] = n, t[83] = R), t[84] === n.state ? B = t[85] : (B = (n.state === `denied` || n.state === `revoked`) && (0, $.jsx)(`p`, {
+                className: Y.statusActionDescription,
+                children: (0, $.jsx)(z, {
+                    id: `chatgpt.rosalind_access.tracking.status.decision.help_center.description`,
+                    defaultMessage: `If you need additional help, contact OpenAI Support through the <helpCenter>Help Center</helpCenter>.`,
+                    values: {
+                        helpCenter: dt
+                    }
+                })
+            }), t[84] = n.state, t[85] = B), t[86] !== n || t[87] !== c || t[88] !== d || t[89] !== h || t[90] !== p ? (V = n.state === `approved` && (n.canApproveProvisioning === !0 && p ? (0, $.jsx)(Q.Suspense, {
+                fallback: (0, $.jsx)(Tt, {
+                    application: n,
+                    refreshing: h,
+                    applicationReviewStatus: `loading`,
+                    onApproveProvisioning: c
+                }),
+                children: (0, $.jsx)(re, {
+                    errorElement: (0, $.jsx)(Tt, {
+                        application: n,
+                        refreshing: h,
+                        applicationReviewStatus: `unavailable`,
+                        onApproveProvisioning: c,
+                        onRetryApplicationReview: d
+                    }),
+                    resolve: p,
+                    children: e => (0, $.jsx)(Tt, {
+                        application: n,
+                        refreshing: h,
+                        approvalSummary: e?.approvalSummary,
+                        applicationReviewStatus: e?.approvalSummary === void 0 ? `unavailable` : void 0,
+                        onApproveProvisioning: c,
+                        onRetryApplicationReview: d
+                    }, `${n.organizationId}:${n.bioagentsApplicationReference}:${n.provisioningPricing?.pricingVersion??``}:${n.provisioningPricing?.requestedResearchMode??``}:${n.provisioningPricing?.pricingStatus??``}:${n.researchTermsVersion??``}`)
+                })
+            }) : (0, $.jsx)(Tt, {
+                application: n,
+                refreshing: h,
+                applicationReviewStatus: n.canApproveProvisioning === !0 ? `unavailable` : void 0,
+                onApproveProvisioning: c,
+                onRetryApplicationReview: d
+            }, `${n.organizationId}:${n.bioagentsApplicationReference}:${n.provisioningPricing?.pricingVersion??``}:${n.provisioningPricing?.requestedResearchMode??``}:${n.provisioningPricing?.pricingStatus??``}:${n.researchTermsVersion??``}`)), t[86] = n, t[87] = c, t[88] = d, t[89] = h, t[90] = p, t[91] = V) : V = t[91], H = m.length > 0 && (vt(n) || n.state === `access_granted`) && (0, $.jsxs)(`section`, {
+                "aria-labelledby": E,
+                className: Y.statusActionPanel,
+                children: [(0, $.jsx)(he, {
+                    "aria-hidden": `true`,
+                    className: `icon`
+                }), (0, $.jsxs)(`div`, {
+                    children: [(0, $.jsx)(`h3`, {
+                        id: E,
+                        className: Y.statusActionHeading,
+                        children: (0, $.jsx)(z, {
+                            id: `chatgpt.rosalind_access.tracking.workspace_model_settings.heading`,
+                            defaultMessage: `Configure workspace model access`
+                        })
+                    }), (0, $.jsx)(`p`, {
+                        className: Y.statusActionDescription,
+                        children: n.state === `access_granted` ? (0, $.jsx)(z, {
+                            id: `chatgpt.rosalind_access.tracking.workspace_model_settings.active.description`,
+                            defaultMessage: `Your organization’s GPT-Rosalind access is active. Workspace owners and admins can turn on GPT-Rosalind by configuring user access in Admin Console`
+                        }) : (0, $.jsx)(z, {
+                            id: `chatgpt.rosalind_access.tracking.workspace_model_settings.acceptance_required.description`,
+                            defaultMessage: `Activation can take a few minutes. Workspace owners and admins can turn on GPT-Rosalind by configuring user access in Admin Console`
+                        })
+                    }), e.length > 0 && (0, $.jsx)(`div`, {
+                        className: `mt-3 flex flex-wrap gap-2`,
+                        children: e.map(ft)
+                    })]
+                })]
+            }), te = r && (0, $.jsxs)(`section`, {
+                "aria-labelledby": `rosalind-tracking-action-heading`,
+                className: Y.statusActionPanel,
+                "data-state": `action_required`,
+                children: [(0, $.jsx)(l, {
+                    "aria-hidden": `true`,
+                    className: `icon`
+                }), (0, $.jsxs)(`div`, {
+                    children: [(0, $.jsx)(`h3`, {
+                        id: `rosalind-tracking-action-heading`,
+                        className: Y.statusActionHeading,
+                        children: (0, $.jsx)(z, {
+                            ...r.title
+                        })
+                    }), (0, $.jsx)(`p`, {
+                        className: Y.statusActionDescription,
+                        children: (0, $.jsx)(z, {
+                            ...r.description,
+                            values: r.descriptionValues
+                        })
+                    }), r.buttonLabel && (P ? (0, $.jsx)(S, {
+                        className: Y.statusActionButton,
+                        color: `primary`,
+                        disabled: o || D,
+                        id: T,
+                        onClick: F,
+                        type: `button`,
+                        children: (0, $.jsx)(z, {
+                            ...r.buttonLabel
+                        })
+                    }) : r.href ? (0, $.jsx)(S, {
+                        as: `link`,
+                        to: Me(r.href, g),
+                        color: `primary`,
+                        className: Y.statusActionButton,
+                        children: (0, $.jsx)(z, {
+                            ...r.buttonLabel
+                        })
+                    }) : (0, $.jsx)(S, {
+                        color: `primary`,
+                        disabled: !0,
+                        className: Y.statusActionButton,
+                        children: (0, $.jsx)(z, {
+                            ...r.buttonLabel
+                        })
+                    }))]
+                })]
+            }), t[26] = n, t[27] = o, t[28] = T, t[29] = D, t[30] = g, t[31] = c, t[32] = u, t[33] = d, t[34] = f.id, t[35] = f.name, t[36] = h, t[37] = p, t[38] = m, t[39] = E, t[40] = M, t[41] = P, t[42] = F, t[43] = I, t[44] = L, t[45] = R, t[46] = B, t[47] = V, t[48] = H, t[49] = te, t[50] = ne, t[51] = U, t[52] = W
+        } else M = t[40], P = t[41], F = t[42], I = t[43], L = t[44], R = t[45], B = t[46], V = t[47], H = t[48], te = t[49], ne = t[50], U = t[51], W = t[52];
+        let ie;
+        t[92] !== n.activeTier || t[93] !== n.state ? (ie = n.state === `access_granted` && n.activeTier && (0, $.jsxs)(`div`, {
+            className: Y.reviewRow,
+            children: [(0, $.jsx)(`dt`, {
+                className: Y.reviewLabel,
+                children: (0, $.jsx)(z, {
+                    id: `chatgpt.rosalind_access.tracking.current_tier.label`,
+                    defaultMessage: `Current access`
+                })
+            }), (0, $.jsx)(`dd`, {
+                className: Y.reviewValue,
+                children: n.activeTier === `discovery` ? (0, $.jsx)(z, {
+                    id: `chatgpt.rosalind_access.tracking.current_tier.discovery`,
+                    defaultMessage: `Rosalind Discovery`
+                }) : (0, $.jsx)(z, {
+                    id: `chatgpt.rosalind_access.tracking.current_tier.research`,
+                    defaultMessage: `Rosalind Research`
+                })
+            })]
+        }), t[92] = n.activeTier, t[93] = n.state, t[94] = ie) : ie = t[94];
+        let ae, oe;
+        t[95] === Symbol.for(`react.memo_cache_sentinel`) ? (ae = (0, $.jsx)(`dt`, {
+            className: Y.reviewLabel,
+            children: (0, $.jsx)(z, {
+                ...J.confirmationReferenceLabel
+            })
+        }), oe = N(Y.reviewValue, `font-mono break-all`), t[95] = ae, t[96] = oe) : (ae = t[95], oe = t[96]);
+        let se;
+        t[97] === n.bioagentsApplicationReference ? se = t[98] : (se = (0, $.jsxs)(`div`, {
+            className: Y.reviewRow,
+            children: [ae, (0, $.jsx)(`dd`, {
+                className: oe,
+                children: n.bioagentsApplicationReference
+            })]
+        }), t[97] = n.bioagentsApplicationReference, t[98] = se);
+        let ce;
+        t[99] === n.requestedResearchMode ? ce = t[100] : (ce = n.requestedResearchMode && (0, $.jsxs)(`div`, {
+            className: N(Y.reviewRow, Y.statusResearchMode),
+            children: [(0, $.jsx)(`dt`, {
+                className: Y.reviewLabel,
+                children: (0, $.jsx)(z, {
+                    ...J.statusResearchModeLabel
+                })
+            }), (0, $.jsx)(`dd`, {
+                className: Y.reviewValue,
+                children: (0, $.jsx)(z, {
+                    ...n.requestedResearchMode === `research_zdr` ? J.zdrResearchMode : J.nonZdrResearchMode
+                })
+            })]
+        }), t[99] = n.requestedResearchMode, t[100] = ce);
+        let le;
+        t[101] !== ie || t[102] !== se || t[103] !== ce ? (le = (0, $.jsxs)(`dl`, {
+            className: Y.submittedSummary,
+            children: [ie, se, ce]
+        }), t[101] = ie, t[102] = se, t[103] = ce, t[104] = le) : le = t[104];
+        let G;
+        t[105] !== n || t[106] !== p ? (G = p && (0, $.jsx)(Ot, {
+            application: n,
+            timeline: p
+        }, n.bioagentsApplicationReference), t[105] = n, t[106] = p, t[107] = G) : G = t[107];
+        let K;
+        t[108] === Symbol.for(`react.memo_cache_sentinel`) ? (K = (0, $.jsx)(`p`, {
+            className: Y.submissionNotice,
+            children: (0, $.jsx)(z, {
+                ...J.privacyApprovalNotice
+            })
+        }), t[108] = K) : K = t[108];
+        let ue;
+        t[109] === n.state ? ue = t[110] : (ue = (n.state === `submitted` || n.state === `in_progress` || n.state === `action_required` || n.state === `approved`) && (0, $.jsx)(`p`, {
+            className: Y.submissionNotice,
+            children: (0, $.jsx)(z, {
+                ...J.noAccessGranted
+            })
+        }), t[109] = n.state, t[110] = ue);
+        let de;
+        t[111] === i ? de = t[112] : (de = i && (0, $.jsx)(`p`, {
+            className: Y.formError,
+            role: `alert`,
+            children: i
+        }), t[111] = i, t[112] = de);
+        let fe;
+        t[113] === a ? fe = t[114] : (fe = a && (0, $.jsxs)(`div`, {
+            className: Y.infoBanner,
+            ref: b,
+            role: `status`,
+            tabIndex: -1,
+            children: [(0, $.jsx)(ge, {
+                "aria-hidden": `true`,
+                className: `icon`
+            }), (0, $.jsx)(z, {
+                ...J.cancellationComplete
+            })]
+        }), t[113] = a, t[114] = fe);
+        let q;
+        t[115] !== n || t[116] !== M || t[117] !== P || t[118] !== w || t[119] !== C || t[120] !== o || t[121] !== T || t[122] !== D || t[123] !== u || t[124] !== F || t[125] !== f.id || t[126] !== f.name ? (q = M && (D ? (0, $.jsx)(`section`, {
+            "aria-describedby": w,
+            "aria-labelledby": C,
+            className: Y.warningBanner,
+            role: `alertdialog`,
+            children: (0, $.jsxs)(`div`, {
+                children: [(0, $.jsx)(`h2`, {
+                    className: Y.sectionLabel,
+                    id: C,
+                    children: (0, $.jsx)(z, {
+                        ...J.cancelApplicationHeading
+                    })
+                }), (0, $.jsx)(`p`, {
+                    id: w,
+                    children: (0, $.jsx)(z, {
+                        ...J.cancelApplicationDescription,
+                        values: {
+                            organizationName: f.name,
+                            organizationId: f.id
+                        }
+                    })
+                }), (0, $.jsx)(`p`, {
+                    children: (0, $.jsx)(z, {
+                        ...J.cancelApplicationReference,
+                        values: {
+                            applicationReference: n.bioagentsApplicationReference
+                        }
+                    })
+                }), (0, $.jsxs)(`div`, {
+                    className: Y.buttonRow,
+                    children: [(0, $.jsx)(`button`, {
+                        "aria-disabled": o || void 0,
+                        className: N(`interactive-button`, `interactive-button-secondary`, Y.button),
+                        onClick: e => {
+                            if (o) {
+                                e.preventDefault();
+                                return
+                            }
+                            k(`CANCELLED`), v(null)
+                        },
+                        ref: y,
+                        type: `button`,
+                        children: (0, $.jsx)(z, {
+                            ...J.keepApplication
+                        })
+                    }), (0, $.jsx)(`button`, {
+                        "aria-disabled": o || void 0,
+                        className: N(`interactive-button`, `interactive-button-destructive`, Y.button),
+                        onClick: e => {
+                            if (o) {
+                                e.preventDefault();
+                                return
+                            }
+                            k(`SUCCEEDED`), u?.(n)
+                        },
+                        type: `button`,
+                        children: (0, $.jsx)(z, {
+                            ...o ? J.cancelingApplication : J.confirmCancellation
+                        })
+                    })]
+                })]
+            })
+        }) : P ? null : (0, $.jsx)(`button`, {
+            className: N(`interactive-button`, `interactive-button-sec-destructive`, Y.button),
+            disabled: o,
+            id: T,
+            onClick: F,
+            type: `button`,
+            children: (0, $.jsx)(z, {
+                ...J.cancelApplication
+            })
+        })), t[115] = n, t[116] = M, t[117] = P, t[118] = w, t[119] = C, t[120] = o, t[121] = T, t[122] = D, t[123] = u, t[124] = F, t[125] = f.id, t[126] = f.name, t[127] = q) : q = t[127];
+        let pe;
+        t[128] !== n.state || t[129] !== g ? (pe = (n.state === `canceled` || n.state === `denied`) && (0, $.jsx)(S, {
+            as: `link`,
+            to: Me(`/rosalind/application`, g),
+            color: `primary`,
+            children: (0, $.jsx)(z, {
+                id: `chatgpt.rosalind_access.tracking.reapply.button`,
+                defaultMessage: `Apply again`
+            })
+        }), t[128] = n.state, t[129] = g, t[130] = pe) : pe = t[130];
+        let me;
+        return t[131] !== I || t[132] !== L || t[133] !== R || t[134] !== B || t[135] !== V || t[136] !== H || t[137] !== te || t[138] !== le || t[139] !== G || t[140] !== ue || t[141] !== de || t[142] !== fe || t[143] !== q || t[144] !== pe || t[145] !== ne || t[146] !== U || t[147] !== W ? (me = (0, $.jsxs)(`article`, {
+            "aria-busy": ne,
+            className: U,
+            "data-state": W,
+            children: [I, L, R, B, V, H, te, le, G, K, ue, de, fe, q, pe]
+        }), t[131] = I, t[132] = L, t[133] = R, t[134] = B, t[135] = V, t[136] = H, t[137] = te, t[138] = le, t[139] = G, t[140] = ue, t[141] = de, t[142] = fe, t[143] = q, t[144] = pe, t[145] = ne, t[146] = U, t[147] = W, t[148] = me) : me = t[148], me
+    }, Ot = e => {
+        "use forget";
+        let t = (0, ht.c)(23),
+            {
+                application: n,
+                timeline: r
+            } = e,
+            [i, a] = (0, Q.useState)(null),
+            o, s;
+        t[0] === r ? (o = t[1], s = t[2]) : (o = () => {
+            let e = !0;
+            return r.then(t => {
+                e && a(e => ({
+                    source: r,
+                    value: t ?? e?.value
+                }))
+            }, () => {
+                e && a(e => ({
+                    source: r,
+                    value: e?.value
+                }))
+            }), () => {
+                e = !1
+            }
+        }, s = [r], t[0] = r, t[1] = o, t[2] = s), (0, Q.useEffect)(o, s);
+        let c = i?.source !== r,
+            l = i?.value,
+            u = l?.decisionAt !== void 0 || n.state === `approved` || n.state === `denied` || n.state === `revoked` || n.state === `access_granted`,
+            d = l?.accessGrantedAt !== void 0 || n.state === `access_granted` || n.state === `revoked`,
+            f = 2 + Number(u) + Number(d),
+            p = l?.submittedAt,
+            m;
+        t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, $.jsx)(z, {
+            id: `chatgpt.rosalind_access.tracking.timeline.submitted.label`,
+            defaultMessage: `Submitted`
+        }), t[3] = m) : m = t[3];
+        let h, g, _, v, y;
+        if (t[4] !== d || t[5] !== u || t[6] !== c || t[7] !== f || t[8] !== p || t[9] !== l) {
+            let e;
+            t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, $.jsx)(z, {
+                ...J.statusUpdatedLabel
+            }), t[15] = e) : e = t[15];
+            let n = [{
+                date: p,
+                key: `submitted`,
+                label: m
+            }, ...l?.decisionAt || c && u ? [{
+                date: l?.decisionAt,
+                key: `decision`,
+                label: (0, $.jsx)(z, {
+                    id: `chatgpt.rosalind_access.tracking.timeline.decision.label`,
+                    defaultMessage: `Decision recorded`
+                })
+            }] : [], ...l?.accessGrantedAt || c && d ? [{
+                date: l?.accessGrantedAt,
+                key: `access-granted`,
+                label: (0, $.jsx)(z, {
+                    id: `chatgpt.rosalind_access.tracking.timeline.access_granted.label`,
+                    defaultMessage: `Access granted`
+                })
+            }] : [], {
+                date: l?.statusUpdatedAt,
+                key: `last-updated`,
+                label: e
+            }].sort(pt);
+            h = c || void 0, g = l === void 0 || void 0, t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = N(Y.submittedSummary, Y.statusTimeline), t[16] = _) : _ = t[16], v = f, y = (l !== void 0 || c) && n.map(mt), t[4] = d, t[5] = u, t[6] = c, t[7] = f, t[8] = p, t[9] = l, t[10] = h, t[11] = g, t[12] = _, t[13] = v, t[14] = y
+        } else h = t[10], g = t[11], _ = t[12], v = t[13], y = t[14];
+        let b;
+        return t[17] !== h || t[18] !== g || t[19] !== _ || t[20] !== v || t[21] !== y ? (b = (0, $.jsx)(`dl`, {
+            "aria-busy": h,
+            "aria-hidden": g,
+            className: _,
+            "data-row-count": v,
+            children: y
+        }), t[17] = h, t[18] = g, t[19] = _, t[20] = v, t[21] = y, t[22] = b) : b = t[22], b
+    }, kt = e => {
+        "use forget";
+        let t = (0, ht.c)(39),
+            {
+                application: n,
+                capabilities: r,
+                viewerUserId: i,
+                applicationHistoryUnavailable: a,
+                applicationHistoryRefreshing: o,
+                applicationTimeline: s,
+                cancellationError: c,
+                cancellationNotice: l,
+                cancellationPending: u,
+                embedded: d,
+                headerAccountMenu: f,
+                onApproveProvisioning: p,
+                onCancelApplication: m,
+                onRetryOrganizationLookup: h,
+                organization: g,
+                organizationLookupError: _,
+                organizationLookupPending: v,
+                organizations: y,
+                workspaceModelSettings: b
+            } = e,
+            x = a !== void 0 && a,
+            C = o !== void 0 && o,
+            w = d !== void 0 && d,
+            T = _ !== void 0 && _,
+            E = v !== void 0 && v,
+            D;
+        t[0] === b ? D = t[1] : (D = b === void 0 ? [] : b, t[0] = b, t[1] = D);
+        let O = D,
+            k = T || x ? `UNAVAILABLE` : E ? null : g === null ? `ORGANIZATION_LIST` : n === null ? `NO_APPLICATION` : `APPLICATION`,
+            A = g?.id,
+            j = (0, Q.useRef)(null),
+            ee, M;
+        t[2] !== A || t[3] !== k ? (ee = () => {
+            if (k === null) {
+                j.current = null;
+                return
+            }
+            j.current?.view === k && j.current.organizationId === A || (j.current = {
+                view: k,
+                organizationId: A
+            }, Ce(k))
+        }, M = [A, k], t[2] = A, t[3] = k, t[4] = ee, t[5] = M) : (ee = t[4], M = t[5]), (0, Q.useEffect)(ee, M);
+        let N, P;
+        t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (N = (0, $.jsx)(z, {
+            id: `chatgpt.rosalind_access.tracking.page.heading`,
+            defaultMessage: `Track your application`
+        }), P = (0, $.jsx)(z, {
+            id: `chatgpt.rosalind_access.tracking.page.description`,
+            defaultMessage: `Check the status of a GPT-Rosalind access application for your organization.`
+        }), t[6] = N, t[7] = P) : (N = t[6], P = t[7]);
+        let F;
+        t[8] === w ? F = t[9] : (F = Me(Be, w), t[8] = w, t[9] = F);
+        let I;
+        t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (I = (0, $.jsx)(z, {
+            id: `chatgpt.rosalind_access.tracking.organization.back.button`,
+            defaultMessage: `All organizations`
+        }), t[10] = I) : I = t[10];
+        let L;
+        t[11] === F ? L = t[12] : (L = (0, $.jsx)(S, {
+            as: `link`,
+            to: F,
+            color: `ghost`,
+            className: `w-fit rounded-full`,
+            icon: ve,
+            iconClassName: `rtl:rotate-180`,
+            children: I
+        }), t[11] = F, t[12] = L);
+        let R;
+        t[13] !== n || t[14] !== C || t[15] !== x || t[16] !== s || t[17] !== c || t[18] !== l || t[19] !== u || t[20] !== r || t[21] !== w || t[22] !== p || t[23] !== m || t[24] !== h || t[25] !== g || t[26] !== T || t[27] !== E || t[28] !== y || t[29] !== i || t[30] !== O ? (R = T || x ? (0, $.jsxs)(`section`, {
+            className: Y.successCard,
+            role: `alert`,
+            children: [(0, $.jsx)(`p`, {
+                className: Y.sectionDescription,
+                children: (0, $.jsx)(z, {
+                    ...x && !T ? J.applicationStatusUnavailable : J.organizationLookupError
+                })
+            }), (0, $.jsx)(S, {
+                color: `primary`,
+                onClick: () => {
+                    h !== void 0 && (Ne({
+                        surface: `STATUS`,
+                        action: `RETRY_STATUS`,
+                        result: `STARTED`
+                    }), h())
+                },
+                type: `button`,
+                children: (0, $.jsx)(z, {
+                    ...J.retryOrganizationLookup
+                })
+            })]
+        }) : E ? (0, $.jsxs)(`section`, {
+            "aria-busy": `true`,
+            children: [(0, $.jsx)(`span`, {
+                className: `sr-only`,
+                role: `status`,
+                children: (0, $.jsx)(z, {
+                    ...J.organizationsLoading
+                })
+            }), (0, $.jsxs)(`article`, {
+                "aria-hidden": `true`,
+                className: Y.successCard,
+                children: [(0, $.jsx)(K, {
+                    className: `h-5 w-32 animate-none!`
+                }), (0, $.jsx)(K, {
+                    className: `h-8 w-3/4 animate-none!`
+                }), (0, $.jsx)(K, {
+                    className: `h-20 w-full animate-none!`
+                }), (0, $.jsx)(K, {
+                    className: `h-16 w-full animate-none!`
+                }), (0, $.jsx)(K, {
+                    className: `h-40 w-full animate-none!`
+                })]
+            })]
+        }) : g ? (0, $.jsxs)($.Fragment, {
+            children: [(0, $.jsx)(Dt, {
+                application: n,
+                refreshing: C,
+                cancellationError: c,
+                cancellationNotice: l,
+                cancellationPending: u,
+                embedded: w,
+                onApproveProvisioning: p,
+                onCancelApplication: m,
+                onRetryApplicationReview: h,
+                organization: g,
+                timeline: s,
+                workspaceModelSettings: O
+            }, `${i??``}:${g.id}`), n && i && r?.researchUpgradeRequests && n.state === `access_granted` && n.activeTier === `discovery` && (0, $.jsx)(it, {
+                application: n,
+                capabilities: r
+            }, `${i}:${n.organizationId}:${n.bioagentsApplicationReference}`)]
+        }) : y.length === 0 ? (0, $.jsx)(wt, {}) : null, t[13] = n, t[14] = C, t[15] = x, t[16] = s, t[17] = c, t[18] = l, t[19] = u, t[20] = r, t[21] = w, t[22] = p, t[23] = m, t[24] = h, t[25] = g, t[26] = T, t[27] = E, t[28] = y, t[29] = i, t[30] = O, t[31] = R) : R = t[31];
+        let B;
+        t[32] !== L || t[33] !== R ? (B = (0, $.jsxs)(`div`, {
+            className: Y.intro,
+            children: [L, R]
+        }), t[32] = L, t[33] = R, t[34] = B) : B = t[34];
+        let V;
+        return t[35] !== w || t[36] !== f || t[37] !== B ? (V = (0, $.jsx)(Qe, {
+            embedded: w,
+            title: N,
+            description: P,
+            headerActions: f,
+            children: B
+        }), t[35] = w, t[36] = f, t[37] = B, t[38] = V) : V = t[38], V
+    }
+}));
+
+function jt(e) {
+    return e === !0
+}
+
+function Mt(e) {
+    throw e
+}
+
+function Nt(e, t) {
+    return typeof e == `object` && !!e && `pricingVersion` in e && e.pricingVersion === t.pricingVersion && `requestedResearchMode` in e && e.requestedResearchMode === t.requestedResearchMode && `pricingStatus` in e && (e.pricingStatus === `provisional` || e.pricingStatus === `final`) && `rateDisplay` in e && typeof e.rateDisplay == `string` && !!e.rateDisplay.trim() && e.rateDisplay.length <= 240
+}
+
+function Pt(e, t, n) {
+    return typeof e == `object` && !!e && `approvedAt` in e && typeof e.approvedAt == `string` && Number.isFinite(Date.parse(e.approvedAt)) && `pricingVersion` in e && typeof e.pricingVersion == `string` && (e.pricingVersion === t.pricingVersion || Le(e.pricingVersion, n)) && `acceptedResearchTerms` in e && e.acceptedResearchTerms === !0 && `researchTermsVersion` in e && e.researchTermsVersion === t.researchTermsVersion && `requestedResearchMode` in e && e.requestedResearchMode === t.requestedResearchMode && `pricingStatus` in e && e.pricingStatus === n.pricingStatus
+}
+
+function Ft(e, t, n, r, i) {
+    return typeof e == `object` && !!e && `organizationId` in e && e.organizationId === t && `bioagentsApplicationReference` in e && e.bioagentsApplicationReference === n && `state` in e && e.state === `approved` && `canCancel` in e && typeof e.canCancel == `boolean` && `canApproveProvisioning` in e && e.canApproveProvisioning === !1 && `requestedResearchMode` in e && e.requestedResearchMode === r.requestedResearchMode && `researchTermsUrl` in e && e.researchTermsUrl === i && `researchTermsVersion` in e && e.researchTermsVersion === r.researchTermsVersion && `provisioningPricing` in e && Nt(e.provisioningPricing, r) && `provisioningApproval` in e && Pt(e.provisioningApproval, r, e.provisioningPricing)
+}
+async function It({
+    request: e,
+    serverLoader: t
+}) {
+    let r = await t();
+    if (!(`workspaceHandoffOrganizationId` in r)) return r;
+    let i = r.workspaceHandoffOrganizationId,
+        a = je(i, new URL(e.url).searchParams.get(`embedded`) === `codex`),
+        o = c(),
+        s = _(await o.ensureQueryData(C())).filter(e => Ge(e)?.id === i),
+        l = f.getCookie(p.Workspace);
+    if (s.some(e => e.id === l && e.canAccessWithCurrentSession)) throw H(a);
+    let u = s.find(e => e.canAccessWithCurrentSession) ?? s[0];
+    if (u === void 0) throw H(a);
+    let d = Ae(a),
+        {
+            updatedAccount: m
+        } = await M(o, u.id);
+    if (!m) throw new Response(null, {
+        status: 503,
+        headers: Kt
+    });
+    if (!u.canAccessWithCurrentSession) return await n({
+        fallbackScreenHint: `login`,
+        callbackUrl: d,
+        ...u.ssoConnectionName == null ? {} : {
+            additionalAuthParams: {
+                connection: u.ssoConnectionName
+            }
+        }
+    }), r;
+    throw await D(), H(d)
+}
+
+function Lt() {}
+
+function Rt(e) {
+    return {
+        workspaceId: e.id,
+        workspaceName: e.name?.trim() || e.id,
+        canConfigure: e.isOwnerOfAccount() || e.isAdminOfAccount()
+    }
+}
+var zt, Bt, Vt, Ht, Ut, Wt, Gt, Kt, qt, Jt, Yt, Xt, Zt, Qt, $t = e((() => {
+    P(), zt = ie(), de(), Ve(), we(), Re(), Ke(), At(), Je(), Ee(), He(), j(), x(), E(), w(), u(), i(), a(), h(), m(), A(), Bt = t(U()), V(), Vt = I(), Ht = `noindex, nofollow, noarchive`, Ut = /^org[-_][A-Za-z0-9_-]{1,124}$/, Wt = /^[0-9a-f]{64}$/, Gt = `rosalind-access.pending-status-organization`, Kt = {
+        "Cache-Control": `private, no-store, no-cache, must-revalidate, max-age=0`,
+        Pragma: `no-cache`,
+        "Referrer-Policy": `no-referrer`,
+        "X-Robots-Tag": Ht
+    }, qt = {
+        hasRouteMeta: !0,
+        useScrollRestoration: !0
+    }, Jt = () => [{
+        title: `GPT-Rosalind Application Status | OpenAI`
+    }, {
+        name: `robots`,
+        content: Ht
+    }, {
+        name: `referrer`,
+        content: `no-referrer`
+    }], It.hydrate = !0, Yt = ne(function() {
+        "use forget";
+        let e = (0, zt.c)(11),
+            t = d(),
+            n = F(),
+            [r] = R();
+        if (`workspaceHandoffOrganizationId` in n) {
+            let t;
+            e[0] === r ? t = e[1] : (t = r.get(`embedded`), e[0] = r, e[1] = t);
+            let n = t === `codex`,
+                i;
+            e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (i = [], e[2] = i) : i = e[2];
+            let a;
+            return e[3] === n ? a = e[4] : (a = (0, Vt.jsx)(kt, {
+                application: null,
+                embedded: n,
+                organization: null,
+                organizationLookupPending: !0,
+                organizations: i
+            }), e[3] = n, e[4] = a), a
+        }
+        if (`statusContext` in n) {
+            let r;
+            return e[5] !== t || e[6] !== n ? (r = (0, Vt.jsx)(Xt, {
+                accountsQuery: t,
+                loaderData: n
+            }), e[5] = t, e[6] = n, e[7] = r) : r = e[7], r
+        }
+        let i;
+        return e[8] !== t || e[9] !== n ? (i = (0, Vt.jsx)(Zt, {
+            accountsQuery: t,
+            loaderData: n,
+            viewerUser: n.viewerUser,
+            viewerUserId: n.viewerUserId
+        }), e[8] = t, e[9] = n, e[10] = i) : i = e[10], i
+    }), Xt = e => {
+        "use forget";
+        let t = (0, zt.c)(18),
+            {
+                accountsQuery: n,
+                loaderData: r
+            } = e,
+            i = r.statusContext,
+            [a] = R(),
+            o;
+        t[0] === a ? o = t[1] : (o = a.get(`organization_id`), t[0] = a, t[1] = o);
+        let s = o,
+            c = r.viewerUserId,
+            l = `organizationContext` in r ? r.organizationContext : void 0,
+            [u, d] = (0, Bt.useState)(null),
+            [f, p] = (0, Bt.useState)(null),
+            m, h;
+        t[2] !== l || t[3] !== s || t[4] !== i || t[5] !== c ? (m = () => {
+            let e = !0;
+            return i.then(t => {
+                e && d({
+                    context: i,
+                    loaderData: t,
+                    organizationId: s,
+                    unavailable: !1,
+                    viewerUserId: c
+                })
+            }, () => {
+                e && d({
+                    context: i,
+                    organizationId: s,
+                    unavailable: !0,
+                    viewerUserId: c
+                })
+            }), l !== void 0 && l.then(t => {
+                e && p({
+                    context: l,
+                    value: t
+                })
+            }, Lt), () => {
+                e = !1
+            }
+        }, h = [l, s, i, c], t[2] = l, t[3] = s, t[4] = i, t[5] = c, t[6] = m, t[7] = h) : (m = t[6], h = t[7]), (0, Bt.useEffect)(m, h);
+        let g = u?.viewerUserId === c && u.organizationId === s ? u : null,
+            _ = g?.context === i ? g : null,
+            v = f !== null && f.context === l ? f.value : void 0,
+            y = _?.unavailable,
+            b = (_ ?? g)?.loaderData,
+            x = _ === null,
+            S = l !== void 0 && v === void 0,
+            C;
+        return t[8] !== v || t[9] !== n || t[10] !== r.selectedWorkspaceOrganizationId || t[11] !== r.viewerUser || t[12] !== r.viewerUserId || t[13] !== y || t[14] !== b || t[15] !== x || t[16] !== S ? (C = (0, Vt.jsx)(Zt, {
+            accountsQuery: n,
+            accountWideOrganizationContext: v,
+            applicationHistoryUnavailable: y,
+            loaderData: b,
+            statusContextPending: x,
+            organizationDiscoveryPending: S,
+            selectedWorkspaceOrganizationId: r.selectedWorkspaceOrganizationId,
+            viewerUser: r.viewerUser,
+            viewerUserId: r.viewerUserId
+        }), t[8] = v, t[9] = n, t[10] = r.selectedWorkspaceOrganizationId, t[11] = r.viewerUser, t[12] = r.viewerUserId, t[13] = y, t[14] = b, t[15] = x, t[16] = S, t[17] = C) : C = t[17], C
+    }, Zt = e => {
+        "use forget";
+        let t = (0, zt.c)(103),
+            {
+                accountsQuery: n,
+                accountWideOrganizationContext: r,
+                applicationHistoryUnavailable: i,
+                loaderData: a,
+                organizationDiscoveryPending: o,
+                selectedWorkspaceOrganizationId: l,
+                statusContextPending: u,
+                viewerUser: d,
+                viewerUserId: f
+            } = e,
+            p = i !== void 0 && i,
+            m = o !== void 0 && o,
+            h = u !== void 0 && u,
+            g = ae(),
+            _ = B(),
+            [x] = R(),
+            S;
+        t[0] === x ? S = t[1] : (S = x.get(`embedded`), t[0] = x, t[1] = S);
+        let C = S === `codex`,
+            w = oe(),
+            T = L(),
+            E = (0, Bt.useRef)(!1),
+            D = (0, Bt.useRef)(!1),
+            [A, j] = (0, Bt.useState)(!1),
+            [M, N] = (0, Bt.useState)(null),
+            [P, F] = (0, Bt.useState)(null),
+            I = p || a?.applicationHistoryAvailable === !1,
+            z, V;
+        t[2] !== C || t[3] !== a || t[4] !== _ || t[5] !== f ? (z = () => {
+            if (a !== void 0) try {
+                let e = window.sessionStorage.getItem(Gt);
+                if (e === null) return;
+                let t = JSON.parse(e);
+                if (typeof t != `object` || !t || !(`userId` in t) || t.userId !== f || !(`organizationId` in t) || typeof t.organizationId != `string` || !Ut.test(t.organizationId) || t.organizationId === a.selectedWorkspaceOrganizationId && !a.organizations.some(e => e.id === t.organizationId)) {
+                    window.sessionStorage.removeItem(Gt);
+                    return
+                }
+                if (t.organizationId !== a.selectedWorkspaceOrganizationId) return;
+                let n = `${Oe}?${new URLSearchParams({organization_id:t.organizationId})}`;
+                window.sessionStorage.removeItem(Gt), _(Me(n, C), {
+                    replace: !0
+                })
+            } catch {
+                try {
+                    window.sessionStorage.removeItem(Gt)
+                } catch {}
+            }
+        }, V = [C, a, _, f], t[2] = C, t[3] = a, t[4] = _, t[5] = f, t[6] = z, t[7] = V) : (z = t[6], V = t[7]), (0, Bt.useEffect)(z, V);
+        let H = n.data,
+            te = H?.accountItems,
+            ne = O(H)?.id,
+            U;
+        t[8] !== H || t[9] !== n.isError ? (U = H !== void 0 && !n.isError && ue(H), t[8] = H, t[9] = n.isError, t[10] = U) : U = t[10];
+        let W = U,
+            re;
+        t[11] === d.email ? re = t[12] : (re = d.email.trim().toLowerCase(), t[11] = d.email, t[12] = re);
+        let ie = re,
+            se;
+        t[13] !== W || t[14] !== ie ? (se = W ? b().filter(e => !!e.email && !!e.sessionToken && e.email?.trim().toLowerCase() !== ie) : [], t[13] = W, t[14] = ie, t[15] = se) : se = t[15];
+        let ce = se,
+            le = a?.organizations,
+            G = T.data?.organizationSource === `verified` ? T.data.organizations : void 0,
+            K = r?.organizationSource === `verified` ? r.organizations : void 0,
+            de = a?.selectedWorkspaceOrganizationId ?? l,
+            fe;
+        if (t[16] !== te || t[17] !== K || t[18] !== le || t[19] !== G) {
+            let e = new Map,
+                n = new Map,
+                r = new Map;
+            for (let t of te ?? []) {
+                let i = Ge(t);
+                if (i === void 0) continue;
+                n.set(t.id, t);
+                let a = e.get(i.id);
+                (a === void 0 || t.canAccessWithCurrentSession && !a.canAccessWithCurrentSession) && (e.set(i.id, t), r.set(i.id, {
+                    id: i.id,
+                    name: i.name
+                }))
+            }
+            for (let e of [le, K, G])
+                for (let t of e ?? []) r.set(t.id, {
+                    id: t.id,
+                    name: t.name
+                });
+            fe = {
+                workspaceAccounts: e,
+                organizations: r,
+                organizationOptions: Array.from(r.values()),
+                workspaceAccountOptions: Array.from(n.values())
+            }, t[16] = te, t[17] = K, t[18] = le, t[19] = G, t[20] = fe
+        } else fe = t[20];
+        let {
+            workspaceAccounts: q,
+            organizations: pe,
+            organizationOptions: me,
+            workspaceAccountOptions: he
+        } = fe, ge;
+        t[21] !== te || t[22] !== n.isFetching || t[23] !== n.isLoading || t[24] !== de || t[25] !== q ? (ge = de !== void 0 && te !== void 0 && !n.isLoading && !n.isFetching && !q.has(de), t[21] = te, t[22] = n.isFetching, t[23] = n.isLoading, t[24] = de, t[25] = q, t[26] = ge) : ge = t[26];
+        let _e = ge,
+            ve = T.load,
+            ye, be;
+        t[27] !== n.isError || t[28] !== ve || t[29] !== _e ? (ye = () => {
+            E.current || !n.isError && !_e || (E.current = !0, ve(`${Be}?includeWorkspaces=true`))
+        }, be = [n.isError, ve, _e], t[27] = n.isError, t[28] = ve, t[29] = _e, t[30] = ye, t[31] = be) : (ye = t[30], be = t[31]), (0, Bt.useEffect)(ye, be);
+        let xe;
+        t[32] !== K || t[33] !== le || t[34] !== G || t[35] !== q ? (xe = le?.some(e => e.hasDirectApiMembership === !1 && !q.has(e.id)) === !0 || K?.some(e => e.hasDirectApiMembership === !1 && !q.has(e.id)) === !0 || G?.some(e => e.hasDirectApiMembership === !1 && !q.has(e.id)) === !0, t[32] = K, t[33] = le, t[34] = G, t[35] = q, t[36] = xe) : xe = t[36];
+        let Ce = xe,
+            we = n.refetch,
+            Ee, je;
+        t[37] !== Ce || t[38] !== we ? (Ee = () => {
+            !Ce || D.current || we === void 0 || (D.current = !0, we())
+        }, je = [Ce, we], t[37] = Ce, t[38] = we, t[39] = Ee, t[40] = je) : (Ee = t[39], je = t[40]), (0, Bt.useEffect)(Ee, je);
+        let Pe = a !== void 0 && pe.size === 0 && !n.isLoading && !n.isFetching && (n.isError || r?.organizationSource === `unavailable`),
+            Ie = M?.userId === f && M.organizationId === a?.organization?.id && M.organizationId === a?.application?.organizationId && M.bioagentsApplicationReference === a?.application?.bioagentsApplicationReference ? M : null,
+            Le = P?.userId === f && P.organizationId === a?.organization?.id && P.organizationId === a?.application?.organizationId && P.bioagentsApplicationReference === a?.application?.bioagentsApplicationReference && P.application.provisioningPricing?.pricingVersion === a?.application?.provisioningPricing?.pricingVersion && P.application.provisioningPricing?.requestedResearchMode === a?.application?.provisioningPricing?.requestedResearchMode && P.application.provisioningPricing?.pricingStatus === a?.application?.provisioningPricing?.pricingStatus && P.application.researchTermsUrl === a?.application?.researchTermsUrl && P.application.researchTermsVersion === a?.application?.researchTermsVersion ? P : null,
+            Re = Ie?.application ?? Le?.application ?? a?.application ?? null,
+            ze;
+        t[41] !== a?.application || t[42] !== a?.organization || t[43] !== w || t[44] !== h || t[45] !== f ? (ze = async (e, t) => {
+            if (h) throw Error(`The application status is being refreshed.`);
+            let n = Fe();
+            Ne({
+                surface: `STATUS`,
+                action: `APPROVE_PROVISIONING`,
+                result: `STARTED`,
+                approvalAttemptId: n
+            });
+            let r = a?.organization,
+                i = a?.application,
+                o = i?.provisioningPricing;
+            if (r == null || i == null || i.state !== `approved` || i.canApproveProvisioning !== !0 || e.canApproveProvisioning !== !0 || e.organizationId !== r.id || i.organizationId !== r.id || e.bioagentsApplicationReference !== i.bioagentsApplicationReference || o === void 0 || o.pricingVersion !== t.pricingVersion || o.requestedResearchMode !== t.requestedResearchMode || i.researchTermsUrl === void 0 || e.researchTermsUrl !== i.researchTermsUrl || i.researchTermsVersion !== t.researchTermsVersion || i.requestedResearchMode !== t.requestedResearchMode || !jt(t.confirmedProvisioning) || !jt(t.acceptedPricing) || !jt(t.acceptedResearchTerms)) throw Ne({
+                surface: `STATUS`,
+                action: `APPROVE_PROVISIONING`,
+                result: `BLOCKED`,
+                failureReason: `APPLICATION_CONFLICT`,
+                approvalAttemptId: n
+            }), Error(`The provisioning approval is no longer available.`);
+            let s = `UNCONFIRMED`,
+                c = `REQUEST_FAILED`,
+                l = !1;
+            try {
+                let a = await fetch(ke, {
+                    method: `POST`,
+                    headers: {
+                        "Content-Type": `application/json`,
+                        ...n === void 0 ? {} : {
+                            "X-Client-Request-Id": n
+                        }
+                    },
+                    body: JSON.stringify({
+                        intent: `approve_provisioning`,
+                        organizationId: r.id,
+                        bioagentsApplicationReference: e.bioagentsApplicationReference,
+                        confirmedProvisioning: !0,
+                        acceptedPricing: !0,
+                        acceptedResearchTerms: !0,
+                        researchTermsVersion: t.researchTermsVersion,
+                        requestedResearchMode: t.requestedResearchMode,
+                        pricingVersion: t.pricingVersion
+                    }),
+                    credentials: `same-origin`,
+                    cache: `no-store`
+                });
+                if (a.redirected) {
+                    let e = new URL(a.url, window.location.origin);
+                    if (e.origin === window.location.origin && e.pathname === `/auth/login`) {
+                        let t = De(window.location.pathname) ? `${window.location.pathname}${window.location.search}${window.location.hash}` : Oe;
+                        e.searchParams.set(`next`, t), Ne({
+                            surface: `STATUS`,
+                            action: `APPROVE_PROVISIONING`,
+                            result: `BLOCKED`,
+                            failureReason: `AUTHENTICATION_REQUIRED`,
+                            approvalAttemptId: n
+                        }), l = !0, window.location.assign(`${e.pathname}${e.search}${e.hash}`);
+                        return
+                    }
+                    c = `INVALID_RESPONSE`, Mt(Error(`The provisioning approval could not be authenticated.`))
+                }
+                c = `INVALID_RESPONSE`;
+                let o = await a.json();
+                a.ok || (s = [400, 401, 403, 404, 409, 422].includes(a.status) ? `BLOCKED` : `UNCONFIRMED`, c = a.status === 401 ? `AUTHENTICATION_REQUIRED` : a.status === 403 ? `ORGANIZATION_UNAVAILABLE` : a.status === 409 ? `APPLICATION_CONFLICT` : a.status === 400 || a.status === 422 ? `VALIDATION` : `UNAVAILABLE`, a.status === 409 && w.revalidate(), Mt(Error(`The provisioning approval was not accepted.`))), Ft(o, r.id, e.bioagentsApplicationReference, t, i.researchTermsUrl) || Mt(Error(`The provisioning approval receipt was invalid.`)), Ne({
+                    surface: `STATUS`,
+                    action: `APPROVE_PROVISIONING`,
+                    result: `SUCCEEDED`,
+                    approvalAttemptId: n
+                }), l = !0, F({
+                    userId: f,
+                    organizationId: r.id,
+                    bioagentsApplicationReference: e.bioagentsApplicationReference,
+                    application: {
+                        ...i,
+                        canCancel: o.canCancel,
+                        canApproveProvisioning: !1,
+                        researchTermsUrl: o.researchTermsUrl,
+                        provisioningApproval: {
+                            approvedAt: o.provisioningApproval.approvedAt,
+                            acceptedResearchTerms: !0,
+                            researchTermsVersion: o.provisioningApproval.researchTermsVersion,
+                            pricingVersion: o.provisioningApproval.pricingVersion,
+                            requestedResearchMode: o.provisioningApproval.requestedResearchMode,
+                            pricingStatus: o.provisioningApproval.pricingStatus
+                        },
+                        provisioningPricing: {
+                            pricingVersion: o.provisioningPricing.pricingVersion,
+                            requestedResearchMode: o.provisioningPricing.requestedResearchMode,
+                            pricingStatus: o.provisioningPricing.pricingStatus,
+                            rateDisplay: o.provisioningPricing.rateDisplay,
+                            separateCharge: o.provisioningPricing.separateCharge
+                        }
+                    }
+                }), w.revalidate()
+            } catch (e) {
+                let t = e;
+                l || Ne({
+                    surface: `STATUS`,
+                    action: `APPROVE_PROVISIONING`,
+                    result: s,
+                    failureReason: c,
+                    approvalAttemptId: n
+                }), Mt(t)
+            }
+        }, t[41] = a?.application, t[42] = a?.organization, t[43] = w, t[44] = h, t[45] = f, t[46] = ze) : ze = t[46];
+        let Ve = ze,
+            He;
+        t[47] !== g || t[48] !== a?.application || t[49] !== a?.organization || t[50] !== Ie?.pending || t[51] !== w || t[52] !== h || t[53] !== f ? (He = async e => {
+            if (h) return;
+            let t = a?.organization,
+                n = a?.application;
+            if (Ie?.pending || t == null || n == null || !e.canCancel || !n.canCancel || e.organizationId !== t.id || n.organizationId !== t.id || e.bioagentsApplicationReference !== n.bioagentsApplicationReference || e.state !== `submitted` && e.state !== `in_progress` && e.state !== `action_required`) return;
+            let r = {
+                bioagentsApplicationReference: e.bioagentsApplicationReference,
+                organizationId: t.id,
+                userId: f
+            };
+            N({
+                ...r,
+                pending: !0
+            }), Ne({
+                surface: `STATUS`,
+                action: `CANCEL`,
+                result: `STARTED`
+            });
+            let i = (e, t, n) => {
+                    Ne({
+                        surface: `STATUS`,
+                        action: `CANCEL`,
+                        result: n === void 0 ? `FAILED` : n,
+                        failureReason: t
+                    }), N({
+                        ...r,
+                        error: g.formatMessage(e),
+                        pending: !1
+                    })
+                },
+                o = !1;
+            try {
+                let n = await fetch(ke, {
+                    method: `POST`,
+                    headers: {
+                        "Content-Type": `application/json`
+                    },
+                    body: JSON.stringify({
+                        intent: `cancel`,
+                        organizationId: t.id,
+                        bioagentsApplicationReference: e.bioagentsApplicationReference
+                    }),
+                    credentials: `same-origin`,
+                    cache: `no-store`
+                });
+                if (n.redirected) {
+                    let e = new URL(n.url, window.location.origin);
+                    if (e.origin === window.location.origin && e.pathname === `/auth/login`) {
+                        let t = De(window.location.pathname) ? `${window.location.pathname}${window.location.search}${window.location.hash}` : Oe;
+                        e.searchParams.set(`next`, t), N({
+                            ...r,
+                            pending: !1
+                        }), Ne({
+                            surface: `STATUS`,
+                            action: `CANCEL`,
+                            result: `BLOCKED`,
+                            failureReason: `AUTHENTICATION_REQUIRED`
+                        }), window.location.assign(`${e.pathname}${e.search}${e.hash}`);
+                        return
+                    }
+                    i(J.cancellationFailed, `INVALID_RESPONSE`);
+                    return
+                }
+                o = !0;
+                let a = await n.json();
+                o = !1;
+                let s = typeof a == `object` && a ? a : null;
+                if (!n.ok) {
+                    i(s?.code === `cancellation_forbidden` ? J.cancellationForbidden : s?.code === `organization_unavailable` ? J.organizationUnavailable : J.cancellationFailed, qe(s?.code), s?.code === `cancellation_forbidden` ? `BLOCKED` : `FAILED`);
+                    return
+                }
+                if (s?.state !== `canceled` || s.organizationId !== t.id || typeof s.bioagentsApplicationReference != `string` || !Wt.test(s.bioagentsApplicationReference) || s.bioagentsApplicationReference !== e.bioagentsApplicationReference || s.canCancel !== !1) {
+                    i(J.cancellationFailed, `INVALID_RESPONSE`);
+                    return
+                }
+                Ne({
+                    surface: `STATUS`,
+                    action: `CANCEL`,
+                    result: `SUCCEEDED`
+                }), N({
+                    ...r,
+                    application: {
+                        ...e,
+                        canCancel: !1,
+                        state: `canceled`
+                    },
+                    pending: !1
+                }), w.revalidate()
+            } catch {
+                i(J.cancellationFailed, o ? `INVALID_RESPONSE` : `REQUEST_FAILED`)
+            }
+        }, t[47] = g, t[48] = a?.application, t[49] = a?.organization, t[50] = Ie?.pending, t[51] = w, t[52] = h, t[53] = f, t[54] = He) : He = t[54];
+        let Ue = He,
+            We;
+        t[55] !== ne || t[56] !== C || t[57] !== g || t[58] !== A || t[59] !== f ? (We = async e => {
+            if (A || e.id === ne) return;
+            let t = e.organizationId;
+            if (t === void 0 || !Ut.test(t)) {
+                v().danger(g.formatMessage(J.workspaceSwitchFailed));
+                return
+            }
+            let n = Ae(Me(`${Oe}?${new URLSearchParams({organization_id:t})}`, C));
+            if (j(!0), k(), !e.canAccessWithCurrentSession) try {
+                window.sessionStorage.setItem(Gt, JSON.stringify({
+                    userId: f,
+                    organizationId: t
+                }))
+            } catch {}
+            let r = () => {
+                try {
+                    window.sessionStorage.removeItem(Gt)
+                } catch {}
+                v().danger(g.formatMessage(J.workspaceSwitchFailed)), y(), j(!1)
+            };
+            try {
+                let {
+                    willRedirect: t,
+                    updatedAccount: i
+                } = await ee(c(), e.id, g, v(), !0, n);
+                if (t) return;
+                if (!i) {
+                    r();
+                    return
+                }
+                s(n)
+            } catch {
+                r()
+            }
+        }, t[55] = ne, t[56] = C, t[57] = g, t[58] = A, t[59] = f, t[60] = We) : We = t[60];
+        let Ke = We,
+            Je;
+        t[61] !== W || t[62] !== g || t[63] !== d ? (Je = async (e, t) => {
+            if (W) try {
+                let n = window.location,
+                    r = `${n.pathname}${n.search}${n.hash}`;
+                if (e === void 0) await Se(r, d.email);
+                else {
+                    let i = new URL(r, n.origin);
+                    i.searchParams.delete(`organization_id`), await Se(`${i.pathname}${i.search}${i.hash}`, d.email, {
+                        sessionToken: e.sessionToken,
+                        workspaceAccountId: t
+                    })
+                }
+            } catch {
+                v().danger(g.formatMessage(J.accountSwitchFailed))
+            }
+        }, t[61] = W, t[62] = g, t[63] = d, t[64] = Je) : Je = t[64];
+        let Y = Je,
+            Ye = a?.capabilities,
+            Xe = a?.viewerUserId,
+            Ze = a?.applicationTimeline,
+            X = Ie?.error,
+            Qe = Ie?.application !== void 0,
+            $e = Ie?.pending || h,
+            et;
+        t[65] !== W || t[66] !== ne || t[67] !== ce || t[68] !== Y || t[69] !== Ke || t[70] !== A || t[71] !== d || t[72] !== he ? (et = (0, Vt.jsx)(Te, {
+            accountSwitchingEnabled: W,
+            currentWorkspaceAccountId: ne,
+            disabled: A,
+            onSwitchAccount: Y,
+            onSwitchWorkspace: Ke,
+            savedAccountSwitchSessions: ce,
+            user: d,
+            workspaceAccounts: he
+        }), t[65] = W, t[66] = ne, t[67] = ce, t[68] = Y, t[69] = Ke, t[70] = A, t[71] = d, t[72] = he, t[73] = et) : et = t[73];
+        let tt;
+        t[74] !== n.isError || t[75] !== ve || t[76] !== we || t[77] !== w || t[78] !== _e ? (tt = () => {
+            we?.(), (n.isError || _e) && (E.current = !0, ve(`${Be}?includeWorkspaces=true`)), w.revalidate()
+        }, t[74] = n.isError, t[75] = ve, t[76] = we, t[77] = w, t[78] = _e, t[79] = tt) : tt = t[79];
+        let Z = a?.organization ?? null,
+            nt = h && a === void 0 || pe.size === 0 && (a === void 0 || m || T.state !== `idle` || n.isLoading || n.isFetching),
+            rt;
+        t[80] !== a || t[81] !== he ? (rt = a?.organization ? he.filter(e => e.organizationId === a.organization?.id).map(Rt) : [], t[80] = a, t[81] = he, t[82] = rt) : rt = t[82];
+        let it;
+        return t[83] !== Pe || t[84] !== Re || t[85] !== Ve || t[86] !== Ue || t[87] !== C || t[88] !== I || t[89] !== me || t[90] !== h || t[91] !== Ye || t[92] !== Xe || t[93] !== Ze || t[94] !== X || t[95] !== Qe || t[96] !== $e || t[97] !== et || t[98] !== tt || t[99] !== Z || t[100] !== nt || t[101] !== rt ? (it = (0, Vt.jsx)(kt, {
+            embedded: C,
+            application: Re,
+            capabilities: Ye,
+            viewerUserId: Xe,
+            applicationHistoryUnavailable: I,
+            applicationHistoryRefreshing: h,
+            applicationTimeline: Ze,
+            cancellationError: X,
+            cancellationNotice: Qe,
+            cancellationPending: $e,
+            headerAccountMenu: et,
+            onApproveProvisioning: Ve,
+            onCancelApplication: Ue,
+            onRetryOrganizationLookup: tt,
+            organization: Z,
+            organizationLookupError: Pe,
+            organizationLookupPending: nt,
+            organizations: me,
+            workspaceModelSettings: rt
+        }), t[83] = Pe, t[84] = Re, t[85] = Ve, t[86] = Ue, t[87] = C, t[88] = I, t[89] = me, t[90] = h, t[91] = Ye, t[92] = Xe, t[93] = Ze, t[94] = X, t[95] = Qe, t[96] = $e, t[97] = et, t[98] = tt, t[99] = Z, t[100] = nt, t[101] = rt, t[102] = it) : it = t[102], it
+    }, Qt = W(T)
+}));
+e((() => {
+    $t()
+}))();
+export {
+    Qt as ErrorBoundary, It as clientLoader, Yt as
+    default, qt as handle, Jt as meta
+};
+//# sourceMappingURL=r.b749fb02595e04c3007a54375f3f4374_.status-o2cdl2ss.js.map

@@ -1,0 +1,626 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    AT as n,
+    B6 as r,
+    Irt as i,
+    Nrt as a,
+    QG as o,
+    Qit as s,
+    ZG as c,
+    a7 as l,
+    dz as u,
+    fz as d,
+    i5 as f,
+    iat as p,
+    iot as m,
+    kT as h,
+    l7 as g,
+    o1 as _,
+    oot as v,
+    rot as y,
+    u1 as b
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as x,
+    Bn as S,
+    Ht as C,
+    N as w,
+    Nn as T,
+    O as E,
+    Pt as ee,
+    Rn as D,
+    Ut as O,
+    Vn as k,
+    s as A,
+    w as j,
+    wn as M,
+    zn as te
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    Flt as N,
+    Jnt as P,
+    Jxn as ne,
+    Nlt as F,
+    _at as re,
+    fat as ie,
+    mat as ae,
+    mjn as oe
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    Fc as se,
+    Pc as ce
+} from "./30901919-e33mbl5u1y88w5wu.js";
+import {
+    Au as le,
+    Fv as ue,
+    Mu as de,
+    Nu as I,
+    by as L,
+    ju as R,
+    sy as z,
+    uv as B,
+    xv as V
+} from "./8b34dbc2-gf9wnwcahty27ylx.js";
+import {
+    n as H,
+    t as fe
+} from "./b2cbd5c7-m8w403w5kiq0u2w6.js";
+import {
+    i as pe,
+    n as me,
+    r as he,
+    t as U
+} from "./bbbe3e8f-dp36vgf1nzqcxubf.js";
+import {
+    n as ge,
+    t as _e
+} from "./b5b42835-fmsn5ldafjkha1xl.js";
+
+function ve({
+    reference: e,
+    userId: t,
+    accountId: n
+}) {
+    let r = () => {
+        let e = y();
+        return e?.user?.id === t && e.account?.id === n
+    };
+    return j({
+        queryKey: [`orbit-plugin-suggestions`, t, n, e],
+        queryFn: async ({
+            signal: t
+        }) => {
+            if (t.throwIfAborted(), !r()) throw Error(`Account changed`);
+            let i = new AbortController,
+                a = i.signal,
+                o = () => {
+                    r() || i.abort()
+                },
+                s = v(o),
+                u = () => i.abort(t.reason);
+            t.addEventListener(`abort`, u);
+            try {
+                t.aborted && u(), o(), a.throwIfAborted();
+                let r = await l.safeGet(`/messaging/plugin-suggestions/{reference}`, {
+                    parameters: {
+                        path: {
+                            reference: e
+                        }
+                    },
+                    additionalHeaders: c(n),
+                    signal: a,
+                    preserveAccountIdOnRetry: !0
+                });
+                return a.throwIfAborted(), r
+            } catch (e) {
+                throw a.throwIfAborted(), e
+            } finally {
+                s(), t.removeEventListener(`abort`, u)
+            }
+        },
+        staleTime: 0,
+        gcTime: 0,
+        refetchOnWindowFocus: !1,
+        refetchOnReconnect: !1,
+        retry: (e, t) => e >= 5 || !r() || !(t instanceof s) || t.rawError.name === `AbortError` ? !1 : t.isTransportError ? t.rawError.name === `NetworkError` || t.rawError instanceof TypeError && /^(?:failed to fetch|fetch failed|load failed|networkerror when attempting to fetch resource\.?|network error)$/i.test(t.rawError.message) : [404, 408, 424, 429, 500, 502, 503, 504].includes(t.status),
+        retryDelay: e => Math.min(1e3 * 2 ** e, 4e3)
+    })
+}
+var ye = e((() => {
+    a(), m(), p(), g(), o(), A()
+}));
+
+function W(e, t) {
+    let n = y();
+    return n?.user?.id === e && n.account?.id === t
+}
+
+function be() {
+    "use forget";
+    let e = (0, K.c)(4),
+        [t] = C(),
+        n = t.get(`bundle`),
+        r = y(),
+        i = f(H),
+        a;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, J.jsx)(_e, {}), e[0] = a) : a = e[0];
+    let o = i && n && n.length <= 4096 && r?.user?.id && r.account?.id ? (0, J.jsx)(xe, {
+            reference: n,
+            userId: r.user.id,
+            accountId: r.account.id
+        }, JSON.stringify([r.user.id, r.account.id, n])) : (0, J.jsx)(Y, {
+            children: (0, J.jsx)(G, {})
+        }),
+        s;
+    return e[1] !== a || e[2] !== o ? (s = (0, J.jsxs)(J.Fragment, {
+        children: [a, o]
+    }), e[1] = a, e[2] = o, e[3] = s) : s = e[3], s
+}
+
+function G() {
+    "use forget";
+    let e = (0, K.c)(1),
+        t;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, J.jsx)(`p`, {
+        role: `status`,
+        children: (0, J.jsx)(T, {
+            id: `chatgpt.orbit.plugin_suggestions.page.unavailable.dot`,
+            defaultMessage: `These suggestions aren’t available. Make sure you’re signed in to the account and workspace you use with your dot.`
+        })
+    }), e[0] = t) : t = e[0], t
+}
+
+function xe(e) {
+    "use forget";
+    let t = (0, K.c)(12),
+        {
+            reference: n,
+            userId: r,
+            accountId: i
+        } = e,
+        a = w(),
+        o = {
+            reference: n,
+            userId: r,
+            accountId: i
+        },
+        {
+            data: s
+        } = E(pe(o)),
+        c = E(ve(o)),
+        l;
+    if (c.isPending) {
+        let e;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, J.jsx)(u, {
+            className: `icon`
+        }), t[0] = e) : e = t[0];
+        let n;
+        t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, J.jsxs)(`div`, {
+            role: `status`,
+            children: [e, (0, J.jsx)(`span`, {
+                className: `sr-only`,
+                children: (0, J.jsx)(T, {
+                    id: `chatgpt.orbit.plugin_suggestions.page.loading`,
+                    defaultMessage: `Loading suggestions…`
+                })
+            })]
+        }), t[1] = n) : n = t[1], l = n
+    } else if (c.isError || !W(r, i)) {
+        let e;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, J.jsx)(G, {}), t[2] = e) : e = t[2];
+        let n;
+        t[3] === c ? n = t[4] : (n = () => c.refetch(), t[3] = c, t[4] = n);
+        let r;
+        t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, J.jsx)(T, {
+            id: `chatgpt.orbit.plugin_suggestions.page.retry`,
+            defaultMessage: `Try again`
+        }), t[5] = r) : r = t[5];
+        let i;
+        t[6] === n ? i = t[7] : (i = (0, J.jsxs)(J.Fragment, {
+            children: [e, (0, J.jsx)(h, {
+                type: `button`,
+                onClick: n,
+                children: r
+            })]
+        }), t[6] = n, t[7] = i), l = i
+    } else l = (0, J.jsx)(`ul`, {
+        className: `flex flex-col gap-3`,
+        children: c.data.suggestions.map(e => (0, J.jsx)(Se, {
+            suggestion: e,
+            suggestionId: c.data.suggestion_id ?? void 0,
+            userId: r,
+            accountId: i,
+            onConnected: () => {
+                U(a, o, e.plugin_id, c.data.suggestions.length === 1)
+            }
+        }, e.plugin_id))
+    });
+    let d = s?.status ?? `idle`,
+        f = c.data && c.data.suggestions.length > 1 ? () => void me(a, o) : void 0,
+        p;
+    return t[8] !== l || t[9] !== d || t[10] !== f ? (p = (0, J.jsx)(Y, {
+        continuationStatus: d,
+        onContinue: f,
+        children: l
+    }), t[8] = l, t[9] = d, t[10] = f, t[11] = p) : p = t[11], p
+}
+
+function Se(e) {
+    "use forget";
+    let t = (0, K.c)(38),
+        {
+            suggestion: n,
+            suggestionId: r,
+            userId: a,
+            accountId: o,
+            onConnected: s
+        } = e,
+        c = te(),
+        l = ee(),
+        u = w(),
+        [d, f] = (0, q.useState)(!1),
+        [p, m] = (0, q.useState)(!1),
+        h = (0, q.useRef)(null),
+        g, v;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (g = () => {
+        let e = new AbortController;
+        h.current = e;
+        let t = i(() => e.abort());
+        return () => {
+            e.abort(), t()
+        }
+    }, v = [], t[0] = g, t[1] = v) : (g = t[0], v = t[1]), (0, q.useEffect)(g, v);
+    let y;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (y = _()?.getWorkspaceId(), t[2] = y) : y = t[2];
+    let b;
+    t[3] !== o || t[4] !== c.locale ? (b = {
+        accountId: o,
+        platform: `chat`,
+        locale: c.locale,
+        hasWorkspace: !!y
+    }, t[3] = o, t[4] = c.locale, t[5] = b) : b = t[5];
+    let x = b,
+        S;
+    t[6] !== o || t[7] !== c.locale || t[8] !== n.plugin_id || t[9] !== a ? (S = [`orbit-plugin-suggestion-setup`, a, o, n.plugin_id, c.locale], t[6] = o, t[7] = c.locale, t[8] = n.plugin_id, t[9] = a, t[10] = S) : S = t[10];
+    let C;
+    t[11] !== o || t[12] !== u || t[13] !== x || t[14] !== n.plugin_id || t[15] !== a ? (C = async () => {
+        if (!W(a, o)) throw Error(`Account changed`);
+        let e = await de({
+            queryClient: u,
+            pluginId: n.plugin_id,
+            requestContext: x,
+            forceRefresh: !0
+        });
+        if (!W(a, o)) throw Error(`Account changed`);
+        let t = e == null ? u.getQueryData(z(u, n.plugin_id, x).queryKey) : null;
+        if (e == null && !t?.plugin.requires_local_executor) throw Error(`Plugin setup could not be loaded`);
+        return {
+            inputs: e,
+            desktopOnly: t?.plugin.requires_local_executor === !0,
+            ...t ? ae(t.plugin, t.primaryApp) : {
+                pluginIconUrl: e?.pluginIconUrl,
+                pluginIconDarkUrl: e?.pluginIconDarkUrl
+            }
+        }
+    }, t[11] = o, t[12] = u, t[13] = x, t[14] = n.plugin_id, t[15] = a, t[16] = C) : C = t[16];
+    let T;
+    t[17] !== S || t[18] !== C ? (T = {
+        queryKey: S,
+        queryFn: C,
+        staleTime: 0,
+        gcTime: 0
+    }, t[17] = S, t[18] = C, t[19] = T) : T = t[19];
+    let D = E(T),
+        O = D.data?.inputs?.pluginInstalled && D.data.inputs.pluginEnabled && !D.data.inputs.requiresPersonalTemplateDetails && D.data.inputs.installAction.kind === `install`,
+        k;
+    t[20] !== o || t[21] !== c || t[22] !== l || t[23] !== s || t[24] !== u || t[25] !== x || t[26] !== D || t[27] !== n.plugin_id || t[28] !== r || t[29] !== a || t[30] !== d ? (k = async () => {
+        let e = h.current?.signal;
+        if (!(d || D.isPending || D.isFetching || !e || e.aborted || !W(a, o))) {
+            f(!0), m(!1);
+            try {
+                let t = await D.refetch();
+                if (e.aborted || !W(a, o)) return;
+                if (t.isError || !t.data) {
+                    f(!1);
+                    return
+                }
+                if (t.data.desktopOnly || t.data.inputs?.requiresPersonalTemplateDetails) {
+                    let e = new URLSearchParams;
+                    e.set(B, `${window.location.pathname}${window.location.search}`), l(V({
+                        pluginId: n.plugin_id,
+                        searchParams: e
+                    })), f(!1);
+                    return
+                }
+                if (D.isError) {
+                    f(!1);
+                    return
+                }
+                await R({
+                    queryClient: u,
+                    signal: e,
+                    pluginId: n.plugin_id,
+                    suggestionId: r,
+                    surface: oe.CHATGPT_PLUGIN_MARKETPLACE_SURFACE_IN_CHAT_SUGGESTIONS,
+                    installAccountId: o,
+                    requestContext: x,
+                    skipGoogleOAuthBundle: !0,
+                    pathname: window.location.pathname,
+                    search: window.location.search,
+                    searchParams: new URLSearchParams(window.location.search),
+                    intl: c,
+                    closeOnCompletion: !0,
+                    onConnectionResult: t => {
+                        e.aborted || !W(a, o) || (f(!1), m(t === `retryable_error` || t === `unavailable`), D.refetch(), t === `connected` && s())
+                    }
+                })
+            } catch {
+                if (e.aborted || !W(a, o)) return;
+                f(!1), m(!0)
+            }
+        }
+    }, t[20] = o, t[21] = c, t[22] = l, t[23] = s, t[24] = u, t[25] = x, t[26] = D, t[27] = n.plugin_id, t[28] = r, t[29] = a, t[30] = d, t[31] = k) : k = t[31];
+    let A = k,
+        j = D.data?.pluginIconUrl,
+        M = D.data?.pluginIconDarkUrl,
+        N = d ? `connecting` : D.isPending || D.isFetching ? `loading` : D.isError ? `load_error` : D.data?.desktopOnly ? `desktop_only` : O ? `connected` : p ? `failed` : `ready`,
+        P;
+    return t[32] !== A || t[33] !== n || t[34] !== M || t[35] !== N || t[36] !== j ? (P = (0, J.jsx)(X, {
+        suggestion: n,
+        iconUrl: j,
+        iconDarkUrl: M,
+        status: N,
+        onConnect: A
+    }), t[32] = A, t[33] = n, t[34] = M, t[35] = N, t[36] = j, t[37] = P) : P = t[37], P
+}
+
+function Ce() {}
+
+function we(e) {
+    return e.preventDefault()
+}
+var K, q, J, Y, X, Te = e((() => {
+        K = M(), n(), d(), se(), N(), le(), I(), P(), L(), re(), ne(), ue(), b(), r(), a(), A(), q = t(k()), D(), x(), he(), ye(), fe(), ge(), J = S(), Y = e => {
+            "use forget";
+            let t = (0, K.c)(20),
+                {
+                    children: n,
+                    continuationStatus: r,
+                    onContinue: i
+                } = e,
+                a = r === void 0 ? `idle` : r,
+                [o, s] = (0, q.useState)(!1),
+                c;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, J.jsx)(T, {
+                id: `chatgpt.orbit.plugin_suggestions.page.connect_apps`,
+                defaultMessage: `Connect apps`
+            }), t[0] = c) : c = t[0];
+            let l = c,
+                u = a === `pending` || a === `success` ? 0 : void 0,
+                d;
+            t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, J.jsx)(`div`, {
+                className: `border-token-border-default flex size-16 shrink-0 items-center justify-center rounded-xl border`,
+                children: (0, J.jsx)(ce, {
+                    "aria-hidden": `true`,
+                    className: `size-12`
+                })
+            }), t[1] = d) : d = t[1];
+            let f;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, J.jsx)(`h1`, {
+                className: `text-token-text-primary text-heading-app`,
+                children: l
+            }), t[2] = f) : f = t[2];
+            let p;
+            t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, J.jsx)(`p`, {
+                className: `text-token-text-secondary text-headline leading-6`,
+                children: (0, J.jsx)(T, {
+                    id: `chatgpt.orbit.plugin_suggestions.page.connect_apps_description.dot`,
+                    defaultMessage: `Give your dot access to get more done`
+                })
+            }), t[3] = p) : p = t[3];
+            let m;
+            t[4] !== a || t[5] !== o ? (m = !o && a !== `pending` && a !== `success` && (0, J.jsx)(`p`, {
+                className: `text-token-text-secondary text-sm`,
+                children: (0, J.jsx)(T, {
+                    id: `chatgpt.orbit.plugin_suggestions.page.optional_setup`,
+                    defaultMessage: `Choose any plugins you’d like to connect. Setup is optional, and you can keep chatting without it.`
+                })
+            }), t[4] = a, t[5] = o, t[6] = m) : m = t[6];
+            let g;
+            t[7] === m ? g = t[8] : (g = (0, J.jsxs)(`header`, {
+                className: `flex flex-col items-center gap-4 text-center`,
+                children: [d, (0, J.jsxs)(`div`, {
+                    className: `flex flex-col gap-2`,
+                    children: [f, p, m]
+                })]
+            }), t[7] = m, t[8] = g);
+            let _;
+            t[9] !== n || t[10] !== a || t[11] !== o || t[12] !== i ? (_ = a === `success` || a === `pending` ? (0, J.jsx)(`p`, {
+                role: `status`,
+                children: a === `pending` ? (0, J.jsx)(T, {
+                    id: `chatgpt.orbit.plugin_suggestions.page.continuing`,
+                    defaultMessage: `Setup complete. Continuing your conversation…`
+                }) : (0, J.jsx)(T, {
+                    id: `chatgpt.orbit.plugin_suggestions.page.continued`,
+                    defaultMessage: `Setup complete. You can return to your conversation.`
+                })
+            }) : o ? (0, J.jsx)(`p`, {
+                role: `status`,
+                children: (0, J.jsx)(T, {
+                    id: `chatgpt.orbit.plugin_suggestions.page.done`,
+                    defaultMessage: `You can return to your conversation.`
+                })
+            }) : (0, J.jsxs)(J.Fragment, {
+                children: [n, a === `error` ? (0, J.jsx)(`p`, {
+                    role: `alert`,
+                    children: (0, J.jsx)(T, {
+                        id: `chatgpt.orbit.plugin_suggestions.page.continue_failed`,
+                        defaultMessage: `Your plugins are connected, but we couldn’t confirm that your conversation continued. Return to your conversation to continue.`
+                    })
+                }) : null, (0, J.jsxs)(`div`, {
+                    className: `mt-auto flex flex-wrap justify-center gap-3 pt-6`,
+                    children: [i && a !== `error` ? (0, J.jsx)(h, {
+                        type: `button`,
+                        disabled: a !== `ready`,
+                        onClick: i,
+                        children: (0, J.jsx)(T, {
+                            id: `chatgpt.orbit.plugin_suggestions.page.continue`,
+                            defaultMessage: `Continue conversation`
+                        })
+                    }) : null, (0, J.jsx)(h, {
+                        type: `button`,
+                        color: `secondary`,
+                        onClick: () => s(!0),
+                        children: (0, J.jsx)(T, {
+                            id: `chatgpt.orbit.plugin_suggestions.page.finish`,
+                            defaultMessage: `Done`
+                        })
+                    })]
+                })]
+            }), t[9] = n, t[10] = a, t[11] = o, t[12] = i, t[13] = _) : _ = t[13];
+            let v;
+            t[14] !== g || t[15] !== _ ? (v = (0, J.jsxs)(`main`, {
+                className: `mx-auto flex min-h-full w-full max-w-2xl flex-col gap-10 px-4 py-8 sm:py-16`,
+                children: [g, _]
+            }), t[14] = g, t[15] = _, t[16] = v) : v = t[16];
+            let y;
+            return t[17] !== v || t[18] !== u ? (y = (0, J.jsx)(`div`, {
+                className: `isolate`,
+                children: (0, J.jsx)(F, {
+                    className: `h-dvh`,
+                    open: !0,
+                    renderInPlace: !0,
+                    onOpenChange: Ce,
+                    onEscapeKeyDown: we,
+                    accessibleTitle: l,
+                    children: (0, J.jsx)(F.Contents, {
+                        tabIndex: u,
+                        children: v
+                    })
+                })
+            }), t[17] = v, t[18] = u, t[19] = y) : y = t[19], y
+        }, X = e => {
+            "use forget";
+            let t = (0, K.c)(29),
+                {
+                    suggestion: n,
+                    iconUrl: r,
+                    iconDarkUrl: i,
+                    status: a,
+                    onConnect: o
+                } = e,
+                s = (0, q.useId)(),
+                c = a === `loading` || a === `connecting`,
+                l = a === `desktop_only` || a === `load_error` || a === `failed`,
+                u;
+            t[0] !== i || t[1] !== r || t[2] !== n.display_name ? (u = (0, J.jsx)(`div`, {
+                className: `border-token-border-default flex size-13 shrink-0 items-center justify-center rounded-[14px] border`,
+                children: (0, J.jsx)(ie, {
+                    name: n.display_name,
+                    iconUrl: r,
+                    iconDarkUrl: i,
+                    variant: `row`,
+                    className: `rounded-none border-0 after:hidden`,
+                    isNextToLabel: !0
+                })
+            }), t[0] = i, t[1] = r, t[2] = n.display_name, t[3] = u) : u = t[3];
+            let d = `${s}-label`,
+                f;
+            t[4] !== n.display_name || t[5] !== d ? (f = (0, J.jsx)(`h2`, {
+                id: d,
+                className: `text-headline leading-6 font-medium wrap-break-word`,
+                children: n.display_name
+            }), t[4] = n.display_name, t[5] = d, t[6] = f) : f = t[6];
+            let p;
+            t[7] === n.summary ? p = t[8] : (p = n.summary ? (0, J.jsx)(`p`, {
+                className: `text-token-text-secondary text-footnote truncate`,
+                title: n.summary,
+                children: n.summary
+            }) : null, t[7] = n.summary, t[8] = p);
+            let m;
+            t[9] !== f || t[10] !== p ? (m = (0, J.jsxs)(`div`, {
+                className: `min-w-0 flex-1`,
+                children: [f, p]
+            }), t[9] = f, t[10] = p, t[11] = m) : m = t[11];
+            let g;
+            t[12] !== c || t[13] !== l || t[14] !== o || t[15] !== s || t[16] !== a ? (g = (0, J.jsx)(`div`, {
+                className: `max-w-1/2 shrink-0`,
+                children: a === `connected` ? (0, J.jsx)(`span`, {
+                    className: `text-token-text-secondary text-sm`,
+                    role: `status`,
+                    children: (0, J.jsx)(T, {
+                        id: `chatgpt.orbit.plugin_suggestions.row.connected`,
+                        defaultMessage: `Connected`
+                    })
+                }) : (0, J.jsx)(h, {
+                    id: `${s}-action`,
+                    type: `button`,
+                    "aria-labelledby": `${s}-action ${s}-label`,
+                    "aria-describedby": l ? `${s}-message` : void 0,
+                    onClick: c ? void 0 : o,
+                    "aria-disabled": c,
+                    visuallyDisabled: c,
+                    color: `secondary`,
+                    loading: c,
+                    children: c ? (0, J.jsx)(T, {
+                        id: `chatgpt.orbit.plugin_suggestions.row.loading`,
+                        defaultMessage: `Loading…`
+                    }) : a === `desktop_only` ? (0, J.jsx)(T, {
+                        id: `chatgpt.orbit.plugin_suggestions.row.view_plugin`,
+                        defaultMessage: `View plugin`
+                    }) : a === `load_error` || a === `failed` ? (0, J.jsx)(T, {
+                        id: `chatgpt.orbit.plugin_suggestions.row.retry`,
+                        defaultMessage: `Try again`
+                    }) : (0, J.jsx)(T, {
+                        id: `chatgpt.orbit.plugin_suggestions.row.connect`,
+                        defaultMessage: `Connect`
+                    })
+                })
+            }), t[12] = c, t[13] = l, t[14] = o, t[15] = s, t[16] = a, t[17] = g) : g = t[17];
+            let _;
+            t[18] !== u || t[19] !== m || t[20] !== g ? (_ = (0, J.jsxs)(`div`, {
+                className: `flex min-h-14 items-center gap-4`,
+                children: [u, m, g]
+            }), t[18] = u, t[19] = m, t[20] = g, t[21] = _) : _ = t[21];
+            let v;
+            t[22] !== l || t[23] !== s || t[24] !== a ? (v = l ? (0, J.jsx)(`p`, {
+                id: `${s}-message`,
+                role: `status`,
+                className: `text-token-text-secondary w-full text-sm`,
+                children: a === `desktop_only` ? (0, J.jsx)(T, {
+                    id: `chatgpt.orbit.plugin_suggestions.row.desktop_only`,
+                    defaultMessage: `This plugin is available in the desktop app.`
+                }) : a === `load_error` ? (0, J.jsx)(T, {
+                    id: `chatgpt.orbit.plugin_suggestions.row.load_failed`,
+                    defaultMessage: `Couldn’t load this plugin’s setup. Try again.`
+                }) : (0, J.jsx)(T, {
+                    id: `chatgpt.orbit.plugin_suggestions.row.unavailable`,
+                    defaultMessage: `This plugin couldn’t be connected. You can try again or keep chatting.`
+                })
+            }) : null, t[22] = l, t[23] = s, t[24] = a, t[25] = v) : v = t[25];
+            let y;
+            return t[26] !== _ || t[27] !== v ? (y = (0, J.jsxs)(`li`, {
+                className: `flex flex-col gap-2`,
+                children: [_, v]
+            }), t[26] = _, t[27] = v, t[28] = y) : y = t[28], y
+        }
+    })),
+    Z, Q, $, Ee = e((() => {
+        x(), Z = M(), Te(), Q = S(), $ = O(function() {
+            "use forget";
+            let e = (0, Z.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Q.jsx)(be, {}), e[0] = t) : t = e[0], t
+        })
+    }));
+e((() => {
+    Ee()
+}))();
+export {
+    $ as
+    default
+};
+//# sourceMappingURL=plugin-suggestions-cis30726.js.map

@@ -1,0 +1,19 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bn as t
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+
+function n() {
+    return (0, r.jsx)(`hr`, {
+        className: `border-token-border-xheavy w-full`
+    })
+}
+var r, i = e((() => {
+    r = t()
+}));
+export {
+    i as n, n as t
+};
+//# sourceMappingURL=e14a92db-meahc77t1ym157j5.js.map

@@ -1,0 +1,281 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/25caac16-bt9jaln4da806zyq.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/2340486e-oc6d2eodbcrmxur3.js", "assets/artwork-gmqmkzct.css"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    C0 as r,
+    JU as i,
+    S0 as a,
+    qU as o
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    Bn as s,
+    Vn as c,
+    cn as l,
+    ln as u,
+    wn as d
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    n as f,
+    t as p
+} from "./0cb8459d-mlutm5nwhcmq2mgm.js";
+import {
+    n as m,
+    r as h
+} from "./ee72d6dc-bo5mttk2h1q0dvk6.js";
+import {
+    i as g,
+    t as _
+} from "./061ab7e7-gw6zdezvzc0s4ius.js";
+import {
+    n as v,
+    r as y,
+    t as b
+} from "./3fb45623-edwh319q7lpya1c2.js";
+import {
+    n as x,
+    t as S
+} from "./d25f8a5b-j8016ydrennhb48x.js";
+import {
+    n as C,
+    t as w
+} from "./a5961f3f-gbxhx8yxzxli1q1w.js";
+var T, E = e((() => {
+    r(), u(), T = a(() => l(() => import(`./25caac16-bt9jaln4da806zyq.js`), __vite__mapDeps([0, 1, 2, 3])))
+}));
+
+function D(e, t) {
+    let n = {};
+    for (let r of O[e]) {
+        let i = r;
+        e === `bento-connections` && (i === `heart-15425-4-light` && t?.[`conn-google-drive`] && (i = `conn-google-drive`), i === `finance-28340-36-light` && t?.[`conn-github`] && (i = `conn-github`));
+        let a = t?.[i];
+        if (typeof a != `string` || !a.trim()) return;
+        try {
+            let e = new URL(a.startsWith(`//`) ? `https:${a}` : a);
+            if (e.protocol !== `https:` || e.username || e.password) return;
+            n[i] = e.href
+        } catch {
+            return
+        }
+    }
+    return n
+}
+var O, k, A = e((() => {
+        O = {
+            "bento-work": `background.slack-battery.slack-cellular.slack-chevron.slack-close.slack-dot.slack-huddle.slack-jojo.slack-note.slack-trevor.slack-video.slack-wifi.work-mobile-audio-wave.work-mobile-back.work-mobile-battery.work-mobile-camera.work-mobile-cellular.work-mobile-clip-four.work-mobile-clip-one.work-mobile-clip-three.work-mobile-download.work-mobile-expand.work-mobile-microphone.work-mobile-play.work-mobile-playhead.work-mobile-playhead-tip.work-mobile-redo.work-mobile-share.work-mobile-speaker.work-mobile-ticks.work-mobile-undo.work-mobile-voice-wave.work-mobile-wifi`.split(`.`),
+            "bento-connections": [`background`, `conn-arrow`, `conn-calendar`, `conn-chart`, `conn-mascot`, `conn-mascot-shadow`, `conn-phone-mask`, `finance-28340-36-light`, `heart-15425-4-light`],
+            "bento-tasks": [`background`, `task-analysis`, `task-coral`, `task-cursor`, `task-figures`, `task-flag`, `task-investigate`, `task-mobile-close`, `task-mobile-cursor`, `task-revise`, `task-shadow`],
+            "bento-phone": [`background`, `phone`, `phone-felipe`, `phone-menu`, `phone-pdf`]
+        }, k = e => typeof e == `string` && Object.hasOwn(O, e)
+    })),
+    j, M, N, P, F = e((() => {
+        j = d(), M = n(c()), i(), E(), A(), N = s(), P = e => {
+            "use forget";
+            let t = (0, j.c)(29),
+                {
+                    animation: n,
+                    enabled: r,
+                    assets: i,
+                    messages: a,
+                    children: s
+                } = e,
+                c = (0, M.useRef)(null),
+                [l, u] = (0, M.useState)(!1),
+                [d, f] = (0, M.useState)(!1),
+                [p, m] = (0, M.useState)(),
+                [h, g] = (0, M.useState)(),
+                _, v;
+            t[0] !== n || t[1] !== i ? (_ = D(n, i), v = JSON.stringify([n, _]), t[0] = n, t[1] = i, t[2] = _, t[3] = v) : (_ = t[2], v = t[3]);
+            let y = v,
+                b = r && l && d && !!_,
+                x = b && p === y && h !== y,
+                S;
+            t[4] === y ? S = t[5] : (S = e => m(e ? y : void 0), t[4] = y, t[5] = S);
+            let C = S,
+                w;
+            t[6] === y ? w = t[7] : (w = () => g(y), t[6] = y, t[7] = w);
+            let E = w,
+                O, k;
+            t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (O = () => {
+                let e = c.current;
+                if (!e) return;
+                let t = window.matchMedia(`(prefers-reduced-motion: reduce)`),
+                    n = () => u(!t.matches);
+                n(), t.addEventListener(`change`, n);
+                let r = new IntersectionObserver(e => {
+                    let [t] = e;
+                    t.isIntersecting && (f(!0), r.disconnect())
+                }, {
+                    rootMargin: `200px`
+                });
+                return r.observe(e), () => {
+                    r.disconnect(), t.removeEventListener(`change`, n)
+                }
+            }, k = [], t[8] = O, t[9] = k) : (O = t[8], k = t[9]), (0, M.useEffect)(O, k);
+            let A = x ? `animation` : `static`,
+                P = x ? `hidden` : `visible`,
+                F;
+            t[10] === P ? F = t[11] : (F = {
+                visibility: P
+            }, t[10] = P, t[11] = F);
+            let I;
+            t[12] !== s || t[13] !== F ? (I = (0, N.jsx)(`div`, {
+                style: F,
+                children: s
+            }), t[12] = s, t[13] = F, t[14] = I) : I = t[14];
+            let L;
+            t[15] !== n || t[16] !== h || t[17] !== E || t[18] !== C || t[19] !== a || t[20] !== b || t[21] !== x || t[22] !== y || t[23] !== _ ? (L = b && h !== y && (0, N.jsx)(`div`, {
+                className: `light pointer-events-none absolute inset-0`,
+                "aria-hidden": !0,
+                style: {
+                    visibility: x ? `visible` : `hidden`
+                },
+                children: (0, N.jsx)(o, {
+                    name: `BentoAnimation`,
+                    onError: E,
+                    children: (0, N.jsx)(T, {
+                        animation: n,
+                        assets: _,
+                        messages: a,
+                        onReady: C,
+                        onError: E
+                    }, y)
+                }, y)
+            }), t[15] = n, t[16] = h, t[17] = E, t[18] = C, t[19] = a, t[20] = b, t[21] = x, t[22] = y, t[23] = _, t[24] = L) : L = t[24];
+            let R;
+            return t[25] !== L || t[26] !== A || t[27] !== I ? (R = (0, N.jsxs)(`div`, {
+                ref: c,
+                className: `dots-bento-visual relative`,
+                "data-bento-presentation": A,
+                children: [I, L]
+            }), t[25] = L, t[26] = A, t[27] = I, t[28] = R) : R = t[28], R
+        }
+    })),
+    I = t({
+        DotsBentoTile: () => B,
+        default: () => V
+    });
+
+function L(e) {
+    return (0, z.jsx)(`div`, {
+        className: `dots-bento-row`,
+        children: f(e, {})
+    }, e.id)
+}
+var R, z, B, V, H = e((() => {
+    R = d(), p(), h(), g(), y(), x(), C(), F(), A(), z = s(), B = e => {
+        "use forget";
+        let t = (0, R.c)(33),
+            {
+                id: n,
+                data: r,
+                media: i
+            } = e;
+        if (!r) return null;
+        let a = i?.[r.mediaIndex ?? 0],
+            o, s;
+        t[0] === r ? (o = t[1], s = t[2]) : ({
+            animation: o,
+            ...s
+        } = r, t[0] = r, t[1] = o, t[2] = s);
+        let c = a?.assetMobile?.file.details.image,
+            l;
+        t[3] !== r.presentation || t[4] !== a?.ratioMobile || t[5] !== c ? (l = r.presentation === `media` ? a?.ratioMobile?.replace(`:`, ` / `) ?? (c ? `${c.width} / ${c.height}` : `1`) : `1`, t[3] = r.presentation, t[4] = a?.ratioMobile, t[5] = c, t[6] = l) : l = t[6];
+        let u = l,
+            d;
+        t[7] === u ? d = t[8] : (d = {
+            "--dots-bento-mobile-ratio": u
+        }, t[7] = u, t[8] = d);
+        let f = d,
+            p;
+        t[9] !== o || t[10] !== r.animationAssets || t[11] !== r.animationMessages || t[12] !== r.presentation || t[13] !== a || t[14] !== i || t[15] !== s ? (p = k(o) ? (0, z.jsx)(P, {
+            animation: o,
+            enabled: r.presentation === `custom` && !!a && m(a) === `image`,
+            assets: r.animationAssets,
+            messages: r.animationMessages,
+            children: (0, z.jsx)(w, {
+                data: {
+                    ...s,
+                    presentation: `media`
+                },
+                media: i,
+                className: `h-full w-full`
+            })
+        }) : (0, z.jsx)(w, {
+            data: {
+                ...s,
+                animation: o
+            },
+            media: i,
+            className: `dots-bento-visual`
+        }), t[9] = o, t[10] = r.animationAssets, t[11] = r.animationMessages, t[12] = r.presentation, t[13] = a, t[14] = i, t[15] = s, t[16] = p) : p = t[16];
+        let h;
+        t[17] === r.heading ? h = t[18] : (h = r.heading && (0, z.jsx)(`h3`, {
+            children: r.heading
+        }), t[17] = r.heading, t[18] = h);
+        let g;
+        t[19] === r.description ? g = t[20] : (g = r.description && (0, z.jsx)(`p`, {
+            children: r.description
+        }), t[19] = r.description, t[20] = g);
+        let v;
+        t[21] !== r.ctaHref || t[22] !== r.ctaLabel || t[23] !== n ? (v = r.ctaLabel && r.ctaHref && (0, z.jsx)(_, {
+            href: r.ctaHref,
+            variant: `primary-button`,
+            className: `dots-bento-cta`,
+            analyticsIdentifier: `dots-${n}-bento-cta`,
+            children: r.ctaLabel
+        }), t[21] = r.ctaHref, t[22] = r.ctaLabel, t[23] = n, t[24] = v) : v = t[24];
+        let y;
+        t[25] !== h || t[26] !== g || t[27] !== v ? (y = (0, z.jsxs)(`div`, {
+            className: `dots-bento-copy`,
+            children: [h, g, v]
+        }), t[25] = h, t[26] = g, t[27] = v, t[28] = y) : y = t[28];
+        let b;
+        return t[29] !== f || t[30] !== p || t[31] !== y ? (b = (0, z.jsxs)(`article`, {
+            className: `dots-bento-tile`,
+            style: f,
+            children: [p, y]
+        }), t[29] = f, t[30] = p, t[31] = y, t[32] = b) : b = t[32], b
+    }, V = e => {
+        "use forget";
+        let t = (0, R.c)(12),
+            {
+                data: n,
+                subcomponents: r
+            } = e,
+            i;
+        t[0] === r ? i = t[1] : (i = r === void 0 ? [] : r, t[0] = r, t[1] = i);
+        let a = i,
+            o = n?.anchor,
+            s = n?.heading,
+            c = n?.mobileHeading,
+            l = n?.description,
+            u;
+        t[2] === a ? u = t[3] : (u = a.map(L), t[2] = a, t[3] = u);
+        let d;
+        t[4] === u ? d = t[5] : (d = (0, z.jsx)(b, {
+            as: `div`,
+            children: (0, z.jsx)(v, {
+                className: `dots-bento-list`,
+                children: u
+            })
+        }), t[4] = u, t[5] = d);
+        let f;
+        return t[6] !== o || t[7] !== s || t[8] !== c || t[9] !== l || t[10] !== d ? (f = (0, z.jsx)(S, {
+            id: o,
+            title: s,
+            mobileTitle: c,
+            subtitle: l,
+            variant: `large-subtitle`,
+            className: `dots-bento`,
+            children: d
+        }), t[6] = o, t[7] = s, t[8] = c, t[9] = l, t[10] = d, t[11] = f) : f = t[11], f
+    }
+}));
+export {
+    H as i, B as n, I as r, V as t
+};
+//# sourceMappingURL=4243b479-e5uvphoeoc9tj996.js.map

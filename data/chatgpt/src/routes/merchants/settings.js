@@ -1,0 +1,24196 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/75c75efe-g434r8rolk7u8b6p.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/47d3aa5d-j6kts12qvem4z611.js", "assets/4813494d-cb22y2w19zwyshmt.js", "assets/2340486e-oc6d2eodbcrmxur3.js", "assets/root-lelxp0l2.css", "assets/d329f11d-f3jqyhwii9qke9xg.js", "assets/conversation-small-fym1zmu9zimymmm1.js", "assets/30901919-e33mbl5u1y88w5wu.js", "assets/c470f5ab-m68dth1hatzjj8yh.js", "assets/0e5afe53-dl0nq2u2siu8c8q5.js", "assets/conversation-small-iha453gv.css"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    AT as r,
+    Ait as i,
+    B6 as a,
+    C0 as o,
+    Gat as s,
+    Nrt as c,
+    Oj as l,
+    Pit as u,
+    Prt as d,
+    QG as f,
+    Qit as p,
+    S0 as m,
+    Wat as h,
+    X$ as g,
+    ZG as _,
+    a7 as v,
+    b5 as y,
+    cy as b,
+    fy as x,
+    hh as S,
+    i5 as C,
+    iat as w,
+    kT as ee,
+    l7 as te,
+    ly as ne,
+    mh as T,
+    mk as E,
+    oat as D,
+    sat as re,
+    sy as ie,
+    u1 as O,
+    uy as ae,
+    vk as oe,
+    y5 as se
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as ce,
+    At as k,
+    Bn as A,
+    Ht as le,
+    Ln as ue,
+    Nn as j,
+    O as de,
+    Rn as fe,
+    Ut as pe,
+    Vn as M,
+    X as me,
+    cn as he,
+    jt as ge,
+    ln as _e,
+    s as ve,
+    wn as ye,
+    zn as be
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    AGn as xe,
+    FBn as Se,
+    IBn as Ce,
+    LBn as we,
+    MGn as Te,
+    PBn as Ee
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    CC as De,
+    Gv as Oe,
+    Kv as ke,
+    Qy as Ae,
+    SC as je,
+    TC as N,
+    Xy as Me,
+    Yy as Ne,
+    Zy as Pe,
+    wC as Fe
+} from "./30901919-e33mbl5u1y88w5wu.js";
+import {
+    BS as Ie,
+    RS as Le,
+    US as Re,
+    dS as ze
+} from "./c2675c8c-ig7dykzhv7vbqkt7.js";
+import {
+    D as Be,
+    G as Ve,
+    O as He,
+    U as Ue,
+    Vp as We,
+    W as Ge,
+    bu as Ke,
+    xu as qe,
+    zp as Je
+} from "./8b34dbc2-gf9wnwcahty27ylx.js";
+import {
+    a as Ye,
+    i as Xe,
+    n as Ze,
+    o as Qe,
+    r as $e,
+    s as et,
+    t as tt
+} from "./1c68bb2a-hm69jsgsgl2ej5ke.js";
+import {
+    n as nt,
+    t as rt
+} from "./5983c1e5-n6x2wdealcj7if8q.js";
+import {
+    n as it,
+    t as at
+} from "./22777ec7-msm5ltai3mt4t0wl.js";
+var ot, st = e((() => {
+    ot = class extends Error {
+        constructor(e) {
+            super(e), this.name = `AbortError`
+        }
+    }
+}));
+
+function ct(...e) {
+    if (e.length > 0) {
+        let t = String(e[0]);
+        t.includes(`:error`) ? console.error(...e) : t.includes(`:warning`) ? console.warn(...e) : t.includes(`:info`) ? console.info(...e) : (t.includes(`:verbose`), console.debug(...e))
+    }
+}
+var lt = e((() => {})),
+    ut = e((() => {
+        lt()
+    }));
+
+function dt(e) {
+    yt = e, bt = [], xt = [];
+    let t = e.split(`,`).map(e => e.trim());
+    for (let e of t) e.startsWith(`-`) ? xt.push(e.substring(1)) : bt.push(e);
+    for (let e of St) e.enabled = ft(e.namespace)
+}
+
+function ft(e) {
+    if (e.endsWith(`*`)) return !0;
+    for (let t of xt)
+        if (pt(e, t)) return !1;
+    for (let t of bt)
+        if (pt(e, t)) return !0;
+    return !1
+}
+
+function pt(e, t) {
+    if (t.indexOf(`*`) === -1) return e === t;
+    let n = t;
+    if (t.indexOf(`**`) !== -1) {
+        let e = [],
+            r = ``;
+        for (let n of t)
+            if (n === `*` && r === `*`) continue;
+            else r = n, e.push(n);
+        n = e.join(``)
+    }
+    let r = 0,
+        i = 0,
+        a = n.length,
+        o = e.length,
+        s = -1,
+        c = -1;
+    for (; r < o && i < a;)
+        if (n[i] === `*`) {
+            if (s = i, i++, i === a) return !0;
+            for (; e[r] !== n[i];)
+                if (r++, r === o) return !1;
+            c = r, r++, i++;
+            continue
+        } else if (n[i] === e[r]) i++, r++;
+    else if (s >= 0) {
+        if (i = s + 1, r = c + 1, r === o) return !1;
+        for (; e[r] !== n[i];)
+            if (r++, r === o) return !1;
+        c = r, r++, i++;
+        continue
+    } else return !1;
+    let l = r === e.length,
+        u = i === n.length,
+        d = i === n.length - 1 && n[i] === `*`;
+    return l && (u || d)
+}
+
+function mt() {
+    let e = yt || ``;
+    return dt(``), e
+}
+
+function ht(e) {
+    let t = Object.assign(n, {
+        enabled: ft(e),
+        destroy: gt,
+        log: Ct.log,
+        namespace: e,
+        extend: _t
+    });
+
+    function n(...n) {
+        t.enabled && (n.length > 0 && (n[0] = `${e} ${n[0]}`), t.log(...n))
+    }
+    return St.push(t), t
+}
+
+function gt() {
+    let e = St.indexOf(this);
+    return e >= 0 ? (St.splice(e, 1), !0) : !1
+}
+
+function _t(e) {
+    let t = ht(`${this.namespace}:${e}`);
+    return t.log = this.log, t
+}
+var vt, yt, bt, xt, St, Ct, wt = e((() => {
+    ut(), vt = typeof process < `u` && {}.DEBUG || void 0, bt = [], xt = [], St = [], vt && dt(vt), Ct = Object.assign(e => ht(e), {
+        enable: dt,
+        enabled: ft,
+        disable: mt,
+        log: ct
+    })
+}));
+
+function Tt(e, t) {
+    t.log = (...t) => {
+        e.log(...t)
+    }
+}
+
+function Et(e) {
+    return kt.includes(e)
+}
+
+function Dt(e) {
+    let t = new Set,
+        n = typeof process < `u` && {} [e.logLevelEnvVarName] || void 0,
+        r, i = Ct(e.namespace);
+    i.log = (...e) => {
+        Ct.log(...e)
+    };
+
+    function a(e) {
+        if (e && !Et(e)) throw Error(`Unknown log level '${e}'. Acceptable values: ${kt.join(`,`)}`);
+        r = e;
+        let n = [];
+        for (let e of t) o(e) && n.push(e.namespace);
+        Ct.enable(n.join(`,`))
+    }
+    n && (Et(n) ? a(n) : console.error(`${e.logLevelEnvVarName} set to unknown log level '${n}'; logging is not enabled. Acceptable values: ${kt.join(`, `)}.`));
+
+    function o(e) {
+        return !!(r && At[e.level] <= At[r])
+    }
+
+    function s(e, n) {
+        let r = Object.assign(e.extend(n), {
+            level: n
+        });
+        if (Tt(e, r), o(r)) {
+            let e = Ct.disable();
+            Ct.enable(e + `,` + r.namespace)
+        }
+        return t.add(r), r
+    }
+
+    function c() {
+        return r
+    }
+
+    function l(e) {
+        let t = i.extend(e);
+        return Tt(i, t), {
+            error: s(t, `error`),
+            warning: s(t, `warning`),
+            info: s(t, `info`),
+            verbose: s(t, `verbose`)
+        }
+    }
+    return {
+        setLogLevel: a,
+        getLogLevel: c,
+        createClientLogger: l,
+        logger: i
+    }
+}
+
+function Ot(e) {
+    return jt.createClientLogger(e)
+}
+var kt, At, jt, Mt = e((() => {
+    wt(), kt = [`verbose`, `info`, `warning`, `error`], At = {
+        verbose: 400,
+        info: 300,
+        warning: 200,
+        error: 100
+    }, jt = Dt({
+        logLevelEnvVarName: `TYPESPEC_RUNTIME_LOG_LEVEL`,
+        namespace: `typeSpecRuntime`
+    }), jt.logger
+}));
+
+function P(e) {
+    return e.toLowerCase()
+}
+
+function* Nt(e) {
+    for (let t of e.values()) yield [t.name, t.value]
+}
+
+function F(e) {
+    return new Ft(e)
+}
+var Pt, Ft, It = e((() => {
+        s(), Pt = Symbol.iterator, Ft = class {
+            constructor(e) {
+                if (h(this, `_headersMap`, void 0), this._headersMap = new Map, e)
+                    for (let t of Object.keys(e)) this.set(t, e[t])
+            }
+            set(e, t) {
+                this._headersMap.set(P(e), {
+                    name: e,
+                    value: String(t).trim()
+                })
+            }
+            get(e) {
+                return this._headersMap.get(P(e))?.value
+            }
+            has(e) {
+                return this._headersMap.has(P(e))
+            }
+            delete(e) {
+                this._headersMap.delete(P(e))
+            }
+            toJSON(e = {}) {
+                let t = {};
+                if (e.preserveCase)
+                    for (let e of this._headersMap.values()) t[e.name] = e.value;
+                else
+                    for (let [e, n] of this._headersMap) t[e] = n.value;
+                return t
+            }
+            toString() {
+                return JSON.stringify(this.toJSON({
+                    preserveCase: !0
+                }))
+            } [Pt]() {
+                return Nt(this._headersMap)
+            }
+        }
+    })),
+    Lt = e((() => {})),
+    Rt = e((() => {}));
+
+function zt() {
+    let e = ``;
+    for (let t = 0; t < 32; t++) {
+        let n = Math.floor(Math.random() * 16);
+        t === 12 ? e += `4` : t === 16 ? e += n & 3 | 8 : e += n.toString(16), (t === 7 || t === 11 || t === 15 || t === 19) && (e += `-`)
+    }
+    return e
+}
+var Bt = e((() => {}));
+
+function Vt() {
+    return Ht()
+}
+var Ht, Ut = e((() => {
+    Bt(), Ht = typeof globalThis?.crypto?.randomUUID == `function` ? globalThis.crypto.randomUUID.bind(globalThis.crypto) : zt
+}));
+
+function Wt(e) {
+    return new Gt(e)
+}
+var Gt, Kt = e((() => {
+    It(), Ut(), s(), Gt = class {
+        constructor(e) {
+            h(this, `url`, void 0), h(this, `method`, void 0), h(this, `headers`, void 0), h(this, `timeout`, void 0), h(this, `withCredentials`, void 0), h(this, `body`, void 0), h(this, `multipartBody`, void 0), h(this, `formData`, void 0), h(this, `streamResponseStatusCodes`, void 0), h(this, `enableBrowserStreams`, void 0), h(this, `proxySettings`, void 0), h(this, `disableKeepAlive`, void 0), h(this, `abortSignal`, void 0), h(this, `requestId`, void 0), h(this, `allowInsecureConnection`, void 0), h(this, `onUploadProgress`, void 0), h(this, `onDownloadProgress`, void 0), h(this, `requestOverrides`, void 0), h(this, `authSchemes`, void 0), this.url = e.url, this.body = e.body, this.headers = e.headers ?? F(), this.method = e.method ?? `GET`, this.timeout = e.timeout ?? 0, this.multipartBody = e.multipartBody, this.formData = e.formData, this.disableKeepAlive = e.disableKeepAlive ?? !1, this.proxySettings = e.proxySettings, this.streamResponseStatusCodes = e.streamResponseStatusCodes, this.withCredentials = e.withCredentials ?? !1, this.abortSignal = e.abortSignal, this.onUploadProgress = e.onUploadProgress, this.onDownloadProgress = e.onDownloadProgress, this.requestId = e.requestId || Vt(), this.allowInsecureConnection = e.allowInsecureConnection ?? !1, this.enableBrowserStreams = e.enableBrowserStreams ?? !1, this.requestOverrides = e.requestOverrides, this.authSchemes = e.authSchemes
+        }
+    }
+}));
+
+function qt() {
+    return Yt.create()
+}
+var Jt, Yt, Xt = e((() => {
+    s(), Jt = new Set([`Deserialize`, `Serialize`, `Retry`, `Sign`]), Yt = class e {
+        constructor(e) {
+            h(this, `_policies`, []), h(this, `_orderedPolicies`, void 0), this._policies = e?.slice(0) ?? [], this._orderedPolicies = void 0
+        }
+        addPolicy(e, t = {}) {
+            if (t.phase && t.afterPhase) throw Error(`Policies inside a phase cannot specify afterPhase.`);
+            if (t.phase && !Jt.has(t.phase)) throw Error(`Invalid phase name: ${t.phase}`);
+            if (t.afterPhase && !Jt.has(t.afterPhase)) throw Error(`Invalid afterPhase name: ${t.afterPhase}`);
+            this._policies.push({
+                policy: e,
+                options: t
+            }), this._orderedPolicies = void 0
+        }
+        removePolicy(e) {
+            let t = [];
+            return this._policies = this._policies.filter(n => e.name && n.policy.name === e.name || e.phase && n.options.phase === e.phase ? (t.push(n.policy), !1) : !0), this._orderedPolicies = void 0, t
+        }
+        sendRequest(e, t) {
+            return this.getOrderedPolicies().reduceRight((e, t) => n => t.sendRequest(n, e), t => e.sendRequest(t))(t)
+        }
+        getOrderedPolicies() {
+            return this._orderedPolicies ||= this.orderPolicies(), this._orderedPolicies
+        }
+        clone() {
+            return new e(this._policies)
+        }
+        static create() {
+            return new e
+        }
+        orderPolicies() {
+            let e = [],
+                t = new Map;
+
+            function n(e) {
+                return {
+                    name: e,
+                    policies: new Set,
+                    hasRun: !1,
+                    hasAfterPolicies: !1
+                }
+            }
+            let r = n(`Serialize`),
+                i = n(`None`),
+                a = n(`Deserialize`),
+                o = n(`Retry`),
+                s = n(`Sign`),
+                c = [r, i, a, o, s];
+
+            function l(e) {
+                return e === `Retry` ? o : e === `Serialize` ? r : e === `Deserialize` ? a : e === `Sign` ? s : i
+            }
+            for (let e of this._policies) {
+                let n = e.policy,
+                    r = e.options,
+                    i = n.name;
+                if (t.has(i)) throw Error(`Duplicate policy names not allowed in pipeline`);
+                let a = {
+                    policy: n,
+                    dependsOn: new Set,
+                    dependants: new Set
+                };
+                r.afterPhase && (a.afterPhase = l(r.afterPhase), a.afterPhase.hasAfterPolicies = !0), t.set(i, a), l(r.phase).policies.add(a)
+            }
+            for (let e of this._policies) {
+                let {
+                    policy: n,
+                    options: r
+                } = e, i = n.name, a = t.get(i);
+                if (!a) throw Error(`Missing node for policy ${i}`);
+                if (r.afterPolicies)
+                    for (let e of r.afterPolicies) {
+                        let n = t.get(e);
+                        n && (a.dependsOn.add(n), n.dependants.add(a))
+                    }
+                if (r.beforePolicies)
+                    for (let e of r.beforePolicies) {
+                        let n = t.get(e);
+                        n && (n.dependsOn.add(a), a.dependants.add(n))
+                    }
+            }
+
+            function u(n) {
+                n.hasRun = !0;
+                for (let r of n.policies)
+                    if (!(r.afterPhase && (!r.afterPhase.hasRun || r.afterPhase.policies.size)) && r.dependsOn.size === 0) {
+                        e.push(r.policy);
+                        for (let e of r.dependants) e.dependsOn.delete(r);
+                        t.delete(r.policy.name), n.policies.delete(r)
+                    }
+            }
+
+            function d() {
+                for (let e of c) {
+                    if (u(e), e.policies.size > 0 && e !== i) {
+                        i.hasRun || u(i);
+                        return
+                    }
+                    e.hasAfterPolicies && u(i)
+                }
+            }
+            let f = 0;
+            for (; t.size > 0;) {
+                f++;
+                let t = e.length;
+                if (d(), e.length <= t && f > 1) throw Error(`Cannot satisfy policy dependencies due to requirements cycle.`)
+            }
+            return e
+        }
+    }
+}));
+
+function Zt(e) {
+    return typeof e == `object` && !!e && !Array.isArray(e) && !(e instanceof RegExp) && !(e instanceof Date)
+}
+var Qt = e((() => {}));
+
+function $t(e) {
+    if (Zt(e)) {
+        let t = typeof e.name == `string`,
+            n = typeof e.message == `string`;
+        return t && n
+    }
+    return !1
+}
+var en = e((() => {
+        Qt()
+    })),
+    tn, nn = e((() => {
+        tn = Symbol()
+    })),
+    rn = e((() => {
+        nn()
+    })),
+    an, on, sn, cn, ln = e((() => {
+        Qt(), s(), an = `REDACTED`, on = `x-ms-client-request-id.x-ms-return-client-request-id.x-ms-useragent.x-ms-correlation-request-id.x-ms-request-id.client-request-id.ms-cv.return-client-request-id.traceparent.Access-Control-Allow-Credentials.Access-Control-Allow-Headers.Access-Control-Allow-Methods.Access-Control-Allow-Origin.Access-Control-Expose-Headers.Access-Control-Max-Age.Access-Control-Request-Headers.Access-Control-Request-Method.Origin.Accept.Accept-Encoding.Cache-Control.Connection.Content-Length.Content-Type.Date.ETag.Expires.If-Match.If-Modified-Since.If-None-Match.If-Unmodified-Since.Last-Modified.Pragma.Request-Id.Retry-After.Server.Transfer-Encoding.User-Agent.WWW-Authenticate`.split(`.`), sn = [`api-version`], cn = class {
+            constructor({
+                additionalAllowedHeaderNames: e = [],
+                additionalAllowedQueryParameters: t = []
+            } = {}) {
+                h(this, `allowedHeaderNames`, void 0), h(this, `allowedQueryParameters`, void 0), e = on.concat(e), t = sn.concat(t), this.allowedHeaderNames = new Set(e.map(e => e.toLowerCase())), this.allowedQueryParameters = new Set(t.map(e => e.toLowerCase()))
+            }
+            sanitize(e) {
+                let t = new Set;
+                return JSON.stringify(e, (e, n) => {
+                    if (n instanceof Error) return {
+                        ...n,
+                        name: n.name,
+                        message: n.message
+                    };
+                    if (e === `headers`) return this.sanitizeHeaders(n);
+                    if (e === `url`) return this.sanitizeUrl(n);
+                    if (e === `query`) return this.sanitizeQuery(n);
+                    if (e !== `body` && e !== `response` && e !== `operationSpec`) {
+                        if (Array.isArray(n) || Zt(n)) {
+                            if (t.has(n)) return `[Circular]`;
+                            t.add(n)
+                        }
+                        return n
+                    }
+                }, 2)
+            }
+            sanitizeUrl(e) {
+                if (typeof e != `string` || e === null || e === ``) return e;
+                let t = new URL(e);
+                if (!t.search) return e;
+                for (let [e] of t.searchParams) this.allowedQueryParameters.has(e.toLowerCase()) || t.searchParams.set(e, an);
+                return t.toString()
+            }
+            sanitizeHeaders(e) {
+                let t = {};
+                for (let n of Object.keys(e)) this.allowedHeaderNames.has(n.toLowerCase()) ? t[n] = e[n] : t[n] = an;
+                return t
+            }
+            sanitizeQuery(e) {
+                if (typeof e != `object` || !e) return e;
+                let t = {};
+                for (let n of Object.keys(e)) this.allowedQueryParameters.has(n.toLowerCase()) ? t[n] = e[n] : t[n] = an;
+                return t
+            }
+        }
+    }));
+
+function un(e) {
+    return e instanceof fn || $t(e) && e.name === `RestError`
+}
+var dn, fn, pn = e((() => {
+    en(), rn(), ln(), s(), dn = new cn, fn = class e extends Error {
+        constructor(t, n = {}) {
+            super(t), h(this, `code`, void 0), h(this, `statusCode`, void 0), h(this, `request`, void 0), h(this, `response`, void 0), h(this, `details`, void 0), this.name = `RestError`, this.code = n.code, this.statusCode = n.statusCode, Object.defineProperty(this, "request", {
+                value: n.request,
+                enumerable: !1
+            }), Object.defineProperty(this, "response", {
+                value: n.response,
+                enumerable: !1
+            });
+            let r = this.request?.agent ? {
+                maxFreeSockets: this.request.agent.maxFreeSockets,
+                maxSockets: this.request.agent.maxSockets
+            } : void 0;
+            Object.defineProperty(this, tn, {
+                value: () => `RestError: ${this.message} \n ${dn.sanitize({...this,request:{...this.request,agent:r},response:this.response})}`,
+                enumerable: !1
+            }), Object.setPrototypeOf(this, e.prototype)
+        }
+    }, h(fn, `REQUEST_SEND_ERROR`, `REQUEST_SEND_ERROR`), h(fn, `PARSE_ERROR`, `PARSE_ERROR`)
+}));
+
+function mn(e, t) {
+    switch (t) {
+        case `utf-8`:
+            return hn(e);
+        case `base64`:
+            return gn(e);
+        case `base64url`:
+            return _n(e);
+        case `hex`:
+            return vn(e)
+    }
+}
+
+function hn(e) {
+    return new TextEncoder().encode(e)
+}
+
+function gn(e) {
+    return new Uint8Array([...atob(e)].map(e => e.charCodeAt(0)))
+}
+
+function _n(e) {
+    return gn(e.replace(/-/g, `+`).replace(/_/g, `/`))
+}
+
+function vn(e) {
+    let t = new Uint8Array(e.length / 2);
+    for (let n = 0; n < e.length / 2; ++n) {
+        let r = e[2 * n],
+            i = e[2 * n + 1];
+        if (!yn.has(r) || !yn.has(i)) return t.slice(0, n);
+        t[n] = parseInt(`${r}${i}`, 16)
+    }
+    return t
+}
+var yn, bn = e((() => {
+        yn = new Set(`0123456789abcdefABCDEF`)
+    })),
+    xn = e((() => {
+        bn()
+    }));
+
+function Sn(e) {
+    return !!(e && typeof e.pipe == `function`)
+}
+
+function Cn(e) {
+    return !!(e && typeof e.getReader == `function` && typeof e.tee == `function`)
+}
+
+function wn(e) {
+    return typeof e.stream == `function`
+}
+var Tn = e((() => {}));
+
+function En(e) {
+    if (e.buffer instanceof ArrayBuffer && e.byteOffset === 0 && e.byteLength === e.buffer.byteLength) return e.buffer;
+    let t = new ArrayBuffer(e.byteLength),
+        n = new Uint8Array(t),
+        r = new Uint8Array(e.buffer, e.byteOffset, e.byteLength);
+    return n.set(r), n.buffer
+}
+var I = e((() => {}));
+
+function Dn(e) {
+    return (typeof Blob == `function` || typeof Blob == `object`) && e instanceof Blob
+}
+async function On(e) {
+    let {
+        abortController: t,
+        abortControllerCleanup: n
+    } = An(e);
+    try {
+        let r = Mn(e.headers),
+            {
+                streaming: i,
+                body: a
+            } = Pn(e),
+            o = {
+                body: a,
+                method: e.method,
+                headers: r,
+                signal: t.signal,
+                ...`credentials` in Request.prototype ? {
+                    credentials: e.withCredentials ? `include` : `same-origin`
+                } : {},
+                ...`cache` in Request.prototype ? {
+                    cache: `no-store`
+                } : {}
+            };
+        i && (o.duplex = `half`);
+        let s = await fetch(e.url, {
+            ...o,
+            ...e.requestOverrides
+        });
+        return Dn(e.body) && e.onUploadProgress && e.onUploadProgress({
+            loadedBytes: e.body.size
+        }), kn(s, e, n)
+    } catch (e) {
+        throw n?.(), e
+    }
+}
+async function kn(e, t, n) {
+    let r = {
+            request: t,
+            headers: Nn(e),
+            status: e.status
+        },
+        i = Cn(e.body) ? Fn(e.body, {
+            onProgress: t.onDownloadProgress,
+            onEnd: n
+        }) : e.body;
+    return t.streamResponseStatusCodes?.has(1 / 0) || t.streamResponseStatusCodes?.has(r.status) ? t.enableBrowserStreams ? r.browserStreamBody = i ?? void 0 : (r.blobBody = new Response(i).blob(), n?.()) : (r.bodyAsText = await new Response(i).text(), n?.()), r
+}
+
+function An(e) {
+    let t = new AbortController,
+        n, r;
+    if (e.abortSignal) {
+        if (e.abortSignal.aborted) throw new ot(`The operation was aborted. Request has already been canceled.`);
+        r = e => {
+            e.type === `abort` && t.abort()
+        }, e.abortSignal.addEventListener(`abort`, r), n = () => {
+            r && e.abortSignal?.removeEventListener(`abort`, r)
+        }
+    }
+    return e.timeout > 0 && setTimeout(() => {
+        t.abort()
+    }, e.timeout), {
+        abortController: t,
+        abortControllerCleanup: n
+    }
+}
+
+function jn(e, t) {
+    return e && e?.name === `AbortError` ? e : new fn(`Error sending request: ${e.message}`, {
+        code: e?.code ?? fn.REQUEST_SEND_ERROR,
+        request: t
+    })
+}
+
+function Mn(e) {
+    let t = new Headers;
+    for (let [n, r] of e) t.append(n, r);
+    return t
+}
+
+function Nn(e) {
+    let t = F();
+    for (let [n, r] of e.headers) t.set(n, r);
+    return t
+}
+
+function Pn(e) {
+    let t = typeof e.body == `function` ? e.body() : e.body;
+    if (Sn(t)) throw Error(`Node streams are not supported in browser environment.`);
+    return Cn(t) ? {
+        streaming: !0,
+        body: Fn(t, {
+            onProgress: e.onUploadProgress
+        })
+    } : typeof t == `object` && t && `buffer` in t ? {
+        streaming: !1,
+        body: En(t)
+    } : t === void 0 ? {
+        streaming: !1
+    } : {
+        streaming: !1,
+        body: t
+    }
+}
+
+function Fn(e, t = {}) {
+    let n = 0,
+        {
+            onProgress: r,
+            onEnd: i
+        } = t;
+    if (Ln(e)) return e.pipeThrough(new TransformStream({
+        transform(e, t) {
+            if (e === null) {
+                t.terminate();
+                return
+            }
+            t.enqueue(e), n += e.length, r && r({
+                loadedBytes: n
+            })
+        },
+        flush() {
+            i?.()
+        }
+    }));
+    {
+        let t = e.getReader();
+        return new ReadableStream({
+            async pull(e) {
+                let {
+                    done: a,
+                    value: o
+                } = await t.read();
+                if (a || !o) {
+                    i?.(), e.close(), t.releaseLock();
+                    return
+                }
+                n += o?.length ?? 0, e.enqueue(o), r && r({
+                    loadedBytes: n
+                })
+            },
+            cancel(e) {
+                return i?.(), t.cancel(e)
+            }
+        })
+    }
+}
+
+function In() {
+    return new Rn
+}
+
+function Ln(e) {
+    return e.pipeThrough !== void 0 && self.TransformStream !== void 0
+}
+var Rn, zn = e((() => {
+    st(), pn(), It(), Tn(), I(), Rn = class {
+        async sendRequest(e) {
+            if (new URL(e.url).protocol !== `https:` && !e.allowInsecureConnection) throw Error(`Cannot connect to ${e.url} while allowInsecureConnection is false.`);
+            if (e.proxySettings) throw Error(`HTTP proxy is not supported in browser environment`);
+            try {
+                return await On(e)
+            } catch (t) {
+                throw jn(t, e)
+            }
+        }
+    }
+}));
+
+function Bn() {
+    return In()
+}
+var Vn = e((() => {
+        zn()
+    })),
+    Hn, Un = e((() => {
+        Mt(), Hn = Ot(`ts-http-runtime`)
+    }));
+
+function Wn(e = {}) {
+    let t = e.logger ?? Hn.info,
+        n = new cn({
+            additionalAllowedHeaderNames: e.additionalAllowedHeaderNames,
+            additionalAllowedQueryParameters: e.additionalAllowedQueryParameters
+        });
+    return {
+        name: Gn,
+        async sendRequest(e, r) {
+            if (!t.enabled) return r(e);
+            t(`Request: ${n.sanitize(e)}`);
+            let i = await r(e);
+            return t(`Response status code: ${i.status}`), t(`Headers: ${n.sanitize(i.headers)}`), i
+        }
+    }
+}
+var Gn, Kn = e((() => {
+    Un(), ln(), Gn = `logPolicy`
+}));
+
+function qn(e = {}) {
+    let {
+        maxRetries: t = 20
+    } = e;
+    return {
+        name: Yn,
+        async sendRequest(e, n) {
+            return Jn(n, await n(e), t)
+        }
+    }
+}
+async function Jn(e, t, n, r = 0) {
+    let {
+        request: i,
+        status: a,
+        headers: o
+    } = t, s = o.get(`location`);
+    return s && (a === 300 || a === 301 && Xn.includes(i.method) || a === 302 && Xn.includes(i.method) || a === 303 && i.method === `POST` || a === 307) && r < n ? (i.url = new URL(s, i.url).toString(), a === 303 && (i.method = `GET`, i.headers.delete(`Content-Length`), delete i.body), i.headers.delete(`Authorization`), Jn(e, await e(i), n, r + 1)) : t
+}
+var Yn, Xn, Zn = e((() => {
+        Yn = `redirectPolicy`, Xn = [`GET`, `HEAD`]
+    })),
+    Qn = e((() => {}));
+
+function $n() {
+    throw Error(`decompressResponsePolicy is not supported in browser environment`)
+}
+var er, tr = e((() => {
+    er = `decompressResponsePolicy`
+}));
+
+function nr(e, t) {
+    return e = Math.ceil(e), t = Math.floor(t), Math.floor(Math.random() * (t - e + 1)) + e
+}
+var rr = e((() => {}));
+
+function ir(e, t) {
+    let n = t.retryDelayInMs * 2 ** e,
+        r = Math.min(t.maxRetryDelayInMs, n);
+    return {
+        retryAfterInMs: r / 2 + nr(0, r / 2)
+    }
+}
+var ar = e((() => {
+    rr()
+}));
+
+function or(e, t, n) {
+    return new Promise((r, i) => {
+        let a, o, s = () => i(new ot(n?.abortErrorMsg ? n?.abortErrorMsg : cr)),
+            c = () => {
+                n?.abortSignal && o && n.abortSignal.removeEventListener(`abort`, o)
+            };
+        if (o = () => (a && clearTimeout(a), c(), s()), n?.abortSignal && n.abortSignal.aborted) return s();
+        a = setTimeout(() => {
+            c(), r(t)
+        }, e), n?.abortSignal && n.abortSignal.addEventListener(`abort`, o)
+    })
+}
+
+function sr(e, t) {
+    let n = e.headers.get(t);
+    if (!n) return;
+    let r = Number(n);
+    if (!Number.isNaN(r)) return r
+}
+var cr, lr = e((() => {
+    st(), cr = `The operation was aborted.`
+}));
+
+function ur(e) {
+    if (e && [429, 503].includes(e.status)) try {
+        for (let t of mr) {
+            let n = sr(e, t);
+            if (n === 0 || n) return n * (t === pr ? 1e3 : 1)
+        }
+        let t = e.headers.get(pr);
+        if (!t) return;
+        let n = Date.parse(t) - Date.now();
+        return Number.isFinite(n) ? Math.max(0, n) : void 0
+    } catch {
+        return
+    }
+}
+
+function dr(e) {
+    return Number.isFinite(ur(e))
+}
+
+function fr() {
+    return {
+        name: `throttlingRetryStrategy`,
+        retry({
+            response: e
+        }) {
+            let t = ur(e);
+            return Number.isFinite(t) ? {
+                retryAfterInMs: t
+            } : {
+                skipStrategy: !0
+            }
+        }
+    }
+}
+var pr, mr, hr = e((() => {
+    lr(), pr = `Retry-After`, mr = [`retry-after-ms`, `x-ms-retry-after-ms`, pr]
+}));
+
+function gr(e = {}) {
+    let t = e.retryDelayInMs ?? yr,
+        n = e.maxRetryDelayInMs ?? br;
+    return {
+        name: `exponentialRetryStrategy`,
+        retry({
+            retryCount: r,
+            response: i,
+            responseError: a
+        }) {
+            let o = vr(a),
+                s = o && e.ignoreSystemErrors,
+                c = _r(i),
+                l = c && e.ignoreHttpStatusCodes;
+            return i && (dr(i) || !c) || l || s ? {
+                skipStrategy: !0
+            } : a && !o && !c ? {
+                errorToThrow: a
+            } : ir(r, {
+                retryDelayInMs: t,
+                maxRetryDelayInMs: n
+            })
+        }
+    }
+}
+
+function _r(e) {
+    return !!(e && e.status !== void 0 && (e.status >= 500 || e.status === 408) && e.status !== 501 && e.status !== 505)
+}
+
+function vr(e) {
+    return e ? e.code === `ETIMEDOUT` || e.code === `ESOCKETTIMEDOUT` || e.code === `ECONNREFUSED` || e.code === `ECONNRESET` || e.code === `ENOENT` || e.code === `ENOTFOUND` : !1
+}
+var yr, br, xr = e((() => {
+    ar(), hr(), yr = 1e3, br = 1e3 * 64
+}));
+
+function Sr(e, t = {
+    maxRetries: 3
+}) {
+    let n = t.logger || Cr;
+    return {
+        name: wr,
+        async sendRequest(r, i) {
+            let a, o, s = -1;
+            retryRequest: for (;;) {
+                s += 1, a = void 0, o = void 0;
+                try {
+                    n.info(`Retry ${s}: Attempting to send request`, r.requestId), a = await i(r), n.info(`Retry ${s}: Received a response from request`, r.requestId)
+                } catch (e) {
+                    if (n.error(`Retry ${s}: Received an error from request`, r.requestId), o = e, !e || o.name !== `RestError`) throw e;
+                    a = o.response
+                }
+                if (r.abortSignal?.aborted) throw n.error(`Retry ${s}: Request aborted.`), new ot;
+                if (s >= (t.maxRetries ?? 3)) {
+                    if (n.info(`Retry ${s}: Maximum retries reached. Returning the last received response, or throwing the last received error.`), o) throw o;
+                    if (a) return a;
+                    throw Error(`Maximum retries reached with no response or error to throw`)
+                }
+                n.info(`Retry ${s}: Processing ${e.length} retry strategies.`);
+                strategiesLoop: for (let t of e) {
+                    let e = t.logger || n;
+                    e.info(`Retry ${s}: Processing retry strategy ${t.name}.`);
+                    let i = t.retry({
+                        retryCount: s,
+                        response: a,
+                        responseError: o
+                    });
+                    if (i.skipStrategy) {
+                        e.info(`Retry ${s}: Skipped.`);
+                        continue strategiesLoop
+                    }
+                    let {
+                        errorToThrow: c,
+                        retryAfterInMs: l,
+                        redirectTo: u
+                    } = i;
+                    if (c) throw e.error(`Retry ${s}: Retry strategy ${t.name} throws error:`, c), c;
+                    if (l || l === 0) {
+                        e.info(`Retry ${s}: Retry strategy ${t.name} retries after ${l}`), await or(l, void 0, {
+                            abortSignal: r.abortSignal
+                        });
+                        continue retryRequest
+                    }
+                    if (u) {
+                        e.info(`Retry ${s}: Retry strategy ${t.name} redirects to ${u}`), r.url = u;
+                        continue retryRequest
+                    }
+                }
+                if (o) throw n.info(`None of the retry strategies could work with the received error. Throwing it.`), o;
+                if (a) return n.info(`None of the retry strategies could work with the received response. Returning it.`), a
+            }
+        }
+    }
+}
+var Cr, wr, Tr = e((() => {
+    lr(), st(), Mt(), Qn(), Cr = Ot(`ts-http-runtime retryPolicy`), wr = `retryPolicy`
+}));
+
+function Er(e = {}) {
+    return {
+        name: Dr,
+        sendRequest: Sr([fr(), gr(e)], {
+            maxRetries: e.maxRetries ?? 3
+        }).sendRequest
+    }
+}
+var Dr, Or = e((() => {
+        xr(), hr(), Tr(), Qn(), Dr = `defaultRetryPolicy`
+    })),
+    kr, Ar = e((() => {
+        typeof window < `u` && window.document, typeof self == `object` && typeof self?.importScripts == `function` && (self.constructor?.name === `DedicatedWorkerGlobalScope` || self.constructor?.name === `ServiceWorkerGlobalScope` || self.constructor?.name), typeof Deno < `u` && Deno.version !== void 0 && Deno.version.deno, typeof Bun < `u` && Bun.version, kr = globalThis.process !== void 0 && !!globalThis.process.version && !!globalThis.process.versions?.node, typeof navigator < `u` && navigator?.product
+    }));
+
+function jr(e) {
+    let t = {};
+    for (let [n, r] of e.entries()) t[n] ??= [], t[n].push(r);
+    return t
+}
+
+function Mr() {
+    return {
+        name: Fr,
+        async sendRequest(e, t) {
+            if (kr && typeof FormData < `u` && e.body instanceof FormData && (e.formData = jr(e.body), e.body = void 0), e.formData) {
+                let t = e.headers.get(`Content-Type`);
+                t && t.indexOf(`application/x-www-form-urlencoded`) !== -1 ? e.body = Nr(e.formData) : await Pr(e.formData, e), e.formData = void 0
+            }
+            return t(e)
+        }
+    }
+}
+
+function Nr(e) {
+    let t = new URLSearchParams;
+    for (let [n, r] of Object.entries(e))
+        if (Array.isArray(r))
+            for (let e of r) t.append(n, e.toString());
+        else t.append(n, r.toString());
+    return t.toString()
+}
+async function Pr(e, t) {
+    let n = t.headers.get(`Content-Type`);
+    if (n && !n.startsWith(`multipart/form-data`)) return;
+    t.headers.set(`Content-Type`, n ?? `multipart/form-data`);
+    let r = [];
+    for (let [t, n] of Object.entries(e))
+        for (let e of Array.isArray(n) ? n : [n])
+            if (typeof e == `string`) r.push({
+                headers: F({
+                    "Content-Disposition": `form-data; name="${t}"`
+                }),
+                body: mn(e, `utf-8`)
+            });
+            else if (typeof e != `object` || !e) throw Error(`Unexpected value for key ${t}: ${e}. Value should be serialized to string first.`);
+    else {
+        let n = e.name || `blob`,
+            i = F();
+        i.set(`Content-Disposition`, `form-data; name="${t}"; filename="${n}"`), i.set(`Content-Type`, e.type || `application/octet-stream`), r.push({
+            headers: i,
+            body: e
+        })
+    }
+    t.multipartBody = {
+        parts: r
+    }
+}
+var Fr, Ir = e((() => {
+    xn(), Ar(), It(), Fr = `formDataPolicy`
+}));
+
+function Lr() {
+    throw Error(zr)
+}
+
+function Rr() {
+    throw Error(zr)
+}
+var zr, Br = e((() => {
+        zr = `proxyPolicy is not supported in browser environment`
+    })),
+    Vr = e((() => {
+        Br()
+    }));
+
+function Hr(e) {
+    return {
+        name: Ur,
+        sendRequest: async (t, n) => (t.agent ||= e, n(t))
+    }
+}
+var Ur, Wr = e((() => {
+    Ur = `agentPolicy`
+}));
+
+function Gr(e) {
+    return {
+        name: Kr,
+        sendRequest: async (t, n) => (t.tlsSettings ||= e, n(t))
+    }
+}
+var Kr, qr = e((() => {
+    Kr = `tlsPolicy`
+}));
+
+function Jr(e) {
+    return new Response(e).blob()
+}
+async function Yr(e) {
+    if (e instanceof Blob || e instanceof Uint8Array) return e;
+    if (Cn(e)) return Jr(e);
+    throw Error(`Unsupported source type. Only Blob, Uint8Array, and ReadableStream are supported in browser.`)
+}
+
+function Xr(e) {
+    return `resize` in e.buffer ? e : e.map(e => e)
+}
+async function Zr(e) {
+    let t = [];
+    for (let n of e) {
+        let e = await Yr(typeof n == `function` ? n() : n);
+        e instanceof Blob ? t.push(e) : t.push(new Blob([Xr(e)]))
+    }
+    return new Blob(t)
+}
+var Qr = e((() => {
+        Tn()
+    })),
+    $r = e((() => {
+        Qr()
+    }));
+
+function ei() {
+    return `----AzSDKFormBoundary${Vt()}`
+}
+
+function ti(e) {
+    let t = ``;
+    for (let [n, r] of e) t += `${n}: ${r}\r\n`;
+    return t
+}
+
+function ni(e) {
+    if (e instanceof Uint8Array) return e.byteLength;
+    if (wn(e)) return e.size === -1 ? void 0 : e.size
+}
+
+function ri(e) {
+    let t = 0;
+    for (let n of e) {
+        let e = ni(n);
+        if (e === void 0) return;
+        t += e
+    }
+    return t
+}
+async function ii(e, t, n) {
+    let r = [mn(`--${n}`, `utf-8`), ...t.flatMap(e => [mn(`\r
+`, `utf-8`), mn(ti(e.headers), `utf-8`), mn(`\r
+`, `utf-8`), e.body, mn(`\r\n--${n}`, `utf-8`)]), mn(`--\r
+\r
+`, `utf-8`)],
+        i = ri(r);
+    i && e.headers.set(`Content-Length`, i), e.body = await Zr(r)
+}
+
+function ai(e) {
+    if (e.length > ci) throw Error(`Multipart boundary "${e}" exceeds maximum length of 70 characters`);
+    if (Array.from(e).some(e => !li.has(e))) throw Error(`Multipart boundary "${e}" contains invalid characters`)
+}
+
+function oi() {
+    return {
+        name: si,
+        async sendRequest(e, t) {
+            if (!e.multipartBody) return t(e);
+            if (e.body) throw Error(`multipartBody and regular body cannot be set at the same time`);
+            let n = e.multipartBody.boundary,
+                r = e.headers.get(`Content-Type`) ?? `multipart/mixed`,
+                i = r.match(/^(multipart\/[^ ;]+)(?:; *boundary=(.+))?$/);
+            if (!i) throw Error(`Got multipart request body, but content-type header was not multipart: ${r}`);
+            let [, a, o] = i;
+            if (o && n && o !== n) throw Error(`Multipart boundary was specified as ${o} in the header, but got ${n} in the request body`);
+            return n ??= o, n ? ai(n) : n = ei(), e.headers.set(`Content-Type`, `${a}; boundary=${n}`), await ii(e, e.multipartBody.parts, n), e.multipartBody = void 0, t(e)
+        }
+    }
+}
+var si, ci, li, ui = e((() => {
+        xn(), Tn(), Ut(), $r(), si = `multipartPolicy`, ci = 70, li = new Set(`abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'()+,-./:=?`)
+    })),
+    di = e((() => {
+        st(), Mt(), It(), Lt(), Rt(), Kt(), Xt(), pn(), xn(), Vn(), Kn(), Zn(), Qn(), tr(), Or(), Ir(), Ar(), Vr(), Wr(), qr(), ui(), Un()
+    }));
+
+function fi() {
+    return qt()
+}
+var pi = e((() => {
+        di()
+    })),
+    mi = e((() => {
+        Mt()
+    }));
+
+function hi(e) {
+    return gi.createClientLogger(e)
+}
+var gi, _i = e((() => {
+        mi(), gi = Dt({
+            logLevelEnvVarName: `AZURE_LOG_LEVEL`,
+            namespace: `azure`
+        }), gi.logger
+    })),
+    vi, yi = e((() => {
+        _i(), vi = hi(`core-rest-pipeline`)
+    })),
+    bi = e((() => {
+        Wr(), tr(), Or(), xr(), Tr(), Qn(), hr(), Ir(), Kn(), ui(), Vr(), Zn(), qr()
+    }));
+
+function xi(e = {}) {
+    return Wn({
+        logger: vi.info,
+        ...e
+    })
+}
+var Si = e((() => {
+    yi(), bi()
+}));
+
+function Ci(e = {}) {
+    return qn(e)
+}
+var wi, Ti = e((() => {
+    bi(), wi = Yn
+}));
+
+function Ei() {
+    return `x-ms-useragent`
+}
+
+function Di(e) {
+    for (let t of [{
+            name: `Firefox`,
+            regex: /Firefox\/([\d.]+)/
+        }, {
+            name: `Safari`,
+            regex: /Version\/([\d.]+).*Safari/
+        }]) {
+        let n = e.match(t.regex);
+        if (n) return {
+            brand: t.name,
+            version: n[1]
+        }
+    }
+}
+
+function Oi(e) {
+    for (let t of [`Google Chrome`, `Microsoft Edge`, `Opera`, `Brave`, `Chromium`]) {
+        let n = e.find(e => e.brand === t);
+        if (n) return n
+    }
+}
+async function ki(e) {
+    let t = globalThis.navigator,
+        n = `unknown`;
+    if (t?.userAgentData) {
+        let r = await t.userAgentData.getHighEntropyValues([`architecture`, `platformVersion`]);
+        n = `${r.platform} ${r.platformVersion}; ${r.architecture}`;
+        let i = Oi(t.userAgentData.brands);
+        i && e.set(i.brand, `${i.version} (${n})`)
+    } else if (t?.platform) {
+        n = t.platform;
+        let r = Di(t.userAgent);
+        r && e.set(r.brand, `${r.version} (${n})`)
+    } else typeof globalThis.EdgeRuntime == `string` && e.set(`EdgeRuntime`, `${globalThis.EdgeRuntime} (${n})`)
+}
+var Ai = e((() => {})),
+    ji, Mi = e((() => {
+        ji = `1.22.2`
+    }));
+
+function Ni(e) {
+    let t = [];
+    for (let [n, r] of e) {
+        let e = r ? `${n}/${r}` : n;
+        t.push(e)
+    }
+    return t.join(` `)
+}
+
+function Pi() {
+    return Ei()
+}
+async function Fi(e) {
+    let t = new Map;
+    t.set(`core-rest-pipeline`, ji), await ki(t);
+    let n = Ni(t);
+    return e ? `${e} ${n}` : n
+}
+var Ii = e((() => {
+    Ai(), Mi()
+}));
+
+function Li(e = {}) {
+    let t = Fi(e.userAgentPrefix);
+    return {
+        name: zi,
+        async sendRequest(e, n) {
+            return e.headers.has(Ri) || e.headers.set(Ri, await t), n(e)
+        }
+    }
+}
+var Ri, zi, Bi = e((() => {
+        Ii(), Ri = Pi(), zi = `userAgentPolicy`
+    })),
+    Vi = e((() => {
+        ar(), en(), xn(), Ut(), Ar(), ln()
+    })),
+    Hi, Ui = e((() => {
+        Hi = class extends Error {
+            constructor(e) {
+                super(e), this.name = `AbortError`
+            }
+        }
+    })),
+    Wi = e((() => {
+        Ui()
+    }));
+
+function Gi(e, t) {
+    let {
+        cleanupBeforeAbort: n,
+        abortSignal: r,
+        abortErrorMsg: i
+    } = t ?? {};
+    return new Promise((t, a) => {
+        function o() {
+            a(new Hi(i ?? `The operation was aborted.`))
+        }
+
+        function s() {
+            r?.removeEventListener(`abort`, c)
+        }
+
+        function c() {
+            n?.(), s(), o()
+        }
+        if (r?.aborted) return o();
+        try {
+            e(e => {
+                s(), t(e)
+            }, e => {
+                s(), a(e)
+            })
+        } catch (e) {
+            a(e)
+        }
+        r?.addEventListener(`abort`, c)
+    })
+}
+var Ki = e((() => {
+    Wi()
+}));
+
+function qi(e, t) {
+    let n, {
+        abortSignal: r,
+        abortErrorMsg: i
+    } = t ?? {};
+    return Gi(t => {
+        n = setTimeout(t, e)
+    }, {
+        cleanupBeforeAbort: () => clearTimeout(n),
+        abortSignal: r,
+        abortErrorMsg: i ?? Ji
+    })
+}
+var Ji, Yi = e((() => {
+    Ki(), Ji = `The delay was aborted.`
+}));
+
+function Xi(e) {
+    if ($t(e)) return e.message;
+    {
+        let t;
+        try {
+            t = typeof e == `object` && e ? JSON.stringify(e) : String(e)
+        } catch {
+            t = `[unable to stringify input]`
+        }
+        return `Unknown error ${t}`
+    }
+}
+var Zi = e((() => {
+    Vi()
+}));
+
+function Qi(e) {
+    return $t(e)
+}
+
+function $i() {
+    return Vt()
+}
+var ea, ta = e((() => {
+    Vi(), Ki(), Yi(), Zi(), ea = kr
+}));
+
+function na(e) {
+    return typeof e[ia] == `function`
+}
+
+function ra(e) {
+    return na(e) ? e[ia]() : e
+}
+var ia, aa = e((() => {
+    ia = Symbol(`rawContent`)
+}));
+
+function oa() {
+    let e = oi();
+    return {
+        name: sa,
+        sendRequest: async (t, n) => {
+            if (t.multipartBody)
+                for (let e of t.multipartBody.parts) na(e.body) && (e.body = ra(e.body));
+            return e.sendRequest(t, n)
+        }
+    }
+}
+var sa, ca = e((() => {
+    bi(), aa(), sa = si
+}));
+
+function la() {
+    return $n()
+}
+var ua, da = e((() => {
+    bi(), ua = er
+}));
+
+function fa(e = {}) {
+    return Er(e)
+}
+var pa = e((() => {
+    bi()
+}));
+
+function ma() {
+    return Mr()
+}
+var ha = e((() => {
+    bi()
+}));
+
+function ga(e) {
+    return Lr(e)
+}
+
+function _a(e, t) {
+    return Rr(e, t)
+}
+var va = e((() => {
+    bi()
+}));
+
+function ya(e = `x-ms-client-request-id`) {
+    return {
+        name: ba,
+        async sendRequest(t, n) {
+            return t.headers.has(e) || t.headers.set(e, t.requestId), n(t)
+        }
+    }
+}
+var ba, xa = e((() => {
+    ba = `setClientRequestIdPolicy`
+}));
+
+function Sa(e) {
+    return Hr(e)
+}
+var Ca = e((() => {
+    bi()
+}));
+
+function wa(e) {
+    return Gr(e)
+}
+var Ta = e((() => {
+    bi()
+}));
+
+function Ea(e = {}) {
+    let t = new Oa(e.parentContext);
+    return e.span && (t = t.setValue(Da.span, e.span)), e.namespace && (t = t.setValue(Da.namespace, e.namespace)), t
+}
+var Da, Oa, ka = e((() => {
+        s(), Da = {
+            span: Symbol.for(`@azure/core-tracing span`),
+            namespace: Symbol.for(`@azure/core-tracing namespace`)
+        }, Oa = class e {
+            constructor(t) {
+                h(this, `_contextMap`, void 0), this._contextMap = t instanceof e ? new Map(t._contextMap) : new Map
+            }
+            setValue(t, n) {
+                let r = new e(this);
+                return r._contextMap.set(t, n), r
+            }
+            getValue(e) {
+                return this._contextMap.get(e)
+            }
+            deleteValue(t) {
+                let n = new e(this);
+                return n._contextMap.delete(t), n
+            }
+        }
+    })),
+    Aa, ja = e((() => {
+        Aa = {
+            instrumenterImplementation: void 0
+        }
+    }));
+
+function Ma() {
+    return {
+        end: () => {},
+        isRecording: () => !1,
+        recordException: () => {},
+        setAttribute: () => {},
+        setStatus: () => {},
+        addEvent: () => {}
+    }
+}
+
+function Na() {
+    return {
+        createRequestHeaders: () => ({}),
+        parseTraceparentHeader: () => {},
+        startSpan: (e, t) => ({
+            span: Ma(),
+            tracingContext: Ea({
+                parentContext: t.tracingContext
+            })
+        }),
+        withContext(e, t, ...n) {
+            return t(...n)
+        }
+    }
+}
+
+function Pa() {
+    return Aa.instrumenterImplementation ||= Na(), Aa.instrumenterImplementation
+}
+var Fa = e((() => {
+    ka(), ja()
+}));
+
+function Ia(e) {
+    let {
+        namespace: t,
+        packageName: n,
+        packageVersion: r
+    } = e;
+
+    function i(e, i, a) {
+        let o = Pa().startSpan(e, {
+                ...a,
+                packageName: n,
+                packageVersion: r,
+                tracingContext: i?.tracingOptions?.tracingContext
+            }),
+            s = o.tracingContext,
+            c = o.span;
+        return s.getValue(Da.namespace) || (s = s.setValue(Da.namespace, t)), c.setAttribute(`az.namespace`, s.getValue(Da.namespace)), {
+            span: c,
+            updatedOptions: Object.assign({}, i, {
+                tracingOptions: {
+                    ...i?.tracingOptions,
+                    tracingContext: s
+                }
+            })
+        }
+    }
+    async function a(e, t, n, r) {
+        let {
+            span: a,
+            updatedOptions: s
+        } = i(e, t, r);
+        try {
+            let e = await o(s.tracingOptions.tracingContext, () => Promise.resolve(n(s, a)));
+            return a.setStatus({
+                status: `success`
+            }), e
+        } catch (e) {
+            throw a.setStatus({
+                status: `error`,
+                error: e
+            }), e
+        } finally {
+            a.end()
+        }
+    }
+
+    function o(e, t, ...n) {
+        return Pa().withContext(e, t, ...n)
+    }
+
+    function s(e) {
+        return Pa().parseTraceparentHeader(e)
+    }
+
+    function c(e) {
+        return Pa().createRequestHeaders(e)
+    }
+    return {
+        startSpan: i,
+        withSpan: a,
+        withContext: o,
+        parseTraceparentHeader: s,
+        createRequestHeaders: c
+    }
+}
+var La = e((() => {
+        Fa(), ka()
+    })),
+    Ra = e((() => {
+        Fa(), La()
+    }));
+
+function za(e) {
+    return un(e)
+}
+var Ba, Va = e((() => {
+    di(), Ba = fn
+}));
+
+function Ha(e = {}) {
+    let t = Fi(e.userAgentPrefix),
+        n = new cn({
+            additionalAllowedQueryParameters: e.additionalAllowedQueryParameters
+        }),
+        r = Ua();
+    return {
+        name: qa,
+        async sendRequest(e, i) {
+            if (!r) return i(e);
+            let a = await t,
+                o = {
+                    "http.url": n.sanitizeUrl(e.url),
+                    "http.method": e.method,
+                    "http.user_agent": a,
+                    requestId: e.requestId
+                };
+            a && (o[`http.user_agent`] = a);
+            let {
+                span: s,
+                tracingContext: c
+            } = Wa(r, e, o) ?? {};
+            if (!s || !c) return i(e);
+            try {
+                let t = await r.withContext(c, i, e);
+                return Ka(s, t), t
+            } catch (e) {
+                throw Ga(s, e), e
+            }
+        }
+    }
+}
+
+function Ua() {
+    try {
+        return Ia({
+            namespace: ``,
+            packageName: `@azure/core-rest-pipeline`,
+            packageVersion: ji
+        })
+    } catch (e) {
+        vi.warning(`Error when creating the TracingClient: ${Xi(e)}`);
+        return
+    }
+}
+
+function Wa(e, t, n) {
+    try {
+        let {
+            span: r,
+            updatedOptions: i
+        } = e.startSpan(`HTTP ${t.method}`, {
+            tracingOptions: t.tracingOptions
+        }, {
+            spanKind: `client`,
+            spanAttributes: n
+        });
+        if (!r.isRecording()) {
+            r.end();
+            return
+        }
+        let a = e.createRequestHeaders(i.tracingOptions.tracingContext);
+        for (let [e, n] of Object.entries(a)) t.headers.set(e, n);
+        return {
+            span: r,
+            tracingContext: i.tracingOptions.tracingContext
+        }
+    } catch (e) {
+        vi.warning(`Skipping creating a tracing span due to an error: ${Xi(e)}`);
+        return
+    }
+}
+
+function Ga(e, t) {
+    try {
+        e.setStatus({
+            status: `error`,
+            error: Qi(t) ? t : void 0
+        }), za(t) && t.statusCode && e.setAttribute(`http.status_code`, t.statusCode), e.end()
+    } catch (e) {
+        vi.warning(`Skipping tracing span processing due to an error: ${Xi(e)}`)
+    }
+}
+
+function Ka(e, t) {
+    try {
+        e.setAttribute(`http.status_code`, t.status);
+        let n = t.headers.get(`x-ms-request-id`);
+        n && e.setAttribute(`serviceRequestId`, n), t.status >= 400 && e.setStatus({
+            status: `error`
+        }), e.end()
+    } catch (e) {
+        vi.warning(`Skipping tracing span processing due to an error: ${Xi(e)}`)
+    }
+}
+var qa, Ja = e((() => {
+    Ra(), Mi(), Ii(), yi(), ta(), Va(), Vi(), qa = `tracingPolicy`
+}));
+
+function Ya(e) {
+    if (e instanceof AbortSignal) return {
+        abortSignal: e
+    };
+    if (e.aborted) return {
+        abortSignal: AbortSignal.abort(e.reason)
+    };
+    let t = new AbortController,
+        n = !0;
+
+    function r() {
+        n &&= (e.removeEventListener(`abort`, i), !1)
+    }
+
+    function i() {
+        t.abort(e.reason), r()
+    }
+    return e.addEventListener(`abort`, i), {
+        abortSignal: t.signal,
+        cleanup: r
+    }
+}
+var Xa = e((() => {}));
+
+function Za() {
+    return {
+        name: Qa,
+        sendRequest: async (e, t) => {
+            if (!e.abortSignal) return t(e);
+            let {
+                abortSignal: n,
+                cleanup: r
+            } = Ya(e.abortSignal);
+            e.abortSignal = n;
+            try {
+                return await t(e)
+            } finally {
+                r?.()
+            }
+        }
+    }
+}
+var Qa, $a = e((() => {
+    Xa(), Qa = `wrapAbortSignalLikePolicy`
+}));
+
+function eo(e) {
+    let t = fi();
+    return ea && (e.agent && t.addPolicy(Sa(e.agent)), e.tlsOptions && t.addPolicy(wa(e.tlsOptions)), t.addPolicy(_a(e.proxyOptions)), t.addPolicy(la())), t.addPolicy(Za()), t.addPolicy(ma(), {
+        beforePolicies: [sa]
+    }), t.addPolicy(Li(e.userAgentOptions)), t.addPolicy(ya(e.telemetryOptions?.clientRequestIdHeaderName)), t.addPolicy(oa(), {
+        afterPhase: `Deserialize`
+    }), t.addPolicy(fa(e.retryOptions), {
+        phase: `Retry`
+    }), t.addPolicy(Ha({
+        ...e.userAgentOptions,
+        ...e.loggingOptions
+    }), {
+        afterPhase: `Retry`
+    }), ea && t.addPolicy(Ci(e.redirectOptions), {
+        afterPhase: `Retry`
+    }), t.addPolicy(xi(e.loggingOptions), {
+        afterPhase: `Sign`
+    }), t
+}
+var to = e((() => {
+    Si(), pi(), Ti(), Bi(), ca(), da(), pa(), ha(), ta(), va(), xa(), Ca(), Ta(), Ja(), $a()
+}));
+
+function no() {
+    let e = Bn();
+    return {
+        async sendRequest(t) {
+            let {
+                abortSignal: n,
+                cleanup: r
+            } = t.abortSignal ? Ya(t.abortSignal) : {};
+            try {
+                return t.abortSignal = n, await e.sendRequest(t)
+            } finally {
+                r?.()
+            }
+        }
+    }
+}
+var ro = e((() => {
+    di(), Xa()
+}));
+
+function io(e) {
+    return F(e)
+}
+var ao = e((() => {
+    di()
+}));
+
+function oo(e) {
+    return Wt(e)
+}
+var so = e((() => {
+    di()
+}));
+async function co(e, t, n) {
+    async function r() {
+        if (Date.now() < n) try {
+            return await e()
+        } catch {
+            return null
+        } else {
+            let t = await e();
+            if (t === null) throw Error(`Failed to refresh access token.`);
+            return t
+        }
+    }
+    let i = await r();
+    for (; i === null;) await qi(t), i = await r();
+    return i
+}
+
+function lo(e, t) {
+    let n = null,
+        r = null,
+        i, a = {
+            ...uo,
+            ...t
+        },
+        o = {
+            get isRefreshing() {
+                return n !== null
+            },
+            get shouldRefresh() {
+                return o.isRefreshing ? !1 : r?.refreshAfterTimestamp && r.refreshAfterTimestamp < Date.now() ? !0 : (r?.expiresOnTimestamp ?? 0) - a.refreshWindowInMs < Date.now()
+            },
+            get mustRefresh() {
+                return r === null || r.expiresOnTimestamp - a.forcedRefreshWindowInMs < Date.now()
+            }
+        };
+
+    function s(t, s) {
+        return o.isRefreshing || (n = co(() => e.getToken(t, s), a.retryIntervalInMs, r?.expiresOnTimestamp ?? Date.now()).then(e => (n = null, r = e, i = s.tenantId, r)).catch(e => {
+            throw n = null, r = null, i = void 0, e
+        })), n
+    }
+    return async (e, t) => {
+        let n = !!t.claims,
+            a = i !== t.tenantId;
+        return n && (r = null), a || n || o.mustRefresh ? s(e, t) : (o.shouldRefresh && s(e, t), r)
+    }
+}
+var uo, fo = e((() => {
+    ta(), uo = {
+        forcedRefreshWindowInMs: 1e3,
+        retryIntervalInMs: 3e3,
+        refreshWindowInMs: 1e3 * 60 * 2
+    }
+}));
+async function po(e, t) {
+    try {
+        return [await t(e), void 0]
+    } catch (e) {
+        if (za(e) && e.response) return [e.response, e];
+        throw e
+    }
+}
+async function mo(e) {
+    let {
+        scopes: t,
+        getAccessToken: n,
+        request: r
+    } = e, i = await n(t, {
+        abortSignal: r.abortSignal,
+        tracingOptions: r.tracingOptions,
+        enableCae: !0
+    });
+    i && e.request.headers.set(`Authorization`, `Bearer ${i.token}`)
+}
+
+function ho(e) {
+    return e.status === 401 && e.headers.has(`WWW-Authenticate`)
+}
+async function go(e, t) {
+    let {
+        scopes: n
+    } = e, r = await e.getAccessToken(n, {
+        enableCae: !0,
+        claims: t
+    });
+    return r ? (e.request.headers.set(`Authorization`, `${r.tokenType??`Bearer`} ${r.token}`), !0) : !1
+}
+
+function _o(e) {
+    let {
+        credential: t,
+        scopes: n,
+        challengeCallbacks: r
+    } = e, i = e.logger || vi, a = {
+        authorizeRequest: r?.authorizeRequest?.bind(r) ?? mo,
+        authorizeRequestOnChallenge: r?.authorizeRequestOnChallenge?.bind(r)
+    }, o = t ? lo(t) : () => Promise.resolve(null);
+    return {
+        name: bo,
+        async sendRequest(e, t) {
+            if (!e.url.toLowerCase().startsWith(`https://`)) throw Error(`Bearer token authentication is not permitted for non-TLS protected (non-https) URLs.`);
+            await a.authorizeRequest({
+                scopes: Array.isArray(n) ? n : [n],
+                request: e,
+                getAccessToken: o,
+                logger: i
+            });
+            let r, s, c;
+            if ([r, s] = await po(e, t), ho(r)) {
+                let l = yo(r.headers.get(`WWW-Authenticate`));
+                if (l) {
+                    let a;
+                    try {
+                        a = atob(l)
+                    } catch {
+                        return i.warning(`The WWW-Authenticate header contains "claims" that cannot be parsed. Unable to perform the Continuous Access Evaluation authentication flow. Unparsable claims: ${l}`), r
+                    }
+                    c = await go({
+                        scopes: Array.isArray(n) ? n : [n],
+                        response: r,
+                        request: e,
+                        getAccessToken: o,
+                        logger: i
+                    }, a), c && ([r, s] = await po(e, t))
+                } else if (a.authorizeRequestOnChallenge && (c = await a.authorizeRequestOnChallenge({
+                        scopes: Array.isArray(n) ? n : [n],
+                        request: e,
+                        response: r,
+                        getAccessToken: o,
+                        logger: i
+                    }), c && ([r, s] = await po(e, t)), ho(r) && (l = yo(r.headers.get(`WWW-Authenticate`)), l))) {
+                    let a;
+                    try {
+                        a = atob(l)
+                    } catch {
+                        return i.warning(`The WWW-Authenticate header contains "claims" that cannot be parsed. Unable to perform the Continuous Access Evaluation authentication flow. Unparsable claims: ${l}`), r
+                    }
+                    c = await go({
+                        scopes: Array.isArray(n) ? n : [n],
+                        response: r,
+                        request: e,
+                        getAccessToken: o,
+                        logger: i
+                    }, a), c && ([r, s] = await po(e, t))
+                }
+            }
+            if (s) throw s;
+            return r
+        }
+    }
+}
+
+function vo(e) {
+    let t = /(\w+)\s+((?:\w+=(?:"[^"]*"|[^,]*),?\s*)+)/g,
+        n = /(\w+)="([^"]*)"/g,
+        r = [],
+        i;
+    for (;
+        (i = t.exec(e)) !== null;) {
+        let e = i[1],
+            t = i[2],
+            a = {},
+            o;
+        for (;
+            (o = n.exec(t)) !== null;) a[o[1]] = o[2];
+        r.push({
+            scheme: e,
+            params: a
+        })
+    }
+    return r
+}
+
+function yo(e) {
+    if (e) return vo(e).find(e => e.scheme === `Bearer` && e.params.claims && e.params.error === `insufficient_claims`)?.params.claims
+}
+var bo, xo = e((() => {
+        fo(), yi(), Va(), bo = `bearerTokenAuthenticationPolicy`
+    })),
+    So = e((() => {
+        pi(), to(), ro(), ao(), so(), Va(), da(), bi(), xa(), Si(), ca(), va(), Ti(), _i(), Mi(), Ja(), pa(), Bi(), Ta(), ha(), xo(), fo(), yi(), Ca(), aa()
+    }));
+
+function Co(e) {
+    let t = e;
+    return t && typeof t.getToken == `function` && (t.signRequest === void 0 || t.getToken.length > 0)
+}
+var wo = e((() => {})),
+    To = e((() => {
+        ta(), wo()
+    }));
+
+function Eo() {
+    return {
+        name: Oo,
+        async sendRequest(e, t) {
+            return e.disableKeepAlive = !0, t(e)
+        }
+    }
+}
+
+function Do(e) {
+    return e.getOrderedPolicies().some(e => e.name === Oo)
+}
+var Oo, ko = e((() => {
+    Oo = `DisableKeepAlivePolicy`
+}));
+
+function Ao(e) {
+    let t = ``;
+    for (let n = 0; n < e.length; n++) t += String.fromCharCode(e[n]);
+    return btoa(t)
+}
+
+function jo(e) {
+    let t = atob(e),
+        n = new Uint8Array(t.length);
+    for (let e = 0; e < t.length; e++) n[e] = t.charCodeAt(e);
+    return n
+}
+var Mo = e((() => {})),
+    No = e((() => {}));
+
+function Po(e, t) {
+    return t !== `Composite` && t !== `Dictionary` && (typeof e == `string` || typeof e == `number` || typeof e == `boolean` || t?.match(/^(Date|DateTime|DateTimeRfc1123|UnixTime|ByteArray|Base64Url)$/i) !== null || e == null)
+}
+
+function Fo(e) {
+    return zo.test(e)
+}
+
+function Io(e) {
+    return Bo.test(e)
+}
+
+function Lo(e) {
+    let t = {
+        ...e.headers,
+        ...e.body
+    };
+    return e.hasNullableType && Object.getOwnPropertyNames(t).length === 0 ? e.shouldWrapBody ? {
+        body: null
+    } : null : e.shouldWrapBody ? {
+        ...e.headers,
+        body: e.body
+    } : t
+}
+
+function Ro(e, t) {
+    let n = e.parsedHeaders;
+    if (e.request.method === `HEAD`) return {
+        ...n,
+        body: e.parsedBody
+    };
+    let r = t && t.bodyMapper,
+        i = !!r?.nullable,
+        a = r?.type.name;
+    if (a === `Stream`) return {
+        ...n,
+        blobBody: e.blobBody,
+        readableStreamBody: e.readableStreamBody
+    };
+    let o = a === `Composite` && r.type.modelProperties || {},
+        s = Object.keys(o).some(e => o[e].serializedName === ``);
+    if (a === `Sequence` || s) {
+        let t = e.parsedBody ?? [];
+        for (let n of Object.keys(o)) o[n].serializedName && (t[n] = e.parsedBody?.[n]);
+        if (n)
+            for (let e of Object.keys(n)) t[e] = n[e];
+        return i && !e.parsedBody && !n && Object.getOwnPropertyNames(o).length === 0 ? null : t
+    }
+    return Lo({
+        body: e.parsedBody,
+        headers: n,
+        hasNullableType: i,
+        shouldWrapBody: Po(e.parsedBody, a)
+    })
+}
+var zo, Bo, Vo = e((() => {
+    zo = /^(-|\+)?P(?:([-+]?[0-9,.]*)Y)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)W)?(?:([-+]?[0-9,.]*)D)?(?:T(?:([-+]?[0-9,.]*)H)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)S)?)?$/, Bo = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/i
+}));
+
+function Ho(e = {}, t = !1) {
+    return new hs(e, t)
+}
+
+function Uo(e, t) {
+    let n = e.length;
+    for (; n - 1 >= 0 && e[n - 1] === t;) --n;
+    return e.substr(0, n)
+}
+
+function Wo(e) {
+    if (e) {
+        if (!(e instanceof Uint8Array)) throw Error(`Please provide an input of type Uint8Array for converting to Base64Url.`);
+        return Uo(Ao(e), `=`).replace(/\+/g, `-`).replace(/\//g, `_`)
+    }
+}
+
+function Go(e) {
+    if (e) {
+        if (e && typeof e.valueOf() != `string`) throw Error(`Please provide an input of type string for converting to Uint8Array`);
+        return e = e.replace(/-/g, `+`).replace(/_/g, `/`), jo(e)
+    }
+}
+
+function Ko(e) {
+    let t = [],
+        n = ``;
+    if (e) {
+        let r = e.split(`.`);
+        for (let e of r) e.charAt(e.length - 1) === `\\` ? n += e.substr(0, e.length - 1) + `.` : (n += e, t.push(n), n = ``)
+    }
+    return t
+}
+
+function qo(e) {
+    if (e) return typeof e.valueOf() == `string` && (e = new Date(e)), Math.floor(e.getTime() / 1e3)
+}
+
+function Jo(e) {
+    if (e) return new Date(e * 1e3)
+}
+
+function Yo(e, t, n) {
+    if (n != null) {
+        if (e.match(/^Number$/i) !== null) {
+            if (typeof n != `number`) throw Error(`${t} with value ${n} must be of type number.`)
+        } else if (e.match(/^String$/i) !== null) {
+            if (typeof n.valueOf() != `string`) throw Error(`${t} with value "${n}" must be of type string.`)
+        } else if (e.match(/^Uuid$/i) !== null) {
+            if (!(typeof n.valueOf() == `string` && Io(n))) throw Error(`${t} with value "${n}" must be of type string and a valid uuid.`)
+        } else if (e.match(/^Boolean$/i) !== null) {
+            if (typeof n != `boolean`) throw Error(`${t} with value ${n} must be of type boolean.`)
+        } else if (e.match(/^Stream$/i) !== null) {
+            let e = typeof n;
+            if (e !== `string` && typeof n.pipe != `function` && typeof n.tee != `function` && !(n instanceof ArrayBuffer) && !ArrayBuffer.isView(n) && !((typeof Blob == `function` || typeof Blob == `object`) && n instanceof Blob) && e !== `function`) throw Error(`${t} must be a string, Blob, ArrayBuffer, ArrayBufferView, ReadableStream, or () => ReadableStream.`)
+        }
+    }
+    return n
+}
+
+function Xo(e, t, n) {
+    if (!t) throw Error(`Please provide a set of allowedValues to validate ${e} as an Enum Type.`);
+    if (!t.some(e => typeof e.valueOf() == `string` ? e.toLowerCase() === n.toLowerCase() : e === n)) throw Error(`${n} is not a valid value for ${e}. The valid values are: ${JSON.stringify(t)}.`);
+    return n
+}
+
+function Zo(e, t) {
+    if (t != null) {
+        if (!(t instanceof Uint8Array)) throw Error(`${e} must be of type Uint8Array.`);
+        t = Ao(t)
+    }
+    return t
+}
+
+function Qo(e, t) {
+    if (t != null) {
+        if (!(t instanceof Uint8Array)) throw Error(`${e} must be of type Uint8Array.`);
+        t = Wo(t)
+    }
+    return t
+}
+
+function $o(e, t, n) {
+    if (t != null) {
+        if (e.match(/^Date$/i) !== null) {
+            if (!(t instanceof Date || typeof t.valueOf() == `string` && !isNaN(Date.parse(t)))) throw Error(`${n} must be an instanceof Date or a string in ISO8601 format.`);
+            t = t instanceof Date ? t.toISOString().substring(0, 10) : new Date(t).toISOString().substring(0, 10)
+        } else if (e.match(/^DateTime$/i) !== null) {
+            if (!(t instanceof Date || typeof t.valueOf() == `string` && !isNaN(Date.parse(t)))) throw Error(`${n} must be an instanceof Date or a string in ISO8601 format.`);
+            t = t instanceof Date ? t.toISOString() : new Date(t).toISOString()
+        } else if (e.match(/^DateTimeRfc1123$/i) !== null) {
+            if (!(t instanceof Date || typeof t.valueOf() == `string` && !isNaN(Date.parse(t)))) throw Error(`${n} must be an instanceof Date or a string in RFC-1123 format.`);
+            t = t instanceof Date ? t.toUTCString() : new Date(t).toUTCString()
+        } else if (e.match(/^UnixTime$/i) !== null) {
+            if (!(t instanceof Date || typeof t.valueOf() == `string` && !isNaN(Date.parse(t)))) throw Error(`${n} must be an instanceof Date or a string in RFC-1123/ISO8601 format for it to be serialized in UnixTime/Epoch format.`);
+            t = qo(t)
+        } else if (e.match(/^TimeSpan$/i) !== null && !Fo(t)) throw Error(`${n} must be a string in ISO 8601 format. Instead was "${t}".`)
+    }
+    return t
+}
+
+function es(e, t, n, r, i, a) {
+    if (!Array.isArray(n)) throw Error(`${r} must be of type Array.`);
+    let o = t.type.element;
+    if (!o || typeof o != `object`) throw Error(`element" metadata for an Array must be defined in the mapper and it must of type "object" in ${r}.`);
+    o.type.name === `Composite` && o.type.className && (o = e.modelMappers[o.type.className] ?? o);
+    let s = [];
+    for (let t = 0; t < n.length; t++) {
+        let c = e.serialize(o, n[t], r, a);
+        if (i && o.xmlNamespace) {
+            let e = o.xmlNamespacePrefix ? `xmlns:${o.xmlNamespacePrefix}` : `xmlns`;
+            o.type.name === `Composite` ? (s[t] = {
+                ...c
+            }, s[t].$ = {
+                [e]: o.xmlNamespace
+            }) : (s[t] = {}, s[t][a.xml.xmlCharKey] = c, s[t].$ = {
+                [e]: o.xmlNamespace
+            })
+        } else s[t] = c
+    }
+    return s
+}
+
+function ts(e, t, n, r, i, a) {
+    if (typeof n != `object`) throw Error(`${r} must be of type object.`);
+    let o = t.type.value;
+    if (!o || typeof o != `object`) throw Error(`"value" metadata for a Dictionary must be defined in the mapper and it must of type "object" in ${r}.`);
+    let s = {};
+    for (let t of Object.keys(n)) s[t] = os(o, e.serialize(o, n[t], r, a), i, a);
+    if (i && t.xmlNamespace) {
+        let e = t.xmlNamespacePrefix ? `xmlns:${t.xmlNamespacePrefix}` : `xmlns`,
+            n = s;
+        return n.$ = {
+            [e]: t.xmlNamespace
+        }, n
+    }
+    return s
+}
+
+function ns(e, t, n) {
+    let r = t.type.additionalProperties;
+    return !r && t.type.className ? rs(e, t, n)?.type.additionalProperties : r
+}
+
+function rs(e, t, n) {
+    let r = t.type.className;
+    if (!r) throw Error(`Class name for model "${n}" is not provided in the mapper "${JSON.stringify(t,void 0,2)}".`);
+    return e.modelMappers[r]
+}
+
+function is(e, t, n) {
+    let r = t.type.modelProperties;
+    if (!r) {
+        let i = rs(e, t, n);
+        if (!i) throw Error(`mapper() cannot be null or undefined for model "${t.type.className}".`);
+        if (r = i?.type.modelProperties, !r) throw Error(`modelProperties cannot be null or undefined in the mapper "${JSON.stringify(i)}" of type "${t.type.className}" for object "${n}".`)
+    }
+    return r
+}
+
+function as(e, t, n, r, i, a) {
+    if (ps(e, t) && (t = fs(e, t, n, `clientName`)), n != null) {
+        let o = {},
+            s = is(e, t, r);
+        for (let c of Object.keys(s)) {
+            let l = s[c];
+            if (l.readOnly) continue;
+            let u, d = o;
+            if (e.isXML) u = l.xmlIsWrapped ? l.xmlName : l.xmlElementName || l.xmlName;
+            else {
+                let e = Ko(l.serializedName);
+                u = e.pop();
+                for (let t of e) d[t] == null && (n[c] !== void 0 && n[c] !== null || l.defaultValue !== void 0) && (d[t] = {}), d = d[t]
+            }
+            if (d != null) {
+                if (i && t.xmlNamespace) {
+                    let e = t.xmlNamespacePrefix ? `xmlns:${t.xmlNamespacePrefix}` : `xmlns`;
+                    d.$ = {
+                        ...d.$,
+                        [e]: t.xmlNamespace
+                    }
+                }
+                let o = l.serializedName === `` ? r : r + `.` + l.serializedName,
+                    s = n[c],
+                    f = ps(e, t);
+                f && f.clientName === c && s == null && (s = t.serializedName);
+                let p = e.serialize(l, s, o, a);
+                if (p !== void 0 && u != null) {
+                    let e = os(l, p, i, a);
+                    i && l.xmlIsAttribute ? (d.$ = d.$ || {}, d.$[u] = p) : i && l.xmlIsWrapped ? d[u] = {
+                        [l.xmlElementName]: e
+                    } : d[u] = e
+                }
+            }
+        }
+        let c = ns(e, t, r);
+        if (c) {
+            let t = Object.keys(s);
+            for (let i in n) t.every(e => e !== i) && (o[i] = e.serialize(c, n[i], r + `["` + i + `"]`, a))
+        }
+        return o
+    }
+    return n
+}
+
+function os(e, t, n, r) {
+    if (!n || !e.xmlNamespace) return t;
+    let i = {
+        [e.xmlNamespacePrefix ? `xmlns:${e.xmlNamespacePrefix}` : `xmlns`]: e.xmlNamespace
+    };
+    if ([`Composite`].includes(e.type.name)) {
+        if (t.$) return t;
+        {
+            let e = {
+                ...t
+            };
+            return e.$ = i, e
+        }
+    }
+    let a = {};
+    return a[r.xml.xmlCharKey] = t, a.$ = i, a
+}
+
+function ss(e, t) {
+    return [`$`, t.xml.xmlCharKey].includes(e)
+}
+
+function cs(e, t, n, r, i) {
+    let a = i.xml.xmlCharKey ?? `_`;
+    ps(e, t) && (t = fs(e, t, n, `serializedName`));
+    let o = is(e, t, r),
+        s = {},
+        c = [];
+    for (let l of Object.keys(o)) {
+        let u = o[l],
+            d = Ko(o[l].serializedName);
+        c.push(d[0]);
+        let {
+            serializedName: f,
+            xmlName: p,
+            xmlElementName: m
+        } = u, h = r;
+        f !== `` && f !== void 0 && (h = r + `.` + f);
+        let g = u.headerCollectionPrefix;
+        if (g) {
+            let t = {};
+            for (let r of Object.keys(n)) r.startsWith(g) && (t[r.substring(g.length)] = e.deserialize(u.type.value, n[r], h, i)), c.push(r);
+            s[l] = t
+        } else if (e.isXML)
+            if (u.xmlIsAttribute && n.$) s[l] = e.deserialize(u, n.$[p], h, i);
+            else if (u.xmlIsMsText) n[a] === void 0 ? typeof n == `string` && (s[l] = n) : s[l] = n[a];
+        else {
+            let t = m || p || f;
+            if (u.xmlIsWrapped) {
+                let t = n[p]?.[m] ?? [];
+                s[l] = e.deserialize(u, t, h, i), c.push(p)
+            } else {
+                let r = n[t];
+                s[l] = e.deserialize(u, r, h, i), c.push(t)
+            }
+        } else {
+            let r, a = n,
+                c = 0;
+            for (let e of d) {
+                if (!a) break;
+                c++, a = a[e]
+            }
+            a === null && c < d.length && (a = void 0), r = a;
+            let f = t.type.polymorphicDiscriminator;
+            f && l === f.clientName && r == null && (r = t.serializedName);
+            let p;
+            if (Array.isArray(n[l]) && o[l].serializedName === ``) {
+                r = n[l];
+                let t = e.deserialize(u, r, h, i);
+                for (let [e, n] of Object.entries(s)) Object.prototype.hasOwnProperty.call(t, e) || (t[e] = n);
+                s = t
+            } else(r !== void 0 || u.defaultValue !== void 0) && (p = e.deserialize(u, r, h, i), s[l] = p)
+        }
+    }
+    let l = t.type.additionalProperties;
+    if (l) {
+        let t = e => {
+            for (let t in o)
+                if (Ko(o[t].serializedName)[0] === e) return !1;
+            return !0
+        };
+        for (let a in n) t(a) && (s[a] = e.deserialize(l, n[a], r + `["` + a + `"]`, i))
+    } else if (n && !i.ignoreUnknownProperties)
+        for (let e of Object.keys(n)) s[e] === void 0 && !c.includes(e) && !ss(e, i) && (s[e] = n[e]);
+    return s
+}
+
+function ls(e, t, n, r, i) {
+    let a = t.type.value;
+    if (!a || typeof a != `object`) throw Error(`"value" metadata for a Dictionary must be defined in the mapper and it must of type "object" in ${r}`);
+    if (n) {
+        let t = {};
+        for (let o of Object.keys(n)) t[o] = e.deserialize(a, n[o], r, i);
+        return t
+    }
+    return n
+}
+
+function us(e, t, n, r, i) {
+    let a = t.type.element;
+    if (!a || typeof a != `object`) throw Error(`element" metadata for an Array must be defined in the mapper and it must of type "object" in ${r}`);
+    if (n) {
+        Array.isArray(n) || (n = [n]), a.type.name === `Composite` && a.type.className && (a = e.modelMappers[a.type.className] ?? a);
+        let t = [];
+        for (let o = 0; o < n.length; o++) t[o] = e.deserialize(a, n[o], `${r}[${o}]`, i);
+        return t
+    }
+    return n
+}
+
+function ds(e, t, n) {
+    let r = [n];
+    for (; r.length;) {
+        let n = r.shift(),
+            i = t === n ? t : n + `.` + t;
+        if (Object.prototype.hasOwnProperty.call(e, i)) return e[i];
+        for (let [t, i] of Object.entries(e)) t.startsWith(n + `.`) && i.type.uberParent === n && i.type.className && r.push(i.type.className)
+    }
+}
+
+function fs(e, t, n, r) {
+    let i = ps(e, t);
+    if (i) {
+        let a = i[r];
+        if (a) {
+            r === `serializedName` && (a = a.replace(/\\/gi, ``));
+            let i = n[a],
+                o = t.type.uberParent ?? t.type.className;
+            if (typeof i == `string` && o) {
+                let n = ds(e.modelMappers.discriminators, i, o);
+                n && (t = n)
+            }
+        }
+    }
+    return t
+}
+
+function ps(e, t) {
+    return t.type.polymorphicDiscriminator || ms(e, t.type.uberParent) || ms(e, t.type.className)
+}
+
+function ms(e, t) {
+    return t && e.modelMappers[t] && e.modelMappers[t].type.polymorphicDiscriminator
+}
+var hs, gs, _s = e((() => {
+        Mo(), No(), Vo(), s(), hs = class {
+            constructor(e = {}, t = !1) {
+                h(this, `modelMappers`, void 0), h(this, `isXML`, void 0), this.modelMappers = e, this.isXML = t
+            }
+            validateConstraints(e, t, n) {
+                let r = (e, r) => {
+                    throw Error(`"${n}" with value "${t}" should satisfy the constraint "${e}": ${r}.`)
+                };
+                if (e.constraints && t != null) {
+                    let {
+                        ExclusiveMaximum: n,
+                        ExclusiveMinimum: i,
+                        InclusiveMaximum: a,
+                        InclusiveMinimum: o,
+                        MaxItems: s,
+                        MaxLength: c,
+                        MinItems: l,
+                        MinLength: u,
+                        MultipleOf: d,
+                        Pattern: f,
+                        UniqueItems: p
+                    } = e.constraints;
+                    if (n !== void 0 && t >= n && r(`ExclusiveMaximum`, n), i !== void 0 && t <= i && r(`ExclusiveMinimum`, i), a !== void 0 && t > a && r(`InclusiveMaximum`, a), o !== void 0 && t < o && r(`InclusiveMinimum`, o), s !== void 0 && t.length > s && r(`MaxItems`, s), c !== void 0 && t.length > c && r(`MaxLength`, c), l !== void 0 && t.length < l && r(`MinItems`, l), u !== void 0 && t.length < u && r(`MinLength`, u), d !== void 0 && t % d !== 0 && r(`MultipleOf`, d), f) {
+                        let e = typeof f == `string` ? new RegExp(f) : f;
+                        (typeof t != `string` || t.match(e) === null) && r(`Pattern`, f)
+                    }
+                    p && t.some((e, t, n) => n.indexOf(e) !== t) && r(`UniqueItems`, p)
+                }
+            }
+            serialize(e, t, n, r = {
+                xml: {}
+            }) {
+                let i = {
+                        xml: {
+                            rootName: r.xml.rootName ?? ``,
+                            includeRoot: r.xml.includeRoot ?? !1,
+                            xmlCharKey: r.xml.xmlCharKey ?? `_`
+                        }
+                    },
+                    a = {},
+                    o = e.type.name;
+                n ||= e.serializedName, o.match(/^Sequence$/i) !== null && (a = []), e.isConstant && (t = e.defaultValue);
+                let {
+                    required: s,
+                    nullable: c
+                } = e;
+                if (s && c && t === void 0) throw Error(`${n} cannot be undefined.`);
+                if (s && !c && t == null) throw Error(`${n} cannot be null or undefined.`);
+                if (!s && c === !1 && t === null) throw Error(`${n} cannot be null.`);
+                return t == null ? a = t : o.match(/^any$/i) === null ? o.match(/^(Number|String|Boolean|Object|Stream|Uuid)$/i) === null ? o.match(/^Enum$/i) === null ? o.match(/^(Date|DateTime|TimeSpan|DateTimeRfc1123|UnixTime)$/i) === null ? o.match(/^ByteArray$/i) === null ? o.match(/^Base64Url$/i) === null ? o.match(/^Sequence$/i) === null ? o.match(/^Dictionary$/i) === null ? o.match(/^Composite$/i) !== null && (a = as(this, e, t, n, !!this.isXML, i)) : a = ts(this, e, t, n, !!this.isXML, i) : a = es(this, e, t, n, !!this.isXML, i) : a = Qo(n, t) : a = Zo(n, t) : a = $o(o, t, n) : a = Xo(n, e.type.allowedValues, t) : a = Yo(o, n, t) : a = t, a
+            }
+            deserialize(e, t, n, r = {
+                xml: {}
+            }) {
+                let i = {
+                    xml: {
+                        rootName: r.xml.rootName ?? ``,
+                        includeRoot: r.xml.includeRoot ?? !1,
+                        xmlCharKey: r.xml.xmlCharKey ?? `_`
+                    },
+                    ignoreUnknownProperties: r.ignoreUnknownProperties ?? !1
+                };
+                if (t == null) return this.isXML && e.type.name === `Sequence` && !e.xmlIsWrapped && (t = []), e.defaultValue !== void 0 && (t = e.defaultValue), t;
+                let a, o = e.type.name;
+                if (n ||= e.serializedName, o.match(/^Composite$/i) !== null) a = cs(this, e, t, n, i);
+                else {
+                    if (this.isXML) {
+                        let e = i.xml.xmlCharKey;
+                        t.$ !== void 0 && t[e] !== void 0 && (t = t[e])
+                    }
+                    o.match(/^Number$/i) === null ? o.match(/^Boolean$/i) === null ? o.match(/^(String|Enum|Object|Stream|Uuid|TimeSpan|any)$/i) === null ? o.match(/^(Date|DateTime|DateTimeRfc1123)$/i) === null ? o.match(/^UnixTime$/i) === null ? o.match(/^ByteArray$/i) === null ? o.match(/^Base64Url$/i) === null ? o.match(/^Sequence$/i) === null ? o.match(/^Dictionary$/i) !== null && (a = ls(this, e, t, n, i)) : a = us(this, e, t, n, i) : a = Go(t) : a = jo(t) : a = Jo(t) : a = new Date(t) : a = t : a = t === `true` || t !== `false` && t : (a = parseFloat(t), isNaN(a) && (a = t))
+                }
+                return e.isConstant && (a = e.defaultValue), a
+            }
+        }, gs = {
+            Base64Url: `Base64Url`,
+            Boolean: `Boolean`,
+            ByteArray: `ByteArray`,
+            Composite: `Composite`,
+            Date: `Date`,
+            DateTime: `DateTime`,
+            DateTimeRfc1123: `DateTimeRfc1123`,
+            Dictionary: `Dictionary`,
+            Enum: `Enum`,
+            Number: `Number`,
+            Object: `Object`,
+            Sequence: `Sequence`,
+            String: `String`,
+            Stream: `Stream`,
+            TimeSpan: `TimeSpan`,
+            UnixTime: `UnixTime`
+        }
+    })),
+    vs, ys = e((() => {
+        vs = {
+            operationRequestMap: new WeakMap
+        }
+    }));
+
+function bs(e, t, n) {
+    let r = t.parameterPath,
+        i = t.mapper,
+        a;
+    if (typeof r == `string` && (r = [r]), Array.isArray(r)) {
+        if (r.length > 0)
+            if (i.isConstant) a = i.defaultValue;
+            else {
+                let t = xs(e, r);
+                !t.propertyFound && n && (t = xs(n, r));
+                let o = !1;
+                t.propertyFound || (o = i.required || r[0] === `options` && r.length === 2), a = o ? i.defaultValue : t.propertyValue
+            }
+    } else {
+        i.required && (a = {});
+        for (let t in r) {
+            let o = i.type.modelProperties[t],
+                s = r[t],
+                c = bs(e, {
+                    parameterPath: s,
+                    mapper: o
+                }, n);
+            c !== void 0 && (a ||= {}, a[t] = c)
+        }
+    }
+    return a
+}
+
+function xs(e, t) {
+    let n = {
+            propertyFound: !1
+        },
+        r = 0;
+    for (; r < t.length; ++r) {
+        let n = t[r];
+        if (e && n in e) e = e[n];
+        else break
+    }
+    return r === t.length && (n.propertyValue = e, n.propertyFound = !0), n
+}
+
+function Ss(e) {
+    return ws in e
+}
+
+function Cs(e) {
+    if (Ss(e)) return Cs(e[ws]);
+    let t = vs.operationRequestMap.get(e);
+    return t || (t = {}, vs.operationRequestMap.set(e, t)), t
+}
+var ws, Ts = e((() => {
+    ys(), ws = Symbol.for(`@azure/core-client original request`)
+}));
+
+function Es(e = {}) {
+    let t = e.expectedContentTypes?.json ?? Ns,
+        n = e.expectedContentTypes?.xml ?? Ps,
+        r = e.parseXML,
+        i = e.serializerOptions,
+        a = {
+            xml: {
+                rootName: i?.xml.rootName ?? ``,
+                includeRoot: i?.xml.includeRoot ?? !1,
+                xmlCharKey: i?.xml.xmlCharKey ?? `_`
+            }
+        };
+    return {
+        name: Fs,
+        async sendRequest(e, i) {
+            let o = await i(e);
+            return ks(t, n, o, a, r)
+        }
+    }
+}
+
+function Ds(e) {
+    let t, n = e.request,
+        r = Cs(n),
+        i = r?.operationSpec;
+    return i && (t = r?.operationResponseGetter ? r?.operationResponseGetter(i, e) : i.responses[e.status]), t
+}
+
+function Os(e) {
+    let t = e.request,
+        n = Cs(t)?.shouldDeserialize,
+        r;
+    return r = n === void 0 ? !0 : typeof n == `boolean` ? n : n(e), r
+}
+async function ks(e, t, n, r, i) {
+    let a = await Ms(e, t, n, r, i);
+    if (!Os(a)) return a;
+    let o = Cs(a.request)?.operationSpec;
+    if (!o || !o.responses) return a;
+    let s = Ds(a),
+        {
+            error: c,
+            shouldReturnResponse: l
+        } = js(a, o, s, r);
+    if (c) throw c;
+    if (l) return a;
+    if (s) {
+        if (s.bodyMapper) {
+            let e = a.parsedBody;
+            o.isXML && s.bodyMapper.type.name === gs.Sequence && (e = typeof e == `object` ? e[s.bodyMapper.xmlElementName] : []);
+            try {
+                a.parsedBody = o.serializer.deserialize(s.bodyMapper, e, `operationRes.parsedBody`, r)
+            } catch (e) {
+                throw new Ba(`Error ${e} occurred in deserializing the responseBody - ${a.bodyAsText}`, {
+                    statusCode: a.status,
+                    request: a.request,
+                    response: a
+                })
+            }
+        } else o.httpMethod === `HEAD` && (a.parsedBody = n.status >= 200 && n.status < 300);
+        s.headersMapper && (a.parsedHeaders = o.serializer.deserialize(s.headersMapper, a.headers.toJSON(), `operationRes.parsedHeaders`, {
+            xml: {},
+            ignoreUnknownProperties: !0
+        }))
+    }
+    return a
+}
+
+function As(e) {
+    let t = Object.keys(e.responses);
+    return t.length === 0 || t.length === 1 && t[0] === "default"
+}
+
+function js(e, t, n, r) {
+    let i = 200 <= e.status && e.status < 300;
+    if (As(t) ? i : n)
+        if (n) {
+            if (!n.isError) return {
+                error: null,
+                shouldReturnResponse: !1
+            }
+        } else return {
+            error: null,
+            shouldReturnResponse: !1
+        };
+    let a = n ?? t.responses.default,
+        o = new Ba(e.request.streamResponseStatusCodes?.has(e.status) ? `Unexpected status code: ${e.status}` : e.bodyAsText, {
+            statusCode: e.status,
+            request: e.request,
+            response: e
+        });
+    if (!a && !(e.parsedBody?.error?.code && e.parsedBody?.error?.message)) throw o;
+    let s = a?.bodyMapper,
+        c = a?.headersMapper;
+    try {
+        if (e.parsedBody) {
+            let n = e.parsedBody,
+                i;
+            if (s) {
+                let e = n;
+                if (t.isXML && s.type.name === gs.Sequence) {
+                    e = [];
+                    let t = s.xmlElementName;
+                    typeof n == `object` && t && (e = n[t])
+                }
+                i = t.serializer.deserialize(s, e, `error.response.parsedBody`, r)
+            }
+            let a = n.error || i || n;
+            o.code = a.code, a.message && (o.message = a.message), s && (o.response.parsedBody = i)
+        }
+        e.headers && c && (o.response.parsedHeaders = t.serializer.deserialize(c, e.headers.toJSON(), `operationRes.parsedHeaders`))
+    } catch (t) {
+        o.message = `Error "${t.message}" occurred in deserializing the responseBody - "${e.bodyAsText}" for the default response.`
+    }
+    return {
+        error: o,
+        shouldReturnResponse: !1
+    }
+}
+async function Ms(e, t, n, r, i) {
+    if (!n.request.streamResponseStatusCodes?.has(n.status) && n.bodyAsText) {
+        let a = n.bodyAsText,
+            o = n.headers.get(`Content-Type`) || ``,
+            s = o ? o.split(`;`).map(e => e.toLowerCase()) : [];
+        try {
+            if (s.length === 0 || s.some(t => e.indexOf(t) !== -1)) return n.parsedBody = JSON.parse(a), n;
+            if (s.some(e => t.indexOf(e) !== -1)) {
+                if (!i) throw Error(`Parsing XML not supported.`);
+                return n.parsedBody = await i(a, r.xml), n
+            }
+        } catch (e) {
+            throw new Ba(`Error "${e}" occurred while parsing the response body - ${n.bodyAsText}.`, {
+                code: e.code || Ba.PARSE_ERROR,
+                statusCode: n.status,
+                request: n.request,
+                response: n
+            })
+        }
+    }
+    return n
+}
+var Ns, Ps, Fs, Is = e((() => {
+    No(), So(), _s(), Ts(), Ns = [`application/json`, `text/json`], Ps = [`application/xml`, `application/atom+xml`], Fs = `deserializationPolicy`
+}));
+
+function Ls(e) {
+    let t = new Set;
+    for (let n in e.responses) {
+        let r = e.responses[n];
+        r.bodyMapper && r.bodyMapper.type.name === gs.Stream && t.add(Number(n))
+    }
+    return t
+}
+
+function Rs(e) {
+    let {
+        parameterPath: t,
+        mapper: n
+    } = e, r;
+    return r = typeof t == `string` ? t : Array.isArray(t) ? t.join(`.`) : n.serializedName, r
+}
+var zs = e((() => {
+    _s()
+}));
+
+function Bs(e = {}) {
+    let t = e.stringifyXML;
+    return {
+        name: Gs,
+        async sendRequest(e, n) {
+            let r = Cs(e),
+                i = r?.operationSpec,
+                a = r?.operationArguments;
+            return i && a && (Vs(e, a, i), Hs(e, a, i, t)), n(e)
+        }
+    }
+}
+
+function Vs(e, t, n) {
+    if (n.headerParameters)
+        for (let r of n.headerParameters) {
+            let i = bs(t, r);
+            if (i != null || r.mapper.required) {
+                i = n.serializer.serialize(r.mapper, i, Rs(r));
+                let t = r.mapper.headerCollectionPrefix;
+                if (t)
+                    for (let n of Object.keys(i)) e.headers.set(t + n, i[n]);
+                else e.headers.set(r.mapper.serializedName || Rs(r), i)
+            }
+        }
+    let r = t.options?.requestOptions?.customHeaders;
+    if (r)
+        for (let t of Object.keys(r)) e.headers.set(t, r[t])
+}
+
+function Hs(e, t, n, r = function() {
+    throw Error(`XML serialization unsupported!`)
+}) {
+    let i = t.options?.serializerOptions,
+        a = {
+            xml: {
+                rootName: i?.xml.rootName ?? ``,
+                includeRoot: i?.xml.includeRoot ?? !1,
+                xmlCharKey: i?.xml.xmlCharKey ?? `_`
+            }
+        },
+        o = a.xml.xmlCharKey;
+    if (n.requestBody && n.requestBody.mapper) {
+        e.body = bs(t, n.requestBody);
+        let i = n.requestBody.mapper,
+            {
+                required: s,
+                serializedName: c,
+                xmlName: l,
+                xmlElementName: u,
+                xmlNamespace: d,
+                xmlNamespacePrefix: f,
+                nullable: p
+            } = i,
+            m = i.type.name;
+        try {
+            if (e.body !== void 0 && e.body !== null || p && e.body === null || s) {
+                let t = Rs(n.requestBody);
+                e.body = n.serializer.serialize(i, e.body, t, a);
+                let s = m === gs.Stream;
+                if (n.isXML) {
+                    let t = f ? `xmlns:${f}` : `xmlns`,
+                        n = Us(d, t, m, e.body, a);
+                    m === gs.Sequence ? e.body = r(Ws(n, u || l || c, t, d), {
+                        rootName: l || c,
+                        xmlCharKey: o
+                    }) : s || (e.body = r(n, {
+                        rootName: l || c,
+                        xmlCharKey: o
+                    }))
+                } else if (m === gs.String && (n.contentType?.match(`text/plain`) || n.mediaType === `text`)) return;
+                else s || (e.body = JSON.stringify(e.body))
+            }
+        } catch (e) {
+            throw Error(`Error "${e.message}" occurred in serializing the payload - ${JSON.stringify(c,void 0,`  `)}.`)
+        }
+    } else if (n.formDataParameters && n.formDataParameters.length > 0) {
+        e.formData = {};
+        for (let r of n.formDataParameters) {
+            let i = bs(t, r);
+            if (i != null) {
+                let t = r.mapper.serializedName || Rs(r);
+                e.formData[t] = n.serializer.serialize(r.mapper, i, Rs(r), a)
+            }
+        }
+    }
+}
+
+function Us(e, t, n, r, i) {
+    if (e && ![`Composite`, `Sequence`, `Dictionary`].includes(n)) {
+        let n = {};
+        return n[i.xml.xmlCharKey] = r, n.$ = {
+            [t]: e
+        }, n
+    }
+    return r
+}
+
+function Ws(e, t, n, r) {
+    if (Array.isArray(e) || (e = [e]), !n || !r) return {
+        [t]: e
+    };
+    let i = {
+        [t]: e
+    };
+    return i.$ = {
+        [n]: r
+    }, i
+}
+var Gs, Ks = e((() => {
+    No(), Ts(), _s(), zs(), Gs = `serializationPolicy`
+}));
+
+function qs(e = {}) {
+    let t = eo(e ?? {});
+    return e.credentialOptions && t.addPolicy(_o({
+        credential: e.credentialOptions.credential,
+        scopes: e.credentialOptions.credentialScopes
+    })), t.addPolicy(Bs(e.serializationOptions), {
+        phase: `Serialize`
+    }), t.addPolicy(Es(e.deserializationOptions), {
+        phase: `Deserialize`
+    }), t
+}
+var Js = e((() => {
+    Is(), So(), Ks()
+}));
+
+function Ys() {
+    return Xs ||= no(), Xs
+}
+var Xs, Zs = e((() => {
+    So()
+}));
+
+function Qs(e, t, n, r) {
+    let i = ec(t, n, r),
+        a = !1,
+        o = $s(e, i);
+    if (t.path) {
+        let e = $s(t.path, i);
+        t.path === `/{nextLink}` && e.startsWith(`/`) && (e = e.substring(1)), tc(e) ? (o = e, a = !0) : o = nc(o, e)
+    }
+    let {
+        queryParams: s,
+        sequenceParams: c
+    } = rc(t, n, r);
+    return o = ac(o, s, c, a), o
+}
+
+function $s(e, t) {
+    let n = e;
+    for (let [e, r] of t) n = n.split(e).join(r);
+    return n
+}
+
+function ec(e, t, n) {
+    let r = new Map;
+    if (e.urlParameters?.length)
+        for (let i of e.urlParameters) {
+            let a = bs(t, i, n),
+                o = Rs(i);
+            a = e.serializer.serialize(i.mapper, a, o), i.skipEncoding || (a = encodeURIComponent(a)), r.set(`{${i.mapper.serializedName||o}}`, a)
+        }
+    return r
+}
+
+function tc(e) {
+    return e.includes(`://`)
+}
+
+function nc(e, t) {
+    if (!t) return e;
+    let n = new URL(e),
+        r = n.pathname;
+    r.endsWith(`/`) || (r = `${r}/`), t.startsWith(`/`) && (t = t.substring(1));
+    let i = t.indexOf(`?`);
+    if (i !== -1) {
+        let e = t.substring(0, i),
+            a = t.substring(i + 1);
+        r += e, a && (n.search = n.search ? `${n.search}&${a}` : a)
+    } else r += t;
+    return n.pathname = r, n.toString()
+}
+
+function rc(e, t, n) {
+    let r = new Map,
+        i = new Set;
+    if (e.queryParameters?.length)
+        for (let a of e.queryParameters) {
+            a.mapper.type.name === `Sequence` && a.mapper.serializedName && i.add(a.mapper.serializedName);
+            let o = bs(t, a, n);
+            if (o != null || a.mapper.required) {
+                o = e.serializer.serialize(a.mapper, o, Rs(a));
+                let t = a.collectionFormat ? oc[a.collectionFormat] : ``;
+                if (Array.isArray(o) && (o = o.map(e => e ?? ``)), a.collectionFormat === `Multi` && o.length === 0) continue;
+                Array.isArray(o) && (a.collectionFormat === `SSV` || a.collectionFormat === `TSV`) && (o = o.join(t)), a.skipEncoding || (o = Array.isArray(o) ? o.map(e => encodeURIComponent(e)) : encodeURIComponent(o)), Array.isArray(o) && (a.collectionFormat === `CSV` || a.collectionFormat === `Pipes`) && (o = o.join(t)), r.set(a.mapper.serializedName || Rs(a), o)
+            }
+        }
+    return {
+        queryParams: r,
+        sequenceParams: i
+    }
+}
+
+function ic(e) {
+    let t = new Map;
+    if (!e || e[0] !== `?`) return t;
+    e = e.slice(1);
+    let n = e.split(`&`);
+    for (let e of n) {
+        let [n, r] = e.split(`=`, 2), i = t.get(n);
+        i ? Array.isArray(i) ? i.push(r) : t.set(n, [i, r]) : t.set(n, r)
+    }
+    return t
+}
+
+function ac(e, t, n, r = !1) {
+    if (t.size === 0) return e;
+    let i = new URL(e),
+        a = ic(i.search);
+    for (let [e, i] of t) {
+        let t = a.get(e);
+        if (Array.isArray(t))
+            if (Array.isArray(i)) {
+                t.push(...i);
+                let n = new Set(t);
+                a.set(e, Array.from(n))
+            } else t.push(i);
+        else t ? (Array.isArray(i) ? i.unshift(t) : n.has(e) && a.set(e, [t, i]), r || a.set(e, i)) : a.set(e, i)
+    }
+    let o = [];
+    for (let [e, t] of a)
+        if (typeof t == `string`) o.push(`${e}=${t}`);
+        else if (Array.isArray(t))
+        for (let n of t) o.push(`${e}=${n}`);
+    else o.push(`${e}=${t}`);
+    return i.search = o.length ? `?${o.join(`&`)}` : ``, i.toString()
+}
+var oc, sc = e((() => {
+        Ts(), zs(), oc = {
+            CSV: `,`,
+            SSV: ` `,
+            Multi: `Multi`,
+            TSV: `	`,
+            Pipes: `|`
+        }
+    })),
+    cc, lc = e((() => {
+        _i(), cc = hi(`core-client`)
+    }));
+
+function uc(e) {
+    let t = dc(e),
+        n = e.credential && t ? {
+            credentialScopes: t,
+            credential: e.credential
+        } : void 0;
+    return qs({
+        ...e,
+        credentialOptions: n
+    })
+}
+
+function dc(e) {
+    if (e.credentialScopes) return e.credentialScopes;
+    if (e.endpoint) return `${e.endpoint}/.default`;
+    if (e.baseUri) return `${e.baseUri}/.default`;
+    if (e.credential && !e.credentialScopes) throw Error(`When using credentials, the ServiceClientOptions must contain either a endpoint or a credentialScopes. Unable to create a bearerTokenAuthenticationPolicy`)
+}
+var fc, pc = e((() => {
+    So(), Js(), Vo(), Zs(), Ts(), sc(), zs(), lc(), s(), fc = class {
+        constructor(e = {}) {
+            if (h(this, `_endpoint`, void 0), h(this, `_requestContentType`, void 0), h(this, `_allowInsecureConnection`, void 0), h(this, `_httpClient`, void 0), h(this, `pipeline`, void 0), this._requestContentType = e.requestContentType, this._endpoint = e.endpoint ?? e.baseUri, e.baseUri && cc.warning(`The baseUri option for SDK Clients has been deprecated, please use endpoint instead.`), this._allowInsecureConnection = e.allowInsecureConnection, this._httpClient = e.httpClient || Ys(), this.pipeline = e.pipeline || uc(e), e.additionalPolicies?.length)
+                for (let {
+                        policy: t,
+                        position: n
+                    }
+                    of e.additionalPolicies) {
+                    let e = n === `perRetry` ? `Sign` : void 0;
+                    this.pipeline.addPolicy(t, {
+                        afterPhase: e
+                    })
+                }
+        }
+        async sendRequest(e) {
+            return this.pipeline.sendRequest(this._httpClient, e)
+        }
+        async sendOperationRequest(e, t) {
+            let n = t.baseUrl || this._endpoint;
+            if (!n) throw Error(`If operationSpec.baseUrl is not specified, then the ServiceClient must have a endpoint string property that contains the base URL to use.`);
+            let r = oo({
+                url: Qs(n, t, e, this)
+            });
+            r.method = t.httpMethod;
+            let i = Cs(r);
+            i.operationSpec = t, i.operationArguments = e;
+            let a = t.contentType || this._requestContentType;
+            a && t.requestBody && r.headers.set(`Content-Type`, a);
+            let o = e.options;
+            if (o) {
+                let e = o.requestOptions;
+                e && (e.timeout && (r.timeout = e.timeout), e.onUploadProgress && (r.onUploadProgress = e.onUploadProgress), e.onDownloadProgress && (r.onDownloadProgress = e.onDownloadProgress), e.shouldDeserialize !== void 0 && (i.shouldDeserialize = e.shouldDeserialize), e.allowInsecureConnection && (r.allowInsecureConnection = !0)), o.abortSignal && (r.abortSignal = o.abortSignal), o.tracingOptions && (r.tracingOptions = o.tracingOptions)
+            }
+            this._allowInsecureConnection && (r.allowInsecureConnection = !0), r.streamResponseStatusCodes === void 0 && (r.streamResponseStatusCodes = Ls(t));
+            try {
+                let e = await this.sendRequest(r),
+                    n = Ro(e, t.responses[e.status]);
+                return o?.onResponse && o.onResponse(e, n), n
+            } catch (e) {
+                if (typeof e == `object` && e?.response) {
+                    let n = e.response,
+                        r = Ro(n, t.responses[e.statusCode] || t.responses.default);
+                    e.details = r, o?.onResponse && o.onResponse(n, r, e)
+                }
+                throw e
+            }
+        }
+    }
+}));
+
+function mc(e) {
+    return /^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$/.test(e)
+}
+
+function hc(e) {
+    let t = new URL(e.authorization_uri).pathname.split(`/`)[1];
+    if (t && mc(t)) return t
+}
+
+function gc(e, t) {
+    if (!t.resource_id) return e.scopes;
+    let n = new URL(t.resource_id);
+    n.pathname = bc.DefaultScope;
+    let r = n.toString();
+    return r === `https://disk.azure.com/.default` && (r = `https://disk.azure.com//.default`), [r]
+}
+
+function _c(e) {
+    let t = e.headers.get(`WWW-Authenticate`);
+    if (e.status === 401 && t) return t
+}
+
+function vc(e) {
+    return `${e.slice(7).trim()} `.split(` `).filter(e => e).map(e => (([e, t]) => ({
+        [e]: t
+    }))(e.trim().split(`=`))).reduce((e, t) => ({
+        ...e,
+        ...t
+    }), {})
+}
+
+function yc(e) {
+    return {
+        abortSignal: e.abortSignal,
+        requestOptions: {
+            timeout: e.timeout
+        },
+        tracingOptions: e.tracingOptions
+    }
+}
+var bc, xc, Sc = e((() => {
+        bc = {
+            DefaultScope: `/.default`,
+            HeaderConstants: {
+                AUTHORIZATION: `authorization`
+            }
+        }, xc = async e => {
+            let t = yc(e.request),
+                n = _c(e.response);
+            if (n) {
+                let r = vc(n),
+                    i = gc(e, r),
+                    a = hc(r);
+                if (!a) return !1;
+                let o = await e.getAccessToken(i, {
+                    ...t,
+                    tenantId: a
+                });
+                return o ? (e.request.headers.set(bc.HeaderConstants.AUTHORIZATION, `${o.tokenType??`Bearer`} ${o.token}`), !0) : !1
+            }
+            return !1
+        }
+    })),
+    Cc = e((() => {
+        _s(), pc(), Js(), No(), Is(), Ks(), lc(), Sc()
+    }));
+
+function wc(e, t = {}) {
+    let n = e[Oc],
+        r = io(e.headers.toJson({
+            preserveCase: !0
+        }));
+    if (n) return n.headers = r, n;
+    {
+        let n = oo({
+            url: e.url,
+            method: e.method,
+            headers: r,
+            withCredentials: e.withCredentials,
+            timeout: e.timeout,
+            requestId: e.requestId,
+            abortSignal: e.abortSignal,
+            body: e.body,
+            formData: e.formData,
+            disableKeepAlive: !!e.keepAlive,
+            onDownloadProgress: e.onDownloadProgress,
+            onUploadProgress: e.onUploadProgress,
+            proxySettings: e.proxySettings,
+            streamResponseStatusCodes: e.streamResponseStatusCodes,
+            agent: e.agent,
+            requestOverrides: e.requestOverrides
+        });
+        return t.originalRequest && (n[kc] = t.originalRequest), n
+    }
+}
+
+function Tc(e, t) {
+    let n = t?.originalRequest ?? e,
+        r = {
+            url: e.url,
+            method: e.method,
+            headers: Ec(e.headers),
+            withCredentials: e.withCredentials,
+            timeout: e.timeout,
+            requestId: e.headers.get(`x-ms-client-request-id`) || e.requestId,
+            abortSignal: e.abortSignal,
+            body: e.body,
+            formData: e.formData,
+            keepAlive: !!e.disableKeepAlive,
+            onDownloadProgress: e.onDownloadProgress,
+            onUploadProgress: e.onUploadProgress,
+            proxySettings: e.proxySettings,
+            streamResponseStatusCodes: e.streamResponseStatusCodes,
+            agent: e.agent,
+            requestOverrides: e.requestOverrides,
+            clone() {
+                throw Error(`Cannot clone a non-proxied WebResourceLike`)
+            },
+            prepare() {
+                throw Error(`WebResourceLike.prepare() is not supported by @azure/core-http-compat`)
+            },
+            validateRequestProperties() {}
+        };
+    return t?.createProxy ? new Proxy(r, {
+        get(t, i, a) {
+            return i === Oc ? e : i === `clone` ? () => Tc(wc(r, {
+                originalRequest: n
+            }), {
+                createProxy: !0,
+                originalRequest: n
+            }) : Reflect.get(t, i, a)
+        },
+        set(t, n, r, i) {
+            return n === `keepAlive` && (e.disableKeepAlive = !r), typeof n == `string` && [`url`, `method`, `withCredentials`, `timeout`, `requestId`, `abortSignal`, `body`, `formData`, `onDownloadProgress`, `onUploadProgress`, `proxySettings`, `streamResponseStatusCodes`, `agent`, `requestOverrides`].includes(n) && (e[n] = r), Reflect.set(t, n, r, i)
+        }
+    }) : r
+}
+
+function Ec(e) {
+    return new Ac(e.toJSON({
+        preserveCase: !0
+    }))
+}
+
+function Dc(e) {
+    return e.toLowerCase()
+}
+var Oc, kc, Ac, jc = e((() => {
+    So(), s(), Oc = Symbol(`Original PipelineRequest`), kc = Symbol.for(`@azure/core-client original request`), Ac = class e {
+        constructor(e) {
+            if (h(this, `_headersMap`, void 0), this._headersMap = {}, e)
+                for (let t in e) this.set(t, e[t])
+        }
+        set(e, t) {
+            this._headersMap[Dc(e)] = {
+                name: e,
+                value: t.toString()
+            }
+        }
+        get(e) {
+            let t = this._headersMap[Dc(e)];
+            return t ? t.value : void 0
+        }
+        contains(e) {
+            return !!this._headersMap[Dc(e)]
+        }
+        remove(e) {
+            let t = this.contains(e);
+            return delete this._headersMap[Dc(e)], t
+        }
+        rawHeaders() {
+            return this.toJson({
+                preserveCase: !0
+            })
+        }
+        headersArray() {
+            let e = [];
+            for (let t in this._headersMap) e.push(this._headersMap[t]);
+            return e
+        }
+        headerNames() {
+            let e = [],
+                t = this.headersArray();
+            for (let n = 0; n < t.length; ++n) e.push(t[n].name);
+            return e
+        }
+        headerValues() {
+            let e = [],
+                t = this.headersArray();
+            for (let n = 0; n < t.length; ++n) e.push(t[n].value);
+            return e
+        }
+        toJson(e = {}) {
+            let t = {};
+            if (e.preserveCase)
+                for (let e in this._headersMap) {
+                    let n = this._headersMap[e];
+                    t[n.name] = n.value
+                } else
+                    for (let e in this._headersMap) {
+                        let n = this._headersMap[e];
+                        t[Dc(n.name)] = n.value
+                    }
+            return t
+        }
+        toString() {
+            return JSON.stringify(this.toJson({
+                preserveCase: !0
+            }))
+        }
+        clone() {
+            let t = {};
+            for (let e in this._headersMap) {
+                let n = this._headersMap[e];
+                t[n.name] = n.value
+            }
+            return new e(t)
+        }
+    }
+}));
+
+function Mc(e, t) {
+    let n = Tc(e.request),
+        r = Ec(e.headers);
+    return t?.createProxy ? new Proxy(e, {
+        get(t, i, a) {
+            return i === `headers` ? r : i === `request` ? n : i === Pc ? e : Reflect.get(t, i, a)
+        },
+        set(e, t, i, a) {
+            return t === `headers` ? r = i : t === `request` && (n = i), Reflect.set(e, t, i, a)
+        }
+    }) : {
+        ...e,
+        request: n,
+        headers: r
+    }
+}
+
+function Nc(e) {
+    let t = e[Pc],
+        n = io(e.headers.toJson({
+            preserveCase: !0
+        }));
+    return t ? (t.headers = n, t) : {
+        ...e,
+        headers: n,
+        request: wc(e.request)
+    }
+}
+var Pc, Fc = e((() => {
+        So(), jc(), Pc = Symbol(`Original FullOperationResponse`)
+    })),
+    Ic, Lc = e((() => {
+        ko(), So(), Cc(), Fc(), Ic = class extends fc {
+            constructor(e) {
+                super(e), e.keepAliveOptions?.enable === !1 && !Do(this.pipeline) && this.pipeline.addPolicy(Eo()), e.redirectOptions?.handleRedirects === !1 && this.pipeline.removePolicy({
+                    name: wi
+                })
+            }
+            async sendOperationRequest(e, t) {
+                let n = e?.options?.onResponse,
+                    r;
+
+                function i(e, t, i) {
+                    r = e, n && n(e, t, i)
+                }
+                e.options = {
+                    ...e.options,
+                    onResponse: i
+                };
+                let a = await super.sendOperationRequest(e, t);
+                return r && Object.defineProperty(a, "_response", {
+                    value: Mc(r)
+                }), a
+            }
+        }
+    }));
+
+function Rc(e) {
+    let t = e.slice().reverse();
+    return {
+        name: Vc,
+        async sendRequest(e, n) {
+            let r = {
+                async sendRequest(e) {
+                    return Mc(await n(wc(e)), {
+                        createProxy: !0
+                    })
+                }
+            };
+            for (let e of t) r = e.create(r, Bc);
+            let i = Tc(e, {
+                createProxy: !0
+            });
+            return Nc(await r.sendRequest(i))
+        }
+    }
+}
+var zc, Bc, Vc, Hc = e((() => {
+    jc(), Fc(), (function(e) {
+        e[e.ERROR = 1] = `ERROR`, e[e.INFO = 3] = `INFO`, e[e.OFF = 0] = `OFF`, e[e.WARNING = 2] = `WARNING`
+    })(zc ||= {}), Bc = {
+        log(e, t) {},
+        shouldLog(e) {
+            return !1
+        }
+    }, Vc = `RequestPolicyFactoryPolicy`
+}));
+
+function Uc(e) {
+    return {
+        sendRequest: async t => Nc(await e.sendRequest(Tc(t, {
+            createProxy: !0
+        })))
+    }
+}
+var Wc = e((() => {
+        Fc(), jc()
+    })),
+    Gc = e((() => {
+        Lc(), Hc(), ko(), Wc(), jc()
+    })),
+    Kc = e((() => {}));
+
+function qc(e, t = {}) {
+    try {
+        let n = {
+                rootName: t.rootName ?? ``,
+                includeRoot: t.includeRoot ?? !1,
+                xmlCharKey: t.xmlCharKey ?? `_`,
+                cdataPropName: t.cdataPropName ?? `__cdata`,
+                stopNodes: t.stopNodes ?? []
+            },
+            r = il.parseFromString(nl?.createHTML(e) ?? e, `application/xml`);
+        Yc(r);
+        let i;
+        return i = n.includeRoot ? Qc(r, n) : Qc(r.childNodes[0], n), Promise.resolve(i)
+    } catch (e) {
+        return Promise.reject(e)
+    }
+}
+
+function Jc() {
+    if (al === void 0) try {
+        let e = nl?.createHTML(`INVALID`) ?? `INVALID`;
+        al = il.parseFromString(e, `text/xml`).getElementsByTagName(`parsererror`)[0].namespaceURI ?? ``
+    } catch {
+        al = ``
+    }
+    return al
+}
+
+function Yc(e) {
+    let t = e.getElementsByTagName(`parsererror`);
+    if (t.length > 0 && Jc()) {
+        for (let e = 0; e < t.length; e++)
+            if (t[e].namespaceURI === al) throw Error(t[e].innerHTML)
+    }
+}
+
+function Xc(e) {
+    return !!e.attributes
+}
+
+function Zc(e) {
+    return Xc(e) && e.hasAttributes() ? e : void 0
+}
+
+function Qc(e, t) {
+    let n = {},
+        r = e.childNodes.length,
+        i = e.childNodes[0],
+        a = i && r === 1 && i.nodeType === Node.TEXT_NODE && i.nodeValue || void 0,
+        o = Zc(e);
+    if (o) {
+        n.$ = {};
+        for (let e = 0; e < o.attributes.length; e++) {
+            let t = o.attributes[e];
+            n.$[t.nodeName] = t.nodeValue
+        }
+        a && (n[t.xmlCharKey] = a)
+    } else r === 0 ? n = `` : a && (n = a);
+    if (!a)
+        for (let i = 0; i < r; i++) {
+            let r = e.childNodes[i];
+            if (r?.nodeType === Node.CDATA_SECTION_NODE) n = r.textContent;
+            else if (r?.firstChild?.nodeType === Node.CDATA_SECTION_NODE) n[r.nodeName] = r.textContent;
+            else if (r.nodeType !== Node.TEXT_NODE) {
+                let e = Qc(r, t);
+                n[r.nodeName] ? Array.isArray(n[r.nodeName]) ? n[r.nodeName].push(e) : n[r.nodeName] = [n[r.nodeName], e] : n[r.nodeName] = e
+            }
+        }
+    return n
+}
+
+function $c(e, t = {}) {
+    let n = {
+            rootName: t.rootName ?? `root`,
+            includeRoot: t.includeRoot ?? !1,
+            xmlCharKey: t.xmlCharKey ?? `_`,
+            cdataPropName: t.cdataPropName ?? `__cdata`,
+            stopNodes: t.stopNodes ?? []
+        },
+        r = tl(e, n.rootName, n)[0];
+    return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>` + ol.serializeToString(r).replace(/ xmlns=""/g, ``)
+}
+
+function el(e) {
+    let t = [];
+    for (let n of Object.keys(e)) {
+        let r = rl.createAttribute(n);
+        r.value = e[n].toString(), t.push(r)
+    }
+    return t
+}
+
+function tl(e, t, n) {
+    if (e == null || typeof e == `string` || typeof e == `number` || typeof e == `boolean`) {
+        let n = rl.createElement(t);
+        return n.textContent = e == null ? `` : e.toString(), [n]
+    } else if (Array.isArray(e)) {
+        let r = [];
+        for (let i of e)
+            for (let e of tl(i, t, n)) r.push(e);
+        return r
+    } else if (typeof e == `object`) {
+        let r;
+        r = e.$?.xmlns ? rl.createElementNS(e.$.xmlns, t) : rl.createElement(t);
+        for (let t of Object.keys(e))
+            if (t === `$`)
+                for (let n of el(e[t])) r.attributes.setNamedItem(n);
+            else if (t === n.xmlCharKey) r.textContent = e[t].toString();
+        else if (t === n.cdataPropName) {
+            let n = rl.createCDATASection(e[t].toString());
+            r.appendChild(n)
+        } else
+            for (let i of tl(e[t], t, n)) r.appendChild(i);
+        return [r]
+    } else throw Error(`Illegal value passed to buildObject: ${e}`)
+}
+var nl, rl, il, al, ol, sl = e((() => {
+        if (Kc(), !document || !DOMParser || !Node || !XMLSerializer) throw Error(`This library depends on the following DOM objects: ["document", "DOMParser", "Node", "XMLSerializer"] to parse XML, but some of these are undefined. You may provide a polyfill to make these globally available in order to support your environment. For more information, please refer to https://aka.ms/azsdk/js/web-workers. `);
+        try {
+            self.trustedTypes !== void 0 && (nl = self.trustedTypes.createPolicy(`@azure/core-xml#xml.browser`, {
+                createHTML: e => e
+            }))
+        } catch {
+            console.warn(`Could not create trusted types policy "@azure/core-xml#xml.browser"`)
+        }
+        rl = document.implementation.createDocument(null, null, null), il = new DOMParser, ol = new XMLSerializer
+    })),
+    cl = e((() => {
+        sl(), Kc()
+    })),
+    ll, ul = e((() => {
+        _i(), ll = hi(`storage-blob`)
+    })),
+    dl, fl = e((() => {
+        s(), dl = class {
+            constructor(e, t) {
+                h(this, `_nextPolicy`, void 0), h(this, `_options`, void 0), this._nextPolicy = e, this._options = t
+            }
+            shouldLog(e) {
+                return this._options.shouldLog(e)
+            }
+            log(e, t) {
+                this._options.log(e, t)
+            }
+        }
+    })),
+    pl, ml, hl, gl, _l, vl, yl, bl, xl, Sl, Cl, wl, Tl, El, Dl, Ol = e((() => {
+        pl = `12.29.1`, ml = `2025-11-05`, hl = 256 * 1024 * 1024, gl = 4e3 * 1024 * 1024, _l = 5e4, vl = 8 * 1024 * 1024, yl = 4 * 1024 * 1024, bl = {
+            Parameters: {
+                FORCE_BROWSER_NO_CACHE: `_`,
+                SIGNATURE: `sig`,
+                SNAPSHOT: `snapshot`,
+                VERSIONID: `versionid`,
+                TIMEOUT: `timeout`
+            }
+        }, xl = {
+            AUTHORIZATION: `Authorization`,
+            AUTHORIZATION_SCHEME: `Bearer`,
+            CONTENT_ENCODING: `Content-Encoding`,
+            CONTENT_ID: `Content-ID`,
+            CONTENT_LANGUAGE: `Content-Language`,
+            CONTENT_LENGTH: `Content-Length`,
+            CONTENT_MD5: `Content-Md5`,
+            CONTENT_TRANSFER_ENCODING: `Content-Transfer-Encoding`,
+            CONTENT_TYPE: `Content-Type`,
+            COOKIE: `Cookie`,
+            DATE: `date`,
+            IF_MATCH: `if-match`,
+            IF_MODIFIED_SINCE: `if-modified-since`,
+            IF_NONE_MATCH: `if-none-match`,
+            IF_UNMODIFIED_SINCE: `if-unmodified-since`,
+            PREFIX_FOR_STORAGE: `x-ms-`,
+            RANGE: `Range`,
+            USER_AGENT: `User-Agent`,
+            X_MS_CLIENT_REQUEST_ID: `x-ms-client-request-id`,
+            X_MS_COPY_SOURCE: `x-ms-copy-source`,
+            X_MS_DATE: `x-ms-date`,
+            X_MS_ERROR_CODE: `x-ms-error-code`,
+            X_MS_VERSION: `x-ms-version`,
+            X_MS_CopySourceErrorCode: `x-ms-copy-source-error-code`
+        }, Sl = 1 * 1024 * 1024, 4 * Sl, Cl = `AES256`, wl = `DefaultEndpointsProtocol=http;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;`, Tl = `Access-Control-Allow-Origin.Cache-Control.Content-Length.Content-Type.Date.Request-Id.traceparent.Transfer-Encoding.User-Agent.x-ms-client-request-id.x-ms-date.x-ms-error-code.x-ms-request-id.x-ms-return-client-request-id.x-ms-version.Accept-Ranges.Content-Disposition.Content-Encoding.Content-Language.Content-MD5.Content-Range.ETag.Last-Modified.Server.Vary.x-ms-content-crc64.x-ms-copy-action.x-ms-copy-completion-time.x-ms-copy-id.x-ms-copy-progress.x-ms-copy-status.x-ms-has-immutability-policy.x-ms-has-legal-hold.x-ms-lease-state.x-ms-lease-status.x-ms-range.x-ms-request-server-encrypted.x-ms-server-encrypted.x-ms-snapshot.x-ms-source-range.If-Match.If-Modified-Since.If-None-Match.If-Unmodified-Since.x-ms-access-tier.x-ms-access-tier-change-time.x-ms-access-tier-inferred.x-ms-account-kind.x-ms-archive-status.x-ms-blob-append-offset.x-ms-blob-cache-control.x-ms-blob-committed-block-count.x-ms-blob-condition-appendpos.x-ms-blob-condition-maxsize.x-ms-blob-content-disposition.x-ms-blob-content-encoding.x-ms-blob-content-language.x-ms-blob-content-length.x-ms-blob-content-md5.x-ms-blob-content-type.x-ms-blob-public-access.x-ms-blob-sequence-number.x-ms-blob-type.x-ms-copy-destination-snapshot.x-ms-creation-time.x-ms-default-encryption-scope.x-ms-delete-snapshots.x-ms-delete-type-permanent.x-ms-deny-encryption-scope-override.x-ms-encryption-algorithm.x-ms-if-sequence-number-eq.x-ms-if-sequence-number-le.x-ms-if-sequence-number-lt.x-ms-incremental-copy.x-ms-lease-action.x-ms-lease-break-period.x-ms-lease-duration.x-ms-lease-id.x-ms-lease-time.x-ms-page-write.x-ms-proposed-lease-id.x-ms-range-get-content-md5.x-ms-rehydrate-priority.x-ms-sequence-number-action.x-ms-sku-name.x-ms-source-content-md5.x-ms-source-if-match.x-ms-source-if-modified-since.x-ms-source-if-none-match.x-ms-source-if-unmodified-since.x-ms-tag-count.x-ms-encryption-key-sha256.x-ms-copy-source-error-code.x-ms-copy-source-status-code.x-ms-if-tags.x-ms-source-if-tags`.split(`.`), El = `comp.maxresults.rscc.rscd.rsce.rscl.rsct.se.si.sip.sp.spr.sr.srt.ss.st.sv.include.marker.prefix.copyid.restype.blockid.blocklisttype.delimiter.prevsnapshot.ske.skoid.sks.skt.sktid.skv.snapshot`.split(`.`), Dl = [`10000`, `10001`, `10002`, `10003`, `10004`, `10100`, `10101`, `10102`, `10103`, `10104`, `11000`, `11001`, `11002`, `11003`, `11004`, `11100`, `11101`, `11102`, `11103`, `11104`]
+    }));
+
+function kl(e) {
+    let t = new URL(e),
+        n = t.pathname;
+    return n ||= `/`, n = Nl(n), t.pathname = n, t.toString()
+}
+
+function Al(e) {
+    let t = ``;
+    if (e.search(`DevelopmentStorageProxyUri=`) !== -1) {
+        let n = e.split(`;`);
+        for (let e of n) e.trim().startsWith(`DevelopmentStorageProxyUri=`) && (t = e.trim().match(`DevelopmentStorageProxyUri=(.*)`)[1])
+    }
+    return t
+}
+
+function jl(e, t) {
+    let n = e.split(`;`);
+    for (let e of n)
+        if (e.trim().startsWith(t)) return e.trim().match(t + `=(.*)`)[1];
+    return ``
+}
+
+function Ml(e) {
+    let t = ``;
+    e.startsWith(`UseDevelopmentStorage=true`) && (t = Al(e), e = wl);
+    let n = jl(e, `BlobEndpoint`);
+    if (n = n.endsWith(`/`) ? n.slice(0, -1) : n, e.search(`DefaultEndpointsProtocol=`) !== -1 && e.search(`AccountKey=`) !== -1) {
+        let r = ``,
+            i = ``,
+            a = Buffer.from(`accountKey`, `base64`),
+            o = ``;
+        if (i = jl(e, `AccountName`), a = Buffer.from(jl(e, `AccountKey`), `base64`), !n) {
+            r = jl(e, `DefaultEndpointsProtocol`);
+            let t = r.toLowerCase();
+            if (t !== `https` && t !== `http`) throw Error(`Invalid DefaultEndpointsProtocol in the provided Connection String. Expecting 'https' or 'http'`);
+            if (o = jl(e, `EndpointSuffix`), !o) throw Error(`Invalid EndpointSuffix in the provided Connection String`);
+            n = `${r}://${i}.blob.${o}`
+        }
+        if (!i) throw Error(`Invalid AccountName in the provided Connection String`);
+        if (a.length === 0) throw Error(`Invalid AccountKey in the provided Connection String`);
+        return {
+            kind: `AccountConnString`,
+            url: n,
+            accountName: i,
+            accountKey: a,
+            proxyUri: t
+        }
+    } else {
+        let t = jl(e, `SharedAccessSignature`),
+            r = jl(e, `AccountName`);
+        if (r ||= Kl(n), !n) throw Error(`Invalid BlobEndpoint in the provided SAS Connection String`);
+        if (!t) throw Error(`Invalid SharedAccessSignature in the provided SAS Connection String`);
+        return t.startsWith(`?`) && (t = t.substring(1)), {
+            kind: `SASConnString`,
+            url: n,
+            accountName: r,
+            accountSas: t
+        }
+    }
+}
+
+function Nl(e) {
+    return encodeURIComponent(e).replace(/%2F/g, `/`).replace(/'/g, `%27`).replace(/\+/g, `%20`).replace(/%25/g, `%`)
+}
+
+function Pl(e, t) {
+    let n = new URL(e),
+        r = n.pathname;
+    return r = r ? r.endsWith(`/`) ? `${r}${t}` : `${r}/${t}` : t, n.pathname = r, n.toString()
+}
+
+function Fl(e, t, n) {
+    let r = new URL(e),
+        i = encodeURIComponent(t),
+        a = n ? encodeURIComponent(n) : void 0,
+        o = r.search === `` ? `?` : r.search,
+        s = [];
+    for (let e of o.slice(1).split(`&`))
+        if (e) {
+            let [t] = e.split(`=`, 2);
+            t !== i && s.push(e)
+        } return a && s.push(`${i}=${a}`), r.search = s.length ? `?${s.join(`&`)}` : ``, r.toString()
+}
+
+function Il(e, t) {
+    return new URL(e).searchParams.get(t) ?? void 0
+}
+
+function Ll(e, t) {
+    let n = new URL(e);
+    return n.hostname = t, n.toString()
+}
+
+function Rl(e) {
+    try {
+        let t = new URL(e);
+        return t.protocol.endsWith(`:`) ? t.protocol.slice(0, -1) : t.protocol
+    } catch {
+        return
+    }
+}
+
+function zl(e, t) {
+    let n = new URL(e),
+        r = n.search;
+    return r ? r += `&` + t : r = t, n.search = r, n.toString()
+}
+
+function Bl(e, t = !0) {
+    let n = e.toISOString();
+    return t ? n.substring(0, n.length - 1) + `0000Z` : n.substring(0, n.length - 5) + `Z`
+}
+
+function Vl(e) {
+    return ea ? Buffer.from(e).toString(`base64`) : btoa(e)
+}
+
+function Hl(e, t) {
+    return e.length > 42 && (e = e.slice(0, 42)), Vl(e + Wl(t.toString(), 48 - e.length, `0`))
+}
+async function Ul(e, t, n) {
+    return new Promise((r, i) => {
+        let a, o = () => {
+            a !== void 0 && clearTimeout(a), i(n)
+        };
+        a = setTimeout(() => {
+            t !== void 0 && t.removeEventListener(`abort`, o), r()
+        }, e), t !== void 0 && t.addEventListener(`abort`, o)
+    })
+}
+
+function Wl(e, t, n = ` `) {
+    return String.prototype.padStart ? e.padStart(t, n) : (n ||= ` `, e.length > t ? e : (t -= e.length, t > n.length && (n += n.repeat(t / n.length)), n.slice(0, t) + e))
+}
+
+function Gl(e, t) {
+    return e.toLocaleLowerCase() === t.toLocaleLowerCase()
+}
+
+function Kl(e) {
+    let t = new URL(e),
+        n;
+    try {
+        return n = t.hostname.split(`.`)[1] === `blob` ? t.hostname.split(`.`)[0] : ql(t) ? t.pathname.split(`/`)[1] : ``, n
+    } catch {
+        throw Error(`Unable to extract accountName with provided information.`)
+    }
+}
+
+function ql(e) {
+    let t = e.host;
+    return /^.*:.*:.*$|^(localhost|host.docker.internal)(:[0-9]+)?$|^(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])(\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])){3}(:[0-9]+)?$/.test(t) || !!e.port && Dl.includes(e.port)
+}
+
+function Jl(e) {
+    if (e === void 0) return;
+    let t = [];
+    for (let n in e)
+        if (Object.prototype.hasOwnProperty.call(e, n)) {
+            let r = e[n];
+            t.push(`${encodeURIComponent(n)}=${encodeURIComponent(r)}`)
+        } return t.join(`&`)
+}
+
+function Yl(e) {
+    if (e === void 0) return;
+    let t = {
+        blobTagSet: []
+    };
+    for (let n in e)
+        if (Object.prototype.hasOwnProperty.call(e, n)) {
+            let r = e[n];
+            t.blobTagSet.push({
+                key: n,
+                value: r
+            })
+        } return t
+}
+
+function Xl(e) {
+    if (e === void 0) return;
+    let t = {};
+    for (let n of e.blobTagSet) t[n.key] = n.value;
+    return t
+}
+
+function Zl(e) {
+    if (e !== void 0) switch (e.kind) {
+        case `csv`:
+            return {
+                format: {
+                    type: `delimited`,
+                    delimitedTextConfiguration: {
+                        columnSeparator: e.columnSeparator || `,`,
+                        fieldQuote: e.fieldQuote || ``,
+                        recordSeparator: e.recordSeparator,
+                        escapeChar: e.escapeCharacter || ``,
+                        headersPresent: e.hasHeaders || !1
+                    }
+                }
+            };
+        case `json`:
+            return {
+                format: {
+                    type: `json`,
+                    jsonTextConfiguration: {
+                        recordSeparator: e.recordSeparator
+                    }
+                }
+            };
+        case `arrow`:
+            return {
+                format: {
+                    type: `arrow`,
+                    arrowConfiguration: {
+                        schema: e.schema
+                    }
+                }
+            };
+        case `parquet`:
+            return {
+                format: {
+                    type: `parquet`
+                }
+            };
+        default:
+            throw Error(`Invalid BlobQueryTextConfiguration.`)
+    }
+}
+
+function Ql(e) {
+    if (!e || `policy-id` in e) return;
+    let t = [];
+    for (let n in e) {
+        let r = n.split(`_`);
+        r[0].startsWith(`or-`) && (r[0] = r[0].substring(3));
+        let i = {
+                ruleId: r[1],
+                replicationStatus: e[n]
+            },
+            a = t.findIndex(e => e.policyId === r[0]);
+        a > -1 ? t[a].rules.push(i) : t.push({
+            policyId: r[0],
+            rules: [i]
+        })
+    }
+    return t
+}
+
+function $l(e) {
+    return e ? e.scheme + ` ` + e.value : void 0
+}
+
+function* eu(e) {
+    let t = [],
+        n = [];
+    e.pageRange && (t = e.pageRange), e.clearRange && (n = e.clearRange);
+    let r = 0,
+        i = 0;
+    for (; r < t.length && i < n.length;) t[r].start < n[i].start ? (yield {
+        start: t[r].start,
+        end: t[r].end,
+        isClear: !1
+    }, ++r) : (yield {
+        start: n[i].start,
+        end: n[i].end,
+        isClear: !0
+    }, ++i);
+    for (; r < t.length; ++r) yield {
+        start: t[r].start,
+        end: t[r].end,
+        isClear: !1
+    };
+    for (; i < n.length; ++i) yield {
+        start: n[i].start,
+        end: n[i].end,
+        isClear: !0
+    }
+}
+
+function L(e) {
+    if (`_response` in e) return e;
+    throw TypeError(`Unexpected response object ${e}`)
+}
+var tu = e((() => {
+        ta(), Ol()
+    })),
+    nu, ru = e((() => {
+        (function(e) {
+            e[e.EXPONENTIAL = 0] = `EXPONENTIAL`, e[e.FIXED = 1] = `FIXED`
+        })(nu ||= {})
+    })),
+    iu, au, ou, su = e((() => {
+        Wi(), fl(), Ol(), tu(), ul(), ru(), s(), iu = {
+            maxRetryDelayInMs: 120 * 1e3,
+            maxTries: 4,
+            retryDelayInMs: 4 * 1e3,
+            retryPolicyType: nu.EXPONENTIAL,
+            secondaryHost: ``,
+            tryTimeoutInMs: void 0
+        }, au = new Hi(`The operation was aborted.`), ou = class extends dl {
+            constructor(e, t, n = iu) {
+                super(e, t), h(this, `retryOptions`, void 0), this.retryOptions = {
+                    retryPolicyType: n.retryPolicyType ? n.retryPolicyType : iu.retryPolicyType,
+                    maxTries: n.maxTries && n.maxTries >= 1 ? Math.floor(n.maxTries) : iu.maxTries,
+                    tryTimeoutInMs: n.tryTimeoutInMs && n.tryTimeoutInMs >= 0 ? n.tryTimeoutInMs : iu.tryTimeoutInMs,
+                    retryDelayInMs: n.retryDelayInMs && n.retryDelayInMs >= 0 ? Math.min(n.retryDelayInMs, n.maxRetryDelayInMs ? n.maxRetryDelayInMs : iu.maxRetryDelayInMs) : iu.retryDelayInMs,
+                    maxRetryDelayInMs: n.maxRetryDelayInMs && n.maxRetryDelayInMs >= 0 ? n.maxRetryDelayInMs : iu.maxRetryDelayInMs,
+                    secondaryHost: n.secondaryHost ? n.secondaryHost : iu.secondaryHost
+                }
+            }
+            async sendRequest(e) {
+                return this.attemptSendRequest(e, !1, 1)
+            }
+            async attemptSendRequest(e, t, n) {
+                let r = e.clone(),
+                    i = t || !this.retryOptions.secondaryHost || !(e.method === `GET` || e.method === `HEAD` || e.method === `OPTIONS`) || n % 2 == 1;
+                i || (r.url = Ll(r.url, this.retryOptions.secondaryHost)), this.retryOptions.tryTimeoutInMs && (r.url = Fl(r.url, bl.Parameters.TIMEOUT, Math.floor(this.retryOptions.tryTimeoutInMs / 1e3).toString()));
+                let a;
+                try {
+                    if (ll.info(`RetryPolicy: =====> Try=${n} ${i?`Primary`:`Secondary`}`), a = await this._nextPolicy.sendRequest(r), !this.shouldRetry(i, n, a)) return a;
+                    t ||= !i && a.status === 404
+                } catch (e) {
+                    if (ll.error(`RetryPolicy: Caught error, message: ${e.message}, code: ${e.code}`), !this.shouldRetry(i, n, a, e)) throw e
+                }
+                return await this.delay(i, n, e.abortSignal), this.attemptSendRequest(e, t, ++n)
+            }
+            shouldRetry(e, t, n, r) {
+                if (t >= this.retryOptions.maxTries) return ll.info(`RetryPolicy: Attempt(s) ${t} >= maxTries ${this.retryOptions.maxTries}, no further try.`), !1;
+                let i = [`ETIMEDOUT`, `ESOCKETTIMEDOUT`, `ECONNREFUSED`, `ECONNRESET`, `ENOENT`, `ENOTFOUND`, `TIMEOUT`, `EPIPE`, `REQUEST_SEND_ERROR`];
+                if (r) {
+                    for (let e of i)
+                        if (r.name.toUpperCase().includes(e) || r.message.toUpperCase().includes(e) || r.code && r.code.toString().toUpperCase() === e) return ll.info(`RetryPolicy: Network error ${e} found, will retry.`), !0
+                }
+                if (n || r) {
+                    let t = n ? n.status : r ? r.statusCode : 0;
+                    if (!e && t === 404) return ll.info(`RetryPolicy: Secondary access with 404, will retry.`), !0;
+                    if (t === 503 || t === 500) return ll.info(`RetryPolicy: Will retry for status code ${t}.`), !0
+                }
+                if (n && n?.status >= 400) {
+                    let e = n.headers.get(xl.X_MS_CopySourceErrorCode);
+                    if (e !== void 0) switch (e) {
+                        case `InternalError`:
+                        case `OperationTimedOut`:
+                        case `ServerBusy`:
+                            return !0
+                    }
+                }
+                return r?.code === `PARSE_ERROR` && r?.message.startsWith(`Error "Error: Unclosed root tag`) ? (ll.info(`RetryPolicy: Incomplete XML response likely due to service timeout, will retry.`), !0) : !1
+            }
+            async delay(e, t, n) {
+                let r = 0;
+                if (e) switch (this.retryOptions.retryPolicyType) {
+                    case nu.EXPONENTIAL:
+                        r = Math.min((2 ** (t - 1) - 1) * this.retryOptions.retryDelayInMs, this.retryOptions.maxRetryDelayInMs);
+                        break;
+                    case nu.FIXED:
+                        r = this.retryOptions.retryDelayInMs;
+                        break
+                } else r = Math.random() * 1e3;
+                return ll.info(`RetryPolicy: Delay for ${r}ms`), Ul(r, n, au)
+            }
+        }
+    })),
+    cu, lu = e((() => {
+        su(), ru(), s(), cu = class {
+            constructor(e) {
+                h(this, `retryOptions`, void 0), this.retryOptions = e
+            }
+            create(e, t) {
+                return new ou(e, t, this.retryOptions)
+            }
+        }
+    })),
+    uu, du = e((() => {
+        uu = class {}
+    })),
+    fu, pu = e((() => {
+        fl(), fu = class extends dl {
+            sendRequest(e) {
+                return this._nextPolicy.sendRequest(this.signRequest(e))
+            }
+            signRequest(e) {
+                return e
+            }
+        }
+    })),
+    mu, hu = e((() => {
+        pu(), mu = class extends fu {
+            constructor(e, t) {
+                super(e, t)
+            }
+        }
+    })),
+    gu, _u = e((() => {
+        gu = class {
+            create(e, t) {
+                throw Error(`Method should be implemented in children classes.`)
+            }
+        }
+    })),
+    vu, yu = e((() => {
+        hu(), _u(), vu = class extends gu {
+            create(e, t) {
+                return new mu(e, t)
+            }
+        }
+    })),
+    bu, xu = e((() => {
+        bu = class {}
+    }));
+
+function Su() {
+    return Cu ||= no(), Cu
+}
+var Cu, wu = e((() => {
+        So()
+    })),
+    Tu = e((() => {})),
+    Eu = e((() => {})),
+    Du = e((() => {})),
+    Ou = e((() => {})),
+    ku = e((() => {})),
+    Au = e((() => {})),
+    ju = e((() => {})),
+    Mu = e((() => {})),
+    Nu = e((() => {})),
+    Pu = e((() => {})),
+    Fu = e((() => {})),
+    Iu = e((() => {})),
+    Lu = e((() => {})),
+    Ru = e((() => {}));
+
+function zu() {
+    return {
+        name: Bu,
+        async sendRequest(e, t) {
+            try {
+                return await t(e)
+            } catch (e) {
+                throw typeof e == `object` && e && e.response && e.response.parsedBody && e.response.parsedBody.code === `InvalidHeaderValue` && e.response.parsedBody.HeaderName === `x-ms-version` && (e.message = `The provided service version is not enabled on this storage account. Please see https://learn.microsoft.com/rest/api/storageservices/versioning-for-the-azure-storage-services for additional information.
+`), e
+            }
+        }
+    }
+}
+var Bu, Vu = e((() => {
+        Bu = `storageRequestFailureDetailsParserPolicy`
+    })),
+    Hu = e((() => {
+        xu(), wu(), Eu(), Au(), ku(), ju(), Pu(), Ou(), Du(), Tu(), Fu(), Iu(), Mu(), Nu(), Lu(), Ru(), Pu(), Vu()
+    }));
+
+function Uu() {
+    return {
+        name: Wu,
+        async sendRequest(e, t) {
+            return ea ? t(e) : ((e.method === `GET` || e.method === `HEAD`) && (e.url = Fl(e.url, bl.Parameters.FORCE_BROWSER_NO_CACHE, new Date().getTime().toString())), e.headers.delete(xl.COOKIE), e.headers.delete(xl.CONTENT_LENGTH), t(e))
+        }
+    }
+}
+var Wu, Gu = e((() => {
+    ta(), Ol(), tu(), Wu = `storageBrowserPolicy`
+}));
+
+function Ku(e = {}) {
+    let t = e.retryPolicyType ?? Ju.retryPolicyType,
+        n = e.maxTries ?? Ju.maxTries,
+        r = e.retryDelayInMs ?? Ju.retryDelayInMs,
+        i = e.maxRetryDelayInMs ?? Ju.maxRetryDelayInMs,
+        a = e.secondaryHost ?? Ju.secondaryHost,
+        o = e.tryTimeoutInMs ?? Ju.tryTimeoutInMs;
+
+    function s({
+        isPrimaryRetry: e,
+        attempt: t,
+        response: r,
+        error: i
+    }) {
+        if (t >= n) return ll.info(`RetryPolicy: Attempt(s) ${t} >= maxTries ${n}, no further try.`), !1;
+        if (i) {
+            for (let e of Yu)
+                if (i.name.toUpperCase().includes(e) || i.message.toUpperCase().includes(e) || i.code && i.code.toString().toUpperCase() === e) return ll.info(`RetryPolicy: Network error ${e} found, will retry.`), !0;
+            if (i?.code === `PARSE_ERROR` && i?.message.startsWith(`Error "Error: Unclosed root tag`)) return ll.info(`RetryPolicy: Incomplete XML response likely due to service timeout, will retry.`), !0
+        }
+        if (r || i) {
+            let t = r?.status ?? i?.statusCode ?? 0;
+            if (!e && t === 404) return ll.info(`RetryPolicy: Secondary access with 404, will retry.`), !0;
+            if (t === 503 || t === 500) return ll.info(`RetryPolicy: Will retry for status code ${t}.`), !0
+        }
+        if (r && r?.status >= 400) {
+            let e = r.headers.get(xl.X_MS_CopySourceErrorCode);
+            if (e !== void 0) switch (e) {
+                case `InternalError`:
+                case `OperationTimedOut`:
+                case `ServerBusy`:
+                    return !0
+            }
+        }
+        return !1
+    }
+
+    function c(e, n) {
+        let a = 0;
+        if (e) switch (t) {
+            case nu.EXPONENTIAL:
+                a = Math.min((2 ** (n - 1) - 1) * r, i);
+                break;
+            case nu.FIXED:
+                a = r;
+                break
+        } else a = Math.random() * 1e3;
+        return ll.info(`RetryPolicy: Delay for ${a}ms`), a
+    }
+    return {
+        name: qu,
+        async sendRequest(e, t) {
+            o && (e.url = Fl(e.url, bl.Parameters.TIMEOUT, String(Math.floor(o / 1e3))));
+            let n = e.url,
+                r = a ? Ll(e.url, a) : void 0,
+                i = !1,
+                l = 1,
+                u = !0,
+                d, f;
+            for (; u;) {
+                let a = i || !r || ![`GET`, `HEAD`, `OPTIONS`].includes(e.method) || l % 2 == 1;
+                e.url = a ? n : r, d = void 0, f = void 0;
+                try {
+                    ll.info(`RetryPolicy: =====> Try=${l} ${a?`Primary`:`Secondary`}`), d = await t(e), i ||= !a && d.status === 404
+                } catch (e) {
+                    if (za(e)) ll.error(`RetryPolicy: Caught error, message: ${e.message}, code: ${e.code}`), f = e;
+                    else throw ll.error(`RetryPolicy: Caught error, message: ${Xi(e)}`), e
+                }
+                u = s({
+                    isPrimaryRetry: a,
+                    attempt: l,
+                    response: d,
+                    error: f
+                }), u && await Ul(c(a, l), e.abortSignal, Xu), l++
+            }
+            if (d) return d;
+            throw f ?? new Ba(`RetryPolicy failed without known error.`)
+        }
+    }
+}
+var qu, Ju, Yu, Xu, Zu = e((() => {
+    Wi(), So(), ta(), lu(), Ol(), tu(), ul(), qu = `storageRetryPolicy`, Ju = {
+        maxRetryDelayInMs: 120 * 1e3,
+        maxTries: 4,
+        retryDelayInMs: 4 * 1e3,
+        retryPolicyType: nu.EXPONENTIAL,
+        secondaryHost: ``,
+        tryTimeoutInMs: void 0
+    }, Yu = [`ETIMEDOUT`, `ESOCKETTIMEDOUT`, `ECONNREFUSED`, `ECONNRESET`, `ENOENT`, `ENOTFOUND`, `TIMEOUT`, `EPIPE`, `REQUEST_SEND_ERROR`], Xu = new Hi(`The operation was aborted.`)
+}));
+
+function Qu(e) {
+    return {
+        name: $u,
+        async sendRequest(e, t) {
+            return t(e)
+        }
+    }
+}
+var $u, ed = e((() => {
+        $u = `storageSharedKeyCredentialPolicy`
+    })),
+    td, nd = e((() => {
+        fl(), ta(), Ol(), tu(), td = class extends dl {
+            constructor(e, t) {
+                super(e, t)
+            }
+            async sendRequest(e) {
+                return ea ? this._nextPolicy.sendRequest(e) : ((e.method.toUpperCase() === `GET` || e.method.toUpperCase() === `HEAD`) && (e.url = Fl(e.url, bl.Parameters.FORCE_BROWSER_NO_CACHE, new Date().getTime().toString())), e.headers.remove(xl.COOKIE), e.headers.remove(xl.CONTENT_LENGTH), this._nextPolicy.sendRequest(e))
+            }
+        }
+    })),
+    rd, id = e((() => {
+        nd(), rd = class {
+            create(e, t) {
+                return new td(e, t)
+            }
+        }
+    }));
+
+function ad() {
+    return {
+        name: od,
+        async sendRequest(e, t) {
+            return t(e)
+        }
+    }
+}
+var od, sd = e((() => {
+    od = `StorageCorrectContentLengthPolicy`
+}));
+
+function cd(e) {
+    if (!e || typeof e != `object`) return !1;
+    let t = e;
+    return Array.isArray(t.factories) && typeof t.options == `object` && typeof t.toServiceClientOptions == `function`
+}
+
+function ld(e, t = {}) {
+    e ||= new vu;
+    let n = new xd([], t);
+    return n._credential = e, n
+}
+
+function ud(e) {
+    let t = [md, pd, hd, gd, _d, vd, bd];
+    if (e.factories.length) {
+        let n = e.factories.filter(e => !t.some(t => t(e)));
+        if (n.length) {
+            let e = n.some(e => yd(e));
+            return {
+                wrappedPolicies: Rc(n),
+                afterRetry: e
+            }
+        }
+    }
+}
+
+function dd(e) {
+    let {
+        httpClient: t,
+        ...n
+    } = e.options, r = e._coreHttpClient;
+    r || (r = t ? Uc(t) : Su(), e._coreHttpClient = r);
+    let i = e._corePipeline;
+    if (!i) {
+        let t = `azsdk-js-azure-storage-blob/${pl}`,
+            r = n.userAgentOptions && n.userAgentOptions.userAgentPrefix ? `${n.userAgentOptions.userAgentPrefix} ${t}` : `${t}`;
+        i = qs({
+            ...n,
+            loggingOptions: {
+                additionalAllowedHeaderNames: Tl,
+                additionalAllowedQueryParameters: El,
+                logger: ll.info
+            },
+            userAgentOptions: {
+                userAgentPrefix: r
+            },
+            serializationOptions: {
+                stringifyXML: $c,
+                serializerOptions: {
+                    xml: {
+                        xmlCharKey: `#`
+                    }
+                }
+            },
+            deserializationOptions: {
+                parseXML: qc,
+                serializerOptions: {
+                    xml: {
+                        xmlCharKey: `#`
+                    }
+                }
+            }
+        }), i.removePolicy({
+            phase: `Retry`
+        }), i.removePolicy({
+            name: ua
+        }), i.addPolicy(ad()), i.addPolicy(Ku(n.retryOptions), {
+            phase: `Retry`
+        }), i.addPolicy(zu()), i.addPolicy(Uu());
+        let a = ud(e);
+        a && i.addPolicy(a.wrappedPolicies, a.afterRetry ? {
+            afterPhase: `Retry`
+        } : void 0);
+        let o = fd(e);
+        Co(o) ? i.addPolicy(_o({
+            credential: o,
+            scopes: n.audience ?? `https://storage.azure.com/.default`,
+            challengeCallbacks: {
+                authorizeRequestOnChallenge: xc
+            }
+        }), {
+            phase: `Sign`
+        }) : o instanceof uu && i.addPolicy(Qu({
+            accountName: o.accountName,
+            accountKey: o.accountKey
+        }), {
+            phase: `Sign`
+        }), e._corePipeline = i
+    }
+    return {
+        ...n,
+        allowInsecureConnection: !0,
+        httpClient: r,
+        pipeline: i
+    }
+}
+
+function fd(e) {
+    if (e._credential) return e._credential;
+    let t = new vu;
+    for (let n of e.factories)
+        if (Co(n.credential)) t = n.credential;
+        else if (pd(n)) return n;
+    return t
+}
+
+function pd(e) {
+    return e instanceof uu || e.constructor.name === `StorageSharedKeyCredential`
+}
+
+function md(e) {
+    return e instanceof vu || e.constructor.name === `AnonymousCredential`
+}
+
+function hd(e) {
+    return Co(e.credential)
+}
+
+function gd(e) {
+    return e instanceof rd || e.constructor.name === `StorageBrowserPolicyFactory`
+}
+
+function _d(e) {
+    return e instanceof cu || e.constructor.name === `StorageRetryPolicyFactory`
+}
+
+function vd(e) {
+    return e.constructor.name === `TelemetryPolicyFactory`
+}
+
+function yd(e) {
+    return e.constructor.name === `InjectorPolicyFactory`
+}
+
+function bd(e) {
+    let t = [`GenerateClientRequestIdPolicy`, `TracingPolicy`, `LogPolicy`, `ProxyPolicy`, `DisableResponseDecompressionPolicy`, `KeepAlivePolicy`, `DeserializationPolicy`],
+        n = e.create({
+            sendRequest: async e => ({
+                request: e,
+                headers: e.headers.clone(),
+                status: 500
+            })
+        }, {
+            log(e, t) {},
+            shouldLog(e) {
+                return !1
+            }
+        }).constructor.name;
+    return t.some(e => n.startsWith(e))
+}
+var xd, Sd = e((() => {
+        Gc(), So(), Cc(), cl(), To(), ul(), lu(), du(), yu(), Ol(), Hu(), Gu(), Zu(), ed(), id(), sd(), s(), xd = class {
+            constructor(e, t = {}) {
+                h(this, `factories`, void 0), h(this, `options`, void 0), this.factories = e, this.options = t
+            }
+            toServiceClientOptions() {
+                return {
+                    httpClient: this.options.httpClient,
+                    requestPolicyFactories: this.factories
+                }
+            }
+        }
+    })),
+    Cd = e((() => {})),
+    wd = t({
+        AccessPolicy: () => Ud,
+        AppendBlobAppendBlockExceptionHeaders: () => Tm,
+        AppendBlobAppendBlockFromUrlExceptionHeaders: () => Dm,
+        AppendBlobAppendBlockFromUrlHeaders: () => Em,
+        AppendBlobAppendBlockHeaders: () => wm,
+        AppendBlobCreateExceptionHeaders: () => Cm,
+        AppendBlobCreateHeaders: () => Sm,
+        AppendBlobSealExceptionHeaders: () => km,
+        AppendBlobSealHeaders: () => Om,
+        ArrowConfiguration: () => uf,
+        ArrowField: () => df,
+        BlobAbortCopyFromURLExceptionHeaders: () => qp,
+        BlobAbortCopyFromURLHeaders: () => Kp,
+        BlobAcquireLeaseExceptionHeaders: () => jp,
+        BlobAcquireLeaseHeaders: () => Ap,
+        BlobBreakLeaseExceptionHeaders: () => zp,
+        BlobBreakLeaseHeaders: () => Rp,
+        BlobChangeLeaseExceptionHeaders: () => Lp,
+        BlobChangeLeaseHeaders: () => Ip,
+        BlobCopyFromURLExceptionHeaders: () => Gp,
+        BlobCopyFromURLHeaders: () => Wp,
+        BlobCreateSnapshotExceptionHeaders: () => Vp,
+        BlobCreateSnapshotHeaders: () => Bp,
+        BlobDeleteExceptionHeaders: () => hp,
+        BlobDeleteHeaders: () => mp,
+        BlobDeleteImmutabilityPolicyExceptionHeaders: () => Tp,
+        BlobDeleteImmutabilityPolicyHeaders: () => wp,
+        BlobDownloadExceptionHeaders: () => dp,
+        BlobDownloadHeaders: () => up,
+        BlobFlatListSegment: () => Gd,
+        BlobGetAccountInfoExceptionHeaders: () => Zp,
+        BlobGetAccountInfoHeaders: () => Xp,
+        BlobGetPropertiesExceptionHeaders: () => pp,
+        BlobGetPropertiesHeaders: () => fp,
+        BlobGetTagsExceptionHeaders: () => tm,
+        BlobGetTagsHeaders: () => em,
+        BlobHierarchyListSegment: () => Xd,
+        BlobItemInternal: () => Kd,
+        BlobName: () => qd,
+        BlobPrefix: () => Zd,
+        BlobPropertiesInternal: () => Jd,
+        BlobQueryExceptionHeaders: () => $p,
+        BlobQueryHeaders: () => Qp,
+        BlobReleaseLeaseExceptionHeaders: () => Np,
+        BlobReleaseLeaseHeaders: () => Mp,
+        BlobRenewLeaseExceptionHeaders: () => Fp,
+        BlobRenewLeaseHeaders: () => Pp,
+        BlobServiceProperties: () => Td,
+        BlobServiceStatistics: () => jd,
+        BlobSetExpiryExceptionHeaders: () => yp,
+        BlobSetExpiryHeaders: () => vp,
+        BlobSetHttpHeadersExceptionHeaders: () => xp,
+        BlobSetHttpHeadersHeaders: () => bp,
+        BlobSetImmutabilityPolicyExceptionHeaders: () => Cp,
+        BlobSetImmutabilityPolicyHeaders: () => Sp,
+        BlobSetLegalHoldExceptionHeaders: () => Dp,
+        BlobSetLegalHoldHeaders: () => Ep,
+        BlobSetMetadataExceptionHeaders: () => kp,
+        BlobSetMetadataHeaders: () => Op,
+        BlobSetTagsExceptionHeaders: () => rm,
+        BlobSetTagsHeaders: () => nm,
+        BlobSetTierExceptionHeaders: () => Yp,
+        BlobSetTierHeaders: () => Jp,
+        BlobStartCopyFromURLExceptionHeaders: () => Up,
+        BlobStartCopyFromURLHeaders: () => Hp,
+        BlobTag: () => Vd,
+        BlobTags: () => Bd,
+        BlobUndeleteExceptionHeaders: () => _p,
+        BlobUndeleteHeaders: () => gp,
+        Block: () => ef,
+        BlockBlobCommitBlockListExceptionHeaders: () => zm,
+        BlockBlobCommitBlockListHeaders: () => Rm,
+        BlockBlobGetBlockListExceptionHeaders: () => Vm,
+        BlockBlobGetBlockListHeaders: () => Bm,
+        BlockBlobPutBlobFromUrlExceptionHeaders: () => Nm,
+        BlockBlobPutBlobFromUrlHeaders: () => Mm,
+        BlockBlobStageBlockExceptionHeaders: () => Fm,
+        BlockBlobStageBlockFromURLExceptionHeaders: () => Lm,
+        BlockBlobStageBlockFromURLHeaders: () => Im,
+        BlockBlobStageBlockHeaders: () => Pm,
+        BlockBlobUploadExceptionHeaders: () => jm,
+        BlockBlobUploadHeaders: () => Am,
+        BlockList: () => $d,
+        BlockLookupList: () => Qd,
+        ClearRange: () => rf,
+        ContainerAcquireLeaseExceptionHeaders: () => Yf,
+        ContainerAcquireLeaseHeaders: () => Jf,
+        ContainerBreakLeaseExceptionHeaders: () => tp,
+        ContainerBreakLeaseHeaders: () => ep,
+        ContainerChangeLeaseExceptionHeaders: () => rp,
+        ContainerChangeLeaseHeaders: () => np,
+        ContainerCreateExceptionHeaders: () => kf,
+        ContainerCreateHeaders: () => Of,
+        ContainerDeleteExceptionHeaders: () => Nf,
+        ContainerDeleteHeaders: () => Mf,
+        ContainerFilterBlobsExceptionHeaders: () => qf,
+        ContainerFilterBlobsHeaders: () => Kf,
+        ContainerGetAccessPolicyExceptionHeaders: () => Lf,
+        ContainerGetAccessPolicyHeaders: () => If,
+        ContainerGetAccountInfoExceptionHeaders: () => lp,
+        ContainerGetAccountInfoHeaders: () => cp,
+        ContainerGetPropertiesExceptionHeaders: () => jf,
+        ContainerGetPropertiesHeaders: () => Af,
+        ContainerItem: () => Pd,
+        ContainerListBlobFlatSegmentExceptionHeaders: () => ap,
+        ContainerListBlobFlatSegmentHeaders: () => ip,
+        ContainerListBlobHierarchySegmentExceptionHeaders: () => sp,
+        ContainerListBlobHierarchySegmentHeaders: () => op,
+        ContainerProperties: () => Fd,
+        ContainerReleaseLeaseExceptionHeaders: () => Zf,
+        ContainerReleaseLeaseHeaders: () => Xf,
+        ContainerRenameExceptionHeaders: () => Uf,
+        ContainerRenameHeaders: () => Hf,
+        ContainerRenewLeaseExceptionHeaders: () => $f,
+        ContainerRenewLeaseHeaders: () => Qf,
+        ContainerRestoreExceptionHeaders: () => Vf,
+        ContainerRestoreHeaders: () => Bf,
+        ContainerSetAccessPolicyExceptionHeaders: () => zf,
+        ContainerSetAccessPolicyHeaders: () => Rf,
+        ContainerSetMetadataExceptionHeaders: () => Ff,
+        ContainerSetMetadataHeaders: () => Pf,
+        ContainerSubmitBatchExceptionHeaders: () => Gf,
+        ContainerSubmitBatchHeaders: () => Wf,
+        CorsRule: () => kd,
+        DelimitedTextConfiguration: () => cf,
+        FilterBlobItem: () => zd,
+        FilterBlobSegment: () => Rd,
+        GeoReplication: () => Md,
+        JsonTextConfiguration: () => lf,
+        KeyInfo: () => Id,
+        ListBlobsFlatSegmentResponse: () => Wd,
+        ListBlobsHierarchySegmentResponse: () => Yd,
+        ListContainersSegmentResponse: () => Nd,
+        Logging: () => Ed,
+        Metrics: () => Od,
+        PageBlobClearPagesExceptionHeaders: () => lm,
+        PageBlobClearPagesHeaders: () => cm,
+        PageBlobCopyIncrementalExceptionHeaders: () => xm,
+        PageBlobCopyIncrementalHeaders: () => bm,
+        PageBlobCreateExceptionHeaders: () => am,
+        PageBlobCreateHeaders: () => im,
+        PageBlobGetPageRangesDiffExceptionHeaders: () => hm,
+        PageBlobGetPageRangesDiffHeaders: () => mm,
+        PageBlobGetPageRangesExceptionHeaders: () => pm,
+        PageBlobGetPageRangesHeaders: () => fm,
+        PageBlobResizeExceptionHeaders: () => _m,
+        PageBlobResizeHeaders: () => gm,
+        PageBlobUpdateSequenceNumberExceptionHeaders: () => ym,
+        PageBlobUpdateSequenceNumberHeaders: () => vm,
+        PageBlobUploadPagesExceptionHeaders: () => sm,
+        PageBlobUploadPagesFromURLExceptionHeaders: () => dm,
+        PageBlobUploadPagesFromURLHeaders: () => um,
+        PageBlobUploadPagesHeaders: () => om,
+        PageList: () => tf,
+        PageRange: () => nf,
+        QueryFormat: () => sf,
+        QueryRequest: () => af,
+        QuerySerialization: () => of,
+        RetentionPolicy: () => Dd,
+        ServiceFilterBlobsExceptionHeaders: () => Df,
+        ServiceFilterBlobsHeaders: () => Ef,
+        ServiceGetAccountInfoExceptionHeaders: () => Cf,
+        ServiceGetAccountInfoHeaders: () => Sf,
+        ServiceGetPropertiesExceptionHeaders: () => hf,
+        ServiceGetPropertiesHeaders: () => mf,
+        ServiceGetStatisticsExceptionHeaders: () => _f,
+        ServiceGetStatisticsHeaders: () => gf,
+        ServiceGetUserDelegationKeyExceptionHeaders: () => xf,
+        ServiceGetUserDelegationKeyHeaders: () => bf,
+        ServiceListContainersSegmentExceptionHeaders: () => yf,
+        ServiceListContainersSegmentHeaders: () => vf,
+        ServiceSetPropertiesExceptionHeaders: () => pf,
+        ServiceSetPropertiesHeaders: () => ff,
+        ServiceSubmitBatchExceptionHeaders: () => Tf,
+        ServiceSubmitBatchHeaders: () => wf,
+        SignedIdentifier: () => Hd,
+        StaticWebsite: () => Ad,
+        StorageError: () => R,
+        UserDelegationKey: () => Ld
+    }),
+    Td, Ed, Dd, Od, kd, Ad, R, jd, Md, Nd, Pd, Fd, Id, Ld, Rd, zd, Bd, Vd, Hd, Ud, Wd, Gd, Kd, qd, Jd, Yd, Xd, Zd, Qd, $d, ef, tf, nf, rf, af, of, sf, cf, lf, uf, df, ff, pf, mf, hf, gf, _f, vf, yf, bf, xf, Sf, Cf, wf, Tf, Ef, Df, Of, kf, Af, jf, Mf, Nf, Pf, Ff, If, Lf, Rf, zf, Bf, Vf, Hf, Uf, Wf, Gf, Kf, qf, Jf, Yf, Xf, Zf, Qf, $f, ep, tp, np, rp, ip, ap, op, sp, cp, lp, up, dp, fp, pp, mp, hp, gp, _p, vp, yp, bp, xp, Sp, Cp, wp, Tp, Ep, Dp, Op, kp, Ap, jp, Mp, Np, Pp, Fp, Ip, Lp, Rp, zp, Bp, Vp, Hp, Up, Wp, Gp, Kp, qp, Jp, Yp, Xp, Zp, Qp, $p, em, tm, nm, rm, im, am, om, sm, cm, lm, um, dm, fm, pm, mm, hm, gm, _m, vm, ym, bm, xm, Sm, Cm, wm, Tm, Em, Dm, Om, km, Am, jm, Mm, Nm, Pm, Fm, Im, Lm, Rm, zm, Bm, Vm, Hm = e((() => {
+        Td = {
+            serializedName: `BlobServiceProperties`,
+            xmlName: `StorageServiceProperties`,
+            type: {
+                name: `Composite`,
+                className: `BlobServiceProperties`,
+                modelProperties: {
+                    blobAnalyticsLogging: {
+                        serializedName: `Logging`,
+                        xmlName: `Logging`,
+                        type: {
+                            name: `Composite`,
+                            className: `Logging`
+                        }
+                    },
+                    hourMetrics: {
+                        serializedName: `HourMetrics`,
+                        xmlName: `HourMetrics`,
+                        type: {
+                            name: `Composite`,
+                            className: `Metrics`
+                        }
+                    },
+                    minuteMetrics: {
+                        serializedName: `MinuteMetrics`,
+                        xmlName: `MinuteMetrics`,
+                        type: {
+                            name: `Composite`,
+                            className: `Metrics`
+                        }
+                    },
+                    cors: {
+                        serializedName: `Cors`,
+                        xmlName: `Cors`,
+                        xmlIsWrapped: !0,
+                        xmlElementName: `CorsRule`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `CorsRule`
+                                }
+                            }
+                        }
+                    },
+                    defaultServiceVersion: {
+                        serializedName: `DefaultServiceVersion`,
+                        xmlName: `DefaultServiceVersion`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    deleteRetentionPolicy: {
+                        serializedName: `DeleteRetentionPolicy`,
+                        xmlName: `DeleteRetentionPolicy`,
+                        type: {
+                            name: `Composite`,
+                            className: `RetentionPolicy`
+                        }
+                    },
+                    staticWebsite: {
+                        serializedName: `StaticWebsite`,
+                        xmlName: `StaticWebsite`,
+                        type: {
+                            name: `Composite`,
+                            className: `StaticWebsite`
+                        }
+                    }
+                }
+            }
+        }, Ed = {
+            serializedName: `Logging`,
+            type: {
+                name: `Composite`,
+                className: `Logging`,
+                modelProperties: {
+                    version: {
+                        serializedName: `Version`,
+                        required: !0,
+                        xmlName: `Version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    deleteProperty: {
+                        serializedName: `Delete`,
+                        required: !0,
+                        xmlName: `Delete`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    read: {
+                        serializedName: `Read`,
+                        required: !0,
+                        xmlName: `Read`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    write: {
+                        serializedName: `Write`,
+                        required: !0,
+                        xmlName: `Write`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    retentionPolicy: {
+                        serializedName: `RetentionPolicy`,
+                        xmlName: `RetentionPolicy`,
+                        type: {
+                            name: `Composite`,
+                            className: `RetentionPolicy`
+                        }
+                    }
+                }
+            }
+        }, Dd = {
+            serializedName: `RetentionPolicy`,
+            type: {
+                name: `Composite`,
+                className: `RetentionPolicy`,
+                modelProperties: {
+                    enabled: {
+                        serializedName: `Enabled`,
+                        required: !0,
+                        xmlName: `Enabled`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    days: {
+                        constraints: {
+                            InclusiveMinimum: 1
+                        },
+                        serializedName: `Days`,
+                        xmlName: `Days`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, Od = {
+            serializedName: `Metrics`,
+            type: {
+                name: `Composite`,
+                className: `Metrics`,
+                modelProperties: {
+                    version: {
+                        serializedName: `Version`,
+                        xmlName: `Version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    enabled: {
+                        serializedName: `Enabled`,
+                        required: !0,
+                        xmlName: `Enabled`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    includeAPIs: {
+                        serializedName: `IncludeAPIs`,
+                        xmlName: `IncludeAPIs`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    retentionPolicy: {
+                        serializedName: `RetentionPolicy`,
+                        xmlName: `RetentionPolicy`,
+                        type: {
+                            name: `Composite`,
+                            className: `RetentionPolicy`
+                        }
+                    }
+                }
+            }
+        }, kd = {
+            serializedName: `CorsRule`,
+            type: {
+                name: `Composite`,
+                className: `CorsRule`,
+                modelProperties: {
+                    allowedOrigins: {
+                        serializedName: `AllowedOrigins`,
+                        required: !0,
+                        xmlName: `AllowedOrigins`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    allowedMethods: {
+                        serializedName: `AllowedMethods`,
+                        required: !0,
+                        xmlName: `AllowedMethods`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    allowedHeaders: {
+                        serializedName: `AllowedHeaders`,
+                        required: !0,
+                        xmlName: `AllowedHeaders`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    exposedHeaders: {
+                        serializedName: `ExposedHeaders`,
+                        required: !0,
+                        xmlName: `ExposedHeaders`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    maxAgeInSeconds: {
+                        constraints: {
+                            InclusiveMinimum: 0
+                        },
+                        serializedName: `MaxAgeInSeconds`,
+                        required: !0,
+                        xmlName: `MaxAgeInSeconds`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, Ad = {
+            serializedName: `StaticWebsite`,
+            type: {
+                name: `Composite`,
+                className: `StaticWebsite`,
+                modelProperties: {
+                    enabled: {
+                        serializedName: `Enabled`,
+                        required: !0,
+                        xmlName: `Enabled`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    indexDocument: {
+                        serializedName: `IndexDocument`,
+                        xmlName: `IndexDocument`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorDocument404Path: {
+                        serializedName: `ErrorDocument404Path`,
+                        xmlName: `ErrorDocument404Path`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    defaultIndexDocumentPath: {
+                        serializedName: `DefaultIndexDocumentPath`,
+                        xmlName: `DefaultIndexDocumentPath`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, R = {
+            serializedName: `StorageError`,
+            type: {
+                name: `Composite`,
+                className: `StorageError`,
+                modelProperties: {
+                    message: {
+                        serializedName: `Message`,
+                        xmlName: `Message`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceStatusCode: {
+                        serializedName: `CopySourceStatusCode`,
+                        xmlName: `CopySourceStatusCode`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    copySourceErrorCode: {
+                        serializedName: `CopySourceErrorCode`,
+                        xmlName: `CopySourceErrorCode`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceErrorMessage: {
+                        serializedName: `CopySourceErrorMessage`,
+                        xmlName: `CopySourceErrorMessage`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    code: {
+                        serializedName: `Code`,
+                        xmlName: `Code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    authenticationErrorDetail: {
+                        serializedName: `AuthenticationErrorDetail`,
+                        xmlName: `AuthenticationErrorDetail`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, jd = {
+            serializedName: `BlobServiceStatistics`,
+            xmlName: `StorageServiceStats`,
+            type: {
+                name: `Composite`,
+                className: `BlobServiceStatistics`,
+                modelProperties: {
+                    geoReplication: {
+                        serializedName: `GeoReplication`,
+                        xmlName: `GeoReplication`,
+                        type: {
+                            name: `Composite`,
+                            className: `GeoReplication`
+                        }
+                    }
+                }
+            }
+        }, Md = {
+            serializedName: `GeoReplication`,
+            type: {
+                name: `Composite`,
+                className: `GeoReplication`,
+                modelProperties: {
+                    status: {
+                        serializedName: `Status`,
+                        required: !0,
+                        xmlName: `Status`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`live`, `bootstrap`, `unavailable`]
+                        }
+                    },
+                    lastSyncOn: {
+                        serializedName: `LastSyncTime`,
+                        required: !0,
+                        xmlName: `LastSyncTime`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, Nd = {
+            serializedName: `ListContainersSegmentResponse`,
+            xmlName: `EnumerationResults`,
+            type: {
+                name: `Composite`,
+                className: `ListContainersSegmentResponse`,
+                modelProperties: {
+                    serviceEndpoint: {
+                        serializedName: `ServiceEndpoint`,
+                        required: !0,
+                        xmlName: `ServiceEndpoint`,
+                        xmlIsAttribute: !0,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    prefix: {
+                        serializedName: `Prefix`,
+                        xmlName: `Prefix`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    marker: {
+                        serializedName: `Marker`,
+                        xmlName: `Marker`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    maxPageSize: {
+                        serializedName: `MaxResults`,
+                        xmlName: `MaxResults`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    containerItems: {
+                        serializedName: `ContainerItems`,
+                        required: !0,
+                        xmlName: `Containers`,
+                        xmlIsWrapped: !0,
+                        xmlElementName: `Container`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `ContainerItem`
+                                }
+                            }
+                        }
+                    },
+                    continuationToken: {
+                        serializedName: `NextMarker`,
+                        xmlName: `NextMarker`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Pd = {
+            serializedName: `ContainerItem`,
+            xmlName: `Container`,
+            type: {
+                name: `Composite`,
+                className: `ContainerItem`,
+                modelProperties: {
+                    name: {
+                        serializedName: `Name`,
+                        required: !0,
+                        xmlName: `Name`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    deleted: {
+                        serializedName: `Deleted`,
+                        xmlName: `Deleted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    version: {
+                        serializedName: `Version`,
+                        xmlName: `Version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    properties: {
+                        serializedName: `Properties`,
+                        xmlName: `Properties`,
+                        type: {
+                            name: `Composite`,
+                            className: `ContainerProperties`
+                        }
+                    },
+                    metadata: {
+                        serializedName: `Metadata`,
+                        xmlName: `Metadata`,
+                        type: {
+                            name: `Dictionary`,
+                            value: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, Fd = {
+            serializedName: `ContainerProperties`,
+            type: {
+                name: `Composite`,
+                className: `ContainerProperties`,
+                modelProperties: {
+                    lastModified: {
+                        serializedName: `Last-Modified`,
+                        required: !0,
+                        xmlName: `Last-Modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    etag: {
+                        serializedName: `Etag`,
+                        required: !0,
+                        xmlName: `Etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    leaseStatus: {
+                        serializedName: `LeaseStatus`,
+                        xmlName: `LeaseStatus`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`locked`, `unlocked`]
+                        }
+                    },
+                    leaseState: {
+                        serializedName: `LeaseState`,
+                        xmlName: `LeaseState`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`available`, `leased`, `expired`, `breaking`, `broken`]
+                        }
+                    },
+                    leaseDuration: {
+                        serializedName: `LeaseDuration`,
+                        xmlName: `LeaseDuration`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`infinite`, `fixed`]
+                        }
+                    },
+                    publicAccess: {
+                        serializedName: `PublicAccess`,
+                        xmlName: `PublicAccess`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`container`, `blob`]
+                        }
+                    },
+                    hasImmutabilityPolicy: {
+                        serializedName: `HasImmutabilityPolicy`,
+                        xmlName: `HasImmutabilityPolicy`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    hasLegalHold: {
+                        serializedName: `HasLegalHold`,
+                        xmlName: `HasLegalHold`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    defaultEncryptionScope: {
+                        serializedName: `DefaultEncryptionScope`,
+                        xmlName: `DefaultEncryptionScope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    preventEncryptionScopeOverride: {
+                        serializedName: `DenyEncryptionScopeOverride`,
+                        xmlName: `DenyEncryptionScopeOverride`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    deletedOn: {
+                        serializedName: `DeletedTime`,
+                        xmlName: `DeletedTime`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    remainingRetentionDays: {
+                        serializedName: `RemainingRetentionDays`,
+                        xmlName: `RemainingRetentionDays`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    isImmutableStorageWithVersioningEnabled: {
+                        serializedName: `ImmutableStorageWithVersioningEnabled`,
+                        xmlName: `ImmutableStorageWithVersioningEnabled`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    }
+                }
+            }
+        }, Id = {
+            serializedName: `KeyInfo`,
+            type: {
+                name: `Composite`,
+                className: `KeyInfo`,
+                modelProperties: {
+                    startsOn: {
+                        serializedName: `Start`,
+                        required: !0,
+                        xmlName: `Start`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    expiresOn: {
+                        serializedName: `Expiry`,
+                        required: !0,
+                        xmlName: `Expiry`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Ld = {
+            serializedName: `UserDelegationKey`,
+            type: {
+                name: `Composite`,
+                className: `UserDelegationKey`,
+                modelProperties: {
+                    signedObjectId: {
+                        serializedName: `SignedOid`,
+                        required: !0,
+                        xmlName: `SignedOid`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    signedTenantId: {
+                        serializedName: `SignedTid`,
+                        required: !0,
+                        xmlName: `SignedTid`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    signedStartsOn: {
+                        serializedName: `SignedStart`,
+                        required: !0,
+                        xmlName: `SignedStart`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    signedExpiresOn: {
+                        serializedName: `SignedExpiry`,
+                        required: !0,
+                        xmlName: `SignedExpiry`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    signedService: {
+                        serializedName: `SignedService`,
+                        required: !0,
+                        xmlName: `SignedService`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    signedVersion: {
+                        serializedName: `SignedVersion`,
+                        required: !0,
+                        xmlName: `SignedVersion`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    value: {
+                        serializedName: `Value`,
+                        required: !0,
+                        xmlName: `Value`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Rd = {
+            serializedName: `FilterBlobSegment`,
+            xmlName: `EnumerationResults`,
+            type: {
+                name: `Composite`,
+                className: `FilterBlobSegment`,
+                modelProperties: {
+                    serviceEndpoint: {
+                        serializedName: `ServiceEndpoint`,
+                        required: !0,
+                        xmlName: `ServiceEndpoint`,
+                        xmlIsAttribute: !0,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    where: {
+                        serializedName: `Where`,
+                        required: !0,
+                        xmlName: `Where`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobs: {
+                        serializedName: `Blobs`,
+                        required: !0,
+                        xmlName: `Blobs`,
+                        xmlIsWrapped: !0,
+                        xmlElementName: `Blob`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `FilterBlobItem`
+                                }
+                            }
+                        }
+                    },
+                    continuationToken: {
+                        serializedName: `NextMarker`,
+                        xmlName: `NextMarker`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, zd = {
+            serializedName: `FilterBlobItem`,
+            xmlName: `Blob`,
+            type: {
+                name: `Composite`,
+                className: `FilterBlobItem`,
+                modelProperties: {
+                    name: {
+                        serializedName: `Name`,
+                        required: !0,
+                        xmlName: `Name`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    containerName: {
+                        serializedName: `ContainerName`,
+                        required: !0,
+                        xmlName: `ContainerName`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    tags: {
+                        serializedName: `Tags`,
+                        xmlName: `Tags`,
+                        type: {
+                            name: `Composite`,
+                            className: `BlobTags`
+                        }
+                    }
+                }
+            }
+        }, Bd = {
+            serializedName: `BlobTags`,
+            xmlName: `Tags`,
+            type: {
+                name: `Composite`,
+                className: `BlobTags`,
+                modelProperties: {
+                    blobTagSet: {
+                        serializedName: `BlobTagSet`,
+                        required: !0,
+                        xmlName: `TagSet`,
+                        xmlIsWrapped: !0,
+                        xmlElementName: `Tag`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `BlobTag`
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, Vd = {
+            serializedName: `BlobTag`,
+            xmlName: `Tag`,
+            type: {
+                name: `Composite`,
+                className: `BlobTag`,
+                modelProperties: {
+                    key: {
+                        serializedName: `Key`,
+                        required: !0,
+                        xmlName: `Key`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    value: {
+                        serializedName: `Value`,
+                        required: !0,
+                        xmlName: `Value`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Hd = {
+            serializedName: `SignedIdentifier`,
+            xmlName: `SignedIdentifier`,
+            type: {
+                name: `Composite`,
+                className: `SignedIdentifier`,
+                modelProperties: {
+                    id: {
+                        serializedName: `Id`,
+                        required: !0,
+                        xmlName: `Id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    accessPolicy: {
+                        serializedName: `AccessPolicy`,
+                        xmlName: `AccessPolicy`,
+                        type: {
+                            name: `Composite`,
+                            className: `AccessPolicy`
+                        }
+                    }
+                }
+            }
+        }, Ud = {
+            serializedName: `AccessPolicy`,
+            type: {
+                name: `Composite`,
+                className: `AccessPolicy`,
+                modelProperties: {
+                    startsOn: {
+                        serializedName: `Start`,
+                        xmlName: `Start`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    expiresOn: {
+                        serializedName: `Expiry`,
+                        xmlName: `Expiry`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    permissions: {
+                        serializedName: `Permission`,
+                        xmlName: `Permission`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Wd = {
+            serializedName: `ListBlobsFlatSegmentResponse`,
+            xmlName: `EnumerationResults`,
+            type: {
+                name: `Composite`,
+                className: `ListBlobsFlatSegmentResponse`,
+                modelProperties: {
+                    serviceEndpoint: {
+                        serializedName: `ServiceEndpoint`,
+                        required: !0,
+                        xmlName: `ServiceEndpoint`,
+                        xmlIsAttribute: !0,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    containerName: {
+                        serializedName: `ContainerName`,
+                        required: !0,
+                        xmlName: `ContainerName`,
+                        xmlIsAttribute: !0,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    prefix: {
+                        serializedName: `Prefix`,
+                        xmlName: `Prefix`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    marker: {
+                        serializedName: `Marker`,
+                        xmlName: `Marker`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    maxPageSize: {
+                        serializedName: `MaxResults`,
+                        xmlName: `MaxResults`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    segment: {
+                        serializedName: `Segment`,
+                        xmlName: `Blobs`,
+                        type: {
+                            name: `Composite`,
+                            className: `BlobFlatListSegment`
+                        }
+                    },
+                    continuationToken: {
+                        serializedName: `NextMarker`,
+                        xmlName: `NextMarker`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Gd = {
+            serializedName: `BlobFlatListSegment`,
+            xmlName: `Blobs`,
+            type: {
+                name: `Composite`,
+                className: `BlobFlatListSegment`,
+                modelProperties: {
+                    blobItems: {
+                        serializedName: `BlobItems`,
+                        required: !0,
+                        xmlName: `BlobItems`,
+                        xmlElementName: `Blob`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `BlobItemInternal`
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, Kd = {
+            serializedName: `BlobItemInternal`,
+            xmlName: `Blob`,
+            type: {
+                name: `Composite`,
+                className: `BlobItemInternal`,
+                modelProperties: {
+                    name: {
+                        serializedName: `Name`,
+                        xmlName: `Name`,
+                        type: {
+                            name: `Composite`,
+                            className: `BlobName`
+                        }
+                    },
+                    deleted: {
+                        serializedName: `Deleted`,
+                        required: !0,
+                        xmlName: `Deleted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    snapshot: {
+                        serializedName: `Snapshot`,
+                        required: !0,
+                        xmlName: `Snapshot`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `VersionId`,
+                        xmlName: `VersionId`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    isCurrentVersion: {
+                        serializedName: `IsCurrentVersion`,
+                        xmlName: `IsCurrentVersion`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    properties: {
+                        serializedName: `Properties`,
+                        xmlName: `Properties`,
+                        type: {
+                            name: `Composite`,
+                            className: `BlobPropertiesInternal`
+                        }
+                    },
+                    metadata: {
+                        serializedName: `Metadata`,
+                        xmlName: `Metadata`,
+                        type: {
+                            name: `Dictionary`,
+                            value: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    },
+                    blobTags: {
+                        serializedName: `BlobTags`,
+                        xmlName: `Tags`,
+                        type: {
+                            name: `Composite`,
+                            className: `BlobTags`
+                        }
+                    },
+                    objectReplicationMetadata: {
+                        serializedName: `ObjectReplicationMetadata`,
+                        xmlName: `OrMetadata`,
+                        type: {
+                            name: `Dictionary`,
+                            value: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    },
+                    hasVersionsOnly: {
+                        serializedName: `HasVersionsOnly`,
+                        xmlName: `HasVersionsOnly`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    }
+                }
+            }
+        }, qd = {
+            serializedName: `BlobName`,
+            type: {
+                name: `Composite`,
+                className: `BlobName`,
+                modelProperties: {
+                    encoded: {
+                        serializedName: `Encoded`,
+                        xmlName: `Encoded`,
+                        xmlIsAttribute: !0,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    content: {
+                        serializedName: `content`,
+                        xmlName: `content`,
+                        xmlIsMsText: !0,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Jd = {
+            serializedName: `BlobPropertiesInternal`,
+            xmlName: `Properties`,
+            type: {
+                name: `Composite`,
+                className: `BlobPropertiesInternal`,
+                modelProperties: {
+                    createdOn: {
+                        serializedName: `Creation-Time`,
+                        xmlName: `Creation-Time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `Last-Modified`,
+                        required: !0,
+                        xmlName: `Last-Modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    etag: {
+                        serializedName: `Etag`,
+                        required: !0,
+                        xmlName: `Etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentLength: {
+                        serializedName: `Content-Length`,
+                        xmlName: `Content-Length`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    contentType: {
+                        serializedName: `Content-Type`,
+                        xmlName: `Content-Type`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentEncoding: {
+                        serializedName: `Content-Encoding`,
+                        xmlName: `Content-Encoding`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentLanguage: {
+                        serializedName: `Content-Language`,
+                        xmlName: `Content-Language`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `Content-MD5`,
+                        xmlName: `Content-MD5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    contentDisposition: {
+                        serializedName: `Content-Disposition`,
+                        xmlName: `Content-Disposition`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    cacheControl: {
+                        serializedName: `Cache-Control`,
+                        xmlName: `Cache-Control`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobSequenceNumber: {
+                        serializedName: `x-ms-blob-sequence-number`,
+                        xmlName: `x-ms-blob-sequence-number`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    blobType: {
+                        serializedName: `BlobType`,
+                        xmlName: `BlobType`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`BlockBlob`, `PageBlob`, `AppendBlob`]
+                        }
+                    },
+                    leaseStatus: {
+                        serializedName: `LeaseStatus`,
+                        xmlName: `LeaseStatus`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`locked`, `unlocked`]
+                        }
+                    },
+                    leaseState: {
+                        serializedName: `LeaseState`,
+                        xmlName: `LeaseState`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`available`, `leased`, `expired`, `breaking`, `broken`]
+                        }
+                    },
+                    leaseDuration: {
+                        serializedName: `LeaseDuration`,
+                        xmlName: `LeaseDuration`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`infinite`, `fixed`]
+                        }
+                    },
+                    copyId: {
+                        serializedName: `CopyId`,
+                        xmlName: `CopyId`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyStatus: {
+                        serializedName: `CopyStatus`,
+                        xmlName: `CopyStatus`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`pending`, `success`, `aborted`, `failed`]
+                        }
+                    },
+                    copySource: {
+                        serializedName: `CopySource`,
+                        xmlName: `CopySource`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyProgress: {
+                        serializedName: `CopyProgress`,
+                        xmlName: `CopyProgress`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyCompletedOn: {
+                        serializedName: `CopyCompletionTime`,
+                        xmlName: `CopyCompletionTime`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    copyStatusDescription: {
+                        serializedName: `CopyStatusDescription`,
+                        xmlName: `CopyStatusDescription`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    serverEncrypted: {
+                        serializedName: `ServerEncrypted`,
+                        xmlName: `ServerEncrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    incrementalCopy: {
+                        serializedName: `IncrementalCopy`,
+                        xmlName: `IncrementalCopy`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    destinationSnapshot: {
+                        serializedName: `DestinationSnapshot`,
+                        xmlName: `DestinationSnapshot`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    deletedOn: {
+                        serializedName: `DeletedTime`,
+                        xmlName: `DeletedTime`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    remainingRetentionDays: {
+                        serializedName: `RemainingRetentionDays`,
+                        xmlName: `RemainingRetentionDays`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    accessTier: {
+                        serializedName: `AccessTier`,
+                        xmlName: `AccessTier`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`P4`, `P6`, `P10`, `P15`, `P20`, `P30`, `P40`, `P50`, `P60`, `P70`, `P80`, `Hot`, `Cool`, `Archive`, `Cold`]
+                        }
+                    },
+                    accessTierInferred: {
+                        serializedName: `AccessTierInferred`,
+                        xmlName: `AccessTierInferred`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    archiveStatus: {
+                        serializedName: `ArchiveStatus`,
+                        xmlName: `ArchiveStatus`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`rehydrate-pending-to-hot`, `rehydrate-pending-to-cool`, `rehydrate-pending-to-cold`]
+                        }
+                    },
+                    customerProvidedKeySha256: {
+                        serializedName: `CustomerProvidedKeySha256`,
+                        xmlName: `CustomerProvidedKeySha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `EncryptionScope`,
+                        xmlName: `EncryptionScope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    accessTierChangedOn: {
+                        serializedName: `AccessTierChangeTime`,
+                        xmlName: `AccessTierChangeTime`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    tagCount: {
+                        serializedName: `TagCount`,
+                        xmlName: `TagCount`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    expiresOn: {
+                        serializedName: `Expiry-Time`,
+                        xmlName: `Expiry-Time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isSealed: {
+                        serializedName: `Sealed`,
+                        xmlName: `Sealed`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    rehydratePriority: {
+                        serializedName: `RehydratePriority`,
+                        xmlName: `RehydratePriority`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`High`, `Standard`]
+                        }
+                    },
+                    lastAccessedOn: {
+                        serializedName: `LastAccessTime`,
+                        xmlName: `LastAccessTime`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    immutabilityPolicyExpiresOn: {
+                        serializedName: `ImmutabilityPolicyUntilDate`,
+                        xmlName: `ImmutabilityPolicyUntilDate`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    immutabilityPolicyMode: {
+                        serializedName: `ImmutabilityPolicyMode`,
+                        xmlName: `ImmutabilityPolicyMode`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`Mutable`, `Unlocked`, `Locked`]
+                        }
+                    },
+                    legalHold: {
+                        serializedName: `LegalHold`,
+                        xmlName: `LegalHold`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    }
+                }
+            }
+        }, Yd = {
+            serializedName: `ListBlobsHierarchySegmentResponse`,
+            xmlName: `EnumerationResults`,
+            type: {
+                name: `Composite`,
+                className: `ListBlobsHierarchySegmentResponse`,
+                modelProperties: {
+                    serviceEndpoint: {
+                        serializedName: `ServiceEndpoint`,
+                        required: !0,
+                        xmlName: `ServiceEndpoint`,
+                        xmlIsAttribute: !0,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    containerName: {
+                        serializedName: `ContainerName`,
+                        required: !0,
+                        xmlName: `ContainerName`,
+                        xmlIsAttribute: !0,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    prefix: {
+                        serializedName: `Prefix`,
+                        xmlName: `Prefix`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    marker: {
+                        serializedName: `Marker`,
+                        xmlName: `Marker`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    maxPageSize: {
+                        serializedName: `MaxResults`,
+                        xmlName: `MaxResults`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    delimiter: {
+                        serializedName: `Delimiter`,
+                        xmlName: `Delimiter`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    segment: {
+                        serializedName: `Segment`,
+                        xmlName: `Blobs`,
+                        type: {
+                            name: `Composite`,
+                            className: `BlobHierarchyListSegment`
+                        }
+                    },
+                    continuationToken: {
+                        serializedName: `NextMarker`,
+                        xmlName: `NextMarker`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Xd = {
+            serializedName: `BlobHierarchyListSegment`,
+            xmlName: `Blobs`,
+            type: {
+                name: `Composite`,
+                className: `BlobHierarchyListSegment`,
+                modelProperties: {
+                    blobPrefixes: {
+                        serializedName: `BlobPrefixes`,
+                        xmlName: `BlobPrefixes`,
+                        xmlElementName: `BlobPrefix`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `BlobPrefix`
+                                }
+                            }
+                        }
+                    },
+                    blobItems: {
+                        serializedName: `BlobItems`,
+                        required: !0,
+                        xmlName: `BlobItems`,
+                        xmlElementName: `Blob`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `BlobItemInternal`
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, Zd = {
+            serializedName: `BlobPrefix`,
+            type: {
+                name: `Composite`,
+                className: `BlobPrefix`,
+                modelProperties: {
+                    name: {
+                        serializedName: `Name`,
+                        xmlName: `Name`,
+                        type: {
+                            name: `Composite`,
+                            className: `BlobName`
+                        }
+                    }
+                }
+            }
+        }, Qd = {
+            serializedName: `BlockLookupList`,
+            xmlName: `BlockList`,
+            type: {
+                name: `Composite`,
+                className: `BlockLookupList`,
+                modelProperties: {
+                    committed: {
+                        serializedName: `Committed`,
+                        xmlName: `Committed`,
+                        xmlElementName: `Committed`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    },
+                    uncommitted: {
+                        serializedName: `Uncommitted`,
+                        xmlName: `Uncommitted`,
+                        xmlElementName: `Uncommitted`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    },
+                    latest: {
+                        serializedName: `Latest`,
+                        xmlName: `Latest`,
+                        xmlElementName: `Latest`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, $d = {
+            serializedName: `BlockList`,
+            type: {
+                name: `Composite`,
+                className: `BlockList`,
+                modelProperties: {
+                    committedBlocks: {
+                        serializedName: `CommittedBlocks`,
+                        xmlName: `CommittedBlocks`,
+                        xmlIsWrapped: !0,
+                        xmlElementName: `Block`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `Block`
+                                }
+                            }
+                        }
+                    },
+                    uncommittedBlocks: {
+                        serializedName: `UncommittedBlocks`,
+                        xmlName: `UncommittedBlocks`,
+                        xmlIsWrapped: !0,
+                        xmlElementName: `Block`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `Block`
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, ef = {
+            serializedName: `Block`,
+            type: {
+                name: `Composite`,
+                className: `Block`,
+                modelProperties: {
+                    name: {
+                        serializedName: `Name`,
+                        required: !0,
+                        xmlName: `Name`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    size: {
+                        serializedName: `Size`,
+                        required: !0,
+                        xmlName: `Size`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, tf = {
+            serializedName: `PageList`,
+            type: {
+                name: `Composite`,
+                className: `PageList`,
+                modelProperties: {
+                    pageRange: {
+                        serializedName: `PageRange`,
+                        xmlName: `PageRange`,
+                        xmlElementName: `PageRange`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `PageRange`
+                                }
+                            }
+                        }
+                    },
+                    clearRange: {
+                        serializedName: `ClearRange`,
+                        xmlName: `ClearRange`,
+                        xmlElementName: `ClearRange`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `ClearRange`
+                                }
+                            }
+                        }
+                    },
+                    continuationToken: {
+                        serializedName: `NextMarker`,
+                        xmlName: `NextMarker`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, nf = {
+            serializedName: `PageRange`,
+            xmlName: `PageRange`,
+            type: {
+                name: `Composite`,
+                className: `PageRange`,
+                modelProperties: {
+                    start: {
+                        serializedName: `Start`,
+                        required: !0,
+                        xmlName: `Start`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    end: {
+                        serializedName: `End`,
+                        required: !0,
+                        xmlName: `End`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, rf = {
+            serializedName: `ClearRange`,
+            xmlName: `ClearRange`,
+            type: {
+                name: `Composite`,
+                className: `ClearRange`,
+                modelProperties: {
+                    start: {
+                        serializedName: `Start`,
+                        required: !0,
+                        xmlName: `Start`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    end: {
+                        serializedName: `End`,
+                        required: !0,
+                        xmlName: `End`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, af = {
+            serializedName: `QueryRequest`,
+            xmlName: `QueryRequest`,
+            type: {
+                name: `Composite`,
+                className: `QueryRequest`,
+                modelProperties: {
+                    queryType: {
+                        serializedName: `QueryType`,
+                        required: !0,
+                        xmlName: `QueryType`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    expression: {
+                        serializedName: `Expression`,
+                        required: !0,
+                        xmlName: `Expression`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    inputSerialization: {
+                        serializedName: `InputSerialization`,
+                        xmlName: `InputSerialization`,
+                        type: {
+                            name: `Composite`,
+                            className: `QuerySerialization`
+                        }
+                    },
+                    outputSerialization: {
+                        serializedName: `OutputSerialization`,
+                        xmlName: `OutputSerialization`,
+                        type: {
+                            name: `Composite`,
+                            className: `QuerySerialization`
+                        }
+                    }
+                }
+            }
+        }, of = {
+            serializedName: `QuerySerialization`,
+            type: {
+                name: `Composite`,
+                className: `QuerySerialization`,
+                modelProperties: {
+                    format: {
+                        serializedName: `Format`,
+                        xmlName: `Format`,
+                        type: {
+                            name: `Composite`,
+                            className: `QueryFormat`
+                        }
+                    }
+                }
+            }
+        }, sf = {
+            serializedName: `QueryFormat`,
+            type: {
+                name: `Composite`,
+                className: `QueryFormat`,
+                modelProperties: {
+                    type: {
+                        serializedName: `Type`,
+                        required: !0,
+                        xmlName: `Type`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`delimited`, `json`, `arrow`, `parquet`]
+                        }
+                    },
+                    delimitedTextConfiguration: {
+                        serializedName: `DelimitedTextConfiguration`,
+                        xmlName: `DelimitedTextConfiguration`,
+                        type: {
+                            name: `Composite`,
+                            className: `DelimitedTextConfiguration`
+                        }
+                    },
+                    jsonTextConfiguration: {
+                        serializedName: `JsonTextConfiguration`,
+                        xmlName: `JsonTextConfiguration`,
+                        type: {
+                            name: `Composite`,
+                            className: `JsonTextConfiguration`
+                        }
+                    },
+                    arrowConfiguration: {
+                        serializedName: `ArrowConfiguration`,
+                        xmlName: `ArrowConfiguration`,
+                        type: {
+                            name: `Composite`,
+                            className: `ArrowConfiguration`
+                        }
+                    },
+                    parquetTextConfiguration: {
+                        serializedName: `ParquetTextConfiguration`,
+                        xmlName: `ParquetTextConfiguration`,
+                        type: {
+                            name: `Dictionary`,
+                            value: {
+                                type: {
+                                    name: `any`
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, cf = {
+            serializedName: `DelimitedTextConfiguration`,
+            xmlName: `DelimitedTextConfiguration`,
+            type: {
+                name: `Composite`,
+                className: `DelimitedTextConfiguration`,
+                modelProperties: {
+                    columnSeparator: {
+                        serializedName: `ColumnSeparator`,
+                        xmlName: `ColumnSeparator`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    fieldQuote: {
+                        serializedName: `FieldQuote`,
+                        xmlName: `FieldQuote`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    recordSeparator: {
+                        serializedName: `RecordSeparator`,
+                        xmlName: `RecordSeparator`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    escapeChar: {
+                        serializedName: `EscapeChar`,
+                        xmlName: `EscapeChar`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    headersPresent: {
+                        serializedName: `HeadersPresent`,
+                        xmlName: `HasHeaders`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    }
+                }
+            }
+        }, lf = {
+            serializedName: `JsonTextConfiguration`,
+            xmlName: `JsonTextConfiguration`,
+            type: {
+                name: `Composite`,
+                className: `JsonTextConfiguration`,
+                modelProperties: {
+                    recordSeparator: {
+                        serializedName: `RecordSeparator`,
+                        xmlName: `RecordSeparator`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, uf = {
+            serializedName: `ArrowConfiguration`,
+            xmlName: `ArrowConfiguration`,
+            type: {
+                name: `Composite`,
+                className: `ArrowConfiguration`,
+                modelProperties: {
+                    schema: {
+                        serializedName: `Schema`,
+                        required: !0,
+                        xmlName: `Schema`,
+                        xmlIsWrapped: !0,
+                        xmlElementName: `Field`,
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `ArrowField`
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, df = {
+            serializedName: `ArrowField`,
+            xmlName: `Field`,
+            type: {
+                name: `Composite`,
+                className: `ArrowField`,
+                modelProperties: {
+                    type: {
+                        serializedName: `Type`,
+                        required: !0,
+                        xmlName: `Type`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    name: {
+                        serializedName: `Name`,
+                        xmlName: `Name`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    precision: {
+                        serializedName: `Precision`,
+                        xmlName: `Precision`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    scale: {
+                        serializedName: `Scale`,
+                        xmlName: `Scale`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, ff = {
+            serializedName: `Service_setPropertiesHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceSetPropertiesHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, pf = {
+            serializedName: `Service_setPropertiesExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceSetPropertiesExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, mf = {
+            serializedName: `Service_getPropertiesHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceGetPropertiesHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, hf = {
+            serializedName: `Service_getPropertiesExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceGetPropertiesExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, gf = {
+            serializedName: `Service_getStatisticsHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceGetStatisticsHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, _f = {
+            serializedName: `Service_getStatisticsExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceGetStatisticsExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, vf = {
+            serializedName: `Service_listContainersSegmentHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceListContainersSegmentHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, yf = {
+            serializedName: `Service_listContainersSegmentExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceListContainersSegmentExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, bf = {
+            serializedName: `Service_getUserDelegationKeyHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceGetUserDelegationKeyHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, xf = {
+            serializedName: `Service_getUserDelegationKeyExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceGetUserDelegationKeyExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Sf = {
+            serializedName: `Service_getAccountInfoHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceGetAccountInfoHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    skuName: {
+                        serializedName: `x-ms-sku-name`,
+                        xmlName: `x-ms-sku-name`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`Standard_LRS`, `Standard_GRS`, `Standard_RAGRS`, `Standard_ZRS`, `Premium_LRS`]
+                        }
+                    },
+                    accountKind: {
+                        serializedName: `x-ms-account-kind`,
+                        xmlName: `x-ms-account-kind`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`Storage`, `BlobStorage`, `StorageV2`, `FileStorage`, `BlockBlobStorage`]
+                        }
+                    },
+                    isHierarchicalNamespaceEnabled: {
+                        serializedName: `x-ms-is-hns-enabled`,
+                        xmlName: `x-ms-is-hns-enabled`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Cf = {
+            serializedName: `Service_getAccountInfoExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceGetAccountInfoExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, wf = {
+            serializedName: `Service_submitBatchHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceSubmitBatchHeaders`,
+                modelProperties: {
+                    contentType: {
+                        serializedName: `content-type`,
+                        xmlName: `content-type`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Tf = {
+            serializedName: `Service_submitBatchExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceSubmitBatchExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Ef = {
+            serializedName: `Service_filterBlobsHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceFilterBlobsHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Df = {
+            serializedName: `Service_filterBlobsExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ServiceFilterBlobsExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Of = {
+            serializedName: `Container_createHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerCreateHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, kf = {
+            serializedName: `Container_createExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerCreateExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Af = {
+            serializedName: `Container_getPropertiesHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerGetPropertiesHeaders`,
+                modelProperties: {
+                    metadata: {
+                        serializedName: `x-ms-meta`,
+                        headerCollectionPrefix: `x-ms-meta-`,
+                        xmlName: `x-ms-meta`,
+                        type: {
+                            name: `Dictionary`,
+                            value: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    },
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    leaseDuration: {
+                        serializedName: `x-ms-lease-duration`,
+                        xmlName: `x-ms-lease-duration`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`infinite`, `fixed`]
+                        }
+                    },
+                    leaseState: {
+                        serializedName: `x-ms-lease-state`,
+                        xmlName: `x-ms-lease-state`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`available`, `leased`, `expired`, `breaking`, `broken`]
+                        }
+                    },
+                    leaseStatus: {
+                        serializedName: `x-ms-lease-status`,
+                        xmlName: `x-ms-lease-status`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`locked`, `unlocked`]
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    blobPublicAccess: {
+                        serializedName: `x-ms-blob-public-access`,
+                        xmlName: `x-ms-blob-public-access`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`container`, `blob`]
+                        }
+                    },
+                    hasImmutabilityPolicy: {
+                        serializedName: `x-ms-has-immutability-policy`,
+                        xmlName: `x-ms-has-immutability-policy`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    hasLegalHold: {
+                        serializedName: `x-ms-has-legal-hold`,
+                        xmlName: `x-ms-has-legal-hold`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    defaultEncryptionScope: {
+                        serializedName: `x-ms-default-encryption-scope`,
+                        xmlName: `x-ms-default-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    denyEncryptionScopeOverride: {
+                        serializedName: `x-ms-deny-encryption-scope-override`,
+                        xmlName: `x-ms-deny-encryption-scope-override`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    isImmutableStorageWithVersioningEnabled: {
+                        serializedName: `x-ms-immutable-storage-with-versioning-enabled`,
+                        xmlName: `x-ms-immutable-storage-with-versioning-enabled`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, jf = {
+            serializedName: `Container_getPropertiesExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerGetPropertiesExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Mf = {
+            serializedName: `Container_deleteHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerDeleteHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Nf = {
+            serializedName: `Container_deleteExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerDeleteExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Pf = {
+            serializedName: `Container_setMetadataHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerSetMetadataHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Ff = {
+            serializedName: `Container_setMetadataExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerSetMetadataExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, If = {
+            serializedName: `Container_getAccessPolicyHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerGetAccessPolicyHeaders`,
+                modelProperties: {
+                    blobPublicAccess: {
+                        serializedName: `x-ms-blob-public-access`,
+                        xmlName: `x-ms-blob-public-access`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`container`, `blob`]
+                        }
+                    },
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Lf = {
+            serializedName: `Container_getAccessPolicyExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerGetAccessPolicyExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Rf = {
+            serializedName: `Container_setAccessPolicyHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerSetAccessPolicyHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, zf = {
+            serializedName: `Container_setAccessPolicyExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerSetAccessPolicyExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Bf = {
+            serializedName: `Container_restoreHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerRestoreHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Vf = {
+            serializedName: `Container_restoreExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerRestoreExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Hf = {
+            serializedName: `Container_renameHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerRenameHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Uf = {
+            serializedName: `Container_renameExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerRenameExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Wf = {
+            serializedName: `Container_submitBatchHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerSubmitBatchHeaders`,
+                modelProperties: {
+                    contentType: {
+                        serializedName: `content-type`,
+                        xmlName: `content-type`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Gf = {
+            serializedName: `Container_submitBatchExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerSubmitBatchExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Kf = {
+            serializedName: `Container_filterBlobsHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerFilterBlobsHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, qf = {
+            serializedName: `Container_filterBlobsExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerFilterBlobsExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Jf = {
+            serializedName: `Container_acquireLeaseHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerAcquireLeaseHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    leaseId: {
+                        serializedName: `x-ms-lease-id`,
+                        xmlName: `x-ms-lease-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, Yf = {
+            serializedName: `Container_acquireLeaseExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerAcquireLeaseExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Xf = {
+            serializedName: `Container_releaseLeaseHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerReleaseLeaseHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, Zf = {
+            serializedName: `Container_releaseLeaseExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerReleaseLeaseExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Qf = {
+            serializedName: `Container_renewLeaseHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerRenewLeaseHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    leaseId: {
+                        serializedName: `x-ms-lease-id`,
+                        xmlName: `x-ms-lease-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, $f = {
+            serializedName: `Container_renewLeaseExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerRenewLeaseExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, ep = {
+            serializedName: `Container_breakLeaseHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerBreakLeaseHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    leaseTime: {
+                        serializedName: `x-ms-lease-time`,
+                        xmlName: `x-ms-lease-time`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, tp = {
+            serializedName: `Container_breakLeaseExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerBreakLeaseExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, np = {
+            serializedName: `Container_changeLeaseHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerChangeLeaseHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    leaseId: {
+                        serializedName: `x-ms-lease-id`,
+                        xmlName: `x-ms-lease-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, rp = {
+            serializedName: `Container_changeLeaseExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerChangeLeaseExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, ip = {
+            serializedName: `Container_listBlobFlatSegmentHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerListBlobFlatSegmentHeaders`,
+                modelProperties: {
+                    contentType: {
+                        serializedName: `content-type`,
+                        xmlName: `content-type`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, ap = {
+            serializedName: `Container_listBlobFlatSegmentExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerListBlobFlatSegmentExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, op = {
+            serializedName: `Container_listBlobHierarchySegmentHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerListBlobHierarchySegmentHeaders`,
+                modelProperties: {
+                    contentType: {
+                        serializedName: `content-type`,
+                        xmlName: `content-type`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, sp = {
+            serializedName: `Container_listBlobHierarchySegmentExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerListBlobHierarchySegmentExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, cp = {
+            serializedName: `Container_getAccountInfoHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerGetAccountInfoHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    skuName: {
+                        serializedName: `x-ms-sku-name`,
+                        xmlName: `x-ms-sku-name`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`Standard_LRS`, `Standard_GRS`, `Standard_RAGRS`, `Standard_ZRS`, `Premium_LRS`]
+                        }
+                    },
+                    accountKind: {
+                        serializedName: `x-ms-account-kind`,
+                        xmlName: `x-ms-account-kind`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`Storage`, `BlobStorage`, `StorageV2`, `FileStorage`, `BlockBlobStorage`]
+                        }
+                    },
+                    isHierarchicalNamespaceEnabled: {
+                        serializedName: `x-ms-is-hns-enabled`,
+                        xmlName: `x-ms-is-hns-enabled`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    }
+                }
+            }
+        }, lp = {
+            serializedName: `Container_getAccountInfoExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `ContainerGetAccountInfoExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, up = {
+            serializedName: `Blob_downloadHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobDownloadHeaders`,
+                modelProperties: {
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    createdOn: {
+                        serializedName: `x-ms-creation-time`,
+                        xmlName: `x-ms-creation-time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    metadata: {
+                        serializedName: `x-ms-meta`,
+                        headerCollectionPrefix: `x-ms-meta-`,
+                        xmlName: `x-ms-meta`,
+                        type: {
+                            name: `Dictionary`,
+                            value: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    },
+                    objectReplicationPolicyId: {
+                        serializedName: `x-ms-or-policy-id`,
+                        xmlName: `x-ms-or-policy-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    objectReplicationRules: {
+                        serializedName: `x-ms-or`,
+                        headerCollectionPrefix: `x-ms-or-`,
+                        xmlName: `x-ms-or`,
+                        type: {
+                            name: `Dictionary`,
+                            value: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    },
+                    contentLength: {
+                        serializedName: `content-length`,
+                        xmlName: `content-length`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    contentType: {
+                        serializedName: `content-type`,
+                        xmlName: `content-type`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentRange: {
+                        serializedName: `content-range`,
+                        xmlName: `content-range`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    contentEncoding: {
+                        serializedName: `content-encoding`,
+                        xmlName: `content-encoding`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    cacheControl: {
+                        serializedName: `cache-control`,
+                        xmlName: `cache-control`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentDisposition: {
+                        serializedName: `content-disposition`,
+                        xmlName: `content-disposition`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentLanguage: {
+                        serializedName: `content-language`,
+                        xmlName: `content-language`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobSequenceNumber: {
+                        serializedName: `x-ms-blob-sequence-number`,
+                        xmlName: `x-ms-blob-sequence-number`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    blobType: {
+                        serializedName: `x-ms-blob-type`,
+                        xmlName: `x-ms-blob-type`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`BlockBlob`, `PageBlob`, `AppendBlob`]
+                        }
+                    },
+                    copyCompletedOn: {
+                        serializedName: `x-ms-copy-completion-time`,
+                        xmlName: `x-ms-copy-completion-time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    copyStatusDescription: {
+                        serializedName: `x-ms-copy-status-description`,
+                        xmlName: `x-ms-copy-status-description`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyId: {
+                        serializedName: `x-ms-copy-id`,
+                        xmlName: `x-ms-copy-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyProgress: {
+                        serializedName: `x-ms-copy-progress`,
+                        xmlName: `x-ms-copy-progress`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySource: {
+                        serializedName: `x-ms-copy-source`,
+                        xmlName: `x-ms-copy-source`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyStatus: {
+                        serializedName: `x-ms-copy-status`,
+                        xmlName: `x-ms-copy-status`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`pending`, `success`, `aborted`, `failed`]
+                        }
+                    },
+                    leaseDuration: {
+                        serializedName: `x-ms-lease-duration`,
+                        xmlName: `x-ms-lease-duration`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`infinite`, `fixed`]
+                        }
+                    },
+                    leaseState: {
+                        serializedName: `x-ms-lease-state`,
+                        xmlName: `x-ms-lease-state`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`available`, `leased`, `expired`, `breaking`, `broken`]
+                        }
+                    },
+                    leaseStatus: {
+                        serializedName: `x-ms-lease-status`,
+                        xmlName: `x-ms-lease-status`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`locked`, `unlocked`]
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    isCurrentVersion: {
+                        serializedName: `x-ms-is-current-version`,
+                        xmlName: `x-ms-is-current-version`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    acceptRanges: {
+                        serializedName: `accept-ranges`,
+                        xmlName: `accept-ranges`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    blobCommittedBlockCount: {
+                        serializedName: `x-ms-blob-committed-block-count`,
+                        xmlName: `x-ms-blob-committed-block-count`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-server-encrypted`,
+                        xmlName: `x-ms-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobContentMD5: {
+                        serializedName: `x-ms-blob-content-md5`,
+                        xmlName: `x-ms-blob-content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    tagCount: {
+                        serializedName: `x-ms-tag-count`,
+                        xmlName: `x-ms-tag-count`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    isSealed: {
+                        serializedName: `x-ms-blob-sealed`,
+                        xmlName: `x-ms-blob-sealed`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    lastAccessed: {
+                        serializedName: `x-ms-last-access-time`,
+                        xmlName: `x-ms-last-access-time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    immutabilityPolicyExpiresOn: {
+                        serializedName: `x-ms-immutability-policy-until-date`,
+                        xmlName: `x-ms-immutability-policy-until-date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    immutabilityPolicyMode: {
+                        serializedName: `x-ms-immutability-policy-mode`,
+                        xmlName: `x-ms-immutability-policy-mode`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`Mutable`, `Unlocked`, `Locked`]
+                        }
+                    },
+                    legalHold: {
+                        serializedName: `x-ms-legal-hold`,
+                        xmlName: `x-ms-legal-hold`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    }
+                }
+            }
+        }, dp = {
+            serializedName: `Blob_downloadExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobDownloadExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, fp = {
+            serializedName: `Blob_getPropertiesHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobGetPropertiesHeaders`,
+                modelProperties: {
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    createdOn: {
+                        serializedName: `x-ms-creation-time`,
+                        xmlName: `x-ms-creation-time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    metadata: {
+                        serializedName: `x-ms-meta`,
+                        headerCollectionPrefix: `x-ms-meta-`,
+                        xmlName: `x-ms-meta`,
+                        type: {
+                            name: `Dictionary`,
+                            value: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    },
+                    objectReplicationPolicyId: {
+                        serializedName: `x-ms-or-policy-id`,
+                        xmlName: `x-ms-or-policy-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    objectReplicationRules: {
+                        serializedName: `x-ms-or`,
+                        headerCollectionPrefix: `x-ms-or-`,
+                        xmlName: `x-ms-or`,
+                        type: {
+                            name: `Dictionary`,
+                            value: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    },
+                    blobType: {
+                        serializedName: `x-ms-blob-type`,
+                        xmlName: `x-ms-blob-type`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`BlockBlob`, `PageBlob`, `AppendBlob`]
+                        }
+                    },
+                    copyCompletedOn: {
+                        serializedName: `x-ms-copy-completion-time`,
+                        xmlName: `x-ms-copy-completion-time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    copyStatusDescription: {
+                        serializedName: `x-ms-copy-status-description`,
+                        xmlName: `x-ms-copy-status-description`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyId: {
+                        serializedName: `x-ms-copy-id`,
+                        xmlName: `x-ms-copy-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyProgress: {
+                        serializedName: `x-ms-copy-progress`,
+                        xmlName: `x-ms-copy-progress`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySource: {
+                        serializedName: `x-ms-copy-source`,
+                        xmlName: `x-ms-copy-source`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyStatus: {
+                        serializedName: `x-ms-copy-status`,
+                        xmlName: `x-ms-copy-status`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`pending`, `success`, `aborted`, `failed`]
+                        }
+                    },
+                    isIncrementalCopy: {
+                        serializedName: `x-ms-incremental-copy`,
+                        xmlName: `x-ms-incremental-copy`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    destinationSnapshot: {
+                        serializedName: `x-ms-copy-destination-snapshot`,
+                        xmlName: `x-ms-copy-destination-snapshot`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    leaseDuration: {
+                        serializedName: `x-ms-lease-duration`,
+                        xmlName: `x-ms-lease-duration`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`infinite`, `fixed`]
+                        }
+                    },
+                    leaseState: {
+                        serializedName: `x-ms-lease-state`,
+                        xmlName: `x-ms-lease-state`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`available`, `leased`, `expired`, `breaking`, `broken`]
+                        }
+                    },
+                    leaseStatus: {
+                        serializedName: `x-ms-lease-status`,
+                        xmlName: `x-ms-lease-status`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`locked`, `unlocked`]
+                        }
+                    },
+                    contentLength: {
+                        serializedName: `content-length`,
+                        xmlName: `content-length`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    contentType: {
+                        serializedName: `content-type`,
+                        xmlName: `content-type`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    contentEncoding: {
+                        serializedName: `content-encoding`,
+                        xmlName: `content-encoding`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentDisposition: {
+                        serializedName: `content-disposition`,
+                        xmlName: `content-disposition`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentLanguage: {
+                        serializedName: `content-language`,
+                        xmlName: `content-language`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    cacheControl: {
+                        serializedName: `cache-control`,
+                        xmlName: `cache-control`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobSequenceNumber: {
+                        serializedName: `x-ms-blob-sequence-number`,
+                        xmlName: `x-ms-blob-sequence-number`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    acceptRanges: {
+                        serializedName: `accept-ranges`,
+                        xmlName: `accept-ranges`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobCommittedBlockCount: {
+                        serializedName: `x-ms-blob-committed-block-count`,
+                        xmlName: `x-ms-blob-committed-block-count`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-server-encrypted`,
+                        xmlName: `x-ms-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    accessTier: {
+                        serializedName: `x-ms-access-tier`,
+                        xmlName: `x-ms-access-tier`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    accessTierInferred: {
+                        serializedName: `x-ms-access-tier-inferred`,
+                        xmlName: `x-ms-access-tier-inferred`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    archiveStatus: {
+                        serializedName: `x-ms-archive-status`,
+                        xmlName: `x-ms-archive-status`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    accessTierChangedOn: {
+                        serializedName: `x-ms-access-tier-change-time`,
+                        xmlName: `x-ms-access-tier-change-time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    isCurrentVersion: {
+                        serializedName: `x-ms-is-current-version`,
+                        xmlName: `x-ms-is-current-version`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    tagCount: {
+                        serializedName: `x-ms-tag-count`,
+                        xmlName: `x-ms-tag-count`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    expiresOn: {
+                        serializedName: `x-ms-expiry-time`,
+                        xmlName: `x-ms-expiry-time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isSealed: {
+                        serializedName: `x-ms-blob-sealed`,
+                        xmlName: `x-ms-blob-sealed`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    rehydratePriority: {
+                        serializedName: `x-ms-rehydrate-priority`,
+                        xmlName: `x-ms-rehydrate-priority`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`High`, `Standard`]
+                        }
+                    },
+                    lastAccessed: {
+                        serializedName: `x-ms-last-access-time`,
+                        xmlName: `x-ms-last-access-time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    immutabilityPolicyExpiresOn: {
+                        serializedName: `x-ms-immutability-policy-until-date`,
+                        xmlName: `x-ms-immutability-policy-until-date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    immutabilityPolicyMode: {
+                        serializedName: `x-ms-immutability-policy-mode`,
+                        xmlName: `x-ms-immutability-policy-mode`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`Mutable`, `Unlocked`, `Locked`]
+                        }
+                    },
+                    legalHold: {
+                        serializedName: `x-ms-legal-hold`,
+                        xmlName: `x-ms-legal-hold`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, pp = {
+            serializedName: `Blob_getPropertiesExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobGetPropertiesExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, mp = {
+            serializedName: `Blob_deleteHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobDeleteHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, hp = {
+            serializedName: `Blob_deleteExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobDeleteExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, gp = {
+            serializedName: `Blob_undeleteHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobUndeleteHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, _p = {
+            serializedName: `Blob_undeleteExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobUndeleteExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, vp = {
+            serializedName: `Blob_setExpiryHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetExpiryHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, yp = {
+            serializedName: `Blob_setExpiryExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetExpiryExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, bp = {
+            serializedName: `Blob_setHttpHeadersHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetHttpHeadersHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    blobSequenceNumber: {
+                        serializedName: `x-ms-blob-sequence-number`,
+                        xmlName: `x-ms-blob-sequence-number`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, xp = {
+            serializedName: `Blob_setHttpHeadersExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetHttpHeadersExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Sp = {
+            serializedName: `Blob_setImmutabilityPolicyHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetImmutabilityPolicyHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    immutabilityPolicyExpiry: {
+                        serializedName: `x-ms-immutability-policy-until-date`,
+                        xmlName: `x-ms-immutability-policy-until-date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    immutabilityPolicyMode: {
+                        serializedName: `x-ms-immutability-policy-mode`,
+                        xmlName: `x-ms-immutability-policy-mode`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`Mutable`, `Unlocked`, `Locked`]
+                        }
+                    }
+                }
+            }
+        }, Cp = {
+            serializedName: `Blob_setImmutabilityPolicyExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetImmutabilityPolicyExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, wp = {
+            serializedName: `Blob_deleteImmutabilityPolicyHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobDeleteImmutabilityPolicyHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, Tp = {
+            serializedName: `Blob_deleteImmutabilityPolicyExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobDeleteImmutabilityPolicyExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Ep = {
+            serializedName: `Blob_setLegalHoldHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetLegalHoldHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    legalHold: {
+                        serializedName: `x-ms-legal-hold`,
+                        xmlName: `x-ms-legal-hold`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    }
+                }
+            }
+        }, Dp = {
+            serializedName: `Blob_setLegalHoldExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetLegalHoldExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Op = {
+            serializedName: `Blob_setMetadataHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetMetadataHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, kp = {
+            serializedName: `Blob_setMetadataExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetMetadataExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Ap = {
+            serializedName: `Blob_acquireLeaseHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobAcquireLeaseHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    leaseId: {
+                        serializedName: `x-ms-lease-id`,
+                        xmlName: `x-ms-lease-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, jp = {
+            serializedName: `Blob_acquireLeaseExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobAcquireLeaseExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Mp = {
+            serializedName: `Blob_releaseLeaseHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobReleaseLeaseHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, Np = {
+            serializedName: `Blob_releaseLeaseExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobReleaseLeaseExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Pp = {
+            serializedName: `Blob_renewLeaseHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobRenewLeaseHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    leaseId: {
+                        serializedName: `x-ms-lease-id`,
+                        xmlName: `x-ms-lease-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, Fp = {
+            serializedName: `Blob_renewLeaseExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobRenewLeaseExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Ip = {
+            serializedName: `Blob_changeLeaseHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobChangeLeaseHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    leaseId: {
+                        serializedName: `x-ms-lease-id`,
+                        xmlName: `x-ms-lease-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, Lp = {
+            serializedName: `Blob_changeLeaseExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobChangeLeaseExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Rp = {
+            serializedName: `Blob_breakLeaseHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobBreakLeaseHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    leaseTime: {
+                        serializedName: `x-ms-lease-time`,
+                        xmlName: `x-ms-lease-time`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    }
+                }
+            }
+        }, zp = {
+            serializedName: `Blob_breakLeaseExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobBreakLeaseExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Bp = {
+            serializedName: `Blob_createSnapshotHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobCreateSnapshotHeaders`,
+                modelProperties: {
+                    snapshot: {
+                        serializedName: `x-ms-snapshot`,
+                        xmlName: `x-ms-snapshot`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Vp = {
+            serializedName: `Blob_createSnapshotExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobCreateSnapshotExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Hp = {
+            serializedName: `Blob_startCopyFromURLHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobStartCopyFromURLHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    copyId: {
+                        serializedName: `x-ms-copy-id`,
+                        xmlName: `x-ms-copy-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyStatus: {
+                        serializedName: `x-ms-copy-status`,
+                        xmlName: `x-ms-copy-status`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`pending`, `success`, `aborted`, `failed`]
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Up = {
+            serializedName: `Blob_startCopyFromURLExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobStartCopyFromURLExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceErrorCode: {
+                        serializedName: `x-ms-copy-source-error-code`,
+                        xmlName: `x-ms-copy-source-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceStatusCode: {
+                        serializedName: `x-ms-copy-source-status-code`,
+                        xmlName: `x-ms-copy-source-status-code`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, Wp = {
+            serializedName: `Blob_copyFromURLHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobCopyFromURLHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    copyId: {
+                        serializedName: `x-ms-copy-id`,
+                        xmlName: `x-ms-copy-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyStatus: {
+                        defaultValue: `success`,
+                        isConstant: !0,
+                        serializedName: `x-ms-copy-status`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    xMsContentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Gp = {
+            serializedName: `Blob_copyFromURLExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobCopyFromURLExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceErrorCode: {
+                        serializedName: `x-ms-copy-source-error-code`,
+                        xmlName: `x-ms-copy-source-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceStatusCode: {
+                        serializedName: `x-ms-copy-source-status-code`,
+                        xmlName: `x-ms-copy-source-status-code`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, Kp = {
+            serializedName: `Blob_abortCopyFromURLHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobAbortCopyFromURLHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, qp = {
+            serializedName: `Blob_abortCopyFromURLExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobAbortCopyFromURLExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Jp = {
+            serializedName: `Blob_setTierHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetTierHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Yp = {
+            serializedName: `Blob_setTierExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetTierExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Xp = {
+            serializedName: `Blob_getAccountInfoHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobGetAccountInfoHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    skuName: {
+                        serializedName: `x-ms-sku-name`,
+                        xmlName: `x-ms-sku-name`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`Standard_LRS`, `Standard_GRS`, `Standard_RAGRS`, `Standard_ZRS`, `Premium_LRS`]
+                        }
+                    },
+                    accountKind: {
+                        serializedName: `x-ms-account-kind`,
+                        xmlName: `x-ms-account-kind`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`Storage`, `BlobStorage`, `StorageV2`, `FileStorage`, `BlockBlobStorage`]
+                        }
+                    },
+                    isHierarchicalNamespaceEnabled: {
+                        serializedName: `x-ms-is-hns-enabled`,
+                        xmlName: `x-ms-is-hns-enabled`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    }
+                }
+            }
+        }, Zp = {
+            serializedName: `Blob_getAccountInfoExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobGetAccountInfoExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Qp = {
+            serializedName: `Blob_queryHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobQueryHeaders`,
+                modelProperties: {
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    metadata: {
+                        serializedName: `x-ms-meta`,
+                        headerCollectionPrefix: `x-ms-meta-`,
+                        xmlName: `x-ms-meta`,
+                        type: {
+                            name: `Dictionary`,
+                            value: {
+                                type: {
+                                    name: `String`
+                                }
+                            }
+                        }
+                    },
+                    contentLength: {
+                        serializedName: `content-length`,
+                        xmlName: `content-length`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    contentType: {
+                        serializedName: `content-type`,
+                        xmlName: `content-type`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentRange: {
+                        serializedName: `content-range`,
+                        xmlName: `content-range`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    contentEncoding: {
+                        serializedName: `content-encoding`,
+                        xmlName: `content-encoding`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    cacheControl: {
+                        serializedName: `cache-control`,
+                        xmlName: `cache-control`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentDisposition: {
+                        serializedName: `content-disposition`,
+                        xmlName: `content-disposition`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentLanguage: {
+                        serializedName: `content-language`,
+                        xmlName: `content-language`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobSequenceNumber: {
+                        serializedName: `x-ms-blob-sequence-number`,
+                        xmlName: `x-ms-blob-sequence-number`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    blobType: {
+                        serializedName: `x-ms-blob-type`,
+                        xmlName: `x-ms-blob-type`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`BlockBlob`, `PageBlob`, `AppendBlob`]
+                        }
+                    },
+                    copyCompletionTime: {
+                        serializedName: `x-ms-copy-completion-time`,
+                        xmlName: `x-ms-copy-completion-time`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    copyStatusDescription: {
+                        serializedName: `x-ms-copy-status-description`,
+                        xmlName: `x-ms-copy-status-description`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyId: {
+                        serializedName: `x-ms-copy-id`,
+                        xmlName: `x-ms-copy-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyProgress: {
+                        serializedName: `x-ms-copy-progress`,
+                        xmlName: `x-ms-copy-progress`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySource: {
+                        serializedName: `x-ms-copy-source`,
+                        xmlName: `x-ms-copy-source`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyStatus: {
+                        serializedName: `x-ms-copy-status`,
+                        xmlName: `x-ms-copy-status`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`pending`, `success`, `aborted`, `failed`]
+                        }
+                    },
+                    leaseDuration: {
+                        serializedName: `x-ms-lease-duration`,
+                        xmlName: `x-ms-lease-duration`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`infinite`, `fixed`]
+                        }
+                    },
+                    leaseState: {
+                        serializedName: `x-ms-lease-state`,
+                        xmlName: `x-ms-lease-state`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`available`, `leased`, `expired`, `breaking`, `broken`]
+                        }
+                    },
+                    leaseStatus: {
+                        serializedName: `x-ms-lease-status`,
+                        xmlName: `x-ms-lease-status`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`locked`, `unlocked`]
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    acceptRanges: {
+                        serializedName: `accept-ranges`,
+                        xmlName: `accept-ranges`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    blobCommittedBlockCount: {
+                        serializedName: `x-ms-blob-committed-block-count`,
+                        xmlName: `x-ms-blob-committed-block-count`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-server-encrypted`,
+                        xmlName: `x-ms-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobContentMD5: {
+                        serializedName: `x-ms-blob-content-md5`,
+                        xmlName: `x-ms-blob-content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    }
+                }
+            }
+        }, $p = {
+            serializedName: `Blob_queryExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobQueryExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, em = {
+            serializedName: `Blob_getTagsHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobGetTagsHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, tm = {
+            serializedName: `Blob_getTagsExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobGetTagsExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, nm = {
+            serializedName: `Blob_setTagsHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetTagsHeaders`,
+                modelProperties: {
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, rm = {
+            serializedName: `Blob_setTagsExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlobSetTagsExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, im = {
+            serializedName: `PageBlob_createHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobCreateHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, am = {
+            serializedName: `PageBlob_createExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobCreateExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, om = {
+            serializedName: `PageBlob_uploadPagesHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobUploadPagesHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    xMsContentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    blobSequenceNumber: {
+                        serializedName: `x-ms-blob-sequence-number`,
+                        xmlName: `x-ms-blob-sequence-number`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, sm = {
+            serializedName: `PageBlob_uploadPagesExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobUploadPagesExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, cm = {
+            serializedName: `PageBlob_clearPagesHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobClearPagesHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    xMsContentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    blobSequenceNumber: {
+                        serializedName: `x-ms-blob-sequence-number`,
+                        xmlName: `x-ms-blob-sequence-number`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, lm = {
+            serializedName: `PageBlob_clearPagesExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobClearPagesExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, um = {
+            serializedName: `PageBlob_uploadPagesFromURLHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobUploadPagesFromURLHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    xMsContentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    blobSequenceNumber: {
+                        serializedName: `x-ms-blob-sequence-number`,
+                        xmlName: `x-ms-blob-sequence-number`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, dm = {
+            serializedName: `PageBlob_uploadPagesFromURLExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobUploadPagesFromURLExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceErrorCode: {
+                        serializedName: `x-ms-copy-source-error-code`,
+                        xmlName: `x-ms-copy-source-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceStatusCode: {
+                        serializedName: `x-ms-copy-source-status-code`,
+                        xmlName: `x-ms-copy-source-status-code`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, fm = {
+            serializedName: `PageBlob_getPageRangesHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobGetPageRangesHeaders`,
+                modelProperties: {
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobContentLength: {
+                        serializedName: `x-ms-blob-content-length`,
+                        xmlName: `x-ms-blob-content-length`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, pm = {
+            serializedName: `PageBlob_getPageRangesExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobGetPageRangesExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, mm = {
+            serializedName: `PageBlob_getPageRangesDiffHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobGetPageRangesDiffHeaders`,
+                modelProperties: {
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobContentLength: {
+                        serializedName: `x-ms-blob-content-length`,
+                        xmlName: `x-ms-blob-content-length`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, hm = {
+            serializedName: `PageBlob_getPageRangesDiffExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobGetPageRangesDiffExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, gm = {
+            serializedName: `PageBlob_resizeHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobResizeHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    blobSequenceNumber: {
+                        serializedName: `x-ms-blob-sequence-number`,
+                        xmlName: `x-ms-blob-sequence-number`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, _m = {
+            serializedName: `PageBlob_resizeExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobResizeExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, vm = {
+            serializedName: `PageBlob_updateSequenceNumberHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobUpdateSequenceNumberHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    blobSequenceNumber: {
+                        serializedName: `x-ms-blob-sequence-number`,
+                        xmlName: `x-ms-blob-sequence-number`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, ym = {
+            serializedName: `PageBlob_updateSequenceNumberExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobUpdateSequenceNumberExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, bm = {
+            serializedName: `PageBlob_copyIncrementalHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobCopyIncrementalHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    copyId: {
+                        serializedName: `x-ms-copy-id`,
+                        xmlName: `x-ms-copy-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copyStatus: {
+                        serializedName: `x-ms-copy-status`,
+                        xmlName: `x-ms-copy-status`,
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`pending`, `success`, `aborted`, `failed`]
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, xm = {
+            serializedName: `PageBlob_copyIncrementalExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `PageBlobCopyIncrementalExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Sm = {
+            serializedName: `AppendBlob_createHeaders`,
+            type: {
+                name: `Composite`,
+                className: `AppendBlobCreateHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Cm = {
+            serializedName: `AppendBlob_createExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `AppendBlobCreateExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, wm = {
+            serializedName: `AppendBlob_appendBlockHeaders`,
+            type: {
+                name: `Composite`,
+                className: `AppendBlobAppendBlockHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    xMsContentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    blobAppendOffset: {
+                        serializedName: `x-ms-blob-append-offset`,
+                        xmlName: `x-ms-blob-append-offset`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobCommittedBlockCount: {
+                        serializedName: `x-ms-blob-committed-block-count`,
+                        xmlName: `x-ms-blob-committed-block-count`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Tm = {
+            serializedName: `AppendBlob_appendBlockExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `AppendBlobAppendBlockExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Em = {
+            serializedName: `AppendBlob_appendBlockFromUrlHeaders`,
+            type: {
+                name: `Composite`,
+                className: `AppendBlobAppendBlockFromUrlHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    xMsContentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    blobAppendOffset: {
+                        serializedName: `x-ms-blob-append-offset`,
+                        xmlName: `x-ms-blob-append-offset`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobCommittedBlockCount: {
+                        serializedName: `x-ms-blob-committed-block-count`,
+                        xmlName: `x-ms-blob-committed-block-count`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Dm = {
+            serializedName: `AppendBlob_appendBlockFromUrlExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `AppendBlobAppendBlockFromUrlExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceErrorCode: {
+                        serializedName: `x-ms-copy-source-error-code`,
+                        xmlName: `x-ms-copy-source-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceStatusCode: {
+                        serializedName: `x-ms-copy-source-status-code`,
+                        xmlName: `x-ms-copy-source-status-code`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, Om = {
+            serializedName: `AppendBlob_sealHeaders`,
+            type: {
+                name: `Composite`,
+                className: `AppendBlobSealHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isSealed: {
+                        serializedName: `x-ms-blob-sealed`,
+                        xmlName: `x-ms-blob-sealed`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    }
+                }
+            }
+        }, km = {
+            serializedName: `AppendBlob_sealExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `AppendBlobSealExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Am = {
+            serializedName: `BlockBlob_uploadHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobUploadHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, jm = {
+            serializedName: `BlockBlob_uploadExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobUploadExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Mm = {
+            serializedName: `BlockBlob_putBlobFromUrlHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobPutBlobFromUrlHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Nm = {
+            serializedName: `BlockBlob_putBlobFromUrlExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobPutBlobFromUrlExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceErrorCode: {
+                        serializedName: `x-ms-copy-source-error-code`,
+                        xmlName: `x-ms-copy-source-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceStatusCode: {
+                        serializedName: `x-ms-copy-source-status-code`,
+                        xmlName: `x-ms-copy-source-status-code`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, Pm = {
+            serializedName: `BlockBlob_stageBlockHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobStageBlockHeaders`,
+                modelProperties: {
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    xMsContentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Fm = {
+            serializedName: `BlockBlob_stageBlockExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobStageBlockExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Im = {
+            serializedName: `BlockBlob_stageBlockFromURLHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobStageBlockFromURLHeaders`,
+                modelProperties: {
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    xMsContentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Lm = {
+            serializedName: `BlockBlob_stageBlockFromURLExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobStageBlockFromURLExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceErrorCode: {
+                        serializedName: `x-ms-copy-source-error-code`,
+                        xmlName: `x-ms-copy-source-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    copySourceStatusCode: {
+                        serializedName: `x-ms-copy-source-status-code`,
+                        xmlName: `x-ms-copy-source-status-code`,
+                        type: {
+                            name: `Number`
+                        }
+                    }
+                }
+            }
+        }, Rm = {
+            serializedName: `BlockBlob_commitBlockListHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobCommitBlockListHeaders`,
+                modelProperties: {
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    contentMD5: {
+                        serializedName: `content-md5`,
+                        xmlName: `content-md5`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    xMsContentCrc64: {
+                        serializedName: `x-ms-content-crc64`,
+                        xmlName: `x-ms-content-crc64`,
+                        type: {
+                            name: `ByteArray`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    versionId: {
+                        serializedName: `x-ms-version-id`,
+                        xmlName: `x-ms-version-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    isServerEncrypted: {
+                        serializedName: `x-ms-request-server-encrypted`,
+                        xmlName: `x-ms-request-server-encrypted`,
+                        type: {
+                            name: `Boolean`
+                        }
+                    },
+                    encryptionKeySha256: {
+                        serializedName: `x-ms-encryption-key-sha256`,
+                        xmlName: `x-ms-encryption-key-sha256`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    encryptionScope: {
+                        serializedName: `x-ms-encryption-scope`,
+                        xmlName: `x-ms-encryption-scope`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, zm = {
+            serializedName: `BlockBlob_commitBlockListExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobCommitBlockListExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Bm = {
+            serializedName: `BlockBlob_getBlockListHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobGetBlockListHeaders`,
+                modelProperties: {
+                    lastModified: {
+                        serializedName: `last-modified`,
+                        xmlName: `last-modified`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    etag: {
+                        serializedName: `etag`,
+                        xmlName: `etag`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    contentType: {
+                        serializedName: `content-type`,
+                        xmlName: `content-type`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    blobContentLength: {
+                        serializedName: `x-ms-blob-content-length`,
+                        xmlName: `x-ms-blob-content-length`,
+                        type: {
+                            name: `Number`
+                        }
+                    },
+                    clientRequestId: {
+                        serializedName: `x-ms-client-request-id`,
+                        xmlName: `x-ms-client-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    requestId: {
+                        serializedName: `x-ms-request-id`,
+                        xmlName: `x-ms-request-id`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    version: {
+                        serializedName: `x-ms-version`,
+                        xmlName: `x-ms-version`,
+                        type: {
+                            name: `String`
+                        }
+                    },
+                    date: {
+                        serializedName: `date`,
+                        xmlName: `date`,
+                        type: {
+                            name: `DateTimeRfc1123`
+                        }
+                    },
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, Vm = {
+            serializedName: `BlockBlob_getBlockListExceptionHeaders`,
+            type: {
+                name: `Composite`,
+                className: `BlockBlobGetBlockListExceptionHeaders`,
+                modelProperties: {
+                    errorCode: {
+                        serializedName: `x-ms-error-code`,
+                        xmlName: `x-ms-error-code`,
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }
+    })),
+    Um, Wm, Gm, z, Km, qm, B, V, H, U, Jm, Ym, Xm, Zm, Qm, $m, eh, th, nh, rh, ih, ah, oh, sh, ch, lh, uh, dh, fh, ph, W, G, K, mh, hh, gh, _h, vh, yh, bh, xh, Sh, Ch, wh, Th, Eh, Dh, Oh, kh, Ah, jh, Mh, Nh, Ph, Fh, Ih, Lh, Rh, zh, Bh, Vh, Hh, Uh, Wh, Gh, q, Kh, qh, Jh, Yh, Xh, Zh, Qh, $h, eg, tg, ng, rg, ig, ag, og, sg, cg, lg, ug, dg, fg, pg, mg, hg, gg, _g, vg, yg, bg, xg, Sg, Cg, wg, Tg, Eg, Dg, Og, kg, Ag, jg, Mg, Ng, Pg, Fg, Ig, Lg, Rg, zg, Bg, Vg, Hg, Ug, Wg, Gg, Kg, qg, Jg, Yg, Xg, Zg, Qg, $g, e_, t_, n_, r_, i_, a_, o_, s_, c_, l_, u_, d_, f_, p_, m_, h_, g_, __ = e((() => {
+        Hm(), Um = {
+            parameterPath: [`options`, `contentType`],
+            mapper: {
+                defaultValue: `application/xml`,
+                isConstant: !0,
+                serializedName: `Content-Type`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Wm = {
+            parameterPath: `blobServiceProperties`,
+            mapper: Td
+        }, Gm = {
+            parameterPath: `accept`,
+            mapper: {
+                defaultValue: `application/xml`,
+                isConstant: !0,
+                serializedName: `Accept`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, z = {
+            parameterPath: `url`,
+            mapper: {
+                serializedName: `url`,
+                required: !0,
+                xmlName: `url`,
+                type: {
+                    name: `String`
+                }
+            },
+            skipEncoding: !0
+        }, Km = {
+            parameterPath: `restype`,
+            mapper: {
+                defaultValue: `service`,
+                isConstant: !0,
+                serializedName: `restype`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, qm = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `properties`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, B = {
+            parameterPath: [`options`, `timeoutInSeconds`],
+            mapper: {
+                constraints: {
+                    InclusiveMinimum: 0
+                },
+                serializedName: `timeout`,
+                xmlName: `timeout`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, V = {
+            parameterPath: `version`,
+            mapper: {
+                defaultValue: `2025-11-05`,
+                isConstant: !0,
+                serializedName: `x-ms-version`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, H = {
+            parameterPath: [`options`, `requestId`],
+            mapper: {
+                serializedName: `x-ms-client-request-id`,
+                xmlName: `x-ms-client-request-id`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, U = {
+            parameterPath: `accept`,
+            mapper: {
+                defaultValue: `application/xml`,
+                isConstant: !0,
+                serializedName: `Accept`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Jm = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `stats`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Ym = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `list`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Xm = {
+            parameterPath: [`options`, `prefix`],
+            mapper: {
+                serializedName: `prefix`,
+                xmlName: `prefix`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Zm = {
+            parameterPath: [`options`, `marker`],
+            mapper: {
+                serializedName: `marker`,
+                xmlName: `marker`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Qm = {
+            parameterPath: [`options`, `maxPageSize`],
+            mapper: {
+                constraints: {
+                    InclusiveMinimum: 1
+                },
+                serializedName: `maxresults`,
+                xmlName: `maxresults`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, $m = {
+            parameterPath: [`options`, `include`],
+            mapper: {
+                serializedName: `include`,
+                xmlName: `include`,
+                xmlElementName: `ListContainersIncludeType`,
+                type: {
+                    name: `Sequence`,
+                    element: {
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`metadata`, `deleted`, `system`]
+                        }
+                    }
+                }
+            },
+            collectionFormat: `CSV`
+        }, eh = {
+            parameterPath: `keyInfo`,
+            mapper: Id
+        }, th = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `userdelegationkey`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, nh = {
+            parameterPath: `restype`,
+            mapper: {
+                defaultValue: `account`,
+                isConstant: !0,
+                serializedName: `restype`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, rh = {
+            parameterPath: `body`,
+            mapper: {
+                serializedName: `body`,
+                required: !0,
+                xmlName: `body`,
+                type: {
+                    name: `Stream`
+                }
+            }
+        }, ih = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `batch`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, ah = {
+            parameterPath: `contentLength`,
+            mapper: {
+                serializedName: `Content-Length`,
+                required: !0,
+                xmlName: `Content-Length`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, oh = {
+            parameterPath: `multipartContentType`,
+            mapper: {
+                serializedName: `Content-Type`,
+                required: !0,
+                xmlName: `Content-Type`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, sh = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `blobs`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, ch = {
+            parameterPath: [`options`, `where`],
+            mapper: {
+                serializedName: `where`,
+                xmlName: `where`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, lh = {
+            parameterPath: `restype`,
+            mapper: {
+                defaultValue: `container`,
+                isConstant: !0,
+                serializedName: `restype`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, uh = {
+            parameterPath: [`options`, `metadata`],
+            mapper: {
+                serializedName: `x-ms-meta`,
+                xmlName: `x-ms-meta`,
+                headerCollectionPrefix: `x-ms-meta-`,
+                type: {
+                    name: `Dictionary`,
+                    value: {
+                        type: {
+                            name: `String`
+                        }
+                    }
+                }
+            }
+        }, dh = {
+            parameterPath: [`options`, `access`],
+            mapper: {
+                serializedName: `x-ms-blob-public-access`,
+                xmlName: `x-ms-blob-public-access`,
+                type: {
+                    name: `Enum`,
+                    allowedValues: [`container`, `blob`]
+                }
+            }
+        }, fh = {
+            parameterPath: [`options`, `containerEncryptionScope`, `defaultEncryptionScope`],
+            mapper: {
+                serializedName: `x-ms-default-encryption-scope`,
+                xmlName: `x-ms-default-encryption-scope`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, ph = {
+            parameterPath: [`options`, `containerEncryptionScope`, `preventEncryptionScopeOverride`],
+            mapper: {
+                serializedName: `x-ms-deny-encryption-scope-override`,
+                xmlName: `x-ms-deny-encryption-scope-override`,
+                type: {
+                    name: `Boolean`
+                }
+            }
+        }, W = {
+            parameterPath: [`options`, `leaseAccessConditions`, `leaseId`],
+            mapper: {
+                serializedName: `x-ms-lease-id`,
+                xmlName: `x-ms-lease-id`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, G = {
+            parameterPath: [`options`, `modifiedAccessConditions`, `ifModifiedSince`],
+            mapper: {
+                serializedName: `If-Modified-Since`,
+                xmlName: `If-Modified-Since`,
+                type: {
+                    name: `DateTimeRfc1123`
+                }
+            }
+        }, K = {
+            parameterPath: [`options`, `modifiedAccessConditions`, `ifUnmodifiedSince`],
+            mapper: {
+                serializedName: `If-Unmodified-Since`,
+                xmlName: `If-Unmodified-Since`,
+                type: {
+                    name: `DateTimeRfc1123`
+                }
+            }
+        }, mh = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `metadata`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, hh = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `acl`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, gh = {
+            parameterPath: [`options`, `containerAcl`],
+            mapper: {
+                serializedName: `containerAcl`,
+                xmlName: `SignedIdentifiers`,
+                xmlIsWrapped: !0,
+                xmlElementName: `SignedIdentifier`,
+                type: {
+                    name: `Sequence`,
+                    element: {
+                        type: {
+                            name: `Composite`,
+                            className: `SignedIdentifier`
+                        }
+                    }
+                }
+            }
+        }, _h = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `undelete`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, vh = {
+            parameterPath: [`options`, `deletedContainerName`],
+            mapper: {
+                serializedName: `x-ms-deleted-container-name`,
+                xmlName: `x-ms-deleted-container-name`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, yh = {
+            parameterPath: [`options`, `deletedContainerVersion`],
+            mapper: {
+                serializedName: `x-ms-deleted-container-version`,
+                xmlName: `x-ms-deleted-container-version`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, bh = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `rename`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, xh = {
+            parameterPath: `sourceContainerName`,
+            mapper: {
+                serializedName: `x-ms-source-container-name`,
+                required: !0,
+                xmlName: `x-ms-source-container-name`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Sh = {
+            parameterPath: [`options`, `sourceLeaseId`],
+            mapper: {
+                serializedName: `x-ms-source-lease-id`,
+                xmlName: `x-ms-source-lease-id`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Ch = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `lease`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, wh = {
+            parameterPath: `action`,
+            mapper: {
+                defaultValue: `acquire`,
+                isConstant: !0,
+                serializedName: `x-ms-lease-action`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Th = {
+            parameterPath: [`options`, `duration`],
+            mapper: {
+                serializedName: `x-ms-lease-duration`,
+                xmlName: `x-ms-lease-duration`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, Eh = {
+            parameterPath: [`options`, `proposedLeaseId`],
+            mapper: {
+                serializedName: `x-ms-proposed-lease-id`,
+                xmlName: `x-ms-proposed-lease-id`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Dh = {
+            parameterPath: `action`,
+            mapper: {
+                defaultValue: `release`,
+                isConstant: !0,
+                serializedName: `x-ms-lease-action`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Oh = {
+            parameterPath: `leaseId`,
+            mapper: {
+                serializedName: `x-ms-lease-id`,
+                required: !0,
+                xmlName: `x-ms-lease-id`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, kh = {
+            parameterPath: `action`,
+            mapper: {
+                defaultValue: `renew`,
+                isConstant: !0,
+                serializedName: `x-ms-lease-action`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Ah = {
+            parameterPath: `action`,
+            mapper: {
+                defaultValue: `break`,
+                isConstant: !0,
+                serializedName: `x-ms-lease-action`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, jh = {
+            parameterPath: [`options`, `breakPeriod`],
+            mapper: {
+                serializedName: `x-ms-lease-break-period`,
+                xmlName: `x-ms-lease-break-period`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, Mh = {
+            parameterPath: `action`,
+            mapper: {
+                defaultValue: `change`,
+                isConstant: !0,
+                serializedName: `x-ms-lease-action`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Nh = {
+            parameterPath: `proposedLeaseId`,
+            mapper: {
+                serializedName: `x-ms-proposed-lease-id`,
+                required: !0,
+                xmlName: `x-ms-proposed-lease-id`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Ph = {
+            parameterPath: [`options`, `include`],
+            mapper: {
+                serializedName: `include`,
+                xmlName: `include`,
+                xmlElementName: `ListBlobsIncludeItem`,
+                type: {
+                    name: `Sequence`,
+                    element: {
+                        type: {
+                            name: `Enum`,
+                            allowedValues: [`copy`, `deleted`, `metadata`, `snapshots`, `uncommittedblobs`, `versions`, `tags`, `immutabilitypolicy`, `legalhold`, `deletedwithversions`]
+                        }
+                    }
+                }
+            },
+            collectionFormat: `CSV`
+        }, Fh = {
+            parameterPath: `delimiter`,
+            mapper: {
+                serializedName: `delimiter`,
+                required: !0,
+                xmlName: `delimiter`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Ih = {
+            parameterPath: [`options`, `snapshot`],
+            mapper: {
+                serializedName: `snapshot`,
+                xmlName: `snapshot`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Lh = {
+            parameterPath: [`options`, `versionId`],
+            mapper: {
+                serializedName: `versionid`,
+                xmlName: `versionid`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Rh = {
+            parameterPath: [`options`, `range`],
+            mapper: {
+                serializedName: `x-ms-range`,
+                xmlName: `x-ms-range`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, zh = {
+            parameterPath: [`options`, `rangeGetContentMD5`],
+            mapper: {
+                serializedName: `x-ms-range-get-content-md5`,
+                xmlName: `x-ms-range-get-content-md5`,
+                type: {
+                    name: `Boolean`
+                }
+            }
+        }, Bh = {
+            parameterPath: [`options`, `rangeGetContentCRC64`],
+            mapper: {
+                serializedName: `x-ms-range-get-content-crc64`,
+                xmlName: `x-ms-range-get-content-crc64`,
+                type: {
+                    name: `Boolean`
+                }
+            }
+        }, Vh = {
+            parameterPath: [`options`, `cpkInfo`, `encryptionKey`],
+            mapper: {
+                serializedName: `x-ms-encryption-key`,
+                xmlName: `x-ms-encryption-key`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Hh = {
+            parameterPath: [`options`, `cpkInfo`, `encryptionKeySha256`],
+            mapper: {
+                serializedName: `x-ms-encryption-key-sha256`,
+                xmlName: `x-ms-encryption-key-sha256`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Uh = {
+            parameterPath: [`options`, `cpkInfo`, `encryptionAlgorithm`],
+            mapper: {
+                serializedName: `x-ms-encryption-algorithm`,
+                xmlName: `x-ms-encryption-algorithm`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Wh = {
+            parameterPath: [`options`, `modifiedAccessConditions`, `ifMatch`],
+            mapper: {
+                serializedName: `If-Match`,
+                xmlName: `If-Match`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Gh = {
+            parameterPath: [`options`, `modifiedAccessConditions`, `ifNoneMatch`],
+            mapper: {
+                serializedName: `If-None-Match`,
+                xmlName: `If-None-Match`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, q = {
+            parameterPath: [`options`, `modifiedAccessConditions`, `ifTags`],
+            mapper: {
+                serializedName: `x-ms-if-tags`,
+                xmlName: `x-ms-if-tags`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Kh = {
+            parameterPath: [`options`, `deleteSnapshots`],
+            mapper: {
+                serializedName: `x-ms-delete-snapshots`,
+                xmlName: `x-ms-delete-snapshots`,
+                type: {
+                    name: `Enum`,
+                    allowedValues: [`include`, `only`]
+                }
+            }
+        }, qh = {
+            parameterPath: [`options`, `blobDeleteType`],
+            mapper: {
+                serializedName: `deletetype`,
+                xmlName: `deletetype`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Jh = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `expiry`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Yh = {
+            parameterPath: `expiryOptions`,
+            mapper: {
+                serializedName: `x-ms-expiry-option`,
+                required: !0,
+                xmlName: `x-ms-expiry-option`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Xh = {
+            parameterPath: [`options`, `expiresOn`],
+            mapper: {
+                serializedName: `x-ms-expiry-time`,
+                xmlName: `x-ms-expiry-time`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Zh = {
+            parameterPath: [`options`, `blobHttpHeaders`, `blobCacheControl`],
+            mapper: {
+                serializedName: `x-ms-blob-cache-control`,
+                xmlName: `x-ms-blob-cache-control`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Qh = {
+            parameterPath: [`options`, `blobHttpHeaders`, `blobContentType`],
+            mapper: {
+                serializedName: `x-ms-blob-content-type`,
+                xmlName: `x-ms-blob-content-type`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, $h = {
+            parameterPath: [`options`, `blobHttpHeaders`, `blobContentMD5`],
+            mapper: {
+                serializedName: `x-ms-blob-content-md5`,
+                xmlName: `x-ms-blob-content-md5`,
+                type: {
+                    name: `ByteArray`
+                }
+            }
+        }, eg = {
+            parameterPath: [`options`, `blobHttpHeaders`, `blobContentEncoding`],
+            mapper: {
+                serializedName: `x-ms-blob-content-encoding`,
+                xmlName: `x-ms-blob-content-encoding`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, tg = {
+            parameterPath: [`options`, `blobHttpHeaders`, `blobContentLanguage`],
+            mapper: {
+                serializedName: `x-ms-blob-content-language`,
+                xmlName: `x-ms-blob-content-language`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, ng = {
+            parameterPath: [`options`, `blobHttpHeaders`, `blobContentDisposition`],
+            mapper: {
+                serializedName: `x-ms-blob-content-disposition`,
+                xmlName: `x-ms-blob-content-disposition`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, rg = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `immutabilityPolicies`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, ig = {
+            parameterPath: [`options`, `immutabilityPolicyExpiry`],
+            mapper: {
+                serializedName: `x-ms-immutability-policy-until-date`,
+                xmlName: `x-ms-immutability-policy-until-date`,
+                type: {
+                    name: `DateTimeRfc1123`
+                }
+            }
+        }, ag = {
+            parameterPath: [`options`, `immutabilityPolicyMode`],
+            mapper: {
+                serializedName: `x-ms-immutability-policy-mode`,
+                xmlName: `x-ms-immutability-policy-mode`,
+                type: {
+                    name: `Enum`,
+                    allowedValues: [`Mutable`, `Unlocked`, `Locked`]
+                }
+            }
+        }, og = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `legalhold`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, sg = {
+            parameterPath: `legalHold`,
+            mapper: {
+                serializedName: `x-ms-legal-hold`,
+                required: !0,
+                xmlName: `x-ms-legal-hold`,
+                type: {
+                    name: `Boolean`
+                }
+            }
+        }, cg = {
+            parameterPath: [`options`, `encryptionScope`],
+            mapper: {
+                serializedName: `x-ms-encryption-scope`,
+                xmlName: `x-ms-encryption-scope`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, lg = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `snapshot`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, ug = {
+            parameterPath: [`options`, `tier`],
+            mapper: {
+                serializedName: `x-ms-access-tier`,
+                xmlName: `x-ms-access-tier`,
+                type: {
+                    name: `Enum`,
+                    allowedValues: [`P4`, `P6`, `P10`, `P15`, `P20`, `P30`, `P40`, `P50`, `P60`, `P70`, `P80`, `Hot`, `Cool`, `Archive`, `Cold`]
+                }
+            }
+        }, dg = {
+            parameterPath: [`options`, `rehydratePriority`],
+            mapper: {
+                serializedName: `x-ms-rehydrate-priority`,
+                xmlName: `x-ms-rehydrate-priority`,
+                type: {
+                    name: `Enum`,
+                    allowedValues: [`High`, `Standard`]
+                }
+            }
+        }, fg = {
+            parameterPath: [`options`, `sourceModifiedAccessConditions`, `sourceIfModifiedSince`],
+            mapper: {
+                serializedName: `x-ms-source-if-modified-since`,
+                xmlName: `x-ms-source-if-modified-since`,
+                type: {
+                    name: `DateTimeRfc1123`
+                }
+            }
+        }, pg = {
+            parameterPath: [`options`, `sourceModifiedAccessConditions`, `sourceIfUnmodifiedSince`],
+            mapper: {
+                serializedName: `x-ms-source-if-unmodified-since`,
+                xmlName: `x-ms-source-if-unmodified-since`,
+                type: {
+                    name: `DateTimeRfc1123`
+                }
+            }
+        }, mg = {
+            parameterPath: [`options`, `sourceModifiedAccessConditions`, `sourceIfMatch`],
+            mapper: {
+                serializedName: `x-ms-source-if-match`,
+                xmlName: `x-ms-source-if-match`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, hg = {
+            parameterPath: [`options`, `sourceModifiedAccessConditions`, `sourceIfNoneMatch`],
+            mapper: {
+                serializedName: `x-ms-source-if-none-match`,
+                xmlName: `x-ms-source-if-none-match`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, gg = {
+            parameterPath: [`options`, `sourceModifiedAccessConditions`, `sourceIfTags`],
+            mapper: {
+                serializedName: `x-ms-source-if-tags`,
+                xmlName: `x-ms-source-if-tags`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, _g = {
+            parameterPath: `copySource`,
+            mapper: {
+                serializedName: `x-ms-copy-source`,
+                required: !0,
+                xmlName: `x-ms-copy-source`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, vg = {
+            parameterPath: [`options`, `blobTagsString`],
+            mapper: {
+                serializedName: `x-ms-tags`,
+                xmlName: `x-ms-tags`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, yg = {
+            parameterPath: [`options`, `sealBlob`],
+            mapper: {
+                serializedName: `x-ms-seal-blob`,
+                xmlName: `x-ms-seal-blob`,
+                type: {
+                    name: `Boolean`
+                }
+            }
+        }, bg = {
+            parameterPath: [`options`, `legalHold`],
+            mapper: {
+                serializedName: `x-ms-legal-hold`,
+                xmlName: `x-ms-legal-hold`,
+                type: {
+                    name: `Boolean`
+                }
+            }
+        }, xg = {
+            parameterPath: `xMsRequiresSync`,
+            mapper: {
+                defaultValue: `true`,
+                isConstant: !0,
+                serializedName: `x-ms-requires-sync`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Sg = {
+            parameterPath: [`options`, `sourceContentMD5`],
+            mapper: {
+                serializedName: `x-ms-source-content-md5`,
+                xmlName: `x-ms-source-content-md5`,
+                type: {
+                    name: `ByteArray`
+                }
+            }
+        }, Cg = {
+            parameterPath: [`options`, `copySourceAuthorization`],
+            mapper: {
+                serializedName: `x-ms-copy-source-authorization`,
+                xmlName: `x-ms-copy-source-authorization`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, wg = {
+            parameterPath: [`options`, `copySourceTags`],
+            mapper: {
+                serializedName: `x-ms-copy-source-tag-option`,
+                xmlName: `x-ms-copy-source-tag-option`,
+                type: {
+                    name: `Enum`,
+                    allowedValues: [`REPLACE`, `COPY`]
+                }
+            }
+        }, Tg = {
+            parameterPath: [`options`, `fileRequestIntent`],
+            mapper: {
+                serializedName: `x-ms-file-request-intent`,
+                xmlName: `x-ms-file-request-intent`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Eg = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `copy`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Dg = {
+            parameterPath: `copyActionAbortConstant`,
+            mapper: {
+                defaultValue: `abort`,
+                isConstant: !0,
+                serializedName: `x-ms-copy-action`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Og = {
+            parameterPath: `copyId`,
+            mapper: {
+                serializedName: `copyid`,
+                required: !0,
+                xmlName: `copyid`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, kg = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `tier`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Ag = {
+            parameterPath: `tier`,
+            mapper: {
+                serializedName: `x-ms-access-tier`,
+                required: !0,
+                xmlName: `x-ms-access-tier`,
+                type: {
+                    name: `Enum`,
+                    allowedValues: [`P4`, `P6`, `P10`, `P15`, `P20`, `P30`, `P40`, `P50`, `P60`, `P70`, `P80`, `Hot`, `Cool`, `Archive`, `Cold`]
+                }
+            }
+        }, jg = {
+            parameterPath: [`options`, `queryRequest`],
+            mapper: af
+        }, Mg = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `query`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Ng = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `tags`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Pg = {
+            parameterPath: [`options`, `tags`],
+            mapper: Bd
+        }, Fg = {
+            parameterPath: [`options`, `transactionalContentMD5`],
+            mapper: {
+                serializedName: `Content-MD5`,
+                xmlName: `Content-MD5`,
+                type: {
+                    name: `ByteArray`
+                }
+            }
+        }, Ig = {
+            parameterPath: [`options`, `transactionalContentCrc64`],
+            mapper: {
+                serializedName: `x-ms-content-crc64`,
+                xmlName: `x-ms-content-crc64`,
+                type: {
+                    name: `ByteArray`
+                }
+            }
+        }, Lg = {
+            parameterPath: `blobType`,
+            mapper: {
+                defaultValue: `PageBlob`,
+                isConstant: !0,
+                serializedName: `x-ms-blob-type`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Rg = {
+            parameterPath: `blobContentLength`,
+            mapper: {
+                serializedName: `x-ms-blob-content-length`,
+                required: !0,
+                xmlName: `x-ms-blob-content-length`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, zg = {
+            parameterPath: [`options`, `blobSequenceNumber`],
+            mapper: {
+                defaultValue: 0,
+                serializedName: `x-ms-blob-sequence-number`,
+                xmlName: `x-ms-blob-sequence-number`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, Bg = {
+            parameterPath: [`options`, `contentType`],
+            mapper: {
+                defaultValue: `application/octet-stream`,
+                isConstant: !0,
+                serializedName: `Content-Type`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Vg = {
+            parameterPath: `body`,
+            mapper: {
+                serializedName: `body`,
+                required: !0,
+                xmlName: `body`,
+                type: {
+                    name: `Stream`
+                }
+            }
+        }, Hg = {
+            parameterPath: `accept`,
+            mapper: {
+                defaultValue: `application/xml`,
+                isConstant: !0,
+                serializedName: `Accept`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Ug = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `page`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Wg = {
+            parameterPath: `pageWrite`,
+            mapper: {
+                defaultValue: `update`,
+                isConstant: !0,
+                serializedName: `x-ms-page-write`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Gg = {
+            parameterPath: [`options`, `sequenceNumberAccessConditions`, `ifSequenceNumberLessThanOrEqualTo`],
+            mapper: {
+                serializedName: `x-ms-if-sequence-number-le`,
+                xmlName: `x-ms-if-sequence-number-le`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, Kg = {
+            parameterPath: [`options`, `sequenceNumberAccessConditions`, `ifSequenceNumberLessThan`],
+            mapper: {
+                serializedName: `x-ms-if-sequence-number-lt`,
+                xmlName: `x-ms-if-sequence-number-lt`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, qg = {
+            parameterPath: [`options`, `sequenceNumberAccessConditions`, `ifSequenceNumberEqualTo`],
+            mapper: {
+                serializedName: `x-ms-if-sequence-number-eq`,
+                xmlName: `x-ms-if-sequence-number-eq`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, Jg = {
+            parameterPath: `pageWrite`,
+            mapper: {
+                defaultValue: `clear`,
+                isConstant: !0,
+                serializedName: `x-ms-page-write`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Yg = {
+            parameterPath: `sourceUrl`,
+            mapper: {
+                serializedName: `x-ms-copy-source`,
+                required: !0,
+                xmlName: `x-ms-copy-source`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Xg = {
+            parameterPath: `sourceRange`,
+            mapper: {
+                serializedName: `x-ms-source-range`,
+                required: !0,
+                xmlName: `x-ms-source-range`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, Zg = {
+            parameterPath: [`options`, `sourceContentCrc64`],
+            mapper: {
+                serializedName: `x-ms-source-content-crc64`,
+                xmlName: `x-ms-source-content-crc64`,
+                type: {
+                    name: `ByteArray`
+                }
+            }
+        }, Qg = {
+            parameterPath: `range`,
+            mapper: {
+                serializedName: `x-ms-range`,
+                required: !0,
+                xmlName: `x-ms-range`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, $g = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `pagelist`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, e_ = {
+            parameterPath: [`options`, `prevsnapshot`],
+            mapper: {
+                serializedName: `prevsnapshot`,
+                xmlName: `prevsnapshot`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, t_ = {
+            parameterPath: [`options`, `prevSnapshotUrl`],
+            mapper: {
+                serializedName: `x-ms-previous-snapshot-url`,
+                xmlName: `x-ms-previous-snapshot-url`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, n_ = {
+            parameterPath: `sequenceNumberAction`,
+            mapper: {
+                serializedName: `x-ms-sequence-number-action`,
+                required: !0,
+                xmlName: `x-ms-sequence-number-action`,
+                type: {
+                    name: `Enum`,
+                    allowedValues: [`max`, `update`, `increment`]
+                }
+            }
+        }, r_ = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `incrementalcopy`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, i_ = {
+            parameterPath: `blobType`,
+            mapper: {
+                defaultValue: `AppendBlob`,
+                isConstant: !0,
+                serializedName: `x-ms-blob-type`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, a_ = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `appendblock`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, o_ = {
+            parameterPath: [`options`, `appendPositionAccessConditions`, `maxSize`],
+            mapper: {
+                serializedName: `x-ms-blob-condition-maxsize`,
+                xmlName: `x-ms-blob-condition-maxsize`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, s_ = {
+            parameterPath: [`options`, `appendPositionAccessConditions`, `appendPosition`],
+            mapper: {
+                serializedName: `x-ms-blob-condition-appendpos`,
+                xmlName: `x-ms-blob-condition-appendpos`,
+                type: {
+                    name: `Number`
+                }
+            }
+        }, c_ = {
+            parameterPath: [`options`, `sourceRange`],
+            mapper: {
+                serializedName: `x-ms-source-range`,
+                xmlName: `x-ms-source-range`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, l_ = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `seal`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, u_ = {
+            parameterPath: `blobType`,
+            mapper: {
+                defaultValue: `BlockBlob`,
+                isConstant: !0,
+                serializedName: `x-ms-blob-type`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, d_ = {
+            parameterPath: [`options`, `copySourceBlobProperties`],
+            mapper: {
+                serializedName: `x-ms-copy-source-blob-properties`,
+                xmlName: `x-ms-copy-source-blob-properties`,
+                type: {
+                    name: `Boolean`
+                }
+            }
+        }, f_ = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `block`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, p_ = {
+            parameterPath: `blockId`,
+            mapper: {
+                serializedName: `blockid`,
+                required: !0,
+                xmlName: `blockid`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, m_ = {
+            parameterPath: `blocks`,
+            mapper: Qd
+        }, h_ = {
+            parameterPath: `comp`,
+            mapper: {
+                defaultValue: `blocklist`,
+                isConstant: !0,
+                serializedName: `comp`,
+                type: {
+                    name: `String`
+                }
+            }
+        }, g_ = {
+            parameterPath: `listType`,
+            mapper: {
+                defaultValue: `committed`,
+                serializedName: `blocklisttype`,
+                required: !0,
+                xmlName: `blocklisttype`,
+                type: {
+                    name: `Enum`,
+                    allowedValues: [`committed`, `uncommitted`, `all`]
+                }
+            }
+        }
+    })),
+    v_, y_, b_, x_, S_, C_, w_, T_, E_, D_, O_ = e((() => {
+        Cc(), Hm(), __(), s(), v_ = class {
+            constructor(e) {
+                h(this, `client`, void 0), this.client = e
+            }
+            setProperties(e, t) {
+                return this.client.sendOperationRequest({
+                    blobServiceProperties: e,
+                    options: t
+                }, b_)
+            }
+            getProperties(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, x_)
+            }
+            getStatistics(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, S_)
+            }
+            listContainersSegment(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, C_)
+            }
+            getUserDelegationKey(e, t) {
+                return this.client.sendOperationRequest({
+                    keyInfo: e,
+                    options: t
+                }, w_)
+            }
+            getAccountInfo(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, T_)
+            }
+            submitBatch(e, t, n, r) {
+                return this.client.sendOperationRequest({
+                    contentLength: e,
+                    multipartContentType: t,
+                    body: n,
+                    options: r
+                }, E_)
+            }
+            filterBlobs(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, D_)
+            }
+        }, y_ = Ho(wd, !0), b_ = {
+            path: `/`,
+            httpMethod: `PUT`,
+            responses: {
+                202: {
+                    headersMapper: ff
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: pf
+                }
+            },
+            requestBody: Wm,
+            queryParameters: [Km, qm, B],
+            urlParameters: [z],
+            headerParameters: [Um, Gm, V, H],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `xml`,
+            serializer: y_
+        }, x_ = {
+            path: `/`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: Td,
+                    headersMapper: mf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: hf
+                }
+            },
+            queryParameters: [Km, qm, B],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: y_
+        }, S_ = {
+            path: `/`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: jd,
+                    headersMapper: gf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: _f
+                }
+            },
+            queryParameters: [Km, B, Jm],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: y_
+        }, C_ = {
+            path: `/`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: Nd,
+                    headersMapper: vf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: yf
+                }
+            },
+            queryParameters: [B, Ym, Xm, Zm, Qm, $m],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: y_
+        }, w_ = {
+            path: `/`,
+            httpMethod: `POST`,
+            responses: {
+                200: {
+                    bodyMapper: Ld,
+                    headersMapper: bf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: xf
+                }
+            },
+            requestBody: eh,
+            queryParameters: [Km, B, th],
+            urlParameters: [z],
+            headerParameters: [Um, Gm, V, H],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `xml`,
+            serializer: y_
+        }, T_ = {
+            path: `/`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    headersMapper: Sf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Cf
+                }
+            },
+            queryParameters: [qm, B, nh],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: y_
+        }, E_ = {
+            path: `/`,
+            httpMethod: `POST`,
+            responses: {
+                202: {
+                    bodyMapper: {
+                        type: {
+                            name: `Stream`
+                        },
+                        serializedName: `parsedResponse`
+                    },
+                    headersMapper: wf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Tf
+                }
+            },
+            requestBody: rh,
+            queryParameters: [B, ih],
+            urlParameters: [z],
+            headerParameters: [Gm, V, H, ah, oh],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `xml`,
+            serializer: y_
+        }, D_ = {
+            path: `/`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: Rd,
+                    headersMapper: Ef
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Df
+                }
+            },
+            queryParameters: [B, Zm, Qm, sh, ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: y_
+        }
+    })),
+    k_, A_, j_, M_, N_, P_, F_, I_, L_, R_, z_, B_, V_, H_, U_, W_, G_, K_, q_, J_, Y_ = e((() => {
+        Cc(), Hm(), __(), s(), k_ = class {
+            constructor(e) {
+                h(this, `client`, void 0), this.client = e
+            }
+            create(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, j_)
+            }
+            getProperties(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, M_)
+            }
+            delete(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, N_)
+            }
+            setMetadata(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, P_)
+            }
+            getAccessPolicy(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, F_)
+            }
+            setAccessPolicy(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, I_)
+            }
+            restore(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, L_)
+            }
+            rename(e, t) {
+                return this.client.sendOperationRequest({
+                    sourceContainerName: e,
+                    options: t
+                }, R_)
+            }
+            submitBatch(e, t, n, r) {
+                return this.client.sendOperationRequest({
+                    contentLength: e,
+                    multipartContentType: t,
+                    body: n,
+                    options: r
+                }, z_)
+            }
+            filterBlobs(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, B_)
+            }
+            acquireLease(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, V_)
+            }
+            releaseLease(e, t) {
+                return this.client.sendOperationRequest({
+                    leaseId: e,
+                    options: t
+                }, H_)
+            }
+            renewLease(e, t) {
+                return this.client.sendOperationRequest({
+                    leaseId: e,
+                    options: t
+                }, U_)
+            }
+            breakLease(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, W_)
+            }
+            changeLease(e, t, n) {
+                return this.client.sendOperationRequest({
+                    leaseId: e,
+                    proposedLeaseId: t,
+                    options: n
+                }, G_)
+            }
+            listBlobFlatSegment(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, K_)
+            }
+            listBlobHierarchySegment(e, t) {
+                return this.client.sendOperationRequest({
+                    delimiter: e,
+                    options: t
+                }, q_)
+            }
+            getAccountInfo(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, J_)
+            }
+        }, A_ = Ho(wd, !0), j_ = {
+            path: `/{containerName}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Of
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: kf
+                }
+            },
+            queryParameters: [B, lh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, uh, dh, fh, ph],
+            isXML: !0,
+            serializer: A_
+        }, M_ = {
+            path: `/{containerName}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    headersMapper: Af
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: jf
+                }
+            },
+            queryParameters: [B, lh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W],
+            isXML: !0,
+            serializer: A_
+        }, N_ = {
+            path: `/{containerName}`,
+            httpMethod: `DELETE`,
+            responses: {
+                202: {
+                    headersMapper: Mf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Nf
+                }
+            },
+            queryParameters: [B, lh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, G, K],
+            isXML: !0,
+            serializer: A_
+        }, P_ = {
+            path: `/{containerName}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Pf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Ff
+                }
+            },
+            queryParameters: [B, lh, mh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, uh, W, G],
+            isXML: !0,
+            serializer: A_
+        }, F_ = {
+            path: `/{containerName}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: {
+                        type: {
+                            name: `Sequence`,
+                            element: {
+                                type: {
+                                    name: `Composite`,
+                                    className: `SignedIdentifier`
+                                }
+                            }
+                        },
+                        serializedName: `SignedIdentifiers`,
+                        xmlName: `SignedIdentifiers`,
+                        xmlIsWrapped: !0,
+                        xmlElementName: `SignedIdentifier`
+                    },
+                    headersMapper: If
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Lf
+                }
+            },
+            queryParameters: [B, lh, hh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W],
+            isXML: !0,
+            serializer: A_
+        }, I_ = {
+            path: `/{containerName}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Rf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: zf
+                }
+            },
+            requestBody: gh,
+            queryParameters: [B, lh, hh],
+            urlParameters: [z],
+            headerParameters: [Um, Gm, V, H, dh, W, G, K],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `xml`,
+            serializer: A_
+        }, L_ = {
+            path: `/{containerName}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Bf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Vf
+                }
+            },
+            queryParameters: [B, lh, _h],
+            urlParameters: [z],
+            headerParameters: [V, H, U, vh, yh],
+            isXML: !0,
+            serializer: A_
+        }, R_ = {
+            path: `/{containerName}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Hf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Uf
+                }
+            },
+            queryParameters: [B, lh, bh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, xh, Sh],
+            isXML: !0,
+            serializer: A_
+        }, z_ = {
+            path: `/{containerName}`,
+            httpMethod: `POST`,
+            responses: {
+                202: {
+                    bodyMapper: {
+                        type: {
+                            name: `Stream`
+                        },
+                        serializedName: `parsedResponse`
+                    },
+                    headersMapper: Wf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Gf
+                }
+            },
+            requestBody: rh,
+            queryParameters: [B, ih, lh],
+            urlParameters: [z],
+            headerParameters: [Gm, V, H, ah, oh],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `xml`,
+            serializer: A_
+        }, B_ = {
+            path: `/{containerName}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: Rd,
+                    headersMapper: Kf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: qf
+                }
+            },
+            queryParameters: [B, Zm, Qm, sh, ch, lh],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: A_
+        }, V_ = {
+            path: `/{containerName}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Jf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Yf
+                }
+            },
+            queryParameters: [B, lh, Ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, wh, Th, Eh],
+            isXML: !0,
+            serializer: A_
+        }, H_ = {
+            path: `/{containerName}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Xf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Zf
+                }
+            },
+            queryParameters: [B, lh, Ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, Dh, Oh],
+            isXML: !0,
+            serializer: A_
+        }, U_ = {
+            path: `/{containerName}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Qf
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: $f
+                }
+            },
+            queryParameters: [B, lh, Ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, Oh, kh],
+            isXML: !0,
+            serializer: A_
+        }, W_ = {
+            path: `/{containerName}`,
+            httpMethod: `PUT`,
+            responses: {
+                202: {
+                    headersMapper: ep
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: tp
+                }
+            },
+            queryParameters: [B, lh, Ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, Ah, jh],
+            isXML: !0,
+            serializer: A_
+        }, G_ = {
+            path: `/{containerName}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: np
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: rp
+                }
+            },
+            queryParameters: [B, lh, Ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, Oh, Mh, Nh],
+            isXML: !0,
+            serializer: A_
+        }, K_ = {
+            path: `/{containerName}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: Wd,
+                    headersMapper: ip
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: ap
+                }
+            },
+            queryParameters: [B, Ym, Xm, Zm, Qm, lh, Ph],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: A_
+        }, q_ = {
+            path: `/{containerName}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: Yd,
+                    headersMapper: op
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: sp
+                }
+            },
+            queryParameters: [B, Ym, Xm, Zm, Qm, lh, Ph, Fh],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: A_
+        }, J_ = {
+            path: `/{containerName}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    headersMapper: cp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: lp
+                }
+            },
+            queryParameters: [qm, B, nh],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: A_
+        }
+    })),
+    X_, Z_, Q_, $_, ev, tv, nv, rv, iv, av, ov, sv, cv, lv, uv, dv, fv, pv, mv, hv, gv, _v, vv, yv, bv, xv, Sv = e((() => {
+        Cc(), Hm(), __(), s(), X_ = class {
+            constructor(e) {
+                h(this, `client`, void 0), this.client = e
+            }
+            download(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, Q_)
+            }
+            getProperties(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, $_)
+            }
+            delete(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, ev)
+            }
+            undelete(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, tv)
+            }
+            setExpiry(e, t) {
+                return this.client.sendOperationRequest({
+                    expiryOptions: e,
+                    options: t
+                }, nv)
+            }
+            setHttpHeaders(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, rv)
+            }
+            setImmutabilityPolicy(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, iv)
+            }
+            deleteImmutabilityPolicy(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, av)
+            }
+            setLegalHold(e, t) {
+                return this.client.sendOperationRequest({
+                    legalHold: e,
+                    options: t
+                }, ov)
+            }
+            setMetadata(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, sv)
+            }
+            acquireLease(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, cv)
+            }
+            releaseLease(e, t) {
+                return this.client.sendOperationRequest({
+                    leaseId: e,
+                    options: t
+                }, lv)
+            }
+            renewLease(e, t) {
+                return this.client.sendOperationRequest({
+                    leaseId: e,
+                    options: t
+                }, uv)
+            }
+            changeLease(e, t, n) {
+                return this.client.sendOperationRequest({
+                    leaseId: e,
+                    proposedLeaseId: t,
+                    options: n
+                }, dv)
+            }
+            breakLease(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, fv)
+            }
+            createSnapshot(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, pv)
+            }
+            startCopyFromURL(e, t) {
+                return this.client.sendOperationRequest({
+                    copySource: e,
+                    options: t
+                }, mv)
+            }
+            copyFromURL(e, t) {
+                return this.client.sendOperationRequest({
+                    copySource: e,
+                    options: t
+                }, hv)
+            }
+            abortCopyFromURL(e, t) {
+                return this.client.sendOperationRequest({
+                    copyId: e,
+                    options: t
+                }, gv)
+            }
+            setTier(e, t) {
+                return this.client.sendOperationRequest({
+                    tier: e,
+                    options: t
+                }, _v)
+            }
+            getAccountInfo(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, vv)
+            }
+            query(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, yv)
+            }
+            getTags(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, bv)
+            }
+            setTags(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, xv)
+            }
+        }, Z_ = Ho(wd, !0), Q_ = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: {
+                        type: {
+                            name: `Stream`
+                        },
+                        serializedName: `parsedResponse`
+                    },
+                    headersMapper: up
+                },
+                206: {
+                    bodyMapper: {
+                        type: {
+                            name: `Stream`
+                        },
+                        serializedName: `parsedResponse`
+                    },
+                    headersMapper: up
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: dp
+                }
+            },
+            queryParameters: [B, Ih, Lh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, G, K, Rh, zh, Bh, Vh, Hh, Uh, Wh, Gh, q],
+            isXML: !0,
+            serializer: Z_
+        }, $_ = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `HEAD`,
+            responses: {
+                200: {
+                    headersMapper: fp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: pp
+                }
+            },
+            queryParameters: [B, Ih, Lh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, G, K, Vh, Hh, Uh, Wh, Gh, q],
+            isXML: !0,
+            serializer: Z_
+        }, ev = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `DELETE`,
+            responses: {
+                202: {
+                    headersMapper: mp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: hp
+                }
+            },
+            queryParameters: [B, Ih, Lh, qh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, G, K, Wh, Gh, q, Kh],
+            isXML: !0,
+            serializer: Z_
+        }, tv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: gp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: _p
+                }
+            },
+            queryParameters: [B, _h],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: Z_
+        }, nv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: vp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: yp
+                }
+            },
+            queryParameters: [B, Jh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, Yh, Xh],
+            isXML: !0,
+            serializer: Z_
+        }, rv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: bp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: xp
+                }
+            },
+            queryParameters: [qm, B],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, G, K, Wh, Gh, q, Zh, Qh, $h, eg, tg, ng],
+            isXML: !0,
+            serializer: Z_
+        }, iv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Sp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Cp
+                }
+            },
+            queryParameters: [B, Ih, Lh, rg],
+            urlParameters: [z],
+            headerParameters: [V, H, U, K, ig, ag],
+            isXML: !0,
+            serializer: Z_
+        }, av = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `DELETE`,
+            responses: {
+                200: {
+                    headersMapper: wp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Tp
+                }
+            },
+            queryParameters: [B, Ih, Lh, rg],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: Z_
+        }, ov = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Ep
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Dp
+                }
+            },
+            queryParameters: [B, Ih, Lh, og],
+            urlParameters: [z],
+            headerParameters: [V, H, U, sg],
+            isXML: !0,
+            serializer: Z_
+        }, sv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Op
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: kp
+                }
+            },
+            queryParameters: [B, mh],
+            urlParameters: [z],
+            headerParameters: [V, H, U, uh, W, G, K, Vh, Hh, Uh, Wh, Gh, q, cg],
+            isXML: !0,
+            serializer: Z_
+        }, cv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Ap
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: jp
+                }
+            },
+            queryParameters: [B, Ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, wh, Th, Eh, Wh, Gh, q],
+            isXML: !0,
+            serializer: Z_
+        }, lv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Mp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Np
+                }
+            },
+            queryParameters: [B, Ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, Dh, Oh, Wh, Gh, q],
+            isXML: !0,
+            serializer: Z_
+        }, uv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Pp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Fp
+                }
+            },
+            queryParameters: [B, Ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, Oh, kh, Wh, Gh, q],
+            isXML: !0,
+            serializer: Z_
+        }, dv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Ip
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Lp
+                }
+            },
+            queryParameters: [B, Ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, Oh, Mh, Nh, Wh, Gh, q],
+            isXML: !0,
+            serializer: Z_
+        }, fv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                202: {
+                    headersMapper: Rp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: zp
+                }
+            },
+            queryParameters: [B, Ch],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, Ah, jh, Wh, Gh, q],
+            isXML: !0,
+            serializer: Z_
+        }, pv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Bp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Vp
+                }
+            },
+            queryParameters: [B, lg],
+            urlParameters: [z],
+            headerParameters: [V, H, U, uh, W, G, K, Vh, Hh, Uh, Wh, Gh, q, cg],
+            isXML: !0,
+            serializer: Z_
+        }, mv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                202: {
+                    headersMapper: Hp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Up
+                }
+            },
+            queryParameters: [B],
+            urlParameters: [z],
+            headerParameters: [V, H, U, uh, W, G, K, Wh, Gh, q, ig, ag, ug, dg, fg, pg, mg, hg, gg, _g, vg, yg, bg],
+            isXML: !0,
+            serializer: Z_
+        }, hv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                202: {
+                    headersMapper: Wp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Gp
+                }
+            },
+            queryParameters: [B],
+            urlParameters: [z],
+            headerParameters: [V, H, U, uh, W, G, K, Wh, Gh, q, ig, ag, cg, ug, fg, pg, mg, hg, _g, vg, bg, xg, Sg, Cg, wg, Tg],
+            isXML: !0,
+            serializer: Z_
+        }, gv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                204: {
+                    headersMapper: Kp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: qp
+                }
+            },
+            queryParameters: [B, Eg, Og],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, Dg],
+            isXML: !0,
+            serializer: Z_
+        }, _v = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Jp
+                },
+                202: {
+                    headersMapper: Jp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Yp
+                }
+            },
+            queryParameters: [B, Ih, Lh, kg],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, q, dg, Ag],
+            isXML: !0,
+            serializer: Z_
+        }, vv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    headersMapper: Xp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Zp
+                }
+            },
+            queryParameters: [qm, B, nh],
+            urlParameters: [z],
+            headerParameters: [V, H, U],
+            isXML: !0,
+            serializer: Z_
+        }, yv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `POST`,
+            responses: {
+                200: {
+                    bodyMapper: {
+                        type: {
+                            name: `Stream`
+                        },
+                        serializedName: `parsedResponse`
+                    },
+                    headersMapper: Qp
+                },
+                206: {
+                    bodyMapper: {
+                        type: {
+                            name: `Stream`
+                        },
+                        serializedName: `parsedResponse`
+                    },
+                    headersMapper: Qp
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: $p
+                }
+            },
+            requestBody: jg,
+            queryParameters: [B, Ih, Mg],
+            urlParameters: [z],
+            headerParameters: [Um, Gm, V, H, W, G, K, Vh, Hh, Uh, Wh, Gh, q],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `xml`,
+            serializer: Z_
+        }, bv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: Bd,
+                    headersMapper: em
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: tm
+                }
+            },
+            queryParameters: [B, Ih, Lh, Ng],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, q],
+            isXML: !0,
+            serializer: Z_
+        }, xv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                204: {
+                    headersMapper: nm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: rm
+                }
+            },
+            requestBody: Pg,
+            queryParameters: [B, Lh, Ng],
+            urlParameters: [z],
+            headerParameters: [Um, Gm, V, H, W, q, Fg, Ig],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `xml`,
+            serializer: Z_
+        }
+    })),
+    Cv, wv, Tv, Ev, Dv, Ov, kv, Av, jv, Mv, Nv, Pv = e((() => {
+        Cc(), Hm(), __(), s(), Cv = class {
+            constructor(e) {
+                h(this, `client`, void 0), this.client = e
+            }
+            create(e, t, n) {
+                return this.client.sendOperationRequest({
+                    contentLength: e,
+                    blobContentLength: t,
+                    options: n
+                }, Tv)
+            }
+            uploadPages(e, t, n) {
+                return this.client.sendOperationRequest({
+                    contentLength: e,
+                    body: t,
+                    options: n
+                }, Ev)
+            }
+            clearPages(e, t) {
+                return this.client.sendOperationRequest({
+                    contentLength: e,
+                    options: t
+                }, Dv)
+            }
+            uploadPagesFromURL(e, t, n, r, i) {
+                return this.client.sendOperationRequest({
+                    sourceUrl: e,
+                    sourceRange: t,
+                    contentLength: n,
+                    range: r,
+                    options: i
+                }, Ov)
+            }
+            getPageRanges(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, kv)
+            }
+            getPageRangesDiff(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, Av)
+            }
+            resize(e, t) {
+                return this.client.sendOperationRequest({
+                    blobContentLength: e,
+                    options: t
+                }, jv)
+            }
+            updateSequenceNumber(e, t) {
+                return this.client.sendOperationRequest({
+                    sequenceNumberAction: e,
+                    options: t
+                }, Mv)
+            }
+            copyIncremental(e, t) {
+                return this.client.sendOperationRequest({
+                    copySource: e,
+                    options: t
+                }, Nv)
+            }
+        }, wv = Ho(wd, !0), Tv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: im
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: am
+                }
+            },
+            queryParameters: [B],
+            urlParameters: [z],
+            headerParameters: [V, H, U, ah, uh, W, G, K, Vh, Hh, Uh, Wh, Gh, q, Zh, Qh, $h, eg, tg, ng, ig, ag, cg, ug, vg, bg, Lg, Rg, zg],
+            isXML: !0,
+            serializer: wv
+        }, Ev = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: om
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: sm
+                }
+            },
+            requestBody: Vg,
+            queryParameters: [B, Ug],
+            urlParameters: [z],
+            headerParameters: [V, H, ah, W, G, K, Rh, Vh, Hh, Uh, Wh, Gh, q, cg, Fg, Ig, Bg, Hg, Wg, Gg, Kg, qg],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `binary`,
+            serializer: wv
+        }, Dv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: cm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: lm
+                }
+            },
+            queryParameters: [B, Ug],
+            urlParameters: [z],
+            headerParameters: [V, H, U, ah, W, G, K, Rh, Vh, Hh, Uh, Wh, Gh, q, cg, Gg, Kg, qg, Jg],
+            isXML: !0,
+            serializer: wv
+        }, Ov = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: um
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: dm
+                }
+            },
+            queryParameters: [B, Ug],
+            urlParameters: [z],
+            headerParameters: [V, H, U, ah, W, G, K, Vh, Hh, Uh, Wh, Gh, q, cg, fg, pg, mg, hg, Sg, Cg, Tg, Wg, Gg, Kg, qg, Yg, Xg, Zg, Qg],
+            isXML: !0,
+            serializer: wv
+        }, kv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: tf,
+                    headersMapper: fm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: pm
+                }
+            },
+            queryParameters: [B, Zm, Qm, Ih, $g],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, G, K, Rh, Wh, Gh, q],
+            isXML: !0,
+            serializer: wv
+        }, Av = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: tf,
+                    headersMapper: mm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: hm
+                }
+            },
+            queryParameters: [B, Zm, Qm, Ih, $g, e_],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, G, K, Rh, Wh, Gh, q, t_],
+            isXML: !0,
+            serializer: wv
+        }, jv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: gm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: _m
+                }
+            },
+            queryParameters: [qm, B],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, G, K, Vh, Hh, Uh, Wh, Gh, q, cg, Rg],
+            isXML: !0,
+            serializer: wv
+        }, Mv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: vm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: ym
+                }
+            },
+            queryParameters: [qm, B],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, G, K, Wh, Gh, q, zg, n_],
+            isXML: !0,
+            serializer: wv
+        }, Nv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                202: {
+                    headersMapper: bm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: xm
+                }
+            },
+            queryParameters: [B, r_],
+            urlParameters: [z],
+            headerParameters: [V, H, U, G, K, Wh, Gh, q, _g],
+            isXML: !0,
+            serializer: wv
+        }
+    })),
+    Fv, Iv, Lv, Rv, zv, Bv, Vv = e((() => {
+        Cc(), Hm(), __(), s(), Fv = class {
+            constructor(e) {
+                h(this, `client`, void 0), this.client = e
+            }
+            create(e, t) {
+                return this.client.sendOperationRequest({
+                    contentLength: e,
+                    options: t
+                }, Lv)
+            }
+            appendBlock(e, t, n) {
+                return this.client.sendOperationRequest({
+                    contentLength: e,
+                    body: t,
+                    options: n
+                }, Rv)
+            }
+            appendBlockFromUrl(e, t, n) {
+                return this.client.sendOperationRequest({
+                    sourceUrl: e,
+                    contentLength: t,
+                    options: n
+                }, zv)
+            }
+            seal(e) {
+                return this.client.sendOperationRequest({
+                    options: e
+                }, Bv)
+            }
+        }, Iv = Ho(wd, !0), Lv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Sm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Cm
+                }
+            },
+            queryParameters: [B],
+            urlParameters: [z],
+            headerParameters: [V, H, U, ah, uh, W, G, K, Vh, Hh, Uh, Wh, Gh, q, Zh, Qh, $h, eg, tg, ng, ig, ag, cg, vg, bg, i_],
+            isXML: !0,
+            serializer: Iv
+        }, Rv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: wm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Tm
+                }
+            },
+            requestBody: Vg,
+            queryParameters: [B, a_],
+            urlParameters: [z],
+            headerParameters: [V, H, ah, W, G, K, Vh, Hh, Uh, Wh, Gh, q, cg, Fg, Ig, Bg, Hg, o_, s_],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `binary`,
+            serializer: Iv
+        }, zv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Em
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Dm
+                }
+            },
+            queryParameters: [B, a_],
+            urlParameters: [z],
+            headerParameters: [V, H, U, ah, W, G, K, Vh, Hh, Uh, Wh, Gh, q, cg, fg, pg, mg, hg, Sg, Cg, Tg, Fg, Yg, Zg, o_, s_, c_],
+            isXML: !0,
+            serializer: Iv
+        }, Bv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                200: {
+                    headersMapper: Om
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: km
+                }
+            },
+            queryParameters: [B, l_],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, G, K, Wh, Gh, s_],
+            isXML: !0,
+            serializer: Iv
+        }
+    })),
+    Hv, Uv, Wv, Gv, Kv, qv, Jv, Yv, Xv = e((() => {
+        Cc(), Hm(), __(), s(), Hv = class {
+            constructor(e) {
+                h(this, `client`, void 0), this.client = e
+            }
+            upload(e, t, n) {
+                return this.client.sendOperationRequest({
+                    contentLength: e,
+                    body: t,
+                    options: n
+                }, Wv)
+            }
+            putBlobFromUrl(e, t, n) {
+                return this.client.sendOperationRequest({
+                    contentLength: e,
+                    copySource: t,
+                    options: n
+                }, Gv)
+            }
+            stageBlock(e, t, n, r) {
+                return this.client.sendOperationRequest({
+                    blockId: e,
+                    contentLength: t,
+                    body: n,
+                    options: r
+                }, Kv)
+            }
+            stageBlockFromURL(e, t, n, r) {
+                return this.client.sendOperationRequest({
+                    blockId: e,
+                    contentLength: t,
+                    sourceUrl: n,
+                    options: r
+                }, qv)
+            }
+            commitBlockList(e, t) {
+                return this.client.sendOperationRequest({
+                    blocks: e,
+                    options: t
+                }, Jv)
+            }
+            getBlockList(e, t) {
+                return this.client.sendOperationRequest({
+                    listType: e,
+                    options: t
+                }, Yv)
+            }
+        }, Uv = Ho(wd, !0), Wv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Am
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: jm
+                }
+            },
+            requestBody: Vg,
+            queryParameters: [B],
+            urlParameters: [z],
+            headerParameters: [V, H, ah, uh, W, G, K, Vh, Hh, Uh, Wh, Gh, q, Zh, Qh, $h, eg, tg, ng, ig, ag, cg, ug, vg, bg, Fg, Ig, Bg, Hg, u_],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `binary`,
+            serializer: Uv
+        }, Gv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Mm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Nm
+                }
+            },
+            queryParameters: [B],
+            urlParameters: [z],
+            headerParameters: [V, H, U, ah, uh, W, G, K, Vh, Hh, Uh, Wh, Gh, q, Zh, Qh, $h, eg, tg, ng, cg, ug, fg, pg, mg, hg, gg, _g, vg, Sg, Cg, wg, Tg, Fg, u_, d_],
+            isXML: !0,
+            serializer: Uv
+        }, Kv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Pm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Fm
+                }
+            },
+            requestBody: Vg,
+            queryParameters: [B, f_, p_],
+            urlParameters: [z],
+            headerParameters: [V, H, ah, W, Vh, Hh, Uh, cg, Fg, Ig, Bg, Hg],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `binary`,
+            serializer: Uv
+        }, qv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Im
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Lm
+                }
+            },
+            queryParameters: [B, f_, p_],
+            urlParameters: [z],
+            headerParameters: [V, H, U, ah, W, Vh, Hh, Uh, cg, fg, pg, mg, hg, Sg, Cg, Tg, Yg, Zg, c_],
+            isXML: !0,
+            serializer: Uv
+        }, Jv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `PUT`,
+            responses: {
+                201: {
+                    headersMapper: Rm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: zm
+                }
+            },
+            requestBody: m_,
+            queryParameters: [B, h_],
+            urlParameters: [z],
+            headerParameters: [Um, Gm, V, H, uh, W, G, K, Vh, Hh, Uh, Wh, Gh, q, Zh, Qh, $h, eg, tg, ng, ig, ag, cg, ug, vg, bg, Fg, Ig],
+            isXML: !0,
+            contentType: `application/xml; charset=utf-8`,
+            mediaType: `xml`,
+            serializer: Uv
+        }, Yv = {
+            path: `/{containerName}/{blob}`,
+            httpMethod: `GET`,
+            responses: {
+                200: {
+                    bodyMapper: $d,
+                    headersMapper: Bm
+                },
+                default: {
+                    bodyMapper: R,
+                    headersMapper: Vm
+                }
+            },
+            queryParameters: [B, Ih, h_, g_],
+            urlParameters: [z],
+            headerParameters: [V, H, U, W, q],
+            isXML: !0,
+            serializer: Uv
+        }
+    })),
+    Zv = e((() => {
+        O_(), Y_(), Sv(), Pv(), Vv(), Xv()
+    })),
+    Qv, $v = e((() => {
+        Gc(), Zv(), s(), Qv = class extends Ic {
+            constructor(e, t) {
+                if (e === void 0) throw Error(`'url' cannot be null`);
+                t ||= {};
+                let n = {
+                        requestContentType: `application/json; charset=utf-8`
+                    },
+                    r = `azsdk-js-azure-storage-blob/12.29.1`,
+                    i = t.userAgentOptions && t.userAgentOptions.userAgentPrefix ? `${t.userAgentOptions.userAgentPrefix} ${r}` : `${r}`,
+                    a = {
+                        ...n,
+                        ...t,
+                        userAgentOptions: {
+                            userAgentPrefix: i
+                        },
+                        endpoint: t.endpoint ?? t.baseUri ?? `{url}`
+                    };
+                super(a), h(this, `url`, void 0), h(this, `version`, void 0), h(this, `service`, void 0), h(this, `container`, void 0), h(this, `blob`, void 0), h(this, `pageBlob`, void 0), h(this, `appendBlob`, void 0), h(this, `blockBlob`, void 0), this.url = e, this.version = t.version || `2025-11-05`, this.service = new v_(this), this.container = new k_(this), this.blob = new X_(this), this.pageBlob = new Cv(this), this.appendBlob = new Fv(this), this.blockBlob = new Hv(this)
+            }
+        }
+    })),
+    ey = e((() => {})),
+    ty = e((() => {})),
+    ny = e((() => {})),
+    ry = e((() => {})),
+    iy = e((() => {})),
+    ay = e((() => {})),
+    oy = e((() => {
+        ey(), ty(), ny(), ry(), iy(), ay()
+    })),
+    sy = e((() => {
+        Cd(), $v(), oy()
+    })),
+    cy, ly = e((() => {
+        sy(), cy = class extends Qv {
+            async sendOperationRequest(e, t) {
+                let n = {
+                    ...t
+                };
+                return (n.path === `/{containerName}` || n.path === `/{containerName}/{blob}`) && (n.path = ``), super.sendOperationRequest(e, n)
+            }
+        }
+    })),
+    uy, dy = e((() => {
+        ly(), Sd(), tu(), s(), uy = class {
+            constructor(e, t) {
+                h(this, `url`, void 0), h(this, `accountName`, void 0), h(this, `pipeline`, void 0), h(this, `credential`, void 0), h(this, `storageClientContext`, void 0), h(this, `isHttps`, void 0), this.url = kl(e), this.accountName = Kl(e), this.pipeline = t, this.storageClientContext = new cy(this.url, dd(t)), this.isHttps = Gl(Rl(this.url) || ``, `https`), this.credential = fd(t);
+                let n = this.storageClientContext;
+                n.requestContentType = void 0
+            }
+        }
+    })),
+    J, fy = e((() => {
+        Ra(), Ol(), J = Ia({
+            packageName: `@azure/storage-blob`,
+            packageVersion: pl,
+            namespace: `Microsoft.Storage`
+        })
+    })),
+    py, my = e((() => {
+        s(), py = class e {
+            constructor() {
+                h(this, `read`, !1), h(this, `add`, !1), h(this, `create`, !1), h(this, `write`, !1), h(this, `delete`, !1), h(this, `deleteVersion`, !1), h(this, `tag`, !1), h(this, `move`, !1), h(this, `execute`, !1), h(this, `setImmutabilityPolicy`, !1), h(this, `permanentDelete`, !1)
+            }
+            static parse(t) {
+                let n = new e;
+                for (let e of t) switch (e) {
+                    case `r`:
+                        n.read = !0;
+                        break;
+                    case `a`:
+                        n.add = !0;
+                        break;
+                    case `c`:
+                        n.create = !0;
+                        break;
+                    case `w`:
+                        n.write = !0;
+                        break;
+                    case `d`:
+                        n.delete = !0;
+                        break;
+                    case `x`:
+                        n.deleteVersion = !0;
+                        break;
+                    case `t`:
+                        n.tag = !0;
+                        break;
+                    case `m`:
+                        n.move = !0;
+                        break;
+                    case `e`:
+                        n.execute = !0;
+                        break;
+                    case `i`:
+                        n.setImmutabilityPolicy = !0;
+                        break;
+                    case `y`:
+                        n.permanentDelete = !0;
+                        break;
+                    default:
+                        throw RangeError(`Invalid permission: ${e}`)
+                }
+                return n
+            }
+            static from(t) {
+                let n = new e;
+                return t.read && (n.read = !0), t.add && (n.add = !0), t.create && (n.create = !0), t.write && (n.write = !0), t.delete && (n.delete = !0), t.deleteVersion && (n.deleteVersion = !0), t.tag && (n.tag = !0), t.move && (n.move = !0), t.execute && (n.execute = !0), t.setImmutabilityPolicy && (n.setImmutabilityPolicy = !0), t.permanentDelete && (n.permanentDelete = !0), n
+            }
+            toString() {
+                let e = [];
+                return this.read && e.push(`r`), this.add && e.push(`a`), this.create && e.push(`c`), this.write && e.push(`w`), this.delete && e.push(`d`), this.deleteVersion && e.push(`x`), this.tag && e.push(`t`), this.move && e.push(`m`), this.execute && e.push(`e`), this.setImmutabilityPolicy && e.push(`i`), this.permanentDelete && e.push(`y`), e.join(``)
+            }
+        }
+    })),
+    hy, gy = e((() => {
+        s(), hy = class e {
+            constructor() {
+                h(this, `read`, !1), h(this, `add`, !1), h(this, `create`, !1), h(this, `write`, !1), h(this, `delete`, !1), h(this, `deleteVersion`, !1), h(this, `list`, !1), h(this, `tag`, !1), h(this, `move`, !1), h(this, `execute`, !1), h(this, `setImmutabilityPolicy`, !1), h(this, `permanentDelete`, !1), h(this, `filterByTags`, !1)
+            }
+            static parse(t) {
+                let n = new e;
+                for (let e of t) switch (e) {
+                    case `r`:
+                        n.read = !0;
+                        break;
+                    case `a`:
+                        n.add = !0;
+                        break;
+                    case `c`:
+                        n.create = !0;
+                        break;
+                    case `w`:
+                        n.write = !0;
+                        break;
+                    case `d`:
+                        n.delete = !0;
+                        break;
+                    case `l`:
+                        n.list = !0;
+                        break;
+                    case `t`:
+                        n.tag = !0;
+                        break;
+                    case `x`:
+                        n.deleteVersion = !0;
+                        break;
+                    case `m`:
+                        n.move = !0;
+                        break;
+                    case `e`:
+                        n.execute = !0;
+                        break;
+                    case `i`:
+                        n.setImmutabilityPolicy = !0;
+                        break;
+                    case `y`:
+                        n.permanentDelete = !0;
+                        break;
+                    case `f`:
+                        n.filterByTags = !0;
+                        break;
+                    default:
+                        throw RangeError(`Invalid permission ${e}`)
+                }
+                return n
+            }
+            static from(t) {
+                let n = new e;
+                return t.read && (n.read = !0), t.add && (n.add = !0), t.create && (n.create = !0), t.write && (n.write = !0), t.delete && (n.delete = !0), t.list && (n.list = !0), t.deleteVersion && (n.deleteVersion = !0), t.tag && (n.tag = !0), t.move && (n.move = !0), t.execute && (n.execute = !0), t.setImmutabilityPolicy && (n.setImmutabilityPolicy = !0), t.permanentDelete && (n.permanentDelete = !0), t.filterByTags && (n.filterByTags = !0), n
+            }
+            toString() {
+                let e = [];
+                return this.read && e.push(`r`), this.add && e.push(`a`), this.create && e.push(`c`), this.write && e.push(`w`), this.delete && e.push(`d`), this.deleteVersion && e.push(`x`), this.list && e.push(`l`), this.tag && e.push(`t`), this.move && e.push(`m`), this.execute && e.push(`e`), this.setImmutabilityPolicy && e.push(`i`), this.permanentDelete && e.push(`y`), this.filterByTags && e.push(`f`), e.join(``)
+            }
+        }
+    })),
+    _y, vy = e((() => {
+        _y = class {}
+    }));
+
+function yy(e) {
+    return e.end ? `${e.start}-${e.end}` : e.start
+}
+var by = e((() => {})),
+    xy, Sy, Cy = e((() => {
+        by(), tu(), s(), (function(e) {
+            e.Https = `https`, e.HttpsAndHttp = `https,http`
+        })(xy ||= {}), Sy = class {
+            get ipRange() {
+                if (this.ipRangeInner) return {
+                    end: this.ipRangeInner.end,
+                    start: this.ipRangeInner.start
+                }
+            }
+            constructor(e, t, n, r, i, a, o, s, c, l, u, d, f, p, m, g, _, v, y, b) {
+                h(this, `version`, void 0), h(this, `protocol`, void 0), h(this, `startsOn`, void 0), h(this, `expiresOn`, void 0), h(this, `permissions`, void 0), h(this, `services`, void 0), h(this, `resourceTypes`, void 0), h(this, `identifier`, void 0), h(this, `encryptionScope`, void 0), h(this, `resource`, void 0), h(this, `signature`, void 0), h(this, `cacheControl`, void 0), h(this, `contentDisposition`, void 0), h(this, `contentEncoding`, void 0), h(this, `contentLanguage`, void 0), h(this, `contentType`, void 0), h(this, `ipRangeInner`, void 0), h(this, `signedOid`, void 0), h(this, `signedTenantId`, void 0), h(this, `signedStartsOn`, void 0), h(this, `signedExpiresOn`, void 0), h(this, `signedService`, void 0), h(this, `signedVersion`, void 0), h(this, `preauthorizedAgentObjectId`, void 0), h(this, `correlationId`, void 0), this.version = e, this.signature = t, n !== void 0 && typeof n != `string` ? (this.permissions = n.permissions, this.services = n.services, this.resourceTypes = n.resourceTypes, this.protocol = n.protocol, this.startsOn = n.startsOn, this.expiresOn = n.expiresOn, this.ipRangeInner = n.ipRange, this.identifier = n.identifier, this.encryptionScope = n.encryptionScope, this.resource = n.resource, this.cacheControl = n.cacheControl, this.contentDisposition = n.contentDisposition, this.contentEncoding = n.contentEncoding, this.contentLanguage = n.contentLanguage, this.contentType = n.contentType, n.userDelegationKey && (this.signedOid = n.userDelegationKey.signedObjectId, this.signedTenantId = n.userDelegationKey.signedTenantId, this.signedStartsOn = n.userDelegationKey.signedStartsOn, this.signedExpiresOn = n.userDelegationKey.signedExpiresOn, this.signedService = n.userDelegationKey.signedService, this.signedVersion = n.userDelegationKey.signedVersion, this.preauthorizedAgentObjectId = n.preauthorizedAgentObjectId, this.correlationId = n.correlationId)) : (this.services = r, this.resourceTypes = i, this.expiresOn = s, this.permissions = n, this.protocol = a, this.startsOn = o, this.ipRangeInner = c, this.encryptionScope = b, this.identifier = l, this.resource = u, this.cacheControl = d, this.contentDisposition = f, this.contentEncoding = p, this.contentLanguage = m, this.contentType = g, _ && (this.signedOid = _.signedObjectId, this.signedTenantId = _.signedTenantId, this.signedStartsOn = _.signedStartsOn, this.signedExpiresOn = _.signedExpiresOn, this.signedService = _.signedService, this.signedVersion = _.signedVersion, this.preauthorizedAgentObjectId = v, this.correlationId = y))
+            }
+            toString() {
+                let e = [`sv`, `ss`, `srt`, `spr`, `st`, `se`, `sip`, `si`, `ses`, `skoid`, `sktid`, `skt`, `ske`, `sks`, `skv`, `sr`, `sp`, `sig`, `rscc`, `rscd`, `rsce`, `rscl`, `rsct`, `saoid`, `scid`],
+                    t = [];
+                for (let n of e) switch (n) {
+                    case `sv`:
+                        this.tryAppendQueryParameter(t, n, this.version);
+                        break;
+                    case `ss`:
+                        this.tryAppendQueryParameter(t, n, this.services);
+                        break;
+                    case `srt`:
+                        this.tryAppendQueryParameter(t, n, this.resourceTypes);
+                        break;
+                    case `spr`:
+                        this.tryAppendQueryParameter(t, n, this.protocol);
+                        break;
+                    case `st`:
+                        this.tryAppendQueryParameter(t, n, this.startsOn ? Bl(this.startsOn, !1) : void 0);
+                        break;
+                    case `se`:
+                        this.tryAppendQueryParameter(t, n, this.expiresOn ? Bl(this.expiresOn, !1) : void 0);
+                        break;
+                    case `sip`:
+                        this.tryAppendQueryParameter(t, n, this.ipRange ? yy(this.ipRange) : void 0);
+                        break;
+                    case `si`:
+                        this.tryAppendQueryParameter(t, n, this.identifier);
+                        break;
+                    case `ses`:
+                        this.tryAppendQueryParameter(t, n, this.encryptionScope);
+                        break;
+                    case `skoid`:
+                        this.tryAppendQueryParameter(t, n, this.signedOid);
+                        break;
+                    case `sktid`:
+                        this.tryAppendQueryParameter(t, n, this.signedTenantId);
+                        break;
+                    case `skt`:
+                        this.tryAppendQueryParameter(t, n, this.signedStartsOn ? Bl(this.signedStartsOn, !1) : void 0);
+                        break;
+                    case `ske`:
+                        this.tryAppendQueryParameter(t, n, this.signedExpiresOn ? Bl(this.signedExpiresOn, !1) : void 0);
+                        break;
+                    case `sks`:
+                        this.tryAppendQueryParameter(t, n, this.signedService);
+                        break;
+                    case `skv`:
+                        this.tryAppendQueryParameter(t, n, this.signedVersion);
+                        break;
+                    case `sr`:
+                        this.tryAppendQueryParameter(t, n, this.resource);
+                        break;
+                    case `sp`:
+                        this.tryAppendQueryParameter(t, n, this.permissions);
+                        break;
+                    case `sig`:
+                        this.tryAppendQueryParameter(t, n, this.signature);
+                        break;
+                    case `rscc`:
+                        this.tryAppendQueryParameter(t, n, this.cacheControl);
+                        break;
+                    case `rscd`:
+                        this.tryAppendQueryParameter(t, n, this.contentDisposition);
+                        break;
+                    case `rsce`:
+                        this.tryAppendQueryParameter(t, n, this.contentEncoding);
+                        break;
+                    case `rscl`:
+                        this.tryAppendQueryParameter(t, n, this.contentLanguage);
+                        break;
+                    case `rsct`:
+                        this.tryAppendQueryParameter(t, n, this.contentType);
+                        break;
+                    case `saoid`:
+                        this.tryAppendQueryParameter(t, n, this.preauthorizedAgentObjectId);
+                        break;
+                    case `scid`:
+                        this.tryAppendQueryParameter(t, n, this.correlationId);
+                        break
+                }
+                return t.join(`&`)
+            }
+            tryAppendQueryParameter(e, t, n) {
+                n && (t = encodeURIComponent(t), n = encodeURIComponent(n), t.length > 0 && n.length > 0 && e.push(`${t}=${n}`))
+            }
+        }
+    }));
+
+function wy(e, t, n) {
+    return Ty(e, t, n).sasQueryParameters
+}
+
+function Ty(e, t, n) {
+    let r = e.version ? e.version : ml,
+        i = t instanceof uu ? t : void 0,
+        a;
+    if (i === void 0 && n !== void 0 && (a = new _y(n, t)), i === void 0 && a === void 0) throw TypeError(`Invalid sharedKeyCredential, userDelegationKey or accountName.`);
+    if (r >= `2020-12-06`) return i === void 0 ? r >= `2025-07-05` ? My(e, a) : jy(e, a) : Oy(e, i);
+    if (r >= `2018-11-09`) return i === void 0 ? r >= `2020-02-10` ? Ay(e, a) : ky(e, a) : Dy(e, i);
+    if (r >= `2015-04-05`) {
+        if (i !== void 0) return Ey(e, i);
+        throw RangeError(`'version' must be >= '2018-11-09' when generating user delegation SAS using user delegation key.`)
+    }
+    throw RangeError(`'version' must be >= '2015-04-05'.`)
+}
+
+function Ey(e, t) {
+    if (e = Py(e), !e.identifier && !(e.permissions && e.expiresOn)) throw RangeError(`Must provide 'permissions' and 'expiresOn' for Blob SAS generation when 'identifier' is not provided.`);
+    let n = `c`;
+    e.blobName && (n = `b`);
+    let r;
+    e.permissions && (r = e.blobName ? py.parse(e.permissions.toString()).toString() : hy.parse(e.permissions.toString()).toString());
+    let i = [r || ``, e.startsOn ? Bl(e.startsOn, !1) : ``, e.expiresOn ? Bl(e.expiresOn, !1) : ``, Ny(t.accountName, e.containerName, e.blobName), e.identifier, e.ipRange ? yy(e.ipRange) : ``, e.protocol ? e.protocol : ``, e.version, e.cacheControl ? e.cacheControl : ``, e.contentDisposition ? e.contentDisposition : ``, e.contentEncoding ? e.contentEncoding : ``, e.contentLanguage ? e.contentLanguage : ``, e.contentType ? e.contentType : ``].join(`
+`),
+        a = t.computeHMACSHA256(i);
+    return {
+        sasQueryParameters: new Sy(e.version, a, r, void 0, void 0, e.protocol, e.startsOn, e.expiresOn, e.ipRange, e.identifier, n, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType),
+        stringToSign: i
+    }
+}
+
+function Dy(e, t) {
+    if (e = Py(e), !e.identifier && !(e.permissions && e.expiresOn)) throw RangeError(`Must provide 'permissions' and 'expiresOn' for Blob SAS generation when 'identifier' is not provided.`);
+    let n = `c`,
+        r = e.snapshotTime;
+    e.blobName && (n = `b`, e.snapshotTime ? n = `bs` : e.versionId && (n = `bv`, r = e.versionId));
+    let i;
+    e.permissions && (i = e.blobName ? py.parse(e.permissions.toString()).toString() : hy.parse(e.permissions.toString()).toString());
+    let a = [i || ``, e.startsOn ? Bl(e.startsOn, !1) : ``, e.expiresOn ? Bl(e.expiresOn, !1) : ``, Ny(t.accountName, e.containerName, e.blobName), e.identifier, e.ipRange ? yy(e.ipRange) : ``, e.protocol ? e.protocol : ``, e.version, n, r, e.cacheControl ? e.cacheControl : ``, e.contentDisposition ? e.contentDisposition : ``, e.contentEncoding ? e.contentEncoding : ``, e.contentLanguage ? e.contentLanguage : ``, e.contentType ? e.contentType : ``].join(`
+`),
+        o = t.computeHMACSHA256(a);
+    return {
+        sasQueryParameters: new Sy(e.version, o, i, void 0, void 0, e.protocol, e.startsOn, e.expiresOn, e.ipRange, e.identifier, n, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType),
+        stringToSign: a
+    }
+}
+
+function Oy(e, t) {
+    if (e = Py(e), !e.identifier && !(e.permissions && e.expiresOn)) throw RangeError(`Must provide 'permissions' and 'expiresOn' for Blob SAS generation when 'identifier' is not provided.`);
+    let n = `c`,
+        r = e.snapshotTime;
+    e.blobName && (n = `b`, e.snapshotTime ? n = `bs` : e.versionId && (n = `bv`, r = e.versionId));
+    let i;
+    e.permissions && (i = e.blobName ? py.parse(e.permissions.toString()).toString() : hy.parse(e.permissions.toString()).toString());
+    let a = [i || ``, e.startsOn ? Bl(e.startsOn, !1) : ``, e.expiresOn ? Bl(e.expiresOn, !1) : ``, Ny(t.accountName, e.containerName, e.blobName), e.identifier, e.ipRange ? yy(e.ipRange) : ``, e.protocol ? e.protocol : ``, e.version, n, r, e.encryptionScope, e.cacheControl ? e.cacheControl : ``, e.contentDisposition ? e.contentDisposition : ``, e.contentEncoding ? e.contentEncoding : ``, e.contentLanguage ? e.contentLanguage : ``, e.contentType ? e.contentType : ``].join(`
+`),
+        o = t.computeHMACSHA256(a);
+    return {
+        sasQueryParameters: new Sy(e.version, o, i, void 0, void 0, e.protocol, e.startsOn, e.expiresOn, e.ipRange, e.identifier, n, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType, void 0, void 0, void 0, e.encryptionScope),
+        stringToSign: a
+    }
+}
+
+function ky(e, t) {
+    if (e = Py(e), !e.permissions || !e.expiresOn) throw RangeError(`Must provide 'permissions' and 'expiresOn' for Blob SAS generation when generating user delegation SAS.`);
+    let n = `c`,
+        r = e.snapshotTime;
+    e.blobName && (n = `b`, e.snapshotTime ? n = `bs` : e.versionId && (n = `bv`, r = e.versionId));
+    let i;
+    e.permissions && (i = e.blobName ? py.parse(e.permissions.toString()).toString() : hy.parse(e.permissions.toString()).toString());
+    let a = [i || ``, e.startsOn ? Bl(e.startsOn, !1) : ``, e.expiresOn ? Bl(e.expiresOn, !1) : ``, Ny(t.accountName, e.containerName, e.blobName), t.userDelegationKey.signedObjectId, t.userDelegationKey.signedTenantId, t.userDelegationKey.signedStartsOn ? Bl(t.userDelegationKey.signedStartsOn, !1) : ``, t.userDelegationKey.signedExpiresOn ? Bl(t.userDelegationKey.signedExpiresOn, !1) : ``, t.userDelegationKey.signedService, t.userDelegationKey.signedVersion, e.ipRange ? yy(e.ipRange) : ``, e.protocol ? e.protocol : ``, e.version, n, r, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType].join(`
+`),
+        o = t.computeHMACSHA256(a);
+    return {
+        sasQueryParameters: new Sy(e.version, o, i, void 0, void 0, e.protocol, e.startsOn, e.expiresOn, e.ipRange, e.identifier, n, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType, t.userDelegationKey),
+        stringToSign: a
+    }
+}
+
+function Ay(e, t) {
+    if (e = Py(e), !e.permissions || !e.expiresOn) throw RangeError(`Must provide 'permissions' and 'expiresOn' for Blob SAS generation when generating user delegation SAS.`);
+    let n = `c`,
+        r = e.snapshotTime;
+    e.blobName && (n = `b`, e.snapshotTime ? n = `bs` : e.versionId && (n = `bv`, r = e.versionId));
+    let i;
+    e.permissions && (i = e.blobName ? py.parse(e.permissions.toString()).toString() : hy.parse(e.permissions.toString()).toString());
+    let a = [i || ``, e.startsOn ? Bl(e.startsOn, !1) : ``, e.expiresOn ? Bl(e.expiresOn, !1) : ``, Ny(t.accountName, e.containerName, e.blobName), t.userDelegationKey.signedObjectId, t.userDelegationKey.signedTenantId, t.userDelegationKey.signedStartsOn ? Bl(t.userDelegationKey.signedStartsOn, !1) : ``, t.userDelegationKey.signedExpiresOn ? Bl(t.userDelegationKey.signedExpiresOn, !1) : ``, t.userDelegationKey.signedService, t.userDelegationKey.signedVersion, e.preauthorizedAgentObjectId, void 0, e.correlationId, e.ipRange ? yy(e.ipRange) : ``, e.protocol ? e.protocol : ``, e.version, n, r, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType].join(`
+`),
+        o = t.computeHMACSHA256(a);
+    return {
+        sasQueryParameters: new Sy(e.version, o, i, void 0, void 0, e.protocol, e.startsOn, e.expiresOn, e.ipRange, e.identifier, n, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType, t.userDelegationKey, e.preauthorizedAgentObjectId, e.correlationId),
+        stringToSign: a
+    }
+}
+
+function jy(e, t) {
+    if (e = Py(e), !e.permissions || !e.expiresOn) throw RangeError(`Must provide 'permissions' and 'expiresOn' for Blob SAS generation when generating user delegation SAS.`);
+    let n = `c`,
+        r = e.snapshotTime;
+    e.blobName && (n = `b`, e.snapshotTime ? n = `bs` : e.versionId && (n = `bv`, r = e.versionId));
+    let i;
+    e.permissions && (i = e.blobName ? py.parse(e.permissions.toString()).toString() : hy.parse(e.permissions.toString()).toString());
+    let a = [i || ``, e.startsOn ? Bl(e.startsOn, !1) : ``, e.expiresOn ? Bl(e.expiresOn, !1) : ``, Ny(t.accountName, e.containerName, e.blobName), t.userDelegationKey.signedObjectId, t.userDelegationKey.signedTenantId, t.userDelegationKey.signedStartsOn ? Bl(t.userDelegationKey.signedStartsOn, !1) : ``, t.userDelegationKey.signedExpiresOn ? Bl(t.userDelegationKey.signedExpiresOn, !1) : ``, t.userDelegationKey.signedService, t.userDelegationKey.signedVersion, e.preauthorizedAgentObjectId, void 0, e.correlationId, e.ipRange ? yy(e.ipRange) : ``, e.protocol ? e.protocol : ``, e.version, n, r, e.encryptionScope, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType].join(`
+`),
+        o = t.computeHMACSHA256(a);
+    return {
+        sasQueryParameters: new Sy(e.version, o, i, void 0, void 0, e.protocol, e.startsOn, e.expiresOn, e.ipRange, e.identifier, n, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType, t.userDelegationKey, e.preauthorizedAgentObjectId, e.correlationId, e.encryptionScope),
+        stringToSign: a
+    }
+}
+
+function My(e, t) {
+    if (e = Py(e), !e.permissions || !e.expiresOn) throw RangeError(`Must provide 'permissions' and 'expiresOn' for Blob SAS generation when generating user delegation SAS.`);
+    let n = `c`,
+        r = e.snapshotTime;
+    e.blobName && (n = `b`, e.snapshotTime ? n = `bs` : e.versionId && (n = `bv`, r = e.versionId));
+    let i;
+    e.permissions && (i = e.blobName ? py.parse(e.permissions.toString()).toString() : hy.parse(e.permissions.toString()).toString());
+    let a = [i || ``, e.startsOn ? Bl(e.startsOn, !1) : ``, e.expiresOn ? Bl(e.expiresOn, !1) : ``, Ny(t.accountName, e.containerName, e.blobName), t.userDelegationKey.signedObjectId, t.userDelegationKey.signedTenantId, t.userDelegationKey.signedStartsOn ? Bl(t.userDelegationKey.signedStartsOn, !1) : ``, t.userDelegationKey.signedExpiresOn ? Bl(t.userDelegationKey.signedExpiresOn, !1) : ``, t.userDelegationKey.signedService, t.userDelegationKey.signedVersion, e.preauthorizedAgentObjectId, void 0, e.correlationId, void 0, void 0, e.ipRange ? yy(e.ipRange) : ``, e.protocol ? e.protocol : ``, e.version, n, r, e.encryptionScope, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType].join(`
+`),
+        o = t.computeHMACSHA256(a);
+    return {
+        sasQueryParameters: new Sy(e.version, o, i, void 0, void 0, e.protocol, e.startsOn, e.expiresOn, e.ipRange, e.identifier, n, e.cacheControl, e.contentDisposition, e.contentEncoding, e.contentLanguage, e.contentType, t.userDelegationKey, e.preauthorizedAgentObjectId, e.correlationId, e.encryptionScope),
+        stringToSign: a
+    }
+}
+
+function Ny(e, t, n) {
+    let r = [`/blob/${e}/${t}`];
+    return n && r.push(`/${n}`), r.join(``)
+}
+
+function Py(e) {
+    let t = e.version ? e.version : ml;
+    if (e.snapshotTime && t < `2018-11-09`) throw RangeError(`'version' must be >= '2018-11-09' when providing 'snapshotTime'.`);
+    if (e.blobName === void 0 && e.snapshotTime) throw RangeError(`Must provide 'blobName' when providing 'snapshotTime'.`);
+    if (e.versionId && t < `2019-10-10`) throw RangeError(`'version' must be >= '2019-10-10' when providing 'versionId'.`);
+    if (e.blobName === void 0 && e.versionId) throw RangeError(`Must provide 'blobName' when providing 'versionId'.`);
+    if (e.permissions && e.permissions.setImmutabilityPolicy && t < `2020-08-04`) throw RangeError(`'version' must be >= '2020-08-04' when provided 'i' permission.`);
+    if (e.permissions && e.permissions.deleteVersion && t < `2019-10-10`) throw RangeError(`'version' must be >= '2019-10-10' when providing 'x' permission.`);
+    if (e.permissions && e.permissions.permanentDelete && t < `2019-10-10`) throw RangeError(`'version' must be >= '2019-10-10' when providing 'y' permission.`);
+    if (e.permissions && e.permissions.tag && t < `2019-12-12`) throw RangeError(`'version' must be >= '2019-12-12' when providing 't' permission.`);
+    if (t < `2020-02-10` && e.permissions && (e.permissions.move || e.permissions.execute)) throw RangeError(`'version' must be >= '2020-02-10' when providing the 'm' or 'e' permission.`);
+    if (t < `2021-04-10` && e.permissions && e.permissions.filterByTags) throw RangeError(`'version' must be >= '2021-04-10' when providing the 'f' permission.`);
+    if (t < `2020-02-10` && (e.preauthorizedAgentObjectId || e.correlationId)) throw RangeError(`'version' must be >= '2020-02-10' when providing 'preauthorizedAgentObjectId' or 'correlationId'.`);
+    if (e.encryptionScope && t < `2020-12-06`) throw RangeError(`'version' must be >= '2020-12-06' when provided 'encryptionScope' in SAS.`);
+    return e.version = t, e
+}
+var Fy = e((() => {
+        my(), gy(), du(), vy(), by(), Cy(), Ol(), tu()
+    })),
+    Iy, Ly = e((() => {
+        ta(), Ol(), fy(), tu(), s(), Iy = class {
+            get leaseId() {
+                return this._leaseId
+            }
+            get url() {
+                return this._url
+            }
+            constructor(e, t) {
+                h(this, `_leaseId`, void 0), h(this, `_url`, void 0), h(this, `_containerOrBlobOperation`, void 0), h(this, `_isContainer`, void 0);
+                let n = e.storageClientContext;
+                this._url = e.url, e.name === void 0 ? (this._isContainer = !0, this._containerOrBlobOperation = n.container) : (this._isContainer = !1, this._containerOrBlobOperation = n.blob), t ||= $i(), this._leaseId = t
+            }
+            async acquireLease(e, t = {}) {
+                if (this._isContainer && (t.conditions?.ifMatch && t.conditions?.ifMatch !== `` || t.conditions?.ifNoneMatch && t.conditions?.ifNoneMatch !== `` || t.conditions?.tagConditions)) throw RangeError(`The IfMatch, IfNoneMatch and tags access conditions are ignored by the service. Values other than undefined or their default values are not acceptable.`);
+                return J.withSpan(`BlobLeaseClient-acquireLease`, t, async n => L(await this._containerOrBlobOperation.acquireLease({
+                    abortSignal: t.abortSignal,
+                    duration: e,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    proposedLeaseId: this._leaseId,
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+            async changeLease(e, t = {}) {
+                if (this._isContainer && (t.conditions?.ifMatch && t.conditions?.ifMatch !== `` || t.conditions?.ifNoneMatch && t.conditions?.ifNoneMatch !== `` || t.conditions?.tagConditions)) throw RangeError(`The IfMatch, IfNoneMatch and tags access conditions are ignored by the service. Values other than undefined or their default values are not acceptable.`);
+                return J.withSpan(`BlobLeaseClient-changeLease`, t, async n => {
+                    let r = L(await this._containerOrBlobOperation.changeLease(this._leaseId, e, {
+                        abortSignal: t.abortSignal,
+                        modifiedAccessConditions: {
+                            ...t.conditions,
+                            ifTags: t.conditions?.tagConditions
+                        },
+                        tracingOptions: n.tracingOptions
+                    }));
+                    return this._leaseId = e, r
+                })
+            }
+            async releaseLease(e = {}) {
+                if (this._isContainer && (e.conditions?.ifMatch && e.conditions?.ifMatch !== `` || e.conditions?.ifNoneMatch && e.conditions?.ifNoneMatch !== `` || e.conditions?.tagConditions)) throw RangeError(`The IfMatch, IfNoneMatch and tags access conditions are ignored by the service. Values other than undefined or their default values are not acceptable.`);
+                return J.withSpan(`BlobLeaseClient-releaseLease`, e, async t => L(await this._containerOrBlobOperation.releaseLease(this._leaseId, {
+                    abortSignal: e.abortSignal,
+                    modifiedAccessConditions: {
+                        ...e.conditions,
+                        ifTags: e.conditions?.tagConditions
+                    },
+                    tracingOptions: t.tracingOptions
+                })))
+            }
+            async renewLease(e = {}) {
+                if (this._isContainer && (e.conditions?.ifMatch && e.conditions?.ifMatch !== `` || e.conditions?.ifNoneMatch && e.conditions?.ifNoneMatch !== `` || e.conditions?.tagConditions)) throw RangeError(`The IfMatch, IfNoneMatch and tags access conditions are ignored by the service. Values other than undefined or their default values are not acceptable.`);
+                return J.withSpan(`BlobLeaseClient-renewLease`, e, async t => this._containerOrBlobOperation.renewLease(this._leaseId, {
+                    abortSignal: e.abortSignal,
+                    modifiedAccessConditions: {
+                        ...e.conditions,
+                        ifTags: e.conditions?.tagConditions
+                    },
+                    tracingOptions: t.tracingOptions
+                }))
+            }
+            async breakLease(e, t = {}) {
+                if (this._isContainer && (t.conditions?.ifMatch && t.conditions?.ifMatch !== `` || t.conditions?.ifNoneMatch && t.conditions?.ifNoneMatch !== `` || t.conditions?.tagConditions)) throw RangeError(`The IfMatch, IfNoneMatch and tags access conditions are ignored by the service. Values other than undefined or their default values are not acceptable.`);
+                return J.withSpan(`BlobLeaseClient-breakLease`, t, async n => {
+                    let r = {
+                        abortSignal: t.abortSignal,
+                        breakPeriod: e,
+                        modifiedAccessConditions: {
+                            ...t.conditions,
+                            ifTags: t.conditions?.tagConditions
+                        },
+                        tracingOptions: n.tracingOptions
+                    };
+                    return L(await this._containerOrBlobOperation.breakLease(r))
+                })
+            }
+        }
+    })),
+    Ry = e((() => {})),
+    zy, By = e((() => {
+        s(), zy = class {
+            get acceptRanges() {
+                return this.originalResponse.acceptRanges
+            }
+            get cacheControl() {
+                return this.originalResponse.cacheControl
+            }
+            get contentDisposition() {
+                return this.originalResponse.contentDisposition
+            }
+            get contentEncoding() {
+                return this.originalResponse.contentEncoding
+            }
+            get contentLanguage() {
+                return this.originalResponse.contentLanguage
+            }
+            get blobSequenceNumber() {
+                return this.originalResponse.blobSequenceNumber
+            }
+            get blobType() {
+                return this.originalResponse.blobType
+            }
+            get contentLength() {
+                return this.originalResponse.contentLength
+            }
+            get contentMD5() {
+                return this.originalResponse.contentMD5
+            }
+            get contentRange() {
+                return this.originalResponse.contentRange
+            }
+            get contentType() {
+                return this.originalResponse.contentType
+            }
+            get copyCompletedOn() {}
+            get copyId() {
+                return this.originalResponse.copyId
+            }
+            get copyProgress() {
+                return this.originalResponse.copyProgress
+            }
+            get copySource() {
+                return this.originalResponse.copySource
+            }
+            get copyStatus() {
+                return this.originalResponse.copyStatus
+            }
+            get copyStatusDescription() {
+                return this.originalResponse.copyStatusDescription
+            }
+            get leaseDuration() {
+                return this.originalResponse.leaseDuration
+            }
+            get leaseState() {
+                return this.originalResponse.leaseState
+            }
+            get leaseStatus() {
+                return this.originalResponse.leaseStatus
+            }
+            get date() {
+                return this.originalResponse.date
+            }
+            get blobCommittedBlockCount() {
+                return this.originalResponse.blobCommittedBlockCount
+            }
+            get etag() {
+                return this.originalResponse.etag
+            }
+            get errorCode() {
+                return this.originalResponse.errorCode
+            }
+            get isServerEncrypted() {
+                return this.originalResponse.isServerEncrypted
+            }
+            get blobContentMD5() {
+                return this.originalResponse.blobContentMD5
+            }
+            get lastModified() {
+                return this.originalResponse.lastModified
+            }
+            get metadata() {
+                return this.originalResponse.metadata
+            }
+            get requestId() {
+                return this.originalResponse.requestId
+            }
+            get clientRequestId() {
+                return this.originalResponse.clientRequestId
+            }
+            get version() {
+                return this.originalResponse.version
+            }
+            get encryptionKeySha256() {
+                return this.originalResponse.encryptionKeySha256
+            }
+            get contentCrc64() {
+                return this.originalResponse.contentCrc64
+            }
+            get blobBody() {
+                throw Error(`Quick query in browser is not supported yet.`)
+            }
+            get readableStreamBody() {}
+            get _response() {
+                return this.originalResponse._response
+            }
+            constructor(e, t = {}) {
+                h(this, `originalResponse`, void 0), this.originalResponse = e
+            }
+        }
+    }));
+
+function Vy(e) {
+    if (e !== void 0) return e
+}
+
+function Hy(e, t) {
+    if (e && !t) throw RangeError(`Customer-provided encryption key must be used over HTTPS.`);
+    e && !e.encryptionAlgorithm && (e.encryptionAlgorithm = Cl)
+}
+var Uy, Wy, Gy, Ky = e((() => {
+    Ol(), (function(e) {
+        e.Hot = `Hot`, e.Cool = `Cool`, e.Cold = `Cold`, e.Archive = `Archive`
+    })(Uy ||= {}), (function(e) {
+        e.P4 = `P4`, e.P6 = `P6`, e.P10 = `P10`, e.P15 = `P15`, e.P20 = `P20`, e.P30 = `P30`, e.P40 = `P40`, e.P50 = `P50`, e.P60 = `P60`, e.P70 = `P70`, e.P80 = `P80`
+    })(Wy ||= {}), (function(e) {
+        e.StorageOAuthScopes = `https://storage.azure.com/.default`, e.DiskComputeOAuthScopes = `https://disk.compute.azure.com/.default`
+    })(Gy ||= {})
+}));
+
+function qy(e) {
+    let t = (e._response.parsedBody.pageRange || []).map(e => ({
+            offset: e.start,
+            count: e.end - e.start
+        })),
+        n = (e._response.parsedBody.clearRange || []).map(e => ({
+            offset: e.start,
+            count: e.end - e.start
+        }));
+    return {
+        ...e,
+        pageRange: t,
+        clearRange: n,
+        _response: {
+            ...e._response,
+            parsedBody: {
+                pageRange: t,
+                clearRange: n
+            }
+        }
+    }
+}
+var Jy = e((() => {})),
+    Yy, Xy, Zy, Qy = e((() => {
+        Yy = class e extends Error {
+            constructor(t) {
+                super(t), this.name = `PollerStoppedError`, Object.setPrototypeOf(this, e.prototype)
+            }
+        }, Xy = class e extends Error {
+            constructor(t) {
+                super(t), this.name = `PollerCancelledError`, Object.setPrototypeOf(this, e.prototype)
+            }
+        }, Zy = class {
+            constructor(e) {
+                this.resolveOnUnsuccessful = !1, this.stopped = !0, this.pollProgressCallbacks = [], this.operation = e, this.promise = new Promise((e, t) => {
+                    this.resolve = e, this.reject = t
+                }), this.promise.catch(() => {})
+            }
+            async startPolling(e = {}) {
+                for (this.stopped &&= !1; !this.isStopped() && !this.isDone();) await this.poll(e), await this.delay()
+            }
+            async pollOnce(e = {}) {
+                this.isDone() || (this.operation = await this.operation.update({
+                    abortSignal: e.abortSignal,
+                    fireProgress: this.fireProgress.bind(this)
+                })), this.processUpdatedState()
+            }
+            fireProgress(e) {
+                for (let t of this.pollProgressCallbacks) t(e)
+            }
+            async cancelOnce(e = {}) {
+                this.operation = await this.operation.cancel(e)
+            }
+            poll(e = {}) {
+                if (!this.pollOncePromise) {
+                    this.pollOncePromise = this.pollOnce(e);
+                    let t = () => {
+                        this.pollOncePromise = void 0
+                    };
+                    this.pollOncePromise.then(t, t).catch(this.reject)
+                }
+                return this.pollOncePromise
+            }
+            processUpdatedState() {
+                if (this.operation.state.error && (this.stopped = !0, !this.resolveOnUnsuccessful)) throw this.reject(this.operation.state.error), this.operation.state.error;
+                if (this.operation.state.isCancelled && (this.stopped = !0, !this.resolveOnUnsuccessful)) {
+                    let e = new Xy(`Operation was canceled`);
+                    throw this.reject(e), e
+                }
+                this.isDone() && this.resolve && this.resolve(this.getResult())
+            }
+            async pollUntilDone(e = {}) {
+                return this.stopped && this.startPolling(e).catch(this.reject), this.processUpdatedState(), this.promise
+            }
+            onProgress(e) {
+                return this.pollProgressCallbacks.push(e), () => {
+                    this.pollProgressCallbacks = this.pollProgressCallbacks.filter(t => t !== e)
+                }
+            }
+            isDone() {
+                let e = this.operation.state;
+                return !!(e.isCompleted || e.isCancelled || e.error)
+            }
+            stopPolling() {
+                this.stopped || (this.stopped = !0, this.reject && this.reject(new Yy(`This poller is already stopped`)))
+            }
+            isStopped() {
+                return this.stopped
+            }
+            cancelOperation(e = {}) {
+                if (!this.cancelPromise) this.cancelPromise = this.cancelOnce(e);
+                else if (e.abortSignal) throw Error(`A cancel request is currently pending`);
+                return this.cancelPromise
+            }
+            getOperationState() {
+                return this.operation.state
+            }
+            getResult() {
+                return this.operation.state.result
+            }
+            toString() {
+                return this.operation.toString()
+            }
+        }
+    })),
+    $y = e((() => {
+        _i(), Qy()
+    })),
+    eb = e((() => {})),
+    tb = e((() => {
+        _i(), ta(), $y(), Qy(), eb()
+    }));
+
+function nb(e) {
+    return {
+        state: {
+            ...e
+        },
+        cancel: ib,
+        toString: ob,
+        update: ab
+    }
+}
+var rb, ib, ab, ob, sb = e((() => {
+    ta(), tb(), s(), rb = class extends Zy {
+        constructor(e) {
+            let {
+                blobClient: t,
+                copySource: n,
+                intervalInMs: r = 15e3,
+                onProgress: i,
+                resumeFrom: a,
+                startCopyFromURLOptions: o
+            } = e, s;
+            a && (s = JSON.parse(a).state);
+            let c = nb({
+                ...s,
+                blobClient: t,
+                copySource: n,
+                startCopyFromURLOptions: o
+            });
+            super(c), h(this, `intervalInMs`, void 0), typeof i == `function` && this.onProgress(i), this.intervalInMs = r
+        }
+        delay() {
+            return qi(this.intervalInMs)
+        }
+    }, ib = async function(e = {}) {
+        let t = this.state,
+            {
+                copyId: n
+            } = t;
+        return t.isCompleted ? nb(t) : n ? (await t.blobClient.abortCopyFromURL(n, {
+            abortSignal: e.abortSignal
+        }), t.isCancelled = !0, nb(t)) : (t.isCancelled = !0, nb(t))
+    }, ab = async function(e = {}) {
+        let t = this.state,
+            {
+                blobClient: n,
+                copySource: r,
+                startCopyFromURLOptions: i
+            } = t;
+        if (!t.isStarted) {
+            t.isStarted = !0;
+            let e = await n.startCopyFromURL(r, i);
+            t.copyId = e.copyId, e.copyStatus === `success` && (t.result = e, t.isCompleted = !0)
+        } else if (!t.isCompleted) try {
+            let n = await t.blobClient.getProperties({
+                    abortSignal: e.abortSignal
+                }),
+                {
+                    copyStatus: r,
+                    copyProgress: i
+                } = n,
+                a = t.copyProgress;
+            i && (t.copyProgress = i), r === `pending` && i !== a && typeof e.fireProgress == `function` ? e.fireProgress(t) : r === `success` ? (t.result = n, t.isCompleted = !0) : r === `failed` && (t.error = Error(`Blob copy failed with reason: "${n.copyStatusDescription||`unknown`}"`), t.isCompleted = !0)
+        } catch (e) {
+            t.error = e, t.isCompleted = !0
+        }
+        return nb(t)
+    }, ob = function() {
+        return JSON.stringify({
+            state: this.state
+        }, (e, t) => {
+            if (e !== `blobClient`) return t
+        })
+    }
+}));
+
+function cb(e) {
+    if (e.offset < 0) throw RangeError(`Range.offset cannot be smaller than 0.`);
+    if (e.count && e.count <= 0) throw RangeError(`Range.count must be larger than 0. Leave it undefined if you want a range from offset to the end.`);
+    return e.count ? `bytes=${e.offset}-${e.offset+e.count-1}` : `bytes=${e.offset}-`
+}
+var lb = e((() => {})),
+    ub, db, fb, pb = e((() => {
+        ub = n(l(), 1), s(), (function(e) {
+            e[e.Good = 0] = `Good`, e[e.Error = 1] = `Error`
+        })(db ||= {}), fb = class {
+            constructor(e = 5) {
+                if (h(this, `concurrency`, void 0), h(this, `actives`, 0), h(this, `completed`, 0), h(this, `offset`, 0), h(this, `operations`, []), h(this, `state`, db.Good), h(this, `emitter`, void 0), e < 1) throw RangeError(`concurrency must be larger than 0`);
+                this.concurrency = e, this.emitter = new ub.EventEmitter
+            }
+            addOperation(e) {
+                this.operations.push(async () => {
+                    try {
+                        this.actives++, await e(), this.actives--, this.completed++, this.parallelExecute()
+                    } catch (e) {
+                        this.emitter.emit(`error`, e)
+                    }
+                })
+            }
+            async
+                do() {
+                    return this.operations.length === 0 ? Promise.resolve() : (this.parallelExecute(), new Promise((e, t) => {
+                        this.emitter.on(`finish`, e), this.emitter.on(`error`, e => {
+                            this.state = db.Error, t(e)
+                        })
+                    }))
+                }
+                nextOperation() {
+                    return this.offset < this.operations.length ? this.operations[this.offset++] : null
+                }
+            parallelExecute() {
+                if (this.state !== db.Error) {
+                    if (this.completed >= this.operations.length) {
+                        this.emitter.emit(`finish`);
+                        return
+                    }
+                    for (; this.actives < this.concurrency;) {
+                        let e = this.nextOperation();
+                        if (e) e();
+                        else return
+                    }
+                }
+            }
+        }
+    })),
+    mb, hb, gb = e((() => {
+        mb = function() {}, hb = function() {}
+    })),
+    _b, vb, yb, bb, xb = e((() => {
+        So(), To(), ta(), Ry(), By(), yu(), du(), Ky(), Jy(), Sd(), sb(), lb(), dy(), pb(), Hu(), Ol(), fy(), tu(), gb(), Fy(), Ly(), s(), _b = class e extends uy {
+            get name() {
+                return this._name
+            }
+            get containerName() {
+                return this._containerName
+            }
+            constructor(e, t, n, r) {
+                r ||= {};
+                let i, a;
+                if (cd(t)) a = e, i = t;
+                else if (ea && t instanceof uu || t instanceof vu || Co(t)) a = e, r = n, i = ld(t, r);
+                else if (!t && typeof t != `string`) a = e, n && typeof n != `string` && (r = n), i = ld(new vu, r);
+                else if (t && typeof t == `string` && n && typeof n == `string`) {
+                    let o = t,
+                        s = n,
+                        c = Ml(e);
+                    if (c.kind === `AccountConnString`)
+                        if (ea) {
+                            let e = new uu(c.accountName, c.accountKey);
+                            a = Pl(Pl(c.url, encodeURIComponent(o)), encodeURIComponent(s)), r.proxyOptions ||= ga(c.proxyUri), i = ld(e, r)
+                        } else throw Error(`Account connection string is only supported in Node.js environment`);
+                    else if (c.kind === `SASConnString`) a = Pl(Pl(c.url, encodeURIComponent(o)), encodeURIComponent(s)) + `?` + c.accountSas, i = ld(new vu, r);
+                    else throw Error(`Connection string must be either an Account connection string or a SAS connection string`)
+                } else throw Error(`Expecting non-empty strings for containerName and blobName parameters`);
+                super(a, i), h(this, `blobContext`, void 0), h(this, `_name`, void 0), h(this, `_containerName`, void 0), h(this, `_versionId`, void 0), h(this, `_snapshot`, void 0), {
+                    blobName: this._name,
+                    containerName: this._containerName
+                } = this.getBlobAndContainerNamesFromUrl(), this.blobContext = this.storageClientContext.blob, this._snapshot = Il(this.url, bl.Parameters.SNAPSHOT), this._versionId = Il(this.url, bl.Parameters.VERSIONID)
+            }
+            withSnapshot(t) {
+                return new e(Fl(this.url, bl.Parameters.SNAPSHOT, t.length === 0 ? void 0 : t), this.pipeline)
+            }
+            withVersion(t) {
+                return new e(Fl(this.url, bl.Parameters.VERSIONID, t.length === 0 ? void 0 : t), this.pipeline)
+            }
+            getAppendBlobClient() {
+                return new vb(this.url, this.pipeline)
+            }
+            getBlockBlobClient() {
+                return new yb(this.url, this.pipeline)
+            }
+            getPageBlobClient() {
+                return new bb(this.url, this.pipeline)
+            }
+            async download(e = 0, t, n = {}) {
+                return n.conditions = n.conditions || {}, n.conditions = n.conditions || {}, Hy(n.customerProvidedKey, this.isHttps), J.withSpan(`BlobClient-download`, n, async r => {
+                    let i = L(await this.blobContext.download({
+                            abortSignal: n.abortSignal,
+                            leaseAccessConditions: n.conditions,
+                            modifiedAccessConditions: {
+                                ...n.conditions,
+                                ifTags: n.conditions?.tagConditions
+                            },
+                            requestOptions: {
+                                onDownloadProgress: ea ? void 0 : n.onProgress
+                            },
+                            range: e === 0 && !t ? void 0 : cb({
+                                offset: e,
+                                count: t
+                            }),
+                            rangeGetContentMD5: n.rangeGetContentMD5,
+                            rangeGetContentCRC64: n.rangeGetContentCrc64,
+                            snapshot: n.snapshot,
+                            cpkInfo: n.customerProvidedKey,
+                            tracingOptions: r.tracingOptions
+                        })),
+                        a = {
+                            ...i,
+                            _response: i._response,
+                            objectReplicationDestinationPolicyId: i.objectReplicationPolicyId,
+                            objectReplicationSourceProperties: Ql(i.objectReplicationRules)
+                        };
+                    if (!ea) return a;
+                    if ((n.maxRetryRequests === void 0 || n.maxRetryRequests < 0) && (n.maxRetryRequests = 5), i.contentLength === void 0) throw RangeError(`File download response doesn't contain valid content length header`);
+                    if (!i.etag) throw RangeError(`File download response doesn't contain valid etag header`);
+                    return new 1(a, async t => {
+                        let r = {
+                            leaseAccessConditions: n.conditions,
+                            modifiedAccessConditions: {
+                                ifMatch: n.conditions.ifMatch || i.etag,
+                                ifModifiedSince: n.conditions.ifModifiedSince,
+                                ifNoneMatch: n.conditions.ifNoneMatch,
+                                ifUnmodifiedSince: n.conditions.ifUnmodifiedSince,
+                                ifTags: n.conditions?.tagConditions
+                            },
+                            range: cb({
+                                count: e + i.contentLength - t,
+                                offset: t
+                            }),
+                            rangeGetContentMD5: n.rangeGetContentMD5,
+                            rangeGetContentCRC64: n.rangeGetContentCrc64,
+                            snapshot: n.snapshot,
+                            cpkInfo: n.customerProvidedKey
+                        };
+                        return (await this.blobContext.download({
+                            abortSignal: n.abortSignal,
+                            ...r
+                        })).readableStreamBody
+                    }, e, i.contentLength, {
+                        maxRetryRequests: n.maxRetryRequests,
+                        onProgress: n.onProgress
+                    })
+                })
+            }
+            async exists(e = {}) {
+                return J.withSpan(`BlobClient-exists`, e, async t => {
+                    try {
+                        return Hy(e.customerProvidedKey, this.isHttps), await this.getProperties({
+                            abortSignal: e.abortSignal,
+                            customerProvidedKey: e.customerProvidedKey,
+                            conditions: e.conditions,
+                            tracingOptions: t.tracingOptions
+                        }), !0
+                    } catch (e) {
+                        if (e.statusCode === 404) return !1;
+                        if (e.statusCode === 409 && (e.details.errorCode === `BlobUsesCustomerSpecifiedEncryption` || e.details.errorCode === `BlobDoesNotUseCustomerSpecifiedEncryption`)) return !0;
+                        throw e
+                    }
+                })
+            }
+            async getProperties(e = {}) {
+                return e.conditions = e.conditions || {}, Hy(e.customerProvidedKey, this.isHttps), J.withSpan(`BlobClient-getProperties`, e, async t => {
+                    let n = L(await this.blobContext.getProperties({
+                        abortSignal: e.abortSignal,
+                        leaseAccessConditions: e.conditions,
+                        modifiedAccessConditions: {
+                            ...e.conditions,
+                            ifTags: e.conditions?.tagConditions
+                        },
+                        cpkInfo: e.customerProvidedKey,
+                        tracingOptions: t.tracingOptions
+                    }));
+                    return {
+                        ...n,
+                        _response: n._response,
+                        objectReplicationDestinationPolicyId: n.objectReplicationPolicyId,
+                        objectReplicationSourceProperties: Ql(n.objectReplicationRules)
+                    }
+                })
+            }
+            async delete(e = {}) {
+                return e.conditions = e.conditions || {}, J.withSpan(`BlobClient-delete`, e, async t => L(await this.blobContext.delete({
+                    abortSignal: e.abortSignal,
+                    deleteSnapshots: e.deleteSnapshots,
+                    leaseAccessConditions: e.conditions,
+                    modifiedAccessConditions: {
+                        ...e.conditions,
+                        ifTags: e.conditions?.tagConditions
+                    },
+                    tracingOptions: t.tracingOptions
+                })))
+            }
+            async deleteIfExists(e = {}) {
+                return J.withSpan(`BlobClient-deleteIfExists`, e, async e => {
+                    try {
+                        let t = L(await this.delete(e));
+                        return {
+                            succeeded: !0,
+                            ...t,
+                            _response: t._response
+                        }
+                    } catch (e) {
+                        if (e.details?.errorCode === `BlobNotFound`) return {
+                            succeeded: !1,
+                            ...e.response?.parsedHeaders,
+                            _response: e.response
+                        };
+                        throw e
+                    }
+                })
+            }
+            async undelete(e = {}) {
+                return J.withSpan(`BlobClient-undelete`, e, async t => L(await this.blobContext.undelete({
+                    abortSignal: e.abortSignal,
+                    tracingOptions: t.tracingOptions
+                })))
+            }
+            async setHTTPHeaders(e, t = {}) {
+                return t.conditions = t.conditions || {}, Hy(t.customerProvidedKey, this.isHttps), J.withSpan(`BlobClient-setHTTPHeaders`, t, async n => L(await this.blobContext.setHttpHeaders({
+                    abortSignal: t.abortSignal,
+                    blobHttpHeaders: e,
+                    leaseAccessConditions: t.conditions,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+            async setMetadata(e, t = {}) {
+                return t.conditions = t.conditions || {}, Hy(t.customerProvidedKey, this.isHttps), J.withSpan(`BlobClient-setMetadata`, t, async n => L(await this.blobContext.setMetadata({
+                    abortSignal: t.abortSignal,
+                    leaseAccessConditions: t.conditions,
+                    metadata: e,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    cpkInfo: t.customerProvidedKey,
+                    encryptionScope: t.encryptionScope,
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+            async setTags(e, t = {}) {
+                return J.withSpan(`BlobClient-setTags`, t, async n => L(await this.blobContext.setTags({
+                    abortSignal: t.abortSignal,
+                    leaseAccessConditions: t.conditions,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    tracingOptions: n.tracingOptions,
+                    tags: Yl(e)
+                })))
+            }
+            async getTags(e = {}) {
+                return J.withSpan(`BlobClient-getTags`, e, async t => {
+                    let n = L(await this.blobContext.getTags({
+                        abortSignal: e.abortSignal,
+                        leaseAccessConditions: e.conditions,
+                        modifiedAccessConditions: {
+                            ...e.conditions,
+                            ifTags: e.conditions?.tagConditions
+                        },
+                        tracingOptions: t.tracingOptions
+                    }));
+                    return {
+                        ...n,
+                        _response: n._response,
+                        tags: Xl({
+                            blobTagSet: n.blobTagSet
+                        }) || {}
+                    }
+                })
+            }
+            getBlobLeaseClient(e) {
+                return new Iy(this, e)
+            }
+            async createSnapshot(e = {}) {
+                return e.conditions = e.conditions || {}, Hy(e.customerProvidedKey, this.isHttps), J.withSpan(`BlobClient-createSnapshot`, e, async t => L(await this.blobContext.createSnapshot({
+                    abortSignal: e.abortSignal,
+                    leaseAccessConditions: e.conditions,
+                    metadata: e.metadata,
+                    modifiedAccessConditions: {
+                        ...e.conditions,
+                        ifTags: e.conditions?.tagConditions
+                    },
+                    cpkInfo: e.customerProvidedKey,
+                    encryptionScope: e.encryptionScope,
+                    tracingOptions: t.tracingOptions
+                })))
+            }
+            async beginCopyFromURL(e, t = {}) {
+                let n = new rb({
+                    blobClient: {
+                        abortCopyFromURL: (...e) => this.abortCopyFromURL(...e),
+                        getProperties: (...e) => this.getProperties(...e),
+                        startCopyFromURL: (...e) => this.startCopyFromURL(...e)
+                    },
+                    copySource: e,
+                    intervalInMs: t.intervalInMs,
+                    onProgress: t.onProgress,
+                    resumeFrom: t.resumeFrom,
+                    startCopyFromURLOptions: t
+                });
+                return await n.poll(), n
+            }
+            async abortCopyFromURL(e, t = {}) {
+                return J.withSpan(`BlobClient-abortCopyFromURL`, t, async n => L(await this.blobContext.abortCopyFromURL(e, {
+                    abortSignal: t.abortSignal,
+                    leaseAccessConditions: t.conditions,
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+            async syncCopyFromURL(e, t = {}) {
+                return t.conditions = t.conditions || {}, t.sourceConditions = t.sourceConditions || {}, J.withSpan(`BlobClient-syncCopyFromURL`, t, async n => L(await this.blobContext.copyFromURL(e, {
+                    abortSignal: t.abortSignal,
+                    metadata: t.metadata,
+                    leaseAccessConditions: t.conditions,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    sourceModifiedAccessConditions: {
+                        sourceIfMatch: t.sourceConditions?.ifMatch,
+                        sourceIfModifiedSince: t.sourceConditions?.ifModifiedSince,
+                        sourceIfNoneMatch: t.sourceConditions?.ifNoneMatch,
+                        sourceIfUnmodifiedSince: t.sourceConditions?.ifUnmodifiedSince
+                    },
+                    sourceContentMD5: t.sourceContentMD5,
+                    copySourceAuthorization: $l(t.sourceAuthorization),
+                    tier: Vy(t.tier),
+                    blobTagsString: Jl(t.tags),
+                    immutabilityPolicyExpiry: t.immutabilityPolicy?.expiriesOn,
+                    immutabilityPolicyMode: t.immutabilityPolicy?.policyMode,
+                    legalHold: t.legalHold,
+                    encryptionScope: t.encryptionScope,
+                    copySourceTags: t.copySourceTags,
+                    fileRequestIntent: t.sourceShareTokenIntent,
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+            async setAccessTier(e, t = {}) {
+                return J.withSpan(`BlobClient-setAccessTier`, t, async n => L(await this.blobContext.setTier(Vy(e), {
+                    abortSignal: t.abortSignal,
+                    leaseAccessConditions: t.conditions,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    rehydratePriority: t.rehydratePriority,
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+            async downloadToBuffer(e, t, n, r = {}) {
+                let i, a = 0,
+                    o = 0,
+                    s = r;
+                e instanceof Buffer ? (i = e, a = t || 0, o = typeof n == `number` ? n : 0) : (a = typeof e == `number` ? e : 0, o = typeof t == `number` ? t : 0, s = n || {});
+                let c = s.blockSize ?? 0;
+                if (c < 0) throw RangeError(`blockSize option must be >= 0`);
+                if (c === 0 && (c = yl), a < 0) throw RangeError(`offset option must be >= 0`);
+                if (o && o <= 0) throw RangeError(`count option must be greater than 0`);
+                return s.conditions ||= {}, J.withSpan(`BlobClient-downloadToBuffer`, s, async e => {
+                    if (!o) {
+                        let t = await this.getProperties({
+                            ...s,
+                            tracingOptions: e.tracingOptions
+                        });
+                        if (o = t.contentLength - a, o < 0) throw RangeError(`offset ${a} shouldn't be larger than blob size ${t.contentLength}`)
+                    }
+                    if (!i) try {
+                        i = Buffer.alloc(o)
+                    } catch (e) {
+                        throw Error(`Unable to allocate the buffer of size: ${o}(in bytes). Please try passing your own buffer to the "downloadToBuffer" method or try using other methods like "download" or "downloadToFile".\t ${e.message}`)
+                    }
+                    if (i.length < o) throw RangeError(`The buffer's size should be equal to or larger than the request count of bytes: ${o}`);
+                    let t = 0,
+                        n = new fb(s.concurrency);
+                    for (let r = a; r < a + o; r += c) n.addOperation(async () => {
+                        let n = a + o;
+                        r + c < n && (n = r + c), (await this.download(r, n - r, {
+                            abortSignal: s.abortSignal,
+                            conditions: s.conditions,
+                            maxRetryRequests: s.maxRetryRequestsPerBlock,
+                            customerProvidedKey: s.customerProvidedKey,
+                            tracingOptions: e.tracingOptions
+                        })).readableStreamBody, await (r - a, n - a, void 0), t += n - r, s.onProgress && s.onProgress({
+                            loadedBytes: t
+                        })
+                    });
+                    return await n.do(), i
+                })
+            }
+            async downloadToFile(e, t = 0, n, r = {}) {
+                return J.withSpan(`BlobClient-downloadToFile`, r, async e => {
+                    let i = await this.download(t, n, {
+                        ...r,
+                        tracingOptions: e.tracingOptions
+                    });
+                    return i.readableStreamBody && await (i.readableStreamBody, void 0), i.blobDownloadStream = void 0, i
+                })
+            }
+            getBlobAndContainerNamesFromUrl() {
+                let e, t;
+                try {
+                    let n = new URL(this.url);
+                    if (n.host.split(`.`)[1] === `blob`) {
+                        let r = n.pathname.match(`/([^/]*)(/(.*))?`);
+                        e = r[1], t = r[3]
+                    } else if (ql(n)) {
+                        let r = n.pathname.match(`/([^/]*)/([^/]*)(/(.*))?`);
+                        e = r[2], t = r[4]
+                    } else {
+                        let r = n.pathname.match(`/([^/]*)(/(.*))?`);
+                        e = r[1], t = r[3]
+                    }
+                    if (e = decodeURIComponent(e), t = decodeURIComponent(t), t = t.replace(/\\/g, `/`), !e) throw Error(`Provided containerName is invalid.`);
+                    return {
+                        blobName: t,
+                        containerName: e
+                    }
+                } catch {
+                    throw Error(`Unable to extract blobName and containerName with provided information.`)
+                }
+            }
+            async startCopyFromURL(e, t = {}) {
+                return J.withSpan(`BlobClient-startCopyFromURL`, t, async n => (t.conditions = t.conditions || {}, t.sourceConditions = t.sourceConditions || {}, L(await this.blobContext.startCopyFromURL(e, {
+                    abortSignal: t.abortSignal,
+                    leaseAccessConditions: t.conditions,
+                    metadata: t.metadata,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    sourceModifiedAccessConditions: {
+                        sourceIfMatch: t.sourceConditions.ifMatch,
+                        sourceIfModifiedSince: t.sourceConditions.ifModifiedSince,
+                        sourceIfNoneMatch: t.sourceConditions.ifNoneMatch,
+                        sourceIfUnmodifiedSince: t.sourceConditions.ifUnmodifiedSince,
+                        sourceIfTags: t.sourceConditions.tagConditions
+                    },
+                    immutabilityPolicyExpiry: t.immutabilityPolicy?.expiriesOn,
+                    immutabilityPolicyMode: t.immutabilityPolicy?.policyMode,
+                    legalHold: t.legalHold,
+                    rehydratePriority: t.rehydratePriority,
+                    tier: Vy(t.tier),
+                    blobTagsString: Jl(t.tags),
+                    sealBlob: t.sealBlob,
+                    tracingOptions: n.tracingOptions
+                }))))
+            }
+            generateSasUrl(e) {
+                return new Promise(t => {
+                    if (!(this.credential instanceof uu)) throw RangeError(`Can only generate the SAS when the client is initialized with a shared key credential`);
+                    let n = wy({
+                        containerName: this._containerName,
+                        blobName: this._name,
+                        snapshotTime: this._snapshot,
+                        versionId: this._versionId,
+                        ...e
+                    }, this.credential).toString();
+                    t(zl(this.url, n))
+                })
+            }
+            generateSasStringToSign(e) {
+                if (!(this.credential instanceof uu)) throw RangeError(`Can only generate the SAS when the client is initialized with a shared key credential`);
+                return Ty({
+                    containerName: this._containerName,
+                    blobName: this._name,
+                    snapshotTime: this._snapshot,
+                    versionId: this._versionId,
+                    ...e
+                }, this.credential).stringToSign
+            }
+            generateUserDelegationSasUrl(e, t) {
+                return new Promise(n => {
+                    let r = wy({
+                        containerName: this._containerName,
+                        blobName: this._name,
+                        snapshotTime: this._snapshot,
+                        versionId: this._versionId,
+                        ...e
+                    }, t, this.accountName).toString();
+                    n(zl(this.url, r))
+                })
+            }
+            generateUserDelegationSasStringToSign(e, t) {
+                return Ty({
+                    containerName: this._containerName,
+                    blobName: this._name,
+                    snapshotTime: this._snapshot,
+                    versionId: this._versionId,
+                    ...e
+                }, t, this.accountName).stringToSign
+            }
+            async deleteImmutabilityPolicy(e = {}) {
+                return J.withSpan(`BlobClient-deleteImmutabilityPolicy`, e, async e => L(await this.blobContext.deleteImmutabilityPolicy({
+                    tracingOptions: e.tracingOptions
+                })))
+            }
+            async setImmutabilityPolicy(e, t = {}) {
+                return J.withSpan(`BlobClient-setImmutabilityPolicy`, t, async t => L(await this.blobContext.setImmutabilityPolicy({
+                    immutabilityPolicyExpiry: e.expiriesOn,
+                    immutabilityPolicyMode: e.policyMode,
+                    tracingOptions: t.tracingOptions
+                })))
+            }
+            async setLegalHold(e, t = {}) {
+                return J.withSpan(`BlobClient-setLegalHold`, t, async t => L(await this.blobContext.setLegalHold(e, {
+                    tracingOptions: t.tracingOptions
+                })))
+            }
+            async getAccountInfo(e = {}) {
+                return J.withSpan(`BlobClient-getAccountInfo`, e, async t => L(await this.blobContext.getAccountInfo({
+                    abortSignal: e.abortSignal,
+                    tracingOptions: t.tracingOptions
+                })))
+            }
+        }, vb = class e extends _b {
+            constructor(e, t, n, r) {
+                let i, a;
+                if (r ||= {}, cd(t)) a = e, i = t;
+                else if (ea && t instanceof uu || t instanceof vu || Co(t)) a = e, r = n, i = ld(t, r);
+                else if (!t && typeof t != `string`) a = e, i = ld(new vu, r);
+                else if (t && typeof t == `string` && n && typeof n == `string`) {
+                    let o = t,
+                        s = n,
+                        c = Ml(e);
+                    if (c.kind === `AccountConnString`)
+                        if (ea) {
+                            let e = new uu(c.accountName, c.accountKey);
+                            a = Pl(Pl(c.url, encodeURIComponent(o)), encodeURIComponent(s)), r.proxyOptions ||= ga(c.proxyUri), i = ld(e, r)
+                        } else throw Error(`Account connection string is only supported in Node.js environment`);
+                    else if (c.kind === `SASConnString`) a = Pl(Pl(c.url, encodeURIComponent(o)), encodeURIComponent(s)) + `?` + c.accountSas, i = ld(new vu, r);
+                    else throw Error(`Connection string must be either an Account connection string or a SAS connection string`)
+                } else throw Error(`Expecting non-empty strings for containerName and blobName parameters`);
+                super(a, i), h(this, `appendBlobContext`, void 0), this.appendBlobContext = this.storageClientContext.appendBlob
+            }
+            withSnapshot(t) {
+                return new e(Fl(this.url, bl.Parameters.SNAPSHOT, t.length === 0 ? void 0 : t), this.pipeline)
+            }
+            async create(e = {}) {
+                return e.conditions = e.conditions || {}, Hy(e.customerProvidedKey, this.isHttps), J.withSpan(`AppendBlobClient-create`, e, async t => L(await this.appendBlobContext.create(0, {
+                    abortSignal: e.abortSignal,
+                    blobHttpHeaders: e.blobHTTPHeaders,
+                    leaseAccessConditions: e.conditions,
+                    metadata: e.metadata,
+                    modifiedAccessConditions: {
+                        ...e.conditions,
+                        ifTags: e.conditions?.tagConditions
+                    },
+                    cpkInfo: e.customerProvidedKey,
+                    encryptionScope: e.encryptionScope,
+                    immutabilityPolicyExpiry: e.immutabilityPolicy?.expiriesOn,
+                    immutabilityPolicyMode: e.immutabilityPolicy?.policyMode,
+                    legalHold: e.legalHold,
+                    blobTagsString: Jl(e.tags),
+                    tracingOptions: t.tracingOptions
+                })))
+            }
+            async createIfNotExists(e = {}) {
+                let t = {
+                    ifNoneMatch: `*`
+                };
+                return J.withSpan(`AppendBlobClient-createIfNotExists`, e, async e => {
+                    try {
+                        let n = L(await this.create({
+                            ...e,
+                            conditions: t
+                        }));
+                        return {
+                            succeeded: !0,
+                            ...n,
+                            _response: n._response
+                        }
+                    } catch (e) {
+                        if (e.details?.errorCode === `BlobAlreadyExists`) return {
+                            succeeded: !1,
+                            ...e.response?.parsedHeaders,
+                            _response: e.response
+                        };
+                        throw e
+                    }
+                })
+            }
+            async seal(e = {}) {
+                return e.conditions = e.conditions || {}, J.withSpan(`AppendBlobClient-seal`, e, async t => L(await this.appendBlobContext.seal({
+                    abortSignal: e.abortSignal,
+                    appendPositionAccessConditions: e.conditions,
+                    leaseAccessConditions: e.conditions,
+                    modifiedAccessConditions: {
+                        ...e.conditions,
+                        ifTags: e.conditions?.tagConditions
+                    },
+                    tracingOptions: t.tracingOptions
+                })))
+            }
+            async appendBlock(e, t, n = {}) {
+                return n.conditions = n.conditions || {}, Hy(n.customerProvidedKey, this.isHttps), J.withSpan(`AppendBlobClient-appendBlock`, n, async r => L(await this.appendBlobContext.appendBlock(t, e, {
+                    abortSignal: n.abortSignal,
+                    appendPositionAccessConditions: n.conditions,
+                    leaseAccessConditions: n.conditions,
+                    modifiedAccessConditions: {
+                        ...n.conditions,
+                        ifTags: n.conditions?.tagConditions
+                    },
+                    requestOptions: {
+                        onUploadProgress: n.onProgress
+                    },
+                    transactionalContentMD5: n.transactionalContentMD5,
+                    transactionalContentCrc64: n.transactionalContentCrc64,
+                    cpkInfo: n.customerProvidedKey,
+                    encryptionScope: n.encryptionScope,
+                    tracingOptions: r.tracingOptions
+                })))
+            }
+            async appendBlockFromURL(e, t, n, r = {}) {
+                return r.conditions = r.conditions || {}, r.sourceConditions = r.sourceConditions || {}, Hy(r.customerProvidedKey, this.isHttps), J.withSpan(`AppendBlobClient-appendBlockFromURL`, r, async i => L(await this.appendBlobContext.appendBlockFromUrl(e, 0, {
+                    abortSignal: r.abortSignal,
+                    sourceRange: cb({
+                        offset: t,
+                        count: n
+                    }),
+                    sourceContentMD5: r.sourceContentMD5,
+                    sourceContentCrc64: r.sourceContentCrc64,
+                    leaseAccessConditions: r.conditions,
+                    appendPositionAccessConditions: r.conditions,
+                    modifiedAccessConditions: {
+                        ...r.conditions,
+                        ifTags: r.conditions?.tagConditions
+                    },
+                    sourceModifiedAccessConditions: {
+                        sourceIfMatch: r.sourceConditions?.ifMatch,
+                        sourceIfModifiedSince: r.sourceConditions?.ifModifiedSince,
+                        sourceIfNoneMatch: r.sourceConditions?.ifNoneMatch,
+                        sourceIfUnmodifiedSince: r.sourceConditions?.ifUnmodifiedSince
+                    },
+                    copySourceAuthorization: $l(r.sourceAuthorization),
+                    cpkInfo: r.customerProvidedKey,
+                    encryptionScope: r.encryptionScope,
+                    fileRequestIntent: r.sourceShareTokenIntent,
+                    tracingOptions: i.tracingOptions
+                })))
+            }
+        }, yb = class e extends _b {
+            constructor(e, t, n, r) {
+                let i, a;
+                if (r ||= {}, cd(t)) a = e, i = t;
+                else if (ea && t instanceof uu || t instanceof vu || Co(t)) a = e, r = n, i = ld(t, r);
+                else if (!t && typeof t != `string`) a = e, n && typeof n != `string` && (r = n), i = ld(new vu, r);
+                else if (t && typeof t == `string` && n && typeof n == `string`) {
+                    let o = t,
+                        s = n,
+                        c = Ml(e);
+                    if (c.kind === `AccountConnString`)
+                        if (ea) {
+                            let e = new uu(c.accountName, c.accountKey);
+                            a = Pl(Pl(c.url, encodeURIComponent(o)), encodeURIComponent(s)), r.proxyOptions ||= ga(c.proxyUri), i = ld(e, r)
+                        } else throw Error(`Account connection string is only supported in Node.js environment`);
+                    else if (c.kind === `SASConnString`) a = Pl(Pl(c.url, encodeURIComponent(o)), encodeURIComponent(s)) + `?` + c.accountSas, i = ld(new vu, r);
+                    else throw Error(`Connection string must be either an Account connection string or a SAS connection string`)
+                } else throw Error(`Expecting non-empty strings for containerName and blobName parameters`);
+                super(a, i), h(this, `_blobContext`, void 0), h(this, `blockBlobContext`, void 0), this.blockBlobContext = this.storageClientContext.blockBlob, this._blobContext = this.storageClientContext.blob
+            }
+            withSnapshot(t) {
+                return new e(Fl(this.url, bl.Parameters.SNAPSHOT, t.length === 0 ? void 0 : t), this.pipeline)
+            }
+            async query(e, t = {}) {
+                if (Hy(t.customerProvidedKey, this.isHttps), !ea) throw Error(`This operation currently is only supported in Node.js.`);
+                return J.withSpan(`BlockBlobClient-query`, t, async n => new zy(L(await this._blobContext.query({
+                    abortSignal: t.abortSignal,
+                    queryRequest: {
+                        queryType: `SQL`,
+                        expression: e,
+                        inputSerialization: Zl(t.inputTextConfiguration),
+                        outputSerialization: Zl(t.outputTextConfiguration)
+                    },
+                    leaseAccessConditions: t.conditions,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    cpkInfo: t.customerProvidedKey,
+                    tracingOptions: n.tracingOptions
+                })), {
+                    abortSignal: t.abortSignal,
+                    onProgress: t.onProgress,
+                    onError: t.onError
+                }))
+            }
+            async upload(e, t, n = {}) {
+                return n.conditions = n.conditions || {}, Hy(n.customerProvidedKey, this.isHttps), J.withSpan(`BlockBlobClient-upload`, n, async r => L(await this.blockBlobContext.upload(t, e, {
+                    abortSignal: n.abortSignal,
+                    blobHttpHeaders: n.blobHTTPHeaders,
+                    leaseAccessConditions: n.conditions,
+                    metadata: n.metadata,
+                    modifiedAccessConditions: {
+                        ...n.conditions,
+                        ifTags: n.conditions?.tagConditions
+                    },
+                    requestOptions: {
+                        onUploadProgress: n.onProgress
+                    },
+                    cpkInfo: n.customerProvidedKey,
+                    encryptionScope: n.encryptionScope,
+                    immutabilityPolicyExpiry: n.immutabilityPolicy?.expiriesOn,
+                    immutabilityPolicyMode: n.immutabilityPolicy?.policyMode,
+                    legalHold: n.legalHold,
+                    tier: Vy(n.tier),
+                    blobTagsString: Jl(n.tags),
+                    tracingOptions: r.tracingOptions
+                })))
+            }
+            async syncUploadFromURL(e, t = {}) {
+                return t.conditions = t.conditions || {}, Hy(t.customerProvidedKey, this.isHttps), J.withSpan(`BlockBlobClient-syncUploadFromURL`, t, async n => L(await this.blockBlobContext.putBlobFromUrl(0, e, {
+                    ...t,
+                    blobHttpHeaders: t.blobHTTPHeaders,
+                    leaseAccessConditions: t.conditions,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    sourceModifiedAccessConditions: {
+                        sourceIfMatch: t.sourceConditions?.ifMatch,
+                        sourceIfModifiedSince: t.sourceConditions?.ifModifiedSince,
+                        sourceIfNoneMatch: t.sourceConditions?.ifNoneMatch,
+                        sourceIfUnmodifiedSince: t.sourceConditions?.ifUnmodifiedSince,
+                        sourceIfTags: t.sourceConditions?.tagConditions
+                    },
+                    cpkInfo: t.customerProvidedKey,
+                    copySourceAuthorization: $l(t.sourceAuthorization),
+                    tier: Vy(t.tier),
+                    blobTagsString: Jl(t.tags),
+                    copySourceTags: t.copySourceTags,
+                    fileRequestIntent: t.sourceShareTokenIntent,
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+            async stageBlock(e, t, n, r = {}) {
+                return Hy(r.customerProvidedKey, this.isHttps), J.withSpan(`BlockBlobClient-stageBlock`, r, async i => L(await this.blockBlobContext.stageBlock(e, n, t, {
+                    abortSignal: r.abortSignal,
+                    leaseAccessConditions: r.conditions,
+                    requestOptions: {
+                        onUploadProgress: r.onProgress
+                    },
+                    transactionalContentMD5: r.transactionalContentMD5,
+                    transactionalContentCrc64: r.transactionalContentCrc64,
+                    cpkInfo: r.customerProvidedKey,
+                    encryptionScope: r.encryptionScope,
+                    tracingOptions: i.tracingOptions
+                })))
+            }
+            async stageBlockFromURL(e, t, n = 0, r, i = {}) {
+                return Hy(i.customerProvidedKey, this.isHttps), J.withSpan(`BlockBlobClient-stageBlockFromURL`, i, async a => L(await this.blockBlobContext.stageBlockFromURL(e, 0, t, {
+                    abortSignal: i.abortSignal,
+                    leaseAccessConditions: i.conditions,
+                    sourceContentMD5: i.sourceContentMD5,
+                    sourceContentCrc64: i.sourceContentCrc64,
+                    sourceRange: n === 0 && !r ? void 0 : cb({
+                        offset: n,
+                        count: r
+                    }),
+                    cpkInfo: i.customerProvidedKey,
+                    encryptionScope: i.encryptionScope,
+                    copySourceAuthorization: $l(i.sourceAuthorization),
+                    fileRequestIntent: i.sourceShareTokenIntent,
+                    tracingOptions: a.tracingOptions
+                })))
+            }
+            async commitBlockList(e, t = {}) {
+                return t.conditions = t.conditions || {}, Hy(t.customerProvidedKey, this.isHttps), J.withSpan(`BlockBlobClient-commitBlockList`, t, async n => L(await this.blockBlobContext.commitBlockList({
+                    latest: e
+                }, {
+                    abortSignal: t.abortSignal,
+                    blobHttpHeaders: t.blobHTTPHeaders,
+                    leaseAccessConditions: t.conditions,
+                    metadata: t.metadata,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    cpkInfo: t.customerProvidedKey,
+                    encryptionScope: t.encryptionScope,
+                    immutabilityPolicyExpiry: t.immutabilityPolicy?.expiriesOn,
+                    immutabilityPolicyMode: t.immutabilityPolicy?.policyMode,
+                    legalHold: t.legalHold,
+                    tier: Vy(t.tier),
+                    blobTagsString: Jl(t.tags),
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+            async getBlockList(e, t = {}) {
+                return J.withSpan(`BlockBlobClient-getBlockList`, t, async n => {
+                    let r = L(await this.blockBlobContext.getBlockList(e, {
+                        abortSignal: t.abortSignal,
+                        leaseAccessConditions: t.conditions,
+                        modifiedAccessConditions: {
+                            ...t.conditions,
+                            ifTags: t.conditions?.tagConditions
+                        },
+                        tracingOptions: n.tracingOptions
+                    }));
+                    return r.committedBlocks ||= [], r.uncommittedBlocks ||= [], r
+                })
+            }
+            async uploadData(e, t = {}) {
+                return J.withSpan(`BlockBlobClient-uploadData`, t, async t => {
+                    if (ea) {
+                        let n;
+                        return e instanceof Buffer ? n = e : e instanceof ArrayBuffer ? n = Buffer.from(e) : (e = e, n = Buffer.from(e.buffer, e.byteOffset, e.byteLength)), this.uploadSeekableInternal((e, t) => n.slice(e, e + t), n.byteLength, t)
+                    } else {
+                        let n = new Blob([e]);
+                        return this.uploadSeekableInternal((e, t) => n.slice(e, e + t), n.size, t)
+                    }
+                })
+            }
+            async uploadBrowserData(e, t = {}) {
+                return J.withSpan(`BlockBlobClient-uploadBrowserData`, t, async t => {
+                    let n = new Blob([e]);
+                    return this.uploadSeekableInternal((e, t) => n.slice(e, e + t), n.size, t)
+                })
+            }
+            async uploadSeekableInternal(e, t, n = {}) {
+                let r = n.blockSize ?? 0;
+                if (r < 0 || r > 4194304e3) throw RangeError(`blockSize option must be >= 0 and <= ${gl}`);
+                let i = n.maxSingleShotSize ?? 268435456;
+                if (i < 0 || i > 268435456) throw RangeError(`maxSingleShotSize option must be >= 0 and <= ${hl}`);
+                if (r === 0) {
+                    if (t > 4194304e3 * 5e4) throw RangeError(`${t} is too larger to upload to a block blob.`);
+                    t > i && (r = Math.ceil(t / _l), r < 4194304 && (r = yl))
+                }
+                return n.blobHTTPHeaders ||= {}, n.conditions ||= {}, J.withSpan(`BlockBlobClient-uploadSeekableInternal`, n, async a => {
+                    if (t <= i) return L(await this.upload(e(0, t), t, a));
+                    let o = Math.floor((t - 1) / r) + 1;
+                    if (o > 5e4) throw RangeError(`The buffer's size is too big or the BlockSize is too small;the number of blocks must be <= ${_l}`);
+                    let s = [],
+                        c = $i(),
+                        l = 0,
+                        u = new fb(n.concurrency);
+                    for (let i = 0; i < o; i++) u.addOperation(async () => {
+                        let u = Hl(c, i),
+                            d = r * i,
+                            f = (i === o - 1 ? t : d + r) - d;
+                        s.push(u), await this.stageBlock(u, e(d, f), f, {
+                            abortSignal: n.abortSignal,
+                            conditions: n.conditions,
+                            encryptionScope: n.encryptionScope,
+                            tracingOptions: a.tracingOptions
+                        }), l += f, n.onProgress && n.onProgress({
+                            loadedBytes: l
+                        })
+                    });
+                    return await u.do(), this.commitBlockList(s, a)
+                })
+            }
+            async uploadFile(e, t = {}) {
+                return J.withSpan(`BlockBlobClient-uploadFile`, t, async n => {
+                    let r = (await mb(e)).size;
+                    return this.uploadSeekableInternal((t, n) => () => hb(e, {
+                        autoClose: !0,
+                        end: n ? t + n - 1 : 1 / 0,
+                        start: t
+                    }), r, {
+                        ...t,
+                        tracingOptions: n.tracingOptions
+                    })
+                })
+            }
+            async uploadStream(e, t = vl, n = 5, r = {}) {
+                return r.blobHTTPHeaders ||= {}, r.conditions ||= {}, J.withSpan(`BlockBlobClient-uploadStream`, r, async i => {
+                    let a = 0,
+                        o = $i(),
+                        s = 0,
+                        c = [];
+                    return await new bu(e, t, n, async (e, t) => {
+                        let n = Hl(o, a);
+                        c.push(n), a++, await this.stageBlock(n, e, t, {
+                            customerProvidedKey: r.customerProvidedKey,
+                            conditions: r.conditions,
+                            encryptionScope: r.encryptionScope,
+                            tracingOptions: i.tracingOptions
+                        }), s += t, r.onProgress && r.onProgress({
+                            loadedBytes: s
+                        })
+                    }, Math.ceil(n / 4 * 3)).do(), L(await this.commitBlockList(c, {
+                        ...r,
+                        tracingOptions: i.tracingOptions
+                    }))
+                })
+            }
+        }, bb = class e extends _b {
+            constructor(e, t, n, r) {
+                let i, a;
+                if (r ||= {}, cd(t)) a = e, i = t;
+                else if (ea && t instanceof uu || t instanceof vu || Co(t)) a = e, r = n, i = ld(t, r);
+                else if (!t && typeof t != `string`) a = e, i = ld(new vu, r);
+                else if (t && typeof t == `string` && n && typeof n == `string`) {
+                    let o = t,
+                        s = n,
+                        c = Ml(e);
+                    if (c.kind === `AccountConnString`)
+                        if (ea) {
+                            let e = new uu(c.accountName, c.accountKey);
+                            a = Pl(Pl(c.url, encodeURIComponent(o)), encodeURIComponent(s)), r.proxyOptions ||= ga(c.proxyUri), i = ld(e, r)
+                        } else throw Error(`Account connection string is only supported in Node.js environment`);
+                    else if (c.kind === `SASConnString`) a = Pl(Pl(c.url, encodeURIComponent(o)), encodeURIComponent(s)) + `?` + c.accountSas, i = ld(new vu, r);
+                    else throw Error(`Connection string must be either an Account connection string or a SAS connection string`)
+                } else throw Error(`Expecting non-empty strings for containerName and blobName parameters`);
+                super(a, i), h(this, `pageBlobContext`, void 0), this.pageBlobContext = this.storageClientContext.pageBlob
+            }
+            withSnapshot(t) {
+                return new e(Fl(this.url, bl.Parameters.SNAPSHOT, t.length === 0 ? void 0 : t), this.pipeline)
+            }
+            async create(e, t = {}) {
+                return t.conditions = t.conditions || {}, Hy(t.customerProvidedKey, this.isHttps), J.withSpan(`PageBlobClient-create`, t, async n => L(await this.pageBlobContext.create(0, e, {
+                    abortSignal: t.abortSignal,
+                    blobHttpHeaders: t.blobHTTPHeaders,
+                    blobSequenceNumber: t.blobSequenceNumber,
+                    leaseAccessConditions: t.conditions,
+                    metadata: t.metadata,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    cpkInfo: t.customerProvidedKey,
+                    encryptionScope: t.encryptionScope,
+                    immutabilityPolicyExpiry: t.immutabilityPolicy?.expiriesOn,
+                    immutabilityPolicyMode: t.immutabilityPolicy?.policyMode,
+                    legalHold: t.legalHold,
+                    tier: Vy(t.tier),
+                    blobTagsString: Jl(t.tags),
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+            async createIfNotExists(e, t = {}) {
+                return J.withSpan(`PageBlobClient-createIfNotExists`, t, async n => {
+                    try {
+                        let r = {
+                                ifNoneMatch: `*`
+                            },
+                            i = L(await this.create(e, {
+                                ...t,
+                                conditions: r,
+                                tracingOptions: n.tracingOptions
+                            }));
+                        return {
+                            succeeded: !0,
+                            ...i,
+                            _response: i._response
+                        }
+                    } catch (e) {
+                        if (e.details?.errorCode === `BlobAlreadyExists`) return {
+                            succeeded: !1,
+                            ...e.response?.parsedHeaders,
+                            _response: e.response
+                        };
+                        throw e
+                    }
+                })
+            }
+            async uploadPages(e, t, n, r = {}) {
+                return r.conditions = r.conditions || {}, Hy(r.customerProvidedKey, this.isHttps), J.withSpan(`PageBlobClient-uploadPages`, r, async i => L(await this.pageBlobContext.uploadPages(n, e, {
+                    abortSignal: r.abortSignal,
+                    leaseAccessConditions: r.conditions,
+                    modifiedAccessConditions: {
+                        ...r.conditions,
+                        ifTags: r.conditions?.tagConditions
+                    },
+                    requestOptions: {
+                        onUploadProgress: r.onProgress
+                    },
+                    range: cb({
+                        offset: t,
+                        count: n
+                    }),
+                    sequenceNumberAccessConditions: r.conditions,
+                    transactionalContentMD5: r.transactionalContentMD5,
+                    transactionalContentCrc64: r.transactionalContentCrc64,
+                    cpkInfo: r.customerProvidedKey,
+                    encryptionScope: r.encryptionScope,
+                    tracingOptions: i.tracingOptions
+                })))
+            }
+            async uploadPagesFromURL(e, t, n, r, i = {}) {
+                return i.conditions = i.conditions || {}, i.sourceConditions = i.sourceConditions || {}, Hy(i.customerProvidedKey, this.isHttps), J.withSpan(`PageBlobClient-uploadPagesFromURL`, i, async a => L(await this.pageBlobContext.uploadPagesFromURL(e, cb({
+                    offset: t,
+                    count: r
+                }), 0, cb({
+                    offset: n,
+                    count: r
+                }), {
+                    abortSignal: i.abortSignal,
+                    sourceContentMD5: i.sourceContentMD5,
+                    sourceContentCrc64: i.sourceContentCrc64,
+                    leaseAccessConditions: i.conditions,
+                    sequenceNumberAccessConditions: i.conditions,
+                    modifiedAccessConditions: {
+                        ...i.conditions,
+                        ifTags: i.conditions?.tagConditions
+                    },
+                    sourceModifiedAccessConditions: {
+                        sourceIfMatch: i.sourceConditions?.ifMatch,
+                        sourceIfModifiedSince: i.sourceConditions?.ifModifiedSince,
+                        sourceIfNoneMatch: i.sourceConditions?.ifNoneMatch,
+                        sourceIfUnmodifiedSince: i.sourceConditions?.ifUnmodifiedSince
+                    },
+                    cpkInfo: i.customerProvidedKey,
+                    encryptionScope: i.encryptionScope,
+                    copySourceAuthorization: $l(i.sourceAuthorization),
+                    fileRequestIntent: i.sourceShareTokenIntent,
+                    tracingOptions: a.tracingOptions
+                })))
+            }
+            async clearPages(e = 0, t, n = {}) {
+                return n.conditions = n.conditions || {}, J.withSpan(`PageBlobClient-clearPages`, n, async r => L(await this.pageBlobContext.clearPages(0, {
+                    abortSignal: n.abortSignal,
+                    leaseAccessConditions: n.conditions,
+                    modifiedAccessConditions: {
+                        ...n.conditions,
+                        ifTags: n.conditions?.tagConditions
+                    },
+                    range: cb({
+                        offset: e,
+                        count: t
+                    }),
+                    sequenceNumberAccessConditions: n.conditions,
+                    cpkInfo: n.customerProvidedKey,
+                    encryptionScope: n.encryptionScope,
+                    tracingOptions: r.tracingOptions
+                })))
+            }
+            async getPageRanges(e = 0, t, n = {}) {
+                return n.conditions = n.conditions || {}, J.withSpan(`PageBlobClient-getPageRanges`, n, async r => qy(L(await this.pageBlobContext.getPageRanges({
+                    abortSignal: n.abortSignal,
+                    leaseAccessConditions: n.conditions,
+                    modifiedAccessConditions: {
+                        ...n.conditions,
+                        ifTags: n.conditions?.tagConditions
+                    },
+                    range: cb({
+                        offset: e,
+                        count: t
+                    }),
+                    tracingOptions: r.tracingOptions
+                }))))
+            }
+            async listPageRangesSegment(e = 0, t, n, r = {}) {
+                return J.withSpan(`PageBlobClient-getPageRangesSegment`, r, async i => L(await this.pageBlobContext.getPageRanges({
+                    abortSignal: r.abortSignal,
+                    leaseAccessConditions: r.conditions,
+                    modifiedAccessConditions: {
+                        ...r.conditions,
+                        ifTags: r.conditions?.tagConditions
+                    },
+                    range: cb({
+                        offset: e,
+                        count: t
+                    }),
+                    marker: n,
+                    maxPageSize: r.maxPageSize,
+                    tracingOptions: i.tracingOptions
+                })))
+            }
+            async * listPageRangeItemSegments(e = 0, t, n, r = {}) {
+                let i;
+                if (n || n === void 0)
+                    do i = await this.listPageRangesSegment(e, t, n, r), n = i.continuationToken, yield await i; while (n)
+            }
+            async * listPageRangeItems(e = 0, t, n = {}) {
+                for await (let r of this.listPageRangeItemSegments(e, t, void 0, n)) yield* eu(r)
+            }
+            listPageRanges(e = 0, t, n = {}) {
+                n.conditions = n.conditions || {};
+                let r = this.listPageRangeItems(e, t, n);
+                return {
+                    next() {
+                        return r.next()
+                    },
+                    [Symbol.asyncIterator]() {
+                        return this
+                    },
+                    byPage: (r = {}) => this.listPageRangeItemSegments(e, t, r.continuationToken, {
+                        maxPageSize: r.maxPageSize,
+                        ...n
+                    })
+                }
+            }
+            async getPageRangesDiff(e, t, n, r = {}) {
+                return r.conditions = r.conditions || {}, J.withSpan(`PageBlobClient-getPageRangesDiff`, r, async i => qy(L(await this.pageBlobContext.getPageRangesDiff({
+                    abortSignal: r.abortSignal,
+                    leaseAccessConditions: r.conditions,
+                    modifiedAccessConditions: {
+                        ...r.conditions,
+                        ifTags: r.conditions?.tagConditions
+                    },
+                    prevsnapshot: n,
+                    range: cb({
+                        offset: e,
+                        count: t
+                    }),
+                    tracingOptions: i.tracingOptions
+                }))))
+            }
+            async listPageRangesDiffSegment(e, t, n, r, i = {}) {
+                return J.withSpan(`PageBlobClient-getPageRangesDiffSegment`, i, async a => L(await this.pageBlobContext.getPageRangesDiff({
+                    abortSignal: i?.abortSignal,
+                    leaseAccessConditions: i?.conditions,
+                    modifiedAccessConditions: {
+                        ...i?.conditions,
+                        ifTags: i?.conditions?.tagConditions
+                    },
+                    prevsnapshot: n,
+                    range: cb({
+                        offset: e,
+                        count: t
+                    }),
+                    marker: r,
+                    maxPageSize: i?.maxPageSize,
+                    tracingOptions: a.tracingOptions
+                })))
+            }
+            async * listPageRangeDiffItemSegments(e, t, n, r, i) {
+                let a;
+                if (r || r === void 0)
+                    do a = await this.listPageRangesDiffSegment(e, t, n, r, i), r = a.continuationToken, yield await a; while (r)
+            }
+            async * listPageRangeDiffItems(e, t, n, r) {
+                for await (let i of this.listPageRangeDiffItemSegments(e, t, n, void 0, r)) yield* eu(i)
+            }
+            listPageRangesDiff(e, t, n, r = {}) {
+                r.conditions = r.conditions || {};
+                let i = this.listPageRangeDiffItems(e, t, n, {
+                    ...r
+                });
+                return {
+                    next() {
+                        return i.next()
+                    },
+                    [Symbol.asyncIterator]() {
+                        return this
+                    },
+                    byPage: (i = {}) => this.listPageRangeDiffItemSegments(e, t, n, i.continuationToken, {
+                        maxPageSize: i.maxPageSize,
+                        ...r
+                    })
+                }
+            }
+            async getPageRangesDiffForManagedDisks(e, t, n, r = {}) {
+                return r.conditions = r.conditions || {}, J.withSpan(`PageBlobClient-GetPageRangesDiffForManagedDisks`, r, async i => qy(L(await this.pageBlobContext.getPageRangesDiff({
+                    abortSignal: r.abortSignal,
+                    leaseAccessConditions: r.conditions,
+                    modifiedAccessConditions: {
+                        ...r.conditions,
+                        ifTags: r.conditions?.tagConditions
+                    },
+                    prevSnapshotUrl: n,
+                    range: cb({
+                        offset: e,
+                        count: t
+                    }),
+                    tracingOptions: i.tracingOptions
+                }))))
+            }
+            async resize(e, t = {}) {
+                return t.conditions = t.conditions || {}, J.withSpan(`PageBlobClient-resize`, t, async n => L(await this.pageBlobContext.resize(e, {
+                    abortSignal: t.abortSignal,
+                    leaseAccessConditions: t.conditions,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    encryptionScope: t.encryptionScope,
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+            async updateSequenceNumber(e, t, n = {}) {
+                return n.conditions = n.conditions || {}, J.withSpan(`PageBlobClient-updateSequenceNumber`, n, async r => L(await this.pageBlobContext.updateSequenceNumber(e, {
+                    abortSignal: n.abortSignal,
+                    blobSequenceNumber: t,
+                    leaseAccessConditions: n.conditions,
+                    modifiedAccessConditions: {
+                        ...n.conditions,
+                        ifTags: n.conditions?.tagConditions
+                    },
+                    tracingOptions: r.tracingOptions
+                })))
+            }
+            async startCopyIncremental(e, t = {}) {
+                return J.withSpan(`PageBlobClient-startCopyIncremental`, t, async n => L(await this.pageBlobContext.copyIncremental(e, {
+                    abortSignal: t.abortSignal,
+                    modifiedAccessConditions: {
+                        ...t.conditions,
+                        ifTags: t.conditions?.tagConditions
+                    },
+                    tracingOptions: n.tracingOptions
+                })))
+            }
+        }
+    })),
+    Sb = e((() => {})),
+    Cb = e((() => {})),
+    wb = e((() => {})),
+    Tb = e((() => {})),
+    Eb = e((() => {})),
+    Db = e((() => {})),
+    Ob = e((() => {
+        Tb(), xb(), wb(), Ly(), Sb(), Cb(), Eb(), id(), yu(), _u(), Ky(), Sd(), fl(), hu(), pu(), lu(), Db(), ul()
+    }));
+
+function kb(e) {
+    let t = e.trim();
+    if ($b.test(t) || !ex.test(t)) return t;
+    let n = Date.parse(t);
+    if (Number.isNaN(n)) return t;
+    let r = new Date(n);
+    return `${String(r.getUTCFullYear()).padStart(4,`0`)}${String(r.getUTCMonth()+1).padStart(2,`0`)}${String(r.getUTCDate()).padStart(2,`0`)}T${String(r.getUTCHours()).padStart(2,`0`)}${String(r.getUTCMinutes()).padStart(2,`0`)}${String(r.getUTCSeconds()).padStart(2,`0`)}${String(r.getUTCMilliseconds()).padStart(3,`0`)}Z`
+}
+
+function Ab(e) {
+    return {
+        feedId: jb(e).feedId,
+        feedType: e.feedType ?? `snapshot`
+    }
+}
+
+function jb(e) {
+    let t = e.feedId.trim();
+    if (!t) throw Error(`Missing feedId for commerce feed request.`);
+    return {
+        feedId: t
+    }
+}
+
+function Mb(e) {
+    return {
+        rowIndex: e.row_index,
+        errorType: e.error_type,
+        message: e.message,
+        details: e.details ?? null
+    }
+}
+
+function Nb(e) {
+    return {
+        sampledCount: e.sampled_count,
+        validCount: e.valid_count,
+        invalidCount: e.invalid_count,
+        errorCounts: e.error_counts,
+        errorSamples: e.error_samples.map(Mb),
+        source: e.source
+    }
+}
+
+function Pb(e) {
+    return {
+        merchantName: e.merchant_name,
+        merchantSlug: e.merchant_slug,
+        feedId: e.feed_id,
+        storageResidency: Fb(e.storage_residency),
+        supportedCountries: e.supported_countries,
+        supportedCurrencies: e.supported_currencies,
+        sftpCreatedAt: e.sftp_created_at ?? null,
+        createdAt: e.created_at,
+        updatedAt: e.updated_at
+    }
+}
+
+function Fb(e) {
+    return e === `eu` ? `eu` : `us`
+}
+async function Ib() {
+    return ((await v.safeGet(`/shopping/feeds`, {
+        authOption: i.Required
+    })).feeds ?? []).map(Pb)
+}
+async function Lb(e, t = {}) {
+    let n = {
+        merchant_name: e,
+        ...t.storageResidency ? {
+            storage_residency: t.storageResidency
+        } : {},
+        ...t.supportedCountries ? {
+            supported_countries: t.supportedCountries
+        } : {},
+        ...t.supportedCurrencies ? {
+            supported_currencies: t.supportedCurrencies
+        } : {}
+    };
+    return Pb(await v.safePost(`/shopping/feeds`, {
+        authOption: i.Required,
+        requestBody: n
+    }))
+}
+async function Rb(e, t, n) {
+    let r = Ab(t),
+        a = {
+            source: e,
+            feed_type: r.feedType
+        };
+    return e === `file_upload` ? a.file_name = n.fileName : (a.source_url = n.sourceUrl, n.headers && (a.headers = n.headers), n.requireSupportedFilename === !1 && (a.require_supported_filename = !1)), await v.safePost(`/shopping/feeds/{feed_id}/runs`, {
+        authOption: i.Required,
+        parameters: {
+            path: {
+                feed_id: r.feedId
+            }
+        },
+        requestBody: a
+    })
+}
+async function zb(e, t) {
+    let n = await Rb(`file_upload`, t, {
+        fileName: e.name
+    });
+    if (!n.upload_url) throw Error(`Missing upload_url in feed run response.`);
+    let r = new yb(n.upload_url),
+        i = e.size >= Qb ? Zb : Xb;
+    return await r.uploadData(e, {
+        blockSize: i,
+        maxSingleShotSize: i,
+        concurrency: 4,
+        blobHTTPHeaders: e.type ? {
+            blobContentType: e.type
+        } : void 0
+    }), await Hb(n.run_id, t)
+}
+async function Bb(e, t, n, r) {
+    return await Hb((await Rb(`hosted_url`, t, {
+        sourceUrl: e,
+        headers: n,
+        requireSupportedFilename: r
+    })).run_id, t)
+}
+async function Vb(e) {
+    let t = Ab(e);
+    return await v.safePost(`/shopping/feeds/{feed_id}/schedule`, {
+        authOption: i.Required,
+        parameters: {
+            path: {
+                feed_id: t.feedId
+            }
+        },
+        requestBody: {
+            frequency: e.frequency,
+            feed_type: t.feedType,
+            enabled: e.enabled ?? !0,
+            source_url: e.sourceUrl,
+            headers: e.headers
+        }
+    })
+}
+async function Hb(e, t) {
+    let n = Ab(t),
+        r = kb(e);
+    return await v.safePost(`/shopping/feeds/{feed_id}/runs/{run_id}/submit`, {
+        authOption: i.Required,
+        parameters: {
+            path: {
+                feed_id: n.feedId,
+                run_id: r
+            },
+            query: {
+                feed_type: n.feedType
+            }
+        }
+    })
+}
+async function Ub(e, t) {
+    let n = kb(t);
+    return await v.safeGet(`/shopping/feeds/{feed_id}/runs/{run_id}`, {
+        authOption: i.Required,
+        parameters: {
+            path: {
+                feed_id: e.feedId,
+                run_id: n
+            },
+            query: {
+                feed_type: e.feedType ?? `snapshot`
+            }
+        }
+    })
+}
+async function Wb(e, t) {
+    let n = jb(e);
+    return await v.safeGet(`/shopping/feeds/{feed_id}/runs`, {
+        authOption: i.Required,
+        signal: t ? Ce([t, Ee(45e3)]) : Ee(45e3),
+        parameters: {
+            path: {
+                feed_id: n.feedId
+            }
+        }
+    })
+}
+async function Gb(e, t) {
+    let n = jb(e);
+    return await v.safeGet(`/shopping/feeds/{feed_id}/uploads`, {
+        authOption: i.Required,
+        signal: t ? Ce([t, Ee(45e3)]) : Ee(45e3),
+        parameters: {
+            path: {
+                feed_id: n.feedId
+            },
+            query: {
+                ...e.lookbackDays == null ? {} : {
+                    lookback_days: e.lookbackDays
+                },
+                errors_only: e.errorsOnly
+            }
+        }
+    })
+}
+async function Kb(e) {
+    let t = Ab(e);
+    return await v.safeGet(`/shopping/feeds/{feed_id}/sftp-access`, {
+        authOption: i.Required,
+        parameters: {
+            path: {
+                feed_id: t.feedId
+            }
+        }
+    })
+}
+async function qb(e) {
+    let t = Ab(e);
+    return await v.safePost(`/shopping/feeds/{feed_id}/sftp-access/password-reset`, {
+        authOption: i.Required,
+        parameters: {
+            path: {
+                feed_id: t.feedId
+            }
+        }
+    })
+}
+async function Jb(e, t) {
+    let n = Ab(e);
+    return await v.safePost(`/shopping/feeds/{feed_id}/sftp-access/ssh-key`, {
+        authOption: i.Required,
+        parameters: {
+            path: {
+                feed_id: n.feedId
+            }
+        },
+        requestBody: {
+            ssh_public_key: t
+        }
+    })
+}
+async function Yb(e, t, n = {}) {
+    let r = Ab(t),
+        a = {
+            feed_type: r.feedType,
+            source: e
+        };
+    return e === `hosted_url` ? (a.source_url = n.sourceUrl, n.headers && (a.headers = n.headers)) : n.sampleRows && (a.sample_rows = n.sampleRows), n.fileFormatHint && (a.file_format_hint = n.fileFormatHint), n.sampleSize && (a.sample_size = n.sampleSize), n.fileName && (a.file_name = n.fileName), Nb(await v.safePost(`/shopping/feeds/{feed_id}/validate`, {
+        authOption: i.Required,
+        parameters: {
+            path: {
+                feed_id: r.feedId
+            }
+        },
+        requestBody: a
+    }))
+}
+var Xb, Zb, Qb, $b, ex, tx = e((() => {
+    we(), Se(), u(), te(), Ob(), Xb = 8 * 1024 * 1024, Zb = 32 * 1024 * 1024, Qb = 1024 * 1024 * 1024, $b = /^\d{8}T\d{9}Z$/, ex = /^\d{4}-\d{2}-\d{2}T/
+}));
+
+function nx(e) {
+    switch (e) {
+        case `createdAtDesc`:
+        case `createdAtAsc`:
+        case `merchantNameAsc`:
+        case `merchantNameDesc`:
+        case `feedIdAsc`:
+        case `feedIdDesc`:
+            return !0;
+        default:
+            return !1
+    }
+}
+
+function rx(e) {
+    return e.trim().toLocaleLowerCase()
+}
+
+function ix(e) {
+    return `${e.merchantName} ${e.merchantSlug} ${e.feedId}`
+}
+
+function ax(e, t) {
+    return t ? e.filter(e => rx(ix(e)).includes(t)) : e
+}
+
+function ox(e, t, n) {
+    return e.localeCompare(t, n, {
+        numeric: !0,
+        sensitivity: `base`
+    })
+}
+
+function sx(e, t, n, r) {
+    let i = 0;
+    return i = n.key === `createdAt` ? et(e.createdAt) - et(t.createdAt) : n.key === `merchantName` ? ox(e.merchantName, t.merchantName, r) : ox(e.feedId, t.feedId, r), i === 0 ? ox(e.feedId, t.feedId, r) : n.direction === `asc` ? i : -i
+}
+
+function cx(e, t) {
+    return Number.isFinite(e) ? Math.min(Math.max(1, Math.floor(e)), t) : 1
+}
+
+function lx({
+    feeds: e,
+    searchQuery: t,
+    sortValue: n,
+    currentPage: r,
+    pageSize: i = 10,
+    locale: a
+}) {
+    let o = rx(t),
+        s = ax(e, o),
+        c = dx[n],
+        l = [...s].sort((e, t) => sx(e, t, c, a)),
+        u = Math.max(1, i),
+        d = Math.max(1, Math.ceil(l.length / u)),
+        f = cx(r, d),
+        p = (f - 1) * u,
+        m = Math.min(p + u, l.length);
+    return {
+        normalizedSearchQuery: o,
+        paginatedFeeds: l.slice(p, m),
+        currentPage: f,
+        pageCount: d,
+        pageStart: l.length > 0 ? p + 1 : 0,
+        pageEnd: m,
+        resultCount: l.length
+    }
+}
+var ux, dx, fx = e((() => {
+        Qe(), ux = `createdAtDesc`, dx = {
+            createdAtDesc: {
+                key: `createdAt`,
+                direction: `desc`
+            },
+            createdAtAsc: {
+                key: `createdAt`,
+                direction: `asc`
+            },
+            merchantNameAsc: {
+                key: `merchantName`,
+                direction: `asc`
+            },
+            merchantNameDesc: {
+                key: `merchantName`,
+                direction: `desc`
+            },
+            feedIdAsc: {
+                key: `feedId`,
+                direction: `asc`
+            },
+            feedIdDesc: {
+                key: `feedId`,
+                direction: `desc`
+            }
+        }
+    })),
+    px, mx, hx = e((() => {
+        px = [`.jsonl.gz`, `.csv.gz`], mx = 8192, mx * 1024 * 1024
+    }));
+
+function gx(e) {
+    return e.trim().toLowerCase().replaceAll(`&`, ` and `).replaceAll(`+`, ` plus `).replaceAll(`/`, ` `).replace(/[^a-z0-9]+/g, `_`).replace(/_+/g, `_`).replace(/^_+|_+$/g, ``)
+}
+
+function _x(e) {
+    return gx(e)
+}
+
+function vx(e) {
+    return _x(e) || e
+}
+var yx = e((() => {})),
+    bx, xx = e((() => {
+        bx = [`records_received`, `records_processed`, `records_succeeded`, `records_failed`, `error_rate`, `retry_count`]
+    }));
+
+function Sx() {
+    return {
+        records_received: null,
+        records_processed: null,
+        records_succeeded: null,
+        records_failed: null,
+        error_rate: null,
+        retry_count: null
+    }
+}
+
+function Cx(e) {
+    return typeof e != `number` || !Number.isFinite(e) ? null : e
+}
+
+function wx(e) {
+    if (e.error_rate != null) return e.error_rate;
+    let t = e.records_processed ?? e.records_received;
+    return !t || t <= 0 || e.records_failed == null ? null : e.records_failed / t
+}
+
+function Tx(e, t) {
+    let n = Sx(),
+        r = new Set(t ?? []);
+    for (let t of bx) {
+        let i = Cx(e?.[t] ?? void 0);
+        if (i != null) {
+            n[t] = i;
+            continue
+        }
+        r.has(t) && (n[t] = null)
+    }
+    return n.error_rate = wx(n), n
+}
+
+function Ex(e) {
+    return e && e.trim() || null
+}
+
+function Dx(e, t) {
+    return t.temporal?.ingestion?.start_time || t.temporal?.processing?.start_time || e.timestamp
+}
+
+function Ox(e) {
+    return e.completed_at ? e.completed_at : e.temporal?.processing?.close_time || (e.temporal?.ingestion?.close_time ?? null)
+}
+
+function kx(e) {
+    return e.started_at ? e.started_at : e.temporal?.ingestion?.start_time || e.temporal?.processing?.start_time || e.timestamp
+}
+
+function Ax(e) {
+    return e.completed_at ? e.completed_at : e.temporal?.processing?.close_time || (e.temporal?.ingestion?.close_time ?? null)
+}
+
+function jx(e, t, n) {
+    return e.updated_at ? e.updated_at : e.temporal?.processing?.close_time || e.temporal?.ingestion?.close_time || n || t
+}
+
+function Mx(e) {
+    return e.feed_type === `incremental` ? `incremental` : `snapshot`
+}
+
+function Nx(e) {
+    let t = kx(e),
+        n = Ax(e),
+        r = jx(e, t, n),
+        i = Tx(e.metrics, e.metrics_unavailable);
+    return {
+        status: e.status,
+        statusPhase: e.phase ?? e.status_phase ?? `unknown`,
+        statusMessage: e.message ?? e.status_message ?? e.detail ?? null,
+        detail: e.detail ?? null,
+        updatedAt: r,
+        startedAt: t,
+        completedAt: n,
+        latencyMs: Ze(t, n),
+        metrics: i
+    }
+}
+
+function Px(e, t, n) {
+    return {
+        runKey: `${e.source}:${e.feed_key}`,
+        runId: e.run_id,
+        canRefreshStatus: (e.feed_type === `snapshot` || e.feed_type === `incremental`) && /^\d{8}T\d{9}Z$/.test(kb(e.run_id)),
+        merchantName: e.merchant_name,
+        merchantId: t,
+        feedType: Mx(e),
+        feedId: e.feed_id,
+        feedKey: e.feed_key,
+        submittedAt: e.timestamp,
+        startedAt: n.startedAt,
+        completedAt: n.completedAt ?? null,
+        latencyMs: n.latencyMs ?? null,
+        status: n.status,
+        statusPhase: n.statusPhase,
+        statusMessage: n.statusMessage,
+        detail: n.detail,
+        updatedAt: n.updatedAt,
+        source: e.source ?? `unknown`,
+        metrics: n.metrics
+    }
+}
+
+function Fx(e, t, n, r) {
+    let i = `${t.source}:${t.feedKey}`,
+        a = {
+            runKey: i,
+            runId: t.timestamp,
+            merchantName: t.merchantName,
+            merchantId: t.merchantId,
+            feedType: t.feedType,
+            feedId: t.feedId,
+            feedKey: t.feedKey,
+            submittedAt: t.timestamp,
+            startedAt: n.startedAt || t.timestamp,
+            completedAt: n.completedAt ?? null,
+            latencyMs: n.latencyMs ?? null,
+            status: n.status,
+            statusPhase: n.statusPhase,
+            statusMessage: n.statusMessage,
+            detail: n.detail,
+            updatedAt: n.updatedAt,
+            source: t.source,
+            metrics: n.metrics
+        },
+        o = !1,
+        s = e.map(e => e.runKey === i ? (o = !0, a) : e);
+    return o || s.push(a), s.sort((e, t) => et(t.submittedAt) - et(e.submittedAt)), s.slice(0, r)
+}
+
+function Ix(e, t, n) {
+    let r = e.upload_id.indexOf(`_`),
+        i = r === -1 ? `unknown` : e.upload_id.slice(0, r),
+        a = e.upload_id.slice(r + 1);
+    return {
+        merchant_name: n,
+        feed_id: t,
+        feed_type: i,
+        feed_key: `${t}/${i}/${a}`,
+        run_id: a,
+        timestamp: e.uploaded_at,
+        source: e.source,
+        status: e.status === `scanning` ? `received` : e.status,
+        started_at: e.uploaded_at,
+        completed_at: e.completed_at,
+        updated_at: e.completed_at ?? e.uploaded_at,
+        dimensions: {
+            file_count: null,
+            failed_file_count: null
+        },
+        metrics: {
+            records_succeeded: e.rows_accepted ?? null,
+            records_failed: e.rows_rejected ?? null
+        }
+    }
+}
+var Lx = e((() => {
+    tx(), Qe(), xx()
+}));
+
+function Rx(e, t) {
+    try {
+        return eS.parse(JSON.parse(e))
+    } catch {
+        throw new nS(t)
+    }
+}
+
+function zx(e) {
+    return e.length >= 2 && e[0] === 31 && e[1] === 139
+}
+
+function Bx(e) {
+    return new TextDecoder(`utf-8`).decode(e)
+}
+
+function Vx(e) {
+    return e.toLowerCase().endsWith(`.jsonl.gz`) ? `jsonl` : `csv`
+}
+
+function Hx(e) {
+    let t = [],
+        n = new Set;
+    return e.forEach((e, r) => {
+        let i = e.trim() || `column_${r}`,
+            a = i,
+            o = 1;
+        for (; n.has(a);) a = `${i}_${o}`, o += 1;
+        n.add(a), t.push(a)
+    }), t
+}
+
+function Ux(e, t, n, r, i) {
+    if (r <= t) {
+        e.push(n);
+        return
+    }
+    let a = Math.floor(i() * r);
+    a < t && (e[a] = n)
+}
+async function Wx(e) {
+    if (typeof e.arrayBuffer == `function`) {
+        let t = await e.arrayBuffer();
+        return new Uint8Array(t)
+    }
+    if (typeof FileReader < `u`) return await new Promise((t, n) => {
+        let r = new FileReader;
+        r.onerror = () => {
+            n(Error(`Unable to read the selected file.`))
+        }, r.onload = () => {
+            let {
+                result: e
+            } = r;
+            if (e instanceof ArrayBuffer) {
+                t(new Uint8Array(e));
+                return
+            }
+            if (typeof e == `string`) {
+                t(new TextEncoder().encode(e));
+                return
+            }
+            n(Error(`Unable to read the selected file.`))
+        }, r.readAsArrayBuffer(e)
+    });
+    if (typeof e.text == `function`) {
+        let t = await e.text();
+        return new TextEncoder().encode(t)
+    }
+    throw Error(`Unable to read the selected file in this browser.`)
+}
+async function Gx(e) {
+    let t = await Wx(e);
+    return zx(t) ? Bx(nt(t)) : Bx(t)
+}
+async function Kx(e) {
+    let t = e.slice(0, 2);
+    return zx(new Uint8Array(await t.arrayBuffer()))
+}
+async function qx(e) {
+    if (typeof e.stream != `function`) throw Error(`Streaming is not supported in this browser.`);
+    let t = e.stream();
+    return await Kx(e) && (t = t.pipeThrough(new DecompressionStream(`gzip`))), t.pipeThrough(new TextDecoderStream)
+}
+async function Jx(e, t, n) {
+    let r = e.getReader(),
+        i = [],
+        a = ``,
+        o = 0,
+        s = 0;
+    try {
+        for (; o < tS;) {
+            let {
+                value: e,
+                done: c
+            } = await r.read();
+            if (c) break;
+            a += e;
+            let l = a.split(/\r?\n/);
+            a = l.pop() ?? ``;
+            for (let e of l) {
+                if (s += 1, !e.trim()) continue;
+                let r = Rx(e, s);
+                if (o += 1, Ux(i, t, r, o, n), o >= tS) break
+            }
+        }
+        if (a.trim() && o < tS) {
+            let e = Rx(a, s + 1);
+            o += 1, Ux(i, t, e, o, n)
+        }
+    } finally {
+        await r.cancel()
+    }
+    if (i.length === 0) throw Error(`Unable to parse any JSONL records from the selected file.`);
+    return i
+}
+async function Yx(e, t, n) {
+    let r = e.getReader(),
+        i = [],
+        a = 0,
+        o = 0,
+        s = null,
+        c = [],
+        l = ``,
+        u = !1,
+        d = !1,
+        f = () => {
+            let e = [...c, l];
+            if (c = [], l = ``, e.every(e => e === ``)) return;
+            if (!s) {
+                s = Hx(e);
+                return
+            }
+            let r = {};
+            s.forEach((t, n) => {
+                r[t] = e[n] ?? ``
+            }), a += 1, o += 1, Ux(i, t, r, a, n)
+        },
+        p = e => {
+            for (let t = 0; t < e.length; t += 1) {
+                let n = e[t];
+                if (!(d && (d = !1, n === `
+`))) {
+                    if (u) {
+                        if (n === `"`) {
+                            if (e[t + 1] === `"`) {
+                                l += `"`, t += 1;
+                                continue
+                            }
+                            u = !1;
+                            continue
+                        }
+                        l += n;
+                        continue
+                    }
+                    if (n === `"`) {
+                        u = !0;
+                        continue
+                    }
+                    if (n === `,`) {
+                        c.push(l), l = ``;
+                        continue
+                    }
+                    if (n === `
+` || n === `\r`) {
+                        n === `\r` && e[t + 1] === `
+` ? t += 1 : n === `\r` && t === e.length - 1 && (d = !0), f();
+                        continue
+                    }
+                    l += n
+                }
+            }
+        };
+    for (;;) {
+        let {
+            value: e,
+            done: t
+        } = await r.read();
+        if (t) break;
+        if (p(e), o >= tS) {
+            await r.cancel();
+            break
+        }
+    }
+    if (o < tS && (l || c.length > 0) && f(), !s || i.length === 0) throw Error(`Unable to parse any CSV records from the selected file.`);
+    return i
+}
+
+function Xx(e) {
+    let t = [],
+        n = e.split(/\r?\n/);
+    for (let [e, r] of n.entries())
+        if (r.trim() && (t.push(Rx(r, e + 1)), t.length >= tS)) break;
+    if (t.length === 0) throw Error(`Unable to parse any JSONL records from the selected file.`);
+    return t
+}
+async function Zx(e) {
+    let {
+        parse: t
+    } = await he(async () => {
+        let {
+            parse: e
+        } = await import(`./75c75efe-g434r8rolk7u8b6p.js`).then(e => (e.t(), e.r));
+        return {
+            parse: e
+        }
+    }, __vite__mapDeps([0, 1])), n = t(e, {
+        columns: !0,
+        skip_empty_lines: !0,
+        relax_column_count: !0,
+        bom: !0,
+        trim: !0
+    });
+    if (!Array.isArray(n) || n.length === 0) throw Error(`Unable to parse any CSV records from the selected file.`);
+    return n
+}
+
+function Qx(e, t, n) {
+    if (e.length <= t) return e.slice();
+    let r = e.slice(0, t);
+    for (let i = t; i < e.length; i += 1) {
+        let a = Math.floor(n() * (i + 1));
+        a < t && (r[a] = e[i])
+    }
+    return r
+}
+async function $x(e, t = 100, n = Math.random) {
+    let r = Vx(e.name),
+        i;
+    try {
+        let a = await qx(e);
+        i = r === `jsonl` ? await Jx(a, t, n) : await Yx(a, t, n)
+    } catch (a) {
+        if (a instanceof nS) throw a;
+        let o = await Gx(e);
+        i = Qx(r === `jsonl` ? Xx(o) : await Zx(o), t, n)
+    }
+    return {
+        sampleRows: i,
+        fileFormatHint: r
+    }
+}
+var eS, tS, nS, rS = e((() => {
+    rt(), ze(), s(), _e(), eS = Le(Ie(), Re()), tS = 1e3, nS = class extends Error {
+        constructor(e) {
+            super(`Invalid JSONL record`), h(this, `lineNumber`, void 0), this.lineNumber = e
+        }
+    }
+}));
+
+function iS(e) {
+    return e === `hourly` || e === `daily`
+}
+
+function aS() {
+    return {
+        id: typeof crypto < `u` && `randomUUID` in crypto ? crypto.randomUUID() : `header-${Date.now()}-${Math.random().toString(16).slice(2)}`,
+        header: ``,
+        value: ``
+    }
+}
+
+function oS(e) {
+    let t = e.reduce((e, t) => {
+        let n = t.header.trim();
+        return n && (e[n] = t.value), e
+    }, {});
+    return Object.keys(t).length > 0 ? t : void 0
+}
+
+function sS(e) {
+    try {
+        return new URL(e).protocol === `https:`
+    } catch {
+        return !1
+    }
+}
+
+function cS(e) {
+    if (e == null) return ``;
+    if (typeof e == `string`) return e;
+    try {
+        return JSON.stringify(e)
+    } catch {
+        return String(e)
+    }
+}
+
+function lS(e) {
+    return Array.isArray(e) ? e.filter(e => !!e && typeof e == `object`) : []
+}
+
+function uS(e) {
+    return e.locked_container_id ? e.locked_container_id : e.container_id
+}
+
+function dS(e) {
+    let t = e.trim();
+    return t ? t.replace(/_/g, ` `) : `unknown`
+}
+
+function fS(e, t, n, r) {
+    return D(e) ? t : e instanceof p && e.status === 429 ? n : re(e) || r
+}
+
+function pS(e) {
+    "use forget";
+    let t = (0, vS.c)(375),
+        {
+            feedId: n,
+            onLatestStatusUpdate: r,
+            onRunHistoryUpdate: i,
+            onMetricsErrorUpdate: a
+        } = e,
+        o = be(),
+        [s, c] = (0, yS.useState)(null),
+        [l, u] = (0, yS.useState)(``),
+        [d, f] = (0, yS.useState)(`once`),
+        [p, m] = (0, yS.useState)(_S),
+        [h, g] = (0, yS.useState)(!1),
+        [_, v] = (0, yS.useState)(null),
+        y = _ != null,
+        [b, x] = (0, yS.useState)(null),
+        [S, C] = (0, yS.useState)(null),
+        [w, te] = (0, yS.useState)(!1),
+        [ne, T] = (0, yS.useState)(null),
+        [E, D] = (0, yS.useState)(`idle`),
+        [ie, O] = (0, yS.useState)(null),
+        [ae, oe] = (0, yS.useState)(null),
+        ce;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (ce = {}, t[0] = ce) : ce = t[0];
+    let [k, A] = (0, yS.useState)(ce), le = (0, yS.useRef)(null), ue = (0, yS.useRef)(null), j = (0, yS.useRef)(null), de = (0, yS.useRef)(``), fe = (0, yS.useRef)(p), pe = (0, yS.useRef)(0), M;
+    t[1] === o ? M = t[2] : (M = o.formatMessage({
+        id: `commerceSettingsPage.fileUploadSectionTitle`,
+        defaultMessage: `Upload a file`
+    }), t[1] = o, t[2] = M);
+    let me = M,
+        he;
+    t[3] === o ? he = t[4] : (he = o.formatMessage({
+        id: `commerceSettingsPage.manualUploadSectionTitle`,
+        defaultMessage: `Manual upload`
+    }), t[3] = o, t[4] = he);
+    let ge = he,
+        _e;
+    t[5] === o ? _e = t[6] : (_e = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlSectionTitle`,
+        defaultMessage: `Provide a hosted URL`
+    }), t[5] = o, t[6] = _e);
+    let ve = _e,
+        ye;
+    t[7] === o ? ye = t[8] : (ye = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlScheduleTitle`,
+        defaultMessage: `Run frequency`
+    }), t[7] = o, t[8] = ye);
+    let xe = ye,
+        Se;
+    t[9] === o ? Se = t[10] : (Se = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlScheduleDescription`,
+        defaultMessage: `Choose whether this hosted URL should run once or on a recurring schedule.`
+    }), t[9] = o, t[10] = Se);
+    let Ce = Se,
+        we;
+    t[11] === o ? we = t[12] : (we = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlScheduleGroupLabel`,
+        defaultMessage: `Hosted URL run frequency`
+    }), t[11] = o, t[12] = we);
+    let Te = we,
+        Ee;
+    t[13] === o ? Ee = t[14] : (Ee = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlScheduleOnceLabel`,
+        defaultMessage: `Once`
+    }), t[13] = o, t[14] = Ee);
+    let De = Ee,
+        Oe;
+    t[15] === o ? Oe = t[16] : (Oe = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlScheduleHourlyLabel`,
+        defaultMessage: `Hourly`
+    }), t[15] = o, t[16] = Oe);
+    let ke = Oe,
+        Ae;
+    t[17] === o ? Ae = t[18] : (Ae = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlScheduleDailyLabel`,
+        defaultMessage: `Daily`
+    }), t[17] = o, t[18] = Ae);
+    let je = Ae,
+        N;
+    t[19] === o ? N = t[20] : (N = o.formatMessage({
+        id: `commerceSettingsPage.fileUploadInputLabel`,
+        defaultMessage: `Upload file`
+    }), t[19] = o, t[20] = N);
+    let Me = N,
+        Ne;
+    t[21] === o ? Ne = t[22] : (Ne = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlInputLabel`,
+        defaultMessage: `Hosted URL`
+    }), t[21] = o, t[22] = Ne);
+    let Pe = Ne,
+        Fe;
+    t[23] === o ? Fe = t[24] : (Fe = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlPlaceholder`,
+        defaultMessage: `https://example.com/catalog.jsonl.gz`
+    }), t[23] = o, t[24] = Fe);
+    let Ie = Fe,
+        Le;
+    t[25] === o ? Le = t[26] : (Le = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlHttpHeadersTitle`,
+        defaultMessage: `Advanced: HTTP headers (optional)`
+    }), t[25] = o, t[26] = Le);
+    let Re = Le,
+        ze;
+    t[27] === o ? ze = t[28] : (ze = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlHttpHeadersDescription`,
+        defaultMessage: `Leave this blank for a public feed URL. If your feed provider requires headers for access, enter them here, for example Authorization: Bearer YOUR_TOKEN. These are HTTP request headers, not column names in your feed.`
+    }), t[27] = o, t[28] = ze);
+    let Be = ze,
+        Ve;
+    t[29] === o ? Ve = t[30] : (Ve = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlHeaderNameLabel`,
+        defaultMessage: `Header`
+    }), t[29] = o, t[30] = Ve);
+    let He = Ve,
+        Ue;
+    t[31] === o ? Ue = t[32] : (Ue = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlHeaderValueLabel`,
+        defaultMessage: `Value`
+    }), t[31] = o, t[32] = Ue);
+    let We = Ue,
+        Ge;
+    t[33] === o ? Ge = t[34] : (Ge = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlAllowWithoutFilenameLabel`,
+        defaultMessage: `Allow URL without supported filename`
+    }), t[33] = o, t[34] = Ge);
+    let Ke = Ge,
+        qe;
+    t[35] === o ? qe = t[36] : (qe = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlAllowWithoutFilenameDescription`,
+        defaultMessage: `Only applies to one-time runs and allows URLs without a supported file extension.`
+    }), t[35] = o, t[36] = qe);
+    let Je = qe,
+        Ye;
+    t[37] === o ? Ye = t[38] : (Ye = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlAddHeaderLabel`,
+        defaultMessage: `Add header`
+    }), t[37] = o, t[38] = Ye);
+    let Xe = Ye,
+        Qe;
+    t[39] === o ? Qe = t[40] : (Qe = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlRemoveHeaderLabel`,
+        defaultMessage: `Remove`
+    }), t[39] = o, t[40] = Qe);
+    let $e = Qe,
+        et;
+    t[41] === o ? et = t[42] : (et = o.formatMessage({
+        id: `commerceSettingsPage.submitButtonLabel`,
+        defaultMessage: `Submit feed`
+    }), t[41] = o, t[42] = et);
+    let tt = et,
+        nt;
+    t[43] === o ? nt = t[44] : (nt = o.formatMessage({
+        id: `commerceSettingsPage.validateButtonLabel`,
+        defaultMessage: `Validate`
+    }), t[43] = o, t[44] = nt);
+    let rt = nt,
+        it;
+    t[45] === o ? it = t[46] : (it = o.formatMessage({
+        id: `commerceSettingsPage.actionsGroupLabel`,
+        defaultMessage: `Feed actions`
+    }), t[45] = o, t[46] = it);
+    let at = it,
+        ot;
+    t[47] === o ? ot = t[48] : (ot = o.formatMessage({
+        id: `commerceSettingsPage.validatingButtonLabel`,
+        defaultMessage: `Validating...`
+    }), t[47] = o, t[48] = ot);
+    let st = ot,
+        ct;
+    t[49] === o ? ct = t[50] : (ct = o.formatMessage({
+        id: `commerceSettingsPage.validationSuccessMessage`,
+        defaultMessage: `Validation complete.`
+    }), t[49] = o, t[50] = ct);
+    let lt = ct,
+        ut;
+    t[51] === o ? ut = t[52] : (ut = o.formatMessage({
+        id: `commerceSettingsPage.validationGenericErrorMessage`,
+        defaultMessage: `Validation failed. Please try again.`
+    }), t[51] = o, t[52] = ut);
+    let dt = ut,
+        ft;
+    t[53] === o ? ft = t[54] : (ft = o.formatMessage({
+        id: `commerceSettingsPage.validationResultsTitle`,
+        defaultMessage: `Validation results`
+    }), t[53] = o, t[54] = ft);
+    let pt = ft,
+        mt;
+    t[55] === o ? mt = t[56] : (mt = o.formatMessage({
+        id: `commerceSettingsPage.validationSampleScope`,
+        defaultMessage: `This checks a sample, not the entire feed. Passing does not guarantee successful ingestion. Sample numbers are not source line numbers.`
+    }), t[55] = o, t[56] = mt);
+    let ht = mt,
+        gt;
+    t[57] === o ? gt = t[58] : (gt = o.formatMessage({
+        id: `commerceSettingsPage.validationSummaryTitle`,
+        defaultMessage: `Summary`
+    }), t[57] = o, t[58] = gt);
+    let _t = gt,
+        vt;
+    t[59] === o ? vt = t[60] : (vt = o.formatMessage({
+        id: `commerceSettingsPage.validationSampledRowsLabel`,
+        defaultMessage: `Sampled rows`
+    }), t[59] = o, t[60] = vt);
+    let yt = vt,
+        bt;
+    t[61] === o ? bt = t[62] : (bt = o.formatMessage({
+        id: `commerceSettingsPage.validationValidRowsLabel`,
+        defaultMessage: `Valid rows`
+    }), t[61] = o, t[62] = bt);
+    let xt = bt,
+        St;
+    t[63] === o ? St = t[64] : (St = o.formatMessage({
+        id: `commerceSettingsPage.validationInvalidRowsLabel`,
+        defaultMessage: `Invalid rows`
+    }), t[63] = o, t[64] = St);
+    let Ct = St,
+        wt;
+    t[65] === o ? wt = t[66] : (wt = o.formatMessage({
+        id: `commerceSettingsPage.validationErrorCountsTitle`,
+        defaultMessage: `Error counts by type`
+    }), t[65] = o, t[66] = wt);
+    let Tt = wt,
+        Et;
+    t[67] === o ? Et = t[68] : (Et = o.formatMessage({
+        id: `commerceSettingsPage.validationErrorSamplesTitle`,
+        defaultMessage: `Error samples`
+    }), t[67] = o, t[68] = Et);
+    let Dt = Et,
+        Ot;
+    t[69] === o ? Ot = t[70] : (Ot = o.formatMessage({
+        id: `commerceSettingsPage.validationDetailsTitle`,
+        defaultMessage: `Details`
+    }), t[69] = o, t[70] = Ot);
+    let kt = Ot,
+        At;
+    t[71] === o ? At = t[72] : (At = o.formatMessage({
+        id: `commerceSettingsPage.validationDetailFieldLabel`,
+        defaultMessage: `Field`
+    }), t[71] = o, t[72] = At);
+    let jt = At,
+        Mt;
+    t[73] === o ? Mt = t[74] : (Mt = o.formatMessage({
+        id: `commerceSettingsPage.validationDetailIssueLabel`,
+        defaultMessage: `Issue`
+    }), t[73] = o, t[74] = Mt);
+    let P = Mt,
+        Nt;
+    t[75] === o ? Nt = t[76] : (Nt = o.formatMessage({
+        id: `commerceSettingsPage.validationDetailValueLabel`,
+        defaultMessage: `Value`
+    }), t[75] = o, t[76] = Nt);
+    let F = Nt,
+        Pt;
+    t[77] === o ? Pt = t[78] : (Pt = o.formatMessage({
+        id: `commerceSettingsPage.validationDetailExpectedLabel`,
+        defaultMessage: `Expected`
+    }), t[77] = o, t[78] = Pt);
+    let Ft = Pt,
+        It;
+    t[79] === o ? It = t[80] : (It = o.formatMessage({
+        id: `commerceSettingsPage.validationHideRawDetailsLabel`,
+        defaultMessage: `Hide raw details`
+    }), t[79] = o, t[80] = It);
+    let Lt = It,
+        Rt;
+    t[81] === o ? Rt = t[82] : (Rt = o.formatMessage({
+        id: `commerceSettingsPage.validationShowRawDetailsLabel`,
+        defaultMessage: `Show raw details`
+    }), t[81] = o, t[82] = Rt);
+    let zt = Rt,
+        Bt;
+    t[83] === o ? Bt = t[84] : (Bt = o.formatMessage({
+        id: `commerceSettingsPage.uploadSuccessMessage`,
+        defaultMessage: `Submission received. We will process your feed shortly.`
+    }), t[83] = o, t[84] = Bt);
+    let Vt = Bt,
+        Ht;
+    t[85] === o ? Ht = t[86] : (Ht = o.formatMessage({
+        id: `commerceSettingsPage.scheduleSuccessMessage`,
+        defaultMessage: `Schedule created. We’ll run the hosted URL on this cadence.`
+    }), t[85] = o, t[86] = Ht);
+    let Ut = Ht,
+        Wt;
+    t[87] === o ? Wt = t[88] : (Wt = o.formatMessage({
+        id: `commerceSettingsPage.uploadErrorMessage`,
+        defaultMessage: `Submission failed. Please try again.`
+    }), t[87] = o, t[88] = Wt);
+    let Gt = Wt,
+        Kt;
+    t[89] === o ? Kt = t[90] : (Kt = o.formatMessage({
+        id: `commerceSettingsPage.scheduleErrorMessage`,
+        defaultMessage: `Schedule creation failed. Please try again.`
+    }), t[89] = o, t[90] = Kt);
+    let qt = Kt,
+        Jt;
+    t[91] === o ? Jt = t[92] : (Jt = o.formatMessage({
+        id: `commerceSettingsPage.submittingButtonLabel`,
+        defaultMessage: `Submitting...`
+    }), t[91] = o, t[92] = Jt);
+    let Yt = Jt,
+        Xt;
+    t[93] === o ? Xt = t[94] : (Xt = o.formatMessage({
+        id: `commerceSettingsPage.refreshStatusLabel`,
+        defaultMessage: `Refresh status`
+    }), t[93] = o, t[94] = Xt);
+    let Zt = Xt,
+        Qt;
+    t[95] === o ? Qt = t[96] : (Qt = o.formatMessage({
+        id: `commerceSettingsPage.statusRefreshErrorMessage`,
+        defaultMessage: `Unable to refresh ingestion metrics. Please try again.`
+    }), t[95] = o, t[96] = Qt);
+    let $t = Qt,
+        en;
+    t[97] === o ? en = t[98] : (en = o.formatMessage({
+        id: `commerceSettingsPage.statusRefreshNetworkErrorMessage`,
+        defaultMessage: `Network error while refreshing ingestion metrics. Check your connection and try again.`
+    }), t[97] = o, t[98] = en);
+    let tn = en,
+        nn;
+    t[99] === o ? nn = t[100] : (nn = o.formatMessage({
+        id: `commerceSettingsPage.statusRefreshRateLimitMessage`,
+        defaultMessage: `Too many refresh attempts. Please wait a moment and try again.`
+    }), t[99] = o, t[100] = nn);
+    let rn = nn,
+        an;
+    t[101] === o ? an = t[102] : (an = o.formatMessage({
+        id: `commerceSettingsPage.feedStatusLabel`,
+        defaultMessage: `Feed status:`
+    }), t[101] = o, t[102] = an);
+    let on = an,
+        sn;
+    t[103] === o ? sn = t[104] : (sn = o.formatMessage({
+        id: `commerceSettingsPage.feedStatusReceived`,
+        defaultMessage: `Received`
+    }), t[103] = o, t[104] = sn);
+    let cn = sn,
+        ln;
+    t[105] === o ? ln = t[106] : (ln = o.formatMessage({
+        id: `commerceSettingsPage.feedStatusProcessing`,
+        defaultMessage: `Processing`
+    }), t[105] = o, t[106] = ln);
+    let un = ln,
+        dn;
+    t[107] === o ? dn = t[108] : (dn = o.formatMessage({
+        id: `commerceSettingsPage.feedStatusCompleted`,
+        defaultMessage: `Completed`
+    }), t[107] = o, t[108] = dn);
+    let fn = dn,
+        pn;
+    t[109] === o ? pn = t[110] : (pn = o.formatMessage({
+        id: `commerceSettingsPage.feedStatusCompletedWithErrors`,
+        defaultMessage: `Completed with errors`
+    }), t[109] = o, t[110] = pn);
+    let mn = pn,
+        hn;
+    t[111] === o ? hn = t[112] : (hn = o.formatMessage({
+        id: `commerceSettingsPage.feedStatusFailed`,
+        defaultMessage: `Failed`
+    }), t[111] = o, t[112] = hn);
+    let gn = hn,
+        _n;
+    t[113] === o ? _n = t[114] : (_n = o.formatMessage({
+        id: `commerceSettingsPage.feedStatusSkipped`,
+        defaultMessage: `Skipped`
+    }), t[113] = o, t[114] = _n);
+    let vn = _n,
+        yn;
+    t[115] === o ? yn = t[116] : (yn = o.formatMessage({
+        id: `commerceSettingsPage.missingInputMessage`,
+        defaultMessage: `Upload a file or provide a hosted URL.`
+    }), t[115] = o, t[116] = yn);
+    let bn = yn,
+        xn;
+    t[117] === o ? xn = t[118] : (xn = o.formatMessage({
+        id: `commerceSettingsPage.missingMerchantNameMessage`,
+        defaultMessage: `Select a merchant to continue.`
+    }), t[117] = o, t[118] = xn);
+    let Sn = xn,
+        Cn;
+    t[119] === o ? Cn = t[120] : (Cn = o.formatMessage({
+        id: `commerceSettingsPage.tooManyInputsMessage`,
+        defaultMessage: `Choose either a file or a hosted URL, not both.`
+    }), t[119] = o, t[120] = Cn);
+    let wn = Cn,
+        Tn;
+    t[121] === o ? Tn = t[122] : (Tn = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlHttpsOnlyMessage`,
+        defaultMessage: `Hosted URL must use HTTPS.`
+    }), t[121] = o, t[122] = Tn);
+    let En = Tn,
+        I = !!s,
+        Dn;
+    t[123] === l ? Dn = t[124] : (Dn = l.trim(), t[123] = l, t[124] = Dn);
+    let On = Dn,
+        kn = !!On,
+        An;
+    t[125] === n ? An = t[126] : (An = n.trim(), t[125] = n, t[126] = An);
+    let jn = An,
+        Mn = !!jn,
+        Nn = Mn ? jn : null,
+        Pn = I && kn,
+        Fn = I !== kn,
+        In;
+    t[127] === De ? In = t[128] : (In = {
+        value: `once`,
+        label: De
+    }, t[127] = De, t[128] = In);
+    let Ln;
+    t[129] === ke ? Ln = t[130] : (Ln = {
+        value: `hourly`,
+        label: ke
+    }, t[129] = ke, t[130] = Ln);
+    let Rn;
+    t[131] === je ? Rn = t[132] : (Rn = {
+        value: `daily`,
+        label: je
+    }, t[131] = je, t[132] = Rn);
+    let zn;
+    t[133] !== In || t[134] !== Ln || t[135] !== Rn ? (zn = [In, Ln, Rn], t[133] = In, t[134] = Ln, t[135] = Rn, t[136] = zn) : zn = t[136];
+    let Bn = zn,
+        Vn = !I && !kn || y || !Mn,
+        Hn = E === `validating`,
+        Un = y || Hn || !Mn || !Fn,
+        Wn = ne?.tone === `success` ? `text-green-600` : `text-red-600`,
+        Gn = null;
+    E === `success` ? Gn = lt : E === `error` && (Gn = ie || dt);
+    let Kn = E === `error` ? `text-red-600` : `text-green-600`,
+        qn = ae ? Object.entries(ae.errorCounts).sort(gS) : [],
+        Jn = ae ? ae.errorSamples.slice(0, bS) : [],
+        Yn;
+    t[137] === o ? Yn = t[138] : (Yn = o.formatMessage({
+        id: `commerceSettingsPage.fileTooLargeMessage`,
+        defaultMessage: `File is too large. Maximum size is {maxSize} MB.`
+    }, {
+        maxSize: mx
+    }), t[137] = o, t[138] = Yn);
+    let Xn = Yn,
+        Zn;
+    t[139] === o ? Zn = t[140] : (Zn = o.formatMessage({
+        id: `commerceSettingsPage.unsupportedFileTypeMessage`,
+        defaultMessage: `Only .jsonl.gz or .csv.gz files are supported.`
+    }), t[139] = o, t[140] = Zn);
+    let Qn = Zn,
+        $n;
+    t[141] !== fn || t[142] !== mn || t[143] !== gn || t[144] !== un || t[145] !== cn || t[146] !== vn ? ($n = {
+        received: cn,
+        processing: un,
+        completed: fn,
+        completed_with_errors: mn,
+        skipped: vn,
+        failed: gn
+    }, t[141] = fn, t[142] = mn, t[143] = gn, t[144] = un, t[145] = cn, t[146] = vn, t[147] = $n) : $n = t[147];
+    let er = $n,
+        tr;
+    t[148] !== Xn || t[149] !== Qn ? (tr = e => {
+        let t = e.target.files?.[0] ?? null;
+        if (!t) {
+            c(null), T(null);
+            return
+        }
+        let n = t.name.toLowerCase();
+        if (!px.some(e => n.endsWith(e))) {
+            e.target.value = ``, c(null), T({
+                source: `file_upload`,
+                tone: `error`,
+                text: Qn
+            });
+            return
+        }
+        if (t.size > 8589934592) {
+            e.target.value = ``, c(null), T({
+                source: `file_upload`,
+                tone: `error`,
+                text: Xn
+            });
+            return
+        }
+        c(t), t && u(``), T(null)
+    }, t[148] = Xn, t[149] = Qn, t[150] = tr) : tr = t[150];
+    let nr = tr,
+        rr;
+    t[151] === Symbol.for(`react.memo_cache_sentinel`) ? (rr = e => {
+        let t = e.target.value;
+        u(t), t.trim() && c(null), T(null)
+    }, t[151] = rr) : rr = t[151];
+    let ir = rr,
+        ar;
+    t[152] === Symbol.for(`react.memo_cache_sentinel`) ? (ar = e => {
+        f(e), e !== `once` && g(!1), T(null)
+    }, t[152] = ar) : ar = t[152];
+    let or = ar,
+        sr;
+    t[153] === Symbol.for(`react.memo_cache_sentinel`) ? (sr = (e, t, n) => {
+        m(r => r.map(r => r.id === e ? {
+            ...r,
+            [t]: n
+        } : r)), T(null)
+    }, t[153] = sr) : sr = t[153];
+    let cr = sr,
+        lr;
+    t[154] === I ? lr = t[155] : (lr = e => {
+        if (I) {
+            e.preventDefault();
+            return
+        }
+        m(hS)
+    }, t[154] = I, t[155] = lr);
+    let ur = lr,
+        dr;
+    t[156] === I ? dr = t[157] : (dr = (e, t) => {
+        if (I) {
+            e.preventDefault();
+            return
+        }
+        m(e => e.filter(e => e.id !== t))
+    }, t[156] = I, t[157] = dr);
+    let fr = dr,
+        pr;
+    t[158] !== w || t[159] !== r || t[160] !== a || t[161] !== i || t[162] !== $t || t[163] !== tn || t[164] !== rn ? (pr = async e => {
+        if (w) return;
+        te(!0);
+        let t;
+        try {
+            t = await Ub(e, e.timestamp), a(null)
+        } catch (e) {
+            let t = fS(e, tn, rn, $t);
+            a(t), te(!1);
+            return
+        }
+        let n = Dx(e, t),
+            o = Ox(t),
+            s = Tx(t.metrics, t.metrics_unavailable),
+            c = {
+                status: t.status,
+                statusPhase: t.status_phase ?? `unknown`,
+                statusMessage: t.status_message ?? null,
+                detail: t.detail,
+                updatedAt: new Date().toISOString(),
+                startedAt: n,
+                completedAt: o,
+                latencyMs: Ze(n, o),
+                metrics: s
+            };
+        x(c), r(c), i(e, c), te(!1)
+    }, t[158] = w, t[159] = r, t[160] = a, t[161] = i, t[162] = $t, t[163] = tn, t[164] = rn, t[165] = pr) : pr = t[165];
+    let mr = pr,
+        hr;
+    t[166] !== h || t[167] !== Pn || t[168] !== I || t[169] !== kn || t[170] !== Mn || t[171] !== p || t[172] !== En || t[173] !== d || t[174] !== y || t[175] !== bn || t[176] !== Sn || t[177] !== r || t[178] !== a || t[179] !== i || t[180] !== mr || t[181] !== jn || t[182] !== qt || t[183] !== Ut || t[184] !== s || t[185] !== l || t[186] !== wn || t[187] !== On || t[188] !== Gt || t[189] !== Vt ? (hr = async () => {
+        if (y) return;
+        let e = I && s ? `file_upload` : `hosted_url`;
+        if (!Mn) {
+            T({
+                source: e,
+                tone: `error`,
+                text: Sn
+            });
+            return
+        }
+        if (!I && !kn) {
+            T({
+                source: e,
+                tone: `error`,
+                text: bn
+            });
+            return
+        }
+        if (Pn) {
+            T({
+                source: e,
+                tone: `error`,
+                text: wn
+            });
+            return
+        }
+        if (!I && kn && !sS(On)) {
+            T({
+                source: e,
+                tone: `error`,
+                text: En
+            });
+            return
+        }
+        let t = oS(p),
+            n = {
+                feedId: jn
+            },
+            o = e === `hosted_url` && iS(d);
+        v(e), T(null), a(null);
+        try {
+            if (o) {
+                await Vb({
+                    feedId: jn,
+                    frequency: d,
+                    sourceUrl: l.trim(),
+                    headers: t
+                }), T({
+                    source: e,
+                    tone: `success`,
+                    text: Ut
+                }), v(null);
+                return
+            }
+            let a;
+            a = s ? await zb(s, n) : await Bb(l.trim(), n, t, !h);
+            let c = a.merchant_name.trim(),
+                u = vx(c),
+                f = uS(a),
+                p = {
+                    merchantName: c,
+                    merchantId: u,
+                    feedType: a.feed_type,
+                    timestamp: a.timestamp,
+                    source: e,
+                    feedId: a.feed_id,
+                    feedKey: f
+                };
+            C(p);
+            let m = {
+                status: `received`,
+                statusPhase: `ingesting`,
+                statusMessage: `ingesting`,
+                updatedAt: new Date().toISOString(),
+                startedAt: a.timestamp,
+                completedAt: null,
+                latencyMs: null,
+                metrics: Sx()
+            };
+            x(m), r(m), i(p, m), T({
+                source: e,
+                tone: `success`,
+                text: Vt
+            }), v(null), mr(p);
+            return
+        } catch (t) {
+            let n = t;
+            if (o) {
+                let t = re(n) ?? qt;
+                T({
+                    source: e,
+                    tone: `error`,
+                    text: t
+                }), a(null), v(null);
+                return
+            }
+            T({
+                source: e,
+                tone: `error`,
+                text: Gt
+            }), a(null)
+        }
+        v(null)
+    }, t[166] = h, t[167] = Pn, t[168] = I, t[169] = kn, t[170] = Mn, t[171] = p, t[172] = En, t[173] = d, t[174] = y, t[175] = bn, t[176] = Sn, t[177] = r, t[178] = a, t[179] = i, t[180] = mr, t[181] = jn, t[182] = qt, t[183] = Ut, t[184] = s, t[185] = l, t[186] = wn, t[187] = On, t[188] = Gt, t[189] = Vt, t[190] = hr) : hr = t[190];
+    let gr = hr,
+        _r, vr;
+    t[191] === Symbol.for(`react.memo_cache_sentinel`) ? (_r = () => () => {
+        pe.current += 1
+    }, vr = [], t[191] = _r, t[192] = vr) : (_r = t[191], vr = t[192]), (0, yS.useEffect)(_r, vr);
+    let yr;
+    t[193] !== Fn || t[194] !== I || t[195] !== kn || t[196] !== Mn || t[197] !== p || t[198] !== En || t[199] !== o || t[200] !== Hn || t[201] !== jn || t[202] !== s || t[203] !== On || t[204] !== dt ? (yr = () => {
+        if (Hn) return;
+        if (!Mn || !Fn) {
+            pe.current += 1, oe(null), D(`error`), O(dt);
+            return
+        }
+        if (!I && kn && !sS(On)) {
+            pe.current += 1, oe(null), D(`error`), O(En);
+            return
+        }
+        let e = pe.current + 1;
+        pe.current = e, O(null), oe(null), D(`validating`);
+        let t = I && s ? `file_upload` : `hosted_url`;
+        (async () => {
+            let n, r, i = t === `hosted_url` ? oS(p) : void 0;
+            if (t === `file_upload` && s) {
+                let e = await $x(s, 100);
+                n = e.sampleRows, r = e.fileFormatHint
+            }
+            let a = await Yb(t, {
+                feedId: jn
+            }, {
+                sourceUrl: t === `hosted_url` ? On : void 0,
+                headers: i,
+                fileName: s?.name,
+                sampleRows: n,
+                fileFormatHint: r
+            });
+            pe.current === e && (oe(a), D(`success`))
+        })().catch(t => {
+            if (pe.current !== e) return;
+            let n = t instanceof nS ? o.formatMessage({
+                id: `commerceSettingsPage.validationInvalidJsonlRecord`,
+                defaultMessage: `Invalid JSONL record on line {line}. Use one JSON object per line.`
+            }, {
+                line: t.lineNumber
+            }) : re(t) || dt;
+            O(n), D(`error`)
+        })
+    }, t[193] = Fn, t[194] = I, t[195] = kn, t[196] = Mn, t[197] = p, t[198] = En, t[199] = o, t[200] = Hn, t[201] = jn, t[202] = s, t[203] = On, t[204] = dt, t[205] = yr) : yr = t[205];
+    let br = yr,
+        xr;
+    t[206] !== w || t[207] !== S || t[208] !== mr ? (xr = async () => {
+        !S || w || await mr(S)
+    }, t[206] = w, t[207] = S, t[208] = mr, t[209] = xr) : xr = t[209];
+    let Sr = xr,
+        Cr;
+    t[210] === Symbol.for(`react.memo_cache_sentinel`) ? (Cr = e => {
+        let t = e.currentTarget.dataset.sampleKey;
+        t && A(e => ({
+            ...e,
+            [t]: !e[t]
+        }))
+    }, t[210] = Cr) : Cr = t[210];
+    let wr = Cr,
+        Tr, Er;
+    t[211] !== b || t[212] !== Sr || t[213] !== S ? (Tr = () => {
+        if (!S || !b || b.status !== `received` && b.status !== `processing`) return;
+        let e = window.setInterval(() => {
+            Sr()
+        }, 15e3);
+        return () => window.clearInterval(e)
+    }, Er = [b, Sr, S], t[211] = b, t[212] = Sr, t[213] = S, t[214] = Tr, t[215] = Er) : (Tr = t[214], Er = t[215]), (0, yS.useEffect)(Tr, Er);
+    let Dr, Or;
+    t[216] !== Nn || t[217] !== r || t[218] !== a ? (Dr = () => {
+        le.current !== Nn && (le.current = Nn, T(null), x(null), C(null), r(null), a(null))
+    }, Or = [Nn, r, a], t[216] = Nn, t[217] = r, t[218] = a, t[219] = Dr, t[220] = Or) : (Dr = t[219], Or = t[220]), (0, yS.useEffect)(Dr, Or);
+    let kr, Ar;
+    t[221] !== Nn || t[222] !== p || t[223] !== s || t[224] !== On || t[225] !== ie || t[226] !== ae || t[227] !== E ? (kr = () => {
+        let e = ue.current !== Nn,
+            t = j.current !== s,
+            n = de.current !== On,
+            r = fe.current !== p;
+        ue.current = Nn, j.current = s, de.current = On, fe.current = p, !(!e && !t && !n && !r) && (E !== `idle` || ae != null || ie != null) && (pe.current += 1, D(`idle`), O(null), oe(null))
+    }, Ar = [Nn, p, s, On, ie, ae, E], t[221] = Nn, t[222] = p, t[223] = s, t[224] = On, t[225] = ie, t[226] = ae, t[227] = E, t[228] = kr, t[229] = Ar) : (kr = t[228], Ar = t[229]), (0, yS.useEffect)(kr, Ar);
+    let jr;
+    t[230] !== Gn || t[231] !== Kn ? (jr = Gn ? (0, Y.jsx)(`div`, {
+        className: `text-sm ${Kn}`,
+        role: `status`,
+        children: Gn
+    }) : null, t[230] = Gn, t[231] = Kn, t[232] = jr) : jr = t[232];
+    let Mr = E === `success` && ae ? (0, Y.jsxs)(`section`, {
+            className: `border-token-border-light bg-token-bg-secondary/30 space-y-4 rounded-md border p-4`,
+            "data-testid": `validation-results`,
+            children: [(0, Y.jsxs)(`div`, {
+                className: `space-y-1`,
+                children: [(0, Y.jsx)(`h3`, {
+                    className: `text-token-text-primary text-sm font-semibold`,
+                    children: pt
+                }), (0, Y.jsx)(`p`, {
+                    className: `text-token-text-secondary text-xs`,
+                    children: ht
+                })]
+            }), (0, Y.jsxs)(`div`, {
+                className: `space-y-2`,
+                children: [(0, Y.jsx)(`h4`, {
+                    className: `text-token-text-primary text-xs font-semibold tracking-wide uppercase`,
+                    children: _t
+                }), (0, Y.jsxs)(`dl`, {
+                    className: `grid grid-cols-1 gap-2 sm:grid-cols-3`,
+                    children: [(0, Y.jsxs)(`div`, {
+                        className: `bg-token-bg-primary/60 flex flex-col gap-1 rounded-md p-3`,
+                        "data-testid": `validation-sampled-count`,
+                        children: [(0, Y.jsx)(`dt`, {
+                            className: `text-token-text-secondary text-xs`,
+                            children: yt
+                        }), (0, Y.jsx)(`dd`, {
+                            className: `text-token-text-primary text-sm font-semibold`,
+                            children: ae.sampledCount
+                        })]
+                    }), (0, Y.jsxs)(`div`, {
+                        className: `bg-token-bg-primary/60 flex flex-col gap-1 rounded-md p-3`,
+                        "data-testid": `validation-valid-count`,
+                        children: [(0, Y.jsx)(`dt`, {
+                            className: `text-token-text-secondary text-xs`,
+                            children: xt
+                        }), (0, Y.jsx)(`dd`, {
+                            className: `text-token-text-primary text-sm font-semibold`,
+                            children: ae.validCount
+                        })]
+                    }), (0, Y.jsxs)(`div`, {
+                        className: `bg-token-bg-primary/60 flex flex-col gap-1 rounded-md p-3`,
+                        "data-testid": `validation-invalid-count`,
+                        children: [(0, Y.jsx)(`dt`, {
+                            className: `text-token-text-secondary text-xs`,
+                            children: Ct
+                        }), (0, Y.jsx)(`dd`, {
+                            className: `text-token-text-primary text-sm font-semibold`,
+                            children: ae.invalidCount
+                        })]
+                    })]
+                })]
+            }), qn.length > 0 ? (0, Y.jsxs)(`div`, {
+                className: `space-y-2`,
+                children: [(0, Y.jsx)(`h4`, {
+                    className: `text-token-text-primary text-xs font-semibold tracking-wide uppercase`,
+                    children: Tt
+                }), (0, Y.jsx)(`ul`, {
+                    className: `grid grid-cols-1 gap-2 sm:grid-cols-2`,
+                    children: qn.map(mS)
+                })]
+            }) : null, Jn.length > 0 ? (0, Y.jsxs)(`div`, {
+                className: `space-y-2`,
+                children: [(0, Y.jsx)(`h4`, {
+                    className: `text-token-text-primary text-xs font-semibold tracking-wide uppercase`,
+                    children: Dt
+                }), (0, Y.jsx)(`ol`, {
+                    className: `space-y-2`,
+                    children: Jn.map(e => {
+                        let t = `${e.rowIndex}-${e.errorType}-${e.message}`,
+                            n = lS(e.details),
+                            r = cS(e.details),
+                            i = e.message,
+                            a = !!k[t];
+                        return (0, Y.jsxs)(`li`, {
+                            className: `bg-token-bg-primary/60 space-y-2 rounded-md p-3 text-sm`,
+                            "data-testid": `validation-error-sample-row-${e.rowIndex}`,
+                            children: [(0, Y.jsxs)(`div`, {
+                                className: `flex flex-wrap items-center gap-2`,
+                                children: [(0, Y.jsx)(`span`, {
+                                    className: `text-token-text-primary font-semibold`,
+                                    children: o.formatMessage({
+                                        id: `commerceSettingsPage.validationSampleNumber`,
+                                        defaultMessage: `Sample {number}`
+                                    }, {
+                                        number: e.rowIndex + 1
+                                    })
+                                }), (0, Y.jsx)(`span`, {
+                                    className: `text-token-text-secondary text-xs tracking-wide uppercase`,
+                                    children: dS(e.errorType)
+                                })]
+                            }), (0, Y.jsx)(`p`, {
+                                className: `text-token-text-primary`,
+                                children: i
+                            }), n.length > 0 ? (0, Y.jsxs)(`div`, {
+                                className: `space-y-2`,
+                                children: [(0, Y.jsx)(`div`, {
+                                    className: `text-token-text-secondary text-[11px] font-semibold tracking-wide uppercase`,
+                                    children: kt
+                                }), (0, Y.jsx)(`div`, {
+                                    className: `grid grid-cols-1 gap-2`,
+                                    children: n.map((e, n) => (0, Y.jsxs)(`div`, {
+                                        className: se(`border-token-border-light bg-token-bg-primary/70 grid grid-cols-1 gap-2 rounded-md border p-2 text-xs`, e.expected ? `sm:grid-cols-4` : `sm:grid-cols-3`),
+                                        children: [(0, Y.jsxs)(`div`, {
+                                            children: [(0, Y.jsx)(`div`, {
+                                                className: `text-token-text-secondary text-[10px] tracking-wide uppercase`,
+                                                children: jt
+                                            }), (0, Y.jsx)(`div`, {
+                                                className: `text-token-text-primary font-medium`,
+                                                children: String(e.field ?? `—`)
+                                            })]
+                                        }), (0, Y.jsxs)(`div`, {
+                                            children: [(0, Y.jsx)(`div`, {
+                                                className: `text-token-text-secondary text-[10px] tracking-wide uppercase`,
+                                                children: P
+                                            }), (0, Y.jsx)(`div`, {
+                                                className: `text-token-text-primary font-medium`,
+                                                children: String(e.issue ?? `—`)
+                                            })]
+                                        }), (0, Y.jsxs)(`div`, {
+                                            children: [(0, Y.jsx)(`div`, {
+                                                className: `text-token-text-secondary text-[10px] tracking-wide uppercase`,
+                                                children: F
+                                            }), (0, Y.jsx)(`div`, {
+                                                className: `text-token-text-primary font-medium`,
+                                                children: String(e.raw_value ?? e.value ?? `—`)
+                                            })]
+                                        }), e.expected || e.expected_value ? (0, Y.jsxs)(`div`, {
+                                            children: [(0, Y.jsx)(`div`, {
+                                                className: `text-token-text-secondary text-[10px] tracking-wide uppercase`,
+                                                children: Ft
+                                            }), (0, Y.jsx)(`div`, {
+                                                className: `text-token-text-primary font-medium`,
+                                                children: String(e.expected ?? `—`)
+                                            })]
+                                        }) : null]
+                                    }, `${t}-${n}`))
+                                })]
+                            }) : null, r ? (0, Y.jsxs)(`div`, {
+                                className: `text-xs`,
+                                children: [(0, Y.jsx)(`button`, {
+                                    type: `button`,
+                                    className: `text-token-text-secondary hover:text-token-text-primary underline underline-offset-2`,
+                                    onClick: wr,
+                                    "data-sample-key": t,
+                                    children: a ? Lt : zt
+                                }), a ? (0, Y.jsx)(`pre`, {
+                                    className: `text-token-text-secondary mt-2 text-[11px] whitespace-pre-wrap`,
+                                    children: r
+                                }) : null]
+                            }) : null]
+                        }, t)
+                    })
+                })]
+            }) : null]
+        }) : null,
+        Nr;
+    t[233] !== jr || t[234] !== Mr ? (Nr = (0, Y.jsxs)(Y.Fragment, {
+        children: [jr, Mr]
+    }), t[233] = jr, t[234] = Mr, t[235] = Nr) : Nr = t[235];
+    let Pr = Nr,
+        Fr;
+    t[236] !== at || t[237] !== gr || t[238] !== br || t[239] !== I || t[240] !== kn || t[241] !== Vn || t[242] !== Un || t[243] !== Hn || t[244] !== ne || t[245] !== Wn || t[246] !== _ || t[247] !== tt || t[248] !== Yt || t[249] !== rt || t[250] !== st || t[251] !== Pr ? (Fr = function(e) {
+        let t = e === `file_upload` ? I : kn,
+            n = e === `file_upload` ? !kn : kn;
+        return (0, Y.jsxs)(Y.Fragment, {
+            children: [(0, Y.jsxs)(`div`, {
+                className: `mt-4 flex flex-wrap items-center gap-3`,
+                role: `group`,
+                "aria-label": at,
+                children: [(0, Y.jsx)(ee, {
+                    onClick: gr,
+                    disabled: Vn || !t,
+                    type: `button`,
+                    children: _ === e ? Yt : tt
+                }), (0, Y.jsx)(ee, {
+                    color: `secondary`,
+                    onClick: br,
+                    disabled: Un || !t,
+                    loading: n && Hn,
+                    type: `button`,
+                    children: n && Hn ? st : rt
+                }), ne?.source === e ? (0, Y.jsx)(`span`, {
+                    className: `text-sm ${Wn}`,
+                    children: ne.text
+                }) : null]
+            }), n ? Pr : null]
+        })
+    }, t[236] = at, t[237] = gr, t[238] = br, t[239] = I, t[240] = kn, t[241] = Vn, t[242] = Un, t[243] = Hn, t[244] = ne, t[245] = Wn, t[246] = _, t[247] = tt, t[248] = Yt, t[249] = rt, t[250] = st, t[251] = Pr, t[252] = Fr) : Fr = t[252];
+    let Ir = Fr,
+        Lr;
+    t[253] === ge ? Lr = t[254] : (Lr = (0, Y.jsx)(`h2`, {
+        className: `text-token-text-primary text-lg font-semibold`,
+        children: ge
+    }), t[253] = ge, t[254] = Lr);
+    let Rr;
+    t[255] === me ? Rr = t[256] : (Rr = (0, Y.jsx)(`h3`, {
+        className: `text-token-text-primary text-sm font-semibold`,
+        children: me
+    }), t[255] = me, t[256] = Rr);
+    let zr;
+    t[257] === o ? zr = t[258] : (zr = o.formatMessage({
+        id: `commerceSettingsPage.fileUploadSectionDescription`,
+        defaultMessage: `Upload a compressed feed file from your device.`
+    }), t[257] = o, t[258] = zr);
+    let Br;
+    t[259] === zr ? Br = t[260] : (Br = (0, Y.jsx)(`p`, {
+        id: `commerce-file-upload-description`,
+        className: `text-token-text-secondary mt-1 text-xs`,
+        children: zr
+    }), t[259] = zr, t[260] = Br);
+    let Vr;
+    t[261] !== Rr || t[262] !== Br ? (Vr = (0, Y.jsxs)(`div`, {
+        children: [Rr, Br]
+    }), t[261] = Rr, t[262] = Br, t[263] = Vr) : Vr = t[263];
+    let Hr;
+    t[264] !== Me || t[265] !== nr || t[266] !== kn ? (Hr = (0, Y.jsx)(`input`, {
+        id: `file-uploader`,
+        name: `commerce-feed-file`,
+        className: `border-token-border-light bg-token-bg-primary text-token-text-primary file:bg-token-bg-secondary file:text-token-text-primary hover:file:bg-token-bg-tertiary mt-3 w-full rounded-md border px-3 py-2 text-sm file:me-4 file:rounded-md file:border-0 file:px-3 file:py-2 file:text-sm file:font-medium`,
+        type: `file`,
+        accept: `.jsonl.gz,.csv.gz`,
+        onChange: nr,
+        disabled: kn,
+        "aria-label": Me,
+        "aria-describedby": `commerce-file-upload-description`
+    }), t[264] = Me, t[265] = nr, t[266] = kn, t[267] = Hr) : Hr = t[267];
+    let Ur;
+    t[268] === Ir ? Ur = t[269] : (Ur = Ir(`file_upload`), t[268] = Ir, t[269] = Ur);
+    let Wr;
+    t[270] !== Hr || t[271] !== Ur || t[272] !== Vr ? (Wr = (0, Y.jsxs)(`div`, {
+        className: `space-y-3`,
+        children: [Vr, Hr, Ur]
+    }), t[270] = Hr, t[271] = Ur, t[272] = Vr, t[273] = Wr) : Wr = t[273];
+    let Gr;
+    t[274] !== ge || t[275] !== Wr || t[276] !== Lr ? (Gr = (0, Y.jsxs)(`section`, {
+        className: `border-token-border-light bg-token-bg-primary space-y-6 rounded-lg border p-5 shadow-sm`,
+        "aria-label": ge,
+        children: [Lr, Wr]
+    }), t[274] = ge, t[275] = Wr, t[276] = Lr, t[277] = Gr) : Gr = t[277];
+    let Kr;
+    t[278] === Pe ? Kr = t[279] : (Kr = (0, Y.jsx)(`h2`, {
+        className: `text-token-text-primary text-lg font-semibold`,
+        children: Pe
+    }), t[278] = Pe, t[279] = Kr);
+    let qr;
+    t[280] === ve ? qr = t[281] : (qr = (0, Y.jsx)(`h3`, {
+        className: `text-token-text-primary text-sm font-semibold`,
+        children: ve
+    }), t[280] = ve, t[281] = qr);
+    let Jr;
+    t[282] === o ? Jr = t[283] : (Jr = o.formatMessage({
+        id: `commerceSettingsPage.hostedUrlSectionDescription`,
+        defaultMessage: `Use this if your feed is already hosted online.`
+    }), t[282] = o, t[283] = Jr);
+    let Yr;
+    t[284] === Jr ? Yr = t[285] : (Yr = (0, Y.jsx)(`p`, {
+        id: `commerce-hosted-url-description`,
+        className: `text-token-text-secondary mt-1 text-xs`,
+        children: Jr
+    }), t[284] = Jr, t[285] = Yr);
+    let Xr;
+    t[286] !== qr || t[287] !== Yr ? (Xr = (0, Y.jsxs)(`div`, {
+        children: [qr, Yr]
+    }), t[286] = qr, t[287] = Yr, t[288] = Xr) : Xr = t[288];
+    let Zr;
+    t[289] !== ir || t[290] !== I || t[291] !== Pe || t[292] !== Ie || t[293] !== l ? (Zr = (0, Y.jsx)(`input`, {
+        id: `hosted-url`,
+        className: `border-token-border-light bg-token-bg-primary text-token-text-primary mt-3 w-full rounded-md border px-3 py-2 text-sm`,
+        type: `url`,
+        placeholder: Ie,
+        value: l,
+        onChange: ir,
+        disabled: I,
+        "aria-label": Pe,
+        "aria-describedby": `commerce-hosted-url-description`
+    }), t[289] = ir, t[290] = I, t[291] = Pe, t[292] = Ie, t[293] = l, t[294] = Zr) : Zr = t[294];
+    let Qr;
+    t[295] === xe ? Qr = t[296] : (Qr = (0, Y.jsx)(`div`, {
+        className: `text-token-text-primary text-xs font-semibold tracking-wide uppercase`,
+        children: xe
+    }), t[295] = xe, t[296] = Qr);
+    let $r;
+    t[297] === Ce ? $r = t[298] : ($r = (0, Y.jsx)(`p`, {
+        className: `text-token-text-secondary text-xs`,
+        children: Ce
+    }), t[297] = Ce, t[298] = $r);
+    let ei;
+    t[299] !== or || t[300] !== I || t[301] !== d || t[302] !== Bn ? (ei = Bn.map(e => {
+        let t = d === e.value;
+        return (0, Y.jsx)(`button`, {
+            type: `button`,
+            role: `radio`,
+            "aria-checked": t,
+            "aria-disabled": I,
+            onClick: t => {
+                if (I) {
+                    t.preventDefault();
+                    return
+                }
+                or(e.value)
+            },
+            className: se(`rounded-full border px-3 py-1.5 text-xs font-medium transition`, t ? `bg-token-bg-secondary text-token-text-primary border-token-border-heavy` : `bg-token-bg-primary text-token-text-secondary border-token-border-light hover:bg-token-bg-secondary/60`, I && `cursor-not-allowed opacity-60`),
+            children: e.label
+        }, e.value)
+    }), t[299] = or, t[300] = I, t[301] = d, t[302] = Bn, t[303] = ei) : ei = t[303];
+    let ti;
+    t[304] !== Te || t[305] !== ei ? (ti = (0, Y.jsx)(`div`, {
+        role: `radiogroup`,
+        "aria-label": Te,
+        className: `flex flex-wrap gap-2`,
+        children: ei
+    }), t[304] = Te, t[305] = ei, t[306] = ti) : ti = t[306];
+    let ni;
+    t[307] !== Qr || t[308] !== $r || t[309] !== ti ? (ni = (0, Y.jsxs)(`div`, {
+        className: `space-y-2`,
+        children: [Qr, $r, ti]
+    }), t[307] = Qr, t[308] = $r, t[309] = ti, t[310] = ni) : ni = t[310];
+    let ri;
+    t[311] === Re ? ri = t[312] : (ri = (0, Y.jsx)(`summary`, {
+        className: `text-token-text-primary cursor-pointer text-xs font-semibold`,
+        children: Re
+    }), t[311] = Re, t[312] = ri);
+    let ii;
+    t[313] === Be ? ii = t[314] : (ii = (0, Y.jsx)(`p`, {
+        className: `text-token-text-secondary text-xs`,
+        children: Be
+    }), t[313] = Be, t[314] = ii);
+    let ai;
+    t[315] !== ur || t[316] !== I || t[317] !== Xe ? (ai = (0, Y.jsx)(`div`, {
+        children: (0, Y.jsx)(ee, {
+            color: `secondary`,
+            size: `small`,
+            type: `button`,
+            onClick: ur,
+            "aria-disabled": I,
+            visuallyDisabled: I,
+            children: Xe
+        })
+    }), t[315] = ur, t[316] = I, t[317] = Xe, t[318] = ai) : ai = t[318];
+    let oi;
+    t[319] !== He || t[320] !== We || t[321] !== p.length ? (oi = p.length > 0 ? (0, Y.jsxs)(`div`, {
+        className: `text-token-text-secondary flex items-center gap-2 text-xs`,
+        children: [(0, Y.jsx)(`span`, {
+            className: `flex-1`,
+            children: He
+        }), (0, Y.jsx)(`span`, {
+            className: `flex-1`,
+            children: We
+        }), p.length > 0 ? (0, Y.jsx)(`span`, {
+            className: `w-20`,
+            "aria-hidden": `true`
+        }) : null]
+    }) : null, t[319] = He, t[320] = We, t[321] = p.length, t[322] = oi) : oi = t[322];
+    let si;
+    if (t[323] !== cr || t[324] !== fr || t[325] !== I || t[326] !== He || t[327] !== We || t[328] !== p || t[329] !== $e) {
+        let e;
+        t[331] !== cr || t[332] !== fr || t[333] !== I || t[334] !== He || t[335] !== We || t[336] !== p.length || t[337] !== $e ? (e = e => (0, Y.jsxs)(`div`, {
+            className: `flex flex-col gap-2 sm:flex-row sm:items-center`,
+            children: [(0, Y.jsx)(`input`, {
+                className: `border-token-border-light bg-token-bg-primary text-token-text-primary w-full rounded-md border px-3 py-2 text-sm`,
+                type: `text`,
+                name: `hosted-url-header-${e.id}`,
+                placeholder: He,
+                value: e.header,
+                onChange: t => cr(e.id, `header`, t.target.value),
+                disabled: I,
+                "aria-label": He
+            }), (0, Y.jsx)(`input`, {
+                className: `border-token-border-light bg-token-bg-primary text-token-text-primary w-full rounded-md border px-3 py-2 text-sm`,
+                name: `hosted-url-header-value-${e.id}`,
+                type: `password`,
+                autoComplete: `off`,
+                placeholder: We,
+                value: e.value,
+                onChange: t => cr(e.id, `value`, t.target.value),
+                disabled: I,
+                "aria-label": We
+            }), p.length > 0 ? (0, Y.jsx)(ee, {
+                color: `secondary`,
+                size: `small`,
+                type: `button`,
+                onClick: t => fr(t, e.id),
+                "aria-disabled": I,
+                visuallyDisabled: I,
+                className: `sm:shrink-0`,
+                children: $e
+            }) : null]
+        }, e.id), t[331] = cr, t[332] = fr, t[333] = I, t[334] = He, t[335] = We, t[336] = p.length, t[337] = $e, t[338] = e) : e = t[338], si = p.map(e), t[323] = cr, t[324] = fr, t[325] = I, t[326] = He, t[327] = We, t[328] = p, t[329] = $e, t[330] = si
+    } else si = t[330];
+    let ci;
+    t[339] === si ? ci = t[340] : (ci = (0, Y.jsx)(`div`, {
+        className: `space-y-2`,
+        children: si
+    }), t[339] = si, t[340] = ci);
+    let li;
+    t[341] !== ri || t[342] !== ii || t[343] !== ai || t[344] !== oi || t[345] !== ci ? (li = (0, Y.jsxs)(`details`, {
+        className: `space-y-2`,
+        children: [ri, ii, ai, oi, ci]
+    }), t[341] = ri, t[342] = ii, t[343] = ai, t[344] = oi, t[345] = ci, t[346] = li) : li = t[346];
+    let ui;
+    t[347] !== h || t[348] !== I || t[349] !== Je || t[350] !== Ke || t[351] !== d ? (ui = d === `once` ? (0, Y.jsxs)(`div`, {
+        className: `space-y-1`,
+        children: [(0, Y.jsxs)(`div`, {
+            className: `flex items-start gap-2`,
+            children: [(0, Y.jsx)(`input`, {
+                id: `commerce-hosted-url-allow-without-supported-filename`,
+                name: `commerce-hosted-url-allow-without-supported-filename`,
+                type: `checkbox`,
+                className: `border-token-border-light mt-0.5 h-4 w-4 rounded`,
+                checked: h,
+                onChange: e => g(e.target.checked),
+                disabled: I,
+                "aria-describedby": `commerce-hosted-url-allow-without-supported-filename-description`
+            }), (0, Y.jsx)(`label`, {
+                htmlFor: `commerce-hosted-url-allow-without-supported-filename`,
+                className: `text-token-text-primary text-sm`,
+                children: Ke
+            })]
+        }), (0, Y.jsx)(`p`, {
+            id: `commerce-hosted-url-allow-without-supported-filename-description`,
+            className: `text-token-text-secondary text-xs`,
+            children: Je
+        })]
+    }) : null, t[347] = h, t[348] = I, t[349] = Je, t[350] = Ke, t[351] = d, t[352] = ui) : ui = t[352];
+    let di;
+    t[353] === Ir ? di = t[354] : (di = Ir(`hosted_url`), t[353] = Ir, t[354] = di);
+    let fi;
+    t[355] !== Pe || t[356] !== Kr || t[357] !== Xr || t[358] !== Zr || t[359] !== ni || t[360] !== li || t[361] !== ui || t[362] !== di ? (fi = (0, Y.jsxs)(`section`, {
+        className: `border-token-border-light bg-token-bg-primary space-y-3 rounded-lg border p-5 shadow-sm`,
+        "aria-label": Pe,
+        children: [Kr, Xr, Zr, ni, li, ui, di]
+    }), t[355] = Pe, t[356] = Kr, t[357] = Xr, t[358] = Zr, t[359] = ni, t[360] = li, t[361] = ui, t[362] = di, t[363] = fi) : fi = t[363];
+    let pi;
+    t[364] !== b || t[365] !== on || t[366] !== er || t[367] !== Sr || t[368] !== w || t[369] !== Zt ? (pi = b ? (0, Y.jsxs)(`div`, {
+        className: `mt-4 flex flex-wrap items-center gap-3 text-sm`,
+        children: [(0, Y.jsx)(`span`, {
+            className: `text-token-text-secondary`,
+            children: on
+        }), (0, Y.jsx)(`span`, {
+            className: `text-token-text-primary font-medium`,
+            children: er[b.status]
+        }), b.detail ? (0, Y.jsx)(`span`, {
+            className: `text-token-text-secondary`,
+            children: b.detail
+        }) : null, (0, Y.jsx)(ee, {
+            onClick: Sr,
+            disabled: w,
+            type: `button`,
+            children: Zt
+        })]
+    }) : null, t[364] = b, t[365] = on, t[366] = er, t[367] = Sr, t[368] = w, t[369] = Zt, t[370] = pi) : pi = t[370];
+    let mi;
+    return t[371] !== Gr || t[372] !== fi || t[373] !== pi ? (mi = (0, Y.jsxs)(`div`, {
+        className: `space-y-6`,
+        children: [Gr, fi, pi]
+    }), t[371] = Gr, t[372] = fi, t[373] = pi, t[374] = mi) : mi = t[374], mi
+}
+
+function mS(e) {
+    let [t, n] = e;
+    return (0, Y.jsxs)(`li`, {
+        className: `bg-token-bg-primary/60 flex items-center justify-between rounded-md p-3 text-sm`,
+        "data-testid": `validation-error-count-${t}`,
+        children: [(0, Y.jsx)(`span`, {
+            className: `text-token-text-primary`,
+            children: dS(t)
+        }), (0, Y.jsx)(`span`, {
+            className: `text-token-text-secondary font-semibold`,
+            children: n
+        })]
+    }, t)
+}
+
+function hS(e) {
+    return [...e, aS()]
+}
+
+function gS(e, t) {
+    return t[1] - e[1]
+}
+
+function _S() {
+    return []
+}
+var vS, yS, Y, bS, xS = e((() => {
+    vS = ye(), y(), yS = n(M()), fe(), r(), tx(), hx(), yx(), Lx(), Qe(), rS(), w(), Y = A(), bS = 10
+}));
+
+function SS(e) {
+    "use forget";
+    let t = (0, ES.c)(23),
+        {
+            feedId: n,
+            uploadId: r
+        } = e,
+        a = C(TS),
+        o = C(wS),
+        s;
+    t[0] !== o || t[1] !== n || t[2] !== r || t[3] !== a ? (s = [`merchant-issue-reasons`, a, o, n, r], t[0] = o, t[1] = n, t[2] = r, t[3] = a, t[4] = s) : s = t[4];
+    let c;
+    t[5] !== n || t[6] !== r ? (c = e => {
+        let {
+            signal: t
+        } = e;
+        return v.safeGet(`/shopping/feeds/{feed_id}/uploads/{upload_id}/diagnostics`, {
+            authOption: i.Required,
+            parameters: {
+                path: {
+                    feed_id: n,
+                    upload_id: r
+                },
+                query: {
+                    code: `invalid_value`
+                }
+            },
+            signal: t
+        })
+    }, t[5] = n, t[6] = r, t[7] = c) : c = t[7];
+    let l;
+    t[8] !== s || t[9] !== c ? (l = {
+        queryKey: s,
+        queryFn: c,
+        staleTime: 0,
+        gcTime: 0,
+        retry: !1
+    }, t[8] = s, t[9] = c, t[10] = l) : l = t[10];
+    let {
+        data: u,
+        isFetching: d,
+        isError: f,
+        refetch: p
+    } = de(l);
+    if (d) {
+        let e;
+        return t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, DS.jsx)(`p`, {
+            role: `status`,
+            children: (0, DS.jsx)(j, {
+                id: `merchantSettings.issueReasons.loading`,
+                defaultMessage: `Loading specific error reasons…`
+            })
+        }), t[11] = e) : e = t[11], e
+    }
+    if (f) {
+        let e;
+        t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, DS.jsx)(`p`, {
+            role: `alert`,
+            children: (0, DS.jsx)(j, {
+                id: `merchantSettings.issueReasons.error`,
+                defaultMessage: `Specific error reasons could not be loaded`
+            })
+        }), t[12] = e) : e = t[12];
+        let n;
+        t[13] === p ? n = t[14] : (n = () => void p(), t[13] = p, t[14] = n);
+        let r;
+        t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, DS.jsx)(j, {
+            id: `merchantSettings.issueReasons.retry`,
+            defaultMessage: `Retry`
+        }), t[15] = r) : r = t[15];
+        let i;
+        return t[16] === n ? i = t[17] : (i = (0, DS.jsxs)(`div`, {
+            children: [e, (0, DS.jsx)(ee, {
+                color: `secondary`,
+                size: `small`,
+                onClick: n,
+                children: r
+            })]
+        }), t[16] = n, t[17] = i), i
+    }
+    if (u == null) return null;
+    let m;
+    t[18] === u.examples ? m = t[19] : (m = u.examples ?? [], t[18] = u.examples, t[19] = m);
+    let h = m,
+        g;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, DS.jsx)(`p`, {
+        className: `text-token-text-primary font-medium`,
+        children: (0, DS.jsx)(j, {
+            id: `merchantSettings.issueReasons.examplesTitle`,
+            defaultMessage: `Rejected row examples`
+        })
+    }), t[20] = g) : g = t[20];
+    let _;
+    return t[21] === h ? _ = t[22] : (_ = (0, DS.jsxs)(`div`, {
+        className: `space-y-2 text-sm`,
+        children: [g, h.length === 0 ? (0, DS.jsx)(`p`, {
+            children: (0, DS.jsx)(j, {
+                id: `merchantSettings.issueReasons.unavailable`,
+                defaultMessage: `Specific reasons were not saved or are no longer available for this upload`
+            })
+        }) : (0, DS.jsxs)(DS.Fragment, {
+            children: [h.map(CS), (0, DS.jsx)(`p`, {
+                children: (0, DS.jsx)(j, {
+                    id: `merchantSettings.issueReasons.sampleLimit`,
+                    defaultMessage: `Reasons come from up to 5 saved examples per field and may not cover every rejected row`
+                })
+            })]
+        })]
+    }), t[21] = h, t[22] = _), _
+}
+
+function CS(e, t) {
+    return (0, DS.jsxs)(`div`, {
+        className: `flex flex-col gap-3`,
+        children: [(0, DS.jsx)(`p`, {
+            className: `text-xs`,
+            children: (0, DS.jsx)(j, {
+                id: `merchantSettings.issueReasons.position`,
+                defaultMessage: `{file} · Record {row, number}`,
+                values: {
+                    file: e.source_file,
+                    row: e.row_number
+                }
+            })
+        }), e.product_id != null && (0, DS.jsx)(`p`, {
+            className: `text-sm break-all select-text`,
+            children: (0, DS.jsx)(j, {
+                id: `merchantSettings.issueReasons.productId`,
+                defaultMessage: `Product ID: {id}`,
+                values: {
+                    id: e.product_id
+                }
+            })
+        }), (0, DS.jsx)(`div`, {
+            className: `text-sm break-all whitespace-pre-wrap select-text`,
+            children: e.value_redacted ? (0, DS.jsx)(j, {
+                id: `merchantSettings.issueReasons.redactedValue`,
+                defaultMessage: `Value hidden because the URL contains credentials`
+            }) : (0, DS.jsx)(j, {
+                id: `merchantSettings.issueReasons.rejectedValue`,
+                defaultMessage: `Rejected value: {value}`,
+                values: {
+                    value: JSON.stringify(e.failed_value)
+                }
+            })
+        }), e.value_truncated && (0, DS.jsx)(`p`, {
+            className: `text-xs`,
+            children: (0, DS.jsx)(j, {
+                id: `merchantSettings.issueReasons.truncatedValue`,
+                defaultMessage: `This long value has been shortened`
+            })
+        }), (0, DS.jsx)(`p`, {
+            children: (0, DS.jsx)(j, {
+                id: `merchantSettings.issueReasons.reason`,
+                defaultMessage: `{field}: {reason, select, unverified_product_domain {The product domain was not verified for this profile when the upload was processed. Verify the domain and upload again} product_domain_outside_profile {The product domain is outside this profile's allowed domains. Use a product URL belonging to this profile} invalid_landing_page_url {The landing page URL is invalid. Use an HTTP or HTTPS URL without credentials or invalid characters} invalid_url {The URL is invalid. Enter a complete HTTP or HTTPS URL} unsupported_image_url {The image URL is invalid or unsupported. Enter a complete supported image URL} missing {A required value is missing. Fill in this field} none {This field cannot be empty. Supply a value} type {The value has the wrong data type. Match this field's type in the feed specification} unsupported_value {This value is not supported. Use one of the allowed values in the feed specification} invalid_condition {The product condition is invalid. Use new, refurbished, or used} invalid_price {The price must include an amount and currency, such as 12.99 USD} invalid_availability {Use a supported availability, such as in_stock or out_of_stock} invalid_bool {Use true or false for this field} expected_price_with_currency {The price must include an amount and currency, such as 12.99 USD} expected_google_iso_8601 {Use an ISO 8601 date and time with a timezone, such as 2026-10-06T12:00:00Z} invalid_amount {The price amount is invalid. Enter a finite number} non_positive_amount {The price amount must be positive} currency_mismatch {The sale price currency must match the regular price currency} must_be_less_than_price {The sale price must be lower than the regular price} conflicting_alias {Multiple columns provide conflicting values for this field. Keep one consistent value} userinfo_not_allowed {The URL contains credentials. Remove the username and password} unknown {A specific validation reason was not saved for this example} other {This value failed validation. Check the field requirements in the feed specification}}`,
+                values: {
+                    field: e.field,
+                    reason: e.reason ?? `unknown`
+                }
+            })
+        })]
+    }, t)
+}
+
+function wS() {
+    return g()?.id
+}
+
+function TS() {
+    return g()?.authUserId
+}
+var ES, DS, OS = e((() => {
+        ES = ye(), ve(), fe(), r(), a(), O(), u(), te(), DS = A()
+    })),
+    kS, AS = e((() => {
+        o(), _e(), kS = m(() => he(() => import(`./47d3aa5d-j6kts12qvem4z611.js`).then(e => e.FeedErrorDrawer), __vite__mapDeps([2, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11])))
+    }));
+
+function jS(e) {
+    "use forget";
+    let t = (0, MS.c)(34),
+        {
+            page: n,
+            total: r,
+            onPageChange: i
+        } = e,
+        a = be(),
+        o = Math.ceil(r / 10);
+    if (o <= 1) return null;
+    let s;
+    t[0] === a ? s = t[1] : (s = a.formatMessage({
+        id: `commerceSettingsPage.feedActivity.pagination.label`,
+        defaultMessage: `Feed activity pagination`
+    }), t[0] = a, t[1] = s);
+    let c = n * 10 + 1,
+        l = Math.min((n + 1) * 10, r),
+        u;
+    t[2] !== c || t[3] !== l || t[4] !== r ? (u = (0, NS.jsx)(`span`, {
+        "aria-live": `polite`,
+        children: (0, NS.jsx)(j, {
+            id: `commerceSettingsPage.feedActivity.pagination.range`,
+            defaultMessage: `Showing {start, number}–{end, number} of {total, number}`,
+            values: {
+                start: c,
+                end: l,
+                total: r
+            }
+        })
+    }), t[2] = c, t[3] = l, t[4] = r, t[5] = u) : u = t[5];
+    let d = n === 0,
+        f = n === 0,
+        p;
+    t[6] !== i || t[7] !== n ? (p = () => {
+        n > 0 && i(n - 1)
+    }, t[6] = i, t[7] = n, t[8] = p) : p = t[8];
+    let m;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, NS.jsx)(j, {
+        id: `commerceSettingsPage.feedActivity.pagination.previous`,
+        defaultMessage: `Previous`
+    }), t[9] = m) : m = t[9];
+    let h;
+    t[10] !== d || t[11] !== f || t[12] !== p ? (h = (0, NS.jsx)(ee, {
+        type: `button`,
+        color: `secondary`,
+        size: `small`,
+        "aria-disabled": d,
+        visuallyDisabled: f,
+        onClick: p,
+        children: m
+    }), t[10] = d, t[11] = f, t[12] = p, t[13] = h) : h = t[13];
+    let g = n + 1,
+        _;
+    t[14] !== o || t[15] !== g ? (_ = (0, NS.jsx)(j, {
+        id: `commerceSettingsPage.feedActivity.pagination.page`,
+        defaultMessage: `Page {page, number} of {count, number}`,
+        values: {
+            page: g,
+            count: o
+        }
+    }), t[14] = o, t[15] = g, t[16] = _) : _ = t[16];
+    let v = n + 1 >= o,
+        y = n + 1 >= o,
+        b;
+    t[17] !== i || t[18] !== n || t[19] !== o ? (b = () => {
+        n + 1 < o && i(n + 1)
+    }, t[17] = i, t[18] = n, t[19] = o, t[20] = b) : b = t[20];
+    let x;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, NS.jsx)(j, {
+        id: `commerceSettingsPage.feedActivity.pagination.next`,
+        defaultMessage: `Next`
+    }), t[21] = x) : x = t[21];
+    let S;
+    t[22] !== v || t[23] !== y || t[24] !== b ? (S = (0, NS.jsx)(ee, {
+        type: `button`,
+        color: `secondary`,
+        size: `small`,
+        "aria-disabled": v,
+        visuallyDisabled: y,
+        onClick: b,
+        children: x
+    }), t[22] = v, t[23] = y, t[24] = b, t[25] = S) : S = t[25];
+    let C;
+    t[26] !== _ || t[27] !== S || t[28] !== h ? (C = (0, NS.jsxs)(`div`, {
+        className: `flex items-center gap-3`,
+        children: [h, _, S]
+    }), t[26] = _, t[27] = S, t[28] = h, t[29] = C) : C = t[29];
+    let w;
+    return t[30] !== s || t[31] !== C || t[32] !== u ? (w = (0, NS.jsxs)(`nav`, {
+        className: `flex flex-wrap items-center justify-between gap-3 text-xs`,
+        "aria-label": s,
+        children: [u, C]
+    }), t[30] = s, t[31] = C, t[32] = u, t[33] = w) : w = t[33], w
+}
+var MS, NS, PS = e((() => {
+    MS = ye(), fe(), r(), xx(), NS = A()
+}));
+
+function FS(e) {
+    return (0, X.jsx)(`option`, {
+        value: e.value,
+        children: e.label
+    }, e.value)
+}
+
+function IS(e) {
+    return (0, X.jsx)(`option`, {
+        value: e.value,
+        children: e.label
+    }, e.value)
+}
+
+function LS(e) {
+    return (0, X.jsx)(`option`, {
+        value: e.value,
+        children: e.label
+    }, e.value)
+}
+
+function RS(e) {
+    return e.code
+}
+
+function zS(e) {
+    return e.code === `invalid_value`
+}
+
+function BS(e) {
+    return e != null
+}
+var VS, HS, X, US, WS, GS, KS, qS, JS, YS = e((() => {
+    VS = ye(), r(), Qe(), HS = n(M()), fe(), OS(), AS(), PS(), xx(), De(), X = A(), US = e => e === `all` || e === `missing_required_column` || e === `invalid_value` || e === `invalid_gzip` || e === `unsupported_file_type` || e === `invalid_sftp_directory_layout` || e === `unclassified`, WS = e => e === `newest` || e === `oldest`, GS = (e, t) => {
+        let n = Date.parse(e.uploadedAt),
+            r = Date.parse(t.uploadedAt);
+        return Number.isNaN(n) || Number.isNaN(r) ? e.uploadedAt.localeCompare(t.uploadedAt) : n - r
+    }, KS = e => {
+        if (e == null) return `all`;
+        switch (e) {
+            case 1:
+                return `1`;
+            case 3:
+                return `3`;
+            case 7:
+                return `7`;
+            case 30:
+                return `30`;
+            case 90:
+                return `90`
+        }
+    }, qS = e => {
+        switch (e) {
+            case `1`:
+                return 1;
+            case `3`:
+                return 3;
+            case `7`:
+                return 7;
+            case `30`:
+                return 30;
+            case `90`:
+                return 90;
+            case `all`:
+                return null;
+            default:
+                return
+        }
+    }, JS = e => {
+        "use forget";
+        let t = (0, VS.c)(227),
+            {
+                feedId: n,
+                merchantName: r,
+                lookbackDays: i,
+                errors: a,
+                isTruncated: o,
+                isLoading: s,
+                hasLoadError: c,
+                canRefresh: l,
+                onLookbackDaysChange: u,
+                onRefresh: d,
+                embedded: f
+            } = e,
+            p = f !== void 0 && f,
+            m = be(),
+            h = (0, HS.useRef)(null),
+            [g, _] = (0, HS.useState)(null),
+            [v, y] = (0, HS.useState)(`all`),
+            [b, x] = (0, HS.useState)(`newest`),
+            [S, C] = (0, HS.useState)(0),
+            w;
+        t[0] === m ? w = t[1] : (w = e => {
+            switch (e) {
+                case `file_upload`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.source.fileUpload`,
+                        defaultMessage: `File upload`
+                    });
+                case `hosted_url`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.source.hostedUrl`,
+                        defaultMessage: `Hosted URL`
+                    });
+                case `sftp`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.source.sftp`,
+                        defaultMessage: `SFTP`
+                    });
+                case `unknown`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.source.unknown`,
+                        defaultMessage: `Unknown source`
+                    })
+            }
+        }, t[0] = m, t[1] = w);
+        let te = w,
+            ne;
+        t[2] === m ? ne = t[3] : (ne = e => {
+            switch (e.code) {
+                case `missing_required_column`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.diagnostic.missingRequiredColumn`,
+                        defaultMessage: `A required column is missing.`
+                    });
+                case `invalid_value`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.diagnostic.invalidValue`,
+                        defaultMessage: `Some values could not be accepted.`
+                    });
+                case `invalid_gzip`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.diagnostic.invalidGzip`,
+                        defaultMessage: `The file could not be decompressed as gzip.`
+                    });
+                case `unsupported_file_type`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.diagnostic.unsupportedFileType`,
+                        defaultMessage: `The uploaded file type is not supported.`
+                    });
+                case `invalid_sftp_directory_layout`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.diagnostic.invalidSftpDirectoryLayout`,
+                        defaultMessage: `Files must be uploaded directly to the SFTP root, not a subfolder.`
+                    })
+            }
+        }, t[2] = m, t[3] = ne);
+        let T = ne,
+            E;
+        t[4] === m ? E = t[5] : (E = e => {
+            switch (e) {
+                case `missing_required_column`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.issueType.missingRequiredColumn`,
+                        defaultMessage: `Missing required column`
+                    });
+                case `invalid_value`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.issueType.invalidValue`,
+                        defaultMessage: `Invalid value`
+                    });
+                case `invalid_gzip`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.issueType.invalidGzip`,
+                        defaultMessage: `Invalid gzip file`
+                    });
+                case `unsupported_file_type`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.issueType.unsupportedFileType`,
+                        defaultMessage: `Unsupported file type`
+                    });
+                case `invalid_sftp_directory_layout`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.issueType.invalidSftpDirectoryLayout`,
+                        defaultMessage: `SFTP directory layout`
+                    })
+            }
+        }, t[4] = m, t[5] = E);
+        let D = E,
+            re;
+        t[6] === m ? re = t[7] : (re = e => {
+            switch (e.code) {
+                case `missing_required_column`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.action.missingRequiredColumn`,
+                        defaultMessage: `Add the missing required column to the feed, then upload it again.`
+                    });
+                case `invalid_value`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.action.invalidValue`,
+                        defaultMessage: `Correct the affected values to match the product feed format, then upload again.`
+                    });
+                case `invalid_gzip`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.action.invalidGzip`,
+                        defaultMessage: `Compress the original feed file with gzip and upload it again.`
+                    });
+                case `unsupported_file_type`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.action.unsupportedFileTypeFormats`,
+                        defaultMessage: `Upload a CSV, TSV, Parquet, or gzip-compressed JSONL (.jsonl.gz) feed. CSV and TSV files may also be gzip-compressed.`
+                    });
+                case `invalid_sftp_directory_layout`:
+                    return m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.action.invalidSftpDirectoryLayout`,
+                        defaultMessage: `Move the feed files to the SFTP root, then upload them again.`
+                    })
+            }
+        }, t[6] = m, t[7] = re);
+        let ie = re,
+            O;
+        t[8] === m ? O = t[9] : (O = e => e === `failed` ? m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.status.failed`,
+            defaultMessage: `Failed`
+        }) : m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.status.completedWithErrors`,
+            defaultMessage: `Completed with errors`
+        }), t[8] = m, t[9] = O);
+        let ae = O,
+            oe;
+        t[10] === m ? oe = t[11] : (oe = e => Xe(m, e) ?? Ye(m, e) ?? e, t[10] = m, t[11] = oe);
+        let se = oe,
+            ce;
+        t[12] === m ? ce = t[13] : (ce = m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.lookback.oneDay`,
+            defaultMessage: `1 day`
+        }), t[12] = m, t[13] = ce);
+        let k;
+        t[14] === ce ? k = t[15] : (k = {
+            value: `1`,
+            label: ce
+        }, t[14] = ce, t[15] = k);
+        let A;
+        t[16] === m ? A = t[17] : (A = m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.lookback.threeDays`,
+            defaultMessage: `3 days`
+        }), t[16] = m, t[17] = A);
+        let le;
+        t[18] === A ? le = t[19] : (le = {
+            value: `3`,
+            label: A
+        }, t[18] = A, t[19] = le);
+        let ue;
+        t[20] === m ? ue = t[21] : (ue = m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.lookback.sevenDays`,
+            defaultMessage: `7 days`
+        }), t[20] = m, t[21] = ue);
+        let j;
+        t[22] === ue ? j = t[23] : (j = {
+            value: `7`,
+            label: ue
+        }, t[22] = ue, t[23] = j);
+        let de;
+        t[24] === m ? de = t[25] : (de = m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.lookback.thirtyDays`,
+            defaultMessage: `30 days`
+        }), t[24] = m, t[25] = de);
+        let fe;
+        t[26] === de ? fe = t[27] : (fe = {
+            value: `30`,
+            label: de
+        }, t[26] = de, t[27] = fe);
+        let pe;
+        t[28] === m ? pe = t[29] : (pe = m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.lookback.threeMonths`,
+            defaultMessage: `3 months`
+        }), t[28] = m, t[29] = pe);
+        let M;
+        t[30] === pe ? M = t[31] : (M = {
+            value: `90`,
+            label: pe
+        }, t[30] = pe, t[31] = M);
+        let me;
+        t[32] === m ? me = t[33] : (me = m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.lookback.recordedHistoryAllTime`,
+            defaultMessage: `All time (recorded uploads)`
+        }), t[32] = m, t[33] = me);
+        let he;
+        t[34] === me ? he = t[35] : (he = {
+            value: `all`,
+            label: me
+        }, t[34] = me, t[35] = he);
+        let ge;
+        t[36] !== le || t[37] !== j || t[38] !== fe || t[39] !== M || t[40] !== he || t[41] !== k ? (ge = [k, le, j, fe, M, he], t[36] = le, t[37] = j, t[38] = fe, t[39] = M, t[40] = he, t[41] = k, t[42] = ge) : ge = t[42];
+        let _e = ge,
+            ve;
+        t[43] === m ? ve = t[44] : (ve = m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.issueType.unclassified`,
+            defaultMessage: `Unclassified`
+        }), t[43] = m, t[44] = ve);
+        let ye = ve,
+            xe;
+        t[45] === m ? xe = t[46] : (xe = m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.issueType.all`,
+            defaultMessage: `All issue types`
+        }), t[45] = m, t[46] = xe);
+        let Se;
+        t[47] === xe ? Se = t[48] : (Se = {
+            value: `all`,
+            label: xe
+        }, t[47] = xe, t[48] = Se);
+        let Ce;
+        t[49] === D ? Ce = t[50] : (Ce = D(`missing_required_column`), t[49] = D, t[50] = Ce);
+        let we;
+        t[51] === Ce ? we = t[52] : (we = {
+            value: `missing_required_column`,
+            label: Ce
+        }, t[51] = Ce, t[52] = we);
+        let Te;
+        t[53] === D ? Te = t[54] : (Te = D(`invalid_value`), t[53] = D, t[54] = Te);
+        let Ee;
+        t[55] === Te ? Ee = t[56] : (Ee = {
+            value: `invalid_value`,
+            label: Te
+        }, t[55] = Te, t[56] = Ee);
+        let De;
+        t[57] === D ? De = t[58] : (De = D(`invalid_gzip`), t[57] = D, t[58] = De);
+        let Oe;
+        t[59] === De ? Oe = t[60] : (Oe = {
+            value: `invalid_gzip`,
+            label: De
+        }, t[59] = De, t[60] = Oe);
+        let ke;
+        t[61] === D ? ke = t[62] : (ke = D(`unsupported_file_type`), t[61] = D, t[62] = ke);
+        let Ae;
+        t[63] === ke ? Ae = t[64] : (Ae = {
+            value: `unsupported_file_type`,
+            label: ke
+        }, t[63] = ke, t[64] = Ae);
+        let N;
+        t[65] === D ? N = t[66] : (N = D(`invalid_sftp_directory_layout`), t[65] = D, t[66] = N);
+        let Me;
+        t[67] === N ? Me = t[68] : (Me = {
+            value: `invalid_sftp_directory_layout`,
+            label: N
+        }, t[67] = N, t[68] = Me);
+        let Ne;
+        t[69] === ye ? Ne = t[70] : (Ne = {
+            value: `unclassified`,
+            label: ye
+        }, t[69] = ye, t[70] = Ne);
+        let Pe;
+        t[71] !== Se || t[72] !== we || t[73] !== Ee || t[74] !== Oe || t[75] !== Ae || t[76] !== Me || t[77] !== Ne ? (Pe = [Se, we, Ee, Oe, Ae, Me, Ne], t[71] = Se, t[72] = we, t[73] = Ee, t[74] = Oe, t[75] = Ae, t[76] = Me, t[77] = Ne, t[78] = Pe) : Pe = t[78];
+        let Fe = Pe,
+            Ie;
+        t[79] === m ? Ie = t[80] : (Ie = m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.sort.mostRecent`,
+            defaultMessage: `Most recent`
+        }), t[79] = m, t[80] = Ie);
+        let Le;
+        t[81] === Ie ? Le = t[82] : (Le = {
+            value: `newest`,
+            label: Ie
+        }, t[81] = Ie, t[82] = Le);
+        let Re;
+        t[83] === m ? Re = t[84] : (Re = m.formatMessage({
+            id: `commerceSettingsPage.feedErrorHistory.sort.oldest`,
+            defaultMessage: `Oldest`
+        }), t[83] = m, t[84] = Re);
+        let ze;
+        t[85] === Re ? ze = t[86] : (ze = {
+            value: `oldest`,
+            label: Re
+        }, t[85] = Re, t[86] = ze);
+        let Be;
+        t[87] !== Le || t[88] !== ze ? (Be = [Le, ze], t[87] = Le, t[88] = ze, t[89] = Be) : Be = t[89];
+        let Ve = Be,
+            He;
+        if (t[90] !== a || t[91] !== v || t[92] !== b) {
+            let e;
+            t[94] === v ? e = t[95] : (e = e => v === `all` ? !0 : v === `unclassified` ? e.diagnostics.length === 0 : e.diagnostics.some(e => e.code === v), t[94] = v, t[95] = e);
+            let n = a.filter(e),
+                r;
+            t[96] === b ? r = t[97] : (r = (e, t) => {
+                let n = GS(e, t);
+                return b === `newest` ? -n : n
+            }, t[96] = b, t[97] = r), He = [...n].sort(r), t[90] = a, t[91] = v, t[92] = b, t[93] = He
+        } else He = t[93];
+        let Ue = He,
+            We = Math.max(1, Math.ceil(Ue.length / 10)),
+            Ge = Math.min(S, We - 1);
+        !s && !c && S !== Ge && C(Ge);
+        let Ke;
+        if (t[98] !== l || t[99] !== Ge || t[100] !== ie || t[101] !== T || t[102] !== p || t[103] !== a.length || t[104] !== g || t[105] !== n || t[106] !== c || t[107] !== m || t[108] !== s || t[109] !== o || t[110] !== v || t[111] !== Fe || t[112] !== D || t[113] !== i || t[114] !== _e || t[115] !== r || t[116] !== u || t[117] !== d || t[118] !== Ve || t[119] !== b || t[120] !== te || t[121] !== ae || t[122] !== se || t[123] !== ye || t[124] !== Ue) {
+            let e = Ue.slice(Ge * 10, (Ge + 1) * 10),
+                f = p ? `sr-only` : void 0,
+                S;
+            t[126] === m ? S = t[127] : (S = m.formatMessage({
+                id: `commerceSettingsPage.feedErrorHistory.title`,
+                defaultMessage: `Feed issues`
+            }), t[126] = m, t[127] = S);
+            let w;
+            t[128] === S ? w = t[129] : (w = (0, X.jsx)(`h2`, {
+                id: `feed-error-history-title`,
+                className: `text-token-text-primary text-lg font-semibold`,
+                children: S
+            }), t[128] = S, t[129] = w);
+            let ne;
+            t[130] !== m || t[131] !== r ? (ne = r ? m.formatMessage({
+                id: `commerceSettingsPage.feedErrorHistory.descriptionWithMerchant`,
+                defaultMessage: `Review recent feed-processing issues for {merchantName}.`
+            }, {
+                merchantName: r
+            }) : m.formatMessage({
+                id: `commerceSettingsPage.feedErrorHistory.description`,
+                defaultMessage: `Select a merchant to review its feed issues.`
+            }), t[130] = m, t[131] = r, t[132] = ne) : ne = t[132];
+            let E;
+            t[133] === ne ? E = t[134] : (E = (0, X.jsx)(`p`, {
+                className: `text-token-text-secondary mt-1 text-sm`,
+                children: ne
+            }), t[133] = ne, t[134] = E);
+            let re;
+            t[135] !== w || t[136] !== E ? (re = (0, X.jsxs)(`div`, {
+                children: [w, E]
+            }), t[135] = w, t[136] = E, t[137] = re) : re = t[137];
+            let O;
+            t[138] !== f || t[139] !== re ? (O = (0, X.jsx)(`div`, {
+                className: f,
+                children: re
+            }), t[138] = f, t[139] = re, t[140] = O) : O = t[140];
+            let oe;
+            t[141] === m ? oe = t[142] : (oe = m.formatMessage({
+                id: `commerceSettingsPage.feedErrorHistory.lookback.label`,
+                defaultMessage: `Time range`
+            }), t[141] = m, t[142] = oe);
+            let ce;
+            t[143] === oe ? ce = t[144] : (ce = (0, X.jsx)(`span`, {
+                className: `text-token-text-secondary text-sm font-medium`,
+                children: oe
+            }), t[143] = oe, t[144] = ce);
+            let k;
+            t[145] === i ? k = t[146] : (k = KS(i), t[145] = i, t[146] = k);
+            let A;
+            t[147] === u ? A = t[148] : (A = e => {
+                let t = qS(e.target.value);
+                t !== void 0 && (_(null), C(0), u(t))
+            }, t[147] = u, t[148] = A);
+            let le;
+            t[149] === _e ? le = t[150] : (le = _e.map(FS), t[149] = _e, t[150] = le);
+            let ue;
+            t[151] !== k || t[152] !== A || t[153] !== le ? (ue = (0, X.jsx)(`select`, {
+                name: `feed-issues-time-range`,
+                className: `border-token-border-light bg-token-bg-primary text-token-text-primary h-10 w-full min-w-0 rounded-md border ps-3 pe-10 text-sm`,
+                value: k,
+                onChange: A,
+                children: le
+            }), t[151] = k, t[152] = A, t[153] = le, t[154] = ue) : ue = t[154];
+            let j;
+            t[155] !== ce || t[156] !== ue ? (j = (0, X.jsxs)(`label`, {
+                className: `flex min-w-0 flex-col gap-1.5`,
+                children: [ce, ue]
+            }), t[155] = ce, t[156] = ue, t[157] = j) : j = t[157];
+            let de;
+            t[158] === m ? de = t[159] : (de = m.formatMessage({
+                id: `commerceSettingsPage.feedErrorHistory.issueType.label`,
+                defaultMessage: `Issue type`
+            }), t[158] = m, t[159] = de);
+            let fe;
+            t[160] === de ? fe = t[161] : (fe = (0, X.jsx)(`span`, {
+                className: `text-token-text-secondary text-sm font-medium`,
+                children: de
+            }), t[160] = de, t[161] = fe);
+            let pe;
+            t[162] === Symbol.for(`react.memo_cache_sentinel`) ? (pe = e => {
+                let t = e.target.value;
+                US(t) && (_(null), C(0), y(t))
+            }, t[162] = pe) : pe = t[162];
+            let M;
+            t[163] === Fe ? M = t[164] : (M = Fe.map(IS), t[163] = Fe, t[164] = M);
+            let me;
+            t[165] !== v || t[166] !== M ? (me = (0, X.jsx)(`select`, {
+                name: `feed-issues-type`,
+                className: `border-token-border-light bg-token-bg-primary text-token-text-primary h-10 w-full min-w-0 rounded-md border ps-3 pe-10 text-sm`,
+                value: v,
+                onChange: pe,
+                children: M
+            }), t[165] = v, t[166] = M, t[167] = me) : me = t[167];
+            let he;
+            t[168] !== fe || t[169] !== me ? (he = (0, X.jsxs)(`label`, {
+                className: `flex min-w-0 flex-col gap-1.5`,
+                children: [fe, me]
+            }), t[168] = fe, t[169] = me, t[170] = he) : he = t[170];
+            let ge;
+            t[171] === m ? ge = t[172] : (ge = m.formatMessage({
+                id: `commerceSettingsPage.feedErrorHistory.sort.label`,
+                defaultMessage: `Sort by`
+            }), t[171] = m, t[172] = ge);
+            let ve;
+            t[173] === ge ? ve = t[174] : (ve = (0, X.jsx)(`span`, {
+                className: `text-token-text-secondary text-sm font-medium`,
+                children: ge
+            }), t[173] = ge, t[174] = ve);
+            let be;
+            t[175] === Symbol.for(`react.memo_cache_sentinel`) ? (be = e => {
+                let t = e.target.value;
+                WS(t) && (x(t), C(0), _(null))
+            }, t[175] = be) : be = t[175];
+            let xe;
+            t[176] === Ve ? xe = t[177] : (xe = Ve.map(LS), t[176] = Ve, t[177] = xe);
+            let Se;
+            t[178] !== b || t[179] !== xe ? (Se = (0, X.jsx)(`select`, {
+                name: `feed-issues-sort`,
+                className: `border-token-border-light bg-token-bg-primary text-token-text-primary h-10 w-full min-w-0 rounded-md border ps-3 pe-10 text-sm`,
+                value: b,
+                onChange: be,
+                children: xe
+            }), t[178] = b, t[179] = xe, t[180] = Se) : Se = t[180];
+            let Ce;
+            t[181] !== ve || t[182] !== Se ? (Ce = (0, X.jsxs)(`label`, {
+                className: `flex min-w-0 flex-col gap-1.5`,
+                children: [ve, Se]
+            }), t[181] = ve, t[182] = Se, t[183] = Ce) : Ce = t[183];
+            let we = !l,
+                Te = !l,
+                Ee;
+            t[184] !== l || t[185] !== d ? (Ee = e => {
+                if (!l) {
+                    e.preventDefault();
+                    return
+                }
+                d()
+            }, t[184] = l, t[185] = d, t[186] = Ee) : Ee = t[186];
+            let De;
+            t[187] === m ? De = t[188] : (De = m.formatMessage({
+                id: `commerceSettingsPage.feedErrorHistory.refresh`,
+                defaultMessage: `Refresh`
+            }), t[187] = m, t[188] = De);
+            let Oe;
+            t[189] !== we || t[190] !== Te || t[191] !== Ee || t[192] !== De ? (Oe = (0, X.jsx)(`div`, {
+                className: `flex h-10 items-center justify-end`,
+                children: (0, X.jsx)(ee, {
+                    type: `button`,
+                    "aria-disabled": we,
+                    visuallyDisabled: Te,
+                    onClick: Ee,
+                    children: De
+                })
+            }), t[189] = we, t[190] = Te, t[191] = Ee, t[192] = De, t[193] = Oe) : Oe = t[193];
+            let ke;
+            t[194] !== j || t[195] !== he || t[196] !== Ce || t[197] !== Oe ? (ke = (0, X.jsxs)(`div`, {
+                className: `grid grid-cols-1 items-end gap-3 sm:grid-cols-2 xl:grid-cols-[1fr_1.3fr_1fr_auto]`,
+                children: [j, he, Ce, Oe]
+            }), t[194] = j, t[195] = he, t[196] = Ce, t[197] = Oe, t[198] = ke) : ke = t[198];
+            let Ae;
+            t[199] === m ? Ae = t[200] : (Ae = m.formatMessage({
+                id: `commerceSettingsPage.feedActivity.recordedIssueScope`,
+                defaultMessage: `Showing issues from recorded uploads in the selected time range. Earlier uploads may not be included.`
+            }), t[199] = m, t[200] = Ae);
+            let N;
+            t[201] === Ae ? N = t[202] : (N = (0, X.jsx)(`p`, {
+                className: `text-token-text-secondary text-xs`,
+                children: Ae
+            }), t[201] = Ae, t[202] = N);
+            let Me;
+            t[203] !== m || t[204] !== s ? (Me = s ? (0, X.jsx)(`p`, {
+                role: `status`,
+                className: `text-token-text-secondary text-sm`,
+                children: m.formatMessage({
+                    id: `commerceSettingsPage.feedErrorHistory.loading`,
+                    defaultMessage: `Loading feed issues…`
+                })
+            }) : null, t[203] = m, t[204] = s, t[205] = Me) : Me = t[205];
+            let Ne;
+            t[206] !== c || t[207] !== m || t[208] !== s ? (Ne = !s && c ? (0, X.jsx)(`div`, {
+                className: `bg-token-status-error/10 rounded-lg p-4 text-sm`,
+                children: (0, X.jsx)(`p`, {
+                    className: `text-token-status-error`,
+                    children: m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.statusUnavailable`,
+                        defaultMessage: `Status unavailable. Feed issues could not be loaded. Refresh to try again.`
+                    })
+                })
+            }) : null, t[206] = c, t[207] = m, t[208] = s, t[209] = Ne) : Ne = t[209];
+            let Pe;
+            t[210] !== m || t[211] !== o ? (Pe = o ? (0, X.jsx)(`div`, {
+                className: `bg-token-bg-secondary/30 rounded-lg p-4 text-sm`,
+                children: (0, X.jsx)(`p`, {
+                    className: `text-token-text-secondary`,
+                    children: m.formatMessage({
+                        id: `commerceSettingsPage.feedActivity.partialIssueHistory`,
+                        defaultMessage: `Some upload history could not be checked. Results may be incomplete.`
+                    })
+                })
+            }) : null, t[210] = m, t[211] = o, t[212] = Pe) : Pe = t[212];
+            let Ie;
+            t[213] !== a.length || t[214] !== c || t[215] !== m || t[216] !== s || t[217] !== o || t[218] !== i || t[219] !== r ? (Ie = !s && !c && a.length === 0 ? (0, X.jsx)(`div`, {
+                className: `bg-token-bg-secondary/30 rounded-lg p-4 text-sm`,
+                children: (0, X.jsx)(`p`, {
+                    className: `text-token-text-secondary`,
+                    children: r ? o ? m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.emptyPartialHistory`,
+                        defaultMessage: `No issues found in the loaded upload history. Additional issues may exist.`
+                    }) : i == null ? m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.emptyRecordedHistoryAllTime`,
+                        defaultMessage: `No issues were found in the loaded upload history.`
+                    }) : m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.emptyRecordedHistoryRange`,
+                        defaultMessage: `No issues were found in the loaded upload history for the past {count, plural, one {day} other {# days}}.`
+                    }, {
+                        count: i
+                    }) : m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.emptyMissingMerchant`,
+                        defaultMessage: `Select a merchant above to check for issues.`
+                    })
+                })
+            }) : null, t[213] = a.length, t[214] = c, t[215] = m, t[216] = s, t[217] = o, t[218] = i, t[219] = r, t[220] = Ie) : Ie = t[220];
+            let Le;
+            t[221] !== a.length || t[222] !== c || t[223] !== m || t[224] !== s || t[225] !== Ue.length ? (Le = !s && !c && a.length > 0 && Ue.length === 0 ? (0, X.jsx)(`div`, {
+                className: `bg-token-bg-secondary/30 rounded-lg p-4 text-sm`,
+                children: (0, X.jsx)(`p`, {
+                    className: `text-token-text-secondary`,
+                    children: m.formatMessage({
+                        id: `commerceSettingsPage.feedErrorHistory.filteredEmpty`,
+                        defaultMessage: `No feed issues match this issue type in the selected time range.`
+                    })
+                })
+            }) : null, t[221] = a.length, t[222] = c, t[223] = m, t[224] = s, t[225] = Ue.length, t[226] = Le) : Le = t[226], Ke = (0, X.jsxs)(`section`, {
+                className: `space-y-4`,
+                "aria-labelledby": `feed-error-history-title`,
+                children: [O, ke, N, Me, Ne, Pe, Ie, Le, Ue.length > 0 ? (0, X.jsxs)(`div`, {
+                    className: `space-y-4`,
+                    children: [(0, X.jsxs)(`div`, {
+                        className: `text-token-text-secondary grid grid-cols-3 gap-4 px-4 text-xs`,
+                        children: [(0, X.jsx)(`span`, {
+                            children: m.formatMessage({
+                                id: `commerceSettingsPage.feedErrorHistory.issueColumn`,
+                                defaultMessage: `Issue`
+                            })
+                        }), (0, X.jsx)(`span`, {
+                            children: m.formatMessage({
+                                id: `commerceSettingsPage.feedErrorHistory.sourceColumn`,
+                                defaultMessage: `Source`
+                            })
+                        }), (0, X.jsx)(`span`, {
+                            children: m.formatMessage({
+                                id: `commerceSettingsPage.feedErrorHistory.timeColumn`,
+                                defaultMessage: `Time`
+                            })
+                        })]
+                    }), (0, X.jsx)(`ul`, {
+                        className: `border-token-border-light divide-token-border-light divide-y border-t`,
+                        children: e.map(e => {
+                            let t = e.uploadId === g,
+                                r = Array.from(new Set(e.diagnostics.map(RS))),
+                                i = e.completedAt ? Ye(m, e.completedAt) ?? e.completedAt : null;
+                            return (0, X.jsxs)(`li`, {
+                                children: [(0, X.jsxs)(`button`, {
+                                    type: `button`,
+                                    className: `interactive-button interactive-button-secondary interactive-outline-secondary grid w-full grid-cols-3 items-center gap-4 border-0 px-4 py-5 text-start -outline-offset-2`,
+                                    "aria-haspopup": `dialog`,
+                                    onClick: t => {
+                                        h.current = t.currentTarget, _(e.uploadId)
+                                    },
+                                    children: [(0, X.jsx)(`span`, {
+                                        className: `text-token-text-primary flex flex-col gap-1 text-sm`,
+                                        children: r.length > 0 ? r.map(e => (0, X.jsx)(`span`, {
+                                            children: D(e)
+                                        }, e)) : ye
+                                    }), (0, X.jsx)(`span`, {
+                                        className: `text-token-text-secondary text-sm`,
+                                        children: te(e.source)
+                                    }), (0, X.jsxs)(`span`, {
+                                        className: `flex items-center justify-between gap-3`,
+                                        children: [(0, X.jsx)(`span`, {
+                                            className: `text-token-text-secondary text-xs`,
+                                            children: se(e.uploadedAt)
+                                        }), (0, X.jsx)(je, {
+                                            className: `icon-sm shrink-0`
+                                        }), (0, X.jsx)(`span`, {
+                                            className: `sr-only`,
+                                            children: m.formatMessage({
+                                                id: `commerceSettingsPage.feedErrorHistory.openDetails`,
+                                                defaultMessage: `View error details`
+                                            })
+                                        })]
+                                    })]
+                                }), t ? (0, X.jsx)(kS, {
+                                    title: m.formatMessage({
+                                        id: `commerceSettingsPage.feedErrorHistory.errorDetailsTitle`,
+                                        defaultMessage: `Error details`
+                                    }),
+                                    onClose: () => _(null),
+                                    onRestoreFocus: () => h.current?.focus(),
+                                    children: (0, X.jsxs)(`div`, {
+                                        className: `space-y-6`,
+                                        children: [(0, X.jsx)(`p`, {
+                                            className: `text-token-text-secondary text-sm`,
+                                            children: ae(e.status)
+                                        }), (0, X.jsx)(`p`, {
+                                            className: `text-token-text-secondary text-sm`,
+                                            children: m.formatMessage({
+                                                id: `commerceSettingsPage.feedErrorHistory.summary`,
+                                                defaultMessage: `Review the details below, update the feed, and try again.`
+                                            })
+                                        }), (0, X.jsxs)(`dl`, {
+                                            className: `grid gap-3 text-sm sm:grid-cols-2`,
+                                            children: [(0, X.jsxs)(`div`, {
+                                                children: [(0, X.jsx)(`dt`, {
+                                                    className: `text-token-text-secondary`,
+                                                    children: m.formatMessage({
+                                                        id: `commerceSettingsPage.feedErrorHistory.runId`,
+                                                        defaultMessage: `Run ID`
+                                                    })
+                                                }), (0, X.jsx)(`dd`, {
+                                                    className: `text-token-text-primary mt-0.5 font-mono text-xs break-all`,
+                                                    children: e.uploadId
+                                                })]
+                                            }), i ? (0, X.jsxs)(`div`, {
+                                                children: [(0, X.jsx)(`dt`, {
+                                                    className: `text-token-text-secondary`,
+                                                    children: m.formatMessage({
+                                                        id: `commerceSettingsPage.feedErrorHistory.processingEndedAt`,
+                                                        defaultMessage: `Processing ended`
+                                                    })
+                                                }), (0, X.jsx)(`dd`, {
+                                                    className: `text-token-text-primary mt-0.5`,
+                                                    children: i
+                                                })]
+                                            }) : null, e.rowsAccepted == null ? null : (0, X.jsxs)(`div`, {
+                                                children: [(0, X.jsx)(`dt`, {
+                                                    className: `text-token-text-secondary`,
+                                                    children: m.formatMessage({
+                                                        id: `commerceSettingsPage.feedErrorHistory.rowsAcceptedLabel`,
+                                                        defaultMessage: `Rows accepted`
+                                                    })
+                                                }), (0, X.jsx)(`dd`, {
+                                                    className: `text-token-text-primary mt-0.5`,
+                                                    children: m.formatNumber(e.rowsAccepted)
+                                                })]
+                                            }), e.rowsRejected == null ? null : (0, X.jsxs)(`div`, {
+                                                children: [(0, X.jsx)(`dt`, {
+                                                    className: `text-token-text-secondary`,
+                                                    children: m.formatMessage({
+                                                        id: `commerceSettingsPage.feedErrorHistory.rowsRejectedLabel`,
+                                                        defaultMessage: `Rows rejected`
+                                                    })
+                                                }), (0, X.jsx)(`dd`, {
+                                                    className: `text-token-text-primary mt-0.5`,
+                                                    children: m.formatNumber(e.rowsRejected)
+                                                })]
+                                            })]
+                                        }), e.diagnostics.some(zS) ? (0, X.jsx)(SS, {
+                                            feedId: n,
+                                            uploadId: e.uploadId
+                                        }) : null, e.diagnostics.length > 0 ? (0, X.jsx)(`ul`, {
+                                            className: `space-y-2`,
+                                            children: e.diagnostics.map((e, t) => (0, X.jsxs)(`li`, {
+                                                className: `border-token-border-light bg-token-bg-primary rounded-md border px-3 py-2 text-sm`,
+                                                children: [(0, X.jsxs)(`div`, {
+                                                    className: `flex flex-wrap items-start gap-2`,
+                                                    children: [(0, X.jsx)(`span`, {
+                                                        className: e.severity === `error` ? `bg-token-status-error/10 text-token-status-error rounded-full px-2 py-0.5 text-[11px] font-medium` : `bg-token-status-warning/10 text-token-status-warning rounded-full px-2 py-0.5 text-[11px] font-medium`,
+                                                        children: e.severity === `error` ? m.formatMessage({
+                                                            id: `commerceSettingsPage.feedErrorHistory.diagnosticSeverity.error`,
+                                                            defaultMessage: `Error`
+                                                        }) : m.formatMessage({
+                                                            id: `commerceSettingsPage.feedErrorHistory.diagnosticSeverity.warning`,
+                                                            defaultMessage: `Warning`
+                                                        })
+                                                    }), (0, X.jsx)(`p`, {
+                                                        className: `text-token-text-primary font-medium`,
+                                                        children: T(e)
+                                                    })]
+                                                }), e.field || e.rowsAffected != null ? (0, X.jsx)(`p`, {
+                                                    className: `text-token-text-secondary mt-1 text-xs`,
+                                                    children: [e.field ? m.formatMessage({
+                                                        id: `commerceSettingsPage.feedErrorHistory.diagnosticField`,
+                                                        defaultMessage: `Field: {field}`
+                                                    }, {
+                                                        field: e.field
+                                                    }) : null, e.rowsAffected == null ? null : m.formatMessage({
+                                                        id: `commerceSettingsPage.feedErrorHistory.rowsAffected`,
+                                                        defaultMessage: `{count, plural, one {# row affected} other {# rows affected}}`
+                                                    }, {
+                                                        count: e.rowsAffected
+                                                    })].filter(BS).join(` · `)
+                                                }) : null, (0, X.jsxs)(`p`, {
+                                                    className: `text-token-text-secondary mt-2 text-xs`,
+                                                    children: [(0, X.jsx)(`span`, {
+                                                        className: `text-token-text-primary me-1 font-medium`,
+                                                        children: m.formatMessage({
+                                                            id: `commerceSettingsPage.feedErrorHistory.howToFix`,
+                                                            defaultMessage: `How to fix:`
+                                                        })
+                                                    }), ie(e)]
+                                                })]
+                                            }, `${e.code}-${e.field??`all`}-${t}`))
+                                        }) : (0, X.jsx)(`p`, {
+                                            className: `text-token-text-secondary text-sm`,
+                                            children: m.formatMessage({
+                                                id: `commerceSettingsPage.feedErrorHistory.noRunDiagnostics`,
+                                                defaultMessage: `No structured issue details were recorded for this run.`
+                                            })
+                                        })]
+                                    })
+                                }) : null]
+                            }, e.uploadId)
+                        })
+                    }), (0, X.jsx)(jS, {
+                        page: Ge,
+                        total: Ue.length,
+                        onPageChange: e => {
+                            C(e), _(null)
+                        }
+                    })]
+                }) : null]
+            }), t[98] = l, t[99] = Ge, t[100] = ie, t[101] = T, t[102] = p, t[103] = a.length, t[104] = g, t[105] = n, t[106] = c, t[107] = m, t[108] = s, t[109] = o, t[110] = v, t[111] = Fe, t[112] = D, t[113] = i, t[114] = _e, t[115] = r, t[116] = u, t[117] = d, t[118] = Ve, t[119] = b, t[120] = te, t[121] = ae, t[122] = se, t[123] = ye, t[124] = Ue, t[125] = Ke
+        } else Ke = t[125];
+        return Ke
+    }
+}));
+
+function XS(e) {
+    return e.status !== `failed` && e.status !== `completed_with_errors` ? null : {
+        uploadId: e.upload_id,
+        source: e.source,
+        status: e.status,
+        uploadedAt: e.uploaded_at,
+        completedAt: e.completed_at ?? null,
+        rowsAccepted: e.rows_accepted ?? null,
+        rowsRejected: e.rows_rejected ?? null,
+        diagnostics: (e.diagnostics ?? []).map(e => ({
+            code: e.code,
+            severity: e.severity,
+            field: e.field ?? null,
+            rowsAffected: e.rows_affected ?? null
+        }))
+    }
+}
+
+function ZS(e) {
+    return e != null
+}
+
+function QS(e) {
+    return e + 1
+}
+var $S, eC, tC, nC, rC = e((() => {
+    $S = ye(), tx(), YS(), eC = n(M()), tC = A(), nC = e => {
+        "use forget";
+        let t = (0, $S.c)(21),
+            {
+                feedId: n,
+                merchantName: r,
+                embedded: i
+            } = e,
+            a = i !== void 0 && i,
+            [o, s] = (0, eC.useState)(7),
+            [c, l] = (0, eC.useState)(null),
+            [u, d] = (0, eC.useState)(0),
+            f;
+        t[0] === n ? f = t[1] : (f = n.trim(), t[0] = n, t[1] = f);
+        let p = f,
+            m = `${p}:${o??`all`}`,
+            h = `${m}:${u}`,
+            g = c?.selectionKey === m ? c : null,
+            _ = !!p && g?.requestKey !== h,
+            v, y;
+        t[2] !== o || t[3] !== h || t[4] !== m || t[5] !== p ? (v = () => {
+            if (!p) return;
+            let e = !0,
+                t = new AbortController;
+            return Gb({
+                feedId: p,
+                lookbackDays: o,
+                errorsOnly: !0
+            }, t.signal).then(t => {
+                let {
+                    uploads: n,
+                    truncated: r
+                } = t;
+                e && l({
+                    requestKey: h,
+                    selectionKey: m,
+                    errors: n.map(XS).filter(ZS),
+                    isTruncated: r ?? !1,
+                    hasLoadError: !1
+                })
+            }).catch(() => {
+                e && l(e => ({
+                    requestKey: h,
+                    selectionKey: m,
+                    errors: e?.selectionKey === m ? e.errors : [],
+                    isTruncated: e?.selectionKey === m && e.isTruncated,
+                    hasLoadError: !0
+                }))
+            }), () => {
+                e = !1, t.abort()
+            }
+        }, y = [o, h, m, p], t[2] = o, t[3] = h, t[4] = m, t[5] = p, t[6] = v, t[7] = y) : (v = t[6], y = t[7]), (0, eC.useEffect)(v, y);
+        let b;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (b = () => {
+            d(QS)
+        }, t[8] = b) : b = t[8];
+        let x = b,
+            S;
+        t[9] === g?.errors ? S = t[10] : (S = g?.errors ?? [], t[9] = g?.errors, t[10] = S);
+        let C = g?.isTruncated ?? !1,
+            w = g?.hasLoadError ?? !1,
+            ee = !!p && !_,
+            te;
+        return t[11] !== a || t[12] !== _ || t[13] !== o || t[14] !== r || t[15] !== S || t[16] !== C || t[17] !== w || t[18] !== ee || t[19] !== p ? (te = (0, tC.jsx)(JS, {
+            feedId: p,
+            merchantName: r,
+            embedded: a,
+            lookbackDays: o,
+            errors: S,
+            isTruncated: C,
+            isLoading: _,
+            hasLoadError: w,
+            canRefresh: ee,
+            onLookbackDaysChange: s,
+            onRefresh: x
+        }, p), t[11] = a, t[12] = _, t[13] = o, t[14] = r, t[15] = S, t[16] = C, t[17] = w, t[18] = ee, t[19] = p, t[20] = te) : te = t[20], te
+    }
+}));
+
+function iC(e) {
+    return e === `all` || e === `file_upload` || e === `hosted_url` || e === `sftp` || e === `unknown`
+}
+
+function aC(e, t) {
+    let n = [];
+    for (let r of e) {
+        let e = r.formatter(),
+            i = (r.isAvailable ? r.isAvailable() : e != null) && e != null ? e : t;
+        n.push((0, Z.jsxs)(`div`, {
+            "data-testid": `metric-${r.key}`,
+            className: `bg-token-bg-secondary/40 flex flex-col gap-1 rounded-md p-3`,
+            children: [(0, Z.jsx)(`dt`, {
+                className: `text-token-text-secondary text-xs`,
+                children: r.label
+            }), (0, Z.jsx)(`dd`, {
+                className: `text-token-text-primary text-sm font-medium break-all`,
+                children: i
+            })]
+        }, r.key))
+    }
+    return n
+}
+
+function oC(e) {
+    "use forget";
+    let t = (0, lC.c)(67),
+        {
+            merchantName: n,
+            latestStatus: r,
+            runHistory: i,
+            isLoading: a,
+            isTruncated: o,
+            metricsError: s,
+            embedded: c
+        } = e,
+        l = o !== void 0 && o,
+        u = c !== void 0 && c,
+        d = be(),
+        f = C(cC),
+        p = C(sC),
+        [m, h] = (0, uC.useState)(`all`),
+        [g, _] = (0, uC.useState)(null),
+        [v, y] = (0, uC.useState)(0),
+        b = !!n.trim(),
+        x;
+    t[0] === d ? x = t[1] : (x = d.formatMessage({
+        id: `commerceSettingsPage.ingestionMetricsTitle`,
+        defaultMessage: `Ingestion metrics`
+    }), t[0] = d, t[1] = x);
+    let S = x,
+        w;
+    t[2] !== d || t[3] !== n ? (w = n ? d.formatMessage({
+        id: `commerceSettingsPage.ingestionMetricsDescriptionWithMerchant`,
+        defaultMessage: `Recent ingestion run outcomes for {merchantName} will appear here.`
+    }, {
+        merchantName: n
+    }) : d.formatMessage({
+        id: `commerceSettingsPage.ingestionMetricsDescription`,
+        defaultMessage: `Add a merchant name above to view recent ingestion run outcomes.`
+    }), t[2] = d, t[3] = n, t[4] = w) : w = t[4];
+    let te = w,
+        ne = r,
+        T = d.formatMessage({
+            id: `commerceSettingsPage.feedStatusReceived`,
+            defaultMessage: `Received`
+        }),
+        E = d.formatMessage({
+            id: `commerceSettingsPage.feedStatusProcessing`,
+            defaultMessage: `Processing`
+        }),
+        D = d.formatMessage({
+            id: `commerceSettingsPage.feedStatusCompleted`,
+            defaultMessage: `Completed`
+        }),
+        re = d.formatMessage({
+            id: `commerceSettingsPage.feedStatusCompletedWithErrors`,
+            defaultMessage: `Completed with errors`
+        }),
+        ie = d.formatMessage({
+            id: `commerceSettingsPage.feedStatusFailed`,
+            defaultMessage: `Failed`
+        }),
+        O = {
+            received: T,
+            processing: E,
+            completed: D,
+            completed_with_errors: re,
+            skipped: d.formatMessage({
+                id: `commerceSettingsPage.feedStatusSkipped`,
+                defaultMessage: `Skipped`
+            }),
+            failed: ie
+        },
+        ae;
+    t[5] === d ? ae = t[6] : (ae = d.formatMessage({
+        id: `commerceSettingsPage.runsTitle`,
+        defaultMessage: `Runs`
+    }), t[5] = d, t[6] = ae);
+    let oe = ae,
+        se;
+    t[7] === d ? se = t[8] : (se = d.formatMessage({
+        id: `commerceSettingsPage.runHistorySourceFilterLabel`,
+        defaultMessage: `Source`
+    }), t[7] = d, t[8] = se);
+    let ce = se,
+        k;
+    t[9] === d ? k = t[10] : (k = d.formatMessage({
+        id: `commerceSettingsPage.runHistorySourceFilterAll`,
+        defaultMessage: `All sources`
+    }), t[9] = d, t[10] = k);
+    let A = k,
+        le = d.formatMessage({
+            id: `commerceSettingsPage.runHistorySourceFilterFileUpload`,
+            defaultMessage: `Uploaded file`
+        }),
+        ue = d.formatMessage({
+            id: `commerceSettingsPage.runHistorySourceFilterHostedUrl`,
+            defaultMessage: `Hosted URL`
+        }),
+        fe = d.formatMessage({
+            id: `commerceSettingsPage.runHistorySourceFilterSftp`,
+            defaultMessage: `SFTP`
+        }),
+        pe = d.formatMessage({
+            id: `commerceSettingsPage.runHistorySourceFilterUnknown`,
+            defaultMessage: `Unknown`
+        }),
+        M = d.formatMessage({
+            id: `commerceSettingsPage.statusPhaseIngesting`,
+            defaultMessage: `Ingesting`
+        }),
+        he = d.formatMessage({
+            id: `commerceSettingsPage.statusPhaseProcessing`,
+            defaultMessage: `Processing`
+        }),
+        ge = d.formatMessage({
+            id: `commerceSettingsPage.statusPhaseIngestionError`,
+            defaultMessage: `Ingestion error`
+        }),
+        _e = d.formatMessage({
+            id: `commerceSettingsPage.statusPhaseProcessingError`,
+            defaultMessage: `Processing error`
+        }),
+        ve = d.formatMessage({
+            id: `commerceSettingsPage.statusPhaseSuccess`,
+            defaultMessage: `Success`
+        }),
+        ye = d.formatMessage({
+            id: `commerceSettingsPage.statusPhaseUnknown`,
+            defaultMessage: `Unknown`
+        }),
+        xe = {
+            file_upload: le,
+            hosted_url: ue,
+            sftp: fe,
+            unknown: pe
+        },
+        Se = {
+            ingesting: M,
+            processing: he,
+            ingestion_error: ge,
+            processing_error: _e,
+            success: ve,
+            unknown: ye
+        },
+        Ce, we;
+    t[11] !== i || t[12] !== m ? (Ce = () => {
+        if (m === `all`) return;
+        let e = !1;
+        for (let t of i)
+            if (t.source === m) {
+                e = !0;
+                break
+            } e || h(`all`)
+    }, we = [i, m], t[11] = i, t[12] = m, t[13] = Ce, t[14] = we) : (Ce = t[13], we = t[14]), (0, uC.useEffect)(Ce, we);
+    let Te;
+    if (t[15] !== i) {
+        Te = [];
+        let e = new Set;
+        for (let t of i) e.has(t.source) || (e.add(t.source), Te.push(t.source));
+        t[15] = i, t[16] = Te
+    } else Te = t[16];
+    let Ee = Te.length > 1,
+        De = m === `all` ? i : i.filter(e => e.source === m),
+        Oe = Math.max(1, Math.ceil(De.length / 10)),
+        ke = Math.min(v, Oe - 1);
+    !a && !s && v !== ke && y(ke);
+    let Ae = De.slice(ke * 10, (ke + 1) * 10),
+        je;
+    t[17] === A ? je = t[18] : (je = (0, Z.jsx)(`option`, {
+        value: `all`,
+        children: A
+    }, `all`), t[17] = A, t[18] = je);
+    let N = [je];
+    for (let e of Te) N.push((0, Z.jsx)(`option`, {
+        value: e,
+        children: xe[e]
+    }, e));
+    let Me = d.formatMessage({
+            id: `commerceSettingsPage.runHistoryEmptyForLoadedSource`,
+            defaultMessage: `No loaded runs for {sourceLabel}.`
+        }, {
+            sourceLabel: m === `all` ? A : xe[m]
+        }),
+        Ne;
+    t[19] === d ? Ne = t[20] : (Ne = d.formatMessage({
+        id: `commerceSettingsPage.runsSelectMerchant`,
+        defaultMessage: `Select a merchant above to view runs.`
+    }), t[19] = d, t[20] = Ne);
+    let Pe = Ne,
+        Fe;
+    t[21] !== d || t[22] !== l ? (Fe = l ? d.formatMessage({
+        id: `commerceSettingsPage.ingestionMetricsEmptyPartialHistory`,
+        defaultMessage: `No runs found in the loaded history. Additional runs may exist.`
+    }) : d.formatMessage({
+        id: `commerceSettingsPage.ingestionMetricsEmptyRecordedHistory`,
+        defaultMessage: `No runs found in the loaded history.`
+    }), t[21] = d, t[22] = l, t[23] = Fe) : Fe = t[23];
+    let Ie = Fe,
+        Le;
+    t[24] === d ? Le = t[25] : (Le = d.formatMessage({
+        id: `commerceSettingsPage.runStatusUnavailable`,
+        defaultMessage: `Status unavailable`
+    }), t[24] = d, t[25] = Le);
+    let Re = Le,
+        ze;
+    t[26] === d ? ze = t[27] : (ze = d.formatMessage({
+        id: `commerceSettingsPage.ingestionMetricsLoading`,
+        defaultMessage: `Loading ingestion metrics...`
+    }), t[26] = d, t[27] = ze);
+    let Be = ze,
+        Ve;
+    t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (Ve = e => {
+        let t = e.target.value,
+            n = iC(t) ? t : `all`;
+        h(n), y(0), _(null)
+    }, t[28] = Ve) : Ve = t[28];
+    let He = Ve,
+        Ue = !!ne || i.length > 0,
+        We = !s && a,
+        Ge = !s && !a && !Ue,
+        Ke = b ? Ie : Pe,
+        qe = d.formatMessage({
+            id: `commerceSettingsPage.metricUnavailable`,
+            defaultMessage: `Unavailable`
+        }),
+        Je;
+    t[29] === d ? Je = t[30] : (Je = e => e == null ? null : d.formatNumber(e), t[29] = d, t[30] = Je);
+    let Qe = Je,
+        et;
+    t[31] === d ? et = t[32] : (et = e => e == null ? null : d.formatNumber(e, {
+        style: `percent`,
+        maximumFractionDigits: 1
+    }), t[31] = d, t[32] = et);
+    let nt = et,
+        rt = d.formatMessage({
+            id: `commerceSettingsPage.metricMerchantId`,
+            defaultMessage: `Merchant ID`
+        }),
+        it = d.formatMessage({
+            id: `commerceSettingsPage.metricFeedId`,
+            defaultMessage: `Feed ID`
+        }),
+        at = d.formatMessage({
+            id: `commerceSettingsPage.metricFeedKey`,
+            defaultMessage: `Feed key`
+        }),
+        ot = d.formatMessage({
+            id: `commerceSettingsPage.metricSource`,
+            defaultMessage: `Source`
+        }),
+        st = d.formatMessage({
+            id: `commerceSettingsPage.metricStartedAt`,
+            defaultMessage: `Started`
+        }),
+        ct = d.formatMessage({
+            id: `commerceSettingsPage.metricCompletedAt`,
+            defaultMessage: `Completed`
+        }),
+        lt = d.formatMessage({
+            id: `commerceSettingsPage.metricLatency`,
+            defaultMessage: `End-to-end latency`
+        }),
+        ut = d.formatMessage({
+            id: `commerceSettingsPage.metricFreshness`,
+            defaultMessage: `Freshness since last success`
+        }),
+        dt = d.formatMessage({
+            id: `commerceSettingsPage.metricCanonicalStatus`,
+            defaultMessage: `Canonical status`
+        }),
+        ft = d.formatMessage({
+            id: `commerceSettingsPage.metricCanonicalPhase`,
+            defaultMessage: `Canonical phase`
+        }),
+        pt = d.formatMessage({
+            id: `commerceSettingsPage.metricStatusSummary`,
+            defaultMessage: `Status summary`
+        }),
+        mt = d.formatMessage({
+            id: `commerceSettingsPage.metricRecordsReceived`,
+            defaultMessage: `Records received`
+        }),
+        ht = d.formatMessage({
+            id: `commerceSettingsPage.metricRecordsProcessed`,
+            defaultMessage: `Records processed`
+        }),
+        gt = d.formatMessage({
+            id: `commerceSettingsPage.metricRecordsSucceeded`,
+            defaultMessage: `Records succeeded`
+        }),
+        _t = d.formatMessage({
+            id: `commerceSettingsPage.metricRecordsFailed`,
+            defaultMessage: `Records failed`
+        }),
+        vt = d.formatMessage({
+            id: `commerceSettingsPage.metricErrorRate`,
+            defaultMessage: `Error rate`
+        }),
+        yt = d.formatMessage({
+            id: `commerceSettingsPage.metricRetryCount`,
+            defaultMessage: `Retry count`
+        }),
+        bt;
+    t[33] === d ? bt = t[34] : (bt = d.formatMessage({
+        id: `commerceSettingsPage.identityTimingTitle`,
+        defaultMessage: `Run identity and timing`
+    }), t[33] = d, t[34] = bt);
+    let xt = bt,
+        St;
+    t[35] === d ? St = t[36] : (St = d.formatMessage({
+        id: `commerceSettingsPage.runIdentityDetails`,
+        defaultMessage: `Details`
+    }), t[35] = d, t[36] = St);
+    let Ct = St,
+        wt;
+    t[37] === d ? wt = t[38] : (wt = d.formatMessage({
+        id: `commerceSettingsPage.volumeOutcomeTitle`,
+        defaultMessage: `Volume and outcomes`
+    }), t[37] = d, t[38] = wt);
+    let Tt = wt,
+        Et = {
+            records_received: mt,
+            records_processed: ht,
+            records_succeeded: gt,
+            records_failed: _t,
+            error_rate: vt,
+            retry_count: yt
+        },
+        Dt = {
+            records_received: Qe,
+            records_processed: Qe,
+            records_succeeded: Qe,
+            records_failed: Qe,
+            error_rate: nt,
+            retry_count: Qe
+        },
+        Ot;
+    t[39] === g ? Ot = t[40] : (Ot = e => e.runKey === g, t[39] = g, t[40] = Ot);
+    let kt = Ae.find(Ot),
+        {
+            data: At,
+            isError: jt,
+            refetch: Mt
+        } = de({
+            queryKey: [`merchant-run-status`, f, p, kt?.feedId, kt?.runId, kt?.feedType],
+            queryFn: kt && kt.canRefreshStatus !== !1 ? () => Ub(kt, kt.runId) : me,
+            staleTime: 15e3,
+            retry: !1
+        }),
+        P = kt && At ? {
+            ...kt,
+            status: At.status,
+            statusPhase: At.status_phase ?? kt.statusPhase,
+            statusMessage: At.status_message ?? null,
+            detail: At.detail ?? null,
+            completedAt: At.completed_at ?? kt.completedAt,
+            latencyMs: Ze(kt.startedAt, At.completed_at ?? kt.completedAt),
+            metrics: Tx(At.metrics, At.metrics_unavailable)
+        } : kt,
+        Nt = null;
+    for (let e of i)
+        if (!(!dC.includes(e.status) || !e.completedAt)) {
+            Nt = e.completedAt;
+            break
+        } let F = tt(Nt),
+        Pt = P ? Ye(d, P.startedAt) : null,
+        Ft = P ? Ye(d, P.completedAt) : null,
+        It = P ? xe[P.source] : qe,
+        Lt = P ? Se[P.statusPhase ?? `unknown`] : qe,
+        Rt = P ? Ex(P.statusMessage) ?? Ex(P.detail) : null,
+        zt = P && P.latencyMs != null && P.latencyMs !== void 0 ? $e(P.latencyMs) : null,
+        Bt = F == null ? null : $e(F),
+        Vt;
+    t[41] === Symbol.for(`react.memo_cache_sentinel`) ? (Vt = [], t[41] = Vt) : Vt = t[41];
+    let Ht = Vt;
+    P && (Ht = aC([{
+        key: `source`,
+        label: ot,
+        formatter: () => It
+    }, {
+        key: `canonical_status`,
+        label: dt,
+        formatter: () => O[P.status]
+    }, {
+        key: `canonical_phase`,
+        label: ft,
+        formatter: () => Lt
+    }, {
+        key: `started_at`,
+        label: st,
+        formatter: () => Pt,
+        isAvailable: () => Pt != null
+    }, {
+        key: `completed_at`,
+        label: ct,
+        formatter: () => Ft,
+        isAvailable: () => Ft != null
+    }, {
+        key: `latency`,
+        label: lt,
+        formatter: () => zt,
+        isAvailable: () => zt != null
+    }, {
+        key: `freshness`,
+        label: ut,
+        formatter: () => Bt,
+        isAvailable: () => Bt != null
+    }], qe));
+    let Ut;
+    t[42] === Symbol.for(`react.memo_cache_sentinel`) ? (Ut = [], t[42] = Ut) : Ut = t[42];
+    let Wt = Ut;
+    P && (Wt = aC([{
+        key: `merchant_id`,
+        label: rt,
+        formatter: () => P.merchantId,
+        isAvailable: () => !!P.merchantId.trim()
+    }, {
+        key: `feed_id`,
+        label: it,
+        formatter: () => P.feedId,
+        isAvailable: () => !!P.feedId.trim()
+    }, {
+        key: `feed_key`,
+        label: at,
+        formatter: () => P.feedKey,
+        isAvailable: () => !!P.feedKey.trim()
+    }, {
+        key: `status_summary`,
+        label: pt,
+        formatter: () => Rt,
+        isAvailable: () => Rt != null
+    }], qe));
+    let Gt;
+    t[43] === Symbol.for(`react.memo_cache_sentinel`) ? (Gt = [], t[43] = Gt) : Gt = t[43];
+    let Kt = Gt;
+    if (P) {
+        let e = P.metrics;
+        Kt = aC(bx.map(t => ({
+            key: t,
+            label: Et[t],
+            formatter: () => Dt[t](e[t])
+        })), qe)
+    }
+    let qt = Ht.length > 0,
+        Jt = Wt.length > 0,
+        Yt = Kt.length > 0,
+        Xt = [];
+    for (let e of Ae) {
+        let t = Xe(d, e.updatedAt) ?? Ye(d, e.updatedAt) ?? e.updatedAt,
+            n = O[e.status],
+            r = xe[e.source];
+        Xt.push((0, Z.jsxs)(`li`, {
+            className: `border-token-border-light flex flex-col gap-1 border-b pb-3 text-sm last:border-b-0 last:pb-0`,
+            children: [(0, Z.jsxs)(`div`, {
+                className: `flex items-center justify-between gap-3`,
+                children: [(0, Z.jsxs)(`div`, {
+                    className: `flex min-w-0 flex-col gap-1`,
+                    children: [(0, Z.jsxs)(`div`, {
+                        className: `flex flex-wrap items-center gap-2`,
+                        children: [(0, Z.jsx)(`span`, {
+                            className: `text-token-text-primary font-medium`,
+                            children: n
+                        }), (0, Z.jsx)(`span`, {
+                            className: `bg-token-bg-tertiary text-token-text-secondary rounded-full px-2 py-0.5 text-[11px] font-medium`,
+                            children: r
+                        })]
+                    }), (0, Z.jsx)(`div`, {
+                        className: `text-token-text-secondary text-xs`,
+                        children: d.formatMessage({
+                            id: `commerceSettingsPage.runHistoryLastUpdate`,
+                            defaultMessage: `Last update {timestamp}`
+                        }, {
+                            timestamp: t
+                        })
+                    })]
+                }), (0, Z.jsx)(ee, {
+                    type: `button`,
+                    color: `secondary`,
+                    size: `small`,
+                    "aria-expanded": e.runKey === g,
+                    onClick: () => _(e.runKey === g ? null : e.runKey),
+                    children: e.runKey === g ? (0, Z.jsx)(j, {
+                        id: `commerceSettingsPage.runHistory.hideDetails`,
+                        defaultMessage: `Hide details`
+                    }) : (0, Z.jsx)(j, {
+                        id: `commerceSettingsPage.runHistory.viewDetails`,
+                        defaultMessage: `View details`
+                    })
+                })]
+            }), e.runKey === g ? (0, Z.jsxs)(`div`, {
+                className: `bg-token-bg-secondary mt-3 space-y-3 rounded-lg`,
+                children: [jt && (0, Z.jsxs)(`div`, {
+                    role: `alert`,
+                    className: `text-token-text-secondary flex items-center gap-3 text-sm`,
+                    children: [(0, Z.jsx)(j, {
+                        id: `commerceSettingsPage.runHistory.detailsUnavailable`,
+                        defaultMessage: `Run details could not be refreshed`
+                    }), (0, Z.jsx)(ee, {
+                        type: `button`,
+                        color: `secondary`,
+                        size: `small`,
+                        onClick: () => void Mt(),
+                        children: (0, Z.jsx)(j, {
+                            id: `commerceSettingsPage.runHistory.retryDetails`,
+                            defaultMessage: `Retry`
+                        })
+                    })]
+                }), qt ? (0, Z.jsxs)(`div`, {
+                    className: `border-token-border-light rounded-lg border p-4`,
+                    children: [(0, Z.jsx)(`h3`, {
+                        className: `text-token-text-primary text-sm font-semibold`,
+                        children: xt
+                    }), (0, Z.jsx)(`dl`, {
+                        className: `mt-3 grid gap-3 sm:grid-cols-2`,
+                        children: Ht
+                    })]
+                }) : null, Jt ? (0, Z.jsxs)(`details`, {
+                    className: `border-token-border-light rounded-lg border p-4`,
+                    "data-testid": `ingestion-metrics-details`,
+                    children: [(0, Z.jsx)(`summary`, {
+                        className: `text-token-text-primary cursor-pointer text-sm font-semibold`,
+                        children: Ct
+                    }), (0, Z.jsx)(`dl`, {
+                        className: `mt-3 grid gap-3 sm:grid-cols-2`,
+                        children: Wt
+                    })]
+                }) : null, Yt ? (0, Z.jsxs)(`div`, {
+                    className: `border-token-border-light rounded-lg border p-4`,
+                    children: [(0, Z.jsx)(`h3`, {
+                        className: `text-token-text-primary text-sm font-semibold`,
+                        children: Tt
+                    }), (0, Z.jsx)(`dl`, {
+                        className: `mt-3 grid gap-3 sm:grid-cols-2`,
+                        children: Kt
+                    })]
+                }) : null]
+            }) : null]
+        }, e.runKey))
+    }
+    let Zt = u ? `sr-only` : void 0,
+        Qt;
+    t[44] === S ? Qt = t[45] : (Qt = (0, Z.jsx)(`h2`, {
+        className: `text-token-text-primary text-lg font-semibold`,
+        children: S
+    }), t[44] = S, t[45] = Qt);
+    let $t;
+    t[46] === te ? $t = t[47] : ($t = (0, Z.jsx)(`p`, {
+        className: `text-token-text-secondary mt-1 text-sm`,
+        children: te
+    }), t[46] = te, t[47] = $t);
+    let en;
+    t[48] !== Zt || t[49] !== Qt || t[50] !== $t ? (en = (0, Z.jsxs)(`div`, {
+        className: Zt,
+        children: [Qt, $t]
+    }), t[48] = Zt, t[49] = Qt, t[50] = $t, t[51] = en) : en = t[51];
+    let tn;
+    t[52] !== s || t[53] !== Re ? (tn = s ? (0, Z.jsxs)(`div`, {
+        className: `border-token-border-light bg-token-status-error/10 rounded-lg border p-3 text-xs`,
+        children: [(0, Z.jsx)(`p`, {
+            className: `text-token-status-error`,
+            children: Re
+        }), (0, Z.jsx)(`p`, {
+            className: `text-token-text-secondary mt-1`,
+            children: s
+        })]
+    }) : null, t[52] = s, t[53] = Re, t[54] = tn) : tn = t[54];
+    let nn;
+    t[55] !== Be || t[56] !== We ? (nn = We ? (0, Z.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-secondary/30 rounded-lg border p-4 text-sm`,
+        "data-testid": `ingestion-metrics-loading`,
+        children: (0, Z.jsx)(`p`, {
+            className: `text-token-text-secondary`,
+            children: Be
+        })
+    }) : null, t[55] = Be, t[56] = We, t[57] = nn) : nn = t[57];
+    let rn;
+    t[58] !== Ke || t[59] !== Ge ? (rn = Ge ? (0, Z.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-secondary/30 rounded-lg border p-4 text-sm`,
+        children: (0, Z.jsx)(`p`, {
+            className: `text-token-text-secondary`,
+            children: Ke
+        })
+    }) : null, t[58] = Ke, t[59] = Ge, t[60] = rn) : rn = t[60];
+    let an = i.length > 0 ? (0, Z.jsxs)(`div`, {
+            className: `space-y-4`,
+            "data-testid": `ingestion-run-history`,
+            children: [(0, Z.jsxs)(`div`, {
+                className: `flex flex-wrap items-center justify-between gap-3`,
+                children: [(0, Z.jsx)(`h3`, {
+                    className: `sr-only`,
+                    children: oe
+                }), Ee ? (0, Z.jsxs)(`label`, {
+                    className: `flex items-center gap-2 text-xs`,
+                    children: [(0, Z.jsx)(`span`, {
+                        className: `text-token-text-secondary`,
+                        children: ce
+                    }), (0, Z.jsx)(`select`, {
+                        name: `feed-runs-source`,
+                        value: m,
+                        onChange: He,
+                        className: `border-token-border-light bg-token-bg-primary text-token-text-primary rounded-md border py-1 ps-2 pe-8 text-xs`,
+                        children: N
+                    })]
+                }) : null]
+            }), Xt.length > 0 ? (0, Z.jsxs)(Z.Fragment, {
+                children: [(0, Z.jsx)(`ol`, {
+                    className: `mt-3 space-y-3`,
+                    children: Xt
+                }), (0, Z.jsx)(jS, {
+                    page: ke,
+                    total: De.length,
+                    onPageChange: e => {
+                        y(e), _(null)
+                    }
+                })]
+            }) : (0, Z.jsx)(`p`, {
+                className: `text-token-text-secondary mt-3 text-xs`,
+                children: Me
+            })]
+        }) : null,
+        on;
+    return t[61] !== en || t[62] !== tn || t[63] !== nn || t[64] !== rn || t[65] !== an ? (on = (0, Z.jsxs)(`div`, {
+        className: `space-y-2`,
+        children: [en, tn, nn, rn, an]
+    }), t[61] = en, t[62] = tn, t[63] = nn, t[64] = rn, t[65] = an, t[66] = on) : on = t[66], on
+}
+
+function sC() {
+    return g()?.id
+}
+
+function cC() {
+    return g()?.authUserId
+}
+var lC, uC, Z, dC, fC = e((() => {
+        lC = ye(), ve(), uC = n(M()), fe(), r(), tx(), a(), O(), PS(), Lx(), Qe(), xx(), Z = A(), dC = [`completed`, `completed_with_errors`]
+    })),
+    pC, mC, hC, gC = e((() => {
+        pC = ye(), x(), fe(), r(), rC(), fC(), mC = A(), hC = e => {
+            "use forget";
+            let t = (0, pC.c)(55),
+                {
+                    feedId: n,
+                    merchantName: r,
+                    latestStatus: i,
+                    runHistory: a,
+                    isLoading: o,
+                    isTruncated: s,
+                    metricsError: c,
+                    hasLoadError: l,
+                    onRefresh: u
+                } = e,
+                d = s !== void 0 && s,
+                f = be(),
+                p;
+            t[0] === f ? p = t[1] : (p = f.formatMessage({
+                id: `commerceSettingsPage.feedActivity.title`,
+                defaultMessage: `Feed activity`
+            }), t[0] = f, t[1] = p);
+            let m = p,
+                h;
+            t[2] !== l || t[3] !== f || t[4] !== c ? (h = l ? f.formatMessage({
+                id: `commerceSettingsPage.feedActivity.runsUnavailableDetail`,
+                defaultMessage: `Runs could not be loaded. Refresh to try again.`
+            }) : c, t[2] = l, t[3] = f, t[4] = c, t[5] = h) : h = t[5];
+            let g = h,
+                _;
+            t[6] === m ? _ = t[7] : (_ = (0, mC.jsx)(`h2`, {
+                id: `feed-activity-title`,
+                className: `text-token-text-primary text-lg font-semibold`,
+                children: m
+            }), t[6] = m, t[7] = _);
+            let v;
+            t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, mC.jsx)(`p`, {
+                className: `text-token-text-secondary mt-1 text-sm`,
+                children: (0, mC.jsx)(j, {
+                    id: `commerceSettingsPage.feedActivity.description`,
+                    defaultMessage: `Track processing progress, review results, and resolve feed issues.`
+                })
+            }), t[8] = v) : v = t[8];
+            let y;
+            t[9] === _ ? y = t[10] : (y = (0, mC.jsxs)(`div`, {
+                children: [_, v]
+            }), t[9] = _, t[10] = y);
+            let x;
+            t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, mC.jsx)(ae, {
+                value: `recent`,
+                className: `interactive-button interactive-button-secondary interactive-outline-secondary data-[state=active]:bg-token-bg-tertiary rounded-full border-0 px-4 py-2 text-sm font-medium`,
+                children: (0, mC.jsx)(j, {
+                    id: `commerceSettingsPage.feedActivity.recentRunsTab`,
+                    defaultMessage: `Recent runs`
+                })
+            }), t[11] = x) : x = t[11];
+            let S;
+            t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, mC.jsx)(ae, {
+                value: `issues`,
+                className: `interactive-button interactive-button-secondary interactive-outline-secondary data-[state=active]:bg-token-bg-tertiary rounded-full border-0 px-4 py-2 text-sm font-medium`,
+                children: (0, mC.jsx)(j, {
+                    id: `commerceSettingsPage.feedActivity.issuesTab`,
+                    defaultMessage: `Issues`
+                })
+            }), t[12] = S) : S = t[12];
+            let C;
+            t[13] === m ? C = t[14] : (C = (0, mC.jsxs)(b, {
+                "aria-label": m,
+                className: `flex gap-2`,
+                children: [x, S]
+            }), t[13] = m, t[14] = C);
+            let w;
+            t[15] !== n || t[16] !== o ? (w = !n.trim() || o, t[15] = n, t[16] = o, t[17] = w) : w = t[17];
+            let te;
+            t[18] !== n || t[19] !== o ? (te = !n.trim() || o, t[18] = n, t[19] = o, t[20] = te) : te = t[20];
+            let T;
+            t[21] !== n || t[22] !== o || t[23] !== u ? (T = () => {
+                n.trim() && !o && u()
+            }, t[21] = n, t[22] = o, t[23] = u, t[24] = T) : T = t[24];
+            let E;
+            t[25] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, mC.jsx)(j, {
+                id: `commerceSettingsPage.feedActivity.refreshRuns`,
+                defaultMessage: `Refresh runs`
+            }), t[25] = E) : E = t[25];
+            let D;
+            t[26] !== w || t[27] !== te || t[28] !== T ? (D = (0, mC.jsx)(`div`, {
+                className: `mb-4 flex justify-end`,
+                children: (0, mC.jsx)(ee, {
+                    type: `button`,
+                    "aria-disabled": w,
+                    visuallyDisabled: te,
+                    onClick: T,
+                    children: E
+                })
+            }), t[26] = w, t[27] = te, t[28] = T, t[29] = D) : D = t[29];
+            let re;
+            t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (re = (0, mC.jsx)(`p`, {
+                className: `text-token-text-secondary mb-4 text-xs`,
+                children: (0, mC.jsx)(j, {
+                    id: `commerceSettingsPage.feedActivity.recordedHistoryScope`,
+                    defaultMessage: `Up to 100 recorded runs, including uploads from the past 90 days`
+                })
+            }), t[30] = re) : re = t[30];
+            let O;
+            t[31] === d ? O = t[32] : (O = d && (0, mC.jsx)(`p`, {
+                role: `status`,
+                className: `text-token-text-secondary mb-4 text-xs`,
+                children: (0, mC.jsx)(j, {
+                    id: `commerceSettingsPage.feedActivity.partialRunHistory`,
+                    defaultMessage: `Some run history could not be checked. Results may be incomplete.`
+                })
+            }), t[31] = d, t[32] = O);
+            let oe = o ? null : g,
+                se;
+            t[33] !== n || t[34] !== o || t[35] !== d || t[36] !== i || t[37] !== r || t[38] !== a || t[39] !== oe ? (se = (0, mC.jsx)(oC, {
+                embedded: !0,
+                merchantName: r,
+                latestStatus: i,
+                runHistory: a,
+                isLoading: o,
+                isTruncated: d,
+                metricsError: oe
+            }, n), t[33] = n, t[34] = o, t[35] = d, t[36] = i, t[37] = r, t[38] = a, t[39] = oe, t[40] = se) : se = t[40];
+            let ce;
+            t[41] !== D || t[42] !== O || t[43] !== se ? (ce = (0, mC.jsxs)(ie, {
+                value: `recent`,
+                className: `pt-4`,
+                children: [D, re, O, se]
+            }), t[41] = D, t[42] = O, t[43] = se, t[44] = ce) : ce = t[44];
+            let k;
+            t[45] !== n || t[46] !== r ? (k = (0, mC.jsx)(ie, {
+                value: `issues`,
+                className: `pt-4`,
+                children: (0, mC.jsx)(nC, {
+                    embedded: !0,
+                    feedId: n,
+                    merchantName: r
+                })
+            }), t[45] = n, t[46] = r, t[47] = k) : k = t[47];
+            let A;
+            t[48] !== ce || t[49] !== k || t[50] !== C ? (A = (0, mC.jsxs)(ne, {
+                defaultValue: `recent`,
+                children: [C, ce, k]
+            }), t[48] = ce, t[49] = k, t[50] = C, t[51] = A) : A = t[51];
+            let le;
+            return t[52] !== A || t[53] !== y ? (le = (0, mC.jsxs)(`section`, {
+                "aria-labelledby": `feed-activity-title`,
+                className: `space-y-4`,
+                children: [y, A]
+            }), t[52] = A, t[53] = y, t[54] = le) : le = t[54], le
+        }
+    }));
+
+function _C(e) {
+    return {
+        status: e.status,
+        statusPhase: e.statusPhase,
+        statusMessage: e.statusMessage ?? null,
+        detail: e.detail ?? null,
+        updatedAt: e.updatedAt,
+        startedAt: e.startedAt,
+        completedAt: e.completedAt,
+        latencyMs: e.latencyMs,
+        metrics: e.metrics
+    }
+}
+
+function vC(e) {
+    "use no forget";
+    let [t, n] = (0, yC.useState)(null), [r, i] = (0, yC.useState)([]), [a, o] = (0, yC.useState)(!1), [s, c] = (0, yC.useState)(null), [l, u] = (0, yC.useState)(null), [d, f] = (0, yC.useState)(0), p = (0, yC.useRef)([]), m = (0, yC.useRef)(0), h = (0, yC.useRef)(new Set), g = (0, yC.useRef)(null), _ = e.trim(), v = _ || null, y = e => {
+        n(e)
+    }, b = e => {
+        p.current = e, i(e)
+    }, x = () => {
+        m.current = Date.now()
+    };
+    (0, yC.useEffect)(() => {
+        g.current !== v && (g.current = v, m.current = 0, h.current.clear(), c(null), b([]), y(null), o(!!v))
+    }, [v]), (0, yC.useEffect)(() => {
+        if (!v) {
+            o(!1);
+            return
+        }
+        let e = !1,
+            t = new AbortController,
+            n = Date.now();
+        o(!0);
+        let r = (e, t = !1) => {
+                u(null);
+                let r = new Map,
+                    i = new Set,
+                    a = [];
+                for (let t of e) {
+                    let e = Nx(t),
+                        n = Px(t, vx(t.merchant_name), e);
+                    i.has(n.runKey) || (i.add(n.runKey), r.set(n.runKey, e), a.push(n))
+                }
+                if (t)
+                    for (let e of p.current) i.has(e.runKey) || a.push(e);
+                a.sort((e, t) => et(t.submittedAt) - et(e.submittedAt));
+                let o = a.slice(0, 100),
+                    s = p.current.filter(e => {
+                        let t = Date.parse(e.updatedAt),
+                            i = r.get(e.runKey),
+                            a = h.current.has(e.runKey) && (!i || t > Date.parse(i.updatedAt));
+                        return a || h.current.delete(e.runKey), a || m.current > n && Number.isFinite(t) && t > n
+                    });
+                if (s.length > 0) {
+                    let e = new Map,
+                        t = new Map(r);
+                    for (let t of o) e.set(t.runKey, t);
+                    for (let n of s) e.set(n.runKey, n), t.set(n.runKey, _C(n));
+                    let n = Array.from(e.values());
+                    n.sort((e, t) => et(t.submittedAt) - et(e.submittedAt)), o = n.slice(0, 100), r.clear();
+                    for (let [e, n] of t.entries()) r.set(e, n)
+                }
+                let c = o[0],
+                    l = c ? r.get(c.runKey) ?? _C(c) : null;
+                b(o), y(l)
+            },
+            i = () => {
+                u(v), o(!1)
+            };
+        return Promise.allSettled([Wb({
+            feedId: _
+        }, t.signal).then(t => (e || r(t.runs, !0), t)), Gb({
+            feedId: _,
+            lookbackDays: 90,
+            errorsOnly: !1
+        }, t.signal)]).then(([t, n]) => {
+            if (e) return;
+            if (t.status === `rejected`) {
+                i();
+                return
+            }
+            let a = new Map([...n.status === `fulfilled` ? n.value.uploads.map(e => Ix(e, _, t.value.merchant_name)) : [], ...t.value.runs].map(e => [e.feed_key, e]));
+            c(t.value.truncated || n.status === `fulfilled` && n.value.truncated ? v : null), r([...a.values()], n.status === `rejected`), o(!1), n.status === `rejected` && u(v)
+        }).catch(() => {
+            e || i()
+        }), () => {
+            e = !0, t.abort()
+        }
+    }, [v, _, d]);
+    let S = e => {
+            e && x(), y(e)
+        },
+        C = (e, t) => {
+            x();
+            let n = Fx(p.current, e, t, 100),
+                r = `${e.source}:${e.feedKey}`;
+            h.current = new Set(n.filter(e => e.runKey === r || h.current.has(e.runKey)).map(e => e.runKey)), b(n)
+        },
+        w = g.current === v;
+    return {
+        latestFeedStatus: w ? t : null,
+        runHistory: w ? r : [],
+        isRunHistoryLoading: !!v && (!w || a),
+        isRunHistoryTruncated: v != null && s === v,
+        hasRunHistoryLoadError: v != null && l === v,
+        refreshRunHistory: () => f(e => e + 1),
+        handleLatestStatusUpdate: S,
+        handleRunHistoryUpdate: C
+    }
+}
+var yC, bC = e((() => {
+    yC = n(M()), tx(), yx(), Lx(), Qe(), xx()
+}));
+
+function xC(e) {
+    return [...new Set(e.split(`,`).map(e => e.trim().toUpperCase()).filter(Boolean))]
+}
+
+function SC() {
+    "use forget";
+    let e = (0, jC.c)(92),
+        t = be(),
+        [n, r] = le(),
+        [i, a] = (0, Q.useState)(``),
+        [o, s] = (0, Q.useState)(`US`),
+        [c, l] = (0, Q.useState)(``),
+        [u, d] = (0, Q.useState)(``),
+        f;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (f = [], e[0] = f) : f = e[0];
+    let [p, m] = (0, Q.useState)(f), [h, g] = (0, Q.useState)(!0), [_, v] = (0, Q.useState)(null), [y, b] = (0, Q.useState)(!1), [x, S] = (0, Q.useState)(null), C;
+    e[1] === n ? C = e[2] : (C = () => n.get(`feed_id`) ?? ``, e[1] = n, e[2] = C);
+    let [w] = (0, Q.useState)(C), [ee, te] = (0, Q.useState)(null), ne;
+    e[3] !== p || e[4] !== u ? (ne = p.find(e => e.feedId === u) ?? null, e[3] = p, e[4] = u, e[5] = ne) : ne = e[5];
+    let T = ne,
+        E = T?.merchantName ?? ``,
+        {
+            latestFeedStatus: D,
+            runHistory: ie,
+            isRunHistoryLoading: O,
+            isRunHistoryTruncated: ae,
+            hasRunHistoryLoadError: oe,
+            refreshRunHistory: se,
+            handleLatestStatusUpdate: ce,
+            handleRunHistoryUpdate: k
+        } = vC(u),
+        A;
+    e[6] === t ? A = e[7] : (A = t.formatMessage({
+        id: `commerceSettingsPage.title`,
+        defaultMessage: `Product feed`
+    }), e[6] = t, e[7] = A);
+    let ue = A,
+        j;
+    e[8] === t ? j = e[9] : (j = t.formatMessage({
+        id: `commerceSettingsPage.merchantFeedsLoadErrorLabel`,
+        defaultMessage: `Unable to load merchants.`
+    }), e[8] = t, e[9] = j);
+    let de = j,
+        fe;
+    e[10] === t ? fe = e[11] : (fe = t.formatMessage({
+        id: `commerceSettingsPage.merchantSubmitMissingLabel`,
+        defaultMessage: `Enter a merchant name to add it.`
+    }), e[10] = t, e[11] = fe);
+    let pe = fe,
+        M;
+    e[12] === t ? M = e[13] : (M = t.formatMessage({
+        id: `commerceSettingsPage.merchantFeedTargets.countries.error.required`,
+        defaultMessage: `Enter at least one target country.`
+    }), e[12] = t, e[13] = M);
+    let me = M,
+        he;
+    e[14] === t ? he = e[15] : (he = t.formatMessage({
+        id: `commerceSettingsPage.merchantSubmitSuccessLabel`,
+        defaultMessage: `Merchant saved.`
+    }), e[14] = t, e[15] = he);
+    let ge = he,
+        _e;
+    e[16] === t ? _e = e[17] : (_e = t.formatMessage({
+        id: `commerceSettingsPage.merchantSubmitErrorLabel`,
+        defaultMessage: `Unable to save merchant. Please try again.`
+    }), e[16] = t, e[17] = _e);
+    let ve = _e,
+        ye;
+    e[18] === Symbol.for(`react.memo_cache_sentinel`) ? (ye = e => {
+        a(e.target.value), S(null)
+    }, e[18] = ye) : ye = e[18];
+    let xe = ye,
+        Se;
+    e[19] === Symbol.for(`react.memo_cache_sentinel`) ? (Se = e => {
+        s(e.target.value), S(null)
+    }, e[19] = Se) : Se = e[19];
+    let Ce = Se,
+        we;
+    e[20] === Symbol.for(`react.memo_cache_sentinel`) ? (we = e => {
+        l(e.target.value), S(null)
+    }, e[20] = we) : we = e[20];
+    let Te = we,
+        Ee;
+    e[21] === p ? Ee = e[22] : (Ee = e => {
+        let t = e.currentTarget.dataset.merchantFeedId ?? ``;
+        if (!t) return;
+        let n = p.find(e => e.feedId === t);
+        d(t), n && (a(n.merchantName), s(n.supportedCountries.join(`, `)), l(n.supportedCurrencies.join(`, `))), S(null)
+    }, e[21] = p, e[22] = Ee);
+    let De = Ee,
+        Oe;
+    e[23] === Symbol.for(`react.memo_cache_sentinel`) ? (Oe = () => {
+        d(``), a(``), s(`US`), l(``), S(null)
+    }, e[23] = Oe) : Oe = e[23];
+    let ke = Oe,
+        Ae;
+    e[24] === Symbol.for(`react.memo_cache_sentinel`) ? (Ae = () => {
+        a(``), s(`US`), l(``), S(null)
+    }, e[24] = Ae) : Ae = e[24];
+    let je = Ae,
+        N;
+    e[25] !== i || e[26] !== o || e[27] !== c || e[28] !== ve || e[29] !== me || e[30] !== pe || e[31] !== ge ? (N = async () => {
+        let e = i.trim(),
+            t = xC(o),
+            n = xC(c);
+        if (!e) {
+            S({
+                tone: `error`,
+                text: pe
+            });
+            return
+        }
+        if (t.length === 0) {
+            S({
+                tone: `error`,
+                text: me
+            });
+            return
+        }
+        b(!0), S(null);
+        try {
+            let r = await Lb(e, {
+                supportedCountries: t,
+                supportedCurrencies: n
+            });
+            m(e => {
+                let t = e.findIndex(e => e.feedId === r.feedId);
+                if (t >= 0) {
+                    let n = [...e];
+                    return n[t] = r, n
+                }
+                return [r, ...e]
+            }), d(r.feedId), a(r.merchantName), s(r.supportedCountries.join(`, `)), l(r.supportedCurrencies.join(`, `)), S({
+                tone: `success`,
+                text: ge
+            }), b(!1)
+        } catch (e) {
+            let t = re(e) ?? ve;
+            S({
+                tone: `error`,
+                text: t
+            }), b(!1)
+        }
+    }, e[25] = i, e[26] = o, e[27] = c, e[28] = ve, e[29] = me, e[30] = pe, e[31] = ge, e[32] = N) : N = e[32];
+    let Me = N,
+        Ne, Pe;
+    e[33] !== w || e[34] !== de ? (Ne = () => {
+        let e = !0;
+        return g(!0), v(null), Ib().then(t => {
+            if (!e || (m(t), g(!1), !w)) return;
+            let n = t.find(e => e.feedId === w);
+            n && (d(n.feedId), a(n.merchantName), s(n.supportedCountries.join(`, `)), l(n.supportedCurrencies.join(`, `)))
+        }).catch(t => {
+            if (!e) return;
+            g(!1);
+            let n = re(t) ?? de;
+            v(n)
+        }), () => {
+            e = !1
+        }
+    }, Pe = [w, de], e[33] = w, e[34] = de, e[35] = Ne, e[36] = Pe) : (Ne = e[35], Pe = e[36]), (0, Q.useEffect)(Ne, Pe);
+    let Fe, Ie;
+    e[37] !== u || e[38] !== r ? (Fe = () => {
+        let e = u.trim();
+        r(t => {
+            if ((t.get(`feed_id`) ?? ``) === e) return t;
+            let n = new URLSearchParams(t);
+            return e ? n.set(`feed_id`, e) : n.delete(`feed_id`), n.toString() === t.toString() ? t : n
+        }, {
+            replace: !0
+        })
+    }, Ie = [u, r], e[37] = u, e[38] = r, e[39] = Fe, e[40] = Ie) : (Fe = e[39], Ie = e[40]), (0, Q.useEffect)(Fe, Ie);
+    let Le;
+    e[41] === Symbol.for(`react.memo_cache_sentinel`) ? (Le = e => {
+        te(e)
+    }, e[41] = Le) : Le = e[41];
+    let Re = Le,
+        ze;
+    e[42] === Symbol.for(`react.memo_cache_sentinel`) ? (ze = () => {
+        te(null)
+    }, e[42] = ze) : ze = e[42];
+    let Be;
+    e[43] === u ? Be = e[44] : (Be = [u], e[43] = u, e[44] = Be), (0, Q.useEffect)(ze, Be);
+    let Ve;
+    e[45] === ue ? Ve = e[46] : (Ve = (0, $.jsx)(`h1`, {
+        className: `text-token-text-primary text-2xl font-semibold`,
+        children: ue
+    }), e[45] = ue, e[46] = Ve);
+    let He;
+    e[47] === t ? He = e[48] : (He = t.formatMessage({
+        id: `commerceSettingsPage.feedSubmissionDescription`,
+        defaultMessage: `Submit a product feed to keep your catalog up to date.`
+    }), e[47] = t, e[48] = He);
+    let Ue;
+    e[49] === He ? Ue = e[50] : (Ue = (0, $.jsx)(`p`, {
+        className: `text-token-text-secondary mt-2 text-sm`,
+        children: He
+    }), e[49] = He, e[50] = Ue);
+    let We;
+    e[51] !== Ve || e[52] !== Ue ? (We = (0, $.jsxs)(`div`, {
+        children: [Ve, Ue]
+    }), e[51] = Ve, e[52] = Ue, e[53] = We) : We = e[53];
+    let Ge;
+    e[54] === Symbol.for(`react.memo_cache_sentinel`) ? (Ge = (0, $.jsx)(CC, {}), e[54] = Ge) : Ge = e[54];
+    let Ke;
+    e[55] !== i || e[56] !== o || e[57] !== c || e[58] !== _ || e[59] !== De || e[60] !== Me || e[61] !== h || e[62] !== y || e[63] !== p || e[64] !== x || e[65] !== u ? (Ke = (0, $.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-primary rounded-lg border p-5 shadow-sm`,
+        children: (0, $.jsx)(OC, {
+            draftMerchantName: i,
+            supportedCountries: o,
+            supportedCurrencies: c,
+            selectedFeedId: u,
+            merchantFeeds: p,
+            isFeedsLoading: h,
+            feedsError: _,
+            merchantSubmitStatus: x,
+            isMerchantSubmitting: y,
+            onMerchantNameChange: xe,
+            onMerchantSelect: De,
+            onMerchantClear: ke,
+            onMerchantAddOpen: je,
+            onMerchantSubmit: Me,
+            onSupportedCountriesChange: Ce,
+            onSupportedCurrenciesChange: Te
+        })
+    }), e[55] = i, e[56] = o, e[57] = c, e[58] = _, e[59] = De, e[60] = Me, e[61] = h, e[62] = y, e[63] = p, e[64] = x, e[65] = u, e[66] = Ke) : Ke = e[66];
+    let qe = T?.sftpCreatedAt != null,
+        Je;
+    e[67] !== u || e[68] !== qe ? (Je = (0, $.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-primary rounded-lg border p-5 shadow-sm`,
+        children: (0, $.jsx)(NC, {
+            feedId: u,
+            configured: qe
+        }, u)
+    }), e[67] = u, e[68] = qe, e[69] = Je) : Je = e[69];
+    let Ye;
+    e[70] !== ce || e[71] !== k || e[72] !== u ? (Ye = (0, $.jsx)(`div`, {
+        children: (0, $.jsx)(pS, {
+            feedId: u,
+            onLatestStatusUpdate: ce,
+            onRunHistoryUpdate: k,
+            onMetricsErrorUpdate: Re
+        })
+    }), e[70] = ce, e[71] = k, e[72] = u, e[73] = Ye) : Ye = e[73];
+    let Xe;
+    e[74] !== Je || e[75] !== Ye ? (Xe = (0, $.jsxs)(`div`, {
+        className: `grid gap-5 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-start`,
+        children: [Je, Ye]
+    }), e[74] = Je, e[75] = Ye, e[76] = Xe) : Xe = e[76];
+    let Ze;
+    e[77] !== oe || e[78] !== ee || e[79] !== O || e[80] !== ae || e[81] !== D || e[82] !== se || e[83] !== ie || e[84] !== u || e[85] !== E ? (Ze = (0, $.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-primary rounded-lg border p-5 shadow-sm`,
+        children: (0, $.jsx)(hC, {
+            feedId: u,
+            merchantName: E,
+            latestStatus: D,
+            runHistory: ie,
+            isLoading: O,
+            isTruncated: ae,
+            metricsError: ee,
+            hasLoadError: oe,
+            onRefresh: se
+        }, u)
+    }), e[77] = oe, e[78] = ee, e[79] = O, e[80] = ae, e[81] = D, e[82] = se, e[83] = ie, e[84] = u, e[85] = E, e[86] = Ze) : Ze = e[86];
+    let Qe;
+    return e[87] !== We || e[88] !== Ke || e[89] !== Xe || e[90] !== Ze ? (Qe = (0, $.jsx)(`div`, {
+        className: `px-6 py-8`,
+        children: (0, $.jsxs)(`div`, {
+            className: `mx-auto w-full max-w-5xl space-y-5`,
+            children: [We, Ge, Ke, Xe, Ze]
+        })
+    }), e[87] = We, e[88] = Ke, e[89] = Xe, e[90] = Ze, e[91] = Qe) : Qe = e[91], Qe
+}
+
+function CC() {
+    "use forget";
+    let e = (0, jC.c)(7),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(`h2`, {
+        className: `text-token-text-primary font-medium`,
+        children: (0, $.jsx)(j, {
+            id: `commerceSettingsPage.feedFormats.title`,
+            defaultMessage: `Supported formats`
+        })
+    }), e[0] = t) : t = e[0];
+    let n;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, $.jsx)(`li`, {
+        children: (0, $.jsx)(j, {
+            id: `commerceSettingsPage.feedFormats.manual`,
+            defaultMessage: `<method>Manual upload</method>: .jsonl.gz or .csv.gz`,
+            values: {
+                method: EC
+            }
+        })
+    }), e[1] = n) : n = e[1];
+    let r;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, $.jsx)(`li`, {
+        children: (0, $.jsx)(j, {
+            id: `commerceSettingsPage.feedFormats.hosted`,
+            defaultMessage: `<method>Hosted URL</method>: gzipped JSONL; CSV, TSV or Parquet (gzip optional)`,
+            values: {
+                method: TC
+            }
+        })
+    }), e[2] = r) : r = e[2];
+    let i;
+    e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, $.jsxs)(`ul`, {
+        className: `flex flex-col gap-1`,
+        children: [n, r, (0, $.jsx)(`li`, {
+            children: (0, $.jsx)(j, {
+                id: `commerceSettingsPage.feedFormats.sftp`,
+                defaultMessage: `<method>SFTP</method>: gzipped JSONL; CSV or TSV (gzip optional); Parquet`,
+                values: {
+                    method: wC
+                }
+            })
+        })]
+    }), e[3] = i) : i = e[3];
+    let a;
+    e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, $.jsxs)(`div`, {
+        className: `flex flex-col gap-1`,
+        children: [(0, $.jsx)(`p`, {
+            children: (0, $.jsx)(j, {
+                id: `commerceSettingsPage.feedFormats.parquet`,
+                defaultMessage: `Parquet with internal ZSTD compression keeps the .parquet extension`
+            })
+        }), (0, $.jsx)(`p`, {
+            children: (0, $.jsx)(j, {
+                id: `commerceSettingsPage.feedFormats.sftpSize`,
+                defaultMessage: `For SFTP, we recommend splitting large feeds into files of up to 500,000 records and under 500 MB each`
+            })
+        })]
+    }), e[4] = a) : a = e[4];
+    let o;
+    e[5] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, $.jsx)(`a`, {
+        href: `https://developers.openai.com/commerce/specs/file-upload/products`,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        className: `text-token-text-primary decoration-token-border-heavy hover:decoration-token-text-primary font-medium underline underline-offset-2`,
+        children: (0, $.jsx)(j, {
+            id: `commerceSettingsPage.feedFormats.specifications`,
+            defaultMessage: `Feed specifications`
+        })
+    }), e[5] = o) : o = e[5];
+    let s;
+    return e[6] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, $.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-secondary/40 rounded-lg border px-3 py-2 text-sm`,
+        children: (0, $.jsxs)(`div`, {
+            className: `flex flex-col gap-2`,
+            children: [t, (0, $.jsxs)(`div`, {
+                className: `text-token-text-secondary flex flex-col gap-3`,
+                children: [i, a, (0, $.jsxs)(`div`, {
+                    className: `flex flex-wrap gap-3`,
+                    children: [o, (0, $.jsx)(`a`, {
+                        href: `https://developers.openai.com/commerce/specs/file-upload/overview`,
+                        target: `_blank`,
+                        rel: `noopener noreferrer`,
+                        className: `text-token-text-primary decoration-token-border-heavy hover:decoration-token-text-primary font-medium underline underline-offset-2`,
+                        children: (0, $.jsx)(j, {
+                            id: `commerceSettingsPage.feedFormats.uploadGuide`,
+                            defaultMessage: `Upload guide`
+                        })
+                    })]
+                })]
+            })]
+        })
+    }), e[6] = s) : s = e[6], s
+}
+
+function wC(e) {
+    return (0, $.jsx)(`strong`, {
+        className: `font-medium`,
+        children: e
+    }, `method`)
+}
+
+function TC(e) {
+    return (0, $.jsx)(`strong`, {
+        className: `font-medium`,
+        children: e
+    }, `method`)
+}
+
+function EC(e) {
+    return (0, $.jsx)(`strong`, {
+        className: `font-medium`,
+        children: e
+    }, `method`)
+}
+
+function DC(e) {
+    return e instanceof p && e.status === 403 && e.code === `sftp_admin_required`
+}
+
+function OC(e) {
+    "use forget";
+    let t = (0, jC.c)(226),
+        {
+            draftMerchantName: n,
+            supportedCountries: r,
+            supportedCurrencies: i,
+            selectedFeedId: a,
+            merchantFeeds: o,
+            isFeedsLoading: s,
+            feedsError: c,
+            merchantSubmitStatus: l,
+            isMerchantSubmitting: u,
+            onMerchantNameChange: d,
+            onMerchantSelect: f,
+            onMerchantClear: p,
+            onMerchantAddOpen: m,
+            onMerchantSubmit: h,
+            onSupportedCountriesChange: g,
+            onSupportedCurrenciesChange: _
+        } = e,
+        v = be(),
+        y;
+    t[0] === v ? y = t[1] : (y = v.formatMessage({
+        id: `commerceSettingsPage.merchantsTitle`,
+        defaultMessage: `Merchants`
+    }), t[0] = v, t[1] = y);
+    let b = y,
+        x;
+    t[2] === v ? x = t[3] : (x = v.formatMessage({
+        id: `commerceSettingsPage.merchantsDescription`,
+        defaultMessage: `Add a merchant, then select it to configure SFTP access and feed uploads below.`
+    }), t[2] = v, t[3] = x);
+    let C = x,
+        w;
+    t[4] === v ? w = t[5] : (w = v.formatMessage({
+        id: `commerceSettingsPage.merchantAddTitle`,
+        defaultMessage: `Add merchant`
+    }), t[4] = v, t[5] = w);
+    let te = w,
+        ne;
+    t[6] === v ? ne = t[7] : (ne = v.formatMessage({
+        id: `commerceSettingsPage.merchantAddActionLabel`,
+        defaultMessage: `Add merchant`
+    }), t[6] = v, t[7] = ne);
+    let T = ne,
+        E;
+    t[8] === v ? E = t[9] : (E = v.formatMessage({
+        id: `commerceSettingsPage.merchantAddHideLabel`,
+        defaultMessage: `Hide`
+    }), t[8] = v, t[9] = E);
+    let D = E,
+        re;
+    t[10] === v ? re = t[11] : (re = v.formatMessage({
+        id: `commerceSettingsPage.merchantNameLabel`,
+        defaultMessage: `Merchant name`
+    }), t[10] = v, t[11] = re);
+    let ie = re,
+        O;
+    t[12] === v ? O = t[13] : (O = v.formatMessage({
+        id: `commerceSettingsPage.merchantNamePlaceholder`,
+        defaultMessage: `Acme Hardware`
+    }), t[12] = v, t[13] = O);
+    let ae = O,
+        oe;
+    t[14] === v ? oe = t[15] : (oe = v.formatMessage({
+        id: `commerceSettingsPage.merchantFeedTargets.title`,
+        defaultMessage: `Feed targets`
+    }), t[14] = v, t[15] = oe);
+    let ce = oe,
+        k;
+    t[16] === v ? k = t[17] : (k = v.formatMessage({
+        id: `commerceSettingsPage.merchantFeedTargets.marketsDescription`,
+        defaultMessage: `Set the countries and currencies this feed can publish.`
+    }), t[16] = v, t[17] = k);
+    let A = k,
+        le;
+    t[18] === v ? le = t[19] : (le = v.formatMessage({
+        id: `commerceSettingsPage.merchantFeedTargets.countries.label`,
+        defaultMessage: `Target countries`
+    }), t[18] = v, t[19] = le);
+    let ue = le,
+        j;
+    t[20] === v ? j = t[21] : (j = v.formatMessage({
+        id: `commerceSettingsPage.merchantFeedTargets.countries.placeholder`,
+        defaultMessage: `US, CA, MX`
+    }), t[20] = v, t[21] = j);
+    let de = j,
+        fe;
+    t[22] === v ? fe = t[23] : (fe = v.formatMessage({
+        id: `commerceSettingsPage.merchantFeedTargets.countries.help_text`,
+        defaultMessage: `Use comma-separated two-letter country codes.`
+    }), t[22] = v, t[23] = fe);
+    let pe = fe,
+        M;
+    t[24] === v ? M = t[25] : (M = v.formatMessage({
+        id: `commerceSettingsPage.merchantFeedTargets.currencies.label`,
+        defaultMessage: `Supported currencies`
+    }), t[24] = v, t[25] = M);
+    let me = M,
+        he;
+    t[26] === v ? he = t[27] : (he = v.formatMessage({
+        id: `commerceSettingsPage.merchantFeedTargets.currencies.placeholder`,
+        defaultMessage: `USD, CAD, MXN`
+    }), t[26] = v, t[27] = he);
+    let ge = he,
+        _e;
+    t[28] === v ? _e = t[29] : (_e = v.formatMessage({
+        id: `commerceSettingsPage.merchantFeedTargets.currencies.help_text`,
+        defaultMessage: `Use comma-separated three-letter currency codes.`
+    }), t[28] = v, t[29] = _e);
+    let ve = _e,
+        ye;
+    t[30] === v ? ye = t[31] : (ye = v.formatMessage(MC.merchantListTitle), t[30] = v, t[31] = ye);
+    let xe = ye,
+        Se;
+    t[32] === v ? Se = t[33] : (Se = v.formatMessage(MC.merchantColumnLabel), t[32] = v, t[33] = Se);
+    let Ce = Se,
+        we;
+    t[34] === v ? we = t[35] : (we = v.formatMessage(MC.merchantFeedIdColumnLabel), t[34] = v, t[35] = we);
+    let Te = we,
+        Ee;
+    t[36] === v ? Ee = t[37] : (Ee = v.formatMessage(MC.merchantActionColumnLabel), t[36] = v, t[37] = Ee);
+    let De = Ee,
+        ke;
+    t[38] === v ? ke = t[39] : (ke = v.formatMessage(MC.merchantListLoadingLabel), t[38] = v, t[39] = ke);
+    let Ae = ke,
+        je;
+    t[40] === v ? je = t[41] : (je = v.formatMessage(MC.merchantListEmptyLabel), t[40] = v, t[41] = je);
+    let N = je,
+        Me;
+    t[42] === v ? Me = t[43] : (Me = v.formatMessage(MC.merchantListEmptyHint), t[42] = v, t[43] = Me);
+    let Ne = Me,
+        Pe;
+    t[44] === v ? Pe = t[45] : (Pe = v.formatMessage(MC.merchantSelectLabel), t[44] = v, t[45] = Pe);
+    let Ie = Pe,
+        Le;
+    t[46] === v ? Le = t[47] : (Le = v.formatMessage(MC.merchantClearLabel), t[46] = v, t[47] = Le);
+    let Re = Le,
+        ze;
+    t[48] === v ? ze = t[49] : (ze = v.formatMessage(MC.merchantSelectedLabel), t[48] = v, t[49] = ze);
+    let Be = ze,
+        Ve;
+    t[50] === v ? Ve = t[51] : (Ve = v.formatMessage(MC.merchantSubmitLabel), t[50] = v, t[51] = Ve);
+    let He = Ve,
+        Ue;
+    t[52] === v ? Ue = t[53] : (Ue = v.formatMessage(MC.merchantSubmittingLabel), t[52] = v, t[53] = Ue);
+    let We = Ue,
+        Ge;
+    t[54] === v ? Ge = t[55] : (Ge = v.formatMessage(MC.merchantSearchLabel), t[54] = v, t[55] = Ge);
+    let Ke = Ge,
+        qe;
+    t[56] === v ? qe = t[57] : (qe = v.formatMessage(MC.merchantSearchPlaceholder), t[56] = v, t[57] = qe);
+    let Je = qe,
+        Xe;
+    t[58] === v ? Xe = t[59] : (Xe = v.formatMessage(MC.merchantSortLabel), t[58] = v, t[59] = Xe);
+    let Ze = Xe,
+        Qe;
+    t[60] === v ? Qe = t[61] : (Qe = v.formatMessage(MC.merchantSortNewestLabel), t[60] = v, t[61] = Qe);
+    let $e = Qe,
+        et;
+    t[62] === v ? et = t[63] : (et = v.formatMessage(MC.merchantSortOldestLabel), t[62] = v, t[63] = et);
+    let tt = et,
+        nt;
+    t[64] === v ? nt = t[65] : (nt = v.formatMessage(MC.merchantSortNameAscLabel), t[64] = v, t[65] = nt);
+    let rt = nt,
+        it;
+    t[66] === v ? it = t[67] : (it = v.formatMessage(MC.merchantSortNameDescLabel), t[66] = v, t[67] = it);
+    let at = it,
+        ot;
+    t[68] === v ? ot = t[69] : (ot = v.formatMessage(MC.merchantSortFeedIdAscLabel), t[68] = v, t[69] = ot);
+    let st = ot,
+        ct;
+    t[70] === v ? ct = t[71] : (ct = v.formatMessage(MC.merchantSortFeedIdDescLabel), t[70] = v, t[71] = ct);
+    let lt = ct,
+        ut;
+    t[72] === v ? ut = t[73] : (ut = v.formatMessage(MC.merchantCreatedLabel), t[72] = v, t[73] = ut);
+    let dt = ut,
+        ft;
+    t[74] === v ? ft = t[75] : (ft = v.formatMessage(MC.merchantCreatedMobileLabel), t[74] = v, t[75] = ft);
+    let pt = ft,
+        mt;
+    t[76] === v ? mt = t[77] : (mt = v.formatMessage(MC.merchantCreatedUnavailableLabel), t[76] = v, t[77] = mt);
+    let ht = mt,
+        gt;
+    t[78] === v ? gt = t[79] : (gt = v.formatMessage(MC.merchantListSearchEmptyLabel), t[78] = v, t[79] = gt);
+    let _t = gt,
+        vt;
+    t[80] === v ? vt = t[81] : (vt = v.formatMessage(MC.merchantListSearchEmptyHint), t[80] = v, t[81] = vt);
+    let yt = vt,
+        bt;
+    t[82] === v ? bt = t[83] : (bt = v.formatMessage(MC.merchantPreviousPageLabel), t[82] = v, t[83] = bt);
+    let xt = bt,
+        St;
+    t[84] === v ? St = t[85] : (St = v.formatMessage(MC.merchantNextPageLabel), t[84] = v, t[85] = St);
+    let Ct = St,
+        wt = !!c,
+        Tt = o.length > 0,
+        [Et, Dt] = (0, Q.useState)(!1),
+        [Ot, kt] = (0, Q.useState)(``),
+        [At, jt] = (0, Q.useState)(ux),
+        [Mt, P] = (0, Q.useState)(1),
+        Nt;
+    t[86] !== v.locale || t[87] !== o || t[88] !== Mt || t[89] !== Ot || t[90] !== At ? (Nt = lx({
+        feeds: o,
+        searchQuery: Ot,
+        sortValue: At,
+        currentPage: Mt,
+        locale: v.locale
+    }), t[86] = v.locale, t[87] = o, t[88] = Mt, t[89] = Ot, t[90] = At, t[91] = Nt) : Nt = t[91];
+    let F = Nt,
+        Pt = F.paginatedFeeds.length > 0,
+        Ft = F.normalizedSearchQuery.length > 0,
+        It = F.resultCount > 0,
+        Lt;
+    t[92] !== v || t[93] !== F.pageEnd || t[94] !== F.pageStart || t[95] !== F.resultCount ? (Lt = v.formatMessage(MC.merchantResultSummary, {
+        start: F.pageStart,
+        end: F.pageEnd,
+        count: F.resultCount
+    }), t[92] = v, t[93] = F.pageEnd, t[94] = F.pageStart, t[95] = F.resultCount, t[96] = Lt) : Lt = t[96];
+    let Rt = Lt,
+        zt;
+    t[97] !== v || t[98] !== F.currentPage || t[99] !== F.pageCount ? (zt = v.formatMessage(MC.merchantPageSummary, {
+        currentPage: F.currentPage,
+        pageCount: F.pageCount
+    }), t[97] = v, t[98] = F.currentPage, t[99] = F.pageCount, t[100] = zt) : zt = t[100];
+    let Bt = zt,
+        Vt;
+    t[101] === m ? Vt = t[102] : (Vt = () => {
+        Dt(!0), m()
+    }, t[101] = m, t[102] = Vt);
+    let Ht = Vt,
+        Ut;
+    t[103] === Symbol.for(`react.memo_cache_sentinel`) ? (Ut = () => {
+        Dt(!1)
+    }, t[103] = Ut) : Ut = t[103];
+    let Wt = Ut,
+        Gt;
+    t[104] === Symbol.for(`react.memo_cache_sentinel`) ? (Gt = e => {
+        kt(e.target.value), P(1)
+    }, t[104] = Gt) : Gt = t[104];
+    let Kt = Gt,
+        qt;
+    t[105] === Symbol.for(`react.memo_cache_sentinel`) ? (qt = e => {
+        let t = e.target.value;
+        nx(t) && (jt(t), P(1))
+    }, t[105] = qt) : qt = t[105];
+    let Jt = qt,
+        Yt;
+    t[106] === Symbol.for(`react.memo_cache_sentinel`) ? (Yt = () => {
+        P(kC)
+    }, t[106] = Yt) : Yt = t[106];
+    let Xt = Yt,
+        Zt;
+    t[107] === F.pageCount ? Zt = t[108] : (Zt = () => {
+        P(e => Math.min(F.pageCount, e + 1))
+    }, t[107] = F.pageCount, t[108] = Zt);
+    let Qt = Zt,
+        $t, en;
+    t[109] !== Tt || t[110] !== s || t[111] !== wt ? ($t = () => {
+        s || wt || Tt || Dt(!0)
+    }, en = [Tt, s, wt], t[109] = Tt, t[110] = s, t[111] = wt, t[112] = $t, t[113] = en) : ($t = t[112], en = t[113]), (0, Q.useEffect)($t, en);
+    let tn, nn;
+    t[114] !== Tt || t[115] !== l ? (tn = () => {
+        !l || l.tone !== `success` || Tt && (kt(``), P(1), Dt(!1))
+    }, nn = [Tt, l], t[114] = Tt, t[115] = l, t[116] = tn, t[117] = nn) : (tn = t[116], nn = t[117]), (0, Q.useEffect)(tn, nn);
+    let rn;
+    t[118] === b ? rn = t[119] : (rn = (0, $.jsx)(`h2`, {
+        className: `text-token-text-primary text-lg font-semibold`,
+        children: b
+    }), t[118] = b, t[119] = rn);
+    let an;
+    t[120] === C ? an = t[121] : (an = (0, $.jsx)(`p`, {
+        className: `text-token-text-secondary mt-2 text-sm`,
+        children: C
+    }), t[120] = C, t[121] = an);
+    let on;
+    t[122] !== rn || t[123] !== an ? (on = (0, $.jsxs)(`div`, {
+        children: [rn, an]
+    }), t[122] = rn, t[123] = an, t[124] = on) : on = t[124];
+    let sn;
+    t[125] === xe ? sn = t[126] : (sn = (0, $.jsx)(`div`, {
+        className: `text-token-text-primary text-sm font-medium`,
+        children: xe
+    }), t[125] = xe, t[126] = sn);
+    let cn;
+    t[127] !== Tt || t[128] !== s || t[129] !== Rt || t[130] !== wt || t[131] !== It ? (cn = Tt && !s && !wt && It ? (0, $.jsx)(`div`, {
+        className: `text-token-text-secondary mt-1 text-xs`,
+        children: Rt
+    }) : null, t[127] = Tt, t[128] = s, t[129] = Rt, t[130] = wt, t[131] = It, t[132] = cn) : cn = t[132];
+    let ln;
+    t[133] !== sn || t[134] !== cn ? (ln = (0, $.jsxs)(`div`, {
+        className: `min-w-0 flex-1`,
+        children: [sn, cn]
+    }), t[133] = sn, t[134] = cn, t[135] = ln) : ln = t[135];
+    let un;
+    t[136] !== Tt || t[137] !== s || t[138] !== Ke || t[139] !== Je || t[140] !== Ot || t[141] !== st || t[142] !== lt || t[143] !== Ze || t[144] !== rt || t[145] !== at || t[146] !== $e || t[147] !== tt || t[148] !== At || t[149] !== wt ? (un = Tt && !s && !wt ? (0, $.jsxs)(`div`, {
+        className: `grid w-full gap-2 sm:w-auto sm:min-w-[34rem] sm:grid-cols-[minmax(0,1fr)_12rem]`,
+        children: [(0, $.jsxs)(`label`, {
+            className: `min-w-0`,
+            children: [(0, $.jsx)(`span`, {
+                className: `text-token-text-primary block text-xs font-medium`,
+                children: Ke
+            }), (0, $.jsxs)(`div`, {
+                className: `relative mt-1`,
+                children: [(0, $.jsx)(S, {
+                    className: `text-token-text-tertiary pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2`
+                }), (0, $.jsx)(`input`, {
+                    className: `border-token-border-light bg-token-bg-primary text-token-text-primary placeholder:text-token-text-tertiary h-9 w-full rounded-md border py-2 ps-9 pe-3 text-sm`,
+                    type: `search`,
+                    value: Ot,
+                    placeholder: Je,
+                    onChange: Kt
+                })]
+            })]
+        }), (0, $.jsxs)(`label`, {
+            children: [(0, $.jsx)(`span`, {
+                className: `text-token-text-primary block text-xs font-medium`,
+                children: Ze
+            }), (0, $.jsxs)(`select`, {
+                className: `border-token-border-light bg-token-bg-primary text-token-text-primary mt-1 h-9 w-full rounded-md border px-3 text-sm`,
+                value: At,
+                onChange: Jt,
+                children: [(0, $.jsx)(`option`, {
+                    value: `createdAtDesc`,
+                    children: $e
+                }), (0, $.jsx)(`option`, {
+                    value: `createdAtAsc`,
+                    children: tt
+                }), (0, $.jsx)(`option`, {
+                    value: `merchantNameAsc`,
+                    children: rt
+                }), (0, $.jsx)(`option`, {
+                    value: `merchantNameDesc`,
+                    children: at
+                }), (0, $.jsx)(`option`, {
+                    value: `feedIdAsc`,
+                    children: st
+                }), (0, $.jsx)(`option`, {
+                    value: `feedIdDesc`,
+                    children: lt
+                })]
+            })]
+        })]
+    }) : null, t[136] = Tt, t[137] = s, t[138] = Ke, t[139] = Je, t[140] = Ot, t[141] = st, t[142] = lt, t[143] = Ze, t[144] = rt, t[145] = at, t[146] = $e, t[147] = tt, t[148] = At, t[149] = wt, t[150] = un) : un = t[150];
+    let dn;
+    t[151] !== ln || t[152] !== un ? (dn = (0, $.jsxs)(`div`, {
+        className: `flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between`,
+        children: [ln, un]
+    }), t[151] = ln, t[152] = un, t[153] = dn) : dn = t[153];
+    let fn;
+    t[154] !== c || t[155] !== Tt || t[156] !== Ft || t[157] !== Pt || t[158] !== v || t[159] !== s || t[160] !== De || t[161] !== Re || t[162] !== Ce || t[163] !== dt || t[164] !== pt || t[165] !== ht || t[166] !== Te || t[167] !== Ne || t[168] !== N || t[169] !== Ae || t[170] !== yt || t[171] !== _t || t[172] !== F.paginatedFeeds || t[173] !== Ie || t[174] !== Be || t[175] !== p || t[176] !== f || t[177] !== a || t[178] !== wt ? (fn = s ? (0, $.jsx)(`div`, {
+        className: `text-token-text-secondary text-sm`,
+        children: Ae
+    }) : wt ? (0, $.jsx)(`div`, {
+        className: `text-sm text-red-600`,
+        children: c
+    }) : Tt && Pt ? (0, $.jsxs)(`div`, {
+        className: `border-token-border-light overflow-hidden rounded-lg border`,
+        children: [(0, $.jsxs)(`div`, {
+            className: `bg-token-bg-secondary/40 text-token-text-secondary hidden grid-cols-[minmax(0,1.1fr)_minmax(0,1.3fr)_10rem_auto] gap-3 px-3 py-2 text-xs font-medium sm:grid`,
+            children: [(0, $.jsx)(`div`, {
+                children: Ce
+            }), (0, $.jsx)(`div`, {
+                children: Te
+            }), (0, $.jsx)(`div`, {
+                children: dt
+            }), (0, $.jsx)(`div`, {
+                className: `text-end`,
+                children: De
+            })]
+        }), (0, $.jsx)(`ul`, {
+            className: `divide-token-border-light divide-y`,
+            children: F.paginatedFeeds.map(e => {
+                let t = e.feedId === a,
+                    n = Ye(v, e.createdAt) ?? ht;
+                return (0, $.jsxs)(`li`, {
+                    className: se(`grid gap-3 px-3 py-3 sm:grid-cols-[minmax(0,1.1fr)_minmax(0,1.3fr)_10rem_auto] sm:items-center`, t ? `bg-token-bg-secondary/60` : `bg-token-bg-primary`),
+                    children: [(0, $.jsxs)(`div`, {
+                        className: `min-w-0`,
+                        children: [(0, $.jsx)(`div`, {
+                            className: `text-token-text-primary truncate text-sm font-medium`,
+                            children: e.merchantName
+                        }), (0, $.jsx)(`div`, {
+                            className: `text-token-text-secondary mt-0.5 text-xs sm:hidden`,
+                            children: e.feedId
+                        })]
+                    }), (0, $.jsx)(`div`, {
+                        className: `text-token-text-secondary hidden min-w-0 font-mono text-xs break-all sm:block`,
+                        children: e.feedId
+                    }), (0, $.jsxs)(`div`, {
+                        className: `text-token-text-secondary text-xs`,
+                        children: [(0, $.jsx)(`span`, {
+                            className: `me-1 font-medium sm:hidden`,
+                            children: pt
+                        }), n]
+                    }), (0, $.jsx)(`div`, {
+                        className: `flex items-center justify-start sm:justify-end`,
+                        children: t ? (0, $.jsx)(`button`, {
+                            type: `button`,
+                            className: `bg-token-bg-secondary text-token-text-primary rounded-full px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase`,
+                            onClick: p,
+                            "aria-label": Re,
+                            children: Be
+                        }) : (0, $.jsx)(ee, {
+                            type: `button`,
+                            color: `ghost`,
+                            size: `small`,
+                            label: Ie,
+                            onClick: f,
+                            "data-merchant-feed-id": e.feedId,
+                            children: Ie
+                        })
+                    })]
+                }, e.feedId)
+            })
+        })]
+    }) : Tt && Ft ? (0, $.jsxs)(`div`, {
+        className: `border-token-border-light bg-token-bg-secondary/40 space-y-1 rounded-md border px-3 py-3 text-sm`,
+        children: [(0, $.jsx)(`div`, {
+            className: `text-token-text-primary font-medium`,
+            children: _t
+        }), (0, $.jsx)(`div`, {
+            className: `text-token-text-secondary text-xs`,
+            children: yt
+        })]
+    }) : (0, $.jsxs)(`div`, {
+        className: `border-token-border-light bg-token-bg-secondary/40 space-y-1 rounded-md border px-3 py-3 text-sm`,
+        children: [(0, $.jsx)(`div`, {
+            className: `text-token-text-primary font-medium`,
+            children: N
+        }), (0, $.jsx)(`div`, {
+            className: `text-token-text-secondary text-xs`,
+            children: Ne
+        })]
+    }), t[154] = c, t[155] = Tt, t[156] = Ft, t[157] = Pt, t[158] = v, t[159] = s, t[160] = De, t[161] = Re, t[162] = Ce, t[163] = dt, t[164] = pt, t[165] = ht, t[166] = Te, t[167] = Ne, t[168] = N, t[169] = Ae, t[170] = yt, t[171] = _t, t[172] = F.paginatedFeeds, t[173] = Ie, t[174] = Be, t[175] = p, t[176] = f, t[177] = a, t[178] = wt, t[179] = fn) : fn = t[179];
+    let pn;
+    t[180] !== Qt || t[181] !== Tt || t[182] !== Pt || t[183] !== F.currentPage || t[184] !== F.pageCount || t[185] !== Ct || t[186] !== Bt || t[187] !== xt ? (pn = Tt && Pt && F.pageCount > 1 ? (0, $.jsxs)(`div`, {
+        className: `flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between`,
+        children: [(0, $.jsx)(`div`, {
+            className: `text-token-text-secondary text-xs`,
+            children: Bt
+        }), (0, $.jsxs)(`div`, {
+            className: `flex items-center gap-2`,
+            children: [(0, $.jsx)(ee, {
+                type: `button`,
+                color: `ghost`,
+                size: `small`,
+                label: xt,
+                icon: Oe,
+                onClick: Xt,
+                disabled: F.currentPage <= 1,
+                children: xt
+            }), (0, $.jsx)(ee, {
+                type: `button`,
+                color: `ghost`,
+                size: `small`,
+                label: Ct,
+                icon: Fe,
+                onClick: Qt,
+                disabled: F.currentPage >= F.pageCount,
+                children: Ct
+            })]
+        })]
+    }) : null, t[180] = Qt, t[181] = Tt, t[182] = Pt, t[183] = F.currentPage, t[184] = F.pageCount, t[185] = Ct, t[186] = Bt, t[187] = xt, t[188] = pn) : pn = t[188];
+    let mn;
+    t[189] !== dn || t[190] !== fn || t[191] !== pn ? (mn = (0, $.jsxs)(`div`, {
+        className: `space-y-3`,
+        children: [dn, fn, pn]
+    }), t[189] = dn, t[190] = fn, t[191] = pn, t[192] = mn) : mn = t[192];
+    let hn;
+    t[193] !== n || t[194] !== Ht || t[195] !== Tt || t[196] !== v || t[197] !== Et || t[198] !== u || t[199] !== T || t[200] !== D || t[201] !== te || t[202] !== pe || t[203] !== ue || t[204] !== de || t[205] !== ve || t[206] !== me || t[207] !== ge || t[208] !== A || t[209] !== ce || t[210] !== ie || t[211] !== ae || t[212] !== He || t[213] !== l || t[214] !== We || t[215] !== d || t[216] !== h || t[217] !== g || t[218] !== _ || t[219] !== r || t[220] !== i ? (hn = Et ? (0, $.jsxs)(`div`, {
+        className: `border-token-border-light space-y-3 rounded-md border p-3`,
+        children: [(0, $.jsxs)(`div`, {
+            className: `flex items-center justify-between gap-3`,
+            children: [(0, $.jsx)(`div`, {
+                className: `text-token-text-primary text-sm font-medium`,
+                children: te
+            }), Tt ? (0, $.jsx)(ee, {
+                type: `button`,
+                color: `ghost`,
+                size: `small`,
+                label: D,
+                onClick: Wt,
+                disabled: u,
+                children: D
+            }) : null]
+        }), (0, $.jsxs)(`label`, {
+            htmlFor: `merchant-name`,
+            className: `text-token-text-primary block text-sm font-medium`,
+            children: [ie, (0, $.jsx)(`span`, {
+                className: `text-token-text-primary ms-1`,
+                children: v.formatMessage({
+                    id: `commerceSettingsPage.requiredIndicator`,
+                    defaultMessage: `*`
+                })
+            })]
+        }), (0, $.jsx)(`input`, {
+            id: `merchant-name`,
+            className: `border-token-border-light bg-token-bg-primary text-token-text-primary mt-3 w-full rounded-md border px-3 py-2 text-sm`,
+            type: `text`,
+            placeholder: ae,
+            value: n,
+            onChange: d,
+            required: !0
+        }), (0, $.jsxs)(`div`, {
+            className: `border-token-border-light space-y-3 border-t pt-4`,
+            children: [(0, $.jsxs)(`div`, {
+                className: `space-y-1`,
+                children: [(0, $.jsx)(`h4`, {
+                    className: `text-token-text-primary text-sm font-semibold`,
+                    children: ce
+                }), (0, $.jsx)(`p`, {
+                    className: `text-token-text-secondary text-xs`,
+                    children: A
+                })]
+            }), (0, $.jsxs)(`div`, {
+                className: `grid gap-3 sm:grid-cols-2`,
+                children: [(0, $.jsxs)(`label`, {
+                    children: [(0, $.jsx)(`span`, {
+                        className: `text-token-text-primary block text-sm font-medium`,
+                        children: ue
+                    }), (0, $.jsx)(`input`, {
+                        className: `border-token-border-light bg-token-bg-primary text-token-text-primary placeholder:text-token-text-tertiary mt-1 h-9 w-full rounded-md border px-3 text-sm`,
+                        type: `text`,
+                        value: r,
+                        placeholder: de,
+                        onChange: g,
+                        disabled: u
+                    }), (0, $.jsx)(`span`, {
+                        className: `text-token-text-secondary mt-1 block text-xs`,
+                        children: pe
+                    })]
+                }), (0, $.jsxs)(`label`, {
+                    children: [(0, $.jsx)(`span`, {
+                        className: `text-token-text-primary block text-sm font-medium`,
+                        children: me
+                    }), (0, $.jsx)(`input`, {
+                        className: `border-token-border-light bg-token-bg-primary text-token-text-primary placeholder:text-token-text-tertiary mt-1 h-9 w-full rounded-md border px-3 text-sm`,
+                        type: `text`,
+                        value: i,
+                        placeholder: ge,
+                        onChange: _,
+                        disabled: u
+                    }), (0, $.jsx)(`span`, {
+                        className: `text-token-text-secondary mt-1 block text-xs`,
+                        children: ve
+                    })]
+                })]
+            })]
+        }), (0, $.jsxs)(`div`, {
+            className: `flex items-center gap-3`,
+            children: [(0, $.jsx)(ee, {
+                type: `button`,
+                color: `primary`,
+                label: u ? We : He,
+                onClick: h,
+                disabled: u,
+                children: u ? We : He
+            }), l ? (0, $.jsx)(`p`, {
+                className: l.tone === `success` ? `text-xs text-green-600` : `text-xs text-red-600`,
+                children: l.text
+            }) : null]
+        })]
+    }) : (0, $.jsx)(`div`, {
+        className: `flex items-center`,
+        children: (0, $.jsx)(ee, {
+            type: `button`,
+            color: `primary`,
+            label: T,
+            onClick: Ht,
+            children: T
+        })
+    }), t[193] = n, t[194] = Ht, t[195] = Tt, t[196] = v, t[197] = Et, t[198] = u, t[199] = T, t[200] = D, t[201] = te, t[202] = pe, t[203] = ue, t[204] = de, t[205] = ve, t[206] = me, t[207] = ge, t[208] = A, t[209] = ce, t[210] = ie, t[211] = ae, t[212] = He, t[213] = l, t[214] = We, t[215] = d, t[216] = h, t[217] = g, t[218] = _, t[219] = r, t[220] = i, t[221] = hn) : hn = t[221];
+    let gn;
+    return t[222] !== on || t[223] !== mn || t[224] !== hn ? (gn = (0, $.jsxs)(`div`, {
+        className: `space-y-4`,
+        children: [on, mn, hn]
+    }), t[222] = on, t[223] = mn, t[224] = hn, t[225] = gn) : gn = t[225], gn
+}
+
+function kC(e) {
+    return Math.max(1, e - 1)
+}
+
+function AC() {}
+var jC, Q, $, MC, NC, PC, FC = e((() => {
+    jC = ye(), r(), tx(), fx(), xS(), gC(), Qe(), bC(), Ae(), ke(), N(), Me(), T(), w(), y(), Q = n(M()), fe(), ce(), $ = A(), MC = ue({
+        merchantListTitle: {
+            id: `commerceSettingsPage.merchantListTitle`,
+            defaultMessage: `Saved merchants`
+        },
+        merchantColumnLabel: {
+            id: `commerceSettingsPage.merchantColumnLabel`,
+            defaultMessage: `Merchant`
+        },
+        merchantFeedIdColumnLabel: {
+            id: `commerceSettingsPage.merchantFeedIdColumnLabel`,
+            defaultMessage: `Feed ID`
+        },
+        merchantActionColumnLabel: {
+            id: `commerceSettingsPage.merchantActionColumnLabel`,
+            defaultMessage: `Action`
+        },
+        merchantListLoadingLabel: {
+            id: `commerceSettingsPage.merchantListLoadingLabel`,
+            defaultMessage: `Loading merchants…`
+        },
+        merchantListEmptyLabel: {
+            id: `commerceSettingsPage.merchantListEmptyLabel`,
+            defaultMessage: `No merchants yet.`
+        },
+        merchantListEmptyHint: {
+            id: `commerceSettingsPage.merchantListEmptyHintWithoutSftp`,
+            defaultMessage: `Add your first merchant above to start uploading feeds. You can set up SFTP separately if needed.`
+        },
+        merchantSelectLabel: {
+            id: `commerceSettingsPage.merchantSelectLabel`,
+            defaultMessage: `Select`
+        },
+        merchantClearLabel: {
+            id: `commerceSettingsPage.merchantClearLabel`,
+            defaultMessage: `Clear selection`
+        },
+        merchantSelectedLabel: {
+            id: `commerceSettingsPage.merchantSelectedLabel`,
+            defaultMessage: `Selected`
+        },
+        merchantSubmitLabel: {
+            id: `commerceSettingsPage.merchantSubmitLabel`,
+            defaultMessage: `Add merchant`
+        },
+        merchantSubmittingLabel: {
+            id: `commerceSettingsPage.merchantSubmittingLabel`,
+            defaultMessage: `Adding…`
+        },
+        merchantSearchLabel: {
+            id: `commerceSettingsPage.merchantSearchLabel`,
+            defaultMessage: `Search merchants`
+        },
+        merchantSearchPlaceholder: {
+            id: `commerceSettingsPage.merchantSearchPlaceholder`,
+            defaultMessage: `Search by merchant or feed ID`
+        },
+        merchantSortLabel: {
+            id: `commerceSettingsPage.merchantSortLabel`,
+            defaultMessage: `Sort`
+        },
+        merchantSortNewestLabel: {
+            id: `commerceSettingsPage.merchantSortNewestLabel`,
+            defaultMessage: `Newest created`
+        },
+        merchantSortOldestLabel: {
+            id: `commerceSettingsPage.merchantSortOldestLabel`,
+            defaultMessage: `Oldest created`
+        },
+        merchantSortNameAscLabel: {
+            id: `commerceSettingsPage.merchantSortNameAscLabel`,
+            defaultMessage: `Merchant A-Z`
+        },
+        merchantSortNameDescLabel: {
+            id: `commerceSettingsPage.merchantSortNameDescLabel`,
+            defaultMessage: `Merchant Z-A`
+        },
+        merchantSortFeedIdAscLabel: {
+            id: `commerceSettingsPage.merchantSortFeedIdAscLabel`,
+            defaultMessage: `Feed ID A-Z`
+        },
+        merchantSortFeedIdDescLabel: {
+            id: `commerceSettingsPage.merchantSortFeedIdDescLabel`,
+            defaultMessage: `Feed ID Z-A`
+        },
+        merchantCreatedLabel: {
+            id: `commerceSettingsPage.merchantCreatedLabel`,
+            defaultMessage: `Created`
+        },
+        merchantCreatedMobileLabel: {
+            id: `commerceSettingsPage.merchantCreatedMobileLabel`,
+            defaultMessage: `Created:`
+        },
+        merchantCreatedUnavailableLabel: {
+            id: `commerceSettingsPage.merchantCreatedUnavailableLabel`,
+            defaultMessage: `Unknown`
+        },
+        merchantListSearchEmptyLabel: {
+            id: `commerceSettingsPage.merchantListSearchEmptyLabel`,
+            defaultMessage: `No merchants match your search.`
+        },
+        merchantListSearchEmptyHint: {
+            id: `commerceSettingsPage.merchantListSearchEmptyHint`,
+            defaultMessage: `Try a merchant name or feed ID.`
+        },
+        merchantPreviousPageLabel: {
+            id: `commerceSettingsPage.merchantPreviousPageLabel`,
+            defaultMessage: `Previous`
+        },
+        merchantNextPageLabel: {
+            id: `commerceSettingsPage.merchantNextPageLabel`,
+            defaultMessage: `Next`
+        },
+        merchantResultSummary: {
+            id: `commerceSettingsPage.merchantResultSummary`,
+            defaultMessage: `Showing {start}-{end} of {count, plural, one {# merchant} other {# merchants}}`
+        },
+        merchantPageSummary: {
+            id: `commerceSettingsPage.merchantPageSummary`,
+            defaultMessage: `Page {currentPage} of {pageCount}`
+        }
+    }), NC = e => {
+        "use forget";
+        let t = (0, jC.c)(17),
+            {
+                feedId: n,
+                configured: r
+            } = e,
+            i = be(),
+            a;
+        t[0] === i ? a = t[1] : (a = i.formatMessage({
+            id: `commerceSettingsPage.sftpSectionTitle`,
+            defaultMessage: `SFTP`
+        }), t[0] = i, t[1] = a);
+        let o = a,
+            s;
+        t[2] === i ? s = t[3] : (s = i.formatMessage({
+            id: `commerceSettingsPage.sftpSectionDescription`,
+            defaultMessage: `Use SFTP for large feeds or multiple files. Connection details appear once access is enabled.`
+        }), t[2] = i, t[3] = s);
+        let c = s,
+            l;
+        t[4] === o ? l = t[5] : (l = (0, $.jsx)(`h2`, {
+            className: `text-token-text-primary text-lg font-semibold`,
+            children: o
+        }), t[4] = o, t[5] = l);
+        let u;
+        t[6] === c ? u = t[7] : (u = (0, $.jsx)(`p`, {
+            className: `text-token-text-secondary mt-2 text-sm`,
+            children: c
+        }), t[6] = c, t[7] = u);
+        let d;
+        t[8] !== l || t[9] !== u ? (d = (0, $.jsxs)(`div`, {
+            children: [l, u]
+        }), t[8] = l, t[9] = u, t[10] = d) : d = t[10];
+        let f;
+        t[11] !== r || t[12] !== n ? (f = (0, $.jsx)(PC, {
+            feedId: n,
+            configured: r
+        }), t[11] = r, t[12] = n, t[13] = f) : f = t[13];
+        let p;
+        return t[14] !== d || t[15] !== f ? (p = (0, $.jsxs)(`div`, {
+            className: `space-y-3`,
+            children: [d, f]
+        }), t[14] = d, t[15] = f, t[16] = p) : p = t[16], p
+    }, PC = e => {
+        "use forget";
+        let t = (0, jC.c)(184),
+            {
+                feedId: n,
+                configured: r
+            } = e,
+            i = be(),
+            [a, o] = (0, Q.useState)(`password`),
+            s;
+        t[0] === i ? s = t[1] : (s = i.formatMessage({
+            id: `commerceSettingsPage.merchantSftpAuth.label`,
+            defaultMessage: `SFTP login method`
+        }), t[0] = i, t[1] = s);
+        let c = s,
+            l;
+        t[2] === i ? l = t[3] : (l = i.formatMessage({
+            id: `commerceSettingsPage.merchantSftpAuth.description`,
+            defaultMessage: `Choose how this merchant will authenticate when uploading feed files.`
+        }), t[2] = i, t[3] = l);
+        let u = l,
+            d;
+        t[4] === i ? d = t[5] : (d = i.formatMessage({
+            id: `commerceSettingsPage.merchantSftpAuth.option.password`,
+            defaultMessage: `Username/password`
+        }), t[4] = i, t[5] = d);
+        let f = d,
+            m;
+        t[6] === i ? m = t[7] : (m = i.formatMessage({
+            id: `commerceSettingsPage.merchantSftpAuth.option.ssh_key`,
+            defaultMessage: `SSH key`
+        }), t[6] = i, t[7] = m);
+        let h = m,
+            [g, _] = (0, Q.useState)(null),
+            [v, y] = (0, Q.useState)(r),
+            [b, x] = (0, Q.useState)(null),
+            [S, C] = (0, Q.useState)(!1),
+            [w, te] = (0, Q.useState)(!1),
+            [ne, T] = (0, Q.useState)(null),
+            [E, ie] = (0, Q.useState)(null),
+            [O, ae] = (0, Q.useState)(null),
+            [oe, ce] = (0, Q.useState)(``),
+            [k, A] = (0, Q.useState)(!1),
+            [le, ue] = (0, Q.useState)(null),
+            j;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (j = {
+            host: null,
+            username: null,
+            rootPath: null
+        }, t[8] = j) : j = t[8];
+        let [de, fe] = (0, Q.useState)(j), pe;
+        t[9] === i ? pe = t[10] : (pe = i.formatMessage({
+            id: `commerceSettingsPage.sftpSectionNote`,
+            defaultMessage: `Passwords are shown once when generated. Copy them immediately.`
+        }), t[9] = i, t[10] = pe);
+        let M = pe,
+            me;
+        t[11] === i ? me = t[12] : (me = i.formatMessage({
+            id: `commerceSettingsPage.sftpSectionIsolationNote`,
+            defaultMessage: `Access is scoped to your dedicated SFTP container. You can only read or write files within it.`
+        }), t[11] = i, t[12] = me);
+        let he = me,
+            ge;
+        t[13] === i ? ge = t[14] : (ge = i.formatMessage({
+            id: `commerceSettingsPage.sftpUploadGuidance`,
+            defaultMessage: `Upload files to your SFTP root folder, without subfolders.`
+        }), t[13] = i, t[14] = ge);
+        let _e = ge,
+            ve;
+        t[15] === i ? ve = t[16] : (ve = i.formatMessage({
+            id: `commerceSettingsPage.sftpConnectionStepsTitle`,
+            defaultMessage: `Connect in three steps`
+        }), t[15] = i, t[16] = ve);
+        let ye = ve,
+            xe = i.formatMessage({
+                id: `commerceSettingsPage.sftpConnectionStepOne`,
+                defaultMessage: `Copy the host, username, and root path shown here.`
+            }),
+            Se = i.formatMessage({
+                id: `commerceSettingsPage.sftpConnectionStepTwo`,
+                defaultMessage: `Generate a password here, then save it in your SFTP client.`
+            }),
+            Ce = i.formatMessage({
+                id: `commerceSettingsPage.sftpConnectionStepThree`,
+                defaultMessage: `Connect and upload to the root path using a flat folder structure.`
+            }),
+            we = i.formatMessage({
+                id: `commerceSettingsPage.sftpHostLabel`,
+                defaultMessage: `Host`
+            }),
+            Te = i.formatMessage({
+                id: `commerceSettingsPage.sftpUsernameLabel`,
+                defaultMessage: `Username`
+            }),
+            Ee = i.formatMessage({
+                id: `commerceSettingsPage.sftpRootPathLabel`,
+                defaultMessage: `Upload path`
+            }),
+            De = i.formatMessage({
+                id: `commerceSettingsPage.sftpPortLabel`,
+                defaultMessage: `Port`
+            }),
+            Oe = i.formatMessage({
+                id: `commerceSettingsPage.sftpUnavailableLabel`,
+                defaultMessage: `Not available yet`
+            }),
+            ke;
+        t[17] === i ? ke = t[18] : (ke = i.formatMessage({
+            id: `commerceSettingsPage.sftpLoadingLabel`,
+            defaultMessage: `Loading SFTP details…`
+        }), t[17] = i, t[18] = ke);
+        let Ae = ke,
+            je;
+        t[19] === i ? je = t[20] : (je = i.formatMessage({
+            id: `commerceSettingsPage.sftpUnavailableMessage`,
+            defaultMessage: `SFTP is currently unavailable. Your merchant is saved, and you can still upload files or use a hosted URL. Try again later.`
+        }), t[19] = i, t[20] = je);
+        let N = je,
+            Me;
+        t[21] === i ? Me = t[22] : (Me = i.formatMessage({
+            id: `commerceSettingsPage.sftpAdminRequiredMessage`,
+            defaultMessage: `Only workspace admins and owners can manage SFTP access. Contact a workspace admin for help.`
+        }), t[21] = i, t[22] = Me);
+        let Fe = Me,
+            Ie;
+        t[23] === i ? Ie = t[24] : (Ie = i.formatMessage({
+            id: `commerceSettingsPage.sftpMissingMerchantLabel`,
+            defaultMessage: `Select a merchant above to load SFTP details.`
+        }), t[23] = i, t[24] = Ie);
+        let Le = Ie,
+            Re;
+        t[25] === i ? Re = t[26] : (Re = i.formatMessage({
+            id: `commerceSettingsPage.sftpPasswordTitle`,
+            defaultMessage: `Generate password`
+        }), t[25] = i, t[26] = Re);
+        let ze = Re,
+            Be;
+        t[27] === i ? Be = t[28] : (Be = i.formatMessage({
+            id: `commerceSettingsPage.sftpPasswordDescription`,
+            defaultMessage: `Generate a password for SFTP access. You will only see it once.`
+        }), t[27] = i, t[28] = Be);
+        let Ve = Be,
+            He;
+        t[29] === i ? He = t[30] : (He = i.formatMessage({
+            id: `commerceSettingsPage.sftpGeneratedPasswordLabel`,
+            defaultMessage: `Password`
+        }), t[29] = i, t[30] = He);
+        let Ue = He,
+            We;
+        t[31] === i ? We = t[32] : (We = i.formatMessage({
+            id: `commerceSettingsPage.sftpGeneratedPasswordNote`,
+            defaultMessage: `Copy this password now. It will not be shown again.`
+        }), t[31] = i, t[32] = We);
+        let Ge = We,
+            Ke;
+        t[33] === i ? Ke = t[34] : (Ke = i.formatMessage({
+            id: `commerceSettingsPage.sftpPasswordSubmitLabel`,
+            defaultMessage: `Generate password`
+        }), t[33] = i, t[34] = Ke);
+        let qe = Ke,
+            Je;
+        t[35] === i ? Je = t[36] : (Je = i.formatMessage({
+            id: `commerceSettingsPage.sftpPasswordSubmittingLabel`,
+            defaultMessage: `Generating...`
+        }), t[35] = i, t[36] = Je);
+        let Ye = Je,
+            Xe;
+        t[37] === i ? Xe = t[38] : (Xe = i.formatMessage({
+            id: `commerceSettingsPage.sftpPasswordMissingMerchantMessage`,
+            defaultMessage: `Select a merchant to generate a password.`
+        }), t[37] = i, t[38] = Xe);
+        let Ze = Xe,
+            Qe;
+        t[39] === i ? Qe = t[40] : (Qe = i.formatMessage({
+            id: `commerceSettingsPage.sftpPasswordSuccessMessage`,
+            defaultMessage: `Password generated. Copy and store it securely.`
+        }), t[39] = i, t[40] = Qe);
+        let $e = Qe,
+            et;
+        t[41] === i ? et = t[42] : (et = i.formatMessage({
+            id: `commerceSettingsPage.sftpPasswordErrorMessage`,
+            defaultMessage: `Unable to generate the password. Please try again.`
+        }), t[41] = i, t[42] = et);
+        let tt = et,
+            nt;
+        t[43] === i ? nt = t[44] : (nt = i.formatMessage({
+            id: `commerceSettingsPage.sftpPasswordNetworkErrorMessage`,
+            defaultMessage: `Network error while saving the password. Check your connection and try again.`
+        }), t[43] = i, t[44] = nt);
+        let rt = nt,
+            it;
+        t[45] === i ? it = t[46] : (it = i.formatMessage({
+            id: `commerceSettingsPage.sftpPasswordRateLimitMessage`,
+            defaultMessage: `Too many attempts. Please wait a moment and try again.`
+        }), t[45] = i, t[46] = it);
+        let at = it,
+            ot;
+        t[47] === i ? ot = t[48] : (ot = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKeys.title`,
+            defaultMessage: `Set SSH public keys`
+        }), t[47] = i, t[48] = ot);
+        let st = ot,
+            ct;
+        t[49] === i ? ct = t[50] : (ct = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKeys.replacement_description`,
+            defaultMessage: `Paste up to 10 OpenSSH public keys, one per line. Saving replaces all existing keys and disables password authentication. Include every key that should retain access.`
+        }), t[49] = i, t[50] = ct);
+        let lt = ct,
+            ut;
+        t[51] === i ? ut = t[52] : (ut = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKeys.public_keys.label`,
+            defaultMessage: `SSH public keys`
+        }), t[51] = i, t[52] = ut);
+        let dt = ut,
+            ft;
+        t[53] === i ? ft = t[54] : (ft = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKey.public_key.placeholder`,
+            defaultMessage: `ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQ...`
+        }), t[53] = i, t[54] = ft);
+        let pt = ft,
+            mt;
+        t[55] === i ? mt = t[56] : (mt = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKeys.public_keys.help_text`,
+            defaultMessage: `Paste up to 10 public keys, one per line. Keep the matching private keys in your SFTP clients.`
+        }), t[55] = i, t[56] = mt);
+        let ht = mt,
+            gt;
+        t[57] === i ? gt = t[58] : (gt = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKeys.replace.label`,
+            defaultMessage: `Replace SSH keys`
+        }), t[57] = i, t[58] = gt);
+        let _t = gt,
+            vt;
+        t[59] === i ? vt = t[60] : (vt = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKey.submit.loading_label`,
+            defaultMessage: `Saving...`
+        }), t[59] = i, t[60] = vt);
+        let yt = vt,
+            bt;
+        t[61] === i ? bt = t[62] : (bt = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKey.error.missing_merchant`,
+            defaultMessage: `Select a merchant to save an SSH key.`
+        }), t[61] = i, t[62] = bt);
+        let xt = bt,
+            St;
+        t[63] === i ? St = t[64] : (St = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKey.error.missing_key`,
+            defaultMessage: `Paste an SSH public key to switch authentication.`
+        }), t[63] = i, t[64] = St);
+        let Ct = St,
+            wt;
+        t[65] === i ? wt = t[66] : (wt = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKeys.success`,
+            defaultMessage: `SSH public keys saved. Use a matching private key to connect.`
+        }), t[65] = i, t[66] = wt);
+        let Tt = wt,
+            Et;
+        t[67] === i ? Et = t[68] : (Et = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKey.error.generic`,
+            defaultMessage: `Unable to save the SSH key. Please try again.`
+        }), t[67] = i, t[68] = Et);
+        let Dt = Et,
+            Ot;
+        t[69] === i ? Ot = t[70] : (Ot = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKey.error.network`,
+            defaultMessage: `Network error while saving the SSH key. Check your connection and try again.`
+        }), t[69] = i, t[70] = Ot);
+        let kt = Ot,
+            At;
+        t[71] === i ? At = t[72] : (At = i.formatMessage({
+            id: `commerceSettingsPage.sftpSshKey.error.rate_limited`,
+            defaultMessage: `Too many attempts. Please wait a moment and try again.`
+        }), t[71] = i, t[72] = At);
+        let jt = At,
+            Mt;
+        t[73] === i ? Mt = t[74] : (Mt = i.formatMessage({
+            id: `commerceSettingsPage.sftpCopyLabel`,
+            defaultMessage: `Copy`
+        }), t[73] = i, t[74] = Mt);
+        let P = Mt,
+            Nt = e => i.formatMessage({
+                id: `commerceSettingsPage.sftpConnectionStepNumber`,
+                defaultMessage: `{stepNumber}.`
+            }, {
+                stepNumber: e + 1
+            }),
+            F;
+        t[75] !== n || t[76] !== Fe || t[77] !== N ? (F = () => Kb({
+            feedId: n
+        }).then(e => {
+            x(null), C(!1), _(e), y(!1)
+        }, e => {
+            _(null);
+            let t = DC(e);
+            C(t), x(t ? Fe : N), y(!1)
+        }), t[75] = n, t[76] = Fe, t[77] = N, t[78] = F) : F = t[78];
+        let Pt = F,
+            Ft, It;
+        t[79] !== r || t[80] !== Pt ? (Ft = () => {
+            r && Pt()
+        }, It = [r, Pt], t[79] = r, t[80] = Pt, t[81] = Ft, t[82] = It) : (Ft = t[81], It = t[82]), (0, Q.useEffect)(Ft, It);
+        let Lt = !!g && !v && !b,
+            Rt = [{
+                id: `host`,
+                label: we,
+                value: g?.host ?? Oe,
+                canCopy: Lt && !!g?.host,
+                copyStatus: de.host
+            }, {
+                id: `username`,
+                label: Te,
+                value: g?.username ?? Oe,
+                canCopy: Lt && !!g?.username,
+                copyStatus: de.username
+            }, {
+                id: `root-path`,
+                label: Ee,
+                value: g?.root_path ?? Oe,
+                canCopy: Lt && !!g?.root_path,
+                copyStatus: de.rootPath
+            }, {
+                id: `port`,
+                label: De,
+                value: g ? String(g.port) : Oe,
+                canCopy: !1,
+                copyStatus: null
+            }],
+            zt = (e, t) => {
+                fe(n => ({
+                    ...n,
+                    [e]: t
+                }))
+            },
+            Bt = async (e, t) => {
+                if (e) {
+                    zt(t, null);
+                    try {
+                        await navigator.clipboard.writeText(e), zt(t, `success`)
+                    } catch {
+                        zt(t, `error`)
+                    }
+                    window.setTimeout(() => {
+                        zt(t, null)
+                    }, 2e3)
+                }
+            };
+        g?.host;
+        let Vt = async e => {
+            e.currentTarget.blur(), await Bt(g?.host, `host`)
+        };
+        g?.username;
+        let Ht = async e => {
+            e.currentTarget.blur(), await Bt(g?.username, `username`)
+        };
+        g?.root_path;
+        let Ut = async e => {
+            e.currentTarget.blur(), await Bt(g?.root_path, `rootPath`)
+        }, Wt = [{
+            ...Rt[0],
+            onCopy: Vt
+        }, {
+            ...Rt[1],
+            onCopy: Ht
+        }, {
+            ...Rt[2],
+            onCopy: Ut
+        }, {
+            ...Rt[3],
+            onCopy: AC
+        }], Gt = e => (0, $.jsxs)(`div`, {
+            className: `border-token-border-light group flex items-center justify-between gap-4 border-b py-3 last:border-b-0`,
+            children: [(0, $.jsx)(`span`, {
+                className: `text-token-text-secondary text-sm`,
+                children: e.label
+            }), (0, $.jsxs)(`div`, {
+                className: `flex items-center gap-3`,
+                children: [(0, $.jsx)(`span`, {
+                    className: `text-token-text-primary text-sm font-medium`,
+                    children: e.value
+                }), e.canCopy ? (0, $.jsx)(ee, {
+                    onClick: e.onCopy,
+                    type: `button`,
+                    color: `ghost`,
+                    size: `small`,
+                    label: P,
+                    icon: e.copyStatus === `success` ? Pe : Ne,
+                    className: `opacity-0 transition-opacity group-focus-within:opacity-100 group-hover:opacity-100 focus-visible:opacity-100`,
+                    children: (0, $.jsx)(`span`, {
+                        className: `sr-only`,
+                        children: P
+                    })
+                }) : null]
+            })]
+        }, e.id), Kt = !n || v || S || w || k, qt;
+        t[83] !== n || t[84] !== Kt || t[85] !== Pt || t[86] !== Fe || t[87] !== N || t[88] !== tt || t[89] !== Ze || t[90] !== rt || t[91] !== at || t[92] !== $e ? (qt = async () => {
+            if (Kt) return;
+            let e = n.trim();
+            if (!e) {
+                ie({
+                    tone: `error`,
+                    text: Ze
+                });
+                return
+            }
+            te(!0), ie(null), T(null), ae(null);
+            try {
+                let t = await qb({
+                    feedId: e
+                });
+                if (!t.password) {
+                    ie({
+                        tone: `error`,
+                        text: tt
+                    }), te(!1);
+                    return
+                }
+                T(t.password), ie({
+                    tone: `success`,
+                    text: $e
+                }), y(!0), await Pt(), te(!1)
+            } catch (e) {
+                let t = e,
+                    n = DC(t);
+                n && (C(!0), _(null), x(Fe));
+                let r = n ? Fe : t instanceof p && t.status >= 500 ? N : D(t) ? rt : t instanceof p && t.status === 429 ? at : re(t) || tt;
+                ie({
+                    tone: `error`,
+                    text: r
+                }), te(!1)
+            }
+        }, t[83] = n, t[84] = Kt, t[85] = Pt, t[86] = Fe, t[87] = N, t[88] = tt, t[89] = Ze, t[90] = rt, t[91] = at, t[92] = $e, t[93] = qt) : qt = t[93];
+        let Jt = qt,
+            Yt;
+        t[94] === ne ? Yt = t[95] : (Yt = async e => {
+            if (e.currentTarget.blur(), ne) {
+                ae(null);
+                try {
+                    await navigator.clipboard.writeText(ne), ae(`success`)
+                } catch {
+                    ae(`error`)
+                }
+                window.setTimeout(() => {
+                    ae(null)
+                }, 2e3)
+            }
+        }, t[94] = ne, t[95] = Yt);
+        let Xt = Yt,
+            Zt;
+        t[96] === Symbol.for(`react.memo_cache_sentinel`) ? (Zt = e => {
+            ce(e.target.value), ue(null)
+        }, t[96] = Zt) : Zt = t[96];
+        let Qt = Zt,
+            $t;
+        t[97] !== n || t[98] !== Kt || t[99] !== Pt || t[100] !== Fe || t[101] !== N || t[102] !== Dt || t[103] !== Ct || t[104] !== xt || t[105] !== kt || t[106] !== jt || t[107] !== Tt || t[108] !== oe ? ($t = async () => {
+            if (Kt) return;
+            let e = n.trim();
+            if (!e) {
+                ue({
+                    tone: `error`,
+                    text: xt
+                });
+                return
+            }
+            let t = oe.trim();
+            if (!t) {
+                ue({
+                    tone: `error`,
+                    text: Ct
+                });
+                return
+            }
+            A(!0), ue(null), T(null), ae(null);
+            try {
+                await Jb({
+                    feedId: e
+                }, t), ce(``), ue({
+                    tone: `success`,
+                    text: Tt
+                }), y(!0), await Pt(), A(!1)
+            } catch (e) {
+                let t = e,
+                    n = DC(t);
+                n && (C(!0), _(null), x(Fe));
+                let r = n ? Fe : t instanceof p && t.status >= 500 ? N : D(t) ? kt : t instanceof p && t.status === 429 ? jt : re(t) || Dt;
+                ue({
+                    tone: `error`,
+                    text: r
+                }), A(!1)
+            }
+        }, t[97] = n, t[98] = Kt, t[99] = Pt, t[100] = Fe, t[101] = N, t[102] = Dt, t[103] = Ct, t[104] = xt, t[105] = kt, t[106] = jt, t[107] = Tt, t[108] = oe, t[109] = $t) : $t = t[109];
+        let en = $t,
+            tn = E?.tone === `success` ? `text-green-600` : `text-red-600`,
+            nn = le?.tone === `success` ? `text-green-600` : `text-red-600`,
+            rn = !!g?.root_path && !v && !b,
+            an = !!g && !v && !b,
+            on = [xe, Se, Ce],
+            sn = (e, t) => (0, $.jsxs)(`li`, {
+                className: `text-token-text-secondary text-xs`,
+                children: [(0, $.jsx)(`span`, {
+                    className: `text-token-text-secondary me-1 font-semibold`,
+                    children: Nt(t)
+                }), e]
+            }, `${t}-${e}`),
+            cn = (v || b || g || !n) && (0, $.jsxs)(`div`, {
+                className: `border-token-border-light rounded-lg border px-4 py-2`,
+                children: [v ? (0, $.jsx)(`p`, {
+                    className: `text-token-text-secondary py-3 text-sm`,
+                    children: Ae
+                }) : null, b || !n ? (0, $.jsx)(`p`, {
+                    className: `text-token-text-secondary py-3 text-sm`,
+                    children: b || Le
+                }) : null, g && !v && !b ? Wt.map(Gt) : null]
+            }),
+            ln;
+        t[110] !== he || t[111] !== rn ? (ln = rn ? (0, $.jsx)(`p`, {
+            className: `text-token-text-secondary text-xs`,
+            children: he
+        }) : null, t[110] = he, t[111] = rn, t[112] = ln) : ln = t[112];
+        let un;
+        t[113] !== _e || t[114] !== an ? (un = an ? (0, $.jsx)(`p`, {
+            className: `text-token-text-secondary text-xs`,
+            children: _e
+        }) : null, t[113] = _e, t[114] = an, t[115] = un) : un = t[115];
+        let dn = an ? (0, $.jsxs)(`div`, {
+                className: `border-token-border-light bg-token-bg-secondary/40 rounded-lg border px-3 py-2`,
+                children: [(0, $.jsx)(`p`, {
+                    className: `text-token-text-primary text-xs font-semibold`,
+                    children: ye
+                }), (0, $.jsx)(`ol`, {
+                    className: `mt-2 space-y-1`,
+                    children: on.map(sn)
+                })]
+            }) : null,
+            fn;
+        t[116] === c ? fn = t[117] : (fn = (0, $.jsx)(`div`, {
+            className: `text-token-text-primary text-sm font-medium`,
+            children: c
+        }), t[116] = c, t[117] = fn);
+        let pn;
+        t[118] === u ? pn = t[119] : (pn = (0, $.jsx)(`p`, {
+            className: `text-token-text-secondary mt-1 text-xs`,
+            children: u
+        }), t[118] = u, t[119] = pn);
+        let mn;
+        t[120] !== fn || t[121] !== pn ? (mn = (0, $.jsxs)(`div`, {
+            children: [fn, pn]
+        }), t[120] = fn, t[121] = pn, t[122] = mn) : mn = t[122];
+        let hn = a === `password`,
+            gn = a === `password` ? `bg-token-text-primary text-token-bg-primary` : `text-token-text-secondary hover:text-token-text-primary`,
+            _n;
+        t[123] === gn ? _n = t[124] : (_n = se(`interactive-button rounded px-3 py-1.5 text-sm font-medium`, gn), t[123] = gn, t[124] = _n);
+        let vn;
+        t[125] === Symbol.for(`react.memo_cache_sentinel`) ? (vn = () => o(`password`), t[125] = vn) : vn = t[125];
+        let yn = w || k,
+            bn;
+        t[126] !== f || t[127] !== hn || t[128] !== _n || t[129] !== yn ? (bn = (0, $.jsx)(`button`, {
+            type: `button`,
+            role: `radio`,
+            "aria-checked": hn,
+            className: _n,
+            onClick: vn,
+            disabled: yn,
+            children: f
+        }), t[126] = f, t[127] = hn, t[128] = _n, t[129] = yn, t[130] = bn) : bn = t[130];
+        let xn = a === `ssh_key`,
+            Sn = a === `ssh_key` ? `bg-token-text-primary text-token-bg-primary` : `text-token-text-secondary hover:text-token-text-primary`,
+            Cn;
+        t[131] === Sn ? Cn = t[132] : (Cn = se(`interactive-button rounded px-3 py-1.5 text-sm font-medium`, Sn), t[131] = Sn, t[132] = Cn);
+        let wn;
+        t[133] === Symbol.for(`react.memo_cache_sentinel`) ? (wn = () => o(`ssh_key`), t[133] = wn) : wn = t[133];
+        let Tn = w || k,
+            En;
+        t[134] !== h || t[135] !== xn || t[136] !== Cn || t[137] !== Tn ? (En = (0, $.jsx)(`button`, {
+            type: `button`,
+            role: `radio`,
+            "aria-checked": xn,
+            className: Cn,
+            onClick: wn,
+            disabled: Tn,
+            children: h
+        }), t[134] = h, t[135] = xn, t[136] = Cn, t[137] = Tn, t[138] = En) : En = t[138];
+        let I;
+        t[139] !== c || t[140] !== bn || t[141] !== En ? (I = (0, $.jsxs)(`div`, {
+            role: `radiogroup`,
+            "aria-label": c,
+            className: `border-token-border-light inline-flex rounded-md border p-0.5`,
+            children: [bn, En]
+        }), t[139] = c, t[140] = bn, t[141] = En, t[142] = I) : I = t[142];
+        let Dn;
+        t[143] !== mn || t[144] !== I ? (Dn = (0, $.jsxs)(`div`, {
+            className: `space-y-2`,
+            children: [mn, I]
+        }), t[143] = mn, t[144] = I, t[145] = Dn) : Dn = t[145];
+        let On;
+        t[146] !== ne || t[147] !== Xt || t[148] !== Jt || t[149] !== en || t[150] !== Qt || t[151] !== w || t[152] !== Kt || t[153] !== k || t[154] !== O || t[155] !== E || t[156] !== tn || t[157] !== a || t[158] !== P || t[159] !== Ue || t[160] !== Ge || t[161] !== M || t[162] !== Ve || t[163] !== qe || t[164] !== Ye || t[165] !== ze || t[166] !== lt || t[167] !== _t || t[168] !== yt || t[169] !== st || t[170] !== ht || t[171] !== dt || t[172] !== pt || t[173] !== le || t[174] !== nn || t[175] !== oe ? (On = a === `password` ? (0, $.jsxs)($.Fragment, {
+            children: [(0, $.jsx)(`p`, {
+                className: `text-token-text-secondary text-xs`,
+                children: M
+            }), (0, $.jsxs)(`div`, {
+                className: `border-token-border-light mt-4 border-t pt-4`,
+                children: [(0, $.jsxs)(`div`, {
+                    className: `space-y-1`,
+                    children: [(0, $.jsx)(`h3`, {
+                        className: `text-token-text-primary text-sm font-semibold`,
+                        children: ze
+                    }), (0, $.jsx)(`p`, {
+                        className: `text-token-text-secondary text-xs`,
+                        children: Ve
+                    })]
+                }), (0, $.jsxs)(`div`, {
+                    className: `mt-4 flex flex-wrap items-center gap-3`,
+                    children: [(0, $.jsx)(ee, {
+                        onClick: Jt,
+                        disabled: Kt,
+                        type: `button`,
+                        children: w ? Ye : qe
+                    }), E ? (0, $.jsx)(`span`, {
+                        className: se(`text-sm`, tn),
+                        children: E.text
+                    }) : null]
+                }), ne ? (0, $.jsxs)(`div`, {
+                    className: `border-token-border-light bg-token-bg-secondary/40 mt-4 rounded-lg border px-3 py-3`,
+                    children: [(0, $.jsxs)(`div`, {
+                        className: `flex items-center justify-between gap-3`,
+                        children: [(0, $.jsx)(`span`, {
+                            className: `text-token-text-primary text-sm font-medium`,
+                            children: Ue
+                        }), (0, $.jsx)(ee, {
+                            onClick: Xt,
+                            type: `button`,
+                            color: `ghost`,
+                            size: `small`,
+                            label: P,
+                            icon: O === `success` ? Pe : Ne,
+                            children: (0, $.jsx)(`span`, {
+                                className: `sr-only`,
+                                children: P
+                            })
+                        })]
+                    }), (0, $.jsx)(`div`, {
+                        className: `text-token-text-primary mt-2 font-mono text-sm break-all`,
+                        children: ne
+                    }), (0, $.jsx)(`p`, {
+                        className: `text-token-text-secondary mt-2 text-xs`,
+                        children: Ge
+                    })]
+                }) : null]
+            })]
+        }) : (0, $.jsxs)(`div`, {
+            className: `border-token-border-light mt-4 border-t pt-4`,
+            children: [(0, $.jsxs)(`div`, {
+                className: `space-y-1`,
+                children: [(0, $.jsx)(`h3`, {
+                    className: `text-token-text-primary text-sm font-semibold`,
+                    children: st
+                }), (0, $.jsx)(`p`, {
+                    className: `text-token-text-secondary text-xs`,
+                    children: lt
+                })]
+            }), (0, $.jsxs)(`div`, {
+                className: `mt-3 space-y-1`,
+                children: [(0, $.jsx)(`label`, {
+                    htmlFor: `sftp-ssh-public-key`,
+                    className: `text-token-text-primary block text-sm font-medium`,
+                    children: dt
+                }), (0, $.jsx)(`textarea`, {
+                    id: `sftp-ssh-public-key`,
+                    className: `border-token-border-light bg-token-bg-primary text-token-text-primary min-h-24 w-full rounded-md border px-3 py-2 font-mono text-sm`,
+                    placeholder: pt,
+                    value: oe,
+                    onChange: Qt,
+                    disabled: Kt
+                }), (0, $.jsx)(`p`, {
+                    className: `text-token-text-secondary text-xs`,
+                    children: ht
+                })]
+            }), (0, $.jsxs)(`div`, {
+                className: `mt-3 flex flex-wrap items-center gap-3`,
+                children: [(0, $.jsx)(ee, {
+                    onClick: en,
+                    disabled: Kt,
+                    type: `button`,
+                    children: k ? yt : _t
+                }), le ? (0, $.jsx)(`span`, {
+                    className: se(`text-sm`, nn),
+                    children: le.text
+                }) : null]
+            })]
+        }), t[146] = ne, t[147] = Xt, t[148] = Jt, t[149] = en, t[150] = Qt, t[151] = w, t[152] = Kt, t[153] = k, t[154] = O, t[155] = E, t[156] = tn, t[157] = a, t[158] = P, t[159] = Ue, t[160] = Ge, t[161] = M, t[162] = Ve, t[163] = qe, t[164] = Ye, t[165] = ze, t[166] = lt, t[167] = _t, t[168] = yt, t[169] = st, t[170] = ht, t[171] = dt, t[172] = pt, t[173] = le, t[174] = nn, t[175] = oe, t[176] = On) : On = t[176];
+        let kn;
+        return t[177] !== cn || t[178] !== ln || t[179] !== un || t[180] !== dn || t[181] !== Dn || t[182] !== On ? (kn = (0, $.jsxs)($.Fragment, {
+            children: [cn, ln, un, dn, Dn, On]
+        }), t[177] = cn, t[178] = ln, t[179] = un, t[180] = dn, t[181] = Dn, t[182] = On, t[183] = kn) : kn = t[183], kn
+    }
+}));
+
+function IC(e, t) {
+    return v.safeGet(`/shopping/merchant-agreement/status`, {
+        authOption: i.Required,
+        additionalHeaders: _(e),
+        signal: t
+    })
+}
+
+function LC(e, t, n, r) {
+    return v.safePost(`/shopping/merchant-agreement/domain/accept`, {
+        authOption: i.Required,
+        additionalHeaders: _(e),
+        requestBody: {
+            agreement_version: t,
+            consent_version: n,
+            accepted_terms: !0
+        },
+        disableAutomaticRetry: !0,
+        skipJsonTransform: !1,
+        signal: r
+    })
+}
+var RC = e((() => {
+    u(), te(), f()
+}));
+
+function zC() {
+    return g()?.id
+}
+
+function BC() {
+    return g()?.authUserId
+}
+
+function VC() {
+    return g()?.isPersonalAccount() ?? !1
+}
+
+function HC(e) {
+    return e + 1
+}
+
+function UC(e) {
+    return e + 1
+}
+
+function WC() {
+    return window.location.assign(`/`)
+}
+var GC, KC, qC, JC, YC, XC, ZC = e((() => {
+        GC = ye(), r(), it(), FC(), RC(), a(), O(), KC = n(M()), fe(), qC = A(), JC = () => {
+            "use forget";
+            let e = (0, GC.c)(6),
+                t = C(zC),
+                n = C(BC),
+                r = C(VC);
+            if (!t || !n) {
+                let t;
+                return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, qC.jsx)(YC, {}), e[0] = t) : t = e[0], t
+            }
+            let i = `${t}:${n}`,
+                a;
+            return e[1] !== r || e[2] !== i || e[3] !== n || e[4] !== t ? (a = (0, qC.jsx)(XC, {
+                workspaceId: t,
+                userId: n,
+                isPersonalAccount: r
+            }, i), e[1] = r, e[2] = i, e[3] = n, e[4] = t, e[5] = a) : a = e[5], a
+        }, YC = () => {
+            "use forget";
+            let e = (0, GC.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, qC.jsx)(`div`, {
+                role: `status`,
+                className: `p-6`,
+                children: (0, qC.jsx)(j, {
+                    id: `commerceSettingsPage.agreement.loading`,
+                    defaultMessage: `Checking merchant access…`
+                })
+            }), e[0] = t) : t = e[0], t
+        }, XC = e => {
+            "use forget";
+            let t = (0, GC.c)(31),
+                {
+                    workspaceId: n,
+                    userId: r,
+                    isPersonalAccount: i
+                } = e,
+                [a, o] = (0, KC.useState)(null),
+                [s, c] = (0, KC.useState)(!1),
+                [l, u] = (0, KC.useState)(0),
+                [d, f] = (0, KC.useState)(!1),
+                p = (0, KC.useRef)(null),
+                m;
+            t[0] !== i || t[1] !== r || t[2] !== n ? (m = () => {
+                let e = !0,
+                    t, a = async function() {
+                        if (!e) return;
+                        t?.abort();
+                        let a = new AbortController;
+                        t = a;
+                        try {
+                            let t = await IC(n, a.signal);
+                            if (!e || a.signal.aborted) return;
+                            if (t.workspace_id !== (i ? null : n) || t.user_id !== r || (t.account_id ?? t.workspace_id) !== n) {
+                                o(null), c(!0);
+                                return
+                            }
+                            o(t), c(!1)
+                        } catch {
+                            if (!e || a.signal.aborted) return;
+                            o(null), c(!0)
+                        }
+                    };
+                return a(), window.addEventListener(`focus`, a), () => {
+                    e = !1, t?.abort(), window.removeEventListener(`focus`, a)
+                }
+            }, t[0] = i, t[1] = r, t[2] = n, t[3] = m) : m = t[3];
+            let h;
+            t[4] !== i || t[5] !== l || t[6] !== r || t[7] !== n ? (h = [n, r, i, l], t[4] = i, t[5] = l, t[6] = r, t[7] = n, t[8] = h) : h = t[8], (0, KC.useEffect)(m, h);
+            let g, _;
+            t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (g = () => () => p.current?.abort(), _ = [], t[9] = g, t[10] = _) : (g = t[9], _ = t[10]), (0, KC.useEffect)(g, _);
+            let v;
+            t[11] !== i || t[12] !== a || t[13] !== r || t[14] !== n ? (v = async function(e) {
+                if (e.preventDefault(), a?.access !== `agreement_required` || !a.agreement_version || a.consent_version !== `2026-10-14-commerce-policies` || a.agreement_version !== `2026-06-15` || p.current) return;
+                let t = new AbortController;
+                p.current = t, f(!0), c(!1);
+                try {
+                    let e = await LC(n, a.agreement_version, a.consent_version, t.signal);
+                    if (t.signal.aborted) return;
+                    if (e.workspace_id !== (i ? null : n) || e.user_id !== r || (e.account_id ?? e.workspace_id) !== n) c(!0);
+                    else {
+                        let e = new URL(`https://chatgpt.com/merchants/settings`);
+                        new URLSearchParams(window.location.search).get(`native_mobile_view`) === `true` && e.searchParams.set(`native_mobile_view`, `true`), window.location.assign(e.href);
+                        return
+                    }
+                } catch {
+                    t.signal.aborted || c(!0)
+                }
+                t.signal.aborted || f(!1), p.current === t && (p.current = null)
+            }, t[11] = i, t[12] = a, t[13] = r, t[14] = n, t[15] = v) : v = t[15];
+            let y = v;
+            if (a?.access === `allowed`) {
+                let e;
+                return t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, qC.jsx)(SC, {}), t[16] = e) : e = t[16], e
+            }
+            if (!a && !s) {
+                let e;
+                return t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, qC.jsx)(YC, {}), t[17] = e) : e = t[17], e
+            }
+            let b;
+            t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (b = (0, qC.jsx)(`h1`, {
+                className: `text-2xl font-semibold`,
+                children: (0, qC.jsx)(j, {
+                    id: `commerceSettingsPage.agreement.title`,
+                    defaultMessage: `Set up merchant access`
+                })
+            }), t[18] = b) : b = t[18];
+            let x;
+            t[19] === s ? x = t[20] : (x = s && (0, qC.jsxs)(`div`, {
+                role: `alert`,
+                children: [(0, qC.jsx)(j, {
+                    id: `commerceSettingsPage.agreement.acceptanceError`,
+                    defaultMessage: `We couldn’t complete that request. Please try again.`
+                }), (0, qC.jsx)(ee, {
+                    type: `button`,
+                    onClick: () => u(HC),
+                    children: (0, qC.jsx)(j, {
+                        id: `commerceSettingsPage.agreement.retry`,
+                        defaultMessage: `Try again`
+                    })
+                })]
+            }), t[19] = s, t[20] = x);
+            let S;
+            t[21] === a?.access ? S = t[22] : (S = a?.access === `denied` && (0, qC.jsx)(`p`, {
+                children: (0, qC.jsx)(j, {
+                    id: `commerceSettingsPage.agreement.accountDenied`,
+                    defaultMessage: `Merchant settings aren’t available for this account.`
+                })
+            }), t[21] = a?.access, t[22] = S);
+            let C;
+            t[23] !== y || t[24] !== a || t[25] !== d ? (C = a?.access === `agreement_required` && (0, qC.jsx)(qC.Fragment, {
+                children: a.consent_version !== `2026-10-14-commerce-policies` || a.agreement_version !== `2026-06-15` ? (0, qC.jsxs)(qC.Fragment, {
+                    children: [(0, qC.jsx)(`p`, {
+                        children: (0, qC.jsx)(j, {
+                            id: `commerceSettingsPage.agreement.acceptanceUnavailable`,
+                            defaultMessage: `Agreement acceptance isn’t available right now. Please refresh or contact support.`
+                        })
+                    }), (0, qC.jsx)(ee, {
+                        type: `button`,
+                        onClick: () => u(UC),
+                        children: (0, qC.jsx)(j, {
+                            id: `commerceSettingsPage.agreement.refresh`,
+                            defaultMessage: `Refresh status`
+                        })
+                    })]
+                }) : (0, qC.jsx)(at, {
+                    submitting: d,
+                    onSubmit: y,
+                    onBack: WC
+                })
+            }), t[23] = y, t[24] = a, t[25] = d, t[26] = C) : C = t[26];
+            let w;
+            return t[27] !== x || t[28] !== S || t[29] !== C ? (w = (0, qC.jsx)(`div`, {
+                className: `flex min-h-full items-center justify-center px-6 py-12`,
+                children: (0, qC.jsxs)(`div`, {
+                    className: `flex w-full max-w-3xl flex-col gap-8`,
+                    children: [b, x, S, C]
+                })
+            }), t[27] = x, t[28] = S, t[29] = C, t[30] = w) : w = t[30], w
+        }
+    })),
+    QC, $C, ew, tw, nw = e((() => {
+        ce(), QC = ye(), qe(), Ve(), FC(), ZC(), He(), oe(), Te(), We(), c(), $C = A(), ew = ({
+            serverLoader: e
+        }) => e(), tw = pe(function() {
+            "use forget";
+            let e = (0, QC.c)(13),
+                {
+                    isMerchantSelfServeEnabled: t
+                } = k(),
+                n;
+            e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (n = E(), e[0] = n) : n = e[0];
+            let r = n,
+                i = ge(),
+                a;
+            e[1] === i.search ? a = e[2] : (a = new URLSearchParams(i.search).get(`native_mobile_view`), e[1] = i.search, e[2] = a);
+            let o = a === `true`,
+                s;
+            e[3] === o ? s = e[4] : (s = d() && !o, e[3] = o, e[4] = s);
+            let c = s,
+                l;
+            e[5] === c ? l = e[6] : (l = c && (0, $C.jsx)(xe.Navbar, {
+                children: (0, $C.jsx)(Je, {
+                    children: (0, $C.jsx)(Be, {
+                        navHeader: (0, $C.jsx)(Ue, {}),
+                        children: (0, $C.jsx)(Ge, {
+                            isProjectsEnabled: r
+                        })
+                    })
+                })
+            }), e[5] = c, e[6] = l);
+            let u;
+            e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, $C.jsx)(Ke, {
+                page: `chat`
+            }), e[7] = u) : u = e[7];
+            let f;
+            e[8] === t ? f = e[9] : (f = t ? (0, $C.jsx)(JC, {}) : (0, $C.jsx)(SC, {}), e[8] = t, e[9] = f);
+            let p;
+            return e[10] !== l || e[11] !== f ? (p = (0, $C.jsxs)(xe, {
+                children: [l, u, f]
+            }), e[10] = l, e[11] = f, e[12] = p) : p = e[12], p
+        })
+    }));
+e((() => {
+    nw()
+}))();
+export {
+    ew as clientLoader, tw as
+    default
+};
+//# sourceMappingURL=merchants.settings-ish685ok.js.map

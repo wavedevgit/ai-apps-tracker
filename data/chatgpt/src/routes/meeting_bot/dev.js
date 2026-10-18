@@ -1,0 +1,29 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $ as t,
+    At as n,
+    Bn as r,
+    Ut as i,
+    wn as a
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+var o, s, c = e((() => {
+    t(), o = a(), r(), s = i(function() {
+        "use forget";
+        (0, o.c)(7);
+        let {
+            grant: e,
+            error: t
+        } = n();
+        return null
+    })
+}));
+e((() => {
+    c()
+}))();
+export {
+    s as
+    default
+};
+//# sourceMappingURL=meeting_bot.dev-bdanpldi.js.map

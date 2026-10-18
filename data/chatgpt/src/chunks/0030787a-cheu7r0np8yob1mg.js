@@ -1,0 +1,169 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    J$ as n,
+    Nrt as r,
+    Prt as i,
+    a7 as a,
+    l7 as o,
+    pnt as s,
+    u1 as c,
+    ynt as l
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    Ln as u,
+    Rn as d,
+    Vn as f,
+    p,
+    s as m,
+    wn as h
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+var g, _, v, y, b, x = e((() => {
+    c(), l(), d(), g = `https://chatgpt.com`, _ = u({
+        description: {
+            id: `healthcareVerificationPage.existingWorkspaceDescription`,
+            defaultMessage: `You already have a ChatGPT for Clinicians workspace. Continue to ChatGPT to use it.`
+        },
+        cta: {
+            id: `healthcareVerificationPage.existingWorkspaceCta`,
+            defaultMessage: `You are verified! Continue to ChatGPT`
+        }
+    }), v = e => e.name === `verified` || e.name === `allowlisted`, y = ({
+        canCreateQuorumWorkspace: e,
+        hasExistingQuorumWorkspace: t,
+        hasRecoverableProvisionalWorkspace: n,
+        isMultipleQuorumWorkspaceAllowed: r
+    }) => e && t && !n && !r, b = e => {
+        if (!v(e)) return !1;
+        let t = n().data?.accountItems.filter(e => e.isQuorum());
+        return y({
+            canCreateQuorumWorkspace: !0,
+            hasExistingQuorumWorkspace: !!t?.length,
+            hasRecoverableProvisionalWorkspace: t?.some(e => e.isDeferredPersonaVerificationWorkspace && !e.isDeactivated() && e.canAccessWithCurrentSession) ?? !1,
+            isMultipleQuorumWorkspaceAllowed: s(`2369709783`)
+        })
+    }
+}));
+
+function S() {
+    "use forget";
+    let e = (0, w.c)(24),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = i(), e[0] = t) : t = e[0];
+    let n = !t,
+        [r, a] = (0, T.useState)(null),
+        [o, s] = (0, T.useState)(!1),
+        [c, l] = (0, T.useState)(!1),
+        u = (0, T.useRef)(!0),
+        d;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (d = {
+        mutationFn: C,
+        onSuccess: e => {
+            l(!1), a(e.metadata ?? null), s(!0)
+        },
+        onError: () => {
+            a(null), l(!0), s(!0)
+        }
+    }, e[1] = d) : d = e[1];
+    let f = p(d),
+        m, h;
+    e[2] === f ? (m = e[3], h = e[4]) : (m = () => {
+        !n && u.current && (u.current = !1, f.mutate())
+    }, h = [n, f], e[2] = f, e[3] = m, e[4] = h), (0, T.useEffect)(m, h);
+    let g;
+    bb0: {
+        if (n) {
+            let t;
+            e[5] === Symbol.for(`react.memo_cache_sentinel`) ? (t = {
+                name: `logged-out`
+            }, e[5] = t) : t = e[5], g = t;
+            break bb0
+        }
+        if (!o) {
+            let t;
+            e[6] === Symbol.for(`react.memo_cache_sentinel`) ? (t = {
+                name: `loading`
+            }, e[6] = t) : t = e[6], g = t;
+            break bb0
+        }
+        if (c) {
+            let t;
+            e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (t = {
+                name: `refresh-error`
+            }, e[7] = t) : t = e[7], g = t;
+            break bb0
+        }
+        if (!r) {
+            let t;
+            e[8] === Symbol.for(`react.memo_cache_sentinel`) ? (t = {
+                name: `needs-verification`
+            }, e[8] = t) : t = e[8], g = t;
+            break bb0
+        }
+        let t = r.inquiry_id ?? null;
+        if (r.eligibility_source === `allowlist`) {
+            let n;
+            e[9] === t ? n = e[10] : (n = {
+                name: `allowlisted`,
+                inquiryId: t
+            }, e[9] = t, e[10] = n), g = n;
+            break bb0
+        }
+        switch (r.verification_status) {
+            case `verified`: {
+                let n;
+                e[11] === t ? n = e[12] : (n = {
+                    name: `verified`,
+                    inquiryId: t
+                }, e[11] = t, e[12] = n), g = n;
+                break bb0
+            }
+            case `failed`: {
+                let n;
+                e[13] === t ? n = e[14] : (n = {
+                    name: `failed`,
+                    inquiryId: t
+                }, e[13] = t, e[14] = n), g = n;
+                break bb0
+            }
+            case `pending`: {
+                let n = r.npi ?? null,
+                    i = r.deferred_verification ?? !1,
+                    a;
+                e[15] !== t || e[16] !== n || e[17] !== i ? (a = {
+                    name: `pending`,
+                    inquiryId: t,
+                    npi: n,
+                    deferredVerification: i
+                }, e[15] = t, e[16] = n, e[17] = i, e[18] = a) : a = e[18], g = a;
+                break bb0
+            }
+            default: {
+                let t;
+                e[19] === Symbol.for(`react.memo_cache_sentinel`) ? (t = {
+                    name: `needs-verification`
+                }, e[19] = t) : t = e[19], g = t
+            }
+        }
+    }
+    let _ = g,
+        v;
+    return e[20] !== _ || e[21] !== f.isPending || e[22] !== f.mutate ? (v = {
+        enrollmentState: _,
+        refreshEnrollmentStatus: f.mutate,
+        isRefreshing: f.isPending
+    }, e[20] = _, e[21] = f.isPending, e[22] = f.mutate, e[23] = v) : v = e[23], v
+}
+
+function C() {
+    return a.safePost(`/quorum/refresh_enrollment_status`)
+}
+var w, T, E = e((() => {
+    w = h(), r(), o(), m(), T = t(f())
+}));
+export {
+    _ as a, y as c, b as i, S as n, x as o, g as r, v as s, E as t
+};
+//# sourceMappingURL=0030787a-cheu7r0np8yob1mg.js.map

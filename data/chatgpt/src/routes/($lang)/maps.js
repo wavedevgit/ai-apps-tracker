@@ -1,0 +1,38 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $ as t,
+    Bn as n,
+    Ut as r,
+    ut as i,
+    wn as a
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    c as o,
+    s
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+var c, l, u, d, f, p = e((() => {
+    t(), c = a(), s(), l = n(), u = {
+        hasRouteMeta: !0,
+        useScrollRestoration: !0
+    }, d = ({
+        params: {
+            entityId: e
+        },
+        serverLoader: t
+    }) => (e ?? o(), t()), f = r(function() {
+        "use forget";
+        let e = (0, c.c)(1),
+            t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, l.jsx)(i, {}), e[0] = t) : t = e[0], t
+    })
+}));
+e((() => {
+    p()
+}))();
+export {
+    d as clientLoader, f as
+    default, u as handle
+};
+//# sourceMappingURL=(_lang).maps-erhy3y47.js.map

@@ -1,0 +1,309 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    B6 as t,
+    B8 as n,
+    CV as r,
+    Ci as i,
+    Si as a,
+    bi as o,
+    xV as s
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    APt as c,
+    Adt as l,
+    Ddt as u,
+    MPt as d,
+    Mdt as f,
+    NPt as p,
+    O5t as m,
+    OPt as h,
+    Odt as g,
+    dPt as _,
+    fPt as v,
+    jdt as y,
+    kPt as b,
+    kdt as x,
+    tUt as S,
+    v9t as C,
+    w5t as w
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    if as T,
+    of as E,
+    sf as D,
+    tf as O
+} from "./8b34dbc2-gf9wnwcahty27ylx.js";
+
+function k(e, {
+    accountUserId: t,
+    libraryFileId: n,
+    fromFileNames: o,
+    matchAnyFileName: s = !1,
+    toFileName: c,
+    updateArtifactsStore: l = !0
+}) {
+    let u = e => {
+        if (e == null) return e;
+        let t = !1,
+            r = e.pages.map(e => ({
+                ...e,
+                items: e.items.map(e => e.kind !== `file` || e.id !== n || !s && !o.has(e.name) ? e : (t = !0, {
+                    ...e,
+                    name: c
+                }))
+            }));
+        return t ? {
+            ...e,
+            pages: r
+        } : e
+    };
+    e.setQueriesData({
+        queryKey: [i]
+    }, u), e.setQueriesData({
+        queryKey: [a]
+    }, u), e.setQueriesData({
+        queryKey: O(t)
+    }, e => {
+        if (e == null) return e;
+        let t = !1,
+            r = e.pages.map(e => {
+                let r = !1,
+                    i = e.items.map(e => e.availability !== `available` || e.item == null || e.item.id !== n || e.item.file_name === c || !s && !o.has(e.item.file_name) ? e : (t = !0, r = !0, {
+                        ...e,
+                        item: {
+                            ...e.item,
+                            file_name: c
+                        }
+                    }));
+                return r ? {
+                    ...e,
+                    items: i
+                } : e
+            });
+        return t ? {
+            ...e,
+            pages: r
+        } : e
+    }), e.setQueriesData({
+        queryKey: [`gizmo`]
+    }, e => {
+        if (e == null || !Array.isArray(e.files)) return e;
+        let t = !1,
+            i = e.files.map(e => !r(e) || e.library_file_id !== n || e.name === c ? e : (t = !0, {
+                ...e,
+                name: c
+            }));
+        return t ? {
+            ...e,
+            files: i
+        } : e
+    }), l && D.getState().updateArtifactFileName({
+        expectedFileNames: o,
+        fileName: c,
+        libraryFileId: n
+    }), m(n) && _().updateGoogleDriveFileName({
+        fileId: n,
+        fileName: c
+    })
+}
+
+function A(e) {
+    return !!e && typeof e == `object` && `pages` in e
+}
+
+function j(e, t) {
+    return A(e) ? e.pages.some(e => e.items.some(e => `kind` in e ? e.kind === `file` && e.id === t : e.availability === `available` && e.item?.id === t)) : !1
+}
+
+function M(e, t) {
+    if (typeof e != `object` || !e || !(`files` in e)) return !1;
+    let n = e.files;
+    return Array.isArray(n) && n.some(e => typeof e == `object` && !!e && `library_file_id` in e && e.library_file_id === t)
+}
+
+function N(e, t) {
+    let n = O(t);
+    return e[0] === `recall-folder-view` || e[0] === `recall-folder-search` || e[0] === n[0] && e[1] === n[1] && e[2] === n[2]
+}
+
+function P(e, t, n) {
+    return e[0] === `gizmo` && M(t, n)
+}
+async function F(e, t, n) {
+    await e.cancelQueries({
+        predicate: e => N(e.queryKey, n) && j(e.state.data, t) || P(e.queryKey, e.state.data, t)
+    })
+}
+async function I(e, t) {
+    let n = [e.invalidateQueries({
+            predicate: e => N(e.queryKey, t),
+            refetchType: `active`
+        })],
+        r = D.getState();
+    r.initialized && r.viewState.listQuery.search != null && n.push(r.loadList(!0)), await Promise.allSettled(n)
+}
+
+function L({
+    fileName: e,
+    libraryFileId: t,
+    queryClient: n,
+    queue: r
+}) {
+    k(n, {
+        accountUserId: r.accountUserId,
+        libraryFileId: t,
+        fromFileNames: r.knownFileNames,
+        matchAnyFileName: !0,
+        toFileName: e
+    }), b({
+        libraryFileId: t,
+        fileName: e
+    }), r.knownFileNames.add(e), r.latestFileName = e
+}
+
+function R({
+    libraryFileId: e,
+    queue: t
+}) {
+    if (t.inFlight = !1, t.pendingRename != null) {
+        z({
+            libraryFileId: e,
+            queue: t
+        });
+        return
+    }
+    U.get(e) === t && U.delete(e)
+}
+
+function z({
+    libraryFileId: e,
+    queue: t
+}) {
+    t.debounceTimeoutId != null && clearTimeout(t.debounceTimeoutId);
+    let n = t.pendingRename?.debounce === !1 ? 0 : W;
+    t.debounceTimeoutId = setTimeout(() => {
+        if (t.debounceTimeoutId = null, t.inFlight) return;
+        let n = t.pendingRename;
+        if (t.pendingRename = null, n == null) {
+            U.get(e) === t && U.delete(e);
+            return
+        }
+        B({
+            libraryFileId: e,
+            queue: t,
+            rename: n
+        })
+    }, n)
+}
+async function B({
+    libraryFileId: e,
+    queue: t,
+    rename: n
+}) {
+    t.inFlight = !0;
+    try {
+        u(t.accountUserId), await F(n.queryClient, e, t.accountUserId), u(t.accountUserId), await y.rename(e, n.fileName), u(t.accountUserId), t.settledFileName = n.fileName, t.pendingRename ?? (k(n.queryClient, {
+            accountUserId: t.accountUserId,
+            libraryFileId: e,
+            fromFileNames: t.knownFileNames,
+            matchAnyFileName: !0,
+            toFileName: t.latestFileName
+        }), o(), await I(n.queryClient, t.accountUserId), u(t.accountUserId), k(n.queryClient, {
+            accountUserId: t.accountUserId,
+            libraryFileId: e,
+            fromFileNames: t.knownFileNames,
+            matchAnyFileName: !0,
+            toFileName: t.latestFileName,
+            updateArtifactsStore: !D.getState().listLoading
+        }), t.pendingRename ?? d({
+            libraryFileId: e,
+            fileName: t.latestFileName
+        })), n.resolve()
+    } catch (r) {
+        l(t.accountUserId) ? t.latestFileName === n.fileName ? (k(n.queryClient, {
+            accountUserId: t.accountUserId,
+            libraryFileId: e,
+            fromFileNames: t.knownFileNames,
+            toFileName: t.settledFileName
+        }), p({
+            libraryFileId: e,
+            fileName: t.settledFileName
+        }), o(), I(n.queryClient, t.accountUserId), n.reject(r)) : n.resolve() : (n.queryClient.removeQueries({
+            queryKey: O(t.accountUserId)
+        }), n.reject(r))
+    } finally {
+        R({
+            libraryFileId: e,
+            queue: t
+        })
+    }
+}
+
+function V({
+    debounce: e = !0,
+    fileName: t,
+    initialFileName: n,
+    libraryFileId: r,
+    queryClient: i
+}) {
+    let a = g();
+    u(a);
+    let o = U.get(r);
+    if (o == null || o.accountUserId !== a) {
+        let e = h({
+            libraryFileId: r,
+            fileName: n
+        });
+        o = {
+            accountUserId: a,
+            knownFileNames: new Set([n, e]),
+            settledFileName: e,
+            latestFileName: e,
+            inFlight: !1,
+            latestOperation: null,
+            pendingRename: null,
+            debounceTimeoutId: null
+        }, U.set(r, o)
+    }
+    L({
+        fileName: t,
+        libraryFileId: r,
+        queryClient: i,
+        queue: o
+    });
+    let s = new Promise((n, a) => {
+        let s = {
+            debounce: e,
+            fileName: t,
+            queryClient: i,
+            resolve: n,
+            reject: a
+        };
+        o.pendingRename?.resolve(), o.pendingRename = s, z({
+            libraryFileId: r,
+            queue: o
+        })
+    });
+    return o.latestOperation = s, s
+}
+async function H(e) {
+    let t = U.get(e);
+    if (t == null) return;
+    u(t.accountUserId);
+    let r;
+    do t.pendingRename != null && (t.pendingRename.debounce = !1, n(() => {
+        z({
+            libraryFileId: e,
+            queue: t
+        })
+    })), r = t.latestOperation, await r, u(t.accountUserId); while (r !== t.latestOperation)
+}
+var U, W, G = e((() => {
+    C(), c(), s(), f(), v(), w(), T(), S(), E(), x(), t(), U = new Map, W = 750
+}));
+export {
+    G as n, V as r, H as t
+};
+//# sourceMappingURL=1af2f3f4-fnapk7451kpculkp.js.map

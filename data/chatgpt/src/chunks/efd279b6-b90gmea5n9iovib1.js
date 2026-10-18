@@ -1,0 +1,213 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e) {
+    return typeof e == `string` && e.trim().length > 0
+}
+
+function n(e) {
+    return `${v}/${e}`
+}
+
+function r(e) {
+    if (typeof window > `u`) return !1;
+    try {
+        return window.sessionStorage.removeItem(e), !0
+    } catch {
+        return !1
+    }
+}
+
+function i(e) {
+    if (typeof window > `u`) return null;
+    try {
+        let t = window.sessionStorage.getItem(e);
+        if (t == null) return null;
+        try {
+            return JSON.parse(t)
+        } catch {
+            return r(e), null
+        }
+    } catch {
+        return null
+    }
+}
+
+function a(e, t = !1) {
+    try {
+        let n = new URL(e, window.location.origin),
+            r = n.searchParams.getAll(`campaign`),
+            i = n.searchParams.getAll(x),
+            a = n.searchParams.getAll(S),
+            o = a[0];
+        if (n.origin !== window.location.origin || n.pathname !== `/students/claim` || n.hash !== `` || r.length !== 1 || r[0] !== _ || i.length > 1 || a.length > 1 || o != null && o !== C) return null;
+        for (let e of n.searchParams.keys())
+            if (e !== `campaign` && e !== x && e !== S) return null;
+        let s = new URLSearchParams({
+                campaign: _
+            }),
+            c = i[0];
+        if (o != null && s.set(S, o), c != null) {
+            if (!t || c !== `on` && c !== `off`) return null;
+            s.set(x, c)
+        }
+        return `/students/claim?${s.toString()}`
+    } catch {
+        return null
+    }
+}
+
+function o({
+    checkoutSessionId: e,
+    accountId: r,
+    accountUserId: i,
+    returnPath: o,
+    allowPreview: s = !1
+}) {
+    if (typeof window > `u` || !t(e) || !t(r) || !t(i)) return;
+    let c = a(o, s);
+    if (c != null) try {
+        window.sessionStorage.setItem(n(e), JSON.stringify({
+            campaign: _,
+            checkoutSessionId: e,
+            accountId: r,
+            accountUserId: i,
+            returnPath: c
+        }))
+    } catch {}
+}
+
+function s(e, o = !1) {
+    if (typeof window > `u` || !t(e)) return null;
+    let s = n(e),
+        c = i(s);
+    if (typeof c != `object` || !c || !(`campaign` in c) || !(`checkoutSessionId` in c) || !(`accountId` in c) || !(`accountUserId` in c) || !(`returnPath` in c) || c.campaign !== _ || c.checkoutSessionId !== e || typeof c.accountId != `string` || !t(c.accountId) || typeof c.accountUserId != `string` || !t(c.accountUserId) || typeof c.returnPath != `string`) return r(s), null;
+    let l = a(c.returnPath, o);
+    return l == null ? (r(s), null) : {
+        accountId: c.accountId,
+        accountUserId: c.accountUserId,
+        returnPath: l
+    }
+}
+
+function c(e, t = !1) {
+    return s(e, t) != null
+}
+
+function l({
+    checkoutSessionId: e,
+    accountId: n,
+    accountUserId: r,
+    allowPreview: i = !1
+}) {
+    if (!t(n) || !t(r)) return null;
+    let a = s(e, i);
+    return a == null || a.accountId !== n || a.accountUserId !== r ? null : {
+        returnPath: a.returnPath
+    }
+}
+
+function u({
+    accountId: e,
+    accountUserId: n,
+    status: r
+}) {
+    if (typeof window > `u` || !t(e) || !t(n) || r !== `success` && r !== `failure`) return !1;
+    try {
+        return window.sessionStorage.setItem(y, JSON.stringify({
+            accountId: e,
+            accountUserId: n,
+            status: r,
+            createdAtMs: Date.now()
+        })), !0
+    } catch {
+        return !1
+    }
+}
+
+function d(e) {
+    let t = e.getAll(w);
+    return t.length !== 1 || t[0] !== `success` && t[0] !== `failure` ? null : t[0]
+}
+
+function f({
+    checkoutSessionId: e,
+    accountId: t,
+    accountUserId: n,
+    status: r,
+    allowPreview: i = !1
+}) {
+    let a = l({
+        checkoutSessionId: e,
+        accountId: t,
+        accountUserId: n,
+        allowPreview: i
+    });
+    if (a == null) return null;
+    let o = new URL(a.returnPath, window.location.origin);
+    return u({
+        accountId: t,
+        accountUserId: n,
+        status: r
+    }) ? (o.searchParams.set(w, r), `${o.pathname}${o.search}`) : null
+}
+
+function p(e) {
+    return typeof e == `object` && !!e && `accountId` in e && typeof e.accountId == `string` && t(e.accountId) && `accountUserId` in e && typeof e.accountUserId == `string` && t(e.accountUserId) && `status` in e && (e.status === `success` || e.status === `failure`) && `createdAtMs` in e && typeof e.createdAtMs == `number`
+}
+
+function m({
+    accountId: e,
+    accountUserId: n,
+    status: a
+}) {
+    if (typeof window > `u` || !t(e) || !t(n) || a !== `success` && a !== `failure`) return !1;
+    let o = i(y);
+    if (!p(o)) return r(y), !1;
+    let s = Date.now() - o.createdAtMs;
+    return !Number.isFinite(s) || s < 0 || s > b ? (r(y), !1) : o.accountId === e && o.accountUserId === n && o.status === a
+}
+
+function h(e) {
+    return m(e)
+}
+
+function g(e) {
+    return m(e) ? r(y) : !1
+}
+var _, v, y, b, x, S, C, w, T = e((() => {
+    _ = `students_2026`, v = `oai/apps/students2026/checkoutRecovery.v1`, y = `oai/apps/students2026/checkoutResult.v1`, b = 1800 * 1e3, x = `students_2026_preview`, S = `partner_id`, C = `handshake`, w = `students_2026_checkout_result`
+}));
+
+function E(e) {
+    return f({
+        ...e,
+        allowPreview: !1
+    })
+}
+
+function D(e) {
+    return l({
+        ...e,
+        allowPreview: !1
+    })
+}
+
+function O(e) {
+    return c(e, !1)
+}
+
+function k(e) {
+    o({
+        ...e,
+        allowPreview: !1
+    })
+}
+var A = e((() => {
+    T()
+}));
+export {
+    k as a, h as c, A as i, T as l, D as n, g as o, O as r, d as s, E as t
+};
+//# sourceMappingURL=efd279b6-b90gmea5n9iovib1.js.map

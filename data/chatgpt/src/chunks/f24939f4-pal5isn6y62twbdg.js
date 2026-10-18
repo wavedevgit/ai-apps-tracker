@@ -1,0 +1,37 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t, n, r, i, a, o, s = e((() => {
+    t = `The assistant is not ready to receive prompts`, n = () => {
+        "use no forget";
+        let e = null,
+            n = null;
+        return {
+            prefillPlutoComposer: async e => {
+                let r = n;
+                if (r == null) throw Error(t);
+                await r(e)
+            },
+            registerPlutoComposerPrefiller: e => (n = e, () => {
+                n === e && (n = null)
+            }),
+            registerPlutoPromptSender: t => (e = t, () => {
+                e === t && (e = null)
+            }),
+            sendPlutoPrompt: async n => {
+                let r = e;
+                if (r == null) throw Error(t);
+                await r(n)
+            }
+        }
+    }, {
+        prefillPlutoComposer: r,
+        registerPlutoComposerPrefiller: i,
+        registerPlutoPromptSender: a,
+        sendPlutoPrompt: o
+    } = n()
+}));
+export {
+    o as a, a as i, r as n, i as r, s as t
+};
+//# sourceMappingURL=f24939f4-pal5isn6y62twbdg.js.map

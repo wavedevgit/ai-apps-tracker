@@ -1,0 +1,140 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Qc as t,
+    nl as n,
+    pnt as r,
+    ynt as i
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as a,
+    Bn as o,
+    Ht as s,
+    Pt as c,
+    Rn as l,
+    Ut as u,
+    wn as d,
+    zn as f
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    c as p,
+    o as m,
+    r as h,
+    t as g
+} from "./3e72bb91-l4ijhasz7arxe6nl.js";
+import {
+    n as _,
+    r as v
+} from "./82d09521-e4s1atz8rfooze7z.js";
+import {
+    i as y,
+    n as b,
+    r as x,
+    t as S
+} from "./d6dc6b5e-cabcd7qi6gdh7h4a.js";
+import {
+    n as C,
+    t as w
+} from "./66a75a18-fvntj6g93ffxtpuo.js";
+import {
+    a as T,
+    n as E,
+    o as D,
+    t as O
+} from "./88c1aa5b-fdhmrx84634yjg4w.js";
+
+function k() {
+    let e = f(),
+        n = c(),
+        [i] = s(),
+        a = r(`1437685011`) && i.get(`provider`) === `gitlab`,
+        o = a ? `/codex/cloud/settings/environments?provider=gitlab` : `/codex/cloud/settings/environments`,
+        {
+            mutate: l,
+            isPending: u
+        } = v({
+            onSuccess: e => {
+                n(`/codex/cloud/settings/environment/${e.id}`)
+            }
+        });
+    return (0, A.jsxs)(g, {
+        flex: !0,
+        hideBorder: !0,
+        showSidebar: !1,
+        maxWidth: `w-full`,
+        connectionAlert: a ? (0, A.jsx)(w, {
+            redirectAfter: `/codex/cloud/settings/environment/create?provider=gitlab`
+        }) : (0, A.jsx)(m, {}),
+        children: [(0, A.jsxs)(b, {
+            className: `sticky top-0 px-4`,
+            children: [(0, A.jsx)(S, {
+                label: e.formatMessage({
+                    id: `wham.createEnvironment.environments`,
+                    defaultMessage: `Environments`
+                }),
+                url: o
+            }), (0, A.jsx)(x, {}), (0, A.jsx)(S, {
+                label: e.formatMessage({
+                    id: `wham.createEnvironment.new`,
+                    defaultMessage: `New`
+                }),
+                className: `font-medium`
+            })]
+        }), (0, A.jsx)(O, {
+            initialValues: {
+                label: ``,
+                description: ``,
+                share_settings: `workspace`,
+                share_targets: [],
+                machine: t[0].id,
+                devcontainer: null,
+                repositoryId: ``,
+                githubConnectorId: null,
+                enableGitLabWebhooks: !0,
+                workspaceDirectory: `/workspace`,
+                agentNetworkAccess: {
+                    mode: `off`
+                },
+                setupCommands: ``,
+                maintenanceSetupCommands: ``,
+                secrets: [],
+                envVars: T,
+                autoSetupSettings: {
+                    use_auto_setup: !0
+                },
+                cacheSettings: {
+                    post_setup_cache_enabled: !0
+                },
+                enableAuthtranslator: !1
+            },
+            primaryButtonText: e.formatMessage({
+                id: `wham.createEnvironment.createEnvironment`,
+                defaultMessage: `Create environment`
+            }),
+            onSubmit: l,
+            isPending: u
+        })]
+    })
+}
+var A, j = e((() => {
+        h(), i(), y(), p(), C(), E(), D(), n(), _(), l(), a(), A = o()
+    })),
+    M, N, P, F, I = e((() => {
+        a(), M = d(), j(), N = o(), P = () => [{
+            title: `Codex`
+        }], F = u(function() {
+            "use forget";
+            let e = (0, M.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, N.jsx)(k, {}), e[0] = t) : t = e[0], t
+        })
+    }));
+e((() => {
+    I()
+}))();
+export {
+    F as
+    default, P as meta
+};
+//# sourceMappingURL=codex.cloud.settings.environment.create-f56qj6ur.js.map

@@ -1,0 +1,1301 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as n,
+    AT as r,
+    Btt as i,
+    C1 as a,
+    Cit as o,
+    Htt as s,
+    J2 as c,
+    Nrt as l,
+    Prt as ee,
+    QL as u,
+    Qit as d,
+    Sit as f,
+    Tit as p,
+    Y2 as m,
+    a7 as h,
+    dz as te,
+    eR as ne,
+    fz as re,
+    iat as ie,
+    k1 as ae,
+    kT as g,
+    l7 as oe,
+    rot as se,
+    sat as ce,
+    u1 as le,
+    y1 as ue
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as _,
+    Bn as de,
+    Ht as fe,
+    Ln as pe,
+    N as me,
+    Nn as v,
+    O as he,
+    Pt as ge,
+    Rn as _e,
+    Ut as ve,
+    Vn as ye,
+    jt as be,
+    s as y,
+    wn as b,
+    zn as xe
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    QGn as x,
+    ZGn as Se
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    n as Ce,
+    r as S,
+    t as we
+} from "./bcd16462-g7fcj74bvxu3maim.js";
+
+function Te(e, t) {
+    let n = new URL(`https://services.sheerid.com/verify/68d47554aa292d20b9bec8f7/`);
+    return n.searchParams.set(`verificationId`, e), n.searchParams.set(`redirectUrl`, t), n.toString()
+}
+
+function Ee(e) {
+    return e === `error`
+}
+
+function De(e) {
+    return e === `verified` || e === `linked` || e === `implicit_verification`
+}
+
+function Oe(e) {
+    return setTimeout(e, 3e3)
+}
+
+function ke(e) {
+    return (0, w.jsx)(`li`, {
+        children: (0, w.jsx)(v, {
+            ...e.message
+        })
+    }, e.id)
+}
+var Ae, C, w, T, E, D, je = e((() => {
+        Ae = b(), r(), x(), we(), re(), le(), ae(), u(), l(), s(), o(), ie(), m(), oe(), y(), C = t(ye(), 1), _e(), _(), w = de(), T = pe({
+            loginRequiredTitle: {
+                id: `k12InvitePage.loginRequiredTitle`,
+                defaultMessage: `Log in to accept this invite`
+            },
+            loginRequiredDescription: {
+                id: `k12InvitePage.loginRequiredDescription`,
+                defaultMessage: `Log in as {email} to continue. After logging in, we’ll bring you right back to this page.`
+            },
+            loginRequiredSignupDescription: {
+                id: `k12InvitePage.loginRequiredSignupDescription`,
+                defaultMessage: `Don’t have access to {email}? Create an account with that email and return here. Use the buttons below to continue.`
+            },
+            loginCta: {
+                id: `k12InvitePage.loginCta`,
+                defaultMessage: `Log in`
+            },
+            signupCta: {
+                id: `k12InvitePage.signupCta`,
+                defaultMessage: `Sign up`
+            },
+            inviteGreeting: {
+                id: `k12InvitePage.inviteGreeting`,
+                defaultMessage: `Hey, you’re signed in as {email}`
+            },
+            inviteDescription: {
+                id: `k12InvitePage.inviteDescription`,
+                defaultMessage: `You’ve been invited to join the {workspaceName} workspace. Click below to continue.`
+            },
+            invitePendingDescription: {
+                id: `k12InvitePage.invitePendingDescription`,
+                defaultMessage: `We need to confirm you’re an educator before you can join this workspace. Continue to complete a quick verification.`
+            },
+            startVerificationCta: {
+                id: `k12InvitePage.startVerificationCta`,
+                defaultMessage: `Continue to verification`
+            },
+            refreshStatusCta: {
+                id: `k12InvitePage.refreshStatusCta`,
+                defaultMessage: `Refresh status`
+            },
+            inviteVerifiedTitle: {
+                id: `k12InvitePage.inviteVerifiedTitle`,
+                defaultMessage: `You’re verified and ready to join`
+            },
+            inviteVerifiedDescription: {
+                id: `k12InvitePage.inviteVerifiedDescription`,
+                defaultMessage: `Great news! Verification is complete. Accept the invite to open {workspaceName}.`
+            },
+            acceptInviteCta: {
+                id: `k12InvitePage.acceptInviteCta`,
+                defaultMessage: `Accept invite and continue`
+            },
+            inviteVerificationFailedTitle: {
+                id: `k12InvitePage.inviteVerificationFailedTitle`,
+                defaultMessage: `We couldn’t verify your eligibility`
+            },
+            inviteVerificationFailedDescription: {
+                id: `k12InvitePage.inviteVerificationFailedDescription`,
+                defaultMessage: `We weren’t able to confirm you’re an educator, so you can’t accept this invite. If this is a mistake, please contact your workspace admin.`
+            },
+            inviteExpiredTitle: {
+                id: `k12InvitePage.inviteExpiredTitle`,
+                defaultMessage: `This invite has expired`
+            },
+            inviteExpiredDescription: {
+                id: `k12InvitePage.inviteExpiredDescription`,
+                defaultMessage: `You’re signed in as {email}, but the invite to join {workspaceName} has expired. Ask the sender for a new invite.`
+            },
+            inviteAcceptedTitle: {
+                id: `k12InvitePage.inviteAcceptedTitle`,
+                defaultMessage: `You’re already part of this workspace`
+            },
+            inviteAcceptedDescription: {
+                id: `k12InvitePage.inviteAcceptedDescription`,
+                defaultMessage: `It looks like you’ve already joined {workspaceName}. Head to ChatGPT for Teachers to start working with your workspace.`
+            },
+            inviteWrongUserTitle: {
+                id: `k12InvitePage.inviteWrongUserTitle`,
+                defaultMessage: `This invite belongs to a different account`
+            },
+            inviteWrongUserDescription: {
+                id: `k12InvitePage.inviteWrongUserDescription`,
+                defaultMessage: `You’re signed in as {email}, but this invite was sent to a different email address. Sign in with the invited account or ask the sender for a new invite.`
+            },
+            inviteWrongUserTargetDescription: {
+                id: `k12InvitePage.inviteWrongUserTargetDescription`,
+                defaultMessage: `This invite was sent to {email}. Log in with that email to continue.`
+            },
+            inviteWrongUserSwitchAccountCta: {
+                id: `k12InvitePage.inviteWrongUserSwitchAccountCta`,
+                defaultMessage: `Switch accounts`
+            },
+            inviteNotFoundTitle: {
+                id: `k12InvitePage.inviteNotFoundTitle`,
+                defaultMessage: `Invite not found`
+            },
+            inviteNotFoundDescription: {
+                id: `k12InvitePage.inviteNotFoundDescription`,
+                defaultMessage: `We couldn’t find an invite that matches this link. It may have been deleted or replaced. Ask your workspace admin to send a new invite.`
+            },
+            inviteUnknownTitle: {
+                id: `k12InvitePage.inviteUnknownTitle`,
+                defaultMessage: `We’re having trouble loading this invite`
+            },
+            inviteUnknownDescription: {
+                id: `k12InvitePage.inviteUnknownDescription`,
+                defaultMessage: `Please refresh the page. If the issue persists, request a new invite from your workspace admin.`
+            },
+            inviteMissingInviteTitle: {
+                id: `k12InvitePage.inviteMissingInviteTitle`,
+                defaultMessage: `This invite link is incomplete`
+            },
+            inviteMissingInviteDescription: {
+                id: `k12InvitePage.inviteMissingInviteDescription`,
+                defaultMessage: `We can’t load the invite because the link is missing required details. Request a new invite and try again.`
+            },
+            inviteActionError: {
+                id: `k12InvitePage.inviteActionError`,
+                defaultMessage: `We couldn’t complete that action. Please try again in a moment.`
+            },
+            inviteCheckingStatus: {
+                id: `k12InvitePage.inviteCheckingStatus`,
+                defaultMessage: `Checking your invite…`
+            },
+            inviteGoHomeCta: {
+                id: `k12InvitePage.inviteGoHomeCta`,
+                defaultMessage: `Go to ChatGPT for Teachers`
+            },
+            inviteMissingWorkspace: {
+                id: `k12InvitePage.inviteMissingWorkspace`,
+                defaultMessage: `We couldn’t find the workspace details for this invite. Please double-check the link or ask the sender to resend it.`
+            },
+            inviteWorkspaceFallback: {
+                id: `k12InvitePage.inviteWorkspaceFallback`,
+                defaultMessage: `your new workspace`
+            },
+            inviteEmailFallback: {
+                id: `k12InvitePage.inviteEmailFallback`,
+                defaultMessage: `your account`
+            },
+            termsSummaryIntro: {
+                id: `k12InvitePage.termsSummaryIntro`,
+                defaultMessage: `Here's a short summary of the Teacher Access Terms -- please read the linked terms for full details.`
+            },
+            termsSummaryEducationPurpose: {
+                id: `k12InvitePage.termsSummaryEducationPurpose`,
+                defaultMessage: `I'm using this account for school-related teaching work, and I understand it may later be managed by my School.`
+            },
+            termsSummaryNoTraining: {
+                id: `k12InvitePage.termsSummaryNoTraining`,
+                defaultMessage: `OpenAI won't train on content I submit here, including Student Data.`
+            },
+            inviteAgreementLabel: {
+                id: `k12InvitePage.inviteAgreementLabel`,
+                defaultMessage: `I agree to our {teacherAccessTermsLink} and {studentDataPrivacyAgreementLink}.`
+            },
+            teacherAccessTermsLinkText: {
+                id: `k12InvitePage.teacherAccessTermsLinkText`,
+                defaultMessage: `Teacher Access Terms`
+            },
+            studentDataPrivacyAgreementLinkText: {
+                id: `k12InvitePage.studentDataPrivacyAgreementLinkText`,
+                defaultMessage: `Student Data Privacy Agreement`
+            }
+        }), E = {
+            impression: {
+                segment: `K12 Invite: Shown`,
+                statsig: `chatgpt_k12_invite_shown`
+            },
+            login: {
+                segment: `K12 Invite: Login Clicked`,
+                statsig: `chatgpt_k12_invite_login_clicked`
+            },
+            signup: {
+                segment: `K12 Invite: Signup Clicked`,
+                statsig: `chatgpt_k12_invite_signup_clicked`
+            },
+            refreshStatus: {
+                segment: `K12 Invite: Refresh Status Clicked`,
+                statsig: `chatgpt_k12_invite_refresh_status_clicked`
+            },
+            startVerification: {
+                segment: `K12 Invite: Start Verification Clicked`,
+                statsig: `chatgpt_k12_invite_start_verification_clicked`
+            },
+            acceptInvite: {
+                segment: `K12 Invite: Accept Invite Clicked`,
+                statsig: `chatgpt_k12_invite_accept_clicked`
+            },
+            acceptResult: {
+                segment: `K12 Invite: Accept Invite Result`,
+                statsig: `chatgpt_k12_invite_accept_result`
+            },
+            switchAccount: {
+                segment: `K12 Invite: Switch Account Clicked`,
+                statsig: `chatgpt_k12_invite_switch_account_clicked`
+            },
+            goHome: {
+                segment: `K12 Invite: Go Home Clicked`,
+                statsig: `chatgpt_k12_invite_go_home_clicked`
+            }
+        }, D = () => {
+            "use forget";
+            let e = (0, Ae.c)(285),
+                t = xe(),
+                r = be(),
+                o = ge(),
+                [s] = fe(),
+                l;
+            e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (l = ee(), e[0] = l) : l = e[0];
+            let u = l,
+                m;
+            e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (m = se(), e[1] = m) : m = e[1];
+            let re = m,
+                ie = a(),
+                ae = ne(),
+                oe = me(),
+                le = re?.user?.email,
+                _ = `${r.pathname}${r.search}${r.hash}`,
+                de = ie?.planType ?? re?.account?.planType ?? null,
+                pe = ae?.email_domain_type ?? null,
+                _e;
+            e[2] === s ? _e = e[3] : (_e = s.get(`inv_ws_name`) ?? void 0, e[2] = s, e[3] = _e);
+            let ve = _e,
+                ye;
+            e[4] === s ? ye = e[5] : (ye = s.get(`inv_email`) ?? void 0, e[4] = s, e[5] = ye);
+            let y = ye,
+                b;
+            e[6] === s ? b = e[7] : (b = s.get(`wId`) ?? void 0, e[6] = s, e[7] = b);
+            let x = b,
+                we;
+            e[8] === s ? we = e[9] : (we = s.get(`aiId`) ?? void 0, e[8] = s, e[9] = we);
+            let D = we,
+                je;
+            e[10] === t ? je = e[11] : (je = t.formatMessage(T.inviteEmailFallback), e[10] = t, e[11] = je);
+            let Me = je,
+                O;
+            e[12] === t ? O = e[13] : (O = t.formatMessage(T.inviteWorkspaceFallback), e[12] = t, e[13] = O);
+            let Ne = O,
+                Pe, Fe;
+            e[14] === x ? (Pe = e[15], Fe = e[16]) : (Pe = () => {
+                x && f.setCookie(p.AcceptAccountId, x, {
+                    maxAge: 120
+                })
+            }, Fe = [x], e[14] = x, e[15] = Pe, e[16] = Fe), (0, C.useEffect)(Pe, Fe);
+            let k;
+            e[17] === D ? k = e[18] : (k = [`k12InviteStatus`, D], e[17] = D, e[18] = k);
+            let Ie = !!D,
+                A;
+            e[19] === D ? A = e[20] : (A = async () => {
+                if (!D) throw Error(`Missing invite id`);
+                return await h.safePost(`/teachers/refresh_invite_status`, {
+                    requestBody: {
+                        account_invite_id: D
+                    }
+                })
+            }, e[19] = D, e[20] = A);
+            let Le;
+            e[21] !== k || e[22] !== Ie || e[23] !== A ? (Le = {
+                queryKey: k,
+                enabled: Ie,
+                retry: !1,
+                queryFn: A
+            }, e[21] = k, e[22] = Ie, e[23] = A, e[24] = Le) : Le = e[24];
+            let j = he(Le),
+                [Re, M] = (0, C.useState)(null),
+                [ze, Be] = (0, C.useState)(!1),
+                [Ve, He] = (0, C.useState)(!1),
+                [N, Ue] = (0, C.useState)(!1),
+                P = y ?? le ?? Me,
+                F = ve ?? Ne,
+                I = le ?? Me,
+                We;
+            e[25] === r.search ? We = e[26] : (We = new URLSearchParams(r.search).get(`referer`), e[25] = r.search, e[26] = We);
+            let Ge = We,
+                Ke = j.data?.metadata ?? void 0,
+                L = Ke?.invite_status,
+                R = Ke?.verification_status ?? void 0,
+                z = Ke?.verification_id ?? void 0,
+                qe = u ? de ?? `unknown` : null,
+                Je = Ge ?? null,
+                Ye = D ?? null,
+                Xe = x ?? null,
+                Ze = y ?? null,
+                Qe;
+            e[27] !== P || e[28] !== F || e[29] !== pe || e[30] !== I || e[31] !== qe || e[32] !== Je || e[33] !== Ye || e[34] !== Xe || e[35] !== Ze ? (Qe = {
+                isLoggedIn: u,
+                loggedInStatus: u ? `logged_in` : `logged_out`,
+                accountPlanType: qe,
+                emailDomainType: pe,
+                referer: Je,
+                accountInviteId: Ye,
+                workspaceId: Xe,
+                invitedEmail: Ze,
+                displayEmail: P,
+                workspaceName: F,
+                signedInEmail: I
+            }, e[27] = P, e[28] = F, e[29] = pe, e[30] = I, e[31] = qe, e[32] = Je, e[33] = Ye, e[34] = Xe, e[35] = Ze, e[36] = Qe) : Qe = e[36];
+            let $e = Qe,
+                B;
+            bb0: {
+                if (!u) {
+                    B = `login_required`;
+                    break bb0
+                }
+                if (!D) {
+                    B = `missing_invite`;
+                    break bb0
+                }
+                if (j.isLoading && j.data == null) {
+                    B = `loading`;
+                    break bb0
+                }
+                if (j.error) {
+                    if (j.error instanceof d && j.error.status === 403) {
+                        B = `wrong_user_error`;
+                        break bb0
+                    }
+                    if (j.error instanceof d && j.error.status === 404) {
+                        B = `not_found_error`;
+                        break bb0
+                    }
+                    B = `unknown_error`;
+                    break bb0
+                }
+                if (!Ke) {
+                    B = `unknown_status`;
+                    break bb0
+                }
+                if (L === `wrong_user`) {
+                    B = `wrong_user`;
+                    break bb0
+                }
+                if (L === `expired`) {
+                    B = `expired`;
+                    break bb0
+                }
+                if (L === `accepted`) {
+                    B = `accepted`;
+                    break bb0
+                }
+                if (L === `not_found`) {
+                    B = `not_found`;
+                    break bb0
+                }
+                if (Ee(R)) {
+                    B = `verification_failed`;
+                    break bb0
+                }
+                if (De(R)) {
+                    B = `verified_ready`;
+                    break bb0
+                }
+                if (L !== `pending` && L !== `requested`) {
+                    B = `unknown_status`;
+                    break bb0
+                }
+                B = `pending`
+            }
+            let V = B,
+                et = L ?? null,
+                tt = R ?? null,
+                nt;
+            e[37] !== $e || e[38] !== V || e[39] !== et || e[40] !== tt ? (nt = {
+                ...$e,
+                view: V,
+                inviteStatus: et,
+                verificationStatus: tt
+            }, e[37] = $e, e[38] = V, e[39] = et, e[40] = tt, e[41] = nt) : nt = e[41];
+            let rt = nt,
+                it;
+            e[42] === rt ? it = e[43] : (it = (e, t, n) => {
+                i.logEventWithStatsig(e, t, {
+                    ...rt,
+                    ...n
+                })
+            }, e[42] = rt, e[43] = it);
+            let H = it,
+                at = (0, C.useRef)(!1),
+                ot = !u || pe != null,
+                st = V !== `loading`,
+                ct;
+            e[44] === Symbol.for(`react.memo_cache_sentinel`) ? (ct = (0, w.jsx)(`a`, {
+                href: `https://openai.com/policies/education-terms`,
+                className: `underline`,
+                target: `_blank`,
+                rel: `noreferrer`,
+                children: (0, w.jsx)(v, {
+                    ...T.teacherAccessTermsLinkText
+                })
+            }), e[44] = ct) : ct = e[44];
+            let lt = ct,
+                ut;
+            e[45] === Symbol.for(`react.memo_cache_sentinel`) ? (ut = (0, w.jsx)(`a`, {
+                href: `https://openai.com/policies/student-data-privacy`,
+                className: `underline`,
+                target: `_blank`,
+                rel: `noreferrer`,
+                children: (0, w.jsx)(v, {
+                    ...T.studentDataPrivacyAgreementLinkText
+                })
+            }), e[45] = ut) : ut = e[45];
+            let dt = ut,
+                ft;
+            e[46] === Symbol.for(`react.memo_cache_sentinel`) ? (ft = [{
+                id: `education-purpose`,
+                message: T.termsSummaryEducationPurpose
+            }, {
+                id: `no-training`,
+                message: T.termsSummaryNoTraining
+            }], e[46] = ft) : ft = e[46];
+            let pt = ft,
+                mt, ht;
+            e[47] !== ot || e[48] !== V || e[49] !== st || e[50] !== H ? (mt = () => {
+                !ot || !st || at.current || (H(E.impression.segment, E.impression.statsig, {
+                    source: V
+                }), S(`invite`, `page_view`, {
+                    source: V
+                }), at.current = !0)
+            }, ht = [ot, V, st, H], e[47] = ot, e[48] = V, e[49] = st, e[50] = H, e[51] = mt, e[52] = ht) : (mt = e[51], ht = e[52]), (0, C.useEffect)(mt, ht);
+            let gt;
+            e[53] === Symbol.for(`react.memo_cache_sentinel`) ? (gt = () => {
+                M(null)
+            }, e[53] = gt) : gt = e[53];
+            let _t;
+            e[54] !== L || e[55] !== R ? (_t = [L, R], e[54] = L, e[55] = R, e[56] = _t) : _t = e[56], (0, C.useEffect)(gt, _t);
+            let vt, yt;
+            e[57] !== D || e[58] !== j.error || e[59] !== x ? (vt = () => {
+                j.error && (M(null), Ce(`invite`, `load_error`, j.error, {
+                    accountInviteId: D ?? null,
+                    workspaceId: x ?? null
+                }))
+            }, yt = [D, j.error, x], e[57] = D, e[58] = j.error, e[59] = x, e[60] = vt, e[61] = yt) : (vt = e[60], yt = e[61]), (0, C.useEffect)(vt, yt);
+            let bt;
+            e[62] === Symbol.for(`react.memo_cache_sentinel`) ? (bt = () => {
+                Ue(!1)
+            }, e[62] = bt) : bt = e[62];
+            let xt;
+            e[63] === R ? xt = e[64] : (xt = [R], e[63] = R, e[64] = xt), (0, C.useEffect)(bt, xt);
+            let St;
+            e[65] === Re ? St = e[66] : (St = e => {
+                let {
+                    title: t,
+                    content: n,
+                    actions: r,
+                    showActionError: i
+                } = e;
+                return (0, w.jsxs)(`div`, {
+                    className: `flex min-h-[60vh] flex-col items-center justify-center gap-4 p-6 text-center`,
+                    children: [(0, w.jsx)(`h1`, {
+                        className: `text-token-text-primary text-2xl font-semibold`,
+                        children: t
+                    }), n, (i === void 0 || i) && Re ? (0, w.jsx)(`p`, {
+                        className: `text-danger text-sm`,
+                        children: Re
+                    }) : null, r]
+                })
+            }, e[65] = Re, e[66] = St);
+            let U = St,
+                Ct;
+            e[67] !== j || e[68] !== V || e[69] !== H ? (Ct = () => {
+                H(E.refreshStatus.segment, E.refreshStatus.statsig, {
+                    source: V
+                }), S(`invite`, `refresh_status_click`, {
+                    source: V
+                }), M(null), j.refetch()
+            }, e[67] = j, e[68] = V, e[69] = H, e[70] = Ct) : Ct = e[70];
+            let W = Ct,
+                wt;
+            e[71] !== t || e[72] !== V || e[73] !== H || e[74] !== z ? (wt = async () => {
+                M(null), Be(!0), H(E.startVerification.segment, E.startVerification.statsig, {
+                    source: V,
+                    verificationId: z ?? null
+                }), S(`invite`, `start_verification_click`, {
+                    source: V,
+                    verificationId: z ?? null
+                });
+                try {
+                    let e = z;
+                    e ||= (await h.safePost(`/teachers/create_verification`)).verification_id;
+                    let t = Te(e, window.location.href);
+                    window.location.href = t
+                } catch (e) {
+                    let n = e;
+                    Ce(`invite`, `start_verification_error`, n, {
+                        source: V,
+                        verificationId: z ?? null
+                    });
+                    let r = ce(n);
+                    M(r ?? t.formatMessage(T.inviteActionError))
+                }
+                Be(!1)
+            }, e[71] = t, e[72] = V, e[73] = H, e[74] = z, e[75] = wt) : wt = e[75];
+            let Tt = wt,
+                Et;
+            e[76] !== D || e[77] !== N || e[78] !== t || e[79] !== V || e[80] !== H || e[81] !== oe || e[82] !== x ? (Et = async () => {
+                if (!(!x || !D)) {
+                    M(null), He(!0), H(E.acceptInvite.segment, E.acceptInvite.statsig, {
+                        source: V
+                    }), S(`invite`, `accept_invite_click`, {
+                        source: V,
+                        accountInviteId: D,
+                        workspaceId: x
+                    });
+                    try {
+                        await h.safePost(`/teachers/accept_teacher_invite`, {
+                            requestBody: {
+                                account_invite_id: D,
+                                has_agreed_to_terms: N
+                            }
+                        }), f.deleteCookie(p.AcceptAccountId), H(E.acceptResult.segment, E.acceptResult.statsig, {
+                            source: V,
+                            status: `success`
+                        }), S(`invite`, `accept_invite_success`, {
+                            source: V,
+                            accountInviteId: D,
+                            workspaceId: x
+                        }), await new Promise(Oe), await ue(oe, x), c()
+                    } catch (e) {
+                        let n = e,
+                            r = n instanceof Error ? {
+                                errorName: n.name,
+                                errorMessage: n.message
+                            } : {
+                                errorName: typeof n,
+                                errorMessage: String(n)
+                            };
+                        H(E.acceptResult.segment, E.acceptResult.statsig, {
+                            source: V,
+                            status: `error`,
+                            ...r
+                        }), Ce(`invite`, `accept_invite_error`, n, {
+                            source: V,
+                            accountInviteId: D,
+                            workspaceId: x
+                        });
+                        let i = ce(n);
+                        M(i ?? t.formatMessage(T.inviteActionError))
+                    }
+                }
+            }, e[76] = D, e[77] = N, e[78] = t, e[79] = V, e[80] = H, e[81] = oe, e[82] = x, e[83] = Et) : Et = e[83];
+            let Dt = Et,
+                Ot;
+            e[84] !== _ || e[85] !== V || e[86] !== H ? (Ot = () => {
+                M(null), H(E.switchAccount.segment, E.switchAccount.statsig, {
+                    source: V
+                }), S(`invite`, `switch_account_click`, {
+                    source: V
+                }), n({
+                    fallbackScreenHint: `login`,
+                    useFallbackScreenHint: !0,
+                    callbackUrl: _,
+                    skipLoginModal: !0
+                })
+            }, e[84] = _, e[85] = V, e[86] = H, e[87] = Ot) : Ot = e[87];
+            let kt = Ot,
+                At;
+            e[88] !== _ || e[89] !== V || e[90] !== H ? (At = () => {
+                H(E.login.segment, E.login.statsig, {
+                    source: V
+                }), S(`invite`, `login_click`, {
+                    source: V
+                }), n({
+                    fallbackScreenHint: `login`,
+                    useFallbackScreenHint: !0,
+                    callbackUrl: _,
+                    skipLoginModal: !0
+                })
+            }, e[88] = _, e[89] = V, e[90] = H, e[91] = At) : At = e[91];
+            let jt = At,
+                Mt;
+            e[92] !== _ || e[93] !== V || e[94] !== H ? (Mt = () => {
+                H(E.signup.segment, E.signup.statsig, {
+                    source: V
+                }), S(`invite`, `signup_click`, {
+                    source: V
+                }), n({
+                    fallbackScreenHint: `signup`,
+                    useFallbackScreenHint: !0,
+                    callbackUrl: _,
+                    skipLoginModal: !0
+                })
+            }, e[92] = _, e[93] = V, e[94] = H, e[95] = Mt) : Mt = e[95];
+            let Nt = Mt,
+                Pt;
+            e[96] !== V || e[97] !== H || e[98] !== o ? (Pt = () => {
+                H(E.goHome.segment, E.goHome.statsig, {
+                    source: V
+                }), S(`invite`, `go_home_click`, {
+                    source: V
+                }), o(`/`)
+            }, e[96] = V, e[97] = H, e[98] = o, e[99] = Pt) : Pt = e[99];
+            let Ft = Pt,
+                It;
+            e[100] === Symbol.for(`react.memo_cache_sentinel`) ? (It = (0, w.jsx)(v, {
+                ...T.inviteWrongUserTitle
+            }), e[100] = It) : It = e[100];
+            let G;
+            e[101] === I ? G = e[102] : (G = (0, w.jsx)(`p`, {
+                children: (0, w.jsx)(v, {
+                    ...T.inviteWrongUserDescription,
+                    values: {
+                        email: I
+                    }
+                })
+            }), e[101] = I, e[102] = G);
+            let K;
+            e[103] === y ? K = e[104] : (K = y ? (0, w.jsx)(`p`, {
+                className: `text-token-text-tertiary text-sm`,
+                children: (0, w.jsx)(v, {
+                    ...T.inviteWrongUserTargetDescription,
+                    values: {
+                        email: (0, w.jsx)(`span`, {
+                            className: `text-token-text-primary font-semibold`,
+                            children: y
+                        })
+                    }
+                })
+            }) : null, e[103] = y, e[104] = K);
+            let q;
+            e[105] !== G || e[106] !== K ? (q = (0, w.jsxs)(`div`, {
+                className: `text-token-text-secondary flex max-w-md flex-col gap-3 text-base`,
+                children: [G, K]
+            }), e[105] = G, e[106] = K, e[107] = q) : q = e[107];
+            let Lt;
+            e[108] === Symbol.for(`react.memo_cache_sentinel`) ? (Lt = (0, w.jsx)(v, {
+                ...T.inviteWrongUserSwitchAccountCta
+            }), e[108] = Lt) : Lt = e[108];
+            let J;
+            e[109] === kt ? J = e[110] : (J = (0, w.jsx)(g, {
+                onClick: kt,
+                className: `w-48`,
+                children: Lt
+            }), e[109] = kt, e[110] = J);
+            let Rt;
+            e[111] === Symbol.for(`react.memo_cache_sentinel`) ? (Rt = (0, w.jsx)(v, {
+                ...T.refreshStatusCta
+            }), e[111] = Rt) : Rt = e[111];
+            let Y;
+            e[112] !== W || e[113] !== j.isFetching ? (Y = (0, w.jsx)(g, {
+                color: `secondary`,
+                onClick: W,
+                loading: j.isFetching,
+                className: `w-48`,
+                children: Rt
+            }), e[112] = W, e[113] = j.isFetching, e[114] = Y) : Y = e[114];
+            let X;
+            e[115] !== J || e[116] !== Y ? (X = (0, w.jsxs)(`div`, {
+                className: `flex flex-col items-center gap-3 md:flex-row`,
+                children: [J, Y]
+            }), e[115] = J, e[116] = Y, e[117] = X) : X = e[117];
+            let zt;
+            e[118] !== U || e[119] !== q || e[120] !== X ? (zt = U({
+                title: It,
+                content: q,
+                actions: X,
+                showActionError: !1
+            }), e[118] = U, e[119] = q, e[120] = X, e[121] = zt) : zt = e[121];
+            let Bt = zt;
+            if (!u) {
+                let t;
+                e[122] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(`h1`, {
+                    className: `text-2xl font-semibold`,
+                    children: (0, w.jsx)(v, {
+                        ...T.loginRequiredTitle
+                    })
+                }), e[122] = t) : t = e[122];
+                let n;
+                e[123] === P ? n = e[124] : (n = (0, w.jsx)(`p`, {
+                    className: `text-token-text-secondary max-w-md text-base`,
+                    children: (0, w.jsx)(v, {
+                        ...T.loginRequiredDescription,
+                        values: {
+                            email: P
+                        }
+                    })
+                }), e[123] = P, e[124] = n);
+                let r;
+                e[125] === P ? r = e[126] : (r = (0, w.jsx)(`p`, {
+                    className: `text-token-text-tertiary max-w-md text-sm`,
+                    children: (0, w.jsx)(v, {
+                        ...T.loginRequiredSignupDescription,
+                        values: {
+                            email: P
+                        }
+                    })
+                }), e[125] = P, e[126] = r);
+                let i;
+                e[127] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, w.jsx)(v, {
+                    ...T.loginCta
+                }), e[127] = i) : i = e[127];
+                let a;
+                e[128] === jt ? a = e[129] : (a = (0, w.jsx)(g, {
+                    onClick: jt,
+                    className: `w-48`,
+                    children: i
+                }), e[128] = jt, e[129] = a);
+                let o;
+                e[130] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, w.jsx)(v, {
+                    ...T.signupCta
+                }), e[130] = o) : o = e[130];
+                let s;
+                e[131] === Nt ? s = e[132] : (s = (0, w.jsx)(g, {
+                    color: `secondary`,
+                    onClick: Nt,
+                    className: `w-48`,
+                    children: o
+                }), e[131] = Nt, e[132] = s);
+                let c;
+                e[133] !== a || e[134] !== s ? (c = (0, w.jsxs)(`div`, {
+                    className: `flex flex-col items-center gap-3 md:flex-row`,
+                    children: [a, s]
+                }), e[133] = a, e[134] = s, e[135] = c) : c = e[135];
+                let l;
+                return e[136] !== n || e[137] !== r || e[138] !== c ? (l = (0, w.jsxs)(`div`, {
+                    className: `flex min-h-[60vh] flex-col items-center justify-center gap-5 p-6 text-center`,
+                    children: [t, n, r, c]
+                }), e[136] = n, e[137] = r, e[138] = c, e[139] = l) : l = e[139], l
+            }
+            if (!D) {
+                let t;
+                e[140] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(v, {
+                    ...T.inviteMissingInviteTitle
+                }), e[140] = t) : t = e[140];
+                let n;
+                e[141] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, w.jsx)(`p`, {
+                    className: `text-token-text-secondary max-w-md text-base`,
+                    children: (0, w.jsx)(v, {
+                        ...T.inviteMissingInviteDescription
+                    })
+                }), e[141] = n) : n = e[141];
+                let r;
+                return e[142] === U ? r = e[143] : (r = U({
+                    title: t,
+                    content: n,
+                    showActionError: !1
+                }), e[142] = U, e[143] = r), r
+            }
+            if (j.isLoading && j.data == null) {
+                let t;
+                e[144] === P ? t = e[145] : (t = (0, w.jsx)(v, {
+                    ...T.inviteGreeting,
+                    values: {
+                        email: P
+                    }
+                }), e[144] = P, e[145] = t);
+                let n;
+                e[146] === F ? n = e[147] : (n = (0, w.jsx)(`p`, {
+                    className: `text-center`,
+                    children: (0, w.jsx)(v, {
+                        ...T.inviteDescription,
+                        values: {
+                            workspaceName: (0, w.jsx)(`span`, {
+                                className: `text-token-text-primary font-semibold`,
+                                children: F
+                            })
+                        }
+                    })
+                }), e[146] = F, e[147] = n);
+                let r;
+                e[148] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, w.jsxs)(`div`, {
+                    className: `flex flex-col items-center gap-3`,
+                    children: [(0, w.jsx)(te, {
+                        className: `text-token-text-secondary h-8 w-8`
+                    }), (0, w.jsx)(v, {
+                        ...T.inviteCheckingStatus
+                    })]
+                }), e[148] = r) : r = e[148];
+                let i;
+                e[149] === n ? i = e[150] : (i = (0, w.jsxs)(`div`, {
+                    className: `text-token-text-secondary flex max-w-md flex-col items-center gap-4 text-base`,
+                    children: [n, r]
+                }), e[149] = n, e[150] = i);
+                let a;
+                return e[151] !== U || e[152] !== t || e[153] !== i ? (a = U({
+                    title: t,
+                    content: i,
+                    showActionError: !1
+                }), e[151] = U, e[152] = t, e[153] = i, e[154] = a) : a = e[154], a
+            }
+            if (j.error) {
+                if (j.error instanceof d && j.error.status === 403) return Bt;
+                if (j.error instanceof d && j.error.status === 404) {
+                    let t;
+                    e[155] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(v, {
+                        ...T.inviteNotFoundTitle
+                    }), e[155] = t) : t = e[155];
+                    let n;
+                    e[156] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, w.jsx)(`p`, {
+                        className: `text-token-text-secondary max-w-md text-base`,
+                        children: (0, w.jsx)(v, {
+                            ...T.inviteNotFoundDescription
+                        })
+                    }), e[156] = n) : n = e[156];
+                    let r;
+                    return e[157] === U ? r = e[158] : (r = U({
+                        title: t,
+                        content: n,
+                        showActionError: !1
+                    }), e[157] = U, e[158] = r), r
+                }
+                let t;
+                e[159] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(v, {
+                    ...T.inviteUnknownTitle
+                }), e[159] = t) : t = e[159];
+                let n;
+                e[160] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, w.jsx)(`p`, {
+                    className: `text-token-text-secondary max-w-md text-base`,
+                    children: (0, w.jsx)(v, {
+                        ...T.inviteUnknownDescription
+                    })
+                }), e[160] = n) : n = e[160];
+                let r;
+                e[161] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, w.jsx)(v, {
+                    ...T.refreshStatusCta
+                }), e[161] = r) : r = e[161];
+                let i;
+                e[162] !== W || e[163] !== j.isFetching ? (i = (0, w.jsx)(g, {
+                    color: `secondary`,
+                    onClick: W,
+                    loading: j.isFetching,
+                    children: r
+                }), e[162] = W, e[163] = j.isFetching, e[164] = i) : i = e[164];
+                let a;
+                return e[165] !== U || e[166] !== i ? (a = U({
+                    title: t,
+                    content: n,
+                    actions: i
+                }), e[165] = U, e[166] = i, e[167] = a) : a = e[167], a
+            }
+            if (!Ke) {
+                let t;
+                e[168] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(v, {
+                    ...T.inviteUnknownTitle
+                }), e[168] = t) : t = e[168];
+                let n;
+                e[169] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, w.jsx)(`p`, {
+                    className: `text-token-text-secondary max-w-md text-base`,
+                    children: (0, w.jsx)(v, {
+                        ...T.inviteUnknownDescription
+                    })
+                }), e[169] = n) : n = e[169];
+                let r;
+                e[170] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, w.jsx)(v, {
+                    ...T.refreshStatusCta
+                }), e[170] = r) : r = e[170];
+                let i;
+                e[171] !== W || e[172] !== j.isFetching ? (i = (0, w.jsx)(g, {
+                    color: `secondary`,
+                    onClick: W,
+                    loading: j.isFetching,
+                    children: r
+                }), e[171] = W, e[172] = j.isFetching, e[173] = i) : i = e[173];
+                let a;
+                return e[174] !== U || e[175] !== i ? (a = U({
+                    title: t,
+                    content: n,
+                    actions: i
+                }), e[174] = U, e[175] = i, e[176] = a) : a = e[176], a
+            }
+            if (L === `wrong_user`) return Bt;
+            if (L === `expired`) {
+                let t;
+                e[177] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(v, {
+                    ...T.inviteExpiredTitle
+                }), e[177] = t) : t = e[177];
+                let n;
+                e[178] === F ? n = e[179] : (n = (0, w.jsx)(`span`, {
+                    className: `text-token-text-primary font-semibold`,
+                    children: F
+                }), e[178] = F, e[179] = n);
+                let r;
+                e[180] !== P || e[181] !== n ? (r = (0, w.jsx)(`div`, {
+                    className: `text-token-text-secondary flex max-w-md flex-col gap-3 text-base`,
+                    children: (0, w.jsx)(`p`, {
+                        children: (0, w.jsx)(v, {
+                            ...T.inviteExpiredDescription,
+                            values: {
+                                email: P,
+                                workspaceName: n
+                            }
+                        })
+                    })
+                }), e[180] = P, e[181] = n, e[182] = r) : r = e[182];
+                let i;
+                e[183] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, w.jsx)(v, {
+                    ...T.refreshStatusCta
+                }), e[183] = i) : i = e[183];
+                let a;
+                e[184] !== W || e[185] !== j.isFetching ? (a = (0, w.jsx)(g, {
+                    color: `secondary`,
+                    onClick: W,
+                    loading: j.isFetching,
+                    children: i
+                }), e[184] = W, e[185] = j.isFetching, e[186] = a) : a = e[186];
+                let o;
+                return e[187] !== U || e[188] !== r || e[189] !== a ? (o = U({
+                    title: t,
+                    content: r,
+                    actions: a
+                }), e[187] = U, e[188] = r, e[189] = a, e[190] = o) : o = e[190], o
+            }
+            if (L === `accepted`) {
+                let t;
+                e[191] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(v, {
+                    ...T.inviteAcceptedTitle
+                }), e[191] = t) : t = e[191];
+                let n;
+                e[192] === F ? n = e[193] : (n = (0, w.jsx)(`div`, {
+                    className: `text-token-text-secondary flex max-w-md flex-col gap-3 text-base`,
+                    children: (0, w.jsx)(`p`, {
+                        children: (0, w.jsx)(v, {
+                            ...T.inviteAcceptedDescription,
+                            values: {
+                                workspaceName: (0, w.jsx)(`span`, {
+                                    className: `text-token-text-primary font-semibold`,
+                                    children: F
+                                })
+                            }
+                        })
+                    })
+                }), e[192] = F, e[193] = n);
+                let r;
+                e[194] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, w.jsx)(v, {
+                    ...T.inviteGoHomeCta
+                }), e[194] = r) : r = e[194];
+                let i;
+                e[195] === Ft ? i = e[196] : (i = (0, w.jsx)(g, {
+                    onClick: Ft,
+                    children: r
+                }), e[195] = Ft, e[196] = i);
+                let a;
+                return e[197] !== U || e[198] !== n || e[199] !== i ? (a = U({
+                    title: t,
+                    content: n,
+                    actions: i,
+                    showActionError: !1
+                }), e[197] = U, e[198] = n, e[199] = i, e[200] = a) : a = e[200], a
+            }
+            if (L === `not_found`) {
+                let t;
+                e[201] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(v, {
+                    ...T.inviteNotFoundTitle
+                }), e[201] = t) : t = e[201];
+                let n;
+                e[202] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, w.jsx)(`p`, {
+                    className: `text-token-text-secondary max-w-md text-base`,
+                    children: (0, w.jsx)(v, {
+                        ...T.inviteNotFoundDescription
+                    })
+                }), e[202] = n) : n = e[202];
+                let r;
+                e[203] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, w.jsx)(v, {
+                    ...T.refreshStatusCta
+                }), e[203] = r) : r = e[203];
+                let i;
+                e[204] !== W || e[205] !== j.isFetching ? (i = (0, w.jsx)(g, {
+                    color: `secondary`,
+                    onClick: W,
+                    loading: j.isFetching,
+                    children: r
+                }), e[204] = W, e[205] = j.isFetching, e[206] = i) : i = e[206];
+                let a;
+                return e[207] !== U || e[208] !== i ? (a = U({
+                    title: t,
+                    content: n,
+                    actions: i,
+                    showActionError: !1
+                }), e[207] = U, e[208] = i, e[209] = a) : a = e[209], a
+            }
+            if (Ee(R)) {
+                let t;
+                e[210] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(v, {
+                    ...T.inviteVerificationFailedTitle
+                }), e[210] = t) : t = e[210];
+                let n;
+                e[211] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, w.jsx)(`p`, {
+                    className: `text-token-text-secondary max-w-md text-base`,
+                    children: (0, w.jsx)(v, {
+                        ...T.inviteVerificationFailedDescription
+                    })
+                }), e[211] = n) : n = e[211];
+                let r;
+                e[212] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, w.jsx)(v, {
+                    ...T.refreshStatusCta
+                }), e[212] = r) : r = e[212];
+                let i;
+                e[213] !== W || e[214] !== j.isFetching ? (i = (0, w.jsx)(g, {
+                    color: `secondary`,
+                    onClick: W,
+                    loading: j.isFetching,
+                    children: r
+                }), e[213] = W, e[214] = j.isFetching, e[215] = i) : i = e[215];
+                let a;
+                return e[216] !== U || e[217] !== i ? (a = U({
+                    title: t,
+                    content: n,
+                    actions: i
+                }), e[216] = U, e[217] = i, e[218] = a) : a = e[218], a
+            }
+            if (De(R)) {
+                let t;
+                e[219] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(v, {
+                    ...T.inviteVerifiedTitle
+                }), e[219] = t) : t = e[219];
+                let n;
+                e[220] === F ? n = e[221] : (n = (0, w.jsx)(`p`, {
+                    children: (0, w.jsx)(v, {
+                        ...T.inviteVerifiedDescription,
+                        values: {
+                            workspaceName: (0, w.jsx)(`span`, {
+                                className: `text-token-text-primary font-semibold`,
+                                children: F
+                            })
+                        }
+                    })
+                }), e[220] = F, e[221] = n);
+                let r;
+                e[222] === x ? r = e[223] : (r = x ? null : (0, w.jsx)(`p`, {
+                    className: `text-token-text-tertiary text-sm`,
+                    children: (0, w.jsx)(v, {
+                        ...T.inviteMissingWorkspace
+                    })
+                }), e[222] = x, e[223] = r);
+                let i;
+                e[224] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, w.jsx)(`p`, {
+                    className: `text-token-text-secondary`,
+                    children: (0, w.jsx)(v, {
+                        ...T.termsSummaryIntro
+                    })
+                }), e[224] = i) : i = e[224];
+                let a;
+                e[225] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, w.jsxs)(`div`, {
+                    className: `border-token-border-strong bg-token-main-surface-secondary rounded-2xl border px-4 py-4 text-sm`,
+                    children: [i, (0, w.jsx)(`ul`, {
+                        className: `text-token-text-primary mt-3 list-disc space-y-2 ps-4`,
+                        children: pt.map(ke)
+                    })]
+                }), e[225] = a) : a = e[225];
+                let o;
+                e[226] === Symbol.for(`react.memo_cache_sentinel`) ? (o = e => Ue(e.target.checked), e[226] = o) : o = e[226];
+                let s;
+                e[227] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, w.jsx)(v, {
+                    ...T.inviteAgreementLabel,
+                    values: {
+                        teacherAccessTermsLink: lt,
+                        studentDataPrivacyAgreementLink: dt
+                    }
+                }), e[227] = s) : s = e[227];
+                let c;
+                e[228] === N ? c = e[229] : (c = (0, w.jsx)(Se, {
+                    id: `invite-terms-agree`,
+                    checked: N,
+                    onChange: o,
+                    containerClassName: `flex items-start gap-2 text-sm`,
+                    label: s
+                }), e[228] = N, e[229] = c);
+                let l;
+                e[230] !== n || e[231] !== r || e[232] !== c ? (l = (0, w.jsxs)(`div`, {
+                    className: `text-token-text-secondary flex max-w-md flex-col gap-4 text-start text-base`,
+                    children: [n, r, a, c]
+                }), e[230] = n, e[231] = r, e[232] = c, e[233] = l) : l = e[233];
+                let ee = !x || !D || Ve || !N,
+                    u;
+                e[234] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, w.jsx)(v, {
+                    ...T.acceptInviteCta
+                }), e[234] = u) : u = e[234];
+                let d;
+                e[235] !== Dt || e[236] !== Ve || e[237] !== ee ? (d = (0, w.jsx)(g, {
+                    onClick: Dt,
+                    loading: Ve,
+                    disabled: ee,
+                    children: u
+                }), e[235] = Dt, e[236] = Ve, e[237] = ee, e[238] = d) : d = e[238];
+                let f;
+                e[239] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, w.jsx)(v, {
+                    ...T.refreshStatusCta
+                }), e[239] = f) : f = e[239];
+                let p;
+                e[240] !== W || e[241] !== j.isFetching ? (p = (0, w.jsx)(g, {
+                    color: `secondary`,
+                    onClick: W,
+                    loading: j.isFetching,
+                    children: f
+                }), e[240] = W, e[241] = j.isFetching, e[242] = p) : p = e[242];
+                let m;
+                e[243] !== d || e[244] !== p ? (m = (0, w.jsxs)(`div`, {
+                    className: `flex flex-col items-center gap-3`,
+                    children: [d, p]
+                }), e[243] = d, e[244] = p, e[245] = m) : m = e[245];
+                let h;
+                return e[246] !== U || e[247] !== l || e[248] !== m ? (h = U({
+                    title: t,
+                    content: l,
+                    actions: m
+                }), e[246] = U, e[247] = l, e[248] = m, e[249] = h) : h = e[249], h
+            }
+            if (L !== `pending` && L !== `requested`) {
+                let t;
+                e[250] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(v, {
+                    ...T.inviteUnknownTitle
+                }), e[250] = t) : t = e[250];
+                let n;
+                e[251] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, w.jsx)(`p`, {
+                    className: `text-token-text-secondary max-w-md text-base`,
+                    children: (0, w.jsx)(v, {
+                        ...T.inviteUnknownDescription
+                    })
+                }), e[251] = n) : n = e[251];
+                let r;
+                e[252] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, w.jsx)(v, {
+                    ...T.refreshStatusCta
+                }), e[252] = r) : r = e[252];
+                let i;
+                e[253] !== W || e[254] !== j.isFetching ? (i = (0, w.jsx)(g, {
+                    color: `secondary`,
+                    onClick: W,
+                    loading: j.isFetching,
+                    children: r
+                }), e[253] = W, e[254] = j.isFetching, e[255] = i) : i = e[255];
+                let a;
+                return e[256] !== U || e[257] !== i ? (a = U({
+                    title: t,
+                    content: n,
+                    actions: i
+                }), e[256] = U, e[257] = i, e[258] = a) : a = e[258], a
+            }
+            let Z;
+            e[259] === F ? Z = e[260] : (Z = (0, w.jsx)(`p`, {
+                className: `text-center`,
+                children: (0, w.jsx)(v, {
+                    ...T.inviteDescription,
+                    values: {
+                        workspaceName: (0, w.jsx)(`span`, {
+                            className: `text-token-text-primary font-semibold`,
+                            children: F
+                        })
+                    }
+                })
+            }), e[259] = F, e[260] = Z);
+            let Vt;
+            e[261] === Symbol.for(`react.memo_cache_sentinel`) ? (Vt = (0, w.jsx)(`p`, {
+                children: (0, w.jsx)(v, {
+                    ...T.invitePendingDescription
+                })
+            }), e[261] = Vt) : Vt = e[261];
+            let Q;
+            e[262] === x ? Q = e[263] : (Q = x ? null : (0, w.jsx)(`p`, {
+                className: `text-token-text-tertiary text-sm`,
+                children: (0, w.jsx)(v, {
+                    ...T.inviteMissingWorkspace
+                })
+            }), e[262] = x, e[263] = Q);
+            let Ht;
+            e[264] !== Z || e[265] !== Q ? (Ht = (0, w.jsxs)(`div`, {
+                className: `text-token-text-secondary flex max-w-md flex-col gap-3 text-base`,
+                children: [Z, Vt, Q]
+            }), e[264] = Z, e[265] = Q, e[266] = Ht) : Ht = e[266];
+            let Ut = Ht,
+                Wt;
+            e[267] === P ? Wt = e[268] : (Wt = (0, w.jsx)(v, {
+                ...T.inviteGreeting,
+                values: {
+                    email: P
+                }
+            }), e[267] = P, e[268] = Wt);
+            let Gt;
+            e[269] === Symbol.for(`react.memo_cache_sentinel`) ? (Gt = (0, w.jsx)(v, {
+                ...T.startVerificationCta
+            }), e[269] = Gt) : Gt = e[269];
+            let Kt;
+            e[270] !== Tt || e[271] !== ze ? (Kt = (0, w.jsx)(g, {
+                onClick: Tt,
+                loading: ze,
+                children: Gt
+            }), e[270] = Tt, e[271] = ze, e[272] = Kt) : Kt = e[272];
+            let qt;
+            e[273] === Symbol.for(`react.memo_cache_sentinel`) ? (qt = (0, w.jsx)(v, {
+                ...T.refreshStatusCta
+            }), e[273] = qt) : qt = e[273];
+            let Jt;
+            e[274] !== W || e[275] !== j.isFetching ? (Jt = (0, w.jsx)(g, {
+                color: `secondary`,
+                onClick: W,
+                loading: j.isFetching,
+                children: qt
+            }), e[274] = W, e[275] = j.isFetching, e[276] = Jt) : Jt = e[276];
+            let $;
+            e[277] !== Kt || e[278] !== Jt ? ($ = (0, w.jsxs)(`div`, {
+                className: `flex flex-col items-center gap-3`,
+                children: [Kt, Jt]
+            }), e[277] = Kt, e[278] = Jt, e[279] = $) : $ = e[279];
+            let Yt;
+            return e[280] !== Ut || e[281] !== U || e[282] !== Wt || e[283] !== $ ? (Yt = U({
+                title: Wt,
+                content: Ut,
+                actions: $
+            }), e[280] = Ut, e[281] = U, e[282] = Wt, e[283] = $, e[284] = Yt) : Yt = e[284], Yt
+        }
+    })),
+    Me, O, Ne, Pe = e((() => {
+        _(), Me = b(), je(), O = de(), Ne = ve(function() {
+            "use forget";
+            let e = (0, Me.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, O.jsx)(D, {}), e[0] = t) : t = e[0], t
+        })
+    }));
+e((() => {
+    Pe()
+}))();
+export {
+    Ne as
+    default
+};
+//# sourceMappingURL=k12-invite-hna5p3zi.js.map

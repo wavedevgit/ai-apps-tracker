@@ -1,0 +1,270 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    AT as n,
+    b5 as r,
+    kT as i,
+    o as a,
+    s as o,
+    y5 as s
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as c,
+    At as l,
+    Bn as u,
+    Rn as d,
+    Ut as f,
+    Vn as p,
+    Wt as m,
+    wn as h,
+    zn as g
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    n as _,
+    t as v
+} from "./2686af9f-d2qrll3k2995z1sk.js";
+import {
+    n as y,
+    t as b
+} from "./0bb44966-f6025kgxhv8lln6k.js";
+import {
+    r as x,
+    t as S
+} from "./e4a3058c-in9xmlfszw0y12du.js";
+import {
+    n as C,
+    t as w
+} from "./c553d4b9-ooqv4vr06oyr0p1k.js";
+import {
+    n as T,
+    t as E
+} from "./c677a4d7-gdf0xw4v7qe4r48c.js";
+
+function D(e, t) {
+    let n = [`-translate-x-1/2 md:translate-x-[calc(-50%+170px)] translate-y-[calc(-50%-50px)] md:translate-y-[calc(-50%-40px)] rotate-5 z-[5] md:group-hover:translate-x-[calc(-50%+355px)] group-hover:translate-y-[calc(-50%-145px)] md:group-hover:translate-y-[calc(-50%-75px)]`, `translate-x-[calc(-50%-135px)] translate-y-[calc(-50%-60px)] -rotate-4 group-hover:translate-x-[calc(-50%-245px)] group-hover:translate-y-[calc(-50%-100px)] hidden md:block`, `-translate-x-1/2 md:translate-x-[calc(-50%+155px)] translate-y-[calc(-50%+75px)] md:translate-y-[calc(-50%+60px)] -rotate-3 z-[10] md:group-hover:translate-x-[calc(-50%+315px)] group-hover:translate-y-[calc(-50%+140px)] md:group-hover:translate-y-[calc(-50%+100px)]`, `translate-x-[calc(-50%-125px)] translate-y-[calc(-50%+70px)] rotate-4 group-hover:translate-x-[calc(-50%-250px)] group-hover:translate-y-[calc(-50%+95px)] hidden md:block`][t];
+    return (0, j.jsx)(`div`, {
+        className: `transform-gpu ${n} absolute top-1/2 left-1/2 w-[320px] motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out md:w-[340px] lg:w-[480px]`,
+        children: (0, j.jsx)(E, {
+            title: e.title,
+            prompt: e.prompt,
+            clickAction: `none`,
+            className: `border-token-border-default bg-token-bg-primary! pointer-events-none border`
+        })
+    }, `${e.title}-${t}`)
+}
+
+function O() {
+    v.logPageView({
+        slug: `100chats-book`
+    })
+}
+var k, A, j, M, N, P, F, I, L = e((() => {
+    c(), k = h(), n(), C(), x(), T(), y(), _(), o(), r(), A = t(p()), d(), j = u(), M = `https://openai.com/form/100-chats-book-request/`, N = {
+        hasRouteMeta: !0,
+        useScrollRestoration: !0
+    }, P = () => {
+        let e = `100 Chats for College Students Project`,
+            t = `We invited 70 college students to show us how they use ChatGPT, it quickly became clear that these examples could help more students. `;
+        return [{
+            title: e
+        }, {
+            property: `og:site_name`,
+            content: `ChatGPT`
+        }, {
+            property: `og:type`,
+            content: `website`
+        }, {
+            property: `og:title`,
+            content: e
+        }, {
+            property: `og:url`,
+            content: `https://chatgpt.com/100chats-project`
+        }, {
+            name: `description`,
+            content: t
+        }, {
+            property: `og:description`,
+            content: t
+        }, {
+            property: `og:image`,
+            content: `https://cdn.openai.com/chatgpt/ctf-cdn/students/chatgpt-100-chats-cover.png`
+        }, {
+            property: `og:image:width`,
+            content: `2000`
+        }, {
+            property: `og:image:height`,
+            content: `1125`
+        }, {
+            property: `twitter:card`,
+            content: `summary_large_image`
+        }]
+    }, F = f(function() {
+        "use forget";
+        let e = (0, k.c)(27),
+            {
+                footerData: t,
+                headerNavData: n,
+                locale: r
+            } = l(),
+            a;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = [], e[0] = a) : a = e[0], (0, A.useEffect)(O, a);
+        let o = g(),
+            c;
+        e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (c = [{
+            title: `Create a quiz instantly`,
+            prompt: `I have an upcoming exam for philosophy. Create a practice quiz for me based on the material. Ask me each question one by one. The exam will be multiple choice, with brief explanations after each answer.`
+        }, {
+            title: `Find the right word`,
+            prompt: `What’s a word to fill in this gap: She gave him a ____ smile? I want to communicate that the smile was kind, but also slightly amused or ironic.`
+        }, {
+            title: `Explain like I’m ___`,
+            prompt: `Explain the solar system to me in 3 different levels of understanding: elementary school, high school, and college-level. Include short examples at each level.`
+        }, {
+            title: `Spot what’s wrong`,
+            prompt: `Write grammatically incorrect sentences in French, and I will try to fix them. Please provide corrections in English after I answer.`
+        }], e[1] = c) : c = e[1];
+        let u = c,
+            d;
+        e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (d = s(`relative mt-0! items-center overflow-hidden`, `bg-token-bg-elevated-secondary group h-[440px] max-md:w-full! md:rounded-2xl`), e[2] = d) : d = e[2];
+        let f;
+        e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, j.jsx)(`div`, {
+            className: `col-span-12`,
+            children: (0, j.jsxs)(`div`, {
+                className: `absolute start-0 top-0 mx-auto flex h-full w-full flex-wrap items-center justify-center`,
+                style: {
+                    maskImage: `radial-gradient(circle, black 50%, transparent 90%)`
+                },
+                children: [(0, j.jsx)(i, {
+                    as: `link`,
+                    to: `/100chats`,
+                    children: `See the Top 100 Chats`
+                }), u.map(D)]
+            })
+        }), e[3] = f) : f = e[3];
+        let p;
+        e[4] === o ? p = e[5] : (p = o.formatMessage({
+            id: `RC4NJT`,
+            defaultMessage: `Illustration of books`
+        }), e[4] = o, e[5] = p);
+        let m;
+        e[6] === p ? m = e[7] : (m = (0, j.jsx)(`img`, {
+            src: `https://cdn.openai.com/chatgpt/ctf-cdn/students/chat-book-books.png`,
+            alt: p,
+            className: `absolute -start-2 -bottom-10 hidden max-w-[240px] xl:block dark:hidden`
+        }), e[6] = p, e[7] = m);
+        let h;
+        e[8] === o ? h = e[9] : (h = o.formatMessage({
+            id: `p+Oi3x`,
+            defaultMessage: `Illustration of tubes`
+        }), e[8] = o, e[9] = h);
+        let _;
+        e[10] === h ? _ = e[11] : (_ = (0, j.jsx)(`img`, {
+            src: `https://cdn.openai.com/chatgpt/ctf-cdn/students/chat-book-tubes.png`,
+            alt: h,
+            className: `absolute -end-5 top-0 hidden max-w-[180px] xl:block dark:hidden`
+        }), e[10] = h, e[11] = _);
+        let v;
+        e[12] !== m || e[13] !== _ ? (v = (0, j.jsxs)(b, {
+            ariaLabelledby: `100-chats-book-hero`,
+            className: d,
+            contentWidth: `x-wide`,
+            children: [f, m, _]
+        }), e[12] = m, e[13] = _, e[14] = v) : v = e[14];
+        let y;
+        e[15] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, j.jsx)(`div`, {
+            className: `col-span-12 md:col-span-5 md:col-start-2`,
+            children: (0, j.jsx)(`h1`, {
+                id: `100-chats-book-title`,
+                className: `text-mkt-h2 text-balance`,
+                children: `100 Chats for College Students`
+            })
+        }), e[15] = y) : y = e[15];
+        let x;
+        e[16] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, j.jsxs)(b, {
+            ariaLabelledby: `100-chats-book-title`,
+            className: `my-20! md:my-28! md:max-w-screen-2xl`,
+            children: [y, (0, j.jsx)(`div`, {
+                className: `col-span-12 md:col-span-5 md:col-start-7`,
+                children: (0, j.jsxs)(`div`, {
+                    className: `text-mkt-h5 flex max-w-[520px] flex-col items-start gap-6`,
+                    children: [(0, j.jsx)(`p`, {
+                        children: `We invited 70 college students to show us how they use ChatGPT.`
+                    }), (0, j.jsx)(`p`, {
+                        children: `It quickly became clear that these examples could help more students. So we expanded the group, began testing and ranking the chats, and compiled the top 100 into a resource for students everywhere.`
+                    }), (0, j.jsx)(i, {
+                        as: `link`,
+                        to: `/100chats`,
+                        children: `See the Top 100 Chats`
+                    }), (0, j.jsx)(`p`, {
+                        children: `There’s also a printed book with all the chats. Students are handing them out at 50 colleges and universities across the U.S. and Canada.`
+                    }), (0, j.jsx)(`p`, {
+                        children: `The printed book is a limited edition. If you’re interested in a copy, fill out our book interest form, and we’ll contact you if we print more.`
+                    }), (0, j.jsx)(i, {
+                        as: `link`,
+                        to: M,
+                        children: `Request a book`
+                    })]
+                })
+            })]
+        }), e[16] = x) : x = e[16];
+        let C;
+        e[17] === Symbol.for(`react.memo_cache_sentinel`) ? (C = s(`relative mt-0! items-center overflow-hidden`, `px-0!`), e[17] = C) : C = e[17];
+        let T;
+        e[18] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, j.jsx)(b, {
+            ariaLabelledby: `100-chats-book-cover`,
+            className: C,
+            contentWidth: `x-wide`,
+            children: (0, j.jsx)(`div`, {
+                className: `col-span-12`,
+                children: (0, j.jsxs)(`div`, {
+                    className: `flex flex-col items-start gap-6`,
+                    children: [(0, j.jsx)(`img`, {
+                        src: `https://cdn.openai.com/chatgpt/ctf-cdn/students/chatgpt-100-chats-cover.png`,
+                        alt: `100 Chats for Studying, Career & college Life book cover`,
+                        className: `w-full rounded-2xl`
+                    }), (0, j.jsx)(`img`, {
+                        src: `https://cdn.openai.com/chatgpt/ctf-cdn/students/chatgpt-100-chats-chat-4.png`,
+                        alt: `100 Chats for Studying, Career & college Life book cover`,
+                        className: `w-full rounded-2xl`
+                    })]
+                })
+            })
+        }), e[18] = T) : T = e[18];
+        let E;
+        e[19] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, j.jsx)(S, {
+            title: `See the 100 chats`,
+            variant: `prefooter`,
+            cta: {
+                label: `See the Top 100 Chats`,
+                link: `/100chats`,
+                analyticsAction: `100chats-book-explore-chats`
+            },
+            contentWidth: `wide`,
+            contentType: `featurePage`,
+            className: `bg-token-bg-elevated-secondary! mt-10!`
+        }), e[19] = E) : E = e[19];
+        let N;
+        e[20] === v ? N = e[21] : (N = (0, j.jsxs)(`div`, {
+            className: `flex flex-col overflow-hidden pb-32`,
+            children: [v, x, T, E]
+        }), e[20] = v, e[21] = N);
+        let P;
+        return e[22] !== t || e[23] !== n || e[24] !== r || e[25] !== N ? (P = (0, j.jsx)(w, {
+            headerNav: n,
+            footer: t,
+            locale: r,
+            slug: `100chats-project`,
+            children: N
+        }), e[22] = t, e[23] = n, e[24] = r, e[25] = N, e[26] = P) : P = e[26], P
+    }), I = m(a)
+}));
+e((() => {
+    L()
+}))();
+export {
+    I as ErrorBoundary, F as
+    default, N as handle, P as meta
+};
+//# sourceMappingURL=(_lang).100chats-project-des9gxwu.js.map

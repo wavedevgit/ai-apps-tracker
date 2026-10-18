@@ -1,0 +1,59 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    AE as t,
+    kE as n
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    a as r,
+    f as i,
+    r as a,
+    u as o
+} from "./12ecfb5d-noztpx42cigxuot7.js";
+import {
+    i as s,
+    n as c,
+    s as l,
+    t as u
+} from "./58f127ca-obgb448743afeso0.js";
+var d, f, p, m, h, g = e((() => {
+    t(), l(), u(), i(), d = e => c(e), f = e => [e.id, e.template_id, n(e.id), e.template_id == null ? null : n(e.template_id)].some(e => e != null && d(e)), p = e => d(e) ? `microsoft-connector-link-oauth` : null, m = ({
+        connectorId: e,
+        permissions: t
+    }) => {
+        let n = o(e),
+            i = new Set(n?.actions.flatMap(e => e.scopes) ?? []),
+            a = Object.values(t?.approved_scopes_by_ext_tenant_id ?? {}).map(e => new Set(e.filter(e => i.has(e)))),
+            c = s({
+                connectorId: e,
+                approvedScopesByExtTenantId: t?.approved_scopes_by_ext_tenant_id
+            }),
+            l = new Set(n?.actions.map(e => e.actionName) ?? []),
+            u = new Set(n == null ? [] : a.flatMap(e => r(n, e)));
+        return {
+            approvedScopes: c,
+            mappedActionIds: l,
+            missingScopesByActionId: new Map(n?.actions.flatMap(e => {
+                let t = a.reduce((t, n) => {
+                    let r = e.scopes.filter(e => !n.has(e));
+                    return r.length < t.length ? r : t
+                }, [...e.scopes])[0];
+                return t == null ? [] : [
+                    [e.actionName, t]
+                ]
+            }) ?? []),
+            supportedActionIds: u
+        }
+    }, h = ({
+        connectorId: e,
+        permissions: t
+    }) => a.has(e) ? m({
+        connectorId: e,
+        permissions: t
+    }).approvedScopes.length === 0 : !1
+}));
+export {
+    d as a, g as i, p as n, f as o, h as r, m as t
+};
+//# sourceMappingURL=ea670f64-lktv1n0bakiceg2d.js.map

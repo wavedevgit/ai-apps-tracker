@@ -1,0 +1,536 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as n,
+    AR as r,
+    AT as i,
+    B6 as a,
+    B8 as o,
+    CR as s,
+    Ha as c,
+    JP as l,
+    Nrt as u,
+    Prt as d,
+    SR as f,
+    U1 as p,
+    V1 as ee,
+    Va as te,
+    dR as ne,
+    dot as re,
+    i5 as ie,
+    k1 as ae,
+    kT as oe,
+    ort as se,
+    pR as ce,
+    q1 as le,
+    uot as m,
+    urt as h,
+    xR as g,
+    zP as ue
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as de,
+    Bn as fe,
+    Nn as _,
+    Rn as pe,
+    Rt as me,
+    Vn as v,
+    at as he,
+    wn as ge,
+    zn as _e
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    C7 as ve,
+    E7 as ye,
+    Kjn as be,
+    O7 as xe,
+    S7 as y,
+    T7 as Se,
+    _Z as b,
+    gfn as x,
+    hfn as Ce,
+    ifn as S,
+    mfn as we,
+    nfn as C,
+    oY as w,
+    pZ as Te,
+    qjn as T,
+    sY as Ee,
+    tfn as E,
+    w7 as De
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    TC as D,
+    wC as O
+} from "./30901919-e33mbl5u1y88w5wu.js";
+import {
+    Fl as Oe,
+    Gh as k,
+    Gl as A,
+    Gs as ke,
+    Kh as Ae,
+    Ks as j,
+    Ll as je,
+    Nl as Me,
+    On as Ne,
+    Pl as Pe,
+    T_ as Fe,
+    Zg as M,
+    e_ as Ie,
+    jl as Le,
+    kn as Re,
+    ql as ze,
+    w_ as N
+} from "./8b34dbc2-gf9wnwcahty27ylx.js";
+import {
+    a as Be,
+    c as Ve,
+    i as P,
+    l as He,
+    n as F,
+    o as I,
+    r as Ue,
+    s as We,
+    t as Ge,
+    u as Ke
+} from "./cbffa3f1-fyuy1g6pzlonwbfe.js";
+
+function qe(e) {
+    return e.description ?? e.title
+}
+
+function Je(e) {
+    return {
+        id: B,
+        title: qe(e),
+        kind: `prompt_collection`,
+        presentation: `image_card`,
+        action: e.action ?? nt,
+        items: [e],
+        capabilities: []
+    }
+}
+
+function Ye({
+    suggestedPromptGroups: e,
+    promptItemId: t
+}) {
+    let n = !1,
+        r = e.flatMap(e => {
+            if (e.kind !== `prompt_collection` || e.items == null) return [e];
+            let r = e.items.filter(e => e.id !== t);
+            return r.length === e.items.length ? [e] : (n = !0, r.length > 0 ? [{
+                ...e,
+                items: r
+            }] : [])
+        });
+    return n ? r : e
+}
+
+function Xe() {
+    le(), ce({
+        authSessionLoggingId: ee(),
+        actionType: g.ACCESS_FLOW_ENTRY_ACTION_TYPE_LOGIN_OR_SIGNUP,
+        entryPoint: f.ACCESS_FLOW_ENTRY_POINT_LOGIN_MODAL,
+        entryTrigger: s.ACCESS_FLOW_ENTRY_TRIGGER_AUTOMATIC,
+        cta: V
+    })
+}
+
+function L(e) {
+    let t = e ? h(e) : null;
+    return t ? `/${t}/images` : `/images`
+}
+
+function Ze(e) {
+    "use forget";
+    let t = (0, et.c)(16),
+        {
+            trendTitle: n
+        } = e,
+        r = _e(),
+        {
+            lang: i
+        } = me(),
+        a;
+    t[0] === i ? a = t[1] : (a = L(i), t[0] = i, t[1] = a);
+    let o = a,
+        s;
+    t[2] === r ? s = t[3] : (s = r.formatMessage({
+        id: `image-gen.images-app.trending.breadcrumb.aria_label`,
+        defaultMessage: `Images breadcrumb`
+    }), t[2] = r, t[3] = s);
+    let c;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, z.jsx)(_, {
+        ...He
+    }), t[4] = c) : c = t[4];
+    let l;
+    t[5] === o ? l = t[6] : (l = (0, z.jsx)(`li`, {
+        className: `min-w-0 shrink-0`,
+        children: (0, z.jsx)(he, {
+            className: `text-token-text-primary hover:bg-token-bg-secondary focus-visible:bg-token-bg-secondary inline-flex items-center rounded-full px-3 py-1 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current`,
+            to: o,
+            children: c
+        })
+    }), t[5] = o, t[6] = l);
+    let u;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, z.jsx)(`li`, {
+        "aria-hidden": `true`,
+        className: `flex shrink-0 items-center`,
+        children: (0, z.jsx)(O, {
+            className: `size-3`
+        })
+    }), t[7] = u) : u = t[7];
+    let d;
+    t[8] === n ? d = t[9] : (d = (0, z.jsx)(`li`, {
+        "aria-current": `page`,
+        className: `min-w-0 truncate px-2`,
+        children: n
+    }), t[8] = n, t[9] = d);
+    let f;
+    t[10] !== l || t[11] !== d ? (f = (0, z.jsxs)(`ol`, {
+        className: `text-token-text-tertiary flex max-w-[min(420px,calc(100vw-32px))] min-w-0 items-center text-base leading-5`,
+        children: [l, u, d]
+    }), t[10] = l, t[11] = d, t[12] = f) : f = t[12];
+    let p;
+    return t[13] !== s || t[14] !== f ? (p = (0, z.jsx)(`nav`, {
+        "aria-label": s,
+        className: `absolute start-4 top-4 z-10 max-md:hidden`,
+        children: f
+    }), t[13] = s, t[14] = f, t[15] = p) : p = t[15], p
+}
+
+function Qe() {
+    return E()
+}
+
+function $e() {
+    return C()
+}
+var et, R, z, tt, B, V, nt, H, U, rt = e((() => {
+    et = ge(), i(), ne(), N(), l(), c(), D(), k(), Pe(), M(), ye(), x(), S(), p(), y(), A(), a(), w(), j(), ae(), b(), Ve(), I(), P(), Re(), Ke(), F(), u(), se(), m(), r(), T(), R = t(v()), pe(), de(), z = fe(), tt = [], B = `images_trending_template`, V = `images_trending_page_try_it`, nt = {
+        input_requirements: {
+            source: `camera_or_gallery`
+        },
+        strategy: `auto_send`
+    }, H = e => {
+        "use forget";
+        let t = (0, et.c)(11),
+            n = (0, R.use)(ue),
+            r;
+        t[0] === n ? r = t[1] : (r = re(n), t[0] = n, t[1] = r);
+        let i = r,
+            a;
+        t[2] !== i || t[3] !== e ? (a = () => {
+            (e.promptItem.action ?? nt).strategy === `auto_send` && ze(i), e.onTryIt?.()
+        }, t[2] = i, t[3] = e, t[4] = a) : a = t[4];
+        let o = a,
+            s;
+        t[5] !== o || t[6] !== e ? (s = (0, z.jsx)(U, {
+            ...e,
+            onFilesSelected: o
+        }, e.promptItem.id), t[5] = o, t[6] = e, t[7] = s) : s = t[7];
+        let c;
+        return t[8] !== o || t[9] !== s ? (c = (0, z.jsx)(Ge, {
+            onFilesSelected: o,
+            children: s
+        }), t[8] = o, t[9] = s, t[10] = c) : c = t[10], c
+    }, U = e => {
+        "use forget";
+        let t = (0, et.c)(108),
+            {
+                promptItem: r,
+                showAllPromptItems: i,
+                showPromptVariationDisclosure: a,
+                isPromptAltered: s,
+                showPromptTextPreview: c,
+                onTryItSelected: l,
+                onTryIt: u,
+                onFilesSelected: f
+            } = e,
+            p = i !== void 0 && i,
+            ee = a !== void 0 && a,
+            ne = s !== void 0 && s,
+            ae = c !== void 0 && c,
+            se = (0, R.use)(te),
+            ce = (0, R.use)(ue),
+            le;
+        t[0] === ce ? le = t[1] : (le = re(ce), t[0] = ce, t[1] = le);
+        let m = le,
+            h = Fe(),
+            g = Ae(),
+            de = (0, R.useRef)(0),
+            fe;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (fe = () => () => {
+            de.current += 1
+        }, t[2] = fe) : fe = t[2];
+        let pe;
+        t[3] !== h || t[4] !== m ? (pe = [h, m], t[3] = h, t[4] = m, t[5] = pe) : pe = t[5], (0, R.useEffect)(fe, pe);
+        let me;
+        t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (me = d(), t[6] = me) : me = t[6];
+        let v = me,
+            he = ie(ve),
+            ge = ie(Qe),
+            _e = ie($e),
+            ye = _e.groups ?? tt,
+            y;
+        t[7] !== r.id || t[8] !== ye ? (y = Ye({
+            suggestedPromptGroups: ye,
+            promptItemId: r.id
+        }), t[7] = r.id, t[8] = ye, t[9] = y) : y = t[9];
+        let b = y,
+            x;
+        t[10] === r ? x = t[11] : (x = Ce(r), t[10] = r, t[11] = x);
+        let S = x,
+            C;
+        t[12] === r ? C = t[13] : (C = qe(r), t[12] = r, t[13] = C);
+        let w = C,
+            T = r.action ?? nt,
+            E = T.input_requirements?.source ?? `prompt_only`,
+            D = E === `sketch` && u == null,
+            O;
+        t[14] !== h || t[15] !== m || t[16] !== D ? (O = () => D && Te(m)?.some(Ee) === !0 && ke(h).controller$()?.canOpenSketch === !0, t[14] = h, t[15] = m, t[16] = D, t[17] = O) : O = t[17];
+        let k = ie(O),
+            A;
+        t[18] !== h || t[19] !== g || t[20] !== D ? (A = () => {
+            if (!D) return !1;
+            let e = ke(h).controller$();
+            return g.files$().some(t => e?.isSketchUploadInFlight(t.tempId) === !0)
+        }, t[18] = h, t[19] = g, t[20] = D, t[21] = A) : A = t[21];
+        let j = ie(A),
+            Pe = E !== `prompt_only` && E !== `styles` && E !== `sketch`,
+            M = u != null && T.strategy === `auto_send` && Pe && (T.input_requirements?.min_count ?? 0) === 0,
+            Re = u != null && (T.input_requirements?.min_count ?? 0) > 0,
+            N = v && T.strategy === `auto_send` && Pe,
+            Ve;
+        t[22] !== m || t[23] !== r ? (Ve = () => {
+            let e = Je(r),
+                t = Se(e.items, r.id),
+                n = be.CHATGPT_IMAGE_PROMPT_SENT_SURFACE_TYPE_IMAGES;
+            return xe({
+                item: r,
+                group: e,
+                position: t,
+                surface: n
+            }), Oe(m, r), {
+                promptItem: r,
+                group: e,
+                surface: n,
+                position: t
+            }
+        }, t[22] = m, t[23] = r, t[24] = Ve) : Ve = t[24];
+        let P = Ve,
+            He;
+        t[25] !== M || t[26] !== k || t[27] !== h || t[28] !== m || t[29] !== g || t[30] !== E || t[31] !== D || t[32] !== u || t[33] !== l || t[34] !== se || t[35] !== r || t[36] !== P ? (He = e => {
+            let t = e !== void 0 && e;
+            if (l?.(), !v) {
+                Xe(), n({
+                    fallbackScreenHint: `login_or_signup`,
+                    skipLoginModal: !1,
+                    loginModalSubtitleVariant: `create-image-trending`,
+                    callbackUrl: window.location.href
+                });
+                return
+            }
+            let i = P(),
+                {
+                    group: a,
+                    position: s,
+                    surface: c
+                } = i;
+            if (D) {
+                if (!k) return;
+                let e = de.current + 1,
+                    t = () => de.current === e;
+                ke(h).controller$()?.openNewSketch({
+                    isRequestCurrent: t,
+                    onUploadComplete: e => {
+                        !t() || !d() || (Ie.set(m, i), Me({
+                            conversation: m,
+                            tempIds: [e],
+                            filePickerStore: g
+                        }))
+                    }
+                }) && (de.current = e);
+                return
+            }
+            if (u != null && a.action.strategy === `prefill_composer`) {
+                u();
+                return
+            }
+            if (E === `prompt_only` || E === `styles` || M && !t) {
+                ze(m), u?.(), Le({
+                    conversation: m,
+                    group: a,
+                    promptItem: r,
+                    surface: c,
+                    position: s
+                });
+                return
+            }
+            De({
+                openDialog: se,
+                openPicker: () => {
+                    o(() => {
+                        Ie.set(m, i), je({
+                            source: E === `camera` ? `camera` : `photos`
+                        })
+                    })
+                }
+            })
+        }, t[25] = M, t[26] = k, t[27] = h, t[28] = m, t[29] = g, t[30] = E, t[31] = D, t[32] = u, t[33] = l, t[34] = se, t[35] = r, t[36] = P, t[37] = He) : He = t[37];
+        let F = He,
+            I;
+        t[38] === r.title ? I = t[39] : (I = v && (0, z.jsx)(Ze, {
+            trendTitle: r.title
+        }), t[38] = r.title, t[39] = I);
+        let Ge;
+        t[40] === Symbol.for(`react.memo_cache_sentinel`) ? (Ge = (0, z.jsx)(We, {}), t[40] = Ge) : Ge = t[40];
+        let Ke = D || u != null && !N,
+            L;
+        t[41] !== N || t[42] !== m || t[43] !== u || t[44] !== l || t[45] !== r.id || t[46] !== P ? (L = () => {
+            u == null || !N || Ie(m)?.promptItem?.id === r.id || (l?.(), Ie.set(m, P()))
+        }, t[41] = N, t[42] = m, t[43] = u, t[44] = l, t[45] = r.id, t[46] = P, t[47] = L) : L = t[47];
+        let B;
+        t[48] !== N || t[49] !== f || t[50] !== u ? (B = e => {
+            u != null && N && e.length > 0 && f()
+        }, t[48] = N, t[49] = f, t[50] = u, t[51] = B) : B = t[51];
+        let V;
+        t[52] !== S || t[53] !== r ? (V = S && (0, z.jsx)(`div`, {
+            className: `bg-token-bg-secondary mb-7 w-full max-w-90 overflow-hidden rounded-3xl shadow-xs md:max-w-128`,
+            children: (0, z.jsx)(`img`, {
+                alt: we(r),
+                className: `aspect-[5/4] w-full object-cover md:aspect-[4/3]`,
+                fetchPriority: `high`,
+                src: S
+            })
+        }), t[52] = S, t[53] = r, t[54] = V) : V = t[54];
+        let H;
+        t[55] === w ? H = t[56] : (H = (0, z.jsx)(`h1`, {
+            className: `text-token-text-primary max-w-[720px] text-3xl leading-tight font-semibold text-balance max-md:text-2xl`,
+            children: w
+        }), t[55] = w, t[56] = H);
+        let U;
+        t[57] !== w || t[58] !== r.prompt_text || t[59] !== ae ? (U = ae && r.prompt_text?.trim() && (0, z.jsx)(`div`, {
+            className: `border-token-border-light focus-within:border-token-border-heavy mt-4 w-full max-w-128 rounded-xl border px-3 py-2`,
+            children: (0, z.jsx)(`textarea`, {
+                "aria-label": w,
+                className: `text-token-text-secondary field-sizing-content max-h-[3lh] min-h-[2lh] w-full resize-none overflow-y-auto border-0 bg-transparent p-0 text-start text-sm leading-5 focus:ring-0 focus:outline-none`,
+                readOnly: !0,
+                rows: 2,
+                spellCheck: !1,
+                value: r.prompt_text
+            })
+        }), t[57] = w, t[58] = r.prompt_text, t[59] = ae, t[60] = U) : U = t[60];
+        let rt = j || v && D && !k || he && v && Pe && T.strategy === `auto_send` && !M,
+            W;
+        t[61] === F ? W = t[62] : (W = () => F(), t[61] = F, t[62] = W);
+        let G;
+        t[63] !== T.strategy || t[64] !== u || t[65] !== Re ? (G = v && Re && T.strategy === `auto_send` ? (0, z.jsx)(_, {
+            id: `image-gen.images-app.trending.cta.add_image`,
+            defaultMessage: `Try it with an image`
+        }) : v && Re ? (0, z.jsx)(_, {
+            id: `image-gen.images-app.trending.cta.edit_and_add_image`,
+            defaultMessage: `Edit prompt and add an image`
+        }) : v && u != null ? (0, z.jsx)(_, {
+            id: `image-gen.images-app.trending.cta.prompt_share`,
+            defaultMessage: `Try this prompt`
+        }) : v ? (0, z.jsx)(_, {
+            id: `image-gen.images-app.trending.cta.try`,
+            defaultMessage: `Try it`
+        }) : (0, z.jsx)(_, {
+            id: `image-gen.images-app.trending.cta.login`,
+            defaultMessage: `Log in to try it`
+        }), t[63] = T.strategy, t[64] = u, t[65] = Re, t[66] = G) : G = t[66];
+        let K;
+        t[67] !== j || t[68] !== rt || t[69] !== W || t[70] !== G ? (K = (0, z.jsx)(oe, {
+            className: `min-w-44 rounded-full px-8`,
+            color: `primary`,
+            disabled: rt,
+            loading: j,
+            onClick: W,
+            size: `large`,
+            type: `button`,
+            children: G
+        }), t[67] = j, t[68] = rt, t[69] = W, t[70] = G, t[71] = K) : K = t[71];
+        let q;
+        t[72] !== M || t[73] !== he || t[74] !== F ? (q = v && M && (0, z.jsx)(oe, {
+            className: `min-w-44 rounded-full px-8`,
+            color: `secondary`,
+            disabled: he,
+            onClick: () => F(!0),
+            size: `large`,
+            type: `button`,
+            children: (0, z.jsx)(_, {
+                id: `image-gen.images-app.trending.cta.try_with_image`,
+                defaultMessage: `Try with an image`
+            })
+        }), t[72] = M, t[73] = he, t[74] = F, t[75] = q) : q = t[75];
+        let J;
+        t[76] !== K || t[77] !== q ? (J = (0, z.jsxs)(`div`, {
+            className: `mt-6 flex flex-wrap justify-center gap-3`,
+            children: [K, q]
+        }), t[76] = K, t[77] = q, t[78] = J) : J = t[78];
+        let Y;
+        t[79] !== ne || t[80] !== ee ? (Y = ee && (0, z.jsx)(`p`, {
+            className: `text-token-text-tertiary mt-2 text-center text-[13px] leading-[18px] tracking-[-0.08px]`,
+            children: ne ? (0, z.jsx)(_, {
+                id: `image-gen.images-app.trending.prompt_variation.description.altered`,
+                defaultMessage: `The same prompt may produce different images. This prompt was altered before sharing.`
+            }) : (0, z.jsx)(_, {
+                id: `image-gen.images-app.trending.prompt_variation.description`,
+                defaultMessage: `The same prompt may produce different images.`
+            })
+        }), t[79] = ne, t[80] = ee, t[81] = Y) : Y = t[81];
+        let X;
+        t[82] !== V || t[83] !== H || t[84] !== U || t[85] !== J || t[86] !== Y ? (X = (0, z.jsxs)(`section`, {
+            className: `max-w-app-content mx-auto flex w-full flex-col items-center px-(--images-app-padding) text-center md:mt-12`,
+            children: [V, H, U, J, Y]
+        }), t[82] = V, t[83] = H, t[84] = U, t[85] = J, t[86] = Y, t[87] = X) : X = t[87];
+        let it;
+        t[88] === Symbol.for(`react.memo_cache_sentinel`) ? (it = (0, z.jsx)(_, {
+            id: `image-gen.images-app.trending.explore_ideas`,
+            defaultMessage: `Explore ideas`
+        }), t[88] = it) : it = t[88];
+        let at = b.length === 0 && _e.isPending,
+            Z;
+        t[89] !== ge || t[90] !== p || t[91] !== b || t[92] !== at ? (Z = (0, z.jsx)(Ue, {
+            imageVariants: ge,
+            suggestedPromptGroups: b,
+            suggestedPromptGroupTitleOverride: it,
+            skeleton: at,
+            showAllPromptItems: p,
+            showPromptTabs: p,
+            hideImagesAppList: !0,
+            enablePromptClickRevamp: !1
+        }), t[89] = ge, t[90] = p, t[91] = b, t[92] = at, t[93] = Z) : Z = t[93];
+        let Q;
+        t[94] === D ? Q = t[95] : (Q = v && D && (0, z.jsx)(Be, {
+            hideComposerSurface: !0,
+            disableAutoFocus: !0,
+            disableDraftPersistence: !0,
+            draftRestorationMode: `disabled`,
+            promptOverride: ``
+        }), t[94] = D, t[95] = Q);
+        let $;
+        t[96] !== m || t[97] !== j || t[98] !== Ke || t[99] !== L || t[100] !== B || t[101] !== X || t[102] !== Z || t[103] !== Q ? ($ = (0, z.jsxs)(Ne, {
+            conversation: m,
+            inert: j,
+            disabled: Ke,
+            className: `flex flex-col gap-(--image-page-spacing) pb-24 max-md:pt-17 md:pt-10`,
+            onBeforeDropAccepted: L,
+            onDropAccepted: B,
+            children: [X, Z, Q]
+        }), t[96] = m, t[97] = j, t[98] = Ke, t[99] = L, t[100] = B, t[101] = X, t[102] = Z, t[103] = Q, t[104] = $) : $ = t[104];
+        let ot;
+        return t[105] !== I || t[106] !== $ ? (ot = (0, z.jsxs)(z.Fragment, {
+            children: [I, Ge, $]
+        }), t[105] = I, t[106] = $, t[107] = ot) : ot = t[107], ot
+    }
+}));
+export {
+    rt as n, H as t
+};
+//# sourceMappingURL=3f84cbf0-b8zazjbpaafc5ldx.js.map

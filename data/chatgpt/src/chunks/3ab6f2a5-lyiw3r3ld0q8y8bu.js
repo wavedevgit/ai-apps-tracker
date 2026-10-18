@@ -1,0 +1,92 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    B6 as t,
+    V6 as n,
+    mnt as r,
+    ynt as i
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    i as a,
+    n as o
+} from "./282bcbc3-lrdj3h36alg4vtbb.js";
+
+function s(e) {
+    return e.trim().toLowerCase()
+}
+
+function c(e) {
+    return s(decodeURIComponent(e.replace(/^#/, ``)).replaceAll(`-`, ` `))
+}
+
+function l(e) {
+    return c(e) === c(S) ? `businessEnterprise` : `individual`
+}
+
+function u(e) {
+    let t = c(e);
+    return C.some(e => c(e) === t)
+}
+
+function d(e) {
+    return new URLSearchParams(e).get(E) === w ? `businessEnterprise` : null
+}
+
+function f(e, t, n) {
+    return n ? d(e) ?? t : t
+}
+
+function p(e) {
+    return D.has(o(e))
+}
+
+function m() {
+    return d(window.location.search) ?? l(window.location.hash)
+}
+
+function h(e) {
+    if (typeof window > `u`) return;
+    let t = new URL(window.location.href);
+    t.searchParams.delete(T), e === `businessEnterprise` ? t.searchParams.set(E, w) : t.searchParams.delete(E), t.hash = ``, window.history.replaceState(window.history.state, ``, `${t.pathname}${t.search}${t.hash}`), window.dispatchEvent(new Event(O))
+}
+
+function g(e) {
+    let t = new URL(e);
+    return !p(t.pathname) || !u(t.hash) ? null : (t.searchParams.delete(T), t.searchParams.set(E, w), t.hash = ``, `${t.pathname}${t.search}`)
+}
+async function _() {
+    if (typeof window > `u`) return;
+    let e = window.location.href,
+        t = g(e);
+    t && t !== `${window.location.pathname}${window.location.search}${window.location.hash}` && (await r(), window.location.href === e && window.location.replace(t))
+}
+
+function v(e) {
+    let t = s(e);
+    return k.has(t) ? `individual` : `businessEnterprise`
+}
+
+function y(e, t) {
+    return v(e.deepLinkId ?? e.name) === t
+}
+
+function b(e, t) {
+    return e.filter(e => y(e, t))
+}
+
+function x(e, t, n) {
+    return n ? b(e, t) : [...e]
+}
+var S, C, w, T, E, D, O, k, A, j = e((() => {
+    t(), a(), i(), S = `#business`, C = [S, `#enterprise`], w = `team`, T = `audience`, E = `type`, D = new Set([`/pricing`, `/codex/pricing`]), O = `pricing-audience-segment-change`, k = new Set([`free`, `go`, `plus`, `pro`]), A = n(m, e => (window.addEventListener(`hashchange`, e), window.addEventListener(`popstate`, e), window.addEventListener(O, e), () => {
+        window.removeEventListener(`hashchange`, e), window.removeEventListener(`popstate`, e), window.removeEventListener(O, e)
+    }), {
+        getServerFallback: () => `individual`,
+        name: `pricingAudienceSegment`
+    })
+}));
+export {
+    A as a, p as i, x as n, _ as o, j as r, h as s, f as t
+};
+//# sourceMappingURL=3ab6f2a5-lyiw3r3ld0q8y8bu.js.map

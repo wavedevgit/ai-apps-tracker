@@ -1,0 +1,59 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    IO as n,
+    PO as r,
+    nk as i,
+    ok as a,
+    rk as o
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as s,
+    Bn as c,
+    Ut as l,
+    Vn as u,
+    ut as d,
+    wn as f,
+    xt as p
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    c as m,
+    s as h
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+async function g() {
+    await new Promise(e => setTimeout(e, 0)), a()
+}
+
+function _() {
+    r(`page_visit`)
+}
+var v, y, b, x, S, C, w = e((() => {
+    s(), v = f(), n(), i(), h(), y = t(u()), b = c(), x = {
+        hasRouteMeta: !0,
+        useScrollRestoration: !0
+    }, S = () => {
+        if (m(), !o()) throw p(`/`);
+        return {
+            isOutletBasedRoute: !0,
+            pageType: `shopping-home`,
+            prefetchSearch: null
+        }
+    }, g(), C = l(function() {
+        "use forget";
+        let e = (0, v.c)(2),
+            t;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = [], e[0] = t) : t = e[0], (0, y.useEffect)(_, t);
+        let n;
+        return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, b.jsx)(d, {}), e[1] = n) : n = e[1], n
+    })
+}));
+e((() => {
+    w()
+}))();
+export {
+    S as clientLoader, C as
+    default, x as handle
+};
+//# sourceMappingURL=(_lang).shopping-m1rnsq3n.js.map

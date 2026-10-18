@@ -1,0 +1,16 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t, n, r, i, a, o, s = e((() => {
+    t = `Xxcega_ActionRow`, n = `Xxcega_Description`, r = `Xxcega_EmptyMessage`, i = `Xxcega_IconBadge`, a = `Xxcega_Title`, o = {
+        ActionRow: t,
+        Description: n,
+        EmptyMessage: r,
+        IconBadge: i,
+        Title: a
+    }
+}));
+export {
+    s as n, o as t
+};
+//# sourceMappingURL=81d9a897-g8mmbtbyyumsyifs.js.map

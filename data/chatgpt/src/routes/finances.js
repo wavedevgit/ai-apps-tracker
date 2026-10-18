@@ -1,0 +1,3225 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $O as n,
+    AT as r,
+    B6 as i,
+    BK as a,
+    Btt as o,
+    Cet as s,
+    Dit as c,
+    E0 as l,
+    Ek as u,
+    FO as d,
+    Fz as f,
+    G2 as p,
+    Htt as m,
+    I$ as h,
+    IO as g,
+    Iz as _,
+    J$ as v,
+    J0 as y,
+    JP as b,
+    K2 as x,
+    K8 as S,
+    L$ as C,
+    LO as w,
+    M0 as T,
+    My as E,
+    NK as D,
+    Nrt as O,
+    Ok as k,
+    Pz as A,
+    QO as j,
+    Qit as M,
+    Sot as N,
+    T0 as P,
+    Th as F,
+    WK as I,
+    X$ as L,
+    XO as ee,
+    a7 as R,
+    aN as te,
+    b5 as z,
+    cA as ne,
+    c_ as re,
+    ck as ie,
+    cot as ae,
+    cu as B,
+    cy as oe,
+    dk as se,
+    dot as ce,
+    fU as le,
+    fy as ue,
+    fz as de,
+    gq as fe,
+    gv as pe,
+    hU as me,
+    i1 as he,
+    i5 as ge,
+    iat as _e,
+    iw as ve,
+    j8 as ye,
+    jO as be,
+    jy as xe,
+    kT as Se,
+    kit as Ce,
+    l7 as we,
+    lA as Te,
+    lot as Ee,
+    ly as De,
+    oq as Oe,
+    ow as ke,
+    pU as Ae,
+    pnt as je,
+    q0 as Me,
+    s_ as Ne,
+    sat as Pe,
+    sy as Fe,
+    tN as Ie,
+    tot as Le,
+    u1 as Re,
+    uot as ze,
+    uy as Be,
+    uz as Ve,
+    vN as He,
+    vv as Ue,
+    wh as We,
+    wk as Ge,
+    y5 as Ke,
+    yN as qe,
+    ynt as Je,
+    yot as Ye,
+    zO as Xe,
+    zP as Ze,
+    zet as Qe
+} from "./4813494d-cb22y2w19zwyshmt.js";
+import {
+    $ as $e,
+    At as et,
+    Bn as V,
+    Ht as tt,
+    In as nt,
+    Ln as rt,
+    Mt as it,
+    N as at,
+    Nn as H,
+    O as ot,
+    Pt as st,
+    Rn as U,
+    Ut as ct,
+    Vn as lt,
+    Zt as ut,
+    jt as dt,
+    lt as ft,
+    p as pt,
+    rn as mt,
+    s as ht,
+    ut as gt,
+    wn as W,
+    xt as _t,
+    zn as vt
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    $kt as yt,
+    Akt as bt,
+    Bkt as xt,
+    CAt as St,
+    Df as Ct,
+    Dkt as wt,
+    Dyn as Tt,
+    EGn as Et,
+    Ef as Dt,
+    Ekt as Ot,
+    Fkt as kt,
+    Gwn as At,
+    HUn as jt,
+    Hkt as Mt,
+    Ikt as Nt,
+    JSn as Pt,
+    Jm as Ft,
+    Okt as It,
+    Qkt as Lt,
+    S1 as Rt,
+    TGn as zt,
+    THn as Bt,
+    Tkt as Vt,
+    WUn as Ht,
+    Wkt as Ut,
+    Wwn as Wt,
+    Xkt as Gt,
+    YSn as Kt,
+    Ykt as qt,
+    Zkt as Jt,
+    Zm as Yt,
+    _Bt as Xt,
+    aW as Zt,
+    abn as Qt,
+    bkt as $t,
+    byn as en,
+    c as tn,
+    cCn as nn,
+    cPn as rn,
+    dPn as an,
+    dW as on,
+    fAt as sn,
+    gyn as cn,
+    iW as ln,
+    jkt as un,
+    jyn as dn,
+    kAt as fn,
+    kkt as pn,
+    lCn as mn,
+    lFt as hn,
+    lyn as gn,
+    pAt as _n,
+    rW as vn,
+    s as yn,
+    sW as bn,
+    sbn as xn,
+    uFt as Sn,
+    vBt as Cn,
+    vht as wn,
+    wAt as Tn,
+    wGn as En,
+    wHn as Dn,
+    x1 as On,
+    xkt as kn,
+    yht as An,
+    ykt as jn,
+    zkt as Mn
+} from "./conversation-small-fym1zmu9zimymmm1.js";
+import {
+    Ax as Nn,
+    Ex as Pn,
+    Fx as Fn,
+    Ix as In,
+    Kl as Ln,
+    Ol as Rn,
+    Qf as zn,
+    Sv as Bn,
+    Tx as Vn,
+    Zf as Hn,
+    kl as Un,
+    kx as Wn,
+    ql as Gn,
+    xv as Kn
+} from "./30901919-e33mbl5u1y88w5wu.js";
+import {
+    n as qn,
+    t as Jn
+} from "./7b12be43-dg8f6yql8gok6gax.js";
+import {
+    n as Yn,
+    t as Xn
+} from "./0cb8459d-mlutm5nwhcmq2mgm.js";
+import {
+    Xv as Zn,
+    Zv as Qn,
+    oS as $n,
+    rS as er
+} from "./c2675c8c-ig7dykzhv7vbqkt7.js";
+import {
+    n as tr,
+    t as nr
+} from "./bb47c0a1-d1hvam8myjas7ee8.js";
+import {
+    n as rr,
+    t as ir
+} from "./249dce54-oe9wn0ylphrt7fki.js";
+import {
+    $o as ar,
+    Bp as or,
+    C_ as sr,
+    Gn as cr,
+    I_ as lr,
+    Kn as ur,
+    Nt as dr,
+    Pt as fr,
+    R_ as pr,
+    TS as mr,
+    T_ as hr,
+    Uf as gr,
+    Vp as _r,
+    Wf as vr,
+    _S as yr,
+    as as br,
+    dS as xr,
+    es as Sr,
+    f as Cr,
+    is as wr,
+    m as Tr,
+    ts as Er,
+    w_ as Dr
+} from "./8b34dbc2-gf9wnwcahty27ylx.js";
+import {
+    n as Or,
+    t as kr
+} from "./9f7bb6d3-l9ls9y254izawjwa.js";
+import {
+    n as Ar,
+    t as jr
+} from "./dee3edb9-e5vsst7kpbi6gler.js";
+import {
+    o as Mr,
+    r as Nr
+} from "./6601bf01-l2hvb3ulv1nxkphc.js";
+import {
+    n as Pr,
+    r as Fr,
+    t as Ir
+} from "./4f866508-khnwgwvmnmyh78fa.js";
+import {
+    a as Lr,
+    n as Rr,
+    o as zr,
+    r as Br,
+    s as Vr,
+    t as Hr
+} from "./f19e94aa-fy844nfxeer0ix2z.js";
+import {
+    o as Ur,
+    r as Wr,
+    s as Gr
+} from "./4cf35c7a-drgejtr1y0lhb3xn.js";
+import {
+    n as Kr,
+    t as qr
+} from "./2bed0ed0-ocb44pb29ql57kkx.js";
+import {
+    n as Jr,
+    r as Yr,
+    t as Xr
+} from "./a84119fb-kyktunv8quaqjfyt.js";
+import {
+    n as Zr,
+    t as Qr
+} from "./c8eb857c-n5ibw7kj84q3qh0v.js";
+import {
+    _ as $r,
+    a as ei,
+    d as ti,
+    g as ni,
+    h as ri,
+    i as ii,
+    o as ai,
+    t as oi,
+    v as si
+} from "./3440a47b-gcldu6zwmx1z37jg.js";
+import {
+    c as ci,
+    i as li,
+    n as ui,
+    o as di,
+    s as fi,
+    t as pi
+} from "./84a03c8b-cdfml0tydxys2qlg.js";
+
+function mi(e) {
+    "use forget";
+    let t = (0, hi.c)(34),
+        {
+            authenticated: n,
+            children: r
+        } = e,
+        i = dt(),
+        a = st(),
+        o;
+    t[0] === i ? o = t[1] : (o = () => i, t[0] = i, t[1] = o);
+    let s = (0, gi.useEffectEvent)(o),
+        c = x(Vr),
+        l = i.pathname === B,
+        u;
+    t[2] !== l || t[3] !== i.search ? (u = l ? zr(i.search) : void 0, t[2] = l, t[3] = i.search, t[4] = u) : u = t[4];
+    let d = u,
+        f = l ? d === void 0 ? c ?? void 0 : d : void 0,
+        [p, m] = (0, gi.useState)(f),
+        [h, g] = (0, gi.useState)(`idle`);
+    f !== void 0 && p !== f ? (m(f), g(`idle`)) : !l && p !== void 0 && (m(void 0), g(`idle`));
+    let _;
+    t[5] !== n || t[6] !== s || t[7] !== l || t[8] !== d || t[9] !== a || t[10] !== h || t[11] !== p ? (_ = () => {
+        if (!l || p === void 0) return;
+        if (n) {
+            try {
+                sessionStorage.removeItem(Br)
+            } catch {}
+            if (d !== void 0) {
+                let {
+                    search: e,
+                    hash: t
+                } = s(), n = new URLSearchParams(e);
+                n.delete(`credit_alert`), a({
+                    pathname: B,
+                    search: n.toString(),
+                    hash: t
+                }, {
+                    replace: !0
+                });
+                return
+            }
+        }
+        if (!p || h !== `idle`) return;
+        let e = new AbortController,
+            t = !1,
+            r = !0,
+            i = async () => {
+                if (t || r || e.signal.aborted || document.visibilityState !== `visible`) return;
+                if (t = !0, !n) {
+                    try {
+                        sessionStorage.setItem(Br, p)
+                    } catch {
+                        g(`unavailable`);
+                        return
+                    }
+                    a(`/auth/login?next=${encodeURIComponent(B)}`, {
+                        replace: !0
+                    });
+                    return
+                }
+                let i = he();
+                if (!i?.normalizedAccountUserId) {
+                    g(`unavailable`);
+                    return
+                }
+                let {
+                    id: o,
+                    normalizedAccountUserId: s
+                } = i, c = () => {
+                    let e = he();
+                    return e?.id === o && e?.normalizedAccountUserId === s
+                };
+                try {
+                    let t = await yt(`/aip/ledger/credit/alerts/{notification_token}/open`, {
+                        path: {
+                            notification_token: p
+                        }
+                    }, {
+                        signal: e.signal
+                    });
+                    if (e.signal.aborted) return;
+                    c() ? t.conversation_id ? await a(`/c/${encodeURIComponent(t.conversation_id)}`, {
+                        replace: !0
+                    }) : g(t.retryable ? `retry` : `unavailable`) : g(`unavailable`)
+                } catch {
+                    e.signal.aborted || g(c() ? `retry` : `unavailable`)
+                }
+            }, o = ye(() => n && !L() && v().isLoading, e => {
+                r = e, queueMicrotask(i)
+            }, {
+                fireImmediately: !0
+            });
+        return document.addEventListener(`visibilitychange`, i, {
+            signal: e.signal
+        }), () => {
+            e.abort(), o()
+        }
+    }, t[5] = n, t[6] = s, t[7] = l, t[8] = d, t[9] = a, t[10] = h, t[11] = p, t[12] = _) : _ = t[12];
+    let y;
+    if (t[13] !== n || t[14] !== l || t[15] !== d || t[16] !== a || t[17] !== h || t[18] !== p ? (y = [n, l, d, a, h, p], t[13] = n, t[14] = l, t[15] = d, t[16] = a, t[17] = h, t[18] = p, t[19] = y) : y = t[19], (0, gi.useEffect)(_, y), !l || p === void 0) return r;
+    if (p && h === `idle`) {
+        let e;
+        return t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, _i.jsx)(Ve, {}), t[20] = e) : e = t[20], e
+    }
+    let b;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (b = (0, _i.jsx)(`h1`, {
+        id: `credit-alert-heading`,
+        className: `text-xl font-semibold`,
+        children: (0, _i.jsx)(H, {
+            id: `mattress.creditAlert.entry.title`,
+            defaultMessage: `Credit alert`
+        })
+    }), t[21] = b) : b = t[21];
+    let S;
+    t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, _i.jsx)(`p`, {
+        role: `status`,
+        children: (0, _i.jsx)(H, {
+            id: `mattress.creditAlert.entry.unavailable`,
+            defaultMessage: `This alert could not be opened.`
+        })
+    }), t[22] = S) : S = t[22];
+    let C;
+    t[23] !== h || t[24] !== p ? (C = p && h === `retry` && (0, _i.jsx)(Se, {
+        type: `button`,
+        onClick: () => g(`idle`),
+        children: (0, _i.jsx)(H, {
+            id: `mattress.creditAlert.entry.retry`,
+            defaultMessage: `Try again`
+        })
+    }), t[23] = h, t[24] = p, t[25] = C) : C = t[25];
+    let w;
+    t[26] === a ? w = t[27] : (w = () => {
+        a(B, {
+            replace: !0
+        }), m(void 0)
+    }, t[26] = a, t[27] = w);
+    let T;
+    t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, _i.jsx)(H, {
+        id: `mattress.creditAlert.entry.back`,
+        defaultMessage: `Back to Finances`
+    }), t[28] = T) : T = t[28];
+    let E;
+    t[29] === w ? E = t[30] : (E = (0, _i.jsx)(Se, {
+        type: `button`,
+        color: `secondary`,
+        onClick: w,
+        children: T
+    }), t[29] = w, t[30] = E);
+    let D;
+    return t[31] !== E || t[32] !== C ? (D = (0, _i.jsxs)(`section`, {
+        className: `mx-auto flex max-w-lg flex-col items-center gap-4 p-8 text-center`,
+        "aria-labelledby": `credit-alert-heading`,
+        children: [b, S, C, E]
+    }), t[31] = E, t[32] = C, t[33] = D) : D = t[33], D
+}
+var hi, gi, _i, vi = e((() => {
+    hi = W(), r(), de(), fn(), Lr(), Gt(), i(), Re(), p(), gi = t(lt()), U(), $e(), _i = V()
+}));
+
+function yi(e) {
+    "use forget";
+    let t = (0, xi.c)(26),
+        {
+            pageData: n,
+            locale: r
+        } = e,
+        i = (0, Si.use)(Ze),
+        a;
+    t[0] === i ? a = t[1] : (a = ce(i), t[0] = i, t[1] = a);
+    let o = a,
+        s;
+    t[2] === o ? s = t[3] : (s = () => gn(o).id, t[2] = o, t[3] = s);
+    let c = ge(s),
+        l = vt(),
+        u = st(),
+        d;
+    t[4] === n?.sections ? d = t[5] : (d = n?.sections ?? [], t[4] = n?.sections, t[5] = d);
+    let f = d,
+        p;
+    t[6] === u ? p = t[7] : (p = () => {
+        u(Ci)
+    }, t[6] = u, t[7] = p);
+    let m = p,
+        h;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, G.jsx)(`h1`, {
+        className: `pb-4 text-4xl font-medium md:pb-6`,
+        children: (0, G.jsx)(H, {
+            ...Ti.title
+        })
+    }), t[8] = h) : h = t[8];
+    let g;
+    t[9] === l ? g = t[10] : (g = l.formatMessage(Ti.composerPlaceholder), t[9] = l, t[10] = g);
+    let _;
+    t[11] !== o || t[12] !== c || t[13] !== m || t[14] !== g ? (_ = (0, G.jsx)(hn, {
+        children: (0, G.jsx)(cr, {
+            conversation: o,
+            currentModelId: c,
+            isNewThread: !0,
+            isProjectThread: !1,
+            entrySurface: `personal_finance`,
+            disableDraftPersistence: !0,
+            hideHeader: !0,
+            hideSystemHint: !0,
+            hideModelFooterControl: !0,
+            disableAdvancedVoiceMode: !0,
+            ariaLabel: g,
+            placeholder: Ti.composerPlaceholder,
+            onContinueGenerating: m,
+            onRequestCompletion: m
+        })
+    }), t[11] = o, t[12] = c, t[13] = m, t[14] = g, t[15] = _) : _ = t[15];
+    let v;
+    t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, G.jsx)(`p`, {
+        className: `text-token-text-tertiary mt-3 text-center text-xs`,
+        children: (0, G.jsx)(H, {
+            ...Ti.availabilityDisclaimer
+        })
+    }), t[16] = v) : v = t[16];
+    let y;
+    t[17] === _ ? y = t[18] : (y = (0, G.jsx)(ir, {
+        contentWidth: `wide`,
+        children: (0, G.jsxs)(`div`, {
+            className: `col-span-12 flex flex-col xl:col-span-10 xl:col-start-2`,
+            children: [h, (0, G.jsxs)(`section`, {
+                className: `flex flex-col`,
+                children: [_, v]
+            })]
+        })
+    }), t[17] = _, t[18] = y);
+    let b;
+    t[19] !== r || t[20] !== n || t[21] !== f ? (b = f.length > 0 || n?.prefooter ? (0, G.jsxs)(nr, {
+        effectiveLocale: r,
+        slug: n?.slug ?? wi,
+        children: [(0, G.jsx)(`section`, {
+            className: `flex flex-col overflow-hidden [&>section:first-child]:mt-8 sm:[&>section:first-child]:mt-12`,
+            children: f.map(bi)
+        }), (0, G.jsx)(`p`, {
+            className: `text-token-text-secondary p-4 text-center text-xs`,
+            children: (0, G.jsx)(H, {
+                ...Ti.legalDisclaimer
+            })
+        }), n?.prefooter ? (0, G.jsx)(`section`, {
+            className: `p-8 md:p-12`,
+            children: Yn(n.prefooter, Jn)
+        }) : null]
+    }) : null, t[19] = r, t[20] = n, t[21] = f, t[22] = b) : b = t[22];
+    let x;
+    return t[23] !== y || t[24] !== b ? (x = (0, G.jsxs)(`div`, {
+        className: `font-oai text-token-text-primary min-h-full`,
+        children: [y, b]
+    }), t[23] = y, t[24] = b, t[25] = x) : x = t[25], x
+}
+
+function bi(e) {
+    return Yn(e, Jn)
+}
+var xi, Si, G, Ci, wi, Ti, Ei = e((() => {
+    xi = W(), Sn(), ur(), qn(), rr(), tr(), Xn(), b(), fn(), cn(), i(), ze(), Si = t(lt()), U(), $e(), G = V(), Ci = `/auth/login?next=${encodeURIComponent(B)}`, wi = `${B}/`, Ti = rt({
+        title: {
+            id: `mattressLandingPage.financeTitle`,
+            defaultMessage: `Finances`
+        },
+        composerPlaceholder: {
+            id: `mattressLandingPage.composerPlaceholder`,
+            defaultMessage: `Ask ChatGPT`
+        },
+        availabilityDisclaimer: {
+            id: `financesNoAuthPage.availabilityDisclaimer.freeGoPlusAndPro`,
+            defaultMessage: `ChatGPT Finances is available to users in the U.S. on Free, Go, Plus and Pro plans.`
+        },
+        legalDisclaimer: {
+            id: `financesNoAuthPage.legalDisclaimer`,
+            defaultMessage: `ChatGPT is not a replacement for professional financial advice.`
+        }
+    })
+}));
+
+function Di(e) {
+    return typeof e == `object` && !!e
+}
+
+function Oi(e) {
+    return Di(e) && typeof e.dataset == `string` && typeof e.file_id == `string` && typeof e.file_name == `string`
+}
+
+function ki(e) {
+    return Di(e) && Array.isArray(e.files) && e.files.every(Oi)
+}
+
+function Ai() {
+    return je(Pi)
+}
+
+function ji() {
+    return Jt() ? Lt(`/aip/ledger/files`) : R.safeGet(`/aip/ledger/files`)
+}
+async function Mi() {
+    let e = await R.safeGet(`/aip/ledger/files/download_zip`, {
+        skipJsonTransform: !0
+    });
+    nn(await e.blob(), Pt(e.headers.get(`content-disposition`)) ?? `finances-files-${new Date().toISOString().slice(0,10)}.zip`)
+}
+async function Ni() {
+    if (!Ai()) throw Error(`Finances files download is not enabled`);
+    await Mi();
+    try {
+        let e = await ji();
+        return ki(e) ? {
+            fileCount: e.files.length
+        } : (console.error(`Finances files manifest response was invalid`, e), {
+            fileCount: null
+        })
+    } catch (e) {
+        return console.error(`Failed to load Finances files manifest after starting download`, e), {
+            fileCount: null
+        }
+    }
+}
+var Pi, Fi = e((() => {
+    mn(), Kt(), we(), Je(), Gt(), Pi = `4197640960`
+}));
+
+function Ii(e) {
+    "use forget";
+    let t = (0, Ri.c)(43),
+        {
+            isOpen: n,
+            onClose: r
+        } = e,
+        i = vt(),
+        a = me(),
+        o = at(),
+        [s, c] = (0, zi.useState)(null),
+        l;
+    t[0] === n ? l = t[1] : (l = {
+        queryKey: wt,
+        queryFn: kt,
+        enabled: n,
+        refetchOnMount: `always`
+    }, t[0] = n, t[1] = l);
+    let {
+        data: u,
+        isLoading: d,
+        isError: f,
+        refetch: p
+    } = ot(l), m;
+    t[2] === u ? m = t[3] : (m = u === void 0 ? [] : u, t[2] = u, t[3] = m);
+    let h = m,
+        g;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (g = async e => {
+        c(e.id), await un(e.id, e.correction_revision)
+    }, t[4] = g) : g = t[4];
+    let _;
+    t[5] === o ? _ = t[6] : (_ = () => {
+        o.invalidateQueries({
+            queryKey: wt
+        }), o.invalidateQueries({
+            queryKey: pn
+        }), o.invalidateQueries({
+            queryKey: Ot
+        }), o.invalidateQueries({
+            queryKey: Vt
+        })
+    }, t[5] = o, t[6] = _);
+    let v;
+    t[7] !== o || t[8] !== a ? (v = e => {
+        o.invalidateQueries({
+            queryKey: wt
+        }), a.danger(Bi.deleteFinanceMemoryError, {
+            error: e
+        })
+    }, t[7] = o, t[8] = a, t[9] = v) : v = t[9];
+    let y;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (y = () => {
+        c(null)
+    }, t[10] = y) : y = t[10];
+    let b;
+    t[11] !== _ || t[12] !== v ? (b = {
+        mutationFn: g,
+        onSuccess: _,
+        onError: v,
+        onSettled: y
+    }, t[11] = _, t[12] = v, t[13] = b) : b = t[13];
+    let x = pt(b),
+        S;
+    if (d) {
+        let e;
+        t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, K.jsx)(`div`, {
+            className: `space-y-2 px-1`,
+            "aria-busy": !0,
+            children: [0, 1, 2].map(Li)
+        }), t[14] = e) : e = t[14], S = e
+    } else if (f) {
+        let e;
+        t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, K.jsx)(`p`, {
+            className: `text-token-text-tertiary text-base`,
+            children: (0, K.jsx)(H, {
+                ...Bi.financeMemoriesLoadError
+            })
+        }), t[15] = e) : e = t[15];
+        let n;
+        t[16] === p ? n = t[17] : (n = () => {
+            p()
+        }, t[16] = p, t[17] = n);
+        let r;
+        t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, K.jsx)(H, {
+            ...Bi.retryFinanceMemoriesLoad
+        }), t[18] = r) : r = t[18];
+        let i;
+        t[19] === n ? i = t[20] : (i = (0, K.jsxs)(`div`, {
+            className: `flex flex-col items-center gap-3 px-6 py-10 text-center`,
+            children: [e, (0, K.jsx)(Se, {
+                size: `small`,
+                color: `secondary`,
+                onClick: n,
+                children: r
+            })]
+        }), t[19] = n, t[20] = i), S = i
+    } else if (h.length === 0) {
+        let e;
+        t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, K.jsx)(`div`, {
+            className: `px-6 py-10 text-center`,
+            children: (0, K.jsx)(`p`, {
+                className: `text-token-text-tertiary text-base`,
+                children: (0, K.jsx)(H, {
+                    ...Bi.financeMemoriesEmptyState
+                })
+            })
+        }), t[21] = e) : e = t[21], S = e
+    } else {
+        let e;
+        if (t[22] !== x || t[23] !== s || t[24] !== i || t[25] !== h) {
+            let n;
+            t[27] !== x || t[28] !== s || t[29] !== i || t[30] !== h.length ? (n = (e, t) => (0, K.jsxs)(Zn.Row, {
+                className: Ke(t === h.length - 1 ? `` : `border-token-border-light border-b`),
+                disabled: s === e.id,
+                children: [(0, K.jsx)(Zn.Cell, {
+                    children: (0, K.jsxs)(`div`, {
+                        className: `min-w-0 py-2`,
+                        children: [(0, K.jsx)(`p`, {
+                            className: `text-token-text-primary whitespace-pre-wrap`,
+                            children: e.title
+                        }), e.description ? (0, K.jsx)(`p`, {
+                            className: `text-token-text-tertiary mt-1 text-sm whitespace-pre-wrap`,
+                            children: e.description
+                        }) : null]
+                    })
+                }), (0, K.jsx)(Zn.Cell, {
+                    textAlign: `right`,
+                    children: (0, K.jsx)(Zn.Actions, {
+                        children: (0, K.jsx)(`button`, {
+                            type: `button`,
+                            "aria-label": i.formatMessage(Bi.deleteFinanceMemory),
+                            disabled: s === e.id,
+                            onClick: () => x.mutate(e),
+                            className: `text-token-text-tertiary hover:text-token-text-secondary disabled:opacity-50`,
+                            children: (0, K.jsx)(xe, {
+                                className: `leading-none`,
+                                label: i.formatMessage(Bi.deleteFinanceMemory),
+                                side: `top`,
+                                children: (0, K.jsx)(Bn, {
+                                    className: `icon-sm`
+                                })
+                            })
+                        })
+                    })
+                })]
+            }, e.id), t[27] = x, t[28] = s, t[29] = i, t[30] = h.length, t[31] = n) : n = t[31], e = h.map(n), t[22] = x, t[23] = s, t[24] = i, t[25] = h, t[26] = e
+        } else e = t[26];
+        let n;
+        t[32] === e ? n = t[33] : (n = (0, K.jsx)(Zn.Root, {
+            size: `compact`,
+            children: (0, K.jsx)(Zn.Body, {
+                children: e
+            })
+        }), t[32] = e, t[33] = n), S = n
+    }
+    let C;
+    t[34] === i ? C = t[35] : (C = i.formatMessage(Bi.savedFinanceMemoriesTitle), t[34] = i, t[35] = C);
+    let w;
+    t[36] === S ? w = t[37] : (w = (0, K.jsx)(`div`, {
+        className: `h-[24rem]`,
+        children: S
+    }), t[36] = S, t[37] = w);
+    let T;
+    return t[38] !== n || t[39] !== r || t[40] !== w || t[41] !== C ? (T = (0, K.jsx)(ve, {
+        testId: `modal-finance-memories`,
+        isOpen: n,
+        onClose: r,
+        size: `custom`,
+        className: `max-w-2xl`,
+        title: C,
+        showCloseButton: !0,
+        children: w
+    }), t[38] = n, t[39] = r, t[40] = w, t[41] = C, t[42] = T) : T = t[42], T
+}
+
+function Li(e) {
+    return (0, K.jsx)(`div`, {
+        className: `skeleton h-14 rounded-2xl`
+    }, e)
+}
+var Ri, zi, K, Bi, Vi = e((() => {
+    Ri = W(), r(), Kn(), ke(), Qn(), E(), Ut(), Ae(), ht(), z(), zi = t(lt()), U(), K = V(), Bi = rt({
+        savedFinanceMemoriesTitle: {
+            id: `mattressFinanceMemoriesModal.savedFinanceMemoriesTitle`,
+            defaultMessage: `Saved financial memories`
+        },
+        financeMemoriesEmptyState: {
+            id: `mattressFinanceMemoriesModal.financeMemoriesEmptyState`,
+            defaultMessage: `No saved financial memories yet`
+        },
+        financeMemoriesLoadError: {
+            id: `mattressFinanceMemoriesModal.financeMemoriesLoadError`,
+            defaultMessage: `We couldn't load your saved financial memories`
+        },
+        retryFinanceMemoriesLoad: {
+            id: `mattressFinanceMemoriesModal.retryFinanceMemoriesLoad`,
+            defaultMessage: `Retry`
+        },
+        deleteFinanceMemory: {
+            id: `mattressFinanceMemoriesModal.deleteFinanceMemory`,
+            defaultMessage: `Delete memory`
+        },
+        deleteFinanceMemoryError: {
+            id: `mattressFinanceMemoriesModal.deleteFinanceMemoryError`,
+            defaultMessage: `Failed to delete financial memory`
+        }
+    })
+}));
+async function Hi({
+    intl: e,
+    toaster: t,
+    onSettled: n
+}) {
+    try {
+        let {
+            fileCount: n
+        } = await Ni();
+        if (n === 0) {
+            t.info(e.formatMessage(J.financeFilesExportEmpty));
+            return
+        }
+        t.success(n == null ? e.formatMessage(J.financeFilesExportStartedGeneric) : e.formatMessage(J.financeFilesExportStarted, {
+            fileCount: n
+        }))
+    } catch (n) {
+        console.error(`Finance files download failed`, n), t.warning(e.formatMessage(J.financeFilesExportFailed))
+    } finally {
+        n()
+    }
+}
+
+function Ui(e) {
+    "use forget";
+    let t = (0, Ki.c)(30),
+        {
+            children: r
+        } = e,
+        i = vt(),
+        a;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = le(), t[0] = a) : a = t[0];
+    let o = a,
+        s = at(),
+        c = ge(w),
+        [l, u] = (0, qi.useState)(!1),
+        [f, p] = (0, qi.useState)(!1),
+        [m, h] = (0, qi.useState)(!1),
+        g;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (g = Ai(), t[1] = g) : g = t[1];
+    let _ = g,
+        v;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (v = se(), t[2] = v) : v = t[2];
+    let y = v,
+        {
+            sensitiveValuesHidden: b,
+            setSensitiveValuesHidden: x
+        } = Gr(),
+        S;
+    t[3] !== i || t[4] !== f ? (S = () => {
+        f || !_ || (p(!0), Hi({
+            intl: i,
+            toaster: o,
+            onSettled: () => p(!1)
+        }))
+    }, t[3] = i, t[4] = f, t[5] = S) : S = t[5];
+    let C = S,
+        T;
+    t[6] !== b || t[7] !== x ? (T = () => {
+        x(!b)
+    }, t[6] = b, t[7] = x, t[8] = T) : T = t[8];
+    let E = T,
+        D;
+    t[9] !== i || t[10] !== m || t[11] !== c || t[12] !== s ? (D = async () => {
+        if (m) return;
+        let e = s.getQueryData(d().queryKey);
+        if (!c && Xe(e, `feature`, `finance`)) {
+            re(i);
+            return
+        }
+        let t = c ? J.financesUnpinned : J.financesPinned;
+        h(!0), await be(s);
+        try {
+            if (c) await R.safeDelete(`/pins/{item_type}/{item_id}`, {
+                parameters: {
+                    path: {
+                        item_type: `feature`,
+                        item_id: `finance`
+                    }
+                }
+            }), s.setQueryData(d().queryKey, ee(`feature`, `finance`));
+            else {
+                let e = await R.safePost(`/pins/{item_type}/{item_id}`, {
+                    parameters: {
+                        path: {
+                            item_type: `feature`,
+                            item_id: `finance`
+                        }
+                    }
+                });
+                s.setQueryData(d().queryKey, n(e.item))
+            }
+            j(s), o.success(i.formatMessage(t), {
+                duration: 2
+            }), h(!1)
+        } catch (t) {
+            let n = t;
+            s.setQueryData(d().queryKey, e), s.invalidateQueries({
+                queryKey: d().queryKey,
+                refetchType: `all`
+            }), o.warning(Pe(n) ?? `Error`, {
+                duration: 2
+            }), h(!1)
+        }
+    }, t[9] = i, t[10] = m, t[11] = c, t[12] = s, t[13] = D) : D = t[13];
+    let O = D,
+        k;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (k = () => u(!0), t[14] = k) : k = t[14];
+    let A;
+    t[15] !== C || t[16] !== O || t[17] !== E || t[18] !== f || t[19] !== m || t[20] !== c || t[21] !== b ? (A = {
+        canDownloadLedgerFiles: _,
+        handleDownloadFinanceFilesZip: C,
+        handleFinancePinToggle: O,
+        handleSensitiveValuesVisibilityToggle: E,
+        isFinanceFilesZipPreparing: f,
+        isFinancePinUpdating: m,
+        isFinancePinned: c,
+        onOpenMemories: k,
+        sensitiveValuesHidden: b,
+        shouldShowFinancePinAction: y
+    }, t[15] = C, t[16] = O, t[17] = E, t[18] = f, t[19] = m, t[20] = c, t[21] = b, t[22] = A) : A = t[22];
+    let M = A,
+        N;
+    t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (N = () => u(!1), t[23] = N) : N = t[23];
+    let P;
+    t[24] === l ? P = t[25] : (P = (0, q.jsx)(Ii, {
+        isOpen: l,
+        onClose: N
+    }), t[24] = l, t[25] = P);
+    let F;
+    return t[26] !== r || t[27] !== M || t[28] !== P ? (F = (0, q.jsxs)(Ji, {
+        value: M,
+        children: [r, P]
+    }), t[26] = r, t[27] = M, t[28] = P, t[29] = F) : F = t[29], F
+}
+
+function Wi() {
+    "use forget";
+    let e = (0, Ki.c)(3),
+        t, n;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, q.jsx)(or, {}), n = (0, q.jsx)(H, {
+        id: `mattressFinanceHeader.mobileTitle`,
+        defaultMessage: `Finances`
+    }), e[0] = t, e[1] = n) : (t = e[0], n = e[1]);
+    let r;
+    return e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, q.jsx)(`div`, {
+        "data-fixed-header": `less-than-md`,
+        children: (0, q.jsx)(jr, {
+            navigationButton: t,
+            title: n,
+            rightContent: (0, q.jsx)(`div`, {
+                className: `flex shrink-0 items-center gap-1`,
+                children: (0, q.jsx)(Gi, {
+                    trigger: `minimal`,
+                    viewport: `mobile`
+                })
+            })
+        })
+    }), e[2] = r) : r = e[2], r
+}
+
+function Gi(e) {
+    "use forget";
+    let t = (0, Ki.c)(29),
+        {
+            trigger: n,
+            viewport: r
+        } = e,
+        i = vt(),
+        o = ge(a);
+    if (!(r === `desktop` ? o : !o)) return null;
+    let s = (0, qi.use)(Ji);
+    if (s == null) throw Error(`FinanceOverflowMenu must be rendered inside FinanceOverflowMenuProvider`);
+    let {
+        canDownloadLedgerFiles: c,
+        handleDownloadFinanceFilesZip: l,
+        handleFinancePinToggle: u,
+        handleSensitiveValuesVisibilityToggle: d,
+        isFinanceFilesZipPreparing: f,
+        isFinancePinUpdating: p,
+        isFinancePinned: m,
+        onOpenMemories: h,
+        sensitiveValuesHidden: g,
+        shouldShowFinancePinAction: _
+    } = s, v;
+    t[0] !== i || t[1] !== n ? (v = n === `outlined` ? (0, q.jsx)(Dn.BasicTrigger, {
+        asChild: !0,
+        children: (0, q.jsx)(Se, {
+            type: `button`,
+            color: `secondary`,
+            className: `touch:size-10 size-9 p-0`,
+            icon: Wn,
+            label: i.formatMessage(J.moreOptions)
+        })
+    }) : (0, q.jsx)(Dn.Trigger, {
+        asChild: !0,
+        children: (0, q.jsx)(`button`, {
+            type: `button`,
+            "aria-label": i.formatMessage(J.moreOptions),
+            className: `interactive-icon-secondary hover:bg-token-interactive-bg-tertiary-hover inline-flex size-8! shrink-0 items-center justify-center rounded-md`,
+            children: (0, q.jsx)(Wn, {
+                className: `icon`
+            })
+        })
+    }), t[0] = i, t[1] = n, t[2] = v) : v = t[2];
+    let y;
+    t[3] !== u || t[4] !== p || t[5] !== m || t[6] !== _ ? (y = _ && (0, q.jsx)(Dn.Item, {
+        disabled: p,
+        onClick: () => void u(),
+        children: (0, q.jsx)(H, {
+            ...m ? J.unpinFinances : J.pinFinances
+        })
+    }), t[3] = u, t[4] = p, t[5] = m, t[6] = _, t[7] = y) : y = t[7];
+    let b = g ? J.showSensitiveValues : J.hideSensitiveValues,
+        x;
+    t[8] === b ? x = t[9] : (x = (0, q.jsx)(H, {
+        ...b
+    }), t[8] = b, t[9] = x);
+    let S;
+    t[10] !== d || t[11] !== x ? (S = (0, q.jsx)(Dn.Item, {
+        onClick: d,
+        children: x
+    }), t[10] = d, t[11] = x, t[12] = S) : S = t[12];
+    let C;
+    t[13] !== c || t[14] !== l || t[15] !== f ? (C = c && (0, q.jsx)(Dn.Item, {
+        disabled: f,
+        onClick: l,
+        children: (0, q.jsx)(H, {
+            ...f ? J.downloadFinanceFilesPreparing : J.downloadFinanceFiles
+        })
+    }), t[13] = c, t[14] = l, t[15] = f, t[16] = C) : C = t[16];
+    let w;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (w = (0, q.jsx)(H, {
+        ...J.viewFinanceMemories
+    }), t[17] = w) : w = t[17];
+    let T;
+    t[18] === h ? T = t[19] : (T = (0, q.jsx)(Dn.Item, {
+        onClick: h,
+        children: w
+    }), t[18] = h, t[19] = T);
+    let E;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, q.jsx)(Dn.LinkItem, {
+        external: !0,
+        to: `https://help.openai.com/en/articles/20001222-finances-in-chatgpt`,
+        children: (0, q.jsx)(H, {
+            id: `mattressFinanceHeader.helpCenter`,
+            defaultMessage: `Help Center`
+        })
+    }), t[20] = E) : E = t[20];
+    let D;
+    t[21] !== y || t[22] !== S || t[23] !== C || t[24] !== T ? (D = (0, q.jsx)(Dn.Portal, {
+        children: (0, q.jsxs)(Dn.Content, {
+            align: `end`,
+            size: `small`,
+            className: `min-w-0`,
+            children: [y, S, C, T, E]
+        })
+    }), t[21] = y, t[22] = S, t[23] = C, t[24] = T, t[25] = D) : D = t[25];
+    let O;
+    return t[26] !== v || t[27] !== D ? (O = (0, q.jsxs)(Dn.Root, {
+        children: [v, D]
+    }), t[26] = v, t[27] = D, t[28] = O) : O = t[28], O
+}
+var Ki, qi, q, J, Ji, Yi = e((() => {
+    Ki = W(), r(), Bt(), Nn(), Fi(), Ur(), Vi(), ie(), g(), Ne(), i(), _r(), Ar(), Ae(), _e(), D(), we(), ht(), qi = t(lt()), U(), q = V(), J = rt({
+        moreOptions: {
+            id: `mattressFinanceHeader.moreOptions`,
+            defaultMessage: `More options`
+        },
+        viewFinanceMemories: {
+            id: `mattressFinanceHeader.viewFinanceMemories`,
+            defaultMessage: `View financial memories`
+        },
+        pinFinances: {
+            id: `mattressFinanceHeader.pinFinances`,
+            defaultMessage: `Pin Finances`
+        },
+        unpinFinances: {
+            id: `mattressFinanceHeader.unpinFinances`,
+            defaultMessage: `Unpin Finances`
+        },
+        financesPinned: {
+            id: `mattressFinanceHeader.financesPinned`,
+            defaultMessage: `Finances pinned`
+        },
+        financesUnpinned: {
+            id: `mattressFinanceHeader.financesUnpinned`,
+            defaultMessage: `Finances unpinned`
+        },
+        downloadFinanceFiles: {
+            id: `mattressFinanceHeader.downloadFinanceFiles`,
+            defaultMessage: `Download Finance data files`
+        },
+        hideSensitiveValues: {
+            id: `mattressFinanceHeader.hideSensitiveValues`,
+            defaultMessage: `Hide values`
+        },
+        showSensitiveValues: {
+            id: `mattressFinanceHeader.showSensitiveValues`,
+            defaultMessage: `Show values`
+        },
+        downloadFinanceFilesPreparing: {
+            id: `mattressFinanceHeader.downloadFinanceFilesPreparing`,
+            defaultMessage: `Preparing Finance data files...`
+        },
+        financeFilesExportStarted: {
+            id: `mattressFinanceHeader.financeFilesExportStarted`,
+            defaultMessage: `Started preparing your Finance files download ({fileCount} files).`
+        },
+        financeFilesExportStartedGeneric: {
+            id: `mattressFinanceHeader.financeFilesExportStartedGeneric`,
+            defaultMessage: `Started preparing your Finance files download.`
+        },
+        financeFilesExportEmpty: {
+            id: `mattressFinanceHeader.financeFilesExportEmpty`,
+            defaultMessage: `No Finance data files are available yet.`
+        },
+        financeFilesExportFailed: {
+            id: `mattressFinanceHeader.financeFilesExportFailed`,
+            defaultMessage: `We could not prepare your Finance files download right now. Please try again.`
+        }
+    }), Ji = (0, qi.createContext)(null)
+}));
+
+function Xi(e) {
+    let {
+        error: t
+    } = e;
+    if (!(t instanceof M && (t.status === 401 || t.status === 403 || t.status === 404))) return e.data
+}
+
+function Zi(e) {
+    return e.isSuccess && e.isFetchedAfterMount && !e.isFetching
+}
+
+function Qi({
+    links: e,
+    credit: t,
+    dashboard: n
+}) {
+    let r = Xi(e) ?? [],
+        i = t ? Xi(t) : void 0,
+        a = Xi(n),
+        o = r.length > 0 || i?.connection_status === `connected` || i?.connection_status === `pending` || i?.connection_status === `deleting` || i?.connection_status === `deletion_failed`,
+        s = a?.content_state,
+        c = t?.error instanceof M && t.error.status === 404,
+        l = !o && s === `empty`,
+        u = t == null || Zi(t) || c && t.isFetchedAfterMount && !t.isFetching,
+        d = Zi(e) && u && Zi(n),
+        f = e.isPending || e.isFetching || t?.isFetching || n.isPending || n.isFetching,
+        p = e.isError || n.isError || t?.isError && !c;
+    return {
+        ledgerLinks: r,
+        creditConnection: i,
+        availability: {
+            hasFinanceConnections: o,
+            contentState: s,
+            canCustomizeDashboard: a?.widgets.some(e => e.can_hide) ?? !1,
+            accountRetryAvailable: e.isError,
+            status: f ? `loading` : p ? `error` : `ready`,
+            hasConfirmedEmptyResult: l && d
+        }
+    }
+}
+var $i = e((() => {
+    _e()
+}));
+
+function ea() {
+    return mt()
+}
+var ta = e((() => {
+    ut()
+}));
+
+function na({
+    access: e,
+    availability: t,
+    isConfirming: n,
+    isDashboardRoute: r,
+    newUserEntrypointsDisabled: i
+}) {
+    return e === `enabled` ? !r || n || t.hasFinanceConnections || t.accountRetryAvailable || t.contentState === `linked_accounts` || t.contentState === `data_without_linked_accounts` ? `tabs` : t.status === `ready` ? i && t.hasConfirmedEmptyResult ? `redirect` : `landing` : t.status : e
+}
+var ra = e((() => {}));
+
+function ia() {
+    return _(A.FINANCES_ROLLOUT_ACCESS)
+}
+var aa = e((() => {
+    f()
+}));
+
+function oa() {
+    "use no forget";
+    let [e, t] = (0, sa.useState)(!1);
+    return (0, sa.useEffect)(() => {
+        let e = () => {
+                t(An(document.activeElement))
+            },
+            n = () => {
+                requestAnimationFrame(e)
+            };
+        return document.addEventListener(`focusin`, e), document.addEventListener(`focusout`, n), e(), () => {
+            document.removeEventListener(`focusin`, e), document.removeEventListener(`focusout`, n)
+        }
+    }, []), !!e
+}
+var sa, ca = e((() => {
+    sa = t(lt()), wn()
+}));
+
+function la() {
+    "use forget";
+    let e = (0, ua.c)(1),
+        t;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, da.jsx)(H, {
+        ...Ct
+    }), e[0] = t) : t = e[0], t
+}
+var ua, da, fa = e((() => {
+    ua = W(), Dt(), U(), da = V()
+}));
+
+function pa(e) {
+    "use forget";
+    let t = (0, ba.c)(42),
+        {
+            financeSessionId: n
+        } = e,
+        r = vt(),
+        i = st(),
+        a = at(),
+        s = T(),
+        [c, u] = (0, xa.useState)(!1),
+        {
+            isLoading: d,
+            open: f
+        } = Yr(),
+        p;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (p = {
+        productSku: Wt.CONNECTOR_SETTING
+    }, t[0] = p) : p = t[0];
+    let m = an(p),
+        h = m.connectorLinks.get(St)?.some(_a) ?? !1,
+        g;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (g = {
+        productSku: Wt.CONNECTOR_SETTING,
+        redirectAfter: B,
+        canReuseLink: Ue,
+        resolveDirectNoAuthConnector: Er,
+        skipPostConnectExperience: !0
+    }, t[1] = g) : g = t[1];
+    let _ = br(g),
+        v;
+    if (t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (v = [], t[2] = v) : v = t[2], (0, xa.useEffect)(ha, v), m.isLoading && !m.hasConnectorLinksData) {
+        let e;
+        return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Y.jsx)(ya, {}), t[3] = e) : e = t[3], e
+    }
+    let y = h ? `connect-accounts` : `connect-finances`,
+        b;
+    t[4] !== n || t[5] !== s || t[6] !== c || t[7] !== y ? (b = e => {
+        if (!e || c || s) return;
+        let t = sn();
+        if (!t) return;
+        let r = Ca(),
+            i = JSON.stringify([n, t.userId, t.accountId]);
+        return Rt(e, () => {
+            l() || !t.isCurrent() || (r.sessionKey !== i && (r.sessionKey = i, r.variants.clear()), !r.variants.has(y) && (r.variants.add(y), o.logStructuredEvent(`ChatgptFinanceComponentViewed`, {
+                surfaceName: `home`,
+                componentName: `link_account_card`,
+                componentId: y,
+                financeSessionId: n,
+                tab: `dashboard`
+            }, {
+                expectedUserId: t.userId,
+                expectedAccountId: t.accountId
+            })))
+        })
+    }, t[4] = n, t[5] = s, t[6] = c, t[7] = y, t[8] = b) : b = t[8];
+    let x = b,
+        S;
+    t[9] !== _ || t[10] !== n || t[11] !== r || t[12] !== i || t[13] !== f || t[14] !== a || t[15] !== y ? (S = () => {
+        let e = crypto.randomUUID(),
+            t = sn();
+        t && o.logStructuredEvent(`ChatgptFinanceComponentInteraction`, {
+            surfaceName: `home`,
+            componentName: `link_account_card`,
+            componentId: y,
+            financeSessionId: n,
+            flowId: e,
+            tab: `dashboard`,
+            action: `clicked`
+        }, {
+            expectedUserId: t.userId,
+            expectedAccountId: t.accountId
+        }), f && ar({
+            accountLinkingContext: {
+                source: `blank_slate`
+            },
+            trackingContext: {
+                entryPoint: `finances_blank_slate`,
+                flowId: e
+            },
+            createLedgerConnectorLink: _,
+            ensurePluginEnabled: !0,
+            navigate: i,
+            prompt: r.formatMessage(on),
+            queryClient: a,
+            startLedgerAccountFlow: e => {
+                u(!0);
+                try {
+                    let t = f({
+                        ...e,
+                        onSettled: () => u(!1)
+                    });
+                    return t || u(!1), t
+                } catch (e) {
+                    let t = e;
+                    throw u(!1), t
+                }
+            }
+        })
+    }, t[9] = _, t[10] = n, t[11] = r, t[12] = i, t[13] = f, t[14] = a, t[15] = y, t[16] = S) : S = t[16];
+    let C = S,
+        w = d || void 0,
+        E;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, Y.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `bg-token-bg-primary size-[63px] shrink-0 rounded-full bg-center bg-no-repeat shadow-[0_4px_16px_rgba(0,0,0,0.05)]`,
+        style: {
+            backgroundImage: `url('/images/ecosystem/apps/ledger/icon.png')`,
+            backgroundSize: `48px 48px`
+        }
+    }), t[17] = E) : E = t[17];
+    let D = h ? wa.connectAccountsTitle : wa.connectFinancesTitle,
+        O;
+    t[18] === D ? O = t[19] : (O = (0, Y.jsx)(`h2`, {
+        className: `text-token-text-primary w-full max-w-[490px] text-[24px] leading-7 font-semibold tracking-[0.07px]`,
+        children: (0, Y.jsx)(H, {
+            ...D
+        })
+    }), t[18] = D, t[19] = O);
+    let k = h ? wa.connectAccountsDescription : wa.connectFinancesDescription,
+        A;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (A = {
+        learnMore: ma
+    }, t[20] = A) : A = t[20];
+    let j;
+    t[21] === k ? j = t[22] : (j = (0, Y.jsx)(`p`, {
+        className: `text-token-text-secondary w-full max-w-[502px] text-base leading-[26px] tracking-[-0.32px]`,
+        children: (0, Y.jsx)(H, {
+            ...k,
+            values: A
+        })
+    }), t[21] = k, t[22] = j);
+    let M;
+    t[23] !== j || t[24] !== O ? (M = (0, Y.jsxs)(`div`, {
+        className: `flex w-full flex-col items-center gap-2`,
+        children: [O, j]
+    }), t[23] = j, t[24] = O, t[25] = M) : M = t[25];
+    let N = d || void 0,
+        P = h ? wa.connectAccountsCta : wa.connectFinancesCta,
+        F;
+    t[26] === P ? F = t[27] : (F = (0, Y.jsx)(H, {
+        ...P
+    }), t[26] = P, t[27] = F);
+    let I;
+    t[28] !== C || t[29] !== d || t[30] !== x || t[31] !== N || t[32] !== F ? (I = (0, Y.jsx)(Se, {
+        ref: x,
+        "aria-busy": N,
+        className: `h-9 rounded-full px-4 text-sm font-medium tracking-[-0.15px]`,
+        color: `primary`,
+        loading: d,
+        onClick: C,
+        size: `small`,
+        children: F
+    }), t[28] = C, t[29] = d, t[30] = x, t[31] = N, t[32] = F, t[33] = I) : I = t[33];
+    let L;
+    t[34] !== M || t[35] !== I ? (L = (0, Y.jsxs)(`div`, {
+        className: `flex min-h-[241px] w-full max-w-[1052px] flex-col items-center justify-center gap-6`,
+        children: [E, M, I]
+    }), t[34] = M, t[35] = I, t[36] = L) : L = t[36];
+    let ee;
+    t[37] === Symbol.for(`react.memo_cache_sentinel`) ? (ee = (0, Y.jsx)(va, {}), t[37] = ee) : ee = t[37];
+    let R;
+    return t[38] !== L || t[39] !== w || t[40] !== y ? (R = (0, Y.jsxs)(`section`, {
+        "aria-busy": w,
+        className: `flex w-full flex-col items-center gap-14 p-8.5 pb-[max(2.125rem,env(safe-area-inset-bottom,2.125rem))] text-center sm:px-0 sm:pt-2 sm:pb-4`,
+        "data-testid": `mattress-finance-blank-slate`,
+        "data-variant": y,
+        children: [L, ee]
+    }), t[38] = L, t[39] = w, t[40] = y, t[41] = R) : R = t[41], R
+}
+
+function ma(e) {
+    return (0, Y.jsx)(jt, {
+        className: `underline`,
+        href: Sa,
+        children: e
+    })
+}
+
+function ha() {
+    Mr().catch(ga)
+}
+
+function ga() {}
+
+function _a(e) {
+    return e.auth_status === `ACTIVE` && Ue(e)
+}
+
+function va() {
+    "use forget";
+    let e = (0, ba.c)(5),
+        t = te(),
+        n = t ? `/images/ecosystem/apps/ledger/card-placeholder-${t}` : void 0,
+        r;
+    e[0] === n ? r = e[1] : (r = n ? (0, Y.jsx)(`img`, {
+        alt: ``,
+        "aria-hidden": !0,
+        className: `h-auto w-full`,
+        "data-testid": `mattress-finance-blank-slate-preview-image`,
+        height: 695,
+        src: `${n}.png`,
+        srcSet: `${n}.png 1x, ${n}@2x.png 2x, ${n}@3x.png 3x`,
+        width: 956
+    }) : (0, Y.jsx)(`div`, {
+        className: `aspect-[956/695] w-full`
+    }), e[0] = n, e[1] = r);
+    let i;
+    return e[2] !== t || e[3] !== r ? (i = (0, Y.jsx)(`div`, {
+        className: `w-full max-w-[956px]`,
+        "data-theme": t,
+        "data-testid": `mattress-finance-blank-slate-preview`,
+        children: r
+    }), e[2] = t, e[3] = r, e[4] = i) : i = e[4], i
+}
+
+function ya() {
+    "use forget";
+    let e = (0, ba.c)(3),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Y.jsx)(`div`, {
+        className: `skeleton size-[63px] shrink-0 rounded-full`
+    }), e[0] = t) : t = e[0];
+    let n;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Y.jsxs)(`div`, {
+        className: `flex min-h-[241px] w-full max-w-[1052px] flex-col items-center justify-center gap-6`,
+        children: [t, (0, Y.jsxs)(`div`, {
+            className: `flex w-full flex-col items-center gap-2`,
+            children: [(0, Y.jsx)(`div`, {
+                className: `skeleton h-7 w-[490px] max-w-full rounded-full`
+            }), (0, Y.jsx)(`div`, {
+                className: `skeleton h-[52px] w-[502px] max-w-full rounded-full`
+            })]
+        }), (0, Y.jsx)(`div`, {
+            className: `skeleton h-9 w-36 rounded-full`
+        })]
+    }), e[1] = n) : n = e[1];
+    let r;
+    return e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Y.jsxs)(`div`, {
+        "aria-busy": !0,
+        className: `flex w-full flex-col items-center p-8.5 pb-[max(2.125rem,env(safe-area-inset-bottom,2.125rem))] sm:px-0 sm:pt-2 sm:pb-4`,
+        "data-testid": `mattress-finance-blank-slate-loading`,
+        children: [n, (0, Y.jsx)(`div`, {
+            className: `aspect-[956/695] w-full max-w-[956px]`,
+            children: (0, Y.jsx)(`div`, {
+                className: `skeleton h-full w-full rounded-2xl`
+            })
+        })]
+    }), e[2] = r) : r = e[2], r
+}
+var ba, xa, Y, Sa, Ca, wa, Ta = e((() => {
+    ba = W(), _n(), r(), P(), wr(), Nr(), fn(), Sr(), Jr(), bn(), Ht(), At(), rn(), pe(), m(), N(), On(), Ie(), ht(), xa = t(lt()), U(), $e(), Y = V(), Sa = `https://openai.com/index/personal-finance-chatgpt/`, Ca = Ye(() => ({
+        variants: new Set
+    })), wa = rt({
+        connectFinancesTitle: {
+            id: `mattress.finance.blankSlate.connectFinances.title`,
+            defaultMessage: `A new way to manage your finances`
+        },
+        connectFinancesDescription: {
+            id: `mattress.finance.blankSlate.connectFinances.description.v3`,
+            defaultMessage: `Securely connect your accounts so ChatGPT can help with questions about your spending, subscriptions, balances, and investments. <learnMore>Learn more</learnMore>.`
+        },
+        connectFinancesCta: {
+            id: `mattress.finance.blankSlate.connectFinances.cta`,
+            defaultMessage: `Connect Finances`
+        },
+        connectAccountsTitle: {
+            id: `mattress.finance.blankSlate.connectAccounts.title`,
+            defaultMessage: `Connect your financial accounts`
+        },
+        connectAccountsDescription: {
+            id: `mattress.finance.blankSlate.connectAccounts.description.v3`,
+            defaultMessage: `Securely connect your accounts so ChatGPT can help with questions about your spending, subscriptions, balances, and investments. <learnMore>Learn more</learnMore>.`
+        },
+        connectAccountsCta: {
+            id: `mattress.finance.blankSlate.connectAccounts.cta`,
+            defaultMessage: `Connect Accounts`
+        }
+    })
+}));
+
+function Ea(e) {
+    let t = e.catalog,
+        n = new Map(t.map(e => [e.id, e])),
+        r = [...t].sort((e, t) => e.default_index - t.default_index),
+        i = [],
+        a = new Set;
+    for (let t of e.ordered_widget_ids) {
+        let e = n.get(t);
+        !e?.can_reorder || a.has(t) || (i.push(e), a.add(t))
+    }
+    let o = [...r.filter(e => !e.can_reorder), ...i, ...r.filter(e => e.can_reorder && !a.has(e.id))],
+        s = new Set(e.hidden_widget_ids),
+        [c, l] = Cn(o.filter(e => e.can_hide), e => s.has(e.id)),
+        u = c.map(e => e.id),
+        d = l.filter(e => e.can_reorder).map(e => e.id),
+        f = o.map(e => e.id),
+        p = new Map(f.map((e, t) => [e, t])),
+        m = r.map(e => e.id);
+    return {
+        catalogById: n,
+        hiddenWidgetIds: s,
+        hiddenWidgetIdsInCatalogOrder: u,
+        orderedWidgetIds: f,
+        visibleItems: l,
+        hiddenItems: c,
+        reorderableVisibleIds: d,
+        orderIndexByWidgetId: p,
+        isDefault: e.hidden_widget_ids.length === 0 && y(f, m)
+    }
+}
+
+function Da(e, t) {
+    let n = [...e.hidden_widget_ids].sort(),
+        r = [...t.hidden_widget_ids].sort();
+    return !y(e.ordered_widget_ids, t.ordered_widget_ids) || !y(n, r)
+}
+
+function Oa(e, t) {
+    let n = new Set(t.hidden_widget_ids);
+    return e.hidden_widget_ids.some(e => !n.has(e))
+}
+
+function ka(e, t) {
+    let n = Ea(t),
+        r = [],
+        i = [];
+    for (let t of e) {
+        let e = n.catalogById.get(t.id);
+        if (e == null) {
+            i.push(t);
+            continue
+        }
+        e.can_hide && n.hiddenWidgetIds.has(t.id) || r.push(t)
+    }
+    return r.sort((e, t) => (n.orderIndexByWidgetId.get(e.id) ?? 2 ** 53 - 1) - (n.orderIndexByWidgetId.get(t.id) ?? 2 ** 53 - 1)), [...r, ...i]
+}
+
+function Aa(e, t) {
+    return {
+        ...e,
+        ordered_widget_ids: t.ordered_widget_ids ?? e.ordered_widget_ids,
+        hidden_widget_ids: t.hidden_widget_ids ?? e.hidden_widget_ids
+    }
+}
+
+function ja(e, t) {
+    return t == null ? e : {
+        ...e,
+        catalog: t.catalog
+    }
+}
+
+function Ma(e, t) {
+    return t == null ? e : {
+        ...e,
+        catalog: [...t]
+    }
+}
+
+function Na() {
+    "use forget";
+    let e = (0, Va.c)(1),
+        t;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, X.jsx)(`div`, {
+        className: `group skeleton flex flex-col gap-5 px-1 [--skeleton-opacity:0.75]`,
+        "aria-busy": !0,
+        "data-testid": `dashboard-customization-loading-state`,
+        children: (0, X.jsx)(`section`, {
+            children: (0, X.jsx)(`ol`, {
+                className: `flex flex-col gap-2`,
+                children: [0, 1, 2, 3].map(Pa)
+            })
+        })
+    }), e[0] = t) : t = e[0], t
+}
+
+function Pa(e) {
+    return (0, X.jsxs)(`li`, {
+        className: `border-token-border-light bg-primary flex min-h-12 items-center gap-2 rounded-lg border px-2 py-1.5`,
+        "data-testid": `dashboard-customization-loading-row`,
+        children: [(0, X.jsx)(`div`, {
+            className: `skeleton-child size-8 shrink-0 rounded-md`
+        }), (0, X.jsx)(`div`, {
+            className: `min-w-0 flex-1`,
+            children: (0, X.jsx)(`div`, {
+                className: `skeleton-child h-4 w-3/5 max-w-48 rounded-md`
+            })
+        })]
+    }, e)
+}
+
+function Fa(e) {
+    "use forget";
+    let t = (0, Va.c)(22),
+        {
+            checked: n,
+            disabled: r,
+            label: i,
+            onChange: a
+        } = e,
+        o = vt(),
+        s;
+    t[0] !== n || t[1] !== o || t[2] !== i ? (s = o.formatMessage(n ? Ua.hideWidget : Ua.showWidget, {
+        widgetName: i
+    }), t[0] = n, t[1] = o, t[2] = i, t[3] = s) : s = t[3];
+    let c = s,
+        l;
+    t[4] === a ? l = t[5] : (l = e => a?.(e.currentTarget.checked), t[4] = a, t[5] = l);
+    let u;
+    t[6] !== c || t[7] !== n || t[8] !== r || t[9] !== l ? (u = (0, X.jsx)(`input`, {
+        type: `checkbox`,
+        className: `sr-only`,
+        checked: n,
+        disabled: r,
+        "aria-label": c,
+        onChange: l
+    }), t[6] = c, t[7] = n, t[8] = r, t[9] = l, t[10] = u) : u = t[10];
+    let d = n && `bg-primary text-token-text-primary`,
+        f = r && `opacity-50`,
+        p;
+    t[11] !== d || t[12] !== f ? (p = Ke(`border-token-border-heavy flex size-5 items-center justify-center rounded border`, d, f), t[11] = d, t[12] = f, t[13] = p) : p = t[13];
+    let m;
+    t[14] === n ? m = t[15] : (m = n ? (0, X.jsx)(Vn, {
+        className: `icon-xs`
+    }) : null, t[14] = n, t[15] = m);
+    let h;
+    t[16] !== p || t[17] !== m ? (h = (0, X.jsx)(`span`, {
+        className: p,
+        "aria-hidden": !0,
+        children: m
+    }), t[16] = p, t[17] = m, t[18] = h) : h = t[18];
+    let g;
+    return t[19] !== u || t[20] !== h ? (g = (0, X.jsxs)(`label`, {
+        className: `inline-flex size-8 shrink-0 items-center justify-center`,
+        children: [u, h]
+    }), t[19] = u, t[20] = h, t[21] = g) : g = t[21], g
+}
+
+function Ia(e) {
+    "use forget";
+    let t = (0, Va.c)(11),
+        {
+            ariaLabel: n,
+            children: r,
+            disabled: i,
+            onClick: a
+        } = e,
+        o = i === !0,
+        s;
+    t[0] !== o || t[1] !== a ? (s = e => {
+        if (o) {
+            e.preventDefault(), e.stopPropagation();
+            return
+        }
+        a?.()
+    }, t[0] = o, t[1] = a, t[2] = s) : s = t[2];
+    let c;
+    t[3] !== o || t[4] !== n || t[5] !== r || t[6] !== s ? (c = (0, X.jsx)(`button`, {
+        type: `button`,
+        "aria-label": n,
+        "aria-disabled": o,
+        onClick: s,
+        className: `text-token-text-tertiary hover:text-token-text-secondary hover:bg-token-interactive-bg-tertiary-hover inline-flex size-8 items-center justify-center rounded-md aria-disabled:cursor-not-allowed aria-disabled:opacity-40`,
+        children: r
+    }), t[3] = o, t[4] = n, t[5] = r, t[6] = s, t[7] = c) : c = t[7];
+    let l;
+    return t[8] !== n || t[9] !== c ? (l = (0, X.jsx)(xe, {
+        label: n,
+        side: `top`,
+        children: c
+    }), t[8] = n, t[9] = c, t[10] = l) : l = t[10], l
+}
+
+function La({
+    disableHideToggle: e,
+    item: t,
+    isHidden: n,
+    isFirstReorderable: r,
+    isLastReorderable: i,
+    mutationPending: a,
+    onMove: o,
+    onToggleHidden: s
+}) {
+    "use no forget";
+    let c = vt(),
+        l = t.title,
+        u = fi({
+            id: t.id,
+            disabled: n || !t.can_reorder || a
+        }),
+        d = {
+            transform: $r.Transform.toString(u.transform),
+            transition: u.transition
+        };
+    return (0, X.jsxs)(`li`, {
+        ref: u.setNodeRef,
+        style: d,
+        className: Ke(`border-token-border-light bg-token-bg-primary flex min-h-12 items-center gap-2 rounded-lg border px-2 py-1.5`, u.isDragging && `relative z-10 shadow-lg`),
+        "data-testid": `dashboard-customization-widget-row`,
+        children: [(0, X.jsx)(`button`, {
+            type: `button`,
+            "aria-label": c.formatMessage(Ua.dragWidget, {
+                widgetName: l
+            }),
+            disabled: n || !t.can_reorder || a,
+            className: `text-token-text-tertiary hover:text-token-text-secondary inline-flex size-8 shrink-0 cursor-grab items-center justify-center rounded-md disabled:cursor-default disabled:opacity-40`,
+            ...u.attributes,
+            ...u.listeners,
+            children: (0, X.jsx)(zn, {
+                className: `icon-sm`
+            })
+        }), (0, X.jsx)(`div`, {
+            className: `min-w-0 flex-1`,
+            children: (0, X.jsx)(`span`, {
+                className: `text-token-text-primary truncate text-sm font-medium`,
+                children: l
+            })
+        }), !n && t.can_reorder ? (0, X.jsxs)(`div`, {
+            className: `flex items-center gap-0.5`,
+            children: [(0, X.jsx)(Ia, {
+                ariaLabel: c.formatMessage(Ua.moveUp),
+                disabled: r || a,
+                onClick: () => o(-1),
+                children: (0, X.jsx)(Ln, {
+                    className: `icon-sm`
+                })
+            }), (0, X.jsx)(Ia, {
+                ariaLabel: c.formatMessage(Ua.moveDown),
+                disabled: i || a,
+                onClick: () => o(1),
+                children: (0, X.jsx)(Rn, {
+                    className: `icon-sm`
+                })
+            })]
+        }) : null, (0, X.jsx)(Fa, {
+            checked: !n,
+            disabled: a || e,
+            label: l,
+            onChange: e => s(!e)
+        })]
+    })
+}
+
+function Ra(e) {
+    "use forget";
+    let t = (0, Va.c)(13),
+        {
+            item: n,
+            isHidden: r,
+            mutationPending: i,
+            onToggleHidden: a
+        } = e,
+        o = n.title,
+        s;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, X.jsx)(`div`, {
+        className: `text-token-text-tertiary inline-flex size-8 shrink-0 items-center justify-center opacity-40`,
+        children: (0, X.jsx)(zn, {
+            className: `icon-sm`
+        })
+    }), t[0] = s) : s = t[0];
+    let c;
+    t[1] === o ? c = t[2] : (c = (0, X.jsx)(`div`, {
+        className: `min-w-0 flex-1`,
+        children: (0, X.jsx)(`span`, {
+            className: `text-token-text-primary truncate text-sm font-medium`,
+            children: o
+        })
+    }), t[1] = o, t[2] = c);
+    let l = !r,
+        u;
+    t[3] === a ? u = t[4] : (u = e => a(!e), t[3] = a, t[4] = u);
+    let d;
+    t[5] !== o || t[6] !== i || t[7] !== l || t[8] !== u ? (d = (0, X.jsx)(Fa, {
+        checked: l,
+        disabled: i,
+        label: o,
+        onChange: u
+    }), t[5] = o, t[6] = i, t[7] = l, t[8] = u, t[9] = d) : d = t[9];
+    let f;
+    return t[10] !== c || t[11] !== d ? (f = (0, X.jsxs)(`li`, {
+        className: `border-token-border-light bg-primary flex min-h-12 items-center gap-2 rounded-lg border px-2 py-1.5`,
+        children: [s, c, d]
+    }), t[10] = c, t[11] = d, t[12] = f) : f = t[12], f
+}
+
+function za(e) {
+    "use forget";
+    let t = (0, Va.c)(107),
+        {
+            isOpen: n,
+            onClose: r
+        } = e,
+        i = vt(),
+        a = at(),
+        o;
+    t[0] === n ? o = t[1] : (o = {
+        queryKey: bt,
+        queryFn: Mn,
+        enabled: n
+    }, t[0] = n, t[1] = o);
+    let s = ot(o),
+        c;
+    t[2] === n ? c = t[3] : (c = {
+        queryKey: Vt,
+        queryFn: xt,
+        enabled: n,
+        refetchOnMount: !0
+    }, t[2] = n, t[3] = c);
+    let l = ot(c),
+        [u, d] = (0, Ha.useState)(),
+        [f, p] = (0, Ha.useState)(!1),
+        m = (0, Ha.useRef)(0),
+        h = (0, Ha.useRef)(null),
+        g = (0, Ha.useRef)(0),
+        [_, v] = (0, Ha.useState)(null),
+        [y, b] = (0, Ha.useState)(),
+        x;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (x = {
+        latestSubmittedSaveIdRef: m
+    }, t[4] = x) : x = t[4];
+    let S = Ga(x),
+        C, w;
+    t[5] !== f || t[6] !== n || t[7] !== s.data ? (C = () => {
+        if (!n) {
+            h.current = null, v(null), b(void 0), d(void 0), p(!1);
+            return
+        }
+        s.data != null && !f && d(s.data)
+    }, w = [f, n, s.data], t[5] = f, t[6] = n, t[7] = s.data, t[8] = C, t[9] = w) : (C = t[8], w = t[9]), (0, Ha.useEffect)(C, w);
+    let T = u ?? s.data,
+        E = l.data?.widgets,
+        D = y ?? E,
+        O;
+    bb0: {
+        if (T == null || D == null) {
+            O = void 0;
+            break bb0
+        }
+        let e;t[10] !== D || t[11] !== T ? (e = Ea(Ma(T, D)), t[10] = D, t[11] = T, t[12] = e) : e = t[12],
+        O = e
+    }
+    let k = O,
+        A, j, M, N, P, F;
+    if (t[13] !== _ || t[14] !== D || t[15] !== k || t[16] !== T || t[17] !== s.data) {
+        let e = s.data != null && D != null ? Ma(s.data, D) : void 0,
+            n = T != null && D != null ? Ma(T, D) : void 0,
+            r;
+        t[24] === k?.visibleItems ? r = t[25] : (r = k?.visibleItems ?? [], t[24] = k?.visibleItems, t[25] = r), F = r;
+        let i;
+        t[26] === k?.hiddenItems ? i = t[27] : (i = k?.hiddenItems ?? [], t[26] = k?.hiddenItems, t[27] = i), M = i;
+        let a;
+        t[28] === k?.reorderableVisibleIds ? a = t[29] : (a = k?.reorderableVisibleIds ?? [], t[28] = k?.reorderableVisibleIds, t[29] = a), N = a, A = k != null && !k.isDefault, j = _ != null, P = e != null && n != null && Da(e, n), t[13] = _, t[14] = D, t[15] = k, t[16] = T, t[17] = s.data, t[18] = A, t[19] = j, t[20] = M, t[21] = N, t[22] = P, t[23] = F
+    } else A = t[18], j = t[19], M = t[20], N = t[21], P = t[22], F = t[23];
+    let I = P,
+        L;
+    t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (L = {
+        activationConstraint: {
+            distance: 4
+        }
+    }, t[30] = L) : L = t[30];
+    let ee;
+    t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (ee = {
+        coordinateGetter: di
+    }, t[31] = ee) : ee = t[31];
+    let R = ni(ri(ei, L), ri(ii, ee)),
+        te;
+    t[32] !== u || t[33] !== s.data ? (te = e => {
+        let t = u ?? s.data;
+        t != null && (d(Aa(t, e)), p(!0))
+    }, t[32] = u, t[33] = s.data, t[34] = te) : te = t[34];
+    let z = te,
+        ne;
+    t[35] !== N || t[36] !== z ? (ne = (e, t) => {
+        let n = N.indexOf(e),
+            r = n + t;
+        n < 0 || r < 0 || r >= N.length || z({
+            ordered_widget_ids: ui(N, n, r)
+        })
+    }, t[35] = N, t[36] = z, t[37] = ne) : ne = t[37];
+    let re = ne,
+        ie;
+    t[38] !== N || t[39] !== z ? (ie = e => {
+        let t = String(e.active.id),
+            n = e.over == null ? null : String(e.over.id);
+        if (n == null || t === n) return;
+        let r = N.indexOf(t),
+            i = N.indexOf(n);
+        r < 0 || i < 0 || z({
+            ordered_widget_ids: ui(N, r, i)
+        })
+    }, t[38] = N, t[39] = z, t[40] = ie) : ie = t[40];
+    let ae = ie,
+        B;
+    t[41] !== k || t[42] !== z ? (B = (e, t) => {
+        if (k == null || t && !k.hiddenWidgetIds.has(e) && k.visibleItems.length <= 1) return;
+        let n = new Set(k.hiddenWidgetIds);
+        t ? n.add(e) : n.delete(e), z({
+            hidden_widget_ids: [...n]
+        })
+    }, t[41] = k, t[42] = z, t[43] = B) : B = t[43];
+    let oe = B,
+        se;
+    t[44] !== I || t[45] !== S || t[46] !== r || t[47] !== T || t[48] !== s.data || t[49] !== a || t[50] !== E ? (se = () => {
+        if (h.current != null || !I || T == null || s.data == null) return;
+        let e = Oa(s.data, T);
+        b(e && E != null ? [...E] : void 0);
+        let t = g.current + 1;
+        g.current = t, m.current = t, h.current = t, v(t);
+        let n = {
+                ordered_widget_ids: T.ordered_widget_ids,
+                hidden_widget_ids: T.hidden_widget_ids
+            },
+            i = a.getQueryData(bt),
+            o = a.getQueriesData({
+                queryKey: pn
+            });
+        if (i != null) {
+            let e = Aa(i, n);
+            a.setQueryData(bt, e), a.setQueriesData({
+                queryKey: pn
+            }, t => t == null ? t : ka(t, e))
+        }
+        S.mutate({
+            saveId: t,
+            update: n,
+            previousPreferences: i,
+            previousWidgetsByQueryHash: o,
+            waitForWidgetsRefresh: e
+        }, {
+            onSettled: (n, i) => {
+                let a = e && i == null;
+                h.current === t && (h.current = null, v(null), a || b(void 0)), a && r()
+            }
+        }), p(!1), e || r()
+    }, t[44] = I, t[45] = S, t[46] = r, t[47] = T, t[48] = s.data, t[49] = a, t[50] = E, t[51] = se) : se = t[51];
+    let ce = se,
+        le;
+    if (s.isError || l.isError) {
+        let e;
+        t[52] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, X.jsx)(`div`, {
+            className: `px-6 py-10 text-center`,
+            children: (0, X.jsx)(`p`, {
+                className: `text-token-text-tertiary text-sm`,
+                children: (0, X.jsx)(H, {
+                    ...Ua.loadError
+                })
+            })
+        }), t[52] = e) : e = t[52], le = e
+    } else if (s.isPending || l.isPending || k == null) {
+        let e;
+        t[53] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, X.jsx)(Na, {}), t[53] = e) : e = t[53], le = e
+    } else {
+        let e;
+        t[54] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, X.jsx)(`h3`, {
+            id: `dashboard-customization-shown-title`,
+            className: `text-token-text-secondary mb-2 text-xs font-semibold`,
+            children: (0, X.jsx)(H, {
+                ...Ua.shownSectionTitle
+            })
+        }), t[54] = e) : e = t[54];
+        let n;
+        t[55] === F ? n = t[56] : (n = F.map(Ba), t[55] = F, t[56] = n);
+        let r;
+        if (t[57] !== j || t[58] !== re || t[59] !== N || t[60] !== oe || t[61] !== F) {
+            let e;
+            t[63] !== j || t[64] !== re || t[65] !== N || t[66] !== oe || t[67] !== F.length ? (e = e => (0, X.jsx)(La, {
+                item: e,
+                isHidden: !1,
+                isFirstReorderable: e.id === N[0],
+                isLastReorderable: e.id === N[N.length - 1],
+                disableHideToggle: F.length <= 1,
+                mutationPending: j,
+                onMove: t => re(e.id, t),
+                onToggleHidden: t => oe(e.id, t)
+            }, e.id), t[63] = j, t[64] = re, t[65] = N, t[66] = oe, t[67] = F.length, t[68] = e) : e = t[68], r = F.map(e), t[57] = j, t[58] = re, t[59] = N, t[60] = oe, t[61] = F, t[62] = r
+        } else r = t[62];
+        let i;
+        t[69] === r ? i = t[70] : (i = (0, X.jsx)(`ol`, {
+            className: `flex flex-col gap-2`,
+            children: r
+        }), t[69] = r, t[70] = i);
+        let a;
+        t[71] !== n || t[72] !== i ? (a = (0, X.jsx)(pi, {
+            items: n,
+            strategy: ci,
+            children: i
+        }), t[71] = n, t[72] = i, t[73] = a) : a = t[73];
+        let o;
+        t[74] !== ae || t[75] !== R || t[76] !== a ? (o = (0, X.jsxs)(`section`, {
+            "aria-labelledby": `dashboard-customization-shown-title`,
+            children: [e, (0, X.jsx)(oi, {
+                sensors: R,
+                collisionDetection: ai,
+                onDragEnd: ae,
+                children: a
+            })]
+        }), t[74] = ae, t[75] = R, t[76] = a, t[77] = o) : o = t[77];
+        let s;
+        t[78] !== j || t[79] !== M || t[80] !== oe ? (s = M.length > 0 ? (0, X.jsxs)(`section`, {
+            "aria-labelledby": `dashboard-customization-hidden-title`,
+            children: [(0, X.jsx)(`h3`, {
+                id: `dashboard-customization-hidden-title`,
+                className: `text-token-text-secondary mb-2 text-xs font-semibold`,
+                children: (0, X.jsx)(H, {
+                    ...Ua.hiddenSectionTitle
+                })
+            }), (0, X.jsx)(`ol`, {
+                className: `flex flex-col gap-2`,
+                children: M.map(e => (0, X.jsx)(Ra, {
+                    item: e,
+                    isHidden: !0,
+                    mutationPending: j,
+                    onToggleHidden: t => oe(e.id, t)
+                }, e.id))
+            })]
+        }) : null, t[78] = j, t[79] = M, t[80] = oe, t[81] = s) : s = t[81];
+        let c;
+        t[82] !== o || t[83] !== s ? (c = (0, X.jsxs)(`div`, {
+            className: `flex flex-col gap-5`,
+            children: [o, s]
+        }), t[82] = o, t[83] = s, t[84] = c) : c = t[84], le = c
+    }
+    let ue;
+    t[85] === i ? ue = t[86] : (ue = i.formatMessage(Ua.customizeDashboardTitle), t[85] = i, t[86] = ue);
+    let de = j || !I,
+        fe;
+    t[87] === Symbol.for(`react.memo_cache_sentinel`) ? (fe = (0, X.jsx)(H, {
+        ...Ua.doneButton
+    }), t[87] = fe) : fe = t[87];
+    let pe;
+    t[88] !== j || t[89] !== ce || t[90] !== de ? (pe = (0, X.jsx)(Se, {
+        color: `primary`,
+        disabled: de,
+        loading: j,
+        onClick: ce,
+        children: fe
+    }), t[88] = j, t[89] = ce, t[90] = de, t[91] = pe) : pe = t[91];
+    let me = j || !A,
+        he;
+    t[92] === z ? he = t[93] : (he = () => z({
+        ordered_widget_ids: [],
+        hidden_widget_ids: []
+    }), t[92] = z, t[93] = he);
+    let ge;
+    t[94] === Symbol.for(`react.memo_cache_sentinel`) ? (ge = (0, X.jsx)(H, {
+        ...Ua.resetButton
+    }), t[94] = ge) : ge = t[94];
+    let _e;
+    t[95] !== me || t[96] !== he ? (_e = (0, X.jsx)(Se, {
+        color: `secondary`,
+        disabled: me,
+        onClick: he,
+        children: ge
+    }), t[95] = me, t[96] = he, t[97] = _e) : _e = t[97];
+    let ye;
+    t[98] === le ? ye = t[99] : (ye = (0, X.jsx)(`div`, {
+        className: `max-h-[60vh] overflow-y-auto`,
+        children: le
+    }), t[98] = le, t[99] = ye);
+    let be;
+    return t[100] !== n || t[101] !== r || t[102] !== ue || t[103] !== pe || t[104] !== _e || t[105] !== ye ? (be = (0, X.jsx)(ve, {
+        testId: `modal-dashboard-customization`,
+        isOpen: n,
+        onClose: r,
+        size: `custom`,
+        className: `max-w-xl`,
+        title: ue,
+        showCloseButton: !0,
+        primaryButton: pe,
+        secondaryButton: _e,
+        children: ye
+    }), t[100] = n, t[101] = r, t[102] = ue, t[103] = pe, t[104] = _e, t[105] = ye, t[106] = be) : be = t[106], be
+}
+
+function Ba(e) {
+    return e.id
+}
+var Va, Ha, X, Ua, Wa, Ga, Ka = e((() => {
+    Va = W(), r(), Un(), Gn(), Pn(), Hn(), ke(), E(), Ut(), Ae(), ti(), li(), si(), ht(), z(), Me(), Xt(), Ha = t(lt()), U(), X = V(), Ua = rt({
+        customizeDashboardTitle: {
+            id: `mattressDashboardCustomizationModal.title`,
+            defaultMessage: `Customize dashboard`
+        },
+        shownSectionTitle: {
+            id: `mattressDashboardCustomizationModal.shownSectionTitle`,
+            defaultMessage: `Shown`
+        },
+        hiddenSectionTitle: {
+            id: `mattressDashboardCustomizationModal.hiddenSectionTitle`,
+            defaultMessage: `Hidden`
+        },
+        resetButton: {
+            id: `mattressDashboardCustomizationModal.resetButton`,
+            defaultMessage: `Reset`
+        },
+        doneButton: {
+            id: `mattressDashboardCustomizationModal.doneButton`,
+            defaultMessage: `Done`
+        },
+        moveUp: {
+            id: `mattressDashboardCustomizationModal.moveUp`,
+            defaultMessage: `Move up`
+        },
+        moveDown: {
+            id: `mattressDashboardCustomizationModal.moveDown`,
+            defaultMessage: `Move down`
+        },
+        hideWidget: {
+            id: `mattressDashboardCustomizationModal.hideWidget`,
+            defaultMessage: `Hide {widgetName}`
+        },
+        showWidget: {
+            id: `mattressDashboardCustomizationModal.showWidget`,
+            defaultMessage: `Show {widgetName}`
+        },
+        dragWidget: {
+            id: `mattressDashboardCustomizationModal.dragWidget`,
+            defaultMessage: `Reorder {widgetName}`
+        },
+        loadError: {
+            id: `mattressDashboardCustomizationModal.loadError`,
+            defaultMessage: `We couldn't load dashboard settings.`
+        },
+        saveError: {
+            id: `mattressDashboardCustomizationModal.saveError`,
+            defaultMessage: `We couldn't save dashboard settings.`
+        }
+    }), Wa = `ledger-dashboard-widget-preferences`, Ga = ({
+        latestSubmittedSaveIdRef: e
+    }) => {
+        "use no forget";
+        let t = vt(),
+            n = at();
+        return pt({
+            mutationFn: ({
+                update: e
+            }) => qt(e),
+            scope: {
+                id: Wa
+            },
+            onMutate: async ({
+                saveId: e,
+                previousPreferences: t,
+                previousWidgetsByQueryHash: r
+            }) => (await Promise.all([n.cancelQueries({
+                queryKey: bt
+            }, {
+                revert: !1
+            }), n.cancelQueries({
+                queryKey: pn
+            }, {
+                revert: !1
+            })]), {
+                saveId: e,
+                previousPreferences: t,
+                previousWidgetsByQueryHash: r
+            }),
+            onError: (r, i, a) => {
+                if (i.saveId === e.current) {
+                    a?.previousPreferences != null && n.setQueryData(bt, a.previousPreferences);
+                    for (let [e, t] of a?.previousWidgetsByQueryHash ?? []) n.setQueryData(e, t);
+                    le().danger(t.formatMessage(Ua.saveError), {
+                        error: r
+                    })
+                }
+            },
+            onSuccess: (t, r) => {
+                if (r.saveId !== e.current) return;
+                let i = ja(t, n.getQueryData(bt));
+                n.setQueryData(bt, i), n.setQueriesData({
+                    queryKey: pn
+                }, e => e == null ? e : ka(e, i))
+            },
+            onSettled: async (t, r, i) => {
+                if (i.saveId !== e.current) return;
+                let a = n.invalidateQueries({
+                        queryKey: bt
+                    }),
+                    o = n.invalidateQueries({
+                        queryKey: pn
+                    }),
+                    s = n.invalidateQueries({
+                        queryKey: Ot
+                    }),
+                    c = n.invalidateQueries({
+                        queryKey: Vt
+                    });
+                i.waitForWidgetsRefresh && await Promise.all([a, o, s, c])
+            }
+        })
+    }
+}));
+
+function qa(e) {
+    "use forget";
+    let t = (0, Ja.c)(18),
+        {
+            compactOnMobile: n
+        } = e,
+        r = n !== void 0 && n,
+        i = vt(),
+        [a, o] = (0, Ya.useState)(!1),
+        s;
+    t[0] === i ? s = t[1] : (s = i.formatMessage(Za), t[0] = i, t[1] = s);
+    let c;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (c = () => o(!0), t[2] = c) : c = t[2];
+    let l;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Xa.jsx)(In, {
+        className: `icon-sm`,
+        "aria-hidden": `true`
+    }), t[3] = l) : l = t[3];
+    let u = r && `hidden sm:inline`,
+        d;
+    t[4] === u ? d = t[5] : (d = Ke(u), t[4] = u, t[5] = d);
+    let f;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, Xa.jsx)(H, {
+        ...Za
+    }), t[6] = f) : f = t[6];
+    let p;
+    t[7] === d ? p = t[8] : (p = (0, Xa.jsx)(`span`, {
+        className: d,
+        children: f
+    }), t[7] = d, t[8] = p);
+    let m;
+    t[9] !== s || t[10] !== p ? (m = (0, Xa.jsxs)(Se, {
+        type: `button`,
+        color: `secondary`,
+        size: `small`,
+        "aria-label": s,
+        onClick: c,
+        className: `shrink-0`,
+        children: [l, p]
+    }), t[9] = s, t[10] = p, t[11] = m) : m = t[11];
+    let h;
+    t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (h = () => o(!1), t[12] = h) : h = t[12];
+    let g;
+    t[13] === a ? g = t[14] : (g = (0, Xa.jsx)(za, {
+        isOpen: a,
+        onClose: h
+    }), t[13] = a, t[14] = g);
+    let _;
+    return t[15] !== g || t[16] !== m ? (_ = (0, Xa.jsxs)(Xa.Fragment, {
+        children: [m, g]
+    }), t[15] = g, t[16] = m, t[17] = _) : _ = t[17], _
+}
+var Ja, Ya, Xa, Za, Qa = e((() => {
+    Ja = W(), r(), Fn(), Ka(), z(), Ya = t(lt()), U(), Xa = V(), Za = nt({
+        id: `mattressFinanceTabs.editDashboard`,
+        defaultMessage: `Edit dashboard`
+    })
+}));
+
+function $a(e) {
+    "use forget";
+    let t = (0, eo.c)(45),
+        {
+            canCustomizeDashboard: n,
+            financeSessionId: r,
+            hasFinanceConnections: i
+        } = e,
+        a = (0, to.useRef)(null),
+        s = dt(),
+        c = st(),
+        l = it(`/finances/:tab`)?.params.tab ?? `dashboard`,
+        u = l === `transactions`,
+        [d, f] = (0, to.useState)(u),
+        p = l === `dashboard` && n,
+        m, h;
+    t[0] !== l || t[1] !== r || t[2] !== i ? (m = () => {
+        a.current?.financeSessionId === r && a.current.tab === l || (a.current = {
+            financeSessionId: r,
+            tab: l
+        }, o.logStructuredEvent(`ChatgptFinanceSurfaceViewed`, {
+            surfaceName: `home`,
+            financeSessionId: r,
+            tab: l,
+            hasLinkedAccounts: i
+        }))
+    }, h = [l, r, i], t[0] = l, t[1] = r, t[2] = i, t[3] = m, t[4] = h) : (m = t[3], h = t[4]), (0, to.useEffect)(m, h);
+    let g;
+    t[5] !== l || t[6] !== r || t[7] !== s || t[8] !== c ? (g = e => {
+        e !== l && (o.logStructuredEvent(`ChatgptFinanceComponentInteraction`, {
+            surfaceName: `home`,
+            componentName: `tab_bar`,
+            financeSessionId: r,
+            tab: l,
+            action: `selected`,
+            selection: e
+        }), e === `transactions` && f(!0), c({
+            pathname: e === `dashboard` ? B : `${B}/${e}`,
+            search: s.search
+        }, {
+            replace: !0
+        }))
+    }, t[5] = l, t[6] = r, t[7] = s, t[8] = c, t[9] = g) : g = t[9];
+    let _ = g,
+        v = l === `dashboard`,
+        y;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, Z.jsx)(H, {
+        ...ro.dashboardTabLabel
+    }), t[10] = y) : y = t[10];
+    let b;
+    t[11] === v ? b = t[12] : (b = (0, Z.jsx)(Be, {
+        value: `dashboard`,
+        asChild: !0,
+        children: (0, Z.jsx)(Ft, {
+            active: v,
+            children: y
+        })
+    }), t[11] = v, t[12] = b);
+    let x = l === `chats`,
+        S;
+    t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, Z.jsx)(H, {
+        ...ro.chatsTabLabel
+    }), t[13] = S) : S = t[13];
+    let C;
+    t[14] === x ? C = t[15] : (C = (0, Z.jsx)(Be, {
+        value: `chats`,
+        asChild: !0,
+        children: (0, Z.jsx)(Ft, {
+            active: x,
+            children: S
+        })
+    }), t[14] = x, t[15] = C);
+    let w = l === `accounts`,
+        T;
+    t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, Z.jsx)(H, {
+        ...ro.accountsTabLabel
+    }), t[16] = T) : T = t[16];
+    let E;
+    t[17] === w ? E = t[18] : (E = (0, Z.jsx)(Be, {
+        value: `accounts`,
+        asChild: !0,
+        children: (0, Z.jsx)(Ft, {
+            active: w,
+            children: T
+        })
+    }), t[17] = w, t[18] = E);
+    let D = l === `transactions`,
+        O;
+    t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (O = (0, Z.jsx)(H, {
+        ...ro.transactionsTabLabel
+    }), t[19] = O) : O = t[19];
+    let k;
+    t[20] === D ? k = t[21] : (k = (0, Z.jsx)(Be, {
+        value: `transactions`,
+        asChild: !0,
+        children: (0, Z.jsx)(Ft, {
+            active: D,
+            children: O
+        })
+    }), t[20] = D, t[21] = k);
+    let A;
+    t[22] !== E || t[23] !== k || t[24] !== b || t[25] !== C ? (A = (0, Z.jsxs)(oe, {
+        className: `no-scrollbar flex min-w-0 items-center gap-0 overflow-x-auto p-px text-sm sm:flex-wrap sm:overflow-visible`,
+        children: [b, C, E, k]
+    }), t[22] = E, t[23] = k, t[24] = b, t[25] = C, t[26] = A) : A = t[26];
+    let j;
+    t[27] === p ? j = t[28] : (j = p ? (0, Z.jsx)(qa, {
+        compactOnMobile: !0
+    }) : null, t[27] = p, t[28] = j);
+    let M;
+    t[29] !== A || t[30] !== j ? (M = (0, Z.jsxs)(`div`, {
+        className: `flex shrink-0 items-center justify-between gap-2 px-2 pb-0 sm:px-0`,
+        children: [A, j]
+    }), t[29] = A, t[30] = j, t[31] = M) : M = t[31];
+    let N;
+    t[32] !== l || t[33] !== u || t[34] !== e ? (N = u ? null : (0, Z.jsx)(Fe, {
+        value: l,
+        className: no,
+        children: (0, Z.jsx)(gt, {
+            context: e
+        })
+    }), t[32] = l, t[33] = u, t[34] = e, t[35] = N) : N = t[35];
+    let P;
+    t[36] !== d || t[37] !== u ? (P = d || u ? (0, Z.jsx)(Fe, {
+        forceMount: !0,
+        hidden: !u,
+        value: `transactions`,
+        className: `${no} flex flex-1 flex-col data-[state=inactive]:hidden`,
+        children: (0, Z.jsx)(Qr, {
+            isActive: u
+        })
+    }) : null, t[36] = d, t[37] = u, t[38] = P) : P = t[38];
+    let F;
+    return t[39] !== l || t[40] !== _ || t[41] !== M || t[42] !== N || t[43] !== P ? (F = (0, Z.jsx)(Z.Fragment, {
+        children: (0, Z.jsxs)(De, {
+            value: l,
+            onValueChange: _,
+            className: `flex min-h-(--scroll-root-safe-area-height,100svh) flex-col gap-4 [overflow-anchor:none]`,
+            children: [M, N, P]
+        })
+    }), t[39] = l, t[40] = _, t[41] = M, t[42] = N, t[43] = P, t[44] = F) : F = t[44], F
+}
+var eo, to, Z, no, ro, io = e((() => {
+    eo = W(), fn(), Zr(), Qa(), Yt(), m(), ue(), to = t(lt()), U(), $e(), Z = V(), no = `min-w-0 min-h-0`, ro = rt({
+        dashboardTabLabel: {
+            id: `mattress.finance.tabs.dashboard.label`,
+            defaultMessage: `Dashboard`
+        },
+        accountsTabLabel: {
+            id: `mattress.finance.tabs.accounts.label`,
+            defaultMessage: `Accounts`
+        },
+        chatsTabLabel: {
+            id: `mattress.finance.tabs.chats.label`,
+            defaultMessage: `Chats`
+        },
+        transactionsTabLabel: {
+            id: `mattress.finance.tabs.transactions.label`,
+            defaultMessage: `Transactions`
+        }
+    })
+}));
+
+function ao() {
+    "use forget";
+    let e = (0, oo.c)(11),
+        t = vr(),
+        {
+            open: n
+        } = Yr(),
+        r = vt(),
+        [i] = tt(),
+        a;
+    e[0] === i ? a = e[1] : (a = i.get(ln), e[0] = i, e[1] = a);
+    let o = a,
+        s;
+    e[2] === i ? s = e[3] : (s = i.get(vn), e[2] = i, e[3] = s);
+    let c = s,
+        l = (0, so.useRef)(null),
+        u, d;
+    return e[4] !== t || e[5] !== r || e[6] !== c || e[7] !== n || e[8] !== o ? (u = () => {
+        if (c && n) {
+            if (l.current === c) return;
+            l.current = c, n({
+                autoStartOauthLinkId: c
+            });
+            return
+        }
+        if (!o) return;
+        let e = Zt(o);
+        if (e) {
+            let n = r.formatMessage(e.prompt),
+                i = {
+                    type: h.Starter,
+                    title: n,
+                    body: n,
+                    prompt: n,
+                    id: o,
+                    source: `HARDCODED`,
+                    data: {
+                        system_hint: Tn
+                    }
+                };
+            t(new MouseEvent(`click`), i, [i], 0)
+        }
+    }, d = [t, r, c, n, o], e[4] = t, e[5] = r, e[6] = c, e[7] = n, e[8] = o, e[9] = u, e[10] = d) : (u = e[9], d = e[10]), (0, so.useEffect)(u, d), null
+}
+var oo, so, co = e((() => {
+    oo = W(), C(), fn(), Jr(), bn(), gr(), so = t(lt()), U(), $e()
+}));
+
+function lo(e) {
+    let t = [...po];
+    for (let e = t.length - 1; e > 0; --e) {
+        let n = Math.floor(Math.random() * (e + 1));
+        [t[e], t[n]] = [t[n], t[e]]
+    }
+    return t.slice(0, e)
+}
+var uo, fo, Q, po, mo, ho, go = e((() => {
+    uo = W(), Dr(), F(), pr(), yr(), Ce(), z(), U(), fo = V(), Q = rt({
+        sectionLabel: {
+            id: `mattress.suggested_prompts.section.label`,
+            defaultMessage: `Suggested prompts`
+        },
+        promptSubscriptionsTitle: {
+            id: `mattress.suggested_prompts.subscriptions.title`,
+            defaultMessage: `Subscriptions overview`
+        },
+        promptSubscriptionsContent: {
+            id: `mattress.suggested_prompts.subscriptions.content`,
+            defaultMessage: `What subscriptions and recurring charges am I currently paying for?`
+        },
+        promptSpendingTitle: {
+            id: `mattress.suggested_prompts.spending.title`,
+            defaultMessage: `Reduce spending`
+        },
+        promptSpendingContent: {
+            id: `mattress.suggested_prompts.spending.content`,
+            defaultMessage: `Where could I reduce spending, subscriptions, or fees this year?`
+        },
+        promptBestCreditCardTitle: {
+            id: `mattress.suggested_prompts.best_rewards_card.title`,
+            defaultMessage: `Best rewards card`
+        },
+        promptBestCreditCardContent: {
+            id: `mattress.suggested_prompts.best_rewards_card.content`,
+            defaultMessage: `Which credit cards would give me the highest dollar value in rewards based on my transactions last year?`
+        },
+        promptFraudReviewTitle: {
+            id: `mattress.suggested_prompts.fraud_review.title`,
+            defaultMessage: `Fraud review`
+        },
+        promptFraudReviewContent: {
+            id: `mattress.suggested_prompts.fraud_review.content`,
+            defaultMessage: `Review my recent transactions for unfamiliar charges or unusual activity.`
+        },
+        promptPortfolioUpdateTitle: {
+            id: `mattress.suggested_prompts.portfolio_update.title`,
+            defaultMessage: `Portfolio update`
+        },
+        promptPortfolioUpdateContent: {
+            id: `mattress.suggested_prompts.portfolio_update.content`,
+            defaultMessage: `Give me an update on my portfolio and net worth.`
+        },
+        promptLiquidationStrategyTitle: {
+            id: `mattress.suggested_prompts.liquidation_strategy.title`,
+            defaultMessage: `Liquidation strategy`
+        },
+        promptLiquidationStrategyContent: {
+            id: `mattress.suggested_prompts.liquidation_strategy.content`,
+            defaultMessage: `How can I sell some investments for cash in a tax efficient way?`
+        },
+        promptStudentLoanPlanTitle: {
+            id: `mattress.suggested_prompts.student_loan_plan.title`,
+            defaultMessage: `Loan payoff plan`
+        },
+        promptStudentLoanPlanContent: {
+            id: `mattress.suggested_prompts.student_loan_plan.content`,
+            defaultMessage: `Create a plan to pay off my loans.`
+        },
+        promptFinancialTipsTitle: {
+            id: `mattress.suggested_prompts.financial_tips.title`,
+            defaultMessage: `Tips`
+        },
+        promptFinancialTipsContent: {
+            id: `mattress.suggested_prompts.financial_tips.content`,
+            defaultMessage: `What financial tips should I consider based on my information?`
+        },
+        promptInvestmentGrowthTitle: {
+            id: `mattress.suggested_prompts.investment_growth.title`,
+            defaultMessage: `Investment growth`
+        },
+        promptInvestmentGrowthContent: {
+            id: `mattress.suggested_prompts.investment_growth.content`,
+            defaultMessage: `How might my investments perform under conservative, moderate, and aggressive investment growth rates?`
+        }
+    }), po = [{
+        title: Q.promptSubscriptionsTitle,
+        content: Q.promptSubscriptionsContent
+    }, {
+        title: Q.promptSpendingTitle,
+        content: Q.promptSpendingContent
+    }, {
+        title: Q.promptPortfolioUpdateTitle,
+        content: Q.promptPortfolioUpdateContent
+    }, {
+        title: Q.promptStudentLoanPlanTitle,
+        content: Q.promptStudentLoanPlanContent
+    }, {
+        title: Q.promptFraudReviewTitle,
+        content: Q.promptFraudReviewContent
+    }, {
+        title: Q.promptFinancialTipsTitle,
+        content: Q.promptFinancialTipsContent
+    }, {
+        title: Q.promptBestCreditCardTitle,
+        content: Q.promptBestCreditCardContent
+    }, {
+        title: Q.promptLiquidationStrategyTitle,
+        content: Q.promptLiquidationStrategyContent
+    }, {
+        title: Q.promptInvestmentGrowthTitle,
+        content: Q.promptInvestmentGrowthContent
+    }], mo = 4, ho = e => {
+        "use forget";
+        let t = (0, uo.c)(24),
+            {
+                className: n,
+                limit: r,
+                variant: i
+            } = e,
+            a = r === void 0 ? mo : r,
+            o = i === void 0 ? `list` : i,
+            s = hr(),
+            l = vt(),
+            u = Math.max(1, Math.min(a, mo, po.length)),
+            d;
+        t[0] === u ? d = t[1] : (d = lo(u), t[0] = u, t[1] = d);
+        let f = d,
+            p;
+        t[2] === l ? p = t[3] : (p = l.formatMessage(Q.sectionLabel), t[2] = l, t[3] = p);
+        let m;
+        t[4] === n ? m = t[5] : (m = Ke(`mb-2`, n), t[4] = n, t[5] = m);
+        let h = o === `cards` ? `grid gap-3 md:grid-cols-3` : `flex flex-col`,
+            g;
+        t[6] === h ? g = t[7] : (g = Ke(h), t[6] = h, t[7] = g);
+        let _;
+        if (t[8] !== s || t[9] !== l || t[10] !== f || t[11] !== o) {
+            let e;
+            t[13] !== s || t[14] !== l || t[15] !== o ? (e = (e, t) => {
+                let n = l.formatMessage(e.title),
+                    r = l.formatMessage(e.content);
+                return (0, fo.jsx)(`li`, {
+                    className: o === `cards` ? `h-full` : void 0,
+                    children: (0, fo.jsx)(`button`, {
+                        type: `button`,
+                        onClick: () => {
+                            let e = lr(s);
+                            mr(e, r), xr(e), c.addAction(`mattress-landing-page.suggested-prompt-click`)
+                        },
+                        className: Ke(`focus-visible:outline-token-border-strong w-full cursor-pointer text-start focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2`, o === `cards` ? `border-token-border-default can-hover:hover:bg-token-bg-tertiary/50 flex h-full min-h-24 flex-col items-start rounded-[1.5rem] border px-6 pt-4 pb-4` : `can-hover:hover:bg-token-bg-tertiary flex items-center gap-3 rounded-xl px-[19px] py-3`),
+                        children: o === `cards` ? (0, fo.jsxs)(`div`, {
+                            className: `flex w-full flex-col gap-1`,
+                            children: [(0, fo.jsx)(`span`, {
+                                className: `text-token-text-primary block text-sm leading-5 font-medium`,
+                                children: n
+                            }), (0, fo.jsx)(`span`, {
+                                className: `text-token-text-secondary block text-[11px] leading-4`,
+                                children: r
+                            })]
+                        }) : (0, fo.jsxs)(fo.Fragment, {
+                            children: [(0, fo.jsx)(We, {
+                                className: `icon-sm text-token-text-tertiary h-5 w-5 shrink-0`
+                            }), (0, fo.jsxs)(`span`, {
+                                className: `flex w-full items-center gap-2 overflow-hidden pb-0.5`,
+                                children: [(0, fo.jsx)(`span`, {
+                                    className: `text-token-text-primary text-sm font-medium whitespace-nowrap`,
+                                    style: {
+                                        flex: `0 0 auto`,
+                                        lineHeight: `20px`
+                                    },
+                                    children: n
+                                }), (0, fo.jsx)(`span`, {
+                                    className: `text-token-text-secondary text-mkt-p2 line-clamp-1 w-fit truncate text-ellipsis`,
+                                    children: r
+                                })]
+                            })]
+                        })
+                    })
+                }, `${n}-${t}`)
+            }, t[13] = s, t[14] = l, t[15] = o, t[16] = e) : e = t[16], _ = f.map(e), t[8] = s, t[9] = l, t[10] = f, t[11] = o, t[12] = _
+        } else _ = t[12];
+        let v;
+        t[17] !== g || t[18] !== _ ? (v = (0, fo.jsx)(`ul`, {
+            className: g,
+            children: _
+        }), t[17] = g, t[18] = _, t[19] = v) : v = t[19];
+        let y;
+        return t[20] !== p || t[21] !== m || t[22] !== v ? (y = (0, fo.jsx)(`section`, {
+            "aria-label": p,
+            className: m,
+            children: v
+        }), t[20] = p, t[21] = m, t[22] = v, t[23] = y) : y = t[23], y
+    }
+}));
+
+function _o(e) {
+    "use forget";
+    let t = (0, yo.c)(23),
+        {
+            pageState: n,
+            contentState: r,
+            financeSessionId: i,
+            starterAnalytics: a,
+            financeTabContext: o,
+            onRetry: s
+        } = e,
+        {
+            ledgerLinks: c,
+            ledgerLinksLoadError: l
+        } = o,
+        u = c.length > 0,
+        d = n === `tabs`,
+        f = d && (u || r === `data_without_linked_accounts`),
+        p = d && l,
+        m = n === `landing` && `w-full max-w-none!`,
+        h;
+    t[0] === m ? h = t[1] : (h = Ke(`flex flex-col pb-6`, m), t[0] = m, t[1] = h);
+    let g;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, $.jsx)(ao, {}), t[2] = g) : g = t[2];
+    let _;
+    t[3] !== u || t[4] !== f || t[5] !== p || t[6] !== a ? (_ = f ? (0, $.jsx)(Hr, {
+        hasLedgerConnections: u,
+        starterAnalytics: a,
+        variant: `onboarding`,
+        className: `sm:mt-10`
+    }) : p ? (0, $.jsx)(`div`, {
+        className: `sm:mt-10`,
+        children: (0, $.jsx)(ho, {
+            limit: 3,
+            variant: `cards`
+        })
+    }) : null, t[3] = u, t[4] = f, t[5] = p, t[6] = a, t[7] = _) : _ = t[7];
+    let v = f || p ? `mt-8 sm:mt-12` : `mt-4`,
+        y;
+    t[8] === v ? y = t[9] : (y = Ke(`min-w-0`, v), t[8] = v, t[9] = y);
+    let b;
+    t[10] !== i || t[11] !== o || t[12] !== s || t[13] !== n || t[14] !== d ? (b = n === `loading` ? (0, $.jsx)(vo, {}) : n === `error` ? (0, $.jsxs)(`div`, {
+        className: `flex flex-col items-center gap-3 px-6 py-10 text-center`,
+        children: [(0, $.jsx)(`p`, {
+            className: `text-token-text-tertiary text-base`,
+            role: `alert`,
+            children: (0, $.jsx)(H, {
+                id: `mattressLandingPage.financeSurfaceError.description`,
+                defaultMessage: `Couldn’t load your finances.`
+            })
+        }), (0, $.jsx)(Se, {
+            type: `button`,
+            size: `small`,
+            color: `secondary`,
+            onClick: s,
+            children: (0, $.jsx)(H, {
+                id: `mattressLandingPage.financeSurfaceError.button.retry`,
+                defaultMessage: `Try again`
+            })
+        })]
+    }) : d ? (0, $.jsx)($a, {
+        ...o,
+        financeSessionId: i
+    }) : (0, $.jsx)(pa, {
+        financeSessionId: i
+    }), t[10] = i, t[11] = o, t[12] = s, t[13] = n, t[14] = d, t[15] = b) : b = t[15];
+    let x;
+    t[16] !== y || t[17] !== b ? (x = (0, $.jsx)(`div`, {
+        className: y,
+        children: b
+    }), t[16] = y, t[17] = b, t[18] = x) : x = t[18];
+    let S;
+    return t[19] !== h || t[20] !== _ || t[21] !== x ? (S = (0, $.jsx)(`div`, {
+        className: `mt-6 flex w-full flex-1 flex-col gap-4 self-stretch sm:mt-0`,
+        children: (0, $.jsx)(zt, {
+            horizontalMargin: `none`,
+            verticalMargin: `none`,
+            verticalPadding: `none`,
+            horizontalPadding: `standard`,
+            children: (0, $.jsxs)(En, {
+                className: h,
+                children: [g, _, x]
+            })
+        })
+    }), t[19] = h, t[20] = _, t[21] = x, t[22] = S) : S = t[22], S
+}
+
+function vo() {
+    "use forget";
+    let e = (0, yo.c)(4),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsxs)(`div`, {
+        className: `flex shrink-0 items-center gap-1 text-sm font-medium`,
+        children: [(0, $.jsx)(`div`, {
+            className: `skeleton-child h-9 w-25 rounded-full!`
+        }), (0, $.jsx)(`div`, {
+            className: `skeleton-child h-9 w-22 rounded-full!`
+        })]
+    }), e[0] = t) : t = e[0];
+    let n;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, $.jsxs)(`div`, {
+        className: `flex min-w-0 flex-col gap-4`,
+        children: [(0, $.jsx)(`div`, {
+            className: `skeleton-child h-44 rounded-2xl!`
+        }), (0, $.jsx)(`div`, {
+            className: `skeleton-child h-36 rounded-2xl!`
+        })]
+    }), e[1] = n) : n = e[1];
+    let r;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, $.jsxs)(`div`, {
+        className: `flex h-full min-h-0 flex-col gap-4 md:grid md:grid-cols-2`,
+        children: [n, (0, $.jsxs)(`div`, {
+            className: `hidden min-w-0 flex-col gap-4 md:flex`,
+            children: [(0, $.jsx)(`div`, {
+                className: `skeleton-child h-40 rounded-2xl!`
+            }), (0, $.jsx)(`div`, {
+                className: `skeleton-child h-48 rounded-2xl!`
+            })]
+        })]
+    }), e[2] = r) : r = e[2];
+    let i;
+    return e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, $.jsxs)(`div`, {
+        className: `group skeleton flex h-full min-h-0 flex-col gap-4 [--skeleton-opacity:0.75]`,
+        "aria-busy": !0,
+        children: [t, r, (0, $.jsx)(`span`, {
+            className: `sr-only`,
+            children: (0, $.jsx)(H, {
+                id: `mattressLandingPage.financeSurfaceLoading`,
+                defaultMessage: `Loading finance dashboard`
+            })
+        })]
+    }), e[3] = i) : i = e[3], i
+}
+var yo, $, bo = e((() => {
+    yo = W(), r(), Ta(), io(), co(), Rr(), go(), Et(), z(), U(), $ = V()
+}));
+
+function xo(e) {
+    "use forget";
+    let t = (0, So.c)(6),
+        {
+            hasLedgerConnections: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = {
+        title: `text-heading-app box-trim-0.5 font-medium max-md:hidden`
+    }, t[0] = r) : r = t[0];
+    let i;
+    t[1] === n ? i = t[2] : (i = n ? (0, Co.jsx)(Gi, {
+        trigger: `outlined`,
+        viewport: `desktop`
+    }) : void 0, t[1] = n, t[2] = i);
+    let a;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Co.jsx)(H, {
+        id: `mattressLandingPage.financeTitle`,
+        defaultMessage: `Finances`
+    }), t[3] = a) : a = t[3];
+    let o;
+    return t[4] === i ? o = t[5] : (o = (0, Co.jsx)(zt, {
+        horizontalMargin: `none`,
+        horizontalPadding: `standard`,
+        verticalMargin: `none`,
+        verticalPadding: `none`,
+        children: (0, Co.jsx)(En, {
+            className: `hidden md:block md:pt-10`,
+            children: (0, Co.jsx)(er, {
+                className: `mb-6`,
+                classNames: r,
+                headerActions: i,
+                title: a
+            })
+        })
+    }), t[4] = i, t[5] = o), o
+}
+var So, Co, wo = e((() => {
+    So = W(), Yi(), $n(), Et(), U(), Co = V()
+}));
+
+function To(e) {
+    "use forget";
+    let t = (0, Oo.c)(58),
+        {
+            conversation: n,
+            financesEligible: r
+        } = e,
+        i = r !== void 0 && r,
+        [a, s] = (0, ko.useState)(ea),
+        c = (0, ko.useRef)(!1),
+        l = (0, ko.useRef)(!1),
+        u = (0, ko.useRef)(!1),
+        d = (0, ko.useRef)(void 0),
+        f = ge(Do),
+        p = oa(),
+        m = jn(),
+        h = $t(i),
+        g = h === `enabled`,
+        _;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = {
+        path: B,
+        end: !0
+    }, t[0] = _) : _ = t[0];
+    let v = it(_) != null,
+        y = at(),
+        b;
+    t[1] === n ? b = t[2] : (b = () => Kr(n), t[1] = n, t[2] = b);
+    let x = ge(b),
+        S;
+    t[3] === g ? S = t[4] : (S = {
+        queryKey: It,
+        queryFn: Nt,
+        enabled: g,
+        refetchOnMount: `always`,
+        refetchInterval: Eo,
+        retryOnMount: !0
+    }, t[3] = g, t[4] = S);
+    let C = ot(S),
+        w;
+    t[5] === g ? w = t[6] : (w = Mt(g), t[5] = g, t[6] = w);
+    let T = w,
+        E = ot(T),
+        D;
+    t[7] === g ? D = t[8] : (D = {
+        queryKey: Vt,
+        queryFn: xt,
+        enabled: g,
+        staleTime: 0,
+        refetchOnMount: !0
+    }, t[7] = g, t[8] = D);
+    let O = ot(D),
+        {
+            ledgerLinks: k,
+            creditConnection: A,
+            availability: j
+        } = Qi({
+            links: C,
+            credit: T.enabled ? E : void 0,
+            dashboard: O
+        }),
+        {
+            hasFinanceConnections: M,
+            canCustomizeDashboard: N,
+            contentState: P
+        } = j,
+        F = k.length > 0,
+        I = na({
+            access: h,
+            availability: j,
+            isConfirming: x,
+            isDashboardRoute: v,
+            newUserEntrypointsDisabled: m
+        }),
+        L = I === `landing`,
+        ee = I === `loading` || L,
+        R = A?.connection_status,
+        te = (0, ko.useRef)(R),
+        z, ne;
+    t[9] !== R || t[10] !== y ? (z = () => {
+        (te.current === `pending` || te.current === `deleting`) && (R === `connected` || R === `not_connected`) && Fr(y), te.current = R
+    }, ne = [R, y], t[9] = R, t[10] = y, t[11] = z, t[12] = ne) : (z = t[11], ne = t[12]), (0, ko.useEffect)(z, ne);
+    let re;
+    t[13] === a ? re = t[14] : (re = () => !c.current || l.current ? !1 : (l.current = !0, o.logStructuredEvent(`ChatgptFinanceSurfaceClosed`, {
+        surfaceName: `home`,
+        financeSessionId: a
+    }), !0), t[13] = a, t[14] = re);
+    let ie = re,
+        ae, oe;
+    t[15] === ie ? (ae = t[16], oe = t[17]) : (ae = () => {
+        let e = () => {
+                ie() && o.flushStructuredEvents(250)
+            },
+            t = e => {
+                !e.persisted || !l.current || (c.current = !1, l.current = !1, u.current = !1, s(ea()))
+            };
+        return window.addEventListener(`pagehide`, e), window.addEventListener(`pageshow`, t), () => {
+            window.removeEventListener(`pagehide`, e), window.removeEventListener(`pageshow`, t), ie()
+        }
+    }, oe = [ie], t[15] = ie, t[16] = ae, t[17] = oe), (0, ko.useEffect)(ae, oe);
+    let se, ce;
+    if (t[18] !== a || t[19] !== I ? (se = () => {
+            if (!(I !== `tabs` && I !== `landing`)) {
+                if (c.current = !0, I === `tabs`) {
+                    u.current = !1;
+                    return
+                }
+                u.current || (u.current = !0, o.logStructuredEvent(`ChatgptFinanceSurfaceViewed`, {
+                    surfaceName: `home`,
+                    financeSessionId: a,
+                    tab: `dashboard`,
+                    hasLinkedAccounts: !1
+                }))
+            }
+        }, ce = [a, I], t[18] = a, t[19] = I, t[20] = se, t[21] = ce) : (se = t[20], ce = t[21]), (0, ko.useEffect)(se, ce), I === `unavailable`) return null;
+    if (I === `redirect`) {
+        let e;
+        return t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Ao.jsx)(ft, {
+            to: ia(),
+            replace: !0
+        }), t[22] = e) : e = t[22], e
+    }
+    let le;
+    t[23] === a ? le = t[24] : (le = {
+        financeSessionId: a,
+        viewedCreditStarterSession: d
+    }, t[23] = a, t[24] = le);
+    let ue = x && !F,
+        de;
+    t[25] !== N || t[26] !== M || t[27] !== k || t[28] !== C.isError || t[29] !== ue ? (de = {
+        canCustomizeDashboard: N,
+        defaultToAccounts: ue,
+        hasFinanceConnections: M,
+        ledgerLinks: k,
+        ledgerLinksLoadError: C.isError
+    }, t[25] = N, t[26] = M, t[27] = k, t[28] = C.isError, t[29] = ue, t[30] = de) : de = t[30];
+    let fe;
+    t[31] !== E || t[32] !== T.enabled || t[33] !== O || t[34] !== C ? (fe = () => {
+        C.refetch(), T.enabled && E.refetch(), O.refetch()
+    }, t[31] = E, t[32] = T.enabled, t[33] = O, t[34] = C, t[35] = fe) : fe = t[35];
+    let pe;
+    t[36] !== P || t[37] !== a || t[38] !== I || t[39] !== le || t[40] !== de || t[41] !== fe ? (pe = (0, Ao.jsx)(_o, {
+        pageState: I,
+        contentState: P,
+        financeSessionId: a,
+        starterAnalytics: le,
+        financeTabContext: de,
+        onRetry: fe
+    }), t[36] = P, t[37] = a, t[38] = I, t[39] = le, t[40] = de, t[41] = fe, t[42] = pe) : pe = t[42];
+    let me = pe,
+        he = f && p,
+        _e;
+    t[43] === Symbol.for(`react.memo_cache_sentinel`) ? (_e = (0, Ao.jsx)(la, {}), t[43] = _e) : _e = t[43];
+    let ve;
+    t[44] !== M || t[45] !== f || t[46] !== me || t[47] !== L ? (ve = f ? me : L ? (0, Ao.jsxs)(Ao.Fragment, {
+        children: [(0, Ao.jsx)(xo, {
+            hasLedgerConnections: M
+        }), me]
+    }) : (0, Ao.jsx)(xo, {
+        hasLedgerConnections: M
+    }), t[44] = M, t[45] = f, t[46] = me, t[47] = L, t[48] = ve) : ve = t[48];
+    let ye = f || L ? void 0 : me,
+        be;
+    t[49] !== n || t[50] !== ee || t[51] !== he || t[52] !== ve || t[53] !== ye ? (be = (0, Ao.jsx)(dr, {
+        conversation: n,
+        shouldUseVoiceFocusModeBackground: !0,
+        className: `mattress-app`,
+        hideDisclaimer: he,
+        hideComposer: ee,
+        hideSystemHint: !0,
+        customDisclaimerId: `finance`,
+        customDisclaimer: _e,
+        renderEmptyState: ve,
+        renderEmptyFooter: ye,
+        desktopEmptyStateLayout: `scroll_with_footer`,
+        placeholder: jo.composerPlaceholder
+    }), t[49] = n, t[50] = ee, t[51] = he, t[52] = ve, t[53] = ye, t[54] = be) : be = t[54];
+    let xe;
+    return t[55] !== n || t[56] !== be ? (xe = (0, Ao.jsx)(Xr, {
+        conversation: n,
+        children: be
+    }, n.id), t[55] = n, t[56] = be, t[57] = xe) : xe = t[57], xe
+}
+
+function Eo(e) {
+    return Ir(e.state.data ?? [])
+}
+
+function Do() {
+    return I()
+}
+var Oo, ko, Ao, jo, Mo = e((() => {
+    Oo = W(), fn(), $i(), Ut(), Pr(), ta(), m(), ra(), qr(), kn(), aa(), i(), fr(), D(), ca(), ht(), ko = t(lt()), U(), $e(), fa(), Jr(), bo(), wo(), Ao = V(), jo = rt({
+        composerPlaceholder: {
+            id: `mattressLandingPage.composerPlaceholder`,
+            defaultMessage: `Ask ChatGPT`
+        }
+    })
+}));
+
+function No() {
+    "use forget";
+    let e = (0, Lo.c)(11),
+        t = et(),
+        n = (0, Ro.use)(Ze),
+        r;
+    e[0] === n ? r = e[1] : (r = ce(n), e[0] = n, e[1] = r);
+    let i = r,
+        a = t.kind === `auth`,
+        o;
+    e[2] !== i || e[3] !== t.financesEligible || e[4] !== t.kind || e[5] !== t.locale || e[6] !== t.pageData ? (o = t.kind === `no-auth` ? (0, zo.jsx)(Cr, {
+        conversation: i,
+        children: (0, zo.jsx)(yi, {
+            pageData: t.pageData,
+            locale: t.locale
+        })
+    }) : (0, zo.jsx)(sr, {
+        conversation: i,
+        ignoreParentComposerController: !0,
+        options: {
+            initialSystemHint: fe(St),
+            hideInitialSystemHintPill: !0,
+            initialVoiceSystemHints: [fe(St)],
+            lockSystemHints: !0
+        },
+        children: (0, zo.jsx)(Po, {
+            conversation: i,
+            financesEligible: t.financesEligible
+        })
+    }), e[2] = i, e[3] = t.financesEligible, e[4] = t.kind, e[5] = t.locale, e[6] = t.pageData, e[7] = o) : o = e[7];
+    let s;
+    return e[8] !== a || e[9] !== o ? (s = (0, zo.jsx)(mi, {
+        authenticated: a,
+        children: o
+    }), e[8] = a, e[9] = o, e[10] = s) : s = e[10], s
+}
+
+function Po(e) {
+    "use forget";
+    let t = (0, Lo.c)(8),
+        {
+            conversation: n,
+            financesEligible: r
+        } = e,
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = [], t[0] = i) : i = t[0], qe(Fo, i), Io(n);
+    let a;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, zo.jsx)(Wi, {}), t[1] = a) : a = t[1];
+    let o;
+    t[2] !== n || t[3] !== r ? (o = (0, zo.jsx)(To, {
+        conversation: n,
+        financesEligible: r
+    }), t[2] = n, t[3] = r, t[4] = o) : o = t[4];
+    let s;
+    return t[5] !== n || t[6] !== o ? (s = (0, zo.jsx)(Wr, {
+        children: (0, zo.jsx)(Ui, {
+            children: (0, zo.jsx)(Cr, {
+                conversation: n,
+                threadHeader: a,
+                children: o
+            })
+        })
+    }), t[5] = n, t[6] = o, t[7] = s) : s = t[7], s
+}
+
+function Fo() {
+    ne.dismiss()
+}
+
+function Io(e) {
+    "use forget";
+    let t = (0, Lo.c)(3),
+        n, r;
+    t[0] === e ? (n = t[1], r = t[2]) : (n = () => ye(() => {
+        let t = Tt(e),
+            n = t.versions?.[0];
+        return n ? Qt(t, n.id, s.THINKING) : null
+    }, t => {
+        t && en(e, t)
+    }, {
+        fireImmediately: !0
+    }), r = [e], t[0] = e, t[1] = n, t[2] = r), (0, Ro.useEffect)(n, r)
+}
+var Lo, Ro, zo, Bo, Vo, Ho = e((() => {
+    $e(), Lo = W(), Or(), Tr(), Dr(), b(), k(), fn(), vi(), Ei(), Ur(), kn(), Yi(), Mo(), aa(), cn(), Te(), Oe(), O(), ze(), He(), yn(), Ee(), Ro = t(lt()), Qe(), xn(), dn(), i(), zo = V(), Bo = async ({
+        serverLoader: e
+    }) => {
+        if (tn(), ae().authStatus !== Le.LoggedIn) return e();
+        await Ge.prefetch();
+        let t = S(u);
+        return $t(t) === `unavailable` ? _t(ia()) : {
+            kind: `auth`,
+            financesEligible: t,
+            isOutletBasedRoute: !0,
+            pageType: `mattress`,
+            prefetchSearch: null
+        }
+    }, Vo = ct(function() {
+        "use forget";
+        let e = (0, Lo.c)(1),
+            t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, zo.jsx)(kr, {
+            children: (0, zo.jsx)(No, {})
+        }), e[0] = t) : t = e[0], t
+    })
+}));
+e((() => {
+    Ho()
+}))();
+export {
+    Bo as clientLoader, Vo as
+    default
+};
+//# sourceMappingURL=finances-ov8689km.js.map
