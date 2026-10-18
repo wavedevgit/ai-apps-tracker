@@ -11,6 +11,8 @@ export async function get<T>(
         const request = await fetch(url, {
             headers: { 'user-agent': userAgent || '' },
         });
+        if (!request.ok)
+            throw new Error(`Failed to fetch ${url}: ${request.status}`);
         return json ? await request.json() : await request.text();
     } catch (err) {
         console.log('request failed', url, json ? 'parsed with json' : '', err);

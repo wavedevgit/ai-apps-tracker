@@ -2,11 +2,39 @@ import {
     ClaudeCodeVersion,
     CodexVersion,
     CursorVersion,
+    ChatGptManifest,
+    ChatGptModel,
     OpenCodeVersion,
-} from '../types';
+} from '../types.js';
 import sendMessage, { Embed, Message } from './discord.js';
 
-let embeds: Embed[] = [];
+const embeds: Embed[] = [];
+const modelEmbeds: Embed[] = [];
+const featureEmbeds: Embed[] = [];
+
+function pushList(
+    queue: Embed[],
+    title: string,
+    lines: string[],
+    timestamp: string,
+) {
+    const descriptions: string[] = [];
+    for (const line of lines) {
+        const last = descriptions[descriptions.length - 1];
+        if (!last || last.length + line.length + 1 > 4000)
+            descriptions.push(line);
+        else descriptions[descriptions.length - 1] += `\n${line}`;
+    }
+
+    descriptions.forEach((description, index) =>
+        queue.push({
+            color: 0x10a37f,
+            title: index ? `${title} (continued)` : title,
+            description,
+            timestamp,
+        }),
+    );
+}
 
 // all of these functions generate discord embeds that are ready to send
 export function diffCodex(old: CodexVersion, newer: CodexVersion) {
@@ -59,12 +87,63 @@ export function diffOpenCode(old: OpenCodeVersion, newer: OpenCodeVersion) {
     });
 }
 
+export function diffChatGpt(
+    old: ChatGptManifest | undefined,
+    newer: ChatGptManifest,
+    oldModels: ChatGptModel[] | undefined,
+    newerModels: ChatGptModel[],
+) {
+    const timestamp = new Date().toISOString();
+
+    if (old && old.version !== newer.version) {
+        featureEmbeds.push({
+            color: 0x10a37f,
+            title: 'New ChatGPT build',
+            description: `**\`${old.version}\`** to **\`${newer.version}\`**\n[View changes/diff](https://github.com/wavedevgit/ai-apps-tracker/tree/main/data/chatgpt)`,
+            timestamp,
+        });
+
+        const addedRoutes = Object.keys(newer.routes).filter(
+            (route) => !old.routes[route],
+        );
+        const removedRoutes = Object.keys(old.routes).filter(
+            (route) => !newer.routes[route],
+        );
+        pushList(
+            featureEmbeds,
+            'ChatGPT route diff',
+            [
+                ...addedRoutes.map((route) => `+ \`${route}\``),
+                ...removedRoutes.map((route) => `- \`${route}\``),
+            ],
+            timestamp,
+        );
+    }
+
+    if (oldModels) {
+        const ids = new Set(oldModels.map((model) => model.id));
+        const models = newerModels.filter((model) => !ids.has(model.id));
+        pushList(
+            modelEmbeds,
+            'New ChatGPT models',
+            models.map(
+                (model) => `- **\`${model.id}\`** (\`${model.codename}\`)`,
+            ),
+            timestamp,
+        );
+    }
+}
+
 export async function sendNotifications() {
-    const message: Message = {
-        content: '',
-        embeds: embeds,
+    const send = (queue: Embed[], env?: string) => {
+        if (!queue.length) return;
+        const message: Message = { content: '', embeds: queue };
+        return sendMessage({ message, env });
     };
-    // nothing to post lol
-    if (embeds.length === 0) return;
-    await sendMessage(message);
+
+    await Promise.all([
+        send(embeds),
+        send(modelEmbeds, 'DISCORD_MODELS_WEBHOOKS'),
+        send(featureEmbeds, 'DISCORD_FEATURES_WEBHOOKS'),
+    ]);
 }

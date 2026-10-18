@@ -49,4 +49,46 @@ interface ClaudeCodeVersion {
     platforms: Record<string, ClaudeCodePlatform>;
 }
 
-export type { OpenCodeVersion, ClaudeCodeVersion, CodexVersion, CursorVersion };
+// chatgpt
+type ChatGptManifestAsset = {
+    module: string;
+    imports: string[];
+    css: string[];
+};
+
+type ChatGptManifestRoute = ChatGptManifestAsset & {
+    id: string;
+    parentId?: string;
+    path?: string;
+    index?: boolean;
+    hasAction: boolean;
+    hasLoader: boolean;
+    hasClientAction: boolean;
+    hasClientLoader: boolean;
+    hasClientMiddleware: boolean;
+    hasDefaultExport: boolean;
+    hasErrorBoundary: boolean;
+};
+
+interface ChatGptManifest {
+    entry: ChatGptManifestAsset;
+    routes: Record<string, ChatGptManifestRoute>;
+    url: string;
+    version: string;
+}
+
+interface ChatGptModel {
+    id: string;
+    codename: string;
+}
+
+export type {
+    OpenCodeVersion,
+    ClaudeCodeVersion,
+    CodexVersion,
+    CursorVersion,
+    ChatGptManifest,
+    ChatGptManifestRoute,
+    ChatGptManifestAsset,
+    ChatGptModel,
+};

@@ -32,6 +32,8 @@ jobs:
               env:
                   DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS  }}
                   DISCORD_ROLES: ${{ secrets.DISCORD_ROLES  }}
+                  DISCORD_MODELS_WEBHOOKS: ${{ secrets.DISCORD_MODELS_WEBHOOKS }}
+                  DISCORD_FEATURES_WEBHOOKS: ${{ secrets.DISCORD_FEATURES_WEBHOOKS }}
             - name: Setup git info and commit
               run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -18,36 +18,42 @@ type Message = {
     tts?: boolean;
 };
 
-export default async function sendMessage(message: Message) {
-    if (!process.env.DISCORD_WEBHOOKS) {
-        console.log(
-            'No discord webhook was provided in DISCORD_WEBHOOKS env variable ',
-        );
+export default async function sendMessage(
+    { message, env = 'DISCORD_WEBHOOKS' }: {
+        message: Message;
+        env?: string;
+    },
+) {
+    const value = process.env[env];
+    if (!value) {
+        console.log(`No discord webhook was provided in ${env} env variable`);
         return;
     }
-    // provide them in order in env (webhook1 -> roleid1, ...)
-    const webhooks = process.env.DISCORD_WEBHOOKS.split('!@');
-    const roles = process.env.DISCORD_ROLES?.split(':') || ["<@&1487223753619407031>"];
+    const webhooks = value.split('!@');
+    const messages = message.embeds?.length
+        ? message.embeds.map((embed) => ({ ...message, embeds: [embed] }))
+        : [message];
 
     for (let i = 0; i < webhooks.length; i++) {
         const webhook = webhooks[i];
-        let roleMention = roles[i];
-        roleMention = roleMention ? roleMention + ' ' : '';
-        message.content = message.content;
-        try {
-            await fetch(webhook, {
-                method: 'POST',
-                headers: {
-                    'content-type': 'application/json',
-                },
-                body: JSON.stringify(message),
-            });
-        } catch (err) {
-            console.log(
-                'failed to send message to webhook',
-                webhooks[i].slice(12, 20),
-                err,
-            );
+        for (const payload of messages) {
+            try {
+                const response = await fetch(webhook, {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json',
+                    },
+                    body: JSON.stringify(payload),
+                });
+                if (!response.ok)
+                    throw new Error(`Discord returned ${response.status}`);
+            } catch (err) {
+                console.log(
+                    'failed to send message to webhook',
+                    webhooks[i].slice(12, 20),
+                    err,
+                );
+            }
         }
     }
 }
