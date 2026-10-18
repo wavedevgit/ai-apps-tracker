@@ -18,13 +18,13 @@ assert.deepEqual(
 
 assert.deepEqual(
     getModels(
-        'const models = [{ slug: `gpt-5.6-sol`, aliases: [`gpt-5.6-sol-fast`], displayName: `5.6 Sol` }];',
+        'const descriptions = new Map([["gpt-5.6-sol", copy.sol56], ["gpt-5.6-sol-wm", copy.sol56]]); const models = [{ slug: `gpt-5.6-sol`, aliases: [`gpt-5.6-sol-fast`], displayName: `5.6 Sol` }];',
     ),
     [
         {
             id: 'gpt-5.6-sol',
-            codenames: ['5.6 Sol'],
-            aliases: ['gpt-5.6-sol-fast'],
+            codenames: ['sol56', '5.6 Sol'],
+            aliases: ['gpt-5.6-sol-wm', 'gpt-5.6-sol-fast'],
         },
     ],
 );

@@ -85,6 +85,21 @@ export default async function scrapeChatgpt() {
     if (failed.length)
         throw new Error(`failed to download:\n${failed.join('\n')}`);
 
+    for (const oldModel of oldModels ?? []) {
+        const model = models.get(oldModel.id);
+        if (!model) continue;
+        model.codenames = [
+            ...new Set([
+                ...model.codenames,
+                ...(oldModel.codenames ??
+                    (oldModel.codename ? [oldModel.codename] : [])),
+            ]),
+        ];
+        model.aliases = [
+            ...new Set([...model.aliases, ...(oldModel.aliases ?? [])]),
+        ];
+    }
+
     const newModels = [...models.values()].sort((a, b) =>
         a.id.localeCompare(b.id),
     );
