@@ -9,6 +9,11 @@ import getModels from './models.js';
 import { diffChatGpt } from '../notifications/index.js';
 
 const JS_IMPORT = /(?:\bfrom\s*|\bimport\s*\(?\s*)['"]([^'"]+\.js)['"]/g;
+const MAPBOX_TOKEN = /\b[ps]k\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\b/g;
+
+export function redactSecrets(code: string): string {
+    return code.replace(MAPBOX_TOKEN, '[REDACTED_MAPBOX_ACCESS_TOKEN]');
+}
 
 async function getCode(url: string): Promise<string> {
     for (let attempt = 0; attempt < 3; attempt++) {
@@ -50,7 +55,7 @@ export default async function scrapeChatgpt() {
         const url = new URL(k, CHATGPT_URL);
         let code: string;
         try {
-            code = await getCode(url.href);
+            code = redactSecrets(await getCode(url.href));
         } catch {
             failed.push(url.href);
             continue;
