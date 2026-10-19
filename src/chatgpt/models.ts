@@ -14,6 +14,50 @@ function staticString(node: acorn.Node | null): string | undefined {
     }
 }
 
+function memberName(node: acorn.Node | null): string | undefined {
+    if (node?.type !== 'MemberExpression') return;
+    const member = node as acorn.MemberExpression;
+    return member.computed
+        ? staticString(member.property)
+        : member.property.type === 'Identifier'
+          ? member.property.name
+          : undefined;
+}
+
+function merge(target: ChatGptModel, source: ChatGptModel) {
+    target.codenames = [
+        ...new Set([...target.codenames, ...source.codenames]),
+    ];
+    target.aliases = [...new Set([...target.aliases, ...source.aliases])];
+}
+
+export function mergeModels(input: Iterable<ChatGptModel>): ChatGptModel[] {
+    const models = new Map<string, ChatGptModel>();
+    for (const model of input) {
+        const existing = models.get(model.id);
+        if (existing) merge(existing, model);
+        else
+            models.set(model.id, {
+                ...model,
+                codenames: [...model.codenames],
+                aliases: [...model.aliases],
+            });
+    }
+
+    for (const model of models.values()) {
+        if (!models.has(model.id)) continue;
+        for (const alias of model.aliases) {
+            const aliasModel = models.get(alias);
+            if (!aliasModel || aliasModel === model) continue;
+            merge(model, aliasModel);
+            models.delete(alias);
+        }
+        model.aliases = model.aliases.filter((alias) => alias !== model.id);
+    }
+
+    return [...models.values()];
+}
+
 export default function getModels(code: string): ChatGptModel[] {
     const models: ChatGptModel[] = [];
     let ast: acorn.Program;
@@ -31,35 +75,24 @@ export default function getModels(code: string): ChatGptModel[] {
             // models list is stored like this
             //[...["gpt-6.1-sol", s.sol61],
             //...]
-            if (!node.elements.every((el) => el?.type === 'ArrayExpression'))
-                return;
-
-            if (
-                node.elements.some(
-                    (el) =>
-                        el.elements.length !== 2 ||
-                        el.elements[0]?.type !== 'Literal' ||
-                        el.elements[1]?.type !== 'MemberExpression',
-                )
-            )
-                return;
-
             const byCodename = new Map<string, ChatGptModel>();
             for (const model of node.elements) {
-                const id = (model.elements[0] as acorn.Literal).value;
-                const property = (model.elements[1] as acorn.MemberExpression)
-                    .property;
                 if (
-                    typeof id === 'string' &&
-                    id.startsWith('gpt-') &&
-                    property.type === 'Identifier'
-                ) {
-                    const existing = byCodename.get(property.name);
+                    model?.type !== 'ArrayExpression' ||
+                    model.elements.length !== 2
+                )
+                    continue;
+
+                const id = staticString(model.elements[0]);
+                const value = model.elements[1];
+                const codename = memberName(value);
+                if (id?.startsWith('gpt-') && codename) {
+                    const existing = byCodename.get(codename);
                     if (existing) existing.aliases.push(id);
                     else
-                        byCodename.set(property.name, {
+                        byCodename.set(codename, {
                             id,
-                            codenames: [property.name],
+                            codenames: [codename],
                             aliases: [],
                         });
                 }
@@ -82,6 +115,10 @@ export default function getModels(code: string): ChatGptModel[] {
 
             const codename =
                 staticString(properties.get('displayName') ?? null) ?? id;
+            const permission = memberName(properties.get('permission') ?? null);
+            const permissionCodename = permission
+                ?.match(/^GPT(.+)Access$/)?.[1]
+                .toLowerCase();
 
             const aliases = properties.get('aliases');
             const aliasIds: string[] = [];
@@ -92,21 +129,15 @@ export default function getModels(code: string): ChatGptModel[] {
                         aliasIds.push(aliasId);
                 }
             }
-            models.push({ id, codenames: [codename], aliases: aliasIds });
+            models.push({
+                id,
+                codenames: permissionCodename
+                    ? [codename, permissionCodename]
+                    : [codename],
+                aliases: aliasIds,
+            });
         },
     });
 
-    const merged = new Map<string, ChatGptModel>();
-    for (const model of models) {
-        const existing = merged.get(model.id);
-        if (existing) {
-            existing.codenames = [
-                ...new Set([...existing.codenames, ...model.codenames]),
-            ];
-            existing.aliases = [
-                ...new Set([...existing.aliases, ...model.aliases]),
-            ];
-        } else merged.set(model.id, model);
-    }
-    return [...merged.values()];
+    return mergeModels(models);
 }

@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict';
-import getModels from './models.js';
+import getModels, { mergeModels } from './models.js';
 import { parseManifest } from './manifest.js';
 import { redactSecrets } from './index.js';
 
 assert.deepEqual(
     getModels(
-        'import "./chunk.js"; const models = new Map([["gpt-6.1-sol", copy.sol61], ["gpt-6.1-sol-wm", copy.sol61], ["gpt-6.1-sol", copy.sol], ["other", copy.nope]]);',
+        'import "./chunk.js"; const models = new Map([[`gpt-6.1-sol`, copy.sol61], [`gpt-6.1-sol-wm`, copy[`sol61`]], [`gpt-6.1-sol`, copy.sol], ["other", copy.nope]]);',
     ),
     [
         {
@@ -17,14 +17,23 @@ assert.deepEqual(
 );
 
 assert.deepEqual(
-    getModels(
-        'const descriptions = new Map([["gpt-5.6-sol", copy.sol56], ["gpt-5.6-sol-wm", copy.sol56]]); const models = [{ slug: `gpt-5.6-sol`, aliases: [`gpt-5.6-sol-fast`], displayName: `5.6 Sol` }];',
-    ),
+    mergeModels([
+        ...getModels(
+            'const codenames = new Map([[`gpt-5-6`, copy[`56sol`]], [`gpt-5-6-thinking`, copy.sol56thinking]]);',
+        ),
+        ...getModels(
+            'const models = [{ slug: `gpt-5.6-sol`, aliases: [`gpt-5-6`, `gpt-5-6-thinking`], displayName: `5.6 Sol`, permission: permissions.GPT56SolAccess }];',
+        ),
+    ]),
     [
         {
             id: 'gpt-5.6-sol',
-            codenames: ['sol56', '5.6 Sol'],
-            aliases: ['gpt-5.6-sol-wm', 'gpt-5.6-sol-fast'],
+            codenames: [
+                '5.6 Sol',
+                '56sol',
+                'sol56thinking',
+            ],
+            aliases: ['gpt-5-6', 'gpt-5-6-thinking'],
         },
     ],
 );

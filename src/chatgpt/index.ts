@@ -5,7 +5,7 @@ import type { ChatGptModel } from '../types.js';
 import { get } from '../utils/http.js';
 import path from 'path';
 import { CHATGPT_URL, routeIdToPath } from './constants.js';
-import getModels from './models.js';
+import getModels, { mergeModels } from './models.js';
 import { diffChatGpt } from '../notifications/index.js';
 
 const JS_IMPORT = /(?:\bfrom\s*|\bimport\s*\(?\s*)['"]([^'"]+\.js)['"]/g;
@@ -33,7 +33,7 @@ export default async function scrapeChatgpt() {
     // hashed name -> readable id
     const mappings = new Map<string, string>();
     const files = new Set<string>([manifest.url]);
-    const models = new Map<string, ChatGptModel>();
+    const models: ChatGptModel[] = [];
     const failed: string[] = [];
 
     mappings.set(manifest.entry.module, 'entry.js');
@@ -68,25 +68,18 @@ export default async function scrapeChatgpt() {
         }
 
         if (code.includes('gpt-')) {
-            for (const model of getModels(code)) {
-                const existing = models.get(model.id);
-                if (existing) {
-                    existing.codenames = [
-                        ...new Set([...existing.codenames, ...model.codenames]),
-                    ];
-                    existing.aliases = [
-                        ...new Set([...existing.aliases, ...model.aliases]),
-                    ];
-                } else models.set(model.id, model);
-            }
+            models.push(...getModels(code));
         }
     }
 
     if (failed.length)
         throw new Error(`failed to download:\n${failed.join('\n')}`);
 
+    const modelsById = new Map(
+        mergeModels(models).map((model) => [model.id, model]),
+    );
     for (const oldModel of oldModels ?? []) {
-        const model = models.get(oldModel.id);
+        const model = modelsById.get(oldModel.id);
         if (!model) continue;
         model.codenames = [
             ...new Set([
@@ -100,7 +93,7 @@ export default async function scrapeChatgpt() {
         ];
     }
 
-    const newModels = [...models.values()].sort((a, b) =>
+    const newModels = [...modelsById.values()].sort((a, b) =>
         a.id.localeCompare(b.id),
     );
     diffChatGpt(old, manifest, oldModels, newModels);
