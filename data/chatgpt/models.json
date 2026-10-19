@@ -2,7 +2,8 @@
     {
         "id": "gpt-5.6-luna",
         "codenames": [
-            "5.6 Luna"
+            "5.6 Luna",
+            "56luna"
         ],
         "aliases": [
             "gpt-5.6-luna-wm",
@@ -12,7 +13,8 @@
     {
         "id": "gpt-5.6-sol",
         "codenames": [
-            "5.6 Sol"
+            "5.6 Sol",
+            "56sol"
         ],
         "aliases": [
             "gpt-5.6-sol-wm",
@@ -27,7 +29,8 @@
     {
         "id": "gpt-5.6-terra",
         "codenames": [
-            "5.6 Terra"
+            "5.6 Terra",
+            "56terra"
         ],
         "aliases": [
             "gpt-5.6-terra-wm",
@@ -47,7 +50,8 @@
     {
         "id": "gpt-daybreak-5.6-sol",
         "codenames": [
-            "Daybreak Blue"
+            "Daybreak Blue",
+            "daybreak56sol"
         ],
         "aliases": [
             "gpt-daybreak-blue-latest"
@@ -56,7 +60,8 @@
     {
         "id": "gpt-daybreak-red-5.6-sol",
         "codenames": [
-            "Daybreak Red"
+            "Daybreak Red",
+            "daybreakred56sol"
         ],
         "aliases": [
             "gpt-5.4-cyber",
@@ -68,7 +73,8 @@
     {
         "id": "gpt-rosalind-5.5",
         "codenames": [
-            "Rosalind"
+            "Rosalind",
+            "lifesciences"
         ],
         "aliases": [
             "gpt-lifesciences",
