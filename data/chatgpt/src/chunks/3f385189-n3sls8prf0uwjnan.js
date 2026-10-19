@@ -1,9 +1,1 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-var t, n = e((() => {
-    t = `/cdn/assets/sprites-wham-3b4eb6bb.svg`
-}));
-export {
-    t as n, n as t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n=e((()=>{t=`/cdn/assets/sprites-wham-3b4eb6bb.svg`}));export{t as n,n as t};

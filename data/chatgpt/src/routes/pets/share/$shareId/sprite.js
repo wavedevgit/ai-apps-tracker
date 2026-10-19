@@ -1,5 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-e((() => {}))();
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";e((()=>{}))();
 //# sourceMappingURL=pets.share._shareId.sprite-imoe7dyk.js.map

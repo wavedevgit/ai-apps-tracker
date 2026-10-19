@@ -1,18 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-var t, n = e((() => {
-    t = ({
-        plugin: e,
-        workspaceId: t,
-        isHealthcareWorkspace: n
-    }) => {
-        if (t === `` || n || e.scope !== `GLOBAL` && e.scope !== `WORKSPACE` || e.discoverability === `PRIVATE` || e.workspace_settings == null || e.workspace_settings.installation_policy !== `AVAILABLE` || e.workspace_settings.installed_by_default_role_ids.length > 0 || e.workspace_id != null && e.workspace_id !== t || e.scope === `WORKSPACE` && (e.workspace_id !== t || e.is_deletable_workspace_plugin !== !0) || !Array.isArray(e.release.app_ids) || e.release.app_ids.length > 0 || !Array.isArray(e.release.app_templates) || e.release.app_templates.length > 0 || (e.release.required_app_id_groups?.length ?? 0) > 0 || e.release.app_manifest != null || `canonical_app_id` in e && e.canonical_app_id != null || `canonical_app_id` in e.release && e.release.canonical_app_id != null) return !1;
-        let r = [e.name, e.vanity_name, e.creator_name, e.release.display_name, e.release.interface?.developer_name].filter(e => typeof e == `string`).join(` `);
-        return !/\b(?:microsoft|sharepoint|onedrive|onenote|outlook|teams)\b/i.test(r)
-    }
-}));
-export {
-    t as n, n as t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n=e((()=>{t=({plugin:e,workspaceId:t,isHealthcareWorkspace:n})=>{if(t===``||n||e.scope!==`GLOBAL`&&e.scope!==`WORKSPACE`||e.discoverability===`PRIVATE`||e.workspace_settings==null||e.workspace_settings.installation_policy!==`AVAILABLE`||e.workspace_settings.installed_by_default_role_ids.length>0||e.workspace_id!=null&&e.workspace_id!==t||e.scope===`WORKSPACE`&&(e.workspace_id!==t||e.is_deletable_workspace_plugin!==!0)||!Array.isArray(e.release.app_ids)||e.release.app_ids.length>0||!Array.isArray(e.release.app_templates)||e.release.app_templates.length>0||(e.release.required_app_id_groups?.length??0)>0||e.release.app_manifest!=null||`canonical_app_id`in e&&e.canonical_app_id!=null||`canonical_app_id`in e.release&&e.release.canonical_app_id!=null)return!1;let r=[e.name,e.vanity_name,e.creator_name,e.release.display_name,e.release.interface?.developer_name].filter(e=>typeof e==`string`).join(` `);return!/\b(?:microsoft|sharepoint|onedrive|onenote|outlook|teams)\b/i.test(r)}}));export{t as n,n as t};
 //# sourceMappingURL=238e0339-dg33hjozhzkk36ic.js.map

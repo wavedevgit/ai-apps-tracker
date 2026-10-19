@@ -1,12 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-var t, n, r = e((() => {
-    t = `https://help.openai.com/articles/7232927-how-do-i-cancel-my-chatgpt-subscription`, n = `https://help.openai.com/articles/7232895-how-do-i-request-a-refund-for-my-chatgpt-subscription`
-}));
-export {
-    n,
-    r,
-    t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n,r=e((()=>{t=`https://help.openai.com/articles/7232927-how-do-i-cancel-my-chatgpt-subscription`,n=`https://help.openai.com/articles/7232895-how-do-i-request-a-refund-for-my-chatgpt-subscription`}));export{n,r,t};
 //# sourceMappingURL=a7f7cdcd-c590ozeojn4rp3sd.js.map

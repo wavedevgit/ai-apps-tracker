@@ -1,27 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-
-function t(e) {
-    if (typeof e != `object` || !e) return;
-    let t = Reflect.get(e, `email`);
-    return typeof t == `string` && t.trim() !== `` ? t : void 0
-}
-
-function n(e) {
-    return t(e.updated_by_user_obj) ?? (e.updated_by == null || e.updated_by === `system` ? t(e.created_by_user_obj) : void 0)
-}
-
-function r(e) {
-    return e?.filter(e => !e.predefined_role)
-}
-
-function i(e, t, n = e => e.name) {
-    let r = t.trim().toLowerCase();
-    return e?.filter(e => n(e).toLowerCase().includes(r) || (e.description?.toLowerCase().includes(r) ?? !1))
-}
-var a = e((() => {}));
-export {
-    a as i, n, i as r, r as t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e){if(typeof e!=`object`||!e)return;let t=Reflect.get(e,`email`);return typeof t==`string`&&t.trim()!==``?t:void 0}function n(e){return t(e.updated_by_user_obj)??(e.updated_by==null||e.updated_by===`system`?t(e.created_by_user_obj):void 0)}function r(e){return e?.filter(e=>!e.predefined_role)}function i(e,t,n=e=>e.name){let r=t.trim().toLowerCase();return e?.filter(e=>n(e).toLowerCase().includes(r)||(e.description?.toLowerCase().includes(r)??!1))}var a=e((()=>{}));export{a as i,n,i as r,r as t};
 //# sourceMappingURL=c8db4812-l8p8wtoobvoime0n.js.map
