@@ -9,20 +9,20 @@ const INSTALLER_URL = 'https://claude.ai/install.sh';
 
 export default async function scrapeClaudeCode() {
     const installer: string = await get(INSTALLER_URL);
-    const GCS_BUCKET = installer.match(
-        /GCS_BUCKET="(https:\/\/storage\.googleapis\.com\/claude-code-dist-[\s\S]+\/claude-code-releases)"/,
-    )?.[1];
-    if (!GCS_BUCKET) {
+    const DOWNLOAD_BASE_URL =
+        'https://downloads.claude.ai/claude-code-releases';
+
+    if (!installer.includes(DOWNLOAD_BASE_URL)) {
         console.log(
-            'Failed to download claude code binaries as no gcs bucket was found in the installer',
+            'Failed to download claude code binaries as no DOWNLOAD_BASE_URL was found in the installer',
         );
         return;
     }
 
     // grab latest version manifest
-    const version = await get(GCS_BUCKET.concat('/latest'));
+    const version = await get(DOWNLOAD_BASE_URL.concat('/latest'));
     const manifest = await get(
-        GCS_BUCKET.concat('/', version, '/manifest.json'),
+        DOWNLOAD_BASE_URL.concat('/', version, '/manifest.json'),
         true,
     );
     const binary = manifest.platforms['win32-x64'].binary;
@@ -37,7 +37,7 @@ export default async function scrapeClaudeCode() {
     );
 
     await downloadFile(
-        GCS_BUCKET.concat('/', version, '/win32-x64/', binary),
+        DOWNLOAD_BASE_URL.concat('/', version, '/win32-x64/', binary),
         binaryPath,
     );
     extractBunJs(binaryPath, './data/claude-code/');
