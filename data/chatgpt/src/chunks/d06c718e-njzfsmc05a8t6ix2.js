@@ -1,2 +1,84 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{A1 as t,Aot as n,E1 as r,Fot as i,G1 as a,I1 as o,Iot as s,M1 as c,O1 as l,b5 as u,f8 as d,m5 as f,n0 as p,oit as m,sit as h,t0 as g,x4 as _,x5 as v,y4 as y,y5 as b}from"./4813494d-ed29bs6yiwucn7st.js";import{$ as x,St as S,xt as C}from"./2340486e-oc6d2eodbcrmxur3.js";function w(e){let t=new URL(e.url);throw C(`/auth/login?${new URLSearchParams({next:t.pathname+t.search})}`)}function T(e){let t=new URL(e.url).searchParams.getAll(`account_id`),n=t[0]?.trim();if(t.length!==1||!n)throw C(`/`);return n}async function E(e){let o=i();if(o.redirect!=null)throw S(o.redirect.destination);h()||w(e);let s=T(e);await b(()=>!f());let d=u(),m=r(await d.ensureQueryData(l())).find(e=>e.id===s);if(m==null)throw C(`/`);if(!m.canAccessWithCurrentSession){let t=n()?.user?.email;return await p({fallbackScreenHint:`login`,callbackUrl:e.url,additionalAuthParams:{current_workspace_id:m.id,...t?{login_hint:t}:{},...m.ssoConnectionName==null?{}:{connection:m.ssoConnectionName}}}),null}let g=c()?.id!==m.id||t()?.id!==m.id,_=new URL(e.url);if(g&&_.searchParams.get(`refresh_account`)===`true`)throw C(`/`);let{updatedAccount:v}=await a(d,m.id);if(!v)throw C(`/`);if(g)throw await y(),_.searchParams.set(`refresh_account`,`true`),S(_.pathname+_.search);return m}var D=e((()=>{d(),o(),g(),m(),v(),_(),s(),x()}));export{E as n,D as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as t,
+    Aot as n,
+    E1 as r,
+    Fot as i,
+    G1 as a,
+    I1 as o,
+    Iot as s,
+    M1 as c,
+    O1 as l,
+    b5 as u,
+    f8 as d,
+    m5 as f,
+    n0 as p,
+    oit as m,
+    sit as h,
+    t0 as g,
+    x4 as _,
+    x5 as v,
+    y4 as y,
+    y5 as b
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    $ as x,
+    St as S,
+    xt as C
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+
+function w(e) {
+    let t = new URL(e.url);
+    throw C(`/auth/login?${new URLSearchParams({next:t.pathname+t.search})}`)
+}
+
+function T(e) {
+    let t = new URL(e.url).searchParams.getAll(`account_id`),
+        n = t[0]?.trim();
+    if (t.length !== 1 || !n) throw C(`/`);
+    return n
+}
+async function E(e) {
+    let o = i();
+    if (o.redirect != null) throw S(o.redirect.destination);
+    h() || w(e);
+    let s = T(e);
+    await b(() => !f());
+    let d = u(),
+        m = r(await d.ensureQueryData(l())).find(e => e.id === s);
+    if (m == null) throw C(`/`);
+    if (!m.canAccessWithCurrentSession) {
+        let t = n()?.user?.email;
+        return await p({
+            fallbackScreenHint: `login`,
+            callbackUrl: e.url,
+            additionalAuthParams: {
+                current_workspace_id: m.id,
+                ...t ? {
+                    login_hint: t
+                } : {},
+                ...m.ssoConnectionName == null ? {} : {
+                    connection: m.ssoConnectionName
+                }
+            }
+        }), null
+    }
+    let g = c()?.id !== m.id || t()?.id !== m.id,
+        _ = new URL(e.url);
+    if (g && _.searchParams.get(`refresh_account`) === `true`) throw C(`/`);
+    let {
+        updatedAccount: v
+    } = await a(d, m.id);
+    if (!v) throw C(`/`);
+    if (g) throw await y(), _.searchParams.set(`refresh_account`, `true`), S(_.pathname + _.search);
+    return m
+}
+var D = e((() => {
+    d(), o(), g(), m(), v(), _(), s(), x()
+}));
+export {
+    E as n, D as t
+};
 //# sourceMappingURL=d06c718e-njzfsmc05a8t6ix2.js.map

@@ -1,0 +1,77 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Pn as t,
+    Tn as n,
+    Vn as r,
+    zn as i
+} from "./2340486e-komxp8tzs51ny4jj.js";
+var a = e((() => {})),
+    o, s, c, l = e((() => {
+        o = n(), a(), i(), s = r(), c = e => {
+            "use forget";
+            let n = (0, o.c)(16),
+                {
+                    state: r,
+                    alt: i,
+                    height: a,
+                    children: c
+                } = e,
+                l = a === void 0 ? 416 : a;
+            if (r === `fallback`) {
+                let e;
+                return n[0] === i ? e = n[1] : (e = (0, s.jsx)(`p`, {
+                    className: `text-token-text-secondary text-sm`,
+                    children: i
+                }), n[0] = i, n[1] = e), e
+            }
+            let u;
+            n[2] === l ? u = n[3] : (u = {
+                height: l
+            }, n[2] = l, n[3] = u);
+            let d = r === `ready` ? `h-full` : `invisible h-full`,
+                f = r !== `error` && c,
+                p;
+            n[4] !== d || n[5] !== f ? (p = (0, s.jsx)(`div`, {
+                className: d,
+                children: f
+            }), n[4] = d, n[5] = f, n[6] = p) : p = n[6];
+            let m;
+            n[7] === r ? m = n[8] : (m = r === `loading` && (0, s.jsxs)(`div`, {
+                className: `bg-token-bg-secondary absolute inset-0 overflow-hidden rounded-2xl`,
+                "data-testid": `health-chart-loading`,
+                role: `status`,
+                children: [(0, s.jsx)(`div`, {
+                    "aria-hidden": `true`,
+                    className: `loading-results-shimmer h-full w-full dark:opacity-10`
+                }), (0, s.jsx)(`span`, {
+                    className: `sr-only`,
+                    children: (0, s.jsx)(t, {
+                        id: `chatgpt.health.answer_chart.status.loading`,
+                        defaultMessage: `Loading Health chart…`
+                    })
+                })]
+            }), n[7] = r, n[8] = m);
+            let h;
+            n[9] === r ? h = n[10] : (h = r === `error` && (0, s.jsx)(`p`, {
+                className: `text-token-text-secondary absolute inset-0 flex items-center justify-center text-sm`,
+                role: `alert`,
+                children: (0, s.jsx)(t, {
+                    id: `chatgpt.health.answer_chart.status.load_error`,
+                    defaultMessage: `This Health chart couldn't load.`
+                })
+            }), n[9] = r, n[10] = h);
+            let g;
+            return n[11] !== u || n[12] !== p || n[13] !== m || n[14] !== h ? (g = (0, s.jsxs)(`div`, {
+                className: `relative w-full min-w-0`,
+                style: u,
+                "data-testid": `health-chart-widget`,
+                children: [p, m, h]
+            }), n[11] = u, n[12] = p, n[13] = m, n[14] = h, n[15] = g) : g = n[15], g
+        }
+    }));
+export {
+    l as n, a as r, c as t
+};
+//# sourceMappingURL=c7a1f949-bopsjbyw3x68jpqh.js.map

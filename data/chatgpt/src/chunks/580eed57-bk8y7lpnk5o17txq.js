@@ -1,0 +1,4715 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/24e6779c-hd2xre7xecto15qo.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-qsuygr73qjc6rh65.js", "assets/2340486e-komxp8tzs51ny4jj.js", "assets/root-lelxp0l2.css", "assets/conversation-small-cawdu7il3ha6y70c.js", "assets/30901919-jory365vq6ym5crx.js", "assets/c470f5ab-in0lllrdrzeo67gs.js", "assets/0e5afe53-f9gmgfmgrr83ziw3.js", "assets/conversation-small-czggvj2v.css", "assets/0b9bc04d-g90revbu7sdiebdw.js", "assets/af004db9-hzih3kfc8ppntedi.js", "assets/0eda9bd1-maidyf90lb63ttnx.js", "assets/7271f1c9-eisaobgjylt9iv5o.js", "assets/1f8ec761-hwfxk6olnhggw9uh.js", "assets/805f0379-k04gsr6d9rwnpd2n.js", "assets/9e18a103-q7moiqommz7yhv30.js", "assets/3f385189-n3sls8prf0uwjnan.js", "assets/9371a995-fmgglrptzxzctqhz.js", "assets/b51f9083-k2f7symxpgv6mekw.js", "assets/cf64444f-dubzignin8fu0jwd.js", "assets/b4c3a217-fgu2yjgimogrm4g0.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $G as n,
+    $st as r,
+    At as i,
+    Az as a,
+    C5 as o,
+    Dz as s,
+    Ew as c,
+    Fx as l,
+    Hnt as u,
+    I1 as d,
+    Io as f,
+    J0 as p,
+    J5 as m,
+    JT as h,
+    Jl as g,
+    Jnt as _,
+    Kl as v,
+    Ktt as y,
+    M1 as b,
+    M5 as x,
+    Mh as S,
+    Mx as C,
+    Mz as w,
+    Nh as T,
+    Nst as E,
+    Nx as D,
+    Nz as O,
+    Oz as k,
+    PU as A,
+    Pv as j,
+    RU as M,
+    S5 as N,
+    SN as P,
+    S_ as F,
+    Sw as ee,
+    Ti as I,
+    Tw as L,
+    Uo as te,
+    VU as ne,
+    X0 as re,
+    Xy as ie,
+    Y0 as ae,
+    Y1 as R,
+    Yl as oe,
+    Yy as se,
+    Z0 as ce,
+    _R as le,
+    _W as ue,
+    _j as de,
+    a2 as fe,
+    a5 as pe,
+    aq as me,
+    bl as he,
+    cK as ge,
+    cn as _e,
+    dnt as ve,
+    e2 as ye,
+    fl as be,
+    fst as xe,
+    hn as Se,
+    it as Ce,
+    jz as we,
+    kU as Te,
+    ki as Ee,
+    kv as De,
+    lK as Oe,
+    lj as ke,
+    m8 as Ae,
+    nK as je,
+    nt as Me,
+    nx as Ne,
+    ot as Pe,
+    pl as Fe,
+    q5 as Ie,
+    qT as Le,
+    qnt as Re,
+    rx as ze,
+    st as Be,
+    tt as Ve,
+    vW as He,
+    vq as Ue,
+    ww as We,
+    x_ as Ge,
+    yN as Ke,
+    yR as qe,
+    yl as Je,
+    zU as Ye
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    $ as Xe,
+    Bn as Ze,
+    Hn as z,
+    Ln as Qe,
+    N as $e,
+    Pn as B,
+    Pt as et,
+    Rn as tt,
+    Tn as V,
+    Vn as H,
+    at as nt,
+    jt as rt,
+    ln as it,
+    lt as at,
+    p as ot,
+    s as st,
+    un as ct,
+    zn as U
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    $Mt as lt,
+    Aun as ut,
+    BMt as dt,
+    Bun as ft,
+    Dun as pt,
+    FMt as mt,
+    FPn as ht,
+    FQ as gt,
+    GMt as _t,
+    Gst as vt,
+    HMt as yt,
+    HQ as bt,
+    Hbn as xt,
+    IMt as St,
+    JMt as Ct,
+    Jln as wt,
+    KGn as Tt,
+    KMt as Et,
+    LHn as Dt,
+    LMt as Ot,
+    Lun as kt,
+    MGt as At,
+    Mun as jt,
+    NGt as Mt,
+    OJ as W,
+    Op as Nt,
+    PPn as Pt,
+    QMt as Ft,
+    RHn as It,
+    RMt as Lt,
+    Run as Rt,
+    Sun as zt,
+    Tun as Bt,
+    UMt as Vt,
+    Vbn as Ht,
+    Vun as Ut,
+    WGn as Wt,
+    WMt as Gt,
+    YMt as Kt,
+    Yrt as qt,
+    Zln as Jt,
+    aTn as Yt,
+    bgn as Xt,
+    bun as Zt,
+    dX as Qt,
+    dit as $t,
+    eNt as en,
+    iTn as tn,
+    kJ as nn,
+    kp as rn,
+    qMt as an,
+    qln as on,
+    qst as sn,
+    tNt as cn,
+    tun as ln,
+    uX as un,
+    wun as dn,
+    ygn as fn,
+    zHn as pn,
+    zun as mn
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Cx as hn,
+    DC as gn,
+    EC as _n,
+    Gg as vn,
+    Gx as yn,
+    Il as bn,
+    Kv as xn,
+    Ll as Sn,
+    Sx as Cn,
+    TC as wn,
+    Tp as Tn,
+    Wx as En,
+    Xp as Dn,
+    Zp as On,
+    eb as kn,
+    qg as An,
+    qv as jn,
+    tb as Mn,
+    wC as Nn,
+    wp as Pn
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    KC as Fn,
+    S_ as In,
+    Sw as Ln,
+    T_ as Rn,
+    gp as zn,
+    mC as Bn,
+    mp as Vn,
+    pC as Hn,
+    y_ as Un
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+import {
+    n as Wn,
+    r as Gn
+} from "./9ac7a75a-o42ejieyzry8c3s2.js";
+import {
+    I_ as Kn,
+    R_ as qn,
+    S_ as Jn,
+    TS as Yn,
+    _S as Xn,
+    bS as Zn,
+    bu as Qn,
+    cS as $n,
+    dS as er,
+    j_ as tr,
+    mS as nr,
+    w_ as rr,
+    xu as ir
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+import {
+    Bt as ar,
+    mt as or,
+    pt as sr,
+    zt as cr
+} from "./c470f5ab-in0lllrdrzeo67gs.js";
+import {
+    i as lr,
+    n as ur
+} from "./5f4d7fa0-b7743t275etbjxn4.js";
+import {
+    C as dr,
+    l as fr,
+    n as pr,
+    r as mr,
+    u as hr,
+    w as gr
+} from "./3e72bb91-k7ysiq2qw3z5q7zq.js";
+import {
+    n as _r,
+    t as vr
+} from "./673c0d9b-ebcan8mh8dywvyd0.js";
+import {
+    n as yr,
+    r as br
+} from "./b453068a-lz9p8iypelcxzs6g.js";
+import {
+    i as xr,
+    l as Sr,
+    o as Cr,
+    u as wr
+} from "./e19f3910-gqf6e2pgn5z6k0mv.js";
+import {
+    n as Tr,
+    t as Er
+} from "./f23f926c-b27b4ta5yfkiahzq.js";
+import {
+    n as Dr,
+    t as Or
+} from "./ab4d12c6-jhc0d9gwbv5jdhf8.js";
+import {
+    r as kr,
+    t as Ar
+} from "./0eda9bd1-maidyf90lb63ttnx.js";
+import {
+    n as jr,
+    t as Mr
+} from "./0b9bc04d-g90revbu7sdiebdw.js";
+import {
+    C as Nr,
+    D as Pr,
+    E as Fr,
+    O as Ir,
+    S as Lr,
+    T as Rr,
+    b as zr,
+    w as Br,
+    x as Vr,
+    y as Hr
+} from "./9e18a103-q7moiqommz7yhv30.js";
+import {
+    i as Ur,
+    r as Wr
+} from "./ab92372e-dodnn2y0eo4rnnj7.js";
+import {
+    i as Gr,
+    n as Kr,
+    r as qr,
+    t as Jr
+} from "./94e0eb8c-ythfm4ybtszwhr06.js";
+import {
+    n as Yr,
+    t as Xr
+} from "./39cfea03-jbkh9ywf0ri69805.js";
+import {
+    r as Zr,
+    t as Qr
+} from "./0f28d127-uf9ceiy73vx1km81.js";
+import {
+    n as $r,
+    t as ei
+} from "./b0ac1aff-i6q0drrdd3ks9hyb.js";
+import {
+    r as ti
+} from "./8d846022-o5c98v3vbp34xelf.js";
+import {
+    i as ni,
+    n as ri
+} from "./32d3feda-b4q9zgbn9fldk04e.js";
+import {
+    n as ii,
+    t as ai
+} from "./2af37e0b-e8kzdpp52rzz7ab1.js";
+import {
+    d as oi,
+    f as si
+} from "./e7a416e4-n9pc4bwkiggsq0a6.js";
+import {
+    n as ci,
+    t as li
+} from "./3625fe1a-0wtz49d9gtnz0lc9.js";
+import {
+    n as ui,
+    t as di
+} from "./8a995774-hdzfqutvl5cwuatn.js";
+import {
+    n as fi,
+    t as pi
+} from "./22bcb108-dgqem2dpep0bhx16.js";
+import {
+    n as mi,
+    t as hi
+} from "./4f9f51e5-oiwcyrh9jr63gwza.js";
+import {
+    n as gi,
+    t as _i
+} from "./84ae5536-gjar2hl9nj1xjlys.js";
+import {
+    n as vi,
+    t as yi
+} from "./ce09ded6-os1wfdendgmvb5m0.js";
+import {
+    n as bi,
+    t as xi
+} from "./50217878-jiqz6xihz0msoh0e.js";
+import {
+    n as Si,
+    r as Ci
+} from "./eb7d3911-pb4rn27haqj4bgb9.js";
+import {
+    _ as wi,
+    a as Ti,
+    f as Ei,
+    g as Di,
+    h as Oi,
+    i as ki,
+    n as Ai,
+    p as ji,
+    r as Mi,
+    t as Ni,
+    v as Pi,
+    y as Fi
+} from "./40e925e3-e4pngisr8pp66sl2.js";
+import {
+    n as Ii,
+    t as Li
+} from "./ab335e4b-e20r9to1c6qgosee.js";
+import {
+    i as Ri,
+    t as zi
+} from "./c6f3f0e6-n1dt3aw0zasgxap6.js";
+import {
+    n as Bi,
+    r as Vi,
+    t as Hi
+} from "./47ed0b35-bw9gmwpxovpkglbv.js";
+import {
+    n as Ui,
+    r as Wi
+} from "./35fc21ca-io7p376ee5yi6djh.js";
+import {
+    a as Gi,
+    c as Ki,
+    d as qi,
+    i as Ji,
+    l as Yi,
+    n as Xi,
+    o as Zi,
+    r as Qi,
+    s as $i,
+    u as ea
+} from "./bc28bb09-kcq68wy5ak2qlzn5.js";
+import {
+    a as ta,
+    n as na,
+    o as ra,
+    r as ia
+} from "./9c8fc5a3-jcrxflr3ak8m6ya6.js";
+import {
+    n as aa,
+    t as oa
+} from "./c25d8df9-o0yl4j88ilgqok1t.js";
+import {
+    n as sa,
+    r as ca
+} from "./82d09521-7ksvt7fttlcfghtn.js";
+
+function la({
+    disabled: e,
+    children: t
+}) {
+    return e ? (0, ua.jsx)(`div`, {
+        className: `pointer-events-none opacity-50 select-none`,
+        "aria-hidden": `true`,
+        tabIndex: -1,
+        inert: !0,
+        children: t
+    }) : t
+}
+var ua, da = e((() => {
+    ua = H()
+}));
+
+function fa(e) {
+    return (0, ha.jsx)(`option`, {
+        value: e.id,
+        children: e.name
+    }, e.id)
+}
+var pa, ma, ha, ga, _a = e((() => {
+    pa = V(), h(), ar(), Wr(), _i(), ma = t(z()), U(), ha = H(), ga = () => {
+        "use forget";
+        let e = (0, pa.c)(16),
+            [t, n] = (0, ma.useState)(),
+            r;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = {
+            showToast: !1
+        }, e[0] = r) : r = e[0];
+        let {
+            mutate: i
+        } = gi(r), a;
+        e[1] === t ? a = e[2] : (a = {
+            connectorId: t,
+            redirectAfter: `/codex/cloud`
+        }, e[1] = t, e[2] = a);
+        let {
+            isConnected: o,
+            isLoading: s,
+            error: c,
+            openConnectorModal: l,
+            refetch: u,
+            connectorId: d,
+            gitlabConnectorCandidates: f
+        } = Ur(a);
+        if (o || s || !c && f.length === 0) return null;
+        let p;
+        e[3] !== d || e[4] !== c || e[5] !== f || e[6] !== i ? (p = !c && f.length > 1 ? (0, ha.jsxs)(`label`, {
+            className: `flex w-full max-w-xs flex-col gap-1 text-xs`,
+            children: [(0, ha.jsx)(`span`, {
+                className: `text-token-text-secondary`,
+                children: (0, ha.jsx)(B, {
+                    id: `wham.gitlabConnectionsRow.connectorSelectorLabel`,
+                    defaultMessage: `GitLab connector`
+                })
+            }), (0, ha.jsx)(`select`, {
+                className: `border-token-border-default bg-token-bg-primary text-token-text-primary rounded-lg border px-3 py-2 text-sm`,
+                value: d,
+                onChange: e => {
+                    let t = e.target.value;
+                    n(t), i({
+                        preferredGitLabConnectorId: t
+                    })
+                },
+                children: f.map(fa)
+            })]
+        }) : null, e[3] = d, e[4] = c, e[5] = f, e[6] = i, e[7] = p) : p = e[7];
+        let m = p,
+            h;
+        e[8] !== c || e[9] !== l || e[10] !== u ? (h = c ? (0, ha.jsx)(Le, {
+            className: `px-3`,
+            color: `secondary`,
+            size: `medium`,
+            icon: cr,
+            onClick: u,
+            children: (0, ha.jsx)(B, {
+                id: `wham.gitlabConnectionsRow.retry`,
+                defaultMessage: `Failed to load GitLab connection`
+            })
+        }) : (0, ha.jsx)(Le, {
+            className: `px-3`,
+            color: `primary`,
+            size: `medium`,
+            icon: cr,
+            onClick: l,
+            children: (0, ha.jsx)(B, {
+                id: `wham.codexOnboardingConnections.connectGitLab.beta`,
+                defaultMessage: `Connect to GitLab (Beta)`
+            })
+        }), e[8] = c, e[9] = l, e[10] = u, e[11] = h) : h = e[11];
+        let g;
+        e[12] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, ha.jsx)(`div`, {
+            className: `text-token-text-secondary text-xs`,
+            children: (0, ha.jsx)(B, {
+                id: `wham.whamComposer.connectGitLabSubtitle`,
+                defaultMessage: `Connect a repository to create a task`
+            })
+        }), e[12] = g) : g = e[12];
+        let _;
+        return e[13] !== m || e[14] !== h ? (_ = (0, ha.jsx)(`div`, {
+            className: `bg-token-bg-tertiary border-token-border-light pointer-events-auto flex min-h-[220px] w-full items-center justify-center rounded-xl border`,
+            children: (0, ha.jsxs)(`div`, {
+                className: `flex flex-col items-center gap-2 p-8`,
+                children: [m, h, g]
+            })
+        }), e[13] = m, e[14] = h, e[15] = _) : _ = e[15], _
+    }
+}));
+
+function va({
+    disableExposureLog: e = !0
+} = {}) {
+    return Re(xa, {
+        disableExposureLog: e
+    })
+}
+
+function ya() {
+    va({
+        disableExposureLog: !1
+    }).get(`download_column_center`, Sa.downloadColumnCenter)
+}
+
+function ba() {
+    let e = va({
+        disableExposureLog: !0
+    });
+    return {
+        downloadColumnCenter: e.get(`download_column_center`, Sa.downloadColumnCenter),
+        highlightBorder: e.get(`highlight_border`, Sa.highlightBorder),
+        highlightButton: e.get(`highlight_button`, Sa.highlightButton),
+        highlightGradient: e.get(`highlight_gradient`, Sa.highlightGradient),
+        removeTopContainer: e.get(`remove_top_container`, Sa.removeTopContainer),
+        showWiderPage: e.get(`show_wider_page`, Sa.showWiderPage),
+        hideExamples: e.get(`hide_examples`, Sa.hideExamples)
+    }
+}
+var xa, Sa, Ca = e((() => {
+        _(), xa = `313589538`, Sa = {
+            downloadColumnCenter: !1,
+            highlightBorder: !1,
+            highlightButton: !1,
+            highlightGradient: !1,
+            removeTopContainer: !1,
+            showWiderPage: !1,
+            hideExamples: !1
+        }
+    })),
+    G, wa = e((() => {
+        U(), G = tt({
+            downloadMac: {
+                id: `wham.codexAppAnnouncement.cta.downloadMac`,
+                defaultMessage: `Download for macOS`
+            },
+            downloadWindows: {
+                id: `wham.codexAppAnnouncement.cta.downloadWindows`,
+                defaultMessage: `Download for Windows`
+            },
+            downloadApp: {
+                id: `wham.codexAppAnnouncement.cta.downloadApp`,
+                defaultMessage: `Download the app`
+            },
+            joinWaitlist: {
+                id: `wham.codexAppAnnouncement.cta.joinWaitlist`,
+                defaultMessage: `Join the Codex app waitlist`
+            },
+            installVsCodeExtension: {
+                id: `wham.codexAppAnnouncement.cta.installVsCodeExtension`,
+                defaultMessage: `Install the VS Code extension`
+            },
+            tryInIde: {
+                id: `wham.codexAppAnnouncement.cta.tryInIde`,
+                defaultMessage: `Try in your IDE`
+            },
+            downloadOnDesktop: {
+                id: `wham.codexAppAnnouncement.cta.downloadOnDesktop`,
+                defaultMessage: `Visit on desktop to download`
+            },
+            vsCode: {
+                id: `wham.codexAppAnnouncement.cta.vsCode`,
+                defaultMessage: `VS Code`
+            },
+            cursor: {
+                id: `wham.codexAppAnnouncement.cta.cursor`,
+                defaultMessage: `Cursor`
+            },
+            jetBrains: {
+                id: `wham.codexAppAnnouncement.cta.jetBrains`,
+                defaultMessage: `JetBrains`
+            },
+            npmInstall: {
+                id: `wham.codexAppAnnouncement.cta.npmInstall`,
+                defaultMessage: `$ npm i -g @openai/codex`
+            },
+            warp: {
+                id: `wham.codexAppAnnouncement.cta.warp`,
+                defaultMessage: `Warp`
+            }
+        })
+    })),
+    Ta, Ea, Da, Oa, ka = e((() => {
+        Cr(), wa(), Ta = {
+            mac: [
+                [{
+                    links: [{
+                        label: G.downloadMac,
+                        href: ke,
+                        analyticsAction: `codex_download_mac`
+                    }]
+                }]
+            ],
+            windows: [
+                [{
+                    dropdownCtaLabel: G.tryInIde,
+                    links: [{
+                        label: G.vsCode,
+                        href: `vscode:extension/openai.chatgpt`,
+                        analyticsAction: `codex_vscode_extension`
+                    }, {
+                        label: G.cursor,
+                        href: `cursor:extension/openai.chatgpt`,
+                        analyticsAction: `codex_cursor`
+                    }, {
+                        label: G.jetBrains,
+                        href: `https://blog.jetbrains.com/ai/2026/01/codex-in-jetbrains-ides/`,
+                        analyticsAction: `codex_jetbrains`
+                    }, {
+                        label: G.warp,
+                        href: `http://warp.dev/codex`,
+                        analyticsAction: `codex_warp`
+                    }]
+                }, {
+                    ctaStyle: `secondary`,
+                    links: [{
+                        label: G.joinWaitlist,
+                        href: `https://openai.com/form/codex-app/`,
+                        analyticsAction: `codex_waitlist`
+                    }]
+                }]
+            ],
+            desktop: [
+                [{
+                    dropdownCtaLabel: G.tryInIde,
+                    links: [{
+                        label: G.vsCode,
+                        href: `vscode:extension/openai.chatgpt`,
+                        analyticsAction: `codex_vscode_extension_desktop`
+                    }, {
+                        label: G.cursor,
+                        href: `cursor:extension/openai.chatgpt`,
+                        analyticsAction: `codex_cursor_desktop`
+                    }, {
+                        label: G.jetBrains,
+                        href: `https://blog.jetbrains.com/ai/2026/01/codex-in-jetbrains-ides/`,
+                        analyticsAction: `codex_jetbrains_desktop`
+                    }, {
+                        label: G.warp,
+                        href: `http://warp.dev/codex`,
+                        analyticsAction: `codex_warp_desktop`
+                    }]
+                }, {
+                    ctaStyle: `secondary`,
+                    links: [{
+                        label: G.joinWaitlist,
+                        href: `https://openai.com/form/codex-app/`,
+                        analyticsAction: `codex_waitlist`
+                    }]
+                }]
+            ],
+            mobile: [
+                [{
+                    links: [{
+                        label: G.downloadOnDesktop,
+                        href: ``
+                    }]
+                }]
+            ]
+        }, Ea = {
+            mac: [
+                [{
+                    fullWidth: !0,
+                    links: [{
+                        label: G.downloadApp,
+                        href: ke,
+                        analyticsAction: `codex_download_app_onboarding_mac`
+                    }]
+                }]
+            ],
+            windows: [
+                [{
+                    fullWidth: !0,
+                    links: [{
+                        label: G.downloadApp,
+                        href: de,
+                        analyticsAction: `codex_download_app_onboarding_windows`
+                    }]
+                }]
+            ],
+            desktop: [
+                [{
+                    fullWidth: !0,
+                    ctaStyle: `secondary`,
+                    links: [{
+                        label: G.joinWaitlist,
+                        href: `https://openai.com/form/codex-app/`,
+                        analyticsAction: `codex_waitlist_onboarding_desktop`
+                    }]
+                }]
+            ],
+            mobile: [
+                [{
+                    fullWidth: !0,
+                    links: [{
+                        label: G.downloadApp,
+                        href: ke,
+                        analyticsAction: `codex_download_app_onboarding_mobile`
+                    }]
+                }]
+            ]
+        }, G.installVsCodeExtension, G.installVsCodeExtension, G.installVsCodeExtension, G.installVsCodeExtension, Da = {
+            mac: [
+                [{
+                    dropdownCtaLabel: G.tryInIde,
+                    fullWidth: !0,
+                    links: [{
+                        label: G.vsCode,
+                        href: `vscode:extension/openai.chatgpt`,
+                        analyticsAction: `codex_vscode_extension_move_mac`
+                    }, {
+                        label: G.cursor,
+                        href: `cursor:extension/openai.chatgpt`,
+                        analyticsAction: `codex_cursor_move_mac`
+                    }, {
+                        label: G.jetBrains,
+                        href: `https://blog.jetbrains.com/ai/2026/01/codex-in-jetbrains-ides/`,
+                        analyticsAction: `codex_jetbrains_move_mac`
+                    }, {
+                        label: G.warp,
+                        href: `http://warp.dev/codex`,
+                        analyticsAction: `codex_warp_move_mac`
+                    }]
+                }]
+            ],
+            windows: [
+                [{
+                    dropdownCtaLabel: G.tryInIde,
+                    fullWidth: !0,
+                    links: [{
+                        label: G.vsCode,
+                        href: `vscode:extension/openai.chatgpt`,
+                        analyticsAction: `codex_vscode_extension_move_windows`
+                    }, {
+                        label: G.cursor,
+                        href: `cursor:extension/openai.chatgpt`,
+                        analyticsAction: `codex_cursor_move_windows`
+                    }, {
+                        label: G.jetBrains,
+                        href: `https://blog.jetbrains.com/ai/2026/01/codex-in-jetbrains-ides/`,
+                        analyticsAction: `codex_jetbrains_move_windows`
+                    }, {
+                        label: G.warp,
+                        href: `http://warp.dev/codex`,
+                        analyticsAction: `codex_warp_move_mac`
+                    }]
+                }]
+            ],
+            desktop: [
+                [{
+                    dropdownCtaLabel: G.tryInIde,
+                    fullWidth: !0,
+                    links: [{
+                        label: G.vsCode,
+                        href: `vscode:extension/openai.chatgpt`,
+                        analyticsAction: `codex_vscode_extension_move_linux`
+                    }, {
+                        label: G.cursor,
+                        href: `cursor:extension/openai.chatgpt`,
+                        analyticsAction: `codex_cursor_move_linux`
+                    }, {
+                        label: G.jetBrains,
+                        href: `https://blog.jetbrains.com/ai/2026/01/codex-in-jetbrains-ides/`,
+                        analyticsAction: `codex_jetbrains_move_linux`
+                    }, {
+                        label: G.warp,
+                        href: `http://warp.dev/codex`,
+                        analyticsAction: `codex_warp_move_mac`
+                    }]
+                }]
+            ],
+            mobile: [
+                [{
+                    dropdownCtaLabel: G.tryInIde,
+                    fullWidth: !0,
+                    links: [{
+                        label: G.vsCode,
+                        href: `https://marketplace.visualstudio.com/items?itemName=openai.chatgpt`,
+                        analyticsAction: `codex_vscode_extension_move_mobile`
+                    }, {
+                        label: G.jetBrains,
+                        href: `https://blog.jetbrains.com/ai/2026/01/codex-in-jetbrains-ides/`,
+                        analyticsAction: `codex_jetbrains_move_mobile`
+                    }, {
+                        label: G.warp,
+                        href: `http://warp.dev/codex`,
+                        analyticsAction: `codex_warp_move_mac`
+                    }]
+                }]
+            ]
+        }, Oa = {
+            mac: [
+                [{
+                    fullWidth: !0,
+                    links: [{
+                        label: G.npmInstall,
+                        href: ``,
+                        copyValue: `npm i -g @openai/codex`,
+                        analyticsAction: `codex_npm_i_click_mac`
+                    }]
+                }]
+            ],
+            windows: [
+                [{
+                    fullWidth: !0,
+                    links: [{
+                        label: G.npmInstall,
+                        href: ``,
+                        copyValue: `npm i -g @openai/codex`,
+                        analyticsAction: `codex_npm_i_click_windows`
+                    }]
+                }]
+            ],
+            desktop: [
+                [{
+                    fullWidth: !0,
+                    links: [{
+                        label: G.npmInstall,
+                        href: ``,
+                        copyValue: `npm i -g @openai/codex`,
+                        analyticsAction: `codex_npm_i_click_desktop`
+                    }]
+                }]
+            ],
+            mobile: [
+                [{
+                    fullWidth: !0,
+                    links: [{
+                        label: G.npmInstall,
+                        href: ``,
+                        copyValue: `npm i -g @openai/codex`,
+                        analyticsAction: `codex_npm_i_click_mobile`
+                    }]
+                }]
+            ]
+        }
+    }));
+
+function Aa(e) {
+    "use forget";
+    let t = (0, za.c)(6),
+        {
+            downloadColumnCenter: n
+        } = e,
+        r = Ze(),
+        i = Ci(),
+        a;
+    if (t[0] !== i.onboardingEditorUrl || t[1] !== i.onboardingStartUrl || t[2] !== i.onboardingTerminalUrl || t[3] !== n || t[4] !== r) {
+        let e = {
+            app: {
+                id: `app`,
+                title: r.formatMessage(Ja.appTitle),
+                imageUrl: i.onboardingStartUrl,
+                alt: r.formatMessage(Ja.appAlt),
+                ctas: Ga
+            },
+            ide: {
+                id: `ide`,
+                title: r.formatMessage(Ja.ideTitle),
+                imageUrl: i.onboardingEditorUrl,
+                alt: r.formatMessage(Ja.ideAlt),
+                ctas: Ka
+            },
+            cli: {
+                id: `cli`,
+                title: r.formatMessage(Ja.cliTitle),
+                imageUrl: i.onboardingTerminalUrl,
+                alt: r.formatMessage(Ja.cliAlt),
+                ctas: qa
+            }
+        };
+        a = (n ? Ha : Va).map(t => e[t]), t[0] = i.onboardingEditorUrl, t[1] = i.onboardingStartUrl, t[2] = i.onboardingTerminalUrl, t[3] = n, t[4] = r, t[5] = a
+    } else a = t[5];
+    return a
+}
+
+function ja() {
+    return (e, t) => {
+        e === `app` && Gn(t.href) && W.recordCodexAppSurfaceAction(`onboarding`, `download`, `local_options`), W.recordCodexOnboardingAction(Ua[e], `local_options`)
+    }
+}
+
+function Ma({
+    cards: e,
+    config: t,
+    onCardClick: n,
+    variant: r,
+    showContinueToCloud: i = !1,
+    onContinueToCloud: a
+}) {
+    let {
+        bodyClassName: o,
+        cardsClassName: s,
+        headerClassName: c,
+        titleClassName: l
+    } = Wa[r], u = e[1]?.id ?? null;
+    return (0, K.jsxs)(K.Fragment, {
+        children: [(0, K.jsxs)(`section`, {
+            className: Ie(c, r === `inline` && t.showWiderPage && `items-center text-center`),
+            children: [(0, K.jsx)(`h1`, {
+                className: l,
+                children: (0, K.jsx)(B, {
+                    ...Ja.title
+                })
+            }), (0, K.jsx)(`p`, {
+                className: o,
+                children: (0, K.jsx)(B, {
+                    ...Ja.body
+                })
+            })]
+        }), (0, K.jsx)(`section`, {
+            className: s,
+            children: e.map(e => {
+                let r = e.id === u;
+                return (0, K.jsxs)(`article`, {
+                    "data-highlighted": r ? `true` : void 0,
+                    "data-testid": `${e.id}-onboarding-card`,
+                    className: Ie(`flex h-full flex-col overflow-hidden rounded-2xl border border-black/8 p-4 shadow-[0_18px_60px_rgba(28,39,94,0.08)] backdrop-blur md:p-5 dark:border-white/10 dark:shadow-[0_24px_80px_rgba(0,0,0,0.3)]`, r && t.highlightBorder ? `outline-[1.5px] outline-[#5856D6] outline-solid dark:outline-[#484777]` : null, r && t.highlightGradient ? `bg-[linear-gradient(206.72deg,_#EEEFFF_2.34%,_#FFFFFF_92.37%)] dark:bg-[linear-gradient(206.72deg,_#30305F_2.34%,_#212121_92.37%)]` : `bg-white/78 dark:bg-white/6`),
+                    children: [(0, K.jsx)(`div`, {
+                        className: `overflow-hidden rounded-[22px] border border-black/6 bg-[#F3F6FB] dark:border-white/10 dark:bg-[#0D1227]`,
+                        children: (0, K.jsx)(`img`, {
+                            src: e.imageUrl,
+                            alt: e.alt,
+                            className: `block h-auto w-full object-cover`
+                        })
+                    }), (0, K.jsxs)(`div`, {
+                        className: `flex flex-1 flex-col pt-5`,
+                        children: [(0, K.jsx)(`h2`, {
+                            className: `text-token-text-primary text-center text-[26px] leading-8 font-semibold tracking-[-0.02em] dark:text-white`,
+                            children: e.title
+                        }), (0, K.jsx)(`div`, {
+                            className: `mt-auto pt-5`,
+                            children: (0, K.jsx)(xi, {
+                                data: La({
+                                    ctas: e.ctas,
+                                    usePurplePrimaryButton: r && t.highlightButton
+                                }),
+                                onLinkClick: t => n(e.id, t),
+                                buttonWidthClassName: `w-full`
+                            })
+                        })]
+                    })]
+                }, e.id)
+            })
+        }), i ? (0, K.jsx)(`div`, {
+            className: `mt-8 flex justify-center pb-2`,
+            children: (0, K.jsx)(Le, {
+                color: `ghost`,
+                size: `large`,
+                onClick: a,
+                className: `w-full max-w-sm`,
+                children: (0, K.jsx)(B, {
+                    ...Ja.continueToCloud
+                })
+            })
+        }) : null]
+    })
+}
+
+function Na(e) {
+    "use forget";
+    let t = (0, za.c)(27),
+        {
+            onFinishOnboarding: n
+        } = e,
+        r = x(Ue),
+        i = P(),
+        a = Aa(Sa),
+        o = ja(),
+        s;
+    t[0] === i ? s = t[1] : (s = yr({
+        isDarkMode: i
+    }), t[0] = i, t[1] = s);
+    let {
+        bgScreenUrl: c,
+        videoUrl: l
+    } = s, u;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (u = [], t[2] = u) : u = t[2], (0, Ba.useEffect)(Pa, u);
+    let d;
+    t[3] === n ? d = t[4] : (d = () => {
+        W.recordCodexOnboardingAction(`continue_to_cloud`, `local_options`), n?.()
+    }, t[3] = n, t[4] = d);
+    let f = d,
+        p;
+    t[5] === n ? p = t[6] : (p = () => {
+        W.recordCodexOnboardingAction(`close`, `local_options`), n?.()
+    }, t[5] = n, t[6] = p);
+    let m = p,
+        h;
+    t[7] !== c || t[8] !== r || t[9] !== l ? (h = r ? (0, K.jsx)(`div`, {
+        className: `h-full w-full bg-gradient-to-br from-sky-200/80 via-indigo-300/70 to-blue-700/80`
+    }) : (0, K.jsx)(`video`, {
+        autoPlay: !0,
+        loop: !0,
+        muted: !0,
+        playsInline: !0,
+        poster: c,
+        className: `h-full w-full object-cover`,
+        "aria-hidden": !0,
+        children: (0, K.jsx)(`source`, {
+            src: l,
+            type: `video/mp4`
+        })
+    }), t[7] = c, t[8] = r, t[9] = l, t[10] = h) : h = t[10];
+    let g, _;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, K.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `absolute inset-0 bg-white/74 dark:bg-[#111A53]/58`
+    }), _ = (0, K.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.35),transparent_28%),radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_32%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(169,197,255,0.3),transparent_24%)]`
+    }), t[11] = g, t[12] = _) : (g = t[11], _ = t[12]);
+    let v;
+    t[13] === h ? v = t[14] : (v = (0, K.jsxs)(`div`, {
+        "aria-hidden": !0,
+        className: `pointer-events-none absolute inset-0`,
+        children: [h, g, _]
+    }), t[13] = h, t[14] = v);
+    let y;
+    t[15] === m ? y = t[16] : (y = (0, K.jsx)(`div`, {
+        className: `flex justify-end px-4 pt-4 md:px-6 md:pt-6`,
+        children: (0, K.jsx)(L, {
+            onClick: m,
+            className: `text-token-text-secondary bg-white/72! shadow-sm backdrop-blur hover:bg-white/90! dark:bg-white/10! dark:text-white/75 dark:hover:bg-white/16!`
+        })
+    }), t[15] = m, t[16] = y);
+    let b;
+    t[17] !== a || t[18] !== o || t[19] !== f ? (b = (0, K.jsx)(`div`, {
+        className: `mx-auto flex w-full max-w-7xl flex-1 flex-col px-4 pb-8 md:px-6 lg:px-8`,
+        children: (0, K.jsx)(Ma, {
+            cards: a,
+            config: Sa,
+            onCardClick: o,
+            variant: `fullscreen`,
+            showContinueToCloud: !0,
+            onContinueToCloud: f
+        })
+    }), t[17] = a, t[18] = o, t[19] = f, t[20] = b) : b = t[20];
+    let S;
+    t[21] !== b || t[22] !== y ? (S = (0, K.jsxs)(`div`, {
+        className: `relative z-10 flex min-h-screen flex-col`,
+        children: [y, b]
+    }), t[21] = b, t[22] = y, t[23] = S) : S = t[23];
+    let C;
+    return t[24] !== S || t[25] !== v ? (C = (0, K.jsxs)(`main`, {
+        className: `text-token-text-primary relative min-h-screen overflow-hidden bg-[#F6F8FB] dark:bg-[#080C1C] dark:text-white`,
+        children: [v, S]
+    }), t[24] = S, t[25] = v, t[26] = C) : C = t[26], C
+}
+
+function Pa() {
+    W.recordCodexOnboardingView(`local_options`)
+}
+
+function Fa(e) {
+    "use forget";
+    let t = (0, za.c)(14),
+        n;
+    t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+    let {
+        codexPageImprovementsConfig: r
+    } = n, i;
+    t[2] === r ? i = t[3] : (i = () => r == null ? ba() : null, t[2] = r, t[3] = i);
+    let [a] = (0, Ba.useState)(i), o = r ?? a ?? Sa, s = Aa(o), c = ja(), l;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (l = [], t[4] = l) : l = t[4], (0, Ba.useEffect)(Ia, l);
+    let u = o.removeTopContainer ? null : `rounded-xl border border-black/8 bg-[linear-gradient(180deg,#F8FAFD_0%,#EEF4FF_100%)] p-4 shadow-[0_18px_60px_rgba(28,39,94,0.08)] md:p-6 dark:border-white/10 dark:bg-[linear-gradient(180deg,rgba(13,18,39,0.96)_0%,rgba(17,26,83,0.82)_100%)] dark:shadow-[0_24px_80px_rgba(0,0,0,0.3)]`,
+        d;
+    t[5] === u ? d = t[6] : (d = Ie(`w-full`, u), t[5] = u, t[6] = d);
+    let f;
+    t[7] !== s || t[8] !== o || t[9] !== c ? (f = (0, K.jsx)(Ma, {
+        cards: s,
+        config: o,
+        onCardClick: c,
+        variant: `inline`
+    }), t[7] = s, t[8] = o, t[9] = c, t[10] = f) : f = t[10];
+    let p;
+    return t[11] !== d || t[12] !== f ? (p = (0, K.jsx)(`section`, {
+        "data-testid": `inline-local-onboarding`,
+        className: d,
+        children: f
+    }), t[11] = d, t[12] = f, t[13] = p) : p = t[13], p
+}
+
+function Ia() {
+    W.recordCodexOnboardingView(`local_options`), ya()
+}
+
+function La({
+    ctas: e,
+    usePurplePrimaryButton: t
+}) {
+    if (!t) return e;
+    let n = e => e.map(e => ({
+        ...e,
+        ctaStyle: e.ctaStyle == null || e.ctaStyle === `primary` ? `purple` : e.ctaStyle
+    }));
+    return {
+        mac: e.mac.map(n),
+        windows: e.windows?.map(n),
+        desktop: e.desktop.map(n),
+        mobile: e.mobile.map(n)
+    }
+}
+
+function Ra(e) {
+    let t = e => e.map(e => ({
+        ...e,
+        fullWidth: !0
+    }));
+    return {
+        mac: e.mac.map(t),
+        windows: e.windows?.map(t),
+        desktop: e.desktop.map(t),
+        mobile: e.mobile.map(t)
+    }
+}
+var za, Ba, K, Va, Ha, Ua, Wa, Ga, Ka, qa, Ja, Ya = e((() => {
+    za = V(), h(), c(), Ae(), me(), Ke(), bi(), br(), Wn(), ka(), Ca(), Si(), nn(), m(), Ba = t(z()), U(), K = H(), Va = [`app`, `cli`, `ide`], Ha = [`cli`, `app`, `ide`], Ua = {
+        app: `choose_app`,
+        cli: `choose_cli`,
+        ide: `choose_ide`
+    }, Wa = {
+        fullscreen: {
+            headerClassName: `mx-auto flex w-full max-w-5xl flex-col items-center text-center`,
+            titleClassName: `text-token-text-primary mt-8 max-w-4xl text-[36px] leading-[1.02] font-semibold tracking-[-0.04em] md:text-[54px] dark:text-white`,
+            bodyClassName: `mt-4 max-w-3xl text-base leading-7 text-[#4E5D86] md:text-lg md:leading-8 dark:text-white/78`,
+            cardsClassName: `mt-10 grid grid-cols-1 gap-4 md:grid-cols-3`
+        },
+        inline: {
+            headerClassName: `mx-auto flex w-full max-w-5xl flex-col items-center text-center`,
+            titleClassName: `text-token-text-primary max-w-3xl text-[28px] leading-[1.06] font-semibold tracking-[-0.04em] md:text-[40px] dark:text-white`,
+            bodyClassName: `mt-3 max-w-3xl text-sm leading-6 text-[#4E5D86] md:text-base md:leading-7 dark:text-white/78`,
+            cardsClassName: `mt-6 grid grid-cols-1 gap-4 md:grid-cols-3`
+        }
+    }, Ga = Ra(Ta), Ka = Ra(Da), qa = Ra(Oa), Ja = tt({
+        title: {
+            id: `wham.fullScreenCodexOnboardingLocalEmphasis.title`,
+            defaultMessage: `Choose how to get started with Codex`
+        },
+        body: {
+            id: `wham.fullScreenCodexOnboardingLocalEmphasis.body`,
+            defaultMessage: `Codex is built into your IDE, CLI, GitHub, and the web. Work side-by-side locally, or let it keep going in the cloud when you step away.`
+        },
+        appTitle: {
+            id: `wham.fullScreenCodexOnboardingLocalEmphasis.appTitle`,
+            defaultMessage: `Download the app`
+        },
+        appAlt: {
+            id: `wham.fullScreenCodexOnboardingLocalEmphasis.appAlt`,
+            defaultMessage: `Preview of the Codex desktop app`
+        },
+        ideTitle: {
+            id: `wham.fullScreenCodexOnboardingLocalEmphasis.ideTitle`,
+            defaultMessage: `Try the IDE extension`
+        },
+        ideAlt: {
+            id: `wham.fullScreenCodexOnboardingLocalEmphasis.ideAlt`,
+            defaultMessage: `Preview of Codex inside an IDE`
+        },
+        cliTitle: {
+            id: `wham.fullScreenCodexOnboardingLocalEmphasis.cliTitle`,
+            defaultMessage: `Install the CLI`
+        },
+        cliAlt: {
+            id: `wham.fullScreenCodexOnboardingLocalEmphasis.cliAlt`,
+            defaultMessage: `Preview of the Codex CLI`
+        },
+        continueToCloud: {
+            id: `wham.fullScreenCodexOnboardingLocalEmphasis.continueToCloud`,
+            defaultMessage: `Continue to cloud`
+        }
+    })
+}));
+
+function Xa() {
+    let {
+        data: e,
+        isLoading: t
+    } = pt(), n = e?.items ?? [], [r, i] = (0, Za.useState)(null);
+    return t && n.length === 0 ? (0, Qa.jsx)(`div`, {
+        className: `mt-4 flex h-full w-full items-center justify-center`,
+        children: (0, Qa.jsx)(a, {})
+    }) : (0, Qa.jsx)(`div`, {
+        className: `flex flex-col justify-center`,
+        children: n.map((e, t) => (0, Qa.jsx)(Mr, {
+            index: t,
+            taskListItem: e,
+            hoveredIndex: r,
+            onMouseEnter: () => i(t),
+            onMouseLeave: () => i(null),
+            linkPath: `/s/${e.share_task_id}`,
+            showArchiveButton: !1,
+            currentFilter: `current`
+        }, e.id ?? `${t}`))
+    })
+}
+var Za, Qa, $a = e((() => {
+        we(), jr(), wt(), Za = t(z()), Qa = H()
+    })),
+    eo, to = e((() => {
+        ae(), ct(), eo = p(() => it(() => import(`./24e6779c-hd2xre7xecto15qo.js`).then(e => e.WhamTaskSearchModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21])))
+    }));
+
+function no() {
+    "use forget";
+    let e = (0, oo.c)(80),
+        t = Ze(),
+        {
+            homeTab: n,
+            setHomeTab: r
+        } = mn(),
+        i;
+    e[0] === n ? i = e[1] : (i = kt(n), e[0] = n, e[1] = i);
+    let a = i,
+        o = Ut(ao),
+        s = Ut(io),
+        {
+            eligible: c,
+            isLoading: l
+        } = Kt(),
+        d;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (d = u(`3234831587`), e[2] = d) : d = e[2];
+    let f = d,
+        p = !l && c,
+        m;
+    e[3] !== c || e[4] !== l || e[5] !== r || e[6] !== s ? (m = e => {
+        r(e), e === `code_reviews` && !l && c && Ce(Gt), e === `all` && s(!1)
+    }, e[3] = c, e[4] = l, e[5] = r, e[6] = s, e[7] = m) : m = e[7];
+    let h = m,
+        g, _;
+    e[8] !== n || e[9] !== c || e[10] !== l ? (g = () => {
+        n === `code_reviews` && !l && c && Ce(Gt)
+    }, _ = [n, c, l], e[8] = n, e[9] = c, e[10] = l, e[11] = g, e[12] = _) : (g = e[11], _ = e[12]), (0, so.useEffect)(g, _);
+    let v, y;
+    e[13] !== n || e[14] !== r ? (v = () => {
+        !f && n === `security_reviews` && r(`all`)
+    }, y = [n, f, r], e[13] = n, e[14] = r, e[15] = v, e[16] = y) : (v = e[15], y = e[16]), (0, so.useEffect)(v, y);
+    let b, x;
+    e[17] !== n || e[18] !== s ? (b = () => {
+        n === `all` && s(!1)
+    }, x = [n, s], e[17] = n, e[18] = s, e[19] = b, e[20] = x) : (b = e[19], x = e[20]), (0, so.useEffect)(b, x);
+    let S;
+    e[21] === a ? S = e[22] : (S = () => {
+        ye(eo, {
+            tasksFilter: a
+        })
+    }, e[21] = a, e[22] = S);
+    let w = S,
+        E;
+    e[23] === w ? E = e[24] : (E = () => w(), e[23] = w, e[24] = E);
+    let O;
+    e[25] === Symbol.for(`react.memo_cache_sentinel`) ? (O = [{
+        binding: [D.Mod, `k`]
+    }], e[25] = O) : O = e[25];
+    let k;
+    e[26] === E ? k = e[27] : (k = [{
+        key: `whamTasksSearch`,
+        action: E,
+        actionMessageDescriptor: lo.keyboardShortcut,
+        group: C.Chat,
+        bindings: O
+    }], e[26] = E, e[27] = k), Zr(k);
+    let A;
+    e[28] === t ? A = e[29] : (A = t.formatMessage({
+        id: `wham.whamTasksHeader.tasks`,
+        defaultMessage: `Tasks`
+    }), e[28] = t, e[29] = A);
+    let j = A,
+        M;
+    e[30] === o ? M = e[31] : (M = o ? (0, co.jsx)(`span`, {
+        "aria-hidden": `true`,
+        className: `absolute -end-2 top-1 size-1.5 -translate-y-1/2 rounded-full bg-blue-400`
+    }) : null, e[30] = o, e[31] = M);
+    let N;
+    e[32] !== M || e[33] !== j ? (N = (0, co.jsxs)(`span`, {
+        className: `relative inline-flex items-center`,
+        children: [j, M]
+    }), e[32] = M, e[33] = j, e[34] = N) : N = e[34];
+    let P = N,
+        F;
+    e[35] === t ? F = e[36] : (F = t.formatMessage({
+        id: `wham.whamTasksHeader.codeReviews`,
+        defaultMessage: `Code reviews`
+    }), e[35] = t, e[36] = F);
+    let ee = F,
+        I;
+    e[37] === p ? I = e[38] : (I = p ? (0, co.jsx)(`span`, {
+        "aria-hidden": `true`,
+        className: `absolute -end-2 top-1 size-1.5 -translate-y-1/2 rounded-full bg-blue-400`
+    }) : null, e[37] = p, e[38] = I);
+    let L;
+    e[39] !== ee || e[40] !== I ? (L = (0, co.jsxs)(`span`, {
+        className: `relative inline-flex items-center`,
+        children: [ee, I]
+    }), e[39] = ee, e[40] = I, e[41] = L) : L = e[41];
+    let te = L,
+        ne;
+    e[42] === t ? ne = e[43] : (ne = t.formatMessage({
+        id: `wham.whamTasksHeader.securityReviews`,
+        defaultMessage: `Security reviews`
+    }), e[42] = t, e[43] = ne);
+    let re = ne,
+        ie;
+    e[44] === t ? ie = e[45] : (ie = t.formatMessage({
+        id: `wham.whamTasksHeader.tasksAriaLabel`,
+        defaultMessage: `Tab selector to view active tasks`
+    }), e[44] = t, e[45] = ie);
+    let ae;
+    e[46] !== ie || e[47] !== P ? (ae = {
+        label: P,
+        ariaLabel: ie,
+        key: `all`
+    }, e[46] = ie, e[47] = P, e[48] = ae) : ae = e[48];
+    let R;
+    e[49] === t ? R = e[50] : (R = t.formatMessage({
+        id: `wham.whamTasksHeader.codeReviewsAriaLabel`,
+        defaultMessage: `Tab selector to view code reviews`
+    }), e[49] = t, e[50] = R);
+    let oe;
+    e[51] !== te || e[52] !== R ? (oe = {
+        label: te,
+        ariaLabel: R,
+        key: `code_reviews`
+    }, e[51] = te, e[52] = R, e[53] = oe) : oe = e[53];
+    let se;
+    e[54] !== t || e[55] !== re ? (se = f ? [{
+        label: re,
+        ariaLabel: t.formatMessage({
+            id: `wham.whamTasksHeader.securityReviewsAriaLabel`,
+            defaultMessage: `Tab selector to view security reviews`
+        }),
+        key: `security_reviews`
+    }] : [], e[54] = t, e[55] = re, e[56] = se) : se = e[56];
+    let ce;
+    e[57] === t ? ce = e[58] : (ce = t.formatMessage({
+        id: `wham.whamTasksHeader.archived`,
+        defaultMessage: `Archive`
+    }), e[57] = t, e[58] = ce);
+    let le;
+    e[59] === t ? le = e[60] : (le = t.formatMessage({
+        id: `wham.whamTasksHeader.archivedAriaLabel`,
+        defaultMessage: `Tab selector to view archived tasks`
+    }), e[59] = t, e[60] = le);
+    let ue;
+    e[61] !== ce || e[62] !== le ? (ue = {
+        label: ce,
+        ariaLabel: le,
+        key: `archived`
+    }, e[61] = ce, e[62] = le, e[63] = ue) : ue = e[63];
+    let de;
+    e[64] !== ae || e[65] !== oe || e[66] !== se || e[67] !== ue ? (de = [ae, oe, ...se, ue], e[64] = ae, e[65] = oe, e[66] = se, e[67] = ue, e[68] = de) : de = e[68];
+    let fe = de,
+        pe;
+    e[69] !== h || e[70] !== n || e[71] !== fe ? (pe = (0, co.jsx)(`div`, {
+        className: `flex items-center gap-2`,
+        children: (0, co.jsx)(ri, {
+            currentTab: n,
+            onChange: h,
+            withUnderline: !0,
+            skipTabUnderlineAnimation: !0,
+            tabs: fe
+        })
+    }), e[69] = h, e[70] = n, e[71] = fe, e[72] = pe) : pe = e[72];
+    let me;
+    e[73] !== n || e[74] !== t || e[75] !== w ? (me = n === `all` ? (0, co.jsx)(At, {
+        className: `text-token-text-secondary hover:text-token-text-primary`,
+        icon: (0, co.jsxs)(co.Fragment, {
+            children: [(0, co.jsx)(T, {
+                className: `icon`
+            }), (0, co.jsx)(`span`, {
+                className: `sr-only`,
+                children: (0, co.jsx)(B, {
+                    ...lo.openSearch
+                })
+            })]
+        }),
+        label: t.formatMessage(lo.openSearch),
+        onClick: w,
+        onPointerOver: ro
+    }) : null, e[73] = n, e[74] = t, e[75] = w, e[76] = me) : me = e[76];
+    let he;
+    return e[77] !== pe || e[78] !== me ? (he = (0, co.jsxs)(`div`, {
+        className: `border-token-border-primary mt-4 flex w-full flex-wrap items-center justify-between gap-3 border-b align-middle md:mt-6`,
+        children: [pe, me]
+    }), e[77] = pe, e[78] = me, e[79] = he) : he = e[79], he
+}
+
+function ro() {
+    return eo.prefetch()
+}
+
+function io(e) {
+    return e.setShouldHighlightTasksTab
+}
+
+function ao(e) {
+    return e.shouldHighlightTasksTab
+}
+var oo, so, co, lo, uo = e((() => {
+    oo = V(), S(), ce(), Mt(), Me(), l(), _(), ni(), Ct(), to(), Rt(), Qr(), ft(), so = t(z()), U(), co = H(), lo = tt({
+        openSearch: {
+            id: `wham.whamTasksHeader.openSearch`,
+            defaultMessage: `Open task search`
+        },
+        keyboardShortcut: {
+            id: `wham.whamTasksHeader.keyboardShortcut`,
+            defaultMessage: `Search tasks`
+        }
+    })
+}));
+
+function fo() {
+    let e = Ze(),
+        t = ne(),
+        n = Ut(e => e.environmentId),
+        r = Ut(e => e.branch),
+        [i, a] = (0, po.useState)(null),
+        o = $e(),
+        {
+            isCreatingEnvironment: s,
+            ensureEnvironment: c,
+            hasRepository: l
+        } = ci(),
+        u = !!(n && r),
+        d = !u && !l,
+        f = !u && !l,
+        p = [{
+            id: `ask-0`,
+            type: `ask`,
+            prompt: e.formatMessage({
+                id: `wham.codexOnboardingStarterTasks.ask.prompt.0`,
+                defaultMessage: `Explain the codebase to a newcomer. What is the general structure, what are the important things to know, and what are some pointers for things to learn next?`
+            })
+        }, {
+            id: `build-1`,
+            type: `build`,
+            prompt: e.formatMessage({
+                id: `wham.codexOnboardingStarterTasks.build.prompt.1`,
+                defaultMessage: `Pick a part of the codebase that seems important and find and fix a bug.`
+            })
+        }, {
+            id: `ask-2`,
+            type: `ask`,
+            prompt: e.formatMessage({
+                id: `wham.codexOnboardingStarterTasks.ask.prompt.2`,
+                defaultMessage: `Go through the codebase, find issues and propose one task to fix a typo, one task to fix a bug, one task to fix a code comment or documentation discrepancy, and one task to improve a test.`
+            })
+        }],
+        {
+            mutate: m
+        } = ot({
+            mutationFn: async ({
+                prompt: n,
+                id: r
+            }) => {
+                let {
+                    environmentId: i,
+                    branch: o
+                } = Ut.getState();
+                if (!i || !o) throw t.danger(e.formatMessage({
+                    id: `wham.whamComposer.failedToCreateTask`,
+                    defaultMessage: `Failed to create task`
+                })), Error(`Environment, content, and branch are required`);
+                let s = crypto.randomUUID();
+                return Ut.getState().addPendingTaskId(s), a(r), await be.createNewTask(i, o, n, !1).catch(n => {
+                    throw Ut.getState().removePendingTaskId(s), t.danger(e.formatMessage({
+                        id: `wham.whamComposer.failedToCreateTask`,
+                        defaultMessage: `Failed to create task`
+                    }), {
+                        id: s,
+                        duration: 5,
+                        hasCloseButton: !0
+                    }), n
+                }).then(e => (Ut.getState().assignPendingTaskToFinalTask(s, e.task.id), e))
+            },
+            onSuccess: () => {
+                o.refetchQueries({
+                    queryKey: [`wham`, `tasks`]
+                }), o.refetchQueries({
+                    queryKey: [`wham`, `usage`, `rate-limit-status`]
+                })
+            },
+            onSettled: () => {
+                a(null)
+            }
+        }),
+        h = async n => {
+            if (!u) {
+                if (!l) {
+                    t.danger(e.formatMessage({
+                        id: `wham.startFirstTask.selectRepository`,
+                        defaultMessage: `Select a repository before starting a task`
+                    }));
+                    return
+                }
+                a(n.id);
+                try {
+                    if (!await c()) {
+                        a(null);
+                        return
+                    }
+                } catch {
+                    a(null);
+                    return
+                }
+                m({
+                    prompt: n.prompt,
+                    id: n.id
+                });
+                return
+            }
+            m({
+                prompt: n.prompt,
+                id: n.id
+            })
+        };
+    return (0, mo.jsxs)(`div`, {
+        className: `w-full px-3 md:px-0`,
+        children: [(0, mo.jsx)(`div`, {
+            className: `text-token-text-primary ps-1 pt-6 pb-3 text-sm font-medium`,
+            children: (0, mo.jsx)(B, {
+                id: `wham.startFirstTask.title`,
+                defaultMessage: `Start your first task`
+            })
+        }), (0, mo.jsx)(`div`, {
+            className: `bg-token-bg-tertiary dark:bg-token-bg-secondary rounded-3xl p-4`,
+            children: (0, mo.jsx)(`div`, {
+                className: `grid grid-cols-1 gap-3 md:grid-cols-3`,
+                children: p.map(t => (0, mo.jsxs)(`div`, {
+                    className: Ie(`bg-token-bg-primary dark:bg-token-bg-tertiary flex flex-col justify-between rounded-2xl p-4 shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.06)),0px_0px_1px_0px_var(--shadow-color-2,rgba(0,_0,_0,_0.3))] dark:shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.10)),inset_0px_0px_1px_0px_var(--shadow-color-2,rgba(255,_255,_255,_0.2))]`),
+                    children: [(0, mo.jsx)(`div`, {
+                        className: `text-token-text-primary pb-4 text-sm leading-5.5`,
+                        children: t.prompt
+                    }), (0, mo.jsx)(se, {
+                        disabled: !f,
+                        label: f ? e.formatMessage({
+                            id: `wham.startFirstTask.disabledTooltip`,
+                            defaultMessage: `Please select a repository to start a task`
+                        }) : null,
+                        children: (0, mo.jsx)(Le, {
+                            color: `secondary`,
+                            disabled: d || s,
+                            loading: i === t.id,
+                            className: `self-start`,
+                            onClick: () => h(t),
+                            children: (0, mo.jsx)(B, {
+                                id: `wham.startFirstTask.cta`,
+                                defaultMessage: `Start`
+                            })
+                        })
+                    })]
+                }, t.id))
+            })
+        })]
+    })
+}
+var po, mo, ho = e((() => {
+    h(), ie(), Ye(), li(), Fe(), ft(), st(), m(), po = t(z()), U(), mo = H()
+}));
+
+function go() {
+    "use forget";
+    let e = (0, vo.c)(1),
+        t;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, q.jsx)(_o, {
+        reviewType: `code_review`
+    }), e[0] = t) : t = e[0], t
+}
+
+function _o(e) {
+    "use forget";
+    let t = (0, vo.c)(59),
+        {
+            reviewType: n,
+            securityReviewButtonState: r
+        } = e,
+        i = Rn(),
+        a = et(),
+        o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = M(), t[0] = o) : o = t[0];
+    let s = o,
+        c = Ze(),
+        {
+            data: l
+        } = jt(),
+        u;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (u = {
+        showToast: !1
+    }, t[1] = u) : u = t[1];
+    let {
+        mutate: d,
+        isPending: f
+    } = gi(u), p = n === `security_review`, m = p ? bo : yo, h = p ? yn : Dn, g = r === `loading`, _ = r == null, v = r === `disabled_for_gitlab` ? bo.githubOnlyButton : m.enableForMeButton, y;
+    t[2] !== c || t[3] !== p || t[4] !== m.enableForMeSuccess || t[5] !== d ? (y = () => {
+        d(p ? {
+            securityReview: {
+                preference: `always`,
+                trigger_policy: `pr_open`
+            }
+        } : {
+            codeReviewPreference: `always`
+        }, {
+            onSuccess: () => {
+                s.success(c.formatMessage(m.enableForMeSuccess), {
+                    duration: 2
+                })
+            }
+        })
+    }, t[2] = c, t[3] = p, t[4] = m.enableForMeSuccess, t[5] = d, t[6] = y) : y = t[6];
+    let b = y,
+        x;
+    t[7] === a ? x = t[8] : (x = () => {
+        a(`/codex/cloud/settings/code-review`)
+    }, t[7] = a, t[8] = x);
+    let S = x;
+    if (_ && (p ? l?.security_review?.preference === `always` : l?.code_review_preference === `always`)) {
+        let e;
+        t[9] === h ? e = t[10] : (e = (0, q.jsx)(`div`, {
+            className: `bg-token-bg-primary flex flex-col gap-2 rounded-xl p-2 shadow`,
+            children: (0, q.jsx)(h, {
+                className: `icon-xl`
+            })
+        }), t[9] = h, t[10] = e);
+        let n;
+        t[11] === m.enabledTitle ? n = t[12] : (n = (0, q.jsx)(`p`, {
+            className: `text-token-text-primary font-medium`,
+            children: (0, q.jsx)(B, {
+                ...m.enabledTitle
+            })
+        }), t[11] = m.enabledTitle, t[12] = n);
+        let r;
+        t[13] === m.enabledDescription ? r = t[14] : (r = (0, q.jsx)(`p`, {
+            className: `text-token-text-secondary text-center text-wrap`,
+            children: (0, q.jsx)(B, {
+                ...m.enabledDescription
+            })
+        }), t[13] = m.enabledDescription, t[14] = r);
+        let i;
+        t[15] === a ? i = t[16] : (i = () => a(`/codex/cloud/settings/code-review`), t[15] = a, t[16] = i);
+        let o;
+        t[17] === m.manageButton ? o = t[18] : (o = (0, q.jsx)(B, {
+            ...m.manageButton
+        }), t[17] = m.manageButton, t[18] = o);
+        let s;
+        t[19] !== i || t[20] !== o ? (s = (0, q.jsx)(Le, {
+            onClick: i,
+            className: `min-w-[220px]`,
+            children: o
+        }), t[19] = i, t[20] = o, t[21] = s) : s = t[21];
+        let c;
+        return t[22] !== s || t[23] !== e || t[24] !== n || t[25] !== r ? (c = (0, q.jsxs)(`div`, {
+            className: `flex max-w-[300px] flex-col items-center gap-2`,
+            children: [e, n, r, s]
+        }), t[22] = s, t[23] = e, t[24] = n, t[25] = r, t[26] = c) : c = t[26], c
+    }
+    let C;
+    t[27] === h ? C = t[28] : (C = (0, q.jsx)(`div`, {
+        className: `bg-token-bg-primary flex flex-col gap-2 rounded-xl p-2 shadow`,
+        children: (0, q.jsx)(h, {
+            className: `icon-xl`
+        })
+    }), t[27] = h, t[28] = C);
+    let w;
+    t[29] === m.disabledTitle ? w = t[30] : (w = (0, q.jsx)(`p`, {
+        className: `text-token-text-primary font-medium`,
+        children: (0, q.jsx)(B, {
+            ...m.disabledTitle
+        })
+    }), t[29] = m.disabledTitle, t[30] = w);
+    let T;
+    t[31] === m.disabledDescription ? T = t[32] : (T = (0, q.jsx)(`p`, {
+        className: `text-token-text-secondary text-center text-wrap`,
+        children: (0, q.jsx)(B, {
+            ...m.disabledDescription
+        })
+    }), t[31] = m.disabledDescription, t[32] = T);
+    let E = !_,
+        D = f || g,
+        O;
+    t[33] !== c || t[34] !== g || t[35] !== m.enableForMeButton ? (O = g ? c.formatMessage(m.enableForMeButton) : void 0, t[33] = c, t[34] = g, t[35] = m.enableForMeButton, t[36] = O) : O = t[36];
+    let k;
+    t[37] !== v || t[38] !== g ? (k = !g && (0, q.jsx)(B, {
+        ...v
+    }), t[37] = v, t[38] = g, t[39] = k) : k = t[39];
+    let A;
+    t[40] !== b || t[41] !== O || t[42] !== k || t[43] !== E || t[44] !== D ? (A = (0, q.jsx)(Le, {
+        onClick: b,
+        className: `min-w-[220px]`,
+        disabled: E,
+        loading: D,
+        label: O,
+        children: k
+    }), t[40] = b, t[41] = O, t[42] = k, t[43] = E, t[44] = D, t[45] = A) : A = t[45];
+    let j;
+    t[46] !== _ || t[47] !== S || t[48] !== i || t[49] !== m.enableForWorkspaceButton ? (j = i && _ && (0, q.jsx)(Le, {
+        onClick: S,
+        className: `min-w-[220px]`,
+        color: `secondary`,
+        children: (0, q.jsx)(B, {
+            ...m.enableForWorkspaceButton
+        })
+    }), t[46] = _, t[47] = S, t[48] = i, t[49] = m.enableForWorkspaceButton, t[50] = j) : j = t[50];
+    let N;
+    t[51] !== A || t[52] !== j || t[53] !== w || t[54] !== T ? (N = (0, q.jsxs)(`div`, {
+        className: `text-centers flex max-w-[300px] flex-col items-center gap-2`,
+        children: [w, T, A, j]
+    }), t[51] = A, t[52] = j, t[53] = w, t[54] = T, t[55] = N) : N = t[55];
+    let P;
+    return t[56] !== N || t[57] !== C ? (P = (0, q.jsxs)(`div`, {
+        className: `flex flex-col items-center gap-2`,
+        children: [C, N]
+    }), t[56] = N, t[57] = C, t[58] = P) : P = t[58], P
+}
+var vo, q, yo, bo, xo = e((() => {
+    vo = V(), h(), On(), En(), Ye(), Un(), _i(), wt(), U(), Xe(), q = H(), yo = tt({
+        enableForMeSuccess: {
+            id: `wham.codeReviewSuggestionsCard.enableForMeSuccess`,
+            defaultMessage: `Code review is now enabled for you`
+        },
+        enabledTitle: {
+            id: `wham.codeReviewSuggestionsCard.codeReviewEnabledTitle`,
+            defaultMessage: `Code review enabled`
+        },
+        enabledDescription: {
+            id: `wham.codeReviewSuggestionsCard.codeReviewEnabledDescription`,
+            defaultMessage: `Codex will review PRs you push to connected repos.`
+        },
+        manageButton: {
+            id: `wham.codexEnvironmentPopover.manageCodeReview`,
+            defaultMessage: `Manage code review`
+        },
+        disabledTitle: {
+            id: `wham.codexEnvironmentPopover.createEnvFromRepoExistingTitle`,
+            defaultMessage: `Enable code review`
+        },
+        disabledDescription: {
+            id: `wham.codexEnvironmentPopover.createEnvFromRepoExistingDescription`,
+            defaultMessage: `Catch critical bugs before they ship`
+        },
+        enableForMeButton: {
+            id: `wham.codexEnvironmentPopover.createEnvFromRepoExistingButton`,
+            defaultMessage: `Enable for me`
+        },
+        enableForWorkspaceButton: {
+            id: `wham.codexEnvironmentPopover.createEnvFromRepoExistingButtonWorkspace`,
+            defaultMessage: `Enable for my workspace`
+        }
+    }), bo = tt({
+        enableForMeSuccess: {
+            id: `wham.securityReviewSuggestionsCard.toast.enableForMe.success`,
+            defaultMessage: `Security review is now enabled for you`
+        },
+        enabledTitle: {
+            id: `wham.securityReviewSuggestionsCard.enabled.title`,
+            defaultMessage: `Security review enabled`
+        },
+        enabledDescription: {
+            id: `wham.securityReviewSuggestionsCard.enabled.description`,
+            defaultMessage: `Codex will review PRs you push to connected repos for security issues.`
+        },
+        manageButton: {
+            id: `wham.securityReviewSuggestionsCard.enabled.button.manage`,
+            defaultMessage: `Manage security review`
+        },
+        disabledTitle: {
+            id: `wham.securityReviewSuggestionsCard.disabled.title`,
+            defaultMessage: `Enable security review`
+        },
+        disabledDescription: {
+            id: `wham.securityReviewSuggestionsCard.disabled.description`,
+            defaultMessage: `Catch security issues before they ship`
+        },
+        enableForMeButton: {
+            id: `wham.securityReviewSuggestionsCard.disabled.button.enableForMe`,
+            defaultMessage: `Enable for me`
+        },
+        githubOnlyButton: {
+            id: `wham.securityReviewSuggestionsCard.disabled.button.githubOnly`,
+            defaultMessage: `GitHub repositories only`
+        },
+        enableForWorkspaceButton: {
+            id: `wham.securityReviewSuggestionsCard.disabled.button.enableForWorkspace`,
+            defaultMessage: `Enable for my workspace`
+        }
+    })
+}));
+
+function So(e) {
+    "use forget";
+    let t = (0, wo.c)(5),
+        {
+            filter: n,
+            homeTab: r
+        } = e,
+        i = r || (n === `archived` ? `archived` : n === `code_review` ? `code_reviews` : n === `security_review` ? `security_reviews` : `all`);
+    if (i === `code_reviews` && n === `code_review`) {
+        let e;
+        return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, To.jsx)(go, {}), t[0] = e) : e = t[0], e
+    }
+    if (i === `archived`) {
+        let e;
+        return t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, To.jsx)(`div`, {
+            className: `text-token-text-secondary text-sm`,
+            children: (0, To.jsx)(B, {
+                id: `wham.whamTasksSection.noArchivedTasks`,
+                defaultMessage: `No archived tasks`
+            })
+        }), t[1] = e) : e = t[1], e
+    }
+    if (i === `security_reviews`) {
+        let e;
+        return t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, To.jsx)(Co, {}), t[2] = e) : e = t[2], e
+    }
+    if (i === `all`) {
+        let e;
+        return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, To.jsx)(fo, {}), t[3] = e) : e = t[3], e
+    }
+    let a;
+    return t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, To.jsx)(`div`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, To.jsx)(B, {
+            id: `wham.whamTasksSection.noActiveTasks`,
+            defaultMessage: `No active tasks`
+        })
+    }), t[4] = a) : a = t[4], a
+}
+
+function Co() {
+    "use forget";
+    let e = (0, wo.c)(2),
+        t = u(`1437685011`),
+        {
+            isConnected: n,
+            isLoading: r
+        } = lr(),
+        {
+            isConnected: i,
+            isLoading: a
+        } = Ur(),
+        o = Pi({
+            isGitLabConnectorSettingsEnabled: t,
+            isGitHubConnected: n,
+            isGitLabConnected: i
+        }),
+        s = r || t && a ? `loading` : o === `gitlab` ? `disabled_for_gitlab` : void 0,
+        c;
+    return e[0] === s ? c = e[1] : (c = (0, To.jsx)(_o, {
+        reviewType: `security_review`,
+        securityReviewButtonState: s
+    }), e[0] = s, e[1] = c), c
+}
+var wo, To, Eo = e((() => {
+    wo = V(), ho(), _(), ur(), Wr(), xo(), Fi(), U(), To = H()
+}));
+
+function Do(e) {
+    let t = e.updated_at ?? e.created_at;
+    return t ? new Date(t * 1e3) : null
+}
+
+function Oo(e) {
+    let t = new Date;
+    t.setHours(0, 0, 0, 0);
+    let n = new Date(t);
+    return n.setDate(n.getDate() - 7), e.reduce((e, r) => {
+        let i = Do(r);
+        return i && i >= t ? (e.today.push(r), e) : i && i >= n ? (e.lastSevenDays.push(r), e) : (e.older.push(r), e)
+    }, {
+        today: [],
+        lastSevenDays: [],
+        older: []
+    })
+}
+
+function ko(e) {
+    "use forget";
+    let t = (0, zo.c)(5),
+        {
+            groupKey: n,
+            children: r
+        } = e,
+        i = Ho[n],
+        a;
+    t[0] === i ? a = t[1] : (a = (0, J.jsx)(`div`, {
+        className: `text-token-text-tertiary px-4 pt-6 pb-2 text-xs font-semibold uppercase md:px-3`,
+        children: (0, J.jsx)(B, {
+            ...i
+        })
+    }), t[0] = i, t[1] = a);
+    let o;
+    return t[2] !== r || t[3] !== a ? (o = (0, J.jsxs)(`div`, {
+        className: `flex flex-col`,
+        children: [a, r]
+    }), t[2] = r, t[3] = a, t[4] = o) : o = t[4], o
+}
+
+function Ao(e) {
+    "use forget";
+    let t = (0, zo.c)(31),
+        n;
+    t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+    let {
+        filterOverride: r,
+        homeTab: i
+    } = n, o = Ut(Ro), s = i ?? o, c;
+    t[2] !== s || t[3] !== r ? (c = r ?? kt(s), t[2] = s, t[3] = r, t[4] = c) : c = t[4];
+    let l = c,
+        u;
+    t[5] === l ? u = t[6] : (u = {
+        filter: l,
+        refetchOnMount: !0,
+        refetchOnWindowFocus: !0
+    }, t[5] = l, t[6] = u);
+    let {
+        data: d,
+        isLoading: f,
+        error: p,
+        fetchNextPage: m,
+        hasNextPage: h,
+        isFetchingNextPage: g,
+        refetch: _,
+        isPending: v
+    } = ut(u), y;
+    t[7] === d?.pages ? y = t[8] : (y = d?.pages.flatMap(Lo) ?? [], t[7] = d?.pages, t[8] = y);
+    let b = y,
+        x;
+    t[9] === b ? x = t[10] : (x = Oo(b), t[9] = b, t[10] = x);
+    let S = x,
+        C = Ut(Io),
+        w = Ut(Fo),
+        T = b.length > 0,
+        [E, D] = (0, Bo.useState)(null),
+        O;
+    if (t[11] !== w || t[12] !== C || t[13] !== s || t[14] !== p || t[15] !== m || t[16] !== h || t[17] !== T || t[18] !== E || t[19] !== g || t[20] !== f || t[21] !== v || t[22] !== _ || t[23] !== S || t[24] !== b || t[25] !== l) {
+        let e = Array.from(Object.entries(C)).filter(e => {
+                let [, t] = e;
+                return !b.some(e => e.id === t)
+            }).map(Po).reverse(),
+            n = Array.from(Object.entries(w)).filter(e => {
+                let [, t] = e;
+                return !b.some(e => e.id === t)
+            }).map(No).reverse(),
+            r = b.length === 0 && e.length === 0 && n.length === 0,
+            i;
+        t[27] !== E || t[28] !== S || t[29] !== l ? (i = Vo.reduce((e, t) => {
+            let n = S[t];
+            if (n.length === 0) return e;
+            let r = e.offset,
+                i = n.map((e, t) => {
+                    let n = r + t;
+                    return (0, J.jsx)(Mr, {
+                        index: n,
+                        taskListItem: e,
+                        hoveredIndex: E,
+                        onMouseEnter: () => {
+                            D(n)
+                        },
+                        onMouseLeave: () => D(null),
+                        currentFilter: l,
+                        showArchiveButton: l !== `code_review`
+                    }, e.id)
+                });
+            return {
+                offset: r + n.length,
+                elements: [...e.elements, (0, J.jsx)(ko, {
+                    groupKey: t,
+                    children: i
+                }, t)]
+            }
+        }, {
+            offset: 0,
+            elements: []
+        }), t[27] = E, t[28] = S, t[29] = l, t[30] = i) : i = t[30];
+        let o = i.elements;
+        O = (0, J.jsx)(`div`, {
+            className: `flex flex-col justify-center pt-4 pb-20`,
+            children: f && !T ? (0, J.jsx)(`div`, {
+                className: `mt-4 flex h-full w-full items-center justify-center`,
+                children: (0, J.jsx)(a, {})
+            }) : (0, J.jsxs)(J.Fragment, {
+                children: [r && (0, J.jsx)(J.Fragment, {
+                    children: p ? (0, J.jsxs)(`div`, {
+                        className: `mt-6 flex w-full flex-col items-center justify-center gap-2 text-sm`,
+                        children: [(0, J.jsx)(`div`, {
+                            className: `text-interactive-label-warning-secondary`,
+                            children: (0, J.jsx)(B, {
+                                id: `wham.whamTasksSection.errorLoadingTasks`,
+                                defaultMessage: `Error loading tasks`
+                            })
+                        }), (0, J.jsx)(Le, {
+                            color: `secondary`,
+                            onClick: () => _(),
+                            children: (0, J.jsxs)(`div`, {
+                                className: `flex items-center gap-1`,
+                                children: [(0, J.jsx)(B, {
+                                    id: `wham.whamTasksSection.retry`,
+                                    defaultMessage: `Retry`
+                                }), (0, J.jsx)(Pn, {
+                                    className: `icon-xs`
+                                })]
+                            })
+                        })]
+                    }) : (0, J.jsx)(`div`, {
+                        className: `mt-6 flex h-full w-full items-center justify-center`,
+                        children: (0, J.jsx)(So, {
+                            filter: l,
+                            homeTab: s
+                        })
+                    })
+                }), l === `current` && e.map(Mo), l === `code_review` && n.map(jo), o, (0, J.jsx)(un, {
+                    isFetchingNextPage: g || v,
+                    hasNextPage: h ?? !1,
+                    fetchNextPage: m
+                })]
+            })
+        }), t[11] = w, t[12] = C, t[13] = s, t[14] = p, t[15] = m, t[16] = h, t[17] = T, t[18] = E, t[19] = g, t[20] = f, t[21] = v, t[22] = _, t[23] = S, t[24] = b, t[25] = l, t[26] = O
+    } else O = t[26];
+    return O
+}
+
+function jo(e) {
+    return (0, J.jsx)(Ar, {}, e)
+}
+
+function Mo(e) {
+    return (0, J.jsx)(Ar, {}, e)
+}
+
+function No(e) {
+    let [t] = e;
+    return t
+}
+
+function Po(e) {
+    let [t] = e;
+    return t
+}
+
+function Fo(e) {
+    return e.pendingCodeReviewIds
+}
+
+function Io(e) {
+    return e.pendingTaskIds
+}
+
+function Lo(e) {
+    return e.items ?? []
+}
+
+function Ro(e) {
+    let {
+        homeTab: t
+    } = e;
+    return t
+}
+var zo, Bo, J, Vo, Ho, Uo, Wo = e((() => {
+    zo = V(), h(), Tn(), Qt(), we(), kr(), jr(), Eo(), Rt(), wt(), ft(), Bo = t(z()), U(), J = H(), Vo = [`today`, `lastSevenDays`, `older`], Ho = tt({
+        today: {
+            id: `wham.whamTasksSection.group.today`,
+            defaultMessage: `Today`
+        },
+        lastSevenDays: {
+            id: `wham.whamTasksSection.group.lastSevenDays`,
+            defaultMessage: `Last 7 Days`
+        },
+        older: {
+            id: `wham.whamTasksSection.group.older`,
+            defaultMessage: `Older`
+        }
+    }), Uo = (0, Bo.memo)(Ao)
+}));
+
+function Go(e) {
+    return typeof e == `number` ? e : typeof e == `string` ? 1 / 0 : 0
+}
+
+function Ko() {
+    "use forget";
+    let e = (0, Jo.c)(3),
+        {
+            data: t,
+            isLoading: n
+        } = A(),
+        r = t?.announcements?.[yt],
+        i;
+    return e[0] !== n || e[1] !== r ? (i = n ? {
+        kind: `loading`
+    } : {
+        kind: `loaded`,
+        onboardingImpressionsCount: Go(r)
+    }, e[0] = n, e[1] = r, e[2] = i) : i = e[2], i
+}
+
+function qo(e) {
+    "use forget";
+    let t = (0, Jo.c)(7),
+        {
+            onboardingEnabled: n,
+            hasDismissedOnboarding: r
+        } = e,
+        {
+            state: i
+        } = Ii(),
+        a = Ko();
+    if (!n) {
+        let e;
+        return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+            onboardingDecision: Xo.SKIP,
+            showInlineOnboarding: !1
+        }, t[0] = e) : e = t[0], e
+    }
+    if (i === hi.Loading) {
+        let e;
+        return t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+            onboardingDecision: Xo.LOADING,
+            showInlineOnboarding: !1
+        }, t[1] = e) : e = t[1], e
+    }
+    if (i !== hi.NoGithubConnection) {
+        let e;
+        return t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+            onboardingDecision: Xo.SKIP,
+            showInlineOnboarding: !1
+        }, t[2] = e) : e = t[2], e
+    }
+    if (r) {
+        let e;
+        return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+            onboardingDecision: Xo.SKIP,
+            showInlineOnboarding: !0
+        }, t[3] = e) : e = t[3], e
+    }
+    if (a.kind === `loading`) {
+        let e;
+        return t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+            onboardingDecision: Xo.LOADING,
+            showInlineOnboarding: !0
+        }, t[4] = e) : e = t[4], e
+    }
+    if (!(a.onboardingImpressionsCount < Yo)) {
+        let e;
+        return t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+            onboardingDecision: Xo.SKIP,
+            showInlineOnboarding: !0
+        }, t[5] = e) : e = t[5], e
+    }
+    let o;
+    return t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (o = {
+        onboardingDecision: Xo.SHOW,
+        showInlineOnboarding: !0
+    }, t[6] = o) : o = t[6], o
+}
+var Jo, Yo, Xo, Zo = e((() => {
+    Jo = V(), Te(), Ct(), mi(), Li(), Yo = 1, Xo = {
+        LOADING: `loading`,
+        SHOW: `show`,
+        SKIP: `skip`
+    }
+}));
+
+function Qo() {
+    "use forget";
+    let e = (0, es.c)(18),
+        {
+            eligible: t,
+            isLoading: n
+        } = cn(),
+        r = $e(),
+        i = Ze(),
+        a = ne();
+    if (n || !t) return null;
+    let o = $o,
+        s;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, ts.jsx)(vn, {
+        className: `h-6 w-6 shrink-0`
+    }), e[0] = s) : s = e[0];
+    let c;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, ts.jsx)(`h2`, {
+        className: `text-sm font-semibold md:text-base`,
+        children: (0, ts.jsx)(B, {
+            id: `wham.alphaBanner.title`,
+            defaultMessage: `Codex Alpha`
+        })
+    }), e[1] = c) : c = e[1];
+    let l;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, ts.jsxs)(`div`, {
+        className: `flex flex-1 items-start gap-3 md:items-center md:gap-4`,
+        children: [s, (0, ts.jsxs)(`div`, {
+            className: `flex flex-1 flex-col gap-1`,
+            children: [c, (0, ts.jsx)(`p`, {
+                className: `text-token-text-secondary text-xs leading-5 md:text-sm`,
+                children: (0, ts.jsx)(B, {
+                    id: `wham.alphaBanner.description`,
+                    defaultMessage: `Get early access to new models and features.`
+                })
+            })]
+        })]
+    }), e[2] = l) : l = e[2];
+    let u;
+    e[3] !== i || e[4] !== r || e[5] !== a ? (u = () => {
+        be.updateUserPreferences({
+            alphaOptIn: !0
+        }).then(async () => {
+            await Jt(r), o(), a.success(i.formatMessage({
+                id: `wham.alphaBanner.enrolled`,
+                defaultMessage: `Enrolled in Codex alpha. Update your selection anytime in your settings.`
+            }), {
+                duration: 3
+            })
+        }).catch(() => a.danger(i.formatMessage({
+            id: `wham.alphaBanner.failed`,
+            defaultMessage: `Failed to update user preferences`
+        }), {
+            duration: 3
+        }))
+    }, e[3] = i, e[4] = r, e[5] = a, e[6] = u) : u = e[6];
+    let d;
+    e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, ts.jsx)(B, {
+        id: `wham.alphaBanner.cta`,
+        defaultMessage: `Join now`
+    }), e[7] = d) : d = e[7];
+    let f;
+    e[8] === u ? f = e[9] : (f = (0, ts.jsx)(Le, {
+        size: `small`,
+        color: `primary`,
+        className: `text-token-text-secondary h-9 px-6 text-sm md:px-7`,
+        onClick: u,
+        children: d
+    }), e[8] = u, e[9] = f);
+    let p;
+    e[10] === i ? p = e[11] : (p = i.formatMessage({
+        id: `wham.alphaBanner.dismiss`,
+        defaultMessage: `Dismiss Codex alpha banner`
+    }), e[10] = i, e[11] = p);
+    let m;
+    e[12] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, ts.jsx)(w.CrossSm, {
+        className: `icon-sm`
+    }), e[12] = m) : m = e[12];
+    let h;
+    e[13] === p ? h = e[14] : (h = (0, ts.jsx)(Le, {
+        size: `small`,
+        color: `secondary`,
+        className: `text-token-text-tertiary border-token-border-subtle hover:bg-token-bg-secondary hover:text-token-text-primary h-9 w-9 text-sm font-medium`,
+        onClick: o,
+        "aria-label": p,
+        children: m
+    }), e[13] = p, e[14] = h);
+    let g;
+    return e[15] !== f || e[16] !== h ? (g = (0, ts.jsx)(`div`, {
+        className: `mt-4 w-full px-3 md:px-0`,
+        children: (0, ts.jsx)(`div`, {
+            className: `border-token-border-subtle bg-token-bg-primary text-token-text-primary flex w-full flex-col gap-3 rounded-3xl border px-4 py-3 shadow-[0px_12px_32px_rgba(15,23,42,0.14)] md:px-6 md:py-4`,
+            children: (0, ts.jsxs)(`div`, {
+                className: `flex flex-col gap-3 md:flex-row md:items-center md:justify-between`,
+                children: [l, (0, ts.jsxs)(`div`, {
+                    className: `flex flex-shrink-0 items-center gap-2`,
+                    children: [f, h]
+                })]
+            })
+        })
+    }), e[15] = f, e[16] = h, e[17] = g) : g = e[17], g
+}
+
+function $o() {
+    return Ce(dt)
+}
+var es, ts, ns = e((() => {
+    es = V(), h(), An(), O(), Ye(), Me(), Ct(), wt(), Fe(), st(), U(), ts = H()
+}));
+
+function rs(e) {
+    "use forget";
+    let t = (0, is.c)(5),
+        {
+            onClick: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, as.jsx)(`div`, {
+        className: `bg-token-bg-primary dark:bg-token-bg-tertiary border-token-border-light flex h-10 w-10 items-center justify-center rounded-xl shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.06)),0px_0px_1px_0px_var(--shadow-color-2,rgba(0,_0,_0,_0.3))] dark:shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.10)),inset_0px_0px_1px_0px_var(--shadow-color-2,rgba(255,_255,_255,_0.2))]`,
+        children: (0, as.jsx)(yn, {
+            className: `icon-md`
+        })
+    }), t[0] = r) : r = t[0];
+    let i, a;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, as.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [r, (0, as.jsx)(`div`, {
+            className: `text-token-text-primary text-sm font-medium`,
+            children: (0, as.jsx)(B, {
+                id: `codexSecurity.announcement.whatsNew.title`,
+                defaultMessage: `Security`
+            })
+        })]
+    }), a = (0, as.jsx)(xn, {
+        className: `icon-sm text-token-text-tertiary origin-[bottom_var(--start)] scale-75 opacity-0 transition-all duration-100 ease-out group-hover/card:scale-100 group-hover/card:opacity-100`
+    }), t[1] = i, t[2] = a) : (i = t[1], a = t[2]);
+    let o;
+    return t[3] === n ? o = t[4] : (o = (0, as.jsxs)(`a`, {
+        href: `/codex/cloud/security`,
+        target: `_blank`,
+        rel: `noreferrer`,
+        className: `group/card -m-4 flex items-center justify-between gap-3 rounded-2xl p-4`,
+        onClick: n,
+        children: [i, a]
+    }), t[3] = n, t[4] = o), o
+}
+var is, as, os = e((() => {
+    is = V(), jn(), En(), U(), as = H()
+}));
+
+function ss() {
+    "use forget";
+    let e = (0, cs.c)(11),
+        t = wr(),
+        n;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (n = {
+        key: `chatgpt-codex-download`,
+        allowUnauthenticatedTracking: !0
+    }, e[0] = n) : n = e[0];
+    let {
+        trackSelectedPixels: r
+    } = Bn(n), i;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (i = {
+        key: Ln.CODEX_DOWNLOAD,
+        allowUnauthenticatedTracking: !0
+    }, e[1] = i) : i = e[1];
+    let {
+        trackSelectedPixels: a
+    } = Bn(i);
+    if (!t) return null;
+    let o;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (o = Ie(`bg-token-bg-tertiary`, `dark:bg-token-bg-secondary`, `flex flex-col justify-between gap-1 rounded-2xl p-4`), e[2] = o) : o = e[2];
+    let s;
+    e[3] !== a || e[4] !== r ? (s = e => {
+        e.preventDefault(), W.recordCodexAppSurfaceAction(`whats_new`, `download`), W.recordNewFeaturesButtonClicked(`codex_app_card`), xr({
+            trackSelectedPixels: () => {
+                a(), r()
+            }
+        })
+    }, e[3] = a, e[4] = r, e[5] = s) : s = e[5];
+    let c;
+    e[6] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, ls.jsx)(`div`, {
+        className: `border-token-border-light flex h-10 w-10 items-center justify-center`,
+        children: (0, ls.jsx)(`img`, {
+            src: zi,
+            alt: ``,
+            className: `h-10 w-10`,
+            "aria-hidden": !0
+        })
+    }), e[6] = c) : c = e[6];
+    let l, u;
+    e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, ls.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [c, (0, ls.jsx)(`div`, {
+            className: `text-token-text-primary text-sm font-medium`,
+            children: (0, ls.jsx)(B, {
+                id: `wham.gettingStarted.chatgptApp`,
+                defaultMessage: `ChatGPT app`
+            })
+        })]
+    }), u = (0, ls.jsx)(kn, {
+        className: `icon-sm text-token-text-tertiary origin-[bottom_var(--start)] scale-75 opacity-0 transition-all duration-100 ease-out group-hover/card:scale-100 group-hover/card:opacity-100`
+    }), e[7] = l, e[8] = u) : (l = e[7], u = e[8]);
+    let d;
+    return e[9] === s ? d = e[10] : (d = (0, ls.jsx)(_e.div, {
+        layout: !0,
+        children: (0, ls.jsx)(`div`, {
+            className: o,
+            children: (0, ls.jsxs)(`button`, {
+                className: `group/card -m-4 flex items-center justify-between gap-3 rounded-2xl p-4`,
+                onClick: s,
+                children: [l, u]
+            })
+        })
+    }), e[9] = s, e[10] = d), d
+}
+var cs, ls, us = e((() => {
+    cs = V(), Hn(), Fn(), Mn(), Ri(), Cr(), Sr(), nn(), m(), i(), U(), ls = H()
+}));
+
+function ds(e) {
+    let t = new URLSearchParams(e);
+    return t.set(ps, ms), t.toString()
+}
+
+function fs(e) {
+    let t = new URLSearchParams(e);
+    return t.delete(ps), t.toString()
+}
+var ps, ms, hs = e((() => {
+    ps = `codex_onboarding`, ms = `code_review`
+}));
+
+function gs(e) {
+    "use forget";
+    let t = (0, ys.c)(26),
+        n;
+    t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+    let {
+        redirectUrl: r,
+        onError: i
+    } = n, a = r ?? `/codex/cloud?codex_onboarding=code_review`, o;
+    t[2] === a ? o = t[3] : (o = {
+        redirectAfter: a
+    }, t[2] = a, t[3] = o);
+    let {
+        connectorId: s,
+        isConnected: c,
+        isLoading: l,
+        openGithubModal: u,
+        error: d
+    } = lr(o), {
+        status: f
+    } = Vi(s), p = f === `loading`, m = !p && f === `required`, h = f === `error`, {
+        data: g,
+        isLoading: _,
+        error: v
+    } = Bi(), {
+        data: y,
+        isLoading: b,
+        error: x
+    } = jt(), {
+        eligible: S,
+        isLoading: C
+    } = Ft(), w = y?.code_review_preference === `always`, {
+        data: T,
+        isLoading: E,
+        error: D
+    } = zt(s, S && !C && !l && c), O;
+    t[4] === T?.memberships ? O = t[5] : (O = T?.memberships ?? [], t[4] = T?.memberships, t[5] = O);
+    let k;
+    t[6] === T?.other ? k = t[7] : (k = T?.other ?? [], t[6] = T?.other, t[7] = k);
+    let A;
+    t[8] !== O || t[9] !== k ? (A = [...O, ...k], t[8] = O, t[9] = k, t[10] = A) : A = t[10];
+    let j = A.length > 0,
+        M = !!((D && d) ?? v ?? d ?? x ?? h ?? null),
+        N, P;
+    t[11] !== M || t[12] !== i ? (N = () => {
+        M && i && i()
+    }, P = [M, i], t[11] = M, t[12] = i, t[13] = N, t[14] = P) : (N = t[13], P = t[14]), (0, bs.useEffect)(N, P);
+    let F = l || b || p || _ || c && E,
+        ee = !m || g,
+        I = !S,
+        L;
+    return t[15] !== M || t[16] !== j || t[17] !== w || t[18] !== c || t[19] !== C || t[20] !== m || t[21] !== u || t[22] !== ee || t[23] !== I || t[24] !== F ? (L = {
+        isLoading: F,
+        isMfaRequired: m,
+        isMfaEnabled: ee,
+        isGitHubConnected: c,
+        hasValidInstallation: j,
+        isCodeReviewEnabled: w,
+        hasCompletedCodeReviewFlow: I,
+        isHasCompletedCodeReviewLoading: C,
+        error: M,
+        openGithubModal: u,
+        markCompletedCodeReview: _s
+    }, t[15] = M, t[16] = j, t[17] = w, t[18] = c, t[19] = C, t[20] = m, t[21] = u, t[22] = ee, t[23] = I, t[24] = F, t[25] = L) : L = t[25], L
+}
+
+function _s() {
+    return Ce(Vt)
+}
+
+function vs({
+    isHasCompletedCodeReviewLoading: e,
+    isCodeReviewEnabled: t,
+    hasCompletedCodeReviewFlow: n,
+    markCompletedCodeReview: r
+}) {
+    (0, bs.useEffect)(() => {
+        !e && t && !n && r()
+    }, [e, t, n, r])
+}
+var ys, bs, xs = e((() => {
+    ys = V(), Hi(), Me(), Ct(), ur(), wt(), bs = t(z())
+}));
+
+function Ss(e, t) {
+    let n = t ? Rr : Nr;
+    switch (e) {
+        case `cursor`:
+            return n;
+        case `vscode`:
+            return Lr;
+        case `windsurf`:
+            return zr
+    }
+}
+
+function Cs(e, t, n) {
+    return (0, ws.jsx)(Ss(e, t), {
+        ...n
+    })
+}
+var ws, Ts = e((() => {
+    Fr(), Br(), Vr(), Hr(), ws = H()
+}));
+
+function Es() {
+    "use forget";
+    let e = (0, Fs.c)(100),
+        t = Ze(),
+        {
+            data: n,
+            isLoading: r
+        } = dn(),
+        i = P(),
+        o = Ut(Ns),
+        s = Ut(Ms),
+        {
+            eligible: c,
+            isLoading: l
+        } = lt(),
+        u = Pe(Ve.hasSeenCodexSecurityAnnouncement),
+        d;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = mt(), e[0] = d) : d = e[0];
+    let {
+        cli: f,
+        vscode: p,
+        cursor: m,
+        windsurf: h,
+        jetbrains: g
+    } = d, _;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = {
+        redirectUrl: `/codex/cloud/settings/code-review`
+    }, e[1] = _) : _ = e[1];
+    let {
+        isLoading: v,
+        isMfaRequired: y,
+        isMfaEnabled: b,
+        isGitHubConnected: x,
+        hasValidInstallation: S,
+        isCodeReviewEnabled: C,
+        hasCompletedCodeReviewFlow: w,
+        error: T
+    } = gs(_), E = et(), D = rt(), O;
+    e[2] !== b || e[3] !== y ? (O = y ? [!!b] : [], e[2] = b, e[3] = y, e[4] = O) : O = e[4];
+    let k = O,
+        A = !!(x && S),
+        j = !!(C && w),
+        M;
+    e[5] !== k || e[6] !== A || e[7] !== j ? (M = [...k, A, j], e[5] = k, e[6] = A, e[7] = j, e[8] = M) : M = e[8];
+    let N = M,
+        F = N.length,
+        ee;
+    e[9] === N ? ee = e[10] : (ee = N.filter(Boolean), e[9] = N, e[10] = ee);
+    let I = ee.length,
+        L = F === 0 ? 0 : I / F * 100,
+        te;
+    e[11] !== I || e[12] !== L || e[13] !== F ? (te = {
+        completedSteps: I,
+        totalSteps: F,
+        percentage: L
+    }, e[11] = I, e[12] = L, e[13] = F, e[14] = te) : te = e[14];
+    let ne = te,
+        re = !v && ne.completedSteps < ne.totalSteps,
+        ie;
+    e[15] !== T || e[16] !== D.hash || e[17] !== D.pathname || e[18] !== D.search || e[19] !== E ? (ie = e => {
+        W.recordNewFeaturesButtonClicked(`code_review`), T || (e.preventDefault(), E({
+            pathname: D.pathname,
+            search: ds(D.search),
+            hash: D.hash
+        }, {
+            replace: !1
+        }))
+    }, e[15] = T, e[16] = D.hash, e[17] = D.pathname, e[18] = D.search, e[19] = E, e[20] = ie) : ie = e[20];
+    let ae = ie,
+        [R, oe] = Is.useState(!1),
+        se = Is.useRef(!1),
+        ce;
+    e[21] === Symbol.for(`react.memo_cache_sentinel`) ? (ce = e => {
+        oe(e), e && W.recordNewFeaturesButtonClicked(`ide_dropdown`)
+    }, e[21] = ce) : ce = e[21];
+    let le = ce,
+        de = Tr(),
+        fe = Dr(),
+        pe = de && fe,
+        {
+            hasAccess: me,
+            isWorkspaceAllowed: he,
+            isLoading: ge
+        } = _r(),
+        ve = u.eligible && (me === !0 || he);
+    if (!c || l || r || u.eligible && ge) return null;
+    let ye = ve && pe,
+        be;
+    if (e[22] !== ye) {
+        let t = Re(`341617577`);
+        be = ye ? t.get(`card_order`, Rs) : Rs, e[22] = ye, e[23] = be
+    } else be = e[23];
+    let xe = be,
+        Ce;
+    e[24] === ve ? Ce = e[25] : (Ce = ve ? (0, Y.jsx)(_e.div, {
+        layout: !0,
+        children: (0, Y.jsx)(Ps, {
+            children: (0, Y.jsx)(rs, {
+                onClick: js
+            })
+        })
+    }) : null, e[24] = ve, e[25] = Ce);
+    let we = Ce,
+        Te;
+    e[26] === pe ? Te = e[27] : (Te = pe ? (0, Y.jsx)(_e.div, {
+        layout: !0,
+        children: (0, Y.jsx)(ss, {})
+    }) : null, e[26] = pe, e[27] = Te);
+    let Ee = Te,
+        De;
+    e[28] !== Ee || e[29] !== xe || e[30] !== we ? (De = xe === Ls.DESKTOP_APP_FIRST ? (0, Y.jsxs)(Y.Fragment, {
+        children: [Ee, we]
+    }) : (0, Y.jsxs)(Y.Fragment, {
+        children: [we, Ee]
+    }), e[28] = Ee, e[29] = xe, e[30] = we, e[31] = De) : De = e[31];
+    let Oe = De,
+        ke;
+    e[32] === n ? ke = e[33] : (ke = n ? (0, Y.jsx)(B, {
+        id: `wham.whatsNew.title`,
+        defaultMessage: `What's new with Codex`
+    }) : (0, Y.jsx)(B, {
+        id: `wham.gettingStarted.title`,
+        defaultMessage: `Get started with Codex`
+    }), e[32] = n, e[33] = ke);
+    let Ae;
+    e[34] === t ? Ae = e[35] : (Ae = t.formatMessage({
+        id: `wham.newFeatures.dismiss`,
+        defaultMessage: `Dismiss new features announcement`
+    }), e[34] = t, e[35] = Ae);
+    let je;
+    e[36] === Symbol.for(`react.memo_cache_sentinel`) ? (je = (0, Y.jsx)(ue, {
+        className: `icon-sm`
+    }), e[36] = je) : je = e[36];
+    let Me;
+    e[37] === Ae ? Me = e[38] : (Me = (0, Y.jsx)(Le, {
+        onClick: As,
+        className: `text-token-text-tertiary dark:text-token-text-tertiary w-7 items-center justify-center rounded-lg`,
+        size: `small`,
+        color: `ghost`,
+        "aria-label": Ae,
+        children: je
+    }), e[37] = Ae, e[38] = Me);
+    let Ne;
+    e[39] !== ke || e[40] !== Me ? (Ne = (0, Y.jsxs)(`div`, {
+        className: `text-token-text-primary flex items-center justify-between gap-1 ps-1 pt-6 pb-2 text-sm leading-tight font-medium`,
+        children: [ke, Me]
+    }), e[39] = ke, e[40] = Me, e[41] = Ne) : Ne = e[41];
+    let Fe;
+    e[42] === Symbol.for(`react.memo_cache_sentinel`) ? (Fe = (0, Y.jsx)(`div`, {
+        className: `bg-token-bg-primary dark:bg-token-bg-tertiary border-token-border-light flex h-10 w-10 items-center justify-center rounded-xl shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.06)),0px_0px_1px_0px_var(--shadow-color-2,rgba(0,_0,_0,_0.3))] dark:shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.10)),inset_0px_0px_1px_0px_var(--shadow-color-2,rgba(255,_255,_255,_0.2))]`,
+        children: (0, Y.jsx)(Ir, {
+            className: `icon-md`
+        })
+    }), e[42] = Fe) : Fe = e[42];
+    let ze;
+    e[43] === Symbol.for(`react.memo_cache_sentinel`) ? (ze = (0, Y.jsx)(_e.div, {
+        layout: !0,
+        children: (0, Y.jsx)(Ps, {
+            children: (0, Y.jsxs)(`a`, {
+                href: f,
+                target: `_blank`,
+                rel: `noreferrer`,
+                className: `group/card -m-4 flex items-center justify-between gap-3 rounded-2xl p-4`,
+                onClick: ks,
+                children: [(0, Y.jsxs)(`div`, {
+                    className: `flex items-center gap-2`,
+                    children: [Fe, (0, Y.jsx)(`div`, {
+                        className: `text-token-text-primary text-sm font-medium`,
+                        children: (0, Y.jsx)(B, {
+                            id: `wham.gettingStarted.cli`,
+                            defaultMessage: `Try in your terminal`
+                        })
+                    })]
+                }), (0, Y.jsx)(xn, {
+                    className: `icon-sm text-token-text-tertiary origin-[bottom_var(--start)] scale-75 opacity-0 transition-all duration-100 ease-out group-hover/card:scale-100 group-hover/card:opacity-100`
+                })]
+            })
+        })
+    }), e[43] = ze) : ze = e[43];
+    let Be;
+    e[44] === R ? Be = e[45] : (Be = () => {
+        se.current = R
+    }, e[44] = R, e[45] = Be);
+    let He;
+    e[46] === Symbol.for(`react.memo_cache_sentinel`) ? (He = () => {
+        se.current ? le(!1) : le(!0)
+    }, e[46] = He) : He = e[46];
+    let Ue;
+    e[47] === R ? Ue = e[48] : (Ue = e => {
+        (e.key === `Enter` || e.key === ` `) && (e.preventDefault(), le(!R))
+    }, e[47] = R, e[48] = Ue);
+    let We;
+    e[49] !== i || e[50] !== o ? (We = Cs(o, i, {
+        className: `h-5 w-5`
+    }), e[49] = i, e[50] = o, e[51] = We) : We = e[51];
+    let Ge;
+    e[52] === We ? Ge = e[53] : (Ge = (0, Y.jsx)(`div`, {
+        className: `bg-token-bg-primary dark:bg-token-bg-tertiary border-token-border-light flex h-10 w-10 items-center justify-center rounded-xl shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.06)),0px_0px_1px_0px_var(--shadow-color-2,rgba(0,_0,_0,_0.3))] dark:shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.10)),inset_0px_0px_1px_0px_var(--shadow-color-2,rgba(255,_255,_255,_0.2))]`,
+        children: We
+    }), e[52] = We, e[53] = Ge);
+    let Ke;
+    e[54] === Symbol.for(`react.memo_cache_sentinel`) ? (Ke = (0, Y.jsx)(`div`, {
+        className: `text-token-text-primary text-sm font-medium`,
+        children: (0, Y.jsx)(B, {
+            id: `wham.gettingStarted.ide`,
+            defaultMessage: `Try in your IDE`
+        })
+    }), e[54] = Ke) : Ke = e[54];
+    let qe;
+    e[55] === Ge ? qe = e[56] : (qe = (0, Y.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [Ge, Ke]
+    }), e[55] = Ge, e[56] = qe);
+    let Je;
+    e[57] === t ? Je = e[58] : (Je = t.formatMessage({
+        id: `wham.gettingStarted.ide.open`,
+        defaultMessage: `Open IDE links`
+    }), e[57] = t, e[58] = Je);
+    let Ye = R ? `translate-y-0 opacity-100` : `translate-y-0.5 opacity-0`,
+        Xe;
+    e[59] === Ye ? Xe = e[60] : (Xe = Ie(`icon-sm text-token-text-tertiary shrink-0 transition-all duration-100 ease-out group-hover/card:translate-y-0 group-hover/card:opacity-100`, Ye), e[59] = Ye, e[60] = Xe);
+    let z;
+    e[61] === Xe ? z = e[62] : (z = (0, Y.jsx)(_n, {
+        className: Xe
+    }), e[61] = Xe, e[62] = z);
+    let Qe;
+    e[63] !== R || e[64] !== Je || e[65] !== z ? (Qe = (0, Y.jsx)(`button`, {
+        onClick: Os,
+        "aria-label": Je,
+        "aria-expanded": R,
+        className: `hover:bg-token-bg-tertiary rounded-md p-1`,
+        children: z
+    }), e[63] = R, e[64] = Je, e[65] = z, e[66] = Qe) : Qe = e[66];
+    let $e;
+    e[67] === s ? $e = e[68] : ($e = (0, Y.jsx)(It.ItemAs, {
+        as: `a`,
+        href: p,
+        target: `_blank`,
+        rel: `noreferrer`,
+        onClick: () => {
+            W.recordNewFeaturesButtonClicked(`ide_vscode`), s(`vscode`)
+        },
+        children: `VS Code`
+    }), e[67] = s, e[68] = $e);
+    let tt;
+    e[69] === s ? tt = e[70] : (tt = (0, Y.jsx)(It.ItemAs, {
+        as: `a`,
+        href: m,
+        target: `_blank`,
+        rel: `noreferrer`,
+        onClick: () => {
+            W.recordNewFeaturesButtonClicked(`ide_cursor`), s(`cursor`)
+        },
+        children: `Cursor`
+    }), e[69] = s, e[70] = tt);
+    let V;
+    e[71] === s ? V = e[72] : (V = (0, Y.jsx)(It.ItemAs, {
+        as: `a`,
+        href: h,
+        target: `_blank`,
+        rel: `noreferrer`,
+        onClick: () => {
+            W.recordNewFeaturesButtonClicked(`ide_windsurf`), s(`windsurf`)
+        },
+        children: `Windsurf`
+    }), e[71] = s, e[72] = V);
+    let H;
+    e[73] === Symbol.for(`react.memo_cache_sentinel`) ? (H = (0, Y.jsx)(It.ItemAs, {
+        as: `a`,
+        href: g,
+        target: `_blank`,
+        rel: `noreferrer`,
+        onClick: Ds,
+        children: `JetBrains`
+    }), e[73] = H) : H = e[73];
+    let it;
+    e[74] !== R || e[75] !== Qe || e[76] !== $e || e[77] !== tt || e[78] !== V ? (it = (0, Y.jsxs)(Dt, {
+        contentAlign: `end`,
+        open: R,
+        onOpenChange: le,
+        triggerButton: Qe,
+        children: [$e, tt, V, H]
+    }), e[74] = R, e[75] = Qe, e[76] = $e, e[77] = tt, e[78] = V, e[79] = it) : it = e[79];
+    let at;
+    e[80] !== Be || e[81] !== Ue || e[82] !== qe || e[83] !== it ? (at = (0, Y.jsx)(_e.div, {
+        layout: !0,
+        children: (0, Y.jsx)(Ps, {
+            children: (0, Y.jsxs)(`div`, {
+                className: `group/card -m-4 flex cursor-pointer items-center justify-between gap-3 rounded-2xl p-4 select-none`,
+                role: `button`,
+                tabIndex: 0,
+                onPointerDown: Be,
+                onClick: He,
+                onKeyDown: Ue,
+                children: [qe, it]
+            })
+        })
+    }), e[80] = Be, e[81] = Ue, e[82] = qe, e[83] = it, e[84] = at) : at = e[84];
+    let ot;
+    e[85] !== T || e[86] !== ne || e[87] !== ae || e[88] !== w || e[89] !== v || e[90] !== re || e[91] !== pe ? (ot = !pe && (0, Y.jsx)(Se, {
+        initial: !1,
+        children: !w && (0, Y.jsx)(_e.div, {
+            layout: !0,
+            initial: {
+                opacity: 0,
+                scale: .95
+            },
+            animate: {
+                opacity: 1,
+                scale: 1
+            },
+            exit: {
+                opacity: 0,
+                scale: .95
+            },
+            transition: {
+                duration: .2,
+                ease: [.4, 0, .2, 1]
+            },
+            children: (0, Y.jsx)(Ps, {
+                children: (0, Y.jsxs)(nt, {
+                    className: `group/card -m-4 flex items-center gap-2 rounded-2xl p-4`,
+                    to: `/codex/cloud/settings/code-review`,
+                    onClick: ae,
+                    children: [(0, Y.jsx)(`div`, {
+                        className: `bg-token-bg-primary dark:bg-token-bg-tertiary border-token-border-light flex h-10 w-10 items-center justify-center rounded-xl shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.06)),0px_0px_1px_0px_var(--shadow-color-2,rgba(0,_0,_0,_0.3))] dark:shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.10)),inset_0px_0px_1px_0px_var(--shadow-color-2,rgba(255,_255,_255,_0.2))]`,
+                        children: (0, Y.jsx)(bn, {
+                            className: `icon-md relative z-10`
+                        })
+                    }), (0, Y.jsx)(`div`, {
+                        className: `text-token-text-primary flex-1 text-sm font-medium`,
+                        children: (0, Y.jsx)(B, {
+                            id: `wham.gettingStarted.codeReview`,
+                            defaultMessage: `Enable code review`
+                        })
+                    }), !T && (v || re) && (0, Y.jsx)(`span`, {
+                        className: `pointer-events-none flex h-4 w-4 items-center justify-center`,
+                        children: v ? (0, Y.jsx)(a, {
+                            className: `h-5 w-5`
+                        }) : (0, Y.jsx)(fn, {
+                            percentage: ne.percentage,
+                            thickness: .1,
+                            sizeOverride: 10,
+                            className: `text-token-text-primary h-10 w-10`,
+                            backgroundStrokeClassName: `stroke-token-text-primary/20`,
+                            transitionDuration: `0.2s`,
+                            transitionTimingFunction: `cubic-bezier(0.55, 0, 1, 1)`
+                        })
+                    })]
+                })
+            })
+        }, `code-review-card`)
+    }), e[85] = T, e[86] = ne, e[87] = ae, e[88] = w, e[89] = v, e[90] = re, e[91] = pe, e[92] = ot) : ot = e[92];
+    let st;
+    e[93] !== Oe || e[94] !== at || e[95] !== ot ? (st = (0, Y.jsx)(`div`, {
+        className: `overflow-x-auto pb-1`,
+        children: (0, Y.jsxs)(_e.div, {
+            layout: !0,
+            className: `grid grid-cols-1 gap-3 md:w-max md:min-w-full md:auto-cols-[minmax(220px,1fr)] md:grid-flow-col`,
+            children: [Oe, ze, at, ot]
+        })
+    }), e[93] = Oe, e[94] = at, e[95] = ot, e[96] = st) : st = e[96];
+    let ct;
+    return e[97] !== Ne || e[98] !== st ? (ct = (0, Y.jsxs)(`div`, {
+        className: `group w-full px-3 md:px-0`,
+        children: [Ne, st]
+    }), e[97] = Ne, e[98] = st, e[99] = ct) : ct = e[99], ct
+}
+
+function Ds() {
+    W.recordNewFeaturesButtonClicked(`ide_jetbrains`)
+}
+
+function Os(e) {
+    return e.stopPropagation()
+}
+
+function ks() {
+    return W.recordNewFeaturesButtonClicked(`cli_link`)
+}
+
+function As() {
+    W.recordNewFeaturesButtonClicked(`dismiss`), Ce(Et)
+}
+
+function js() {
+    return W.recordNewFeaturesButtonClicked(`codex_security`)
+}
+
+function Ms(e) {
+    return e.setPreferredEditor
+}
+
+function Ns(e) {
+    return e.preferredEditor
+}
+
+function Ps(e) {
+    "use forget";
+    let t = (0, Fs.c)(3),
+        {
+            children: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = Ie(`bg-token-bg-tertiary`, `dark:bg-token-bg-secondary`, `flex flex-col justify-between gap-1 rounded-2xl p-4`), t[0] = r) : r = t[0];
+    let i;
+    return t[1] === n ? i = t[2] : (i = (0, Y.jsx)(`div`, {
+        className: r,
+        children: n
+    }), t[1] = n, t[2] = i), i
+}
+var Fs, Is, Y, Ls, Rs, zs = e((() => {
+    Fs = V(), vr(), h(), Xt(), pn(), jn(), gn(), Sn(), He(), we(), Me(), _(), Ke(), Pr(), Ct(), os(), Er(), Or(), us(), St(), nn(), hs(), xs(), Ts(), wt(), ft(), m(), i(), Is = t(z()), U(), Xe(), Y = H(), Ls = {
+        SECURITY_FIRST: `security_first`,
+        DESKTOP_APP_FIRST: `desktop_app_first`
+    }, Rs = Ls.SECURITY_FIRST
+}));
+
+function Bs() {
+    let e = Ze(),
+        {
+            eligible: t,
+            isLoading: n
+        } = en(),
+        {
+            slack: r
+        } = mt(),
+        {
+            isConnected: i,
+            isLoading: a
+        } = bt(E.SLACK_CODEX_CONNECTOR, `slack`, `/codex/cloud/settings/connectors`, tn.CODEX),
+        o = Vs.useCallback(() => {
+            W.recordNewFeaturesButtonClicked(`slack_dismiss`), Ce(an)
+        }, []);
+    return !t || n || a || i ? null : (0, Hs.jsx)(`div`, {
+        className: `group w-full px-3 pt-4 md:px-0`,
+        children: (0, Hs.jsxs)(`div`, {
+            className: `bg-token-bg-tertiary/80 dark:bg-token-bg-secondary flex items-center gap-3 rounded-2xl px-4 py-3`,
+            children: [(0, Hs.jsx)(`a`, {
+                href: r,
+                target: `_blank`,
+                rel: `noreferrer`,
+                className: `group/card flex flex-1 items-center justify-between gap-3`,
+                onClick: () => W.recordSlackLinkClicked(),
+                children: (0, Hs.jsxs)(Hs.Fragment, {
+                    children: [(0, Hs.jsx)(`div`, {
+                        className: `bg-token-bg-primary dark:bg-token-bg-tertiary border-token-border-light flex h-10 w-10 items-center justify-center rounded-xl shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.06)),0px_0px_1px_0px_var(--shadow-color-2,rgba(0,_0,_0,_0.3))] dark:shadow-[0px_1px_1px_0px_var(--shadow-color-1,rgba(0,_0,_0,_0.10)),inset_0px_0px_1px_0px_var(--shadow-color-2,rgba(255,_255,_255,_0.2))]`,
+                        children: (0, Hs.jsx)(sr, {
+                            className: `icon-md`
+                        })
+                    }), (0, Hs.jsxs)(`div`, {
+                        className: `flex flex-1 items-center gap-2 text-start text-sm leading-tight`,
+                        children: [(0, Hs.jsx)(`span`, {
+                            className: `text-token-text-primary text-sm font-medium`,
+                            children: (0, Hs.jsx)(B, {
+                                id: `wham.gettingStarted.slack`,
+                                defaultMessage: `Set up Codex with Slack`
+                            })
+                        }), (0, Hs.jsx)(w.ChevronRightSm, {
+                            className: `icon-sm text-token-text-primary shrink-0`
+                        })]
+                    })]
+                })
+            }), (0, Hs.jsx)(Le, {
+                className: `text-token-text-tertiary dark:text-token-text-tertiary w-7 shrink-0 items-center justify-center rounded-lg`,
+                onClick: o,
+                size: `small`,
+                color: `ghost`,
+                "aria-label": e.formatMessage({
+                    id: `wham.newFeatures.dismiss`,
+                    defaultMessage: `Dismiss new features announcement`
+                }),
+                children: (0, Hs.jsx)(w.CrossSm, {
+                    className: `icon-sm`
+                })
+            })]
+        })
+    })
+}
+var Vs, Hs, Us = e((() => {
+    r(), h(), or(), O(), gt(), Yt(), Me(), Ct(), St(), nn(), Vs = t(z()), U(), Hs = H()
+}));
+
+function Ws() {
+    "use forget";
+    let e = (0, Ks.c)(22),
+        t = R(),
+        n = lt(),
+        r = en(),
+        i = cn(),
+        a = wr(),
+        [o, s] = (0, qs.useState)(null),
+        c;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = {
+        poll: !0
+    }, e[0] = c) : c = e[0];
+    let {
+        data: l,
+        isLoading: u
+    } = Bt(c), d = g(l) || t?.planType === xe.ENT26 && t.id === l?.account_id && oe(l), f = n.isLoading || u && l == null, p = !f, m;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, Js.jsx)(Es, {}), e[1] = m) : m = e[1];
+    let h;
+    e[2] === n.eligible ? h = e[3] : (h = {
+        eligible: n.eligible,
+        render: m
+    }, e[2] = n.eligible, e[3] = h);
+    let _ = p && r.eligible,
+        v;
+    e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, Js.jsx)(Bs, {}), e[4] = v) : v = e[4];
+    let y;
+    e[5] === _ ? y = e[6] : (y = {
+        eligible: _,
+        render: v
+    }, e[5] = _, e[6] = y);
+    let b = p && i.eligible,
+        x;
+    e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, Js.jsx)(Qo, {}), e[7] = x) : x = e[7];
+    let S;
+    e[8] === b ? S = e[9] : (S = {
+        eligible: b,
+        render: x
+    }, e[8] = b, e[9] = S);
+    let C;
+    e[10] !== h || e[11] !== y || e[12] !== S ? (C = [h, y, S], e[10] = h, e[11] = y, e[12] = S, e[13] = C) : C = e[13];
+    let w = C,
+        T;
+    e[14] !== w || e[15] !== o ? (T = o == null ? (() => {
+        let e = w.findIndex(Gs);
+        return e >= 0 ? e : null
+    })() : null, e[14] = w, e[15] = o, e[16] = T) : T = e[16];
+    let E = T,
+        D, O;
+    if (e[17] === E ? (D = e[18], O = e[19]) : (D = () => {
+            E != null && s(e => e ?? E)
+        }, O = [E], e[17] = E, e[18] = D, e[19] = O), (0, qs.useEffect)(D, O), !a) return null;
+    if (d && l) {
+        let t;
+        return e[20] === l ? t = e[21] : (t = (0, Js.jsx)(`div`, {
+            className: `w-full pt-6`,
+            children: (0, Js.jsx)(Ui, {
+                rateLimit: l,
+                linkToUsageDashboard: !0
+            })
+        }), e[20] = l, e[21] = t), t
+    }
+    return f || o == null ? null : w[o].render
+}
+
+function Gs(e) {
+    return e.eligible
+}
+var Ks, qs, Js, Ys = e((() => {
+    Ks = V(), r(), d(), Ct(), ns(), zs(), Us(), Sr(), Wi(), v(), wt(), qs = t(z()), Js = H()
+}));
+
+function Xs(e) {
+    "use forget";
+    let t = (0, Qs.c)(31),
+        {
+            onShowAllOptions: n
+        } = e,
+        r = Ze(),
+        i = x(Ue),
+        a = P(),
+        {
+            mutate: o
+        } = Be(),
+        s = Ci(),
+        c;
+    t[0] === a ? c = t[1] : (c = yr({
+        isDarkMode: a
+    }), t[0] = a, t[1] = c);
+    let {
+        bgScreenUrl: l,
+        videoUrl: u
+    } = c, d, f;
+    t[2] === o ? (d = t[3], f = t[4]) : (d = () => {
+        o({
+            key: yt
+        }), W.recordCodexOnboardingView(`app_first`)
+    }, f = [o], t[2] = o, t[3] = d, t[4] = f), (0, $s.useEffect)(d, f);
+    let p = Zs,
+        m;
+    t[5] === n ? m = t[6] : (m = () => {
+        W.recordCodexOnboardingAction(`close`, `app_first`), n?.()
+    }, t[5] = n, t[6] = m);
+    let h = m,
+        g;
+    t[7] !== l || t[8] !== i || t[9] !== u ? (g = i ? (0, X.jsx)(`div`, {
+        className: `h-full w-full bg-gradient-to-br from-sky-200/80 via-indigo-300/70 to-blue-700/80`
+    }) : (0, X.jsx)(`video`, {
+        autoPlay: !0,
+        loop: !0,
+        muted: !0,
+        playsInline: !0,
+        poster: l,
+        className: `h-full w-full object-cover`,
+        "aria-hidden": !0,
+        children: (0, X.jsx)(`source`, {
+            src: u,
+            type: `video/mp4`
+        })
+    }), t[7] = l, t[8] = i, t[9] = u, t[10] = g) : g = t[10];
+    let _, v;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = (0, X.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `absolute inset-0 bg-white/74 dark:bg-[#111A53]/58`
+    }), v = (0, X.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.35),transparent_28%),radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_32%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.18),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(169,197,255,0.3),transparent_24%)]`
+    }), t[11] = _, t[12] = v) : (_ = t[11], v = t[12]);
+    let y;
+    t[13] === g ? y = t[14] : (y = (0, X.jsxs)(`div`, {
+        "aria-hidden": !0,
+        className: `pointer-events-none absolute inset-0`,
+        children: [g, _, v]
+    }), t[13] = g, t[14] = y);
+    let b;
+    t[15] === h ? b = t[16] : (b = (0, X.jsx)(`div`, {
+        className: `flex justify-end px-4 pt-4 md:px-6 md:pt-6`,
+        children: (0, X.jsx)(L, {
+            onClick: h,
+            className: `text-token-text-secondary bg-white/72! shadow-sm backdrop-blur hover:bg-white/90! dark:bg-white/10! dark:text-white/75 dark:hover:bg-white/16!`
+        })
+    }), t[15] = h, t[16] = b);
+    let S;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, X.jsx)(`h1`, {
+        className: `max-w-md text-[36px] leading-[1.02] font-semibold tracking-[-0.04em] md:text-[52px]`,
+        children: (0, X.jsx)(B, {
+            ...ec.title
+        })
+    }), t[17] = S) : S = t[17];
+    let C;
+    t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, X.jsx)(`p`, {
+        className: `mt-4 max-w-md text-base leading-7 text-[#334064] md:text-lg md:leading-8 dark:text-white/78`,
+        children: (0, X.jsx)(B, {
+            ...ec.body
+        })
+    }), t[18] = C) : C = t[18];
+    let w;
+    t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (w = (0, X.jsxs)(`section`, {
+        className: `order-2 flex flex-col items-start lg:order-1`,
+        children: [S, C, (0, X.jsx)(`div`, {
+            className: `mt-8 w-full max-w-sm`,
+            children: (0, X.jsx)(xi, {
+                data: Ea,
+                onLinkClick: p,
+                buttonWidthClassName: `w-full`
+            })
+        })]
+    }), t[19] = w) : w = t[19];
+    let T = s.onboardingStartUrl,
+        E;
+    t[20] === r ? E = t[21] : (E = r.formatMessage(ec.previewAlt), t[20] = r, t[21] = E);
+    let D;
+    t[22] !== s.onboardingStartUrl || t[23] !== E ? (D = (0, X.jsx)(`div`, {
+        className: `mx-auto flex w-full max-w-6xl flex-1 items-center px-4 py-8 md:px-6 lg:px-8`,
+        children: (0, X.jsxs)(`div`, {
+            className: `grid w-full items-center gap-10 lg:grid-cols-[minmax(0,400px)_minmax(0,680px)] xl:gap-12`,
+            children: [w, (0, X.jsx)(`div`, {
+                className: `order-1 lg:order-2 lg:ms-auto lg:w-full lg:max-w-[680px]`,
+                children: (0, X.jsx)(`div`, {
+                    className: `rounded-[28px] border border-black/8 bg-white/78 p-3 shadow-[0_24px_80px_rgba(19,31,74,0.12)] backdrop-blur md:rounded-[32px] md:p-4 dark:border-white/10 dark:bg-white/6 dark:shadow-[0_24px_80px_rgba(0,0,0,0.3)]`,
+                    children: (0, X.jsx)(`div`, {
+                        className: `overflow-hidden rounded-[22px] bg-[#EEF3FB] md:rounded-[26px] dark:bg-[#0D1227]`,
+                        children: (0, X.jsx)(`img`, {
+                            src: T,
+                            alt: E,
+                            className: `block h-auto w-full object-cover`
+                        })
+                    })
+                })
+            })]
+        })
+    }), t[22] = s.onboardingStartUrl, t[23] = E, t[24] = D) : D = t[24];
+    let O;
+    t[25] !== D || t[26] !== b ? (O = (0, X.jsxs)(`div`, {
+        className: `relative z-10 flex min-h-screen flex-col`,
+        children: [b, D]
+    }), t[25] = D, t[26] = b, t[27] = O) : O = t[27];
+    let k;
+    return t[28] !== O || t[29] !== y ? (k = (0, X.jsxs)(`main`, {
+        className: `text-token-text-primary relative min-h-screen overflow-hidden bg-[#F6F8FB] dark:bg-[#080C1C] dark:text-white`,
+        children: [y, O]
+    }), t[28] = O, t[29] = y, t[30] = k) : k = t[30], k
+}
+
+function Zs(e) {
+    Gn(e.href) && W.recordCodexAppSurfaceAction(`onboarding`, `download`, `app_first`), W.recordCodexOnboardingAction(`download_app`, `app_first`)
+}
+var Qs, $s, X, ec, tc = e((() => {
+    Qs = V(), c(), Ae(), Me(), me(), Ke(), Ct(), bi(), Wn(), br(), ka(), Si(), nn(), $s = t(z()), U(), X = H(), ec = tt({
+        title: {
+            id: `wham.fullScreenCodexOnboardingAppFirstHero.title`,
+            defaultMessage: `Download the app`
+        },
+        body: {
+            id: `wham.fullScreenCodexOnboardingAppFirstHero.body`,
+            defaultMessage: `Manage multiple agents across projects, track progress, and review results — all in one focused interface.`
+        },
+        previewAlt: {
+            id: `wham.fullScreenCodexOnboardingAppFirstHero.previewAlt`,
+            defaultMessage: `Preview of the Codex desktop app`
+        }
+    })
+}));
+
+function nc({
+    onFinishOnboarding: e,
+    showInlineOnboarding: t = !1
+}) {
+    let [n, r] = (0, rc.useState)(ac.SHOW_APP), i = (0, rc.useCallback)(() => {
+        if (t) {
+            e();
+            return
+        }
+        r(ac.SHOW_LOCAL_OPTIONS)
+    }, [e, t]);
+    return n === ac.SHOW_APP ? (0, ic.jsx)(Xs, {
+        onShowAllOptions: i
+    }) : (0, ic.jsx)(Na, {
+        onFinishOnboarding: e
+    })
+}
+var rc, ic, ac, oc = e((() => {
+    Ya(), tc(), rc = t(z()), ic = H(), ac = {
+        SHOW_APP: `show_app`,
+        SHOW_LOCAL_OPTIONS: `show_local_options`
+    }
+}));
+
+function sc({
+    shouldTurnOn: e,
+    onChange: t
+}) {
+    let {
+        data: n
+    } = jt(), r = Ze();
+    return n ? (0, cc.jsx)(`div`, {
+        className: `border-token-border-heavy bg-token-bg-primary flex w-full flex-col items-center rounded-lg border p-4`,
+        children: (0, cc.jsxs)(`div`, {
+            className: `flex w-full justify-between`,
+            children: [(0, cc.jsxs)(`div`, {
+                className: `flex w-full flex-col items-start justify-start gap-2`,
+                children: [(0, cc.jsx)(`p`, {
+                    className: `text-token-text-primary text-sm leading-tight font-medium`,
+                    children: (0, cc.jsx)(B, {
+                        id: `wham.enableCodeReviewsToggle.label`,
+                        defaultMessage: `Code reviews`
+                    })
+                }), (0, cc.jsx)(`p`, {
+                    className: `text-token-text-secondary justify-start text-xs leading-none font-normal`,
+                    children: (0, cc.jsx)(B, {
+                        id: `wham.enableCodeReviewsToggle.description`,
+                        defaultMessage: `Automatically run reviews on new pull requests in this repo.`
+                    })
+                })]
+            }), (0, cc.jsx)(`div`, {
+                className: `flex items-center`,
+                children: (0, cc.jsx)(Ne, {
+                    checked: e,
+                    onCheckedChange: t,
+                    className: `radix-state-checked:bg-black!`,
+                    "aria-label": r.formatMessage({
+                        id: `wham.enableCodeReviewsToggle.ariaLabel`,
+                        defaultMessage: `Enable code reviews by Codex`
+                    })
+                })
+            })]
+        })
+    }) : null
+}
+var cc, lc = e((() => {
+    ze(), wt(), U(), cc = H()
+}));
+
+function uc() {
+    let {
+        connectorId: e,
+        data: t,
+        isLoading: n
+    } = qi(), r = Ki({
+        appInstallationUrl: t?.app_installation_url,
+        connectorId: e
+    });
+    (0, dc.useEffect)(() => {
+        n || [...t?.memberships ?? [], ...t?.other ?? []].length === 0 && r && ta(r)
+    }, [n, t, r])
+}
+var dc, fc = e((() => {
+    ea(), ra(), Yi(), dc = t(z())
+}));
+
+function pc({
+    backCta: e,
+    handleGoBack: t,
+    handleSelectEnvironment: n,
+    goToNextPage: r,
+    lockPageView: i,
+    shouldDisableRow: a,
+    disablePill: o
+}) {
+    let s = Rn(),
+        c = Ze(),
+        [l, u] = (0, mc.useState)(``),
+        [d, f] = (0, mc.useState)(null),
+        [p, m] = (0, mc.useState)(null),
+        [h, g] = (0, mc.useState)(!s),
+        {
+            mutate: _,
+            isPending: v
+        } = ca({
+            onSuccess: e => {
+                W.recordCreateEnvSuccess(), n(e.id, oi(e), Je(e)), r()
+            }
+        }),
+        {
+            mutate: y
+        } = wi(),
+        {
+            mutate: b
+        } = gi({
+            showToast: !1
+        });
+    uc();
+    let x = zn({
+            defaultValues: {
+                repositoryId: ``,
+                agentNetworkAccess: {
+                    mode: `off`
+                }
+            },
+            validators: {
+                onSubmit: ({
+                    value: e
+                }) => {
+                    let t = {};
+                    return (!e.repositoryId || e.repositoryId === ``) && (t.repositoryId = c.formatMessage({
+                        id: `wham.codexOnboardingEnvironments.repositoryIsRequired`,
+                        defaultMessage: `Repository is required`
+                    })), e.agentNetworkAccess?.mode === `on` && e.agentNetworkAccess.preset_allowlist === `none` && (!e.agentNetworkAccess.allowlist_domains || e.agentNetworkAccess.allowlist_domains.length === 0) && (t.agentNetworkAccess = c.formatMessage({
+                        id: `wham.environmentsForm.agentNetworkAccessAllowlistRequired`,
+                        defaultMessage: `At least one domain is required`
+                    })), {
+                        fields: t
+                    }
+                }
+            },
+            onSubmit: ({
+                value: e
+            }) => {
+                W.recordEnvironmentsSubmit(), i(), h && (b({
+                    codeReviewPreference: `repo_default`
+                }), y({
+                    repo_review_settings: [{
+                        repository: e.repositoryId,
+                        review_preference: `team`
+                    }]
+                })), _({
+                    ...e,
+                    githubConnectorId: p,
+                    label: l,
+                    description: ``,
+                    machine: `wham-public/wham-universal`,
+                    workspaceDirectory: `/workspace`,
+                    share_settings: `workspace`,
+                    setupCommands: ``,
+                    maintenanceSetupCommands: ``,
+                    envVars: [],
+                    secrets: [],
+                    autoSetupSettings: {
+                        use_auto_setup: !0
+                    }
+                })
+            }
+        }),
+        S = e => {
+            e.preventDefault(), e.stopPropagation(), x.handleSubmit()
+        },
+        C = Gi();
+    return (0, Z.jsx)(`form`, {
+        onSubmit: S,
+        className: `flex flex-col gap-6`,
+        children: (0, Z.jsxs)(`div`, {
+            className: `flex w-full flex-col gap-4`,
+            children: [(0, Z.jsx)(Zi, {
+                selectedInstallationId: d?.id ?? null,
+                setSelectedInstallation: f,
+                setSelectedConnectorId: m
+            }), (0, Z.jsx)(x.Field, {
+                name: `repositoryId`,
+                children: e => (0, Z.jsxs)(`div`, {
+                    className: `flex w-full flex-col gap-4`,
+                    children: [(0, Z.jsx)(na, {
+                        installationId: d?.id ?? null,
+                        installationHtmlUrl: d?.html_url ?? null,
+                        installationAccountLogin: d?.account_login ?? null,
+                        installationAccountType: d?.account_type ?? null,
+                        githubConnectorId: p,
+                        selectedRepository: e.state.value,
+                        onSelect: (t, n) => {
+                            e.handleChange(t), u(n)
+                        },
+                        shouldDisableRow: a,
+                        disablePill: o
+                    }), (0, Z.jsx)(oa, {
+                        field: e
+                    })]
+                })
+            }), (0, Z.jsx)(sc, {
+                shouldTurnOn: h,
+                onChange: g
+            }), (0, Z.jsx)(x.Field, {
+                name: `agentNetworkAccess`,
+                children: e => (0, Z.jsxs)(`div`, {
+                    className: `flex flex-col gap-4`,
+                    children: [C != null && (0, Z.jsx)(Qi, {
+                        disabledByWorkspaceSettings: C,
+                        agentNetworkAccess: e.state.value,
+                        onChange: e.handleChange
+                    }), (0, Z.jsx)(oa, {
+                        field: e
+                    }), e.state.value?.mode === `on` && (0, Z.jsx)(Xi, {})]
+                })
+            }), (0, Z.jsxs)(`div`, {
+                className: `flex w-full items-center justify-between`,
+                children: [(0, Z.jsx)(Le, {
+                    color: `secondary`,
+                    size: `medium`,
+                    type: `button`,
+                    onClick: t,
+                    children: e
+                }), (0, Z.jsx)(x.Subscribe, {
+                    selector: e => e.values,
+                    children: e => (0, Z.jsx)(Le, {
+                        color: `primary`,
+                        size: `medium`,
+                        loading: v,
+                        disabled: !l || !e.agentNetworkAccess,
+                        onClick: () => x.handleSubmit(),
+                        children: (0, Z.jsx)(B, {
+                            id: `wham.codexOnboardingEnvironments.createEnvironment`,
+                            defaultMessage: `Create environment`
+                        })
+                    })
+                })]
+            })]
+        })
+    })
+}
+var mc, Z, hc = e((() => {
+    h(), si(), nn(), lc(), fc(), $i(), Un(), aa(), Ji(), ia(), he(), ti(), Oi(), _i(), sa(), Vn(), mc = t(z()), U(), Z = H()
+}));
+
+function gc(e) {
+    "use forget";
+    let t = (0, xc.c)(21),
+        {
+            isOpen: n,
+            onClose: r
+        } = e,
+        i = Ze(),
+        a = Ut(bc),
+        o = Ut(yc),
+        s;
+    t[0] !== o || t[1] !== a ? (s = (e, t, n) => {
+        a(e, n), o(t)
+    }, t[0] = o, t[1] = a, t[2] = s) : s = t[2];
+    let c = s,
+        l = vc;
+    uc();
+    let u;
+    t[3] === r ? u = t[4] : (u = () => {
+        l(), r()
+    }, t[3] = r, t[4] = u);
+    let d;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, Sc.jsx)(`h2`, {
+        className: `text-center text-2xl font-semibold`,
+        children: (0, Sc.jsx)(B, {
+            id: `wham.createFirstEnvironmentModal.title`,
+            defaultMessage: `Create your first environment`
+        })
+    }), t[5] = d) : d = t[5];
+    let f;
+    t[6] === i ? f = t[7] : (f = i.formatMessage({
+        id: `wham.createFirstEnvironmentModal.cancel`,
+        defaultMessage: `Cancel`
+    }), t[6] = i, t[7] = f);
+    let p;
+    t[8] === r ? p = t[9] : (p = () => {
+        l(), r()
+    }, t[8] = r, t[9] = p);
+    let m;
+    t[10] === r ? m = t[11] : (m = () => {
+        l(), r()
+    }, t[10] = r, t[11] = m);
+    let h;
+    t[12] !== c || t[13] !== f || t[14] !== p || t[15] !== m ? (h = (0, Sc.jsxs)(`div`, {
+        className: `flex flex-col gap-4 p-6`,
+        children: [d, (0, Sc.jsx)(pc, {
+            backCta: f,
+            handleGoBack: p,
+            handleSelectEnvironment: c,
+            goToNextPage: m,
+            lockPageView: _c
+        })]
+    }), t[12] = c, t[13] = f, t[14] = p, t[15] = m, t[16] = h) : h = t[16];
+    let g;
+    return t[17] !== n || t[18] !== u || t[19] !== h ? (g = (0, Sc.jsx)(ee, {
+        isOpen: n,
+        onClose: u,
+        type: `success`,
+        size: `large`,
+        noPadding: !0,
+        testId: `modal-wham-create-first-environment`,
+        position: `center`,
+        contentClassName: `no-scrollbar`,
+        className: `h-[90vh]`,
+        children: h
+    }), t[17] = n, t[18] = u, t[19] = h, t[20] = g) : g = t[20], g
+}
+
+function _c() {}
+
+function vc() {
+    return Ce(_t)
+}
+
+function yc(e) {
+    return e.setBranch
+}
+
+function bc(e) {
+    return e.setEnvironmentId
+}
+var xc, Sc, Cc = e((() => {
+    xc = V(), We(), Me(), Ct(), hc(), fc(), ft(), U(), Sc = H()
+}));
+
+function wc(e) {
+    "use forget";
+    let t = (0, Ec.c)(35),
+        {
+            disabledInstallations: n,
+            autoReviewPreference: r,
+            isAutoReviewPreferenceSaving: i,
+            showSecurityReviewSettings: a,
+            onAutoReviewPreferenceChange: o
+        } = e,
+        s;
+    t[0] === n ? s = t[1] : (s = n === void 0 ? [] : n, t[0] = n, t[1] = s);
+    let c = s,
+        l = Ze(),
+        [u, d] = (0, Dc.useState)(r),
+        f, p;
+    t[2] === r ? (f = t[3], p = t[4]) : (f = () => {
+        d(r)
+    }, p = [r], t[2] = r, t[3] = f, t[4] = p), (0, Dc.useEffect)(f, p);
+    let {
+        filteredSettings: m,
+        isLoading: h,
+        isFetching: g,
+        updateCodeReviewRepositories: _,
+        isLegacyEnterprisey: v
+    } = Ai(), y = Rn(), b = In(), x = qe(), S = R(), C;
+    t[5] === S ? C = t[6] : (C = Di(S), t[5] = S, t[6] = C);
+    let w = C,
+        T;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, Oc.jsx)(`p`, {
+        className: `text-sm font-medium`,
+        children: (0, Oc.jsx)(B, {
+            id: `wham.codeReviewPage.teamAutomations.autoReviewToggle.label`,
+            defaultMessage: `Review all my pull requests`
+        })
+    }), t[7] = T) : T = t[7];
+    let E;
+    t[8] === l ? E = t[9] : (E = l.formatMessage({
+        id: `wham.codeReviewPage.personalPreferences.toggleRepoCodeReviewAria`,
+        defaultMessage: `Toggle code review for personal preferences`
+    }), t[8] = l, t[9] = E);
+    let D = u === `always`,
+        O;
+    t[10] === o ? O = t[11] : (O = e => {
+        let t = e ? `always` : `repo_default`;
+        d(t), o(t)
+    }, t[10] = o, t[11] = O);
+    let k;
+    t[12] !== i || t[13] !== E || t[14] !== D || t[15] !== O ? (k = (0, Oc.jsxs)(`div`, {
+        className: `flex items-center justify-between gap-3 px-4 py-3`,
+        children: [T, (0, Oc.jsx)(Ne, {
+            "aria-label": E,
+            checked: D,
+            disabled: i,
+            onCheckedChange: O
+        })]
+    }), t[12] = i, t[13] = E, t[14] = D, t[15] = O, t[16] = k) : k = t[16];
+    let A;
+    t[17] !== S || t[18] !== w || t[19] !== c || t[20] !== m || t[21] !== g || t[22] !== v || t[23] !== h || t[24] !== b || t[25] !== y || t[26] !== a || t[27] !== _ || t[28] !== x?.email ? (A = h ? Array.from({
+        length: 4
+    }).map(Tc) : m.length === 0 && !g ? (0, Oc.jsx)(`div`, {
+        className: `text-token-text-tertiary px-4 py-6 text-center text-sm`,
+        children: (0, Oc.jsx)(B, {
+            id: `wham.codeReviewPage.teamAutomations.noRepositories`,
+            defaultMessage: `No repositories`
+        })
+    }) : m.map((e, t) => (0, Oc.jsx)(Mi, {
+        repo: e,
+        isTeamOrEnterprise: y,
+        isLegacyEnterprisey: v,
+        isPlus: !!b,
+        isPro: S?.isProTier() ?? !1,
+        disabledInstallations: c,
+        updateCodeReviewRepositories: _,
+        currentAccountOwnerId: w,
+        currentUserEmail: x?.email ?? null,
+        layout: `condensed`,
+        showDivider: t !== 0,
+        showSecurityReviewSettings: a
+    }, ki(e))), t[17] = S, t[18] = w, t[19] = c, t[20] = m, t[21] = g, t[22] = v, t[23] = h, t[24] = b, t[25] = y, t[26] = a, t[27] = _, t[28] = x?.email, t[29] = A) : A = t[29];
+    let j;
+    t[30] === A ? j = t[31] : (j = (0, Oc.jsx)(`div`, {
+        className: `border-token-border-light min-h-0 flex-1 overflow-y-auto border-t pe-1`,
+        children: A
+    }), t[30] = A, t[31] = j);
+    let M;
+    return t[32] !== k || t[33] !== j ? (M = (0, Oc.jsxs)(`div`, {
+        className: `border-token-border-light bg-token-bg-primary flex h-full max-h-[400px] min-h-0 flex-col overflow-hidden rounded-2xl border`,
+        children: [k, j]
+    }), t[32] = k, t[33] = j, t[34] = M) : M = t[34], M
+}
+
+function Tc(e, t) {
+    return (0, Oc.jsxs)(`div`, {
+        className: Ie(`flex items-center justify-between gap-3 px-4 py-3`, t !== 0 && `border-token-border-light border-t`),
+        children: [(0, Oc.jsxs)(`div`, {
+            className: `flex items-center gap-2`,
+            children: [(0, Oc.jsx)(vt, {
+                className: `h-4 w-4 rounded`
+            }), (0, Oc.jsx)(vt, {
+                className: `h-4 w-32`
+            })]
+        }), (0, Oc.jsx)(vt, {
+            className: `h-6 w-32 rounded-md`
+        })]
+    }, `condensed-skeleton-${t}`)
+}
+var Ec, Dc, Oc, kc = e((() => {
+    Ec = V(), ze(), sn(), d(), le(), Ti(), Ni(), Un(), Oi(), m(), Dc = t(z()), U(), Oc = H()
+}));
+
+function Ac(e) {
+    "use forget";
+    let t = (0, Nc.c)(42),
+        {
+            onClose: n,
+            onModalDismissed: r
+        } = e,
+        i = Ze(),
+        o;
+    t[0] !== n || t[1] !== r ? (o = async e => {
+        await r(), n()
+    }, t[0] = n, t[1] = r, t[2] = o) : o = t[2];
+    let s = o,
+        {
+            isLoading: c,
+            isMfaRequired: l,
+            isMfaEnabled: u,
+            isGitHubConnected: d,
+            hasValidInstallation: f,
+            isCodeReviewEnabled: p,
+            openGithubModal: m,
+            markCompletedCodeReview: h
+        } = gs({
+            onError: () => {
+                g.danger(i.formatMessage({
+                    id: `wham.codeReviewOnboardingModal.errorToast`,
+                    defaultMessage: `Failed to set up code review. Please try again.`
+                }), {
+                    id: `codex-code-review-onboarding-error`,
+                    duration: 5,
+                    hasCloseButton: !0
+                }), s()
+            }
+        }),
+        g = M(),
+        [_, v] = (0, Pc.useState)(!1),
+        y = !!u,
+        b = !!(d && f),
+        x = !!p,
+        S;
+    t[3] !== y || t[4] !== b || t[5] !== x ? (S = {
+        "wham.codeReviewOnboardingModal.step.mfa": y,
+        "wham.codeReviewOnboardingModal.step.github": b,
+        "wham.codeReviewOnboardingModal.step.configure": x
+    }, t[3] = y, t[4] = b, t[5] = x, t[6] = S) : S = t[6];
+    let C = S,
+        w;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (w = De(`installations/select_target`), t[7] = w) : w = t[7];
+    let T = w,
+        E;
+    t[8] !== f || t[9] !== d || t[10] !== c || t[11] !== C ? (E = e => c ? (0, Q.jsx)(`span`, {
+        className: `border-token-border-heavy text-token-text-primary flex h-5 w-5 items-center justify-center rounded-full`,
+        children: (0, Q.jsx)(a, {
+            className: `h-4 w-4`
+        })
+    }) : e === `wham.codeReviewOnboardingModal.step.github` && d && !f ? (0, Q.jsx)(`span`, {
+        className: `flex h-5 w-5 items-center justify-center rounded-full`,
+        children: (0, Q.jsx)(fn, {
+            percentage: 50
+        })
+    }) : C[e] ? (0, Q.jsx)(`span`, {
+        className: `border-token-border-heavy bg-token-bg-success/40 text-token-text-primary flex h-5 w-5 items-center justify-center rounded-full border-2`,
+        children: (0, Q.jsx)(Cn, {
+            className: `h-3 w-3`
+        })
+    }) : (0, Q.jsx)(`span`, {
+        className: `border-token-border-heavy flex h-5 w-5 items-center justify-center rounded-full border-2`
+    }), t[8] = f, t[9] = d, t[10] = c, t[11] = C, t[12] = E) : E = t[12];
+    let D = E,
+        O;
+    t[13] !== s || t[14] !== h ? (O = async () => {
+        await s(), h()
+    }, t[13] = s, t[14] = h, t[15] = O) : O = t[15];
+    let k = O,
+        A;
+    t[16] !== s || t[17] !== f || t[18] !== p || t[19] !== d || t[20] !== c || t[21] !== u || t[22] !== m ? (A = async () => {
+        if (!c) {
+            if (!u) {
+                ye(Jr, {
+                    redirectUrl: `/codex/cloud?codex_onboarding=code_review`,
+                    source: `codex_cloud`
+                }), await s();
+                return
+            }
+            if (!d) {
+                await s(), m();
+                return
+            }
+            if (!f) {
+                await s(), ta(T, {
+                    includeQueryParamForRedirect: !0
+                });
+                return
+            }
+            if (!p) {
+                v(!0);
+                return
+            }
+            await s()
+        }
+    }, t[16] = s, t[17] = f, t[18] = p, t[19] = d, t[20] = c, t[21] = u, t[22] = m, t[23] = A) : A = t[23];
+    let j = A,
+        N;
+    t[24] === i ? N = t[25] : (N = i.formatMessage({
+        id: `wham.codeReviewOnboardingModal.hiddenTitle`,
+        defaultMessage: ` `
+    }), t[24] = i, t[25] = N);
+    let P = N,
+        F = _ ? `max-w-[520px]` : `max-w-[420px]`,
+        I;
+    t[26] === F ? I = t[27] : (I = Ie(`w-full`, F), t[26] = F, t[27] = I);
+    let L;
+    t[28] !== k || t[29] !== j || t[30] !== f || t[31] !== d || t[32] !== c || t[33] !== l || t[34] !== D || t[35] !== _ ? (L = _ ? (0, Q.jsx)(jc, {
+        onComplete: k
+    }) : (0, Q.jsxs)(`div`, {
+        className: `flex flex-col gap-6 p-6 pt-0`,
+        children: [(0, Q.jsxs)(`div`, {
+            className: `flex flex-col items-center gap-4 text-center`,
+            children: [(0, Q.jsx)(`div`, {
+                className: `rounded-xl border-[0.5px] p-2 shadow-sm`,
+                children: (0, Q.jsx)(bn, {
+                    className: `icon h-8 w-8`
+                })
+            }), (0, Q.jsxs)(`div`, {
+                className: `flex flex-col gap-1`,
+                children: [(0, Q.jsx)(`h2`, {
+                    className: `text-token-text-primary text-xxl font-semibold`,
+                    children: (0, Q.jsx)(B, {
+                        id: `wham.codeReviewOnboardingModal.title`,
+                        defaultMessage: `Set up code review`
+                    })
+                }), (0, Q.jsx)(`p`, {
+                    className: `text-token-text-secondary text-sm leading-5`,
+                    children: (0, Q.jsx)(B, {
+                        id: `wham.codeReviewOnboardingModal.subtitle`,
+                        defaultMessage: `Automatically review your pull requests with Codex`
+                    })
+                })]
+            })]
+        }), (0, Q.jsx)(`div`, {
+            className: `border-token-border-light bg-token-bg-primary flex flex-col gap-3 rounded-2xl border p-4`,
+            children: Fc.map(e => {
+                if (e.id === `wham.codeReviewOnboardingModal.step.mfa` && !l) return null;
+                let t = e.id === `wham.codeReviewOnboardingModal.step.github` && !c && d && !f;
+                return (0, Q.jsxs)(`div`, {
+                    className: `flex items-center gap-3`,
+                    children: [(0, Q.jsx)(`div`, {
+                        className: `flex items-center gap-2`,
+                        children: D(e.id)
+                    }), (0, Q.jsx)(`p`, {
+                        className: `text-token-text-primary text-sm leading-5`,
+                        children: (0, Q.jsx)(B, {
+                            ...e
+                        })
+                    }), t ? (0, Q.jsx)(`span`, {
+                        className: `text-token-text-secondary text-xs font-medium`,
+                        children: (0, Q.jsx)(B, {
+                            id: `wham.codeReviewOnboardingModal.step.github.inProgress`,
+                            defaultMessage: `In-progress`
+                        })
+                    }) : null]
+                }, e.id)
+            })
+        }), (0, Q.jsxs)(Le, {
+            color: `primary`,
+            fullWidth: !0,
+            onClick: j,
+            contentWrapperClassName: `gap-2`,
+            disabled: c,
+            children: [(0, Q.jsx)(`span`, {
+                children: (0, Q.jsx)(B, {
+                    id: `wham.codeReviewOnboardingModal.continue`,
+                    defaultMessage: `Continue`
+                })
+            }), (0, Q.jsx)(Nn, {
+                className: `icon-sm`
+            })]
+        })]
+    }), t[28] = k, t[29] = j, t[30] = f, t[31] = d, t[32] = c, t[33] = l, t[34] = D, t[35] = _, t[36] = L) : L = t[36];
+    let te;
+    return t[37] !== s || t[38] !== P || t[39] !== I || t[40] !== L ? (te = (0, Q.jsx)(ee, {
+        isOpen: !0,
+        onClose: s,
+        showCloseButton: !0,
+        showOverlayBackground: !0,
+        noPadding: !0,
+        size: `custom`,
+        position: `center`,
+        className: I,
+        testId: `modal-codex-code-review-onboarding`,
+        closeButtonClassName: `text-token-text-secondary hover:text-token-text-primary transition-colors`,
+        title: P,
+        children: L
+    }), t[37] = s, t[38] = P, t[39] = I, t[40] = L, t[41] = te) : te = t[41], te
+}
+
+function jc(e) {
+    "use forget";
+    let t = (0, Nc.c)(13),
+        {
+            onComplete: n
+        } = e,
+        {
+            data: r,
+            isLoading: i,
+            isError: o
+        } = jt(),
+        s;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (s = {
+        showToast: !0
+    }, t[0] = s) : s = t[0];
+    let {
+        mutate: c,
+        isPending: l
+    } = gi(s), {
+        data: u
+    } = ln(), d;
+    t[1] === u?.installations_without_events ? d = t[2] : (d = u?.installations_without_events ?? [], t[1] = u?.installations_without_events, t[2] = d);
+    let f = d,
+        p = i || o || !r,
+        m;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, Q.jsx)(`div`, {
+        className: `bg-tertiary rounded-xl border-[0.5px] p-2 shadow-sm`,
+        children: (0, Q.jsx)(bn, {
+            className: `icon h-8 w-8`
+        })
+    }), t[3] = m) : m = t[3];
+    let h;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, Q.jsx)(`h2`, {
+        className: `text-token-text-primary text-xxl font-semibold`,
+        children: (0, Q.jsx)(B, {
+            id: `wham.codeReviewOnboardingModal.configure.title`,
+            defaultMessage: `Configure code review`
+        })
+    }), t[4] = h) : h = t[4];
+    let g;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, Q.jsxs)(`div`, {
+        className: `flex flex-col items-center gap-4 text-center`,
+        children: [m, (0, Q.jsxs)(`div`, {
+            className: `flex flex-col gap-1`,
+            children: [h, (0, Q.jsx)(`p`, {
+                className: `text-token-text-secondary text-sm leading-5`,
+                children: (0, Q.jsx)(B, {
+                    id: `wham.codeReviewOnboardingModal.configure.subtitle`,
+                    defaultMessage: `Select which repositories and PRs will be reviewed by Codex`
+                })
+            })]
+        })]
+    }), t[5] = g) : g = t[5];
+    let _;
+    return t[6] !== f || t[7] !== l || t[8] !== n || t[9] !== p || t[10] !== c || t[11] !== r ? (_ = (0, Q.jsxs)(`div`, {
+        className: `flex flex-col gap-6 p-6 pt-0`,
+        children: [g, p ? (0, Q.jsx)(`div`, {
+            className: `flex flex-1 items-center justify-center`,
+            children: (0, Q.jsx)(a, {
+                className: `h-9 w-9`
+            })
+        }) : (0, Q.jsxs)(Q.Fragment, {
+            children: [(0, Q.jsx)(`div`, {
+                className: `min-h-0 flex-1 pe-1`,
+                children: (0, Q.jsx)(wc, {
+                    autoReviewPreference: r.code_review_preference,
+                    isAutoReviewPreferenceSaving: l,
+                    showSecurityReviewSettings: ji(),
+                    onAutoReviewPreferenceChange: e => {
+                        c({
+                            codeReviewPreference: e
+                        })
+                    },
+                    disabledInstallations: f.map(Mc)
+                })
+            }), (0, Q.jsxs)(`div`, {
+                className: `flex flex-col gap-2`,
+                children: [(0, Q.jsx)(`p`, {
+                    className: `text-token-text-tertiary text-center text-xs leading-5`,
+                    children: (0, Q.jsx)(B, {
+                        id: `wham.codeReviewOnboardingModal.configure.footer`,
+                        defaultMessage: `You can always change it in the settings`
+                    })
+                }), (0, Q.jsx)(Le, {
+                    color: `primary`,
+                    fullWidth: !0,
+                    onClick: n,
+                    children: (0, Q.jsx)(B, {
+                        id: `wham.codeReviewOnboardingModal.configure.done`,
+                        defaultMessage: `Done`
+                    })
+                })]
+            })]
+        })]
+    }), t[6] = f, t[7] = l, t[8] = n, t[9] = p, t[10] = c, t[11] = r, t[12] = _) : _ = t[12], _
+}
+
+function Mc(e) {
+    return e.account_login
+}
+var Nc, Pc, Q, Fc, Ic = e((() => {
+    Nc = V(), h(), Xt(), hn(), wn(), Sn(), We(), ce(), j(), qr(), we(), Ye(), xs(), Ei(), kc(), ra(), _i(), wt(), m(), Pc = t(z()), U(), Q = H(), Fc = [Qe({
+        id: `wham.codeReviewOnboardingModal.step.mfa`,
+        defaultMessage: `Set up multi-factor authentication`
+    }), Qe({
+        id: `wham.codeReviewOnboardingModal.step.github`,
+        defaultMessage: `Connect to GitHub`
+    }), Qe({
+        id: `wham.codeReviewOnboardingModal.step.configure`,
+        defaultMessage: `Configure code review`
+    })]
+}));
+
+function Lc({
+    hasCompletedCodeReviewFlow: e,
+    isHasCompletedCodeReviewLoading: t
+}) {
+    let n = (0, Rc.useRef)(null),
+        r = (0, Rc.useRef)(!1),
+        i = et(),
+        a = rt(),
+        o = te(),
+        s = fe(Jr);
+    (0, Rc.useEffect)(() => {
+        let c = new URLSearchParams(a.search),
+            l = c.get(ps),
+            u = Kr(c) !== null;
+        if (o || s || u || t || e) {
+            r.current &&= (re(Ac), !1);
+            return
+        }
+        if (l !== `code_review`) {
+            n.current = l;
+            return
+        }
+        if (n.current === `code_review` && r.current) return;
+        n.current = l;
+        let d = !1,
+            f = async () => {
+                if (d) return;
+                d = !0;
+                let e = fs(a.search);
+                await i({
+                    pathname: a.pathname,
+                    search: e,
+                    hash: a.hash
+                }, {
+                    replace: !0
+                })
+            };
+        r.current = !0, ye(Ac, {
+            onModalDismissed: async () => {
+                await f()
+            }
+        })
+    }, [a.hash, a.pathname, a.search, i, e, t, s, o])
+}
+var Rc, zc = e((() => {
+    ce(), qr(), f(), Ic(), hs(), Rc = t(z()), Xe()
+}));
+
+function Bc() {
+    "use forget";
+    let e = (0, nl.c)(20),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = Pt(), e[0] = t) : t = e[0];
+    let n = t,
+        r = b(),
+        i = Lt(),
+        {
+            data: a
+        } = je(r?.getWorkspaceId()),
+        o;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (o = ve(), e[1] = o) : o = e[1];
+    let s = o,
+        [c, l] = (0, rl.useState)(!1);
+    $r();
+    let d;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (d = [], e[2] = d) : d = e[2], (0, rl.useEffect)(Vc, d);
+    let f;
+    e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (f = u(`547652119`), e[3] = f) : f = e[3];
+    let p = f,
+        m = i === `DISABLED` && r?.isWorkspacePlan(),
+        h = a?.beta_settings.wham_local_access ?? !1,
+        g;
+    e[4] === a?.permissions ? g = e[5] : (g = a?.permissions?.includes(ge.AllowCodexLocalAccess) ?? !1, e[4] = a?.permissions, e[5] = g);
+    let _ = g,
+        v = i === `DISABLED` && r?.isEnterprisey() && h && _,
+        y = n && !m && !v && !p && i !== `DISABLED` && !s,
+        x;
+    e[6] !== c || e[7] !== y ? (x = {
+        onboardingEnabled: y,
+        hasDismissedOnboarding: c
+    }, e[6] = c, e[7] = y, e[8] = x) : x = e[8];
+    let {
+        onboardingDecision: S,
+        showInlineOnboarding: C
+    } = qo(x), w;
+    e[9] === l ? w = e[10] : (w = () => {
+        l(!0)
+    }, e[9] = l, e[10] = w);
+    let T = w;
+    if (!n) {
+        let t;
+        return e[11] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(at, {
+            to: `/`
+        }), e[11] = t) : t = e[11], t
+    }
+    if (v || m) {
+        let t;
+        return e[12] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(at, {
+            to: `/codex/cloud/access`,
+            replace: !0
+        }), e[12] = t) : t = e[12], t
+    }
+    if (p) {
+        let t;
+        return e[13] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(at, {
+            to: `/codex/cloud/failwhale`
+        }), e[13] = t) : t = e[13], t
+    }
+    if (i === `DISABLED`) {
+        let t;
+        return e[14] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(at, {
+            to: `/`,
+            replace: !0
+        }), e[14] = t) : t = e[14], t
+    }
+    if (S === Xo.LOADING) return null;
+    if (S === Xo.SHOW) {
+        let t;
+        return e[15] !== T || e[16] !== C ? (t = (0, $.jsx)(nc, {
+            onFinishOnboarding: T,
+            showInlineOnboarding: C
+        }), e[15] = T, e[16] = C, e[17] = t) : t = e[17], t
+    }
+    let E;
+    return e[18] === C ? E = e[19] : (E = (0, $.jsx)(Hc, {
+        showInlineOnboarding: C
+    }), e[18] = C, e[19] = E), E
+}
+
+function Vc() {
+    return I(Object.values(C))
+}
+
+function Hc(e) {
+    "use forget";
+    let t = (0, nl.c)(22),
+        {
+            content: n,
+            showInlineOnboarding: r
+        } = e,
+        i = r !== void 0 && r,
+        a = Ut(Uc),
+        o, c, l, u;
+    if (t[0] !== a) {
+        let e = b();
+        u = !1, c = Wt, o = Qn, l = e?.getWorkspaceId(), t[0] = a, t[1] = o, t[2] = c, t[3] = l, t[4] = u
+    } else o = t[1], c = t[2], l = t[3], u = t[4];
+    let d;
+    t[5] !== o || t[6] !== l ? (d = (0, $.jsx)(o, {
+        page: `codex`
+    }, l), t[5] = o, t[6] = l, t[7] = d) : d = t[7];
+    let f;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, $.jsx)(pr, {
+        children: (0, $.jsx)(fr, {})
+    }), t[8] = f) : f = t[8];
+    let p;
+    t[9] !== n || t[10] !== i ? (p = n ?? (0, $.jsx)(s, {
+        children: (0, $.jsx)(Wc, {
+            showInlineOnboarding: i
+        })
+    }), t[9] = n, t[10] = i, t[11] = p) : p = t[11];
+    let m;
+    t[12] === p ? m = t[13] : (m = (0, $.jsxs)(`div`, {
+        className: `flex min-h-full flex-col`,
+        children: [f, p]
+    }), t[12] = p, t[13] = m);
+    let h;
+    t[14] !== c || t[15] !== d || t[16] !== m ? (h = (0, $.jsxs)(c, {
+        children: [d, m]
+    }), t[14] = c, t[15] = d, t[16] = m, t[17] = h) : h = t[17];
+    let g;
+    t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, $.jsx)(dr, {}), t[18] = g) : g = t[18];
+    let _;
+    return t[19] !== u || t[20] !== h ? (_ = (0, $.jsxs)($.Fragment, {
+        children: [u, h, g]
+    }), t[19] = u, t[20] = h, t[21] = _) : _ = t[21], _
+}
+
+function Uc(e) {
+    return e.showReactQueryDevtools
+}
+
+function Wc(e) {
+    "use forget";
+    let t = (0, nl.c)(48),
+        {
+            showInlineOnboarding: n
+        } = e,
+        r = n !== void 0 && n,
+        {
+            homeTab: i
+        } = mn(),
+        [a, o, s] = Ut(Kc),
+        [c, l] = (0, rl.useState)(!1),
+        d = rt(),
+        f = $t(),
+        p;
+    t[0] === d.search ? p = t[1] : (p = new URLSearchParams(d.search).get(ps), t[0] = d.search, t[1] = p);
+    let m = p === ms,
+        h = R(),
+        {
+            composerController: g
+        } = fi(),
+        _ = (0, rl.useRef)(!1),
+        v = gs(),
+        y;
+    t[2] !== f || t[3] !== m ? (y = {
+        enabled: () => m && !f,
+        redirectUrl: `/codex/cloud?codex_onboarding=code_review`,
+        source: `codex_cloud`
+    }, t[2] = f, t[3] = m, t[4] = y) : y = t[4], Gr(y), Lc(v), vs(v);
+    let b;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (b = [], t[5] = b) : b = t[5], (0, rl.useEffect)(Gc, b);
+    let x;
+    t[6] !== g || t[7] !== d.state?.focusComposer ? (x = () => {
+        let e = u(`1406552515`);
+        d.state?.focusComposer && !_.current && !e && (er(Kn(g)), _.current = !0)
+    }, t[6] = g, t[7] = d.state?.focusComposer, t[8] = x) : x = t[8];
+    let S = d.state?.focusComposer,
+        C;
+    t[9] !== g || t[10] !== S ? (C = [S, g], t[9] = g, t[10] = S, t[11] = C) : C = t[11], (0, rl.useEffect)(x, C);
+    let w, T;
+    t[12] === g ? (w = t[13], T = t[14]) : (w = () => {
+        let e = u(`1406552515`);
+        Yn(Kn(g), e ? `` : Ut.getState().promptDraft)
+    }, T = [g], t[12] = g, t[13] = w, t[14] = T), (0, rl.useEffect)(w, T);
+    let E, D;
+    t[15] !== g || t[16] !== a ? (E = () => pe(() => tr(g), Ge(e => {
+        a(Zn(e.doc) ? `` : nr(e.doc).content)
+    }, 1e3)), D = [g, a], t[15] = g, t[16] = a, t[17] = E, t[18] = D) : (E = t[17], D = t[18]), (0, rl.useEffect)(E, D);
+    let O, k;
+    t[19] !== g || t[20] !== d.search ? (O = () => {
+        let e = new URLSearchParams(d.search).get(`prompt`);
+        e && Yn(Kn(g), e)
+    }, k = [d.search, g], t[19] = g, t[20] = d.search, t[21] = O, t[22] = k) : (O = t[21], k = t[22]), (0, rl.useEffect)(O, k);
+    let A;
+    t[23] === d.search ? A = t[24] : (A = new URLSearchParams(d.search).get(`environment`), t[23] = d.search, t[24] = A);
+    let j = A,
+        M = !!j,
+        N;
+    t[25] === M ? N = t[26] : (N = {
+        enabled: M
+    }, t[25] = M, t[26] = N);
+    let {
+        data: P
+    } = Zt(j ?? ``, N), F, ee;
+    t[27] !== P || t[28] !== j || t[29] !== o ? (F = () => {
+        j && P?.id === j && o(j, Je(P))
+    }, ee = [j, P, o], t[27] = P, t[28] = j, t[29] = o, t[30] = F, t[31] = ee) : (F = t[30], ee = t[31]), (0, rl.useEffect)(F, ee);
+    let I, L;
+    t[32] !== d.search || t[33] !== s ? (I = () => {
+        let e = new URLSearchParams(d.search).get(`branch`);
+        e && s(e)
+    }, L = [d.search, s], t[32] = d.search, t[33] = s, t[34] = I, t[35] = L) : (I = t[34], L = t[35]), (0, rl.useEffect)(I, L);
+    let te = h?.isHipaaCompliantWorkspace,
+        ne;
+    t[36] !== g || t[37] !== i || t[38] !== a || t[39] !== te || t[40] !== r ? (ne = (0, $.jsx)(Xr, {
+        children: (0, $.jsx)(Jc, {
+            setPromptDraft: a,
+            setShowCreateEnvModal: l,
+            composerController: g,
+            homeTab: i,
+            showHipaaBanner: te,
+            showInlineOnboarding: r
+        })
+    }), t[36] = g, t[37] = i, t[38] = a, t[39] = te, t[40] = r, t[41] = ne) : ne = t[41];
+    let re;
+    t[42] === c ? re = t[43] : (re = c && (0, $.jsx)(gc, {
+        isOpen: c,
+        onClose: () => l(!1)
+    }), t[42] = c, t[43] = re);
+    let ie;
+    return t[44] !== g || t[45] !== ne || t[46] !== re ? (ie = (0, $.jsxs)(Jn, {
+        value: g,
+        children: [ne, re]
+    }), t[44] = g, t[45] = ne, t[46] = re, t[47] = ie) : ie = t[47], ie
+}
+
+function Gc() {
+    N().prefetchInfiniteQuery(on(`archived`))
+}
+
+function Kc(e) {
+    return [e.setPromptDraft, e.setEnvironmentId, e.setBranch]
+}
+
+function qc(e) {
+    "use forget";
+    let t = (0, nl.c)(1),
+        {
+            shouldShow: n
+        } = e;
+    if (!n) return null;
+    let r;
+    return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, $.jsx)(`div`, {
+        className: `mb-4 w-full px-3 md:px-0`,
+        children: (0, $.jsx)(Nt, {
+            message: (0, $.jsx)(B, {
+                id: `wham.home.hipaaWarning`,
+                defaultMessage: `Do not enter Protected Health Information (PHI) into Codex.`
+            })
+        })
+    }), t[0] = r) : r = t[0], r
+}
+
+function Jc(e) {
+    "use forget";
+    let t = (0, nl.c)(21),
+        {
+            state: n
+        } = Ii(),
+        [r, i] = (0, rl.useState)(!0),
+        a;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = e => {
+        let t = Ht(e);
+        if (t) {
+            let e = () => {
+                i(t.scrollTop === 0)
+            };
+            return t.addEventListener(`scroll`, e), e(), () => t.removeEventListener(`scroll`, e)
+        }
+    }, t[0] = a) : a = t[0];
+    let o = a,
+        s = Ut(Yc),
+        [c] = (0, rl.useState)(!!s),
+        l = r && s == null;
+    switch (n) {
+        case hi.Error:
+        case hi.Complete: {
+            let n;
+            return t[1] !== l || t[2] !== c || t[3] !== e ? (n = (0, $.jsx)(Zc, {
+                ...e,
+                scrollRef: o,
+                defaultExpanded: l,
+                hasLastViewTaskIdOnMount: c
+            }), t[1] = l, t[2] = c, t[3] = e, t[4] = n) : n = t[4], n
+        }
+        case hi.NoGithubConnection: {
+            let n;
+            return t[5] !== l || t[6] !== c || t[7] !== e ? (n = (0, $.jsx)(Qc, {
+                ...e,
+                scrollRef: o,
+                defaultExpanded: l,
+                hasLastViewTaskIdOnMount: c
+            }), t[5] = l, t[6] = c, t[7] = e, t[8] = n) : n = t[8], n
+        }
+        case hi.NoEnvironmentsCreated: {
+            let n;
+            return t[9] !== l || t[10] !== c || t[11] !== e ? (n = (0, $.jsx)(el, {
+                ...e,
+                scrollRef: o,
+                defaultExpanded: l,
+                hasLastViewTaskIdOnMount: c
+            }), t[9] = l, t[10] = c, t[11] = e, t[12] = n) : n = t[12], n
+        }
+        case hi.NoTasksCreated: {
+            let n;
+            return t[13] !== l || t[14] !== c || t[15] !== e ? (n = (0, $.jsx)(tl, {
+                ...e,
+                scrollRef: o,
+                defaultExpanded: l,
+                hasLastViewTaskIdOnMount: c
+            }), t[13] = l, t[14] = c, t[15] = e, t[16] = n) : n = t[16], n
+        }
+        case hi.Loading: {
+            let n;
+            return t[17] !== l || t[18] !== c || t[19] !== e ? (n = (0, $.jsx)(Zc, {
+                ...e,
+                scrollRef: o,
+                defaultExpanded: l,
+                hasLastViewTaskIdOnMount: c
+            }), t[17] = l, t[18] = c, t[19] = e, t[20] = n) : n = t[20], n
+        }
+    }
+}
+
+function Yc(e) {
+    return e.lastViewedTaskId
+}
+
+function Xc({
+    showWiderPage: e
+}) {
+    return `z-0 mx-auto flex w-full flex-col ${e?`md:w-[1280px] md:max-w-[calc(100vw-24px)]`:`md:w-3xl`}`
+}
+
+function Zc(e) {
+    "use forget";
+    let t = (0, nl.c)(29),
+        {
+            scrollRef: n,
+            hasLastViewTaskIdOnMount: r,
+            defaultExpanded: i,
+            setPromptDraft: a,
+            setShowCreateEnvModal: o,
+            composerController: s,
+            homeTab: c,
+            showHipaaBanner: l
+        } = e,
+        d;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = u(`1406552515`), t[0] = d) : d = t[0];
+    let f = d,
+        p, m;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (p = Xc({
+        showWiderPage: !1
+    }), m = (0, $.jsx)(di, {}), t[1] = p, t[2] = m) : (p = t[1], m = t[2]);
+    let h;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, $.jsx)(`h1`, {
+        className: `mb-4 pt-4 text-3xl font-normal 2xl:mb-8 2xl:pt-8 2xl:text-3xl [@media(max-height:550px)]:hidden`,
+        children: (0, $.jsx)(B, {
+            id: `wham.home.title`,
+            defaultMessage: `What should we code next?`
+        })
+    }), t[3] = h) : h = t[3];
+    let g;
+    t[4] === l ? g = t[5] : (g = (0, $.jsx)(qc, {
+        shouldShow: l
+    }), t[4] = l, t[5] = g);
+    let _ = r || f,
+        v = i ? !0 : void 0,
+        y;
+    t[6] !== s || t[7] !== a ? (y = () => {
+        $n(Kn(s)), a(``)
+    }, t[6] = s, t[7] = a, t[8] = y) : y = t[8];
+    let b;
+    t[9] === o ? b = t[10] : (b = () => o(!0), t[9] = o, t[10] = b);
+    let x;
+    t[11] !== _ || t[12] !== v || t[13] !== y || t[14] !== b ? (x = (0, $.jsx)(`div`, {
+        className: `w-full pt-px max-md:px-3`,
+        children: (0, $.jsx)(la, {
+            disabled: f,
+            children: (0, $.jsx)(ai, {
+                disableAutoFocus: _,
+                expanded: v,
+                isBigBoxMode: !f,
+                onSubmit: y,
+                onCreateEnvironment: b
+            })
+        })
+    }), t[11] = _, t[12] = v, t[13] = y, t[14] = b, t[15] = x) : x = t[15];
+    let S, C;
+    t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, $.jsx)(Ws, {}), C = (0, $.jsx)(no, {}), t[16] = S, t[17] = C) : (S = t[16], C = t[17]);
+    let w;
+    t[18] !== x || t[19] !== g ? (w = (0, $.jsxs)(`div`, {
+        className: `bg-token-bg-primary dark:bg-token-bg-secondary-surface sticky top-(--header-height) z-50 flex flex-col items-center`,
+        children: [h, g, x, S, C]
+    }), t[18] = x, t[19] = g, t[20] = w) : w = t[20];
+    let T;
+    t[21] === c ? T = t[22] : (T = (0, $.jsx)(Uo, {
+        homeTab: c
+    }), t[21] = c, t[22] = T);
+    let E;
+    t[23] !== w || t[24] !== T ? (E = (0, $.jsxs)(`div`, {
+        "data-testid": `wham-home-content-frame`,
+        className: p,
+        children: [m, w, T]
+    }), t[23] = w, t[24] = T, t[25] = E) : E = t[25];
+    let D;
+    return t[26] !== n || t[27] !== E ? (D = (0, $.jsx)(`div`, {
+        className: `min-h-0 flex-1`,
+        ref: n,
+        children: E
+    }), t[26] = n, t[27] = E, t[28] = D) : D = t[28], D
+}
+
+function Qc(e) {
+    "use forget";
+    let t = (0, nl.c)(31),
+        {
+            scrollRef: n,
+            setShowCreateEnvModal: r,
+            showHipaaBanner: i,
+            showInlineOnboarding: a
+        } = e,
+        [o] = (0, rl.useState)($c),
+        s;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (s = u(`1437685011`), t[0] = s) : s = t[0];
+    let c = s,
+        l;
+    t[1] === o.showWiderPage ? l = t[2] : (l = Xc({
+        showWiderPage: o.showWiderPage
+    }), t[1] = o.showWiderPage, t[2] = l);
+    let d;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, $.jsx)(di, {}), t[3] = d) : d = t[3];
+    let f;
+    t[4] !== o || t[5] !== a ? (f = a ? (0, $.jsx)(`div`, {
+        className: `mb-6 w-full pt-4 max-md:px-3 2xl:pt-8`,
+        children: (0, $.jsx)(Fa, {
+            codexPageImprovementsConfig: o
+        })
+    }) : (0, $.jsx)(`h1`, {
+        className: `mb-4 pt-4 text-3xl font-normal 2xl:mb-8 2xl:pt-8 2xl:text-3xl [@media(max-height:550px)]:hidden`,
+        children: (0, $.jsx)(B, {
+            id: `wham.home.title`,
+            defaultMessage: `What should we code next?`
+        })
+    }), t[4] = o, t[5] = a, t[6] = f) : f = t[6];
+    let p;
+    t[7] === i ? p = t[8] : (p = (0, $.jsx)(qc, {
+        shouldShow: i
+    }), t[7] = i, t[8] = p);
+    let m;
+    t[9] === r ? m = t[10] : (m = () => r(!0), t[9] = r, t[10] = m);
+    let h = !a,
+        g;
+    t[11] !== m || t[12] !== h ? (g = (0, $.jsx)(yi, {
+        isGitHubConnected: !1,
+        onClickCreateEnvironment: m,
+        showDownloadAppCta: h
+    }), t[11] = m, t[12] = h, t[13] = g) : g = t[13];
+    let _;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = c && (0, $.jsx)(ga, {}), t[14] = _) : _ = t[14];
+    let v;
+    t[15] === g ? v = t[16] : (v = (0, $.jsxs)(`div`, {
+        className: c ? `flex w-full flex-col gap-3 pt-px max-md:px-3 md:flex-row` : `w-full pt-px max-md:px-3`,
+        children: [g, _]
+    }), t[15] = g, t[16] = v);
+    let y;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, $.jsx)(Ws, {}), t[17] = y) : y = t[17];
+    let b;
+    t[18] === o.hideExamples ? b = t[19] : (b = !o.hideExamples && (0, $.jsxs)($.Fragment, {
+        children: [(0, $.jsx)(`div`, {
+            className: `w-full px-3 md:px-0`,
+            children: (0, $.jsx)(`div`, {
+                className: `text-token-text-primary ps-1 pt-6 pb-4 text-sm font-medium`,
+                children: (0, $.jsx)(B, {
+                    id: `wham.samples.title`,
+                    defaultMessage: `Examples of what Codex can do`
+                })
+            })
+        }), (0, $.jsx)(`div`, {
+            className: `w-full px-3 md:px-0`,
+            children: (0, $.jsx)(Xa, {})
+        })]
+    }), t[18] = o.hideExamples, t[19] = b);
+    let x;
+    t[20] !== v || t[21] !== b || t[22] !== f || t[23] !== p ? (x = (0, $.jsxs)(`div`, {
+        className: `bg-token-bg-primary dark:bg-token-bg-secondary-surface flex flex-col items-center`,
+        children: [f, p, v, y, b]
+    }), t[20] = v, t[21] = b, t[22] = f, t[23] = p, t[24] = x) : x = t[24];
+    let S;
+    t[25] !== x || t[26] !== l ? (S = (0, $.jsxs)(`div`, {
+        "data-testid": `wham-home-content-frame`,
+        className: l,
+        children: [d, x]
+    }), t[25] = x, t[26] = l, t[27] = S) : S = t[27];
+    let C;
+    return t[28] !== n || t[29] !== S ? (C = (0, $.jsx)(`div`, {
+        className: `min-h-0 flex-1`,
+        ref: n,
+        children: S
+    }), t[28] = n, t[29] = S, t[30] = C) : C = t[30], C
+}
+
+function $c() {
+    return ba()
+}
+
+function el(e) {
+    "use forget";
+    let t = (0, nl.c)(29),
+        {
+            scrollRef: n,
+            hasLastViewTaskIdOnMount: r,
+            defaultExpanded: i,
+            setPromptDraft: a,
+            composerController: o,
+            setShowCreateEnvModal: s,
+            homeTab: c,
+            showHipaaBanner: l
+        } = e,
+        d;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = u(`1406552515`), t[0] = d) : d = t[0];
+    let f = d,
+        p, m;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (p = Xc({
+        showWiderPage: !1
+    }), m = (0, $.jsx)(di, {}), t[1] = p, t[2] = m) : (p = t[1], m = t[2]);
+    let h;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, $.jsx)(`h1`, {
+        className: `mb-4 pt-4 text-3xl font-normal 2xl:mb-8 2xl:pt-8 2xl:text-3xl [@media(max-height:550px)]:hidden`,
+        children: (0, $.jsx)(B, {
+            id: `wham.home.title`,
+            defaultMessage: `What should we code next?`
+        })
+    }), t[3] = h) : h = t[3];
+    let g;
+    t[4] === l ? g = t[5] : (g = (0, $.jsx)(qc, {
+        shouldShow: l
+    }), t[4] = l, t[5] = g);
+    let _ = r || f,
+        v = i ? !0 : void 0,
+        y;
+    t[6] !== o || t[7] !== a ? (y = () => {
+        $n(Kn(o)), a(``)
+    }, t[6] = o, t[7] = a, t[8] = y) : y = t[8];
+    let b;
+    t[9] === s ? b = t[10] : (b = () => s(!0), t[9] = s, t[10] = b);
+    let x;
+    t[11] !== _ || t[12] !== v || t[13] !== y || t[14] !== b ? (x = (0, $.jsx)(`div`, {
+        className: `w-full pt-px max-md:px-3`,
+        children: (0, $.jsx)(ai, {
+            disableAutoFocus: _,
+            expanded: v,
+            isBigBoxMode: !f,
+            onSubmit: y,
+            onCreateEnvironment: b
+        })
+    }), t[11] = _, t[12] = v, t[13] = y, t[14] = b, t[15] = x) : x = t[15];
+    let S, C;
+    t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, $.jsx)(Ws, {}), C = (0, $.jsx)(no, {}), t[16] = S, t[17] = C) : (S = t[16], C = t[17]);
+    let w;
+    t[18] !== x || t[19] !== g ? (w = (0, $.jsxs)(`div`, {
+        className: `bg-token-bg-primary dark:bg-token-bg-secondary-surface sticky top-(--header-height) z-50 flex flex-col items-center`,
+        children: [h, g, x, S, C]
+    }), t[18] = x, t[19] = g, t[20] = w) : w = t[20];
+    let T;
+    t[21] === c ? T = t[22] : (T = (0, $.jsx)(Uo, {
+        homeTab: c
+    }), t[21] = c, t[22] = T);
+    let E;
+    t[23] !== w || t[24] !== T ? (E = (0, $.jsxs)(`div`, {
+        "data-testid": `wham-home-content-frame`,
+        className: p,
+        children: [m, w, T]
+    }), t[23] = w, t[24] = T, t[25] = E) : E = t[25];
+    let D;
+    return t[26] !== n || t[27] !== E ? (D = (0, $.jsx)(`div`, {
+        className: `min-h-0 flex-1`,
+        ref: n,
+        children: E
+    }), t[26] = n, t[27] = E, t[28] = D) : D = t[28], D
+}
+
+function tl(e) {
+    "use forget";
+    let t = (0, nl.c)(29),
+        {
+            scrollRef: n,
+            hasLastViewTaskIdOnMount: r,
+            defaultExpanded: i,
+            setPromptDraft: a,
+            setShowCreateEnvModal: o,
+            composerController: s,
+            homeTab: c,
+            showHipaaBanner: l
+        } = e,
+        d;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = u(`1406552515`), t[0] = d) : d = t[0];
+    let f = d,
+        p, m;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (p = Xc({
+        showWiderPage: !1
+    }), m = (0, $.jsx)(di, {}), t[1] = p, t[2] = m) : (p = t[1], m = t[2]);
+    let h;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, $.jsx)(`h1`, {
+        className: `mb-4 pt-4 text-3xl font-normal 2xl:mb-8 2xl:pt-8 2xl:text-3xl [@media(max-height:550px)]:hidden`,
+        children: (0, $.jsx)(B, {
+            id: `wham.home.title`,
+            defaultMessage: `What should we code next?`
+        })
+    }), t[3] = h) : h = t[3];
+    let g;
+    t[4] === l ? g = t[5] : (g = (0, $.jsx)(qc, {
+        shouldShow: l
+    }), t[4] = l, t[5] = g);
+    let _ = r || f,
+        v = i ? !0 : void 0,
+        y;
+    t[6] !== s || t[7] !== a ? (y = () => {
+        $n(Kn(s)), a(``)
+    }, t[6] = s, t[7] = a, t[8] = y) : y = t[8];
+    let b;
+    t[9] === o ? b = t[10] : (b = () => o(!0), t[9] = o, t[10] = b);
+    let x;
+    t[11] !== _ || t[12] !== v || t[13] !== y || t[14] !== b ? (x = (0, $.jsx)(`div`, {
+        className: `w-full pt-px max-md:px-3`,
+        children: (0, $.jsx)(la, {
+            disabled: f,
+            children: (0, $.jsx)(ai, {
+                disableAutoFocus: _,
+                expanded: v,
+                isBigBoxMode: !f,
+                onSubmit: y,
+                onCreateEnvironment: b
+            })
+        })
+    }), t[11] = _, t[12] = v, t[13] = y, t[14] = b, t[15] = x) : x = t[15];
+    let S, C;
+    t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, $.jsx)(Ws, {}), C = (0, $.jsx)(no, {}), t[16] = S, t[17] = C) : (S = t[16], C = t[17]);
+    let w;
+    t[18] !== x || t[19] !== g ? (w = (0, $.jsxs)(`div`, {
+        className: `bg-token-bg-primary dark:bg-token-bg-secondary-surface sticky top-(--header-height) z-50 flex flex-col items-center`,
+        children: [h, g, x, S, C]
+    }), t[18] = x, t[19] = g, t[20] = w) : w = t[20];
+    let T;
+    t[21] === c ? T = t[22] : (T = (0, $.jsx)(`div`, {
+        className: `w-full`,
+        children: (0, $.jsx)(Uo, {
+            homeTab: c
+        })
+    }), t[21] = c, t[22] = T);
+    let E;
+    t[23] !== w || t[24] !== T ? (E = (0, $.jsxs)(`div`, {
+        "data-testid": `wham-home-content-frame`,
+        className: p,
+        children: [m, w, T]
+    }), t[23] = w, t[24] = T, t[25] = E) : E = t[25];
+    let D;
+    return t[26] !== n || t[27] !== E ? (D = (0, $.jsx)(`div`, {
+        className: `min-h-0 flex-1`,
+        ref: n,
+        children: E
+    }), t[26] = n, t[27] = E, t[28] = D) : D = t[28], D
+}
+var nl, rl, $, il = e((() => {
+    nl = V(), ir(), qt(), Oe(), rn(), rr(), Ee(), qn(), Xn(), n(), Tt(), qr(), Ae(), k(), d(), l(), o(), xt(), _(), y(), da(), ii(), vi(), _a(), Yr(), Ca(), gr(), Ya(), $a(), uo(), Wo(), Zo(), Ys(), oc(), ui(), mi(), ht(), Li(), Ot(), Rt(), ei(), mr(), hr(), he(), hs(), Cc(), zc(), xs(), wt(), ft(), F(), rl = t(z()), U(), Xe(), pi(), $ = H()
+}));
+export {
+    il as n, Bc as t
+};
+//# sourceMappingURL=580eed57-bk8y7lpnk5o17txq.js.map

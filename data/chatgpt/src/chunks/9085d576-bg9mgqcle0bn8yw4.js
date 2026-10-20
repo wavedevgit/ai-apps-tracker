@@ -1,2 +1,14 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e){return`${n}${e}`}var n,r=e((()=>{n=`https://chatgpt.com/canvas/shared/`}));export{t as n,r,n as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e) {
+    return `${n}${e}`
+}
+var n, r = e((() => {
+    n = `https://chatgpt.com/canvas/shared/`
+}));
+export {
+    t as n, r, n as t
+};
 //# sourceMappingURL=9085d576-bg9mgqcle0bn8yw4.js.map

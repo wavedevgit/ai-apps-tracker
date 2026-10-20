@@ -1,0 +1,43 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    At as t,
+    J5 as n,
+    cn as r,
+    q5 as i
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Vn as a
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    c as o,
+    s
+} from "./31cec8d8-ejzahhq8v425zkie.js";
+
+function c({
+    className: e,
+    zIndexKey: t,
+    onClick: n
+}) {
+    return (0, l.jsx)(r.div, {
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: 1
+        },
+        exit: {
+            opacity: 0
+        },
+        className: i(`absolute inset-0`, e, s[t]),
+        onClick: n
+    })
+}
+var l, u = e((() => {
+    o(), n(), t(), l = a()
+}));
+export {
+    u as n, c as t
+};
+//# sourceMappingURL=b4b33d24-gd0r1cmrommij9va.js.map

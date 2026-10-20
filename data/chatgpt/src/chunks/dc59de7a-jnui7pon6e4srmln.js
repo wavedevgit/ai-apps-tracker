@@ -1,3 +1,954 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/2705a2d7-gr2aex3gkyikhagh.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-ed29bs6yiwucn7st.js","assets/2340486e-oc6d2eodbcrmxur3.js","assets/root-lelxp0l2.css","assets/conversation-small-l6tnsr2xfn2d55kk.js","assets/30901919-om7b3qf5hp4j9x4l.js","assets/c470f5ab-d0jxi6yggehv1yt2.js","assets/0e5afe53-goyw8fd3qndq8rq5.js","assets/conversation-small-ixfdle4i.css","assets/c2675c8c-fpv9s4kvd412dyap.js","assets/82782bc9-cz4jkhg31tycbqqf.js","assets/8b34dbc2-j8rcexxiltkm8ucr.js","assets/global-modals-lv5n3ujm.css"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Ant as n,Az as r,CI as i,Fot as a,G3 as o,I1 as s,Iot as c,J0 as l,JT as u,Ji as d,MI as f,Nnt as p,RU as m,Sw as h,Xi as g,Y0 as _,Y1 as v,Z0 as y,_R as b,d6 as x,e2 as S,hnt as C,jz as w,l6 as T,oit as E,pnt as D,qT as O,sit as k,t6 as A,ww as j,yR as M,zU as N}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as P,Ln as F,Nn as I,O as ee,Rn as L,Vn as R,Zt as te,cn as ne,ln as z,rn as re,s as ie,wn as ae,zn as oe}from"./2340486e-oc6d2eodbcrmxur3.js";import{$on as se,A6t as ce,T6t as le,crn as ue,drn as de,k6t as fe,lrn as pe,nsn as me}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{$d as he,Fc as ge,Gf as _e,Kf as ve,Lc as ye,Rc as be,Wf as xe,Xf as Se,Yf as Ce,ef as we,gn as Te,ln as Ee,qf as De,tf as Oe}from"./c2675c8c-fpv9s4kvd412dyap.js";import{i as B,r as ke}from"./cedb005c-kyp3f3i2lfwl209r.js";var Ae,je=e((()=>{_(),z(),Ae=l(()=>ne(()=>import(`./2705a2d7-gr2aex3gkyikhagh.js`).then(e=>e.WorkspaceSubscriptionPaymentSetup),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13])))}));function Me({currentAccount:e,entrypoint:t,workspaceId:n,sessionId:r,seatQuantity:i,priceInterval:a,billingCountry:o,billingCurrency:s,eventName:c,statsigEvent:l,eventId:u}){D.logValueEventWithStatsig({segmentEventName:c,statsigEventName:l,eventId:u,data:{...e?.subscriptionAnalyticsParams,entrypoint:t,workspaceId:n,sessionId:r,seatQuantity:i,priceInterval:a,billingCountry:o,billingCurrency:s}})}function Ne(e){let t=Fe(U,`started`,e);Me({...e,eventName:H,statsigEvent:U,eventId:t})}function Pe(e){let t=Fe(Le,`completed`,e);Me({...e,eventName:Ie,statsigEvent:Le,eventId:t})}function Fe(e,t,n){return D.logStructuredEvent(`ChatgptBusinessBillingFirstChatgptSeatPurchaseSession`,{legacyStatsigEventName:e,action:t===`started`?`CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_SESSION_ACTION_STARTED`:`CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_SESSION_ACTION_COMPLETED`,purchaseSessionId:n.sessionId,entryPoint:V[n.entrypoint],seatQuantity:p(n.seatQuantity),billingInterval:n.priceInterval===`year`?`CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_YEAR`:`CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_MONTH`,billingCountry:n.billingCountry??void 0,billingCurrency:n.billingCurrency??void 0})}var V,H,U,Ie,Le,Re=e((()=>{n(),C(),V={workspace_onboarding_admin_invite:`CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_WORKSPACE_ONBOARDING_ADMIN_INVITE`,workspace_identity_default_seat_type:`CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_WORKSPACE_IDENTITY_DEFAULT_SEAT_TYPE`,members_user_table:`CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_MEMBERS_USER_TABLE`,members_invites_table:`CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_MEMBERS_INVITES_TABLE`,members_invite_requests_table_edit_seat_type:`CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_MEMBERS_INVITE_REQUESTS_TABLE_EDIT_SEAT_TYPE`,members_invite_requests_table_accept_request:`CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_MEMBERS_INVITE_REQUESTS_TABLE_ACCEPT_REQUEST`,members_requests_accept_all:`CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_MEMBERS_REQUESTS_ACCEPT_ALL`},H=`ChatGPT Business: First ChatGPT Seat Purchase Session Started`,U=`chatgpt_business_first_chatgpt_seat_purchase_session_started`,Ie=`ChatGPT Business: First ChatGPT Seat Purchase Session Completed`,Le=`chatgpt_business_first_chatgpt_seat_purchase_session_completed`}));function ze(e){throw Error(`Unexpected workspace subscription preview result`)}async function Be({analyticsFlow:e,workspace:t,introducedDefaultSeatCount:n=0,entrypoint:r,onContinue:i}){if(!t||t.hasPaidSubscription()||!A(t.data.subscriptionStatus.planType))return e!=null&&B(e,{step:`capacity_evaluated`,capacityResult:`not_required`,paymentRequired:!1}),await i(),!0;if(!t.isOwnerOfAccount())return e!=null&&(B(e,{step:`capacity_evaluated`,capacityResult:`purchase_unavailable`}),B(e,{step:`action_failed`,actionFailureType:`permission_denied`,...e.affectedTargetCount==null?{}:{failedTargetCount:e.affectedTargetCount,successfulTargetCount:0}})),m().danger(K.ownerRequiredError,{toastId:`first_chatgpt_seat_purchase_owner_required`,loggingTitle:`First ChatGPT Seat Purchase: Owner required`,loggingDescription:K.ownerRequiredError.defaultMessage}),!1;let a=Math.max(f(),n);return e!=null&&B(e,{step:`capacity_evaluated`,capacityResult:`purchase_required`,additionalPaidSeatCounts:{default:a}}),await new Promise(n=>{let i=!1;S(Ve,{analyticsFlow:e,entrypoint:r,workspaceId:t.id,initialSeatQuantity:a,onComplete:e=>{i||(i=!0,n(e))}})})?(await i(),!0):!1}function Ve(e){"use forget";let t=(0,We.c)(129),{analyticsFlow:n,entrypoint:o,workspaceId:s,initialSeatQuantity:c,onComplete:l,onClose:u}=e,p=oe(),m=v(),g=M(),_,y,b,S;if(t[0]!==m||t[1]!==g?.id){S=g?.id??(k()?a().user?.id:void 0);let e;t[6]===m?e=t[7]:(e=m?.hasPaidSubscription(),t[6]=m,t[7]=e),_=e!==!0,y=ee,b=we({enabled:_,userId:S}),t[0]=m,t[1]=g?.id,t[2]=_,t[3]=y,t[4]=b,t[5]=S}else _=t[2],y=t[3],b=t[4],S=t[5];let{data:C,isLoading:w}=y(b),T=_&&S!=null&&w,{country:E}=de(),D;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(D={status:`configure`},t[8]=D):D=t[8];let[A,j]=(0,W.useState)(D),[N,P]=(0,W.useState)(!1),F;t[9]!==E||t[10]!==m?(F={country:E,currentAccount:m,location:`first-chatgpt-seat-purchase-modal`,pricingPlanIsTypeBusiness:!0},t[9]=E,t[10]=m,t[11]=F):F=t[11];let L=pe(F),[R,te]=(0,W.useState)(i.FLEXIBLE),ne;t[12]===Symbol.for(`react.memo_cache_sentinel`)?(ne=f(),t[12]=ne):ne=t[12];let[z,ie]=(0,W.useState)(Math.max(ne,c)),[ae,le]=(0,W.useState)(null),{data:ue,isLoading:me}=be(s),ye;t[13]===ue?ye=t[14]:(ye=ge(ue),t[13]=ue,t[14]=ye);let Se=ye,Ce=(0,W.useRef)(!1),Te=(0,W.useRef)(!1),Ee=(0,W.useRef)(!1),De=(0,W.useRef)(!1),Oe=(0,W.useRef)(!1),ke=(0,W.useRef)(0),je;t[15]===Symbol.for(`react.memo_cache_sentinel`)?(je=re(),t[15]=je):je=t[15];let Me=(0,W.useRef)(je),Fe=(0,W.useRef)(!1),V=ce(s),H=fe(s),U=L?.country,Ie=L?.currency,Le=L!=null,Re;t[16]!==Le||t[17]!==U||t[18]!==Ie?(Re={countryCode:U,currency:Ie,enabled:Le},t[16]=Le,t[17]=U,t[18]=Ie,t[19]=Re):Re=t[19];let{data:Be,isLoading:Ve,error:Ge}=x(Re),Ke=_&&C===!0,qe;bb0:{if(!L||!Be){qe=null;break bb0}let e;t[20]!==Be||t[21]!==Ke?(e=Ke?he(Be):Be,t[20]=Be,t[21]=Ke,t[22]=e):e=t[22];let n;t[23]!==L.currency||t[24]!==e?(n=ve(L.currency,e),t[23]=L.currency,t[24]=e,t[25]=n):n=t[25],qe=n}let q=qe,J=V.isPending,Y=J||H.isPending||N,Je;t[26]===l?Je=t[27]:(Je=e=>{Ce.current||(Ce.current=!0,l(e))},t[26]=l,t[27]=Je);let Ye=Je,Xe;t[28]!==n||t[29]!==Ye||t[30]!==Y||t[31]!==u?(Xe=()=>{Y||(n!=null&&De.current&&!Oe.current?(Te.current=!0,Oe.current=!0,B(n,{step:`purchase_canceled`,paymentAttemptNumber:ke.current===0?void 0:ke.current})):n!=null&&!De.current&&!Te.current&&(Te.current=!0,B(n,{step:`action_canceled`})),Ye(!1),u())},t[28]=n,t[29]=Ye,t[30]=Y,t[31]=u,t[32]=Xe):Xe=t[32];let Ze=Xe,Qe,$e;t[33]!==L||t[34]!==m||t[35]!==o||t[36]!==z||t[37]!==R||t[38]!==s?(Qe=()=>{Fe.current||L==null||(Fe.current=!0,Ne({currentAccount:m,entrypoint:o,workspaceId:s,sessionId:Me.current,seatQuantity:z,priceInterval:R,billingCountry:L.country,billingCurrency:L.currency}))},$e=[L,m,o,z,R,s],t[33]=L,t[34]=m,t[35]=o,t[36]=z,t[37]=R,t[38]=s,t[39]=Qe,t[40]=$e):(Qe=t[39],$e=t[40]),(0,W.useEffect)(Qe,$e);let et=A.status===`configure`?L?.currency:A.selection.billingDetails.currency,tt;t[41]!==p||t[42]!==et?(tt=e=>p.formatNumber(e,{style:`currency`,currency:et??`USD`,currencyDisplay:`narrowSymbol`,minimumFractionDigits:2,maximumFractionDigits:2}),t[41]=p,t[42]=et,t[43]=tt):tt=t[43];let nt=tt,rt;t[44]!==L?.currency||t[45]!==p?(rt=e=>p.formatNumber(e,{style:`currency`,currency:L?.currency??`USD`,currencyDisplay:`narrowSymbol`,trailingZeroDisplay:`stripIfInteger`}),t[44]=L?.currency,t[45]=p,t[46]=rt):rt=t[46],L?.currency;let it=rt,at;t[47]===p?at=t[48]:(at=e=>p.formatMessage(e===`preview`?K.genericPreviewError:K.genericCreateError),t[47]=p,t[48]=at);let ot=at,st;t[49]!==n||t[50]!==ot||t[51]!==J||t[52]!==V?(st=async e=>{if(!J){le(null);try{let t=await V.mutateAsync({seatQuantity:e.seatQuantity,priceInterval:e.selectedPlan,billingDetails:e.billingDetails});if(t.status===`payment_setup_required`){j({status:`payment_setup`,selection:e,publishableKey:t.publishable_key});return}t.status!==`ready`&&ze(t),j({status:`confirm`,selection:e,preview:t}),n!=null&&!De.current&&(De.current=!0,B(n,{step:`checkout_shown`,additionalPaidSeatCounts:{default:e.seatQuantity},paymentRequired:t.amount_due.amount>0,billingInterval:e.selectedPlan===i.ANNUAL?`yearly`:`monthly`}))}catch{n!=null&&B(n,{step:`action_attempt_failed`,actionFailureType:`checkout_preparation_failed`,...n.affectedTargetCount==null?{}:{failedTargetCount:n.affectedTargetCount,successfulTargetCount:0}}),le(ot(`preview`))}}},t[49]=n,t[50]=ot,t[51]=J,t[52]=V,t[53]=st):st=t[53];let ct=st,lt;t[54]!==L||t[55]!==ct||t[56]!==z||t[57]!==R?(lt=async()=>{L!=null&&await ct({seatQuantity:z,selectedPlan:R,billingDetails:L})},t[54]=L,t[55]=ct,t[56]=z,t[57]=R,t[58]=lt):lt=t[58];let ut=lt,dt;t[59]===Y?dt=t[60]:(dt=()=>{Y||(le(null),j({status:`configure`}))},t[59]=Y,t[60]=dt);let ft=dt,pt;t[61]!==n||t[62]!==A||t[63]!==H||t[64]!==m||t[65]!==o||t[66]!==Ye||t[67]!==ot||t[68]!==u||t[69]!==s?(pt=async()=>{if(A.status!==`confirm`)return;let{selection:e,preview:t}=A,{billingDetails:r}=e;le(null),ke.current+=1;let a=ke.current;n!=null&&B(n,{step:`purchase_submitted`,additionalPaidSeatCounts:{default:e.seatQuantity},paymentRequired:(t?.amount_due.amount??0)>0,paymentAttemptNumber:a,billingInterval:e.selectedPlan===i.ANNUAL?`yearly`:`monthly`});try{await H.mutateAsync({seatQuantity:e.seatQuantity,priceInterval:e.selectedPlan,billingDetails:r}),Pe({currentAccount:m,entrypoint:o,workspaceId:s,sessionId:Me.current,seatQuantity:e.seatQuantity,priceInterval:e.selectedPlan,billingCountry:r.country,billingCurrency:r.currency}),n!=null&&(Te.current=!0,Oe.current=!0,B(n,{step:`purchase_succeeded`,paymentAttemptNumber:a,billingInterval:e.selectedPlan===i.ANNUAL?`yearly`:`monthly`})),Ye(!0),u()}catch{n!=null&&B(n,{step:`purchase_failed`,paymentAttemptNumber:a,paymentFailureReason:`request_failed`,billingInterval:e.selectedPlan===i.ANNUAL?`yearly`:`monthly`}),le(ot(`create`))}},t[61]=n,t[62]=A,t[63]=H,t[64]=m,t[65]=o,t[66]=Ye,t[67]=ot,t[68]=u,t[69]=s,t[70]=pt):pt=t[70];let mt=pt,X=A.status===`confirm`,Z=L==null||Ve||T||me,Q=Ge!=null,ht,gt;t[71]!==n||t[72]!==Q||t[73]!==Z||t[74]!==q?(ht=()=>{n==null||Ee.current||!Q&&(Z||q!=null)||(Ee.current=!0,B(n,{actionFailureType:`checkout_preparation_failed`,...n.affectedTargetCount==null?{}:{failedTargetCount:n.affectedTargetCount,successfulTargetCount:0},step:`action_attempt_failed`}))},gt=[n,Q,Z,q],t[71]=n,t[72]=Q,t[73]=Z,t[74]=q,t[75]=ht,t[76]=gt):(ht=t[75],gt=t[76]),(0,W.useEffect)(ht,gt);let _t;t[77]!==A.status||t[78]!==p||t[79]!==X?(_t=p.formatMessage(X?K.reviewTitle:A.status===`payment_setup`?K.paymentSetupTitle:K.title),t[77]=A.status,t[78]=p,t[79]=X,t[80]=_t):_t=t[80];let vt;t[81]!==A.status||t[82]!==p||t[83]!==X?(vt=p.formatMessage(X?K.reviewDescription:A.status===`payment_setup`?K.paymentSetupDescription:K.description),t[81]=A.status,t[82]=p,t[83]=X,t[84]=vt):vt=t[84];let $;t[85]!==A.status||t[86]!==H||t[87]!==ut||t[88]!==mt||t[89]!==Q||t[90]!==J||t[91]!==Z||t[92]!==X||t[93]!==q?($=A.status===`payment_setup`?void 0:(0,G.jsx)(O,{color:`primary`,onClick:()=>{X?mt():ut()},loading:X?H.isPending:J,disabled:!X&&(Z||Q||q==null),children:(0,G.jsx)(I,{...X?K.subscribeAndPay:K.continueToReview})}),t[85]=A.status,t[86]=H,t[87]=ut,t[88]=mt,t[89]=Q,t[90]=J,t[91]=Z,t[92]=X,t[93]=q,t[94]=$):$=t[94];let yt=A.status===`configure`?Ze:ft,bt;t[95]===Symbol.for(`react.memo_cache_sentinel`)?(bt=(0,G.jsx)(I,{...K.back}),t[95]=bt):bt=t[95];let xt;t[96]!==Y||t[97]!==yt?(xt=(0,G.jsx)(O,{color:`secondary`,onClick:yt,disabled:Y,children:bt}),t[96]=Y,t[97]=yt,t[98]=xt):xt=t[98];let St;t[99]===ae?St=t[100]:(St=ae&&(0,G.jsx)(d,{type:`error`,isElevated:!1,content:ae}),t[99]=ae,t[100]=St);let Ct;t[101]!==Se||t[102]!==A.preview||t[103]!==A.publishableKey||t[104]!==A.selection||t[105]!==A.status||t[106]!==nt||t[107]!==it||t[108]!==Q||t[109]!==p||t[110]!==J||t[111]!==Z||t[112]!==ct||t[113]!==z||t[114]!==R||t[115]!==q||t[116]!==s?(Ct=A.status===`payment_setup`?(0,G.jsx)(Ae,{accountId:s,billingDetails:A.selection.billingDetails,publishableKey:A.publishableKey,onSubmittingChange:P,onComplete:()=>ct(A.selection)}):A.status===`confirm`?(0,G.jsx)(Ue,{previewData:A.preview,seatQuantity:A.selection.seatQuantity,selectedPlan:A.selection.selectedPlan,formatCurrencyAmount:nt}):Z?(0,G.jsx)(`div`,{className:`flex min-h-64 items-center justify-center`,children:(0,G.jsx)(r,{className:`icon-lg text-token-text-tertiary`})}):Q||q==null?(0,G.jsx)(d,{type:`error`,isElevated:!1,content:p.formatMessage(K.pricingLoadError)}):(0,G.jsxs)(G.Fragment,{children:[(0,G.jsxs)(se,{className:`grid gap-4 pt-3 disabled:cursor-not-allowed disabled:opacity-60 md:grid-cols-2`,value:R,disabled:J,onValueChange:e=>{e!==i.FLEXIBLE&&e!==i.ANNUAL||te(e)},children:[(0,G.jsx)(xe,{billingType:i.FLEXIBLE,...q.flexibleBillingPlan,selectedValue:R,hideDetails:!0}),(0,G.jsx)(xe,{billingType:i.ANNUAL,...q.annualBillingPlan,selectedValue:R,hideDetails:!0})]}),(0,G.jsx)(_e,{numSeats:z,minSeats:f(),maxSeats:Se,showEnterpriseUpsellOnLimit:!0,setNumSeats:ie,label:p.formatMessage(K.seatQuantityLabel),disabled:J}),(0,G.jsx)(He,{seatQuantity:z,selectedPlan:R,teamBillingInfo:q,formatCurrencyAmount:it})]}),t[101]=Se,t[102]=A.preview,t[103]=A.publishableKey,t[104]=A.selection,t[105]=A.status,t[106]=nt,t[107]=it,t[108]=Q,t[109]=p,t[110]=J,t[111]=Z,t[112]=ct,t[113]=z,t[114]=R,t[115]=q,t[116]=s,t[117]=Ct):Ct=t[117];let wt;t[118]!==St||t[119]!==Ct?(wt=(0,G.jsxs)(`div`,{className:`flex flex-col gap-5`,children:[St,Ct]}),t[118]=St,t[119]=Ct,t[120]=wt):wt=t[120];let Tt;return t[121]!==Ze||t[122]!==Y||t[123]!==_t||t[124]!==vt||t[125]!==$||t[126]!==xt||t[127]!==wt?(Tt=(0,G.jsx)(h,{testId:`modal-first-chatgpt-seat-purchase`,isOpen:!0,onClose:Ze,size:`custom`,className:`w-full max-w-[720px]`,showCloseButton:!0,shouldIgnoreClickOutside:Y,title:_t,description:vt,primaryButton:$,secondaryButton:xt,children:wt}),t[121]=Ze,t[122]=Y,t[123]=_t,t[124]=vt,t[125]=$,t[126]=xt,t[127]=wt,t[128]=Tt):Tt=t[128],Tt}function He(e){"use forget";let t=(0,We.c)(55),{seatQuantity:n,selectedPlan:r,teamBillingInfo:a,formatCurrencyAmount:o}=e,s=oe(),c=r===i.FLEXIBLE?a.flexibleBillingPlan:a.annualBillingPlan,l=Se[r],u=n*(r===i.ANNUAL?a.annualBillingPlan.monthlyCost*12:a.flexibleBillingPlan.monthlyCost),d=n*c.unitCost,f=u-d,p;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,G.jsx)(`span`,{className:`text-lg font-semibold`,children:(0,G.jsx)(I,{...K.summaryTitle})}),t[0]=p):p=t[0];let m;t[1]===l.name?m=t[2]:(m=(0,G.jsx)(`div`,{className:`font-medium`,children:(0,G.jsx)(I,{...l.name})}),t[1]=l.name,t[2]=m);let h;t[3]===n?h=t[4]:(h={numSeats:n},t[3]=n,t[4]=h);let g;t[5]!==l.breakdown||t[6]!==h?(g=(0,G.jsx)(`div`,{className:`text-token-text-secondary text-sm`,children:(0,G.jsx)(I,{...l.breakdown,values:h})}),t[5]=l.breakdown,t[6]=h,t[7]=g):g=t[7];let _;t[8]!==m||t[9]!==g?(_=(0,G.jsxs)(`div`,{children:[m,g]}),t[8]=m,t[9]=g,t[10]=_):_=t[10];let v;t[11]!==o||t[12]!==u?(v=o(u),t[11]=o,t[12]=u,t[13]=v):v=t[13];let y;t[14]===v?y=t[15]:(y=(0,G.jsx)(`div`,{className:`font-medium`,children:v}),t[14]=v,t[15]=y);let b;t[16]!==o||t[17]!==c.monthlyCost?(b=o(c.monthlyCost),t[16]=o,t[17]=c.monthlyCost,t[18]=b):b=t[18];let x;t[19]===b?x=t[20]:(x=(0,G.jsx)(`div`,{className:`text-token-text-secondary text-sm`,children:(0,G.jsx)(I,{...K.perSeatAmount,values:{amount:b}})}),t[19]=b,t[20]=x);let S;t[21]!==y||t[22]!==x?(S=(0,G.jsxs)(`div`,{className:`text-end`,children:[y,x]}),t[21]=y,t[22]=x,t[23]=S):S=t[23];let C;t[24]!==S||t[25]!==_?(C=(0,G.jsxs)(`div`,{className:`flex items-start justify-between gap-4`,children:[_,S]}),t[24]=S,t[25]=_,t[26]=C):C=t[26];let w;t[27]===Symbol.for(`react.memo_cache_sentinel`)?(w=(0,G.jsx)(`span`,{children:(0,G.jsx)(I,{...Ce.planDiscountLabel})}),t[27]=w):w=t[27];let T=f>0?`text-[#10A37F]`:void 0,E;t[28]!==f||t[29]!==o?(E=o(f),t[28]=f,t[29]=o,t[30]=E):E=t[30];let D;t[31]===E?D=t[32]:(D=(0,G.jsx)(I,{...K.negativeFormattedAmount,values:{amount:E}}),t[31]=E,t[32]=D);let O;t[33]!==T||t[34]!==D?(O=(0,G.jsxs)(`div`,{className:`text-token-text-secondary flex items-start justify-between gap-4`,children:[w,(0,G.jsx)(`span`,{className:T,children:D})]}),t[33]=T,t[34]=D,t[35]=O):O=t[35];let k;t[36]===Symbol.for(`react.memo_cache_sentinel`)?(k=(0,G.jsx)(`span`,{children:(0,G.jsx)(I,{...Ce.allPlansTotal})}),t[36]=k):k=t[36];let A;t[37]!==s||t[38]!==c.currencyCode?(A=s.formatMessage(c.currencyCode),t[37]=s,t[38]=c.currencyCode,t[39]=A):A=t[39];let j;t[40]!==o||t[41]!==d?(j=o(d),t[40]=o,t[41]=d,t[42]=j):j=t[42];let M;t[43]!==A||t[44]!==j?(M=(0,G.jsxs)(`div`,{className:`flex items-start justify-between gap-4 text-base font-medium`,children:[k,(0,G.jsx)(`span`,{children:(0,G.jsx)(I,{...K.currencyCodeWithAmount,values:{currencyCode:A,amount:j}})})]}),t[43]=A,t[44]=j,t[45]=M):M=t[45];let N;t[46]===l.billedToday?N=t[47]:(N=(0,G.jsx)(`span`,{className:`text-token-text-secondary text-sm`,children:(0,G.jsx)(I,{...l.billedToday})}),t[46]=l.billedToday,t[47]=N);let P;t[48]!==M||t[49]!==N?(P=(0,G.jsxs)(`div`,{className:`border-token-border-default flex flex-col gap-2 border-t pt-4`,children:[M,N]}),t[48]=M,t[49]=N,t[50]=P):P=t[50];let F;return t[51]!==C||t[52]!==O||t[53]!==P?(F=(0,G.jsxs)(`div`,{className:`border-token-border-default flex h-fit flex-col gap-4 rounded-2xl border p-5`,children:[p,C,O,P]}),t[51]=C,t[52]=O,t[53]=P,t[54]=F):F=t[54],F}function Ue(e){"use forget";let t=(0,We.c)(47),{previewData:n,seatQuantity:r,selectedPlan:a,formatCurrencyAmount:o}=e,s=oe(),c;t[0]!==s||t[1]!==a?(c=s.formatMessage(a===i.ANNUAL?K.annualSubscription:K.monthlySubscription),t[0]=s,t[1]=a,t[2]=c):c=t[2];let l;t[3]!==r||t[4]!==c?(l=(0,G.jsx)(`span`,{className:`font-semibold`,children:(0,G.jsx)(I,{...K.subscriptionLineItem,values:{seatCount:r,planName:c}})}),t[3]=r,t[4]=c,t[5]=l):l=t[5];let u=n.positive_line_item_total/100,d;t[6]!==o||t[7]!==u?(d=o(u),t[6]=o,t[7]=u,t[8]=d):d=t[8];let f;t[9]===d?f=t[10]:(f=(0,G.jsx)(`span`,{className:`font-semibold`,children:d}),t[9]=d,t[10]=f);let p;t[11]!==l||t[12]!==f?(p=(0,G.jsxs)(`div`,{className:`flex items-start justify-between gap-4`,children:[l,f]}),t[11]=l,t[12]=f,t[13]=p):p=t[13];let m=a===i.ANNUAL?K.billedAnnuallyStartingToday:K.billedMonthlyStartingToday,h;t[14]===m?h=t[15]:(h=(0,G.jsx)(`span`,{className:`text-token-text-secondary text-sm`,children:(0,G.jsx)(I,{...m})}),t[14]=m,t[15]=h);let g;t[16]!==p||t[17]!==h?(g=(0,G.jsxs)(`div`,{children:[p,h]}),t[16]=p,t[17]=h,t[18]=g):g=t[18];let _;t[19]===Symbol.for(`react.memo_cache_sentinel`)?(_=(0,G.jsx)(`span`,{className:`text-token-text-secondary text-sm`,children:(0,G.jsx)(I,{...K.subtotal})}),t[19]=_):_=t[19];let v=n.amount_due.amount_excluding_tax/100,y;t[20]!==o||t[21]!==v?(y=o(v),t[20]=o,t[21]=v,t[22]=y):y=t[22];let b;t[23]===y?b=t[24]:(b=(0,G.jsxs)(`div`,{className:`flex items-start justify-between gap-4`,children:[_,(0,G.jsx)(`span`,{className:`text-sm font-medium`,children:y})]}),t[23]=y,t[24]=b);let x;t[25]===Symbol.for(`react.memo_cache_sentinel`)?(x=(0,G.jsx)(`span`,{className:`text-token-text-secondary text-sm`,children:(0,G.jsx)(I,{...K.tax})}),t[25]=x):x=t[25];let S=n.amount_due.tax_amount/100,C;t[26]!==o||t[27]!==S?(C=o(S),t[26]=o,t[27]=S,t[28]=C):C=t[28];let w;t[29]===C?w=t[30]:(w=(0,G.jsxs)(`div`,{className:`flex items-start justify-between gap-4`,children:[x,(0,G.jsx)(`span`,{className:`text-sm font-medium`,children:C})]}),t[29]=C,t[30]=w);let T;t[31]===Symbol.for(`react.memo_cache_sentinel`)?(T=(0,G.jsx)(`span`,{className:`text-base font-medium`,children:(0,G.jsx)(I,{...K.totalDueToday})}),t[31]=T):T=t[31];let E=n.amount_due.amount/100,D;t[32]!==o||t[33]!==E?(D=o(E),t[32]=o,t[33]=E,t[34]=D):D=t[34];let O;t[35]===D?O=t[36]:(O=(0,G.jsxs)(`div`,{className:`border-token-border-default flex items-start justify-between gap-4 border-t pt-3`,children:[T,(0,G.jsx)(`span`,{className:`text-base font-medium`,children:D})]}),t[35]=D,t[36]=O);let k;t[37]!==b||t[38]!==w||t[39]!==O?(k=(0,G.jsxs)(`div`,{className:`border-token-border-default flex flex-col gap-3 rounded-2xl border p-4`,children:[b,w,O]}),t[37]=b,t[38]=w,t[39]=O,t[40]=k):k=t[40];let A;t[41]===n.default_payment_method?A=t[42]:(A=n.default_payment_method&&(0,G.jsx)(`div`,{className:`border-token-border-default rounded-2xl border p-4`,children:(0,G.jsx)(Ee,{defaultPaymentMethod:n.default_payment_method})}),t[41]=n.default_payment_method,t[42]=A);let j;return t[43]!==k||t[44]!==A||t[45]!==g?(j=(0,G.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[g,k,A]}),t[43]=k,t[44]=A,t[45]=g,t[46]=j):j=t[46],j}var We,W,G,K,Ge=e((()=>{We=ae(),je(),Re(),ke(),le(),u(),g(),j(),y(),Te(),De(),ye(),Oe(),ue(),w(),s(),b(),N(),E(),T(),o(),me(),c(),ie(),W=t(R()),L(),te(),G=P(),K=F({paymentSetupTitle:{id:`firstChatgptSeatPurchase.paymentSetupTitle`,defaultMessage:`Add payment details`},paymentSetupDescription:{id:`firstChatgptSeatPurchase.paymentSetupDescription`,defaultMessage:`Save your card and billing address to review your purchase.`},title:{id:`firstChatgptSeatPurchase.title`,defaultMessage:`Configure your ChatGPT plan details`},description:{id:`firstChatgptSeatPurchase.description`,defaultMessage:`ChatGPT seats are billed on a monthly or annual basis. After the initial billing cycle, you will only be charged for the seats you actively use. Billing occurs immediately.`},reviewTitle:{id:`firstChatgptSeatPurchase.reviewTitle`,defaultMessage:`Review your purchase`},reviewDescription:{id:`firstChatgptSeatPurchase.reviewDescription`,defaultMessage:`Review the subscription preview before creating your ChatGPT seat subscription.`},ownerRequiredError:{id:`firstChatgptSeatPurchase.ownerRequiredError`,defaultMessage:`ChatGPT seat purchase required: Please ask a workspace owner to complete this action.`},seatQuantityLabel:{id:`firstChatgptSeatPurchase.seatQuantityLabel`,defaultMessage:`Seats`},summaryTitle:{id:`firstChatgptSeatPurchase.summaryTitle`,defaultMessage:`Summary`},subscriptionLineItem:{id:`firstChatgptSeatPurchase.subscriptionLineItem`,defaultMessage:`{seatCount} × {planName}`},monthlySubscription:{id:`firstChatgptSeatPurchase.monthlySubscription`,defaultMessage:`Monthly subscription`},annualSubscription:{id:`firstChatgptSeatPurchase.annualSubscription`,defaultMessage:`Annual subscription`},totalDueToday:{id:`firstChatgptSeatPurchase.totalDueToday`,defaultMessage:`Total due today`},subtotal:{id:`firstChatgptSeatPurchase.subtotal`,defaultMessage:`Subtotal`},tax:{id:`firstChatgptSeatPurchase.tax`,defaultMessage:`Tax`},continueToReview:{id:`firstChatgptSeatPurchase.continueToReview`,defaultMessage:`Continue`},subscribeAndPay:{id:`firstChatgptSeatPurchase.subscribeAndPay`,defaultMessage:`Subscribe and pay`},back:{id:`firstChatgptSeatPurchase.back`,defaultMessage:`Back`},pricingLoadError:{id:`firstChatgptSeatPurchase.pricingLoadError`,defaultMessage:`Unable to load pricing details. Please try again.`},genericCreateError:{id:`firstChatgptSeatPurchase.genericCreateError`,defaultMessage:`We couldn’t complete your purchase. Please try again.`},genericPreviewError:{id:`firstChatgptSeatPurchase.genericPreviewError`,defaultMessage:`We couldn’t load your purchase summary. Please try again.`},billedMonthlyStartingToday:{id:`firstChatgptSeatPurchase.billedMonthlyStartingToday`,defaultMessage:`Billed monthly, starting today`},billedAnnuallyStartingToday:{id:`firstChatgptSeatPurchase.billedAnnuallyStartingToday`,defaultMessage:`Billed annually, starting today`},perSeatAmount:{id:`firstChatgptSeatPurchase.perSeatAmount`,defaultMessage:`{amount}/seat`},negativeFormattedAmount:{id:`firstChatgptSeatPurchase.negativeFormattedAmount`,defaultMessage:`-{amount}`},currencyCodeWithAmount:{id:`firstChatgptSeatPurchase.currencyCodeWithAmount`,defaultMessage:`{currencyCode} {amount}`}})}));export{Ge as n,Be as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/2705a2d7-gr2aex3gkyikhagh.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-ed29bs6yiwucn7st.js", "assets/2340486e-oc6d2eodbcrmxur3.js", "assets/root-lelxp0l2.css", "assets/conversation-small-l6tnsr2xfn2d55kk.js", "assets/30901919-om7b3qf5hp4j9x4l.js", "assets/c470f5ab-d0jxi6yggehv1yt2.js", "assets/0e5afe53-goyw8fd3qndq8rq5.js", "assets/conversation-small-ixfdle4i.css", "assets/c2675c8c-fpv9s4kvd412dyap.js", "assets/82782bc9-cz4jkhg31tycbqqf.js", "assets/8b34dbc2-j8rcexxiltkm8ucr.js", "assets/global-modals-lv5n3ujm.css"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ant as n,
+    Az as r,
+    CI as i,
+    Fot as a,
+    G3 as o,
+    I1 as s,
+    Iot as c,
+    J0 as l,
+    JT as u,
+    Ji as d,
+    MI as f,
+    Nnt as p,
+    RU as m,
+    Sw as h,
+    Xi as g,
+    Y0 as _,
+    Y1 as v,
+    Z0 as y,
+    _R as b,
+    d6 as x,
+    e2 as S,
+    hnt as C,
+    jz as w,
+    l6 as T,
+    oit as E,
+    pnt as D,
+    qT as O,
+    sit as k,
+    t6 as A,
+    ww as j,
+    yR as M,
+    zU as N
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as P,
+    Ln as F,
+    Nn as I,
+    O as ee,
+    Rn as L,
+    Vn as R,
+    Zt as te,
+    cn as ne,
+    ln as z,
+    rn as re,
+    s as ie,
+    wn as ae,
+    zn as oe
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    $on as se,
+    A6t as ce,
+    T6t as le,
+    crn as ue,
+    drn as de,
+    k6t as fe,
+    lrn as pe,
+    nsn as me
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    $d as he,
+    Fc as ge,
+    Gf as _e,
+    Kf as ve,
+    Lc as ye,
+    Rc as be,
+    Wf as xe,
+    Xf as Se,
+    Yf as Ce,
+    ef as we,
+    gn as Te,
+    ln as Ee,
+    qf as De,
+    tf as Oe
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+import {
+    i as B,
+    r as ke
+} from "./cedb005c-kyp3f3i2lfwl209r.js";
+var Ae, je = e((() => {
+    _(), z(), Ae = l(() => ne(() => import(`./2705a2d7-gr2aex3gkyikhagh.js`).then(e => e.WorkspaceSubscriptionPaymentSetup), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])))
+}));
+
+function Me({
+    currentAccount: e,
+    entrypoint: t,
+    workspaceId: n,
+    sessionId: r,
+    seatQuantity: i,
+    priceInterval: a,
+    billingCountry: o,
+    billingCurrency: s,
+    eventName: c,
+    statsigEvent: l,
+    eventId: u
+}) {
+    D.logValueEventWithStatsig({
+        segmentEventName: c,
+        statsigEventName: l,
+        eventId: u,
+        data: {
+            ...e?.subscriptionAnalyticsParams,
+            entrypoint: t,
+            workspaceId: n,
+            sessionId: r,
+            seatQuantity: i,
+            priceInterval: a,
+            billingCountry: o,
+            billingCurrency: s
+        }
+    })
+}
+
+function Ne(e) {
+    let t = Fe(U, `started`, e);
+    Me({
+        ...e,
+        eventName: H,
+        statsigEvent: U,
+        eventId: t
+    })
+}
+
+function Pe(e) {
+    let t = Fe(Le, `completed`, e);
+    Me({
+        ...e,
+        eventName: Ie,
+        statsigEvent: Le,
+        eventId: t
+    })
+}
+
+function Fe(e, t, n) {
+    return D.logStructuredEvent(`ChatgptBusinessBillingFirstChatgptSeatPurchaseSession`, {
+        legacyStatsigEventName: e,
+        action: t === `started` ? `CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_SESSION_ACTION_STARTED` : `CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_SESSION_ACTION_COMPLETED`,
+        purchaseSessionId: n.sessionId,
+        entryPoint: V[n.entrypoint],
+        seatQuantity: p(n.seatQuantity),
+        billingInterval: n.priceInterval === `year` ? `CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_YEAR` : `CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_MONTH`,
+        billingCountry: n.billingCountry ?? void 0,
+        billingCurrency: n.billingCurrency ?? void 0
+    })
+}
+var V, H, U, Ie, Le, Re = e((() => {
+    n(), C(), V = {
+        workspace_onboarding_admin_invite: `CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_WORKSPACE_ONBOARDING_ADMIN_INVITE`,
+        workspace_identity_default_seat_type: `CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_WORKSPACE_IDENTITY_DEFAULT_SEAT_TYPE`,
+        members_user_table: `CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_MEMBERS_USER_TABLE`,
+        members_invites_table: `CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_MEMBERS_INVITES_TABLE`,
+        members_invite_requests_table_edit_seat_type: `CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_MEMBERS_INVITE_REQUESTS_TABLE_EDIT_SEAT_TYPE`,
+        members_invite_requests_table_accept_request: `CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_MEMBERS_INVITE_REQUESTS_TABLE_ACCEPT_REQUEST`,
+        members_requests_accept_all: `CHATGPT_BUSINESS_BILLING_FIRST_SEAT_PURCHASE_ENTRY_POINT_MEMBERS_REQUESTS_ACCEPT_ALL`
+    }, H = `ChatGPT Business: First ChatGPT Seat Purchase Session Started`, U = `chatgpt_business_first_chatgpt_seat_purchase_session_started`, Ie = `ChatGPT Business: First ChatGPT Seat Purchase Session Completed`, Le = `chatgpt_business_first_chatgpt_seat_purchase_session_completed`
+}));
+
+function ze(e) {
+    throw Error(`Unexpected workspace subscription preview result`)
+}
+async function Be({
+    analyticsFlow: e,
+    workspace: t,
+    introducedDefaultSeatCount: n = 0,
+    entrypoint: r,
+    onContinue: i
+}) {
+    if (!t || t.hasPaidSubscription() || !A(t.data.subscriptionStatus.planType)) return e != null && B(e, {
+        step: `capacity_evaluated`,
+        capacityResult: `not_required`,
+        paymentRequired: !1
+    }), await i(), !0;
+    if (!t.isOwnerOfAccount()) return e != null && (B(e, {
+        step: `capacity_evaluated`,
+        capacityResult: `purchase_unavailable`
+    }), B(e, {
+        step: `action_failed`,
+        actionFailureType: `permission_denied`,
+        ...e.affectedTargetCount == null ? {} : {
+            failedTargetCount: e.affectedTargetCount,
+            successfulTargetCount: 0
+        }
+    })), m().danger(K.ownerRequiredError, {
+        toastId: `first_chatgpt_seat_purchase_owner_required`,
+        loggingTitle: `First ChatGPT Seat Purchase: Owner required`,
+        loggingDescription: K.ownerRequiredError.defaultMessage
+    }), !1;
+    let a = Math.max(f(), n);
+    return e != null && B(e, {
+        step: `capacity_evaluated`,
+        capacityResult: `purchase_required`,
+        additionalPaidSeatCounts: {
+            default: a
+        }
+    }), await new Promise(n => {
+        let i = !1;
+        S(Ve, {
+            analyticsFlow: e,
+            entrypoint: r,
+            workspaceId: t.id,
+            initialSeatQuantity: a,
+            onComplete: e => {
+                i || (i = !0, n(e))
+            }
+        })
+    }) ? (await i(), !0) : !1
+}
+
+function Ve(e) {
+    "use forget";
+    let t = (0, We.c)(129),
+        {
+            analyticsFlow: n,
+            entrypoint: o,
+            workspaceId: s,
+            initialSeatQuantity: c,
+            onComplete: l,
+            onClose: u
+        } = e,
+        p = oe(),
+        m = v(),
+        g = M(),
+        _, y, b, S;
+    if (t[0] !== m || t[1] !== g?.id) {
+        S = g?.id ?? (k() ? a().user?.id : void 0);
+        let e;
+        t[6] === m ? e = t[7] : (e = m?.hasPaidSubscription(), t[6] = m, t[7] = e), _ = e !== !0, y = ee, b = we({
+            enabled: _,
+            userId: S
+        }), t[0] = m, t[1] = g?.id, t[2] = _, t[3] = y, t[4] = b, t[5] = S
+    } else _ = t[2], y = t[3], b = t[4], S = t[5];
+    let {
+        data: C,
+        isLoading: w
+    } = y(b), T = _ && S != null && w, {
+        country: E
+    } = de(), D;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (D = {
+        status: `configure`
+    }, t[8] = D) : D = t[8];
+    let [A, j] = (0, W.useState)(D), [N, P] = (0, W.useState)(!1), F;
+    t[9] !== E || t[10] !== m ? (F = {
+        country: E,
+        currentAccount: m,
+        location: `first-chatgpt-seat-purchase-modal`,
+        pricingPlanIsTypeBusiness: !0
+    }, t[9] = E, t[10] = m, t[11] = F) : F = t[11];
+    let L = pe(F),
+        [R, te] = (0, W.useState)(i.FLEXIBLE),
+        ne;
+    t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (ne = f(), t[12] = ne) : ne = t[12];
+    let [z, ie] = (0, W.useState)(Math.max(ne, c)), [ae, le] = (0, W.useState)(null), {
+        data: ue,
+        isLoading: me
+    } = be(s), ye;
+    t[13] === ue ? ye = t[14] : (ye = ge(ue), t[13] = ue, t[14] = ye);
+    let Se = ye,
+        Ce = (0, W.useRef)(!1),
+        Te = (0, W.useRef)(!1),
+        Ee = (0, W.useRef)(!1),
+        De = (0, W.useRef)(!1),
+        Oe = (0, W.useRef)(!1),
+        ke = (0, W.useRef)(0),
+        je;
+    t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (je = re(), t[15] = je) : je = t[15];
+    let Me = (0, W.useRef)(je),
+        Fe = (0, W.useRef)(!1),
+        V = ce(s),
+        H = fe(s),
+        U = L?.country,
+        Ie = L?.currency,
+        Le = L != null,
+        Re;
+    t[16] !== Le || t[17] !== U || t[18] !== Ie ? (Re = {
+        countryCode: U,
+        currency: Ie,
+        enabled: Le
+    }, t[16] = Le, t[17] = U, t[18] = Ie, t[19] = Re) : Re = t[19];
+    let {
+        data: Be,
+        isLoading: Ve,
+        error: Ge
+    } = x(Re), Ke = _ && C === !0, qe;
+    bb0: {
+        if (!L || !Be) {
+            qe = null;
+            break bb0
+        }
+        let e;t[20] !== Be || t[21] !== Ke ? (e = Ke ? he(Be) : Be, t[20] = Be, t[21] = Ke, t[22] = e) : e = t[22];
+        let n;t[23] !== L.currency || t[24] !== e ? (n = ve(L.currency, e), t[23] = L.currency, t[24] = e, t[25] = n) : n = t[25],
+        qe = n
+    }
+    let q = qe,
+        J = V.isPending,
+        Y = J || H.isPending || N,
+        Je;
+    t[26] === l ? Je = t[27] : (Je = e => {
+        Ce.current || (Ce.current = !0, l(e))
+    }, t[26] = l, t[27] = Je);
+    let Ye = Je,
+        Xe;
+    t[28] !== n || t[29] !== Ye || t[30] !== Y || t[31] !== u ? (Xe = () => {
+        Y || (n != null && De.current && !Oe.current ? (Te.current = !0, Oe.current = !0, B(n, {
+            step: `purchase_canceled`,
+            paymentAttemptNumber: ke.current === 0 ? void 0 : ke.current
+        })) : n != null && !De.current && !Te.current && (Te.current = !0, B(n, {
+            step: `action_canceled`
+        })), Ye(!1), u())
+    }, t[28] = n, t[29] = Ye, t[30] = Y, t[31] = u, t[32] = Xe) : Xe = t[32];
+    let Ze = Xe,
+        Qe, $e;
+    t[33] !== L || t[34] !== m || t[35] !== o || t[36] !== z || t[37] !== R || t[38] !== s ? (Qe = () => {
+        Fe.current || L == null || (Fe.current = !0, Ne({
+            currentAccount: m,
+            entrypoint: o,
+            workspaceId: s,
+            sessionId: Me.current,
+            seatQuantity: z,
+            priceInterval: R,
+            billingCountry: L.country,
+            billingCurrency: L.currency
+        }))
+    }, $e = [L, m, o, z, R, s], t[33] = L, t[34] = m, t[35] = o, t[36] = z, t[37] = R, t[38] = s, t[39] = Qe, t[40] = $e) : (Qe = t[39], $e = t[40]), (0, W.useEffect)(Qe, $e);
+    let et = A.status === `configure` ? L?.currency : A.selection.billingDetails.currency,
+        tt;
+    t[41] !== p || t[42] !== et ? (tt = e => p.formatNumber(e, {
+        style: `currency`,
+        currency: et ?? `USD`,
+        currencyDisplay: `narrowSymbol`,
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    }), t[41] = p, t[42] = et, t[43] = tt) : tt = t[43];
+    let nt = tt,
+        rt;
+    t[44] !== L?.currency || t[45] !== p ? (rt = e => p.formatNumber(e, {
+        style: `currency`,
+        currency: L?.currency ?? `USD`,
+        currencyDisplay: `narrowSymbol`,
+        trailingZeroDisplay: `stripIfInteger`
+    }), t[44] = L?.currency, t[45] = p, t[46] = rt) : rt = t[46], L?.currency;
+    let it = rt,
+        at;
+    t[47] === p ? at = t[48] : (at = e => p.formatMessage(e === `preview` ? K.genericPreviewError : K.genericCreateError), t[47] = p, t[48] = at);
+    let ot = at,
+        st;
+    t[49] !== n || t[50] !== ot || t[51] !== J || t[52] !== V ? (st = async e => {
+        if (!J) {
+            le(null);
+            try {
+                let t = await V.mutateAsync({
+                    seatQuantity: e.seatQuantity,
+                    priceInterval: e.selectedPlan,
+                    billingDetails: e.billingDetails
+                });
+                if (t.status === `payment_setup_required`) {
+                    j({
+                        status: `payment_setup`,
+                        selection: e,
+                        publishableKey: t.publishable_key
+                    });
+                    return
+                }
+                t.status !== `ready` && ze(t), j({
+                    status: `confirm`,
+                    selection: e,
+                    preview: t
+                }), n != null && !De.current && (De.current = !0, B(n, {
+                    step: `checkout_shown`,
+                    additionalPaidSeatCounts: {
+                        default: e.seatQuantity
+                    },
+                    paymentRequired: t.amount_due.amount > 0,
+                    billingInterval: e.selectedPlan === i.ANNUAL ? `yearly` : `monthly`
+                }))
+            } catch {
+                n != null && B(n, {
+                    step: `action_attempt_failed`,
+                    actionFailureType: `checkout_preparation_failed`,
+                    ...n.affectedTargetCount == null ? {} : {
+                        failedTargetCount: n.affectedTargetCount,
+                        successfulTargetCount: 0
+                    }
+                }), le(ot(`preview`))
+            }
+        }
+    }, t[49] = n, t[50] = ot, t[51] = J, t[52] = V, t[53] = st) : st = t[53];
+    let ct = st,
+        lt;
+    t[54] !== L || t[55] !== ct || t[56] !== z || t[57] !== R ? (lt = async () => {
+        L != null && await ct({
+            seatQuantity: z,
+            selectedPlan: R,
+            billingDetails: L
+        })
+    }, t[54] = L, t[55] = ct, t[56] = z, t[57] = R, t[58] = lt) : lt = t[58];
+    let ut = lt,
+        dt;
+    t[59] === Y ? dt = t[60] : (dt = () => {
+        Y || (le(null), j({
+            status: `configure`
+        }))
+    }, t[59] = Y, t[60] = dt);
+    let ft = dt,
+        pt;
+    t[61] !== n || t[62] !== A || t[63] !== H || t[64] !== m || t[65] !== o || t[66] !== Ye || t[67] !== ot || t[68] !== u || t[69] !== s ? (pt = async () => {
+        if (A.status !== `confirm`) return;
+        let {
+            selection: e,
+            preview: t
+        } = A, {
+            billingDetails: r
+        } = e;
+        le(null), ke.current += 1;
+        let a = ke.current;
+        n != null && B(n, {
+            step: `purchase_submitted`,
+            additionalPaidSeatCounts: {
+                default: e.seatQuantity
+            },
+            paymentRequired: (t?.amount_due.amount ?? 0) > 0,
+            paymentAttemptNumber: a,
+            billingInterval: e.selectedPlan === i.ANNUAL ? `yearly` : `monthly`
+        });
+        try {
+            await H.mutateAsync({
+                seatQuantity: e.seatQuantity,
+                priceInterval: e.selectedPlan,
+                billingDetails: r
+            }), Pe({
+                currentAccount: m,
+                entrypoint: o,
+                workspaceId: s,
+                sessionId: Me.current,
+                seatQuantity: e.seatQuantity,
+                priceInterval: e.selectedPlan,
+                billingCountry: r.country,
+                billingCurrency: r.currency
+            }), n != null && (Te.current = !0, Oe.current = !0, B(n, {
+                step: `purchase_succeeded`,
+                paymentAttemptNumber: a,
+                billingInterval: e.selectedPlan === i.ANNUAL ? `yearly` : `monthly`
+            })), Ye(!0), u()
+        } catch {
+            n != null && B(n, {
+                step: `purchase_failed`,
+                paymentAttemptNumber: a,
+                paymentFailureReason: `request_failed`,
+                billingInterval: e.selectedPlan === i.ANNUAL ? `yearly` : `monthly`
+            }), le(ot(`create`))
+        }
+    }, t[61] = n, t[62] = A, t[63] = H, t[64] = m, t[65] = o, t[66] = Ye, t[67] = ot, t[68] = u, t[69] = s, t[70] = pt) : pt = t[70];
+    let mt = pt,
+        X = A.status === `confirm`,
+        Z = L == null || Ve || T || me,
+        Q = Ge != null,
+        ht, gt;
+    t[71] !== n || t[72] !== Q || t[73] !== Z || t[74] !== q ? (ht = () => {
+        n == null || Ee.current || !Q && (Z || q != null) || (Ee.current = !0, B(n, {
+            actionFailureType: `checkout_preparation_failed`,
+            ...n.affectedTargetCount == null ? {} : {
+                failedTargetCount: n.affectedTargetCount,
+                successfulTargetCount: 0
+            },
+            step: `action_attempt_failed`
+        }))
+    }, gt = [n, Q, Z, q], t[71] = n, t[72] = Q, t[73] = Z, t[74] = q, t[75] = ht, t[76] = gt) : (ht = t[75], gt = t[76]), (0, W.useEffect)(ht, gt);
+    let _t;
+    t[77] !== A.status || t[78] !== p || t[79] !== X ? (_t = p.formatMessage(X ? K.reviewTitle : A.status === `payment_setup` ? K.paymentSetupTitle : K.title), t[77] = A.status, t[78] = p, t[79] = X, t[80] = _t) : _t = t[80];
+    let vt;
+    t[81] !== A.status || t[82] !== p || t[83] !== X ? (vt = p.formatMessage(X ? K.reviewDescription : A.status === `payment_setup` ? K.paymentSetupDescription : K.description), t[81] = A.status, t[82] = p, t[83] = X, t[84] = vt) : vt = t[84];
+    let $;
+    t[85] !== A.status || t[86] !== H || t[87] !== ut || t[88] !== mt || t[89] !== Q || t[90] !== J || t[91] !== Z || t[92] !== X || t[93] !== q ? ($ = A.status === `payment_setup` ? void 0 : (0, G.jsx)(O, {
+        color: `primary`,
+        onClick: () => {
+            X ? mt() : ut()
+        },
+        loading: X ? H.isPending : J,
+        disabled: !X && (Z || Q || q == null),
+        children: (0, G.jsx)(I, {
+            ...X ? K.subscribeAndPay : K.continueToReview
+        })
+    }), t[85] = A.status, t[86] = H, t[87] = ut, t[88] = mt, t[89] = Q, t[90] = J, t[91] = Z, t[92] = X, t[93] = q, t[94] = $) : $ = t[94];
+    let yt = A.status === `configure` ? Ze : ft,
+        bt;
+    t[95] === Symbol.for(`react.memo_cache_sentinel`) ? (bt = (0, G.jsx)(I, {
+        ...K.back
+    }), t[95] = bt) : bt = t[95];
+    let xt;
+    t[96] !== Y || t[97] !== yt ? (xt = (0, G.jsx)(O, {
+        color: `secondary`,
+        onClick: yt,
+        disabled: Y,
+        children: bt
+    }), t[96] = Y, t[97] = yt, t[98] = xt) : xt = t[98];
+    let St;
+    t[99] === ae ? St = t[100] : (St = ae && (0, G.jsx)(d, {
+        type: `error`,
+        isElevated: !1,
+        content: ae
+    }), t[99] = ae, t[100] = St);
+    let Ct;
+    t[101] !== Se || t[102] !== A.preview || t[103] !== A.publishableKey || t[104] !== A.selection || t[105] !== A.status || t[106] !== nt || t[107] !== it || t[108] !== Q || t[109] !== p || t[110] !== J || t[111] !== Z || t[112] !== ct || t[113] !== z || t[114] !== R || t[115] !== q || t[116] !== s ? (Ct = A.status === `payment_setup` ? (0, G.jsx)(Ae, {
+        accountId: s,
+        billingDetails: A.selection.billingDetails,
+        publishableKey: A.publishableKey,
+        onSubmittingChange: P,
+        onComplete: () => ct(A.selection)
+    }) : A.status === `confirm` ? (0, G.jsx)(Ue, {
+        previewData: A.preview,
+        seatQuantity: A.selection.seatQuantity,
+        selectedPlan: A.selection.selectedPlan,
+        formatCurrencyAmount: nt
+    }) : Z ? (0, G.jsx)(`div`, {
+        className: `flex min-h-64 items-center justify-center`,
+        children: (0, G.jsx)(r, {
+            className: `icon-lg text-token-text-tertiary`
+        })
+    }) : Q || q == null ? (0, G.jsx)(d, {
+        type: `error`,
+        isElevated: !1,
+        content: p.formatMessage(K.pricingLoadError)
+    }) : (0, G.jsxs)(G.Fragment, {
+        children: [(0, G.jsxs)(se, {
+            className: `grid gap-4 pt-3 disabled:cursor-not-allowed disabled:opacity-60 md:grid-cols-2`,
+            value: R,
+            disabled: J,
+            onValueChange: e => {
+                e !== i.FLEXIBLE && e !== i.ANNUAL || te(e)
+            },
+            children: [(0, G.jsx)(xe, {
+                billingType: i.FLEXIBLE,
+                ...q.flexibleBillingPlan,
+                selectedValue: R,
+                hideDetails: !0
+            }), (0, G.jsx)(xe, {
+                billingType: i.ANNUAL,
+                ...q.annualBillingPlan,
+                selectedValue: R,
+                hideDetails: !0
+            })]
+        }), (0, G.jsx)(_e, {
+            numSeats: z,
+            minSeats: f(),
+            maxSeats: Se,
+            showEnterpriseUpsellOnLimit: !0,
+            setNumSeats: ie,
+            label: p.formatMessage(K.seatQuantityLabel),
+            disabled: J
+        }), (0, G.jsx)(He, {
+            seatQuantity: z,
+            selectedPlan: R,
+            teamBillingInfo: q,
+            formatCurrencyAmount: it
+        })]
+    }), t[101] = Se, t[102] = A.preview, t[103] = A.publishableKey, t[104] = A.selection, t[105] = A.status, t[106] = nt, t[107] = it, t[108] = Q, t[109] = p, t[110] = J, t[111] = Z, t[112] = ct, t[113] = z, t[114] = R, t[115] = q, t[116] = s, t[117] = Ct) : Ct = t[117];
+    let wt;
+    t[118] !== St || t[119] !== Ct ? (wt = (0, G.jsxs)(`div`, {
+        className: `flex flex-col gap-5`,
+        children: [St, Ct]
+    }), t[118] = St, t[119] = Ct, t[120] = wt) : wt = t[120];
+    let Tt;
+    return t[121] !== Ze || t[122] !== Y || t[123] !== _t || t[124] !== vt || t[125] !== $ || t[126] !== xt || t[127] !== wt ? (Tt = (0, G.jsx)(h, {
+        testId: `modal-first-chatgpt-seat-purchase`,
+        isOpen: !0,
+        onClose: Ze,
+        size: `custom`,
+        className: `w-full max-w-[720px]`,
+        showCloseButton: !0,
+        shouldIgnoreClickOutside: Y,
+        title: _t,
+        description: vt,
+        primaryButton: $,
+        secondaryButton: xt,
+        children: wt
+    }), t[121] = Ze, t[122] = Y, t[123] = _t, t[124] = vt, t[125] = $, t[126] = xt, t[127] = wt, t[128] = Tt) : Tt = t[128], Tt
+}
+
+function He(e) {
+    "use forget";
+    let t = (0, We.c)(55),
+        {
+            seatQuantity: n,
+            selectedPlan: r,
+            teamBillingInfo: a,
+            formatCurrencyAmount: o
+        } = e,
+        s = oe(),
+        c = r === i.FLEXIBLE ? a.flexibleBillingPlan : a.annualBillingPlan,
+        l = Se[r],
+        u = n * (r === i.ANNUAL ? a.annualBillingPlan.monthlyCost * 12 : a.flexibleBillingPlan.monthlyCost),
+        d = n * c.unitCost,
+        f = u - d,
+        p;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, G.jsx)(`span`, {
+        className: `text-lg font-semibold`,
+        children: (0, G.jsx)(I, {
+            ...K.summaryTitle
+        })
+    }), t[0] = p) : p = t[0];
+    let m;
+    t[1] === l.name ? m = t[2] : (m = (0, G.jsx)(`div`, {
+        className: `font-medium`,
+        children: (0, G.jsx)(I, {
+            ...l.name
+        })
+    }), t[1] = l.name, t[2] = m);
+    let h;
+    t[3] === n ? h = t[4] : (h = {
+        numSeats: n
+    }, t[3] = n, t[4] = h);
+    let g;
+    t[5] !== l.breakdown || t[6] !== h ? (g = (0, G.jsx)(`div`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, G.jsx)(I, {
+            ...l.breakdown,
+            values: h
+        })
+    }), t[5] = l.breakdown, t[6] = h, t[7] = g) : g = t[7];
+    let _;
+    t[8] !== m || t[9] !== g ? (_ = (0, G.jsxs)(`div`, {
+        children: [m, g]
+    }), t[8] = m, t[9] = g, t[10] = _) : _ = t[10];
+    let v;
+    t[11] !== o || t[12] !== u ? (v = o(u), t[11] = o, t[12] = u, t[13] = v) : v = t[13];
+    let y;
+    t[14] === v ? y = t[15] : (y = (0, G.jsx)(`div`, {
+        className: `font-medium`,
+        children: v
+    }), t[14] = v, t[15] = y);
+    let b;
+    t[16] !== o || t[17] !== c.monthlyCost ? (b = o(c.monthlyCost), t[16] = o, t[17] = c.monthlyCost, t[18] = b) : b = t[18];
+    let x;
+    t[19] === b ? x = t[20] : (x = (0, G.jsx)(`div`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, G.jsx)(I, {
+            ...K.perSeatAmount,
+            values: {
+                amount: b
+            }
+        })
+    }), t[19] = b, t[20] = x);
+    let S;
+    t[21] !== y || t[22] !== x ? (S = (0, G.jsxs)(`div`, {
+        className: `text-end`,
+        children: [y, x]
+    }), t[21] = y, t[22] = x, t[23] = S) : S = t[23];
+    let C;
+    t[24] !== S || t[25] !== _ ? (C = (0, G.jsxs)(`div`, {
+        className: `flex items-start justify-between gap-4`,
+        children: [_, S]
+    }), t[24] = S, t[25] = _, t[26] = C) : C = t[26];
+    let w;
+    t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (w = (0, G.jsx)(`span`, {
+        children: (0, G.jsx)(I, {
+            ...Ce.planDiscountLabel
+        })
+    }), t[27] = w) : w = t[27];
+    let T = f > 0 ? `text-[#10A37F]` : void 0,
+        E;
+    t[28] !== f || t[29] !== o ? (E = o(f), t[28] = f, t[29] = o, t[30] = E) : E = t[30];
+    let D;
+    t[31] === E ? D = t[32] : (D = (0, G.jsx)(I, {
+        ...K.negativeFormattedAmount,
+        values: {
+            amount: E
+        }
+    }), t[31] = E, t[32] = D);
+    let O;
+    t[33] !== T || t[34] !== D ? (O = (0, G.jsxs)(`div`, {
+        className: `text-token-text-secondary flex items-start justify-between gap-4`,
+        children: [w, (0, G.jsx)(`span`, {
+            className: T,
+            children: D
+        })]
+    }), t[33] = T, t[34] = D, t[35] = O) : O = t[35];
+    let k;
+    t[36] === Symbol.for(`react.memo_cache_sentinel`) ? (k = (0, G.jsx)(`span`, {
+        children: (0, G.jsx)(I, {
+            ...Ce.allPlansTotal
+        })
+    }), t[36] = k) : k = t[36];
+    let A;
+    t[37] !== s || t[38] !== c.currencyCode ? (A = s.formatMessage(c.currencyCode), t[37] = s, t[38] = c.currencyCode, t[39] = A) : A = t[39];
+    let j;
+    t[40] !== o || t[41] !== d ? (j = o(d), t[40] = o, t[41] = d, t[42] = j) : j = t[42];
+    let M;
+    t[43] !== A || t[44] !== j ? (M = (0, G.jsxs)(`div`, {
+        className: `flex items-start justify-between gap-4 text-base font-medium`,
+        children: [k, (0, G.jsx)(`span`, {
+            children: (0, G.jsx)(I, {
+                ...K.currencyCodeWithAmount,
+                values: {
+                    currencyCode: A,
+                    amount: j
+                }
+            })
+        })]
+    }), t[43] = A, t[44] = j, t[45] = M) : M = t[45];
+    let N;
+    t[46] === l.billedToday ? N = t[47] : (N = (0, G.jsx)(`span`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, G.jsx)(I, {
+            ...l.billedToday
+        })
+    }), t[46] = l.billedToday, t[47] = N);
+    let P;
+    t[48] !== M || t[49] !== N ? (P = (0, G.jsxs)(`div`, {
+        className: `border-token-border-default flex flex-col gap-2 border-t pt-4`,
+        children: [M, N]
+    }), t[48] = M, t[49] = N, t[50] = P) : P = t[50];
+    let F;
+    return t[51] !== C || t[52] !== O || t[53] !== P ? (F = (0, G.jsxs)(`div`, {
+        className: `border-token-border-default flex h-fit flex-col gap-4 rounded-2xl border p-5`,
+        children: [p, C, O, P]
+    }), t[51] = C, t[52] = O, t[53] = P, t[54] = F) : F = t[54], F
+}
+
+function Ue(e) {
+    "use forget";
+    let t = (0, We.c)(47),
+        {
+            previewData: n,
+            seatQuantity: r,
+            selectedPlan: a,
+            formatCurrencyAmount: o
+        } = e,
+        s = oe(),
+        c;
+    t[0] !== s || t[1] !== a ? (c = s.formatMessage(a === i.ANNUAL ? K.annualSubscription : K.monthlySubscription), t[0] = s, t[1] = a, t[2] = c) : c = t[2];
+    let l;
+    t[3] !== r || t[4] !== c ? (l = (0, G.jsx)(`span`, {
+        className: `font-semibold`,
+        children: (0, G.jsx)(I, {
+            ...K.subscriptionLineItem,
+            values: {
+                seatCount: r,
+                planName: c
+            }
+        })
+    }), t[3] = r, t[4] = c, t[5] = l) : l = t[5];
+    let u = n.positive_line_item_total / 100,
+        d;
+    t[6] !== o || t[7] !== u ? (d = o(u), t[6] = o, t[7] = u, t[8] = d) : d = t[8];
+    let f;
+    t[9] === d ? f = t[10] : (f = (0, G.jsx)(`span`, {
+        className: `font-semibold`,
+        children: d
+    }), t[9] = d, t[10] = f);
+    let p;
+    t[11] !== l || t[12] !== f ? (p = (0, G.jsxs)(`div`, {
+        className: `flex items-start justify-between gap-4`,
+        children: [l, f]
+    }), t[11] = l, t[12] = f, t[13] = p) : p = t[13];
+    let m = a === i.ANNUAL ? K.billedAnnuallyStartingToday : K.billedMonthlyStartingToday,
+        h;
+    t[14] === m ? h = t[15] : (h = (0, G.jsx)(`span`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, G.jsx)(I, {
+            ...m
+        })
+    }), t[14] = m, t[15] = h);
+    let g;
+    t[16] !== p || t[17] !== h ? (g = (0, G.jsxs)(`div`, {
+        children: [p, h]
+    }), t[16] = p, t[17] = h, t[18] = g) : g = t[18];
+    let _;
+    t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = (0, G.jsx)(`span`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, G.jsx)(I, {
+            ...K.subtotal
+        })
+    }), t[19] = _) : _ = t[19];
+    let v = n.amount_due.amount_excluding_tax / 100,
+        y;
+    t[20] !== o || t[21] !== v ? (y = o(v), t[20] = o, t[21] = v, t[22] = y) : y = t[22];
+    let b;
+    t[23] === y ? b = t[24] : (b = (0, G.jsxs)(`div`, {
+        className: `flex items-start justify-between gap-4`,
+        children: [_, (0, G.jsx)(`span`, {
+            className: `text-sm font-medium`,
+            children: y
+        })]
+    }), t[23] = y, t[24] = b);
+    let x;
+    t[25] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, G.jsx)(`span`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, G.jsx)(I, {
+            ...K.tax
+        })
+    }), t[25] = x) : x = t[25];
+    let S = n.amount_due.tax_amount / 100,
+        C;
+    t[26] !== o || t[27] !== S ? (C = o(S), t[26] = o, t[27] = S, t[28] = C) : C = t[28];
+    let w;
+    t[29] === C ? w = t[30] : (w = (0, G.jsxs)(`div`, {
+        className: `flex items-start justify-between gap-4`,
+        children: [x, (0, G.jsx)(`span`, {
+            className: `text-sm font-medium`,
+            children: C
+        })]
+    }), t[29] = C, t[30] = w);
+    let T;
+    t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, G.jsx)(`span`, {
+        className: `text-base font-medium`,
+        children: (0, G.jsx)(I, {
+            ...K.totalDueToday
+        })
+    }), t[31] = T) : T = t[31];
+    let E = n.amount_due.amount / 100,
+        D;
+    t[32] !== o || t[33] !== E ? (D = o(E), t[32] = o, t[33] = E, t[34] = D) : D = t[34];
+    let O;
+    t[35] === D ? O = t[36] : (O = (0, G.jsxs)(`div`, {
+        className: `border-token-border-default flex items-start justify-between gap-4 border-t pt-3`,
+        children: [T, (0, G.jsx)(`span`, {
+            className: `text-base font-medium`,
+            children: D
+        })]
+    }), t[35] = D, t[36] = O);
+    let k;
+    t[37] !== b || t[38] !== w || t[39] !== O ? (k = (0, G.jsxs)(`div`, {
+        className: `border-token-border-default flex flex-col gap-3 rounded-2xl border p-4`,
+        children: [b, w, O]
+    }), t[37] = b, t[38] = w, t[39] = O, t[40] = k) : k = t[40];
+    let A;
+    t[41] === n.default_payment_method ? A = t[42] : (A = n.default_payment_method && (0, G.jsx)(`div`, {
+        className: `border-token-border-default rounded-2xl border p-4`,
+        children: (0, G.jsx)(Ee, {
+            defaultPaymentMethod: n.default_payment_method
+        })
+    }), t[41] = n.default_payment_method, t[42] = A);
+    let j;
+    return t[43] !== k || t[44] !== A || t[45] !== g ? (j = (0, G.jsxs)(`div`, {
+        className: `flex flex-col gap-4`,
+        children: [g, k, A]
+    }), t[43] = k, t[44] = A, t[45] = g, t[46] = j) : j = t[46], j
+}
+var We, W, G, K, Ge = e((() => {
+    We = ae(), je(), Re(), ke(), le(), u(), g(), j(), y(), Te(), De(), ye(), Oe(), ue(), w(), s(), b(), N(), E(), T(), o(), me(), c(), ie(), W = t(R()), L(), te(), G = P(), K = F({
+        paymentSetupTitle: {
+            id: `firstChatgptSeatPurchase.paymentSetupTitle`,
+            defaultMessage: `Add payment details`
+        },
+        paymentSetupDescription: {
+            id: `firstChatgptSeatPurchase.paymentSetupDescription`,
+            defaultMessage: `Save your card and billing address to review your purchase.`
+        },
+        title: {
+            id: `firstChatgptSeatPurchase.title`,
+            defaultMessage: `Configure your ChatGPT plan details`
+        },
+        description: {
+            id: `firstChatgptSeatPurchase.description`,
+            defaultMessage: `ChatGPT seats are billed on a monthly or annual basis. After the initial billing cycle, you will only be charged for the seats you actively use. Billing occurs immediately.`
+        },
+        reviewTitle: {
+            id: `firstChatgptSeatPurchase.reviewTitle`,
+            defaultMessage: `Review your purchase`
+        },
+        reviewDescription: {
+            id: `firstChatgptSeatPurchase.reviewDescription`,
+            defaultMessage: `Review the subscription preview before creating your ChatGPT seat subscription.`
+        },
+        ownerRequiredError: {
+            id: `firstChatgptSeatPurchase.ownerRequiredError`,
+            defaultMessage: `ChatGPT seat purchase required: Please ask a workspace owner to complete this action.`
+        },
+        seatQuantityLabel: {
+            id: `firstChatgptSeatPurchase.seatQuantityLabel`,
+            defaultMessage: `Seats`
+        },
+        summaryTitle: {
+            id: `firstChatgptSeatPurchase.summaryTitle`,
+            defaultMessage: `Summary`
+        },
+        subscriptionLineItem: {
+            id: `firstChatgptSeatPurchase.subscriptionLineItem`,
+            defaultMessage: `{seatCount} × {planName}`
+        },
+        monthlySubscription: {
+            id: `firstChatgptSeatPurchase.monthlySubscription`,
+            defaultMessage: `Monthly subscription`
+        },
+        annualSubscription: {
+            id: `firstChatgptSeatPurchase.annualSubscription`,
+            defaultMessage: `Annual subscription`
+        },
+        totalDueToday: {
+            id: `firstChatgptSeatPurchase.totalDueToday`,
+            defaultMessage: `Total due today`
+        },
+        subtotal: {
+            id: `firstChatgptSeatPurchase.subtotal`,
+            defaultMessage: `Subtotal`
+        },
+        tax: {
+            id: `firstChatgptSeatPurchase.tax`,
+            defaultMessage: `Tax`
+        },
+        continueToReview: {
+            id: `firstChatgptSeatPurchase.continueToReview`,
+            defaultMessage: `Continue`
+        },
+        subscribeAndPay: {
+            id: `firstChatgptSeatPurchase.subscribeAndPay`,
+            defaultMessage: `Subscribe and pay`
+        },
+        back: {
+            id: `firstChatgptSeatPurchase.back`,
+            defaultMessage: `Back`
+        },
+        pricingLoadError: {
+            id: `firstChatgptSeatPurchase.pricingLoadError`,
+            defaultMessage: `Unable to load pricing details. Please try again.`
+        },
+        genericCreateError: {
+            id: `firstChatgptSeatPurchase.genericCreateError`,
+            defaultMessage: `We couldn’t complete your purchase. Please try again.`
+        },
+        genericPreviewError: {
+            id: `firstChatgptSeatPurchase.genericPreviewError`,
+            defaultMessage: `We couldn’t load your purchase summary. Please try again.`
+        },
+        billedMonthlyStartingToday: {
+            id: `firstChatgptSeatPurchase.billedMonthlyStartingToday`,
+            defaultMessage: `Billed monthly, starting today`
+        },
+        billedAnnuallyStartingToday: {
+            id: `firstChatgptSeatPurchase.billedAnnuallyStartingToday`,
+            defaultMessage: `Billed annually, starting today`
+        },
+        perSeatAmount: {
+            id: `firstChatgptSeatPurchase.perSeatAmount`,
+            defaultMessage: `{amount}/seat`
+        },
+        negativeFormattedAmount: {
+            id: `firstChatgptSeatPurchase.negativeFormattedAmount`,
+            defaultMessage: `-{amount}`
+        },
+        currencyCodeWithAmount: {
+            id: `firstChatgptSeatPurchase.currencyCodeWithAmount`,
+            defaultMessage: `{currencyCode} {amount}`
+        }
+    })
+}));
+export {
+    Ge as n, Be as t
+};
 //# sourceMappingURL=dc59de7a-jnui7pon6e4srmln.js.map

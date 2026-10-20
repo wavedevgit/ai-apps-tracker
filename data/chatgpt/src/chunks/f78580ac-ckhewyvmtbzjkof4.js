@@ -1,2 +1,36 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{N as t,s as n,wn as r}from"./2340486e-oc6d2eodbcrmxur3.js";import{HIt as i,UIt as a,VIt as o}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{i as s,n as c,o as l}from"./cfc49363-f90gzl4e7rh1zwtb.js";var u,d,f,p,m,h=e((()=>{u=r(),c(),a(),n(),d=e=>`/agents/a/${encodeURIComponent(e)}`,f=e=>`/agents/studio/edit/${encodeURIComponent(e)}`,p=(e,t)=>e.prefetchQuery(i(t)),m=()=>{"use forget";let e=(0,u.c)(3),n=t(),r=l(),i;return e[0]!==r||e[1]!==n?(i=(e,t)=>{let i=s(t),a=[p(n,e)];return i.length===0||a.push(n.prefetchQuery(o(e)),r(i)),Promise.allSettled(a)},e[0]=r,e[1]=n,e[2]=i):i=e[2],i}}));export{m as a,p as i,d as n,h as r,f as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    N as t,
+    s as n,
+    wn as r
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    HIt as i,
+    UIt as a,
+    VIt as o
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    i as s,
+    n as c,
+    o as l
+} from "./cfc49363-f90gzl4e7rh1zwtb.js";
+var u, d, f, p, m, h = e((() => {
+    u = r(), c(), a(), n(), d = e => `/agents/a/${encodeURIComponent(e)}`, f = e => `/agents/studio/edit/${encodeURIComponent(e)}`, p = (e, t) => e.prefetchQuery(i(t)), m = () => {
+        "use forget";
+        let e = (0, u.c)(3),
+            n = t(),
+            r = l(),
+            i;
+        return e[0] !== r || e[1] !== n ? (i = (e, t) => {
+            let i = s(t),
+                a = [p(n, e)];
+            return i.length === 0 || a.push(n.prefetchQuery(o(e)), r(i)), Promise.allSettled(a)
+        }, e[0] = r, e[1] = n, e[2] = i) : i = e[2], i
+    }
+}));
+export {
+    m as a, p as i, d as n, h as r, f as t
+};
 //# sourceMappingURL=f78580ac-ckhewyvmtbzjkof4.js.map

@@ -1,2 +1,158 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{$G as t,F7 as n,I1 as r,RU as i,Y1 as a,j7 as o,nK as s,zU as c}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as l,Ln as u,N as d,Rn as f,p,s as m,wn as h,zn as g}from"./2340486e-oc6d2eodbcrmxur3.js";import{n as _,t as v}from"./dc59de7a-jnui7pon6e4srmln.js";import{o as y,r as b,s as x}from"./1212b029-djaou2nlruvyoto1.js";import{n as S,t as C}from"./403cbcf1-c6b88x1eup7bg5kk.js";function w(e){"use forget";let t=(0,E.c)(35),{workspaceId:n,includeUsageBased:r,includeProlite:c,disabled:l,triggerClassName:u,contentClassName:f,triggerId:m,ariaLabelledBy:h,analyticsSurface:_,firstChatgptSeatPurchaseEntrypoint:y}=e,C=l!==void 0&&l,w=g(),k=d(),A=a(),{data:j,isPending:M}=s(n),N;t[0]===n?N=t[1]:(N=e=>{let{defaultSeatType:t}=e;return o.safePost(`/accounts/{account_id}/settings/default_seat_type`,{parameters:{path:{account_id:n}},requestBody:{value:t}})},t[0]=n,t[1]=N);let P;t[2]!==w||t[3]!==k||t[4]!==n?(P=()=>{k.invalidateQueries({queryKey:[`workspace-settings`,n]}),i().success(w.formatMessage(O.defaultSeatTypeUpdatedToast),{duration:3})},t[2]=w,t[3]=k,t[4]=n,t[5]=P):P=t[5];let F;t[6]!==N||t[7]!==P?(F={mutationFn:N,onSuccess:P,onError:T},t[6]=N,t[7]=P,t[8]=F):F=t[8];let{mutateAsync:I,isPending:L}=p(F),R=j?.default_seat_type,z;t[9]!==c||t[10]!==r||t[11]!==R?(z=x(R,{includeUsageBased:r,includeProlite:c,preserveProlite:!0}),t[9]=c,t[10]=r,t[11]=R,t[12]=z):z=t[12];let B=z,V=C||M||L,H;t[13]!==_||t[14]!==B||t[15]!==I||t[16]!==n?(H=async e=>{await I({defaultSeatType:e}),S({workspaceId:n,previousSeatType:B,nextSeatType:e,surface:_})},t[13]=_,t[14]=B,t[15]=I,t[16]=n,t[17]=H):H=t[17];let U=H,W=R??`default`,G;t[18]!==B||t[19]!==y||t[20]!==U||t[21]!==A?(G=async e=>e===B?!1:e==="default"&&B!=="default"?v({workspace:A,introducedDefaultSeatCount:0,entrypoint:y,onContinue:async()=>{await U(e)}}):(await U(e),!0),t[18]=B,t[19]=y,t[20]=U,t[21]=A,t[22]=G):G=t[22];let K;return t[23]!==h||t[24]!==f||t[25]!==B||t[26]!==c||t[27]!==r||t[28]!==V||t[29]!==W||t[30]!==G||t[31]!==u||t[32]!==m||t[33]!==n?(K=(0,D.jsx)(b,{workspaceId:n,disabled:V,currentSeatType:B,includeUsageBased:r,includeProlite:c,preserveProlite:!0,triggerClassName:u,contentClassName:f,triggerId:m,ariaLabelledBy:h,onUpdateSeatType:G},W),t[23]=h,t[24]=f,t[25]=B,t[26]=c,t[27]=r,t[28]=V,t[29]=W,t[30]=G,t[31]=u,t[32]=m,t[33]=n,t[34]=K):K=t[34],K}function T(e){i().danger(e.message,{toastId:`workspace_default_seat_type`,loggingTitle:e.message,loggingDescription:`Workspace default seat type update failed`})}var E,D,O,k=e((()=>{E=h(),_(),y(),C(),t(),r(),c(),n(),m(),f(),D=l(),O=u({defaultSeatTypeUpdatedToast:{id:`workspaceIdentity.defaultSeatTypeUpdatedToast`,defaultMessage:`Default workspace seat updated`}})}));export{k as n,w as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $G as t,
+    F7 as n,
+    I1 as r,
+    RU as i,
+    Y1 as a,
+    j7 as o,
+    nK as s,
+    zU as c
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as l,
+    Ln as u,
+    N as d,
+    Rn as f,
+    p,
+    s as m,
+    wn as h,
+    zn as g
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    n as _,
+    t as v
+} from "./dc59de7a-jnui7pon6e4srmln.js";
+import {
+    o as y,
+    r as b,
+    s as x
+} from "./1212b029-djaou2nlruvyoto1.js";
+import {
+    n as S,
+    t as C
+} from "./403cbcf1-c6b88x1eup7bg5kk.js";
+
+function w(e) {
+    "use forget";
+    let t = (0, E.c)(35),
+        {
+            workspaceId: n,
+            includeUsageBased: r,
+            includeProlite: c,
+            disabled: l,
+            triggerClassName: u,
+            contentClassName: f,
+            triggerId: m,
+            ariaLabelledBy: h,
+            analyticsSurface: _,
+            firstChatgptSeatPurchaseEntrypoint: y
+        } = e,
+        C = l !== void 0 && l,
+        w = g(),
+        k = d(),
+        A = a(),
+        {
+            data: j,
+            isPending: M
+        } = s(n),
+        N;
+    t[0] === n ? N = t[1] : (N = e => {
+        let {
+            defaultSeatType: t
+        } = e;
+        return o.safePost(`/accounts/{account_id}/settings/default_seat_type`, {
+            parameters: {
+                path: {
+                    account_id: n
+                }
+            },
+            requestBody: {
+                value: t
+            }
+        })
+    }, t[0] = n, t[1] = N);
+    let P;
+    t[2] !== w || t[3] !== k || t[4] !== n ? (P = () => {
+        k.invalidateQueries({
+            queryKey: [`workspace-settings`, n]
+        }), i().success(w.formatMessage(O.defaultSeatTypeUpdatedToast), {
+            duration: 3
+        })
+    }, t[2] = w, t[3] = k, t[4] = n, t[5] = P) : P = t[5];
+    let F;
+    t[6] !== N || t[7] !== P ? (F = {
+        mutationFn: N,
+        onSuccess: P,
+        onError: T
+    }, t[6] = N, t[7] = P, t[8] = F) : F = t[8];
+    let {
+        mutateAsync: I,
+        isPending: L
+    } = p(F), R = j?.default_seat_type, z;
+    t[9] !== c || t[10] !== r || t[11] !== R ? (z = x(R, {
+        includeUsageBased: r,
+        includeProlite: c,
+        preserveProlite: !0
+    }), t[9] = c, t[10] = r, t[11] = R, t[12] = z) : z = t[12];
+    let B = z,
+        V = C || M || L,
+        H;
+    t[13] !== _ || t[14] !== B || t[15] !== I || t[16] !== n ? (H = async e => {
+        await I({
+            defaultSeatType: e
+        }), S({
+            workspaceId: n,
+            previousSeatType: B,
+            nextSeatType: e,
+            surface: _
+        })
+    }, t[13] = _, t[14] = B, t[15] = I, t[16] = n, t[17] = H) : H = t[17];
+    let U = H,
+        W = R ?? `default`,
+        G;
+    t[18] !== B || t[19] !== y || t[20] !== U || t[21] !== A ? (G = async e => e === B ? !1 : e === "default" && B !== "default" ? v({
+        workspace: A,
+        introducedDefaultSeatCount: 0,
+        entrypoint: y,
+        onContinue: async () => {
+            await U(e)
+        }
+    }) : (await U(e), !0), t[18] = B, t[19] = y, t[20] = U, t[21] = A, t[22] = G) : G = t[22];
+    let K;
+    return t[23] !== h || t[24] !== f || t[25] !== B || t[26] !== c || t[27] !== r || t[28] !== V || t[29] !== W || t[30] !== G || t[31] !== u || t[32] !== m || t[33] !== n ? (K = (0, D.jsx)(b, {
+        workspaceId: n,
+        disabled: V,
+        currentSeatType: B,
+        includeUsageBased: r,
+        includeProlite: c,
+        preserveProlite: !0,
+        triggerClassName: u,
+        contentClassName: f,
+        triggerId: m,
+        ariaLabelledBy: h,
+        onUpdateSeatType: G
+    }, W), t[23] = h, t[24] = f, t[25] = B, t[26] = c, t[27] = r, t[28] = V, t[29] = W, t[30] = G, t[31] = u, t[32] = m, t[33] = n, t[34] = K) : K = t[34], K
+}
+
+function T(e) {
+    i().danger(e.message, {
+        toastId: `workspace_default_seat_type`,
+        loggingTitle: e.message,
+        loggingDescription: `Workspace default seat type update failed`
+    })
+}
+var E, D, O, k = e((() => {
+    E = h(), _(), y(), C(), t(), r(), c(), n(), m(), f(), D = l(), O = u({
+        defaultSeatTypeUpdatedToast: {
+            id: `workspaceIdentity.defaultSeatTypeUpdatedToast`,
+            defaultMessage: `Default workspace seat updated`
+        }
+    })
+}));
+export {
+    k as n, w as t
+};
 //# sourceMappingURL=8181be75-hxvay26evzxbroth.js.map

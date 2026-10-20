@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,r as n,t as r}from"./1900eab6-idyfgnk9dxmpvaqh.js";e((()=>{t()}))();export{r as ErrorBoundary,n as default};
-//# sourceMappingURL=profile-m5e0c9iy.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,r as n,t as r}from"./1900eab6-f7iu7xomhcu0r38w.js";e((()=>{t()}))();export{r as ErrorBoundary,n as default};
+//# sourceMappingURL=profile-gcstl6w6.js.map

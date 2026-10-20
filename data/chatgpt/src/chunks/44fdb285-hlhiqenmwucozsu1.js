@@ -1,0 +1,1742 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/885bfdd1-hed7cdxo2d6vwxt6.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-qsuygr73qjc6rh65.js", "assets/2340486e-komxp8tzs51ny4jj.js", "assets/root-lelxp0l2.css", "assets/36be5545-h5v52cyg2yndxm6n.js", "assets/conversation-small-cawdu7il3ha6y70c.js", "assets/30901919-jory365vq6ym5crx.js", "assets/c470f5ab-in0lllrdrzeo67gs.js", "assets/0e5afe53-f9gmgfmgrr83ziw3.js", "assets/conversation-small-czggvj2v.css", "assets/drawing-canvas-mhqahk78.css"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as r,
+    At as i,
+    Dw as a,
+    Fw as o,
+    I1 as s,
+    J0 as c,
+    J5 as l,
+    Jt as u,
+    M1 as d,
+    M5 as f,
+    Nw as p,
+    Ow as m,
+    QJ as h,
+    Y0 as g,
+    _R as _,
+    _it as v,
+    _nt as y,
+    aq as b,
+    b5 as x,
+    fF as S,
+    fq as C,
+    hnt as w,
+    m8 as T,
+    nY as E,
+    q5 as D,
+    uF as O,
+    vit as k,
+    xR as A
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as ee,
+    Hn as j,
+    Rn as te,
+    Tn as ne,
+    Vn as M,
+    ln as re,
+    qt as ie,
+    un as ae,
+    zn as oe
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    E5 as se,
+    Flt as ce,
+    LHn as le,
+    Llt as N,
+    M5 as ue,
+    MUn as de,
+    N5 as fe,
+    RHn as pe,
+    S5 as me,
+    T5 as he,
+    _Un as ge,
+    b5 as _e,
+    ckt as P,
+    g5 as ve,
+    gUn as ye,
+    h5 as be,
+    hAn as xe,
+    jUn as Se,
+    k5 as Ce,
+    lkt as we,
+    m5 as Te,
+    p5 as Ee,
+    pAn as F,
+    v5 as De,
+    x5 as I,
+    y5 as Oe,
+    zHn as L
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    $y as ke,
+    DC as R,
+    EC as Ae,
+    Qy as je,
+    Xy as Me,
+    Zy as Ne
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    n as Pe,
+    t as Fe
+} from "./540191af-c6naemi04dm8qpta.js";
+import {
+    c as Ie,
+    r as Le
+} from "./85557f11-dnt6ja33f52urano.js";
+import {
+    n as Re,
+    t as z
+} from "./b9e74381-h0z6cp6y2ptcf91m.js";
+import {
+    n as ze,
+    t as Be
+} from "./62331d8d-jc6iggd99g5rh20z.js";
+import {
+    a as Ve,
+    i as He,
+    n as Ue,
+    o as We,
+    r as Ge
+} from "./971592ec-ksgvmkhcivdm3kvx.js";
+import {
+    i as Ke,
+    r as qe
+} from "./86793a97-l54v6wfhgq5jzt0p.js";
+import {
+    n as Je,
+    t as Ye
+} from "./183f19de-m5vq8wwory73ezg8.js";
+import {
+    n as B,
+    t as Xe
+} from "./656cec6a-cm0b8tz5w3da1g3f.js";
+import {
+    i as Ze,
+    n as Qe,
+    o as $e,
+    r as et,
+    t as tt
+} from "./cb56d84a-ks4edokquh2w32m0.js";
+import {
+    a as nt,
+    c as rt,
+    n as it,
+    t as at
+} from "./d93502a4-kj1x7kp7gcf3zcfp.js";
+import {
+    i as V,
+    n as ot
+} from "./a35b0b5c-efi930yqi8pb74u5.js";
+
+function st({
+    image: e,
+    drawingState: t,
+    drawingCanvasRef: n
+}) {
+    return (0, ct.jsx)(`div`, {
+        className: `pointer-events-none absolute inset-0 z-[60] overflow-visible`,
+        children: (0, ct.jsx)(`div`, {
+            className: `pointer-events-auto absolute inset-0`,
+            children: (0, ct.jsx)(lt, {
+                drawingCanvasRef: n,
+                color: `rgba(0, 122, 255, 0.5)`,
+                dashedOutlineColor: `rgba(255, 255, 255, 0.65)`,
+                cursorWidth: ut,
+                canvasWidth: e.width,
+                canvasHeight: e.height,
+                drawingState: t
+            })
+        })
+    })
+}
+var ct, lt, ut, dt = e((() => {
+    g(), ct = M(), ae(), lt = c(() => re(() => import(`./885bfdd1-hed7cdxo2d6vwxt6.js`).then(e => e.DynamicDrawingCanvas), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]))), ut = 136
+}));
+
+function H(e) {
+    "use forget";
+    let t = (0, U.c)(11),
+        {
+            image: n,
+            drawingState: r,
+            drawingCanvasRef: i,
+            imageClassName: a
+        } = e,
+        o = n.title ?? ``,
+        s;
+    t[0] !== n.url || t[1] !== a || t[2] !== o ? (s = (0, W.jsx)(`img`, {
+        src: n.url,
+        alt: o,
+        className: a,
+        fetchPriority: `high`,
+        loading: `eager`,
+        decoding: `async`
+    }), t[0] = n.url, t[1] = a, t[2] = o, t[3] = s) : s = t[3];
+    let c;
+    t[4] !== i || t[5] !== r || t[6] !== n ? (c = (0, W.jsx)(st, {
+        image: n,
+        drawingState: r,
+        drawingCanvasRef: i
+    }), t[4] = i, t[5] = r, t[6] = n, t[7] = c) : c = t[7];
+    let l;
+    return t[8] !== s || t[9] !== c ? (l = (0, W.jsxs)(W.Fragment, {
+        children: [s, c]
+    }), t[8] = s, t[9] = c, t[10] = l) : l = t[10], l
+}
+
+function ft(e) {
+    "use forget";
+    let t = (0, U.c)(12),
+        {
+            image: n,
+            drawingState: r,
+            drawingCanvasRef: i
+        } = e,
+        a = (0, pt.useRef)(null),
+        [o, s] = (0, pt.useState)(null),
+        c, l;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = () => {
+        let e = a.current;
+        if (!e) return;
+        let t = () => {
+            let {
+                width: t,
+                height: n
+            } = e.getBoundingClientRect();
+            s(e => e?.width === t && e?.height === n ? e : {
+                width: t,
+                height: n
+            })
+        };
+        if (t(), typeof ResizeObserver > `u`) return;
+        let n = new ResizeObserver(() => {
+            t()
+        });
+        return n.observe(e), () => {
+            n.disconnect()
+        }
+    }, l = [], t[0] = c, t[1] = l) : (c = t[0], l = t[1]), (0, pt.useEffect)(c, l);
+    let u;
+    t[2] !== o || t[3] !== n ? (u = o == null ? void 0 : z({
+        mediaWidth: n.width,
+        mediaHeight: n.height,
+        containerWidth: o.width,
+        containerHeight: o.height
+    }), t[2] = o, t[3] = n, t[4] = u) : u = t[4];
+    let d = u,
+        f;
+    t[5] !== i || t[6] !== r || t[7] !== d || t[8] !== n ? (f = d && (0, W.jsx)(`div`, {
+        "data-testid": `contained-inpaint-surface`,
+        className: `border-token-border-light shadow-elevation-03 absolute overflow-hidden rounded-none border bg-neutral-100`,
+        style: d,
+        children: (0, W.jsx)(H, {
+            image: n,
+            drawingState: r,
+            drawingCanvasRef: i,
+            imageClassName: `block h-full w-full object-contain`
+        })
+    }), t[5] = i, t[6] = r, t[7] = d, t[8] = n, t[9] = f) : f = t[9];
+    let p;
+    return t[10] === f ? p = t[11] : (p = (0, W.jsx)(`div`, {
+        ref: a,
+        className: `relative h-full w-full`,
+        children: f
+    }), t[10] = f, t[11] = p), p
+}
+var U, pt, W, mt = e((() => {
+    U = ne(), Re(), dt(), pt = n(j()), W = M()
+}));
+
+function ht({
+    element: e,
+    conversationId: t,
+    messageId: n,
+    attribution: i,
+    isCurrentImage: a
+}) {
+    if (i == null) return () => {};
+    let o = e.ownerDocument,
+        s = !1,
+        c = () => {
+            if (s || o.visibilityState !== `visible` || !e.complete || e.naturalWidth === 0 || !a()) return;
+            s = !0, l();
+            let c = x(A)?.id,
+                u = r()?.id;
+            !c || !u || ze(O(h(t)), {
+                viewerId: c,
+                conversationId: t,
+                messageId: n,
+                isDelayed: i.is_delayed,
+                asyncCompletionId: i.async_completion_id ?? void 0
+            })
+        };
+
+    function l() {
+        e.removeEventListener(`load`, c), o.removeEventListener(`visibilitychange`, c)
+    }
+    return e.addEventListener(`load`, c), o.addEventListener(`visibilitychange`, c), c(), l
+}
+var gt = e((() => {
+        S(), T(), s(), E(), _(), Be()
+    })),
+    _t, vt = e((() => {
+        oe(), _t = te({
+            brushSize: {
+                id: `imageGenLightbox.removeBrushSize`,
+                defaultMessage: `Brush size`
+            },
+            zoomHelpText: {
+                id: `imageGenLightbox.remove.zoom.helpText`,
+                defaultMessage: `Pinch to zoom. To pan, scroll or hold Space and drag.`
+            }
+        })
+    })),
+    yt, bt, G, K, xt, St, Ct, wt = e((() => {
+        yt = ne(), B(), g(), bt = n(j()), oe(), vt(), G = M(), ae(), K = c(() => re(() => import(`./885bfdd1-hed7cdxo2d6vwxt6.js`).then(e => e.DynamicDrawingCanvas), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]))), xt = 32, St = 512, Ct = e => {
+            "use forget";
+            let t = (0, yt.c)(29),
+                {
+                    image: n,
+                    drawingState: r,
+                    drawingCanvasRef: i,
+                    brushSize: a,
+                    onBrushSizeChange: o,
+                    onBrushSizeCommit: s,
+                    viewport: c
+                } = e,
+                l = ee(),
+                [u, d] = (0, bt.useState)(!1),
+                f = a * c.fitImageRect.width / n.width,
+                p = c.imageRect.width > 0 ? a * c.fitImageRect.width / c.imageRect.width : a,
+                m;
+            t[0] !== p || t[1] !== i || t[2] !== r || t[3] !== n.height || t[4] !== n.width || t[5] !== c.isInteracting || t[6] !== c.isPanReady ? (m = (0, G.jsx)(K, {
+                drawingCanvasRef: i,
+                color: `rgba(0, 122, 255, 0.5)`,
+                dashedOutlineColor: `rgba(255, 255, 255, 0.65)`,
+                cursorWidth: p,
+                canvasWidth: n.width,
+                canvasHeight: n.height,
+                drawingState: r,
+                paintOnStart: !0,
+                readOnly: c.isInteracting,
+                hideCursor: c.isPanReady
+            }), t[0] = p, t[1] = i, t[2] = r, t[3] = n.height, t[4] = n.width, t[5] = c.isInteracting, t[6] = c.isPanReady, t[7] = m) : m = t[7];
+            let h;
+            t[8] !== m || t[9] !== c.imageRect ? (h = (0, G.jsx)(`div`, {
+                "data-testid": `contained-remove-surface`,
+                className: `absolute overflow-hidden`,
+                style: c.imageRect,
+                children: m
+            }), t[8] = m, t[9] = c.imageRect, t[10] = h) : h = t[10];
+            let g;
+            t[11] !== u || t[12] !== f ? (g = u && f > 0 ? (0, G.jsx)(`div`, {
+                "aria-hidden": `true`,
+                className: `pointer-events-none absolute inset-0 z-[70] flex items-center justify-center`,
+                children: (0, G.jsx)(`div`, {
+                    className: `rounded-full border-2 border-dashed border-white/90`,
+                    style: {
+                        backgroundColor: `rgba(0, 122, 255, 0.12)`,
+                        boxShadow: `0 0 0 1px rgba(0, 122, 255, 0.8)`,
+                        height: f,
+                        width: f
+                    }
+                })
+            }) : null, t[11] = u, t[12] = f, t[13] = g) : g = t[13];
+            let _;
+            t[14] !== h || t[15] !== g ? (_ = (0, G.jsxs)(`div`, {
+                className: `absolute inset-0 overflow-hidden`,
+                children: [h, g]
+            }), t[14] = h, t[15] = g, t[16] = _) : _ = t[16];
+            let v;
+            t[17] === l ? v = t[18] : (v = l.formatMessage(_t.brushSize), t[17] = l, t[18] = v);
+            let y, b;
+            t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (y = () => d(!0), b = () => d(!1), t[19] = y, t[20] = b) : (y = t[19], b = t[20]);
+            let x;
+            t[21] !== a || t[22] !== o || t[23] !== s || t[24] !== v ? (x = (0, G.jsx)(`div`, {
+                className: `pointer-events-none absolute start-4 top-1/2 z-40 h-44 max-h-[50%] -translate-y-1/2`,
+                children: (0, G.jsx)(`div`, {
+                    "data-annotation-control": !0,
+                    className: `pointer-events-auto h-full`,
+                    children: (0, G.jsx)(Xe, {
+                        "aria-label": v,
+                        className: `bg-token-bg-elevated-primary border-token-border-default h-full w-12 rounded-full border shadow-sm`,
+                        max: St,
+                        min: xt,
+                        name: `image-remove-brush-size`,
+                        value: a,
+                        onInteractionStart: y,
+                        onInteractionEnd: b,
+                        onValueChange: o,
+                        onValueCommit: s
+                    })
+                })
+            }), t[21] = a, t[22] = o, t[23] = s, t[24] = v, t[25] = x) : x = t[25];
+            let S;
+            return t[26] !== _ || t[27] !== x ? (S = (0, G.jsxs)(`div`, {
+                className: `relative h-full w-full`,
+                children: [_, x]
+            }), t[26] = _, t[27] = x, t[28] = S) : S = t[28], S
+        }
+    }));
+
+function Tt(e) {
+    "use forget";
+    let t = (0, Ot.c)(75),
+        {
+            media: n,
+            presentation: r,
+            isActiveSlide: i
+        } = e,
+        a = i !== void 0 && i,
+        o = ee(),
+        s = (0, kt.useId)(),
+        c = (0, kt.useRef)(null),
+        [l, u] = (0, kt.useState)(!1),
+        [d, f] = (0, kt.useState)(!1),
+        p = V(),
+        [m, h] = (0, kt.useState)(!0),
+        g = p?.isMuted ?? m,
+        _ = n.width > 0 ? n.width : jt,
+        v = n.height > 0 ? n.height : J,
+        y = _ / v,
+        b;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (b = e => {
+        c.current = e, e && e.readyState >= HTMLMediaElement.HAVE_METADATA && f(!0)
+    }, t[0] = b) : b = t[0];
+    let x = b,
+        S;
+    t[1] === p ? S = t[2] : (S = e => {
+        if (p) {
+            p.setMuted(e);
+            return
+        }
+        h(e)
+    }, t[1] = p, t[2] = S);
+    let C = S,
+        w;
+    t[3] !== a || t[4] !== g || t[5] !== s || t[6] !== C ? (w = {
+        ownerId: s,
+        isMuted: g,
+        canOwnAudio: a,
+        onMutedChange: C
+    }, t[3] = a, t[4] = g, t[5] = s, t[6] = C, t[7] = w) : w = t[7];
+    let {
+        shouldMute: T,
+        toggleMuted: E
+    } = rt(w), O = Et, k;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (k = e => {
+        if (e) try {
+            e.play().catch(() => {
+                u(!1)
+            })
+        } catch {
+            u(!1)
+        }
+    }, t[8] = k) : k = t[8];
+    let A = k,
+        j;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (j = () => {
+        let e = c.current;
+        if (e) {
+            if (e.paused) {
+                A(e);
+                return
+            }
+            e.pause()
+        }
+    }, t[9] = j) : j = t[9];
+    let te = j,
+        ne;
+    t[10] === a ? ne = t[11] : (ne = () => {
+        let e = c.current;
+        if (!e) return;
+        if (!a) {
+            O(e);
+            return
+        }
+        e.networkState === HTMLMediaElement.NETWORK_EMPTY && e.load(), A(e);
+        let t = () => {
+            A(e)
+        };
+        return e.addEventListener(`canplay`, t, {
+            once: !0
+        }), e.addEventListener(`loadeddata`, t, {
+            once: !0
+        }), () => {
+            e.removeEventListener(`canplay`, t), e.removeEventListener(`loadeddata`, t)
+        }
+    }, t[10] = a, t[11] = ne);
+    let M;
+    t[12] !== a || t[13] !== n.url ? (M = [O, a, n.url, A], t[12] = a, t[13] = n.url, t[14] = M) : M = t[14], (0, kt.useEffect)(ne, M);
+    let re, ie;
+    t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (ie = () => {
+        let e = c.current;
+        return () => {
+            O(e)
+        }
+    }, re = [O], t[15] = re, t[16] = ie) : (re = t[15], ie = t[16]), (0, kt.useEffect)(ie, re);
+    let ae;
+    t[17] !== r || t[18] !== y || t[19] !== v || t[20] !== _ ? (ae = r === `desktop` ? {
+        aspectRatio: `${_} / ${v}`,
+        height: `min(100%, calc((100vw - ${At}px) / ${y}))`,
+        maxHeight: `100%`
+    } : {
+        aspectRatio: `${_} / ${v}`
+    }, t[17] = r, t[18] = y, t[19] = v, t[20] = _, t[21] = ae) : ae = t[21];
+    let oe = ae,
+        se = a ? n.url : void 0,
+        ce = n.thumbnail ?? void 0,
+        le = n.title ?? ``,
+        N = !d && `opacity-0`,
+        ue;
+    t[22] === N ? ue = t[23] : (ue = D(`block h-full w-full object-contain shadow-none`, N), t[22] = N, t[23] = ue);
+    let de = r === `desktop` || a ? `auto` : `metadata`,
+        fe, pe, me, he, ge, _e;
+    t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (fe = () => f(!0), pe = () => f(!0), me = () => f(!0), he = () => f(!0), ge = () => {
+        f(!0), u(!0)
+    }, _e = () => u(!1), t[24] = fe, t[25] = pe, t[26] = me, t[27] = he, t[28] = ge, t[29] = _e) : (fe = t[24], pe = t[25], me = t[26], he = t[27], ge = t[28], _e = t[29]);
+    let P;
+    t[30] !== a || t[31] !== T || t[32] !== se || t[33] !== ce || t[34] !== le || t[35] !== ue || t[36] !== de || t[37] !== v || t[38] !== _ ? (P = (0, q.jsx)(`video`, {
+        ref: x,
+        src: se,
+        poster: ce,
+        width: _,
+        height: v,
+        autoPlay: a,
+        muted: T,
+        loop: !0,
+        playsInline: !0,
+        "aria-label": le,
+        className: ue,
+        onClick: te,
+        preload: de,
+        onLoadedMetadata: fe,
+        onLoadedData: pe,
+        onCanPlay: me,
+        onError: he,
+        onPlay: ge,
+        onPause: _e
+    }), t[30] = a, t[31] = T, t[32] = se, t[33] = ce, t[34] = le, t[35] = ue, t[36] = de, t[37] = v, t[38] = _, t[39] = P) : P = t[39];
+    let ve = r === `desktop` ? `opacity-0 group-hover:opacity-100 focus-within:opacity-100` : `opacity-100`,
+        ye;
+    t[40] === ve ? ye = t[41] : (ye = D(`pointer-events-none absolute end-3 top-3 z-10`, ve), t[40] = ve, t[41] = ye);
+    let be;
+    t[42] !== o || t[43] !== g ? (be = o.formatMessage(g ? X.unmuteVideo : X.muteVideo), t[42] = o, t[43] = g, t[44] = be) : be = t[44];
+    let xe;
+    t[45] === E ? xe = t[46] : (xe = e => {
+        e.preventDefault(), e.stopPropagation(), E()
+    }, t[45] = E, t[46] = xe);
+    let Se;
+    t[47] === g ? Se = t[48] : (Se = (0, q.jsx)(at, {
+        muted: g,
+        className: `icon text-white`
+    }), t[47] = g, t[48] = Se);
+    let Ce;
+    t[49] !== be || t[50] !== xe || t[51] !== Se ? (Ce = (0, q.jsx)(`button`, {
+        type: `button`,
+        "aria-label": be,
+        className: Y,
+        onClick: xe,
+        children: Se
+    }), t[49] = be, t[50] = xe, t[51] = Se, t[52] = Ce) : Ce = t[52];
+    let we;
+    t[53] !== ye || t[54] !== Ce ? (we = (0, q.jsx)(`div`, {
+        className: ye,
+        children: Ce
+    }), t[53] = ye, t[54] = Ce, t[55] = we) : we = t[55];
+    let Te = r === `desktop` ? `opacity-0 group-hover:opacity-100 focus-within:opacity-100` : `opacity-100`,
+        Ee;
+    t[56] === Te ? Ee = t[57] : (Ee = D(`pointer-events-none absolute start-3 bottom-3 z-10`, Te), t[56] = Te, t[57] = Ee);
+    let F;
+    t[58] !== o || t[59] !== l ? (F = o.formatMessage(l ? X.pauseVideo : X.playVideo), t[58] = o, t[59] = l, t[60] = F) : F = t[60];
+    let De;
+    t[61] === Symbol.for(`react.memo_cache_sentinel`) ? (De = e => {
+        e.preventDefault(), e.stopPropagation(), te()
+    }, t[61] = De) : De = t[61];
+    let I;
+    t[62] === l ? I = t[63] : (I = l ? (0, q.jsx)(ke, {
+        className: `icon text-white`
+    }) : (0, q.jsx)(Ne, {
+        className: `icon text-white`
+    }), t[62] = l, t[63] = I);
+    let Oe;
+    t[64] !== F || t[65] !== I ? (Oe = (0, q.jsx)(`button`, {
+        type: `button`,
+        "aria-label": F,
+        className: Y,
+        onClick: De,
+        children: I
+    }), t[64] = F, t[65] = I, t[66] = Oe) : Oe = t[66];
+    let L;
+    t[67] !== Ee || t[68] !== Oe ? (L = (0, q.jsx)(`div`, {
+        className: Ee,
+        children: Oe
+    }), t[67] = Ee, t[68] = Oe, t[69] = L) : L = t[69];
+    let R;
+    return t[70] !== oe || t[71] !== P || t[72] !== we || t[73] !== L ? (R = (0, q.jsxs)(`div`, {
+        "data-testid": `lightbox-video-frame`,
+        className: `group relative max-h-full max-w-full overflow-hidden rounded`,
+        style: oe,
+        children: [P, we, L]
+    }), t[70] = oe, t[71] = P, t[72] = we, t[73] = L, t[74] = R) : R = t[74], R
+}
+
+function Et(e) {
+    e && (e.pause(), e.removeAttribute(`src`), e.load())
+}
+
+function Dt(e) {
+    "use forget";
+    let t = (0, Ot.c)(2),
+        n;
+    return t[0] === e ? n = t[1] : (n = (0, q.jsx)(Tt, {
+        ...e
+    }), t[0] = e, t[1] = n), n
+}
+var Ot, kt, q, At, jt, J, Y, X, Mt = e((() => {
+        Ot = ne(), je(), Me(), nt(), l(), kt = n(j()), oe(), ot(), it(), q = M(), At = 240, jt = 16, J = 9, Y = `pointer-events-auto flex h-9 w-9 items-center justify-center rounded-full bg-black/15 text-white backdrop-blur-md hover:bg-black/30 focus:bg-black/30`, X = te({
+            muteVideo: {
+                id: `6ZKYXm`,
+                defaultMessage: `Mute video`
+            },
+            unmuteVideo: {
+                id: `CXaK+s`,
+                defaultMessage: `Unmute video`
+            },
+            playVideo: {
+                id: `j3xGIG`,
+                defaultMessage: `Play video`
+            },
+            pauseVideo: {
+                id: `3bApjQ`,
+                defaultMessage: `Pause video`
+            }
+        })
+    })),
+    Z = t({
+        Footer: () => $t,
+        Header: () => Qt,
+        LightboxHeaderActions: () => tn,
+        LightboxNew: () => dn,
+        Root: () => It
+    });
+
+function Nt(e) {
+    "use forget";
+    let t = (0, rn.c)(58),
+        {
+            zoomPercent: n,
+            fitZoomPercent: r,
+            minZoomPercent: i,
+            maxZoomPercent: a,
+            onZoomPercentChange: o,
+            onResetZoom: s,
+            helpText: c
+        } = e,
+        l = ee(),
+        u, d, f, p, m, h, g, _, v, y, b, x, S;
+    if (t[0] !== r || t[1] !== c || t[2] !== l || t[3] !== a || t[4] !== i || t[5] !== s || t[6] !== o || t[7] !== n) {
+        let e = Math.round(n),
+            C = l.formatMessage(on.zoomPercentLabel, {
+                zoomPercent: e
+            }),
+            w = Math.abs(n - r) < 1,
+            T;
+        t[21] !== a || t[22] !== i ? (T = e => e >= Math.ceil(i) && e <= Math.floor(a), t[21] = a, t[22] = i, t[23] = T) : T = t[23];
+        let E = cn.filter(T),
+            D = w ? `fit` : String(e);
+        m = `pointer-events-auto absolute end-3 top-2`, d = le, v = `bottom`, y = 8, b = `end`, x = `small`, S = ln;
+        let O = l.formatMessage(on.zoomLevelLabel, {
+                zoomPercent: e
+            }),
+            k;
+        t[24] === C ? k = t[25] : (k = (0, $.jsx)(`span`, {
+            children: C
+        }), t[24] = C, t[25] = k);
+        let A;
+        t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (A = (0, $.jsx)(Ae, {
+            className: `icon-sm shrink-0`
+        }), t[26] = A) : A = t[26], t[27] !== c || t[28] !== O || t[29] !== k ? (p = (0, $.jsxs)(`button`, {
+            type: `button`,
+            title: c,
+            "aria-label": O,
+            className: `border-token-border-default bg-token-bg-elevated-primary text-token-text-primary hover:bg-token-bg-secondary focus-visible:ring-token-focus flex h-11 w-[73px] items-center justify-center gap-0.5 rounded-full border text-sm font-medium shadow-sm focus-visible:ring-2 focus-visible:outline-none`,
+            children: [k, A]
+        }), t[27] = c, t[28] = O, t[29] = k, t[30] = p) : p = t[30], u = pe.RadioGroup, f = D, t[31] !== s || t[32] !== o ? (h = e => {
+            if (e === `fit`) {
+                s();
+                return
+            }
+            o(Number(e))
+        }, t[31] = s, t[32] = o, t[33] = h) : h = t[33];
+        let ee;
+        t[34] === l ? ee = t[35] : (ee = l.formatMessage(on.fitZoomLabel), t[34] = l, t[35] = ee), t[36] === ee ? g = t[37] : (g = (0, $.jsx)(pe.RadioItem, {
+            value: `fit`,
+            children: ee
+        }), t[36] = ee, t[37] = g);
+        let j;
+        t[38] === l ? j = t[39] : (j = e => (0, $.jsx)(pe.RadioItem, {
+            value: String(e),
+            children: l.formatMessage(on.zoomPercentLabel, {
+                zoomPercent: e
+            })
+        }, e), t[38] = l, t[39] = j), _ = E.map(j), t[0] = r, t[1] = c, t[2] = l, t[3] = a, t[4] = i, t[5] = s, t[6] = o, t[7] = n, t[8] = u, t[9] = d, t[10] = f, t[11] = p, t[12] = m, t[13] = h, t[14] = g, t[15] = _, t[16] = v, t[17] = y, t[18] = b, t[19] = x, t[20] = S
+    } else u = t[8], d = t[9], f = t[10], p = t[11], m = t[12], h = t[13], g = t[14], _ = t[15], v = t[16], y = t[17], b = t[18], x = t[19], S = t[20];
+    let C;
+    t[40] !== u || t[41] !== f || t[42] !== h || t[43] !== g || t[44] !== _ ? (C = (0, $.jsxs)(u, {
+        value: f,
+        onValueChange: h,
+        children: [g, _]
+    }), t[40] = u, t[41] = f, t[42] = h, t[43] = g, t[44] = _, t[45] = C) : C = t[45];
+    let w;
+    t[46] !== d || t[47] !== p || t[48] !== C || t[49] !== v || t[50] !== y || t[51] !== b || t[52] !== x || t[53] !== S ? (w = (0, $.jsx)(d, {
+        side: v,
+        sideOffset: y,
+        contentAlign: b,
+        size: x,
+        contentClassName: S,
+        triggerButton: p,
+        children: C
+    }), t[46] = d, t[47] = p, t[48] = C, t[49] = v, t[50] = y, t[51] = b, t[52] = x, t[53] = S, t[54] = w) : w = t[54];
+    let T;
+    return t[55] !== m || t[56] !== w ? (T = (0, $.jsx)(`div`, {
+        className: m,
+        children: w
+    }), t[55] = m, t[56] = w, t[57] = T) : T = t[57], T
+}
+
+function Pt(e, t) {
+    return `${se(e)}-${t}`
+}
+
+function Ft(e) {
+    "use forget";
+    let t = (0, rn.c)(30),
+        {
+            media: n,
+            presentation: r,
+            isActiveSlide: i,
+            imageRef: a
+        } = e,
+        o = i !== void 0 && i,
+        s = d(),
+        [c, l] = (0, Q.useState)(null);
+    if (me(n)) {
+        let e;
+        return t[0] !== o || t[1] !== n || t[2] !== r ? (e = (0, $.jsx)(Dt, {
+            media: n,
+            presentation: r,
+            isActiveSlide: o
+        }), t[0] = o, t[1] = n, t[2] = r, t[3] = e) : e = t[3], e
+    }
+    let u = he,
+        f = !s?.hasPaidSubscription(),
+        p;
+    t[4] !== n || t[5] !== u || t[6] !== f ? (p = u(n, f), t[4] = n, t[5] = u, t[6] = f, t[7] = p) : p = t[7];
+    let m = p,
+        h = n.width > 0 && n.height > 0 ? n.width / n.height : 1,
+        g = c?.src === m ? c.aspectRatio : h,
+        _ = n.title ?? ``,
+        v;
+    t[8] !== g || t[9] !== n.isAnimated ? (v = n.isAnimated ? {
+        height: `min(400px, 100cqh, ${100/g}cqw)`
+    } : void 0, t[8] = g, t[9] = n.isAnimated, t[10] = v) : v = t[10];
+    let y;
+    t[11] !== n.isAnimated || t[12] !== l || t[13] !== m ? (y = n.isAnimated ? e => {
+        let {
+            currentTarget: t
+        } = e;
+        t.naturalWidth > 0 && t.naturalHeight > 0 && l({
+            src: m,
+            aspectRatio: t.naturalWidth / t.naturalHeight
+        })
+    } : void 0, t[11] = n.isAnimated, t[12] = l, t[13] = m, t[14] = y) : y = t[14];
+    let b = n.isAnimated && `w-auto`,
+        x = r === `desktop` ? `border-token-border-light shadow-elevation-03 block max-h-full max-w-full rounded-none border object-contain` : `border-token-border-light shadow-elevation-03 max-h-full max-w-full rounded-none border object-contain`,
+        S;
+    t[15] !== b || t[16] !== x ? (S = D(b, x), t[15] = b, t[16] = x, t[17] = S) : S = t[17];
+    let C = r === `desktop` || o ? `high` : `auto`,
+        w = r === `desktop` || o ? `eager` : `lazy`,
+        T;
+    t[18] !== a || t[19] !== m || t[20] !== S || t[21] !== C || t[22] !== w || t[23] !== _ || t[24] !== v || t[25] !== y ? (T = (0, $.jsx)(`img`, {
+        ref: a,
+        src: m,
+        alt: _,
+        style: v,
+        onLoad: y,
+        className: S,
+        fetchPriority: C,
+        loading: w,
+        decoding: `async`
+    }), t[18] = a, t[19] = m, t[20] = S, t[21] = C, t[22] = w, t[23] = _, t[24] = v, t[25] = y, t[26] = T) : T = t[26];
+    let E = T,
+        O;
+    return t[27] !== E || t[28] !== n.isAnimated ? (O = n.isAnimated ? (0, $.jsx)(`div`, {
+        className: `[container-type:size] flex size-full items-center justify-center`,
+        children: E
+    }) : E, t[27] = E, t[28] = n.isAnimated, t[29] = O) : O = t[29], O
+}
+
+function It(e) {
+    "use forget";
+    let t = (0, rn.c)(152),
+        {
+            media: n,
+            initialIndex: r,
+            onClose: i,
+            onIndexChange: o,
+            disableRailNavigation: s,
+            preserveDesktopRailSpace: c,
+            children: l,
+            inpaintingProps: m,
+            removeProps: h,
+            annotationProps: g,
+            editingOverlay: _,
+            renderMediaControls: y,
+            renderMediaOverlay: b,
+            fullscreenShellEnabled: x,
+            useArtifactPreviewBackground: S,
+            allowFloatingToolbar: T,
+            sharedImageViewerEnabled: E,
+            canvasViewEnabled: O,
+            fullscreenHeaderTitleContent: k,
+            headerTitleTrailingContent: A,
+            renderShell: j,
+            shouldIgnoreClickOutside: te,
+            translucentBackground: ne,
+            closeOnPointerDownInside: M,
+            balanceDesktopRailSafeArea: re,
+            onOpenAutoFocus: ie,
+            source: ae,
+            trackImageGenResultViews: oe
+        } = e,
+        le = r === void 0 ? 0 : r,
+        N = s !== void 0 && s,
+        fe = c === void 0 || c,
+        pe = x !== void 0 && x,
+        ge = S !== void 0 && S,
+        _e = T !== void 0 && T,
+        P = E !== void 0 && E,
+        be = O !== void 0 && O,
+        xe = te !== void 0 && te,
+        Se = ne !== void 0 && ne,
+        Ce = M !== void 0 && M,
+        Oe = re !== void 0 && re,
+        L = ae === void 0 ? F.CHATGPT_IMAGE_LIGHTBOX_SOURCE_TYPE_UNSPECIFIED : ae,
+        ke = oe !== void 0 && oe,
+        [R, Ae] = (0, Q.useState)(le),
+        [je, Me] = (0, Q.useState)(Zt),
+        [Ne, Pe] = (0, Q.useState)(`focused`),
+        [Ie, Le] = (0, Q.useState)(null),
+        Re = (0, Q.useRef)(null),
+        [z, ze] = (0, Q.useState)(null),
+        [Be, He] = (0, Q.useState)(null),
+        Ue = (0, Q.useRef)(null),
+        We = (0, Q.useRef)(null),
+        qe = u(),
+        Ye = (0, Q.useRef)(null),
+        B = n[R],
+        Xe = I(B) ? B : void 0,
+        tt;
+    t[0] === Xe ? tt = t[1] : (tt = ue(Xe), t[0] = Xe, t[1] = tt);
+    let nt = tt,
+        rt = nt.canEdit ? m : void 0,
+        it = nt.canEdit ? h : void 0,
+        at = nt.canEdit ? g : void 0,
+        V = nt.canEdit ? _ : void 0,
+        ot = de(Ve, Xt),
+        st = de(Ve, Yt),
+        ct = de(Ve, Jt),
+        lt = de(Ve, qt),
+        ut, dt;
+    t[2] !== R || t[3] !== o ? (ut = () => {
+        o?.(R)
+    }, dt = [R, o], t[2] = R, t[3] = o, t[4] = ut, t[5] = dt) : (ut = t[4], dt = t[5]), (0, Q.useEffect)(ut, dt);
+    let H = ee(),
+        U = !f(C),
+        pt = (0, Q.useRef)(null),
+        {
+            footerSlot: W,
+            headerActionsSlot: mt,
+            children: gt
+        } = Fe(l, {
+            footerSlot: $t,
+            headerActionsSlot: tn
+        }),
+        vt = (0, Q.useRef)(null),
+        yt = (0, Q.useRef)(null),
+        bt = (0, Q.useRef)(null),
+        G = n.length > 1,
+        K = pe,
+        xt = K ? `revamp` : `legacy`,
+        St;
+    t[6] === i ? St = t[7] : (St = e => {
+        e.key === `Escape` && !e.defaultPrevented && (i(), e.preventDefault())
+    }, t[6] = i, t[7] = St);
+    let wt = St,
+        Tt;
+    t[8] !== B || t[9] !== L ? (Tt = () => {
+        B && w.logStructuredEvent(`ChatgptImageLightboxImpression`, {
+            metadata: {
+                sessionId: v(),
+                generationId: I(B) ? B.transformationId ?? void 0 : B.generationId,
+                fileId: I(B) ? B.assetPointer ?? B.id ?? void 0 : B.id,
+                conversationId: B.conversationId ?? void 0,
+                messageId: I(B) ? B.messageId ?? void 0 : B.sourceMessageId
+            },
+            source: L
+        })
+    }, t[8] = B, t[9] = L, t[10] = Tt) : Tt = t[10], we(Tt);
+    let Et, Dt;
+    t[11] !== wt || t[12] !== K || t[13] !== j ? (Et = () => {
+        if (!(K && j == null)) return document.addEventListener(`keydown`, wt), () => {
+            document.removeEventListener(`keydown`, wt)
+        }
+    }, Dt = [K, wt, j], t[11] = wt, t[12] = K, t[13] = j, t[14] = Et, t[15] = Dt) : (Et = t[14], Dt = t[15]), (0, Q.useEffect)(Et, Dt);
+    let Ot;
+    t[16] !== le || t[17] !== U ? (Ot = e => {
+        pt.current = e, !(!U || !e || le <= 0) && requestAnimationFrame(() => {
+            if (pt.current !== e || e.clientWidth === 0) return;
+            let t = e.clientWidth * le,
+                n = e.style.scrollBehavior;
+            e.style.scrollBehavior = `auto`, e.scrollLeft = t, n ? e.style.scrollBehavior = n : e.style.removeProperty(`scroll-behavior`)
+        })
+    }, t[16] = le, t[17] = U, t[18] = Ot) : Ot = t[18];
+    let kt = Ot,
+        q, At;
+    t[19] !== N || t[20] !== U || t[21] !== n.length ? (q = () => {
+        if (!U || !pt.current || N) return;
+        let e = pt.current,
+            t = () => {
+                if (e.clientWidth === 0) return;
+                let t = Math.round(e.scrollLeft / e.clientWidth);
+                if (!(t < 0 || t >= n.length)) {
+                    if (Ye.current != null) {
+                        let n = Ye.current;
+                        if (!ve({
+                                currentOffset: e.scrollLeft,
+                                itemSize: e.clientWidth,
+                                nextIndex: t,
+                                targetIndex: n
+                            })) return;
+                        Ye.current = null
+                    }
+                    Ae(e => e === t ? e : t)
+                }
+            };
+        return e.addEventListener(`scroll`, t, {
+            passive: !0
+        }), () => {
+            e.removeEventListener(`scroll`, t)
+        }
+    }, At = [N, U, n.length], t[19] = N, t[20] = U, t[21] = n.length, t[22] = q, t[23] = At) : (q = t[22], At = t[23]), (0, Q.useEffect)(q, At);
+    let jt = rt?.mode === `inpaint`,
+        J = it != null,
+        Y = rt?.mode === `annotate` && at != null,
+        X = J || V != null || Y || b != null,
+        Mt = Y && ot === `comment`,
+        Z = jt || X,
+        It = Y && (at?.shouldReserveFooterSpace ?? (at?.annotations.length ?? 0) > 0) ? at?.reserveFooterHeightClassName ?? `h-[104px]` : `h-14`,
+        en = H.formatMessage({
+            id: `Xs2Rno`,
+            defaultMessage: `Edit selection`
+        }),
+        nn = H.formatMessage({
+            id: `imageGenLightbox.erase`,
+            defaultMessage: `Erase`
+        }),
+        cn = H.formatMessage({
+            id: `imageGenLightbox.addAnnotationsTitle`,
+            defaultMessage: `Add comments`
+        }),
+        ln = U && je < sn,
+        dn = G && !Z && !ln && !N,
+        fn = (!Z || V != null || J) && !ln,
+        pn = P ? B?.title ?? null : J ? nn : jt ? en : Y ? cn : V?.title ?? B?.title ?? null,
+        mn = _e && P && (J || Y) && !U,
+        hn = pn ?? H.formatMessage({
+            id: `QvVWgJ`,
+            defaultMessage: `Media viewer`
+        }),
+        gn;
+    t[24] === A ? gn = t[25] : (gn = e => A == null ? e : (0, $.jsxs)(`div`, {
+        className: `flex min-w-0 items-center gap-2`,
+        children: [e, A]
+    }), t[24] = A, t[25] = gn);
+    let _n = gn,
+        vn;
+    t[26] !== X || t[27] !== P ? (vn = P || X ? (0, $.jsx)(`div`, {
+        ref: Le,
+        className: `pointer-events-none absolute inset-x-0 top-full z-10`,
+        "data-testid": `lightbox-zoom-controls-portal-host`
+    }) : null, t[26] = X, t[27] = P, t[28] = vn) : vn = t[28];
+    let yn = vn,
+        bn = L === F.CHATGPT_IMAGE_LIGHTBOX_SOURCE_TYPE_IMAGE_LIBRARY && `border-b-0!`,
+        xn = P && `md:h-12!`,
+        Sn;
+    t[29] !== bn || t[30] !== xn ? (Sn = D(`ps-2 pe-4 md:ps-2 md:pe-4`, bn, xn), t[29] = bn, t[30] = xn, t[31] = Sn) : Sn = t[31];
+    let Cn = V?.closeLabel,
+        wn;
+    t[32] === Cn ? wn = t[33] : (wn = (0, $.jsx)(ce.CloseButton, {
+        "aria-label": Cn
+    }), t[32] = Cn, t[33] = wn);
+    let Tn = k ?? (pn != null && (0, $.jsx)(`div`, {
+            "aria-label": pn,
+            className: D(`text-token-text-primary min-w-0 truncate font-normal`, P ? `text-sm leading-[18px]` : `text-base`),
+            title: pn,
+            children: pn
+        })),
+        En;
+    t[34] !== _n || t[35] !== Tn ? (En = _n(Tn), t[34] = _n, t[35] = Tn, t[36] = En) : En = t[36];
+    let Dn;
+    t[37] === En ? Dn = t[38] : (Dn = (0, $.jsx)(`div`, {
+        className: `min-w-0 flex-1`,
+        children: En
+    }), t[37] = En, t[38] = Dn);
+    let On = mt == null ? null : (0, $.jsx)(`div`, {
+            className: `flex shrink-0 items-center gap-2`,
+            "data-testid": `fullscreen-shell-header-content`,
+            children: mt
+        }),
+        kn;
+    t[39] !== Sn || t[40] !== wn || t[41] !== Dn || t[42] !== On || t[43] !== yn ? (kn = (0, $.jsxs)(ce.Header, {
+        className: Sn,
+        children: [wn, Dn, On, yn]
+    }), t[39] = Sn, t[40] = wn, t[41] = Dn, t[42] = On, t[43] = yn, t[44] = kn) : kn = t[44];
+    let An = kn,
+        jn;
+    t[45] !== Z || t[46] !== U || t[47] !== i ? (jn = e => {
+        Z || e.button !== 0 || U || i()
+    }, t[45] = Z, t[46] = U, t[47] = i, t[48] = jn) : jn = t[48];
+    let Mn = jn,
+        Nn, Pn;
+    t[49] === Symbol.for(`react.memo_cache_sentinel`) ? (Nn = () => {
+        if (typeof window > `u`) return;
+        let e = () => {
+            Me(window.innerHeight)
+        };
+        return window.addEventListener(`resize`, e), () => {
+            window.removeEventListener(`resize`, e)
+        }
+    }, Pn = [], t[49] = Nn, t[50] = Pn) : (Nn = t[49], Pn = t[50]), (0, Q.useEffect)(Nn, Pn);
+    let Fn = !Z && G && !N,
+        In = Fn || fe,
+        Ln;
+    t[51] !== B || t[52] !== jt || t[53] !== K || t[54] !== U || t[55] !== n || t[56] !== P ? (Ln = P && K && !U && !jt && I(B) && n.every(I), t[51] = B, t[52] = jt, t[53] = K, t[54] = U, t[55] = n, t[56] = P, t[57] = Ln) : Ln = t[57];
+    let Rn = Ln,
+        zn = be && nt.canSelect && Rn && G && !N && L === F.CHATGPT_IMAGE_LIGHTBOX_SOURCE_TYPE_CONVERSATION,
+        Bn = Z && !Mt || !zn ? `focused` : Ne,
+        Vn = Rn && Bn === `focused` && (!Z || X) && (L === F.CHATGPT_IMAGE_LIGHTBOX_SOURCE_TYPE_CONVERSATION || L === F.CHATGPT_IMAGE_LIGHTBOX_SOURCE_TYPE_IMAGE_LIBRARY),
+        Hn;
+    t[58] !== X || t[59] !== Rn ? (Hn = (Rn || X) && !d()?.hasPaidSubscription(), t[58] = X, t[59] = Rn, t[60] = Hn) : Hn = t[60];
+    let Un = Hn,
+        Wn;
+    if (t[61] !== zn || t[62] !== n) {
+        bb0: {
+            let e = new Map;
+            if (!zn) {
+                Wn = e;
+                break bb0
+            }
+            n.forEach((t, n) => {
+                e.set(Pt(t, n), {
+                    media: t,
+                    index: n
+                })
+            }),
+            Wn = e
+        }
+        t[61] = zn,
+        t[62] = n,
+        t[63] = Wn
+    }
+    else Wn = t[63];
+    let Gn = Wn,
+        Kn;
+    t[64] !== B || t[65] !== zn || t[66] !== X || t[67] !== R || t[68] !== H || t[69] !== Rn || t[70] !== Un ? (Kn = (Rn || X) && I(B) ? {
+        id: zn ? Pt(B, R) : se(B),
+        src: he(B, Un),
+        alt: B.title?.trim() || H.formatMessage(on.untitledCanvasImageLabel, {
+            number: R + 1
+        })
+    } : null, t[64] = B, t[65] = zn, t[66] = X, t[67] = R, t[68] = H, t[69] = Rn, t[70] = Un, t[71] = Kn) : Kn = t[71];
+    let qn = Kn,
+        Jn;
+    bb1: {
+        if (!zn) {
+            let e;
+            t[72] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[72] = e) : e = t[72], Jn = e;
+            break bb1
+        }
+        let e;t[73] === n ? e = t[74] : (e = De(n), t[73] = n, t[74] = e);
+        let r = e,
+            i;
+        if (t[75] !== r || t[76] !== H || t[77] !== n || t[78] !== Un) {
+            let e;
+            t[80] !== r || t[81] !== H || t[82] !== Un ? (e = (e, t, n) => {
+                if (!I(t)) return e;
+                let i = {
+                    id: Pt(t, n),
+                    src: he(t, Un),
+                    width: t.width > 0 ? t.width : void 0,
+                    height: t.height > 0 ? t.height : void 0,
+                    alt: t.title?.trim() || H.formatMessage(on.untitledCanvasImageLabel, {
+                        number: n + 1
+                    })
+                };
+                return e.length === 0 || r[n] ? e.push({
+                    id: i.id,
+                    images: [i],
+                    label: t.title?.trim() || (t.createdAt ? H.formatDate(t.createdAt, {
+                        dateStyle: `medium`,
+                        timeStyle: `short`
+                    }) : i.alt)
+                }) : e[e.length - 1].images.push(i), e
+            }, t[80] = r, t[81] = H, t[82] = Un, t[83] = e) : e = t[83], i = n.reduce(e, []), t[75] = r, t[76] = H, t[77] = n, t[78] = Un, t[79] = i
+        } else i = t[79];Jn = i
+    }
+    let Yn = Jn,
+        Xn;
+    bb2: {
+        if (ot == null || ot === `navigate`) {
+            Xn = void 0;
+            break bb2
+        }
+        let e;
+        if (t[84] !== st || t[85] !== n) {
+            let r;
+            t[87] === st ? r = t[88] : (r = (e, t) => I(e) && st?.has(e.assetPointer ?? e.id) ? [Pt(e, t)] : [], t[87] = st, t[88] = r), e = n.flatMap(r), t[84] = st, t[85] = n, t[86] = e
+        } else e = t[86];Xn = e
+    }
+    let Zn = Xn,
+        Qn;
+    t[89] !== ot || t[90] !== st || t[91] !== Gn || t[92] !== ct ? (Qn = e => {
+        let t = Gn.get(e.id);
+        if (t == null) return;
+        let {
+            media: n,
+            index: r
+        } = t;
+        if (ot === `select` && st != null && ct != null && I(n)) {
+            let e = st.has(n.assetPointer ?? n.id);
+            e || Ae(r), ct(n, e);
+            return
+        }
+        Ae(r)
+    }, t[89] = ot, t[90] = st, t[91] = Gn, t[92] = ct, t[93] = Qn) : Qn = t[93];
+    let $n = Qn,
+        er = Kt,
+        tr;
+    t[94] === Gn ? tr = t[95] : (tr = e => {
+        let t = Gn.get(e.id);
+        return t == null ? null : er(t.media, e.alt)
+    }, t[94] = Gn, t[95] = tr);
+    let nr = tr,
+        rr;
+    t[96] !== lt || t[97] !== Ne || t[98] !== qe ? (rr = e => {
+        if (e === Ne) return;
+        let t = We.current;
+        t != null && (We.current = null, t.oncancel = null, t.onfinish = null, t.cancel());
+        let n = Re.current?.getBoundingClientRect();
+        (0, an.flushSync)(() => {
+            Pe(e)
+        }), lt?.(e);
+        let r = Re.current;
+        e === `canvas` && r != null && $e(r);
+        let i = r?.getBoundingClientRect();
+        if (qe || n == null || n.width <= 0 || n.height <= 0 || i == null || i.width <= 0 || i.height <= 0 || r == null || typeof r.animate != `function`) return;
+        let a = n.left - i.left,
+            o = n.top - i.top,
+            s = n.width / i.width,
+            c = n.height / i.height,
+            l = r.animate([{
+                transform: `translate(${a}px, ${o}px) scale(${s}, ${c})`,
+                transformOrigin: `top left`
+            }, {
+                transform: `none`,
+                transformOrigin: `top left`
+            }], {
+                duration: 450,
+                easing: `cubic-bezier(0.22, 1, 0.36, 1)`,
+                fill: `both`
+            });
+        We.current = l;
+        let u = () => {
+            We.current === l && (We.current = null, l.oncancel = null, l.onfinish = null, l.cancel())
+        };
+        l.oncancel = u, l.onfinish = u
+    }, t[96] = lt, t[97] = Ne, t[98] = qe, t[99] = rr) : rr = t[99];
+    let ir = rr,
+        ar;
+    t[100] === Symbol.for(`react.memo_cache_sentinel`) ? (ar = e => {
+        Re.current = e, ze(e)
+    }, t[100] = ar) : ar = t[100];
+    let or = ar,
+        sr = ke && I(B) ? B : void 0,
+        cr;
+    t[101] === sr ? cr = t[102] : (cr = sr ?? {}, t[101] = sr, t[102] = cr);
+    let {
+        conversationId: lr,
+        messageId: ur,
+        assetPointer: dr
+    } = cr, fr = sr?.imageGenAttribution?.is_delayed, pr = sr?.imageGenAttribution?.async_completion_id, mr;
+    t[103] === sr ? mr = t[104] : (mr = sr ? he(sr, !d()?.hasPaidSubscription()) : void 0, t[103] = sr, t[104] = mr);
+    let hr = mr,
+        gr, _r;
+    t[105] !== z || t[106] !== dr || t[107] !== pr || t[108] !== lr || t[109] !== fr || t[110] !== ur || t[111] !== hr ? (gr = () => {
+        if (!(z instanceof HTMLImageElement) || !lr || !ur || !dr || fr == null || !hr || hr.startsWith(`data:`)) return;
+        let e = z,
+            t = e.src;
+        return ht({
+            element: e,
+            conversationId: lr,
+            messageId: ur,
+            attribution: {
+                is_delayed: fr,
+                async_completion_id: pr
+            },
+            isCurrentImage: () => Re.current === e && e.src === t
+        })
+    }, _r = [z, lr, ur, dr, hr, fr, pr], t[105] = z, t[106] = dr, t[107] = pr, t[108] = lr, t[109] = fr, t[110] = ur, t[111] = hr, t[112] = gr, t[113] = _r) : (gr = t[112], _r = t[113]), (0, Q.useEffect)(gr, _r);
+    let vr;
+    t[114] !== Y || t[115] !== V || t[116] !== X || t[117] !== H || t[118] !== J || t[119] !== Ie ? (vr = e => {
+        let t = (0, $.jsx)(Nt, {
+            ...e,
+            helpText: J ? H.formatMessage(_t.zoomHelpText) : V == null ? Y ? H.formatMessage(Ke.zoomHelpText) : void 0 : H.formatMessage(Je.zoomHelpText)
+        });
+        return Ie == null ? X ? t : null : (0, an.createPortal)(t, Ie)
+    }, t[114] = Y, t[115] = V, t[116] = X, t[117] = H, t[118] = J, t[119] = Ie, t[120] = vr) : vr = t[120];
+    let yr = vr,
+        br = (e, t) => I(B) ? (0, $.jsx)(Qe.ZoomableStage, {
+            imageRef: or,
+            unpadded: t,
+            overflowViewportRef: Vn ? bt : void 0,
+            zoomedImageLabel: qn?.alt ?? B.title ?? ``,
+            onViewportInteractionStart: it == null ? V?.onViewportInteractionStart ?? (() => Ue.current?.()) : () => it.drawingCanvasRef.current?.cancelDrawing(),
+            shouldPanOnPointerDown: V?.shouldPanOnPointerDown,
+            panOnDrag: Y && !J && V == null,
+            renderOverlay: it == null ? V == null ? Y && at != null ? e => (0, $.jsx)(Ge, {
+                image: B,
+                viewport: e,
+                cancelInteractionRef: Ue,
+                ...at
+            }) : b : t => V.renderStage({
+                image: B,
+                isMobile: e,
+                viewport: t
+            }) : e => (0, $.jsx)(Ct, {
+                image: B,
+                ...it,
+                viewport: e
+            }),
+            renderZoomControls: yr
+        }) : null,
+        xr;
+    t[121] !== R || t[122] !== n || t[123] !== fe || t[124] !== Fn ? (xr = Fn ? (0, $.jsx)(`div`, {
+        onPointerDown: Gt,
+        children: (0, $.jsx)(Te, {
+            media: n,
+            index: R,
+            setIndex: Ae,
+            wheelHostRef: yt
+        })
+    }) : fe ? (0, $.jsx)(`div`, {
+        className: `h-full w-24`
+    }) : null, t[121] = R, t[122] = n, t[123] = fe, t[124] = Fn, t[125] = xr) : xr = t[125];
+    let Sr = xr,
+        Cr = X && `relative isolate`,
+        wr = K && (ge ? `bg-(--main-surface-primary)` : `bg-token-bg-primary`),
+        Tr;
+    t[126] !== Cr || t[127] !== wr ? (Tr = D(`relative h-full min-h-0`, Cr, wr), t[126] = Cr, t[127] = wr, t[128] = Tr) : Tr = t[128];
+    let Er = V?.onKeyDown,
+        Dr = K && Ce ? Mn : void 0,
+        Or;
+    t[129] !== z || t[130] !== y ? (Or = y?.(z), t[129] = z, t[130] = y, t[131] = Or) : Or = t[131];
+    let kr;
+    t[132] !== V || t[133] !== U ? (kr = V == null ? null : (0, $.jsx)(`div`, {
+        className: D(`pointer-events-none absolute inset-x-0 top-16 z-50 flex justify-center px-4`, !U && `md:top-2`),
+        children: (0, $.jsx)(`div`, {
+            className: `pointer-events-auto max-w-full min-w-0`,
+            onPointerDown: Wt,
+            children: V.toolbar
+        })
+    }), t[132] = V, t[133] = U, t[134] = kr) : kr = t[134];
+    let Ar = U ? (0, $.jsxs)(`div`, {
+            className: `grid h-full min-h-0 w-full grid-rows-[minmax(0,1fr)_auto] overflow-hidden`,
+            children: [(0, $.jsx)(`ol`, {
+                ref: kt,
+                "data-testid": `lightbox-mobile-carousel`,
+                className: D(`no-scrollbar flex h-full snap-x snap-mandatory scroll-smooth`, X && `invisible col-start-1 row-start-1`, Z || N ? `overflow-hidden` : `overflow-x-auto`),
+                children: n.map((e, t) => {
+                    let n = `${se(e)}-${t}`,
+                        r = jt && rt != null && I(e) && t === R ? {
+                            image: e,
+                            drawingState: rt.drawingState,
+                            drawingCanvasRef: rt.drawingCanvasRef
+                        } : null;
+                    return (0, $.jsx)(`li`, {
+                        "data-position": t,
+                        className: D(`flex h-full w-full flex-shrink-0 snap-start snap-always items-center justify-center px-4`, y != null && `pb-24`, fn && `pt-4`),
+                        children: r ? (0, $.jsx)(ft, {
+                            image: r.image,
+                            drawingState: r.drawingState,
+                            drawingCanvasRef: r.drawingCanvasRef
+                        }) : (0, $.jsx)(Ft, {
+                            media: e,
+                            presentation: `mobile`,
+                            isActiveSlide: t === R,
+                            imageRef: t === R && !X ? or : void 0
+                        })
+                    }, n)
+                })
+            }), X && qn != null ? (0, $.jsx)(`div`, {
+                className: D(`relative col-start-1 row-start-1 h-full min-h-0 min-w-0 px-4`, y != null && `pb-24`, fn && `pt-4`),
+                children: (0, $.jsx)(Qe, {
+                    image: qn,
+                    children: br(!0, !0)
+                })
+            }) : null, (0, $.jsxs)(`div`, {
+                className: D(`no-scrollbar flex flex-col gap-2`, !J && `py-4`, Y || z != null ? `overflow-visible` : `overflow-hidden`),
+                children: [(0, $.jsx)(`div`, {
+                    ref: He,
+                    className: `empty:hidden`
+                }), dn && (0, $.jsx)(Ee, {
+                    media: n,
+                    index: R,
+                    setIndex: Ae,
+                    carouselRef: pt,
+                    externalSyncTargetIndexRef: Ye
+                }), J ? (0, $.jsx)(`div`, {
+                    className: `hidden`,
+                    children: W
+                }) : (0, $.jsx)(`div`, {
+                    className: D(`px-4`, Y && `flex items-end overflow-visible transition-[height] duration-200 ease-out motion-reduce:transition-none`, Y && It),
+                    children: W
+                })]
+            })]
+        }) : Rn && qn != null ? (0, $.jsxs)(`div`, {
+            ref: bt,
+            className: D(`relative grid h-full min-h-0 w-full grid-rows-[minmax(0,1fr)_auto] justify-items-center overflow-y-auto overscroll-contain px-4 pb-9`, Vn && `has-[[data-zoomed=true]]:overflow-hidden`),
+            "data-artifact-preview-scroll-root": !0,
+            children: [zn && !Z ? (0, $.jsxs)(`div`, {
+                role: `group`,
+                "aria-label": H.formatMessage(on.imageViewToggleLabel),
+                className: `bg-token-bg-elevated-primary border-token-border-default absolute start-2 top-2 z-40 inline-flex -translate-y-px items-center gap-0.5 rounded-full border p-1 shadow-sm`,
+                onPointerDown: Ut,
+                children: [(0, $.jsx)(`button`, {
+                    type: `button`,
+                    "aria-label": H.formatMessage(on.focusedViewLabel),
+                    "aria-pressed": Bn === `focused`,
+                    className: D(`interactive-button focus-visible:ring-token-focus flex size-8 items-center justify-center rounded-full focus-visible:ring-2 focus-visible:outline-none`, Bn === `focused` ? `bg-token-text-primary/5 text-token-text-primary hover:bg-token-text-primary/10` : `text-token-text-tertiary hover:bg-token-bg-secondary`),
+                    onClick: () => ir(`focused`),
+                    children: (0, $.jsx)(Ze, {
+                        className: `icon-sm`,
+                        "aria-hidden": `true`
+                    })
+                }), (0, $.jsx)(`button`, {
+                    type: `button`,
+                    "aria-label": H.formatMessage(on.canvasViewLabel),
+                    "aria-pressed": Bn === `canvas`,
+                    className: D(`interactive-button focus-visible:ring-token-focus flex size-8 items-center justify-center rounded-full focus-visible:ring-2 focus-visible:outline-none`, Bn === `canvas` ? `bg-token-text-primary/5 text-token-text-primary hover:bg-token-text-primary/10` : `text-token-text-tertiary hover:bg-token-bg-secondary`),
+                    onClick: () => ir(`canvas`),
+                    children: (0, $.jsx)(et, {
+                        className: `icon-sm`,
+                        "aria-hidden": `true`
+                    })
+                })]
+            }) : null, (0, $.jsx)(`div`, {
+                ref: yt,
+                className: D(`h-full min-h-0 w-full pt-10`, y == null ? `pb-6` : `pb-32`, Vn && `[&_[data-zoomed=true]]:overflow-visible!`, `[--color-border-subtle:var(--border-light)] [--shadow-300:var(--shadow-lg)]`, `[--image-viewer-canvas-selection-shadow:0_0_0_2px_var(--bg-primary),0_0_0_4px_var(--border-heavy)]`),
+                onPointerDown: Ht,
+                children: (0, $.jsxs)(Qe, {
+                    image: qn,
+                    children: [Fn && Bn === `focused` ? (0, $.jsx)(`div`, {
+                        className: `absolute inset-y-0 -start-6 z-10 flex items-center`,
+                        children: Sr
+                    }) : null, Bn === `canvas` ? (0, $.jsx)(Qe.Canvas, {
+                        groups: Yn,
+                        activeImageId: qn.id,
+                        activeImageRef: or,
+                        onSelectImage: $n,
+                        selectedImageIds: Zn,
+                        renderImage: Mt ? nr : void 0
+                    }) : Vn || X ? br(!1, !1) : (0, $.jsx)(Qe.Stage, {
+                        imageRef: or
+                    })]
+                })
+            }), (0, $.jsx)(`div`, {
+                className: D(`flex w-full items-end justify-center`, Vn && `pointer-events-none relative z-10`, W != null && `min-h-16`),
+                onPointerDown: Vt,
+                children: W
+            })]
+        }) : (0, $.jsxs)(`div`, {
+            ref: yt,
+            className: D(`grid h-full w-full items-center overflow-y-auto overscroll-contain`, Oe ? `grid-cols-[auto_minmax(0,1fr)_auto]` : K && In ? `grid-cols-[auto_1fr]` : K ? `grid-cols-[1fr]` : `grid-cols-[1fr_auto]`),
+            "data-artifact-preview-scroll-root": !0,
+            children: [!K && Oe ? (0, $.jsx)(`div`, {
+                className: `h-full w-24`
+            }) : null, K && In ? Sr : null, (0, $.jsxs)(`div`, {
+                className: `grid h-full min-h-0 w-full grid-rows-[minmax(0,1fr)_auto] justify-items-center px-4 pb-9`,
+                children: [B && (0, $.jsx)(`div`, {
+                    onPointerDown: Bt,
+                    className: D(`h-full min-h-0 w-full pt-9`, y == null ? `pb-9` : `pb-32`),
+                    children: X && qn != null ? (0, $.jsx)(Qe, {
+                        image: qn,
+                        children: br(!1, !0)
+                    }) : jt && I(B) ? (0, $.jsx)(ft, {
+                        image: B,
+                        drawingState: rt.drawingState,
+                        drawingCanvasRef: rt.drawingCanvasRef
+                    }) : (0, $.jsx)(`div`, {
+                        className: D(`relative flex h-full items-center justify-center`, V == null && (K ? ge ? `bg-(--main-surface-primary) rounded` : `bg-token-bg-primary rounded` : `rounded bg-neutral-100`)),
+                        children: (0, $.jsx)(Ft, {
+                            media: B,
+                            presentation: `desktop`,
+                            isActiveSlide: !0,
+                            imageRef: or
+                        })
+                    })
+                }, se(B)), (0, $.jsx)(`div`, {
+                    className: D(`flex w-full justify-center`, Y && `items-end overflow-visible transition-[height] duration-200 ease-out motion-reduce:transition-none`, Y && It),
+                    onPointerDown: zt,
+                    children: W
+                })]
+            }), K && Oe ? (0, $.jsx)(`div`, {
+                className: `h-full w-24`
+            }) : null, K ? null : Sr]
+        }),
+        jr;
+    t[135] !== Tr || t[136] !== Er || t[137] !== Dr || t[138] !== Or || t[139] !== kr || t[140] !== Ar ? (jr = (0, $.jsxs)(`div`, {
+        className: Tr,
+        "data-testid": `lightbox-new-body-surface`,
+        role: `presentation`,
+        onKeyDown: Er,
+        onPointerDown: Dr,
+        children: [Or, kr, Ar]
+    }), t[135] = Tr, t[136] = Er, t[137] = Dr, t[138] = Or, t[139] = kr, t[140] = Ar, t[141] = jr) : jr = t[141];
+    let Mr = jr,
+        Nr = un,
+        Pr = Bn === `focused` ? z : null,
+        Fr;
+    t[142] !== B || t[143] !== xt || t[144] !== R || t[145] !== Be || t[146] !== Pr ? (Fr = {
+        activeMedia: B,
+        activeImage: Pr,
+        mobileImageActionsHost: Be,
+        index: R,
+        headerVariant: xt
+    }, t[142] = B, t[143] = xt, t[144] = R, t[145] = Be, t[146] = Pr, t[147] = Fr) : Fr = t[147];
+    let Ir = j == null ? K ? (0, $.jsxs)(ce, {
+            open: !0,
+            onOpenChange: e => {
+                e || i()
+            },
+            accessibleTitle: hn,
+            contentRef: vt,
+            onOpenAutoFocus: ie,
+            onEscapeKeyDown: V?.onEscapeKeyDown,
+            children: [An, (0, $.jsxs)(ce.Contents, {
+                className: `overflow-hidden`,
+                children: [Mr, gt]
+            })]
+        }) : (0, $.jsx)(p.Root, {
+            isOpen: !0,
+            onClose: i,
+            testId: `modal-lightbox-new`,
+            shouldIgnoreClickOutside: Z || xe,
+            children: (0, $.jsx)(p.Overlay, {
+                children: (0, $.jsxs)(p.Content, {
+                    size: `fullscreen`,
+                    removePopoverStyling: !0,
+                    removeBackground: Se,
+                    className: D(`grid min-h-0 grid-rows-[auto_minmax(0,1fr)] overflow-hidden`, Se && `bg-token-bg-primary/50 dark:bg-token-bg-primary/75 starting:backdrop-blur-0 backdrop-blur-lg ease-out motion-safe:transition-[filter,background-color] starting:opacity-0`),
+                    onPointerDownInside: Ce ? Mn : void 0,
+                    onPointerDownOutside: Z || xe ? Rt : void 0,
+                    children: [(0, $.jsx)(p.Header, {
+                        title: hn,
+                        visuallyHiddenHeader: !0
+                    }), (0, $.jsx)(`div`, {
+                        onPointerDown: Lt,
+                        children: (0, $.jsxs)(Qt, {
+                            children: [(0, $.jsxs)(`div`, {
+                                className: `grid w-full grid-cols-[auto_1fr] items-start justify-between gap-1 md:gap-2`,
+                                children: [(0, $.jsx)(ye, {
+                                    icon: a,
+                                    onClick: i,
+                                    "aria-label": V?.closeLabel ?? H.formatMessage({
+                                        id: `EYLKSm`,
+                                        defaultMessage: `Close`
+                                    })
+                                }), _n(pn && (0, $.jsx)(`h2`, {
+                                    className: D(`line-clamp-1 self-center text-base font-medium`, !me(B) && `md:line-clamp-none`),
+                                    children: pn
+                                }))]
+                            }), mt]
+                        })
+                    }), Mr, gt]
+                })
+            })
+        }) : j({
+            accessibleTitle: hn,
+            body: (0, $.jsxs)($.Fragment, {
+                children: [Mr, gt]
+            }),
+            floatingToolbar: mn ? mt : null,
+            headerActions: mn ? null : mt,
+            headerTitleContent: k,
+            renderHeaderTitle: _n,
+            hideCloseButton: !1,
+            onClose: i,
+            title: pn,
+            zoomControlsPortalHost: yn
+        }),
+        Lr;
+    return t[148] !== Nr.Provider || t[149] !== Fr || t[150] !== Ir ? (Lr = (0, $.jsx)(Nr.Provider, {
+        value: Fr,
+        children: Ir
+    }), t[148] = Nr.Provider, t[149] = Fr, t[150] = Ir, t[151] = Lr) : Lr = t[151], Lr
+}
+
+function Lt(e) {
+    return e.stopPropagation()
+}
+
+function Rt(e) {
+    return e.preventDefault()
+}
+
+function zt(e) {
+    return e.stopPropagation()
+}
+
+function Bt(e) {
+    return e.stopPropagation()
+}
+
+function Vt(e) {
+    return e.stopPropagation()
+}
+
+function Ht(e) {
+    return e.stopPropagation()
+}
+
+function Ut(e) {
+    return e.stopPropagation()
+}
+
+function Wt(e) {
+    return e.stopPropagation()
+}
+
+function Gt(e) {
+    return e.stopPropagation()
+}
+
+function Kt(e, t) {
+    return I(e) ? (0, $.jsx)(Ue, {
+        image: e,
+        imageLabel: t
+    }) : null
+}
+
+function qt(e) {
+    return e?.onViewChange
+}
+
+function Jt(e) {
+    return e?.onImageActivate
+}
+
+function Yt(e) {
+    return e?.activeTool == null ? void 0 : e.attachmentIds
+}
+
+function Xt(e) {
+    return e?.activeTool
+}
+
+function Zt() {
+    return typeof window > `u` ? 640 : window.innerHeight
+}
+
+function Qt(e) {
+    "use forget";
+    let t = (0, rn.c)(2),
+        {
+            children: n
+        } = e,
+        r;
+    return t[0] === n ? r = t[1] : (r = (0, $.jsx)(`header`, {
+        className: `grid w-full grid-cols-[auto_1fr] gap-1 p-2`,
+        children: n
+    }), t[0] = n, t[1] = r), r
+}
+
+function $t(e) {
+    "use forget";
+    let t = (0, rn.c)(9),
+        {
+            children: n,
+            inert: r
+        } = e,
+        {
+            activeMedia: i
+        } = (0, Q.useContext)(un),
+        a;
+    t[0] !== i || t[1] !== n ? (a = typeof n == `function` ? n({
+        activeMedia: i
+    }) : n, t[0] = i, t[1] = n, t[2] = a) : a = t[2];
+    let o = a,
+        s = r ? `pointer-events-none` : `pointer-events-auto`,
+        c;
+    t[3] === s ? c = t[4] : (c = D(`w-full max-w-3xl`, s), t[3] = s, t[4] = c);
+    let l = r || void 0,
+        u;
+    return t[5] !== o || t[6] !== c || t[7] !== l ? (u = (0, $.jsx)(`footer`, {
+        className: c,
+        inert: l,
+        children: o
+    }), t[5] = o, t[6] = c, t[7] = l, t[8] = u) : u = t[8], u
+}
+
+function en(e) {
+    "use forget";
+    let t = (0, rn.c)(12),
+        {
+            children: n,
+            inert: r
+        } = e,
+        {
+            activeImage: i,
+            mobileImageActionsHost: a
+        } = (0, Q.useContext)(un),
+        [o, s] = (0, Q.useState)(null),
+        c = (0, Q.useRef)(null),
+        l, u;
+    t[0] !== i || t[1] !== o ? (l = () => {
+        let e = c.current;
+        if (i == null || o == null || e == null) return;
+        let t = Ie(i, o, () => {
+            let t = i.getBoundingClientRect().bottom,
+                n = o.getBoundingClientRect().top;
+            e.style.transform = `translateY(${t-n}px)`
+        }, {
+            animationFrame: !0
+        });
+        return () => {
+            t(), e.style.transform = ``
+        }
+    }, u = [i, o], t[0] = i, t[1] = o, t[2] = l, t[3] = u) : (l = t[2], u = t[3]), (0, Q.useEffect)(l, u);
+    let d = r || void 0,
+        f;
+    t[4] === n ? f = t[5] : (f = (0, $.jsx)(`div`, {
+        ref: c,
+        className: `flex justify-center pt-4`,
+        children: n
+    }), t[4] = n, t[5] = f);
+    let p;
+    t[6] !== d || t[7] !== f ? (p = (0, $.jsx)(`div`, {
+        ref: s,
+        className: `w-full`,
+        inert: d,
+        children: f
+    }), t[6] = d, t[7] = f, t[8] = p) : p = t[8];
+    let m = p,
+        h;
+    return t[9] !== m || t[10] !== a ? (h = a == null ? m : (0, an.createPortal)(m, a), t[9] = m, t[10] = a, t[11] = h) : h = t[11], h
+}
+
+function tn(e) {
+    "use forget";
+    let t = (0, rn.c)(12),
+        {
+            children: n,
+            inert: r
+        } = e,
+        {
+            activeMedia: i,
+            headerVariant: a
+        } = (0, Q.useContext)(un),
+        o;
+    if (t[0] !== i || t[1] !== n || t[2] !== a) {
+        let e = typeof n == `function` ? n({
+            activeMedia: i,
+            headerVariant: a
+        }) : n;
+        o = [], Q.Children.forEach(e, e => {
+            (0, Q.isValidElement)(e) && o.push(e)
+        }), t[0] = i, t[1] = n, t[2] = a, t[3] = o
+    } else o = t[3];
+    let s = r && `pointer-events-none`,
+        c;
+    t[4] === s ? c = t[5] : (c = D(`ms-auto flex items-baseline justify-end gap-2`, s), t[4] = s, t[5] = c);
+    let l = r || void 0,
+        u;
+    t[6] === o ? u = t[7] : (u = o.map(nn), t[6] = o, t[7] = u);
+    let d;
+    return t[8] !== c || t[9] !== l || t[10] !== u ? (d = (0, $.jsx)(`div`, {
+        className: c,
+        inert: l,
+        children: u
+    }), t[8] = c, t[9] = l, t[10] = u, t[11] = d) : d = t[11], d
+}
+
+function nn(e, t) {
+    return (0, $.jsx)(Q.Fragment, {
+        children: e
+    }, t)
+}
+var rn, Q, an, $, on, sn, cn, ln, un, dn, fn = e((() => {
+    rn = ne(), fe(), L(), R(), m(), o(), Pe(), N(), mt(), gt(), We(), qe(), He(), Ye(), vt(), wt(), ge(), T(), s(), y(), k(), b(), P(), Le(), xe(), tt(), l(), i(), Q = n(j()), an = n(ie()), oe(), Se(), Ce(), Mt(), be(), Oe(), _e(), $ = M(), on = te({
+        imageViewToggleLabel: {
+            id: `imageGenLightbox.imageViewToggleLabel`,
+            defaultMessage: `Image view`
+        },
+        focusedViewLabel: {
+            id: `imageGenLightbox.focusedViewLabel`,
+            defaultMessage: `Focused view`
+        },
+        canvasViewLabel: {
+            id: `imageGenLightbox.canvasViewLabel`,
+            defaultMessage: `Canvas view`
+        },
+        zoomLevelLabel: {
+            id: `imageGenLightbox.zoomLevelLabel`,
+            defaultMessage: `Zoom level, {zoomPercent, number}%`
+        },
+        zoomPercentLabel: {
+            id: `imageGenLightbox.zoomPercentLabel`,
+            defaultMessage: `{zoomPercent, number}%`
+        },
+        fitZoomLabel: {
+            id: `imageGenLightbox.fitZoomLabel`,
+            defaultMessage: `Fit`
+        },
+        untitledCanvasImageLabel: {
+            id: `imageGenLightbox.untitledCanvasImageLabel`,
+            defaultMessage: `Image {number, number}`
+        }
+    }), sn = 400, cn = [25, 50, 75, 100, 125, 150, 200, 300, 400, 500], ln = `z-[130]`, un = (0, Q.createContext)({
+        activeMedia: void 0,
+        index: 0,
+        headerVariant: `legacy`
+    }), dn = {
+        Root: It,
+        Header: Qt,
+        Footer: $t,
+        ImageActions: en,
+        LightboxHeaderActions: tn,
+        Context: un
+    }
+}));
+export {
+    fn as n, Z as r, dn as t
+};
+//# sourceMappingURL=44fdb285-hlhiqenmwucozsu1.js.map

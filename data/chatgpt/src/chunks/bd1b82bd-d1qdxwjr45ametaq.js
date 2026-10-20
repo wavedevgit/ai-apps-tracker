@@ -1,0 +1,152 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Hnt as t,
+    Jnt as n,
+    Jot as r,
+    Knt as i,
+    Tp as a,
+    Vp as o,
+    Z0 as s,
+    Zot as c,
+    e2 as l
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bxt as u,
+    DOt as d,
+    EDt as f,
+    Gxt as p,
+    Hxt as m,
+    Kxt as h,
+    LDt as g,
+    QDt as _,
+    TDt as v,
+    TOt as y,
+    Uxt as b,
+    Vxt as x,
+    ZDt as S,
+    fDt as C,
+    hDt as w,
+    nOt as T,
+    qDt as E,
+    tOt as D,
+    zDt as O
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    cp as k,
+    dp as A,
+    up as j
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+
+function M(e) {
+    return typeof e == `string` && P.has(e)
+}
+var N, P, F, I = e((() => {
+    c(), n(), N = `1799476725`, P = new Set([`files/search`, `files/list`, `files/read`, `files/find`, `files/context_stuff`]), F = r(() => {
+        let e = i(N, {
+            disableExposureLog: !0
+        }).get(`variant`, `unassigned`);
+        switch (e) {
+            case `control`:
+            case `treatment`:
+                return e;
+            default:
+                return `unassigned`
+        }
+    })
+}));
+async function L({
+    conversation: e,
+    fileRef: t,
+    filePreviewEnabled: n,
+    gizmoId: r,
+    clientThreadId: i,
+    mountedLibraryFileId: o,
+    librarySourceMimeType: s
+}) {
+    let c = d({
+            file: t,
+            clientThreadId: e?.id ?? i,
+            mountedLibraryFileId: o,
+            librarySourceMimeType: s
+        }),
+        u = c?.mountedLibraryFileId,
+        f = c?.librarySourceMimeType ?? s,
+        h = C({
+            mountedLibraryFileId: u,
+            sourceMimeType: f
+        });
+    if (!O({
+            fileName: t.name,
+            mimeType: f,
+            mountedLibraryFileId: u
+        })) {
+        h == null ? l(v, {
+            gizmoId: r,
+            fileId: t.id,
+            fileName: t.name,
+            clientThreadId: i,
+            mountedLibraryFileId: u,
+            librarySourceMimeType: f,
+            showDelete: !1
+        }) : window.open(h, `_blank`, `noopener noreferrer`);
+        return
+    }
+    let g = p(),
+        _ = h == null ? {} : {
+            librarySourceMimeType: f,
+            librarySourceUrl: h
+        },
+        y = D({
+            fileName: t.name
+        }) === `pdf`,
+        w = y && M(t.api_tool_source) && F() !== `unassigned`,
+        T = !1;
+    if (!w) {
+        let e = j();
+        T = E(t) && (y ? x() && (e || A()) : e)
+    }
+    if (T) {
+        l(m, {
+            gizmoId: r,
+            fileId: t.id,
+            fileName: t.name,
+            clientThreadId: i,
+            ...S(t),
+            presentationResetKey: g,
+            ..._
+        });
+        return
+    }
+    if (n) {
+        l(b, {
+            gizmoId: r,
+            fileId: t.id,
+            fileName: t.name,
+            clientThreadId: i,
+            ..._
+        });
+        return
+    }
+    await a(t.id, t.name, {
+        conversationId: i,
+        gizmoId: r
+    })
+}
+var R = e((() => {
+    s(), I(), _(), k(), T(), h(), u(), y(), o(), f(), w(), g()
+}));
+
+function z(e) {
+    return t(B, {
+        disableExposureLog: e
+    })
+}
+var B, V, H = e((() => {
+    c(), n(), B = `3165253532`, V = r(() => z(!1)), r(() => z(!0))
+}));
+export {
+    F as a, L as i, V as n, I as o, R as r, M as s, H as t
+};
+//# sourceMappingURL=bd1b82bd-d1qdxwjr45ametaq.js.map

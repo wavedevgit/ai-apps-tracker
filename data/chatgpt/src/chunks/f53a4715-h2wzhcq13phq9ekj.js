@@ -1,0 +1,889 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/05175aed-c2lyclnnm4jg7ebf.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-qsuygr73qjc6rh65.js", "assets/2340486e-komxp8tzs51ny4jj.js", "assets/root-lelxp0l2.css", "assets/conversation-small-cawdu7il3ha6y70c.js", "assets/30901919-jory365vq6ym5crx.js", "assets/c470f5ab-in0lllrdrzeo67gs.js", "assets/0e5afe53-f9gmgfmgrr83ziw3.js", "assets/conversation-small-czggvj2v.css", "assets/3ed411a3-e9fz4l2rt3pjugcf.js", "assets/4e1f6607-l882sx5ufomnxng9.js", "assets/bd043fcd-g2fiy1f6ilnef1i8.js", "assets/23de51ef-lsgpuvmzgstz6u4k.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    At as n,
+    Az as r,
+    Da as i,
+    Ea as a,
+    Hnt as o,
+    J0 as s,
+    Jnt as c,
+    Jt as l,
+    L7 as u,
+    M5 as d,
+    N7 as f,
+    Nat as p,
+    Pat as m,
+    RU as h,
+    S8 as g,
+    Y0 as _,
+    Ynt as v,
+    _nt as y,
+    cn as b,
+    dY as ee,
+    fF as x,
+    hn as S,
+    hnt as C,
+    iF as w,
+    jz as T,
+    m5 as E,
+    m8 as D,
+    nY as te,
+    qnt as ne,
+    uF as re,
+    zU as ie
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as ae,
+    Hn as oe,
+    Pn as se,
+    Rn as ce,
+    Tn as O,
+    Vn as le,
+    ln as ue,
+    un as de,
+    zn as fe
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Ajt as pe,
+    _jn as me,
+    bdt as he,
+    dFn as ge,
+    fFn as _e,
+    gjn as ve,
+    jjt as ye,
+    mVn as be,
+    nKn as k,
+    pVn as xe,
+    tKn as Se,
+    vjn as Ce,
+    ydt as we
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Jy as A,
+    Kv as Te,
+    Rl as Ee,
+    Yy as j,
+    oi as M,
+    qv as De,
+    si as N,
+    zl as Oe
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    Om as ke,
+    km as Ae
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+import {
+    c as je,
+    n as Me
+} from "./3ed411a3-e9fz4l2rt3pjugcf.js";
+import {
+    n as Ne,
+    t as P
+} from "./bd043fcd-g2fiy1f6ilnef1i8.js";
+
+function F(e) {
+    return typeof e == `object` && !!e
+}
+
+function I(e) {
+    return Array.isArray(e) && e.every(e => typeof e == `string`)
+}
+
+function L(e, t) {
+    return Object.keys(e).length === t.length && t.every(t => Object.prototype.hasOwnProperty.call(e, t))
+}
+
+function R(e, t) {
+    if (typeof e != `string` || !B(e, Ue)) return !1;
+    let n = We.exec(e);
+    if (z(e) || n == null || n[1].includes(`@`)) return !1;
+    try {
+        let n = new URL(e);
+        return t.has(n.protocol) && n.username.length === 0 && n.password.length === 0
+    } catch {
+        return !1
+    }
+}
+
+function z(e) {
+    if (U.test(e)) return !0;
+    for (let t = 0; t < e.length; t += 1) {
+        let n = e.charCodeAt(t);
+        if (n <= 31 || n >= 127 && n <= 159) return !0
+    }
+    return !1
+}
+
+function B(e, t) {
+    return e.length <= t && V(e) <= t
+}
+
+function V(e) {
+    if (typeof TextEncoder < `u`) return new TextEncoder().encode(e).byteLength;
+    let t = 0;
+    for (let n = 0; n < e.length; n += 1) {
+        let r = e.charCodeAt(n);
+        if (r < 128) t += 1;
+        else if (r < 2048) t += 2;
+        else if (r >= 55296 && r <= 56319) {
+            let r = e.charCodeAt(n + 1);
+            r >= 56320 && r <= 57343 ? (t += 4, n += 1) : t += 3
+        } else t += 3
+    }
+    return t
+}
+
+function Pe(e, t) {
+    try {
+        return B(JSON.stringify(e), t)
+    } catch {
+        return !1
+    }
+}
+
+function Fe(e, t) {
+    if (typeof document > `u`) return !1;
+    try {
+        let n = document.createElement(`template`);
+        n.innerHTML = e;
+        let r = n.content.querySelectorAll(`[data-oai-link-token]`);
+        return r.length === t.length && t.every((e, t) => {
+            let n = r.item(t);
+            return n != null && n.localName === `a` && n.getAttribute(`data-oai-link-token`) === e.token
+        })
+    } catch {
+        return !1
+    }
+}
+
+function Ie(e) {
+    if (!F(e) || !L(e, [`fragment`, `links`]) && !L(e, [`fragment`, `links`, `images`]) || typeof e.fragment != `string` || !B(e.fragment, Ve) || e.fragment.trim().length === 0 || !Array.isArray(e.links) || e.links.length > H || Object.hasOwn(e, `images`) && (!Array.isArray(e.images) || e.images.length > He)) return;
+    let t = [];
+    for (let [n, r] of e.links.entries()) {
+        if (!F(r) || !L(r, [`token`, `url`]) || r.token !== `l${n}` || !R(r.url, Ge)) return;
+        t.push({
+            token: r.token,
+            url: r.url
+        })
+    }
+    if (!Fe(e.fragment, t)) return;
+    let n = [],
+        r = Array.isArray(e.images) ? e.images : [];
+    for (let [e, t] of r.entries()) {
+        if (!F(t) || !L(t, [`token`, `url`]) || t.token !== `i${e}` || !R(t.url, Ke)) return;
+        n.push({
+            token: t.token,
+            url: t.url
+        })
+    }
+    let i = {
+        fragment: e.fragment,
+        links: t,
+        images: n
+    };
+    return Pe(e, Be) ? i : void 0
+}
+
+function Le(e) {
+    try {
+        return Ie(e)
+    } catch {
+        return
+    }
+}
+async function Re({
+    browserDetail: e,
+    source: t,
+    signal: n
+}) {
+    let r = await f.safePost(ze, {
+        requestBody: {
+            browser_detail: e,
+            source: t
+        },
+        signal: n
+    });
+    if (!F(r) || typeof r.sender != `string` || !I(r.to) || !I(r.cc) || !I(r.bcc) || typeof r.subject != `string` || typeof r.body != `string`) throw Error(`Email detail response was malformed.`);
+    let i = Le(r.html_preview);
+    return {
+        sender: r.sender,
+        to: r.to,
+        cc: r.cc,
+        bcc: r.bcc,
+        subject: r.subject,
+        body: r.body,
+        ...typeof r.email_ts == `string` ? {
+            emailTs: r.email_ts
+        } : {},
+        ...i == null ? {} : {
+            htmlPreview: i
+        }
+    }
+}
+var ze, Be, Ve, H, He, Ue, We, U, Ge, Ke, qe = e((() => {
+    u(), ze = `/aip/connectors/email/read_email_detail`, Be = 768 * 1024, Ve = 256 * 1024, H = 256, He = 256, Ue = 2048, We = /^https?:\/\/([^/?#]+)/i, U = /\s/, Ge = new Set([`http:`, `https:`]), Ke = new Set([`https:`])
+}));
+
+function Je(e) {
+    return typeof e != `object` || !e ? !1 : `prompt_message` in e && e.prompt_message != null && `append_messages` in e && Array.isArray(e.append_messages) && `force_genui_prefetch` in e && Array.isArray(e.force_genui_prefetch) && `turn_origin` in e && e.turn_origin === `targeted_reply`
+}
+async function Ye({
+    source: e,
+    subjectLabel: t,
+    signal: n
+}) {
+    let r = {
+            source: e,
+            subject_label: t
+        },
+        i = await f.safePost(Xe, {
+            requestBody: r,
+            signal: n
+        });
+    if (!Je(i)) throw Error(`Prepared email reply response was malformed.`);
+    return {
+        promptMessage: i.prompt_message,
+        appendMessages: i.append_messages,
+        extraStreamParams: {
+            forceGenuiPrefetch: i.force_genui_prefetch,
+            turnOrigin: i.turn_origin
+        }
+    }
+}
+var Xe, Ze = e((() => {
+        u(), Xe = `/aip/connectors/email/prepare_reply`
+    })),
+    Qe, W, $e, et, tt, nt, rt = e((() => {
+        Qe = e => typeof e == `object` && !!e, W = e => typeof e == `string` && e.trim().length > 0, $e = e => Qe(e) && e.type === `gmail` && W(e.message_id), et = e => $e(e.source) ? {
+            source: e.source
+        } : null, tt = e => {
+            let t = e.data;
+            return e.category === `email_preview` && Qe(t) && typeof t.subject == `string` && W(t.sender) && W(t.url) && (t.avatar_url == null || typeof t.avatar_url == `string`) && (t.received_at == null || typeof t.received_at == `string`)
+        }, nt = e => {
+            let {
+                url: t
+            } = e.data, n = et(e.data);
+            return JSON.stringify([t, n?.source.message_id ?? null])
+        }
+    })),
+    G, it, at = e((() => {
+        _(), Ne(), G = le(), de(), it = s(() => ue(() => import(`./05175aed-c2lyclnnm4jg7ebf.js`).then(e => e.EmailExpanded), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])), {
+            loading: () => (0, G.jsx)(`div`, {
+                className: `h-[300px] px-4 pt-3`,
+                children: (0, G.jsx)(P, {})
+            })
+        })
+    }));
+
+function ot(e) {
+    C.logStructuredEvent(`ChatgptEmailPreviewAction`, {
+        action: e,
+        surface: me.CHATGPT_EMAIL_PREVIEW_SURFACE_TYPE_INLINE
+    })
+}
+
+function st(e, t) {
+    E(() => {
+        gt.set(e, e => e[t] ? e : {
+            ...e,
+            [t]: !0
+        }), _t.set(e, e => {
+            if (!e[t]) return e;
+            let {
+                [t]: n, ...r
+            } = e;
+            return r
+        })
+    })
+}
+
+function ct(e, t) {
+    let n = !1;
+    return E(() => {
+        _t.set(e, e => e[t] ? e : (n = !0, {
+            ...e,
+            [t]: !0
+        }))
+    }), n
+}
+
+function lt(e, t) {
+    E(() => {
+        _t.set(e, e => {
+            if (!e[t]) return e;
+            let {
+                [t]: n, ...r
+            } = e;
+            return r
+        })
+    })
+}
+
+function K(e) {
+    return e.trim().charAt(0).toUpperCase()
+}
+
+function q(e) {
+    let t = e.trim(),
+        n = /^(.*?)\s*<([^<>]+)>$/.exec(t);
+    if (n == null) return {
+        name: t,
+        email: null
+    };
+    let r = (n[1]?.trim() ?? ``).replace(/^"(.*)"$/, `$1`).trim(),
+        i = n[2]?.trim() ?? ``;
+    return {
+        name: r.length > 0 ? r : i,
+        email: r.length > 0 && i.length > 0 ? i : null
+    }
+}
+
+function ut(e) {
+    "use forget";
+    let t = (0, ft.c)(50),
+        {
+            avatarUrl: n,
+            isExpanded: r,
+            onSenderActivate: i,
+            receivedAt: a,
+            sender: o,
+            shouldEnableSenderInteraction: s,
+            shouldShowAvatar: c,
+            subject: l,
+            subjectId: u,
+            onAvatarError: d
+        } = e,
+        f = ae(),
+        p, m, h, g, _, v, y;
+    if (t[0] !== n || t[1] !== f || t[2] !== d || t[3] !== a || t[4] !== o || t[5] !== c || t[6] !== l) {
+        ({
+            email: h,
+            name: _
+        } = q(o)), g = h == null ? null : ` <${h}>`;
+        let e;
+        t[14] !== f || t[15] !== l ? (e = f.formatMessage(Q.collapseEmail, {
+            subject: l
+        }), t[14] = f, t[15] = l, t[16] = e) : e = t[16], p = `${_}: ${e}`;
+        let r;
+        if (t[17] !== f || t[18] !== a) {
+            let e = a == null ? null : new Date(a);
+            r = e != null && !Number.isNaN(e.getTime()) ? f.formatDate(e, {
+                day: `numeric`,
+                month: `short`
+            }) : null, t[17] = f, t[18] = a, t[19] = r
+        } else r = t[19];
+        m = r, v = `border-token-border-default bg-token-bg-tertiary text-token-text-secondary flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-full border text-sm font-medium`, y = c && n != null ? (0, Y.jsx)(`img`, {
+            src: n,
+            alt: ``,
+            className: `h-full w-full object-cover`,
+            onError: d
+        }) : K(_), t[0] = n, t[1] = f, t[2] = d, t[3] = a, t[4] = o, t[5] = c, t[6] = l, t[7] = p, t[8] = m, t[9] = h, t[10] = g, t[11] = _, t[12] = v, t[13] = y
+    } else p = t[7], m = t[8], h = t[9], g = t[10], _ = t[11], v = t[12], y = t[13];
+    let b;
+    t[20] !== v || t[21] !== y ? (b = (0, Y.jsx)(`span`, {
+        className: v,
+        children: y
+    }), t[20] = v, t[21] = y, t[22] = b) : b = t[22];
+    let ee = h == null || !s,
+        x;
+    t[23] !== p || t[24] !== r || t[25] !== i || t[26] !== h || t[27] !== g || t[28] !== _ || t[29] !== s ? (x = e => h != null && i != null ? (0, Y.jsxs)(`button`, {
+        ...e,
+        type: `button`,
+        "aria-label": r ? p : h,
+        className: `pointer-events-auto block min-w-0 truncate rounded-sm text-start focus-visible:outline-2 focus-visible:outline-offset-2`,
+        onClick: i,
+        children: [_, (0, Y.jsx)(`bdi`, {
+            "aria-hidden": `true`,
+            dir: `ltr`,
+            hidden: !r,
+            children: g
+        })]
+    }) : (0, Y.jsx)(`span`, {
+        ...e,
+        "aria-label": h ?? _,
+        className: h == null || !s ? `block min-w-0 truncate` : `pointer-events-auto block min-w-0 truncate rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2`,
+        tabIndex: h == null || !s ? void 0 : 0,
+        children: _
+    }), t[23] = p, t[24] = r, t[25] = i, t[26] = h, t[27] = g, t[28] = _, t[29] = s, t[30] = x) : x = t[30];
+    let S;
+    t[31] !== h || t[32] !== ee || t[33] !== x ? (S = (0, Y.jsx)(pe, {
+        disabled: ee,
+        content: h,
+        side: `top-center`,
+        children: x
+    }), t[31] = h, t[32] = ee, t[33] = x, t[34] = S) : S = t[34];
+    let C;
+    t[35] !== a || t[36] !== m ? (C = m != null && (0, Y.jsxs)(Y.Fragment, {
+        children: [(0, Y.jsx)(`span`, {
+            "aria-hidden": `true`,
+            children: $
+        }), (0, Y.jsx)(`time`, {
+            className: `shrink-0`,
+            dateTime: a ?? void 0,
+            children: m
+        })]
+    }), t[35] = a, t[36] = m, t[37] = C) : C = t[37];
+    let w;
+    t[38] !== S || t[39] !== C ? (w = (0, Y.jsxs)(`span`, {
+        className: `text-token-text-tertiary flex min-w-0 items-center gap-1 text-sm leading-5`,
+        children: [S, C]
+    }), t[38] = S, t[39] = C, t[40] = w) : w = t[40];
+    let T;
+    t[41] !== l || t[42] !== u ? (T = (0, Y.jsx)(`span`, {
+        id: u,
+        className: `text-token-text-primary line-clamp-2 text-base leading-6 break-words`,
+        children: l
+    }), t[41] = l, t[42] = u, t[43] = T) : T = t[43];
+    let E;
+    t[44] !== w || t[45] !== T ? (E = (0, Y.jsxs)(`span`, {
+        className: `min-w-0 flex-1`,
+        children: [w, T]
+    }), t[44] = w, t[45] = T, t[46] = E) : E = t[46];
+    let D;
+    return t[47] !== E || t[48] !== b ? (D = (0, Y.jsxs)(Y.Fragment, {
+        children: [b, E]
+    }), t[47] = E, t[48] = b, t[49] = D) : D = t[49], D
+}
+
+function dt(e) {
+    "use forget";
+    let t = (0, ft.c)(111),
+        {
+            clientThreadId: n,
+            contentReference: r
+        } = e,
+        a = ae(),
+        o = (0, J.useId)(),
+        s = (0, J.useId)(),
+        c = l(),
+        u = (0, J.useRef)(null),
+        f = (0, J.useRef)(null),
+        p = (0, J.useRef)(!1),
+        g = (0, J.useRef)(null),
+        _ = (0, J.useRef)(null),
+        y = (0, J.useRef)(!1),
+        x = (0, J.useRef)(null),
+        [C, w] = (0, J.useState)(null),
+        [T, E] = (0, J.useState)(),
+        [D, te] = (0, J.useState)(!1),
+        [ie, oe] = (0, J.useState)(null),
+        ce;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (ce = {
+        status: `idle`
+    }, t[0] = ce) : ce = t[0];
+    let [O, le] = (0, J.useState)(ce), {
+        sender: ue,
+        subject: de,
+        url: fe
+    } = r.data, pe = W(r.data.avatar_url) ? r.data.avatar_url : void 0, me;
+    t[1] !== r.data.received_at || t[2] !== O ? (me = W(r.data.received_at) ? r.data.received_at : O.status === `loaded` ? O.detail.emailTs : void 0, t[1] = r.data.received_at, t[2] = O, t[3] = me) : me = t[3];
+    let ge = me,
+        ye = i(),
+        be = ee(n),
+        k = je(be, pe ?? void 0),
+        Ce = je(be, fe),
+        we;
+    t[4] === r.data ? we = t[5] : (we = et(r.data), t[4] = r.data, t[5] = we);
+    let A = we,
+        Te;
+    t[6] === n ? Te = t[7] : (Te = n == null ? null : re(n), t[6] = n, t[7] = Te);
+    let j = Te,
+        M = A == null ? null : `${A.source.type}:${A.source.message_id}`,
+        De;
+    t[8] !== j || t[9] !== M ? (De = () => j != null && M != null ? gt(j)[M] ?? !1 : !1, t[8] = j, t[9] = M, t[10] = De) : De = t[10];
+    let N = d(De),
+        Oe;
+    t[11] !== j || t[12] !== M ? (Oe = () => j != null && M != null ? _t(j)[M] ?? !1 : !1, t[11] = j, t[12] = M, t[13] = Oe) : Oe = t[13];
+    let ke = d(Oe),
+        Me;
+    t[14] === j ? Me = t[15] : (Me = () => j != null && xe(j) === !0, t[14] = j, t[15] = Me);
+    let Ne = d(Me),
+        P = A != null && !ye,
+        F;
+    t[16] !== a || t[17] !== de ? (F = W(de) ? de : a.formatMessage(Q.noSubject), t[16] = a, t[17] = de, t[18] = F) : F = t[18];
+    let I = F,
+        L = k != null && k !== C,
+        R;
+    t[19] === P ? R = t[20] : (R = P ? () => g.current?.click() : void 0, t[19] = P, t[20] = R);
+    let z;
+    t[21] === k ? z = t[22] : (z = () => w(k ?? null), t[21] = k, t[22] = z);
+    let B;
+    t[23] !== D || t[24] !== ge || t[25] !== k || t[26] !== ue || t[27] !== L || t[28] !== I || t[29] !== s || t[30] !== z || t[31] !== R ? (B = (0, Y.jsx)(ut, {
+        avatarUrl: k,
+        isExpanded: D,
+        onSenderActivate: R,
+        receivedAt: ge,
+        sender: ue,
+        shouldEnableSenderInteraction: !0,
+        shouldShowAvatar: L,
+        subject: I,
+        subjectId: s,
+        onAvatarError: z
+    }), t[23] = D, t[24] = ge, t[25] = k, t[26] = ue, t[27] = L, t[28] = I, t[29] = s, t[30] = z, t[31] = R, t[32] = B) : B = t[32];
+    let V = B,
+        Pe, Fe;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (Pe = () => () => {
+        u.current?.abort(), f.current?.abort(), x.current?.abort()
+    }, Fe = [], t[33] = Pe, t[34] = Fe) : (Pe = t[33], Fe = t[34]), (0, J.useEffect)(Pe, Fe);
+    let Ie, Le;
+    t[35] === P ? (Ie = t[36], Le = t[37]) : (Ie = () => {
+        !P || p.current || (p.current = !0, v(`chatgpt_email_preview_shown`))
+    }, Le = [P], t[35] = P, t[36] = Ie, t[37] = Le), (0, J.useEffect)(Ie, Le);
+    let ze, Be;
+    t[38] === D ? (ze = t[39], Be = t[40]) : (ze = () => {
+        if (D) {
+            _.current?.focus({
+                preventScroll: !0
+            });
+            return
+        }
+        y.current && (y.current = !1, g.current?.focus({
+            preventScroll: !0
+        }))
+    }, Be = [D], t[38] = D, t[39] = ze, t[40] = Be), (0, J.useEffect)(ze, Be);
+    let Ve;
+    t[41] !== Ce || t[42] !== fe ? (Ve = () => {
+        _e(fe, Ce)
+    }, t[41] = Ce, t[42] = fe, t[43] = Ve) : Ve = t[43];
+    let H = Ve,
+        He;
+    t[44] !== j || t[45] !== A || t[46] !== N || t[47] !== a || t[48] !== Ne || t[49] !== M || t[50] !== c || t[51] !== I ? (He = async e => {
+        if (j == null || A == null || M == null || N || Ne || f.current != null || !ct(j, M)) return;
+        let t = Se(e.currentTarget),
+            n = new AbortController;
+        f.current = n;
+        let r;
+        try {
+            r = await Ye({
+                signal: n.signal,
+                source: A.source,
+                subjectLabel: I
+            })
+        } catch (e) {
+            let t = e;
+            f.current === n && (f.current = null), lt(j, M), !n.signal.aborted && !m(t) && h().danger(a.formatMessage(Q.replyPreparationFailed), {
+                toastId: `email_preview_reply_preparation_failed`
+            });
+            return
+        }
+        if (n.signal.aborted || f.current !== n) {
+            f.current === n && (f.current = null), lt(j, M);
+            return
+        }
+        f.current = null;
+        let i = !1,
+            o = () => {
+                i || lt(j, M)
+            };
+        Ae({
+            callsiteId: `request_completion.formatted_text.email_preview_widget.reply`,
+            conversation: j,
+            sourceEvent: e,
+            ...r,
+            callbacks: {
+                onAfterOptimisticThreadUpdate: () => {
+                    i = !0, st(j, M), t != null && requestAnimationFrame(() => {
+                        he(t, !1), t.scrollTo({
+                            top: t.scrollHeight,
+                            behavior: c ? `instant` : `smooth`
+                        })
+                    })
+                }
+            }
+        }).then(o, o)
+    }, t[44] = j, t[45] = A, t[46] = N, t[47] = a, t[48] = Ne, t[49] = M, t[50] = c, t[51] = I, t[52] = He) : He = t[52];
+    let Ue = He;
+    if (!P) {
+        let e;
+        t[53] === H ? e = t[54] : (e = (0, Y.jsx)(xt, {
+            onClick: H
+        }), t[53] = H, t[54] = e);
+        let n;
+        return t[55] !== V || t[56] !== e ? (n = (0, Y.jsxs)(`div`, {
+            className: `border-token-border-heavy bg-token-bg-primary squircle my-4 w-full overflow-hidden rounded-[32px] border-[0.5px] flex items-center gap-3 px-4 py-3.5 text-start`,
+            children: [V, e]
+        }), t[55] = V, t[56] = e, t[57] = n) : n = t[57], n
+    }
+    let We;
+    t[58] !== A || t[59] !== O.status ? (We = async () => {
+        if ((x.current == null || x.current.signal.aborted) && (x.current = new AbortController, E(x.current.signal)), O.status === `loading` || O.status === `loaded`) return;
+        let e = new AbortController;
+        u.current = e, ot(ve.CHATGPT_EMAIL_PREVIEW_ACTION_TYPE_DETAIL_FETCH_STARTED);
+        try {
+            let t = ne(pt),
+                n = t.get(mt, !1),
+                r = t.get(ht, !1);
+            le({
+                status: `loading`,
+                browserDetail: n
+            });
+            let i = await Re({
+                ...A,
+                browserDetail: n,
+                signal: e.signal
+            });
+            if (e.signal.aborted) return;
+            u.current = null, ot(ve.CHATGPT_EMAIL_PREVIEW_ACTION_TYPE_DETAIL_FETCH_SUCCEEDED), le({
+                status: `loaded`,
+                detail: i,
+                canLoadImages: r
+            })
+        } catch {
+            if (e.signal.aborted) return;
+            u.current = null, ot(ve.CHATGPT_EMAIL_PREVIEW_ACTION_TYPE_DETAIL_FETCH_FAILED), le({
+                status: `error`
+            })
+        }
+    }, t[58] = A, t[59] = O.status, t[60] = We) : We = t[60];
+    let U = We,
+        Ge;
+    t[61] === U ? Ge = t[62] : (Ge = () => {
+        ot(ve.CHATGPT_EMAIL_PREVIEW_ACTION_TYPE_DETAIL_OPENED), te(!0), U()
+    }, t[61] = U, t[62] = Ge);
+    let Ke = Ge,
+        qe;
+    t[63] === U ? qe = t[64] : (qe = () => {
+        ot(ve.CHATGPT_EMAIL_PREVIEW_ACTION_TYPE_DETAIL_RETRY_CLICKED), U()
+    }, t[63] = U, t[64] = qe);
+    let Je = qe,
+        Xe;
+    t[65] === O ? Xe = t[66] : (Xe = O.status === `idle` ? {
+        status: `loading`
+    } : O, t[65] = O, t[66] = Xe);
+    let Ze = Xe,
+        Qe = Ze.status === `loaded` && Ze.detail.htmlPreview != null,
+        $e = O.status !== `loading` || !O.browserDetail,
+        tt;
+    t[67] === Symbol.for(`react.memo_cache_sentinel`) ? (tt = () => {
+        x.current?.abort(), x.current = null, y.current = !0, te(!1)
+    }, t[67] = tt) : tt = t[67];
+    let nt = tt,
+        rt = `border-token-border-heavy bg-token-bg-primary squircle my-4 w-full overflow-hidden rounded-[32px] border-[0.5px] email-preview-card group relative motion-safe:transition-shadow ${D?vt:yt}`,
+        G;
+    t[68] !== a || t[69] !== D || t[70] !== I ? (G = a.formatMessage(D ? Q.collapseEmail : Q.expandEmail, {
+        subject: I
+    }), t[68] = a, t[69] = D, t[70] = I, t[71] = G) : G = t[71];
+    let at = D ? nt : Ke,
+        K;
+    t[72] !== o || t[73] !== D || t[74] !== G || t[75] !== at ? (K = (0, Y.jsx)(`button`, {
+        ref: g,
+        type: `button`,
+        "aria-controls": o,
+        "aria-expanded": D,
+        "aria-label": G,
+        className: `interactive-outline-secondary absolute inset-0 z-0 w-full rounded-[32px] text-start`,
+        onClick: at
+    }), t[72] = o, t[73] = D, t[74] = G, t[75] = at, t[76] = K) : K = t[76];
+    let q;
+    t[77] === V ? q = t[78] : (q = (0, Y.jsx)(`div`, {
+        className: `pointer-events-none relative z-1 flex min-w-0 flex-1 items-center gap-3`,
+        children: V
+    }), t[77] = V, t[78] = q);
+    let dt = !Ne,
+        X;
+    t[79] !== N || t[80] !== ke || t[81] !== Ue || t[82] !== dt ? (X = (0, Y.jsx)(`div`, {
+        className: `relative z-1`,
+        children: (0, Y.jsx)(bt, {
+            hasStartedReply: N,
+            isPreparingReply: ke,
+            isReplyAvailable: dt,
+            onReply: Ue
+        })
+    }), t[79] = N, t[80] = ke, t[81] = Ue, t[82] = dt, t[83] = X) : X = t[83];
+    let Z;
+    t[84] === H ? Z = t[85] : (Z = (0, Y.jsx)(`div`, {
+        className: `relative z-1`,
+        children: (0, Y.jsx)(xt, {
+            onClick: H
+        })
+    }), t[84] = H, t[85] = Z);
+    let $;
+    t[86] !== K || t[87] !== q || t[88] !== X || t[89] !== Z ? ($ = (0, Y.jsxs)(`div`, {
+        className: `relative flex min-h-[72px] items-center gap-3 px-4 py-3.5 text-start`,
+        children: [K, q, X, Z]
+    }), t[86] = K, t[87] = q, t[88] = X, t[89] = Z, t[90] = $) : $ = t[90];
+    let St;
+    t[91] !== ie || t[92] !== A || t[93] !== o || t[94] !== Ze || t[95] !== Qe || t[96] !== T || t[97] !== a || t[98] !== D || t[99] !== Je || t[100] !== c || t[101] !== $e || t[102] !== I || t[103] !== s ? (St = D && (0, Y.jsxs)(b.div, {
+        className: `relative overflow-hidden`,
+        initial: !c && {
+            height: 0,
+            opacity: 0
+        },
+        animate: {
+            height: `auto`,
+            opacity: 1
+        },
+        exit: {
+            height: 0,
+            opacity: 0
+        },
+        transition: c ? {
+            duration: 0
+        } : {
+            type: `tween`,
+            duration: .24,
+            ease: `easeInOut`
+        },
+        children: [(0, Y.jsx)(`div`, {
+            className: `border-token-border-light mx-4 border-t`
+        }), (0, Y.jsx)(`div`, {
+            ref: _,
+            id: o,
+            role: `region`,
+            "aria-labelledby": s,
+            tabIndex: -1,
+            "data-testid": `email-expanded-panel`,
+            className: `interactive-outline-secondary focus-visible:outline-offset-[-3px]!`,
+            children: (0, Y.jsx)(it, {
+                ...Ze,
+                allowImages: ie === A.source.message_id,
+                onLoadImages: () => {
+                    v(`chatgpt_web_email_preview_load_images_clicked`), oe(A.source.message_id)
+                },
+                onRetry: Je,
+                sessionSignal: T
+            })
+        }), $e && (0, Y.jsxs)(`button`, {
+            type: `button`,
+            "aria-controls": o,
+            "aria-expanded": `true`,
+            "aria-label": a.formatMessage(Q.collapseEmail, {
+                subject: I
+            }),
+            className: Qe ? `interactive-button interactive-button-secondary interactive-outline-secondary bg-token-bg-primary/70 absolute inset-x-0 bottom-2 z-10 mx-auto flex h-10 w-fit items-center justify-center gap-2 rounded-full px-4 text-sm font-medium shadow-sm backdrop-blur-sm` : `interactive-bg-secondary interactive-outline-secondary flex h-10 w-full items-center justify-center gap-2 px-4 text-sm font-medium`,
+            onClick: nt,
+            children: [(0, Y.jsx)(Ee, {
+                "aria-hidden": `true`,
+                className: `icon`
+            }), (0, Y.jsx)(se, {
+                ...Q.collapse
+            })]
+        })]
+    }, `email-detail`), t[91] = ie, t[92] = A, t[93] = o, t[94] = Ze, t[95] = Qe, t[96] = T, t[97] = a, t[98] = D, t[99] = Je, t[100] = c, t[101] = $e, t[102] = I, t[103] = s, t[104] = St) : St = t[104];
+    let Ct;
+    t[105] === St ? Ct = t[106] : (Ct = (0, Y.jsx)(S, {
+        initial: !1,
+        children: St
+    }), t[105] = St, t[106] = Ct);
+    let wt;
+    return t[107] !== rt || t[108] !== $ || t[109] !== Ct ? (wt = (0, Y.jsxs)(`div`, {
+        className: rt,
+        children: [$, Ct]
+    }), t[107] = rt, t[108] = $, t[109] = Ct, t[110] = wt) : wt = t[110], wt
+}
+var ft, J, Y, pt, mt, ht, X, Z, gt, _t, Q, vt, yt, $, bt, xt, St = e((() => {
+    ft = O(), T(), ke(), x(), be(), De(), j(), Oe(), N(), ye(), ge(), Me(), k(), D(), te(), we(), ie(), y(), a(), p(), c(), Ce(), n(), J = t(oe()), fe(), qe(), Ze(), rt(), at(), Y = le(), pt = `4200284407`, mt = `is_web_html_enabled`, ht = `is_web_html_images_enabled`, X = `is_web_structured_reply_enabled`, Z = `3062209644`, gt = w(() => g({})), _t = w(() => g({})), Q = ce({
+        reply: {
+            id: `EmailPreviewWidget.reply`,
+            defaultMessage: `Reply`
+        },
+        replyStarted: {
+            id: `EmailPreviewWidget.replyStarted`,
+            defaultMessage: `Reply started`
+        },
+        openInGmail: {
+            id: `EmailPreviewWidget.openInGmail`,
+            defaultMessage: `Open in Gmail`
+        },
+        collapse: {
+            id: `EmailPreviewWidget.collapse`,
+            defaultMessage: `Collapse`
+        },
+        expandEmail: {
+            id: `EmailPreviewWidget.expandEmail`,
+            defaultMessage: `Expand {subject}`
+        },
+        collapseEmail: {
+            id: `EmailPreviewWidget.collapseEmail`,
+            defaultMessage: `Collapse {subject}`
+        },
+        noSubject: {
+            id: `EmailPreviewWidget.noSubject`,
+            defaultMessage: `(no subject)`
+        },
+        replyPreparationFailed: {
+            id: `EmailPreviewWidget.replyPreparationFailed`,
+            defaultMessage: `Couldn’t start your reply. Please try again.`
+        }
+    }), vt = `shadow-[0_2px_16px_0_rgba(0,0,0,0.05),0_0.5px_0.5px_0_rgba(0,0,0,0.05)]`, yt = `shadow-none hover:shadow-[0_2px_16px_0_rgba(0,0,0,0.05),0_0.5px_0.5px_0_rgba(0,0,0,0.05)] focus-within:shadow-[0_2px_16px_0_rgba(0,0,0,0.05),0_0.5px_0.5px_0_rgba(0,0,0,0.05)]`, $ = `·`, bt = e => {
+        "use forget";
+        let t = (0, ft.c)(12),
+            {
+                hasStartedReply: n,
+                isPreparingReply: i,
+                isReplyAvailable: a,
+                onReply: s
+            } = e,
+            c = ae(),
+            l;
+        t[0] !== n || t[1] !== c ? (l = c.formatMessage(n ? Q.replyStarted : Q.reply), t[0] = n, t[1] = c, t[2] = l) : l = t[2];
+        let u = l,
+            d;
+        t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (d = o(Z) && ne(pt).get(X, !1), t[3] = d) : d = t[3];
+        let f = d,
+            p;
+        t[4] !== n || t[5] !== i || t[6] !== a || t[7] !== s || t[8] !== u ? (p = a && f && (0, Y.jsxs)(`button`, {
+            type: `button`,
+            "aria-label": u,
+            "aria-busy": i || void 0,
+            disabled: i || n,
+            onClick: s,
+            className: `interactive-button interactive-button-secondary flex h-11 shrink-0 items-center justify-center gap-2 rounded-full ${n?`w-11 px-0`:`px-4`}`,
+            children: [i ? (0, Y.jsx)(r, {
+                className: `icon shrink-0`
+            }) : n ? (0, Y.jsx)(A, {
+                "aria-hidden": `true`,
+                className: `icon shrink-0`
+            }) : (0, Y.jsx)(M, {
+                "aria-hidden": `true`,
+                className: `icon shrink-0`
+            }), !n && (0, Y.jsx)(`span`, {
+                className: `max-w-12 shrink-0 overflow-hidden whitespace-nowrap`,
+                children: (0, Y.jsx)(se, {
+                    ...Q.reply
+                })
+            })]
+        }, `reply`), t[4] = n, t[5] = i, t[6] = a, t[7] = s, t[8] = u, t[9] = p) : p = t[9];
+        let m;
+        return t[10] === p ? m = t[11] : (m = (0, Y.jsx)(`div`, {
+            className: `flex shrink-0 items-center gap-2`,
+            children: p
+        }), t[10] = p, t[11] = m), m
+    }, xt = e => {
+        "use forget";
+        let t = (0, ft.c)(8),
+            {
+                onClick: n
+            } = e,
+            r = ae(),
+            i;
+        t[0] === r ? i = t[1] : (i = r.formatMessage(Q.openInGmail), t[0] = r, t[1] = i);
+        let a = i,
+            o;
+        t[2] !== n || t[3] !== a ? (o = e => (0, Y.jsx)(`button`, {
+            ...e,
+            type: `button`,
+            "aria-label": a,
+            className: `interactive-bg-secondary interactive-outline-secondary text-token-text-secondary hover:text-token-text-primary flex size-9 shrink-0 items-center justify-center rounded-full`,
+            onClick: n,
+            children: (0, Y.jsx)(Te, {
+                "aria-hidden": `true`,
+                className: `icon-sm`
+            })
+        }), t[2] = n, t[3] = a, t[4] = o) : o = t[4];
+        let s;
+        return t[5] !== a || t[6] !== o ? (s = (0, Y.jsx)(pe, {
+            content: a,
+            side: `top-center`,
+            children: o
+        }), t[5] = a, t[6] = o, t[7] = s) : s = t[7], s
+    }
+}));
+export {
+    tt as a, rt as i, St as n, nt as r, dt as t
+};
+//# sourceMappingURL=f53a4715-h2wzhcq13phq9ekj.js.map

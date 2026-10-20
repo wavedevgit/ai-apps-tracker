@@ -1,0 +1,149 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    _nt as t,
+    hnt as n
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    CNn as r,
+    ENn as i,
+    GIn as a,
+    KIn as o,
+    MNn as s,
+    SNn as c,
+    aLn as l,
+    oLn as u,
+    oPn as d,
+    rPn as f,
+    sPn as p,
+    wNn as m,
+    xNn as h
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Lb as g,
+    ib as _,
+    sb as v,
+    tb as y
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+
+function b({
+    analyticsSession: e,
+    canTrackNativeComposerAttachment: t,
+    canTrackMountedComposerAttachment: n,
+    selectedFiles: r,
+    selectedFolderIds: i,
+    attachedFileIds: o,
+    conversationId: s
+}) {
+    if (e == null) return w;
+    let c = new Set(r.flatMap(e => {
+        let r = u(e.id),
+            i = r ? e.id : e.file_id;
+        return o.has(i) || e.id.length === 0 || (r ? !n : t?.(e.id) !== !0) ? [] : [e.id]
+    }));
+    for (let e of i) l(e) && h(a(e)) != null && !o.has(e) && c.add(e);
+    if (c.size === 0) return w;
+    let d = new Map;
+    for (let e of c) {
+        let t = a(e),
+            n = d.get(t) ?? [];
+        n.push(e), d.set(t, n)
+    }
+    let f = new Map(Array.from(d, ([t, n]) => [t, S({
+        analyticsSession: e,
+        libraryFileIds: n,
+        conversationId: s,
+        entrypoint: `composer_library_picker`
+    })]));
+    return {
+        getCallbacks: e => f.get(a(e))?.getCallbacks(e),
+        complete: () => {
+            for (let e of f.values()) e.complete()
+        }
+    }
+}
+
+function x(e) {
+    return c(e) == null ? w : S({
+        analyticsSession: y(f.CHATGPT_FILE_LIBRARY_VARIANT_DEFAULT),
+        libraryFileIds: [e],
+        entrypoint: `at_mention`
+    })
+}
+
+function S({
+    analyticsSession: e,
+    libraryFileIds: t,
+    conversationId: a,
+    entrypoint: o
+}) {
+    let c = new Set(t),
+        l = Array.from(c),
+        u = JSON.stringify({
+            libraryFileIds: l
+        }).length <= C ? l : void 0,
+        f = r(l),
+        p = {
+            ...e,
+            productExperience: d(),
+            ...f == null ? {} : {
+                provider: f
+            },
+            entrypoint: o,
+            ...u == null ? {} : {
+                libraryFileIds: u
+            },
+            ...a == null ? {} : {
+                conversationId: a
+            }
+        },
+        m = new Set,
+        h = !1,
+        g = !1,
+        v = () => {
+            h || (h = !0, n.logStructuredEvent(`ChatgptFileLibraryAttach`, {
+                action: i.CHATGPT_FILE_LIBRARY_ATTACH_ACTION_CONFIRMED,
+                ...p
+            }))
+        },
+        y = e => {
+            if (g) return;
+            v(), g = !0;
+            let t = _(e);
+            n.logStructuredEvent(`ChatgptFileLibraryAttach`, {
+                action: i.CHATGPT_FILE_LIBRARY_ATTACH_ACTION_FAILED,
+                ...p,
+                error: {
+                    type: t?.type ?? s.CHATGPT_FILE_LIBRARY_ERROR_TYPE_INVALID_RESPONSE,
+                    ...t?.code == null ? {} : {
+                        code: t.code
+                    }
+                }
+            })
+        };
+    return {
+        getCallbacks: e => c.has(e) ? {
+            onAttachmentSuccess: () => {
+                m.add(e)
+            },
+            onAttachmentError: y
+        } : void 0,
+        complete: () => {
+            g || m.size !== c.size || (v(), g = !0, n.logStructuredEvent(`ChatgptFileLibraryAttach`, {
+                action: i.CHATGPT_FILE_LIBRARY_ATTACH_ACTION_ATTACHED,
+                ...p
+            }))
+        }
+    }
+}
+var C, w, T = e((() => {
+    p(), m(), v(), o(), t(), g(), C = 2e3, w = {
+        getCallbacks: () => void 0,
+        complete: () => void 0
+    }
+}));
+export {
+    x as n, T as r, b as t
+};
+//# sourceMappingURL=0fd8fe12-dt81nzlj2lv063p6.js.map

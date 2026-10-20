@@ -1,5 +1,246 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/aa4d3f65-dozzskwqbbzy0u07.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-ed29bs6yiwucn7st.js","assets/2340486e-oc6d2eodbcrmxur3.js","assets/root-lelxp0l2.css","assets/3e72bb91-e9qo20wtvj0mr5qn.js","assets/conversation-small-l6tnsr2xfn2d55kk.js","assets/30901919-om7b3qf5hp4j9x4l.js","assets/c470f5ab-d0jxi6yggehv1yt2.js","assets/0e5afe53-goyw8fd3qndq8rq5.js","assets/conversation-small-ixfdle4i.css","assets/c2675c8c-fpv9s4kvd412dyap.js","assets/82782bc9-cz4jkhg31tycbqqf.js","assets/8b34dbc2-j8rcexxiltkm8ucr.js","assets/global-modals-lv5n3ujm.css","assets/5f4d7fa0-of1sp15pu7a85xey.js","assets/673c0d9b-o7vfmqserox377x5.js","assets/948fe603-fakjy1ezhrfoxwqt.js","assets/e19f3910-e4e73fwjl8xw3qih.js","assets/9ac7a75a-jtc585w9qerwt9l2.js","assets/620167af-ijasy6aaqn2dfyw0.js","assets/b453068a-lz9p8iypelcxzs6g.js","assets/e9df0b0e-5cs5dqlmiqnsg0uv.js","assets/f23f926c-izf1po4btwvsltgc.js","assets/ab4d12c6-mpfhvv0ez2bgg54o.js","assets/dd81d43b-llsu5iutf6es9zxk.js","assets/19189336-eg8ykakwfv14zuht.js","assets/af004db9-kouk4100w6rgjqxb.js","assets/e8b55dd1-bv9p77dbpxf5l5tk.js","assets/0eda9bd1-mzrypn6zt6pr0mto.js","assets/0b9bc04d-6xpedzqhybe541bw.js","assets/7271f1c9-eisaobgjylt9iv5o.js","assets/1f8ec761-cht50a3vmd1gnos7.js","assets/805f0379-ixh7u7o4mzi2s9eb.js","assets/9e18a103-k713d1yermbdqxul.js","assets/3f385189-n3sls8prf0uwjnan.js","assets/9371a995-c0r14k31un7q5cyq.js","assets/b51f9083-gzka3pj7jmkdplrg.js","assets/cf64444f-bm1f11why4hwbz56.js","assets/b4c3a217-mfctiv85p88ipen9.js","assets/a0561fd6-9vypjiavarkwk9s8.js","assets/333fd2ad-b5u70cfshpk5iylu.js","assets/fab52ad7-e4xspyknfv1fiwjg.js","assets/d848de1a-olin5gtuxvy5ecu2.js","assets/ab92372e-g9d37bir33ofc9lb.js","assets/6fd89734-nadskh2rke5gqim82.js","assets/6fd89734-me0mlo15lw6zwz6w.js","assets/53c2413f-juamemj30ad1wpse.js","assets/aaaf0b6f-fcy9z20avkznelm8.js","assets/9e958008-pc2ks4d6ed7tc5z5.js","assets/6fd2d070-cypbmx18ba1domo1.js","assets/page-table-row-d76ll5sg.css","assets/5b59f3e4-f9v1k69a0tdaqzc0.js","assets/4e7cf3cf-old492xav8khiceo.js","assets/5fe07825-jngc74q6ux69ppc5.js","assets/bcae0416-hw074mfyxypgqrid.js","assets/de879d3e-dg6xmjaknsd4kulr.js","assets/SegmentedControl-gvbd68zk.css","assets/3e799097-dwjxjog7irpagoxf.js","assets/4b68ab38-e2jtqfi6qknkay6v.js","assets/9d60841e-bx3dwc8nyvp30a4s.js","assets/cb84f617-e4ca0kd9iysszy1q.js","assets/707eab0c-co82iasy3ghgw11m.js","assets/d4c740a3-grm4mqv12ru1q0ee.js","assets/Button-ijivgymd.css","assets/ed64284d-ha67oh2cwos8nfx0.js","assets/a7f9e0fc-dxg7ibjqbzf5hfvz.js","assets/3e47c24c-dc64lasgl5bf1c0g.js","assets/6c8e4a8d-mpv25obrd1tf382f.js","assets/SelectControl-d4vm7hsk.css","assets/4b60ce15-lzpxyifiypx7wyf0.js","assets/064f6ac1-npmyifl55a78fkth.js","assets/b1397234-m6cujjn3ydlq1nrk.js","assets/Popover-jjzuc9pc.css","assets/b24eac34-pb4eyqzeks89nx0v.js","assets/Trigger-e32sen93.css","assets/f5cccfb7-h00c11dn0y6hvwe9.js","assets/dd138624-nb8f8fp9rht91wbt.js","assets/6ab34ef3-nfw6e1fxknzv47lo.js","assets/312c13a5-cdjebtvmo897xe8b.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Az as n,Bnt as r,G5 as i,J0 as a,JT as o,K5 as s,Knt as c,Y0 as l,eat as u,hnt as d,it as f,jz as p,nat as m,nt as h,ot as g,pnt as ee,qT as te,tt as _}from"./4813494d-ed29bs6yiwucn7st.js";import{$ as v,Bn as y,Ln as b,Pt as ne,Rn as x,Rt as re,Ut as ie,Vn as ae,cn as oe,jt as S,ln as C,lt as w,wn as T,zn as E}from"./2340486e-oc6d2eodbcrmxur3.js";import{dKn as se,uKn as ce}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{Gx as D,Wx as le}from"./30901919-om7b3qf5hp4j9x4l.js";import{r as ue,t as de}from"./3e72bb91-e9qo20wtvj0mr5qn.js";import{n as O,t as k}from"./673c0d9b-o7vfmqserox377x5.js";import{n as fe,t as pe}from"./e18c46cf-euut8p2jo6haaq9b.js";import{n as me,t as he}from"./45dc6298-hjhy4nv5ahfdst56.js";import{a as A,i as j,n as ge,r as _e,t as ve}from"./f1e8cf55-he1s36gy5jak3flc.js";import{S as ye,d as M,o as be}from"./6fd89734-nadskh2rke5gqim82.js";import{n as xe,t as Se}from"./f2728ff1-ivf24we7s5jeurgx.js";import{i as Ce}from"./45e797a6-kk2fiyl855lcdyan.js";var N,we=e((()=>{l(),A(),C(),N=a(()=>oe(()=>import(`./aa4d3f65-dozzskwqbbzy0u07.js`).then(e=>e.CodexSecurityScanRunPage),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57])),{loading:j}),N.skipSuspense()})),P,Te=e((()=>{l(),C(),P=a(()=>oe(()=>import(`./3e799097-dwjxjog7irpagoxf.js`).then(e=>e.CodexSecurityOverviewPage),__vite__mapDeps([58,1,2,3,4,6,7,8,9,10,11,12,13,14,59,60,61,62,55,63,64,5,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,46,45,65,66,67,68,69,70,71,72,73,74,75,76,77,52,53,78,79]))),P.skipSuspense()}));function F(e){"use forget";let t=(0,I.c)(2),{isLoading:n}=e;if(n!==void 0&&n){let e;return t[0]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,R.jsx)(j,{}),t[0]=e):e=t[0],e}let r;return t[1]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,R.jsx)(L.Suspense,{fallback:(0,R.jsx)(j,{}),children:(0,R.jsx)(B,{})}),t[1]=r):r=t[1],r}var I,L,R,z,B,Ee=e((()=>{I=T(),c(),L=t(ae(),1),v(),A(),we(),_e(),Te(),ye(),R=y(),z=`/codex/cloud/security`,B=()=>{"use forget";let e=(0,I.c)(31),t=S(),{tab:n,selectionId:i}=re();if(n===`overview`){if(r(`1908296950`)){let t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,R.jsx)(P,{}),e[0]=t):t=e[0],t}let n,i,a,o;if(e[1]!==t.search){let r=new URLSearchParams(t.search).get(`repo`);n=w,o=!0,e[6]===Symbol.for(`react.memo_cache_sentinel`)?(i=M(`findings`),e[6]=i):i=e[6],a=r?`?${new URLSearchParams({repo:r})}`:``,e[1]=t.search,e[2]=n,e[3]=i,e[4]=a,e[5]=o}else n=e[2],i=e[3],a=e[4],o=e[5];let s;e[7]!==i||e[8]!==a?(s={pathname:i,search:a},e[7]=i,e[8]=a,e[9]=s):s=e[9];let c;return e[10]!==n||e[11]!==o||e[12]!==s?(c=(0,R.jsx)(n,{replace:o,to:s}),e[10]=n,e[11]=o,e[12]=s,e[13]=c):c=e[13],c}if(n===`runs`&&i&&i!==`new`&&!i.startsWith(`wfr_`)&&new URLSearchParams(t.search).has(`scan_configuration_id`)){let t;return e[14]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,R.jsx)(N,{}),e[14]=t):t=e[14],t}let a;e[15]===Symbol.for(`react.memo_cache_sentinel`)?(a=r(`870690999`),e[15]=a):a=e[15];let o=a,s=null,c=t.search;if(o){if(n===`archives`){let n;e[16]===t.pathname?n=e[17]:(n=t.pathname.slice(`${z}/archives`.length),e[16]=t.pathname,e[17]=n),s=`${z}/findings${n}`;let r;e[18]===t.search?r=e[19]:(r=be(t.search),e[18]=t.search,e[19]=r),c=r}else if(n===`runs`&&(!i||i===`new`)){let t;e[20]===i?t=e[21]:(t=M(`scans`,i),e[20]=i,e[21]=t),s=t}}else if(n===`repositories`||n===`runs`){let t;e[22]===Symbol.for(`react.memo_cache_sentinel`)?(t=M(`scans`),e[22]=t):t=e[22],s=t}if(s){let n;e[23]!==t.hash||e[24]!==s||e[25]!==c?(n={pathname:s,search:c,hash:t.hash},e[23]=t.hash,e[24]=s,e[25]=c,e[26]=n):n=e[26];let r;return e[27]!==t.state||e[28]!==n?(r=(0,R.jsx)(w,{replace:!0,state:t.state,to:n}),e[27]=t.state,e[28]=n,e[29]=r):r=e[29],r}let l;return e[30]===Symbol.for(`react.memo_cache_sentinel`)?(l=o?(0,R.jsx)(ge,{}):(0,R.jsx)(ve,{}),e[30]=l):l=e[30],l}})),V,H,U,W,G,K=e((()=>{x(),V=b({title:{id:`codexSecurity.onboarding.title`,defaultMessage:`Welcome to Codex Security`},previewBadge:{id:`codexSecurity.onboarding.previewBadge`,defaultMessage:`Research Preview`},enterpriseBodyTitle:{id:`codexSecurity.onboarding.enterpriseBodyTitle`,defaultMessage:`Find and fix vulnerabilities in your codebase with Codex Security.`},enterpriseBodyPowered:{id:`codexSecurity.onboarding.enterpriseBodyPowered`,defaultMessage:`It's powered by your ChatGPT Enterprise, Business, Teachers, or Edu account.`},enterpriseBodyTraining:{id:`codexSecurity.onboarding.enterpriseBodyTraining`,defaultMessage:`By default, we do not train on your data. Your organization's existing agreement with OpenAI applies to data shared with Codex Security.`},enterpriseBodyWarning:{id:`codexSecurity.onboarding.enterpriseBodyWarning`,defaultMessage:`Codex Security can make mistakes. Review its outputs. Use Codex Security only with code you own or have permission from the owner to scan.`},agreementWarning:{id:`codexSecurity.onboarding.agreementWarning`,defaultMessage:`Codex Security can make mistakes. Review its outputs. Use Codex Security only with repos you own or have permission from the owner to scan.`},agreementBodyTitle:{id:`codexSecurity.onboarding.agreementBodyTitle`,defaultMessage:`Find and fix vulnerabilities in your codebase with Codex Security.`},agreementCheckboxLabel:{id:`codexSecurity.onboarding.agreementCheckboxLabel`,defaultMessage:`By checking this box, I understand and agree to the Codex Security Beta Program Agreement above.`},cancel:{id:`codexSecurity.onboarding.cancel`,defaultMessage:`Cancel`},continue:{id:`codexSecurity.onboarding.continue`,defaultMessage:`Continue`},secondPageBody:{id:`codexSecurity.onboarding.secondPageBody`,defaultMessage:`Scan for security threats in your connected GitHub repositories`},secondPageTitle:{id:`codexSecurity.onboarding.secondPageTitle`,defaultMessage:`Start your first security scan`},skipSetup:{id:`codexSecurity.onboarding.skipSetup`,defaultMessage:`Skip Setup`},configureFirstScan:{id:`codexSecurity.onboarding.configureFirstScan`,defaultMessage:`Get started`}}),H=`CODEX SECURITY RESEARCH PREVIEW PROGRAM AGREEMENT
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/aa4d3f65-dozzskwqbbzy0u07.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-ed29bs6yiwucn7st.js", "assets/2340486e-oc6d2eodbcrmxur3.js", "assets/root-lelxp0l2.css", "assets/3e72bb91-e9qo20wtvj0mr5qn.js", "assets/conversation-small-l6tnsr2xfn2d55kk.js", "assets/30901919-om7b3qf5hp4j9x4l.js", "assets/c470f5ab-d0jxi6yggehv1yt2.js", "assets/0e5afe53-goyw8fd3qndq8rq5.js", "assets/conversation-small-ixfdle4i.css", "assets/c2675c8c-fpv9s4kvd412dyap.js", "assets/82782bc9-cz4jkhg31tycbqqf.js", "assets/8b34dbc2-j8rcexxiltkm8ucr.js", "assets/global-modals-lv5n3ujm.css", "assets/5f4d7fa0-of1sp15pu7a85xey.js", "assets/673c0d9b-o7vfmqserox377x5.js", "assets/948fe603-fakjy1ezhrfoxwqt.js", "assets/e19f3910-e4e73fwjl8xw3qih.js", "assets/9ac7a75a-jtc585w9qerwt9l2.js", "assets/620167af-ijasy6aaqn2dfyw0.js", "assets/b453068a-lz9p8iypelcxzs6g.js", "assets/e9df0b0e-5cs5dqlmiqnsg0uv.js", "assets/f23f926c-izf1po4btwvsltgc.js", "assets/ab4d12c6-mpfhvv0ez2bgg54o.js", "assets/dd81d43b-llsu5iutf6es9zxk.js", "assets/19189336-eg8ykakwfv14zuht.js", "assets/af004db9-kouk4100w6rgjqxb.js", "assets/e8b55dd1-bv9p77dbpxf5l5tk.js", "assets/0eda9bd1-mzrypn6zt6pr0mto.js", "assets/0b9bc04d-6xpedzqhybe541bw.js", "assets/7271f1c9-eisaobgjylt9iv5o.js", "assets/1f8ec761-cht50a3vmd1gnos7.js", "assets/805f0379-ixh7u7o4mzi2s9eb.js", "assets/9e18a103-k713d1yermbdqxul.js", "assets/3f385189-n3sls8prf0uwjnan.js", "assets/9371a995-c0r14k31un7q5cyq.js", "assets/b51f9083-gzka3pj7jmkdplrg.js", "assets/cf64444f-bm1f11why4hwbz56.js", "assets/b4c3a217-mfctiv85p88ipen9.js", "assets/a0561fd6-9vypjiavarkwk9s8.js", "assets/333fd2ad-b5u70cfshpk5iylu.js", "assets/fab52ad7-e4xspyknfv1fiwjg.js", "assets/d848de1a-olin5gtuxvy5ecu2.js", "assets/ab92372e-g9d37bir33ofc9lb.js", "assets/6fd89734-nadskh2rke5gqim82.js", "assets/6fd89734-me0mlo15lw6zwz6w.js", "assets/53c2413f-juamemj30ad1wpse.js", "assets/aaaf0b6f-fcy9z20avkznelm8.js", "assets/9e958008-pc2ks4d6ed7tc5z5.js", "assets/6fd2d070-cypbmx18ba1domo1.js", "assets/page-table-row-d76ll5sg.css", "assets/5b59f3e4-f9v1k69a0tdaqzc0.js", "assets/4e7cf3cf-old492xav8khiceo.js", "assets/5fe07825-jngc74q6ux69ppc5.js", "assets/bcae0416-hw074mfyxypgqrid.js", "assets/de879d3e-dg6xmjaknsd4kulr.js", "assets/SegmentedControl-gvbd68zk.css", "assets/3e799097-dwjxjog7irpagoxf.js", "assets/4b68ab38-e2jtqfi6qknkay6v.js", "assets/9d60841e-bx3dwc8nyvp30a4s.js", "assets/cb84f617-e4ca0kd9iysszy1q.js", "assets/707eab0c-co82iasy3ghgw11m.js", "assets/d4c740a3-grm4mqv12ru1q0ee.js", "assets/Button-ijivgymd.css", "assets/ed64284d-ha67oh2cwos8nfx0.js", "assets/a7f9e0fc-dxg7ibjqbzf5hfvz.js", "assets/3e47c24c-dc64lasgl5bf1c0g.js", "assets/6c8e4a8d-mpv25obrd1tf382f.js", "assets/SelectControl-d4vm7hsk.css", "assets/4b60ce15-lzpxyifiypx7wyf0.js", "assets/064f6ac1-npmyifl55a78fkth.js", "assets/b1397234-m6cujjn3ydlq1nrk.js", "assets/Popover-jjzuc9pc.css", "assets/b24eac34-pb4eyqzeks89nx0v.js", "assets/Trigger-e32sen93.css", "assets/f5cccfb7-h00c11dn0y6hvwe9.js", "assets/dd138624-nb8f8fp9rht91wbt.js", "assets/6ab34ef3-nfw6e1fxknzv47lo.js", "assets/312c13a5-cdjebtvmo897xe8b.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Az as n,
+    Bnt as r,
+    G5 as i,
+    J0 as a,
+    JT as o,
+    K5 as s,
+    Knt as c,
+    Y0 as l,
+    eat as u,
+    hnt as d,
+    it as f,
+    jz as p,
+    nat as m,
+    nt as h,
+    ot as g,
+    pnt as ee,
+    qT as te,
+    tt as _
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    $ as v,
+    Bn as y,
+    Ln as b,
+    Pt as ne,
+    Rn as x,
+    Rt as re,
+    Ut as ie,
+    Vn as ae,
+    cn as oe,
+    jt as S,
+    ln as C,
+    lt as w,
+    wn as T,
+    zn as E
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    dKn as se,
+    uKn as ce
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    Gx as D,
+    Wx as le
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+import {
+    r as ue,
+    t as de
+} from "./3e72bb91-e9qo20wtvj0mr5qn.js";
+import {
+    n as O,
+    t as k
+} from "./673c0d9b-o7vfmqserox377x5.js";
+import {
+    n as fe,
+    t as pe
+} from "./e18c46cf-euut8p2jo6haaq9b.js";
+import {
+    n as me,
+    t as he
+} from "./45dc6298-hjhy4nv5ahfdst56.js";
+import {
+    a as A,
+    i as j,
+    n as ge,
+    r as _e,
+    t as ve
+} from "./f1e8cf55-he1s36gy5jak3flc.js";
+import {
+    S as ye,
+    d as M,
+    o as be
+} from "./6fd89734-nadskh2rke5gqim82.js";
+import {
+    n as xe,
+    t as Se
+} from "./f2728ff1-ivf24we7s5jeurgx.js";
+import {
+    i as Ce
+} from "./45e797a6-kk2fiyl855lcdyan.js";
+var N, we = e((() => {
+        l(), A(), C(), N = a(() => oe(() => import(`./aa4d3f65-dozzskwqbbzy0u07.js`).then(e => e.CodexSecurityScanRunPage), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57])), {
+            loading: j
+        }), N.skipSuspense()
+    })),
+    P, Te = e((() => {
+        l(), C(), P = a(() => oe(() => import(`./3e799097-dwjxjog7irpagoxf.js`).then(e => e.CodexSecurityOverviewPage), __vite__mapDeps([58, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 59, 60, 61, 62, 55, 63, 64, 5, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 46, 45, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 52, 53, 78, 79]))), P.skipSuspense()
+    }));
+
+function F(e) {
+    "use forget";
+    let t = (0, I.c)(2),
+        {
+            isLoading: n
+        } = e;
+    if (n !== void 0 && n) {
+        let e;
+        return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, R.jsx)(j, {}), t[0] = e) : e = t[0], e
+    }
+    let r;
+    return t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, R.jsx)(L.Suspense, {
+        fallback: (0, R.jsx)(j, {}),
+        children: (0, R.jsx)(B, {})
+    }), t[1] = r) : r = t[1], r
+}
+var I, L, R, z, B, Ee = e((() => {
+        I = T(), c(), L = t(ae(), 1), v(), A(), we(), _e(), Te(), ye(), R = y(), z = `/codex/cloud/security`, B = () => {
+            "use forget";
+            let e = (0, I.c)(31),
+                t = S(),
+                {
+                    tab: n,
+                    selectionId: i
+                } = re();
+            if (n === `overview`) {
+                if (r(`1908296950`)) {
+                    let t;
+                    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, R.jsx)(P, {}), e[0] = t) : t = e[0], t
+                }
+                let n, i, a, o;
+                if (e[1] !== t.search) {
+                    let r = new URLSearchParams(t.search).get(`repo`);
+                    n = w, o = !0, e[6] === Symbol.for(`react.memo_cache_sentinel`) ? (i = M(`findings`), e[6] = i) : i = e[6], a = r ? `?${new URLSearchParams({repo:r})}` : ``, e[1] = t.search, e[2] = n, e[3] = i, e[4] = a, e[5] = o
+                } else n = e[2], i = e[3], a = e[4], o = e[5];
+                let s;
+                e[7] !== i || e[8] !== a ? (s = {
+                    pathname: i,
+                    search: a
+                }, e[7] = i, e[8] = a, e[9] = s) : s = e[9];
+                let c;
+                return e[10] !== n || e[11] !== o || e[12] !== s ? (c = (0, R.jsx)(n, {
+                    replace: o,
+                    to: s
+                }), e[10] = n, e[11] = o, e[12] = s, e[13] = c) : c = e[13], c
+            }
+            if (n === `runs` && i && i !== `new` && !i.startsWith(`wfr_`) && new URLSearchParams(t.search).has(`scan_configuration_id`)) {
+                let t;
+                return e[14] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, R.jsx)(N, {}), e[14] = t) : t = e[14], t
+            }
+            let a;
+            e[15] === Symbol.for(`react.memo_cache_sentinel`) ? (a = r(`870690999`), e[15] = a) : a = e[15];
+            let o = a,
+                s = null,
+                c = t.search;
+            if (o) {
+                if (n === `archives`) {
+                    let n;
+                    e[16] === t.pathname ? n = e[17] : (n = t.pathname.slice(`${z}/archives`.length), e[16] = t.pathname, e[17] = n), s = `${z}/findings${n}`;
+                    let r;
+                    e[18] === t.search ? r = e[19] : (r = be(t.search), e[18] = t.search, e[19] = r), c = r
+                } else if (n === `runs` && (!i || i === `new`)) {
+                    let t;
+                    e[20] === i ? t = e[21] : (t = M(`scans`, i), e[20] = i, e[21] = t), s = t
+                }
+            } else if (n === `repositories` || n === `runs`) {
+                let t;
+                e[22] === Symbol.for(`react.memo_cache_sentinel`) ? (t = M(`scans`), e[22] = t) : t = e[22], s = t
+            }
+            if (s) {
+                let n;
+                e[23] !== t.hash || e[24] !== s || e[25] !== c ? (n = {
+                    pathname: s,
+                    search: c,
+                    hash: t.hash
+                }, e[23] = t.hash, e[24] = s, e[25] = c, e[26] = n) : n = e[26];
+                let r;
+                return e[27] !== t.state || e[28] !== n ? (r = (0, R.jsx)(w, {
+                    replace: !0,
+                    state: t.state,
+                    to: n
+                }), e[27] = t.state, e[28] = n, e[29] = r) : r = e[29], r
+            }
+            let l;
+            return e[30] === Symbol.for(`react.memo_cache_sentinel`) ? (l = o ? (0, R.jsx)(ge, {}) : (0, R.jsx)(ve, {}), e[30] = l) : l = e[30], l
+        }
+    })),
+    V, H, U, W, G, K = e((() => {
+        x(), V = b({
+            title: {
+                id: `codexSecurity.onboarding.title`,
+                defaultMessage: `Welcome to Codex Security`
+            },
+            previewBadge: {
+                id: `codexSecurity.onboarding.previewBadge`,
+                defaultMessage: `Research Preview`
+            },
+            enterpriseBodyTitle: {
+                id: `codexSecurity.onboarding.enterpriseBodyTitle`,
+                defaultMessage: `Find and fix vulnerabilities in your codebase with Codex Security.`
+            },
+            enterpriseBodyPowered: {
+                id: `codexSecurity.onboarding.enterpriseBodyPowered`,
+                defaultMessage: `It's powered by your ChatGPT Enterprise, Business, Teachers, or Edu account.`
+            },
+            enterpriseBodyTraining: {
+                id: `codexSecurity.onboarding.enterpriseBodyTraining`,
+                defaultMessage: `By default, we do not train on your data. Your organization's existing agreement with OpenAI applies to data shared with Codex Security.`
+            },
+            enterpriseBodyWarning: {
+                id: `codexSecurity.onboarding.enterpriseBodyWarning`,
+                defaultMessage: `Codex Security can make mistakes. Review its outputs. Use Codex Security only with code you own or have permission from the owner to scan.`
+            },
+            agreementWarning: {
+                id: `codexSecurity.onboarding.agreementWarning`,
+                defaultMessage: `Codex Security can make mistakes. Review its outputs. Use Codex Security only with repos you own or have permission from the owner to scan.`
+            },
+            agreementBodyTitle: {
+                id: `codexSecurity.onboarding.agreementBodyTitle`,
+                defaultMessage: `Find and fix vulnerabilities in your codebase with Codex Security.`
+            },
+            agreementCheckboxLabel: {
+                id: `codexSecurity.onboarding.agreementCheckboxLabel`,
+                defaultMessage: `By checking this box, I understand and agree to the Codex Security Beta Program Agreement above.`
+            },
+            cancel: {
+                id: `codexSecurity.onboarding.cancel`,
+                defaultMessage: `Cancel`
+            },
+            continue: {
+                id: `codexSecurity.onboarding.continue`,
+                defaultMessage: `Continue`
+            },
+            secondPageBody: {
+                id: `codexSecurity.onboarding.secondPageBody`,
+                defaultMessage: `Scan for security threats in your connected GitHub repositories`
+            },
+            secondPageTitle: {
+                id: `codexSecurity.onboarding.secondPageTitle`,
+                defaultMessage: `Start your first security scan`
+            },
+            skipSetup: {
+                id: `codexSecurity.onboarding.skipSetup`,
+                defaultMessage: `Skip Setup`
+            },
+            configureFirstScan: {
+                id: `codexSecurity.onboarding.configureFirstScan`,
+                defaultMessage: `Get started`
+            }
+        }), H = `CODEX SECURITY RESEARCH PREVIEW PROGRAM AGREEMENT
 
 This Codex Security Research Preview Program Agreement (the “Agreement”) is between OpenAI OpCo, LLC (“OpenAI”) and you (“Customer”) and is effective on the date customer clicks “I agree” (the “Effective Date”). The Agreement governs Customer’s access to Evaluation Services under the Program. Customer represents it is lawfully able to enter into this Agreement and, if it is entering into the Agreement for an entity, that it has legal authority to bind that entity. By clicking “I agree” or using the Evaluation Services, Customer agrees to this Agreement.
 
@@ -84,5 +325,348 @@ This Codex Security Research Preview Program Agreement (the “Agreement”) is 
 “Services Agreement” means the written agreement between Customer and OpenAI for access to OpenAI Services, or if none exists, the terms available at https://openai.com/policies/services-agreement/.
 
 “Venue” means: (i) for Customers in the EEA, Switzerland or UK, the courts of Dublin, Ireland; and (ii) for all other Customers, federal or state courts located in San Francisco County, California.
-`,U=`EXHIBIT A - Codex Security Evaluation Plan`,W=`This Evaluation Plan is governed by the Evaluation Program Agreement between OpenAI and Customer.`,G=[{label:`Project`,value:`Codex Security - An AI powered code vulnerability capability early release`},{label:`Training Permission on Inputs and Outputs Used for Development Purposes`,value:`Yes`},{label:`Pricing / Fees`,value:`Participation in the Codex Security Beta Program is free of charge during the evaluation period.`},{label:`Production Use Suitability`,value:`Codex Security is an experimental beta release and is not intended for production use. Findings are advisory only and must be independently verified by Customer. Customer shall only submit code it owns or is authorized to use, and will not use the Services to analyze or report vulnerabilities in open-source or any third-party code without OpenAI's express written permission.`},{label:`External Partner Data Sharing`,value:`OpenAI will not share Evaluation Content or Provided Data with third parties.`}]}));function De(){return(0,q.jsxs)(`div`,{className:`text-token-text-primary space-y-5`,children:[(0,q.jsx)(`p`,{className:`text-center text-xs font-medium`,children:U}),(0,q.jsx)(`p`,{className:`leading-5 font-medium`,children:W}),(0,q.jsxs)(`table`,{className:`w-full table-fixed border-collapse leading-5`,children:[(0,q.jsxs)(`colgroup`,{children:[(0,q.jsx)(`col`,{className:`w-[36%]`}),(0,q.jsx)(`col`,{className:`w-[64%]`})]}),(0,q.jsx)(`tbody`,{children:G.map(e=>(0,q.jsxs)(`tr`,{className:`align-top`,children:[(0,q.jsx)(`td`,{className:`border-token-border-medium bg-token-main-surface-primary text-token-text-primary border px-3 py-2 font-medium`,children:e.label}),(0,q.jsx)(`td`,{className:`border-token-border-medium bg-token-bg-primary text-token-text-primary border px-3 py-2`,children:e.value})]},e.label))})]})]})}var q,Oe=e((()=>{K(),q=y()}));function J(){return g(_.hasSeenAardvarkOnboarding)}function ke(){return(0,Q.jsx)(`div`,{className:`bg-token-border-light h-px w-14 shrink-0`})}function Y({className:e}){let t=E();return(0,Q.jsxs)(`div`,{className:i(`flex flex-col items-center gap-3 text-center`,e),children:[(0,Q.jsx)(D,{className:`text-token-text-primary h-7 w-7`}),(0,Q.jsxs)(`div`,{className:`space-y-2`,children:[(0,Q.jsx)(`h1`,{className:`text-token-text-primary text-2xl font-semibold tracking-tight`,children:t.formatMessage(V.title)}),(0,Q.jsx)(`div`,{className:`flex justify-center`,children:(0,Q.jsx)(`span`,{className:`bg-token-main-surface-secondary text-token-text-secondary rounded-full px-2 py-0.5 text-[11px] font-medium`,children:t.formatMessage(V.previewBadge)})})]}),(0,Q.jsx)(ke,{})]})}function Ae(){let e=E();return(0,Q.jsxs)(`div`,{className:`flex w-full max-w-[520px] flex-col items-center gap-3`,children:[(0,Q.jsx)(Y,{}),(0,Q.jsxs)(`div`,{className:`text-token-text-primary w-full space-y-4 text-center text-[15px] leading-6`,children:[(0,Q.jsx)(`p`,{className:`font-medium`,children:e.formatMessage(V.enterpriseBodyTitle)}),(0,Q.jsx)(`p`,{children:e.formatMessage(V.enterpriseBodyPowered)}),(0,Q.jsx)(`p`,{children:e.formatMessage(V.enterpriseBodyTraining)}),(0,Q.jsx)(`p`,{className:`text-token-text-secondary`,children:e.formatMessage(V.enterpriseBodyWarning)})]})]})}function je({agreementChecked:e,onAgreementChange:t}){let n=E(),r=(0,Z.useId)();return(0,Q.jsxs)(`div`,{className:`flex w-full max-w-[620px] flex-col items-center gap-3`,children:[(0,Q.jsx)(Y,{}),(0,Q.jsxs)(`div`,{className:`w-full space-y-4 text-center`,children:[(0,Q.jsx)(`p`,{className:`text-token-text-primary text-[15px] leading-6 font-medium`,children:n.formatMessage(V.agreementBodyTitle)}),(0,Q.jsx)(`p`,{className:`text-token-text-secondary text-[15px] leading-6`,children:n.formatMessage(V.agreementWarning)}),(0,Q.jsx)(`div`,{className:`border-token-border-light bg-token-main-surface-secondary mt-2 max-h-[320px] overflow-y-auto rounded-2xl border p-4`,children:(0,Q.jsxs)(`div`,{className:`text-token-text-secondary text-start text-xs leading-5`,children:[(0,Q.jsx)(`div`,{className:`whitespace-pre-wrap`,children:H}),(0,Q.jsx)(`div`,{className:`border-token-border-light my-5 border-t`}),(0,Q.jsx)(De,{})]})}),(0,Q.jsx)(ce,{id:r,checked:e,onChange:e=>t(e.target.checked),containerClassName:`mx-auto w-fit items-start justify-center gap-3 text-start`,className:`mt-1 shrink-0`,labelClassName:`text-token-text-primary text-start text-sm leading-6`,label:n.formatMessage(V.agreementCheckboxLabel)})]})]})}function Me(){let e=E();return(0,Q.jsxs)(`div`,{className:`flex w-full max-w-[320px] flex-col items-center gap-[22px] text-center`,children:[(0,Q.jsx)(D,{className:`text-token-text-primary h-7 w-7`}),(0,Q.jsxs)(`div`,{className:`flex w-full flex-col items-center gap-2`,children:[(0,Q.jsx)(`h2`,{className:`text-token-text-primary w-full text-lg font-semibold tracking-tight`,children:e.formatMessage(V.secondPageTitle)}),(0,Q.jsx)(`p`,{className:`text-token-text-tertiary w-full text-base leading-[26px]`,children:e.formatMessage(V.secondPageBody)})]})]})}function X({cancelLabel:e,continueLabel:t,onCancel:n,onContinue:r,continueDisabled:a}){let o=e&&n;return(0,Q.jsxs)(`div`,{className:i(`flex items-center justify-center gap-[15px]`,o?`flex-row`:`flex-col`),children:[o?(0,Q.jsx)(`button`,{type:`button`,onClick:n,className:`text-token-text-tertiary hover:text-token-text-secondary text-sm transition-colors`,children:e}):null,(0,Q.jsx)(te,{as:`button`,color:`primary`,onClick:r,disabled:a,children:t})]})}function Ne(){let e=E(),t=ne(),r=S(),{isEligibleWorkspace:a}=O(),{eligible:o,isLoading:s}=J(),[c,l]=(0,Z.useState)(`welcome`),[d,p]=(0,Z.useState)(!1),[m,h]=(0,Z.useState)(!1);if(s)return(0,Q.jsx)(`div`,{className:`flex min-h-[40vh] items-center justify-center`,children:(0,Q.jsx)(n,{className:`text-token-text-tertiary h-5 w-5`})});if(!o&&!m)return(0,Q.jsx)(w,{to:{pathname:`/codex/cloud/security/findings`,search:r.search},replace:!0});let g=()=>{f(_.hasSeenAardvarkOnboarding)},te=()=>{h(!0),g(),t(`/codex/cloud`)},v=e=>{p(e)},y=()=>{ee.logStructuredEvent(`CodexSecurityReearchPreviewAgreementCompleted`,{agreementChecked:d}),u.addAction(`codex_security.research_preview_agreement_completed`,{agreementChecked:d}),l(`setup`)},b=()=>{h(!0),g(),t(`/codex/cloud/security/scans/new`)},x=c===`welcome`;return(0,Q.jsx)(de,{flex:!0,showSidebar:!1,canShowAlert:!1,alwaysShowBorder:!0,footerSpacePx:0,children:(0,Q.jsx)(`div`,{className:`text-token-text-primary flex min-h-full flex-1 flex-col`,children:(0,Q.jsx)(`div`,{className:`flex flex-1 items-center justify-center px-6 pt-8 pb-16`,children:(0,Q.jsxs)(`div`,{className:`flex w-full max-w-[720px] flex-col items-center gap-5`,children:[(0,Q.jsx)(`div`,{className:i(`flex w-full items-center justify-center`,x&&`min-h-[380px]`),children:x?a?(0,Q.jsx)(Ae,{}):(0,Q.jsx)(je,{agreementChecked:d,onAgreementChange:v}):(0,Q.jsx)(Me,{})}),x?(0,Q.jsx)(X,{cancelLabel:e.formatMessage(V.cancel),continueLabel:e.formatMessage(V.continue),onCancel:te,onContinue:y,continueDisabled:!a&&!d}):(0,Q.jsx)(X,{continueLabel:e.formatMessage(V.configureFirstScan),onContinue:b})]})})})})}var Z,Q,Pe=e((()=>{k(),o(),Oe(),K(),se(),le(),p(),h(),d(),m(),ue(),s(),Z=t(ae(),1),x(),v(),Q=y()})),Fe,$,Ie,Le=e((()=>{v(),Fe=T(),me(),k(),Ee(),Pe(),fe(),xe(),$=y(),Ce(),Ie=ie(function(){"use forget";let e=(0,Fe.c)(10),{hasAccess:t,hasCodexCloudAccess:n,hasNewUiAccess:r,isLoading:i,isError:a,refetch:o,isWorkspaceAllowed:s}=O(),{eligible:c}=J(),l=S(),u=s&&(t!==!0||n!==!0),d=l.pathname===`/codex/cloud/security/welcome`;if(i){let t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(F,{isLoading:!0}),e[0]=t):t=e[0],t}if(a){let t;return e[1]===o?t=e[2]:(t=(0,$.jsx)(he,{onRetry:()=>void o()}),e[1]=o,e[2]=t),t}if(t!==!0&&!s){let t;return e[3]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(pe,{}),e[3]=t):t=e[3],t}if(u){let t=n!==!0,r;return e[4]===t?r=e[5]:(r=(0,$.jsx)(Se,{feature:`codex_security`,requiresCodexCloud:t}),e[4]=t,e[5]=r),r}if(r!==!0){let t;return e[6]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(w,{to:`/aardvark`,replace:!0}),e[6]=t):t=e[6],t}if(d){let t;return e[7]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(Ne,{}),e[7]=t):t=e[7],t}if(c){let t;return e[8]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(w,{to:`/codex/cloud/security/welcome`,replace:!0}),e[8]=t):t=e[8],t}let f;return e[9]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,$.jsx)(F,{}),e[9]=f):f=e[9],f})}));export{Le as n,Ie as t};
+`, U = `EXHIBIT A - Codex Security Evaluation Plan`, W = `This Evaluation Plan is governed by the Evaluation Program Agreement between OpenAI and Customer.`, G = [{
+            label: `Project`,
+            value: `Codex Security - An AI powered code vulnerability capability early release`
+        }, {
+            label: `Training Permission on Inputs and Outputs Used for Development Purposes`,
+            value: `Yes`
+        }, {
+            label: `Pricing / Fees`,
+            value: `Participation in the Codex Security Beta Program is free of charge during the evaluation period.`
+        }, {
+            label: `Production Use Suitability`,
+            value: `Codex Security is an experimental beta release and is not intended for production use. Findings are advisory only and must be independently verified by Customer. Customer shall only submit code it owns or is authorized to use, and will not use the Services to analyze or report vulnerabilities in open-source or any third-party code without OpenAI's express written permission.`
+        }, {
+            label: `External Partner Data Sharing`,
+            value: `OpenAI will not share Evaluation Content or Provided Data with third parties.`
+        }]
+    }));
+
+function De() {
+    return (0, q.jsxs)(`div`, {
+        className: `text-token-text-primary space-y-5`,
+        children: [(0, q.jsx)(`p`, {
+            className: `text-center text-xs font-medium`,
+            children: U
+        }), (0, q.jsx)(`p`, {
+            className: `leading-5 font-medium`,
+            children: W
+        }), (0, q.jsxs)(`table`, {
+            className: `w-full table-fixed border-collapse leading-5`,
+            children: [(0, q.jsxs)(`colgroup`, {
+                children: [(0, q.jsx)(`col`, {
+                    className: `w-[36%]`
+                }), (0, q.jsx)(`col`, {
+                    className: `w-[64%]`
+                })]
+            }), (0, q.jsx)(`tbody`, {
+                children: G.map(e => (0, q.jsxs)(`tr`, {
+                    className: `align-top`,
+                    children: [(0, q.jsx)(`td`, {
+                        className: `border-token-border-medium bg-token-main-surface-primary text-token-text-primary border px-3 py-2 font-medium`,
+                        children: e.label
+                    }), (0, q.jsx)(`td`, {
+                        className: `border-token-border-medium bg-token-bg-primary text-token-text-primary border px-3 py-2`,
+                        children: e.value
+                    })]
+                }, e.label))
+            })]
+        })]
+    })
+}
+var q, Oe = e((() => {
+    K(), q = y()
+}));
+
+function J() {
+    return g(_.hasSeenAardvarkOnboarding)
+}
+
+function ke() {
+    return (0, Q.jsx)(`div`, {
+        className: `bg-token-border-light h-px w-14 shrink-0`
+    })
+}
+
+function Y({
+    className: e
+}) {
+    let t = E();
+    return (0, Q.jsxs)(`div`, {
+        className: i(`flex flex-col items-center gap-3 text-center`, e),
+        children: [(0, Q.jsx)(D, {
+            className: `text-token-text-primary h-7 w-7`
+        }), (0, Q.jsxs)(`div`, {
+            className: `space-y-2`,
+            children: [(0, Q.jsx)(`h1`, {
+                className: `text-token-text-primary text-2xl font-semibold tracking-tight`,
+                children: t.formatMessage(V.title)
+            }), (0, Q.jsx)(`div`, {
+                className: `flex justify-center`,
+                children: (0, Q.jsx)(`span`, {
+                    className: `bg-token-main-surface-secondary text-token-text-secondary rounded-full px-2 py-0.5 text-[11px] font-medium`,
+                    children: t.formatMessage(V.previewBadge)
+                })
+            })]
+        }), (0, Q.jsx)(ke, {})]
+    })
+}
+
+function Ae() {
+    let e = E();
+    return (0, Q.jsxs)(`div`, {
+        className: `flex w-full max-w-[520px] flex-col items-center gap-3`,
+        children: [(0, Q.jsx)(Y, {}), (0, Q.jsxs)(`div`, {
+            className: `text-token-text-primary w-full space-y-4 text-center text-[15px] leading-6`,
+            children: [(0, Q.jsx)(`p`, {
+                className: `font-medium`,
+                children: e.formatMessage(V.enterpriseBodyTitle)
+            }), (0, Q.jsx)(`p`, {
+                children: e.formatMessage(V.enterpriseBodyPowered)
+            }), (0, Q.jsx)(`p`, {
+                children: e.formatMessage(V.enterpriseBodyTraining)
+            }), (0, Q.jsx)(`p`, {
+                className: `text-token-text-secondary`,
+                children: e.formatMessage(V.enterpriseBodyWarning)
+            })]
+        })]
+    })
+}
+
+function je({
+    agreementChecked: e,
+    onAgreementChange: t
+}) {
+    let n = E(),
+        r = (0, Z.useId)();
+    return (0, Q.jsxs)(`div`, {
+        className: `flex w-full max-w-[620px] flex-col items-center gap-3`,
+        children: [(0, Q.jsx)(Y, {}), (0, Q.jsxs)(`div`, {
+            className: `w-full space-y-4 text-center`,
+            children: [(0, Q.jsx)(`p`, {
+                className: `text-token-text-primary text-[15px] leading-6 font-medium`,
+                children: n.formatMessage(V.agreementBodyTitle)
+            }), (0, Q.jsx)(`p`, {
+                className: `text-token-text-secondary text-[15px] leading-6`,
+                children: n.formatMessage(V.agreementWarning)
+            }), (0, Q.jsx)(`div`, {
+                className: `border-token-border-light bg-token-main-surface-secondary mt-2 max-h-[320px] overflow-y-auto rounded-2xl border p-4`,
+                children: (0, Q.jsxs)(`div`, {
+                    className: `text-token-text-secondary text-start text-xs leading-5`,
+                    children: [(0, Q.jsx)(`div`, {
+                        className: `whitespace-pre-wrap`,
+                        children: H
+                    }), (0, Q.jsx)(`div`, {
+                        className: `border-token-border-light my-5 border-t`
+                    }), (0, Q.jsx)(De, {})]
+                })
+            }), (0, Q.jsx)(ce, {
+                id: r,
+                checked: e,
+                onChange: e => t(e.target.checked),
+                containerClassName: `mx-auto w-fit items-start justify-center gap-3 text-start`,
+                className: `mt-1 shrink-0`,
+                labelClassName: `text-token-text-primary text-start text-sm leading-6`,
+                label: n.formatMessage(V.agreementCheckboxLabel)
+            })]
+        })]
+    })
+}
+
+function Me() {
+    let e = E();
+    return (0, Q.jsxs)(`div`, {
+        className: `flex w-full max-w-[320px] flex-col items-center gap-[22px] text-center`,
+        children: [(0, Q.jsx)(D, {
+            className: `text-token-text-primary h-7 w-7`
+        }), (0, Q.jsxs)(`div`, {
+            className: `flex w-full flex-col items-center gap-2`,
+            children: [(0, Q.jsx)(`h2`, {
+                className: `text-token-text-primary w-full text-lg font-semibold tracking-tight`,
+                children: e.formatMessage(V.secondPageTitle)
+            }), (0, Q.jsx)(`p`, {
+                className: `text-token-text-tertiary w-full text-base leading-[26px]`,
+                children: e.formatMessage(V.secondPageBody)
+            })]
+        })]
+    })
+}
+
+function X({
+    cancelLabel: e,
+    continueLabel: t,
+    onCancel: n,
+    onContinue: r,
+    continueDisabled: a
+}) {
+    let o = e && n;
+    return (0, Q.jsxs)(`div`, {
+        className: i(`flex items-center justify-center gap-[15px]`, o ? `flex-row` : `flex-col`),
+        children: [o ? (0, Q.jsx)(`button`, {
+            type: `button`,
+            onClick: n,
+            className: `text-token-text-tertiary hover:text-token-text-secondary text-sm transition-colors`,
+            children: e
+        }) : null, (0, Q.jsx)(te, {
+            as: `button`,
+            color: `primary`,
+            onClick: r,
+            disabled: a,
+            children: t
+        })]
+    })
+}
+
+function Ne() {
+    let e = E(),
+        t = ne(),
+        r = S(),
+        {
+            isEligibleWorkspace: a
+        } = O(),
+        {
+            eligible: o,
+            isLoading: s
+        } = J(),
+        [c, l] = (0, Z.useState)(`welcome`),
+        [d, p] = (0, Z.useState)(!1),
+        [m, h] = (0, Z.useState)(!1);
+    if (s) return (0, Q.jsx)(`div`, {
+        className: `flex min-h-[40vh] items-center justify-center`,
+        children: (0, Q.jsx)(n, {
+            className: `text-token-text-tertiary h-5 w-5`
+        })
+    });
+    if (!o && !m) return (0, Q.jsx)(w, {
+        to: {
+            pathname: `/codex/cloud/security/findings`,
+            search: r.search
+        },
+        replace: !0
+    });
+    let g = () => {
+            f(_.hasSeenAardvarkOnboarding)
+        },
+        te = () => {
+            h(!0), g(), t(`/codex/cloud`)
+        },
+        v = e => {
+            p(e)
+        },
+        y = () => {
+            ee.logStructuredEvent(`CodexSecurityReearchPreviewAgreementCompleted`, {
+                agreementChecked: d
+            }), u.addAction(`codex_security.research_preview_agreement_completed`, {
+                agreementChecked: d
+            }), l(`setup`)
+        },
+        b = () => {
+            h(!0), g(), t(`/codex/cloud/security/scans/new`)
+        },
+        x = c === `welcome`;
+    return (0, Q.jsx)(de, {
+        flex: !0,
+        showSidebar: !1,
+        canShowAlert: !1,
+        alwaysShowBorder: !0,
+        footerSpacePx: 0,
+        children: (0, Q.jsx)(`div`, {
+            className: `text-token-text-primary flex min-h-full flex-1 flex-col`,
+            children: (0, Q.jsx)(`div`, {
+                className: `flex flex-1 items-center justify-center px-6 pt-8 pb-16`,
+                children: (0, Q.jsxs)(`div`, {
+                    className: `flex w-full max-w-[720px] flex-col items-center gap-5`,
+                    children: [(0, Q.jsx)(`div`, {
+                        className: i(`flex w-full items-center justify-center`, x && `min-h-[380px]`),
+                        children: x ? a ? (0, Q.jsx)(Ae, {}) : (0, Q.jsx)(je, {
+                            agreementChecked: d,
+                            onAgreementChange: v
+                        }) : (0, Q.jsx)(Me, {})
+                    }), x ? (0, Q.jsx)(X, {
+                        cancelLabel: e.formatMessage(V.cancel),
+                        continueLabel: e.formatMessage(V.continue),
+                        onCancel: te,
+                        onContinue: y,
+                        continueDisabled: !a && !d
+                    }) : (0, Q.jsx)(X, {
+                        continueLabel: e.formatMessage(V.configureFirstScan),
+                        onContinue: b
+                    })]
+                })
+            })
+        })
+    })
+}
+var Z, Q, Pe = e((() => {
+        k(), o(), Oe(), K(), se(), le(), p(), h(), d(), m(), ue(), s(), Z = t(ae(), 1), x(), v(), Q = y()
+    })),
+    Fe, $, Ie, Le = e((() => {
+        v(), Fe = T(), me(), k(), Ee(), Pe(), fe(), xe(), $ = y(), Ce(), Ie = ie(function() {
+            "use forget";
+            let e = (0, Fe.c)(10),
+                {
+                    hasAccess: t,
+                    hasCodexCloudAccess: n,
+                    hasNewUiAccess: r,
+                    isLoading: i,
+                    isError: a,
+                    refetch: o,
+                    isWorkspaceAllowed: s
+                } = O(),
+                {
+                    eligible: c
+                } = J(),
+                l = S(),
+                u = s && (t !== !0 || n !== !0),
+                d = l.pathname === `/codex/cloud/security/welcome`;
+            if (i) {
+                let t;
+                return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(F, {
+                    isLoading: !0
+                }), e[0] = t) : t = e[0], t
+            }
+            if (a) {
+                let t;
+                return e[1] === o ? t = e[2] : (t = (0, $.jsx)(he, {
+                    onRetry: () => void o()
+                }), e[1] = o, e[2] = t), t
+            }
+            if (t !== !0 && !s) {
+                let t;
+                return e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(pe, {}), e[3] = t) : t = e[3], t
+            }
+            if (u) {
+                let t = n !== !0,
+                    r;
+                return e[4] === t ? r = e[5] : (r = (0, $.jsx)(Se, {
+                    feature: `codex_security`,
+                    requiresCodexCloud: t
+                }), e[4] = t, e[5] = r), r
+            }
+            if (r !== !0) {
+                let t;
+                return e[6] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(w, {
+                    to: `/aardvark`,
+                    replace: !0
+                }), e[6] = t) : t = e[6], t
+            }
+            if (d) {
+                let t;
+                return e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(Ne, {}), e[7] = t) : t = e[7], t
+            }
+            if (c) {
+                let t;
+                return e[8] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(w, {
+                    to: `/codex/cloud/security/welcome`,
+                    replace: !0
+                }), e[8] = t) : t = e[8], t
+            }
+            let f;
+            return e[9] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, $.jsx)(F, {}), e[9] = f) : f = e[9], f
+        })
+    }));
+export {
+    Le as n, Ie as t
+};
 //# sourceMappingURL=de716a20-f29dfdv17y5c2xt9.js.map

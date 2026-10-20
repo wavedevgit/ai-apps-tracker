@@ -1,0 +1,558 @@
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Gt as r,
+    J5 as i,
+    Jt as a,
+    cn as o,
+    en as s,
+    hn as ee,
+    jt as c,
+    nn as l,
+    q5 as te,
+    vn as u
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Hn as d,
+    Tn as f,
+    Vn as p
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    DC as m,
+    EC as ne
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    n as h,
+    t as g
+} from "./10f2d773-mao4909pr0b6q96w.js";
+import {
+    n as _,
+    t as re
+} from "./f95c8da2-bq39v2m1x8bmm86p.js";
+import {
+    n as v,
+    t as y
+} from "./b2c255f5-h4g7j7aegxig8sr2.js";
+import {
+    t as b
+} from "./c7a90257-h8bu5i1psxpuvu4f.js";
+import {
+    i as ie,
+    t as ae
+} from "./061ab7e7-kw5nugyi8mqz237u.js";
+import {
+    n as oe,
+    t as se
+} from "./b1b1bdb4-j8b2om5ka63z2ze1.js";
+var ce, le, ue, de, fe, pe, me, he, ge, _e = e((() => {
+        ce = 1.207, le = {
+            delay: .558,
+            duration: .509,
+            ease: [.19045, .58992, 0, .93507]
+        }, ue = {
+            delay: .085,
+            duration: 1.0916,
+            times: [0, .29286, 1],
+            ease: [
+                [0, 1, .68448, 1],
+                [.26245, 0, .08511, 1]
+            ]
+        }, de = {
+            delay: .586,
+            duration: .43,
+            ease: [.25, .1, .25, 1]
+        }, fe = {
+            ...le,
+            ease: [.14019, .48002, .29395, .9993]
+        }, pe = {
+            delay: .5435,
+            duration: .6106,
+            ease: [.31143, 0, .25, 1]
+        }, me = `inset(0px calc(50% - 29px) calc(100% - 58px + var(--surface-menu-height, 0px) * 0) calc(50% - 29px) round 29px)`, he = `inset(0px calc(0% - 0px) calc(0% - 0px + var(--surface-menu-height, 0px) * 1) calc(0% - 0px) round 29px)`, ge = `inset(0px calc(0% - 0px) calc(0% - 0px + var(--surface-menu-height, 0px) * 0) calc(0% - 0px) round 29px)`
+    })),
+    x, ve = e((() => {
+        x = {
+            brandHome: `dots-sub-nav-brandHome`,
+            mobileTrigger: `dots-sub-nav-mobileTrigger`,
+            chevron: `dots-sub-nav-chevron`,
+            mobileMenu: `dots-sub-nav-mobileMenu`,
+            mobileLink: `dots-sub-nav-mobileLink`,
+            container: `dots-sub-nav-container`,
+            nav: `dots-sub-nav-nav`,
+            surface: `dots-sub-nav-surface`,
+            content: `dots-sub-nav-content`,
+            brand: `dots-sub-nav-brand`,
+            link: `dots-sub-nav-link`,
+            download: `dots-sub-nav-download`,
+            avatar: `dots-sub-nav-avatar`,
+            links: `dots-sub-nav-links`,
+            downloadSurface: `dots-sub-nav-downloadSurface`,
+            downloadLabel: `dots-sub-nav-downloadLabel`
+        }
+    }));
+
+function ye(e, t, n) {
+    if (!n.getClientRects().length) {
+        t.matches(`:popover-open`) && t.hidePopover();
+        return
+    }
+    let r = e.getBoundingClientRect(),
+        i = `${t.offsetHeight}px`,
+        a = window.visualViewport,
+        o = a ? a.offsetTop + a.height : window.innerHeight,
+        s = {
+            top: `${r.bottom}px`,
+            left: `${r.left}px`,
+            width: `${r.width}px`,
+            maxHeight: `${Math.max(0,o-r.bottom-16)}px`
+        };
+    for (let e of [`top`, `left`, `width`, `maxHeight`]) t.style[e] !== s[e] && (t.style[e] = s[e]);
+    e.style.getPropertyValue(`--mobile-menu-height`) !== i && e.style.setProperty(`--mobile-menu-height`, i)
+}
+
+function be(e) {
+    return `translateX(calc(${-50*(1-e)}cqw + ${29*(1-e)}px))`
+}
+
+function xe(e) {
+    return e >= 1 || e <= 0 ? 0 : 32 * Math.sin(Math.PI * e)
+}
+
+function Se(e) {
+    return `inset(0px 0px 0px ${32-e}px round 999px)`
+}
+
+function Ce(e) {
+    return `translateX(${-e/2}px)`
+}
+var we, S, C, Te, Ee, De, w = e((() => {
+        we = f(), c(), S = n(d()), v(), m(), ie(), oe(), _e(), ve(), b(), C = p(), Te = o.create(se), Ee = o.create(ae), De = e => {
+            "use forget";
+            let t = (0, we.c)(139),
+                {
+                    id: n,
+                    data: i,
+                    reducedMotion: ee
+                } = e,
+                {
+                    artwork: c
+                } = (0, S.useContext)(y),
+                te = a(),
+                d = ee || te,
+                f = u(),
+                p = (0, S.useRef)(null),
+                m = (0, S.useRef)(null),
+                h = (0, S.useRef)(null),
+                g = (0, S.useId)(),
+                [_, re] = (0, S.useState)(!1),
+                [v, b] = (0, S.useState)(!1),
+                ie, ae;
+            t[0] === _ ? (ie = t[1], ae = t[2]) : (ie = () => {
+                let e = p.current,
+                    t = m.current,
+                    n = h.current;
+                if (!e || !t || !n) return;
+                let r, i = () => {
+                        r === void 0 && (r = requestAnimationFrame(() => {
+                            r = void 0, ye(e, t, n)
+                        }))
+                    },
+                    a = new ResizeObserver(i);
+                a.observe(e), a.observe(t), window.addEventListener(`resize`, i);
+                let o = window.visualViewport;
+                return _ && (o?.addEventListener(`resize`, i), o?.addEventListener(`scroll`, i)), i(), () => {
+                    a.disconnect(), r !== void 0 && cancelAnimationFrame(r), window.removeEventListener(`resize`, i), o?.removeEventListener(`resize`, i), o?.removeEventListener(`scroll`, i)
+                }
+            }, ae = [_], t[0] = _, t[1] = ie, t[2] = ae), (0, S.useEffect)(ie, ae);
+            let oe, _e;
+            t[3] === f ? (oe = t[4], _e = t[5]) : (oe = () => {
+                !f && m.current?.matches(`:popover-open`) && m.current.hidePopover()
+            }, _e = [f], t[3] = f, t[4] = oe, t[5] = _e), (0, S.useEffect)(oe, _e);
+            let [ve, De] = (0, S.useState)(!1), w = l(+!!d), Oe = s(w, be), ke = s(w, xe), T = s(ke, Se), E = s(ke, Ce), D, O;
+            t[6] !== w || t[7] !== d ? (D = () => {
+                if (d) {
+                    w.set(1);
+                    return
+                }
+                let e = r(w, 1, fe),
+                    t = window.setTimeout(() => De(!0), ce * 1e3);
+                return () => {
+                    e.stop(), window.clearTimeout(t)
+                }
+            }, O = [w, d], t[6] = w, t[7] = d, t[8] = D, t[9] = O) : (D = t[8], O = t[9]), (0, S.useEffect)(D, O);
+            let k = (i.links.length - 1) / 2,
+                A = Math.max(0, Math.floor(k)),
+                j = Math.min(.08, .577 / (A + 2)),
+                Ae;
+            t[10] === d ? Ae = t[11] : (Ae = d ? {
+                duration: .18
+            } : de, t[10] = d, t[11] = Ae);
+            let M = Ae,
+                je = v ? `instant` : void 0,
+                Me, Ne;
+            t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (Ne = () => b(!0), Me = () => b(!1), t[12] = Me, t[13] = Ne) : (Me = t[12], Ne = t[13]);
+            let Pe = i.label,
+                Fe = !ve && !d || !f,
+                Ie = d ? 0 : -180,
+                N;
+            t[14] === Ie ? N = t[15] : (N = {
+                opacity: 0,
+                y: Ie
+            }, t[14] = Ie, t[15] = N);
+            let P;
+            t[16] === d ? P = t[17] : (P = d ? 0 : [-180, 72, 0], t[16] = d, t[17] = P);
+            let F;
+            t[18] === P ? F = t[19] : (F = {
+                opacity: 1,
+                y: P
+            }, t[18] = P, t[19] = F);
+            let Le;
+            t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (Le = {
+                opacity: 0,
+                transition: {
+                    duration: .15
+                }
+            }, t[20] = Le) : Le = t[20];
+            let Re = d ? .18 : .08,
+                I;
+            t[21] === Re ? I = t[22] : (I = {
+                duration: Re
+            }, t[21] = Re, t[22] = I);
+            let L;
+            t[23] === d ? L = t[24] : (L = d ? {
+                duration: 0
+            } : ue, t[23] = d, t[24] = L);
+            let R;
+            t[25] !== I || t[26] !== L ? (R = {
+                opacity: I,
+                y: L
+            }, t[25] = I, t[26] = L, t[27] = R) : R = t[27];
+            let z;
+            t[28] === d ? z = t[29] : (z = !d && {
+                clipPath: me
+            }, t[28] = d, t[29] = z);
+            let ze = _ ? ge : he,
+                B;
+            t[30] === ze ? B = t[31] : (B = {
+                clipPath: ze
+            }, t[30] = ze, t[31] = B);
+            let V;
+            t[32] !== ve || t[33] !== v || t[34] !== _ || t[35] !== d ? (V = d || v ? {
+                duration: 0
+            } : ve ? {
+                duration: _ ? .28 : .24,
+                ease: [.25, 1, .5, 1]
+            } : le, t[32] = ve, t[33] = v, t[34] = _, t[35] = d, t[36] = V) : V = t[36];
+            let Be;
+            t[37] !== z || t[38] !== B || t[39] !== V ? (Be = (0, C.jsx)(o.div, {
+                "aria-hidden": `true`,
+                className: x.surface,
+                initial: z,
+                animate: B,
+                transition: V
+            }), t[37] = z, t[38] = B, t[39] = V, t[40] = Be) : Be = t[40];
+            let H;
+            t[41] === d ? H = t[42] : (H = !d && {
+                transform: `translateX(calc((50cqw - 20px - var(--brand-padding-start, 8px)) * 1))`
+            }, t[41] = d, t[42] = H);
+            let Ve;
+            t[43] === Symbol.for(`react.memo_cache_sentinel`) ? (Ve = {
+                transform: `translateX(calc((50cqw - 20px - var(--brand-padding-start, 8px)) * 0))`
+            }, t[43] = Ve) : Ve = t[43];
+            let U;
+            t[44] === d ? U = t[45] : (U = d ? {
+                duration: 0
+            } : le, t[44] = d, t[45] = U);
+            let W;
+            t[46] === d ? W = t[47] : (W = !d && {
+                scale: 1.815
+            }, t[46] = d, t[47] = W);
+            let He;
+            t[48] === Symbol.for(`react.memo_cache_sentinel`) ? (He = {
+                scale: 1
+            }, t[48] = He) : He = t[48];
+            let Ue = d ? 0 : .35,
+                We;
+            t[49] === Symbol.for(`react.memo_cache_sentinel`) ? (We = [.22, 1, .36, 1], t[49] = We) : We = t[49];
+            let G;
+            t[50] === Ue ? G = t[51] : (G = {
+                delay: .2,
+                duration: Ue,
+                ease: We
+            }, t[50] = Ue, t[51] = G);
+            let K;
+            t[52] === c.navMark ? K = t[53] : (K = c.navMark && (0, C.jsx)(`img`, {
+                src: c.navMark,
+                alt: ``,
+                className: `size-full object-contain dark:invert`
+            }), t[52] = c.navMark, t[53] = K);
+            let q;
+            t[54] !== W || t[55] !== G || t[56] !== K ? (q = (0, C.jsx)(o.span, {
+                className: `size-6 shrink-0`,
+                "aria-hidden": !0,
+                initial: W,
+                animate: He,
+                transition: G,
+                children: K
+            }), t[54] = W, t[55] = G, t[56] = K, t[57] = q) : q = t[57];
+            let Ge, Ke;
+            t[58] === Symbol.for(`react.memo_cache_sentinel`) ? (Ge = {
+                opacity: 0
+            }, Ke = {
+                opacity: 1
+            }, t[58] = Ge, t[59] = Ke) : (Ge = t[58], Ke = t[59]);
+            let J;
+            t[60] === M ? J = t[61] : (J = {
+                opacity: M
+            }, t[60] = M, t[61] = J);
+            let qe;
+            t[62] === Symbol.for(`react.memo_cache_sentinel`) ? (qe = (0, C.jsx)(ne, {
+                className: `${x.chevron} icon-sm`,
+                "aria-hidden": !0
+            }), t[62] = qe) : qe = t[62];
+            let Y;
+            t[63] !== i.label || t[64] !== J ? (Y = (0, C.jsxs)(o.span, {
+                className: x.avatar,
+                initial: Ge,
+                animate: Ke,
+                transition: J,
+                children: [i.label, qe]
+            }), t[63] = i.label, t[64] = J, t[65] = Y) : Y = t[65];
+            let X;
+            t[66] !== i.homeHref || t[67] !== i.label ? (X = (0, C.jsx)(se, {
+                className: `${x.brandHome} interactive-button`,
+                href: i.homeHref,
+                ariaLabel: i.label
+            }), t[66] = i.homeHref, t[67] = i.label, t[68] = X) : X = t[68];
+            let Je = i.menuLabel ?? i.label,
+                Ye;
+            t[69] !== g || t[70] !== _ || t[71] !== Je ? (Ye = (0, C.jsx)(`button`, {
+                ref: h,
+                className: `${x.mobileTrigger} interactive-button`,
+                type: `button`,
+                "aria-label": Je,
+                "aria-expanded": _,
+                "aria-controls": g,
+                popoverTarget: g
+            }), t[69] = g, t[70] = _, t[71] = Je, t[72] = Ye) : Ye = t[72];
+            let Xe;
+            t[73] !== H || t[74] !== U || t[75] !== q || t[76] !== Y || t[77] !== X || t[78] !== Ye ? (Xe = (0, C.jsxs)(o.div, {
+                className: x.brand,
+                initial: H,
+                animate: Ve,
+                transition: U,
+                children: [q, Y, X, Ye]
+            }), t[73] = H, t[74] = U, t[75] = q, t[76] = Y, t[77] = X, t[78] = Ye, t[79] = Xe) : Xe = t[79];
+            let Ze;
+            if (t[80] !== i.links || t[81] !== M || t[82] !== k || t[83] !== j || t[84] !== A || t[85] !== d) {
+                let e;
+                t[87] !== M || t[88] !== k || t[89] !== j || t[90] !== A || t[91] !== d ? (e = (e, t) => (0, C.jsx)(Te, {
+                    className: x.link,
+                    href: e.href,
+                    initial: {
+                        opacity: 0,
+                        x: d ? 0 : (k - t) * 20
+                    },
+                    animate: {
+                        opacity: 1,
+                        x: 0
+                    },
+                    transition: {
+                        opacity: d ? M : {
+                            ease: [.25, .1, .25, 1],
+                            delay: .63 + Math.floor(Math.abs(t - k)) * j,
+                            duration: .577 - A * j
+                        },
+                        x: d ? {
+                            duration: 0
+                        } : pe
+                    },
+                    children: e.label
+                }, e.href), t[87] = M, t[88] = k, t[89] = j, t[90] = A, t[91] = d, t[92] = e) : e = t[92], Ze = i.links.map(e), t[80] = i.links, t[81] = M, t[82] = k, t[83] = j, t[84] = A, t[85] = d, t[86] = Ze
+            } else Ze = t[86];
+            let Qe;
+            t[93] === Ze ? Qe = t[94] : (Qe = (0, C.jsx)(`div`, {
+                className: x.links,
+                children: Ze
+            }), t[93] = Ze, t[94] = Qe);
+            let $e = `dots-${n??`subnav`}-navigation-cta`,
+                et;
+            t[95] === Oe ? et = t[96] : (et = {
+                transform: Oe
+            }, t[95] = Oe, t[96] = et);
+            let tt, nt;
+            t[97] === Symbol.for(`react.memo_cache_sentinel`) ? (tt = {
+                opacity: 0
+            }, nt = {
+                opacity: 1
+            }, t[97] = tt, t[98] = nt) : (tt = t[97], nt = t[98]);
+            let rt;
+            t[99] === M ? rt = t[100] : (rt = {
+                opacity: M
+            }, t[99] = M, t[100] = rt);
+            let Z;
+            t[101] === T ? Z = t[102] : (Z = (0, C.jsx)(o.span, {
+                "aria-hidden": `true`,
+                className: x.downloadSurface,
+                style: {
+                    clipPath: T
+                }
+            }), t[101] = T, t[102] = Z);
+            let it;
+            t[103] === E ? it = t[104] : (it = {
+                transform: E
+            }, t[103] = E, t[104] = it);
+            let at;
+            t[105] !== i.ctaLabel || t[106] !== it ? (at = (0, C.jsx)(o.span, {
+                className: x.downloadLabel,
+                style: it,
+                children: i.ctaLabel
+            }), t[105] = i.ctaLabel, t[106] = it, t[107] = at) : at = t[107];
+            let ot;
+            t[108] !== i.ctaHref || t[109] !== $e || t[110] !== et || t[111] !== rt || t[112] !== Z || t[113] !== at ? (ot = (0, C.jsxs)(Ee, {
+                className: x.download,
+                analyticsIdentifier: $e,
+                href: i.ctaHref,
+                style: et,
+                initial: tt,
+                animate: nt,
+                transition: rt,
+                children: [Z, at]
+            }), t[108] = i.ctaHref, t[109] = $e, t[110] = et, t[111] = rt, t[112] = Z, t[113] = at, t[114] = ot) : ot = t[114];
+            let st;
+            t[115] !== Xe || t[116] !== Qe || t[117] !== ot ? (st = (0, C.jsxs)(`div`, {
+                className: x.content,
+                children: [Xe, Qe, ot]
+            }), t[115] = Xe, t[116] = Qe, t[117] = ot, t[118] = st) : st = t[118];
+            let ct = !_,
+                lt;
+            t[119] === Symbol.for(`react.memo_cache_sentinel`) ? (lt = e => {
+                e.newState === `open` && p.current && m.current && h.current && ye(p.current, m.current, h.current), re(e.newState === `open`)
+            }, t[119] = lt) : lt = t[119];
+            let ut;
+            t[120] === i.links ? ut = t[121] : (ut = i.links.map(e => (0, C.jsx)(se, {
+                className: `${x.mobileLink} interactive-button`,
+                href: e.href,
+                onClick: () => m.current?.hidePopover(),
+                children: e.label
+            }, e.href)), t[120] = i.links, t[121] = ut);
+            let Q;
+            t[122] !== g || t[123] !== ct || t[124] !== ut ? (Q = (0, C.jsx)(`div`, {
+                ref: m,
+                id: g,
+                popover: `auto`,
+                inert: ct,
+                className: x.mobileMenu,
+                onBeforeToggle: lt,
+                children: ut
+            }), t[122] = g, t[123] = ct, t[124] = ut, t[125] = Q) : Q = t[125];
+            let $;
+            t[126] !== i.label || t[127] !== Fe || t[128] !== N || t[129] !== F || t[130] !== R || t[131] !== Be || t[132] !== st || t[133] !== Q ? ($ = (0, C.jsxs)(o.nav, {
+                "aria-label": Pe,
+                className: x.nav,
+                inert: Fe,
+                initial: N,
+                animate: F,
+                exit: Le,
+                transition: R,
+                children: [Be, st, Q]
+            }), t[126] = i.label, t[127] = Fe, t[128] = N, t[129] = F, t[130] = R, t[131] = Be, t[132] = st, t[133] = Q, t[134] = $) : $ = t[134];
+            let dt;
+            return t[135] !== _ || t[136] !== $ || t[137] !== je ? (dt = (0, C.jsx)(`div`, {
+                ref: p,
+                className: x.container,
+                "data-menu-open": _,
+                "data-menu-motion": je,
+                onKeyDownCapture: Ne,
+                onPointerDownCapture: Me,
+                children: $
+            }), t[135] = _, t[136] = $, t[137] = je, t[138] = dt) : dt = t[138], dt
+        }
+    })),
+    Oe = t({
+        default: () => O
+    }),
+    ke, T, E, D, O, k = e((() => {
+        ke = f(), i(), c(), T = n(d()), _(), h(), w(), E = p(), D = e => {
+            "use forget";
+            let t = (0, ke.c)(19),
+                {
+                    id: n,
+                    data: r,
+                    reducedMotion: i
+                } = e,
+                [a, o] = (0, T.useState)(!1),
+                s = (0, T.useRef)(null),
+                {
+                    isNavigationMobileOpen: c
+                } = (0, T.useContext)(g),
+                l = a && !c,
+                {
+                    setReplaced: u
+                } = (0, T.useContext)(re),
+                d, f;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = () => {
+                let e = s.current;
+                if (!e) return;
+                let t = new IntersectionObserver(e => {
+                    let [t] = e;
+                    return o(t.boundingClientRect.bottom <= 0)
+                });
+                return t.observe(e), () => t.disconnect()
+            }, f = [], t[0] = d, t[1] = f) : (d = t[0], f = t[1]), (0, T.useEffect)(d, f);
+            let p, m;
+            t[2] !== u || t[3] !== l ? (p = () => (u(l), () => u(!1)), m = [l, u], t[2] = u, t[3] = l, t[4] = p, t[5] = m) : (p = t[4], m = t[5]), (0, T.useEffect)(p, m);
+            let ne = Math.max(0, r.revealAfter ?? 160),
+                h;
+            t[6] === ne ? h = t[7] : (h = (0, E.jsx)(`span`, {
+                ref: s,
+                "aria-hidden": `true`,
+                className: `pointer-events-none absolute size-px`,
+                style: {
+                    top: ne
+                }
+            }), t[6] = ne, t[7] = h);
+            let _;
+            t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = te(`pointer-events-none fixed inset-x-0 top-2 mx-auto w-[calc(100%-32px)] max-w-[727px]`, `z-50`), t[8] = _) : _ = t[8];
+            let v;
+            t[9] !== r || t[10] !== n || t[11] !== i || t[12] !== l ? (v = l && (0, E.jsx)(De, {
+                id: n,
+                data: r,
+                reducedMotion: i
+            }, `dots-navigation`), t[9] = r, t[10] = n, t[11] = i, t[12] = l, t[13] = v) : v = t[13];
+            let y;
+            t[14] === v ? y = t[15] : (y = (0, E.jsx)(`div`, {
+                className: _,
+                children: (0, E.jsx)(ee, {
+                    children: v
+                })
+            }), t[14] = v, t[15] = y);
+            let b;
+            return t[16] !== h || t[17] !== y ? (b = (0, E.jsxs)(`div`, {
+                className: `relative h-0`,
+                "data-dots-subnav": !0,
+                children: [h, y]
+            }), t[16] = h, t[17] = y, t[18] = b) : b = t[18], b
+        }, O = e => {
+            "use forget";
+            let t = (0, ke.c)(4),
+                {
+                    id: n,
+                    data: r,
+                    reducedMotion: i
+                } = e,
+                a;
+            return t[0] !== r || t[1] !== n || t[2] !== i ? (a = r?.label ? (0, E.jsx)(D, {
+                id: n,
+                data: r,
+                reducedMotion: i
+            }) : null, t[0] = r, t[1] = n, t[2] = i, t[3] = a) : a = t[3], a
+        }
+    }));
+export {
+    k as n, Oe as r, O as t
+};
+//# sourceMappingURL=ce99d8dd-dxqexvzntgy8hrpo.js.map

@@ -1,0 +1,379 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    s as t,
+    w as n
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    ey as r,
+    ny as i,
+    ry as a
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+import {
+    d as o,
+    f as s,
+    h as c,
+    m as l,
+    p as u
+} from "./dbe96c84-miwy49cljbty705x.js";
+async function d(e, t, n, r) {
+    let i = new Map(n.operations.map(e => [u(e.target), e])),
+        a = [],
+        o = new Set;
+    for (; o.size < n.operations.length;) {
+        if (r?.aborted) throw r.reason;
+        let s = n.operations.filter(({
+                id: e
+            }) => !o.has(e)).slice(0, 8),
+            c = {
+                scope: n.scope,
+                operations: s
+            },
+            l = await h(e, t, c, r);
+        for (; s.length > 1 && l.operation_checks.every(e => e.status === `blocked` && e.blockers.length === 1 && e.blockers[0] === `unsupported`);) s = s.slice(0, Math.ceil(s.length / 2)), c = {
+            scope: n.scope,
+            operations: s
+        }, l = await h(e, t, c, r);
+        let d = l.operation_checks.filter(e => ![`ready`, `unchanged`].includes(e.status)),
+            f = d.length > 0 && d.every(e => e.status === `needs_changes` && e.blockers.length === 0 && e.required_deps.length > 0),
+            p = !1;
+        if (f)
+            for (let c of d) {
+                let l = s.find(({
+                    id: e
+                }) => e === c.id);
+                if (!l || o.has(l.id)) continue;
+                let d = new Map([
+                        [l.id, l]
+                    ]),
+                    f = [c];
+                for (; f.length > 0;) {
+                    let s = d.size,
+                        c = f.flatMap(({
+                            required_deps: e
+                        }) => e),
+                        l = !0;
+                    for (; c.length;) {
+                        let e = c.shift();
+                        if (!e) break;
+                        let t = i.get(u(e.target));
+                        t ? d.set(t.id, t) : l = !1, c.push(...e.required_deps)
+                    }
+                    if (!l || d.size > 8 || d.size === s) break;
+                    let g = {
+                            scope: n.scope,
+                            operations: [...d.values()]
+                        },
+                        _ = await h(e, t, g, r);
+                    if (m(_)) {
+                        a.push({
+                            intent: g,
+                            assessment: _
+                        }), g.operations.forEach(({
+                            id: e
+                        }) => o.add(e)), p = !0;
+                        break
+                    }
+                    if (f = _.operation_checks.filter(e => ![`ready`, `unchanged`].includes(e.status)), !f.every(e => e.status === `needs_changes` && e.blockers.length === 0 && e.required_deps.length > 0)) break
+                }
+            }
+        p || (a.push({
+            intent: c,
+            assessment: l
+        }), s.forEach(({
+            id: e
+        }) => o.add(e)))
+    }
+    let s = new Map;
+    for (let e of a)
+        for (let t of e.assessment.operation_checks) {
+            let e = s.get(t.id);
+            if (e && JSON.stringify(e) !== JSON.stringify(t)) throw Error(`Settings changed while reviewing the selected plugins.`);
+            s.set(t.id, t)
+        }
+    return {
+        workspace_id: e.workspaceId,
+        scope: n.scope,
+        role_cascade_plan: `v1`,
+        operation_checks: n.operations.map(({
+            id: e
+        }) => {
+            let t = s.get(e);
+            if (!t) throw Error(`The assessment omitted a selected operation.`);
+            return t
+        }),
+        logical_batch: {
+            groups: a
+        }
+    }
+}
+async function f({
+    actor: e,
+    client: t,
+    intent: n,
+    preview: r,
+    canUpdate: i
+}) {
+    let a = new Map(n.operations.map(e => [e.id, JSON.stringify(e)]));
+    if (n.scope.type !== `role` || !n.operations.every(({
+            type: e
+        }) => e === `enable`) || r.workspace_id !== e.workspaceId || JSON.stringify(r.scope) !== JSON.stringify(n.scope) || r.logical_batch.groups.some(e => JSON.stringify(e.intent.scope) !== JSON.stringify(n.scope) || e.intent.operations.length > 8 || e.intent.operations.some(e => a.get(e.id) !== JSON.stringify(e))) || n.operations.some(({
+            id: e
+        }) => !r.logical_batch.groups.some(t => t.intent.operations.some(t => t.id === e)))) throw new o(`The reviewed group does not match the selected operations.`);
+    let c = [],
+        l = new Set,
+        u = new Set,
+        d = null;
+    for (let a of r.logical_batch.groups) {
+        let r = {
+            scope: n.scope,
+            operations: a.intent.operations.filter(({
+                id: e
+            }) => !l.has(e))
+        };
+        if (!r.operations.length) continue;
+        if (!i() || !t.isCurrentActor()) {
+            d = `admission`;
+            break
+        }
+        let f;
+        try {
+            f = await h(e, t, r)
+        } catch {
+            d = `review`;
+            break
+        }
+        let p = a.assessment.operation_checks.filter(({
+            id: e
+        }) => r.operations.some(t => t.id === e));
+        if (!m(f) || JSON.stringify(f.operation_checks) !== JSON.stringify(p)) {
+            d = `review`;
+            break
+        }
+        if (!i() || !t.isCurrentActor()) {
+            d = `admission`;
+            break
+        }
+        try {
+            let n = await t.submit({
+                ...r,
+                expected_workspace_id: e.workspaceId,
+                role_cascade_plan: `v1`
+            });
+            if (s(e, r, n.result, `execute`), n.result.role_cascade_plan !== `v1`) throw Error(`The server did not confirm role dependency execution.`);
+            if (n.result.type === `blocked`) {
+                d = `review`;
+                break
+            }
+            if (r.operations.forEach(({
+                    id: e
+                }) => u.add(e)), c.push({
+                    intent: r,
+                    result: n.result
+                }), n.result.operation_results.forEach(e => {
+                    [`succeeded`, `unchanged`].includes(e.status) && l.add(e.id)
+                }), n.result.operation_results.some(({
+                    status: e
+                }) => e === `unknown`)) {
+                d = `unknown`;
+                break
+            }
+            if (!r.operations.every(({
+                    id: e
+                }) => l.has(e))) {
+                d = `partial`;
+                break
+            }
+        } catch (e) {
+            e instanceof o ? d = `admission` : (r.operations.forEach(({
+                id: e
+            }) => u.add(e)), c.push({
+                intent: r,
+                result: null
+            }), d = `unknown`);
+            break
+        }
+    }
+    let f = n.operations.filter(({
+        id: e
+    }) => !u.has(e));
+    return f.length && c.push({
+        intent: {
+            scope: n.scope,
+            operations: f
+        },
+        notDispatched: !0
+    }), {
+        attempts: c,
+        stopped: d
+    }
+}
+var p, m, h, g = e((() => {
+        c(), p = e => `logical_batch` in e, m = e => e.operation_checks.every(e => [`ready`, `unchanged`].includes(e.status) && e.blockers.length === 0), h = async (e, t, n, r) => {
+            if (!t.isCurrentActor()) throw new o(`The administrator changed.`);
+            let i = await t.preview(n, r);
+            if (s(e, n, i, `preview`), i.role_cascade_plan !== `v1`) throw Error(`The server did not confirm role dependency planning.`);
+            return i
+        }
+    })),
+    _, v, y, b, x, S, C, w, T, E, D, O, k, A, j, M, N = e((() => {
+        t(), c(), a(), g(), _ = e => e.scope.type === `role` && e.operations.length > 0 && e.operations.every(({
+            type: e
+        }) => e === `enable`) ? `v1` : void 0, v = () => ({
+            analysisStatus: `unavailable`,
+            sourceScope: `canonical_published_releases`,
+            requiredDeps: [],
+            optionalDeps: [],
+            affectedPlugins: []
+        }), y = e => typeof e == `object` && !!e && !Array.isArray(e), b = e => {
+            let t = y(e) ? e : void 0;
+            if (!(!t || t.type !== `plugin` && t.type !== `app` || typeof t.id != `string` || !t.id.trim())) return {
+                type: t.type,
+                id: t.id
+            }
+        }, x = e => {
+            let t = e.role_impact,
+                n = y(t) ? t : void 0;
+            if (!n || n.status !== `incomplete` && n.status !== `unavailable` || n.source_scope !== `canonical_published_releases`) return v();
+            let r = 100,
+                i = new Set,
+                a = (e, t) => {
+                    if (!Array.isArray(e) || t > 8) return;
+                    let n = [];
+                    for (let o of e) {
+                        if (--r < 0) return;
+                        let e = y(o) ? o : void 0;
+                        if (!e || i.has(e)) return;
+                        let s = b(e.target),
+                            c = e.current_setting,
+                            l = e.current_enabled,
+                            u = e.status;
+                        if (!s || typeof e.name != `string` || !e.name.trim() || !(c === null || c === `enabled` || c === `disabled` || c === `workspace_default`) || !(l === null || l === !0 || l === !1) || u !== `complete` && u !== `incomplete` && u !== `unavailable`) return;
+                        i.add(e);
+                        let d = a(e.required_deps, t + 1),
+                            f = a(e.optional_deps, t + 1);
+                        if (i.delete(e), !d || !f) return;
+                        n.push({
+                            target: s,
+                            name: e.name,
+                            currentSavedSetting: c,
+                            currentEffectiveEnabled: l,
+                            evidenceStatus: u,
+                            requiredDeps: d,
+                            optionalDeps: f
+                        })
+                    }
+                    return n
+                },
+                o = a(n.required_deps, 0),
+                s = a(n.optional_deps, 0);
+            if (!o || !s || !Array.isArray(n.affected_plugins)) return v();
+            let c = [];
+            for (let e of n.affected_plugins) {
+                if (--r < 0) return v();
+                let t = y(e) ? e : void 0,
+                    n = b(t?.target);
+                if (!n || n.type !== `plugin` || typeof t?.name != `string` || !t.name.trim()) return v();
+                c.push({
+                    target: {
+                        type: `plugin`,
+                        id: n.id
+                    },
+                    name: t.name
+                })
+            }
+            return {
+                analysisStatus: n.status,
+                sourceScope: `canonical_published_releases`,
+                requiredDeps: o,
+                optionalDeps: s,
+                affectedPlugins: c
+            }
+        }, S = e => i(`dependency-preview`, e.workspaceId, e.accountId, e.workspaceUserId), C = (e, t, i) => n({
+            queryKey: [...S(e), t, _(t) ?? null, _(t) && t.operations.length > 8 ? `bounded-role-enable-v1` : null],
+            queryFn: async ({
+                signal: n
+            }) => {
+                let r = _(t) && t.operations.length > 8 ? await d(e, i, t, n) : await i.preview(t, n);
+                return s(e, t, r, `preview`), r
+            },
+            staleTime: r,
+            retry: !1
+        }), w = (e, t) => i(`dependency-result`, e.workspaceId, e.accountId, e.workspaceUserId, t.scope, t.operations.map(({
+            type: e,
+            target: t
+        }) => ({
+            type: e,
+            target: t
+        })).sort((e, t) => u(e.target).localeCompare(u(t.target)))), T = e => {
+            let t = new Map;
+            for (let n of e) {
+                let e = `notDispatched` in n,
+                    r = !e && n.result ? l(n.intent.operations, n.result.operation_results) : null;
+                for (let i of n.intent.operations) {
+                    let n = r?.get(i.id) ?? {
+                        id: i.id,
+                        status: e ? `not_attempted` : `unknown`,
+                        current_enabled: null,
+                        current_setting: null,
+                        reason: e ? `dependency_failed` : `outcome_unknown`
+                    };
+                    t.set(u(i.target), {
+                        operation: i,
+                        outcome: n
+                    })
+                }
+            }
+            return [...t.values()]
+        }, E = (e, t, n, r) => {
+            let a = new Set(n.operations.map(e => u(e.target))),
+                o = new Set(r ? T(r.attempts).filter(({
+                    operation: e,
+                    outcome: t
+                }) => [`failed`, `not_attempted`].includes(t.status) && r.reconciled?.[u(e.target)] == null).map(({
+                    operation: e
+                }) => u(e.target)) : []);
+            for (let [, s] of e.getQueriesData({
+                    queryKey: i(`dependency-result`, t.workspaceId, t.accountId, t.workspaceUserId)
+                })) {
+                if (!s || s === r) continue;
+                let e = s.initialIntent.scope;
+                if (!(e.type !== n.scope.type || e.type === `role` && (n.scope.type !== `role` || e.role_id !== n.scope.role_id)) && T(s.attempts).some(({
+                        operation: e,
+                        outcome: t
+                    }) => {
+                        let n = u(e.target);
+                        return a.has(n) && (t.status === `unknown` || [`failed`, `not_attempted`].includes(t.status) && !o.has(n) && s.reconciled?.[n] == null)
+                    })) return s
+            }
+        }, D = new WeakMap, O = (e, t) => JSON.stringify([e.accountId, e.workspaceId, e.workspaceUserId, t]), k = (e, t, n) => {
+            let r = D.get(e);
+            r || (r = new Map, D.set(e, r));
+            let i = O(t, n),
+                a = r.get(i) ?? new Set,
+                o = Symbol();
+            return a.add(o), r.set(i, a), () => {
+                a.delete(o), a.size === 0 && r.get(i) === a && r.delete(i)
+            }
+        }, A = (e, t, n) => {
+            let r = D.get(e);
+            if (n != null) return r?.has(O(t, n)) === !0;
+            let i = JSON.stringify([t.accountId, t.workspaceId, t.workspaceUserId]).slice(0, -1) + `,`;
+            return [...r?.keys() ?? []].some(e => e.startsWith(i))
+        }, j = (e, t) => A(e, t) || e.isMutating({
+            mutationKey: i(`availability-mutation`, t.workspaceId)
+        }) > 0, M = (e, t, n) => A(e, t, n) || e.getQueriesData({
+            queryKey: i(`dependency-result`, t.workspaceId, t.accountId, t.workspaceUserId)
+        }).some(([, e]) => e != null && T(e.attempts).some(({
+            operation: t,
+            outcome: r
+        }) => {
+            let i = t.target.type === `plugin` && (t.type === `disable` || t.type === `workspace_default`);
+            return r.status === `unknown` || [`failed`, `not_attempted`].includes(r.status) && (!i || t.target.id === n) && e.reconciled?.[u(t.target)] == null
+        }))
+    }));
+export {
+    E as a, N as c, k as d, f, C as i, j as l, p as m, _ as n, w as o, g as p, S as r, M as s, T as t, x as u
+};
+//# sourceMappingURL=ebf463e2-kvv0z4m9t350xyzq.js.map

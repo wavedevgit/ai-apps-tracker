@@ -1,6 +1,2067 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/f4b1af2d-d7p810uyaai3xmeg.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-ed29bs6yiwucn7st.js","assets/2340486e-oc6d2eodbcrmxur3.js","assets/root-lelxp0l2.css","assets/conversation-small-l6tnsr2xfn2d55kk.js","assets/30901919-om7b3qf5hp4j9x4l.js","assets/c470f5ab-d0jxi6yggehv1yt2.js","assets/0e5afe53-goyw8fd3qndq8rq5.js","assets/conversation-small-ixfdle4i.css","assets/e25a39e4-gjo9tkmgoge4bpl7.js","assets/bb6159a1-kaqlxu5hpw0v4dbh.js","assets/8b34dbc2-j8rcexxiltkm8ucr.js","assets/82782bc9-cz4jkhg31tycbqqf.js","assets/6b6f03ea-md2gmh61tf9lq8sl.js","assets/f2fa691a-ntz1nva0f17gw53s.js","assets/b5525e3f-jfvjnwxz9hy6okr6.js","assets/8851a252-nd8uqvn1z8suwni9.js","assets/fabe3734-fjsrxcujkyz33gg3.js","assets/f591cb9e-byqviztv3cwmzr9i.js","assets/5c6bef43-o6iho1hhfpxkzwss.js","assets/c2675c8c-fpv9s4kvd412dyap.js","assets/global-modals-lv5n3ujm.css","assets/707eab0c-co82iasy3ghgw11m.js","assets/9d60841e-bx3dwc8nyvp30a4s.js","assets/bcae0416-hw074mfyxypgqrid.js","assets/d4c740a3-grm4mqv12ru1q0ee.js","assets/Button-ijivgymd.css","assets/3cb44933-iicoq9mv2s79gqo9.js","assets/a35abcd6-o5uzbzp1jprs3y1b.js","assets/1c919af1-abbe8u4rjagje3yr.js","assets/74a883a0-hvxle82pkyqdut0n.js","assets/4b68ab38-e2jtqfi6qknkay6v.js","assets/e981ddae-m7civn9ndz8nfodx.js","assets/cb84f617-e4ca0kd9iysszy1q.js","assets/36ecb4f8-isjf0qo9jn05gfs9.js","assets/Input-cmdkk215.css","assets/922a3d67-jueg65i60dynxwcw.js","assets/fc3d210c-b0fn88mepdlhixdn.js","assets/b7324575-mdvteep4ov4c09vu.js","assets/24ecc29f-ecc8faea98snzfmo.js","assets/cec13ce4-guq73n675tmewmw2.js","assets/92cd10e6-qvbn8kvfi6drz6td.js","assets/b4c3a217-mfctiv85p88ipen9.js","assets/4e1f6607-lwxxo2p65cvjgnsc.js","assets/5ab42519-d83vcgfc717xdy0e.js","assets/8d846022-bbqki7y90h79t622.js","assets/ce52ae67-h7tlc5oeh6o4lhgs.js","assets/32f10268-brzd07d27fr6f1j9.js","assets/7ec8c41d-o8vtr9colbnn301a.js","assets/5fe72b0f-mpesntcup5zqacug.js","assets/e87af100-eb7mg9xzux4velcp.js","assets/051ead45-hajnnq1kur4ayj67.js","assets/e3b746a6-fwlyxtenerc6e6fw.js","assets/2ea88c7a-lxyla91xs6iv7odf.js","assets/8d846022-bvik3sltoydb2o43.js","assets/91969468-fsazluytqzkm0w9b.js","assets/4d271a7b-hp7tgm9o1i2q4yvg.js","assets/e1a66d2b-bocdxso4ylvq8tf8.js","assets/4c0f1f8e-go23ccluwcn7b4ji.js","assets/3509739a-ognh3x09dg81wgms.js","assets/25a66342-nemboklm6ek1yx3b.js","assets/25a66342-j7cd8h2bqav7weve.js","assets/84983163-fdkj4nuz2n6opo6h.js","assets/7517017f-mx1as211i72jj822.js","assets/58bafdef-fa52pok7b89iuh1r.js","assets/e01e2324-dz6qehpgeoiy17uf.js","assets/5dc32f04-jok98cl96kz3qcxh.js","assets/40748e50-paq8vp4t616bqpi1.js","assets/app-block-trigger-actions-hxl87txx.css","assets/56dee4d8-hhsd5kr8lef0x8a7.js","assets/72bb039a-iheh04wb74j962wn.js","assets/9eb56efa-e4c9vfx19ew2b4vb.js","assets/cc79834b-br4qhf1lrusn5gux.js","assets/18e7d84e-fz0rmpdsxf1eemps.js","assets/76b5a357-benxdh69028dkycz.js","assets/0fbccedd-gwh302v4yha6328t.js","assets/8baac9c1-clln829dqc1t5s8r.js","assets/8b02daf9-l1qr0z093205f9c4.js","assets/2ab5aa6c-o34ucv7ekk5jblf4.js","assets/9e6b8179-iwya02n4roh4br4a.js","assets/c01cad0d-kcla04z8lzj7ivsr.js","assets/0d44a401-h0b4x5du92qkkamu.js","assets/ff057340-dalmtwfsrbe5cqfm.js","assets/8becd41d-lh58tu2atd00plaq.js","assets/ae2c873a-n5ukvzv4yz5ia0il.js","assets/7bed292f-du7qhd9n1ow61ix1.js","assets/70c3dee7-lsaf5xtpkkhxv4cr.js","assets/d4c3e8a1-fwrvhqh6h5dyi0r9.js","assets/bf44528e-bn99w5w3laie47md.js","assets/c0abab23-k00haa121lp0mrli.js","assets/code-block-dop2czwo.css","assets/a965fc59-kor2zwhqgxmla6fx.js","assets/44246d2c-kczqh48m9f7ed2ng.js","assets/31e01dd8-kul228th6lltq989.js","assets/31cec8d8-ejzahhq8v425zkie.js","assets/85557f11-eczxyuulepmtlpfg.js","assets/e4fe0dae-l4vxeim4wpwl76rs.js","assets/3dcf3d3b-fogfeelw4uf7crt0.js","assets/4117f58d-dw6vbezmdm3rgtdp.js","assets/ec72420d-8lk9l7jo04spe8zx.js","assets/25a66342-mje47kprkeyaggmy.js","assets/ba2d71b9-gx7iw50atfbjvzq2.js","assets/d4bfaace-m5vpff935wjms508.js","assets/2d39f94f-mtzwm3huz3d3y8kk.js","assets/multiplayer-pp910s5j.css","assets/27597608-oco3s98wfa0prcsd.js","assets/ee696724-h3gx6ezk9vsn3bmt.js","assets/9ec4d3b5-7ee5yodled1xmrjv.js","assets/a7704736-hkwcmmtadjyj8zjj.js","assets/react-cj2gxmrc.css","assets/4748c0bc-pczuswqjazhhezt6.js","assets/203cffdc-nl3v3sk7x6mubwsp.js","assets/0631b696-tyfc4h1x5212nn21.js","assets/781797c9-lr3s7zi7y0vzvfo8.js","assets/2ac7f54f-eotmcx2jhfp3ha14.js","assets/0379e822-d0zzqs1p6jkq1prt.js","assets/3ed411a3-bkpwsc2dqabkms53.js","assets/296caa51-b13regnu250gsrys.js","assets/e54430f0-fbovbo7lmdgd7dxh.js","assets/writing-block-provider-lbnz1gc0.css","assets/2f7309c2-ejfkv6ww40zvvkzs.js","assets/560eefd0-hj6rt2rq8twubqyo.js","assets/920a0b2e-oefsg70thg91wbqc.js","assets/12a8bcb0-ixxlu90rdre49oup.js","assets/af004db9-kouk4100w6rgjqxb.js","assets/429593da-gg3rhmjrlaj5h23r.js","assets/fc5e7148-h2as8bctnrb3mr8v.js","assets/ede2e481-fmwc1w2tf3zfvp57.js","assets/181180d3-nlzivv2dxeap1a5c.js","assets/1af2f3f4-nmltip8zvo6d2bqn.js","assets/55904901-ho19e9t1rzc66l1j.js","assets/0e8433b5-ck98nqnj72djzth8.js","assets/3acfc0b4-duyor5khp5u5bcub.js","assets/058a5ba2-dwx1domadbzvgkpu.js","assets/017c9c5c-gz5zzjhwjkthb675.js","assets/1a5e078c-k83u72rohuulcxa6.js","assets/57f71cac-kyfer9h1sv6mqb8v.js","assets/5798741d-gy694h0dvfqm8xpx.js","assets/a91a940c-bh6a75xzhate1yj4.js","assets/4b2c6e28-kbymduru2nntce6v.js","assets/2120deb9-ngyg4erspj02chn5.js","assets/99a768a6-kej84n695mnb983a.js","assets/3e88eafe-h4j5x1fw7tndgho2.js","assets/49b0ba35-mfj3tsm0yeu09zzd.js","assets/9a717608-erwk5y271gbmlmjf.js","assets/02df22f1-owuhvuexvdhzr2tq.js","assets/2071ed62-fytgvp2f8gv1vh7l.js","assets/109df894-muxe4x6ty346nrsk.js","assets/6cf03d47-kacal5qogjtmpa2y.js","assets/35710e11-idj7a42lng292h7q.js","assets/1c9ccc41-53zcetvlerbr9c7x.js","assets/writing-block-gwgymy54.css","assets/c7a1f949-gp3kcdngo01z5wtf.js","assets/b5901a24-duvmjkx79b210rzz.js","assets/f53a4715-da3fhyj4zujd73na.js","assets/bd043fcd-gjtg7l12kwjg83ng.js","assets/5b8cbee9-ikp434aoukh1urti.js","assets/023ae2e0-uahawk28br7gi5z7.js","assets/5983c1e5-n6x2wdealcj7if8q.js","assets/d36fbe92-kwvehl1h4eebta6t.js","assets/c4153f57-f31ctkvfq8ixyapa.js","assets/2ab871c9-kiu7c51opxkerlsb.js","assets/client-defined-widget-gdqdmhro.css","assets/0d069930-dceh7z1fidbaj21w.js","assets/e24a7969-k0jbuvw7t3or9edv.js","assets/4366db25-ewe1psdg4pi5kioz.js","assets/57b5cf98-b52jss81li14xa5i.js","assets/bd3d9ae3-n2n9en3ft792ksu0.js","assets/c0709e5b-lkseu8qladuo8z60.js","assets/a40da908-b2ypfoza6q933la1.js","assets/e44193fd-f0hwbdius6v4xt8w.js","assets/9fe250df-ntdcuck4r9hf61tb.js","assets/6671b9de-nxgp26gka1i5bjxl.js","assets/dfee2fd5-kokd9ew07i5al9ne.js","assets/25a66342-dcvz86tueu6kzw9v.js","assets/3abc0e9f-fr12yekp7vjg3k5x.js","assets/e7ad522e-l4y3c7qtp2zd7qrm.js","assets/a238cce4-iimtntycc9g7mr46.js","assets/a52cbd6d-b3akc51auciks7qa.js","assets/2a024993-9o65mkwlnjes4dn6.js","assets/24e12db9-giq3mlag2pj3n8jf.js","assets/078cf8c6-fp4gjl814thc89zp.js","assets/bfb5f53c-otun26b524g3mwkp.js","assets/13b0edf4-lsbzaldybe7djxmw.js","assets/9dff50df-i9szl479ee2k7hmv.js","assets/a5428737-k52re5tzvgyjtyrw.js","assets/fb8e0b0f-lfpkqz0jnctlv7yy.js","assets/701a322e-eb74qrpkrrvvbn8g.js","assets/469343f0-j6vfc42bb6mktsby.js","assets/9d32acbb-chzasgs6wtqxkdks.js","assets/44fdb285-fwhwjm7y4p9k56rf.js","assets/540191af-f40s3di33ebqlcih.js","assets/lightbox-ljfqt8y3.css"])))=>i.map(i=>d[i]);
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{$o as r,A5 as i,BZ as a,Bd as o,Bet as s,Brt as c,CN as ee,Cc as te,F7 as ne,FC as re,G5 as ie,HF as ae,I1 as oe,J0 as l,JT as se,Jot as u,K5 as ce,Ko as le,PC as ue,Qo as de,RU as fe,S1 as pe,Tat as me,UF as he,Uet as ge,VF as d,Vp as f,WF as p,Y0 as m,Yd as _e,Yot as ve,Yrt as ye,Z0 as be,_N as xe,_Y as Se,aq as Ce,as as we,b2 as Te,b5 as Ee,bW as De,ctt as Oe,dY as ke,dq as Ae,e2 as je,eQ as Me,eat as Ne,f5 as Pe,f8 as Fe,fF as Ie,ftt as Le,is as Re,j7 as ze,jat as h,ld as Be,mF as Ve,nY as He,nat as g,oit as _,pY as Ue,qJ as We,qT as Ge,rat as Ke,sat as qe,sit as Je,t5 as Ye,tY as Xe,tm as Ze,uF as Qe,ud as $e,us as et,v5 as tt,vN as nt,wc as rt,x5 as v,y2 as it,yN as y,yW as at,zU as ot}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as st,Nn as ct,O as lt,Rn as b,Vn as ut,cn as x,ln as S,s as dt,wn as ft}from"./2340486e-oc6d2eodbcrmxur3.js";import{$Fn as pt,$w as mt,BZt as ht,CEt as gt,FTt as _t,Hj as vt,ITt as yt,IZt as bt,Kqt as xt,LZt as St,Lft as Ct,MF as wt,NL as Tt,PL as Et,RZt as Dt,Rft as Ot,UZt as kt,Uj as At,VZt as jt,WZt as Mt,XAt as Nt,YAt as Pt,_C as Ft,_In as It,_wt as Lt,cC as Rt,cR as zt,cVn as Bt,cjn as Vt,cwt as Ht,dXt as Ut,dwt as Wt,eIn as Gt,edt as C,fFt as Kt,fIn as qt,fSt as Jt,fVn as Yt,fwt as Xt,gC as Zt,gIn as Qt,gwt as $t,hXt as en,hwt as tn,jF as nn,lVn as rn,lwt as an,mFt as on,mXt as sn,mjn as cn,mwt as ln,oIn as un,pSt as dn,pVn as w,pXt as fn,pwt as pn,qqt as T,rIn as mn,sR as hn,sjn as gn,swt as E,tT as _n,tdt as vn,uC as yn,uXt as bn,uwt as xn,vpt as Sn,vwt as Cn,wEt as wn,xEt as Tn,yEt as En,ypt as Dn,zZt as On}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{BS as kn,GS as D,TS as An,gS as jn}from"./c2675c8c-fpv9s4kvd412dyap.js";import{Ff as Mn,If as O,Lf as Nn,Nm as Pn,Om as Fn,Pf as In,Pm as Ln,_p as Rn,dh as zn,ds as Bn,gp as Vn,hp as k,km as Hn,lr as Un,mp as Wn,uh as Gn,ur as Kn,us as qn,vp as Jn}from"./8b34dbc2-j8rcexxiltkm8ucr.js";import{n as A,t as Yn}from"./e3349b6b-lps93vwz6l6pbbnc.js";import{t as Xn,x as Zn}from"./25a66342-hwowa0eflaiy52b1.js";import{r as Qn,t as $n}from"./58f125af-e7htnd2ri328u7h8.js";import{C as er,D as tr,E as nr,T as rr,_ as ir,b as j,c as ar,d as M,f as or,g as sr,h as cr,i as lr,l as ur,m as dr,n as N,p as fr,r as pr,t as mr,u as hr,v as gr,w as _r,x as vr,y as P}from"./16d56f73-khajwf9078ktimne.js";import{n as yr,t as br}from"./72bb039a-iheh04wb74j962wn.js";import{a as xr,o as Sr}from"./9eb56efa-e4c9vfx19ew2b4vb.js";import{n as Cr,t as wr}from"./b5901a24-duvmjkx79b210rzz.js";import{n as Tr,r as Er}from"./023ae2e0-uahawk28br7gi5z7.js";import{a as Dr,c as Or,i as kr,n as Ar,r as jr,s as F}from"./04f387fb-br2bfp9ejt1pui7f.js";import{a as Mr,c as Nr,o as Pr,r as Fr}from"./fcf5f4da-m2640lkqt2mr4cfw.js";import{n as I,t as Ir}from"./4838955c-n5k9ohtcoy6mydwn.js";import{n as Lr,t as Rr}from"./bfb5f53c-otun26b524g3mwkp.js";var zr,Br,Vr,Hr=e((()=>{_(),m(),zr=st(),S(),Br=l(()=>x(()=>import(`./f4b1af2d-d7p810uyaai3xmeg.js`).then(e=>e.InteractivePollSignedOutView),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9]))),Vr=e=>Je()||e.widgetState?.is_unfurl_preview===!0||e.widgetState?.public_shared_widget_actions_enabled===!0?null:(0,zr.jsx)(Br,{...e})})),Ur,Wr,L,R,Gr,Kr=e((()=>{_(),m(),jn(),Ur=st(),S(),Wr=kn({id:D().min(1),label:D(),description:D().nullish()}),L=kn({title:D(),plugins:An(Wr),additional_plugins:An(Wr).default([]),experience_id:D().optional()}),R=l(()=>x(()=>import(`./e25a39e4-gjo9tkmgoge4bpl7.js`).then(e=>e.NativePluginSuggestions),__vite__mapDeps([10,1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19]))),Gr=({widgetState:e,isReadOnly:t,actionsDisabled:n})=>{if(t||!Je())return null;let r=L.safeParse(e);return r.success?(0,Ur.jsx)(R,{state:r.data,disabled:n}):null}})),qr,Jr,Yr,z,Xr,B,Zr,Qr,$r=e((()=>{m(),qr=st(),S(),Jr=l(()=>x(()=>import(`./5c6bef43-o6iho1hhfpxkzwss.js`).then(e=>e.ConversationalOnboardingWritingDILRenderOverride),__vite__mapDeps([20,1,2,3,4,5,6,7,8,9,21,13,12,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163]))),Yr=e=>typeof e==`object`&&!!e&&!Array.isArray(e),z=(e,t)=>typeof e==`string`&&e.length<=t*2&&[...e].length<=t&&e.trim().length>0,Xr=e=>z(e,35)&&/^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$/.test(e),B=e=>typeof e==`string`&&/^\d{5}$/.test(e),Zr=e=>{if(!Yr(e)||!Yr(e.translation)||!Yr(e.email)||!Yr(e.message))return!1;let{translation:t,email:n,message:r,tab:i}=e;return z(e.ask_me_label,120)&&z(e.translation_tab_label,120)&&z(e.email_tab_label,120)&&z(e.message_tab_label,120)&&z(e.translation_question,500)&&z(e.email_question,500)&&z(e.message_question,500)&&Xr(t.source_language)&&Xr(t.target_language)&&t.source_language.toLowerCase()!==t.target_language.toLowerCase()&&z(t.source_text,12e3)&&z(t.translated_text,12e3)&&B(n.id)&&z(n.subject,120)&&z(n.content,12e3)&&B(r.id)&&n.id!==r.id&&z(r.content,12e3)&&(i===`translation`||i===`professional_email`||i===`birthday_message`)},Qr=({widgetState:e,clientThreadId:t})=>Zr(e)?(0,qr.jsx)(Jr,{state:e,clientThreadId:t}):null})),ei,ti,ni,ri=e((()=>{m(),ei=st(),S(),ti=l(()=>x(()=>import(`./0d069930-dceh7z1fidbaj21w.js`).then(e=>e.EmailPreviewDILRenderOverride),__vite__mapDeps([164,1,3,155,2,4,5,6,7,8,9,12,13,117,156]))),ni=e=>(0,ei.jsx)(ti,{...e})})),ii,ai,oi=e((()=>{Hr(),Kr(),$r(),ri(),ii={onboarding_plugin_suggestions:Gr,conversational_onboarding_writing:Qr,email_preview:ni,create_interactive_poll:Vr},ai=e=>{let{widgetName:t}=e;return t==null?null:ii[t]?.(e)??null}}));async function si(e){let t=u(),[{createSpeechSynthesizer:n},{requireAuthenticationForPronunciationAudio:r},{speechSynthesizerTelemetry:i}]=await Promise.all([x(()=>import(`./e24a7969-k0jbuvw7t3or9edv.js`).then(e=>(e.n(),e.r)),__vite__mapDeps([165,1,2,3,4,12,5,6,7,8,9,13,41])),x(()=>import(`./24ecc29f-ecc8faea98snzfmo.js`).then(e=>(e.t(),e.n)),__vite__mapDeps([40,1,2,3,4])),x(()=>import(`./4366db25-ewe1psdg4pi5kioz.js`).then(e=>(e.t(),e.r)),__vite__mapDeps([166,1,12,2,3,4,5,6,7,8,9,13]))]).catch(e=>{throw Ne.addAction(`Failed importing widget speech synthesizer`,{error_name:e instanceof Error?e.name:typeof e}),e}),a=n(t,e,i);return{...a,play:e=>{let{available:t,status:n}=a.getSnapshot();e.isTrusted&&t&&n===`idle`&&r()&&a.play()}}}var ci=e((()=>{ve(),g(),S()}));function li({isDILV2:e,isHermes:t,isModelWrittenDil:n,messageRole:r,actionsDisabled:i}){return{createSpeechSynthesizer:!e&&!t&&!n&&r===Oe.Assistant&&!i?si:void 0}}var ui=e((()=>{Le(),ci()}));function di({entityCategory:e,widgetName:t,initialWidgetState:n}){if(e!==`event`||t!==`event_sidebar_widget`||typeof n?.event_id!=`string`||!n.event_id)return;let r=n.event_id;return{key:`${t}:${r}`,load:()=>Ee().fetchQuery({queryKey:[`event-sidebar-widget`,r],queryFn:()=>an({actionType:`event_sidebar_refresh`,payload:{event_id:r}}),staleTime:e=>e.state.data?.status===`success`?V:0,gcTime:V}),pendingState:fi}}var V,fi,pi=e((()=>{E(),v(),V=1800*1e3,fi={ticket_metadata:[]}})),mi,hi=e((()=>{m(),S(),mi=l(()=>x(()=>import(`./57b5cf98-b52jss81li14xa5i.js`).then(e=>e.WidgetPronunciationAudio),__vite__mapDeps([167,1,2,3,4,5,6,7,8,9,40,165,12,13,41,166])))}));function gi(){mi.prefetch()}var _i,vi,yi,bi,xi=e((()=>{_i=ft(),vi=n(ut()),hi(),yi=st(),bi=e=>{"use forget";let t=(0,_i.c)(5),{onLoadingChange:n,onPlayingChange:r,playbackRequest:i}=e,a;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(a=[],t[0]=a):a=t[0],(0,vi.useEffect)(gi,a);let o;return t[1]!==n||t[2]!==r||t[3]!==i?(o=i?(0,yi.jsx)(mi,{onLoadingChange:n,onPlayingChange:r,requestId:i.id,text:i.text},i.text):null,t[1]=n,t[2]=r,t[3]=i,t[4]=o):o=t[4],o}}));function Si(e){"use forget";let t=(0,Ci.c)(25),{clientActionLibrary:n,isHermes:r,isModelWrittenDil:i,isValdiRendererActive:a,rendererRef:o,widgetName:s}=e,c=s===Ei&&!r&&!i&&!a,[ee,te]=(0,wi.useState)(null),ne=(0,wi.useRef)(0),re=(0,wi.useRef)(null),ie=(0,wi.useRef)(null),ae;t[0]===o?ae=t[1]:(ae=()=>{re.current&&(re.current=null,ie.current=null,o.current?.setState({audio_loading:!1,audio_playing:!1},!1),te(null))},t[0]=o,t[1]=ae);let oe=ae,l;t[2]===o?l=t[3]:(l=(e,t)=>{let n=re.current;!n||n.id!==e||(n.loading=t,o.current?.setState({audio_loading:t},!1))},t[2]=o,t[3]=l);let se=l,u;t[4]===o?u=t[5]:(u=(e,t)=>{let n=re.current;!n||n.id!==e||(n.playing=t,o.current?.setState({audio_playing:t},!1))},t[4]=o,t[5]=u);let ce=u,le;t[6]!==oe||t[7]!==c?(le=e=>{let t=e.action,n=t?.payload?.text;if(c&&t?.type!==H&&(e.source.target===`pressable`||e.source.target===`horizontal_swipe_surface`)){oe();return}if(!c||e.widgetName!=null&&e.widgetName!==Ei||e.source.target!==`pressable`||!t||t.type!==H||t.handler!==`client`||t.cause&&t.cause!==`user`||typeof n!=`string`||!n.trim())return;let r=Symbol(`flashcard-pronunciation`);ie.current={token:r,text:n},queueMicrotask(()=>{ie.current?.token===r&&(ie.current=null)})},t[6]=oe,t[7]=c,t[8]=le):le=t[8];let ue=le,de;t[9]!==oe||t[10]!==o?(de=e=>{let t=ie.current;if(ie.current=null,!t||t.text!==e||re.current?.loading)return;if(re.current?.playing){oe();return}let n=ne.current+=1;re.current={id:n,loading:!0,playing:!1},o.current?.setState({audio_loading:!0,audio_playing:!1},!1),te({id:n,text:e})},t[9]=oe,t[10]=o,t[11]=de):de=t[11];let fe=de,pe;t[12]!==n||t[13]!==c?(pe=c?Object.keys(n):void 0,t[12]=n,t[13]=c,t[14]=pe):pe=t[14];let me=pe,he;t[15]!==se||t[16]!==ce||t[17]!==c||t[18]!==ee?(he=c&&(0,Ti.jsx)(bi,{onLoadingChange:se,onPlayingChange:ce,playbackRequest:ee}),t[15]=se,t[16]=ce,t[17]=c,t[18]=ee,t[19]=he):he=t[19];let ge=he,d=c?ue:void 0,f=c?fe:void 0,p;return t[20]!==ge||t[21]!==me||t[22]!==d||t[23]!==f?(p={onInteraction:d,playbackNode:ge,playPronunciationAudio:f,supportedClientActions:me},t[20]=ge,t[21]=me,t[22]=d,t[23]=f,t[24]=p):p=t[24],p}var Ci,wi,Ti,Ei,H,Di=e((()=>{Ci=ft(),wi=n(ut()),xi(),Ti=st(),Ei=`learning_flashcards`,H=`play_pronunciation_audio`}));function Oi(e,t){let n={...e},r=typeof n.__chatgptWidgetRefId==`string`?n[Ai]:void 0;if(r){let i=Tr(t[r]);i?n[ji]={...Mi(e.initialState)?e.initialState:{},...i}:delete n[ji]}let i=Pi(n.children);if(i.length===0)return delete n.children,n;let a=i.map(e=>Fi(e,t));return n.children=Array.isArray(n.children)?a:a[0],n}function ki(e,t){return Oi(e,Mi(t)&&Mi(t.widgets)?t.widgets:{})}var Ai,ji,Mi,Ni,Pi,Fi,Ii,Li,Ri=e((()=>{Er(),Ai=`__chatgptWidgetRefId`,ji=`__chatgptWidgetViewState`,Mi=e=>!!e&&typeof e==`object`&&!Array.isArray(e),Ni=e=>Mi(e)&&typeof e.type==`string`,Pi=e=>e==null?[]:Array.isArray(e)?e:[e],Fi=(e,t)=>Ni(e)?Oi(e,t):e,Ii=e=>!e||typeof e!=`object`?e:Object.fromEntries(Object.entries(e).filter(([e])=>e!==Ai)),Li=({payload:e,effectiveWidgetRefId:t,messageId:n,effectiveRefIndex:r})=>(e&&typeof e==`object`&&typeof e.__chatgptWidgetRefId==`string`?e.__chatgptWidgetRefId:void 0)??t??(n&&r!==void 0?`${n}:${r}`:void 0)}));function zi(e){let{message:t,refIndex:n,widgetRefId:r,appData:i}=e,a=t?.metadata?.content_references,o=n??Ui(r,t?.id),s=Wi(a,o)??Hi(a);return{dilUrl:Bi(s?.dil_url),widgetName:Bi(s?.name),widgetContainsPii:Vi(s?.contains_pii),hideWidgetFeedback:Vi(s?.hide_widget_feedback),loggingMetadata:Lr(i)}}var Bi,Vi,Hi,Ui,Wi,Gi=e((()=>{Rr(),Bi=e=>typeof e==`string`?e:void 0,Vi=e=>typeof e==`boolean`?e:void 0,Hi=e=>e?.find(e=>e.type===`dil`),Ui=(e,t)=>{if(e===void 0||t===void 0||!e.startsWith(`${t}:`))return;let n=Number.parseInt(e.slice(t.length+1),10);return Number.isInteger(n)?n:void 0},Wi=(e,t)=>{if(e===void 0||t===void 0||t<0||t>=e.length)return;let n=e[t];if(n?.type===`dil`)return n}})),U=t({DILWidget:()=>wa});function Ki(e,t){if(!ga(t))return e;let n;if(`props`in e){let{children:t,props:r={},...i}=e;n={...i,...r}}else{let{children:t,...r}=e;n=r}let r=e.children??[],i=(Array.isArray(r)?r:[r]).filter(e=>e!=null).map(e=>Ki(e,t)),{type:a,...o}=n;if(typeof a!=`string`)throw Error(`Invalid DIL node: missing widget type`);return{...o,type:a,children:i}}function qi(e){return e?.forkFromSharedPost===!0||e?.continuingFromSharedPostId!=null}function Ji(){yn()}function Yi(e){return e.message}function Xi(e){return e?.mode}function Zi(e){return je(fa,e)}function Qi(e){let[t]=e;return/^field_\d+$/.test(t)}function $i(e){return e+1}function ea(){return``}function ta(e){if(document.visibilityState!==`visible`)return!1;let t=e.state.error;if(Sa(t))return!1;if(Ca(t))return 1e3;let n=e.state.data;if(n){let e=n.next_poll_after_ms;return e!=null&&typeof e==`number`&&e>0&&Math.max(1e3,e)}return 5e3}function na(e,t){return Sa(t)?!1:Ca(t)?e<5:e<2}var ra,W,G,ia,aa,oa,sa,ca,la,ua,da,fa,pa,ma,ha,ga,_a,va,ya,ba,xa,Sa,Ca,wa,Ta=e((()=>{ra=ft(),Le(),se(),ye(),$e(),Fn(),rt(),Ie(),ue(),w(),Bt(),be(),dn(),vt(),Qn(),Jn(),_n(),nr(),oi(),yt(),kt(),_r(),j(),Ct(),P(),Tn(),C(),It(),gt(),Gn(),Ln(),Kt(),f(),Cr(),k(),ui(),pt(),p(),T(),zt(),Tt(),Re(),Dt(),d(),xr(),yr(),Ft(),Fe(),pi(),Sn(),In(),o(),Se(),oe(),He(),ot(),_(),Rt(),qe(),De(),h(),Me(),ne(),y(),xe(),Pt(),Ce(),Yn(),Un(),O(),Bn(),nn(),cn(),Xn(),m(),dt(),W=n(ut()),Ar(),I(),F(),Fr(),cr(),pn(),E(),Lt(),Di(),M(),Er(),Ri(),bn(),ar(),Gi(),pr(),N(),ce(),it(),b(),G=st(),S(),ia=!1,aa=null,oa=l(()=>A(x(()=>import(`./bd3d9ae3-n2n9en3ft792ksu0.js`).then(e=>e.ValdiDILWidgetRenderer),__vite__mapDeps([168,1,2,3,4,40,165,12,5,6,7,8,9,13,41,166,169,170,171,172,173,174,175,176,177,178,179,180,181,47,182,183,184,185]))),{fallback:Vn}),sa=null,ca=e=>{"use forget";let t=(0,ra.c)(13),n,r,i,a;t[0]===e?(n=t[1],r=t[2],i=t[3],a=t[4]):({fallback:i,contentReferenceStartIndex:n,...r}=e,a=ai(r),t[0]=e,t[1]=n,t[2]=r,t[3]=i,t[4]=a);let o=a,s=(0,W.useContext)(_t)?.complete,c=o!=null&&r.widgetState?.animate_reveal===!0,ee,te;t[5]!==s||t[6]!==c||t[7]!==n?(ee=()=>{c&&n!==void 0&&s?.(n)},te=[c,n,s],t[5]=s,t[6]=c,t[7]=n,t[8]=ee,t[9]=te):(ee=t[8],te=t[9]),(0,W.useEffect)(ee,te);let ne;return t[10]!==i||t[11]!==o?(ne=o==null?i:(0,G.jsxs)(G.Fragment,{children:[(0,G.jsx)(ma,{}),o]}),t[10]=i,t[11]=o,t[12]=ne):ne=t[12],ne},la=()=>()=>{},ua=()=>0,da=()=>x(()=>import(`./a5428737-k52re5tzvgyjtyrw.js`),__vite__mapDeps([186,1,2,3,4,5,6,7,8,9,12,13,187])),fa=l(()=>x(()=>import(`./701a322e-eb74qrpkrrvvbn8g.js`).then(e=>e.VideoLightboxModal),__vite__mapDeps([188,1,3,189,2,4,190,191,5,6,7,8,9,192,193]))),pa=e=>{"use forget";let t=(0,ra.c)(4),{widget:n}=e,r;t[0]===n?r=t[1]:(r=Zn(n),t[0]=n,t[1]=r);let i=r,a;return t[2]===i?a=t[3]:(a=i?(0,G.jsx)(`div`,{children:i}):null,t[2]=i,t[3]=a),a},ma=()=>{"use forget";return zn(),null},ha=e=>e.textContent?.trim()?!0:!!e.querySelector([`[data-w-component]`,`a[href]`,`button`,`canvas`,`img`,`input`,`select`,`svg`,`textarea`,`video`,`[role]`].join(`,`)),ga=e=>typeof e==`string`&&e.startsWith(`1`),_a=e=>{if(!e||typeof e!=`object`)return null;let t=e.props;if(!t||typeof t!=`object`)return null;let n=t.payload;return n&&typeof n==`object`&&!Array.isArray(n)?n:null},va=(e,t)=>{let n=e.onClickAction;if(n&&typeof n==`object`&&n.type===t){let e=_a(n);if(e)return e}let r=e.children,i=Array.isArray(r)?r:r?[r]:[];for(let e of i){if(!e||typeof e!=`object`)continue;let n=va(e,t);if(n)return n}return null},ya=(e,t)=>{if(e)for(let n of t){let t=e[n];if(typeof t==`string`&&t)return t}},ba=e=>!ya(e,[`card_id`,`cardId`]),xa=e=>{if(typeof e.detail==`string`)return e.detail;if(e.detail&&typeof e.detail==`object`){let t=e.detail.message??e.detail.error?.message??e.detail.error;if(typeof t==`string`)return t}return e.message},Sa=e=>!(e instanceof me)||e.status!==404?!1:xa(e)===`Not found`,Ca=e=>!(e instanceof me)||e.status!==404?!1:xa(e)===`Message not found`,wa=e=>{"use forget";let t=(0,ra.c)(598),{dil:n,dilVersion:o,dilUrl:ne,entryPointId:oe,feedbackConfig:l,rootWidget:se,widgetRefId:u,widgetType:ce,widgetName:ue,widgetContainsPii:me,refIndex:d,contentReferenceStartIndex:f}=e,p=Ve(),m=on(!1),ve;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(ve=fe(),t[0]=ve):ve=t[0];let ye=ve,be=Ze(),xe=ee(),{disableExternalMedia:Se,forceDarkMode:Ce,forceSandboxFileDownload:Ee}=wn(),De;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(De={calendarPreferenceFeatureEnabled:ia,CalendarPreferenceModal:aa},t[1]=De):De=t[1];let je=Or(De),Me=Nn(),Ne=_e(),Fe=Kn(),Ie,Le;t[2]!==n||t[3]!==o||t[4]!==se?(Le=se??(n&&!Mt(n)?Ki(n,o):n),t[2]=n,t[3]=o,t[4]=se,t[5]=Le):Le=t[5];let Re=Le;if(!Re)throw Error(`DILWidget requires either a dil or rootWidget`);Ie=Re;let h=Ie,He;t[6]===h?He=t[7]:(He=Mt(h),t[6]=h,t[7]=He);let g=He,_=jt(h),qe=g?h.component:h.type,$e=(0,W.useContext)(_t),rt=$e?.complete,v=_?.animate_reveal===!0&&typeof _?.reveal_complete==`boolean`,it=(g?void 0:h.theme)??(Ce?`dark`:xe)??`light`,y=(0,W.useRef)(null),ot=(0,W.useRef)(null),st=(0,W.useRef)(!1),b=(0,W.useRef)(null),ut;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(ut=new Set,t[8]=ut):ut=t[8];let x=(0,W.useRef)(ut),[S,dt]=(0,W.useState)(!1),[ft,pt]=(0,W.useState)(!1),[gt,vt]=(0,W.useState)(!1),[yt,Ct]=(0,W.useState)(!1),[Tt,Dt]=(0,W.useState)(!0),[kt,Pt]=(0,W.useState)(),[Ft,It]=(0,W.useState)(0),Lt=(0,W.useRef)(null),Rt=(0,W.useRef)(null),zt=(0,W.useRef)(!1),Bt;t[9]!==h||t[10]!==it?(Bt={...h,theme:it},t[9]=h,t[10]=it,t[11]=Bt):Bt=t[11];let C=Bt,Kt;t[12]===o?Kt=t[13]:(Kt=ga(o),t[12]=o,t[13]=Kt);let nn=!Kt,cn=Mt(n)?void 0:nn?se??n:n,{openThreadSidebar:dn}=qt(p),w=Dn(),pn=(0,W.useContext)(wr),T=w?.entityCategory===`ledger_detail_sidebar`?pn?.sensitiveValuesHidden:void 0,E=(0,W.useContext)(En),_n=(0,W.useId)(),yn=(0,W.useContext)(he),bn=ae(),Sn=yn.postWithProfile?.post,Tn=Sn?.permalink??void 0,kn=yn.postWithProfile?.post.id,D=E?.message,An=oe??D?.id??_n,jn=E?.isActivelyStreaming??!1,O=!!D?.metadata?.chatgpt_sdk?.is_custom_agent,Fn;t[14]!==jn||t[15]!==O||t[16]!==D?(Fn=jn&&!O&&D!=null&&D.metadata?.reasoning_status==null&&Pn(D),t[14]=jn,t[15]=O,t[16]=D,t[17]=Fn):Fn=t[17];let In=Fn,Ln=E?.analyticsMetadata.turnIndex,zn=vn(E?.analyticsMetadata),Bn;bb0:{if(Array.isArray(E?.contentReferences)){Bn=E.contentReferences;break bb0}let e=D?.metadata?.content_references,n;t[18]===e?n=t[19]:(n=Array.isArray(e)?e:[],t[18]=e,t[19]=n),Bn=n}let Vn=Bn,k=D?.metadata?.model_dil?.embedded_widgets,Un=g?h.appData:void 0,Gn;t[20]!==D||t[21]!==d||t[22]!==Un||t[23]!==u?(Gn=zi({message:D,refIndex:d,widgetRefId:u,appData:Un}),t[20]=D,t[21]=d,t[22]=Un,t[23]=u,t[24]=Gn):Gn=t[24];let Jn=Gn,A=ue??Jn.widgetName,Yn=Je()?di({entityCategory:w?.entityCategory,widgetName:A,initialWidgetState:_}):void 0,Xn=Yn?.key,[Zn,Qn]=(0,W.useState)(),nr=nt(async()=>Yn?.load());(0,W.useEffect)(()=>{if(!Xn)return;let e=!0;return nr().then(t=>{e&&t?.status===`success`&&t.response.data&&Qn({key:Xn,state:t.response.data})}),()=>{e=!1}},[Xn,nr]);let j=bt(A),ar=fn(),M=en()&&!Mt(C)&&j?.getOwnership(_)!==`shared`,cr;t[25]===D?cr=t[26]:(cr=Ut(D),t[25]=D,t[26]=cr);let N=cr,pr;t[27]===D?pr=t[28]:(pr=At(D),t[27]=D,t[28]=pr);let _r=pr,P=N||ar,yr;t[29]!==f||t[30]!==O||t[31]!==P||t[32]!==v||t[33]!==M||t[34]!==$e?(yr=v&&$e?.animate===!0&&f!==void 0&&!$e.completed.has(f)&&!M&&!P&&!O,t[29]=f,t[30]=O,t[31]=P,t[32]=v,t[33]=M,t[34]=$e,t[35]=yr):yr=t[35];let xr=yr,Cr=P||E?.analyticsMetadata.isGenui===!0,Er=D?.metadata?.chatgpt_sdk?.custom_agent?.invocation_type,Ar=Er===`api`||Er===`slack`,F=E?.clientThreadId,Fr;bb1:{if(F){let e;t[36]===F?e=t[37]:(e=Qe(F),t[36]=F,t[37]=e),Fr=e;break bb1}Fr=p}let I=Fr,Lr=Ue(I?.id,qi),Rr=D?.metadata?.shared_dil_provenance!=null,zr=bn||Lr||Rr,Br=i(Ae),Vr;t[38]!==p||t[39]!==D?(Vr=()=>!p||!D?.id?!1:Gt({type:`hermes`,messageId:D.id},un(p)),t[38]=p,t[39]=D,t[40]=Vr):Vr=t[40];let Hr=i(Vr),Ur;t[41]!==Ar||t[42]!==O||t[43]!==Hr||t[44]!==Br?(Ur=O?{autoOpenHermesSidebar:Br,hideHermesSourcesButton:Ar,hermesSidebarOpen:Hr}:void 0,t[41]=Ar,t[42]=O,t[43]=Hr,t[44]=Br,t[45]=Ur):Ur=t[45];let Wr=Ur,L=ke(F),R=D?.id,Gr;t[46]!==j||t[47]!==R?(Gr=e=>{let t=e?.continuingSharedConversationLastMessageId;return j==null||!t||!R?!1:e.tree.getBranchFromLeaf(t).some(e=>e.message.id===R)},t[46]=j,t[47]=R,t[48]=Gr):Gr=t[48];let Kr=Ue(F,Gr),qr;t[49]!==Kr||t[50]!==I?(qr=()=>Kr&&I?On(I):void 0,t[49]=Kr,t[50]=I,t[51]=qr):qr=t[51];let Jr=i(qr),Yr=L??I?.id,z;t[52]!==Yr||t[53]!==I?(z=()=>Be(Yr)||I!=null&&re(I),t[52]=Yr,t[53]=I,t[54]=z):z=t[54];let Xr=i(z),B=D?.author.role===Oe.Assistant&&!N&&D.metadata?.chatgpt_sdk==null&&m!=null,Zr=B&&!P;m?.store;let Qr=m?.store,$r=Tn!=null,ei;t[55]!==R||t[56]!==I||t[57]!==Qr||t[58]!==$r?(ei={store:Qr,conversation:I,messageId:R,sharedPost:$r},t[55]=R,t[56]=I,t[57]=Qr,t[58]=$r,t[59]=ei):ei=t[59];let ti=ei,ni;t[60]!==R||t[61]!==Zr?(ni=e=>Zr&&sr(e,R),t[60]=R,t[61]=Zr,t[62]=ni):ni=t[62];let ri=Ue(I?.id,ni),ii;t[63]!==I||t[64]!==Zr?(ii=()=>Zr&&I!=null&&rn(I),t[63]=I,t[64]=Zr,t[65]=ii):ii=t[65];let ai=i(ii),oi;t[66]!==P||t[67]!==m?.store||t[68]!==ti||t[69]!==Zr?(oi=()=>P?m?.store.getUploadActionCapabilities()??0:Zr?tt(()=>dr(ti)):0,t[66]=P,t[67]=m?.store,t[68]=ti,t[69]=Zr,t[70]=oi):oi=t[70];let si=(0,W.useSyncExternalStore)((P?m?.store.subscribeToUploadActionCapabilities:m?.store.subscribeToSharedProps)??la,oi,ua),ci=P||ri&&!ai?si:0,{serverThreadId:ui,isSharedConversation:V,ownerUserId:fi,projectId:pi}=wt(I,R),mi,hi;t[71]===Symbol.for(`react.memo_cache_sentinel`)?(mi=()=>()=>{for(let e of x.current)e.abort();x.current.clear()},hi=[],t[71]=mi,t[72]=hi):(mi=t[71],hi=t[72]),(0,W.useEffect)(mi,hi);let gi;t[73]!==_r||t[74]!==Ee||t[75]!==be||t[76]!==V||t[77]!==R||t[78]!==fi||t[79]!==pi||t[80]!==ui||t[81]!==I?(gi=(e,t)=>{if(!(!_r||!R||!ui))return mr({activeDownloadControllers:x.current,forceSandboxFileDownload:Ee,getErrorMessage:be,isSharedConversation:V,messageId:R,options:t,ownerUserId:fi,path:e,projectId:pi,sandboxServerThreadId:ui,sourceConversation:I,toaster:ye})},t[73]=_r,t[74]=Ee,t[75]=be,t[76]=V,t[77]=R,t[78]=fi,t[79]=pi,t[80]=ui,t[81]=I,t[82]=gi):gi=t[82];let _i=gi,vi;t[83]!==F||t[84]!==Vn||t[85]!==jn||t[86]!==R||t[87]!==zn||t[88]!==Ln?(vi=e=>rr({hostWidget:e,contentReferences:Vn,isActivelyStreaming:jn,messageId:R,clientThreadId:F,trackContentReferenceEvent:zn,turnIndex:Ln}),t[83]=F,t[84]=Vn,t[85]=jn,t[86]=R,t[87]=zn,t[88]=Ln,t[89]=vi):vi=t[89];let yi=vi,bi;t[90]!==Vn||t[91]!==k||t[92]!==d||t[93]!==C?(bi=er({contentReferences:Vn,embeddedWidgets:k,effectiveRefIndex:d,widget:C}),t[90]=Vn,t[91]=k,t[92]=d,t[93]=C,t[94]=bi):bi=t[94];let xi=!bi,Ci;t[95]===Symbol.for(`react.memo_cache_sentinel`)?(Ci=[],t[95]=Ci):Ci=t[95],(0,W.useEffect)(Ji,Ci);let wi=!!(R&&L),Ti=ne??Jn.dilUrl,Ei=ce??`dil`,H=j==null?void 0:Jr,Di=H===`pending`||H===`failed`,Oi;t[96]!==F||t[97]!==L||t[98]!==I?(Oi=async()=>{if(!F||!L||!I||tt(()=>On(I))!==`failed`)return;let e=Xe(F),t=e?.continuingSharedConversationLastMessageId;if(!e||!t)return;let n=St(e.tree.getBranchFromLeaf(t).map(Yi));if(n.length!==0){Pe(()=>{On.set(I,`pending`)});try{await xt({clientThreadId:F,serverThreadId:L,sourceMessageIds:n})}catch{}}},t[96]=F,t[97]=L,t[98]=I,t[99]=Oi):Oi=t[99];let Ai=Oi,ji;t[100]!==A||t[101]!==O||t[102]!==P||t[103]!==M?(ji={clientActionLibrary:kr,isHermes:O,isModelWrittenDil:P,isValdiRendererActive:M,rendererRef:y,widgetName:A},t[100]=A,t[101]=O,t[102]=P,t[103]=M,t[104]=ji):ji=t[104];let{onInteraction:Mi,playbackNode:Ni,playPronunciationAudio:Pi,supportedClientActions:Fi}=Si(ji);D?.author.role;let Ri;bb2:{if(!P&&D?.author.role!==Oe.Assistant){Ri=Fi;break bb2}let e=Fi??Dr,n;if(t[105]!==e||t[106]!==P||t[107]!==ci){let r;t[109]!==P||t[110]!==ci?(r=e=>!Pr(e)||(P||e===`request_file_upload`||e===`request_media_upload`)&&fr(e,ci),t[109]=P,t[110]=ci,t[111]=r):r=t[111],n=e.filter(r),t[105]=e,t[106]=P,t[107]=ci,t[108]=n}else n=t[108];Ri=n}let Bi=Ri,Vi=me??Jn.widgetContainsPii,Hi=_?.disable_actions_during_active_turn===!0,Ui=Hi&&Xr,Wi=sn(),Gi=E?.message?.metadata?.view_state,U=P&&!g&&(k?.length??0)>0,fa;t[112]!==U||t[113]!==Gi?.root?(fa=U?Tr(Gi?.root):void 0,t[112]=U,t[113]=Gi?.root,t[114]=fa):fa=t[114];let _a=fa,ya;t[115]!==k||t[116]!==P||t[117]!==M||t[118]!==Gi||t[119]!==C?(ya=P&&!Mt(C)&&Array.isArray(k)&&k.length>0?ki(C,Gi):C,t[115]=k,t[116]=P,t[117]=M,t[118]=Gi,t[119]=C,t[120]=ya):ya=t[120];let xa=ya,Sa=u&&Gi?.widgets?Gi.widgets[u]:void 0,Ca=Yn?Zn?.key===Yn.key?Zn.state:Yn.pendingState:w?.widgetStateOverride,wa;bb3:{let e;t[121]===Sa?e=t[122]:(e=Tr(Sa),t[121]=Sa,t[122]=e);let n=e;if(Ca==null){wa=n;break bb3}let r;t[123]===n?r=t[124]:(r=n??{},t[123]=n,t[124]=r);let i;t[125]!==r||t[126]!==Ca?(i={...r,...Ca},t[125]=r,t[126]=Ca,t[127]=i):i=t[127],wa=i}let Ta=wa,Ea;t[128]!==Ta||t[129]!==_?(Ea=xn({decodedWidgetState:Ta,initialWidgetState:_}),t[128]=Ta,t[129]=_,t[130]=Ea):Ea=t[130];let Da=Ea,Oa;t[131]!==Da||t[132]!==kt?(Oa=kt==null?Da:{...Da??{},...kt},t[131]=Da,t[132]=kt,t[133]=Oa):Oa=t[133];let ka=Oa,Aa;t[134]!==xr||t[135]!==ka||t[136]!==_||t[137]!==v?(Aa=v&&!xr?{..._,...ka,animate_reveal:!1,reveal_complete:!0}:ka,t[134]=xr,t[135]=ka,t[136]=_,t[137]=v,t[138]=Aa):Aa=t[138];let K=Aa,ja=U?_a:K,Ma=Sa!==void 0||Ca!=null,Na;t[139]!==A||t[140]!==_||t[141]!==Lr||t[142]!==K||t[143]!==L?(Na=L!=null&&!Lr&&(bt(A)?.getOwnership(K)??bt(A)?.getOwnership(_))===`private`,t[139]=A,t[140]=_,t[141]=Lr,t[142]=K,t[143]=L,t[144]=Na):Na=t[144];let Pa=Na,Fa;t[145]!==Pa||t[146]!==kn?(Fa=kn!=null&&!Pa?{surfaceType:`shared_post`,surfaceId:kn}:void 0,t[145]=Pa,t[146]=kn,t[147]=Fa):Fa=t[147];let q=Fa,Ia=Nt(),La;t[148]!==F||t[149]!==A||t[150]!==R||t[151]!==q||t[152]!==d||t[153]!==M||t[154]!==L||t[155]!==An||t[156]!==Ft||t[157]!==H||t[158]!==u?(La={clientThreadId:F,serverThreadId:L,messageId:R,widgetRefId:u,refIndex:d,feedbackWidgetName:A,publicActionContext:q,renderDilWithValdi:M,valdiEntryPointId:An,valdiServerActionRevision:Ft,widgetAdoption:H},t[148]=F,t[149]=A,t[150]=R,t[151]=q,t[152]=d,t[153]=M,t[154]=L,t[155]=An,t[156]=Ft,t[157]=H,t[158]=u,t[159]=La):La=t[159];let J=La,Ra;t[160]!==Ia||t[161]!==J?(Ra=e=>Ia()&&J===e,t[160]=Ia,t[161]=J,t[162]=Ra):Ra=t[162];let Y=nt(Ra),za=(0,W.useContext)(br),Ba=!g&&(!zr||Pa)&&I!=null&&L!=null&&R!=null,X=Ba&&!P&&d!=null,Va;t[163]!==p||t[164]!==I?(Va=I??p??Qe(ge),t[163]=p,t[164]=I,t[165]=Va):Va=t[165];let Ha=X&&!jn,Ua=X?R:``,Wa=X?d:-1,Ga;t[166]!==A||t[167]!==Ua||t[168]!==Wa?(Ga={messageId:Ua,contentReferenceIndex:Wa,widgetName:A},t[166]=A,t[167]=Ua,t[168]=Wa,t[169]=Ga):Ga=t[169];let Ka;t[170]!==Va||t[171]!==Ha||t[172]!==Ga?(Ka={category:Zt.Dil,conversation:Va,isCategoryEnabled:!0,isReady:Ha,target:Ga},t[170]=Va,t[171]=Ha,t[172]=Ga,t[173]=Ka):Ka=t[173];let{action:Z,launcher:qa,targetIdentity:Ja}=Sr(Ka),Ya=X?Z.isVisible:!jn&&!za&&!V,Xa;t[174]!==Ba||t[175]!==Z||t[176]!==Ja||t[177]!==Ya||t[178]!==X||t[179]!==I?(Xa=()=>Ye(()=>{pe(),I&&Yt(I);let e=b.current;if(e){if(!(e.onReady?Ba:X)||!e.onReady&&e.targetIdentity!==Ja||e.isSelectionValid?.()===!1){b.current=null,e.onReady?.(!1);return}(e.onReady?!Ya:!Z.isVisible)||(b.current=null,e.onReady?e.onReady(!0):Z.onSelect())}}),t[174]=Ba,t[175]=Z,t[176]=Ja,t[177]=Ya,t[178]=X,t[179]=I,t[180]=Xa):Xa=t[180];let Za;t[181]!==Ba||t[182]!==Z||t[183]!==Ja||t[184]!==Ya||t[185]!==X||t[186]!==I||t[187]!==J?(Za=[Ba,Z,Ja,Ya,X,I,J],t[181]=Ba,t[182]=Z,t[183]=Ja,t[184]=Ya,t[185]=X,t[186]=I,t[187]=J,t[188]=Za):Za=t[188],(0,W.useEffect)(Xa,Za);let Qa,$a;t[189]===Symbol.for(`react.memo_cache_sentinel`)?(Qa=()=>()=>{b.current?.onReady?.(!1),b.current=null},$a=[],t[189]=Qa,t[190]=$a):(Qa=t[189],$a=t[190]),(0,W.useEffect)(Qa,$a);let eo=E?.message?.metadata?.genui_refresh,to=D?.metadata?.is_complete??(!D?.status||D.status!==`in_progress`),no=!Jn.hideWidgetFeedback&&!P&&Wi&&wi&&to&&S&&!O,ro=!!sa&&!P&&!O,io=o??`unknown`,ao=Jn.loggingMetadata,oo;t[191]===o?oo=t[192]:(oo=ga(o),t[191]=o,t[192]=oo);let so=!!Ti,co;t[193]!==F||t[194]!==Jn.loggingMetadata||t[195]!==Ti||t[196]!==Vi||t[197]!==A||t[198]!==Ei||t[199]!==Ma||t[200]!==R||t[201]!==d||t[202]!==L||t[203]!==io||t[204]!==oo||t[205]!==so||t[206]!==u||t[207]!==qe?(co={error_boundary:`DILWidgetRenderer`,dil_version:io,widget_renderer_type:qe,widget_type:Ei,widget_name:A,loggingMetadata:ao,widget_contains_pii:Vi,widget_ref_id:u,ref_index:d,message_id:R,client_thread_id:F,server_thread_id:L,has_view_state:Ma,is_legacy_dil_version:oo,dil_url:Ti,dil_url_present:so},t[193]=F,t[194]=Jn.loggingMetadata,t[195]=Ti,t[196]=Vi,t[197]=A,t[198]=Ei,t[199]=Ma,t[200]=R,t[201]=d,t[202]=L,t[203]=io,t[204]=oo,t[205]=so,t[206]=u,t[207]=qe,t[208]=co):co=t[208];let lo=co,uo;t[209]===Symbol.for(`react.memo_cache_sentinel`)?(uo=()=>{Rt.current=null},t[209]=uo):uo=t[209];let fo=uo,po;t[210]===lo?po=t[211]:(po={context:lo,onFailure:fo},t[210]=lo,t[211]=po);let{onInitialRenderCommit:mo,onRenderFailure:ho,onSoftRenderFailure:go}=hr(po),_o;t[212]!==ho||t[213]!==vt?(_o=(...e)=>{let t=e;Lt.current?.(),Lt.current=null,vt(!0),ho(...t)},t[212]=ho,t[213]=vt,t[214]=_o):_o=t[214];let vo=_o,yo,bo;t[215]===Symbol.for(`react.memo_cache_sentinel`)?(yo=()=>()=>{Lt.current?.(),Lt.current=null},bo=[],t[215]=yo,t[216]=bo):(yo=t[215],bo=t[216]),(0,W.useEffect)(yo,bo);let xo;t[217]!==go||t[218]!==Ct?(xo=(...e)=>{let t=e;Ct(!0),go(...t)},t[217]=go,t[218]=Ct,t[219]=xo):xo=t[219];let So=xo,Co;t[220]===vo?Co=t[221]:(Co=e=>{ur(vo,e)},t[220]=vo,t[221]=Co);let wo=Co,To;t[222]===dt?To=t[223]:(To=e=>{y.current=e,dt(e!=null)},t[222]=dt,t[223]=To);let Eo=To,Do;t[224]!==F||t[225]!==j||t[226]!==R||t[227]!==q||t[228]!==d||t[229]!==I?(Do=e=>{if(!F||!I||!R||d===void 0||q?.surfaceType!==`shared_post`)return;let t=j?.capture({messageId:R,contentReferenceIndex:d,state:e});if(!t)return;let n=Xe(F);!n?.forkFromSharedPost||n.continuingFromSharedPostId!==q.surfaceId||Te(ht(I),t)||Pe(()=>{ht.set(I,t)})},t[224]=F,t[225]=j,t[226]=R,t[227]=q,t[228]=d,t[229]=I,t[230]=Do):Do=t[230];let Oo=Do,ko;t[231]!==Oo||t[232]!==j||t[233]!==q?.surfaceType?(ko=()=>{if(q?.surfaceType!==`shared_post`||j==null)return;let e=y.current;if(e)return Oo(e.getState()),e.subscribe(Oo)},t[231]=Oo,t[232]=j,t[233]=q?.surfaceType,t[234]=ko):ko=t[234];let Ao;t[235]!==Oo||t[236]!==j||t[237]!==S||t[238]!==q?(Ao=[Oo,j,S,q],t[235]=Oo,t[236]=j,t[237]=S,t[238]=q,t[239]=Ao):Ao=t[239],(0,W.useEffect)(ko,Ao);let jo;t[240]!==xr||t[241]!==rt||t[242]!==f||t[243]!==gt||t[244]!==yt||t[245]!==v?(jo=()=>{if(!v||f===void 0||!rt)return;if(!xr||gt||yt){rt(f);return}let e=y.current;if(!e)return;let t=()=>{e.getState().reveal_complete===!0&&rt(f)};return t(),e.subscribe(t)},t[240]=xr,t[241]=rt,t[242]=f,t[243]=gt,t[244]=yt,t[245]=v,t[246]=jo):jo=t[246];let Mo;t[247]!==xr||t[248]!==rt||t[249]!==f||t[250]!==gt||t[251]!==yt||t[252]!==S||t[253]!==v?(Mo=[v,f,rt,xr,S,gt,yt],t[247]=xr,t[248]=rt,t[249]=f,t[250]=gt,t[251]=yt,t[252]=S,t[253]=v,t[254]=Mo):Mo=t[254],(0,W.useEffect)(jo,Mo);let No;t[255]===Dt?No=t[256]:(No=()=>{let e=ot.current;e&&Dt(ha(e))},t[255]=Dt,t[256]=No);let Po=No,Fo;t[257]!==mo||t[258]!==pt||t[259]!==Po?(Fo=()=>{pt(!0),mo?.(),Po()},t[257]=mo,t[258]=pt,t[259]=Po,t[260]=Fo):Fo=t[260];let Io=Fo,Lo;t[261]!==Io||t[262]!==dt?(Lo=()=>{dt(!0),Io(),Lt.current?.(),Lt.current=null},t[261]=Io,t[262]=dt,t[263]=Lo):Lo=t[263];let Ro=Lo,zo;t[264]!==F||t[265]!==f||t[266]!==p||t[267]!==E?.analyticsMetadata.turnIndex||t[268]!==A||t[269]!==Cr||t[270]!==N||t[271]!==R||t[272]!==dn||t[273]!==L||t[274]!==w?(zo=e=>{let{query:t,category:n,entityId:r,extraParams:i,clientParams:a,pinnedImage:o,skipStructuredEntityActionLog:s}=e,c=n===void 0?`ask_sidebar`:n;s||Ot({clientThreadId:F,conversationId:L??void 0,messageId:R,assistantMessageId:R,turnIndex:E?.analyticsMetadata.turnIndex,contentReferenceStartIndex:f,surfaceLocation:w==null?gn.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE:gn.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_SIDEBAR,entityAffordance:Vt.CHATGPT_ENTITY_AFFORDANCE_INLINE,entityId:r,entityCategory:c,contentReferenceType:`dil`,isGenui:Cr,parentContext:{entityId:r,entityCategory:c,widgetType:N?`model_written_dil`:void 0,widgetName:N?void 0:A,contentReferenceStartIndex:f,messageId:R}}),!(!t||!R)&&(w||p&&mn(p),dn({type:`entity`,debugThreadId:void 0,messageId:R,contentReferenceStartIndex:0,query:t,category:c,isGenui:Cr,entityId:r,extraParams:i,clientParams:a,pinnedImage:o}))},t[264]=F,t[265]=f,t[266]=p,t[267]=E?.analyticsMetadata.turnIndex,t[268]=A,t[269]=Cr,t[270]=N,t[271]=R,t[272]=dn,t[273]=L,t[274]=w,t[275]=zo):zo=t[275],E?.analyticsMetadata.turnIndex;let Bo=zo,Vo;t[276]!==f||t[277]!==p||t[278]!==E?.analyticsMetadata||t[279]!==A||t[280]!==Cr||t[281]!==N||t[282]!==R||t[283]!==dn||t[284]!==d||t[285]!==L||t[286]!==w?(Vo=e=>{let{product:t,skipStructuredEntityActionLog:n}=e;n||vr({analyticsMetadata:E?.analyticsMetadata,conversationId:L??void 0,sourceMessageId:R,contentReferenceIndex:d,contentReferenceStartIndex:f,isGenui:Cr,widgetType:N?`model_written_dil`:void 0,widgetName:N?void 0:A,product:t}),R&&(w||p&&mn(p),dn({type:`product_agent`,messageId:R,product:t,contentReferenceStartIndex:d??0,productIndex:0,interactionSource:`inline_link`}))},t[276]=f,t[277]=p,t[278]=E?.analyticsMetadata,t[279]=A,t[280]=Cr,t[281]=N,t[282]=R,t[283]=dn,t[284]=d,t[285]=L,t[286]=w,t[287]=Vo):Vo=t[287],E?.analyticsMetadata;let Ho=Vo,Uo;t[288]!==Yr||t[289]!==Hi||t[290]!==I?(Uo=async(e,t,n)=>{let r=I!=null&&Hi&&(st.current||Be(Yr)||re(I));!I||!e.trim()||r||(Hi&&(st.current=!0),await Hn({callsiteId:`request_completion.dil.dil_widget.1`,conversation:I,promptMessage:a(e.trim(),t),eventSource:`mouse`,placeholderOptions:t?.is_visually_hidden_from_conversation===!0?{groupWithExistingContent:!1}:void 0,completionMetadata:{conversationMode:te(I)??{kind:s.PrimaryAssistant}}}).finally(()=>{Hi&&(st.current=!1)}))},t[288]=Yr,t[289]=Hi,t[290]=I,t[291]=Uo):Uo=t[291];let Wo=Uo,Go;t[292]!==Ne||t[293]!==L||t[294]!==I||t[295]!==Fe||t[296]!==Me?(Go=(e,t)=>{if(I){if(Je()&&Ne){if(!e){Mn(Me);return}let n=Xe(I.id);Mn(Me,{startVoiceArgs:{...qn({serverThreadId:L??void 0,parentMessageId:We.getCurrentMessage(n)?.id,isAdvancedMode:!0,eventSource:e,conversation:I,gizmoId:We.getGizmoId(n),sourceConversation:I,includeConversationVoiceOverrides:!0}),...t?.voiceLanding?{voice_landing:t.voiceLanding}:{}}});return}if(e&&t?.voiceLanding){let n=Xe(I.id);Fe({startVoiceArgs:{...qn({serverThreadId:L??void 0,parentMessageId:We.getCurrentMessage(n)?.id,isAdvancedMode:!0,eventSource:e,conversation:I,gizmoId:We.getGizmoId(n),sourceConversation:I,includeConversationVoiceOverrides:!0}),voice_landing:t.voiceLanding}});return}Fe()}},t[292]=Ne,t[293]=L,t[294]=I,t[295]=Fe,t[296]=Me,t[297]=Go):Go=t[297];let Ko=Go,qo=Ue(p?.id,Xi),Jo;t[298]!==p||t[299]!==qo||t[300]!==A||t[301]!==R?(Jo={conversation:p,conversationMode:qo,targetMessageId:R,widgetName:A},t[298]=p,t[299]=qo,t[300]=A,t[301]=R,t[302]=Jo):Jo=t[302];let Yo=or(Jo),Xo=(0,W.use)(Qt),Zo=Zi,Qo;t[303]===m?.store?Qo=t[304]:(Qo=()=>{let e=m?.store.getSharedProps();return!e?.isFileUploadEnabled||!e.openFileDialog?!1:(e.openFileDialog(),!0)},t[303]=m?.store,t[304]=Qo);let $o=Qo,es;t[305]===m?.store?es=t[306]:(es=()=>{let e=m?.store.getSharedProps();return e?.isImageUploadEnabled?e.openImageUploadDialog?.()??!1:!1},t[305]=m?.store,t[306]=es);let ts=es,ns;t[307]===m?.store?ns=t[308]:(ns=()=>{let e=m?.store.getSharedProps();return e?.isImageUploadEnabled?e.openCameraDialog?.()??!1:!1},t[307]=m?.store,t[308]=ns);let rs=ns,is;t[309]!==m?.store||t[310]!==I?(is=()=>{let e=m?.store.getSharedProps();return I==null||e?.conversation!==I||e.composerController.conversation!==I?null:e},t[309]=m?.store,t[310]=I,t[311]=is):is=t[311];let Q=is,as;t[312]===Q?as=t[313]:(as=async e=>{if(!Q())return;let{prefillComposerPrompt$:t}=await da(),n=Q();n&&t(n,e)},t[312]=Q,t[313]=as);let os=as,ss;t[314]===Q?ss=t[315]:(ss=async e=>{let{effort:t,fallbackEffort:n,prompt:r,tooltip:i}=e;if(!Q())return;let{setComposerThinkingEffort$:a}=await da(),o=Q();o&&a(o,t,n,i,r)},t[314]=Q,t[315]=ss);let cs=ss,ls;t[316]===Q?ls=t[317]:(ls=async e=>{let{effort:t,fallbackEffort:n,prompt:r,tooltip:i}=e;if(!Q())return;let{activateComposerImageGeneration$:a}=await da(),o=Q();o&&a(o,t,n,i,r)},t[316]=Q,t[317]=ls);let us=ls,ds;t[318]!==p||t[319]!==U||t[320]!==_||t[321]!==Y||t[322]!==R||t[323]!==dn||t[324]!==q||t[325]!==d||t[326]!==M||t[327]!==K||t[328]!==L||t[329]!==It||t[330]!==Pt||t[331]!==J||t[332]!==u?(ds=(e,t,n)=>{let r=n??Li({payload:e.payload,effectiveWidgetRefId:u,messageId:R,effectiveRefIndex:d}),i=y.current,a=U&&e.type!=null&&$t[e.type]?.useEmbeddedState===!0,o=a&&r?i?.getEmbeddedWidgetStateStore?.(r):void 0,s=()=>Y(J)&&y.current===i&&(!a||o!=null&&r!=null&&i?.getEmbeddedWidgetStateStore?.(r)===o),c=a?o?.getState():i?.getState()??K??_;return an({actionType:e.type,hostContext:{widgetInstance:o??i??void 0,isCurrent:s,getWidgetState:()=>s()?o?.getState()??i?.getState():void 0,applyWidgetState:t=>{if(s()){if(o){o.setState(t,!1);return}if(M&&e.type===`business_agent_lead_form_submit`){if(!Ht()||`submitting`in t)return;let n=Object.fromEntries(Object.entries(e.payload??{}).filter(Qi));return new Promise(e=>{Lt.current?.(),Lt.current=e,Pt(e=>({...e??{},...n,...t})),It($i)})}y.current?.setState(t,!1)}},conversation:p,openThreadSidebar:dn},payload:Ii(e.payload),conversationId:L,messageId:R,refId:r,publicActionContext:q,successActionHandler:t,toaster:ye,widgetState:c})},t[318]=p,t[319]=U,t[320]=_,t[321]=Y,t[322]=R,t[323]=dn,t[324]=q,t[325]=d,t[326]=M,t[327]=K,t[328]=L,t[329]=It,t[330]=Pt,t[331]=J,t[332]=u,t[333]=ds):ds=t[333];let fs=ds;E?.analyticsMetadata,D?.metadata?.turn_exchange_id;let ps;t[334]===Pi?ps=t[335]:(ps=Pi?{playPronunciationAudio:Pi}:{},t[334]=Pi,t[335]=ps);let ms;t[336]!==fs||t[337]!==M?(ms=M?{}:{runServerAction:fs},t[336]=fs,t[337]=M,t[338]=ms):ms=t[338];let hs;t[339]===Symbol.for(`react.memo_cache_sentinel`)?(hs=e=>{y.current?.setState(e,!1)},t[339]=hs):hs=t[339];let gs;t[340]!==_r||t[341]!==_i?(gs=_r?{downloadSandboxFile:_i}:{},t[340]=_r,t[341]=_i,t[342]=gs):gs=t[342];let _s;t[343]!==B||t[344]!==P||t[345]!==rs||t[346]!==$o||t[347]!==ts||t[348]!==ti?(_s=P?{openFileUpload:$o,openImageUpload:ts,openCameraCapture:rs}:B?{openFileUpload:()=>ir(`request_file_upload`,ti)}:{},t[343]=B,t[344]=P,t[345]=rs,t[346]=$o,t[347]=ts,t[348]=ti,t[349]=_s):_s=t[349];let vs;t[350]!==B||t[351]!==P||t[352]!==ti?(vs=P||B?{openMediaUpload:()=>ir(`request_media_upload`,ti)}:{},t[350]=B,t[351]=P,t[352]=ti,t[353]=vs):vs=t[353];let ys;t[354]!==us||t[355]!==B||t[356]!==Q||t[357]!==os||t[358]!==cs?(ys=B?{prefillComposer:os,getStructuredInputHost:()=>Q()?.structuredInputHost,setThinkingEffort:cs,activateImageGeneration:us}:{},t[354]=us,t[355]=B,t[356]=Q,t[357]=os,t[358]=cs,t[359]=ys):ys=t[359];let bs;t[360]!==Tn||t[361]!==Z||t[362]!==Ja||t[363]!==A||t[364]!==zr||t[365]!==Pa||t[366]!==Sn||t[367]!==X||t[368]!==I?(bs=e=>{if(zr&&!Pa&&e?.showDialog){if(!Sn||!Tn||!I)return ye.danger(c.somethingWentWrong),!0;let e=Sn.permissions.share_setting;if(e!==`public`&&e!==`workspace`)return!1;let t=r({shareType:`widget`,source:de.CHATGPT_SHARE_FLOW_SOURCE_WIDGET_INLINE_ACTION,widgetMetadata:et({widgetName:A,widgetType:`dil`})});return we(t,le.CHATGPT_SHARE_FLOW_ACTION_ENTRY_POINT_SELECTED,{shareId:Sn.id}),Et({conversation:I,shareResult:hn({id:Sn.id,permalink:Tn,attachments:Sn.attachments}),shareTargetId:`published-widget:${Sn.id}`,shareLinkScope:e,shareFlowContext:t,postText:Sn.text??void 0}),!0}return X?(b.current?.onReady?.(!1),b.current=null,Z.isVisible?Z.onSelect():b.current={targetIdentity:Ja},!0):!1},t[360]=Tn,t[361]=Z,t[362]=Ja,t[363]=A,t[364]=zr,t[365]=Pa,t[366]=Sn,t[367]=X,t[368]=I,t[369]=bs):bs=t[369];let xs;t[370]!==Ba||t[371]!==Ya?(xs=Ba?{waitForWidgetShareReady:e=>new Promise(t=>{b.current?.onReady?.(!1),b.current=null,Ya?t(e()):b.current={isSelectionValid:e,onReady:t}})}:{},t[370]=Ba,t[371]=Ya,t[372]=xs):xs=t[372];let Ss;t[373]!==Y||t[374]!==J?(Ss=()=>Y(J),t[373]=Y,t[374]=J,t[375]=Ss):Ss=t[375];let Cs;t[376]===Se?Cs=t[377]:(Cs=Se?{}:{openVideoLightbox:Zo},t[376]=Se,t[377]=Cs);let ws=E?.analyticsMetadata,Ts=L??void 0,Es=D?.metadata?.turn_exchange_id,Ds=N?`model_written_dil`:void 0,Os=N?void 0:A,ks=Pa?void 0:Tn,As=Pa?void 0:kn,js=V||zr&&!Pa,Ms;t[378]!==je||t[379]!==f||t[380]!==Cr||t[381]!==Wo||t[382]!==R||t[383]!==Bo||t[384]!==Xo||t[385]!==Ho||t[386]!==d||t[387]!==Yo||t[388]!==I||t[389]!==Ko||t[390]!==Ss||t[391]!==Cs||t[392]!==ws||t[393]!==Ts||t[394]!==Es||t[395]!==Ds||t[396]!==Os||t[397]!==ks||t[398]!==As||t[399]!==js||t[400]!==ps||t[401]!==ms||t[402]!==gs||t[403]!==_s||t[404]!==vs||t[405]!==ys||t[406]!==bs||t[407]!==xs?(Ms={toaster:ye,calendar:je,openEntitySidebar:Bo,openProductSidebar:Ho,issueNewTurn:Wo,...ps,...ms,applyWidgetState:hs,...gs,requestLocationPermission:Yo,..._s,...vs,...ys,openWidgetShare:bs,...xs,isRequestCurrent:Ss,openLightbox:Xo,...Cs,analyticsMetadata:ws,logEvent:tr,conversationId:Ts,conversation:I,sourceMessageId:R,turnExchangeId:Es,contentReferenceIndex:d,startVoiceMode:Ko,contentReferenceStartIndex:f,isGenui:Cr,widgetType:Ds,widgetName:Os,currentSharedPostPermalink:ks,sharedPostId:As,isSharedConversation:js},t[378]=je,t[379]=f,t[380]=Cr,t[381]=Wo,t[382]=R,t[383]=Bo,t[384]=Xo,t[385]=Ho,t[386]=d,t[387]=Yo,t[388]=I,t[389]=Ko,t[390]=Ss,t[391]=Cs,t[392]=ws,t[393]=Ts,t[394]=Es,t[395]=Ds,t[396]=Os,t[397]=ks,t[398]=As,t[399]=js,t[400]=ps,t[401]=ms,t[402]=gs,t[403]=_s,t[404]=vs,t[405]=ys,t[406]=bs,t[407]=xs,t[408]=Ms):Ms=t[408];let $=Ms,Ns;t[409]!==$||t[410]!==Bi?(Ns=()=>(Bi??[]).filter(e=>kr[e]==null||Mr(kr[e],$)).join(`
-`),t[409]=$,t[410]=Bi,t[411]=Ns):Ns=t[411];let Ps=Ns,Fs;t[412]===Ps?Fs=t[413]:(Fs=()=>tt(Ps),t[412]=Ps,t[413]=Fs);let Is=(0,W.useSyncExternalStore)(m?.store.subscribeToSharedProps??la,Fs,ea),Ls=i(Ps),Rs;t[414]!==Is||t[415]!==Ls||t[416]!==Bi?(Rs=Bi==null?void 0:Ls.split(`
-`).filter(e=>e!==``&&Is.split(`
-`).includes(e)),t[414]=Is,t[415]=Ls,t[416]=Bi,t[417]=Rs):Rs=t[417];let zs=Rs,Bs;t[418]===$?Bs=t[419]:(Bs=e=>jr({url:e},$,new URL(e)),t[418]=$,t[419]=Bs);let Vs=Bs,Hs;t[420]!==F||t[421]!==f||t[422]!==Mi||t[423]!==R||t[424]!==L?(Hs=e=>{Mi?.(e),lr({interaction:e,clientThreadId:F,conversationId:L??void 0,messageId:R,contentReferenceStartIndex:f})},t[420]=F,t[421]=f,t[422]=Mi,t[423]=R,t[424]=L,t[425]=Hs):Hs=t[425];let Us=Hs,Ws;t[426]!==$||t[427]!==h||t[428]!==Y||t[429]!==M||t[430]!==J?(Ws=e=>{let{type:t,payload:n}=e,r=typeof t==`string`&&t.startsWith(`card.`)&&ba(n),i=r&&t&&!Mt(h)?va(h,t):null,a=r?i?{...i,action:t}:void 0:n,o=y.current;return Nr({payload:a,context:{...$,widgetStateHost:{getWidgetState:()=>y.current===o?o?.getState():void 0,applyWidgetState:e=>{y.current===o&&o?.setState(e,!1)}},isRequestCurrent:()=>Y(J)&&(o==null?M:y.current===o)},library:kr,actionType:t})},t[426]=$,t[427]=h,t[428]=Y,t[429]=M,t[430]=J,t[431]=Ws):Ws=t[431];let Gs=Ws,Ks;t[432]!==Gs||t[433]!==fs?(Ks=(e,t)=>(t===void 0?`client`:t)===`client`?Gs(e):fs(e,Gs),t[432]=Gs,t[433]=fs,t[434]=Ks):Ks=t[434];let qs=Ks,Js;t[435]!==Gs||t[436]!==fs||t[437]!==Y||t[438]!==J?(Js=async e=>{let t=J,n=await fs(e.action,Gs,e.widgetId);return Y(t)?n.status===`error`?{success:!1,statusMessage:n.statusMessage}:{success:!0,widgetState:Wt(e.action.type,n)}:{success:!1}},t[435]=Gs,t[436]=fs,t[437]=Y,t[438]=J,t[439]=Js):Js=t[439];let Ys=Js,Xs;t[440]!==k||t[441]!==A||t[442]!==U?(Xs=(e,t,n)=>Xt(n===void 0?U?void 0:A:k?.find(e=>{let{ref_id:t}=e;return t===n})?.name)?.(t,e),t[440]=k,t[441]=A,t[442]=U,t[443]=Xs):Xs=t[443];let Zs=Xs,Qs,$s;t[444]!==A||t[445]!==U||t[446]!==ja?(Qs=()=>{if(ja===void 0)return;let e=y.current;if(!e)return;let t;try{t=JSON.stringify(ja)}catch{t=null}t!=null&&Rt.current===t||(Rt.current=t,e.setState(ln({widgetName:U?void 0:A,incomingWidgetState:ja,currentWidgetState:e.getState()}),!1))},$s=[A,U,ja],t[444]=A,t[445]=U,t[446]=ja,t[447]=Qs,t[448]=$s):(Qs=t[447],$s=t[448]),(0,W.useEffect)(Qs,$s);let ec;t[449]===T?ec=t[450]:(ec=()=>{T!==void 0&&y.current?.setState({sensitive_values_hidden:T},!1)},t[449]=T,t[450]=ec);let tc;t[451]!==S||t[452]!==K||t[453]!==T?(tc=[S,K,T],t[451]=S,t[452]=K,t[453]=T,t[454]=tc):tc=t[454],(0,W.useEffect)(ec,tc);let nc;t[455]!==A||t[456]!==_||t[457]!==S||t[458]!==T?(nc={widgetName:A,initialWidgetState:_,widgetApiRef:y,isWidgetRendererMounted:S,sensitiveValuesHidden:T},t[455]=A,t[456]=_,t[457]=S,t[458]=T,t[459]=nc):nc=t[459],Cn(nc);let rc,ic;t[460]===o?(rc=t[461],ic=t[462]):(rc=()=>{!ga(o)||zt.current||(zt.current=!0,ye.warning(`Legacy widget turn detected`,{id:`legacy-dil-turn`,description:`This turn uses DIL 1.x and may not render correctly.`}))},ic=[o,ye],t[460]=o,t[461]=rc,t[462]=ic),(0,W.useEffect)(rc,ic);let ac;t[463]===Po?ac=t[464]:(ac=()=>{let e=ot.current;if(!e||(Po(),typeof MutationObserver>`u`))return;let t=new MutationObserver(Po);return t.observe(e,{childList:!0,characterData:!0,subtree:!0}),()=>t.disconnect()},t[463]=Po,t[464]=ac);let oc;t[465]!==Po||t[466]!==C?(oc=[Po,C],t[465]=Po,t[466]=C,t[467]=oc):oc=t[467],(0,W.useEffect)(ac,oc);let sc;t[468]!==R||t[469]!==d||t[470]!==L?(sc=[`genui-refresh`,L,R,d],t[468]=R,t[469]=d,t[470]=L,t[471]=sc):sc=t[471];let cc;t[472]!==O||t[473]!==to||t[474]!==P||t[475]!==R||t[476]!==d||t[477]!==eo?.enabled||t[478]!==eo?.name||t[479]!==L?(cc=Je()&&!P&&!O&&!!(L&&R&&d!==void 0)&&!!(eo?.enabled&&eo?.name)&&to,t[472]=O,t[473]=to,t[474]=P,t[475]=R,t[476]=d,t[477]=eo?.enabled,t[478]=eo?.name,t[479]=L,t[480]=cc):cc=t[480];let lc;t[481]!==R||t[482]!==d||t[483]!==L?(lc=async()=>{if(!L||!R||d===void 0)return null;let e=await ze.safePost(`/conversation/{conversation_id}/message/{message_id}/genui/refresh_widget`,{additionalHeaders:void 0,parameters:{path:{conversation_id:L,message_id:R}},authOption:Ke.SendIfAvailable,requestBody:{ref_index:d}});return gr(L,e),e},t[481]=R,t[482]=d,t[483]=L,t[484]=lc):lc=t[484];let uc;t[485]!==sc||t[486]!==cc||t[487]!==lc?(uc={queryKey:sc,enabled:cc,queryFn:lc,refetchInterval:ta,refetchIntervalInBackground:!1,refetchOnWindowFocus:!0,retry:na},t[485]=sc,t[486]=cc,t[487]=lc,t[488]=uc):uc=t[488],lt(uc);let dc=Tt||no,fc=String(ft),pc=String(gt),mc=String(yt),hc=dc?no?`mt-4`:w?``:`mt-4 pb-3`:`hidden`,gc;t[489]===hc?gc=t[490]:(gc=ie(hc),t[489]=hc,t[490]=gc);let _c;t[491]!==ft||t[492]!==Tt?(_c=ft&&Tt&&(0,G.jsx)(ma,{}),t[491]=ft,t[492]=Tt,t[493]=_c):_c=t[493];let vc=no?`gap-1`:`gap-0.5`,yc;t[494]===vc?yc=t[495]:(yc=ie(`flex w-fit max-w-full flex-col has-data-writing-block:w-full`,vc),t[494]=vc,t[495]=yc);let bc;t[496]!==Ai||t[497]!==H?(bc=H===`failed`&&(0,G.jsx)(Jt,{type:`danger`,className:`flex-wrap gap-3`,primaryAction:(0,G.jsx)(Ge,{type:`button`,color:`secondary`,size:`small`,onClick:Ai,children:(0,G.jsx)(ct,{id:`dil.sharedPostAdoptionFailed.retryLoading`,defaultMessage:`Retry loading`})}),children:(0,G.jsx)(`p`,{role:`alert`,children:(0,G.jsx)(ct,{id:`dil.sharedPostAdoptionFailed.message`,defaultMessage:`This chat's interactive content could not be refreshed.`})})}),t[496]=Ai,t[497]=H,t[498]=bc):bc=t[498];let xc=H===`adopted`?`owned`:`source`,Sc;t[499]!==h||t[500]!==g?(Sc=g?void 0:(0,G.jsx)(pa,{widget:h}),t[499]=h,t[500]=g,t[501]=Sc):Sc=t[501];let Cc;t[502]!==$||t[503]!==h||t[504]!==zs||t[505]!==Oo||t[506]!==j||t[507]!==E||t[508]!==Se||t[509]!==Vi||t[510]!==A||t[511]!==xa||t[512]!==qs||t[513]!==Mi||t[514]!==Io||t[515]!==Us||t[516]!==Ro||t[517]!==Ys||t[518]!==vo||t[519]!==wo||t[520]!==Eo||t[521]!==So||t[522]!==g||t[523]!==nn||t[524]!==O||t[525]!==P||t[526]!==Di||t[527]!==Vs||t[528]!==D?.author||t[529]!==R||t[530]!==q||t[531]!==Zs||t[532]!==d||t[533]!==M||t[534]!==yi||t[535]!==ja||t[536]!==L||t[537]!==In||t[538]!==Ui||t[539]!==xi||t[540]!==Fi||t[541]!==it||t[542]!==An||t[543]!==Ft||t[544]!==Wr||t[545]!==cn||t[546]!==u?(Cc=M&&!Mt(xa)?(0,G.jsx)(`div`,{...$n,inert:Ui,"aria-disabled":Ui||void 0,children:(0,G.jsx)(oa,{actionsDisabled:Ui||Di,initialState:ja,supportedClientActions:Fi??Dr,availableClientActions:zs,onAction:qs,onServerAction:Ys,reconcileWidgetState:Zs,serverActionTypes:tn,onInitialRenderCommit:Ro,onRenderFailure:vo,widget:xa,widgetContainsPii:Vi},`${An}:${Ft}`)}):(0,G.jsx)(`div`,{...$n,inert:Ui||Di,"aria-disabled":Ui||Di||void 0,children:(0,G.jsx)(Ir.Provider,{value:Vs,children:(0,G.jsx)(Wn,{errorMode:`soft`,widget:xa,disableExternalMedia:Se,theme:it,streaming:In,animateStreamingReveal:In,initialState:ja,reconcileEmbeddedWidgetState:ln,onAction:qs,onInteraction:P?Us:Mi,supportedClientActions:zs,ref:Eo,onError:wo,onSoftFailure:So,onInitialRenderCommit:Io,renderHostWidget:yi,...li({isDILV2:g,isHermes:O,isModelWrittenDil:P,messageRole:D?.author.role,actionsDisabled:Ui}),isolateFromMarkdown:xi,showRenderFailureDebugInfo:!1})})}),t[502]=$,t[503]=h,t[504]=zs,t[505]=Oo,t[506]=j,t[507]=E,t[508]=Se,t[509]=Vi,t[510]=A,t[511]=xa,t[512]=qs,t[513]=Mi,t[514]=Io,t[515]=Us,t[516]=Ro,t[517]=Ys,t[518]=vo,t[519]=wo,t[520]=Eo,t[521]=So,t[522]=g,t[523]=nn,t[524]=O,t[525]=P,t[526]=Di,t[527]=Vs,t[528]=D?.author,t[529]=R,t[530]=q,t[531]=Zs,t[532]=d,t[533]=M,t[534]=yi,t[535]=ja,t[536]=L,t[537]=In,t[538]=Ui,t[539]=xi,t[540]=Fi,t[541]=it,t[542]=An,t[543]=Ft,t[544]=Wr,t[545]=cn,t[546]=u,t[547]=Cc):Cc=t[547];let wc;t[548]!==vo||t[549]!==xc||t[550]!==Sc||t[551]!==Cc?(wc=(0,G.jsx)(Rn,{children:(0,G.jsx)(at,{name:`DILWidgetRenderer`,onError:vo,fallback:Sc,children:Cc},xc)}),t[548]=vo,t[549]=xc,t[550]=Sc,t[551]=Cc,t[552]=wc):wc=t[552];let Tc;t[553]!==F||t[554]!==f||t[555]!==Ta||t[556]!==o||t[557]!==Jn.loggingMetadata||t[558]!==l||t[559]!==Ti||t[560]!==A||t[561]!==R||t[562]!==ro||t[563]!==no||t[564]!==cn||t[565]!==u||t[566]!==ce?(Tc=(ro||no)&&(0,G.jsxs)(`div`,{className:`flex justify-end gap-1 empty:hidden`,children:[null,no&&(0,G.jsx)(mt,{feedbackConfig:l,messageId:R,clientThreadId:F,widgetRefId:u,contentReferenceStartIndex:f,dilUrl:Ti,widgetType:ce,widgetName:A,loggingMetadata:Jn.loggingMetadata,dilVersion:o})]}),t[553]=F,t[554]=f,t[555]=Ta,t[556]=o,t[557]=Jn.loggingMetadata,t[558]=l,t[559]=Ti,t[560]=A,t[561]=R,t[562]=ro,t[563]=no,t[564]=cn,t[565]=u,t[566]=ce,t[567]=Tc):Tc=t[567];let Ec;t[568]!==qa||t[569]!==yc||t[570]!==bc||t[571]!==wc||t[572]!==Tc?(Ec=(0,G.jsxs)(`div`,{ref:ot,className:yc,children:[qa,bc,wc,Tc]}),t[568]=qa,t[569]=yc,t[570]=bc,t[571]=wc,t[572]=Tc,t[573]=Ec):Ec=t[573];let Dc;t[574]!==Ni||t[575]!==fc||t[576]!==pc||t[577]!==mc||t[578]!==gc||t[579]!==_c||t[580]!==Ec?(Dc=(0,G.jsxs)(`div`,{"data-testid":`dil-widget-shell`,"data-internal-render-dil-initial-render-committed":fc,"data-internal-render-dil-render-failure":pc,"data-internal-render-dil-soft-render-failure":mc,className:gc,children:[Ni,_c,Ec]}),t[574]=Ni,t[575]=fc,t[576]=pc,t[577]=mc,t[578]=gc,t[579]=_c,t[580]=Ec,t[581]=Dc):Dc=t[581];let Oc=Dc,kc;t[582]!==_||t[583]!==K?(kc={..._,...K},t[582]=_,t[583]=K,t[584]=kc):kc=t[584];let Ac=L??void 0,jc=u??(R&&d!==void 0?`${R}:${d}`:void 0),Mc=V||!to||jn||Xr||Di,Nc=d===void 0?void 0:Vn[d],Pc;return t[585]!==F||t[586]!==f||t[587]!==Oc||t[588]!==A||t[589]!==V||t[590]!==Wo||t[591]!==R||t[592]!==kc||t[593]!==Ac||t[594]!==jc||t[595]!==Mc||t[596]!==Nc?(Pc=(0,G.jsx)(ca,{contentReferenceStartIndex:f,widgetName:A,widgetState:kc,clientThreadId:F,conversationId:Ac,messageId:R,refId:jc,actionsDisabled:Mc,isReadOnly:V,issueNewTurn:Wo,contentReference:Nc,fallback:Oc}),t[585]=F,t[586]=f,t[587]=Oc,t[588]=A,t[589]=V,t[590]=Wo,t[591]=R,t[592]=kc,t[593]=Ac,t[594]=jc,t[595]=Mc,t[596]=Nc,t[597]=Pc):Pc=t[597],Pc}}));export{U as n,Ta as r,wa as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/f4b1af2d-d7p810uyaai3xmeg.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-ed29bs6yiwucn7st.js", "assets/2340486e-oc6d2eodbcrmxur3.js", "assets/root-lelxp0l2.css", "assets/conversation-small-l6tnsr2xfn2d55kk.js", "assets/30901919-om7b3qf5hp4j9x4l.js", "assets/c470f5ab-d0jxi6yggehv1yt2.js", "assets/0e5afe53-goyw8fd3qndq8rq5.js", "assets/conversation-small-ixfdle4i.css", "assets/e25a39e4-gjo9tkmgoge4bpl7.js", "assets/bb6159a1-kaqlxu5hpw0v4dbh.js", "assets/8b34dbc2-j8rcexxiltkm8ucr.js", "assets/82782bc9-cz4jkhg31tycbqqf.js", "assets/6b6f03ea-md2gmh61tf9lq8sl.js", "assets/f2fa691a-ntz1nva0f17gw53s.js", "assets/b5525e3f-jfvjnwxz9hy6okr6.js", "assets/8851a252-nd8uqvn1z8suwni9.js", "assets/fabe3734-fjsrxcujkyz33gg3.js", "assets/f591cb9e-byqviztv3cwmzr9i.js", "assets/5c6bef43-o6iho1hhfpxkzwss.js", "assets/c2675c8c-fpv9s4kvd412dyap.js", "assets/global-modals-lv5n3ujm.css", "assets/707eab0c-co82iasy3ghgw11m.js", "assets/9d60841e-bx3dwc8nyvp30a4s.js", "assets/bcae0416-hw074mfyxypgqrid.js", "assets/d4c740a3-grm4mqv12ru1q0ee.js", "assets/Button-ijivgymd.css", "assets/3cb44933-iicoq9mv2s79gqo9.js", "assets/a35abcd6-o5uzbzp1jprs3y1b.js", "assets/1c919af1-abbe8u4rjagje3yr.js", "assets/74a883a0-hvxle82pkyqdut0n.js", "assets/4b68ab38-e2jtqfi6qknkay6v.js", "assets/e981ddae-m7civn9ndz8nfodx.js", "assets/cb84f617-e4ca0kd9iysszy1q.js", "assets/36ecb4f8-isjf0qo9jn05gfs9.js", "assets/Input-cmdkk215.css", "assets/922a3d67-jueg65i60dynxwcw.js", "assets/fc3d210c-b0fn88mepdlhixdn.js", "assets/b7324575-mdvteep4ov4c09vu.js", "assets/24ecc29f-ecc8faea98snzfmo.js", "assets/cec13ce4-guq73n675tmewmw2.js", "assets/92cd10e6-qvbn8kvfi6drz6td.js", "assets/b4c3a217-mfctiv85p88ipen9.js", "assets/4e1f6607-lwxxo2p65cvjgnsc.js", "assets/5ab42519-d83vcgfc717xdy0e.js", "assets/8d846022-bbqki7y90h79t622.js", "assets/ce52ae67-h7tlc5oeh6o4lhgs.js", "assets/32f10268-brzd07d27fr6f1j9.js", "assets/7ec8c41d-o8vtr9colbnn301a.js", "assets/5fe72b0f-mpesntcup5zqacug.js", "assets/e87af100-eb7mg9xzux4velcp.js", "assets/051ead45-hajnnq1kur4ayj67.js", "assets/e3b746a6-fwlyxtenerc6e6fw.js", "assets/2ea88c7a-lxyla91xs6iv7odf.js", "assets/8d846022-bvik3sltoydb2o43.js", "assets/91969468-fsazluytqzkm0w9b.js", "assets/4d271a7b-hp7tgm9o1i2q4yvg.js", "assets/e1a66d2b-bocdxso4ylvq8tf8.js", "assets/4c0f1f8e-go23ccluwcn7b4ji.js", "assets/3509739a-ognh3x09dg81wgms.js", "assets/25a66342-nemboklm6ek1yx3b.js", "assets/25a66342-j7cd8h2bqav7weve.js", "assets/84983163-fdkj4nuz2n6opo6h.js", "assets/7517017f-mx1as211i72jj822.js", "assets/58bafdef-fa52pok7b89iuh1r.js", "assets/e01e2324-dz6qehpgeoiy17uf.js", "assets/5dc32f04-jok98cl96kz3qcxh.js", "assets/40748e50-paq8vp4t616bqpi1.js", "assets/app-block-trigger-actions-hxl87txx.css", "assets/56dee4d8-hhsd5kr8lef0x8a7.js", "assets/72bb039a-iheh04wb74j962wn.js", "assets/9eb56efa-e4c9vfx19ew2b4vb.js", "assets/cc79834b-br4qhf1lrusn5gux.js", "assets/18e7d84e-fz0rmpdsxf1eemps.js", "assets/76b5a357-benxdh69028dkycz.js", "assets/0fbccedd-gwh302v4yha6328t.js", "assets/8baac9c1-clln829dqc1t5s8r.js", "assets/8b02daf9-l1qr0z093205f9c4.js", "assets/2ab5aa6c-o34ucv7ekk5jblf4.js", "assets/9e6b8179-iwya02n4roh4br4a.js", "assets/c01cad0d-kcla04z8lzj7ivsr.js", "assets/0d44a401-h0b4x5du92qkkamu.js", "assets/ff057340-dalmtwfsrbe5cqfm.js", "assets/8becd41d-lh58tu2atd00plaq.js", "assets/ae2c873a-n5ukvzv4yz5ia0il.js", "assets/7bed292f-du7qhd9n1ow61ix1.js", "assets/70c3dee7-lsaf5xtpkkhxv4cr.js", "assets/d4c3e8a1-fwrvhqh6h5dyi0r9.js", "assets/bf44528e-bn99w5w3laie47md.js", "assets/c0abab23-k00haa121lp0mrli.js", "assets/code-block-dop2czwo.css", "assets/a965fc59-kor2zwhqgxmla6fx.js", "assets/44246d2c-kczqh48m9f7ed2ng.js", "assets/31e01dd8-kul228th6lltq989.js", "assets/31cec8d8-ejzahhq8v425zkie.js", "assets/85557f11-eczxyuulepmtlpfg.js", "assets/e4fe0dae-l4vxeim4wpwl76rs.js", "assets/3dcf3d3b-fogfeelw4uf7crt0.js", "assets/4117f58d-dw6vbezmdm3rgtdp.js", "assets/ec72420d-8lk9l7jo04spe8zx.js", "assets/25a66342-mje47kprkeyaggmy.js", "assets/ba2d71b9-gx7iw50atfbjvzq2.js", "assets/d4bfaace-m5vpff935wjms508.js", "assets/2d39f94f-mtzwm3huz3d3y8kk.js", "assets/multiplayer-pp910s5j.css", "assets/27597608-oco3s98wfa0prcsd.js", "assets/ee696724-h3gx6ezk9vsn3bmt.js", "assets/9ec4d3b5-7ee5yodled1xmrjv.js", "assets/a7704736-hkwcmmtadjyj8zjj.js", "assets/react-cj2gxmrc.css", "assets/4748c0bc-pczuswqjazhhezt6.js", "assets/203cffdc-nl3v3sk7x6mubwsp.js", "assets/0631b696-tyfc4h1x5212nn21.js", "assets/781797c9-lr3s7zi7y0vzvfo8.js", "assets/2ac7f54f-eotmcx2jhfp3ha14.js", "assets/0379e822-d0zzqs1p6jkq1prt.js", "assets/3ed411a3-bkpwsc2dqabkms53.js", "assets/296caa51-b13regnu250gsrys.js", "assets/e54430f0-fbovbo7lmdgd7dxh.js", "assets/writing-block-provider-lbnz1gc0.css", "assets/2f7309c2-ejfkv6ww40zvvkzs.js", "assets/560eefd0-hj6rt2rq8twubqyo.js", "assets/920a0b2e-oefsg70thg91wbqc.js", "assets/12a8bcb0-ixxlu90rdre49oup.js", "assets/af004db9-kouk4100w6rgjqxb.js", "assets/429593da-gg3rhmjrlaj5h23r.js", "assets/fc5e7148-h2as8bctnrb3mr8v.js", "assets/ede2e481-fmwc1w2tf3zfvp57.js", "assets/181180d3-nlzivv2dxeap1a5c.js", "assets/1af2f3f4-nmltip8zvo6d2bqn.js", "assets/55904901-ho19e9t1rzc66l1j.js", "assets/0e8433b5-ck98nqnj72djzth8.js", "assets/3acfc0b4-duyor5khp5u5bcub.js", "assets/058a5ba2-dwx1domadbzvgkpu.js", "assets/017c9c5c-gz5zzjhwjkthb675.js", "assets/1a5e078c-k83u72rohuulcxa6.js", "assets/57f71cac-kyfer9h1sv6mqb8v.js", "assets/5798741d-gy694h0dvfqm8xpx.js", "assets/a91a940c-bh6a75xzhate1yj4.js", "assets/4b2c6e28-kbymduru2nntce6v.js", "assets/2120deb9-ngyg4erspj02chn5.js", "assets/99a768a6-kej84n695mnb983a.js", "assets/3e88eafe-h4j5x1fw7tndgho2.js", "assets/49b0ba35-mfj3tsm0yeu09zzd.js", "assets/9a717608-erwk5y271gbmlmjf.js", "assets/02df22f1-owuhvuexvdhzr2tq.js", "assets/2071ed62-fytgvp2f8gv1vh7l.js", "assets/109df894-muxe4x6ty346nrsk.js", "assets/6cf03d47-kacal5qogjtmpa2y.js", "assets/35710e11-idj7a42lng292h7q.js", "assets/1c9ccc41-53zcetvlerbr9c7x.js", "assets/writing-block-gwgymy54.css", "assets/c7a1f949-gp3kcdngo01z5wtf.js", "assets/b5901a24-duvmjkx79b210rzz.js", "assets/f53a4715-da3fhyj4zujd73na.js", "assets/bd043fcd-gjtg7l12kwjg83ng.js", "assets/5b8cbee9-ikp434aoukh1urti.js", "assets/023ae2e0-uahawk28br7gi5z7.js", "assets/5983c1e5-n6x2wdealcj7if8q.js", "assets/d36fbe92-kwvehl1h4eebta6t.js", "assets/c4153f57-f31ctkvfq8ixyapa.js", "assets/2ab871c9-kiu7c51opxkerlsb.js", "assets/client-defined-widget-gdqdmhro.css", "assets/0d069930-dceh7z1fidbaj21w.js", "assets/e24a7969-k0jbuvw7t3or9edv.js", "assets/4366db25-ewe1psdg4pi5kioz.js", "assets/57b5cf98-b52jss81li14xa5i.js", "assets/bd3d9ae3-n2n9en3ft792ksu0.js", "assets/c0709e5b-lkseu8qladuo8z60.js", "assets/a40da908-b2ypfoza6q933la1.js", "assets/e44193fd-f0hwbdius6v4xt8w.js", "assets/9fe250df-ntdcuck4r9hf61tb.js", "assets/6671b9de-nxgp26gka1i5bjxl.js", "assets/dfee2fd5-kokd9ew07i5al9ne.js", "assets/25a66342-dcvz86tueu6kzw9v.js", "assets/3abc0e9f-fr12yekp7vjg3k5x.js", "assets/e7ad522e-l4y3c7qtp2zd7qrm.js", "assets/a238cce4-iimtntycc9g7mr46.js", "assets/a52cbd6d-b3akc51auciks7qa.js", "assets/2a024993-9o65mkwlnjes4dn6.js", "assets/24e12db9-giq3mlag2pj3n8jf.js", "assets/078cf8c6-fp4gjl814thc89zp.js", "assets/bfb5f53c-otun26b524g3mwkp.js", "assets/13b0edf4-lsbzaldybe7djxmw.js", "assets/9dff50df-i9szl479ee2k7hmv.js", "assets/a5428737-k52re5tzvgyjtyrw.js", "assets/fb8e0b0f-lfpkqz0jnctlv7yy.js", "assets/701a322e-eb74qrpkrrvvbn8g.js", "assets/469343f0-j6vfc42bb6mktsby.js", "assets/9d32acbb-chzasgs6wtqxkdks.js", "assets/44fdb285-fwhwjm7y4p9k56rf.js", "assets/540191af-f40s3di33ebqlcih.js", "assets/lightbox-ljfqt8y3.css"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $o as r,
+    A5 as i,
+    BZ as a,
+    Bd as o,
+    Bet as s,
+    Brt as c,
+    CN as ee,
+    Cc as te,
+    F7 as ne,
+    FC as re,
+    G5 as ie,
+    HF as ae,
+    I1 as oe,
+    J0 as l,
+    JT as se,
+    Jot as u,
+    K5 as ce,
+    Ko as le,
+    PC as ue,
+    Qo as de,
+    RU as fe,
+    S1 as pe,
+    Tat as me,
+    UF as he,
+    Uet as ge,
+    VF as d,
+    Vp as f,
+    WF as p,
+    Y0 as m,
+    Yd as _e,
+    Yot as ve,
+    Yrt as ye,
+    Z0 as be,
+    _N as xe,
+    _Y as Se,
+    aq as Ce,
+    as as we,
+    b2 as Te,
+    b5 as Ee,
+    bW as De,
+    ctt as Oe,
+    dY as ke,
+    dq as Ae,
+    e2 as je,
+    eQ as Me,
+    eat as Ne,
+    f5 as Pe,
+    f8 as Fe,
+    fF as Ie,
+    ftt as Le,
+    is as Re,
+    j7 as ze,
+    jat as h,
+    ld as Be,
+    mF as Ve,
+    nY as He,
+    nat as g,
+    oit as _,
+    pY as Ue,
+    qJ as We,
+    qT as Ge,
+    rat as Ke,
+    sat as qe,
+    sit as Je,
+    t5 as Ye,
+    tY as Xe,
+    tm as Ze,
+    uF as Qe,
+    ud as $e,
+    us as et,
+    v5 as tt,
+    vN as nt,
+    wc as rt,
+    x5 as v,
+    y2 as it,
+    yN as y,
+    yW as at,
+    zU as ot
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as st,
+    Nn as ct,
+    O as lt,
+    Rn as b,
+    Vn as ut,
+    cn as x,
+    ln as S,
+    s as dt,
+    wn as ft
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    $Fn as pt,
+    $w as mt,
+    BZt as ht,
+    CEt as gt,
+    FTt as _t,
+    Hj as vt,
+    ITt as yt,
+    IZt as bt,
+    Kqt as xt,
+    LZt as St,
+    Lft as Ct,
+    MF as wt,
+    NL as Tt,
+    PL as Et,
+    RZt as Dt,
+    Rft as Ot,
+    UZt as kt,
+    Uj as At,
+    VZt as jt,
+    WZt as Mt,
+    XAt as Nt,
+    YAt as Pt,
+    _C as Ft,
+    _In as It,
+    _wt as Lt,
+    cC as Rt,
+    cR as zt,
+    cVn as Bt,
+    cjn as Vt,
+    cwt as Ht,
+    dXt as Ut,
+    dwt as Wt,
+    eIn as Gt,
+    edt as C,
+    fFt as Kt,
+    fIn as qt,
+    fSt as Jt,
+    fVn as Yt,
+    fwt as Xt,
+    gC as Zt,
+    gIn as Qt,
+    gwt as $t,
+    hXt as en,
+    hwt as tn,
+    jF as nn,
+    lVn as rn,
+    lwt as an,
+    mFt as on,
+    mXt as sn,
+    mjn as cn,
+    mwt as ln,
+    oIn as un,
+    pSt as dn,
+    pVn as w,
+    pXt as fn,
+    pwt as pn,
+    qqt as T,
+    rIn as mn,
+    sR as hn,
+    sjn as gn,
+    swt as E,
+    tT as _n,
+    tdt as vn,
+    uC as yn,
+    uXt as bn,
+    uwt as xn,
+    vpt as Sn,
+    vwt as Cn,
+    wEt as wn,
+    xEt as Tn,
+    yEt as En,
+    ypt as Dn,
+    zZt as On
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    BS as kn,
+    GS as D,
+    TS as An,
+    gS as jn
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+import {
+    Ff as Mn,
+    If as O,
+    Lf as Nn,
+    Nm as Pn,
+    Om as Fn,
+    Pf as In,
+    Pm as Ln,
+    _p as Rn,
+    dh as zn,
+    ds as Bn,
+    gp as Vn,
+    hp as k,
+    km as Hn,
+    lr as Un,
+    mp as Wn,
+    uh as Gn,
+    ur as Kn,
+    us as qn,
+    vp as Jn
+} from "./8b34dbc2-j8rcexxiltkm8ucr.js";
+import {
+    n as A,
+    t as Yn
+} from "./e3349b6b-lps93vwz6l6pbbnc.js";
+import {
+    t as Xn,
+    x as Zn
+} from "./25a66342-hwowa0eflaiy52b1.js";
+import {
+    r as Qn,
+    t as $n
+} from "./58f125af-e7htnd2ri328u7h8.js";
+import {
+    C as er,
+    D as tr,
+    E as nr,
+    T as rr,
+    _ as ir,
+    b as j,
+    c as ar,
+    d as M,
+    f as or,
+    g as sr,
+    h as cr,
+    i as lr,
+    l as ur,
+    m as dr,
+    n as N,
+    p as fr,
+    r as pr,
+    t as mr,
+    u as hr,
+    v as gr,
+    w as _r,
+    x as vr,
+    y as P
+} from "./16d56f73-khajwf9078ktimne.js";
+import {
+    n as yr,
+    t as br
+} from "./72bb039a-iheh04wb74j962wn.js";
+import {
+    a as xr,
+    o as Sr
+} from "./9eb56efa-e4c9vfx19ew2b4vb.js";
+import {
+    n as Cr,
+    t as wr
+} from "./b5901a24-duvmjkx79b210rzz.js";
+import {
+    n as Tr,
+    r as Er
+} from "./023ae2e0-uahawk28br7gi5z7.js";
+import {
+    a as Dr,
+    c as Or,
+    i as kr,
+    n as Ar,
+    r as jr,
+    s as F
+} from "./04f387fb-br2bfp9ejt1pui7f.js";
+import {
+    a as Mr,
+    c as Nr,
+    o as Pr,
+    r as Fr
+} from "./fcf5f4da-m2640lkqt2mr4cfw.js";
+import {
+    n as I,
+    t as Ir
+} from "./4838955c-n5k9ohtcoy6mydwn.js";
+import {
+    n as Lr,
+    t as Rr
+} from "./bfb5f53c-otun26b524g3mwkp.js";
+var zr, Br, Vr, Hr = e((() => {
+        _(), m(), zr = st(), S(), Br = l(() => x(() => import(`./f4b1af2d-d7p810uyaai3xmeg.js`).then(e => e.InteractivePollSignedOutView), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))), Vr = e => Je() || e.widgetState?.is_unfurl_preview === !0 || e.widgetState?.public_shared_widget_actions_enabled === !0 ? null : (0, zr.jsx)(Br, {
+            ...e
+        })
+    })),
+    Ur, Wr, L, R, Gr, Kr = e((() => {
+        _(), m(), jn(), Ur = st(), S(), Wr = kn({
+            id: D().min(1),
+            label: D(),
+            description: D().nullish()
+        }), L = kn({
+            title: D(),
+            plugins: An(Wr),
+            additional_plugins: An(Wr).default([]),
+            experience_id: D().optional()
+        }), R = l(() => x(() => import(`./e25a39e4-gjo9tkmgoge4bpl7.js`).then(e => e.NativePluginSuggestions), __vite__mapDeps([10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19]))), Gr = ({
+            widgetState: e,
+            isReadOnly: t,
+            actionsDisabled: n
+        }) => {
+            if (t || !Je()) return null;
+            let r = L.safeParse(e);
+            return r.success ? (0, Ur.jsx)(R, {
+                state: r.data,
+                disabled: n
+            }) : null
+        }
+    })),
+    qr, Jr, Yr, z, Xr, B, Zr, Qr, $r = e((() => {
+        m(), qr = st(), S(), Jr = l(() => x(() => import(`./5c6bef43-o6iho1hhfpxkzwss.js`).then(e => e.ConversationalOnboardingWritingDILRenderOverride), __vite__mapDeps([20, 1, 2, 3, 4, 5, 6, 7, 8, 9, 21, 13, 12, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163]))), Yr = e => typeof e == `object` && !!e && !Array.isArray(e), z = (e, t) => typeof e == `string` && e.length <= t * 2 && [...e].length <= t && e.trim().length > 0, Xr = e => z(e, 35) && /^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$/.test(e), B = e => typeof e == `string` && /^\d{5}$/.test(e), Zr = e => {
+            if (!Yr(e) || !Yr(e.translation) || !Yr(e.email) || !Yr(e.message)) return !1;
+            let {
+                translation: t,
+                email: n,
+                message: r,
+                tab: i
+            } = e;
+            return z(e.ask_me_label, 120) && z(e.translation_tab_label, 120) && z(e.email_tab_label, 120) && z(e.message_tab_label, 120) && z(e.translation_question, 500) && z(e.email_question, 500) && z(e.message_question, 500) && Xr(t.source_language) && Xr(t.target_language) && t.source_language.toLowerCase() !== t.target_language.toLowerCase() && z(t.source_text, 12e3) && z(t.translated_text, 12e3) && B(n.id) && z(n.subject, 120) && z(n.content, 12e3) && B(r.id) && n.id !== r.id && z(r.content, 12e3) && (i === `translation` || i === `professional_email` || i === `birthday_message`)
+        }, Qr = ({
+            widgetState: e,
+            clientThreadId: t
+        }) => Zr(e) ? (0, qr.jsx)(Jr, {
+            state: e,
+            clientThreadId: t
+        }) : null
+    })),
+    ei, ti, ni, ri = e((() => {
+        m(), ei = st(), S(), ti = l(() => x(() => import(`./0d069930-dceh7z1fidbaj21w.js`).then(e => e.EmailPreviewDILRenderOverride), __vite__mapDeps([164, 1, 3, 155, 2, 4, 5, 6, 7, 8, 9, 12, 13, 117, 156]))), ni = e => (0, ei.jsx)(ti, {
+            ...e
+        })
+    })),
+    ii, ai, oi = e((() => {
+        Hr(), Kr(), $r(), ri(), ii = {
+            onboarding_plugin_suggestions: Gr,
+            conversational_onboarding_writing: Qr,
+            email_preview: ni,
+            create_interactive_poll: Vr
+        }, ai = e => {
+            let {
+                widgetName: t
+            } = e;
+            return t == null ? null : ii[t]?.(e) ?? null
+        }
+    }));
+async function si(e) {
+    let t = u(),
+        [{
+            createSpeechSynthesizer: n
+        }, {
+            requireAuthenticationForPronunciationAudio: r
+        }, {
+            speechSynthesizerTelemetry: i
+        }] = await Promise.all([x(() => import(`./e24a7969-k0jbuvw7t3or9edv.js`).then(e => (e.n(), e.r)), __vite__mapDeps([165, 1, 2, 3, 4, 12, 5, 6, 7, 8, 9, 13, 41])), x(() => import(`./24ecc29f-ecc8faea98snzfmo.js`).then(e => (e.t(), e.n)), __vite__mapDeps([40, 1, 2, 3, 4])), x(() => import(`./4366db25-ewe1psdg4pi5kioz.js`).then(e => (e.t(), e.r)), __vite__mapDeps([166, 1, 12, 2, 3, 4, 5, 6, 7, 8, 9, 13]))]).catch(e => {
+            throw Ne.addAction(`Failed importing widget speech synthesizer`, {
+                error_name: e instanceof Error ? e.name : typeof e
+            }), e
+        }),
+        a = n(t, e, i);
+    return {
+        ...a,
+        play: e => {
+            let {
+                available: t,
+                status: n
+            } = a.getSnapshot();
+            e.isTrusted && t && n === `idle` && r() && a.play()
+        }
+    }
+}
+var ci = e((() => {
+    ve(), g(), S()
+}));
+
+function li({
+    isDILV2: e,
+    isHermes: t,
+    isModelWrittenDil: n,
+    messageRole: r,
+    actionsDisabled: i
+}) {
+    return {
+        createSpeechSynthesizer: !e && !t && !n && r === Oe.Assistant && !i ? si : void 0
+    }
+}
+var ui = e((() => {
+    Le(), ci()
+}));
+
+function di({
+    entityCategory: e,
+    widgetName: t,
+    initialWidgetState: n
+}) {
+    if (e !== `event` || t !== `event_sidebar_widget` || typeof n?.event_id != `string` || !n.event_id) return;
+    let r = n.event_id;
+    return {
+        key: `${t}:${r}`,
+        load: () => Ee().fetchQuery({
+            queryKey: [`event-sidebar-widget`, r],
+            queryFn: () => an({
+                actionType: `event_sidebar_refresh`,
+                payload: {
+                    event_id: r
+                }
+            }),
+            staleTime: e => e.state.data?.status === `success` ? V : 0,
+            gcTime: V
+        }),
+        pendingState: fi
+    }
+}
+var V, fi, pi = e((() => {
+        E(), v(), V = 1800 * 1e3, fi = {
+            ticket_metadata: []
+        }
+    })),
+    mi, hi = e((() => {
+        m(), S(), mi = l(() => x(() => import(`./57b5cf98-b52jss81li14xa5i.js`).then(e => e.WidgetPronunciationAudio), __vite__mapDeps([167, 1, 2, 3, 4, 5, 6, 7, 8, 9, 40, 165, 12, 13, 41, 166])))
+    }));
+
+function gi() {
+    mi.prefetch()
+}
+var _i, vi, yi, bi, xi = e((() => {
+    _i = ft(), vi = n(ut()), hi(), yi = st(), bi = e => {
+        "use forget";
+        let t = (0, _i.c)(5),
+            {
+                onLoadingChange: n,
+                onPlayingChange: r,
+                playbackRequest: i
+            } = e,
+            a;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = [], t[0] = a) : a = t[0], (0, vi.useEffect)(gi, a);
+        let o;
+        return t[1] !== n || t[2] !== r || t[3] !== i ? (o = i ? (0, yi.jsx)(mi, {
+            onLoadingChange: n,
+            onPlayingChange: r,
+            requestId: i.id,
+            text: i.text
+        }, i.text) : null, t[1] = n, t[2] = r, t[3] = i, t[4] = o) : o = t[4], o
+    }
+}));
+
+function Si(e) {
+    "use forget";
+    let t = (0, Ci.c)(25),
+        {
+            clientActionLibrary: n,
+            isHermes: r,
+            isModelWrittenDil: i,
+            isValdiRendererActive: a,
+            rendererRef: o,
+            widgetName: s
+        } = e,
+        c = s === Ei && !r && !i && !a,
+        [ee, te] = (0, wi.useState)(null),
+        ne = (0, wi.useRef)(0),
+        re = (0, wi.useRef)(null),
+        ie = (0, wi.useRef)(null),
+        ae;
+    t[0] === o ? ae = t[1] : (ae = () => {
+        re.current && (re.current = null, ie.current = null, o.current?.setState({
+            audio_loading: !1,
+            audio_playing: !1
+        }, !1), te(null))
+    }, t[0] = o, t[1] = ae);
+    let oe = ae,
+        l;
+    t[2] === o ? l = t[3] : (l = (e, t) => {
+        let n = re.current;
+        !n || n.id !== e || (n.loading = t, o.current?.setState({
+            audio_loading: t
+        }, !1))
+    }, t[2] = o, t[3] = l);
+    let se = l,
+        u;
+    t[4] === o ? u = t[5] : (u = (e, t) => {
+        let n = re.current;
+        !n || n.id !== e || (n.playing = t, o.current?.setState({
+            audio_playing: t
+        }, !1))
+    }, t[4] = o, t[5] = u);
+    let ce = u,
+        le;
+    t[6] !== oe || t[7] !== c ? (le = e => {
+        let t = e.action,
+            n = t?.payload?.text;
+        if (c && t?.type !== H && (e.source.target === `pressable` || e.source.target === `horizontal_swipe_surface`)) {
+            oe();
+            return
+        }
+        if (!c || e.widgetName != null && e.widgetName !== Ei || e.source.target !== `pressable` || !t || t.type !== H || t.handler !== `client` || t.cause && t.cause !== `user` || typeof n != `string` || !n.trim()) return;
+        let r = Symbol(`flashcard-pronunciation`);
+        ie.current = {
+            token: r,
+            text: n
+        }, queueMicrotask(() => {
+            ie.current?.token === r && (ie.current = null)
+        })
+    }, t[6] = oe, t[7] = c, t[8] = le) : le = t[8];
+    let ue = le,
+        de;
+    t[9] !== oe || t[10] !== o ? (de = e => {
+        let t = ie.current;
+        if (ie.current = null, !t || t.text !== e || re.current?.loading) return;
+        if (re.current?.playing) {
+            oe();
+            return
+        }
+        let n = ne.current += 1;
+        re.current = {
+            id: n,
+            loading: !0,
+            playing: !1
+        }, o.current?.setState({
+            audio_loading: !0,
+            audio_playing: !1
+        }, !1), te({
+            id: n,
+            text: e
+        })
+    }, t[9] = oe, t[10] = o, t[11] = de) : de = t[11];
+    let fe = de,
+        pe;
+    t[12] !== n || t[13] !== c ? (pe = c ? Object.keys(n) : void 0, t[12] = n, t[13] = c, t[14] = pe) : pe = t[14];
+    let me = pe,
+        he;
+    t[15] !== se || t[16] !== ce || t[17] !== c || t[18] !== ee ? (he = c && (0, Ti.jsx)(bi, {
+        onLoadingChange: se,
+        onPlayingChange: ce,
+        playbackRequest: ee
+    }), t[15] = se, t[16] = ce, t[17] = c, t[18] = ee, t[19] = he) : he = t[19];
+    let ge = he,
+        d = c ? ue : void 0,
+        f = c ? fe : void 0,
+        p;
+    return t[20] !== ge || t[21] !== me || t[22] !== d || t[23] !== f ? (p = {
+        onInteraction: d,
+        playbackNode: ge,
+        playPronunciationAudio: f,
+        supportedClientActions: me
+    }, t[20] = ge, t[21] = me, t[22] = d, t[23] = f, t[24] = p) : p = t[24], p
+}
+var Ci, wi, Ti, Ei, H, Di = e((() => {
+    Ci = ft(), wi = n(ut()), xi(), Ti = st(), Ei = `learning_flashcards`, H = `play_pronunciation_audio`
+}));
+
+function Oi(e, t) {
+    let n = {
+            ...e
+        },
+        r = typeof n.__chatgptWidgetRefId == `string` ? n[Ai] : void 0;
+    if (r) {
+        let i = Tr(t[r]);
+        i ? n[ji] = {
+            ...Mi(e.initialState) ? e.initialState : {},
+            ...i
+        } : delete n[ji]
+    }
+    let i = Pi(n.children);
+    if (i.length === 0) return delete n.children, n;
+    let a = i.map(e => Fi(e, t));
+    return n.children = Array.isArray(n.children) ? a : a[0], n
+}
+
+function ki(e, t) {
+    return Oi(e, Mi(t) && Mi(t.widgets) ? t.widgets : {})
+}
+var Ai, ji, Mi, Ni, Pi, Fi, Ii, Li, Ri = e((() => {
+    Er(), Ai = `__chatgptWidgetRefId`, ji = `__chatgptWidgetViewState`, Mi = e => !!e && typeof e == `object` && !Array.isArray(e), Ni = e => Mi(e) && typeof e.type == `string`, Pi = e => e == null ? [] : Array.isArray(e) ? e : [e], Fi = (e, t) => Ni(e) ? Oi(e, t) : e, Ii = e => !e || typeof e != `object` ? e : Object.fromEntries(Object.entries(e).filter(([e]) => e !== Ai)), Li = ({
+        payload: e,
+        effectiveWidgetRefId: t,
+        messageId: n,
+        effectiveRefIndex: r
+    }) => (e && typeof e == `object` && typeof e.__chatgptWidgetRefId == `string` ? e.__chatgptWidgetRefId : void 0) ?? t ?? (n && r !== void 0 ? `${n}:${r}` : void 0)
+}));
+
+function zi(e) {
+    let {
+        message: t,
+        refIndex: n,
+        widgetRefId: r,
+        appData: i
+    } = e, a = t?.metadata?.content_references, o = n ?? Ui(r, t?.id), s = Wi(a, o) ?? Hi(a);
+    return {
+        dilUrl: Bi(s?.dil_url),
+        widgetName: Bi(s?.name),
+        widgetContainsPii: Vi(s?.contains_pii),
+        hideWidgetFeedback: Vi(s?.hide_widget_feedback),
+        loggingMetadata: Lr(i)
+    }
+}
+var Bi, Vi, Hi, Ui, Wi, Gi = e((() => {
+        Rr(), Bi = e => typeof e == `string` ? e : void 0, Vi = e => typeof e == `boolean` ? e : void 0, Hi = e => e?.find(e => e.type === `dil`), Ui = (e, t) => {
+            if (e === void 0 || t === void 0 || !e.startsWith(`${t}:`)) return;
+            let n = Number.parseInt(e.slice(t.length + 1), 10);
+            return Number.isInteger(n) ? n : void 0
+        }, Wi = (e, t) => {
+            if (e === void 0 || t === void 0 || t < 0 || t >= e.length) return;
+            let n = e[t];
+            if (n?.type === `dil`) return n
+        }
+    })),
+    U = t({
+        DILWidget: () => wa
+    });
+
+function Ki(e, t) {
+    if (!ga(t)) return e;
+    let n;
+    if (`props` in e) {
+        let {
+            children: t,
+            props: r = {},
+            ...i
+        } = e;
+        n = {
+            ...i,
+            ...r
+        }
+    } else {
+        let {
+            children: t,
+            ...r
+        } = e;
+        n = r
+    }
+    let r = e.children ?? [],
+        i = (Array.isArray(r) ? r : [r]).filter(e => e != null).map(e => Ki(e, t)),
+        {
+            type: a,
+            ...o
+        } = n;
+    if (typeof a != `string`) throw Error(`Invalid DIL node: missing widget type`);
+    return {
+        ...o,
+        type: a,
+        children: i
+    }
+}
+
+function qi(e) {
+    return e?.forkFromSharedPost === !0 || e?.continuingFromSharedPostId != null
+}
+
+function Ji() {
+    yn()
+}
+
+function Yi(e) {
+    return e.message
+}
+
+function Xi(e) {
+    return e?.mode
+}
+
+function Zi(e) {
+    return je(fa, e)
+}
+
+function Qi(e) {
+    let [t] = e;
+    return /^field_\d+$/.test(t)
+}
+
+function $i(e) {
+    return e + 1
+}
+
+function ea() {
+    return ``
+}
+
+function ta(e) {
+    if (document.visibilityState !== `visible`) return !1;
+    let t = e.state.error;
+    if (Sa(t)) return !1;
+    if (Ca(t)) return 1e3;
+    let n = e.state.data;
+    if (n) {
+        let e = n.next_poll_after_ms;
+        return e != null && typeof e == `number` && e > 0 && Math.max(1e3, e)
+    }
+    return 5e3
+}
+
+function na(e, t) {
+    return Sa(t) ? !1 : Ca(t) ? e < 5 : e < 2
+}
+var ra, W, G, ia, aa, oa, sa, ca, la, ua, da, fa, pa, ma, ha, ga, _a, va, ya, ba, xa, Sa, Ca, wa, Ta = e((() => {
+    ra = ft(), Le(), se(), ye(), $e(), Fn(), rt(), Ie(), ue(), w(), Bt(), be(), dn(), vt(), Qn(), Jn(), _n(), nr(), oi(), yt(), kt(), _r(), j(), Ct(), P(), Tn(), C(), It(), gt(), Gn(), Ln(), Kt(), f(), Cr(), k(), ui(), pt(), p(), T(), zt(), Tt(), Re(), Dt(), d(), xr(), yr(), Ft(), Fe(), pi(), Sn(), In(), o(), Se(), oe(), He(), ot(), _(), Rt(), qe(), De(), h(), Me(), ne(), y(), xe(), Pt(), Ce(), Yn(), Un(), O(), Bn(), nn(), cn(), Xn(), m(), dt(), W = n(ut()), Ar(), I(), F(), Fr(), cr(), pn(), E(), Lt(), Di(), M(), Er(), Ri(), bn(), ar(), Gi(), pr(), N(), ce(), it(), b(), G = st(), S(), ia = !1, aa = null, oa = l(() => A(x(() => import(`./bd3d9ae3-n2n9en3ft792ksu0.js`).then(e => e.ValdiDILWidgetRenderer), __vite__mapDeps([168, 1, 2, 3, 4, 40, 165, 12, 5, 6, 7, 8, 9, 13, 41, 166, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 47, 182, 183, 184, 185]))), {
+        fallback: Vn
+    }), sa = null, ca = e => {
+        "use forget";
+        let t = (0, ra.c)(13),
+            n, r, i, a;
+        t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4]) : ({
+            fallback: i,
+            contentReferenceStartIndex: n,
+            ...r
+        } = e, a = ai(r), t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a);
+        let o = a,
+            s = (0, W.useContext)(_t)?.complete,
+            c = o != null && r.widgetState?.animate_reveal === !0,
+            ee, te;
+        t[5] !== s || t[6] !== c || t[7] !== n ? (ee = () => {
+            c && n !== void 0 && s?.(n)
+        }, te = [c, n, s], t[5] = s, t[6] = c, t[7] = n, t[8] = ee, t[9] = te) : (ee = t[8], te = t[9]), (0, W.useEffect)(ee, te);
+        let ne;
+        return t[10] !== i || t[11] !== o ? (ne = o == null ? i : (0, G.jsxs)(G.Fragment, {
+            children: [(0, G.jsx)(ma, {}), o]
+        }), t[10] = i, t[11] = o, t[12] = ne) : ne = t[12], ne
+    }, la = () => () => {}, ua = () => 0, da = () => x(() => import(`./a5428737-k52re5tzvgyjtyrw.js`), __vite__mapDeps([186, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 187])), fa = l(() => x(() => import(`./701a322e-eb74qrpkrrvvbn8g.js`).then(e => e.VideoLightboxModal), __vite__mapDeps([188, 1, 3, 189, 2, 4, 190, 191, 5, 6, 7, 8, 9, 192, 193]))), pa = e => {
+        "use forget";
+        let t = (0, ra.c)(4),
+            {
+                widget: n
+            } = e,
+            r;
+        t[0] === n ? r = t[1] : (r = Zn(n), t[0] = n, t[1] = r);
+        let i = r,
+            a;
+        return t[2] === i ? a = t[3] : (a = i ? (0, G.jsx)(`div`, {
+            children: i
+        }) : null, t[2] = i, t[3] = a), a
+    }, ma = () => {
+        "use forget";
+        return zn(), null
+    }, ha = e => e.textContent?.trim() ? !0 : !!e.querySelector([`[data-w-component]`, `a[href]`, `button`, `canvas`, `img`, `input`, `select`, `svg`, `textarea`, `video`, `[role]`].join(`,`)), ga = e => typeof e == `string` && e.startsWith(`1`), _a = e => {
+        if (!e || typeof e != `object`) return null;
+        let t = e.props;
+        if (!t || typeof t != `object`) return null;
+        let n = t.payload;
+        return n && typeof n == `object` && !Array.isArray(n) ? n : null
+    }, va = (e, t) => {
+        let n = e.onClickAction;
+        if (n && typeof n == `object` && n.type === t) {
+            let e = _a(n);
+            if (e) return e
+        }
+        let r = e.children,
+            i = Array.isArray(r) ? r : r ? [r] : [];
+        for (let e of i) {
+            if (!e || typeof e != `object`) continue;
+            let n = va(e, t);
+            if (n) return n
+        }
+        return null
+    }, ya = (e, t) => {
+        if (e)
+            for (let n of t) {
+                let t = e[n];
+                if (typeof t == `string` && t) return t
+            }
+    }, ba = e => !ya(e, [`card_id`, `cardId`]), xa = e => {
+        if (typeof e.detail == `string`) return e.detail;
+        if (e.detail && typeof e.detail == `object`) {
+            let t = e.detail.message ?? e.detail.error?.message ?? e.detail.error;
+            if (typeof t == `string`) return t
+        }
+        return e.message
+    }, Sa = e => !(e instanceof me) || e.status !== 404 ? !1 : xa(e) === `Not found`, Ca = e => !(e instanceof me) || e.status !== 404 ? !1 : xa(e) === `Message not found`, wa = e => {
+        "use forget";
+        let t = (0, ra.c)(598),
+            {
+                dil: n,
+                dilVersion: o,
+                dilUrl: ne,
+                entryPointId: oe,
+                feedbackConfig: l,
+                rootWidget: se,
+                widgetRefId: u,
+                widgetType: ce,
+                widgetName: ue,
+                widgetContainsPii: me,
+                refIndex: d,
+                contentReferenceStartIndex: f
+            } = e,
+            p = Ve(),
+            m = on(!1),
+            ve;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (ve = fe(), t[0] = ve) : ve = t[0];
+        let ye = ve,
+            be = Ze(),
+            xe = ee(),
+            {
+                disableExternalMedia: Se,
+                forceDarkMode: Ce,
+                forceSandboxFileDownload: Ee
+            } = wn(),
+            De;
+        t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (De = {
+            calendarPreferenceFeatureEnabled: ia,
+            CalendarPreferenceModal: aa
+        }, t[1] = De) : De = t[1];
+        let je = Or(De),
+            Me = Nn(),
+            Ne = _e(),
+            Fe = Kn(),
+            Ie, Le;
+        t[2] !== n || t[3] !== o || t[4] !== se ? (Le = se ?? (n && !Mt(n) ? Ki(n, o) : n), t[2] = n, t[3] = o, t[4] = se, t[5] = Le) : Le = t[5];
+        let Re = Le;
+        if (!Re) throw Error(`DILWidget requires either a dil or rootWidget`);
+        Ie = Re;
+        let h = Ie,
+            He;
+        t[6] === h ? He = t[7] : (He = Mt(h), t[6] = h, t[7] = He);
+        let g = He,
+            _ = jt(h),
+            qe = g ? h.component : h.type,
+            $e = (0, W.useContext)(_t),
+            rt = $e?.complete,
+            v = _?.animate_reveal === !0 && typeof _?.reveal_complete == `boolean`,
+            it = (g ? void 0 : h.theme) ?? (Ce ? `dark` : xe) ?? `light`,
+            y = (0, W.useRef)(null),
+            ot = (0, W.useRef)(null),
+            st = (0, W.useRef)(!1),
+            b = (0, W.useRef)(null),
+            ut;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (ut = new Set, t[8] = ut) : ut = t[8];
+        let x = (0, W.useRef)(ut),
+            [S, dt] = (0, W.useState)(!1),
+            [ft, pt] = (0, W.useState)(!1),
+            [gt, vt] = (0, W.useState)(!1),
+            [yt, Ct] = (0, W.useState)(!1),
+            [Tt, Dt] = (0, W.useState)(!0),
+            [kt, Pt] = (0, W.useState)(),
+            [Ft, It] = (0, W.useState)(0),
+            Lt = (0, W.useRef)(null),
+            Rt = (0, W.useRef)(null),
+            zt = (0, W.useRef)(!1),
+            Bt;
+        t[9] !== h || t[10] !== it ? (Bt = {
+            ...h,
+            theme: it
+        }, t[9] = h, t[10] = it, t[11] = Bt) : Bt = t[11];
+        let C = Bt,
+            Kt;
+        t[12] === o ? Kt = t[13] : (Kt = ga(o), t[12] = o, t[13] = Kt);
+        let nn = !Kt,
+            cn = Mt(n) ? void 0 : nn ? se ?? n : n,
+            {
+                openThreadSidebar: dn
+            } = qt(p),
+            w = Dn(),
+            pn = (0, W.useContext)(wr),
+            T = w?.entityCategory === `ledger_detail_sidebar` ? pn?.sensitiveValuesHidden : void 0,
+            E = (0, W.useContext)(En),
+            _n = (0, W.useId)(),
+            yn = (0, W.useContext)(he),
+            bn = ae(),
+            Sn = yn.postWithProfile?.post,
+            Tn = Sn?.permalink ?? void 0,
+            kn = yn.postWithProfile?.post.id,
+            D = E?.message,
+            An = oe ?? D?.id ?? _n,
+            jn = E?.isActivelyStreaming ?? !1,
+            O = !!D?.metadata?.chatgpt_sdk?.is_custom_agent,
+            Fn;
+        t[14] !== jn || t[15] !== O || t[16] !== D ? (Fn = jn && !O && D != null && D.metadata?.reasoning_status == null && Pn(D), t[14] = jn, t[15] = O, t[16] = D, t[17] = Fn) : Fn = t[17];
+        let In = Fn,
+            Ln = E?.analyticsMetadata.turnIndex,
+            zn = vn(E?.analyticsMetadata),
+            Bn;
+        bb0: {
+            if (Array.isArray(E?.contentReferences)) {
+                Bn = E.contentReferences;
+                break bb0
+            }
+            let e = D?.metadata?.content_references,
+                n;t[18] === e ? n = t[19] : (n = Array.isArray(e) ? e : [], t[18] = e, t[19] = n),
+            Bn = n
+        }
+        let Vn = Bn,
+            k = D?.metadata?.model_dil?.embedded_widgets,
+            Un = g ? h.appData : void 0,
+            Gn;
+        t[20] !== D || t[21] !== d || t[22] !== Un || t[23] !== u ? (Gn = zi({
+            message: D,
+            refIndex: d,
+            widgetRefId: u,
+            appData: Un
+        }), t[20] = D, t[21] = d, t[22] = Un, t[23] = u, t[24] = Gn) : Gn = t[24];
+        let Jn = Gn,
+            A = ue ?? Jn.widgetName,
+            Yn = Je() ? di({
+                entityCategory: w?.entityCategory,
+                widgetName: A,
+                initialWidgetState: _
+            }) : void 0,
+            Xn = Yn?.key,
+            [Zn, Qn] = (0, W.useState)(),
+            nr = nt(async () => Yn?.load());
+        (0, W.useEffect)(() => {
+            if (!Xn) return;
+            let e = !0;
+            return nr().then(t => {
+                e && t?.status === `success` && t.response.data && Qn({
+                    key: Xn,
+                    state: t.response.data
+                })
+            }), () => {
+                e = !1
+            }
+        }, [Xn, nr]);
+        let j = bt(A),
+            ar = fn(),
+            M = en() && !Mt(C) && j?.getOwnership(_) !== `shared`,
+            cr;
+        t[25] === D ? cr = t[26] : (cr = Ut(D), t[25] = D, t[26] = cr);
+        let N = cr,
+            pr;
+        t[27] === D ? pr = t[28] : (pr = At(D), t[27] = D, t[28] = pr);
+        let _r = pr,
+            P = N || ar,
+            yr;
+        t[29] !== f || t[30] !== O || t[31] !== P || t[32] !== v || t[33] !== M || t[34] !== $e ? (yr = v && $e?.animate === !0 && f !== void 0 && !$e.completed.has(f) && !M && !P && !O, t[29] = f, t[30] = O, t[31] = P, t[32] = v, t[33] = M, t[34] = $e, t[35] = yr) : yr = t[35];
+        let xr = yr,
+            Cr = P || E?.analyticsMetadata.isGenui === !0,
+            Er = D?.metadata?.chatgpt_sdk?.custom_agent?.invocation_type,
+            Ar = Er === `api` || Er === `slack`,
+            F = E?.clientThreadId,
+            Fr;
+        bb1: {
+            if (F) {
+                let e;
+                t[36] === F ? e = t[37] : (e = Qe(F), t[36] = F, t[37] = e), Fr = e;
+                break bb1
+            }
+            Fr = p
+        }
+        let I = Fr,
+            Lr = Ue(I?.id, qi),
+            Rr = D?.metadata?.shared_dil_provenance != null,
+            zr = bn || Lr || Rr,
+            Br = i(Ae),
+            Vr;
+        t[38] !== p || t[39] !== D ? (Vr = () => !p || !D?.id ? !1 : Gt({
+            type: `hermes`,
+            messageId: D.id
+        }, un(p)), t[38] = p, t[39] = D, t[40] = Vr) : Vr = t[40];
+        let Hr = i(Vr),
+            Ur;
+        t[41] !== Ar || t[42] !== O || t[43] !== Hr || t[44] !== Br ? (Ur = O ? {
+            autoOpenHermesSidebar: Br,
+            hideHermesSourcesButton: Ar,
+            hermesSidebarOpen: Hr
+        } : void 0, t[41] = Ar, t[42] = O, t[43] = Hr, t[44] = Br, t[45] = Ur) : Ur = t[45];
+        let Wr = Ur,
+            L = ke(F),
+            R = D?.id,
+            Gr;
+        t[46] !== j || t[47] !== R ? (Gr = e => {
+            let t = e?.continuingSharedConversationLastMessageId;
+            return j == null || !t || !R ? !1 : e.tree.getBranchFromLeaf(t).some(e => e.message.id === R)
+        }, t[46] = j, t[47] = R, t[48] = Gr) : Gr = t[48];
+        let Kr = Ue(F, Gr),
+            qr;
+        t[49] !== Kr || t[50] !== I ? (qr = () => Kr && I ? On(I) : void 0, t[49] = Kr, t[50] = I, t[51] = qr) : qr = t[51];
+        let Jr = i(qr),
+            Yr = L ?? I?.id,
+            z;
+        t[52] !== Yr || t[53] !== I ? (z = () => Be(Yr) || I != null && re(I), t[52] = Yr, t[53] = I, t[54] = z) : z = t[54];
+        let Xr = i(z),
+            B = D?.author.role === Oe.Assistant && !N && D.metadata?.chatgpt_sdk == null && m != null,
+            Zr = B && !P;
+        m?.store;
+        let Qr = m?.store,
+            $r = Tn != null,
+            ei;
+        t[55] !== R || t[56] !== I || t[57] !== Qr || t[58] !== $r ? (ei = {
+            store: Qr,
+            conversation: I,
+            messageId: R,
+            sharedPost: $r
+        }, t[55] = R, t[56] = I, t[57] = Qr, t[58] = $r, t[59] = ei) : ei = t[59];
+        let ti = ei,
+            ni;
+        t[60] !== R || t[61] !== Zr ? (ni = e => Zr && sr(e, R), t[60] = R, t[61] = Zr, t[62] = ni) : ni = t[62];
+        let ri = Ue(I?.id, ni),
+            ii;
+        t[63] !== I || t[64] !== Zr ? (ii = () => Zr && I != null && rn(I), t[63] = I, t[64] = Zr, t[65] = ii) : ii = t[65];
+        let ai = i(ii),
+            oi;
+        t[66] !== P || t[67] !== m?.store || t[68] !== ti || t[69] !== Zr ? (oi = () => P ? m?.store.getUploadActionCapabilities() ?? 0 : Zr ? tt(() => dr(ti)) : 0, t[66] = P, t[67] = m?.store, t[68] = ti, t[69] = Zr, t[70] = oi) : oi = t[70];
+        let si = (0, W.useSyncExternalStore)((P ? m?.store.subscribeToUploadActionCapabilities : m?.store.subscribeToSharedProps) ?? la, oi, ua),
+            ci = P || ri && !ai ? si : 0,
+            {
+                serverThreadId: ui,
+                isSharedConversation: V,
+                ownerUserId: fi,
+                projectId: pi
+            } = wt(I, R),
+            mi, hi;
+        t[71] === Symbol.for(`react.memo_cache_sentinel`) ? (mi = () => () => {
+            for (let e of x.current) e.abort();
+            x.current.clear()
+        }, hi = [], t[71] = mi, t[72] = hi) : (mi = t[71], hi = t[72]), (0, W.useEffect)(mi, hi);
+        let gi;
+        t[73] !== _r || t[74] !== Ee || t[75] !== be || t[76] !== V || t[77] !== R || t[78] !== fi || t[79] !== pi || t[80] !== ui || t[81] !== I ? (gi = (e, t) => {
+            if (!(!_r || !R || !ui)) return mr({
+                activeDownloadControllers: x.current,
+                forceSandboxFileDownload: Ee,
+                getErrorMessage: be,
+                isSharedConversation: V,
+                messageId: R,
+                options: t,
+                ownerUserId: fi,
+                path: e,
+                projectId: pi,
+                sandboxServerThreadId: ui,
+                sourceConversation: I,
+                toaster: ye
+            })
+        }, t[73] = _r, t[74] = Ee, t[75] = be, t[76] = V, t[77] = R, t[78] = fi, t[79] = pi, t[80] = ui, t[81] = I, t[82] = gi) : gi = t[82];
+        let _i = gi,
+            vi;
+        t[83] !== F || t[84] !== Vn || t[85] !== jn || t[86] !== R || t[87] !== zn || t[88] !== Ln ? (vi = e => rr({
+            hostWidget: e,
+            contentReferences: Vn,
+            isActivelyStreaming: jn,
+            messageId: R,
+            clientThreadId: F,
+            trackContentReferenceEvent: zn,
+            turnIndex: Ln
+        }), t[83] = F, t[84] = Vn, t[85] = jn, t[86] = R, t[87] = zn, t[88] = Ln, t[89] = vi) : vi = t[89];
+        let yi = vi,
+            bi;
+        t[90] !== Vn || t[91] !== k || t[92] !== d || t[93] !== C ? (bi = er({
+            contentReferences: Vn,
+            embeddedWidgets: k,
+            effectiveRefIndex: d,
+            widget: C
+        }), t[90] = Vn, t[91] = k, t[92] = d, t[93] = C, t[94] = bi) : bi = t[94];
+        let xi = !bi,
+            Ci;
+        t[95] === Symbol.for(`react.memo_cache_sentinel`) ? (Ci = [], t[95] = Ci) : Ci = t[95], (0, W.useEffect)(Ji, Ci);
+        let wi = !!(R && L),
+            Ti = ne ?? Jn.dilUrl,
+            Ei = ce ?? `dil`,
+            H = j == null ? void 0 : Jr,
+            Di = H === `pending` || H === `failed`,
+            Oi;
+        t[96] !== F || t[97] !== L || t[98] !== I ? (Oi = async () => {
+            if (!F || !L || !I || tt(() => On(I)) !== `failed`) return;
+            let e = Xe(F),
+                t = e?.continuingSharedConversationLastMessageId;
+            if (!e || !t) return;
+            let n = St(e.tree.getBranchFromLeaf(t).map(Yi));
+            if (n.length !== 0) {
+                Pe(() => {
+                    On.set(I, `pending`)
+                });
+                try {
+                    await xt({
+                        clientThreadId: F,
+                        serverThreadId: L,
+                        sourceMessageIds: n
+                    })
+                } catch {}
+            }
+        }, t[96] = F, t[97] = L, t[98] = I, t[99] = Oi) : Oi = t[99];
+        let Ai = Oi,
+            ji;
+        t[100] !== A || t[101] !== O || t[102] !== P || t[103] !== M ? (ji = {
+            clientActionLibrary: kr,
+            isHermes: O,
+            isModelWrittenDil: P,
+            isValdiRendererActive: M,
+            rendererRef: y,
+            widgetName: A
+        }, t[100] = A, t[101] = O, t[102] = P, t[103] = M, t[104] = ji) : ji = t[104];
+        let {
+            onInteraction: Mi,
+            playbackNode: Ni,
+            playPronunciationAudio: Pi,
+            supportedClientActions: Fi
+        } = Si(ji);
+        D?.author.role;
+        let Ri;
+        bb2: {
+            if (!P && D?.author.role !== Oe.Assistant) {
+                Ri = Fi;
+                break bb2
+            }
+            let e = Fi ?? Dr,
+                n;
+            if (t[105] !== e || t[106] !== P || t[107] !== ci) {
+                let r;
+                t[109] !== P || t[110] !== ci ? (r = e => !Pr(e) || (P || e === `request_file_upload` || e === `request_media_upload`) && fr(e, ci), t[109] = P, t[110] = ci, t[111] = r) : r = t[111], n = e.filter(r), t[105] = e, t[106] = P, t[107] = ci, t[108] = n
+            } else n = t[108];Ri = n
+        }
+        let Bi = Ri,
+            Vi = me ?? Jn.widgetContainsPii,
+            Hi = _?.disable_actions_during_active_turn === !0,
+            Ui = Hi && Xr,
+            Wi = sn(),
+            Gi = E?.message?.metadata?.view_state,
+            U = P && !g && (k?.length ?? 0) > 0,
+            fa;
+        t[112] !== U || t[113] !== Gi?.root ? (fa = U ? Tr(Gi?.root) : void 0, t[112] = U, t[113] = Gi?.root, t[114] = fa) : fa = t[114];
+        let _a = fa,
+            ya;
+        t[115] !== k || t[116] !== P || t[117] !== M || t[118] !== Gi || t[119] !== C ? (ya = P && !Mt(C) && Array.isArray(k) && k.length > 0 ? ki(C, Gi) : C, t[115] = k, t[116] = P, t[117] = M, t[118] = Gi, t[119] = C, t[120] = ya) : ya = t[120];
+        let xa = ya,
+            Sa = u && Gi?.widgets ? Gi.widgets[u] : void 0,
+            Ca = Yn ? Zn?.key === Yn.key ? Zn.state : Yn.pendingState : w?.widgetStateOverride,
+            wa;
+        bb3: {
+            let e;t[121] === Sa ? e = t[122] : (e = Tr(Sa), t[121] = Sa, t[122] = e);
+            let n = e;
+            if (Ca == null) {
+                wa = n;
+                break bb3
+            }
+            let r;t[123] === n ? r = t[124] : (r = n ?? {}, t[123] = n, t[124] = r);
+            let i;t[125] !== r || t[126] !== Ca ? (i = {
+                ...r,
+                ...Ca
+            }, t[125] = r, t[126] = Ca, t[127] = i) : i = t[127],
+            wa = i
+        }
+        let Ta = wa,
+            Ea;
+        t[128] !== Ta || t[129] !== _ ? (Ea = xn({
+            decodedWidgetState: Ta,
+            initialWidgetState: _
+        }), t[128] = Ta, t[129] = _, t[130] = Ea) : Ea = t[130];
+        let Da = Ea,
+            Oa;
+        t[131] !== Da || t[132] !== kt ? (Oa = kt == null ? Da : {
+            ...Da ?? {},
+            ...kt
+        }, t[131] = Da, t[132] = kt, t[133] = Oa) : Oa = t[133];
+        let ka = Oa,
+            Aa;
+        t[134] !== xr || t[135] !== ka || t[136] !== _ || t[137] !== v ? (Aa = v && !xr ? {
+            ..._,
+            ...ka,
+            animate_reveal: !1,
+            reveal_complete: !0
+        } : ka, t[134] = xr, t[135] = ka, t[136] = _, t[137] = v, t[138] = Aa) : Aa = t[138];
+        let K = Aa,
+            ja = U ? _a : K,
+            Ma = Sa !== void 0 || Ca != null,
+            Na;
+        t[139] !== A || t[140] !== _ || t[141] !== Lr || t[142] !== K || t[143] !== L ? (Na = L != null && !Lr && (bt(A)?.getOwnership(K) ?? bt(A)?.getOwnership(_)) === `private`, t[139] = A, t[140] = _, t[141] = Lr, t[142] = K, t[143] = L, t[144] = Na) : Na = t[144];
+        let Pa = Na,
+            Fa;
+        t[145] !== Pa || t[146] !== kn ? (Fa = kn != null && !Pa ? {
+            surfaceType: `shared_post`,
+            surfaceId: kn
+        } : void 0, t[145] = Pa, t[146] = kn, t[147] = Fa) : Fa = t[147];
+        let q = Fa,
+            Ia = Nt(),
+            La;
+        t[148] !== F || t[149] !== A || t[150] !== R || t[151] !== q || t[152] !== d || t[153] !== M || t[154] !== L || t[155] !== An || t[156] !== Ft || t[157] !== H || t[158] !== u ? (La = {
+            clientThreadId: F,
+            serverThreadId: L,
+            messageId: R,
+            widgetRefId: u,
+            refIndex: d,
+            feedbackWidgetName: A,
+            publicActionContext: q,
+            renderDilWithValdi: M,
+            valdiEntryPointId: An,
+            valdiServerActionRevision: Ft,
+            widgetAdoption: H
+        }, t[148] = F, t[149] = A, t[150] = R, t[151] = q, t[152] = d, t[153] = M, t[154] = L, t[155] = An, t[156] = Ft, t[157] = H, t[158] = u, t[159] = La) : La = t[159];
+        let J = La,
+            Ra;
+        t[160] !== Ia || t[161] !== J ? (Ra = e => Ia() && J === e, t[160] = Ia, t[161] = J, t[162] = Ra) : Ra = t[162];
+        let Y = nt(Ra),
+            za = (0, W.useContext)(br),
+            Ba = !g && (!zr || Pa) && I != null && L != null && R != null,
+            X = Ba && !P && d != null,
+            Va;
+        t[163] !== p || t[164] !== I ? (Va = I ?? p ?? Qe(ge), t[163] = p, t[164] = I, t[165] = Va) : Va = t[165];
+        let Ha = X && !jn,
+            Ua = X ? R : ``,
+            Wa = X ? d : -1,
+            Ga;
+        t[166] !== A || t[167] !== Ua || t[168] !== Wa ? (Ga = {
+            messageId: Ua,
+            contentReferenceIndex: Wa,
+            widgetName: A
+        }, t[166] = A, t[167] = Ua, t[168] = Wa, t[169] = Ga) : Ga = t[169];
+        let Ka;
+        t[170] !== Va || t[171] !== Ha || t[172] !== Ga ? (Ka = {
+            category: Zt.Dil,
+            conversation: Va,
+            isCategoryEnabled: !0,
+            isReady: Ha,
+            target: Ga
+        }, t[170] = Va, t[171] = Ha, t[172] = Ga, t[173] = Ka) : Ka = t[173];
+        let {
+            action: Z,
+            launcher: qa,
+            targetIdentity: Ja
+        } = Sr(Ka), Ya = X ? Z.isVisible : !jn && !za && !V, Xa;
+        t[174] !== Ba || t[175] !== Z || t[176] !== Ja || t[177] !== Ya || t[178] !== X || t[179] !== I ? (Xa = () => Ye(() => {
+            pe(), I && Yt(I);
+            let e = b.current;
+            if (e) {
+                if (!(e.onReady ? Ba : X) || !e.onReady && e.targetIdentity !== Ja || e.isSelectionValid?.() === !1) {
+                    b.current = null, e.onReady?.(!1);
+                    return
+                }(e.onReady ? !Ya : !Z.isVisible) || (b.current = null, e.onReady ? e.onReady(!0) : Z.onSelect())
+            }
+        }), t[174] = Ba, t[175] = Z, t[176] = Ja, t[177] = Ya, t[178] = X, t[179] = I, t[180] = Xa) : Xa = t[180];
+        let Za;
+        t[181] !== Ba || t[182] !== Z || t[183] !== Ja || t[184] !== Ya || t[185] !== X || t[186] !== I || t[187] !== J ? (Za = [Ba, Z, Ja, Ya, X, I, J], t[181] = Ba, t[182] = Z, t[183] = Ja, t[184] = Ya, t[185] = X, t[186] = I, t[187] = J, t[188] = Za) : Za = t[188], (0, W.useEffect)(Xa, Za);
+        let Qa, $a;
+        t[189] === Symbol.for(`react.memo_cache_sentinel`) ? (Qa = () => () => {
+            b.current?.onReady?.(!1), b.current = null
+        }, $a = [], t[189] = Qa, t[190] = $a) : (Qa = t[189], $a = t[190]), (0, W.useEffect)(Qa, $a);
+        let eo = E?.message?.metadata?.genui_refresh,
+            to = D?.metadata?.is_complete ?? (!D?.status || D.status !== `in_progress`),
+            no = !Jn.hideWidgetFeedback && !P && Wi && wi && to && S && !O,
+            ro = !!sa && !P && !O,
+            io = o ?? `unknown`,
+            ao = Jn.loggingMetadata,
+            oo;
+        t[191] === o ? oo = t[192] : (oo = ga(o), t[191] = o, t[192] = oo);
+        let so = !!Ti,
+            co;
+        t[193] !== F || t[194] !== Jn.loggingMetadata || t[195] !== Ti || t[196] !== Vi || t[197] !== A || t[198] !== Ei || t[199] !== Ma || t[200] !== R || t[201] !== d || t[202] !== L || t[203] !== io || t[204] !== oo || t[205] !== so || t[206] !== u || t[207] !== qe ? (co = {
+            error_boundary: `DILWidgetRenderer`,
+            dil_version: io,
+            widget_renderer_type: qe,
+            widget_type: Ei,
+            widget_name: A,
+            loggingMetadata: ao,
+            widget_contains_pii: Vi,
+            widget_ref_id: u,
+            ref_index: d,
+            message_id: R,
+            client_thread_id: F,
+            server_thread_id: L,
+            has_view_state: Ma,
+            is_legacy_dil_version: oo,
+            dil_url: Ti,
+            dil_url_present: so
+        }, t[193] = F, t[194] = Jn.loggingMetadata, t[195] = Ti, t[196] = Vi, t[197] = A, t[198] = Ei, t[199] = Ma, t[200] = R, t[201] = d, t[202] = L, t[203] = io, t[204] = oo, t[205] = so, t[206] = u, t[207] = qe, t[208] = co) : co = t[208];
+        let lo = co,
+            uo;
+        t[209] === Symbol.for(`react.memo_cache_sentinel`) ? (uo = () => {
+            Rt.current = null
+        }, t[209] = uo) : uo = t[209];
+        let fo = uo,
+            po;
+        t[210] === lo ? po = t[211] : (po = {
+            context: lo,
+            onFailure: fo
+        }, t[210] = lo, t[211] = po);
+        let {
+            onInitialRenderCommit: mo,
+            onRenderFailure: ho,
+            onSoftRenderFailure: go
+        } = hr(po), _o;
+        t[212] !== ho || t[213] !== vt ? (_o = (...e) => {
+            let t = e;
+            Lt.current?.(), Lt.current = null, vt(!0), ho(...t)
+        }, t[212] = ho, t[213] = vt, t[214] = _o) : _o = t[214];
+        let vo = _o,
+            yo, bo;
+        t[215] === Symbol.for(`react.memo_cache_sentinel`) ? (yo = () => () => {
+            Lt.current?.(), Lt.current = null
+        }, bo = [], t[215] = yo, t[216] = bo) : (yo = t[215], bo = t[216]), (0, W.useEffect)(yo, bo);
+        let xo;
+        t[217] !== go || t[218] !== Ct ? (xo = (...e) => {
+            let t = e;
+            Ct(!0), go(...t)
+        }, t[217] = go, t[218] = Ct, t[219] = xo) : xo = t[219];
+        let So = xo,
+            Co;
+        t[220] === vo ? Co = t[221] : (Co = e => {
+            ur(vo, e)
+        }, t[220] = vo, t[221] = Co);
+        let wo = Co,
+            To;
+        t[222] === dt ? To = t[223] : (To = e => {
+            y.current = e, dt(e != null)
+        }, t[222] = dt, t[223] = To);
+        let Eo = To,
+            Do;
+        t[224] !== F || t[225] !== j || t[226] !== R || t[227] !== q || t[228] !== d || t[229] !== I ? (Do = e => {
+            if (!F || !I || !R || d === void 0 || q?.surfaceType !== `shared_post`) return;
+            let t = j?.capture({
+                messageId: R,
+                contentReferenceIndex: d,
+                state: e
+            });
+            if (!t) return;
+            let n = Xe(F);
+            !n?.forkFromSharedPost || n.continuingFromSharedPostId !== q.surfaceId || Te(ht(I), t) || Pe(() => {
+                ht.set(I, t)
+            })
+        }, t[224] = F, t[225] = j, t[226] = R, t[227] = q, t[228] = d, t[229] = I, t[230] = Do) : Do = t[230];
+        let Oo = Do,
+            ko;
+        t[231] !== Oo || t[232] !== j || t[233] !== q?.surfaceType ? (ko = () => {
+            if (q?.surfaceType !== `shared_post` || j == null) return;
+            let e = y.current;
+            if (e) return Oo(e.getState()), e.subscribe(Oo)
+        }, t[231] = Oo, t[232] = j, t[233] = q?.surfaceType, t[234] = ko) : ko = t[234];
+        let Ao;
+        t[235] !== Oo || t[236] !== j || t[237] !== S || t[238] !== q ? (Ao = [Oo, j, S, q], t[235] = Oo, t[236] = j, t[237] = S, t[238] = q, t[239] = Ao) : Ao = t[239], (0, W.useEffect)(ko, Ao);
+        let jo;
+        t[240] !== xr || t[241] !== rt || t[242] !== f || t[243] !== gt || t[244] !== yt || t[245] !== v ? (jo = () => {
+            if (!v || f === void 0 || !rt) return;
+            if (!xr || gt || yt) {
+                rt(f);
+                return
+            }
+            let e = y.current;
+            if (!e) return;
+            let t = () => {
+                e.getState().reveal_complete === !0 && rt(f)
+            };
+            return t(), e.subscribe(t)
+        }, t[240] = xr, t[241] = rt, t[242] = f, t[243] = gt, t[244] = yt, t[245] = v, t[246] = jo) : jo = t[246];
+        let Mo;
+        t[247] !== xr || t[248] !== rt || t[249] !== f || t[250] !== gt || t[251] !== yt || t[252] !== S || t[253] !== v ? (Mo = [v, f, rt, xr, S, gt, yt], t[247] = xr, t[248] = rt, t[249] = f, t[250] = gt, t[251] = yt, t[252] = S, t[253] = v, t[254] = Mo) : Mo = t[254], (0, W.useEffect)(jo, Mo);
+        let No;
+        t[255] === Dt ? No = t[256] : (No = () => {
+            let e = ot.current;
+            e && Dt(ha(e))
+        }, t[255] = Dt, t[256] = No);
+        let Po = No,
+            Fo;
+        t[257] !== mo || t[258] !== pt || t[259] !== Po ? (Fo = () => {
+            pt(!0), mo?.(), Po()
+        }, t[257] = mo, t[258] = pt, t[259] = Po, t[260] = Fo) : Fo = t[260];
+        let Io = Fo,
+            Lo;
+        t[261] !== Io || t[262] !== dt ? (Lo = () => {
+            dt(!0), Io(), Lt.current?.(), Lt.current = null
+        }, t[261] = Io, t[262] = dt, t[263] = Lo) : Lo = t[263];
+        let Ro = Lo,
+            zo;
+        t[264] !== F || t[265] !== f || t[266] !== p || t[267] !== E?.analyticsMetadata.turnIndex || t[268] !== A || t[269] !== Cr || t[270] !== N || t[271] !== R || t[272] !== dn || t[273] !== L || t[274] !== w ? (zo = e => {
+            let {
+                query: t,
+                category: n,
+                entityId: r,
+                extraParams: i,
+                clientParams: a,
+                pinnedImage: o,
+                skipStructuredEntityActionLog: s
+            } = e, c = n === void 0 ? `ask_sidebar` : n;
+            s || Ot({
+                clientThreadId: F,
+                conversationId: L ?? void 0,
+                messageId: R,
+                assistantMessageId: R,
+                turnIndex: E?.analyticsMetadata.turnIndex,
+                contentReferenceStartIndex: f,
+                surfaceLocation: w == null ? gn.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE : gn.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_SIDEBAR,
+                entityAffordance: Vt.CHATGPT_ENTITY_AFFORDANCE_INLINE,
+                entityId: r,
+                entityCategory: c,
+                contentReferenceType: `dil`,
+                isGenui: Cr,
+                parentContext: {
+                    entityId: r,
+                    entityCategory: c,
+                    widgetType: N ? `model_written_dil` : void 0,
+                    widgetName: N ? void 0 : A,
+                    contentReferenceStartIndex: f,
+                    messageId: R
+                }
+            }), !(!t || !R) && (w || p && mn(p), dn({
+                type: `entity`,
+                debugThreadId: void 0,
+                messageId: R,
+                contentReferenceStartIndex: 0,
+                query: t,
+                category: c,
+                isGenui: Cr,
+                entityId: r,
+                extraParams: i,
+                clientParams: a,
+                pinnedImage: o
+            }))
+        }, t[264] = F, t[265] = f, t[266] = p, t[267] = E?.analyticsMetadata.turnIndex, t[268] = A, t[269] = Cr, t[270] = N, t[271] = R, t[272] = dn, t[273] = L, t[274] = w, t[275] = zo) : zo = t[275], E?.analyticsMetadata.turnIndex;
+        let Bo = zo,
+            Vo;
+        t[276] !== f || t[277] !== p || t[278] !== E?.analyticsMetadata || t[279] !== A || t[280] !== Cr || t[281] !== N || t[282] !== R || t[283] !== dn || t[284] !== d || t[285] !== L || t[286] !== w ? (Vo = e => {
+            let {
+                product: t,
+                skipStructuredEntityActionLog: n
+            } = e;
+            n || vr({
+                analyticsMetadata: E?.analyticsMetadata,
+                conversationId: L ?? void 0,
+                sourceMessageId: R,
+                contentReferenceIndex: d,
+                contentReferenceStartIndex: f,
+                isGenui: Cr,
+                widgetType: N ? `model_written_dil` : void 0,
+                widgetName: N ? void 0 : A,
+                product: t
+            }), R && (w || p && mn(p), dn({
+                type: `product_agent`,
+                messageId: R,
+                product: t,
+                contentReferenceStartIndex: d ?? 0,
+                productIndex: 0,
+                interactionSource: `inline_link`
+            }))
+        }, t[276] = f, t[277] = p, t[278] = E?.analyticsMetadata, t[279] = A, t[280] = Cr, t[281] = N, t[282] = R, t[283] = dn, t[284] = d, t[285] = L, t[286] = w, t[287] = Vo) : Vo = t[287], E?.analyticsMetadata;
+        let Ho = Vo,
+            Uo;
+        t[288] !== Yr || t[289] !== Hi || t[290] !== I ? (Uo = async (e, t, n) => {
+            let r = I != null && Hi && (st.current || Be(Yr) || re(I));
+            !I || !e.trim() || r || (Hi && (st.current = !0), await Hn({
+                callsiteId: `request_completion.dil.dil_widget.1`,
+                conversation: I,
+                promptMessage: a(e.trim(), t),
+                eventSource: `mouse`,
+                placeholderOptions: t?.is_visually_hidden_from_conversation === !0 ? {
+                    groupWithExistingContent: !1
+                } : void 0,
+                completionMetadata: {
+                    conversationMode: te(I) ?? {
+                        kind: s.PrimaryAssistant
+                    }
+                }
+            }).finally(() => {
+                Hi && (st.current = !1)
+            }))
+        }, t[288] = Yr, t[289] = Hi, t[290] = I, t[291] = Uo) : Uo = t[291];
+        let Wo = Uo,
+            Go;
+        t[292] !== Ne || t[293] !== L || t[294] !== I || t[295] !== Fe || t[296] !== Me ? (Go = (e, t) => {
+            if (I) {
+                if (Je() && Ne) {
+                    if (!e) {
+                        Mn(Me);
+                        return
+                    }
+                    let n = Xe(I.id);
+                    Mn(Me, {
+                        startVoiceArgs: {
+                            ...qn({
+                                serverThreadId: L ?? void 0,
+                                parentMessageId: We.getCurrentMessage(n)?.id,
+                                isAdvancedMode: !0,
+                                eventSource: e,
+                                conversation: I,
+                                gizmoId: We.getGizmoId(n),
+                                sourceConversation: I,
+                                includeConversationVoiceOverrides: !0
+                            }),
+                            ...t?.voiceLanding ? {
+                                voice_landing: t.voiceLanding
+                            } : {}
+                        }
+                    });
+                    return
+                }
+                if (e && t?.voiceLanding) {
+                    let n = Xe(I.id);
+                    Fe({
+                        startVoiceArgs: {
+                            ...qn({
+                                serverThreadId: L ?? void 0,
+                                parentMessageId: We.getCurrentMessage(n)?.id,
+                                isAdvancedMode: !0,
+                                eventSource: e,
+                                conversation: I,
+                                gizmoId: We.getGizmoId(n),
+                                sourceConversation: I,
+                                includeConversationVoiceOverrides: !0
+                            }),
+                            voice_landing: t.voiceLanding
+                        }
+                    });
+                    return
+                }
+                Fe()
+            }
+        }, t[292] = Ne, t[293] = L, t[294] = I, t[295] = Fe, t[296] = Me, t[297] = Go) : Go = t[297];
+        let Ko = Go,
+            qo = Ue(p?.id, Xi),
+            Jo;
+        t[298] !== p || t[299] !== qo || t[300] !== A || t[301] !== R ? (Jo = {
+            conversation: p,
+            conversationMode: qo,
+            targetMessageId: R,
+            widgetName: A
+        }, t[298] = p, t[299] = qo, t[300] = A, t[301] = R, t[302] = Jo) : Jo = t[302];
+        let Yo = or(Jo),
+            Xo = (0, W.use)(Qt),
+            Zo = Zi,
+            Qo;
+        t[303] === m?.store ? Qo = t[304] : (Qo = () => {
+            let e = m?.store.getSharedProps();
+            return !e?.isFileUploadEnabled || !e.openFileDialog ? !1 : (e.openFileDialog(), !0)
+        }, t[303] = m?.store, t[304] = Qo);
+        let $o = Qo,
+            es;
+        t[305] === m?.store ? es = t[306] : (es = () => {
+            let e = m?.store.getSharedProps();
+            return e?.isImageUploadEnabled ? e.openImageUploadDialog?.() ?? !1 : !1
+        }, t[305] = m?.store, t[306] = es);
+        let ts = es,
+            ns;
+        t[307] === m?.store ? ns = t[308] : (ns = () => {
+            let e = m?.store.getSharedProps();
+            return e?.isImageUploadEnabled ? e.openCameraDialog?.() ?? !1 : !1
+        }, t[307] = m?.store, t[308] = ns);
+        let rs = ns,
+            is;
+        t[309] !== m?.store || t[310] !== I ? (is = () => {
+            let e = m?.store.getSharedProps();
+            return I == null || e?.conversation !== I || e.composerController.conversation !== I ? null : e
+        }, t[309] = m?.store, t[310] = I, t[311] = is) : is = t[311];
+        let Q = is,
+            as;
+        t[312] === Q ? as = t[313] : (as = async e => {
+            if (!Q()) return;
+            let {
+                prefillComposerPrompt$: t
+            } = await da(), n = Q();
+            n && t(n, e)
+        }, t[312] = Q, t[313] = as);
+        let os = as,
+            ss;
+        t[314] === Q ? ss = t[315] : (ss = async e => {
+            let {
+                effort: t,
+                fallbackEffort: n,
+                prompt: r,
+                tooltip: i
+            } = e;
+            if (!Q()) return;
+            let {
+                setComposerThinkingEffort$: a
+            } = await da(), o = Q();
+            o && a(o, t, n, i, r)
+        }, t[314] = Q, t[315] = ss);
+        let cs = ss,
+            ls;
+        t[316] === Q ? ls = t[317] : (ls = async e => {
+            let {
+                effort: t,
+                fallbackEffort: n,
+                prompt: r,
+                tooltip: i
+            } = e;
+            if (!Q()) return;
+            let {
+                activateComposerImageGeneration$: a
+            } = await da(), o = Q();
+            o && a(o, t, n, i, r)
+        }, t[316] = Q, t[317] = ls);
+        let us = ls,
+            ds;
+        t[318] !== p || t[319] !== U || t[320] !== _ || t[321] !== Y || t[322] !== R || t[323] !== dn || t[324] !== q || t[325] !== d || t[326] !== M || t[327] !== K || t[328] !== L || t[329] !== It || t[330] !== Pt || t[331] !== J || t[332] !== u ? (ds = (e, t, n) => {
+            let r = n ?? Li({
+                    payload: e.payload,
+                    effectiveWidgetRefId: u,
+                    messageId: R,
+                    effectiveRefIndex: d
+                }),
+                i = y.current,
+                a = U && e.type != null && $t[e.type]?.useEmbeddedState === !0,
+                o = a && r ? i?.getEmbeddedWidgetStateStore?.(r) : void 0,
+                s = () => Y(J) && y.current === i && (!a || o != null && r != null && i?.getEmbeddedWidgetStateStore?.(r) === o),
+                c = a ? o?.getState() : i?.getState() ?? K ?? _;
+            return an({
+                actionType: e.type,
+                hostContext: {
+                    widgetInstance: o ?? i ?? void 0,
+                    isCurrent: s,
+                    getWidgetState: () => s() ? o?.getState() ?? i?.getState() : void 0,
+                    applyWidgetState: t => {
+                        if (s()) {
+                            if (o) {
+                                o.setState(t, !1);
+                                return
+                            }
+                            if (M && e.type === `business_agent_lead_form_submit`) {
+                                if (!Ht() || `submitting` in t) return;
+                                let n = Object.fromEntries(Object.entries(e.payload ?? {}).filter(Qi));
+                                return new Promise(e => {
+                                    Lt.current?.(), Lt.current = e, Pt(e => ({
+                                        ...e ?? {},
+                                        ...n,
+                                        ...t
+                                    })), It($i)
+                                })
+                            }
+                            y.current?.setState(t, !1)
+                        }
+                    },
+                    conversation: p,
+                    openThreadSidebar: dn
+                },
+                payload: Ii(e.payload),
+                conversationId: L,
+                messageId: R,
+                refId: r,
+                publicActionContext: q,
+                successActionHandler: t,
+                toaster: ye,
+                widgetState: c
+            })
+        }, t[318] = p, t[319] = U, t[320] = _, t[321] = Y, t[322] = R, t[323] = dn, t[324] = q, t[325] = d, t[326] = M, t[327] = K, t[328] = L, t[329] = It, t[330] = Pt, t[331] = J, t[332] = u, t[333] = ds) : ds = t[333];
+        let fs = ds;
+        E?.analyticsMetadata, D?.metadata?.turn_exchange_id;
+        let ps;
+        t[334] === Pi ? ps = t[335] : (ps = Pi ? {
+            playPronunciationAudio: Pi
+        } : {}, t[334] = Pi, t[335] = ps);
+        let ms;
+        t[336] !== fs || t[337] !== M ? (ms = M ? {} : {
+            runServerAction: fs
+        }, t[336] = fs, t[337] = M, t[338] = ms) : ms = t[338];
+        let hs;
+        t[339] === Symbol.for(`react.memo_cache_sentinel`) ? (hs = e => {
+            y.current?.setState(e, !1)
+        }, t[339] = hs) : hs = t[339];
+        let gs;
+        t[340] !== _r || t[341] !== _i ? (gs = _r ? {
+            downloadSandboxFile: _i
+        } : {}, t[340] = _r, t[341] = _i, t[342] = gs) : gs = t[342];
+        let _s;
+        t[343] !== B || t[344] !== P || t[345] !== rs || t[346] !== $o || t[347] !== ts || t[348] !== ti ? (_s = P ? {
+            openFileUpload: $o,
+            openImageUpload: ts,
+            openCameraCapture: rs
+        } : B ? {
+            openFileUpload: () => ir(`request_file_upload`, ti)
+        } : {}, t[343] = B, t[344] = P, t[345] = rs, t[346] = $o, t[347] = ts, t[348] = ti, t[349] = _s) : _s = t[349];
+        let vs;
+        t[350] !== B || t[351] !== P || t[352] !== ti ? (vs = P || B ? {
+            openMediaUpload: () => ir(`request_media_upload`, ti)
+        } : {}, t[350] = B, t[351] = P, t[352] = ti, t[353] = vs) : vs = t[353];
+        let ys;
+        t[354] !== us || t[355] !== B || t[356] !== Q || t[357] !== os || t[358] !== cs ? (ys = B ? {
+            prefillComposer: os,
+            getStructuredInputHost: () => Q()?.structuredInputHost,
+            setThinkingEffort: cs,
+            activateImageGeneration: us
+        } : {}, t[354] = us, t[355] = B, t[356] = Q, t[357] = os, t[358] = cs, t[359] = ys) : ys = t[359];
+        let bs;
+        t[360] !== Tn || t[361] !== Z || t[362] !== Ja || t[363] !== A || t[364] !== zr || t[365] !== Pa || t[366] !== Sn || t[367] !== X || t[368] !== I ? (bs = e => {
+            if (zr && !Pa && e?.showDialog) {
+                if (!Sn || !Tn || !I) return ye.danger(c.somethingWentWrong), !0;
+                let e = Sn.permissions.share_setting;
+                if (e !== `public` && e !== `workspace`) return !1;
+                let t = r({
+                    shareType: `widget`,
+                    source: de.CHATGPT_SHARE_FLOW_SOURCE_WIDGET_INLINE_ACTION,
+                    widgetMetadata: et({
+                        widgetName: A,
+                        widgetType: `dil`
+                    })
+                });
+                return we(t, le.CHATGPT_SHARE_FLOW_ACTION_ENTRY_POINT_SELECTED, {
+                    shareId: Sn.id
+                }), Et({
+                    conversation: I,
+                    shareResult: hn({
+                        id: Sn.id,
+                        permalink: Tn,
+                        attachments: Sn.attachments
+                    }),
+                    shareTargetId: `published-widget:${Sn.id}`,
+                    shareLinkScope: e,
+                    shareFlowContext: t,
+                    postText: Sn.text ?? void 0
+                }), !0
+            }
+            return X ? (b.current?.onReady?.(!1), b.current = null, Z.isVisible ? Z.onSelect() : b.current = {
+                targetIdentity: Ja
+            }, !0) : !1
+        }, t[360] = Tn, t[361] = Z, t[362] = Ja, t[363] = A, t[364] = zr, t[365] = Pa, t[366] = Sn, t[367] = X, t[368] = I, t[369] = bs) : bs = t[369];
+        let xs;
+        t[370] !== Ba || t[371] !== Ya ? (xs = Ba ? {
+            waitForWidgetShareReady: e => new Promise(t => {
+                b.current?.onReady?.(!1), b.current = null, Ya ? t(e()) : b.current = {
+                    isSelectionValid: e,
+                    onReady: t
+                }
+            })
+        } : {}, t[370] = Ba, t[371] = Ya, t[372] = xs) : xs = t[372];
+        let Ss;
+        t[373] !== Y || t[374] !== J ? (Ss = () => Y(J), t[373] = Y, t[374] = J, t[375] = Ss) : Ss = t[375];
+        let Cs;
+        t[376] === Se ? Cs = t[377] : (Cs = Se ? {} : {
+            openVideoLightbox: Zo
+        }, t[376] = Se, t[377] = Cs);
+        let ws = E?.analyticsMetadata,
+            Ts = L ?? void 0,
+            Es = D?.metadata?.turn_exchange_id,
+            Ds = N ? `model_written_dil` : void 0,
+            Os = N ? void 0 : A,
+            ks = Pa ? void 0 : Tn,
+            As = Pa ? void 0 : kn,
+            js = V || zr && !Pa,
+            Ms;
+        t[378] !== je || t[379] !== f || t[380] !== Cr || t[381] !== Wo || t[382] !== R || t[383] !== Bo || t[384] !== Xo || t[385] !== Ho || t[386] !== d || t[387] !== Yo || t[388] !== I || t[389] !== Ko || t[390] !== Ss || t[391] !== Cs || t[392] !== ws || t[393] !== Ts || t[394] !== Es || t[395] !== Ds || t[396] !== Os || t[397] !== ks || t[398] !== As || t[399] !== js || t[400] !== ps || t[401] !== ms || t[402] !== gs || t[403] !== _s || t[404] !== vs || t[405] !== ys || t[406] !== bs || t[407] !== xs ? (Ms = {
+            toaster: ye,
+            calendar: je,
+            openEntitySidebar: Bo,
+            openProductSidebar: Ho,
+            issueNewTurn: Wo,
+            ...ps,
+            ...ms,
+            applyWidgetState: hs,
+            ...gs,
+            requestLocationPermission: Yo,
+            ..._s,
+            ...vs,
+            ...ys,
+            openWidgetShare: bs,
+            ...xs,
+            isRequestCurrent: Ss,
+            openLightbox: Xo,
+            ...Cs,
+            analyticsMetadata: ws,
+            logEvent: tr,
+            conversationId: Ts,
+            conversation: I,
+            sourceMessageId: R,
+            turnExchangeId: Es,
+            contentReferenceIndex: d,
+            startVoiceMode: Ko,
+            contentReferenceStartIndex: f,
+            isGenui: Cr,
+            widgetType: Ds,
+            widgetName: Os,
+            currentSharedPostPermalink: ks,
+            sharedPostId: As,
+            isSharedConversation: js
+        }, t[378] = je, t[379] = f, t[380] = Cr, t[381] = Wo, t[382] = R, t[383] = Bo, t[384] = Xo, t[385] = Ho, t[386] = d, t[387] = Yo, t[388] = I, t[389] = Ko, t[390] = Ss, t[391] = Cs, t[392] = ws, t[393] = Ts, t[394] = Es, t[395] = Ds, t[396] = Os, t[397] = ks, t[398] = As, t[399] = js, t[400] = ps, t[401] = ms, t[402] = gs, t[403] = _s, t[404] = vs, t[405] = ys, t[406] = bs, t[407] = xs, t[408] = Ms) : Ms = t[408];
+        let $ = Ms,
+            Ns;
+        t[409] !== $ || t[410] !== Bi ? (Ns = () => (Bi ?? []).filter(e => kr[e] == null || Mr(kr[e], $)).join(`
+`), t[409] = $, t[410] = Bi, t[411] = Ns) : Ns = t[411];
+        let Ps = Ns,
+            Fs;
+        t[412] === Ps ? Fs = t[413] : (Fs = () => tt(Ps), t[412] = Ps, t[413] = Fs);
+        let Is = (0, W.useSyncExternalStore)(m?.store.subscribeToSharedProps ?? la, Fs, ea),
+            Ls = i(Ps),
+            Rs;
+        t[414] !== Is || t[415] !== Ls || t[416] !== Bi ? (Rs = Bi == null ? void 0 : Ls.split(`
+`).filter(e => e !== `` && Is.split(`
+`).includes(e)), t[414] = Is, t[415] = Ls, t[416] = Bi, t[417] = Rs) : Rs = t[417];
+        let zs = Rs,
+            Bs;
+        t[418] === $ ? Bs = t[419] : (Bs = e => jr({
+            url: e
+        }, $, new URL(e)), t[418] = $, t[419] = Bs);
+        let Vs = Bs,
+            Hs;
+        t[420] !== F || t[421] !== f || t[422] !== Mi || t[423] !== R || t[424] !== L ? (Hs = e => {
+            Mi?.(e), lr({
+                interaction: e,
+                clientThreadId: F,
+                conversationId: L ?? void 0,
+                messageId: R,
+                contentReferenceStartIndex: f
+            })
+        }, t[420] = F, t[421] = f, t[422] = Mi, t[423] = R, t[424] = L, t[425] = Hs) : Hs = t[425];
+        let Us = Hs,
+            Ws;
+        t[426] !== $ || t[427] !== h || t[428] !== Y || t[429] !== M || t[430] !== J ? (Ws = e => {
+            let {
+                type: t,
+                payload: n
+            } = e, r = typeof t == `string` && t.startsWith(`card.`) && ba(n), i = r && t && !Mt(h) ? va(h, t) : null, a = r ? i ? {
+                ...i,
+                action: t
+            } : void 0 : n, o = y.current;
+            return Nr({
+                payload: a,
+                context: {
+                    ...$,
+                    widgetStateHost: {
+                        getWidgetState: () => y.current === o ? o?.getState() : void 0,
+                        applyWidgetState: e => {
+                            y.current === o && o?.setState(e, !1)
+                        }
+                    },
+                    isRequestCurrent: () => Y(J) && (o == null ? M : y.current === o)
+                },
+                library: kr,
+                actionType: t
+            })
+        }, t[426] = $, t[427] = h, t[428] = Y, t[429] = M, t[430] = J, t[431] = Ws) : Ws = t[431];
+        let Gs = Ws,
+            Ks;
+        t[432] !== Gs || t[433] !== fs ? (Ks = (e, t) => (t === void 0 ? `client` : t) === `client` ? Gs(e) : fs(e, Gs), t[432] = Gs, t[433] = fs, t[434] = Ks) : Ks = t[434];
+        let qs = Ks,
+            Js;
+        t[435] !== Gs || t[436] !== fs || t[437] !== Y || t[438] !== J ? (Js = async e => {
+            let t = J,
+                n = await fs(e.action, Gs, e.widgetId);
+            return Y(t) ? n.status === `error` ? {
+                success: !1,
+                statusMessage: n.statusMessage
+            } : {
+                success: !0,
+                widgetState: Wt(e.action.type, n)
+            } : {
+                success: !1
+            }
+        }, t[435] = Gs, t[436] = fs, t[437] = Y, t[438] = J, t[439] = Js) : Js = t[439];
+        let Ys = Js,
+            Xs;
+        t[440] !== k || t[441] !== A || t[442] !== U ? (Xs = (e, t, n) => Xt(n === void 0 ? U ? void 0 : A : k?.find(e => {
+            let {
+                ref_id: t
+            } = e;
+            return t === n
+        })?.name)?.(t, e), t[440] = k, t[441] = A, t[442] = U, t[443] = Xs) : Xs = t[443];
+        let Zs = Xs,
+            Qs, $s;
+        t[444] !== A || t[445] !== U || t[446] !== ja ? (Qs = () => {
+            if (ja === void 0) return;
+            let e = y.current;
+            if (!e) return;
+            let t;
+            try {
+                t = JSON.stringify(ja)
+            } catch {
+                t = null
+            }
+            t != null && Rt.current === t || (Rt.current = t, e.setState(ln({
+                widgetName: U ? void 0 : A,
+                incomingWidgetState: ja,
+                currentWidgetState: e.getState()
+            }), !1))
+        }, $s = [A, U, ja], t[444] = A, t[445] = U, t[446] = ja, t[447] = Qs, t[448] = $s) : (Qs = t[447], $s = t[448]), (0, W.useEffect)(Qs, $s);
+        let ec;
+        t[449] === T ? ec = t[450] : (ec = () => {
+            T !== void 0 && y.current?.setState({
+                sensitive_values_hidden: T
+            }, !1)
+        }, t[449] = T, t[450] = ec);
+        let tc;
+        t[451] !== S || t[452] !== K || t[453] !== T ? (tc = [S, K, T], t[451] = S, t[452] = K, t[453] = T, t[454] = tc) : tc = t[454], (0, W.useEffect)(ec, tc);
+        let nc;
+        t[455] !== A || t[456] !== _ || t[457] !== S || t[458] !== T ? (nc = {
+            widgetName: A,
+            initialWidgetState: _,
+            widgetApiRef: y,
+            isWidgetRendererMounted: S,
+            sensitiveValuesHidden: T
+        }, t[455] = A, t[456] = _, t[457] = S, t[458] = T, t[459] = nc) : nc = t[459], Cn(nc);
+        let rc, ic;
+        t[460] === o ? (rc = t[461], ic = t[462]) : (rc = () => {
+            !ga(o) || zt.current || (zt.current = !0, ye.warning(`Legacy widget turn detected`, {
+                id: `legacy-dil-turn`,
+                description: `This turn uses DIL 1.x and may not render correctly.`
+            }))
+        }, ic = [o, ye], t[460] = o, t[461] = rc, t[462] = ic), (0, W.useEffect)(rc, ic);
+        let ac;
+        t[463] === Po ? ac = t[464] : (ac = () => {
+            let e = ot.current;
+            if (!e || (Po(), typeof MutationObserver > `u`)) return;
+            let t = new MutationObserver(Po);
+            return t.observe(e, {
+                childList: !0,
+                characterData: !0,
+                subtree: !0
+            }), () => t.disconnect()
+        }, t[463] = Po, t[464] = ac);
+        let oc;
+        t[465] !== Po || t[466] !== C ? (oc = [Po, C], t[465] = Po, t[466] = C, t[467] = oc) : oc = t[467], (0, W.useEffect)(ac, oc);
+        let sc;
+        t[468] !== R || t[469] !== d || t[470] !== L ? (sc = [`genui-refresh`, L, R, d], t[468] = R, t[469] = d, t[470] = L, t[471] = sc) : sc = t[471];
+        let cc;
+        t[472] !== O || t[473] !== to || t[474] !== P || t[475] !== R || t[476] !== d || t[477] !== eo?.enabled || t[478] !== eo?.name || t[479] !== L ? (cc = Je() && !P && !O && !!(L && R && d !== void 0) && !!(eo?.enabled && eo?.name) && to, t[472] = O, t[473] = to, t[474] = P, t[475] = R, t[476] = d, t[477] = eo?.enabled, t[478] = eo?.name, t[479] = L, t[480] = cc) : cc = t[480];
+        let lc;
+        t[481] !== R || t[482] !== d || t[483] !== L ? (lc = async () => {
+            if (!L || !R || d === void 0) return null;
+            let e = await ze.safePost(`/conversation/{conversation_id}/message/{message_id}/genui/refresh_widget`, {
+                additionalHeaders: void 0,
+                parameters: {
+                    path: {
+                        conversation_id: L,
+                        message_id: R
+                    }
+                },
+                authOption: Ke.SendIfAvailable,
+                requestBody: {
+                    ref_index: d
+                }
+            });
+            return gr(L, e), e
+        }, t[481] = R, t[482] = d, t[483] = L, t[484] = lc) : lc = t[484];
+        let uc;
+        t[485] !== sc || t[486] !== cc || t[487] !== lc ? (uc = {
+            queryKey: sc,
+            enabled: cc,
+            queryFn: lc,
+            refetchInterval: ta,
+            refetchIntervalInBackground: !1,
+            refetchOnWindowFocus: !0,
+            retry: na
+        }, t[485] = sc, t[486] = cc, t[487] = lc, t[488] = uc) : uc = t[488], lt(uc);
+        let dc = Tt || no,
+            fc = String(ft),
+            pc = String(gt),
+            mc = String(yt),
+            hc = dc ? no ? `mt-4` : w ? `` : `mt-4 pb-3` : `hidden`,
+            gc;
+        t[489] === hc ? gc = t[490] : (gc = ie(hc), t[489] = hc, t[490] = gc);
+        let _c;
+        t[491] !== ft || t[492] !== Tt ? (_c = ft && Tt && (0, G.jsx)(ma, {}), t[491] = ft, t[492] = Tt, t[493] = _c) : _c = t[493];
+        let vc = no ? `gap-1` : `gap-0.5`,
+            yc;
+        t[494] === vc ? yc = t[495] : (yc = ie(`flex w-fit max-w-full flex-col has-data-writing-block:w-full`, vc), t[494] = vc, t[495] = yc);
+        let bc;
+        t[496] !== Ai || t[497] !== H ? (bc = H === `failed` && (0, G.jsx)(Jt, {
+            type: `danger`,
+            className: `flex-wrap gap-3`,
+            primaryAction: (0, G.jsx)(Ge, {
+                type: `button`,
+                color: `secondary`,
+                size: `small`,
+                onClick: Ai,
+                children: (0, G.jsx)(ct, {
+                    id: `dil.sharedPostAdoptionFailed.retryLoading`,
+                    defaultMessage: `Retry loading`
+                })
+            }),
+            children: (0, G.jsx)(`p`, {
+                role: `alert`,
+                children: (0, G.jsx)(ct, {
+                    id: `dil.sharedPostAdoptionFailed.message`,
+                    defaultMessage: `This chat's interactive content could not be refreshed.`
+                })
+            })
+        }), t[496] = Ai, t[497] = H, t[498] = bc) : bc = t[498];
+        let xc = H === `adopted` ? `owned` : `source`,
+            Sc;
+        t[499] !== h || t[500] !== g ? (Sc = g ? void 0 : (0, G.jsx)(pa, {
+            widget: h
+        }), t[499] = h, t[500] = g, t[501] = Sc) : Sc = t[501];
+        let Cc;
+        t[502] !== $ || t[503] !== h || t[504] !== zs || t[505] !== Oo || t[506] !== j || t[507] !== E || t[508] !== Se || t[509] !== Vi || t[510] !== A || t[511] !== xa || t[512] !== qs || t[513] !== Mi || t[514] !== Io || t[515] !== Us || t[516] !== Ro || t[517] !== Ys || t[518] !== vo || t[519] !== wo || t[520] !== Eo || t[521] !== So || t[522] !== g || t[523] !== nn || t[524] !== O || t[525] !== P || t[526] !== Di || t[527] !== Vs || t[528] !== D?.author || t[529] !== R || t[530] !== q || t[531] !== Zs || t[532] !== d || t[533] !== M || t[534] !== yi || t[535] !== ja || t[536] !== L || t[537] !== In || t[538] !== Ui || t[539] !== xi || t[540] !== Fi || t[541] !== it || t[542] !== An || t[543] !== Ft || t[544] !== Wr || t[545] !== cn || t[546] !== u ? (Cc = M && !Mt(xa) ? (0, G.jsx)(`div`, {
+            ...$n,
+            inert: Ui,
+            "aria-disabled": Ui || void 0,
+            children: (0, G.jsx)(oa, {
+                actionsDisabled: Ui || Di,
+                initialState: ja,
+                supportedClientActions: Fi ?? Dr,
+                availableClientActions: zs,
+                onAction: qs,
+                onServerAction: Ys,
+                reconcileWidgetState: Zs,
+                serverActionTypes: tn,
+                onInitialRenderCommit: Ro,
+                onRenderFailure: vo,
+                widget: xa,
+                widgetContainsPii: Vi
+            }, `${An}:${Ft}`)
+        }) : (0, G.jsx)(`div`, {
+            ...$n,
+            inert: Ui || Di,
+            "aria-disabled": Ui || Di || void 0,
+            children: (0, G.jsx)(Ir.Provider, {
+                value: Vs,
+                children: (0, G.jsx)(Wn, {
+                    errorMode: `soft`,
+                    widget: xa,
+                    disableExternalMedia: Se,
+                    theme: it,
+                    streaming: In,
+                    animateStreamingReveal: In,
+                    initialState: ja,
+                    reconcileEmbeddedWidgetState: ln,
+                    onAction: qs,
+                    onInteraction: P ? Us : Mi,
+                    supportedClientActions: zs,
+                    ref: Eo,
+                    onError: wo,
+                    onSoftFailure: So,
+                    onInitialRenderCommit: Io,
+                    renderHostWidget: yi,
+                    ...li({
+                        isDILV2: g,
+                        isHermes: O,
+                        isModelWrittenDil: P,
+                        messageRole: D?.author.role,
+                        actionsDisabled: Ui
+                    }),
+                    isolateFromMarkdown: xi,
+                    showRenderFailureDebugInfo: !1
+                })
+            })
+        }), t[502] = $, t[503] = h, t[504] = zs, t[505] = Oo, t[506] = j, t[507] = E, t[508] = Se, t[509] = Vi, t[510] = A, t[511] = xa, t[512] = qs, t[513] = Mi, t[514] = Io, t[515] = Us, t[516] = Ro, t[517] = Ys, t[518] = vo, t[519] = wo, t[520] = Eo, t[521] = So, t[522] = g, t[523] = nn, t[524] = O, t[525] = P, t[526] = Di, t[527] = Vs, t[528] = D?.author, t[529] = R, t[530] = q, t[531] = Zs, t[532] = d, t[533] = M, t[534] = yi, t[535] = ja, t[536] = L, t[537] = In, t[538] = Ui, t[539] = xi, t[540] = Fi, t[541] = it, t[542] = An, t[543] = Ft, t[544] = Wr, t[545] = cn, t[546] = u, t[547] = Cc) : Cc = t[547];
+        let wc;
+        t[548] !== vo || t[549] !== xc || t[550] !== Sc || t[551] !== Cc ? (wc = (0, G.jsx)(Rn, {
+            children: (0, G.jsx)(at, {
+                name: `DILWidgetRenderer`,
+                onError: vo,
+                fallback: Sc,
+                children: Cc
+            }, xc)
+        }), t[548] = vo, t[549] = xc, t[550] = Sc, t[551] = Cc, t[552] = wc) : wc = t[552];
+        let Tc;
+        t[553] !== F || t[554] !== f || t[555] !== Ta || t[556] !== o || t[557] !== Jn.loggingMetadata || t[558] !== l || t[559] !== Ti || t[560] !== A || t[561] !== R || t[562] !== ro || t[563] !== no || t[564] !== cn || t[565] !== u || t[566] !== ce ? (Tc = (ro || no) && (0, G.jsxs)(`div`, {
+            className: `flex justify-end gap-1 empty:hidden`,
+            children: [null, no && (0, G.jsx)(mt, {
+                feedbackConfig: l,
+                messageId: R,
+                clientThreadId: F,
+                widgetRefId: u,
+                contentReferenceStartIndex: f,
+                dilUrl: Ti,
+                widgetType: ce,
+                widgetName: A,
+                loggingMetadata: Jn.loggingMetadata,
+                dilVersion: o
+            })]
+        }), t[553] = F, t[554] = f, t[555] = Ta, t[556] = o, t[557] = Jn.loggingMetadata, t[558] = l, t[559] = Ti, t[560] = A, t[561] = R, t[562] = ro, t[563] = no, t[564] = cn, t[565] = u, t[566] = ce, t[567] = Tc) : Tc = t[567];
+        let Ec;
+        t[568] !== qa || t[569] !== yc || t[570] !== bc || t[571] !== wc || t[572] !== Tc ? (Ec = (0, G.jsxs)(`div`, {
+            ref: ot,
+            className: yc,
+            children: [qa, bc, wc, Tc]
+        }), t[568] = qa, t[569] = yc, t[570] = bc, t[571] = wc, t[572] = Tc, t[573] = Ec) : Ec = t[573];
+        let Dc;
+        t[574] !== Ni || t[575] !== fc || t[576] !== pc || t[577] !== mc || t[578] !== gc || t[579] !== _c || t[580] !== Ec ? (Dc = (0, G.jsxs)(`div`, {
+            "data-testid": `dil-widget-shell`,
+            "data-internal-render-dil-initial-render-committed": fc,
+            "data-internal-render-dil-render-failure": pc,
+            "data-internal-render-dil-soft-render-failure": mc,
+            className: gc,
+            children: [Ni, _c, Ec]
+        }), t[574] = Ni, t[575] = fc, t[576] = pc, t[577] = mc, t[578] = gc, t[579] = _c, t[580] = Ec, t[581] = Dc) : Dc = t[581];
+        let Oc = Dc,
+            kc;
+        t[582] !== _ || t[583] !== K ? (kc = {
+            ..._,
+            ...K
+        }, t[582] = _, t[583] = K, t[584] = kc) : kc = t[584];
+        let Ac = L ?? void 0,
+            jc = u ?? (R && d !== void 0 ? `${R}:${d}` : void 0),
+            Mc = V || !to || jn || Xr || Di,
+            Nc = d === void 0 ? void 0 : Vn[d],
+            Pc;
+        return t[585] !== F || t[586] !== f || t[587] !== Oc || t[588] !== A || t[589] !== V || t[590] !== Wo || t[591] !== R || t[592] !== kc || t[593] !== Ac || t[594] !== jc || t[595] !== Mc || t[596] !== Nc ? (Pc = (0, G.jsx)(ca, {
+            contentReferenceStartIndex: f,
+            widgetName: A,
+            widgetState: kc,
+            clientThreadId: F,
+            conversationId: Ac,
+            messageId: R,
+            refId: jc,
+            actionsDisabled: Mc,
+            isReadOnly: V,
+            issueNewTurn: Wo,
+            contentReference: Nc,
+            fallback: Oc
+        }), t[585] = F, t[586] = f, t[587] = Oc, t[588] = A, t[589] = V, t[590] = Wo, t[591] = R, t[592] = kc, t[593] = Ac, t[594] = jc, t[595] = Mc, t[596] = Nc, t[597] = Pc) : Pc = t[597], Pc
+    }
+}));
+export {
+    U as n, Ta as r, wa as t
+};
 //# sourceMappingURL=28938d3c-cf9jidcj2bhdrlk0.js.map

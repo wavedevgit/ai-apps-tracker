@@ -1,0 +1,42 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $st as t,
+    Lot as n,
+    Rot as r,
+    pst as i
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    aTn as a,
+    iTn as o
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+
+function s(e) {
+    return e.get(`search`) ?? e.get(`q`) ?? ``
+}
+var c = e((() => {}));
+
+function l(e) {
+    let t = new URL(e.url),
+        r = n();
+    return {
+        country: t.searchParams.get(`country`),
+        platform: t.searchParams.get(`platform`) ?? `chat`,
+        locale: t.searchParams.get(`locale`) ?? r.locale,
+        hasWorkspace: r.session?.account?.structure === i.WORKSPACE,
+        productSku: o.CONNECTOR_SETTING
+    }
+}
+
+function u(e) {
+    let t = new URL(e.url);
+    return t.pathname.replace(/\/+$/, ``) === `/plugins` && !s(t.searchParams).trim() && !t.searchParams.get(`category`)?.trim() && !t.searchParams.get(`section`)?.trim()
+}
+var d = e((() => {
+    t(), a(), c(), r()
+}));
+export {
+    c as a, s as i, d as n, u as r, l as t
+};
+//# sourceMappingURL=55be7374-j7isrpbfr3ffi6q8.js.map

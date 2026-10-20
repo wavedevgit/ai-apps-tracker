@@ -1,2 +1,337 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bnt as t,Dnt as n,Ent as r,F7 as i,I1 as a,Knt as o,M1 as s,N8 as c,P8 as l,Pv as u,S1 as d,Tnt as f,X_ as p,Zst as ee,_8 as m,b8 as te,f5 as h,f8 as g,g8 as _,j7 as v,jst as y,x8 as ne,y8 as b}from"./4813494d-ed29bs6yiwucn7st.js";import{s as x,w as re}from"./2340486e-oc6d2eodbcrmxur3.js";import{$In as S,$Wt as ie,AUt as ae,DUt as C,GIn as oe,HIn as se,MFn as ce,NFn as w,NUt as T,QWt as E,UIn as D,aFn as le,eFn as ue,eGt as de,jUt as fe,nFn as O,oFn as pe,rFn as me,sFn as k,tLn as A,wPn as he,xPn as j}from"./conversation-small-l6tnsr2xfn2d55kk.js";function M(e){let t=(d()??s())?.normalizedAccountUserId;return t==null?void 0:P({normalizedAccountUserId:t,provider:e?.provider,linkId:e?.linkId})}var N,P,F=e((()=>{g(),a(),i(),x(),N=[`mounted-library-capabilities`],P=ne(({normalizedAccountUserId:e,provider:t,linkId:n})=>b(()=>re({queryKey:[...N,e,...t==null?[]:[t,n]],queryFn:()=>t==null?v.safeGet(`/files/library/mounted/capabilities`):v.safeGet(`/files/library/mounted/capabilities`,{parameters:{query:{provider:t,link_id:n}}}),refetchOnWindowFocus:!1,refetchOnReconnect:`always`})))}));function I(){return t(L)}var L,ge=e((()=>{o(),L=`183402703`}));function R(e){return H.find(({provider:t})=>e===t||e.startsWith(`${t}:`))?.provider}function z(e){return Array.isArray(e)?e.filter(e=>typeof e==`string`&&R(e)!=null):[]}function _e(e){return[e.name===e.connector_name?void 0:e.name,e.owner_profile?.nickname,e.owner_profile?.email,e.owner_profile?.name].map(e=>e?.trim()).find(e=>e)}function B(e){let t=new Set(H.map(({provider:e})=>e).filter(t=>e.has(t)));return k()&&(t.add(`sharepoint`),t.add(`onedrive`)),t}function V(e,t=`search`){let n=I(),r=t===`browse`,i=r?new Set([...X()].filter(e=>!A(e))):B(X()),a=r?[...new Set([...Q(),...J().filter(({provider:e})=>A(e)).map(({provider:e})=>e)])]:Q(),o=e||n?a:void 0,s=!n&&o?.length===0&&J().length===0?i.size>0?H.filter(({provider:e})=>!i.has(e)).map(({provider:e})=>e):void 0:o,c=H.filter(({provider:e})=>(e===`box`||e===`dropbox`||e===`sharepoint`)&&T(e)&&!a.includes(e)).map(({provider:e})=>e);return{hiddenProviders:i,hiddenSources:r?new Set([...q()].filter(e=>!A(R(e)))):q(),visibleProviders:c.length>0?(s??H.map(({provider:e})=>e)).filter(e=>!c.includes(e)):s}}function ve(e){return{...V(e),browseVisibility:V(e,`browse`),suggestedRequestSelection:e?$():void 0}}function ye(e,t){t?U.set(e):U()===e&&U.set(null)}function be(e,t){let n=new Set(K());if(t){n.delete(e);let t=R(e),r=e.includes(`:`)&&t!=null&&n.has(t)?J().find(t=>t.id===e):void 0;if(r!=null&&n.delete(r.provider))for(let t of J())t.provider===r.provider&&t.id!==e&&n.add(t.id)}else n.add(e);h(()=>G.set([...n]))}function xe(e){h(()=>W.set(e))}var H,U,W,G,K,q,J,Y,X,Z,Q,$,Se=e((()=>{ae(),ee(),he(),u(),F(),oe(),ie(),se(),ue(),pe(),ge(),ce(),fe(),me(),g(),n(),c(),o(),H=[{provider:`google_drive`,connectorId:p[y.GDRIVE_ACTION_CONNECTOR],isEnabled:w},{provider:`box`,connectorId:p[y.BOX_CONNECTOR],isEnabled:D},{provider:`dropbox`,connectorId:p[y.DROPBOX_CONNECTOR],isEnabled:()=>t(`2060455659`)},{provider:`sharepoint`,connectorId:p[y.SHAREPOINT_CONNECTOR],isEnabled:le},{provider:`onedrive`,connectorId:p[y.SHAREPOINT_CONNECTOR],isEnabled:O},{provider:`imanage`,connectorId:E,isEnabled:de}],U=te(null),W=_(r.LibraryShowHiddenFiles,()=>!1,{coerceStoredValue:e=>e===!0}),G=_(r.LibraryHiddenProvidersV2,()=>[...z(typeof window>`u`?null:f.getItem(r.LibraryHiddenProviders)),`sharepoint`,`onedrive`],{coerceStoredValue:e=>Array.isArray(e)?z(e):[`sharepoint`,`onedrive`]}),K=m(()=>new Set(G()),{equals:l}),q=m(()=>new Set([...K()].filter(e=>e.includes(`:`)&&T(R(e)))),{equals:l}),J=m(()=>{let e=I(),t=new Set(H.filter(({provider:e})=>T(e)).map(({provider:e})=>e)),n=e?M():void 0,r=n?.error==null?n?.data?.providers:void 0,i=!e||t.size>0?j().data:void 0;return H.flatMap(({provider:n,connectorId:a,isEnabled:o})=>{if(!o())return[];let s=i?.get(a)?.filter(e=>e.auth_status===`ACTIVE`)??[],c=t.has(n)&&(n===`box`||n===`dropbox`||n===`sharepoint`);c&&(s=C(s).filter(e=>e.unavailable_reason==null));let l=c?new Map(s.filter(e=>S(e.owner_profile?.id)).toSorted((e,t)=>{let n=S(e.owner_profile?.id)??``,r=S(t.owner_profile?.id)??``;return n<r?-1:+(n>r)}).map((e,t)=>[e.id,t+1])):void 0;e&&c&&(s=s.filter(e=>{let t=M({provider:n,linkId:e.id});return t?.error==null&&t?.data?.providers[n]?.capabilities.library_browsing.state===`available`}));let u=r?.[n===`onedrive`?`sharepoint`:n]?.capabilities;if(!(e&&!c?u?.library_browsing.state===`available`:s.length>0))return[];if(!t.has(n))return[{id:n,provider:n}];let d=new Map;for(let e of s.toSorted((e,t)=>Date.parse(e.auth_status_updated_at??e.created_at)-Date.parse(t.auth_status_updated_at??t.created_at))){let t=c?S(e.owner_profile?.id):e.owner_profile?.id;if(!t)continue;let r=`${n}:${t}`,i=e.name?.trim()&&e.name!==e.connector_name?e.name:void 0,a=c?_e(e):void 0;d.set(r,{id:r,provider:n,accountKey:t,...c?{accountLabel:a,...a==null?{accountNumber:l?.get(e.id)}:{}}:{accountLabel:i??e.owner_profile?.nickname??e.owner_profile?.email??e.owner_profile?.name??t??void 0}})}return d.size>0?[...d.values()]:[{id:n,provider:n}]})},{equals:l}),Y=m(()=>k()?[...new Set(J().map(({provider:e})=>e))].filter(A):[],{equals:l}),X=m(()=>{let e=K();if(e.size===0)return new Set;let t=J();return new Set(H.filter(({provider:n})=>e.has(n)||t.some(e=>e.provider===n)&&t.filter(e=>e.provider===n).every(t=>e.has(t.id))).map(({provider:e})=>e))},{equals:l}),Z=m(()=>{let e=K();return J().filter(t=>!e.has(t.id)&&!e.has(t.provider))},{equals:l}),Q=m(()=>[...new Set(Z().map(e=>e.provider))],{equals:l}),$=m(()=>{let e=H.some(({provider:e})=>T(e)),t=B(K()),n=q(),r=e?{}:void 0,i=!1;for(let{provider:e,connectorId:a}of H){if(t.has(e)||![...n].some(t=>t.startsWith(`${e}:`)))continue;let o=j();if(o.data==null&&o.error==null)return{isReady:!1,providers:`all`,externalAccountKeys:void 0};if(o.data==null)t.add(e),i=!0;else{let s=[...new Set((o.data.get(a)??[]).filter(e=>e.auth_status===`ACTIVE`).map(t=>e===`box`||e===`dropbox`||e===`sharepoint`?S(t.owner_profile?.id):t.owner_profile?.id).filter(e=>e!=null&&e.length>0))],c=s.filter(t=>!n.has(`${e}:${t}`));c.length<s.length&&(c.length>0?r={...r,[e]:c}:(t.add(e),i=!0))}}return{isReady:!0,providers:t.size===0?O()?H.map(({provider:e})=>e):`all`:H.filter(({provider:e,isEnabled:n})=>n()&&!t.has(e)).map(({provider:e})=>e),externalAccountKeys:i&&Object.keys(r??{}).length===0?void 0:r}})}));export{Se as a,ye as c,K as i,xe as l,Y as n,W as o,ve as r,U as s,J as t,be as u};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bnt as t,
+    Dnt as n,
+    Ent as r,
+    F7 as i,
+    I1 as a,
+    Knt as o,
+    M1 as s,
+    N8 as c,
+    P8 as l,
+    Pv as u,
+    S1 as d,
+    Tnt as f,
+    X_ as p,
+    Zst as ee,
+    _8 as m,
+    b8 as te,
+    f5 as h,
+    f8 as g,
+    g8 as _,
+    j7 as v,
+    jst as y,
+    x8 as ne,
+    y8 as b
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    s as x,
+    w as re
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    $In as S,
+    $Wt as ie,
+    AUt as ae,
+    DUt as C,
+    GIn as oe,
+    HIn as se,
+    MFn as ce,
+    NFn as w,
+    NUt as T,
+    QWt as E,
+    UIn as D,
+    aFn as le,
+    eFn as ue,
+    eGt as de,
+    jUt as fe,
+    nFn as O,
+    oFn as pe,
+    rFn as me,
+    sFn as k,
+    tLn as A,
+    wPn as he,
+    xPn as j
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+
+function M(e) {
+    let t = (d() ?? s())?.normalizedAccountUserId;
+    return t == null ? void 0 : P({
+        normalizedAccountUserId: t,
+        provider: e?.provider,
+        linkId: e?.linkId
+    })
+}
+var N, P, F = e((() => {
+    g(), a(), i(), x(), N = [`mounted-library-capabilities`], P = ne(({
+        normalizedAccountUserId: e,
+        provider: t,
+        linkId: n
+    }) => b(() => re({
+        queryKey: [...N, e, ...t == null ? [] : [t, n]],
+        queryFn: () => t == null ? v.safeGet(`/files/library/mounted/capabilities`) : v.safeGet(`/files/library/mounted/capabilities`, {
+            parameters: {
+                query: {
+                    provider: t,
+                    link_id: n
+                }
+            }
+        }),
+        refetchOnWindowFocus: !1,
+        refetchOnReconnect: `always`
+    })))
+}));
+
+function I() {
+    return t(L)
+}
+var L, ge = e((() => {
+    o(), L = `183402703`
+}));
+
+function R(e) {
+    return H.find(({
+        provider: t
+    }) => e === t || e.startsWith(`${t}:`))?.provider
+}
+
+function z(e) {
+    return Array.isArray(e) ? e.filter(e => typeof e == `string` && R(e) != null) : []
+}
+
+function _e(e) {
+    return [e.name === e.connector_name ? void 0 : e.name, e.owner_profile?.nickname, e.owner_profile?.email, e.owner_profile?.name].map(e => e?.trim()).find(e => e)
+}
+
+function B(e) {
+    let t = new Set(H.map(({
+        provider: e
+    }) => e).filter(t => e.has(t)));
+    return k() && (t.add(`sharepoint`), t.add(`onedrive`)), t
+}
+
+function V(e, t = `search`) {
+    let n = I(),
+        r = t === `browse`,
+        i = r ? new Set([...X()].filter(e => !A(e))) : B(X()),
+        a = r ? [...new Set([...Q(), ...J().filter(({
+            provider: e
+        }) => A(e)).map(({
+            provider: e
+        }) => e)])] : Q(),
+        o = e || n ? a : void 0,
+        s = !n && o?.length === 0 && J().length === 0 ? i.size > 0 ? H.filter(({
+            provider: e
+        }) => !i.has(e)).map(({
+            provider: e
+        }) => e) : void 0 : o,
+        c = H.filter(({
+            provider: e
+        }) => (e === `box` || e === `dropbox` || e === `sharepoint`) && T(e) && !a.includes(e)).map(({
+            provider: e
+        }) => e);
+    return {
+        hiddenProviders: i,
+        hiddenSources: r ? new Set([...q()].filter(e => !A(R(e)))) : q(),
+        visibleProviders: c.length > 0 ? (s ?? H.map(({
+            provider: e
+        }) => e)).filter(e => !c.includes(e)) : s
+    }
+}
+
+function ve(e) {
+    return {
+        ...V(e),
+        browseVisibility: V(e, `browse`),
+        suggestedRequestSelection: e ? $() : void 0
+    }
+}
+
+function ye(e, t) {
+    t ? U.set(e) : U() === e && U.set(null)
+}
+
+function be(e, t) {
+    let n = new Set(K());
+    if (t) {
+        n.delete(e);
+        let t = R(e),
+            r = e.includes(`:`) && t != null && n.has(t) ? J().find(t => t.id === e) : void 0;
+        if (r != null && n.delete(r.provider))
+            for (let t of J()) t.provider === r.provider && t.id !== e && n.add(t.id)
+    } else n.add(e);
+    h(() => G.set([...n]))
+}
+
+function xe(e) {
+    h(() => W.set(e))
+}
+var H, U, W, G, K, q, J, Y, X, Z, Q, $, Se = e((() => {
+    ae(), ee(), he(), u(), F(), oe(), ie(), se(), ue(), pe(), ge(), ce(), fe(), me(), g(), n(), c(), o(), H = [{
+        provider: `google_drive`,
+        connectorId: p[y.GDRIVE_ACTION_CONNECTOR],
+        isEnabled: w
+    }, {
+        provider: `box`,
+        connectorId: p[y.BOX_CONNECTOR],
+        isEnabled: D
+    }, {
+        provider: `dropbox`,
+        connectorId: p[y.DROPBOX_CONNECTOR],
+        isEnabled: () => t(`2060455659`)
+    }, {
+        provider: `sharepoint`,
+        connectorId: p[y.SHAREPOINT_CONNECTOR],
+        isEnabled: le
+    }, {
+        provider: `onedrive`,
+        connectorId: p[y.SHAREPOINT_CONNECTOR],
+        isEnabled: O
+    }, {
+        provider: `imanage`,
+        connectorId: E,
+        isEnabled: de
+    }], U = te(null), W = _(r.LibraryShowHiddenFiles, () => !1, {
+        coerceStoredValue: e => e === !0
+    }), G = _(r.LibraryHiddenProvidersV2, () => [...z(typeof window > `u` ? null : f.getItem(r.LibraryHiddenProviders)), `sharepoint`, `onedrive`], {
+        coerceStoredValue: e => Array.isArray(e) ? z(e) : [`sharepoint`, `onedrive`]
+    }), K = m(() => new Set(G()), {
+        equals: l
+    }), q = m(() => new Set([...K()].filter(e => e.includes(`:`) && T(R(e)))), {
+        equals: l
+    }), J = m(() => {
+        let e = I(),
+            t = new Set(H.filter(({
+                provider: e
+            }) => T(e)).map(({
+                provider: e
+            }) => e)),
+            n = e ? M() : void 0,
+            r = n?.error == null ? n?.data?.providers : void 0,
+            i = !e || t.size > 0 ? j().data : void 0;
+        return H.flatMap(({
+            provider: n,
+            connectorId: a,
+            isEnabled: o
+        }) => {
+            if (!o()) return [];
+            let s = i?.get(a)?.filter(e => e.auth_status === `ACTIVE`) ?? [],
+                c = t.has(n) && (n === `box` || n === `dropbox` || n === `sharepoint`);
+            c && (s = C(s).filter(e => e.unavailable_reason == null));
+            let l = c ? new Map(s.filter(e => S(e.owner_profile?.id)).toSorted((e, t) => {
+                let n = S(e.owner_profile?.id) ?? ``,
+                    r = S(t.owner_profile?.id) ?? ``;
+                return n < r ? -1 : +(n > r)
+            }).map((e, t) => [e.id, t + 1])) : void 0;
+            e && c && (s = s.filter(e => {
+                let t = M({
+                    provider: n,
+                    linkId: e.id
+                });
+                return t?.error == null && t?.data?.providers[n]?.capabilities.library_browsing.state === `available`
+            }));
+            let u = r?.[n === `onedrive` ? `sharepoint` : n]?.capabilities;
+            if (!(e && !c ? u?.library_browsing.state === `available` : s.length > 0)) return [];
+            if (!t.has(n)) return [{
+                id: n,
+                provider: n
+            }];
+            let d = new Map;
+            for (let e of s.toSorted((e, t) => Date.parse(e.auth_status_updated_at ?? e.created_at) - Date.parse(t.auth_status_updated_at ?? t.created_at))) {
+                let t = c ? S(e.owner_profile?.id) : e.owner_profile?.id;
+                if (!t) continue;
+                let r = `${n}:${t}`,
+                    i = e.name?.trim() && e.name !== e.connector_name ? e.name : void 0,
+                    a = c ? _e(e) : void 0;
+                d.set(r, {
+                    id: r,
+                    provider: n,
+                    accountKey: t,
+                    ...c ? {
+                        accountLabel: a,
+                        ...a == null ? {
+                            accountNumber: l?.get(e.id)
+                        } : {}
+                    } : {
+                        accountLabel: i ?? e.owner_profile?.nickname ?? e.owner_profile?.email ?? e.owner_profile?.name ?? t ?? void 0
+                    }
+                })
+            }
+            return d.size > 0 ? [...d.values()] : [{
+                id: n,
+                provider: n
+            }]
+        })
+    }, {
+        equals: l
+    }), Y = m(() => k() ? [...new Set(J().map(({
+        provider: e
+    }) => e))].filter(A) : [], {
+        equals: l
+    }), X = m(() => {
+        let e = K();
+        if (e.size === 0) return new Set;
+        let t = J();
+        return new Set(H.filter(({
+            provider: n
+        }) => e.has(n) || t.some(e => e.provider === n) && t.filter(e => e.provider === n).every(t => e.has(t.id))).map(({
+            provider: e
+        }) => e))
+    }, {
+        equals: l
+    }), Z = m(() => {
+        let e = K();
+        return J().filter(t => !e.has(t.id) && !e.has(t.provider))
+    }, {
+        equals: l
+    }), Q = m(() => [...new Set(Z().map(e => e.provider))], {
+        equals: l
+    }), $ = m(() => {
+        let e = H.some(({
+                provider: e
+            }) => T(e)),
+            t = B(K()),
+            n = q(),
+            r = e ? {} : void 0,
+            i = !1;
+        for (let {
+                provider: e,
+                connectorId: a
+            }
+            of H) {
+            if (t.has(e) || ![...n].some(t => t.startsWith(`${e}:`))) continue;
+            let o = j();
+            if (o.data == null && o.error == null) return {
+                isReady: !1,
+                providers: `all`,
+                externalAccountKeys: void 0
+            };
+            if (o.data == null) t.add(e), i = !0;
+            else {
+                let s = [...new Set((o.data.get(a) ?? []).filter(e => e.auth_status === `ACTIVE`).map(t => e === `box` || e === `dropbox` || e === `sharepoint` ? S(t.owner_profile?.id) : t.owner_profile?.id).filter(e => e != null && e.length > 0))],
+                    c = s.filter(t => !n.has(`${e}:${t}`));
+                c.length < s.length && (c.length > 0 ? r = {
+                    ...r,
+                    [e]: c
+                } : (t.add(e), i = !0))
+            }
+        }
+        return {
+            isReady: !0,
+            providers: t.size === 0 ? O() ? H.map(({
+                provider: e
+            }) => e) : `all` : H.filter(({
+                provider: e,
+                isEnabled: n
+            }) => n() && !t.has(e)).map(({
+                provider: e
+            }) => e),
+            externalAccountKeys: i && Object.keys(r ?? {}).length === 0 ? void 0 : r
+        }
+    })
+}));
+export {
+    Se as a, ye as c, K as i, xe as l, Y as n, W as o, ve as r, U as s, J as t, be as u
+};
 //# sourceMappingURL=37eb5e23-bjdhj2nk3lt7jq90.js.map

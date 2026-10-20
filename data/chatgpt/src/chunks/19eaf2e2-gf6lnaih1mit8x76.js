@@ -1,0 +1,57 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Rn as t,
+    zn as n
+} from "./2340486e-komxp8tzs51ny4jj.js";
+var r, i, a, o = e((() => {
+    n(), r = [`👍`, `👎`, `❤️`, `🎉`, `🔥`, `🤔`, `😂`, `🤯`], i = t({
+        smileys: {
+            id: `emojiGroup.smileys`,
+            defaultMessage: `Smileys & Emotion`
+        },
+        animals: {
+            id: `emojiGroup.animals`,
+            defaultMessage: `Animals & Nature`
+        },
+        people: {
+            id: `emojiGroup.people`,
+            defaultMessage: `People & Gestures`
+        },
+        food: {
+            id: `emojiGroup.food`,
+            defaultMessage: `Food & Drink`
+        },
+        activities: {
+            id: `emojiGroup.activities`,
+            defaultMessage: `Activities & Travel`
+        },
+        objects: {
+            id: `emojiGroup.objects`,
+            defaultMessage: `Objects & Symbols`
+        }
+    }), a = [{
+        id: `smileys`,
+        emojis: `😀.😁.😂.🤣.😃.😄.😅.😆.😉.😊.😋.😎.😍.😘.🥰.😗.😙.😚.🙂.🤗.🤭.🤫.🤔.😐.😑.😶.🙄.😏.😣.😥.😮.🤐.😯.😪.🥱.😴.😌.🤤.😛.😜.😝.🤪.🤨.🫤.😒.😓.😔.😕.🙃.🫠.🫣.🫢.😭.😤.😠.😡.🤬.🤯.😳.🥵.🥶.😱.😨.😰.😞.😟.😢.😧.😬.😮‍💨.😵.🤕.🤒.🤧.🥳.🥺.🙏.❤️.🩷.🧡.💛.💚.💙.💜.🖤.🤍.🤎.💔.❣️.💕.💞.💓.💗.💖.💘.💝`.split(`.`)
+    }, {
+        id: `people`,
+        emojis: [`👍`, `👎`, `👌`, `✌️`, `🤞`, `🤟`, `🤘`, `🤙`, `👋`, `🤚`, `✋`, `🖐️`, `🖖`, `👏`, `🙌`, `🫶`, `💪`, `🤌`, `🫰`, `👀`]
+    }, {
+        id: `animals`,
+        emojis: `🐶.🐱.🐭.🐹.🐰.🦊.🐻.🐼.🐨.🐯.🦁.🐮.🐷.🐸.🐵.🐥.🦄.🐝.🦋.🌸.🌹.🌻.🌼.🌷.🌞.🌙.⭐️.✨.🔥.💧.🌈`.split(`.`)
+    }, {
+        id: `food`,
+        emojis: `🍏.🍎.🍊.🍌.🍉.🍇.🍓.🍒.🍑.🍍.🥝.🥑.🍅.🍆.🥕.🌽.🥔.🍞.🧀.🍕.🍔.🍟.🌭.🍣.🍜.🍝.🍰.🍪.🎂.🍫.🍩.🍨.🍦.🍺.🍻.☕️`.split(`.`)
+    }, {
+        id: `activities`,
+        emojis: [`⚽️`, `🏀`, `🏈`, `⚾️`, `🎾`, `🏐`, `🎮`, `🎲`, `🎯`, `🚗`, `🚕`, `🚙`, `🚌`, `🚎`, `🏎️`, `🚓`, `✈️`, `🚀`]
+    }, {
+        id: `objects`,
+        emojis: [`💡`, `✅`, `❌`, `⚠️`, `ℹ️`, `💯`, `🎉`, `🎁`, `📌`, `📎`, `📝`, `🔒`, `🔓`, `🔑`]
+    }]
+}));
+export {
+    o as i, r as n, i as r, a as t
+};
+//# sourceMappingURL=19eaf2e2-gf6lnaih1mit8x76.js.map

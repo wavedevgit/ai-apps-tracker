@@ -1,0 +1,294 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bot as n,
+    Dz as r,
+    J5 as i,
+    JT as a,
+    M5 as ee,
+    Oz as o,
+    cit as s,
+    fF as c,
+    j5 as l,
+    lit as te,
+    q5 as u,
+    qT as ne,
+    rF as re,
+    zot as d
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    $ as f,
+    Hn as p,
+    Pn as m,
+    Tn as h,
+    Vn as g,
+    jt as ie,
+    zn as _
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Aa as v,
+    BOt as y,
+    I5t as b,
+    KGn as x,
+    Nr as S,
+    RHn as C,
+    UOt as ae,
+    WGn as w,
+    bNt as T,
+    dr as E,
+    ka as oe,
+    kr as se,
+    lr as D,
+    xNt as ce,
+    z5t as le,
+    zHn as O
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Bp as ue,
+    D as de,
+    E as k,
+    F as A,
+    G as j,
+    H as fe,
+    N as pe,
+    O as M,
+    T as N,
+    U as me,
+    Vp as P,
+    b as F,
+    m as I,
+    p as L,
+    y as R,
+    zp as he
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+import {
+    o as z,
+    t as ge
+} from "./8c1c50db-oypx60x4alrhnv6k.js";
+import {
+    n as B,
+    r as V,
+    t as _e
+} from "./02df22f1-bc4b8tcspfptuq2c.js";
+import {
+    n as H,
+    t as ve
+} from "./dee3edb9-jt03kndod5vcgck3.js";
+import {
+    r as U,
+    t as ye
+} from "./5be378a2-k3nsj583ropnxboe.js";
+import {
+    n as W,
+    t as be
+} from "./2d4fbc67-n4ywjthtz7t22vif.js";
+import {
+    n as G,
+    t as K
+} from "./c157dfba-bi5i8pu8hfyi6t3h.js";
+
+function q(e) {
+    "use forget";
+    let t = (0, J.c)(66),
+        {
+            children: i
+        } = e,
+        a = (0, Y.use)(re),
+        o;
+    t[0] === a ? o = t[1] : (o = n(a), t[0] = a, t[1] = o);
+    let s = o,
+        c;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (c = te(), t[2] = c) : c = t[2];
+    let l = c,
+        d = ee(xe),
+        {
+            pathname: f,
+            search: p
+        } = ie(),
+        h = /(?:^|\/)library(?:\/|$)/.test(f) ? `library` : /(?:^|\/)sites(?:\/|$)/.test(f) ? `sites` : `other`,
+        g = h === `library`,
+        _;
+    t[3] === p ? _ = t[4] : (_ = ce(new URLSearchParams(p)), t[3] = p, t[4] = _);
+    let v = _,
+        y = d?.desktopBreadcrumbs,
+        b;
+    t[5] !== f || t[6] !== y || t[7] !== d ? (b = y != null || d == null && le(ae(f).directoryId), t[5] = f, t[6] = y, t[7] = d, t[8] = b) : b = t[8];
+    let x = b,
+        S, T, E, O, k, A, j, M, P;
+    if (t[9] !== s || t[10] !== g || t[11] !== h || t[12] !== y || t[13] !== d || t[14] !== x) {
+        let e = y == null ? [] : _e(y);
+        O = d?.showUploadButton !== !1;
+        let n;
+        t[24] === d ? n = t[25] : (n = d == null || d.titlePlaceholder != null ? void 0 : d.title ?? (0, X.jsx)(m, {
+            id: `artifacts.surface.page.title`,
+            defaultMessage: `Library`
+        }), t[24] = d, t[25] = n), E = n, t[26] === s ? k = t[27] : (k = (0, X.jsx)(L, {
+            conversation: s
+        }), t[26] = s, t[27] = k), T = w, j = `recall`, M = g, t[28] === s.id ? P = t[29] : (P = l && (0, X.jsx)(w.Navbar, {
+            children: (0, X.jsx)(he, {
+                insetBg: (0, X.jsx)(`div`, {
+                    className: `absolute inset-0 backdrop-blur-xs`
+                }),
+                children: (0, X.jsx)(de, {
+                    navHeader: (0, X.jsx)(me, {}),
+                    children: (0, X.jsx)(fe, {
+                        clientThreadId: s.id
+                    })
+                })
+            })
+        }), t[28] = s.id, t[29] = P), S = w.Header, A = x ? (0, X.jsx)(`div`, {
+            "data-testid": `recall-desktop-breadcrumbs`,
+            className: u(`has-[.persistent-page-header-upgrade-pill]:bg-primary hidden has-[.persistent-page-header-upgrade-pill]:sticky has-[.persistent-page-header-upgrade-pill]:top-0 has-[.persistent-page-header-upgrade-pill]:z-20 md:block`, se),
+            children: (0, X.jsxs)(`div`, {
+                className: `h-header-height flex w-full items-center justify-between ps-4 pe-2`,
+                children: [(0, X.jsx)(`nav`, {
+                    className: `flex min-w-0 items-center gap-1 overflow-hidden whitespace-nowrap`,
+                    children: e.map((e, t) => {
+                        let n = t > 0;
+                        if (e.type === `collapsed`) return (0, X.jsxs)(`div`, {
+                            className: `contents`,
+                            children: [n ? (0, X.jsx)(`span`, {
+                                "aria-hidden": `true`,
+                                className: `text-token-text-tertiary px-1 text-sm leading-5`,
+                                children: y?.separator
+                            }) : null, (0, X.jsxs)(C.Root, {
+                                children: [(0, X.jsx)(C.BasicTrigger, {
+                                    asChild: !0,
+                                    children: (0, X.jsx)(`button`, {
+                                        type: `button`,
+                                        "aria-label": y?.openParentFoldersLabel,
+                                        className: `text-token-text-secondary hover:bg-token-bg-tertiary hover:text-token-text-primary focus-visible:ring-token-ring max-w-full min-w-0 shrink overflow-hidden rounded-lg px-2 py-1 text-start text-sm leading-5 transition-colors focus-visible:ring-2 focus-visible:outline-none`,
+                                        children: Z
+                                    })
+                                }), (0, X.jsx)(C.Portal, {
+                                    children: (0, X.jsx)(C.Content, {
+                                        align: `start`,
+                                        size: `medium`,
+                                        className: `max-w-[min(320px,95vw)]`,
+                                        children: e.hiddenItems.map(e => {
+                                            let {
+                                                item: t,
+                                                itemIndex: n
+                                            } = e;
+                                            return (0, X.jsx)(C.Item, {
+                                                size: `large`,
+                                                className: `text-token-text-primary`,
+                                                label: t.name,
+                                                onSelect: () => {
+                                                    y?.onSelect(t.id, n)
+                                                }
+                                            }, `${t.id??`root`}-${n}`)
+                                        })
+                                    })
+                                })]
+                            })]
+                        }, `collapsed-ancestors`);
+                        let {
+                            item: r,
+                            itemIndex: i
+                        } = e, a = i === y?.activeIndex;
+                        return (0, X.jsxs)(`div`, {
+                            className: `contents`,
+                            children: [n ? (0, X.jsx)(`span`, {
+                                className: `text-token-text-tertiary px-1 text-sm leading-5`,
+                                children: y?.separator
+                            }) : null, (0, X.jsx)(`button`, {
+                                type: `button`,
+                                disabled: a,
+                                className: u(`max-w-full min-w-0 shrink overflow-hidden rounded-lg py-1 text-start text-sm leading-5 transition-colors`, i === 0 ? `ms-1 px-1.5` : `px-1.5`, a ? `text-token-text-primary cursor-default` : `text-token-text-secondary hover:bg-token-bg-tertiary hover:text-token-text-primary`),
+                                onClick: () => {
+                                    y?.onSelect(r.id, i)
+                                },
+                                children: (0, X.jsx)(ge, {
+                                    fileName: r.name
+                                })
+                            })]
+                        }, `${r.id??`root`}-${i}`)
+                    })
+                }), l && (0, X.jsx)(N, {
+                    surface: h
+                })]
+            })
+        }) : l && d != null ? (0, X.jsx)(N, {
+            surface: h,
+            standalone: !0
+        }) : null, t[9] = s, t[10] = g, t[11] = h, t[12] = y, t[13] = d, t[14] = x, t[15] = S, t[16] = T, t[17] = E, t[18] = O, t[19] = k, t[20] = A, t[21] = j, t[22] = M, t[23] = P
+    } else S = t[15], T = t[16], E = t[17], O = t[18], k = t[19], A = t[20], j = t[21], M = t[22], P = t[23];
+    let F;
+    t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (F = (0, X.jsx)(r, {
+        children: (0, X.jsx)(R, {})
+    }), t[30] = F) : F = t[30];
+    let I;
+    t[31] !== d || t[32] !== E || t[33] !== v || t[34] !== O ? (I = (l || d != null) && !v && (0, X.jsx)(ve, {
+        navigationButton: l ? (0, X.jsx)(ue, {}) : void 0,
+        title: E,
+        titlePrefix: d?.titlePrefix,
+        titlePlaceholder: d?.titlePlaceholder,
+        rightContent: d?.rightContent ?? (d && O ? (0, X.jsx)(ne, {
+            size: `medium`,
+            "aria-disabled": d.uploadDisabled,
+            onClick: e => {
+                if (d.uploadDisabled) {
+                    e.preventDefault();
+                    return
+                }
+                d.onUpload()
+            },
+            children: (0, X.jsx)(m, {
+                id: `artifacts.surface.upload_files`,
+                defaultMessage: `Upload`
+            })
+        }) : void 0)
+    }), t[31] = d, t[32] = E, t[33] = v, t[34] = O, t[35] = I) : I = t[35];
+    let z;
+    t[36] !== S || t[37] !== I || t[38] !== A ? (z = (0, X.jsxs)(S, {
+        children: [A, F, I]
+    }), t[36] = S, t[37] = I, t[38] = A, t[39] = z) : z = t[39];
+    let B;
+    t[40] === Symbol.for(`react.memo_cache_sentinel`) ? (B = (0, X.jsx)(oe, {}), t[40] = B) : B = t[40];
+    let V;
+    t[41] === s ? V = t[42] : (V = (0, X.jsx)(r, {
+        children: (0, X.jsx)(pe, {
+            conversation: s
+        })
+    }), t[41] = s, t[42] = V);
+    let H, U, W;
+    t[43] === s.id ? (H = t[44], U = t[45], W = t[46]) : (H = (0, X.jsx)(ye, {
+        clientThreadId: s.id
+    }), U = (0, X.jsx)(be, {
+        clientThreadId: s.id
+    }), W = (0, X.jsx)(K, {
+        clientThreadId: s.id
+    }), t[43] = s.id, t[44] = H, t[45] = U, t[46] = W);
+    let G;
+    t[47] !== V || t[48] !== H || t[49] !== U || t[50] !== W ? (G = (0, X.jsxs)(w.ContentSidebar, {
+        children: [V, H, U, W]
+    }), t[47] = V, t[48] = H, t[49] = U, t[50] = W, t[51] = G) : G = t[51];
+    let q;
+    t[52] !== T || t[53] !== i || t[54] !== z || t[55] !== G || t[56] !== j || t[57] !== M || t[58] !== P ? (q = (0, X.jsxs)(T, {
+        className: j,
+        enableSidePaneShell: M,
+        children: [P, z, i, B, G]
+    }), t[52] = T, t[53] = i, t[54] = z, t[55] = G, t[56] = j, t[57] = M, t[58] = P, t[59] = q) : q = t[59];
+    let Q;
+    t[60] === s ? Q = t[61] : (Q = (0, X.jsx)(D, {
+        conversation: s
+    }), t[60] = s, t[61] = Q);
+    let $;
+    return t[62] !== k || t[63] !== q || t[64] !== Q ? ($ = (0, X.jsxs)(X.Fragment, {
+        children: [k, q, Q]
+    }), t[62] = k, t[63] = q, t[64] = Q, t[65] = $) : $ = t[65], $
+}
+
+function xe() {
+    return V()
+}
+var J, Y, X, Z, Q = e((() => {
+    J = h(), a(), j(), I(), v(), o(), P(), A(), E(), c(), S(), O(), U(), M(), W(), H(), k(), z(), b(), y(), B(), T(), F(), x(), l(), s(), d(), G(), i(), Y = t(p()), _(), f(), X = g(), Z = `...`
+}));
+export {
+    Q as n, q as t
+};
+//# sourceMappingURL=9302b335-n6znm28wxpgg2my7.js.map

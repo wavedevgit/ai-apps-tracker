@@ -1,0 +1,678 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/7ed9b371-mtm5oaij3deby6e9.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-qsuygr73qjc6rh65.js", "assets/2340486e-komxp8tzs51ny4jj.js", "assets/root-lelxp0l2.css", "assets/conversation-small-cawdu7il3ha6y70c.js", "assets/30901919-jory365vq6ym5crx.js", "assets/c470f5ab-in0lllrdrzeo67gs.js", "assets/0e5afe53-f9gmgfmgrr83ziw3.js", "assets/conversation-small-czggvj2v.css", "assets/82782bc9-jj605vonxg0iyc7p.js", "assets/31cec8d8-ejzahhq8v425zkie.js", "assets/dced7e81-gzel4lkhr8icz6qa.js", "assets/8d846022-kz7pyrbiduq9ktik.js", "assets/df59e297-hhsu9fndczbcvp55.js", "assets/8b34dbc2-d4icgkio4i3wfm6q.js", "assets/e1a66d2b-iktyf2mausmi8n5g.js", "assets/7517017f-ovzqz6cpfshem2iz.js", "assets/373ddd65-o5ueta5lk6m8a4cj.js", "assets/f36e0e1d-cdbf919nztesaoj7.js", "assets/4c0f1f8e-lcllh9m5rwe6l2ew.js", "assets/7517017f-nzi9ks4t1ma09scj.js", "assets/2df5afbf-n1f9a6r6m3z8x5rc.js", "assets/b4b33d24-gd0r1cmrommij9va.js", "assets/bcae0416-gpoh40wq8xybesjx.js", "assets/e99f8e1a-bssn075ev01abn1i.js", "assets/bcae0416-gky2jkyu7jq786j6.js", "assets/4813494d-kb4lhgow55mg6gy7.js", "assets/e5d54aa7-deuqpfi9ofxkyei0.js", "assets/fc5e7148-ept0fo97tlmzifty.js", "assets/6afb0137-lugfek0sx1j4yebo.js", "assets/ac827dee-dciozoiddqg1oc1p.js", "assets/5ab42519-nnzognndvlril2yj.js", "assets/8d846022-o2e44jiuve4dh4a9.js", "assets/ed61b531-llbcful07qakr8v9.js", "assets/e74608d1-me868l71k3d1pcya.js", "assets/21d5ff49-jb0dwvqzgbxncuvu.js", "assets/model-cursor-ivzj8m6u.css", "assets/bcae0416-nor18e8637znzbw0.js", "assets/bcae0416-ii7txpcg3brxgn81.js", "assets/6cb574fa-hpeydd2lxw6dodj4.js", "assets/a4ef304b-dpx54jrhg24zia67.js", "assets/1c4de3ec-kscwqch3va9o0ube.js", "assets/60549c99-ljg58x2g4xar4kyp.js", "assets/ce52ae67-h7tlc5oeh6o4lhgs.js", "assets/dccfc4ad-e0yu6cagqlv3hrm9.js", "assets/8baac9c1-lv7abm5nmqnkirb9.js", "assets/25e69e8b-fbc5mkxakth6myx6.js", "assets/bd1b82bd-d1qdxwjr45ametaq.js", "assets/819fa1c4-c4l4ofquuy5fd21l.js", "assets/edb73080-j5r0s8sgi5y35csl.js", "assets/3ed411a3-e9fz4l2rt3pjugcf.js", "assets/8742b478-n9ctg1vxa2pdnusu.js", "assets/3c02c844-h8jde1zb91w312sv.js", "assets/23ad950b-b5u7cb6jlnfyxs6e.js", "assets/32a2db56-nrra5q4lpf3xst1v.js", "assets/70ccb607-h0i5w28ivshv2jop.js", "assets/4aa1bb90-67thjbfomst0dyy3.js", "assets/c2675c8c-nxl2ic2ofk2vw70s.js", "assets/global-modals-lv5n3ujm.css", "assets/5422a199-ohc0ujx944q7esd3.js", "assets/e3127a4c-i1be5xceldvwhr01.js", "assets/prosemirror-i3ptkrl8.css", "assets/781797c9-bii94xwz65ushkiu.js", "assets/22143f97-fdarihia8f1k2ytk.js", "assets/23f8a5c4-mwgxigmustw19tgx.js", "assets/d937f443-jzhmnp834zusgt1v.js", "assets/d335a33e-o90cfoqsxz6er0us.js", "assets/017c9c5c-d0lv19ogauot3exn.js", "assets/1a5e078c-bjj3p5h7dna5ay21.js", "assets/92cd10e6-kl04l14qv84ebr1i.js", "assets/b4c3a217-fgu2yjgimogrm4g0.js", "assets/4e1f6607-l882sx5ufomnxng9.js", "assets/32f10268-efub0or0dfve2338.js", "assets/7ec8c41d-ijlh5aoseploqtob.js", "assets/5fe72b0f-mpesntcup5zqacug.js", "assets/e87af100-l1ygl48dqg4x6qw1.js", "assets/051ead45-hajnnq1kur4ayj67.js", "assets/57f71cac-j047h9yf8yzhzchf.js", "assets/5798741d-gy694h0dvfqm8xpx.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    J0 as n,
+    J5 as r,
+    L7 as i,
+    M5 as a,
+    N7 as o,
+    VU as s,
+    Y0 as c,
+    _nt as l,
+    aC as u,
+    aq as ee,
+    b5 as d,
+    fq as te,
+    gZ as ne,
+    hnt as f,
+    iat as p,
+    m8 as m,
+    nat as re,
+    oC as ie,
+    q5 as ae,
+    xZ as oe,
+    zU as h
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as g,
+    Hn as _,
+    Rn as se,
+    Tn as ce,
+    Vn as v,
+    ln as y,
+    p as b,
+    s as x,
+    un as S,
+    zn as C
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    $zt as le,
+    CCn as ue,
+    E3t as de,
+    EUn as fe,
+    IS as pe,
+    LS as me,
+    S3t as he,
+    SCn as w,
+    cCn as ge,
+    dmn as _e,
+    eBt as T,
+    emn as ve,
+    fmn as ye,
+    hUn as E,
+    lCn as D,
+    lUn as O,
+    lmn as k,
+    mUn as A,
+    omn as j,
+    rmn as M,
+    uUn as N,
+    vL as P,
+    xUn as be,
+    yL as F
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Jy as xe,
+    Ky as Se,
+    Yy as Ce,
+    qy as we
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    c as Te,
+    n as Ee
+} from "./31cec8d8-ejzahhq8v425zkie.js";
+import {
+    n as De
+} from "./cc275b97-nt3yw0k27rfjgtkz.js";
+import {
+    n as Oe
+} from "./7517017f-ovzqz6cpfshem2iz.js";
+import {
+    t as ke
+} from "./4c0f1f8e-lcllh9m5rwe6l2ew.js";
+import {
+    t as Ae
+} from "./7517017f-nzi9ks4t1ma09scj.js";
+import {
+    a as je,
+    r as Me
+} from "./76b5a357-benxdh69028dkycz.js";
+import {
+    n as I,
+    r as Ne
+} from "./ac827dee-dciozoiddqg1oc1p.js";
+var Pe = e((() => {
+        De()
+    })),
+    L, Fe = e((() => {
+        j(), L = (e = []) => e.filter(({
+            status: e
+        }) => e !== ve.DISMISSED)
+    })),
+    R, z, B, V, H, Ie = e((() => {
+        Oe(), Te(), de(), m(), ee(), c(), r(), R = t(ke()), Ae(), z = v(), S(), B = ({
+            numLines: e = 20
+        }) => {
+            let [{
+                width: t
+            }, n] = (0, R.default)(), r = !a(te), i = t >= 1091 ? 775 : 580, o = r ? 18 : 36;
+            return (0, z.jsx)(`div`, {
+                className: ae(Ee.document, `mt-4`),
+                ref: n,
+                style: {
+                    margin: `0 ${o}px`
+                },
+                children: (0, z.jsx)(`div`, {
+                    style: {
+                        width: i
+                    },
+                    children: (0, z.jsx)(he, {
+                        lines: e
+                    })
+                })
+            })
+        }, V = n(() => y(() => import(`./7ed9b371-mtm5oaij3deby6e9.js`).then(e => e.DocumentComposer), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67])), {
+            loading: ({
+                value: e,
+                width: t = window.innerWidth
+            }) => (0, z.jsx)(B, {
+                numLines: Math.min(Math.ceil(e.length / (t / 8)), 30)
+            })
+        }), H = e => (0, z.jsx)(V, {
+            ...e
+        })
+    }));
+
+function U(e) {
+    if (e === ``) return 0;
+    let t = e.split(`
+`).length;
+    return e.endsWith(`
+`) ? t - 1 : t
+}
+
+function Le(e, t) {
+    return Me(e, t, {
+        newlineIsToken: !0
+    }).map(e => ({
+        count: e.count ?? U(e.value),
+        value: e.value,
+        type: e.added ? `added` : e.removed ? `removed` : `unchanged`
+    }))
+}
+
+function Re(e) {
+    let t = ``;
+    for (let {
+            type: n,
+            value: r
+        }
+        of e)(n === `added` || n === `unchanged`) && (t += r);
+    return t
+}
+var W, ze = e((() => {
+    je(), W = function(e) {
+        return e.ADDED = `added`, e.REMOVED = `removed`, e.UNCHANGED = `unchanged`, e
+    }({})
+}));
+
+function Be(e, t) {
+    let n = U(t);
+    return {
+        changes: Le(Ue(e, n), t),
+        numLinesDiffed: n
+    }
+}
+
+function Ve(e) {
+    let t = [...e],
+        n = [],
+        r = [];
+    for (; t.length > 0;) {
+        let e = t[t.length - 1];
+        if (e.type === W.REMOVED) t.pop(), e.type === W.REMOVED && n.unshift(e);
+        else if (e.type === W.ADDED) t.pop(), r.unshift(e);
+        else break
+    }
+    return {
+        prunedChanges: [...t, ...r],
+        prunedRemovedChanges: n
+    }
+}
+
+function He(e, t) {
+    let {
+        changes: n,
+        numLinesDiffed: r
+    } = Be(e, t), {
+        prunedChanges: i,
+        prunedRemovedChanges: a
+    } = Ve(n), o = Re(i), s = a.map(e => e.value).join(`
+`), c = G(e, r, `start`);
+    return {
+        content: o + s + c,
+        numLinesDiffed: U(o)
+    }
+}
+
+function Ue(e, t) {
+    if (t <= 0) return ``;
+    let n = 0,
+        r = e.length;
+    for (let i = 0; i < e.length; i++)
+        if (e[i] === `
+` && (n++, n === t)) {
+            r = i + 1;
+            break
+        } return e.substring(0, r)
+}
+
+function G(e, t, n = `start`) {
+    if (t <= 0) return e;
+    if (n === `start`) {
+        let n = 0;
+        for (let r = 0; r < e.length; r++)
+            if (e[r] === `
+` && (n++, n === t)) return e.substring(r + 1);
+        return ``
+    }
+    let r = 0,
+        i = -1,
+        a = e.endsWith(`
+`) ? t + 1 : t;
+    for (let t = e.length - 1; t >= 0; t--)
+        if (e[t] === `
+` && (r++, r === a)) {
+            i = t;
+            break
+        } return i === -1 ? `` : e.substring(0, i + 1)
+}
+var We = e((() => {
+    ze()
+}));
+
+function Ge(e, t) {
+    let n = e?.type ?? M.LOADING,
+        r = e?.content ?? ``,
+        i = _e(e);
+    if (!k(n) || t == null || !i || !ye(e)) return {
+        content: r,
+        currentlyStreamingLineIndex: null
+    };
+    let a = G(r, 1, `end`);
+    if (a === ``) return {
+        content: t.content,
+        currentlyStreamingLineIndex: 0
+    };
+    let o = He(t.content, a);
+    return {
+        content: o.content,
+        currentlyStreamingLineIndex: o.numLinesDiffed
+    }
+}
+var Ke = e((() => {
+    We(), j()
+}));
+async function K(e, t) {
+    if (I.every(t => !e.includes(t))) return e;
+    let {
+        unified: n
+    } = await y(async () => {
+        let {
+            unified: e
+        } = await import(`./conversation-small-cawdu7il3ha6y70c.js`).then(e => (e.fWn(), e.pWn));
+        return {
+            unified: e
+        }
+    }, __vite__mapDeps([5, 1, 2, 3, 4, 6, 7, 8, 9])), {
+        CANVAS_REMARK_PLUGINS: r
+    } = await y(async () => {
+        let {
+            CANVAS_REMARK_PLUGINS: e
+        } = await import(`./e5d54aa7-deuqpfi9ofxkyei0.js`).then(e => (e.n(), e.r));
+        return {
+            CANVAS_REMARK_PLUGINS: e
+        }
+    }, __vite__mapDeps([28, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 29, 18, 30, 31, 27, 32, 33])), {
+        stripDirectivePlugin: i
+    } = await y(async () => {
+        let {
+            stripDirectivePlugin: e
+        } = await import(`./1c4de3ec-kscwqch3va9o0ube.js`).then(e => (e.t(), e.r));
+        return {
+            stripDirectivePlugin: e
+        }
+    }, __vite__mapDeps([42, 1, 5, 2, 3, 4, 6, 7, 8, 9, 31, 30])), {
+        hiveLogDirectivePlugin: a
+    } = await y(async () => {
+        let {
+            hiveLogDirectivePlugin: e
+        } = await import(`./6afb0137-lugfek0sx1j4yebo.js`).then(e => (e.i(), e.r));
+        return {
+            hiveLogDirectivePlugin: e
+        }
+    }, __vite__mapDeps([30, 1, 5, 2, 3, 4, 6, 7, 8, 9])), o = n();
+    o.use(a).use(i, {
+        preserve: t?.preserveContentReferences ? [ne] : void 0
+    }).use(r);
+    let s = await o.process(e);
+    return String(s).trim()
+}
+var q = e((() => {
+    Ne(), oe(), S()
+}));
+
+function J(e) {
+    "use forget";
+    let t = (0, Y.c)(7),
+        {
+            textdocVersion: n,
+            conversation: r
+        } = e,
+        i;
+    t[0] === n ? i = t[1] : (i = e => n && e?.lastCanvasAssistantMessageById[n.textdocId], t[0] = n, t[1] = i);
+    let a = fe(i),
+        o = n?.type,
+        s = n != null,
+        c;
+    return t[2] !== r || t[3] !== s || t[4] !== a || t[5] !== o ? (c = e => {
+        if (!e.selectedText) return;
+        let t = d(r.serverId$);
+        s && t != null && a != null && F({
+            type: `copy`,
+            source: e.source,
+            location: `canvas`,
+            selectedText: e.selectedText,
+            messageId: a,
+            serverThreadId: t,
+            contentType: o != null && k(o) ? `code` : `text`,
+            productLogOnly: e.productLogOnly
+        })
+    }, t[2] = r, t[3] = s, t[4] = a, t[5] = o, t[6] = c) : c = t[6], c
+}
+
+function qe({
+    textdocVersion: e,
+    conversation: t
+}) {
+    let n = g(),
+        r = s(),
+        [i, a] = (0, X.useState)(!1),
+        o = me(),
+        c = J({
+            textdocVersion: e,
+            conversation: t
+        }),
+        l = (0, X.useRef)(e?.content ?? ``);
+    return (0, X.useEffect)(() => {
+        l.current = e?.content ?? ``
+    }, [e]), {
+        handleCopy: t => {
+            i || (o(async () => {
+                let n = await K(l.current);
+                c({
+                    source: `mouse`,
+                    selectedText: n
+                }), O.logButtonClick(A.COPY, {
+                    contentLength: n.length,
+                    textdocType: e?.type
+                });
+                let i = {
+                    "text/plain": n
+                };
+                if (e?.type === M.DOCUMENT) try {
+                    let {
+                        markdownToClipboardContent: e
+                    } = await y(async () => {
+                        let {
+                            markdownToClipboardContent: e
+                        } = await import(`./017c9c5c-d0lv19ogauot3exn.js`).then(e => (e.t(), e.r));
+                        return {
+                            markdownToClipboardContent: e
+                        }
+                    }, __vite__mapDeps([68, 1, 2, 3, 4, 69, 5, 6, 7, 8, 9, 70, 71, 72, 32, 33, 44, 73, 74, 75, 76, 77, 78, 79]));
+                    i = e(n, [])
+                } catch (e) {
+                    O.logError(`Error copying rich text`, e)
+                }
+                u(i, r, t)
+            }, 0), a(!0), o(() => a(!1), 2e3))
+        },
+        Icon: i ? xe : Se,
+        copyLabel: n.formatMessage(Z.copy)
+    }
+}
+var Y, X, Z, Je = e((() => {
+        Y = ce(), E(), N(), be(), j(), Ce(), we(), P(), m(), h(), ie(), pe(), X = t(_()), C(), q(), S(), Z = se({
+            copy: {
+                id: `rbIYfo`,
+                defaultMessage: `Copy`
+            }
+        })
+    })),
+    Q, Ye = e((() => {
+        j(), Q = {
+            [M.CODE_BASH]: {
+                filenameExtension: `sh`,
+                blobType: `text/x-shellscript`
+            },
+            [M.CODE_ZSH]: {
+                filenameExtension: `zsh`,
+                blobType: `text/x-shellscript`
+            },
+            [M.CODE_JAVASCRIPT]: {
+                filenameExtension: `js`,
+                blobType: `application/javascript`
+            },
+            [M.CODE_TYPESCRIPT]: {
+                filenameExtension: `ts`,
+                blobType: `application/typescript`
+            },
+            [M.CODE_HTML]: {
+                filenameExtension: `html`,
+                blobType: `text/html`
+            },
+            [M.CODE_CSS]: {
+                filenameExtension: `css`,
+                blobType: `text/css`
+            },
+            [M.CODE_PYTHON]: {
+                filenameExtension: `py`,
+                blobType: `text/x-python`
+            },
+            [M.CODE_JSON]: {
+                filenameExtension: `json`,
+                blobType: `application/json`
+            },
+            [M.CODE_SQL]: {
+                filenameExtension: `sql`,
+                blobType: `application/sql`
+            },
+            [M.CODE_GO]: {
+                filenameExtension: `go`,
+                blobType: `text/x-go`
+            },
+            [M.CODE_YAML]: {
+                filenameExtension: `yaml`,
+                blobType: `application/x-yaml`
+            },
+            [M.CODE_JAVA]: {
+                filenameExtension: `java`,
+                blobType: `text/x-java-source`
+            },
+            [M.CODE_RUST]: {
+                filenameExtension: `rs`,
+                blobType: `text/rust`
+            },
+            [M.CODE_CPP]: {
+                filenameExtension: `cpp`,
+                blobType: `text/x-c++src`
+            },
+            [M.CODE_SWIFT]: {
+                filenameExtension: `swift`,
+                blobType: `text/swift`
+            },
+            [M.CODE_PHP]: {
+                filenameExtension: `php`,
+                blobType: `application/x-httpd-php`
+            },
+            [M.CODE_XML]: {
+                filenameExtension: `xml`,
+                blobType: `application/xml`
+            },
+            [M.CODE_RUBY]: {
+                filenameExtension: `rb`,
+                blobType: `text/x-ruby`
+            },
+            [M.CODE_HASKELL]: {
+                filenameExtension: `hs`,
+                blobType: `text/x-haskell`
+            },
+            [M.CODE_KOTLIN]: {
+                filenameExtension: `kt`,
+                blobType: `text/x-kotlin`
+            },
+            [M.CODE_CSHARP]: {
+                filenameExtension: `cs`,
+                blobType: `text/x-csharp`
+            },
+            [M.CODE_C]: {
+                filenameExtension: `c`,
+                blobType: `text/x-csrc`
+            },
+            [M.CODE_OBJECTIVEC]: {
+                filenameExtension: `m`,
+                blobType: `text/x-objectivec`
+            },
+            [M.CODE_R]: {
+                filenameExtension: `r`,
+                blobType: `text/plain`
+            },
+            [M.CODE_LUA]: {
+                filenameExtension: `lua`,
+                blobType: `text/x-lua`
+            },
+            [M.CODE_DART]: {
+                filenameExtension: `dart`,
+                blobType: `text/x-dart`
+            },
+            [M.CODE_SCALA]: {
+                filenameExtension: `scala`,
+                blobType: `text/x-scala`
+            },
+            [M.CODE_PERL]: {
+                filenameExtension: `pl`,
+                blobType: `text/x-perl`
+            },
+            [M.CODE_COMMONLISP]: {
+                filenameExtension: `lisp`,
+                blobType: `text/x-common-lisp`
+            },
+            [M.CODE_CLOJURE]: {
+                filenameExtension: `clj`,
+                blobType: `text/x-clojure`
+            },
+            [M.CODE_OCAML]: {
+                filenameExtension: `ml`,
+                blobType: `text/x-ocaml`
+            },
+            [M.CODE_POWERSHELL]: {
+                filenameExtension: `ps1`,
+                blobType: `text/x-powershell`
+            },
+            [M.CODE_VERILOG]: {
+                filenameExtension: `v`,
+                blobType: `text/x-verilog`
+            },
+            [M.CODE_DOCKERFILE]: {
+                filenameExtension: `Dockerfile`,
+                blobType: `text/x-dockerfile`
+            },
+            [M.CODE_VUE]: {
+                filenameExtension: `vue`,
+                blobType: `text/x-vue`
+            },
+            [M.CODE_REACT]: {
+                filenameExtension: `jsx`,
+                blobType: `application/javascript`
+            },
+            [M.CODE_OTHER]: {
+                filenameExtension: `txt`,
+                blobType: `text/plain`
+            },
+            [M.DOCUMENT]: {
+                filenameExtension: `md`,
+                blobType: `text/markdown`
+            },
+            [M.LOADING]: {
+                filenameExtension: `txt`,
+                blobType: `text/plain`
+            }
+        }
+    }));
+
+function Xe({
+    textdocVersion: e,
+    conversation: t
+}) {
+    let n = g(),
+        r = s(),
+        i = (0, $.useCallback)((n, r) => {
+            let i = e?.messageId ?? void 0,
+                a = d(t.serverId$);
+            !a || !i || F({
+                source: `mouse`,
+                type: `download`,
+                selectedText: n,
+                location: `canvas`,
+                contentType: r,
+                messageId: i,
+                serverThreadId: a,
+                productLogOnly: !0
+            })
+        }, [t, e]),
+        a = n.formatMessage({
+            id: `canvas.downloadFileError`,
+            defaultMessage: `Failed to download file. Please try again later.`
+        }),
+        {
+            mutate: c,
+            isPending: l
+        } = b({
+            mutationFn: async ({
+                textdocId: e,
+                exportType: t
+            }) => {
+                let n = await o.safePost(`/export_doc/canvas`, {
+                    requestBody: {
+                        textdoc_id: e,
+                        export_type: t
+                    },
+                    skipJsonTransform: !0
+                });
+                if (!n.ok) throw Error(`Failed to download file`);
+                return n
+            },
+            onSuccess: async (t, {
+                exportType: n
+            }) => {
+                e && w(await t.blob(), ge(t.headers.get(`Content-Disposition`)) ?? `${T(e.title)}.${n}`)
+            },
+            onError: e => {
+                r.danger(a, {
+                    toastId: `textdoc_download_button`,
+                    loggingTitle: a,
+                    loggingDescription: `Failed to download file`
+                }), re.addError(e)
+            }
+        });
+    return {
+        handleFileDownload: async t => {
+            if (e && e.type !== M.LOADING && e.type === M.DOCUMENT) {
+                let n;
+                switch (t) {
+                    case `md`:
+                        n = `chatgpt_canvas_md_download`;
+                        break;
+                    case `pdf`:
+                        n = `chatgpt_canvas_pdf_download`;
+                        break;
+                    case `docx`:
+                        n = `chatgpt_canvas_docx_download`;
+                        break
+                }
+                if (f.logEventWithStatsig(`ChatGPT Canvas Download`, n), i(e.content, k(e.type) ? `code` : `text`), t === `pdf` || t === `docx`) c({
+                    textdocId: e.textdocId,
+                    exportType: t
+                });
+                else if (t === `md`) {
+                    let {
+                        filenameExtension: t,
+                        blobType: n
+                    } = Q[e.type], r = await K(e.content);
+                    w(new Blob([r], {
+                        type: n
+                    }), `${T(e.title)}.${t}`)
+                }
+            }
+        },
+        handleBlobDownload: () => {
+            if (!e) return;
+            let {
+                filenameExtension: t,
+                blobType: n
+            } = Q[e.type];
+            e.type !== M.LOADING && (f.logEventWithStatsig(`ChatGPT Canvas Download`, `chatgpt_canvas_code_download`, {
+                blobType: n
+            }), w(new Blob([e.content], {
+                type: n
+            }), `${T(e.title)}.${t}`), i(e.content, k(e.type) ? `code` : `text`))
+        },
+        isLoading: l,
+        downloadCopyLabel: n.formatMessage({
+            id: `canvas.download-button`,
+            defaultMessage: `Download`
+        }),
+        isDocument: e?.type === M.DOCUMENT
+    }
+}
+var $, Ze = e((() => {
+    Ye(), j(), P(), m(), h(), l(), p(), ue(), D(), i(), x(), le(), $ = t(_()), C(), q()
+}));
+export {
+    qe as a, H as c, L as d, Fe as f, J as i, B as l, Xe as n, Ge as o, Pe as p, Je as r, Ke as s, Ze as t, Ie as u
+};
+//# sourceMappingURL=bc86e6a9-j6gskfncqech3td5.js.map

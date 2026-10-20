@@ -1,0 +1,2 @@
+import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Hn as n}from"./2340486e-komxp8tzs51ny4jj.js";function r(){"use forget";return(0,i.useContext)(a)}var i,a,o=e((()=>{i=t(n()),a=(0,i.createContext)({fullscreenTransitionPhase:`idle`})}));export{o as n,r,a as t};
+//# sourceMappingURL=e54430f0-bkh2px74e3a3cnlh.js.map

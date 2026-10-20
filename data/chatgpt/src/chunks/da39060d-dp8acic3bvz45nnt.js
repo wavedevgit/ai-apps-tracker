@@ -1,0 +1,240 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Dw as n,
+    J5 as r,
+    JT as i,
+    Ow as a,
+    _N as o,
+    q5 as s,
+    qT as c,
+    vN as l
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as u,
+    Hn as d,
+    Pn as f,
+    Tn as p,
+    Vn as m,
+    zn as h
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    MGt as g,
+    NGt as _,
+    hJt as v,
+    mJt as y
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Bv as b,
+    Vv as x,
+    ap as S,
+    ex as C,
+    op as w,
+    tx as T
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    a as E,
+    o as D,
+    s as O
+} from "./1c86a5ac-mgxjsuxkopk8yts6.js";
+var k, A, j, M = e((() => {
+        k = p(), v(), h(), A = m(), j = () => {
+            "use forget";
+            let e = (0, k.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, A.jsx)(`div`, {
+                role: `alert`,
+                className: `border-token-border-light text-token-text-secondary rounded-2xl border p-4 text-sm`,
+                children: (0, A.jsx)(f, {
+                    ...y
+                })
+            }), e[0] = t) : t = e[0], t
+        }
+    })),
+    N, P, F, I, L = e((() => {
+        N = p(), i(), w(), x(), a(), C(), _(), r(), h(), P = m(), F = e => {
+            "use forget";
+            let t = (0, N.c)(23),
+                {
+                    title: n,
+                    widgetDisplayName: r,
+                    widgetDomain: i,
+                    onClickBack: a,
+                    onClickClose: o,
+                    onClickForward: s,
+                    onClickOpenInApp: l,
+                    canGoBack: u,
+                    canGoForward: d,
+                    logo: p,
+                    hideOpenInAppButton: m
+                } = e,
+                h;
+            t[0] !== u || t[1] !== d || t[2] !== a || t[3] !== o || t[4] !== s ? (h = (0, P.jsx)(I, {
+                onClickBack: a,
+                onClickForward: s,
+                canGoBack: u,
+                canGoForward: d,
+                onClickClose: o,
+                isNavOnly: !1
+            }), t[0] = u, t[1] = d, t[2] = a, t[3] = o, t[4] = s, t[5] = h) : h = t[5];
+            let g;
+            t[6] === p ? g = t[7] : (g = p && (0, P.jsx)(`img`, {
+                src: p,
+                alt: ``,
+                "aria-hidden": `true`,
+                "data-testid": `fullscreen-header-logo`,
+                className: `h-5 w-5 shrink-0 rounded-md object-contain`
+            }), t[6] = p, t[7] = g);
+            let _;
+            t[8] === n ? _ = t[9] : (_ = (0, P.jsx)(`span`, {
+                className: `truncate`,
+                children: n
+            }), t[8] = n, t[9] = _);
+            let v;
+            t[10] !== g || t[11] !== _ ? (v = (0, P.jsxs)(`div`, {
+                className: `text-token-text-secondary flex min-w-0 items-center justify-center gap-2 text-base`,
+                children: [g, _]
+            }), t[10] = g, t[11] = _, t[12] = v) : v = t[12];
+            let y;
+            t[13] !== m || t[14] !== p || t[15] !== l || t[16] !== r || t[17] !== i ? (y = !m && i && (0, P.jsx)(`div`, {
+                className: `flex items-center justify-end`,
+                children: (0, P.jsx)(c, {
+                    icon: p ? void 0 : T,
+                    onClick: l,
+                    color: `secondary`,
+                    children: (0, P.jsx)(f, {
+                        id: `JvQEOX`,
+                        defaultMessage: `Open in {app}`,
+                        values: {
+                            app: r
+                        }
+                    })
+                })
+            }), t[13] = m, t[14] = p, t[15] = l, t[16] = r, t[17] = i, t[18] = y) : y = t[18];
+            let b;
+            return t[19] !== h || t[20] !== v || t[21] !== y ? (b = (0, P.jsxs)(`div`, {
+                className: `border-token-border-secondary bg-token-bg-primary sm:bg-token-bg-primary z-10 grid h-(--header-height) grid-cols-[1fr_auto_1fr] border-b px-2`,
+                children: [h, v, y]
+            }), t[19] = h, t[20] = v, t[21] = y, t[22] = b) : b = t[22], b
+        }, I = e => {
+            "use forget";
+            let t = (0, N.c)(19),
+                {
+                    onClickBack: r,
+                    onClickForward: i,
+                    onClickClose: a,
+                    canGoBack: o,
+                    canGoForward: c,
+                    isNavOnly: l
+                } = e,
+                d = u(),
+                f = l && `absolute start-2 top-2.5 z-10`,
+                p;
+            t[0] === f ? p = t[1] : (p = s(`flex items-center justify-start gap-3`, f), t[0] = f, t[1] = p);
+            let m;
+            t[2] === d ? m = t[3] : (m = d.formatMessage({
+                id: `H0F9KU`,
+                defaultMessage: `Close`
+            }), t[2] = d, t[3] = m);
+            let h;
+            t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (h = s(`h-7! w-7!`), t[4] = h) : h = t[4];
+            let _;
+            t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = (0, P.jsx)(n, {
+                className: `icon`
+            }), t[5] = _) : _ = t[5];
+            let v;
+            t[6] !== a || t[7] !== m ? (v = (0, P.jsx)(g, {
+                label: m,
+                className: h,
+                onClick: a,
+                icon: _
+            }), t[6] = a, t[7] = m, t[8] = v) : v = t[8];
+            let y;
+            t[9] !== o || t[10] !== c || t[11] !== d || t[12] !== r || t[13] !== i ? (y = (o || c) && (0, P.jsxs)(`div`, {
+                className: `flex items-center gap-1`,
+                children: [(0, P.jsx)(g, {
+                    label: d.formatMessage({
+                        id: `y0H9Ps`,
+                        defaultMessage: `Back`
+                    }),
+                    className: s(`h-7! w-7!`),
+                    onClick: r,
+                    disabled: !o,
+                    icon: (0, P.jsx)(S, {
+                        className: `icon`
+                    })
+                }), (0, P.jsx)(g, {
+                    label: d.formatMessage({
+                        id: `4zGgS+`,
+                        defaultMessage: `Forward`
+                    }),
+                    className: s(`h-7! w-7!`),
+                    onClick: i,
+                    disabled: !c,
+                    icon: (0, P.jsx)(b, {
+                        className: `icon`
+                    })
+                })]
+            }), t[9] = o, t[10] = c, t[11] = d, t[12] = r, t[13] = i, t[14] = y) : y = t[14];
+            let x;
+            return t[15] !== p || t[16] !== v || t[17] !== y ? (x = (0, P.jsxs)(`div`, {
+                className: p,
+                children: [v, y]
+            }), t[15] = p, t[16] = v, t[17] = y, t[18] = x) : x = t[18], x
+        }
+    })),
+    R, z, B = e((() => {
+        D(), o(), R = t(d()), z = ({
+            csp: e,
+            domain: t,
+            widgetId: n,
+            widgetRef: r
+        }) => {
+            let i = E(t),
+                [a, o] = (0, R.useState)(null),
+                [s, c] = (0, R.useState)(!1);
+            (0, R.useEffect)(() => {
+                o(null), c(!1)
+            }, [n, i]);
+            let u = l(({
+                href: r
+            }) => {
+                if (r === null) {
+                    o(null), c(!0);
+                    return
+                }
+                if (!r.trim()) {
+                    o(null), c(!1);
+                    return
+                }
+                let a = i ?? window.location.origin,
+                    s;
+                try {
+                    s = new URL(r, a)
+                } catch {}!s || !O(s.toString(), e, t) || (c(!1), o({
+                    widgetId: n,
+                    url: s.toString()
+                }))
+            });
+            return {
+                openInApp: l(() => {
+                    if (a?.widgetId === n) {
+                        window.open(a.url, `_blank`, `noopener,noreferrer`);
+                        return
+                    }
+                    i && r.current?.getCurrentPath()?.then(e => {
+                        e != null && window.open(new URL(e.replace(/^\/+/, ``), i), `_blank`, `noopener,noreferrer`)
+                    })
+                }),
+                setOpenInAppUrl: u,
+                shouldHideOpenInAppButton: s,
+                widgetRedirectUrl: i
+            }
+        }
+    }));
+export {
+    L as a, I as i, z as n, j as o, F as r, M as s, B as t
+};
+//# sourceMappingURL=da39060d-dp8acic3bvz45nnt.js.map

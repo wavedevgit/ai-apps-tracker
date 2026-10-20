@@ -1,2 +1,82 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{BE as t,G5 as n,HE as r,K5 as i,VE as a}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as o,wn as s}from"./2340486e-oc6d2eodbcrmxur3.js";import{ATt as c,MTt as l}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{t as u}from"./e981ddae-m7civn9ndz8nfodx.js";import{t as d}from"./a35abcd6-o5uzbzp1jprs3y1b.js";import{n as f,t as p}from"./1aa4cb0b-gcu3hygy26zq0fvs.js";var m,h,g,_=e((()=>{m=`R18Dia_Container`,h=`R18Dia_Warning`,g={Container:m,Warning:h}})),v,y,b,x=e((()=>{v=s(),r(),c(),d(),p(),i(),_(),y=o(),b=e=>{"use forget";let r=(0,v.c)(16),{connector:i,className:o,iconClassName:s,borderStyle:c,isLoading:d}=e,p=d!==void 0&&d,m;r[0]===i?m=r[1]:(m=t(i,{preferIconAssets:a()}),r[0]=i,r[1]=m);let{lightLogoUrl:h,darkLogoUrl:_}=m,b;r[2]!==_||r[3]!==h?(b={lightLogoUrl:h,darkLogoUrl:_},r[2]=_,r[3]=h,r[4]=b):b=r[4];let x=l(b),S=!p&&!x.isPending,C;r[5]===o?C=r[6]:(C=n(g.Container,o),r[5]=o,r[6]=C);let w;r[7]!==i||r[8]!==s||r[9]!==x||r[10]!==S?(w=S&&(i?(0,y.jsx)(f,{src:x.data?.url??``,alt:i.name,className:s}):(0,y.jsx)(u,{className:n(g.Warning,s)})),r[7]=i,r[8]=s,r[9]=x,r[10]=S,r[11]=w):w=r[11];let T;return r[12]!==c||r[13]!==C||r[14]!==w?(T=(0,y.jsx)(`div`,{className:C,"data-border-style":c,children:w}),r[12]=c,r[13]=C,r[14]=w,r[15]=T):T=r[15],T}}));export{x as n,b as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    BE as t,
+    G5 as n,
+    HE as r,
+    K5 as i,
+    VE as a
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as o,
+    wn as s
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    ATt as c,
+    MTt as l
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    t as u
+} from "./e981ddae-m7civn9ndz8nfodx.js";
+import {
+    t as d
+} from "./a35abcd6-o5uzbzp1jprs3y1b.js";
+import {
+    n as f,
+    t as p
+} from "./1aa4cb0b-gcu3hygy26zq0fvs.js";
+var m, h, g, _ = e((() => {
+        m = `R18Dia_Container`, h = `R18Dia_Warning`, g = {
+            Container: m,
+            Warning: h
+        }
+    })),
+    v, y, b, x = e((() => {
+        v = s(), r(), c(), d(), p(), i(), _(), y = o(), b = e => {
+            "use forget";
+            let r = (0, v.c)(16),
+                {
+                    connector: i,
+                    className: o,
+                    iconClassName: s,
+                    borderStyle: c,
+                    isLoading: d
+                } = e,
+                p = d !== void 0 && d,
+                m;
+            r[0] === i ? m = r[1] : (m = t(i, {
+                preferIconAssets: a()
+            }), r[0] = i, r[1] = m);
+            let {
+                lightLogoUrl: h,
+                darkLogoUrl: _
+            } = m, b;
+            r[2] !== _ || r[3] !== h ? (b = {
+                lightLogoUrl: h,
+                darkLogoUrl: _
+            }, r[2] = _, r[3] = h, r[4] = b) : b = r[4];
+            let x = l(b),
+                S = !p && !x.isPending,
+                C;
+            r[5] === o ? C = r[6] : (C = n(g.Container, o), r[5] = o, r[6] = C);
+            let w;
+            r[7] !== i || r[8] !== s || r[9] !== x || r[10] !== S ? (w = S && (i ? (0, y.jsx)(f, {
+                src: x.data?.url ?? ``,
+                alt: i.name,
+                className: s
+            }) : (0, y.jsx)(u, {
+                className: n(g.Warning, s)
+            })), r[7] = i, r[8] = s, r[9] = x, r[10] = S, r[11] = w) : w = r[11];
+            let T;
+            return r[12] !== c || r[13] !== C || r[14] !== w ? (T = (0, y.jsx)(`div`, {
+                className: C,
+                "data-border-style": c,
+                children: w
+            }), r[12] = c, r[13] = C, r[14] = w, r[15] = T) : T = r[15], T
+        }
+    }));
+export {
+    x as n, b as t
+};
 //# sourceMappingURL=11d5ad21-lcbjeqjm48rbbibg.js.map

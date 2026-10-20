@@ -1,2 +1,562 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{G5 as n,IN as r,JT as i,Ji as a,K5 as o,LN as s,Xi as c,qT as l}from"./4813494d-ed29bs6yiwucn7st.js";import{$ as u,Bn as d,In as f,Ln as p,Nn as m,Rn as h,Vn as g,at as _,wn as v,zn as y}from"./2340486e-oc6d2eodbcrmxur3.js";import{Ajt as b,jjt as x,mat as S,pat as C}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{Cx as w,Cy as T,Sx as E,Sy as D}from"./30901919-om7b3qf5hp4j9x4l.js";function O(e,t){let n=new Map;for(let t of e)for(let e of t.categories){let r=n.get(e.id);r||(r={...e,providers:[]},n.set(e.id,r)),r.providers.some(e=>e.id===t.id)||r.providers.push(t)}return[...n.values()].sort((e,n)=>e.label.localeCompare(n.label,t))}function k(e,t,n,r){if(e.reduce((e,t)=>e+t,0)+Math.max(0,e.length-1)*r<=t)return e.length;let i=n,a=0;for(let n of e){if(i+r+n>t)break;i+=r+n,a++}return a}var A=e((()=>{}));function j(e){return!e}function M(e){return e.getBoundingClientRect().width}function N(e){return e.providers.length>0}var P,F,I,L,R,z,B,V,H,U=e((()=>{P=v(),x(),w(),C(),r(),o(),F=t(g()),h(),u(),A(),I=d(),L=`inline-flex h-8 shrink-0 items-center gap-1 rounded-full border ps-2 pe-3 text-sm whitespace-nowrap`,R=f({id:`plugins.dependencies.overflow.count`,defaultMessage:`+{count, number}`}),z=e=>{"use forget";let t=(0,P.c)(22),{provider:r,userHoverStates:i,nameRef:a}=e,o=r.name,s=r.iconUrl,c=r.iconUrlDark,l=r.muted&&(i?`opacity-40`:`opacity-50`),u=i&&r.muted&&`grayscale`,d;t[0]!==l||t[1]!==u?(d=n(`size-5! [&_svg]:size-4!`,l,u),t[0]=l,t[1]=u,t[2]=d):d=t[2];let f;t[3]!==r.iconUrl||t[4]!==r.iconUrlDark||t[5]!==r.name||t[6]!==d?(f=(0,I.jsx)(S,{name:o,iconUrl:s,iconDarkUrl:c,variant:`inline`,className:d,isNextToLabel:!0}),t[3]=r.iconUrl,t[4]=r.iconUrlDark,t[5]=r.name,t[6]=d,t[7]=f):f=t[7];let p=r.muted&&(i?`text-token-text-tertiary`:`text-token-text-secondary`),m;t[8]===p?m=t[9]:(m=n(`truncate`,p),t[8]=p,t[9]=m);let h;t[10]!==a||t[11]!==r.name||t[12]!==m?(h=(0,I.jsx)(`span`,{ref:a,className:m,children:r.name}),t[10]=a,t[11]=r.name,t[12]=m,t[13]=h):h=t[13];let g;t[14]!==r.isInstalled||t[15]!==r.muted||t[16]!==i?(g=i&&r.isInstalled&&!r.muted&&(0,I.jsx)(E,{className:`icon-sm text-token-text-tertiary shrink-0`,"aria-hidden":`true`}),t[14]=r.isInstalled,t[15]=r.muted,t[16]=i,t[17]=g):g=t[17];let _;return t[18]!==h||t[19]!==g||t[20]!==f?(_=(0,I.jsxs)(I.Fragment,{children:[f,h,g]}),t[18]=h,t[19]=g,t[20]=f,t[21]=_):_=t[21],_},B=e=>{"use forget";let t=(0,P.c)(23),{provider:r,userHoverStates:i}=e,a=y(),[o,c]=(0,F.useState)(!1),l=(0,F.useRef)(!1),u=(0,F.useRef)(null),[d,f]=(0,F.useState)(!1),p=!i||r.muted?r.statusLabel:void 0,m;t[0]!==a||t[1]!==r.name||t[2]!==p?(m=p?a.formatMessage({id:`plugins.dependencies.chip.accessible_label`,defaultMessage:`{name}, {status}`},{name:r.name,status:p}):r.name,t[0]=a,t[1]=r.name,t[2]=p,t[3]=m):m=t[3];let h=m,g=d?h:p,v=i&&!!g,x=r.href?`a`:v?`button`:`span`,S,C;t[4]===o?(S=t[5],C=t[6]):(S=()=>{let e=u.current?.parentElement;if(!o||!e)return;let t=t=>{t.composedPath().includes(e)||c(!1)},n=e.ownerDocument;return n.addEventListener(`pointerdown`,t,!0),()=>{n.removeEventListener(`pointerdown`,t,!0)}},C=[o],t[4]=o,t[5]=S,t[6]=C),(0,F.useEffect)(S,C);let w;t[7]!==p||t[8]!==i?(w=()=>{let e=u.current;if(!i||!e)return;let t=()=>{let t=e.scrollWidth>e.clientWidth;f(t),!t&&!p&&c(!1)};t();let n=new ResizeObserver(t);return n.observe(e),()=>n.disconnect()},t[7]=p,t[8]=i,t[9]=w):w=t[9];let T;t[10]!==x||t[11]!==r.name||t[12]!==p||t[13]!==i?(T=[r.name,p,i,x],t[10]=x,t[11]=r.name,t[12]=p,t[13]=i,t[14]=T):T=t[14],s(w,T);let E;if(t[15]!==x||t[16]!==v||t[17]!==h||t[18]!==r||t[19]!==o||t[20]!==g||t[21]!==i){let e=n(L,`max-w-full`,i&&`interactive-button interactive-outline-secondary focus-visible:outline-token-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2`,i&&(r.muted?`interactive-button-muted`:`border-token-border-light bg-token-bg-primary text-token-text-primary hover:bg-token-bg-secondary`)),a=x===`button`?`button`:`span`,s=t=>r.href?(0,I.jsx)(_,{...t,to:r.href,state:r.navigationState,"aria-label":i?r.name:h,"aria-description":i?r.statusLabel:void 0,title:i?void 0:h,className:n(e,`interactive-button interactive-outline-secondary`,!i&&`interactive-button-secondary`),children:(0,I.jsx)(z,{provider:r,userHoverStates:i,nameRef:u})}):(0,I.jsx)(a,{...t,ref:e=>{if(e)return l.current&&e.focus(),l.current=!1,()=>{l.current=e===e.ownerDocument.activeElement}},type:v?`button`:void 0,"data-dependency-chip":!0,"data-state":o?`open`:void 0,tabIndex:v?0:-1,onClick:v?()=>c(j):void 0,onBlur:()=>c(!1),onKeyDown:e=>{i&&e.key===`Escape`&&c(!1)},className:n(e,!i&&`border-token-border-light bg-token-bg-primary text-token-text-primary`),title:i?void 0:h,"aria-label":i?r.name:h,"aria-description":i?r.statusLabel:void 0,children:(0,I.jsx)(z,{provider:r,userHoverStates:i,nameRef:u})});E=i?(0,I.jsx)(b,{content:g,disabled:!g,showOnTouch:!r.href,forceOpen:o,children:s}):s(),t[15]=x,t[16]=v,t[17]=h,t[18]=r,t[19]=o,t[20]=g,t[21]=i,t[22]=E}else E=t[22];return E},V=e=>{"use forget";let t=(0,P.c)(88),{group:r,userHoverStates:i}=e,a=y(),o=(0,F.useId)(),c=(0,F.useRef)(null),l=(0,F.useRef)(null),u=(0,F.useRef)(null),d=(0,F.useRef)(null),f=(0,F.useRef)(null),[p,m]=(0,F.useState)(0),[h,g]=(0,F.useState)(!1),{providers:_}=r,v;t[0]!==h||t[1]!==_.length?(v=()=>{let e=c.current,t=l.current;if(!e||!t)return;let n=()=>{let n=[...t.children],r=n.pop();if(!r)return;let i=k(n.map(M),e.getBoundingClientRect().width,r.getBoundingClientRect().width,parseFloat(getComputedStyle(e).columnGap)||0),a=[...e.querySelectorAll(`:scope > a, :scope > span, :scope > button[data-dependency-chip]`)].findIndex(t=>t===e.ownerDocument.activeElement);!h&&a>=i&&a>=0?d.current=`overflow`:!h&&i===_.length&&e.ownerDocument.activeElement===u.current&&(d.current=`row`),m(i)};n();let r=new ResizeObserver(n);r.observe(e);for(let e of t.children)r.observe(e);return()=>r.disconnect()},t[0]=h,t[1]=_.length,t[2]=v):v=t[2];let b;t[3]!==h||t[4]!==_?(b=[_,h],t[3]=h,t[4]=_,t[5]=b):b=t[5],s(v,b);let x;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(x=()=>{let e=f.current;f.current=null,e!=null&&(c.current?.querySelectorAll(`:scope > a, :scope > span, :scope > button[data-dependency-chip]`)?.[e]??u.current)?.focus();let t=d.current;if(d.current=null,t===`overflow`&&u.current?.focus(),t===`row`){let e=c.current;(e?.querySelector(`a`)??e)?.focus()}},t[6]=x):x=t[6];let S;t[7]!==h||t[8]!==p?(S=[p,h],t[7]=h,t[8]=p,t[9]=S):S=t[9],s(x,S);let C;t[10]!==h||t[11]!==_.length||t[12]!==p?(C=e=>{h&&!e&&(d.current=p<_.length?`overflow`:`row`),e?f.current=p:p===_.length&&u.current===c.current?.ownerDocument.activeElement&&(d.current=`row`),g(e)},t[10]=h,t[11]=_.length,t[12]=p,t[13]=C):C=t[13];let w=C,T,E,D,O,A,j,N,z,V,H,U,W;if(t[14]!==w||t[15]!==r.label||t[16]!==a||t[17]!==o||t[18]!==h||t[19]!==_||t[20]!==i||t[21]!==p){let e=_.slice(0,h?_.length:p);T=_.length-e.length;let s;t[34]!==r.label||t[35]!==T||t[36]!==a?(s=a.formatMessage({id:`plugins.dependencies.overflow.label`,defaultMessage:`{count, plural, one {Show # more plugin in {category}} other {Show # more plugins in {category}}}`},{count:T,category:r.label}),t[34]=r.label,t[35]=T,t[36]=a,t[37]=s):s=t[37],E=s;let l=h?`items-start`:`items-center`;t[38]===l?N=t[39]:(N=n(`grid min-w-0 grid-cols-[minmax(0,1fr)_minmax(0,2fr)] gap-4 sm:grid-cols-[131px_minmax(0,1fr)]`,l),t[38]=l,t[39]=N),t[40]!==r.label||t[41]!==o?(z=(0,I.jsx)(`dt`,{id:o,className:`text-token-text-secondary text-sm break-words`,children:r.label}),t[40]=r.label,t[41]=o,t[42]=z):z=t[42],j=`relative min-w-0`,V=c,H=`group`,U=-1;let u=h&&`flex-wrap`;t[43]===u?W=t[44]:(W=n(`flex min-w-0 items-center gap-2`,u),t[43]=u,t[44]=W),t[45]!==w||t[46]!==h?(D=e=>{h&&e.key===`Escape`&&(e.preventDefault(),w(!1))},t[45]=w,t[46]=h,t[47]=D):D=t[47],O=o;let d;t[48]===i?d=t[49]:(d=e=>(0,I.jsx)(B,{provider:e,userHoverStates:i},e.id),t[48]=i,t[49]=d),A=e.map(d),t[14]=w,t[15]=r.label,t[16]=a,t[17]=o,t[18]=h,t[19]=_,t[20]=i,t[21]=p,t[22]=T,t[23]=E,t[24]=D,t[25]=O,t[26]=A,t[27]=j,t[28]=N,t[29]=z,t[30]=V,t[31]=H,t[32]=U,t[33]=W}else T=t[22],E=t[23],D=t[24],O=t[25],A=t[26],j=t[27],N=t[28],z=t[29],V=t[30],H=t[31],U=t[32],W=t[33];let G;t[50]!==w||t[51]!==r.label||t[52]!==T||t[53]!==a||t[54]!==h||t[55]!==E?(G=(T>0||h)&&(0,I.jsx)(I.Fragment,{children:(0,I.jsx)(`button`,{ref:u,type:`button`,"aria-label":h?a.formatMessage({id:`plugins.dependencies.overflow.collapse_label`,defaultMessage:`Show fewer plugins in {category}`},{category:r.label}):E,"aria-expanded":h,onClick:()=>w(!h),onKeyDown:e=>{e.key===`Escape`&&w(!1)},className:n(L,`interactive-button interactive-button-secondary interactive-outline-secondary px-3 tabular-nums`),children:h?a.formatMessage({id:`plugins.dependencies.overflow.collapse`,defaultMessage:`Show less`}):a.formatMessage(R,{count:T})})}),t[50]=w,t[51]=r.label,t[52]=T,t[53]=a,t[54]=h,t[55]=E,t[56]=G):G=t[56];let K;t[57]!==D||t[58]!==O||t[59]!==A||t[60]!==G||t[61]!==V||t[62]!==H||t[63]!==U||t[64]!==W?(K=(0,I.jsxs)(`div`,{ref:V,role:H,tabIndex:U,className:W,onKeyDown:D,"aria-labelledby":O,children:[A,G]}),t[57]=D,t[58]=O,t[59]=A,t[60]=G,t[61]=V,t[62]=H,t[63]=U,t[64]=W,t[65]=K):K=t[65];let q;if(t[66]!==_||t[67]!==i){let e;t[69]===i?e=t[70]:(e=e=>(0,I.jsxs)(`span`,{className:L,children:[(0,I.jsx)(`span`,{className:`size-5 shrink-0`}),(0,I.jsx)(`span`,{children:e.name}),i&&e.isInstalled&&!e.muted&&(0,I.jsx)(`span`,{className:`size-4 shrink-0`})]},e.id),t[69]=i,t[70]=e),q=_.map(e),t[66]=_,t[67]=i,t[68]=q}else q=t[68];let J;t[71]===Symbol.for(`react.memo_cache_sentinel`)?(J=n(L,`px-3 tabular-nums`),t[71]=J):J=t[71];let Y;t[72]!==a||t[73]!==_.length?(Y=a.formatMessage(R,{count:_.length}),t[72]=a,t[73]=_.length,t[74]=Y):Y=t[74];let X;t[75]===Y?X=t[76]:(X=(0,I.jsx)(`span`,{className:J,children:Y}),t[75]=Y,t[76]=X);let Z;t[77]!==q||t[78]!==X?(Z=(0,I.jsxs)(`div`,{ref:l,"aria-hidden":`true`,inert:!0,className:`pointer-events-none invisible absolute inset-x-0 top-0 flex h-0 items-center gap-2 overflow-hidden`,children:[q,X]}),t[77]=q,t[78]=X,t[79]=Z):Z=t[79];let Q;t[80]!==j||t[81]!==K||t[82]!==Z?(Q=(0,I.jsxs)(`dd`,{className:j,children:[K,Z]}),t[80]=j,t[81]=K,t[82]=Z,t[83]=Q):Q=t[83];let $;return t[84]!==N||t[85]!==z||t[86]!==Q?($=(0,I.jsxs)(`div`,{className:N,children:[z,Q]}),t[84]=N,t[85]=z,t[86]=Q,t[87]=$):$=t[87],$},H=e=>{"use forget";let t=(0,P.c)(10),{groups:n,userHoverStates:r}=e,i=r!==void 0&&r,a,o,s;if(t[0]!==n||t[1]!==i){s=Symbol.for(`react.early_return_sentinel`);bb0:{let e=n.filter(N);if(e.length===0){s=null;break bb0}a=`space-y-3 py-3`;let r;t[5]===i?r=t[6]:(r=e=>(0,I.jsx)(V,{group:e,userHoverStates:i},e.id),t[5]=i,t[6]=r),o=e.map(r)}t[0]=n,t[1]=i,t[2]=a,t[3]=o,t[4]=s}else a=t[2],o=t[3],s=t[4];if(s!==Symbol.for(`react.early_return_sentinel`))return s;let c;return t[7]!==a||t[8]!==o?(c=(0,I.jsx)(`dl`,{className:a,children:o}),t[7]=a,t[8]=o,t[9]=c):c=t[9],c}}));function W(e){let t=e=>e.metadata.type===`stdio`||e.metadata.type==null&&typeof e.metadata.command==`string`;return{directMcpServers:e.filter(e=>!t(e)),stdioMcpServers:e.filter(t)}}var G,K=e((()=>{h(),G=p({directHeading:{id:`chatgpt.plugins.details.mcp.direct.heading`,defaultMessage:`MCP Servers`},stdioHeading:{id:`chatgpt.plugins.details.mcp.stdio.heading`,defaultMessage:`{serverCount, plural, one {Local MCP Server (STDIO)} other {Local MCP Servers (STDIO)}}`}})})),q,J,Y,X,Z=e((()=>{q=v(),i(),c(),D(),x(),h(),J=d(),Y=e=>{"use forget";let t=(0,q.c)(20),{canShare:n,isEditing:r,editDisabledTooltip:i,onEdit:o,onShare:s,onRetry:c,icon:u}=e,d=r!==void 0&&r,f=y(),p=!n&&c==null,h=c==null?X.migrationSharePlugin:X.migrationShareRetry,g;t[0]===u?g=t[1]:(g=u===void 0?(0,J.jsx)(T,{"aria-hidden":`true`,className:`icon text-token-text-secondary shrink-0`}):u,t[0]=u,t[1]=g);let _;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(_=(0,J.jsx)(m,{id:`chatgpt.plugins.details.gpt_migration.sharing_notice.success.title`,defaultMessage:`Your plugin was successfully migrated`}),t[2]=_):_=t[2];let v;t[3]!==n||t[4]!==s?(v=!n||s==null?(0,J.jsx)(m,{id:`chatgpt.plugins.details.gpt_migration.sharing_notice.description.without_sharing`,defaultMessage:`Review and test your migrated plugin`}):(0,J.jsx)(m,{id:`chatgpt.plugins.details.gpt_migration.sharing_notice.description`,defaultMessage:`Review and test your migrated plugin, then share it when you're ready.`}),t[3]=n,t[4]=s,t[5]=v):v=t[5];let x;t[6]!==n||t[7]!==i||t[8]!==f||t[9]!==d||t[10]!==p||t[11]!==o||t[12]!==c||t[13]!==s||t[14]!==h?(x=o||s?(0,J.jsxs)(`div`,{className:`flex flex-wrap items-center gap-2`,children:[o&&(0,J.jsx)(b,{disabled:i==null,content:i,contentLayout:`multi-line`,children:e=>(0,J.jsx)(l,{...e,type:`button`,color:`primary`,className:`shrink-0`,loading:d,"aria-label":f.formatMessage(X.migrationEditPlugin),"aria-disabled":i!=null,visuallyDisabled:i!=null,onClick:e=>{if(i!=null){e.preventDefault();return}o()},children:(0,J.jsx)(m,{...X.migrationEditPlugin})})}),s&&(0,J.jsx)(b,{disabled:!p,content:(0,J.jsx)(m,{id:`chatgpt.plugins.details.gpt_migration.sharing_notice.button.disabled_tooltip.sharing_unavailable`,defaultMessage:`Plugin sharing isn't enabled for your role or workspace`}),children:e=>(0,J.jsx)(l,{...e,type:`button`,color:`secondary`,className:`shrink-0`,"aria-label":f.formatMessage(h),"aria-disabled":p,visuallyDisabled:p,onClick:e=>{if(c!=null){c();return}if(!n){e.preventDefault();return}s()},children:(0,J.jsx)(m,{...h})})})]}):void 0,t[6]=n,t[7]=i,t[8]=f,t[9]=d,t[10]=p,t[11]=o,t[12]=c,t[13]=s,t[14]=h,t[15]=x):x=t[15];let S;return t[16]!==g||t[17]!==v||t[18]!==x?(S=(0,J.jsx)(a,{type:`normal`,icon:g,titleClassName:`font-medium`,title:_,content:v,customCtas:x}),t[16]=g,t[17]=v,t[18]=x,t[19]=S):S=t[19],S},X=p({migrationShareRetry:{id:`chatgpt.plugins.details.gpt_migration.sharing_notice.button.retry`,defaultMessage:`Couldn't load sharing. Retry`},migrationEditPlugin:{id:`chatgpt.plugins.details.gpt_migration.sharing_notice.button.edit`,defaultMessage:`Edit plugin`},migrationSharePlugin:{id:`chatgpt.plugins.details.gpt_migration.sharing_notice.button.label`,defaultMessage:`Share plugin`}})}));export{G as a,O as c,K as i,A as l,Z as n,H as o,W as r,U as s,Y as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    G5 as n,
+    IN as r,
+    JT as i,
+    Ji as a,
+    K5 as o,
+    LN as s,
+    Xi as c,
+    qT as l
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    $ as u,
+    Bn as d,
+    In as f,
+    Ln as p,
+    Nn as m,
+    Rn as h,
+    Vn as g,
+    at as _,
+    wn as v,
+    zn as y
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    Ajt as b,
+    jjt as x,
+    mat as S,
+    pat as C
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    Cx as w,
+    Cy as T,
+    Sx as E,
+    Sy as D
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+
+function O(e, t) {
+    let n = new Map;
+    for (let t of e)
+        for (let e of t.categories) {
+            let r = n.get(e.id);
+            r || (r = {
+                ...e,
+                providers: []
+            }, n.set(e.id, r)), r.providers.some(e => e.id === t.id) || r.providers.push(t)
+        }
+    return [...n.values()].sort((e, n) => e.label.localeCompare(n.label, t))
+}
+
+function k(e, t, n, r) {
+    if (e.reduce((e, t) => e + t, 0) + Math.max(0, e.length - 1) * r <= t) return e.length;
+    let i = n,
+        a = 0;
+    for (let n of e) {
+        if (i + r + n > t) break;
+        i += r + n, a++
+    }
+    return a
+}
+var A = e((() => {}));
+
+function j(e) {
+    return !e
+}
+
+function M(e) {
+    return e.getBoundingClientRect().width
+}
+
+function N(e) {
+    return e.providers.length > 0
+}
+var P, F, I, L, R, z, B, V, H, U = e((() => {
+    P = v(), x(), w(), C(), r(), o(), F = t(g()), h(), u(), A(), I = d(), L = `inline-flex h-8 shrink-0 items-center gap-1 rounded-full border ps-2 pe-3 text-sm whitespace-nowrap`, R = f({
+        id: `plugins.dependencies.overflow.count`,
+        defaultMessage: `+{count, number}`
+    }), z = e => {
+        "use forget";
+        let t = (0, P.c)(22),
+            {
+                provider: r,
+                userHoverStates: i,
+                nameRef: a
+            } = e,
+            o = r.name,
+            s = r.iconUrl,
+            c = r.iconUrlDark,
+            l = r.muted && (i ? `opacity-40` : `opacity-50`),
+            u = i && r.muted && `grayscale`,
+            d;
+        t[0] !== l || t[1] !== u ? (d = n(`size-5! [&_svg]:size-4!`, l, u), t[0] = l, t[1] = u, t[2] = d) : d = t[2];
+        let f;
+        t[3] !== r.iconUrl || t[4] !== r.iconUrlDark || t[5] !== r.name || t[6] !== d ? (f = (0, I.jsx)(S, {
+            name: o,
+            iconUrl: s,
+            iconDarkUrl: c,
+            variant: `inline`,
+            className: d,
+            isNextToLabel: !0
+        }), t[3] = r.iconUrl, t[4] = r.iconUrlDark, t[5] = r.name, t[6] = d, t[7] = f) : f = t[7];
+        let p = r.muted && (i ? `text-token-text-tertiary` : `text-token-text-secondary`),
+            m;
+        t[8] === p ? m = t[9] : (m = n(`truncate`, p), t[8] = p, t[9] = m);
+        let h;
+        t[10] !== a || t[11] !== r.name || t[12] !== m ? (h = (0, I.jsx)(`span`, {
+            ref: a,
+            className: m,
+            children: r.name
+        }), t[10] = a, t[11] = r.name, t[12] = m, t[13] = h) : h = t[13];
+        let g;
+        t[14] !== r.isInstalled || t[15] !== r.muted || t[16] !== i ? (g = i && r.isInstalled && !r.muted && (0, I.jsx)(E, {
+            className: `icon-sm text-token-text-tertiary shrink-0`,
+            "aria-hidden": `true`
+        }), t[14] = r.isInstalled, t[15] = r.muted, t[16] = i, t[17] = g) : g = t[17];
+        let _;
+        return t[18] !== h || t[19] !== g || t[20] !== f ? (_ = (0, I.jsxs)(I.Fragment, {
+            children: [f, h, g]
+        }), t[18] = h, t[19] = g, t[20] = f, t[21] = _) : _ = t[21], _
+    }, B = e => {
+        "use forget";
+        let t = (0, P.c)(23),
+            {
+                provider: r,
+                userHoverStates: i
+            } = e,
+            a = y(),
+            [o, c] = (0, F.useState)(!1),
+            l = (0, F.useRef)(!1),
+            u = (0, F.useRef)(null),
+            [d, f] = (0, F.useState)(!1),
+            p = !i || r.muted ? r.statusLabel : void 0,
+            m;
+        t[0] !== a || t[1] !== r.name || t[2] !== p ? (m = p ? a.formatMessage({
+            id: `plugins.dependencies.chip.accessible_label`,
+            defaultMessage: `{name}, {status}`
+        }, {
+            name: r.name,
+            status: p
+        }) : r.name, t[0] = a, t[1] = r.name, t[2] = p, t[3] = m) : m = t[3];
+        let h = m,
+            g = d ? h : p,
+            v = i && !!g,
+            x = r.href ? `a` : v ? `button` : `span`,
+            S, C;
+        t[4] === o ? (S = t[5], C = t[6]) : (S = () => {
+            let e = u.current?.parentElement;
+            if (!o || !e) return;
+            let t = t => {
+                    t.composedPath().includes(e) || c(!1)
+                },
+                n = e.ownerDocument;
+            return n.addEventListener(`pointerdown`, t, !0), () => {
+                n.removeEventListener(`pointerdown`, t, !0)
+            }
+        }, C = [o], t[4] = o, t[5] = S, t[6] = C), (0, F.useEffect)(S, C);
+        let w;
+        t[7] !== p || t[8] !== i ? (w = () => {
+            let e = u.current;
+            if (!i || !e) return;
+            let t = () => {
+                let t = e.scrollWidth > e.clientWidth;
+                f(t), !t && !p && c(!1)
+            };
+            t();
+            let n = new ResizeObserver(t);
+            return n.observe(e), () => n.disconnect()
+        }, t[7] = p, t[8] = i, t[9] = w) : w = t[9];
+        let T;
+        t[10] !== x || t[11] !== r.name || t[12] !== p || t[13] !== i ? (T = [r.name, p, i, x], t[10] = x, t[11] = r.name, t[12] = p, t[13] = i, t[14] = T) : T = t[14], s(w, T);
+        let E;
+        if (t[15] !== x || t[16] !== v || t[17] !== h || t[18] !== r || t[19] !== o || t[20] !== g || t[21] !== i) {
+            let e = n(L, `max-w-full`, i && `interactive-button interactive-outline-secondary focus-visible:outline-token-text-secondary focus-visible:outline-2 focus-visible:outline-offset-2`, i && (r.muted ? `interactive-button-muted` : `border-token-border-light bg-token-bg-primary text-token-text-primary hover:bg-token-bg-secondary`)),
+                a = x === `button` ? `button` : `span`,
+                s = t => r.href ? (0, I.jsx)(_, {
+                    ...t,
+                    to: r.href,
+                    state: r.navigationState,
+                    "aria-label": i ? r.name : h,
+                    "aria-description": i ? r.statusLabel : void 0,
+                    title: i ? void 0 : h,
+                    className: n(e, `interactive-button interactive-outline-secondary`, !i && `interactive-button-secondary`),
+                    children: (0, I.jsx)(z, {
+                        provider: r,
+                        userHoverStates: i,
+                        nameRef: u
+                    })
+                }) : (0, I.jsx)(a, {
+                    ...t,
+                    ref: e => {
+                        if (e) return l.current && e.focus(), l.current = !1, () => {
+                            l.current = e === e.ownerDocument.activeElement
+                        }
+                    },
+                    type: v ? `button` : void 0,
+                    "data-dependency-chip": !0,
+                    "data-state": o ? `open` : void 0,
+                    tabIndex: v ? 0 : -1,
+                    onClick: v ? () => c(j) : void 0,
+                    onBlur: () => c(!1),
+                    onKeyDown: e => {
+                        i && e.key === `Escape` && c(!1)
+                    },
+                    className: n(e, !i && `border-token-border-light bg-token-bg-primary text-token-text-primary`),
+                    title: i ? void 0 : h,
+                    "aria-label": i ? r.name : h,
+                    "aria-description": i ? r.statusLabel : void 0,
+                    children: (0, I.jsx)(z, {
+                        provider: r,
+                        userHoverStates: i,
+                        nameRef: u
+                    })
+                });
+            E = i ? (0, I.jsx)(b, {
+                content: g,
+                disabled: !g,
+                showOnTouch: !r.href,
+                forceOpen: o,
+                children: s
+            }) : s(), t[15] = x, t[16] = v, t[17] = h, t[18] = r, t[19] = o, t[20] = g, t[21] = i, t[22] = E
+        } else E = t[22];
+        return E
+    }, V = e => {
+        "use forget";
+        let t = (0, P.c)(88),
+            {
+                group: r,
+                userHoverStates: i
+            } = e,
+            a = y(),
+            o = (0, F.useId)(),
+            c = (0, F.useRef)(null),
+            l = (0, F.useRef)(null),
+            u = (0, F.useRef)(null),
+            d = (0, F.useRef)(null),
+            f = (0, F.useRef)(null),
+            [p, m] = (0, F.useState)(0),
+            [h, g] = (0, F.useState)(!1),
+            {
+                providers: _
+            } = r,
+            v;
+        t[0] !== h || t[1] !== _.length ? (v = () => {
+            let e = c.current,
+                t = l.current;
+            if (!e || !t) return;
+            let n = () => {
+                let n = [...t.children],
+                    r = n.pop();
+                if (!r) return;
+                let i = k(n.map(M), e.getBoundingClientRect().width, r.getBoundingClientRect().width, parseFloat(getComputedStyle(e).columnGap) || 0),
+                    a = [...e.querySelectorAll(`:scope > a, :scope > span, :scope > button[data-dependency-chip]`)].findIndex(t => t === e.ownerDocument.activeElement);
+                !h && a >= i && a >= 0 ? d.current = `overflow` : !h && i === _.length && e.ownerDocument.activeElement === u.current && (d.current = `row`), m(i)
+            };
+            n();
+            let r = new ResizeObserver(n);
+            r.observe(e);
+            for (let e of t.children) r.observe(e);
+            return () => r.disconnect()
+        }, t[0] = h, t[1] = _.length, t[2] = v) : v = t[2];
+        let b;
+        t[3] !== h || t[4] !== _ ? (b = [_, h], t[3] = h, t[4] = _, t[5] = b) : b = t[5], s(v, b);
+        let x;
+        t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (x = () => {
+            let e = f.current;
+            f.current = null, e != null && (c.current?.querySelectorAll(`:scope > a, :scope > span, :scope > button[data-dependency-chip]`)?.[e] ?? u.current)?.focus();
+            let t = d.current;
+            if (d.current = null, t === `overflow` && u.current?.focus(), t === `row`) {
+                let e = c.current;
+                (e?.querySelector(`a`) ?? e)?.focus()
+            }
+        }, t[6] = x) : x = t[6];
+        let S;
+        t[7] !== h || t[8] !== p ? (S = [p, h], t[7] = h, t[8] = p, t[9] = S) : S = t[9], s(x, S);
+        let C;
+        t[10] !== h || t[11] !== _.length || t[12] !== p ? (C = e => {
+            h && !e && (d.current = p < _.length ? `overflow` : `row`), e ? f.current = p : p === _.length && u.current === c.current?.ownerDocument.activeElement && (d.current = `row`), g(e)
+        }, t[10] = h, t[11] = _.length, t[12] = p, t[13] = C) : C = t[13];
+        let w = C,
+            T, E, D, O, A, j, N, z, V, H, U, W;
+        if (t[14] !== w || t[15] !== r.label || t[16] !== a || t[17] !== o || t[18] !== h || t[19] !== _ || t[20] !== i || t[21] !== p) {
+            let e = _.slice(0, h ? _.length : p);
+            T = _.length - e.length;
+            let s;
+            t[34] !== r.label || t[35] !== T || t[36] !== a ? (s = a.formatMessage({
+                id: `plugins.dependencies.overflow.label`,
+                defaultMessage: `{count, plural, one {Show # more plugin in {category}} other {Show # more plugins in {category}}}`
+            }, {
+                count: T,
+                category: r.label
+            }), t[34] = r.label, t[35] = T, t[36] = a, t[37] = s) : s = t[37], E = s;
+            let l = h ? `items-start` : `items-center`;
+            t[38] === l ? N = t[39] : (N = n(`grid min-w-0 grid-cols-[minmax(0,1fr)_minmax(0,2fr)] gap-4 sm:grid-cols-[131px_minmax(0,1fr)]`, l), t[38] = l, t[39] = N), t[40] !== r.label || t[41] !== o ? (z = (0, I.jsx)(`dt`, {
+                id: o,
+                className: `text-token-text-secondary text-sm break-words`,
+                children: r.label
+            }), t[40] = r.label, t[41] = o, t[42] = z) : z = t[42], j = `relative min-w-0`, V = c, H = `group`, U = -1;
+            let u = h && `flex-wrap`;
+            t[43] === u ? W = t[44] : (W = n(`flex min-w-0 items-center gap-2`, u), t[43] = u, t[44] = W), t[45] !== w || t[46] !== h ? (D = e => {
+                h && e.key === `Escape` && (e.preventDefault(), w(!1))
+            }, t[45] = w, t[46] = h, t[47] = D) : D = t[47], O = o;
+            let d;
+            t[48] === i ? d = t[49] : (d = e => (0, I.jsx)(B, {
+                provider: e,
+                userHoverStates: i
+            }, e.id), t[48] = i, t[49] = d), A = e.map(d), t[14] = w, t[15] = r.label, t[16] = a, t[17] = o, t[18] = h, t[19] = _, t[20] = i, t[21] = p, t[22] = T, t[23] = E, t[24] = D, t[25] = O, t[26] = A, t[27] = j, t[28] = N, t[29] = z, t[30] = V, t[31] = H, t[32] = U, t[33] = W
+        } else T = t[22], E = t[23], D = t[24], O = t[25], A = t[26], j = t[27], N = t[28], z = t[29], V = t[30], H = t[31], U = t[32], W = t[33];
+        let G;
+        t[50] !== w || t[51] !== r.label || t[52] !== T || t[53] !== a || t[54] !== h || t[55] !== E ? (G = (T > 0 || h) && (0, I.jsx)(I.Fragment, {
+            children: (0, I.jsx)(`button`, {
+                ref: u,
+                type: `button`,
+                "aria-label": h ? a.formatMessage({
+                    id: `plugins.dependencies.overflow.collapse_label`,
+                    defaultMessage: `Show fewer plugins in {category}`
+                }, {
+                    category: r.label
+                }) : E,
+                "aria-expanded": h,
+                onClick: () => w(!h),
+                onKeyDown: e => {
+                    e.key === `Escape` && w(!1)
+                },
+                className: n(L, `interactive-button interactive-button-secondary interactive-outline-secondary px-3 tabular-nums`),
+                children: h ? a.formatMessage({
+                    id: `plugins.dependencies.overflow.collapse`,
+                    defaultMessage: `Show less`
+                }) : a.formatMessage(R, {
+                    count: T
+                })
+            })
+        }), t[50] = w, t[51] = r.label, t[52] = T, t[53] = a, t[54] = h, t[55] = E, t[56] = G) : G = t[56];
+        let K;
+        t[57] !== D || t[58] !== O || t[59] !== A || t[60] !== G || t[61] !== V || t[62] !== H || t[63] !== U || t[64] !== W ? (K = (0, I.jsxs)(`div`, {
+            ref: V,
+            role: H,
+            tabIndex: U,
+            className: W,
+            onKeyDown: D,
+            "aria-labelledby": O,
+            children: [A, G]
+        }), t[57] = D, t[58] = O, t[59] = A, t[60] = G, t[61] = V, t[62] = H, t[63] = U, t[64] = W, t[65] = K) : K = t[65];
+        let q;
+        if (t[66] !== _ || t[67] !== i) {
+            let e;
+            t[69] === i ? e = t[70] : (e = e => (0, I.jsxs)(`span`, {
+                className: L,
+                children: [(0, I.jsx)(`span`, {
+                    className: `size-5 shrink-0`
+                }), (0, I.jsx)(`span`, {
+                    children: e.name
+                }), i && e.isInstalled && !e.muted && (0, I.jsx)(`span`, {
+                    className: `size-4 shrink-0`
+                })]
+            }, e.id), t[69] = i, t[70] = e), q = _.map(e), t[66] = _, t[67] = i, t[68] = q
+        } else q = t[68];
+        let J;
+        t[71] === Symbol.for(`react.memo_cache_sentinel`) ? (J = n(L, `px-3 tabular-nums`), t[71] = J) : J = t[71];
+        let Y;
+        t[72] !== a || t[73] !== _.length ? (Y = a.formatMessage(R, {
+            count: _.length
+        }), t[72] = a, t[73] = _.length, t[74] = Y) : Y = t[74];
+        let X;
+        t[75] === Y ? X = t[76] : (X = (0, I.jsx)(`span`, {
+            className: J,
+            children: Y
+        }), t[75] = Y, t[76] = X);
+        let Z;
+        t[77] !== q || t[78] !== X ? (Z = (0, I.jsxs)(`div`, {
+            ref: l,
+            "aria-hidden": `true`,
+            inert: !0,
+            className: `pointer-events-none invisible absolute inset-x-0 top-0 flex h-0 items-center gap-2 overflow-hidden`,
+            children: [q, X]
+        }), t[77] = q, t[78] = X, t[79] = Z) : Z = t[79];
+        let Q;
+        t[80] !== j || t[81] !== K || t[82] !== Z ? (Q = (0, I.jsxs)(`dd`, {
+            className: j,
+            children: [K, Z]
+        }), t[80] = j, t[81] = K, t[82] = Z, t[83] = Q) : Q = t[83];
+        let $;
+        return t[84] !== N || t[85] !== z || t[86] !== Q ? ($ = (0, I.jsxs)(`div`, {
+            className: N,
+            children: [z, Q]
+        }), t[84] = N, t[85] = z, t[86] = Q, t[87] = $) : $ = t[87], $
+    }, H = e => {
+        "use forget";
+        let t = (0, P.c)(10),
+            {
+                groups: n,
+                userHoverStates: r
+            } = e,
+            i = r !== void 0 && r,
+            a, o, s;
+        if (t[0] !== n || t[1] !== i) {
+            s = Symbol.for(`react.early_return_sentinel`);
+            bb0: {
+                let e = n.filter(N);
+                if (e.length === 0) {
+                    s = null;
+                    break bb0
+                }
+                a = `space-y-3 py-3`;
+                let r;t[5] === i ? r = t[6] : (r = e => (0, I.jsx)(V, {
+                    group: e,
+                    userHoverStates: i
+                }, e.id), t[5] = i, t[6] = r),
+                o = e.map(r)
+            }
+            t[0] = n, t[1] = i, t[2] = a, t[3] = o, t[4] = s
+        } else a = t[2], o = t[3], s = t[4];
+        if (s !== Symbol.for(`react.early_return_sentinel`)) return s;
+        let c;
+        return t[7] !== a || t[8] !== o ? (c = (0, I.jsx)(`dl`, {
+            className: a,
+            children: o
+        }), t[7] = a, t[8] = o, t[9] = c) : c = t[9], c
+    }
+}));
+
+function W(e) {
+    let t = e => e.metadata.type === `stdio` || e.metadata.type == null && typeof e.metadata.command == `string`;
+    return {
+        directMcpServers: e.filter(e => !t(e)),
+        stdioMcpServers: e.filter(t)
+    }
+}
+var G, K = e((() => {
+        h(), G = p({
+            directHeading: {
+                id: `chatgpt.plugins.details.mcp.direct.heading`,
+                defaultMessage: `MCP Servers`
+            },
+            stdioHeading: {
+                id: `chatgpt.plugins.details.mcp.stdio.heading`,
+                defaultMessage: `{serverCount, plural, one {Local MCP Server (STDIO)} other {Local MCP Servers (STDIO)}}`
+            }
+        })
+    })),
+    q, J, Y, X, Z = e((() => {
+        q = v(), i(), c(), D(), x(), h(), J = d(), Y = e => {
+            "use forget";
+            let t = (0, q.c)(20),
+                {
+                    canShare: n,
+                    isEditing: r,
+                    editDisabledTooltip: i,
+                    onEdit: o,
+                    onShare: s,
+                    onRetry: c,
+                    icon: u
+                } = e,
+                d = r !== void 0 && r,
+                f = y(),
+                p = !n && c == null,
+                h = c == null ? X.migrationSharePlugin : X.migrationShareRetry,
+                g;
+            t[0] === u ? g = t[1] : (g = u === void 0 ? (0, J.jsx)(T, {
+                "aria-hidden": `true`,
+                className: `icon text-token-text-secondary shrink-0`
+            }) : u, t[0] = u, t[1] = g);
+            let _;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = (0, J.jsx)(m, {
+                id: `chatgpt.plugins.details.gpt_migration.sharing_notice.success.title`,
+                defaultMessage: `Your plugin was successfully migrated`
+            }), t[2] = _) : _ = t[2];
+            let v;
+            t[3] !== n || t[4] !== s ? (v = !n || s == null ? (0, J.jsx)(m, {
+                id: `chatgpt.plugins.details.gpt_migration.sharing_notice.description.without_sharing`,
+                defaultMessage: `Review and test your migrated plugin`
+            }) : (0, J.jsx)(m, {
+                id: `chatgpt.plugins.details.gpt_migration.sharing_notice.description`,
+                defaultMessage: `Review and test your migrated plugin, then share it when you're ready.`
+            }), t[3] = n, t[4] = s, t[5] = v) : v = t[5];
+            let x;
+            t[6] !== n || t[7] !== i || t[8] !== f || t[9] !== d || t[10] !== p || t[11] !== o || t[12] !== c || t[13] !== s || t[14] !== h ? (x = o || s ? (0, J.jsxs)(`div`, {
+                className: `flex flex-wrap items-center gap-2`,
+                children: [o && (0, J.jsx)(b, {
+                    disabled: i == null,
+                    content: i,
+                    contentLayout: `multi-line`,
+                    children: e => (0, J.jsx)(l, {
+                        ...e,
+                        type: `button`,
+                        color: `primary`,
+                        className: `shrink-0`,
+                        loading: d,
+                        "aria-label": f.formatMessage(X.migrationEditPlugin),
+                        "aria-disabled": i != null,
+                        visuallyDisabled: i != null,
+                        onClick: e => {
+                            if (i != null) {
+                                e.preventDefault();
+                                return
+                            }
+                            o()
+                        },
+                        children: (0, J.jsx)(m, {
+                            ...X.migrationEditPlugin
+                        })
+                    })
+                }), s && (0, J.jsx)(b, {
+                    disabled: !p,
+                    content: (0, J.jsx)(m, {
+                        id: `chatgpt.plugins.details.gpt_migration.sharing_notice.button.disabled_tooltip.sharing_unavailable`,
+                        defaultMessage: `Plugin sharing isn't enabled for your role or workspace`
+                    }),
+                    children: e => (0, J.jsx)(l, {
+                        ...e,
+                        type: `button`,
+                        color: `secondary`,
+                        className: `shrink-0`,
+                        "aria-label": f.formatMessage(h),
+                        "aria-disabled": p,
+                        visuallyDisabled: p,
+                        onClick: e => {
+                            if (c != null) {
+                                c();
+                                return
+                            }
+                            if (!n) {
+                                e.preventDefault();
+                                return
+                            }
+                            s()
+                        },
+                        children: (0, J.jsx)(m, {
+                            ...h
+                        })
+                    })
+                })]
+            }) : void 0, t[6] = n, t[7] = i, t[8] = f, t[9] = d, t[10] = p, t[11] = o, t[12] = c, t[13] = s, t[14] = h, t[15] = x) : x = t[15];
+            let S;
+            return t[16] !== g || t[17] !== v || t[18] !== x ? (S = (0, J.jsx)(a, {
+                type: `normal`,
+                icon: g,
+                titleClassName: `font-medium`,
+                title: _,
+                content: v,
+                customCtas: x
+            }), t[16] = g, t[17] = v, t[18] = x, t[19] = S) : S = t[19], S
+        }, X = p({
+            migrationShareRetry: {
+                id: `chatgpt.plugins.details.gpt_migration.sharing_notice.button.retry`,
+                defaultMessage: `Couldn't load sharing. Retry`
+            },
+            migrationEditPlugin: {
+                id: `chatgpt.plugins.details.gpt_migration.sharing_notice.button.edit`,
+                defaultMessage: `Edit plugin`
+            },
+            migrationSharePlugin: {
+                id: `chatgpt.plugins.details.gpt_migration.sharing_notice.button.label`,
+                defaultMessage: `Share plugin`
+            }
+        })
+    }));
+export {
+    G as a, O as c, K as i, A as l, Z as n, H as o, W as r, U as s, Y as t
+};
 //# sourceMappingURL=52668a57-gylmwzo6e57au5oi.js.map

@@ -1,2 +1,115 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{A1 as t,Bnt as n,CK as r,F7 as i,Git as a,Hnt as o,I1 as s,Knt as c,M7 as l,Uit as u,f8 as d,oat as f,p8 as p,rat as m,sat as h,wK as g}from"./4813494d-ed29bs6yiwucn7st.js";import{H as _,s as v}from"./2340486e-oc6d2eodbcrmxur3.js";import{dwn as y,iTn as b,lwn as x,rTn as S}from"./conversation-small-l6tnsr2xfn2d55kk.js";function C(){return n(T,{disableExposureLog:!0})}function w(){return n(T)}var T,E=e((()=>{c(),T=`4121343460`}));function D(){if(typeof window>`u`)return!1;let e=new URL(f,window.location.href);return e.origin===window.location.origin&&e.pathname.replace(/\/$/,``)===`/backend-api`&&e.search===``&&e.hash===``}function O(){return D()&&C()?`sheep`:`legacy`}function k(e,n,r){if(r?.throwIfAborted(),t()?.getWorkspaceId()!==n||e!==O())throw new _({revert:!0})}function A(e,n,r,i){return!i||n===``||r==null||r===``||t()?.getWorkspaceId()!==n||e!==O()?!1:!D()||(w()?`sheep`:`legacy`)===e}async function j({connectorId:e,workspaceId:t,signal:n}){return await y({operation:`workspace_permissions`,transport:`sheep`,workspaceId:t,signal:n,request:async i=>{k(`sheep`,t,n),M??=new l({baseUrl:f.replace(/\/$/,``),targetRoutesAreCanonical:!0});let a=await M.safeGet(`/v2/connectors/{connector_id}/workspace_permissions`,{...i,authOption:m.Required,preserveAccountIdOnRetry:!0,signal:n,additionalHeaders:{...r(t),[u]:S.ADMIN_SETTING,"x-openai-use-sheep":`1`},parameters:{path:{connector_id:e},query:{include_admin_only:!0,include_extended_permission_fields:!0}}});return k(`sheep`,t,n),a}})}var M,N,P=e((()=>{x(),g(),v(),b(),d(),s(),h(),a(),i(),c(),E(),N=p(O,e=>{let t=o();return t.on(`values_updated`,e),()=>t.off(`values_updated`,e)},{name:`adminPluginPermissionReadTransport`})}));export{P as a,j as i,k as n,O as o,A as r,N as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as t,
+    Bnt as n,
+    CK as r,
+    F7 as i,
+    Git as a,
+    Hnt as o,
+    I1 as s,
+    Knt as c,
+    M7 as l,
+    Uit as u,
+    f8 as d,
+    oat as f,
+    p8 as p,
+    rat as m,
+    sat as h,
+    wK as g
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    H as _,
+    s as v
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    dwn as y,
+    iTn as b,
+    lwn as x,
+    rTn as S
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+
+function C() {
+    return n(T, {
+        disableExposureLog: !0
+    })
+}
+
+function w() {
+    return n(T)
+}
+var T, E = e((() => {
+    c(), T = `4121343460`
+}));
+
+function D() {
+    if (typeof window > `u`) return !1;
+    let e = new URL(f, window.location.href);
+    return e.origin === window.location.origin && e.pathname.replace(/\/$/, ``) === `/backend-api` && e.search === `` && e.hash === ``
+}
+
+function O() {
+    return D() && C() ? `sheep` : `legacy`
+}
+
+function k(e, n, r) {
+    if (r?.throwIfAborted(), t()?.getWorkspaceId() !== n || e !== O()) throw new _({
+        revert: !0
+    })
+}
+
+function A(e, n, r, i) {
+    return !i || n === `` || r == null || r === `` || t()?.getWorkspaceId() !== n || e !== O() ? !1 : !D() || (w() ? `sheep` : `legacy`) === e
+}
+async function j({
+    connectorId: e,
+    workspaceId: t,
+    signal: n
+}) {
+    return await y({
+        operation: `workspace_permissions`,
+        transport: `sheep`,
+        workspaceId: t,
+        signal: n,
+        request: async i => {
+            k(`sheep`, t, n), M ??= new l({
+                baseUrl: f.replace(/\/$/, ``),
+                targetRoutesAreCanonical: !0
+            });
+            let a = await M.safeGet(`/v2/connectors/{connector_id}/workspace_permissions`, {
+                ...i,
+                authOption: m.Required,
+                preserveAccountIdOnRetry: !0,
+                signal: n,
+                additionalHeaders: {
+                    ...r(t),
+                    [u]: S.ADMIN_SETTING,
+                    "x-openai-use-sheep": `1`
+                },
+                parameters: {
+                    path: {
+                        connector_id: e
+                    },
+                    query: {
+                        include_admin_only: !0,
+                        include_extended_permission_fields: !0
+                    }
+                }
+            });
+            return k(`sheep`, t, n), a
+        }
+    })
+}
+var M, N, P = e((() => {
+    x(), g(), v(), b(), d(), s(), h(), a(), i(), c(), E(), N = p(O, e => {
+        let t = o();
+        return t.on(`values_updated`, e), () => t.off(`values_updated`, e)
+    }, {
+        name: `adminPluginPermissionReadTransport`
+    })
+}));
+export {
+    P as a, j as i, k as n, O as o, A as r, N as t
+};
 //# sourceMappingURL=832dbd3a-bk26djhng80afq3w.js.map

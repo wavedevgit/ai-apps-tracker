@@ -1,0 +1,64 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    JT as t,
+    qT as n
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Pn as r,
+    Rn as i,
+    Tn as a,
+    Vn as o,
+    zn as s
+} from "./2340486e-komxp8tzs51ny4jj.js";
+
+function c(e) {
+    "use forget";
+    let t = (0, l.c)(10),
+        {
+            message: i,
+            isRetryable: a,
+            onRetry: o,
+            onClose: s
+        } = e,
+        c;
+    t[0] === i ? c = t[1] : (c = (0, u.jsx)(`div`, {
+        className: `text-token-text-primary text-sm`,
+        children: i
+    }), t[0] = i, t[1] = c);
+    let f = a ? o : s,
+        p = a ? d.tryAgain : d.closePreview,
+        m;
+    t[2] === p ? m = t[3] : (m = (0, u.jsx)(r, {
+        ...p
+    }), t[2] = p, t[3] = m);
+    let h;
+    t[4] !== f || t[5] !== m ? (h = (0, u.jsx)(n, {
+        type: `button`,
+        color: `secondary`,
+        onClick: f,
+        children: m
+    }), t[4] = f, t[5] = m, t[6] = h) : h = t[6];
+    let g;
+    return t[7] !== c || t[8] !== h ? (g = (0, u.jsxs)(`div`, {
+        className: `flex h-full w-full flex-col items-center justify-center gap-3 px-6 text-center`,
+        children: [c, h]
+    }), t[7] = c, t[8] = h, t[9] = g) : g = t[9], g
+}
+var l, u, d, f = e((() => {
+    l = a(), t(), s(), u = o(), d = i({
+        tryAgain: {
+            id: `recall.artifact_viewer.preview_try_again`,
+            defaultMessage: `Try again`
+        },
+        closePreview: {
+            id: `recall.artifact_viewer.preview_close`,
+            defaultMessage: `Close`
+        }
+    })
+}));
+export {
+    f as n, c as t
+};
+//# sourceMappingURL=058a5ba2-dyev6n2eis4n5e57.js.map

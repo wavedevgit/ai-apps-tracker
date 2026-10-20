@@ -1,0 +1,2198 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $st as n,
+    Az as r,
+    Fw as i,
+    Hnt as a,
+    I1 as o,
+    J5 as s,
+    JT as c,
+    Jnt as l,
+    L7 as u,
+    N7 as d,
+    Nw as f,
+    Q1 as p,
+    Sw as m,
+    VU as h,
+    Xy as g,
+    Y1 as _,
+    Yst as ee,
+    Yy as v,
+    aB as y,
+    cK as b,
+    fG as x,
+    iB as S,
+    jz as C,
+    lK as w,
+    m2 as T,
+    nx as te,
+    p2 as ne,
+    q1 as re,
+    q5 as ie,
+    qT as ae,
+    rx as oe,
+    v2 as E,
+    ww as D,
+    yG as se,
+    zU as O
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as ce,
+    Hn as k,
+    Ln as A,
+    N as j,
+    Pn as M,
+    Rn as N,
+    Tn as P,
+    Vn as F,
+    p as I,
+    s as L,
+    zn as R
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Ajt as z,
+    Lrt as le,
+    RHn as B,
+    Rrt as V,
+    jjt as H,
+    zHn as U
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Av as ue,
+    By as W,
+    Gg as de,
+    Ov as fe,
+    Vy as G,
+    jv as K,
+    kv as pe,
+    qg as q
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    $o as me,
+    Db as J,
+    Fb as he,
+    Go as ge,
+    Ho as _e,
+    Ib as ve,
+    Jo as ye,
+    Ko as be,
+    Mx as xe,
+    Nx as Se,
+    Wo as Ce,
+    Yo as we,
+    jx as Te,
+    kx as Ee
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+import {
+    d as De,
+    r as Oe
+} from "./b411f8ca-mdbrjndtyvp18nze.js";
+import {
+    a as ke,
+    i as Ae
+} from "./a99a60c9-lbvi2f4bdeuixh3h.js";
+import {
+    d as je,
+    f as Me,
+    l as Ne
+} from "./b90db9d2-dq7o1nq7z944qy0j.js";
+import {
+    n as Pe,
+    t as Fe
+} from "./e17f5811-hq4oa7m8twmoarsm.js";
+var Ie, Le, Re = e((() => {
+    R(), Ie = A({
+        id: `admin.cloudConsoleM3RolePermissionReadOnlyTooltip`,
+        defaultMessage: `These permissions can be configured in Cloud Console.`
+    }), Le = ({
+        isReadOnly: e,
+        disabledReason: t
+    }) => e ? Ie : t
+}));
+
+function ze(e) {
+    "use forget";
+    let t = (0, Ve.c)(63),
+        {
+            workspaceId: n,
+            feature: r,
+            featureName: i,
+            storedValue: a,
+            isRbacEnabled: o,
+            disabled: s,
+            onChange: c,
+            statusDescription: l,
+            confirmationDescription: u
+        } = e,
+        p = s !== void 0 && s,
+        h = ce(),
+        g = j(),
+        [_, ee] = (0, He.useState)(!1),
+        v = a === !0,
+        y = o ? v ? Ue.enterpriseReleaseOptedOutDescription : Ue.enterpriseReleaseOptedInDescription : v ? Ue.enterpriseReleaseNonRbacOptedOutDescription : Ue.enterpriseReleaseNonRbacOptedInDescription,
+        b = o ? Ue.enterpriseReleaseOptOutDescription : Ue.enterpriseReleaseNonRbacOptOutDescription,
+        x;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (e, t) => {
+        t && ee(!1)
+    }, t[0] = x) : x = t[0];
+    let S;
+    t[1] === g ? S = t[2] : (S = () => g.invalidateQueries({
+        queryKey: [`workspace-settings`]
+    }), t[1] = g, t[2] = S);
+    let C;
+    t[3] !== r || t[4] !== n ? (C = e => d.safePost(`/accounts/{account_id}/beta_features`, {
+        parameters: {
+            path: {
+                account_id: n
+            }
+        },
+        requestBody: {
+            feature: r,
+            value: e
+        }
+    }), t[3] = r, t[4] = n, t[5] = C) : C = t[5];
+    let w;
+    t[6] !== S || t[7] !== C ? (w = {
+        onSuccess: x,
+        onSettled: S,
+        mutationFn: C
+    }, t[6] = S, t[7] = C, t[8] = w) : w = t[8];
+    let T = I(w),
+        te;
+    t[9] === T.isPending ? te = t[10] : (te = () => {
+        T.isPending || ee(!1)
+    }, t[9] = T.isPending, t[10] = te);
+    let ne = te,
+        re;
+    t[11] !== r || t[12] !== T || t[13] !== c ? (re = e => {
+        c ? (c(r, e), ee(!1)) : T.mutate(e)
+    }, t[11] = r, t[12] = T, t[13] = c, t[14] = re) : re = t[14];
+    let ie = re,
+        oe;
+    t[15] !== l || t[16] !== y ? (oe = l ?? (0, Y.jsx)(M, {
+        ...y,
+        values: {
+            strong: Be
+        }
+    }), t[15] = l, t[16] = y, t[17] = oe) : oe = t[17];
+    let E;
+    t[18] === oe ? E = t[19] : (E = (0, Y.jsx)(`span`, {
+        className: `min-w-0 text-sm text-token-text-tertiary`,
+        children: oe
+    }), t[18] = oe, t[19] = E);
+    let D = v ? `secondary` : `primary`,
+        se = p || T.isPending,
+        O;
+    t[20] !== h || t[21] !== v ? (O = h.formatMessage(v ? Ue.enterpriseReleaseOptInButton : Ue.enterpriseReleaseOptOutButton), t[20] = h, t[21] = v, t[22] = O) : O = t[22];
+    let k;
+    t[23] !== ie || t[24] !== v ? (k = () => {
+        v ? ie(!1) : ee(!0)
+    }, t[23] = ie, t[24] = v, t[25] = k) : k = t[25];
+    let A = v ? Ue.enterpriseReleaseOptInButton : Ue.enterpriseReleaseOptOutButton,
+        N;
+    t[26] === A ? N = t[27] : (N = (0, Y.jsx)(M, {
+        ...A
+    }), t[26] = A, t[27] = N);
+    let P;
+    t[28] !== D || t[29] !== se || t[30] !== O || t[31] !== k || t[32] !== N ? (P = (0, Y.jsx)(ae, {
+        color: D,
+        size: `small`,
+        disabled: se,
+        loading: !1,
+        label: O,
+        onClick: k,
+        children: N
+    }), t[28] = D, t[29] = se, t[30] = O, t[31] = k, t[32] = N, t[33] = P) : P = t[33];
+    let F;
+    t[34] !== P || t[35] !== E ? (F = (0, Y.jsxs)(`div`, {
+        className: `flex items-center justify-between gap-6 py-2`,
+        children: [E, P]
+    }), t[34] = P, t[35] = E, t[36] = F) : F = t[36];
+    let L;
+    t[37] === i ? L = t[38] : (L = (0, Y.jsx)(M, {
+        ...Ue.enterpriseReleaseOptOutModalTitle,
+        values: {
+            name: i
+        }
+    }), t[37] = i, t[38] = L);
+    let R;
+    t[39] !== u || t[40] !== i || t[41] !== b ? (R = u ?? (0, Y.jsx)(M, {
+        ...b,
+        values: {
+            name: i
+        }
+    }), t[39] = u, t[40] = i, t[41] = b, t[42] = R) : R = t[42];
+    let z;
+    t[43] === ie ? z = t[44] : (z = () => ie(!0), t[43] = ie, t[44] = z);
+    let le;
+    t[45] === Symbol.for(`react.memo_cache_sentinel`) ? (le = (0, Y.jsx)(M, {
+        ...Ue.enterpriseReleaseOptOutConfirm
+    }), t[45] = le) : le = t[45];
+    let B;
+    t[46] !== T.isPending || t[47] !== z ? (B = (0, Y.jsx)(f.Button, {
+        as: `button`,
+        color: `primary`,
+        disabled: T.isPending,
+        loading: T.isPending,
+        onClick: z,
+        children: le
+    }), t[46] = T.isPending, t[47] = z, t[48] = B) : B = t[48];
+    let V;
+    t[49] === Symbol.for(`react.memo_cache_sentinel`) ? (V = (0, Y.jsx)(M, {
+        ...Ue.enterpriseReleaseOptOutCancel
+    }), t[49] = V) : V = t[49];
+    let H;
+    t[50] !== ne || t[51] !== T.isPending ? (H = (0, Y.jsx)(f.Button, {
+        as: `button`,
+        color: `ghost`,
+        disabled: T.isPending,
+        onClick: ne,
+        children: V
+    }), t[50] = ne, t[51] = T.isPending, t[52] = H) : H = t[52];
+    let U;
+    t[53] !== ne || t[54] !== _ || t[55] !== L || t[56] !== R || t[57] !== B || t[58] !== H ? (U = (0, Y.jsx)(m, {
+        isOpen: _,
+        onClose: ne,
+        title: L,
+        description: R,
+        testId: `modal-enterprise-release-opt-out`,
+        primaryButton: B,
+        secondaryButton: H
+    }), t[53] = ne, t[54] = _, t[55] = L, t[56] = R, t[57] = B, t[58] = H, t[59] = U) : U = t[59];
+    let ue;
+    return t[60] !== F || t[61] !== U ? (ue = (0, Y.jsxs)(Y.Fragment, {
+        children: [F, U]
+    }), t[60] = F, t[61] = U, t[62] = ue) : ue = t[62], ue
+}
+
+function Be(e) {
+    return (0, Y.jsx)(`strong`, {
+        children: e
+    })
+}
+var Ve, He, Y, Ue, We = e((() => {
+        Ve = P(), c(), i(), D(), u(), L(), He = t(k()), R(), Y = F(), Ue = N({
+            enterpriseReleaseOptOutButton: {
+                id: `workspaceSettings.enterpriseReleaseOptOutButton`,
+                defaultMessage: `Opt out`
+            },
+            enterpriseReleaseOptInButton: {
+                id: `workspaceSettings.enterpriseReleaseOptInButton`,
+                defaultMessage: `Opt in`
+            },
+            enterpriseReleaseOptOutModalTitle: {
+                id: `workspaceSettings.enterpriseReleaseOptOutModalTitle`,
+                defaultMessage: `Opt out of {name}`
+            },
+            enterpriseReleaseOptedInDescription: {
+                id: `workspaceSettings.enterpriseReleaseOptedInDescription`,
+                defaultMessage: `<strong>You’re opted in.</strong> When early access ends, this feature will turn on automatically for the default role unless you opt out. Custom roles are unaffected.`
+            },
+            enterpriseReleaseOptedOutDescription: {
+                id: `workspaceSettings.enterpriseReleaseOptedOutDescription`,
+                defaultMessage: `<strong>You’re opted out.</strong> When early access ends, this feature won’t turn on automatically for the default role. Custom roles are unaffected.`
+            },
+            enterpriseReleaseNonRbacOptedInDescription: {
+                id: `workspaceSettings.enterpriseReleaseNonRbacOptedInDescription`,
+                defaultMessage: `<strong>You’re opted in.</strong> When early access ends, this feature will turn on automatically unless you opt out.`
+            },
+            enterpriseReleaseNonRbacOptedOutDescription: {
+                id: `workspaceSettings.enterpriseReleaseNonRbacOptedOutDescription`,
+                defaultMessage: `<strong>You’re opted out.</strong> When early access ends, this feature won’t turn on automatically.`
+            },
+            enterpriseReleaseOptOutDescription: {
+                id: `workspaceSettings.enterpriseReleaseOptOutDescription`,
+                defaultMessage: `{name} will not turn on automatically for the default role after the early access period. Custom roles are unaffected. You can opt in again at any time.`
+            },
+            enterpriseReleaseNonRbacOptOutDescription: {
+                id: `workspaceSettings.enterpriseReleaseNonRbacOptOutDescription`,
+                defaultMessage: `{name} will not turn on automatically after the early access period. You can opt in again at any time.`
+            },
+            enterpriseReleaseOptOutConfirm: {
+                id: `workspaceSettings.enterpriseReleaseOptOutConfirm`,
+                defaultMessage: `Opt out`
+            },
+            enterpriseReleaseOptOutCancel: {
+                id: `workspaceSettings.enterpriseReleaseOptOutCancel`,
+                defaultMessage: `Cancel`
+            }
+        })
+    })),
+    Ge, Ke, qe, Je, Ye = e((() => {
+        Ge = P(), We(), R(), Ke = F(), qe = e => {
+            "use forget";
+            let t = (0, Ge.c)(2),
+                {
+                    enabled: n,
+                    controlMode: r
+                } = e;
+            if ((r === void 0 ? `legacy` : r) !== `legacy`) return null;
+            let i;
+            return t[0] === n ? i = t[1] : (i = (0, Ke.jsx)(`p`, {
+                className: `text-token-text-tertiary text-xs`,
+                children: n ? (0, Ke.jsx)(M, {
+                    id: `chatgpt.workspace.permissions.library_sharing.policy.status.enabled`,
+                    defaultMessage: `Library sharing is enabled for this workspace.`
+                }) : (0, Ke.jsx)(M, {
+                    id: `chatgpt.workspace.permissions.library_sharing.policy.status.disabled`,
+                    defaultMessage: `Sharing management is disabled for this workspace. Your role settings will apply when sharing is re-enabled.`
+                })
+            }), t[0] = n, t[1] = i), i
+        }, Je = e => {
+            "use forget";
+            let t = (0, Ge.c)(10),
+                n, r;
+            if (t[0] === e ? (n = t[1], r = t[2]) : ({
+                    betaSettingsDict: n,
+                    ...r
+                } = e, t[0] = e, t[1] = n, t[2] = r), Object.hasOwn(n ?? {}, `library_sharing_admin_configuration`)) {
+                let e;
+                return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Ke.jsx)(`p`, {
+                    className: `text-token-text-tertiary py-2 text-sm`,
+                    children: (0, Ke.jsx)(M, {
+                        id: `chatgpt.workspace.permissions.library_sharing.release.description.configured`,
+                        defaultMessage: `Your configuration will be preserved after Early Release.`
+                    })
+                }), t[3] = e) : e = t[3], e
+            }
+            let i;
+            t[4] === r.storedValue ? i = t[5] : (i = r.storedValue === !0 ? (0, Ke.jsx)(M, {
+                id: `chatgpt.workspace.permissions.library_sharing.release.description.opted_out`,
+                defaultMessage: `Automatic enablement after Early Release is opted out. Current sharing and role settings are unchanged.`
+            }) : (0, Ke.jsx)(M, {
+                id: `chatgpt.workspace.permissions.library_sharing.release.description.unconfigured`,
+                defaultMessage: `You can configure Library sharing and role permissions during Early Release.`
+            }), t[4] = r.storedValue, t[5] = i);
+            let a;
+            t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Ke.jsx)(M, {
+                id: `chatgpt.workspace.permissions.library_sharing.release.opt_out.confirmation`,
+                defaultMessage: `Opt out of automatically enabling Library sharing after Early Release? This keeps your current sharing configuration and role permissions unchanged.`
+            }), t[6] = a) : a = t[6];
+            let o;
+            return t[7] !== r || t[8] !== i ? (o = (0, Ke.jsx)(ze, {
+                ...r,
+                statusDescription: i,
+                confirmationDescription: a
+            }), t[7] = r, t[8] = i, t[9] = o) : o = t[9], o
+        }
+    }));
+
+function Xe({
+    workspaceId: e,
+    roleId: t,
+    usageLimitDisplay: n = rt,
+    searchQuery: i = ``,
+    renderHighlightedText: o,
+    showSharedUsageLimit: s = !1,
+    disabled: c = !1,
+    hideBottomBorder: l = !1,
+    metadataDraft: u,
+    onStageMetadata: d,
+    onUnappliedChangesChange: f
+}) {
+    "use no forget";
+    let m = ce(),
+        g = h(),
+        _ = p(ne),
+        ee = p(T),
+        v = !_ && a(`1261424157`),
+        y = v && s && a(`2634861725`),
+        b = !!t,
+        {
+            data: x,
+            isLoading: S,
+            isFetching: C,
+            isError: w
+        } = ve({
+            workspaceId: e,
+            roleId: t ?? ``,
+            enabled: v && b
+        }),
+        {
+            data: te,
+            isLoading: re
+        } = he({
+            workspaceId: e,
+            roleId: t ?? ``,
+            enabled: v && b
+        }),
+        {
+            upsertRoleMetadata: ie,
+            isPending: ae
+        } = De({
+            workspaceId: e,
+            roleId: t ?? ``
+        }),
+        [oe, E] = (0, X.useState)(`none`),
+        [D, se] = (0, X.useState)(``),
+        [O, k] = (0, X.useState)(!1),
+        [A, j] = (0, X.useState)(``),
+        [N, P] = (0, X.useState)(`none`),
+        [F, I] = (0, X.useState)(``),
+        [L, R] = (0, X.useState)(!1),
+        [z, le] = (0, X.useState)(null),
+        [V, H] = (0, X.useState)(!1),
+        [U, ue] = (0, X.useState)(null),
+        [de, fe] = (0, X.useState)(null),
+        G = (0, X.useMemo)(() => te ? {
+            low: te.low_credit_limit,
+            medium: te.medium_credit_limit,
+            high: te.high_credit_limit
+        } : n, [te, n]),
+        K = (0, X.useCallback)(e => m.formatMessage(Q.creditsPerWeek, {
+            value: e
+        }), [m]),
+        pe = (0, X.useCallback)(e => m.formatMessage(Q.creditsPerCalendarMonth, {
+            value: e
+        }), [m]),
+        q = (0, X.useMemo)(() => ({
+            low: K(G.low),
+            medium: K(G.medium),
+            high: K(G.high)
+        }), [K, G.high, G.low, G.medium]),
+        me = x != null,
+        J = u ? {
+            ...x?.metadata,
+            ...u
+        } : x?.metadata ?? null,
+        ge = J?.soft_alert_credit_limit ?? null,
+        _e = J?.hard_cap_credit_limit ?? null,
+        xe = J?.hard_cap_shared_credit_limit ?? null,
+        Se = ge ?? _e ?? null,
+        Ce = xe?.limit ?? null;
+    (0, X.useEffect)(() => {
+        if (!x) return;
+        if (!Se) {
+            E(`none`), se(``), k(!1), j(``);
+            return
+        }
+        let e = ge?.limit ?? null,
+            t = _e?.limit ?? null,
+            n = t === 0,
+            r = t != null,
+            i = e ?? t ?? null;
+        if (se(e == null ? t != null && !n ? String(t) : `` : String(e)), k(r), j(r && t != null ? String(t) : ``), !r && i != null && i === G.low) {
+            E(`low`);
+            return
+        }
+        if (!r && i != null && i === G.medium) {
+            E(`medium`);
+            return
+        }
+        if (!r && i != null && i === G.high) {
+            E(`high`);
+            return
+        }
+        E(i == null ? `none` : `custom`)
+    }, [x, Se, ge, _e, G.high, G.low, G.medium]);
+    let Te = {
+        low: String(G.low),
+        medium: String(G.medium),
+        high: String(G.high)
+    };
+    (0, X.useEffect)(() => {
+        if (x) {
+            if (Ce == null) {
+                P(`none`), I(``), le(null);
+                return
+            }
+            I(String(Ce)), le(null), P(`custom`)
+        }
+    }, [x, Ce]);
+    let Ee = (() => {
+            switch (oe) {
+                case `low`:
+                    return Te.low;
+                case `medium`:
+                    return Te.medium;
+                case `high`:
+                    return Te.high;
+                case `custom`:
+                    return D;
+                default:
+                    return ``
+            }
+        })().trim(),
+        Oe = (0, X.useMemo)(() => [{
+            key: `none`,
+            label: m.formatMessage(Q.enforcementDropdownNoneLabel)
+        }, {
+            key: `low`,
+            label: m.formatMessage(Q.enforcementDropdownLowUsageLabel),
+            limitLabel: q.low
+        }, {
+            key: `medium`,
+            label: m.formatMessage(Q.enforcementDropdownMediumUsageLabel),
+            limitLabel: q.medium
+        }, {
+            key: `high`,
+            label: m.formatMessage(Q.enforcementDropdownHighLabel),
+            limitLabel: q.high
+        }, {
+            key: `custom`,
+            label: m.formatMessage(Q.enforcementDropdownCustomLabel)
+        }], [m, q.high, q.low, q.medium]),
+        ke = (0, X.useMemo)(() => Oe.filter(e => e.key === `none` || e.key === `custom`), [Oe]),
+        Ae = m.formatMessage(Q.enforcementDropdownPlaceholder),
+        je = Oe.find(e => e.key === oe) ?? null,
+        Me = je?.label ?? Ae,
+        Ne = je?.limitLabel,
+        Pe = oe === `custom` ? O && A.trim() ? K(A.trim()) : D.trim() ? K(D.trim()) : Me : (je && Ne ? Ne : Me) ?? Ae,
+        Fe = !je || je.key === `none`,
+        Ie = v && b && (S && !x || re && !te),
+        Le = ae || de != null,
+        Re = d == null && w && !me,
+        ze = c || d != null && ee || Le || C || !me && !Re,
+        Be = c || d != null && ee || Le || C || !me && !Re,
+        Ve = de === `usage`,
+        He = de === `shared`,
+        Y = async ({
+            selectionKey: e,
+            alertLimitOverride: n,
+            hardCapEnabledOverride: r,
+            hardCapLimitOverride: i
+        }) => {
+            if (!t || c) return;
+            let a = ((e === `custom` ? n ?? D : e === `low` || e === `medium` || e === `high` ? Te[e] ?? `` : ``) ?? ``).trim(),
+                o = a === `` ? NaN : Number(a),
+                s = e === `custom` && (r ?? O) ? (i ?? A ?? ``).trim() : ``,
+                l = s === `` ? NaN : Number(s),
+                u = e === `custom` && s !== ``,
+                f = u && Number.isFinite(l) && l === 0;
+            if (e !== `none` && e !== `none` && (e !== `custom` || u && !f) && (a === `` || !Number.isFinite(o) || o <= 0)) {
+                ue(a === `` ? m.formatMessage(Q.alertRequiredForHardCap) : m.formatMessage(Q.invalidLimit));
+                return
+            }
+            if (u && (s === `` || !Number.isFinite(l) || l < 0)) {
+                ue(m.formatMessage(Q.invalidLimit));
+                return
+            }
+            ue(null);
+            let p = ct({
+                selectionKey: e,
+                trimmedSelectionAlert: a,
+                parsedSelectionAlert: o,
+                hasCustomHardCap: u,
+                parsedSelectionHardCap: l,
+                isHardCapZero: f
+            });
+            if (d) {
+                if (x == null) throw Error(`Role metadata must load before editing usage limits`);
+                d(p, x);
+                return
+            }
+            try {
+                fe(`usage`), await ie(p), g.success(m.formatMessage(Q.submitSuccess))
+            } catch {
+                g.danger(m.formatMessage(Q.submitError))
+            } finally {
+                fe(null)
+            }
+        }, Ue = async ({
+            selectionKey: e,
+            limitOverride: n
+        }) => {
+            if (!t || c) return;
+            let r = (e === `custom` ? n ?? F : ``).trim(),
+                i = r === `` ? NaN : Number(r);
+            if (e !== `none` && (r === `` || !Number.isFinite(i) || i < 0)) {
+                le(m.formatMessage(Q.sharedUsageInvalidLimit));
+                return
+            }
+            le(null);
+            let a = lt({
+                sharedUsageLimit: e === `none` ? null : i
+            });
+            if (d) {
+                if (x == null) throw Error(`Role metadata must load before editing usage limits`);
+                d(a, x);
+                return
+            }
+            try {
+                fe(`shared`), await ie(a), g.success(m.formatMessage(Q.submitSuccess))
+            } catch {
+                g.danger(m.formatMessage(Q.submitError))
+            } finally {
+                fe(null)
+            }
+        }, We = e => {
+            if (!ze) {
+                if (e.key === `custom`) {
+                    H(!0);
+                    return
+                }
+                E(e.key), Y({
+                    selectionKey: e.key
+                })
+            }
+        }, Ge = e => {
+            if (!Be) {
+                if (e.key === `custom`) {
+                    R(!0);
+                    return
+                }
+                P(e.key), Ue({
+                    selectionKey: e.key
+                })
+            }
+        }, Ke = ({
+            alertLimit: e,
+            hardCapEnabled: t,
+            hardCapLimit: n
+        }) => {
+            se(e), k(t), j(t ? n : ``), E(`custom`), H(!1), Y({
+                selectionKey: `custom`,
+                alertLimitOverride: e,
+                hardCapEnabledOverride: t,
+                hardCapLimitOverride: t ? n : ``
+            })
+        }, qe = e => {
+            I(e), P(`custom`), R(!1), Ue({
+                selectionKey: `custom`,
+                limitOverride: e
+            })
+        }, Je = D === `` ? Ee : D, Ye = O, Xe = A, Qe = ke.find(e => e.key === N) ?? null, et = Qe?.label ?? Ae, tt = N === `custom` && F.trim() ? pe(F.trim()) : et, it = !Qe || Qe.key === `none`;
+    return !v || !b || !ot({
+        searchQuery: i,
+        intl: m,
+        includeSharedUsageLimit: y
+    }) ? null : (0, Z.jsxs)(Z.Fragment, {
+        children: [(0, Z.jsx)($e, {
+            isOpen: !c && V,
+            alertLimit: Je,
+            hardCapEnabled: Ye,
+            hardCapLimit: Xe,
+            onClose: () => H(!1),
+            onSave: Ke,
+            isStaging: d != null,
+            onUnappliedChangesChange: f
+        }), y && (0, Z.jsx)(Ze, {
+            isOpen: !c && L,
+            limit: F,
+            onClose: () => R(!1),
+            onSave: qe,
+            isStaging: d != null,
+            onUnappliedChangesChange: f
+        }), (0, Z.jsx)(be, {
+            children: Ie ? (0, Z.jsx)(`div`, {
+                className: `flex h-24 items-center justify-center`,
+                children: (0, Z.jsx)(r, {
+                    className: `text-token-text-tertiary h-6 w-6`
+                })
+            }) : (0, Z.jsxs)(ye, {
+                className: l ? `border-b-0` : ``,
+                children: [(0, Z.jsx)(we, {
+                    children: (0, Z.jsxs)(`div`, {
+                        className: `flex w-full items-start justify-between gap-4`,
+                        children: [(0, Z.jsxs)(`div`, {
+                            className: `flex flex-col gap-1`,
+                            children: [(0, Z.jsx)(`div`, {
+                                className: `text-md font-semibold`,
+                                children: o?.(m.formatMessage(Q.creditLimitLabel)) ?? m.formatMessage(Q.creditLimitLabel)
+                            }), (0, Z.jsx)(`div`, {
+                                className: `text-token-text-secondary text-sm`,
+                                children: o?.(m.formatMessage(Q.creditLimitDescription)) ?? m.formatMessage(Q.creditLimitDescription)
+                            })]
+                        }), (0, Z.jsxs)(`div`, {
+                            className: `flex items-center gap-2`,
+                            children: [Ve && (0, Z.jsx)(r, {
+                                className: `text-token-text-tertiary h-4 w-4`
+                            }), (0, Z.jsxs)(B.Root, {
+                                children: [(0, Z.jsxs)(B.Trigger, {
+                                    className: `bg-token-bg-primary text-token-text-primary border-token-border-heavy inline-flex min-w-[130px] items-center gap-2 rounded-md border px-2.5 py-1.5 text-start text-sm`,
+                                    disabled: ze,
+                                    children: [(0, Z.jsx)(`div`, {
+                                        className: `flex min-w-0 flex-1 items-center justify-between gap-2`,
+                                        children: (0, Z.jsx)(`span`, {
+                                            className: `truncate ${Fe?`text-token-text-tertiary`:``}`,
+                                            children: Pe
+                                        })
+                                    }), (0, Z.jsx)(W, {
+                                        className: `text-token-text-tertiary h-3.5 w-3.5 shrink-0`
+                                    })]
+                                }), (0, Z.jsx)(B.Portal, {
+                                    children: (0, Z.jsxs)(B.Content, {
+                                        role: `dialog`,
+                                        "aria-modal": `false`,
+                                        "aria-label": m.formatMessage(Q.creditLimitLabel),
+                                        side: `bottom`,
+                                        align: `start`,
+                                        className: `bg-token-bg-primary text-token-text-primary border-token-border-heavy w-64 rounded-lg border p-4 shadow-lg`,
+                                        children: [(0, Z.jsxs)(`div`, {
+                                            className: `flex flex-col gap-1`,
+                                            children: [(0, Z.jsx)(`div`, {
+                                                className: `text-sm`,
+                                                children: m.formatMessage(Q.setCreditLimitLabel)
+                                            }), (0, Z.jsx)(`div`, {
+                                                className: `text-token-text-tertiary text-xs`,
+                                                children: (0, Z.jsx)(M, {
+                                                    ...Q.setCreditLimitDescription,
+                                                    values: {
+                                                        learnMoreLink: e => (0, Z.jsx)(`a`, {
+                                                            href: ut,
+                                                            target: `_blank`,
+                                                            rel: `noreferrer`,
+                                                            className: nt,
+                                                            children: e
+                                                        })
+                                                    }
+                                                })
+                                            })]
+                                        }), (0, Z.jsx)(`hr`, {
+                                            className: `border-token-border-heavy my-3`
+                                        }), (0, Z.jsx)(`div`, {
+                                            className: `mt-3 flex flex-col gap-1`,
+                                            children: Oe.map(e => (0, Z.jsxs)(B.Item, {
+                                                className: `flex items-center justify-between gap-2`,
+                                                onClick: () => We(e),
+                                                children: [(0, Z.jsx)(`span`, {
+                                                    children: e.label
+                                                }), e.limitLabel ? (0, Z.jsx)(`span`, {
+                                                    className: `text-token-text-tertiary text-xs`,
+                                                    children: e.limitLabel
+                                                }) : null]
+                                            }, e.key))
+                                        })]
+                                    })
+                                })]
+                            })]
+                        })]
+                    })
+                }), y && (0, Z.jsx)(we, {
+                    children: (0, Z.jsxs)(`div`, {
+                        className: `flex w-full items-start justify-between gap-4`,
+                        children: [(0, Z.jsxs)(`div`, {
+                            className: `flex flex-col gap-1`,
+                            children: [(0, Z.jsx)(`div`, {
+                                className: `text-md font-semibold`,
+                                children: o?.(m.formatMessage(Q.sharedUsageLimitLabel)) ?? m.formatMessage(Q.sharedUsageLimitLabel)
+                            }), (0, Z.jsx)(`div`, {
+                                className: `text-token-text-secondary text-sm`,
+                                children: o?.(m.formatMessage(Q.sharedUsageLimitDescription)) ?? m.formatMessage(Q.sharedUsageLimitDescription)
+                            })]
+                        }), (0, Z.jsxs)(`div`, {
+                            className: `flex flex-col items-end gap-2`,
+                            children: [(0, Z.jsxs)(`div`, {
+                                className: `flex items-center gap-2`,
+                                children: [He && (0, Z.jsx)(r, {
+                                    className: `text-token-text-tertiary h-4 w-4`
+                                }), (0, Z.jsxs)(B.Root, {
+                                    children: [(0, Z.jsxs)(B.Trigger, {
+                                        className: `bg-token-bg-primary text-token-text-primary border-token-border-heavy inline-flex min-w-[130px] items-center gap-2 rounded-md border px-2.5 py-1.5 text-start text-sm`,
+                                        disabled: Be,
+                                        children: [(0, Z.jsx)(`div`, {
+                                            className: `flex min-w-0 flex-1 items-center justify-between gap-2`,
+                                            children: (0, Z.jsx)(`span`, {
+                                                className: `truncate ${it?`text-token-text-tertiary`:``}`,
+                                                children: tt
+                                            })
+                                        }), (0, Z.jsx)(W, {
+                                            className: `text-token-text-tertiary h-3.5 w-3.5 shrink-0`
+                                        })]
+                                    }), (0, Z.jsx)(B.Portal, {
+                                        children: (0, Z.jsxs)(B.Content, {
+                                            role: `dialog`,
+                                            "aria-modal": `false`,
+                                            "aria-label": m.formatMessage(Q.sharedUsageLimitLabel),
+                                            side: `bottom`,
+                                            align: `start`,
+                                            className: `bg-token-bg-primary text-token-text-primary border-token-border-heavy w-64 rounded-lg border p-4 shadow-lg`,
+                                            children: [(0, Z.jsxs)(`div`, {
+                                                className: `flex flex-col gap-1`,
+                                                children: [(0, Z.jsx)(`div`, {
+                                                    className: `text-sm`,
+                                                    children: m.formatMessage(Q.setSharedUsageLimitLabel)
+                                                }), (0, Z.jsx)(`div`, {
+                                                    className: `text-token-text-tertiary text-xs`,
+                                                    children: m.formatMessage(Q.setSharedUsageLimitDescription)
+                                                })]
+                                            }), (0, Z.jsx)(`hr`, {
+                                                className: `border-token-border-heavy my-3`
+                                            }), (0, Z.jsx)(`div`, {
+                                                className: `mt-3 flex flex-col gap-1`,
+                                                children: ke.map(e => (0, Z.jsx)(B.Item, {
+                                                    className: `flex items-center justify-between gap-2`,
+                                                    onClick: () => Ge(e),
+                                                    children: (0, Z.jsx)(`span`, {
+                                                        children: e.label
+                                                    })
+                                                }, e.key))
+                                            })]
+                                        })
+                                    })]
+                                })]
+                            }), z && (0, Z.jsx)(`div`, {
+                                className: `text-interactive-label-warning-secondary text-xs`,
+                                children: z
+                            })]
+                        })]
+                    })
+                })]
+            })
+        })]
+    })
+}
+
+function Ze(e) {
+    "use forget";
+    let t = (0, tt.c)(95),
+        {
+            isOpen: n,
+            limit: r,
+            onClose: i,
+            onSave: a,
+            isStaging: o,
+            onUnappliedChangesChange: s
+        } = e,
+        c = o !== void 0 && o,
+        l = ce(),
+        [u, d] = (0, X.useState)(r),
+        [p, m] = (0, X.useState)(!1),
+        h;
+    t[0] !== n || t[1] !== c || t[2] !== r || t[3] !== u ? (h = c && n && u.trim() !== r.trim(), t[0] = n, t[1] = c, t[2] = r, t[3] = u, t[4] = h) : h = t[4];
+    let g = h,
+        _, ee;
+    t[5] !== g || t[6] !== s ? (_ = () => {
+        if (g) return s?.(!0), () => s?.(!1)
+    }, ee = [g, s], t[5] = g, t[6] = s, t[7] = _, t[8] = ee) : (_ = t[7], ee = t[8]), (0, X.useEffect)(_, ee);
+    let v, y;
+    t[9] !== n || t[10] !== r ? (v = () => {
+        n && (d(r), m(!1))
+    }, y = [n, r], t[9] = n, t[10] = r, t[11] = v, t[12] = y) : (v = t[11], y = t[12]), (0, X.useEffect)(v, y);
+    let b;
+    t[13] === p ? b = t[14] : (b = e => {
+        let t = e.replace(/\s+/g, ``);
+        /^\d*$/.test(t) && (d(t), p && m(!1))
+    }, t[13] = p, t[14] = b);
+    let x = b,
+        S;
+    t[15] === u ? S = t[16] : (S = u.trim(), t[15] = u, t[16] = S);
+    let C = S,
+        w = C === `` ? NaN : Number(C),
+        T;
+    t[17] !== w || t[18] !== C ? (T = C !== `` && Number.isFinite(w) && w >= 0, t[17] = w, t[18] = C, t[19] = T) : T = t[19];
+    let te = T,
+        ne;
+    t[20] !== l || t[21] !== te ? (ne = te ? `` : l.formatMessage(Q.sharedUsageInvalidLimit), t[20] = l, t[21] = te, t[22] = ne) : ne = t[22];
+    let re = ne,
+        ie = p && !!re,
+        ae = ie ? re : void 0,
+        oe = `pe-36${ae?` text-interactive-label-warning-secondary placeholder:text-interactive-label-warning-secondary`:``}`,
+        E = ae ? `border-token-border-error focus-within:border-token-border-error focus-within:ring-token-border-error` : void 0,
+        D;
+    t[23] === l ? D = t[24] : (D = l.formatMessage(Q.sharedUsageLimitCreditsSuffix), t[23] = l, t[24] = D);
+    let se = D,
+        O;
+    t[25] === i ? O = t[26] : (O = e => {
+        e || i()
+    }, t[25] = i, t[26] = O);
+    let k;
+    t[27] === l ? k = t[28] : (k = l.formatMessage(Q.customSharedUsageLimitTitle), t[27] = l, t[28] = k);
+    let A;
+    t[29] === k ? A = t[30] : (A = (0, Z.jsx)(`div`, {
+        className: `text-lg font-semibold`,
+        children: k
+    }), t[29] = k, t[30] = A);
+    let j;
+    t[31] === l ? j = t[32] : (j = l.formatMessage(Q.customModalCancelLabel), t[31] = l, t[32] = j);
+    let M;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (M = (0, Z.jsx)(ue, {
+        className: `h-4 w-4`
+    }), t[33] = M) : M = t[33];
+    let N;
+    t[34] !== i || t[35] !== j ? (N = (0, Z.jsx)(`button`, {
+        type: `button`,
+        className: `text-token-text-tertiary hover:text-token-text-primary rounded-full p-1`,
+        onClick: i,
+        "aria-label": j,
+        children: M
+    }), t[34] = i, t[35] = j, t[36] = N) : N = t[36];
+    let P;
+    t[37] !== A || t[38] !== N ? (P = (0, Z.jsx)(f.Header, {
+        className: `px-6 ps-6 pt-6 pb-0`,
+        title: A,
+        closeButton: N
+    }), t[37] = A, t[38] = N, t[39] = P) : P = t[39];
+    let F;
+    t[40] === l ? F = t[41] : (F = l.formatMessage(Q.customSharedUsageLimitDescription), t[40] = l, t[41] = F);
+    let I;
+    t[42] === F ? I = t[43] : (I = (0, Z.jsx)(`p`, {
+        className: `text-token-text-tertiary text-xs leading-relaxed`,
+        children: F
+    }), t[42] = F, t[43] = I);
+    let L;
+    t[44] === l ? L = t[45] : (L = l.formatMessage(Q.customSharedUsageLimitAriaLabel), t[44] = l, t[45] = L);
+    let R;
+    t[46] === x ? R = t[47] : (R = e => x(e.target.value), t[46] = x, t[47] = R);
+    let z;
+    t[48] === se ? z = t[49] : (z = (0, Z.jsx)(`span`, {
+        className: `text-token-text-primary pointer-events-none absolute end-3 top-1/2 -translate-y-1/2 text-xs`,
+        children: se
+    }), t[48] = se, t[49] = z);
+    let B;
+    t[50] !== E || t[51] !== oe || t[52] !== ae || t[53] !== L || t[54] !== R || t[55] !== z || t[56] !== u ? (B = (0, Z.jsx)(le, {
+        name: `custom-shared-usage-limit`,
+        ariaLabel: L,
+        inputMode: `numeric`,
+        value: u,
+        onChange: R,
+        className: E,
+        insideContainerChildren: z,
+        inputClassName: oe,
+        showErrorIcon: !1,
+        showInlineErrorMessage: !1,
+        error: ae
+    }), t[50] = E, t[51] = oe, t[52] = ae, t[53] = L, t[54] = R, t[55] = z, t[56] = u, t[57] = B) : B = t[57];
+    let V;
+    t[58] !== I || t[59] !== B ? (V = (0, Z.jsxs)(`div`, {
+        className: `flex flex-col gap-3 px-6 text-sm`,
+        children: [I, B]
+    }), t[58] = I, t[59] = B, t[60] = V) : V = t[60];
+    let H;
+    t[61] !== re || t[62] !== ie ? (H = ie && (0, Z.jsxs)(`div`, {
+        className: `text-interactive-label-warning-secondary mb-3 flex items-center gap-2 text-xs`,
+        children: [(0, Z.jsx)(fe, {
+            className: `h-4 w-4`,
+            "aria-hidden": `true`
+        }), (0, Z.jsx)(`span`, {
+            children: re
+        })]
+    }), t[61] = re, t[62] = ie, t[63] = H) : H = t[63];
+    let U;
+    t[64] !== l || t[65] !== c ? (U = l.formatMessage(c ? Q.customModalApplyLabel : Q.customModalSaveLabel), t[64] = l, t[65] = c, t[66] = U) : U = t[66];
+    let W = !te,
+        de = !te,
+        G;
+    t[67] !== te || t[68] !== a || t[69] !== C ? (G = () => {
+        m(!0), te && a(C)
+    }, t[67] = te, t[68] = a, t[69] = C, t[70] = G) : G = t[70];
+    let K;
+    t[71] !== U || t[72] !== W || t[73] !== de || t[74] !== G ? (K = (0, Z.jsx)(f.Button, {
+        color: `primary`,
+        title: U,
+        visuallyDisabled: W,
+        "aria-disabled": de,
+        onClick: G
+    }), t[71] = U, t[72] = W, t[73] = de, t[74] = G, t[75] = K) : K = t[75];
+    let pe;
+    t[76] === l ? pe = t[77] : (pe = l.formatMessage(Q.customModalCancelLabel), t[76] = l, t[77] = pe);
+    let q;
+    t[78] !== i || t[79] !== pe ? (q = (0, Z.jsx)(f.Button, {
+        title: pe,
+        onClick: i
+    }), t[78] = i, t[79] = pe, t[80] = q) : q = t[80];
+    let me;
+    t[81] !== K || t[82] !== q ? (me = (0, Z.jsx)(f.Actions, {
+        primaryButton: K,
+        secondaryButton: q
+    }), t[81] = K, t[82] = q, t[83] = me) : me = t[83];
+    let J;
+    t[84] !== H || t[85] !== me ? (J = (0, Z.jsxs)(`div`, {
+        className: `px-6 pb-4`,
+        children: [H, me]
+    }), t[84] = H, t[85] = me, t[86] = J) : J = t[86];
+    let he;
+    t[87] !== P || t[88] !== V || t[89] !== J ? (he = (0, Z.jsx)(f.Overlay, {
+        children: (0, Z.jsx)(f.Content, {
+            position: `center`,
+            className: `start-auto col-start-1 row-start-1 w-full max-w-sm ltr:translate-x-0 rtl:translate-x-0`,
+            containerClassName: `grid grid-cols-1 grid-rows-1 place-items-center`,
+            children: (0, Z.jsxs)(`div`, {
+                className: `flex flex-col gap-4`,
+                children: [P, V, J]
+            })
+        })
+    }), t[87] = P, t[88] = V, t[89] = J, t[90] = he) : he = t[90];
+    let ge;
+    return t[91] !== n || t[92] !== O || t[93] !== he ? (ge = (0, Z.jsx)(f.Root, {
+        isOpen: n,
+        onClose: O,
+        testId: `modal-custom-shared-usage-limit`,
+        children: he
+    }), t[91] = n, t[92] = O, t[93] = he, t[94] = ge) : ge = t[94], ge
+}
+
+function Qe({
+    alertValue: e,
+    hardCapValue: t,
+    isHardCapEnabled: n,
+    intl: r
+}) {
+    let i = e.trim(),
+        a = t.trim(),
+        o = i !== ``,
+        s = a !== ``,
+        c = n && s,
+        l = Number(a),
+        u = n && s && Number.isFinite(l) && l === 0,
+        d = n && !u,
+        f = Number(i),
+        p = u ? !0 : o && Number.isFinite(f) && f > 0 || !d && !o,
+        m = !n || s && Number.isFinite(l) && l >= 0,
+        h = c && o && !u && Number(a) <= Number(i),
+        g = p ? `` : d && !o ? r.formatMessage(Q.alertRequiredForHardCap) : r.formatMessage(Q.invalidLimit),
+        _ = ``;
+    return n && (s ? h ? _ = r.formatMessage(Q.customModalHardCapConflictError) : d && !o ? _ = r.formatMessage(Q.alertRequiredForHardCap) : (!p || !m) && (_ = r.formatMessage(Q.invalidLimit)) : _ = r.formatMessage(Q.customModalHardCapRequired)), {
+        alertTrimmed: i,
+        hardCapTrimmed: a,
+        hasAlertValue: o,
+        hasHardCapInput: s,
+        hasHardCapValue: c,
+        isHardCapZero: u,
+        requiresAlert: d,
+        isAlertValid: p,
+        isHardCapValid: m,
+        hasHardCapConflict: h,
+        alertErrorMessage: g,
+        hardCapErrorMessage: _
+    }
+}
+
+function $e(e) {
+    "use forget";
+    let t = (0, tt.c)(195),
+        {
+            isOpen: n,
+            alertLimit: r,
+            hardCapEnabled: i,
+            hardCapLimit: a,
+            onClose: o,
+            onSave: s,
+            isStaging: c,
+            onUnappliedChangesChange: l
+        } = e,
+        u = c !== void 0 && c,
+        d = ce(),
+        [p, m] = (0, X.useState)(r),
+        [h, g] = (0, X.useState)(i),
+        [_, ee] = (0, X.useState)(a),
+        [v, y] = (0, X.useState)(!1),
+        b;
+    t[0] !== r || t[1] !== p || t[2] !== i || t[3] !== a || t[4] !== _ || t[5] !== h || t[6] !== n || t[7] !== u ? (b = u && n && (p.trim() !== r.trim() || h !== i || h && _.trim() !== a.trim()), t[0] = r, t[1] = p, t[2] = i, t[3] = a, t[4] = _, t[5] = h, t[6] = n, t[7] = u, t[8] = b) : b = t[8];
+    let x = b,
+        S, C;
+    t[9] !== x || t[10] !== l ? (S = () => {
+        if (x) return l?.(!0), () => l?.(!1)
+    }, C = [x, l], t[9] = x, t[10] = l, t[11] = S, t[12] = C) : (S = t[11], C = t[12]), (0, X.useEffect)(S, C);
+    let w, T;
+    t[13] !== r || t[14] !== i || t[15] !== a || t[16] !== n ? (w = () => {
+        n && (m(r), g(i), ee(a), y(!1))
+    }, T = [r, i, a, n], t[13] = r, t[14] = i, t[15] = a, t[16] = n, t[17] = w, t[18] = T) : (w = t[17], T = t[18]), (0, X.useEffect)(w, T);
+    let ne, re;
+    t[19] === h ? (ne = t[20], re = t[21]) : (ne = () => {
+        h || y(!1)
+    }, re = [h], t[19] = h, t[20] = ne, t[21] = re), (0, X.useEffect)(ne, re);
+    let ae, oe;
+    t[22] !== p || t[23] !== _ || t[24] !== h ? (oe = () => {
+        h && _.trim() === `0` && p !== `` && m(``)
+    }, ae = [p, _, h], t[22] = p, t[23] = _, t[24] = h, t[25] = ae, t[26] = oe) : (ae = t[25], oe = t[26]), (0, X.useEffect)(oe, ae);
+    let E;
+    t[27] === v ? E = t[28] : (E = () => {
+        v && y(!1)
+    }, t[27] = v, t[28] = E);
+    let D = E,
+        se, O;
+    if (t[29] !== D) {
+        se = t => {
+            e(m, t), D()
+        }, O = t => {
+            e(ee, t), D()
+        };
+        let e = et;
+        t[29] = D, t[30] = se, t[31] = O
+    } else se = t[30], O = t[31];
+    let k, A, j, M, N, P, F, I, L, R, z, B, V, H, U, W, de, G, K, pe, q, me, J, he;
+    if (t[32] !== p || t[33] !== _ || t[34] !== v || t[35] !== d || t[36] !== h || t[37] !== n || t[38] !== o) {
+        let {
+            alertTrimmed: e,
+            hardCapTrimmed: r,
+            hasAlertValue: i,
+            hasHardCapValue: a,
+            isHardCapZero: s,
+            isAlertValid: c,
+            isHardCapValid: l,
+            hasHardCapConflict: u,
+            alertErrorMessage: m,
+            hardCapErrorMessage: g
+        } = Qe({
+            alertValue: p,
+            hardCapValue: _,
+            isHardCapEnabled: h,
+            intl: d
+        });
+        N = e, L = r, z = s, R = z, B = !i && !a || !c || !l || u;
+        let ee = v && (!!m || !!g);
+        V = ee ? g || m : ``, M = ee && m ? m : void 0, I = ee && g ? g : void 0, P = I ? `border-token-border-error focus-within:border-token-border-error focus-within:ring-token-border-error` : void 0, F = `pe-24${I?` text-interactive-label-warning-secondary placeholder:text-interactive-label-warning-secondary`:``}`;
+        let y;
+        t[63] === d ? y = t[64] : (y = d.formatMessage(Q.customModalCreditsSuffix), t[63] = d, t[64] = y), H = y, j = f.Root, me = n, t[65] === o ? J = t[66] : (J = e => {
+            e || o()
+        }, t[65] = o, t[66] = J), he = `modal-custom-usage-limit`, A = f.Overlay, k = f.Content, K = `center`, pe = `start-auto col-start-1 row-start-1 w-full max-w-sm ltr:translate-x-0 rtl:translate-x-0`, q = `grid grid-cols-1 grid-rows-1 place-items-center`, de = `flex flex-col gap-4`;
+        let b;
+        t[67] === d ? b = t[68] : (b = d.formatMessage(Q.customModalTitle), t[67] = d, t[68] = b);
+        let x;
+        t[69] === b ? x = t[70] : (x = (0, Z.jsx)(`div`, {
+            className: `text-lg font-semibold`,
+            children: b
+        }), t[69] = b, t[70] = x);
+        let S;
+        t[71] === d ? S = t[72] : (S = d.formatMessage(Q.customModalCancelLabel), t[71] = d, t[72] = S);
+        let C;
+        t[73] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, Z.jsx)(ue, {
+            className: `h-4 w-4`
+        }), t[73] = C) : C = t[73];
+        let w;
+        t[74] !== o || t[75] !== S ? (w = (0, Z.jsx)(`button`, {
+            type: `button`,
+            className: `text-token-text-tertiary hover:text-token-text-primary rounded-full p-1`,
+            onClick: o,
+            "aria-label": S,
+            children: C
+        }), t[74] = o, t[75] = S, t[76] = w) : w = t[76], t[77] !== x || t[78] !== w ? (G = (0, Z.jsx)(f.Header, {
+            className: `px-6 ps-6 pt-6 pb-0`,
+            title: x,
+            closeButton: w
+        }), t[77] = x, t[78] = w, t[79] = G) : G = t[79], W = `flex flex-col gap-6 px-6 text-sm`, U = ie(`flex flex-col gap-3`, R && `opacity-50`), t[32] = p, t[33] = _, t[34] = v, t[35] = d, t[36] = h, t[37] = n, t[38] = o, t[39] = k, t[40] = A, t[41] = j, t[42] = M, t[43] = N, t[44] = P, t[45] = F, t[46] = I, t[47] = L, t[48] = R, t[49] = z, t[50] = B, t[51] = V, t[52] = H, t[53] = U, t[54] = W, t[55] = de, t[56] = G, t[57] = K, t[58] = pe, t[59] = q, t[60] = me, t[61] = J, t[62] = he
+    } else k = t[39], A = t[40], j = t[41], M = t[42], N = t[43], P = t[44], F = t[45], I = t[46], L = t[47], R = t[48], z = t[49], B = t[50], V = t[51], H = t[52], U = t[53], W = t[54], de = t[55], G = t[56], K = t[57], pe = t[58], q = t[59], me = t[60], J = t[61], he = t[62];
+    let ge;
+    t[80] === d ? ge = t[81] : (ge = d.formatMessage(Q.customModalSetAlertLabel), t[80] = d, t[81] = ge);
+    let _e;
+    t[82] === ge ? _e = t[83] : (_e = (0, Z.jsx)(`div`, {
+        className: `text-token-text-primary font-medium`,
+        children: ge
+    }), t[82] = ge, t[83] = _e);
+    let ve;
+    t[84] === d ? ve = t[85] : (ve = d.formatMessage(Q.customModalSetAlertDescription), t[84] = d, t[85] = ve);
+    let ye;
+    t[86] === ve ? ye = t[87] : (ye = (0, Z.jsx)(`p`, {
+        className: `text-token-text-tertiary mt-1 text-xs leading-relaxed`,
+        children: ve
+    }), t[86] = ve, t[87] = ye);
+    let be;
+    t[88] !== _e || t[89] !== ye ? (be = (0, Z.jsxs)(`div`, {
+        children: [_e, ye]
+    }), t[88] = _e, t[89] = ye, t[90] = be) : be = t[90];
+    let xe;
+    t[91] === d ? xe = t[92] : (xe = d.formatMessage(Q.customModalSetAlertLabel), t[91] = d, t[92] = xe);
+    let Se;
+    t[93] === se ? Se = t[94] : (Se = e => se(e.target.value), t[93] = se, t[94] = Se);
+    let Ce;
+    t[95] === H ? Ce = t[96] : (Ce = (0, Z.jsx)(`span`, {
+        className: `text-token-text-primary pointer-events-none absolute end-3 top-1/2 -translate-y-1/2 text-xs`,
+        children: H
+    }), t[95] = H, t[96] = Ce);
+    let we;
+    t[97] !== M || t[98] !== p || t[99] !== R || t[100] !== xe || t[101] !== Se || t[102] !== Ce ? (we = (0, Z.jsx)(le, {
+        name: `custom-alert-limit`,
+        ariaLabel: xe,
+        inputMode: `numeric`,
+        value: p,
+        onChange: Se,
+        disabled: R,
+        insideContainerChildren: Ce,
+        inputClassName: `pe-24`,
+        showErrorIcon: !1,
+        showInlineErrorMessage: !1,
+        error: M
+    }), t[97] = M, t[98] = p, t[99] = R, t[100] = xe, t[101] = Se, t[102] = Ce, t[103] = we) : we = t[103];
+    let Te;
+    t[104] !== d || t[105] !== R ? (Te = R && (0, Z.jsx)(`div`, {
+        className: `text-token-text-warning text-xs`,
+        children: d.formatMessage(Q.customModalAlertDisabledNote)
+    }), t[104] = d, t[105] = R, t[106] = Te) : Te = t[106];
+    let Ee;
+    t[107] !== U || t[108] !== be || t[109] !== we || t[110] !== Te ? (Ee = (0, Z.jsxs)(`div`, {
+        className: U,
+        children: [be, we, Te]
+    }), t[107] = U, t[108] = be, t[109] = we, t[110] = Te, t[111] = Ee) : Ee = t[111];
+    let De;
+    t[112] === d ? De = t[113] : (De = d.formatMessage(Q.customModalSetHardCapLabel), t[112] = d, t[113] = De);
+    let Oe;
+    t[114] === De ? Oe = t[115] : (Oe = (0, Z.jsx)(`div`, {
+        className: `flex items-center gap-1.5`,
+        children: (0, Z.jsx)(`div`, {
+            className: `text-token-text-primary font-medium`,
+            children: De
+        })
+    }), t[114] = De, t[115] = Oe);
+    let ke;
+    t[116] === d ? ke = t[117] : (ke = d.formatMessage(Q.customModalToggleAriaLabel), t[116] = d, t[117] = ke);
+    let Ae;
+    t[118] === D ? Ae = t[119] : (Ae = e => {
+        g(!!e), D()
+    }, t[118] = D, t[119] = Ae);
+    let je;
+    t[120] !== h || t[121] !== ke || t[122] !== Ae ? (je = (0, Z.jsx)(te, {
+        "aria-label": ke,
+        checked: h,
+        onCheckedChange: Ae
+    }), t[120] = h, t[121] = ke, t[122] = Ae, t[123] = je) : je = t[123];
+    let Me;
+    t[124] !== Oe || t[125] !== je ? (Me = (0, Z.jsxs)(`div`, {
+        className: `flex items-center justify-between gap-2`,
+        children: [Oe, je]
+    }), t[124] = Oe, t[125] = je, t[126] = Me) : Me = t[126];
+    let Ne;
+    t[127] === d ? Ne = t[128] : (Ne = d.formatMessage(Q.customModalSetHardCapDescription), t[127] = d, t[128] = Ne);
+    let Pe;
+    t[129] === Ne ? Pe = t[130] : (Pe = (0, Z.jsx)(`p`, {
+        className: `text-token-text-tertiary text-xs leading-relaxed`,
+        children: Ne
+    }), t[129] = Ne, t[130] = Pe);
+    let Fe;
+    t[131] !== O || t[132] !== P || t[133] !== F || t[134] !== I || t[135] !== _ || t[136] !== d || t[137] !== h || t[138] !== H ? (Fe = h && (0, Z.jsx)(Z.Fragment, {
+        children: (0, Z.jsx)(le, {
+            name: `custom-hard-cap-limit`,
+            ariaLabel: d.formatMessage(Q.customModalSetHardCapLabel),
+            inputMode: `numeric`,
+            value: _,
+            onChange: e => O(e.target.value),
+            className: P,
+            insideContainerChildren: (0, Z.jsx)(`span`, {
+                className: `text-token-text-primary pointer-events-none absolute end-3 top-1/2 -translate-y-1/2 text-xs`,
+                children: H
+            }),
+            inputClassName: F,
+            showErrorIcon: !1,
+            showInlineErrorMessage: !1,
+            error: I
+        })
+    }), t[131] = O, t[132] = P, t[133] = F, t[134] = I, t[135] = _, t[136] = d, t[137] = h, t[138] = H, t[139] = Fe) : Fe = t[139];
+    let Ie;
+    t[140] !== Me || t[141] !== Pe || t[142] !== Fe ? (Ie = (0, Z.jsxs)(`div`, {
+        className: `flex flex-col gap-3`,
+        children: [Me, Pe, Fe]
+    }), t[140] = Me, t[141] = Pe, t[142] = Fe, t[143] = Ie) : Ie = t[143];
+    let Le;
+    t[144] !== W || t[145] !== Ee || t[146] !== Ie ? (Le = (0, Z.jsxs)(`div`, {
+        className: W,
+        children: [Ee, Ie]
+    }), t[144] = W, t[145] = Ee, t[146] = Ie, t[147] = Le) : Le = t[147];
+    let Re;
+    t[148] === V ? Re = t[149] : (Re = V && (0, Z.jsxs)(`div`, {
+        className: `text-interactive-label-warning-secondary mb-3 flex items-center gap-2 text-xs`,
+        children: [(0, Z.jsx)(fe, {
+            className: `h-4 w-4`,
+            "aria-hidden": `true`
+        }), (0, Z.jsx)(`span`, {
+            children: V
+        })]
+    }), t[148] = V, t[149] = Re);
+    let ze;
+    t[150] !== d || t[151] !== u ? (ze = d.formatMessage(u ? Q.customModalApplyLabel : Q.customModalSaveLabel), t[150] = d, t[151] = u, t[152] = ze) : ze = t[152];
+    let Be;
+    t[153] !== N || t[154] !== L || t[155] !== h || t[156] !== z || t[157] !== B || t[158] !== s ? (Be = () => {
+        y(!0), !B && s({
+            alertLimit: z ? `` : N,
+            hardCapEnabled: h,
+            hardCapLimit: h ? L : ``
+        })
+    }, t[153] = N, t[154] = L, t[155] = h, t[156] = z, t[157] = B, t[158] = s, t[159] = Be) : Be = t[159];
+    let Ve;
+    t[160] !== B || t[161] !== ze || t[162] !== Be ? (Ve = (0, Z.jsx)(f.Button, {
+        color: `primary`,
+        title: ze,
+        visuallyDisabled: B,
+        "aria-disabled": B,
+        onClick: Be
+    }), t[160] = B, t[161] = ze, t[162] = Be, t[163] = Ve) : Ve = t[163];
+    let He;
+    t[164] === d ? He = t[165] : (He = d.formatMessage(Q.customModalCancelLabel), t[164] = d, t[165] = He);
+    let Y;
+    t[166] !== o || t[167] !== He ? (Y = (0, Z.jsx)(f.Button, {
+        title: He,
+        onClick: o
+    }), t[166] = o, t[167] = He, t[168] = Y) : Y = t[168];
+    let Ue;
+    t[169] !== Ve || t[170] !== Y ? (Ue = (0, Z.jsx)(f.Actions, {
+        primaryButton: Ve,
+        secondaryButton: Y
+    }), t[169] = Ve, t[170] = Y, t[171] = Ue) : Ue = t[171];
+    let We;
+    t[172] !== Re || t[173] !== Ue ? (We = (0, Z.jsxs)(`div`, {
+        className: `px-6 pb-4`,
+        children: [Re, Ue]
+    }), t[172] = Re, t[173] = Ue, t[174] = We) : We = t[174];
+    let Ge;
+    t[175] !== de || t[176] !== G || t[177] !== Le || t[178] !== We ? (Ge = (0, Z.jsxs)(`div`, {
+        className: de,
+        children: [G, Le, We]
+    }), t[175] = de, t[176] = G, t[177] = Le, t[178] = We, t[179] = Ge) : Ge = t[179];
+    let Ke;
+    t[180] !== k || t[181] !== K || t[182] !== pe || t[183] !== q || t[184] !== Ge ? (Ke = (0, Z.jsx)(k, {
+        position: K,
+        className: pe,
+        containerClassName: q,
+        children: Ge
+    }), t[180] = k, t[181] = K, t[182] = pe, t[183] = q, t[184] = Ge, t[185] = Ke) : Ke = t[185];
+    let qe;
+    t[186] !== A || t[187] !== Ke ? (qe = (0, Z.jsx)(A, {
+        children: Ke
+    }), t[186] = A, t[187] = Ke, t[188] = qe) : qe = t[188];
+    let Je;
+    return t[189] !== j || t[190] !== me || t[191] !== J || t[192] !== he || t[193] !== qe ? (Je = (0, Z.jsx)(j, {
+        isOpen: me,
+        onClose: J,
+        testId: he,
+        children: qe
+    }), t[189] = j, t[190] = me, t[191] = J, t[192] = he, t[193] = qe, t[194] = Je) : Je = t[194], Je
+}
+
+function et(e, t) {
+    let n = t.replace(/\s+/g, ``);
+    /^\d*$/.test(n) && e(n)
+}
+var tt, X, Z, nt, rt, Q, it, at, ot, st, ct, lt, ut, dt = e((() => {
+        tt = P(), Oe(), J(), me(), U(), G(), K(), pe(), i(), oe(), V(), C(), o(), E(), O(), l(), s(), X = t(k()), R(), Z = F(), nt = `text-token-link hover:text-token-link-hover underline`, rt = {
+            low: 300,
+            medium: 400,
+            high: 550
+        }, Q = N({
+            creditLimitLabel: {
+                id: `workspaceSettings.roles.creditLimit.label`,
+                defaultMessage: `Weekly usage limit`
+            },
+            creditLimitDescription: {
+                id: `workspaceSettings.roles.creditLimit.description`,
+                defaultMessage: `Set a weekly credit usage alert or hard limit for each member in the role.`
+            },
+            sharedUsageLimitLabel: {
+                id: `workspaceSettings.roles.sharedUsageLimit.label`,
+                defaultMessage: `Monthly shared budget`
+            },
+            sharedUsageLimitDescription: {
+                id: `workspaceSettings.roles.sharedUsageLimit.description`,
+                defaultMessage: `Set a calendar-month credit budget shared by everyone in the role.`
+            },
+            setSharedUsageLimitLabel: {
+                id: `workspaceSettings.roles.sharedUsageLimit.dropdown.label`,
+                defaultMessage: `Set monthly shared budget`
+            },
+            setSharedUsageLimitDescription: {
+                id: `workspaceSettings.roles.sharedUsageLimit.dropdown.description`,
+                defaultMessage: `Choose the calendar-month credit budget for this role. When the role reaches this shared cap, everyone in the role is blocked until the limit resets.`
+            },
+            customSharedUsageLimitTitle: {
+                id: `workspaceSettings.roles.sharedUsageLimit.customModal.title`,
+                defaultMessage: `Set custom monthly shared budget`
+            },
+            customSharedUsageLimitDescription: {
+                id: `workspaceSettings.roles.sharedUsageLimit.customModal.description`,
+                defaultMessage: `Enter the calendar-month credit budget for this role.`
+            },
+            customSharedUsageLimitAriaLabel: {
+                id: `workspaceSettings.roles.sharedUsageLimit.customModal.input.label`,
+                defaultMessage: `Monthly shared budget`
+            },
+            sharedUsageInvalidLimit: {
+                id: `workspaceSettings.roles.sharedUsageLimit.customModal.input.error.invalid`,
+                defaultMessage: `Enter a whole number of 0 or more credits.`
+            },
+            setCreditLimitLabel: {
+                id: `workspaceSettings.roles.creditLimit.dropdown.label`,
+                defaultMessage: `Set weekly usage alert`
+            },
+            setCreditLimitDescription: {
+                id: `ErR7ID`,
+                defaultMessage: `Admins will receive an alert when users reach this threshold. <learnMoreLink>Learn more</learnMoreLink>`
+            },
+            enforcementDropdownPlaceholder: {
+                id: `vKYpfA`,
+                defaultMessage: `Select enforcement`
+            },
+            enforcementDropdownNoneLabel: {
+                id: `wdtOUz`,
+                defaultMessage: `None`
+            },
+            enforcementDropdownLowUsageLabel: {
+                id: `Eog4Bt`,
+                defaultMessage: `Low`
+            },
+            enforcementDropdownMediumUsageLabel: {
+                id: `+8zdmU`,
+                defaultMessage: `Standard`
+            },
+            enforcementDropdownHighLabel: {
+                id: `O8LSe9`,
+                defaultMessage: `High`
+            },
+            enforcementDropdownCustomLabel: {
+                id: `Vg9jm9`,
+                defaultMessage: `Custom...`
+            },
+            customModalTitle: {
+                id: `ncPgjp`,
+                defaultMessage: `Set custom usage limit`
+            },
+            customModalSetAlertLabel: {
+                id: `SGk6Kk`,
+                defaultMessage: `Set alert`
+            },
+            customModalSetAlertDescription: {
+                id: `D6tq1u`,
+                defaultMessage: `Notify admins when users are nearing their weekly limit to help monitor usage without blocking access.`
+            },
+            customModalAlertDisabledNote: {
+                id: `Woh6NB`,
+                defaultMessage: `Alerts are disabled when the hard cap is 0.`
+            },
+            customModalSetHardCapLabel: {
+                id: `ssDuR/`,
+                defaultMessage: `Set hard cap`
+            },
+            customModalSetHardCapDescription: {
+                id: `RL7iVH`,
+                defaultMessage: `Notify users when they've reached this limit and automatically block additional usage.`
+            },
+            customModalHardCapConflictError: {
+                id: `+HBuVz`,
+                defaultMessage: `Hard cap must be greater than the alert limit.`
+            },
+            customModalHardCapRequired: {
+                id: `GTp/gp`,
+                defaultMessage: `Specify a hard cap limit when the toggle is on`
+            },
+            customModalCancelLabel: {
+                id: `PeVgjT`,
+                defaultMessage: `Cancel`
+            },
+            customModalSaveLabel: {
+                id: `uUF8/I`,
+                defaultMessage: `Save usage limit`
+            },
+            customModalApplyLabel: {
+                id: `workspaceSettings.roles.creditLimit.modal.button.apply`,
+                defaultMessage: `Apply`
+            },
+            customModalCreditsSuffix: {
+                id: `3kb1OW`,
+                defaultMessage: `credits/week`
+            },
+            sharedUsageLimitCreditsSuffix: {
+                id: `workspaceSettings.roles.sharedUsageLimit.input.suffix`,
+                defaultMessage: `credits/calendar month`
+            },
+            creditsPerWeek: {
+                id: `OMPl9I`,
+                defaultMessage: `{value} credits/week`
+            },
+            creditsPerCalendarMonth: {
+                id: `workspaceSettings.roles.sharedUsageLimit.creditsPerCalendarMonth`,
+                defaultMessage: `{value} credits/calendar month`
+            },
+            customModalToggleAriaLabel: {
+                id: `VHampB`,
+                defaultMessage: `Toggle hard cap limit`
+            },
+            invalidLimit: {
+                id: `v0QaLa`,
+                defaultMessage: `Enter a positive number as the credit limit`
+            },
+            alertRequiredForHardCap: {
+                id: `NpeaWe`,
+                defaultMessage: `Set an alert limit when a hard cap is enabled`
+            },
+            submitSuccess: {
+                id: `G7A/Zh`,
+                defaultMessage: `Credit limit updated`
+            },
+            submitError: {
+                id: `brHKHK`,
+                defaultMessage: `We couldn’t update the credit limit. Try again.`
+            }
+        }), it = e => e.trim().toLowerCase(), at = (e, ...t) => !e || t.join(` `).toLowerCase().includes(e), ot = ({
+            searchQuery: e,
+            intl: t,
+            includeSharedUsageLimit: n = !0
+        }) => {
+            let r = it(e);
+            if (!r) return !0;
+            let i = [t.formatMessage(Q.creditLimitLabel), t.formatMessage(Q.creditLimitDescription), t.formatMessage(Q.setCreditLimitLabel)];
+            return n && i.push(t.formatMessage(Q.sharedUsageLimitLabel), t.formatMessage(Q.sharedUsageLimitDescription), t.formatMessage(Q.setSharedUsageLimitLabel), t.formatMessage(Q.setSharedUsageLimitDescription)), at(r, ...i)
+        }, st = (e, t) => ({
+            limit: e,
+            enforcement_mode: t
+        }), ct = ({
+            selectionKey: e,
+            trimmedSelectionAlert: t,
+            parsedSelectionAlert: n,
+            hasCustomHardCap: r,
+            parsedSelectionHardCap: i,
+            isHardCapZero: a
+        }) => {
+            let o = {
+                soft_alert_credit_limit: null,
+                hard_cap_credit_limit: null
+            };
+            return e !== `none` && t !== `` && !a && (o.soft_alert_credit_limit = st(n, `ALERT`)), e === `custom` && (o.hard_cap_credit_limit = r ? st(i, `HARD_CAP`) : null), o
+        }, lt = ({
+            sharedUsageLimit: e
+        }) => ({
+            hard_cap_shared_credit_limit: e == null ? null : st(e, `HARD_CAP`)
+        }), ut = `https://help.openai.com/en/articles/20001001`
+    })),
+    ft, pt, mt, ht, gt, _t = e((() => {
+        Se(), ft = e => e.trim().toLowerCase(), pt = (e, t, n) => e == null ? `` : typeof e == `string` ? e : String(t.formatMessage(e, n)), mt = (e, ...t) => !e || t.join(` `).toLowerCase().includes(e), ht = ({
+            intl: e,
+            preReleases: t,
+            searchQuery: n,
+            getEntryPresentation: r,
+            preservePermissionFamilies: i = !1,
+            visibleTextOnly: a = !1
+        }) => {
+            let o = ft(n);
+            return o ? t.flatMap(t => {
+                let n = pt(t.description, e),
+                    s = new Set(t.newReleaseEntries.flatMap(e => e.rbac ? [e.permissionName] : []));
+                if (mt(o, t.name, n)) return [t];
+                let c = t.newReleaseEntries.filter(t => {
+                    let n = pt(t.title, e),
+                        i = pt(t.description, e, t.descriptionValues),
+                        c = pt(t.additionalDescription, e, t.additionalDescriptionValues),
+                        l = r?.(t, s)?.title;
+                    return a ? mt(o, l ?? n, i, c) : mt(o, n, i, c, t.rbac ? t.permissionName : t.settingName, l ?? ``)
+                });
+                return c.length === 0 ? [] : [i ? t : {
+                    ...t,
+                    newReleaseEntries: c
+                }]
+            }) : t
+        }, gt = ({
+            intl: e,
+            preReleases: t,
+            searchQuery: n,
+            getEntryPresentation: r,
+            layout: i = `card`,
+            effectiveRolePermissions: a
+        }) => {
+            let o = Ee(t.flatMap(e => e.newReleaseEntries)),
+                s = ht({
+                    intl: e,
+                    preReleases: t,
+                    searchQuery: n,
+                    getEntryPresentation: r,
+                    preservePermissionFamilies: i === `section`,
+                    visibleTextOnly: i === `section`
+                });
+            return a == null ? s : s.map(e => ({
+                ...e,
+                newReleaseEntries: e.newReleaseEntries.filter(e => xe({
+                    currentPermissionNames: a,
+                    entry: e,
+                    permissionDependencyByName: o
+                }))
+            }))
+        }
+    }));
+
+function vt(e) {
+    return e.newReleaseEntries.length > 0
+}
+
+function yt(e) {
+    return e.adminPreviewFeature != null
+}
+
+function bt(e) {
+    return e.newReleaseOptOutFlag === ee.LIBRARY_SHARING_GA_OPT_OUT
+}
+
+function xt(e) {
+    return e.rbac ? [e.permissionName] : []
+}
+var St, Ct, $, wt, Tt, Et, Dt, Ot, kt, At = e((() => {
+        St = P(), n(), Re(), w(), Pe(), ke(), Me(), x(), Se(), Ce(), We(), Ye(), i(), q(), y(), H(), D(), oe(), g(), C(), o(), s(), Ct = t(k()), R(), _t(), $ = F(), wt = `text-token-link hover:text-token-link-hover underline`, Tt = e => {
+            "use forget";
+            let t = (0, St.c)(9),
+                {
+                    entry: n
+                } = e;
+            if (!n.description && !n.additionalDescription) return null;
+            let r;
+            t[0] !== n.description || t[1] !== n.descriptionValues ? (r = n.description && (0, $.jsx)(`div`, {
+                children: (0, $.jsx)(M, {
+                    ...n.description,
+                    values: n.descriptionValues
+                })
+            }), t[0] = n.description, t[1] = n.descriptionValues, t[2] = r) : r = t[2];
+            let i;
+            t[3] !== n.additionalDescription || t[4] !== n.additionalDescriptionValues ? (i = n.additionalDescription && (0, $.jsx)(`div`, {
+                children: (0, $.jsx)(M, {
+                    ...n.additionalDescription,
+                    values: n.additionalDescriptionValues
+                })
+            }), t[3] = n.additionalDescription, t[4] = n.additionalDescriptionValues, t[5] = i) : i = t[5];
+            let a;
+            return t[6] !== r || t[7] !== i ? (a = (0, $.jsxs)(`div`, {
+                className: `text-token-text-tertiary text-xs`,
+                children: [r, i]
+            }), t[6] = r, t[7] = i, t[8] = a) : a = t[8], a
+        }, Et = e => e.reduce((e, t) => e + t.newReleaseEntries.length, 0), Dt = () => {
+            "use forget";
+            let e = (0, St.c)(3),
+                t;
+            e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(de, {
+                "aria-hidden": `true`,
+                className: `icon text-token-interactive-icon-tertiary-default`
+            }), e[0] = t) : t = e[0];
+            let n;
+            e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, $.jsx)(`p`, {
+                className: `text-token-text-primary text-sm font-semibold`,
+                children: (0, $.jsx)(M, {
+                    ...kt.enterpriseBetaFeatureJuly30EmptyTitle
+                })
+            }), e[1] = n) : n = e[1];
+            let r;
+            return e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, $.jsxs)(`div`, {
+                className: `bg-token-bg-secondary-surface flex min-h-[148px] w-full flex-col items-center justify-center gap-2 rounded-lg text-center`,
+                children: [t, (0, $.jsxs)(`div`, {
+                    className: `flex flex-col gap-1 pb-1`,
+                    children: [n, (0, $.jsx)(`p`, {
+                        className: `text-token-text-secondary text-sm`,
+                        children: (0, $.jsx)(M, {
+                            ...kt.enterpriseBetaFeatureJuly30EmptyDescription
+                        })
+                    })]
+                })]
+            }), e[2] = r) : r = e[2], r
+        }, Ot = e => {
+            "use forget";
+            let t = (0, St.c)(96),
+                {
+                    workspaceId: n,
+                    data: i,
+                    preReleases: a,
+                    handleSaveRole: o,
+                    role: s,
+                    showOptOutControls: c,
+                    isRbacEnabled: l,
+                    layout: u,
+                    disableAllToggles: d,
+                    disableRolePermissionWrites: p,
+                    searchQuery: h,
+                    sectionExpanded: g,
+                    forceSectionExpanded: y,
+                    onSectionExpandedChange: x,
+                    renderHighlightedText: C,
+                    renderSettingEntryControl: w,
+                    getEntryPresentation: T,
+                    renderRbacEntryControl: ne,
+                    useSitesPermissionSelect: ae,
+                    effectiveRolePermissions: oe,
+                    onOptOutChange: E,
+                    loadingAdminPreviewFeature: D,
+                    onSetAdminPreviewAccess: O
+                } = e,
+                k = u === void 0 ? `card` : u,
+                A = d !== void 0 && d,
+                j = p !== void 0 && p,
+                N = h === void 0 ? `` : h,
+                P = y !== void 0 && y,
+                F = ae === void 0 || ae,
+                I = ce(),
+                L = (0, Ct.useId)(),
+                R = re(n),
+                le = _(),
+                B = R ?? le,
+                [V, H] = (0, Ct.useState)(null),
+                U, ue, W, de, fe, G, K, pe, q, me, J, he, ve, ye, be, xe;
+            if (t[0] !== B?.isHipaaCompliantWorkspace || t[1] !== i || t[2] !== A || t[3] !== j || t[4] !== oe || t[5] !== P || t[6] !== T || t[7] !== o || t[8] !== I || t[9] !== l || t[10] !== k || t[11] !== D || t[12] !== E || t[13] !== x || t[14] !== O || t[15] !== V?.enableConfirmation || t[16] !== a || t[17] !== C || t[18] !== ne || t[19] !== w || t[20] !== s || t[21] !== N || t[22] !== L || t[23] !== g || t[24] !== c || t[25] !== F || t[26] !== n) {
+                ve = Symbol.for(`react.early_return_sentinel`);
+                bb0: {
+                    let e = gt({
+                            intl: I,
+                            preReleases: a,
+                            searchQuery: N,
+                            getEntryPresentation: T,
+                            layout: k,
+                            effectiveRolePermissions: oe,
+                            rolePermissions: s.permissions
+                        }),
+                        u = e.some(vt);
+                    if (ft(N) && (k === `section` ? !u : e.length === 0)) {
+                        ve = null;
+                        break bb0
+                    }
+                    let d = k === `section` && !u,
+                        f = d ? [] : e,
+                        p = d || f.some(yt),
+                        m = p ? kt.adminPreviewSection : kt.enterpriseBetaFeatureSection,
+                        h = B?.isHipaaCompliantWorkspace ?? !1,
+                        _ = p ? kt.adminPreviewSectionDescription : f.some(bt) ? kt.enterpriseBetaFeaturePerFeatureReleaseDescription : k === `section` ? kt.enterpriseBetaFeatureJuly30SectionDescription : kt.enterpriseBetaFeatureSectionDescription,
+                        y;t[43] !== _ || t[44] !== I || t[45] !== C ? (y = C?.(I.formatMessage(_)), t[43] = _, t[44] = I, t[45] = C, t[46] = y) : y = t[46];
+                    let re = y,
+                        ae = k !== `section` && e.length === 0 ? kt.enterpriseBetaFeatureEmptySectionDescription : h && u && !p ? (0, $.jsxs)(`div`, {
+                            className: `flex flex-col gap-2`,
+                            children: [(0, $.jsx)(`p`, {
+                                children: re ?? (0, $.jsx)(M, {
+                                    ..._
+                                })
+                            }), (0, $.jsx)(`p`, {
+                                className: `text-token-text-status-warning`,
+                                children: (0, $.jsx)(M, {
+                                    ...kt.enterpriseBetaFeatureSectionHipaaDescription
+                                })
+                            })]
+                        }) : re ?? _,
+                        ce;t[47] === I ? ce = t[48] : (ce = e => typeof e.title == `string` ? e.title : I.formatMessage(e.title), t[47] = I, t[48] = ce),
+                    ue = ce;
+                    let R;t[49] === s.permissions ? R = t[50] : (R = (e, t) => {
+                        let n = e.additionalPermissionNames ?? [];
+                        return Te({
+                            add: t,
+                            currentPermissionNames: s.permissions,
+                            permissionName: e.permissionName,
+                            additionalPermissionNames: t ? n : [...n, ...e.permissionNamesToRemoveWhenDisabled ?? []]
+                        })
+                    }, t[49] = s.permissions, t[50] = R);
+                    let le = R,
+                        Se;t[51] !== j || t[52] !== o ? (Se = e => j ? Promise.resolve() : o(e), t[51] = j, t[52] = o, t[53] = Se) : Se = t[53];
+                    let Ce = Se,
+                        we;t[54] !== le || t[55] !== s || t[56] !== Ce ? (we = (e, t) => Ce({
+                        ...s,
+                        permissions: le(e, t)
+                    }), t[54] = le, t[55] = s, t[56] = Ce, t[57] = we) : we = t[57],
+                    de = we,
+                    W = V?.enableConfirmation;
+                    let Ee = k === `section` && g != null && x != null,
+                        De = !Ee || P || g,
+                        Oe, ke;t[58] !== I || t[59] !== C || t[60] !== m ? (Oe = I.formatMessage(m), ke = C?.(Oe), t[58] = I, t[59] = C, t[60] = m, t[61] = Oe, t[62] = ke) : (Oe = t[61], ke = t[62]);
+                    let Me = ke;U = _e,
+                    K = ie(k === `section` ? ie(`border-token-border-default gap-4 border-b pb-8 last:border-b-0`, De && `md:grid md:grid-cols-[minmax(0,240px)_minmax(0,1fr)] md:gap-x-[30px]`) : ie(`border-token-border-default rounded-2xl border`, p ? `p-8!` : `p-6`), ge),
+                    pe = m,
+                    t[63] !== De || t[64] !== P || t[65] !== Me || t[66] !== Ee || t[67] !== x || t[68] !== C || t[69] !== L || t[70] !== Oe || t[71] !== m ? (q = Ee ? (0, $.jsxs)(`span`, {
+                        className: `flex items-center gap-3`,
+                        children: [(0, $.jsx)(Fe, {
+                            sectionTitle: Oe,
+                            expanded: De,
+                            controlsId: L,
+                            disabled: P,
+                            onExpandedChange: x
+                        }), (0, $.jsx)(`span`, {
+                            children: Me ?? (0, $.jsx)(M, {
+                                ...m
+                            })
+                        })]
+                    }) : C ? (0, $.jsx)(`span`, {
+                        children: Me
+                    }) : void 0, t[63] = De, t[64] = P, t[65] = Me, t[66] = Ee, t[67] = x, t[68] = C, t[69] = L, t[70] = Oe, t[71] = m, t[72] = q) : q = t[72],
+                    me = k === `section` ? void 0 : p ? `text-base! leading-6! font-medium!` : `text-[18px]! leading-[26px]!`,
+                    J = ae,
+                    he = Ee ? `ps-11` : k === `card` && p ? `text-xs! leading-[18px]!` : void 0,
+                    ye = Ee ? L : void 0,
+                    be = Ee && !De,
+                    xe = De ? `flex flex-col gap-4` : `hidden`,
+                    t[73] === d ? fe = t[74] : (fe = d && (0, $.jsx)(Dt, {}), t[73] = d, t[74] = fe),
+                    G = f.map(e => {
+                        let t = new Set(e.newReleaseEntries.flatMap(xt)),
+                            a = e.hideEarlyAccessBadge ? null : (0, $.jsx)(`span`, {
+                                className: `inline-flex h-[18px] shrink-0 items-center justify-center rounded-[6px] bg-[var(--green-a50)] px-[5px] text-xs font-medium text-[light-dark(var(--green-600),var(--green-400))]`,
+                                children: (0, $.jsx)(M, {
+                                    ...kt.enterpriseBetaFeatureBadge
+                                })
+                            }),
+                            o = e.newReleaseEntries.map((n, a) => {
+                                let o = n.rbac ? n.permissionName : n.settingName,
+                                    c = n.rbac ? n.additionalPermissionNames ?? [] : [],
+                                    l = e.adminPreviewFeature == null ? T?.(n, t, e.newReleaseEntries[a + 1]) : void 0,
+                                    u = l?.title ?? ue(n),
+                                    d = n.rbac && n.dependsOnPermissionName != null && !(oe ?? s.permissions).includes(n.dependsOnPermissionName),
+                                    f = n.rbac && j,
+                                    p = Le({
+                                        isReadOnly: f,
+                                        disabledReason: n.disabledReason
+                                    }),
+                                    m = A || f || n.disabled || d || e.adminPreviewFeature === `admin_preview_library_sharing` && i.admin_preview_launch_settings?.admin_preview_library_sharing == null,
+                                    h = n.rbac && (n.dependsOnPermissionName != null || n.permissionNamesToRemoveWhenDisabled != null || n.enableConfirmation != null),
+                                    g = n.rbac ? ne?.(n, m, p, u) : null,
+                                    _;
+                                if (!n.rbac) _ = w?.(n, m) ?? null;
+                                else if (g != null) _ = n.permissionName === b.SitesAccess ? (0, $.jsx)(Ne, {
+                                    children: g
+                                }) : g;
+                                else if (n.permissionName === b.SitesAccess) _ = F && se() ? (0, $.jsx)(Ne, {
+                                    children: (0, $.jsx)(je, {
+                                        ariaLabel: u,
+                                        role: s,
+                                        handleSaveRole: Ce,
+                                        disabled: m,
+                                        disabledReason: p
+                                    })
+                                }) : (0, $.jsx)(Ne, {
+                                    children: (0, $.jsx)(Ae, {
+                                        ariaLabel: u,
+                                        role: s,
+                                        permissionName: n.permissionName,
+                                        additionalPermissionNames: n.additionalPermissionNames,
+                                        permissionNamesToRemoveWhenDisabled: n.permissionNamesToRemoveWhenDisabled,
+                                        enableConfirmation: n.enableConfirmation,
+                                        handleSaveRole: Ce,
+                                        disabled: m,
+                                        disabledReason: p,
+                                        renderDisabledToggleAsOff: n.renderDisabledToggleAsOff
+                                    })
+                                });
+                                else if (!h) _ = (0, $.jsx)(Ae, {
+                                    ariaLabel: u,
+                                    role: s,
+                                    permissionName: n.permissionName,
+                                    handleSaveRole: Ce,
+                                    disabled: m,
+                                    disabledReason: p,
+                                    renderDisabledToggleAsOff: n.renderDisabledToggleAsOff
+                                });
+                                else {
+                                    let e = [n.permissionName, ...c],
+                                        t = (0, $.jsx)(te, {
+                                            size: `normal`,
+                                            "aria-label": u,
+                                            checked: !(m && n.renderDisabledToggleAsOff) && e.every(e => s.permissions.includes(e)),
+                                            onCheckedChange: e => {
+                                                if (e && n.enableConfirmation) {
+                                                    H(n);
+                                                    return
+                                                }
+                                                de(n, e)
+                                            },
+                                            disabled: m
+                                        });
+                                    _ = m && p ? (0, $.jsx)(v, {
+                                        label: I.formatMessage(p),
+                                        children: t
+                                    }) : t
+                                }
+                                return _ == null ? null : (0, $.jsx)(`div`, {
+                                    className: ie(`flex justify-between gap-4 py-3`, k === `section` && e.adminPreviewFeature != null && `px-4`, l?.className),
+                                    children: (0, $.jsxs)(`div`, {
+                                        className: `flex w-full items-center justify-between gap-4`,
+                                        children: [(0, $.jsxs)(`div`, {
+                                            children: [(0, $.jsxs)(`div`, {
+                                                className: `text-md flex items-center gap-2`,
+                                                children: [l?.label ?? (C ? (0, $.jsx)(`span`, {
+                                                    children: C(u)
+                                                }) : I.formatMessage({
+                                                    id: `workspaceSettings.templateTitle.enterpriseReleaseTitle`,
+                                                    defaultMessage: `{name}`
+                                                }, {
+                                                    name: u
+                                                })), e.adminPreviewFeature != null && (0, $.jsx)(z, {
+                                                    contentLayout: `multi-line`,
+                                                    content: typeof e.description == `string` ? e.description : I.formatMessage(e.description),
+                                                    side: `top-center`,
+                                                    children: e => (0, $.jsx)(`button`, {
+                                                        ...e,
+                                                        type: `button`,
+                                                        "aria-label": I.formatMessage(kt.featureInfo, {
+                                                            feature: u
+                                                        }),
+                                                        className: `interactive-button interactive-label-tertiary inline-flex items-center rounded-sm`,
+                                                        children: (0, $.jsx)(S, {
+                                                            className: `icon-sm`,
+                                                            "aria-hidden": `true`
+                                                        })
+                                                    })
+                                                })]
+                                            }), (0, $.jsx)(Tt, {
+                                                entry: n
+                                            }), n.rbac && n.permissionName === b.LibrarySharingManagementAccess && (0, $.jsx)(qe, {
+                                                controlMode: i.library_sharing_control_mode,
+                                                enabled: i.beta_settings.library_sharing_enabled ?? !1
+                                            }), e.adminPreviewFeature != null && n.rbac && (0, $.jsxs)(`button`, {
+                                                type: `button`,
+                                                className: `interactive-button text-token-interactive-label-accent-accessible relative mt-1 text-xs`,
+                                                "aria-busy": D === e.adminPreviewFeature,
+                                                disabled: A || j || n.disabled || O == null,
+                                                onClick: () => O?.(e, n),
+                                                children: [(0, $.jsx)(M, {
+                                                    ...i.admin_preview_launch_settings?.[e.adminPreviewFeature] == null ? kt.setAccess : kt.editAccess
+                                                }), D === e.adminPreviewFeature && (0, $.jsx)(`span`, {
+                                                    "aria-hidden": `true`,
+                                                    className: `absolute start-full top-1/2 ms-1 -translate-y-1/2`,
+                                                    children: (0, $.jsx)(r, {
+                                                        className: `icon-sm`
+                                                    })
+                                                })]
+                                            })]
+                                        }), (0, $.jsx)(`div`, {
+                                            className: `flex items-center justify-between gap-6`,
+                                            children: (0, $.jsx)(`div`, {
+                                                className: `flex min-w-0 items-center gap-3`,
+                                                children: (0, $.jsx)(`div`, {
+                                                    className: `shrink-0`,
+                                                    children: _
+                                                })
+                                            })
+                                        })]
+                                    })
+                                }, o)
+                            });
+                        if (e.adminPreviewFeature != null) return (0, $.jsxs)(`div`, {
+                            id: e.anchorId,
+                            role: `group`,
+                            "aria-label": e.name,
+                            className: `w-full py-2`,
+                            children: [h && e.newReleaseEntries.length > 0 && (0, $.jsx)(`p`, {
+                                className: `text-token-text-status-warning text-sm`,
+                                children: (0, $.jsx)(M, {
+                                    ...kt.enterpriseBetaFeatureSectionHipaaDescription
+                                })
+                            }), o]
+                        }, e.adminPreviewFeature);
+                        let u = e.description;
+                        typeof u != `string` && (u = I.formatMessage(u));
+                        let d = e.infoTooltip;
+                        return (0, $.jsxs)(`div`, {
+                            className: `m-auto flex w-full flex-col`,
+                            id: e.anchorId,
+                            children: [(0, $.jsxs)(`div`, {
+                                className: `flex flex-col gap-2 py-2`,
+                                children: [(0, $.jsxs)(`div`, {
+                                    children: [(0, $.jsxs)(`div`, {
+                                        className: `flex items-center gap-2 text-base font-semibold`,
+                                        children: [C ? (0, $.jsx)(`span`, {
+                                            children: C(e.name)
+                                        }) : I.formatMessage({
+                                            id: `workspaceSettings.templateTitle.enterpriseReleaseTitle`,
+                                            defaultMessage: `{name}`
+                                        }, {
+                                            name: e.name
+                                        }), a, d && (0, $.jsx)(v, {
+                                            interactive: !0,
+                                            label: (0, $.jsx)(M, {
+                                                ...d.message,
+                                                values: {
+                                                    link: e => (0, $.jsx)(`a`, {
+                                                        href: d.linkHref,
+                                                        className: wt,
+                                                        children: e
+                                                    })
+                                                }
+                                            }),
+                                            side: `top`,
+                                            children: (0, $.jsx)(`button`, {
+                                                type: `button`,
+                                                "aria-label": I.formatMessage(d.ariaLabel),
+                                                className: `text-token-text-tertiary hover:text-token-text-secondary focus-visible:outline-token-border-heavy inline-flex size-4 items-center justify-center rounded-full focus-visible:outline-2 focus-visible:outline-offset-2`,
+                                                children: (0, $.jsx)(S, {
+                                                    "aria-hidden": `true`,
+                                                    className: `size-3.5`
+                                                })
+                                            })
+                                        })]
+                                    }), (0, $.jsx)(`span`, {
+                                        className: `text-token-text-secondary text-sm`,
+                                        children: e.helpCenterLink ? (0, $.jsx)(M, {
+                                            id: `workspaceSettings.templateTitle.enterpriseReleaseDescription`,
+                                            defaultMessage: `{name} <learnMore>Learn more</learnMore>`,
+                                            values: {
+                                                name: C?.(u) ?? u,
+                                                learnMore: t => (0, $.jsx)(`a`, {
+                                                    href: e.helpCenterLink,
+                                                    target: e.helpLinkOpenNewTab === !1 ? void 0 : `_blank`,
+                                                    className: wt,
+                                                    rel: e.helpLinkOpenNewTab === !1 ? void 0 : `noopener noreferrer`,
+                                                    children: e.helpLinkLabel ? I.formatMessage(e.helpLinkLabel) : t
+                                                })
+                                            }
+                                        }) : C?.(u) ?? u
+                                    })]
+                                }), h && p && e.newReleaseEntries.length > 0 && (0, $.jsx)(`p`, {
+                                    className: `text-token-text-status-warning text-sm`,
+                                    children: (0, $.jsx)(M, {
+                                        ...kt.enterpriseBetaFeatureSectionHipaaDescription
+                                    })
+                                }), (0, $.jsx)(`div`, {
+                                    role: k === `section` ? `group` : void 0,
+                                    "aria-label": k === `section` ? e.name : void 0,
+                                    className: ie(`flex flex-col`, k !== `section` && `divide-y divide-token-border-default border-y border-token-border-default`),
+                                    children: o
+                                })]
+                            }), !(e.shouldHideOptOutButton ?? !1) && c && e.newReleaseOptOutFlag && (e.newReleaseOptOutFlag === ee.LIBRARY_SHARING_GA_OPT_OUT ? (0, $.jsx)(Je, {
+                                betaSettingsDict: i.beta_settings_dict,
+                                workspaceId: n,
+                                feature: e.newReleaseOptOutFlag,
+                                featureName: e.optOutFeatureName ?? e.name,
+                                storedValue: i.beta_settings[e.newReleaseOptOutFlag],
+                                isRbacEnabled: l,
+                                disabled: A,
+                                onChange: E
+                            }) : (0, $.jsx)(ze, {
+                                workspaceId: n,
+                                feature: e.newReleaseOptOutFlag,
+                                featureName: e.optOutFeatureName ?? e.name,
+                                storedValue: i.beta_settings[e.newReleaseOptOutFlag],
+                                isRbacEnabled: l,
+                                disabled: A,
+                                onChange: E
+                            }))]
+                        }, e.name)
+                    })
+                }
+                t[0] = B?.isHipaaCompliantWorkspace, t[1] = i, t[2] = A, t[3] = j, t[4] = oe, t[5] = P, t[6] = T, t[7] = o, t[8] = I, t[9] = l, t[10] = k, t[11] = D, t[12] = E, t[13] = x, t[14] = O, t[15] = V?.enableConfirmation, t[16] = a, t[17] = C, t[18] = ne, t[19] = w, t[20] = s, t[21] = N, t[22] = L, t[23] = g, t[24] = c, t[25] = F, t[26] = n, t[27] = U, t[28] = ue, t[29] = W, t[30] = de, t[31] = fe, t[32] = G, t[33] = K, t[34] = pe, t[35] = q, t[36] = me, t[37] = J, t[38] = he, t[39] = ve, t[40] = ye, t[41] = be, t[42] = xe
+            } else U = t[27], ue = t[28], W = t[29], de = t[30], fe = t[31], G = t[32], K = t[33], pe = t[34], q = t[35], me = t[36], J = t[37], he = t[38], ve = t[39], ye = t[40], be = t[41], xe = t[42];
+            if (ve !== Symbol.for(`react.early_return_sentinel`)) return ve;
+            let Se;
+            t[75] !== fe || t[76] !== G || t[77] !== ye || t[78] !== be || t[79] !== xe ? (Se = (0, $.jsxs)(`div`, {
+                id: ye,
+                hidden: be,
+                className: xe,
+                children: [fe, G]
+            }), t[75] = fe, t[76] = G, t[77] = ye, t[78] = be, t[79] = xe, t[80] = Se) : Se = t[80];
+            let Ce;
+            t[81] !== ue || t[82] !== W || t[83] !== V || t[84] !== de ? (Ce = V && W && (0, $.jsx)(m, {
+                isOpen: !0,
+                onClose: () => H(null),
+                title: ue(V),
+                testId: `modal-enterprise-permission-enable-confirmation`,
+                primaryButton: (0, $.jsx)(f.Button, {
+                    as: `button`,
+                    color: `primary`,
+                    loading: !1,
+                    onClick: async () => {
+                        await de(V, !0), H(null)
+                    },
+                    children: (0, $.jsx)(M, {
+                        ...kt.enterprisePermissionEnable
+                    })
+                }),
+                secondaryButton: (0, $.jsx)(f.Button, {
+                    as: `button`,
+                    color: `ghost`,
+                    onClick: () => H(null),
+                    children: (0, $.jsx)(M, {
+                        ...kt.enterprisePermissionEnableCancel
+                    })
+                }),
+                children: (0, $.jsxs)(`div`, {
+                    className: `text-token-text-secondary flex flex-col gap-3 text-sm`,
+                    children: [(0, $.jsx)(`p`, {
+                        children: (0, $.jsx)(M, {
+                            ...W.body
+                        })
+                    }), W.details && (0, $.jsx)(`p`, {
+                        children: (0, $.jsx)(M, {
+                            ...W.details,
+                            values: {
+                                learnMoreLink: e => W.learnMoreUrl ? (0, $.jsx)(`a`, {
+                                    href: W.learnMoreUrl,
+                                    target: `_blank`,
+                                    className: wt,
+                                    rel: `noopener noreferrer`,
+                                    children: e
+                                }) : e
+                            }
+                        })
+                    })]
+                })
+            }), t[81] = ue, t[82] = W, t[83] = V, t[84] = de, t[85] = Ce) : Ce = t[85];
+            let we;
+            return t[86] !== U || t[87] !== K || t[88] !== pe || t[89] !== q || t[90] !== me || t[91] !== J || t[92] !== he || t[93] !== Se || t[94] !== Ce ? (we = (0, $.jsxs)(U, {
+                className: K,
+                title: pe,
+                titleContent: q,
+                titleClassName: me,
+                description: J,
+                descriptionClassName: he,
+                children: [Se, Ce]
+            }), t[86] = U, t[87] = K, t[88] = pe, t[89] = q, t[90] = me, t[91] = J, t[92] = he, t[93] = Se, t[94] = Ce, t[95] = we) : we = t[95], we
+        }, kt = N({
+            featureInfo: {
+                id: `chatgpt.workspace.permissions.admin_preview.feature_info`,
+                defaultMessage: `About {feature}`
+            },
+            setAccess: {
+                id: `chatgpt.workspace.permissions.admin_preview.set_access`,
+                defaultMessage: `Set access`
+            },
+            editAccess: {
+                id: `chatgpt.workspace.permissions.admin_preview.edit_access`,
+                defaultMessage: `Edit access`
+            },
+            enterpriseBetaFeatureEmptySectionDescription: {
+                id: `workspaceSettings.enterpriseBetaFeatureEmptySectionDescription`,
+                defaultMessage: `New enterprise features are generally available, but we provide a multi-week change-management window before they turn on by default. Currently there are no features in the change-management window.`
+            },
+            enterpriseBetaFeatureSectionDescription: {
+                id: `workspaceSettings.enterpriseBetaFeatureSectionDescriptionRedesign`,
+                defaultMessage: `Features are off by default during early access. Admins can turn them on for the workspace or for specific roles via Role-Based Access Controls (RBAC). When early access ends, the features will auto-enable for Workspace / Default unless an admin opts out. Custom roles are unaffected.`
+            },
+            enterpriseBetaFeatureJuly30SectionDescription: {
+                id: `chatgpt.workspace.permissions.july30_redesign.role.early_access.description`,
+                defaultMessage: `Early access features are off by default. You can turn them on for everyone or for specific roles. When early access ends, they turn on automatically unless you opt out.`
+            },
+            enterpriseBetaFeaturePerFeatureReleaseDescription: {
+                id: `chatgpt.workspace.permissions.early_access.per_feature_release.description`,
+                defaultMessage: `Early access features are off by default. Configure access for your workspace or specific roles, and review each feature’s release policy below.`
+            },
+            adminPreviewSectionDescription: {
+                id: `chatgpt.workspace.permissions.admin_preview.review_description`,
+                defaultMessage: `Set access for features in admin preview and after launch. Review the Preview and Launch choices for each feature before saving.`
+            },
+            enterpriseBetaFeatureJuly30EmptyTitle: {
+                id: `chatgpt.workspace.permissions.july30_redesign.role.early_access.empty.title`,
+                defaultMessage: `No features in admin preview`
+            },
+            enterpriseBetaFeatureJuly30EmptyDescription: {
+                id: `chatgpt.workspace.permissions.july30_redesign.role.early_access.empty.description`,
+                defaultMessage: `There’s nothing to manage right now.`
+            },
+            enterpriseBetaFeatureSectionHipaaDescription: {
+                id: `workspaceSettings.enterpriseBetaFeatureSectionHipaaDescription`,
+                defaultMessage: `Early access features have not yet been evaluated for supporting HIPAA compliance and are not included in the included functionality covered by the BAA. These features should not be used with PHI.`
+            },
+            enterpriseBetaFeatureSection: {
+                id: `workspaceSettings.enterpriseBetaDescriptionRedesign`,
+                defaultMessage: `Early access`
+            },
+            adminPreviewSection: {
+                id: `chatgpt.workspace.permissions.admin_preview.title`,
+                defaultMessage: `Admin preview`
+            },
+            enterpriseBetaFeatureBadge: {
+                id: `workspaceSettings.enterpriseBetaFeatureBadge`,
+                defaultMessage: `Early access`
+            },
+            enterprisePermissionEnable: {
+                id: `workspaceSettings.enterprisePermissionEnable`,
+                defaultMessage: `Enable`
+            },
+            enterprisePermissionEnableCancel: {
+                id: `workspaceSettings.enterprisePermissionEnableCancel`,
+                defaultMessage: `Cancel`
+            }
+        })
+    })),
+    jt, Mt, Nt, Pt, Ft, It = e((() => {
+        jt = P(), R(), Mt = F(), Nt = `https://learn.chatgpt.com/docs/hipaa-configuration`, Pt = e => {
+            "use forget";
+            let t = (0, jt.c)(1),
+                {
+                    show: n
+                } = e;
+            if (!n) return null;
+            let r;
+            return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Mt.jsx)(`div`, {
+                className: `mt-1 text-sm`,
+                children: (0, Mt.jsx)(`a`, {
+                    className: `text-token-text-status-warning underline`,
+                    href: Nt,
+                    target: `_blank`,
+                    rel: `noopener noreferrer`,
+                    children: (0, Mt.jsx)(M, {
+                        ...Ft.link
+                    })
+                })
+            }), t[0] = r) : r = t[0], r
+        }, Ft = N({
+            link: {
+                id: `chatgpt.workspace.permissions.codex_and_work_local.section.hipaa_configuration_guide.link`,
+                defaultMessage: `Read the HIPAA configuration guide before enabling the features below.`
+            }
+        })
+    }));
+export {
+    Re as _, At as a, Xe as c, ot as d, qe as f, Le as g, We as h, Et as i, rt as l, ze as m, It as n, gt as o, Ye as p, Ot as r, _t as s, Pt as t, dt as u
+};
+//# sourceMappingURL=222991e8-ikxnpu8a75knfrdl.js.map

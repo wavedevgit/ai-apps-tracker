@@ -1,2 +1,127 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{$_ as t,I1 as n,M1 as r,Pv as i,Y1 as a,b5 as o,x5 as s}from"./4813494d-ed29bs6yiwucn7st.js";import{O as c,s as l,w as u,wn as d}from"./2340486e-oc6d2eodbcrmxur3.js";import{$it as f,HLt as p,IPn as m,JPn as h,KVt as g,XLt as _,Zit as v,iTn as y,nHt as b,rTn as x}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{as as S,is as C}from"./8b34dbc2-j8rcexxiltkm8ucr.js";var w,T,E,D,O,k,A,j,M,N,P,F,I,L,R,z,B,V=e((()=>{w=d(),_(),n(),s(),l(),T=[`builder-hermes-apps-browse`],E=()=>{let e=r();return e?.normalizedAccountUserId??e?.id??`anonymous-account`},D=()=>[...T,E()],O=e=>{if(typeof e!=`string`)return null;let t=e.trim();return t.length>0?t:null},k=e=>`show_internal_badge`in e&&e.show_internal_badge===!0,A=e=>`disabled_by_admin`in e&&e.disabled_by_admin===!0,j=e=>({id:e.id,displayName:e.display_name,subtitle:O(e.subtitle),logoUrl:O(e.logo_url),logoDarkUrl:O(e.logo_dark_url),showInternalBadge:k(e),disabledByAdmin:A(e)}),M=async e=>{let t=await p({signal:e});return{recommendedApps:t.recommended_apps.map(j),publicApps:t.public_apps.map(j),workspaceApps:t.workspace_apps.map(j)}},N=()=>u({queryKey:D(),queryFn:({signal:e})=>M(e)}),P=()=>o().getQueryData(D()),F=e=>e.invalidateQueries({queryKey:T}),I=e=>[...e.recommendedApps,...e.publicApps,...e.workspaceApps],L=(e,t)=>e.toLowerCase().includes(t),R=({browseData:e,directoryAppIds:t,appScope:n,normalizedQuery:r})=>{if(e==null)return!1;let i=e=>!t.has(e.id)&&L(e.displayName,r);return[...e.recommendedApps,...e.publicApps].some(e=>(n!==`internal`||e.showInternalBadge)&&i(e))||e.workspaceApps.some(i)},z=({retry:e,staleTime:t}={})=>o().fetchQuery({...N(),retry:e,staleTime:t}),B=e=>{"use forget";let t=(0,w.c)(5),n;t[0]===e?n=t[1]:(n=e===void 0?{}:e,t[0]=e,t[1]=n);let{enabled:r}=n,i=r===void 0||r,a;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(a=N(),t[2]=a):a=t[2];let o;return t[3]===i?o=t[4]:(o={...a,enabled:i},t[3]=i,t[4]=o),c(o)}})),H,U=e((()=>{b(),i(),y(),h(),V(),H=async e=>{await Promise.all([e.invalidateQueries({queryKey:m(!0,t,x.HERMES)}),e.invalidateQueries({queryKey:m(!1,t,x.HERMES)}),F(e),e.invalidateQueries({queryKey:[g]})])}})),W,G,K=e((()=>{W=d(),U(),C(),i(),y(),n(),v(),G=()=>{"use forget";let e=(0,W.c)(2),n=a(),r;return e[0]===n?r=e[1]:(r={productSku:x.HERMES,includeTags:t,invalidateQueries:H,canReuseLink:e=>f(e,n)},e[0]=n,e[1]=r),S(r)}}));export{z as a,R as c,L as d,B as f,H as i,V as l,G as n,I as o,U as r,P as s,K as t,F as u};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $_ as t,
+    I1 as n,
+    M1 as r,
+    Pv as i,
+    Y1 as a,
+    b5 as o,
+    x5 as s
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    O as c,
+    s as l,
+    w as u,
+    wn as d
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    $it as f,
+    HLt as p,
+    IPn as m,
+    JPn as h,
+    KVt as g,
+    XLt as _,
+    Zit as v,
+    iTn as y,
+    nHt as b,
+    rTn as x
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    as as S,
+    is as C
+} from "./8b34dbc2-j8rcexxiltkm8ucr.js";
+var w, T, E, D, O, k, A, j, M, N, P, F, I, L, R, z, B, V = e((() => {
+        w = d(), _(), n(), s(), l(), T = [`builder-hermes-apps-browse`], E = () => {
+            let e = r();
+            return e?.normalizedAccountUserId ?? e?.id ?? `anonymous-account`
+        }, D = () => [...T, E()], O = e => {
+            if (typeof e != `string`) return null;
+            let t = e.trim();
+            return t.length > 0 ? t : null
+        }, k = e => `show_internal_badge` in e && e.show_internal_badge === !0, A = e => `disabled_by_admin` in e && e.disabled_by_admin === !0, j = e => ({
+            id: e.id,
+            displayName: e.display_name,
+            subtitle: O(e.subtitle),
+            logoUrl: O(e.logo_url),
+            logoDarkUrl: O(e.logo_dark_url),
+            showInternalBadge: k(e),
+            disabledByAdmin: A(e)
+        }), M = async e => {
+            let t = await p({
+                signal: e
+            });
+            return {
+                recommendedApps: t.recommended_apps.map(j),
+                publicApps: t.public_apps.map(j),
+                workspaceApps: t.workspace_apps.map(j)
+            }
+        }, N = () => u({
+            queryKey: D(),
+            queryFn: ({
+                signal: e
+            }) => M(e)
+        }), P = () => o().getQueryData(D()), F = e => e.invalidateQueries({
+            queryKey: T
+        }), I = e => [...e.recommendedApps, ...e.publicApps, ...e.workspaceApps], L = (e, t) => e.toLowerCase().includes(t), R = ({
+            browseData: e,
+            directoryAppIds: t,
+            appScope: n,
+            normalizedQuery: r
+        }) => {
+            if (e == null) return !1;
+            let i = e => !t.has(e.id) && L(e.displayName, r);
+            return [...e.recommendedApps, ...e.publicApps].some(e => (n !== `internal` || e.showInternalBadge) && i(e)) || e.workspaceApps.some(i)
+        }, z = ({
+            retry: e,
+            staleTime: t
+        } = {}) => o().fetchQuery({
+            ...N(),
+            retry: e,
+            staleTime: t
+        }), B = e => {
+            "use forget";
+            let t = (0, w.c)(5),
+                n;
+            t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+            let {
+                enabled: r
+            } = n, i = r === void 0 || r, a;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = N(), t[2] = a) : a = t[2];
+            let o;
+            return t[3] === i ? o = t[4] : (o = {
+                ...a,
+                enabled: i
+            }, t[3] = i, t[4] = o), c(o)
+        }
+    })),
+    H, U = e((() => {
+        b(), i(), y(), h(), V(), H = async e => {
+            await Promise.all([e.invalidateQueries({
+                queryKey: m(!0, t, x.HERMES)
+            }), e.invalidateQueries({
+                queryKey: m(!1, t, x.HERMES)
+            }), F(e), e.invalidateQueries({
+                queryKey: [g]
+            })])
+        }
+    })),
+    W, G, K = e((() => {
+        W = d(), U(), C(), i(), y(), n(), v(), G = () => {
+            "use forget";
+            let e = (0, W.c)(2),
+                n = a(),
+                r;
+            return e[0] === n ? r = e[1] : (r = {
+                productSku: x.HERMES,
+                includeTags: t,
+                invalidateQueries: H,
+                canReuseLink: e => f(e, n)
+            }, e[0] = n, e[1] = r), S(r)
+        }
+    }));
+export {
+    z as a, R as c, L as d, B as f, H as i, V as l, G as n, I as o, U as r, P as s, K as t, F as u
+};
 //# sourceMappingURL=126cbe2b-chvr2ztoiecxnbb9.js.map

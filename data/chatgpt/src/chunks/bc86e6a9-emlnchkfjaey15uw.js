@@ -1,10 +1,678 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/7ed9b371-dq6bfo84u3f0kap9.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-ed29bs6yiwucn7st.js","assets/2340486e-oc6d2eodbcrmxur3.js","assets/root-lelxp0l2.css","assets/conversation-small-l6tnsr2xfn2d55kk.js","assets/30901919-om7b3qf5hp4j9x4l.js","assets/c470f5ab-d0jxi6yggehv1yt2.js","assets/0e5afe53-goyw8fd3qndq8rq5.js","assets/conversation-small-ixfdle4i.css","assets/82782bc9-cz4jkhg31tycbqqf.js","assets/31cec8d8-ejzahhq8v425zkie.js","assets/dced7e81-ez4ycyknd5qaagro.js","assets/8d846022-kz7pyrbiduq9ktik.js","assets/df59e297-o3612z5rjm7jpxw4.js","assets/8b34dbc2-j8rcexxiltkm8ucr.js","assets/e1a66d2b-bocdxso4ylvq8tf8.js","assets/7517017f-ovzqz6cpfshem2iz.js","assets/373ddd65-o5ueta5lk6m8a4cj.js","assets/f36e0e1d-g730yn80rbi3oxn8.js","assets/4c0f1f8e-go23ccluwcn7b4ji.js","assets/7517017f-nzi9ks4t1ma09scj.js","assets/2df5afbf-czf581hfk5gktprj.js","assets/b4b33d24-kjje5y8qaeodnp6k.js","assets/bcae0416-gkbk5fuozoi1k6dj.js","assets/e99f8e1a-b527u0t82lcpt5ws.js","assets/bcae0416-cqkkx9gpfzh7lwph.js","assets/4813494d-dx313sxllmfx7y5x.js","assets/e5d54aa7-ma3ylo8dncjjir5n.js","assets/fc5e7148-h2as8bctnrb3mr8v.js","assets/6afb0137-mpvwt79ec4v3dd2x.js","assets/ac827dee-nlnyb2oyz6dk5zix.js","assets/5ab42519-d83vcgfc717xdy0e.js","assets/8d846022-bbqki7y90h79t622.js","assets/ed61b531-dlhoxoxvp3t63qsr.js","assets/e74608d1-86m23ydl9przroqh.js","assets/21d5ff49-jb0dwvqzgbxncuvu.js","assets/model-cursor-ivzj8m6u.css","assets/bcae0416-hsdt69nyinebof2c.js","assets/bcae0416-h57howoewri3ssq6.js","assets/6cb574fa-h502sfw66k5z2tev.js","assets/a4ef304b-o4pl1sktj6m94fp1.js","assets/1c4de3ec-jeqqva9u6l93cmpe.js","assets/60549c99-ljg58x2g4xar4kyp.js","assets/ce52ae67-h7tlc5oeh6o4lhgs.js","assets/dccfc4ad-hn0zbglxby0fzg42.js","assets/8baac9c1-clln829dqc1t5s8r.js","assets/25e69e8b-b8p0tkhs8wxlg2gw.js","assets/bd1b82bd-bhy8ff69086bjl8d.js","assets/819fa1c4-f4k7satp3n4tzsze.js","assets/edb73080-ovij4dhal8k3ls4l.js","assets/3ed411a3-bkpwsc2dqabkms53.js","assets/8742b478-lrlbkvg2zs7xbhm1.js","assets/3c02c844-mw7g0qwehcp78699.js","assets/23ad950b-if3bgq231pn7mqcq.js","assets/32a2db56-njxsmuxpkvrgxth8.js","assets/70ccb607-ip0z1l3updbtzhxj.js","assets/4aa1bb90-lsed52cy1hkf1bpq.js","assets/c2675c8c-fpv9s4kvd412dyap.js","assets/global-modals-lv5n3ujm.css","assets/5422a199-ohc0ujx944q7esd3.js","assets/e3127a4c-d23kd2of8e989ns7.js","assets/prosemirror-i3ptkrl8.css","assets/781797c9-lr3s7zi7y0vzvfo8.js","assets/22143f97-bv7gi5bg8dz07gg0.js","assets/23f8a5c4-gu9en0fj1xgtrzqv.js","assets/d937f443-e9sqd2085gfunisc.js","assets/d335a33e-gy992okch80mpmil.js","assets/017c9c5c-gz5zzjhwjkthb675.js","assets/1a5e078c-k83u72rohuulcxa6.js","assets/92cd10e6-qvbn8kvfi6drz6td.js","assets/b4c3a217-mfctiv85p88ipen9.js","assets/4e1f6607-lwxxo2p65cvjgnsc.js","assets/32f10268-brzd07d27fr6f1j9.js","assets/7ec8c41d-o8vtr9colbnn301a.js","assets/5fe72b0f-mpesntcup5zqacug.js","assets/e87af100-eb7mg9xzux4velcp.js","assets/051ead45-hajnnq1kur4ayj67.js","assets/57f71cac-kyfer9h1sv6mqb8v.js","assets/5798741d-gy694h0dvfqm8xpx.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{A5 as n,F7 as r,G5 as i,J0 as a,K5 as o,VU as s,Y0 as c,aC as ee,aq as l,eat as te,f8 as u,fq as ne,gZ as re,hnt as d,j7 as f,nat as ie,oC as ae,pnt as p,v5 as m,xZ as oe,zU as h}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as se,Ln as ce,Rn as g,Vn as _,cn as v,ln as y,p as b,s as le,wn as x,zn as S}from"./2340486e-oc6d2eodbcrmxur3.js";import{$pn as ue,$zt as de,E3t as fe,IS as pe,LS as me,S3t as he,SCn as ge,TUn as _e,amn as C,bUn as ve,cCn as ye,cUn as w,cmn as T,dmn as E,eBt as D,lUn as O,mUn as k,nmn as A,pUn as j,sCn as M,umn as N,vL as P,xCn as F,yL as I}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{Jy as be,Ky as xe,Yy as Se,qy as Ce}from"./30901919-om7b3qf5hp4j9x4l.js";import{c as we,n as Te}from"./31cec8d8-ejzahhq8v425zkie.js";import{n as Ee}from"./cc275b97-ls1qeot7g5ptb71u.js";import{n as De}from"./7517017f-ovzqz6cpfshem2iz.js";import{t as Oe}from"./4c0f1f8e-go23ccluwcn7b4ji.js";import{t as ke}from"./7517017f-nzi9ks4t1ma09scj.js";import{a as Ae,r as je}from"./76b5a357-benxdh69028dkycz.js";import{n as Me,r as Ne}from"./ac827dee-nlnyb2oyz6dk5zix.js";var Pe=e((()=>{Ee()})),L,Fe=e((()=>{C(),L=(e=[])=>e.filter(({status:e})=>e!==ue.DISMISSED)})),R,z,B,V,H,Ie=e((()=>{De(),we(),fe(),u(),l(),c(),o(),R=t(Oe()),ke(),z=se(),y(),B=({numLines:e=20})=>{let[{width:t},r]=(0,R.default)(),a=!n(ne),o=t>=1091?775:580,s=a?18:36;return(0,z.jsx)(`div`,{className:i(Te.document,`mt-4`),ref:r,style:{margin:`0 ${s}px`},children:(0,z.jsx)(`div`,{style:{width:o},children:(0,z.jsx)(he,{lines:e})})})},V=a(()=>v(()=>import(`./7ed9b371-dq6bfo84u3f0kap9.js`).then(e=>e.DocumentComposer),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67])),{loading:({value:e,width:t=window.innerWidth})=>(0,z.jsx)(B,{numLines:Math.min(Math.ceil(e.length/(t/8)),30)})}),H=e=>(0,z.jsx)(V,{...e})}));function U(e){if(e===``)return 0;let t=e.split(`
-`).length;return e.endsWith(`
-`)?t-1:t}function Le(e,t){return je(e,t,{newlineIsToken:!0}).map(e=>({count:e.count??U(e.value),value:e.value,type:e.added?`added`:e.removed?`removed`:`unchanged`}))}function Re(e){let t=``;for(let{type:n,value:r}of e)(n===`added`||n===`unchanged`)&&(t+=r);return t}var W,ze=e((()=>{Ae(),W=function(e){return e.ADDED=`added`,e.REMOVED=`removed`,e.UNCHANGED=`unchanged`,e}({})}));function Be(e,t){let n=U(t);return{changes:Le(Ue(e,n),t),numLinesDiffed:n}}function Ve(e){let t=[...e],n=[],r=[];for(;t.length>0;){let e=t[t.length-1];if(e.type===W.REMOVED)t.pop(),e.type===W.REMOVED&&n.unshift(e);else if(e.type===W.ADDED)t.pop(),r.unshift(e);else break}return{prunedChanges:[...t,...r],prunedRemovedChanges:n}}function He(e,t){let{changes:n,numLinesDiffed:r}=Be(e,t),{prunedChanges:i,prunedRemovedChanges:a}=Ve(n),o=Re(i),s=a.map(e=>e.value).join(`
-`),c=G(e,r,`start`);return{content:o+s+c,numLinesDiffed:U(o)}}function Ue(e,t){if(t<=0)return``;let n=0,r=e.length;for(let i=0;i<e.length;i++)if(e[i]===`
-`&&(n++,n===t)){r=i+1;break}return e.substring(0,r)}function G(e,t,n=`start`){if(t<=0)return e;if(n===`start`){let n=0;for(let r=0;r<e.length;r++)if(e[r]===`
-`&&(n++,n===t))return e.substring(r+1);return``}let r=0,i=-1,a=e.endsWith(`
-`)?t+1:t;for(let t=e.length-1;t>=0;t--)if(e[t]===`
-`&&(r++,r===a)){i=t;break}return i===-1?``:e.substring(0,i+1)}var We=e((()=>{ze()}));function Ge(e,t){let n=e?.type??A.LOADING,r=e?.content??``,i=N(e);if(!T(n)||t==null||!i||!E(e))return{content:r,currentlyStreamingLineIndex:null};let a=G(r,1,`end`);if(a===``)return{content:t.content,currentlyStreamingLineIndex:0};let o=He(t.content,a);return{content:o.content,currentlyStreamingLineIndex:o.numLinesDiffed}}var Ke=e((()=>{We(),C()}));async function K(e,t){if(Me.every(t=>!e.includes(t)))return e;let{unified:n}=await v(async()=>{let{unified:e}=await import(`./conversation-small-l6tnsr2xfn2d55kk.js`).then(e=>(e.dWn(),e.fWn));return{unified:e}},__vite__mapDeps([5,1,2,3,4,6,7,8,9])),{CANVAS_REMARK_PLUGINS:r}=await v(async()=>{let{CANVAS_REMARK_PLUGINS:e}=await import(`./e5d54aa7-ma3ylo8dncjjir5n.js`).then(e=>(e.n(),e.r));return{CANVAS_REMARK_PLUGINS:e}},__vite__mapDeps([28,1,2,3,4,5,6,7,8,9,10,15,29,18,30,31,27,32,33])),{stripDirectivePlugin:i}=await v(async()=>{let{stripDirectivePlugin:e}=await import(`./1c4de3ec-jeqqva9u6l93cmpe.js`).then(e=>(e.t(),e.r));return{stripDirectivePlugin:e}},__vite__mapDeps([42,1,5,2,3,4,6,7,8,9,31,30])),{hiveLogDirectivePlugin:a}=await v(async()=>{let{hiveLogDirectivePlugin:e}=await import(`./6afb0137-mpvwt79ec4v3dd2x.js`).then(e=>(e.i(),e.r));return{hiveLogDirectivePlugin:e}},__vite__mapDeps([30,1,5,2,3,4,6,7,8,9])),o=n();o.use(a).use(i,{preserve:t?.preserveContentReferences?[re]:void 0}).use(r);let s=await o.process(e);return String(s).trim()}var q=e((()=>{Ne(),oe(),y()}));function J(e){"use forget";let t=(0,Y.c)(7),{textdocVersion:n,conversation:r}=e,i;t[0]===n?i=t[1]:(i=e=>n&&e?.lastCanvasAssistantMessageById[n.textdocId],t[0]=n,t[1]=i);let a=_e(i),o=n?.type,s=n!=null,c;return t[2]!==r||t[3]!==s||t[4]!==a||t[5]!==o?(c=e=>{if(!e.selectedText)return;let t=m(r.serverId$);s&&t!=null&&a!=null&&I({type:`copy`,source:e.source,location:`canvas`,selectedText:e.selectedText,messageId:a,serverThreadId:t,contentType:o!=null&&T(o)?`code`:`text`,productLogOnly:e.productLogOnly})},t[2]=r,t[3]=s,t[4]=a,t[5]=o,t[6]=c):c=t[6],c}function qe({textdocVersion:e,conversation:t}){let n=S(),r=s(),[i,a]=(0,X.useState)(!1),o=me(),c=J({textdocVersion:e,conversation:t}),l=(0,X.useRef)(e?.content??``);return(0,X.useEffect)(()=>{l.current=e?.content??``},[e]),{handleCopy:t=>{i||(o(async()=>{let n=await K(l.current);c({source:`mouse`,selectedText:n}),w.logButtonClick(j.COPY,{contentLength:n.length,textdocType:e?.type});let i={"text/plain":n};if(e?.type===A.DOCUMENT)try{let{markdownToClipboardContent:e}=await v(async()=>{let{markdownToClipboardContent:e}=await import(`./017c9c5c-gz5zzjhwjkthb675.js`).then(e=>(e.t(),e.r));return{markdownToClipboardContent:e}},__vite__mapDeps([68,1,2,3,4,69,5,6,7,8,9,70,71,72,32,33,44,73,74,75,76,77,78,79]));i=e(n,[])}catch(e){w.logError(`Error copying rich text`,e)}ee(i,r,t)},0),a(!0),o(()=>a(!1),2e3))},Icon:i?be:xe,copyLabel:n.formatMessage(Z.copy)}}var Y,X,Z,Je=e((()=>{Y=x(),k(),O(),ve(),C(),Se(),Ce(),P(),u(),h(),ae(),pe(),X=t(_()),g(),q(),y(),Z=ce({copy:{id:`rbIYfo`,defaultMessage:`Copy`}})})),Q,Ye=e((()=>{C(),Q={[A.CODE_BASH]:{filenameExtension:`sh`,blobType:`text/x-shellscript`},[A.CODE_ZSH]:{filenameExtension:`zsh`,blobType:`text/x-shellscript`},[A.CODE_JAVASCRIPT]:{filenameExtension:`js`,blobType:`application/javascript`},[A.CODE_TYPESCRIPT]:{filenameExtension:`ts`,blobType:`application/typescript`},[A.CODE_HTML]:{filenameExtension:`html`,blobType:`text/html`},[A.CODE_CSS]:{filenameExtension:`css`,blobType:`text/css`},[A.CODE_PYTHON]:{filenameExtension:`py`,blobType:`text/x-python`},[A.CODE_JSON]:{filenameExtension:`json`,blobType:`application/json`},[A.CODE_SQL]:{filenameExtension:`sql`,blobType:`application/sql`},[A.CODE_GO]:{filenameExtension:`go`,blobType:`text/x-go`},[A.CODE_YAML]:{filenameExtension:`yaml`,blobType:`application/x-yaml`},[A.CODE_JAVA]:{filenameExtension:`java`,blobType:`text/x-java-source`},[A.CODE_RUST]:{filenameExtension:`rs`,blobType:`text/rust`},[A.CODE_CPP]:{filenameExtension:`cpp`,blobType:`text/x-c++src`},[A.CODE_SWIFT]:{filenameExtension:`swift`,blobType:`text/swift`},[A.CODE_PHP]:{filenameExtension:`php`,blobType:`application/x-httpd-php`},[A.CODE_XML]:{filenameExtension:`xml`,blobType:`application/xml`},[A.CODE_RUBY]:{filenameExtension:`rb`,blobType:`text/x-ruby`},[A.CODE_HASKELL]:{filenameExtension:`hs`,blobType:`text/x-haskell`},[A.CODE_KOTLIN]:{filenameExtension:`kt`,blobType:`text/x-kotlin`},[A.CODE_CSHARP]:{filenameExtension:`cs`,blobType:`text/x-csharp`},[A.CODE_C]:{filenameExtension:`c`,blobType:`text/x-csrc`},[A.CODE_OBJECTIVEC]:{filenameExtension:`m`,blobType:`text/x-objectivec`},[A.CODE_R]:{filenameExtension:`r`,blobType:`text/plain`},[A.CODE_LUA]:{filenameExtension:`lua`,blobType:`text/x-lua`},[A.CODE_DART]:{filenameExtension:`dart`,blobType:`text/x-dart`},[A.CODE_SCALA]:{filenameExtension:`scala`,blobType:`text/x-scala`},[A.CODE_PERL]:{filenameExtension:`pl`,blobType:`text/x-perl`},[A.CODE_COMMONLISP]:{filenameExtension:`lisp`,blobType:`text/x-common-lisp`},[A.CODE_CLOJURE]:{filenameExtension:`clj`,blobType:`text/x-clojure`},[A.CODE_OCAML]:{filenameExtension:`ml`,blobType:`text/x-ocaml`},[A.CODE_POWERSHELL]:{filenameExtension:`ps1`,blobType:`text/x-powershell`},[A.CODE_VERILOG]:{filenameExtension:`v`,blobType:`text/x-verilog`},[A.CODE_DOCKERFILE]:{filenameExtension:`Dockerfile`,blobType:`text/x-dockerfile`},[A.CODE_VUE]:{filenameExtension:`vue`,blobType:`text/x-vue`},[A.CODE_REACT]:{filenameExtension:`jsx`,blobType:`application/javascript`},[A.CODE_OTHER]:{filenameExtension:`txt`,blobType:`text/plain`},[A.DOCUMENT]:{filenameExtension:`md`,blobType:`text/markdown`},[A.LOADING]:{filenameExtension:`txt`,blobType:`text/plain`}}}));function Xe({textdocVersion:e,conversation:t}){let n=S(),r=s(),i=(0,$.useCallback)((n,r)=>{let i=e?.messageId??void 0,a=m(t.serverId$);!a||!i||I({source:`mouse`,type:`download`,selectedText:n,location:`canvas`,contentType:r,messageId:i,serverThreadId:a,productLogOnly:!0})},[t,e]),a=n.formatMessage({id:`canvas.downloadFileError`,defaultMessage:`Failed to download file. Please try again later.`}),{mutate:o,isPending:c}=b({mutationFn:async({textdocId:e,exportType:t})=>{let n=await f.safePost(`/export_doc/canvas`,{requestBody:{textdoc_id:e,export_type:t},skipJsonTransform:!0});if(!n.ok)throw Error(`Failed to download file`);return n},onSuccess:async(t,{exportType:n})=>{e&&F(await t.blob(),M(t.headers.get(`Content-Disposition`))??`${D(e.title)}.${n}`)},onError:e=>{r.danger(a,{toastId:`textdoc_download_button`,loggingTitle:a,loggingDescription:`Failed to download file`}),te.addError(e)}});return{handleFileDownload:async t=>{if(e&&e.type!==A.LOADING&&e.type===A.DOCUMENT){let n;switch(t){case`md`:n=`chatgpt_canvas_md_download`;break;case`pdf`:n=`chatgpt_canvas_pdf_download`;break;case`docx`:n=`chatgpt_canvas_docx_download`;break}if(p.logEventWithStatsig(`ChatGPT Canvas Download`,n),i(e.content,T(e.type)?`code`:`text`),t===`pdf`||t===`docx`)o({textdocId:e.textdocId,exportType:t});else if(t===`md`){let{filenameExtension:t,blobType:n}=Q[e.type],r=await K(e.content);F(new Blob([r],{type:n}),`${D(e.title)}.${t}`)}}},handleBlobDownload:()=>{if(!e)return;let{filenameExtension:t,blobType:n}=Q[e.type];e.type!==A.LOADING&&(p.logEventWithStatsig(`ChatGPT Canvas Download`,`chatgpt_canvas_code_download`,{blobType:n}),F(new Blob([e.content],{type:n}),`${D(e.title)}.${t}`),i(e.content,T(e.type)?`code`:`text`))},isLoading:c,downloadCopyLabel:n.formatMessage({id:`canvas.download-button`,defaultMessage:`Download`}),isDocument:e?.type===A.DOCUMENT}}var $,Ze=e((()=>{Ye(),C(),P(),u(),h(),d(),ie(),ge(),ye(),r(),le(),de(),$=t(_()),g(),q()}));export{qe as a,H as c,L as d,Fe as f,J as i,B as l,Xe as n,Ge as o,Pe as p,Je as r,Ke as s,Ze as t,Ie as u};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/7ed9b371-dq6bfo84u3f0kap9.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-ed29bs6yiwucn7st.js", "assets/2340486e-oc6d2eodbcrmxur3.js", "assets/root-lelxp0l2.css", "assets/conversation-small-l6tnsr2xfn2d55kk.js", "assets/30901919-om7b3qf5hp4j9x4l.js", "assets/c470f5ab-d0jxi6yggehv1yt2.js", "assets/0e5afe53-goyw8fd3qndq8rq5.js", "assets/conversation-small-ixfdle4i.css", "assets/82782bc9-cz4jkhg31tycbqqf.js", "assets/31cec8d8-ejzahhq8v425zkie.js", "assets/dced7e81-ez4ycyknd5qaagro.js", "assets/8d846022-kz7pyrbiduq9ktik.js", "assets/df59e297-o3612z5rjm7jpxw4.js", "assets/8b34dbc2-j8rcexxiltkm8ucr.js", "assets/e1a66d2b-bocdxso4ylvq8tf8.js", "assets/7517017f-ovzqz6cpfshem2iz.js", "assets/373ddd65-o5ueta5lk6m8a4cj.js", "assets/f36e0e1d-g730yn80rbi3oxn8.js", "assets/4c0f1f8e-go23ccluwcn7b4ji.js", "assets/7517017f-nzi9ks4t1ma09scj.js", "assets/2df5afbf-czf581hfk5gktprj.js", "assets/b4b33d24-kjje5y8qaeodnp6k.js", "assets/bcae0416-gkbk5fuozoi1k6dj.js", "assets/e99f8e1a-b527u0t82lcpt5ws.js", "assets/bcae0416-cqkkx9gpfzh7lwph.js", "assets/4813494d-dx313sxllmfx7y5x.js", "assets/e5d54aa7-ma3ylo8dncjjir5n.js", "assets/fc5e7148-h2as8bctnrb3mr8v.js", "assets/6afb0137-mpvwt79ec4v3dd2x.js", "assets/ac827dee-nlnyb2oyz6dk5zix.js", "assets/5ab42519-d83vcgfc717xdy0e.js", "assets/8d846022-bbqki7y90h79t622.js", "assets/ed61b531-dlhoxoxvp3t63qsr.js", "assets/e74608d1-86m23ydl9przroqh.js", "assets/21d5ff49-jb0dwvqzgbxncuvu.js", "assets/model-cursor-ivzj8m6u.css", "assets/bcae0416-hsdt69nyinebof2c.js", "assets/bcae0416-h57howoewri3ssq6.js", "assets/6cb574fa-h502sfw66k5z2tev.js", "assets/a4ef304b-o4pl1sktj6m94fp1.js", "assets/1c4de3ec-jeqqva9u6l93cmpe.js", "assets/60549c99-ljg58x2g4xar4kyp.js", "assets/ce52ae67-h7tlc5oeh6o4lhgs.js", "assets/dccfc4ad-hn0zbglxby0fzg42.js", "assets/8baac9c1-clln829dqc1t5s8r.js", "assets/25e69e8b-b8p0tkhs8wxlg2gw.js", "assets/bd1b82bd-bhy8ff69086bjl8d.js", "assets/819fa1c4-f4k7satp3n4tzsze.js", "assets/edb73080-ovij4dhal8k3ls4l.js", "assets/3ed411a3-bkpwsc2dqabkms53.js", "assets/8742b478-lrlbkvg2zs7xbhm1.js", "assets/3c02c844-mw7g0qwehcp78699.js", "assets/23ad950b-if3bgq231pn7mqcq.js", "assets/32a2db56-njxsmuxpkvrgxth8.js", "assets/70ccb607-ip0z1l3updbtzhxj.js", "assets/4aa1bb90-lsed52cy1hkf1bpq.js", "assets/c2675c8c-fpv9s4kvd412dyap.js", "assets/global-modals-lv5n3ujm.css", "assets/5422a199-ohc0ujx944q7esd3.js", "assets/e3127a4c-d23kd2of8e989ns7.js", "assets/prosemirror-i3ptkrl8.css", "assets/781797c9-lr3s7zi7y0vzvfo8.js", "assets/22143f97-bv7gi5bg8dz07gg0.js", "assets/23f8a5c4-gu9en0fj1xgtrzqv.js", "assets/d937f443-e9sqd2085gfunisc.js", "assets/d335a33e-gy992okch80mpmil.js", "assets/017c9c5c-gz5zzjhwjkthb675.js", "assets/1a5e078c-k83u72rohuulcxa6.js", "assets/92cd10e6-qvbn8kvfi6drz6td.js", "assets/b4c3a217-mfctiv85p88ipen9.js", "assets/4e1f6607-lwxxo2p65cvjgnsc.js", "assets/32f10268-brzd07d27fr6f1j9.js", "assets/7ec8c41d-o8vtr9colbnn301a.js", "assets/5fe72b0f-mpesntcup5zqacug.js", "assets/e87af100-eb7mg9xzux4velcp.js", "assets/051ead45-hajnnq1kur4ayj67.js", "assets/57f71cac-kyfer9h1sv6mqb8v.js", "assets/5798741d-gy694h0dvfqm8xpx.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A5 as n,
+    F7 as r,
+    G5 as i,
+    J0 as a,
+    K5 as o,
+    VU as s,
+    Y0 as c,
+    aC as ee,
+    aq as l,
+    eat as te,
+    f8 as u,
+    fq as ne,
+    gZ as re,
+    hnt as d,
+    j7 as f,
+    nat as ie,
+    oC as ae,
+    pnt as p,
+    v5 as m,
+    xZ as oe,
+    zU as h
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as se,
+    Ln as ce,
+    Rn as g,
+    Vn as _,
+    cn as v,
+    ln as y,
+    p as b,
+    s as le,
+    wn as x,
+    zn as S
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    $pn as ue,
+    $zt as de,
+    E3t as fe,
+    IS as pe,
+    LS as me,
+    S3t as he,
+    SCn as ge,
+    TUn as _e,
+    amn as C,
+    bUn as ve,
+    cCn as ye,
+    cUn as w,
+    cmn as T,
+    dmn as E,
+    eBt as D,
+    lUn as O,
+    mUn as k,
+    nmn as A,
+    pUn as j,
+    sCn as M,
+    umn as N,
+    vL as P,
+    xCn as F,
+    yL as I
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    Jy as be,
+    Ky as xe,
+    Yy as Se,
+    qy as Ce
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+import {
+    c as we,
+    n as Te
+} from "./31cec8d8-ejzahhq8v425zkie.js";
+import {
+    n as Ee
+} from "./cc275b97-ls1qeot7g5ptb71u.js";
+import {
+    n as De
+} from "./7517017f-ovzqz6cpfshem2iz.js";
+import {
+    t as Oe
+} from "./4c0f1f8e-go23ccluwcn7b4ji.js";
+import {
+    t as ke
+} from "./7517017f-nzi9ks4t1ma09scj.js";
+import {
+    a as Ae,
+    r as je
+} from "./76b5a357-benxdh69028dkycz.js";
+import {
+    n as Me,
+    r as Ne
+} from "./ac827dee-nlnyb2oyz6dk5zix.js";
+var Pe = e((() => {
+        Ee()
+    })),
+    L, Fe = e((() => {
+        C(), L = (e = []) => e.filter(({
+            status: e
+        }) => e !== ue.DISMISSED)
+    })),
+    R, z, B, V, H, Ie = e((() => {
+        De(), we(), fe(), u(), l(), c(), o(), R = t(Oe()), ke(), z = se(), y(), B = ({
+            numLines: e = 20
+        }) => {
+            let [{
+                width: t
+            }, r] = (0, R.default)(), a = !n(ne), o = t >= 1091 ? 775 : 580, s = a ? 18 : 36;
+            return (0, z.jsx)(`div`, {
+                className: i(Te.document, `mt-4`),
+                ref: r,
+                style: {
+                    margin: `0 ${s}px`
+                },
+                children: (0, z.jsx)(`div`, {
+                    style: {
+                        width: o
+                    },
+                    children: (0, z.jsx)(he, {
+                        lines: e
+                    })
+                })
+            })
+        }, V = a(() => v(() => import(`./7ed9b371-dq6bfo84u3f0kap9.js`).then(e => e.DocumentComposer), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67])), {
+            loading: ({
+                value: e,
+                width: t = window.innerWidth
+            }) => (0, z.jsx)(B, {
+                numLines: Math.min(Math.ceil(e.length / (t / 8)), 30)
+            })
+        }), H = e => (0, z.jsx)(V, {
+            ...e
+        })
+    }));
+
+function U(e) {
+    if (e === ``) return 0;
+    let t = e.split(`
+`).length;
+    return e.endsWith(`
+`) ? t - 1 : t
+}
+
+function Le(e, t) {
+    return je(e, t, {
+        newlineIsToken: !0
+    }).map(e => ({
+        count: e.count ?? U(e.value),
+        value: e.value,
+        type: e.added ? `added` : e.removed ? `removed` : `unchanged`
+    }))
+}
+
+function Re(e) {
+    let t = ``;
+    for (let {
+            type: n,
+            value: r
+        }
+        of e)(n === `added` || n === `unchanged`) && (t += r);
+    return t
+}
+var W, ze = e((() => {
+    Ae(), W = function(e) {
+        return e.ADDED = `added`, e.REMOVED = `removed`, e.UNCHANGED = `unchanged`, e
+    }({})
+}));
+
+function Be(e, t) {
+    let n = U(t);
+    return {
+        changes: Le(Ue(e, n), t),
+        numLinesDiffed: n
+    }
+}
+
+function Ve(e) {
+    let t = [...e],
+        n = [],
+        r = [];
+    for (; t.length > 0;) {
+        let e = t[t.length - 1];
+        if (e.type === W.REMOVED) t.pop(), e.type === W.REMOVED && n.unshift(e);
+        else if (e.type === W.ADDED) t.pop(), r.unshift(e);
+        else break
+    }
+    return {
+        prunedChanges: [...t, ...r],
+        prunedRemovedChanges: n
+    }
+}
+
+function He(e, t) {
+    let {
+        changes: n,
+        numLinesDiffed: r
+    } = Be(e, t), {
+        prunedChanges: i,
+        prunedRemovedChanges: a
+    } = Ve(n), o = Re(i), s = a.map(e => e.value).join(`
+`), c = G(e, r, `start`);
+    return {
+        content: o + s + c,
+        numLinesDiffed: U(o)
+    }
+}
+
+function Ue(e, t) {
+    if (t <= 0) return ``;
+    let n = 0,
+        r = e.length;
+    for (let i = 0; i < e.length; i++)
+        if (e[i] === `
+` && (n++, n === t)) {
+            r = i + 1;
+            break
+        } return e.substring(0, r)
+}
+
+function G(e, t, n = `start`) {
+    if (t <= 0) return e;
+    if (n === `start`) {
+        let n = 0;
+        for (let r = 0; r < e.length; r++)
+            if (e[r] === `
+` && (n++, n === t)) return e.substring(r + 1);
+        return ``
+    }
+    let r = 0,
+        i = -1,
+        a = e.endsWith(`
+`) ? t + 1 : t;
+    for (let t = e.length - 1; t >= 0; t--)
+        if (e[t] === `
+` && (r++, r === a)) {
+            i = t;
+            break
+        } return i === -1 ? `` : e.substring(0, i + 1)
+}
+var We = e((() => {
+    ze()
+}));
+
+function Ge(e, t) {
+    let n = e?.type ?? A.LOADING,
+        r = e?.content ?? ``,
+        i = N(e);
+    if (!T(n) || t == null || !i || !E(e)) return {
+        content: r,
+        currentlyStreamingLineIndex: null
+    };
+    let a = G(r, 1, `end`);
+    if (a === ``) return {
+        content: t.content,
+        currentlyStreamingLineIndex: 0
+    };
+    let o = He(t.content, a);
+    return {
+        content: o.content,
+        currentlyStreamingLineIndex: o.numLinesDiffed
+    }
+}
+var Ke = e((() => {
+    We(), C()
+}));
+async function K(e, t) {
+    if (Me.every(t => !e.includes(t))) return e;
+    let {
+        unified: n
+    } = await v(async () => {
+        let {
+            unified: e
+        } = await import(`./conversation-small-l6tnsr2xfn2d55kk.js`).then(e => (e.dWn(), e.fWn));
+        return {
+            unified: e
+        }
+    }, __vite__mapDeps([5, 1, 2, 3, 4, 6, 7, 8, 9])), {
+        CANVAS_REMARK_PLUGINS: r
+    } = await v(async () => {
+        let {
+            CANVAS_REMARK_PLUGINS: e
+        } = await import(`./e5d54aa7-ma3ylo8dncjjir5n.js`).then(e => (e.n(), e.r));
+        return {
+            CANVAS_REMARK_PLUGINS: e
+        }
+    }, __vite__mapDeps([28, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 29, 18, 30, 31, 27, 32, 33])), {
+        stripDirectivePlugin: i
+    } = await v(async () => {
+        let {
+            stripDirectivePlugin: e
+        } = await import(`./1c4de3ec-jeqqva9u6l93cmpe.js`).then(e => (e.t(), e.r));
+        return {
+            stripDirectivePlugin: e
+        }
+    }, __vite__mapDeps([42, 1, 5, 2, 3, 4, 6, 7, 8, 9, 31, 30])), {
+        hiveLogDirectivePlugin: a
+    } = await v(async () => {
+        let {
+            hiveLogDirectivePlugin: e
+        } = await import(`./6afb0137-mpvwt79ec4v3dd2x.js`).then(e => (e.i(), e.r));
+        return {
+            hiveLogDirectivePlugin: e
+        }
+    }, __vite__mapDeps([30, 1, 5, 2, 3, 4, 6, 7, 8, 9])), o = n();
+    o.use(a).use(i, {
+        preserve: t?.preserveContentReferences ? [re] : void 0
+    }).use(r);
+    let s = await o.process(e);
+    return String(s).trim()
+}
+var q = e((() => {
+    Ne(), oe(), y()
+}));
+
+function J(e) {
+    "use forget";
+    let t = (0, Y.c)(7),
+        {
+            textdocVersion: n,
+            conversation: r
+        } = e,
+        i;
+    t[0] === n ? i = t[1] : (i = e => n && e?.lastCanvasAssistantMessageById[n.textdocId], t[0] = n, t[1] = i);
+    let a = _e(i),
+        o = n?.type,
+        s = n != null,
+        c;
+    return t[2] !== r || t[3] !== s || t[4] !== a || t[5] !== o ? (c = e => {
+        if (!e.selectedText) return;
+        let t = m(r.serverId$);
+        s && t != null && a != null && I({
+            type: `copy`,
+            source: e.source,
+            location: `canvas`,
+            selectedText: e.selectedText,
+            messageId: a,
+            serverThreadId: t,
+            contentType: o != null && T(o) ? `code` : `text`,
+            productLogOnly: e.productLogOnly
+        })
+    }, t[2] = r, t[3] = s, t[4] = a, t[5] = o, t[6] = c) : c = t[6], c
+}
+
+function qe({
+    textdocVersion: e,
+    conversation: t
+}) {
+    let n = S(),
+        r = s(),
+        [i, a] = (0, X.useState)(!1),
+        o = me(),
+        c = J({
+            textdocVersion: e,
+            conversation: t
+        }),
+        l = (0, X.useRef)(e?.content ?? ``);
+    return (0, X.useEffect)(() => {
+        l.current = e?.content ?? ``
+    }, [e]), {
+        handleCopy: t => {
+            i || (o(async () => {
+                let n = await K(l.current);
+                c({
+                    source: `mouse`,
+                    selectedText: n
+                }), w.logButtonClick(j.COPY, {
+                    contentLength: n.length,
+                    textdocType: e?.type
+                });
+                let i = {
+                    "text/plain": n
+                };
+                if (e?.type === A.DOCUMENT) try {
+                    let {
+                        markdownToClipboardContent: e
+                    } = await v(async () => {
+                        let {
+                            markdownToClipboardContent: e
+                        } = await import(`./017c9c5c-gz5zzjhwjkthb675.js`).then(e => (e.t(), e.r));
+                        return {
+                            markdownToClipboardContent: e
+                        }
+                    }, __vite__mapDeps([68, 1, 2, 3, 4, 69, 5, 6, 7, 8, 9, 70, 71, 72, 32, 33, 44, 73, 74, 75, 76, 77, 78, 79]));
+                    i = e(n, [])
+                } catch (e) {
+                    w.logError(`Error copying rich text`, e)
+                }
+                ee(i, r, t)
+            }, 0), a(!0), o(() => a(!1), 2e3))
+        },
+        Icon: i ? be : xe,
+        copyLabel: n.formatMessage(Z.copy)
+    }
+}
+var Y, X, Z, Je = e((() => {
+        Y = x(), k(), O(), ve(), C(), Se(), Ce(), P(), u(), h(), ae(), pe(), X = t(_()), g(), q(), y(), Z = ce({
+            copy: {
+                id: `rbIYfo`,
+                defaultMessage: `Copy`
+            }
+        })
+    })),
+    Q, Ye = e((() => {
+        C(), Q = {
+            [A.CODE_BASH]: {
+                filenameExtension: `sh`,
+                blobType: `text/x-shellscript`
+            },
+            [A.CODE_ZSH]: {
+                filenameExtension: `zsh`,
+                blobType: `text/x-shellscript`
+            },
+            [A.CODE_JAVASCRIPT]: {
+                filenameExtension: `js`,
+                blobType: `application/javascript`
+            },
+            [A.CODE_TYPESCRIPT]: {
+                filenameExtension: `ts`,
+                blobType: `application/typescript`
+            },
+            [A.CODE_HTML]: {
+                filenameExtension: `html`,
+                blobType: `text/html`
+            },
+            [A.CODE_CSS]: {
+                filenameExtension: `css`,
+                blobType: `text/css`
+            },
+            [A.CODE_PYTHON]: {
+                filenameExtension: `py`,
+                blobType: `text/x-python`
+            },
+            [A.CODE_JSON]: {
+                filenameExtension: `json`,
+                blobType: `application/json`
+            },
+            [A.CODE_SQL]: {
+                filenameExtension: `sql`,
+                blobType: `application/sql`
+            },
+            [A.CODE_GO]: {
+                filenameExtension: `go`,
+                blobType: `text/x-go`
+            },
+            [A.CODE_YAML]: {
+                filenameExtension: `yaml`,
+                blobType: `application/x-yaml`
+            },
+            [A.CODE_JAVA]: {
+                filenameExtension: `java`,
+                blobType: `text/x-java-source`
+            },
+            [A.CODE_RUST]: {
+                filenameExtension: `rs`,
+                blobType: `text/rust`
+            },
+            [A.CODE_CPP]: {
+                filenameExtension: `cpp`,
+                blobType: `text/x-c++src`
+            },
+            [A.CODE_SWIFT]: {
+                filenameExtension: `swift`,
+                blobType: `text/swift`
+            },
+            [A.CODE_PHP]: {
+                filenameExtension: `php`,
+                blobType: `application/x-httpd-php`
+            },
+            [A.CODE_XML]: {
+                filenameExtension: `xml`,
+                blobType: `application/xml`
+            },
+            [A.CODE_RUBY]: {
+                filenameExtension: `rb`,
+                blobType: `text/x-ruby`
+            },
+            [A.CODE_HASKELL]: {
+                filenameExtension: `hs`,
+                blobType: `text/x-haskell`
+            },
+            [A.CODE_KOTLIN]: {
+                filenameExtension: `kt`,
+                blobType: `text/x-kotlin`
+            },
+            [A.CODE_CSHARP]: {
+                filenameExtension: `cs`,
+                blobType: `text/x-csharp`
+            },
+            [A.CODE_C]: {
+                filenameExtension: `c`,
+                blobType: `text/x-csrc`
+            },
+            [A.CODE_OBJECTIVEC]: {
+                filenameExtension: `m`,
+                blobType: `text/x-objectivec`
+            },
+            [A.CODE_R]: {
+                filenameExtension: `r`,
+                blobType: `text/plain`
+            },
+            [A.CODE_LUA]: {
+                filenameExtension: `lua`,
+                blobType: `text/x-lua`
+            },
+            [A.CODE_DART]: {
+                filenameExtension: `dart`,
+                blobType: `text/x-dart`
+            },
+            [A.CODE_SCALA]: {
+                filenameExtension: `scala`,
+                blobType: `text/x-scala`
+            },
+            [A.CODE_PERL]: {
+                filenameExtension: `pl`,
+                blobType: `text/x-perl`
+            },
+            [A.CODE_COMMONLISP]: {
+                filenameExtension: `lisp`,
+                blobType: `text/x-common-lisp`
+            },
+            [A.CODE_CLOJURE]: {
+                filenameExtension: `clj`,
+                blobType: `text/x-clojure`
+            },
+            [A.CODE_OCAML]: {
+                filenameExtension: `ml`,
+                blobType: `text/x-ocaml`
+            },
+            [A.CODE_POWERSHELL]: {
+                filenameExtension: `ps1`,
+                blobType: `text/x-powershell`
+            },
+            [A.CODE_VERILOG]: {
+                filenameExtension: `v`,
+                blobType: `text/x-verilog`
+            },
+            [A.CODE_DOCKERFILE]: {
+                filenameExtension: `Dockerfile`,
+                blobType: `text/x-dockerfile`
+            },
+            [A.CODE_VUE]: {
+                filenameExtension: `vue`,
+                blobType: `text/x-vue`
+            },
+            [A.CODE_REACT]: {
+                filenameExtension: `jsx`,
+                blobType: `application/javascript`
+            },
+            [A.CODE_OTHER]: {
+                filenameExtension: `txt`,
+                blobType: `text/plain`
+            },
+            [A.DOCUMENT]: {
+                filenameExtension: `md`,
+                blobType: `text/markdown`
+            },
+            [A.LOADING]: {
+                filenameExtension: `txt`,
+                blobType: `text/plain`
+            }
+        }
+    }));
+
+function Xe({
+    textdocVersion: e,
+    conversation: t
+}) {
+    let n = S(),
+        r = s(),
+        i = (0, $.useCallback)((n, r) => {
+            let i = e?.messageId ?? void 0,
+                a = m(t.serverId$);
+            !a || !i || I({
+                source: `mouse`,
+                type: `download`,
+                selectedText: n,
+                location: `canvas`,
+                contentType: r,
+                messageId: i,
+                serverThreadId: a,
+                productLogOnly: !0
+            })
+        }, [t, e]),
+        a = n.formatMessage({
+            id: `canvas.downloadFileError`,
+            defaultMessage: `Failed to download file. Please try again later.`
+        }),
+        {
+            mutate: o,
+            isPending: c
+        } = b({
+            mutationFn: async ({
+                textdocId: e,
+                exportType: t
+            }) => {
+                let n = await f.safePost(`/export_doc/canvas`, {
+                    requestBody: {
+                        textdoc_id: e,
+                        export_type: t
+                    },
+                    skipJsonTransform: !0
+                });
+                if (!n.ok) throw Error(`Failed to download file`);
+                return n
+            },
+            onSuccess: async (t, {
+                exportType: n
+            }) => {
+                e && F(await t.blob(), M(t.headers.get(`Content-Disposition`)) ?? `${D(e.title)}.${n}`)
+            },
+            onError: e => {
+                r.danger(a, {
+                    toastId: `textdoc_download_button`,
+                    loggingTitle: a,
+                    loggingDescription: `Failed to download file`
+                }), te.addError(e)
+            }
+        });
+    return {
+        handleFileDownload: async t => {
+            if (e && e.type !== A.LOADING && e.type === A.DOCUMENT) {
+                let n;
+                switch (t) {
+                    case `md`:
+                        n = `chatgpt_canvas_md_download`;
+                        break;
+                    case `pdf`:
+                        n = `chatgpt_canvas_pdf_download`;
+                        break;
+                    case `docx`:
+                        n = `chatgpt_canvas_docx_download`;
+                        break
+                }
+                if (p.logEventWithStatsig(`ChatGPT Canvas Download`, n), i(e.content, T(e.type) ? `code` : `text`), t === `pdf` || t === `docx`) o({
+                    textdocId: e.textdocId,
+                    exportType: t
+                });
+                else if (t === `md`) {
+                    let {
+                        filenameExtension: t,
+                        blobType: n
+                    } = Q[e.type], r = await K(e.content);
+                    F(new Blob([r], {
+                        type: n
+                    }), `${D(e.title)}.${t}`)
+                }
+            }
+        },
+        handleBlobDownload: () => {
+            if (!e) return;
+            let {
+                filenameExtension: t,
+                blobType: n
+            } = Q[e.type];
+            e.type !== A.LOADING && (p.logEventWithStatsig(`ChatGPT Canvas Download`, `chatgpt_canvas_code_download`, {
+                blobType: n
+            }), F(new Blob([e.content], {
+                type: n
+            }), `${D(e.title)}.${t}`), i(e.content, T(e.type) ? `code` : `text`))
+        },
+        isLoading: c,
+        downloadCopyLabel: n.formatMessage({
+            id: `canvas.download-button`,
+            defaultMessage: `Download`
+        }),
+        isDocument: e?.type === A.DOCUMENT
+    }
+}
+var $, Ze = e((() => {
+    Ye(), C(), P(), u(), h(), d(), ie(), ge(), ye(), r(), le(), de(), $ = t(_()), g(), q()
+}));
+export {
+    qe as a, H as c, L as d, Fe as f, J as i, B as l, Xe as n, Ge as o, Pe as p, Je as r, Ke as s, Ze as t, Ie as u
+};
 //# sourceMappingURL=bc86e6a9-emlnchkfjaey15uw.js.map

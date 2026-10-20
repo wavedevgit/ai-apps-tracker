@@ -1,2 +1,1258 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{A5 as n,F7 as r,G5 as i,I1 as a,JT as o,K5 as s,M1 as c,Mz as ee,Nz as l,RU as te,S1 as u,Sw as ne,Xy as d,Yy as re,f8 as f,j7 as p,qT as m,ww as ie,zU as ae}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as oe,Ln as h,N as g,Nn as _,O as v,Rn as y,Vn as b,p as se,s as x,wn as S,zn as ce}from"./2340486e-oc6d2eodbcrmxur3.js";import{C3t as C,E3t as w,FQ as T,UQ as E,VQ as D,Yrt as O,ait as le,dKn as k,iTn as A,rTn as ue,rit as j,uKn as de,wPn as M,xPn as N}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{DC as P,EC as fe,Ov as F,TC as I,kv as L,wC as R}from"./30901919-om7b3qf5hp4j9x4l.js";import{$x as pe,Ay as z,Cy as B,Qx as V,Xx as me,Zx as he,ky as H,nS as U,rS as W}from"./c2675c8c-fpv9s4kvd412dyap.js";import{a as G,r as K,t as q}from"./832dbd3a-bk26djhng80afq3w.js";import{n as ge,o as J,s as _e}from"./e1258b01-mthkgiytv33jieoc.js";import{n as ve,t as ye}from"./99a48954-kr1rwr2qdycogma7.js";import{a as Y,i as be,n as xe,o as Se,r as Ce,t as we}from"./16e34fcb-hdb1mgyvgkr28amc.js";import{d as Te,f as Ee,g as De,h as Oe,m as ke,p as Ae}from"./b7c53a83-kc5mir0urcdh48to.js";import{a as je,i as Me,n as X,o as Ne,r as Pe,t as Fe}from"./b00adf98-dhg4y8uf7undrd9q.js";import{n as Ie,t as Le}from"./f4ec23bf-b9of8rfqpvbzz6no.js";function Re(e){return e.stopPropagation()}function ze(e){return e.is_read_only}function Be(e){return!e.is_read_only}function Ve(e){return e.name}function He(e){return e.name}function Ue(e){return e.name}function We(e,t){return e.length>0&&e.every(e=>t.has(e))}function Ge(e){return!e}function Ke(e){return!e}function qe(e){return!e}function Je(e){return!e}function Ye(e){return e.name}function Xe(e){return e.is_enabled}function Ze(e){return e.name}function Qe(e){return e.is_enabled!==!1}function $e(e){return e.name}function et(){return N({fetchValidLinksOnly:!0,productSku:ue.ADMIN_SETTING})}function tt(){return q()}function nt(){return u()?.normalizedAccountUserId}function rt(){return u()?.getWorkspaceId()}var it,Z,Q,at,ot,st,ct,lt,ut,dt,ft,pt,$,mt=e((()=>{it=S(),De(),ve(),V(),O(),o(),k(),P(),I(),L(),l(),ie(),d(),w(),M(),G(),T(),A(),U(),f(),a(),ae(),r(),x(),s(),Z=t(b()),y(),je(),ke(),Ee(),B(),_e(),Ce(),Le(),Q=oe(),at=new Set([`deleted`]),ot=`text-blue-500 dark:text-blue-400`,st=e=>e.knowledgeConfig.some(e=>e.connections.some(e=>!at.has(e.connection_status))),ct=e=>{"use forget";let t=(0,it.c)(6),{showActionDetails:n}=e,r=n===void 0||n,i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,Q.jsx)(de,{id:`action-toggle-skeleton`,checked:!1,disabled:!0}),t[0]=i):i=t[0];let a;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Q.jsx)(`div`,{className:`flex-1 space-y-0.5`,children:(0,Q.jsx)(C,{})}),t[1]=a):a=t[1];let o;t[2]===r?o=t[3]:(o=r&&(0,Q.jsxs)(`div`,{className:`border-token-border-default relative col-start-2 overflow-hidden rounded-xl border`,children:[(0,Q.jsx)(`div`,{className:`from-token-bg-tertiary/30 to-token-bg-tertiary absolute inset-0 z-10 h-full bg-gradient-to-b`,"aria-hidden":`true`}),(0,Q.jsx)(`pre`,{className:`bg-token-bg-tertiary h-24 w-full overflow-hidden px-3 py-2`,children:(0,Q.jsx)(C,{lines:4,heightSize:`sm`,delay:.07})})]}),t[2]=r,t[3]=o);let s;return t[4]===o?s=t[5]:(s=(0,Q.jsxs)(`li`,{className:`border-token-border-default grid cursor-wait grid-cols-[auto_1fr] gap-4 p-4`,children:[i,a,o]}),t[4]=o,t[5]=s),s},lt=e=>{"use forget";let t=(0,it.c)(132),{action:n,actionDelta:r,prevAction:a,isEnabled:o,onToggle:s,onOpenConstraints:c,constraintsDisabled:l,showActionDetails:te,showActionTypeBadges:u,showRowBorder:ne,indented:d,disabled:f}=e,p=l!==void 0&&l,m=te===void 0||te,ie=u===void 0||u,ae=ne===void 0||ne,oe=d!==void 0&&d,h=f!==void 0&&f,g=ce(),v;if(t[0]!==n.name){let e;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(e=/[^a-zA-Z0-9_-]/g,t[2]=e):e=t[2],v=n.name.replace(e,`-`),t[0]=n.name,t[1]=v}else v=t[1];let y=v,b;t[3]===n?b=t[4]:(b=Me(n),t[3]=n,t[4]=b);let se=`action-toggle-${y}-${b}`,x,S,C,w,T,E,D,O,le,k,A,ue,j,M,N,P,fe;if(t[5]!==n||t[6]!==p||t[7]!==h||t[8]!==oe||t[9]!==g||t[10]!==o||t[11]!==c||t[12]!==s||t[13]!==y||t[14]!==ie||t[15]!==ae||t[16]!==se){let e;t[34]===ie?e=t[35]:(e=e=>ie||e!==`read`&&e!==`write`,t[34]=ie,t[35]=e);let r=he(n).filter(e),a;t[36]!==n||t[37]!==c?(a=c!==void 0&&J(n),t[36]=n,t[37]=c,t[38]=a):a=t[38],C=a;let l=$.openActionPlaceholder,te=h||p,u;t[39]!==p||t[40]!==g?(u=p?g.formatMessage($.constraintsDisabledBySync):void 0,t[39]=p,t[40]=g,t[41]=u):u=t[41],S=u;let ne=`action-constraints-trigger-${y}`,d;t[42]===g?d=t[43]:(d=g.formatMessage(l),t[42]=g,t[43]=d);let re;t[44]!==n||t[45]!==c?(re=e=>{e.preventDefault(),e.stopPropagation(),c?.(n)},t[44]=n,t[45]=c,t[46]=re):re=t[46];let f=te&&`cursor-not-allowed`,m;t[47]===f?m=t[48]:(m=i(`text-token-text-tertiary hover:bg-token-bg-secondary hover:text-token-text-primary flex size-8 items-center justify-center rounded-md opacity-0 transition-colors group-hover:opacity-100 focus-visible:opacity-100`,f),t[47]=f,t[48]=m);let _=`action-constraints-icon-${y}`,v;t[49]===_?v=t[50]:(v=(0,Q.jsx)(ee.SettingsWrench,{className:`h-4 w-4`,"data-testid":_,"aria-hidden":!0}),t[49]=_,t[50]=v);let b;t[51]!==te||t[52]!==d||t[53]!==re||t[54]!==m||t[55]!==v?(b=(0,Q.jsx)(`button`,{type:`button`,"aria-label":d,onClick:re,disabled:te,className:m,children:v}),t[51]=te,t[52]=d,t[53]=re,t[54]=m,t[55]=v,t[56]=b):b=t[56];let ce;t[57]!==ne||t[58]!==b?(ce=(0,Q.jsx)(`span`,{"data-action-constraints-trigger":!0,"data-testid":ne,className:`action-constraints-trigger flex self-center`,children:b}),t[57]=ne,t[58]=b,t[59]=ce):ce=t[59],x=ce;let F;t[60]!==n.name||t[61]!==h||t[62]!==o||t[63]!==s?(F=e=>{if(h)return;let t=e.target;t instanceof Element&&t.closest(`label, button, a, input, select, textarea, [role='checkbox'], [data-action-constraints-trigger], .action-constraints-trigger, .action-details`)||s(n.name,!o)},t[60]=n.name,t[61]=h,t[62]=o,t[63]=s,t[64]=F):F=t[64];let I=F,L=oe&&`ps-7`,R=!h&&`hover:bg-token-bg-tertiary`;t[65]!==L||t[66]!==R?(P=i(`group`,L,R),t[65]=L,t[66]=R,t[67]=P):P=t[67];let z=ae&&`border-token-border-default border-b group-last:border-0`,B=h?`cursor-not-allowed`:`cursor-default`;t[68]!==z||t[69]!==B?(N=i([`px-2 py-1`,z,B]),t[68]=z,t[69]=B,t[70]=N):N=t[70],ue=`action-toggle-row-${y}`,j=I;let V=!h&&`cursor-pointer`;t[71]===V?M=t[72]:(M=i(`grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4 px-2 py-1.5`,V),t[71]=V,t[72]=M),O=se,le=`contents cursor-pointer`,k=Re;let H;t[73]!==n.name||t[74]!==s?(H=e=>s(n.name,e.target.checked),t[73]=n.name,t[74]=s,t[75]=H):H=t[75],t[76]!==h||t[77]!==o||t[78]!==H||t[79]!==se?(A=(0,Q.jsx)(de,{id:se,checked:o,onChange:H,disabled:h}),t[76]=h,t[77]=o,t[78]=H,t[79]=se,t[80]=A):A=t[80],D=`min-w-0`,T=`flex min-w-0 flex-wrap items-center gap-2`;let U=h&&`text-token-text-secondary`,W;t[81]===U?W=t[82]:(W=i([`font-mono text-sm font-medium`,U]),t[81]=U,t[82]=W),t[83]!==n.name||t[84]!==W?(E=(0,Q.jsx)(`div`,{className:W,children:n.name}),t[83]=n.name,t[84]=W,t[85]=E):E=t[85],fe=`flex items-center gap-1 select-none`,w=pe({badgeKeys:r,labels:me}),t[5]=n,t[6]=p,t[7]=h,t[8]=oe,t[9]=g,t[10]=o,t[11]=c,t[12]=s,t[13]=y,t[14]=ie,t[15]=ae,t[16]=se,t[17]=x,t[18]=S,t[19]=C,t[20]=w,t[21]=T,t[22]=E,t[23]=D,t[24]=O,t[25]=le,t[26]=k,t[27]=A,t[28]=ue,t[29]=j,t[30]=M,t[31]=N,t[32]=P,t[33]=fe}else x=t[17],S=t[18],C=t[19],w=t[20],T=t[21],E=t[22],D=t[23],O=t[24],le=t[25],k=t[26],A=t[27],ue=t[28],j=t[29],M=t[30],N=t[31],P=t[32],fe=t[33];let F;t[86]===r?F=t[87]:(F=(0,Q.jsx)(X,{delta:r}),t[86]=r,t[87]=F);let I;t[88]!==w||t[89]!==F||t[90]!==fe?(I=(0,Q.jsxs)(`div`,{className:fe,children:[w,F]}),t[88]=w,t[89]=F,t[90]=fe,t[91]=I):I=t[91];let L;t[92]!==T||t[93]!==E||t[94]!==I?(L=(0,Q.jsxs)(`div`,{className:T,children:[E,I]}),t[92]=T,t[93]=E,t[94]=I,t[95]=L):L=t[95];let R;t[96]===n.description?R=t[97]:(R=n.description?n.description:(0,Q.jsx)(_,{...$.noDescription}),t[96]=n.description,t[97]=R);let z;t[98]===R?z=t[99]:(z=(0,Q.jsx)(`div`,{className:`text-token-text-tertiary line-clamp-2 text-xs leading-5 wrap-anywhere`,children:R}),t[98]=R,t[99]=z);let B;t[100]!==D||t[101]!==L||t[102]!==z?(B=(0,Q.jsxs)(`div`,{className:D,children:[L,z]}),t[100]=D,t[101]=L,t[102]=z,t[103]=B):B=t[103];let V;t[104]!==O||t[105]!==le||t[106]!==k||t[107]!==A||t[108]!==B?(V=(0,Q.jsxs)(`label`,{htmlFor:O,className:le,onClick:k,children:[A,B]}),t[104]=O,t[105]=le,t[106]=k,t[107]=A,t[108]=B,t[109]=V):V=t[109];let H;t[110]!==x||t[111]!==S||t[112]!==C?(H=C&&(S?(0,Q.jsx)(re,{label:S,className:`action-constraints-trigger self-center`,children:x}):x),t[110]=x,t[111]=S,t[112]=C,t[113]=H):H=t[113];let U;t[114]!==n||t[115]!==r||t[116]!==a||t[117]!==m?(U=m&&(0,Q.jsx)(`div`,{className:`col-start-2 col-end-4 min-w-0`,children:(0,Q.jsx)(Pe,{action:n,actionDelta:r,prevAction:a,initiallyCollapsed:!0})}),t[114]=n,t[115]=r,t[116]=a,t[117]=m,t[118]=U):U=t[118];let W;t[119]!==ue||t[120]!==j||t[121]!==M||t[122]!==V||t[123]!==H||t[124]!==U?(W=(0,Q.jsxs)(`div`,{"data-testid":ue,onPointerUp:j,className:M,children:[V,H,U]}),t[119]=ue,t[120]=j,t[121]=M,t[122]=V,t[123]=H,t[124]=U,t[125]=W):W=t[125];let G;t[126]!==N||t[127]!==W?(G=(0,Q.jsx)(`div`,{className:N,children:W}),t[126]=N,t[127]=W,t[128]=G):G=t[128];let K;return t[129]!==P||t[130]!==G?(K=(0,Q.jsx)(`li`,{className:P,children:G}),t[129]=P,t[130]=G,t[131]=K):K=t[131],K},ut=e=>{"use forget";let t=(0,it.c)(160),{app:n,actions:r,prevActions:a,deltas:o,initialEnabledActions:s,initialCustomNewActionPolicy:c,onRefreshActions:ee,refreshingActions:l,onSubmit:te,submitting:u,onCancel:ne,refreshHidden:d,onOpenConstraints:f,constraintsDisabled:p,confirmDisabled:ie,showScrollDividers:ae,onScrollabilityChange:oe}=e,h=d!==void 0&&d,g=p!==void 0&&p,v=ie!==void 0&&ie,y=ae!==void 0&&ae,b=ce(),se=(0,Z.useRef)(null),[x,S]=(0,Z.useState)(s),[C,w]=(0,Z.useState)(c),[T,E]=(0,Z.useState)(!1),[D,O]=(0,Z.useState)(!1),le=(0,Z.useId)(),k=(0,Z.useId)(),A=(0,Z.useId)(),ue=(0,Z.useId)(),j,M;t[0]===s?(j=t[1],M=t[2]):(j=()=>{S(new Set(s))},M=[s],t[0]=s,t[1]=j,t[2]=M),(0,Z.useEffect)(j,M);let N,P;t[3]===c?(N=t[4],P=t[5]):(N=()=>{w(c)},P=[c],t[3]=c,t[4]=N,t[5]=P),(0,Z.useEffect)(N,P);let I;t[6]===n?I=t[7]:(I=st(n),t[6]=n,t[7]=I);let L=I,pe;if(t[8]!==r||t[9]!==o){let e;t[11]===o?e=t[12]:(e=(e,t)=>(o.get(e.name)??Fe.Unmodified)-(o.get(t.name)??Fe.Unmodified)||e.name.localeCompare(t.name),t[11]=o,t[12]=e),pe=[...r].sort(e),t[8]=r,t[9]=o,t[10]=pe}else pe=t[10];let z=pe,B;t[13]===z?B=t[14]:(B=z.filter(ze),t[13]=z,t[14]=B);let V=B,me;t[15]===z?me=t[16]:(me=z.filter(Be),t[15]=z,t[16]=me);let he=me,H;t[17]===r?H=t[18]:(H=r.map(Ve),t[17]=r,t[18]=H);let U=H,W;t[19]!==U||t[20]!==n.primaryConnector.id||t[21]!==x||t[22]!==s?(W=Ae({connectorId:n.primaryConnector.id,adminConfigurableActionNames:U,initialEnabledActionNames:s,nextEnabledActionNames:x}),t[19]=U,t[20]=n.primaryConnector.id,t[21]=x,t[22]=s,t[23]=W):W=t[23];let G=W,K;t[24]===V?K=t[25]:(K=V.map(He),t[24]=V,t[25]=K);let q=K,ge;t[26]===he?ge=t[27]:(ge=he.map(Ue),t[26]=he,t[27]=ge);let J=ge,_e;t[28]!==U||t[29]!==x?(_e=U.length>0&&U.every(e=>x.has(e)),t[28]=U,t[29]=x,t[30]=_e):_e=t[30];let ve=_e,ye;t[31]!==x||t[32]!==q?(ye=q.length>0&&q.every(e=>x.has(e)),t[31]=x,t[32]=q,t[33]=ye):ye=t[33];let Y=ye,be;t[34]!==x||t[35]!==J?(be=J.length>0&&J.every(e=>x.has(e)),t[34]=x,t[35]=J,t[36]=be):be=t[36];let Se=be,Ce;if(t[37]!==x||t[38]!==q){let e;t[40]===x?e=t[41]:(e=e=>x.has(e),t[40]=x,t[41]=e),Ce=q.filter(e),t[37]=x,t[38]=q,t[39]=Ce}else Ce=t[39];let we=Ce.length,Ee;if(t[42]!==x||t[43]!==J){let e;t[45]===x?e=t[46]:(e=e=>x.has(e),t[45]=x,t[46]=e),Ee=J.filter(e),t[42]=x,t[43]=J,t[44]=Ee}else Ee=t[44];let De=Ee.length,Oe;t[47]!==Y||t[48]!==x||t[49]!==q?(Oe=!Y&&q.some(e=>x.has(e)),t[47]=Y,t[48]=x,t[49]=q,t[50]=Oe):Oe=t[50];let ke=Oe,je;t[51]!==Se||t[52]!==x||t[53]!==J?(je=!Se&&J.some(e=>x.has(e)),t[51]=Se,t[52]=x,t[53]=J,t[54]=je):je=t[54];let Me=je,X=!!l||u,Ne=We,Pe;t[55]!==U||t[56]!==ve||t[57]!==Y||t[58]!==x||t[59]!==q?(Pe=(e,t)=>{let n=new Set(x);for(let r of e)t?n.add(r):n.delete(r);let r=Ne(U,n),i=Ne(q,n);S(n),t&&w(e=>!ve&&r?`custom_new_all`:!Y&&i&&e!==`custom_new_all`?`custom_new_read_only`:e)},t[55]=U,t[56]=ve,t[57]=Y,t[58]=x,t[59]=q,t[60]=Pe):Pe=t[60];let Ie=Pe,Le;t[61]!==q||t[62]!==Ie?(Le=e=>{Ie(q,e)},t[61]=q,t[62]=Ie,t[63]=Le):Le=t[63];let Re=Le,Ye;t[64]===oe?Ye=t[65]:(Ye=()=>{let e=se.current;oe?.(e?e.scrollHeight>e.clientHeight+1:!1)},t[64]=oe,t[65]=Ye);let Xe=Ye,Ze,Qe;t[66]===Xe?(Ze=t[67],Qe=t[68]):(Ze=()=>{Xe();let e=se.current;if(!e)return;window.addEventListener(`resize`,Xe);let t;return typeof ResizeObserver<`u`&&(t=new ResizeObserver(Xe),t.observe(e)),()=>{window.removeEventListener(`resize`,Xe),t?.disconnect()}},Qe=[Xe],t[66]=Xe,t[67]=Ze,t[68]=Qe),(0,Z.useEffect)(Ze,Qe);let $e;t[69]===Xe?$e=t[70]:($e=()=>{let e=window.requestAnimationFrame(Xe);return()=>window.cancelAnimationFrame(e)},t[69]=Xe,t[70]=$e);let et;t[71]!==r.length||t[72]!==g||t[73]!==T||t[74]!==l||t[75]!==u||t[76]!==Xe||t[77]!==D?(et=[r.length,g,T,l,u,Xe,D],t[71]=r.length,t[72]=g,t[73]=T,t[74]=l,t[75]=u,t[76]=Xe,t[77]=D,t[78]=et):et=t[78],(0,Z.useEffect)($e,et);let tt;t[79]===Symbol.for(`react.memo_cache_sentinel`)?(tt=[[`custom_new_all`,$.unconfiguredActionsToggleLabel],[`custom_new_read_only`,$.unconfiguredReadActionsToggleLabel],[`custom`,$.unconfiguredNoActionsToggleLabel]],t[79]=tt):tt=t[79];let nt=tt,rt;t[80]!==b||t[81]!==ee||t[82]!==h||t[83]!==l||t[84]!==u?(rt=h?null:(0,Q.jsx)(re,{label:ee?void 0:b.formatMessage($.needLink),children:(0,Q.jsx)(m,{size:`small`,color:`secondary`,loading:l,disabled:!ee||u,onClick:()=>ee?.(),children:(0,Q.jsx)(_,{...$.refreshLabel})})}),t[80]=b,t[81]=ee,t[82]=h,t[83]=l,t[84]=u,t[85]=rt):rt=t[85];let at=rt,ct;t[86]===n.primaryConnector.name?ct=t[87]:(ct=(0,Q.jsx)(`p`,{className:`text-token-text-secondary flex-1 pb-0 text-sm leading-5`,children:(0,Q.jsx)(_,{...$.policyActionsDescription,values:{app:n.primaryConnector.name}})}),t[86]=n.primaryConnector.name,t[87]=ct);let ut;t[88]!==at||t[89]!==ct?(ut=(0,Q.jsxs)(`div`,{className:`flex items-start justify-between gap-3`,children:[ct,at]}),t[88]=at,t[89]=ct,t[90]=ut):ut=t[90];let dt;t[91]===g?dt=t[92]:(dt=g&&(0,Q.jsx)(`div`,{className:`border-token-border-default bg-token-bg-tertiary text-token-text-secondary rounded-lg border px-3 py-2 text-xs`,children:(0,Q.jsx)(_,{...$.constraintsDisabledBySync})}),t[91]=g,t[92]=dt);let ft;t[93]!==n.primaryConnector.name||t[94]!==G||t[95]!==Ie?(ft=G.length>0&&(0,Q.jsx)(Te,{appName:n.primaryConnector.name,onUndo:()=>Ie([...G],!0)}),t[93]=n.primaryConnector.name,t[94]=G,t[95]=Ie,t[96]=ft):ft=t[96];let pt;t[97]!==r.length||t[98]!==Y||t[99]!==Se||t[100]!==g||t[101]!==o||t[102]!==X||t[103]!==Re||t[104]!==x||t[105]!==we||t[106]!==De||t[107]!==b||t[108]!==L||t[109]!==f||t[110]!==a||t[111]!==V||t[112]!==T||t[113]!==ke||t[114]!==le||t[115]!==Ie||t[116]!==J||t[117]!==he||t[118]!==D||t[119]!==Me||t[120]!==k?(pt=r.length===0?(0,Q.jsx)(`p`,{className:`text-token-text-tertiary m-4 text-center text-xs italic`,children:(0,Q.jsx)(_,{...$.noActionsLabel})}):(0,Q.jsx)(Q.Fragment,{children:(0,Q.jsxs)(`div`,{className:`space-y-3`,children:[(0,Q.jsxs)(`div`,{className:`border-token-border-default overflow-hidden rounded-lg border`,children:[V.length>0&&(0,Q.jsxs)(`div`,{children:[(0,Q.jsxs)(`div`,{"data-testid":`action-set-row-read`,onPointerUp:e=>{if(X)return;let t=e.target;t instanceof HTMLElement&&t.closest(`label, button, input`)||E(Ge)},className:i(`flex items-center justify-between gap-3 px-4 py-3 transition-colors`,X?`cursor-not-allowed`:`hover:bg-token-bg-tertiary cursor-pointer`),children:[(0,Q.jsxs)(`label`,{htmlFor:`action-toggle-all-read-actions`,className:i(`flex min-w-0 items-center gap-3`,X?`cursor-not-allowed opacity-60`:`cursor-pointer`),children:[(0,Q.jsx)(de,{id:`action-toggle-all-read-actions`,checked:Y,indeterminate:ke,onChange:e=>Re(e.target.checked),disabled:X}),(0,Q.jsxs)(`span`,{className:`inline-flex min-w-0 items-baseline gap-2 leading-6`,children:[(0,Q.jsx)(`span`,{className:`truncate`,children:(0,Q.jsx)(_,{...$.readActionsSectionLabel})}),!Y&&(0,Q.jsx)(`span`,{className:`text-token-text-tertiary inline-flex text-sm leading-none`,children:(0,Q.jsx)(_,{...$.enabledActionsCountLabel,values:{enabledCount:we,totalCount:V.length}})})]})]}),(0,Q.jsx)(`button`,{type:`button`,className:`text-token-text-secondary hover:bg-token-bg-secondary hover:text-token-text-primary flex size-8 shrink-0 items-center justify-center rounded-md transition-colors disabled:opacity-50`,"aria-label":b.formatMessage(T?$.hideActionDetailsLabel:$.viewActionDetailsLabel),"aria-expanded":T,"aria-controls":le,onClick:()=>E(Ke),disabled:X,children:T?(0,Q.jsx)(fe,{className:`h-4 w-4`,"aria-hidden":!0}):(0,Q.jsx)(R,{className:`h-4 w-4`,"aria-hidden":!0})})]}),T&&(0,Q.jsx)(`ul`,{id:le,className:`p-0`,children:V.map(e=>(0,Q.jsx)(lt,{action:e,actionDelta:o.get(e.name),prevAction:a?.get(e.name)?.action,isEnabled:x.has(e.name),onToggle:(e,t)=>Ie([e],t),disabled:X,onOpenConstraints:f,constraintsDisabled:g,showActionDetails:!1,showActionTypeBadges:!1,showRowBorder:!1,indented:!0},e.name))})]}),he.length>0&&(0,Q.jsxs)(`div`,{className:i(V.length>0&&`border-token-border-default border-t`),children:[(0,Q.jsxs)(`div`,{"data-testid":`action-set-row-write`,onPointerUp:e=>{if(X)return;let t=e.target;t instanceof HTMLElement&&t.closest(`label, button, input`)||O(qe)},className:i(`flex items-center justify-between gap-3 px-4 py-3 transition-colors`,X?`cursor-not-allowed`:`hover:bg-token-bg-tertiary cursor-pointer`),children:[(0,Q.jsxs)(`label`,{htmlFor:`action-toggle-all-write-actions`,className:i(`flex min-w-0 items-center gap-3`,X?`cursor-not-allowed opacity-60`:`cursor-pointer`),children:[(0,Q.jsx)(de,{id:`action-toggle-all-write-actions`,checked:Se,indeterminate:Me,onChange:e=>Ie(J,e.target.checked),disabled:X}),(0,Q.jsxs)(`span`,{className:`inline-flex min-w-0 items-baseline gap-2 leading-6`,children:[(0,Q.jsx)(`span`,{className:`truncate`,children:(0,Q.jsx)(_,{...$.writeActionsSectionLabel})}),!Se&&(0,Q.jsx)(`span`,{className:`text-token-text-tertiary inline-flex text-sm leading-none`,children:(0,Q.jsx)(_,{...$.enabledActionsCountLabel,values:{enabledCount:De,totalCount:he.length}})})]})]}),(0,Q.jsx)(`button`,{type:`button`,className:`text-token-text-secondary hover:bg-token-bg-secondary hover:text-token-text-primary flex size-8 shrink-0 items-center justify-center rounded-md transition-colors disabled:opacity-50`,"aria-label":b.formatMessage(D?$.hideActionDetailsLabel:$.viewActionDetailsLabel),"aria-expanded":D,"aria-controls":k,onClick:()=>O(Je),disabled:X,children:D?(0,Q.jsx)(fe,{className:`h-4 w-4`,"aria-hidden":!0}):(0,Q.jsx)(R,{className:`h-4 w-4`,"aria-hidden":!0})})]}),D&&(0,Q.jsx)(`ul`,{id:k,className:`p-0`,children:he.map(e=>(0,Q.jsx)(lt,{action:e,actionDelta:o.get(e.name),prevAction:a?.get(e.name)?.action,isEnabled:x.has(e.name),onToggle:(e,t)=>Ie([e],t),disabled:X,onOpenConstraints:f,constraintsDisabled:g,showActionDetails:!1,showActionTypeBadges:!1,showRowBorder:!1,indented:!0},e.name))})]})]}),L&&f&&(0,Q.jsx)(`div`,{className:`mt-2 space-y-2`,children:(0,Q.jsxs)(`div`,{className:`bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-lg px-4 py-3 text-sm leading-6`,children:[(0,Q.jsx)(F,{className:`h-4 w-4 shrink-0`}),(0,Q.jsx)(`span`,{children:(0,Q.jsx)(_,{...$.syncEnabledConstraintsNotice})})]})})]})}),t[97]=r.length,t[98]=Y,t[99]=Se,t[100]=g,t[101]=o,t[102]=X,t[103]=Re,t[104]=x,t[105]=we,t[106]=De,t[107]=b,t[108]=L,t[109]=f,t[110]=a,t[111]=V,t[112]=T,t[113]=ke,t[114]=le,t[115]=Ie,t[116]=J,t[117]=he,t[118]=D,t[119]=Me,t[120]=k,t[121]=pt):pt=t[121];let mt;t[122]!==ut||t[123]!==dt||t[124]!==ft||t[125]!==pt?(mt=(0,Q.jsxs)(`div`,{ref:se,className:`min-h-0 flex-1 space-y-3 overflow-y-auto px-6 pt-2 pb-3`,children:[ut,dt,ft,pt]}),t[122]=ut,t[123]=dt,t[124]=ft,t[125]=pt,t[126]=mt):mt=t[126];let ht;t[127]!==r.length||t[128]!==n.primaryConnector.name||t[129]!==C||t[130]!==X||t[131]!==y||t[132]!==ue||t[133]!==A?(ht=r.length>0&&(0,Q.jsxs)(`div`,{className:i(`shrink-0 space-y-3 px-6 pt-1 pb-6`,y&&`border-token-border-default border-t pt-4`),children:[(0,Q.jsx)(`div`,{id:A,className:`text-token-text-secondary text-sm leading-5`,children:(0,Q.jsx)(_,{...$.unconfiguredActionsDescription,values:{app:n.primaryConnector.name}})}),(0,Q.jsx)(`div`,{role:`radiogroup`,"aria-labelledby":A,className:`text-token-text-secondary flex flex-col items-start gap-3 text-sm`,children:nt.map(e=>{let[t,n]=e;return(0,Q.jsxs)(`label`,{className:`flex cursor-pointer items-center gap-2`,children:[(0,Q.jsx)(`input`,{type:`radio`,name:ue,value:t,className:ot,checked:C===t,onChange:()=>w(t),disabled:X}),(0,Q.jsx)(`span`,{children:(0,Q.jsx)(_,{...n})})]},t)})})]}),t[127]=r.length,t[128]=n.primaryConnector.name,t[129]=C,t[130]=X,t[131]=y,t[132]=ue,t[133]=A,t[134]=ht):ht=t[134];let gt=y&&r.length===0&&`border-token-border-default border-t pt-4`,_t;t[135]===gt?_t=t[136]:(_t=i(`flex shrink-0 justify-end gap-2 px-6 pt-0 pb-6`,gt),t[135]=gt,t[136]=_t);let vt;t[137]===Symbol.for(`react.memo_cache_sentinel`)?(vt=(0,Q.jsx)(_,{id:`59bwQY`,defaultMessage:`Cancel`}),t[137]=vt):vt=t[137];let yt;t[138]!==X||t[139]!==ne?(yt=(0,Q.jsx)(m,{color:`secondary`,onClick:ne,disabled:X,children:vt}),t[138]=X,t[139]=ne,t[140]=yt):yt=t[140];let bt;t[141]!==U||t[142]!==C||t[143]!==x||t[144]!==te||t[145]!==q?(bt=()=>te({enabledActions:Array.from(x),actionPolicy:xe({actionIds:U,readOnlyActionIds:q,enabledActions:x,customNewActionPolicy:C})}),t[141]=U,t[142]=C,t[143]=x,t[144]=te,t[145]=q,t[146]=bt):bt=t[146];let xt=X||v,St;t[147]===Symbol.for(`react.memo_cache_sentinel`)?(St=(0,Q.jsx)(_,{...$.confirmLabel}),t[147]=St):St=t[147];let Ct;t[148]!==u||t[149]!==bt||t[150]!==xt?(Ct=(0,Q.jsx)(m,{onClick:bt,loading:u,disabled:xt,children:St}),t[148]=u,t[149]=bt,t[150]=xt,t[151]=Ct):Ct=t[151];let wt;t[152]!==_t||t[153]!==yt||t[154]!==Ct?(wt=(0,Q.jsxs)(`div`,{className:_t,children:[yt,Ct]}),t[152]=_t,t[153]=yt,t[154]=Ct,t[155]=wt):wt=t[155];let Tt;return t[156]!==mt||t[157]!==ht||t[158]!==wt?(Tt=(0,Q.jsxs)(Q.Fragment,{children:[mt,ht,wt]}),t[156]=mt,t[157]=ht,t[158]=wt,t[159]=Tt):Tt=t[159],Tt},dt=e=>{"use forget";let t=(0,it.c)(75),{app:r,onClose:i,onCancel:a,onConfirm:o,initialEnabledActions:s,initialActionPolicy:ee,initialActionPolicyLoading:l,showOverlayBackground:u,submitting:d,showParameterConstraints:re}=e,f=ee===void 0?null:ee,p=l!==void 0&&l,m=u===void 0||u,ie=d!==void 0&&d,ae=re===void 0||re,oe=ce(),h=g(),[v,y]=(0,Z.useState)(null),[b,x]=(0,Z.useState)(!1),S=(0,Z.useRef)(!1),C;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(C={forceEnable:!0},t[0]=C):C=t[0];let{actions:w,isLoading:T,refetch:O}=E(r.primaryConnector,ue.ADMIN_SETTING,C),k;t[1]===w?k=t[2]:(k=w.filter(be),t[1]=w,t[2]=k);let A=k,de;bb0:{if(s){let e;t[3]===A?e=t[4]:(e=new Set(A.map(Ye)),t[3]=A,t[4]=e);let n=e,r;t[5]===s?r=t[6]:(r=Array.from(s),t[5]=s,t[6]=r);let i;t[7]!==r||t[8]!==n?(i=new Set(r.filter(e=>n.has(e))),t[7]=r,t[8]=n,t[9]=i):i=t[9],de=i;break bb0}let e;t[10]===A?e=t[11]:(e=new Set(A.filter(Xe).map(Ze)),t[10]=A,t[11]=e),de=e}let M=de,[N,P]=(0,Z.useState)(we),fe,F;t[12]!==T||t[13]!==f||t[14]!==p?(F=()=>{S.current||T||p||(P(Se(f)),S.current=!0)},fe=[T,f,p],t[12]=T,t[13]=f,t[14]=p,t[15]=fe,t[16]=F):(fe=t[15],F=t[16]),(0,Z.useEffect)(F,fe);let I;if(t[17]!==A){I=new Map;for(let e of A)I.set(e.name,{action:e,hash:Me(e)});t[17]=A,t[18]=I}else I=t[18];let L=I,[R,pe]=(0,Z.useState)(null),z=Ne(L,R),B;t[19]===Symbol.for(`react.memo_cache_sentinel`)?(B=c()?.getWorkspaceId(),t[19]=B):B=t[19];let V=B,me=D(),he=H(),U=(0,Z.useRef)(!1),G;t[20]!==r||t[21]!==ae?(G=ge({app:r,showParameterConstraints:ae}),t[20]=r,t[21]=ae,t[22]=G):G=t[22];let K=G,q,J;t[23]!==T||t[24]!==r.primaryConnector.actions_changed_since_review||t[25]!==r.primaryConnector.id||t[26]!==he||t[27]!==me||t[28]!==A?(q=()=>{if(U.current||!V||!r.primaryConnector.actions_changed_since_review||T)return;U.current=!0;let e=A.filter(Qe).map($e);(async()=>{await le(r.primaryConnector.id,V,e),me(),he(r.primaryConnector.id)})()},J=[T,r.primaryConnector.actions_changed_since_review,r.primaryConnector.id,he,me,A,V],t[23]=T,t[24]=r.primaryConnector.actions_changed_since_review,t[25]=r.primaryConnector.id,t[26]=he,t[27]=me,t[28]=A,t[29]=q,t[30]=J):(q=t[29],J=t[30]),(0,Z.useEffect)(q,J);let _e;t[31]===Symbol.for(`react.memo_cache_sentinel`)?(_e=te(),t[31]=_e):_e=t[31];let ve=_e,ye;t[32]!==L||t[33]!==R||t[34]!==O?(ye=async e=>{R||pe(L),await j(e),await O()},t[32]=L,t[33]=R,t[34]=O,t[35]=ye):ye=t[35];let Y;t[36]!==r.primaryConnector.id||t[37]!==h?(Y=()=>{h.invalidateQueries({queryKey:[`connector-action-clamp`,r.primaryConnector.id]})},t[36]=r.primaryConnector.id,t[37]=h,t[38]=Y):Y=t[38];let xe;t[39]===Symbol.for(`react.memo_cache_sentinel`)?(xe=e=>{ve.danger($.refreshActionsError,{error:e})},t[39]=xe):xe=t[39];let Ce;t[40]!==ye||t[41]!==Y?(Ce={mutationFn:ye,onSuccess:Y,onError:xe},t[40]=ye,t[41]=Y,t[42]=Ce):Ce=t[42];let Te=se(Ce),{data:Ee}=n(et),De=Ie(Ee,r.primaryConnector.id),Oe=W(r.primaryConnector),ke;t[43]===oe?ke=t[44]:(ke=oe.formatMessage($.actionsControlModalTitle),t[43]=oe,t[44]=ke);let Ae;t[45]!==z||t[46]!==T||t[47]!==r||t[48]!==K||t[49]!==M||t[50]!==p||t[51]!==Oe||t[52]!==De||t[53]!==a||t[54]!==o||t[55]!==b||t[56]!==R||t[57]!==Te||t[58]!==N||t[59]!==ie||t[60]!==A?(Ae=T&&!Te.isPending?(0,Q.jsxs)(`div`,{className:`space-y-4 overflow-y-auto px-6 pt-2 pb-6`,children:[(0,Q.jsx)(`p`,{className:`text-token-text-secondary pb-0 text-sm leading-5`,children:(0,Q.jsx)(_,{...$.policyActionsDescription,values:{app:r.primaryConnector.name}})}),(0,Q.jsx)(`ul`,{className:`border-token-border-default rounded-2xl border`,children:(0,Q.jsx)(ct,{showActionDetails:!1})})]}):(0,Q.jsx)(ut,{app:r,actions:A,prevActions:R,deltas:z,initialEnabledActions:M,initialCustomNewActionPolicy:N,onSubmit:o,onCancel:a,refreshingActions:Te.isPending,submitting:ie||p,confirmDisabled:A.length===0,refreshHidden:!Oe,onRefreshActions:Oe&&De!==void 0?()=>{Te.mutate(De.id)}:void 0,onOpenConstraints:K?e=>y(e):void 0,constraintsDisabled:!1,showScrollDividers:b,onScrollabilityChange:x}),t[45]=z,t[46]=T,t[47]=r,t[48]=K,t[49]=M,t[50]=p,t[51]=Oe,t[52]=De,t[53]=a,t[54]=o,t[55]=b,t[56]=R,t[57]=Te,t[58]=N,t[59]=ie,t[60]=A,t[61]=Ae):Ae=t[61];let je;t[62]!==i||t[63]!==b||t[64]!==m||t[65]!==ke||t[66]!==Ae?(je=(0,Q.jsx)(ne,{isOpen:!0,onClose:i,showOverlayBackground:m,testId:`modal-app-actions-control`,title:ke,size:`custom`,className:`max-w-5xl`,hasSeparator:b,noPadding:!0,isScrollable:!1,headerClassName:`!px-6 !pt-6 !pb-2`,contentClassName:`flex flex-col max-h-[80vh]`,children:Ae}),t[62]=i,t[63]=b,t[64]=m,t[65]=ke,t[66]=Ae,t[67]=je):je=t[67];let X;t[68]!==r||t[69]!==K||t[70]!==v?(X=K&&v&&(0,Q.jsx)(pt,{app:r,onClose:()=>y(null),onBack:()=>y(null),showOverlayBackground:!0,initialSelectedAction:v}),t[68]=r,t[69]=K,t[70]=v,t[71]=X):X=t[71];let Pe;return t[72]!==je||t[73]!==X?(Pe=(0,Q.jsxs)(Q.Fragment,{children:[je,X]}),t[72]=je,t[73]=X,t[74]=Pe):Pe=t[74],Pe},ft=e=>{"use forget";let t=(0,it.c)(41),{app:r,onClose:i}=e,a=ce(),o;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(o=c()?.getWorkspaceId(),t[0]=o):o=t[0];let s=o,ee;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(ee=te(),t[1]=ee):ee=t[1];let l=ee,u=g(),ne=D(),d=H(),re=z(),f=n(tt),m=n(nt),ie=!!s,ae;t[2]!==r.primaryConnector.id||t[3]!==f?(ae=()=>{K(f,s??``,r.primaryConnector.id,ie)},t[2]=r.primaryConnector.id,t[3]=f,t[4]=ae):ae=t[4];let oe;t[5]!==r.primaryConnector.id||t[6]!==m||t[7]!==f?(oe=[f,m,s,r.primaryConnector.id,ie],t[5]=r.primaryConnector.id,t[6]=m,t[7]=f,t[8]=oe):oe=t[8],(0,Z.useEffect)(ae,oe);let h;t[9]!==r.primaryConnector.id||t[10]!==m||t[11]!==f?(h=ye({queryKeyPrefix:`connector-workspace-permissions`,workspaceId:s,connectorId:r.primaryConnector.id,enabled:ie,transport:f,actorId:m}),t[9]=r.primaryConnector.id,t[10]=m,t[11]=f,t[12]=h):h=t[12];let{data:_,isLoading:y}=v(h),b;t[13]!==r.primaryConnector.id||t[14]!==d||t[15]!==re||t[16]!==ne||t[17]!==u?(b=async e=>{let{enabledActions:t,actionPolicy:n}=e;if(!s)throw Error(`Workspace ID is required to update app actions.`);let i={enabled:!0,enabled_actions:t};n&&(i.action_policy=n),await p.safePost(`/accounts/{account_id}/connectors/{connector_id}/workspace_permissions`,{parameters:{path:{account_id:s,connector_id:r.primaryConnector.id}},requestBody:i}),ne(),d(r.primaryConnector.id),await u.invalidateQueries({queryKey:[`connector-actions`,r.primaryConnector.id]}),await u.invalidateQueries({queryKey:[`connector-workspace-permissions`,s,r.primaryConnector.id]}),await re()},t[13]=r.primaryConnector.id,t[14]=d,t[15]=re,t[16]=ne,t[17]=u,t[18]=b):b=t[18];let x;t[19]!==a||t[20]!==i?(x=()=>{l.success(a.formatMessage({id:`AW+VoO`,defaultMessage:`App tools updated successfully.`})),i()},t[19]=a,t[20]=i,t[21]=x):x=t[21];let S;t[22]===a?S=t[23]:(S=()=>{l.danger(a.formatMessage({id:`IRGvbN`,defaultMessage:`Failed to update app tools. Please try again.`}))},t[22]=a,t[23]=S);let C;t[24]!==b||t[25]!==x||t[26]!==S?(C={mutationFn:b,onSuccess:x,onError:S},t[24]=b,t[25]=x,t[26]=S,t[27]=C):C=t[27];let{mutateAsync:w,isPending:T}=se(C),E;t[28]!==i||t[29]!==T?(E=()=>{T||i()},t[28]=i,t[29]=T,t[30]=E):E=t[30];let O=E,le=_?.action_policy,k=_?.enabled_actions,A;t[31]!==le||t[32]!==k?(A=Y({actionPolicy:le,enabledActions:k}),t[31]=le,t[32]=k,t[33]=A):A=t[33];let ue=!!s&&y,j;return t[34]!==r||t[35]!==O||t[36]!==w||t[37]!==T||t[38]!==A||t[39]!==ue?(j=(0,Q.jsx)(dt,{app:r,onClose:O,onCancel:O,onConfirm:w,submitting:T,initialActionPolicy:A,initialActionPolicyLoading:ue}),t[34]=r,t[35]=O,t[36]=w,t[37]=T,t[38]=A,t[39]=ue,t[40]=j):j=t[40],j},pt=e=>{"use forget";let t=(0,it.c)(3),r=n(rt),i;return t[0]!==e||t[1]!==r?(i=(0,Q.jsx)(Oe,{...e,workspaceId:r}),t[0]=e,t[1]=r,t[2]=i):i=t[2],i},$=h({openActionPlaceholder:{id:`oTiWB2`,defaultMessage:`Parameter Constraints`},noDescription:{id:`6DgzBU`,defaultMessage:`No description provided.`},constraintsDisabledBySync:{id:`D4DK8f`,defaultMessage:`Sync is enabled for this app. Parameter constraints only apply when sync is off.`},syncEnabledConstraintsNotice:{id:`jiVclO`,defaultMessage:`Parameter Constraints apply only to the direct app tools shown above. They do not limit content retrieved from this app’s synced data.`},noActionsLabel:{id:`139ppy`,defaultMessage:`No tools are available for this app.`},actionsControlModalTitle:{id:`chatgpt.contextual_answers.admin.app_actions.policy_modal.title`,defaultMessage:`What tools should be available?`},policyActionsDescription:{id:`chatgpt.contextual_answers.admin.app_actions.policy_modal.description`,defaultMessage:`Available tools in {app}:`},unconfiguredActionsToggleLabel:{id:`chatgpt.contextual_answers.admin.app_actions.policy_modal.future_releases.option.all_new.label`,defaultMessage:`Enable all new tools`},unconfiguredReadActionsToggleLabel:{id:`chatgpt.contextual_answers.admin.app_actions.policy_modal.future_releases.option.new_read_only.label`,defaultMessage:`Only enable new read tools`},unconfiguredNoActionsToggleLabel:{id:`chatgpt.contextual_answers.admin.app_actions.policy_modal.future_releases.option.keep_disabled.label`,defaultMessage:`Disable new tools`},unconfiguredActionsDescription:{id:`chatgpt.contextual_answers.admin.app_actions.policy_modal.future_releases.description`,defaultMessage:`In the future, when new tools are added to {app}:`},confirmLabel:{id:`med53c`,defaultMessage:`Confirm`},readActionsSectionLabel:{id:`F3q+J6`,defaultMessage:`Read tools`},writeActionsSectionLabel:{id:`4Ezvi0`,defaultMessage:`Write tools`},enabledActionsCountLabel:{id:`chatgpt.contextual_answers.admin.app_actions.policy_modal.enabled_actions_count_label`,defaultMessage:`{enabledCount} of {totalCount} enabled`},viewActionDetailsLabel:{id:`chatgpt.contextual_answers.admin.app_actions.policy_modal.view_details`,defaultMessage:`View details`},hideActionDetailsLabel:{id:`chatgpt.contextual_answers.admin.app_actions.policy_modal.hide_details`,defaultMessage:`Hide details`},refreshLabel:{id:`e0MhOD`,defaultMessage:`Refresh`},refreshActionsError:{id:`AHelUR`,defaultMessage:`Failed to refresh app tools`},needLink:{id:`7khSUy`,defaultMessage:`This app must be connected to refresh its tools.`}})}));export{mt as i,pt as n,ft as r,dt as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A5 as n,
+    F7 as r,
+    G5 as i,
+    I1 as a,
+    JT as o,
+    K5 as s,
+    M1 as c,
+    Mz as ee,
+    Nz as l,
+    RU as te,
+    S1 as u,
+    Sw as ne,
+    Xy as d,
+    Yy as re,
+    f8 as f,
+    j7 as p,
+    qT as m,
+    ww as ie,
+    zU as ae
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as oe,
+    Ln as h,
+    N as g,
+    Nn as _,
+    O as v,
+    Rn as y,
+    Vn as b,
+    p as se,
+    s as x,
+    wn as S,
+    zn as ce
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    C3t as C,
+    E3t as w,
+    FQ as T,
+    UQ as E,
+    VQ as D,
+    Yrt as O,
+    ait as le,
+    dKn as k,
+    iTn as A,
+    rTn as ue,
+    rit as j,
+    uKn as de,
+    wPn as M,
+    xPn as N
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    DC as P,
+    EC as fe,
+    Ov as F,
+    TC as I,
+    kv as L,
+    wC as R
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+import {
+    $x as pe,
+    Ay as z,
+    Cy as B,
+    Qx as V,
+    Xx as me,
+    Zx as he,
+    ky as H,
+    nS as U,
+    rS as W
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+import {
+    a as G,
+    r as K,
+    t as q
+} from "./832dbd3a-bk26djhng80afq3w.js";
+import {
+    n as ge,
+    o as J,
+    s as _e
+} from "./e1258b01-mthkgiytv33jieoc.js";
+import {
+    n as ve,
+    t as ye
+} from "./99a48954-kr1rwr2qdycogma7.js";
+import {
+    a as Y,
+    i as be,
+    n as xe,
+    o as Se,
+    r as Ce,
+    t as we
+} from "./16e34fcb-hdb1mgyvgkr28amc.js";
+import {
+    d as Te,
+    f as Ee,
+    g as De,
+    h as Oe,
+    m as ke,
+    p as Ae
+} from "./b7c53a83-kc5mir0urcdh48to.js";
+import {
+    a as je,
+    i as Me,
+    n as X,
+    o as Ne,
+    r as Pe,
+    t as Fe
+} from "./b00adf98-dhg4y8uf7undrd9q.js";
+import {
+    n as Ie,
+    t as Le
+} from "./f4ec23bf-b9of8rfqpvbzz6no.js";
+
+function Re(e) {
+    return e.stopPropagation()
+}
+
+function ze(e) {
+    return e.is_read_only
+}
+
+function Be(e) {
+    return !e.is_read_only
+}
+
+function Ve(e) {
+    return e.name
+}
+
+function He(e) {
+    return e.name
+}
+
+function Ue(e) {
+    return e.name
+}
+
+function We(e, t) {
+    return e.length > 0 && e.every(e => t.has(e))
+}
+
+function Ge(e) {
+    return !e
+}
+
+function Ke(e) {
+    return !e
+}
+
+function qe(e) {
+    return !e
+}
+
+function Je(e) {
+    return !e
+}
+
+function Ye(e) {
+    return e.name
+}
+
+function Xe(e) {
+    return e.is_enabled
+}
+
+function Ze(e) {
+    return e.name
+}
+
+function Qe(e) {
+    return e.is_enabled !== !1
+}
+
+function $e(e) {
+    return e.name
+}
+
+function et() {
+    return N({
+        fetchValidLinksOnly: !0,
+        productSku: ue.ADMIN_SETTING
+    })
+}
+
+function tt() {
+    return q()
+}
+
+function nt() {
+    return u()?.normalizedAccountUserId
+}
+
+function rt() {
+    return u()?.getWorkspaceId()
+}
+var it, Z, Q, at, ot, st, ct, lt, ut, dt, ft, pt, $, mt = e((() => {
+    it = S(), De(), ve(), V(), O(), o(), k(), P(), I(), L(), l(), ie(), d(), w(), M(), G(), T(), A(), U(), f(), a(), ae(), r(), x(), s(), Z = t(b()), y(), je(), ke(), Ee(), B(), _e(), Ce(), Le(), Q = oe(), at = new Set([`deleted`]), ot = `text-blue-500 dark:text-blue-400`, st = e => e.knowledgeConfig.some(e => e.connections.some(e => !at.has(e.connection_status))), ct = e => {
+        "use forget";
+        let t = (0, it.c)(6),
+            {
+                showActionDetails: n
+            } = e,
+            r = n === void 0 || n,
+            i;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, Q.jsx)(de, {
+            id: `action-toggle-skeleton`,
+            checked: !1,
+            disabled: !0
+        }), t[0] = i) : i = t[0];
+        let a;
+        t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Q.jsx)(`div`, {
+            className: `flex-1 space-y-0.5`,
+            children: (0, Q.jsx)(C, {})
+        }), t[1] = a) : a = t[1];
+        let o;
+        t[2] === r ? o = t[3] : (o = r && (0, Q.jsxs)(`div`, {
+            className: `border-token-border-default relative col-start-2 overflow-hidden rounded-xl border`,
+            children: [(0, Q.jsx)(`div`, {
+                className: `from-token-bg-tertiary/30 to-token-bg-tertiary absolute inset-0 z-10 h-full bg-gradient-to-b`,
+                "aria-hidden": `true`
+            }), (0, Q.jsx)(`pre`, {
+                className: `bg-token-bg-tertiary h-24 w-full overflow-hidden px-3 py-2`,
+                children: (0, Q.jsx)(C, {
+                    lines: 4,
+                    heightSize: `sm`,
+                    delay: .07
+                })
+            })]
+        }), t[2] = r, t[3] = o);
+        let s;
+        return t[4] === o ? s = t[5] : (s = (0, Q.jsxs)(`li`, {
+            className: `border-token-border-default grid cursor-wait grid-cols-[auto_1fr] gap-4 p-4`,
+            children: [i, a, o]
+        }), t[4] = o, t[5] = s), s
+    }, lt = e => {
+        "use forget";
+        let t = (0, it.c)(132),
+            {
+                action: n,
+                actionDelta: r,
+                prevAction: a,
+                isEnabled: o,
+                onToggle: s,
+                onOpenConstraints: c,
+                constraintsDisabled: l,
+                showActionDetails: te,
+                showActionTypeBadges: u,
+                showRowBorder: ne,
+                indented: d,
+                disabled: f
+            } = e,
+            p = l !== void 0 && l,
+            m = te === void 0 || te,
+            ie = u === void 0 || u,
+            ae = ne === void 0 || ne,
+            oe = d !== void 0 && d,
+            h = f !== void 0 && f,
+            g = ce(),
+            v;
+        if (t[0] !== n.name) {
+            let e;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = /[^a-zA-Z0-9_-]/g, t[2] = e) : e = t[2], v = n.name.replace(e, `-`), t[0] = n.name, t[1] = v
+        } else v = t[1];
+        let y = v,
+            b;
+        t[3] === n ? b = t[4] : (b = Me(n), t[3] = n, t[4] = b);
+        let se = `action-toggle-${y}-${b}`,
+            x, S, C, w, T, E, D, O, le, k, A, ue, j, M, N, P, fe;
+        if (t[5] !== n || t[6] !== p || t[7] !== h || t[8] !== oe || t[9] !== g || t[10] !== o || t[11] !== c || t[12] !== s || t[13] !== y || t[14] !== ie || t[15] !== ae || t[16] !== se) {
+            let e;
+            t[34] === ie ? e = t[35] : (e = e => ie || e !== `read` && e !== `write`, t[34] = ie, t[35] = e);
+            let r = he(n).filter(e),
+                a;
+            t[36] !== n || t[37] !== c ? (a = c !== void 0 && J(n), t[36] = n, t[37] = c, t[38] = a) : a = t[38], C = a;
+            let l = $.openActionPlaceholder,
+                te = h || p,
+                u;
+            t[39] !== p || t[40] !== g ? (u = p ? g.formatMessage($.constraintsDisabledBySync) : void 0, t[39] = p, t[40] = g, t[41] = u) : u = t[41], S = u;
+            let ne = `action-constraints-trigger-${y}`,
+                d;
+            t[42] === g ? d = t[43] : (d = g.formatMessage(l), t[42] = g, t[43] = d);
+            let re;
+            t[44] !== n || t[45] !== c ? (re = e => {
+                e.preventDefault(), e.stopPropagation(), c?.(n)
+            }, t[44] = n, t[45] = c, t[46] = re) : re = t[46];
+            let f = te && `cursor-not-allowed`,
+                m;
+            t[47] === f ? m = t[48] : (m = i(`text-token-text-tertiary hover:bg-token-bg-secondary hover:text-token-text-primary flex size-8 items-center justify-center rounded-md opacity-0 transition-colors group-hover:opacity-100 focus-visible:opacity-100`, f), t[47] = f, t[48] = m);
+            let _ = `action-constraints-icon-${y}`,
+                v;
+            t[49] === _ ? v = t[50] : (v = (0, Q.jsx)(ee.SettingsWrench, {
+                className: `h-4 w-4`,
+                "data-testid": _,
+                "aria-hidden": !0
+            }), t[49] = _, t[50] = v);
+            let b;
+            t[51] !== te || t[52] !== d || t[53] !== re || t[54] !== m || t[55] !== v ? (b = (0, Q.jsx)(`button`, {
+                type: `button`,
+                "aria-label": d,
+                onClick: re,
+                disabled: te,
+                className: m,
+                children: v
+            }), t[51] = te, t[52] = d, t[53] = re, t[54] = m, t[55] = v, t[56] = b) : b = t[56];
+            let ce;
+            t[57] !== ne || t[58] !== b ? (ce = (0, Q.jsx)(`span`, {
+                "data-action-constraints-trigger": !0,
+                "data-testid": ne,
+                className: `action-constraints-trigger flex self-center`,
+                children: b
+            }), t[57] = ne, t[58] = b, t[59] = ce) : ce = t[59], x = ce;
+            let F;
+            t[60] !== n.name || t[61] !== h || t[62] !== o || t[63] !== s ? (F = e => {
+                if (h) return;
+                let t = e.target;
+                t instanceof Element && t.closest(`label, button, a, input, select, textarea, [role='checkbox'], [data-action-constraints-trigger], .action-constraints-trigger, .action-details`) || s(n.name, !o)
+            }, t[60] = n.name, t[61] = h, t[62] = o, t[63] = s, t[64] = F) : F = t[64];
+            let I = F,
+                L = oe && `ps-7`,
+                R = !h && `hover:bg-token-bg-tertiary`;
+            t[65] !== L || t[66] !== R ? (P = i(`group`, L, R), t[65] = L, t[66] = R, t[67] = P) : P = t[67];
+            let z = ae && `border-token-border-default border-b group-last:border-0`,
+                B = h ? `cursor-not-allowed` : `cursor-default`;
+            t[68] !== z || t[69] !== B ? (N = i([`px-2 py-1`, z, B]), t[68] = z, t[69] = B, t[70] = N) : N = t[70], ue = `action-toggle-row-${y}`, j = I;
+            let V = !h && `cursor-pointer`;
+            t[71] === V ? M = t[72] : (M = i(`grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4 px-2 py-1.5`, V), t[71] = V, t[72] = M), O = se, le = `contents cursor-pointer`, k = Re;
+            let H;
+            t[73] !== n.name || t[74] !== s ? (H = e => s(n.name, e.target.checked), t[73] = n.name, t[74] = s, t[75] = H) : H = t[75], t[76] !== h || t[77] !== o || t[78] !== H || t[79] !== se ? (A = (0, Q.jsx)(de, {
+                id: se,
+                checked: o,
+                onChange: H,
+                disabled: h
+            }), t[76] = h, t[77] = o, t[78] = H, t[79] = se, t[80] = A) : A = t[80], D = `min-w-0`, T = `flex min-w-0 flex-wrap items-center gap-2`;
+            let U = h && `text-token-text-secondary`,
+                W;
+            t[81] === U ? W = t[82] : (W = i([`font-mono text-sm font-medium`, U]), t[81] = U, t[82] = W), t[83] !== n.name || t[84] !== W ? (E = (0, Q.jsx)(`div`, {
+                className: W,
+                children: n.name
+            }), t[83] = n.name, t[84] = W, t[85] = E) : E = t[85], fe = `flex items-center gap-1 select-none`, w = pe({
+                badgeKeys: r,
+                labels: me
+            }), t[5] = n, t[6] = p, t[7] = h, t[8] = oe, t[9] = g, t[10] = o, t[11] = c, t[12] = s, t[13] = y, t[14] = ie, t[15] = ae, t[16] = se, t[17] = x, t[18] = S, t[19] = C, t[20] = w, t[21] = T, t[22] = E, t[23] = D, t[24] = O, t[25] = le, t[26] = k, t[27] = A, t[28] = ue, t[29] = j, t[30] = M, t[31] = N, t[32] = P, t[33] = fe
+        } else x = t[17], S = t[18], C = t[19], w = t[20], T = t[21], E = t[22], D = t[23], O = t[24], le = t[25], k = t[26], A = t[27], ue = t[28], j = t[29], M = t[30], N = t[31], P = t[32], fe = t[33];
+        let F;
+        t[86] === r ? F = t[87] : (F = (0, Q.jsx)(X, {
+            delta: r
+        }), t[86] = r, t[87] = F);
+        let I;
+        t[88] !== w || t[89] !== F || t[90] !== fe ? (I = (0, Q.jsxs)(`div`, {
+            className: fe,
+            children: [w, F]
+        }), t[88] = w, t[89] = F, t[90] = fe, t[91] = I) : I = t[91];
+        let L;
+        t[92] !== T || t[93] !== E || t[94] !== I ? (L = (0, Q.jsxs)(`div`, {
+            className: T,
+            children: [E, I]
+        }), t[92] = T, t[93] = E, t[94] = I, t[95] = L) : L = t[95];
+        let R;
+        t[96] === n.description ? R = t[97] : (R = n.description ? n.description : (0, Q.jsx)(_, {
+            ...$.noDescription
+        }), t[96] = n.description, t[97] = R);
+        let z;
+        t[98] === R ? z = t[99] : (z = (0, Q.jsx)(`div`, {
+            className: `text-token-text-tertiary line-clamp-2 text-xs leading-5 wrap-anywhere`,
+            children: R
+        }), t[98] = R, t[99] = z);
+        let B;
+        t[100] !== D || t[101] !== L || t[102] !== z ? (B = (0, Q.jsxs)(`div`, {
+            className: D,
+            children: [L, z]
+        }), t[100] = D, t[101] = L, t[102] = z, t[103] = B) : B = t[103];
+        let V;
+        t[104] !== O || t[105] !== le || t[106] !== k || t[107] !== A || t[108] !== B ? (V = (0, Q.jsxs)(`label`, {
+            htmlFor: O,
+            className: le,
+            onClick: k,
+            children: [A, B]
+        }), t[104] = O, t[105] = le, t[106] = k, t[107] = A, t[108] = B, t[109] = V) : V = t[109];
+        let H;
+        t[110] !== x || t[111] !== S || t[112] !== C ? (H = C && (S ? (0, Q.jsx)(re, {
+            label: S,
+            className: `action-constraints-trigger self-center`,
+            children: x
+        }) : x), t[110] = x, t[111] = S, t[112] = C, t[113] = H) : H = t[113];
+        let U;
+        t[114] !== n || t[115] !== r || t[116] !== a || t[117] !== m ? (U = m && (0, Q.jsx)(`div`, {
+            className: `col-start-2 col-end-4 min-w-0`,
+            children: (0, Q.jsx)(Pe, {
+                action: n,
+                actionDelta: r,
+                prevAction: a,
+                initiallyCollapsed: !0
+            })
+        }), t[114] = n, t[115] = r, t[116] = a, t[117] = m, t[118] = U) : U = t[118];
+        let W;
+        t[119] !== ue || t[120] !== j || t[121] !== M || t[122] !== V || t[123] !== H || t[124] !== U ? (W = (0, Q.jsxs)(`div`, {
+            "data-testid": ue,
+            onPointerUp: j,
+            className: M,
+            children: [V, H, U]
+        }), t[119] = ue, t[120] = j, t[121] = M, t[122] = V, t[123] = H, t[124] = U, t[125] = W) : W = t[125];
+        let G;
+        t[126] !== N || t[127] !== W ? (G = (0, Q.jsx)(`div`, {
+            className: N,
+            children: W
+        }), t[126] = N, t[127] = W, t[128] = G) : G = t[128];
+        let K;
+        return t[129] !== P || t[130] !== G ? (K = (0, Q.jsx)(`li`, {
+            className: P,
+            children: G
+        }), t[129] = P, t[130] = G, t[131] = K) : K = t[131], K
+    }, ut = e => {
+        "use forget";
+        let t = (0, it.c)(160),
+            {
+                app: n,
+                actions: r,
+                prevActions: a,
+                deltas: o,
+                initialEnabledActions: s,
+                initialCustomNewActionPolicy: c,
+                onRefreshActions: ee,
+                refreshingActions: l,
+                onSubmit: te,
+                submitting: u,
+                onCancel: ne,
+                refreshHidden: d,
+                onOpenConstraints: f,
+                constraintsDisabled: p,
+                confirmDisabled: ie,
+                showScrollDividers: ae,
+                onScrollabilityChange: oe
+            } = e,
+            h = d !== void 0 && d,
+            g = p !== void 0 && p,
+            v = ie !== void 0 && ie,
+            y = ae !== void 0 && ae,
+            b = ce(),
+            se = (0, Z.useRef)(null),
+            [x, S] = (0, Z.useState)(s),
+            [C, w] = (0, Z.useState)(c),
+            [T, E] = (0, Z.useState)(!1),
+            [D, O] = (0, Z.useState)(!1),
+            le = (0, Z.useId)(),
+            k = (0, Z.useId)(),
+            A = (0, Z.useId)(),
+            ue = (0, Z.useId)(),
+            j, M;
+        t[0] === s ? (j = t[1], M = t[2]) : (j = () => {
+            S(new Set(s))
+        }, M = [s], t[0] = s, t[1] = j, t[2] = M), (0, Z.useEffect)(j, M);
+        let N, P;
+        t[3] === c ? (N = t[4], P = t[5]) : (N = () => {
+            w(c)
+        }, P = [c], t[3] = c, t[4] = N, t[5] = P), (0, Z.useEffect)(N, P);
+        let I;
+        t[6] === n ? I = t[7] : (I = st(n), t[6] = n, t[7] = I);
+        let L = I,
+            pe;
+        if (t[8] !== r || t[9] !== o) {
+            let e;
+            t[11] === o ? e = t[12] : (e = (e, t) => (o.get(e.name) ?? Fe.Unmodified) - (o.get(t.name) ?? Fe.Unmodified) || e.name.localeCompare(t.name), t[11] = o, t[12] = e), pe = [...r].sort(e), t[8] = r, t[9] = o, t[10] = pe
+        } else pe = t[10];
+        let z = pe,
+            B;
+        t[13] === z ? B = t[14] : (B = z.filter(ze), t[13] = z, t[14] = B);
+        let V = B,
+            me;
+        t[15] === z ? me = t[16] : (me = z.filter(Be), t[15] = z, t[16] = me);
+        let he = me,
+            H;
+        t[17] === r ? H = t[18] : (H = r.map(Ve), t[17] = r, t[18] = H);
+        let U = H,
+            W;
+        t[19] !== U || t[20] !== n.primaryConnector.id || t[21] !== x || t[22] !== s ? (W = Ae({
+            connectorId: n.primaryConnector.id,
+            adminConfigurableActionNames: U,
+            initialEnabledActionNames: s,
+            nextEnabledActionNames: x
+        }), t[19] = U, t[20] = n.primaryConnector.id, t[21] = x, t[22] = s, t[23] = W) : W = t[23];
+        let G = W,
+            K;
+        t[24] === V ? K = t[25] : (K = V.map(He), t[24] = V, t[25] = K);
+        let q = K,
+            ge;
+        t[26] === he ? ge = t[27] : (ge = he.map(Ue), t[26] = he, t[27] = ge);
+        let J = ge,
+            _e;
+        t[28] !== U || t[29] !== x ? (_e = U.length > 0 && U.every(e => x.has(e)), t[28] = U, t[29] = x, t[30] = _e) : _e = t[30];
+        let ve = _e,
+            ye;
+        t[31] !== x || t[32] !== q ? (ye = q.length > 0 && q.every(e => x.has(e)), t[31] = x, t[32] = q, t[33] = ye) : ye = t[33];
+        let Y = ye,
+            be;
+        t[34] !== x || t[35] !== J ? (be = J.length > 0 && J.every(e => x.has(e)), t[34] = x, t[35] = J, t[36] = be) : be = t[36];
+        let Se = be,
+            Ce;
+        if (t[37] !== x || t[38] !== q) {
+            let e;
+            t[40] === x ? e = t[41] : (e = e => x.has(e), t[40] = x, t[41] = e), Ce = q.filter(e), t[37] = x, t[38] = q, t[39] = Ce
+        } else Ce = t[39];
+        let we = Ce.length,
+            Ee;
+        if (t[42] !== x || t[43] !== J) {
+            let e;
+            t[45] === x ? e = t[46] : (e = e => x.has(e), t[45] = x, t[46] = e), Ee = J.filter(e), t[42] = x, t[43] = J, t[44] = Ee
+        } else Ee = t[44];
+        let De = Ee.length,
+            Oe;
+        t[47] !== Y || t[48] !== x || t[49] !== q ? (Oe = !Y && q.some(e => x.has(e)), t[47] = Y, t[48] = x, t[49] = q, t[50] = Oe) : Oe = t[50];
+        let ke = Oe,
+            je;
+        t[51] !== Se || t[52] !== x || t[53] !== J ? (je = !Se && J.some(e => x.has(e)), t[51] = Se, t[52] = x, t[53] = J, t[54] = je) : je = t[54];
+        let Me = je,
+            X = !!l || u,
+            Ne = We,
+            Pe;
+        t[55] !== U || t[56] !== ve || t[57] !== Y || t[58] !== x || t[59] !== q ? (Pe = (e, t) => {
+            let n = new Set(x);
+            for (let r of e) t ? n.add(r) : n.delete(r);
+            let r = Ne(U, n),
+                i = Ne(q, n);
+            S(n), t && w(e => !ve && r ? `custom_new_all` : !Y && i && e !== `custom_new_all` ? `custom_new_read_only` : e)
+        }, t[55] = U, t[56] = ve, t[57] = Y, t[58] = x, t[59] = q, t[60] = Pe) : Pe = t[60];
+        let Ie = Pe,
+            Le;
+        t[61] !== q || t[62] !== Ie ? (Le = e => {
+            Ie(q, e)
+        }, t[61] = q, t[62] = Ie, t[63] = Le) : Le = t[63];
+        let Re = Le,
+            Ye;
+        t[64] === oe ? Ye = t[65] : (Ye = () => {
+            let e = se.current;
+            oe?.(e ? e.scrollHeight > e.clientHeight + 1 : !1)
+        }, t[64] = oe, t[65] = Ye);
+        let Xe = Ye,
+            Ze, Qe;
+        t[66] === Xe ? (Ze = t[67], Qe = t[68]) : (Ze = () => {
+            Xe();
+            let e = se.current;
+            if (!e) return;
+            window.addEventListener(`resize`, Xe);
+            let t;
+            return typeof ResizeObserver < `u` && (t = new ResizeObserver(Xe), t.observe(e)), () => {
+                window.removeEventListener(`resize`, Xe), t?.disconnect()
+            }
+        }, Qe = [Xe], t[66] = Xe, t[67] = Ze, t[68] = Qe), (0, Z.useEffect)(Ze, Qe);
+        let $e;
+        t[69] === Xe ? $e = t[70] : ($e = () => {
+            let e = window.requestAnimationFrame(Xe);
+            return () => window.cancelAnimationFrame(e)
+        }, t[69] = Xe, t[70] = $e);
+        let et;
+        t[71] !== r.length || t[72] !== g || t[73] !== T || t[74] !== l || t[75] !== u || t[76] !== Xe || t[77] !== D ? (et = [r.length, g, T, l, u, Xe, D], t[71] = r.length, t[72] = g, t[73] = T, t[74] = l, t[75] = u, t[76] = Xe, t[77] = D, t[78] = et) : et = t[78], (0, Z.useEffect)($e, et);
+        let tt;
+        t[79] === Symbol.for(`react.memo_cache_sentinel`) ? (tt = [
+            [`custom_new_all`, $.unconfiguredActionsToggleLabel],
+            [`custom_new_read_only`, $.unconfiguredReadActionsToggleLabel],
+            [`custom`, $.unconfiguredNoActionsToggleLabel]
+        ], t[79] = tt) : tt = t[79];
+        let nt = tt,
+            rt;
+        t[80] !== b || t[81] !== ee || t[82] !== h || t[83] !== l || t[84] !== u ? (rt = h ? null : (0, Q.jsx)(re, {
+            label: ee ? void 0 : b.formatMessage($.needLink),
+            children: (0, Q.jsx)(m, {
+                size: `small`,
+                color: `secondary`,
+                loading: l,
+                disabled: !ee || u,
+                onClick: () => ee?.(),
+                children: (0, Q.jsx)(_, {
+                    ...$.refreshLabel
+                })
+            })
+        }), t[80] = b, t[81] = ee, t[82] = h, t[83] = l, t[84] = u, t[85] = rt) : rt = t[85];
+        let at = rt,
+            ct;
+        t[86] === n.primaryConnector.name ? ct = t[87] : (ct = (0, Q.jsx)(`p`, {
+            className: `text-token-text-secondary flex-1 pb-0 text-sm leading-5`,
+            children: (0, Q.jsx)(_, {
+                ...$.policyActionsDescription,
+                values: {
+                    app: n.primaryConnector.name
+                }
+            })
+        }), t[86] = n.primaryConnector.name, t[87] = ct);
+        let ut;
+        t[88] !== at || t[89] !== ct ? (ut = (0, Q.jsxs)(`div`, {
+            className: `flex items-start justify-between gap-3`,
+            children: [ct, at]
+        }), t[88] = at, t[89] = ct, t[90] = ut) : ut = t[90];
+        let dt;
+        t[91] === g ? dt = t[92] : (dt = g && (0, Q.jsx)(`div`, {
+            className: `border-token-border-default bg-token-bg-tertiary text-token-text-secondary rounded-lg border px-3 py-2 text-xs`,
+            children: (0, Q.jsx)(_, {
+                ...$.constraintsDisabledBySync
+            })
+        }), t[91] = g, t[92] = dt);
+        let ft;
+        t[93] !== n.primaryConnector.name || t[94] !== G || t[95] !== Ie ? (ft = G.length > 0 && (0, Q.jsx)(Te, {
+            appName: n.primaryConnector.name,
+            onUndo: () => Ie([...G], !0)
+        }), t[93] = n.primaryConnector.name, t[94] = G, t[95] = Ie, t[96] = ft) : ft = t[96];
+        let pt;
+        t[97] !== r.length || t[98] !== Y || t[99] !== Se || t[100] !== g || t[101] !== o || t[102] !== X || t[103] !== Re || t[104] !== x || t[105] !== we || t[106] !== De || t[107] !== b || t[108] !== L || t[109] !== f || t[110] !== a || t[111] !== V || t[112] !== T || t[113] !== ke || t[114] !== le || t[115] !== Ie || t[116] !== J || t[117] !== he || t[118] !== D || t[119] !== Me || t[120] !== k ? (pt = r.length === 0 ? (0, Q.jsx)(`p`, {
+            className: `text-token-text-tertiary m-4 text-center text-xs italic`,
+            children: (0, Q.jsx)(_, {
+                ...$.noActionsLabel
+            })
+        }) : (0, Q.jsx)(Q.Fragment, {
+            children: (0, Q.jsxs)(`div`, {
+                className: `space-y-3`,
+                children: [(0, Q.jsxs)(`div`, {
+                    className: `border-token-border-default overflow-hidden rounded-lg border`,
+                    children: [V.length > 0 && (0, Q.jsxs)(`div`, {
+                        children: [(0, Q.jsxs)(`div`, {
+                            "data-testid": `action-set-row-read`,
+                            onPointerUp: e => {
+                                if (X) return;
+                                let t = e.target;
+                                t instanceof HTMLElement && t.closest(`label, button, input`) || E(Ge)
+                            },
+                            className: i(`flex items-center justify-between gap-3 px-4 py-3 transition-colors`, X ? `cursor-not-allowed` : `hover:bg-token-bg-tertiary cursor-pointer`),
+                            children: [(0, Q.jsxs)(`label`, {
+                                htmlFor: `action-toggle-all-read-actions`,
+                                className: i(`flex min-w-0 items-center gap-3`, X ? `cursor-not-allowed opacity-60` : `cursor-pointer`),
+                                children: [(0, Q.jsx)(de, {
+                                    id: `action-toggle-all-read-actions`,
+                                    checked: Y,
+                                    indeterminate: ke,
+                                    onChange: e => Re(e.target.checked),
+                                    disabled: X
+                                }), (0, Q.jsxs)(`span`, {
+                                    className: `inline-flex min-w-0 items-baseline gap-2 leading-6`,
+                                    children: [(0, Q.jsx)(`span`, {
+                                        className: `truncate`,
+                                        children: (0, Q.jsx)(_, {
+                                            ...$.readActionsSectionLabel
+                                        })
+                                    }), !Y && (0, Q.jsx)(`span`, {
+                                        className: `text-token-text-tertiary inline-flex text-sm leading-none`,
+                                        children: (0, Q.jsx)(_, {
+                                            ...$.enabledActionsCountLabel,
+                                            values: {
+                                                enabledCount: we,
+                                                totalCount: V.length
+                                            }
+                                        })
+                                    })]
+                                })]
+                            }), (0, Q.jsx)(`button`, {
+                                type: `button`,
+                                className: `text-token-text-secondary hover:bg-token-bg-secondary hover:text-token-text-primary flex size-8 shrink-0 items-center justify-center rounded-md transition-colors disabled:opacity-50`,
+                                "aria-label": b.formatMessage(T ? $.hideActionDetailsLabel : $.viewActionDetailsLabel),
+                                "aria-expanded": T,
+                                "aria-controls": le,
+                                onClick: () => E(Ke),
+                                disabled: X,
+                                children: T ? (0, Q.jsx)(fe, {
+                                    className: `h-4 w-4`,
+                                    "aria-hidden": !0
+                                }) : (0, Q.jsx)(R, {
+                                    className: `h-4 w-4`,
+                                    "aria-hidden": !0
+                                })
+                            })]
+                        }), T && (0, Q.jsx)(`ul`, {
+                            id: le,
+                            className: `p-0`,
+                            children: V.map(e => (0, Q.jsx)(lt, {
+                                action: e,
+                                actionDelta: o.get(e.name),
+                                prevAction: a?.get(e.name)?.action,
+                                isEnabled: x.has(e.name),
+                                onToggle: (e, t) => Ie([e], t),
+                                disabled: X,
+                                onOpenConstraints: f,
+                                constraintsDisabled: g,
+                                showActionDetails: !1,
+                                showActionTypeBadges: !1,
+                                showRowBorder: !1,
+                                indented: !0
+                            }, e.name))
+                        })]
+                    }), he.length > 0 && (0, Q.jsxs)(`div`, {
+                        className: i(V.length > 0 && `border-token-border-default border-t`),
+                        children: [(0, Q.jsxs)(`div`, {
+                            "data-testid": `action-set-row-write`,
+                            onPointerUp: e => {
+                                if (X) return;
+                                let t = e.target;
+                                t instanceof HTMLElement && t.closest(`label, button, input`) || O(qe)
+                            },
+                            className: i(`flex items-center justify-between gap-3 px-4 py-3 transition-colors`, X ? `cursor-not-allowed` : `hover:bg-token-bg-tertiary cursor-pointer`),
+                            children: [(0, Q.jsxs)(`label`, {
+                                htmlFor: `action-toggle-all-write-actions`,
+                                className: i(`flex min-w-0 items-center gap-3`, X ? `cursor-not-allowed opacity-60` : `cursor-pointer`),
+                                children: [(0, Q.jsx)(de, {
+                                    id: `action-toggle-all-write-actions`,
+                                    checked: Se,
+                                    indeterminate: Me,
+                                    onChange: e => Ie(J, e.target.checked),
+                                    disabled: X
+                                }), (0, Q.jsxs)(`span`, {
+                                    className: `inline-flex min-w-0 items-baseline gap-2 leading-6`,
+                                    children: [(0, Q.jsx)(`span`, {
+                                        className: `truncate`,
+                                        children: (0, Q.jsx)(_, {
+                                            ...$.writeActionsSectionLabel
+                                        })
+                                    }), !Se && (0, Q.jsx)(`span`, {
+                                        className: `text-token-text-tertiary inline-flex text-sm leading-none`,
+                                        children: (0, Q.jsx)(_, {
+                                            ...$.enabledActionsCountLabel,
+                                            values: {
+                                                enabledCount: De,
+                                                totalCount: he.length
+                                            }
+                                        })
+                                    })]
+                                })]
+                            }), (0, Q.jsx)(`button`, {
+                                type: `button`,
+                                className: `text-token-text-secondary hover:bg-token-bg-secondary hover:text-token-text-primary flex size-8 shrink-0 items-center justify-center rounded-md transition-colors disabled:opacity-50`,
+                                "aria-label": b.formatMessage(D ? $.hideActionDetailsLabel : $.viewActionDetailsLabel),
+                                "aria-expanded": D,
+                                "aria-controls": k,
+                                onClick: () => O(Je),
+                                disabled: X,
+                                children: D ? (0, Q.jsx)(fe, {
+                                    className: `h-4 w-4`,
+                                    "aria-hidden": !0
+                                }) : (0, Q.jsx)(R, {
+                                    className: `h-4 w-4`,
+                                    "aria-hidden": !0
+                                })
+                            })]
+                        }), D && (0, Q.jsx)(`ul`, {
+                            id: k,
+                            className: `p-0`,
+                            children: he.map(e => (0, Q.jsx)(lt, {
+                                action: e,
+                                actionDelta: o.get(e.name),
+                                prevAction: a?.get(e.name)?.action,
+                                isEnabled: x.has(e.name),
+                                onToggle: (e, t) => Ie([e], t),
+                                disabled: X,
+                                onOpenConstraints: f,
+                                constraintsDisabled: g,
+                                showActionDetails: !1,
+                                showActionTypeBadges: !1,
+                                showRowBorder: !1,
+                                indented: !0
+                            }, e.name))
+                        })]
+                    })]
+                }), L && f && (0, Q.jsx)(`div`, {
+                    className: `mt-2 space-y-2`,
+                    children: (0, Q.jsxs)(`div`, {
+                        className: `bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-lg px-4 py-3 text-sm leading-6`,
+                        children: [(0, Q.jsx)(F, {
+                            className: `h-4 w-4 shrink-0`
+                        }), (0, Q.jsx)(`span`, {
+                            children: (0, Q.jsx)(_, {
+                                ...$.syncEnabledConstraintsNotice
+                            })
+                        })]
+                    })
+                })]
+            })
+        }), t[97] = r.length, t[98] = Y, t[99] = Se, t[100] = g, t[101] = o, t[102] = X, t[103] = Re, t[104] = x, t[105] = we, t[106] = De, t[107] = b, t[108] = L, t[109] = f, t[110] = a, t[111] = V, t[112] = T, t[113] = ke, t[114] = le, t[115] = Ie, t[116] = J, t[117] = he, t[118] = D, t[119] = Me, t[120] = k, t[121] = pt) : pt = t[121];
+        let mt;
+        t[122] !== ut || t[123] !== dt || t[124] !== ft || t[125] !== pt ? (mt = (0, Q.jsxs)(`div`, {
+            ref: se,
+            className: `min-h-0 flex-1 space-y-3 overflow-y-auto px-6 pt-2 pb-3`,
+            children: [ut, dt, ft, pt]
+        }), t[122] = ut, t[123] = dt, t[124] = ft, t[125] = pt, t[126] = mt) : mt = t[126];
+        let ht;
+        t[127] !== r.length || t[128] !== n.primaryConnector.name || t[129] !== C || t[130] !== X || t[131] !== y || t[132] !== ue || t[133] !== A ? (ht = r.length > 0 && (0, Q.jsxs)(`div`, {
+            className: i(`shrink-0 space-y-3 px-6 pt-1 pb-6`, y && `border-token-border-default border-t pt-4`),
+            children: [(0, Q.jsx)(`div`, {
+                id: A,
+                className: `text-token-text-secondary text-sm leading-5`,
+                children: (0, Q.jsx)(_, {
+                    ...$.unconfiguredActionsDescription,
+                    values: {
+                        app: n.primaryConnector.name
+                    }
+                })
+            }), (0, Q.jsx)(`div`, {
+                role: `radiogroup`,
+                "aria-labelledby": A,
+                className: `text-token-text-secondary flex flex-col items-start gap-3 text-sm`,
+                children: nt.map(e => {
+                    let [t, n] = e;
+                    return (0, Q.jsxs)(`label`, {
+                        className: `flex cursor-pointer items-center gap-2`,
+                        children: [(0, Q.jsx)(`input`, {
+                            type: `radio`,
+                            name: ue,
+                            value: t,
+                            className: ot,
+                            checked: C === t,
+                            onChange: () => w(t),
+                            disabled: X
+                        }), (0, Q.jsx)(`span`, {
+                            children: (0, Q.jsx)(_, {
+                                ...n
+                            })
+                        })]
+                    }, t)
+                })
+            })]
+        }), t[127] = r.length, t[128] = n.primaryConnector.name, t[129] = C, t[130] = X, t[131] = y, t[132] = ue, t[133] = A, t[134] = ht) : ht = t[134];
+        let gt = y && r.length === 0 && `border-token-border-default border-t pt-4`,
+            _t;
+        t[135] === gt ? _t = t[136] : (_t = i(`flex shrink-0 justify-end gap-2 px-6 pt-0 pb-6`, gt), t[135] = gt, t[136] = _t);
+        let vt;
+        t[137] === Symbol.for(`react.memo_cache_sentinel`) ? (vt = (0, Q.jsx)(_, {
+            id: `59bwQY`,
+            defaultMessage: `Cancel`
+        }), t[137] = vt) : vt = t[137];
+        let yt;
+        t[138] !== X || t[139] !== ne ? (yt = (0, Q.jsx)(m, {
+            color: `secondary`,
+            onClick: ne,
+            disabled: X,
+            children: vt
+        }), t[138] = X, t[139] = ne, t[140] = yt) : yt = t[140];
+        let bt;
+        t[141] !== U || t[142] !== C || t[143] !== x || t[144] !== te || t[145] !== q ? (bt = () => te({
+            enabledActions: Array.from(x),
+            actionPolicy: xe({
+                actionIds: U,
+                readOnlyActionIds: q,
+                enabledActions: x,
+                customNewActionPolicy: C
+            })
+        }), t[141] = U, t[142] = C, t[143] = x, t[144] = te, t[145] = q, t[146] = bt) : bt = t[146];
+        let xt = X || v,
+            St;
+        t[147] === Symbol.for(`react.memo_cache_sentinel`) ? (St = (0, Q.jsx)(_, {
+            ...$.confirmLabel
+        }), t[147] = St) : St = t[147];
+        let Ct;
+        t[148] !== u || t[149] !== bt || t[150] !== xt ? (Ct = (0, Q.jsx)(m, {
+            onClick: bt,
+            loading: u,
+            disabled: xt,
+            children: St
+        }), t[148] = u, t[149] = bt, t[150] = xt, t[151] = Ct) : Ct = t[151];
+        let wt;
+        t[152] !== _t || t[153] !== yt || t[154] !== Ct ? (wt = (0, Q.jsxs)(`div`, {
+            className: _t,
+            children: [yt, Ct]
+        }), t[152] = _t, t[153] = yt, t[154] = Ct, t[155] = wt) : wt = t[155];
+        let Tt;
+        return t[156] !== mt || t[157] !== ht || t[158] !== wt ? (Tt = (0, Q.jsxs)(Q.Fragment, {
+            children: [mt, ht, wt]
+        }), t[156] = mt, t[157] = ht, t[158] = wt, t[159] = Tt) : Tt = t[159], Tt
+    }, dt = e => {
+        "use forget";
+        let t = (0, it.c)(75),
+            {
+                app: r,
+                onClose: i,
+                onCancel: a,
+                onConfirm: o,
+                initialEnabledActions: s,
+                initialActionPolicy: ee,
+                initialActionPolicyLoading: l,
+                showOverlayBackground: u,
+                submitting: d,
+                showParameterConstraints: re
+            } = e,
+            f = ee === void 0 ? null : ee,
+            p = l !== void 0 && l,
+            m = u === void 0 || u,
+            ie = d !== void 0 && d,
+            ae = re === void 0 || re,
+            oe = ce(),
+            h = g(),
+            [v, y] = (0, Z.useState)(null),
+            [b, x] = (0, Z.useState)(!1),
+            S = (0, Z.useRef)(!1),
+            C;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (C = {
+            forceEnable: !0
+        }, t[0] = C) : C = t[0];
+        let {
+            actions: w,
+            isLoading: T,
+            refetch: O
+        } = E(r.primaryConnector, ue.ADMIN_SETTING, C), k;
+        t[1] === w ? k = t[2] : (k = w.filter(be), t[1] = w, t[2] = k);
+        let A = k,
+            de;
+        bb0: {
+            if (s) {
+                let e;
+                t[3] === A ? e = t[4] : (e = new Set(A.map(Ye)), t[3] = A, t[4] = e);
+                let n = e,
+                    r;
+                t[5] === s ? r = t[6] : (r = Array.from(s), t[5] = s, t[6] = r);
+                let i;
+                t[7] !== r || t[8] !== n ? (i = new Set(r.filter(e => n.has(e))), t[7] = r, t[8] = n, t[9] = i) : i = t[9], de = i;
+                break bb0
+            }
+            let e;t[10] === A ? e = t[11] : (e = new Set(A.filter(Xe).map(Ze)), t[10] = A, t[11] = e),
+            de = e
+        }
+        let M = de,
+            [N, P] = (0, Z.useState)(we),
+            fe, F;
+        t[12] !== T || t[13] !== f || t[14] !== p ? (F = () => {
+            S.current || T || p || (P(Se(f)), S.current = !0)
+        }, fe = [T, f, p], t[12] = T, t[13] = f, t[14] = p, t[15] = fe, t[16] = F) : (fe = t[15], F = t[16]), (0, Z.useEffect)(F, fe);
+        let I;
+        if (t[17] !== A) {
+            I = new Map;
+            for (let e of A) I.set(e.name, {
+                action: e,
+                hash: Me(e)
+            });
+            t[17] = A, t[18] = I
+        } else I = t[18];
+        let L = I,
+            [R, pe] = (0, Z.useState)(null),
+            z = Ne(L, R),
+            B;
+        t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (B = c()?.getWorkspaceId(), t[19] = B) : B = t[19];
+        let V = B,
+            me = D(),
+            he = H(),
+            U = (0, Z.useRef)(!1),
+            G;
+        t[20] !== r || t[21] !== ae ? (G = ge({
+            app: r,
+            showParameterConstraints: ae
+        }), t[20] = r, t[21] = ae, t[22] = G) : G = t[22];
+        let K = G,
+            q, J;
+        t[23] !== T || t[24] !== r.primaryConnector.actions_changed_since_review || t[25] !== r.primaryConnector.id || t[26] !== he || t[27] !== me || t[28] !== A ? (q = () => {
+            if (U.current || !V || !r.primaryConnector.actions_changed_since_review || T) return;
+            U.current = !0;
+            let e = A.filter(Qe).map($e);
+            (async () => {
+                await le(r.primaryConnector.id, V, e), me(), he(r.primaryConnector.id)
+            })()
+        }, J = [T, r.primaryConnector.actions_changed_since_review, r.primaryConnector.id, he, me, A, V], t[23] = T, t[24] = r.primaryConnector.actions_changed_since_review, t[25] = r.primaryConnector.id, t[26] = he, t[27] = me, t[28] = A, t[29] = q, t[30] = J) : (q = t[29], J = t[30]), (0, Z.useEffect)(q, J);
+        let _e;
+        t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (_e = te(), t[31] = _e) : _e = t[31];
+        let ve = _e,
+            ye;
+        t[32] !== L || t[33] !== R || t[34] !== O ? (ye = async e => {
+            R || pe(L), await j(e), await O()
+        }, t[32] = L, t[33] = R, t[34] = O, t[35] = ye) : ye = t[35];
+        let Y;
+        t[36] !== r.primaryConnector.id || t[37] !== h ? (Y = () => {
+            h.invalidateQueries({
+                queryKey: [`connector-action-clamp`, r.primaryConnector.id]
+            })
+        }, t[36] = r.primaryConnector.id, t[37] = h, t[38] = Y) : Y = t[38];
+        let xe;
+        t[39] === Symbol.for(`react.memo_cache_sentinel`) ? (xe = e => {
+            ve.danger($.refreshActionsError, {
+                error: e
+            })
+        }, t[39] = xe) : xe = t[39];
+        let Ce;
+        t[40] !== ye || t[41] !== Y ? (Ce = {
+            mutationFn: ye,
+            onSuccess: Y,
+            onError: xe
+        }, t[40] = ye, t[41] = Y, t[42] = Ce) : Ce = t[42];
+        let Te = se(Ce),
+            {
+                data: Ee
+            } = n(et),
+            De = Ie(Ee, r.primaryConnector.id),
+            Oe = W(r.primaryConnector),
+            ke;
+        t[43] === oe ? ke = t[44] : (ke = oe.formatMessage($.actionsControlModalTitle), t[43] = oe, t[44] = ke);
+        let Ae;
+        t[45] !== z || t[46] !== T || t[47] !== r || t[48] !== K || t[49] !== M || t[50] !== p || t[51] !== Oe || t[52] !== De || t[53] !== a || t[54] !== o || t[55] !== b || t[56] !== R || t[57] !== Te || t[58] !== N || t[59] !== ie || t[60] !== A ? (Ae = T && !Te.isPending ? (0, Q.jsxs)(`div`, {
+            className: `space-y-4 overflow-y-auto px-6 pt-2 pb-6`,
+            children: [(0, Q.jsx)(`p`, {
+                className: `text-token-text-secondary pb-0 text-sm leading-5`,
+                children: (0, Q.jsx)(_, {
+                    ...$.policyActionsDescription,
+                    values: {
+                        app: r.primaryConnector.name
+                    }
+                })
+            }), (0, Q.jsx)(`ul`, {
+                className: `border-token-border-default rounded-2xl border`,
+                children: (0, Q.jsx)(ct, {
+                    showActionDetails: !1
+                })
+            })]
+        }) : (0, Q.jsx)(ut, {
+            app: r,
+            actions: A,
+            prevActions: R,
+            deltas: z,
+            initialEnabledActions: M,
+            initialCustomNewActionPolicy: N,
+            onSubmit: o,
+            onCancel: a,
+            refreshingActions: Te.isPending,
+            submitting: ie || p,
+            confirmDisabled: A.length === 0,
+            refreshHidden: !Oe,
+            onRefreshActions: Oe && De !== void 0 ? () => {
+                Te.mutate(De.id)
+            } : void 0,
+            onOpenConstraints: K ? e => y(e) : void 0,
+            constraintsDisabled: !1,
+            showScrollDividers: b,
+            onScrollabilityChange: x
+        }), t[45] = z, t[46] = T, t[47] = r, t[48] = K, t[49] = M, t[50] = p, t[51] = Oe, t[52] = De, t[53] = a, t[54] = o, t[55] = b, t[56] = R, t[57] = Te, t[58] = N, t[59] = ie, t[60] = A, t[61] = Ae) : Ae = t[61];
+        let je;
+        t[62] !== i || t[63] !== b || t[64] !== m || t[65] !== ke || t[66] !== Ae ? (je = (0, Q.jsx)(ne, {
+            isOpen: !0,
+            onClose: i,
+            showOverlayBackground: m,
+            testId: `modal-app-actions-control`,
+            title: ke,
+            size: `custom`,
+            className: `max-w-5xl`,
+            hasSeparator: b,
+            noPadding: !0,
+            isScrollable: !1,
+            headerClassName: `!px-6 !pt-6 !pb-2`,
+            contentClassName: `flex flex-col max-h-[80vh]`,
+            children: Ae
+        }), t[62] = i, t[63] = b, t[64] = m, t[65] = ke, t[66] = Ae, t[67] = je) : je = t[67];
+        let X;
+        t[68] !== r || t[69] !== K || t[70] !== v ? (X = K && v && (0, Q.jsx)(pt, {
+            app: r,
+            onClose: () => y(null),
+            onBack: () => y(null),
+            showOverlayBackground: !0,
+            initialSelectedAction: v
+        }), t[68] = r, t[69] = K, t[70] = v, t[71] = X) : X = t[71];
+        let Pe;
+        return t[72] !== je || t[73] !== X ? (Pe = (0, Q.jsxs)(Q.Fragment, {
+            children: [je, X]
+        }), t[72] = je, t[73] = X, t[74] = Pe) : Pe = t[74], Pe
+    }, ft = e => {
+        "use forget";
+        let t = (0, it.c)(41),
+            {
+                app: r,
+                onClose: i
+            } = e,
+            a = ce(),
+            o;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = c()?.getWorkspaceId(), t[0] = o) : o = t[0];
+        let s = o,
+            ee;
+        t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (ee = te(), t[1] = ee) : ee = t[1];
+        let l = ee,
+            u = g(),
+            ne = D(),
+            d = H(),
+            re = z(),
+            f = n(tt),
+            m = n(nt),
+            ie = !!s,
+            ae;
+        t[2] !== r.primaryConnector.id || t[3] !== f ? (ae = () => {
+            K(f, s ?? ``, r.primaryConnector.id, ie)
+        }, t[2] = r.primaryConnector.id, t[3] = f, t[4] = ae) : ae = t[4];
+        let oe;
+        t[5] !== r.primaryConnector.id || t[6] !== m || t[7] !== f ? (oe = [f, m, s, r.primaryConnector.id, ie], t[5] = r.primaryConnector.id, t[6] = m, t[7] = f, t[8] = oe) : oe = t[8], (0, Z.useEffect)(ae, oe);
+        let h;
+        t[9] !== r.primaryConnector.id || t[10] !== m || t[11] !== f ? (h = ye({
+            queryKeyPrefix: `connector-workspace-permissions`,
+            workspaceId: s,
+            connectorId: r.primaryConnector.id,
+            enabled: ie,
+            transport: f,
+            actorId: m
+        }), t[9] = r.primaryConnector.id, t[10] = m, t[11] = f, t[12] = h) : h = t[12];
+        let {
+            data: _,
+            isLoading: y
+        } = v(h), b;
+        t[13] !== r.primaryConnector.id || t[14] !== d || t[15] !== re || t[16] !== ne || t[17] !== u ? (b = async e => {
+            let {
+                enabledActions: t,
+                actionPolicy: n
+            } = e;
+            if (!s) throw Error(`Workspace ID is required to update app actions.`);
+            let i = {
+                enabled: !0,
+                enabled_actions: t
+            };
+            n && (i.action_policy = n), await p.safePost(`/accounts/{account_id}/connectors/{connector_id}/workspace_permissions`, {
+                parameters: {
+                    path: {
+                        account_id: s,
+                        connector_id: r.primaryConnector.id
+                    }
+                },
+                requestBody: i
+            }), ne(), d(r.primaryConnector.id), await u.invalidateQueries({
+                queryKey: [`connector-actions`, r.primaryConnector.id]
+            }), await u.invalidateQueries({
+                queryKey: [`connector-workspace-permissions`, s, r.primaryConnector.id]
+            }), await re()
+        }, t[13] = r.primaryConnector.id, t[14] = d, t[15] = re, t[16] = ne, t[17] = u, t[18] = b) : b = t[18];
+        let x;
+        t[19] !== a || t[20] !== i ? (x = () => {
+            l.success(a.formatMessage({
+                id: `AW+VoO`,
+                defaultMessage: `App tools updated successfully.`
+            })), i()
+        }, t[19] = a, t[20] = i, t[21] = x) : x = t[21];
+        let S;
+        t[22] === a ? S = t[23] : (S = () => {
+            l.danger(a.formatMessage({
+                id: `IRGvbN`,
+                defaultMessage: `Failed to update app tools. Please try again.`
+            }))
+        }, t[22] = a, t[23] = S);
+        let C;
+        t[24] !== b || t[25] !== x || t[26] !== S ? (C = {
+            mutationFn: b,
+            onSuccess: x,
+            onError: S
+        }, t[24] = b, t[25] = x, t[26] = S, t[27] = C) : C = t[27];
+        let {
+            mutateAsync: w,
+            isPending: T
+        } = se(C), E;
+        t[28] !== i || t[29] !== T ? (E = () => {
+            T || i()
+        }, t[28] = i, t[29] = T, t[30] = E) : E = t[30];
+        let O = E,
+            le = _?.action_policy,
+            k = _?.enabled_actions,
+            A;
+        t[31] !== le || t[32] !== k ? (A = Y({
+            actionPolicy: le,
+            enabledActions: k
+        }), t[31] = le, t[32] = k, t[33] = A) : A = t[33];
+        let ue = !!s && y,
+            j;
+        return t[34] !== r || t[35] !== O || t[36] !== w || t[37] !== T || t[38] !== A || t[39] !== ue ? (j = (0, Q.jsx)(dt, {
+            app: r,
+            onClose: O,
+            onCancel: O,
+            onConfirm: w,
+            submitting: T,
+            initialActionPolicy: A,
+            initialActionPolicyLoading: ue
+        }), t[34] = r, t[35] = O, t[36] = w, t[37] = T, t[38] = A, t[39] = ue, t[40] = j) : j = t[40], j
+    }, pt = e => {
+        "use forget";
+        let t = (0, it.c)(3),
+            r = n(rt),
+            i;
+        return t[0] !== e || t[1] !== r ? (i = (0, Q.jsx)(Oe, {
+            ...e,
+            workspaceId: r
+        }), t[0] = e, t[1] = r, t[2] = i) : i = t[2], i
+    }, $ = h({
+        openActionPlaceholder: {
+            id: `oTiWB2`,
+            defaultMessage: `Parameter Constraints`
+        },
+        noDescription: {
+            id: `6DgzBU`,
+            defaultMessage: `No description provided.`
+        },
+        constraintsDisabledBySync: {
+            id: `D4DK8f`,
+            defaultMessage: `Sync is enabled for this app. Parameter constraints only apply when sync is off.`
+        },
+        syncEnabledConstraintsNotice: {
+            id: `jiVclO`,
+            defaultMessage: `Parameter Constraints apply only to the direct app tools shown above. They do not limit content retrieved from this app’s synced data.`
+        },
+        noActionsLabel: {
+            id: `139ppy`,
+            defaultMessage: `No tools are available for this app.`
+        },
+        actionsControlModalTitle: {
+            id: `chatgpt.contextual_answers.admin.app_actions.policy_modal.title`,
+            defaultMessage: `What tools should be available?`
+        },
+        policyActionsDescription: {
+            id: `chatgpt.contextual_answers.admin.app_actions.policy_modal.description`,
+            defaultMessage: `Available tools in {app}:`
+        },
+        unconfiguredActionsToggleLabel: {
+            id: `chatgpt.contextual_answers.admin.app_actions.policy_modal.future_releases.option.all_new.label`,
+            defaultMessage: `Enable all new tools`
+        },
+        unconfiguredReadActionsToggleLabel: {
+            id: `chatgpt.contextual_answers.admin.app_actions.policy_modal.future_releases.option.new_read_only.label`,
+            defaultMessage: `Only enable new read tools`
+        },
+        unconfiguredNoActionsToggleLabel: {
+            id: `chatgpt.contextual_answers.admin.app_actions.policy_modal.future_releases.option.keep_disabled.label`,
+            defaultMessage: `Disable new tools`
+        },
+        unconfiguredActionsDescription: {
+            id: `chatgpt.contextual_answers.admin.app_actions.policy_modal.future_releases.description`,
+            defaultMessage: `In the future, when new tools are added to {app}:`
+        },
+        confirmLabel: {
+            id: `med53c`,
+            defaultMessage: `Confirm`
+        },
+        readActionsSectionLabel: {
+            id: `F3q+J6`,
+            defaultMessage: `Read tools`
+        },
+        writeActionsSectionLabel: {
+            id: `4Ezvi0`,
+            defaultMessage: `Write tools`
+        },
+        enabledActionsCountLabel: {
+            id: `chatgpt.contextual_answers.admin.app_actions.policy_modal.enabled_actions_count_label`,
+            defaultMessage: `{enabledCount} of {totalCount} enabled`
+        },
+        viewActionDetailsLabel: {
+            id: `chatgpt.contextual_answers.admin.app_actions.policy_modal.view_details`,
+            defaultMessage: `View details`
+        },
+        hideActionDetailsLabel: {
+            id: `chatgpt.contextual_answers.admin.app_actions.policy_modal.hide_details`,
+            defaultMessage: `Hide details`
+        },
+        refreshLabel: {
+            id: `e0MhOD`,
+            defaultMessage: `Refresh`
+        },
+        refreshActionsError: {
+            id: `AHelUR`,
+            defaultMessage: `Failed to refresh app tools`
+        },
+        needLink: {
+            id: `7khSUy`,
+            defaultMessage: `This app must be connected to refresh its tools.`
+        }
+    })
+}));
+export {
+    mt as i, pt as n, ft as r, dt as t
+};
 //# sourceMappingURL=46874983-lmabuo82fn5rvobq.js.map
