@@ -1,2 +1,31 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Rn as t,zn as n}from"./2340486e-komxp8tzs51ny4jj.js";var r,i=e((()=>{n(),r=t({list:{id:`automations.scheduled.browserTitle`,defaultMessage:`Scheduled Tasks`},tasksList:{id:`automations.tasks.browserTitle`,defaultMessage:`Tasks`},detail:{id:`automations.scheduled.detailBrowserTitle`,defaultMessage:`{taskName} | Scheduled Task`},tasksDetail:{id:`automations.tasks.detailBrowserTitle`,defaultMessage:`{taskName} | Tasks`}})}));export{r as n,i as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Rn as t,
+    zn as n
+} from "./2340486e-komxp8tzs51ny4jj.js";
+var r, i = e((() => {
+    n(), r = t({
+        list: {
+            id: `automations.scheduled.browserTitle`,
+            defaultMessage: `Scheduled Tasks`
+        },
+        tasksList: {
+            id: `automations.tasks.browserTitle`,
+            defaultMessage: `Tasks`
+        },
+        detail: {
+            id: `automations.scheduled.detailBrowserTitle`,
+            defaultMessage: `{taskName} | Scheduled Task`
+        },
+        tasksDetail: {
+            id: `automations.tasks.detailBrowserTitle`,
+            defaultMessage: `{taskName} | Tasks`
+        }
+    })
+}));
+export {
+    r as n, i as t
+};
 //# sourceMappingURL=e1547446-e7gjwtk0x4lxn47v.js.map

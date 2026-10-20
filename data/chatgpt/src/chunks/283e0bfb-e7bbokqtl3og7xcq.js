@@ -1,2 +1,23 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Rn as t,zn as n}from"./2340486e-komxp8tzs51ny4jj.js";var r,i=e((()=>{n(),r=t({planName:{id:`CheckoutSummary.sophiaPlanName`,defaultMessage:`Academic Researcher`},heading:{id:`CheckoutSummary.headingSophia`,defaultMessage:`Academic Researcher plan`}})}));export{r as n,i as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Rn as t,
+    zn as n
+} from "./2340486e-komxp8tzs51ny4jj.js";
+var r, i = e((() => {
+    n(), r = t({
+        planName: {
+            id: `CheckoutSummary.sophiaPlanName`,
+            defaultMessage: `Academic Researcher`
+        },
+        heading: {
+            id: `CheckoutSummary.headingSophia`,
+            defaultMessage: `Academic Researcher plan`
+        }
+    })
+}));
+export {
+    r as n, i as t
+};
 //# sourceMappingURL=283e0bfb-e7bbokqtl3og7xcq.js.map

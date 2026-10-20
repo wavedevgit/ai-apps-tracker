@@ -1,2 +1,23 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e){return e===`signup`||e===`login_or_signup`?e:`login`}function n(e,{authSessionLoggingId:t,deviceId:n}){let c=e.get(r)===`true`&&e.get(`usernameKind`)===`phone_number`,l=e.get(i)===`true`&&e.get(`mweb_fallback`)===`1`&&[i,`mweb_fallback`,a,o].every(t=>e.getAll(t).length===1);return(c||l)&&typeof t==`string`&&s.test(t)&&e.get(a)===t&&typeof n==`string`&&n.length>0&&e.get(o)===n}var r,i,a,o,s,c=e((()=>{r=`ext-web-mobile-direct-phone-login`,i=`ext-web-mobile-login-continuation`,a=`auth_session_logging_id`,o=`ext-oai-did`,s=/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i}));export{c as n,n as r,t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e) {
+    return e === `signup` || e === `login_or_signup` ? e : `login`
+}
+
+function n(e, {
+    authSessionLoggingId: t,
+    deviceId: n
+}) {
+    let c = e.get(r) === `true` && e.get(`usernameKind`) === `phone_number`,
+        l = e.get(i) === `true` && e.get(`mweb_fallback`) === `1` && [i, `mweb_fallback`, a, o].every(t => e.getAll(t).length === 1);
+    return (c || l) && typeof t == `string` && s.test(t) && e.get(a) === t && typeof n == `string` && n.length > 0 && e.get(o) === n
+}
+var r, i, a, o, s, c = e((() => {
+    r = `ext-web-mobile-direct-phone-login`, i = `ext-web-mobile-login-continuation`, a = `auth_session_logging_id`, o = `ext-oai-did`, s = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
+}));
+export {
+    c as n, n as r, t
+};
 //# sourceMappingURL=877ce4d3-d0zlv3naj8f9x8q2.js.map

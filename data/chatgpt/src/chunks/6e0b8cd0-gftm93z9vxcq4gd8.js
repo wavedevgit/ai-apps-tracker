@@ -1,2 +1,750 @@
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{Az as r,I1 as i,J5 as a,M5 as o,OO as s,RU as c,S1 as l,jz as u,m8 as d,q5 as f,vO as ee,zU as p}from"./4813494d-qsuygr73qjc6rh65.js";import{A as m,Bn as h,Hn as g,N as _,O as v,Pn as y,Tn as b,Vn as te,p as ne,s as x,zn as S}from"./2340486e-komxp8tzs51ny4jj.js";import{Ix as re,Nx as C,ny as ie,ry as ae,ty as oe}from"./c2675c8c-nxl2ic2ofk2vw70s.js";import{Kn as se,Xn as ce}from"./1c919af1-md3slc2ht6it8c1k.js";import{t as le}from"./a35abcd6-kcua9d3wne9fesqf.js";import{D as ue,O as de,b as fe,c as pe,f as me,h as he,m as ge,o as _e,s as ve,v as ye,w as be,y as xe}from"./b26e60ff-fsk9rccepf655vnl.js";import{s as Se,t as Ce}from"./46464433-ink33fnzh9e4tama.js";import{n as we,t as Te}from"./5afd4cd2-js536b4cbs4s6qzw.js";import{c as Ee,f as w,n as De,r as T,u as Oe}from"./eec17ee5-pfmqng99zntx5uvn.js";import{a as ke,n as E,r as Ae}from"./63f6a4cc-dllbub7yjkj89sls.js";import{i as je,l as D,n as Me,r as O}from"./bb6515d2-i85q2pz7w3prqlp3.js";import{a as k,c as Ne,d as Pe,l as Fe,n as A,p as j,r as Ie,t as Le}from"./5a69c9a5-i3w7dsppvt81fffy.js";import{n as Re,r as ze,s as Be}from"./26265142-f0v04ao5r39i4z8c.js";import{a as Ve,i as He,o as Ue,s as M}from"./122af5aa-ltlkro6lgoihtipj.js";import{n as We,t as Ge}from"./52e36ea1-6allceyj6xydmnhd.js";import{n as Ke,t as qe}from"./824cfc3b-djz404kj7hri9vg7.js";var Je,N,Ye,P,Xe=e((()=>{Je=b(),u(),a(),N=te(),Ye=e=>{"use forget";let t=(0,Je.c)(25),{labelledBy:n,installed:i,disabled:a,loading:o,loadingLabel:s,availableLabel:c,installedLabel:l,onInstalledChange:u}=e,d=o!==void 0&&o,f;t[0]!==d||t[1]!==s?(f=d?(0,N.jsx)(`span`,{role:`status`,"aria-label":s,children:(0,N.jsx)(r,{className:`text-token-text-secondary size-4`})}):null,t[0]=d,t[1]=s,t[2]=f):f=t[2];let ee=!i,p;t[3]===u?p=t[4]:(p=()=>u(!1),t[3]=u,t[4]=p);let m;t[5]!==c||t[6]!==a||t[7]!==ee||t[8]!==p?(m=(0,N.jsx)(P,{selected:ee,disabled:a,onClick:p,children:c}),t[5]=c,t[6]=a,t[7]=ee,t[8]=p,t[9]=m):m=t[9];let h;t[10]===u?h=t[11]:(h=()=>u(!0),t[10]=u,t[11]=h);let g;t[12]!==a||t[13]!==i||t[14]!==l||t[15]!==h?(g=(0,N.jsx)(P,{selected:i,disabled:a,onClick:h,children:l}),t[12]=a,t[13]=i,t[14]=l,t[15]=h,t[16]=g):g=t[16];let _;t[17]!==n||t[18]!==d||t[19]!==m||t[20]!==g?(_=(0,N.jsxs)(`div`,{role:`radiogroup`,"aria-labelledby":n,"aria-busy":d,className:`bg-token-bg-secondary flex overflow-hidden rounded-full p-0.5`,children:[m,g]}),t[17]=n,t[18]=d,t[19]=m,t[20]=g,t[21]=_):_=t[21];let v;return t[22]!==f||t[23]!==_?(v=(0,N.jsxs)(`div`,{className:`flex shrink-0 items-center gap-2`,children:[f,_]}),t[22]=f,t[23]=_,t[24]=v):v=t[24],v},P=e=>{"use forget";let t=(0,Je.c)(9),{selected:n,disabled:r,onClick:i,children:a}=e,o=n?`bg-token-bg-primary text-token-text-primary shadow-xs`:`text-token-text-primary hover:bg-token-bg-primary/60`,s=r&&`cursor-not-allowed opacity-60`,c;t[0]!==o||t[1]!==s?(c=f(`rounded-full px-3 py-1 text-sm leading-5 transition-colors`,o,s),t[0]=o,t[1]=s,t[2]=c):c=t[2];let l;return t[3]!==a||t[4]!==r||t[5]!==i||t[6]!==n||t[7]!==c?(l=(0,N.jsx)(`button`,{type:`button`,role:`radio`,"aria-checked":n,disabled:r,onClick:i,className:c,children:a}),t[3]=a,t[4]=r,t[5]=i,t[6]=n,t[7]=c,t[8]=l):l=t[8],l}})),F=t({AdminPluginAvailabilitySection:()=>st});function Ze(e){return e.data==null?[]:[e.data.primaryConnector.id]}function Qe(e){return e.isError}function $e(e){return e.isError}function et(e){return e.isSuccess}function tt(e){return e.isSuccess}function nt(e){let{role:t}=e;return t.id}function rt(e){return _e(e.data?.roles_with_permissions).map(nt)}function it(e){return e.id}function at(e){return!re(e)}var ot,I,L,st,ct=e((()=>{ot=b(),Ge(),w(),M(),k(),j(),d(),Se(),D(),s(),C(),pe(),Xe(),de(),xe(),i(),p(),le(),x(),I=n(g()),S(),E(),T(),O(),we(),A(),ae(),Ke(),Be(),L=te(),st=e=>{"use forget";let t=(0,ot.c)(134),{pluginReference:n,workspaceId:r,disabled:i,staged:a,controlOnly:s}=e,u=h(),d;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(d=c(),t[0]=d):d=t[0];let f=d,p=_(),g=(0,I.useId)(),[b,te]=(0,I.useState)(!1),{transport:x,includeDependencies:S}=o(Ee),C=o(l)?.normalizedAccountUserId,ae=o(ge),le=o(me),de;t[1]!==x||t[2]!==S||t[3]!==n||t[4]!==r?(de={pluginId:n,workspaceId:r,transport:x,includeDependencies:S},t[1]=x,t[2]=S,t[3]=n,t[4]=r,t[5]=de):de=t[5];let pe=(0,I.useRef)(de),_e,xe;t[6]!==x||t[7]!==S||t[8]!==n||t[9]!==p||t[10]!==r?(_e=()=>{let e=pe.current,t={pluginId:n,workspaceId:r,transport:x,includeDependencies:S};pe.current=t,We({queryClient:p,previous:e,next:t})},xe=[n,r,x,S,p],t[6]=x,t[7]=S,t[8]=n,t[9]=p,t[10]=r,t[11]=_e,t[12]=xe):(_e=t[11],xe=t[12]),(0,I.useEffect)(_e,xe);let Se;t[13]!==x||t[14]!==n||t[15]!==r?(Se=()=>{Oe(x,r,n)},t[13]=x,t[14]=n,t[15]=r,t[16]=Se):Se=t[16];let we;t[17]!==C||t[18]!==x||t[19]!==S||t[20]!==n||t[21]!==r?(we=[n,r,x,S,C],t[17]=C,t[18]=x,t[19]=S,t[20]=n,t[21]=r,t[22]=we):we=t[22],(0,I.useEffect)(Se,we);let w;t[23]!==C||t[24]!==x||t[25]!==S||t[26]!==n||t[27]!==r?(w=De(n,r,x,S,C),t[23]=C,t[24]=x,t[25]=S,t[26]=n,t[27]=r,t[28]=w):w=t[28];let T=w,E=v(T).data,D=E?.id??n,O=E?.workspace_settings??a?.fallbackSettings??null,k=a?.draft==null||O==null?O:{...O,installation_policy:a.draft.installation_policy??O.installation_policy,installed_by_default_role_ids:a.draft.installed_by_default_role_ids??O.installed_by_default_role_ids},A=ee(),j=A&&E!=null,Be=qe(r),M=v({...Be,enabled:Be.enabled&&j}),Ge=(M.data?.data??[]).toSorted(ue),Ke=Re(E),Je=[...new Set(E?.release.required_app_id_groups?.flat()??Ke)],N=Je.length>0,P=o(Fe),Xe=o(Ie),F=r,nt;t[29]!==P||t[30]!==F||t[31]!==C?(nt={workspaceId:F,transport:P,workspaceUserId:C},t[29]=P,t[30]=F,t[31]=C,t[32]=nt):nt=t[32];let st=(0,I.useRef)(nt),ct,lt;t[33]!==P||t[34]!==F||t[35]!==C||t[36]!==p?(lt=()=>{let e={workspaceId:F,transport:P,workspaceUserId:C};Ne({queryClient:p,previous:st.current,next:e}),st.current=e},ct=[F,P,C,p],t[33]=P,t[34]=F,t[35]=C,t[36]=p,t[37]=ct,t[38]=lt):(ct=t[37],lt=t[38]),(0,I.useEffect)(lt,ct);let ut=r!==``&&j&&N;(0,I.useEffect)(()=>{Pe(P,F,ut)},[P,F,C,ut,JSON.stringify([...new Set(Ke)].sort())]);let dt=Le({transport:P,nativeAppDetailsRecoveryEnabled:Xe,workspaceUserId:C,appIds:Ke,workspaceId:r}),ft=v({...dt,enabled:dt.enabled&&j&&N}),pt=new Set(Ke),mt=[...new Map(Je.flatMap(e=>{let t=ze(ft.data,e,pt);return t==null?[]:[[t.id,t]]})).values()],ht=o(Ce),gt=o(je),_t=j&&N?mt.map(e=>Me({transport:ht,ckTransport:gt,appId:e.id,directoryApp:e,workspaceId:r})):[],vt;t[39]===_t?vt=t[40]:(vt={queries:_t},t[39]=_t,t[40]=vt);let R=m(vt),z,yt,bt;t[41]!==R||t[42]!==j||t[43]!==r?(z=[...new Set(R.flatMap(Ze))],yt=m,bt={queries:j?z.map(e=>Te({connectorId:e,workspaceId:r})):[]},t[41]=R,t[42]=j,t[43]=r,t[44]=z,t[45]=yt,t[46]=bt):(z=t[44],yt=t[45],bt=t[46]);let B=yt(bt),xt;t[47]!==ft||t[48]!==N||t[49]!==R||t[50]!==B?(xt=N&&(ft.isError||R.some(Qe)||B.some($e)),t[47]=ft,t[48]=N,t[49]=R,t[50]=B,t[51]=xt):xt=t[51];let St=xt,Ct=!N||ft.isSuccess&&mt.length>0&&R.every(et)&&B.length===z.length&&z.length>0&&B.every(tt),V=M.isSuccess&&Ct?N?new Set(B.flatMap(rt)):new Set(Ge.map(it)):null,H=Ve(k)&&V!=null?new Set(ve({settings:k,eligibleRoleIds:V})):new Set,U=Ge.find(re),wt=U==null?k?.installation_policy===`INSTALLED_BY_DEFAULT`&&k.installed_by_default_role_ids.length===0:H.has(U.id),Tt=Ge.filter(at),Et=Tt.filter(e=>V?.has(e.id)&&H.has(e.id)!==wt),W=b?Tt:Et,G=j&&(M.isLoading||!Ct&&!St),Dt=M.isError||St,Ot=!G&&!Dt&&Tt.length>Et.length,kt;t[52]!==D||t[53]!==r||t[54]!==ae?(kt=ye(r,D,ae),t[52]=D,t[53]=r,t[54]=ae,t[55]=kt):kt=t[55];let K=kt,At;t[56]!==le||t[57]!==C||t[58]!==O||t[59]!==E||t[60]!==D||t[61]!==a||t[62]!==r?(At=async e=>{let{settings:t}=e,n=l();if(O!=null&&!Ue(O)||E==null||!He(E)||n?.getWorkspaceId()!==r||n.normalizedAccountUserId!==C||!n.isAdminOfAccount()&&!n.isOwnerOfAccount()||a!=null&&!a.canUpdate())throw Error(`Workspace administrator authorization changed.`);return await be({workspaceId:r,workspaceUserId:C,pluginId:D,settings:t,transport:le})},t[56]=le,t[57]=C,t[58]=O,t[59]=E,t[60]=D,t[61]=a,t[62]=r,t[63]=At):At=t[63];let jt=At,q;t[64]!==D||t[65]!==r?(q=oe(r,D),t[64]=D,t[65]=r,t[66]=q):q=t[66];let J;t[67]!==x||t[68]!==S||t[69]!==D||t[70]!==T||t[71]!==K||t[72]!==p||t[73]!==r?(J=async e=>{let{settings:t}=e,n={workspaceId:r,pluginId:D,detailReadTransport:x,includeDependencies:S,detailQueryKey:T.queryKey,settingsQueryKey:K};await p.cancelQueries({queryKey:n.detailQueryKey,exact:!0}),await p.cancelQueries({queryKey:n.settingsQueryKey,exact:!0});let i=p.getQueryData(n.detailQueryKey),a=p.getQueryData(n.settingsQueryKey);return a==null?i?.workspace_settings!=null&&p.setQueryData(n.detailQueryKey,{...i,workspace_settings:{...i.workspace_settings,installation_policy:t.installation_policy??i.workspace_settings.installation_policy,installed_by_default_role_ids:t.installed_by_default_role_ids??i.workspace_settings.installed_by_default_role_ids}}):ke({queryClient:p,...n,settings:{...a,installation_policy:t.installation_policy??a.installation_policy,installed_by_default_role_ids:t.installed_by_default_role_ids??a.installed_by_default_role_ids}}),{...n,previousPlugin:i,previousSettings:a}},t[67]=x,t[68]=S,t[69]=D,t[70]=T,t[71]=K,t[72]=p,t[73]=r,t[74]=J):J=t[74];let Y;t[75]!==u||t[76]!==D||t[77]!==T||t[78]!==K||t[79]!==p||t[80]!==a||t[81]!==r?(Y=async(e,t,n)=>{if(ke({queryClient:p,workspaceId:n?.workspaceId??r,pluginId:n?.pluginId??D,settings:e}),a!=null&&!a.canUpdate()){await Promise.all([p.invalidateQueries({queryKey:n?.detailQueryKey??T.queryKey,refetchType:`none`}),p.invalidateQueries({queryKey:n?.settingsQueryKey??K,refetchType:`none`}),p.invalidateQueries({queryKey:ie(`list`,n?.workspaceId??r),refetchType:`none`})]);return}await Ae({queryClient:p,workspaceId:n?.workspaceId??r,pluginId:n?.pluginId??D}),!(a!=null&&!a.canUpdate())&&(f.success(u.formatMessage({id:`admin.plugins.v2.detail.availability.toast.success`,defaultMessage:`Workspace availability updated.`})),a?.onSaveSuccess())},t[75]=u,t[76]=D,t[77]=T,t[78]=K,t[79]=p,t[80]=a,t[81]=r,t[82]=Y):Y=t[82];let X;t[83]!==u||t[84]!==p||t[85]!==a?(X=(e,t,n)=>{n?.previousSettings==null?n?.previousPlugin!=null&&p.setQueryData(n.detailQueryKey,n.previousPlugin):ke({queryClient:p,workspaceId:n.workspaceId,pluginId:n.pluginId,settingsQueryKey:n.settingsQueryKey,detailReadTransport:n.detailReadTransport,includeDependencies:n.includeDependencies,settings:n.previousSettings}),!(a!=null&&!a.canUpdate())&&f.danger(u.formatMessage({id:`admin.plugins.v2.detail.availability.toast.failure`,defaultMessage:`Could not update workspace availability.`}))},t[83]=u,t[84]=p,t[85]=a,t[86]=X):X=t[86];let Mt;t[87]!==q||t[88]!==J||t[89]!==Y||t[90]!==X||t[91]!==jt?(Mt={mutationKey:q,mutationFn:jt,onMutate:J,onSuccess:Y,onError:X},t[87]=q,t[88]=J,t[89]=Y,t[90]=X,t[91]=jt,t[92]=Mt):Mt=t[92];let Z=ne(Mt),Nt;t[93]!==Z.isPending||t[94]!==i||t[95]!==O||t[96]!==E?(Nt=i||Z.isPending||O!=null&&!Ue(O)||E==null||!He(E),t[93]=Z.isPending,t[94]=i,t[95]=O,t[96]=E,t[97]=Nt):Nt=t[97];let Q=Nt,Pt;t[98]!==Q||t[99]!==E||t[100]!==a||t[101]!==r?(Pt=()=>E!=null&&r!==``&&l()?.getWorkspaceId()===r&&(a==null||a.canUpdate())&&!Q,t[98]=Q,t[99]=E,t[100]=a,t[101]=r,t[102]=Pt):Pt=t[102];let $=Pt,Ft=e=>{if(a==null||!Ue(O))return;let t=e.installation_policy??O.installation_policy,n=e.installed_by_default_role_ids??O.installed_by_default_role_ids,r=A&&V!=null?!fe(new Set(ve({settings:O,eligibleRoleIds:V})),new Set(ve({settings:{installation_policy:t,installed_by_default_role_ids:n},eligibleRoleIds:V}))):t!==O.installation_policy;a.onDraftChange(r?e:null)},It=e=>{if(!$()||e===wt)return;if(A){if(U==null||V==null||!V.has(U.id))return;Lt(U,e);return}let t=he({mode:e?`installed_by_default`:`available`});if(a!=null){Ft(t);return}Z.mutate({settings:t,savingRoleId:null})},Lt=(e,t)=>{if(!$()||V==null||!V.has(e.id)||H.has(e.id)===t)return;let n=new Set(H);t?n.add(e.id):n.delete(e.id);let r=he({mode:n.size===0?`available`:n.size===V.size?`installed_by_default`:`custom_by_group`,installedByDefaultRoleIds:n,eligibleRoleIds:V});if(a!=null){Ft(r);return}Z.mutate({settings:r,savingRoleId:e.id})},Rt;t[103]===u?Rt=t[104]:(Rt=u.formatMessage({id:`admin.plugins.v2.detail.availability.available.label`,defaultMessage:`Available`}),t[103]=u,t[104]=Rt);let zt=Rt,Bt;t[105]===u?Bt=t[106]:(Bt=u.formatMessage({id:`admin.plugins.v2.detail.availability.installed.label`,defaultMessage:`Installed`}),t[105]=u,t[106]=Bt);let Vt=Bt,Ht;t[107]===u?Ht=t[108]:(Ht=u.formatMessage({id:`admin.plugins.v2.detail.availability.saving.label`,defaultMessage:`Saving workspace availability`}),t[107]=u,t[108]=Ht);let Ut=Ht;if(s!=null){let e=s.roleId==null?U:Ge.find(e=>e.id===s.roleId);return(0,L.jsx)(Ye,{labelledBy:s.labelledBy,installed:s.roleId==null?wt:e!=null&&H.has(e.id),disabled:Q||G||Dt||s.roleId!=null&&!A||A&&(e==null||!V?.has(e.id)),loading:Z.isPending||G,loadingLabel:Ut,availableLabel:zt,installedLabel:Vt,onInstalledChange:t=>{s.roleId==null?It(t):e!=null&&Lt(e,t)}})}let Wt;t[109]===Symbol.for(`react.memo_cache_sentinel`)?(Wt=(0,L.jsx)(`div`,{id:`admin-plugin-v2-workspace-availability-label`,className:`text-token-text-primary text-sm font-medium`,children:(0,L.jsx)(y,{id:`admin.plugins.v2.detail.availability.workspace.label`,defaultMessage:`Workspace default`})}),t[109]=Wt):Wt=t[109];let Gt;t[110]===A?Gt=t[111]:(Gt=(0,L.jsxs)(`div`,{className:`min-w-0`,children:[Wt,(0,L.jsx)(`p`,{className:`text-token-text-secondary mt-0.5 text-xs`,children:A?(0,L.jsx)(y,{id:`admin.plugins.v2.detail.availability.workspace.role.description`,defaultMessage:`The default for users who are not assigned a role`}):(0,L.jsx)(y,{id:`admin.plugins.v2.detail.availability.workspace.description`,defaultMessage:`Applies to everyone in this workspace`})})]}),t[110]=A,t[111]=Gt);let Kt;t[112]!==u||t[113]!==A||t[114]!==G||t[115]!==W?(Kt=A&&G?(0,L.jsx)(`div`,{"aria-busy":`true`,"aria-label":u.formatMessage({id:`admin.plugins.v2.detail.availability.roles.loading`,defaultMessage:`Loading role availability`}),role:`status`,className:`group skeleton [--skeleton-opacity:0.75]`,children:[0,1].map(e=>(0,L.jsxs)(`div`,{"aria-hidden":!0,className:`border-token-border-light relative ms-8 flex min-h-[64px] flex-col gap-3 border-b py-4 sm:flex-row sm:items-center sm:justify-between`,children:[e===0&&W.length===0?(0,L.jsx)(se,{"aria-hidden":!0,className:`text-token-text-secondary icon-sm absolute -start-8 top-4 shrink-0 sm:top-1/2 sm:-translate-y-1/2 rtl:-scale-x-100`}):null,(0,L.jsxs)(`span`,{className:`flex min-w-0 items-center gap-2`,children:[(0,L.jsx)(`span`,{className:`skeleton-child size-5 shrink-0 rounded-md`}),(0,L.jsx)(`span`,{className:`skeleton-child h-4 w-32 max-w-full rounded-md`})]}),(0,L.jsxs)(`span`,{className:`bg-token-bg-secondary flex w-fit shrink-0 gap-1 rounded-full p-0.5`,children:[(0,L.jsx)(`span`,{className:`skeleton-child h-7 w-20 rounded-full`}),(0,L.jsx)(`span`,{className:`skeleton-child h-7 w-16 rounded-full`})]})]},e))}):null,t[112]=u,t[113]=A,t[114]=G,t[115]=W,t[116]=Kt):Kt=t[116];let qt;t[117]!==A||t[118]!==Dt||t[119]!==G?(qt=A&&!G&&Dt?(0,L.jsx)(`p`,{role:`alert`,className:`border-token-border-light text-token-text-secondary border-b py-4 text-sm`,children:(0,L.jsx)(y,{id:`admin.plugins.v2.detail.availability.roles.error`,defaultMessage:`Unable to load role overrides.`})}):null,t[117]=A,t[118]=Dt,t[119]=G,t[120]=qt):qt=t[120];let Jt;t[121]!==Ot||t[122]!==Q||t[123]!==A||t[124]!==Et||t[125]!==b||t[126]!==W?(Jt=A&&Ot?(0,L.jsxs)(`button`,{type:`button`,"aria-expanded":b,disabled:Q,onClick:()=>te(!b),className:`text-token-text-secondary hover:text-token-text-primary relative ms-8 flex min-h-12 items-center text-sm disabled:cursor-not-allowed disabled:opacity-60`,children:[W.length===0?(0,L.jsx)(se,{"aria-hidden":!0,className:`icon-sm absolute -start-8 top-1/2 shrink-0 -translate-y-1/2 rtl:-scale-x-100`}):null,b?(0,L.jsx)(y,{id:`admin.plugins.v2.detail.availability.roles.hide`,defaultMessage:`Hide roles`}):Et.length>0?(0,L.jsx)(y,{id:`admin.plugins.v2.detail.availability.roles.show_all`,defaultMessage:`See all roles`}):(0,L.jsx)(y,{id:`admin.plugins.v2.detail.availability.roles.add`,defaultMessage:`Customize per role`})]}):null,t[121]=Ot,t[122]=Q,t[123]=A,t[124]=Et,t[125]=b,t[126]=W,t[127]=Jt):Jt=t[127];let Yt=(0,L.jsxs)(`div`,{children:[(0,L.jsxs)(`div`,{className:`border-token-border-light flex min-h-[72px] flex-col gap-3 border-b py-4 sm:flex-row sm:items-center sm:justify-between`,children:[Gt,(0,L.jsx)(Ye,{labelledBy:`admin-plugin-v2-workspace-availability-label`,installed:wt,disabled:Q||A&&(V==null||U==null||!V.has(U.id)),loading:Z.isPending&&(Z.variables.savingRoleId==null||Z.variables.savingRoleId===U?.id),loadingLabel:Ut,availableLabel:zt,installedLabel:Vt,onInstalledChange:It})]}),A?W.map((e,t)=>{let n=`${g}-${e.id}`;return(0,L.jsxs)(`div`,{className:`border-token-border-light relative ms-8 flex min-h-[64px] flex-col gap-3 border-b py-4 sm:flex-row sm:items-center sm:justify-between`,children:[t===0?(0,L.jsx)(se,{"aria-hidden":!0,className:`text-token-text-secondary icon-sm absolute -start-8 top-4 shrink-0 sm:top-1/2 sm:-translate-y-1/2 rtl:-scale-x-100`}):null,(0,L.jsxs)(`div`,{className:`flex min-w-0 items-center gap-2`,children:[(0,L.jsx)(ce,{"aria-hidden":!0,className:`text-token-text-secondary icon-sm shrink-0`}),(0,L.jsx)(`span`,{id:n,className:`text-token-text-primary truncate text-sm`,children:e.name})]}),(0,L.jsx)(Ye,{labelledBy:n,installed:H.has(e.id),disabled:Q||!V?.has(e.id),loading:Z.isPending&&Z.variables.savingRoleId===e.id,loadingLabel:Ut,availableLabel:zt,installedLabel:Vt,onInstalledChange:t=>Lt(e,t)})]},e.id)}):null,Kt,qt,Jt]});if(a==null)return Yt;let Xt;return t[128]!==Z||t[129]!==$||t[130]!==V||t[131]!==A||t[132]!==a.draft?(Xt=e=>{e.preventDefault(),!(a.draft==null||!$()||A&&(V==null||a.draft.installed_by_default_role_ids?.some(e=>!V.has(e))))&&Z.mutate({settings:a.draft,savingRoleId:null})},t[128]=Z,t[129]=$,t[130]=V,t[131]=A,t[132]=a.draft,t[133]=Xt):Xt=t[133],(0,L.jsx)(`form`,{id:a.formId,onSubmit:Xt,children:Yt})}}));export{F as n,ct as r,st as t};
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Az as r,
+    I1 as i,
+    J5 as a,
+    M5 as o,
+    OO as s,
+    RU as c,
+    S1 as l,
+    jz as u,
+    m8 as d,
+    q5 as f,
+    vO as ee,
+    zU as p
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    A as m,
+    Bn as h,
+    Hn as g,
+    N as _,
+    O as v,
+    Pn as y,
+    Tn as b,
+    Vn as te,
+    p as ne,
+    s as x,
+    zn as S
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Ix as re,
+    Nx as C,
+    ny as ie,
+    ry as ae,
+    ty as oe
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+import {
+    Kn as se,
+    Xn as ce
+} from "./1c919af1-md3slc2ht6it8c1k.js";
+import {
+    t as le
+} from "./a35abcd6-kcua9d3wne9fesqf.js";
+import {
+    D as ue,
+    O as de,
+    b as fe,
+    c as pe,
+    f as me,
+    h as he,
+    m as ge,
+    o as _e,
+    s as ve,
+    v as ye,
+    w as be,
+    y as xe
+} from "./b26e60ff-fsk9rccepf655vnl.js";
+import {
+    s as Se,
+    t as Ce
+} from "./46464433-ink33fnzh9e4tama.js";
+import {
+    n as we,
+    t as Te
+} from "./5afd4cd2-js536b4cbs4s6qzw.js";
+import {
+    c as Ee,
+    f as w,
+    n as De,
+    r as T,
+    u as Oe
+} from "./eec17ee5-pfmqng99zntx5uvn.js";
+import {
+    a as ke,
+    n as E,
+    r as Ae
+} from "./63f6a4cc-dllbub7yjkj89sls.js";
+import {
+    i as je,
+    l as D,
+    n as Me,
+    r as O
+} from "./bb6515d2-i85q2pz7w3prqlp3.js";
+import {
+    a as k,
+    c as Ne,
+    d as Pe,
+    l as Fe,
+    n as A,
+    p as j,
+    r as Ie,
+    t as Le
+} from "./5a69c9a5-i3w7dsppvt81fffy.js";
+import {
+    n as Re,
+    r as ze,
+    s as Be
+} from "./26265142-f0v04ao5r39i4z8c.js";
+import {
+    a as Ve,
+    i as He,
+    o as Ue,
+    s as M
+} from "./122af5aa-ltlkro6lgoihtipj.js";
+import {
+    n as We,
+    t as Ge
+} from "./52e36ea1-6allceyj6xydmnhd.js";
+import {
+    n as Ke,
+    t as qe
+} from "./824cfc3b-djz404kj7hri9vg7.js";
+var Je, N, Ye, P, Xe = e((() => {
+        Je = b(), u(), a(), N = te(), Ye = e => {
+            "use forget";
+            let t = (0, Je.c)(25),
+                {
+                    labelledBy: n,
+                    installed: i,
+                    disabled: a,
+                    loading: o,
+                    loadingLabel: s,
+                    availableLabel: c,
+                    installedLabel: l,
+                    onInstalledChange: u
+                } = e,
+                d = o !== void 0 && o,
+                f;
+            t[0] !== d || t[1] !== s ? (f = d ? (0, N.jsx)(`span`, {
+                role: `status`,
+                "aria-label": s,
+                children: (0, N.jsx)(r, {
+                    className: `text-token-text-secondary size-4`
+                })
+            }) : null, t[0] = d, t[1] = s, t[2] = f) : f = t[2];
+            let ee = !i,
+                p;
+            t[3] === u ? p = t[4] : (p = () => u(!1), t[3] = u, t[4] = p);
+            let m;
+            t[5] !== c || t[6] !== a || t[7] !== ee || t[8] !== p ? (m = (0, N.jsx)(P, {
+                selected: ee,
+                disabled: a,
+                onClick: p,
+                children: c
+            }), t[5] = c, t[6] = a, t[7] = ee, t[8] = p, t[9] = m) : m = t[9];
+            let h;
+            t[10] === u ? h = t[11] : (h = () => u(!0), t[10] = u, t[11] = h);
+            let g;
+            t[12] !== a || t[13] !== i || t[14] !== l || t[15] !== h ? (g = (0, N.jsx)(P, {
+                selected: i,
+                disabled: a,
+                onClick: h,
+                children: l
+            }), t[12] = a, t[13] = i, t[14] = l, t[15] = h, t[16] = g) : g = t[16];
+            let _;
+            t[17] !== n || t[18] !== d || t[19] !== m || t[20] !== g ? (_ = (0, N.jsxs)(`div`, {
+                role: `radiogroup`,
+                "aria-labelledby": n,
+                "aria-busy": d,
+                className: `bg-token-bg-secondary flex overflow-hidden rounded-full p-0.5`,
+                children: [m, g]
+            }), t[17] = n, t[18] = d, t[19] = m, t[20] = g, t[21] = _) : _ = t[21];
+            let v;
+            return t[22] !== f || t[23] !== _ ? (v = (0, N.jsxs)(`div`, {
+                className: `flex shrink-0 items-center gap-2`,
+                children: [f, _]
+            }), t[22] = f, t[23] = _, t[24] = v) : v = t[24], v
+        }, P = e => {
+            "use forget";
+            let t = (0, Je.c)(9),
+                {
+                    selected: n,
+                    disabled: r,
+                    onClick: i,
+                    children: a
+                } = e,
+                o = n ? `bg-token-bg-primary text-token-text-primary shadow-xs` : `text-token-text-primary hover:bg-token-bg-primary/60`,
+                s = r && `cursor-not-allowed opacity-60`,
+                c;
+            t[0] !== o || t[1] !== s ? (c = f(`rounded-full px-3 py-1 text-sm leading-5 transition-colors`, o, s), t[0] = o, t[1] = s, t[2] = c) : c = t[2];
+            let l;
+            return t[3] !== a || t[4] !== r || t[5] !== i || t[6] !== n || t[7] !== c ? (l = (0, N.jsx)(`button`, {
+                type: `button`,
+                role: `radio`,
+                "aria-checked": n,
+                disabled: r,
+                onClick: i,
+                className: c,
+                children: a
+            }), t[3] = a, t[4] = r, t[5] = i, t[6] = n, t[7] = c, t[8] = l) : l = t[8], l
+        }
+    })),
+    F = t({
+        AdminPluginAvailabilitySection: () => st
+    });
+
+function Ze(e) {
+    return e.data == null ? [] : [e.data.primaryConnector.id]
+}
+
+function Qe(e) {
+    return e.isError
+}
+
+function $e(e) {
+    return e.isError
+}
+
+function et(e) {
+    return e.isSuccess
+}
+
+function tt(e) {
+    return e.isSuccess
+}
+
+function nt(e) {
+    let {
+        role: t
+    } = e;
+    return t.id
+}
+
+function rt(e) {
+    return _e(e.data?.roles_with_permissions).map(nt)
+}
+
+function it(e) {
+    return e.id
+}
+
+function at(e) {
+    return !re(e)
+}
+var ot, I, L, st, ct = e((() => {
+    ot = b(), Ge(), w(), M(), k(), j(), d(), Se(), D(), s(), C(), pe(), Xe(), de(), xe(), i(), p(), le(), x(), I = n(g()), S(), E(), T(), O(), we(), A(), ae(), Ke(), Be(), L = te(), st = e => {
+        "use forget";
+        let t = (0, ot.c)(134),
+            {
+                pluginReference: n,
+                workspaceId: r,
+                disabled: i,
+                staged: a,
+                controlOnly: s
+            } = e,
+            u = h(),
+            d;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = c(), t[0] = d) : d = t[0];
+        let f = d,
+            p = _(),
+            g = (0, I.useId)(),
+            [b, te] = (0, I.useState)(!1),
+            {
+                transport: x,
+                includeDependencies: S
+            } = o(Ee),
+            C = o(l)?.normalizedAccountUserId,
+            ae = o(ge),
+            le = o(me),
+            de;
+        t[1] !== x || t[2] !== S || t[3] !== n || t[4] !== r ? (de = {
+            pluginId: n,
+            workspaceId: r,
+            transport: x,
+            includeDependencies: S
+        }, t[1] = x, t[2] = S, t[3] = n, t[4] = r, t[5] = de) : de = t[5];
+        let pe = (0, I.useRef)(de),
+            _e, xe;
+        t[6] !== x || t[7] !== S || t[8] !== n || t[9] !== p || t[10] !== r ? (_e = () => {
+            let e = pe.current,
+                t = {
+                    pluginId: n,
+                    workspaceId: r,
+                    transport: x,
+                    includeDependencies: S
+                };
+            pe.current = t, We({
+                queryClient: p,
+                previous: e,
+                next: t
+            })
+        }, xe = [n, r, x, S, p], t[6] = x, t[7] = S, t[8] = n, t[9] = p, t[10] = r, t[11] = _e, t[12] = xe) : (_e = t[11], xe = t[12]), (0, I.useEffect)(_e, xe);
+        let Se;
+        t[13] !== x || t[14] !== n || t[15] !== r ? (Se = () => {
+            Oe(x, r, n)
+        }, t[13] = x, t[14] = n, t[15] = r, t[16] = Se) : Se = t[16];
+        let we;
+        t[17] !== C || t[18] !== x || t[19] !== S || t[20] !== n || t[21] !== r ? (we = [n, r, x, S, C], t[17] = C, t[18] = x, t[19] = S, t[20] = n, t[21] = r, t[22] = we) : we = t[22], (0, I.useEffect)(Se, we);
+        let w;
+        t[23] !== C || t[24] !== x || t[25] !== S || t[26] !== n || t[27] !== r ? (w = De(n, r, x, S, C), t[23] = C, t[24] = x, t[25] = S, t[26] = n, t[27] = r, t[28] = w) : w = t[28];
+        let T = w,
+            E = v(T).data,
+            D = E?.id ?? n,
+            O = E?.workspace_settings ?? a?.fallbackSettings ?? null,
+            k = a?.draft == null || O == null ? O : {
+                ...O,
+                installation_policy: a.draft.installation_policy ?? O.installation_policy,
+                installed_by_default_role_ids: a.draft.installed_by_default_role_ids ?? O.installed_by_default_role_ids
+            },
+            A = ee(),
+            j = A && E != null,
+            Be = qe(r),
+            M = v({
+                ...Be,
+                enabled: Be.enabled && j
+            }),
+            Ge = (M.data?.data ?? []).toSorted(ue),
+            Ke = Re(E),
+            Je = [...new Set(E?.release.required_app_id_groups?.flat() ?? Ke)],
+            N = Je.length > 0,
+            P = o(Fe),
+            Xe = o(Ie),
+            F = r,
+            nt;
+        t[29] !== P || t[30] !== F || t[31] !== C ? (nt = {
+            workspaceId: F,
+            transport: P,
+            workspaceUserId: C
+        }, t[29] = P, t[30] = F, t[31] = C, t[32] = nt) : nt = t[32];
+        let st = (0, I.useRef)(nt),
+            ct, lt;
+        t[33] !== P || t[34] !== F || t[35] !== C || t[36] !== p ? (lt = () => {
+            let e = {
+                workspaceId: F,
+                transport: P,
+                workspaceUserId: C
+            };
+            Ne({
+                queryClient: p,
+                previous: st.current,
+                next: e
+            }), st.current = e
+        }, ct = [F, P, C, p], t[33] = P, t[34] = F, t[35] = C, t[36] = p, t[37] = ct, t[38] = lt) : (ct = t[37], lt = t[38]), (0, I.useEffect)(lt, ct);
+        let ut = r !== `` && j && N;
+        (0, I.useEffect)(() => {
+            Pe(P, F, ut)
+        }, [P, F, C, ut, JSON.stringify([...new Set(Ke)].sort())]);
+        let dt = Le({
+                transport: P,
+                nativeAppDetailsRecoveryEnabled: Xe,
+                workspaceUserId: C,
+                appIds: Ke,
+                workspaceId: r
+            }),
+            ft = v({
+                ...dt,
+                enabled: dt.enabled && j && N
+            }),
+            pt = new Set(Ke),
+            mt = [...new Map(Je.flatMap(e => {
+                let t = ze(ft.data, e, pt);
+                return t == null ? [] : [
+                    [t.id, t]
+                ]
+            })).values()],
+            ht = o(Ce),
+            gt = o(je),
+            _t = j && N ? mt.map(e => Me({
+                transport: ht,
+                ckTransport: gt,
+                appId: e.id,
+                directoryApp: e,
+                workspaceId: r
+            })) : [],
+            vt;
+        t[39] === _t ? vt = t[40] : (vt = {
+            queries: _t
+        }, t[39] = _t, t[40] = vt);
+        let R = m(vt),
+            z, yt, bt;
+        t[41] !== R || t[42] !== j || t[43] !== r ? (z = [...new Set(R.flatMap(Ze))], yt = m, bt = {
+            queries: j ? z.map(e => Te({
+                connectorId: e,
+                workspaceId: r
+            })) : []
+        }, t[41] = R, t[42] = j, t[43] = r, t[44] = z, t[45] = yt, t[46] = bt) : (z = t[44], yt = t[45], bt = t[46]);
+        let B = yt(bt),
+            xt;
+        t[47] !== ft || t[48] !== N || t[49] !== R || t[50] !== B ? (xt = N && (ft.isError || R.some(Qe) || B.some($e)), t[47] = ft, t[48] = N, t[49] = R, t[50] = B, t[51] = xt) : xt = t[51];
+        let St = xt,
+            Ct = !N || ft.isSuccess && mt.length > 0 && R.every(et) && B.length === z.length && z.length > 0 && B.every(tt),
+            V = M.isSuccess && Ct ? N ? new Set(B.flatMap(rt)) : new Set(Ge.map(it)) : null,
+            H = Ve(k) && V != null ? new Set(ve({
+                settings: k,
+                eligibleRoleIds: V
+            })) : new Set,
+            U = Ge.find(re),
+            wt = U == null ? k?.installation_policy === `INSTALLED_BY_DEFAULT` && k.installed_by_default_role_ids.length === 0 : H.has(U.id),
+            Tt = Ge.filter(at),
+            Et = Tt.filter(e => V?.has(e.id) && H.has(e.id) !== wt),
+            W = b ? Tt : Et,
+            G = j && (M.isLoading || !Ct && !St),
+            Dt = M.isError || St,
+            Ot = !G && !Dt && Tt.length > Et.length,
+            kt;
+        t[52] !== D || t[53] !== r || t[54] !== ae ? (kt = ye(r, D, ae), t[52] = D, t[53] = r, t[54] = ae, t[55] = kt) : kt = t[55];
+        let K = kt,
+            At;
+        t[56] !== le || t[57] !== C || t[58] !== O || t[59] !== E || t[60] !== D || t[61] !== a || t[62] !== r ? (At = async e => {
+            let {
+                settings: t
+            } = e, n = l();
+            if (O != null && !Ue(O) || E == null || !He(E) || n?.getWorkspaceId() !== r || n.normalizedAccountUserId !== C || !n.isAdminOfAccount() && !n.isOwnerOfAccount() || a != null && !a.canUpdate()) throw Error(`Workspace administrator authorization changed.`);
+            return await be({
+                workspaceId: r,
+                workspaceUserId: C,
+                pluginId: D,
+                settings: t,
+                transport: le
+            })
+        }, t[56] = le, t[57] = C, t[58] = O, t[59] = E, t[60] = D, t[61] = a, t[62] = r, t[63] = At) : At = t[63];
+        let jt = At,
+            q;
+        t[64] !== D || t[65] !== r ? (q = oe(r, D), t[64] = D, t[65] = r, t[66] = q) : q = t[66];
+        let J;
+        t[67] !== x || t[68] !== S || t[69] !== D || t[70] !== T || t[71] !== K || t[72] !== p || t[73] !== r ? (J = async e => {
+            let {
+                settings: t
+            } = e, n = {
+                workspaceId: r,
+                pluginId: D,
+                detailReadTransport: x,
+                includeDependencies: S,
+                detailQueryKey: T.queryKey,
+                settingsQueryKey: K
+            };
+            await p.cancelQueries({
+                queryKey: n.detailQueryKey,
+                exact: !0
+            }), await p.cancelQueries({
+                queryKey: n.settingsQueryKey,
+                exact: !0
+            });
+            let i = p.getQueryData(n.detailQueryKey),
+                a = p.getQueryData(n.settingsQueryKey);
+            return a == null ? i?.workspace_settings != null && p.setQueryData(n.detailQueryKey, {
+                ...i,
+                workspace_settings: {
+                    ...i.workspace_settings,
+                    installation_policy: t.installation_policy ?? i.workspace_settings.installation_policy,
+                    installed_by_default_role_ids: t.installed_by_default_role_ids ?? i.workspace_settings.installed_by_default_role_ids
+                }
+            }) : ke({
+                queryClient: p,
+                ...n,
+                settings: {
+                    ...a,
+                    installation_policy: t.installation_policy ?? a.installation_policy,
+                    installed_by_default_role_ids: t.installed_by_default_role_ids ?? a.installed_by_default_role_ids
+                }
+            }), {
+                ...n,
+                previousPlugin: i,
+                previousSettings: a
+            }
+        }, t[67] = x, t[68] = S, t[69] = D, t[70] = T, t[71] = K, t[72] = p, t[73] = r, t[74] = J) : J = t[74];
+        let Y;
+        t[75] !== u || t[76] !== D || t[77] !== T || t[78] !== K || t[79] !== p || t[80] !== a || t[81] !== r ? (Y = async (e, t, n) => {
+            if (ke({
+                    queryClient: p,
+                    workspaceId: n?.workspaceId ?? r,
+                    pluginId: n?.pluginId ?? D,
+                    settings: e
+                }), a != null && !a.canUpdate()) {
+                await Promise.all([p.invalidateQueries({
+                    queryKey: n?.detailQueryKey ?? T.queryKey,
+                    refetchType: `none`
+                }), p.invalidateQueries({
+                    queryKey: n?.settingsQueryKey ?? K,
+                    refetchType: `none`
+                }), p.invalidateQueries({
+                    queryKey: ie(`list`, n?.workspaceId ?? r),
+                    refetchType: `none`
+                })]);
+                return
+            }
+            await Ae({
+                queryClient: p,
+                workspaceId: n?.workspaceId ?? r,
+                pluginId: n?.pluginId ?? D
+            }), !(a != null && !a.canUpdate()) && (f.success(u.formatMessage({
+                id: `admin.plugins.v2.detail.availability.toast.success`,
+                defaultMessage: `Workspace availability updated.`
+            })), a?.onSaveSuccess())
+        }, t[75] = u, t[76] = D, t[77] = T, t[78] = K, t[79] = p, t[80] = a, t[81] = r, t[82] = Y) : Y = t[82];
+        let X;
+        t[83] !== u || t[84] !== p || t[85] !== a ? (X = (e, t, n) => {
+            n?.previousSettings == null ? n?.previousPlugin != null && p.setQueryData(n.detailQueryKey, n.previousPlugin) : ke({
+                queryClient: p,
+                workspaceId: n.workspaceId,
+                pluginId: n.pluginId,
+                settingsQueryKey: n.settingsQueryKey,
+                detailReadTransport: n.detailReadTransport,
+                includeDependencies: n.includeDependencies,
+                settings: n.previousSettings
+            }), !(a != null && !a.canUpdate()) && f.danger(u.formatMessage({
+                id: `admin.plugins.v2.detail.availability.toast.failure`,
+                defaultMessage: `Could not update workspace availability.`
+            }))
+        }, t[83] = u, t[84] = p, t[85] = a, t[86] = X) : X = t[86];
+        let Mt;
+        t[87] !== q || t[88] !== J || t[89] !== Y || t[90] !== X || t[91] !== jt ? (Mt = {
+            mutationKey: q,
+            mutationFn: jt,
+            onMutate: J,
+            onSuccess: Y,
+            onError: X
+        }, t[87] = q, t[88] = J, t[89] = Y, t[90] = X, t[91] = jt, t[92] = Mt) : Mt = t[92];
+        let Z = ne(Mt),
+            Nt;
+        t[93] !== Z.isPending || t[94] !== i || t[95] !== O || t[96] !== E ? (Nt = i || Z.isPending || O != null && !Ue(O) || E == null || !He(E), t[93] = Z.isPending, t[94] = i, t[95] = O, t[96] = E, t[97] = Nt) : Nt = t[97];
+        let Q = Nt,
+            Pt;
+        t[98] !== Q || t[99] !== E || t[100] !== a || t[101] !== r ? (Pt = () => E != null && r !== `` && l()?.getWorkspaceId() === r && (a == null || a.canUpdate()) && !Q, t[98] = Q, t[99] = E, t[100] = a, t[101] = r, t[102] = Pt) : Pt = t[102];
+        let $ = Pt,
+            Ft = e => {
+                if (a == null || !Ue(O)) return;
+                let t = e.installation_policy ?? O.installation_policy,
+                    n = e.installed_by_default_role_ids ?? O.installed_by_default_role_ids,
+                    r = A && V != null ? !fe(new Set(ve({
+                        settings: O,
+                        eligibleRoleIds: V
+                    })), new Set(ve({
+                        settings: {
+                            installation_policy: t,
+                            installed_by_default_role_ids: n
+                        },
+                        eligibleRoleIds: V
+                    }))) : t !== O.installation_policy;
+                a.onDraftChange(r ? e : null)
+            },
+            It = e => {
+                if (!$() || e === wt) return;
+                if (A) {
+                    if (U == null || V == null || !V.has(U.id)) return;
+                    Lt(U, e);
+                    return
+                }
+                let t = he({
+                    mode: e ? `installed_by_default` : `available`
+                });
+                if (a != null) {
+                    Ft(t);
+                    return
+                }
+                Z.mutate({
+                    settings: t,
+                    savingRoleId: null
+                })
+            },
+            Lt = (e, t) => {
+                if (!$() || V == null || !V.has(e.id) || H.has(e.id) === t) return;
+                let n = new Set(H);
+                t ? n.add(e.id) : n.delete(e.id);
+                let r = he({
+                    mode: n.size === 0 ? `available` : n.size === V.size ? `installed_by_default` : `custom_by_group`,
+                    installedByDefaultRoleIds: n,
+                    eligibleRoleIds: V
+                });
+                if (a != null) {
+                    Ft(r);
+                    return
+                }
+                Z.mutate({
+                    settings: r,
+                    savingRoleId: e.id
+                })
+            },
+            Rt;
+        t[103] === u ? Rt = t[104] : (Rt = u.formatMessage({
+            id: `admin.plugins.v2.detail.availability.available.label`,
+            defaultMessage: `Available`
+        }), t[103] = u, t[104] = Rt);
+        let zt = Rt,
+            Bt;
+        t[105] === u ? Bt = t[106] : (Bt = u.formatMessage({
+            id: `admin.plugins.v2.detail.availability.installed.label`,
+            defaultMessage: `Installed`
+        }), t[105] = u, t[106] = Bt);
+        let Vt = Bt,
+            Ht;
+        t[107] === u ? Ht = t[108] : (Ht = u.formatMessage({
+            id: `admin.plugins.v2.detail.availability.saving.label`,
+            defaultMessage: `Saving workspace availability`
+        }), t[107] = u, t[108] = Ht);
+        let Ut = Ht;
+        if (s != null) {
+            let e = s.roleId == null ? U : Ge.find(e => e.id === s.roleId);
+            return (0, L.jsx)(Ye, {
+                labelledBy: s.labelledBy,
+                installed: s.roleId == null ? wt : e != null && H.has(e.id),
+                disabled: Q || G || Dt || s.roleId != null && !A || A && (e == null || !V?.has(e.id)),
+                loading: Z.isPending || G,
+                loadingLabel: Ut,
+                availableLabel: zt,
+                installedLabel: Vt,
+                onInstalledChange: t => {
+                    s.roleId == null ? It(t) : e != null && Lt(e, t)
+                }
+            })
+        }
+        let Wt;
+        t[109] === Symbol.for(`react.memo_cache_sentinel`) ? (Wt = (0, L.jsx)(`div`, {
+            id: `admin-plugin-v2-workspace-availability-label`,
+            className: `text-token-text-primary text-sm font-medium`,
+            children: (0, L.jsx)(y, {
+                id: `admin.plugins.v2.detail.availability.workspace.label`,
+                defaultMessage: `Workspace default`
+            })
+        }), t[109] = Wt) : Wt = t[109];
+        let Gt;
+        t[110] === A ? Gt = t[111] : (Gt = (0, L.jsxs)(`div`, {
+            className: `min-w-0`,
+            children: [Wt, (0, L.jsx)(`p`, {
+                className: `text-token-text-secondary mt-0.5 text-xs`,
+                children: A ? (0, L.jsx)(y, {
+                    id: `admin.plugins.v2.detail.availability.workspace.role.description`,
+                    defaultMessage: `The default for users who are not assigned a role`
+                }) : (0, L.jsx)(y, {
+                    id: `admin.plugins.v2.detail.availability.workspace.description`,
+                    defaultMessage: `Applies to everyone in this workspace`
+                })
+            })]
+        }), t[110] = A, t[111] = Gt);
+        let Kt;
+        t[112] !== u || t[113] !== A || t[114] !== G || t[115] !== W ? (Kt = A && G ? (0, L.jsx)(`div`, {
+            "aria-busy": `true`,
+            "aria-label": u.formatMessage({
+                id: `admin.plugins.v2.detail.availability.roles.loading`,
+                defaultMessage: `Loading role availability`
+            }),
+            role: `status`,
+            className: `group skeleton [--skeleton-opacity:0.75]`,
+            children: [0, 1].map(e => (0, L.jsxs)(`div`, {
+                "aria-hidden": !0,
+                className: `border-token-border-light relative ms-8 flex min-h-[64px] flex-col gap-3 border-b py-4 sm:flex-row sm:items-center sm:justify-between`,
+                children: [e === 0 && W.length === 0 ? (0, L.jsx)(se, {
+                    "aria-hidden": !0,
+                    className: `text-token-text-secondary icon-sm absolute -start-8 top-4 shrink-0 sm:top-1/2 sm:-translate-y-1/2 rtl:-scale-x-100`
+                }) : null, (0, L.jsxs)(`span`, {
+                    className: `flex min-w-0 items-center gap-2`,
+                    children: [(0, L.jsx)(`span`, {
+                        className: `skeleton-child size-5 shrink-0 rounded-md`
+                    }), (0, L.jsx)(`span`, {
+                        className: `skeleton-child h-4 w-32 max-w-full rounded-md`
+                    })]
+                }), (0, L.jsxs)(`span`, {
+                    className: `bg-token-bg-secondary flex w-fit shrink-0 gap-1 rounded-full p-0.5`,
+                    children: [(0, L.jsx)(`span`, {
+                        className: `skeleton-child h-7 w-20 rounded-full`
+                    }), (0, L.jsx)(`span`, {
+                        className: `skeleton-child h-7 w-16 rounded-full`
+                    })]
+                })]
+            }, e))
+        }) : null, t[112] = u, t[113] = A, t[114] = G, t[115] = W, t[116] = Kt) : Kt = t[116];
+        let qt;
+        t[117] !== A || t[118] !== Dt || t[119] !== G ? (qt = A && !G && Dt ? (0, L.jsx)(`p`, {
+            role: `alert`,
+            className: `border-token-border-light text-token-text-secondary border-b py-4 text-sm`,
+            children: (0, L.jsx)(y, {
+                id: `admin.plugins.v2.detail.availability.roles.error`,
+                defaultMessage: `Unable to load role overrides.`
+            })
+        }) : null, t[117] = A, t[118] = Dt, t[119] = G, t[120] = qt) : qt = t[120];
+        let Jt;
+        t[121] !== Ot || t[122] !== Q || t[123] !== A || t[124] !== Et || t[125] !== b || t[126] !== W ? (Jt = A && Ot ? (0, L.jsxs)(`button`, {
+            type: `button`,
+            "aria-expanded": b,
+            disabled: Q,
+            onClick: () => te(!b),
+            className: `text-token-text-secondary hover:text-token-text-primary relative ms-8 flex min-h-12 items-center text-sm disabled:cursor-not-allowed disabled:opacity-60`,
+            children: [W.length === 0 ? (0, L.jsx)(se, {
+                "aria-hidden": !0,
+                className: `icon-sm absolute -start-8 top-1/2 shrink-0 -translate-y-1/2 rtl:-scale-x-100`
+            }) : null, b ? (0, L.jsx)(y, {
+                id: `admin.plugins.v2.detail.availability.roles.hide`,
+                defaultMessage: `Hide roles`
+            }) : Et.length > 0 ? (0, L.jsx)(y, {
+                id: `admin.plugins.v2.detail.availability.roles.show_all`,
+                defaultMessage: `See all roles`
+            }) : (0, L.jsx)(y, {
+                id: `admin.plugins.v2.detail.availability.roles.add`,
+                defaultMessage: `Customize per role`
+            })]
+        }) : null, t[121] = Ot, t[122] = Q, t[123] = A, t[124] = Et, t[125] = b, t[126] = W, t[127] = Jt) : Jt = t[127];
+        let Yt = (0, L.jsxs)(`div`, {
+            children: [(0, L.jsxs)(`div`, {
+                className: `border-token-border-light flex min-h-[72px] flex-col gap-3 border-b py-4 sm:flex-row sm:items-center sm:justify-between`,
+                children: [Gt, (0, L.jsx)(Ye, {
+                    labelledBy: `admin-plugin-v2-workspace-availability-label`,
+                    installed: wt,
+                    disabled: Q || A && (V == null || U == null || !V.has(U.id)),
+                    loading: Z.isPending && (Z.variables.savingRoleId == null || Z.variables.savingRoleId === U?.id),
+                    loadingLabel: Ut,
+                    availableLabel: zt,
+                    installedLabel: Vt,
+                    onInstalledChange: It
+                })]
+            }), A ? W.map((e, t) => {
+                let n = `${g}-${e.id}`;
+                return (0, L.jsxs)(`div`, {
+                    className: `border-token-border-light relative ms-8 flex min-h-[64px] flex-col gap-3 border-b py-4 sm:flex-row sm:items-center sm:justify-between`,
+                    children: [t === 0 ? (0, L.jsx)(se, {
+                        "aria-hidden": !0,
+                        className: `text-token-text-secondary icon-sm absolute -start-8 top-4 shrink-0 sm:top-1/2 sm:-translate-y-1/2 rtl:-scale-x-100`
+                    }) : null, (0, L.jsxs)(`div`, {
+                        className: `flex min-w-0 items-center gap-2`,
+                        children: [(0, L.jsx)(ce, {
+                            "aria-hidden": !0,
+                            className: `text-token-text-secondary icon-sm shrink-0`
+                        }), (0, L.jsx)(`span`, {
+                            id: n,
+                            className: `text-token-text-primary truncate text-sm`,
+                            children: e.name
+                        })]
+                    }), (0, L.jsx)(Ye, {
+                        labelledBy: n,
+                        installed: H.has(e.id),
+                        disabled: Q || !V?.has(e.id),
+                        loading: Z.isPending && Z.variables.savingRoleId === e.id,
+                        loadingLabel: Ut,
+                        availableLabel: zt,
+                        installedLabel: Vt,
+                        onInstalledChange: t => Lt(e, t)
+                    })]
+                }, e.id)
+            }) : null, Kt, qt, Jt]
+        });
+        if (a == null) return Yt;
+        let Xt;
+        return t[128] !== Z || t[129] !== $ || t[130] !== V || t[131] !== A || t[132] !== a.draft ? (Xt = e => {
+            e.preventDefault(), !(a.draft == null || !$() || A && (V == null || a.draft.installed_by_default_role_ids?.some(e => !V.has(e)))) && Z.mutate({
+                settings: a.draft,
+                savingRoleId: null
+            })
+        }, t[128] = Z, t[129] = $, t[130] = V, t[131] = A, t[132] = a.draft, t[133] = Xt) : Xt = t[133], (0, L.jsx)(`form`, {
+            id: a.formId,
+            onSubmit: Xt,
+            children: Yt
+        })
+    }
+}));
+export {
+    F as n, ct as r, st as t
+};
 //# sourceMappingURL=6e0b8cd0-gftm93z9vxcq4gd8.js.map
