@@ -1,2 +1,52 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{M5 as t,fF as n,m8 as r,uF as i}from"./4813494d-qsuygr73qjc6rh65.js";import{Tn as a,Vn as o}from"./2340486e-komxp8tzs51ny4jj.js";import{EDt as s,TDt as c,YGn as l,ZGn as u,eDt as d,nDt as f}from"./conversation-small-cawdu7il3ha6y70c.js";function p(e){"use forget";let n=(0,m.c)(11),r,a;n[0]===e?(r=n[1],a=n[2]):({sidePaneShellHostStore:a,...r}=e,n[0]=e,n[1]=r,n[2]=a);let o;n[3]===r.clientThreadId?o=n[4]:(o=()=>r.clientThreadId==null?null:f(i(r.clientThreadId)),n[3]=r.clientThreadId,n[4]=o);let s=t(o),u=r.libraryFileId!=null&&s?.libraryFileId===r.libraryFileId?s.fileId:r.fileId,d;n[5]!==u||n[6]!==r?(d=(0,h.jsx)(c,{...r,fileId:u}),n[5]=u,n[6]=r,n[7]=d):d=n[7];let p;return n[8]!==a||n[9]!==d?(p=(0,h.jsx)(l,{value:a,children:d}),n[8]=a,n[9]=d,n[10]=p):p=n[10],p}var m,h,g=e((()=>{m=a(),n(),s(),d(),u(),r(),h=o()}));export{g as n,p as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    M5 as t,
+    fF as n,
+    m8 as r,
+    uF as i
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Tn as a,
+    Vn as o
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    EDt as s,
+    TDt as c,
+    YGn as l,
+    ZGn as u,
+    eDt as d,
+    nDt as f
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+
+function p(e) {
+    "use forget";
+    let n = (0, m.c)(11),
+        r, a;
+    n[0] === e ? (r = n[1], a = n[2]) : ({
+        sidePaneShellHostStore: a,
+        ...r
+    } = e, n[0] = e, n[1] = r, n[2] = a);
+    let o;
+    n[3] === r.clientThreadId ? o = n[4] : (o = () => r.clientThreadId == null ? null : f(i(r.clientThreadId)), n[3] = r.clientThreadId, n[4] = o);
+    let s = t(o),
+        u = r.libraryFileId != null && s?.libraryFileId === r.libraryFileId ? s.fileId : r.fileId,
+        d;
+    n[5] !== u || n[6] !== r ? (d = (0, h.jsx)(c, {
+        ...r,
+        fileId: u
+    }), n[5] = u, n[6] = r, n[7] = d) : d = n[7];
+    let p;
+    return n[8] !== a || n[9] !== d ? (p = (0, h.jsx)(l, {
+        value: a,
+        children: d
+    }), n[8] = a, n[9] = d, n[10] = p) : p = n[10], p
+}
+var m, h, g = e((() => {
+    m = a(), n(), s(), d(), u(), r(), h = o()
+}));
+export {
+    g as n, p as t
+};
 //# sourceMappingURL=dcea21c8-ef4x0tlwvx6pba28.js.map

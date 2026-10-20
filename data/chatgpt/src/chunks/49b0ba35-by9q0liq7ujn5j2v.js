@@ -1,2 +1,145 @@
-import{n as e,r as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Hnt as n,I1 as r,Jnt as i,M5 as a,S1 as o,fF as s,m8 as c,mF as l}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as u,Tn as d,Vn as f,zn as p}from"./2340486e-komxp8tzs51ny4jj.js";import{o as m,t as h}from"./e3b746a6-l03ryumaq56c1nhz.js";import{a as g,i as _,n as v,r as y,t as b}from"./99a768a6-jzd4dc59ce08sjbv.js";var x=t({SitesPreview:()=>T});function S(){let e=o();return(e?.isFree()===!0||e?.isGo()===!0)&&n(`3226734443`,{disableExposureLog:!0})}var C,w,T,E=e((()=>{C=d(),m(),s(),c(),r(),i(),p(),y(),v(),w=f(),T=e=>{"use forget";let t=(0,C.c)(53),n,r;t[0]===e?(n=t[1],r=t[2]):({title:r,...n}=e,t[0]=e,t[1]=n,t[2]=r);let i=u(),o=l(),s;t[3]===o?s=t[4]:(s=()=>o?.serverId$(),t[3]=o,t[4]=s);let c=a(s),d=a(S),f;t[5]===i?f=t[6]:(f=i.formatMessage({id:`chatgpt.sites.preview.loading.building_site`,defaultMessage:`Building your site`}),t[5]=i,t[6]=f);let p;t[7]===i?p=t[8]:(p=i.formatMessage({id:`chatgpt.sites.preview.loading.sketching_page`,defaultMessage:`Sketching the page`}),t[7]=i,t[8]=p);let m;t[9]===i?m=t[10]:(m=i.formatMessage({id:`chatgpt.sites.preview.loading.shaping_layout`,defaultMessage:`Shaping the layout`}),t[9]=i,t[10]=m);let v;t[11]===i?v=t[12]:(v=i.formatMessage({id:`chatgpt.sites.preview.loading.arranging_sections`,defaultMessage:`Arranging the sections`}),t[11]=i,t[12]=v);let y;t[13]===i?y=t[14]:(y=i.formatMessage({id:`chatgpt.sites.preview.loading.styling_page`,defaultMessage:`Styling the page`}),t[13]=i,t[14]=y);let x;t[15]===i?x=t[16]:(x=i.formatMessage({id:`chatgpt.sites.preview.loading.refining_navigation`,defaultMessage:`Refining the navigation`}),t[15]=i,t[16]=x);let T;t[17]===i?T=t[18]:(T=i.formatMessage({id:`chatgpt.sites.preview.loading.adding_interactions`,defaultMessage:`Adding interactions`}),t[17]=i,t[18]=T);let E;t[19]===i?E=t[20]:(E=i.formatMessage({id:`chatgpt.sites.preview.loading.connecting_controls`,defaultMessage:`Connecting the controls`}),t[19]=i,t[20]=E);let D;t[21]===i?D=t[22]:(D=i.formatMessage({id:`chatgpt.sites.preview.loading.polishing_visuals`,defaultMessage:`Polishing the visuals`}),t[21]=i,t[22]=D);let O;t[23]===i?O=t[24]:(O=i.formatMessage({id:`chatgpt.sites.preview.loading.preparing_preview`,defaultMessage:`Preparing the preview`}),t[23]=i,t[24]=O);let k;t[25]===i?k=t[26]:(k=i.formatMessage({id:`chatgpt.sites.preview.loading.refining_details`,defaultMessage:`Refining the details`}),t[25]=i,t[26]=k);let A;t[27]!==D||t[28]!==O||t[29]!==k||t[30]!==f||t[31]!==p||t[32]!==m||t[33]!==v||t[34]!==y||t[35]!==x||t[36]!==T||t[37]!==E?(A=[f,p,m,v,y,x,T,E,D,O,k],t[27]=D,t[28]=O,t[29]=k,t[30]=f,t[31]=p,t[32]=m,t[33]=v,t[34]=y,t[35]=x,t[36]=T,t[37]=E,t[38]=A):A=t[38];let j=A,M;t[39]!==i||t[40]!==r?(M=r??i.formatMessage(g),t[39]=i,t[40]=r,t[41]=M):M=t[41];let N=M,P=c??void 0,F;t[42]===P?F=t[43]:(F=(0,w.jsx)(b,{conversationId:P}),t[42]=P,t[43]=F);let I;t[44]===i?I=t[45]:(I=i.formatMessage(_),t[44]=i,t[45]=I);let L;return t[46]!==d||t[47]!==j||t[48]!==N||t[49]!==n||t[50]!==F||t[51]!==I?(L=(0,w.jsx)(h,{...n,editingEnabled:d,expandedHeaderAction:F,expandedViewEnabled:!0,inlineHeight:600,isStreaming:!1,loadingLabels:j,previewLoadingLabel:I,progressiveStreaming:!1,styleMode:`open`,title:N,variant:`artifact`}),t[46]=d,t[47]=j,t[48]=N,t[49]=n,t[50]=F,t[51]=I,t[52]=L):L=t[52],L}}));export{E as n,x as r,T as t};
+import {
+    n as e,
+    r as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Hnt as n,
+    I1 as r,
+    Jnt as i,
+    M5 as a,
+    S1 as o,
+    fF as s,
+    m8 as c,
+    mF as l
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as u,
+    Tn as d,
+    Vn as f,
+    zn as p
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    o as m,
+    t as h
+} from "./e3b746a6-l03ryumaq56c1nhz.js";
+import {
+    a as g,
+    i as _,
+    n as v,
+    r as y,
+    t as b
+} from "./99a768a6-jzd4dc59ce08sjbv.js";
+var x = t({
+    SitesPreview: () => T
+});
+
+function S() {
+    let e = o();
+    return (e?.isFree() === !0 || e?.isGo() === !0) && n(`3226734443`, {
+        disableExposureLog: !0
+    })
+}
+var C, w, T, E = e((() => {
+    C = d(), m(), s(), c(), r(), i(), p(), y(), v(), w = f(), T = e => {
+        "use forget";
+        let t = (0, C.c)(53),
+            n, r;
+        t[0] === e ? (n = t[1], r = t[2]) : ({
+            title: r,
+            ...n
+        } = e, t[0] = e, t[1] = n, t[2] = r);
+        let i = u(),
+            o = l(),
+            s;
+        t[3] === o ? s = t[4] : (s = () => o?.serverId$(), t[3] = o, t[4] = s);
+        let c = a(s),
+            d = a(S),
+            f;
+        t[5] === i ? f = t[6] : (f = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.building_site`,
+            defaultMessage: `Building your site`
+        }), t[5] = i, t[6] = f);
+        let p;
+        t[7] === i ? p = t[8] : (p = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.sketching_page`,
+            defaultMessage: `Sketching the page`
+        }), t[7] = i, t[8] = p);
+        let m;
+        t[9] === i ? m = t[10] : (m = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.shaping_layout`,
+            defaultMessage: `Shaping the layout`
+        }), t[9] = i, t[10] = m);
+        let v;
+        t[11] === i ? v = t[12] : (v = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.arranging_sections`,
+            defaultMessage: `Arranging the sections`
+        }), t[11] = i, t[12] = v);
+        let y;
+        t[13] === i ? y = t[14] : (y = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.styling_page`,
+            defaultMessage: `Styling the page`
+        }), t[13] = i, t[14] = y);
+        let x;
+        t[15] === i ? x = t[16] : (x = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.refining_navigation`,
+            defaultMessage: `Refining the navigation`
+        }), t[15] = i, t[16] = x);
+        let T;
+        t[17] === i ? T = t[18] : (T = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.adding_interactions`,
+            defaultMessage: `Adding interactions`
+        }), t[17] = i, t[18] = T);
+        let E;
+        t[19] === i ? E = t[20] : (E = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.connecting_controls`,
+            defaultMessage: `Connecting the controls`
+        }), t[19] = i, t[20] = E);
+        let D;
+        t[21] === i ? D = t[22] : (D = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.polishing_visuals`,
+            defaultMessage: `Polishing the visuals`
+        }), t[21] = i, t[22] = D);
+        let O;
+        t[23] === i ? O = t[24] : (O = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.preparing_preview`,
+            defaultMessage: `Preparing the preview`
+        }), t[23] = i, t[24] = O);
+        let k;
+        t[25] === i ? k = t[26] : (k = i.formatMessage({
+            id: `chatgpt.sites.preview.loading.refining_details`,
+            defaultMessage: `Refining the details`
+        }), t[25] = i, t[26] = k);
+        let A;
+        t[27] !== D || t[28] !== O || t[29] !== k || t[30] !== f || t[31] !== p || t[32] !== m || t[33] !== v || t[34] !== y || t[35] !== x || t[36] !== T || t[37] !== E ? (A = [f, p, m, v, y, x, T, E, D, O, k], t[27] = D, t[28] = O, t[29] = k, t[30] = f, t[31] = p, t[32] = m, t[33] = v, t[34] = y, t[35] = x, t[36] = T, t[37] = E, t[38] = A) : A = t[38];
+        let j = A,
+            M;
+        t[39] !== i || t[40] !== r ? (M = r ?? i.formatMessage(g), t[39] = i, t[40] = r, t[41] = M) : M = t[41];
+        let N = M,
+            P = c ?? void 0,
+            F;
+        t[42] === P ? F = t[43] : (F = (0, w.jsx)(b, {
+            conversationId: P
+        }), t[42] = P, t[43] = F);
+        let I;
+        t[44] === i ? I = t[45] : (I = i.formatMessage(_), t[44] = i, t[45] = I);
+        let L;
+        return t[46] !== d || t[47] !== j || t[48] !== N || t[49] !== n || t[50] !== F || t[51] !== I ? (L = (0, w.jsx)(h, {
+            ...n,
+            editingEnabled: d,
+            expandedHeaderAction: F,
+            expandedViewEnabled: !0,
+            inlineHeight: 600,
+            isStreaming: !1,
+            loadingLabels: j,
+            previewLoadingLabel: I,
+            progressiveStreaming: !1,
+            styleMode: `open`,
+            title: N,
+            variant: `artifact`
+        }), t[46] = d, t[47] = j, t[48] = N, t[49] = n, t[50] = F, t[51] = I, t[52] = L) : L = t[52], L
+    }
+}));
+export {
+    E as n, x as r, T as t
+};
 //# sourceMappingURL=49b0ba35-by9q0liq7ujn5j2v.js.map

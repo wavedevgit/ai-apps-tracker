@@ -1,2 +1,462 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bot as n,Ei as r,Fx as i,Hnt as ee,J5 as a,Jnt as o,Mx as s,Ni as te,Nx as ne,Pi as re,RU as ie,SN as c,_N as l,iE as ae,ki as u,q5 as oe,rE as d,vN as f,yN as se,zU as ce,zot as p}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as le,Hn as m,Tn as h,Vn as g,zn as ue}from"./2340486e-komxp8tzs51ny4jj.js";import{c as _,s as de}from"./31cec8d8-ejzahhq8v425zkie.js";import{a as fe,i as v}from"./dced7e81-gzel4lkhr8icz6qa.js";import{a as pe,i as me,o as he,r as ge,s as _e}from"./c93e007a-dbcbk2sloiunle7o.js";import{E as ve,U as ye,f as y,r as be,w as b}from"./bcae0416-gpoh40wq8xybesjx.js";import{c as xe,l as Se,s as Ce,u as we}from"./df59e297-hhsu9fndczbcvp55.js";import{t as Te}from"./4c0f1f8e-lcllh9m5rwe6l2ew.js";import{_ as Ee,a as x,c as De,d as Oe,f as S,h as ke,i as Ae,m as je,n as Me,o as Ne,r as Pe,s as Fe,t as Ie,u as C,v as Le}from"./14046b31-omwiwy0oxux9bod9.js";import{C as w,E as T}from"./bcae0416-gky2jkyu7jq786j6.js";import{n as Re,r as E,t as D}from"./6cb574fa-hpeydd2lxw6dodj4.js";import{m as ze,p as O}from"./e99f8e1a-bssn075ev01abn1i.js";var Be,k,A,j,M=e((()=>{Be=`E1e5UW_codemirror`,k=`E1e5UW_preview`,A=`E1e5UW_systemFont`,j={codemirror:Be,preview:k,systemFont:A}})),N,P,F,I,L,Ve,R=e((()=>{se(),w(),ye(),y(),N=t(m()),ze(),P=be.theme({".cm-tooltip-autocomplete":{backgroundColor:`var(--main-surface-primary)`,color:`var(--text-primary)`,border:`1px solid var(--border-light)`,borderRadius:`6px`,padding:`4px`,boxShadow:`0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)`},".cm-tooltip-autocomplete > ul > li":{borderRadius:`5px`,color:`var(--text-primary)`},".cm-tooltip-autocomplete > ul > li[aria-selected]":{backgroundColor:`var(--main-surface-secondary)`,color:`var(--text-primary)`},".cm-tooltip-autocomplete > ul > li:hover":{backgroundColor:`var(--selection)`,color:`#ffffff`},".cm-completionMatchedText":{textDecoration:`none`,fontWeight:`700`}}),F=be.theme({".cm-scroller":{fontFamily:`ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important`}}),I=be.theme({"&":{backgroundColor:`transparent`}}),L=e=>[F,I,P,T(O(e),{fallback:!0})],Ve=e=>{let[t]=(0,N.useState)(()=>new b),n=c();(0,N.useEffect)(()=>{e.current?.dispatch({effects:t.reconfigure(L(n))})},[n,t,e]);let[r]=(0,N.useState)(()=>t.of(L(n)));return r}}));function He(){return new b}function Ue(){return new b}function We(){return new b}function Ge(){return new b}async function Ke(e){return e?await D(e):null}var qe,z,Je,B,V,Ye,Xe,H=e((()=>{qe=h(),x(),Ee(),ge(),ke(),S(),C(),Ne(),we(),v(),_(),u(),ce(),i(),p(),o(),d(),l(),ye(),y(),a(),z=t(m()),ue(),Je=t(Te()),M(),E(),R(),B=g(),V=e=>{"use forget";let t=(0,qe.c)(116),{id:i,children:a,comments:o,commentingOn:c,currentlyStreamingLineIndex:l,hoveredCommentId:u,focusedCommentId:d,placeholder:se,readonlyReason:ce,language:p,value:m,textdocDiff:h,extensions:g,maxLength:ue,onBlur:_,onSave:v,onChange:ge,editorRef:ye,width:y,modelCursor:b,isPreview:we,hideLineNumbers:Te,useSystemFont:Ee}=e,x=se===void 0?``:se,S=Te!==void 0&&Te,ke=Ee!==void 0&&Ee,Ne=(0,z.useRef)(null),C=(0,z.useRef)(null),w=le(),T=(ee(`1958014328`)?1e7:void 0)??ue,E=ce?.isReadonly===!0,[D,ze]=(0,z.useState)(null),O=(0,z.useRef)(null),[Be,k]=(0,Je.default)(),{width:A}=Be,[M]=(0,z.useState)(He),[N]=(0,z.useState)(Ue),[P]=(0,z.useState)(We),[F]=(0,z.useState)(Ge),I;t[0]===ge?I=t[1]:(I=e=>{let{docChanged:t,state:n,transactions:r}=e;for(let e of r)if(e.annotation(Ie)===!0||e.annotation(Oe)===!0)return;if(t){let e=n.doc.toString();O.current=e,ge?.(n)}},t[0]=ge,t[1]=I);let L=f(I),R;t[2]===_?R=t[3]:(R=()=>_?.(),t[2]=_,t[3]=R);let V=f(R),H;t[4]===v?H=t[5]:(H=()=>v?.(),t[4]=v,t[5]=H);let U=f(H),W;t[6]!==E||t[7]!==v?(W=e=>v==null||E||!te(`saveCanvasEditor`,e)?!1:(e.preventDefault(),r(`saveCanvasEditor`,e)),t[6]=E,t[7]=v,t[8]=W):W=t[8];let Ze=f(W),Qe=Ke,$e;t[9]!==M||t[10]!==h||t[11]!==F?($e=async e=>{let t=await Qe(e);t&&C.current?.dispatch({effects:[M.reconfigure(t),...Ae(F,h,t?.language)]})},t[9]=M,t[10]=h,t[11]=F,t[12]=$e):$e=t[12];let et=f($e),tt=Ve(C),nt;t[13]!==o||t[14]!==l||t[15]!==p||t[16]!==M||t[17]!==h||t[18]!==F?(nt=e=>{if(e===O.current){O.current=null;return}let{current:t}=C;if(!t)return;let n=t.state.doc,r=n.toString(),i=De(r,0,r.length,e,0,e.length),ee=e.slice(i),a={from:i,to:n.length,insert:ee},s=p==null?null:Re(p),te=t.state.update({changes:a,effects:[pe.of(o??[]),Le.of(l??null),...s==null?[]:[M.reconfigure(s)],...Ae(F,h,s?.language)],annotations:Ie.of(!0)});t.update([te])},t[13]=o,t[14]=l,t[15]=p,t[16]=M,t[17]=h,t[18]=F,t[19]=nt):nt=t[19];let rt=f(nt),it;t[20]===rt?it=t[21]:(it=()=>({UNSAFE_setValue:rt,codeViewRef:C,highlightLine:(e,t)=>je(n(C.current),e,t)}),t[20]=rt,t[21]=it),(0,z.useImperativeHandle)(ye,it);let at,ot;t[22]!==p||t[23]!==et?(at=()=>{et(p)},ot=[p,et],t[22]=p,t[23]=et,t[24]=at,t[25]=ot):(at=t[24],ot=t[25]),(0,z.useEffect)(at,ot);let st;t[26]!==p||t[27]!==h||t[28]!==F?(st=()=>{let e=p==null?null:Re(p);C.current?.dispatch({effects:Ae(F,h,e?.language)})},t[26]=p,t[27]=h,t[28]=F,t[29]=st):st=t[29];let ct=(0,z.useEffectEvent)(st),lt;t[30]===ct?lt=t[31]:(lt=()=>{ct()},t[30]=ct,t[31]=lt);let ut;t[32]!==h||t[33]!==F?(ut=[F,h],t[32]=h,t[33]=F,t[34]=ut):ut=t[34],(0,z.useEffect)(lt,ut);let dt,ft;t[35]!==N||t[36]!==E||t[37]!==P?(dt=()=>{C.current?.dispatch({effects:[N.reconfigure(be.editable.of(!E)),P.reconfigure(ve.readOnly.of(E))]})},ft=[E,N,P],t[35]=N,t[36]=E,t[37]=P,t[38]=dt,t[39]=ft):(dt=t[38],ft=t[39]),(0,z.useEffect)(dt,ft);let pt,mt;t[40]===c?(pt=t[41],mt=t[42]):(pt=()=>{(c==null||fe(c))&&C.current?.dispatch({effects:me.of(c??null)})},mt=[c],t[40]=c,t[41]=pt,t[42]=mt),(0,z.useEffect)(pt,mt);let ht,gt;t[43]===o?(ht=t[44],gt=t[45]):(ht=()=>{C.current?.dispatch({effects:pe.of(o??[])})},gt=[o],t[43]=o,t[44]=ht,t[45]=gt),(0,z.useEffect)(ht,gt);let _t,vt;t[46]===u?(_t=t[47],vt=t[48]):(_t=()=>{C.current?.dispatch({effects:_e.of(u)})},vt=[u],t[46]=u,t[47]=_t,t[48]=vt),(0,z.useEffect)(_t,vt);let yt,G;t[49]===d?(yt=t[50],G=t[51]):(yt=()=>{C.current?.dispatch({effects:he.of(d)})},G=[d],t[49]=d,t[50]=yt,t[51]=G),(0,z.useEffect)(yt,G);let bt,xt;t[52]===b?(bt=t[53],xt=t[54]):(bt=()=>{C.current?.dispatch({effects:Fe.of(b)})},xt=[b],t[52]=b,t[53]=bt,t[54]=xt),(0,z.useEffect)(bt,xt);let St,Ct;t[55]===l?(St=t[56],Ct=t[57]):(St=()=>{C.current?.dispatch({effects:Le.of(l??null)})},Ct=[l],t[55]=l,t[56]=St,t[57]=Ct),(0,z.useEffect)(St,Ct);let wt,Tt;t[58]!==U||t[59]!==E||t[60]!==v?(wt=()=>re({key:`saveCanvasEditor`,action:U,actionMessageDescriptor:{id:`keyboardActions.saveCanvasEditor`,defaultMessage:`Save canvas editor`,description:`Keyboard shortcut label for saving the focused canvas code editor.`},bindings:[{binding:[ne.Mod,`s`]}],enabled:v!=null&&!E,group:s.Chat,order:10,scope:`canvas`}),Tt=[U,E,v],t[58]=U,t[59]=E,t[60]=v,t[61]=wt,t[62]=Tt):(wt=t[61],Tt=t[62]),(0,z.useEffect)(wt,Tt);let Et;t[63]!==o||t[64]!==l||t[65]!==N||t[66]!==tt||t[67]!==g||t[68]!==V||t[69]!==L||t[70]!==Ze||t[71]!==S||t[72]!==w||t[73]!==E||t[74]!==p||t[75]!==M||t[76]!==T||t[77]!==b||t[78]!==x||t[79]!==P||t[80]!==h||t[81]!==F||t[82]!==m?(Et=e=>{let t=p==null?null:Re(p),n=Pe({currentlyStreamingLineIndex:l,value:m,placeholderContent:x,editableCompartment:N,readOnlyCompartment:P,editableInit:!E,languageCompartment:M,languageCompartmentInit:t??null,handleChange:L,handleBlur:V,handleSaveShortcut:Ze,extensionsProp:g,editorTheme:tt,intl:w,toaster:ie(),maxLength:T,comments:o??[],modelCursor:b,textdocDiff:h,unifiedMergeViewCompartment:F,hideLineNumbers:S});ze(n);let r=Me({state:n,parent:e,onUpdateState:ze});return C.current=r,()=>{r.destroy()}},t[63]=o,t[64]=l,t[65]=N,t[66]=tt,t[67]=g,t[68]=V,t[69]=L,t[70]=Ze,t[71]=S,t[72]=w,t[73]=E,t[74]=p,t[75]=M,t[76]=T,t[77]=b,t[78]=x,t[79]=P,t[80]=h,t[81]=F,t[82]=m,t[83]=Et):Et=t[83];let Dt=(0,z.useEffectEvent)(Et),Ot;t[84]===Dt?Ot=t[85]:(Ot=()=>{let e=Ne.current;if(e!=null)return Dt(e)},t[84]=Dt,t[85]=Ot);let kt;t[86]!==g||t[87]!==i||t[88]!==x?(kt=[i,g,x],t[86]=g,t[87]=i,t[88]=x,t[89]=kt):kt=t[89],(0,z.useEffect)(Ot,kt);let At;t[90]===Symbol.for(`react.memo_cache_sentinel`)?(At=()=>C.current,t[90]=At):At=t[90];let jt=At,K,q;t[91]===a?(K=t[92],q=t[93]):(K=[],q=[],z.Children.forEach(a,e=>{if(!(0,z.isValidElement)(e))return;let{type:t}=e;if(t===Xe)K.push(e);else if(t===Ye)q.push(e);else throw Error(`Invalid Codemirror child: `+JSON.stringify(t))}),t[91]=a,t[92]=K,t[93]=q);let Mt=we&&j.preview,Nt=ke&&j.systemFont,J;t[94]!==Mt||t[95]!==Nt?(J=oe(j.codemirror,Mt,Nt,de.composer,`flex h-full w-full flex-col items-stretch`),t[94]=Mt,t[95]=Nt,t[96]=J):J=t[96];let Y;t[97]===k?Y=t[98]:(Y=ae(Ne,k),t[97]=k,t[98]=Y);let X;t[99]===y?X=t[100]:(X={width:y},t[99]=y,t[100]=X);let Z;t[101]!==i||t[102]!==J||t[103]!==Y||t[104]!==X?(Z=(0,B.jsx)(`div`,{id:i,className:J,ref:Y,style:X}),t[101]=i,t[102]=J,t[103]=Y,t[104]=X,t[105]=Z):Z=t[105];let Q;t[106]!==q||t[107]!==Z?(Q=(0,B.jsxs)(`div`,{className:`relative z-0 flex h-full max-w-full`,children:[Z,q]}),t[106]=q,t[107]=Z,t[108]=Q):Q=t[108];let $;t[109]!==A||t[110]!==K||t[111]!==Q?($=(0,B.jsxs)(Se.Provider,{value:A,children:[Q,K]}),t[109]=A,t[110]=K,t[111]=Q,t[112]=$):$=t[112];let Pt;return t[113]!==D||t[114]!==$?(Pt=(0,B.jsx)(xe.Provider,{value:jt,children:(0,B.jsx)(Ce.Provider,{value:D,children:$})}),t[113]=D,t[114]=$,t[115]=Pt):Pt=t[115],Pt},Ye=({children:e})=>e,Xe=({children:e})=>e,V.EditorChildren=Ye,V.ContextChildren=Xe}));export{H as n,V as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bot as n,
+    Ei as r,
+    Fx as i,
+    Hnt as ee,
+    J5 as a,
+    Jnt as o,
+    Mx as s,
+    Ni as te,
+    Nx as ne,
+    Pi as re,
+    RU as ie,
+    SN as c,
+    _N as l,
+    iE as ae,
+    ki as u,
+    q5 as oe,
+    rE as d,
+    vN as f,
+    yN as se,
+    zU as ce,
+    zot as p
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as le,
+    Hn as m,
+    Tn as h,
+    Vn as g,
+    zn as ue
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    c as _,
+    s as de
+} from "./31cec8d8-ejzahhq8v425zkie.js";
+import {
+    a as fe,
+    i as v
+} from "./dced7e81-gzel4lkhr8icz6qa.js";
+import {
+    a as pe,
+    i as me,
+    o as he,
+    r as ge,
+    s as _e
+} from "./c93e007a-dbcbk2sloiunle7o.js";
+import {
+    E as ve,
+    U as ye,
+    f as y,
+    r as be,
+    w as b
+} from "./bcae0416-gpoh40wq8xybesjx.js";
+import {
+    c as xe,
+    l as Se,
+    s as Ce,
+    u as we
+} from "./df59e297-hhsu9fndczbcvp55.js";
+import {
+    t as Te
+} from "./4c0f1f8e-lcllh9m5rwe6l2ew.js";
+import {
+    _ as Ee,
+    a as x,
+    c as De,
+    d as Oe,
+    f as S,
+    h as ke,
+    i as Ae,
+    m as je,
+    n as Me,
+    o as Ne,
+    r as Pe,
+    s as Fe,
+    t as Ie,
+    u as C,
+    v as Le
+} from "./14046b31-omwiwy0oxux9bod9.js";
+import {
+    C as w,
+    E as T
+} from "./bcae0416-gky2jkyu7jq786j6.js";
+import {
+    n as Re,
+    r as E,
+    t as D
+} from "./6cb574fa-hpeydd2lxw6dodj4.js";
+import {
+    m as ze,
+    p as O
+} from "./e99f8e1a-bssn075ev01abn1i.js";
+var Be, k, A, j, M = e((() => {
+        Be = `E1e5UW_codemirror`, k = `E1e5UW_preview`, A = `E1e5UW_systemFont`, j = {
+            codemirror: Be,
+            preview: k,
+            systemFont: A
+        }
+    })),
+    N, P, F, I, L, Ve, R = e((() => {
+        se(), w(), ye(), y(), N = t(m()), ze(), P = be.theme({
+            ".cm-tooltip-autocomplete": {
+                backgroundColor: `var(--main-surface-primary)`,
+                color: `var(--text-primary)`,
+                border: `1px solid var(--border-light)`,
+                borderRadius: `6px`,
+                padding: `4px`,
+                boxShadow: `0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)`
+            },
+            ".cm-tooltip-autocomplete > ul > li": {
+                borderRadius: `5px`,
+                color: `var(--text-primary)`
+            },
+            ".cm-tooltip-autocomplete > ul > li[aria-selected]": {
+                backgroundColor: `var(--main-surface-secondary)`,
+                color: `var(--text-primary)`
+            },
+            ".cm-tooltip-autocomplete > ul > li:hover": {
+                backgroundColor: `var(--selection)`,
+                color: `#ffffff`
+            },
+            ".cm-completionMatchedText": {
+                textDecoration: `none`,
+                fontWeight: `700`
+            }
+        }), F = be.theme({
+            ".cm-scroller": {
+                fontFamily: `ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important`
+            }
+        }), I = be.theme({
+            "&": {
+                backgroundColor: `transparent`
+            }
+        }), L = e => [F, I, P, T(O(e), {
+            fallback: !0
+        })], Ve = e => {
+            let [t] = (0, N.useState)(() => new b), n = c();
+            (0, N.useEffect)(() => {
+                e.current?.dispatch({
+                    effects: t.reconfigure(L(n))
+                })
+            }, [n, t, e]);
+            let [r] = (0, N.useState)(() => t.of(L(n)));
+            return r
+        }
+    }));
+
+function He() {
+    return new b
+}
+
+function Ue() {
+    return new b
+}
+
+function We() {
+    return new b
+}
+
+function Ge() {
+    return new b
+}
+async function Ke(e) {
+    return e ? await D(e) : null
+}
+var qe, z, Je, B, V, Ye, Xe, H = e((() => {
+    qe = h(), x(), Ee(), ge(), ke(), S(), C(), Ne(), we(), v(), _(), u(), ce(), i(), p(), o(), d(), l(), ye(), y(), a(), z = t(m()), ue(), Je = t(Te()), M(), E(), R(), B = g(), V = e => {
+        "use forget";
+        let t = (0, qe.c)(116),
+            {
+                id: i,
+                children: a,
+                comments: o,
+                commentingOn: c,
+                currentlyStreamingLineIndex: l,
+                hoveredCommentId: u,
+                focusedCommentId: d,
+                placeholder: se,
+                readonlyReason: ce,
+                language: p,
+                value: m,
+                textdocDiff: h,
+                extensions: g,
+                maxLength: ue,
+                onBlur: _,
+                onSave: v,
+                onChange: ge,
+                editorRef: ye,
+                width: y,
+                modelCursor: b,
+                isPreview: we,
+                hideLineNumbers: Te,
+                useSystemFont: Ee
+            } = e,
+            x = se === void 0 ? `` : se,
+            S = Te !== void 0 && Te,
+            ke = Ee !== void 0 && Ee,
+            Ne = (0, z.useRef)(null),
+            C = (0, z.useRef)(null),
+            w = le(),
+            T = (ee(`1958014328`) ? 1e7 : void 0) ?? ue,
+            E = ce?.isReadonly === !0,
+            [D, ze] = (0, z.useState)(null),
+            O = (0, z.useRef)(null),
+            [Be, k] = (0, Je.default)(),
+            {
+                width: A
+            } = Be,
+            [M] = (0, z.useState)(He),
+            [N] = (0, z.useState)(Ue),
+            [P] = (0, z.useState)(We),
+            [F] = (0, z.useState)(Ge),
+            I;
+        t[0] === ge ? I = t[1] : (I = e => {
+            let {
+                docChanged: t,
+                state: n,
+                transactions: r
+            } = e;
+            for (let e of r)
+                if (e.annotation(Ie) === !0 || e.annotation(Oe) === !0) return;
+            if (t) {
+                let e = n.doc.toString();
+                O.current = e, ge?.(n)
+            }
+        }, t[0] = ge, t[1] = I);
+        let L = f(I),
+            R;
+        t[2] === _ ? R = t[3] : (R = () => _?.(), t[2] = _, t[3] = R);
+        let V = f(R),
+            H;
+        t[4] === v ? H = t[5] : (H = () => v?.(), t[4] = v, t[5] = H);
+        let U = f(H),
+            W;
+        t[6] !== E || t[7] !== v ? (W = e => v == null || E || !te(`saveCanvasEditor`, e) ? !1 : (e.preventDefault(), r(`saveCanvasEditor`, e)), t[6] = E, t[7] = v, t[8] = W) : W = t[8];
+        let Ze = f(W),
+            Qe = Ke,
+            $e;
+        t[9] !== M || t[10] !== h || t[11] !== F ? ($e = async e => {
+            let t = await Qe(e);
+            t && C.current?.dispatch({
+                effects: [M.reconfigure(t), ...Ae(F, h, t?.language)]
+            })
+        }, t[9] = M, t[10] = h, t[11] = F, t[12] = $e) : $e = t[12];
+        let et = f($e),
+            tt = Ve(C),
+            nt;
+        t[13] !== o || t[14] !== l || t[15] !== p || t[16] !== M || t[17] !== h || t[18] !== F ? (nt = e => {
+            if (e === O.current) {
+                O.current = null;
+                return
+            }
+            let {
+                current: t
+            } = C;
+            if (!t) return;
+            let n = t.state.doc,
+                r = n.toString(),
+                i = De(r, 0, r.length, e, 0, e.length),
+                ee = e.slice(i),
+                a = {
+                    from: i,
+                    to: n.length,
+                    insert: ee
+                },
+                s = p == null ? null : Re(p),
+                te = t.state.update({
+                    changes: a,
+                    effects: [pe.of(o ?? []), Le.of(l ?? null), ...s == null ? [] : [M.reconfigure(s)], ...Ae(F, h, s?.language)],
+                    annotations: Ie.of(!0)
+                });
+            t.update([te])
+        }, t[13] = o, t[14] = l, t[15] = p, t[16] = M, t[17] = h, t[18] = F, t[19] = nt) : nt = t[19];
+        let rt = f(nt),
+            it;
+        t[20] === rt ? it = t[21] : (it = () => ({
+            UNSAFE_setValue: rt,
+            codeViewRef: C,
+            highlightLine: (e, t) => je(n(C.current), e, t)
+        }), t[20] = rt, t[21] = it), (0, z.useImperativeHandle)(ye, it);
+        let at, ot;
+        t[22] !== p || t[23] !== et ? (at = () => {
+            et(p)
+        }, ot = [p, et], t[22] = p, t[23] = et, t[24] = at, t[25] = ot) : (at = t[24], ot = t[25]), (0, z.useEffect)(at, ot);
+        let st;
+        t[26] !== p || t[27] !== h || t[28] !== F ? (st = () => {
+            let e = p == null ? null : Re(p);
+            C.current?.dispatch({
+                effects: Ae(F, h, e?.language)
+            })
+        }, t[26] = p, t[27] = h, t[28] = F, t[29] = st) : st = t[29];
+        let ct = (0, z.useEffectEvent)(st),
+            lt;
+        t[30] === ct ? lt = t[31] : (lt = () => {
+            ct()
+        }, t[30] = ct, t[31] = lt);
+        let ut;
+        t[32] !== h || t[33] !== F ? (ut = [F, h], t[32] = h, t[33] = F, t[34] = ut) : ut = t[34], (0, z.useEffect)(lt, ut);
+        let dt, ft;
+        t[35] !== N || t[36] !== E || t[37] !== P ? (dt = () => {
+            C.current?.dispatch({
+                effects: [N.reconfigure(be.editable.of(!E)), P.reconfigure(ve.readOnly.of(E))]
+            })
+        }, ft = [E, N, P], t[35] = N, t[36] = E, t[37] = P, t[38] = dt, t[39] = ft) : (dt = t[38], ft = t[39]), (0, z.useEffect)(dt, ft);
+        let pt, mt;
+        t[40] === c ? (pt = t[41], mt = t[42]) : (pt = () => {
+            (c == null || fe(c)) && C.current?.dispatch({
+                effects: me.of(c ?? null)
+            })
+        }, mt = [c], t[40] = c, t[41] = pt, t[42] = mt), (0, z.useEffect)(pt, mt);
+        let ht, gt;
+        t[43] === o ? (ht = t[44], gt = t[45]) : (ht = () => {
+            C.current?.dispatch({
+                effects: pe.of(o ?? [])
+            })
+        }, gt = [o], t[43] = o, t[44] = ht, t[45] = gt), (0, z.useEffect)(ht, gt);
+        let _t, vt;
+        t[46] === u ? (_t = t[47], vt = t[48]) : (_t = () => {
+            C.current?.dispatch({
+                effects: _e.of(u)
+            })
+        }, vt = [u], t[46] = u, t[47] = _t, t[48] = vt), (0, z.useEffect)(_t, vt);
+        let yt, G;
+        t[49] === d ? (yt = t[50], G = t[51]) : (yt = () => {
+            C.current?.dispatch({
+                effects: he.of(d)
+            })
+        }, G = [d], t[49] = d, t[50] = yt, t[51] = G), (0, z.useEffect)(yt, G);
+        let bt, xt;
+        t[52] === b ? (bt = t[53], xt = t[54]) : (bt = () => {
+            C.current?.dispatch({
+                effects: Fe.of(b)
+            })
+        }, xt = [b], t[52] = b, t[53] = bt, t[54] = xt), (0, z.useEffect)(bt, xt);
+        let St, Ct;
+        t[55] === l ? (St = t[56], Ct = t[57]) : (St = () => {
+            C.current?.dispatch({
+                effects: Le.of(l ?? null)
+            })
+        }, Ct = [l], t[55] = l, t[56] = St, t[57] = Ct), (0, z.useEffect)(St, Ct);
+        let wt, Tt;
+        t[58] !== U || t[59] !== E || t[60] !== v ? (wt = () => re({
+            key: `saveCanvasEditor`,
+            action: U,
+            actionMessageDescriptor: {
+                id: `keyboardActions.saveCanvasEditor`,
+                defaultMessage: `Save canvas editor`,
+                description: `Keyboard shortcut label for saving the focused canvas code editor.`
+            },
+            bindings: [{
+                binding: [ne.Mod, `s`]
+            }],
+            enabled: v != null && !E,
+            group: s.Chat,
+            order: 10,
+            scope: `canvas`
+        }), Tt = [U, E, v], t[58] = U, t[59] = E, t[60] = v, t[61] = wt, t[62] = Tt) : (wt = t[61], Tt = t[62]), (0, z.useEffect)(wt, Tt);
+        let Et;
+        t[63] !== o || t[64] !== l || t[65] !== N || t[66] !== tt || t[67] !== g || t[68] !== V || t[69] !== L || t[70] !== Ze || t[71] !== S || t[72] !== w || t[73] !== E || t[74] !== p || t[75] !== M || t[76] !== T || t[77] !== b || t[78] !== x || t[79] !== P || t[80] !== h || t[81] !== F || t[82] !== m ? (Et = e => {
+            let t = p == null ? null : Re(p),
+                n = Pe({
+                    currentlyStreamingLineIndex: l,
+                    value: m,
+                    placeholderContent: x,
+                    editableCompartment: N,
+                    readOnlyCompartment: P,
+                    editableInit: !E,
+                    languageCompartment: M,
+                    languageCompartmentInit: t ?? null,
+                    handleChange: L,
+                    handleBlur: V,
+                    handleSaveShortcut: Ze,
+                    extensionsProp: g,
+                    editorTheme: tt,
+                    intl: w,
+                    toaster: ie(),
+                    maxLength: T,
+                    comments: o ?? [],
+                    modelCursor: b,
+                    textdocDiff: h,
+                    unifiedMergeViewCompartment: F,
+                    hideLineNumbers: S
+                });
+            ze(n);
+            let r = Me({
+                state: n,
+                parent: e,
+                onUpdateState: ze
+            });
+            return C.current = r, () => {
+                r.destroy()
+            }
+        }, t[63] = o, t[64] = l, t[65] = N, t[66] = tt, t[67] = g, t[68] = V, t[69] = L, t[70] = Ze, t[71] = S, t[72] = w, t[73] = E, t[74] = p, t[75] = M, t[76] = T, t[77] = b, t[78] = x, t[79] = P, t[80] = h, t[81] = F, t[82] = m, t[83] = Et) : Et = t[83];
+        let Dt = (0, z.useEffectEvent)(Et),
+            Ot;
+        t[84] === Dt ? Ot = t[85] : (Ot = () => {
+            let e = Ne.current;
+            if (e != null) return Dt(e)
+        }, t[84] = Dt, t[85] = Ot);
+        let kt;
+        t[86] !== g || t[87] !== i || t[88] !== x ? (kt = [i, g, x], t[86] = g, t[87] = i, t[88] = x, t[89] = kt) : kt = t[89], (0, z.useEffect)(Ot, kt);
+        let At;
+        t[90] === Symbol.for(`react.memo_cache_sentinel`) ? (At = () => C.current, t[90] = At) : At = t[90];
+        let jt = At,
+            K, q;
+        t[91] === a ? (K = t[92], q = t[93]) : (K = [], q = [], z.Children.forEach(a, e => {
+            if (!(0, z.isValidElement)(e)) return;
+            let {
+                type: t
+            } = e;
+            if (t === Xe) K.push(e);
+            else if (t === Ye) q.push(e);
+            else throw Error(`Invalid Codemirror child: ` + JSON.stringify(t))
+        }), t[91] = a, t[92] = K, t[93] = q);
+        let Mt = we && j.preview,
+            Nt = ke && j.systemFont,
+            J;
+        t[94] !== Mt || t[95] !== Nt ? (J = oe(j.codemirror, Mt, Nt, de.composer, `flex h-full w-full flex-col items-stretch`), t[94] = Mt, t[95] = Nt, t[96] = J) : J = t[96];
+        let Y;
+        t[97] === k ? Y = t[98] : (Y = ae(Ne, k), t[97] = k, t[98] = Y);
+        let X;
+        t[99] === y ? X = t[100] : (X = {
+            width: y
+        }, t[99] = y, t[100] = X);
+        let Z;
+        t[101] !== i || t[102] !== J || t[103] !== Y || t[104] !== X ? (Z = (0, B.jsx)(`div`, {
+            id: i,
+            className: J,
+            ref: Y,
+            style: X
+        }), t[101] = i, t[102] = J, t[103] = Y, t[104] = X, t[105] = Z) : Z = t[105];
+        let Q;
+        t[106] !== q || t[107] !== Z ? (Q = (0, B.jsxs)(`div`, {
+            className: `relative z-0 flex h-full max-w-full`,
+            children: [Z, q]
+        }), t[106] = q, t[107] = Z, t[108] = Q) : Q = t[108];
+        let $;
+        t[109] !== A || t[110] !== K || t[111] !== Q ? ($ = (0, B.jsxs)(Se.Provider, {
+            value: A,
+            children: [Q, K]
+        }), t[109] = A, t[110] = K, t[111] = Q, t[112] = $) : $ = t[112];
+        let Pt;
+        return t[113] !== D || t[114] !== $ ? (Pt = (0, B.jsx)(xe.Provider, {
+            value: jt,
+            children: (0, B.jsx)(Ce.Provider, {
+                value: D,
+                children: $
+            })
+        }), t[113] = D, t[114] = $, t[115] = Pt) : Pt = t[115], Pt
+    }, Ye = ({
+        children: e
+    }) => e, Xe = ({
+        children: e
+    }) => e, V.EditorChildren = Ye, V.ContextChildren = Xe
+}));
+export {
+    H as n, V as t
+};
 //# sourceMappingURL=5ba997e8-lgw7y1na4u5v2p1d.js.map
